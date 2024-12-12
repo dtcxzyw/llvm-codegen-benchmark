@@ -1,5 +1,6 @@
 
-; 19 occurrences:
+; 26 occurrences:
+; boost/optimized/url_impl.ll
 ; llvm/optimized/DWARFAcceleratorTable.cpp.ll
 ; llvm/optimized/DWARFCompileUnit.cpp.ll
 ; llvm/optimized/DWARFContext.cpp.ll
@@ -11,7 +12,6 @@
 ; llvm/optimized/DWARFVerifier.cpp.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meilisearch-rs/optimized/54ajasddlqavlxt2.ll
-; re2/optimized/re2.cc.ll
 ; rust-analyzer-rs/optimized/4h2i4ex5hsghl46o.ll
 ; rust-analyzer-rs/optimized/4ij72b67lj8l3d8u.ll
 ; rust-analyzer-rs/optimized/558lcqqd41cqw6uz.ll
@@ -19,13 +19,20 @@
 ; rustfmt-rs/optimized/4arc02n7xt9gqo2v.ll
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/b1bc3rbs9s229gjbf718xcm8w.ll
+; zed-rs/optimized/d8k4gi60mp0onf0c8t6rhs7ks.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
+; zed-rs/optimized/f10ffiihtazjqkmwr0jihceey.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i64 %1, i8 %2) #0 {
 entry:
-  %3 = icmp eq i8 %2, 45
-  %4 = select i1 %3, i64 -1, i64 -2
+  %3 = icmp eq i8 %2, 2
+  %4 = select i1 %3, i64 0, i64 2
   %5 = add i64 %0, %1
-  %6 = add i64 %4, %5
+  %6 = add i64 %5, %4
   ret i64 %6
 }
 

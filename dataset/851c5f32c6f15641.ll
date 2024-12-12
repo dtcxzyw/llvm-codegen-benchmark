@@ -1,7 +1,8 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
+; lvgl/optimized/lv_calendar.ll
 ; lz4/optimized/lz4.c.ll
 ; openusd/optimized/AVIFImage.cpp.ll
 ; openusd/optimized/lz4.cpp.ll

@@ -1,6 +1,5 @@
 
-; 17 occurrences:
-; assimp/optimized/IFCGeometry.cpp.ll
+; 16 occurrences:
 ; darktable/optimized/introspection_bilateral.cc.ll
 ; ncnn/optimized/convolutiondepthwise_x86.cpp.ll
 ; ncnn/optimized/convolutiondepthwise_x86_avx.cpp.ll
@@ -23,6 +22,28 @@ entry:
   %3 = mul i64 %1, %2
   %4 = shl i64 %3, 1
   %5 = getelementptr nusw i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; assimp/optimized/IFCGeometry.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul i64 %1, %2
+  %.idx = mul i64 %3, 96
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %.idx
+  ret ptr %4
+}
+
+; 1 occurrences:
+; quantlib/optimized/hestonslvfdmmodel.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul i64 %1, %2
+  %4 = shl nuw nsw i64 %3, 3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -68,15 +89,14 @@ entry:
   ret ptr %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; darktable/optimized/introspection_retouch.c.ll
-; opencv/optimized/imgwarp.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000036(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000037(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %1, %2
   %4 = shl nsw i64 %3, 4
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -171,17 +191,15 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaPat2.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000014(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000003c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = mul nsw i64 %1, %2
-  %4 = shl nsw i64 %3, 4
+  %3 = mul nuw nsw i64 %1, %2
+  %4 = shl nuw nsw i64 %3, 4
   %5 = getelementptr i8, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 3 occurrences:
-; faiss/optimized/LocalSearchQuantizer.cpp.ll
-; faiss/optimized/ResidualQuantizer.cpp.ll
+; 1 occurrences:
 ; lightgbm/optimized/metric.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
@@ -192,12 +210,21 @@ entry:
   ret ptr %5
 }
 
-; 5 occurrences:
-; meshlab/optimized/cube_style_precomputation.cpp.ll
-; meshlab/optimized/filter_parametrization.cpp.ll
+; 2 occurrences:
+; faiss/optimized/LocalSearchQuantizer.cpp.ll
+; faiss/optimized/ResidualQuantizer.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul i64 %1, %2
+  %4 = shl nsw i64 %3, 2
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 2 occurrences:
 ; opencv/optimized/imgwarp.cpp.ll
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
-; pybind11/optimized/test_stl_binders.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000016(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -208,13 +235,38 @@ entry:
 }
 
 ; 1 occurrences:
+; opencv/optimized/imgwarp.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003f(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul nuw nsw i64 %1, %2
+  %4 = shl nuw nsw i64 %3, 2
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 4 occurrences:
+; meshlab/optimized/cube_style_precomputation.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
+; opencv/optimized/imgwarp.cpp.ll
+; pybind11/optimized/test_stl_binders.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000017(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul nsw i64 %1, %2
+  %4 = shl nsw i64 %3, 2
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
 ; tev/optimized/Image.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000013(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
   %.idx = shl i64 %3, 4
-  %4 = getelementptr nusw i8, ptr %0, i64 %.idx
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %.idx
   ret ptr %4
 }
 

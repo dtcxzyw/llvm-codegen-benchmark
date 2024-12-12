@@ -51,6 +51,19 @@ entry:
 }
 
 ; 1 occurrences:
+; hermes/optimized/HBC.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000003e(i8 %0, i8 %1) #0 {
+entry:
+  %2 = zext nneg i8 %1 to i32
+  %3 = shl nuw nsw i32 %2, 6
+  %4 = zext nneg i8 %0 to i32
+  %5 = or disjoint i32 %3, %4
+  %6 = or i32 %5, 56320
+  ret i32 %6
+}
+
+; 1 occurrences:
 ; llvm/optimized/ASTWriter.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001e(i8 %0, i8 %1) #0 {

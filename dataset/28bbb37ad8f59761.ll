@@ -1,7 +1,8 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; gromacs/optimized/grid.cpp.ll
 ; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
 ; openjdk/optimized/sharedRuntime_x86_64.ll
@@ -87,13 +88,24 @@ entry:
 }
 
 ; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_transform.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000025(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw i64 %1 to i32
+  %3 = sub nsw i32 %0, %2
+  %4 = shl nsw i32 %3, 16
+  ret i32 %4
+}
+
+; 1 occurrences:
 ; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000007(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = sub nsw i32 %0, %2
-  %4 = shl i32 %3, 9
+  %4 = shl nuw nsw i32 %3, 9
   ret i32 %4
 }
 
@@ -119,6 +131,28 @@ entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = sub i32 %0, %2
   %4 = shl i32 %3, 16
+  ret i32 %4
+}
+
+; 1 occurrences:
+; icu/optimized/number_decimalquantity.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000033(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw nsw i64 %1 to i32
+  %3 = sub i32 %0, %2
+  %4 = shl nuw nsw i32 %3, 2
+  ret i32 %4
+}
+
+; 1 occurrences:
+; meshlab/optimized/filter_screened_poisson.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000017(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nsw i64 %1 to i32
+  %3 = sub nsw i32 %0, %2
+  %4 = shl nuw nsw i32 %3, 3
   ret i32 %4
 }
 

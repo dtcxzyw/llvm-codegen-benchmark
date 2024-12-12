@@ -51,7 +51,7 @@ func000000000000000b:                   # @func000000000000000b
 	.quad	1                               # 0x1
 .LCPI1_2:
 	.quad	2                               # 0x2
-func0000000000000023:                   # @func0000000000000023
+func00000000000000a3:                   # @func00000000000000a3
 	vpcmpltub	.LCPI1_0(%rip), %xmm1, %k1
 	vpbroadcastq	.LCPI1_1(%rip), %ymm1   # ymm1 = [1,1,1,1]
 	vpbroadcastq	.LCPI1_2(%rip), %ymm1 {%k1} # ymm1 {%k1} = [2,2,2,2]

@@ -6,7 +6,7 @@
 define ptr @func0000000000000018(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = select i1 %4, ptr %0, ptr null
   ret ptr %5
 }
@@ -32,7 +32,7 @@ entry:
 define ptr @func0000000000000008(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 44
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = select i1 %4, ptr %0, ptr undef
   ret ptr %5
 }

@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/os.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000046(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2147418112
   %4 = add nuw i32 %3, %1
@@ -26,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; ncnn/optimized/cpu.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = add nuw nsw i32 %3, %1
@@ -39,11 +39,11 @@ entry:
 ; abc/optimized/aigPack.c.ll
 ; wireshark/optimized/in_cksum.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000078(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 31
-  %4 = add nuw nsw i32 %3, %1
-  %5 = icmp ugt i32 %4, 32
+  %4 = add nuw nsw i32 %1, %3
+  %5 = icmp samesign ugt i32 %4, 32
   %6 = select i1 %5, i32 %0, i32 %4
   ret i32 %6
 }

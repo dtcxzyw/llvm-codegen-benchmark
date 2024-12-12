@@ -1,9 +1,8 @@
 
-; 221 occurrences:
+; 224 occurrences:
 ; arrow/optimized/utf8.cc.ll
 ; c3c/optimized/sema_expr.c.ll
 ; c3c/optimized/sema_stmts.c.ll
-; cmake/optimized/archive_write_add_filter_lz4.c.ll
 ; cmake/optimized/cmForEachCommand.cxx.ll
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/xmltok.ll
@@ -119,6 +118,8 @@
 ; llvm/optimized/X86Disassembler.cpp.ll
 ; luajit/optimized/lj_opt_narrow.ll
 ; luajit/optimized/lj_opt_narrow_dyn.ll
+; lvgl/optimized/lv_binfont_loader.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
@@ -220,6 +221,8 @@
 ; wireshark/optimized/peektagged.c.ll
 ; wireshark/optimized/vwr.c.ll
 ; yosys/optimized/dft_tag.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
+; zed-rs/optimized/f3wmqxw6x607w7cbx1edvfc95.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000007(i8 %0) #0 {
@@ -229,17 +232,18 @@ entry:
   ret i16 %2
 }
 
-; 438 occurrences:
+; 440 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/STEPFileEncoding.cpp.ll
+; boost/optimized/ipv6_address.ll
+; boost/optimized/topology.ll
 ; brotli/optimized/transform.c.ll
 ; clamav/optimized/XzDec.c.ll
 ; clamav/optimized/XzIn.c.ll
 ; clamav/optimized/autoit.c.ll
 ; clamav/optimized/cabd.c.ll
-; clamav/optimized/dns.c.ll
 ; clamav/optimized/hfsplus.c.ll
 ; clamav/optimized/ishield.c.ll
 ; clamav/optimized/ole2_extract.c.ll
@@ -394,6 +398,8 @@ entry:
 ; luajit/optimized/lj_opt_fold_dyn.ll
 ; luau/optimized/Fixture.cpp.ll
 ; luau/optimized/UnwindBuilderWin.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/content_mapblock.cpp.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
@@ -455,7 +461,6 @@ entry:
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -554,7 +559,6 @@ entry:
 ; qemu/optimized/hw_scsi_esp-pci.c.ll
 ; qemu/optimized/hw_usb_dev-audio.c.ll
 ; qemu/optimized/hw_usb_u2f-passthru.c.ll
-; qemu/optimized/i2c.c.ll
 ; qemu/optimized/scsi_utils.c.ll
 ; qemu/optimized/ui_vnc.c.ll
 ; quickjs/optimized/libunicode.ll
@@ -599,9 +603,7 @@ entry:
 ; wireshark/optimized/catapult_dct2000.c.ll
 ; wireshark/optimized/charsets.c.ll
 ; wireshark/optimized/commview.c.ll
-; wireshark/optimized/csids.c.ll
 ; wireshark/optimized/dot11decrypt.c.ll
-; wireshark/optimized/dot11decrypt_tkip.c.ll
 ; wireshark/optimized/editcap.c.ll
 ; wireshark/optimized/erf.c.ll
 ; wireshark/optimized/eyesdn.c.ll
@@ -616,7 +618,6 @@ entry:
 ; wireshark/optimized/packet-atm.c.ll
 ; wireshark/optimized/packet-bluetooth.c.ll
 ; wireshark/optimized/packet-btbredr_rf.c.ll
-; wireshark/optimized/packet-chdlc.c.ll
 ; wireshark/optimized/packet-communityid.c.ll
 ; wireshark/optimized/packet-cops.c.ll
 ; wireshark/optimized/packet-dect.c.ll
@@ -651,7 +652,6 @@ entry:
 ; wireshark/optimized/pcap-common.c.ll
 ; wireshark/optimized/peekclassic.c.ll
 ; wireshark/optimized/peektagged.c.ll
-; wireshark/optimized/radcom.c.ll
 ; wireshark/optimized/snoop.c.ll
 ; wireshark/optimized/stanag4607.c.ll
 ; wireshark/optimized/tvbuff.c.ll
@@ -666,8 +666,13 @@ entry:
 ; xgboost/optimized/input_split_base.cc.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000002(i8 %0) #0 {
 entry:
@@ -676,7 +681,7 @@ entry:
   ret i16 %2
 }
 
-; 119 occurrences:
+; 122 occurrences:
 ; cpython/optimized/_codecs_kr.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
@@ -706,9 +711,7 @@ entry:
 ; linux/optimized/ndisc.ll
 ; linux/optimized/nf_conntrack_reasm.ll
 ; linux/optimized/reassembly.ll
-; linux/optimized/rpl.ll
 ; linux/optimized/rscalc.ll
-; linux/optimized/spectmgmt.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/xfrm_input.ll
 ; linux/optimized/xfrm_output.ll
@@ -749,6 +752,9 @@ entry:
 ; llvm/optimized/TextNodeDumper.cpp.ll
 ; llvm/optimized/VectorCombine.cpp.ll
 ; luau/optimized/IrLoweringA64.cpp.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
 ; minetest/optimized/CImage.cpp.ll
 ; minetest/optimized/mapnode.cpp.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
@@ -795,6 +801,8 @@ entry:
 ; wireshark/optimized/packet-uftp4.c.ll
 ; wireshark/optimized/packet-uftp5.c.ll
 ; wireshark/optimized/vwr.c.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000003(i8 %0) #0 {
@@ -816,10 +824,11 @@ entry:
   ret i16 %2
 }
 
-; 13 occurrences:
+; 15 occurrences:
 ; linux/optimized/virtio_ring.ll
 ; linux/optimized/yenta_socket.ll
 ; llvm/optimized/DeclObjC.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; openjdk/optimized/Ushort555Rgbx.ll
 ; openjdk/optimized/Ushort565Rgb.ll
@@ -829,6 +838,7 @@ entry:
 ; openusd/optimized/topologyRefinerFactory.cpp.ll
 ; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
+; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; wireshark/optimized/packet-ieee80211-radiotap.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000006(i8 %0) #0 {

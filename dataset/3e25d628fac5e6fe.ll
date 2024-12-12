@@ -1,5 +1,5 @@
 
-; 62 occurrences:
+; 67 occurrences:
 ; actix-rs/optimized/14bh10sj718x2c7a.ll
 ; assimp/optimized/FBXConverter.cpp.ll
 ; assimp/optimized/LimitBoneWeightsProcess.cpp.ll
@@ -54,14 +54,19 @@
 ; opencv/optimized/surf_matcher.cpp.ll
 ; openexr/optimized/ImfHeader.cpp.ll
 ; openjdk/optimized/hb-ot-font.ll
-; openusd/optimized/typeRegistry.cpp.ll
-; pbrt-v4/optimized/cameras.cpp.ll
 ; pbrt-v4/optimized/textures.cpp.ll
 ; raylib/optimized/rcore.c.ll
 ; sentencepiece/optimized/unigram_model_trainer.cc.ll
 ; typst-rs/optimized/1fd2xpfefmgrcb9d.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; velox/optimized/CastExpr.cpp.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/4km3eupdnqqnodg5d7nrlf2sf.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/exru7xor9i4a4ixpzw7x9xk8s.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; Function Attrs: nounwind
 define float @func0000000000000002(i64 %0) #0 {
 entry:

@@ -1,9 +1,9 @@
 func000000000000000a:                   # @func000000000000000a
 	subq	%rsi, %rdi
 	xorl	%eax, %eax
-	cmpq	$2, %rdi
-	setge	%al
-	leal	-2(,%rax,4), %eax
+	testq	%rdi, %rdi
+	setg	%al
+	leal	-1(%rax,%rax), %eax
 	retq
 func0000000000000004:                   # @func0000000000000004
 	subq	%rsi, %rdi
@@ -25,13 +25,13 @@ func0000000000000008:                   # @func0000000000000008
 	setae	%al
 	leal	2(%rax,%rax), %eax
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdi
 	setge	%al
 	leal	-1(%rax,%rax), %eax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdi
 	setl	%al

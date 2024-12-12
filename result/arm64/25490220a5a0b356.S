@@ -1,59 +1,20 @@
-func0000000000000108:                   // @func0000000000000108
+func0000000000000208:                   // @func0000000000000208
 // %bb.0:                               // %entry
-	movi	v6.2d, #0x000000ffffffff
-	fmov	x8, d3
-	mov	x10, v3.d[1]
-	mov	x13, v2.d[1]
-	and	v5.16b, v5.16b, v6.16b
-	and	v4.16b, v4.16b, v6.16b
-	fmov	x9, d5
-	fmov	x12, d4
-	mov	x11, v5.d[1]
-	mov	x14, v4.d[1]
-	mul	x8, x9, x8
-	fmov	x9, d2
-	mul	x10, x11, x10
-	mul	x9, x12, x9
-	fmov	d2, x8
-	mul	x11, x14, x13
-	mov	v2.d[1], x10
-	fmov	d3, x9
-	mov	v3.d[1], x11
-	usra	v1.2d, v2.2d, #9
-	cmhi	v1.2d, v1.2d, v6.2d
-	usra	v0.2d, v3.2d, #9
-	cmhi	v0.2d, v0.2d, v6.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	mov	w8, w2
+	mul	x8, x8, x1
+	add	x8, x0, x8, lsr #9
+	lsr	x8, x8, #32
+	cmp	x8, #0
+	cset	w0, ne
 	ret
                                         // -- End function
-func00000000000001b8:                   // @func00000000000001b8
+func0000000000000378:                   // @func0000000000000378
 // %bb.0:                               // %entry
-	movi	v6.2d, #0x000000ffffffff
-	fmov	x8, d3
-	mov	x10, v3.d[1]
-	mov	x13, v2.d[1]
-	and	v5.16b, v5.16b, v6.16b
-	and	v4.16b, v4.16b, v6.16b
-	fmov	x9, d5
-	fmov	x12, d4
-	mov	x11, v5.d[1]
-	mov	x14, v4.d[1]
-	movi	v4.2d, #0x00ffffffffffff
-	mul	x8, x9, x8
-	fmov	x9, d2
-	mul	x10, x11, x10
-	mul	x9, x12, x9
-	fmov	d2, x8
-	mul	x11, x14, x13
-	mov	v2.d[1], x10
-	fmov	d3, x9
-	mov	v3.d[1], x11
-	usra	v1.2d, v2.2d, #15
-	cmhi	v1.2d, v1.2d, v4.2d
-	usra	v0.2d, v3.2d, #15
-	cmhi	v0.2d, v0.2d, v4.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	mov	w8, w2
+	mul	x8, x1, x8
+	add	x8, x0, x8, lsr #15
+	lsr	x8, x8, #48
+	cmp	x8, #0
+	cset	w0, ne
 	ret
                                         // -- End function

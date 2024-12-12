@@ -1,5 +1,5 @@
 
-; 31 occurrences:
+; 32 occurrences:
 ; cpython/optimized/_codecs_iso2022.ll
 ; glslang/optimized/SymbolTable.cpp.ll
 ; jsonnet/optimized/lexer.cpp.ll
@@ -24,12 +24,13 @@
 ; ruby/optimized/regexp.ll
 ; vcpkg/optimized/files.cpp.ll
 ; verilator/optimized/V3EmitCFunc.cpp.ll
+; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; wireshark/optimized/packet-acdr.c.ll
 ; wireshark/optimized/packet-epl.c.ll
+; wireshark/optimized/packet-ethercat-datagram.c.ll
 ; wireshark/optimized/packet-h265.c.ll
 ; wireshark/optimized/packet-mac-lte.c.ll
-; wireshark/optimized/packet-netlink-netfilter.c.ll
 ; wireshark/optimized/packet-sccp.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i8 %0) #0 {

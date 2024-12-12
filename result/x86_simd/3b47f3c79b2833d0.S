@@ -2,7 +2,7 @@
 	.zero	16,1
 .LCPI0_1:
 	.zero	4,1
-func0000000000000301:                   # @func0000000000000301
+func0000000000000601:                   # @func0000000000000601
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqb	%xmm2, %xmm1, %xmm1
 	vpternlogd	$206, .LCPI0_1(%rip){1to4}, %xmm0, %xmm1 # xmm1 = (mem & ~xmm1) | xmm0
@@ -14,7 +14,7 @@ func0000000000000301:                   # @func0000000000000301
 	.zero	16,1
 .LCPI1_2:
 	.zero	4,1
-func0000000000000111:                   # @func0000000000000111
+func0000000000000221:                   # @func0000000000000221
 	vpcmpltub	.LCPI1_0(%rip), %xmm1, %k1
 	vpord	.LCPI1_2(%rip){1to4}, %xmm0, %xmm1
 	vmovdqu8	%xmm1, %xmm0 {%k1}
@@ -27,7 +27,7 @@ func0000000000000111:                   # @func0000000000000111
 	.zero	16,1
 .LCPI2_2:
 	.zero	4,1
-func0000000000000211:                   # @func0000000000000211
+func0000000000000421:                   # @func0000000000000421
 	vpcmpnleub	.LCPI2_0(%rip), %xmm1, %k1
 	vpord	.LCPI2_2(%rip){1to4}, %xmm0, %xmm1
 	vmovdqu8	%xmm1, %xmm0 {%k1}

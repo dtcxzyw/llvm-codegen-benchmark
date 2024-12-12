@@ -1,10 +1,7 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	shl	v2.2d, v2.2d, #12
-	ucvtf	v2.2d, v2.2d
-	fdiv	v0.2d, v0.2d, v2.2d
-	shl	v2.2d, v3.2d, #12
-	ucvtf	v2.2d, v2.2d
-	fdiv	v1.2d, v1.2d, v2.2d
+	lsl	x8, x0, #12
+	ucvtf	d1, x8
+	fdiv	d0, d0, d1
 	ret
                                         // -- End function

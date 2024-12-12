@@ -1,6 +1,7 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; folly/optimized/json.cpp.ll
+; git/optimized/merge-ort.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; linux/optimized/ich8lan.ll
@@ -24,13 +25,14 @@ entry:
   ret i16 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; folly/optimized/json.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000000b(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl nuw i16 %1, 12
-  %3 = add nuw nsw i16 %2, %0
+  %3 = add nuw nsw i16 %0, %2
   ret i16 %3
 }
 
@@ -44,11 +46,11 @@ entry:
 define i16 @func0000000000000008(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl nuw i16 %1, 1
-  %3 = add i16 %2, %0
+  %3 = add i16 %0, %2
   ret i16 %3
 }
 
-; 42 occurrences:
+; 43 occurrences:
 ; arrow/optimized/float16.cc.ll
 ; arrow/optimized/util_avx2.cc.ll
 ; cpython/optimized/specialize.ll
@@ -91,11 +93,12 @@ entry:
 ; wireshark/optimized/packet-dnp.c.ll
 ; wireshark/optimized/packet-osi.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl i16 %1, 1
-  %3 = add i16 %2, %0
+  %3 = add i16 %0, %2
   ret i16 %3
 }
 
@@ -107,7 +110,7 @@ entry:
 define i16 @func000000000000000e(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl nuw nsw i16 %1, 7
-  %3 = add nuw i16 %2, %0
+  %3 = add nuw i16 %0, %2
   ret i16 %3
 }
 
@@ -150,7 +153,7 @@ entry:
 define i16 @func0000000000000004(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl nsw i16 %1, 1
-  %3 = add i16 %2, %0
+  %3 = add i16 %0, %2
   ret i16 %3
 }
 
@@ -166,7 +169,7 @@ entry:
 define i16 @func000000000000000c(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl nuw nsw i16 %1, 7
-  %3 = add i16 %2, %0
+  %3 = add i16 %0, %2
   ret i16 %3
 }
 
@@ -176,7 +179,7 @@ entry:
 define i16 @func0000000000000002(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl i16 %1, 4
-  %3 = add nuw i16 %2, %0
+  %3 = add nuw i16 %0, %2
   ret i16 %3
 }
 
@@ -186,7 +189,7 @@ entry:
 define i16 @func000000000000000d(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl nuw nsw i16 %1, 2
-  %3 = add nsw i16 %2, %0
+  %3 = add nsw i16 %0, %2
   ret i16 %3
 }
 

@@ -1,5 +1,5 @@
 
-; 306 occurrences:
+; 304 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; arrow/optimized/bridge.cc.ll
 ; arrow/optimized/int_util.cc.ll
@@ -7,6 +7,8 @@
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/xml_grammar.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; cmake/optimized/cmCommandArgumentParser.cxx.ll
 ; cmake/optimized/cmExprParser.cxx.ll
@@ -17,7 +19,6 @@
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/printf-test.cc.ll
-; folly/optimized/LogName.cpp.ll
 ; freetype/optimized/autofit.c.ll
 ; git/optimized/base85.ll
 ; git/optimized/index-pack.ll
@@ -109,10 +110,8 @@
 ; linux/optimized/hid-ntrig.ll
 ; linux/optimized/hid-sony.ll
 ; linux/optimized/psmouse-base.ll
-; linux/optimized/ptp_kvm_x86.ll
 ; linux/optimized/pvclock.ll
 ; linux/optimized/regmap.ll
-; linux/optimized/vclock_gettime.ll
 ; linux/optimized/vmstat.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/AArch64O0PreLegalizerCombiner.cpp.ll
@@ -222,7 +221,6 @@
 ; soc-simulator/optimized/verilated.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
-; spike/optimized/i64_to_f32.ll
 ; spike/optimized/s_mulAddF16.ll
 ; spike/optimized/vector_unit.ll
 ; tev/optimized/Channel.cpp.ll
@@ -334,6 +332,16 @@ define i32 @func0000000000000003(i8 %0) #0 {
 entry:
   %1 = sext i8 %0 to i32
   %2 = sub nuw nsw i32 16, %1
+  ret i32 %2
+}
+
+; 1 occurrences:
+; boost/optimized/xml_grammar.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000002(i8 %0) #0 {
+entry:
+  %1 = sext i8 %0 to i32
+  %2 = sub nuw i32 -2147483601, %1
   ret i32 %2
 }
 

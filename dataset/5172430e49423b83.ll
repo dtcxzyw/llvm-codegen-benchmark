@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; clamav/optimized/pe.c.ll
 ; git/optimized/block.ll
 ; hermes/optimized/APInt.cpp.ll
@@ -10,6 +10,7 @@
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha1_hw.ll
 ; wireshark/optimized/packet-metamako.c.ll
 ; wolfssl/optimized/pkcs12.c.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -19,7 +20,10 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 7 occurrences:
+; lvgl/optimized/lv_checkbox.ll
+; lvgl/optimized/lv_obj_scroll.ll
+; lvgl/optimized/lv_switch.ll
 ; minetest/optimized/CGUIFileOpenDialog.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
@@ -33,7 +37,7 @@ entry:
   ret i32 %5
 }
 
-; 15 occurrences:
+; 13 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
@@ -43,8 +47,6 @@ entry:
 ; linux/optimized/intel_panel.ll
 ; linux/optimized/libata-scsi.ll
 ; linux/optimized/rscalc.ll
-; openblas/optimized/dgbtrf.c.ll
-; openblas/optimized/dgeqp3.c.ll
 ; opencv/optimized/color_hsv.dispatch.cpp.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; php/optimized/pdo.ll
@@ -66,6 +68,18 @@ entry:
   %3 = add i32 %2, %0
   %4 = sub i32 %1, %3
   %5 = add i32 %4, 63
+  ret i32 %5
+}
+
+; 2 occurrences:
+; clamav/optimized/pe.c.ll
+; hyperscan/optimized/repeat.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %2, %0
+  %4 = sub i32 %1, %3
+  %5 = add i32 %4, 12
   ret i32 %5
 }
 
@@ -104,17 +118,6 @@ entry:
   %3 = add i32 %2, %0
   %4 = sub i32 %1, %3
   %5 = add i32 %4, 256
-  ret i32 %5
-}
-
-; 1 occurrences:
-; hyperscan/optimized/repeat.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add i32 %2, %0
-  %4 = sub i32 %1, %3
-  %5 = add i32 %4, 1
   ret i32 %5
 }
 

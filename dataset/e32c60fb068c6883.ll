@@ -1,8 +1,7 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; abc/optimized/ifMap.c.ll
 ; abc/optimized/ivyTable.c.ll
-; brotli/optimized/decode.c.ll
 ; git/optimized/read-cache.ll
 ; llvm/optimized/AArch64Disassembler.cpp.ll
 ; llvm/optimized/MachineOperand.cpp.ll
@@ -15,7 +14,7 @@ define i1 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 5
   %4 = and i32 %3, 31
-  %5 = icmp eq i32 %4, %1
+  %5 = icmp eq i32 %1, %4
   %6 = and i1 %5, %0
   ret i1 %6
 }

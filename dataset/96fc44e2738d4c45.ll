@@ -1,5 +1,6 @@
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/cmdline.ll
 ; eastl/optimized/EADateTime.cpp.ll
 ; git/optimized/pack-write.ll
 ; postgres/optimized/xid.ll

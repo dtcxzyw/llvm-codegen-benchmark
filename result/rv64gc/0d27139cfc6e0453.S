@@ -3,8 +3,23 @@ func0000000000000012:                   # @func0000000000000012
 	li	a1, 1
 	sllw	a0, a1, a0
 	ret
+func000000000000001e:                   # @func000000000000001e
+	srli	a0, a0, 3
+	li	a1, 2
+	sllw	a0, a1, a0
+	ret
+func0000000000000003:                   # @func0000000000000003
+	srli	a0, a0, 3
+	li	a1, 1
+	sllw	a0, a1, a0
+	ret
 func0000000000000002:                   # @func0000000000000002
-	srli	a0, a0, 1
+	srli	a0, a0, 3
+	li	a1, 1
+	sllw	a0, a1, a0
+	ret
+func000000000000000e:                   # @func000000000000000e
+	srli	a0, a0, 3
 	li	a1, 1
 	sllw	a0, a1, a0
 	ret
@@ -23,19 +38,9 @@ func0000000000000008:                   # @func0000000000000008
 	li	a1, 64
 	sllw	a0, a1, a0
 	ret
-func000000000000000e:                   # @func000000000000000e
-	srli	a0, a0, 3
-	li	a1, 1
-	sllw	a0, a1, a0
-	ret
 func000000000000001c:                   # @func000000000000001c
 	srli	a0, a0, 3
 	li	a1, 2
-	sllw	a0, a1, a0
-	ret
-func000000000000001e:                   # @func000000000000001e
-	srli	a0, a0, 1
-	lui	a1, 16
 	sllw	a0, a1, a0
 	ret
 func0000000000000010:                   # @func0000000000000010

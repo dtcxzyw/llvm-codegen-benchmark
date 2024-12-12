@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 24 occurrences:
 ; arrow/optimized/compare.cc.ll
 ; arrow/optimized/int_util.cc.ll
 ; arrow/optimized/list_util.cc.ll
@@ -7,6 +7,8 @@
 ; arrow/optimized/vector_selection_filter_internal.cc.ll
 ; arrow/optimized/vector_selection_take_internal.cc.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; brotli/optimized/decode.c.ll
 ; c3c/optimized/bigint.c.ll
 ; clamav/optimized/infblock.c.ll

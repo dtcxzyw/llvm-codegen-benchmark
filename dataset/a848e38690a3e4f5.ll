@@ -1,10 +1,10 @@
 
-%struct.XHCISlot.2593258 = type { i8, i8, i16, i64, ptr, [31 x ptr] }
-%struct.anon.2823595 = type { ptr, i64 }
-%struct.focaltech_finger_state.3348448 = type { i8, i8, i32, i32 }
-%struct.xhci_virt_ep.3351246 = type { ptr, i32, ptr, ptr, ptr, i32, i32, %struct.list_head.3351247, ptr, ptr, ptr, i8, %struct.xhci_bw_info.3351248, %struct.list_head.3351247, i32, i8 }
-%struct.xhci_bw_info.3351248 = type { i32, i32, i32, i32, i32, i32 }
-%struct.list_head.3351247 = type { ptr, ptr }
+%struct.XHCISlot.2706960 = type { i8, i8, i16, i64, ptr, [31 x ptr] }
+%struct.anon.2935456 = type { ptr, i64 }
+%struct.focaltech_finger_state.3536784 = type { i8, i8, i32, i32 }
+%struct.xhci_virt_ep.3539131 = type { ptr, i32, ptr, ptr, ptr, i32, i32, %struct.list_head.3539128, ptr, ptr, ptr, i8, %struct.xhci_bw_info.3539132, %struct.list_head.3539128, i32, i8 }
+%struct.xhci_bw_info.3539132 = type { i32, i32, i32, i32, i32, i32 }
+%struct.list_head.3539128 = type { ptr, ptr }
 
 ; 7 occurrences:
 ; linux/optimized/ip6_output.ll
@@ -20,7 +20,7 @@ entry:
   %2 = zext i8 %1 to i32
   %3 = add nsw i32 %2, -1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr [64 x %struct.XHCISlot.2593258], ptr %0, i64 0, i64 %4
+  %5 = getelementptr [64 x %struct.XHCISlot.2706960], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -31,24 +31,24 @@ entry:
 ; luajit/optimized/minilua.ll
 ; openjdk/optimized/jdmarker.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i8 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = add nsw i32 %2, -16
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw [4 x ptr], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [4 x ptr], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; luau/optimized/lstrlib.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002e(ptr %0, i8 %1) #0 {
+define ptr @func000000000000002f(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = add nsw i32 %2, -49
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw [32 x %struct.anon.2823595], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [32 x %struct.anon.2935456], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -59,24 +59,24 @@ entry:
 ; cmake/optimized/archive_ppmd8.c.ll
 ; llvm/optimized/DeltaTree.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i8 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = add nuw nsw i32 %2, 12
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw [8192 x i8], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [8192 x i8], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; llvm/optimized/RewriteRope.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i8 %1) #0 {
+define ptr @func000000000000000b(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = add nsw i32 %2, -1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw [16 x ptr], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [16 x ptr], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -101,7 +101,7 @@ entry:
   %2 = zext nneg i8 %1 to i32
   %3 = add nsw i32 %2, -1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr [5 x %struct.focaltech_finger_state.3348448], ptr %0, i64 0, i64 %4
+  %5 = getelementptr [5 x %struct.focaltech_finger_state.3536784], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -113,7 +113,7 @@ entry:
   %2 = zext nneg i8 %1 to i32
   %3 = add nsw i32 %2, -1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr [31 x %struct.xhci_virt_ep.3351246], ptr %0, i64 0, i64 %4
+  %5 = getelementptr [31 x %struct.xhci_virt_ep.3539131], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -132,12 +132,12 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/bmpset.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i8 %1) #0 {
+define ptr @func000000000000003f(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = add nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw [18 x i32], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [18 x i32], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

@@ -1,28 +1,19 @@
 
-; 21 occurrences:
+; 12 occurrences:
 ; abc/optimized/abcUtil.c.ll
 ; hermes/optimized/SegmentedArray.cpp.ll
-; llvm/optimized/CGCUDANV.cpp.ll
 ; llvm/optimized/CodeGenModule.cpp.ll
-; llvm/optimized/CoroSplit.cpp.ll
-; llvm/optimized/ExpandVariadics.cpp.ll
 ; llvm/optimized/ExtractGV.cpp.ll
 ; llvm/optimized/Function.cpp.ll
-; llvm/optimized/FunctionImport.cpp.ll
-; llvm/optimized/GlobalOpt.cpp.ll
 ; llvm/optimized/Globals.cpp.ll
-; llvm/optimized/IRMover.cpp.ll
-; llvm/optimized/InstrProfiling.cpp.ll
 ; llvm/optimized/JumpThreading.cpp.ll
-; llvm/optimized/LowerEmuTLS.cpp.ll
 ; llvm/optimized/ModuleSymbolTable.cpp.ll
-; llvm/optimized/PreISelIntrinsicLowering.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; php/optimized/pcre2_compile.ll
 ; ruby/optimized/pack.ll
 ; slurm/optimized/job_mgr.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -33
   %4 = add nsw i32 %3, -91
@@ -34,7 +25,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/tcg.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
   %4 = icmp eq i32 %3, 2

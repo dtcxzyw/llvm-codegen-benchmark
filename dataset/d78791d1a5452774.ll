@@ -4,10 +4,23 @@
 ; openssl/optimized/libcrypto-lib-asn1_lib.ll
 ; openssl/optimized/libcrypto-shlib-asn1_lib.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = icmp sgt i64 %3, 16777215
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
+}
+
+; 3 occurrences:
+; freetype/optimized/sfnt.c.ll
+; openssl/optimized/libssl-lib-extensions_srvr.ll
+; openssl/optimized/libssl-shlib-extensions_srvr.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = or disjoint i64 %1, %2
+  %4 = icmp samesign ult i64 %3, 3
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
@@ -16,7 +29,7 @@ entry:
 ; openjdk/optimized/zip_util.ll
 ; qemu/optimized/hw_usb_hcd-xhci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = icmp eq i64 %3, 0
@@ -24,7 +37,7 @@ entry:
   ret i1 %5
 }
 
-; 140 occurrences:
+; 139 occurrences:
 ; abc/optimized/ifMap.c.ll
 ; clamav/optimized/XzDec.c.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
@@ -164,7 +177,6 @@ entry:
 ; spike/optimized/f128_to_i32.ll
 ; spike/optimized/f128_to_i64.ll
 ; spike/optimized/f128_to_ui32.ll
-; spike/optimized/f128_to_ui32_r_minMag.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -177,7 +189,7 @@ entry:
 ; 1 occurrences:
 ; flac/optimized/foreign_metadata.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = icmp slt i64 %3, -8
@@ -189,10 +201,21 @@ entry:
 ; assimp/optimized/zip.c.ll
 ; coreutils-rs/optimized/tq1d77uuiq535i2.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = icmp ne i64 %3, 0
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; lief/optimized/psa_crypto_storage.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = or disjoint i64 %1, %2
+  %4 = icmp samesign ugt i64 %3, 8191
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
@@ -240,17 +263,6 @@ define i1 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
   %4 = icmp ugt i64 %3, 2147483647
-  %5 = select i1 %0, i1 true, i1 %4
-  ret i1 %5
-}
-
-; 1 occurrences:
-; freetype/optimized/sfnt.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = or disjoint i64 %1, %2
-  %4 = icmp ult i64 %3, 8
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }

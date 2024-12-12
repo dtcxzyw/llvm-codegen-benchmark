@@ -1,6 +1,5 @@
 
-; 16 occurrences:
-; cmake/optimized/archive_write_add_filter_lz4.c.ll
+; 15 occurrences:
 ; folly/optimized/AsyncSocket.cpp.ll
 ; git/optimized/transport.ll
 ; linux/optimized/scsi_transport_spi.ll
@@ -21,7 +20,7 @@ define i16 @func0000000000000003(i16 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = select i1 %2, i16 0, i16 2
-  %4 = or disjoint i16 %3, %0
+  %4 = or disjoint i16 %0, %3
   ret i16 %4
 }
 

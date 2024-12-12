@@ -1,5 +1,5 @@
 
-; 362 occurrences:
+; 360 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Glucose.cpp.ll
@@ -12,12 +12,10 @@
 ; abc/optimized/cecSolve.c.ll
 ; abc/optimized/cgtDecide.c.ll
 ; abc/optimized/cutMan.c.ll
-; abc/optimized/darMan.c.ll
 ; abc/optimized/giaIf.c.ll
 ; abc/optimized/giaMinLut.c.ll
 ; abc/optimized/lpkCut.c.ll
 ; abc/optimized/mapperCut.c.ll
-; abc/optimized/reoProfile.c.ll
 ; abc/optimized/saigConstr2.c.ll
 ; abc/optimized/sclBufSize.c.ll
 ; abc/optimized/sclLibUtil.c.ll

@@ -6,7 +6,7 @@ func0000000000000006:                   # @func0000000000000006
 	vnsrl.wi	v9, v9, 0
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vnsrl.wi	v9, v9, 0
-	vor.vv	v8, v9, v8
+	vor.vv	v8, v8, v9
 	ret
 func0000000000000004:                   # @func0000000000000004
 	li	a0, 56
@@ -16,7 +16,7 @@ func0000000000000004:                   # @func0000000000000004
 	vnsrl.wi	v9, v9, 0
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vnsrl.wi	v9, v9, 0
-	vor.vv	v8, v9, v8
+	vor.vv	v8, v8, v9
 	ret
 func0000000000000000:                   # @func0000000000000000
 	li	a0, 32
@@ -26,7 +26,7 @@ func0000000000000000:                   # @func0000000000000000
 	vnsrl.wi	v9, v9, 0
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vnsrl.wi	v9, v9, 0
-	vor.vv	v8, v9, v8
+	vor.vv	v8, v8, v9
 	ret
 func0000000000000007:                   # @func0000000000000007
 	li	a0, 63
@@ -36,5 +36,5 @@ func0000000000000007:                   # @func0000000000000007
 	vnsrl.wi	v9, v9, 0
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vnsrl.wi	v9, v9, 0
-	vor.vv	v8, v9, v8
+	vor.vv	v8, v8, v9
 	ret

@@ -1,8 +1,9 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; diesel-rs/optimized/1mcix0ravw4ybg9k.ll
 ; just-rs/optimized/53slus9exfz9w045.ll
 ; ripgrep-rs/optimized/58dexfd2ydnodcl0.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(i64 %0, ptr %1, i64 %2) #0 {
 entry:

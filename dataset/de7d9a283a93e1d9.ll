@@ -1,25 +1,5 @@
 
-; 9 occurrences:
-; arrow/optimized/bitmap_ops.cc.ll
-; arrow/optimized/hashing.cc.ll
-; arrow/optimized/scalar_cast_numeric.cc.ll
-; arrow/optimized/scalar_cast_temporal.cc.ll
-; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
-; eastl/optimized/TestBitVector.cpp.ll
-; linux/optimized/drm_edid.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
-; spike/optimized/vclz_v.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000002(i8 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = shl nuw i32 1, %2
-  %4 = zext i8 %0 to i32
-  %5 = and i32 %3, %4
-  ret i32 %5
-}
-
-; 16 occurrences:
+; 14 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types_row.cpp.ll
 ; eastl/optimized/TestBitVector.cpp.ll
 ; graphviz/optimized/shapes.c.ll
@@ -31,9 +11,7 @@ entry:
 ; redis/optimized/bitops.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; wireshark/optimized/packet-mac-nr.c.ll
-; wireshark/optimized/packet-netanalyzer.c.ll
 ; wireshark/optimized/packet-ocfs2.c.ll
-; wireshark/optimized/packet-sita.c.ll
 ; wireshark/optimized/packet-ua3g.c.ll
 ; wireshark/optimized/packet-woww.c.ll
 ; Function Attrs: nounwind
@@ -60,6 +38,25 @@ define i32 @func0000000000000003(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nuw nsw i32 1, %2
+  %4 = zext i8 %0 to i32
+  %5 = and i32 %3, %4
+  ret i32 %5
+}
+
+; 8 occurrences:
+; arrow/optimized/bitmap_ops.cc.ll
+; arrow/optimized/hashing.cc.ll
+; arrow/optimized/scalar_cast_numeric.cc.ll
+; arrow/optimized/scalar_cast_temporal.cc.ll
+; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
+; eastl/optimized/TestBitVector.cpp.ll
+; linux/optimized/drm_edid.ll
+; spike/optimized/vclz_v.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000002(i8 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = shl nuw i32 1, %2
   %4 = zext i8 %0 to i32
   %5 = and i32 %3, %4
   ret i32 %5

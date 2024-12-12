@@ -1,10 +1,13 @@
 
-; 261 occurrences:
+; 269 occurrences:
 ; assimp/optimized/LWOMaterial.cpp.ll
 ; assimp/optimized/StandardShapes.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; box2d/optimized/b2_distance_joint.cpp.ll
 ; box2d/optimized/b2_mouse_joint.cpp.ll
 ; bullet3/optimized/b3QuantizedBvh.ll
@@ -30,6 +33,7 @@
 ; bullet3/optimized/btSoftBody.ll
 ; bullet3/optimized/poly34.ll
 ; darktable/optimized/histogram.c.ll
+; darktable/optimized/introspection_atrous.c.ll
 ; darktable/optimized/introspection_basicadj.c.ll
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
 ; darktable/optimized/introspection_clipping.c.ll
@@ -45,6 +49,7 @@
 ; gromacs/optimized/bonded.cpp.ll
 ; gromacs/optimized/calc_verletbuf.cpp.ll
 ; gromacs/optimized/calculator.cpp.ll
+; gromacs/optimized/coupling.cpp.ll
 ; gromacs/optimized/gmx_arpack.cpp.ll
 ; gromacs/optimized/gmx_hbond.cpp.ll
 ; gromacs/optimized/insert_molecules.cpp.ll
@@ -261,11 +266,14 @@
 ; typst-rs/optimized/1c2qpu6zljc8gscz.ll
 ; typst-rs/optimized/4sdr2z2pqpqxs72u.ll
 ; xgboost/optimized/auc.cc.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, i1 %1, float %2) #0 {
 entry:
   %3 = select i1 %1, float 6.000000e+02, float %2
-  %4 = fmul float %3, %0
+  %4 = fmul float %0, %3
   ret float %4
 }
 

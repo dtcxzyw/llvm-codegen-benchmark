@@ -1,4 +1,4 @@
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	testq	%rdx, %rdx
 	sete	%cl
 	andb	%sil, %cl
@@ -6,7 +6,7 @@ func0000000000000061:                   # @func0000000000000061
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	testq	%rdx, %rdx
 	sete	%cl
 	andb	%sil, %cl

@@ -40,7 +40,7 @@ func000000000000003e:                   # @func000000000000003e
 	vmacc.vx	v8, a0, v10
 	vsll.vi	v8, v8, 8
 	ret
-func000000000000003d:                   # @func000000000000003d
+func000000000000003f:                   # @func000000000000003f
 	li	a0, 3
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10
@@ -58,12 +58,6 @@ func0000000000000015:                   # @func0000000000000015
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10
 	vsll.vi	v8, v8, 16
-	ret
-func000000000000003f:                   # @func000000000000003f
-	li	a0, 6
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmacc.vx	v8, a0, v10
-	vsll.vi	v8, v8, 3
 	ret
 func0000000000000017:                   # @func0000000000000017
 	li	a0, 5

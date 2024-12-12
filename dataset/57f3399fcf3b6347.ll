@@ -17,7 +17,7 @@ define i1 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
   %.mask = and i32 %1, 536870911
   %2 = icmp eq i32 %.mask, 0
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   ret i1 %3
 }
 
@@ -39,18 +39,17 @@ entry:
   ret i1 %3
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; luau/optimized/main.cpp.ll
 ; nlohmann_json/optimized/unit.cpp.ll
-; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 67108832
   %3 = icmp eq i32 %2, 0
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
@@ -65,7 +64,7 @@ define i1 @func000000000000000a(i1 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 2
   %3 = icmp sgt i32 %2, 0
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 

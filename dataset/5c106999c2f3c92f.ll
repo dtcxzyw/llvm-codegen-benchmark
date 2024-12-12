@@ -1,8 +1,7 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; git/optimized/apply.ll
 ; git/optimized/transport.ll
-; linux/optimized/fiemap.ll
 ; linux/optimized/tcp_input.ll
 ; minetest/optimized/CImage.cpp.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll

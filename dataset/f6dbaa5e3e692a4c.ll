@@ -1,4 +1,18 @@
 
+; 3 occurrences:
+; boost/optimized/to_chars.ll
+; openssl/optimized/libcrypto-lib-f_impl64.ll
+; openssl/optimized/libcrypto-shlib-f_impl64.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003f(i64 %0, i64 %1, i128 %2) #0 {
+entry:
+  %3 = lshr i128 %2, 56
+  %4 = trunc nuw nsw i128 %3 to i64
+  %5 = add nuw nsw i64 %1, %4
+  %6 = add nuw nsw i64 %5, %0
+  ret i64 %6
+}
+
 ; 1 occurrences:
 ; qemu/optimized/hw_virtio_vhost-vdpa.c.ll
 ; Function Attrs: nounwind
@@ -6,8 +20,8 @@ define i64 @func0000000000000035(i64 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = lshr i128 %2, 64
   %4 = trunc nuw nsw i128 %3 to i64
-  %5 = add nsw i64 %4, %1
-  %6 = add nsw i64 %5, %0
+  %5 = add nsw i64 %1, %4
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -19,12 +33,13 @@ define i64 @func0000000000000030(i64 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = lshr i128 %2, 64
   %4 = trunc nuw nsw i128 %3 to i64
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = add i64 %5, %0
   ret i64 %6
 }
 
-; 103 occurrences:
+; 104 occurrences:
+; boost/optimized/to_chars.ll
 ; cpython/optimized/basearith.ll
 ; cpython/optimized/crt.ll
 ; cpython/optimized/mpdecimal.ll
@@ -133,12 +148,13 @@ define i64 @func0000000000000028(i64 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = lshr i128 %2, 64
   %4 = trunc nuw i128 %3 to i64
-  %5 = add nuw i64 %4, %1
+  %5 = add nuw i64 %1, %4
   %6 = add i64 %5, %0
   ret i64 %6
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/to_chars.ll
 ; cpython/optimized/basearith.ll
 ; cpython/optimized/crt.ll
 ; cpython/optimized/mpdecimal.ll
@@ -149,7 +165,7 @@ define i64 @func0000000000000020(i64 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = lshr i128 %2, 64
   %4 = trunc nuw i128 %3 to i64
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = add i64 %5, %0
   ret i64 %6
 }

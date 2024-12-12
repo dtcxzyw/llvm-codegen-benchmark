@@ -1,9 +1,16 @@
 
-; 50 occurrences:
+; 57 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; abc/optimized/fretMain.c.ll
 ; abc/optimized/giaMuxes.c.ll
 ; abc/optimized/lpkAbcDsd.c.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; clamav/optimized/optparser.c.ll
 ; cmake/optimized/blocksort.c.ll
 ; darktable/optimized/masks.c.ll
@@ -59,10 +66,9 @@ entry:
   ret i1 %5
 }
 
-; 53 occurrences:
+; 50 occurrences:
 ; abc/optimized/acecPolyn.c.ll
 ; abc/optimized/blocksort.c.ll
-; abc/optimized/giaEra.c.ll
 ; abc/optimized/ifDec07.c.ll
 ; abc/optimized/lpkAbcDsd.c.ll
 ; abc/optimized/mvcUtils.c.ll
@@ -80,7 +86,6 @@ entry:
 ; git/optimized/symlinks.ll
 ; gromacs/optimized/gmx_lmcurve.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
-; harfbuzz/optimized/hb-subset.cc.ll
 ; linux/optimized/avc.ll
 ; linux/optimized/cgroup.ll
 ; linux/optimized/dquot.ll
@@ -95,7 +100,6 @@ entry:
 ; llvm/optimized/DeadStoreElimination.cpp.ll
 ; llvm/optimized/DylibReader.cpp.ll
 ; llvm/optimized/InstructionCombining.cpp.ll
-; llvm/optimized/MachineCopyPropagation.cpp.ll
 ; llvm/optimized/PartiallyInlineLibCalls.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
@@ -118,7 +122,7 @@ define i1 @func000000000000000c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = icmp ne i32 %3, 0
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -137,15 +141,14 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; abc/optimized/giaSatLE.c.ll
+; 1 occurrences:
 ; llvm/optimized/PseudoProbe.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
-  %4 = icmp ult i32 %3, 16
-  %5 = and i1 %4, %0
+  %4 = icmp samesign ult i32 %3, 8192
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -156,20 +159,19 @@ define i1 @func000000000000000a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = icmp sgt i32 %3, -1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 3 occurrences:
-; icu/optimized/genmbcs.ll
+; 2 occurrences:
 ; opencv/optimized/filter.dispatch.cpp.ll
 ; proj/optimized/geodesic.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
-  %4 = icmp ugt i32 %3, 16383
-  %5 = and i1 %4, %0
+  %4 = icmp samesign ugt i32 %3, 16383
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

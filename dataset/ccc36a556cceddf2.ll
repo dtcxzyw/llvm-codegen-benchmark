@@ -13,8 +13,10 @@ entry:
   ret i8 %3
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; rust-analyzer-rs/optimized/hajha7nvyoiczny.ll
+; zed-rs/optimized/5kbsfw3jcmbcslmu1o5kx13w3.ll
+; zed-rs/optimized/6wndapbw172jkqxtgmm5s37me.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000004(i8 %0) #0 {
 entry:

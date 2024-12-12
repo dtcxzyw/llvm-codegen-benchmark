@@ -6,7 +6,7 @@ func000000000000000a:                   # @func000000000000000a
 	sarl	$31, %eax
 	andl	%ecx, %eax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	notl	%esi
 	leal	(%rsi,%rdi), %eax
 	movl	%eax, %ecx
@@ -14,7 +14,7 @@ func000000000000001a:                   # @func000000000000001a
 	sarl	$31, %eax
 	andl	%ecx, %eax
 	retq
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	notl	%esi
 	leal	(%rsi,%rdi), %eax
 	movl	%eax, %ecx

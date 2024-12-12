@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 20 occurrences:
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; gromacs/optimized/gmx_nmeig.cpp.ll
 ; gromacs/optimized/pme_spread.cpp.ll
@@ -13,6 +13,7 @@
 ; opencv/optimized/kinfu_frame.cpp.ll
 ; opencv/optimized/normal.cpp.ll
 ; opencv/optimized/perf_tsdf.cpp.ll
+; opencv/optimized/sift.dispatch.cpp.ll
 ; opencv/optimized/tsdf.cpp.ll
 ; opencv/optimized/undistort.dispatch.cpp.ll
 ; raylib/optimized/rtext.c.ll

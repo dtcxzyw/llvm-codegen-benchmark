@@ -57,10 +57,9 @@ entry:
   ret i32 %3
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; cpython/optimized/instrumentation.ll
 ; imgui/optimized/imgui.cpp.ll
-; linux/optimized/intel_pstate.ll
 ; opencv/optimized/global_histogram_binarizer.cpp.ll
 ; opencv/optimized/tree.cpp.ll
 ; Function Attrs: nounwind

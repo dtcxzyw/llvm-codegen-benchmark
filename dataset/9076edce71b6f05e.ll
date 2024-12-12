@@ -131,9 +131,9 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/gmx_lmcurve.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(double %0, double %1, i32 %2) #0 {
+define i1 @func0000000000000144(double %0, double %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 99
+  %3 = icmp samesign ult i32 %2, 99
   %4 = fcmp ogt double %0, %1
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
@@ -166,9 +166,9 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/hough.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(double %0, double %1, i32 %2) #0 {
+define i1 @func000000000000018a(double %0, double %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, 34
+  %3 = icmp samesign ugt i32 %2, 34
   %4 = fcmp ole double %0, %1
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
@@ -207,17 +207,6 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; openblas/optimized/dlacon.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000067(double %0, double %1, i32 %2) #0 {
-entry:
-  %3 = icmp slt i32 %2, 5
-  %4 = fcmp une double %0, %1
-  %5 = select i1 %4, i1 %3, i1 false
-  ret i1 %5
-}
-
 ; 6 occurrences:
 ; openblas/optimized/dgerfs.c.ll
 ; openblas/optimized/dgtrfs.c.ll
@@ -226,9 +215,9 @@ entry:
 ; openblas/optimized/dsprfs.c.ll
 ; openblas/optimized/dsyrfs.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(double %0, double %1, i32 %2) #0 {
+define i1 @func000000000000014a(double %0, double %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 6
+  %3 = icmp samesign ult i32 %2, 6
   %4 = fcmp ole double %0, %1
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
@@ -238,9 +227,9 @@ entry:
 ; openblas/optimized/dlarfg.c.ll
 ; openblas/optimized/dlarfgp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000042(double %0, double %1, i32 %2) #0 {
+define i1 @func0000000000000142(double %0, double %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 19
+  %3 = icmp samesign ult i32 %2, 19
   %4 = fcmp olt double %0, %1
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5

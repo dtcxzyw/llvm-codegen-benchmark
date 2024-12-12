@@ -1,5 +1,12 @@
 func0000000000000006:                   # @func0000000000000006
-	mv	a0, a1
+	sub	a1, a0, a1
+	lui	a2, 699051
+	srai	a1, a1, 3
+	addiw	a2, a2, -1365
+	slli	a3, a2, 32
+	add	a2, a2, a3
+	mul	a1, a1, a2
+	add	a0, a0, a1
 	ret
 .LCPI1_0:
 	.quad	-7378697629483820647            # 0x9999999999999999

@@ -1,5 +1,5 @@
 
-; 41 occurrences:
+; 38 occurrences:
 ; cpython/optimized/ceval.ll
 ; hermes/optimized/FoldingSet.cpp.ll
 ; linux/optimized/buffered_read.ll
@@ -10,7 +10,6 @@
 ; linux/optimized/iov_iter.ll
 ; linux/optimized/iterator.ll
 ; linux/optimized/libfs.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/memfd.ll
 ; linux/optimized/page-writeback.ll
 ; linux/optimized/posix_acl.ll
@@ -33,16 +32,14 @@
 ; ruby/optimized/class.ll
 ; ruby/optimized/compile.ll
 ; ruby/optimized/gc.ll
-; ruby/optimized/imemo.ll
 ; ruby/optimized/iseq.ll
-; ruby/optimized/postponed_job.ll
 ; ruby/optimized/proc.ll
 ; ruby/optimized/vm.ll
 ; ruby/optimized/vm_backtrace.ll
 ; ruby/optimized/vm_trace.ll
 ; ruby/optimized/yjit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(ptr %0) #0 {
+define i1 @func0000000000000302(ptr %0) #0 {
 entry:
   %1 = ptrtoint ptr %0 to i64
   %2 = and i64 %1, 7
@@ -297,7 +294,7 @@ entry:
 ; z3/optimized/sat_solver.cpp.ll
 ; z3/optimized/spacer_context.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(ptr %0) #0 {
+define i1 @func0000000000000042(ptr %0) #0 {
 entry:
   %1 = ptrtoint ptr %0 to i64
   %2 = and i64 %1, -4294967293

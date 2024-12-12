@@ -18,14 +18,15 @@ func000000000000000c:                   # @func000000000000000c
 	vmovss	.LCPI1_2(%rip), %xmm0 {%k1}     # xmm0 {%k1} = [-4.0E+0,0.0E+0,0.0E+0,0.0E+0]
 	retq
 .LCPI2_0:
-	.long	0x3e63d838                      # float 0.222504497
+	.long	0xc0e00000                      # float -7
 .LCPI2_1:
-	.long	0x3f800000                      # float 1
+	.long	0x44004000                      # float 513
+.LCPI2_2:
+	.long	0xbf600000                      # float -0.875
 func0000000000000004:                   # @func0000000000000004
-	vmovss	.LCPI2_0(%rip), %xmm2           # xmm2 = [2.22504497E-1,0.0E+0,0.0E+0,0.0E+0]
-	vmulss	%xmm2, %xmm0, %xmm0
+	vmulss	.LCPI2_0(%rip), %xmm0, %xmm0
 	vcmpgtss	.LCPI2_1(%rip), %xmm1, %k1
-	vmovss	%xmm2, %xmm0, %xmm0 {%k1}
+	vmovss	.LCPI2_2(%rip), %xmm0 {%k1}     # xmm0 {%k1} = [-8.75E-1,0.0E+0,0.0E+0,0.0E+0]
 	retq
 .LCPI3_0:
 	.long	0x3f000000                      # float 0.5

@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	flt.d	a1, fa0, fa1
 	bnez	a1, .LBB0_2
 	li	a1, 24
@@ -8,7 +8,7 @@ func000000000000000a:                   # @func000000000000000a
 	li	a1, 16
 	add	a0, a0, a1
 	ret
-func0000000000000012:                   # @func0000000000000012
+func0000000000000013:                   # @func0000000000000013
 	flt.d	a1, fa1, fa0
 	bnez	a1, .LBB1_2
 	li	a1, 16
@@ -24,7 +24,7 @@ func0000000000000020:                   # @func0000000000000020
 	slli	a1, a1, 3
 	add	a0, a0, a1
 	ret
-func000000000000000b:                   # @func000000000000000b
+func0000000000000008:                   # @func0000000000000008
 	flt.d	a1, fa0, fa1
 	bnez	a1, .LBB3_2
 	li	a1, 16
@@ -34,23 +34,13 @@ func000000000000000b:                   # @func000000000000000b
 	li	a1, 24
 	add	a0, a0, a1
 	ret
-func0000000000000008:                   # @func0000000000000008
-	flt.d	a1, fa0, fa1
-	bnez	a1, .LBB4_2
-	li	a1, 16
-	add	a0, a0, a1
-	ret
-.LBB4_2:
-	li	a1, 24
-	add	a0, a0, a1
-	ret
-func0000000000000032:                   # @func0000000000000032
+func0000000000000033:                   # @func0000000000000033
 	fle.d	a1, fa1, fa0
-	bnez	a1, .LBB5_2
+	bnez	a1, .LBB4_2
 	li	a1, 256
 	add	a0, a0, a1
 	ret
-.LBB5_2:
+.LBB4_2:
 	li	a1, 248
 	add	a0, a0, a1
 	ret

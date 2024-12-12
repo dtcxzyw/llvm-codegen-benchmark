@@ -19,3 +19,13 @@ func0000000000000011:                   // @func0000000000000011
 	asr	x0, x8, #2
 	ret
                                         // -- End function
+func0000000000000019:                   // @func0000000000000019
+// %bb.0:                               // %entry
+	tst	w2, #0x1
+	mov	w8, #16                         // =0x10
+	csel	x8, xzr, x8, ne
+	add	x8, x1, x8
+	sub	x8, x8, x0
+	asr	x0, x8, #4
+	ret
+                                        // -- End function

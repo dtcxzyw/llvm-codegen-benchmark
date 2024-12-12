@@ -1,5 +1,5 @@
 
-; 42 occurrences:
+; 41 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
 ; gromacs/optimized/decidesimulationworkload.cpp.ll
@@ -41,26 +41,26 @@
 ; rocksdb/optimized/compaction_iterator.cc.ll
 ; rust-analyzer-rs/optimized/2pjlntmpzwg88apl.ll
 ; tev/optimized/ImageViewer.cpp.ll
-; yosys/optimized/sim.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = trunc i8 %2 to i1
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; postgres/optimized/print.ll
 ; slurm/optimized/gres.ll
+; zed-rs/optimized/5tjk7umffytrthtuv35pacndm.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
-  %4 = and i1 %3, %1
-  %5 = and i1 %4, %0
+  %4 = and i1 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

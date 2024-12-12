@@ -1,5 +1,5 @@
 
-; 192 occurrences:
+; 191 occurrences:
 ; box2d/optimized/b2_circle_shape.cpp.ll
 ; box2d/optimized/b2_gear_joint.cpp.ll
 ; box2d/optimized/b2_rope.cpp.ll
@@ -62,7 +62,6 @@
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
@@ -150,7 +149,6 @@
 ; oiio/optimized/deepdata.cpp.ll
 ; oiio/optimized/maketexture.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
-; openblas/optimized/ieeeck.c.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/KAZEFeatures.cpp.ll
 ; opencv/optimized/bilateral_texture_filter.cpp.ll
@@ -192,6 +190,7 @@
 ; raylib/optimized/rtext.c.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1) #0 {
 entry:

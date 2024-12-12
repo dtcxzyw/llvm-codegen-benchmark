@@ -22,9 +22,9 @@ entry:
 ; libpng/optimized/pngrutil.c.ll
 ; openjdk/optimized/pngrutil.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0) #0 {
+define ptr @func000000000000001e(ptr %0) #0 {
 entry:
-  %1 = getelementptr nusw i8, ptr %0, i64 32
+  %1 = getelementptr nusw nuw i8, ptr %0, i64 32
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, 15
   %4 = sub nsw i64 0, %3
@@ -35,9 +35,9 @@ entry:
 ; 1 occurrences:
 ; nuklear/optimized/unity.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000038(ptr %0) #0 {
+define ptr @func000000000000003c(ptr %0) #0 {
 entry:
-  %1 = getelementptr nusw i8, ptr %0, i64 464
+  %1 = getelementptr nusw nuw i8, ptr %0, i64 464
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, 3
   %4 = sub nuw nsw i64 4, %3
@@ -61,13 +61,13 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/mpv.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0) #0 {
+define ptr @func000000000000003f(ptr %0) #0 {
 entry:
-  %1 = getelementptr nusw i8, ptr %0, i64 1
+  %1 = getelementptr nusw nuw i8, ptr %0, i64 1
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, 15
   %4 = sub nuw nsw i64 16, %3
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
   ret ptr %5
 }
 

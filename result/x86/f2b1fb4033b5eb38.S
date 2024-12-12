@@ -40,6 +40,13 @@ func0000000000000003:                   # @func0000000000000003
 	cmovel	%ecx, %eax
 	addl	%edi, %eax
 	retq
+func0000000000000004:                   # @func0000000000000004
+	leal	-1077(%rdx), %ecx
+	testb	$1, %sil
+	movl	$-1076, %eax                    # imm = 0xFBCC
+	cmovel	%ecx, %eax
+	addl	%edi, %eax
+	retq
 func0000000000000001:                   # @func0000000000000001
 	leal	-1(%rdx), %ecx
 	xorl	%eax, %eax
@@ -47,17 +54,17 @@ func0000000000000001:                   # @func0000000000000001
 	cmovel	%ecx, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
-	leal	-1(%rdx), %ecx
-	testb	$1, %sil
-	movl	$112, %eax
-	cmovel	%ecx, %eax
-	addl	%edi, %eax
-	retq
 func0000000000000008:                   # @func0000000000000008
 	leal	2(%rdx), %ecx
 	xorl	%eax, %eax
 	testb	$1, %sil
+	cmovel	%ecx, %eax
+	addl	%edi, %eax
+	retq
+func000000000000000a:                   # @func000000000000000a
+	leal	1(%rdx), %ecx
+	testb	$1, %sil
+	movl	$5, %eax
 	cmovel	%ecx, %eax
 	addl	%edi, %eax
 	retq

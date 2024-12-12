@@ -4,14 +4,14 @@ func0000000000000023:                   # @func0000000000000023
 	vpsllq	$32, %ymm2, %ymm2
 	vpaddq	%ymm1, %ymm1, %ymm1
 	vpandq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
-	vpternlogq	$254, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | ymm1
+	vpternlogq	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	retq
 .LCPI1_0:
 	.quad	1970324836974592                # 0x7000000000000
 func000000000000003f:                   # @func000000000000003f
 	vpsllq	$48, %ymm2, %ymm2
 	vpsllq	$40, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	vpternlogq	$248, .LCPI1_0(%rip){1to4}, %ymm2, %ymm0 # ymm0 = ymm0 | (ymm2 & mem)
 	retq
 .LCPI2_0:
@@ -19,7 +19,7 @@ func000000000000003f:                   # @func000000000000003f
 func0000000000000003:                   # @func0000000000000003
 	vpsllq	$61, %ymm2, %ymm2
 	vpsllq	$63, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	vpternlogq	$248, .LCPI2_0(%rip){1to4}, %ymm2, %ymm0 # ymm0 = ymm0 | (ymm2 & mem)
 	retq
 .LCPI3_0:
@@ -103,7 +103,7 @@ func0000000000000002:                   # @func0000000000000002
 func000000000000002b:                   # @func000000000000002b
 	vpsllq	$48, %ymm2, %ymm2
 	vpshufb	.LCPI5_0(%rip), %ymm1, %ymm1    # ymm1 = zero,ymm1[0,1,2],zero,zero,zero,zero,zero,ymm1[8,9,10],zero,zero,zero,zero,zero,ymm1[16,17,18],zero,zero,zero,zero,zero,ymm1[24,25,26],zero,zero,zero,zero
-	vpternlogq	$254, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | ymm1
+	vpternlogq	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	retq
 .LCPI6_0:
 	.byte	128                             # 0x80
@@ -225,14 +225,14 @@ func0000000000000033:                   # @func0000000000000033
 	vpsllq	$16, %ymm2, %ymm2
 	vpsllq	$19, %ymm1, %ymm1
 	vpandq	.LCPI9_0(%rip){1to4}, %ymm1, %ymm1
-	vpternlogq	$254, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | ymm1
+	vpternlogq	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	retq
 .LCPI10_0:
 	.quad	576460752303423488              # 0x800000000000000
 func000000000000000c:                   # @func000000000000000c
 	vpsllq	$8, %ymm2, %ymm2
 	vpsllq	$19, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	vpternlogq	$248, .LCPI10_0(%rip){1to4}, %ymm2, %ymm0 # ymm0 = ymm0 | (ymm2 & mem)
 	retq
 .LCPI11_0:

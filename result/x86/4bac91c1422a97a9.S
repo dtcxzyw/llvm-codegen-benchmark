@@ -1,42 +1,42 @@
-func0000000000000055:                   # @func0000000000000055
+func00000000000000a5:                   # @func00000000000000a5
 	shll	$8, %edx
 	movzbl	%sil, %eax
 	orl	%edx, %eax
-	cmpw	%di, %ax
-	setae	%al
+	cmpw	%ax, %di
+	setbe	%al
 	retq
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	shll	$8, %edx
 	movzbl	%sil, %eax
 	orl	%edx, %eax
-	cmpw	%di, %ax
-	setl	%al
-	retq
-func0000000000000056:                   # @func0000000000000056
-	shll	$8, %edx
-	movzbl	%sil, %eax
-	orl	%edx, %eax
-	cmpw	%di, %ax
+	cmpw	%ax, %di
 	setg	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a6:                   # @func00000000000000a6
 	shll	$8, %edx
 	movzbl	%sil, %eax
 	orl	%edx, %eax
-	cmpw	%di, %ax
+	cmpw	%ax, %di
+	setl	%al
+	retq
+func00000000000000a1:                   # @func00000000000000a1
+	shll	$8, %edx
+	movzbl	%sil, %eax
+	orl	%edx, %eax
+	cmpw	%ax, %di
 	sete	%al
 	retq
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	shll	$8, %edx
 	movzbl	%sil, %eax
 	orl	%edx, %eax
-	cmpw	%di, %ax
-	seta	%al
-	retq
-func0000000000000058:                   # @func0000000000000058
-	shll	$8, %edx
-	movzbl	%sil, %eax
-	orl	%edx, %eax
-	cmpw	%di, %ax
+	cmpw	%ax, %di
 	setb	%al
+	retq
+func00000000000000a8:                   # @func00000000000000a8
+	shll	$8, %edx
+	movzbl	%sil, %eax
+	orl	%edx, %eax
+	cmpw	%ax, %di
+	seta	%al
 	retq

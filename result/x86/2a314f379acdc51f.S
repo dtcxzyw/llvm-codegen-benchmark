@@ -10,7 +10,7 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	$624, %rcx                      # imm = 0x270
 	cmovneq	%rcx, %rax
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	leaq	1(%rdi), %rcx
 	xorl	%eax, %eax
 	cmpq	$624, %rcx                      # imm = 0x270
@@ -22,7 +22,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	$2, %rcx
 	cmovaeq	%rcx, %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	leaq	1(%rdi), %rcx
 	xorl	%eax, %eax
 	cmpq	$8, %rcx

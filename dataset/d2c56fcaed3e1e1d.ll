@@ -1,7 +1,6 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; linux/optimized/acpi_lpit.ll
-; linux/optimized/cppc.ll
 ; llvm/optimized/CombinerHelper.cpp.ll
 ; llvm/optimized/X86InstCombineIntrinsic.cpp.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
@@ -15,7 +14,7 @@ entry:
   %2 = sub nsw i64 64, %1
   %3 = and i64 %2, 4294967295
   %4 = lshr i64 -1, %3
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 
@@ -33,7 +32,7 @@ entry:
   %2 = sub i64 0, %1
   %3 = and i64 %2, 63
   %4 = lshr i64 -1, %3
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 

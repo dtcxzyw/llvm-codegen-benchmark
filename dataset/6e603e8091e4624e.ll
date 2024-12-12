@@ -9,7 +9,6 @@
 ; fmt/optimized/enforce-checks-test.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
 ; libquic/optimized/base64_bio.c.ll
-; linux/optimized/ff-memless.ll
 ; ockam-rs/optimized/3trfdpf6q4y0wtix.ll
 ; openssl/optimized/libcrypto-lib-bio_b64.ll
 ; openssl/optimized/libcrypto-shlib-bio_b64.ll
@@ -23,6 +22,7 @@
 ; wireshark/optimized/packet-isakmp.c.ll
 ; wireshark/optimized/packet-pvfs2.c.ll
 ; wireshark/optimized/packet-ua3g.c.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0) #0 {
 entry:
@@ -49,9 +49,10 @@ entry:
   ret i32 %3
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; fmt/optimized/format-impl-test.cc.ll
 ; icu/optimized/vtzone.ll
+; linux/optimized/ff-memless.ll
 ; linux/optimized/xarray.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0) #0 {

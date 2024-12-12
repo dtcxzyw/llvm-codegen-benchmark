@@ -13,7 +13,7 @@
 	.quad	1                               # 0x1
 .LCPI0_3:
 	.short	32                              # 0x20
-func0000000000000069:                   # @func0000000000000069
+func00000000000000e9:                   # @func00000000000000e9
 	vpbroadcastw	.LCPI0_3(%rip), %xmm2   # xmm2 = [32,32,32,32,32,32,32,32]
 	vpsubw	%xmm1, %xmm2, %xmm1
 	vpcmpltud	.LCPI0_1(%rip){1to4}, %xmm0, %k1

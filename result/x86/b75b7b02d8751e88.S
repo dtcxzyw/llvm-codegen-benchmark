@@ -5,14 +5,14 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	%edi, %edx
 	seta	%al
 	retq
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	incl	%edx
 	andl	$-64, %edx
 	subl	%esi, %edi
 	cmpl	%edi, %edx
 	setl	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	incl	%edx
 	andl	$-64, %edx
 	subl	%esi, %edi

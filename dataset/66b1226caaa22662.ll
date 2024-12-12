@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; eastl/optimized/TestFixedString.cpp.ll
 ; eastl/optimized/TestString.cpp.ll
 ; gromacs/optimized/context.cpp.ll
@@ -8,7 +8,6 @@
 ; libquic/optimized/persistent_histogram_allocator.cc.ll
 ; libzmq/optimized/dist.cpp.ll
 ; libzmq/optimized/fq.cpp.ll
-; linux/optimized/auth_unix.ll
 ; llvm/optimized/BlockInCriticalSectionChecker.cpp.ll
 ; ozz-animation/optimized/track_sampling_job.cc.ll
 ; Function Attrs: nounwind

@@ -1,5 +1,5 @@
 
-; 34 occurrences:
+; 35 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcRpo.c.ll
 ; abc/optimized/dauCanon.c.ll
@@ -32,6 +32,7 @@
 ; openusd/optimized/patchTreeBuilder.cpp.ll
 ; openusd/optimized/stencilTableFactory.cpp.ll
 ; ozz-animation/optimized/animation_optimizer.cc.ll
+; php/optimized/sccp.ll
 ; sentencepiece/optimized/bpe_model_trainer.cc.ll
 ; slurm/optimized/hostlist.ll
 ; Function Attrs: nounwind
@@ -56,7 +57,9 @@ entry:
   ret ptr %5
 }
 
-; 149 occurrences:
+; 148 occurrences:
+; abc/optimized/abc.c.ll
+; abc/optimized/ifDsd.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; nix/optimized/add-to-store.ll
 ; nix/optimized/app.ll
@@ -145,13 +148,10 @@ entry:
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll

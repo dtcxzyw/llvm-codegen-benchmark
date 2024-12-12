@@ -1,4 +1,4 @@
-func000000000000007a:                   # @func000000000000007a
+func00000000000000ea:                   # @func00000000000000ea
 	andl	$31, %edi
 	xorl	%eax, %eax
 	testb	$1, %sil
@@ -7,7 +7,7 @@ func000000000000007a:                   # @func000000000000007a
 	testl	%edi, %edi
 	setg	%al
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	andl	$31, %edi
 	xorl	%eax, %eax
 	testb	$1, %sil

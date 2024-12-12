@@ -1,5 +1,5 @@
 
-; 222 occurrences:
+; 218 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -151,7 +151,6 @@
 ; abc/optimized/sswConstr.c.ll
 ; abc/optimized/sswFilter.c.ll
 ; abc/optimized/sswRarity.c.ll
-; abc/optimized/sswSimSat.c.ll
 ; abc/optimized/utilBridge.c.ll
 ; abc/optimized/wlcAbs.c.ll
 ; abc/optimized/wlcBlast.c.ll
@@ -195,18 +194,15 @@
 ; llvm/optimized/SemaOverload.cpp.ll
 ; llvm/optimized/SemaTemplate.cpp.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_display.ll
+; lvgl/optimized/lv_draw_buf.ll
+; lvgl/optimized/lv_scale.ll
 ; opencv/optimized/lapack.cpp.ll
 ; openjdk/optimized/defNewGeneration.ll
-; openjdk/optimized/g1ConcurrentMark.ll
-; openjdk/optimized/g1FullGCMarker.ll
 ; openjdk/optimized/g1ParScanThreadState.ll
-; openjdk/optimized/psParallelCompact.ll
 ; openjdk/optimized/psPromotionManager.ll
 ; openjdk/optimized/psScavenge.ll
-; openjdk/optimized/shenandoahHeap.ll
 ; openjdk/optimized/shenandoahMark.ll
-; openjdk/optimized/xHeapIterator.ll
-; openjdk/optimized/zHeapIterator.ll
 ; openmpi/optimized/coll_ftagree_earlyreturning.ll
 ; openspiel/optimized/chess.cc.ll
 ; openspiel/optimized/chess_common.cc.ll

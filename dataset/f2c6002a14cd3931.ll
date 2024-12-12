@@ -17,7 +17,7 @@ entry:
 define i16 @func0000000000000006(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = or disjoint i16 %1, %2
-  %4 = or disjoint i16 %3, %0
+  %4 = or disjoint i16 %0, %3
   %5 = lshr i16 %4, 1
   ret i16 %5
 }
@@ -28,7 +28,7 @@ entry:
 define i16 @func0000000000000004(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = or disjoint i16 %1, %2
-  %4 = or i16 %3, %0
+  %4 = or i16 %0, %3
   %5 = lshr i16 %4, 8
   ret i16 %5
 }

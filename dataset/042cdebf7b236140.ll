@@ -1,10 +1,9 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; cpython/optimized/Hacl_Hash_SHA3.ll
 ; llvm/optimized/AutoUpgrade.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/LoadStoreOpt.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; minetest/optimized/CNullDriver.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i32 %0, i64 %1) #0 {
@@ -15,10 +14,9 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; linux/optimized/aes.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; qemu/optimized/ui_vnc-enc-zrle.c.ll
 ; Function Attrs: nounwind

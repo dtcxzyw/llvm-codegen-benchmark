@@ -1,31 +1,32 @@
-func0000000000000042:                   // @func0000000000000042
-// %bb.0:                               // %entry
-	movi	v4.2d, #0x000000ffffffff
-	uzp2	v0.4s, v0.4s, v1.4s
-	cmhi	v1.2d, v3.2d, v4.2d
-	cmhi	v2.2d, v2.2d, v4.2d
-	uzp1	v1.4s, v2.4s, v1.4s
-	bic	v0.16b, v0.16b, v1.16b
-	ret
-                                        // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	cmeq	v3.2d, v3.2d, #0
-	cmeq	v2.2d, v2.2d, #0
-	uzp2	v0.4s, v0.4s, v1.4s
-	uzp1	v2.4s, v2.4s, v3.4s
-	bic	v0.16b, v0.16b, v2.16b
+	lsr	x8, x0, #32
+	cmp	x1, #0
+	csel	w0, wzr, w8, eq
+	ret
+                                        // -- End function
+func00000000000000a7:                   // @func00000000000000a7
+// %bb.0:                               // %entry
+	lsr	x9, x0, #3
+	mov	w8, #4                          // =0x4
+	cmp	x1, #23
+	csel	w0, w8, w9, lo
+	ret
+                                        // -- End function
+func0000000000000042:                   // @func0000000000000042
+// %bb.0:                               // %entry
+	lsr	x8, x1, #32
+	lsr	x9, x0, #32
+	cmp	x8, #0
+	csel	w0, wzr, w9, ne
 	ret
                                         // -- End function
 func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
-	movi	v4.2d, #0000000000000000
-	uzp2	v0.4s, v0.4s, v1.4s
-	fneg	v1.2d, v4.2d
-	cmeq	v3.2d, v3.2d, v1.2d
-	cmeq	v1.2d, v2.2d, v1.2d
-	movi	v2.4s, #64, lsl #24
-	uzp1	v1.4s, v1.4s, v3.4s
-	bit	v0.16b, v2.16b, v1.16b
+	mov	x8, #-9223372036854775808       // =0x8000000000000000
+	lsr	x9, x0, #32
+	cmp	x1, x8
+	mov	w8, #1073741824                 // =0x40000000
+	csel	w0, w8, w9, eq
 	ret
                                         // -- End function

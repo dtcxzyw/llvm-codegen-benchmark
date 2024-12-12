@@ -11,9 +11,10 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; abc/optimized/sclLibUtil.c.ll
 ; gromacs/optimized/domdec.cpp.ll
+; lvgl/optimized/lv_svg_render.ll
 ; tev/optimized/ImageViewer.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000012(float %0, float %1, i32 %2) #0 {
@@ -24,9 +25,10 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; abc/optimized/sclLibUtil.c.ll
 ; gromacs/optimized/gmx_rmsdist.cpp.ll
+; lvgl/optimized/lv_svg_render.ll
 ; postgres/optimized/rangetypes_gist.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000014(float %0, float %1, i32 %2) #0 {

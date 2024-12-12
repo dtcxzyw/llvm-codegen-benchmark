@@ -26,6 +26,26 @@ func0000000000000011:                   # @func0000000000000011
 	li	a0, -128
 	vor.vx	v8, v8, a0, v0.t
 	ret
+func0000000000000031:                   # @func0000000000000031
+	li	a0, 127
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmsgtu.vx	v0, v10, a0
+	vsetvli	zero, zero, e8, mf4, ta, mu
+	vand.vx	v8, v8, a0
+	li	a0, -128
+	vor.vx	v8, v8, a0, v0.t
+	ret
+func0000000000000029:                   # @func0000000000000029
+	li	a0, 128
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmsltu.vx	v0, v10, a0
+	li	a0, 127
+	vsetvli	zero, zero, e8, mf4, ta, ma
+	vand.vx	v8, v8, a0
+	li	a0, -128
+	vor.vx	v9, v8, a0
+	vmerge.vvm	v8, v9, v8, v0
+	ret
 func000000000000000d:                   # @func000000000000000d
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsle.vi	v0, v10, -1

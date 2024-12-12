@@ -1,9 +1,10 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; cmake/optimized/select.c.ll
 ; curl/optimized/libcurl_la-select.ll
 ; lua/optimized/lstrlib.ll
 ; luajit/optimized/minilua.ll
+; qemu/optimized/hw_net_pcnet.c.ll
 ; redis/optimized/lstrlib.ll
 ; ruby/optimized/thread.ll
 ; slurm/optimized/common_as.ll

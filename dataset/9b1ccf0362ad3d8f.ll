@@ -1,8 +1,7 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; duckdb/optimized/ub_duckdb_func_date.cpp.ll
 ; icu/optimized/cecal.ll
-; icu/optimized/gregoimp.ll
 ; icu/optimized/islamcal.ll
 ; icu/optimized/ucnvbocu.ll
 ; postgres/optimized/formatting.ll

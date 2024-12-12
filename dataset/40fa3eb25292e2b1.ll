@@ -17,7 +17,7 @@
 ; minetest/optimized/database-sqlite3.cpp.ll
 ; opencv/optimized/find_ellipses.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i16 %1) #0 {
 entry:
   %2 = add i16 %1, 1
   %3 = zext i16 %2 to i64
@@ -41,7 +41,7 @@ entry:
 ; crow/optimized/example_ws.cpp.ll
 ; crow/optimized/helloworld.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i16 %1) #0 {
 entry:
   %2 = add i16 %1, -1
   %3 = zext i16 %2 to i64

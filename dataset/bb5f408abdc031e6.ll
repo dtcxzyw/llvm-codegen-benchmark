@@ -1,5 +1,6 @@
 
-; 13 occurrences:
+; 14 occurrences:
+; boost/optimized/matches_relation_factory.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; llvm/optimized/Decl.cpp.ll
 ; llvm/optimized/DeclTemplate.cpp.ll
@@ -47,7 +48,7 @@ entry:
   %3 = add nsw i64 %1, %2
   %4 = shl i64 %3, 32
   %5 = add i64 %4, 240518168576
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 

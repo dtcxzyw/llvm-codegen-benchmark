@@ -1,5 +1,6 @@
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/rational.ll
 ; casadi/optimized/fmu_function.cpp.ll
 ; linux/optimized/blk-iocost.ll
 ; llvm/optimized/SelectOptimize.cpp.ll
@@ -16,7 +17,8 @@ entry:
   ret i1 %4
 }
 
-; 10 occurrences:
+; 11 occurrences:
+; boost/optimized/rational.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; cpython/optimized/sre.ll
 ; gromacs/optimized/bias.cpp.ll
@@ -45,7 +47,8 @@ entry:
   ret i1 %4
 }
 
-; 9 occurrences:
+; 10 occurrences:
+; boost/optimized/rational.ll
 ; cpython/optimized/arraymodule.ll
 ; cpython/optimized/sre.ll
 ; faiss/optimized/IndexIVF.cpp.ll

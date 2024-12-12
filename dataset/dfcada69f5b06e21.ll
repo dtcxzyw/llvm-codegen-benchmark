@@ -5,7 +5,7 @@
 ; ruby/optimized/symbol.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000036c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000ccc(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = icmp slt i32 %3, %1
@@ -25,7 +25,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-encoder_pkey.ll
 ; openssl/optimized/libcrypto-shlib-encoder_pkey.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000361(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000cc1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = icmp slt i32 %3, %1
@@ -34,13 +34,11 @@ entry:
   ret i1 %6
 }
 
-; 4 occurrences:
+; 2 occurrences:
 ; folly/optimized/SharedMutex.cpp.ll
 ; folly/optimized/Singleton.cpp.ll
-; llvm/optimized/ASTReader.cpp.ll
-; llvm/optimized/ASTWriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000244(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000884(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
   %4 = icmp ult i32 %3, %1
@@ -52,7 +50,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/ui_ui-qmp-cmds.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003ca(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000d8a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = icmp ne i32 %3, %1
@@ -169,16 +167,17 @@ entry:
 ; z3/optimized/ufbv_tactic.cpp.ll
 ; z3/optimized/unit_subsumption_tactic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000034c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000e8c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = icmp ult i32 %3, %1
+  %4 = icmp samesign ult i32 %3, %1
   %5 = icmp ne i32 %0, 0
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; icu/optimized/number_decimalquantity.ll
 ; msdfgen/optimized/MSDFErrorCorrection.cpp.ll
 ; ncnn/optimized/gridsample.cpp.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
@@ -186,7 +185,7 @@ entry:
 ; slurm/optimized/reverse_tree.ll
 ; zxing/optimized/DMBitLayout.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000016a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000004ca(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = icmp slt i32 %3, %1
@@ -202,7 +201,7 @@ entry:
 ; ncnn/optimized/deformableconv2d_x86_avx512.cpp.ll
 ; ncnn/optimized/deformableconv2d_x86_fma.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001aa(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000054a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = icmp sgt i32 %3, %1
@@ -217,10 +216,10 @@ entry:
 ; icu/optimized/double-conversion-string-to-double.ll
 ; openusd/optimized/string-to-double.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000384(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000f04(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 48
-  %4 = icmp ugt i32 %3, %1
+  %4 = icmp samesign ugt i32 %3, %1
   %5 = icmp ult i32 %0, 10
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -230,7 +229,7 @@ entry:
 ; abc/optimized/abcExact.c.ll
 ; git/optimized/object-name.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000421(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = icmp eq i32 %3, %1
@@ -242,7 +241,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000017a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000004ea(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = icmp sle i32 %3, %1
@@ -257,7 +256,7 @@ entry:
 ; linux/optimized/cmdline.ll
 ; soc-simulator/optimized/verilated.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000016c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000004cc(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = icmp slt i32 %3, %1
@@ -273,7 +272,7 @@ entry:
 ; wireshark/optimized/packet-acn.c.ll
 ; wireshark/optimized/packet-ncp-nmas.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000008c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = icmp ult i32 %3, %1
@@ -286,11 +285,24 @@ entry:
 ; hermes/optimized/JSArray.cpp.ll
 ; linux/optimized/callback_xdr.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002c1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000981(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
   %4 = icmp ne i32 %3, %1
   %5 = icmp eq i32 %0, 7
+  %6 = select i1 %5, i1 %4, i1 false
+  ret i1 %6
+}
+
+; 2 occurrences:
+; llvm/optimized/ASTReader.cpp.ll
+; llvm/optimized/ASTWriter.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000894(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw i32 %2, 1
+  %4 = icmp ult i32 %3, %1
+  %5 = icmp samesign ult i32 %0, 7
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
 }
@@ -300,7 +312,7 @@ entry:
 ; opencv/optimized/posit.cpp.ll
 ; wireshark/optimized/packet-gsm_ipa.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000031c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000c2c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = icmp eq i32 %3, %1
@@ -309,15 +321,14 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; llvm/optimized/Dominators.cpp.ll
-; meshlab/optimized/plylib.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003c4(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000d94(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = icmp ne i32 %3, %1
-  %5 = icmp ult i32 %0, 2
+  %5 = icmp samesign ult i32 %0, 2
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
 }
@@ -328,7 +339,7 @@ entry:
 ; msdfgen/optimized/main.cpp.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000161(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000004c1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = icmp slt i32 %3, %1
@@ -340,10 +351,10 @@ entry:
 ; 1 occurrences:
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000341(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000e81(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = icmp ult i32 %3, %1
+  %4 = icmp samesign ult i32 %3, %1
   %5 = icmp eq i32 %0, 55296
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -353,7 +364,7 @@ entry:
 ; wireshark/optimized/packet-idn.c.ll
 ; wireshark/optimized/packet-systemd-journal.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000141(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 10
   %4 = icmp sgt i32 %3, %1
@@ -365,10 +376,10 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-dlt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000348(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000e88(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = icmp ult i32 %3, %1
+  %4 = icmp samesign ult i32 %3, %1
   %5 = icmp ugt i32 %0, 4
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -379,7 +390,7 @@ entry:
 ; wireshark/optimized/packet-lmp.c.ll
 ; wireshark/optimized/packet-someip.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000c1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = icmp slt i32 %3, %1
@@ -391,7 +402,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-p_mul.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000581(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = icmp ne i32 %3, %1
@@ -403,7 +414,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-s7comm.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001ac(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000054c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = icmp sgt i32 %3, %1
@@ -416,10 +427,10 @@ entry:
 ; wireshark/optimized/packet-ncp2222.c.ll
 ; wireshark/optimized/packet-zbee-zcl-se.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000034a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000e8a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = icmp ult i32 %3, %1
+  %4 = icmp samesign ult i32 %3, %1
   %5 = icmp sgt i32 %0, 4
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -428,7 +439,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-ncp2222.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000024a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000088a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
   %4 = icmp ult i32 %3, %1
@@ -440,7 +451,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-saphdb.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000042c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = icmp eq i32 %3, %1
@@ -452,7 +463,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-nvme.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000354(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000ca4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 4
   %4 = icmp ule i32 %3, %1
@@ -464,7 +475,7 @@ entry:
 ; 1 occurrences:
 ; openmpi/optimized/libmpi_c_profile_la-dims_create.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000037a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000cea(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 2
   %4 = icmp sle i32 %3, %1
@@ -476,7 +487,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/xfrm_state.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000104(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = icmp ugt i32 %3, %1
@@ -488,7 +499,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/drm_dp_helper.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003c1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000d81(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = icmp ne i32 %3, %1
@@ -500,7 +511,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/drm_dp_helper.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003cc(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000d8c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = icmp ne i32 %3, %1
@@ -513,7 +524,7 @@ entry:
 ; linux/optimized/kallsyms.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = icmp ule i32 %3, %1
@@ -525,7 +536,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/nf_conntrack_core.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000008a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = icmp ult i32 %3, %1
@@ -537,7 +548,7 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/quasi_macros.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002cc(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000098c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
   %4 = icmp ne i32 %3, %1
@@ -549,7 +560,7 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/euf_bv_plugin.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = icmp eq i32 %3, %1
@@ -562,7 +573,7 @@ entry:
 ; libwebp/optimized/backward_references_enc.c.ll
 ; z3/optimized/pb_solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = icmp ult i32 %3, %1
@@ -575,7 +586,7 @@ entry:
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; z3/optimized/nla_divisions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000024c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000088c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
   %4 = icmp ult i32 %3, %1
@@ -589,7 +600,7 @@ entry:
 ; icu/optimized/wrtxml.ll
 ; zxing/optimized/PDFDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000164(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000004c4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = icmp slt i32 %3, %1
@@ -601,7 +612,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/xloginsert.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000246(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000886(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
   %4 = icmp ult i32 %3, %1
@@ -613,7 +624,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/aof.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000311(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000c21(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = icmp eq i32 %3, %1
@@ -625,7 +636,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/cluster_legacy.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000036a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000cca(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = icmp slt i32 %3, %1
@@ -637,7 +648,7 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000241(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000881(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
   %4 = icmp ult i32 %3, %1
@@ -651,7 +662,7 @@ entry:
 ; icu/optimized/uconv.ll
 ; libwebp/optimized/io_dec.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000366(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000cc6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = icmp slt i32 %3, %1
@@ -663,7 +674,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/undistort.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003bc(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000d6c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = icmp sge i32 %3, %1
@@ -675,11 +686,23 @@ entry:
 ; 1 occurrences:
 ; arrow/optimized/light_array.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000368(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000cc8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = icmp slt i32 %3, %1
   %5 = icmp ugt i32 %0, 8
+  %6 = select i1 %5, i1 %4, i1 false
+  ret i1 %6
+}
+
+; 1 occurrences:
+; meshlab/optimized/plylib.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000d84(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw nsw i32 %2, 1
+  %4 = icmp ne i32 %3, %1
+  %5 = icmp ult i32 %0, -2
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
 }

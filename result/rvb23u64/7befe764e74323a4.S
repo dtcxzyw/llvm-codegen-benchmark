@@ -23,6 +23,12 @@ func0000000000000036:                   # @func0000000000000036
 	sub	a1, a1, a2
 	sh1add	a0, a1, a0
 	ret
+func0000000000000037:                   # @func0000000000000037
+	srli	a2, a2, 3
+	srli	a1, a1, 3
+	sub	a1, a1, a2
+	sh3add	a0, a1, a0
+	ret
 func000000000000003f:                   # @func000000000000003f
 	srli	a2, a2, 3
 	srli	a1, a1, 3

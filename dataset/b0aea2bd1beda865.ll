@@ -229,7 +229,7 @@ entry:
   ret i32 %4
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; abseil-cpp/optimized/pcg_engine_test.cc.ll
 ; jemalloc/optimized/ckh.ll
 ; jemalloc/optimized/ckh.pic.ll
@@ -241,7 +241,6 @@ entry:
 ; pbrt-v4/optimized/filters.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; protobuf/optimized/lexer.cc.ll
-; rand-rs/optimized/3wentbx1vl0iwznb.ll
 ; redis/optimized/ckh.ll
 ; redis/optimized/ckh.sym.ll
 ; Function Attrs: nounwind

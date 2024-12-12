@@ -23,6 +23,11 @@ func000000000000001d:                   # @func000000000000001d
 	li	a1, -1
 	sll	a0, a1, a0
 	ret
+func000000000000000d:                   # @func000000000000000d
+	add	a0, a0, a1
+	li	a1, -1
+	sll	a0, a1, a0
+	ret
 func000000000000000a:                   # @func000000000000000a
 	add	a0, a0, a1
 	bset	a0, zero, a0

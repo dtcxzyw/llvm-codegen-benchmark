@@ -1,5 +1,7 @@
 
-; 17 occurrences:
+; 18 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; duckdb/optimized/ub_duckdb_operator_csv_sniffer.cpp.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
@@ -10,7 +12,6 @@
 ; llvm/optimized/ContinuationIndenter.cpp.ll
 ; llvm/optimized/SimplifyIndVar.cpp.ll
 ; openjdk/optimized/zPage.ll
-; openspiel/optimized/Moves.cpp.ll
 ; php/optimized/zend_compile.ll
 ; proxygen/optimized/HTTP2Codec.cpp.ll
 ; proxygen/optimized/http_parser_cpp.cpp.ll
@@ -21,26 +22,12 @@
 define i1 @func0000000000000001(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 95
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
 
-; 4 occurrences:
-; image-rs/optimized/5ez7udly19o3uj1p.ll
-; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
-; typst-rs/optimized/26ex1w19ixz6ifuk.ll
-; yoga/optimized/CalculateLayout.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i1 %1, i8 %2) #0 {
-entry:
-  %3 = icmp ugt i8 %2, 1
-  %4 = and i1 %3, %1
-  %5 = select i1 %0, i1 true, i1 %4
-  ret i1 %5
-}
-
-; 154 occurrences:
+; 151 occurrences:
 ; duckdb/optimized/ub_duckdb_operator_csv_sniffer.cpp.ll
 ; icu/optimized/decNumber.ll
 ; llvm/optimized/BasicAliasAnalysis.cpp.ll
@@ -132,13 +119,10 @@ entry:
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -199,7 +183,7 @@ entry:
 define i1 @func000000000000000c(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 15
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
@@ -222,6 +206,17 @@ entry:
 define i1 @func0000000000000006(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp slt i8 %2, 0
+  %4 = and i1 %1, %3
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i1 %0, i1 %1, i8 %2) #0 {
+entry:
+  %3 = icmp ugt i8 %2, 3
   %4 = and i1 %3, %1
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5

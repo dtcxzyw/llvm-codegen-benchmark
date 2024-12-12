@@ -34,7 +34,7 @@ func0000000000000032:                   # @func0000000000000032
 	vpbroadcastd	.LCPI2_0(%rip), %ymm1   # ymm1 = [6,6,6,6,6,6,6,6]
 	vpand	%ymm1, %ymm2, %ymm2
 	vpcmpneqd	%ymm1, %ymm2, %k1
-	korb	%k0, %k1, %k1
+	korb	%k1, %k0, %k1
 	vpord	.LCPI2_1(%rip){1to8}, %ymm0, %ymm1
 	vmovdqa32	%ymm0, %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0

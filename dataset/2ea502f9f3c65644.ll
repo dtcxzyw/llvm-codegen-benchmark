@@ -1,8 +1,7 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; cvc5/optimized/cadical.cpp.ll
 ; flac/optimized/foreign_metadata.c.ll
-; lief/optimized/Builder.cpp.ll
 ; linux/optimized/intel_pstate.ll
 ; linux/optimized/ptrace.ll
 ; linux/optimized/scsi_scan.ll

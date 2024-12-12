@@ -8,16 +8,16 @@
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha256_hw.ll
 ; ruby/optimized/rmd160.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 64, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %1
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   ret ptr %6
 }
 
-; 233 occurrences:
+; 232 occurrences:
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
 ; fmt/optimized/format-test.cc.ll
@@ -35,7 +35,6 @@ entry:
 ; fmt/optimized/util.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
 ; folly/optimized/File.cpp.ll
-; hyperscan/optimized/stream.c.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
 ; lief/optimized/BinaryParser.cpp.ll
@@ -252,24 +251,36 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000007b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 32, %2
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr nusw i8, ptr %0, i64 %1
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; git/optimized/record.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sub i32 9, %2
+  %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 1 occurrences:
+; git/optimized/record.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 9, %2
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr nusw i8, ptr %0, i64 %1
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -289,12 +300,12 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ASTReader.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000002b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %2
   %4 = zext i32 %3 to i64
   %5 = getelementptr nusw ptr, ptr %0, i64 %1
-  %6 = getelementptr nusw ptr, ptr %5, i64 %4
+  %6 = getelementptr nusw nuw ptr, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -311,17 +322,28 @@ entry:
   ret ptr %6
 }
 
-; 3 occurrences:
-; icu/optimized/formatted_string_builder.ll
+; 2 occurrences:
 ; redis/optimized/fpconv_dtoa.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %1
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 1 occurrences:
+; icu/optimized/formatted_string_builder.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003b(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sub nsw i32 0, %2
+  %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr nusw i16, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw i16, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -340,12 +362,24 @@ entry:
 ; 1 occurrences:
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000032(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000033(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 2, %2
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr i8, ptr %0, i64 %1
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 1 occurrences:
+; hyperscan/optimized/stream.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000007f(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sub nuw nsw i32 24, %2
+  %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   ret ptr %6
 }
 

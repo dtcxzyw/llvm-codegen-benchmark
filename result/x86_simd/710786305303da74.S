@@ -36,7 +36,7 @@ func0000000000000009:                   # @func0000000000000009
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000008:                   # @func0000000000000008
+func0000000000000028:                   # @func0000000000000028
 	vpcmpnltub	.LCPI1_0(%rip), %xmm2, %k1
 	vorpd	%ymm1, %ymm0, %ymm0 {%k1}
 	retq

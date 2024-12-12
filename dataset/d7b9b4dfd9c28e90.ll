@@ -16,12 +16,11 @@ entry:
   ret i64 %4
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; duckdb/optimized/ub_duckdb_func_math.cpp.ll
 ; freetype/optimized/autofit.c.ll
 ; freetype/optimized/ftbase.c.ll
 ; freetype/optimized/truetype.c.ll
-; linux/optimized/intel_color.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; ruby/optimized/numeric.ll
 ; rust-analyzer-rs/optimized/36rfhun5ywaw64ay.ll
@@ -30,7 +29,7 @@ entry:
 ; velox/optimized/DecimalVectorFunctions.cpp.ll
 ; z3/optimized/pb_solver.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %0
   %3 = icmp slt i64 %1, 0
@@ -45,7 +44,7 @@ entry:
 ; spike/optimized/smalds.ll
 ; velox/optimized/ComplexVector.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %0
   %3 = icmp eq i64 %1, 0
@@ -68,7 +67,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/am.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(i64 %0, i64 %1) #0 {
+define i64 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %0
   %3 = icmp sgt i64 %1, 0
@@ -80,7 +79,7 @@ entry:
 ; postgres/optimized/int.ll
 ; postgres/optimized/int8.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001c(i64 %0, i64 %1) #0 {
+define i64 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %0
   %.not = icmp eq i64 %1, 0

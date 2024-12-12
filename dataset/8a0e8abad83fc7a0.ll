@@ -1,5 +1,5 @@
 
-; 51 occurrences:
+; 48 occurrences:
 ; abc/optimized/fraImp.c.ll
 ; abc/optimized/giaCof.c.ll
 ; abc/optimized/giaDecs.c.ll
@@ -13,8 +13,6 @@
 ; gromacs/optimized/check.cpp.ll
 ; gromacs/optimized/compute_io.cpp.ll
 ; gromacs/optimized/dgebrd.cpp.ll
-; gromacs/optimized/dgelqf.cpp.ll
-; gromacs/optimized/dgeqrf.cpp.ll
 ; gromacs/optimized/dgetri.cpp.ll
 ; gromacs/optimized/dorgbr.cpp.ll
 ; gromacs/optimized/dorglq.cpp.ll
@@ -30,7 +28,6 @@
 ; gromacs/optimized/shake.cpp.ll
 ; gromacs/optimized/threaded_force_buffer.cpp.ll
 ; libzmq/optimized/inproc_lat.cpp.ll
-; libzmq/optimized/remote_lat.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; opencv/optimized/3calibration.cpp.ll
@@ -59,11 +56,10 @@ entry:
   ret double %2
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; graphviz/optimized/ellipse.c.ll
 ; gromacs/optimized/pp2shift.cpp.ll
-; libwebp/optimized/quant_levels_utils.c.ll
 ; wireshark/optimized/main_application.cpp.ll
 ; wireshark/optimized/packet_list.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll

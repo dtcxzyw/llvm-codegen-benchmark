@@ -1,4 +1,4 @@
-func00000000000000fa:                   // @func00000000000000fa
+func00000000000000fb:                   // @func00000000000000fb
 // %bb.0:                               // %entry
 	mov	w8, #24                         // =0x18
 	add	x9, x0, w1, sxtw #3

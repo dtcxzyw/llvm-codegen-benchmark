@@ -1,25 +1,25 @@
-func0000000000000024:                   # @func0000000000000024
-	shrl	$8, %esi
-	cmpb	%dil, %sil
-	seta	%al
-	retq
-func0000000000000021:                   # @func0000000000000021
-	shrl	$8, %esi
-	cmpb	%dil, %sil
+func0000000000000041:                   # @func0000000000000041
+	shrl	%esi
+	cmpb	%sil, %dil
 	sete	%al
 	retq
-func000000000000002c:                   # @func000000000000002c
+func0000000000000044:                   # @func0000000000000044
 	shrl	$8, %esi
-	cmpb	%dil, %sil
+	cmpb	%sil, %dil
+	setb	%al
+	retq
+func000000000000004c:                   # @func000000000000004c
+	shrl	$8, %esi
+	cmpb	%sil, %dil
 	setne	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	shrl	$8, %esi
-	cmpb	%dil, %sil
-	setb	%al
+	cmpb	%sil, %dil
+	seta	%al
 	retq
 func0000000000000008:                   # @func0000000000000008
 	shrl	%esi
-	cmpb	%dil, %sil
-	setb	%al
+	cmpb	%sil, %dil
+	seta	%al
 	retq

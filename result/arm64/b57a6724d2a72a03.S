@@ -1,54 +1,24 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	movi	v4.4h, #77
-	bic	v2.4h, #255, lsl #8
-	ushll	v5.2d, v3.2s, #0
-	ushll2	v3.2d, v3.4s, #0
-	cmeq	v2.4h, v2.4h, v4.4h
-	ushll	v2.4s, v2.4h, #0
-	ushll	v4.2d, v2.2s, #0
-	ushll2	v2.2d, v2.4s, #0
-	shl	v4.2d, v4.2d, #56
-	shl	v2.2d, v2.2d, #56
-	sshr	v4.2d, v4.2d, #56
-	sshr	v2.2d, v2.2d, #56
-	bif	v1.16b, v3.16b, v2.16b
-	bif	v0.16b, v5.16b, v4.16b
+	and	w8, w1, #0xff
+	mov	w9, w2
+	cmp	w8, #77
+	csel	x0, x0, x9, eq
 	ret
                                         // -- End function
-func0000000000000014:                   // @func0000000000000014
+func0000000000000034:                   // @func0000000000000034
 // %bb.0:                               // %entry
-	movi	v4.4h, #65
-	bic	v2.4h, #255, lsl #8
-	ushll	v5.2d, v3.2s, #0
-	ushll2	v3.2d, v3.4s, #0
-	cmhi	v2.4h, v4.4h, v2.4h
-	ushll	v2.4s, v2.4h, #0
-	ushll	v4.2d, v2.2s, #0
-	ushll2	v2.2d, v2.4s, #0
-	shl	v4.2d, v4.2d, #56
-	shl	v2.2d, v2.2d, #56
-	sshr	v4.2d, v4.2d, #56
-	sshr	v2.2d, v2.2d, #56
-	bif	v1.16b, v3.16b, v2.16b
-	bif	v0.16b, v5.16b, v4.16b
+	and	w8, w1, #0xff
+	mov	w9, w2
+	cmp	w8, #65
+	csel	x0, x0, x9, lo
 	ret
                                         // -- End function
-func0000000000000011:                   // @func0000000000000011
+func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
-	movi	v4.4h, #7
-	bic	v2.4h, #255, lsl #8
-	ushll	v5.2d, v3.2s, #0
-	ushll2	v3.2d, v3.4s, #0
-	cmeq	v2.4h, v2.4h, v4.4h
-	ushll	v2.4s, v2.4h, #0
-	ushll	v4.2d, v2.2s, #0
-	ushll2	v2.2d, v2.4s, #0
-	shl	v4.2d, v4.2d, #56
-	shl	v2.2d, v2.2d, #56
-	sshr	v4.2d, v4.2d, #56
-	sshr	v2.2d, v2.2d, #56
-	bif	v1.16b, v3.16b, v2.16b
-	bif	v0.16b, v5.16b, v4.16b
+	and	w8, w1, #0xff
+	mov	w9, w2
+	cmp	w8, #7
+	csel	x0, x0, x9, eq
 	ret
                                         // -- End function

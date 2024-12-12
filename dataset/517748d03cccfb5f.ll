@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; velox/optimized/DateTimeFormatter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i32 %0) #0 {
+define i1 @func0000000000000141(i32 %0) #0 {
 entry:
   %1 = add i32 %0, 4
   %2 = icmp sgt i32 %0, -5
@@ -12,7 +12,7 @@ entry:
   ret i1 %5
 }
 
-; 10 occurrences:
+; 14 occurrences:
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
 ; coreutils-rs/optimized/3fp1x41wzh4l1rh9.ll
@@ -23,8 +23,12 @@ entry:
 ; influxdb-rs/optimized/2g8nrbnslhx52xx1.ll
 ; ockam-rs/optimized/2n1wyoax2qficosw.ll
 ; ockam-rs/optimized/3trfdpf6q4y0wtix.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0) #0 {
+define i1 @func0000000000000101(i32 %0) #0 {
 entry:
   %1 = add i32 %0, -1000000000
   %2 = icmp ugt i32 %0, 999999999
@@ -38,13 +42,13 @@ entry:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a8(i32 %0) #0 {
+define i1 @func0000000000000558(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, 4
   %2 = icmp sgt i32 %0, -5
   %3 = select i1 %2, i32 %1, i32 %0
   %4 = urem i32 %3, 7
-  %5 = icmp ugt i32 %4, 1
+  %5 = icmp samesign ugt i32 %4, 1
   ret i1 %5
 }
 
@@ -52,7 +56,7 @@ entry:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a1(i32 %0) #0 {
+define i1 @func0000000000000541(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, 4
   %2 = icmp sgt i32 %0, -5

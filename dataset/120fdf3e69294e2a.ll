@@ -6,7 +6,7 @@
 ; libquic/optimized/inflate.c.ll
 ; zlib/optimized/inflate.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c7(i1 %0, i32 %1, i8 %2) #0 {
+define i32 @func0000000000000187(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 4, %1
   %4 = icmp eq i8 %2, 0

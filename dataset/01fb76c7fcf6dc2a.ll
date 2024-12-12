@@ -5,7 +5,7 @@
 ; ruby/optimized/vm.ll
 ; wireshark/optimized/packet-dns.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i16 %1, i16 %2) #0 {
+define i1 @func000000000000018c(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp ne i16 %2, 0
   %4 = icmp ne i16 %1, 0
@@ -21,7 +21,7 @@ entry:
 ; slurm/optimized/node_mgr.ll
 ; wireshark/optimized/packet-spice.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 32767
   %4 = icmp eq i16 %1, 32767
@@ -37,7 +37,7 @@ entry:
 ; yalantinglibs/optimized/example.cpp.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000084(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp ult i16 %2, 2988
   %4 = icmp ult i16 %1, -4000
@@ -50,7 +50,7 @@ entry:
 ; oiio/optimized/rlainput.cpp.ll
 ; wireshark/optimized/packet-dns.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i1 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000108(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp ugt i16 %2, 32
   %4 = icmp ugt i16 %1, 32
@@ -62,7 +62,7 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i16 %1, i16 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 0
   %4 = icmp ne i16 %1, 0

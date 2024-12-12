@@ -1,16 +1,16 @@
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	decl	%esi
 	orl	$1, %edi
 	cmpl	%esi, %edi
 	setl	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	decl	%esi
 	orl	$1, %edi
 	cmpl	%esi, %edi
 	setl	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	decl	%esi
 	orl	$1, %edi
 	cmpl	%esi, %edi

@@ -1,16 +1,16 @@
-func0000000000000071:                   # @func0000000000000071
-	andl	$1023, %esi                     # imm = 0x3FF
+func00000000000000e1:                   # @func00000000000000e1
+	andl	$15, %esi
 	incq	%rdi
 	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000074:                   # @func0000000000000074
-	andl	$60, %esi
-	addq	$4, %rdi
+func00000000000000f4:                   # @func00000000000000f4
+	andl	$511, %esi                      # imm = 0x1FF
+	incq	%rdi
 	cmpq	%rsi, %rdi
 	setb	%al
 	retq
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	andl	$16376, %esi                    # imm = 0x3FF8
 	addq	$-8, %rdi
 	cmpq	%rsi, %rdi

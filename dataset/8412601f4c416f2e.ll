@@ -1,9 +1,8 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; ipopt/optimized/IpCompoundMatrix.ll
 ; libquic/optimized/quic_session.cc.ll
 ; linux/optimized/blk-mq.ll
-; linux/optimized/maple_tree.ll
 ; llvm/optimized/Scalarizer.cpp.ll
 ; redis/optimized/redis-cli.ll
 ; Function Attrs: nounwind

@@ -4,17 +4,32 @@ func0000000000000000:                   # @func0000000000000000
 	addq	%rdi, %rax
 	addq	%rsi, %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	movslq	%edx, %rax
 	imulq	$112, %rax, %rax
 	shlq	$4, %rdi
 	addq	%rdi, %rax
 	addq	%rsi, %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+func000000000000000a:                   # @func000000000000000a
+	movslq	%edx, %rax
+	leaq	(%rax,%rax,8), %rcx
+	leaq	(%rcx,%rcx,2), %rcx
+	addq	%rax, %rsi
+	addq	%rcx, %rsi
+	leaq	(%rsi,%rdi,4), %rax
+	retq
+func0000000000000003:                   # @func0000000000000003
 	movslq	%edx, %rax
 	imulq	$2384, %rax, %rax               # imm = 0x950
 	addq	%rsi, %rax
+	leaq	(%rdi,%rdi,2), %rcx
+	leaq	(%rax,%rcx,8), %rax
+	retq
+func0000000000000002:                   # @func0000000000000002
+	movslq	%edx, %rax
+	leaq	(%rax,%rax,8), %rax
+	leaq	(%rsi,%rax,8), %rax
 	leaq	(%rdi,%rdi,2), %rcx
 	leaq	(%rax,%rcx,8), %rax
 	retq

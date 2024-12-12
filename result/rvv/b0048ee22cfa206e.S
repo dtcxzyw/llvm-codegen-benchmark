@@ -7,7 +7,7 @@ func0000000000000002:                   # @func0000000000000002
 	vfmul.vf	v16, v16, fa5
 	vmflt.vv	v0, v12, v16
 	vmerge.vvm	v12, v16, v12, v0
-	vfadd.vv	v8, v12, v8
+	vfadd.vv	v8, v8, v12
 	ret
 func000000000000000c:                   # @func000000000000000c
 	fli.s	fa5, 8.0
@@ -16,5 +16,5 @@ func000000000000000c:                   # @func000000000000000c
 	vfmul.vf	v16, v16, fa5
 	vmfle.vv	v0, v16, v12
 	vmerge.vvm	v12, v16, v12, v0
-	vfadd.vv	v8, v12, v8
+	vfadd.vv	v8, v8, v12
 	ret

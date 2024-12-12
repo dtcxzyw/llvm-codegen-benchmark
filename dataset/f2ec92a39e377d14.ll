@@ -1,5 +1,5 @@
 
-; 396 occurrences:
+; 392 occurrences:
 ; abc/optimized/abcBidec.c.ll
 ; abc/optimized/darLib.c.ll
 ; abc/optimized/mapperCreate.c.ll
@@ -149,16 +149,12 @@
 ; gromacs/optimized/readir.cpp.ll
 ; gromacs/optimized/restcbt.cpp.ll
 ; gromacs/optimized/settle.cpp.ll
-; gromacs/optimized/slapy2.cpp.ll
-; gromacs/optimized/slarnv.cpp.ll
 ; gromacs/optimized/slarrex.cpp.ll
 ; gromacs/optimized/slas2.cpp.ll
 ; gromacs/optimized/slasq2.cpp.ll
 ; gromacs/optimized/slasq3.cpp.ll
 ; gromacs/optimized/slasq4.cpp.ll
 ; gromacs/optimized/slasv2.cpp.ll
-; gromacs/optimized/slatrd.cpp.ll
-; gromacs/optimized/ssytd2.cpp.ll
 ; gromacs/optimized/tngio.cpp.ll
 ; gromacs/optimized/trjcat.cpp.ll
 ; gromacs/optimized/update.cpp.ll

@@ -3,12 +3,12 @@ func0000000000000001:                   # @func0000000000000001
 	sllw	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	negw	a1, a1
 	sllw	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	negw	a1, a1
 	sllw	a0, a0, a1
 	seqz	a0, a0
@@ -21,7 +21,7 @@ func0000000000000004:                   # @func0000000000000004
 	srliw	a0, a0, 16
 	seqz	a0, a0
 	ret
-func0000000000000064:                   # @func0000000000000064
+func00000000000000c4:                   # @func00000000000000c4
 	negw	a1, a1
 	li	a2, -1
 	srlw	a1, a2, a1

@@ -1,11 +1,10 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; cvc5/optimized/equality_engine.cpp.ll
 ; cvc5/optimized/metakind.cpp.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/tensor.cpp.ll

@@ -1,8 +1,9 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; delta-rs/optimized/9v8xvedf69luuxb.ll
 ; image-rs/optimized/30755d6iao7ojcvl.ll
 ; typst-rs/optimized/4p46tkw2iv8zjgza.ll
+; zed-rs/optimized/exs06pxuzkdidwvzya8luo4wf.ll
 ; Function Attrs: nounwind
 define { i64, ptr } @func0000000000000002(ptr %0) #0 {
 entry:
@@ -12,7 +13,7 @@ entry:
   ret { i64, ptr } %3
 }
 
-; 30 occurrences:
+; 31 occurrences:
 ; coreutils-rs/optimized/1xfs2h41cvux42ap.ll
 ; influxdb-rs/optimized/2i5qqg1f0a0eo8eq.ll
 ; ockam-rs/optimized/18drj88gqh6dyxft.ll
@@ -43,6 +44,7 @@ entry:
 ; tree-sitter-rs/optimized/2ysit6xak1d4lr67.ll
 ; tree-sitter-rs/optimized/3akexam875pc2p1h.ll
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
 ; Function Attrs: nounwind
 define { i64, ptr } @func0000000000000018(ptr %0) #0 {
 entry:

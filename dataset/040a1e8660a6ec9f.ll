@@ -1,20 +1,24 @@
 
-; 3 occurrences:
+; 5 occurrences:
 ; image-rs/optimized/34r8dryqmufipcqz.ll
 ; linux/optimized/ohci-hcd.ll
 ; linux/optimized/tx.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001e(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = shl nuw nsw i32 %2, 13
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = or i32 %4, 2143289344
   ret i32 %5
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; image-rs/optimized/34r8dryqmufipcqz.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000a(i32 %0, i16 %1) #0 {
 entry:
@@ -263,7 +267,7 @@ entry:
   %2 = and i16 %1, 1
   %3 = zext nneg i16 %2 to i32
   %4 = shl nuw nsw i32 %3, 17
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = or disjoint i32 %5, 65536
   ret i32 %6
 }

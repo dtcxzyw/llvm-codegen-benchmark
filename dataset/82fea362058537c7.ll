@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; zxing/optimized/ODDataBarReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i32 %0, i32 %1) #0 {
+define i1 @func000000000000014a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -10
   %3 = icmp sgt i32 %2, 72
@@ -16,7 +16,7 @@ entry:
 ; postgres/optimized/d2s_shlib.ll
 ; postgres/optimized/d2s_srv.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000ca(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = icmp slt i32 %2, 0
@@ -29,7 +29,7 @@ entry:
 ; opencv/optimized/fast_gemm.cpp.ll
 ; opencv/optimized/matmul_layer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -2
   %3 = icmp eq i32 %2, -1
@@ -42,7 +42,7 @@ entry:
 ; opencv/optimized/fast_gemm.cpp.ll
 ; opencv/optimized/matmul_layer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -2
   %3 = icmp eq i32 %2, -1
@@ -54,7 +54,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/psnames.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000508(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -58
   %3 = icmp ult i32 %2, -10

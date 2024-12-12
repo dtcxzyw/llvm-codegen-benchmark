@@ -1,9 +1,8 @@
 
-; 27 occurrences:
+; 24 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
 ; brotli/optimized/decode.c.ll
 ; cmake/optimized/archive_write_set_format_mtree.c.ll
-; hermes/optimized/Interpreter.cpp.ll
 ; libwebp/optimized/frame_enc.c.ll
 ; linux/optimized/filemap.ll
 ; meshlab/optimized/arap.cpp.ll
@@ -15,9 +14,7 @@
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
 ; openmpi/optimized/ad_aggregate_new.ll
 ; openmpi/optimized/ad_read_coll.ll
-; openssl/optimized/libssl-lib-ssl3_meth.ll
 ; openssl/optimized/libssl-lib-tls1_meth.ll
-; openssl/optimized/libssl-shlib-ssl3_meth.ll
 ; openssl/optimized/libssl-shlib-tls1_meth.ll
 ; openusd/optimized/pinnedCurveExpandingSceneIndex.cpp.ll
 ; php/optimized/interval.ll
@@ -60,13 +57,12 @@ entry:
   ret i64 %5
 }
 
-; 24 occurrences:
+; 23 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; cmake/optimized/nghttp2_stream.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; flac/optimized/fixed.c.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; libjpeg-turbo/optimized/jidctint.c.ll
 ; libquic/optimized/prtime.cc.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll

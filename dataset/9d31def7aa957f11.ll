@@ -19,7 +19,7 @@
 ; stb/optimized/stb_image_resize2.c.ll
 ; yosys/optimized/splitnets.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, %0
   %3 = icmp eq i32 %0, -2147483648
@@ -27,7 +27,7 @@ entry:
   ret i32 %4
 }
 
-; 40 occurrences:
+; 39 occurrences:
 ; abc/optimized/cuddSubsetSP.c.ll
 ; abc/optimized/inftrees.c.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
@@ -52,7 +52,6 @@ entry:
 ; hyperscan/optimized/rose_in_util.cpp.ll
 ; libquic/optimized/inftrees.c.ll
 ; libwebp/optimized/webpmux.c.ll
-; linux/optimized/hda_codec.ll
 ; linux/optimized/inftrees.ll
 ; llvm/optimized/CGExprScalar.cpp.ll
 ; llvm/optimized/Instructions.cpp.ll
@@ -84,7 +83,7 @@ entry:
 ; assimp/optimized/glTFImporter.cpp.ll
 ; draco/optimized/obj_decoder.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, %0
   %3 = icmp eq i32 %0, 0
@@ -107,7 +106,7 @@ entry:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; postgres/optimized/partprune.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000026(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000046(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, %0
   %3 = icmp slt i32 %0, 0

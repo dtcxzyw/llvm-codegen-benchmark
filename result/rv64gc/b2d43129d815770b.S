@@ -12,27 +12,27 @@ func0000000000000008:                   # @func0000000000000008
 .LBB1_2:                                # %entry
 	feq.d	a0, fa1, fa0
 	ret
-func0000000000000002:                   # @func0000000000000002
+func000000000000000c:                   # @func000000000000000c
 	andi	a0, a0, 1
 	bnez	a0, .LBB2_2
 	fneg.d	fa1, fa1
 .LBB2_2:                                # %entry
-	flt.d	a0, fa1, fa0
+	fle.d	a0, fa0, fa1
 	ret
-func000000000000000c:                   # @func000000000000000c
+func0000000000000003:                   # @func0000000000000003
 	andi	a0, a0, 1
 	bnez	a0, .LBB3_2
 	fneg.d	fa1, fa1
 .LBB3_2:                                # %entry
 	fle.d	a0, fa0, fa1
+	xori	a0, a0, 1
 	ret
-func0000000000000003:                   # @func0000000000000003
+func0000000000000002:                   # @func0000000000000002
 	andi	a0, a0, 1
 	bnez	a0, .LBB4_2
 	fneg.d	fa1, fa1
 .LBB4_2:                                # %entry
-	fle.d	a0, fa0, fa1
-	xori	a0, a0, 1
+	flt.d	a0, fa1, fa0
 	ret
 func000000000000000b:                   # @func000000000000000b
 	andi	a0, a0, 1

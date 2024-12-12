@@ -23,11 +23,20 @@ func000000000000000c:                   # @func000000000000000c
 	cmpb	$99, %dil
 	setne	%al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	testl	$64512, %edi                    # imm = 0xFC00
+	sete	%al
+	retq
 func0000000000000008:                   # @func0000000000000008
 	testl	$14680064, %edi                 # imm = 0xE00000
 	setne	%al
 	retq
-func0000000000000046:                   # @func0000000000000046
+func0000000000000018:                   # @func0000000000000018
+	shrl	$2, %edi
+	cmpb	$30, %dil
+	setae	%al
+	retq
+func0000000000000086:                   # @func0000000000000086
 	shrl	$4, %edi
 	testb	%dil, %dil
 	setle	%al

@@ -82,7 +82,20 @@
 define i32 @func0000000000000060(i64 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = trunc nuw nsw i128 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
+  %5 = lshr i64 %4, %0
+  %6 = trunc i64 %5 to i32
+  %7 = and i32 %6, 1
+  ret i32 %7
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000040(i64 %0, i64 %1, i128 %2) #0 {
+entry:
+  %3 = trunc nuw i128 %2 to i64
+  %4 = add i64 %1, %3
   %5 = lshr i64 %4, %0
   %6 = trunc i64 %5 to i32
   %7 = and i32 %6, 1

@@ -1,7 +1,8 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/wlcNtk.c.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/dtoa.ll
 ; darktable/optimized/OlympusDecompressor.cpp.ll
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
@@ -40,6 +41,7 @@ entry:
 ; fmt/optimized/xchar-test.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; icu/optimized/collation.ll
+; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
 ; lief/optimized/BinaryParser.cpp.ll
@@ -221,7 +223,6 @@ entry:
 ; pbrt-v4/optimized/samples.cpp.ll
 ; qemu/optimized/hw_sd_sd.c.ll
 ; qemu/optimized/hw_usb_hcd-xhci.c.ll
-; qemu/optimized/migration_qemu-file.c.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll

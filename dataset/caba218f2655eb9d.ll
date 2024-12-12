@@ -1,9 +1,10 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
 ; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
 ; draco/optimized/mesh_stripifier.cc.ll
 ; linux/optimized/intel_color.ll
+; lvgl/optimized/lv_theme_default.ll
 ; oiio/optimized/pnmoutput.cpp.ll
 ; qemu/optimized/hw_display_edid-generate.c.ll
 ; qemu/optimized/hw_usb_dev-audio.c.ll

@@ -1,5 +1,5 @@
 
-%"class.testing::ThrowingValue.3270416" = type { i32 }
+%"class.testing::ThrowingValue.3460894" = type { i32 }
 
 ; 1 occurrences:
 ; ruby/optimized/bignum.ll
@@ -29,7 +29,7 @@ entry:
 ; openssl/optimized/libssl-lib-t1_trce.ll
 ; openssl/optimized/libssl-shlib-t1_trce.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000fa(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func00000000000000ff(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 2
@@ -89,7 +89,7 @@ entry:
 ; 1 occurrences:
 ; html5ever-rs/optimized/38n20yzo26sy51uu.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 %1
@@ -108,20 +108,31 @@ entry:
 }
 
 ; 1 occurrences:
+; luau/optimized/StringUtils.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000020(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr i64, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 24
+  %5 = getelementptr i64, ptr %4, i64 %1
+  ret ptr %5
+}
+
+; 1 occurrences:
 ; abseil-cpp/optimized/inlined_vector_exception_safety_test.cc.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000005a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"class.testing::ThrowingValue.3270416", ptr %0, i64 %2
+  %3 = getelementptr %"class.testing::ThrowingValue.3460894", ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -8
-  %5 = getelementptr %"class.testing::ThrowingValue.3270416", ptr %4, i64 %1
+  %5 = getelementptr %"class.testing::ThrowingValue.3460894", ptr %4, i64 %1
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; node/optimized/libnode.crypto_clienthello.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000003b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 7

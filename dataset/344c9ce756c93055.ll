@@ -12,8 +12,7 @@ entry:
   ret i32 %6
 }
 
-; 4 occurrences:
-; abc/optimized/fxuPair.c.ll
+; 3 occurrences:
 ; llvm/optimized/Expr.cpp.ll
 ; proj/optimized/geodesic.c.ll
 ; z3/optimized/smt_clause.cpp.ll
@@ -21,7 +20,7 @@ entry:
 define i32 @func0000000000000007(i32 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
-  %4 = select i1 %3, i32 0, i32 2
+  %4 = select i1 %3, i32 0, i32 1048576
   %5 = or disjoint i32 %0, %1
   %6 = or disjoint i32 %5, %4
   ret i32 %6

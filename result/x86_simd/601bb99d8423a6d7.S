@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	2454267027                      # 0x92492493
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpshufd	$245, %ymm0, %ymm1              # ymm1 = ymm0[1,1,3,3,5,5,7,7]
@@ -26,7 +26,7 @@ func0000000000000056:                   # @func0000000000000056
 	.long	85899344                        # 0x51eb850
 .LCPI1_2:
 	.long	42949672                        # 0x28f5c28
-func000000000000005c:                   # @func000000000000005c
+func00000000000000ac:                   # @func00000000000000ac
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpmulld	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
@@ -42,7 +42,7 @@ func000000000000005c:                   # @func000000000000005c
 	.long	85899344                        # 0x51eb850
 .LCPI2_2:
 	.long	10737418                        # 0xa3d70a
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpmulld	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
@@ -78,7 +78,7 @@ func0000000000000006:                   # @func0000000000000006
 	.long	2454267027                      # 0x92492493
 .LCPI4_1:
 	.long	6                               # 0x6
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpshufd	$245, %ymm0, %ymm1              # ymm1 = ymm0[1,1,3,3,5,5,7,7]
@@ -113,7 +113,7 @@ func0000000000000001:                   # @func0000000000000001
 	.long	715827882                       # 0x2aaaaaaa
 .LCPI6_2:
 	.long	1431655764                      # 0x55555554
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpmulld	.LCPI6_0(%rip){1to8}, %ymm0, %ymm0

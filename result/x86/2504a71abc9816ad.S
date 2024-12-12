@@ -8,18 +8,18 @@ func0000000000000001:                   # @func0000000000000001
 	cmpw	$1, %di
 	sete	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
-	addl	$-128, %edi
+func0000000000000024:                   # @func0000000000000024
+	addl	$-256, %edi
 	movzwl	%di, %eax
-	cmpl	$65281, %eax                    # imm = 0xFF01
+	cmpl	$65025, %eax                    # imm = 0xFE01
 	setb	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	movzwl	%di, %eax
 	cmpl	$255, %eax
 	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	cmpw	$1, %di
 	sete	%al
 	retq
@@ -40,24 +40,39 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	$65151, %eax                    # imm = 0xFE7F
 	setb	%al
 	retq
+func0000000000000034:                   # @func0000000000000034
+	addl	$-65, %edi
+	cmpw	$6, %di
+	setb	%al
+	retq
 func000000000000000c:                   # @func000000000000000c
 	cmpw	$-1, %di
 	setne	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	addl	$-6, %edi
 	cmpw	$-5, %di
 	setb	%al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func0000000000000014:                   # @func0000000000000014
+	addl	$-17, %edi
+	cmpw	$120, %di
+	setb	%al
+	retq
+func0000000000000028:                   # @func0000000000000028
+	addl	$-3, %edi
+	cmpw	$-2, %di
+	setb	%al
+	retq
+func000000000000002c:                   # @func000000000000002c
 	cmpw	$1, %di
 	setne	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	cmpw	$-2, %di
 	sete	%al
 	retq
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	incl	%edi
 	cmpw	$9, %di
 	setl	%al

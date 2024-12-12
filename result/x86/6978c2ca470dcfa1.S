@@ -64,7 +64,7 @@ func0000000000000041:                   # @func0000000000000041
 	addl	%esi, %edi
 	leal	34(%rdi,%rax,4), %eax
 	retq
-func000000000000004f:                   # @func000000000000004f
+func000000000000014f:                   # @func000000000000014f
 	cmpl	$96, %edx
 	leal	2000(%rdi,%rsi), %ecx
 	leal	1900(%rdi,%rsi), %eax
@@ -76,6 +76,12 @@ func0000000000000040:                   # @func0000000000000040
 	setae	%al
 	addl	%esi, %edi
 	leal	1(%rdi,%rax,4), %eax
+	retq
+func000000000000004f:                   # @func000000000000004f
+	leal	(%rdi,%rsi), %eax
+	cmpl	$65536, %edx                    # imm = 0x10000
+	sbbl	$0, %eax
+	addl	$2, %eax
 	retq
 func0000000000000045:                   # @func0000000000000045
 	leal	(%rdi,%rsi), %eax

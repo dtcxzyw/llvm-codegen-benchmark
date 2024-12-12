@@ -32,8 +32,9 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; linux/optimized/early_printk.ll
+; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i1 %1, i64 %2) #0 {

@@ -35,10 +35,10 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/UshortGray.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000044(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 24
-  %3 = mul nuw i32 %2, %0
+  %3 = mul nuw i32 %0, %2
   %4 = icmp ult i32 %3, 65535
   ret i1 %4
 }
@@ -46,7 +46,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/DeflateDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 3
   %3 = mul nsw i32 %2, %0
@@ -58,7 +58,7 @@ entry:
 ; darktable/optimized/DeflateDecompressor.cpp.ll
 ; opencv/optimized/datastructs.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 3
   %3 = mul nsw i32 %2, %0
@@ -97,19 +97,8 @@ entry:
 define i1 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 3
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = icmp sgt i32 %3, 4194304
-  ret i1 %4
-}
-
-; 1 occurrences:
-; linux/optimized/intel_sseu.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
-entry:
-  %2 = lshr i32 %1, 3
-  %3 = mul nuw nsw i32 %2, %0
-  %4 = icmp ult i32 %3, 129
   ret i1 %4
 }
 

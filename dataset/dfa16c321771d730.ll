@@ -19,11 +19,11 @@ define i64 @func000000000000000e(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = shl nuw nsw i64 %2, 8
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
-; 840 occurrences:
+; 855 occurrences:
 ; abseil-cpp/optimized/bind.cc.ll
 ; abseil-cpp/optimized/city.cc.ll
 ; abseil-cpp/optimized/civil_time.cc.ll
@@ -99,7 +99,6 @@ entry:
 ; duckdb/optimized/ub_duckdb_func_string_main.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; entt/optimized/meta_ctor.cpp.ll
-; faiss/optimized/IndexPQ.cpp.ll
 ; flac/optimized/foreign_metadata.c.ll
 ; folly/optimized/AsyncSSLSocket.cpp.ll
 ; folly/optimized/AsyncUDPSocket.cpp.ll
@@ -123,7 +122,6 @@ entry:
 ; git/optimized/pack-bitmap.ll
 ; git/optimized/pack-revindex.ll
 ; git/optimized/packfile.ll
-; git/optimized/patch-delta.ll
 ; git/optimized/read-cache.ll
 ; git/optimized/reader.ll
 ; git/optimized/record.ll
@@ -173,7 +171,6 @@ entry:
 ; hdf5/optimized/H5Shyper.c.ll
 ; hdf5/optimized/H5Spoint.c.ll
 ; hdf5/optimized/H5Tvlen.c.ll
-; hdf5/optimized/H5VLnative_blob.c.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; hermes/optimized/APInt.cpp.ll
 ; hermes/optimized/Analysis.cpp.ll
@@ -445,7 +442,6 @@ entry:
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/tensor.cpp.ll
@@ -797,6 +793,9 @@ entry:
 ; tls-rs/optimized/7y9936vu35zt2sp.ll
 ; tokio-rs/optimized/46apu3hqx0w07xoc.ll
 ; tokio-rs/optimized/5cdni0zdopovrkgi.ll
+; turborepo-rs/optimized/74s3x9u7hld928rwmttmetb1y.ll
+; turborepo-rs/optimized/7fw9xnh6zcxu0x094jeq6b04v.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; typst-rs/optimized/1ieizyrayutd063g.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
 ; typst-rs/optimized/32m15oowcb0qief6.ll
@@ -811,7 +810,6 @@ entry:
 ; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
 ; wasmtime-rs/optimized/18flldcd4wnig7ks.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
-; wasmtime-rs/optimized/1spnjfu340nob5zr.ll
 ; wasmtime-rs/optimized/2dcgoeji2y2j2nl0.ll
 ; wasmtime-rs/optimized/45190zkycf5izngt.ll
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
@@ -836,7 +834,6 @@ entry:
 ; wireshark/optimized/packet-quic.c.ll
 ; wireshark/optimized/packet-signal-pdu.c.ll
 ; wireshark/optimized/packet-someip.c.ll
-; wireshark/optimized/packet-stcsig.c.ll
 ; wireshark/optimized/packet-tds.c.ll
 ; wireshark/optimized/packet-tls-utils.c.ll
 ; wireshark/optimized/packet-wisun.c.ll
@@ -850,8 +847,26 @@ entry:
 ; wireshark/optimized/vwr.c.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; yaml-cpp/optimized/stream.cpp.ll
-; yyjson/optimized/yyjson.c.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/avfqkgc3wosoc0eacq6zrtrq5.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
+; zed-rs/optimized/cmxsagf2j897pis1fg8tnwnp3.ll
+; zed-rs/optimized/cp92gkg5707l1e819dflws6md.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
+; zed-rs/optimized/etmluiftgqx5jpyivviyferrj.ll
 ; zstd/optimized/divsufsort.c.ll
 ; zstd/optimized/fse_decompress.c.ll
 ; zstd/optimized/huf_decompress.c.ll
@@ -887,7 +902,6 @@ entry:
 ; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string_main.cpp.ll
 ; folly/optimized/IPAddressV6.cpp.ll
-; git/optimized/patch-delta.ll
 ; grpc/optimized/hpack_parser.cc.ll
 ; hdf5/optimized/H5Gent.c.ll
 ; hdf5/optimized/H5HFcache.c.ll
@@ -971,6 +985,7 @@ entry:
 ; spike/optimized/fdt_ro.ll
 ; stb/optimized/stb_ds.c.ll
 ; tokenizers-rs/optimized/2d3ht47jz0iets91.ll
+; tokio-rs/optimized/46apu3hqx0w07xoc.ll
 ; wireshark/optimized/bluetooth_hci_summary_dialog.cpp.ll
 ; wireshark/optimized/erf.c.ll
 ; wireshark/optimized/k12.c.ll
@@ -993,7 +1008,7 @@ entry:
   ret i64 %4
 }
 
-; 395 occurrences:
+; 404 occurrences:
 ; actix-rs/optimized/19s5ghr2x6s6bmh4.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; arrow/optimized/scalar_cast_numeric.cc.ll
@@ -1030,7 +1045,6 @@ entry:
 ; gromacs/optimized/decidesimulationworkload.cpp.ll
 ; grpc/optimized/compression_internal.cc.ll
 ; grpc/optimized/parsing.cc.ll
-; hermes/optimized/APFloat.cpp.ll
 ; hermes/optimized/BytecodeDisassembler.cpp.ll
 ; hermes/optimized/JSLexer.cpp.ll
 ; hyperscan/optimized/ng_literal_analysis.cpp.ll
@@ -1120,7 +1134,6 @@ entry:
 ; linux/optimized/libata-scsi.ll
 ; linux/optimized/manager.ll
 ; linux/optimized/sd.ll
-; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/APINotesYAMLCompiler.cpp.ll
 ; llvm/optimized/ASTMatchersInternal.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
@@ -1273,7 +1286,6 @@ entry:
 ; php/optimized/ir_emit.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; protobuf/optimized/generated_message_tctable_gen.cc.ll
-; protobuf/optimized/json.cc.ll
 ; qemu/optimized/hw_net_cadence_gem.c.ll
 ; redis/optimized/extent.ll
 ; redis/optimized/extent.sym.ll
@@ -1311,6 +1323,8 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; tokenizers-rs/optimized/1gbi58t02rey1ahs.ll
+; turborepo-rs/optimized/93lva917qa673k3vktayo9ds8.ll
+; turborepo-rs/optimized/b9mxqsqxupsuldn67x7vgrl1g.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; vcpkg/optimized/strings.cpp.ll
@@ -1385,6 +1399,16 @@ entry:
 ; yosys/optimized/xprop.ll
 ; z3/optimized/dl_bound_relation.cpp.ll
 ; z3/optimized/theory_special_relations.cpp.ll
+; zed-rs/optimized/0oeh7hwbxnw4zu37xj5psd1f6.ll
+; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/5ta1fnasvc90k95zqql8ufc92.ll
+; zed-rs/optimized/6i9q21vg747q3orsxnutiwubi.ll
+; zed-rs/optimized/7almbq0vtpgp7q0c9d6k1td97.ll
+; zed-rs/optimized/7jaiv08yt9hrplelvkk8jyr6y.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
+; zed-rs/optimized/etmluiftgqx5jpyivviyferrj.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
@@ -1398,7 +1422,7 @@ entry:
   ret i64 %4
 }
 
-; 62 occurrences:
+; 64 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
@@ -1461,12 +1485,14 @@ entry:
 ; wireshark/optimized/peekclassic.c.ll
 ; wireshark/optimized/tvbuff.c.ll
 ; wireshark/optimized/vwr.c.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/cp92gkg5707l1e819dflws6md.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = shl nuw i64 %2, 56
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
@@ -1494,7 +1520,7 @@ define i64 @func0000000000000004(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = shl nuw i64 %2, 56
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
@@ -1533,7 +1559,20 @@ define i64 @func000000000000000d(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = shl nuw i64 %2, 63
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
+  ret i64 %4
+}
+
+; 3 occurrences:
+; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000c(i64 %0, i8 %1) #0 {
+entry:
+  %2 = zext nneg i8 %1 to i64
+  %3 = shl nuw i64 %2, 63
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
@@ -1545,7 +1584,7 @@ define i64 @func0000000000000009(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = shl i64 %2, 63
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
@@ -1557,17 +1596,6 @@ entry:
   %2 = zext i8 %1 to i64
   %3 = shl i64 %2, 60
   %4 = or disjoint i64 %3, %0
-  ret i64 %4
-}
-
-; 1 occurrences:
-; arrow/optimized/value_parsing.cc.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000c(i64 %0, i8 %1) #0 {
-entry:
-  %2 = zext nneg i8 %1 to i64
-  %3 = shl nuw i64 %2, 63
-  %4 = or i64 %3, %0
   ret i64 %4
 }
 

@@ -1,8 +1,11 @@
 
-; 166 occurrences:
+; 167 occurrences:
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; arrow/optimized/value_parsing.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; cpython/optimized/longobject.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
@@ -55,12 +58,10 @@
 ; mitsuba3/optimized/jitallocator.cpp.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; mold/optimized/arch-s390x.cc.ll
-; nuttx/optimized/lib_rand48.c.ll
 ; opencc/optimized/bit-vector.cc.ll
 ; openjdk/optimized/psYoungGen.ll
 ; openssl/optimized/libcrypto-lib-curve25519.ll
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
-; protobuf/optimized/field_mask_util.cc.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; qemu/optimized/hw_vfio_container.c.ll
 ; qemu/optimized/source_s_roundToUI32.c.ll
@@ -175,7 +176,7 @@ entry:
   ret i64 %4
 }
 
-; 34 occurrences:
+; 36 occurrences:
 ; abc/optimized/abcNpnSave.c.ll
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/extraUtilMisc.c.ll
@@ -183,6 +184,8 @@ entry:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; fmt/optimized/chrono-test.cc.ll

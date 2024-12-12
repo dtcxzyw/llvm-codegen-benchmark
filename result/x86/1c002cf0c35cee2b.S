@@ -20,9 +20,15 @@ func000000000000000a:                   # @func000000000000000a
 	negl	%eax
 	retq
 func0000000000000004:                   # @func0000000000000004
-	shrq	$32, %rdi
 	xorl	%eax, %eax
-	cmpq	$1, %rdi
+	movabsq	$1000000000000000000, %rcx      # imm = 0xDE0B6B3A7640000
+	cmpq	%rcx, %rdi
+	sbbl	%eax, %eax
+	retq
+func0000000000000014:                   # @func0000000000000014
+	xorl	%eax, %eax
+	movabsq	$-153722867280912930, %rcx      # imm = 0xFDDDDDDDDDDDDDDE
+	cmpq	%rcx, %rdi
 	sbbl	%eax, %eax
 	retq
 func0000000000000006:                   # @func0000000000000006

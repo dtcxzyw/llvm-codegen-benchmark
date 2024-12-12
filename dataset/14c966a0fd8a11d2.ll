@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/ui_curses.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000064(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 64
   %3 = or disjoint i32 %1, 96
@@ -15,7 +15,7 @@ entry:
 ; abc/optimized/cuddRef.c.ll
 ; linux/optimized/uncore_nhmex.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 3
   %3 = or disjoint i32 %1, 1
@@ -24,11 +24,10 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
-; linux/optimized/ich8lan.ll
+; 1 occurrences:
 ; nuklear/optimized/unity.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000074(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000e4(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 55
   %3 = or disjoint i32 %1, 48
@@ -42,7 +41,7 @@ entry:
 ; linux/optimized/extents.ll
 ; wireshark/optimized/packet-rtps.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000071(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000e1(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 24
   %3 = or disjoint i32 %1, 20
@@ -55,7 +54,7 @@ entry:
 ; linux/optimized/mac.ll
 ; linux/optimized/netdev.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 21604
   %3 = or disjoint i32 %1, 21508
@@ -67,11 +66,23 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/ich8lan.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000064(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000f4(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nuw nsw i32 %1, 21600
+  %3 = or disjoint i32 %1, 21504
+  %4 = icmp samesign ult i32 %0, 16
+  %5 = select i1 %4, i32 %3, i32 %2
+  ret i32 %5
+}
+
+; 1 occurrences:
+; linux/optimized/ich8lan.ll
+; Function Attrs: nounwind
+define i32 @func00000000000000d4(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 21604
   %3 = or i32 %1, 21508
-  %4 = icmp ult i32 %0, 16
+  %4 = icmp samesign ult i32 %0, 16
   %5 = select i1 %4, i32 %3, i32 %2
   ret i32 %5
 }
@@ -79,11 +90,11 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/cstring.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 55
   %3 = or i32 %1, 48
-  %4 = icmp ult i32 %0, 10
+  %4 = icmp samesign ult i32 %0, 10
   %5 = select i1 %4, i32 %3, i32 %2
   ret i32 %5
 }

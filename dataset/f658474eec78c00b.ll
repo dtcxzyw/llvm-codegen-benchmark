@@ -35,7 +35,7 @@ entry:
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/pata_amd.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000023(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000043(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = or disjoint i32 %3, 127
@@ -48,7 +48,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/g4x_hdmi.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000074(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000d4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = or disjoint i32 %3, 201326592

@@ -1,4 +1,7 @@
 
+%struct.Gia_Obj_t_.2876078 = type <{ i64, i32 }>
+%struct.Gia_Obj_t_.2877170 = type <{ i64, i32 }>
+
 ; 4 occurrences:
 ; linux/optimized/binfmt_elf.ll
 ; linux/optimized/compat_binfmt_elf.ll
@@ -15,9 +18,7 @@ entry:
   ret ptr %6
 }
 
-; 5 occurrences:
-; abc/optimized/giaIso.c.ll
-; abc/optimized/giaSweeper.c.ll
+; 3 occurrences:
 ; openjdk/optimized/continuation.ll
 ; openjdk/optimized/continuationFreezeThaw.ll
 ; openjdk/optimized/javaThread.ll
@@ -29,6 +30,34 @@ entry:
   %4 = and i64 %3, -16
   %5 = inttoptr i64 %4 to ptr
   %6 = getelementptr nusw i8, ptr %5, i64 -16
+  ret ptr %6
+}
+
+; 3 occurrences:
+; abc/optimized/giaIso.c.ll
+; abc/optimized/giaSweeper.c.ll
+; llvm/optimized/CodeGenFunction.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
+entry:
+  %2 = getelementptr nusw nuw %struct.Gia_Obj_t_.2876078, ptr %0, i64 %1
+  %3 = ptrtoint ptr %2 to i64
+  %4 = and i64 %3, -2
+  %5 = inttoptr i64 %4 to ptr
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 8
+  ret ptr %6
+}
+
+; 1 occurrences:
+; abc/optimized/giaSweeper.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
+entry:
+  %2 = getelementptr nusw %struct.Gia_Obj_t_.2877170, ptr %0, i64 %1
+  %3 = ptrtoint ptr %2 to i64
+  %4 = and i64 %3, -2
+  %5 = inttoptr i64 %4 to ptr
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 8
   ret ptr %6
 }
 

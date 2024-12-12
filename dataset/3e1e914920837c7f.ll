@@ -3,9 +3,9 @@
 ; icu/optimized/decNumber.ll
 ; jq/optimized/decNumber.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i64 %2) #0 {
+define i32 @func0000000000000051(i32 %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ult i64 %2, 10
+  %3 = icmp samesign ult i64 %2, 10
   %4 = select i1 %3, i32 %0, i32 %1
   %5 = sub nsw i32 0, %4
   ret i32 %5
@@ -14,9 +14,9 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/luckyFast16.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000023(i32 %0, i32 %1, i64 %2) #0 {
+define i32 @func0000000000000063(i32 %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ugt i64 %2, 15
+  %3 = icmp samesign ugt i64 %2, 15
   %4 = select i1 %3, i32 %0, i32 %1
   %5 = sub nuw nsw i32 64, %4
   ret i32 %5

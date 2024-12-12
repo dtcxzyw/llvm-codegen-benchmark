@@ -1,7 +1,9 @@
 
-; 85 occurrences:
+; 87 occurrences:
 ; abseil-cpp/optimized/chi_square_test.cc.ll
 ; assimp/optimized/ColladaExporter.cpp.ll
+; boost/optimized/benchmark_fstream.ll
+; boost/optimized/default_filter_factory.ll
 ; casadi/optimized/cvodes.c.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; faiss/optimized/Clustering.cpp.ll

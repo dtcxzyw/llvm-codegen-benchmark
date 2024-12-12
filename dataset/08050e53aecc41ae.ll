@@ -1,8 +1,15 @@
 
-; 5 occurrences:
+; 12 occurrences:
 ; arrow/optimized/tdigest.cc.ll
 ; assimp/optimized/sweep.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; hermes/optimized/Operations.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; postgres/optimized/geo_ops.ll
 ; ruby/optimized/numeric.ll
 ; Function Attrs: nounwind
@@ -105,8 +112,15 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 9 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; brotli/optimized/encode.c.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; quantlib/optimized/coxingersollross.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(double %0, double %1, double %2) #0 {

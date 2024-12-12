@@ -1,20 +1,14 @@
-func0000000000000016:                   // @func0000000000000016
+func0000000000000026:                   // @func0000000000000026
 // %bb.0:                               // %entry
-	orr	v5.16b, v5.16b, v3.16b
-	orr	v4.16b, v4.16b, v2.16b
-	cmlt	v3.4s, v3.4s, #0
-	cmlt	v2.4s, v2.4s, #0
-	bif	v1.16b, v5.16b, v3.16b
-	bif	v0.16b, v4.16b, v2.16b
+	orr	w8, w2, w1
+	cmp	w1, #0
+	csel	w0, w0, w8, lt
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	orr	v5.16b, v5.16b, v3.16b
-	orr	v4.16b, v4.16b, v2.16b
-	cmeq	v3.4s, v3.4s, #0
-	cmeq	v2.4s, v2.4s, #0
-	bif	v1.16b, v5.16b, v3.16b
-	bif	v0.16b, v4.16b, v2.16b
+	orr	w8, w2, w1
+	cmp	w1, #0
+	csel	w0, w0, w8, eq
 	ret
                                         // -- End function

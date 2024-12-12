@@ -10,9 +10,10 @@ entry:
   ret ptr %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; llvm/optimized/blake3.c.ll
 ; wasmtime-rs/optimized/47hgs4eifsow3k34.ll
+; zed-rs/optimized/2i8hya6f2t9bndlbd6b6686oi.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:

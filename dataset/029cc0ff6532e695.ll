@@ -1,5 +1,5 @@
 
-; 7 occurrences:
+; 16 occurrences:
 ; abc/optimized/ifDec07.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -7,6 +7,15 @@
 ; openjdk/optimized/hb-aat-layout.ll
 ; rust-analyzer-rs/optimized/2jyyuxshs9vnz9u0.ll
 ; rust-analyzer-rs/optimized/5ac99zaxn7b9r9xv.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/3xn4w3qarvbzl2jkwavm0419t.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/4hgzf672qwd8x8ke1407yey6m.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003f(i32 %0, i32 %1) #0 {
 entry:
@@ -48,7 +57,7 @@ entry:
 define i64 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 4
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   %5 = shl nuw nsw i64 %4, 10
   ret i64 %5
@@ -60,7 +69,7 @@ entry:
 define i64 @func000000000000002b(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 24
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = zext i32 %3 to i64
   %5 = shl nuw nsw i64 %4, 3
   ret i64 %5
@@ -75,15 +84,17 @@ entry:
 define i64 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 31
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = zext i32 %3 to i64
   %5 = shl nuw i64 %4, 32
   ret i64 %5
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_image.c.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
@@ -131,7 +142,7 @@ entry:
 define i64 @func0000000000000023(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 16
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = zext i32 %3 to i64
   %5 = shl nuw nsw i64 %4, 2
   ret i64 %5

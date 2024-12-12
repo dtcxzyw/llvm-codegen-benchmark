@@ -16,7 +16,8 @@ func0000000000000012:                   # @func0000000000000012
 	xorl	%eax, %eax
 	cmpl	%edx, %esi
 	sbbq	%rax, %rax
-	leaq	(%rdi,%rax,8), %rax
+	imulq	$152, %rax, %rax
+	addq	%rdi, %rax
 	retq
 func000000000000001a:                   # @func000000000000001a
 	xorl	%eax, %eax
@@ -25,5 +26,19 @@ func000000000000001a:                   # @func000000000000001a
 	negq	%rax
 	leaq	(%rax,%rax,4), %rax
 	shlq	$4, %rax
+	addq	%rdi, %rax
+	retq
+func0000000000000010:                   # @func0000000000000010
+	xorl	%eax, %eax
+	cmpl	%edx, %esi
+	sbbq	%rax, %rax
+	leaq	(%rdi,%rax,4), %rax
+	retq
+func0000000000000018:                   # @func0000000000000018
+	xorl	%eax, %eax
+	cmpl	%edx, %esi
+	setl	%al
+	negq	%rax
+	imulq	$176, %rax, %rax
 	addq	%rdi, %rax
 	retq

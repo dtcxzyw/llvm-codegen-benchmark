@@ -1,6 +1,7 @@
 
-; 20 occurrences:
+; 21 occurrences:
 ; arrow/optimized/fixed-dtoa.cc.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/mpdecimal.ll
 ; double_conversion/optimized/fixed-dtoa.cc.ll
 ; fmt/optimized/chrono-test.cc.ll
@@ -32,11 +33,11 @@ entry:
 ; 1 occurrences:
 ; php/optimized/zend_jit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0) #0 {
+define i1 @func0000000000000018(i64 %0) #0 {
 entry:
   %1 = udiv i64 %0, 10
   %2 = urem i64 %1, 10
-  %3 = icmp ugt i64 %2, 5
+  %3 = icmp samesign ugt i64 %2, 5
   ret i1 %3
 }
 

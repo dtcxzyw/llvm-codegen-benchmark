@@ -1,18 +1,16 @@
 
-; 2 occurrences:
-; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
+; 1 occurrences:
 ; php/optimized/html.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %2, -9223372036854775808
   %4 = urem i64 %3, %1
-  %5 = getelementptr nusw ptr, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw ptr, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 165 occurrences:
-; cvc5/optimized/cvc5.cpp.ll
+; 162 occurrences:
 ; spike/optimized/add64.ll
 ; spike/optimized/amocas_d.ll
 ; spike/optimized/amocas_q.ll
@@ -20,7 +18,6 @@ entry:
 ; spike/optimized/c_fldsp.ll
 ; spike/optimized/c_flw.ll
 ; spike/optimized/c_flwsp.ll
-; spike/optimized/csrs.ll
 ; spike/optimized/fadd_d.ll
 ; spike/optimized/fadd_h.ll
 ; spike/optimized/fadd_q.ll
@@ -175,12 +172,35 @@ entry:
 ; spike/optimized/umulx8.ll
 ; spike/optimized/uradd64.ll
 ; spike/optimized/ursub64.ll
-; spike/optimized/vector_unit.ll
 ; spike/optimized/vfmv_f_s.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = or disjoint i64 %2, 1
+  %4 = urem i64 %3, %1
+  %5 = getelementptr nusw nuw ptr, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 3 occurrences:
+; cvc5/optimized/cvc5.cpp.ll
+; spike/optimized/csrs.ll
+; spike/optimized/vector_unit.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = or disjoint i64 %2, 1
+  %3 = or disjoint i64 %2, 2
+  %4 = urem i64 %3, %1
+  %5 = getelementptr nusw ptr, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = or i64 %2, 4
   %4 = urem i64 %3, %1
   %5 = getelementptr nusw ptr, ptr %0, i64 %4
   ret ptr %5

@@ -1,9 +1,9 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	fcvt.w.s	a1, fa0, rtz
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	fcvt.w.s	a1, fa0, rtz
 	sltu	a0, a1, a0
 	ret
@@ -28,7 +28,7 @@ func000000000000000c:                   # @func000000000000000c
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	fcvt.w.s	a1, fa0, rtz
 	sltu	a0, a0, a1
 	ret

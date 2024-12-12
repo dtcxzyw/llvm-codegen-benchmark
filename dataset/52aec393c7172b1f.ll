@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/satSolver.c.ll
@@ -11,7 +11,6 @@
 ; gromacs/optimized/dgesdd.cpp.ll
 ; gromacs/optimized/sgesdd.cpp.ll
 ; grpc/optimized/bdp_estimator.cc.ll
-; openblas/optimized/dgesdd.c.ll
 ; yosys/optimized/Solver.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(double %0) #0 {

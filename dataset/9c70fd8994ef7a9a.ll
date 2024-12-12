@@ -79,7 +79,7 @@ entry:
   %2 = lshr i64 %1, 24
   %3 = trunc i64 %2 to i8
   %4 = icmp eq i8 %3, 48
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -93,7 +93,7 @@ entry:
   %2 = lshr i64 %1, 8
   %3 = trunc i64 %2 to i8
   %4 = icmp ne i8 %3, -1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

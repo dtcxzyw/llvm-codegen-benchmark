@@ -1,5 +1,5 @@
 
-; 111 occurrences:
+; 109 occurrences:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver2.c.ll
 ; abc/optimized/satSolver3.c.ll
@@ -28,7 +28,6 @@
 ; icu/optimized/numparse_parsednumber.ll
 ; luajit/optimized/lj_strscan.ll
 ; luajit/optimized/lj_strscan_dyn.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; nix/optimized/json-to-value.ll
 ; nlohmann_json/optimized/unit-bjdata.cpp.ll
 ; nlohmann_json/optimized/unit-bson.cpp.ll
@@ -108,7 +107,6 @@
 ; wireshark/optimized/packet-dmp.c.ll
 ; wireshark/optimized/packet-ieee80211-radio.c.ll
 ; wireshark/optimized/packet-nasdaq-itch.c.ll
-; wireshark/optimized/packet-usb-i1d3.c.ll
 ; z3/optimized/probe.cpp.ll
 ; z3/optimized/theory_str.cpp.ll
 ; Function Attrs: nounwind
@@ -119,7 +117,8 @@ entry:
   ret double %2
 }
 
-; 12 occurrences:
+; 13 occurrences:
+; boost/optimized/within_pointlike_geometry.ll
 ; opencv/optimized/edge_drawing.cpp.ll
 ; openjdk/optimized/mlib_ImageConv_16ext.ll
 ; openjdk/optimized/mlib_ImageConv_16nw.ll
@@ -153,28 +152,37 @@ entry:
   ret double %2
 }
 
-; 7 occurrences:
+; 4 occurrences:
 ; darktable/optimized/snapshots.c.ll
-; graphviz/optimized/gvrender_core_fig.c.ll
-; graphviz/optimized/gvrender_core_mp.c.ll
 ; opencv/optimized/perf_blur.cpp.ll
 ; opencv/optimized/ts_func.cpp.ll
-; postgres/optimized/subselect.ll
 ; proj/optimized/som.cpp.ll
+; Function Attrs: nounwind
+define double @func0000000000000014(i32 %0) #0 {
+entry:
+  %1 = icmp samesign ult i32 %0, 40
+  %2 = select i1 %1, double 1.000000e+00, double 3.000000e-01
+  ret double %2
+}
+
+; 3 occurrences:
+; graphviz/optimized/gvrender_core_fig.c.ll
+; graphviz/optimized/gvrender_core_mp.c.ll
+; postgres/optimized/subselect.ll
 ; Function Attrs: nounwind
 define double @func0000000000000004(i32 %0) #0 {
 entry:
-  %1 = icmp ult i32 %0, 40
-  %2 = select i1 %1, double 1.000000e+00, double 3.000000e-01
+  %1 = icmp ult i32 %0, 3
+  %2 = select i1 %1, double 5.000000e-01, double 0.000000e+00
   ret double %2
 }
 
 ; 1 occurrences:
 ; opencv/optimized/perf_pyramids.cpp.ll
 ; Function Attrs: nounwind
-define double @func0000000000000008(i32 %0) #0 {
+define double @func0000000000000018(i32 %0) #0 {
 entry:
-  %1 = icmp ugt i32 %0, 4
+  %1 = icmp samesign ugt i32 %0, 4
   %2 = select i1 %1, double 1.000000e-05, double 1.000000e+00
   ret double %2
 }

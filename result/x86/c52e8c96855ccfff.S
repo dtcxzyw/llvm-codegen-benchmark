@@ -3,14 +3,14 @@ func0000000000000000:                   # @func0000000000000000
 	leaq	1(%rdi), %rax
 	imulq	%rcx, %rax
 	retq
-func0000000000000005:                   # @func0000000000000005
-	movslq	%esi, %rcx
-	leaq	-1(%rdi), %rax
-	imulq	%rcx, %rax
-	retq
 func0000000000000008:                   # @func0000000000000008
 	movslq	%esi, %rcx
 	leaq	1(%rdi), %rax
+	imulq	%rcx, %rax
+	retq
+func0000000000000005:                   # @func0000000000000005
+	movslq	%esi, %rcx
+	leaq	-1(%rdi), %rax
 	imulq	%rcx, %rax
 	retq
 func000000000000000d:                   # @func000000000000000d

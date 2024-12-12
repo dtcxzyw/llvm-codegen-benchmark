@@ -46,4 +46,19 @@ entry:
   ret double %5
 }
 
+; 4 occurrences:
+; gromacs/optimized/colvarcomp_gpath.cpp.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; openusd/optimized/plane.cpp.ll
+; Function Attrs: nounwind
+define double @func0000000000000003(i64 %0, ptr %1) #0 {
+entry:
+  %2 = ptrtoint ptr %1 to i64
+  %3 = sub i64 %0, %2
+  %4 = sdiv exact i64 %3, 24
+  %5 = uitofp nneg i64 %4 to double
+  ret double %5
+}
+
 attributes #0 = { nounwind }

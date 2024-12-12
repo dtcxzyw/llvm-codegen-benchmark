@@ -51,6 +51,7 @@
 ; abc/optimized/saigOutDec.c.ll
 ; abc/optimized/saigTrans.c.ll
 ; abc/optimized/sbdCore.c.ll
+; abc/optimized/sbdWin.c.ll
 ; abc/optimized/sswAig.c.ll
 ; abc/optimized/sswFilter.c.ll
 ; abc/optimized/sswLcorr.c.ll
@@ -62,7 +63,6 @@
 ; freetype/optimized/pcf.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; linux/optimized/libata-sff.ll
-; linux/optimized/uprobes.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll

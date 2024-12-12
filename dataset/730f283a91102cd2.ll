@@ -43,11 +43,10 @@ entry:
   ret i32 %6
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; darktable/optimized/timeline.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; linux/optimized/kapi.ll
-; nuttx/optimized/lib_timegm.c.ll
 ; velox/optimized/TimestampConversion.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func00000000000000c4(i32 %0, i32 %1, i32 %2) #0 {

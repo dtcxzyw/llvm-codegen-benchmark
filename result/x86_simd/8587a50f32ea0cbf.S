@@ -14,5 +14,5 @@ func0000000000000008:                   # @func0000000000000008
 	vpsrld	$1, %ymm2, %ymm2
 	vpsrld	$1, %ymm1, %ymm1
 	vpaddd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq

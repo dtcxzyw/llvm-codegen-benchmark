@@ -6,7 +6,7 @@
 ; openssl/optimized/openssl-bin-ca.ll
 ; openssl/optimized/openssl-bin-cmp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000181(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp eq i32 %1, 0
@@ -23,7 +23,7 @@ entry:
 ; wireshark/optimized/blf.c.ll
 ; wireshark/optimized/packet-jxta.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp eq i32 %1, 175
@@ -38,7 +38,7 @@ entry:
 ; libwebp/optimized/get_disto.c.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp ne i32 %1, 0
@@ -56,7 +56,7 @@ entry:
 ; llvm/optimized/ParseDecl.cpp.ll
 ; llvm/optimized/ParseDeclCXX.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func000000000000018c(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp ne i32 %1, 0

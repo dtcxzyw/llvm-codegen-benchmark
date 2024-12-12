@@ -4,7 +4,7 @@ func000000000000007b:                   # @func000000000000007b
 	vmv.v.x	v14, a0
 	vmacc.vv	v14, v12, v10
 	vsrl.vi	v10, v14, 16
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func0000000000000029:                   # @func0000000000000029
 	lui	a0, 4
@@ -26,7 +26,7 @@ func0000000000000003:                   # @func0000000000000003
 	vmv.v.i	v14, 7
 	vmacc.vv	v14, v12, v10
 	vsrl.vi	v10, v14, 3
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func0000000000000000:                   # @func0000000000000000
 	li	a0, 64

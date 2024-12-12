@@ -58,7 +58,7 @@ entry:
 ; wasmtime-rs/optimized/24jxjxhx40nukvhl.ll
 ; wasmtime-rs/optimized/xl3b912aq97wiv3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000098(i8 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp ne i8 %0, 0
@@ -70,7 +70,7 @@ entry:
 ; ropey-rs/optimized/2p9nf7n6i9ycxebu.ll
 ; rust-analyzer-rs/optimized/32bq2465pah9s0xr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000042(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000082(i8 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp eq i8 %0, 1

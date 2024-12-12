@@ -49,9 +49,8 @@ entry:
   ret i1 %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; casadi/optimized/cvodes.c.ll
-; osqp/optimized/scaling.c.ll
 ; sundials/optimized/cvode.c.ll
 ; sundials/optimized/cvodes.c.ll
 ; Function Attrs: nounwind

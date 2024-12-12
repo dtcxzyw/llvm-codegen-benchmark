@@ -48,9 +48,10 @@ func00000000000000b0:                   # @func00000000000000b0
 	ret
 func00000000000000cc:                   # @func00000000000000cc
 	andi	a2, a2, 255
-	add	a0, a0, a2
 	slli	a0, a0, 8
-	addw	a0, a0, a1
+	slli	a2, a2, 8
+	add	a0, a0, a1
+	addw	a0, a0, a2
 	ret
 func00000000000001cc:                   # @func00000000000001cc
 	andi	a2, a2, 255

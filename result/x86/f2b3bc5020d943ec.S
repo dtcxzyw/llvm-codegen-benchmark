@@ -9,7 +9,7 @@ func0000000000000018:                   # @func0000000000000018
 	andb	%dil, %al
 	retq
 func0000000000000008:                   # @func0000000000000008
-	cmpb	$6, %sil
+	cmpb	$-6, %sil
 	setb	%al
 	andb	%dil, %al
 	retq

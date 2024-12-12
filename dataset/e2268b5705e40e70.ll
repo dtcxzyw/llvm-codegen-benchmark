@@ -17,12 +17,12 @@
 ; yosys/optimized/sat.ll
 ; yosys/optimized/subcircuit.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000004c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
   %4 = and i64 %3, %1
   %5 = icmp ne i64 %4, 0
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -31,12 +31,12 @@ entry:
 ; openjdk/optimized/matcher.ll
 ; verilator/optimized/V3Number.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000006c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 1, %2
   %4 = and i64 %3, %1
   %5 = icmp ne i64 %4, 0
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -49,7 +49,7 @@ entry:
 ; verilator/optimized/V3VariableOrder.cpp.ll
 ; yosys/optimized/opt_muxtree.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
   %4 = and i64 %3, %1
@@ -58,7 +58,8 @@ entry:
   ret i1 %6
 }
 
-; 97 occurrences:
+; 98 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
 ; fmt/optimized/header-only-test.cc.ll
@@ -166,14 +167,11 @@ entry:
   ret i1 %6
 }
 
-; 5 occurrences:
+; 2 occurrences:
 ; hyperscan/optimized/stream_compress.c.ll
-; llvm/optimized/DecoderEmitter.cpp.ll
-; llvm/optimized/LoopStrengthReduce.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
 ; rust-analyzer-rs/optimized/2mbx5ptcpq6fo7sc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, %2
   %4 = icmp ne i64 %3, 0
@@ -184,11 +182,11 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/HadesGC.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, %2
   %4 = icmp eq i64 %3, 0
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -198,7 +196,7 @@ entry:
 define i1 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 -2, %2
-  %4 = and i64 %3, %1
+  %4 = and i64 %1, %3
   %5 = icmp ne i64 %4, 0
   %6 = and i1 %5, %0
   ret i1 %6

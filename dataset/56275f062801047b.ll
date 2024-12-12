@@ -33,7 +33,7 @@ entry:
   ret i64 %4
 }
 
-; 33 occurrences:
+; 32 occurrences:
 ; cvc5/optimized/equality_engine.cpp.ll
 ; freetype/optimized/truetype.c.ll
 ; hyperscan/optimized/fdr_confirm_compile.cpp.ll
@@ -63,7 +63,6 @@ entry:
 ; php/optimized/zend_inheritance.ll
 ; php/optimized/zend_jit.ll
 ; php/optimized/zend_persist_calc.ll
-; postgres/optimized/shm_toc.ll
 ; postgres/optimized/slab.ll
 ; raylib/optimized/raudio.c.ll
 ; z3/optimized/q_mam.cpp.ll

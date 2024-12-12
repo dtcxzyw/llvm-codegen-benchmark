@@ -17,13 +17,13 @@ entry:
 ; openspiel/optimized/morpion_solitaire.cc.ll
 ; openspiel/optimized/quoridor.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a6(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000146(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
   %5 = trunc nuw i64 %1 to i32
   %6 = icmp slt i32 %4, %5
-  %7 = and i1 %6, %0
+  %7 = and i1 %0, %6
   ret i1 %7
 }
 

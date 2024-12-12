@@ -10,12 +10,12 @@
 ; wireshark/optimized/packet-epl.c.ll
 ; wireshark/optimized/packet-opensafety.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i16 %1) #0 {
+define i1 @func0000000000000042(i1 %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %1, 10
   %3 = icmp eq i16 %1, 1
   %4 = or i1 %3, %2
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

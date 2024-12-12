@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; yoga/optimized/CalculateLayout.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, float %1, float %2) #0 {
+define i1 @func0000000000000081(i32 %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp ogt float %1, %2
   %4 = icmp eq i32 %0, 2
@@ -11,10 +11,22 @@ entry:
 }
 
 ; 2 occurrences:
+; nuklear/optimized/unity.c.ll
+; yoga/optimized/CalculateLayout.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000008c(i32 %0, float %1, float %2) #0 {
+entry:
+  %3 = fcmp ogt float %1, %2
+  %4 = icmp ne i32 %0, 1
+  %5 = and i1 %4, %3
+  ret i1 %5
+}
+
+; 2 occurrences:
 ; bullet3/optimized/btDeformableBodySolver.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, float %1, float %2) #0 {
+define i1 @func000000000000004c(i32 %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp olt float %1, %2
   %4 = icmp ne i32 %0, 0
@@ -22,11 +34,12 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; bullet3/optimized/btInternalEdgeUtility.ll
 ; opencv/optimized/fitellipse.cpp.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, float %1, float %2) #0 {
+define i1 @func0000000000000041(i32 %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp olt float %1, %2
   %4 = icmp eq i32 %0, 0
@@ -37,31 +50,9 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/masks.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007c(i32 %0, float %1, float %2) #0 {
+define i1 @func00000000000000ec(i32 %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp une float %1, %2
-  %4 = icmp ne i32 %0, 0
-  %5 = and i1 %4, %3
-  ret i1 %5
-}
-
-; 1 occurrences:
-; nuklear/optimized/unity.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000d1(i32 %0, float %1, float %2) #0 {
-entry:
-  %3 = fcmp uge float %1, %2
-  %4 = icmp eq i32 %0, 0
-  %5 = and i1 %4, %3
-  ret i1 %5
-}
-
-; 1 occurrences:
-; nuklear/optimized/unity.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, float %1, float %2) #0 {
-entry:
-  %3 = fcmp ogt float %1, %2
   %4 = icmp ne i32 %0, 0
   %5 = and i1 %4, %3
   ret i1 %5
@@ -90,9 +81,20 @@ entry:
 }
 
 ; 1 occurrences:
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(float %0, float %1, i32 %2) #0 {
+entry:
+  %3 = icmp eq i32 %2, 0
+  %4 = fcmp oeq float %0, %1
+  %5 = and i1 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; opencv/optimized/rlof_localflow.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0, float %1, float %2) #0 {
+define i1 @func000000000000004a(i32 %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp olt float %1, %2
   %4 = icmp sgt i32 %0, -1
@@ -103,7 +105,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/rlof_localflow.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0, float %1, float %2) #0 {
+define i1 @func0000000000000046(i32 %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp olt float %1, %2
   %4 = icmp slt i32 %0, 0

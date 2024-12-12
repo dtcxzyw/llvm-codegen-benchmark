@@ -91,6 +91,28 @@ func000000000000000a:                   # @func000000000000000a
 	vpblendmb	%xmm0, %xmm1, %xmm0 {%k1}
 	vzeroupper
 	retq
+.LCPI5_0:
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+func0000000000000014:                   # @func0000000000000014
+	vpcmpltuw	.LCPI5_0(%rip), %ymm2, %k1
+	vpblendmb	%xmm0, %xmm1, %xmm0 {%k1}
+	vzeroupper
+	retq
 func000000000000000c:                   # @func000000000000000c
 	vptestnmw	%ymm2, %ymm2, %k1
 	vmovdqu8	%xmm1, %xmm0 {%k1}

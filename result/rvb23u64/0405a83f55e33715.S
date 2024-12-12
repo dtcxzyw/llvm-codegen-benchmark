@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	sext.w	a0, a0
 	andi	a1, a1, 255
 	li	a2, -4
@@ -7,7 +7,7 @@ func0000000000000011:                   # @func0000000000000011
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	sext.w	a0, a0
 	andi	a1, a1, 255
 	li	a2, 150
@@ -15,7 +15,7 @@ func0000000000000014:                   # @func0000000000000014
 	addi	a1, a1, 50
 	sltu	a0, a0, a1
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	sext.w	a0, a0
 	andi	a1, a1, 255
 	addi	a1, a1, -10
@@ -24,7 +24,7 @@ func0000000000000016:                   # @func0000000000000016
 	addi	a1, a1, 32
 	slt	a0, a0, a1
 	ret
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	sext.w	a0, a0
 	andi	a1, a1, 255
 	addi	a1, a1, -10
@@ -33,7 +33,7 @@ func00000000000000c1:                   # @func00000000000000c1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	sext.w	a0, a0
 	andi	a1, a1, 255
 	addi	a1, a1, -4
@@ -42,7 +42,7 @@ func0000000000000018:                   # @func0000000000000018
 	addi	a1, a1, 4
 	sltu	a0, a1, a0
 	ret
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	sext.w	a0, a0
 	andi	a1, a1, 255
 	addi	a1, a1, -85
@@ -52,7 +52,14 @@ func000000000000001c:                   # @func000000000000001c
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
-func00000000000000a4:                   # @func00000000000000a4
+func0000000000000088:                   # @func0000000000000088
+	sext.w	a0, a0
+	andi	a1, a1, 255
+	sltiu	a1, a1, 31
+	addi	a1, a1, 3
+	sltu	a0, a1, a0
+	ret
+func0000000000000144:                   # @func0000000000000144
 	sext.w	a0, a0
 	sext.b	a1, a1
 	slti	a1, a1, 0
@@ -60,7 +67,7 @@ func00000000000000a4:                   # @func00000000000000a4
 	addi	a1, a1, 2
 	sltu	a0, a0, a1
 	ret
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	sext.w	a0, a0
 	andi	a1, a1, 255
 	sltiu	a1, a1, 2
@@ -69,7 +76,16 @@ func0000000000000046:                   # @func0000000000000046
 	addi	a1, a1, 16
 	slt	a0, a0, a1
 	ret
-func0000000000000081:                   # @func0000000000000081
+func0000000000000154:                   # @func0000000000000154
+	sext.w	a0, a0
+	sext.b	a1, a1
+	slti	a1, a1, 0
+	li	a2, 4
+	czero.eqz	a1, a2, a1
+	addi	a1, a1, 1
+	sltu	a0, a0, a1
+	ret
+func0000000000000101:                   # @func0000000000000101
 	sext.w	a0, a0
 	andi	a1, a1, 255
 	sltiu	a1, a1, 20
@@ -79,7 +95,23 @@ func0000000000000081:                   # @func0000000000000081
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000044:                   # @func0000000000000044
+func0000000000000034:                   # @func0000000000000034
+	sext.w	a0, a0
+	andi	a1, a1, 255
+	li	a2, 8
+	czero.eqz	a1, a2, a1
+	addi	a1, a1, 8
+	sltu	a0, a0, a1
+	ret
+func0000000000000038:                   # @func0000000000000038
+	sext.w	a0, a0
+	andi	a1, a1, 255
+	addi	a1, a1, -2
+	seqz	a1, a1
+	addi	a1, a1, 1
+	sltu	a0, a1, a0
+	ret
+func0000000000000094:                   # @func0000000000000094
 	sext.w	a0, a0
 	andi	a1, a1, 255
 	sltiu	a1, a1, 63
@@ -87,13 +119,13 @@ func0000000000000044:                   # @func0000000000000044
 	sub	a2, a2, a1
 	sltu	a0, a0, a2
 	ret
-func0000000000000066:                   # @func0000000000000066
+func00000000000000c6:                   # @func00000000000000c6
 	sext.w	a0, a0
 	bexti	a1, a1, 7
 	addi	a1, a1, 1
 	slt	a0, a0, a1
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	sext.w	a0, a0
 	andi	a1, a1, 255
 	li	a2, 10

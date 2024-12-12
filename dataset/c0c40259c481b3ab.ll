@@ -30,6 +30,18 @@ entry:
   ret i1 %5
 }
 
+; 1 occurrences:
+; ruby/optimized/array.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i32 %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 15
+  %3 = and i64 %2, 127
+  %4 = sext i32 %0 to i64
+  %5 = icmp ugt i64 %3, %4
+  ret i1 %5
+}
+
 ; 6 occurrences:
 ; jemalloc/optimized/sc.ll
 ; jemalloc/optimized/sc.pic.ll

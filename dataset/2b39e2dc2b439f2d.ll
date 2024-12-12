@@ -1,8 +1,8 @@
 
-%"struct.tbb::detail::d1::ets_base<tbb::detail::d1::ets_no_key>::slot.2521645" = type { %"struct.std::atomic.742.2521646", ptr }
-%"struct.std::atomic.742.2521646" = type { %"class.std::thread::id.2521644" }
-%"class.std::thread::id.2521644" = type { i64 }
-%struct.FSE_decode_t.3344680 = type { i16, i8, i8 }
+%"struct.tbb::detail::d1::ets_base<tbb::detail::d1::ets_no_key>::slot.2636054" = type { %"struct.std::atomic.742.2636055", ptr }
+%"struct.std::atomic.742.2636055" = type { %"class.std::thread::id.2636053" }
+%"class.std::thread::id.2636053" = type { i64 }
+%struct.FSE_decode_t.3533503 = type { i16, i8, i8 }
 
 ; 151 occurrences:
 ; cmake/optimized/zstd_decompress_block.c.ll
@@ -157,13 +157,13 @@
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 -1, %2
   %4 = xor i64 %3, -1
-  %5 = and i64 %4, %1
-  %6 = getelementptr nusw i8, ptr %0, i64 16
-  %7 = getelementptr nusw %"struct.tbb::detail::d1::ets_base<tbb::detail::d1::ets_no_key>::slot.2521645", ptr %6, i64 %5
+  %5 = and i64 %1, %4
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 16
+  %7 = getelementptr nusw nuw %"struct.tbb::detail::d1::ets_base<tbb::detail::d1::ets_no_key>::slot.2636054", ptr %6, i64 %5
   ret ptr %7
 }
 
@@ -175,21 +175,21 @@ define ptr @func0000000000000010(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 -1, %2
   %4 = xor i64 %3, -1
-  %5 = and i64 %4, %1
+  %5 = and i64 %1, %4
   %6 = getelementptr i8, ptr %0, i64 4
-  %7 = getelementptr %struct.FSE_decode_t.3344680, ptr %6, i64 %5
+  %7 = getelementptr %struct.FSE_decode_t.3533503, ptr %6, i64 %5
   ret ptr %7
 }
 
 ; 1 occurrences:
 ; cpython/optimized/dictobject.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 -1, %2
   %4 = xor i64 %3, -1
-  %5 = and i64 %4, %1
-  %6 = getelementptr nusw i8, ptr %0, i64 32
+  %5 = and i64 %1, %4
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 32
   %7 = getelementptr i32, ptr %6, i64 %5
   ret ptr %7
 }

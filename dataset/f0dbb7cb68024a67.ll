@@ -1,6 +1,5 @@
 
-; 9 occurrences:
-; darktable/optimized/introspection_flip.c.ll
+; 8 occurrences:
 ; git/optimized/unpack-trees.ll
 ; llvm/optimized/CallGraphUpdater.cpp.ll
 ; llvm/optimized/ExtractGV.cpp.ll
@@ -25,7 +24,7 @@ entry:
 ; libquic/optimized/dtoa.cc.ll
 ; php/optimized/zend_strtod.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2146435072
   %3 = icmp eq i32 %2, 0

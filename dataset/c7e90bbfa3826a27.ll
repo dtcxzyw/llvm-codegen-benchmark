@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 20 occurrences:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; llvm/optimized/APFixedPoint.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
@@ -14,6 +14,8 @@
 ; luau/optimized/IrBuilder.cpp.ll
 ; luau/optimized/IrTranslation.cpp.ll
 ; luau/optimized/lnumprint.cpp.ll
+; lvgl/optimized/lv_canvas.ll
+; lvgl/optimized/lv_draw_sw_line.ll
 ; miniaudio/optimized/unity.c.ll
 ; openmpi/optimized/osc_rdma_dynamic.ll
 ; raylib/optimized/raudio.c.ll
@@ -27,13 +29,14 @@ entry:
   ret i32 %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; abc/optimized/cuddInteract.c.ll
 ; darktable/optimized/amaze.cc.ll
 ; linux/optimized/i9xx_plane.ll
 ; linux/optimized/tcp_ipv4.ll
 ; luau/optimized/BytecodeBuilder.cpp.ll
 ; luau/optimized/IrTranslation.cpp.ll
+; lvgl/optimized/lv_slider.ll
 ; openjdk/optimized/instanceMirrorKlass.ll
 ; openspiel/optimized/LaterTricks.cpp.ll
 ; Function Attrs: nounwind
@@ -45,7 +48,8 @@ entry:
   ret i32 %4
 }
 
-; 172 occurrences:
+; 173 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll

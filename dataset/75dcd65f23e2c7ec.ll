@@ -1,5 +1,5 @@
 
-; 43 occurrences:
+; 42 occurrences:
 ; arrow/optimized/int_util.cc.ll
 ; clamav/optimized/bytecode.c.ll
 ; clamav/optimized/kwajd.c.ll
@@ -18,11 +18,10 @@
 ; linux/optimized/libata-core.ll
 ; linux/optimized/namei.ll
 ; linux/optimized/sock_diag.ll
-; linux/optimized/tbxfroot.ll
 ; llvm/optimized/Archive.cpp.ll
 ; llvm/optimized/DbiStream.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; openjdk/optimized/classFileParser.ll
 ; openjdk/optimized/sharedRuntime_x86_64.ll
 ; openjdk/optimized/stackMapTable.ll
@@ -31,7 +30,6 @@
 ; postgres/optimized/blkreftable_shlib.ll
 ; postgres/optimized/blkreftable_srv.ll
 ; postgres/optimized/heapam.ll
-; postgres/optimized/heapdesc.ll
 ; qemu/optimized/hw_net_e1000e_core.c.ll
 ; qemu/optimized/hw_net_igb_core.c.ll
 ; qemu/optimized/hw_pci_msix.c.ll
@@ -43,6 +41,7 @@
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-dof.c.ll
 ; wireshark/optimized/packet-tds.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i16 %0) #0 {
 entry:
@@ -76,9 +75,8 @@ entry:
   ret i64 %3
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; freetype/optimized/truetype.c.ll
-; linux/optimized/hdac_controller.ll
 ; node/optimized/simdutf.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i16 %0) #0 {

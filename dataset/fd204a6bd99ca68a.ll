@@ -25,9 +25,20 @@ entry:
 }
 
 ; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_mask.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000027(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub nsw i32 %1, %2
+  %.not = icmp sgt i32 %3, %0
+  %4 = select i1 %.not, i32 0, i32 2
+  ret i32 %4
+}
+
+; 1 occurrences:
 ; stb/optimized/stb_dxt.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = icmp slt i32 %3, %0

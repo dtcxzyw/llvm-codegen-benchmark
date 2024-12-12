@@ -11,6 +11,20 @@ func000000000000000e:                   # @func000000000000000e
 	orq	%rsi, %rax
 	shrq	$32, %rax
 	retq
+func000000000000003a:                   # @func000000000000003a
+	movl	%esi, %eax
+	shlq	$8, %rax
+	shlq	$40, %rdi
+	orq	%rdi, %rax
+	shrq	$32, %rax
+	retq
+func000000000000007a:                   # @func000000000000007a
+	movq	%rdi, %rax
+	shlq	$40, %rsi
+	shlq	$8, %rax
+	orq	%rsi, %rax
+	shrq	$32, %rax
+	retq
 func000000000000003e:                   # @func000000000000003e
 	movl	%esi, %eax
 	shlq	$12, %rax

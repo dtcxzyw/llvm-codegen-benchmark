@@ -34,10 +34,10 @@
 func0000000000000000:                   # @func0000000000000000
 	vpshufb	.LCPI0_0(%rip), %ymm1, %ymm1    # ymm1 = ymm1[1],zero,zero,zero,ymm1[5],zero,zero,zero,ymm1[9],zero,zero,zero,ymm1[13],zero,zero,zero,ymm1[17],zero,zero,zero,ymm1[21],zero,zero,zero,ymm1[25],zero,zero,zero,ymm1[29],zero,zero,zero
 	vcvtdq2ps	%ymm1, %ymm1
-	vmulps	%ymm0, %ymm1, %ymm0
+	vmulps	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000004:                   # @func0000000000000004
 	vpsrld	$16, %ymm1, %ymm1
 	vcvtdq2ps	%ymm1, %ymm1
-	vmulps	%ymm0, %ymm1, %ymm0
+	vmulps	%ymm1, %ymm0, %ymm0
 	retq

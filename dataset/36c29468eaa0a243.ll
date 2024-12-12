@@ -1,5 +1,5 @@
 
-; 158 occurrences:
+; 157 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
@@ -83,12 +83,12 @@
 ; llvm/optimized/KnownBits.cpp.ll
 ; llvm/optimized/NamedStreamMap.cpp.ll
 ; llvm/optimized/PPExpressions.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVMatInt.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
+; lvgl/optimized/lv_buttonmatrix.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/trackmode.cpp.ll
 ; minetest/optimized/craftdef.cpp.ll
@@ -129,7 +129,6 @@
 ; postgres/optimized/opclasscmds.ll
 ; postgres/optimized/relfilenumbermap.ll
 ; postgres/optimized/tablecmds.ll
-; postgres/optimized/xlogprefetcher.ll
 ; qemu/optimized/block_qcow2-cache.c.ll
 ; qemu/optimized/hw_scsi_megasas.c.ll
 ; qemu/optimized/hw_virtio_virtio.c.ll
@@ -166,32 +165,15 @@ entry:
   ret i32 %3
 }
 
-; 21 occurrences:
-; cmake/optimized/zstd_double_fast.c.ll
-; cmake/optimized/zstd_fast.c.ll
-; cmake/optimized/zstd_lazy.c.ll
-; hyperscan/optimized/repeat.c.ll
-; linux/optimized/filter.ll
+; 4 occurrences:
 ; linux/optimized/hw-me.ll
-; linux/optimized/ialloc.ll
-; linux/optimized/nf_conntrack_core.ll
-; linux/optimized/virtio_net.ll
-; llvm/optimized/MCAssembler.cpp.ll
 ; openssl/optimized/libcrypto-lib-bio_b64.ll
 ; openssl/optimized/libcrypto-shlib-bio_b64.ll
 ; regex-rs/optimized/43rm3k0zg7aeemwj.ll
-; slurm/optimized/step_mgr.ll
-; sqlite/optimized/sqlite3.ll
-; wireshark/optimized/packet-opensafety.c.ll
-; wolfssl/optimized/asn.c.ll
-; yosys/optimized/fstapi.ll
-; zstd/optimized/zstd_double_fast.c.ll
-; zstd/optimized/zstd_fast.c.ll
-; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %0, %1
+  %2 = icmp samesign ugt i32 %0, %1
   %3 = select i1 %2, i32 1, i32 %0
   ret i32 %3
 }
@@ -222,7 +204,7 @@ entry:
   ret i32 %3
 }
 
-; 9 occurrences:
+; 11 occurrences:
 ; clamav/optimized/7zIn.c.ll
 ; glslang/optimized/SpvBuilder.cpp.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
@@ -232,6 +214,8 @@ entry:
 ; typst-rs/optimized/al9nyr8ju52xbc2.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; wireshark/optimized/packet-aeron.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000009(i32 %0, i32 %1) #0 {
 entry:
@@ -284,6 +268,32 @@ define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %0, %1
   %3 = select i1 %2, i32 -1, i32 %0
+  ret i32 %3
+}
+
+; 17 occurrences:
+; cmake/optimized/zstd_double_fast.c.ll
+; cmake/optimized/zstd_fast.c.ll
+; cmake/optimized/zstd_lazy.c.ll
+; hyperscan/optimized/repeat.c.ll
+; linux/optimized/filter.ll
+; linux/optimized/ialloc.ll
+; linux/optimized/nf_conntrack_core.ll
+; linux/optimized/virtio_net.ll
+; llvm/optimized/MCAssembler.cpp.ll
+; slurm/optimized/step_mgr.ll
+; sqlite/optimized/sqlite3.ll
+; wireshark/optimized/packet-opensafety.c.ll
+; wolfssl/optimized/asn.c.ll
+; yosys/optimized/fstapi.ll
+; zstd/optimized/zstd_double_fast.c.ll
+; zstd/optimized/zstd_fast.c.ll
+; zstd/optimized/zstd_lazy.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp ugt i32 %0, %1
+  %3 = select i1 %2, i32 0, i32 %0
   ret i32 %3
 }
 

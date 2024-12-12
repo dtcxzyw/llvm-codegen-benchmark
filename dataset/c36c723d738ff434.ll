@@ -1,7 +1,8 @@
 
-; 83 occurrences:
+; 88 occurrences:
 ; assimp/optimized/IFCLoader.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
+; boost/optimized/math_normalize_spheroidal.ll
 ; bullet3/optimized/b3FixedConstraint.ll
 ; bullet3/optimized/b3Generic6DofConstraint.ll
 ; bullet3/optimized/btCollisionWorld.ll
@@ -65,7 +66,6 @@
 ; opencv/optimized/prior_box_layer.cpp.ll
 ; opencv/optimized/qualitybrisque.cpp.ll
 ; opencv/optimized/tflite_importer.cpp.ll
-; openexr/optimized/base.c.ll
 ; openjdk/optimized/cmsopt.ll
 ; openusd/optimized/flatNormals.cpp.ll
 ; openusd/optimized/smoothNormals.cpp.ll
@@ -83,6 +83,11 @@
 ; typst-rs/optimized/3z60jkym58xbhjyi.ll
 ; typst-rs/optimized/4sdr2z2pqpqxs72u.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; zed-rs/optimized/7z2xfgroq6luy23s4a62wgt90.ll
+; zed-rs/optimized/ca5hx4nwyb2mnunexsl1xqea9.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000002(i1 %0, float %1) #0 {
 entry:
@@ -92,7 +97,7 @@ entry:
   ret float %4
 }
 
-; 90 occurrences:
+; 91 occurrences:
 ; assimp/optimized/CalcTangentsProcess.cpp.ll
 ; assimp/optimized/GenVertexNormalsProcess.cpp.ll
 ; bullet3/optimized/btRigidBody.ll
@@ -183,6 +188,7 @@ entry:
 ; recastnavigation/optimized/main.cpp.ll
 ; stb/optimized/stb_dxt.c.ll
 ; stb/optimized/stb_hexwave.c.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define float @func0000000000000004(i1 %0, float %1) #0 {
 entry:

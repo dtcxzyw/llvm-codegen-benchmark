@@ -14,7 +14,7 @@ entry:
   %3 = xor i1 %2, true
   %4 = icmp ne i32 %1, 0
   %5 = and i1 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -47,7 +47,7 @@ entry:
   %3 = xor i1 %2, true
   %4 = icmp slt i32 %1, 5
   %5 = and i1 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

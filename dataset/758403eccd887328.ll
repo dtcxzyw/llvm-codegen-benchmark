@@ -1,26 +1,26 @@
 
-%"struct.openvdb::v11_0::tools::FastSweeping<openvdb::v11_0::Grid<openvdb::v11_0::tree::Tree<openvdb::v11_0::tree::RootNode<openvdb::v11_0::tree::InternalNode<openvdb::v11_0::tree::InternalNode<openvdb::v11_0::tree::LeafNode<float, 3>, 4>, 5>>>>>::SweepingKernel.2599931" = type { ptr, %"class.std::map.1366.2599932", %"class.std::vector.481.2599933" }
-%"class.std::map.1366.2599932" = type { %"class.std::_Rb_tree.1367.2599934" }
-%"class.std::_Rb_tree.1367.2599934" = type { %"struct.std::_Rb_tree<long, std::pair<const long, std::deque<std::pair<unsigned long, std::unique_ptr<openvdb::v11_0::util::NodeMask<3>>>>>, std::_Select1st<std::pair<const long, std::deque<std::pair<unsigned long, std::unique_ptr<openvdb::v11_0::util::NodeMask<3>>>>>>, std::less<long>>::_Rb_tree_impl.2599935" }
-%"struct.std::_Rb_tree<long, std::pair<const long, std::deque<std::pair<unsigned long, std::unique_ptr<openvdb::v11_0::util::NodeMask<3>>>>>, std::_Select1st<std::pair<const long, std::deque<std::pair<unsigned long, std::unique_ptr<openvdb::v11_0::util::NodeMask<3>>>>>>, std::less<long>>::_Rb_tree_impl.2599935" = type { %"struct.std::_Rb_tree_key_compare.1371.2599936", %"struct.std::_Rb_tree_header.2599140" }
-%"struct.std::_Rb_tree_key_compare.1371.2599936" = type { %"struct.std::less.1372.2599937" }
-%"struct.std::less.1372.2599937" = type { i8 }
-%"struct.std::_Rb_tree_header.2599140" = type { %"struct.std::_Rb_tree_node_base.2599142", i64 }
-%"struct.std::_Rb_tree_node_base.2599142" = type { i32, ptr, ptr, ptr }
-%"class.std::vector.481.2599933" = type { %"struct.std::_Vector_base.482.2599938" }
-%"struct.std::_Vector_base.482.2599938" = type { %"struct.std::_Vector_base<long, std::allocator<long>>::_Vector_impl.2599939" }
-%"struct.std::_Vector_base<long, std::allocator<long>>::_Vector_impl.2599939" = type { %"struct.std::_Vector_base<long, std::allocator<long>>::_Vector_impl_data.2599940" }
-%"struct.std::_Vector_base<long, std::allocator<long>>::_Vector_impl_data.2599940" = type { ptr, ptr, ptr }
-%"struct.ue2::(anonymous namespace)::RegionInfo.3669352" = type <{ i32, [4 x i8], %"class.std::deque.14.3669353", %"class.ue2::CharReach.3669354", %"class.ue2::depth.3669355", %"class.ue2::depth.3669355", i8, [7 x i8] }>
-%"class.std::deque.14.3669353" = type { %"class.std::_Deque_base.15.3669356" }
-%"class.std::_Deque_base.15.3669356" = type { %"struct.std::_Deque_base<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::NGHolder, ue2::NFAGraphVertexProps, ue2::NFAGraphEdgeProps>>, std::allocator<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::NGHolder, ue2::NFAGraphVertexProps, ue2::NFAGraphEdgeProps>>>>::_Deque_impl.3669357" }
-%"struct.std::_Deque_base<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::NGHolder, ue2::NFAGraphVertexProps, ue2::NFAGraphEdgeProps>>, std::allocator<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::NGHolder, ue2::NFAGraphVertexProps, ue2::NFAGraphEdgeProps>>>>::_Deque_impl.3669357" = type { %"struct.std::_Deque_base<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::NGHolder, ue2::NFAGraphVertexProps, ue2::NFAGraphEdgeProps>>, std::allocator<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::NGHolder, ue2::NFAGraphVertexProps, ue2::NFAGraphEdgeProps>>>>::_Deque_impl_data.3669358" }
-%"struct.std::_Deque_base<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::NGHolder, ue2::NFAGraphVertexProps, ue2::NFAGraphEdgeProps>>, std::allocator<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::NGHolder, ue2::NFAGraphVertexProps, ue2::NFAGraphEdgeProps>>>>::_Deque_impl_data.3669358" = type { ptr, i64, %"struct.std::_Deque_iterator.19.3669359", %"struct.std::_Deque_iterator.19.3669359" }
-%"struct.std::_Deque_iterator.19.3669359" = type { ptr, ptr, ptr, ptr }
-%"class.ue2::CharReach.3669354" = type { %"class.ue2::bitfield.3669360" }
-%"class.ue2::bitfield.3669360" = type { %"struct.std::array.3669361" }
-%"struct.std::array.3669361" = type { [4 x i64] }
-%"class.ue2::depth.3669355" = type { i32 }
+%"struct.openvdb::v11_0::tools::FastSweeping<openvdb::v11_0::Grid<openvdb::v11_0::tree::Tree<openvdb::v11_0::tree::RootNode<openvdb::v11_0::tree::InternalNode<openvdb::v11_0::tree::InternalNode<openvdb::v11_0::tree::LeafNode<float, 3>, 4>, 5>>>>>::SweepingKernel.2713388" = type { ptr, %"class.std::map.1366.2713389", %"class.std::vector.481.2713390" }
+%"class.std::map.1366.2713389" = type { %"class.std::_Rb_tree.1367.2713391" }
+%"class.std::_Rb_tree.1367.2713391" = type { %"struct.std::_Rb_tree<long, std::pair<const long, std::deque<std::pair<unsigned long, std::unique_ptr<openvdb::v11_0::util::NodeMask<3>>>>>, std::_Select1st<std::pair<const long, std::deque<std::pair<unsigned long, std::unique_ptr<openvdb::v11_0::util::NodeMask<3>>>>>>, std::less<long>>::_Rb_tree_impl.2713392" }
+%"struct.std::_Rb_tree<long, std::pair<const long, std::deque<std::pair<unsigned long, std::unique_ptr<openvdb::v11_0::util::NodeMask<3>>>>>, std::_Select1st<std::pair<const long, std::deque<std::pair<unsigned long, std::unique_ptr<openvdb::v11_0::util::NodeMask<3>>>>>>, std::less<long>>::_Rb_tree_impl.2713392" = type { %"struct.std::_Rb_tree_key_compare.1371.2713393", %"struct.std::_Rb_tree_header.2712597" }
+%"struct.std::_Rb_tree_key_compare.1371.2713393" = type { %"struct.std::less.1372.2713394" }
+%"struct.std::less.1372.2713394" = type { i8 }
+%"struct.std::_Rb_tree_header.2712597" = type { %"struct.std::_Rb_tree_node_base.2712599", i64 }
+%"struct.std::_Rb_tree_node_base.2712599" = type { i32, ptr, ptr, ptr }
+%"class.std::vector.481.2713390" = type { %"struct.std::_Vector_base.482.2713395" }
+%"struct.std::_Vector_base.482.2713395" = type { %"struct.std::_Vector_base<long, std::allocator<long>>::_Vector_impl.2713396" }
+%"struct.std::_Vector_base<long, std::allocator<long>>::_Vector_impl.2713396" = type { %"struct.std::_Vector_base<long, std::allocator<long>>::_Vector_impl_data.2713397" }
+%"struct.std::_Vector_base<long, std::allocator<long>>::_Vector_impl_data.2713397" = type { ptr, ptr, ptr }
+%"struct.ue2::(anonymous namespace)::RegionInfo.3848972" = type <{ i32, [4 x i8], %"class.std::deque.14.3848973", %"class.ue2::CharReach.3848974", %"class.ue2::depth.3848975", %"class.ue2::depth.3848975", i8, [7 x i8] }>
+%"class.std::deque.14.3848973" = type { %"class.std::_Deque_base.15.3848976" }
+%"class.std::_Deque_base.15.3848976" = type { %"struct.std::_Deque_base<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::NGHolder, ue2::NFAGraphVertexProps, ue2::NFAGraphEdgeProps>>, std::allocator<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::NGHolder, ue2::NFAGraphVertexProps, ue2::NFAGraphEdgeProps>>>>::_Deque_impl.3848977" }
+%"struct.std::_Deque_base<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::NGHolder, ue2::NFAGraphVertexProps, ue2::NFAGraphEdgeProps>>, std::allocator<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::NGHolder, ue2::NFAGraphVertexProps, ue2::NFAGraphEdgeProps>>>>::_Deque_impl.3848977" = type { %"struct.std::_Deque_base<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::NGHolder, ue2::NFAGraphVertexProps, ue2::NFAGraphEdgeProps>>, std::allocator<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::NGHolder, ue2::NFAGraphVertexProps, ue2::NFAGraphEdgeProps>>>>::_Deque_impl_data.3848978" }
+%"struct.std::_Deque_base<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::NGHolder, ue2::NFAGraphVertexProps, ue2::NFAGraphEdgeProps>>, std::allocator<ue2::graph_detail::vertex_descriptor<ue2::ue2_graph<ue2::NGHolder, ue2::NFAGraphVertexProps, ue2::NFAGraphEdgeProps>>>>::_Deque_impl_data.3848978" = type { ptr, i64, %"struct.std::_Deque_iterator.19.3848979", %"struct.std::_Deque_iterator.19.3848979" }
+%"struct.std::_Deque_iterator.19.3848979" = type { ptr, ptr, ptr, ptr }
+%"class.ue2::CharReach.3848974" = type { %"class.ue2::bitfield.3848980" }
+%"class.ue2::bitfield.3848980" = type { %"struct.std::array.3848981" }
+%"struct.std::array.3848981" = type { [4 x i64] }
+%"class.ue2::depth.3848975" = type { i32 }
 
 ; 1 occurrences:
 ; openvdb/optimized/FastSweeping.cc.ll
@@ -29,7 +29,7 @@ define ptr @func0000000000000050(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, -480
   %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr %"struct.openvdb::v11_0::tools::FastSweeping<openvdb::v11_0::Grid<openvdb::v11_0::tree::Tree<openvdb::v11_0::tree::RootNode<openvdb::v11_0::tree::InternalNode<openvdb::v11_0::tree::InternalNode<openvdb::v11_0::tree::LeafNode<float, 3>, 4>, 5>>>>>::SweepingKernel.2599931", ptr %4, i64 %1
+  %5 = getelementptr %"struct.openvdb::v11_0::tools::FastSweeping<openvdb::v11_0::Grid<openvdb::v11_0::tree::Tree<openvdb::v11_0::tree::RootNode<openvdb::v11_0::tree::InternalNode<openvdb::v11_0::tree::InternalNode<openvdb::v11_0::tree::LeafNode<float, 3>, 4>, 5>>>>>::SweepingKernel.2713388", ptr %4, i64 %1
   %6 = getelementptr i8, ptr %5, i64 80
   ret ptr %6
 }
@@ -72,6 +72,18 @@ entry:
 }
 
 ; 1 occurrences:
+; darktable/optimized/introspection_demosaic.c.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000ff(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul nuw nsw i64 %2, 122
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 2
+  ret ptr %6
+}
+
+; 1 occurrences:
 ; gromacs/optimized/boxdeformation.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func00000000000000d0(ptr %0, i64 %1, i64 %2) #0 {
@@ -101,10 +113,10 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/epnp.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func00000000000000bf(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = mul i64 %2, 192
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %3 = mul nuw i64 %2, 192
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = getelementptr double, ptr %4, i64 %1
   %6 = getelementptr i8, ptr %5, i64 8
   ret ptr %6
@@ -130,7 +142,7 @@ define ptr @func0000000000000010(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, -408
   %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr %"struct.ue2::(anonymous namespace)::RegionInfo.3669352", ptr %4, i64 %1
+  %5 = getelementptr %"struct.ue2::(anonymous namespace)::RegionInfo.3848972", ptr %4, i64 %1
   %6 = getelementptr i8, ptr %5, i64 -136
   ret ptr %6
 }

@@ -1,10 +1,11 @@
 func0000000000000008:                   # @func0000000000000008
-	addl	$-237, %esi
-	cmpw	$4, %si
+	addl	$-2100, %esi                    # imm = 0xF7CC
+	movzwl	%si, %eax
+	cmpl	$900, %eax                      # imm = 0x384
 	setb	%al
 	orb	%dil, %al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	addl	$-43, %esi
 	cmpw	$10, %si
 	setb	%al
@@ -22,12 +23,12 @@ func0000000000000002:                   # @func0000000000000002
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	cmpw	$4, %si
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000030:                   # @func0000000000000030
+func0000000000000050:                   # @func0000000000000050
 	addl	$-6, %esi
 	cmpw	$-3, %si
 	setb	%al

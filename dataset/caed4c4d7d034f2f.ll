@@ -17,10 +17,10 @@
 ; wireshark/optimized/packet-camel.c.ll
 ; wireshark/optimized/packet-isup.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000014(i8 %0, i32 %1, i8 %2) #0 {
+define i8 @func0000000000000034(i8 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = or disjoint i8 %2, 48
-  %4 = icmp ult i32 %1, 10
+  %4 = icmp samesign ult i32 %1, 10
   %5 = select i1 %4, i8 %3, i8 %0
   ret i8 %5
 }
@@ -40,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/yenta_socket.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000011(i8 %0, i32 %1, i8 %2) #0 {
+define i8 @func0000000000000021(i8 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = or disjoint i8 %2, 8
   %4 = icmp eq i32 %1, 0

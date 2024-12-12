@@ -17,7 +17,6 @@
 ; linux/optimized/ethtool.ll
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/ipv6_sockglue.ll
-; linux/optimized/mii.ll
 ; linux/optimized/phy_device.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/trace_output.ll
@@ -44,8 +43,9 @@
 ; ring-rs/optimized/1vabw27ldssjsz66.ll
 ; soc-simulator/optimized/sim_mycpu.ll
 ; sqlite/optimized/sqlite3.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i32 3, i32 2

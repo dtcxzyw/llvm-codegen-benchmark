@@ -33,6 +33,28 @@ func0000000000000008:                   # @func0000000000000008
 	movl	$8, %eax
 	cmovel	%ecx, %eax
 	retq
+func000000000000000a:                   # @func000000000000000a
+	notl	%edx
+	shrl	$31, %edx
+	xorl	$5, %edx
+	testb	$1, %sil
+	movl	$6, %ecx
+	cmovel	%edx, %ecx
+	testb	$1, %dil
+	movl	$5, %eax
+	cmovel	%ecx, %eax
+	retq
+func0000000000000018:                   # @func0000000000000018
+	cmpl	$10, %edx
+	movl	$3, %eax
+	sbbl	$-1, %eax
+	testb	$1, %sil
+	movl	$5, %ecx
+	cmovel	%eax, %ecx
+	testb	$1, %dil
+	movl	$6, %eax
+	cmovel	%ecx, %eax
+	retq
 func0000000000000004:                   # @func0000000000000004
 	xorl	%eax, %eax
 	cmpl	$17, %edx
@@ -45,15 +67,14 @@ func0000000000000004:                   # @func0000000000000004
 	movl	$1, %eax
 	cmovel	%ecx, %eax
 	retq
-func000000000000000a:                   # @func000000000000000a
-	cmpl	$2, %edx
-	movl	$2648, %eax                     # imm = 0xA58
-	movl	$2089, %ecx                     # imm = 0x829
-	cmovgel	%eax, %ecx
+func0000000000000014:                   # @func0000000000000014
+	cmpl	$65536, %edx                    # imm = 0x10000
+	movl	$4, %eax
+	sbbl	$0, %eax
 	testb	$1, %sil
-	movl	$13832, %edx                    # imm = 0x3608
-	cmovel	%ecx, %edx
+	movl	$2, %ecx
+	cmovel	%eax, %ecx
 	testb	$1, %dil
-	movl	$13821, %eax                    # imm = 0x35FD
-	cmovel	%edx, %eax
+	movl	$1, %eax
+	cmovel	%ecx, %eax
 	retq

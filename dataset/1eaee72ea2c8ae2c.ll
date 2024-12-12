@@ -4,7 +4,7 @@
 ; openjdk/optimized/shenandoahFreeSet.ll
 ; openjdk/optimized/shenandoahSimpleBitMap.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 63
   %3 = icmp eq i64 %2, 63
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaCodeComplete.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4
   %3 = icmp eq i64 %2, 0
@@ -30,7 +30,7 @@ entry:
 ; tokio-rs/optimized/46apu3hqx0w07xoc.ll
 ; tokio-rs/optimized/5cdni0zdopovrkgi.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 32767
   %3 = icmp eq i64 %2, 32767

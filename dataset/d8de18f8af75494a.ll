@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/memory_libmap.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000004a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = ashr i32 %3, %0
@@ -26,7 +26,7 @@ entry:
 ; libjpeg-turbo/optimized/jcphuff.c.ll
 ; openusd/optimized/decodeframe.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = ashr i32 %3, %0

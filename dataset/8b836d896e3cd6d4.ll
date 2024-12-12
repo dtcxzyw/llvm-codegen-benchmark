@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; eastl/optimized/EADateTime.cpp.ll
 ; gromacs/optimized/dasum.cpp.ll
 ; gromacs/optimized/ddot.cpp.ll
@@ -9,10 +9,11 @@
 ; linux/optimized/igmp.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
 ; linux/optimized/tdls.ll
+; lvgl/optimized/lv_calendar.ll
+; lvgl/optimized/lv_refr.ll
 ; lz4/optimized/lz4.c.ll
 ; miniaudio/optimized/unity.c.ll
 ; openusd/optimized/lz4.cpp.ll
-; rocksdb/optimized/testutil.cc.ll
 ; ruby/optimized/time.ll
 ; sqlite/optimized/sqlite3.ll
 ; yosys/optimized/lz4.ll

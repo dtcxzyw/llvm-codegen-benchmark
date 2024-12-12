@@ -10,6 +10,10 @@ func000000000000002c:                   # @func000000000000002c
 	add	a0, a0, a3
 	srl	a0, a0, a1
 	ret
+func0000000000000020:                   # @func0000000000000020
+	add	a0, a0, a3
+	srl	a0, a0, a1
+	ret
 func0000000000000038:                   # @func0000000000000038
 	add	a0, a0, a3
 	srl	a0, a0, a1

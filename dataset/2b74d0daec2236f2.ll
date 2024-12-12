@@ -1,5 +1,5 @@
 
-; 37 occurrences:
+; 36 occurrences:
 ; nlohmann_json/optimized/unit-deserialization.cpp.ll
 ; nlohmann_json/optimized/unit-wstring.cpp.ll
 ; ocio/optimized/CPUProcessor.cpp.ll
@@ -17,7 +17,6 @@
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Filter.cc.ll
 ; openvdb/optimized/FindActiveValues.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFilter.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetMeasure.cc.ll

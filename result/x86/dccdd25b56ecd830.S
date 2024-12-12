@@ -3,7 +3,7 @@ func000000000000000a:                   # @func000000000000000a
 	testl	%edi, %edi
 	setg	%al
 	retq
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	imull	%esi, %edi
 	testl	%edi, %edi
 	setg	%al
@@ -13,12 +13,12 @@ func0000000000000001:                   # @func0000000000000001
 	testl	%edi, %edi
 	sete	%al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	imull	%esi, %edi
 	testl	%edi, %edi
 	sete	%al
 	retq
-func00000000000000ca:                   # @func00000000000000ca
+func000000000000018a:                   # @func000000000000018a
 	imull	%esi, %edi
 	testl	%edi, %edi
 	setg	%al
@@ -33,12 +33,12 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	$5, %edi
 	setae	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	imull	%esi, %edi
 	testl	%edi, %edi
 	sete	%al
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	imull	%esi, %edi
 	testl	$-134217728, %edi               # imm = 0xF8000000
 	setne	%al

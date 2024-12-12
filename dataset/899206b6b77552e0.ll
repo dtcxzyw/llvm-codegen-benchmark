@@ -26,13 +26,12 @@ entry:
   ret i32 %3
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; c3c/optimized/llvm_codegen_expr.c.ll
 ; c3c/optimized/llvm_codegen_function.c.ll
 ; c3c/optimized/sema_expr.c.ll
 ; glslang/optimized/SpvPostProcess.cpp.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
-; lief/optimized/constant_time.c.ll
 ; linux/optimized/generic.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; softposit-rs/optimized/279qzdp4rwsfn4n0.ll

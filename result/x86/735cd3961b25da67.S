@@ -23,3 +23,11 @@ func0000000000000005:                   # @func0000000000000005
 	cmovneq	%rdx, %rax
 	andq	%rcx, %rax
 	retq
+func000000000000000f:                   # @func000000000000000f
+	leaq	12(%rdx,%rdi), %rcx
+	testb	$1, %sil
+	movq	$-8, %rdx
+	movq	$-64, %rax
+	cmovneq	%rdx, %rax
+	andq	%rcx, %rax
+	retq

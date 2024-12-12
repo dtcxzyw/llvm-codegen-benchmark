@@ -12,7 +12,7 @@ define i1 @func0000000000000001(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i8
   %3 = and i8 %2, 31
-  %4 = icmp eq i8 %3, %0
+  %4 = icmp eq i8 %0, %3
   ret i1 %4
 }
 
@@ -23,11 +23,11 @@ entry:
 ; openvdb/optimized/ValueTransformer.cc.ll
 ; verilator/optimized/V3SplitVar.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000014(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i8
   %3 = and i8 %2, 1
-  %4 = icmp ugt i8 %3, %0
+  %4 = icmp samesign ult i8 %0, %3
   ret i1 %4
 }
 

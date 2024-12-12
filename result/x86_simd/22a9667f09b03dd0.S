@@ -2,7 +2,7 @@
 	.quad	100                             # 0x64
 .LCPI0_1:
 	.quad	50                              # 0x32
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	vpmullq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrq	$1, %xmm2, %rcx
@@ -37,7 +37,7 @@ func0000000000000026:                   # @func0000000000000026
 	.quad	100                             # 0x64
 .LCPI1_1:
 	.quad	90                              # 0x5a
-func0000000000000028:                   # @func0000000000000028
+func0000000000000058:                   # @func0000000000000058
 	vpmullq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrq	$1, %xmm2, %rcx
@@ -107,7 +107,7 @@ func0000000000000006:                   # @func0000000000000006
 	.quad	100                             # 0x64
 .LCPI3_1:
 	.quad	24999                           # 0x61a7
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vpmullq	.LCPI3_0(%rip){1to4}, %ymm1, %ymm1
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrq	$1, %xmm2, %rcx
@@ -177,7 +177,7 @@ func0000000000000004:                   # @func0000000000000004
 	.quad	100                             # 0x64
 .LCPI5_1:
 	.quad	9                               # 0x9
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	vpmullq	.LCPI5_0(%rip){1to4}, %ymm1, %ymm1
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrq	$1, %xmm2, %rcx

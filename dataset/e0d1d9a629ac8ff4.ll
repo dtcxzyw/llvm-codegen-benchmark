@@ -1,12 +1,12 @@
 
-%"class.WasmEdge::Variant.2650756" = type { %"union.WasmEdge::VariadicUnion.2650757" }
-%"union.WasmEdge::VariadicUnion.2650757" = type { %"union.WasmEdge::VariadicUnion.37.2650758" }
-%"union.WasmEdge::VariadicUnion.37.2650758" = type { %"union.WasmEdge::VariadicUnion.38.2650759" }
-%"union.WasmEdge::VariadicUnion.38.2650759" = type { %"union.WasmEdge::VariadicUnion.39.2650760" }
-%"union.WasmEdge::VariadicUnion.39.2650760" = type { %"union.WasmEdge::VariadicUnion.40.2650761" }
-%"union.WasmEdge::VariadicUnion.40.2650761" = type { %"union.WasmEdge::VariadicUnion.41.2650762" }
-%"union.WasmEdge::VariadicUnion.41.2650762" = type { %"union.WasmEdge::VariadicUnion.42.2650763" }
-%"union.WasmEdge::VariadicUnion.42.2650763" = type { i128 }
+%"class.WasmEdge::Variant.2764046" = type { %"union.WasmEdge::VariadicUnion.2764047" }
+%"union.WasmEdge::VariadicUnion.2764047" = type { %"union.WasmEdge::VariadicUnion.37.2764048" }
+%"union.WasmEdge::VariadicUnion.37.2764048" = type { %"union.WasmEdge::VariadicUnion.38.2764049" }
+%"union.WasmEdge::VariadicUnion.38.2764049" = type { %"union.WasmEdge::VariadicUnion.39.2764050" }
+%"union.WasmEdge::VariadicUnion.39.2764050" = type { %"union.WasmEdge::VariadicUnion.40.2764051" }
+%"union.WasmEdge::VariadicUnion.40.2764051" = type { %"union.WasmEdge::VariadicUnion.41.2764052" }
+%"union.WasmEdge::VariadicUnion.41.2764052" = type { %"union.WasmEdge::VariadicUnion.42.2764053" }
+%"union.WasmEdge::VariadicUnion.42.2764053" = type { i128 }
 
 ; 15 occurrences:
 ; clamav/optimized/upack.c.ll
@@ -29,13 +29,14 @@ define i64 @func0000000000000018(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %"class.WasmEdge::Variant.2650756", ptr %1, i64 %4
+  %5 = getelementptr nusw %"class.WasmEdge::Variant.2764046", ptr %1, i64 %4
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %6, %0
   ret i64 %7
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/area.ll
 ; gromacs/optimized/muParserBytecode.cpp.ll
 ; llvm/optimized/UDTLayout.cpp.ll
 ; Function Attrs: nounwind
@@ -43,7 +44,7 @@ define i64 @func0000000000000058(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw i64, ptr %1, i64 %4
+  %5 = getelementptr nusw i32, ptr %1, i64 %4
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %6, %0
   ret i64 %7

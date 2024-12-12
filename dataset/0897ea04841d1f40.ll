@@ -1,5 +1,5 @@
 
-%"class.irr::video::SColor.2583823" = type { i32 }
+%"class.irr::video::SColor.2697847" = type { i32 }
 
 ; 7 occurrences:
 ; duckdb/optimized/ub_duckdb_catalog.cpp.ll
@@ -14,16 +14,14 @@ define ptr @func0000000000000050(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr %"class.irr::video::SColor.2583823", ptr %1, i64 %4
+  %5 = getelementptr %"class.irr::video::SColor.2697847", ptr %1, i64 %4
   %6 = getelementptr i8, ptr %5, i64 %0
   ret ptr %6
 }
 
-; 9 occurrences:
+; 7 occurrences:
 ; abc/optimized/ivyCutTrav.c.ll
 ; cmake/optimized/cmCTestBinPacker.cxx.ll
-; hermes/optimized/NativeFormatting.cpp.ll
-; llvm/optimized/NativeFormatting.cpp.ll
 ; lz4/optimized/lz4hc.c.ll
 ; opencv/optimized/distransform.cpp.ll
 ; openjdk/optimized/c1_CodeStubs_x86.ll
@@ -36,6 +34,20 @@ entry:
   %4 = sub nsw i64 0, %3
   %5 = getelementptr nusw i8, ptr %1, i64 %4
   %6 = getelementptr nusw i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 3 occurrences:
+; hermes/optimized/NativeFormatting.cpp.ll
+; llvm/optimized/NativeFormatting.cpp.ll
+; opencv/optimized/distransform.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000005b(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = ashr exact i64 %2, 32
+  %4 = sub nsw i64 0, %3
+  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
   ret ptr %6
 }
 

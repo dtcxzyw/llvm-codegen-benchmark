@@ -1,5 +1,5 @@
 
-; 34 occurrences:
+; 35 occurrences:
 ; darktable/optimized/introspection_ashift.c.ll
 ; delta-rs/optimized/2n0ez5zuwgs53clg.ll
 ; delta-rs/optimized/5d242f2by7re2olg.ll
@@ -34,12 +34,13 @@
 ; tokenizers-rs/optimized/2mot01sr7ebui81b.ll
 ; tokenizers-rs/optimized/4hn9gefsll13qr1r.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
   %3 = fadd double %2, 5.000000e-01
   %4 = fmul double %3, %1
-  %5 = fadd double %4, %0
+  %5 = fadd double %0, %4
   ret double %5
 }
 

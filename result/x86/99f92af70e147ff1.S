@@ -8,5 +8,5 @@ func0000000000000003:                   # @func0000000000000003
 	retq
 func0000000000000005:                   # @func0000000000000005
 	movzbl	%dil, %eax
-	addl	$-87, %eax
+	addl	$-29, %eax
 	retq

@@ -15,7 +15,7 @@ func0000000000000008:                   # @func0000000000000008
 	setb	%al
 	orb	%dil, %al
 	retq
-func00000000000000a8:                   # @func00000000000000a8
+func0000000000000148:                   # @func0000000000000148
 	movabsq	$8589934597, %rax               # imm = 0x200000005
 	mulxq	%rax, %rax, %rax
 	movq	%rdx, %rcx

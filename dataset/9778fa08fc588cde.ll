@@ -1,5 +1,5 @@
 
-; 407 occurrences:
+; 401 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/absRpmOld.c.ll
 ; abc/optimized/acbFunc.c.ll
@@ -32,6 +32,8 @@
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; arrow/optimized/light_array.cc.ll
 ; arrow/optimized/tz.cpp.ll
+; boost/optimized/gregorian.ll
+; boost/optimized/to_chars.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/b3Solver.ll
 ; bullet3/optimized/btConvexHullComputer.ll
@@ -151,7 +153,6 @@
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; linux/optimized/avc.ll
 ; linux/optimized/dmi_scan.ll
-; linux/optimized/fan_attr.ll
 ; linux/optimized/input.ll
 ; linux/optimized/mballoc.ll
 ; linux/optimized/memory.ll
@@ -169,6 +170,8 @@
 ; llvm/optimized/UniformityAnalysis.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; lua/optimized/lgc.ll
+; lvgl/optimized/lv_draw_sw.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; memcached/optimized/memcached-items.ll
 ; memcached/optimized/memcached-itoa_ljust.ll
@@ -201,13 +204,10 @@
 ; oiio/optimized/rlaoutput.cpp.ll
 ; openblas/optimized/dbdsqr.c.ll
 ; openblas/optimized/dgbbrd.c.ll
-; openblas/optimized/dgbtf2.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dgejsv.c.ll
 ; openblas/optimized/dgels.c.ll
 ; openblas/optimized/dgelst.c.ll
 ; openblas/optimized/dgelsy.c.ll
-; openblas/optimized/dgetsqrhrt.c.ll
 ; openblas/optimized/dgghd3.c.ll
 ; openblas/optimized/dggsvp3.c.ll
 ; openblas/optimized/dlaed1.c.ll
@@ -219,18 +219,14 @@
 ; openblas/optimized/dlarfb.c.ll
 ; openblas/optimized/dlarrv.c.ll
 ; openblas/optimized/dlasyf.c.ll
-; openblas/optimized/dlasyf_aa.c.ll
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
 ; openblas/optimized/dlatrs3.c.ll
-; openblas/optimized/dorgl2.c.ll
 ; openblas/optimized/dorgql.c.ll
 ; openblas/optimized/dpbtrf.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; openblas/optimized/dsptrf.c.ll
 ; openblas/optimized/dsptrs.c.ll
-; openblas/optimized/dstein.c.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
 ; openblas/optimized/dsytrf_aa_2stage.c.ll
 ; openblas/optimized/dsytri2x.c.ll
 ; openblas/optimized/dsytri_3x.c.ll
@@ -308,10 +304,8 @@
 ; openspiel/optimized/tiny_bridge.cc.ll
 ; openspiel/optimized/trade_comm.cc.ll
 ; openssl/optimized/libcrypto-lib-bn_mul.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
 ; openssl/optimized/libcrypto-lib-v3_addr.ll
 ; openssl/optimized/libcrypto-shlib-bn_mul.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; openssl/optimized/libcrypto-shlib-v3_addr.ll
 ; openusd/optimized/av1_inv_txfm1d.c.ll
 ; openusd/optimized/decodemv.c.ll
@@ -416,7 +410,7 @@ entry:
   ret i64 %5
 }
 
-; 354 occurrences:
+; 341 occurrences:
 ; abc/optimized/abcMfs.c.ll
 ; abc/optimized/bmcMaj3.c.ll
 ; abc/optimized/bmcMesh2.c.ll
@@ -539,18 +533,12 @@ entry:
 ; graphviz/optimized/quad_prog_vpsc.c.ll
 ; graphviz/optimized/scan.c.ll
 ; gromacs/optimized/bench_setup.cpp.ll
-; gromacs/optimized/dlasd1.cpp.ll
 ; gromacs/optimized/dlasd2.cpp.ll
-; gromacs/optimized/dlasd3.cpp.ll
-; gromacs/optimized/dlasd6.cpp.ll
 ; gromacs/optimized/genion.cpp.ll
 ; gromacs/optimized/gmx_arpack.cpp.ll
 ; gromacs/optimized/grompp.cpp.ll
 ; gromacs/optimized/pme_spread.cpp.ll
-; gromacs/optimized/slasd1.cpp.ll
 ; gromacs/optimized/slasd2.cpp.ll
-; gromacs/optimized/slasd3.cpp.ll
-; gromacs/optimized/slasd6.cpp.ll
 ; hdf5/optimized/H5LTanalyze.c.ll
 ; hdf5/optimized/H5Ocache.c.ll
 ; icu/optimized/collationdatawriter.ll
@@ -609,7 +597,6 @@ entry:
 ; openblas/optimized/dgegs.c.ll
 ; openblas/optimized/dgegv.c.ll
 ; openblas/optimized/dgejsv.c.ll
-; openblas/optimized/dgesdd.c.ll
 ; openblas/optimized/dgesvd.c.ll
 ; openblas/optimized/dgges.c.ll
 ; openblas/optimized/dgges3.c.ll
@@ -621,29 +608,20 @@ entry:
 ; openblas/optimized/dlagsy.c.ll
 ; openblas/optimized/dlahr2.c.ll
 ; openblas/optimized/dlalsd.c.ll
-; openblas/optimized/dlaorhr_col_getrfnp.c.ll
 ; openblas/optimized/dlaqp3rk.c.ll
 ; openblas/optimized/dlaqps.c.ll
 ; openblas/optimized/dlasd2.c.ll
 ; openblas/optimized/dlasd3.c.ll
 ; openblas/optimized/dlasyf.c.ll
-; openblas/optimized/dlasyf_aa.c.ll
 ; openblas/optimized/dlasyf_rk.c.ll
 ; openblas/optimized/dlasyf_rook.c.ll
 ; openblas/optimized/dorbdb.c.ll
-; openblas/optimized/dorcsd.c.ll
 ; openblas/optimized/dorcsd2by1.c.ll
-; openblas/optimized/dorgr2.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; openblas/optimized/dsbtrd.c.ll
 ; openblas/optimized/dsptri.c.ll
-; openblas/optimized/dsyevd.c.ll
-; openblas/optimized/dsyevr_2stage.c.ll
 ; openblas/optimized/dsyevx.c.ll
-; openblas/optimized/dsyevx_2stage.c.ll
-; openblas/optimized/dsygst.c.ll
 ; openblas/optimized/dsytf2_rk.c.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
 ; openblas/optimized/dsytrf_aa.c.ll
 ; openblas/optimized/dsytrf_aa_2stage.c.ll
 ; openblas/optimized/dsytri2x.c.ll
@@ -708,7 +686,6 @@ entry:
 ; openmpi/optimized/opal_datatype_dump.ll
 ; openmpi/optimized/rmaps_rank_file_lex.ll
 ; openmpi/optimized/show_help_lex.ll
-; openspiel/optimized/2048.cc.ll
 ; openspiel/optimized/breakthrough.cc.ll
 ; openspiel/optimized/checkers.cc.ll
 ; openspiel/optimized/clobber.cc.ll
@@ -757,6 +734,7 @@ entry:
 ; stockfish/optimized/tbprobe.ll
 ; tev/optimized/ClipboardImageLoader.cpp.ll
 ; tev/optimized/ImageCanvas.cpp.ll
+; turborepo-rs/optimized/4xosjxdd4tab2lzmgagh8c3os.ll
 ; velox/optimized/GenericWriter.cpp.ll
 ; velox/optimized/Scanner.cpp.ll
 ; verilator/optimized/V3ParseLex.cpp.ll
@@ -765,6 +743,9 @@ entry:
 ; yosys/optimized/rtlil_lexer.ll
 ; yosys/optimized/verilog_backend.ll
 ; yosys/optimized/verilog_lexer.ll
+; zed-rs/optimized/2nwrl7qhv6ci6obqg1itckcv6.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; zxing/optimized/AZDecoder.cpp.ll
 ; zxing/optimized/AZEncoder.cpp.ll
 ; zxing/optimized/DMBitLayout.cpp.ll
@@ -775,17 +756,18 @@ entry:
 define i64 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }
 
-; 91 occurrences:
+; 88 occurrences:
 ; abc/optimized/bmcMesh2.c.ll
 ; abc/optimized/cbaReadVer.c.ll
 ; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/giaLf.c.ll
 ; abc/optimized/kitIsop.c.ll
+; boost/optimized/to_chars.ll
 ; bullet3/optimized/btLemkeAlgorithm.ll
 ; cmake/optimized/xmlparse.c.ll
 ; cvc5/optimized/alethe_let_binding.cpp.ll
@@ -793,13 +775,11 @@ entry:
 ; cvc5/optimized/function_const.cpp.ll
 ; cvc5/optimized/sygus_sampler.cpp.ll
 ; gromacs/optimized/dgebrd.cpp.ll
-; gromacs/optimized/dgelqf.cpp.ll
 ; gromacs/optimized/dlasda.cpp.ll
 ; gromacs/optimized/dorglq.cpp.ll
 ; gromacs/optimized/dsytrd.cpp.ll
 ; gromacs/optimized/partition.cpp.ll
 ; gromacs/optimized/sgebrd.cpp.ll
-; gromacs/optimized/sgelqf.cpp.ll
 ; gromacs/optimized/slasda.cpp.ll
 ; gromacs/optimized/sorglq.cpp.ll
 ; gromacs/optimized/ssytrd.cpp.ll
@@ -808,6 +788,7 @@ entry:
 ; libquic/optimized/f_int.c.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
+; llvm/optimized/CGStmt.cpp.ll
 ; llvm/optimized/Core.cpp.ll
 ; llvm/optimized/InstCombineCalls.cpp.ll
 ; llvm/optimized/Instructions.cpp.ll
@@ -815,10 +796,10 @@ entry:
 ; lua/optimized/lparser.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/filter_create.cpp.ll
 ; openblas/optimized/dbdsqr.c.ll
 ; openblas/optimized/dgbbrd.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dgejsv.c.ll
 ; openblas/optimized/dgelqf.c.ll
 ; openblas/optimized/dgghd3.c.ll
@@ -829,11 +810,8 @@ entry:
 ; openblas/optimized/dlaqr5.c.ll
 ; openblas/optimized/dlarrv.c.ll
 ; openblas/optimized/dlasda.c.ll
-; openblas/optimized/dlasyf_aa.c.ll
 ; openblas/optimized/dorgtsqr_row.c.ll
 ; openblas/optimized/dsbgst.c.ll
-; openblas/optimized/dsygst.c.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
 ; openblas/optimized/dsytrf_aa_2stage.c.ll
 ; openblas/optimized/dsytri2x.c.ll
 ; openblas/optimized/dsytri_3x.c.ll
@@ -881,10 +859,11 @@ entry:
   ret i64 %5
 }
 
-; 50 occurrences:
+; 48 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/giaMinLut.c.ll
 ; abc/optimized/saigSimSeq.c.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/_ctypes_test.ll
 ; cpython/optimized/_datetimemodule.ll
 ; darktable/optimized/introspection_colorbalancergb.c.ll
@@ -900,10 +879,7 @@ entry:
 ; libquic/optimized/padding.c.ll
 ; linux/optimized/uncore_nhmex.ll
 ; openblas/optimized/dgbbrd.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dlaed0.c.ll
-; openblas/optimized/dlaqp2rk.c.ll
-; openblas/optimized/dlasyf_aa.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; openblas/optimized/dsptrf.c.ll
 ; openblas/optimized/dsytri2x.c.ll
@@ -936,20 +912,18 @@ entry:
 define i64 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }
 
-; 16 occurrences:
+; 14 occurrences:
 ; bullet3/optimized/btMLCPSolver.ll
-; gromacs/optimized/dlasd0.cpp.ll
-; gromacs/optimized/slasd0.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; openblas/optimized/dbbcsd.c.ll
-; openblas/optimized/dgesdd.c.ll
 ; openblas/optimized/dlaed7.c.ll
 ; openblas/optimized/dlasd0.c.ll
+; openblas/optimized/dorcsd2by1.c.ll
 ; openblas/optimized/dsytf2_rk.c.ll
 ; opencv/optimized/imagecut.cpp.ll
 ; openjdk/optimized/mlib_ImageAffineEdge.ll
@@ -992,7 +966,7 @@ entry:
 define i64 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %1, %2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }
@@ -1014,7 +988,7 @@ entry:
 define i64 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }

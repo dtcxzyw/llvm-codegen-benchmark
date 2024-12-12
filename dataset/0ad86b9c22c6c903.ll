@@ -1,5 +1,5 @@
 
-; 894 occurrences:
+; 893 occurrences:
 ; git/optimized/diff-delta.ll
 ; hermes/optimized/Analysis.cpp.ll
 ; hermes/optimized/BlockScopingTransformations.cpp.ll
@@ -626,7 +626,6 @@
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVMergeBaseOffset.cpp.ll

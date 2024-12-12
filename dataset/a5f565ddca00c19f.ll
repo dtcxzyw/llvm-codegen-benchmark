@@ -10,7 +10,7 @@
 ; meilisearch-rs/optimized/1cgo24wrkn2cjv53.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = icmp eq i64 %0, -9223372036854775752
@@ -47,7 +47,7 @@ entry:
 ; quickjs/optimized/libbf.ll
 ; redis/optimized/listpack.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000026(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = icmp slt i64 %0, 0

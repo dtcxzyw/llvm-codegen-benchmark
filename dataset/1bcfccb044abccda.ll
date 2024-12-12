@@ -1,5 +1,5 @@
 
-; 58 occurrences:
+; 57 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
@@ -54,7 +54,6 @@
 ; openvdb/optimized/PoissonSolver.cc.ll
 ; postgres/optimized/costsize.ll
 ; postgres/optimized/selfuncs.ll
-; proj/optimized/cs2cs.cpp.ll
 ; wireshark/optimized/elided_label.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; zxing/optimized/PDFDetector.cpp.ll
@@ -66,9 +65,12 @@ entry:
   ret double %4
 }
 
-; 23 occurrences:
+; 28 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; coreutils-rs/optimized/22bojphyikqmi872.ll
 ; coreutils-rs/optimized/ixpgh0gjooq08dy.ll
 ; llvm/optimized/MCSchedule.cpp.ll
@@ -90,6 +92,8 @@ entry:
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
+; zed-rs/optimized/4boerhlvhy0t7lexovmn31ni1.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
 ; Function Attrs: nounwind
 define double @func0000000000000002(double %0, double %1, i8 %2) #0 {
 entry:

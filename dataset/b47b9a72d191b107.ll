@@ -1,5 +1,5 @@
 
-; 64 occurrences:
+; 65 occurrences:
 ; brotli/optimized/literal_cost.c.ll
 ; darktable/optimized/TiffEntry.cpp.ll
 ; darktable/optimized/introspection_colorzones.c.ll
@@ -63,6 +63,7 @@
 ; postgres/optimized/tsrank.ll
 ; raylib/optimized/raudio.c.ll
 ; stb/optimized/stb_vorbis.c.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; zxing/optimized/PDFDetector.cpp.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i1 %0, double %1, double %2) #0 {

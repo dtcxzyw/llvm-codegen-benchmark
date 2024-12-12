@@ -1,8 +1,8 @@
 
-%union.iseq_inline_storage_entry.2485876 = type { %struct.anon.32.2485877 }
-%struct.anon.32.2485877 = type { ptr, i64 }
-%"struct.irr::scene::ISkinnedMesh::SRotationKey.2589146" = type { float, %"class.irr::core::quaternion.2589143" }
-%"class.irr::core::quaternion.2589143" = type { float, float, float, float }
+%union.iseq_inline_storage_entry.2601335 = type { %struct.anon.32.2601336 }
+%struct.anon.32.2601336 = type { ptr, i64 }
+%"struct.irr::scene::ISkinnedMesh::SRotationKey.2702991" = type { float, %"class.irr::core::quaternion.2702988" }
+%"class.irr::core::quaternion.2702988" = type { float, float, float, float }
 
 ; 10 occurrences:
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
@@ -19,22 +19,20 @@
 define i64 @func0000000000000000(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %union.iseq_inline_storage_entry.2485876, ptr %0, i64 %1
-  %5 = getelementptr %union.iseq_inline_storage_entry.2485876, ptr %4, i64 %3
+  %4 = getelementptr %union.iseq_inline_storage_entry.2601335, ptr %0, i64 %1
+  %5 = getelementptr %union.iseq_inline_storage_entry.2601335, ptr %4, i64 %3
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }
 
-; 44 occurrences:
+; 40 occurrences:
 ; arrow/optimized/message.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
 ; arrow/optimized/reader.cc.ll
 ; brotli/optimized/static_dict.c.ll
 ; clamav/optimized/mew.c.ll
-; clamav/optimized/petite.c.ll
 ; clamav/optimized/unsp.c.ll
 ; clamav/optimized/upack.c.ll
-; clamav/optimized/upx.c.ll
 ; darktable/optimized/CiffEntry.cpp.ll
 ; darktable/optimized/MosDecoder.cpp.ll
 ; darktable/optimized/TiffEntry.cpp.ll
@@ -46,7 +44,6 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hyperscan/optimized/castlecompile.cpp.ll
 ; hyperscan/optimized/scratch.c.ll
-; libquic/optimized/s3_srvr.c.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/Archive.cpp.ll
@@ -61,7 +58,6 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luajit/optimized/lj_bcread.ll
 ; luajit/optimized/lj_bcread_dyn.ll
-; lz4/optimized/lz4hc.c.ll
 ; opencv/optimized/tflite_importer.cpp.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; openjdk/optimized/hb-ot-layout.ll
@@ -71,23 +67,47 @@ entry:
 ; rocksdb/optimized/plain_table_index.cc.ll
 ; spike/optimized/fdt_rw.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000000a(ptr %0, i64 %1, i32 %2) #0 {
+define i64 @func000000000000000f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i32, ptr %0, i64 %1
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i32, ptr %0, i64 %1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }
 
-; 185 occurrences:
+; 19 occurrences:
 ; abc/optimized/giaCof.c.ll
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/mew.c.ll
-; clamav/optimized/petite.c.ll
 ; clamav/optimized/unsp.c.ll
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
+; fmt/optimized/format-impl-test.cc.ll
+; minetest/optimized/CSkinnedMesh.cpp.ll
+; opencv/optimized/geometry.cpp.ll
+; opencv/optimized/grfmt_tiff.cpp.ll
+; openjdk/optimized/nmethod.ll
+; openusd/optimized/obu.c.ll
+; php/optimized/cdf.ll
+; wolfssl/optimized/rsa.c.ll
+; z3/optimized/smt_clause.cpp.ll
+; z3/optimized/smt_clause_proof.cpp.ll
+; z3/optimized/smt_conflict_resolution.cpp.ll
+; z3/optimized/smt_context.cpp.ll
+; z3/optimized/theory_pb.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001f(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = getelementptr nusw nuw %"struct.irr::scene::ISkinnedMesh::SRotationKey.2702991", ptr %0, i64 %1
+  %5 = getelementptr nusw nuw %"struct.irr::scene::ISkinnedMesh::SRotationKey.2702991", ptr %4, i64 %3
+  %6 = ptrtoint ptr %5 to i64
+  ret i64 %6
+}
+
+; 168 occurrences:
+; clamav/optimized/petite.c.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/color-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -107,7 +127,6 @@ entry:
 ; fmt/optimized/xchar-test.cc.ll
 ; gromacs/optimized/matio.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
-; minetest/optimized/CSkinnedMesh.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -179,12 +198,8 @@ entry:
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
-; opencv/optimized/grfmt_tiff.cpp.ll
 ; openjdk/optimized/klassVtable.ll
 ; openjdk/optimized/mlib_c_ImageCopy.ll
-; openjdk/optimized/nmethod.ll
-; openusd/optimized/obu.c.ll
-; php/optimized/cdf.ll
 ; vcpkg/optimized/archives.cpp.ll
 ; vcpkg/optimized/binarycaching.cpp.ll
 ; vcpkg/optimized/binaryparagraph.cpp.ll
@@ -260,28 +275,21 @@ entry:
 ; vcpkg/optimized/vcpkgpaths.cpp.ll
 ; vcpkg/optimized/versiondeserializers.cpp.ll
 ; vcpkg/optimized/versions.cpp.ll
-; wolfssl/optimized/rsa.c.ll
-; z3/optimized/smt_clause.cpp.ll
-; z3/optimized/smt_clause_proof.cpp.ll
-; z3/optimized/smt_conflict_resolution.cpp.ll
-; z3/optimized/smt_context.cpp.ll
-; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(ptr %0, i64 %1, i32 %2) #0 {
+define i64 @func000000000000001b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw %"struct.irr::scene::ISkinnedMesh::SRotationKey.2589146", ptr %0, i64 %1
-  %5 = getelementptr nusw %"struct.irr::scene::ISkinnedMesh::SRotationKey.2589146", ptr %4, i64 %3
+  %4 = getelementptr nusw i8, ptr %0, i64 %1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }
 
-; 45 occurrences:
+; 44 occurrences:
 ; cpython/optimized/optimizer.ll
 ; linux/optimized/recovery.ll
 ; linux/optimized/slub.ll
 ; linux/optimized/trace_eprobe.ll
-; opencv/optimized/geometry.cpp.ll
 ; openjdk/optimized/archiveHeapWriter.ll
 ; postgres/optimized/aclchk.ll
 ; postgres/optimized/alter.ll
@@ -335,11 +343,26 @@ entry:
 ; 1 occurrences:
 ; php/optimized/cdf.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(ptr %0, i64 %1, i32 %2) #0 {
+define i64 @func000000000000000c(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %5 = getelementptr i8, ptr %4, i64 %3
+  %6 = ptrtoint ptr %5 to i64
+  ret i64 %6
+}
+
+; 4 occurrences:
+; clamav/optimized/petite.c.ll
+; clamav/optimized/upx.c.ll
+; libquic/optimized/s3_srvr.c.ll
+; lz4/optimized/lz4hc.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr nusw i8, ptr %0, i64 %1
-  %5 = getelementptr i8, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }
@@ -348,11 +371,11 @@ entry:
 ; wasmtime-rs/optimized/1spnjfu340nob5zr.ll
 ; wasmtime-rs/optimized/44b2uzewkuf2yts2.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000002(ptr %0, i64 %1, i32 %2) #0 {
+define i64 @func0000000000000003(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 %1
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }
@@ -360,10 +383,10 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/varlena.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(ptr %0, i64 %1, i32 %2) #0 {
+define i64 @func000000000000001c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %1
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %1
   %5 = getelementptr i8, ptr %4, i64 %3
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6

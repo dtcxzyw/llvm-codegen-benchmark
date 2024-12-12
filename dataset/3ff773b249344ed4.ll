@@ -7,7 +7,7 @@
 ; mitsuba3/optimized/struct.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 8589934592
   %3 = icmp eq i64 %2, 0
@@ -21,7 +21,7 @@ entry:
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
 ; mitsuba3/optimized/cpuinfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i64 %1) #0 {
+define i1 @func000000000000018c(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4096
   %3 = icmp ne i64 %2, 0
@@ -39,7 +39,7 @@ entry:
 ; linux/optimized/intel_dpll.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 8
   %3 = icmp eq i64 %2, 0
@@ -52,7 +52,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/tree.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000181(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 512
   %3 = icmp ne i64 %2, 0

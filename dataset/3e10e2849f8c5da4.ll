@@ -5,7 +5,7 @@
 define i64 @func0000000000000080(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 1
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add i64 %4, %0
   %6 = shl i64 %5, 1
   ret i64 %6
@@ -62,7 +62,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 6
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add i64 %4, %0
   %6 = shl i64 %5, 3
   ret i64 %6
@@ -74,7 +74,7 @@ entry:
 define i64 @func00000000000000d0(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 7
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = add i64 %4, %0
   %6 = shl i64 %5, 4
   ret i64 %6
@@ -100,8 +100,8 @@ entry:
 define i64 @func00000000000000c0(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 8
-  %4 = add i64 %3, %1
-  %5 = add i64 %4, %0
+  %4 = add i64 %1, %3
+  %5 = add i64 %0, %4
   %6 = shl i64 %5, 16
   ret i64 %6
 }
@@ -113,7 +113,7 @@ define i64 @func0000000000000050(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 16
   %4 = add nsw i64 %3, %1
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = shl i64 %5, 8
   ret i64 %6
 }

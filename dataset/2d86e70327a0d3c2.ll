@@ -24,10 +24,9 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; cpython/optimized/longobject.ll
 ; linux/optimized/mpi-bit.ll
-; postgres/optimized/refint.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:

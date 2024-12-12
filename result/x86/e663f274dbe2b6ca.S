@@ -8,9 +8,8 @@ func00000000000000f0:                   # @func00000000000000f0
 	retq
 func00000000000000a0:                   # @func00000000000000a0
 	shrq	$32, %rdx
+	imull	%edi, %edx
+	shlq	$32, %rdx
 	imulq	%rdi, %rsi
-	movl	%edi, %eax
-	imull	%edx, %eax
-	shlq	$32, %rax
-	addq	%rsi, %rax
+	leaq	(%rsi,%rdx), %rax
 	retq

@@ -3,7 +3,7 @@ func0000000000000002:                   # @func0000000000000002
 	vadd.vv	v10, v10, v12
 	li	a0, 32
 	vsrl.vx	v10, v10, a0
-	vadd.vv	v10, v10, v8
+	vadd.vv	v10, v8, v10
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wx	v8, v10, a0
 	ret
@@ -21,7 +21,7 @@ func0000000000000092:                   # @func0000000000000092
 	vadd.vv	v10, v10, v12
 	li	a0, 32
 	vsrl.vx	v10, v10, a0
-	vadd.vv	v10, v10, v8
+	vadd.vv	v10, v8, v10
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wx	v8, v10, a0
 	ret

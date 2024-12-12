@@ -6,7 +6,7 @@ func0000000000000020:                   # @func0000000000000020
 	vadd.vx	v10, v10, a0, v0.t
 	vadd.vv	v8, v10, v8
 	ret
-func0000000000000063:                   # @func0000000000000063
+func00000000000000e3:                   # @func00000000000000e3
 	lui	a0, 16
 	addiw	a0, a0, -16
 	vsetivli	zero, 4, e64, m2, ta, mu
@@ -16,7 +16,7 @@ func0000000000000063:                   # @func0000000000000063
 	vadd.vx	v10, v10, a0, v0.t
 	vadd.vv	v8, v10, v8
 	ret
-func0000000000000059:                   # @func0000000000000059
+func0000000000000099:                   # @func0000000000000099
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmsle.vi	v0, v10, -1
 	lui	a0, 244
@@ -24,7 +24,7 @@ func0000000000000059:                   # @func0000000000000059
 	vadd.vx	v10, v10, a0, v0.t
 	vadd.vv	v8, v10, v8
 	ret
-func0000000000000058:                   # @func0000000000000058
+func0000000000000098:                   # @func0000000000000098
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmsle.vi	v0, v10, -1
 	vadd.vi	v10, v10, 3, v0.t

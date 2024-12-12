@@ -1,5 +1,5 @@
 
-; 30 occurrences:
+; 29 occurrences:
 ; abseil-cpp/optimized/int128.cc.ll
 ; cpython/optimized/longobject.ll
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -13,7 +13,6 @@
 ; mitsuba3/optimized/merge.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/tensor.cpp.ll
@@ -144,12 +143,13 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; clamav/optimized/kwajd.c.ll
 ; clamav/optimized/lzxd.c.ll
 ; cpython/optimized/longobject.ll
 ; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
 ; qemu/optimized/hw_usb_hcd-xhci.c.ll
+; turborepo-rs/optimized/cfoasa6bvi7hpmvo2g502kghe.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i1 %1) #0 {
 entry:

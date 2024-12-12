@@ -12,18 +12,18 @@ func0000000000000004:                   # @func0000000000000004
 	movabsq	$1609587791953885689, %rax      # imm = 0x165667919E3779F9
 	imulq	%rdx, %rax
 	retq
+func0000000000000014:                   # @func0000000000000014
+	shlq	$32, %rdx
+	orq	%rsi, %rdx
+	xorq	%rdi, %rdx
+	movabsq	$5871781006564002453, %rax      # imm = 0x517CC1B727220A95
+	imulq	%rdx, %rax
+	retq
 func0000000000000000:                   # @func0000000000000000
 	shlq	$32, %rdx
 	orq	%rsi, %rdx
 	xorq	%rdi, %rdx
 	movabsq	$9202493588570546565, %rax      # imm = 0x7FB5D329728EA185
-	imulq	%rdx, %rax
-	retq
-func0000000000000014:                   # @func0000000000000014
-	shlq	$32, %rdx
-	orq	%rsi, %rdx
-	xorq	%rdi, %rdx
-	movabsq	$2388976653695081527, %rax      # imm = 0x2127599BF4325C37
 	imulq	%rdx, %rax
 	retq
 func0000000000000008:                   # @func0000000000000008

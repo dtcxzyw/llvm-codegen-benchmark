@@ -1,5 +1,5 @@
 
-; 319 occurrences:
+; 320 occurrences:
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
@@ -17,6 +17,7 @@
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; actix-rs/optimized/36qa1hw006t0trtl.ll
 ; actix-rs/optimized/520p8qtoxfmkvgyc.ll
+; boost/optimized/to_chars.ll
 ; delta-rs/optimized/17fowff2nvfrfdbu.ll
 ; delta-rs/optimized/19o44o7ada9hlwut.ll
 ; delta-rs/optimized/fhoj0ycmzgl7mm8.ll
@@ -327,8 +328,9 @@ entry:
   ret i64 %2
 }
 
-; 107 occurrences:
+; 108 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/convolute.ll
 ; cpython/optimized/crt.ll
 ; cpython/optimized/difradix2.ll
@@ -443,7 +445,8 @@ entry:
   ret i64 %2
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/to_chars.ll
 ; libquic/optimized/p224-64.c.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll

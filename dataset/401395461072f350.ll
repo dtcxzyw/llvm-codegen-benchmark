@@ -17,14 +17,17 @@ entry:
   ret i8 %3
 }
 
-; 8 occurrences:
+; 11 occurrences:
 ; c3c/optimized/llvm_codegen_expr.c.ll
 ; graphviz/optimized/sfprint.c.ll
 ; libwebp/optimized/image_enc.c.ll
 ; llvm/optimized/WasmObjectWriter.cpp.ll
+; lvgl/optimized/lv_label.ll
 ; quickjs/optimized/quickjs.ll
 ; tokenizers-rs/optimized/4hn9gefsll13qr1r.ll
 ; wireshark/optimized/packet-isakmp.c.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/9llazb78bmu9grt6fsh6yj218.ll
 ; zxing/optimized/DMDecoder.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000004(i32 %0) #0 {
@@ -40,24 +43,22 @@ entry:
 ; openusd/optimized/tessellation.cpp.ll
 ; yalantinglibs/optimized/binary_json_conformance_suite.cc.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000011(i32 %0) #0 {
+define i8 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 1
   %2 = select i1 %1, i8 0, i8 -128
   ret i8 %2
 }
 
-; 8 occurrences:
+; 6 occurrences:
 ; hermes/optimized/ItaniumDemangle.cpp.ll
-; llvm/optimized/CGExpr.cpp.ll
 ; llvm/optimized/InterfaceStubFunctionsConsumer.cpp.ll
 ; llvm/optimized/ItaniumDemangle.cpp.ll
 ; llvm/optimized/ItaniumManglingCanonicalizer.cpp.ll
-; openspiel/optimized/dou_dizhu_utils.cc.ll
 ; rust-analyzer-rs/optimized/1yf6pyfk8ihkfv63.ll
-; wireshark/optimized/packet-ouch.c.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000014(i32 %0) #0 {
+define i8 @func0000000000000024(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -58
   %2 = icmp ult i32 %1, -10

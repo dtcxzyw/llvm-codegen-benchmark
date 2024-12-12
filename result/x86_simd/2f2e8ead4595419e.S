@@ -1,4 +1,4 @@
-func00000000000000e4:                   # @func00000000000000e4
+func00000000000001c4:                   # @func00000000000001c4
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vpxor	%xmm0, %xmm0, %xmm0
@@ -11,7 +11,7 @@ func00000000000000e4:                   # @func00000000000000e4
 	retq
 .LCPI1_0:
 	.long	4294967243                      # 0xffffffcb
-func0000000000000064:                   # @func0000000000000064
+func00000000000000c4:                   # @func00000000000000c4
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vpbroadcastd	.LCPI1_0(%rip), %xmm0   # xmm0 = [4294967243,4294967243,4294967243,4294967243]

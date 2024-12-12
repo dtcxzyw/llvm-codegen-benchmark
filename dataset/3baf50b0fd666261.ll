@@ -4,7 +4,7 @@
 ; double_conversion/optimized/double-to-string.cc.ll
 ; openusd/optimized/double-to-string.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i64 %0, i1 %1, double %2) #0 {
+define i1 @func00000000000000e6(i64 %0, i1 %1, double %2) #0 {
 entry:
   %3 = fcmp une double %2, 0.000000e+00
   %4 = select i1 %3, i1 true, i1 %1
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; graphviz/optimized/shapes.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i1 %1, double %2) #0 {
+define i1 @func00000000000000e4(i64 %0, i1 %1, double %2) #0 {
 entry:
   %3 = fcmp une double %2, 0.000000e+00
   %4 = select i1 %3, i1 true, i1 %1

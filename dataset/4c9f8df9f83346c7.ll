@@ -9,7 +9,7 @@
 ; slurm/optimized/job_mgr.ll
 ; slurm/optimized/prep_script_slurmd.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000ea(i32 %0) #0 {
+define i32 @func00000000000001ca(i32 %0) #0 {
 entry:
   %1 = shl nuw nsw i32 %0, 24
   %2 = add nuw i32 %1, 16777216

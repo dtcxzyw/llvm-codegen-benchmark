@@ -6,7 +6,7 @@
 ; luajit/optimized/lj_asm_dyn.ll
 ; openjdk/optimized/bcEscapeAnalyzer.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000141(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 4, %1
   %3 = shl nuw i32 4, %0

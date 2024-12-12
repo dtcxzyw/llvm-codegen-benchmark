@@ -15,7 +15,7 @@ func0000000000000007:                   # @func0000000000000007
 	vadd.vi	v12, v12, -1
 	li	a0, 56
 	vand.vi	v12, v12, 7
-	vor.vv	v8, v12, v8
+	vor.vv	v8, v8, v12
 	vand.vx	v10, v10, a0
 	vor.vv	v8, v8, v10
 	ret
@@ -27,7 +27,7 @@ func000000000000000c:                   # @func000000000000000c
 	vand.vx	v12, v12, a0
 	lui	a0, 4096
 	addi	a0, a0, -256
-	vor.vv	v8, v12, v8
+	vor.vv	v8, v8, v12
 	vand.vx	v10, v10, a0
 	vor.vv	v8, v8, v10
 	ret
@@ -37,7 +37,7 @@ func0000000000000000:                   # @func0000000000000000
 	vadd.vx	v12, v12, a0
 	vand.vx	v12, v12, a0
 	lui	a0, 192
-	vor.vv	v8, v12, v8
+	vor.vv	v8, v8, v12
 	vand.vx	v10, v10, a0
 	vor.vv	v8, v8, v10
 	ret
@@ -69,7 +69,7 @@ func000000000000000e:                   # @func000000000000000e
 	vadd.vx	v12, v12, a0
 	lui	a0, 4080
 	vand.vx	v12, v12, a0
-	lui	a0, 4096
+	lui	a0, 2048
 	addi	a0, a0, -256
 	vor.vv	v8, v12, v8
 	vand.vx	v10, v10, a0

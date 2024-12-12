@@ -17,14 +17,4 @@ entry:
   ret i64 %3
 }
 
-; 1 occurrences:
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
-entry:
-  %2 = srem i64 %0, %1
-  %3 = add i64 %2, 2048
-  ret i64 %3
-}
-
 attributes #0 = { nounwind }

@@ -16,3 +16,9 @@ func000000000000000c:                   # @func000000000000000c
 	add	a0, a0, a2
 	addi	a0, a0, 10
 	ret
+func0000000000000010:                   # @func0000000000000010
+	andi	a2, a2, 1
+	add	a0, a0, a1
+	add	a0, a0, a2
+	addi	a0, a0, -16
+	ret

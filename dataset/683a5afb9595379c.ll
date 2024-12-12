@@ -11,13 +11,14 @@ entry:
   ret i16 %3
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; linux/optimized/agg-rx.ll
 ; linux/optimized/cdrom.ll
 ; linux/optimized/hosts.ll
 ; linux/optimized/intel_bios.ll
 ; linux/optimized/intel_sdvo.ll
 ; llvm/optimized/ModuleMap.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll

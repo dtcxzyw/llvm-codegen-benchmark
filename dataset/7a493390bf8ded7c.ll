@@ -1,8 +1,6 @@
 
-; 4 occurrences:
+; 2 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
-; opencv/optimized/demosaicing.cpp.ll
-; openspiel/optimized/pentago.cc.ll
 ; php/optimized/zend_hash.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
@@ -48,9 +46,8 @@ entry:
   ret ptr %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
-; opencv/optimized/demosaicing.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000e(ptr %0, i32 %1) #0 {
 entry:
@@ -61,8 +58,7 @@ entry:
   ret ptr %5
 }
 
-; 3 occurrences:
-; meshlab/optimized/filter_screened_poisson.cpp.ll
+; 2 occurrences:
 ; opencv/optimized/filter.dispatch.cpp.ll
 ; openusd/optimized/aom_scale.c.ll
 ; Function Attrs: nounwind

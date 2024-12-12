@@ -1,7 +1,5 @@
 
-; 10 occurrences:
-; gromacs/optimized/dlarfb.cpp.ll
-; gromacs/optimized/slarfb.cpp.ll
+; 8 occurrences:
 ; meshlab/optimized/edit_paint.cpp.ll
 ; oiio/optimized/Codec.cpp.ll
 ; openblas/optimized/dlarfb.c.ll
@@ -41,7 +39,7 @@ define i64 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = sub i32 %3, %1
-  %5 = mul i32 %4, %0
+  %5 = mul i32 %0, %4
   %6 = sext i32 %5 to i64
   ret i64 %6
 }
@@ -53,7 +51,7 @@ define i64 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 4
   %4 = sub nsw i32 %3, %1
-  %5 = mul nsw i32 %4, %0
+  %5 = mul nsw i32 %0, %4
   %6 = sext i32 %5 to i64
   ret i64 %6
 }
@@ -66,7 +64,7 @@ define i64 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = sub i32 %3, %1
-  %5 = mul i32 %4, %0
+  %5 = mul i32 %0, %4
   %6 = sext i32 %5 to i64
   ret i64 %6
 }

@@ -1,5 +1,5 @@
 
-; 73 occurrences:
+; 70 occurrences:
 ; clamav/optimized/unpack.cpp.ll
 ; freetype/optimized/autofit.c.ll
 ; icu/optimized/genmbcs.ll
@@ -25,7 +25,6 @@
 ; linux/optimized/route.ll
 ; linux/optimized/rtnetlink.ll
 ; linux/optimized/scsi.ll
-; linux/optimized/sd.ll
 ; linux/optimized/strset.ll
 ; linux/optimized/tlshd.ll
 ; linux/optimized/xfrm_user.ll
@@ -53,9 +52,7 @@
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/erf.c.ll
 ; wireshark/optimized/packet-ancp.c.ll
-; wireshark/optimized/packet-asap.c.ll
 ; wireshark/optimized/packet-dlm3.c.ll
-; wireshark/optimized/packet-enrp.c.ll
 ; wireshark/optimized/packet-erf.c.ll
 ; wireshark/optimized/packet-gryphon.c.ll
 ; wireshark/optimized/packet-hip.c.ll
@@ -103,9 +100,10 @@ entry:
   ret i32 %3
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; clamav/optimized/lzxd.c.ll
 ; cpython/optimized/_codecs_jp.ll
+; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; wireshark/optimized/packet-l2tp.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i16 %0) #0 {

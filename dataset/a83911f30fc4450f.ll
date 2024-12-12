@@ -13,7 +13,7 @@ entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = trunc i64 %1 to i32
   %5 = mul i32 %3, %4
-  %6 = mul i32 %5, %0
+  %6 = mul i32 %0, %5
   ret i32 %6
 }
 

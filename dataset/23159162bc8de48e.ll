@@ -29,7 +29,7 @@ entry:
   ret i16 %5
 }
 
-; 596 occurrences:
+; 598 occurrences:
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/wlcNtk.c.ll
 ; abc/optimized/wlcReadSmt.c.ll
@@ -59,7 +59,6 @@ entry:
 ; linux/optimized/agg-rx.ll
 ; linux/optimized/aspm.ll
 ; linux/optimized/e1000_hw.ll
-; linux/optimized/fiemap.ll
 ; linux/optimized/hcd.ll
 ; linux/optimized/hda_intel.ll
 ; linux/optimized/hugetlb.ll
@@ -380,7 +379,6 @@ entry:
 ; llvm/optimized/RISCVAsmBackend.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVIndirectBranchTracking.cpp.ll
 ; llvm/optimized/RISCVInsertReadWriteCSR.cpp.ll
 ; llvm/optimized/RISCVInstPrinter.cpp.ll
@@ -527,6 +525,10 @@ entry:
 ; llvm/optimized/X86Subtarget.cpp.ll
 ; llvm/optimized/X86TargetMachine.cpp.ll
 ; llvm/optimized/X86VZeroUpper.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_image.ll
+; lvgl/optimized/lv_obj_scroll.ll
+; lvgl/optimized/lv_spinbox.ll
 ; minetest/optimized/CImage.cpp.ll
 ; minetest/optimized/dynamicshadowsrender.cpp.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll

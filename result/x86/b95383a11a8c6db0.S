@@ -13,7 +13,7 @@ func0000000000000018:                   # @func0000000000000018
 	setne	%al
 	orb	%dil, %al
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	testb	$-64, %sil
 	sete	%al
 	orb	%dil, %al

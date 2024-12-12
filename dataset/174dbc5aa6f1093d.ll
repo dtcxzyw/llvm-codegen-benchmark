@@ -19,11 +19,11 @@
 define i8 @func000000000000000c(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i32 %1 to i8
-  %3 = add i8 %2, %0
+  %3 = add i8 %0, %2
   ret i8 %3
 }
 
-; 151 occurrences:
+; 159 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/arc4.c.ll
@@ -118,6 +118,7 @@ entry:
 ; luajit/optimized/minilua.ll
 ; luau/optimized/Compiler.cpp.ll
 ; luau/optimized/lmathlib.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/miniz.c.ll
@@ -172,14 +173,21 @@ entry:
 ; wireshark/optimized/packet-isup.c.ll
 ; wireshark/optimized/packet-mac-lte.c.ll
 ; wireshark/optimized/packet-oscore.c.ll
-; wireshark/optimized/packet-sapenqueue.c.ll
 ; wireshark/optimized/proto.c.ll
 ; wolfssl/optimized/sha3.c.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/4boerhlvhy0t7lexovmn31ni1.ll
+; zed-rs/optimized/6t4g10gl152q55lxtcl2heeia.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/97q4mieihk6fgi9ya31e3gth7.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i8
-  %3 = add i8 %2, %0
+  %3 = add i8 %0, %2
   ret i8 %3
 }
 
@@ -190,7 +198,7 @@ entry:
 define i8 @func000000000000000e(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i32 %1 to i8
-  %3 = add nuw i8 %2, %0
+  %3 = add nuw i8 %0, %2
   ret i8 %3
 }
 
@@ -209,11 +217,11 @@ entry:
 define i8 @func0000000000000004(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc nsw i32 %1 to i8
-  %3 = add i8 %2, %0
+  %3 = add i8 %0, %2
   ret i8 %3
 }
 
-; 23 occurrences:
+; 30 occurrences:
 ; clamav/optimized/aspack.c.ll
 ; clamav/optimized/crypt.cpp.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
@@ -237,11 +245,18 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
 ; yosys/optimized/lz4.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/4boerhlvhy0t7lexovmn31ni1.ll
+; zed-rs/optimized/6t4g10gl152q55lxtcl2heeia.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/97q4mieihk6fgi9ya31e3gth7.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000008(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i8
-  %3 = add i8 %2, %0
+  %3 = add i8 %0, %2
   ret i8 %3
 }
 
@@ -254,7 +269,7 @@ entry:
 define i8 @func000000000000000f(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i32 %1 to i8
-  %3 = add nuw nsw i8 %2, %0
+  %3 = add nuw nsw i8 %0, %2
   ret i8 %3
 }
 
@@ -265,7 +280,7 @@ entry:
 define i8 @func0000000000000001(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i8
-  %3 = add nsw i8 %2, %0
+  %3 = add nsw i8 %0, %2
   ret i8 %3
 }
 
@@ -275,17 +290,23 @@ entry:
 define i8 @func000000000000000d(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i32 %1 to i8
-  %3 = add nsw i8 %2, %0
+  %3 = add nsw i8 %0, %2
   ret i8 %3
 }
 
-; 1 occurrences:
-; linux/optimized/eht.ll
+; 7 occurrences:
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/4boerhlvhy0t7lexovmn31ni1.ll
+; zed-rs/optimized/6t4g10gl152q55lxtcl2heeia.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/97q4mieihk6fgi9ya31e3gth7.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i8
-  %3 = add nuw nsw i8 %2, %0
+  %3 = add nuw nsw i8 %0, %2
   ret i8 %3
 }
 
@@ -296,7 +317,7 @@ entry:
 define i8 @func000000000000000a(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i8
-  %3 = add nuw i8 %2, %0
+  %3 = add nuw i8 %0, %2
   ret i8 %3
 }
 

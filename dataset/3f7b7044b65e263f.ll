@@ -23,4 +23,20 @@ entry:
   ret i32 %4
 }
 
+; 6 occurrences:
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1szjr41vjnxcxgyq70q0xb6lv.ll
+; zed-rs/optimized/3hyavwlupfwy674k0u5ll7gv6.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
+; zed-rs/optimized/f4g1cwrteaiub5fsoifj5amxy.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000002(i1 %0, i8 %1) #0 {
+entry:
+  %2 = trunc nuw i8 %1 to i1
+  %3 = select i1 %2, i1 %0, i1 false
+  %4 = select i1 %3, i32 8221, i32 8220
+  ret i32 %4
+}
+
 attributes #0 = { nounwind }

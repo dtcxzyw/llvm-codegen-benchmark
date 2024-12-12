@@ -1,4 +1,4 @@
-func0000000000000331:                   # @func0000000000000331
+func0000000000000661:                   # @func0000000000000661
 	cmpl	$192, %edx
 	movl	$2, %eax
 	cmovneq	%rsi, %rax
@@ -6,19 +6,19 @@ func0000000000000331:                   # @func0000000000000331
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	testl	%edx, %edx
 	sete	%cl
 	incq	%rdi
-	cmpq	%rsi, %rdi
+	cmpq	%rdi, %rsi
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	testl	%edx, %edx
 	sete	%cl
 	incq	%rdi
-	cmpq	%rsi, %rdi
+	cmpq	%rdi, %rsi
 	sete	%al
 	andb	%cl, %al
 	retq

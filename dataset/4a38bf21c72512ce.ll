@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 12 occurrences:
 ; libjpeg-turbo/optimized/jdsample.c.ll
 ; libpng/optimized/pngread.c.ll
 ; openjdk/optimized/jdsample.ll
@@ -9,6 +9,9 @@
 ; openusd/optimized/reconintra.c.ll
 ; openusd/optimized/scale_common.c.ll
 ; stb/optimized/stb_dxt.c.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000000f(i8 %0) #0 {
 entry:

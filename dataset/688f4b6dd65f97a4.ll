@@ -55,12 +55,25 @@
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
 ; wasmtime-rs/optimized/4190jy0hpyvhha7p.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000026a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000008ca(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
-  %4 = icmp sgt i64 %3, %0
+  %4 = icmp slt i64 %0, %3
   %5 = icmp sgt i64 %0, 0
   %6 = and i1 %5, %4
+  ret i1 %6
+}
+
+; 2 occurrences:
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000185(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = icmp ule i64 %0, %3
+  %5 = icmp ne i64 %0, 4294967295
+  %6 = and i1 %4, %5
   ret i1 %6
 }
 
@@ -68,11 +81,35 @@ entry:
 ; faiss/optimized/pq4_fast_scan.cpp.ll
 ; pybind11/optimized/test_stl_binders.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000008a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   %5 = icmp sgt i64 %0, -1
+  %6 = and i1 %5, %4
+  ret i1 %6
+}
+
+; 1 occurrences:
+; redis/optimized/bitops.ll
+; Function Attrs: nounwind
+define i1 @func000000000000094a(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub nuw i64 %1, %2
+  %4 = icmp sgt i64 %0, %3
+  %5 = icmp sgt i64 %0, 0
+  %6 = and i1 %5, %4
+  ret i1 %6
+}
+
+; 1 occurrences:
+; cpython/optimized/sre.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000cc(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = icmp slt i64 %0, %3
+  %5 = icmp ne i64 %0, 4294967295
   %6 = and i1 %5, %4
   ret i1 %6
 }

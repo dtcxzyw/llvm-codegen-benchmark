@@ -27,8 +27,9 @@ entry:
   ret i16 %2
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; image-rs/optimized/254ue5dpb10tdnze.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; openjdk/optimized/cmsopt.ll
 ; recastnavigation/optimized/DetourDebugDraw.cpp.ll
@@ -71,7 +72,13 @@ entry:
   ret i16 %2
 }
 
-; 3 occurrences:
+; 9 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; linux/optimized/alps.ll
 ; quantlib/optimized/dataparsers.ll
 ; quantlib/optimized/date.ll
@@ -80,16 +87,6 @@ define i16 @func0000000000000004(i32 %0) #0 {
 entry:
   %1 = trunc nsw i32 %0 to i16
   %2 = mul i16 %1, 12
-  ret i16 %2
-}
-
-; 1 occurrences:
-; libquic/optimized/reduce.c.ll
-; Function Attrs: nounwind
-define i16 @func000000000000000c(i32 %0) #0 {
-entry:
-  %1 = trunc nuw nsw i32 %0 to i16
-  %2 = mul i16 %1, -12289
   ret i16 %2
 }
 

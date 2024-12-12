@@ -5,7 +5,7 @@
 ; qemu/optimized/hw_core_loader.c.ll
 ; redis/optimized/cluster_legacy.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %0, -65536
   %3 = or disjoint i32 %2, %1
@@ -19,7 +19,7 @@ entry:
 define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %0, -2147483648
-  %3 = or i32 %2, %1
+  %3 = or i32 %1, %2
   %4 = icmp eq i32 %3, %0
   ret i1 %4
 }
@@ -37,10 +37,10 @@ entry:
 ; ncnn/optimized/lstm_x86_fma.cpp.ll
 ; ncnn/optimized/lstm_x86_xop.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %0, -4
-  %3 = or disjoint i32 %2, %1
+  %3 = or disjoint i32 %1, %2
   %4 = icmp slt i32 %3, %0
   ret i1 %4
 }

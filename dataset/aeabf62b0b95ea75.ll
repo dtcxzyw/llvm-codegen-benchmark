@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 28 occurrences:
 ; bullet3/optimized/btDeformableMultiBodyDynamicsWorld.ll
 ; darktable/optimized/introspection_colorbalance.c.ll
 ; darktable/optimized/introspection_colorbalancergb.c.ll
@@ -27,6 +27,7 @@
 ; mitsuba3/optimized/sphere.cpp.ll
 ; ocio/optimized/GradingTone.cpp.ll
 ; openusd/optimized/colr.c.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i1 %0, float %1) #0 {
 entry:

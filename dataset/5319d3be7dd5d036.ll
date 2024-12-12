@@ -1,5 +1,5 @@
 
-; 149 occurrences:
+; 156 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abc.c.ll
@@ -127,6 +127,13 @@
 ; abseil-cpp/optimized/bind.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/async.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/wait.ll
 ; cpython/optimized/typeobject.ll
 ; git/optimized/revision.ll
 ; glslang/optimized/ParseHelper.cpp.ll

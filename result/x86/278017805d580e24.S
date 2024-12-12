@@ -4,36 +4,30 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	$27, %rsi
 	setb	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	addl	%edx, %esi
 	addq	%rdi, %rsi
 	movabsq	$768614336404564650, %rax       # imm = 0xAAAAAAAAAAAAAAA
 	cmpq	%rax, %rsi
 	seta	%al
 	retq
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	addl	%edx, %esi
 	addq	%rdi, %rsi
 	cmpq	$122785, %rsi                   # imm = 0x1DFA1
 	setae	%al
 	retq
-func0000000000000131:                   # @func0000000000000131
+func0000000000000261:                   # @func0000000000000261
 	addl	%edx, %esi
 	orq	%rdi, %rsi
 	sete	%al
 	retq
-func00000000000001cc:                   # @func00000000000001cc
+func000000000000038c:                   # @func000000000000038c
 	addl	%edx, %esi
 	addq	%rdi, %rsi
 	setne	%al
 	retq
-func00000000000001c4:                   # @func00000000000001c4
-	addl	%edx, %esi
-	addq	%rdi, %rsi
-	cmpq	$79, %rsi
-	setb	%al
-	retq
-func00000000000001f4:                   # @func00000000000001f4
+func0000000000000384:                   # @func0000000000000384
 	addl	%edx, %esi
 	addq	%rdi, %rsi
 	cmpq	$79, %rsi
@@ -45,24 +39,24 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	$2147483647, %rsi               # imm = 0x7FFFFFFF
 	seta	%al
 	retq
-func00000000000001c8:                   # @func00000000000001c8
+func0000000000000388:                   # @func0000000000000388
 	addl	%edx, %esi
 	addq	%rdi, %rsi
 	cmpq	$2147483647, %rsi               # imm = 0x7FFFFFFF
 	seta	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	addl	%edx, %esi
 	addq	%rdi, %rsi
 	cmpq	$3, %rsi
 	sete	%al
 	retq
-func0000000000000091:                   # @func0000000000000091
+func0000000000000121:                   # @func0000000000000121
 	addl	%edx, %esi
 	addq	%rdi, %rsi
 	sete	%al
 	retq
-func00000000000001c1:                   # @func00000000000001c1
+func0000000000000381:                   # @func0000000000000381
 	addl	%edx, %esi
 	addq	%rdi, %rsi
 	sete	%al

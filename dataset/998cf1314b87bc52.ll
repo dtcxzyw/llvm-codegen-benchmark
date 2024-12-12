@@ -2,23 +2,11 @@
 ; 1 occurrences:
 ; imgui/optimized/imgui.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000102(float %0, i32 %1) #0 {
+define i1 @func0000000000000202(float %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 528
   %3 = icmp eq i32 %2, 16
   %4 = fcmp oeq float %0, 0.000000e+00
-  %5 = or i1 %3, %4
-  ret i1 %5
-}
-
-; 1 occurrences:
-; imgui/optimized/imgui_tables.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000162(float %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 32
-  %3 = icmp eq i32 %2, 0
-  %4 = fcmp ule float %0, 0.000000e+00
   %5 = or i1 %3, %4
   ret i1 %5
 }
@@ -38,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; nori/optimized/nanovg.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000042(float %0, i32 %1) #0 {
+define i1 @func0000000000000082(float %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -3
   %3 = icmp eq i32 %2, 1

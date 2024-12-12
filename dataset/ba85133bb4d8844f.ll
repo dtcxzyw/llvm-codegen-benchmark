@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/mpih-div.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000049(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000089(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = xor i64 %0, -1
@@ -26,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/virtio_pci_modern.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = xor i64 %0, -1

@@ -1,9 +1,10 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; hyperscan/optimized/ComponentRepeat.cpp.ll
 ; linux/optimized/kfifo.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
+; lvgl/optimized/lv_area.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; mitsuba3/optimized/jitallocator.cpp.ll
 ; oiio/optimized/Reader.cpp.ll
@@ -12,8 +13,6 @@
 ; openblas/optimized/dlatmt.c.ll
 ; opencv/optimized/convolution_layer.cpp.ll
 ; openexr/optimized/ImfDeepScanLineInputFile.cpp.ll
-; openusd/optimized/stbImage.cpp.ll
-; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
@@ -24,15 +23,13 @@ entry:
   ret i32 %5
 }
 
-; 37 occurrences:
+; 35 occurrences:
 ; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/extraUtilMisc.c.ll
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; graphviz/optimized/graph_generator.c.ll
-; gromacs/optimized/dlarfb.cpp.ll
-; gromacs/optimized/slarfb.cpp.ll
 ; icu/optimized/collationweights.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; meshlab/optimized/edit_paint.cpp.ll
@@ -81,7 +78,7 @@ define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = sub nsw i32 %3, %1
-  %5 = mul i32 %4, %0
+  %5 = mul i32 %0, %4
   ret i32 %5
 }
 
@@ -120,7 +117,7 @@ define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = sub nsw i32 %3, %1
-  %5 = mul nsw i32 %4, %0
+  %5 = mul nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -135,7 +132,7 @@ entry:
 define i32 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, -1
-  %4 = add i32 %3, %2
+  %4 = add i32 %2, %3
   %5 = mul nsw i32 %4, %0
   ret i32 %5
 }
@@ -148,17 +145,6 @@ entry:
   %3 = add nuw i32 %2, 1
   %4 = sub i32 %3, %1
   %5 = mul nsw i32 %4, %0
-  ret i32 %5
-}
-
-; 1 occurrences:
-; libquic/optimized/ntt.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nuw nsw i32 %2, 36867
-  %4 = sub nsw i32 %3, %1
-  %5 = mul i32 %4, %0
   ret i32 %5
 }
 

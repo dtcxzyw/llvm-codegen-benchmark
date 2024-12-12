@@ -8,7 +8,7 @@ func0000000000000037:                   # @func0000000000000037
 	retq
 .LCPI1_0:
 	.long	1025                            # 0x401
-func0000000000000023:                   # @func0000000000000023
+func00000000000000a3:                   # @func00000000000000a3
 	vpcmpltud	.LCPI1_0(%rip){1to4}, %xmm2, %k1
 	vmovdqa32	%xmm0, %xmm1 {%k1}
 	vpcmpeqd	%xmm0, %xmm0, %xmm0
@@ -61,18 +61,20 @@ func000000000000000f:                   # @func000000000000000f
 	vpaddd	.LCPI6_1(%rip){1to4}, %xmm1, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
-func0000000000000033:                   # @func0000000000000033
-	vpmovd2m	%xmm2, %k1
+.LCPI7_0:
+	.long	1                               # 0x1
+func0000000000000032:                   # @func0000000000000032
+	vpcmpltd	.LCPI7_0(%rip){1to4}, %xmm2, %k1
 	vmovdqa32	%xmm0, %xmm1 {%k1}
 	vpcmpeqd	%xmm0, %xmm0, %xmm0
 	vpaddd	%xmm0, %xmm1, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
-func0000000000000032:                   # @func0000000000000032
+func0000000000000033:                   # @func0000000000000033
 	vpmovd2m	%xmm2, %k1
 	vmovdqa32	%xmm0, %xmm1 {%k1}
 	vpcmpeqd	%xmm0, %xmm0, %xmm0
-	vpsubd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm0, %xmm1, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
 func0000000000000034:                   # @func0000000000000034
@@ -127,7 +129,7 @@ func0000000000000050:                   # @func0000000000000050
 	retq
 .LCPI15_0:
 	.long	3121                            # 0xc31
-func0000000000000042:                   # @func0000000000000042
+func00000000000000c2:                   # @func00000000000000c2
 	vpcmpnleud	.LCPI15_0(%rip){1to4}, %xmm2, %k1
 	vmovdqa32	%xmm0, %xmm1 {%k1}
 	vpcmpeqd	%xmm0, %xmm0, %xmm0
@@ -138,7 +140,7 @@ func0000000000000042:                   # @func0000000000000042
 	.long	2                               # 0x2
 .LCPI16_1:
 	.long	4294967293                      # 0xfffffffd
-func0000000000000021:                   # @func0000000000000021
+func00000000000000a1:                   # @func00000000000000a1
 	vpcmpltud	.LCPI16_0(%rip){1to4}, %xmm2, %k1
 	vmovdqa32	%xmm0, %xmm1 {%k1}
 	vpaddd	.LCPI16_1(%rip){1to4}, %xmm1, %xmm0

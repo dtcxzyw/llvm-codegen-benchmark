@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 28 occurrences:
 ; abseil-cpp/optimized/crc.cc.ll
 ; arrow/optimized/crc32.cc.ll
 ; assimp/optimized/zip.c.ll
@@ -27,7 +27,6 @@
 ; stb/optimized/stb_image_write.c.ll
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
-; wireshark/optimized/packet-btbredr_rf.c.ll
 ; wireshark/optimized/packet-sbus.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i8 %1) #0 {

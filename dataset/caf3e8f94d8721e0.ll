@@ -1,6 +1,7 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; abc/optimized/extraUtilCanon.c.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; oiio/optimized/Codec.cpp.ll
 ; raylib/optimized/rcore.c.ll
@@ -14,13 +15,12 @@ entry:
   ret i32 %6
 }
 
-; 2 occurrences:
-; abc/optimized/mfsSat.c.ll
+; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = shl i32 %0, 28
+  %3 = shl i32 %0, 2
   %4 = or i32 %1, %2
   %5 = or i32 %4, %3
   %6 = or i32 %5, %0

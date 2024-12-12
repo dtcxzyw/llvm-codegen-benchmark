@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.zero	16,8
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpsubb	%xmm3, %xmm2, %xmm2
 	vpcmpltub	%xmm1, %xmm2, %k1
@@ -9,7 +9,7 @@ func000000000000004c:                   # @func000000000000004c
 	retq
 .LCPI1_0:
 	.zero	16,8
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpsubb	%xmm3, %xmm2, %xmm2
 	vpcmpltub	%xmm1, %xmm2, %k1

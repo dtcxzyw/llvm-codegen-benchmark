@@ -12,12 +12,11 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; bullet3/optimized/b3OptimizedBvh.ll
 ; bullet3/optimized/b3QuantizedBvh.ll
 ; bullet3/optimized/btOptimizedBvh.ll
 ; bullet3/optimized/btQuantizedBvh.ll
-; freetype/optimized/pcf.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000010(i1 %0, i16 %1, i16 %2) #0 {
 entry:

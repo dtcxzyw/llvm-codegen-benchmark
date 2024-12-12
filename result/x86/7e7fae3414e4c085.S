@@ -48,3 +48,8 @@ func0000000000000009:                   # @func0000000000000009
 	setae	%al
 	andb	%dil, %al
 	retq
+func0000000000000019:                   # @func0000000000000019
+	cmpw	%dx, %si
+	setae	%al
+	andb	%dil, %al
+	retq

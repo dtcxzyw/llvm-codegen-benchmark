@@ -1,6 +1,5 @@
 
-; 11 occurrences:
-; icu/optimized/ubidi.ll
+; 9 occurrences:
 ; llvm/optimized/DbiStream.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luajit/optimized/lj_opt_loop.ll
@@ -10,7 +9,6 @@
 ; minetest/optimized/player.cpp.ll
 ; qemu/optimized/hw_virtio_vhost-shadow-virtqueue.c.ll
 ; wireshark/optimized/packet-tls-utils.c.ll
-; zxing/optimized/GTIN.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, i16 %1) #0 {
 entry:
@@ -23,7 +21,7 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/inventorymanager.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000088(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
   %3 = trunc i64 %0 to i32
@@ -34,7 +32,7 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/content_cao.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000046(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = trunc nuw i64 %0 to i32
@@ -77,18 +75,18 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaKf.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000078(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = trunc nuw nsw i64 %0 to i32
-  %4 = icmp ugt i32 %3, %2
+  %4 = icmp samesign ugt i32 %3, %2
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; stockfish/optimized/position.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i16 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
   %3 = trunc nsw i64 %0 to i32
@@ -109,14 +107,11 @@ entry:
   ret i1 %4
 }
 
-; 9 occurrences:
+; 6 occurrences:
 ; clamav/optimized/bytecode.c.ll
 ; freetype/optimized/truetype.c.ll
-; icu/optimized/uresdata.ll
-; linux/optimized/ich8lan.ll
 ; linux/optimized/netfilter.ll
 ; linux/optimized/nf_nat_proto.ll
-; linux/optimized/nvm.ll
 ; linux/optimized/virtio_net.ll
 ; llvm/optimized/RISCVAsmPrinter.cpp.ll
 ; Function Attrs: nounwind
@@ -125,6 +120,19 @@ entry:
   %2 = zext i16 %1 to i32
   %3 = trunc i64 %0 to i32
   %4 = icmp ult i32 %3, %2
+  ret i1 %4
+}
+
+; 3 occurrences:
+; icu/optimized/uresdata.ll
+; linux/optimized/ich8lan.ll
+; linux/optimized/nvm.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i64 %0, i16 %1) #0 {
+entry:
+  %2 = zext i16 %1 to i32
+  %3 = trunc i64 %0 to i32
+  %4 = icmp samesign ult i32 %3, %2
   ret i1 %4
 }
 
@@ -142,7 +150,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/extents.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000066(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = trunc nuw nsw i64 %0 to i32
@@ -154,11 +162,23 @@ entry:
 ; z3/optimized/mam.cpp.ll
 ; z3/optimized/q_mam.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = trunc nuw nsw i64 %0 to i32
   %4 = icmp eq i32 %3, %2
+  ret i1 %4
+}
+
+; 2 occurrences:
+; icu/optimized/ubidi.ll
+; zxing/optimized/GTIN.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i64 %0, i16 %1) #0 {
+entry:
+  %2 = zext i16 %1 to i32
+  %3 = trunc i64 %0 to i32
+  %4 = icmp samesign ugt i32 %3, %2
   ret i1 %4
 }
 
@@ -177,7 +197,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/truetype.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = trunc nsw i64 %0 to i32

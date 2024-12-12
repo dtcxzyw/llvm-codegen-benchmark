@@ -100,7 +100,6 @@
 ; mitsuba3/optimized/perspective.cpp.ll
 ; mitsuba3/optimized/plastic.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/point.cpp.ll
 ; mitsuba3/optimized/polarizer.cpp.ll
 ; mitsuba3/optimized/pplastic.cpp.ll
@@ -199,6 +198,7 @@
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
+; turborepo-rs/optimized/7fw9xnh6zcxu0x094jeq6b04v.ll
 ; wasmtime-rs/optimized/3gnma2m1zwm5wpa3.ll
 ; wasmtime-rs/optimized/4aijogcjfl814gfb.ll
 ; Function Attrs: nounwind
@@ -208,6 +208,18 @@ entry:
   %4 = icmp eq i8 %3, 0
   %5 = select i1 %4, i64 %0, i64 %1
   ret i64 %5
+}
+
+; 2 occurrences:
+; openssl/optimized/libssl-lib-quic_ackm.ll
+; openssl/optimized/libssl-shlib-quic_ackm.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i64 %0, i64 %1, i8 %2) #0 {
+entry:
+  %3 = and i8 %2, 2
+  %.not.not = icmp eq i8 %3, 0
+  %4 = select i1 %.not.not, i64 %0, i64 %1
+  ret i64 %4
 }
 
 attributes #0 = { nounwind }

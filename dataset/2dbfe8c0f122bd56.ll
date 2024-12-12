@@ -1,9 +1,10 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; postgres/optimized/brin.ll
 ; qemu/optimized/hw_acpi_erst.c.ll
 ; slurm/optimized/job_test.ll
 ; sqlite/optimized/sqlite3.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:

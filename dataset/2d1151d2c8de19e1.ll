@@ -1,5 +1,5 @@
 
-; 576 occurrences:
+; 571 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/convert_test.cc.ll
@@ -18,11 +18,19 @@
 ; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/sweep_context.cc.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/ext.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/graphml.ll
+; boost/optimized/pid.ll
+; boost/optimized/process.ll
+; boost/optimized/settings_parser.ll
+; boost/optimized/shell.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; casadi/optimized/mx_function.cpp.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; casadi/optimized/sx_function.cpp.ll
-; casadi/optimized/sx_instantiator.cpp.ll
 ; ceres/optimized/array_utils.cc.ll
 ; ceres/optimized/block_jacobian_writer.cc.ll
 ; ceres/optimized/compressed_row_jacobian_writer.cc.ll
@@ -33,7 +41,6 @@
 ; ceres/optimized/problem_impl.cc.ll
 ; ceres/optimized/schur_complement_solver.cc.ll
 ; ceres/optimized/trust_region_minimizer.cc.ll
-; cmake/optimized/ProcessUNIX.c.ll
 ; cmake/optimized/cmCTestTestHandler.cxx.ll
 ; cmake/optimized/cmComputeComponentGraph.cxx.ll
 ; cmake/optimized/cmFileAPI.cxx.ll
@@ -103,9 +110,7 @@
 ; gromacs/optimized/genion.cpp.ll
 ; gromacs/optimized/gmx_disre.cpp.ll
 ; gromacs/optimized/gmx_wham.cpp.ll
-; gromacs/optimized/grompp.cpp.ll
 ; gromacs/optimized/hbond.cpp.ll
-; gromacs/optimized/index.cpp.ll
 ; gromacs/optimized/indexutil.cpp.ll
 ; gromacs/optimized/lincs.cpp.ll
 ; gromacs/optimized/params.cpp.ll
@@ -121,13 +126,11 @@
 ; hermes/optimized/Mem2Reg.cpp.ll
 ; hermes/optimized/ProfileAnalyzer.cpp.ll
 ; hermes/optimized/RegAlloc.cpp.ll
-; hermes/optimized/TraceInterpreter.cpp.ll
 ; hyperscan/optimized/ComponentRepeat.cpp.ll
 ; hyperscan/optimized/goughcompile.cpp.ll
 ; hyperscan/optimized/ng_haig.cpp.ll
 ; hyperscan/optimized/ng_is_equal.cpp.ll
 ; hyperscan/optimized/ng_uncalc_components.cpp.ll
-; hyperscan/optimized/rose_build_lookaround.cpp.ll
 ; hyperscan/optimized/rose_build_role_aliasing.cpp.ll
 ; hyperscan/optimized/teddy_compile.cpp.ll
 ; icu/optimized/icuexportdata.ll
@@ -197,7 +200,6 @@
 ; llvm/optimized/MemProfContextDisambiguation.cpp.ll
 ; llvm/optimized/MemoryDependenceAnalysis.cpp.ll
 ; llvm/optimized/Metadata.cpp.ll
-; llvm/optimized/MveEmitter.cpp.ll
 ; llvm/optimized/NewGVN.cpp.ll
 ; llvm/optimized/NonRelocatableStringpool.cpp.ll
 ; llvm/optimized/ParseDecl.cpp.ll
@@ -273,7 +275,6 @@
 ; minetest/optimized/map.cpp.ll
 ; minetest/optimized/mg_biome.cpp.ll
 ; minetest/optimized/nodedef.cpp.ll
-; mitsuba3/optimized/bitmap.cpp.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
@@ -299,7 +300,6 @@
 ; nix/optimized/attr-set.ll
 ; nix/optimized/shared.ll
 ; nix/optimized/why-depends.ll
-; nix/optimized/worker.ll
 ; nlohmann_json/optimized/unit.cpp.ll
 ; nori/optimized/chi2test.cpp.ll
 ; nori/optimized/warptest.cpp.ll
@@ -413,7 +413,6 @@
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; ozz-animation/optimized/jsoncpp.cpp.ll
 ; ozz-animation/optimized/raw_animation_utils.cc.ll
-; pbrt-v4/optimized/aggregates.cpp.ll
 ; protobuf/optimized/csharp_message.cc.ll
 ; protobuf/optimized/descriptor.cc.ll
 ; protobuf/optimized/enum.cc.ll
@@ -423,7 +422,6 @@
 ; protobuf/optimized/parse_function_generator.cc.ll
 ; protobuf/optimized/unparser.cc.ll
 ; proxygen/optimized/HTTP2PriorityQueue.cpp.ll
-; proxygen/optimized/RendezvousHash.cpp.ll
 ; quantlib/optimized/analytic_discr_geom_av_price_heston.ll
 ; quantlib/optimized/asianoption.ll
 ; quantlib/optimized/cmsmarketcalibration.ll
@@ -466,9 +464,6 @@
 ; sentencepiece/optimized/unigram_model_trainer.cc.ll
 ; spike/optimized/processor.ll
 ; spike/optimized/spike.ll
-; tev/optimized/Image.cpp.ll
-; tev/optimized/ImageLoader.cpp.ll
-; tev/optimized/ImageSaver.cpp.ll
 ; vcpkg/optimized/cofffilereader.cpp.ll
 ; vcpkg/optimized/commands.export.cpp.ll
 ; vcpkg/optimized/commands.list.cpp.ll
@@ -584,6 +579,61 @@ entry:
   %4 = sub i64 %3, %0
   %5 = ashr exact i64 %4, 2
   %6 = add nsw i64 %5, -1
+  ret i64 %6
+}
+
+; 43 occurrences:
+; abseil-cpp/optimized/node_hash_set_test.cc.ll
+; boost/optimized/matches_relation_factory.ll
+; casadi/optimized/sx_instantiator.cpp.ll
+; cmake/optimized/ProcessUNIX.c.ll
+; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
+; eastl/optimized/BenchmarkHeap.cpp.ll
+; eastl/optimized/TestHeap.cpp.ll
+; gromacs/optimized/grompp.cpp.ll
+; hermes/optimized/TraceInterpreter.cpp.ll
+; hyperscan/optimized/ng_uncalc_components.cpp.ll
+; hyperscan/optimized/rose_build_lookaround.cpp.ll
+; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
+; llvm/optimized/InstrRefBasedImpl.cpp.ll
+; llvm/optimized/MachinePipeliner.cpp.ll
+; llvm/optimized/MemProfContextDisambiguation.cpp.ll
+; llvm/optimized/MveEmitter.cpp.ll
+; llvm/optimized/SampleProfile.cpp.ll
+; llvm/optimized/VarLocBasedImpl.cpp.ll
+; luau/optimized/main.cpp.ll
+; meshlab/optimized/filter_geodesic.cpp.ll
+; meshlab/optimized/filter_plymc.cpp.ll
+; meshlab/optimized/filter_sampling.cpp.ll
+; meshlab/optimized/filter_texture.cpp.ll
+; meshlab/optimized/filter_voronoi.cpp.ll
+; meshlab/optimized/seam_remover.cpp.ll
+; mitsuba3/optimized/bitmap.cpp.ll
+; nix/optimized/why-depends.ll
+; nix/optimized/worker.ll
+; nlohmann_json/optimized/unit.cpp.ll
+; opencv/optimized/find_ellipses.cpp.ll
+; pbrt-v4/optimized/aggregates.cpp.ll
+; proxygen/optimized/RendezvousHash.cpp.ll
+; sentencepiece/optimized/unigram_model.cc.ll
+; tev/optimized/Image.cpp.ll
+; tev/optimized/ImageLoader.cpp.ll
+; tev/optimized/ImageSaver.cpp.ll
+; xgboost/optimized/adaptive.cc.ll
+; xgboost/optimized/auc.cc.ll
+; xgboost/optimized/quantile_obj.cc.ll
+; xgboost/optimized/random.cc.ll
+; xgboost/optimized/rank_metric.cc.ll
+; xgboost/optimized/ranking_utils.cc.ll
+; xgboost/optimized/stats.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000065(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 32
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %0
+  %5 = ashr exact i64 %4, 5
+  %6 = add nsw i64 %5, -2
   ret i64 %6
 }
 

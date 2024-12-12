@@ -1,8 +1,9 @@
 
-; 56 occurrences:
+; 57 occurrences:
 ; cpython/optimized/_decimal.ll
 ; duckdb/optimized/ub_duckdb_main.cpp.ll
 ; libevent/optimized/http.c.ll
+; lvgl/optimized/lv_svg_parser.ll
 ; nanosvg/optimized/nanosvg.ll
 ; postgres/optimized/ruleutils.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
@@ -57,7 +58,7 @@
 ; pybind11/optimized/test_vector_unique_ptr_member.cpp.ll
 ; pybind11/optimized/test_virtual_functions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002c4(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000984(i8 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
   %3 = and i64 %2, 4294983169

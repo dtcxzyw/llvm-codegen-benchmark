@@ -22,7 +22,7 @@
 ; mitsuba3/optimized/rapass.cpp.ll
 ; redis/optimized/ltable.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000161(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002c1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 32, i64 %2
@@ -55,7 +55,7 @@ entry:
 ; hyperscan/optimized/order.cpp.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001e1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000003c1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 8, i64 %2
@@ -68,7 +68,7 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/mapnode.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000171(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002e1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 8, i64 %2
@@ -82,7 +82,7 @@ entry:
 ; darktable/optimized/DngOpcodes.cpp.ll
 ; duckdb/optimized/ub_duckdb_nested_loop_join.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000341(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 32, i64 %2
@@ -96,7 +96,7 @@ entry:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000121(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000241(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 4, i64 %2
@@ -109,7 +109,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001b1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000361(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 8, i64 %2
@@ -122,7 +122,7 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/engine_hyperscan.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000003e1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 4, i64 %2

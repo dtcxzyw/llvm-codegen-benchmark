@@ -7,7 +7,7 @@
 ; jsonnet/optimized/rapidyaml.cpp.ll
 ; qemu/optimized/.._libqtest.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(ptr %0, ptr %1) #0 {
+define i1 @func000000000000010c(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp ugt ptr %1, %0
   %3 = icmp ne ptr %0, null
@@ -15,7 +15,7 @@ entry:
   ret i1 %4
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; clamav/optimized/fmap.c.ll
 ; csmith/optimized/ArrayVariable.cpp.ll
 ; entt/optimized/view.cpp.ll
@@ -24,13 +24,12 @@ entry:
 ; linux/optimized/tick-broadcast.ll
 ; llvm/optimized/BranchProbabilityInfo.cpp.ll
 ; llvm/optimized/SampleProfileInference.cpp.ll
-; nuttx/optimized/syslog_channel.c.ll
 ; php/optimized/phar_object.ll
 ; wireshark/optimized/file.c.ll
 ; z3/optimized/theory_str.cpp.ll
 ; z3/optimized/upolynomial.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, ptr %1) #0 {
+define i1 @func000000000000002c(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, %0
   %3 = icmp ne ptr %0, null
@@ -44,7 +43,7 @@ entry:
 ; linux/optimized/sparse.ll
 ; php/optimized/phpdbg_prompt.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, ptr %1) #0 {
+define i1 @func000000000000018c(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, %0
   %3 = icmp ne ptr %0, null
@@ -52,10 +51,11 @@ entry:
   ret i1 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/topology.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(ptr %0, ptr %1) #0 {
+define i1 @func000000000000008c(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp ult ptr %1, %0
   %3 = icmp ne ptr %0, null

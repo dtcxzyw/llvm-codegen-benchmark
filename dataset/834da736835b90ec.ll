@@ -14,7 +14,7 @@ define i32 @func000000000000001e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = shl nuw nsw i32 %3, 16
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -58,7 +58,7 @@ define i32 @func000000000000000e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = shl nuw nsw i32 %3, 4
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -84,7 +84,7 @@ entry:
   ret i32 %5
 }
 
-; 26 occurrences:
+; 27 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/ifTune.c.ll
@@ -102,6 +102,7 @@ entry:
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
 ; nuklear/optimized/unity.c.ll
+; php/optimized/crypt_sha256.ll
 ; postgres/optimized/regexp.ll
 ; postgres/optimized/spell.ll
 ; proxygen/optimized/HTTP2Framer.cpp.ll
@@ -116,7 +117,7 @@ define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = shl i32 %3, 20
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
@@ -166,19 +167,6 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
-; darktable/optimized/DngOpcodes.cpp.ll
-; opencv/optimized/unicomblock.cpp.ll
-; openjdk/optimized/TransformHelper.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %1, %2
-  %4 = shl i32 %3, 16
-  %5 = or i32 %4, %0
-  ret i32 %5
-}
-
 ; 4 occurrences:
 ; hermes/optimized/escape.cpp.ll
 ; openjdk/optimized/TransformHelper.ll
@@ -188,12 +176,12 @@ entry:
 define i32 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
-  %4 = shl nsw i32 %3, 8
-  %5 = or i32 %4, %0
+  %4 = shl nsw i32 %3, 16
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; abc/optimized/abcIf.c.ll
 ; abc/optimized/amapMerge.c.ll
 ; abc/optimized/fretTime.c.ll
@@ -201,7 +189,6 @@ entry:
 ; abc/optimized/hopObj.c.ll
 ; abc/optimized/ivyUtil.c.ll
 ; libwebp/optimized/anim_decode.c.ll
-; linux/optimized/hdac_regmap.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/isoch.ll
 ; openjdk/optimized/gtk2_interface.ll
@@ -210,7 +197,19 @@ define i32 @func0000000000000019(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = shl i32 %3, 24
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
+  ret i32 %5
+}
+
+; 2 occurrences:
+; darktable/optimized/DngOpcodes.cpp.ll
+; opencv/optimized/unicomblock.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %1, %2
+  %4 = shl i32 %3, 16
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -263,7 +262,7 @@ define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = shl nsw i32 %3, 1
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
@@ -274,7 +273,7 @@ define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = shl nsw i32 %3, 16
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -285,7 +284,7 @@ define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = shl nuw i32 %3, 24
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -296,7 +295,7 @@ define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = shl nuw i32 %3, 19
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -314,7 +313,7 @@ define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = shl nuw nsw i32 %3, 20
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
@@ -325,7 +324,7 @@ define i32 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = shl nuw nsw i32 %3, 15
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 

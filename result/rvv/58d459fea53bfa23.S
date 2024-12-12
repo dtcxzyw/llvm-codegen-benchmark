@@ -11,8 +11,8 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 func0000000000000003:                   # @func0000000000000003
 	vsetivli	zero, 16, e16, m2, ta, ma
-	vsll.vi	v8, v8, 3
-	li	a0, -128
+	vsll.vi	v8, v8, 4
+	li	a0, -256
 	vadd.vx	v8, v8, a0
 	ret
 func0000000000000007:                   # @func0000000000000007

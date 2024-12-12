@@ -1,5 +1,5 @@
 
-; 45 occurrences:
+; 46 occurrences:
 ; annoy/optimized/annoymodule.ll
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
 ; darktable/optimized/introspection_colorreconstruction.c.ll
@@ -37,6 +37,7 @@
 ; openusd/optimized/implicitSurfaceMeshUtils.cpp.ll
 ; openusd/optimized/quatf.cpp.ll
 ; openusd/optimized/rigidBodyAPI.cpp.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/VolumeAdvect.cc.ll
 ; pbrt-v4/optimized/cameras.cpp.ll
 ; pbrt-v4/optimized/shapes.cpp.ll

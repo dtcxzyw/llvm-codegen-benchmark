@@ -47,7 +47,7 @@ func0000000000000000:                   # @func0000000000000000
 	divl	%ecx
 	vpinsrd	$3, %eax, %xmm4, %xmm1
 	vinserti128	$1, %xmm3, %ymm1, %ymm1
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000021:                   # @func0000000000000021
 	vpaddd	%ymm2, %ymm1, %ymm2
@@ -98,7 +98,7 @@ func0000000000000021:                   # @func0000000000000021
 	divl	%ecx
 	vpinsrd	$3, %eax, %xmm4, %xmm1
 	vinserti128	$1, %xmm3, %ymm1, %ymm1
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000031:                   # @func0000000000000031
 	vpaddd	%ymm2, %ymm1, %ymm2

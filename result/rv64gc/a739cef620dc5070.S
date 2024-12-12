@@ -8,5 +8,5 @@ func0000000000000005:                   # @func0000000000000005
 	beqz	a1, .LBB1_2
 	sub	a0, a1, a2
 .LBB1_2:                                # %entry
-	addi	a0, a0, -1
+	addi	a0, a0, 8
 	ret

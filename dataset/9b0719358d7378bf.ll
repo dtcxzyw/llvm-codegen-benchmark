@@ -13,7 +13,10 @@ entry:
   ret i32 %6
 }
 
-; 1 occurrences:
+; 4 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; ncnn/optimized/mat.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000003d(i32 %0, i16 %1) #0 {

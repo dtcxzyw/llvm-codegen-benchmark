@@ -10,7 +10,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 .LCPI1_0:
 	.long	192                             # 0xc0
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	vpbroadcastd	.LCPI1_0(%rip), %ymm1   # ymm1 = [192,192,192,192,192,192,192,192]
 	vpand	%ymm1, %ymm0, %ymm0
 	vpcmpeqd	%ymm1, %ymm0, %k0

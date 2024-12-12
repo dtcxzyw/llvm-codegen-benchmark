@@ -1,8 +1,7 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; git/optimized/checkout.ll
 ; linux/optimized/fsopen.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; openssl/optimized/libcrypto-lib-x509_vfy.ll
 ; openssl/optimized/libcrypto-shlib-x509_vfy.ll
 ; sqlite/optimized/sqlite3.ll

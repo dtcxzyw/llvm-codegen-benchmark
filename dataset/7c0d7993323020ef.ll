@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 26 occurrences:
 ; clamav/optimized/pe_icons.c.ll
 ; freetype/optimized/ftbitmap.c.ll
 ; gromacs/optimized/gmx_enemat.cpp.ll
@@ -11,11 +11,12 @@
 ; linux/optimized/vt.ll
 ; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
+; lvgl/optimized/lv_draw_sw_blend.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; minetest/optimized/imagefilters.cpp.ll
 ; opencv/optimized/brisk.cpp.ll
@@ -34,7 +35,20 @@ entry:
   ret i64 %4
 }
 
-; 13 occurrences:
+; 3 occurrences:
+; darktable/optimized/CrwDecoder.cpp.ll
+; darktable/optimized/KodakDecompressor.cpp.ll
+; linux/optimized/vc.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000f(i32 %0, i32 %1) #0 {
+entry:
+  %2 = mul nuw nsw i32 %0, %1
+  %3 = lshr exact i32 %2, 2
+  %4 = zext nneg i32 %3 to i64
+  ret i64 %4
+}
+
+; 12 occurrences:
 ; arrow/optimized/key_map.cc.ll
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; gromacs/optimized/correlationtensor.cpp.ll
@@ -47,25 +61,11 @@ entry:
 ; opencv/optimized/cap_v4l.cpp.ll
 ; opencv/optimized/guided_filter.cpp.ll
 ; openspiel/optimized/tiny_bridge.cc.ll
-; qemu/optimized/hw_display_ramfb.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000d(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %0, %1
-  %3 = lshr i32 %2, 3
-  %4 = zext nneg i32 %3 to i64
-  ret i64 %4
-}
-
-; 3 occurrences:
-; darktable/optimized/CrwDecoder.cpp.ll
-; darktable/optimized/KodakDecompressor.cpp.ll
-; linux/optimized/vc.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000f(i32 %0, i32 %1) #0 {
-entry:
-  %2 = mul nuw nsw i32 %0, %1
-  %3 = lshr exact i32 %2, 2
+  %3 = lshr i32 %2, 1
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }

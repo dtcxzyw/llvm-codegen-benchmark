@@ -1,5 +1,6 @@
 
-; 72 occurrences:
+; 74 occurrences:
+; boost/optimized/matches_relation_factory.ll
 ; clamav/optimized/udf.c.ll
 ; cmake/optimized/archive_string.c.ll
 ; cpython/optimized/bufferedio.ll
@@ -21,6 +22,7 @@
 ; git/optimized/read-cache.ll
 ; graphviz/optimized/excontext.c.ll
 ; gromacs/optimized/colvars_memstream.cpp.ll
+; gromacs/optimized/convert_tpr.cpp.ll
 ; hermes/optimized/BytecodeDisassembler.cpp.ll
 ; hermes/optimized/MicrosoftDemangle.cpp.ll
 ; hyperscan/optimized/castlecompile.cpp.ll
@@ -78,11 +80,13 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = add i64 %4, 48
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
-; 10 occurrences:
+; 12 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; cmake/optimized/cmGeneratorExpression.cxx.ll
 ; cmake/optimized/http.c.ll
 ; curl/optimized/libcurl_la-http.ll
@@ -99,23 +103,30 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = add nsw i64 %4, 1
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
-; 5 occurrences:
+; 12 occurrences:
 ; coreutils-rs/optimized/5dmrxisq30bb0giv.ll
 ; coreutils-rs/optimized/gy31avu15bepulc.ll
 ; folly/optimized/TimeUtil.cpp.ll
 ; ripgrep-rs/optimized/3st324p1krxj76od.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
+; zed-rs/optimized/18fe87pvcvcmccnycfh7q0atj.ll
+; zed-rs/optimized/247uvyk35qd8oseq9xzgyw4k7.ll
+; zed-rs/optimized/3hsn9nyfo1lk9hjlnx6o7tl2d.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
+; zed-rs/optimized/9c745mpyev6016wrbif8w6jcd.ll
+; zed-rs/optimized/a19dler2qrv3afh8hccxiqxn7.ll
+; zed-rs/optimized/d334eo7xhndhquqddprlqx6j8.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = add nuw i64 %4, 1
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -140,7 +151,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = add nsw i64 %4, 11296
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 

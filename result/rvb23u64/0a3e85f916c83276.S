@@ -49,6 +49,30 @@ func000000000000000a:                   # @func000000000000000a
 	sh2add	a0, a1, a0
 	addi	a0, a0, 40
 	ret
+func000000000000002e:                   # @func000000000000002e
+	addi	a1, a1, 15
+	andi	a1, a1, -16
+	add	a0, a0, a1
+	addi	a0, a0, 16
+	ret
+func0000000000000022:                   # @func0000000000000022
+	addi	a1, a1, 15
+	andi	a1, a1, -16
+	add	a0, a0, a1
+	addi	a0, a0, 17
+	ret
+func0000000000000026:                   # @func0000000000000026
+	addi	a1, a1, 15
+	andi	a1, a1, -16
+	add	a0, a0, a1
+	addi	a0, a0, 17
+	ret
+func0000000000000002:                   # @func0000000000000002
+	addi	a1, a1, 19
+	andi	a1, a1, -16
+	add	a0, a0, a1
+	addi	a0, a0, 17
+	ret
 func0000000000000035:                   # @func0000000000000035
 	addi	a1, a1, 7
 	lui	a2, 32

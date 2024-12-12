@@ -1,4 +1,19 @@
 
+; 3 occurrences:
+; linux/optimized/dmar.ll
+; qemu/optimized/hw_pci_shpc.c.ll
+; wireshark/optimized/packet-ansi_a.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000070(ptr %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 2
+  %3 = and i32 %2, 124
+  %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 34
+  ret ptr %6
+}
+
 ; 71 occurrences:
 ; cvc5/optimized/metakind.cpp.ll
 ; cvc5/optimized/node_builder.cpp.ll
@@ -72,27 +87,13 @@
 ; llvm/optimized/Visitor.cpp.ll
 ; php/optimized/pcre2_compile.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000007f(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = and i32 %2, 131070
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i32, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 4
-  ret ptr %6
-}
-
-; 2 occurrences:
-; linux/optimized/dmar.ll
-; wireshark/optimized/packet-ansi_a.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000070(ptr %0, i32 %1) #0 {
-entry:
-  %2 = shl i32 %1, 1
-  %3 = and i32 %2, 510
-  %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr i8, ptr %0, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 -1
+  %5 = getelementptr nusw nuw i32, ptr %0, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 4
   ret ptr %6
 }
 

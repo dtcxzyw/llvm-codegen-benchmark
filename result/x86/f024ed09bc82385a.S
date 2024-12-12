@@ -1,7 +1,7 @@
 func0000000000000000:                   # @func0000000000000000
 	andl	%esi, %edi
-	notb	%dil
-	movzbl	%dil, %eax
-	andl	$1, %eax
-	leaq	-2(%rax,%rax), %rax
+	xorl	%ecx, %ecx
+	testb	$1, %dil
+	movl	$20, %eax
+	cmoveq	%rcx, %rax
 	retq

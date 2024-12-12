@@ -1,15 +1,14 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; clamav/optimized/filtering.c.ll
 ; duckdb/optimized/ub_duckdb_execution_index_art.cpp.ll
 ; hyperscan/optimized/rose_build_compile.cpp.ll
 ; image-rs/optimized/ptscn4jakoj4p9m.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
-; ncnn/optimized/lstm_x86_avx512vnni.cpp.ll
-; ncnn/optimized/lstm_x86_avxvnni.cpp.ll
 ; ruby/optimized/regcomp.ll
 ; ruby/optimized/symbol.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000008(i64 %0) #0 {
 entry:
@@ -18,7 +17,7 @@ entry:
   ret i8 %2
 }
 
-; 433 occurrences:
+; 430 occurrences:
 ; abc/optimized/abcNpn.c.ll
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/cuddUtil.c.ll
@@ -41,6 +40,11 @@ entry:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFCommon.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/format_args.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/to_chars.ll
+; boost/optimized/url_base.ll
 ; c3c/optimized/lexer.c.ll
 ; clamav/optimized/htmlnorm.c.ll
 ; clamav/optimized/secpassword.cpp.ll
@@ -56,7 +60,6 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; eastl/optimized/EAString.cpp.ll
 ; eastl/optimized/Int128_t.cpp.ll
-; flatbuffers/optimized/flatc.cpp.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
@@ -156,9 +159,7 @@ entry:
 ; linux/optimized/intel_sdvo.ll
 ; linux/optimized/mmconfig-shared.ll
 ; linux/optimized/nsaccess.ll
-; linux/optimized/nvram.ll
 ; linux/optimized/pcmcia_resource.ll
-; linux/optimized/rpl.ll
 ; linux/optimized/scsi_lib.ll
 ; linux/optimized/seq_file.ll
 ; linux/optimized/skbuff.ll
@@ -191,6 +192,7 @@ entry:
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; luau/optimized/Compiler.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meilisearch-rs/optimized/4rynht2gwvphprvy.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -198,8 +200,6 @@ entry:
 ; minetest/optimized/luaentity_sao.cpp.ll
 ; minetest/optimized/player_sao.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
-; ncnn/optimized/lstm_x86_avx512vnni.cpp.ll
-; ncnn/optimized/lstm_x86_avxvnni.cpp.ll
 ; nix/optimized/attrs.ll
 ; nix/optimized/binary-cache-store.ll
 ; nix/optimized/build.ll
@@ -218,8 +218,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -370,14 +368,12 @@ entry:
 ; openssl/optimized/libssl-lib-quic_stream_map.ll
 ; openssl/optimized/libssl-lib-quic_tserver.ll
 ; openssl/optimized/libssl-lib-quic_txp.ll
-; openssl/optimized/libssl-lib-ssl3_meth.ll
 ; openssl/optimized/libssl-lib-tls1_meth.ll
 ; openssl/optimized/libssl-shlib-quic_impl.ll
 ; openssl/optimized/libssl-shlib-quic_rx_depack.ll
 ; openssl/optimized/libssl-shlib-quic_stream_map.ll
 ; openssl/optimized/libssl-shlib-quic_tserver.ll
 ; openssl/optimized/libssl-shlib-quic_txp.ll
-; openssl/optimized/libssl-shlib-ssl3_meth.ll
 ; openssl/optimized/libssl-shlib-tls1_meth.ll
 ; openssl/optimized/ossltest-dso-e_ossltest.ll
 ; openusd/optimized/fast-dtoa.cc.ll
@@ -445,12 +441,12 @@ entry:
 ; wasmtime-rs/optimized/456j0x8j3xyjpk7h.ll
 ; wireshark/optimized/packet-erf.c.ll
 ; wireshark/optimized/packet-gsm_a_rr.c.ll
-; wireshark/optimized/packet-sdh.c.ll
 ; wireshark/optimized/packet-snort-config.c.ll
 ; wireshark/optimized/packet-umts_fp.c.ll
 ; wireshark/optimized/wireshark_main_window.cpp.ll
 ; z3/optimized/ast_smt2_pp.cpp.ll
 ; z3/optimized/sexpr.cpp.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; zxing/optimized/AZHighLevelEncoder.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i64 %0) #0 {
@@ -487,7 +483,8 @@ entry:
   ret i8 %2
 }
 
-; 11 occurrences:
+; 12 occurrences:
+; boost/optimized/static_string.ll
 ; cpython/optimized/obmalloc.ll
 ; cvc5/optimized/synth_rew_rules.cpp.ll
 ; git/optimized/color.ll
@@ -507,10 +504,11 @@ entry:
   ret i8 %2
 }
 
-; 38 occurrences:
+; 45 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/parse.cc.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/io.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -546,6 +544,12 @@ entry:
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/4hgzf672qwd8x8ke1407yey6m.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000000f(i64 %0) #0 {
 entry:
@@ -554,14 +558,15 @@ entry:
   ret i8 %2
 }
 
-; 14 occurrences:
+; 16 occurrences:
+; boost/optimized/src.ll
 ; hyperscan/optimized/ng_revacc.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
+; lvgl/optimized/lv_ime_pinyin.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; openjdk/optimized/zAllocator.ll
 ; openspiel/optimized/maedn.cc.ll
-; openssl/optimized/secmemtest-bin-secmemtest.ll
 ; openssl/optimized/stack_test-bin-stack_test.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
@@ -569,11 +574,12 @@ entry:
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wireshark/optimized/packet-dmp.c.ll
 ; wireshark/optimized/packet-ssh.c.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i8
-  %2 = add nuw nsw i8 %1, 33
+  %2 = add nuw nsw i8 %1, 65
   ret i8 %2
 }
 
@@ -622,9 +628,8 @@ entry:
   ret i8 %2
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; icu/optimized/ucnvscsu.ll
-; linux/optimized/nvram.ll
 ; softposit-rs/optimized/kf9u47qfx5x7qom.ll
 ; spike/optimized/disasm.ll
 ; Function Attrs: nounwind

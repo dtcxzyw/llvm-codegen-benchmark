@@ -1,6 +1,8 @@
 
-; 27 occurrences:
+; 29 occurrences:
+; abc/optimized/abcSop.c.ll
 ; abc/optimized/deflate.c.ll
+; abc/optimized/kitPla.c.ll
 ; cmake/optimized/deflate.c.ll
 ; git/optimized/object-file.ll
 ; git/optimized/packfile.ll

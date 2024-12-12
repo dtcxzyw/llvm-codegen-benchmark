@@ -82,6 +82,13 @@ func000000000000000f:                   # @func000000000000000f
 	slliw	a0, a0, 7
 	or	a0, a0, a1
 	ret
+func000000000000007b:                   # @func000000000000007b
+	andi	a2, a2, 255
+	slliw	a1, a1, 8
+	or	a1, a1, a2
+	slliw	a0, a0, 16
+	or	a0, a0, a1
+	ret
 func000000000000003e:                   # @func000000000000003e
 	andi	a2, a2, 255
 	slliw	a1, a1, 8

@@ -5,7 +5,7 @@ func0000000000000000:                   # @func0000000000000000
 	ld	a0, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsext.vf2	v14, v12
-	vmul.vv	v10, v14, v10
+	vmul.vv	v10, v10, v14
 	vsrl.vi	v10, v10, 9
 	vmulhu.vx	v10, v10, a0
 	vsrl.vi	v10, v10, 11
@@ -18,7 +18,7 @@ func0000000000000008:                   # @func0000000000000008
 	ld	a0, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsext.vf2	v14, v12
-	vmul.vv	v10, v14, v10
+	vmul.vv	v10, v10, v14
 	vmulhu.vx	v10, v10, a0
 	vsrl.vi	v10, v10, 11
 	vadd.vv	v8, v10, v8

@@ -1,5 +1,5 @@
 
-; 42 occurrences:
+; 41 occurrences:
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
 ; assimp/optimized/3DSConverter.cpp.ll
 ; assimp/optimized/FBXExporter.cpp.ll
@@ -15,7 +15,6 @@
 ; luau/optimized/TypeInfer.oop.test.cpp.ll
 ; luau/optimized/TypeInfer.tables.test.cpp.ll
 ; luau/optimized/TypeInfer.test.cpp.ll
-; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; mitsuba3/optimized/qmc.cpp.ll
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll
 ; mold/optimized/output-chunks.cc.ARM64.cc.ll
@@ -53,7 +52,7 @@ entry:
   ret i64 %6
 }
 
-; 217 occurrences:
+; 218 occurrences:
 ; abseil-cpp/optimized/str_replace_test.cc.ll
 ; arrow/optimized/concatenate.cc.ll
 ; arrow/optimized/expression.cc.ll
@@ -68,6 +67,7 @@ entry:
 ; assimp/optimized/SIBImporter.cpp.ll
 ; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/calculate_point_order.ll
 ; casadi/optimized/conic.cpp.ll
 ; casadi/optimized/integration_tools.cpp.ll
 ; casadi/optimized/mx.cpp.ll

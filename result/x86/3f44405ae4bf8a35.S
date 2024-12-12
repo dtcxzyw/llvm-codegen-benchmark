@@ -1,60 +1,67 @@
-func00000000000001b4:                   # @func00000000000001b4
+func0000000000000374:                   # @func0000000000000374
 	movl	%esi, %eax
 	addq	$63, %rax
 	shrq	$6, %rax
-	cmpl	%edi, %eax
-	seta	%al
+	cmpl	%eax, %edi
+	setb	%al
 	retq
-func00000000000001b1:                   # @func00000000000001b1
+func0000000000000361:                   # @func0000000000000361
 	movl	%esi, %eax
 	addq	$63, %rax
 	shrq	$6, %rax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq
-func00000000000001bc:                   # @func00000000000001bc
+func000000000000036c:                   # @func000000000000036c
 	movl	%esi, %eax
 	addq	$63, %rax
 	shrq	$6, %rax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	setne	%al
 	retq
-func00000000000001b8:                   # @func00000000000001b8
+func0000000000000368:                   # @func0000000000000368
 	movl	%esi, %eax
 	addq	$63, %rax
 	shrq	$6, %rax
-	cmpl	%edi, %eax
-	setb	%al
-	retq
-func0000000000000184:                   # @func0000000000000184
-	movl	%esi, %eax
-	movabsq	$8589934584, %rcx               # imm = 0x1FFFFFFF8
-	addq	%rax, %rcx
-	shrq	%rcx
-	cmpl	%edi, %ecx
+	cmpl	%eax, %edi
 	seta	%al
 	retq
-func0000000000000188:                   # @func0000000000000188
+func0000000000000378:                   # @func0000000000000378
+	movl	%esi, %eax
+	addq	$63, %rax
+	shrq	$6, %rax
+	cmpl	%eax, %edi
+	seta	%al
+	retq
+func0000000000000304:                   # @func0000000000000304
 	movl	%esi, %eax
 	movabsq	$8589934584, %rcx               # imm = 0x1FFFFFFF8
 	addq	%rax, %rcx
 	shrq	%rcx
-	cmpl	%edi, %ecx
+	cmpl	%ecx, %edi
 	setb	%al
 	retq
-func0000000000000186:                   # @func0000000000000186
+func0000000000000308:                   # @func0000000000000308
 	movl	%esi, %eax
-	movabsq	$17592186040353, %rcx           # imm = 0xFFFFFFFF021
+	movabsq	$8589934584, %rcx               # imm = 0x1FFFFFFF8
 	addq	%rax, %rcx
-	shrq	$12, %rcx
-	cmpl	%edi, %ecx
-	setg	%al
+	shrq	%rcx
+	cmpl	%ecx, %edi
+	seta	%al
 	retq
-func000000000000018a:                   # @func000000000000018a
+func0000000000000306:                   # @func0000000000000306
 	movl	%esi, %eax
 	movabsq	$17592186040353, %rcx           # imm = 0xFFFFFFFF021
 	addq	%rax, %rcx
 	shrq	$12, %rcx
-	cmpl	%edi, %ecx
+	cmpl	%ecx, %edi
 	setl	%al
+	retq
+func000000000000030a:                   # @func000000000000030a
+	movl	%esi, %eax
+	movabsq	$17592186040353, %rcx           # imm = 0xFFFFFFFF021
+	addq	%rax, %rcx
+	shrq	$12, %rcx
+	cmpl	%ecx, %edi
+	setg	%al
 	retq

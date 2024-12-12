@@ -78,3 +78,11 @@ func0000000000000009:                   # @func0000000000000009
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+func0000000000000019:                   # @func0000000000000019
+	vpsllw	$7, %xmm0, %xmm0
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpcmpnltuw	%ymm2, %ymm1, %k1
+	vpcmpgtb	%xmm0, %xmm3, %k0 {%k1}
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq

@@ -1,5 +1,5 @@
 
-; 48 occurrences:
+; 46 occurrences:
 ; git/optimized/http.ll
 ; graphviz/optimized/ccomps.c.ll
 ; graphviz/optimized/exeval.c.ll
@@ -17,16 +17,13 @@
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/ASTStructuralEquivalence.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
-; llvm/optimized/CGExpr.cpp.ll
 ; llvm/optimized/CGExprScalar.cpp.ll
 ; llvm/optimized/ConversionChecker.cpp.ll
-; llvm/optimized/FunctionImport.cpp.ll
 ; llvm/optimized/Instructions.cpp.ll
 ; llvm/optimized/LLVMTargetMachine.cpp.ll
 ; llvm/optimized/ParseHLSL.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/ReachableCode.cpp.ll
-; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SemaConcept.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/SemaInit.cpp.ll
@@ -47,9 +44,10 @@
 ; openusd/optimized/schemaRegistry.cpp.ll
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/encoding.ll
-; ruby/optimized/regexec.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000484(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -33
   %3 = add nsw i32 %2, -65
@@ -65,7 +63,7 @@ entry:
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000114(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000424(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 127
   %3 = add nsw i32 %2, -7
@@ -78,7 +76,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/rematch.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000084(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -33
   %3 = add i32 %2, -65

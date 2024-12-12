@@ -26,3 +26,13 @@ func00000000000000ca:                   # @func00000000000000ca
 	vmovsd	.LCPI2_1(%rip), %xmm1           # xmm1 = [-2.147483648E+9,0.0E+0]
 	vmaxsd	%xmm0, %xmm1, %xmm0
 	retq
+.LCPI3_0:
+	.quad	0x4066800000000000              # double 180
+.LCPI3_1:
+	.quad	0x3ff0000000000000              # double 1
+func0000000000000022:                   # @func0000000000000022
+	vmovsd	.LCPI3_0(%rip), %xmm1           # xmm1 = [1.8E+2,0.0E+0]
+	vmaxsd	%xmm0, %xmm1, %xmm0
+	vmovsd	.LCPI3_1(%rip), %xmm1           # xmm1 = [1.0E+0,0.0E+0]
+	vmaxsd	%xmm0, %xmm1, %xmm0
+	retq

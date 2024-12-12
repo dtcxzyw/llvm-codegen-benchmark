@@ -2,13 +2,13 @@ func0000000000000001:                   # @func0000000000000001
 	movzwl	%dx, %eax
 	xorl	%edx, %edx
 	divq	%rsi
-	cmpq	%rdi, %rdx
+	cmpq	%rdx, %rdi
 	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movzwl	%dx, %eax
 	xorl	%edx, %edx
 	divq	%rsi
-	cmpq	%rdi, %rdx
+	cmpq	%rdx, %rdi
 	sete	%al
 	retq

@@ -6,7 +6,7 @@ define i1 @func0000000000000006(i1 %0, i32 %1) #0 {
 entry:
   %not. = xor i1 %0, true
   %2 = zext i1 %not. to i32
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   %4 = icmp slt i32 %3, 0
   ret i1 %4
 }
@@ -29,7 +29,7 @@ entry:
 ; ruby/optimized/util.ll
 ; stockfish/optimized/search.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -4
   %3 = select i1 %0, i32 %1, i32 %2
@@ -45,7 +45,7 @@ entry:
 ; php/optimized/zend_strtod.ll
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -4
   %3 = select i1 %0, i32 %1, i32 %2
@@ -69,7 +69,7 @@ entry:
 ; openjdk/optimized/socketTransport.ll
 ; openssl/optimized/sslapitest-bin-sslapitest.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -5
   %3 = select i1 %0, i32 %1, i32 %2
@@ -84,7 +84,7 @@ entry:
 ; openssl/optimized/evp_extra_test-bin-evp_extra_test.ll
 ; stockfish/optimized/search.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -15
   %3 = select i1 %0, i32 %1, i32 %2
@@ -96,11 +96,11 @@ entry:
 ; openssl/optimized/evp_extra_test-bin-evp_extra_test.ll
 ; stockfish/optimized/search.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000038(i1 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -15
   %3 = select i1 %0, i32 %1, i32 %2
-  %4 = icmp ugt i32 %3, 8
+  %4 = icmp samesign ugt i32 %3, 8
   ret i1 %4
 }
 
@@ -109,11 +109,11 @@ entry:
 ; openssl/optimized/evp_extra_test-bin-evp_extra_test.ll
 ; php/optimized/encode.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000034(i1 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -15
   %3 = select i1 %0, i32 %1, i32 %2
-  %4 = icmp ult i32 %3, 12
+  %4 = icmp samesign ult i32 %3, 12
   ret i1 %4
 }
 
@@ -122,11 +122,11 @@ entry:
 ; php/optimized/pcre2_jit_compile.ll
 ; wireshark/optimized/pcapio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i1 %0, i32 %1) #0 {
 entry:
   %not. = xor i1 %0, true
   %2 = zext i1 %not. to i32
-  %3 = or i32 %2, %1
+  %3 = or i32 %1, %2
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
@@ -134,7 +134,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-scte35.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000046(i1 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 6
   %3 = select i1 %0, i32 %1, i32 %2
@@ -142,9 +142,8 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; cpython/optimized/ceval.ll
-; linux/optimized/fonts.ll
 ; wireshark/optimized/packet-dmp.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i1 %0, i32 %1) #0 {
@@ -172,11 +171,11 @@ entry:
 ; linux/optimized/intel_display_power_well.ll
 ; linux/optimized/tcp_output.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000074(i1 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 12
   %3 = select i1 %0, i32 %1, i32 %2, !prof !0
-  %4 = icmp ult i32 %3, 29
+  %4 = icmp samesign ult i32 %3, 29
   ret i1 %4
 }
 
@@ -187,7 +186,7 @@ define i1 @func0000000000000008(i1 %0, i32 %1) #0 {
 entry:
   %not. = xor i1 %0, true
   %2 = zext i1 %not. to i32
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   %4 = icmp ugt i32 %3, 191
   ret i1 %4
 }

@@ -3,12 +3,13 @@ func0000000000000003:                   # @func0000000000000003
 	lui	a2, 1048528
 	addiw	a2, a2, -4
 	and	a2, a2, a1
+	bclri	a1, a1, 1
+	bclri	a1, a1, 17
 	bseti	a2, a2, 16
 	czero.eqz	a1, a1, a0
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	bseti	a0, a0, 17
-	andi	a0, a0, -3
 	ret
 func0000000000000002:                   # @func0000000000000002
 	lui	a0, 61440

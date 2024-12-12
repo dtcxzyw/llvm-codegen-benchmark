@@ -18,7 +18,7 @@ func0000000000000004:                   # @func0000000000000004
 	andi	a1, a1, 3
 	srlw	a0, a0, a1
 	ret
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	sext.w	a1, a1
 	seqz	a1, a1
 	slli	a1, a1, 4

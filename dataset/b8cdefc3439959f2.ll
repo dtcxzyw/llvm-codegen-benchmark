@@ -1,5 +1,5 @@
 
-; 151 occurrences:
+; 147 occurrences:
 ; abc/optimized/cecPat.c.ll
 ; abc/optimized/exorList.c.ll
 ; abc/optimized/giaFront.c.ll
@@ -39,7 +39,6 @@
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
@@ -72,7 +71,6 @@
 ; opencv/optimized/ar_hmdb_benchmark.cpp.ll
 ; opencv/optimized/btv_l1.cpp.ll
 ; opencv/optimized/calibinit.cpp.ll
-; opencv/optimized/convhull.cpp.ll
 ; opencv/optimized/convolution.cpp.ll
 ; opencv/optimized/convolution_layer.cpp.ll
 ; opencv/optimized/daisy.cpp.ll
@@ -113,10 +111,8 @@
 ; openmpi/optimized/comm_ft_detector.ll
 ; openmpi/optimized/hook_comm_method_fns.ll
 ; openmpi/optimized/k-partitioning.ll
-; openmpi/optimized/monitoring_test.ll
 ; openmpi/optimized/nbc_iallreduce.ll
 ; openmpi/optimized/test_overhead.ll
-; openmpi/optimized/test_pvar_access.ll
 ; openspiel/optimized/coin_game.cc.ll
 ; openspiel/optimized/crazy_eights.cc.ll
 ; openspiel/optimized/euchre.cc.ll
@@ -159,7 +155,7 @@ entry:
   ret i32 %3
 }
 
-; 48 occurrences:
+; 49 occurrences:
 ; abc/optimized/abcPart.c.ll
 ; abc/optimized/aigPart.c.ll
 ; cpython/optimized/longobject.ll
@@ -197,7 +193,6 @@ entry:
 ; postgres/optimized/arrayutils.ll
 ; postgres/optimized/nodeHashjoin.ll
 ; postgres/optimized/print.ll
-; postgres/optimized/sharedtuplestore.ll
 ; postgres/optimized/ts_typanalyze.ll
 ; postgres/optimized/tuplesort.ll
 ; qemu/optimized/block_vvfat.c.ll
@@ -208,6 +203,8 @@ entry:
 ; sundials/optimized/sunnonlinsol_fixedpoint.c.ll
 ; wireshark/optimized/packet-umts_rlc.c.ll
 ; xgboost/optimized/allreduce.cc.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:

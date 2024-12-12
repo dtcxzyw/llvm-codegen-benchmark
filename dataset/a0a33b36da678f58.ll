@@ -40,23 +40,24 @@
 ; rocksdb/optimized/compaction_picker_universal.cc.ll
 ; tev/optimized/ImageViewer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = sdiv exact i64 %4, 24
   %6 = add nsw i64 %5, -1
-  %7 = icmp eq i64 %6, %0
+  %7 = icmp eq i64 %0, %6
   ret i1 %7
 }
 
-; 47 occurrences:
+; 48 occurrences:
 ; assimp/optimized/ColladaParser.cpp.ll
 ; assimp/optimized/IFCBoolean.cpp.ll
 ; assimp/optimized/IFCCurve.cpp.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
 ; assimp/optimized/IFCProfile.cpp.ll
 ; assimp/optimized/StandardShapes.cpp.ll
+; boost/optimized/src.ll
 ; casadi/optimized/interpolant.cpp.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
@@ -99,13 +100,13 @@ entry:
 ; xgboost/optimized/context.cc.ll
 ; xgboost/optimized/input_split_base.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = sdiv exact i64 %4, 88
   %6 = add nsw i64 %5, -1
-  %7 = icmp ugt i64 %6, %0
+  %7 = icmp ult i64 %0, %6
   ret i1 %7
 }
 
@@ -119,39 +120,39 @@ entry:
 ; hyperscan/optimized/rose_build_add.cpp.ll
 ; xgboost/optimized/input_split_base.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = sdiv exact i64 %4, 12
   %6 = add nsw i64 %5, -1
-  %7 = icmp ult i64 %6, %0
+  %7 = icmp ugt i64 %0, %6
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; gromacs/optimized/dispersioncorrection.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000ac(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = sdiv exact i64 %4, 56
   %6 = add nsw i64 %5, -1
-  %7 = icmp ne i64 %6, %0
+  %7 = icmp ne i64 %0, %6
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; hyperscan/optimized/dfa_min.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000059(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000a9(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = sdiv exact i64 %4, 24
   %6 = add nsw i64 %5, -1
-  %7 = icmp ule i64 %6, %0
+  %7 = icmp uge i64 %0, %6
   ret i1 %7
 }
 

@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 18 occurrences:
 ; abc/optimized/cuddZddReord.c.ll
 ; abc/optimized/utilCex.c.ll
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll
@@ -11,6 +11,8 @@
 ; linux/optimized/seq_memory.ll
 ; linux/optimized/xhci-ring.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_image.ll
+; lvgl/optimized/lv_tileview.ll
 ; oiio/optimized/imagebuf.cpp.ll
 ; opencv/optimized/slice_layer.cpp.ll
 ; openmpi/optimized/coll_base_topo.ll

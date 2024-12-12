@@ -2,6 +2,7 @@
 ; 125 occurrences:
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
+; boost/optimized/to_chars.ll
 ; coreutils-rs/optimized/4dx3xgc2q0yp2q7n.ll
 ; coreutils-rs/optimized/czge978gjagq0cc.ll
 ; fmt/optimized/chrono-test.cc.ll
@@ -19,8 +20,6 @@
 ; libjpeg-turbo/optimized/jfdctfst.c.ll
 ; libjpeg-turbo/optimized/jidctfst.c.ll
 ; libpng/optimized/pngread.c.ll
-; libquic/optimized/reduce.c.ll
-; linux/optimized/csum-partial_64.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
@@ -119,6 +118,7 @@
 ; pbrt-v4/optimized/aggregates.cpp.ll
 ; postgres/optimized/initdb.ll
 ; qemu/optimized/hw_scsi_esp-pci.c.ll
+; qemu/optimized/qobject_qdict.c.ll
 ; quickjs/optimized/quickjs.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; redis/optimized/hyperloglog.ll
@@ -133,9 +133,10 @@ entry:
   ret i32 %2
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; cpp-httplib/optimized/httplib.cc.ll
+; lvgl/optimized/lv_color.ll
 ; qemu/optimized/hw_audio_es1370.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0) #0 {
@@ -144,7 +145,7 @@ entry:
   ret i32 %1
 }
 
-; 26 occurrences:
+; 28 occurrences:
 ; abc/optimized/abcIfMux.c.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; coreutils-rs/optimized/4dx3xgc2q0yp2q7n.ll
@@ -159,6 +160,8 @@ entry:
 ; linux/optimized/rsa-pkcs1pad.ll
 ; linux/optimized/stream.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshoptimizer/optimized/spatialorder.cpp.ll
 ; ockam-rs/optimized/1145kugil9dl94a2.ll
 ; ockam-rs/optimized/1411u8drt798uxi8.ll

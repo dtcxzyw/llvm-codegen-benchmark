@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 22 occurrences:
 ; abc/optimized/giaAiger.c.ll
 ; cmake/optimized/archive_getdate.c.ll
 ; cmake/optimized/cm_get_date.c.ll
@@ -7,6 +7,7 @@
 ; diesel-rs/optimized/2zzzvc1em6im74h3.ll
 ; influxdb-rs/optimized/2g8nrbnslhx52xx1.ll
 ; libjpeg-turbo/optimized/jidctfst.c.ll
+; lvgl/optimized/lv_span.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; minetest/optimized/mg_decoration.cpp.ll
 ; minetest/optimized/pathfinder.cpp.ll
@@ -30,13 +31,16 @@ entry:
   ret i32 %5
 }
 
-; 24 occurrences:
+; 27 occurrences:
 ; abc/optimized/kitDsd.c.ll
 ; abseil-cpp/optimized/time.cc.ll
 ; abseil-cpp/optimized/time_test.cc.ll
 ; cpython/optimized/instrumentation.ll
 ; icu/optimized/ucptrie.ll
 ; icu/optimized/umutablecptrie.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
+; lvgl/optimized/lv_draw_sw_line.ll
 ; minetest/optimized/mg_decoration.cpp.ll
 ; minetest/optimized/voxel.cpp.ll
 ; opencv/optimized/dxt.cpp.ll
@@ -59,7 +63,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr i32 %2, 16
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
@@ -88,7 +92,7 @@ entry:
   ret i32 %5
 }
 
-; 63 occurrences:
+; 68 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/21mzc6y6po60ra2.ll
@@ -114,6 +118,7 @@ entry:
 ; linux/optimized/percpu.ll
 ; llvm/optimized/APFixedPoint.cpp.ll
 ; llvm/optimized/CGExprScalar.cpp.ll
+; lvgl/optimized/lv_draw_sw_line.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; opencv/optimized/alignment_pattern_finder.cpp.ll
@@ -143,7 +148,11 @@ entry:
 ; openjdk/optimized/sharedRuntimeTrans.ll
 ; php/optimized/zend_strtod.ll
 ; raylib/optimized/raudio.c.ll
+; turborepo-rs/optimized/4xosjxdd4tab2lzmgagh8c3os.ll
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
+; zed-rs/optimized/2nwrl7qhv6ci6obqg1itckcv6.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; zfp/optimized/decode1f.c.ll
 ; zfp/optimized/decode1i.c.ll
 ; zfp/optimized/decode2f.c.ll
@@ -156,18 +165,20 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr i32 %2, 31
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 
-; 1 occurrences:
+; 3 occurrences:
+; lvgl/optimized/lv_roller.ll
+; lvgl/optimized/lv_slider.ll
 ; openjdk/optimized/jidctfst.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr i32 %2, 8
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }
@@ -182,7 +193,7 @@ entry:
 define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr exact i32 %2, 1
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
@@ -194,7 +205,7 @@ define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr exact i32 %2, 1
   %4 = add nsw i32 %3, %1
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 

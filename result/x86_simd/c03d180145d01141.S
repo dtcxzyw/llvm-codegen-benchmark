@@ -34,5 +34,5 @@ func0000000000000055:                   # @func0000000000000055
 	vpmovsxbd	%xmm2, %ymm2
 	vpdpwssd	.LCPI1_2(%rip){1to8}, %ymm2, %ymm1
 	vpmulld	.LCPI1_1(%rip){1to8}, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq

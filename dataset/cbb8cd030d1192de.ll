@@ -1,8 +1,9 @@
 
-; 175 occurrences:
+; 174 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; abc/optimized/cutPre22.c.ll
+; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/dauNpn2.c.ll
 ; abc/optimized/fraSim.c.ll
 ; abc/optimized/fraigNode.c.ll
@@ -94,7 +95,6 @@
 ; llvm/optimized/ValueTracking.cpp.ll
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; luau/optimized/lbitlib.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; node/optimized/libnode.js_native_api_v8.ll
 ; node/optimized/simdutf.ll
@@ -161,7 +161,6 @@
 ; spike/optimized/kmmawt_u.ll
 ; spike/optimized/kstas32.ll
 ; spike/optimized/kstsa32.ll
-; spike/optimized/vsadd_vi.ll
 ; spike/optimized/vsadd_vv.ll
 ; spike/optimized/vsadd_vx.ll
 ; sqlite/optimized/sqlite3.ll
@@ -179,7 +178,7 @@
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   ret i32 %3
 }
 
@@ -196,7 +195,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, 553647102
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   ret i32 %3
 }
 

@@ -171,13 +171,13 @@
 ; vcpkg/optimized/versiondeserializers.cpp.ll
 ; vcpkg/optimized/versions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000144(ptr %0, i64 %1) #0 {
 entry:
   %2 = ptrtoint ptr %0 to i64
   %3 = sub i64 %1, %2
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -3
-  %6 = icmp ugt ptr %5, %0
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 

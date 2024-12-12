@@ -1,5 +1,5 @@
 
-; 69 occurrences:
+; 63 occurrences:
 ; c3c/optimized/llvm_codegen.c.ll
 ; c3c/optimized/llvm_codegen_builtins.c.ll
 ; c3c/optimized/llvm_codegen_debug_info.c.ll
@@ -26,17 +26,10 @@
 ; libpng/optimized/png.c.ll
 ; llvm/optimized/AArch64StackTagging.cpp.ll
 ; llvm/optimized/Darwin.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ScalarEvolutionExpander.cpp.ll
 ; llvm/optimized/SemaExprObjC.cpp.ll
 ; llvm/optimized/SpeculativeExecution.cpp.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
-; nuttx/optimized/lib_isdigit.c.ll
-; nuttx/optimized/lib_isgraph.c.ll
-; nuttx/optimized/lib_islower.c.ll
-; nuttx/optimized/lib_isprint.c.ll
-; nuttx/optimized/lib_isupper.c.ll
-; nuttx/optimized/lib_iswctype.c.ll
 ; openjdk/optimized/callnode.ll
 ; openjdk/optimized/classes.ll
 ; openjdk/optimized/intrinsicnode.ll
@@ -59,6 +52,7 @@
 ; openssl/optimized/sslapitest-bin-sslapitest.ll
 ; php/optimized/ftp_fopen_wrapper.ll
 ; php/optimized/pcre2_xclass.ll
+; postgres/optimized/regcomp.ll
 ; qemu/optimized/ui_keymaps.c.ll
 ; raylib/optimized/rmodels.c.ll
 ; redis/optimized/lapi.ll
@@ -78,12 +72,8 @@ entry:
   ret i32 %3
 }
 
-; 28 occurrences:
+; 22 occurrences:
 ; abc/optimized/aigTsim.c.ll
-; abc/optimized/cbaBlast.c.ll
-; abc/optimized/cbaNtk.c.ll
-; abc/optimized/cbaReadBlif.c.ll
-; abc/optimized/cbaReadVer.c.ll
 ; abc/optimized/cnfWrite.c.ll
 ; abc/optimized/ifDelay.c.ll
 ; abc/optimized/ivyUtil.c.ll
@@ -92,7 +82,6 @@ entry:
 ; graphviz/optimized/strmatch.c.ll
 ; libwebp/optimized/dwebp.c.ll
 ; llvm/optimized/CodeGenPrepare.cpp.ll
-; llvm/optimized/Core.cpp.ll
 ; llvm/optimized/FunctionPropertiesAnalysis.cpp.ll
 ; llvm/optimized/SelectOptimize.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
@@ -101,14 +90,13 @@ entry:
 ; luajit/optimized/lj_ffrecord_dyn.ll
 ; luau/optimized/lstrlib.cpp.ll
 ; nuklear/optimized/unity.c.ll
-; opencv/optimized/demosaicing.cpp.ll
 ; openjdk/optimized/ciMethod.ll
 ; openssl/optimized/libssl-lib-t1_lib.ll
 ; openssl/optimized/libssl-shlib-t1_lib.ll
 ; php/optimized/pcre2_compile.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000028(i32 %0) #0 {
+define i32 @func0000000000000048(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -772
   %2 = icmp ult i32 %1, -771
@@ -120,18 +108,17 @@ entry:
 ; openssl/optimized/libcrypto-lib-pem_lib.ll
 ; openssl/optimized/libcrypto-shlib-pem_lib.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0) #0 {
+define i32 @func0000000000000058(i32 %0) #0 {
 entry:
   %1 = icmp ne i32 %0, 64
   %2 = zext i1 %1 to i32
   ret i32 %2
 }
 
-; 2 occurrences:
-; clamav/optimized/packlibs.c.ll
+; 1 occurrences:
 ; flatbuffers/optimized/idl_gen_rust.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000010(i32 %0) #0 {
+define i32 @func0000000000000030(i32 %0) #0 {
 entry:
   %1 = add i32 %0, -11
   %2 = icmp ult i32 %1, -10
@@ -150,7 +137,7 @@ entry:
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; openblas/optimized/dlaeda.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i32 %0) #0 {
+define i32 @func0000000000000042(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 2
   %2 = zext i1 %1 to i32
@@ -175,23 +162,33 @@ entry:
   ret i32 %2
 }
 
+; 1 occurrences:
+; clamav/optimized/packlibs.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000010(i32 %0) #0 {
+entry:
+  %1 = add i32 %0, -32256
+  %2 = icmp ult i32 %1, -32000
+  %3 = zext i1 %2 to i32
+  ret i32 %3
+}
+
 ; 3 occurrences:
 ; gromacs/optimized/espio.cpp.ll
 ; gromacs/optimized/gmx_angle.cpp.ll
 ; gromacs/optimized/readir.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000062(i32 %0) #0 {
+define i32 @func00000000000000c2(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 1
   %2 = zext i1 %1 to i32
   ret i32 %2
 }
 
-; 2 occurrences:
-; linux/optimized/ata_piix.ll
+; 1 occurrences:
 ; quickjs/optimized/libunicode.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000030(i32 %0) #0 {
+define i32 @func0000000000000070(i32 %0) #0 {
 entry:
   %1 = and i32 %0, -2
   %2 = icmp ne i32 %1, 16
@@ -206,6 +203,17 @@ define i32 @func000000000000000c(i32 %0) #0 {
 entry:
   %1 = add i32 %0, 1
   %2 = icmp slt i32 %1, 8388608
+  %3 = zext i1 %2 to i32
+  ret i32 %3
+}
+
+; 1 occurrences:
+; linux/optimized/ata_piix.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000050(i32 %0) #0 {
+entry:
+  %1 = add i32 %0, -67
+  %2 = icmp ult i32 %1, -3
   %3 = zext i1 %2 to i32
   ret i32 %3
 }
@@ -236,9 +244,20 @@ entry:
 }
 
 ; 1 occurrences:
+; opencv/optimized/demosaicing.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000068(i32 %0) #0 {
+entry:
+  %1 = add nsw i32 %0, -135
+  %2 = icmp samesign ult i32 %1, 2
+  %3 = zext i1 %2 to i32
+  ret i32 %3
+}
+
+; 1 occurrences:
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000078(i32 %0) #0 {
+define i32 @func00000000000000d8(i32 %0) #0 {
 entry:
   %1 = icmp ne i32 %0, 5
   %2 = zext i1 %1 to i32

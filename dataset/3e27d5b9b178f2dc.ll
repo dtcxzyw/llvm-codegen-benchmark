@@ -15,8 +15,7 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
-; nuttx/optimized/lib_strftime.c.ll
+; 1 occurrences:
 ; zxing/optimized/DMBitLayout.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {

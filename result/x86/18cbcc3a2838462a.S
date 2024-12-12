@@ -4,7 +4,7 @@ func0000000000000018:                   # @func0000000000000018
 	cmpl	$28672, %edi                    # imm = 0x7000
 	setne	%al
 	retq
-func0000000000000098:                   # @func0000000000000098
+func0000000000000118:                   # @func0000000000000118
 	xorl	%eax, %eax
 	testl	$65280, %edi                    # imm = 0xFF00
 	setne	%al

@@ -5,6 +5,7 @@
 ; abc/optimized/aigCanon.c.ll
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/cutPre22.c.ll
+; abc/optimized/fraigUtil.c.ll
 ; abc/optimized/giaCof.c.ll
 ; abc/optimized/giaEra2.c.ll
 ; abc/optimized/ifDsd.c.ll
@@ -31,7 +32,6 @@
 ; crow/optimized/example_ws.cpp.ll
 ; crow/optimized/helloworld.cpp.ll
 ; cvc5/optimized/node_builder.cpp.ll
-; linux/optimized/file_table.ll
 ; linux/optimized/interrupt.ll
 ; linux/optimized/slub.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll

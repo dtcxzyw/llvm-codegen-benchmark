@@ -1,5 +1,5 @@
 
-%struct.pgd_t.3373503 = type { i64 }
+%struct.pgd_t.3558271 = type { i64 }
 
 ; 77 occurrences:
 ; folly/optimized/AsyncSocket.cpp.ll
@@ -80,11 +80,11 @@
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000002(ptr %0, i64 %1) #0 {
+define i64 @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 2164195328, %1
   %3 = and i64 %2, 1
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }
@@ -96,7 +96,7 @@ define i64 @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 -1, %1
   %3 = and i64 %2, 272
-  %4 = getelementptr %struct.pgd_t.3373503, ptr %0, i64 %3
+  %4 = getelementptr %struct.pgd_t.3558271, ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }

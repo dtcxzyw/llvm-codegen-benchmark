@@ -1,5 +1,10 @@
 
-; 47 occurrences:
+; 53 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; casadi/optimized/idas.c.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/snapshots.c.ll
@@ -36,6 +41,7 @@
 ; proj/optimized/geodesic.c.ll
 ; quantlib/optimized/analytic_discr_geom_av_price_heston.ll
 ; quantlib/optimized/analytichestonengine.ll
+; quantlib/optimized/gaussian1dmodel.ll
 ; quantlib/optimized/gausslobattointegral.ll
 ; quantlib/optimized/hestonprocess.ll
 ; quantlib/optimized/integralhestonvarianceoptionengine.ll
@@ -51,7 +57,7 @@
 define double @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, 5.000000e+01
-  %4 = fmul double %3, %1
+  %4 = fmul double %1, %3
   %5 = fsub double %0, %4
   ret double %5
 }

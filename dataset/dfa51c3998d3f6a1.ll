@@ -12,7 +12,7 @@
 define i1 @func0000000000000001(i16 %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 2
-  %3 = xor i16 %2, %0
+  %3 = xor i16 %0, %2
   %4 = and i16 %3, 1
   %5 = icmp eq i16 %4, 0
   ret i1 %5

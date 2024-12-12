@@ -35,6 +35,31 @@ entry:
   ret i64 %6
 }
 
+; 2 occurrences:
+; boost/optimized/src.ll
+; llvm/optimized/StreamChecker.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000b(i64 %0, i64 %1, i8 %2) #0 {
+entry:
+  %3 = trunc nuw i8 %2 to i1
+  %4 = select i1 %3, i64 4, i64 0
+  %5 = or disjoint i64 %0, %1
+  %6 = or disjoint i64 %5, %4
+  ret i64 %6
+}
+
+; 1 occurrences:
+; regex-rs/optimized/33whcn8n29l9c6ys.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(i64 %0, i64 %1, i8 %2) #0 {
+entry:
+  %3 = trunc nuw i8 %2 to i1
+  %4 = select i1 %3, i64 4398046511104, i64 0
+  %5 = or i64 %0, %1
+  %6 = or i64 %4, %5
+  ret i64 %6
+}
+
 ; 1 occurrences:
 ; llvm/optimized/LLParser.cpp.ll
 ; Function Attrs: nounwind

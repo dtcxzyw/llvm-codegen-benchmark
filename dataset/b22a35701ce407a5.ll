@@ -1,5 +1,5 @@
 
-; 739 occurrences:
+; 772 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/acecMult.c.ll
 ; abc/optimized/aigTsim.c.ll
@@ -43,6 +43,8 @@
 ; arrow/optimized/type.cc.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; base64-rs/optimized/1a04td3ag2jefly3.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/decode.c.ll
@@ -71,7 +73,6 @@
 ; coreutils-rs/optimized/3l1fz4picv1xqozx.ll
 ; coreutils-rs/optimized/4ez78vmdxhxkcda.ll
 ; coreutils-rs/optimized/4il3dwdvn9kvvj4p.ll
-; coreutils-rs/optimized/4j5cjya214zps8p4.ll
 ; coreutils-rs/optimized/yeky3kbm8zdu7bp.ll
 ; cpython/optimized/longobject.ll
 ; cpython/optimized/xmltok.ll
@@ -174,7 +175,6 @@
 ; libquic/optimized/file_posix.cc.ll
 ; libquic/optimized/padding.c.ll
 ; libquic/optimized/quic_framer.cc.ll
-; libquic/optimized/random.c.ll
 ; libquic/optimized/trees.c.ll
 ; libwebp/optimized/lossless.c.ll
 ; libwebp/optimized/predictor_enc.c.ll
@@ -193,12 +193,10 @@
 ; linux/optimized/intel_color.ll
 ; linux/optimized/intel_cx0_phy.ll
 ; linux/optimized/intel_overlay.ll
-; linux/optimized/intel_snps_phy.ll
 ; linux/optimized/mballoc.ll
 ; linux/optimized/mempolicy.ll
 ; linux/optimized/oom_kill.ll
 ; linux/optimized/page_alloc.ll
-; linux/optimized/privflags.ll
 ; linux/optimized/processor_throttling.ll
 ; linux/optimized/shmem.ll
 ; linux/optimized/slub.ll
@@ -270,7 +268,6 @@
 ; llvm/optimized/PreprocessingRecord.cpp.ll
 ; llvm/optimized/Preprocessor.cpp.ll
 ; llvm/optimized/RDFRegisters.cpp.ll
-; llvm/optimized/RISCVTargetParser.cpp.ll
 ; llvm/optimized/RecordLayoutBuilder.cpp.ll
 ; llvm/optimized/RewriteMacros.cpp.ll
 ; llvm/optimized/SemaAttr.cpp.ll
@@ -306,6 +303,7 @@
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; luau/optimized/isocline.c.ll
 ; luau/optimized/lbitlib.cpp.ll
+; lvgl/optimized/lv_obj_event.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meilisearch-rs/optimized/2vln1wcrdf8krbw1.ll
 ; meilisearch-rs/optimized/4llghrvh6vzci59o.ll
@@ -337,8 +335,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -582,7 +578,6 @@
 ; softposit-rs/optimized/coljvwkn4d5o904.ll
 ; softposit-rs/optimized/kf9u47qfx5x7qom.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
-; spike/optimized/interactive.ll
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; tls-rs/optimized/49b6dhrgmsskmdw3.ll
@@ -680,6 +675,7 @@
 ; vcpkg/optimized/vcpkgpaths.cpp.ll
 ; vcpkg/optimized/versiondeserializers.cpp.ll
 ; vcpkg/optimized/versions.cpp.ll
+; verilator/optimized/V3AstNodes.cpp.ll
 ; verilator/optimized/V3Const__gen.cpp.ll
 ; verilator/optimized/V3VariableOrder.cpp.ll
 ; verilator/optimized/V3Width.cpp.ll
@@ -694,8 +690,6 @@
 ; wasmtime-rs/optimized/5dheicv8h8x61a9w.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; wasmtime-rs/optimized/5poarlxbfmu9lbg.ll
-; wasmtime-rs/optimized/awtl26sjra3upo4.ll
-; wasmtime-rs/optimized/oont1606ku4b766.ll
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
 ; wireshark/optimized/addr_resolv.c.ll
@@ -706,7 +700,6 @@
 ; wireshark/optimized/packet-catapult-dct2000.c.ll
 ; wireshark/optimized/packet-cemi.c.ll
 ; wireshark/optimized/packet-communityid.c.ll
-; wireshark/optimized/packet-fcct.c.ll
 ; wireshark/optimized/packet-ftdi-mpsse.c.ll
 ; wireshark/optimized/packet-gsm_a_common.c.ll
 ; wireshark/optimized/packet-gsm_map.c.ll
@@ -730,9 +723,49 @@
 ; yoga/optimized/CalculateLayout.cpp.ll
 ; yoga/optimized/Node.cpp.ll
 ; z3/optimized/tbv.cpp.ll
+; zed-rs/optimized/0aom8p2wor4n85al7fbg5160f.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1uum3gw9a30ezdy8xtn1px0l6.ll
+; zed-rs/optimized/1x0js6flb76ylaa82e6lu27uy.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/2qkwhwaatcoopjgi8iqvi1v8v.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/3r2dokv2dl5k20lnwkjewqs8s.ll
+; zed-rs/optimized/44bj4n5407vag46bun63mwelh.ll
+; zed-rs/optimized/553y3uma3m7pxzk4dar8hjwb6.ll
+; zed-rs/optimized/5lopn02otdgr3jtenihf9pnc6.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/5wz01y896jxljxzjbwo9cjiak.ll
+; zed-rs/optimized/61xaugoldgcmtvmvu04ojyf44.ll
+; zed-rs/optimized/6ekeyfm197maw5n7s1cbq34ws.ll
+; zed-rs/optimized/6pzok54tcf7jgyfxt7910tckc.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/7ukwrxq2hh2vqucbwedxkpvcs.ll
+; zed-rs/optimized/8tscdb01zcabwdnjfgov818gm.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
+; zed-rs/optimized/9jrz8x0nc5lkiswz6iqpo0zcg.ll
+; zed-rs/optimized/9v4ru8f01y292a68uztwyin2n.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
+; zed-rs/optimized/ak4ykc5o2q07hp1jptfv0x87c.ll
+; zed-rs/optimized/anp459b0r1vn8pok0ofwmqun4.ll
+; zed-rs/optimized/avfqkgc3wosoc0eacq6zrtrq5.ll
+; zed-rs/optimized/ayy5pqcx1yuz6kdx9ooq2ruee.ll
+; zed-rs/optimized/bktyyhuk5fekatq647qx0ox8v.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
+; zed-rs/optimized/dk3mu4s97ymh6nwez7kj5espe.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/dqlxdbn4bc486rcuwzrxwttzb.ll
+; zed-rs/optimized/dwj0ztyvjqu677mjkd8gksz15.ll
+; zed-rs/optimized/e8miey85a4w6kj2eow2y7dsus.ll
+; zed-rs/optimized/eqlhf2u6kdmwzzbnampe7imqv.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; zlib/optimized/trees.c.ll
 ; zxing/optimized/AZEncoder.cpp.ll
-; zxing/optimized/AZToken.cpp.ll
 ; zxing/optimized/BitSource.cpp.ll
 ; zxing/optimized/ODDataBarExpandedBitDecoder.cpp.ll
 ; zxing/optimized/QREncoder.cpp.ll

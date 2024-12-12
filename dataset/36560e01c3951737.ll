@@ -114,12 +114,12 @@
 ; z3/optimized/sat_solver.cpp.ll
 ; z3/optimized/theory_arith.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e1(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000001e1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 3
   %4 = and i64 %3, 9223372036854775792
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = icmp eq ptr %5, %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
@@ -137,12 +137,12 @@ entry:
 ; protobuf/optimized/padding_optimizer.cc.ll
 ; verilator/optimized/V3SchedAcyclic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000061(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 3
   %4 = and i64 %3, -16
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = icmp eq ptr %5, %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
@@ -154,31 +154,31 @@ entry:
   %3 = shl i64 %2, 4
   %4 = and i64 %3, -32
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = icmp ugt ptr %5, %0
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_operator_join.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000184(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 3
   %4 = and i64 %3, 2305843009213693944
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = icmp ugt ptr %5, %0
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000161(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 1
   %4 = and i64 %3, -4
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = icmp eq ptr %5, %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
@@ -186,36 +186,12 @@ entry:
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; eastl/optimized/TestSort.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ec(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000001ec(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 1
   %4 = and i64 %3, 9223372036854775804
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = icmp ne ptr %5, %0
-  ret i1 %6
-}
-
-; 1 occurrences:
-; eastl/optimized/BenchmarkSort.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = shl nuw nsw i64 %2, 1
-  %4 = and i64 %3, 9223372036854775804
-  %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = icmp ne ptr %5, %0
-  ret i1 %6
-}
-
-; 1 occurrences:
-; eastl/optimized/BenchmarkSort.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = shl nuw nsw i64 %2, 1
-  %4 = and i64 %3, 9223372036854775804
-  %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = icmp eq ptr %5, %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = icmp ne ptr %0, %5
   ret i1 %6
 }
 

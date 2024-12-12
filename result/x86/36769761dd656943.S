@@ -1,5 +1,10 @@
+func0000000000000008:                   # @func0000000000000008
+	movl	%edi, %eax
+	cmpq	$12, %rdx
+	cmovbl	%esi, %eax
+	retq
 func0000000000000001:                   # @func0000000000000001
 	movl	%edi, %eax
-	cmpq	$4194372, %rdx                  # imm = 0x400044
+	testq	%rdx, %rdx
 	cmovnel	%esi, %eax
 	retq

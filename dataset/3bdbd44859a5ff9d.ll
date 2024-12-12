@@ -1,5 +1,5 @@
 
-; 8 occurrences:
+; 11 occurrences:
 ; abseil-cpp/optimized/convert_test.cc.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; re2/optimized/prog.cc.ll
@@ -8,6 +8,9 @@
 ; wireshark/optimized/packet-rohc.c.ll
 ; wireshark/optimized/packet-sll.c.ll
 ; wireshark/optimized/packet-umts_rlc.c.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
+; zed-rs/optimized/49ldufv0nkpmlikvem3q45q0g.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(i16 %0) #0 {
 entry:
@@ -16,7 +19,7 @@ entry:
   ret ptr %2
 }
 
-; 68 occurrences:
+; 73 occurrences:
 ; abseil-cpp/optimized/convert_test.cc.ll
 ; clamav/optimized/bytecode.c.ll
 ; delta-rs/optimized/2n0ez5zuwgs53clg.ll
@@ -30,6 +33,8 @@ entry:
 ; llvm/optimized/MemProfReader.cpp.ll
 ; llvm/optimized/RelocationResolver.cpp.ll
 ; llvm/optimized/Utility.cpp.ll
+; lvgl/optimized/lv_obj_style_gen.ll
+; lvgl/optimized/lv_style_gen.ll
 ; meilisearch-rs/optimized/2zqq886j9ovgawmv.ll
 ; meilisearch-rs/optimized/48hhebymxr5ff2nk.ll
 ; openjdk/optimized/bytecodeAssembler.ll
@@ -69,7 +74,6 @@ entry:
 ; wireshark/optimized/packet-mac-lte.c.ll
 ; wireshark/optimized/packet-mac-nr.c.ll
 ; wireshark/optimized/packet-mpls.c.ll
-; wireshark/optimized/packet-netlink-generic.c.ll
 ; wireshark/optimized/packet-nr-rrc.c.ll
 ; wireshark/optimized/packet-pdcp-lte.c.ll
 ; wireshark/optimized/packet-pdcp-nr.c.ll
@@ -85,6 +89,10 @@ entry:
 ; wireshark/optimized/packet-x11.c.ll
 ; wireshark/optimized/packet-zvt.c.ll
 ; wireshark/optimized/pcapng.c.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
+; zed-rs/optimized/49ldufv0nkpmlikvem3q45q0g.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i16 %0) #0 {
 entry:

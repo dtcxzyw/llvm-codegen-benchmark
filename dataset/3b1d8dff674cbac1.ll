@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; cmake/optimized/zstd_lazy.c.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
@@ -8,7 +8,6 @@
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; softposit-rs/optimized/4kf6wfleft5henpt.ll
 ; softposit-rs/optimized/coljvwkn4d5o904.ll
-; spike/optimized/i64_to_f32.ll
 ; spike/optimized/s_mulAddF128.ll
 ; spike/optimized/s_mulAddF64.ll
 ; wireshark/optimized/packet-nvme.c.ll

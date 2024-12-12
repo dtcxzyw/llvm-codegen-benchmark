@@ -16,8 +16,7 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
-; lightgbm/optimized/bin.cpp.ll
+; 2 occurrences:
 ; postgres/optimized/extended_stats.ll
 ; postgres/optimized/slru.ll
 ; Function Attrs: nounwind
@@ -26,7 +25,7 @@ entry:
   %2 = sext i32 %1 to i64
   %3 = add nsw i64 %2, 7
   %4 = and i64 %3, -8
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 

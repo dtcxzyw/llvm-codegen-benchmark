@@ -54,7 +54,7 @@ func000000000000000e:                   # @func000000000000000e
 	vand.vx	v12, v12, a0
 	vsll.vi	v10, v10, 16
 	vor.vv	v10, v10, v12
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret
 func0000000000000007:                   # @func0000000000000007
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -85,5 +85,5 @@ func0000000000000006:                   # @func0000000000000006
 	vadd.vv	v12, v12, v12
 	vand.vi	v10, v10, 1
 	vor.vv	v10, v10, v12
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret

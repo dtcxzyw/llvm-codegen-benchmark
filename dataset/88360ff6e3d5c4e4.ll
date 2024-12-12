@@ -4,7 +4,7 @@
 ; qemu/optimized/hw_display_ati.c.ll
 ; qemu/optimized/hw_ipack_tpci200.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 4
   %3 = zext nneg i32 %2 to i64

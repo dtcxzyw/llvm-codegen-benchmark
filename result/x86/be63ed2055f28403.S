@@ -1,11 +1,11 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	andl	$8, %esi
 	cmpl	$1, %esi
 	adcl	$0, %edi
 	cmpl	$256, %edi                      # imm = 0x100
 	setge	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	shrl	$3, %esi
 	andl	$1, %esi
 	negl	%edi
@@ -35,14 +35,14 @@ func000000000000000a:                   # @func000000000000000a
 	cmpl	$3, %edi
 	setge	%al
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	andl	$16, %esi
 	cmpl	$1, %esi
 	adcl	$0, %edi
 	cmpl	$2, %edi
 	setb	%al
 	retq
-func000000000000003c:                   # @func000000000000003c
+func000000000000006c:                   # @func000000000000006c
 	xorl	%eax, %eax
 	testb	$32, %sil
 	sete	%al

@@ -6,7 +6,7 @@
 ; openvdb/optimized/StreamCompression.cc.ll
 ; spike/optimized/f64_to_i64_r_minMag.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(i64 %0, i64 %1) #0 {
+define i64 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %0
   %3 = icmp sgt i64 %1, 0
@@ -26,14 +26,13 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; cvc5/optimized/cadical.cpp.ll
 ; linux/optimized/ring_buffer.ll
-; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; spike/optimized/smaldrs.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %0
   %3 = icmp eq i64 %1, 0
@@ -44,7 +43,7 @@ entry:
 ; 1 occurrences:
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 134217728, %0
   %3 = icmp eq i64 %1, 0
@@ -95,7 +94,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/autofit.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %0
   %3 = icmp slt i64 %1, 0

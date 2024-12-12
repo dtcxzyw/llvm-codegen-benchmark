@@ -1,5 +1,5 @@
 
-; 318 occurrences:
+; 312 occurrences:
 ; abc/optimized/abcIfif.c.ll
 ; abc/optimized/cecClass.c.ll
 ; abc/optimized/cutMan.c.ll
@@ -68,7 +68,6 @@
 ; flac/optimized/fixed.c.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
 ; flac/optimized/fixed_intrin_sse2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; flac/optimized/fixed_intrin_ssse3.c.ll
 ; flac/optimized/window.c.ll
 ; graphviz/optimized/gvrender_core_pov.c.ll
@@ -151,11 +150,9 @@
 ; gromacs/optimized/readir.cpp.ll
 ; gromacs/optimized/restcbt.cpp.ll
 ; gromacs/optimized/settle.cpp.ll
-; gromacs/optimized/slaruv.cpp.ll
 ; gromacs/optimized/slasq4.cpp.ll
 ; gromacs/optimized/sm_insolidangle.cpp.ll
 ; gromacs/optimized/sstein.cpp.ll
-; gromacs/optimized/tabulatednormaldistribution.cpp.ll
 ; gromacs/optimized/tgroup.cpp.ll
 ; gromacs/optimized/tpi.cpp.ll
 ; gromacs/optimized/tune_pme.cpp.ll
@@ -214,9 +211,7 @@
 ; minetest/optimized/l_object.cpp.ll
 ; minetest/optimized/mapgen_v5.cpp.ll
 ; minetest/optimized/mesh.cpp.ll
-; minetest/optimized/serverenvironment.cpp.ll
 ; minetest/optimized/sky.cpp.ll
-; minetest/optimized/unit_sao.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/rgb2spec_opt.cpp.ll
 ; msdfgen/optimized/MSDFErrorCorrection.cpp.ll
@@ -315,7 +310,6 @@
 ; wireshark/optimized/packet-ixveriwave.c.ll
 ; wireshark/optimized/packet-nfapi.c.ll
 ; wireshark/optimized/packet-solaredge.c.ll
-; wireshark/optimized/wimax_utils.c.ll
 ; wireshark/optimized/wireless_timeline.cpp.ll
 ; yosys/optimized/Solver.ll
 ; Function Attrs: nounwind

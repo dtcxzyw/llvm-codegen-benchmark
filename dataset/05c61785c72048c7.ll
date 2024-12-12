@@ -1,6 +1,13 @@
 
-; 146 occurrences:
+; 155 occurrences:
 ; abc/optimized/wlcBlast.c.ll
+; assimp/optimized/BlenderModifier.cpp.ll
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; clamav/optimized/bytecode.c.ll
 ; clamav/optimized/htmlnorm.c.ll
 ; cmake/optimized/fty_num.c.ll
@@ -33,6 +40,8 @@
 ; icu/optimized/collationruleparser.ll
 ; icu/optimized/normalizer2impl.ll
 ; icu/optimized/rbbitblb.ll
+; icu/optimized/ubidiln.ll
+; icu/optimized/ubidiwrt.ll
 ; icu/optimized/ucnv_lmb.ll
 ; icu/optimized/ustring.ll
 ; linux/optimized/access.ll
@@ -58,14 +67,14 @@
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
-; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaDeclObjC.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
-; llvm/optimized/SemaPseudoObject.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/ValueLattice.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLoweringCall.cpp.ll
+; lvgl/optimized/lv_obj_style.ll
+; lvgl/optimized/lv_svg_token.ll
 ; memcached/optimized/memcached-util.ll
 ; memcached/optimized/memcached_debug-util.ll
 ; memcached/optimized/util.ll
@@ -88,7 +97,6 @@
 ; mold/optimized/input-sections.cc.SH4.cc.ll
 ; mold/optimized/input-sections.cc.SPARC64.cc.ll
 ; mold/optimized/input-sections.cc.X86_64.cc.ll
-; nghttp2/optimized/http.c.ll
 ; openjdk/optimized/cmscgats.ll
 ; openjdk/optimized/hb-ot-shape.ll
 ; openjdk/optimized/hb-ot-shaper-use.ll
@@ -114,6 +122,7 @@
 ; postgres/optimized/interval.ll
 ; postgres/optimized/nbtutils.ll
 ; postgres/optimized/parser.ll
+; postgres/optimized/trigger.ll
 ; postgres/optimized/tzparser.ll
 ; qemu/optimized/hw_pci_pci.c.ll
 ; qemu/optimized/qapi_qapi-util.c.ll

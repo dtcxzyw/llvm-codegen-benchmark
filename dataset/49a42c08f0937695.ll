@@ -50,7 +50,7 @@
 ; yosys/optimized/equiv_mark.ll
 ; yosys/optimized/eval.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001e4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
   %4 = sub nuw nsw i64 %3, %1
@@ -62,7 +62,7 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/memory_bram.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 32
   %4 = sub nuw nsw i64 %3, %1
@@ -71,12 +71,11 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
-; cvc5/optimized/sequence.cpp.ll
+; 2 occurrences:
 ; ninja/optimized/graph.cc.ll
 ; ninja/optimized/graphviz.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000164(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = sub nsw i64 %3, %1
@@ -85,10 +84,11 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; cvc5/optimized/sequence.cpp.ll
 ; cvc5/optimized/string.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000124(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
   %4 = sub i64 %3, %1

@@ -3,7 +3,7 @@
 ; llvm/optimized/ParseDecl.cpp.ll
 ; openjdk/optimized/g1BarrierSetAssembler_x86.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000034(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000064(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 1, %1
   %3 = icmp ult i32 %0, 32
@@ -17,7 +17,7 @@ entry:
 ; git/optimized/tree-walk.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000041(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
   %3 = icmp eq i32 %0, 0
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/arcread.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000061(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 131072, %1
   %3 = icmp eq i32 %0, 0
@@ -36,11 +36,10 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
-; eastl/optimized/Int128_t.cpp.ll
+; 1 occurrences:
 ; lodepng/optimized/lodepng.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000048(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
   %3 = icmp ugt i32 %0, 9
@@ -53,7 +52,7 @@ entry:
 ; wasmtime-rs/optimized/2ta8crc4qgl9bp8t.ll
 ; z3/optimized/bv_rewriter.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000024(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000044(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
   %3 = icmp ult i32 %0, 64
@@ -67,10 +66,32 @@ entry:
 ; hyperscan/optimized/multibit_build.cpp.ll
 ; hyperscan/optimized/repeat.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000024(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 -1, %1
   %3 = icmp ult i32 %0, 64
+  %4 = select i1 %3, i64 %2, i64 0
+  ret i64 %4
+}
+
+; 1 occurrences:
+; hyperscan/optimized/repeat.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000034(i32 %0, i64 %1) #0 {
+entry:
+  %2 = shl nsw i64 -1, %1
+  %3 = icmp samesign ult i32 %0, 64
+  %4 = select i1 %3, i64 %2, i64 0
+  ret i64 %4
+}
+
+; 1 occurrences:
+; eastl/optimized/Int128_t.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000058(i32 %0, i64 %1) #0 {
+entry:
+  %2 = shl nuw i64 1, %1
+  %3 = icmp samesign ugt i32 %0, 63
   %4 = select i1 %3, i64 %2, i64 0
   ret i64 %4
 }

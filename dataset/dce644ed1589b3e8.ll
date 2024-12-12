@@ -51,7 +51,7 @@ entry:
 ; spike/optimized/f64_to_ui32.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 9007199254740990
   %3 = or disjoint i64 %2, 9007199254740992

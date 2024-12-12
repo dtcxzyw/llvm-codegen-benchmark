@@ -26,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; lightgbm/optimized/objective_function.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(double %0) #0 {
+define i1 @func0000000000000038(double %0) #0 {
 entry:
   %1 = fptosi double %0 to i32
   %2 = add i32 %1, -1
@@ -39,7 +39,7 @@ entry:
 ; opencv/optimized/selectivesearchsegmentation.cpp.ll
 ; pbrt-v4/optimized/ArHosekSkyModel.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(double %0) #0 {
+define i1 @func0000000000000021(double %0) #0 {
 entry:
   %1 = fptosi double %0 to i32
   %2 = icmp eq i32 %1, 10
@@ -49,7 +49,7 @@ entry:
 ; 1 occurrences:
 ; luajit/optimized/minilua.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(double %0) #0 {
+define i1 @func0000000000000018(double %0) #0 {
 entry:
   %1 = fptosi double %0 to i32
   %2 = add i32 %1, -257
@@ -60,7 +60,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/binary_descriptor_matcher.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(double %0) #0 {
+define i1 @func000000000000002c(double %0) #0 {
 entry:
   %1 = fptosi double %0 to i32
   %2 = icmp ne i32 %1, -2

@@ -1,4 +1,24 @@
 
+%"struct.std::pair.2804956" = type { %"struct.facebook::velox::cache::FileCacheKey.2804957", %"class.facebook::velox::cache::SsdRun.2804958" }
+%"struct.facebook::velox::cache::FileCacheKey.2804957" = type { %"class.facebook::velox::StringIdLease.2804959", i64 }
+%"class.facebook::velox::StringIdLease.2804959" = type { ptr, i64 }
+%"class.facebook::velox::cache::SsdRun.2804958" = type { i64 }
+
+; 3 occurrences:
+; hyperscan/optimized/mcclellancompile.cpp.ll
+; opencv/optimized/reduce_layer.cpp.ll
+; velox/optimized/SsdFile.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = lshr exact i64 %3, 5
+  %5 = add nuw nsw i64 %4, 4294967295
+  %6 = and i64 %5, 4294967295
+  %7 = getelementptr nusw nuw %"struct.std::pair.2804956", ptr %0, i64 %6
+  ret ptr %7
+}
+
 ; 29 occurrences:
 ; assimp/optimized/MDLLoader.cpp.ll
 ; cvc5/optimized/node_bitblaster.cpp.ll
@@ -30,13 +50,13 @@
 ; pocketpy/optimized/expr.cpp.ll
 ; yosys/optimized/booth.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000016(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000017(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 3
   %5 = add nuw nsw i64 %4, 4294967295
   %6 = and i64 %5, 4294967295
-  %7 = getelementptr nusw ptr, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw ptr, ptr %0, i64 %6
   ret ptr %7
 }
 

@@ -11,7 +11,7 @@ define double @func0000000000000004(double %0, double %1) #0 {
 entry:
   %2 = fcmp ogt double %1, 5.000000e-01
   %3 = select i1 %2, double 5.000000e-01, double %1
-  %4 = fadd double %3, %0
+  %4 = fadd double %0, %3
   ret double %4
 }
 
@@ -33,7 +33,7 @@ define double @func0000000000000002(double %0, double %1) #0 {
 entry:
   %2 = fcmp olt double %1, 0.000000e+00
   %3 = select i1 %2, double 0.000000e+00, double %1
-  %4 = fadd double %3, %0
+  %4 = fadd double %0, %3
   ret double %4
 }
 
@@ -57,7 +57,7 @@ define double @func000000000000000a(double %0, double %1) #0 {
 entry:
   %2 = fcmp ole double %1, 0.000000e+00
   %3 = select i1 %2, double 0.000000e+00, double %1
-  %4 = fadd double %3, %0
+  %4 = fadd double %0, %3
   ret double %4
 }
 
@@ -68,7 +68,7 @@ define double @func0000000000000001(double %0, double %1) #0 {
 entry:
   %.inv = fcmp ord double %1, 0.000000e+00
   %2 = select i1 %.inv, double %1, double 0.000000e+00
-  %3 = fadd double %2, %0
+  %3 = fadd double %0, %2
   ret double %3
 }
 

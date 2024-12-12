@@ -8,6 +8,16 @@ func0000000000000000:                   # @func0000000000000000
 	and	a1, a1, a2
 	addw	a0, a0, a1
 	ret
+func000000000000000d:                   # @func000000000000000d
+	not	a2, a2
+	and	a1, a1, a2
+	addw	a0, a0, a1
+	ret
+func000000000000000e:                   # @func000000000000000e
+	not	a2, a2
+	and	a1, a1, a2
+	addw	a0, a0, a1
+	ret
 func000000000000000f:                   # @func000000000000000f
 	not	a2, a2
 	and	a1, a1, a2

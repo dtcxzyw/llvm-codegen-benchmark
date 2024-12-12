@@ -9,7 +9,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
   %4 = and i32 %3, -16
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -21,7 +21,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 31
   %4 = and i32 %3, -32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 

@@ -19,8 +19,9 @@ entry:
   ret i32 %3
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
+; lvgl/optimized/lv_svg_parser.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/decorate_base.cpp.ll
 ; meshlab/optimized/eigen_mesh_conversions.cpp.ll

@@ -27,17 +27,9 @@ func0000000000000005:                   # @func0000000000000005
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
-.LCPI4_0:
-	.quad	-72340172838076928              # 0xfefefefefefefe00
-.LCPI4_1:
-	.quad	9187201950435737344             # 0x7f7f7f7f7f7f7f00
 func0000000000000000:                   # @func0000000000000000
-	lui	a2, %hi(.LCPI4_0)
-	lui	a3, %hi(.LCPI4_1)
-	ld	a2, %lo(.LCPI4_0)(a2)
-	ld	a3, %lo(.LCPI4_1)(a3)
-	slli	a1, a1, 9
-	and	a1, a1, a2
-	and	a0, a0, a3
+	slli	a1, a1, 56
+	srli	a1, a1, 24
+	andi	a0, a0, 255
 	or	a0, a0, a1
 	ret

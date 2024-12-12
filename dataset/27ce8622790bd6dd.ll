@@ -1,5 +1,5 @@
 
-%struct.list_head.3363014 = type { ptr, ptr }
+%struct.list_head.3549476 = type { ptr, ptr }
 
 ; 10 occurrences:
 ; darktable/optimized/Cr2Decompressor.cpp.ll
@@ -13,12 +13,12 @@
 ; hermes/optimized/HadesGC.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65535
   %4 = sub nsw i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -26,26 +26,25 @@ entry:
 ; abc/optimized/kitDsd.c.ll
 ; hdf5/optimized/H5B2int.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 63
   %4 = sub nuw nsw i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i32, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i32, ptr %0, i64 %5
   ret ptr %6
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; hermes/optimized/HadesGC.cpp.ll
 ; icu/optimized/uresdata.ll
-; z3/optimized/watch_list.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 16777215
   %4 = sub i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -57,7 +56,7 @@ entry:
   %3 = and i32 %2, 32767
   %4 = sub nsw i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr %struct.list_head.3363014, ptr %0, i64 %5
+  %6 = getelementptr %struct.list_head.3549476, ptr %0, i64 %5
   ret ptr %6
 }
 

@@ -89,7 +89,7 @@ entry:
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, ptr %1) #0 {
+define i1 @func000000000000008c(i32 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = zext nneg i32 %0 to i64
@@ -103,22 +103,10 @@ entry:
 ; linux/optimized/eventpoll.ll
 ; linux/optimized/printk.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, ptr %1) #0 {
+define i1 @func000000000000008a(i32 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = zext nneg i32 %0 to i64
-  %4 = add i64 %3, %2
-  %5 = icmp sgt i64 %4, -1
-  ret i1 %5
-}
-
-; 1 occurrences:
-; linux/optimized/rseq.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000a(i32 %0, ptr %1) #0 {
-entry:
-  %2 = ptrtoint ptr %1 to i64
-  %3 = zext i32 %0 to i64
   %4 = add i64 %3, %2
   %5 = icmp sgt i64 %4, -1
   ret i1 %5

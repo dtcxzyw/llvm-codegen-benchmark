@@ -4,7 +4,7 @@ func0000000000000006:                   # @func0000000000000006
 	movl	$1, %eax
 	cmovgel	%edi, %eax
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	incl	%edx
 	xorl	%eax, %eax
 	cmpl	%esi, %edx
@@ -16,25 +16,19 @@ func0000000000000008:                   # @func0000000000000008
 	movl	$1, %eax
 	cmovbel	%edi, %eax
 	retq
-func0000000000000038:                   # @func0000000000000038
-	addl	$2, %edx
-	cmpl	%esi, %edx
-	movl	$2, %eax
-	cmovbel	%edi, %eax
-	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	decl	%edx
 	cmpl	%esi, %edx
 	movl	$2, %eax
 	cmovnel	%edi, %eax
 	retq
-func000000000000003a:                   # @func000000000000003a
+func000000000000006a:                   # @func000000000000006a
 	addl	$14, %edx
 	cmpl	%esi, %edx
 	movl	$1, %eax
 	cmovlel	%edi, %eax
 	retq
-func000000000000003b:                   # @func000000000000003b
+func000000000000006b:                   # @func000000000000006b
 	incl	%edx
 	cmpl	%esi, %edx
 	movl	$1, %eax

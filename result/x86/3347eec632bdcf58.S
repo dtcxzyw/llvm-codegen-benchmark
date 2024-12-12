@@ -1,10 +1,10 @@
-func000000000000006a:                   # @func000000000000006a
+func00000000000000ca:                   # @func00000000000000ca
 	movq	%rdx, %rcx
 	movq	%rsi, %rax
 	cqto
 	idivq	%rcx
-	cmpq	%rdi, %rax
-	setg	%cl
+	cmpq	%rax, %rdi
+	setl	%cl
 	cmpq	$4, %rdi
 	setge	%al
 	andb	%cl, %al

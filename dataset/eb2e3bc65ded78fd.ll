@@ -21,13 +21,14 @@
 define i64 @func000000000000000c(i64 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = mul nuw nsw i128 %2, 6364136223846793005
-  %4 = xor i128 %3, %1
+  %4 = xor i128 %1, %3
   %5 = trunc i128 %4 to i64
-  %6 = xor i64 %5, %0
+  %6 = xor i64 %0, %5
   ret i64 %6
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/src.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; protobuf/optimized/struct.pb.cc.ll
 ; quantlib/optimized/gaussian1dmodel.ll
@@ -36,9 +37,9 @@ entry:
 define i64 @func0000000000000008(i64 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = mul nuw i128 %2, 16088033396387240377
-  %4 = xor i128 %3, %1
+  %4 = xor i128 %1, %3
   %5 = trunc i128 %4 to i64
-  %6 = xor i64 %5, %0
+  %6 = xor i64 %0, %5
   ret i64 %6
 }
 

@@ -6,7 +6,7 @@
 ; openssl/optimized/libdefault-lib-dsa_kmgmt.ll
 ; openssl/optimized/libdefault-lib-ec_kmgmt.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i32 %1) #0 {
+define i1 @func000000000000018c(i32 %0, i32 %1) #0 {
 entry:
   %.not = icmp eq i32 %1, 0
   %2 = icmp ne i32 %0, 0
@@ -17,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; openssl/optimized/openssl-bin-cms.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = icmp ne i32 %0, 0

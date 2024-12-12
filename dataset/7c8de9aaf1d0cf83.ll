@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 22 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
@@ -7,11 +7,14 @@
 ; arrow/optimized/scalar_cast_temporal.cc.ll
 ; arrow/optimized/tz.cpp.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/gregorian.ll
 ; cmake/optimized/parsedate.c.ll
 ; curl/optimized/libcurl_la-parsedate.ll
 ; eastl/optimized/EADateTime.cpp.ll
 ; linux/optimized/intel_color.ll
 ; llvm/optimized/GlobalsStream.cpp.ll
+; lvgl/optimized/lv_calendar.ll
+; lvgl/optimized/lv_color.ll
 ; minetest/optimized/mapgen_v6.cpp.ll
 ; openmpi/optimized/tm_tree.ll
 ; openssl/optimized/bndiv-test-bin-bndiv.ll
@@ -27,15 +30,16 @@ entry:
   ret i32 %3
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/tz.cpp.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; linux/optimized/cpufreq_ondemand.ll
 ; linux/optimized/dm-kcopyd.ll
-; linux/optimized/fonts.ll
 ; linux/optimized/tcp_minisocks.ll
 ; quantlib/optimized/date.ll
 ; velox/optimized/DateTimeFormatter.cpp.ll

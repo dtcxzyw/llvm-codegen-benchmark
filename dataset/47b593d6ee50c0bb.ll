@@ -1,5 +1,5 @@
 
-; 46 occurrences:
+; 47 occurrences:
 ; abc/optimized/aigOper.c.ll
 ; abc/optimized/cuddBddAbs.c.ll
 ; abc/optimized/cuddCheck.c.ll
@@ -46,11 +46,12 @@
 ; rust-analyzer-rs/optimized/58xaix613yc6ngmz.ll
 ; tree-sitter-rs/optimized/55e7aotywrgrb7st.ll
 ; z3/optimized/smt2parser.cpp.ll
+; zed-rs/optimized/dqlxdbn4bc486rcuwzrxwttzb.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = icmp eq ptr %3, %1
+  %4 = icmp eq ptr %1, %3
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
@@ -65,7 +66,7 @@ entry:
 define i1 @func0000000000000008(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = icmp ult ptr %3, %1
+  %4 = icmp ugt ptr %1, %3
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
@@ -76,7 +77,7 @@ entry:
 define i1 @func0000000000000005(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = icmp uge ptr %3, %1
+  %4 = icmp ule ptr %1, %3
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
@@ -87,7 +88,7 @@ entry:
 define i1 @func0000000000000004(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = icmp ugt ptr %3, %1
+  %4 = icmp ult ptr %1, %3
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
@@ -114,7 +115,7 @@ entry:
 define i1 @func000000000000000c(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = icmp ne ptr %3, %1
+  %4 = icmp ne ptr %1, %3
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }

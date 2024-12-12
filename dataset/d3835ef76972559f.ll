@@ -1,13 +1,28 @@
 
-; 17 occurrences:
+; 9 occurrences:
 ; arrow/optimized/feather.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
-; assimp/optimized/BlenderDNA.cpp.ll
 ; assimp/optimized/MS3DLoader.cpp.ll
 ; assimp/optimized/SIBImporter.cpp.ll
 ; assimp/optimized/TerragenLoader.cpp.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; flatbuffers/optimized/reflection.cpp.ll
+; grpc/optimized/ssl_transport_security.cc.ll
+; rocksdb/optimized/block.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %1, %3
+  %5 = and i64 %4, 4294967295
+  %6 = icmp samesign ult i64 %5, %0
+  ret i1 %6
+}
+
+; 11 occurrences:
+; assimp/optimized/BlenderDNA.cpp.ll
+; assimp/optimized/MS3DLoader.cpp.ll
+; boost/optimized/matches_relation_factory.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
 ; folly/optimized/Uri.cpp.ll
@@ -15,7 +30,6 @@
 ; hyperscan/optimized/rose_build_exclusive.cpp.ll
 ; llvm/optimized/Signals.cpp.ll
 ; openjdk/optimized/elfSymbolTable.ll
-; rocksdb/optimized/block.cc.ll
 ; velox/optimized/URLFunctions.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i64 %1, ptr %2) #0 {
@@ -29,10 +43,10 @@ entry:
 
 ; 7 occurrences:
 ; assimp/optimized/RawLoader.cpp.ll
+; boost/optimized/matches_relation_factory.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
 ; folly/optimized/Uri.cpp.ll
-; opencv/optimized/reshape_layer.cpp.ll
 ; postgres/optimized/ginpostinglist.ll
 ; velox/optimized/URLFunctions.cpp.ll
 ; Function Attrs: nounwind
@@ -87,6 +101,18 @@ entry:
   %4 = sub i64 %1, %3
   %5 = and i64 %4, 4294967295
   %6 = icmp ugt i64 %5, %0
+  ret i1 %6
+}
+
+; 1 occurrences:
+; opencv/optimized/reshape_layer.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000011(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %1, %3
+  %5 = and i64 %4, 17179869180
+  %6 = icmp samesign eq i64 %5, %0
   ret i1 %6
 }
 

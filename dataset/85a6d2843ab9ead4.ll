@@ -27,10 +27,9 @@ entry:
   ret i32 %4
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -46,7 +45,7 @@ entry:
   ret i32 %4
 }
 
-; 22 occurrences:
+; 21 occurrences:
 ; clamav/optimized/server-th.c.ll
 ; duckdb/optimized/generators.cpp.ll
 ; faiss/optimized/ProductQuantizer.cpp.ll
@@ -58,7 +57,6 @@ entry:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll

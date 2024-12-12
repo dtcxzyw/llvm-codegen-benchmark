@@ -481,7 +481,7 @@
 ; llvm/optimized/Z3CrosscheckVisitor.cpp.ll
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000102(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000202(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1
   %4 = icmp ugt i64 %3, %1
@@ -493,7 +493,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/codeBuffer.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000622(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000001842(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = icmp eq i64 %3, %0
@@ -562,7 +562,7 @@ entry:
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000118(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1
   %4 = icmp ult i64 %3, %1
@@ -576,7 +576,7 @@ entry:
 ; llvm/optimized/SemaAvailability.cpp.ll
 ; llvm/optimized/SemaTemplateVariadic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000308(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1
   %4 = icmp ult i64 %3, %0
@@ -588,7 +588,7 @@ entry:
 ; 1 occurrences:
 ; libzmq/optimized/options.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000122(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000242(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -1
   %4 = icmp uge i64 %3, %1
@@ -598,21 +598,9 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/prmt.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000722(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw nsw i64 %2, 1
-  %4 = icmp uge i64 %3, %1
-  %5 = icmp eq ptr %0, null
-  %6 = or i1 %5, %4
-  ret i1 %6
-}
-
-; 1 occurrences:
 ; linux/optimized/trace_printk.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000042(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1
   %4 = icmp eq i64 %3, %1
@@ -624,7 +612,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/setup-bus.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000302(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1
   %4 = icmp eq i64 %3, %0

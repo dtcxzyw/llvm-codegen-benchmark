@@ -1,5 +1,5 @@
 
-; 85 occurrences:
+; 83 occurrences:
 ; assimp/optimized/DXFLoader.cpp.ll
 ; chibicc/optimized/parse.ll
 ; clamav/optimized/ishield.c.ll
@@ -12,7 +12,6 @@
 ; gromacs/optimized/convert_tpr.cpp.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; linux/optimized/drm_edid.ll
-; linux/optimized/he.ll
 ; linux/optimized/intel_dp_link_training.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/rx.ll
@@ -42,7 +41,6 @@
 ; llvm/optimized/MachineFunction.cpp.ll
 ; llvm/optimized/MachineInstr.cpp.ll
 ; llvm/optimized/ParseTentative.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RISCVLegalizerInfo.cpp.ll
@@ -89,11 +87,11 @@
 define i8 @func0000000000000003(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
-  %3 = add nuw nsw i8 %2, %0
+  %3 = add nuw nsw i8 %0, %2
   ret i8 %3
 }
 
-; 40 occurrences:
+; 42 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; folly/optimized/String.cpp.ll
 ; folly/optimized/dynamic.cpp.ll
@@ -134,11 +132,13 @@ entry:
 ; wireshark/optimized/packet-knxip.c.ll
 ; wireshark/optimized/packet-mle.c.ll
 ; wireshark/optimized/str_util.c.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -16
-  %3 = add i8 %2, %0
+  %3 = add i8 %0, %2
   ret i8 %3
 }
 
@@ -155,7 +155,7 @@ entry:
   ret i8 %3
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; llvm/optimized/X86Disassembler.cpp.ll
 ; luajit/optimized/lj_cconv.ll
 ; luajit/optimized/lj_cconv_dyn.ll
@@ -167,7 +167,6 @@ entry:
 ; softposit-rs/optimized/4x7uq85ym1obejw4.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; wireshark/optimized/packet-mpeg-descriptor.c.ll
-; wireshark/optimized/packet-mpeg-sect.c.ll
 ; wireshark/optimized/packet-zvt.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i8 %0, i8 %1) #0 {

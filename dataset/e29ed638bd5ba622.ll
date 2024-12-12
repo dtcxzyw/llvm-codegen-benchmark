@@ -1,8 +1,9 @@
 
-; 101 occurrences:
+; 118 occurrences:
 ; abseil-cpp/optimized/unordered_map_test.cc.ll
 ; abseil-cpp/optimized/unordered_set_test.cc.ll
 ; assimp/optimized/ASEParser.cpp.ll
+; boost/optimized/src.ll
 ; ceres/optimized/line_search_preprocessor.cc.ll
 ; ceres/optimized/trust_region_preprocessor.cc.ll
 ; cmake/optimized/cmCacheManager.cxx.ll
@@ -72,8 +73,24 @@
 ; opencv/optimized/gstreamingexecutor.cpp.ll
 ; opencv/optimized/gthreadedexecutor.cpp.ll
 ; opencv/optimized/serialization.cpp.ll
+; openspiel/optimized/best_response_test.cc.ll
+; openspiel/optimized/cfr_br.cc.ll
+; openspiel/optimized/corr_dev_builder.cc.ll
+; openspiel/optimized/corr_dist.cc.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_xts.ll
 ; openssl/optimized/libdefault-lib-cipher_sm4_xts.ll
+; openusd/optimized/TestUsdResolverChangedResolver.cpp.ll
+; openusd/optimized/bboxCache.cpp.ll
+; openusd/optimized/collectionCache.cpp.ll
+; openusd/optimized/counterAccumulator.cpp.ll
+; openusd/optimized/delegate.cpp.ll
+; openusd/optimized/discoveryPlugin.cpp.ll
+; openusd/optimized/errorMark.cpp.ll
+; openusd/optimized/nodeGraph.cpp.ll
+; openusd/optimized/pipeline.cpp.ll
+; openusd/optimized/renderPassState.cpp.ll
+; openusd/optimized/schemaRegistry.cpp.ll
+; openusd/optimized/testUsdGeomXformCache.cpp.ll
 ; php/optimized/zend_opcode.ll
 ; postgres/optimized/autovacuum.ll
 ; postgres/optimized/catcache.ll
@@ -102,37 +119,10 @@
 ; yalantinglibs/optimized/chat_room.cpp.ll
 ; z3/optimized/emonics.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000211(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000c21(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 32
-  %3 = icmp eq ptr %2, %0
-  %4 = icmp eq ptr %0, null
-  %5 = select i1 %4, i1 true, i1 %3
-  ret i1 %5
-}
-
-; 16 occurrences:
-; openspiel/optimized/best_response_test.cc.ll
-; openspiel/optimized/cfr_br.cc.ll
-; openspiel/optimized/corr_dev_builder.cc.ll
-; openspiel/optimized/corr_dist.cc.ll
-; openusd/optimized/TestUsdResolverChangedResolver.cpp.ll
-; openusd/optimized/bboxCache.cpp.ll
-; openusd/optimized/collectionCache.cpp.ll
-; openusd/optimized/counterAccumulator.cpp.ll
-; openusd/optimized/delegate.cpp.ll
-; openusd/optimized/discoveryPlugin.cpp.ll
-; openusd/optimized/errorMark.cpp.ll
-; openusd/optimized/nodeGraph.cpp.ll
-; openusd/optimized/pipeline.cpp.ll
-; openusd/optimized/renderPassState.cpp.ll
-; openusd/optimized/schemaRegistry.cpp.ll
-; openusd/optimized/testUsdGeomXformCache.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000311(ptr %0, ptr %1) #0 {
-entry:
-  %2 = getelementptr nusw nuw i8, ptr %1, i64 48
-  %3 = icmp eq ptr %2, %0
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 32
+  %3 = icmp eq ptr %0, %2
   %4 = icmp eq ptr %0, null
   %5 = select i1 %4, i1 true, i1 %3
   ret i1 %5

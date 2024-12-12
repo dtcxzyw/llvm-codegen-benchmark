@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
@@ -8,6 +8,7 @@
 ; luajit/optimized/lj_bcwrite_dyn.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; nanosvg/optimized/nanosvg.ll
 ; nuttx/optimized/lib_dumpvbuffer.c.ll
 ; oiio/optimized/Codec.cpp.ll
@@ -20,8 +21,9 @@ entry:
   ret i32 %2
 }
 
-; 194 occurrences:
+; 196 occurrences:
 ; abc/optimized/bdcSpfd.c.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/filtering.c.ll
 ; cmake/optimized/archive_read_support_format_tar.c.ll
 ; fmt/optimized/chrono-test.cc.ll
@@ -39,6 +41,7 @@ entry:
 ; fmt/optimized/unicode-test.cc.ll
 ; fmt/optimized/util.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
+; git/optimized/merge-ort.ll
 ; libjpeg-turbo/optimized/jquant1.c.ll
 ; libwebp/optimized/quality_estimate.c.ll
 ; lief/optimized/ASN1Reader.cpp.ll
@@ -237,8 +240,9 @@ entry:
   ret i32 %2
 }
 
-; 83 occurrences:
+; 82 occurrences:
 ; lief/optimized/File.cpp.ll
+; lvgl/optimized/lv_math.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nix/optimized/attrs.ll
 ; nix/optimized/binary-cache-store.ll
@@ -258,8 +262,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll

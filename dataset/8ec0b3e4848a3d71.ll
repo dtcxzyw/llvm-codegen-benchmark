@@ -1,5 +1,5 @@
 
-; 340 occurrences:
+; 339 occurrences:
 ; assimp/optimized/3DSConverter.cpp.ll
 ; assimp/optimized/ASELoader.cpp.ll
 ; assimp/optimized/ASEParser.cpp.ll
@@ -220,7 +220,6 @@
 ; yosys/optimized/lattice_gsr.ll
 ; yosys/optimized/liberty.ll
 ; yosys/optimized/log.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/ltp.ll
 ; yosys/optimized/lut2mux.ll
 ; yosys/optimized/maccmap.ll
@@ -470,12 +469,11 @@ entry:
   ret i32 %3
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
-; eastl/optimized/TestChrono.cpp.ll
 ; php/optimized/cdf_time.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i64 %0) #0 {

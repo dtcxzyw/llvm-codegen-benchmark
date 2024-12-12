@@ -1,8 +1,9 @@
 
-; 268 occurrences:
+; 269 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; arrow/optimized/expression.cc.ll
 ; assimp/optimized/3DSLoader.cpp.ll
+; boost/optimized/calculate_point_order.ll
 ; ceres/optimized/parameter_block_ordering.cc.ll
 ; cmake/optimized/cmCTestBinPacker.cxx.ll
 ; cmake/optimized/cmCTestMultiProcessHandler.cxx.ll
@@ -269,7 +270,7 @@
 ; z3/optimized/theory_arith.cpp.ll
 ; zxing/optimized/ConcentricFinder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %0, 4
   %3 = sub nsw i64 %1, %2
@@ -280,11 +281,11 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/ng_corpus_generator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000f8(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %0, 5
   %3 = sub nuw nsw i64 %1, %2
-  %4 = icmp ugt i64 %2, %3
+  %4 = icmp samesign ugt i64 %2, %3
   ret i1 %4
 }
 

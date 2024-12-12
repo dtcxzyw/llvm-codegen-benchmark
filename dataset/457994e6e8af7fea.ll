@@ -1,5 +1,5 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; libpng/optimized/pngrutil.c.ll
 ; libpng/optimized/pngwrite.c.ll
 ; libquic/optimized/e_rc2.c.ll
@@ -7,9 +7,10 @@
 ; openssl/optimized/libcrypto-lib-rc2_skey.ll
 ; openssl/optimized/libcrypto-shlib-rc2_skey.ll
 ; postgres/optimized/inet_cidr_ntop.ll
+; soc-simulator/optimized/verilated.ll
 ; verilator/optimized/V3Number.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0) #0 {
+define i1 @func00000000000000c1(i32 %0) #0 {
 entry:
   %1 = add nuw nsw i32 %0, 7
   %.mask = and i32 %1, -8
@@ -17,11 +18,10 @@ entry:
   ret i1 %2
 }
 
-; 2 occurrences:
-; linux/optimized/sd.ll
+; 1 occurrences:
 ; softposit-rs/optimized/xadcarspawrhwb8.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0) #0 {
+define i1 @func0000000000000041(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -1
   %.mask = and i32 %1, -64

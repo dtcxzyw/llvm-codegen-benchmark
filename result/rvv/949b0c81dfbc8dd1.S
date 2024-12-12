@@ -47,3 +47,10 @@ func000000000000000c:                   # @func000000000000000c
 	vmerge.vvm	v8, v10, v8, v0
 	vor.vi	v8, v8, 2
 	ret
+func0000000000000029:                   # @func0000000000000029
+	vsetivli	zero, 8, e16, m1, ta, ma
+	vmsleu.vi	v0, v12, 15
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vmerge.vvm	v8, v10, v8, v0
+	vor.vi	v8, v8, 2
+	ret

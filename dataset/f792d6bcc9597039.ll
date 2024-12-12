@@ -4,7 +4,7 @@
 ; openspiel/optimized/rbc.cc.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 16
   %4 = ashr exact i32 %3, 16
@@ -18,11 +18,11 @@ entry:
 ; llvm/optimized/CalledOnceCheck.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 1
   %4 = ashr i32 %3, 31
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = icmp eq i32 %5, %0
   ret i1 %6
 }
@@ -30,11 +30,11 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 1
   %4 = ashr i32 %3, 31
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = icmp ult i32 %5, %0
   ret i1 %6
 }
@@ -42,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/decodemv.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000086(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 16
   %4 = ashr exact i32 %3, 16
@@ -54,7 +54,7 @@ entry:
 ; 1 occurrences:
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000057(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a7(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 16
   %4 = ashr exact i32 %3, 16

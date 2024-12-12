@@ -6,7 +6,7 @@
 ; icu/optimized/number_rounding.ll
 ; opencc/optimized/Config.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 13, %2
   %4 = select i1 %1, i32 4, i32 %3
@@ -19,7 +19,7 @@ entry:
 ; cmake/optimized/cmExprParser.cxx.ll
 ; php/optimized/phpdbg_parser.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %2
   %4 = select i1 %1, i32 0, i32 %3

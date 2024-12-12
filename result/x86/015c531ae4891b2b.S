@@ -24,14 +24,6 @@ func0000000000000005:                   # @func0000000000000005
 	imull	$146097, %ecx, %ecx             # imm = 0x23AB1
 	subl	%ecx, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
-	movl	%edi, %eax
-	movl	$3435973837, %ecx               # imm = 0xCCCCCCCD
-	imulq	%rax, %rcx
-	shrq	$35, %rcx
-	leal	(%rcx,%rcx,2), %eax
-	leal	(%rdi,%rax,2), %eax
-	retq
 func000000000000000f:                   # @func000000000000000f
 	movl	%edi, %eax
 	movl	$3435973837, %ecx               # imm = 0xCCCCCCCD

@@ -56,7 +56,7 @@ entry:
 define i64 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = mul nuw i64 %3, %0
+  %4 = mul nuw i64 %0, %3
   %5 = lshr i64 %1, 32
   %6 = add nuw i64 %4, %5
   ret i64 %6

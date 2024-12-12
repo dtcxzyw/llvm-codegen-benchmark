@@ -1,10 +1,11 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; luajit/optimized/lj_crecord.ll
 ; luajit/optimized/lj_crecord_dyn.ll
 ; meilisearch-rs/optimized/4p6euf9p6jz4j36m.ll
 ; ripgrep-rs/optimized/2425miidforqaenw.ll
 ; ruby/optimized/instrumentation.ll
+; zed-rs/optimized/44bj4n5407vag46bun63mwelh.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000018(i64 %0) #0 {
 entry:

@@ -1,9 +1,9 @@
-func0000000000000146:                   # @func0000000000000146
+func0000000000000686:                   # @func0000000000000686
 	movl	%edx, %eax
-	cmpq	%rdi, %rax
-	seta	%cl
+	cmpq	%rax, %rdi
+	setb	%cl
 	movslq	%esi, %rax
-	cmpq	%rdi, %rax
-	setg	%al
+	cmpq	%rax, %rdi
+	setl	%al
 	andb	%cl, %al
 	retq

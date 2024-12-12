@@ -13,7 +13,7 @@
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; yosys/optimized/aigerparse.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001a8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 24
@@ -30,7 +30,7 @@ entry:
 ; hermes/optimized/ConsecutiveStringStorage.cpp.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %.neg = sdiv exact i64 %3, -24
@@ -44,7 +44,7 @@ entry:
 ; protobuf/optimized/extension.cc.ll
 ; protobuf/optimized/helpers.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000121(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %.neg = sdiv exact i64 %3, -40
@@ -53,25 +53,12 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; hyperscan/optimized/ng_prefilter.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sub i64 %1, %2
-  %4 = sdiv exact i64 %3, 136
-  %5 = sdiv i64 %0, 2
-  %6 = add nsw i64 %4, %5
-  %7 = icmp ult i64 %6, 3
-  ret i1 %7
-}
-
 ; 3 occurrences:
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestVector.cpp.ll
 ; hyperscan/optimized/rose_build_anchored.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 96

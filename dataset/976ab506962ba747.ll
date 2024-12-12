@@ -3,7 +3,7 @@
 ; icu/optimized/collationdatabuilder.ll
 ; llvm/optimized/APFixedPoint.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 19
   %3 = ashr i32 %0, 19

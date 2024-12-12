@@ -1,5 +1,5 @@
 
-; 409 occurrences:
+; 408 occurrences:
 ; abseil-cpp/optimized/cord_analysis.cc.ll
 ; abseil-cpp/optimized/exception_safety_testing_test.cc.ll
 ; abseil-cpp/optimized/fixed_array_exception_safety_test.cc.ll
@@ -85,7 +85,6 @@
 ; folly/optimized/EventBaseLocal.cpp.ll
 ; folly/optimized/IOThreadPoolDeadlockDetectorObserver.cpp.ll
 ; folly/optimized/LogCategory.cpp.ll
-; folly/optimized/LoggerDB.cpp.ll
 ; folly/optimized/SanitizeLeak.cpp.ll
 ; folly/optimized/Singleton.cpp.ll
 ; folly/optimized/json.cpp.ll
@@ -414,7 +413,7 @@ define i1 @func0000000000000001(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = urem i64 %3, %1
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 

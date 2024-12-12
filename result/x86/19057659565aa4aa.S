@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000f:                   # @func000000000000000f
 	andl	$1, %edx
 	leal	(%rsi,%rdx,2), %eax
 	shlq	$4, %rax
@@ -11,26 +11,13 @@ func0000000000000070:                   # @func0000000000000070
 	cmovel	%eax, %esi
 	leaq	6(%rdi,%rsi), %rax
 	retq
-func000000000000007a:                   # @func000000000000007a
+func000000000000007f:                   # @func000000000000007f
 	andl	$1, %edx
 	leal	1(%rdx,%rsi), %eax
 	leaq	(%rax,%rax,4), %rax
 	leaq	8(%rdi,%rax,8), %rax
 	retq
-func000000000000007b:                   # @func000000000000007b
-	andl	$1, %edx
-	leal	1(%rdx,%rsi), %eax
-	shlq	$4, %rax
-	leaq	8(%rdi,%rax), %rax
-	retq
-func000000000000000b:                   # @func000000000000000b
-	andl	$1, %edx
-	subl	%edx, %esi
-	addl	$2, %esi
-	imulq	$152, %rsi, %rax
-	leaq	144(%rdi,%rax), %rax
-	retq
-func000000000000002b:                   # @func000000000000002b
+func000000000000002f:                   # @func000000000000002f
 	andl	$1, %edx
 	leal	-3(%rdx,%rsi), %eax
 	shlq	$5, %rax

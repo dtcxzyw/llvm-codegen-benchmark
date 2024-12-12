@@ -5,7 +5,7 @@ func0000000000000004:                   # @func0000000000000004
 	add	a0, a0, a1
 	sltiu	a0, a0, 8
 	ret
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	andi	a2, a2, 1
 	lui	a3, 524288
 	addiw	a3, a3, -249

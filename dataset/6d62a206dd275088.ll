@@ -39,7 +39,7 @@
 define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = shl i64 %4, 32
   %6 = ashr exact i64 %5, 32
   %7 = getelementptr nusw i8, ptr %0, i64 %6
@@ -77,7 +77,7 @@ entry:
 define ptr @func0000000000000004(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = shl i64 %4, 32
   %6 = ashr exact i64 %5, 32
   %7 = getelementptr i8, ptr %0, i64 %6

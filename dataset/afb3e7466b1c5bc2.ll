@@ -7,10 +7,10 @@
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha1_hw.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha256_hw.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000204(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 6
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sub i32 %0, %4
   %6 = icmp ult i32 %5, 56
   ret i1 %6
@@ -30,10 +30,10 @@ entry:
 ; ncnn/optimized/scale_x86_avx512.cpp.ll
 ; zxing/optimized/DMHighLevelEncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000015a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 4
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sub nsw i32 %0, %4
   %6 = icmp sgt i32 %5, 3
   ret i1 %6
@@ -42,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; zxing/optimized/DMHighLevelEncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000015c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002ac(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
   %4 = add nsw i32 %3, %1

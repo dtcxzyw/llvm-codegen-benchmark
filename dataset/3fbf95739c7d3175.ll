@@ -19,12 +19,12 @@ entry:
 ; harfbuzz/optimized/hb-subset-cff2.cc.ll
 ; icu/optimized/bmpset.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i16 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 6
   %3 = and i16 %2, 63
   %4 = zext nneg i16 %3 to i64
-  %5 = getelementptr nusw [64 x i32], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [64 x i32], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

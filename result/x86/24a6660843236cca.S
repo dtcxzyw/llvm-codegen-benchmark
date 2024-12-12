@@ -1,11 +1,11 @@
-func00000000000001b6:                   # @func00000000000001b6
+func0000000000000566:                   # @func0000000000000566
 	addl	%edx, %esi
 	sets	%cl
 	cmpl	%edi, %esi
 	setge	%al
 	orb	%cl, %al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	addl	%edx, %esi
 	cmpl	$8, %esi
 	setb	%cl
@@ -13,7 +13,7 @@ func0000000000000044:                   # @func0000000000000044
 	setb	%al
 	orb	%cl, %al
 	retq
-func00000000000000a8:                   # @func00000000000000a8
+func0000000000000158:                   # @func0000000000000158
 	addl	%edx, %esi
 	cmpl	$257, %esi                      # imm = 0x101
 	setae	%cl
@@ -21,14 +21,14 @@ func00000000000000a8:                   # @func00000000000000a8
 	setg	%al
 	orb	%cl, %al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	addl	%edx, %esi
 	sete	%cl
 	cmpl	%edi, %esi
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	addl	%edx, %esi
 	cmpl	$-1, %esi
 	sete	%cl
@@ -36,14 +36,14 @@ func0000000000000061:                   # @func0000000000000061
 	setl	%al
 	orb	%cl, %al
 	retq
-func0000000000000111:                   # @func0000000000000111
+func0000000000000421:                   # @func0000000000000421
 	addl	%edx, %esi
 	sete	%cl
 	cmpl	%edi, %esi
 	sete	%al
 	orb	%cl, %al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	addl	%edx, %esi
 	cmpl	%edi, %esi
 	sete	%al
@@ -53,14 +53,14 @@ func000000000000001a:                   # @func000000000000001a
 .LBB6_1:
 	movb	$1, %al
 	retq
-func00000000000000b6:                   # @func00000000000000b6
+func0000000000000166:                   # @func0000000000000166
 	addl	%edx, %esi
 	sets	%cl
 	cmpl	%edi, %esi
 	setge	%al
 	orb	%cl, %al
 	retq
-func00000000000001a6:                   # @func00000000000001a6
+func0000000000000546:                   # @func0000000000000546
 	addl	%edx, %esi
 	sets	%cl
 	cmpl	%edi, %esi

@@ -6,6 +6,6 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func0000000000000008:                   # @func0000000000000008
 	sext.w	a0, a0
-	srliw	a1, a1, 4
+	srliw	a1, a1, 8
 	sltu	a0, a1, a0
 	ret

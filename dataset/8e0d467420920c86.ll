@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; postgres/optimized/read.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001c(i32 %0, i8 %1) #0 {
+define i32 @func000000000000002c(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 92
   %3 = icmp ne i32 %0, 1

@@ -3,7 +3,7 @@
 func0000000000000001:                   # @func0000000000000001
 	vpsrld	$13, %ymm2, %ymm2
 	vpandd	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
-	vpternlogd	$30, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 ^ (ymm2 | ymm1)
+	vpternlogd	$30, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 ^ (ymm1 | ymm2)
 	retq
 .LCPI1_0:
 	.byte	128                             # 0x80

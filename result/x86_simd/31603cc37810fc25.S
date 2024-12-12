@@ -7,67 +7,74 @@
 	.zero	2
 	.zero	2
 	.zero	2
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	vpcmpltuq	%ymm2, %ymm1, %k0
 	vpcmpltuw	.LCPI0_0(%rip), %xmm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000102:                   # @func0000000000000102
+func0000000000000202:                   # @func0000000000000202
 	vpcmpnleuq	%ymm2, %ymm1, %k0
 	vptestnmw	%xmm0, %xmm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000182:                   # @func0000000000000182
+func0000000000000302:                   # @func0000000000000302
 	vpcmpneqq	%ymm2, %ymm1, %k0
 	vptestnmw	%xmm0, %xmm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000122:                   # @func0000000000000122
+func0000000000000242:                   # @func0000000000000242
 	vpcmpnltuq	%ymm2, %ymm1, %k0
 	vptestnmw	%xmm0, %xmm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-.LCPI4_0:
-	.short	65416                           # 0xff88
-	.short	65416                           # 0xff88
-	.short	65416                           # 0xff88
-	.short	65416                           # 0xff88
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
-func00000000000000a8:                   # @func00000000000000a8
-	vpcmpleuq	%ymm2, %ymm1, %k0
-	vpcmpltuw	.LCPI4_0(%rip), %xmm0, %k1
+func0000000000000318:                   # @func0000000000000318
+	vptestmw	%xmm2, %xmm2, %k0
+	vpcmpneqq	%ymm1, %ymm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
 .LCPI5_0:
-	.short	244                             # 0xf4
-	.short	244                             # 0xf4
-	.short	244                             # 0xf4
-	.short	244                             # 0xf4
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
 	.zero	2
 	.zero	2
 	.zero	2
 	.zero	2
-func0000000000000108:                   # @func0000000000000108
+func0000000000000208:                   # @func0000000000000208
 	vpcmpnleuq	%ymm2, %ymm1, %k0
 	vpcmpltuw	.LCPI5_0(%rip), %xmm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000082:                   # @func0000000000000082
+.LCPI6_0:
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.zero	2
+	.zero	2
+	.zero	2
+	.zero	2
+func0000000000000110:                   # @func0000000000000110
+	vpcmpltuw	.LCPI6_0(%rip), %xmm2, %k0
+	vpcmpnleuq	%ymm1, %ymm0, %k1
+	korw	%k0, %k1, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+func0000000000000102:                   # @func0000000000000102
 	vpcmpltuq	%ymm2, %ymm1, %k0
 	vptestnmw	%xmm0, %xmm0, %k1
 	korw	%k0, %k1, %k0

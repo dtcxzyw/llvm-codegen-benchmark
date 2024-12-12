@@ -4,7 +4,7 @@
 ; openjdk/optimized/xBarrierSetC2.ll
 ; openjdk/optimized/zBarrierSetC2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000321(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000641(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/LeadLag.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000281(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
@@ -35,26 +35,12 @@ entry:
 ; redis/optimized/cluster.ll
 ; redis/optimized/redis-cli.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000038a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000070a(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
   %4 = trunc i64 %0 to i32
   %5 = icmp slt i32 %3, %4
-  ret i1 %5
-}
-
-; 3 occurrences:
-; abc/optimized/giaPat2.c.ll
-; freetype/optimized/truetype.c.ll
-; opencv/optimized/AKAZEFeatures.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000111(i64 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, 1
-  %4 = trunc nsw i64 %0 to i32
-  %5 = icmp eq i32 %3, %4
   ret i1 %5
 }
 
@@ -68,7 +54,7 @@ entry:
 ; slurm/optimized/mgr.ll
 ; stockfish/optimized/tbprobe.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000201(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
@@ -80,7 +66,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/entry.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000028a(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
@@ -93,7 +79,7 @@ entry:
 ; llvm/optimized/TextDiagnostic.cpp.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000301(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000601(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
@@ -105,7 +91,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000361(i64 %0, i64 %1) #0 {
+define i1 @func00000000000006c1(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
@@ -117,7 +103,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/Sema.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000341(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000681(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
@@ -135,7 +121,7 @@ entry:
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000238(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000468(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 2
@@ -168,10 +154,23 @@ entry:
   ret i1 %5
 }
 
+; 2 occurrences:
+; freetype/optimized/truetype.c.ll
+; opencv/optimized/AKAZEFeatures.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000221(i64 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = add i32 %2, 1
+  %4 = trunc nsw i64 %0 to i32
+  %5 = icmp eq i32 %3, %4
+  ret i1 %5
+}
+
 ; 1 occurrences:
 ; openblas/optimized/dlasrt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000106(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000206(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -1
@@ -183,7 +182,7 @@ entry:
 ; 1 occurrences:
 ; graphviz/optimized/shortest.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000126(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000246(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -1

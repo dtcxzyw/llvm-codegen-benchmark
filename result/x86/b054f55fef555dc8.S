@@ -4,12 +4,6 @@ func000000000000006f:                   # @func000000000000006f
 	movzbl	%dil, %eax
 	addl	%ecx, %eax
 	retq
-func0000000000000067:                   # @func0000000000000067
-	addl	%edx, %esi
-	imull	$85, %esi, %ecx
-	movzbl	%dil, %eax
-	addl	%ecx, %eax
-	retq
 func0000000000000035:                   # @func0000000000000035
 	addl	%edx, %esi
 	leal	(%rsi,%rsi,4), %eax

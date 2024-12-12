@@ -36,3 +36,9 @@ func0000000000000008:                   // @func0000000000000008
 	csel	x0, xzr, x0, hi
 	ret
                                         // -- End function
+func0000000000000018:                   // @func0000000000000018
+// %bb.0:                               // %entry
+	cmp	w1, #16
+	csel	x0, xzr, x0, hi
+	ret
+                                        // -- End function

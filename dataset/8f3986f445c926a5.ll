@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 16 occurrences:
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/builder_base.cc.ll
 ; arrow/optimized/builder_dict.cc.ll
@@ -15,21 +15,11 @@
 ; tree-sitter-rs/optimized/50gi8jfmf82cuy8e.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; wireshark/optimized/k12.c.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000000c(i64 %0) #0 {
 entry:
   %1 = icmp ne i64 %0, -9223372036854775808
-  %2 = sext i1 %1 to i8
-  ret i8 %2
-}
-
-; 2 occurrences:
-; qemu/optimized/source_s_addMagsF16.c.ll
-; spike/optimized/s_addMagsF16.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000004(i64 %0) #0 {
-entry:
-  %1 = icmp ult i64 %0, 1073741824
   %2 = sext i1 %1 to i8
   ret i8 %2
 }
@@ -44,8 +34,21 @@ entry:
   ret i8 %2
 }
 
-; 9 occurrences:
+; 22 occurrences:
 ; arrow/optimized/compare_internal.cc.ll
+; boost/optimized/hier_part_rule.ll
+; boost/optimized/host_rule.ll
+; boost/optimized/ipv6_addrz_rule.ll
+; boost/optimized/ipvfuture_rule.ll
+; boost/optimized/origin_form_rule.ll
+; boost/optimized/parse_path.ll
+; boost/optimized/pattern.ll
+; boost/optimized/relative_part_rule.ll
+; boost/optimized/relative_ref_rule.ll
+; boost/optimized/replacement_field_rule.ll
+; boost/optimized/scheme_rule.ll
+; boost/optimized/uri_rule.ll
+; boost/optimized/userinfo_rule.ll
 ; cpython/optimized/longobject.ll
 ; linux/optimized/maple_tree.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -57,7 +60,7 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i64 %0) #0 {
 entry:
-  %1 = icmp eq i64 %0, 3
+  %1 = icmp eq i64 %0, 0
   %2 = sext i1 %1 to i8
   ret i8 %2
 }

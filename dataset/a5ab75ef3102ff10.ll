@@ -11,7 +11,9 @@ entry:
   ret i1 %5
 }
 
-; 9 occurrences:
+; 11 occurrences:
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_mutualglobal.cpp.ll
 ; ncnn/optimized/deformableconv2d.cpp.ll

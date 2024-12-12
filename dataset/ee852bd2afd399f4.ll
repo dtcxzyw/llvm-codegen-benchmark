@@ -3,7 +3,7 @@
 ; abc/optimized/giaSatLE.c.ll
 ; abc/optimized/giaStr.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000006a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 15
   %4 = and i32 %1, 15
@@ -28,7 +28,7 @@ entry:
 ; icu/optimized/ucmstate.ll
 ; llvm/optimized/ParsedAttr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65535
   %4 = and i32 %1, 1
@@ -40,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ParsedAttr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000039(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000069(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65535
   %4 = and i32 %1, 1
@@ -52,7 +52,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ParsedAttr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000035(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000065(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65535
   %4 = and i32 %1, 1
@@ -64,12 +64,12 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/e100.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000074(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65535
   %4 = and i32 %1, 65535
   %5 = add nuw nsw i32 %4, %3
-  %6 = icmp ult i32 %5, %0
+  %6 = icmp samesign ult i32 %5, %0
   ret i1 %6
 }
 
@@ -79,12 +79,12 @@ entry:
 ; luajit/optimized/lj_cconv_dyn.ll
 ; redis/optimized/quicklist.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000078(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65535
   %4 = and i32 %1, 65535
   %5 = add nuw nsw i32 %4, %3
-  %6 = icmp ugt i32 %5, %0
+  %6 = icmp samesign ugt i32 %5, %0
   ret i1 %6
 }
 
@@ -103,7 +103,7 @@ entry:
 ; 1 occurrences:
 ; lua/optimized/lcode.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000066(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
   %4 = and i32 %1, 255

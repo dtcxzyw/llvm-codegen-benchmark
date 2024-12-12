@@ -20,11 +20,12 @@ entry:
   ret i32 %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; cmake/optimized/blocksort.c.ll
 ; hdf5/optimized/H5B2int.c.ll
 ; linux/optimized/intel_panel.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; openblas/optimized/dlaqr0.c.ll
 ; openblas/optimized/dlaqr4.c.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
@@ -38,11 +39,9 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; abc/optimized/fraHot.c.ll
-; cpython/optimized/Hacl_Hash_SHA3.ll
 ; icu/optimized/umutablecptrie.ll
-; oiio/optimized/imagecache.cpp.ll
 ; openmpi/optimized/coll_base_reduce_scatter_block.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
@@ -65,8 +64,7 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
-; postgres/optimized/stem_ISO_8859_1_finnish.ll
+; 1 occurrences:
 ; postgres/optimized/stem_UTF_8_turkish.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {

@@ -1,5 +1,5 @@
 
-; 42 occurrences:
+; 41 occurrences:
 ; cpython/optimized/sre.ll
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
@@ -9,7 +9,6 @@
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; hyperscan/optimized/rose_build_program.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
-; minetest/optimized/mapnode.cpp.ll
 ; postgres/optimized/latch.ll
 ; postgres/optimized/pg_lzcompress.ll
 ; postgres/optimized/pg_lzcompress_shlib.ll
@@ -46,8 +45,8 @@
 define i1 @func0000000000000004(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
-  %4 = icmp ugt ptr %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp ult ptr %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

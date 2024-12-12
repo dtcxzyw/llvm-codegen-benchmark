@@ -31,7 +31,7 @@ func000000000000000f:                   # @func000000000000000f
 	sext.w	a0, a0
 	slli	a0, a0, 2
 	ret
-func0000000000000027:                   # @func0000000000000027
+func00000000000000a7:                   # @func00000000000000a7
 	sext.w	a2, a2
 	sltiu	a2, a2, 2
 	czero.nez	a1, a1, a2
@@ -56,7 +56,7 @@ func0000000000000052:                   # @func0000000000000052
 	or	a0, a0, a1
 	slli	a0, a0, 32
 	ret
-func0000000000000023:                   # @func0000000000000023
+func00000000000000a3:                   # @func00000000000000a3
 	sext.w	a2, a2
 	sltiu	a2, a2, 2
 	czero.nez	a1, a1, a2
@@ -64,13 +64,12 @@ func0000000000000023:                   # @func0000000000000023
 	or	a0, a0, a1
 	slli.uw	a0, a0, 3
 	ret
-func0000000000000026:                   # @func0000000000000026
-	sext.w	a2, a2
-	sltiu	a2, a2, 26
-	czero.nez	a1, a1, a2
-	czero.eqz	a0, a0, a2
+func0000000000000023:                   # @func0000000000000023
+	srliw	a2, a2, 17
+	czero.eqz	a1, a1, a2
+	czero.nez	a0, a0, a2
 	or	a0, a0, a1
-	slli	a0, a0, 56
+	slli.uw	a0, a0, 13
 	ret
 func0000000000000022:                   # @func0000000000000022
 	sext.w	a2, a2

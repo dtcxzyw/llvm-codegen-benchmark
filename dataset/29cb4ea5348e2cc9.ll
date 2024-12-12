@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; rustfmt-rs/optimized/x2cb3fifm47d4t5.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000181(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = select i1 %0, i1 %3, i1 false
@@ -16,7 +16,7 @@ entry:
 ; openjdk/optimized/splashscreen_sys.ll
 ; redis/optimized/replication.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000018c(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = select i1 %0, i1 %3, i1 false
@@ -25,7 +25,7 @@ entry:
   ret i1 %6
 }
 
-; 24 occurrences:
+; 25 occurrences:
 ; clap-rs/optimized/3b4nqkxyl1xqdcre.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
@@ -50,8 +50,9 @@ entry:
 ; rust-analyzer-rs/optimized/2hvuxgck7heujc9c.ll
 ; rust-analyzer-rs/optimized/2zm9eul0ycl9zsz3.ll
 ; rust-analyzer-rs/optimized/547gv31sq3clwal6.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 2
   %4 = select i1 %0, i1 %3, i1 false

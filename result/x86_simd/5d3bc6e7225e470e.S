@@ -31,7 +31,7 @@ func0000000000000001:                   # @func0000000000000001
 	.quad	8                               # 0x8
 .LCPI1_1:
 	.long	1                               # 0x1
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	vpcmpnltuq	.LCPI1_0(%rip){1to4}, %ymm1, %k1
 	vandps	.LCPI1_1(%rip){1to4}, %xmm2, %xmm0 {%k1}
 	vzeroupper

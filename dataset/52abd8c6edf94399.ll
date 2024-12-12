@@ -1,9 +1,10 @@
 
-; 974 occurrences:
+; 966 occurrences:
 ; abseil-cpp/optimized/raw_hash_set.cc.ll
 ; abseil-cpp/optimized/symbolize.cc.ll
 ; abseil-cpp/optimized/symbolize_test.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/basic_iarchive.ll
 ; clamav/optimized/hash.cpp.ll
 ; cpython/optimized/obmalloc.ll
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
@@ -115,7 +116,6 @@
 ; linux/optimized/compaction.ll
 ; linux/optimized/compat_binfmt_elf.ll
 ; linux/optimized/compress.ll
-; linux/optimized/cpuidle-haltpoll.ll
 ; linux/optimized/crash.ll
 ; linux/optimized/crash_core.ll
 ; linux/optimized/datagram.ll
@@ -129,7 +129,6 @@
 ; linux/optimized/drm_cache.ll
 ; linux/optimized/ds.ll
 ; linux/optimized/dst.ll
-; linux/optimized/dst_cache.ll
 ; linux/optimized/dumpstack_64.ll
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/early_ioremap.ll
@@ -149,11 +148,8 @@
 ; linux/optimized/gro_cells.ll
 ; linux/optimized/gss_rpc_xdr.ll
 ; linux/optimized/gup.ll
-; linux/optimized/head64.ll
-; linux/optimized/hibernate.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/hugetlb_vmemmap.ll
-; linux/optimized/i915_cmd_parser.ll
 ; linux/optimized/i915_gem.ll
 ; linux/optimized/i915_gem_execbuffer.ll
 ; linux/optimized/i915_gem_object.ll
@@ -185,13 +181,10 @@
 ; linux/optimized/kbuf.ll
 ; linux/optimized/kexec_core.ll
 ; linux/optimized/kprobes.ll
-; linux/optimized/kvmclock.ll
 ; linux/optimized/kyber-iosched.ll
 ; linux/optimized/ldt.ll
 ; linux/optimized/libata-sff.ll
 ; linux/optimized/libfs.ll
-; linux/optimized/loopback.ll
-; linux/optimized/machine_kexec_64.ll
 ; linux/optimized/main.ll
 ; linux/optimized/mapping.ll
 ; linux/optimized/matrix.ll
@@ -218,16 +211,13 @@
 ; linux/optimized/nfs4proc.ll
 ; linux/optimized/nfs4xdr.ll
 ; linux/optimized/numa.ll
-; linux/optimized/ops_helpers.ll
 ; linux/optimized/opt.ll
 ; linux/optimized/osl.ll
 ; linux/optimized/page-io.ll
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/page_vma_mapped.ll
-; linux/optimized/pagewalk.ll
 ; linux/optimized/pasid.ll
 ; linux/optimized/pci_irq.ll
-; linux/optimized/percpu-refcount.ll
 ; linux/optimized/percpu-rwsem.ll
 ; linux/optimized/percpu.ll
 ; linux/optimized/percpu_counter.ll
@@ -235,7 +225,6 @@
 ; linux/optimized/pgtable-generic.ll
 ; linux/optimized/pgtable.ll
 ; linux/optimized/printk.ll
-; linux/optimized/probe_roms.ll
 ; linux/optimized/processor_idle.ll
 ; linux/optimized/processor_perflib.ll
 ; linux/optimized/profile.ll
@@ -259,11 +248,8 @@
 ; linux/optimized/scatterwalk.ll
 ; linux/optimized/sch_api.ll
 ; linux/optimized/sch_generic.ll
-; linux/optimized/sch_mq.ll
 ; linux/optimized/scsi_lib.ll
-; linux/optimized/scsicam.ll
 ; linux/optimized/sd.ll
-; linux/optimized/secretmem.ll
 ; linux/optimized/selinuxfs.ll
 ; linux/optimized/seq_file.ll
 ; linux/optimized/set_memory.ll
@@ -275,7 +261,6 @@
 ; linux/optimized/skbuff.ll
 ; linux/optimized/skcipher.ll
 ; linux/optimized/slab_common.ll
-; linux/optimized/sleep.ll
 ; linux/optimized/slub.ll
 ; linux/optimized/snapshot.ll
 ; linux/optimized/sock.ll
@@ -285,7 +270,6 @@
 ; linux/optimized/sta_info.ll
 ; linux/optimized/stackdepot.ll
 ; linux/optimized/static_call_inline.ll
-; linux/optimized/status.ll
 ; linux/optimized/svc_xprt.ll
 ; linux/optimized/svcauth_gss.ll
 ; linux/optimized/svcsock.ll
@@ -294,7 +278,6 @@
 ; linux/optimized/tcp.ll
 ; linux/optimized/timer.ll
 ; linux/optimized/trace_eprobe.ll
-; linux/optimized/trace_event_perf.ll
 ; linux/optimized/trace_events.ll
 ; linux/optimized/trace_kprobe.ll
 ; linux/optimized/trace_output.ll
@@ -541,6 +524,7 @@
 ; llvm/optimized/XCOFFObjectFile.cpp.ll
 ; llvm/optimized/YAMLParser.cpp.ll
 ; llvm/optimized/YAMLTraits.cpp.ll
+; lvgl/optimized/lv_tlsf.ll
 ; meilisearch-rs/optimized/4llghrvh6vzci59o.ll
 ; meilisearch-rs/optimized/4rynht2gwvphprvy.ll
 ; memcached/optimized/memcached-restart.ll
@@ -912,14 +896,12 @@
 ; openmpi/optimized/smsc_cma_module.ll
 ; openmpi/optimized/vprotocol_pessimist_eventlog.ll
 ; openmpi/optimized/vprotocol_pessimist_recv.ll
-; openmpi/optimized/vprotocol_pessimist_request.ll
 ; openmpi/optimized/vprotocol_pessimist_send.ll
 ; openmpi/optimized/vprotocol_pessimist_wait.ll
 ; openusd/optimized/fileSystem.cpp.ll
 ; ozz-animation/optimized/box.cc.ll
 ; ozz-animation/optimized/skinning_job.cc.ll
 ; php/optimized/ir_emit.ll
-; php/optimized/phpdbg_sigsafe.ll
 ; php/optimized/zend_fibers.ll
 ; php/optimized/zend_jit.ll
 ; protobuf/optimized/arena.cc.ll
@@ -974,6 +956,16 @@
 ; wasmtime-rs/optimized/4sy2q5i3qnvymrev.ll
 ; wasmtime-rs/optimized/joyny9bexuq72mb.ll
 ; wolfssl/optimized/sp_int.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/14nzgp7qqjehsllc2nbkdaoyu.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
+; zed-rs/optimized/4wlt97p2na7yq96c9gq3wlrfc.ll
+; zed-rs/optimized/9r3tgj00e2sbbyanbvf1oqgns.ll
+; zed-rs/optimized/avfqkgc3wosoc0eacq6zrtrq5.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
+; zed-rs/optimized/f3wmqxw6x607w7cbx1edvfc95.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:

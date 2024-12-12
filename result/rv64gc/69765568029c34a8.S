@@ -44,19 +44,6 @@ func0000000000000018:                   # @func0000000000000018
 	add	a0, a0, a2
 	srliw	a0, a0, 3
 	ret
-func000000000000000e:                   # @func000000000000000e
-	li	a2, 85
-	mul	a1, a1, a2
-	add	a0, a0, a1
-	srliw	a0, a0, 8
-	ret
-func0000000000000010:                   # @func0000000000000010
-	lui	a2, 3
-	addi	a2, a2, 1
-	mul	a1, a1, a2
-	add	a0, a0, a1
-	srliw	a0, a0, 18
-	ret
 func000000000000001a:                   # @func000000000000001a
 	li	a2, 75
 	mul	a1, a1, a2

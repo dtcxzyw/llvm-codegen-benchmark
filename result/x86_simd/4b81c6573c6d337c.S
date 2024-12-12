@@ -20,7 +20,7 @@ func000000000000000c:                   # @func000000000000000c
 	retq
 .LCPI2_0:
 	.quad	9214364837600034816             # 0x7fe0000000000000
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vptestmq	.LCPI2_0(%rip){1to4}, %ymm1, %k0 {%k1}

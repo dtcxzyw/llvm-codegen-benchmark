@@ -137,11 +137,23 @@ func00000000000000a8:                   # @func00000000000000a8
 	vzeroupper
 	retq
 .LCPI12_0:
+	.quad	0x3ddb7cdfd9d7bdbb              # double 1.0E-10
+func000000000000002a:                   # @func000000000000002a
+	vmaxpd	%zmm3, %zmm1, %zmm1
+	vmaxpd	%zmm2, %zmm0, %zmm0
+	vbroadcastsd	.LCPI12_0(%rip), %zmm2  # zmm2 = [1.0E-10,1.0E-10,1.0E-10,1.0E-10,1.0E-10,1.0E-10,1.0E-10,1.0E-10]
+	vcmplepd	%zmm2, %zmm0, %k0
+	vcmplepd	%zmm2, %zmm1, %k1
+	kunpckbw	%k0, %k1, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI13_0:
 	.quad	0x21a0000000000000              # double 1.0010415475915505E-146
 func0000000000000045:                   # @func0000000000000045
 	vmaxpd	%zmm3, %zmm1, %zmm1
 	vmaxpd	%zmm2, %zmm0, %zmm0
-	vbroadcastsd	.LCPI12_0(%rip), %zmm2  # zmm2 = [1.0010415475915505E-146,1.0010415475915505E-146,1.0010415475915505E-146,1.0010415475915505E-146,1.0010415475915505E-146,1.0010415475915505E-146,1.0010415475915505E-146,1.0010415475915505E-146]
+	vbroadcastsd	.LCPI13_0(%rip), %zmm2  # zmm2 = [1.0010415475915505E-146,1.0010415475915505E-146,1.0010415475915505E-146,1.0010415475915505E-146,1.0010415475915505E-146,1.0010415475915505E-146,1.0010415475915505E-146,1.0010415475915505E-146]
 	vcmpnlepd	%zmm2, %zmm0, %k0
 	vcmpnlepd	%zmm2, %zmm1, %k1
 	kunpckbw	%k0, %k1, %k0
@@ -198,24 +210,14 @@ func000000000000004a:                   # @func000000000000004a
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-.LCPI18_0:
+.LCPI19_0:
 	.quad	0x3ff0000000000000              # double 1
 func000000000000002d:                   # @func000000000000002d
 	vmaxpd	%zmm3, %zmm1, %zmm1
 	vmaxpd	%zmm2, %zmm0, %zmm0
-	vbroadcastsd	.LCPI18_0(%rip), %zmm2  # zmm2 = [1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0]
+	vbroadcastsd	.LCPI19_0(%rip), %zmm2  # zmm2 = [1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0]
 	vcmpnltpd	%zmm2, %zmm0, %k0
 	vcmpnltpd	%zmm2, %zmm1, %k1
-	kunpckbw	%k0, %k1, %k0
-	vpmovm2b	%k0, %xmm0
-	vzeroupper
-	retq
-func000000000000002a:                   # @func000000000000002a
-	vminpd	%zmm3, %zmm1, %zmm1
-	vminpd	%zmm2, %zmm0, %zmm0
-	vxorpd	%xmm2, %xmm2, %xmm2
-	vcmplepd	%zmm2, %zmm0, %k0
-	vcmplepd	%zmm2, %zmm1, %k1
 	kunpckbw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

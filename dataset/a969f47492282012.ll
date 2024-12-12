@@ -14,7 +14,7 @@ define float @func0000000000000001(float %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = or disjoint i16 %1, %2
   %4 = sitofp i16 %3 to float
-  %5 = fmul float %4, %0
+  %5 = fmul float %0, %4
   ret float %5
 }
 

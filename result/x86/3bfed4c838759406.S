@@ -15,3 +15,11 @@ func0000000000000006:                   # @func0000000000000006
 	movl	%edi, %eax
 	orq	%rcx, %rax
 	retq
+func000000000000000d:                   # @func000000000000000d
+	shlq	$32, %rdx
+	xorl	%ecx, %ecx
+	testb	$1, %sil
+	cmoveq	%rdx, %rcx
+	movl	%edi, %eax
+	orq	%rcx, %rax
+	retq

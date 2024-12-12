@@ -5,8 +5,14 @@ func0000000000000002:                   # @func0000000000000002
 func0000000000000008:                   # @func0000000000000008
 	movq	%rsi, %rax
 	orq	%rdx, %rdi
-	orq	%rcx, %rax
-	shldq	$20, %rdi, %rax
+	orl	%ecx, %eax
+	shldq	$58, %rdi, %rax
+	retq
+func000000000000000c:                   # @func000000000000000c
+	movq	%rsi, %rax
+	orq	%rdx, %rdi
+	orl	%ecx, %eax
+	shldq	$61, %rdi, %rax
 	retq
 func000000000000000a:                   # @func000000000000000a
 	movq	%rsi, %rax

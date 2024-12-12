@@ -41,7 +41,7 @@ entry:
   ret i1 %5
 }
 
-; 43 occurrences:
+; 45 occurrences:
 ; hermes/optimized/JSObject.cpp.ll
 ; linux/optimized/kexec_core.ll
 ; linux/optimized/tlb.ll
@@ -85,6 +85,8 @@ entry:
 ; taskflow/optimized/text_pipeline.cpp.ll
 ; taskflow/optimized/visualization.cpp.ll
 ; taskflow/optimized/while_loop.cpp.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/8bnapxt4ilkd5y3egr7fzm1sv.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -97,7 +99,7 @@ entry:
 ; 1 occurrences:
 ; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = and i64 %0, 4294967295

@@ -1,15 +1,13 @@
 func0000000000000001:                   # @func0000000000000001
-	imulq	$16807, %rdi, %rcx              # imm = 0x41A7
-	movabsq	$-9223372032559808509, %rdx     # imm = 0x8000000100000003
+	imulq	$1000, %rdi, %rcx               # imm = 0x3E8
+	movabsq	$1237940039285380275, %rdx      # imm = 0x112E0BE826D694B3
 	movq	%rcx, %rax
 	imulq	%rdx
-	leaq	(%rdx,%rcx), %rax
-	movq	%rax, %rdx
-	shrq	$63, %rdx
-	sarq	$30, %rax
-	addq	%rdx, %rax
-	movq	%rax, %rdx
-	shlq	$31, %rdx
-	subq	%rdx, %rax
-	addq	%rcx, %rax
+	movq	%rdx, %rax
+	shrq	$63, %rax
+	sarq	$26, %rdx
+	addq	%rax, %rdx
+	imulq	$1000000000, %rdx, %rax         # imm = 0x3B9ACA00
+	subq	%rax, %rcx
+	movq	%rcx, %rax
 	retq

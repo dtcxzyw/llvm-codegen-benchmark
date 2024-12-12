@@ -59,7 +59,7 @@ entry:
   ret i64 %4
 }
 
-; 100 occurrences:
+; 99 occurrences:
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dense_qr.cc.ll
@@ -150,7 +150,6 @@ entry:
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; mold/optimized/arch-s390x.cc.ll
 ; nori/optimized/warptest.cpp.ll
-; nuttx/optimized/lib_rand48.c.ll
 ; opencv/optimized/trace.cpp.ll
 ; openssl/optimized/libcrypto-lib-i_cbc.ll
 ; openssl/optimized/libcrypto-shlib-i_cbc.ll

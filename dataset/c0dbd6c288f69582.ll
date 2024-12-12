@@ -6,7 +6,7 @@
 ; redis/optimized/jemalloc.ll
 ; redis/optimized/jemalloc.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i1 %0, i16 %1, i32 %2) #0 {
+define i1 @func0000000000000318(i1 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 64
   %4 = icmp ne i32 %3, 0

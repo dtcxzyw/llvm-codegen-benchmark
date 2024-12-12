@@ -99,7 +99,7 @@
 define i64 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %1, %2
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   %5 = lshr i64 %4, 32
   ret i64 %5
 }
@@ -126,7 +126,7 @@ entry:
   ret i64 %5
 }
 
-; 43 occurrences:
+; 42 occurrences:
 ; abseil-cpp/optimized/city.cc.ll
 ; cpython/optimized/longobject.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
@@ -146,7 +146,6 @@ entry:
 ; libwebp/optimized/ssim.c.ll
 ; linux/optimized/page-writeback.ll
 ; llvm/optimized/BitstreamReader.cpp.ll
-; nuttx/optimized/lib_rand48.c.ll
 ; oiio/optimized/farmhash.cpp.ll
 ; oiio/optimized/ustring.cpp.ll
 ; openjdk/optimized/c1_IR.ll
@@ -201,7 +200,7 @@ entry:
   ret i64 %5
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; arrow/optimized/bignum.cc.ll
 ; cpython/optimized/longobject.ll
 ; double_conversion/optimized/bignum.cc.ll
@@ -213,7 +212,6 @@ entry:
 ; opencv/optimized/softfloat.cpp.ll
 ; openusd/optimized/bignum.cc.ll
 ; soc-simulator/optimized/sim_mycpu.ll
-; spike/optimized/s_mul64To128M.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -229,7 +227,7 @@ entry:
 define i64 @func000000000000001c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %1, %2
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   %5 = lshr i64 %4, 32
   ret i64 %5
 }

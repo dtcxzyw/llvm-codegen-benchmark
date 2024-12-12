@@ -5,5 +5,5 @@ func0000000000000001:                   # @func0000000000000001
 	addq	%rdi, %rcx
 	addq	%rax, %rcx
 	vmovq	%rcx, %xmm1
-	vmulsd	%xmm0, %xmm1, %xmm0
+	vmulsd	%xmm1, %xmm0, %xmm0
 	retq

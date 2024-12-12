@@ -1,5 +1,5 @@
 
-; 2475 occurrences:
+; 2466 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Glucose.cpp.ll
@@ -122,6 +122,7 @@
 ; assimp/optimized/zip.c.ll
 ; base64-rs/optimized/25sh13l3jgkilua2.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/dump.ll
 ; brotli/optimized/encode.c.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
@@ -362,7 +363,6 @@
 ; darktable/optimized/Cr2LJpegDecoder.cpp.ll
 ; darktable/optimized/CrwDecompressor.cpp.ll
 ; darktable/optimized/DeflateDecompressor.cpp.ll
-; darktable/optimized/DngDecoder.cpp.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; darktable/optimized/JpegDecompressor.cpp.ll
@@ -423,7 +423,6 @@
 ; darktable/optimized/introspection_spots.c.ll
 ; darktable/optimized/introspection_tonecurve.c.ll
 ; darktable/optimized/introspection_toneequal.c.ll
-; darktable/optimized/introspection_tonemap.cc.ll
 ; darktable/optimized/introspection_zonesystem.c.ll
 ; darktable/optimized/lut3dgmic.cpp.ll
 ; darktable/optimized/png.c.ll
@@ -587,7 +586,6 @@
 ; folly/optimized/StrandExecutor.cpp.ll
 ; folly/optimized/Subprocess.cpp.ll
 ; folly/optimized/Symbolizer.cpp.ll
-; folly/optimized/TDigest.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
 ; folly/optimized/ThreadedExecutor.cpp.ll
 ; folly/optimized/TimedDrivableExecutor.cpp.ll
@@ -728,7 +726,6 @@
 ; hermes/optimized/SourceMapParser.cpp.ll
 ; hermes/optimized/SourceMgr.cpp.ll
 ; hermes/optimized/UTF16Stream.cpp.ll
-; hermes/optimized/count.c.ll
 ; hermes/optimized/escape.cpp.ll
 ; hermes/optimized/gtest-all.cc.ll
 ; hermes/optimized/zip.c.ll
@@ -745,7 +742,6 @@
 ; hyperscan/optimized/ng_limex_accel.cpp.ll
 ; hyperscan/optimized/ng_squash.cpp.ll
 ; hyperscan/optimized/ng_violet.cpp.ll
-; hyperscan/optimized/rose_build_bytecode.cpp.ll
 ; hyperscan/optimized/rose_build_convert.cpp.ll
 ; hyperscan/optimized/rose_build_engine_blob.cpp.ll
 ; hyperscan/optimized/rose_build_lit_accel.cpp.ll
@@ -795,7 +791,6 @@
 ; libdeflate/optimized/crc32.c.ll
 ; libevent/optimized/evutil_rand.c.ll
 ; libphonenumber/optimized/asyoutypeformatter.cc.ll
-; libquic/optimized/a_enum.c.ll
 ; libquic/optimized/a_int.c.ll
 ; libquic/optimized/base64_bio.c.ll
 ; libquic/optimized/convert.c.ll
@@ -901,7 +896,6 @@
 ; linux/optimized/igmp.ll
 ; linux/optimized/intel_color.ll
 ; linux/optimized/iterator.ll
-; linux/optimized/kexec.ll
 ; linux/optimized/keyring.ll
 ; linux/optimized/mballoc.ll
 ; linux/optimized/mcast.ll
@@ -1193,7 +1187,6 @@
 ; llvm/optimized/LocalStackSlotAllocation.cpp.ll
 ; llvm/optimized/LocalizationChecker.cpp.ll
 ; llvm/optimized/LoopAccessAnalysis.cpp.ll
-; llvm/optimized/LoopCacheAnalysis.cpp.ll
 ; llvm/optimized/LoopConstrainer.cpp.ll
 ; llvm/optimized/LoopDistribute.cpp.ll
 ; llvm/optimized/LoopIdiomRecognize.cpp.ll
@@ -1294,7 +1287,6 @@
 ; llvm/optimized/PtrState.cpp.ll
 ; llvm/optimized/RDFRegisters.cpp.ll
 ; llvm/optimized/RISCVCallLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/RangeConstraintManager.cpp.ll
@@ -1479,6 +1471,7 @@
 ; luajit/optimized/lj_crecord_dyn.ll
 ; luajit/optimized/minilua.ll
 ; luau/optimized/main.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; memcached/optimized/memcached-hash.ll
 ; memcached/optimized/memcached_debug-hash.ll
 ; meshlab/optimized/Scanner.cpp.ll
@@ -1817,7 +1810,6 @@
 ; openblas/optimized/dgemm_small_kernel_nn.c.ll
 ; openblas/optimized/dgemv_n.c.ll
 ; openblas/optimized/dgemv_t.c.ll
-; openblas/optimized/dtfttr.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; openblas/optimized/dtrmm_ilnncopy.c.ll
 ; openblas/optimized/dtrmm_ilnucopy.c.ll
@@ -1827,7 +1819,6 @@
 ; openblas/optimized/dtrmm_iunucopy.c.ll
 ; openblas/optimized/dtrmm_iutncopy.c.ll
 ; openblas/optimized/dtrmm_iutucopy.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; openblas/optimized/sasum_k.c.ll
 ; openblas/optimized/sgemm_small_kernel_b0_nn.c.ll
 ; openblas/optimized/sgemm_small_kernel_nn.c.ll
@@ -2261,7 +2252,6 @@
 ; ruby/optimized/addr2line.ll
 ; ruby/optimized/ancdata.ll
 ; ruby/optimized/array.ll
-; ruby/optimized/closure.ll
 ; ruby/optimized/compile.ll
 ; ruby/optimized/function.ll
 ; ruby/optimized/gc.ll
@@ -2284,7 +2274,6 @@
 ; slurm/optimized/job_step_info.ll
 ; slurm/optimized/job_test.ll
 ; slurm/optimized/kvs.ll
-; slurm/optimized/mcs_group.ll
 ; slurm/optimized/mgr.ll
 ; slurm/optimized/parse.ll
 ; slurm/optimized/parse_config.ll
@@ -2340,6 +2329,7 @@
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; velox/optimized/Rank.cpp.ll
 ; velox/optimized/RowNumber.cpp.ll
+; velox/optimized/SparseHll.cpp.ll
 ; velox/optimized/SsdFile.cpp.ll
 ; velox/optimized/StringFunctions.cpp.ll
 ; velox/optimized/SwitchExpr.cpp.ll
@@ -2396,7 +2386,6 @@
 ; wasmedge/optimized/validator.cpp.ll
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
-; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; wireshark/optimized/conversation.c.ll
 ; wireshark/optimized/expert_info_model.cpp.ll
@@ -2458,6 +2447,8 @@
 ; z3/optimized/params.cpp.ll
 ; z3/optimized/realclosure.cpp.ll
 ; z3/optimized/sat_drat.cpp.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; zstd/optimized/divsufsort.c.ll
 ; zstd/optimized/huf_compress.c.ll
 ; zstd/optimized/zdict.c.ll
@@ -2476,7 +2467,7 @@
 ; zxing/optimized/QRDetector.cpp.ll
 ; zxing/optimized/ReedSolomonDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2147483647
   %3 = add nuw nsw i64 %0, 1
@@ -2484,7 +2475,7 @@ entry:
   ret i1 %4
 }
 
-; 385 occurrences:
+; 383 occurrences:
 ; abc/optimized/abcIf.c.ll
 ; abc/optimized/abcRenode.c.ll
 ; abc/optimized/dauDsd.c.ll
@@ -2640,7 +2631,6 @@ entry:
 ; llvm/optimized/CallLowering.cpp.ll
 ; llvm/optimized/CheckSecuritySyntaxOnly.cpp.ll
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
-; llvm/optimized/CodeGenSchedule.cpp.ll
 ; llvm/optimized/CombinerHelper.cpp.ll
 ; llvm/optimized/Compiler.cpp.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
@@ -2648,12 +2638,10 @@ entry:
 ; llvm/optimized/ConstraintSystem.cpp.ll
 ; llvm/optimized/DAGISelMatcherEmitter.cpp.ll
 ; llvm/optimized/DAGISelMatcherGen.cpp.ll
-; llvm/optimized/DWARFContext.cpp.ll
 ; llvm/optimized/GlobalISelCombinerEmitter.cpp.ll
 ; llvm/optimized/GlobalISelEmitter.cpp.ll
 ; llvm/optimized/IROutliner.cpp.ll
 ; llvm/optimized/InlineFunction.cpp.ll
-; llvm/optimized/InstCombineAddSub.cpp.ll
 ; llvm/optimized/InstrDocsEmitter.cpp.ll
 ; llvm/optimized/LegacyPassManager.cpp.ll
 ; llvm/optimized/LegalizeDAG.cpp.ll
@@ -2694,6 +2682,8 @@ entry:
 ; llvm/optimized/X86LegalizerInfo.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
 ; luau/optimized/BytecodeBuilder.cpp.ll
+; lvgl/optimized/lv_canvas.ll
+; lvgl/optimized/lv_obj_style.ll
 ; meshlab/optimized/apss.cpp.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
@@ -2751,7 +2741,6 @@ entry:
 ; minetest/optimized/pipeline.cpp.ll
 ; minetest/optimized/s_item.cpp.ll
 ; minetest/optimized/wieldmesh.cpp.ll
-; mitsuba3/optimized/jitallocator.cpp.ll
 ; node/optimized/uv-common.ll
 ; nori/optimized/accel.cpp.ll
 ; nori/optimized/layout.cpp.ll
@@ -2871,11 +2860,11 @@ entry:
 ; zstd/optimized/zstd_lazy.c.ll
 ; zxing/optimized/BitMatrixIO.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000074(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 127
   %3 = add nuw nsw i64 %0, 1
-  %4 = icmp ult i64 %3, %2
+  %4 = icmp samesign ult i64 %3, %2
   ret i1 %4
 }
 
@@ -2913,7 +2902,7 @@ entry:
   ret i1 %4
 }
 
-; 389 occurrences:
+; 440 occurrences:
 ; abseil-cpp/optimized/non_temporal_memcpy_test.cc.ll
 ; arrow/optimized/feather.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
@@ -3024,6 +3013,7 @@ entry:
 ; duckdb/optimized/comparison_operators.cpp.ll
 ; duckdb/optimized/generators.cpp.ll
 ; duckdb/optimized/is_distinct_from.cpp.ll
+; duckdb/optimized/null_operations.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_algebraic.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_distr.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
@@ -3212,6 +3202,7 @@ entry:
 ; folly/optimized/json.cpp.ll
 ; folly/optimized/json_patch.cpp.ll
 ; gromacs/optimized/specbond.cpp.ll
+; hyperscan/optimized/engine_hyperscan.cpp.ll
 ; hyperscan/optimized/gtest-all.cc.ll
 ; hyperscan/optimized/ng_corpus_generator.cpp.ll
 ; hyperscan/optimized/ng_find_matches.cpp.ll
@@ -3227,32 +3218,74 @@ entry:
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; llvm/optimized/IROutliner.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
+; minetest/optimized/CAttributes.cpp.ll
 ; minetest/optimized/CB3DMeshFileLoader.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; minetest/optimized/CFileList.cpp.ll
 ; minetest/optimized/CFileSystem.cpp.ll
+; minetest/optimized/CGUIButton.cpp.ll
+; minetest/optimized/CGUICheckBox.cpp.ll
+; minetest/optimized/CGUIComboBox.cpp.ll
+; minetest/optimized/CGUIEditBox.cpp.ll
 ; minetest/optimized/CGUIEnvironment.cpp.ll
+; minetest/optimized/CGUIFileOpenDialog.cpp.ll
 ; minetest/optimized/CGUIFont.cpp.ll
+; minetest/optimized/CGUIImage.cpp.ll
+; minetest/optimized/CGUIListBox.cpp.ll
+; minetest/optimized/CGUIScrollBar.cpp.ll
+; minetest/optimized/CGUISkin.cpp.ll
 ; minetest/optimized/CGUISpriteBank.cpp.ll
+; minetest/optimized/CGUIStaticText.cpp.ll
 ; minetest/optimized/CGUITTFont.cpp.ll
+; minetest/optimized/CGUITabControl.cpp.ll
 ; minetest/optimized/CImage.cpp.ll
 ; minetest/optimized/CImageLoaderBMP.cpp.ll
 ; minetest/optimized/CImageLoaderTGA.cpp.ll
 ; minetest/optimized/CIrrDeviceSDL.cpp.ll
+; minetest/optimized/CLogger.cpp.ll
 ; minetest/optimized/CMeshCache.cpp.ll
 ; minetest/optimized/CNullDriver.cpp.ll
 ; minetest/optimized/COBJMeshFileLoader.cpp.ll
 ; minetest/optimized/COpenGLDriver.cpp.ll
+; minetest/optimized/COpenGLSLMaterialRenderer.cpp.ll
+; minetest/optimized/CSkinnedMesh.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
+; minetest/optimized/CZipReader.cpp.ll
 ; minetest/optimized/anaglyph.cpp.ll
-; minetest/optimized/c_content.cpp.ll
+; minetest/optimized/camera.cpp.ll
 ; minetest/optimized/chat.cpp.ll
+; minetest/optimized/client.cpp.ll
+; minetest/optimized/clientlauncher.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/dynamicshadowsrender.cpp.ll
 ; minetest/optimized/enriched_string.cpp.ll
 ; minetest/optimized/factory.cpp.ll
+; minetest/optimized/filesys.cpp.ll
+; minetest/optimized/fontengine.cpp.ll
+; minetest/optimized/guiAnimatedImage.cpp.ll
+; minetest/optimized/guiBackgroundImage.cpp.ll
+; minetest/optimized/guiBox.cpp.ll
+; minetest/optimized/guiButton.cpp.ll
+; minetest/optimized/guiButtonImage.cpp.ll
+; minetest/optimized/guiButtonItemImage.cpp.ll
+; minetest/optimized/guiChatConsole.cpp.ll
+; minetest/optimized/guiEditBox.cpp.ll
+; minetest/optimized/guiEditBoxWithScrollbar.cpp.ll
+; minetest/optimized/guiEngine.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
+; minetest/optimized/guiHyperText.cpp.ll
+; minetest/optimized/guiInventoryList.cpp.ll
+; minetest/optimized/guiItemImage.cpp.ll
+; minetest/optimized/guiKeyChangeMenu.cpp.ll
+; minetest/optimized/guiOpenURL.cpp.ll
+; minetest/optimized/guiPasswordChange.cpp.ll
+; minetest/optimized/guiPathSelectMenu.cpp.ll
+; minetest/optimized/guiScene.cpp.ll
+; minetest/optimized/guiScrollBar.cpp.ll
+; minetest/optimized/guiScrollContainer.cpp.ll
+; minetest/optimized/guiSkin.cpp.ll
 ; minetest/optimized/guiTable.cpp.ll
+; minetest/optimized/guiVolumeChange.cpp.ll
 ; minetest/optimized/httpfetch.cpp.ll
 ; minetest/optimized/interlaced.cpp.ll
 ; minetest/optimized/inventory.cpp.ll
@@ -3266,11 +3299,15 @@ entry:
 ; minetest/optimized/mg_biome.cpp.ll
 ; minetest/optimized/mg_schematic.cpp.ll
 ; minetest/optimized/minimap.cpp.ll
+; minetest/optimized/modalMenu.cpp.ll
 ; minetest/optimized/noise.cpp.ll
 ; minetest/optimized/object_properties.cpp.ll
+; minetest/optimized/pipeline.cpp.ll
 ; minetest/optimized/plain.cpp.ll
 ; minetest/optimized/player_sao.cpp.ll
 ; minetest/optimized/png.cpp.ll
+; minetest/optimized/profilergraph.cpp.ll
+; minetest/optimized/renderingengine.cpp.ll
 ; minetest/optimized/secondstage.cpp.ll
 ; minetest/optimized/serverenvironment.cpp.ll
 ; minetest/optimized/servermap.cpp.ll
@@ -3290,7 +3327,6 @@ entry:
 ; mitsuba3/optimized/zonevector.cpp.ll
 ; msgpack/optimized/speed_test.cpp.ll
 ; msgpack/optimized/speed_test_nested_array.cpp.ll
-; opencv/optimized/qrcode_encoder.cpp.ll
 ; qdrant-rs/optimized/mmfuyqzmr1ty69v.ll
 ; redis/optimized/lapi.ll
 ; redis/optimized/ldo.ll
@@ -3298,13 +3334,17 @@ entry:
 ; redis/optimized/ltable.ll
 ; redis/optimized/lua_struct.ll
 ; ruby/optimized/bignum.ll
+; turborepo-rs/optimized/eyin3u3cupdp2wcinr2t4x92g.ll
 ; typst-rs/optimized/26ex1w19ixz6ifuk.ll
 ; typst-rs/optimized/2hy987uth4sp8yoc.ll
 ; typst-rs/optimized/ef603zin5qw49hb.ll
 ; xgboost/optimized/data.cc.ll
 ; xgboost/optimized/input_split_base.cc.ll
+; zed-rs/optimized/2oaoo1au0mgurs9kk2rwi55od.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -2
   %3 = add nuw i64 %0, 1
@@ -3323,10 +3363,12 @@ entry:
   ret i1 %4
 }
 
-; 168 occurrences:
+; 218 occurrences:
 ; coreutils-rs/optimized/1pz43lsbr7l0inxv.ll
 ; coreutils-rs/optimized/356ademi3o5g91h6.ll
 ; coreutils-rs/optimized/4zzc5en1thbg7ysx.ll
+; darktable/optimized/DngDecoder.cpp.ll
+; darktable/optimized/IiqDecoder.cpp.ll
 ; darktable/optimized/NefDecoder.cpp.ll
 ; darktable/optimized/PentaxDecompressor.cpp.ll
 ; darktable/optimized/RawImageDataFloat.cpp.ll
@@ -3340,12 +3382,14 @@ entry:
 ; darktable/optimized/introspection_colorcontrast.c.ll
 ; darktable/optimized/introspection_colormapping.c.ll
 ; darktable/optimized/introspection_colorzones.c.ll
+; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_diffuse.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; darktable/optimized/introspection_globaltonemap.c.ll
 ; darktable/optimized/introspection_hazeremoval.c.ll
 ; darktable/optimized/introspection_hotpixels.c.ll
 ; darktable/optimized/introspection_invert.c.ll
+; darktable/optimized/introspection_liquify.c.ll
 ; darktable/optimized/introspection_toneequal.c.ll
 ; darktable/optimized/introspection_tonemap.cc.ll
 ; darktable/optimized/introspection_zonesystem.c.ll
@@ -3377,11 +3421,13 @@ entry:
 ; duckdb/optimized/ub_duckdb_func_math.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_ops.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll
+; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string_main.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_table.cpp.ll
 ; duckdb/optimized/ub_duckdb_main_capi.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_join.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_persistent.cpp.ll
+; duckdb/optimized/ub_duckdb_optimizer.cpp.ll
 ; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_buffer.cpp.ll
@@ -3392,7 +3438,9 @@ entry:
 ; duckdb/optimized/vector_hash.cpp.ll
 ; duckdb/optimized/vector_storage.cpp.ll
 ; entt/optimized/flow.cpp.ll
+; entt/optimized/group.cpp.ll
 ; entt/optimized/organizer.cpp.ll
+; entt/optimized/storage.cpp.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/CacheLocality.cpp.ll
 ; folly/optimized/CompressionContextPoolSingletons.cpp.ll
@@ -3414,8 +3462,6 @@ entry:
 ; folly/optimized/IOThreadPoolExecutor.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/LogCategory.cpp.ll
-; folly/optimized/LogName.cpp.ll
-; folly/optimized/LoggerDB.cpp.ll
 ; folly/optimized/ManualTimekeeper.cpp.ll
 ; folly/optimized/MaxConcurrentRateLimiter.cpp.ll
 ; folly/optimized/MuxIOThreadPoolExecutor.cpp.ll
@@ -3446,6 +3492,7 @@ entry:
 ; folly/optimized/Zstd.cpp.ll
 ; freetype/optimized/truetype.c.ll
 ; hyperscan/optimized/ng_violet.cpp.ll
+; hyperscan/optimized/rose_build_bytecode.cpp.ll
 ; hyperscan/optimized/rose_build_engine_blob.cpp.ll
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; hyperscan/optimized/rose_build_misc.cpp.ll
@@ -3492,12 +3539,119 @@ entry:
 ; wasmtime-rs/optimized/qzwdmrmrn8c2iza.ll
 ; wireshark/optimized/sequence_analysis.c.ll
 ; xgboost/optimized/data.cc.ll
+; zed-rs/optimized/01k8ewullo09lcfopyq8rjsdt.ll
+; zed-rs/optimized/0b2hqzlwilt32lfvaqs2arfgd.ll
+; zed-rs/optimized/0fzu5iswc3qhp95jt69713e0a.ll
+; zed-rs/optimized/17z6n2wor03lzp7xkvyb2v4b8.ll
+; zed-rs/optimized/1wjst2j1bd1xnipyz033svz8u.ll
+; zed-rs/optimized/26xf9pzubm30qmivlxh5xlprr.ll
+; zed-rs/optimized/2pjmz9fmy54g6vkualen6rbg5.ll
+; zed-rs/optimized/3bwpnkngp0v942xuk5tod4bfe.ll
+; zed-rs/optimized/3xkvahxsem1hdyf3ef4aq8akj.ll
+; zed-rs/optimized/4m25zm6spqfgpymm9gqw6hgqq.ll
+; zed-rs/optimized/4ovnxxb7zmwxieofqxkhvk2er.ll
+; zed-rs/optimized/5qba05g0dyedoh8rydwnrszty.ll
+; zed-rs/optimized/5s44oz7ztp6o1gjtp6jhzkvc2.ll
+; zed-rs/optimized/6k04c116ogp35htlpsavpzpvg.ll
+; zed-rs/optimized/6rnwmhc4ug1ovqxxgp9ysf06c.ll
+; zed-rs/optimized/7435o5as5af1nwuofltvv4x7w.ll
+; zed-rs/optimized/7nj8apu4jlzv057e0kkcpojil.ll
+; zed-rs/optimized/7v45b7y7t6bpxkoxn6aktlghb.ll
+; zed-rs/optimized/8429boafm438obcc9d542xswj.ll
+; zed-rs/optimized/8gg8u2ott7gsi4x0g8ewxmxbb.ll
+; zed-rs/optimized/8l6j9aar0oaoyhr62czfg3g36.ll
+; zed-rs/optimized/9halndrg3dxenpyuljfpbk2q0.ll
+; zed-rs/optimized/9u70uffa5gnr0a44dt677r86w.ll
+; zed-rs/optimized/asge4ovzpoi4j0hgzjom7idmo.ll
+; zed-rs/optimized/ba1fbg7c0slithvjnvqvkyuvg.ll
+; zed-rs/optimized/bg38611xfnz0abj8o6yh866zw.ll
+; zed-rs/optimized/bmmi5kkbn5ov6774do5bqdg37.ll
+; zed-rs/optimized/brfpsqsl3kxc3ngzjjsbjx55x.ll
+; zed-rs/optimized/bvs73film05xborh0f0ab3jqk.ll
+; zed-rs/optimized/bxihi250edldcndb2a4vmykoa.ll
+; zed-rs/optimized/cgxtqkz3q1lf4y8mn1r3vggst.ll
+; zed-rs/optimized/cwm1jtpn2hj5f4ljdx4klnhqs.ll
+; zed-rs/optimized/daazuwy5q4pkhw5qv9dy4nfnq.ll
+; zed-rs/optimized/dbzdlmbe9tm616os1ebjr005g.ll
+; zed-rs/optimized/dr3ks0ib80ortjwkcqg0973x1.ll
+; zed-rs/optimized/e2t208u96614zaapml39g6l5s.ll
+; zed-rs/optimized/ees19hacjiz3y03peze9imi7o.ll
+; zed-rs/optimized/eh70uus3omn48t7itznx7bc3r.ll
+; zed-rs/optimized/ei1t73ixdtixfwk96jtdsqya1.ll
+; zed-rs/optimized/el2ujbjp7xo4qjt47dh50oqat.ll
+; zed-rs/optimized/enfie1bj6h9p5lyhzskn3992o.ll
+; zed-rs/optimized/ewfky7337ygatenw8mnh0raxz.ll
+; zed-rs/optimized/eyl50e18l6kj3inbixv9y0nwt.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -8
   %3 = add i64 %0, 8
   %4 = icmp eq i64 %3, %2
+  ret i1 %4
+}
+
+; 54 occurrences:
+; ceres/optimized/covariance_impl.cc.ll
+; ceres/optimized/dense_qr.cc.ll
+; ceres/optimized/dogleg_strategy.cc.ll
+; ceres/optimized/polynomial.cc.ll
+; ceres/optimized/schur_eliminator_2_2_2.cc.ll
+; ceres/optimized/schur_eliminator_2_2_3.cc.ll
+; ceres/optimized/schur_eliminator_2_2_4.cc.ll
+; ceres/optimized/schur_eliminator_2_2_d.cc.ll
+; ceres/optimized/schur_eliminator_2_3_3.cc.ll
+; ceres/optimized/schur_eliminator_2_3_4.cc.ll
+; ceres/optimized/schur_eliminator_2_3_6.cc.ll
+; ceres/optimized/schur_eliminator_2_3_9.cc.ll
+; ceres/optimized/schur_eliminator_2_3_d.cc.ll
+; ceres/optimized/schur_eliminator_2_4_3.cc.ll
+; ceres/optimized/schur_eliminator_2_4_4.cc.ll
+; ceres/optimized/schur_eliminator_2_4_6.cc.ll
+; ceres/optimized/schur_eliminator_2_4_8.cc.ll
+; ceres/optimized/schur_eliminator_2_4_9.cc.ll
+; ceres/optimized/schur_eliminator_2_4_d.cc.ll
+; ceres/optimized/schur_eliminator_2_d_d.cc.ll
+; ceres/optimized/schur_eliminator_3_3_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_2.cc.ll
+; ceres/optimized/schur_eliminator_4_4_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_4.cc.ll
+; ceres/optimized/schur_eliminator_4_4_d.cc.ll
+; ceres/optimized/schur_eliminator_d_d_d.cc.ll
+; duckdb/optimized/ub_duckdb_common_types.cpp.ll
+; duckdb/optimized/ub_duckdb_func_string.cpp.ll
+; g2o/optimized/edge_se3_euler.cpp.ll
+; g2o/optimized/optimizable_graph.cpp.ll
+; g2o/optimized/solver_cholmod.cpp.ll
+; g2o/optimized/solver_csparse.cpp.ll
+; g2o/optimized/solver_dense.cpp.ll
+; g2o/optimized/solver_eigen.cpp.ll
+; g2o/optimized/solver_pcg.cpp.ll
+; g2o/optimized/vertex_ellipse.cpp.ll
+; lightgbm/optimized/linear_tree_learner.cpp.ll
+; llvm/optimized/CodeGenSchedule.cpp.ll
+; llvm/optimized/DWARFContext.cpp.ll
+; llvm/optimized/InstCombineAddSub.cpp.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
+; meshlab/optimized/cube_style_single_iteration.cpp.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/edit_referencing.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
+; meshlab/optimized/matching.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/quadric_simp.cpp.ll
+; mitsuba3/optimized/jitallocator.cpp.ll
+; openblas/optimized/daxpy_k.c.ll
+; openblas/optimized/saxpy_k.c.ll
+; tinympc/optimized/tiny_api.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000064(i64 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 8589934528
+  %3 = add nuw nsw i64 %0, 64
+  %4 = icmp ult i64 %3, %2
   ret i1 %4
 }
 
@@ -3543,7 +3697,7 @@ entry:
 ; velox/optimized/FromUtf8.cpp.ll
 ; z3/optimized/realclosure.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000006c(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
   %3 = add nuw nsw i64 %0, 1
@@ -3551,10 +3705,12 @@ entry:
   ret i1 %4
 }
 
-; 188 occurrences:
+; 259 occurrences:
 ; actix-rs/optimized/188iedib5veo0ne9.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/5dylu5g0crehei80.ll
+; boost/optimized/find_address_sse2.ll
+; boost/optimized/find_address_sse41.ll
 ; cmake/optimized/signal.c.ll
 ; coreutils-rs/optimized/1nj6h5colnkxfn01.ll
 ; coreutils-rs/optimized/1szl1qzxl9ewlwdb.ll
@@ -3692,6 +3848,8 @@ entry:
 ; tree-sitter-rs/optimized/50gi8jfmf82cuy8e.ll
 ; tree-sitter-rs/optimized/55e7aotywrgrb7st.ll
 ; tree-sitter-rs/optimized/l6js0ezoscq5xy2.ll
+; turborepo-rs/optimized/2q1d6xy1zhe6shvl54b19til1.ll
+; turborepo-rs/optimized/ee9vkq9f5bzxc7dqxrtzxaha1.ll
 ; typst-rs/optimized/15cosas43yh9dmeo.ll
 ; typst-rs/optimized/1c2qpu6zljc8gscz.ll
 ; typst-rs/optimized/1ln40ib1b6suqgfg.ll
@@ -3740,8 +3898,75 @@ entry:
 ; wasmtime-rs/optimized/o5hc9u3mlvace0j.ll
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
 ; wasmtime-rs/optimized/v5prf101dn49s3v.ll
+; zed-rs/optimized/0aom8p2wor4n85al7fbg5160f.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/10zh1v68f2nhlerzsork25it5.ll
+; zed-rs/optimized/18fe87pvcvcmccnycfh7q0atj.ll
+; zed-rs/optimized/1b5ll0cnnio0vvxmolgooij5i.ll
+; zed-rs/optimized/1g4llau8b68ay2vvwa3gtrt6g.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1kvfz4vxu123bq0qsauyrtl3j.ll
+; zed-rs/optimized/1t00sx04wxddh9gaenzu20fkj.ll
+; zed-rs/optimized/1wbwq1jcywou5oe0v0ig8uk8s.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/1zouf8lsjy712uoerw5fyy4vf.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; zed-rs/optimized/20igqmfettcex48uahr8huyna.ll
+; zed-rs/optimized/25fxlhz3kxu1eqndtge46j52s.ll
+; zed-rs/optimized/2ehxywt5i46yjybqa8jmzydsx.ll
+; zed-rs/optimized/2ouh3ql8sx6p5h4phjh0p73m4.ll
+; zed-rs/optimized/2tnb5q2nu282joegshdwbwmo4.ll
+; zed-rs/optimized/3hsn9nyfo1lk9hjlnx6o7tl2d.ll
+; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
+; zed-rs/optimized/3tqegt9m5oad3ocos87azd3mb.ll
+; zed-rs/optimized/468dd38yzqjsa1zmcu5rd6jgo.ll
+; zed-rs/optimized/477pfick4ndzj3k3y8f79a5fg.ll
+; zed-rs/optimized/4h176o45n3uxzch53hiway9mu.ll
+; zed-rs/optimized/4h84anocrn0e2zexjpu5utgbx.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/4t9tdr5qgocuoz7ebpyy9bvqv.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
+; zed-rs/optimized/50na78mbd3ev0fg48iszd7iya.ll
+; zed-rs/optimized/5jymx1v12ydpokf8pco1waouw.ll
+; zed-rs/optimized/5qf95fx0pqn6duuq4hkly3hl0.ll
+; zed-rs/optimized/5t11v1wc3a9lo225k1xr00pdg.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/5xzbfmjm0ssp4zaxaevz1taue.ll
+; zed-rs/optimized/645sb9j0cpiprkfm7s339qqf6.ll
+; zed-rs/optimized/6pnl53dvchkj2615muwn1tztk.ll
+; zed-rs/optimized/7c7ru7dyo4dufoltx0i8ncsyc.ll
+; zed-rs/optimized/7d83zatnfw8jz3f790h28195t.ll
+; zed-rs/optimized/8mr81aw0ctvqdrbyiysor7awe.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/96hln4y97mhftmlht5x1xhnh1.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/9jlworagd4ne92tsld97hkqun.ll
+; zed-rs/optimized/9k41n0dnz3hh6kxq426e2leu5.ll
+; zed-rs/optimized/9lyc7v6rglrrimjbrgra5wxbm.ll
+; zed-rs/optimized/9m8v6uy2305b0acd84bvd598m.ll
+; zed-rs/optimized/9ub6itb7fqq3kx06gfwmm2iyz.ll
+; zed-rs/optimized/9ydmyaey957xyuywtl3djlzml.ll
+; zed-rs/optimized/b0ehx4vbxawrtril1zkysl0b6.ll
+; zed-rs/optimized/bkz8gk2grsqnr2xbkvtnqlfhe.ll
+; zed-rs/optimized/by8gv54o76v0inyrwjxd65d9p.ll
+; zed-rs/optimized/cci2iopocugemgw5wpg0u7nz3.ll
+; zed-rs/optimized/cd51tp3f9xzjf7uqmsq5af267.ll
+; zed-rs/optimized/cmxsagf2j897pis1fg8tnwnp3.ll
+; zed-rs/optimized/d0jkoh70hoa8mo1xffc75hpoi.ll
+; zed-rs/optimized/d17olm41iqvz8vx06reipdlny.ll
+; zed-rs/optimized/d9u9g3e4j8a6dko6rysohoksz.ll
+; zed-rs/optimized/ddwqyvi7204z7yxly1a7n0b57.ll
+; zed-rs/optimized/deqzoqcotewn9fb0m32sor9lr.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/dqlxdbn4bc486rcuwzrxwttzb.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; zed-rs/optimized/ee1yr8tj4rkowsicwkrwxirqa.ll
+; zed-rs/optimized/eio6txv0nku2we5mnjcgiiw85.ll
+; zed-rs/optimized/ex25d8bduqztna7d5345tkw6m.ll
+; zed-rs/optimized/exy3mxytk4j1w94j908qbhdez.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -2097152
   %3 = add nuw i64 %0, 2097152
@@ -3761,15 +3986,15 @@ entry:
 ; meshlab/optimized/meshio.cpp.ll
 ; minetest/optimized/CGUITabControl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000039(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000079(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
   %3 = add nuw nsw i64 %0, 1
-  %4 = icmp uge i64 %3, %2
+  %4 = icmp samesign uge i64 %3, %2
   ret i1 %4
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; darktable/optimized/TiffIFD.cpp.ll
 ; hermes/optimized/Callable.cpp.ll
@@ -3787,13 +4012,12 @@ entry:
 ; meshlab/optimized/miniz.c.ll
 ; qemu/optimized/fdt_sw.c.ll
 ; velox/optimized/LeadLag.cpp.ll
-; wasmtime-rs/optimized/2lz954crgst412nx.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000078(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
   %3 = add nuw nsw i64 %0, 4
-  %4 = icmp ugt i64 %3, %2
+  %4 = icmp samesign ugt i64 %3, %2
   ret i1 %4
 }
 
@@ -3805,7 +4029,7 @@ entry:
 ; openjdk/optimized/InvocationAdapter.ll
 ; quantlib/optimized/sparseilupreconditioner.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2147483647
   %3 = add nsw i64 %0, 3
@@ -3821,7 +4045,7 @@ entry:
 ; php/optimized/ZendAccelerator.ll
 ; yosys/optimized/BigUnsigned.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
   %3 = add nsw i64 %0, -1
@@ -3848,7 +4072,18 @@ entry:
   ret i1 %4
 }
 
-; 80 occurrences:
+; 1 occurrences:
+; assimp/optimized/3DSLoader.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 4294967295
+  %3 = add nsw i64 %0, -6
+  %4 = icmp samesign ugt i64 %3, %2
+  ret i1 %4
+}
+
+; 79 occurrences:
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
@@ -3920,7 +4155,6 @@ entry:
 ; openblas/optimized/dgemm_small_kernel_tn.c.ll
 ; openblas/optimized/dgemm_small_kernel_tt.c.ll
 ; openblas/optimized/dscal_k.c.ll
-; openblas/optimized/dsum_k.c.ll
 ; openblas/optimized/sgemm_small_kernel_b0_nn.c.ll
 ; openblas/optimized/sgemm_small_kernel_b0_tt.c.ll
 ; openblas/optimized/sgemm_small_kernel_nn.c.ll
@@ -3930,7 +4164,7 @@ entry:
 ; tinympc/optimized/tiny_api.cpp.ll
 ; yosys/optimized/sim.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000066(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -8
   %3 = add nuw nsw i64 %0, 8
@@ -3956,7 +4190,7 @@ entry:
 ; quickjs/optimized/quickjs.ll
 ; yosys/optimized/btor.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
   %3 = add nsw i64 %0, 1
@@ -3980,11 +4214,22 @@ entry:
 ; llvm/optimized/IRTranslator.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000004c(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
   %3 = add nuw i64 %0, 1
   %4 = icmp ne i64 %3, %2
+  ret i1 %4
+}
+
+; 1 occurrences:
+; wasmtime-rs/optimized/2lz954crgst412nx.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000068(i64 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, -16
+  %3 = add nuw nsw i64 %0, 160
+  %4 = icmp ugt i64 %3, %2
   ret i1 %4
 }
 
@@ -4010,15 +4255,25 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
-; cmake/optimized/cmCTestMemCheckHandler.cxx.ll
-; cvc5/optimized/smt2_state.cpp.ll
+; 1 occurrences:
 ; linux/optimized/filter.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
   %3 = add nsw i64 %0, -4
+  %4 = icmp samesign ult i64 %3, %2
+  ret i1 %4
+}
+
+; 2 occurrences:
+; cmake/optimized/cmCTestMemCheckHandler.cxx.ll
+; cvc5/optimized/smt2_state.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 4294967295
+  %3 = add nsw i64 %0, -1
   %4 = icmp ult i64 %3, %2
   ret i1 %4
 }
@@ -4026,7 +4281,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/rematch.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000029(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
   %3 = add nsw i64 %0, 1
@@ -4037,7 +4292,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/ftbitmap.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000006a(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -64
   %3 = add nuw nsw i64 %0, -9223372036854775744

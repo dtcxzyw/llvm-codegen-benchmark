@@ -1,11 +1,7 @@
 
-; 6 occurrences:
-; brotli/optimized/encode.c.ll
-; hermes/optimized/APInt.cpp.ll
-; llvm/optimized/APInt.cpp.ll
+; 2 occurrences:
 ; openssl/optimized/libcrypto-lib-sha1dgst.ll
 ; openssl/optimized/libcrypto-shlib-sha1dgst.ll
-; z3/optimized/mpn.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
 entry:
@@ -43,12 +39,12 @@ entry:
 ; openjdk/optimized/vectorization.ll
 ; php/optimized/ZendAccelerator.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = add nuw nsw i64 %2, 3
   %4 = and i64 %3, 8589934588
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -66,6 +62,20 @@ entry:
   %4 = and i64 %3, 8589934560
   %5 = getelementptr i8, ptr %0, i64 %4
   ret ptr %5
+}
+
+; 4 occurrences:
+; brotli/optimized/encode.c.ll
+; hermes/optimized/APInt.cpp.ll
+; llvm/optimized/APInt.cpp.ll
+; z3/optimized/mpn.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
+entry:
+  %2 = add i32 %1, -1
+  %3 = zext i32 %2 to i64
+  %4 = getelementptr nusw nuw i64, ptr %0, i64 %3
+  ret ptr %4
 }
 
 ; 3 occurrences:

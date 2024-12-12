@@ -1,5 +1,5 @@
 
-; 448 occurrences:
+; 449 occurrences:
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
 ; abseil-cpp/optimized/gaussian_distribution_test.cc.ll
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
@@ -8,6 +8,11 @@
 ; assimp/optimized/IFCGeometry.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/IFCUtil.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/buffer_piece_border.ll
 ; brotli/optimized/encode.c.ll
 ; casadi/optimized/convexify.cpp.ll
 ; casadi/optimized/cvodea.c.ll
@@ -182,7 +187,6 @@
 ; openblas/optimized/dlasd5.c.ll
 ; openblas/optimized/dlasq2.c.ll
 ; openblas/optimized/dlasq5.c.ll
-; openblas/optimized/dlasq6.c.ll
 ; openblas/optimized/dlasv2.c.ll
 ; openblas/optimized/dsterf.c.ll
 ; openblas/optimized/dsyequb.c.ll
@@ -274,7 +278,6 @@
 ; proj/optimized/gn_sinu.cpp.ll
 ; proj/optimized/grids.cpp.ll
 ; proj/optimized/hatano.cpp.ll
-; proj/optimized/io.cpp.ll
 ; proj/optimized/labrd.cpp.ll
 ; proj/optimized/mlfn.cpp.ll
 ; proj/optimized/mod_ster.cpp.ll
@@ -285,8 +288,6 @@
 ; proj/optimized/tmerc.cpp.ll
 ; proj/optimized/tpeqd.cpp.ll
 ; proj/optimized/vandg.cpp.ll
-; proj/optimized/wink1.cpp.ll
-; proj/optimized/wink2.cpp.ll
 ; quantlib/optimized/abcd.ll
 ; quantlib/optimized/analytic_cont_geom_av_price_heston.ll
 ; quantlib/optimized/analytic_discr_geom_av_price_heston.ll

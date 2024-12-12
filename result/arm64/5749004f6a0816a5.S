@@ -1,4 +1,4 @@
-func0000000000000014:                   // @func0000000000000014
+func0000000000000024:                   // @func0000000000000024
 // %bb.0:                               // %entry
 	mov	x8, #4611686018427387904        // =0x4000000000000000
 	mov	x9, #-9223372036854775808       // =0x8000000000000000
@@ -17,7 +17,15 @@ func0000000000000004:                   // @func0000000000000004
 	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000018:                   // @func0000000000000018
+func0000000000000034:                   // @func0000000000000034
+// %bb.0:                               // %entry
+	mov	x8, #-1                         // =0xffffffffffffffff
+	cmp	x0, #1
+	adcs	xzr, x1, x8
+	cset	w0, eq
+	ret
+                                        // -- End function
+func0000000000000028:                   // @func0000000000000028
 // %bb.0:                               // %entry
 	mov	x8, #-1                         // =0xffffffffffffffff
 	subs	x9, x0, #12

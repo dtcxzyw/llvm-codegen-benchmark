@@ -32,7 +32,7 @@ entry:
 ; z3/optimized/nlsat_interval_set.cpp.ll
 ; z3/optimized/sat_ddfw.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = urem i32 %0, %2
@@ -45,7 +45,7 @@ entry:
 ; z3/optimized/hnf_cutter.cpp.ll
 ; z3/optimized/lp_primal_core_solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = urem i32 %0, %2

@@ -6,6 +6,6 @@ func0000000000000001:                   # @func0000000000000001
 	sarl	$3, %ecx
 	cltd
 	idivl	%ecx
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq

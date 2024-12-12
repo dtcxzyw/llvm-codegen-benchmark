@@ -1,4 +1,18 @@
 
+; 4 occurrences:
+; gromacs/optimized/redistribute.cpp.ll
+; mitsuba3/optimized/x86rapass.cpp.ll
+; qemu/optimized/hw_vfio_pci.c.ll
+; wireshark/optimized/packet-rtp-midi.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000007(i32 %0, i1 %1) #0 {
+entry:
+  %2 = select i1 %1, i32 16, i32 8
+  %3 = lshr exact i32 %0, 8
+  %4 = add nuw nsw i32 %3, %2
+  ret i32 %4
+}
+
 ; 27 occurrences:
 ; abc/optimized/ivyCheck.c.ll
 ; abc/optimized/ivyDfs.c.ll
@@ -22,30 +36,16 @@
 ; icu/optimized/utf8collationiterator.ll
 ; icu/optimized/utrie2.ll
 ; llvm/optimized/FoldingSet.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; oiio/optimized/DPXHeader.cpp.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
 ; postgres/optimized/euc_jp_and_sjis.ll
-; ruby/optimized/japanese.ll
 ; velox/optimized/LzoDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000003(i32 %0, i1 %1) #0 {
+define i32 @func0000000000000003(i1 %0, i32 %1) #0 {
 entry:
-  %2 = select i1 %1, i32 48, i32 112
-  %3 = lshr i32 %0, 1
-  %4 = add nuw nsw i32 %3, %2
-  ret i32 %4
-}
-
-; 4 occurrences:
-; gromacs/optimized/redistribute.cpp.ll
-; mitsuba3/optimized/x86rapass.cpp.ll
-; qemu/optimized/hw_vfio_pci.c.ll
-; wireshark/optimized/packet-rtp-midi.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000007(i32 %0, i1 %1) #0 {
-entry:
-  %2 = select i1 %1, i32 16, i32 8
-  %3 = lshr exact i32 %0, 8
+  %2 = lshr i32 %1, 2
+  %3 = select i1 %0, i32 16383, i32 32767
   %4 = add nuw nsw i32 %3, %2
   ret i32 %4
 }

@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 27 occurrences:
 ; cpython/optimized/xmlparse.ll
 ; linux/optimized/dmi_scan.ll
 ; linux/optimized/trace_probe.ll
@@ -26,11 +26,12 @@
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
 ; wireshark/optimized/packet-iso8583.c.ll
 ; wireshark/optimized/wmem_map.c.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(ptr %0) #0 {
 entry:
   %1 = getelementptr i8, ptr %0, i64 19
-  %2 = icmp ugt ptr %1, %0
+  %2 = icmp ult ptr %0, %1
   ret i1 %2
 }
 
@@ -40,7 +41,7 @@ entry:
 define i1 @func0000000000000005(ptr %0) #0 {
 entry:
   %1 = getelementptr i8, ptr %0, i64 4080
-  %2 = icmp uge ptr %1, %0
+  %2 = icmp ule ptr %0, %1
   ret i1 %2
 }
 

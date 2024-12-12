@@ -34,7 +34,7 @@ func0000000000000020:                   # @func0000000000000020
 	vpcmpnleud	%ymm2, %ymm1, %k1
 	vmovdqa32	%ymm0, %ymm1 {%k1}
 	vpcmpeqd	%ymm0, %ymm0, %ymm0
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 func0000000000000029:                   # @func0000000000000029
 	vpcmpgtd	%ymm2, %ymm1, %k1

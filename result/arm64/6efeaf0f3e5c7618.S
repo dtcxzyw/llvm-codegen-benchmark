@@ -1,58 +1,37 @@
-func00000000000000a4:                   // @func00000000000000a4
+func0000000000000144:                   // @func0000000000000144
 // %bb.0:                               // %entry
 	mov	w8, #1                          // =0x1
-	dup	v4.2d, x8
-	ushl	v2.2d, v4.2d, v2.2d
-	ushl	v3.2d, v4.2d, v3.2d
-	ushl	v0.2d, v4.2d, v0.2d
-	ushl	v1.2d, v4.2d, v1.2d
-	cmhi	v0.2d, v2.2d, v0.2d
-	cmhi	v1.2d, v3.2d, v1.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	lsl	x9, x8, x1
+	lsl	x8, x8, x0
+	cmp	x8, x9
+	cset	w0, lo
 	ret
                                         // -- End function
-func00000000000000a1:                   // @func00000000000000a1
+func0000000000000141:                   // @func0000000000000141
 // %bb.0:                               // %entry
 	mov	w8, #1                          // =0x1
-	dup	v4.2d, x8
-	ushl	v2.2d, v4.2d, v2.2d
-	ushl	v3.2d, v4.2d, v3.2d
-	ushl	v0.2d, v4.2d, v0.2d
-	ushl	v1.2d, v4.2d, v1.2d
-	cmeq	v0.2d, v0.2d, v2.2d
-	cmeq	v1.2d, v1.2d, v3.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	lsl	x9, x8, x1
+	lsl	x8, x8, x0
+	cmp	x8, x9
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000024:                   // @func0000000000000024
+func0000000000000044:                   // @func0000000000000044
 // %bb.0:                               // %entry
 	mov	w8, #2                          // =0x2
-	dup	v4.2d, x8
-	mov	w8, #1                          // =0x1
-	dup	v5.2d, x8
-	ushl	v2.2d, v4.2d, v2.2d
-	ushl	v3.2d, v4.2d, v3.2d
-	ushl	v0.2d, v5.2d, v0.2d
-	ushl	v1.2d, v5.2d, v1.2d
-	cmhi	v1.2d, v3.2d, v1.2d
-	cmhi	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	mov	w9, #1                          // =0x1
+	lsl	x8, x8, x1
+	lsl	x9, x9, x0
+	cmp	x9, x8
+	cset	w0, lo
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
 	mov	w8, #4096                       // =0x1000
-	dup	v4.2d, x8
-	ushl	v2.2d, v4.2d, v2.2d
-	ushl	v3.2d, v4.2d, v3.2d
-	ushl	v0.2d, v4.2d, v0.2d
-	ushl	v1.2d, v4.2d, v1.2d
-	cmeq	v0.2d, v0.2d, v2.2d
-	cmeq	v1.2d, v1.2d, v3.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	lsl	x9, x8, x1
+	lsl	x8, x8, x0
+	cmp	x8, x9
+	cset	w0, eq
 	ret
                                         // -- End function

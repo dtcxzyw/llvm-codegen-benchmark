@@ -34,15 +34,16 @@ entry:
   ret i128 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; abseil-cpp/optimized/int128_test.cc.ll
+; boost/optimized/to_chars.ll
 ; Function Attrs: nounwind
 define i128 @func000000000000000f(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext nneg i64 %1 to i128
   %3 = shl nuw nsw i128 %2, 64
-  %4 = and i128 %0, 18446744073709549568
+  %4 = and i128 %0, 18446744073709551612
   %5 = or disjoint i128 %3, %4
   ret i128 %5
 }

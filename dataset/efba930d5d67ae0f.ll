@@ -15,7 +15,7 @@ entry:
   ret i64 %3
 }
 
-; 9 occurrences:
+; 16 occurrences:
 ; abc/optimized/bdcSpfd.c.ll
 ; cpython/optimized/compile.ll
 ; eastl/optimized/BenchmarkTupleVector.cpp.ll
@@ -25,6 +25,13 @@ entry:
 ; llvm/optimized/SROA.cpp.ll
 ; luajit/optimized/minilua.ll
 ; stockfish/optimized/search.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/5e9omh398ijohtd01awo2ssl8.ll
+; zed-rs/optimized/6a257z75npqxppetnyj7rxh76.ll
+; zed-rs/optimized/6ekeyfm197maw5n7s1cbq34ws.ll
+; zed-rs/optimized/9jlworagd4ne92tsld97hkqun.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0, i64 %1) #0 {
 entry:
@@ -34,7 +41,7 @@ entry:
   ret i64 %3
 }
 
-; 52 occurrences:
+; 51 occurrences:
 ; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -76,7 +83,6 @@ entry:
 ; llvm/optimized/OpenMPOpt.cpp.ll
 ; llvm/optimized/ParseCXXInlineMethods.cpp.ll
 ; llvm/optimized/ParseStmt.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/SemaExprObjC.cpp.ll
@@ -109,13 +115,12 @@ entry:
   ret i64 %3
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; llvm/optimized/DebugInfoMetadata.cpp.ll
 ; llvm/optimized/EarlyCSE.cpp.ll
 ; llvm/optimized/GVN.cpp.ll
 ; llvm/optimized/IROutliner.cpp.ll
 ; llvm/optimized/Metadata.cpp.ll
-; openmpi/optimized/bml_base_btl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:

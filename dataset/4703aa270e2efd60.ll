@@ -51,6 +51,18 @@ entry:
   ret i1 %6
 }
 
+; 1 occurrences:
+; lvgl/optimized/lv_table.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000041(i32 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = xor i32 %0, -1
+  %4 = add i32 %2, %3
+  %5 = trunc i64 %1 to i32
+  %6 = icmp eq i32 %4, %5
+  ret i1 %6
+}
+
 ; 71 occurrences:
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
@@ -124,7 +136,7 @@ entry:
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001d6(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000003a6(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -2
   %4 = sub nsw i32 %3, %0
@@ -136,7 +148,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000201(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = sub i32 %3, %0
@@ -148,10 +160,10 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000221(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %0, -1
-  %4 = add i32 %3, %2
+  %4 = add i32 %2, %3
   %5 = trunc i64 %1 to i32
   %6 = icmp eq i32 %4, %5
   ret i1 %6
@@ -161,7 +173,7 @@ entry:
 ; opencv/optimized/stitching_detailed.cpp.ll
 ; opencv/optimized/warpers.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000101(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = sub i32 %3, %0
@@ -173,10 +185,10 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/erfilter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000226(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %0, -1
-  %4 = add i32 %3, %2
+  %4 = add i32 %2, %3
   %5 = trunc i64 %1 to i32
   %6 = icmp slt i32 %4, %5
   ret i1 %6

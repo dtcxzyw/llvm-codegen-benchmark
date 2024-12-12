@@ -1,52 +1,18 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	zip1	v7.8b, v0.8b, v0.8b
-	zip2	v0.8b, v0.8b, v0.8b
-	fcvtzs	v4.2d, v4.2d
-	fcvtzs	v3.2d, v3.2d
-	fcvtzs	v6.2d, v6.2d
-	fcvtzs	v5.2d, v5.2d
-	ushll	v7.4s, v7.4h, #0
-	ushll	v0.4s, v0.4h, #0
-	uzp1	v3.4s, v3.4s, v4.4s
-	uzp1	v4.4s, v5.4s, v6.4s
-	shl	v5.4s, v7.4s, #31
-	shl	v0.4s, v0.4s, #31
-	add	v1.4s, v3.4s, v1.4s
-	add	v2.4s, v4.4s, v2.4s
-	cmlt	v3.4s, v5.4s, #0
-	cmlt	v4.4s, v0.4s, #0
-	bic	v0.16b, v1.16b, v3.16b
-	bic	v3.4s, #128, lsl #24
-	bic	v1.16b, v2.16b, v4.16b
-	bic	v4.4s, #128, lsl #24
-	orr	v0.16b, v3.16b, v0.16b
-	orr	v1.16b, v4.16b, v1.16b
+	fcvtzs	w8, d0
+	tst	w0, #0x1
+	mov	w9, #2147483647                 // =0x7fffffff
+	add	w8, w1, w8
+	csel	w0, w9, w8, ne
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	zip1	v7.8b, v0.8b, v0.8b
-	fcvtzs	v4.2d, v4.2d
-	mov	w8, #1000                       // =0x3e8
-	fcvtzs	v3.2d, v3.2d
-	zip2	v0.8b, v0.8b, v0.8b
-	fcvtzs	v6.2d, v6.2d
-	fcvtzs	v5.2d, v5.2d
-	ushll	v7.4s, v7.4h, #0
-	uzp1	v3.4s, v3.4s, v4.4s
-	ushll	v0.4s, v0.4h, #0
-	uzp1	v4.4s, v5.4s, v6.4s
-	shl	v5.4s, v7.4s, #31
-	shl	v0.4s, v0.4s, #31
-	add	v1.4s, v3.4s, v1.4s
-	cmlt	v3.4s, v5.4s, #0
-	add	v2.4s, v4.4s, v2.4s
-	dup	v4.4s, w8
-	cmlt	v5.4s, v0.4s, #0
-	mov	v0.16b, v3.16b
-	bsl	v0.16b, v4.16b, v1.16b
-	mov	v1.16b, v5.16b
-	bsl	v1.16b, v4.16b, v2.16b
+	fcvtzs	w8, d0
+	tst	w0, #0x1
+	mov	w9, #1000                       // =0x3e8
+	add	w8, w1, w8
+	csel	w0, w9, w8, ne
 	ret
                                         // -- End function

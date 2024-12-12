@@ -1,5 +1,5 @@
 
-; 478 occurrences:
+; 487 occurrences:
 ; abc/optimized/abcCascade.c.ll
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/blocksort.c.ll
@@ -20,9 +20,9 @@
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/utf8.cc.ll
+; boost/optimized/ipv4_address.ll
 ; clamav/optimized/Lzma2Dec.c.ll
 ; clamav/optimized/LzmaDec.c.ll
-; clamav/optimized/Xz.c.ll
 ; clamav/optimized/bytecode.c.ll
 ; clamav/optimized/bytecode_vm.c.ll
 ; clamav/optimized/unsp.c.ll
@@ -182,7 +182,6 @@
 ; linux/optimized/md.ll
 ; linux/optimized/oid_registry.ll
 ; linux/optimized/psmouse-base.ll
-; linux/optimized/socket_sysfs.ll
 ; linux/optimized/vlv_dsi_pll.ll
 ; linux/optimized/vt.ll
 ; linux/optimized/xz_dec_lzma2.ll
@@ -212,8 +211,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -402,6 +399,8 @@
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; tokio-rs/optimized/26wlg4yx86ilo6a1.ll
 ; tomlplusplus/optimized/toml.cpp.ll
+; turborepo-rs/optimized/0d11a6ei085iwkkzrqqfde2g8.ll
+; turborepo-rs/optimized/3wg34qzs64td8o5fq33fcg5rk.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; vcpkg/optimized/strings.cpp.ll
@@ -476,6 +475,16 @@
 ; wireshark/optimized/packet-thread.c.ll
 ; wireshark/optimized/packet-udp.c.ll
 ; z3/optimized/api_log.cpp.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; zlib/optimized/deflate.c.ll
 ; zxing/optimized/PDFReader.cpp.ll
 ; Function Attrs: nounwind
@@ -485,12 +494,13 @@ entry:
   ret i8 %1
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; qemu/optimized/hw_audio_es1370.c.ll
 ; quantlib/optimized/hestonslvfdmmodel.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i8 %0) #0 {
 entry:
-  %1 = udiv exact i8 %0, 24
+  %1 = udiv exact i8 %0, 20
   ret i8 %1
 }
 

@@ -1,32 +1,25 @@
 
-; 9 occurrences:
-; harfbuzz/optimized/harfbuzz.cc.ll
-; harfbuzz/optimized/hb-subset-plan.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
+; 2 occurrences:
 ; linux/optimized/drm_hdcp_helper.ll
-; openjdk/optimized/hb-aat-layout.ll
-; openjdk/optimized/hb-ot-layout.ll
-; openjdk/optimized/hb-ot-shape-fallback.ll
-; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000001f4(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = shl nuw nsw i32 %1, 16
   %6 = or disjoint i32 %4, %5
-  %7 = icmp ult i32 %6, 2
+  %7 = icmp samesign ult i32 %6, 2
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; folly/optimized/IPAddressV6.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000bc(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000016c(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = shl nuw i32 %1, 16
   %6 = or disjoint i32 %4, %5
   %7 = icmp ne i32 %6, 536936448
@@ -42,10 +35,10 @@ entry:
 ; qemu/optimized/fdt.c.ll
 ; spike/optimized/fdt.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000161(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = shl nuw i32 %1, 16
   %6 = or disjoint i32 %4, %5
   %7 = icmp eq i32 %6, 536936448
@@ -56,10 +49,10 @@ entry:
 ; qemu/optimized/fdt.c.ll
 ; spike/optimized/fdt.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b4(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000164(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = shl nuw i32 %1, 24
   %6 = or disjoint i32 %4, %5
   %7 = icmp ult i32 %6, 2
@@ -77,10 +70,10 @@ entry:
 ; openjdk/optimized/hb-ot-metrics.ll
 ; openjdk/optimized/hb-ot-var.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000fc(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000001ec(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = shl nuw nsw i32 %1, 8
   %6 = or disjoint i32 %4, %5
   %7 = icmp ne i32 %6, 0
@@ -105,10 +98,10 @@ entry:
 ; zstd/optimized/zstd_v01.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000001e1(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = shl nuw nsw i32 %1, 8
   %6 = or disjoint i32 %4, %5
   %7 = icmp eq i32 %6, 131072
@@ -125,13 +118,32 @@ entry:
 ; openjdk/optimized/hb-ot-shape-fallback.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000001e8(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = shl nuw nsw i32 %1, 8
   %6 = or disjoint i32 %4, %5
   %7 = icmp ugt i32 %6, 65538
+  ret i1 %7
+}
+
+; 7 occurrences:
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-subset-plan.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; openjdk/optimized/hb-aat-layout.ll
+; openjdk/optimized/hb-ot-layout.ll
+; openjdk/optimized/hb-ot-shape-fallback.ll
+; openjdk/optimized/hb-ot-shaper-arabic.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001e4(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i32
+  %4 = or disjoint i32 %0, %3
+  %5 = shl nuw nsw i32 %1, 8
+  %6 = or disjoint i32 %4, %5
+  %7 = icmp ult i32 %6, 65537
   ret i1 %7
 }
 
@@ -139,10 +151,10 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000018c(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = shl nuw nsw i32 %1, 8
   %6 = or i32 %4, %5
   %7 = icmp ne i32 %6, 0

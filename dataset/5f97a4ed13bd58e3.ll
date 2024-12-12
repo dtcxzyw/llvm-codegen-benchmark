@@ -1,9 +1,8 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; abseil-cpp/optimized/spinlock_wait.cc.ll
 ; linux/optimized/8250_pci.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; qemu/optimized/hw_net_can_ctucan_core.c.ll
 ; Function Attrs: nounwind

@@ -11,7 +11,7 @@ entry:
   %2 = fpext float %1 to double
   %3 = fmul double %2, 0x3FD45F306DC9C883
   %4 = fptrunc double %3 to float
-  %5 = fcmp olt float %4, %0
+  %5 = fcmp ogt float %0, %4
   ret i1 %5
 }
 
@@ -27,7 +27,7 @@ entry:
   %2 = fpext float %1 to double
   %3 = fmul double %2, 1.000000e-02
   %4 = fptrunc double %3 to float
-  %5 = fcmp ogt float %4, %0
+  %5 = fcmp olt float %0, %4
   ret i1 %5
 }
 

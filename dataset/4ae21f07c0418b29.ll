@@ -316,7 +316,7 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %reass.sub = sub i64 %1, %2
   %3 = add i64 %reass.sub, 3
@@ -324,16 +324,27 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
-; eastl/optimized/BenchmarkString.cpp.ll
+; 2 occurrences:
 ; hermes/optimized/MicrosoftDemangle.cpp.ll
 ; hermes/optimized/MicrosoftDemangleNodes.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %reass.sub = sub i64 %1, %2
   %3 = add i64 %reass.sub, 21
   %4 = icmp ult i64 %3, %0
+  ret i1 %4
+}
+
+; 2 occurrences:
+; postgres/optimized/xlog.ll
+; turborepo-rs/optimized/3wg34qzs64td8o5fq33fcg5rk.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000181(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %reass.sub = sub i64 %1, %2
+  %3 = add i64 %reass.sub, 3
+  %4 = icmp eq i64 %3, %0
   ret i1 %4
 }
 

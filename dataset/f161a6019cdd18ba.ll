@@ -1,8 +1,7 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; cpython/optimized/_codecs_kr.ll
 ; darktable/optimized/introspection_dither.c.ll
-; linux/optimized/nfsacl.ll
 ; openusd/optimized/pathNode.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i1 %0, i32 %1) #0 {
@@ -12,7 +11,7 @@ entry:
   ret i32 %3
 }
 
-; 209 occurrences:
+; 208 occurrences:
 ; freetype/optimized/ftcache.c.ll
 ; hermes/optimized/Analysis.cpp.ll
 ; hermes/optimized/CFG.cpp.ll
@@ -23,7 +22,6 @@ entry:
 ; hermes/optimized/Passes.cpp.ll
 ; hermes/optimized/SemanticValidator.cpp.ll
 ; linux/optimized/thermal.ll
-; linux/optimized/thermal_lib.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/AArch64O0PreLegalizerCombiner.cpp.ll

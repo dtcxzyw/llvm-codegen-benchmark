@@ -6,7 +6,7 @@ define i16 @func0000000000000004(i16 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 16
   %3 = trunc nuw i32 %2 to i16
-  %4 = add i16 %3, %0
+  %4 = add i16 %0, %3
   ret i16 %4
 }
 
@@ -23,7 +23,7 @@ define i16 @func0000000000000014(i16 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 24
   %3 = trunc nsw i32 %2 to i16
-  %4 = add i16 %3, %0
+  %4 = add i16 %0, %3
   ret i16 %4
 }
 
@@ -34,7 +34,7 @@ define i16 @func0000000000000015(i16 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 24
   %3 = trunc nsw i32 %2 to i16
-  %4 = add nsw i16 %3, %0
+  %4 = add nsw i16 %0, %3
   ret i16 %4
 }
 

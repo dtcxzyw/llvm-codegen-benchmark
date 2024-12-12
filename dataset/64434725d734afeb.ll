@@ -1,10 +1,11 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; linux/optimized/mlme.ll
 ; minetest/optimized/content_cao.cpp.ll
 ; spike/optimized/kcras16.ll
 ; spike/optimized/kstsa16.ll
 ; typst-rs/optimized/1ojadsqfk0rsifsx.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i16 %0, i64 %1) #0 {
 entry:

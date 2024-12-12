@@ -1,8 +1,7 @@
 
-; 14 occurrences:
+; 13 occurrences:
 ; graphviz/optimized/route.c.ll
 ; miniaudio/optimized/unity.c.ll
-; proj/optimized/io.cpp.ll
 ; quantlib/optimized/abcd.ll
 ; quantlib/optimized/analytic_discr_geom_av_price_heston.ll
 ; quantlib/optimized/analyticbsmhullwhiteengine.ll

@@ -14,5 +14,5 @@ func000000000000000d:                   # @func000000000000000d
 	li	a0, 511
 	vand.vx	v10, v10, a0
 	vnot.v	v10, v10
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret

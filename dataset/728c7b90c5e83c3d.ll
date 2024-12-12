@@ -1,16 +1,11 @@
 
-; 12 occurrences:
-; assimp/optimized/BlenderDNA.cpp.ll
-; assimp/optimized/BlenderScene.cpp.ll
-; assimp/optimized/PlyParser.cpp.ll
-; cmake/optimized/cmELF.cxx.ll
+; 7 occurrences:
 ; eastl/optimized/TestBitset.cpp.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; qemu/optimized/source_s_subMagsF16.c.ll
 ; rust-analyzer-rs/optimized/1x49zfabvca0zorz.ll
 ; rust-analyzer-rs/optimized/hajha7nvyoiczny.ll
 ; spike/optimized/s_subMagsF16.ll
-; stockfish/optimized/tbprobe.ll
 ; wireshark/optimized/packet-s7comm.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i1 %0, i16 %1) #0 {

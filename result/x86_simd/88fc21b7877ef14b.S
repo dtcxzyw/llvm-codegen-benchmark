@@ -55,20 +55,21 @@ func0000000000000003:                   # @func0000000000000003
 	vzeroupper
 	retq
 .LCPI6_0:
-	.long	4294967289                      # 0xfffffff9
-func000000000000006b:                   # @func000000000000006b
+	.long	4294967294                      # 0xfffffffe
+.LCPI6_1:
+	.long	2                               # 0x2
+func000000000000000b:                   # @func000000000000000b
 	vpmovqd	%ymm0, %xmm0
 	vpaddd	.LCPI6_0(%rip){1to4}, %xmm0, %xmm0
-	vpsrld	$3, %xmm0, %xmm0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpsubd	%xmm1, %xmm0, %xmm0
+	vpsrld	$1, %xmm0, %xmm0
+	vpaddd	.LCPI6_1(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI7_0:
 	.long	4294967294                      # 0xfffffffe
 .LCPI7_1:
 	.long	2                               # 0x2
-func000000000000000b:                   # @func000000000000000b
+func0000000000000002:                   # @func0000000000000002
 	vpmovqd	%ymm0, %xmm0
 	vpaddd	.LCPI7_0(%rip){1to4}, %xmm0, %xmm0
 	vpsrld	$1, %xmm0, %xmm0
@@ -76,35 +77,24 @@ func000000000000000b:                   # @func000000000000000b
 	vzeroupper
 	retq
 .LCPI8_0:
-	.long	4294967294                      # 0xfffffffe
+	.long	63                              # 0x3f
 .LCPI8_1:
-	.long	2                               # 0x2
-func0000000000000002:                   # @func0000000000000002
+	.long	5                               # 0x5
+func000000000000007b:                   # @func000000000000007b
 	vpmovqd	%ymm0, %xmm0
 	vpaddd	.LCPI8_0(%rip){1to4}, %xmm0, %xmm0
-	vpsrld	$1, %xmm0, %xmm0
+	vpsrld	$6, %xmm0, %xmm0
 	vpaddd	.LCPI8_1(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI9_0:
-	.long	63                              # 0x3f
-.LCPI9_1:
-	.long	5                               # 0x5
-func000000000000007b:                   # @func000000000000007b
-	vpmovqd	%ymm0, %xmm0
-	vpaddd	.LCPI9_0(%rip){1to4}, %xmm0, %xmm0
-	vpsrld	$6, %xmm0, %xmm0
-	vpaddd	.LCPI9_1(%rip){1to4}, %xmm0, %xmm0
-	vzeroupper
-	retq
-.LCPI10_0:
 	.long	7                               # 0x7
-.LCPI10_1:
+.LCPI9_1:
 	.long	8                               # 0x8
 func000000000000001b:                   # @func000000000000001b
 	vpmovqd	%ymm0, %xmm0
-	vpaddd	.LCPI10_0(%rip){1to4}, %xmm0, %xmm0
+	vpaddd	.LCPI9_0(%rip){1to4}, %xmm0, %xmm0
 	vpsrld	$3, %xmm0, %xmm0
-	vpaddd	.LCPI10_1(%rip){1to4}, %xmm0, %xmm0
+	vpaddd	.LCPI9_1(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq

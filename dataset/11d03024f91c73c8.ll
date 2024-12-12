@@ -1,9 +1,10 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; abc/optimized/saigSwitch.c.ll
 ; darktable/optimized/live_view.c.ll
 ; darktable/optimized/tethering.c.ll
 ; gromacs/optimized/dispersioncorrection.cpp.ll
+; lvgl/optimized/lv_chart.ll
 ; wireshark/optimized/packet-mip6.c.ll
 ; Function Attrs: nounwind
 define float @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
@@ -14,7 +15,18 @@ entry:
   ret float %5
 }
 
-; 9 occurrences:
+; 1 occurrences:
+; nori/optimized/warptest.cpp.ll
+; Function Attrs: nounwind
+define float @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ult i32 %2, 3
+  %4 = select i1 %3, i32 %0, i32 %1
+  %5 = sitofp i32 %4 to float
+  ret float %5
+}
+
+; 8 occurrences:
 ; meshlab/optimized/VisibilityCheck.cpp.ll
 ; meshlab/optimized/VisibleSet.cpp.ll
 ; meshlab/optimized/alignset.cpp.ll
@@ -23,11 +35,10 @@ entry:
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/ml_default_decorators.cpp.ll
 ; meshlab/optimized/parameters.cpp.ll
-; nori/optimized/warptest.cpp.ll
 ; Function Attrs: nounwind
-define float @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
+define float @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 3
+  %3 = icmp samesign ult i32 %2, 4
   %4 = select i1 %3, i32 %0, i32 %1
   %5 = sitofp i32 %4 to float
   ret float %5

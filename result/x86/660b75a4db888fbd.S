@@ -1,8 +1,8 @@
-func0000000000000030:                   # @func0000000000000030
+func0000000000000028:                   # @func0000000000000028
 	movq	%rdi, %rax
 	xorl	%ecx, %ecx
-	negb	%sil
-	setno	%cl
+	cmpb	$-64, %sil
+	setge	%cl
 	subq	%rcx, %rax
 	retq
 func0000000000000005:                   # @func0000000000000005
@@ -26,6 +26,20 @@ func0000000000000031:                   # @func0000000000000031
 	setne	%cl
 	subq	%rcx, %rax
 	retq
+func0000000000000030:                   # @func0000000000000030
+	movq	%rdi, %rax
+	xorl	%ecx, %ecx
+	cmpb	$58, %sil
+	setne	%cl
+	subq	%rcx, %rax
+	retq
+func0000000000000018:                   # @func0000000000000018
+	movq	%rdi, %rax
+	xorl	%ecx, %ecx
+	cmpb	$-64, %sil
+	setl	%cl
+	subq	%rcx, %rax
+	retq
 func0000000000000019:                   # @func0000000000000019
 	movq	%rdi, %rax
 	xorl	%ecx, %ecx
@@ -37,11 +51,4 @@ func0000000000000020:                   # @func0000000000000020
 	movq	%rdi, %rax
 	cmpb	$53, %sil
 	adcq	$-1, %rax
-	retq
-func0000000000000028:                   # @func0000000000000028
-	movq	%rdi, %rax
-	xorl	%ecx, %ecx
-	cmpb	$-64, %sil
-	setge	%cl
-	subq	%rcx, %rax
 	retq

@@ -1,39 +1,39 @@
 .LCPI0_0:
+	.quad	86400000000                     # 0x141dd76000
+.LCPI0_1:
+	.quad	1000000                         # 0xf4240
+func000000000000003f:                   # @func000000000000003f
+	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
+	vpmullq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
+	vpmullq	.LCPI0_1(%rip){1to4}, %ymm0, %ymm0
+	vpaddq	%ymm0, %ymm1, %ymm0
+	retq
+.LCPI1_0:
+	.quad	86400000000                     # 0x141dd76000
+.LCPI1_1:
+	.quad	1000000                         # 0xf4240
+func000000000000001d:                   # @func000000000000001d
+	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
+	vpmullq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
+	vpmullq	.LCPI1_1(%rip){1to4}, %ymm0, %ymm0
+	vpaddq	%ymm0, %ymm1, %ymm0
+	retq
+.LCPI2_0:
 	.quad	2654435761                      # 0x9e3779b1
 func0000000000000030:                   # @func0000000000000030
 	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
 	vpaddq	%ymm1, %ymm1, %ymm2
 	vpaddq	%ymm1, %ymm2, %ymm1
-	vpmullq	.LCPI0_0(%rip){1to4}, %ymm0, %ymm0
+	vpmullq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0
 	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
-.LCPI1_0:
+.LCPI3_0:
 	.quad	3248559593059516416             # 0x2d1533bd00000000
-.LCPI1_1:
+.LCPI3_1:
 	.quad	-6358428717075319875            # 0xa7c252c52d1533bd
 func0000000000000040:                   # @func0000000000000040
 	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
-	vpmullq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
-	vpmullq	.LCPI1_1(%rip){1to4}, %ymm0, %ymm0
-	vpaddq	%ymm1, %ymm0, %ymm0
-	retq
-.LCPI2_0:
-	.quad	40                              # 0x28
-.LCPI2_1:
-	.quad	-40                             # 0xffffffffffffffd8
-func000000000000001d:                   # @func000000000000001d
-	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
-	vpmuludq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm1
-	vpmullq	.LCPI2_1(%rip){1to4}, %ymm0, %ymm0
-	vpaddq	%ymm0, %ymm1, %ymm0
-	retq
-.LCPI3_0:
-	.quad	4500                            # 0x1194
-.LCPI3_1:
-	.quad	75                              # 0x4b
-func000000000000003f:                   # @func000000000000003f
-	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
-	vpmuludq	.LCPI3_0(%rip){1to4}, %ymm1, %ymm1
+	vpmullq	.LCPI3_0(%rip){1to4}, %ymm1, %ymm1
 	vpmullq	.LCPI3_1(%rip){1to4}, %ymm0, %ymm0
 	vpaddq	%ymm1, %ymm0, %ymm0
 	retq

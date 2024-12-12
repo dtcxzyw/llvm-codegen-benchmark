@@ -3,7 +3,7 @@ func0000000000000002:                   # @func0000000000000002
 	vmflt.vv	v0, v12, v16
 	lui	a0, 271488
 	vmerge.vvm	v12, v16, v12, v0
-	vfadd.vv	v8, v12, v8
+	vfadd.vv	v8, v8, v12
 	fmv.w.x	fa5, a0
 	vfmul.vf	v8, v8, fa5
 	ret

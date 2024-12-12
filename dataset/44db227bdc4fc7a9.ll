@@ -1,5 +1,5 @@
 
-%class.VMRegImpl.2629568 = type { i8 }
+%class.VMRegImpl.2742977 = type { i8 }
 
 ; 25 occurrences:
 ; abc/optimized/abcDfs.c.ll
@@ -31,7 +31,7 @@
 define i32 @func0000000000000008(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr nusw %class.VMRegImpl.2629568, ptr %0, i64 %2
+  %3 = getelementptr nusw %class.VMRegImpl.2742977, ptr %0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = trunc i64 %4 to i32
   ret i32 %5

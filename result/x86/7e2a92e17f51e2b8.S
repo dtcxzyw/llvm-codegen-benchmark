@@ -16,6 +16,24 @@ func000000000000000a:                   # @func000000000000000a
 	leaq	(%rdi,%rsi,8), %rcx
 	leaq	(%rcx,%rax,8), %rax
 	retq
+func000000000000000e:                   # @func000000000000000e
+	leal	63(%rdx), %eax
+	testl	%edx, %edx
+	cmovnsl	%edx, %eax
+	sarl	$6, %eax
+	cltq
+	leaq	(%rdi,%rsi,8), %rcx
+	leaq	(%rcx,%rax,8), %rax
+	retq
+func000000000000000f:                   # @func000000000000000f
+	movl	%edx, %eax
+	shrl	$31, %eax
+	addl	%edx, %eax
+	sarl	%eax
+	cltq
+	leaq	(%rdi,%rsi,8), %rcx
+	leaq	(%rcx,%rax,8), %rax
+	retq
 func0000000000000008:                   # @func0000000000000008
 	movl	%edx, %eax
 	shrl	$31, %eax

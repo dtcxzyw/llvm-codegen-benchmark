@@ -5,7 +5,7 @@
 ; libjpeg-turbo/optimized/transupp.c.ll
 ; php/optimized/encoding.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i8 %1) #0 {
+define i1 @func00000000000000e1(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw nsw i32 %0, 8
@@ -18,7 +18,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/packlibs.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i32 %0, i8 %1) #0 {
+define i1 @func00000000000001e1(i32 %0, i8 %1) #0 {
 entry:
   %.tr1 = trunc i32 %0 to i8
   %.tr = shl i8 %.tr1, 1
@@ -27,11 +27,12 @@ entry:
   ret i1 %2
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-h223.c.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = shl i32 %0, 8
@@ -44,7 +45,7 @@ entry:
 ; 1 occurrences:
 ; yaml-cpp/optimized/emitterutils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000121(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl i32 %0, 6

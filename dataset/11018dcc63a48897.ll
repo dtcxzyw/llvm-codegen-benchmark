@@ -13,7 +13,7 @@
 define i1 @func0000000000000002(double %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = uitofp i32 %2 to double
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   %5 = uitofp i32 %1 to double
   %6 = fcmp olt double %4, %5
   ret i1 %6
@@ -25,7 +25,7 @@ entry:
 define i1 @func0000000000000008(double %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = uitofp i32 %2 to double
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   %5 = uitofp i32 %1 to double
   %6 = fcmp oeq double %4, %5
   ret i1 %6
@@ -37,7 +37,7 @@ entry:
 define i1 @func0000000000000003(double %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = uitofp i32 %2 to double
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   %5 = uitofp i32 %1 to double
   %6 = fcmp ult double %4, %5
   ret i1 %6
@@ -49,7 +49,7 @@ entry:
 define i1 @func0000000000000012(double %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = uitofp i32 %2 to double
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   %5 = uitofp nneg i32 %1 to double
   %6 = fcmp olt double %4, %5
   ret i1 %6

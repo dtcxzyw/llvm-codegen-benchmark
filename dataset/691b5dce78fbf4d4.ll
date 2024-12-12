@@ -5,7 +5,7 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000019(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %2, %1
+  %3 = add i64 %1, %2
   %4 = shl i64 %3, 32
   %5 = and i64 %0, 4294967295
   %6 = or disjoint i64 %4, %5
@@ -30,7 +30,7 @@ entry:
 define i64 @func000000000000001d(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4278190080
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = shl nuw i64 %4, 32
   %6 = and i64 %0, 255
   %7 = or disjoint i64 %5, %6

@@ -1,5 +1,5 @@
 
-; 376 occurrences:
+; 372 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; arrow/optimized/align_util.cc.ll
 ; arrow/optimized/array_dict.cc.ll
@@ -64,7 +64,6 @@
 ; gromacs/optimized/datastorage.cpp.ll
 ; gromacs/optimized/displacement.cpp.ll
 ; gromacs/optimized/forcefieldparameters.cpp.ll
-; gromacs/optimized/frameaverager.cpp.ll
 ; gromacs/optimized/histogram.cpp.ll
 ; gromacs/optimized/inputrec.cpp.ll
 ; gromacs/optimized/lifetime.cpp.ll
@@ -107,7 +106,6 @@
 ; lightgbm/optimized/train_share_states.cpp.ll
 ; llvm/optimized/InstrInfoEmitter.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
@@ -127,7 +125,6 @@
 ; ocio/optimized/ColorSpace.cpp.ll
 ; ocio/optimized/ColorSpaceSet.cpp.ll
 ; ocio/optimized/Config.cpp.ll
-; ocio/optimized/FileTransform.cpp.ll
 ; ocio/optimized/OpOptimizers.cpp.ll
 ; oiio/optimized/imagecache.cpp.ll
 ; opencv/optimized/LSDDetector.cpp.ll
@@ -206,8 +203,6 @@
 ; pocketpy/optimized/expr.cpp.ll
 ; pocketpy/optimized/gc.cpp.ll
 ; pocketpy/optimized/tuplelist.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; protobuf/optimized/descriptor.cc.ll
 ; protobuf/optimized/message_differencer.cc.ll
 ; protobuf/optimized/text_format.cc.ll
@@ -318,6 +313,7 @@
 ; yosys/optimized/peepopt.ll
 ; yosys/optimized/pmux2shiftx.ll
 ; yosys/optimized/portlist.ll
+; yosys/optimized/proc_arst.ll
 ; yosys/optimized/proc_dff.ll
 ; yosys/optimized/proc_dlatch.ll
 ; yosys/optimized/proc_mux.ll
@@ -377,7 +373,7 @@
 ; zxing/optimized/Content.cpp.ll
 ; zxing/optimized/GenericGFPoly.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000066(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = shl i64 %3, 29
@@ -401,7 +397,7 @@ entry:
 ; yosys/optimized/simplify.ll
 ; yosys/optimized/test_cell.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = shl i64 %3, 29
@@ -417,7 +413,7 @@ entry:
 ; meshlab/optimized/qualitymapperdialog.cpp.ll
 ; rocksdb/optimized/file_indexer.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = shl i64 %3, 29
@@ -432,7 +428,7 @@ entry:
 ; arrow/optimized/UriNormalize.c.ll
 ; yosys/optimized/formalff.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = shl i64 %3, 32
@@ -475,7 +471,7 @@ entry:
 ; yosys/optimized/xilinx_dffopt.ll
 ; zxing/optimized/QRMatrixUtil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = shl i64 %3, 32
@@ -496,7 +492,7 @@ entry:
 ; ceres/optimized/schur_complement_solver.cc.ll
 ; ceres/optimized/trust_region_minimizer.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000251(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000004a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = shl i64 %3, 32
@@ -509,7 +505,7 @@ entry:
 ; 1 occurrences:
 ; ceres/optimized/trust_region_minimizer.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = shl i64 %3, 32
@@ -522,7 +518,7 @@ entry:
 ; 1 occurrences:
 ; zxing/optimized/GenericGFPoly.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000276(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000004e6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = shl i64 %3, 32
@@ -535,7 +531,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/read.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = shl i64 %3, 32
@@ -549,7 +545,7 @@ entry:
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; ocio/optimized/ViewingRules.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = shl i64 %3, 29
@@ -562,7 +558,7 @@ entry:
 ; 1 occurrences:
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = shl i64 %3, 29

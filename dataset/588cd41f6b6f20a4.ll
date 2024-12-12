@@ -1,8 +1,10 @@
 
-; 18 occurrences:
+; 20 occurrences:
 ; arrow/optimized/bignum.cc.ll
 ; arrow/optimized/fixed-dtoa.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; c3c/optimized/bigint.c.ll
 ; double_conversion/optimized/bignum.cc.ll
 ; double_conversion/optimized/fixed-dtoa.cc.ll

@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; ruby/optimized/array.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = sext i32 %3 to i64
@@ -37,7 +37,7 @@ entry:
 ; pbrt-v4/optimized/string.cpp.ll
 ; velox/optimized/VectorFuzzer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000086(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = sext i32 %3 to i64
@@ -88,7 +88,7 @@ entry:
 ; opencv/optimized/convolution_layer.cpp.ll
 ; openjdk/optimized/TransformHelper.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000aa(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = sext i32 %3 to i64
@@ -100,7 +100,7 @@ entry:
 ; 1 occurrences:
 ; lightgbm/optimized/gbdt_model_text.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = sext i32 %3 to i64
@@ -109,16 +109,30 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/conversion.ll
 ; opencv/optimized/persistence.cpp.ll
 ; slurm/optimized/hostlist.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = sext i32 %3 to i64
   %5 = sub i64 %0, %1
   %6 = icmp ult i64 %5, %4
+  ret i1 %6
+}
+
+; 2 occurrences:
+; boost/optimized/conversion.ll
+; zxing/optimized/QRVersion.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000088(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %2, 1
+  %4 = sext i32 %3 to i64
+  %5 = sub i64 %0, %1
+  %6 = icmp ugt i64 %5, %4
   ret i1 %6
 }
 
@@ -131,7 +145,7 @@ entry:
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000008a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -32768
   %4 = sext i32 %3 to i64
@@ -140,24 +154,12 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
-; zxing/optimized/QRVersion.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %2, 1
-  %4 = sext i32 %3 to i64
-  %5 = sub i64 %0, %1
-  %6 = icmp ugt i64 %5, %4
-  ret i1 %6
-}
-
 ; 3 occurrences:
 ; miniaudio/optimized/unity.c.ll
 ; opencv/optimized/convolution_layer.cpp.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 4
   %4 = sext i32 %3 to i64

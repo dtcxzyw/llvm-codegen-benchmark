@@ -45,7 +45,7 @@ entry:
   ret i1 %4
 }
 
-; 100 occurrences:
+; 101 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/container_memory_test.cc.ll
 ; abseil-cpp/optimized/container_test.cc.ll
@@ -117,6 +117,7 @@ entry:
 ; linux/optimized/hub.ll
 ; linux/optimized/netlabel_kapi.ll
 ; linux/optimized/tx.ll
+; lvgl/optimized/lv_draw_sw_triangle.ll
 ; ms-gsl/optimized/span_tests.cpp.ll
 ; nghttp2/optimized/nghttp2_session.c.ll
 ; nix/optimized/machines.ll

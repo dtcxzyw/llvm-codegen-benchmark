@@ -1,5 +1,6 @@
 
-; 12 occurrences:
+; 15 occurrences:
+; boost/optimized/to_chars.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
@@ -12,6 +13,8 @@
 ; spike/optimized/f128_to_i64.ll
 ; spike/optimized/f128_to_ui64.ll
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0) #0 {
 entry:

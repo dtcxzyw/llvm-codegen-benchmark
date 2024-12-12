@@ -1,7 +1,7 @@
 
-%struct.btSolverConstraint.2705118 = type { %class.btVector3.2705119, %class.btVector3.2705119, %class.btVector3.2705119, %class.btVector3.2705119, %class.btVector3.2705119, %class.btVector3.2705119, float, float, float, float, float, float, float, float, float, %union.anon.24.2705120, i32, i32, i32, i32 }
-%class.btVector3.2705119 = type { [4 x float] }
-%union.anon.24.2705120 = type { ptr }
+%struct.btSolverConstraint.2817833 = type { %class.btVector3.2817834, %class.btVector3.2817834, %class.btVector3.2817834, %class.btVector3.2817834, %class.btVector3.2817834, %class.btVector3.2817834, float, float, float, float, float, float, float, float, float, %union.anon.24.2817835, i32, i32, i32, i32 }
+%class.btVector3.2817834 = type { [4 x float] }
+%union.anon.24.2817835 = type { ptr }
 
 ; 5 occurrences:
 ; bullet3/optimized/b3PgsJacobiSolver.ll
@@ -19,8 +19,7 @@ entry:
   ret ptr %6
 }
 
-; 4 occurrences:
-; abc/optimized/giaMinLut.c.ll
+; 3 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; openusd/optimized/cdef.c.ll
 ; qemu/optimized/block_qcow.c.ll
@@ -45,7 +44,7 @@ entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = shl nuw i32 %3, %1
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw %struct.btSolverConstraint.2705118, ptr %0, i64 %5
+  %6 = getelementptr nusw %struct.btSolverConstraint.2817833, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -67,15 +66,27 @@ entry:
   ret ptr %6
 }
 
+; 1 occurrences:
+; abc/optimized/giaDecs.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000012(ptr %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc nsw i64 %2 to i32
+  %4 = shl i32 %3, %1
+  %5 = sext i32 %4 to i64
+  %6 = getelementptr nusw i64, ptr %0, i64 %5
+  ret ptr %6
+}
+
 ; 11 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/bmcMaj3.c.ll
 ; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/giaDecs.c.ll
+; abc/optimized/giaMinLut.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/ifDec16.c.ll
 ; abc/optimized/kitGraph.c.ll
-; abc/optimized/lpkMan.c.ll
 ; faiss/optimized/lattice_Zn.cpp.ll
 ; openusd/optimized/cdef.c.ll
 ; openusd/optimized/grain_synthesis.c.ll
@@ -83,18 +94,6 @@ entry:
 define ptr @func0000000000000032(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = shl i32 %3, %1
-  %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw i32, ptr %0, i64 %5
-  ret ptr %6
-}
-
-; 1 occurrences:
-; abc/optimized/giaDecs.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc nsw i64 %2 to i32
   %4 = shl i32 %3, %1
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw i64, ptr %0, i64 %5

@@ -4,7 +4,7 @@
 	.long	14                              # 0xe
 .LCPI0_2:
 	.quad	4                               # 0x4
-func0000000000000082:                   # @func0000000000000082
+func0000000000000102:                   # @func0000000000000102
 	vpcmpltud	.LCPI0_0(%rip){1to4}, %xmm1, %k0
 	vpcmpeqd	.LCPI0_1(%rip){1to4}, %xmm0, %k1
 	korw	%k0, %k1, %k1
@@ -16,7 +16,7 @@ func0000000000000082:                   # @func0000000000000082
 	.quad	48                              # 0x30
 .LCPI1_2:
 	.quad	24                              # 0x18
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	vptestnmd	%xmm1, %xmm1, %k0
 	vpcmpeqd	.LCPI1_0(%rip){1to4}, %xmm0, %k1
 	korw	%k0, %k1, %k1
@@ -27,7 +27,7 @@ func0000000000000022:                   # @func0000000000000022
 	.quad	496                             # 0x1f0
 .LCPI2_1:
 	.quad	492                             # 0x1ec
-func0000000000000182:                   # @func0000000000000182
+func0000000000000302:                   # @func0000000000000302
 	vptestmd	%xmm1, %xmm1, %k0
 	vptestnmd	%xmm0, %xmm0, %k1
 	korw	%k0, %k1, %k1
@@ -42,7 +42,7 @@ func0000000000000182:                   # @func0000000000000182
 	.quad	1                               # 0x1
 .LCPI3_3:
 	.quad	2                               # 0x2
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	vpcmpeqd	.LCPI3_0(%rip){1to4}, %xmm1, %k0
 	vpcmpltud	.LCPI3_1(%rip){1to4}, %xmm0, %k1
 	korw	%k0, %k1, %k1
@@ -55,7 +55,7 @@ func0000000000000028:                   # @func0000000000000028
 	.quad	4                               # 0x4
 .LCPI4_2:
 	.quad	3                               # 0x3
-func0000000000000038:                   # @func0000000000000038
+func0000000000000058:                   # @func0000000000000058
 	vpcmpeqd	.LCPI4_0(%rip){1to4}, %xmm1, %k0
 	vptestmd	%xmm0, %xmm0, %k1
 	korw	%k0, %k1, %k1
@@ -68,7 +68,7 @@ func0000000000000038:                   # @func0000000000000038
 	.quad	24                              # 0x18
 .LCPI5_2:
 	.quad	16                              # 0x10
-func0000000000000198:                   # @func0000000000000198
+func0000000000000318:                   # @func0000000000000318
 	vptestmd	%xmm1, %xmm1, %k0
 	vpcmpneqd	.LCPI5_0(%rip){1to4}, %xmm0, %k1
 	korw	%k0, %k1, %k1

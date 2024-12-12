@@ -5,7 +5,7 @@ func0000000000000006:                   // @func0000000000000006
 	csel	x0, xzr, x8, lt
 	ret
                                         // -- End function
-func0000000000000021:                   // @func0000000000000021
+func0000000000000041:                   // @func0000000000000041
 // %bb.0:                               // %entry
 	add	x8, x1, x0
 	cmp	x0, #0

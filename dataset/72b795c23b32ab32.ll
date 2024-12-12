@@ -1,8 +1,9 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; bullet3/optimized/btMultiBodySliderConstraint.ll
 ; bullet3/optimized/btSoftBody.ll
 ; gromacs/optimized/expanded.cpp.ll
+; lightgbm/optimized/metric.cpp.ll
 ; Function Attrs: nounwind
 define double @func0000000000000004(float %0, float %1) #0 {
 entry:

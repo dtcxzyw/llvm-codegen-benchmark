@@ -25,16 +25,14 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
-; cmake/optimized/zstd_opt.c.ll
+; 1 occurrences:
 ; linux/optimized/virtio_net.ll
-; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
-  %3 = icmp ugt i64 %2, 384
-  %4 = select i1 %3, i32 %0, i32 0
+  %3 = icmp ugt i64 %2, 2147483647
+  %4 = select i1 %3, i32 %0, i32 8
   ret i32 %4
 }
 

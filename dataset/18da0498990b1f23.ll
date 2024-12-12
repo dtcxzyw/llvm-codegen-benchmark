@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 22 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
@@ -7,6 +7,7 @@
 ; faiss/optimized/IndexRowwiseMinMax.cpp.ll
 ; graphviz/optimized/SparseMatrix.c.ll
 ; graphviz/optimized/spring_electrical.c.ll
+; gromacs/optimized/grompp.cpp.ll
 ; hdf5/optimized/h5tools.c.ll
 ; hdf5/optimized/h5tools_dump.c.ll
 ; hdf5/optimized/h5tools_str.c.ll
@@ -30,7 +31,7 @@ entry:
   ret ptr %5
 }
 
-; 62 occurrences:
+; 63 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
 ; ceres/optimized/polynomial.cc.ll
@@ -87,6 +88,7 @@ entry:
 ; quantlib/optimized/pathwiseaccountingengine.ll
 ; quantlib/optimized/qrdecomposition.ll
 ; quantlib/optimized/ratepseudorootjacobian.ll
+; quantlib/optimized/tapcorrelations.ll
 ; rocksdb/optimized/block_cache_trace_analyzer.cc.ll
 ; stat-rs/optimized/11haqsqxcf11j877.ll
 ; stat-rs/optimized/43fparx0v87xel0c.ll
@@ -102,9 +104,8 @@ entry:
   ret ptr %5
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; darktable/optimized/introspection_colorin.c.ll
-; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; miniaudio/optimized/unity.c.ll
 ; ncnn/optimized/gridsample.cpp.ll
@@ -122,7 +123,7 @@ entry:
 define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 6
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = getelementptr nusw i8, ptr %0, i64 %4
   ret ptr %5
 }
@@ -137,15 +138,52 @@ entry:
 ; openssl/optimized/libcrypto-lib-rsaz_exp_x2.ll
 ; openssl/optimized/libcrypto-shlib-rsaz_exp_x2.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 2
   %4 = mul nuw nsw i64 %3, %1
-  %5 = getelementptr nusw i64, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i64, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 54 occurrences:
+; 2 occurrences:
+; openssl/optimized/libdefault-lib-scrypt.ll
+; yalantinglibs/optimized/user_defined_serialization.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000033(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %2, 7
+  %4 = mul i64 %3, %1
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 15 occurrences:
+; abc/optimized/giaResub.c.ll
+; abc/optimized/giaSimBase.c.ll
+; darktable/optimized/ArwDecoder.cpp.ll
+; darktable/optimized/CrwDecompressor.cpp.ll
+; darktable/optimized/VC5Decompressor.cpp.ll
+; darktable/optimized/introspection_colorchecker.c.ll
+; darktable/optimized/introspection_filmicrgb.c.ll
+; faiss/optimized/ProductQuantizer.cpp.ll
+; image-rs/optimized/5ez7udly19o3uj1p.ll
+; openusd/optimized/patchTreeBuilder.cpp.ll
+; postgres/optimized/mcv.ll
+; stockfish/optimized/tbprobe.ll
+; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003c(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %2, 2
+  %4 = mul nuw nsw i64 %3, %1
+  %5 = getelementptr i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 52 occurrences:
 ; arrow/optimized/key_hash_avx2.cc.ll
 ; assimp/optimized/HMPLoader.cpp.ll
 ; darktable/optimized/introspection_clipping.c.ll
@@ -153,7 +191,6 @@ entry:
 ; darktable/optimized/introspection_retouch.c.ll
 ; darktable/optimized/introspection_scalepixels.c.ll
 ; darktable/optimized/introspection_sharpen.c.ll
-; darktable/optimized/jpeg.c.ll
 ; darktable/optimized/tiff.c.ll
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; miniaudio/optimized/unity.c.ll
@@ -192,7 +229,6 @@ entry:
 ; opencv/optimized/solvepnp.cpp.ll
 ; opencv/optimized/speech_recognition.cpp.ll
 ; openjdk/optimized/psCardTable.ll
-; openssl/optimized/libdefault-lib-scrypt.ll
 ; openusd/optimized/animMapper.cpp.ll
 ; openusd/optimized/bakeSkinning.cpp.ll
 ; openusd/optimized/skeletonAdapter.cpp.ll
@@ -203,35 +239,13 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000032(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = shl nuw nsw i64 %2, 7
-  %4 = mul i64 %3, %1
+  %3 = shl nuw nsw i64 %2, 2
+  %4 = mul i64 %1, %3
   %5 = getelementptr nusw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 12 occurrences:
-; abc/optimized/giaResub.c.ll
-; abc/optimized/giaSimBase.c.ll
-; darktable/optimized/ArwDecoder.cpp.ll
-; darktable/optimized/CrwDecompressor.cpp.ll
-; darktable/optimized/VC5Decompressor.cpp.ll
-; darktable/optimized/introspection_colorchecker.c.ll
-; darktable/optimized/introspection_filmicrgb.c.ll
-; faiss/optimized/ProductQuantizer.cpp.ll
-; image-rs/optimized/5ez7udly19o3uj1p.ll
-; openusd/optimized/patchTreeBuilder.cpp.ll
-; postgres/optimized/mcv.ll
-; typst-rs/optimized/d6l9ieo9tcw33dn.ll
-; Function Attrs: nounwind
-define ptr @func000000000000003c(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl nuw nsw i64 %2, 2
-  %4 = mul nuw nsw i64 %3, %1
-  %5 = getelementptr i8, ptr %0, i64 %4
-  ret ptr %5
-}
-
-; 53 occurrences:
+; 54 occurrences:
 ; darktable/optimized/histogram.c.ll
 ; darktable/optimized/introspection_basicadj.c.ll
 ; darktable/optimized/introspection_bilateral.cc.ll
@@ -282,6 +296,7 @@ entry:
 ; opencv/optimized/motion_estimators.cpp.ll
 ; openmpi/optimized/coll_sm_module.ll
 ; openusd/optimized/stbImage.cpp.ll
+; openusd/optimized/tessellation.cpp.ll
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; velox/optimized/MmapAllocator.cpp.ll
@@ -289,7 +304,7 @@ entry:
 define ptr @func0000000000000012(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 2
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = getelementptr nusw i8, ptr %0, i64 %4
   ret ptr %5
 }
@@ -312,7 +327,9 @@ entry:
   ret ptr %5
 }
 
-; 42 occurrences:
+; 45 occurrences:
+; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
+; miniaudio/optimized/unity.c.ll
 ; quantlib/optimized/andreasenhugevolatilityinterpl.ll
 ; quantlib/optimized/basecorrelationstructure.ll
 ; quantlib/optimized/capfloortermvolcurve.ll
@@ -355,6 +372,7 @@ entry:
 ; quantlib/optimized/svd.ll
 ; quantlib/optimized/tapcorrelations.ll
 ; quantlib/optimized/zabr.ll
+; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -424,7 +442,7 @@ entry:
 define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 2
-  %4 = mul nuw i64 %3, %1
+  %4 = mul nuw i64 %1, %3
   %5 = getelementptr nusw float, ptr %0, i64 %4
   ret ptr %5
 }
@@ -467,11 +485,11 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_colorin.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 2
   %4 = mul nuw nsw i64 %3, %1
-  %5 = getelementptr nusw float, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw float, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -486,16 +504,26 @@ entry:
   ret ptr %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; abc/optimized/giaDecs.c.ll
 ; opencv/optimized/color_yuv.dispatch.cpp.ll
-; openusd/optimized/tessellation.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000036(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 1
   %4 = mul nsw i64 %3, %1
   %5 = getelementptr nusw i64, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; lightgbm/optimized/metric.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000013(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nsw i64 %2, 1
+  %4 = mul i64 %1, %3
+  %5 = getelementptr nusw nuw i32, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -542,7 +570,7 @@ entry:
 define ptr @func0000000000000004(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 2
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = getelementptr i32, ptr %0, i64 %4
   ret ptr %5
 }
@@ -554,7 +582,7 @@ entry:
 define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 2
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = getelementptr nusw i32, ptr %0, i64 %4
   ret ptr %5
 }

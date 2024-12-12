@@ -12,6 +12,8 @@
 ; abseil-cpp/optimized/crc.cc.ll
 ; arrow/optimized/crc32.cc.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/collate.ll
+; boost/optimized/collator.ll
 ; clamav/optimized/XzDec.c.ll
 ; cmake/optimized/archive_write_set_format_mtree.c.ll
 ; cmake/optimized/bzlib.c.ll
@@ -51,7 +53,6 @@
 ; llvm/optimized/BitcodeWriter.cpp.ll
 ; llvm/optimized/BranchProbabilityInfo.cpp.ll
 ; llvm/optimized/BranchRelaxation.cpp.ll
-; llvm/optimized/CGCXX.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; llvm/optimized/CGProfile.cpp.ll
@@ -165,7 +166,6 @@
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; openusd/optimized/zipFile.cpp.ll
-; php/optimized/hash_crc32.ll
 ; postgres/optimized/tsgistidx.ll
 ; postgres/optimized/tsquery.ll
 ; raylib/optimized/raudio.c.ll
@@ -192,7 +192,7 @@ entry:
   ret i64 %3
 }
 
-; 106 occurrences:
+; 107 occurrences:
 ; abc/optimized/abcRr.c.ll
 ; abc/optimized/extraUtilMisc.c.ll
 ; abc/optimized/fraClaus.c.ll
@@ -200,6 +200,8 @@ entry:
 ; abc/optimized/superGate.c.ll
 ; abseil-cpp/optimized/randen_slow.cc.ll
 ; assimp/optimized/FindInstancesProcess.cpp.ll
+; boost/optimized/core.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/hashtab.c.ll
 ; clamav/optimized/rs16.cpp.ll
 ; cmake/optimized/crc32.c.ll
@@ -234,6 +236,7 @@ entry:
 ; llvm/optimized/OpenMPOpt.cpp.ll
 ; llvm/optimized/PseudoSourceValue.cpp.ll
 ; luau/optimized/OptimizeConstProp.cpp.ll
+; lvgl/optimized/lv_lru.ll
 ; memcached/optimized/crc32c.ll
 ; memcached/optimized/memcached-crc32c.ll
 ; memcached/optimized/memcached_debug-crc32c.ll
@@ -243,9 +246,7 @@ entry:
 ; ninja/optimized/build_log.cc.ll
 ; ninja/optimized/state.cc.ll
 ; opencv/optimized/flann_search_dataset.cpp.ll
-; opencv/optimized/local_optimization.cpp.ll
 ; opencv/optimized/miniflann.cpp.ll
-; opencv/optimized/seam_finders.cpp.ll
 ; openjdk/optimized/altHashing.ll
 ; openjdk/optimized/compressedStream.ll
 ; openjdk/optimized/finalizerService.ll

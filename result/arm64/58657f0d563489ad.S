@@ -1,34 +1,28 @@
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	bic	v0.4h, #255, lsl #8
-	ushll	v0.4s, v0.4h, #0
-	uaddl2	v2.2d, v0.4s, v1.4s
-	uaddl	v0.2d, v0.2s, v1.2s
-	mov	v1.16b, v2.16b
+                                        // kill: def $w0 killed $w0 def $x0
+	and	x8, x0, #0xff
+	add	x0, x8, w1, uxtw
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	bic	v1.4h, #255, lsl #8
-	ushll	v2.4s, v1.4h, #0
-	uaddl2	v1.2d, v0.4s, v2.4s
-	uaddl	v0.2d, v0.2s, v2.2s
+	mov	w8, w0
+                                        // kill: def $w1 killed $w1 def $x1
+	add	x0, x8, w1, uxtb
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	bic	v1.4h, #255, lsl #8
-	ushll	v2.4s, v1.4h, #0
-	uaddl2	v1.2d, v0.4s, v2.4s
-	uaddl	v0.2d, v0.2s, v2.2s
+	mov	w8, w0
+                                        // kill: def $w1 killed $w1 def $x1
+	add	x0, x8, w1, uxtb
 	ret
                                         // -- End function
 func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
-	bic	v0.4h, #255, lsl #8
-	ushll	v0.4s, v0.4h, #0
-	uaddl2	v2.2d, v0.4s, v1.4s
-	uaddl	v0.2d, v0.2s, v1.2s
-	mov	v1.16b, v2.16b
+                                        // kill: def $w0 killed $w0 def $x0
+	and	x8, x0, #0xff
+	add	x0, x8, w1, uxtw
 	ret
                                         // -- End function

@@ -1,4 +1,4 @@
-func000000000000034c:                   # @func000000000000034c
+func0000000000000e8c:                   # @func0000000000000e8c
 	andl	$1, %edx
 	addq	%rsi, %rdx
 	cmpq	$3, %rdx
@@ -7,7 +7,7 @@ func000000000000034c:                   # @func000000000000034c
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000003c4:                   # @func00000000000003c4
+func0000000000000d94:                   # @func0000000000000d94
 	andl	$1, %edx
 	addq	%rsi, %rdx
 	cmpq	$3, %rdx
@@ -16,9 +16,10 @@ func00000000000003c4:                   # @func00000000000003c4
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	andl	$1, %edx
-	addq	%rsi, %rdx
+	negq	%rdx
+	cmpq	%rdx, %rsi
 	setne	%cl
 	testq	%rdi, %rdi
 	setne	%al

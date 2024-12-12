@@ -11,17 +11,18 @@ func0000000000000005:                   # @func0000000000000005
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
+func0000000000000030:                   # @func0000000000000030
+	slli	a1, a1, 50
+	srli	a1, a1, 50
+	snez	a1, a1
+	or	a0, a0, a1
+	ret
 func0000000000000031:                   # @func0000000000000031
 	andi	a1, a1, 516
 	snez	a1, a1
 	or	a0, a0, a1
 	ret
-func0000000000000030:                   # @func0000000000000030
-	andi	a1, a1, 96
-	snez	a1, a1
-	or	a0, a0, a1
-	ret
-func0000000000000010:                   # @func0000000000000010
+func0000000000000050:                   # @func0000000000000050
 	lui	a2, 2048
 	addiw	a2, a2, -256
 	and	a1, a1, a2

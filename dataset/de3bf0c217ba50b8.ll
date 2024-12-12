@@ -1,6 +1,5 @@
 
-; 8 occurrences:
-; lief/optimized/Builder.cpp.ll
+; 7 occurrences:
 ; linux/optimized/vma.ll
 ; llvm/optimized/APINotesWriter.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
@@ -77,17 +76,6 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
-; darktable/optimized/UncompressedDecompressor.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sub nsw i64 %1, %2
-  %4 = and i64 %3, 7
-  %5 = sub nsw i64 %0, %4
-  ret i64 %5
-}
-
 ; 2 occurrences:
 ; git/optimized/pack-check.ll
 ; linux/optimized/swap_state.ll
@@ -101,13 +89,13 @@ entry:
 }
 
 ; 1 occurrences:
-; duckdb/optimized/ub_duckdb_execution.cpp.ll
+; boost/optimized/to_chars.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sub i64 %1, %2
-  %4 = and i64 %3, 3
-  %5 = sub nuw nsw i64 %0, %4
+  %3 = sub nsw i64 %1, %2
+  %4 = and i64 %3, -32768
+  %5 = sub nsw i64 %0, %4
   ret i64 %5
 }
 

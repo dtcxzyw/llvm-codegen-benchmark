@@ -1,10 +1,11 @@
-func0000000000000190:                   # @func0000000000000190
-	andb	%dil, %sil
+func0000000000000310:                   # @func0000000000000310
+	movl	%edi, %ecx
+	andb	%sil, %cl
 	cmpq	$2, %rdi
 	setae	%al
-	orb	%sil, %al
+	orb	%cl, %al
 	retq
-func0000000000000182:                   # @func0000000000000182
+func0000000000000302:                   # @func0000000000000302
 	movl	%edi, %ecx
 	andl	$4, %ecx
 	shrl	$2, %ecx

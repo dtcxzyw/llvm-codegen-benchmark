@@ -1,11 +1,8 @@
 
-; 41 occurrences:
+; 33 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; brotli/optimized/decode.c.ll
-; jemalloc/optimized/bin.ll
-; jemalloc/optimized/bin.pic.ll
-; jemalloc/optimized/bin.sym.ll
 ; jemalloc/optimized/eset.ll
 ; jemalloc/optimized/eset.pic.ll
 ; jemalloc/optimized/eset.sym.ll
@@ -21,16 +18,11 @@
 ; jemalloc/optimized/sz.ll
 ; jemalloc/optimized/sz.pic.ll
 ; jemalloc/optimized/sz.sym.ll
-; jemalloc/optimized/tcache.ll
-; jemalloc/optimized/tcache.pic.ll
-; jemalloc/optimized/tcache.sym.ll
 ; libquic/optimized/quic_data_writer.cc.ll
 ; linux/optimized/aspm.ll
 ; linux/optimized/hugetlb_cgroup.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; qemu/optimized/hw_acpi_erst.c.ll
-; redis/optimized/bin.ll
-; redis/optimized/bin.sym.ll
 ; redis/optimized/eset.ll
 ; redis/optimized/eset.sym.ll
 ; redis/optimized/pac.ll

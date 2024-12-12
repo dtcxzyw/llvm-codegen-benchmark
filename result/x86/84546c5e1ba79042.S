@@ -8,7 +8,7 @@ func0000000000000047:                   # @func0000000000000047
 	cmpq	%rdx, %rsi
 	adcl	$0, %eax
 	retq
-func0000000000000090:                   # @func0000000000000090
+func0000000000000190:                   # @func0000000000000190
 	movl	%edi, %eax
 	cmpq	%rdx, %rsi
 	sbbl	$-1, %eax
@@ -23,4 +23,9 @@ func00000000000000c7:                   # @func00000000000000c7
 	cmpq	%rdx, %rsi
 	setne	%al
 	addl	%edi, %eax
+	retq
+func0000000000000147:                   # @func0000000000000147
+	movl	%edi, %eax
+	cmpq	%rdx, %rsi
+	adcl	$0, %eax
 	retq

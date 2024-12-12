@@ -45,6 +45,10 @@ func000000000000001f:                   # @func000000000000001f
 	leal	3(%rdi,%rdi), %eax
 	shlq	$32, %rax
 	retq
+func000000000000005f:                   # @func000000000000005f
+	addl	%edi, %edi
+	leaq	16(,%rdi,8), %rax
+	retq
 func0000000000000022:                   # @func0000000000000022
 	leal	8(,%rdi,8), %eax
 	shlq	$32, %rax

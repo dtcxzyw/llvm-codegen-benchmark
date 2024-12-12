@@ -1,5 +1,5 @@
 .LCPI0_0:
-	.quad	32                              # 0x20
+	.quad	2                               # 0x2
 func0000000000000008:                   # @func0000000000000008
 	vpsubq	%ymm1, %ymm2, %ymm2
 	vpaddq	.LCPI0_0(%rip){1to4}, %ymm2, %ymm2

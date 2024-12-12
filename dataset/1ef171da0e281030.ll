@@ -4,7 +4,7 @@
 ; opencv/optimized/3calibration.cpp.ll
 ; opencv/optimized/sparse_matching_gpc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 24
   %3 = udiv i64 %0, 3

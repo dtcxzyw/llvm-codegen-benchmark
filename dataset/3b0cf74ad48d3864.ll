@@ -1,5 +1,7 @@
 
-; 6 occurrences:
+; 8 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
@@ -7,16 +9,16 @@
 ; spike/optimized/socketif.ll
 ; velox/optimized/URLFunctions.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000006a(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = icmp sgt i32 %3, 2
-  %5 = getelementptr nusw i8, ptr %1, i64 48
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 48
   %6 = select i1 %4, ptr %5, ptr %0
   ret ptr %6
 }
 
-; 57 occurrences:
+; 60 occurrences:
 ; duckdb/optimized/comparison_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
@@ -46,6 +48,9 @@ entry:
 ; duckdb/optimized/ub_duckdb_storage_checkpoint.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_table.cpp.ll
+; openusd/optimized/flatteningSceneIndex.cpp.ll
+; openusd/optimized/overlayContainerDataSource.cpp.ll
+; openusd/optimized/retainedDataSource.cpp.ll
 ; velox/optimized/ArrayDistinct.cpp.ll
 ; velox/optimized/ArrayDuplicates.cpp.ll
 ; velox/optimized/ArrayIntersectExcept.cpp.ll
@@ -75,11 +80,11 @@ entry:
 ; velox/optimized/VectorFuzzer.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000024(ptr %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000064(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = icmp ult i32 %3, 13
-  %5 = getelementptr nusw i8, ptr %1, i64 4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 4
   %6 = select i1 %4, ptr %5, ptr %0
   ret ptr %6
 }
@@ -100,25 +105,11 @@ entry:
 ; gromacs/optimized/colvarcomp_apath.cpp.ll
 ; gromacs/optimized/colvarcomp_gpath.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(ptr %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000061(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = icmp eq i32 %3, 2
-  %5 = getelementptr nusw i8, ptr %1, i64 32
-  %6 = select i1 %4, ptr %5, ptr %0
-  ret ptr %6
-}
-
-; 3 occurrences:
-; openusd/optimized/flatteningSceneIndex.cpp.ll
-; openusd/optimized/overlayContainerDataSource.cpp.ll
-; openusd/optimized/retainedDataSource.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000034(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = trunc i64 %2 to i32
-  %4 = icmp ult i32 %3, 9
-  %5 = getelementptr nusw nuw i8, ptr %1, i64 8
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 32
   %6 = select i1 %4, ptr %5, ptr %0
   ret ptr %6
 }
@@ -131,18 +122,6 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = icmp slt i32 %3, 25
   %5 = getelementptr i8, ptr %1, i64 128
-  %6 = select i1 %4, ptr %5, ptr %0
-  ret ptr %6
-}
-
-; 1 occurrences:
-; protobuf/optimized/message_lite.cc.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000028(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = trunc i64 %2 to i32
-  %4 = icmp ugt i32 %3, 16
-  %5 = getelementptr nusw i8, ptr %1, i64 -16
   %6 = select i1 %4, ptr %5, ptr %0
   ret ptr %6
 }

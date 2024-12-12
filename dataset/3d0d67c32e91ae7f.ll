@@ -1,10 +1,8 @@
 
-; 6 occurrences:
+; 4 occurrences:
 ; llvm/optimized/AArch64A57FPLoadBalancing.cpp.ll
 ; llvm/optimized/CGCleanup.cpp.ll
-; llvm/optimized/SemaOverload.cpp.ll
 ; minetest/optimized/localplayer.cpp.ll
-; proj/optimized/crs.cpp.ll
 ; rust-analyzer-rs/optimized/1r9ygi4s2x06bwuz.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, ptr %1) #0 {

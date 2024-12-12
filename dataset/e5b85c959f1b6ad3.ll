@@ -3,6 +3,8 @@
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/topology.ll
 ; cmake/optimized/cmComputeLinkDepends.cxx.ll
 ; cmake/optimized/cmFindPackageCommand.cxx.ll
 ; cmake/optimized/cmFortranParserImpl.cxx.ll
@@ -158,7 +160,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -192,7 +193,6 @@
 ; openusd/optimized/pointInstancerAdapter.cpp.ll
 ; openusd/optimized/reporter.cpp.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; php/optimized/dow.ll
 ; php/optimized/parse_date.ll
 ; postgres/optimized/interval.ll
 ; proxygen/optimized/HTTP2PriorityQueue.cpp.ll
@@ -245,10 +245,10 @@
 ; yaml-cpp/optimized/simplekey.cpp.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/preproc.ll
 ; yosys/optimized/qbfsat.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -269,7 +269,7 @@ entry:
   ret i64 %5
 }
 
-; 227 occurrences:
+; 228 occurrences:
 ; abc/optimized/dsdCheck.c.ll
 ; abc/optimized/reoSwap.c.ll
 ; abseil-cpp/optimized/city.cc.ll
@@ -282,6 +282,9 @@ entry:
 ; actix-rs/optimized/48duj8tg7v09rmpe.ll
 ; actix-rs/optimized/4vksfexudgt1qids.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; coreutils-rs/optimized/2g9ijtjos2xwh9zs.ll
 ; delta-rs/optimized/1rw3q64nilk4jthd.ll
@@ -452,12 +455,10 @@ entry:
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/tensor.cpp.ll
 ; mitsuba3/optimized/xml.cpp.ll
-; nuttx/optimized/lib_timegm.c.ll
 ; ocio/optimized/HashUtils.cpp.ll
 ; ockam-rs/optimized/37q648fnmlksdgjw.ll
 ; ockam-rs/optimized/4df8gyzy0u3roc94.ll
@@ -552,7 +553,7 @@ entry:
   ret i64 %5
 }
 
-; 25 occurrences:
+; 24 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
@@ -573,7 +574,6 @@ entry:
 ; openssl/optimized/libcrypto-lib-curve25519.ll
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
 ; openvdb/optimized/Merge.cc.ll
-; php/optimized/dow.ll
 ; rocksdb/optimized/block_based_table_iterator.cc.ll
 ; velox/optimized/DateTimeFormatter.cpp.ll
 ; velox/optimized/Timestamp.cpp.ll
@@ -583,16 +583,17 @@ define i64 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = mul nsw i64 %3, 6
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; arrow/optimized/decimal.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_numeric.cc.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/text_file_backend.ll
 ; cmake/optimized/cmExportFileGenerator.cxx.ll
 ; cmake/optimized/cmFindPackageCommand.cxx.ll
 ; cmake/optimized/cmLocalGenerator.cxx.ll
@@ -611,7 +612,7 @@ define i64 @func000000000000003f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = mul nuw nsw i64 %3, 18
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -624,7 +625,7 @@ define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = mul nsw i64 %3, 365
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -660,7 +661,36 @@ define i64 @func000000000000003d(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = mul nuw nsw i64 %3, 1000000
+  %5 = add nsw i64 %0, %4
+  ret i64 %5
+}
+
+; 7 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
+; libjpeg-turbo/optimized/jfdctint.c.ll
+; libjpeg-turbo/optimized/jidctint.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000035(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %1, %2
+  %4 = mul nsw i64 %3, 1000000
   %5 = add nsw i64 %4, %0
+  ret i64 %5
+}
+
+; 2 occurrences:
+; boost/optimized/default_filter_factory.ll
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %1, %2
+  %4 = mul nuw i64 %3, 10
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 
@@ -677,7 +707,7 @@ define i64 @func0000000000000030(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = mul i64 %3, 604800
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -689,30 +719,7 @@ define i64 @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = mul nuw nsw i64 %3, 104
-  %5 = add nuw nsw i64 %4, %0
-  ret i64 %5
-}
-
-; 2 occurrences:
-; libjpeg-turbo/optimized/jfdctint.c.ll
-; libjpeg-turbo/optimized/jidctint.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000035(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw nsw i64 %1, %2
-  %4 = mul nsw i64 %3, -16069
-  %5 = add nsw i64 %4, %0
-  ret i64 %5
-}
-
-; 1 occurrences:
-; yyjson/optimized/yyjson.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add i64 %1, %2
-  %4 = mul nuw i64 %3, 10
-  %5 = add i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -760,7 +767,7 @@ define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = mul i64 %3, 6
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 

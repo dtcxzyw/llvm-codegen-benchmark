@@ -85,6 +85,6 @@ func000000000000001f:                   # @func000000000000001f
 	vpbroadcastb	.LCPI1_2(%rip), %xmm2   # xmm2 = [3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3]
 	vmovdqu8	.LCPI1_1(%rip), %xmm2 {%k1}     # xmm2 {%k1} = [2,2,2,2,2,2,2,2,u,u,u,u,u,u,u,u]
 	vpaddb	%xmm0, %xmm1, %xmm0
-	vpaddb	%xmm0, %xmm2, %xmm0
+	vpaddb	%xmm2, %xmm0, %xmm0
 	vzeroupper
 	retq

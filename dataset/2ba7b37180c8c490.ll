@@ -19,7 +19,7 @@ entry:
 define i32 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 10
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sub nsw i32 0, %4
   %6 = select i1 %0, i32 %5, i32 %4
   ret i32 %6
@@ -62,7 +62,7 @@ entry:
 define i32 @func0000000000000000(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 10
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sub i32 0, %4
   %6 = select i1 %0, i32 %5, i32 %4
   ret i32 %6

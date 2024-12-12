@@ -15,9 +15,8 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; git/optimized/archive-zip.ll
-; lodepng/optimized/lodepng.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1, i1 %2) #0 {
 entry:
@@ -27,13 +26,14 @@ entry:
   ret i64 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; duckdb/optimized/ub_duckdb_execution_index.cpp.ll
 ; libquic/optimized/time.cc.ll
 ; libwebp/optimized/frame_dec.c.ll
 ; linux/optimized/signal_64.ll
 ; opencv/optimized/dnn_superres_benchmark_time.cpp.ll
 ; opencv/optimized/obj_detect.cpp.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1, i1 %2) #0 {
 entry:

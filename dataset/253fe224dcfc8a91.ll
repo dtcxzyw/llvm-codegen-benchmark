@@ -1,7 +1,13 @@
 
-; 90 occurrences:
+; 97 occurrences:
 ; abc/optimized/rwrEva.c.ll
 ; arrow/optimized/bignum.cc.ll
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; clamav/optimized/Ppmd7Dec.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd7.c.ll
@@ -41,6 +47,7 @@
 ; llvm/optimized/SyntheticCountsUtils.cpp.ll
 ; luajit/optimized/lj_parse.ll
 ; luajit/optimized/lj_parse_dyn.ll
+; lvgl/optimized/lv_arc.ll
 ; minetest/optimized/camera.cpp.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
@@ -115,10 +122,12 @@ entry:
   ret i16 %3
 }
 
-; 131 occurrences:
+; 133 occurrences:
 ; abc/optimized/deflate.c.ll
 ; arrow/optimized/feather.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; c3c/optimized/sema_decls.c.ll
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/infblock.c.ll
@@ -273,8 +282,9 @@ entry:
   ret i16 %3
 }
 
-; 31 occurrences:
+; 33 occurrences:
 ; abseil-cpp/optimized/time_zone_info.cc.ll
+; boost/optimized/gregorian.ll
 ; icu/optimized/simpletz.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; libwebp/optimized/lossless.c.ll
@@ -282,6 +292,7 @@ entry:
 ; libzmq/optimized/trie.cpp.ll
 ; linux/optimized/i9xx_wm.ll
 ; llvm/optimized/CGExpr.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
 ; ncnn/optimized/convolution_x86_avx2.cpp.ll
@@ -327,12 +338,13 @@ entry:
   ret i16 %3
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; hermes/optimized/ConvertUTF.cpp.ll
 ; icu/optimized/ucnv_u8.ll
 ; llvm/optimized/ConvertUTF.cpp.ll
 ; luajit/optimized/lj_parse.ll
 ; luajit/optimized/lj_parse_dyn.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
 ; memcached/optimized/memcached-crawler.ll
 ; memcached/optimized/memcached_debug-crawler.ll
 ; redis/optimized/latency.ll

@@ -9,9 +9,9 @@ func000000000000000c:                   # @func000000000000000c
 	sarq	$63, %rax
 	andq	%rdi, %rax
 	retq
-func0000000000000004:                   # @func0000000000000004
-	andl	$62, %esi
+func0000000000000014:                   # @func0000000000000014
+	andl	$7, %esi
 	xorl	%eax, %eax
-	cmpl	$46, %esi
+	cmpl	$3, %esi
 	cmovbq	%rdi, %rax
 	retq

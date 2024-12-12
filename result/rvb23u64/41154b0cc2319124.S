@@ -22,3 +22,9 @@ func0000000000000009:                   # @func0000000000000009
 	srliw	a0, a0, 2
 	addi	a0, a0, -1
 	ret
+func0000000000000029:                   # @func0000000000000029
+	zext.h	a0, a0
+	addi	a0, a0, -256
+	srliw	a0, a0, 3
+	addi	a0, a0, -8
+	ret

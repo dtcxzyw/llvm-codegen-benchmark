@@ -38,7 +38,6 @@
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/intel_sprite.ll
 ; linux/optimized/ipv6_sockglue.ll
-; linux/optimized/mii.ll
 ; linux/optimized/phy_device.ll
 ; linux/optimized/processor_idle.ll
 ; linux/optimized/tg3.ll
@@ -102,6 +101,7 @@
 ; wolfssl/optimized/asn.c.ll
 ; wolfssl/optimized/dh.c.ll
 ; z3/optimized/lar_solver.cpp.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; zlib/optimized/gzread.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i32 %1) #0 {
@@ -126,17 +126,14 @@ entry:
   ret i32 %3
 }
 
-; 10 occurrences:
+; 7 occurrences:
 ; clamav/optimized/unpack.cpp.ll
 ; darktable/optimized/PentaxDecompressor.cpp.ll
 ; jq/optimized/utf16_be.ll
 ; jq/optimized/utf16_le.ll
-; linux/optimized/netdev.ll
-; llvm/optimized/CGExprScalar.cpp.ll
 ; oniguruma/optimized/utf16_be.ll
 ; oniguruma/optimized/utf16_le.ll
 ; openjdk/optimized/generateOopMap.ll
-; postgres/optimized/oracle_compat.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i1 %0, i32 %1) #0 {
 entry:
@@ -165,6 +162,18 @@ entry:
   ret i32 %4
 }
 
+; 2 occurrences:
+; linux/optimized/netdev.ll
+; llvm/optimized/CGExprScalar.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000018(i1 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i32 %1, 28
+  %3 = select i1 %2, i32 -13, i32 -20
+  %4 = select i1 %0, i32 %3, i32 0
+  ret i32 %4
+}
+
 ; 7 occurrences:
 ; graphviz/optimized/pack.c.ll
 ; grpc/optimized/rls.cc.ll
@@ -185,9 +194,9 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ucnv2022.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i1 %0, i32 %1) #0 {
+define i32 @func0000000000000014(i1 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 127
+  %2 = icmp samesign ult i32 %1, 127
   %3 = select i1 %2, i32 -31, i32 -32
   %4 = select i1 %0, i32 %3, i32 -126
   ret i32 %4

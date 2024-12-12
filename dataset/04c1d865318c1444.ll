@@ -15,7 +15,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = zext i32 %3 to i64
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = add i64 %5, %0
   ret i64 %6
 }
@@ -27,8 +27,8 @@ define i64 @func0000000000000040(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = add i64 %4, %1
-  %6 = add i64 %5, %0
+  %5 = add i64 %1, %4
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -41,8 +41,8 @@ define i64 @func0000000000000030(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = zext nneg i32 %3 to i64
-  %5 = add i64 %4, %1
-  %6 = add i64 %5, %0
+  %5 = add i64 %1, %4
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -283,7 +283,7 @@ define i64 @func000000000000004f(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %1
+  %5 = add nuw nsw i64 %1, %4
   %6 = add nuw nsw i64 %5, %0
   ret i64 %6
 }
@@ -295,7 +295,7 @@ define i64 @func0000000000000035(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = zext nneg i32 %3 to i64
-  %5 = add nsw i64 %4, %1
+  %5 = add nsw i64 %1, %4
   %6 = add nsw i64 %5, %0
   ret i64 %6
 }
@@ -307,7 +307,7 @@ define i64 @func000000000000003d(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -7
   %4 = zext nneg i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %1
+  %5 = add nuw nsw i64 %1, %4
   %6 = add nsw i64 %5, %0
   ret i64 %6
 }
@@ -320,7 +320,7 @@ define i64 @func0000000000000020(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = zext i32 %3 to i64
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = add i64 %5, %0
   ret i64 %6
 }
@@ -333,8 +333,8 @@ define i64 @func0000000000000008(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1032
   %4 = zext i32 %3 to i64
-  %5 = add nuw i64 %4, %1
-  %6 = add i64 %5, %0
+  %5 = add nuw i64 %1, %4
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -351,20 +351,29 @@ define i64 @func0000000000000070(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 2
   %4 = zext nneg i32 %3 to i64
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = add i64 %5, %0
   ret i64 %6
 }
 
-; 1 occurrences:
+; 10 occurrences:
 ; clamav/optimized/udf.c.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/3xn4w3qarvbzl2jkwavm0419t.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/4hgzf672qwd8x8ke1407yey6m.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000002c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -38
   %4 = zext i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %1
-  %6 = add i64 %5, %0
+  %5 = add nuw nsw i64 %1, %4
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -375,8 +384,41 @@ define i64 @func0000000000000005(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 40
   %4 = zext i32 %3 to i64
-  %5 = add nsw i64 %4, %1
+  %5 = add nsw i64 %1, %4
   %6 = add nsw i64 %5, %0
+  ret i64 %6
+}
+
+; 9 occurrences:
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/3xn4w3qarvbzl2jkwavm0419t.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/4hgzf672qwd8x8ke1407yey6m.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
+; Function Attrs: nounwind
+define i64 @func000000000000002e(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %2, -268435456
+  %4 = zext i32 %3 to i64
+  %5 = add nuw nsw i64 %1, %4
+  %6 = add nuw i64 %0, %5
+  ret i64 %6
+}
+
+; 2 occurrences:
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
+; Function Attrs: nounwind
+define i64 @func000000000000007f(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw nsw i32 %2, 1
+  %4 = zext nneg i32 %3 to i64
+  %5 = add nuw nsw i64 %1, %4
+  %6 = add nuw nsw i64 %5, %0
   ret i64 %6
 }
 
@@ -389,7 +431,7 @@ define i64 @func000000000000000f(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 459328
   %4 = zext i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %1
+  %5 = add nuw nsw i64 %1, %4
   %6 = add nuw nsw i64 %5, %0
   ret i64 %6
 }
@@ -401,7 +443,7 @@ define i64 @func0000000000000075(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1132
   %4 = zext nneg i32 %3 to i64
-  %5 = add nsw i64 %4, %1
+  %5 = add nsw i64 %1, %4
   %6 = add nsw i64 %5, %0
   ret i64 %6
 }
@@ -413,7 +455,7 @@ define i64 @func000000000000004d(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 422
   %4 = zext i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %1
+  %5 = add nuw nsw i64 %1, %4
   %6 = add nsw i64 %5, %0
   ret i64 %6
 }
@@ -425,7 +467,7 @@ define i64 @func0000000000000071(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 4
   %4 = zext nneg i32 %3 to i64
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = add nsw i64 %5, %0
   ret i64 %6
 }
@@ -437,7 +479,7 @@ define i64 @func000000000000003f(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = zext nneg i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %1
+  %5 = add nuw nsw i64 %1, %4
   %6 = add nuw nsw i64 %5, %0
   ret i64 %6
 }

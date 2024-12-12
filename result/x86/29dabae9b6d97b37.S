@@ -33,7 +33,7 @@ func0000000000000006:                   # @func0000000000000006
 	orl	%esi, %eax
 	orl	%edi, %eax
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000062:                   # @func0000000000000062
 	xorl	%ecx, %ecx
 	cmpl	$144, %edx
 	movl	$32767, %eax                    # imm = 0x7FFF

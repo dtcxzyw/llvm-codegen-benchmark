@@ -1,5 +1,5 @@
 
-%"class.llvm::Use.3006635" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3200070" = type { ptr, ptr, ptr, ptr }
 
 ; 14 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
@@ -17,13 +17,26 @@
 ; protobuf/optimized/text_format.cc.ll
 ; rocksdb/optimized/xxhash.cc.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000001da(ptr %0, i32 %1) #0 {
+define ptr @func00000000000001de(ptr %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 64, %1
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw i8, ptr %0, i64 512
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 512
   %6 = getelementptr nusw i8, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 1 occurrences:
+; boost/optimized/area.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000de(ptr %0, i32 %1) #0 {
+entry:
+  %2 = sub nsw i32 0, %1
+  %3 = zext nneg i32 %2 to i64
+  %4 = sub nsw i64 0, %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 40
+  %6 = getelementptr nusw i32, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -36,7 +49,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
   %5 = getelementptr nusw i8, ptr %0, i64 -32
-  %6 = getelementptr nusw %"class.llvm::Use.3006635", ptr %5, i64 %4
+  %6 = getelementptr nusw %"class.llvm::Use.3200070", ptr %5, i64 %4
   ret ptr %6
 }
 

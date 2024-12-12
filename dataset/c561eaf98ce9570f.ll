@@ -1,11 +1,10 @@
 
-%class.btRotationalLimitMotor2.2706150 = type { float, float, float, float, float, float, float, i8, float, float, i8, float, i8, float, i8, float, i8, float, float, float, float, i32 }
-
-; 42 occurrences:
+; 43 occurrences:
 ; bullet3/optimized/btGeneric6DofSpring2Constraint.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/mesh_graph.cpp.ll
+; openusd/optimized/loopPatchBuilder.cpp.ll
 ; taskflow/optimized/async.cpp.ll
 ; taskflow/optimized/attach_data.cpp.ll
 ; taskflow/optimized/cancel.cpp.ll
@@ -45,13 +44,15 @@
 ; taskflow/optimized/visualization.cpp.ll
 ; taskflow/optimized/while_loop.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 2
-  %4 = select i1 %3, i64 0, i64 %1
-  %5 = getelementptr nusw i8, ptr %0, i64 992
-  %6 = getelementptr [3 x %class.btRotationalLimitMotor2.2706150], ptr %5, i64 0, i64 %4, i32 21
-  ret ptr %6
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 992
+  %5 = mul nuw i64 %1, 88
+  %6 = add nuw i64 %5, 84
+  %.offs = select i1 %3, i64 84, i64 %6
+  %7 = getelementptr nuw i8, ptr %4, i64 %.offs
+  ret ptr %7
 }
 
 attributes #0 = { nounwind }

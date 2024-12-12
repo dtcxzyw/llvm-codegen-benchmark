@@ -14,9 +14,9 @@
 define i1 @func0000000000000004(i64 %0, double %1, i64 %2) #0 {
 entry:
   %3 = uitofp i64 %2 to double
-  %4 = fmul double %3, %1
+  %4 = fmul double %1, %3
   %5 = fptoui double %4 to i64
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 
@@ -27,9 +27,9 @@ entry:
 define i1 @func0000000000000001(i64 %0, double %1, i64 %2) #0 {
 entry:
   %3 = uitofp i64 %2 to double
-  %4 = fmul double %3, %1
+  %4 = fmul double %1, %3
   %5 = fptoui double %4 to i64
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
@@ -40,9 +40,9 @@ entry:
 define i1 @func0000000000000008(i64 %0, double %1, i64 %2) #0 {
 entry:
   %3 = uitofp i64 %2 to double
-  %4 = fmul double %3, %1
+  %4 = fmul double %1, %3
   %5 = fptoui double %4 to i64
-  %6 = icmp ult i64 %5, %0
+  %6 = icmp ugt i64 %0, %5
   ret i1 %6
 }
 
@@ -52,9 +52,9 @@ entry:
 define i1 @func0000000000000005(i64 %0, double %1, i64 %2) #0 {
 entry:
   %3 = uitofp i64 %2 to double
-  %4 = fmul double %3, %1
+  %4 = fmul double %1, %3
   %5 = fptoui double %4 to i64
-  %6 = icmp uge i64 %5, %0
+  %6 = icmp ule i64 %0, %5
   ret i1 %6
 }
 

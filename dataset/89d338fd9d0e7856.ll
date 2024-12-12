@@ -6,7 +6,6 @@
 ; darktable/optimized/histogram.c.ll
 ; gromacs/optimized/domdec.cpp.ll
 ; gromacs/optimized/gmx_nmtraj.cpp.ll
-; gromacs/optimized/slasdt.cpp.ll
 ; meshlab/optimized/decorate_base.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
@@ -25,6 +24,7 @@
 ; ncnn/optimized/roipooling.cpp.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/KAZEFeatures.cpp.ll
+; opencv/optimized/OpenEXRimages_HDR_Retina_toneMapping.cpp.ll
 ; opencv/optimized/bagofwords_classification.cpp.ll
 ; opencv/optimized/erfilter.cpp.ll
 ; opencv/optimized/evaluation.cpp.ll

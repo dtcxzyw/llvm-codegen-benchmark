@@ -14,9 +14,8 @@ entry:
   ret double %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
-; faiss/optimized/PolysemousTraining.cpp.ll
 ; Function Attrs: nounwind
 define double @func0000000000000004(double %0, i64 %1, i64 %2) #0 {
 entry:

@@ -3,7 +3,7 @@ func0000000000000007:                   # @func0000000000000007
 	vnsrl.wi	v8, v8, 0
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vnsrl.wi	v8, v8, 0
-	vadd.vv	v10, v8, v9
+	vadd.vv	v10, v9, v8
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf8	v8, v10
 	ret

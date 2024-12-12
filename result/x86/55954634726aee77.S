@@ -51,7 +51,7 @@ func000000000000000c:                   # @func000000000000000c
 	.quad	0x3fe0000000000000              # double 0.5
 func0000000000000008:                   # @func0000000000000008
 	vmulsd	.LCPI7_0(%rip), %xmm1, %xmm1
-	vcmpeqsd	%xmm0, %xmm1, %k0
+	vcmpeqsd	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 .LCPI8_0:
@@ -65,6 +65,6 @@ func000000000000000b:                   # @func000000000000000b
 	.quad	0x3fe0000000000000              # double 0.5
 func0000000000000007:                   # @func0000000000000007
 	vmulsd	.LCPI9_0(%rip), %xmm1, %xmm1
-	vcmpneqsd	%xmm0, %xmm1, %k0
+	vcmpneqsd	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq

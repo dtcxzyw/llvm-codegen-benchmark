@@ -8,7 +8,7 @@
 	.quad	4                               # 0x4
 .LCPI0_4:
 	.quad	2                               # 0x2
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000014a:                   # @func000000000000014a
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vmovdqa32	%xmm1, %xmm2 {%k1}

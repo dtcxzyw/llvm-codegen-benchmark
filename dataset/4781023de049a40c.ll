@@ -12,12 +12,12 @@
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; opencv/optimized/canny.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000548(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000a88(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = add nsw i64 %3, -1
   %5 = shl nsw i64 %1, 6
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   %7 = icmp ugt i64 %6, %4
   ret i1 %7
 }

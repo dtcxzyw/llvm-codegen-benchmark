@@ -11,20 +11,7 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
-; libquic/optimized/time_support.c.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; Function Attrs: nounwind
-define i64 @func000000000000001d(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nsw i64 %1, %2
-  %4 = add nuw nsw i64 %3, 68569
-  %5 = sub nsw i64 %4, %0
-  ret i64 %5
-}
-
-; 361 occurrences:
+; 360 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/fixed_array_test.cc.ll
@@ -385,7 +372,6 @@ entry:
 ; yosys/optimized/fstapi.ll
 ; yosys/optimized/lz4.ll
 ; yyjson/optimized/yyjson.c.ll
-; z3/optimized/watch_list.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -429,9 +415,8 @@ entry:
   ret i64 %5
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; eastl/optimized/TestDeque.cpp.ll
-; glog/optimized/signalhandler.cc.ll
 ; hyperscan/optimized/program_runtime.c.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; libjpeg-turbo/optimized/jidctint.c.ll
@@ -446,18 +431,31 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
+; 7 occurrences:
 ; abc/optimized/deflate.c.ll
 ; cmake/optimized/deflate.c.ll
+; glog/optimized/signalhandler.cc.ll
 ; gromacs/optimized/deflate.c.ll
 ; libquic/optimized/deflate.c.ll
+; php/optimized/dow.ll
 ; zlib/optimized/deflate.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
-  %4 = add nuw nsw i64 %3, 258
+  %4 = add nuw nsw i64 %3, 7
   %5 = sub nuw nsw i64 %4, %0
+  ret i64 %5
+}
+
+; 1 occurrences:
+; libquic/optimized/time_support.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001d(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %1, %2
+  %4 = add nuw nsw i64 %3, 68569
+  %5 = sub nsw i64 %4, %0
   ret i64 %5
 }
 

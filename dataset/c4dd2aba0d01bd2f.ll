@@ -30,13 +30,11 @@ entry:
   ret i32 %4
 }
 
-; 32 occurrences:
+; 30 occurrences:
 ; flac/optimized/bitreader.c.ll
 ; linux/optimized/evdev.ll
-; linux/optimized/hashtab.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/inet_hashtables.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_fb.ll
 ; linux/optimized/intel_guc_submission.ll

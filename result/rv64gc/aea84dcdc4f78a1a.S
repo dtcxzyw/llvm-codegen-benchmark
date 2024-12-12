@@ -1,8 +1,18 @@
-func0000000000000001:                   # @func0000000000000001
+func000000000000002a:                   # @func000000000000002a
 	andi	a1, a1, 1
-	negw	a0, a0
+	add	a0, a0, a1
 	slli	a0, a0, 48
-	srli	a0, a0, 48
+	srai	a0, a0, 48
+	slti	a0, a0, 128
+	xori	a0, a0, 1
+	ret
+func0000000000000001:                   # @func0000000000000001
+	lui	a2, 16
+	slli	a1, a1, 63
+	addiw	a2, a2, -1
+	srai	a1, a1, 63
+	and	a0, a0, a2
+	and	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

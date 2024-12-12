@@ -11,7 +11,7 @@ entry:
   ret i32 %2
 }
 
-; 15 occurrences:
+; 17 occurrences:
 ; abc/optimized/dsc.c.ll
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/lpkMulti.c.ll
@@ -27,6 +27,8 @@ entry:
 ; openjdk/optimized/jdphuff.ll
 ; postgres/optimized/hashutil.ll
 ; wireshark/optimized/packet-ansi_801.c.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0) #0 {
 entry:
@@ -35,7 +37,7 @@ entry:
   ret i32 %2
 }
 
-; 29 occurrences:
+; 28 occurrences:
 ; abc/optimized/dsc.c.ll
 ; abseil-cpp/optimized/spinlock_wait.cc.ll
 ; freetype/optimized/ftbase.c.ll
@@ -63,7 +65,6 @@ entry:
 ; stb/optimized/stb_vorbis.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wireshark/optimized/packet-ppp.c.ll
-; wireshark/optimized/wimax_utils.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0) #0 {
@@ -73,7 +74,7 @@ entry:
   ret i32 %2
 }
 
-; 20 occurrences:
+; 22 occurrences:
 ; abc/optimized/abcCascade.c.ll
 ; abc/optimized/abcIfMux.c.ll
 ; abc/optimized/kitCloud.c.ll
@@ -94,6 +95,8 @@ entry:
 ; stb/optimized/stb_sprintf.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wireshark/optimized/tvbuff_lz77huff.c.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0) #0 {
 entry:

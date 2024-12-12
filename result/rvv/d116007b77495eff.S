@@ -14,7 +14,7 @@ func0000000000000044:                   # @func0000000000000044
 	vmflt.vv	v0, v16, v8
 	ret
 .LCPI2_0:
-	.quad	0x3cb0000000000000              # double 2.2204460492503131E-16
+	.quad	0x3eb0c6f7a0b5ed8d              # double 9.9999999999999995E-7
 func0000000000000045:                   # @func0000000000000045
 	lui	a0, %hi(.LCPI2_0)
 	fld	fa5, %lo(.LCPI2_0)(a0)
@@ -94,5 +94,5 @@ func00000000000000a8:                   # @func00000000000000a8
 	vmfle.vf	v0, v16, fa5
 	vmv.v.i	v24, 0
 	vmerge.vvm	v16, v24, v16, v0
-	vmfeq.vv	v0, v16, v8
+	vmfeq.vv	v0, v8, v16
 	ret

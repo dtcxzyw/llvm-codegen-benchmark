@@ -5,7 +5,14 @@ func0000000000000023:                   # @func0000000000000023
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, 96
 	ret
-func0000000000000013:                   # @func0000000000000013
+func0000000000000063:                   # @func0000000000000063
+	sext.w	a0, a0
+	sltiu	a0, a0, 5
+	li	a1, -32
+	czero.eqz	a0, a1, a0
+	addi	a0, a0, 96
+	ret
+func0000000000000053:                   # @func0000000000000053
 	srliw	a0, a0, 14
 	lui	a1, 1048572
 	addiw	a1, a1, 784
@@ -42,7 +49,14 @@ func0000000000000005:                   # @func0000000000000005
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, 16
 	ret
-func0000000000000010:                   # @func0000000000000010
+func0000000000000013:                   # @func0000000000000013
+	sext.w	a0, a0
+	sltiu	a0, a0, 2
+	li	a1, -64
+	czero.nez	a0, a1, a0
+	addi	a0, a0, 128
+	ret
+func0000000000000050:                   # @func0000000000000050
 	sext.w	a0, a0
 	sltiu	a0, a0, 16
 	lui	a1, 1040384

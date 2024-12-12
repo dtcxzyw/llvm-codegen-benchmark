@@ -15,7 +15,7 @@ func000000000000001e:                   # @func000000000000001e
 func0000000000000015:                   # @func0000000000000015
 	vpmovqd	%ymm0, %xmm0
 	vpternlogq	$15, %xmm0, %xmm0, %xmm0 # xmm0 = ~xmm0
-	vpaddd	%xmm1, %xmm0, %xmm0
+	vpaddd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
 func000000000000001f:                   # @func000000000000001f

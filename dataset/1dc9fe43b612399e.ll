@@ -1,9 +1,8 @@
 
-; 45 occurrences:
+; 44 occurrences:
 ; abc/optimized/abcXsim.c.ll
 ; cmake/optimized/mprintf.c.ll
 ; curl/optimized/libcurl_la-mprintf.ll
-; hyperscan/optimized/fdr_confirm_compile.cpp.ll
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; linux/optimized/addrconf.ll
 ; linux/optimized/build_utility.ll
@@ -74,27 +73,12 @@ entry:
   ret i32 %4
 }
 
-; 18 occurrences:
-; abc/optimized/abcRec3.c.ll
-; abc/optimized/abcRenode.c.ll
-; abc/optimized/ac_wrapper.cpp.ll
-; abc/optimized/cnfMap.c.ll
+; 3 occurrences:
 ; abc/optimized/extraUtilMaj.c.ll
-; abc/optimized/giaIf.c.ll
-; abc/optimized/giaRex.c.ll
-; abc/optimized/ifMap.c.ll
-; abc/optimized/ifTruth.c.ll
-; c3c/optimized/llvm_codegen_debug_info.c.ll
-; linux/optimized/intel_psr.ll
-; linux/optimized/kfifo.ll
-; llvm/optimized/OpenMPKinds.cpp.ll
-; lz4/optimized/lz4.c.ll
 ; openjdk/optimized/abstractDisassembler.ll
-; openusd/optimized/lz4.cpp.ll
 ; wireshark/optimized/packet-nvme.c.ll
-; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000014(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294901760
   %3 = icmp eq i64 %2, 0
@@ -117,6 +101,28 @@ entry:
   ret i32 %4
 }
 
+; 12 occurrences:
+; abc/optimized/abcRec3.c.ll
+; abc/optimized/abcRenode.c.ll
+; abc/optimized/ac_wrapper.cpp.ll
+; abc/optimized/giaIf.c.ll
+; abc/optimized/giaRex.c.ll
+; abc/optimized/ifMap.c.ll
+; abc/optimized/ifTruth.c.ll
+; linux/optimized/intel_psr.ll
+; llvm/optimized/OpenMPKinds.cpp.ll
+; lz4/optimized/lz4.c.ll
+; openusd/optimized/lz4.cpp.ll
+; yosys/optimized/lz4.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = icmp ult i32 %2, 117440512
+  %4 = select i1 %3, i32 1, i32 %0
+  ret i32 %4
+}
+
 ; 4 occurrences:
 ; linux/optimized/cppc_acpi.ll
 ; linux/optimized/timeconv.ll
@@ -132,9 +138,20 @@ entry:
 }
 
 ; 1 occurrences:
+; postgres/optimized/oracle_compat.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000018(i32 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 4294901760
+  %.not = icmp eq i64 %2, 0
+  %3 = select i1 %.not, i32 %0, i32 4
+  ret i32 %3
+}
+
+; 1 occurrences:
 ; opencv/optimized/datastructs.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000002a(i32 %0, i64 %1) #0 {
+define i32 @func000000000000004a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = icmp sgt i32 %2, 0

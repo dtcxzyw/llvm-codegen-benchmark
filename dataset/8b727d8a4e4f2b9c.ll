@@ -1,5 +1,5 @@
 
-; 95 occurrences:
+; 100 occurrences:
 ; abc/optimized/abcRr.c.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -9,8 +9,10 @@
 ; hdf5/optimized/H5Opline.c.ll
 ; hermes/optimized/RegExp.cpp.ll
 ; linux/optimized/mempolicy.ll
+; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/X86ShuffleDecode.cpp.ll
 ; luau/optimized/lnumprint.cpp.ll
+; minetest/optimized/texturesource.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -85,6 +87,9 @@
 ; opencv/optimized/lapack.cpp.ll
 ; openssl/optimized/libcrypto-lib-e_aes.ll
 ; openssl/optimized/libcrypto-shlib-e_aes.ll
+; openusd/optimized/evalUtils.cpp.ll
+; openusd/optimized/rprim.cpp.ll
+; openusd/optimized/unitTestNullRenderDelegate.cpp.ll
 ; php/optimized/dtoa.ll
 ; postgres/optimized/array_userfuncs.ll
 ; postgres/optimized/arrayfuncs.ll

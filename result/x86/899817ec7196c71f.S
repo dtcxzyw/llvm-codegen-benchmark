@@ -9,7 +9,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 .LCPI1_0:
 	.long	0x3f800000                      # float 1
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	testl	%edi, %edi
 	je	.LBB1_1
 	vcvtsi2ss	%edi, %xmm1, %xmm1

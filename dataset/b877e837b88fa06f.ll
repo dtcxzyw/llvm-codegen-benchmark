@@ -30,9 +30,9 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000009(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000029(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %0, %1
+  %2 = icmp samesign ult i32 %0, %1
   %3 = select i1 %2, i32 %0, i32 0
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
@@ -57,7 +57,10 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
+; 8 occurrences:
+; box2d/optimized/b2_collide_circle.cpp.ll
+; box2d/optimized/b2_collide_edge.cpp.ll
+; box2d/optimized/b2_collide_polygon.cpp.ll
 ; linux/optimized/svc_xprt.ll
 ; opencv/optimized/convhull.cpp.ll
 ; openusd/optimized/fvarLevel.cpp.ll

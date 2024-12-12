@@ -1,5 +1,5 @@
 
-; 198 occurrences:
+; 200 occurrences:
 ; arrow/optimized/row_encoder.cc.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; clamav/optimized/arcread.cpp.ll
@@ -21,7 +21,6 @@
 ; icu/optimized/serv.ll
 ; linux/optimized/fork.ll
 ; linux/optimized/hdmi.ll
-; linux/optimized/irq.ll
 ; linux/optimized/libata-scsi.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/scsi_lib.ll
@@ -136,6 +135,7 @@
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; spike/optimized/debug_module.ll
+; spike/optimized/triggers.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; vcpkg/optimized/binarycaching.cpp.ll
 ; verilator/optimized/V3Fork.cpp.ll
@@ -198,6 +198,8 @@
 ; z3/optimized/bv_bounds_simplifier.cpp.ll
 ; z3/optimized/bv_bounds_tactic.cpp.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, i8 %1) #0 {
 entry:

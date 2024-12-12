@@ -1,5 +1,8 @@
 
-; 12 occurrences:
+; 15 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/static_string.ll
 ; coreutils-rs/optimized/1efo3swtygw8gpnj.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
@@ -21,8 +24,18 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
-; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
+; 1 occurrences:
+; wireshark/optimized/packet-acn.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(i8 %0, i8 %1) #0 {
+entry:
+  %2 = sub i8 %0, %1
+  %3 = zext i8 %2 to i64
+  %4 = add nuw nsw i64 %3, 1
+  ret i64 %4
+}
+
+; 3 occurrences:
 ; nix/optimized/context.ll
 ; nix/optimized/outputs-spec.ll
 ; nix/optimized/path.ll
@@ -32,17 +45,6 @@ entry:
   %2 = sub nuw i8 %0, %1
   %3 = zext i8 %2 to i64
   %4 = add nsw i64 %3, -1
-  ret i64 %4
-}
-
-; 1 occurrences:
-; wireshark/optimized/packet-acn.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000003(i8 %0, i8 %1) #0 {
-entry:
-  %2 = sub i8 %0, %1
-  %3 = zext i8 %2 to i64
-  %4 = add nuw nsw i64 %3, 1
   ret i64 %4
 }
 

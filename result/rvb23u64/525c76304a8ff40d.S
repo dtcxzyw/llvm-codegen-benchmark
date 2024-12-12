@@ -1,5 +1,6 @@
 func0000000000000000:                   # @func0000000000000000
-	sh2add	a0, a1, a0
+	slli	a1, a1, 20
+	add	a0, a0, a1
 	zext.w	a0, a0
 	ret
 func000000000000000f:                   # @func000000000000000f
@@ -62,6 +63,11 @@ func0000000000000006:                   # @func0000000000000006
 	add	a0, a0, a1
 	zext.w	a0, a0
 	ret
+func000000000000001a:                   # @func000000000000001a
+	slli	a1, a1, 21
+	add	a0, a0, a1
+	zext.w	a0, a0
+	ret
 func000000000000001b:                   # @func000000000000001b
 	sh1add	a0, a1, a0
 	sext.w	a0, a0
@@ -69,9 +75,4 @@ func000000000000001b:                   # @func000000000000001b
 func0000000000000011:                   # @func0000000000000011
 	sh1add	a0, a1, a0
 	sext.w	a0, a0
-	ret
-func000000000000001a:                   # @func000000000000001a
-	slli	a1, a1, 15
-	add	a0, a0, a1
-	zext.w	a0, a0
 	ret

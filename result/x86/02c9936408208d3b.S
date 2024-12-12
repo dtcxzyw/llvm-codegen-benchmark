@@ -7,12 +7,12 @@ func0000000000000002:                   # @func0000000000000002
 	shll	$13, %eax
 	retq
 func0000000000000018:                   # @func0000000000000018
-	notb	%dil
-	movzbl	%dil, %ecx
-	andl	$1, %ecx
+	xorl	%ecx, %ecx
+	testl	%esi, %esi
+	sete	%cl
 	shll	$7, %ecx
 	xorl	%eax, %eax
-	testl	%esi, %esi
+	testb	$1, %dil
 	cmoveq	%rcx, %rax
 	retq
 func0000000000000008:                   # @func0000000000000008
@@ -39,4 +39,13 @@ func0000000000000014:                   # @func0000000000000014
 	cmovneq	%rcx, %rax
 	testl	%esi, %esi
 	cmovnsq	%rcx, %rax
+	retq
+func0000000000000028:                   # @func0000000000000028
+	xorl	%eax, %eax
+	cmpl	$3, %esi
+	setb	%al
+	leaq	5(,%rax,8), %rcx
+	testb	$1, %dil
+	movl	$13, %eax
+	cmoveq	%rcx, %rax
 	retq

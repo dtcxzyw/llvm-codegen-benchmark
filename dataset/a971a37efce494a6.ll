@@ -19,12 +19,12 @@
 ; opencv/optimized/qrcode_reader.cpp.ll
 ; openmpi/optimized/ad_aggregate_new.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c4(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000384(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 3
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = icmp ugt ptr %5, %0
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
@@ -35,12 +35,12 @@ entry:
 ; openjdk/optimized/postaloc.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e4(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000001e4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 4
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = icmp ugt ptr %5, %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
@@ -62,16 +62,16 @@ entry:
 ; minetest/optimized/noise.cpp.ll
 ; openjdk/optimized/cmsgamma.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000184(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 1
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = icmp ugt ptr %5, %0
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
-; 14 occurrences:
+; 16 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
@@ -85,18 +85,20 @@ entry:
 ; llvm/optimized/ValueMapper.cpp.ll
 ; llvm/optimized/Verifier.cpp.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
+; php/optimized/zend_execute.ll
+; protobuf/optimized/arena.cc.ll
 ; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000181(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 1
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = icmp eq ptr %5, %0
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
-; 79 occurrences:
+; 88 occurrences:
 ; abseil-cpp/optimized/graphcycles.cc.ll
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
@@ -135,16 +137,12 @@ entry:
 ; nix/optimized/flake.ll
 ; nix/optimized/get-drvs.ll
 ; nix/optimized/installables.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/value-to-json.ll
 ; nix/optimized/value-to-xml.ll
 ; openusd/optimized/dataSourceLegacyPrim.cpp.ll
 ; openusd/optimized/testHdExtComputationUtils.cpp.ll
 ; openusd/optimized/testUsdImagingDelegate.cpp.ll
-; php/optimized/zend_execute.ll
 ; php/optimized/zend_gc.ll
-; protobuf/optimized/arena.cc.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; z3/optimized/array_rewriter.cpp.ll
 ; z3/optimized/basic_cmds.cpp.ll
@@ -176,13 +174,26 @@ entry:
 ; z3/optimized/spacer_expand_bnd_generalizer.cpp.ll
 ; z3/optimized/spacer_legacy_mev.cpp.ll
 ; z3/optimized/spacer_quant_generalizer.cpp.ll
+; zed-rs/optimized/04fhfmlktnjtedpduz35189qo.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/20kfz4gqlv1t1gmkf0vxm6kb9.ll
+; zed-rs/optimized/3gxjnopqjcvfkrlhukk2wsrdt.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/b8qhlvoy2nskqwvkt99c6cu9u.ll
+; zed-rs/optimized/bwvht24uf41c89mbhdihda1iu.ll
+; zed-rs/optimized/cu6jannw5ajqip9tl6sqjzagm.ll
+; zed-rs/optimized/dyu8ahcv7l11k0z44ye6uqxem.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000001e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 1
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = icmp eq ptr %5, %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
@@ -197,12 +208,12 @@ entry:
 ; opencv/optimized/seam_finders.cpp.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001e1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000003e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 2
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = icmp eq ptr %5, %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
@@ -210,12 +221,12 @@ entry:
 ; abc/optimized/abcExact.c.ll
 ; php/optimized/tokenizer.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001e4(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000003e4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 4
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = icmp ugt ptr %5, %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
@@ -225,38 +236,37 @@ entry:
 ; nix/optimized/get-drvs.ll
 ; z3/optimized/sat_simplifier.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ec(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000001ec(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 3
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = icmp ne ptr %5, %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = icmp ne ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; llvm/optimized/InstCombinePHI.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001ec(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000003ec(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 3
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = icmp ne ptr %5, %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = icmp ne ptr %0, %5
   ret i1 %6
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; annoy/optimized/annoymodule.ll
-; linux/optimized/input-mt.ll
 ; protobuf/optimized/generated_message_tctable_gen.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000381(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = shl nuw nsw i64 %3, 2
+  %4 = shl nuw nsw i64 %3, 5
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = icmp eq ptr %5, %0
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 

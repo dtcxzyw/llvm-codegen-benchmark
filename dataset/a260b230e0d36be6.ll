@@ -10,7 +10,24 @@ entry:
   ret i8 %1
 }
 
-; 23 occurrences:
+; 8 occurrences:
+; cmake/optimized/archive_read_support_filter_uu.c.ll
+; folly/optimized/IPAddressV4.cpp.ll
+; folly/optimized/IPAddressV6.cpp.ll
+; grpc/optimized/b64.cc.ll
+; grpc/optimized/hpack_parser.cc.ll
+; linux/optimized/xhci-mem.ll
+; velox/optimized/Base64.cpp.ll
+; wireshark/optimized/file-elf.c.ll
+; Function Attrs: nounwind
+define i8 @func000000000000000c(i32 %0) #0 {
+entry:
+  %.tr = trunc i32 %0 to i8
+  %1 = shl i8 %.tr, 3
+  ret i8 %1
+}
+
+; 21 occurrences:
 ; libquic/optimized/tls_cbc.c.ll
 ; lief/optimized/md5.c.ll
 ; lief/optimized/ripemd160.c.ll
@@ -23,8 +40,6 @@ entry:
 ; minetest/optimized/sha1.cpp.ll
 ; opencv/optimized/function.pb.cc.ll
 ; opencv/optimized/graph.pb.cc.ll
-; openssl/optimized/libcrypto-lib-cms_asn1.ll
-; openssl/optimized/libcrypto-shlib-cms_asn1.ll
 ; php/optimized/md5.ll
 ; sentencepiece/optimized/coded_stream.cc.ll
 ; sentencepiece/optimized/extension_set.cc.ll
@@ -42,28 +57,9 @@ entry:
   ret i8 %1
 }
 
-; 9 occurrences:
-; cmake/optimized/archive_read_support_filter_uu.c.ll
-; folly/optimized/IPAddressV4.cpp.ll
-; folly/optimized/IPAddressV6.cpp.ll
-; grpc/optimized/b64.cc.ll
-; grpc/optimized/hpack_parser.cc.ll
-; linux/optimized/tbfadt.ll
-; linux/optimized/xhci-mem.ll
-; velox/optimized/Base64.cpp.ll
-; wireshark/optimized/file-elf.c.ll
-; Function Attrs: nounwind
-define i8 @func000000000000000c(i32 %0) #0 {
-entry:
-  %.tr = trunc i32 %0 to i8
-  %1 = shl i8 %.tr, 3
-  ret i8 %1
-}
-
-; 4 occurrences:
+; 3 occurrences:
 ; abc/optimized/acbMfs.c.ll
 ; abc/optimized/mpmPre.c.ll
-; abc/optimized/sbdCnf.c.ll
 ; abc/optimized/sfmCnf.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000008(i32 %0) #0 {

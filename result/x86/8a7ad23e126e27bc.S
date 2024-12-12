@@ -1,21 +1,21 @@
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	sarl	$16, %esi
 	subl	%esi, %edi
 	cmpl	$3, %edi
 	setb	%al
 	retq
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	sarl	$16, %esi
-	cmpl	%edi, %esi
-	setle	%al
+	cmpl	%esi, %edi
+	setge	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	sarl	$4, %esi
 	subl	%esi, %edi
 	cmpl	$33, %edi
 	setb	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	sarl	%esi
 	subl	%esi, %edi
 	cmpl	$20, %edi
@@ -27,25 +27,25 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	$100, %esi
 	setae	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	sarl	$19, %esi
-	cmpl	%edi, %esi
-	setl	%al
+	cmpl	%esi, %edi
+	setg	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
-	sarl	$16, %esi
+func0000000000000021:                   # @func0000000000000021
+	sarl	$9, %esi
 	subl	%esi, %edi
 	cmpl	$1, %edi
 	sete	%al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	sarl	$16, %esi
 	subl	%esi, %edi
 	cmpl	$1, %edi
 	setne	%al
 	retq
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	sarl	$24, %esi
-	cmpl	%edi, %esi
-	setg	%al
+	cmpl	%esi, %edi
+	setl	%al
 	retq

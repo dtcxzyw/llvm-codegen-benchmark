@@ -1,9 +1,8 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; darktable/optimized/introspection_hazeremoval.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; darktable/optimized/introspection_highpass.c.ll
-; eastl/optimized/EAFixedPoint.cpp.ll
 ; linux/optimized/intel_pstate.ll
 ; mitsuba3/optimized/grid.cpp.ll
 ; mitsuba3/optimized/sdfgrid.cpp.ll

@@ -1,6 +1,9 @@
 
-; 6 occurrences:
+; 9 occurrences:
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
+; coreutils-rs/optimized/yiho3rob7ld9k5q.ll
+; mini-lsm-rs/optimized/3l74wehtlfae5jz1.ll
+; mini-lsm-rs/optimized/a97dpb4syxv4ifo.ll
 ; ockam-rs/optimized/1411u8drt798uxi8.ll
 ; ockam-rs/optimized/y59h8jnu9k73im6.ll
 ; tokio-rs/optimized/2zetnb9vrfbe3smf.ll

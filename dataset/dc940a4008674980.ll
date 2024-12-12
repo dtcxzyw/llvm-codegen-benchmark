@@ -6,7 +6,7 @@
 ; tev/optimized/Image.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i63
   %3 = icmp ugt i63 %2, 384307168202282325
@@ -18,7 +18,7 @@ entry:
 ; 1 occurrences:
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000046(i1 %0, i64 %1) #0 {
 entry:
   %.mask = and i64 %1, 1152921504606846976
   %2 = icmp ne i64 %.mask, 0
@@ -198,7 +198,7 @@ entry:
 ; 1 occurrences:
 ; lz4/optimized/lz4hc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
   %not. = xor i1 %0, true
@@ -209,7 +209,7 @@ entry:
 ; 1 occurrences:
 ; graphviz/optimized/closest.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000048(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %1, 1152921504606846975
   %not. = xor i1 %0, true
@@ -234,7 +234,7 @@ entry:
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
   %not. = xor i1 %0, true

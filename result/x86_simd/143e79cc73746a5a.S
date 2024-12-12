@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	128                             # 0x80
-func0000000000000013:                   # @func0000000000000013
+func0000000000000053:                   # @func0000000000000053
 	vpcmpnltud	.LCPI0_0(%rip){1to8}, %ymm2, %k1
 	vpsllvd	%ymm1, %ymm0, %ymm0 {%k1}
 	retq
@@ -12,7 +12,7 @@ func0000000000000018:                   # @func0000000000000018
 	retq
 .LCPI2_0:
 	.long	7                               # 0x7
-func0000000000000010:                   # @func0000000000000010
+func0000000000000050:                   # @func0000000000000050
 	vpcmpnltud	.LCPI2_0(%rip){1to8}, %ymm2, %k1
 	vpsllvd	%ymm1, %ymm0, %ymm0 {%k1}
 	retq

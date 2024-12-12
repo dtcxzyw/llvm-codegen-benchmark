@@ -1,5 +1,5 @@
 
-; 103 occurrences:
+; 102 occurrences:
 ; abc/optimized/giaLf.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/mpmMan.c.ll
@@ -27,7 +27,6 @@
 ; lightgbm/optimized/dataset.cpp.ll
 ; lightgbm/optimized/dataset_loader.cpp.ll
 ; lightgbm/optimized/gbdt.cpp.ll
-; linux/optimized/bitmap-str.ll
 ; linux/optimized/ds.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/percpu.ll
@@ -112,7 +111,8 @@ entry:
   ret i64 %3
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
 ; gromacs/optimized/minimize.cpp.ll
 ; ipopt/optimized/IpCompoundMatrix.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll

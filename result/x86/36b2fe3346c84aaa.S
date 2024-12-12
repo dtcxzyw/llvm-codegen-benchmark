@@ -8,7 +8,7 @@ func0000000000000019:                   # @func0000000000000019
 	cmovll	%edi, %esi
 	leal	(%rsi,%rsi), %eax
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000062:                   # @func0000000000000062
 	movl	%esi, %eax
 	cmpl	%edx, %edi
 	cmoval	%edi, %eax

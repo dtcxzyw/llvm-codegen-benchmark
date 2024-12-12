@@ -1,7 +1,7 @@
 
 ; 2 occurrences:
 ; rust-analyzer-rs/optimized/5fgtm3ees9sdsrsg.ll
-; rust-analyzer-rs/optimized/8q1esjraj83sh5t.ll
+; zed-rs/optimized/58eqxolkuiavjghtj45u3c5th.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
@@ -11,12 +11,21 @@ entry:
   ret i64 %4
 }
 
-; 10 occurrences:
+; 1 occurrences:
+; rust-analyzer-rs/optimized/8q1esjraj83sh5t.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000018(i64 %0, i64 %1) #0 {
+entry:
+  %2 = freeze i64 %1
+  %3 = icmp samesign ugt i64 %2, 576460752303423488
+  %4 = select i1 %3, i64 %0, i64 %2
+  ret i64 %4
+}
+
+; 8 occurrences:
 ; git/optimized/blame.ll
-; hermes/optimized/Host.cpp.ll
 ; linux/optimized/blktrace.ll
 ; linux/optimized/buffered_write.ll
-; linux/optimized/cpuid.ll
 ; linux/optimized/skbuff.ll
 ; linux/optimized/usblp.ll
 ; llvm/optimized/SampleProfile.cpp.ll

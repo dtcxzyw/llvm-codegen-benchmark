@@ -1,5 +1,5 @@
 
-; 78 occurrences:
+; 77 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; clamav/optimized/scanners.c.ll
@@ -35,6 +35,7 @@
 ; linux/optimized/vmstat.ll
 ; llvm/optimized/GCOV.cpp.ll
 ; luau/optimized/lgc.cpp.ll
+; lvgl/optimized/lv_mem_core_builtin.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; openjdk/optimized/ProcessHandleImpl_linux.ll
@@ -46,8 +47,6 @@
 ; openjdk/optimized/synchronizer.ll
 ; openjdk/optimized/whitebox.ll
 ; openjdk/optimized/zRelocationSetSelector.ll
-; openssl/optimized/libcrypto-lib-lh_stats.ll
-; openssl/optimized/libcrypto-shlib-lh_stats.ll
 ; postgres/optimized/pg_amcheck.ll
 ; postgres/optimized/pg_rewind.ll
 ; postgres/optimized/pg_verifybackup.ll
@@ -86,7 +85,18 @@ entry:
   ret i64 %3
 }
 
-; 26 occurrences:
+; 2 occurrences:
+; bdwgc/optimized/gc.c.ll
+; linux/optimized/md.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
+entry:
+  %2 = mul nuw i64 %1, 100
+  %3 = udiv i64 %2, %0
+  ret i64 %3
+}
+
+; 25 occurrences:
 ; casadi/optimized/function_internal.cpp.ll
 ; casadi/optimized/mx.cpp.ll
 ; casadi/optimized/mx_function.cpp.ll
@@ -97,7 +107,6 @@ entry:
 ; linux/optimized/drm_vblank.ll
 ; linux/optimized/hda_controller.ll
 ; linux/optimized/hpet.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_psr.ll
 ; linux/optimized/tcp_cubic.ll
 ; linux/optimized/tcp_output.ll
@@ -106,28 +115,17 @@ entry:
 ; meshlab/optimized/shell.cpp.ll
 ; openjdk/optimized/codeHeapState.ll
 ; openjdk/optimized/jfrCompilerQueueUtilization.ll
-; openssl/optimized/libcrypto-lib-lh_stats.ll
-; openssl/optimized/libcrypto-shlib-lh_stats.ll
 ; postgres/optimized/pg_basebackup.ll
 ; postgres/optimized/pgbench.ll
 ; slurm/optimized/libfile_bcast_la-file_bcast.ll
 ; wireshark/optimized/rtp_audio_stream.cpp.ll
 ; yosys/optimized/freduce.ll
+; zed-rs/optimized/0431hruu0kb4k1yxxvcap38im.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
-  %2 = mul nuw nsw i64 %1, 100
-  %3 = udiv i64 %2, %0
-  ret i64 %3
-}
-
-; 2 occurrences:
-; bdwgc/optimized/gc.c.ll
-; linux/optimized/md.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
-entry:
-  %2 = mul nuw i64 %1, 100
+  %2 = mul nuw nsw i64 %1, 1000000
   %3 = udiv i64 %2, %0
   ret i64 %3
 }

@@ -1,8 +1,9 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; hwloc/optimized/hwloc-distrib.ll
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
 ; llvm/optimized/MachineScheduler.cpp.ll
+; lvgl/optimized/lv_refr.ll
 ; minetest/optimized/profiler.cpp.ll
 ; openusd/optimized/aom_scale.c.ll
 ; Function Attrs: nounwind

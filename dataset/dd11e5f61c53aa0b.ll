@@ -1,5 +1,5 @@
 
-; 42 occurrences:
+; 41 occurrences:
 ; abc/optimized/giaResub6.c.ll
 ; assimp/optimized/unzip.c.ll
 ; c3c/optimized/llvm_codegen_expr.c.ll
@@ -38,7 +38,6 @@
 ; ruby/optimized/ripper.ll
 ; slurm/optimized/cgroup_v1.ll
 ; slurm/optimized/fed_mgr.ll
-; slurm/optimized/task_cgroup.ll
 ; wireshark/optimized/file_wrappers.c.ll
 ; wireshark/optimized/packet-ieee80211-radiotap.c.ll
 ; z3/optimized/nlqsat.cpp.ll

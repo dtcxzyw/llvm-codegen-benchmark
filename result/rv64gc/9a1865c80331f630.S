@@ -14,9 +14,3 @@ func0000000000000033:                   # @func0000000000000033
 	li	a0, -3
 .LBB1_2:                                # %entry
 	ret
-func0000000000000010:                   # @func0000000000000010
-	sext.w	a1, a1
-	sltiu	a1, a1, 16
-	neg	a1, a1
-	and	a0, a0, a1
-	ret

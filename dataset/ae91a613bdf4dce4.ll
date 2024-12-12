@@ -13,7 +13,7 @@ define i64 @func0000000000000007(i1 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i64
   %.v = select i1 %0, i64 1, i64 %3
-  %4 = add nsw i64 %.v, %1
+  %4 = add nsw i64 %1, %.v
   ret i64 %4
 }
 
@@ -31,7 +31,7 @@ define i64 @func0000000000000002(i1 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i64
   %.v = select i1 %0, i64 1, i64 %3
-  %4 = add i64 %.v, %1
+  %4 = add i64 %1, %.v
   ret i64 %4
 }
 

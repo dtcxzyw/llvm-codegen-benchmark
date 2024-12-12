@@ -1,7 +1,6 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
-; hermes/optimized/Conversions.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; mitsuba3/optimized/measured.cpp.ll
 ; mitsuba3/optimized/measured_polarized.cpp.ll

@@ -45,7 +45,7 @@ entry:
 ; openspiel/optimized/TransTableL.cpp.ll
 ; ruby/optimized/io.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000003a(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func000000000000006a(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %1 to i32
   %4 = icmp sgt i64 %1, %2
@@ -53,10 +53,23 @@ entry:
   ret i32 %5
 }
 
-; 45 occurrences:
+; 2 occurrences:
+; linux/optimized/tcp_input.ll
+; ruby/optimized/io.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %1 to i32
+  %4 = icmp samesign ult i64 %1, %2
+  %5 = select i1 %4, i32 %3, i32 %0
+  ret i32 %5
+}
+
+; 44 occurrences:
 ; abseil-cpp/optimized/low_level_alloc.cc.ll
 ; clamav/optimized/LzmaDec.c.ll
 ; clamav/optimized/oabd.c.ll
+; darktable/optimized/introspection_borders.c.ll
 ; faiss/optimized/AutoTune.cpp.ll
 ; flac/optimized/stream_encoder.c.ll
 ; git/optimized/apply.ll
@@ -76,7 +89,6 @@ entry:
 ; linux/optimized/scm.ll
 ; linux/optimized/scsi_logging.ll
 ; linux/optimized/serial_core.ll
-; linux/optimized/tcp_input.ll
 ; linux/optimized/vsprintf.ll
 ; linux/optimized/xz_dec_lzma2.ll
 ; luau/optimized/lstrlib.cpp.ll
@@ -97,7 +109,6 @@ entry:
 ; qemu/optimized/hw_usb_desc-msos.c.ll
 ; qemu/optimized/hw_usb_dev-network.c.ll
 ; ruby/optimized/bignum.ll
-; ruby/optimized/io.ll
 ; slurm/optimized/step_mgr.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i64 %1, i64 %2) #0 {
@@ -108,22 +119,17 @@ entry:
   ret i32 %5
 }
 
-; 13 occurrences:
+; 8 occurrences:
 ; clamav/optimized/LzmaDec.c.ll
 ; git/optimized/sha256.ll
-; libjpeg-turbo/optimized/jmemmgr.c.ll
 ; libpng/optimized/pngrutil.c.ll
 ; linux/optimized/memory.ll
 ; openjdk/optimized/imageioJPEG.ll
-; openjdk/optimized/jmemmgr.ll
 ; openjdk/optimized/pngrutil.ll
 ; openssl/optimized/libcrypto-lib-bss_mem.ll
 ; openssl/optimized/libcrypto-shlib-bss_mem.ll
-; openusd/optimized/resize.c.ll
-; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
-; quickjs/optimized/quickjs-libc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000064(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %1 to i32
   %4 = icmp ult i64 %1, %2
@@ -169,24 +175,19 @@ entry:
   ret i32 %5
 }
 
-; 27 occurrences:
-; abc/optimized/gzlib.c.ll
+; 20 occurrences:
 ; assimp/optimized/unzip.c.ll
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/XzDec.c.ll
 ; clamav/optimized/dll.cpp.ll
-; cmake/optimized/gzlib.c.ll
 ; cmake/optimized/gzwrite.c.ll
 ; cmake/optimized/lzma_decoder.c.ll
-; harfbuzz/optimized/harfbuzz.cc.ll
 ; hermes/optimized/zip.c.ll
 ; hyperscan/optimized/program_runtime.c.ll
-; libquic/optimized/gzlib.c.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; miniaudio/optimized/unity.c.ll
-; openjdk/optimized/hb-outline.ll
 ; openjdk/optimized/jdmarker.ll
 ; php/optimized/softmagic.ll
 ; portaudio/optimized/pa_sndio.c.ll
@@ -194,11 +195,9 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; redis/optimized/dict.ll
 ; slurm/optimized/KangarooTwelve.ll
-; wireshark/optimized/file_wrappers.c.ll
-; zlib/optimized/gzlib.c.ll
 ; zlib/optimized/gzwrite.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000024(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000044(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %1 to i32
   %4 = icmp ult i64 %1, %2
@@ -209,10 +208,43 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/block_cloop.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000078(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %1 to i32
-  %4 = icmp ugt i64 %1, %2
+  %4 = icmp samesign ugt i64 %1, %2
+  %5 = select i1 %4, i32 %3, i32 %0
+  ret i32 %5
+}
+
+; 6 occurrences:
+; git/optimized/sha256.ll
+; libjpeg-turbo/optimized/jmemmgr.c.ll
+; openjdk/optimized/jmemmgr.ll
+; openusd/optimized/resize.c.ll
+; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
+; quickjs/optimized/quickjs-libc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000074(i32 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = trunc nuw nsw i64 %1 to i32
+  %4 = icmp samesign ult i64 %1, %2
+  %5 = select i1 %4, i32 %3, i32 %0
+  ret i32 %5
+}
+
+; 7 occurrences:
+; abc/optimized/gzlib.c.ll
+; cmake/optimized/gzlib.c.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; miniaudio/optimized/unity.c.ll
+; openjdk/optimized/hb-outline.ll
+; raylib/optimized/raudio.c.ll
+; wireshark/optimized/file_wrappers.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000054(i32 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = trunc nuw i64 %1 to i32
+  %4 = icmp samesign ult i64 %1, %2
   %5 = select i1 %4, i32 %3, i32 %0
   ret i32 %5
 }
@@ -221,7 +253,7 @@ entry:
 ; clamav/optimized/mszipd.c.ll
 ; opencv/optimized/staticSaliencyFineGrained.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000036(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000066(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %1 to i32
   %4 = icmp slt i64 %1, %2
@@ -236,7 +268,7 @@ entry:
 ; opencv/optimized/stereo_binary_bm.cpp.ll
 ; opencv/optimized/stereobm.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000026(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %1 to i32
   %4 = icmp slt i64 %1, %2

@@ -1,11 +1,12 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; abseil-cpp/optimized/city.cc.ll
 ; folly/optimized/farmhash.cpp.ll
 ; freetype/optimized/ftcache.c.ll
 ; luau/optimized/BytecodeBuilder.cpp.ll
 ; luau/optimized/OptimizeConstProp.cpp.ll
 ; luau/optimized/ltable.cpp.ll
+; lvgl/optimized/lv_lru.ll
 ; meshoptimizer/optimized/indexgenerator.cpp.ll
 ; meshoptimizer/optimized/simplifier.cpp.ll
 ; ninja/optimized/build_log.cc.ll

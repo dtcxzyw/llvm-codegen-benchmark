@@ -62,14 +62,6 @@ func0000000000000016:                   # @func0000000000000016
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000006:                   # @func0000000000000006
-	vpcmpeqq	%ymm2, %ymm1, %k0
-	vpsllw	$7, %xmm0, %xmm0
-	vpmovb2m	%xmm0, %k1
-	korw	%k0, %k1, %k0
-	vpmovm2d	%k0, %xmm0
-	vzeroupper
-	retq
 func000000000000002c:                   # @func000000000000002c
 	vpcmpnltq	%ymm2, %ymm1, %k0
 	vpsllw	$7, %xmm0, %xmm0
@@ -80,6 +72,14 @@ func000000000000002c:                   # @func000000000000002c
 	retq
 func0000000000000014:                   # @func0000000000000014
 	vpcmpleuq	%ymm2, %ymm1, %k0
+	vpsllw	$7, %xmm0, %xmm0
+	vpmovb2m	%xmm0, %k1
+	korw	%k0, %k1, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+func0000000000000064:                   # @func0000000000000064
+	vpcmpnltuq	%ymm2, %ymm1, %k0
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	korw	%k0, %k1, %k0
@@ -110,8 +110,24 @@ func000000000000001a:                   # @func000000000000001a
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+func0000000000000052:                   # @func0000000000000052
+	vpcmpltuq	%ymm2, %ymm1, %k0
+	vpsllw	$7, %xmm0, %xmm0
+	vpmovb2m	%xmm0, %k1
+	korw	%k0, %k1, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
 func0000000000000012:                   # @func0000000000000012
 	vpcmpltuq	%ymm2, %ymm1, %k0
+	vpsllw	$7, %xmm0, %xmm0
+	vpmovb2m	%xmm0, %k1
+	korw	%k0, %k1, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+func0000000000000006:                   # @func0000000000000006
+	vpcmpeqq	%ymm2, %ymm1, %k0
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	korw	%k0, %k1, %k0
@@ -135,6 +151,14 @@ func000000000000002e:                   # @func000000000000002e
 	vzeroupper
 	retq
 func0000000000000026:                   # @func0000000000000026
+	vpcmpnltuq	%ymm2, %ymm1, %k0
+	vpsllw	$7, %xmm0, %xmm0
+	vpmovb2m	%xmm0, %k1
+	korw	%k0, %k1, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+func0000000000000066:                   # @func0000000000000066
 	vpcmpnltuq	%ymm2, %ymm1, %k0
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1

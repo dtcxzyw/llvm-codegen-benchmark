@@ -1,4 +1,4 @@
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vpcmpnltd	%ymm2, %ymm1, %k1
 	vmovdqu8	%xmm0, %xmm0 {%k1} {z}
 	vzeroupper
@@ -28,7 +28,7 @@ func000000000000000a:                   # @func000000000000000a
 	.zero	1
 	.zero	1
 	.zero	1
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	vpcmpgtd	%ymm2, %ymm1, %k1
 	vmovdqu8	.LCPI2_0(%rip), %xmm0 {%k1}     # xmm0 {%k1} = [1,1,1,1,1,1,1,1,u,u,u,u,u,u,u,u]
 	vzeroupper
@@ -43,7 +43,7 @@ func0000000000000008:                   # @func0000000000000008
 	retq
 .LCPI4_0:
 	.long	15                              # 0xf
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpcmpleud	.LCPI4_0(%rip){1to8}, %ymm1, %k1
 	vmovdqu8	%xmm0, %xmm0 {%k1} {z}

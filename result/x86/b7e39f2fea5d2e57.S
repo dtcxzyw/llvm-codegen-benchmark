@@ -1,7 +1,7 @@
 func0000000000000000:                   # @func0000000000000000
 	movslq	%edx, %rcx
+	xorl	%eax, %eax
 	testb	$1, %sil
-	movl	$7, %eax
 	cmovneq	%rcx, %rax
 	addq	%rdi, %rax
 	retq

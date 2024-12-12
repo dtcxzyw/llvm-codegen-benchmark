@@ -1,19 +1,18 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; hermes/optimized/Conversions.cpp.ll
 ; icu/optimized/number_decimalquantity.ll
-; nuttx/optimized/lib_trunc.c.ll
 ; postgres/optimized/d2s.ll
 ; postgres/optimized/d2s_shlib.ll
 ; postgres/optimized/d2s_srv.ll
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(double %0) #0 {
+define i1 @func0000000000000074(double %0) #0 {
 entry:
   %1 = bitcast double %0 to i64
   %2 = and i64 %1, 9218868437227405312
-  %3 = icmp ult i64 %2, 481885160128643072
+  %3 = icmp samesign ult i64 %2, 481885160128643072
   ret i1 %3
 }
 
@@ -30,11 +29,11 @@ entry:
 ; php/optimized/zend_strtod.ll
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(double %0) #0 {
+define i1 @func0000000000000058(double %0) #0 {
 entry:
   %1 = bitcast double %0 to i64
   %2 = and i64 %1, 9218868437227405312
-  %3 = icmp ugt i64 %2, 8980177656976769024
+  %3 = icmp samesign ugt i64 %2, 8980177656976769024
   ret i1 %3
 }
 
@@ -47,7 +46,7 @@ entry:
 ; openjdk/optimized/sharedRuntimeTrig.ll
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(double %0) #0 {
+define i1 @func0000000000000041(double %0) #0 {
 entry:
   %1 = bitcast double %0 to i64
   %2 = and i64 %1, 9218868437227405312
@@ -63,18 +62,20 @@ entry:
 ; openjdk/optimized/sharedRuntimeTrig.ll
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(double %0) #0 {
+define i1 @func0000000000000054(double %0) #0 {
 entry:
   %1 = bitcast double %0 to i64
   %2 = and i64 %1, 9218868437227405312
-  %3 = icmp ult i64 %2, 477381564796239872
+  %3 = icmp samesign ult i64 %2, 477381564796239872
   ret i1 %3
 }
 
-; 179 occurrences:
+; 181 occurrences:
 ; abc/optimized/epd.c.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -252,7 +253,7 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(double %0) #0 {
+define i1 @func0000000000000061(double %0) #0 {
 entry:
   %1 = bitcast double %0 to i64
   %2 = and i64 %1, 9218868437227405312
@@ -260,9 +261,8 @@ entry:
   ret i1 %3
 }
 
-; 73 occurrences:
+; 72 occurrences:
 ; hermes/optimized/Conversions.cpp.ll
-; nuttx/optimized/lib_trunc.c.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -335,18 +335,18 @@ entry:
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(double %0) #0 {
+define i1 @func0000000000000078(double %0) #0 {
 entry:
   %1 = bitcast double %0 to i64
   %2 = and i64 %1, 9218868437227405312
-  %3 = icmp ugt i64 %2, 4836865999795912704
+  %3 = icmp samesign ugt i64 %2, 4836865999795912704
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; coreutils-rs/optimized/56596qkor8w4ma8l.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(double %0) #0 {
+define i1 @func000000000000004c(double %0) #0 {
 entry:
   %1 = bitcast double %0 to i64
   %2 = and i64 %1, 2199023255552

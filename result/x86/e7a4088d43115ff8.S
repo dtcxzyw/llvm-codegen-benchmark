@@ -5,12 +5,12 @@ func0000000000000001:                   # @func0000000000000001
 	setne	%al
 	shll	$31, %eax
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	xorl	%eax, %eax
 	btl	%esi, %edi
 	adcl	$2, %eax
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	xorl	%eax, %eax
 	btl	%esi, %edi
 	adcl	$-1, %eax

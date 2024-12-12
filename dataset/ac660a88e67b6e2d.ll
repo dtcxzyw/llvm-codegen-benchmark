@@ -15,7 +15,7 @@
 ; openusd/optimized/vertexAdjacency.cpp.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000071(i32 %0, i64 %1, i32 %2) #0 {
+define i32 @func00000000000000e1(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; assimp/optimized/IFCBoolean.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i64 %1, i32 %2) #0 {
+define i32 @func0000000000000061(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
@@ -52,7 +52,7 @@ entry:
 ; 1 occurrences:
 ; arrow/optimized/key_hash_avx2.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i64 %1, i32 %2) #0 {
+define i32 @func0000000000000028(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = add nsw i64 %1, 1

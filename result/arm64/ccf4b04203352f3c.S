@@ -1,4 +1,4 @@
-func00000000000004a4:                   // @func00000000000004a4
+func0000000000000d64:                   // @func0000000000000d64
 // %bb.0:                               // %entry
 	add	x8, x0, x2
 	add	x9, x0, w1, uxtw
@@ -7,7 +7,7 @@ func00000000000004a4:                   // @func00000000000004a4
 	cset	w0, lo
 	ret
                                         // -- End function
-func00000000000004a1:                   // @func00000000000004a1
+func0000000000000de1:                   // @func0000000000000de1
 // %bb.0:                               // %entry
 	add	x8, x0, x2, lsl #3
 	add	x9, x0, w1, uxtw #3
@@ -16,7 +16,7 @@ func00000000000004a1:                   // @func00000000000004a1
 	cset	w0, eq
 	ret
                                         // -- End function
-func00000000000005a1:                   // @func00000000000005a1
+func0000000000000fe1:                   // @func0000000000000fe1
 // %bb.0:                               // %entry
 	mov	w8, #24                         // =0x18
 	madd	x9, x2, x8, x0
@@ -26,7 +26,7 @@ func00000000000005a1:                   // @func00000000000005a1
 	cset	w0, eq
 	ret
                                         // -- End function
-func00000000000004a8:                   // @func00000000000004a8
+func0000000000000968:                   // @func0000000000000968
 // %bb.0:                               // %entry
 	add	x8, x0, x2
 	add	x9, x0, w1, uxtw
@@ -35,7 +35,16 @@ func00000000000004a8:                   // @func00000000000004a8
 	cset	w0, hi
 	ret
                                         // -- End function
-func00000000000005a8:                   // @func00000000000005a8
+func0000000000000964:                   // @func0000000000000964
+// %bb.0:                               // %entry
+	add	x8, x0, x2
+	add	x9, x0, w1, uxtw
+	sub	x8, x8, #8
+	cmp	x9, x8
+	cset	w0, lo
+	ret
+                                        // -- End function
+func0000000000000b68:                   // @func0000000000000b68
 // %bb.0:                               // %entry
 	add	x8, x0, x2
 	add	x9, x0, w1, uxtw

@@ -1,10 +1,10 @@
-func000000000000019a:                   # @func000000000000019a
+func000000000000032a:                   # @func000000000000032a
 	sraiw	a2, a0, 31
 	and	a1, a1, a2
 	addw	a0, a0, a1
 	sgtz	a0, a0
 	ret
-func0000000000000191:                   # @func0000000000000191
+func0000000000000321:                   # @func0000000000000321
 	sraiw	a2, a0, 31
 	and	a1, a1, a2
 	sext.w	a1, a1
@@ -12,24 +12,25 @@ func0000000000000191:                   # @func0000000000000191
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000196:                   # @func0000000000000196
+func0000000000000326:                   # @func0000000000000326
 	sraiw	a2, a0, 31
 	and	a1, a1, a2
 	addw	a0, a0, a1
 	slti	a0, a0, 0
 	ret
-func000000000000018a:                   # @func000000000000018a
+func0000000000000301:                   # @func0000000000000301
+	sraiw	a2, a0, 31
+	and	a1, a1, a2
+	lui	a2, 8
+	addw	a0, a0, a1
+	addiw	a2, a2, -1
+	xor	a0, a0, a2
+	seqz	a0, a0
+	ret
+func000000000000030a:                   # @func000000000000030a
 	sraiw	a2, a0, 31
 	and	a1, a1, a2
 	addw	a0, a0, a1
 	slti	a0, a0, 0
 	xori	a0, a0, 1
-	ret
-func0000000000000181:                   # @func0000000000000181
-	sraiw	a2, a0, 31
-	and	a1, a1, a2
-	sext.w	a1, a1
-	negw	a0, a0
-	xor	a0, a0, a1
-	seqz	a0, a0
 	ret

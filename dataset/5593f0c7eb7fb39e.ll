@@ -4,7 +4,7 @@
 ; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000d8(ptr %0, i64 %1) #0 {
+define ptr @func00000000000000dc(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
   %3 = and i64 %2, 9223372036854775806
@@ -13,16 +13,39 @@ entry:
   ret ptr %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; rust-analyzer-rs/optimized/12c5ozyvkyoo7zj1.ll
-; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000da(ptr %0, i64 %1) #0 {
+define ptr @func00000000000000d8(ptr %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 1
+  %3 = and i64 %2, 9223372036854775806
+  %4 = getelementptr { { i64, [3 x i64] }, ptr }, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 -24
+  ret ptr %5
+}
+
+; 1 occurrences:
+; rust-analyzer-rs/optimized/12c5ozyvkyoo7zj1.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000db(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
   %3 = and i64 %2, 9223372036854775806
   %4 = getelementptr { { i128, [2 x i64] }, i64, [1 x i64] }, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -32
+  ret ptr %5
+}
+
+; 1 occurrences:
+; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000df(ptr %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 1
+  %3 = and i64 %2, 9223372036854775806
+  %4 = getelementptr { i32, i32, i32, i32 }, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 -8
   ret ptr %5
 }
 

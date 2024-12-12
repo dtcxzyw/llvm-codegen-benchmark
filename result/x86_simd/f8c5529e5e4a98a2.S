@@ -17,7 +17,7 @@ func0000000000000003:                   # @func0000000000000003
 	.long	64                              # 0x40
 .LCPI1_2:
 	.long	1025                            # 0x401
-func0000000000000009:                   # @func0000000000000009
+func0000000000000029:                   # @func0000000000000029
 	vpslld	$31, %xmm2, %xmm2
 	vpmovd2m	%xmm2, %k1
 	vpbroadcastd	.LCPI1_0(%rip), %xmm2   # xmm2 = [128,128,128,128]

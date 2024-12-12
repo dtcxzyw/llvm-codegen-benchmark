@@ -1,9 +1,8 @@
 
-; 28 occurrences:
+; 27 occurrences:
 ; abc/optimized/darCut.c.ll
 ; flac/optimized/stream_decoder.c.ll
 ; gromacs/optimized/domdec_setup.cpp.ll
-; gromacs/optimized/freeenergy.cpp.ll
 ; gromacs/optimized/genion.cpp.ll
 ; gromacs/optimized/tngio.cpp.ll
 ; gromacs/optimized/tune_pme.cpp.ll
@@ -32,12 +31,13 @@
 define i1 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %1, %2
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; assimp/optimized/o3dgcArithmeticCodec.cpp.ll
+; boost/optimized/ipc_reliable_message_queue.ll
 ; flac/optimized/stream_decoder.c.ll
 ; linux/optimized/compaction.ll
 ; linux/optimized/extents_status.ll
@@ -50,7 +50,7 @@ entry:
 define i1 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %1, %2
-  %4 = icmp ugt i32 %3, %0
+  %4 = icmp ult i32 %0, %3
   ret i1 %4
 }
 
@@ -68,7 +68,7 @@ entry:
 define i1 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %1, %2
-  %4 = icmp ult i32 %3, %0
+  %4 = icmp ugt i32 %0, %3
   ret i1 %4
 }
 
@@ -80,7 +80,7 @@ entry:
 define i1 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %1, %2
-  %4 = icmp sgt i32 %3, %0
+  %4 = icmp slt i32 %0, %3
   ret i1 %4
 }
 
@@ -90,7 +90,7 @@ entry:
 define i1 @func000000000000000b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %1, %2
-  %4 = icmp sle i32 %3, %0
+  %4 = icmp sge i32 %0, %3
   ret i1 %4
 }
 
@@ -100,7 +100,7 @@ entry:
 define i1 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %1, %2
-  %4 = icmp slt i32 %3, %0
+  %4 = icmp sgt i32 %0, %3
   ret i1 %4
 }
 

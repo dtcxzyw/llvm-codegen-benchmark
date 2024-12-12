@@ -80,6 +80,11 @@ func000000000000003d:                   # @func000000000000003d
 	sub	a0, a0, a1
 	addi	a0, a0, 32
 	ret
+func000000000000000c:                   # @func000000000000000c
+	slli	a1, a1, 2
+	sub	a0, a0, a1
+	addi	a0, a0, 4
+	ret
 func0000000000000033:                   # @func0000000000000033
 	slli	a1, a1, 6
 	sub	a0, a0, a1

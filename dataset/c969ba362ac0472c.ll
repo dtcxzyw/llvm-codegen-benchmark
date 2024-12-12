@@ -1,5 +1,5 @@
 
-; 211 occurrences:
+; 210 occurrences:
 ; abc/optimized/dauNpn.c.ll
 ; abc/optimized/extraBddThresh.c.ll
 ; abseil-cpp/optimized/str_cat_test.cc.ll
@@ -102,7 +102,6 @@
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/efi_64.ll
 ; linux/optimized/espfix_64.ll
-; linux/optimized/head64.ll
 ; linux/optimized/intel_bw.ll
 ; linux/optimized/ldt.ll
 ; linux/optimized/vsyscall_64.ll
@@ -112,12 +111,12 @@
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
+; llvm/optimized/BasicAliasAnalysis.cpp.ll
 ; llvm/optimized/CGExpr.cpp.ll
 ; llvm/optimized/CGStmt.cpp.ll
 ; llvm/optimized/CorrelatedValuePropagation.cpp.ll
 ; llvm/optimized/DependenceAnalysis.cpp.ll
 ; llvm/optimized/HLSLExternalSemaSource.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RewriteModernObjC.cpp.ll
 ; llvm/optimized/RewriteObjC.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll

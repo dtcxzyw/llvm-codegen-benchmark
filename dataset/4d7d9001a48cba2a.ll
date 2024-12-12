@@ -1,5 +1,6 @@
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/to_chars.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; hwloc/optimized/bitmap.ll
@@ -21,7 +22,7 @@ define i32 @func0000000000000004(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 144
   %4 = select i1 %1, i32 %2, i32 %3
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -32,7 +33,7 @@ define i32 @func0000000000000005(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 2
   %4 = select i1 %1, i32 %2, i32 %3
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 

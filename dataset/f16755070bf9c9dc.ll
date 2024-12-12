@@ -227,7 +227,7 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000062(i32 %0, i1 %1) #0 {
+define i32 @func00000000000000c2(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 16944, i32 25136
   %3 = shl nuw nsw i32 %2, 8

@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 25 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; cmake/optimized/blocksort.c.ll
 ; graphviz/optimized/pack.c.ll
@@ -8,6 +8,7 @@
 ; icu/optimized/usearch.ll
 ; luajit/optimized/lj_parse.ll
 ; luajit/optimized/lj_parse_dyn.ll
+; lvgl/optimized/lv_obj.ll
 ; openjdk/optimized/awt_InputMethod.ll
 ; openjdk/optimized/mlib_ImageConv_16ext.ll
 ; openjdk/optimized/mlib_ImageConv_8ext.ll
@@ -37,15 +38,15 @@ entry:
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/huffman.c.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; clamav/optimized/bzlib.c.ll
 ; cmake/optimized/huffman.c.ll
 ; cpython/optimized/_datetimemodule.ll
 ; git/optimized/index-pack.ll
 ; graphviz/optimized/pack.c.ll
-; gromacs/optimized/dlatrd.cpp.ll
 ; gromacs/optimized/energyoutput.cpp.ll
 ; gromacs/optimized/mdebin_bar.cpp.ll
-; gromacs/optimized/slatrd.cpp.ll
 ; libquic/optimized/dtoa.cc.ll
 ; linux/optimized/ndisc.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
@@ -78,9 +79,8 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; minetest/optimized/treegen.cpp.ll
-; openblas/optimized/dorgr2.c.ll
 ; openblas/optimized/dsbtrd.c.ll
 ; slurm/optimized/cbuf.ll
 ; Function Attrs: nounwind
@@ -135,7 +135,7 @@ entry:
   ret i32 %5
 }
 
-; 28 occurrences:
+; 30 occurrences:
 ; abc/optimized/giaFanout.c.ll
 ; abc/optimized/sscSat.c.ll
 ; cvc5/optimized/fp_word_blaster.cpp.ll
@@ -164,11 +164,13 @@ entry:
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; z3/optimized/ast_translation.cpp.ll
 ; z3/optimized/bv_rewriter.cpp.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = add i32 %4, 8
   ret i32 %5
 }
@@ -180,7 +182,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = add nsw i32 %4, -1
   ret i32 %5
 }

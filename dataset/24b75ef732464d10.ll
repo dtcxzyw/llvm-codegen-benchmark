@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; arrow/optimized/key_hash.cc.ll
 ; arrow/optimized/key_hash_avx2.cc.ll
 ; clamav/optimized/Ppmd7.c.ll
@@ -11,7 +11,6 @@
 ; hdf5/optimized/H5Dearray.c.ll
 ; hdf5/optimized/H5Dfarray.c.ll
 ; linux/optimized/inflate.ll
-; linux/optimized/nvram.ll
 ; llvm/optimized/BitcodeWriter.cpp.ll
 ; re2/optimized/parse.cc.ll
 ; wireshark/optimized/packet-dmp.c.ll
@@ -41,7 +40,7 @@ entry:
   ret i32 %4
 }
 
-; 109 occurrences:
+; 108 occurrences:
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -57,7 +56,6 @@ entry:
 ; fmt/optimized/unicode-test.cc.ll
 ; fmt/optimized/util.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
-; hermes/optimized/SegmentedArray.cpp.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
 ; lief/optimized/BinaryParser.cpp.ll

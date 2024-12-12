@@ -5,7 +5,7 @@
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003c2(double %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000006c2(double %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = icmp ne i64 %3, %1
@@ -20,7 +20,7 @@ entry:
 ; g2o/optimized/solver_dense.cpp.ll
 ; g2o/optimized/structure_only.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003c8(double %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000006c8(double %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = icmp ne i64 %3, %1

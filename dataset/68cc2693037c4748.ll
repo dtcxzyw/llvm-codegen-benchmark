@@ -24,4 +24,25 @@ entry:
   ret float %4
 }
 
+; 1 occurrences:
+; lvgl/optimized/lv_chart.ll
+; Function Attrs: nounwind
+define float @func0000000000000008(float %0, float %1, float %2) #0 {
+entry:
+  %3 = fcmp oeq float %2, %1
+  %4 = select i1 %3, float %0, float %1
+  ret float %4
+}
+
+; 2 occurrences:
+; imgui/optimized/imgui.cpp.ll
+; imgui/optimized/imgui_widgets.cpp.ll
+; Function Attrs: nounwind
+define float @func000000000000000c(float %0, float %1, float %2) #0 {
+entry:
+  %3 = fcmp oge float %2, %1
+  %4 = select i1 %3, float %0, float %1
+  ret float %4
+}
+
 attributes #0 = { nounwind }

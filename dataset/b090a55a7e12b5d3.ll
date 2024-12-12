@@ -6,7 +6,7 @@
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000001422(i32 %0, i32 %1) #0 {
+define i1 @func0000000000005042(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %0, 2
   %3 = icmp eq i32 %1, %0

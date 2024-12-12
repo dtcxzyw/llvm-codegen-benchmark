@@ -19,14 +19,12 @@ entry:
 ; linux/optimized/exthdrs.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/ohci-hcd.ll
-; linux/optimized/rsmisc.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/SummaryBasedOptimizations.cpp.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; minetest/optimized/mg_decoration.cpp.ll
 ; minetest/optimized/server.cpp.ll
-; minetest/optimized/test_voxelmanipulator.cpp.ll
 ; openexr/optimized/ImfDwaCompressor.cpp.ll
 ; openssl/optimized/libcrypto-lib-e_aes.ll
 ; openssl/optimized/libcrypto-lib-e_aria.ll
@@ -40,6 +38,7 @@ entry:
 ; qemu/optimized/libvhost-user.c.ll
 ; qemu/optimized/migration_savevm.c.ll
 ; rocksdb/optimized/data_block_hash_index.cc.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; velox/optimized/CastExpr.cpp.ll
 ; wireshark/optimized/packet-dns.c.ll
 ; wireshark/optimized/packet-dtls.c.ll
@@ -52,6 +51,7 @@ entry:
 ; wireshark/optimized/packet-ses.c.ll
 ; wireshark/optimized/packet-smb.c.ll
 ; wolfssl/optimized/internal.c.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i16 %0, i16 %1) #0 {
 entry:
@@ -106,14 +106,15 @@ entry:
   ret i16 %3
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; cmake/optimized/archive_read_support_format_zip.c.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
 ; wireshark/optimized/packet-smb.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000002(i16 %0, i16 %1) #0 {
 entry:
-  %2 = add i16 %1, -3
-  %3 = sub nuw i16 %2, %0
+  %2 = xor i16 %0, -1
+  %3 = add i16 %1, %2
   ret i16 %3
 }
 

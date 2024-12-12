@@ -1,19 +1,19 @@
-func0000000000000511:                   # @func0000000000000511
+func0000000000000a21:                   # @func0000000000000a21
 	subl	%esi, %edi
 	cmpl	%edx, %edi
 	sete	%al
 	retq
-func0000000000000c01:                   # @func0000000000000c01
+func0000000000001801:                   # @func0000000000001801
 	subl	%esi, %edi
 	cmpl	%edx, %edi
 	sete	%al
 	retq
-func0000000000000401:                   # @func0000000000000401
+func0000000000000801:                   # @func0000000000000801
 	subl	%esi, %edi
 	cmpl	%edx, %edi
 	sete	%al
 	retq
-func0000000000000d11:                   # @func0000000000000d11
+func0000000000001a21:                   # @func0000000000001a21
 	subl	%esi, %edi
 	cmpl	%edx, %edi
 	sete	%al

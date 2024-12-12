@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 20 occurrences:
 ; eastl/optimized/TestFixedHash.cpp.ll
 ; grpc/optimized/compression_filter.cc.ll
 ; grpc/optimized/legacy_compression_filter.cc.ll
@@ -19,6 +19,7 @@
 ; openusd/optimized/yv12config.c.ll
 ; rust-analyzer-rs/optimized/46lti8aa4smufhcb.ll
 ; wasmtime-rs/optimized/3ks7b643ljwe3j81.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i64 %0) #0 {
 entry:

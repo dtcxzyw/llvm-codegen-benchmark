@@ -22,13 +22,19 @@ func0000000000000016:                   # @func0000000000000016
 	imulq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
+func0000000000000017:                   # @func0000000000000017
+	movslq	%edx, %rax
+	movl	%esi, %ecx
+	imulq	%rax, %rcx
+	leaq	(%rdi,%rcx,4), %rax
+	retq
 func0000000000000006:                   # @func0000000000000006
 	movl	%edx, %ecx
 	movslq	%esi, %rax
 	imulq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
-func000000000000001e:                   # @func000000000000001e
+func000000000000001f:                   # @func000000000000001f
 	movslq	%edx, %rcx
 	movl	%esi, %eax
 	imulq	%rcx, %rax

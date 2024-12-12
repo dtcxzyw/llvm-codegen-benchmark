@@ -14,16 +14,16 @@ func000000000000000f:                   # @func000000000000000f
 	movl	$1, %eax
 	shlxq	%rdi, %rax, %rax
 	retq
-func000000000000000b:                   # @func000000000000000b
-	movl	$1, %eax
+func0000000000000000:                   # @func0000000000000000
+	movl	$2, %eax
 	shlxq	%rdi, %rax, %rax
 	retq
 func000000000000000c:                   # @func000000000000000c
-	movl	$1, %eax
+	movl	$2, %eax
 	shlxq	%rdi, %rax, %rax
 	retq
-func0000000000000000:                   # @func0000000000000000
-	movl	$64, %eax
+func000000000000000b:                   # @func000000000000000b
+	movl	$1, %eax
 	shlxq	%rdi, %rax, %rax
 	retq
 func000000000000000a:                   # @func000000000000000a

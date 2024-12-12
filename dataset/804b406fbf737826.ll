@@ -8,7 +8,6 @@
 ; llvm/optimized/Compiler.cpp.ll
 ; llvm/optimized/HWAddressSanitizer.cpp.ll
 ; llvm/optimized/IndexingContext.cpp.ll
-; llvm/optimized/ItaniumMangle.cpp.ll
 ; llvm/optimized/ParseDeclCXX.cpp.ll
 ; llvm/optimized/ParsedAttr.cpp.ll
 ; llvm/optimized/ScopeInfo.cpp.ll
@@ -19,8 +18,9 @@
 ; opencv/optimized/mathfuncs.cpp.ll
 ; slurm/optimized/job_mgr.ll
 ; tree-sitter-rs/optimized/2ysit6xak1d4lr67.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0) #0 {
+define i1 @func0000000000000024(i32 %0) #0 {
 entry:
   %1 = freeze i32 %0
   %2 = and i32 %1, 15

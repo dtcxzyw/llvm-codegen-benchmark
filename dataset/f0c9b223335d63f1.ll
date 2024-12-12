@@ -120,18 +120,6 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
-; hyperscan/optimized/ng_find_matches.cpp.ll
-; hyperscan/optimized/ng_squash.cpp.ll
-; Function Attrs: nounwind
-define i64 @func000000000000003d(i64 %0, i64 %1) #0 {
-entry:
-  %2 = shl nuw nsw i64 %1, 3
-  %3 = add nuw nsw i64 %2, 8
-  %4 = sub nsw i64 %0, %3
-  ret i64 %4
-}
-
 ; 1 occurrences:
 ; casadi/optimized/bspline.cpp.ll
 ; Function Attrs: nounwind

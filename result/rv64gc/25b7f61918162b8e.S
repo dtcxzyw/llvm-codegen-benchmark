@@ -23,10 +23,8 @@ func0000000000000003:                   # @func0000000000000003
 	slli	a0, a1, 4
 	ret
 func0000000000000001:                   # @func0000000000000001
-	andi	a0, a0, 1
-	bnez	a0, .LBB3_2
-	li	a0, 16
-	ret
-.LBB3_2:
-	slli	a0, a1, 4
+	slli	a1, a1, 3
+	slli	a0, a0, 63
+	srai	a0, a0, 63
+	and	a0, a0, a1
 	ret

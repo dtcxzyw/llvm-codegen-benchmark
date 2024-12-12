@@ -18,6 +18,19 @@ entry:
   ret i64 %5
 }
 
+; 2 occurrences:
+; freetype/optimized/sfnt.c.ll
+; lvgl/optimized/lv_draw_buf.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003d(i32 %0, i32 %1) #0 {
+entry:
+  %2 = mul nuw nsw i32 %0, %1
+  %3 = add nuw nsw i32 %2, 7
+  %4 = lshr i32 %3, 3
+  %5 = zext nneg i32 %4 to i64
+  ret i64 %5
+}
+
 ; 1 occurrences:
 ; opencv/optimized/grfmt_pxm.cpp.ll
 ; Function Attrs: nounwind

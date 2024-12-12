@@ -7,14 +7,27 @@ entry:
   %2 = getelementptr i8, ptr %1, i64 13
   %3 = ptrtoint ptr %2 to i64
   %4 = xor i64 %3, -1
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = trunc i64 %5 to i32
   ret i32 %6
 }
 
-; 75 occurrences:
+; 3 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; opencc/optimized/Config.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000030(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 1
+  %3 = ptrtoint ptr %2 to i64
+  %4 = xor i64 %3, -1
+  %5 = add i64 %0, %4
+  %6 = trunc i64 %5 to i32
+  ret i32 %6
+}
+
+; 72 occurrences:
 ; clamav/optimized/phishcheck.c.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
@@ -87,14 +100,13 @@ entry:
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
-; opencc/optimized/Config.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000020(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 1
+  %2 = getelementptr nusw i8, ptr %1, i64 -1
   %3 = ptrtoint ptr %2 to i64
   %4 = xor i64 %3, -1
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = trunc i64 %5 to i32
   ret i32 %6
 }

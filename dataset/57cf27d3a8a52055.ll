@@ -1,7 +1,6 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; grpc/optimized/timer.cc.ll
-; lief/optimized/bignum.c.ll
 ; meshoptimizer/optimized/overdrawoptimizer.cpp.ll
 ; mitsuba3/optimized/aov.cpp.ll
 ; mitsuba3/optimized/roughplastic.cpp.ll
@@ -17,7 +16,8 @@ entry:
   ret i64 %4
 }
 
-; 61 occurrences:
+; 64 occurrences:
+; boost/optimized/default_formatter_factory.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; cpython/optimized/longobject.ll
 ; graphviz/optimized/DotIO.c.ll
@@ -78,6 +78,8 @@ entry:
 ; quantlib/optimized/triplebandlinearop.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
@@ -88,7 +90,20 @@ entry:
   ret i64 %4
 }
 
-; 13 occurrences:
+; 1 occurrences:
+; lief/optimized/bignum.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000018(i64 %0, i64 %1) #0 {
+entry:
+  %2 = freeze i64 %1
+  %3 = icmp samesign ugt i64 %2, 79
+  %4 = select i1 %3, i64 4, i64 %0
+  ret i64 %4
+}
+
+; 15 occurrences:
+; boost/optimized/process.ll
+; boost/optimized/target.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -107,6 +122,19 @@ define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = icmp ult i64 %2, 1000000
+  %4 = select i1 %3, i64 1, i64 %0
+  ret i64 %4
+}
+
+; 3 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/wait.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
+entry:
+  %2 = freeze i64 %1
+  %3 = icmp samesign ult i64 %2, 1000
   %4 = select i1 %3, i64 1, i64 %0
   ret i64 %4
 }

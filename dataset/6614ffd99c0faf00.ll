@@ -15,8 +15,7 @@ entry:
   ret i1 %5
 }
 
-; 15 occurrences:
-; abc/optimized/abcLog.c.ll
+; 14 occurrences:
 ; abc/optimized/cmdPlugin.c.ll
 ; abc/optimized/ifTune.c.ll
 ; abc/optimized/io.c.ll
@@ -32,7 +31,7 @@ entry:
 ; oiio/optimized/tiffoutput.cpp.ll
 ; opencv/optimized/dis_flow.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = srem i32 %3, %0
@@ -44,7 +43,7 @@ entry:
 ; abc/optimized/giaUtil.c.ll
 ; nori/optimized/layout.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = srem i32 %3, %0
@@ -56,7 +55,7 @@ entry:
 ; oiio/optimized/imageio.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = srem i32 %3, %0
@@ -64,13 +63,12 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; gromacs/optimized/minimize.cpp.ll
 ; openblas/optimized/dgelq.c.ll
 ; openblas/optimized/dgeqr.c.ll
-; openmpi/optimized/group_strided.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = srem i32 %3, %0

@@ -17,8 +17,7 @@ entry:
   ret i32 %3
 }
 
-; 2 occurrences:
-; linux/optimized/bcd.ll
+; 1 occurrences:
 ; wireshark/optimized/packet-pldm.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i8 %0) #0 {

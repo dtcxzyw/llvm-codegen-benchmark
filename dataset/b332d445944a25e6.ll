@@ -10,10 +10,9 @@ entry:
   ret i32 %5
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; cpython/optimized/_datetimemodule.ll
-; gromacs/optimized/dlasdt.cpp.ll
-; gromacs/optimized/slasdt.cpp.ll
+; lvgl/optimized/lv_gridnav.ll
 ; openblas/optimized/dsbgst.c.ll
 ; opencv/optimized/cloning_gui.cpp.ll
 ; opencv/optimized/rlof_localflow.cpp.ll

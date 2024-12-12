@@ -13,7 +13,7 @@ entry:
   %3 = mul nsw i32 %1, %2
   %4 = sdiv i32 %3, 255
   %5 = trunc i32 %4 to i8
-  %6 = add i8 %5, %0
+  %6 = add i8 %0, %5
   ret i8 %6
 }
 

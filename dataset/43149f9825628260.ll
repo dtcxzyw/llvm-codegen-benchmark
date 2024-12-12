@@ -1,8 +1,5 @@
 
-; 11 occurrences:
-; icu/optimized/messagepattern.ll
-; icu/optimized/smpdtfmt.ll
-; icu/optimized/uconv.ll
+; 8 occurrences:
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/CGVTables.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
@@ -33,24 +30,17 @@ entry:
   ret i64 %4
 }
 
-; 13 occurrences:
-; llvm/optimized/ADCE.cpp.ll
+; 6 occurrences:
 ; llvm/optimized/CGCUDANV.cpp.ll
 ; llvm/optimized/CGExpr.cpp.ll
-; llvm/optimized/CallBrPrepare.cpp.ll
-; llvm/optimized/CloneFunction.cpp.ll
 ; llvm/optimized/CodeGenModule.cpp.ll
 ; llvm/optimized/DeadStoresChecker.cpp.ll
-; llvm/optimized/DwarfEHPrepare.cpp.ll
 ; llvm/optimized/GlobalISelCombinerEmitter.cpp.ll
-; llvm/optimized/IndirectBrExpandPass.cpp.ll
-; llvm/optimized/SjLjEHPrepare.cpp.ll
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
-; llvm/optimized/WinEHPrepare.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(ptr %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 11
+  %2 = icmp ult i32 %1, 6
   %3 = ptrtoint ptr %0 to i64
   %4 = select i1 %2, i64 %3, i64 0
   ret i64 %4

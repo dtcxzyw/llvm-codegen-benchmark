@@ -1,11 +1,10 @@
 
-; 118 occurrences:
+; 117 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; abc/optimized/ifDec07.c.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/cabd.c.ll
-; clamav/optimized/dns.c.ll
 ; clamav/optimized/kwajd.c.ll
 ; clamav/optimized/textdet.c.ll
 ; cmake/optimized/RegularExpression.cxx.ll
@@ -182,7 +181,7 @@ entry:
   ret i64 %5
 }
 
-; 7 occurrences:
+; 17 occurrences:
 ; flac/optimized/metadata_iterators.c.ll
 ; libevent/optimized/event_tagging.c.ll
 ; yosys/optimized/fstapi.ll
@@ -190,6 +189,16 @@ entry:
 ; z3/optimized/sat_ddfw.cpp.ll
 ; z3/optimized/sat_prob.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/3xn4w3qarvbzl2jkwavm0419t.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/4hgzf672qwd8x8ke1407yey6m.ll
+; zed-rs/optimized/4wlt97p2na7yq96c9gq3wlrfc.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
+; zed-rs/optimized/boyei0qs0y80q8snoztbi8jt7.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000012(i32 %0, i8 %1) #0 {
 entry:

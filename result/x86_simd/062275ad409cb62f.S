@@ -8,7 +8,22 @@ func000000000000000f:                   # @func000000000000000f
 	vpor	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
-	.long	2                               # 0x2
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
 .LCPI1_1:
 	.long	0                               # 0x0
 	.long	8                               # 0x8
@@ -19,6 +34,11 @@ func000000000000000f:                   # @func000000000000000f
 	.long	3                               # 0x3
 	.long	14                              # 0xe
 .LCPI1_2:
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+.LCPI1_3:
 	.byte	0                               # 0x0
 	.byte	8                               # 0x8
 	.byte	1                               # 0x1
@@ -28,9 +48,9 @@ func000000000000000f:                   # @func000000000000000f
 	.byte	3                               # 0x3
 	.byte	14                              # 0xe
 func000000000000000d:                   # @func000000000000000d
-	vpsrld	$30, %xmm1, %xmm1
-	vpandd	.LCPI1_0(%rip){1to4}, %xmm1, %xmm2
-	vpmovsxbd	.LCPI1_2(%rip), %ymm1   # ymm1 = [0,8,1,10,2,12,3,14]
+	vpsrld	$23, %xmm1, %xmm1
+	vpandd	.LCPI1_2(%rip){1to4}, %xmm1, %xmm2
+	vpmovsxbd	.LCPI1_3(%rip), %ymm1   # ymm1 = [0,8,1,10,2,12,3,14]
 	vpermi2d	%ymm0, %ymm2, %ymm1
 	vmovdqa	%ymm1, %ymm0
 	retq

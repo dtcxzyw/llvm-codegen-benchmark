@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 8 occurrences:
 ; hermes/optimized/StringPrimitive.cpp.ll
 ; icu/optimized/normalizer2.ll
 ; linux/optimized/consolemap.ll
@@ -7,8 +7,6 @@
 ; minetest/optimized/remoteplayer.cpp.ll
 ; postgres/optimized/dict_thesaurus.ll
 ; postgres/optimized/to_tsany.ll
-; stockfish/optimized/position.ll
-; stockfish/optimized/uci.ll
 ; wireshark/optimized/packet-x11.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i16 %0, i16 %1) #0 {
@@ -64,6 +62,17 @@ define i32 @func0000000000000004(i16 %0, i16 %1) #0 {
 entry:
   %2 = icmp ult i16 %0, %1
   %3 = select i1 %2, i32 -1, i32 1
+  ret i32 %3
+}
+
+; 2 occurrences:
+; stockfish/optimized/position.ll
+; stockfish/optimized/uci.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000018(i16 %0, i16 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i16 %0, %1
+  %3 = select i1 %2, i32 6, i32 2
   ret i32 %3
 }
 

@@ -1,5 +1,5 @@
 
-; 56 occurrences:
+; 55 occurrences:
 ; abc/optimized/inffast.c.ll
 ; abc/optimized/ioReadBlifAig.c.ll
 ; abseil-cpp/optimized/numbers.cc.ll
@@ -28,7 +28,6 @@
 ; linux/optimized/stop_machine.ll
 ; linux/optimized/svcauth_gss.ll
 ; linux/optimized/tick-broadcast.ll
-; linux/optimized/tick-common.ll
 ; linux/optimized/vector.ll
 ; linux/optimized/zstd_decompress_block.ll
 ; llvm/optimized/ConstantFolding.cpp.ll

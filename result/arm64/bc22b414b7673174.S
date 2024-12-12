@@ -1,7 +1,6 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	bic	v0.4s, #24, lsl #8
-	sshll2	v1.2d, v0.4s, #0
-	sshll	v0.2d, v0.2s, #0
+	and	w8, w0, #0xffffe7ff
+	sxtw	x0, w8
 	ret
                                         // -- End function

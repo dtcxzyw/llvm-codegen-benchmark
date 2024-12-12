@@ -4,11 +4,11 @@
 ; openssl/optimized/libcrypto-shlib-cts128.ll
 ; openssl/optimized/libdefault-lib-cipher_cts.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 16
   %4 = select i1 %1, i64 32, i64 %3
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
@@ -16,11 +16,11 @@ entry:
 ; meilisearch-rs/optimized/3f4k2xees4fvt0r.ll
 ; meilisearch-rs/optimized/gdis3hvl48q1qu4.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = select i1 %1, i64 1, i64 %3
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
@@ -31,7 +31,7 @@ define i1 @func0000000000000004(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1
   %4 = select i1 %1, i64 1, i64 %3
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
@@ -96,11 +96,12 @@ define i1 @func0000000000000005(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -1
   %4 = select i1 %1, i64 15, i64 %3
-  %5 = icmp uge i64 %4, %0
+  %5 = icmp ule i64 %0, %4
   ret i1 %5
 }
 
-; 9 occurrences:
+; 11 occurrences:
+; boost/optimized/alloc_lib.ll
 ; llvm/optimized/AMDGPU.cpp.ll
 ; llvm/optimized/RISCVVIntrinsicUtils.cpp.ll
 ; llvm/optimized/SPIR.cpp.ll
@@ -110,12 +111,13 @@ entry:
 ; luau/optimized/RequireTracer.cpp.ll
 ; luau/optimized/RequireTracer.test.cpp.ll
 ; luau/optimized/Subtyping.cpp.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -1
   %4 = select i1 %1, i64 15, i64 %3
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 
@@ -137,18 +139,27 @@ define i1 @func0000000000000001(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -1
   %4 = select i1 %1, i64 0, i64 %3
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
-; 1 occurrences:
-; linux/optimized/mmconf-fam10h_64.ll
+; 10 occurrences:
+; zed-rs/optimized/04fhfmlktnjtedpduz35189qo.ll
+; zed-rs/optimized/05lrpc5icj3w7c2jbbww9rt02.ll
+; zed-rs/optimized/3ovedgaw1yidfseciw93ubpv7.ll
+; zed-rs/optimized/5t11v1wc3a9lo225k1xr00pdg.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/5xevyi85tx7z64jdpnqwqtx9p.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
+; zed-rs/optimized/blc07kmo6cnkd0np8c4wtnq7t.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
+; zed-rs/optimized/epsv5gdpg9wii0jlawu81wh31.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = add nuw nsw i64 %2, 268435456
-  %4 = select i1 %1, i64 1082600194048, i64 %3
-  %5 = icmp ult i64 %4, %0
+  %3 = add nuw i64 %2, 1
+  %4 = select i1 %1, i64 1, i64 %3
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
@@ -156,11 +167,11 @@ entry:
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000029(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000049(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 8
   %4 = select i1 %1, i64 40, i64 %3
-  %5 = icmp ule i64 %4, %0
+  %5 = icmp uge i64 %0, %4
   ret i1 %5
 }
 

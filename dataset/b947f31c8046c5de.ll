@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 36 occurrences:
 ; abc/optimized/saigRetMin.c.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; glslang/optimized/linkValidate.cpp.ll
@@ -28,6 +28,7 @@
 ; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; openjdk/optimized/barrierSetC1.ll
 ; openjdk/optimized/c1_FrameMap.ll
 ; openjdk/optimized/c1_LIRAssembler_x86.ll

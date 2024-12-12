@@ -38,10 +38,9 @@ func0000000000000010:                   # @func0000000000000010
 	vmovdqu16	.LCPI2_1(%rip), %xmm0 {%k1} # xmm0 {%k1} = [1,1,1,1,1,1,1,1]
 	vzeroupper
 	retq
-.LCPI3_0:
-	.long	32767                           # 0x7fff
-func0000000000000020:                   # @func0000000000000020
-	vpcmpleud	.LCPI3_0(%rip){1to8}, %ymm1, %k1
+func000000000000001b:                   # @func000000000000001b
+	vpxor	%xmm2, %xmm2, %xmm2
+	vpcmpnltd	%ymm2, %ymm1, %k1
 	vpmovdw	%ymm0, %xmm0 {%k1} {z}
 	vzeroupper
 	retq

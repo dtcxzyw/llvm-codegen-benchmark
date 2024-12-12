@@ -4,7 +4,7 @@
 	.long	99                              # 0x63
 .LCPI0_2:
 	.quad	2                               # 0x2
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
 	vpcmpeqd	%xmm1, %xmm1, %xmm1

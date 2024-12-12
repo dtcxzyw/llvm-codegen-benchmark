@@ -3,7 +3,7 @@
 ; assimp/optimized/SpatialSort.cpp.ll
 ; libevent/optimized/evdns.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000019a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000032a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 %2
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; assimp/optimized/SpatialSort.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000196(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000326(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 %2
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_ashift.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
   %4 = select i1 %3, i32 %1, i32 %2
@@ -41,7 +41,7 @@ entry:
 ; llvm/optimized/AggressiveAntiDepBreaker.cpp.ll
 ; redis/optimized/db.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, -1
   %4 = select i1 %3, i32 %1, i32 %2
@@ -53,7 +53,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-nvme.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000138(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000268(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 8
   %4 = select i1 %3, i32 %1, i32 %2
@@ -65,7 +65,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/db.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000e1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, -1
   %4 = select i1 %3, i32 %1, i32 %2
@@ -77,7 +77,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/EAString.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000018a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000030a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 %2

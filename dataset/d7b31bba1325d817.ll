@@ -1,10 +1,11 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; coreutils-rs/optimized/11lwsmxswp4jsl8v.ll
 ; coreutils-rs/optimized/whotp6m83kkoazv.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000204(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000404(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %1, %2
   %4 = trunc i64 %3 to i32
@@ -21,7 +22,7 @@ entry:
 ; ncnn/optimized/softmax_x86_avx512.cpp.ll
 ; ncnn/optimized/softmax_x86_fma.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %1, %2
   %4 = trunc i64 %3 to i32
@@ -36,7 +37,7 @@ entry:
 ; ncnn/optimized/padding_x86_avx512.cpp.ll
 ; ncnn/optimized/padding_x86_fma.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000131(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000261(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
   %4 = trunc i64 %3 to i32
@@ -49,7 +50,7 @@ entry:
 ; openspiel/optimized/garnet.cc.ll
 ; vcpkg/optimized/commands.ci.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000314(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000624(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %1, %2
   %4 = trunc i64 %3 to i32
@@ -81,7 +82,7 @@ entry:
 ; openspiel/optimized/outcome_sampling_mccfr.cc.ll
 ; openspiel/optimized/spiel_bots.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000208(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000408(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %1, %2
   %4 = trunc i64 %3 to i32

@@ -7,12 +7,12 @@
 ; linux/optimized/cpufreq_ondemand.ll
 ; linux/optimized/drm_modes.ll
 ; linux/optimized/fast_commit.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_panel.ll
 ; linux/optimized/xhci-ring.ll
 ; llvm/optimized/Instructions.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
+; lvgl/optimized/lv_roller.ll
 ; openmpi/optimized/netpatterns_multinomial_tree.ll
 ; openmpi/optimized/netpatterns_nary_tree.ll
 ; wireshark/optimized/packet-dcp-etsi.c.ll
@@ -24,9 +24,10 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; linux/optimized/vlv_dsi_pll.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
+; lvgl/optimized/lv_chart.ll
 ; openusd/optimized/resize.c.ll
 ; stb/optimized/stb_divide.c.ll
 ; Function Attrs: nounwind

@@ -1,9 +1,8 @@
 
-; 30 occurrences:
+; 29 occurrences:
 ; bullet3/optimized/b3GpuPgsConstraintSolver.ll
 ; bullet3/optimized/b3GpuPgsContactSolver.ll
 ; c3c/optimized/sema_expr.c.ll
-; ceres/optimized/partitioned_matrix_view_2_d_d.cc.ll
 ; cpython/optimized/flowgraph.ll
 ; darktable/optimized/avif.c.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
@@ -34,12 +33,12 @@
 define i1 @func000000000000000c(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 2
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
 
-; 66 occurrences:
+; 65 occurrences:
 ; abc/optimized/cmdHist.c.ll
 ; assimp/optimized/3DSConverter.cpp.ll
 ; assimp/optimized/3DSExporter.cpp.ll
@@ -101,7 +100,6 @@ entry:
 ; postgres/optimized/pg_receivewal.ll
 ; ruby/optimized/regparse.ll
 ; ruby/optimized/ruby.ll
-; wireshark/optimized/mime_file.c.ll
 ; wireshark/optimized/packet-btbredr_rf.c.ll
 ; wireshark/optimized/packet-bthci_evt.c.ll
 ; wireshark/optimized/packet-ecpri.c.ll
@@ -133,29 +131,26 @@ entry:
   ret i1 %5
 }
 
-; 12 occurrences:
+; 9 occurrences:
 ; clamav/optimized/pe.c.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; linux/optimized/tx.ll
 ; llvm/optimized/SMEPeepholeOpt.cpp.ll
-; llvm/optimized/SemaCoroutine.cpp.ll
-; llvm/optimized/SemaOpenACC.cpp.ll
 ; luau/optimized/main.cpp.ll
 ; nlohmann_json/optimized/unit.cpp.ll
 ; postgres/optimized/indexcmds.ll
-; slurm/optimized/job_mgr.ll
 ; wireshark/optimized/packet-ecpri.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, -10
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
 
-; 33 occurrences:
+; 35 occurrences:
 ; assimp/optimized/3DSConverter.cpp.ll
 ; assimp/optimized/3DSExporter.cpp.ll
 ; assimp/optimized/3DSLoader.cpp.ll
@@ -170,6 +165,7 @@ entry:
 ; assimp/optimized/SceneCombiner.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; git/optimized/dir.ll
 ; glslang/optimized/Initialize.cpp.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; gromacs/optimized/gmx_bar.cpp.ll
@@ -184,6 +180,7 @@ entry:
 ; openusd/optimized/faceVertex.cpp.ll
 ; postgres/optimized/heapam.ll
 ; postgres/optimized/parse_relation.ll
+; postgres/optimized/tsgistidx.ll
 ; redis/optimized/jemalloc.ll
 ; redis/optimized/jemalloc.sym.ll
 ; slurm/optimized/step_mgr.ll
@@ -193,7 +190,7 @@ entry:
 define i1 @func0000000000000018(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
@@ -208,6 +205,20 @@ entry:
 define i1 @func0000000000000010(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %2, 1
+  %4 = or i1 %3, %1
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
+}
+
+; 4 occurrences:
+; git/optimized/dir.ll
+; llvm/optimized/SemaCoroutine.cpp.ll
+; llvm/optimized/SemaOpenACC.cpp.ll
+; slurm/optimized/job_mgr.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i1 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 4
   %4 = or i1 %3, %1
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5

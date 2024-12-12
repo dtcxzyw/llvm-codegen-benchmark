@@ -16,13 +16,13 @@ func0000000000000005:                   # @func0000000000000005
 	cmpq	%rdi, %rax
 	setbe	%al
 	retq
-func0000000000000045:                   # @func0000000000000045
+func0000000000000085:                   # @func0000000000000085
 	movl	%esi, %eax
 	addq	%rdx, %rax
 	cmpq	%rdi, %rax
 	setbe	%al
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	movl	%esi, %eax
 	addq	%rdx, %rax
 	cmpq	%rdi, %rax

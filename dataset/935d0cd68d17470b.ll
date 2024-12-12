@@ -1,14 +1,10 @@
 
-%"class.cv::Range.3584151" = type { i32, i32 }
-
-; 22 occurrences:
+; 19 occurrences:
 ; box2d/optimized/b2_chain_shape.cpp.ll
 ; bullet3/optimized/btConvexHull.ll
 ; graphviz/optimized/shortest.c.ll
 ; icu/optimized/ucbuf.ll
 ; libevent/optimized/poll.c.ll
-; openblas/optimized/dorcsd.c.ll
-; openblas/optimized/dorcsd2by1.c.ll
 ; opencv/optimized/msd.cpp.ll
 ; openmpi/optimized/ad_nfs_read.ll
 ; openmpi/optimized/ad_nfs_write.ll
@@ -23,7 +19,6 @@
 ; openspiel/optimized/tarok.cc.ll
 ; openusd/optimized/quadRefinement.cpp.ll
 ; protobuf/optimized/php_generator.cc.ll
-; xgboost/optimized/allgather.cc.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i1 %1, i32 %2) #0 {
 entry:
@@ -34,7 +29,7 @@ entry:
   ret ptr %6
 }
 
-; 25 occurrences:
+; 24 occurrences:
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/b3CpuNarrowPhase.ll
 ; bullet3/optimized/b3FixedConstraint.ll
@@ -55,18 +50,17 @@ entry:
 ; bullet3/optimized/btReducedDeformableBody.ll
 ; bullet3/optimized/btRigidBody.ll
 ; bullet3/optimized/btSequentialImpulseConstraintSolver.ll
-; opencv/optimized/daisy.cpp.ll
 ; openusd/optimized/matrix3d.cpp.ll
 ; openusd/optimized/matrix3f.cpp.ll
 ; openusd/optimized/matrix4d.cpp.ll
 ; openusd/optimized/matrix4f.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i1 %1, i32 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = sext i32 %3 to i64
   %5 = select i1 %1, i64 0, i64 %4
-  %6 = getelementptr nusw float, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw float, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -107,14 +101,26 @@ entry:
 }
 
 ; 1 occurrences:
-; opencv/optimized/slice_layer.cpp.ll
+; opencv/optimized/daisy.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000c(ptr %0, i1 %1, i32 %2) #0 {
+define ptr @func000000000000000e(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = select i1 %1, i64 1, i64 %4
-  %6 = getelementptr %"class.cv::Range.3584151", ptr %0, i64 %5
+  %5 = select i1 %1, i64 0, i64 %4
+  %6 = getelementptr nusw float, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; xgboost/optimized/allgather.cc.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %2, 1
+  %4 = sext i32 %3 to i64
+  %5 = select i1 %1, i64 2, i64 %4
+  %6 = getelementptr nusw nuw i64, ptr %0, i64 %5
   ret ptr %6
 }
 

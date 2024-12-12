@@ -1,5 +1,5 @@
 
-; 144 occurrences:
+; 140 occurrences:
 ; clamav/optimized/pdf.c.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
 ; fmt/optimized/format-impl-test.cc.ll
@@ -38,9 +38,6 @@
 ; linux/optimized/ipv6_sockglue.ll
 ; linux/optimized/mcast.ll
 ; linux/optimized/ndisc.ll
-; linux/optimized/net-traces.ll
-; linux/optimized/nf_conntrack_proto.ll
-; linux/optimized/nf_defrag_ipv4.ll
 ; linux/optimized/nf_log_syslog.ll
 ; linux/optimized/nf_queue.ll
 ; linux/optimized/nfnetlink_log.ll
@@ -63,7 +60,6 @@
 ; linux/optimized/tcp_timer.ll
 ; linux/optimized/tx.ll
 ; linux/optimized/udp.ll
-; linux/optimized/xfrm6_output.ll
 ; linux/optimized/xfrm_output.ll
 ; linux/optimized/xprtsock.ll
 ; luajit/optimized/lj_asm.ll
@@ -145,7 +141,7 @@
 ; ruby/optimized/regcomp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0) #0 {
+define i1 @func0000000000000041(i32 %0) #0 {
 entry:
   %1 = shl nuw i32 1, %0
   %2 = and i32 %1, 2031
@@ -153,7 +149,7 @@ entry:
   ret i1 %3
 }
 
-; 21 occurrences:
+; 20 occurrences:
 ; duckdb/optimized/ub_duckdb_catalog_entries.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_date.cpp.ll
@@ -162,7 +158,6 @@ entry:
 ; hwloc/optimized/hwloc-gather-cpuid.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libzmq/optimized/tcp_address.cpp.ll
-; linux/optimized/vclock_gettime.ll
 ; minetest/optimized/touchscreengui.cpp.ll
 ; oiio/optimized/ddsinput.cpp.ll
 ; openjdk/optimized/dependencies.ll
@@ -176,7 +171,7 @@ entry:
 ; zxing/optimized/ODCode39Writer.cpp.ll
 ; zxing/optimized/ODCode93Writer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0) #0 {
+define i1 @func0000000000000061(i32 %0) #0 {
 entry:
   %1 = shl nuw nsw i32 1, %0
   %2 = and i32 %1, 5
@@ -210,7 +205,7 @@ entry:
 ; postgres/optimized/partbounds.ll
 ; postgres/optimized/planner.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0) #0 {
+define i1 @func000000000000004c(i32 %0) #0 {
 entry:
   %1 = shl nuw i32 1, %0
   %2 = and i32 %1, 12
@@ -223,7 +218,7 @@ entry:
 ; openjdk/optimized/dependencies.ll
 ; protobuf/optimized/descriptor.pb.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i32 %0) #0 {
+define i1 @func000000000000006c(i32 %0) #0 {
 entry:
   %1 = shl nuw nsw i32 1, %0
   %2 = and i32 %1, 510
@@ -235,7 +230,7 @@ entry:
 ; draco/optimized/sequential_normal_attribute_encoder.cc.ll
 ; openjdk/optimized/macroArrayCopy.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0) #0 {
+define i1 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = icmp ugt i32 %0, 2
   ret i1 %1
@@ -244,22 +239,11 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/extraUtilFile.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0) #0 {
+define i1 @func000000000000004a(i32 %0) #0 {
 entry:
   %1 = shl nuw i32 1, %0
   %2 = and i32 %1, -2147483645
   %3 = icmp sgt i32 %2, 0
-  ret i1 %3
-}
-
-; 1 occurrences:
-; lief/optimized/ecp.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0) #0 {
-entry:
-  %1 = shl nuw nsw i32 1, %0
-  %2 = and i32 %1, 254
-  %3 = icmp ne i32 %2, 0
   ret i1 %3
 }
 

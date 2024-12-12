@@ -15,7 +15,7 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000004c(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = icmp ne i32 %0, %1
@@ -37,7 +37,7 @@ entry:
 ; 1 occurrences:
 ; soc-simulator/optimized/sim_mycpu.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000027(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000047(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = icmp sle i32 %0, %1
@@ -51,7 +51,7 @@ entry:
 ; soc-simulator/optimized/sim_mycpu.ll
 ; wireshark/optimized/profile_dialog.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000046(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = icmp slt i32 %0, %1
@@ -65,7 +65,7 @@ entry:
 ; llvm/optimized/CFGPrinter.cpp.ll
 ; llvm/optimized/MemorySSA.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = icmp eq i32 %0, %1
@@ -73,7 +73,8 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; llvm/optimized/SemaAttr.cpp.ll
 ; Function Attrs: nounwind
@@ -99,7 +100,7 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/value_generator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000025(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000045(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = icmp ule i32 %0, %1

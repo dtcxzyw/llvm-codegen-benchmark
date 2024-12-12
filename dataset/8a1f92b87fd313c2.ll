@@ -1,5 +1,6 @@
 
-; 9 occurrences:
+; 10 occurrences:
+; boost/optimized/alloc_lib.ll
 ; folly/optimized/AsyncSocket.cpp.ll
 ; freetype/optimized/autofit.c.ll
 ; linux/optimized/signal.ll
@@ -46,17 +47,6 @@ entry:
   %2 = and i64 %1, -4
   %3 = select i1 %0, i64 16, i64 24
   %4 = add nsw i64 %3, %2
-  ret i64 %4
-}
-
-; 1 occurrences:
-; vcpkg/optimized/export.prefab.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000002(i1 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, -4
-  %3 = select i1 %0, i64 0, i64 12
-  %4 = add nuw i64 %3, %2
   ret i64 %4
 }
 

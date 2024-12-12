@@ -1,7 +1,6 @@
 
-; 2 occurrences:
+; 1 occurrences:
 ; libevent/optimized/buffer.c.ll
-; linux/optimized/fadvise.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -12,9 +11,9 @@ entry:
 }
 
 ; 3 occurrences:
-; cmake/optimized/cmSystemTools.cxx.ll
 ; hyperscan/optimized/ue2string.cpp.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
+; zed-rs/optimized/11rrvqb0alhs5mh4wxxke3etr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1, i64 %2) #0 {
 entry:

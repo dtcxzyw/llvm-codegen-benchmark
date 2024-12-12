@@ -15,8 +15,7 @@ entry:
   ret i64 %5
 }
 
-; 250 occurrences:
-; c3c/optimized/decltable.c.ll
+; 248 occurrences:
 ; c3c/optimized/symtab.c.ll
 ; c3c/optimized/types.c.ll
 ; hermes/optimized/CFG.cpp.ll
@@ -63,7 +62,6 @@ entry:
 ; llvm/optimized/BranchProbabilityInfo.cpp.ll
 ; llvm/optimized/BranchRelaxation.cpp.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
-; llvm/optimized/CGCXX.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; llvm/optimized/CGDecl.cpp.ll
@@ -307,8 +305,7 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
-; c3c/optimized/decltable.c.ll
+; 3 occurrences:
 ; c3c/optimized/symtab.c.ll
 ; hermes/optimized/APInt.cpp.ll
 ; llvm/optimized/APInt.cpp.ll

@@ -1,5 +1,5 @@
 
-; 49 occurrences:
+; 48 occurrences:
 ; arrow/optimized/utf8.cc.ll
 ; brotli/optimized/utf8_util.c.ll
 ; clamav/optimized/unicode.cpp.ll
@@ -18,7 +18,6 @@
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_guc_ads.ll
 ; linux/optimized/intel_psr.ll
-; linux/optimized/intel_snps_phy.ll
 ; linux/optimized/intel_vdsc.ll
 ; linux/optimized/intel_workarounds.ll
 ; linux/optimized/tg3.ll

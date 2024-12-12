@@ -4,14 +4,14 @@ func0000000000000001:                   # @func0000000000000001
 	testb	$3, %al
 	sete	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	shrxl	%edx, %esi, %eax
 	andl	$15, %eax
 	movzbl	%dil, %ecx
 	cmpl	%eax, %ecx
 	seta	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	shrxl	%edx, %esi, %eax
 	andl	$15, %eax
 	movzbl	%dil, %ecx

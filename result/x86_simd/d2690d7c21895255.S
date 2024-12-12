@@ -21,9 +21,9 @@ func0000000000000003:                   # @func0000000000000003
 	vmovdqa64	%ymm1, %ymm0 {%k1}
 	retq
 .LCPI2_0:
-	.quad	15                              # 0xf
+	.quad	16383                           # 0x3fff
 .LCPI2_1:
-	.quad	-16                             # 0xfffffffffffffff0
+	.quad	32767                           # 0x7fff
 func0000000000000001:                   # @func0000000000000001
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3

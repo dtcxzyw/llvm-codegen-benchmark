@@ -1,21 +1,21 @@
-func0000000000000058:                   # @func0000000000000058
-	cmpq	%rdi, %rdx
-	setb	%cl
-	cmpq	%rsi, %rdx
-	setae	%al
+func00000000000000a8:                   # @func00000000000000a8
+	cmpq	%rdx, %rdi
+	seta	%cl
+	cmpq	%rdx, %rsi
+	setbe	%al
 	orb	%cl, %al
 	retq
-func0000000000000048:                   # @func0000000000000048
-	cmpq	%rdi, %rdx
-	setb	%cl
-	cmpq	%rsi, %rdx
-	seta	%al
+func0000000000000088:                   # @func0000000000000088
+	cmpq	%rdx, %rdi
+	seta	%cl
+	cmpq	%rdx, %rsi
+	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
-	cmpq	%rdi, %rdx
+func0000000000000021:                   # @func0000000000000021
+	cmpq	%rdx, %rdi
 	sete	%cl
-	cmpq	%rsi, %rdx
+	cmpq	%rdx, %rsi
 	sete	%al
 	orb	%cl, %al
 	retq

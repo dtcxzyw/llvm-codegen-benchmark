@@ -15,7 +15,7 @@ entry:
   ret i32 %3
 }
 
-; 25 occurrences:
+; 24 occurrences:
 ; abc/optimized/utilNam.c.ll
 ; cmake/optimized/fastcover.c.ll
 ; cmake/optimized/zdict.c.ll
@@ -31,7 +31,6 @@ entry:
 ; llvm/optimized/ExpandLargeFpConvert.cpp.ll
 ; llvm/optimized/StringMap.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
-; openssl/optimized/libtestutil-lib-random.ll
 ; php/optimized/encode.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
@@ -104,6 +103,7 @@ entry:
 ; 22 occurrences:
 ; abc/optimized/cloud.c.ll
 ; abc/optimized/cuddSubsetSP.c.ll
+; boost/optimized/to_chars.ll
 ; icu/optimized/dayperiodrules.ll
 ; icu/optimized/utrie2_builder.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -114,7 +114,6 @@ entry:
 ; meshlab/optimized/ml_default_decorators.cpp.ll
 ; opencv/optimized/bitmatrixparser.cpp.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
-; openmpi/optimized/name_fns.ll
 ; openmpi/optimized/ompi_rte.ll
 ; pbrt-v4/optimized/ArHosekSkyModel.c.ll
 ; postgres/optimized/inet_cidr_ntop.ll
@@ -145,14 +144,14 @@ entry:
 }
 
 ; 2 occurrences:
+; boost/optimized/test_codecvt.ll
 ; linux/optimized/scatterlist.ll
-; linux/optimized/utownerid.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000020(i32 %0) #0 {
 entry:
-  %1 = icmp ugt i32 %0, 128
-  %2 = add i32 %0, -1
-  %3 = select i1 %1, i32 126, i32 %2
+  %1 = icmp ugt i32 %0, -3
+  %2 = add i32 %0, 16711680
+  %3 = select i1 %1, i32 16777213, i32 %2
   ret i32 %3
 }
 

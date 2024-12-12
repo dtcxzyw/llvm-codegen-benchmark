@@ -114,7 +114,7 @@
 ; velox/optimized/Filter.cpp.ll
 ; verilator/optimized/V3Config.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001a8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 3
@@ -218,7 +218,7 @@ entry:
 ; rocksdb/optimized/backup_engine.cc.ll
 ; velox/optimized/Filter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 4
@@ -243,7 +243,7 @@ entry:
 ; rocksdb/optimized/db_impl_files.cc.ll
 ; spike/optimized/tsi.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000da(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001aa(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 3
@@ -253,12 +253,9 @@ entry:
   ret i1 %7
 }
 
-; 16 occurrences:
+; 13 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; cvc5/optimized/cadical.cpp.ll
-; eastl/optimized/TestDeque.cpp.ll
-; eastl/optimized/TestExtra.cpp.ll
-; eastl/optimized/TestIterator.cpp.ll
 ; entt/optimized/meta_container.cpp.ll
 ; llvm/optimized/FunctionPropertiesAnalysis.cpp.ll
 ; llvm/optimized/HIPUtility.cpp.ll
@@ -271,20 +268,20 @@ entry:
 ; rocksdb/optimized/db_impl_files.cc.ll
 ; spike/optimized/tsi.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001b4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 3
   %5 = ashr exact i64 %0, 3
   %6 = add nsw i64 %5, %4
-  %7 = icmp ult i64 %6, 64
+  %7 = icmp samesign ult i64 %6, 64
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; yosys/optimized/ql_dsp_simd.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000121(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 3
@@ -299,7 +296,7 @@ entry:
 ; eastl/optimized/TestExtra.cpp.ll
 ; eastl/optimized/TestSort.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000124(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 6
@@ -309,16 +306,44 @@ entry:
   ret i1 %7
 }
 
+; 3 occurrences:
+; eastl/optimized/TestDeque.cpp.ll
+; eastl/optimized/TestExtra.cpp.ll
+; eastl/optimized/TestIterator.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001a4(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = ashr exact i64 %3, 6
+  %5 = ashr exact i64 %0, 6
+  %6 = add nsw i64 %5, %4
+  %7 = icmp ult i64 %6, 4
+  ret i1 %7
+}
+
 ; 1 occurrences:
 ; eastl/optimized/BenchmarkDeque.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000009a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000012a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 3
   %5 = ashr i64 %0, 1
   %6 = add nsw i64 %5, %4
   %7 = icmp sgt i64 %6, -1
+  ret i1 %7
+}
+
+; 1 occurrences:
+; eastl/optimized/BenchmarkDeque.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000134(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = ashr exact i64 %3, 3
+  %5 = ashr i64 %0, 1
+  %6 = add nsw i64 %5, %4
+  %7 = icmp samesign ult i64 %6, 64
   ret i1 %7
 }
 

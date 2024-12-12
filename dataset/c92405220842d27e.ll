@@ -26,8 +26,7 @@ entry:
   ret i64 %6
 }
 
-; 2 occurrences:
-; llvm/optimized/SLPVectorizer.cpp.ll
+; 1 occurrences:
 ; simdjson/optimized/simdjson.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i64 %0, i32 %1) #0 {
@@ -40,12 +39,8 @@ entry:
   ret i64 %6
 }
 
-; 7 occurrences:
-; llvm/optimized/APINotesWriter.cpp.ll
+; 3 occurrences:
 ; llvm/optimized/InstCombinePHI.cpp.ll
-; llvm/optimized/LoadStoreVectorizer.cpp.ll
-; llvm/optimized/MCContext.cpp.ll
-; llvm/optimized/MIRFSDiscriminator.cpp.ll
 ; llvm/optimized/MachineTraceMetrics.cpp.ll
 ; nori/optimized/textarea.cpp.ll
 ; Function Attrs: nounwind

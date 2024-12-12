@@ -1,10 +1,14 @@
 
-; 117 occurrences:
+; 130 occurrences:
 ; abseil-cpp/optimized/symbolize.cc.ll
 ; assimp/optimized/ASEParser.cpp.ll
 ; assimp/optimized/BaseImporter.cpp.ll
 ; assimp/optimized/ColladaLoader.cpp.ll
 ; assimp/optimized/NFFLoader.cpp.ll
+; boost/optimized/ipvfuture_rule.ll
+; boost/optimized/query_rule.ll
+; boost/optimized/src.ll
+; boost/optimized/static_string.ll
 ; cjson/optimized/cJSON_Utils.c.ll
 ; clamav/optimized/msxml.c.ll
 ; clamav/optimized/phishcheck.c.ll
@@ -17,6 +21,7 @@
 ; cmake/optimized/url.c.ll
 ; cmake/optimized/urlapi.c.ll
 ; cpython/optimized/_codecs_kr.ll
+; cpython/optimized/_json.ll
 ; cpython/optimized/binascii.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
@@ -46,6 +51,7 @@
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; duckdb/optimized/ub_duckdb_main.cpp.ll
 ; freetype/optimized/psaux.c.ll
+; freetype/optimized/type1.c.ll
 ; git/optimized/pretty.ll
 ; git/optimized/wildmatch.ll
 ; glog/optimized/symbolize.cc.ll
@@ -65,17 +71,24 @@
 ; libquic/optimized/f_string.c.ll
 ; linux/optimized/namei_msdos.ll
 ; llvm/optimized/AsmLexer.cpp.ll
+; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/BreakableToken.cpp.ll
 ; llvm/optimized/ClangDiagnosticsEmitter.cpp.ll
+; llvm/optimized/DJB.cpp.ll
 ; llvm/optimized/ExprClassification.cpp.ll
+; llvm/optimized/GVN.cpp.ll
+; llvm/optimized/InstCombinePHI.cpp.ll
+; llvm/optimized/NewGVN.cpp.ll
 ; llvm/optimized/ParentMap.cpp.ll
+; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/RewriteObjCFoundationAPI.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
-; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/SemaFixItUtils.cpp.ll
+; llvm/optimized/SimplifyCFG.cpp.ll
 ; llvm/optimized/StringRef.cpp.ll
 ; llvm/optimized/TGParser.cpp.ll
 ; llvm/optimized/TransRetainReleaseDealloc.cpp.ll
+; llvm/optimized/TypeBasedAliasAnalysis.cpp.ll
 ; llvm/optimized/VPlanRecipes.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
@@ -126,7 +139,7 @@ entry:
   ret i1 %3
 }
 
-; 26 occurrences:
+; 24 occurrences:
 ; assimp/optimized/BaseImporter.cpp.ll
 ; cmake/optimized/urlapi.c.ll
 ; crow/optimized/example.cpp.ll
@@ -143,22 +156,34 @@ entry:
 ; crow/optimized/example_ws.cpp.ll
 ; crow/optimized/helloworld.cpp.ll
 ; curl/optimized/libcurl_la-urlapi.ll
-; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; grpc/optimized/percent_encoding.cc.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; icu/optimized/ucnvmbcs.ll
 ; luau/optimized/isocline.c.ll
 ; openjdk/optimized/hb-ot-tag.ll
-; php/optimized/string.ll
+; php/optimized/decode.ll
 ; ruby/optimized/pack.ll
 ; wireshark/optimized/packet-dof.c.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i8 %0) #0 {
+define i1 @func0000000000000024(i8 %0) #0 {
 entry:
   %1 = freeze i8 %0
   %2 = add nsw i8 %1, -9
   %3 = icmp ult i8 %2, 2
+  ret i1 %3
+}
+
+; 4 occurrences:
+; duckdb/optimized/ub_duckdb_common_types.cpp.ll
+; grpc/optimized/percent_encoding.cc.ll
+; icu/optimized/ucnvmbcs.ll
+; php/optimized/string.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i8 %0) #0 {
+entry:
+  %1 = freeze i8 %0
+  %2 = add nsw i8 %1, -52
+  %3 = icmp samesign ult i8 %2, 26
   ret i1 %3
 }
 

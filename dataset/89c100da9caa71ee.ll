@@ -1,6 +1,7 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
+; lvgl/optimized/lv_color.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; ncnn/optimized/mat_pixel.cpp.ll
 ; nori/optimized/nanovg.c.ll
@@ -22,8 +23,7 @@ entry:
   ret i32 %7
 }
 
-; 2 occurrences:
-; opencv/optimized/cap_v4l.cpp.ll
+; 1 occurrences:
 ; stb/optimized/stb_image.c.ll
 ; Function Attrs: nounwind
 define i32 @func00000000000000aa(i32 %0, i32 %1, i32 %2) #0 {

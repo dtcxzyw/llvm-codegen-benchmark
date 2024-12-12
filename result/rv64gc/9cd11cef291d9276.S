@@ -18,3 +18,10 @@ func0000000000000005:                   # @func0000000000000005
 	and	a0, a0, a1
 	and	a0, a0, a2
 	ret
+func0000000000000002:                   # @func0000000000000002
+	lui	a2, 253952
+	fmv.w.x	fa5, a2
+	flt.s	a2, fa0, fa5
+	and	a0, a0, a1
+	and	a0, a0, a2
+	ret

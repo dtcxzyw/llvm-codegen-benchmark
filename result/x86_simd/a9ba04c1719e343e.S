@@ -1,0 +1,16 @@
+.LCPI0_0:
+	.quad	0x7fffffffffffffff              # double NaN
+func0000000000000024:                   # @func0000000000000024
+	vandpd	.LCPI0_0(%rip){1to8}, %zmm1, %zmm1
+	vcmpltpd	%zmm1, %zmm0, %k0
+	vpmovm2d	%k0, %ymm0
+	vpsrld	$31, %ymm0, %ymm0
+	retq
+.LCPI1_0:
+	.quad	0x7fffffffffffffff              # double NaN
+func0000000000000036:                   # @func0000000000000036
+	vandpd	.LCPI1_0(%rip){1to8}, %zmm1, %zmm1
+	vcmpnltpd	%zmm0, %zmm1, %k0
+	vpmovm2d	%k0, %ymm0
+	vpsrld	$31, %ymm0, %ymm0
+	retq

@@ -1,5 +1,5 @@
 
-; 127 occurrences:
+; 126 occurrences:
 ; abseil-cpp/optimized/bit_gen_ref_test.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/duration_test.cc.ll
@@ -24,6 +24,7 @@
 ; abseil-cpp/optimized/unordered_map_test.cc.ll
 ; abseil-cpp/optimized/unordered_set_test.cc.ll
 ; arrow/optimized/io_util.cc.ll
+; boost/optimized/benchmark_fstream.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; ceres/optimized/fake_bundle_adjustment_jacobian.cc.ll
@@ -55,7 +56,6 @@
 ; llvm/optimized/RandomNumberGenerator.cpp.ll
 ; llvm/optimized/Randstruct.cpp.ll
 ; meshlab/optimized/filter_ao.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; nix/optimized/filetransfer.ll
 ; ocio/optimized/Platform.cpp.ll
 ; oiio/optimized/filesystem.cpp.ll
@@ -107,7 +107,6 @@
 ; quantlib/optimized/fireflyalgorithm.ll
 ; quantlib/optimized/particleswarmoptimization.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
-; redis/optimized/mt19937-64.ll
 ; rocksdb/optimized/block_cache_trace_analyzer.cc.ll
 ; rocksdb/optimized/cache_key.cc.ll
 ; rocksdb/optimized/compaction_picker.cc.ll

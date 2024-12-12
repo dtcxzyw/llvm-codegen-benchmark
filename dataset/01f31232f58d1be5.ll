@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openjdk/optimized/classFileParser.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func000000000000010c(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = icmp ugt i16 %2, 50
   %4 = icmp ne ptr %0, %1
@@ -16,7 +16,7 @@ entry:
 ; llvm/optimized/HeaderIncludes.cpp.ll
 ; llvm/optimized/ParseDeclCXX.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func000000000000002c(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 63
   %4 = icmp ne ptr %0, %1
@@ -29,7 +29,7 @@ entry:
 ; llvm/optimized/AnalysisBasedWarnings.cpp.ll
 ; llvm/optimized/CodeGenPGO.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func000000000000018c(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = icmp ne i16 %2, 0
   %4 = icmp ne ptr %0, %1
@@ -43,7 +43,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/overlay_scroll_bar.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 24
   %4 = icmp eq ptr %0, %1
@@ -54,7 +54,7 @@ entry:
 ; 1 occurrences:
 ; lz4/optimized/lz4.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000089(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func0000000000000109(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = icmp ugt i16 %2, 7
   %4 = icmp uge ptr %0, %1
@@ -66,7 +66,7 @@ entry:
 ; hyperscan/optimized/gough.c.ll
 ; hyperscan/optimized/mcclellan.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func0000000000000184(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = icmp ne i16 %2, 0
   %4 = icmp ult ptr %0, %1

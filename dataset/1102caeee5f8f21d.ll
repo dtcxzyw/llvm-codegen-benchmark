@@ -1,5 +1,5 @@
 
-%struct.stbtt__edge.2869456 = type { float, float, float, float, i32 }
+%struct.stbtt__edge.3063033 = type { float, float, float, float, i32 }
 
 ; 13 occurrences:
 ; cvc5/optimized/regexp_elim.cpp.ll
@@ -16,12 +16,12 @@
 ; openjdk/optimized/jquant2.ll
 ; verilator/optimized/V3TSP.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i1 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = zext i32 %3 to i64
   %5 = select i1 %1, i64 0, i64 %4
-  %6 = getelementptr nusw float, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw float, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -29,24 +29,24 @@ entry:
 ; mitsuba3/optimized/roughplastic.cpp.ll
 ; mitsuba3/optimized/spectrum.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i1 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
   %5 = select i1 %1, i64 0, i64 %4
-  %6 = getelementptr nusw float, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw float, ptr %0, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; folly/optimized/json.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i1 %1, i32 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = zext i32 %3 to i64
   %5 = select i1 %1, i64 8, i64 %4
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -58,12 +58,12 @@ entry:
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i1 %1, i32 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = zext nneg i32 %3 to i64
   %5 = select i1 %1, i64 0, i64 %4
-  %6 = getelementptr nusw %struct.stbtt__edge.2869456, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.stbtt__edge.3063033, ptr %0, i64 %5
   ret ptr %6
 }
 

@@ -18,16 +18,17 @@
 ; lightgbm/optimized/tree.cpp.ll
 ; luau/optimized/lnumprint.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(i64 %0, i128 %1) #0 {
+define i1 @func0000000000000148(i64 %0, i128 %1) #0 {
 entry:
   %2 = lshr i128 %1, 64
   %3 = trunc nuw i128 %2 to i64
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   %5 = icmp ugt i64 %4, 999999999999999999
   ret i1 %5
 }
 
-; 162 occurrences:
+; 163 occurrences:
+; boost/optimized/to_chars.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
 ; lief/optimized/BinaryParser.cpp.ll
@@ -191,11 +192,11 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i64 %0, i128 %1) #0 {
+define i1 @func0000000000000144(i64 %0, i128 %1) #0 {
 entry:
   %2 = lshr i128 %1, 64
   %3 = trunc nuw i128 %2 to i64
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   %5 = icmp ult i64 %4, 100
   ret i1 %5
 }
@@ -203,12 +204,24 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/lnumprint.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i128 %1) #0 {
+define i1 @func0000000000000108(i64 %0, i128 %1) #0 {
 entry:
   %2 = lshr i128 %1, 64
   %3 = trunc nuw i128 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = icmp ugt i64 %4, 1
+  ret i1 %5
+}
+
+; 1 occurrences:
+; boost/optimized/approximately_equals.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i64 %0, i128 %1) #0 {
+entry:
+  %2 = lshr i128 %1, 6
+  %3 = trunc i128 %2 to i64
+  %4 = add i64 %0, %3
+  %5 = icmp ult i64 %4, 7
   ret i1 %5
 }
 

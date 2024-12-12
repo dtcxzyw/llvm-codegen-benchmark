@@ -2,19 +2,18 @@
 ; 1 occurrences:
 ; ruby/optimized/gc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 7
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = icmp eq i64 %4, 0
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; linux/optimized/unwind_orc.ll
 ; llvm/optimized/Triple.cpp.ll
-; opencv/optimized/softfloat.cpp.ll
 ; qemu/optimized/source_s_mulAddF16.c.ll
 ; spike/optimized/s_mulAddF128.ll
 ; spike/optimized/s_mulAddF16.ll
@@ -24,7 +23,7 @@ entry:
 define i1 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1023
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = icmp eq i64 %4, 0
   %6 = and i1 %5, %0
   ret i1 %6
@@ -44,9 +43,9 @@ entry:
 define i1 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4503599627370495
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = icmp ne i64 %4, 0
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -55,12 +54,12 @@ entry:
 ; linux/optimized/mprotect.ll
 ; linux/optimized/set_memory.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 436849163854934776
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = icmp ne i64 %4, 0
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

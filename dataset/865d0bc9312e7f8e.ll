@@ -1,6 +1,7 @@
 
-; 159 occurrences:
+; 160 occurrences:
 ; assimp/optimized/MDLMaterialLoader.cpp.ll
+; boost/optimized/topology.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cvc5/optimized/options_handler.cpp.ll
 ; cxxopts/optimized/example.cpp.ll
@@ -119,7 +120,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -156,9 +156,10 @@
 ; xgboost/optimized/input_split_base.cc.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i16 %0) #0 {
 entry:
@@ -168,7 +169,7 @@ entry:
   ret i8 %3
 }
 
-; 55 occurrences:
+; 54 occurrences:
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/ColladaParser.cpp.ll
 ; assimp/optimized/D3MFImporter.cpp.ll
@@ -182,7 +183,6 @@ entry:
 ; assimp/optimized/XGLLoader.cpp.ll
 ; clamav/optimized/cabd.c.ll
 ; clamav/optimized/entconv.c.ll
-; cmake/optimized/archive_write_add_filter_lz4.c.ll
 ; cpython/optimized/unicodeobject.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; eastl/optimized/EAString.cpp.ll
@@ -218,12 +218,12 @@ entry:
 ; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
 ; tree-sitter-rs/optimized/42mwgpotg9phq80h.ll
 ; wireshark/optimized/packet-ebhscr.c.ll
-; wireshark/optimized/packet-hdmi.c.ll
 ; wireshark/optimized/packet-mac-lte.c.ll
 ; wireshark/optimized/packet-mausb.c.ll
 ; wireshark/optimized/packet-tcp.c.ll
 ; wireshark/optimized/packet-usbll.c.ll
 ; wireshark/optimized/str_util.c.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i16 %0) #0 {
 entry:
@@ -233,7 +233,7 @@ entry:
   ret i8 %3
 }
 
-; 62 occurrences:
+; 51 occurrences:
 ; clamav/optimized/arcread.cpp.ll
 ; icu/optimized/ubidi_props.ll
 ; linux/optimized/af_packet.ll
@@ -278,24 +278,13 @@ entry:
 ; spike/optimized/f16_mul.ll
 ; spike/optimized/f16_rem.ll
 ; spike/optimized/f16_sqrt.ll
-; spike/optimized/f16_to_f128.ll
-; spike/optimized/f16_to_f32.ll
-; spike/optimized/f16_to_f64.ll
-; spike/optimized/f16_to_i32.ll
-; spike/optimized/f16_to_i32_r_minMag.ll
-; spike/optimized/f16_to_i64.ll
-; spike/optimized/f16_to_i64_r_minMag.ll
-; spike/optimized/f16_to_ui32.ll
-; spike/optimized/f16_to_ui32_r_minMag.ll
-; spike/optimized/f16_to_ui64.ll
-; spike/optimized/f16_to_ui64_r_minMag.ll
 ; vcpkg/optimized/postbuildlint.cpp.ll
 ; wireshark/optimized/blf.c.ll
 ; wireshark/optimized/packet-btle_rf.c.ll
 ; wireshark/optimized/packet-dvb-s2-bb.c.ll
 ; wireshark/optimized/packet-ehdlc.c.ll
 ; wireshark/optimized/packet-h265.c.ll
-; wireshark/optimized/packet-hdmi.c.ll
+; zed-rs/optimized/5wz01y896jxljxzjbwo9cjiak.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i16 %0) #0 {
 entry:

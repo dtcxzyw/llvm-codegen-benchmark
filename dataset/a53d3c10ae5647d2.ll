@@ -1,5 +1,5 @@
 
-; 31 occurrences:
+; 30 occurrences:
 ; assimp/optimized/ASELoader.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; bdwgc/optimized/gc.c.ll
@@ -18,7 +18,6 @@
 ; gromacs/optimized/toppush.cpp.ll
 ; jq/optimized/parser.ll
 ; libquic/optimized/persistent_histogram_allocator.cc.ll
-; linux/optimized/auth_unix.ll
 ; llvm/optimized/CGExprConstant.cpp.ll
 ; opencv/optimized/scatterND_layer.cpp.ll
 ; php/optimized/zend_language_parser.ll
@@ -164,7 +163,7 @@ entry:
   ret i64 %4
 }
 
-; 134 occurrences:
+; 137 occurrences:
 ; abseil-cpp/optimized/statusor_test.cc.ll
 ; arrow/optimized/builder_binary.cc.ll
 ; arrow/optimized/chunk_resolver.cc.ll
@@ -176,6 +175,10 @@ entry:
 ; arrow/optimized/type.cc.ll
 ; assimp/optimized/CalcTangentsProcess.cpp.ll
 ; assimp/optimized/IRRLoader.cpp.ll
+; boost/optimized/collate.ll
+; boost/optimized/env.ll
+; boost/optimized/ext.ll
+; boost/optimized/process.ll
 ; casadi/optimized/bspline_interpolant.cpp.ll
 ; casadi/optimized/dae_builder_internal.cpp.ll
 ; casadi/optimized/integration_tools.cpp.ll
@@ -273,7 +276,6 @@ entry:
 ; quantlib/optimized/fdsimpleklugeextouvppengine.ll
 ; quantlib/optimized/fixedratecoupon.ll
 ; quantlib/optimized/flatvol.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/genericlsregression.ll
 ; quantlib/optimized/gmres.ll
 ; quantlib/optimized/hestonslvfdmmodel.ll
@@ -308,9 +310,10 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; assimp/optimized/MD5Loader.cpp.ll
 ; gromacs/optimized/colvarbias_meta.cpp.ll
+; openspiel/optimized/crowd_modelling_2d.cc.ll
 ; quantlib/optimized/swaptionvoldiscrete.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i64 %0, i64 %1) #0 {
@@ -320,8 +323,7 @@ entry:
   ret i64 %3
 }
 
-; 5 occurrences:
-; libquic/optimized/persistent_histogram_allocator.cc.ll
+; 4 occurrences:
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
 ; linux/optimized/trace_probe.ll
 ; quantlib/optimized/gsr.ll

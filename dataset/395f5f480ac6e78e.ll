@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 26 occurrences:
 ; c3c/optimized/llvm_codegen_type.c.ll
 ; cpython/optimized/fileutils.ll
 ; hermes/optimized/DateUtil.cpp.ll
@@ -13,13 +13,11 @@
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/BasicBlock.cpp.ll
 ; llvm/optimized/CoroFrame.cpp.ll
-; llvm/optimized/FastISel.cpp.ll
 ; llvm/optimized/JumpThreading.cpp.ll
 ; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; llvm/optimized/ObjCARCContract.cpp.ll
 ; llvm/optimized/SampleProfileProbe.cpp.ll
 ; llvm/optimized/SanitizerCoverage.cpp.ll
-; llvm/optimized/SemaOverload.cpp.ll
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; llvm/optimized/SjLjEHPrepare.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll

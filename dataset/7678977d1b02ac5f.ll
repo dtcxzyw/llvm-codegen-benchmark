@@ -24,7 +24,6 @@ entry:
 ; libsodium/optimized/libsodium_la-codecs.ll
 ; linux/optimized/alps.ll
 ; linux/optimized/irq.ll
-; linux/optimized/nvram.ll
 ; linux/optimized/zstd_decompress.ll
 ; php/optimized/zip.ll
 ; postgres/optimized/brin_minmax_multi.ll
@@ -45,6 +44,7 @@ entry:
 ; wireshark/optimized/wimax_compact_dlmap_ie_decoder.c.ll
 ; wireshark/optimized/wimax_compact_ulmap_ie_decoder.c.ll
 ; zstd/optimized/zstd_decompress.c.ll
+; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i8 %0) #0 {
 entry:
@@ -96,7 +96,6 @@ entry:
 ; postgres/optimized/json.ll
 ; postgres/optimized/jsonb.ll
 ; postgres/optimized/jsonb_gin.ll
-; postgres/optimized/jsonb_op.ll
 ; postgres/optimized/jsonfuncs.ll
 ; postgres/optimized/jsonpath_exec.ll
 ; postgres/optimized/like.ll
@@ -119,6 +118,7 @@ entry:
 ; postgres/optimized/varchar.ll
 ; postgres/optimized/varlena.ll
 ; wireshark/optimized/packet-gsm_a_dtap.c.ll
+; wireshark/optimized/packet-homeplug-av.c.ll
 ; wireshark/optimized/packet-nas_5gs.c.ll
 ; wireshark/optimized/packet-nas_eps.c.ll
 ; Function Attrs: nounwind

@@ -108,7 +108,7 @@ func0000000000000002:                   # @func0000000000000002
 	.byte	255                             # 0xff
 	.byte	255                             # 0xff
 	.byte	255                             # 0xff
-func0000000000000011:                   # @func0000000000000011
+func0000000000000031:                   # @func0000000000000031
 	vpandd	.LCPI2_5(%rip){1to8}, %ymm0, %ymm1
 	vpcmpgtd	.LCPI2_1(%rip){1to8}, %ymm1, %k1
 	vpbroadcastd	.LCPI2_2(%rip), %ymm1   # ymm1 = [8,8,8,8,8,8,8,8]

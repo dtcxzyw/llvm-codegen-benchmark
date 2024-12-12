@@ -1,5 +1,5 @@
 
-; 61 occurrences:
+; 63 occurrences:
 ; abc/optimized/giaSwitch.c.ll
 ; abc/optimized/saigSimFast.c.ll
 ; abc/optimized/saigSwitch.c.ll
@@ -33,6 +33,7 @@
 ; libquic/optimized/cubic_bytes.cc.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llama.cpp/optimized/llama.cpp.ll
+; lvgl/optimized/lv_sdl_mouse.ll
 ; meshlab/optimized/decorate_base.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/glarea.cpp.ll
@@ -61,11 +62,12 @@
 ; pbrt-v4/optimized/image.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; redis/optimized/defrag.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to float
-  %4 = fmul float %3, %1
+  %4 = fmul float %1, %3
   %5 = fdiv float %4, %0
   ret float %5
 }

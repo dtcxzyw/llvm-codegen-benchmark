@@ -27,7 +27,7 @@ func000000000000000c:                   # @func000000000000000c
 	vpternlogq	$15, %ymm0, %ymm0, %ymm0 # ymm0 = ~ymm0
 	retq
 .LCPI2_0:
-	.quad	63                              # 0x3f
+	.quad	56                              # 0x38
 .LCPI2_1:
 	.quad	64                              # 0x40
 func000000000000000d:                   # @func000000000000000d

@@ -34,16 +34,15 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
-; linux/optimized/quirks.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000004(i1 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000014(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ult i64 %2, 2147483648
+  %3 = icmp samesign ult i64 %2, 2147483648
   %4 = select i1 %3, i64 141300438308749312, i64 132293239054008320
   %5 = select i1 %0, i64 %4, i64 %1
   ret i64 %5
@@ -67,6 +66,17 @@ define i64 @func000000000000000a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %2, 0
   %4 = select i1 %3, i64 9223372036854775807, i64 -9223372036854775808
+  %5 = select i1 %0, i64 %4, i64 %1
+  ret i64 %5
+}
+
+; 1 occurrences:
+; linux/optimized/quirks.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ult i64 %2, 5120
+  %4 = select i1 %3, i64 -9223372036854775799, i64 0
   %5 = select i1 %0, i64 %4, i64 %1
   ret i64 %5
 }

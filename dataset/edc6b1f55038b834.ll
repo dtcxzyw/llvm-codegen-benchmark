@@ -1,16 +1,15 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; qemu/optimized/hw_net_can_ctucan_core.c.ll
-; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; wasmtime-rs/optimized/22yyfxyxsnty4v9s.ll
 ; wasmtime-rs/optimized/3ks7b643ljwe3j81.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, 1
+  %3 = and i64 %2, 4
   %4 = icmp eq i64 %3, 0
   %5 = select i1 %4, i32 %0, i32 %1
-  %6 = and i32 %5, 1
+  %6 = and i32 %5, 13
   ret i32 %6
 }
 
@@ -21,7 +20,7 @@ entry:
 ; memcached/optimized/memcached-crc32c.ll
 ; memcached/optimized/memcached_debug-crc32c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1, i64 %2) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1
   %4 = icmp eq i64 %3, 0

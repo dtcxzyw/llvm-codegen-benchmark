@@ -5,7 +5,7 @@
 ; openjdk/optimized/sharedRuntime_x86_64.ll
 ; openvdb/optimized/VolumeAdvect.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i32 %0, i1 %1) #0 {
+define i64 @func0000000000000021(i32 %0, i1 %1) #0 {
 entry:
   %2 = icmp eq i32 %0, 3
   %3 = select i1 %2, i64 68719476736, i64 0
@@ -19,7 +19,7 @@ entry:
 ; protobuf/optimized/extension_set.cc.ll
 ; sentencepiece/optimized/extension_set.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000044(i32 %0, i1 %1) #0 {
+define i64 @func0000000000000084(i32 %0, i1 %1) #0 {
 entry:
   %2 = icmp ult i32 %0, 268435456
   %3 = select i1 %2, i64 11, i64 10
@@ -33,7 +33,7 @@ entry:
 ; arrow/optimized/key_map.cc.ll
 ; arrow/optimized/key_map_avx2.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000066(i32 %0, i1 %1) #0 {
+define i64 @func00000000000000c6(i32 %0, i1 %1) #0 {
 entry:
   %2 = icmp slt i32 %0, 30
   %3 = select i1 %2, i64 40, i64 72

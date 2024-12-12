@@ -3,7 +3,7 @@
 ; llvm/optimized/X86AsmBackend.cpp.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i8 %1) #0 {
+define i1 @func000000000000018c(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 3
   %3 = icmp ne i8 %2, 0
@@ -18,7 +18,7 @@ entry:
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/AnalysisBasedWarnings.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i8 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 15
   %3 = icmp eq i8 %2, 0
@@ -33,7 +33,7 @@ entry:
 ; llvm/optimized/CGExprAgg.cpp.ll
 ; yosys/optimized/simplify.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = icmp eq i8 %2, 0
@@ -48,7 +48,7 @@ entry:
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/netdev.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000181(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 2
   %3 = icmp ne i8 %2, 0

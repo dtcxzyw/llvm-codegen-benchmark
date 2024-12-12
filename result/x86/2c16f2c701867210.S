@@ -13,11 +13,11 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	$180, %rdi
 	setb	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	subq	%rsi, %rdi
 	testq	%rdi, %rdi
 	setg	%al
@@ -36,7 +36,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	%rax, %rdi
 	seta	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	subq	%rsi, %rdi
 	testq	%rdi, %rdi
 	setle	%al

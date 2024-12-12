@@ -9,7 +9,7 @@
 ; slurm/optimized/job_mgr.ll
 ; slurm/optimized/prep_script_slurmd.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000002a(i32 %0, i32 %1) #0 {
+define i32 @func000000000000004a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 16777216
   %3 = icmp sgt i32 %2, 33554431
@@ -22,7 +22,7 @@ entry:
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; stb/optimized/stb_easy_font.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = icmp ult i32 %2, 2

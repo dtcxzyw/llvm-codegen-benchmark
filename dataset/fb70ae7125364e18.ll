@@ -1,5 +1,5 @@
 
-; 79 occurrences:
+; 77 occurrences:
 ; arrow/optimized/bit_util.cc.ll
 ; arrow/optimized/bitmap_ops.cc.ll
 ; clamav/optimized/rarvm.cpp.ll
@@ -31,13 +31,10 @@
 ; hyperscan/optimized/smallwrite_build.cpp.ll
 ; libquic/optimized/d1_both.c.ll
 ; libquic/optimized/tls_cbc.c.ll
-; libquic/optimized/util-64.c.ll
 ; libsodium/optimized/libsodium_la-utils.ll
 ; lief/optimized/constant_time.c.ll
 ; lief/optimized/ecp.c.ll
-; linux/optimized/8250_exar.ll
 ; linux/optimized/ata_piix.ll
-; linux/optimized/ht.ll
 ; linux/optimized/i8042.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/nf_conntrack_proto_tcp.ll
@@ -79,11 +76,12 @@
 ; wireshark/optimized/packet-6lowpan.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/tls.c.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %1, %2
-  %4 = or i8 %3, %0
+  %4 = or i8 %0, %3
   ret i8 %4
 }
 
@@ -99,7 +97,7 @@ entry:
 define i8 @func0000000000000001(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %1, %2
-  %4 = or disjoint i8 %3, %0
+  %4 = or disjoint i8 %0, %3
   ret i8 %4
 }
 

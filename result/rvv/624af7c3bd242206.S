@@ -6,3 +6,10 @@ func0000000000000010:                   # @func0000000000000010
 	vsrl.vi	v8, v8, 16, v0.t
 	vsrl.vi	v8, v8, 8
 	ret
+func0000000000000030:                   # @func0000000000000030
+	li	a0, 255
+	vsetivli	zero, 8, e32, m2, ta, mu
+	vmsgtu.vx	v0, v8, a0
+	vsrl.vi	v8, v8, 8, v0.t
+	vsrl.vi	v8, v8, 4
+	ret

@@ -1,7 +1,8 @@
 func0000000000000005:                   # @func0000000000000005
-	addl	%edx, %esi
-	andl	$1, %edi
-	leal	253(%rdi,%rsi), %eax
+	testb	$1, %dil
+	leal	-86400(%rsi,%rdx), %ecx
+	leal	86400(%rsi,%rdx), %eax
+	cmovnel	%ecx, %eax
 	retq
 func0000000000000000:                   # @func0000000000000000
 	andl	$1, %edx

@@ -11,9 +11,10 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; libwebp/optimized/alpha_processing.c.ll
 ; libwebp/optimized/alpha_processing_sse2.c.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; openjdk/optimized/jdmarker.ll
 ; wireshark/optimized/file-jpeg.c.ll
 ; Function Attrs: nounwind

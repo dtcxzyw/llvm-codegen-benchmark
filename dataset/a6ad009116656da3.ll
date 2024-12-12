@@ -1,10 +1,17 @@
 
-; 50 occurrences:
+; 58 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/dchSim.c.ll
 ; abc/optimized/sswSim.c.ll
 ; arrow/optimized/bit_block_counter.cc.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; darktable/optimized/NefDecoder.cpp.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; darktable/optimized/introspection_temperature.c.ll
@@ -15,6 +22,7 @@
 ; gromacs/optimized/type.cpp.ll
 ; grpc/optimized/grpc_authorization_engine.cc.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
+; hermes/optimized/JSProxy.cpp.ll
 ; hwloc/optimized/bitmap.ll
 ; linux/optimized/addrconf.ll
 ; linux/optimized/mballoc.ll

@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 12 occurrences:
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/saigSimMv.c.ll
 ; darktable/optimized/ColorFilterArray.cpp.ll
@@ -7,11 +7,8 @@
 ; libquic/optimized/des.c.ll
 ; lief/optimized/des.c.ll
 ; openssl/optimized/libcrypto-lib-des_enc.ll
-; openssl/optimized/libcrypto-lib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-shlib-des_enc.ll
-; openssl/optimized/libcrypto-shlib-fcrypt_b.ll
 ; openssl/optimized/liblegacy-lib-des_enc.ll
-; openssl/optimized/liblegacy-lib-fcrypt_b.ll
 ; ozz-animation/optimized/animation.cc.ll
 ; ozz-animation/optimized/raw_animation_archive.cc.ll
 ; ozz-animation/optimized/raw_track.cc.ll
@@ -20,11 +17,11 @@ define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %0, 16
   %.masked = and i32 %1, -65536
-  %3 = xor i32 %2, %.masked
+  %3 = xor i32 %.masked, %2
   ret i32 %3
 }
 
-; 64 occurrences:
+; 63 occurrences:
 ; abc/optimized/abcCollapse.c.ll
 ; abc/optimized/abcIf.c.ll
 ; abc/optimized/acecCl.c.ll
@@ -46,7 +43,6 @@ entry:
 ; php/optimized/hash_gost.ll
 ; slurm/optimized/job_info.ll
 ; slurm/optimized/xhash.ll
-; wireshark/optimized/golay.c.ll
 ; yosys/optimized/fstapi.ll
 ; z3/optimized/array_axioms.cpp.ll
 ; z3/optimized/array_model.cpp.ll
@@ -94,7 +90,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %0, 16
   %.masked = and i32 %1, -65536
-  %3 = xor i32 %2, %.masked
+  %3 = xor i32 %.masked, %2
   ret i32 %3
 }
 
@@ -110,7 +106,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 30
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   %4 = shl nuw nsw i32 %3, 28
   ret i32 %4
 }
@@ -125,7 +121,7 @@ define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %0, 1
   %.masked = and i32 %1, -2
-  %3 = xor i32 %2, %.masked
+  %3 = xor i32 %.masked, %2
   ret i32 %3
 }
 

@@ -1,5 +1,5 @@
 
-; 61 occurrences:
+; 60 occurrences:
 ; assimp/optimized/DXFLoader.cpp.ll
 ; chibicc/optimized/parse.ll
 ; cmake/optimized/cmFileInstaller.cxx.ll
@@ -33,7 +33,6 @@
 ; llvm/optimized/MachineFunction.cpp.ll
 ; llvm/optimized/MachineInstr.cpp.ll
 ; llvm/optimized/ParseTentative.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RISCVLegalizerInfo.cpp.ll

@@ -5,21 +5,21 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	%rsi, %rdi
 	cmovael	%ecx, %eax
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	movq	%rdi, %rax
 	movl	$258, %ecx                      # imm = 0x102
 	subl	%edx, %ecx
 	cmpq	%rsi, %rdi
 	cmovael	%ecx, %eax
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	movq	%rdi, %rax
 	movl	$4, %ecx
 	subl	%edx, %ecx
 	cmpq	%rsi, %rdi
 	cmovael	%ecx, %eax
 	retq
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	movq	%rdi, %rax
 	movl	$18, %ecx
 	subl	%edx, %ecx

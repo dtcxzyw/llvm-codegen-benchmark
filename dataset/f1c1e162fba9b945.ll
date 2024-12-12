@@ -1,7 +1,7 @@
 
-; 18 occurrences:
+; 23 occurrences:
+; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; clap-rs/optimized/48fdpr2dy8inq5cq.ll
-; gromacs/optimized/neldermead.cpp.ll
 ; hyperscan/optimized/castlecompile.cpp.ll
 ; hyperscan/optimized/dfa_min.cpp.ll
 ; hyperscan/optimized/ng_violet.cpp.ll
@@ -18,12 +18,17 @@
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; vcpkg/optimized/strings.cpp.ll
 ; wasmtime-rs/optimized/3tukmgwo6vemwvwz.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/2tnb5q2nu282joegshdwbwmo4.ll
+; zed-rs/optimized/53iexoleo5ntv1dnjbqpooo1x.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000161(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = freeze i64 %2
   %4 = getelementptr nusw { i64, i64, { i16, i16 }, { i16, i16 }, i8, i8, i8, [5 x i8] }, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %0, i64 32
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 32
   %6 = icmp eq ptr %5, %4
   ret i1 %6
 }
@@ -31,11 +36,11 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/neldermead.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000061(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = freeze i64 %2
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %0, i64 4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 4
   %6 = icmp eq ptr %5, %4
   ret i1 %6
 }

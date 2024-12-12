@@ -5,7 +5,7 @@
 ; vcpkg/optimized/spdx.cpp.ll
 ; vcpkg/optimized/versions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000288(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000908(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = add nsw i32 %2, -48
@@ -18,7 +18,7 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/lstrlib.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000294(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000914(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = add nsw i32 %2, -48
@@ -31,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/spdy_alt_svc_wire_format.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000290(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000910(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = add nsw i32 %2, -58

@@ -9,7 +9,7 @@
 ; spike/optimized/s_subMagsF16.ll
 ; spike/optimized/s_subMagsF32.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000014(i8 %0, i32 %1) #0 {
+define i8 @func0000000000000024(i8 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i8 %0, 8
   %3 = icmp ult i32 %1, 16777216
@@ -21,7 +21,7 @@ entry:
 ; php/optimized/pcre2_compile.ll
 ; postgres/optimized/heapam.ll
 ; Function Attrs: nounwind
-define i8 @func000000000000001c(i8 %0, i32 %1) #0 {
+define i8 @func000000000000002c(i8 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i8 %0, 4
   %.not = icmp eq i32 %1, 0
@@ -66,7 +66,7 @@ entry:
 ; wireshark/optimized/blf.c.ll
 ; wireshark/optimized/packet-dof.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000011(i8 %0, i32 %1) #0 {
+define i8 @func0000000000000021(i8 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i8 %0, 16
   %3 = icmp eq i32 %1, 1
@@ -77,10 +77,10 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/scrptrun.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000018(i8 %0, i32 %1) #0 {
+define i8 @func0000000000000038(i8 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i8 %0, 8
-  %3 = icmp ugt i32 %1, 255
+  %3 = icmp samesign ugt i32 %1, 255
   %4 = select i1 %3, i8 %2, i8 %0
   ret i8 %4
 }

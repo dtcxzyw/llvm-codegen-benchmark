@@ -4,8 +4,8 @@ func0000000000000016:                   # @func0000000000000016
 	addl	%esi, %ecx
 	sarl	%ecx
 	xorl	%eax, %eax
-	cmpl	%edi, %ecx
-	setle	%al
+	cmpl	%ecx, %edi
+	setge	%al
 	retq
 func0000000000000014:                   # @func0000000000000014
 	movl	%esi, %ecx
@@ -13,8 +13,8 @@ func0000000000000014:                   # @func0000000000000014
 	addl	%esi, %ecx
 	sarl	%ecx
 	xorl	%eax, %eax
-	cmpl	%edi, %ecx
-	setl	%al
+	cmpl	%ecx, %edi
+	setg	%al
 	retq
 func0000000000000018:                   # @func0000000000000018
 	movl	%esi, %ecx
@@ -22,7 +22,7 @@ func0000000000000018:                   # @func0000000000000018
 	addl	%esi, %ecx
 	sarl	%ecx
 	xorl	%eax, %eax
-	cmpl	%edi, %ecx
+	cmpl	%ecx, %edi
 	setne	%al
 	retq
 func000000000000000c:                   # @func000000000000000c
@@ -31,6 +31,6 @@ func000000000000000c:                   # @func000000000000000c
 	addl	%esi, %ecx
 	sarl	%ecx
 	xorl	%eax, %eax
-	cmpl	%edi, %ecx
-	setg	%al
+	cmpl	%ecx, %edi
+	setl	%al
 	retq

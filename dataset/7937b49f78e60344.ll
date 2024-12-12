@@ -1,8 +1,7 @@
 
-; 20 occurrences:
+; 19 occurrences:
 ; gromacs/optimized/bench_setup.cpp.ll
 ; libzmq/optimized/inproc_lat.cpp.ll
-; libzmq/optimized/remote_lat.cpp.ll
 ; lightgbm/optimized/bin.cpp.ll
 ; lightgbm/optimized/c_api.cpp.ll
 ; lightgbm/optimized/data_parallel_tree_learner.cpp.ll

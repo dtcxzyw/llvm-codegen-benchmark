@@ -1,42 +1,42 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movzwl	%dx, %eax
 	movzwl	%si, %ecx
 	subl	%eax, %ecx
-	cmpl	%edi, %ecx
+	cmpl	%ecx, %edi
 	sete	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	movzwl	%dx, %eax
 	movzwl	%si, %ecx
 	subl	%eax, %ecx
-	cmpl	%edi, %ecx
-	setg	%al
-	retq
-func0000000000000014:                   # @func0000000000000014
-	movzwl	%dx, %eax
-	movzwl	%si, %ecx
-	subl	%eax, %ecx
-	cmpl	%edi, %ecx
-	seta	%al
-	retq
-func000000000000001a:                   # @func000000000000001a
-	movzwl	%dx, %eax
-	movzwl	%si, %ecx
-	subl	%eax, %ecx
-	cmpl	%edi, %ecx
+	cmpl	%ecx, %edi
 	setl	%al
 	retq
-func000000000000001b:                   # @func000000000000001b
+func0000000000000024:                   # @func0000000000000024
 	movzwl	%dx, %eax
 	movzwl	%si, %ecx
 	subl	%eax, %ecx
-	cmpl	%edi, %ecx
-	setle	%al
-	retq
-func0000000000000018:                   # @func0000000000000018
-	movzwl	%dx, %eax
-	movzwl	%si, %ecx
-	subl	%eax, %ecx
-	cmpl	%edi, %ecx
+	cmpl	%ecx, %edi
 	setb	%al
+	retq
+func000000000000002a:                   # @func000000000000002a
+	movzwl	%dx, %eax
+	movzwl	%si, %ecx
+	subl	%eax, %ecx
+	cmpl	%ecx, %edi
+	setg	%al
+	retq
+func000000000000002b:                   # @func000000000000002b
+	movzwl	%dx, %eax
+	movzwl	%si, %ecx
+	subl	%eax, %ecx
+	cmpl	%ecx, %edi
+	setge	%al
+	retq
+func0000000000000028:                   # @func0000000000000028
+	movzwl	%dx, %eax
+	movzwl	%si, %ecx
+	subl	%eax, %ecx
+	cmpl	%ecx, %edi
+	seta	%al
 	retq

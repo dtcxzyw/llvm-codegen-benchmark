@@ -1,6 +1,5 @@
 
 ; 51 occurrences:
-; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; cmake/optimized/fse_compress.c.ll
 ; hdf5/optimized/H5C.c.ll
 ; hdf5/optimized/H5Ctag.c.ll
@@ -23,6 +22,7 @@
 ; llvm/optimized/WindowScheduler.cpp.ll
 ; llvm/optimized/X86CmovConversion.cpp.ll
 ; llvm/optimized/X86OptimizeLEAs.cpp.ll
+; lvgl/optimized/lv_table.ll
 ; minetest/optimized/CFileSystem.cpp.ll
 ; openblas/optimized/dsytri_rook.c.ll
 ; openmpi/optimized/tm_malloc.ll
@@ -93,8 +93,7 @@ entry:
   ret i32 %3
 }
 
-; 3 occurrences:
-; icu/optimized/gregoimp.ll
+; 2 occurrences:
 ; z3/optimized/dl_finite_product_relation.cpp.ll
 ; z3/optimized/dl_sieve_relation.cpp.ll
 ; Function Attrs: nounwind

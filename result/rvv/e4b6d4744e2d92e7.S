@@ -1,30 +1,26 @@
-func0000000000000069:                   # @func0000000000000069
-	vsetivli	zero, 8, e32, m2, ta, ma
+func00000000000000a9:                   # @func00000000000000a9
+	vsetivli	zero, 8, e32, m2, ta, mu
 	vmslt.vv	v0, v8, v10
-	vadd.vi	v10, v10, -1
-	vmerge.vvm	v8, v10, v8, v0
-	vadd.vi	v8, v8, 1
+	vadd.vi	v10, v8, 1, v0.t
+	vmv.v.v	v8, v10
 	ret
-func0000000000000063:                   # @func0000000000000063
-	vsetivli	zero, 8, e32, m2, ta, ma
+func00000000000000a3:                   # @func00000000000000a3
+	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsltu.vv	v0, v8, v10
-	vadd.vi	v10, v10, -1
-	vmerge.vvm	v8, v10, v8, v0
-	vadd.vi	v8, v8, 1
+	vadd.vi	v10, v8, 1, v0.t
+	vmv.v.v	v8, v10
 	ret
-func0000000000000068:                   # @func0000000000000068
-	vsetivli	zero, 8, e32, m2, ta, ma
+func00000000000000a8:                   # @func00000000000000a8
+	vsetivli	zero, 8, e32, m2, ta, mu
 	vmslt.vv	v0, v8, v10
-	vadd.vi	v10, v10, -1
-	vmerge.vvm	v8, v10, v8, v0
-	vadd.vi	v8, v8, 1
+	vadd.vi	v10, v8, 1, v0.t
+	vmv.v.v	v8, v10
 	ret
-func0000000000000051:                   # @func0000000000000051
-	vsetivli	zero, 8, e32, m2, ta, ma
+func0000000000000091:                   # @func0000000000000091
+	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsltu.vv	v0, v8, v10
-	vadd.vi	v10, v10, -1
-	vmerge.vvm	v8, v10, v8, v0
-	vadd.vi	v8, v8, 1
+	vadd.vi	v10, v8, 1, v0.t
+	vmv.v.v	v8, v10
 	ret
 func0000000000000010:                   # @func0000000000000010
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -33,38 +29,33 @@ func0000000000000010:                   # @func0000000000000010
 	vmerge.vvm	v8, v10, v8, v0
 	vadd.vi	v8, v8, 4
 	ret
-func0000000000000058:                   # @func0000000000000058
-	vsetivli	zero, 8, e32, m2, ta, ma
+func0000000000000098:                   # @func0000000000000098
+	vsetivli	zero, 8, e32, m2, ta, mu
 	vmslt.vv	v0, v8, v10
-	vadd.vi	v10, v10, -1
-	vmerge.vvm	v8, v10, v8, v0
-	vadd.vi	v8, v8, 1
+	vadd.vi	v10, v8, 1, v0.t
+	vmv.v.v	v8, v10
 	ret
-func0000000000000059:                   # @func0000000000000059
-	vsetivli	zero, 8, e32, m2, ta, ma
+func0000000000000099:                   # @func0000000000000099
+	vsetivli	zero, 8, e32, m2, ta, mu
 	vmslt.vv	v0, v8, v10
-	vadd.vi	v10, v10, -1
-	vmerge.vvm	v8, v10, v8, v0
-	vadd.vi	v8, v8, 1
+	vadd.vi	v10, v8, 1, v0.t
+	vmv.v.v	v8, v10
 	ret
-func000000000000006a:                   # @func000000000000006a
-	vsetivli	zero, 8, e32, m2, ta, ma
+func00000000000000aa:                   # @func00000000000000aa
+	vsetivli	zero, 8, e32, m2, ta, mu
 	vmslt.vv	v0, v8, v10
-	vadd.vi	v10, v10, -1
-	vmerge.vvm	v8, v10, v8, v0
-	vadd.vi	v8, v8, 1
+	vadd.vi	v10, v8, 1, v0.t
+	vmv.v.v	v8, v10
 	ret
-func0000000000000052:                   # @func0000000000000052
-	vsetivli	zero, 8, e32, m2, ta, ma
+func00000000000000d2:                   # @func00000000000000d2
+	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsltu.vv	v0, v8, v10
-	vadd.vi	v10, v10, -1
-	vmerge.vvm	v8, v10, v8, v0
-	vadd.vi	v8, v8, 1
+	vadd.vi	v10, v8, 1, v0.t
+	vmv.v.v	v8, v10
 	ret
-func000000000000005a:                   # @func000000000000005a
-	vsetivli	zero, 8, e32, m2, ta, ma
+func000000000000009a:                   # @func000000000000009a
+	vsetivli	zero, 8, e32, m2, ta, mu
 	vmslt.vv	v0, v8, v10
-	vadd.vi	v10, v10, -1
-	vmerge.vvm	v8, v10, v8, v0
-	vadd.vi	v8, v8, 1
+	vadd.vi	v10, v8, 1, v0.t
+	vmv.v.v	v8, v10
 	ret

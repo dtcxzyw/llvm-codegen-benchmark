@@ -8,7 +8,7 @@ entry:
   %3 = and i32 %1, %2
   %4 = icmp ne i32 %3, 0
   %5 = zext i1 %4 to i32
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   ret i32 %6
 }
 
@@ -31,7 +31,7 @@ entry:
   %3 = and i32 %1, %2
   %4 = icmp ne i32 %3, 0
   %5 = zext i1 %4 to i32
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   ret i32 %6
 }
 

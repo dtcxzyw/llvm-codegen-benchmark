@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openssl/optimized/evp_test-bin-evp_test.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000005f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = getelementptr i8, ptr %0, i64 80
@@ -13,7 +13,7 @@ entry:
 ; 1 occurrences:
 ; folly/optimized/TimeUtil.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000028(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000002c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = getelementptr i8, ptr %0, i64 131
@@ -21,7 +21,7 @@ entry:
   ret ptr %5
 }
 
-; 26 occurrences:
+; 27 occurrences:
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; influxdb-rs/optimized/4xdswox27ronf9w0.ll
@@ -48,8 +48,9 @@ entry:
 ; wasmtime-rs/optimized/3wy7qx4e8fg0rwt0.ll
 ; wasmtime-rs/optimized/48myxw210mngc99c.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000fa(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func00000000000000ff(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 %1, %2
   %4 = getelementptr i8, ptr %0, i64 32
@@ -57,14 +58,15 @@ entry:
   ret ptr %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
 ; openjdk/optimized/relocator.ll
 ; syn/optimized/59s55fjcmu2d325w.ll
 ; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
+; zed-rs/optimized/2coqqf198wkzirvxqog0epalb.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = getelementptr i8, ptr %0, i64 5
@@ -79,15 +81,15 @@ define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
   %4 = getelementptr i8, ptr %0, i64 -8
-  %5 = getelementptr i64, ptr %4, i64 %3
-  %6 = getelementptr i64, ptr %5, i64 %1
+  %5 = getelementptr i64, ptr %4, i64 %1
+  %6 = getelementptr i64, ptr %5, i64 %3
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; lief/optimized/rsa.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000008a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000008e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
   %4 = getelementptr i8, ptr %0, i64 -1
@@ -95,12 +97,13 @@ entry:
   ret ptr %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; luajit/optimized/minilua.ll
 ; luau/optimized/lstrlib.cpp.ll
+; opencv/optimized/onnx_importer.cpp.ll
 ; redis/optimized/lstrlib.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = getelementptr i8, ptr %0, i64 2
@@ -108,10 +111,24 @@ entry:
   ret ptr %5
 }
 
+; 4 occurrences:
+; boost/optimized/alloc_lib.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/url_view_base.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = getelementptr i8, ptr %0, i64 864
+  %5 = getelementptr i8, ptr %4, i64 %3
+  ret ptr %5
+}
+
 ; 1 occurrences:
 ; lodepng/optimized/lodepng.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000003b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = getelementptr i8, ptr %0, i64 -1

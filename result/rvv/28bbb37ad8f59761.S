@@ -34,7 +34,13 @@ func0000000000000034:                   # @func0000000000000034
 	vsub.vv	v8, v8, v9
 	vsll.vi	v8, v8, 3
 	ret
-func0000000000000004:                   # @func0000000000000004
+func0000000000000025:                   # @func0000000000000025
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vnsrl.wi	v9, v10, 0
+	vsub.vv	v8, v8, v9
+	vsll.vi	v8, v8, 16
+	ret
+func0000000000000007:                   # @func0000000000000007
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
 	vsub.vv	v8, v8, v9
@@ -51,4 +57,16 @@ func0000000000000030:                   # @func0000000000000030
 	vnsrl.wi	v9, v10, 0
 	vsub.vv	v8, v8, v9
 	vsll.vi	v8, v8, 16
+	ret
+func0000000000000033:                   # @func0000000000000033
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vnsrl.wi	v9, v10, 0
+	vsub.vv	v8, v8, v9
+	vsll.vi	v8, v8, 2
+	ret
+func0000000000000017:                   # @func0000000000000017
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vnsrl.wi	v9, v10, 0
+	vsub.vv	v8, v8, v9
+	vsll.vi	v8, v8, 3
 	ret

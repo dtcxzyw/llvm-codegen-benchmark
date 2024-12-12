@@ -1,17 +1,17 @@
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	subw	a0, a0, a1
 	slli	a0, a0, 35
 	srli	a0, a0, 35
 	seqz	a0, a0
 	ret
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	sub	a0, a0, a1
 	lui	a1, 262144
 	addiw	a1, a1, -32
 	and	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	sub	a0, a0, a1
 	lui	a1, 524288
 	addiw	a1, a1, -64
@@ -31,13 +31,7 @@ func0000000000000001:                   # @func0000000000000001
 	srli	a0, a0, 35
 	seqz	a0, a0
 	ret
-func0000000000000041:                   # @func0000000000000041
-	subw	a0, a0, a1
-	slli	a0, a0, 35
-	srli	a0, a0, 35
-	seqz	a0, a0
-	ret
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	subw	a0, a0, a1
 	slli	a0, a0, 35
 	srli	a0, a0, 35

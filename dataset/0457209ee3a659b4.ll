@@ -1,5 +1,5 @@
 
-; 1206 occurrences:
+; 1236 occurrences:
 ; abc/optimized/abcSpeedup.c.ll
 ; abc/optimized/amapMatch.c.ll
 ; abc/optimized/giaBalAig.c.ll
@@ -56,6 +56,10 @@
 ; assimp/optimized/XFileImporter.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/src.ll
 ; box2d/optimized/b2_collide_polygon.cpp.ll
 ; box2d/optimized/b2_contact_solver.cpp.ll
 ; box2d/optimized/b2_distance.cpp.ll
@@ -327,7 +331,6 @@
 ; gromacs/optimized/replicaexchange.cpp.ll
 ; gromacs/optimized/setup.cpp.ll
 ; gromacs/optimized/slas2.cpp.ll
-; gromacs/optimized/slassq.cpp.ll
 ; gromacs/optimized/snrm2.cpp.ll
 ; gromacs/optimized/swapcoords.cpp.ll
 ; gromacs/optimized/tpi.cpp.ll
@@ -376,6 +379,10 @@
 ; lodepng/optimized/lodepng_util.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
 ; luau/optimized/lmathlib.cpp.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_demo_vector_graphic.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meilisearch-rs/optimized/55beptyn1v6yeqaz.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
@@ -404,7 +411,6 @@
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
@@ -797,6 +803,7 @@
 ; oiio/optimized/imagebuf.cpp.ll
 ; oiio/optimized/imagebufalgo.cpp.ll
 ; oiio/optimized/imagebufalgo_channels.cpp.ll
+; oiio/optimized/imagebufalgo_minmaxchan.cpp.ll
 ; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
 ; oiio/optimized/imagebufalgo_xform.cpp.ll
 ; oiio/optimized/imagebufalgo_yee.cpp.ll
@@ -965,7 +972,6 @@
 ; opencv/optimized/waldboost.cpp.ll
 ; opencv/optimized/warpers.cpp.ll
 ; opencv/optimized/warpfield.cpp.ll
-; opencv/optimized/weighted_median_filter.cpp.ll
 ; openexr/optimized/ImfAcesFile.cpp.ll
 ; openexr/optimized/ImfChromaticities.cpp.ll
 ; openexr/optimized/ImfEnvmap.cpp.ll
@@ -1184,7 +1190,6 @@
 ; wireshark/optimized/packet-nr-rrc.c.ll
 ; wireshark/optimized/packet-s1ap.c.ll
 ; wireshark/optimized/packet-ulp.c.ll
-; wireshark/optimized/packet-x2ap.c.ll
 ; wireshark/optimized/packet-xnap.c.ll
 ; xgboost/optimized/column_matrix.cc.ll
 ; xgboost/optimized/elementwise_metric.cc.ll
@@ -1198,6 +1203,31 @@
 ; xgboost/optimized/updater_coordinate.cc.ll
 ; xgboost/optimized/updater_shotgun.cc.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/1i7qzw3x0brpuvmm674e62mm0.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/4kidsk70o8yfs5e4frb89ok7e.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/5t11v1wc3a9lo225k1xr00pdg.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/8mv6d566jv1jdve4gk2kn2bhk.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
+; zed-rs/optimized/a5zoltfqgma86dzb1rp0ilkm9.ll
+; zed-rs/optimized/ahd9e352ekh05680xrqpqafs1.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
+; zed-rs/optimized/dk3mu4s97ymh6nwez7kj5espe.ll
 ; zxing/optimized/DMHighLevelEncoder.cpp.ll
 ; zxing/optimized/ODDataBarCommon.cpp.ll
 ; zxing/optimized/ODDataBarExpandedReader.cpp.ll

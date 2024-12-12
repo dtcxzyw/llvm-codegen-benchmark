@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 16 occurrences:
 ; clamav/optimized/arcread.cpp.ll
 ; flatbuffers/optimized/annotated_binary_text_gen.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -15,6 +15,7 @@
 ; openusd/optimized/patchTableFactory.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-bpv6.c.ll
+; zed-rs/optimized/6r72qkitrvbw1ftdc9j10udqo.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:

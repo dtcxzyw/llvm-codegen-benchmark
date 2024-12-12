@@ -1,10 +1,6 @@
 
-; 5 occurrences:
-; ceres/optimized/block_jacobi_preconditioner.cc.ll
+; 1 occurrences:
 ; darktable/optimized/tiff.c.ll
-; openblas/optimized/dtrsm_kernel_LN.c.ll
-; openblas/optimized/strsm_kernel_LN.c.ll
-; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -44,12 +40,27 @@ entry:
 ; ceres/optimized/dogleg_strategy.cc.ll
 ; openblas/optimized/strsm_kernel_RT.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, %1
-  %4 = getelementptr nusw double, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw double, ptr %0, i64 %3
   %5 = and i64 %1, 12
-  %6 = getelementptr nusw double, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw double, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 4 occurrences:
+; ceres/optimized/block_jacobi_preconditioner.cc.ll
+; openblas/optimized/dtrsm_kernel_LN.c.ll
+; openblas/optimized/strsm_kernel_LN.c.ll
+; pybind11/optimized/test_eigen_matrix.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul nsw i64 %2, %1
+  %4 = getelementptr nusw double, ptr %0, i64 %3
+  %5 = and i64 %1, 9223372036854775804
+  %6 = getelementptr nusw nuw double, ptr %4, i64 %5
   ret ptr %6
 }
 

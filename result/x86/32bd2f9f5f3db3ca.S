@@ -13,7 +13,7 @@ func000000000000000c:                   # @func000000000000000c
 	cmpb	$1, %sil
 	sbbq	%rax, %rax
 	orq	%rdx, %rax
-	testq	%rdi, %rax
+	testq	%rax, %rdi
 	setne	%al
 	retq
 func0000000000000004:                   # @func0000000000000004

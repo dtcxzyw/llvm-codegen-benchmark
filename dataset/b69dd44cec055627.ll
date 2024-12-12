@@ -1,5 +1,5 @@
 
-; 474 occurrences:
+; 476 occurrences:
 ; arrow/optimized/light_array.cc.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; bullet3/optimized/b3VoronoiSimplexSolver.ll
@@ -123,18 +123,15 @@
 ; linux/optimized/drm_dsc_helper.ll
 ; linux/optimized/fib_semantics.ll
 ; linux/optimized/fib_trie.ll
-; linux/optimized/fs-writeback.ll
 ; linux/optimized/host.ll
 ; linux/optimized/i915_gem_execbuffer.ll
 ; linux/optimized/i915_vma.ll
 ; linux/optimized/intel_sdvo.ll
 ; linux/optimized/intel_sseu.ll
 ; linux/optimized/io_apic.ll
-; linux/optimized/keyboard.ll
 ; linux/optimized/nexthop.ll
 ; linux/optimized/nfs4proc.ll
 ; linux/optimized/pcm_native.ll
-; linux/optimized/percpu-refcount.ll
 ; linux/optimized/reg.ll
 ; linux/optimized/socket.ll
 ; linux/optimized/synaptics.ll
@@ -179,6 +176,10 @@
 ; llvm/optimized/X86Disassembler.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_image.ll
+; lvgl/optimized/lv_label.ll
+; lvgl/optimized/lv_obj_draw.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; minetest/optimized/CSkinnedMesh.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
@@ -474,19 +475,21 @@
 ; z3/optimized/polynomial.cpp.ll
 ; z3/optimized/theory_arith.cpp.ll
 ; z3/optimized/upolynomial.cpp.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 4
-  %4 = or disjoint i8 %3, %1
+  %4 = or disjoint i8 %1, %3
   %5 = or disjoint i8 %4, %0
   ret i8 %5
 }
 
-; 24 occurrences:
+; 25 occurrences:
 ; c3c/optimized/sema_expr.c.ll
 ; git/optimized/name-rev.ll
 ; linux/optimized/8250_port.ll
+; linux/optimized/keyboard.ll
 ; llama.cpp/optimized/ggml-quants.c.ll
 ; llvm/optimized/AggressiveInstCombine.cpp.ll
 ; llvm/optimized/AliasAnalysis.cpp.ll
@@ -512,12 +515,12 @@ entry:
 define i8 @func0000000000000000(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 12
-  %4 = or i8 %3, %1
+  %4 = or i8 %1, %3
   %5 = or i8 %4, %0
   ret i8 %5
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; linux/optimized/blk-map.ll
 ; linux/optimized/drm_dp_helper.ll
 ; linux/optimized/socket.ll
@@ -526,6 +529,7 @@ entry:
 ; llvm/optimized/ComputeDependence.cpp.ll
 ; llvm/optimized/TemplateBase.cpp.ll
 ; llvm/optimized/X86Disassembler.cpp.ll
+; postgres/optimized/regcomp.ll
 ; qemu/optimized/hw_char_serial.c.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; yosys/optimized/fstapi.ll
@@ -533,8 +537,8 @@ entry:
 define i8 @func0000000000000002(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 64
-  %4 = or disjoint i8 %3, %1
-  %5 = or i8 %4, %0
+  %4 = or disjoint i8 %1, %3
+  %5 = or i8 %0, %4
   ret i8 %5
 }
 

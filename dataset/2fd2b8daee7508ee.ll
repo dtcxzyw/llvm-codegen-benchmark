@@ -1,5 +1,5 @@
 
-; 39 occurrences:
+; 40 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/bit_gen_ref_test.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
@@ -17,6 +17,7 @@
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; abseil-cpp/optimized/uniform_real_distribution_test.cc.ll
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
+; boost/optimized/to_chars.ll
 ; coreutils-rs/optimized/4o7j3eorsq1l9mcp.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
 ; fmt/optimized/format-impl-test.cc.ll
@@ -47,7 +48,7 @@ entry:
   ret i128 %3
 }
 
-; 391 occurrences:
+; 396 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; abseil-cpp/optimized/bernoulli_distribution_test.cc.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
@@ -74,6 +75,9 @@ entry:
 ; abseil-cpp/optimized/uniform_real_distribution_test.cc.ll
 ; abseil-cpp/optimized/wide_multiply_test.cc.ll
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/to_chars.ll
 ; coreutils-rs/optimized/h56aibhqef681ic.ll
 ; cpython/optimized/basearith.ll
 ; cpython/optimized/crt.ll
@@ -304,7 +308,6 @@ entry:
 ; qemu/optimized/optimize.c.ll
 ; qemu/optimized/system_memory.c.ll
 ; qemu/optimized/system_physmem.c.ll
-; qemu/optimized/target_riscv_m128_helper.c.ll
 ; qemu/optimized/target_riscv_op_helper.c.ll
 ; qemu/optimized/util_host-utils.c.ll
 ; quickjs/optimized/libbf.ll
@@ -439,6 +442,9 @@ entry:
 ; wasmtime-rs/optimized/4nuxwfk1fz1jsu89.ll
 ; wasmtime-rs/optimized/55kotg5r2nkrpa1d.ll
 ; wolfssl/optimized/sp_int.c.ll
+; zed-rs/optimized/5c6qu0nt7rwrjz6em8cry1wl2.ll
+; zed-rs/optimized/bktyyhuk5fekatq647qx0ox8v.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
 define i128 @func0000000000000005(i128 %0, i128 %1) #0 {
 entry:
@@ -447,7 +453,7 @@ entry:
   ret i128 %3
 }
 
-; 21 occurrences:
+; 28 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/bit_gen_ref_test.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
@@ -465,6 +471,13 @@ entry:
 ; abseil-cpp/optimized/uniform_real_distribution_test.cc.ll
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
 ; coreutils-rs/optimized/4o7j3eorsq1l9mcp.ll
+; diesel-rs/optimized/1du97ujnwx7r1m9g.ll
+; diesel-rs/optimized/23kokisxi5pskw1l.ll
+; diesel-rs/optimized/2aaaymiv4007exkf.ll
+; diesel-rs/optimized/2gwia6lwj254vbd7.ll
+; diesel-rs/optimized/34937hqexlfu44a8.ll
+; diesel-rs/optimized/5fkixlzdmcnhldqw.ll
+; diesel-rs/optimized/wrwp7s2zqowyndr.ll
 ; grpc/optimized/fault_injection_filter.cc.ll
 ; quickjs/optimized/libbf.ll
 ; velox/optimized/md5.cpp.ll
@@ -494,7 +507,7 @@ entry:
 define i128 @func0000000000000004(i128 %0, i128 %1) #0 {
 entry:
   %2 = shl nuw i128 %1, 64
-  %3 = or i128 %2, %0
+  %3 = or i128 %0, %2
   ret i128 %3
 }
 

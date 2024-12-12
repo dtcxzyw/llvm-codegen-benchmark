@@ -13,7 +13,7 @@ define i8 @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %2, 2.560000e+02
   %4 = fdiv float %3, %1
-  %5 = fmul float %4, %0
+  %5 = fmul float %0, %4
   %6 = fptoui float %5 to i8
   ret i8 %6
 }

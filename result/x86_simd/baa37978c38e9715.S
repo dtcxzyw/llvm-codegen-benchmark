@@ -30,3 +30,15 @@ func0000000000000009:                   # @func0000000000000009
 	vpbroadcastd	.LCPI2_1(%rip), %ymm0   # ymm0 = [1024,1024,1024,1024,1024,1024,1024,1024]
 	vpternlogd	$248, .LCPI2_2(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
 	retq
+.LCPI3_0:
+	.long	640                             # 0x280
+.LCPI3_1:
+	.long	48                              # 0x30
+.LCPI3_2:
+	.long	207                             # 0xcf
+func0000000000000029:                   # @func0000000000000029
+	vpcmpltud	.LCPI3_0(%rip){1to8}, %ymm2, %k1
+	vpblendmd	%ymm0, %ymm1, %ymm1 {%k1}
+	vpbroadcastd	.LCPI3_1(%rip), %ymm0   # ymm0 = [48,48,48,48,48,48,48,48]
+	vpternlogd	$248, .LCPI3_2(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
+	retq

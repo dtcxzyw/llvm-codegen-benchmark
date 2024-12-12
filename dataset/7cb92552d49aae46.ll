@@ -1,10 +1,12 @@
 
-; 108 occurrences:
+; 110 occurrences:
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/reflection.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; crow/optimized/example_session.cpp.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
@@ -117,7 +119,7 @@ entry:
   ret i64 %4
 }
 
-; 98 occurrences:
+; 96 occurrences:
 ; abseil-cpp/optimized/bit_gen_ref_test.cc.ll
 ; abseil-cpp/optimized/extension_test.cc.ll
 ; abseil-cpp/optimized/fast_uniform_bits_test.cc.ll
@@ -126,6 +128,7 @@ entry:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; abseil-cpp/optimized/sample_recorder_test.cc.ll
 ; abseil-cpp/optimized/seed_material_test.cc.ll
+; boost/optimized/benchmark_fstream.ll
 ; cmake/optimized/block_buffer_encoder.c.ll
 ; crow/optimized/example_session.cpp.ll
 ; cvc5/optimized/partition_generator.cpp.ll
@@ -150,14 +153,12 @@ entry:
 ; llvm/optimized/BalancedPartitioning.cpp.ll
 ; llvm/optimized/InstrProfWriter.cpp.ll
 ; meshlab/optimized/filter_ao.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; nix/optimized/filetransfer.ll
 ; ocio/optimized/Platform.cpp.ll
 ; oiio/optimized/filesystem.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
 ; opencv/optimized/sparse_matching_gpc.cpp.ll
-; openmpi/optimized/tm_mt.ll
 ; openspiel/optimized/backgammon_test.cc.ll
 ; openspiel/optimized/bargaining_instance_generator.cc.ll
 ; openspiel/optimized/bridge_uncontested_bidding.cc.ll
@@ -202,7 +203,6 @@ entry:
 ; quantlib/optimized/catrisk.ll
 ; quantlib/optimized/fireflyalgorithm.ll
 ; quantlib/optimized/particleswarmoptimization.ll
-; quest/optimized/mt19937ar.c.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; rocksdb/optimized/block_cache_trace_analyzer.cc.ll
 ; rocksdb/optimized/transaction_test_util.cc.ll
@@ -225,7 +225,8 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/default_formatter_factory.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; libquic/optimized/curve25519.c.ll
 ; openssl/optimized/libcrypto-lib-curve25519.ll
@@ -234,12 +235,13 @@ entry:
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 666643
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = and i64 %3, 2097151
   ret i64 %4
 }
 
-; 19 occurrences:
+; 21 occurrences:
+; boost/optimized/to_chars.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; gromacs/optimized/minimize.cpp.ll
 ; libquic/optimized/poly1305_vec.c.ll
@@ -253,6 +255,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-curve448.ll
 ; openusd/optimized/json.cpp.ll
 ; pbrt-v4/optimized/image.cpp.ll
+; php/optimized/decode.ll
 ; qoi/optimized/qoi.ll
 ; raylib/optimized/rtextures.c.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
@@ -263,7 +266,7 @@ entry:
 define i64 @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 18
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = and i64 %3, 63
   ret i64 %4
 }
@@ -275,7 +278,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 666643
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = and i64 %3, 2097151
   ret i64 %4
 }

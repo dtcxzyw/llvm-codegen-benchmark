@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 15 occurrences:
 ; glslang/optimized/Constant.cpp.ll
 ; linux/optimized/psmouse-base.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
@@ -13,6 +13,8 @@
 ; llvm/optimized/SemaChecking.cpp.ll
 ; minetest/optimized/CImageLoaderTGA.cpp.ll
 ; rustfmt-rs/optimized/4arc02n7xt9gqo2v.ll
+; zed-rs/optimized/9lyxlodfxr6ds1lof2oq9jgs7.ll
+; zed-rs/optimized/cj7s0wliqptmxcvil2fbp8uvc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i8 %1) #0 {
 entry:

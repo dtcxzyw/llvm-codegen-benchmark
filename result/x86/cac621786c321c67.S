@@ -34,3 +34,9 @@ func0000000000000075:                   # @func0000000000000075
 	subq	%rsi, %rdi
 	leaq	-4(,%rdi,4), %rax
 	retq
+func0000000000000050:                   # @func0000000000000050
+	subq	%rdx, %rsi
+	shrq	$2, %rsi
+	subq	%rsi, %rdi
+	leaq	4(,%rdi,4), %rax
+	retq

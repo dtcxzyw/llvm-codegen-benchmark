@@ -16,7 +16,7 @@ entry:
 ; linux/optimized/sch_api.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000044(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
   %4 = lshr i32 %1, %3
@@ -37,7 +37,7 @@ entry:
 ; meshlab/optimized/ml_default_decorators.cpp.ll
 ; meshlab/optimized/seam_remover.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
   %4 = lshr i32 %1, %3

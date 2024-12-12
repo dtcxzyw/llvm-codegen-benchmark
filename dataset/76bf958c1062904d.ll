@@ -1,10 +1,9 @@
 
-%"struct.rocksdb::FdWithKeyRange.2499118" = type { %"struct.rocksdb::FileDescriptor.2499119", ptr, %"class.rocksdb::Slice.2499098", %"class.rocksdb::Slice.2499098" }
-%"struct.rocksdb::FileDescriptor.2499119" = type { ptr, i64, i64, i64, i64 }
-%"class.rocksdb::Slice.2499098" = type { ptr, i64 }
-%"class.QuantLib::Date.2718310" = type { i64 }
+%"struct.rocksdb::FdWithKeyRange.2614359" = type { %"struct.rocksdb::FileDescriptor.2614360", ptr, %"class.rocksdb::Slice.2614339", %"class.rocksdb::Slice.2614339" }
+%"struct.rocksdb::FileDescriptor.2614360" = type { ptr, i64, i64, i64, i64 }
+%"class.rocksdb::Slice.2614339" = type { ptr, i64 }
 
-; 684 occurrences:
+; 782 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/parse.cc.ll
 ; abseil-cpp/optimized/poisson_distribution_test.cc.ll
@@ -16,6 +15,58 @@
 ; assimp/optimized/3DSLoader.cpp.ll
 ; assimp/optimized/BlenderScene.cpp.ll
 ; assimp/optimized/FBXConverter.cpp.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/codecvt_converter.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/default_sink.ll
+; boost/optimized/env.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/extensions.ll
+; boost/optimized/formatter_parser.ll
+; boost/optimized/graphml.ll
+; boost/optimized/gregorian.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/init_from_settings.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/partition.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/run_exe.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/settings_parser.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/sub_launcher.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/throw_on_error.ll
+; boost/optimized/topology.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/xml_grammar.ll
+; boost/optimized/xml_wgrammar.ll
 ; ceres/optimized/array_utils.cc.ll
 ; ceres/optimized/compressed_col_sparse_matrix_utils.cc.ll
 ; ceres/optimized/parameter_block_ordering.cc.ll
@@ -299,7 +350,6 @@
 ; llvm/optimized/RISCVBaseInfo.cpp.ll
 ; llvm/optimized/RISCVISAInfo.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVMCTargetDesc.cpp.ll
 ; llvm/optimized/RISCVSubtarget.cpp.ll
@@ -508,9 +558,7 @@
 ; nix/optimized/installables.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -596,6 +644,56 @@
 ; protobuf/optimized/padding_optimizer.cc.ll
 ; protobuf/optimized/text_format.cc.ll
 ; protobuf/optimized/wire_format.cc.ll
+; quantlib/optimized/analyticptdhestonengine.ll
+; quantlib/optimized/bond.ll
+; quantlib/optimized/chebyshevinterpolation.ll
+; quantlib/optimized/cmsmarketcalibration.ll
+; quantlib/optimized/concentrating1dmesher.ll
+; quantlib/optimized/discounter.ll
+; quantlib/optimized/exponentialfittinghestonengine.ll
+; quantlib/optimized/fdm2dblackscholesop.ll
+; quantlib/optimized/fdmbatesop.ll
+; quantlib/optimized/fdmblackscholesfwdop.ll
+; quantlib/optimized/fdmblackscholesop.ll
+; quantlib/optimized/fdmcevop.ll
+; quantlib/optimized/fdmcirop.ll
+; quantlib/optimized/fdmdupire1dop.ll
+; quantlib/optimized/fdmextendedornsteinuhlenbeckop.ll
+; quantlib/optimized/fdmextoujumpop.ll
+; quantlib/optimized/fdmg2op.ll
+; quantlib/optimized/fdmhestonfwdop.ll
+; quantlib/optimized/fdmhestonhullwhiteop.ll
+; quantlib/optimized/fdmhestonop.ll
+; quantlib/optimized/fdmhullwhiteop.ll
+; quantlib/optimized/fdmklugeextouop.ll
+; quantlib/optimized/fdmlocalvolfwdop.ll
+; quantlib/optimized/fdmornsteinuhlenbeckop.ll
+; quantlib/optimized/fdmsabrop.ll
+; quantlib/optimized/fdmsquarerootfwdop.ll
+; quantlib/optimized/fdmzabrop.ll
+; quantlib/optimized/fixedlocalvolsurface.ll
+; quantlib/optimized/isdacdsengine.ll
+; quantlib/optimized/laplaceinterpolation.ll
+; quantlib/optimized/lfmhullwhiteparam.ll
+; quantlib/optimized/liborforwardmodel.ll
+; quantlib/optimized/localvolrndcalculator.ll
+; quantlib/optimized/ninepointlinearop.ll
+; quantlib/optimized/normalclvmodel.ll
+; quantlib/optimized/nthorderderivativeop.ll
+; quantlib/optimized/optionletstripper2.ll
+; quantlib/optimized/overnightindexedcouponpricer.ll
+; quantlib/optimized/pathwisediscounter.ll
+; quantlib/optimized/piecewiseintegral.ll
+; quantlib/optimized/qdfpamericanengine.ll
+; quantlib/optimized/qdplusamericanengine.ll
+; quantlib/optimized/schedule.ll
+; quantlib/optimized/sparseilupreconditioner.ll
+; quantlib/optimized/squarerootclvmodel.ll
+; quantlib/optimized/stochasticcollocationinvcdf.ll
+; quantlib/optimized/timebasket.ll
+; quantlib/optimized/timegrid.ll
+; quantlib/optimized/triplebandlinearop.ll
+; quantlib/optimized/utilities.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; rocksdb/optimized/compacted_db_impl.cc.ll
 ; rocksdb/optimized/compaction_iterator.cc.ll
@@ -657,7 +755,6 @@
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; yosys/optimized/recover_names.ll
 ; z3/optimized/algebraic_numbers.cpp.ll
@@ -690,72 +787,11 @@
 ; zxing/optimized/GTIN.cpp.ll
 ; zxing/optimized/PDFCodewordDecoder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(i1 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000000f(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
-  %4 = getelementptr nusw %"struct.rocksdb::FdWithKeyRange.2499118", ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 80
-  %6 = select i1 %0, ptr %5, ptr %1
-  ret ptr %6
-}
-
-; 50 occurrences:
-; quantlib/optimized/analyticptdhestonengine.ll
-; quantlib/optimized/bond.ll
-; quantlib/optimized/chebyshevinterpolation.ll
-; quantlib/optimized/cmsmarketcalibration.ll
-; quantlib/optimized/concentrating1dmesher.ll
-; quantlib/optimized/discounter.ll
-; quantlib/optimized/exponentialfittinghestonengine.ll
-; quantlib/optimized/fdm2dblackscholesop.ll
-; quantlib/optimized/fdmbatesop.ll
-; quantlib/optimized/fdmblackscholesfwdop.ll
-; quantlib/optimized/fdmblackscholesop.ll
-; quantlib/optimized/fdmcevop.ll
-; quantlib/optimized/fdmcirop.ll
-; quantlib/optimized/fdmdupire1dop.ll
-; quantlib/optimized/fdmextendedornsteinuhlenbeckop.ll
-; quantlib/optimized/fdmextoujumpop.ll
-; quantlib/optimized/fdmg2op.ll
-; quantlib/optimized/fdmhestonfwdop.ll
-; quantlib/optimized/fdmhestonhullwhiteop.ll
-; quantlib/optimized/fdmhestonop.ll
-; quantlib/optimized/fdmhullwhiteop.ll
-; quantlib/optimized/fdmklugeextouop.ll
-; quantlib/optimized/fdmlocalvolfwdop.ll
-; quantlib/optimized/fdmornsteinuhlenbeckop.ll
-; quantlib/optimized/fdmsabrop.ll
-; quantlib/optimized/fdmsquarerootfwdop.ll
-; quantlib/optimized/fdmzabrop.ll
-; quantlib/optimized/fixedlocalvolsurface.ll
-; quantlib/optimized/isdacdsengine.ll
-; quantlib/optimized/laplaceinterpolation.ll
-; quantlib/optimized/lfmhullwhiteparam.ll
-; quantlib/optimized/liborforwardmodel.ll
-; quantlib/optimized/localvolrndcalculator.ll
-; quantlib/optimized/ninepointlinearop.ll
-; quantlib/optimized/normalclvmodel.ll
-; quantlib/optimized/nthorderderivativeop.ll
-; quantlib/optimized/optionletstripper2.ll
-; quantlib/optimized/overnightindexedcouponpricer.ll
-; quantlib/optimized/pathwisediscounter.ll
-; quantlib/optimized/piecewiseintegral.ll
-; quantlib/optimized/qdfpamericanengine.ll
-; quantlib/optimized/qdplusamericanengine.ll
-; quantlib/optimized/schedule.ll
-; quantlib/optimized/sparseilupreconditioner.ll
-; quantlib/optimized/squarerootclvmodel.ll
-; quantlib/optimized/stochasticcollocationinvcdf.ll
-; quantlib/optimized/timebasket.ll
-; quantlib/optimized/timegrid.ll
-; quantlib/optimized/triplebandlinearop.ll
-; quantlib/optimized/utilities.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000b(i1 %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = lshr i64 %2, 1
-  %4 = getelementptr nusw %"class.QuantLib::Date.2718310", ptr %1, i64 %3
-  %5 = getelementptr nusw nuw i8, ptr %4, i64 8
+  %4 = getelementptr nusw nuw %"struct.rocksdb::FdWithKeyRange.2614359", ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 80
   %6 = select i1 %0, ptr %5, ptr %1
   ret ptr %6
 }

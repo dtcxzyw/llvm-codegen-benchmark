@@ -13,7 +13,7 @@
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 380141568
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = mul i32 %3, 461845907
   ret i32 %4
 }
@@ -24,7 +24,7 @@ entry:
 define i32 @func000000000000001c(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 380141568
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = mul i32 %3, 461845907
   ret i32 %4
 }

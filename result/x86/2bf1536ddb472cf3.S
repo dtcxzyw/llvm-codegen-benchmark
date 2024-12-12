@@ -10,12 +10,12 @@ func000000000000000c:                   # @func000000000000000c
 	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
 	cmovnsl	%ecx, %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	btq	$51, %rdi
 	movl	$4, %eax
 	sbbl	$-1, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	andl	$7, %edi
 	cmpl	$5, %edi
 	movl	$52, %ecx

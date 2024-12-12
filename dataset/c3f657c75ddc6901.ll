@@ -25,7 +25,7 @@
 ; proj/optimized/grids.cpp.ll
 ; zxing/optimized/PDFModulusGF.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000124(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
   %4 = sext i32 %3 to i64
@@ -60,7 +60,7 @@ entry:
 ; proj/optimized/grids.cpp.ll
 ; zxing/optimized/PDFModulusGF.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000128(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
   %4 = sext i32 %3 to i64
@@ -76,7 +76,7 @@ entry:
 ; openusd/optimized/quadRefinement.cpp.ll
 ; openusd/optimized/triRefinement.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 2
   %4 = sext i32 %3 to i64
@@ -86,12 +86,11 @@ entry:
   ret i1 %7
 }
 
-; 3 occurrences:
-; opencv/optimized/cap_mjpeg_encoder.cpp.ll
+; 2 occurrences:
 ; openusd/optimized/quadRefinement.cpp.ll
 ; openusd/optimized/triRefinement.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 1
   %4 = sext i32 %3 to i64
@@ -105,13 +104,26 @@ entry:
 ; openspiel/optimized/stones_and_gems.cc.ll
 ; openspiel/optimized/tiny_hanabi.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000121(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
   %4 = sext i32 %3 to i64
   %5 = sub i64 %0, %1
   %6 = ashr exact i64 %5, 5
   %7 = icmp eq i64 %6, %4
+  ret i1 %7
+}
+
+; 1 occurrences:
+; opencv/optimized/cap_mjpeg_encoder.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = shl i32 %2, 1
+  %4 = sext i32 %3 to i64
+  %5 = sub i64 %0, %1
+  %6 = ashr exact i64 %5, 2
+  %7 = icmp samesign ugt i64 %6, %4
   ret i1 %7
 }
 

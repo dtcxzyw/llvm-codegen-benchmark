@@ -1,5 +1,6 @@
 
-; 6 occurrences:
+; 7 occurrences:
+; lvgl/optimized/lv_spinbox.ll
 ; openblas/optimized/dgesvdq.c.ll
 ; opencv/optimized/datastructs.cpp.ll
 ; opencv/optimized/find_ellipses.cpp.ll

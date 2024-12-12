@@ -6,7 +6,7 @@
 ; openssl/optimized/libcrypto-shlib-tasn_enc.ll
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c1(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000181(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 16
   %4 = icmp eq i32 %3, 0

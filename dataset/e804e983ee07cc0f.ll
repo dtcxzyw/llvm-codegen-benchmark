@@ -13,7 +13,7 @@ entry:
   ret i8 %1
 }
 
-; 21 occurrences:
+; 19 occurrences:
 ; clamav/optimized/bytecode.c.ll
 ; cmake/optimized/archive_write_set_format_shar.c.ll
 ; icu/optimized/ubidi.ll
@@ -30,11 +30,9 @@ entry:
 ; wireshark/optimized/packet-camel.c.ll
 ; wireshark/optimized/packet-dmp.c.ll
 ; wireshark/optimized/packet-ieee80211-radiotap.c.ll
-; wireshark/optimized/packet-ipmi-trace.c.ll
 ; wireshark/optimized/packet-isup.c.ll
 ; wireshark/optimized/packet-lbtru.c.ll
 ; wireshark/optimized/packet-wbxml.c.ll
-; wireshark/optimized/wimax_tlv.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i8 %0) #0 {
 entry:

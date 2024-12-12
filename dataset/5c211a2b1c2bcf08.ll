@@ -1,22 +1,16 @@
 
-; 26 occurrences:
+; 24 occurrences:
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
 ; coreutils-rs/optimized/2vroer4nd2f1b54m.ll
 ; coreutils-rs/optimized/31vrb73337u20kex.ll
 ; coreutils-rs/optimized/rs4z052ww3s256h.ll
 ; cpython/optimized/unicodeobject.ll
-; hermes/optimized/Executor.cpp.ll
-; influxdb-rs/optimized/380gcqze52ow6205.ll
-; llvm/optimized/Instructions.cpp.ll
-; llvm/optimized/UninitializedObjectChecker.cpp.ll
 ; meilisearch-rs/optimized/2d8gq047pqsnm94t.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; qdrant-rs/optimized/1c93sbg7lf6g587s.ll
 ; qdrant-rs/optimized/1sx1pjpbst7gikiv.ll
 ; quickjs/optimized/libregexp.ll
-; ruby/optimized/symbol.ll
 ; rust-analyzer-rs/optimized/2pjtxeptskgmq0yj.ll
-; sentencepiece/optimized/util.cc.ll
 ; tree-sitter-rs/optimized/18kt1xijwoc4jebp.ll
 ; typst-rs/optimized/1mrwywpkq81cby93.ll
 ; typst-rs/optimized/avdrw26ojy6f9qt.ll
@@ -26,10 +20,14 @@
 ; vcpkg/optimized/sourceparagraph.cpp.ll
 ; vcpkg/optimized/spdx.cpp.ll
 ; vcpkg/optimized/versions.cpp.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000288(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000908(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 223
+  %2 = and i32 %1, -33
   %3 = add nsw i32 %2, -65
   %4 = icmp ult i32 %3, 26
   %5 = icmp ult i32 %0, 10
@@ -40,7 +38,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000230(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000870(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 252
   %3 = icmp ne i32 %2, 16
@@ -53,7 +51,7 @@ entry:
 ; icu/optimized/ucnv_ct.ll
 ; openjdk/optimized/hb-ot-shaper-thai.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000102(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -129
   %3 = add i32 %2, -3655
@@ -85,7 +83,7 @@ entry:
 ; pugixml/optimized/pugixml.cpp.ll
 ; spike/optimized/debug_module.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000282(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000902(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
   %3 = add nsw i32 %2, -11
@@ -95,7 +93,7 @@ entry:
   ret i1 %6
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; coreutils-rs/optimized/rs4z052ww3s256h.ll
 ; freetype/optimized/sfnt.c.ll
 ; git/optimized/sh-i18n--envsubst.ll
@@ -103,16 +101,15 @@ entry:
 ; graphviz/optimized/extoken.c.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; nuklear/optimized/unity.c.ll
-; nuttx/optimized/lib_iswctype.c.ll
-; nuttx/optimized/lib_isxdigit.c.ll
 ; postgres/optimized/regcomp.ll
 ; tokenizers-rs/optimized/4hn9gefsll13qr1r.ll
 ; vcpkg/optimized/paragraphs.cpp.ll
 ; vcpkg/optimized/sourceparagraph.cpp.ll
 ; yosys/optimized/filterlib.ll
 ; yosys/optimized/libparse.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000108(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -33
   %3 = add i32 %2, -65
@@ -125,7 +122,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/RawImageDataU16.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000302(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -2
   %3 = icmp ne i32 %2, 2
@@ -141,7 +138,7 @@ entry:
 ; llvm/optimized/AArch64Arm64ECCallLowering.cpp.ll
 ; slurm/optimized/job_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000298(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000918(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 15
   %3 = add nsw i32 %2, -5
@@ -156,7 +153,7 @@ entry:
 ; linux/optimized/hid-sony.ll
 ; llvm/optimized/Verifier.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000388(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000b08(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 511
   %3 = add nsw i32 %2, -33
@@ -174,13 +171,26 @@ entry:
 ; llvm/optimized/SemaExceptionSpec.cpp.ll
 ; llvm/optimized/ThreadSafety.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000228(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000848(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 127
   %3 = add nsw i32 %2, -44
   %4 = icmp ult i32 %3, -7
   %5 = icmp eq i32 %0, 0
   %6 = or i1 %4, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; pugixml/optimized/pugixml.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000928(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 15
+  %3 = add nsw i32 %2, -3
+  %4 = icmp ult i32 %3, -2
+  %5 = icmp samesign ult i32 %0, 2
+  %6 = or i1 %5, %4
   ret i1 %6
 }
 

@@ -4,7 +4,7 @@ func0000000000000001:                   # @func0000000000000001
 	addq	%rdi, %rsi
 	sete	%al
 	retq
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	andl	$1, %edx
 	subq	%rdx, %rsi
 	addq	%rdi, %rsi

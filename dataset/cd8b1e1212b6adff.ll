@@ -1,5 +1,6 @@
 
-; 18 occurrences:
+; 19 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -31,7 +32,7 @@ entry:
 ; 1 occurrences:
 ; folly/optimized/TimeUtil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000025a(i32 %0, i64 %1) #0 {
+define i1 @func00000000000004aa(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = mul nsw i32 %0, 1000
@@ -40,7 +41,9 @@ entry:
   ret i1 %5
 }
 
-; 17 occurrences:
+; 19 occurrences:
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -195,7 +198,7 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000201(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000401(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = mul i32 %0, -100
@@ -208,7 +211,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = mul nsw i32 %0, -12
@@ -221,12 +224,24 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000008a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = mul nsw i32 %0, -12
   %4 = add i32 %3, %2
   %5 = icmp sgt i32 %4, -1
+  ret i1 %5
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i1 @func000000000000040c(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw i64 %1 to i32
+  %3 = mul i32 %0, -100
+  %4 = sub i32 0, %2
+  %5 = icmp ne i32 %3, %4
   ret i1 %5
 }
 
@@ -246,7 +261,7 @@ entry:
 ; draco/optimized/corner_table.cc.ll
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000301(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000601(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = mul i32 %0, 3
@@ -258,7 +273,7 @@ entry:
 ; 1 occurrences:
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000354(i32 %0, i64 %1) #0 {
+define i1 @func00000000000006a4(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = mul nsw i32 %0, -100
@@ -270,7 +285,7 @@ entry:
 ; 1 occurrences:
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000351(i32 %0, i64 %1) #0 {
+define i1 @func00000000000006a1(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = mul nsw i32 %0, -100
@@ -282,7 +297,7 @@ entry:
 ; 1 occurrences:
 ; ocio/optimized/GradingBSplineCurve.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = mul i32 %0, 3
@@ -294,7 +309,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/_datetimemodule.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000086(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = mul nsw i32 %0, -86400

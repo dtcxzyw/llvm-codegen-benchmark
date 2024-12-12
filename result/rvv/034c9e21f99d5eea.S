@@ -5,5 +5,5 @@ func00000000000000a2:                   # @func00000000000000a2
 	vsll.vv	v10, v10, v14
 	li	a0, 32
 	vsrl.vx	v10, v10, a0
-	vmul.vv	v8, v10, v8
+	vmul.vv	v8, v8, v10
 	ret

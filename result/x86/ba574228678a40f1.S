@@ -1,4 +1,4 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	addl	%esi, %edi
 	notl	%edi
 	testb	$3, %dil
@@ -9,7 +9,7 @@ func0000000000000001:                   # @func0000000000000001
 	testl	$65534, %edi                    # imm = 0xFFFE
 	sete	%al
 	retq
-func000000000000003c:                   # @func000000000000003c
+func000000000000006c:                   # @func000000000000006c
 	addl	%esi, %edi
 	testb	$3, %dil
 	setne	%al
@@ -19,7 +19,7 @@ func000000000000000c:                   # @func000000000000000c
 	testb	$3, %dil
 	setne	%al
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	addl	%esi, %edi
 	movzbl	%dil, %eax
 	cmpl	$63, %eax

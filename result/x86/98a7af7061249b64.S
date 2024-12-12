@@ -1,25 +1,39 @@
-func00000000000000d6:                   # @func00000000000000d6
+func0000000000000042:                   # @func0000000000000042
+	cmpl	$1, %edx
+	sete	%cl
+	cmpq	%rsi, %rdi
+	sete	%al
+	orb	%cl, %al
+	retq
+func0000000000000196:                   # @func0000000000000196
 	testl	%edx, %edx
 	setle	%cl
 	cmpq	%rsi, %rdi
 	setge	%al
 	orb	%cl, %al
 	retq
-func0000000000000182:                   # @func0000000000000182
+func0000000000000302:                   # @func0000000000000302
 	testl	%edx, %edx
 	setne	%cl
 	cmpq	%rsi, %rdi
 	sete	%al
 	orb	%cl, %al
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+func0000000000000058:                   # @func0000000000000058
+	testl	%edx, %edx
+	setne	%cl
+	cmpq	%rsi, %rdi
+	sete	%al
+	orb	%cl, %al
+	retq
+func000000000000018c:                   # @func000000000000018c
 	testl	%edx, %edx
 	setle	%cl
 	cmpq	%rsi, %rdi
 	setl	%al
 	orb	%cl, %al
 	retq
-func0000000000000198:                   # @func0000000000000198
+func0000000000000318:                   # @func0000000000000318
 	testl	%edx, %edx
 	setne	%cl
 	cmpq	%rsi, %rdi

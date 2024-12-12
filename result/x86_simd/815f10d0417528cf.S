@@ -5,7 +5,7 @@ func0000000000000001:                   # @func0000000000000001
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpsrlq	$8, %ymm0, %ymm0
 	vpandn	%ymm0, %ymm1, %ymm0
 	vptestnmq	%ymm0, %ymm0, %k0

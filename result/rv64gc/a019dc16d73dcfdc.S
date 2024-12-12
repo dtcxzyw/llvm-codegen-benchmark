@@ -5,7 +5,7 @@ func0000000000000002:                   # @func0000000000000002
 	fld	fa5, %lo(.LCPI0_0)(a0)
 	fdiv.d	fa4, fa1, fa2
 	fmin.d	fa5, fa4, fa5
-	fmul.d	fa0, fa5, fa0
+	fmul.d	fa0, fa0, fa5
 	ret
 .LCPI1_0:
 	.quad	0x3cb0000000000000              # double 2.2204460492503131E-16
@@ -22,5 +22,5 @@ func000000000000000e:                   # @func000000000000000e
 	bnez	a0, .LBB2_2
 	fmv.d.x	fa5, zero
 .LBB2_2:                                # %entry
-	fmul.d	fa0, fa5, fa0
+	fmul.d	fa0, fa0, fa5
 	ret

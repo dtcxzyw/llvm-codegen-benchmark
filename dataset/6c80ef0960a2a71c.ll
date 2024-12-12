@@ -48,7 +48,7 @@ entry:
 ; yosys/optimized/xilinx_srl.ll
 ; yosys/optimized/yosys.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0) #0 {
+define i1 @func0000000000000014(i32 %0) #0 {
 entry:
   %1 = lshr i32 %0, 17
   %2 = xor i32 %1, %0

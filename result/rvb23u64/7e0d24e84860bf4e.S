@@ -1,9 +1,10 @@
 func0000000000000003:                   # @func0000000000000003
-	andi	a1, a0, 256
+	andi	a1, a0, 96
+	addi	a1, a1, -32
 	seqz	a1, a1
-	andi	a0, a0, -256
+	slli	a1, a1, 5
+	andi	a0, a0, 6
 	or	a0, a0, a1
-	addi	a0, a0, 1
 	ret
 func0000000000000002:                   # @func0000000000000002
 	andi	a1, a0, 1024

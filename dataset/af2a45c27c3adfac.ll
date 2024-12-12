@@ -1,5 +1,5 @@
 
-; 50 occurrences:
+; 49 occurrences:
 ; bullet3/optimized/btConvexHull.ll
 ; bullet3/optimized/btGImpactBvh.ll
 ; bullet3/optimized/btGImpactQuantizedBvh.ll
@@ -17,7 +17,6 @@
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_developability.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -56,52 +55,6 @@ entry:
   %1 = and i64 %0, 4294967295
   %2 = icmp eq i64 %0, 3
   %3 = select i1 %2, i64 0, i64 %1
-  ret i64 %3
-}
-
-; 3 occurrences:
-; cmake/optimized/gzwrite.c.ll
-; slurm/optimized/select_linear.ll
-; zlib/optimized/gzwrite.c.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000a(i64 %0) #0 {
-entry:
-  %1 = and i64 %0, 9223372036854775807
-  %.inv = icmp slt i64 %0, 0
-  %2 = select i1 %.inv, i64 %1, i64 0
-  ret i64 %2
-}
-
-; 1 occurrences:
-; postgres/optimized/spgutils.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000004(i64 %0) #0 {
-entry:
-  %1 = and i64 %0, -8
-  %2 = icmp ult i64 %0, 16
-  %3 = select i1 %2, i64 16, i64 %1
-  ret i64 %3
-}
-
-; 1 occurrences:
-; freetype/optimized/truetype.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000006(i64 %0) #0 {
-entry:
-  %1 = and i64 %0, -64
-  %2 = icmp slt i64 %0, 0
-  %3 = select i1 %2, i64 0, i64 %1
-  ret i64 %3
-}
-
-; 1 occurrences:
-; cpython/optimized/_hashopenssl.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0) #0 {
-entry:
-  %1 = and i64 %0, 4294967295
-  %2 = icmp ugt i64 %0, 2147483647
-  %3 = select i1 %2, i64 2147483647, i64 %1
   ret i64 %3
 }
 

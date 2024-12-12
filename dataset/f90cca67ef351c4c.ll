@@ -1,5 +1,5 @@
 
-%struct.ring_desc_ex.3362751 = type { i32, i32, i32, i32 }
+%struct.ring_desc_ex.3549262 = type { i32, i32, i32, i32 }
 
 ; 7 occurrences:
 ; gromacs/optimized/grid.cpp.ll
@@ -43,7 +43,7 @@ entry:
   %2 = add i32 %1, -1
   %3 = sext i32 %2 to i64
   %4 = inttoptr i64 %0 to ptr
-  %5 = getelementptr %struct.ring_desc_ex.3362751, ptr %4, i64 %3
+  %5 = getelementptr %struct.ring_desc_ex.3549262, ptr %4, i64 %3
   ret ptr %5
 }
 

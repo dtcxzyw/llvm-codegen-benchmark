@@ -6,7 +6,7 @@ func0000000000000003:                   # @func0000000000000003
 	addi	a0, a0, -819
 	vmulhu.vx	v9, v9, a0
 	vsrl.vi	v9, v9, 3
-	vadd.vv	v8, v9, v8
+	vadd.vv	v8, v8, v9
 	ret
 func0000000000000000:                   # @func0000000000000000
 	vsetivli	zero, 4, e32, m1, ta, ma

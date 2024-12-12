@@ -13,10 +13,11 @@ entry:
   ret ptr %6
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; cpython/optimized/ceval.ll
 ; darktable/optimized/introspection_sharpen.c.ll
 ; darktable/optimized/introspection_spots.c.ll
+; icu/optimized/decNumber.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000010(i64 %0, ptr %1, i32 %2) #0 {
@@ -53,19 +54,16 @@ entry:
   ret ptr %6
 }
 
-; 5 occurrences:
-; meshlab/optimized/filter_screened_poisson.cpp.ll
+; 2 occurrences:
 ; openblas/optimized/dsytri2x.c.ll
 ; openblas/optimized/dsytri_3x.c.ll
-; raylib/optimized/rcore.c.ll
-; redis/optimized/ziplist.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001a(i64 %0, ptr %1, i32 %2) #0 {
 entry:
-  %3 = sub nsw i32 0, %2
+  %3 = sub nsw i32 -2, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 %0
+  %5 = getelementptr nusw double, ptr %1, i64 %4
+  %6 = getelementptr nusw double, ptr %5, i64 %0
   ret ptr %6
 }
 

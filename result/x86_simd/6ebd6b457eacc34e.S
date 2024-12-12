@@ -2,7 +2,7 @@
 	.long	1048576                         # 0x100000
 .LCPI0_1:
 	.long	65528                           # 0xfff8
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpsllw	$15, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnltw	%xmm3, %xmm1, %k1

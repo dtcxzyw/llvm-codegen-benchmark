@@ -2,6 +2,9 @@
 ; 116 occurrences:
 ; abc/optimized/fretMain.c.ll
 ; abc/optimized/saigRetMin.c.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
 ; clamav/optimized/file.cpp.ll
 ; cmake/optimized/archive_acl.c.ll
 ; freetype/optimized/psaux.c.ll
@@ -24,9 +27,6 @@
 ; linux/optimized/hid-input.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/intel_dpll_mgr.ll
-; linux/optimized/intel_hti.ll
-; linux/optimized/intel_pmdemand.ll
-; linux/optimized/intel_tcc.ll
 ; linux/optimized/pci.ll
 ; linux/optimized/pcmcia_cis.ll
 ; linux/optimized/pid_list.ll
@@ -79,6 +79,7 @@
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
 ; luau/optimized/BytecodeBuilder.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/map.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
@@ -89,7 +90,6 @@
 ; openjdk/optimized/c1_LIRAssembler_x86.ll
 ; openjdk/optimized/c1_LIRGenerator.ll
 ; openjdk/optimized/c1_LIRGenerator_x86.ll
-; openjdk/optimized/c1_LinearScan.ll
 ; openjdk/optimized/cmsio0.ll
 ; openjdk/optimized/cmspack.ll
 ; openusd/optimized/patchTableFactory.cpp.ll

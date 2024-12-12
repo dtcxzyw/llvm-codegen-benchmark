@@ -4,7 +4,7 @@
 	.long	858993459                       # 0x33333333
 func000000000000000b:                   # @func000000000000000b
 	vpandd	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
-	vpaddd	%ymm1, %ymm2, %ymm1
+	vpaddd	%ymm2, %ymm1, %ymm1
 	vpbroadcastd	.LCPI0_1(%rip), %ymm2   # ymm2 = [858993459,858993459,858993459,858993459,858993459,858993459,858993459,858993459]
 	vpand	%ymm2, %ymm1, %ymm1
 	vpand	%ymm2, %ymm0, %ymm0
@@ -16,7 +16,7 @@ func000000000000000b:                   # @func000000000000000b
 	.long	117901063                       # 0x7070707
 func000000000000000f:                   # @func000000000000000f
 	vpandd	.LCPI1_0(%rip){1to8}, %ymm2, %ymm2
-	vpaddd	%ymm1, %ymm2, %ymm1
+	vpaddd	%ymm2, %ymm1, %ymm1
 	vpbroadcastd	.LCPI1_1(%rip), %ymm2   # ymm2 = [117901063,117901063,117901063,117901063,117901063,117901063,117901063,117901063]
 	vpand	%ymm2, %ymm1, %ymm1
 	vpand	%ymm2, %ymm0, %ymm0
@@ -29,7 +29,7 @@ func000000000000000f:                   # @func000000000000000f
 func0000000000000001:                   # @func0000000000000001
 	vpbroadcastd	.LCPI2_0(%rip), %ymm3   # ymm3 = [65528,65528,65528,65528,65528,65528,65528,65528]
 	vpand	%ymm3, %ymm2, %ymm2
-	vpaddd	%ymm1, %ymm2, %ymm1
+	vpaddd	%ymm2, %ymm1, %ymm1
 	vpand	%ymm3, %ymm1, %ymm1
 	vpandd	.LCPI2_1(%rip){1to8}, %ymm0, %ymm0
 	vpaddd	%ymm0, %ymm1, %ymm0
@@ -39,7 +39,7 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000000:                   # @func0000000000000000
 	vpbroadcastd	.LCPI3_0(%rip), %ymm3   # ymm3 = [4294963200,4294963200,4294963200,4294963200,4294963200,4294963200,4294963200,4294963200]
 	vpand	%ymm3, %ymm2, %ymm2
-	vpaddd	%ymm1, %ymm2, %ymm1
+	vpaddd	%ymm2, %ymm1, %ymm1
 	vpand	%ymm3, %ymm1, %ymm1
 	vpand	%ymm3, %ymm0, %ymm0
 	vpaddd	%ymm0, %ymm1, %ymm0
@@ -50,7 +50,7 @@ func0000000000000000:                   # @func0000000000000000
 	.long	858993459                       # 0x33333333
 func0000000000000007:                   # @func0000000000000007
 	vpandd	.LCPI4_0(%rip){1to8}, %ymm2, %ymm2
-	vpaddd	%ymm1, %ymm2, %ymm1
+	vpaddd	%ymm2, %ymm1, %ymm1
 	vpbroadcastd	.LCPI4_1(%rip), %ymm2   # ymm2 = [858993459,858993459,858993459,858993459,858993459,858993459,858993459,858993459]
 	vpand	%ymm2, %ymm1, %ymm1
 	vpand	%ymm2, %ymm0, %ymm0

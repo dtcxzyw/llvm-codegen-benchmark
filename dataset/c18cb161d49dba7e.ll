@@ -9,7 +9,7 @@
 define i1 @func0000000000000008(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = icmp ugt i64 %3, %2
   ret i1 %4
 }
@@ -24,12 +24,11 @@ define i1 @func0000000000000004(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = xor i64 %2, -1
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   ret i1 %4
 }
 
-; 23 occurrences:
-; linux/optimized/csum-wrappers_64.ll
+; 20 occurrences:
 ; linux/optimized/devio.ll
 ; linux/optimized/evdev.ll
 ; linux/optimized/eventpoll.ll
@@ -42,8 +41,6 @@ entry:
 ; linux/optimized/mempolicy.ll
 ; linux/optimized/printk.ll
 ; linux/optimized/read_write.ll
-; linux/optimized/readdir.ll
-; linux/optimized/rseq.ll
 ; linux/optimized/scm.ll
 ; linux/optimized/select.ll
 ; linux/optimized/seq_clientmgr.ll
@@ -57,7 +54,7 @@ define i1 @func0000000000000009(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = xor i64 %2, -1
-  %4 = icmp uge i64 %3, %0
+  %4 = icmp ule i64 %0, %3
   ret i1 %4
 }
 

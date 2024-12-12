@@ -25,13 +25,13 @@ func0000000000000004:                   # @func0000000000000004
 	sltiu	a1, a1, 625
 	and	a0, a0, a1
 	ret
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	subw	a1, a1, a2
 	slti	a1, a1, 163
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	subw	a1, a1, a2
 	sltiu	a1, a1, 47
 	and	a0, a0, a1

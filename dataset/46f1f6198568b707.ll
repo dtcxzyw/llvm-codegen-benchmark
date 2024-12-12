@@ -58,7 +58,7 @@ entry:
   ret i64 %4
 }
 
-; 31 occurrences:
+; 30 occurrences:
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/giaResub6.c.ll
 ; abc/optimized/mpmMap.c.ll
@@ -66,7 +66,6 @@ entry:
 ; linux/optimized/aperfmperf.ll
 ; linux/optimized/apic.ll
 ; linux/optimized/cstate.ll
-; linux/optimized/delay.ll
 ; linux/optimized/dmar.ll
 ; linux/optimized/hpet.ll
 ; linux/optimized/intel_pstate.ll

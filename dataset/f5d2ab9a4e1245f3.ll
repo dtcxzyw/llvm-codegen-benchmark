@@ -23,7 +23,7 @@ entry:
 define i32 @func000000000000001f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = mul nuw nsw i32 %4, 14
   ret i32 %5
 }

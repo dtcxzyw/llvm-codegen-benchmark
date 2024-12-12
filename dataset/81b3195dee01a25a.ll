@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 23 occurrences:
 ; csmith/optimized/StatementFor.cpp.ll
 ; cvc5/optimized/theory_bv_rewriter.cpp.ll
 ; darktable/optimized/introspection_lut3d.c.ll
@@ -20,7 +20,6 @@
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; openjdk/optimized/g1CollectionSetChooser.ll
-; openmpi/optimized/coll_sm_component.ll
 ; slurm/optimized/slurm_pmi.ll
 ; wireshark/optimized/wireless_frame.cpp.ll
 ; z3/optimized/pb_solver.cpp.ll
@@ -32,7 +31,7 @@ entry:
   ret i32 %4
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; gromacs/optimized/dgetri.cpp.ll
 ; gromacs/optimized/dormlq.cpp.ll
 ; gromacs/optimized/dormql.cpp.ll
@@ -43,7 +42,6 @@ entry:
 ; gromacs/optimized/sormqr.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; oiio/optimized/strutil.cpp.ll
-; openblas/optimized/dgetri.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; stb/optimized/stb_sprintf.c.ll
 ; Function Attrs: nounwind

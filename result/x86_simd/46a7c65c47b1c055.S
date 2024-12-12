@@ -15,7 +15,7 @@ func00000000000000aa:                   # @func00000000000000aa
 	.long	4294964946                      # 0xfffff6d2
 func0000000000000020:                   # @func0000000000000020
 	vpmulld	.LCPI1_0(%rip){1to8}, %ymm2, %ymm2
-	vpaddd	%ymm0, %ymm2, %ymm0
+	vpaddd	%ymm2, %ymm0, %ymm0
 	vpmulld	.LCPI1_1(%rip){1to8}, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpsrad	$12, %ymm0, %ymm0

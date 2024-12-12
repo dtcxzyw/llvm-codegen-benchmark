@@ -1,5 +1,5 @@
 
-; 119 occurrences:
+; 118 occurrences:
 ; freetype/optimized/ftbase.c.ll
 ; linux/optimized/tcp_input.ll
 ; linux/optimized/tcp_output.ll
@@ -58,7 +58,6 @@
 ; mitsuba3/optimized/path.cpp.ll
 ; mitsuba3/optimized/plastic.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/point.cpp.ll
 ; mitsuba3/optimized/polarizer.cpp.ll
 ; mitsuba3/optimized/pplastic.cpp.ll

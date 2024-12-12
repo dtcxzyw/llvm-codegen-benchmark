@@ -2,7 +2,7 @@
 	.quad	-3689348814741910323            # 0xcccccccccccccccd
 .LCPI0_1:
 	.quad	-7378697629483820646            # 0x999999999999999a
-func00000000000000b1:                   # @func00000000000000b1
+func0000000000000161:                   # @func0000000000000161
 	vpsraq	$3, %ymm1, %ymm1
 	vpmullq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
 	vpsraq	$3, %ymm0, %ymm0

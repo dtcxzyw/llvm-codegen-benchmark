@@ -1,9 +1,11 @@
 
-; 2 occurrences:
+; 4 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000002a(i32 %0, i64 %1, i32 %2) #0 {
+define i64 @func000000000000004a(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 %1, %3
@@ -27,7 +29,7 @@ entry:
 ; mini-lsm-rs/optimized/wk9xduxamtyfjix.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(i32 %0, i64 %1, i32 %2) #0 {
+define i64 @func0000000000000041(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 %1, %3

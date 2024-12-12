@@ -1,5 +1,5 @@
 
-; 45 occurrences:
+; 43 occurrences:
 ; abc/optimized/abcSaucy.c.ll
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/ifDec16.c.ll
@@ -11,7 +11,6 @@
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; flac/optimized/getopt.c.ll
-; linux/optimized/gso.ll
 ; linux/optimized/ip6_input.ll
 ; miniaudio/optimized/unity.c.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
@@ -23,7 +22,6 @@
 ; openblas/optimized/dorbdb2.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; openblas/optimized/dsptri.c.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
 ; opencv/optimized/filter.dispatch.cpp.ll
 ; opencv/optimized/slice_layer.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
@@ -54,11 +52,12 @@ entry:
   ret i32 %5
 }
 
-; 186 occurrences:
+; 181 occurrences:
 ; abc/optimized/bacPrsBuild.c.ll
 ; abc/optimized/cbaReadVer.c.ll
 ; abc/optimized/cecSplit.c.ll
 ; abc/optimized/lpkMulti.c.ll
+; boost/optimized/area.ll
 ; cmake/optimized/cover.c.ll
 ; cmake/optimized/fastcover.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
@@ -67,15 +66,12 @@ entry:
 ; cpython/optimized/instrumentation.ll
 ; darktable/optimized/RawImageDataU16.cpp.ll
 ; gromacs/optimized/colvarbias_meta.cpp.ll
-; gromacs/optimized/dlarfb.cpp.ll
 ; gromacs/optimized/dormql.cpp.ll
 ; gromacs/optimized/gmx_make_edi.cpp.ll
-; gromacs/optimized/slarfb.cpp.ll
 ; gromacs/optimized/sormql.cpp.ll
 ; hdf5/optimized/H5HFsection.c.ll
 ; hdf5/optimized/H5HFtest.c.ll
 ; hyperscan/optimized/repeat.c.ll
-; icu/optimized/gregoimp.ll
 ; icu/optimized/unisetspan.ll
 ; icu/optimized/usearch.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
@@ -106,6 +102,7 @@ entry:
 ; luajit/optimized/lj_tab_dyn.ll
 ; luajit/optimized/minilua.ll
 ; luau/optimized/ltable.cpp.ll
+; lvgl/optimized/lv_refr.ll
 ; memcached/optimized/memcached-memcached.ll
 ; memcached/optimized/memcached_debug-memcached.ll
 ; meshlab/optimized/additionalgui.cpp.ll
@@ -123,20 +120,16 @@ entry:
 ; mold/optimized/arch-sh4.cc.ll
 ; nori/optimized/tabwidget.cpp.ll
 ; oiio/optimized/imageinput.cpp.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dgghd3.c.ll
 ; openblas/optimized/dlantp.c.ll
 ; openblas/optimized/dlarfb.c.ll
 ; openblas/optimized/dlarrv.c.ll
 ; openblas/optimized/dorbdb.c.ll
 ; openblas/optimized/dorgql.c.ll
-; openblas/optimized/dorgr2.c.ll
 ; openblas/optimized/dormql.c.ll
 ; openblas/optimized/dormrq.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; openblas/optimized/dsptri.c.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
-; openblas/optimized/dtptri.c.ll
 ; opencv/optimized/convolution.cpp.ll
 ; opencv/optimized/convolution_layer.cpp.ll
 ; opencv/optimized/datastructs.cpp.ll
@@ -265,7 +258,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sub nuw i32 %4, %0
   ret i32 %5
 }
@@ -309,7 +302,8 @@ entry:
   ret i32 %5
 }
 
-; 15 occurrences:
+; 16 occurrences:
+; boost/optimized/to_chars.ll
 ; graphviz/optimized/emit.c.ll
 ; gromacs/optimized/dlascl.cpp.ll
 ; gromacs/optimized/slascl.cpp.ll
@@ -372,11 +366,12 @@ entry:
   ret i32 %5
 }
 
-; 22 occurrences:
+; 23 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
+; boost/optimized/to_chars.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -399,7 +394,7 @@ entry:
 define i32 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -2
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sub nsw i32 %4, %0
   ret i32 %5
 }
@@ -448,7 +443,8 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; lvgl/optimized/lv_calendar.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; stockfish/optimized/search.ll
 ; Function Attrs: nounwind
@@ -483,24 +479,7 @@ entry:
   ret i32 %5
 }
 
-; 7 occurrences:
-; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
-; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
-; coreutils-rs/optimized/3fp1x41wzh4l1rh9.ll
-; coreutils-rs/optimized/4mlyvoaplnk0x351.ll
-; delta-rs/optimized/9v8xvedf69luuxb.ll
-; openblas/optimized/dsbgst.c.ll
-; z3/optimized/mpf.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nuw nsw i32 %2, -719163
-  %4 = add nsw i32 %3, %1
-  %5 = sub i32 %4, %0
-  ret i32 %5
-}
-
-; 10 occurrences:
+; 13 occurrences:
 ; coreutils-rs/optimized/21mzc6y6po60ra2.ll
 ; coreutils-rs/optimized/3a6umeboy1uh9t01.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
@@ -509,14 +488,35 @@ entry:
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; delta-rs/optimized/31i6j0ayu6bevt9n.ll
 ; delta-rs/optimized/43y2svfstmvqcl15.ll
+; turborepo-rs/optimized/4xosjxdd4tab2lzmgagh8c3os.ll
 ; z3/optimized/dl_finite_product_relation.cpp.ll
 ; z3/optimized/dl_sieve_relation.cpp.ll
+; zed-rs/optimized/2nwrl7qhv6ci6obqg1itckcv6.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000035(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, -719163
   %4 = add nsw i32 %3, %1
   %5 = sub nsw i32 %4, %0
+  ret i32 %5
+}
+
+; 8 occurrences:
+; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
+; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
+; coreutils-rs/optimized/3fp1x41wzh4l1rh9.ll
+; coreutils-rs/optimized/4mlyvoaplnk0x351.ll
+; delta-rs/optimized/9v8xvedf69luuxb.ll
+; openblas/optimized/dsbgst.c.ll
+; z3/optimized/mpf.cpp.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw nsw i32 %2, -719163
+  %4 = add nsw i32 %3, %1
+  %5 = sub i32 %4, %0
   ret i32 %5
 }
 
@@ -531,9 +531,8 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; openblas/optimized/dsbgst.c.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
 ; wireshark/optimized/packet-rtps.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000020(i32 %0, i32 %1, i32 %2) #0 {
@@ -561,7 +560,7 @@ entry:
 define i32 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -4
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = sub i32 %4, %0
   ret i32 %5
 }

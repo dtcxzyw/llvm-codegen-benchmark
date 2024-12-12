@@ -19,7 +19,7 @@ entry:
   ret i64 %3
 }
 
-; 105 occurrences:
+; 91 occurrences:
 ; arrow/optimized/byte_size.cc.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/feather.cc.ll
@@ -97,20 +97,6 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/normalize_unitbox.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
-; openblas/optimized/dspmv_thread_L.c.ll
-; openblas/optimized/dspmv_thread_U.c.ll
-; openblas/optimized/dspr2_thread_L.c.ll
-; openblas/optimized/dspr2_thread_U.c.ll
-; openblas/optimized/dspr_thread_L.c.ll
-; openblas/optimized/dspr_thread_U.c.ll
-; openblas/optimized/dtpmv_thread_NLN.c.ll
-; openblas/optimized/dtpmv_thread_NLU.c.ll
-; openblas/optimized/dtpmv_thread_NUN.c.ll
-; openblas/optimized/dtpmv_thread_NUU.c.ll
-; openblas/optimized/dtpmv_thread_TLN.c.ll
-; openblas/optimized/dtpmv_thread_TLU.c.ll
-; openblas/optimized/dtpmv_thread_TUN.c.ll
-; openblas/optimized/dtpmv_thread_TUU.c.ll
 ; opencv/optimized/color_lab.cpp.ll
 ; openjdk/optimized/X11SurfaceData.ll
 ; openjdk/optimized/compilerDefinitions.ll

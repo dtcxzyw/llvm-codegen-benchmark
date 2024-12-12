@@ -12,7 +12,7 @@
 ; fmt/optimized/xchar-test.cc.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i128 %0, i128 %1) #0 {
+define i1 @func0000000000000061(i128 %0, i128 %1) #0 {
 entry:
   %2 = shl nuw nsw i128 8, %1
   %3 = and i128 %2, %0
@@ -26,7 +26,7 @@ entry:
 ; regex-rs/optimized/1x04d8372kemp7hd.ll
 ; regex-rs/optimized/6f4i3c8223u3bmw.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i128 %0, i128 %1) #0 {
+define i1 @func0000000000000041(i128 %0, i128 %1) #0 {
 entry:
   %2 = shl nuw i128 1, %1
   %3 = and i128 %2, %0
@@ -41,10 +41,10 @@ entry:
 ; typst-rs/optimized/2hy987uth4sp8yoc.ll
 ; typst-rs/optimized/57e1zo682pgyyw8m.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i128 %0, i128 %1) #0 {
+define i1 @func000000000000004c(i128 %0, i128 %1) #0 {
 entry:
   %2 = shl nuw i128 1, %1
-  %3 = and i128 %2, %0
+  %3 = and i128 %0, %2
   %4 = icmp ne i128 %3, 0
   ret i1 %4
 }
@@ -52,7 +52,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestBitset.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i128 %0, i128 %1) #0 {
+define i1 @func0000000000000021(i128 %0, i128 %1) #0 {
 entry:
   %2 = lshr i128 %0, %1
   %3 = icmp eq i128 %2, 0
@@ -62,7 +62,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestBitset.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i128 %0, i128 %1) #0 {
+define i1 @func000000000000006c(i128 %0, i128 %1) #0 {
 entry:
   %2 = shl nuw nsw i128 1, %1
   %3 = and i128 %2, %0

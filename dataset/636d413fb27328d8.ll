@@ -5,7 +5,7 @@
 define i8 @func000000000000000e(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp sge i32 %2, %0
+  %3 = icmp sle i32 %0, %2
   %4 = zext i1 %3 to i8
   ret i8 %4
 }
@@ -16,7 +16,7 @@ entry:
 define i8 @func0000000000000010(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp ult i32 %2, %0
+  %3 = icmp ugt i32 %0, %2
   %4 = zext i1 %3 to i8
   ret i8 %4
 }
@@ -24,10 +24,10 @@ entry:
 ; 1 occurrences:
 ; lief/optimized/ecp_curves.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000048(i32 %0, i64 %1) #0 {
+define i8 @func0000000000000088(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = icmp ugt i32 %2, %0
+  %3 = icmp ult i32 %0, %2
   %4 = zext i1 %3 to i8
   ret i8 %4
 }
@@ -40,12 +40,13 @@ entry:
 define i8 @func0000000000000008(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp ugt i32 %2, %0
+  %3 = icmp ult i32 %0, %2
   %4 = zext i1 %3 to i8
   ret i8 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/sort_by_side_basic.ll
 ; icu/optimized/messagepattern.ll
 ; icu/optimized/uhash.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -56,7 +57,7 @@ entry:
 define i8 @func0000000000000002(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   %4 = zext i1 %3 to i8
   ret i8 %4
 }
@@ -67,7 +68,7 @@ entry:
 define i8 @func0000000000000014(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp slt i32 %2, %0
+  %3 = icmp sgt i32 %0, %2
   %4 = zext i1 %3 to i8
   ret i8 %4
 }
@@ -75,10 +76,10 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/indxpath.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000078(i32 %0, i64 %1) #0 {
+define i8 @func00000000000000d8(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = icmp ne i32 %2, %0
+  %3 = icmp ne i32 %0, %2
   %4 = zext i1 %3 to i8
   ret i8 %4
 }
@@ -89,7 +90,7 @@ entry:
 define i8 @func0000000000000018(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp ne i32 %2, %0
+  %3 = icmp ne i32 %0, %2
   %4 = zext i1 %3 to i8
   ret i8 %4
 }
@@ -100,7 +101,7 @@ entry:
 define i8 @func0000000000000016(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp sle i32 %2, %0
+  %3 = icmp sge i32 %0, %2
   %4 = zext i1 %3 to i8
   ret i8 %4
 }
@@ -108,10 +109,10 @@ entry:
 ; 1 occurrences:
 ; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000072(i32 %0, i64 %1) #0 {
+define i8 @func00000000000000d2(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = icmp ule i32 %2, %0
+  %3 = icmp uge i32 %0, %2
   %4 = zext i1 %3 to i8
   ret i8 %4
 }
@@ -122,7 +123,7 @@ entry:
 define i8 @func0000000000000012(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp ule i32 %2, %0
+  %3 = icmp uge i32 %0, %2
   %4 = zext i1 %3 to i8
   ret i8 %4
 }

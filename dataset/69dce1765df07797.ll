@@ -15,21 +15,6 @@ entry:
   ret i64 %7
 }
 
-; 3 occurrences:
-; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
-; meshlab/optimized/io_tri.cpp.ll
-; Function Attrs: nounwind
-define i64 @func00000000000003e0(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw nsw i64 %2, 1
-  %4 = mul nuw nsw i64 %3, %1
-  %5 = add nuw i64 %4, 1
-  %6 = add i64 %5, %0
-  %7 = shl i64 %6, 32
-  ret i64 %7
-}
-
 ; 1 occurrences:
 ; openblas/optimized/dsbtrd.c.ll
 ; Function Attrs: nounwind

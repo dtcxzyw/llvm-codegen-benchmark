@@ -1,5 +1,5 @@
 
-; 209 occurrences:
+; 216 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/bmcBmc3.c.ll
 ; abc/optimized/extraUtilCube.c.ll
@@ -22,6 +22,7 @@
 ; abseil-cpp/optimized/seed_sequences_test.cc.ll
 ; arrow/optimized/key_hash.cc.ll
 ; arrow/optimized/key_hash_avx2.cc.ll
+; boost/optimized/partition.ll
 ; bullet3/optimized/b3BulletFile.ll
 ; bullet3/optimized/b3DNA.ll
 ; bullet3/optimized/b3File.ll
@@ -75,14 +76,21 @@
 ; linux/optimized/raw.ll
 ; linux/optimized/tcp_metrics.ll
 ; linux/optimized/xxhash.ll
+; llvm/optimized/BranchProbabilityInfo.cpp.ll
+; llvm/optimized/CGCXX.cpp.ll
+; llvm/optimized/CodeViewDebug.cpp.ll
+; llvm/optimized/DwarfDebug.cpp.ll
+; llvm/optimized/MemProfContextDisambiguation.cpp.ll
 ; llvm/optimized/RandomNumberGenerator.cpp.ll
 ; llvm/optimized/Randstruct.cpp.ll
+; llvm/optimized/VTableBuilder.cpp.ll
 ; luau/optimized/BytecodeBuilder.cpp.ll
 ; luau/optimized/IrBuilder.cpp.ll
 ; luau/optimized/Lexer.cpp.ll
 ; luau/optimized/OptimizeConstProp.cpp.ll
 ; luau/optimized/StringUtils.cpp.ll
 ; luau/optimized/ltable.cpp.ll
+; lvgl/optimized/lv_lru.ll
 ; lz4/optimized/xxhash.c.ll
 ; memcached/optimized/memcached-murmur3_hash.ll
 ; memcached/optimized/memcached_debug-murmur3_hash.ll
@@ -141,7 +149,6 @@
 ; php/optimized/hash_xxhash.ll
 ; pocketpy/optimized/random.cpp.ll
 ; postgres/optimized/catcache.ll
-; postgres/optimized/checksum.ll
 ; postgres/optimized/execGrouping.ll
 ; postgres/optimized/file.ll
 ; postgres/optimized/nodeMemoize.ll

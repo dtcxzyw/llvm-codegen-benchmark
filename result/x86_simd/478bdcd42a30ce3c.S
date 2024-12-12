@@ -8,5 +8,5 @@ func0000000000000003:                   # @func0000000000000003
 	vpcmpnltw	%xmm3, %xmm1, %k1
 	vandps	.LCPI0_0(%rip){1to8}, %ymm2, %ymm1
 	vorps	.LCPI0_1(%rip){1to8}, %ymm1, %ymm1 {%k1}
-	vorps	%ymm0, %ymm1, %ymm0
+	vorps	%ymm1, %ymm0, %ymm0
 	retq

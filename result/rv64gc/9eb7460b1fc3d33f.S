@@ -6,7 +6,32 @@ func0000000000000002:                   # @func0000000000000002
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
-func0000000000000072:                   # @func0000000000000072
+func0000000000000042:                   # @func0000000000000042
+	addiw	a2, a2, -1
+	xor	a1, a1, a2
+	seqz	a1, a1
+	or	a0, a0, a1
+	ret
+func0000000000000082:                   # @func0000000000000082
+	addi	a2, a2, -1
+	slli	a2, a2, 32
+	srli	a2, a2, 32
+	xor	a1, a1, a2
+	seqz	a1, a1
+	or	a0, a0, a1
+	ret
+func00000000000000c2:                   # @func00000000000000c2
+	addiw	a2, a2, -1
+	xor	a1, a1, a2
+	seqz	a1, a1
+	or	a0, a0, a1
+	ret
+func00000000000001c8:                   # @func00000000000001c8
+	addiw	a2, a2, 10
+	sltu	a1, a1, a2
+	or	a0, a0, a1
+	ret
+func00000000000000d2:                   # @func00000000000000d2
 	addiw	a2, a2, -1
 	sltu	a1, a1, a2
 	xori	a1, a1, 1
@@ -18,31 +43,6 @@ func0000000000000012:                   # @func0000000000000012
 	srli	a2, a2, 32
 	sltu	a1, a1, a2
 	xori	a1, a1, 1
-	or	a0, a0, a1
-	ret
-func0000000000000022:                   # @func0000000000000022
-	addiw	a2, a2, -1
-	xor	a1, a1, a2
-	seqz	a1, a1
-	or	a0, a0, a1
-	ret
-func0000000000000042:                   # @func0000000000000042
-	addi	a2, a2, -1
-	slli	a2, a2, 32
-	srli	a2, a2, 32
-	xor	a1, a1, a2
-	seqz	a1, a1
-	or	a0, a0, a1
-	ret
-func0000000000000062:                   # @func0000000000000062
-	addiw	a2, a2, -1
-	xor	a1, a1, a2
-	seqz	a1, a1
-	or	a0, a0, a1
-	ret
-func00000000000000e8:                   # @func00000000000000e8
-	addiw	a2, a2, 10
-	sltu	a1, a1, a2
 	or	a0, a0, a1
 	ret
 func0000000000000010:                   # @func0000000000000010
@@ -59,16 +59,8 @@ func0000000000000008:                   # @func0000000000000008
 	sltu	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func0000000000000078:                   # @func0000000000000078
+func00000000000000d8:                   # @func00000000000000d8
 	addiw	a2, a2, -1
-	xor	a1, a1, a2
-	snez	a1, a1
-	or	a0, a0, a1
-	ret
-func0000000000000058:                   # @func0000000000000058
-	addi	a2, a2, -1
-	slli	a2, a2, 32
-	srli	a2, a2, 32
 	xor	a1, a1, a2
 	snez	a1, a1
 	or	a0, a0, a1
@@ -81,12 +73,12 @@ func000000000000000a:                   # @func000000000000000a
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
-func0000000000000070:                   # @func0000000000000070
+func00000000000000d0:                   # @func00000000000000d0
 	addiw	a2, a2, -1
 	sltu	a1, a2, a1
 	or	a0, a0, a1
 	ret
-func0000000000000050:                   # @func0000000000000050
+func0000000000000090:                   # @func0000000000000090
 	addi	a2, a2, -1
 	slli	a2, a2, 32
 	srli	a2, a2, 32

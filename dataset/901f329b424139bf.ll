@@ -1,5 +1,5 @@
 
-; 90 occurrences:
+; 87 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/giaIf.c.ll
 ; abc/optimized/giaStr.c.ll
@@ -43,7 +43,6 @@
 ; openssl/optimized/libcrypto-lib-aria.ll
 ; openssl/optimized/libcrypto-lib-bf_enc.ll
 ; openssl/optimized/libcrypto-lib-des_enc.ll
-; openssl/optimized/libcrypto-lib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-lib-property.ll
 ; openssl/optimized/libcrypto-lib-seed.ll
 ; openssl/optimized/libcrypto-lib-set_key.ll
@@ -51,13 +50,11 @@
 ; openssl/optimized/libcrypto-shlib-aria.ll
 ; openssl/optimized/libcrypto-shlib-bf_enc.ll
 ; openssl/optimized/libcrypto-shlib-des_enc.ll
-; openssl/optimized/libcrypto-shlib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-shlib-property.ll
 ; openssl/optimized/libcrypto-shlib-seed.ll
 ; openssl/optimized/libcrypto-shlib-set_key.ll
 ; openssl/optimized/libcrypto-shlib-sm4.ll
 ; openssl/optimized/liblegacy-lib-des_enc.ll
-; openssl/optimized/liblegacy-lib-fcrypt_b.ll
 ; openssl/optimized/padlock-dso-e_padlock.ll
 ; openvdb/optimized/Merge.cc.ll
 ; php/optimized/crypt_blowfish.ll

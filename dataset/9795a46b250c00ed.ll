@@ -1,5 +1,5 @@
 
-; 39 occurrences:
+; 42 occurrences:
 ; abc/optimized/deflate.c.ll
 ; abc/optimized/ifMan.c.ll
 ; arrow/optimized/diff.cc.ll
@@ -37,7 +37,10 @@
 ; sqlite/optimized/sqlite3.ll
 ; velox/optimized/DateTimeFormatter.cpp.ll
 ; wireshark/optimized/packet-dns.c.ll
-; wireshark/optimized/packet-ieee80211-wlancap.c.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; zlib/optimized/deflate.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1, i32 %2) #0 {

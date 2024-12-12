@@ -1,4 +1,4 @@
-func0000000000000330:                   # @func0000000000000330
+func0000000000000630:                   # @func0000000000000630
 	shrq	$39, %rdx
 	andl	$1, %edx
 	cmpb	$12, %sil
@@ -6,7 +6,7 @@ func0000000000000330:                   # @func0000000000000330
 	orb	%dl, %al
 	orb	%dil, %al
 	retq
-func0000000000000070:                   # @func0000000000000070
+func00000000000000b0:                   # @func00000000000000b0
 	testl	$1048576, %edx                  # imm = 0x100000
 	sete	%cl
 	cmpb	$28, %sil

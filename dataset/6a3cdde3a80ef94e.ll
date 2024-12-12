@@ -1,5 +1,6 @@
 
-; 23 occurrences:
+; 24 occurrences:
+; libquic/optimized/persistent_memory_allocator.cc.ll
 ; openjdk/optimized/bytecodeUtils.ll
 ; openssl/optimized/evp_libctx_test-bin-evp_libctx_test.ll
 ; quantlib/optimized/argentina.ll
@@ -24,7 +25,7 @@
 ; quantlib/optimized/unitedkingdom.ll
 ; quantlib/optimized/unitedstates.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 8
   %4 = icmp ult i32 %3, 17
@@ -38,7 +39,7 @@ entry:
 ; qemu/optimized/util_unicode.c.ll
 ; slurm/optimized/step_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000048c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -65008
   %4 = icmp ult i32 %3, -32
@@ -48,7 +49,7 @@ entry:
   ret i1 %7
 }
 
-; 22 occurrences:
+; 10 occurrences:
 ; clamav/optimized/scanners.c.ll
 ; hermes/optimized/SemanticValidator.cpp.ll
 ; icu/optimized/ucnv_ext.ll
@@ -56,6 +57,21 @@ entry:
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/YAMLParser.cpp.ll
 ; php/optimized/pcre2_xclass.ll
+; velox/optimized/TimestampConversion.cpp.ll
+; zxing/optimized/QRDetector.cpp.ll
+; zxing/optimized/QRVersion.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000084(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %2, -71
+  %4 = icmp ult i32 %3, -6
+  %5 = and i1 %1, %4
+  %6 = icmp ult i32 %0, -10
+  %7 = and i1 %6, %5
+  ret i1 %7
+}
+
+; 12 occurrences:
 ; velox/optimized/ArrayDuplicates.cpp.ll
 ; velox/optimized/ArraySort.cpp.ll
 ; velox/optimized/BaseVector.cpp.ll
@@ -65,19 +81,16 @@ entry:
 ; velox/optimized/JsonFunctions.cpp.ll
 ; velox/optimized/JsonType.cpp.ll
 ; velox/optimized/MapZipWith.cpp.ll
-; velox/optimized/TimestampConversion.cpp.ll
 ; velox/optimized/ToUtf8.cpp.ll
 ; velox/optimized/VectorFuzzer.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
-; zxing/optimized/QRDetector.cpp.ll
-; zxing/optimized/QRVersion.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000284(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = add i32 %2, -71
-  %4 = icmp ult i32 %3, -6
-  %5 = and i1 %4, %1
-  %6 = icmp ult i32 %0, -10
+  %3 = add i32 %2, -4
+  %4 = icmp samesign ult i32 %3, 13
+  %5 = and i1 %1, %4
+  %6 = icmp ult i32 %0, 13
   %7 = and i1 %6, %5
   ret i1 %7
 }
@@ -85,11 +98,11 @@ entry:
 ; 1 occurrences:
 ; quantlib/optimized/thailand.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000008c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -13
   %4 = icmp ult i32 %3, 3
-  %5 = and i1 %4, %1
+  %5 = and i1 %1, %4
   %6 = icmp ne i32 %0, 2020
   %7 = and i1 %6, %5
   ret i1 %7
@@ -101,7 +114,7 @@ entry:
 ; llvm/optimized/SemaObjC.cpp.ll
 ; quantlib/optimized/chile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000481(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -5
   %4 = icmp ult i32 %3, -2
@@ -111,31 +124,17 @@ entry:
   ret i1 %7
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; llvm/optimized/SemaTemplate.cpp.ll
 ; llvm/optimized/YAMLParser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000484(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, -56
-  %4 = icmp ult i32 %3, 3
-  %5 = and i1 %4, %0
-  %6 = icmp ult i32 %1, 3
-  %7 = and i1 %5, %6
-  ret i1 %7
-}
-
-; 1 occurrences:
-; zfp/optimized/zfp.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000048(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add i32 %2, -1
-  %4 = icmp ult i32 %3, 16658
-  %5 = and i1 %4, %0
-  %6 = icmp ugt i32 %1, 63
-  %7 = and i1 %5, %6
+  %3 = add nsw i32 %2, -55296
+  %4 = icmp ult i32 %3, -55136
+  %5 = and i1 %1, %4
+  %6 = icmp ult i32 %0, -8190
+  %7 = and i1 %6, %5
   ret i1 %7
 }
 

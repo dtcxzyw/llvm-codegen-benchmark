@@ -1,4 +1,4 @@
-func0000000000000038:                   # @func0000000000000038
+func000000000000003c:                   # @func000000000000003c
 	leaq	5032(%rdi), %rax
 	addq	$4432, %rdi                     # imm = 0x1150
 	cmpl	$105, %edx
@@ -7,7 +7,7 @@ func0000000000000038:                   # @func0000000000000038
 	leaq	(%rax,%rax,4), %rax
 	leaq	(%rdi,%rax,8), %rax
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000002f:                   # @func000000000000002f
 	xorl	%eax, %eax
 	testl	%edx, %edx
 	setne	%al
@@ -15,7 +15,7 @@ func000000000000002a:                   # @func000000000000002a
 	movl	%esi, %ecx
 	leaq	(%rax,%rcx,8), %rax
 	retq
-func000000000000015a:                   # @func000000000000015a
+func000000000000015f:                   # @func000000000000015f
 	xorl	%eax, %eax
 	testl	%edx, %edx
 	setle	%al
@@ -24,30 +24,13 @@ func000000000000015a:                   # @func000000000000015a
 	movl	%esi, %ecx
 	leaq	96(%rcx,%rax), %rax
 	retq
-func000000000000014a:                   # @func000000000000014a
+func000000000000014f:                   # @func000000000000014f
 	xorl	%eax, %eax
 	cmpl	$2, %edx
 	setge	%al
 	leaq	(%rdi,%rax,8), %rax
 	movl	%esi, %ecx
 	leaq	(%rax,%rcx,4), %rax
-	retq
-func0000000000000020:                   # @func0000000000000020
-	xorl	%eax, %eax
-	testl	%edx, %edx
-	setne	%al
-	leaq	(%rdi,%rax,4), %rax
-	movl	%esi, %ecx
-	leaq	20(%rcx,%rax), %rax
-	retq
-func0000000000000098:                   # @func0000000000000098
-	xorl	%eax, %eax
-	cmpl	$128, %edx
-	setb	%al
-	shll	$7, %eax
-	addq	%rdi, %rax
-	movl	%esi, %ecx
-	leaq	944(%rax,%rcx,8), %rax
 	retq
 func0000000000000110:                   # @func0000000000000110
 	leaq	1536(%rdi), %rcx
@@ -71,7 +54,7 @@ func0000000000000100:                   # @func0000000000000100
 	movl	%esi, %eax
 	addq	%rcx, %rax
 	retq
-func000000000000008a:                   # @func000000000000008a
+func000000000000008f:                   # @func000000000000008f
 	xorl	%eax, %eax
 	cmpl	$254, %edx
 	setae	%al

@@ -45,10 +45,27 @@ func0000000000000044:                   # @func0000000000000044
 	or	a0, a0, a1
 	ret
 .LCPI6_0:
-	.quad	0x41efffffffe00000              # double 4294967295
-func0000000000000024:                   # @func0000000000000024
+	.quad	0x4066800000000000              # double 180
+func00000000000000a8:                   # @func00000000000000a8
 	lui	a0, %hi(.LCPI6_0)
 	fld	fa5, %lo(.LCPI6_0)(a0)
+	fle.d	a0, fa1, fa2
+	feq.d	a1, fa0, fa5
+	or	a0, a0, a1
+	ret
+func0000000000000059:                   # @func0000000000000059
+	fle.d	a0, fa1, fa2
+	fclass.d	a1, fa0
+	xori	a0, a0, 1
+	andi	a1, a1, 896
+	snez	a1, a1
+	or	a0, a0, a1
+	ret
+.LCPI8_0:
+	.quad	0x41efffffffe00000              # double 4294967295
+func0000000000000024:                   # @func0000000000000024
+	lui	a0, %hi(.LCPI8_0)
+	fld	fa5, %lo(.LCPI8_0)(a0)
 	flt.d	a0, fa1, fa2
 	flt.d	a1, fa5, fa0
 	or	a0, a0, a1
@@ -60,11 +77,11 @@ func000000000000003b:                   # @func000000000000003b
 	and	a0, a0, a1
 	xori	a0, a0, 1
 	ret
-.LCPI8_0:
+.LCPI10_0:
 	.quad	0x43e0000000000000              # double 9.2233720368547758E+18
 func000000000000008c:                   # @func000000000000008c
-	lui	a0, %hi(.LCPI8_0)
-	fld	fa5, %lo(.LCPI8_0)(a0)
+	lui	a0, %hi(.LCPI10_0)
+	fld	fa5, %lo(.LCPI10_0)(a0)
 	feq.d	a0, fa1, fa2
 	fle.d	a1, fa5, fa0
 	or	a0, a0, a1
@@ -83,11 +100,11 @@ func0000000000000038:                   # @func0000000000000038
 	feq.d	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
-.LCPI11_0:
+.LCPI13_0:
 	.quad	0x3ff0000000000000              # double 1
 func000000000000003d:                   # @func000000000000003d
-	lui	a0, %hi(.LCPI11_0)
-	fld	fa5, %lo(.LCPI11_0)(a0)
+	lui	a0, %hi(.LCPI13_0)
+	fld	fa5, %lo(.LCPI13_0)(a0)
 	fle.d	a0, fa2, fa1
 	flt.d	a1, fa0, fa5
 	and	a0, a0, a1

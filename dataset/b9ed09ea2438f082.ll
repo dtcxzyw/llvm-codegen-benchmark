@@ -1,9 +1,8 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; hyperscan/optimized/catchup.c.ll
 ; hyperscan/optimized/repeat.c.ll
 ; llvm/optimized/ELFObjectWriter.cpp.ll
-; rocksdb/optimized/version_set.cc.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:

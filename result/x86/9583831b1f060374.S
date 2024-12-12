@@ -6,13 +6,13 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	%rdi, %rax
 	sete	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	imulq	$83492791, %rdx, %rax           # imm = 0x4F9FFB7
 	xorq	%rsi, %rax
 	cmpq	%rdi, %rax
 	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	imulq	$83492791, %rdx, %rax           # imm = 0x4F9FFB7
 	xorq	%rsi, %rax
 	cmpq	%rdi, %rax

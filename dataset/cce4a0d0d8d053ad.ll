@@ -20,7 +20,7 @@
 ; openssl/optimized/libssl-lib-statem_clnt.ll
 ; openssl/optimized/libssl-shlib-statem_clnt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000101(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -33
   %3 = sub nuw i64 %2, %0
@@ -32,7 +32,7 @@ entry:
 ; openssl/optimized/libssl-lib-statem_clnt.ll
 ; openssl/optimized/libssl-shlib-statem_clnt.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000010c(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -33
   %3 = sub nuw i64 %2, %0
@@ -44,7 +44,7 @@ entry:
 ; openssl/optimized/libssl-lib-statem_clnt.ll
 ; openssl/optimized/libssl-shlib-statem_clnt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -33
   %3 = sub nuw i64 %2, %0
@@ -56,7 +56,7 @@ entry:
 ; 1 occurrences:
 ; wasmedge/optimized/function.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000181(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000301(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -12
   %3 = sub nuw i64 %2, %0
@@ -93,7 +93,7 @@ entry:
 ; lief/optimized/RichHeader.cpp.ll
 ; node/optimized/libnode.crypto_context.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000121(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 3
   %3 = icmp eq i64 %2, %0

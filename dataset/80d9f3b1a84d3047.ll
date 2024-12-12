@@ -22,13 +22,14 @@ entry:
   ret float %4
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; gromacs/optimized/andersentemperaturecoupling.cpp.ll
 ; gromacs/optimized/cluster_methods.cpp.ll
 ; gromacs/optimized/coordstate.cpp.ll
 ; gromacs/optimized/coupling.cpp.ll
 ; gromacs/optimized/expanded.cpp.ll
 ; gromacs/optimized/freevolume.cpp.ll
+; gromacs/optimized/genconf.cpp.ll
 ; gromacs/optimized/insert_molecules.cpp.ll
 ; gromacs/optimized/replicaexchange.cpp.ll
 ; gromacs/optimized/tpi.cpp.ll
@@ -51,7 +52,7 @@ define float @func0000000000000004(float %0, float %1) #0 {
 entry:
   %2 = fmul float %1, 0x3FC99999A0000000
   %3 = fcmp ogt float %2, 5.130000e+02
-  %4 = select i1 %3, float 2.560000e+02, float %0
+  %4 = select i1 %3, float 8.000000e+00, float %0
   ret float %4
 }
 

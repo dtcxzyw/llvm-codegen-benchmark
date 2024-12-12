@@ -1,9 +1,9 @@
 func000000000000000c:                   # @func000000000000000c
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmv.v.i	v10, 12
-	li	a0, 18
+	vmv.v.i	v10, 10
+	li	a0, 100
 	vmerge.vxm	v10, v10, a0, v0
-	vmul.vv	v10, v10, v8
+	vmul.vv	v10, v8, v10
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v8, v10, 0
 	ret

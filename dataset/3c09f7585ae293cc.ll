@@ -9,7 +9,7 @@ entry:
   %3 = fsub float %1, %2
   %4 = fptosi float %3 to i32
   %5 = sitofp i32 %4 to float
-  %6 = fcmp olt float %5, %0
+  %6 = fcmp ogt float %0, %5
   ret i1 %6
 }
 
@@ -25,7 +25,7 @@ entry:
   %3 = fsub float %1, %2
   %4 = fptosi float %3 to i32
   %5 = sitofp i32 %4 to float
-  %6 = fcmp ogt float %5, %0
+  %6 = fcmp olt float %0, %5
   ret i1 %6
 }
 

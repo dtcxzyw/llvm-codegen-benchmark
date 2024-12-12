@@ -1,10 +1,10 @@
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	sarl	$16, %edx
 	cmpl	%esi, %edx
 	setl	%al
 	orb	%dil, %al
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000054:                   # @func0000000000000054
 	sarl	$16, %edx
 	cmpl	%esi, %edx
 	setg	%al
@@ -22,7 +22,7 @@ func000000000000000c:                   # @func000000000000000c
 	setl	%al
 	orb	%dil, %al
 	retq
-func000000000000002e:                   # @func000000000000002e
+func000000000000004e:                   # @func000000000000004e
 	sarl	$16, %edx
 	cmpl	%esi, %edx
 	setle	%al
@@ -46,19 +46,19 @@ func000000000000000e:                   # @func000000000000000e
 	setle	%al
 	orb	%dil, %al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000018:                   # @func0000000000000018
+	sarl	$8, %edx
+	cmpl	%esi, %edx
+	setne	%al
+	orb	%dil, %al
+	retq
+func0000000000000058:                   # @func0000000000000058
 	sarl	$24, %edx
 	cmpl	%esi, %edx
 	setne	%al
 	orb	%dil, %al
 	retq
-func0000000000000018:                   # @func0000000000000018
-	sarl	$10, %edx
-	cmpl	%esi, %edx
-	setne	%al
-	orb	%dil, %al
-	retq
-func0000000000000030:                   # @func0000000000000030
+func0000000000000050:                   # @func0000000000000050
 	sarl	%edx
 	cmpl	%esi, %edx
 	seta	%al

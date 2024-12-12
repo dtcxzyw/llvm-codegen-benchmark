@@ -47,6 +47,13 @@ func000000000000005d:                   # @func000000000000005d
 	vpsllq	$32, %ymm0, %ymm0
 	vpor	%ymm1, %ymm0, %ymm0
 	retq
+func0000000000000050:                   # @func0000000000000050
+	vpmovzxbq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,zero,zero,zero,zero,zero,zero,xmm1[1],zero,zero,zero,zero,zero,zero,zero,xmm1[2],zero,zero,zero,zero,zero,zero,zero,xmm1[3],zero,zero,zero,zero,zero,zero,zero
+	vpsllq	$63, %ymm1, %ymm1
+	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	vpsllq	$52, %ymm0, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
+	retq
 func0000000000000037:                   # @func0000000000000037
 	vpmovzxdq	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
 	vpsllq	$32, %ymm1, %ymm1

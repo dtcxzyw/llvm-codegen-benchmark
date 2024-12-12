@@ -3,7 +3,7 @@
 ; cpython/optimized/ceval.ll
 ; openmpi/optimized/onesided_aggregation.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000002e(i64 %0, i64 %1, i64 %2) #0 {
+define i32 @func000000000000004e(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
   %4 = icmp sle i64 %3, %0
@@ -37,7 +37,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/listobject.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000002c(i64 %0, i64 %1, i64 %2) #0 {
+define i32 @func000000000000004c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
   %4 = icmp slt i64 %3, %0

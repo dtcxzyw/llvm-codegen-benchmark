@@ -28,9 +28,10 @@ entry:
   ret float %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; box2d/optimized/b2_friction_joint.cpp.ll
 ; box2d/optimized/b2_motor_joint.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; minetest/optimized/client.cpp.ll
 ; pbrt-v4/optimized/camera.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll

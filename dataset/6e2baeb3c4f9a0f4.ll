@@ -1,9 +1,8 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; abc/optimized/giaBound.c.ll
 ; hdf5/optimized/H5Zscaleoffset.c.ll
 ; linux/optimized/compaction.ll
-; minetest/optimized/texturesource.cpp.ll
 ; openusd/optimized/evalUtils.cpp.ll
 ; redis/optimized/db.ll
 ; Function Attrs: nounwind

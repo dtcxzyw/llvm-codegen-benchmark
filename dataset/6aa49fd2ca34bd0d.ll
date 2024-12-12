@@ -1,6 +1,5 @@
 
-; 2 occurrences:
-; gromacs/optimized/minimize.cpp.ll
+; 1 occurrences:
 ; mitsuba3/optimized/sdfgrid.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000082(float %0, i32 %1) #0 {

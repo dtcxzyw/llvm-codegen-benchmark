@@ -23,13 +23,12 @@ entry:
   ret i1 %4
 }
 
-; 55 occurrences:
+; 54 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; arrow/optimized/array_nested.cc.ll
 ; arrow/optimized/message.cc.ll
 ; cpython/optimized/arraymodule.ll
-; cpython/optimized/unicode.ll
 ; faiss/optimized/IndexLattice.cpp.ll
 ; gromacs/optimized/andersentemperaturecoupling.cpp.ll
 ; gromacs/optimized/bias.cpp.ll

@@ -57,12 +57,26 @@
 ; verilator/optimized/V3DfgAstToDfg.cpp.ll
 ; z3/optimized/dyn_ack.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000006f(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
   %3 = lshr i64 %2, 1
   %4 = mul nuw nsw i64 %3, 24
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 3 occurrences:
+; opencv/optimized/erfilter.cpp.ll
+; pbrt-v4/optimized/imgtool.cpp.ll
+; qemu/optimized/hw_audio_es1370.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002c(ptr %0, i64 %1) #0 {
+entry:
+  %2 = add nsw i64 %1, -36
+  %3 = lshr i64 %2, 2
+  %4 = mul nuw nsw i64 %3, 20
+  %5 = getelementptr i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -72,12 +86,12 @@ entry:
 ; llvm/optimized/GlobalMerge.cpp.ll
 ; llvm/optimized/LowerTypeTests.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000006b(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
   %3 = lshr i64 %2, 1
   %4 = mul nuw i64 %3, 80
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -101,19 +115,6 @@ entry:
   %2 = add nsw i64 %1, -2
   %3 = lshr i64 %2, 1
   %4 = mul i64 %3, 48
-  %5 = getelementptr i8, ptr %0, i64 %4
-  ret ptr %5
-}
-
-; 2 occurrences:
-; opencv/optimized/erfilter.cpp.ll
-; pbrt-v4/optimized/imgtool.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000002c(ptr %0, i64 %1) #0 {
-entry:
-  %2 = add nsw i64 %1, -2
-  %3 = lshr i64 %2, 1
-  %4 = mul nuw nsw i64 %3, 56
   %5 = getelementptr i8, ptr %0, i64 %4
   ret ptr %5
 }

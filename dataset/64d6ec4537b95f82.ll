@@ -8,7 +8,7 @@ entry:
   %2 = shl nuw nsw i32 4096, %1
   %3 = add nsw i32 %2, -1
   %4 = zext nneg i32 %3 to i64
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 
@@ -28,7 +28,7 @@ entry:
   %notmask = shl nsw i32 -1, %1
   %2 = xor i32 %notmask, -1
   %3 = zext nneg i32 %2 to i64
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   ret i64 %4
 }
 
@@ -40,7 +40,7 @@ entry:
   %notmask = shl nsw i32 -1, %1
   %2 = xor i32 %notmask, -1
   %3 = zext nneg i32 %2 to i64
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   ret i64 %4
 }
 

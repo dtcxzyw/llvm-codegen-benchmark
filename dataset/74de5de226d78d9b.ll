@@ -163,7 +163,7 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, 10
   %4 = icmp ult i64 %3, %0
@@ -175,7 +175,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/IndirectCallPromotionAnalysis.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000099(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000129(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, 100
   %4 = icmp uge i64 %3, %0

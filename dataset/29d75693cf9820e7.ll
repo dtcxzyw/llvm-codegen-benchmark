@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 19 occurrences:
 ; abc/optimized/giaGen.c.ll
 ; c3c/optimized/json_output.c.ll
 ; c3c/optimized/sema_expr.c.ll
@@ -9,6 +9,8 @@
 ; jq/optimized/jv.ll
 ; linux/optimized/act_api.ll
 ; llvm/optimized/AArch64MCCodeEmitter.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_ime_pinyin.ll
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/file.ll
 ; ruby/optimized/gc.ll

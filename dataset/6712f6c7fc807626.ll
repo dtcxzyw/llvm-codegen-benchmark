@@ -4,7 +4,7 @@
 ; nix/optimized/drv-output-substitution-goal.ll
 ; nix/optimized/substitution-goal.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
   %3 = icmp eq i64 %0, 0

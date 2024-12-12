@@ -236,7 +236,7 @@
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; z3/optimized/realclosure.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 1, %1
   %3 = icmp slt i32 %1, 1
@@ -247,10 +247,10 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/darCut.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000038(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 5, %1
-  %3 = icmp ugt i32 %1, 3
+  %3 = icmp samesign ugt i32 %1, 3
   %4 = select i1 %3, i32 %2, i32 %0
   ret i32 %4
 }
@@ -275,13 +275,14 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000074(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 127, %1
-  %3 = icmp ult i32 %1, 127
+  %3 = icmp samesign ult i32 %1, 127
   %4 = select i1 %3, i32 %2, i32 %0
   ret i32 %4
 }
@@ -289,7 +290,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-dns.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000002a(i32 %0, i32 %1) #0 {
+define i32 @func000000000000004a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw i32 -2147483648, %1
   %3 = icmp slt i32 %1, 0
@@ -301,10 +302,10 @@ entry:
 ; linux/optimized/intel_dpll_mgr.ll
 ; wireshark/optimized/packet-nvme.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 160, %1
-  %3 = icmp ult i32 %1, 161
+  %3 = icmp samesign ult i32 %1, 161
   %4 = select i1 %3, i32 %2, i32 %0
   ret i32 %4
 }
@@ -325,10 +326,10 @@ entry:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000078(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 -5, %1
-  %3 = icmp ugt i32 %1, 1
+  %3 = icmp samesign ugt i32 %1, 1
   %4 = select i1 %3, i32 %2, i32 %0
   ret i32 %4
 }
@@ -336,7 +337,7 @@ entry:
 ; 1 occurrences:
 ; ocio/optimized/MathUtils.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000024(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000044(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw i32 -1082130432, %1
   %3 = icmp ult i32 %1, -1082130432

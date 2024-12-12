@@ -24,7 +24,7 @@ func0000000000000002:                   # @func0000000000000002
 	vpmovw2m	%xmm1, %k1
 	vpbroadcastd	.LCPI1_0(%rip), %ymm1   # ymm1 = [36000,36000,36000,36000,36000,36000,36000,36000]
 	vpbroadcastd	.LCPI1_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [900000,900000,900000,900000,900000,900000,900000,900000]
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpshufd	$245, %ymm0, %ymm1              # ymm1 = ymm0[1,1,3,3,5,5,7,7]
 	vpbroadcastd	.LCPI1_2(%rip), %ymm2   # ymm2 = [1272582903,1272582903,1272582903,1272582903,1272582903,1272582903,1272582903,1272582903]
 	vpmuldq	%ymm2, %ymm1, %ymm1

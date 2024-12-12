@@ -56,11 +56,11 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/unicodeobject.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 2
   %4 = and i32 %3, 7
-  %5 = icmp ult i32 %4, %1
+  %5 = icmp samesign ult i32 %4, %1
   %6 = select i1 %5, i1 true, i1 %0
   ret i1 %6
 }

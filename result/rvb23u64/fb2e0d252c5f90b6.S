@@ -7,7 +7,7 @@ func0000000000000008:                   # @func0000000000000008
 	add	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000001e8:                   # @func00000000000001e8
 	lui	a3, 524288
 	addiw	a3, a3, -1
 	and	a2, a2, a3
@@ -16,7 +16,7 @@ func00000000000000f8:                   # @func00000000000000f8
 	addi	a1, a1, 16
 	sltu	a0, a1, a0
 	ret
-func00000000000000f4:                   # @func00000000000000f4
+func00000000000001e4:                   # @func00000000000001e4
 	andi	a2, a2, 511
 	slli	a1, a1, 10
 	srli	a1, a1, 10

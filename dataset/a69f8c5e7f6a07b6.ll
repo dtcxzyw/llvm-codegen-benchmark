@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; clamav/optimized/hwp.c.ll
 ; cmake/optimized/index.c.ll
 ; cmake/optimized/zstdmt_compress.c.ll
@@ -12,6 +12,7 @@
 ; ruby/optimized/parser_st.ll
 ; ruby/optimized/st.ll
 ; typst-rs/optimized/4p46tkw2iv8zjgza.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
 ; zstd/optimized/zstdmt_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i64 %1) #0 {
@@ -243,36 +244,6 @@ entry:
   ret i64 %4
 }
 
-; 20 occurrences:
-; bdwgc/optimized/gc.c.ll
-; cpython/optimized/_pickle.ll
-; cpython/optimized/unicodeobject.ll
-; hermes/optimized/ItaniumDemangle.cpp.ll
-; image-rs/optimized/244uszkx0e8t5ie1.ll
-; jsonnet/optimized/rapidyaml.cpp.ll
-; linux/optimized/drm_dp_helper.ll
-; linux/optimized/timeconv.ll
-; llvm/optimized/ItaniumDemangle.cpp.ll
-; llvm/optimized/ItaniumManglingCanonicalizer.cpp.ll
-; msdfgen/optimized/main.cpp.ll
-; node/optimized/libnode.node_http2.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; php/optimized/apprentice.ll
-; php/optimized/var_unserializer.ll
-; qemu/optimized/block_nvme.c.ll
-; quickjs/optimized/quickjs.ll
-; xgboost/optimized/data.cc.ll
-; yyjson/optimized/yyjson.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
-entry:
-  %2 = mul i64 %1, 4294967284
-  %3 = add nsw i64 %0, 2
-  %4 = add i64 %3, %2
-  ret i64 %4
-}
-
 ; 12 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
@@ -326,13 +297,41 @@ entry:
   ret i64 %4
 }
 
+; 19 occurrences:
+; bdwgc/optimized/gc.c.ll
+; boost/optimized/src.ll
+; cpython/optimized/_pickle.ll
+; cpython/optimized/unicodeobject.ll
+; hermes/optimized/ItaniumDemangle.cpp.ll
+; image-rs/optimized/244uszkx0e8t5ie1.ll
+; jsonnet/optimized/rapidyaml.cpp.ll
+; linux/optimized/drm_dp_helper.ll
+; linux/optimized/timeconv.ll
+; llvm/optimized/ItaniumDemangle.cpp.ll
+; llvm/optimized/ItaniumManglingCanonicalizer.cpp.ll
+; msdfgen/optimized/main.cpp.ll
+; node/optimized/libnode.node_http2.ll
+; php/optimized/apprentice.ll
+; php/optimized/var_unserializer.ll
+; qemu/optimized/block_nvme.c.ll
+; quickjs/optimized/quickjs.ll
+; xgboost/optimized/data.cc.ll
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
+entry:
+  %2 = mul i64 %1, 1000
+  %3 = add nsw i64 %0, -1000
+  %4 = add i64 %3, %2
+  ret i64 %4
+}
+
 ; 24 occurrences:
 ; clamav/optimized/special.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; freetype/optimized/sfnt.c.ll
 ; freetype/optimized/truetype.c.ll
-; graphviz/optimized/randomkit.c.ll
 ; hdf5/optimized/H5HFcache.c.ll
 ; hdf5/optimized/H5HFhdr.c.ll
 ; libwebp/optimized/sharpyuv.c.ll
@@ -348,6 +347,7 @@ entry:
 ; opencv/optimized/essential_solver.cpp.ll
 ; openjdk/optimized/Index12Gray.ll
 ; openjdk/optimized/Index8Gray.ll
+; php/optimized/decode.ll
 ; postgres/optimized/mcv.ll
 ; qemu/optimized/backends_tpm_tpm_util.c.ll
 ; qemu/optimized/dump_dump.c.ll
@@ -381,7 +381,8 @@ entry:
   ret i64 %4
 }
 
-; 176 occurrences:
+; 173 occurrences:
+; boost/optimized/topology.ll
 ; clamav/optimized/rtf.c.ll
 ; cmake/optimized/parsedate.c.ll
 ; curl/optimized/libcurl_la-parsedate.ll
@@ -484,13 +485,10 @@ entry:
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -548,7 +546,6 @@ entry:
 ; nuklear/optimized/unity.c.ll
 ; opencv/optimized/bilateral_filter.dispatch.cpp.ll
 ; openjdk/optimized/vm_version_x86.ll
-; php/optimized/dow.ll
 ; postgres/optimized/localtime.ll
 ; postgres/optimized/mcv.ll
 ; postgres/optimized/pgbench.ll
@@ -567,7 +564,18 @@ entry:
   ret i64 %4
 }
 
-; 15 occurrences:
+; 1 occurrences:
+; php/optimized/tm2unixtime.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000034(i64 %0, i64 %1) #0 {
+entry:
+  %2 = mul nuw nsw i64 %1, 1000000
+  %3 = add nsw i64 %0, 1000000
+  %4 = add i64 %3, %2
+  ret i64 %4
+}
+
+; 13 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; cmake/optimized/archive_getdate.c.ll
@@ -581,24 +589,11 @@ entry:
 ; openmpi/optimized/tm_mapping.ll
 ; php/optimized/tm2unixtime.ll
 ; pocketpy/optimized/compiler.cpp.ll
-; verilator/optimized/V3EmitCImp.cpp.ll
-; verilator/optimized/V3ThreadPool.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, 100000000
-  %3 = mul nsw i64 %0, -1000000000
-  %4 = add i64 %3, %2
-  ret i64 %4
-}
-
-; 1 occurrences:
-; php/optimized/tm2unixtime.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000034(i64 %0, i64 %1) #0 {
-entry:
-  %2 = mul nuw nsw i64 %1, 1000000
-  %3 = add nsw i64 %0, 1000000
+  %2 = mul nsw i64 %1, 12
+  %3 = add nsw i64 %0, 12
   %4 = add i64 %3, %2
   ret i64 %4
 }

@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 26 occurrences:
 ; darktable/optimized/introspection_colorbalancergb.c.ll
 ; hdf5/optimized/H5Shyper.c.ll
 ; linux/optimized/dm-stripe.ll
@@ -20,7 +20,6 @@
 ; postgres/optimized/receivelog.ll
 ; postgres/optimized/xlog.ll
 ; postgres/optimized/xlogarchive.ll
-; postgres/optimized/xlogbackup.ll
 ; postgres/optimized/xlogfuncs.ll
 ; postgres/optimized/xlogreader.ll
 ; postgres/optimized/xlogrecovery.ll

@@ -1,8 +1,10 @@
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	uaddl	v2.4s, v1.4h, v2.4h
-	ushll	v0.4s, v0.4h, #0
-	uaddl2	v1.2d, v2.4s, v0.4s
-	uaddl	v0.2d, v2.2s, v0.2s
+                                        // kill: def $w1 killed $w1 def $x1
+	and	x8, x1, #0xffff
+                                        // kill: def $w2 killed $w2 def $x2
+                                        // kill: def $w0 killed $w0 def $x0
+	add	x8, x8, w2, uxth
+	add	x0, x8, w0, uxth
 	ret
                                         // -- End function

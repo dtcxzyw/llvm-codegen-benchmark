@@ -80,7 +80,7 @@ func0000000000000041:                   # @func0000000000000041
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmadd.vx	v12, a0, v10
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	lui	a0, 4096
 	vadd.vx	v8, v8, a0
 	ret

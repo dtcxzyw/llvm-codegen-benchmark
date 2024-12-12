@@ -1,9 +1,9 @@
-func0000000000000042:                   # @func0000000000000042
+func0000000000000082:                   # @func0000000000000082
 	testq	%rsi, %rsi
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000062:                   # @func0000000000000062
+func00000000000000c2:                   # @func00000000000000c2
 	testq	%rsi, %rsi
 	sete	%al
 	orb	%dil, %al

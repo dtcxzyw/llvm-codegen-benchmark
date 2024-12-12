@@ -13,3 +13,11 @@ func000000000000001b:                   // @func000000000000001b
 	umulh	x0, x0, x8
 	ret
                                         // -- End function
+func000000000000003b:                   // @func000000000000003b
+// %bb.0:                               // %entry
+	mov	x8, #43979                      // =0xabcb
+	movk	x8, #32553, lsl #16
+	movk	x8, #429, lsl #32
+	umulh	x0, x0, x8
+	ret
+                                        // -- End function

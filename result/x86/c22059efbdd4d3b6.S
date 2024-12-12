@@ -1,5 +1,5 @@
-func000000000000002e:                   # @func000000000000002e
+func000000000000002f:                   # @func000000000000002f
+	leaq	(%rdi,%rsi,4), %rax
 	andl	$252, %edx
-	addq	%rdi, %rdx
-	leaq	(%rdx,%rsi,4), %rax
+	addq	%rdx, %rax
 	retq

@@ -1,22 +1,19 @@
 
-; 45 occurrences:
+; 42 occurrences:
 ; abc/optimized/acecRe.c.ll
 ; abc/optimized/bmcBmc2.c.ll
 ; abc/optimized/giaBalAig.c.ll
 ; abc/optimized/giaSif.c.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
-; arrow/optimized/cached-powers.cc.ll
 ; casadi/optimized/cvodes.c.ll
 ; darktable/optimized/introspection_colormapping.c.ll
 ; darktable/optimized/introspection_lut3d.c.ll
-; double_conversion/optimized/cached-powers.cc.ll
 ; flac/optimized/window.c.ll
 ; graphviz/optimized/emit.c.ll
 ; graphviz/optimized/graph_generator.c.ll
 ; gromacs/optimized/msd.cpp.ll
 ; gromacs/optimized/pull_rotation.cpp.ll
 ; icu/optimized/calendar.ll
-; icu/optimized/double-conversion-cached-powers.ll
 ; icu/optimized/hebrwcal.ll
 ; lightgbm/optimized/objective_function.cpp.ll
 ; minetest/optimized/inputhandler.cpp.ll

@@ -15,7 +15,9 @@ entry:
   ret double %5
 }
 
-; 3 occurrences:
+; 5 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; graphviz/optimized/taper.c.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; proj/optimized/isea.cpp.ll
@@ -23,7 +25,7 @@ entry:
 define double @func0000000000000002(double %0, double %1) #0 {
 entry:
   %2 = fsub double %0, %1
-  %3 = fcmp olt double %2, 0.000000e+00
+  %3 = fcmp olt double %2, 0xC00921FB54442D18
   %4 = fadd double %2, 0x401921FB54442D18
   %5 = select i1 %3, double %4, double %2
   ret double %5

@@ -13,17 +13,17 @@ func0000000000000006:                   # @func0000000000000006
 	cmpq	%rdi, %rax
 	setl	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	sarxq	%rdx, %rsi, %rax
 	cmpq	%rdi, %rax
 	sete	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	sarxq	%rdx, %rsi, %rax
 	cmpq	%rdi, %rax
 	setg	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	sarxq	%rdx, %rsi, %rax
 	cmpq	%rdi, %rax
 	setl	%al

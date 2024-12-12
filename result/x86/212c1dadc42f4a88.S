@@ -4,25 +4,25 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	%esi, %edx
 	sete	%al
 	retq
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	notl	%edx
 	addl	%edi, %edx
 	cmpl	%esi, %edx
 	sete	%al
 	retq
-func00000000000000b6:                   # @func00000000000000b6
+func0000000000000166:                   # @func0000000000000166
 	xorl	$1, %edx
 	addl	%edi, %edx
 	cmpl	%esi, %edx
 	setl	%al
 	retq
-func0000000000000096:                   # @func0000000000000096
+func0000000000000126:                   # @func0000000000000126
 	xorl	$1, %edx
 	addl	%edi, %edx
 	cmpl	%esi, %edx
 	setl	%al
 	retq
-func0000000000000086:                   # @func0000000000000086
+func0000000000000106:                   # @func0000000000000106
 	notl	%edx
 	addl	%edi, %edx
 	cmpl	%esi, %edx

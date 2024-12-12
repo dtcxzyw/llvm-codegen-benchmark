@@ -6,7 +6,7 @@ func0000000000000024:                   # @func0000000000000024
 	vpaddd	%ymm3, %ymm1, %ymm1
 	vpsrad	$3, %ymm1, %ymm1
 	vpmulld	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000025:                   # @func0000000000000025
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
@@ -15,7 +15,7 @@ func0000000000000025:                   # @func0000000000000025
 	vpaddd	%ymm3, %ymm1, %ymm1
 	vpsrad	$1, %ymm1, %ymm1
 	vpmulld	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI2_0:
 	.long	4294967292                      # 0xfffffffc
@@ -26,5 +26,5 @@ func0000000000000020:                   # @func0000000000000020
 	vpaddd	%ymm3, %ymm1, %ymm1
 	vpsrad	$5, %ymm1, %ymm1
 	vpmulld	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq

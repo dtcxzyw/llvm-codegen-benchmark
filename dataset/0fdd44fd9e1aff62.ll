@@ -1,5 +1,5 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; darktable/optimized/TableLookUp.cpp.ll
 ; darktable/optimized/introspection_basecurve.c.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
@@ -7,6 +7,7 @@
 ; darktable/optimized/introspection_colorequal.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; darktable/optimized/introspection_toneequal.c.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000050(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -17,26 +18,12 @@ entry:
   ret ptr %6
 }
 
-; 15 occurrences:
-; ceres/optimized/schur_eliminator_2_2_2.cc.ll
-; ceres/optimized/schur_eliminator_2_2_3.cc.ll
-; ceres/optimized/schur_eliminator_2_2_4.cc.ll
-; ceres/optimized/schur_eliminator_2_2_d.cc.ll
-; ceres/optimized/schur_eliminator_2_4_3.cc.ll
-; ceres/optimized/schur_eliminator_2_4_4.cc.ll
-; ceres/optimized/schur_eliminator_2_4_6.cc.ll
-; ceres/optimized/schur_eliminator_2_4_8.cc.ll
-; ceres/optimized/schur_eliminator_2_4_9.cc.ll
-; ceres/optimized/schur_eliminator_2_4_d.cc.ll
-; ceres/optimized/schur_eliminator_4_4_2.cc.ll
-; ceres/optimized/schur_eliminator_4_4_3.cc.ll
-; ceres/optimized/schur_eliminator_4_4_4.cc.ll
-; ceres/optimized/schur_eliminator_4_4_d.cc.ll
+; 1 occurrences:
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000da(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func00000000000000de(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw i16, ptr %0, i64 %1
+  %3 = getelementptr nusw nuw i16, ptr %0, i64 %1
   %.idx = shl i64 %2, 3
   %4 = getelementptr i8, ptr %3, i64 %.idx
   %5 = getelementptr i8, ptr %4, i64 8
@@ -47,9 +34,9 @@ entry:
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000fa(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func00000000000000ff(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw i16, ptr %0, i64 %1
+  %3 = getelementptr nusw nuw i16, ptr %0, i64 %1
   %.idx = shl i64 %2, 2
   %4 = getelementptr i8, ptr %3, i64 %.idx
   %5 = getelementptr i8, ptr %4, i64 4
@@ -59,7 +46,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/TableLookUp.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000f2(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func00000000000000f3(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i16, ptr %0, i64 %1
   %.idx = shl i64 %2, 2
@@ -68,7 +55,8 @@ entry:
   ret ptr %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; abc/optimized/bmcMaj2.c.ll
 ; darktable/optimized/introspection_colorchecker.c.ll
 ; Function Attrs: nounwind
 define ptr @func00000000000000f0(ptr %0, i64 %1, i64 %2) #0 {
@@ -148,7 +136,32 @@ entry:
   ret ptr %6
 }
 
-; 9 occurrences:
+; 14 occurrences:
+; ceres/optimized/schur_eliminator_2_2_2.cc.ll
+; ceres/optimized/schur_eliminator_2_2_3.cc.ll
+; ceres/optimized/schur_eliminator_2_2_4.cc.ll
+; ceres/optimized/schur_eliminator_2_2_d.cc.ll
+; ceres/optimized/schur_eliminator_2_4_3.cc.ll
+; ceres/optimized/schur_eliminator_2_4_4.cc.ll
+; ceres/optimized/schur_eliminator_2_4_6.cc.ll
+; ceres/optimized/schur_eliminator_2_4_8.cc.ll
+; ceres/optimized/schur_eliminator_2_4_9.cc.ll
+; ceres/optimized/schur_eliminator_2_4_d.cc.ll
+; ceres/optimized/schur_eliminator_4_4_2.cc.ll
+; ceres/optimized/schur_eliminator_4_4_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_4.cc.ll
+; ceres/optimized/schur_eliminator_4_4_d.cc.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000da(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 5
+  %4 = getelementptr nusw double, ptr %0, i64 %1
+  %5 = getelementptr i8, ptr %4, i64 %3
+  %6 = getelementptr i8, ptr %5, i64 32
+  ret ptr %6
+}
+
+; 8 occurrences:
 ; g2o/optimized/vertex_ellipse.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_referencing.cpp.ll
@@ -157,7 +170,6 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; openblas/optimized/dtrsm_kernel_LN.c.ll
 ; openblas/optimized/strsm_kernel_LN.c.ll
-; openblas/optimized/strsm_kernel_RT.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000005a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -165,6 +177,18 @@ entry:
   %4 = getelementptr nusw float, ptr %0, i64 %1
   %5 = getelementptr i8, ptr %4, i64 %3
   %6 = getelementptr i8, ptr %5, i64 -8
+  ret ptr %6
+}
+
+; 1 occurrences:
+; openblas/optimized/strsm_kernel_RT.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000007b(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 6
+  %4 = getelementptr nusw i8, ptr %0, i64 %1
+  %5 = getelementptr i8, ptr %4, i64 %3
+  %6 = getelementptr i8, ptr %5, i64 -64
   ret ptr %6
 }
 

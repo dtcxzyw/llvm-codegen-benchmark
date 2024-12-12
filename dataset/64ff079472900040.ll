@@ -47,12 +47,9 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
-; spike/optimized/f128_to_f16.ll
-; spike/optimized/f128_to_f32.ll
+; 2 occurrences:
 ; spike/optimized/f128_to_i32_r_minMag.ll
 ; spike/optimized/f128_to_ui32.ll
-; spike/optimized/f128_to_ui32_r_minMag.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000030(i64 %0, i64 %1) #0 {
 entry:

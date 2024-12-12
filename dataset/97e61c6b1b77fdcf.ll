@@ -26,7 +26,7 @@ entry:
   ret i32 %5
 }
 
-; 62 occurrences:
+; 59 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/giaIf.c.ll
 ; clamav/optimized/sha256.cpp.ll
@@ -57,13 +57,10 @@ entry:
 ; openmpi/optimized/sha256.ll
 ; openspiel/optimized/Scheduler.cpp.ll
 ; openssl/optimized/libcrypto-lib-des_enc.ll
-; openssl/optimized/libcrypto-lib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-lib-set_key.ll
 ; openssl/optimized/libcrypto-shlib-des_enc.ll
-; openssl/optimized/libcrypto-shlib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-shlib-set_key.ll
 ; openssl/optimized/liblegacy-lib-des_enc.ll
-; openssl/optimized/liblegacy-lib-fcrypt_b.ll
 ; openssl/optimized/padlock-dso-e_padlock.ll
 ; pbrt-v4/optimized/camera.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll

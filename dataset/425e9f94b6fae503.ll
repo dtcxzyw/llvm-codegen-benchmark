@@ -102,14 +102,13 @@ entry:
   ret i32 %6
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; hermes/optimized/JSLibInternal.cpp.ll
 ; lief/optimized/poly1305.c.ll
 ; lightgbm/optimized/feature_histogram.cpp.ll
 ; linux/optimized/intel_renderstate.ll
 ; linux/optimized/resize.ll
-; spike/optimized/s_mul64To128M.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -138,7 +137,7 @@ entry:
 define i32 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = lshr i64 %4, 11
   %6 = trunc i64 %5 to i32
   ret i32 %6

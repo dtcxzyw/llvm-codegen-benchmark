@@ -1,5 +1,6 @@
 
-; 7 occurrences:
+; 8 occurrences:
+; gromacs/optimized/gmx_h2order.cpp.ll
 ; hermes/optimized/APInt.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/LegalizeIntegerTypes.cpp.ll

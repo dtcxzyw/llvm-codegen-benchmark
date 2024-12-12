@@ -1,39 +1,47 @@
-func00000000000000ac:                   # @func00000000000000ac
+func000000000000010c:                   # @func000000000000010c
 	movslq	%esi, %rax
-	cmpq	%rdi, %rax
-	setl	%cl
+	cmpq	%rax, %rdi
+	seta	%cl
 	testq	%rdi, %rdi
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000006a:                   # @func000000000000006a
+func000000000000014c:                   # @func000000000000014c
 	movslq	%esi, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	setg	%cl
+	testq	%rdi, %rdi
+	setne	%al
+	andb	%cl, %al
+	retq
+func00000000000000ca:                   # @func00000000000000ca
+	movslq	%esi, %rax
+	cmpq	%rax, %rdi
+	setl	%cl
 	testq	%rdi, %rdi
 	setns	%al
 	andb	%cl, %al
 	retq
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000014a:                   # @func000000000000014a
 	movslq	%esi, %rax
-	cmpq	%rdi, %rax
-	setl	%cl
+	cmpq	%rax, %rdi
+	setg	%cl
 	testq	%rdi, %rdi
 	setg	%al
 	andb	%cl, %al
 	retq
-func0000000000000064:                   # @func0000000000000064
+func00000000000000c4:                   # @func00000000000000c4
 	movslq	%esi, %rax
-	cmpq	%rdi, %rax
-	setg	%cl
+	cmpq	%rax, %rdi
+	setl	%cl
 	testq	$-2147483648, %rdi              # imm = 0x80000000
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000006c:                   # @func000000000000006c
+func00000000000000cc:                   # @func00000000000000cc
 	movslq	%esi, %rax
-	cmpq	%rdi, %rax
-	setg	%cl
+	cmpq	%rax, %rdi
+	setl	%cl
 	testq	%rdi, %rdi
 	setne	%al
 	andb	%cl, %al

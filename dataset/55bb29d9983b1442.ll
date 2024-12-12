@@ -45,13 +45,23 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
-; abseil-cpp/optimized/symbolize.cc.ll
+; 1 occurrences:
 ; slurm/optimized/parse_time.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 10
+  %4 = select i1 %3, i32 %0, i32 %1
+  %5 = sext i32 %4 to i64
+  ret i64 %5
+}
+
+; 1 occurrences:
+; abseil-cpp/optimized/symbolize.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = icmp samesign ult i8 %2, 65
   %4 = select i1 %3, i32 %0, i32 %1
   %5 = sext i32 %4 to i64
   ret i64 %5

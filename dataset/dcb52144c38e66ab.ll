@@ -8,7 +8,7 @@
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; ruby/optimized/ripper.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000181(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 1
   %3 = icmp ne i16 %2, 0
@@ -31,7 +31,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i16 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 1
   %3 = icmp eq i16 %2, 0
@@ -40,16 +40,14 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
+; 5 occurrences:
 ; git/optimized/combine-diff.ll
 ; libpng/optimized/png.c.ll
-; linux/optimized/attr.ll
-; linux/optimized/dswload.ll
 ; openjdk/optimized/png.ll
 ; qemu/optimized/hw_pci_pcie.c.ll
 ; wireshark/optimized/packet-ip.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 1024
   %3 = icmp eq i16 %2, 0
@@ -68,7 +66,7 @@ entry:
 ; llvm/optimized/UndefCapturedBlockVarChecker.cpp.ll
 ; wireshark/optimized/packet-bthci_iso.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i16 %1) #0 {
+define i1 @func000000000000018c(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 16384
   %3 = icmp ne i16 %2, 0
@@ -81,7 +79,7 @@ entry:
 ; linux/optimized/tx.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000184(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 32
   %3 = icmp ne i16 %2, 0
@@ -93,7 +91,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/avtab.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000028(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 1792
   %3 = icmp eq i16 %2, 0

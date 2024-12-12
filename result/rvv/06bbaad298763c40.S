@@ -18,6 +18,16 @@ func000000000000000f:                   # @func000000000000000f
 	vmv.v.x	v8, a0
 	vmacc.vx	v8, a0, v10
 	ret
+func0000000000000007:                   # @func0000000000000007
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vsrl.vi	v8, v8, 16
+	li	a0, 31
+	vand.vx	v10, v8, a0
+	li	a0, -144
+	vmv.v.x	v8, a0
+	li	a0, 144
+	vmacc.vx	v8, a0, v10
+	ret
 func000000000000000d:                   # @func000000000000000d
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsrl.vi	v8, v8, 5

@@ -38,6 +38,19 @@ entry:
   ret i64 %6
 }
 
+; 2 occurrences:
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/diggdkpukg0xn23g7ivuh3jfw.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000040(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = mul i64 %0, %1
+  %5 = add i64 %4, %3
+  %6 = add i64 %5, 1
+  ret i64 %6
+}
+
 ; 1 occurrences:
 ; linux/optimized/fsmap.ll
 ; Function Attrs: nounwind

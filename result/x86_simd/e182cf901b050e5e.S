@@ -1,4 +1,4 @@
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	vpmulld	%ymm2, %ymm1, %ymm1
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrd	$1, %xmm2, %eax
@@ -52,7 +52,7 @@ func000000000000002a:                   # @func000000000000002a
 	retq
 .LCPI1_0:
 	.long	1                               # 0x1
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	vpmulld	%ymm2, %ymm1, %ymm1
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrd	$1, %xmm2, %eax
@@ -105,7 +105,7 @@ func0000000000000026:                   # @func0000000000000026
 	retq
 .LCPI2_0:
 	.long	1                               # 0x1
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	vpmulld	%ymm2, %ymm1, %ymm1
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrd	$1, %xmm2, %eax

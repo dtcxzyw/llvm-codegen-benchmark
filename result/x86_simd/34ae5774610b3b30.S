@@ -20,7 +20,7 @@
 	.long	2                               # 0x2
 .LCPI0_3:
 	.short	32                              # 0x20
-func00000000000000f4:                   # @func00000000000000f4
+func00000000000001f4:                   # @func00000000000001f4
 	vpmovdw	%ymm1, %xmm1
 	vpbroadcastw	.LCPI0_3(%rip), %xmm2   # xmm2 = [32,32,32,32,32,32,32,32]
 	vpsubw	%xmm1, %xmm2, %xmm1

@@ -13,7 +13,7 @@ func0000000000000005:                   # @func0000000000000005
 	.long	4294967288                      # 0xfffffff8
 func0000000000000004:                   # @func0000000000000004
 	vpslld	$3, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpsrad	$31, %ymm0, %ymm1
 	vpsrld	$29, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm1
@@ -24,7 +24,7 @@ func0000000000000004:                   # @func0000000000000004
 	.long	4294967288                      # 0xfffffff8
 func0000000000000000:                   # @func0000000000000000
 	vpslld	$3, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpsrad	$31, %ymm0, %ymm1
 	vpsrld	$29, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm1

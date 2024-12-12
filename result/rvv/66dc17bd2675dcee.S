@@ -9,5 +9,5 @@ func0000000000000001:                   # @func0000000000000001
 	vsrl.vi	v10, v10, 4
 	addiw	a1, a1, -1
 	vand.vx	v10, v10, a1
-	vmseq.vv	v0, v10, v8
+	vmseq.vv	v0, v8, v10
 	ret

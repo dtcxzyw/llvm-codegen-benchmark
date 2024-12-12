@@ -34,7 +34,7 @@
 	.zero	1
 .LCPI0_2:
 	.long	32                              # 0x20
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpaddb	.LCPI0_0(%rip), %xmm1, %xmm1
 	vpcmpltub	.LCPI0_1(%rip), %xmm1, %k1
 	vorps	.LCPI0_2(%rip){1to8}, %ymm0, %ymm0 {%k1}
@@ -75,7 +75,7 @@ func0000000000000014:                   # @func0000000000000014
 	.zero	1
 .LCPI1_2:
 	.long	128                             # 0x80
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	vpaddb	.LCPI1_0(%rip), %xmm1, %xmm1
 	vpcmpltub	.LCPI1_1(%rip), %xmm1, %k1
 	vorps	.LCPI1_2(%rip){1to8}, %ymm0, %ymm0 {%k1}

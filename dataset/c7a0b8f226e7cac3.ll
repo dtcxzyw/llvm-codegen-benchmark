@@ -1,6 +1,5 @@
 
-; 4 occurrences:
-; abc/optimized/satUtil.c.ll
+; 3 occurrences:
 ; arrow/optimized/float16.cc.ll
 ; linux/optimized/xfrm_user.ll
 ; minetest/optimized/c_converter.cpp.ll
@@ -47,7 +46,7 @@ entry:
   %2 = lshr i32 %1, 17
   %3 = add nuw nsw i32 %2, 7
   %4 = and i32 %3, 65528
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 

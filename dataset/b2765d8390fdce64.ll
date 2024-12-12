@@ -1,17 +1,4 @@
 
-; 2 occurrences:
-; minetest/optimized/serverenvironment.cpp.ll
-; qemu/optimized/hw_vfio_pci.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000035(i64 %0, i64 %1, i16 %2) #0 {
-entry:
-  %3 = zext i16 %2 to i64
-  %4 = shl nuw nsw i64 %3, 8
-  %5 = add nsw i64 %0, %1
-  %6 = add nsw i64 %5, %4
-  ret i64 %6
-}
-
 ; 3 occurrences:
 ; node/optimized/simdutf.ll
 ; softposit-rs/optimized/4wrr62dd33canpwl.ll

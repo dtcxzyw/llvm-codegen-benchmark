@@ -1,8 +1,3 @@
-func000000000000001a:                   # @func000000000000001a
-	addiw	a2, a2, 1
-	add	a0, a0, a1
-	add	a0, a0, a2
-	ret
 func0000000000000010:                   # @func0000000000000010
 	addiw	a2, a2, -1
 	slli	a0, a0, 3
@@ -19,6 +14,11 @@ func00000000000001ba:                   # @func00000000000001ba
 	add	a0, a0, a1
 	ret
 func0000000000000018:                   # @func0000000000000018
+	addiw	a2, a2, 1
+	add	a0, a0, a1
+	add	a0, a0, a2
+	ret
+func000000000000001a:                   # @func000000000000001a
 	addiw	a2, a2, 1
 	add	a0, a0, a1
 	add	a0, a0, a2

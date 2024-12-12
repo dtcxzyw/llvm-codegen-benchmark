@@ -25,7 +25,7 @@ entry:
 ; openjdk/optimized/socketTransport.ll
 ; zxing/optimized/PDFDetectionResultColumn.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000051(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000a1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = add nsw i32 %3, 96
@@ -38,7 +38,7 @@ entry:
 ; php/optimized/pcre2_jit_compile.ll
 ; wireshark/optimized/packet-rtps.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000f1(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000001e1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = icmp ne i32 %0, 0
@@ -50,7 +50,7 @@ entry:
 ; 1 occurrences:
 ; spike/optimized/fdt.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000081(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = add nsw i32 %3, 4

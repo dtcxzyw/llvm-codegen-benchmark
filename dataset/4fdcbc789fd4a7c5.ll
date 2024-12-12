@@ -1,5 +1,5 @@
 
-; 34 occurrences:
+; 32 occurrences:
 ; abc/optimized/rsbDec6.c.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; arrow/optimized/diff.cc.ll
@@ -21,9 +21,7 @@
 ; linux/optimized/intel_sseu_debugfs.ll
 ; linux/optimized/oid_registry.ll
 ; linux/optimized/rtc-mc146818-lib.ll
-; linux/optimized/socket_sysfs.ll
 ; linux/optimized/xt_conntrack.ll
-; linux/optimized/xt_state.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; ockam-rs/optimized/1145kugil9dl94a2.ll
 ; openspiel/optimized/hearts_test.cc.ll

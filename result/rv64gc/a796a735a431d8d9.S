@@ -20,11 +20,18 @@ func0000000000000010:                   # @func0000000000000010
 	and	a1, a1, a2
 	add	a0, a0, a1
 	ret
+func0000000000000007:                   # @func0000000000000007
+	andi	a2, a2, 255
+	seqz	a2, a2
+	addi	a2, a2, -1
+	and	a1, a1, a2
+	add	a0, a0, a1
+	ret
 func0000000000000011:                   # @func0000000000000011
 	andi	a2, a2, 255
 	li	a3, 10
-	bgeu	a2, a3, .LBB3_2
+	bgeu	a2, a3, .LBB4_2
 	li	a1, -48
-.LBB3_2:                                # %entry
+.LBB4_2:                                # %entry
 	add	a0, a0, a1
 	ret

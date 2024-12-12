@@ -131,6 +131,13 @@ func00000000000000fd:                   # @func00000000000000fd
 	slliw	a0, a0, 16
 	or	a0, a0, a1
 	ret
+func00000000000000fc:                   # @func00000000000000fc
+	slliw	a2, a2, 12
+	slliw	a1, a1, 8
+	or	a1, a1, a2
+	slliw	a0, a0, 4
+	or	a0, a0, a1
+	ret
 func00000000000000bc:                   # @func00000000000000bc
 	slliw	a2, a2, 24
 	slliw	a1, a1, 20
@@ -138,11 +145,11 @@ func00000000000000bc:                   # @func00000000000000bc
 	slliw	a0, a0, 16
 	or	a0, a0, a1
 	ret
-func00000000000000fc:                   # @func00000000000000fc
-	slliw	a2, a2, 3
+func00000000000000f6:                   # @func00000000000000f6
+	slliw	a2, a2, 11
 	slliw	a1, a1, 6
 	or	a1, a1, a2
-	slliw	a0, a0, 11
+	slliw	a0, a0, 3
 	or	a0, a0, a1
 	ret
 func000000000000000d:                   # @func000000000000000d

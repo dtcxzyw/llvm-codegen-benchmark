@@ -11,7 +11,7 @@ func0000000000000007:                   # @func0000000000000007
 	vpmuldq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 .LCPI2_0:
-	.quad	20                              # 0x14
+	.quad	24                              # 0x18
 func0000000000000003:                   # @func0000000000000003
 	vpmovzxbq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,zero,zero,zero,zero,xmm0[1],zero,zero,zero,zero,zero,zero,zero,xmm0[2],zero,zero,zero,zero,zero,zero,zero,xmm0[3],zero,zero,zero,zero,zero,zero,zero
 	vpmuldq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0

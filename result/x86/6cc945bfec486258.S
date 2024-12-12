@@ -1,4 +1,4 @@
-func0000000000000184:                   # @func0000000000000184
+func0000000000000304:                   # @func0000000000000304
 	shrl	$10, %edx
 	andl	$1, %edx
 	orl	%esi, %edx
@@ -6,7 +6,7 @@ func0000000000000184:                   # @func0000000000000184
 	sete	%al
 	andb	%dl, %al
 	retq
-func0000000000000181:                   # @func0000000000000181
+func0000000000000301:                   # @func0000000000000301
 	andl	$4, %edx
 	shrl	$2, %edx
 	orl	%esi, %edx
@@ -14,12 +14,11 @@ func0000000000000181:                   # @func0000000000000181
 	sete	%al
 	andb	%dl, %al
 	retq
-func0000000000000021:                   # @func0000000000000021
-	andl	$14, %edx
-	cmpl	$2, %edx
+func0000000000000041:                   # @func0000000000000041
+	testl	$1024, %edx                     # imm = 0x400
 	sete	%cl
 	orb	%sil, %cl
-	cmpq	$8, %rdi
+	testq	%rdi, %rdi
 	sete	%al
 	andb	%cl, %al
 	retq

@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; coreutils-rs/optimized/11lwsmxswp4jsl8v.ll
 ; coreutils-rs/optimized/whotp6m83kkoazv.ll
 ; git/optimized/packfile.ll
@@ -13,6 +13,7 @@
 ; ncnn/optimized/pooling_x86_avx512.cpp.ll
 ; openusd/optimized/utils.c.ll
 ; redis/optimized/intset.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:

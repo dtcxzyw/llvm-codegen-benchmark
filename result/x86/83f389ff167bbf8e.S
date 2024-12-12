@@ -40,6 +40,13 @@ func000000000000007b:                   # @func000000000000007b
 	movl	%edi, %eax
 	orq	%rsi, %rax
 	retq
+func000000000000005f:                   # @func000000000000005f
+	shlq	$48, %rdx
+	shlq	$32, %rsi
+	orq	%rdx, %rsi
+	movl	%edi, %eax
+	orq	%rsi, %rax
+	retq
 func0000000000000077:                   # @func0000000000000077
 	shlq	$32, %rdx
 	shlq	$48, %rsi
@@ -64,13 +71,6 @@ func0000000000000072:                   # @func0000000000000072
 func000000000000005a:                   # @func000000000000005a
 	shlq	$48, %rdx
 	shlq	$24, %rsi
-	orq	%rdx, %rsi
-	movl	%edi, %eax
-	orq	%rsi, %rax
-	retq
-func000000000000005f:                   # @func000000000000005f
-	shlq	$32, %rdx
-	shlq	$16, %rsi
 	orq	%rdx, %rsi
 	movl	%edi, %eax
 	orq	%rsi, %rax

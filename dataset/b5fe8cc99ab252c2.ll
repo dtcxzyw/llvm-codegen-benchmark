@@ -5,11 +5,11 @@
 ; openssl/optimized/liblegacy-lib-cipher_rc4_hmac_md5_hw.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = or disjoint i64 %3, %1
-  %5 = icmp ult i64 %4, %0
+  %4 = or disjoint i64 %1, %3
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 
@@ -53,11 +53,11 @@ entry:
 ; mold/optimized/input-files.cc.SPARC64.cc.ll
 ; mold/optimized/input-files.cc.X86_64.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = or disjoint i64 %3, %1
-  %5 = icmp sgt i64 %4, %0
+  %4 = or disjoint i64 %1, %3
+  %5 = icmp slt i64 %0, %4
   ret i1 %5
 }
 
@@ -83,15 +83,15 @@ entry:
 ; yosys/optimized/memory_libmap.ll
 ; yosys/optimized/qwp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = or disjoint i64 %3, %1
-  %5 = icmp eq i64 %4, %0
+  %4 = or disjoint i64 %1, %3
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
-; 15 occurrences:
+; 18 occurrences:
 ; libquic/optimized/quic_framer.cc.ll
 ; linux/optimized/balloc.ll
 ; linux/optimized/fsmap.ll
@@ -107,18 +107,20 @@ entry:
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; wireshark/optimized/packet-rtp.c.ll
+; zed-rs/optimized/0eh1fm3h72yjwo2ipis72ui0f.ll
+; zed-rs/optimized/adlc6qfcwjhvmcaovuwfkwg5s.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = or disjoint i64 %3, %1
-  %5 = icmp ugt i64 %4, %0
+  %4 = or disjoint i64 %1, %3
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
 ; 9 occurrences:
 ; arrow/optimized/basic_decimal.cc.ll
-; hdf5/optimized/H5HGdbg.c.ll
 ; hermes/optimized/APInt.cpp.ll
 ; linux/optimized/block_validity.ll
 ; llvm/optimized/APInt.cpp.ll
@@ -126,12 +128,13 @@ entry:
 ; tomlplusplus/optimized/toml.cpp.ll
 ; verilator/optimized/V3Number.cpp.ll
 ; z3/optimized/mpn.cpp.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = or disjoint i64 %3, %1
-  %5 = icmp ult i64 %4, %0
+  %4 = or disjoint i64 %1, %3
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 
@@ -143,8 +146,8 @@ entry:
 define i1 @func0000000000000006(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = or i64 %3, %1
-  %5 = icmp sgt i64 %4, %0
+  %4 = or i64 %1, %3
+  %5 = icmp slt i64 %0, %4
   ret i1 %5
 }
 
@@ -156,8 +159,8 @@ entry:
 define i1 @func0000000000000007(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = or i64 %3, %1
-  %5 = icmp sge i64 %4, %0
+  %4 = or i64 %1, %3
+  %5 = icmp sle i64 %0, %4
   ret i1 %5
 }
 
@@ -167,19 +170,19 @@ entry:
 define i1 @func000000000000000a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = or i64 %3, %1
-  %5 = icmp slt i64 %4, %0
+  %4 = or i64 %1, %3
+  %5 = icmp sgt i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; llvm/optimized/AArch64PreLegalizerCombiner.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000025(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = or disjoint i64 %3, %1
-  %5 = icmp uge i64 %4, %0
+  %4 = or disjoint i64 %1, %3
+  %5 = icmp ule i64 %0, %4
   ret i1 %5
 }
 
@@ -193,30 +196,30 @@ entry:
 define i1 @func0000000000000001(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = or i64 %3, %1
-  %5 = icmp eq i64 %4, %0
+  %4 = or i64 %1, %3
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; llvm/optimized/InstrRefBasedImpl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = or disjoint i64 %3, %1
-  %5 = icmp eq i64 %4, %0
+  %4 = or disjoint i64 %1, %3
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; llvm/optimized/InstrRefBasedImpl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000006c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = or disjoint i64 %3, %1
-  %5 = icmp ne i64 %4, %0
+  %4 = or disjoint i64 %1, %3
+  %5 = icmp ne i64 %0, %4
   ret i1 %5
 }
 
@@ -225,35 +228,33 @@ entry:
 ; postgres/optimized/walsummary.ll
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000029(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = or disjoint i64 %3, %1
-  %5 = icmp ule i64 %4, %0
+  %4 = or disjoint i64 %1, %3
+  %5 = icmp uge i64 %0, %4
   ret i1 %5
 }
 
-; 3 occurrences:
-; freetype/optimized/sfnt.c.ll
-; freetype/optimized/type1.c.ll
+; 1 occurrences:
 ; wireshark/optimized/packet-quic.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = or i64 %3, %1
-  %5 = icmp ugt i64 %4, %0
+  %4 = or i64 %1, %3
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = or disjoint i64 %3, %1
-  %5 = icmp slt i64 %4, %0
+  %4 = or disjoint i64 %1, %3
+  %5 = icmp sgt i64 %0, %4
   ret i1 %5
 }
 
@@ -263,8 +264,8 @@ entry:
 define i1 @func0000000000000008(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = or i64 %3, %1
-  %5 = icmp ult i64 %4, %0
+  %4 = or i64 %1, %3
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 

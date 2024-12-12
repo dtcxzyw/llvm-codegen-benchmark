@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 27 occurrences:
 ; assimp/optimized/zip.c.ll
 ; harfbuzz/optimized/hb-subset-cff2.cc.ll
 ; hdf5/optimized/H5Rint.c.ll
@@ -26,10 +26,9 @@
 ; openssl/optimized/sslbuffertest-bin-ssltestlib.ll
 ; openssl/optimized/sslcorrupttest-bin-ssltestlib.ll
 ; openssl/optimized/tls13ccstest-bin-ssltestlib.ll
-; php/optimized/pcre2_compile.ll
 ; redis/optimized/lua_cmsgpack.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007e(ptr %0, i64 %1, i8 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %1, 8

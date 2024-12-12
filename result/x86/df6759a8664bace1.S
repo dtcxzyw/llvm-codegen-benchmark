@@ -1,7 +1,7 @@
 func0000000000000003:                   # @func0000000000000003
 	shrl	$21, %esi
 	andl	$4, %esi
-	leal	56(%rsi,%rdi), %eax
+	leal	56(%rdi,%rsi), %eax
 	retq
 func0000000000000002:                   # @func0000000000000002
 	movq	%rsi, %rax

@@ -1,5 +1,5 @@
 
-; 286 occurrences:
+; 285 occurrences:
 ; abc/optimized/abcNpnSave.c.ll
 ; abseil-cpp/optimized/city.cc.ll
 ; cmake/optimized/zstd_compress.c.ll
@@ -236,7 +236,6 @@
 ; mitsuba3/optimized/merge.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/tensor.cpp.ll

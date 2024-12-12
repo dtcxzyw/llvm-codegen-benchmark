@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 12 occurrences:
 ; gromacs/optimized/colvargrid.cpp.ll
 ; libwebp/optimized/webpinfo.c.ll
 ; linux/optimized/memblock.ll
@@ -10,6 +10,8 @@
 ; qemu/optimized/linux-user_linuxload.c.ll
 ; ruby/optimized/io.ll
 ; wireshark/optimized/androiddump.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:

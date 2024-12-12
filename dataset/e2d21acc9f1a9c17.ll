@@ -1,8 +1,9 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; abc/optimized/covMinSop.c.ll
 ; abc/optimized/darCut.c.ll
 ; abc/optimized/dauDsd.c.ll
+; abc/optimized/dauNonDsd.c.ll
 ; brotli/optimized/decode.c.ll
 ; hyperscan/optimized/stream.c.ll
 ; linux/optimized/i915_vma.ll

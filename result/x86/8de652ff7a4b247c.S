@@ -15,7 +15,7 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000003:                   # @func0000000000000003
 	orl	%edx, %esi
 	movl	%esi, %eax
-	orl	$16, %eax
+	orl	$8, %eax
 	testb	$1, %dil
 	cmovel	%esi, %eax
 	retq

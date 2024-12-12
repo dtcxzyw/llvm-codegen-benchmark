@@ -1,9 +1,10 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; llvm/optimized/APINotesWriter.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/ComputeDependence.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
+; lvgl/optimized/lv_refr.ll
 ; openusd/optimized/refinerSurfaceFactory.cpp.ll
 ; openusd/optimized/regularPatchBuilder.cpp.ll
 ; ruby/optimized/ruby.ll
@@ -18,7 +19,7 @@ entry:
   %2 = trunc i16 %1 to i8
   %3 = shl i8 %2, 3
   %4 = and i8 %3, 32
-  %5 = or disjoint i8 %4, %0
+  %5 = or disjoint i8 %0, %4
   ret i8 %5
 }
 
@@ -31,7 +32,7 @@ entry:
   %2 = trunc i16 %1 to i8
   %3 = shl i8 %2, 1
   %4 = and i8 %3, 8
-  %5 = or i8 %4, %0
+  %5 = or i8 %0, %4
   ret i8 %5
 }
 

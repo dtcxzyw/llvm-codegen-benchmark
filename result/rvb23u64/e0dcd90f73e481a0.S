@@ -9,8 +9,3 @@ func000000000000005d:                   # @func000000000000005d
 	sh2add	a0, a0, a1
 	slli	a0, a0, 3
 	ret
-func0000000000000030:                   # @func0000000000000030
-	slli.uw	a1, a1, 4
-	sh1add	a0, a0, a0
-	add	a0, a0, a1
-	ret

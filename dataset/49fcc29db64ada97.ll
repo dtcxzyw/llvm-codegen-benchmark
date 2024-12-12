@@ -1,6 +1,8 @@
 
-; 35 occurrences:
+; 37 occurrences:
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/query_rule.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/json_writer.cpp.ll
 ; cmake/optimized/zstd_decompress_block.c.ll
 ; cpython/optimized/compile.ll
@@ -44,10 +46,16 @@ entry:
   ret i1 %5
 }
 
-; 146 occurrences:
+; 150 occurrences:
 ; abseil-cpp/optimized/parse.cc.ll
 ; annoy/optimized/annoymodule.ll
 ; assimp/optimized/TargetAnimation.cpp.ll
+; boost/optimized/any_params_iter.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/shell.ll
+; boost/optimized/sparring_partner.ll
+; boost/optimized/value_semantic.ll
 ; clamav/optimized/regcomp.c.ll
 ; cmake/optimized/archive_check_magic.c.ll
 ; cmake/optimized/archive_string.c.ll
@@ -150,9 +158,7 @@ entry:
 ; nix/optimized/git-utils.ll
 ; nix/optimized/hilite.ll
 ; nix/optimized/local-derivation-goal.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/search.ll
 ; nix/optimized/util.ll
 ; node/optimized/libnode.node_blob.ll
@@ -195,11 +201,11 @@ entry:
 define i1 @func0000000000000002(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
-; 24 occurrences:
+; 23 occurrences:
 ; arrow/optimized/grouper.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -219,7 +225,6 @@ entry:
 ; openjdk/optimized/hb-common.ll
 ; openusd/optimized/evalUtils.cpp.ll
 ; php/optimized/memory.ll
-; proj/optimized/crs.cpp.ll
 ; proj/optimized/singleoperation.cpp.ll
 ; proj/optimized/transformation.cpp.ll
 ; ruby/optimized/prism.ll
@@ -293,6 +298,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_storage_table.cpp.ll
 ; duckdb/optimized/ub_duckdb_table_func_system.cpp.ll
 ; duckdb/optimized/ub_duckdb_transaction.cpp.ll
+; eastl/optimized/TestMemory.cpp.ll
 ; entt/optimized/custom_identifier.cpp.ll
 ; entt/optimized/dense_map.cpp.ll
 ; entt/optimized/dense_set.cpp.ll
@@ -360,7 +366,6 @@ entry:
 ; minetest/optimized/CIrrDeviceSDL.cpp.ll
 ; minetest/optimized/COBJMeshFileLoader.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/chat.cpp.ll
 ; minetest/optimized/dynamicshadowsrender.cpp.ll
 ; minetest/optimized/enriched_string.cpp.ll
@@ -452,13 +457,12 @@ define i1 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp ult i64 %3, 3
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 30 occurrences:
+; 28 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
-; clamav/optimized/uuencode.c.ll
 ; cmake/optimized/cmIncludeCommand.cxx.ll
 ; cmake/optimized/cmInstallProgramsCommand.cxx.ll
 ; cmake/optimized/cmUnsetCommand.cxx.ll
@@ -480,7 +484,6 @@ entry:
 ; oiio/optimized/imagecache.cpp.ll
 ; opencv/optimized/face_alignment.cpp.ll
 ; opencv/optimized/finder_pattern_finder.cpp.ll
-; php/optimized/pcre2_dfa_match.ll
 ; php/optimized/session.ll
 ; proxygen/optimized/HTTP1xCodec.cpp.ll
 ; rocksdb/optimized/sst_file_writer.cc.ll
@@ -492,7 +495,7 @@ define i1 @func0000000000000010(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp ugt i64 %3, 10000
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -520,7 +523,7 @@ define i1 @func0000000000000014(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp sgt i64 %3, -3
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -537,7 +540,7 @@ entry:
 ; sundials/optimized/sundials_dense.c.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000004c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %1, %2
   %4 = or i1 %3, %0
@@ -850,10 +853,10 @@ entry:
 ; z3/optimized/subpaving_mpq.cpp.ll
 ; z3/optimized/theory_arith.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000042(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
@@ -864,7 +867,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-a_d2i_fp.ll
 ; openssl/optimized/libcrypto-shlib-a_d2i_fp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000050(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000090(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
   %4 = icmp ugt i64 %3, 2147483647
@@ -883,11 +886,11 @@ entry:
 ; llvm/optimized/StringRef.cpp.ll
 ; rustfmt-rs/optimized/3sx1t619hmuq0zz7.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000088(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
   %4 = icmp ult i64 %3, 5
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -898,7 +901,7 @@ entry:
 ; hyperscan/optimized/mcsheng.c.ll
 ; php/optimized/string.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000048(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = icmp ult i64 %3, 1024
@@ -906,11 +909,21 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; darktable/optimized/introspection_cacorrect.c.ll
-; opencv/optimized/softfloat.cpp.ll
+; 1 occurrences:
+; php/optimized/pcre2_dfa_match.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000030(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = icmp samesign ugt i64 %3, 4999999
+  %5 = or i1 %0, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; darktable/optimized/introspection_cacorrect.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000050(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = icmp ugt i64 %3, 4294967295
@@ -918,24 +931,47 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
+; zed-rs/optimized/50na78mbd3ev0fg48iszd7iya.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000042(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000082(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; opencv/optimized/softfloat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000058(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = icmp ne i64 %3, -1
+  %5 = or i1 %0, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; opencv/optimized/softfloat.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000070(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub nsw i64 %1, %2
+  %4 = icmp samesign ugt i64 %3, 2045
   %5 = or i1 %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; hyperscan/optimized/rose_build_long_lit.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = icmp samesign ult i64 %3, 8
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -944,21 +980,21 @@ entry:
 ; cpython/optimized/listobject.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000054(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = icmp sgt i64 %3, 4294967295
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; xgboost/optimized/multi_target_tree_model.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000062(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c2(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 

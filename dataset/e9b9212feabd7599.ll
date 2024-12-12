@@ -12,13 +12,14 @@ entry:
   ret i64 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; darktable/optimized/CiffIFD.cpp.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; oiio/optimized/exif.cpp.ll
 ; ozz-animation/optimized/animation.cc.ll
 ; ozz-animation/optimized/track.cc.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i1 %0, i32 %1, i32 %2) #0 {
 entry:

@@ -6,7 +6,7 @@
 define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 16
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = mul i32 %3, 1103515245
   ret i32 %4
 }
@@ -28,7 +28,7 @@ entry:
   ret i32 %4
 }
 
-; 28 occurrences:
+; 27 occurrences:
 ; clamav/optimized/upx.c.ll
 ; cpython/optimized/_datetimemodule.ll
 ; freetype/optimized/sfnt.c.ll
@@ -56,7 +56,6 @@ entry:
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openjdk/optimized/hb-ot-var.ll
 ; wireshark/optimized/packet-obd-ii.c.ll
-; wireshark/optimized/packet-sdh.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001f(i32 %0, i32 %1) #0 {
 entry:
@@ -102,7 +101,7 @@ entry:
 define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 16
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = mul i32 %3, -862048943
   ret i32 %4
 }
@@ -113,7 +112,7 @@ entry:
 define i32 @func0000000000000015(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 24
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = mul nsw i32 %3, 18
   ret i32 %4
 }

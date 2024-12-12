@@ -1,16 +1,12 @@
 
-; 20 occurrences:
+; 16 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
-; linux/optimized/nmi.ll
 ; linux/optimized/printk.ll
-; linux/optimized/uptime.ll
 ; openssl/optimized/libcrypto-lib-bss_dgram.ll
-; openssl/optimized/libcrypto-lib-ct_prn.ll
 ; openssl/optimized/libcrypto-lib-ts_rsp_sign.ll
 ; openssl/optimized/libcrypto-shlib-bss_dgram.ll
-; openssl/optimized/libcrypto-shlib-ct_prn.ll
 ; openssl/optimized/libcrypto-shlib-ts_rsp_sign.ll
 ; openssl/optimized/libssl-lib-d1_lib.ll
 ; openssl/optimized/libssl-lib-quic_impl.ll

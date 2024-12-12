@@ -1,9 +1,7 @@
 
-%class.btVector3.2705429 = type { [4 x float] }
-%"struct.OpenSubdiv::v3_6_0::Far::GregoryTriConverter<float>::CornerTopology.3226405" = type { i16, i32, i32, i32, float, float, %"class.OpenSubdiv::v3_6_0::Vtr::internal::StackBuffer.27.3226406" }
-%"class.OpenSubdiv::v3_6_0::Vtr::internal::StackBuffer.27.3226406" = type { ptr, i32, i32, [120 x i8], ptr }
-%union.RelptrFreePageSpanLeader.3469827 = type { ptr }
-%struct.GCRef.3498416 = type { i64 }
+%class.btVector3.2818144 = type { [4 x float] }
+%struct.GCRef.3680589 = type { i64 }
+%struct.GCRef.3680642 = type { i64 }
 
 ; 80 occurrences:
 ; bullet3/optimized/btGImpactBvh.ll
@@ -21,7 +19,6 @@
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
@@ -47,6 +44,7 @@
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; meshlab/optimized/seam_remover.cpp.ll
 ; meshlab/optimized/shell.cpp.ll
+; openusd/optimized/loopPatchBuilder.cpp.ll
 ; pbrt-v4/optimized/loopsubdiv.cpp.ll
 ; taskflow/optimized/async.cpp.ll
 ; taskflow/optimized/attach_data.cpp.ll
@@ -87,35 +85,23 @@
 ; taskflow/optimized/visualization.cpp.ll
 ; taskflow/optimized/while_loop.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 3
   %4 = select i1 %3, i64 0, i64 %1
-  %5 = getelementptr nusw i8, ptr %0, i64 16
-  %6 = getelementptr nusw [3 x %class.btVector3.2705429], ptr %5, i64 0, i64 %4
-  ret ptr %6
-}
-
-; 1 occurrences:
-; openusd/optimized/loopPatchBuilder.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = icmp eq i64 %2, 3
-  %4 = select i1 %3, i64 0, i64 %1
-  %5 = getelementptr nusw nuw i8, ptr %0, i64 24
-  %6 = getelementptr nusw [3 x %"struct.OpenSubdiv::v3_6_0::Far::GregoryTriConverter<float>::CornerTopology.3226405"], ptr %5, i64 0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 16
+  %6 = getelementptr nusw nuw [3 x %class.btVector3.2818144], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; postgres/optimized/dsa.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000048(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000004c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 4096
   %4 = select i1 %3, i64 0, i64 %1
-  %5 = getelementptr nusw i8, ptr %0, i64 4160
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 4160
   %6 = getelementptr [16 x i64], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
@@ -123,43 +109,63 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/dsa.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 0, i64 %1
-  %5 = getelementptr nusw i8, ptr %0, i64 4160
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 4160
   %6 = getelementptr [16 x i64], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 
-; 1 occurrences:
-; postgres/optimized/freepage.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000088(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = icmp ugt i64 %2, 128
-  %4 = select i1 %3, i64 128, i64 %1
-  %5 = getelementptr nusw i8, ptr %0, i64 64
-  %6 = getelementptr [129 x %union.RelptrFreePageSpanLeader.3469827], ptr %5, i64 0, i64 %4
-  ret ptr %6
-}
-
-; 8 occurrences:
-; luajit/optimized/lj_api.ll
-; luajit/optimized/lj_api_dyn.ll
+; 4 occurrences:
 ; luajit/optimized/lj_ffrecord.ll
 ; luajit/optimized/lj_ffrecord_dyn.ll
-; luajit/optimized/lj_meta.ll
-; luajit/optimized/lj_meta_dyn.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000004a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000004b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, -13
   %4 = select i1 %3, i64 35, i64 %1
   %5 = getelementptr nusw i8, ptr %0, i64 -304
-  %6 = getelementptr nusw [38 x %struct.GCRef.3498416], ptr %5, i64 0, i64 %4
+  %6 = getelementptr nusw nuw [38 x %struct.GCRef.3680589], ptr %5, i64 0, i64 %4
+  ret ptr %6
+}
+
+; 4 occurrences:
+; luajit/optimized/lj_api.ll
+; luajit/optimized/lj_api_dyn.ll
+; luajit/optimized/lj_meta.ll
+; luajit/optimized/lj_meta_dyn.ll
+; Function Attrs: nounwind
+define ptr @func000000000000004f(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ult i64 %2, -13
+  %4 = select i1 %3, i64 35, i64 %1
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 424
+  %6 = getelementptr nusw nuw [38 x %struct.GCRef.3680642], ptr %5, i64 0, i64 %4
+  ret ptr %6
+}
+
+; 10 occurrences:
+; meshlab/optimized/cleanfilter.cpp.ll
+; meshlab/optimized/filter_create.cpp.ll
+; meshlab/optimized/filter_developability.cpp.ll
+; meshlab/optimized/filter_isoparametrization.cpp.ll
+; meshlab/optimized/filter_measure.cpp.ll
+; meshlab/optimized/filter_trioptimize.cpp.ll
+; meshlab/optimized/filter_unsharp.cpp.ll
+; meshlab/optimized/filter_voronoi.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/quadric_simp.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001e(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp eq i64 %2, 0
+  %4 = select i1 %3, i64 2, i64 %1
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 8
+  %6 = getelementptr nusw [3 x ptr], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 

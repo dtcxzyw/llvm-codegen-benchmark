@@ -1,16 +1,16 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	andl	$26, %edx
-	leal	512(%rdx,%rsi), %eax
-	movl	%edx, %ecx
-	orl	%esi, %ecx
+	leal	512(%rsi,%rdx), %eax
+	movl	%esi, %ecx
+	orl	%edx, %ecx
 	cmpl	$6, %edi
 	cmovnel	%ecx, %eax
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	andl	$15, %edx
-	leal	16384(%rdx,%rsi), %eax
-	movl	%edx, %ecx
-	orl	%esi, %ecx
+	leal	16384(%rsi,%rdx), %eax
+	movl	%esi, %ecx
+	orl	%edx, %ecx
 	cmpl	$2, %edi
 	cmovael	%ecx, %eax
 	retq
@@ -22,11 +22,11 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	$2, %edi
 	cmovnel	%edx, %eax
 	retq
-func000000000000003a:                   # @func000000000000003a
+func000000000000006a:                   # @func000000000000006a
 	andl	$8, %edx
-	leal	201326592(%rdx,%rsi), %eax
-	movl	%edx, %ecx
-	orl	%esi, %ecx
+	leal	201326592(%rsi,%rdx), %eax
+	movl	%esi, %ecx
+	orl	%edx, %ecx
 	cmpl	$25, %edi
 	cmovll	%ecx, %eax
 	retq

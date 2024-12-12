@@ -1,60 +1,27 @@
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
-	movi	v2.4h, #63
-	bic	v0.4h, #255, lsl #8
-	ushll	v0.4s, v0.4h, #0
-	and	v1.8b, v1.8b, v2.8b
-	movi	v2.2d, #0x000000000000ff
-	ushll	v1.4s, v1.4h, #0
-	ushll	v3.2d, v1.2s, #0
-	ushll2	v1.2d, v1.4s, #0
-	and	v3.16b, v3.16b, v2.16b
-	and	v1.16b, v1.16b, v2.16b
-	shl	v2.2d, v3.2d, #6
-	shl	v1.2d, v1.2d, #6
-	ushll	v3.2d, v0.2s, #0
-	ushll2	v0.2d, v0.4s, #0
-	orr	v1.16b, v1.16b, v0.16b
-	orr	v0.16b, v2.16b, v3.16b
+                                        // kill: def $w1 killed $w1 def $x1
+                                        // kill: def $w0 killed $w0 def $x0
+	and	x8, x1, #0x3f
+	and	x9, x0, #0xff
+	orr	x0, x9, x8, lsl #6
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	movi	v2.4h, #192
-	bic	v0.4h, #255, lsl #8
-	ushll	v0.4s, v0.4h, #0
-	and	v1.8b, v1.8b, v2.8b
-	movi	v2.2d, #0x000000000000ff
-	ushll	v1.4s, v1.4h, #0
-	ushll	v3.2d, v1.2s, #0
-	ushll2	v1.2d, v1.4s, #0
-	and	v3.16b, v3.16b, v2.16b
-	and	v1.16b, v1.16b, v2.16b
-	shl	v2.2d, v3.2d, #8
-	shl	v1.2d, v1.2d, #8
-	ushll	v3.2d, v0.2s, #0
-	ushll2	v0.2d, v0.4s, #0
-	orr	v1.16b, v1.16b, v0.16b
-	orr	v0.16b, v2.16b, v3.16b
+                                        // kill: def $w1 killed $w1 def $x1
+	and	x8, x1, #0xc0
+                                        // kill: def $w0 killed $w0 def $x0
+	lsr	x8, x8, #6
+	and	x0, x0, #0xff
+	bfi	x0, x8, #14, #2
 	ret
                                         // -- End function
 func0000000000000017:                   // @func0000000000000017
 // %bb.0:                               // %entry
-	movi	v2.4h, #15
-	bic	v0.4h, #255, lsl #8
-	ushll	v0.4s, v0.4h, #0
-	and	v1.8b, v1.8b, v2.8b
-	movi	v2.2d, #0x000000000000ff
-	ushll	v1.4s, v1.4h, #0
-	ushll	v3.2d, v1.2s, #0
-	ushll2	v1.2d, v1.4s, #0
-	and	v3.16b, v3.16b, v2.16b
-	and	v1.16b, v1.16b, v2.16b
-	shl	v2.2d, v3.2d, #8
-	shl	v1.2d, v1.2d, #8
-	ushll	v3.2d, v0.2s, #0
-	ushll2	v0.2d, v0.4s, #0
-	orr	v1.16b, v1.16b, v0.16b
-	orr	v0.16b, v2.16b, v3.16b
+                                        // kill: def $w0 killed $w0 def $x0
+                                        // kill: def $w1 killed $w1 def $x1
+	and	x0, x0, #0xff
+	bfi	x0, x1, #8, #4
 	ret
                                         // -- End function

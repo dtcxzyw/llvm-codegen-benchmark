@@ -5,7 +5,25 @@ func000000000000001a:                   # @func000000000000001a
 	leaq	(%rsi,%rax,8), %rax
 	leaq	(%rax,%rdi,8), %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+func000000000000001e:                   # @func000000000000001e
+	leal	(%rdx,%rdx,2), %eax
+	cltq
+	addq	%rdi, %rax
+	addq	%rsi, %rax
+	retq
+func000000000000001b:                   # @func000000000000001b
+	leal	(%rdx,%rdx,2), %eax
+	cltq
+	leaq	(%rsi,%rax,4), %rax
+	leaq	(%rax,%rdi,4), %rax
+	retq
+func000000000000001f:                   # @func000000000000001f
+	leal	(%rdx,%rdx,2), %eax
+	cltq
+	leaq	(%rsi,%rax,4), %rax
+	leaq	(%rax,%rdi,4), %rax
+	retq
+func000000000000000b:                   # @func000000000000000b
 	addl	%edx, %edx
 	leal	(%rdx,%rdx,4), %eax
 	cltq
@@ -18,7 +36,14 @@ func0000000000000010:                   # @func0000000000000010
 	leaq	(%rsi,%rax,8), %rax
 	leaq	(%rax,%rdi,8), %rax
 	retq
-func0000000000000012:                   # @func0000000000000012
+func000000000000000a:                   # @func000000000000000a
+	shll	$2, %edx
+	leal	(%rdx,%rdx,2), %eax
+	cltq
+	addq	%rdi, %rax
+	addq	%rsi, %rax
+	retq
+func0000000000000013:                   # @func0000000000000013
 	shll	$2, %edx
 	leal	(%rdx,%rdx,2), %eax
 	cltq
@@ -31,19 +56,25 @@ func0000000000000000:                   # @func0000000000000000
 	leaq	(%rsi,%rax,4), %rax
 	leaq	(%rax,%rdi,4), %rax
 	retq
-func000000000000003a:                   # @func000000000000003a
-	leal	(%rdx,%rdx,2), %eax
-	cltq
-	leaq	(%rsi,%rax,4), %rax
-	leaq	(%rax,%rdi,4), %rax
-	retq
 func0000000000000018:                   # @func0000000000000018
 	leal	(%rdx,%rdx,2), %eax
 	cltq
 	leaq	(%rsi,%rax,4), %rax
 	leaq	(%rax,%rdi,4), %rax
 	retq
+func0000000000000003:                   # @func0000000000000003
+	leal	(%rdx,%rdx,2), %eax
+	cltq
+	leaq	(%rsi,%rax,4), %rax
+	leaq	(%rax,%rdi,4), %rax
+	retq
 func0000000000000002:                   # @func0000000000000002
+	leal	(%rdx,%rdx,2), %eax
+	cltq
+	leaq	(%rsi,%rax,4), %rax
+	leaq	(%rax,%rdi,4), %rax
+	retq
+func0000000000000008:                   # @func0000000000000008
 	leal	(%rdx,%rdx,2), %eax
 	cltq
 	leaq	(%rsi,%rax,4), %rax

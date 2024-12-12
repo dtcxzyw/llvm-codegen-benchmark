@@ -11,7 +11,7 @@
 define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 3600
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = shl i64 %3, 1
   ret i64 %4
 }
@@ -58,7 +58,7 @@ entry:
 define i64 @func000000000000003c(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 10
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = shl i64 %3, 32
   ret i64 %4
 }
@@ -102,14 +102,18 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
+; 5 occurrences:
 ; gromacs/optimized/pairlist_simd_kernel.cpp.ll
+; opencv/optimized/bundle.cpp.ll
+; openspiel/optimized/pentago.cc.ll
+; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
+; pybind11/optimized/test_eigen_tensor.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000003d(i64 %0, i64 %1) #0 {
+define i64 @func000000000000003f(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 3
-  %3 = add nuw nsw i64 %2, %0
-  %4 = shl nsw i64 %3, 5
+  %3 = add nuw nsw i64 %0, %2
+  %4 = shl nuw nsw i64 %3, 5
   ret i64 %4
 }
 
@@ -144,7 +148,7 @@ entry:
 define i64 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw i64 %1, 3
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   %4 = shl i64 %3, 32
   ret i64 %4
 }
@@ -164,27 +168,13 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
-; opencv/optimized/bundle.cpp.ll
-; openspiel/optimized/pentago.cc.ll
-; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
-; pybind11/optimized/test_eigen_tensor.cpp.ll
-; Function Attrs: nounwind
-define i64 @func000000000000003f(i64 %0, i64 %1) #0 {
-entry:
-  %2 = mul nuw nsw i64 %1, 6
-  %3 = add nuw nsw i64 %2, %0
-  %4 = shl nuw nsw i64 %3, 3
-  ret i64 %4
-}
-
 ; 1 occurrences:
 ; hyperscan/optimized/rose_build_anchored.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000017(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 5
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = shl nuw nsw i64 %3, 2
   ret i64 %4
 }

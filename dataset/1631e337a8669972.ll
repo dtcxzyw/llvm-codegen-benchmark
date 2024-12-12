@@ -1,15 +1,18 @@
 
+%struct.triangle_t.3884784 = type { i32, [3 x %struct.tedge_t.3884785] }
+%struct.tedge_t.3884785 = type { ptr, ptr, i64 }
+
 ; 2 occurrences:
 ; assimp/optimized/SIBImporter.cpp.ll
 ; freetype/optimized/sfnt.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000004a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000006f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 3
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i32, ptr %0, i64 %1
-  %6 = getelementptr nusw i8, ptr %5, i64 4
-  %7 = getelementptr nusw i32, ptr %6, i64 %4
+  %5 = getelementptr nusw nuw i32, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 4
+  %7 = getelementptr nusw nuw i32, ptr %6, i64 %4
   ret ptr %7
 }
 
@@ -35,13 +38,13 @@ entry:
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000001da(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func00000000000001ff(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 6
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %1
-  %6 = getelementptr nusw i8, ptr %5, i64 14
-  %7 = getelementptr nusw i8, ptr %6, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 14
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %4
   ret ptr %7
 }
 
@@ -57,6 +60,18 @@ entry:
   %6 = getelementptr i8, ptr %5, i64 -1
   %7 = getelementptr i8, ptr %6, i64 %4
   ret ptr %7
+}
+
+; 1 occurrences:
+; graphviz/optimized/shortest.c.ll
+; Function Attrs: nounwind
+define ptr @func00000000000001df(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = mul nuw nsw i32 %2, 24
+  %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr %struct.triangle_t.3884784, ptr %0, i64 %1, i32 1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

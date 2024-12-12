@@ -26,7 +26,7 @@ entry:
 ; hermes/optimized/Interpreter.cpp.ll
 ; hermes/optimized/JSObject.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e2(i32 %0, double %1, double %2) #0 {
+define i1 @func00000000000001c2(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp une double %1, %2
   %4 = icmp eq i32 %0, -1
@@ -38,7 +38,7 @@ entry:
 ; postgres/optimized/pathnode.ll
 ; wireshark/optimized/rtp_audio_stream.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000162(i32 %0, double %1, double %2) #0 {
+define i1 @func00000000000002c2(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ule double %1, %2
   %4 = icmp eq i32 %0, 2
@@ -60,7 +60,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/vacuum.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, double %1, double %2) #0 {
+define i1 @func0000000000000108(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ogt double %1, %2
   %4 = icmp ult i32 %0, 2
@@ -71,7 +71,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/hashpage.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000150(i32 %0, double %1, double %2) #0 {
+define i1 @func0000000000000290(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ole double %1, %2
   %4 = icmp ugt i32 %0, 2147483645
@@ -82,7 +82,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/plurrule.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000102(i32 %0, double %1, double %2) #0 {
+define i1 @func0000000000000202(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp oeq double %1, %2
   %4 = icmp eq i32 %0, -1
@@ -105,7 +105,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/bilateral_filter.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i32 %0, double %1, double %2) #0 {
+define i1 @func0000000000000102(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ogt double %1, %2
   %4 = icmp eq i32 %0, 0
@@ -118,7 +118,7 @@ entry:
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001ac(i32 %0, double %1, double %2) #0 {
+define i1 @func000000000000034c(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp uge double %1, %2
   %4 = icmp slt i32 %0, 1
@@ -131,7 +131,7 @@ entry:
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000154(i32 %0, double %1, double %2) #0 {
+define i1 @func0000000000000294(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ole double %1, %2
   %4 = icmp sgt i32 %0, 0
@@ -144,7 +144,7 @@ entry:
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i32 %0, double %1, double %2) #0 {
+define i1 @func000000000000014c(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ugt double %1, %2
   %4 = icmp slt i32 %0, 1
@@ -155,7 +155,7 @@ entry:
 ; 1 occurrences:
 ; openblas/optimized/dlarrv.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000178(i32 %0, double %1, double %2) #0 {
+define i1 @func00000000000002d8(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ule double %1, %2
   %4 = icmp ne i32 %0, 0

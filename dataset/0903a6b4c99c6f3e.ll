@@ -1,5 +1,5 @@
 
-; 1169 occurrences:
+; 1167 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcHieCec.c.ll
@@ -36,7 +36,6 @@
 ; abc/optimized/bmcFault.c.ll
 ; abc/optimized/bmcFx.c.ll
 ; abc/optimized/bmcInse.c.ll
-; abc/optimized/bmcLoad.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaxi.c.ll
 ; abc/optimized/bmcUnroll.c.ll
@@ -122,7 +121,6 @@
 ; abc/optimized/pdrTsim2.c.ll
 ; abc/optimized/saigPhase.c.ll
 ; abc/optimized/sbdCore.c.ll
-; abc/optimized/sbdWin.c.ll
 ; abc/optimized/sscCore.c.ll
 ; abc/optimized/utilBridge.c.ll
 ; abc/optimized/wlcAbs.c.ll
@@ -143,6 +141,8 @@
 ; arrow/optimized/strtod.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; c3c/optimized/sema_asm.c.ll
 ; c3c/optimized/sema_decls.c.ll
 ; cmake/optimized/cf-socket.c.ll
@@ -284,7 +284,6 @@
 ; cvc5/optimized/eq_proof.cpp.ll
 ; cvc5/optimized/eqc_info.cpp.ll
 ; cvc5/optimized/equality_engine.cpp.ll
-; cvc5/optimized/equality_engine_iterator.cpp.ll
 ; cvc5/optimized/equality_query.cpp.ll
 ; cvc5/optimized/equality_solver.cpp.ll
 ; cvc5/optimized/equality_substitution.cpp.ll
@@ -815,7 +814,6 @@
 ; linux/optimized/extents.ll
 ; linux/optimized/fair.ll
 ; linux/optimized/gup.ll
-; linux/optimized/i915_getparam.ll
 ; linux/optimized/iface.ll
 ; linux/optimized/inline.ll
 ; linux/optimized/input.ll
@@ -829,8 +827,6 @@
 ; linux/optimized/slub.ll
 ; linux/optimized/task_mmu.ll
 ; linux/optimized/tg3.ll
-; linux/optimized/tsc_msr.ll
-; linux/optimized/tsx.ll
 ; linux/optimized/vmscan.ll
 ; linux/optimized/vsprintf.ll
 ; linux/optimized/workqueue.ll
@@ -982,6 +978,8 @@
 ; luajit/optimized/lj_opt_fold_dyn.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; luau/optimized/lnumprint.cpp.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; mold/optimized/arch-arm64.cc.ll
 ; mold/optimized/arch-loongarch.cc.LOONGARCH32.cc.ll
@@ -989,7 +987,6 @@
 ; mold/optimized/output-chunks.cc.M68K.cc.ll
 ; mold/optimized/output-chunks.cc.PPC32.cc.ll
 ; mold/optimized/output-chunks.cc.RV32BE.cc.ll
-; nuttx/optimized/lib_trunc.c.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -1165,6 +1162,7 @@
 ; wolfssl/optimized/internal.c.ll
 ; yyjson/optimized/yyjson.c.ll
 ; z3/optimized/hwf.cpp.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
 ; zfp/optimized/zfp.c.ll
 ; zstd/optimized/fse_compress.c.ll
 ; zxing/optimized/QRDetector.cpp.ll
@@ -1178,7 +1176,7 @@ entry:
   ret i32 %3
 }
 
-; 650 occurrences:
+; 656 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcDar.c.ll
@@ -1232,7 +1230,6 @@ entry:
 ; abc/optimized/bmcGen.c.ll
 ; abc/optimized/bmcICheck.c.ll
 ; abc/optimized/bmcInse.c.ll
-; abc/optimized/bmcLoad.c.ll
 ; abc/optimized/bmcMaxi.c.ll
 ; abc/optimized/bmcMesh.c.ll
 ; abc/optimized/bmcMesh2.c.ll
@@ -1486,12 +1483,10 @@ entry:
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/fault.ll
-; linux/optimized/feat_ctl.ll
 ; linux/optimized/ibs.ll
 ; linux/optimized/insn-eval.ll
 ; linux/optimized/p4.ll
 ; linux/optimized/perfmon.ll
-; linux/optimized/pkeys.ll
 ; linux/optimized/slub.ll
 ; linux/optimized/task_mmu.ll
 ; linux/optimized/vsprintf.ll
@@ -1585,10 +1580,20 @@ entry:
 ; llvm/optimized/WasmObjectWriter.cpp.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
-; luajit/optimized/lj_udata.ll
-; luajit/optimized/lj_udata_dyn.ll
 ; luau/optimized/isocline.c.ll
 ; luau/optimized/ltable.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_canvas.ll
+; lvgl/optimized/lv_draw_buf.ll
+; lvgl/optimized/lv_draw_image.ll
+; lvgl/optimized/lv_draw_rect.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; lvgl/optimized/lv_draw_sw_img.ll
+; lvgl/optimized/lv_dropdown.ll
+; lvgl/optimized/lv_image.ll
+; lvgl/optimized/lv_image_decoder.ll
+; lvgl/optimized/lv_imagebutton.ll
+; lvgl/optimized/lv_svg_render.ll
 ; mitsuba3/optimized/measured_polarized.cpp.ll
 ; mitsuba3/optimized/microfacet.cpp.ll
 ; mitsuba3/optimized/pplastic.cpp.ll
@@ -1735,7 +1740,6 @@ entry:
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
 ; spike/optimized/aes64im.ll
-; spike/optimized/i64_to_f32.ll
 ; tev/optimized/Channel.cpp.ll
 ; tev/optimized/ClipboardImageLoader.cpp.ll
 ; tev/optimized/Common.cpp.ll
@@ -1850,7 +1854,7 @@ entry:
   ret i32 %3
 }
 
-; 429 occurrences:
+; 430 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/cbaNtk.c.ll
@@ -1870,6 +1874,8 @@ entry:
 ; abc/optimized/saigIsoFast.c.ll
 ; abc/optimized/wlcNtk.c.ll
 ; abseil-cpp/optimized/numbers.cc.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; clamav/optimized/BraIA64.c.ll
 ; clamav/optimized/inflate64.c.ll
 ; cmake/optimized/inflate.c.ll
@@ -1885,7 +1891,6 @@ entry:
 ; folly/optimized/TestUtil.cpp.ll
 ; folly/optimized/Uri.cpp.ll
 ; freetype/optimized/sdf.c.ll
-; gromacs/optimized/gmx_hbond.cpp.ll
 ; gromacs/optimized/inflate.c.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -1915,7 +1920,6 @@ entry:
 ; linux/optimized/amd64-agp.ll
 ; linux/optimized/dir.ll
 ; linux/optimized/fault.ll
-; linux/optimized/feat_ctl.ll
 ; linux/optimized/fixup.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/gen6_ppgtt.ll
@@ -2190,6 +2194,7 @@ entry:
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; luau/optimized/CodeGenAssembly.cpp.ll
 ; luau/optimized/ltable.cpp.ll
+; lvgl/optimized/lv_image_decoder.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mold/optimized/arch-arm32.cc.ll
@@ -2235,11 +2240,11 @@ entry:
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; php/optimized/zend_jit.ll
 ; pocketpy/optimized/gc.cpp.ll
+; protobuf/optimized/field_mask_util.cc.ll
 ; protobuf/optimized/generated_message_reflection.cc.ll
 ; protobuf/optimized/parse_function_generator.cc.ll
 ; proxygen/optimized/HTTP2PriorityQueue.cpp.ll
 ; pyo3-rs/optimized/249pdmmr5286g8h9.ll
-; qemu/optimized/hw_audio_es1370.c.ll
 ; qemu/optimized/hw_misc_ivshmem.c.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll
 ; quickjs/optimized/quickjs.ll

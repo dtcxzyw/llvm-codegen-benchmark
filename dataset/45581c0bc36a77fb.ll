@@ -13,7 +13,7 @@ entry:
   %4 = xor i32 %3, %1
   %5 = and i32 %4, 4369
   %6 = icmp eq i32 %5, 0
-  %7 = and i1 %6, %0
+  %7 = and i1 %0, %6
   ret i1 %7
 }
 

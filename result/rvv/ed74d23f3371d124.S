@@ -9,7 +9,7 @@ func0000000000000001:                   # @func0000000000000001
 	vor.vv	v8, v8, v9
 	vmseq.vi	v0, v8, 1
 	ret
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vor.vv	v8, v8, v9
 	li	a0, -33
@@ -17,7 +17,7 @@ func0000000000000044:                   # @func0000000000000044
 	li	a0, -32
 	vmsltu.vx	v0, v8, a0
 	ret
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vor.vv	v8, v8, v9
 	vmseq.vi	v0, v8, 13

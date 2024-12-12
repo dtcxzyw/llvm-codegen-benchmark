@@ -24,11 +24,14 @@ entry:
   ret i32 %5
 }
 
-; 11 occurrences:
+; 14 occurrences:
 ; graphviz/optimized/constraint.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; linux/optimized/drm_modes.ll
 ; linux/optimized/mlme.ll
+; lvgl/optimized/lv_indev_scroll.ll
+; lvgl/optimized/lv_obj_pos.ll
+; lvgl/optimized/lv_obj_scroll.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/seam_remover.cpp.ll
 ; minetest/optimized/CGUICheckBox.cpp.ll

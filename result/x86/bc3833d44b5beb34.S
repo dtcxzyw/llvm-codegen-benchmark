@@ -1,14 +1,14 @@
-func0000000000000081:                   # @func0000000000000081
+func0000000000000021:                   # @func0000000000000021
 	cmpb	$2, %dl
 	movl	$1, %eax
-	cmovael	%esi, %eax
+	cmovel	%esi, %eax
 	cmpb	%dil, %al
 	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
-	xorl	%eax, %eax
-	testb	%dl, %dl
-	cmovel	%esi, %eax
+func0000000000000101:                   # @func0000000000000101
+	cmpb	$2, %dl
+	movl	$1, %eax
+	cmovael	%esi, %eax
 	cmpb	%dil, %al
 	sete	%al
 	retq

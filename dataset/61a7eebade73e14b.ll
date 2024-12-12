@@ -8,10 +8,10 @@
 ; rocksdb/optimized/block.cc.ll
 ; slurm/optimized/reservation.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000042(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = icmp eq i64 %1, 0
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6

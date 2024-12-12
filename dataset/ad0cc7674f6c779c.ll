@@ -1,5 +1,5 @@
 
-; 95 occurrences:
+; 97 occurrences:
 ; abc/optimized/cuddApprox.c.ll
 ; abc/optimized/cuddSat.c.ll
 ; abc/optimized/giaCSat.c.ll
@@ -95,6 +95,8 @@
 ; wasmtime-rs/optimized/2lz954crgst412nx.ll
 ; wasmtime-rs/optimized/47hgs4eifsow3k34.ll
 ; wasmtime-rs/optimized/51r9csr3d9dou1a2.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(ptr %0) #0 {
 entry:

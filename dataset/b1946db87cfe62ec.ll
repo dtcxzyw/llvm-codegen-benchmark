@@ -1,8 +1,7 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; folly/optimized/Checksum.cpp.ll
 ; hyperscan/optimized/engine_hyperscan.cpp.ll
-; linux/optimized/nfs3xdr.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; openssl/optimized/libtestutil-lib-format_output.ll
 ; php/optimized/pcre2_compile.ll
@@ -20,7 +19,9 @@ entry:
   ret i32 %4
 }
 
-; 36 occurrences:
+; 37 occurrences:
+; boost/optimized/codecvt_converter.ll
+; boost/optimized/converter.ll
 ; clamav/optimized/binhex.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -31,7 +32,6 @@ entry:
 ; icu/optimized/number_rounding.ll
 ; image-rs/optimized/249ukonr3l56u09i.ll
 ; libpng/optimized/pngrutil.c.ll
-; linux/optimized/attr.ll
 ; linux/optimized/nsaccess.ll
 ; linux/optimized/skl_universal_plane.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll

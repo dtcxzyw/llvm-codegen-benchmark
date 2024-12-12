@@ -1,4 +1,4 @@
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	addl	%edx, %esi
 	addl	%edi, %esi
 	movslq	%esi, %rcx
@@ -14,7 +14,7 @@ func0000000000000056:                   # @func0000000000000056
 	addl	%ecx, %eax
 	shrl	$31, %eax
 	retq
-func000000000000005c:                   # @func000000000000005c
+func00000000000000ac:                   # @func00000000000000ac
 	addl	%edx, %esi
 	addl	%edi, %esi
 	imull	$-1030792151, %esi, %eax        # imm = 0xC28F5C29
@@ -23,7 +23,7 @@ func000000000000005c:                   # @func000000000000005c
 	cmpl	$42949673, %eax                 # imm = 0x28F5C29
 	setae	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	addl	%edx, %esi
 	addl	%edi, %esi
 	imull	$-1030792151, %esi, %eax        # imm = 0xC28F5C29
@@ -48,7 +48,7 @@ func0000000000000006:                   # @func0000000000000006
 	addl	%ecx, %eax
 	shrl	$31, %eax
 	retq
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	addl	%edx, %esi
 	addl	%edi, %esi
 	movslq	%esi, %rax
@@ -71,7 +71,7 @@ func0000000000000001:                   # @func0000000000000001
 	testb	$7, %sil
 	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	addl	%edx, %esi
 	addl	%edi, %esi
 	imull	$-1431655765, %esi, %eax        # imm = 0xAAAAAAAB

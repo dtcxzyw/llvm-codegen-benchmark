@@ -16,9 +16,3 @@ func0000000000000018:                   # @func0000000000000018
 	cmpq	$32, %rsi
 	setne	%al
 	retq
-func0000000000000002:                   # @func0000000000000002
-	subq	%rdi, %rsi
-	xorl	%eax, %eax
-	cmpq	$48, %rsi
-	sete	%al
-	retq

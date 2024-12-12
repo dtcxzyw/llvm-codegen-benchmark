@@ -1,6 +1,8 @@
 
-; 47 occurrences:
+; 48 occurrences:
 ; abc/optimized/giaDup.c.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; cmake/optimized/multi.c.ll
 ; cpython/optimized/mpdecimal.ll
 ; curl/optimized/libcurl_la-multi.ll
@@ -17,7 +19,6 @@
 ; linux/optimized/cfg.ll
 ; linux/optimized/drm_dp_mst_topology.ll
 ; linux/optimized/intel_ddi.ll
-; linux/optimized/logips2pp.ll
 ; linux/optimized/tty_audit.ll
 ; linux/optimized/virtio_ring.ll
 ; linux/optimized/xfrm_user.ll
@@ -48,7 +49,7 @@
 ; z3/optimized/mpfx.cpp.ll
 ; z3/optimized/nnf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = and i32 %0, 1
@@ -115,15 +116,15 @@ entry:
 ; minetest/optimized/mapgen.cpp.ll
 ; wireshark/optimized/packet-umts_rlc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000034(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = and i32 %0, 15
-  %4 = icmp ult i32 %3, %2
+  %4 = icmp samesign ult i32 %3, %2
   ret i1 %4
 }
 
-; 42 occurrences:
+; 41 occurrences:
 ; cpython/optimized/_codecs_cn.ll
 ; cpython/optimized/_codecs_hk.ll
 ; cpython/optimized/_codecs_iso2022.ll
@@ -143,7 +144,6 @@ entry:
 ; minetest/optimized/mapgen.cpp.ll
 ; openjdk/optimized/check_code.ll
 ; postgres/optimized/spell.ll
-; qemu/optimized/hw_char_sifive_uart.c.ll
 ; qemu/optimized/hw_usb_desc.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; redis/optimized/hyperloglog.ll
@@ -167,11 +167,11 @@ entry:
 ; wireshark/optimized/packet-zbee-nwk-gp.c.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000014(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = and i32 %0, 240
-  %4 = icmp ult i32 %3, %2
+  %4 = icmp samesign ult i32 %3, %2
   ret i1 %4
 }
 
@@ -203,11 +203,11 @@ entry:
 ; wireshark/optimized/packet-rfid-pn532.c.ll
 ; wireshark/optimized/packet-sna.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000018(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = and i32 %0, 7
-  %4 = icmp ugt i32 %3, %2
+  %4 = icmp samesign ugt i32 %3, %2
   ret i1 %4
 }
 
@@ -217,11 +217,11 @@ entry:
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; spike/optimized/vmsleu_vx.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000009(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000019(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = and i32 %0, 255
-  %4 = icmp uge i32 %3, %2
+  %4 = icmp samesign uge i32 %3, %2
   ret i1 %4
 }
 
@@ -229,11 +229,11 @@ entry:
 ; qemu/optimized/ahci.c.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000038(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = and i32 %0, 31
-  %4 = icmp ugt i32 %3, %2
+  %4 = icmp samesign ugt i32 %3, %2
   ret i1 %4
 }
 
@@ -248,14 +248,13 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; linux/optimized/cfg.ll
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
-; openusd/optimized/patchTableFactory.cpp.ll
 ; z3/optimized/mpff.cpp.ll
 ; z3/optimized/sat_xor_finder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i8 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = and i32 %0, 1
@@ -278,22 +277,22 @@ entry:
 ; protobuf/optimized/message_builder.cc.ll
 ; protobuf/optimized/message_builder_lite.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000039(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = and i32 %0, 255
-  %4 = icmp uge i32 %3, %2
+  %4 = icmp samesign uge i32 %3, %2
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; linux/optimized/trace_events_filter.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000005(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000015(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = and i32 %0, 255
-  %4 = icmp ule i32 %3, %2
+  %4 = icmp samesign ule i32 %3, %2
   ret i1 %4
 }
 

@@ -12,21 +12,9 @@
 ; wireshark/optimized/packet-snort.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000181(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000301(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
-  %4 = zext i1 %3 to i32
-  %5 = icmp eq i32 %1, 0
-  %6 = select i1 %5, i32 %4, i32 %0
-  ret i32 %6
-}
-
-; 1 occurrences:
-; linux/optimized/drm_vblank.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000101(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ugt i32 %2, 536870911
   %4 = zext i1 %3 to i32
   %5 = icmp eq i32 %1, 0
   %6 = select i1 %5, i32 %4, i32 %0

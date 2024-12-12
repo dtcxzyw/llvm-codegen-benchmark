@@ -1,6 +1,5 @@
 
-; 8 occurrences:
-; lief/optimized/ssl_client.c.ll
+; 7 occurrences:
 ; lief/optimized/ssl_tls.c.ll
 ; openssl/optimized/bad_dtls_test-bin-bad_dtls_test.ll
 ; openssl/optimized/libssl-lib-statem_clnt.ll
@@ -9,13 +8,26 @@
 ; openssl/optimized/libssl-shlib-statem_srvr.ll
 ; php/optimized/dns.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000014a(i8 %0, i64 %1, ptr %2) #0 {
+define ptr @func00000000000001ef(i8 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 35
-  %4 = getelementptr nusw i8, ptr %3, i64 %1
-  %5 = getelementptr nusw i8, ptr %4, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 35
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 1
   %6 = zext i8 %0 to i64
-  %7 = getelementptr nusw i8, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %5, i64 %6
+  ret ptr %7
+}
+
+; 1 occurrences:
+; lief/optimized/ssl_client.c.ll
+; Function Attrs: nounwind
+define ptr @func00000000000001cf(i8 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 35
+  %4 = getelementptr nusw i8, ptr %3, i64 %1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 1
+  %6 = zext i8 %0 to i64
+  %7 = getelementptr nusw nuw i8, ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -24,13 +36,13 @@ entry:
 ; ozz-animation/optimized/animation_builder.cc.ll
 ; ozz-animation/optimized/sampling_job.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000015a(i8 %0, i64 %1, ptr %2) #0 {
+define ptr @func00000000000001ff(i8 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 16
-  %4 = getelementptr nusw ptr, ptr %3, i64 %1
-  %5 = getelementptr nusw i8, ptr %4, i64 8
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 16
+  %4 = getelementptr nusw nuw ptr, ptr %3, i64 %1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 8
   %6 = zext nneg i8 %0 to i64
-  %7 = getelementptr nusw ptr, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw ptr, ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -50,9 +62,9 @@ entry:
 ; protobuf/optimized/message_builder.cc.ll
 ; protobuf/optimized/message_builder_lite.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000100(i8 %0, i64 %1, ptr %2) #0 {
+define ptr @func0000000000000180(i8 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 12
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 12
   %4 = getelementptr i32, ptr %3, i64 %1
   %5 = getelementptr i8, ptr %4, i64 4
   %6 = zext i8 %0 to i64

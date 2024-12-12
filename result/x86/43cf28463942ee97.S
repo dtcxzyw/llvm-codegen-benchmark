@@ -33,9 +33,23 @@ func0000000000000010:                   # @func0000000000000010
 	movzbl	%al, %eax
 	andl	$1, %eax
 	retq
+func0000000000000050:                   # @func0000000000000050
+	cmpl	$65536, %esi                    # imm = 0x10000
+	setb	%al
+	orb	%dil, %al
+	movzbl	%al, %eax
+	andl	$1, %eax
+	retq
 func0000000000000018:                   # @func0000000000000018
 	cmpl	$11, %esi
 	setl	%al
+	orb	%dil, %al
+	movzbl	%al, %eax
+	andl	$1, %eax
+	retq
+func0000000000000060:                   # @func0000000000000060
+	cmpl	$193, %esi
+	setae	%al
 	orb	%dil, %al
 	movzbl	%al, %eax
 	andl	$1, %eax

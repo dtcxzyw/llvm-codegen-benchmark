@@ -1,9 +1,11 @@
 
-; 4 occurrences:
+; 6 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; hdf5/optimized/H5Defl.c.ll
 ; llvm/optimized/RegBankSelect.cpp.ll
 ; smol-rs/optimized/2nf71p5qpqz0dmgo.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/d9zbxounqkt24vk3xyo3kqpk8.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:

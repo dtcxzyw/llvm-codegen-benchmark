@@ -1,11 +1,13 @@
 
-; 7 occurrences:
+; 9 occurrences:
 ; abc/optimized/dauNpn2.c.ll
 ; abc/optimized/dauTree.c.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
+; lvgl/optimized/lv_color.ll
 ; openjdk/optimized/UshortGray.ll
 ; recastnavigation/optimized/DetourDebugDraw.cpp.ll
 ; ruby/optimized/time.ll
+; stb/optimized/stb_connected_components.c.ll
 ; wireshark/optimized/packet-gmr1_bcch.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000003f(i32 %0, i32 %1) #0 {

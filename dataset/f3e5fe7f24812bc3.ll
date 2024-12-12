@@ -1,5 +1,6 @@
 
-; 3 occurrences:
+; 4 occurrences:
+; icu/optimized/ubidiwrt.ll
 ; llvm/optimized/MachineScheduler.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; openssl/optimized/rpktest-bin-rpktest.ll
@@ -7,7 +8,7 @@
 define i32 @func0000000000000008(i1 %0, i16 %1) #0 {
 entry:
   %2 = icmp ult i16 %1, -255
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -43,7 +44,7 @@ entry:
 define i32 @func0000000000000018(i1 %0, i16 %1) #0 {
 entry:
   %2 = icmp ne i16 %1, 0
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }

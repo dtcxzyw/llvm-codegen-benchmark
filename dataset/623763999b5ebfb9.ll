@@ -1,5 +1,6 @@
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/gregorian.ll
 ; icu/optimized/collationiterator.ll
 ; mitsuba3/optimized/rgb2spec_opt.cpp.ll
 ; pbrt-v4/optimized/rgb2spec_opt.cpp.ll
@@ -31,8 +32,7 @@ entry:
   ret i16 %2
 }
 
-; 4 occurrences:
-; linux/optimized/ff-memless.ll
+; 3 occurrences:
 ; postgres/optimized/utf8_and_gb18030.ll
 ; qemu/optimized/hw_scsi_mptsas.c.ll
 ; wireshark/optimized/packet-x11.c.ll

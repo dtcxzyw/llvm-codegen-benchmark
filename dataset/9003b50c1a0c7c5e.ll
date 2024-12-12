@@ -5,7 +5,7 @@
 ; cpython/optimized/instrumentation.ll
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1, i8 %2) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 1, %1
@@ -18,7 +18,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/instrumentation.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i32 %1, i8 %2) #0 {
+define i32 @func0000000000000041(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw i32 1, %1

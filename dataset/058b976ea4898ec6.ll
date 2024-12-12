@@ -1,6 +1,6 @@
 
-%"struct.OT::IntType.142.2623537" = type { %struct.BEInt.143.2623538 }
-%struct.BEInt.143.2623538 = type { i8 }
+%"struct.OT::IntType.142.2736967" = type { %struct.BEInt.143.2736968 }
+%struct.BEInt.143.2736968 = type { i8 }
 
 ; 5 occurrences:
 ; darktable/optimized/NikonDecompressor.cpp.ll
@@ -50,16 +50,16 @@ entry:
 ; php/optimized/zend_inference.ll
 ; redis/optimized/rax.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 1
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6
 }
 
-; 25 occurrences:
+; 26 occurrences:
 ; arrow/optimized/encode_internal.cc.ll
 ; flatbuffers/optimized/binary_annotator.cpp.ll
 ; flatbuffers/optimized/reflection.cpp.ll
@@ -82,28 +82,29 @@ entry:
 ; llvm/optimized/SafeStack.cpp.ll
 ; llvm/optimized/TailRecursionElimination.cpp.ll
 ; luau/optimized/IrAnalysis.cpp.ll
+; lvgl/optimized/lv_style.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; php/optimized/parse_tz.ll
 ; php/optimized/zend_inheritance.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func000000000000006f(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 1
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw %"struct.OT::IntType.142.2623537", ptr %4, i64 %5
+  %6 = getelementptr nusw nuw %"struct.OT::IntType.142.2736967", ptr %4, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; openjdk/optimized/psParallelCompact.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 19
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw ptr, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw ptr, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -148,31 +149,30 @@ entry:
   ret ptr %6
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/sfmDec.c.ll
 ; darktable/optimized/introspection_dither.c.ll
-; opencv/optimized/emd.cpp.ll
 ; recastnavigation/optimized/RecastDebugDraw.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %.idx = shl nsw i64 %2, 4
-  %3 = getelementptr nusw i8, ptr %0, i64 %.idx
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %.idx
   %4 = zext nneg i32 %1 to i64
-  %5 = getelementptr nusw float, ptr %3, i64 %4
+  %5 = getelementptr nusw nuw float, ptr %3, i64 %4
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; meshoptimizer/optimized/vertexfilter.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func000000000000001b(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %.idx = shl i64 %2, 4
   %3 = getelementptr nusw i8, ptr %0, i64 %.idx
   %4 = zext nneg i32 %1 to i64
-  %5 = getelementptr nusw float, ptr %3, i64 %4
+  %5 = getelementptr nusw nuw float, ptr %3, i64 %4
   ret ptr %5
 }
 
@@ -194,24 +194,24 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/lmmin.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000072(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000073(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 3
   %4 = getelementptr i8, ptr %0, i64 %3
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr nusw double, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw double, ptr %4, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; gromacs/optimized/lmmin.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000062(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000063(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 3
   %4 = getelementptr i8, ptr %0, i64 %3
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw double, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw double, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -219,24 +219,36 @@ entry:
 ; cmake/optimized/zstd_ldm.c.ll
 ; zstd/optimized/zstd_ldm.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000004a(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func000000000000004b(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 20
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; redis/optimized/t_zset.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func000000000000002f(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 4
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw ptr, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw ptr, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; opencv/optimized/emd.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003b(ptr %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = shl nsw i64 %2, 2
+  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %5 = zext nneg i32 %1 to i64
+  %6 = getelementptr nusw nuw float, ptr %4, i64 %5
   ret ptr %6
 }
 

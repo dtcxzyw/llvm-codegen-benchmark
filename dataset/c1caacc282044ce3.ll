@@ -29,7 +29,7 @@ entry:
   %3 = fcmp olt double %2, %1
   %4 = select i1 %3, double %1, double %2
   %5 = fmul double %4, 8.000000e-01
-  %6 = fcmp ogt double %5, %0
+  %6 = fcmp olt double %0, %5
   ret i1 %6
 }
 
@@ -44,7 +44,7 @@ entry:
   %3 = fcmp olt double %1, %2
   %4 = select i1 %3, double %1, double %2
   %5 = fmul double %4, 0x3FEFAE147AE147AE
-  %6 = fcmp olt double %5, %0
+  %6 = fcmp ogt double %0, %5
   ret i1 %6
 }
 
@@ -60,7 +60,7 @@ entry:
   %3 = fcmp ogt double %1, %2
   %4 = select i1 %3, double %1, double %2
   %5 = fmul double %4, 1.000000e-10
-  %6 = fcmp oge double %5, %0
+  %6 = fcmp ole double %0, %5
   ret i1 %6
 }
 
@@ -76,7 +76,7 @@ entry:
   %3 = fcmp ogt double %1, %2
   %4 = select i1 %3, double %1, double %2
   %5 = fmul double %4, 0x3D10000000000000
-  %6 = fcmp ult double %5, %0
+  %6 = fcmp ugt double %0, %5
   ret i1 %6
 }
 
@@ -88,7 +88,7 @@ entry:
   %3 = fcmp olt double %2, %1
   %4 = select i1 %3, double %1, double %2
   %5 = fmul double %4, 1.000000e-05
-  %6 = fcmp ult double %5, %0
+  %6 = fcmp ugt double %0, %5
   ret i1 %6
 }
 
@@ -100,7 +100,7 @@ entry:
   %3 = fcmp olt double %2, %1
   %4 = select i1 %3, double %1, double %2
   %5 = fmul double %4, 1.000000e-05
-  %6 = fcmp oge double %5, %0
+  %6 = fcmp ole double %0, %5
   ret i1 %6
 }
 
@@ -113,7 +113,7 @@ entry:
   %3 = fcmp ogt double %2, %1
   %4 = select i1 %3, double %1, double %2
   %5 = fmul double %4, 2.500000e-01
-  %6 = fcmp olt double %5, %0
+  %6 = fcmp ogt double %0, %5
   ret i1 %6
 }
 
@@ -125,7 +125,7 @@ entry:
   %3 = fcmp oge double %1, %2
   %4 = select i1 %3, double %1, double %2
   %5 = fmul double %4, 5.000000e-01
-  %6 = fcmp oge double %5, %0
+  %6 = fcmp ole double %0, %5
   ret i1 %6
 }
 
@@ -137,7 +137,7 @@ entry:
   %3 = fcmp ole double %1, %2
   %4 = select i1 %3, double %1, double %2
   %5 = fmul double %4, 7.812500e-03
-  %6 = fcmp ogt double %5, %0
+  %6 = fcmp olt double %0, %5
   ret i1 %6
 }
 
@@ -151,7 +151,7 @@ entry:
   %3 = fcmp ogt double %1, %2
   %4 = select i1 %3, double %1, double %2
   %5 = fmul double %4, 1.000000e-10
-  %6 = fcmp ogt double %5, %0
+  %6 = fcmp olt double %0, %5
   ret i1 %6
 }
 

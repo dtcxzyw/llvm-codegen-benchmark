@@ -1,11 +1,12 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; abc/optimized/giaJf.c.ll
 ; abc/optimized/giaKf.c.ll
 ; abc/optimized/satSolver2.c.ll
 ; abc/optimized/satTruth.c.ll
 ; luajit/optimized/lj_strscan.ll
 ; luajit/optimized/lj_strscan_dyn.ll
+; lvgl/optimized/lv_freetype.ll
 ; minetest/optimized/CGUIFont.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i64 %1) #0 {

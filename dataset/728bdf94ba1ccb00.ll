@@ -1,9 +1,10 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
 ; clamav/optimized/scanner.c.ll
+; lvgl/optimized/lv_math.ll
 ; minetest/optimized/inputhandler.cpp.ll
 ; minetest/optimized/noise.cpp.ll
 ; velox/optimized/VectorFuzzer.cpp.ll

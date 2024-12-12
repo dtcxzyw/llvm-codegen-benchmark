@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; abc/optimized/acecRe.c.ll
 ; clamav/optimized/yc.c.ll
 ; icu/optimized/smpdtfmt.ll
@@ -10,15 +10,16 @@
 ; postgres/optimized/parse_coerce.ll
 ; qemu/optimized/block_file-posix.c.ll
 ; quantlib/optimized/indonesia.ll
+; recastnavigation/optimized/Tests_RecastFilter.cpp.ll
 ; slurm/optimized/launch.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000108(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 38
   %4 = icmp eq i32 %2, 19
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %1
-  %7 = or i1 %6, %0
+  %6 = or i1 %1, %5
+  %7 = or i1 %0, %6
   ret i1 %7
 }
 

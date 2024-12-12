@@ -1,72 +1,42 @@
 func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
-	movi	v6.4s, #4
-	orr	v0.16b, v0.16b, v2.16b
-	orr	v1.16b, v1.16b, v3.16b
-	and	v4.16b, v4.16b, v6.16b
-	and	v5.16b, v5.16b, v6.16b
-	orr	v1.16b, v1.16b, v5.16b
-	orr	v0.16b, v0.16b, v4.16b
-	uzp1	v0.8h, v0.8h, v1.8h
+	and	w8, w2, #0x4
+	orr	w9, w0, w1
+	orr	w0, w9, w8
 	ret
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	movi	v6.4s, #4
-	orr	v0.16b, v0.16b, v2.16b
-	orr	v1.16b, v1.16b, v3.16b
-	and	v4.16b, v4.16b, v6.16b
-	and	v5.16b, v5.16b, v6.16b
-	orr	v1.16b, v1.16b, v5.16b
-	orr	v0.16b, v0.16b, v4.16b
-	uzp1	v0.8h, v0.8h, v1.8h
+	and	w8, w2, #0x4
+	orr	w9, w0, w1
+	orr	w0, w9, w8
 	ret
                                         // -- End function
 func000000000000000e:                   // @func000000000000000e
 // %bb.0:                               // %entry
-	movi	v6.4s, #3, msl #8
-	orr	v0.16b, v0.16b, v2.16b
-	orr	v1.16b, v1.16b, v3.16b
-	and	v4.16b, v4.16b, v6.16b
-	and	v5.16b, v5.16b, v6.16b
-	orr	v1.16b, v1.16b, v5.16b
-	orr	v0.16b, v0.16b, v4.16b
-	uzp1	v0.8h, v0.8h, v1.8h
+	and	w8, w2, #0x3ff
+	orr	w9, w0, w1
+	orr	w0, w9, w8
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	movi	v6.4s, #248, lsl #8
-	orr	v0.16b, v0.16b, v2.16b
-	orr	v1.16b, v1.16b, v3.16b
-	and	v4.16b, v4.16b, v6.16b
-	and	v5.16b, v5.16b, v6.16b
-	orr	v1.16b, v1.16b, v5.16b
-	orr	v0.16b, v0.16b, v4.16b
-	uzp1	v0.8h, v0.8h, v1.8h
+	and	w8, w2, #0xf800
+	orr	w9, w0, w1
+	orr	w0, w9, w8
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	movi	v6.4s, #63
-	orr	v2.16b, v2.16b, v4.16b
-	orr	v3.16b, v3.16b, v5.16b
-	and	v0.16b, v0.16b, v6.16b
-	and	v1.16b, v1.16b, v6.16b
-	orr	v1.16b, v1.16b, v3.16b
-	orr	v0.16b, v0.16b, v2.16b
-	uzp1	v0.8h, v0.8h, v1.8h
+	orr	w8, w1, w2
+	and	w9, w0, #0x3f
+	orr	w0, w9, w8
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	movi	v6.4s, #128, lsl #8
-	orr	v0.16b, v0.16b, v2.16b
-	orr	v1.16b, v1.16b, v3.16b
-	and	v4.16b, v4.16b, v6.16b
-	and	v5.16b, v5.16b, v6.16b
-	orr	v1.16b, v1.16b, v5.16b
-	orr	v0.16b, v0.16b, v4.16b
-	uzp1	v0.8h, v0.8h, v1.8h
+	and	w8, w2, #0x8000
+	orr	w9, w0, w1
+	orr	w0, w9, w8
 	ret
                                         // -- End function

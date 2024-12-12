@@ -1,12 +1,13 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; cmake/optimized/cmLoadCacheCommand.cxx.ll
+; cpython/optimized/exceptions.ll
 ; gromacs/optimized/vsite_parm.cpp.ll
 ; hdf5/optimized/H5Shyper.c.ll
 ; hermes/optimized/JSParserImpl.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/Sanitizers.cpp.ll
+; lvgl/optimized/lv_indev_scroll.ll
 ; ncnn/optimized/expanddims.cpp.ll
 ; openmpi/optimized/filem_raw_module.ll
 ; yosys/optimized/proc_clean.ll
@@ -19,9 +20,8 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; arrow/optimized/string-to-double.cc.ll
-; cpython/optimized/exceptions.ll
 ; double_conversion/optimized/string-to-double.cc.ll
 ; icu/optimized/double-conversion-string-to-double.ll
 ; openusd/optimized/string-to-double.cc.ll

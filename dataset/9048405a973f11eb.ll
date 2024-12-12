@@ -1,16 +1,29 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; abseil-cpp/optimized/int128.cc.ll
 ; abseil-cpp/optimized/int128_test.cc.ll
+; boost/optimized/approximately_equals.ll
 ; libquic/optimized/poly1305_vec.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000028(i128 %0, i128 %1) #0 {
 entry:
   %2 = shl nuw i128 %1, 64
   %3 = or disjoint i128 %2, %0
-  %4 = lshr i128 %3, 44
+  %4 = lshr i128 %3, 6
+  %5 = trunc i128 %4 to i64
+  ret i64 %5
+}
+
+; 1 occurrences:
+; boost/optimized/approximately_equals.ll
+; Function Attrs: nounwind
+define i64 @func000000000000002c(i128 %0, i128 %1) #0 {
+entry:
+  %2 = shl nuw i128 %1, 64
+  %3 = or disjoint i128 %2, %0
+  %4 = lshr exact i128 %3, 3
   %5 = trunc i128 %4 to i64
   ret i64 %5
 }
@@ -37,7 +50,7 @@ entry:
 define i64 @func000000000000000a(i128 %0, i128 %1) #0 {
 entry:
   %2 = shl i128 %1, 65
-  %3 = or disjoint i128 %2, %0
+  %3 = or disjoint i128 %0, %2
   %4 = lshr i128 %3, 64
   %5 = trunc nuw i128 %4 to i64
   ret i64 %5

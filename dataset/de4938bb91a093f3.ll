@@ -42,4 +42,17 @@ entry:
   ret i64 %5
 }
 
+; 1 occurrences:
+; linux/optimized/maple_tree.ll
+; Function Attrs: nounwind
+define i64 @func00000000000000df(i32 %0) #0 {
+entry:
+  %1 = shl nuw nsw i32 %0, 1
+  %2 = add nsw i32 %1, -1
+  %3 = zext nneg i32 %2 to i64
+  %4 = shl nuw nsw i64 %3, 1
+  %5 = or disjoint i64 %4, 1
+  ret i64 %5
+}
+
 attributes #0 = { nounwind }

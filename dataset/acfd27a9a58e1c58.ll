@@ -6,7 +6,7 @@
 ; opencv/optimized/convolution_layer.cpp.ll
 ; yosys/optimized/simplify.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000016a(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000004ca(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 %0, %1

@@ -1,5 +1,6 @@
 
-; 12 occurrences:
+; 15 occurrences:
+; boost/optimized/numeric.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_math.cpp.ll
 ; freetype/optimized/bdf.c.ll
@@ -12,6 +13,8 @@
 ; softposit-rs/optimized/4kf6wfleft5henpt.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; softposit-rs/optimized/oveg98n4r9tnk39.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i1 %0, i16 %1) #0 {
 entry:

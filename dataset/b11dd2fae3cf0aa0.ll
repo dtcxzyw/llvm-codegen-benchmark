@@ -1,13 +1,13 @@
 
-; 21 occurrences:
+; 22 occurrences:
 ; freetype/optimized/truetype.c.ll
 ; libjpeg-turbo/optimized/jfdctfst.c.ll
 ; libjpeg-turbo/optimized/jidctfst.c.ll
 ; libwebp/optimized/quant_levels_dec_utils.c.ll
 ; linux/optimized/libata-pata-timings.ll
 ; linux/optimized/ohci-hcd.ll
-; linux/optimized/rsmisc.ll
 ; linux/optimized/skbuff.ll
+; lvgl/optimized/lv_math.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; minetest/optimized/mg_decoration.cpp.ll
 ; nuklear/optimized/unity.c.ll
@@ -21,6 +21,7 @@
 ; raylib/optimized/raudio.c.ll
 ; spike/optimized/vsbc_vvm.ll
 ; wolfssl/optimized/internal.c.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i16 %0, i16 %1, i16 %2) #0 {
 entry:

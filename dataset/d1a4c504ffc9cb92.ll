@@ -1,16 +1,16 @@
 
-; 60 occurrences:
+; 66 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/scalar_cast_temporal.cc.ll
 ; arrow/optimized/tz.cpp.ll
+; boost/optimized/default_formatter_factory.ll
 ; ceres/optimized/schur_eliminator_2_2_4.cc.ll
 ; cpython/optimized/_zoneinfo.ll
 ; darktable/optimized/DeflateDecompressor.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; icu/optimized/hebrwcal.ll
 ; linux/optimized/extents.ll
-; linux/optimized/intel_pstate.ll
 ; linux/optimized/xhci.ll
 ; llvm/optimized/SROA.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
@@ -31,7 +31,10 @@
 ; opencv/optimized/run_length_morphology.cpp.ll
 ; opencv/optimized/select3dobj.cpp.ll
 ; opencv/optimized/triangulate.cpp.ll
+; openjdk/optimized/g1Allocator.ll
 ; openmpi/optimized/utils.ll
+; openspiel/optimized/CalcTables.cpp.ll
+; openspiel/optimized/SolveBoard.cpp.ll
 ; openspiel/optimized/chess.cc.ll
 ; openssl/optimized/bio_dgram_test-bin-bio_dgram_test.ll
 ; openusd/optimized/unitTestDelegate.cpp.ll
@@ -43,10 +46,12 @@
 ; postgres/optimized/interval.ll
 ; postgres/optimized/lock.ll
 ; postgres/optimized/predicate.ll
+; postgres/optimized/rowtypes.ll
 ; pybind11/optimized/test_chrono.cpp.ll
 ; qemu/optimized/ui_vnc-enc-tight.c.ll
 ; quickjs/optimized/quickjs.ll
 ; redis/optimized/redis-cli.ll
+; sqlite/optimized/sqlite3.ll
 ; velox/optimized/DateTimeFormatter.cpp.ll
 ; velox/optimized/Sequence.cpp.ll
 ; velox/optimized/Timestamp.cpp.ll
@@ -59,13 +64,28 @@
 ; wasmtime-rs/optimized/4qgt4edt0wnnlcua.ll
 ; wasmtime-rs/optimized/4sy2q5i3qnvymrev.ll
 ; wasmtime-rs/optimized/v5prf101dn49s3v.ll
-; wireshark/optimized/qcustomplot.cpp.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0) #0 {
 entry:
   %1 = shl i64 %0, 32
   %2 = ashr exact i64 %1, 32
   %3 = mul nsw i64 %2, 9
+  ret i64 %3
+}
+
+; 4 occurrences:
+; openjdk/optimized/g1Allocator.ll
+; raylib/optimized/rmodels.c.ll
+; wasmtime-rs/optimized/2niyyz8nbah1jl4k.ll
+; wasmtime-rs/optimized/3ks7b643ljwe3j81.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000015(i64 %0) #0 {
+entry:
+  %1 = shl nuw i64 %0, 56
+  %2 = ashr exact i64 %1, 56
+  %3 = mul nsw i64 %2, 56
   ret i64 %3
 }
 
@@ -114,25 +134,14 @@ entry:
   ret i64 %3
 }
 
-; 3 occurrences:
-; raylib/optimized/rmodels.c.ll
-; wasmtime-rs/optimized/2niyyz8nbah1jl4k.ll
-; wasmtime-rs/optimized/3ks7b643ljwe3j81.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000015(i64 %0) #0 {
-entry:
-  %1 = shl nuw i64 %0, 48
-  %2 = ashr exact i64 %1, 48
-  %3 = mul nsw i64 %2, -4294967296
-  ret i64 %3
-}
-
-; 5 occurrences:
+; 7 occurrences:
 ; arrow/optimized/data.cc.ll
 ; linux/optimized/vsprintf.ll
 ; wasmtime-rs/optimized/2lz954crgst412nx.ll
 ; wasmtime-rs/optimized/4krmo5yuqbsteeuo.ll
 ; wasmtime-rs/optimized/jqxcpn1is9b9z0t.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/deqzoqcotewn9fb0m32sor9lr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0) #0 {
 entry:

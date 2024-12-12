@@ -7,15 +7,18 @@ func0000000000000008:                   # @func0000000000000008
 	movabsq	$34359738368, %rax              # imm = 0x800000000
 	addq	%rcx, %rax
 	retq
-func0000000000000030:                   # @func0000000000000030
-	leaq	4(,%rdi,4), %rax
-	andq	$-32, %rax
-	addq	$-4, %rax
-	retq
 func000000000000001d:                   # @func000000000000001d
 	leaq	6(%rdi,%rdi), %rax
 	andq	$-8, %rax
 	addq	$-2, %rax
+	retq
+func0000000000000030:                   # @func0000000000000030
+	shlq	$59, %rdi
+	movabsq	$1152921504606846976, %rcx      # imm = 0x1000000000000000
+	addq	%rdi, %rcx
+	movabsq	$-2305843009213693952, %rax     # imm = 0xE000000000000000
+	andq	%rcx, %rax
+	decq	%rax
 	retq
 func000000000000003d:                   # @func000000000000003d
 	leal	126(%rdi,%rdi), %eax

@@ -1,6 +1,6 @@
 
-%"struct.OT::IntType.167.2617260" = type { %struct.BEInt.168.2617261 }
-%struct.BEInt.168.2617261 = type { i8 }
+%"struct.OT::IntType.167.2730712" = type { %struct.BEInt.168.2730713 }
+%struct.BEInt.168.2730713 = type { i8 }
 
 ; 10 occurrences:
 ; cpython/optimized/bytearrayobject.ll
@@ -54,10 +54,10 @@ entry:
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000064(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = icmp ult ptr %4, %0
   ret i1 %5
 }
@@ -76,10 +76,10 @@ entry:
 ; rustfmt-rs/optimized/1mznjg1e09hdetpr.ll
 ; typst-rs/optimized/1mrwywpkq81cby93.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000061(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
@@ -92,15 +92,15 @@ entry:
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func00000000000000e8(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr nusw %"struct.OT::IntType.167.2617260", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"struct.OT::IntType.167.2730712", ptr %1, i64 %3
   %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
 
-; 29 occurrences:
+; 28 occurrences:
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
 ; cmake/optimized/huf_decompress.c.ll
 ; eastl/optimized/EAString.cpp.ll
@@ -112,7 +112,6 @@ entry:
 ; harfbuzz/optimized/hb-static.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hdf5/optimized/H5Oshared.c.ll
-; hyperscan/optimized/accel.c.ll
 ; jq/optimized/jv_unicode.ll
 ; luajit/optimized/lj_snap.ll
 ; luajit/optimized/lj_snap_dyn.ll
@@ -131,10 +130,10 @@ entry:
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000068(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = getelementptr nusw %"struct.OT::IntType.167.2617260", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"struct.OT::IntType.167.2730712", ptr %1, i64 %3
   %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
@@ -143,10 +142,10 @@ entry:
 ; libevent/optimized/evdns.c.ll
 ; php/optimized/session.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func00000000000000e4(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = icmp ult ptr %4, %0
   ret i1 %5
 }
@@ -154,10 +153,10 @@ entry:
 ; 1 occurrences:
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func00000000000000e1(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr nusw ptr, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw ptr, ptr %1, i64 %3
   %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
@@ -167,10 +166,10 @@ entry:
 ; grpc/optimized/ssl_transport_security.cc.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000029(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000069(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = icmp uge ptr %4, %0
   ret i1 %5
 }

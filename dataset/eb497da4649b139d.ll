@@ -1,5 +1,5 @@
 
-%"struct.boost::container::dtl::pair.2570852" = type { i32, i32 }
+%"struct.boost::container::dtl::pair.2685211" = type { i32, i32 }
 
 ; 11 occurrences:
 ; duckdb/optimized/ub_duckdb_bind_expression.cpp.ll
@@ -19,7 +19,7 @@ entry:
   %3 = shl i64 %2, 3
   %4 = add i64 %3, 8
   %5 = and i64 %4, -32
-  %6 = getelementptr %"struct.boost::container::dtl::pair.2570852", ptr %0, i64 %1
+  %6 = getelementptr %"struct.boost::container::dtl::pair.2685211", ptr %0, i64 %1
   %7 = getelementptr i8, ptr %6, i64 %5
   ret ptr %7
 }
@@ -103,10 +103,8 @@ entry:
   ret ptr %7
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
-; g2o/optimized/edge_se2_lotsofxy.cpp.ll
-; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func00000000000000f8(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -115,6 +113,20 @@ entry:
   %5 = and i64 %4, 34359738336
   %6 = getelementptr nusw float, ptr %0, i64 %1
   %7 = getelementptr i8, ptr %6, i64 %5
+  ret ptr %7
+}
+
+; 2 occurrences:
+; g2o/optimized/edge_se2_lotsofxy.cpp.ll
+; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000fc(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 1
+  %4 = add i64 %3, 8589934588
+  %5 = and i64 %4, 8589934588
+  %6 = getelementptr nusw nuw double, ptr %0, i64 %1
+  %7 = getelementptr double, ptr %6, i64 %5
   ret ptr %7
 }
 

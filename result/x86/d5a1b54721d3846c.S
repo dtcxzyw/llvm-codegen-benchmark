@@ -11,7 +11,7 @@ func000000000000000c:                   # @func000000000000000c
 	setne	%al
 	andb	%dil, %al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	imulq	$1000, %rsi, %rax               # imm = 0x3E8
 	cmpq	$1000000000, %rax               # imm = 0x3B9ACA00
 	setb	%al

@@ -26,10 +26,12 @@ entry:
   ret i32 %7
 }
 
-; 6 occurrences:
+; 8 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; spike/optimized/aes64dsm.ll
 ; spike/optimized/aes64esm.ll
@@ -38,7 +40,7 @@ define i32 @func0000000000000016(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw i32 %3, 24
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or disjoint i32 %5, %0
   %7 = lshr i32 %6, 9
   ret i32 %7
@@ -52,7 +54,7 @@ define i32 @func0000000000000018(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 20
-  %5 = or i32 %4, %1
+  %5 = or i32 %1, %4
   %6 = or i32 %5, %0
   %7 = lshr i32 %6, 8
   ret i32 %7
@@ -66,7 +68,7 @@ define i32 @func000000000000001c(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 8
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or i32 %5, %0
   %7 = lshr i32 %6, 8
   ret i32 %7

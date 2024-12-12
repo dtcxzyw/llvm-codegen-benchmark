@@ -12,6 +12,13 @@ func0000000000000007:                   # @func0000000000000007
 	andq	$-1073741824, %rax              # imm = 0xC0000000
 	orq	%rdx, %rax
 	retq
+func0000000000000001:                   # @func0000000000000001
+	andl	$-65536, %edx                   # imm = 0xFFFF0000
+	orl	%esi, %edx
+	movabsq	$-4294901761, %rax              # imm = 0xFFFFFFFF0000FFFF
+	andq	%rdi, %rax
+	orq	%rdx, %rax
+	retq
 func0000000000000000:                   # @func0000000000000000
 	movq	%rdi, %rax
 	andl	$7, %edx

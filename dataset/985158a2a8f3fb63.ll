@@ -1,11 +1,10 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; c3c/optimized/sema_stmts.c.ll
 ; cpython/optimized/listobject.ll
 ; hermes/optimized/escape.cpp.ll
 ; icu/optimized/ucnv_bld.ll
 ; linux/optimized/gup.ll
-; linux/optimized/seccomp.ll
 ; oiio/optimized/environment.cpp.ll
 ; openjdk/optimized/archiveHeapWriter.ll
 ; openjdk/optimized/instanceKlass.ll

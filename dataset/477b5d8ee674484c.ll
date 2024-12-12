@@ -3,7 +3,7 @@
 ; cmake/optimized/nghttp2_hd.c.ll
 ; nghttp2/optimized/nghttp2_hd.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000101(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
@@ -20,7 +20,7 @@ entry:
 ; ncnn/optimized/multiheadattention_x86_avx512.cpp.ll
 ; ncnn/optimized/multiheadattention_x86_fma.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000002c(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
@@ -33,7 +33,7 @@ entry:
 ; 1 occurrences:
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000108(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3

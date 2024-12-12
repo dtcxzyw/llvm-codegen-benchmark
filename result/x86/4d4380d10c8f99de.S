@@ -3,9 +3,8 @@ func000000000000006c:                   # @func000000000000006c
 	andl	$-64, %eax
 	retq
 func0000000000000000:                   # @func0000000000000000
-	leaq	7(%rdi), %rax
-	shrq	$2, %rax
-	andl	$-2, %eax
+	leal	7(%rdi), %eax
+	andl	$-8, %eax
 	retq
 func0000000000000020:                   # @func0000000000000020
 	leal	4095(%rdi), %eax

@@ -23,6 +23,15 @@ func0000000000000008:                   # @func0000000000000008
 	addiw	a0, a0, 2047
 	vand.vx	v8, v8, a0
 	ret
+func0000000000000014:                   # @func0000000000000014
+	bseti	a0, zero, 32
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmsltu.vx	v0, v12, a0
+	li	a0, -8
+	vmerge.vvm	v8, v10, v8, v0
+	rori	a0, a0, 23
+	vand.vx	v8, v8, a0
+	ret
 func000000000000000c:                   # @func000000000000000c
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmseq.vi	v0, v12, 0

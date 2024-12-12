@@ -37,6 +37,18 @@ entry:
   ret i1 %3
 }
 
+; 3 occurrences:
+; boost/optimized/approximately_equals.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(float %0, float %1) #0 {
+entry:
+  %2 = freeze float %1
+  %3 = fcmp oeq float %2, %0
+  ret i1 %3
+}
+
 ; 1 occurrences:
 ; opencv/optimized/detector.cpp.ll
 ; Function Attrs: nounwind

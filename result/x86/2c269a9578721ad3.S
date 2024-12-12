@@ -1,3 +1,11 @@
+func0000000000000018:                   # @func0000000000000018
+	xorl	%eax, %eax
+	testb	$1, %sil
+	cmovel	%edx, %eax
+	andl	$131071, %edi                   # imm = 0x1FFFF
+	cmpl	%eax, %edi
+	seta	%al
+	retq
 func0000000000000008:                   # @func0000000000000008
 	xorl	%eax, %eax
 	testb	$1, %sil

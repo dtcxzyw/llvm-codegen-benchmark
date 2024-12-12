@@ -1,15 +1,14 @@
 
-%union.iseq_inline_storage_entry.2485792 = type { %struct.anon.21.2485793 }
-%struct.anon.21.2485793 = type { ptr, i64 }
-%"class.asmjit::_abi_1_10::RALiveSpan.2488203" = type { %"struct.asmjit::_abi_1_10::RALiveInterval.2488204", %"struct.asmjit::_abi_1_10::LiveRegData.2488205" }
-%"struct.asmjit::_abi_1_10::RALiveInterval.2488204" = type { i32, i32 }
-%"struct.asmjit::_abi_1_10::LiveRegData.2488205" = type { i32 }
+%union.iseq_inline_storage_entry.2601263 = type { %struct.anon.21.2601264 }
+%struct.anon.21.2601264 = type { ptr, i64 }
+%"class.asmjit::_abi_1_10::RALiveSpan.2603635" = type { %"struct.asmjit::_abi_1_10::RALiveInterval.2603636", %"struct.asmjit::_abi_1_10::LiveRegData.2603637" }
+%"struct.asmjit::_abi_1_10::RALiveInterval.2603636" = type { i32, i32 }
+%"struct.asmjit::_abi_1_10::LiveRegData.2603637" = type { i32 }
 
-; 105 occurrences:
+; 102 occurrences:
 ; cpython/optimized/optimizer.ll
 ; hyperscan/optimized/teddy.c.ll
 ; hyperscan/optimized/teddy_avx2.c.ll
-; libwebp/optimized/vp8l_dec.c.ll
 ; linux/optimized/af_packet.ll
 ; linux/optimized/ah6.ll
 ; linux/optimized/ahash.ll
@@ -19,7 +18,6 @@
 ; linux/optimized/blk-merge.ll
 ; linux/optimized/compat_binfmt_elf.ll
 ; linux/optimized/dmar.ll
-; linux/optimized/dns_key.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/i915_perf.ll
 ; linux/optimized/igmp.ll
@@ -38,7 +36,6 @@
 ; llvm/optimized/AutoUpgrade.cpp.ll
 ; llvm/optimized/GlobalSplit.cpp.ll
 ; lz4/optimized/lz4.c.ll
-; opencv/optimized/geometry.cpp.ll
 ; openjdk/optimized/archiveHeapWriter.ll
 ; openusd/optimized/lz4.cpp.ll
 ; postgres/optimized/aclchk.ll
@@ -120,8 +117,7 @@ entry:
   ret i64 %4
 }
 
-; 103 occurrences:
-; clamav/optimized/upack.c.ll
+; 94 occurrences:
 ; clamav/optimized/upx.c.ll
 ; cpython/optimized/sre.ll
 ; eastl/optimized/TestHeap.cpp.ll
@@ -143,12 +139,8 @@ entry:
 ; linux/optimized/drm_cache.ll
 ; linux/optimized/ematch.ll
 ; linux/optimized/esp6.ll
-; linux/optimized/event.ll
-; linux/optimized/features.ll
-; linux/optimized/fec.ll
 ; linux/optimized/fib_rules.ll
 ; linux/optimized/fib_semantics.ll
-; linux/optimized/fils_aead.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/gcm.ll
 ; linux/optimized/gen_stats.ll
@@ -165,13 +157,11 @@ entry:
 ; linux/optimized/mballoc.ll
 ; linux/optimized/mcast.ll
 ; linux/optimized/mlme.ll
-; linux/optimized/mm.ll
 ; linux/optimized/ndisc.ll
 ; linux/optimized/neighbour.ll
 ; linux/optimized/net_namespace.ll
 ; linux/optimized/netdev-genl.ll
 ; linux/optimized/netdev.ll
-; linux/optimized/netlabel_calipso.ll
 ; linux/optimized/netlabel_cipso_v4.ll
 ; linux/optimized/netlabel_mgmt.ll
 ; linux/optimized/netlabel_unlabeled.ll
@@ -182,7 +172,6 @@ entry:
 ; linux/optimized/nf_nat_helper.ll
 ; linux/optimized/nfnetlink_log.ll
 ; linux/optimized/nl80211.ll
-; linux/optimized/pause.ll
 ; linux/optimized/pmsr.ll
 ; linux/optimized/policy.ll
 ; linux/optimized/route.ll
@@ -198,7 +187,6 @@ entry:
 ; linux/optimized/tcp_metrics.ll
 ; linux/optimized/tcp_sigpool.ll
 ; linux/optimized/tlshd.ll
-; linux/optimized/tpm.ll
 ; linux/optimized/trace_kprobe.ll
 ; linux/optimized/ttm_pool.ll
 ; linux/optimized/tunnels.ll
@@ -228,12 +216,12 @@ entry:
 define i64 @func0000000000000000(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = getelementptr %union.iseq_inline_storage_entry.2485792, ptr %0, i64 %2
+  %3 = getelementptr %union.iseq_inline_storage_entry.2601263, ptr %0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   ret i64 %4
 }
 
-; 493 occurrences:
+; 498 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/cecChoice.c.ll
 ; abc/optimized/cecCorr.c.ll
@@ -250,6 +238,7 @@ entry:
 ; abc/optimized/kitHop.c.ll
 ; abseil-cpp/optimized/arg.cc.ll
 ; assimp/optimized/TerragenLoader.cpp.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; clamav/optimized/Ppmd7.c.ll
@@ -346,12 +335,14 @@ entry:
 ; hyperscan/optimized/control_verbs.cpp.ll
 ; icu/optimized/reslist.ll
 ; icu/optimized/ustrtrns.ll
+; imgui/optimized/imgui_widgets.cpp.ll
 ; jemalloc/optimized/tcache.ll
 ; jemalloc/optimized/tcache.pic.ll
 ; jemalloc/optimized/tcache.sym.ll
 ; jq/optimized/jv.ll
 ; libphonenumber/optimized/unicodetext.cc.ll
 ; libpng/optimized/pngrutil.c.ll
+; libwebp/optimized/vp8l_dec.c.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
 ; lief/optimized/BinaryParser.cpp.ll
@@ -526,8 +517,10 @@ entry:
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
+; opencv/optimized/geometry.cpp.ll
 ; opencv/optimized/grfmt_tiff.cpp.ll
 ; opencv/optimized/lkpyramid.cpp.ll
+; opencv/optimized/onnx_importer.cpp.ll
 ; opencv/optimized/rlof_localflow.cpp.ll
 ; openexr/optimized/ImfCheckFile.cpp.ll
 ; openjdk/optimized/frame.ll
@@ -728,15 +721,15 @@ entry:
 ; zstd/optimized/divsufsort.c.ll
 ; zxing/optimized/ODReader.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000006(ptr %0, i32 %1) #0 {
+define i64 @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   ret i64 %4
 }
 
-; 308 occurrences:
+; 307 occurrences:
 ; abc/optimized/inffast.c.ll
 ; abc/optimized/inftrees.c.ll
 ; abseil-cpp/optimized/graphcycles.cc.ll
@@ -748,6 +741,8 @@ entry:
 ; assimp/optimized/LWOMaterial.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/options_description.ll
+; boost/optimized/src.ll
 ; brotli/optimized/static_dict.c.ll
 ; c3c/optimized/sema_expr.c.ll
 ; c3c/optimized/sema_stmts.c.ll
@@ -775,7 +770,6 @@ entry:
 ; cmake/optimized/gzwrite.c.ll
 ; cmake/optimized/inffast.c.ll
 ; cmake/optimized/inftrees.c.ll
-; cmake/optimized/zstd_compress.c.ll
 ; cmake/optimized/zstd_double_fast.c.ll
 ; cmake/optimized/zstd_fast.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
@@ -1004,7 +998,6 @@ entry:
 ; php/optimized/ZendAccelerator.ll
 ; php/optimized/block_pass.ll
 ; php/optimized/dfa_pass.ll
-; php/optimized/is_simh.ll
 ; php/optimized/phar.ll
 ; php/optimized/softmagic.ll
 ; php/optimized/zend_compile.ll
@@ -1039,17 +1032,16 @@ entry:
 ; z3/optimized/smt_context_pp.cpp.ll
 ; zlib/optimized/gzwrite.c.ll
 ; zlib/optimized/inftrees.c.ll
-; zstd/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_double_fast.c.ll
 ; zstd/optimized/zstd_fast.c.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; zstd/optimized/zstd_ldm.c.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000002(ptr %0, i32 %1) #0 {
+define i64 @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = getelementptr nusw %"class.asmjit::_abi_1_10::RALiveSpan.2488203", ptr %0, i64 %2
+  %3 = getelementptr nusw nuw %"class.asmjit::_abi_1_10::RALiveSpan.2603635", ptr %0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   ret i64 %4
 }

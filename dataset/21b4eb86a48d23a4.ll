@@ -1,32 +1,28 @@
 
-%union.iseq_inline_storage_entry.2485876 = type { %struct.anon.32.2485877 }
-%struct.anon.32.2485877 = type { ptr, i64 }
+%union.iseq_inline_storage_entry.2601335 = type { %struct.anon.32.2601336 }
+%struct.anon.32.2601336 = type { ptr, i64 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; hyperscan/optimized/buildstate.cpp.ll
 ; ruby/optimized/compile.ll
+; vcpkg/optimized/export.prefab.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr %union.iseq_inline_storage_entry.2485876, ptr %0, i64 %1
-  %5 = getelementptr %union.iseq_inline_storage_entry.2485876, ptr %4, i64 %3
+  %4 = getelementptr %union.iseq_inline_storage_entry.2601335, ptr %0, i64 %1
+  %5 = getelementptr %union.iseq_inline_storage_entry.2601335, ptr %4, i64 %3
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }
 
-; 184 occurrences:
+; 78 occurrences:
 ; folly/optimized/AsyncSocket.cpp.ll
 ; folly/optimized/IPAddressV4.cpp.ll
 ; folly/optimized/IPAddressV6.cpp.ll
 ; folly/optimized/Singleton.cpp.ll
 ; hyperscan/optimized/fdr.c.ll
-; hyperscan/optimized/fdr_compile.cpp.ll
-; hyperscan/optimized/teddy_compile.cpp.ll
-; jemalloc/optimized/emap.ll
-; jemalloc/optimized/emap.pic.ll
-; jemalloc/optimized/emap.sym.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
 ; lief/optimized/BinaryParser.cpp.ll
@@ -97,6 +93,81 @@ entry:
 ; lief/optimized/VectorStream.cpp.ll
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
+; proxygen/optimized/HTTPBinaryCodec.cpp.ll
+; spdlog/optimized/bundled_fmtlib_format.cpp.ll
+; spdlog/optimized/spdlog.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 1
+  %4 = getelementptr nusw i8, ptr %0, i64 %1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
+  %6 = ptrtoint ptr %5 to i64
+  ret i64 %6
+}
+
+; 15 occurrences:
+; abseil-cpp/optimized/reflection_test.cc.ll
+; abseil-cpp/optimized/str_split_test.cc.ll
+; libquic/optimized/string_piece.cc.ll
+; llvm/optimized/InstCombineCalls.cpp.ll
+; llvm/optimized/ScalarizeMaskedMemIntrin.cpp.ll
+; llvm/optimized/ValueTracking.cpp.ll
+; meshlab/optimized/additionalgui.cpp.ll
+; meshlab/optimized/paintbox.cpp.ll
+; meshlab/optimized/qualitymapperdialog.cpp.ll
+; openspiel/optimized/tarok.cc.ll
+; protobuf/optimized/printer.cc.ll
+; protobuf/optimized/relative_path.cc.ll
+; sentencepiece/optimized/unigram_model_trainer.cc.ll
+; vcpkg/optimized/spdx.cpp.ll
+; zxing/optimized/GenericGFPoly.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -4
+  %4 = getelementptr nusw i8, ptr %0, i64 %1
+  %5 = getelementptr i8, ptr %4, i64 %3
+  %6 = ptrtoint ptr %5 to i64
+  ret i64 %6
+}
+
+; 23 occurrences:
+; darktable/optimized/CiffEntry.cpp.ll
+; darktable/optimized/MosDecoder.cpp.ll
+; darktable/optimized/TiffEntry.cpp.ll
+; llvm/optimized/AArch64RedundantCopyElimination.cpp.ll
+; llvm/optimized/CombinerHelper.cpp.ll
+; llvm/optimized/DbgEntityHistoryCalculator.cpp.ll
+; llvm/optimized/DebugHandlerBase.cpp.ll
+; llvm/optimized/DwarfDebug.cpp.ll
+; llvm/optimized/EarlyIfConversion.cpp.ll
+; llvm/optimized/ExprConstant.cpp.ll
+; llvm/optimized/InstrRefBasedImpl.cpp.ll
+; llvm/optimized/Instructions.cpp.ll
+; llvm/optimized/LoopInterchange.cpp.ll
+; llvm/optimized/MachineOutliner.cpp.ll
+; llvm/optimized/MachineSink.cpp.ll
+; llvm/optimized/PrologEpilogInserter.cpp.ll
+; llvm/optimized/RegAllocFast.cpp.ll
+; llvm/optimized/RegisterCoalescer.cpp.ll
+; llvm/optimized/SimplifyCFG.cpp.ll
+; llvm/optimized/VarLocBasedImpl.cpp.ll
+; llvm/optimized/X86SpeculativeLoadHardening.cpp.ll
+; opencv/optimized/upcean_decoder.cpp.ll
+; openusd/optimized/level.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000c(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 2147483644
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %5 = getelementptr i8, ptr %4, i64 %3
+  %6 = ptrtoint ptr %5 to i64
+  ret i64 %6
+}
+
+; 101 occurrences:
+; hyperscan/optimized/teddy_compile.cpp.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTDiagnostic.cpp.ll
@@ -196,66 +267,41 @@ entry:
 ; llvm/optimized/WasmObjectFile.cpp.ll
 ; luajit/optimized/lj_parse.ll
 ; luajit/optimized/lj_parse_dyn.ll
-; openmpi/optimized/mpl_trmem.ll
-; proxygen/optimized/HTTPBinaryCodec.cpp.ll
-; spdlog/optimized/bundled_fmtlib_format.cpp.ll
-; spdlog/optimized/spdlog.cpp.ll
 ; yosys/optimized/fstapi.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 4294967295
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
+  %6 = ptrtoint ptr %5 to i64
+  ret i64 %6
+}
+
+; 4 occurrences:
+; jemalloc/optimized/emap.ll
+; jemalloc/optimized/emap.pic.ll
+; jemalloc/optimized/emap.sym.ll
+; openmpi/optimized/mpl_trmem.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, 1
+  %3 = and i64 %2, -8
   %4 = getelementptr nusw i8, ptr %0, i64 %1
   %5 = getelementptr nusw i8, ptr %4, i64 %3
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }
 
-; 38 occurrences:
-; abseil-cpp/optimized/reflection_test.cc.ll
-; abseil-cpp/optimized/str_split_test.cc.ll
-; darktable/optimized/CiffEntry.cpp.ll
-; darktable/optimized/MosDecoder.cpp.ll
-; darktable/optimized/TiffEntry.cpp.ll
-; libquic/optimized/string_piece.cc.ll
-; llvm/optimized/AArch64RedundantCopyElimination.cpp.ll
-; llvm/optimized/CombinerHelper.cpp.ll
-; llvm/optimized/DbgEntityHistoryCalculator.cpp.ll
-; llvm/optimized/DebugHandlerBase.cpp.ll
-; llvm/optimized/DwarfDebug.cpp.ll
-; llvm/optimized/EarlyIfConversion.cpp.ll
-; llvm/optimized/ExprConstant.cpp.ll
-; llvm/optimized/InstCombineCalls.cpp.ll
-; llvm/optimized/InstrRefBasedImpl.cpp.ll
-; llvm/optimized/Instructions.cpp.ll
-; llvm/optimized/LoopInterchange.cpp.ll
-; llvm/optimized/MachineOutliner.cpp.ll
-; llvm/optimized/MachineSink.cpp.ll
-; llvm/optimized/PrologEpilogInserter.cpp.ll
-; llvm/optimized/RegAllocFast.cpp.ll
-; llvm/optimized/RegisterCoalescer.cpp.ll
-; llvm/optimized/ScalarizeMaskedMemIntrin.cpp.ll
-; llvm/optimized/SimplifyCFG.cpp.ll
-; llvm/optimized/ValueTracking.cpp.ll
-; llvm/optimized/VarLocBasedImpl.cpp.ll
-; llvm/optimized/X86SpeculativeLoadHardening.cpp.ll
-; meshlab/optimized/additionalgui.cpp.ll
-; meshlab/optimized/paintbox.cpp.ll
-; meshlab/optimized/qualitymapperdialog.cpp.ll
-; opencv/optimized/upcean_decoder.cpp.ll
-; openspiel/optimized/tarok.cc.ll
-; openusd/optimized/level.cpp.ll
-; protobuf/optimized/printer.cc.ll
-; protobuf/optimized/relative_path.cc.ll
-; sentencepiece/optimized/unigram_model_trainer.cc.ll
-; vcpkg/optimized/spdx.cpp.ll
-; zxing/optimized/GenericGFPoly.cpp.ll
+; 2 occurrences:
+; hyperscan/optimized/fdr_compile.cpp.ll
+; hyperscan/optimized/teddy_compile.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
+define i64 @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, -4
-  %4 = getelementptr nusw i8, ptr %0, i64 %1
-  %5 = getelementptr i8, ptr %4, i64 %3
+  %3 = and i64 %2, -64
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %5 = getelementptr nusw i8, ptr %4, i64 %3
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }

@@ -1,8 +1,8 @@
-func0000000000000002:                   # @func0000000000000002
-	addl	%edi, %edi
-	leal	1(%rdi,%rdi,2), %eax
-	retq
 func000000000000000f:                   # @func000000000000000f
+	shll	$3, %edi
+	leal	6(%rdi,%rdi,2), %eax
+	retq
+func0000000000000002:                   # @func0000000000000002
 	addl	%edi, %edi
 	leal	1(%rdi,%rdi,2), %eax
 	retq

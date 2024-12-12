@@ -1,5 +1,5 @@
 
-; 117 occurrences:
+; 115 occurrences:
 ; clamav/optimized/extract.cpp.ll
 ; cmake/optimized/cmCPackLog.cxx.ll
 ; cmake/optimized/cmcmd.cxx.ll
@@ -74,7 +74,6 @@
 ; mold/optimized/icf.cc.X86_64.cc.ll
 ; nix/optimized/build-result.ll
 ; ocio/optimized/Config.cpp.ll
-; ocio/optimized/FileTransform.cpp.ll
 ; ocio/optimized/Processor.cpp.ll
 ; oiio/optimized/tiffinput.cpp.ll
 ; openjdk/optimized/escape.ll
@@ -100,7 +99,6 @@
 ; postgres/optimized/selfuncs.ll
 ; postgres/optimized/subselect.ll
 ; postgres/optimized/trigger.ll
-; proj/optimized/io.cpp.ll
 ; proj/optimized/projinfo.cpp.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; qemu/optimized/hw_net_e1000.c.ll
@@ -126,7 +124,10 @@ entry:
   ret i1 %4
 }
 
-; 37 occurrences:
+; 44 occurrences:
+; boost/optimized/sparring_partner.ll
+; boost/optimized/value_semantic.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; clap-rs/optimized/1rbie63mhpvpjak.ll
 ; cmake/optimized/parsedate.c.ll
 ; coreutils-rs/optimized/45371cbry3cnr73y.ll
@@ -164,6 +165,10 @@ entry:
 ; rust-analyzer-rs/optimized/7lpeywhc9n6h2ze.ll
 ; soc-simulator/optimized/sim_mycpu.ll
 ; wireshark/optimized/packet-eth.c.ll
+; zed-rs/optimized/1x0js6flb76ylaa82e6lu27uy.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/8x58xp4s22l8izlb56sviitm3.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i8 %1) #0 {
 entry:

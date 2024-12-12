@@ -16,14 +16,6 @@ func0000000000000001:                   # @func0000000000000001
 	testb	$1, %dil
 	cmovneq	%rsi, %rax
 	retq
-func0000000000000004:                   # @func0000000000000004
-	cmpq	$1024, %rdx                     # imm = 0x400
-	movl	$1, %ecx
-	movl	$1024, %eax                     # imm = 0x400
-	cmovbq	%rcx, %rax
-	testb	$1, %dil
-	cmovneq	%rsi, %rax
-	retq
 func000000000000000a:                   # @func000000000000000a
 	notq	%rdx
 	shrq	$8, %rdx
@@ -40,6 +32,14 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	%rcx, %rdx
 	seta	%al
 	shll	$3, %eax
+	testb	$1, %dil
+	cmovneq	%rsi, %rax
+	retq
+func0000000000000004:                   # @func0000000000000004
+	cmpq	$32000, %rdx                    # imm = 0x7D00
+	movl	$16, %ecx
+	movl	$4, %eax
+	cmovbq	%rcx, %rax
 	testb	$1, %dil
 	cmovneq	%rsi, %rax
 	retq

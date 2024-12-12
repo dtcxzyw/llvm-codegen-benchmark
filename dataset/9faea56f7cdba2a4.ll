@@ -19,7 +19,7 @@ entry:
   %2 = shl i8 %1, 1
   %3 = and i8 %2, 2
   %4 = zext nneg i8 %3 to i32
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 

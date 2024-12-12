@@ -3,7 +3,7 @@
 ; abc/optimized/superAnd.c.ll
 ; wireshark/optimized/packet-mp2t.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0) #0 {
+define i1 @func000000000000002c(i32 %0) #0 {
 entry:
   %1 = srem i32 %0, 300
   %2 = icmp eq i32 %1, 0
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; openmpi/optimized/tm_topology.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0) #0 {
+define i1 @func000000000000002a(i32 %0) #0 {
 entry:
   %1 = srem i32 %0, 3
   %2 = icmp eq i32 %1, 0
@@ -28,7 +28,7 @@ entry:
 ; postgres/optimized/strftime.ll
 ; protobuf/optimized/time_util.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a6(i32 %0) #0 {
+define i1 @func0000000000000146(i32 %0) #0 {
 entry:
   %1 = srem i32 %0, 100
   %2 = icmp sgt i32 %1, 0

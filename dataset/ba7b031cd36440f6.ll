@@ -4,7 +4,7 @@
 ; lua/optimized/lstring.ll
 ; postgres/optimized/nodeAgg.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000051(i32 %0, i64 %1) #0 {
+define i64 @func00000000000000a1(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 4
   %3 = add nsw i64 %2, 16
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000f4(i32 %0, i64 %1) #0 {
+define i64 @func00000000000001e4(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 3
   %3 = add nuw nsw i64 %2, 16
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000054(i32 %0, i64 %1) #0 {
+define i64 @func00000000000000a4(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 3
   %3 = add nsw i64 %2, 8
@@ -40,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000f1(i32 %0, i64 %1) #0 {
+define i64 @func00000000000001e1(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 3
   %3 = add nuw nsw i64 %2, 16

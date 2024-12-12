@@ -11,11 +11,10 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; darktable/optimized/introspection_rawprepare.c.ll
-; linux/optimized/insn-eval.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = and i32 %1, 2
@@ -34,12 +33,24 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = and i32 %1, 2
   %5 = or disjoint i32 %4, %3
   %6 = icmp eq i32 %5, %0
+  ret i1 %6
+}
+
+; 1 occurrences:
+; linux/optimized/insn-eval.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 7
+  %4 = and i32 %1, 8
+  %5 = or disjoint i32 %4, %3
+  %6 = icmp samesign ult i32 %5, %0
   ret i1 %6
 }
 

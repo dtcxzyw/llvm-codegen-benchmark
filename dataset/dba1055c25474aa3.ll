@@ -1,8 +1,8 @@
 
-%"struct.mold::elf::ElfRel.2531395" = type { %"class.mold::LittleEndian.251.2531368", %"class.mold::LittleEndian.250.2531367", %"class.mold::LittleEndian.250.2531367", %"class.mold::LittleEndian.374.2531396" }
-%"class.mold::LittleEndian.251.2531368" = type { [8 x i8] }
-%"class.mold::LittleEndian.250.2531367" = type { [4 x i8] }
-%"class.mold::LittleEndian.374.2531396" = type { [8 x i8] }
+%"struct.mold::elf::ElfRel.2645797" = type { %"class.mold::LittleEndian.251.2645770", %"class.mold::LittleEndian.250.2645769", %"class.mold::LittleEndian.250.2645769", %"class.mold::LittleEndian.374.2645798" }
+%"class.mold::LittleEndian.251.2645770" = type { [8 x i8] }
+%"class.mold::LittleEndian.250.2645769" = type { [4 x i8] }
+%"class.mold::LittleEndian.374.2645798" = type { [8 x i8] }
 
 ; 21 occurrences:
 ; abseil-cpp/optimized/time_zone_info.cc.ll
@@ -33,7 +33,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = sdiv exact i64 %4, -24
-  %6 = getelementptr nusw %"struct.mold::elf::ElfRel.2531395", ptr %0, i64 %5
+  %6 = getelementptr nusw %"struct.mold::elf::ElfRel.2645797", ptr %0, i64 %5
   ret ptr %6
 }
 

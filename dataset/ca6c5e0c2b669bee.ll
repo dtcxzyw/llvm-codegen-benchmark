@@ -21,7 +21,7 @@ entry:
 ; nghttp2/optimized/nghttp2_http.c.ll
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i8 %1) #0 {
 entry:
   %2 = or disjoint i8 %1, 32
   %3 = select i1 %0, i8 %2, i8 %1

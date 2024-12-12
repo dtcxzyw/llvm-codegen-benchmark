@@ -17,7 +17,7 @@ entry:
   ret i64 %6
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
@@ -30,7 +30,6 @@ entry:
 ; libwebp/optimized/frame_dec.c.ll
 ; luau/optimized/lgcdebug.cpp.ll
 ; nuklear/optimized/unity.c.ll
-; php/optimized/unixtime2tm.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0, i64 %1, i32 %2) #0 {
 entry:

@@ -15,19 +15,17 @@ entry:
 ; openssl/optimized/libcrypto-lib-bn_prime.ll
 ; openssl/optimized/libcrypto-shlib-bn_prime.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000023(i32 %0, i32 %1, i32 %2) #0 {
+define i64 @func00000000000000a3(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 1025
+  %3 = icmp samesign ult i32 %2, 1025
   %4 = select i1 %3, i32 %0, i32 %1
   %5 = add nsw i32 %4, -1
   %6 = zext nneg i32 %5 to i64
   ret i64 %6
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; bdwgc/optimized/cordprnt.c.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtpttf.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -97,11 +95,28 @@ entry:
   ret i64 %6
 }
 
-; 4 occurrences:
+; 7 occurrences:
+; imgui/optimized/imgui_draw.cpp.ll
+; libquic/optimized/x509name.c.ll
+; lightgbm/optimized/boosting.cpp.ll
+; lightgbm/optimized/gbdt.cpp.ll
+; nuklear/optimized/unity.c.ll
+; raylib/optimized/rtext.c.ll
+; stb/optimized/stb_truetype.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000032(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp slt i32 %2, 1
+  %4 = select i1 %3, i32 %0, i32 %1
+  %5 = add nsw i32 %4, -1
+  %6 = zext i32 %5 to i64
+  ret i64 %6
+}
+
+; 3 occurrences:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
-; wireshark/optimized/packet-babel.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000033(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -109,22 +124,6 @@ entry:
   %4 = select i1 %3, i32 %0, i32 %1
   %5 = add nsw i32 %4, -1
   %6 = zext nneg i32 %5 to i64
-  ret i64 %6
-}
-
-; 5 occurrences:
-; imgui/optimized/imgui_draw.cpp.ll
-; libquic/optimized/x509name.c.ll
-; nuklear/optimized/unity.c.ll
-; raylib/optimized/rtext.c.ll
-; stb/optimized/stb_truetype.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000032(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp slt i32 %2, 0
-  %4 = select i1 %3, i32 %0, i32 %1
-  %5 = add nsw i32 %4, 1
-  %6 = zext i32 %5 to i64
   ret i64 %6
 }
 
@@ -203,9 +202,9 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_execlists_submission.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000042(i32 %0, i32 %1, i32 %2) #0 {
+define i64 @func00000000000000c2(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, 3121
+  %3 = icmp samesign ugt i32 %2, 3121
   %4 = select i1 %3, i32 %0, i32 %1
   %5 = add nsw i32 %4, -1
   %6 = zext i32 %5 to i64
@@ -215,9 +214,9 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/list.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
+define i64 @func00000000000000a1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 2
+  %3 = icmp samesign ult i32 %2, 2
   %4 = select i1 %3, i32 %0, i32 %1
   %5 = add i32 %4, -3
   %6 = zext nneg i32 %5 to i64

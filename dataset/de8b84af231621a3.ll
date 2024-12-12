@@ -12,7 +12,8 @@ entry:
   ret i64 %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/src.ll
 ; cmake/optimized/zstdmt_compress.c.ll
 ; openjdk/optimized/g1FreeIdSet.ll
 ; postgres/optimized/d2s.ll

@@ -43,6 +43,12 @@ func0000000000000076:                   # @func0000000000000076
 	sh1add	a0, a0, a1
 	addiw	a0, a0, -48
 	ret
+func0000000000000058:                   # @func0000000000000058
+	andi	a1, a1, 255
+	sh2add	a0, a0, a0
+	sh1add	a0, a0, a1
+	addiw	a0, a0, -48
+	ret
 func0000000000000004:                   # @func0000000000000004
 	andi	a1, a1, 255
 	sh2add	a0, a0, a0

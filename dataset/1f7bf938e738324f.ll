@@ -32,7 +32,8 @@ entry:
   ret i8 %3
 }
 
-; 7 occurrences:
+; 8 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; miniaudio/optimized/unity.c.ll
 ; openjdk/optimized/mlib_ImageAffineEdge.ll
 ; openjdk/optimized/mlib_ImageConv_8ext.ll

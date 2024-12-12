@@ -14,18 +14,17 @@ define i1 @func000000000000000c(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 7
   %4 = icmp ne i8 %3, 0
-  %5 = and i1 %4, %1
+  %5 = and i1 %1, %4
   %6 = and i1 %5, %0
   ret i1 %6
 }
 
-; 9 occurrences:
-; assimp/optimized/glTF2Importer.cpp.ll
+; 8 occurrences:
 ; folly/optimized/EpollBackend.cpp.ll
 ; git/optimized/combine-diff.ll
 ; llvm/optimized/LoopFlatten.cpp.ll
 ; llvm/optimized/LoopNestAnalysis.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
+; lvgl/optimized/lv_flex.ll
 ; protobuf/optimized/lexer.cc.ll
 ; quickjs/optimized/quickjs.ll
 ; wireshark/optimized/packet-btrfcomm.c.ll
@@ -34,8 +33,8 @@ define i1 @func0000000000000001(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 1
   %4 = icmp eq i8 %3, 0
-  %5 = and i1 %4, %1
-  %6 = and i1 %5, %0
+  %5 = and i1 %1, %4
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

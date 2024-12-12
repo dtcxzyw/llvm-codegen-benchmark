@@ -1,5 +1,7 @@
 
-; 21 occurrences:
+; 23 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; g2o/optimized/edge_project_p2mc.cpp.ll
 ; g2o/optimized/edge_project_p2sc.cpp.ll

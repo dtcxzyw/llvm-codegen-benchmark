@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.long	2147483648                      # 0x80000000
+	.long	1                               # 0x1
 .LCPI0_1:
-	.long	2047                            # 0x7ff
-func0000000000000011:                   # @func0000000000000011
+	.long	7                               # 0x7
+func0000000000000021:                   # @func0000000000000021
 	vorps	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
 	vptestnmd	%ymm0, %ymm0, %k1
 	vandps	.LCPI0_1(%rip){1to8}, %ymm1, %ymm2 {%k1}

@@ -7,7 +7,7 @@ func0000000000000004:                   # @func0000000000000004
 	vadd.vv	v8, v8, v10
 	vmsleu.vi	v0, v8, 7
 	ret
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	lui	a0, 524288
 	addiw	a0, a0, -249
 	vsetivli	zero, 4, e64, m2, ta, mu

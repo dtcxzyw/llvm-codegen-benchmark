@@ -6,7 +6,7 @@
 ; opencv/optimized/joint_bilateral_filter.cpp.ll
 ; openusd/optimized/catmarkPatchBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003f1(i64 %0, i32 %1) #0 {
+define i1 @func00000000000007e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = or disjoint i32 %2, 1
@@ -20,7 +20,7 @@ entry:
 ; gromacs/optimized/pp2shift.cpp.ll
 ; openusd/optimized/catmarkPatchBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f1(i64 %0, i32 %1) #0 {
+define i1 @func00000000000003e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 2
   %3 = or disjoint i32 %2, 1
@@ -35,7 +35,7 @@ entry:
 ; openblas/optimized/dbdsvdx.c.ll
 ; openblas/optimized/dlaed0.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = or disjoint i32 %2, 1
@@ -48,7 +48,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/morph.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001b1(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000361(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = or disjoint i32 %2, 1
@@ -61,7 +61,7 @@ entry:
 ; 1 occurrences:
 ; graphviz/optimized/dijkstra.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003da(i64 %0, i32 %1) #0 {
+define i1 @func00000000000007aa(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = or disjoint i32 %2, 1

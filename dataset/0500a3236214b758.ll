@@ -11,16 +11,17 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/to_chars.ll
 ; postgres/optimized/xlog.ll
 ; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0) #0 {
 entry:
-  %1 = lshr i64 %0, 13
-  %2 = add nuw nsw i64 %1, 4294967295
+  %1 = lshr i64 %0, 16
+  %2 = add nuw nsw i64 %1, 1
   %3 = and i64 %2, 4294967295
-  %4 = mul nuw nsw i64 %3, 8168
+  %4 = mul nuw nsw i64 %3, 100
   ret i64 %4
 }
 

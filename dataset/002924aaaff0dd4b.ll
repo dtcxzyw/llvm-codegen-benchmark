@@ -3,7 +3,7 @@
 ; openusd/optimized/patchMap.cpp.ll
 ; openusd/optimized/patchTree.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001b1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000361(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 36
   %3 = trunc nuw nsw i64 %2 to i32
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/color_yuv.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32

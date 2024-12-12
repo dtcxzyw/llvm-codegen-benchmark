@@ -1,18 +1,18 @@
-func0000000000000015:                   # @func0000000000000015
+func0000000000000025:                   # @func0000000000000025
 	vptestnmw	%xmm2, %xmm2, %k0
 	vpcmpleud	%ymm1, %ymm0, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000000c8:                   # @func00000000000000c8
+func0000000000000188:                   # @func0000000000000188
 	vptestmw	%xmm2, %xmm2, %k0
 	vpcmpnleud	%ymm1, %ymm0, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	vptestmw	%xmm2, %xmm2, %k0
 	vpcmpeqd	%ymm1, %ymm0, %k1
 	korb	%k0, %k1, %k0
@@ -21,14 +21,14 @@ func00000000000000c1:                   # @func00000000000000c1
 	retq
 .LCPI3_0:
 	.zero	16,1
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpcmpeqw	.LCPI3_0(%rip), %xmm2, %k0
 	vpcmpeqd	%ymm1, %ymm0, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vptestnmw	%xmm2, %xmm2, %k0
 	vpcmpneqd	%ymm1, %ymm0, %k1
 	korb	%k0, %k1, %k0
@@ -44,7 +44,7 @@ func000000000000001c:                   # @func000000000000001c
 	.short	1                               # 0x1
 	.short	1                               # 0x1
 	.short	1                               # 0x1
-func000000000000008b:                   # @func000000000000008b
+func000000000000010b:                   # @func000000000000010b
 	vpcmpnleuw	.LCPI5_0(%rip), %xmm2, %k0
 	vpcmpnltd	%ymm1, %ymm0, %k1
 	korb	%k0, %k1, %k0
@@ -60,7 +60,7 @@ func000000000000008b:                   # @func000000000000008b
 	.short	32768                           # 0x8000
 	.short	32768                           # 0x8000
 	.short	32768                           # 0x8000
-func000000000000001b:                   # @func000000000000001b
+func000000000000002b:                   # @func000000000000002b
 	vpcmpeqw	.LCPI6_0(%rip), %xmm2, %k0
 	vpcmpnltd	%ymm1, %ymm0, %k1
 	korb	%k0, %k1, %k0
@@ -76,7 +76,7 @@ func000000000000001b:                   # @func000000000000001b
 	.short	32511                           # 0x7eff
 	.short	32511                           # 0x7eff
 	.short	32511                           # 0x7eff
-func000000000000008c:                   # @func000000000000008c
+func000000000000010c:                   # @func000000000000010c
 	vpcmpnleuw	.LCPI7_0(%rip), %xmm2, %k0
 	vpcmpneqd	%ymm1, %ymm0, %k1
 	korb	%k0, %k1, %k0

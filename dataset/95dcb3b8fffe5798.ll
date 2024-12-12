@@ -5,7 +5,7 @@
 ; oiio/optimized/environment.cpp.ll
 ; opencv/optimized/btv_l1.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000501(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000a01(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 376
   %3 = trunc i64 %2 to i32
@@ -23,7 +23,7 @@ entry:
 ; yosys/optimized/memory_share.ll
 ; yosys/optimized/simplify.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000726(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000e46(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 12
   %3 = trunc i64 %2 to i32
@@ -42,7 +42,7 @@ entry:
 ; llvm/optimized/X86FoldTablesEmitter.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000701(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000e01(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 96
   %3 = trunc i64 %2 to i32
@@ -56,7 +56,7 @@ entry:
 ; llvm/optimized/SubtargetEmitter.cpp.ll
 ; meshlab/optimized/trackmode.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000704(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000e04(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 6
   %3 = trunc i64 %2 to i32

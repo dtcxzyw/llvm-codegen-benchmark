@@ -12,12 +12,11 @@ entry:
   ret i32 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; graphviz/optimized/ortho.c.ll
 ; opencv/optimized/edge_drawing.cpp.ll
 ; php/optimized/zend_operators.ll
 ; postgres/optimized/geo_spgist.ll
-; postgres/optimized/geqo_pool.ll
 ; postgres/optimized/spgkdtreeproc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i1 %0, double %1, double %2) #0 {

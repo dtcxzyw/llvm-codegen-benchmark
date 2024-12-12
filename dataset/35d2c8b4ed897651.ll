@@ -7,7 +7,7 @@ define i64 @func0000000000000004(i64 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %1, %2
   %4 = sext i1 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -18,7 +18,7 @@ define i64 @func0000000000000025(i64 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp uge i8 %1, %2
   %4 = sext i1 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 

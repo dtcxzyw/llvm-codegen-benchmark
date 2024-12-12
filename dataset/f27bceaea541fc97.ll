@@ -3,7 +3,7 @@
 ; hermes/optimized/Host.cpp.ll
 ; llvm/optimized/Host.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000190(i32 %0, i32 %1) #0 {
+define i8 @func0000000000000310(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = icmp ne i32 %2, 0

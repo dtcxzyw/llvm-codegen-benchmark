@@ -1,8 +1,9 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; darktable/optimized/introspection_colorchecker.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
+; stockfish/optimized/tbprobe.ll
 ; Function Attrs: nounwind
 define ptr @func00000000000000fc(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -66,7 +67,22 @@ entry:
   ret ptr %6
 }
 
-; 42 occurrences:
+; 4 occurrences:
+; darktable/optimized/introspection_cacorrect.c.ll
+; darktable/optimized/introspection_highlights.c.ll
+; darktable/optimized/introspection_rawprepare.c.ll
+; ncnn/optimized/pooling3d.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000050(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nsw i64 %2, 2
+  %4 = add nsw i64 %3, 4
+  %5 = mul i64 %4, %1
+  %6 = getelementptr i8, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 43 occurrences:
 ; casadi/optimized/convexify.cpp.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; casadi/optimized/sqpmethod.cpp.ll
@@ -108,6 +124,7 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; quantlib/optimized/qrdecomposition.ll
+; quantlib/optimized/tapcorrelations.ll
 ; stat-rs/optimized/11haqsqxcf11j877.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
@@ -181,20 +198,6 @@ entry:
   ret ptr %6
 }
 
-; 3 occurrences:
-; darktable/optimized/introspection_cacorrect.c.ll
-; darktable/optimized/introspection_highlights.c.ll
-; darktable/optimized/introspection_rawprepare.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000050(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl nsw i64 %2, 2
-  %4 = add nsw i64 %3, -4
-  %5 = mul i64 %4, %1
-  %6 = getelementptr i8, ptr %0, i64 %5
-  ret ptr %6
-}
-
 ; 1 occurrences:
 ; lightgbm/optimized/train_share_states.cpp.ll
 ; Function Attrs: nounwind
@@ -226,7 +229,7 @@ define ptr @func00000000000000f6(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 1
   %4 = add nuw nsw i64 %3, 2
-  %5 = mul nsw i64 %4, %1
+  %5 = mul nsw i64 %1, %4
   %6 = getelementptr nusw double, ptr %0, i64 %5
   ret ptr %6
 }

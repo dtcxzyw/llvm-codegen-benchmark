@@ -1,8 +1,9 @@
 
-; 50 occurrences:
+; 51 occurrences:
 ; abseil-cpp/optimized/cordz_info_test.cc.ll
 ; arrow/optimized/grouper.cc.ll
 ; assimp/optimized/MMDPmxParser.cpp.ll
+; boost/optimized/benchmark_fstream.ll
 ; clamav/optimized/ole2_extract.c.ll
 ; clamav/optimized/readdb.c.ll
 ; cmake/optimized/cmCTest.cxx.ll
@@ -51,13 +52,13 @@
 ; xgboost/optimized/tree_model.cc.ll
 ; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0) #0 {
+define i1 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, -1
   ret i1 %1
 }
 
-; 59 occurrences:
+; 56 occurrences:
 ; abseil-cpp/optimized/cordz_test.cc.ll
 ; abseil-cpp/optimized/sequence_lock_test.cc.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
@@ -94,7 +95,6 @@ entry:
 ; luau/optimized/isocline.c.ll
 ; memcached/optimized/testapp.ll
 ; oniguruma/optimized/unicode.ll
-; openexr/optimized/ImfHuf.cpp.ll
 ; openjdk/optimized/compilerOracle.ll
 ; openssl/optimized/libcrypto-lib-bio_dump.ll
 ; openssl/optimized/libcrypto-lib-ec_mult.ll
@@ -109,16 +109,14 @@ entry:
 ; qemu/optimized/linux-user_strace.c.ll
 ; qemu/optimized/tcg.c.ll
 ; raylib/optimized/rtextures.c.ll
-; ruby/optimized/enumerator.ll
 ; ruby/optimized/parse.ll
 ; stb/optimized/stb_image_write.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; wireshark/optimized/tvbuff_lz77huff.c.ll
 ; yosys/optimized/rtlil_lexer.ll
-; z3/optimized/mpff.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0) #0 {
+define i1 @func0000000000000024(i32 %0) #0 {
 entry:
   %1 = sext i32 %0 to i64
   %2 = add nsw i64 %1, -2
@@ -162,7 +160,7 @@ entry:
 ; protobuf/optimized/wire_format.cc.ll
 ; xgboost/optimized/column_matrix.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0) #0 {
+define i1 @func0000000000000028(i32 %0) #0 {
 entry:
   %1 = sext i32 %0 to i64
   %2 = add i64 %1, -4611686018427387905
@@ -174,7 +172,7 @@ entry:
 ; clamav/optimized/readdb.c.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0) #0 {
+define i1 @func000000000000002c(i32 %0) #0 {
 entry:
   %1 = icmp ne i32 %0, 1
   ret i1 %1

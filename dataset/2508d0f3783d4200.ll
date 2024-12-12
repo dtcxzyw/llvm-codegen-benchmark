@@ -1,13 +1,10 @@
 
-; 11 occurrences:
+; 8 occurrences:
 ; libquic/optimized/des.c.ll
 ; lief/optimized/des.c.ll
 ; openssl/optimized/libcrypto-lib-des_enc.ll
-; openssl/optimized/libcrypto-lib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-shlib-des_enc.ll
-; openssl/optimized/libcrypto-shlib-fcrypt_b.ll
 ; openssl/optimized/liblegacy-lib-des_enc.ll
-; openssl/optimized/liblegacy-lib-fcrypt_b.ll
 ; ozz-animation/optimized/animation.cc.ll
 ; ozz-animation/optimized/raw_animation_archive.cc.ll
 ; ozz-animation/optimized/raw_track.cc.ll

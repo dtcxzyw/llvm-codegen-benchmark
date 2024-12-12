@@ -1,21 +1,18 @@
 
-; 26 occurrences:
+; 23 occurrences:
 ; abc/optimized/wlcMem.c.ll
 ; abseil-cpp/optimized/numbers.cc.ll
 ; cpython/optimized/obmalloc.ll
 ; gromacs/optimized/gmx_bundle.cpp.ll
 ; linux/optimized/printk.ll
-; linux/optimized/uptime.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; meshlab/optimized/io_u3d.cpp.ll
 ; mimalloc/optimized/stats.c.ll
 ; oiio/optimized/Writer.cpp.ll
 ; openspiel/optimized/catch_test.cc.ll
 ; openssl/optimized/libcrypto-lib-bss_dgram.ll
-; openssl/optimized/libcrypto-lib-ct_prn.ll
 ; openssl/optimized/libcrypto-lib-ts_rsp_sign.ll
 ; openssl/optimized/libcrypto-shlib-bss_dgram.ll
-; openssl/optimized/libcrypto-shlib-ct_prn.ll
 ; openssl/optimized/libcrypto-shlib-ts_rsp_sign.ll
 ; openssl/optimized/libssl-lib-d1_lib.ll
 ; openssl/optimized/libssl-lib-quic_impl.ll
@@ -35,8 +32,10 @@ entry:
   ret i64 %3
 }
 
-; 23 occurrences:
+; 25 occurrences:
 ; assimp/optimized/RawLoader.cpp.ll
+; boost/optimized/target.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/nghttp2_session.c.ll
 ; coreutils-rs/optimized/yiho3rob7ld9k5q.ll
 ; cpython/optimized/dictobject.ll
@@ -68,7 +67,7 @@ entry:
   ret i64 %3
 }
 
-; 18 occurrences:
+; 16 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
@@ -78,11 +77,9 @@ entry:
 ; delta-rs/optimized/11w0at10aiwuq3yr.ll
 ; linux/optimized/inotify_user.ll
 ; linux/optimized/mmap.ll
-; linux/optimized/scsicam.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; memcached/optimized/memcached-itoa_ljust.ll
 ; memcached/optimized/memcached_debug-itoa_ljust.ll
-; qemu/optimized/system_cpu-throttle.c.ll
 ; rocksdb/optimized/string_util.cc.ll
 ; ruby/optimized/time.ll
 ; wireshark/optimized/packet-netmon.c.ll
@@ -96,13 +93,14 @@ entry:
   ret i64 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; oiio/optimized/Codec.cpp.ll
+; php/optimized/unixtime2tm.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0) #0 {
 entry:
   %1 = trunc nsw i64 %0 to i32
-  %2 = udiv i32 %1, 3
+  %2 = udiv i32 %1, 3600
   %3 = zext nneg i32 %2 to i64
   ret i64 %3
 }

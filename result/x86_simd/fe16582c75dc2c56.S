@@ -51,17 +51,17 @@ func0000000000000006:                   # @func0000000000000006
 	retq
 .LCPI6_0:
 	.zero	16,1
-func0000000000000018:                   # @func0000000000000018
+func0000000000000002:                   # @func0000000000000002
 	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpleps	%zmm0, %zmm1, %k1
+	vcmpunordps	%zmm1, %zmm0, %k1
 	vmovdqu8	.LCPI6_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
 	vzeroupper
 	retq
 .LCPI7_0:
 	.zero	16,1
-func0000000000000002:                   # @func0000000000000002
+func0000000000000018:                   # @func0000000000000018
 	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpunordps	%zmm1, %zmm0, %k1
+	vcmpleps	%zmm0, %zmm1, %k1
 	vmovdqu8	.LCPI7_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
 	vzeroupper
 	retq

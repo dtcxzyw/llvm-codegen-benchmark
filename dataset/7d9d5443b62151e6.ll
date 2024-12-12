@@ -1,6 +1,7 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; abseil-cpp/optimized/int128_test.cc.ll
+; boost/optimized/approximately_equals.ll
 ; libquic/optimized/p256-64.c.ll
 ; qemu/optimized/hw_virtio_vhost-vdpa.c.ll
 ; spike/optimized/vmadc_vi.ll

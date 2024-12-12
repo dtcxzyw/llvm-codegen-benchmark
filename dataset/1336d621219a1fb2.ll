@@ -1,8 +1,7 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; casadi/optimized/cvodes_spils.c.ll
 ; casadi/optimized/idas_spils.c.ll
-; casadi/optimized/kinsol_spils.c.ll
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; openusd/optimized/stbImage.cpp.ll
@@ -18,7 +17,7 @@ entry:
   %3 = mul nsw i32 %1, %2
   %4 = sext i32 %3 to i64
   %5 = add nsw i64 %4, 1
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 

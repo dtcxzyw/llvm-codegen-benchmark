@@ -1,4 +1,4 @@
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	andl	$1, %edx
 	decl	%edx
 	orl	$1, %edx
@@ -12,7 +12,7 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	%esi, %eax
 	sete	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	andl	$1, %edx
 	shll	$5, %edx
 	leal	32(%rdx,%rdi), %eax

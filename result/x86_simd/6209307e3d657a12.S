@@ -6,5 +6,5 @@ func0000000000000000:                   # @func0000000000000000
 	vpcmpnltd	%xmm3, %xmm0, %k1
 	vpmovsxdq	%xmm2, %ymm2
 	vpbroadcastq	.LCPI0_0(%rip), %ymm0   # ymm0 = [3000000,3000000,3000000,3000000]
-	vpaddq	%ymm1, %ymm2, %ymm0 {%k1}
+	vpaddq	%ymm2, %ymm1, %ymm0 {%k1}
 	retq

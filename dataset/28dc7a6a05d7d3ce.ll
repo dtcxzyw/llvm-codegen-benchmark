@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; libquic/optimized/curve25519.c.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
@@ -9,7 +9,6 @@
 ; openjdk/optimized/hb-ot-layout.ll
 ; openssl/optimized/libcrypto-lib-curve25519.ll
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
-; openusd/optimized/aom_image.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
@@ -20,10 +19,11 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; libpng/optimized/pngwrite.c.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; openusd/optimized/aom_image.c.ll
 ; qemu/optimized/block_qed.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i32 %0, i32 %1) #0 {
@@ -48,14 +48,13 @@ entry:
   ret i64 %5
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; libpng/optimized/pngrutil.c.ll
 ; libpng/optimized/pngwrite.c.ll
 ; libpng/optimized/pngwutil.c.ll
 ; linux/optimized/tcp_cubic.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; openjdk/optimized/pngrutil.ll
-; openusd/optimized/aom_image.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000b(i32 %0, i32 %1) #0 {
 entry:

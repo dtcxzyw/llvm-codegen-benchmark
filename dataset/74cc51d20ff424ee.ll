@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 17 occurrences:
 ; git/optimized/add.ll
 ; imgui/optimized/imgui_demo.cpp.ll
 ; linux/optimized/intel_dp_aux.ll
@@ -15,16 +15,15 @@
 ; llvm/optimized/RISCVPostLegalizerCombiner.cpp.ll
 ; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
 ; llvm/optimized/X86InstructionSelector.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; nanobind/optimized/nb_type.cpp.ll
 ; verilator/optimized/V3CCtors.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i32 %1, i1 %2) #0 {
 entry:
-  %3 = select i1 %2, i32 41, i32 39
+  %3 = select i1 %2, i32 0, i32 16
   %4 = or disjoint i32 %0, %1
   %5 = or disjoint i32 %4, %3
-  %6 = or disjoint i32 %5, 256
+  %6 = or disjoint i32 %5, 8
   ret i32 %6
 }
 

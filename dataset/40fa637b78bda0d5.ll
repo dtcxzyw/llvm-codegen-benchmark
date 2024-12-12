@@ -9,13 +9,13 @@
 ; protobuf/optimized/text_format.cc.ll
 ; rocksdb/optimized/version_set.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000086(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = sdiv exact i64 %4, 80
   %6 = trunc i64 %5 to i32
-  %7 = icmp slt i32 %6, %0
+  %7 = icmp sgt i32 %0, %6
   ret i1 %7
 }
 
@@ -23,13 +23,13 @@ entry:
 ; minetest/optimized/inventorymanager.cpp.ll
 ; minetest/optimized/player.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000088(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = sdiv exact i64 %4, 312
   %6 = trunc i64 %5 to i32
-  %7 = icmp ugt i32 %6, %0
+  %7 = icmp ult i32 %0, %6
   ret i1 %7
 }
 
@@ -43,13 +43,13 @@ entry:
 ; yosys/optimized/viz.ll
 ; yosys/optimized/xilinx_dsp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000008a(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = sdiv exact i64 %4, 312
   %6 = trunc i64 %5 to i32
-  %7 = icmp sgt i32 %6, %0
+  %7 = icmp slt i32 %0, %6
   ret i1 %7
 }
 
@@ -67,26 +67,26 @@ entry:
 ; yosys/optimized/muxcover.ll
 ; yosys/optimized/opt_lut.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000081(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = sdiv exact i64 %4, 12
   %6 = trunc i64 %5 to i32
-  %7 = icmp eq i32 %6, %0
+  %7 = icmp eq i32 %0, %6
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; yosys/optimized/equiv_make.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000008c(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = sdiv exact i64 %4, 80
   %6 = trunc i64 %5 to i32
-  %7 = icmp ne i32 %6, %0
+  %7 = icmp ne i32 %0, %6
   ret i1 %7
 }
 
@@ -94,26 +94,26 @@ entry:
 ; linux/optimized/virtio_net.ll
 ; llvm/optimized/Gnu.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000084(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = sdiv exact i64 %4, 192
   %6 = trunc i64 %5 to i32
-  %7 = icmp ult i32 %6, %0
+  %7 = icmp ugt i32 %0, %6
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; linux/optimized/indirect.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000047(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000087(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = sdiv exact i64 %4, 24
   %6 = trunc i64 %5 to i32
-  %7 = icmp sle i32 %6, %0
+  %7 = icmp sge i32 %0, %6
   ret i1 %7
 }
 

@@ -27,7 +27,8 @@ func000000000000000a:                   # @func000000000000000a
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfle.vf	v0, v8, fa5
-	vmerge.vim	v8, v8, 0, v0
+	lui	a0, 267264
+	vmerge.vxm	v8, v8, a0, v0
 	ret
 .LCPI5_0:
 	.word	0xdd5e0b6b                      # float -9.99999984E+17

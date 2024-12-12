@@ -9,7 +9,7 @@
 ; wireshark/optimized/packet-ms-do.c.ll
 ; wireshark/optimized/packet-per.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000078(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000d8(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %0, %1
   %3 = and i32 %2, 1
@@ -20,7 +20,7 @@ entry:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000062(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000c2(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %0, -1
   %3 = lshr i32 %2, %1
@@ -35,10 +35,10 @@ entry:
 ; abc/optimized/satSolver3.c.ll
 ; z3/optimized/sat_aig_cuts.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000042(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000082(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 3, %1
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp eq i32 %3, 0
   %5 = zext i1 %4 to i32
   ret i32 %5
@@ -54,7 +54,7 @@ entry:
 ; z3/optimized/tbv.cpp.ll
 ; z3/optimized/udoc_relation.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000058(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000098(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %0, %1
   %3 = and i32 %2, 1
@@ -67,7 +67,7 @@ entry:
 define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 2, %1
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp ne i32 %3, 0
   %5 = zext i1 %4 to i32
   ret i32 %5

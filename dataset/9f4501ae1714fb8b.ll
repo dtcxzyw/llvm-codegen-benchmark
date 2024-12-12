@@ -1,16 +1,14 @@
 
-; 28 occurrences:
+; 25 occurrences:
 ; abc/optimized/abcRec3.c.ll
-; flatbuffers/optimized/flatc.cpp.ll
+; boost/optimized/to_chars.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; linux/optimized/mmconfig-shared.ll
-; linux/optimized/rpl.ll
 ; llvm/optimized/X86InstrFMA3Info.cpp.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; meilisearch-rs/optimized/4rynht2gwvphprvy.ll
-; ncnn/optimized/lstm_x86_avx512vnni.cpp.ll
-; ncnn/optimized/lstm_x86_avxvnni.cpp.ll
 ; opencv/optimized/tldEnsembleClassifier.cpp.ll
 ; openssl/optimized/libssl-lib-quic_impl.ll
 ; openssl/optimized/libssl-lib-quic_rx_depack.ll
@@ -27,7 +25,6 @@
 ; wasmedge/optimized/executor.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; wireshark/optimized/packet-erf.c.ll
-; wireshark/optimized/packet-sdh.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i64 %0) #0 {
 entry:
@@ -53,20 +50,8 @@ entry:
   ret i8 %3
 }
 
-; 3 occurrences:
-; duckdb/optimized/ub_duckdb_execution_index_art.cpp.ll
-; ncnn/optimized/lstm_x86_avx512vnni.cpp.ll
-; ncnn/optimized/lstm_x86_avxvnni.cpp.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000008(i64 %0) #0 {
-entry:
-  %1 = lshr i64 %0, 56
-  %2 = trunc nuw i64 %1 to i8
-  %3 = add i8 %2, 127
-  ret i8 %3
-}
-
-; 18 occurrences:
+; 24 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -85,6 +70,11 @@ entry:
 ; lightgbm/optimized/tree.cpp.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/4hgzf672qwd8x8ke1407yey6m.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000000f(i64 %0) #0 {
 entry:
@@ -128,6 +118,28 @@ entry:
   %1 = lshr i64 %0, 2
   %2 = trunc i64 %1 to i8
   %3 = add nuw i8 %2, 1
+  ret i8 %3
+}
+
+; 1 occurrences:
+; duckdb/optimized/ub_duckdb_execution_index_art.cpp.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000008(i64 %0) #0 {
+entry:
+  %1 = lshr i64 %0, 56
+  %2 = trunc nuw i64 %1 to i8
+  %3 = add i8 %2, -3
+  ret i8 %3
+}
+
+; 1 occurrences:
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000003(i64 %0) #0 {
+entry:
+  %1 = lshr i64 %0, 6
+  %2 = trunc i64 %1 to i8
+  %3 = add nuw nsw i8 %2, -64
   ret i8 %3
 }
 

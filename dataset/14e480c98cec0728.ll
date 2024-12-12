@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 19 occurrences:
 ; abc/optimized/giaIff.c.ll
 ; abseil-cpp/optimized/generate_real_test.cc.ll
 ; eastl/optimized/TestTupleVector.cpp.ll
@@ -18,15 +18,16 @@
 ; raylib/optimized/rtext.c.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(float %0, float %1, float %2) #0 {
 entry:
   %3 = fadd float %1, %2
-  %4 = fcmp oeq float %3, %0
+  %4 = fcmp oeq float %0, %3
   ret i1 %4
 }
 
-; 117 occurrences:
+; 126 occurrences:
 ; abc/optimized/abcIfif.c.ll
 ; abc/optimized/abcSpeedup.c.ll
 ; abc/optimized/abcTiming.c.ll
@@ -117,7 +118,10 @@ entry:
 ; opencv/optimized/histogram.cpp.ll
 ; opencv/optimized/model.cpp.ll
 ; opencv/optimized/objects_associator.cpp.ll
+; opencv/optimized/short_term_imageless_tracker.cpp.ll
 ; opencv/optimized/subdivision2d.cpp.ll
+; opencv/optimized/tracker.cpp.ll
+; opencv/optimized/zero_term_imageless_tracker.cpp.ll
 ; openjdk/optimized/ProcessPath.ll
 ; openjdk/optimized/ShapeSpanIterator.ll
 ; ozz-animation/optimized/gltf2ozz.cc.ll
@@ -144,11 +148,17 @@ entry:
 ; xgboost/optimized/quantile.cc.ll
 ; yoga/optimized/AbsoluteLayout.cpp.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
+; zed-rs/optimized/1cn7xv4w6dvhmserny8iqmdc3.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(float %0, float %1, float %2) #0 {
 entry:
   %3 = fadd float %1, %2
-  %4 = fcmp ogt float %3, %0
+  %4 = fcmp olt float %0, %3
   ret i1 %4
 }
 
@@ -164,11 +174,11 @@ entry:
 define i1 @func000000000000000d(float %0, float %1, float %2) #0 {
 entry:
   %3 = fadd float %1, %2
-  %4 = fcmp ule float %3, %0
+  %4 = fcmp uge float %0, %3
   ret i1 %4
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; darktable/optimized/introspection_blurs.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; imgui/optimized/imgui.cpp.ll
@@ -178,15 +188,16 @@ entry:
 ; mitsuba3/optimized/principled.cpp.ll
 ; mitsuba3/optimized/principledthin.cpp.ll
 ; openjdk/optimized/hb-paint-extents.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(float %0, float %1, float %2) #0 {
 entry:
   %3 = fadd float %1, %2
-  %4 = fcmp ole float %3, %0
+  %4 = fcmp oge float %0, %3
   ret i1 %4
 }
 
-; 10 occurrences:
+; 16 occurrences:
 ; darktable/optimized/introspection_lens.cc.ll
 ; darktable/optimized/introspection_sigmoid.c.ll
 ; gromacs/optimized/pairlist.cpp.ll
@@ -197,22 +208,27 @@ entry:
 ; ocio/optimized/FixedFunctionOpCPU.cpp.ll
 ; recastnavigation/optimized/RecastArea.cpp.ll
 ; xgboost/optimized/quantile.cc.ll
+; zed-rs/optimized/130afw1833d1gu50165ly3xmm.ll
+; zed-rs/optimized/1cn7xv4w6dvhmserny8iqmdc3.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000003(float %0, float %1, float %2) #0 {
 entry:
   %3 = fadd float %1, %2
-  %4 = fcmp ugt float %3, %0
+  %4 = fcmp ult float %0, %3
   ret i1 %4
 }
 
-; 139 occurrences:
+; 143 occurrences:
 ; abc/optimized/abcIfif.c.ll
 ; abc/optimized/amapMatch.c.ll
 ; abc/optimized/giaIff.c.ll
 ; abc/optimized/ifCut.c.ll
 ; abc/optimized/ifMap.c.ll
 ; abc/optimized/ifReduce.c.ll
-; abc/optimized/ifSeq.c.ll
 ; abc/optimized/ifTime.c.ll
 ; abc/optimized/mapperMatch.c.ll
 ; abc/optimized/mapperTime.c.ll
@@ -251,7 +267,6 @@ entry:
 ; faiss/optimized/ProductQuantizer.cpp.ll
 ; graphviz/optimized/dijkstra.c.ll
 ; gromacs/optimized/pairlist.cpp.ll
-; gromacs/optimized/slanst.cpp.ll
 ; gromacs/optimized/slarrex.cpp.ll
 ; gromacs/optimized/slasd4.cpp.ll
 ; gromacs/optimized/slasq2.cpp.ll
@@ -345,23 +360,30 @@ entry:
 ; recastnavigation/optimized/DetourNavMeshBuilder.cpp.ll
 ; xgboost/optimized/quantile.cc.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
+; zed-rs/optimized/1cn7xv4w6dvhmserny8iqmdc3.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(float %0, float %1, float %2) #0 {
 entry:
   %3 = fadd float %1, %2
-  %4 = fcmp olt float %3, %0
+  %4 = fcmp ogt float %0, %3
   ret i1 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; actix-rs/optimized/1v3445utu4y7ica.ll
 ; llvm/optimized/CalcSpillWeights.cpp.ll
+; lvgl/optimized/lv_chart.ll
 ; minetest/optimized/player_sao.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000007(float %0, float %1, float %2) #0 {
 entry:
   %3 = fadd float %1, %2
-  %4 = fcmp une float %3, %0
+  %4 = fcmp une float %0, %3
   ret i1 %4
 }
 
@@ -372,11 +394,11 @@ entry:
 define i1 @func000000000000000e(float %0, float %1, float %2) #0 {
 entry:
   %3 = fadd float %1, %2
-  %4 = fcmp ord float %3, %0
+  %4 = fcmp ord float %0, %3
   ret i1 %4
 }
 
-; 29 occurrences:
+; 37 occurrences:
 ; abc/optimized/ifMap.c.ll
 ; box2d/optimized/b2_collide_edge.cpp.ll
 ; box2d/optimized/b2_collide_polygon.cpp.ll
@@ -394,6 +416,7 @@ entry:
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; meshlab/optimized/edit_point.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
@@ -406,11 +429,18 @@ entry:
 ; pbrt-v4/optimized/shapes.cpp.ll
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_hexwave.c.ll
+; zed-rs/optimized/130afw1833d1gu50165ly3xmm.ll
+; zed-rs/optimized/1cn7xv4w6dvhmserny8iqmdc3.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/a5zoltfqgma86dzb1rp0ilkm9.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000005(float %0, float %1, float %2) #0 {
 entry:
   %3 = fadd float %1, %2
-  %4 = fcmp ult float %3, %0
+  %4 = fcmp ugt float %0, %3
   ret i1 %4
 }
 
@@ -428,7 +458,7 @@ entry:
 define i1 @func000000000000000a(float %0, float %1, float %2) #0 {
 entry:
   %3 = fadd float %1, %2
-  %4 = fcmp oge float %3, %0
+  %4 = fcmp ole float %0, %3
   ret i1 %4
 }
 
@@ -440,7 +470,7 @@ entry:
 define i1 @func000000000000000b(float %0, float %1, float %2) #0 {
 entry:
   %3 = fadd float %1, %2
-  %4 = fcmp uge float %3, %0
+  %4 = fcmp ule float %0, %3
   ret i1 %4
 }
 

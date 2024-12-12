@@ -12,7 +12,7 @@ func000000000000000a:                   // @func000000000000000a
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	cmp	w1, #11
+	cmp	w1, #6
 	csel	x0, x0, xzr, lo
 	ret
                                         // -- End function

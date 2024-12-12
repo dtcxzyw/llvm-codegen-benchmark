@@ -1,5 +1,5 @@
 
-; 142 occurrences:
+; 141 occurrences:
 ; abc/optimized/extraUtilMemory.c.ll
 ; abc/optimized/giaExist.c.ll
 ; abc/optimized/mem.c.ll
@@ -104,7 +104,6 @@
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; bullet3/optimized/btSoftMultiBodyDynamicsWorld.ll
 ; bullet3/optimized/btSoftRigidDynamicsWorld.ll
-; bullet3/optimized/btSoftSoftCollisionAlgorithm.ll
 ; bullet3/optimized/btSphereBoxCollisionAlgorithm.ll
 ; bullet3/optimized/btSphereSphereCollisionAlgorithm.ll
 ; bullet3/optimized/btSphereTriangleCollisionAlgorithm.ll
@@ -143,7 +142,7 @@
 ; wireshark/optimized/packet-osi.c.ll
 ; xgboost/optimized/comm.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0) #0 {
+define i32 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = shl nsw i32 %0, 1
   %2 = icmp eq i32 %0, 0
@@ -211,45 +210,14 @@ entry:
   ret i32 %3
 }
 
-; 2 occurrences:
-; cpython/optimized/dtoa.ll
-; ruby/optimized/util.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000a(i32 %0) #0 {
-entry:
-  %1 = shl i32 %0, 20
-  %2 = icmp sgt i32 %0, 0
-  %3 = select i1 %2, i32 0, i32 %1
-  ret i32 %3
-}
-
-; 7 occurrences:
-; hermes/optimized/SmallPtrSet.cpp.ll
-; llvm/optimized/SmallPtrSet.cpp.ll
-; rocksdb/optimized/lock_request.cc.ll
-; rocksdb/optimized/locktree.cc.ll
-; rocksdb/optimized/manager.cc.ll
-; rocksdb/optimized/txnid_set.cc.ll
-; rocksdb/optimized/wfg.cc.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0) #0 {
-entry:
-  %1 = shl i32 %0, 1
-  %2 = icmp ult i32 %0, 3
-  %3 = select i1 %2, i32 4, i32 %1
-  ret i32 %3
-}
-
-; 7 occurrences:
-; c3c/optimized/decltable.c.ll
+; 5 occurrences:
+; boost/optimized/generator.ll
 ; c3c/optimized/symtab.c.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; linux/optimized/hda_codec.ll
-; luajit/optimized/lj_udata.ll
-; luajit/optimized/lj_udata_dyn.ll
 ; qemu/optimized/hw_net_cadence_gem.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0) #0 {
+define i32 @func0000000000000061(i32 %0) #0 {
 entry:
   %1 = shl nuw nsw i32 %0, 6
   %2 = icmp eq i32 %0, 0
@@ -257,109 +225,90 @@ entry:
   ret i32 %3
 }
 
-; 7 occurrences:
-; abc/optimized/giaFanout.c.ll
-; cmake/optimized/archive_read_support_format_iso9660.c.ll
-; icu/optimized/localeprioritylist.ll
-; openblas/optimized/dgesvdq.c.ll
-; opencv/optimized/apriltag_quad_thresh.cpp.ll
-; opencv/optimized/array.cpp.ll
-; redis/optimized/module.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0) #0 {
-entry:
-  %1 = shl nsw i32 %0, 1
-  %2 = icmp slt i32 %0, 2048
-  %3 = select i1 %2, i32 4096, i32 %1
-  ret i32 %3
-}
-
-; 8 occurrences:
+; 39 occurrences:
+; abc/optimized/abcExact.c.ll
+; abc/optimized/abcGen.c.ll
+; abc/optimized/abcIf.c.ll
+; abc/optimized/abcRec3.c.ll
+; abc/optimized/abcStrash.c.ll
+; abc/optimized/abcUtil.c.ll
+; abc/optimized/absRpm.c.ll
+; abc/optimized/acecFadds.c.ll
+; abc/optimized/bacBlast.c.ll
+; abc/optimized/cnfWrite.c.ll
+; abc/optimized/extraUtilEnum.c.ll
+; abc/optimized/giaAiger.c.ll
+; abc/optimized/giaDup.c.ll
+; abc/optimized/giaFrames.c.ll
+; abc/optimized/giaMf.c.ll
+; abc/optimized/giaMini.c.ll
+; abc/optimized/giaNf.c.ll
+; abc/optimized/giaResub.c.ll
+; abc/optimized/giaSatLE.c.ll
+; abc/optimized/giaSplit.c.ll
+; abc/optimized/giaStg.c.ll
+; abc/optimized/giaStoch.c.ll
+; abc/optimized/ioReadAiger.c.ll
+; abc/optimized/ioReadBaf.c.ll
+; abc/optimized/ioReadBlif.c.ll
+; abc/optimized/ioaReadAig.c.ll
+; abc/optimized/pdrInv.c.ll
+; abc/optimized/sclSize.c.ll
+; abc/optimized/sfmDec.c.ll
+; abc/optimized/sswRarity.c.ll
+; abc/optimized/utilBridge.c.ll
+; abc/optimized/wlcReadVer.c.ll
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
 ; git/optimized/object.ll
 ; libevent/optimized/event.c.ll
 ; libevent/optimized/evmap.c.ll
 ; libevent/optimized/poll.c.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/zmaxheap.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000036(i32 %0) #0 {
+define i32 @func0000000000000066(i32 %0) #0 {
 entry:
   %1 = shl nuw nsw i32 %0, 1
-  %2 = icmp slt i32 %0, 32
-  %3 = select i1 %2, i32 32, i32 %1
+  %2 = icmp slt i32 %0, 16
+  %3 = select i1 %2, i32 16, i32 %1
   ret i32 %3
 }
 
-; 5 occurrences:
-; icu/optimized/edits.ll
-; libzmq/optimized/stream_connecter_base.cpp.ll
-; memcached/optimized/memcached-slabs.ll
-; memcached/optimized/memcached_debug-slabs.ll
-; slurm/optimized/container.ll
+; 4 occurrences:
+; abc/optimized/utilNam.c.ll
+; cmake/optimized/archive_read_support_format_iso9660.c.ll
+; icu/optimized/localeprioritylist.ll
+; openblas/optimized/dgesvdq.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0) #0 {
+define i32 @func0000000000000026(i32 %0) #0 {
 entry:
   %1 = shl nsw i32 %0, 1
-  %2 = icmp sgt i32 %0, 500
-  %3 = select i1 %2, i32 1000, i32 %1
+  %2 = icmp slt i32 %0, 1
+  %3 = select i1 %2, i32 16, i32 %1
+  ret i32 %3
+}
+
+; 3 occurrences:
+; icu/optimized/edits.ll
+; libzmq/optimized/stream_connecter_base.cpp.ll
+; slurm/optimized/container.ll
+; Function Attrs: nounwind
+define i32 @func000000000000002a(i32 %0) #0 {
+entry:
+  %1 = shl nsw i32 %0, 1
+  %2 = icmp sgt i32 %0, 1000000
+  %3 = select i1 %2, i32 1000000, i32 %1
   ret i32 %3
 }
 
 ; 1 occurrences:
-; slurm/optimized/preempt_qos.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000028(i32 %0) #0 {
-entry:
-  %1 = shl nuw i32 %0, 16
-  %2 = icmp ugt i32 %0, 65534
-  %3 = select i1 %2, i32 -65536, i32 %1
-  ret i32 %3
-}
-
-; 2 occurrences:
-; clamav/optimized/str.c.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0) #0 {
 entry:
-  %1 = shl i32 %0, 12
+  %1 = shl i32 %0, 2
   %2 = icmp slt i32 %0, 0
-  %3 = select i1 %2, i32 0, i32 %1
-  ret i32 %3
-}
-
-; 1 occurrences:
-; z3/optimized/theory_str_regex.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000026(i32 %0) #0 {
-entry:
-  %1 = shl nuw i32 %0, 1
-  %.inv = icmp sgt i32 %0, -1
-  %2 = select i1 %.inv, i32 %1, i32 -1
-  ret i32 %2
-}
-
-; 1 occurrences:
-; postgres/optimized/varlena.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0) #0 {
-entry:
-  %1 = shl nuw nsw i32 %0, 1
-  %2 = icmp ult i32 %0, 4
-  %3 = select i1 %2, i32 8, i32 %1
-  ret i32 %3
-}
-
-; 1 occurrences:
-; opencv/optimized/filter.dispatch.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0) #0 {
-entry:
-  %1 = shl nuw nsw i32 %0, 3
-  %2 = icmp ugt i32 %0, 3
-  %3 = select i1 %2, i32 24, i32 %1
+  %3 = select i1 %2, i32 4, i32 %1
   ret i32 %3
 }
 

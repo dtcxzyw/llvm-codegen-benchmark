@@ -8,14 +8,14 @@ func000000000000000c:                   # @func000000000000000c
 	leal	2(%rax,%rdi), %eax
 	cltq
 	retq
-func000000000000000d:                   # @func000000000000000d
-	andl	$-2, %esi
-	leal	2(%rsi,%rdi), %eax
-	cltq
-	retq
 func0000000000000005:                   # @func0000000000000005
 	movzwl	%si, %eax
 	leal	-1(%rax,%rdi), %eax
+	cltq
+	retq
+func000000000000000d:                   # @func000000000000000d
+	andl	$131056, %esi                   # imm = 0x1FFF0
+	leal	24(%rsi,%rdi), %eax
 	cltq
 	retq
 func0000000000000008:                   # @func0000000000000008

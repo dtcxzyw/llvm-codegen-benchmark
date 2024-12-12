@@ -1,6 +1,0 @@
-func0000000000000000:                   # @func0000000000000000
-	movl	%edi, %eax
-	orl	%esi, %eax
-	andb	$1, %al
-	shlb	$6, %al
-	retq

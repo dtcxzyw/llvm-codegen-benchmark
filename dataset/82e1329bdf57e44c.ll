@@ -14,7 +14,7 @@ entry:
   ret i64 %6
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; cmake/optimized/zstd_compress_sequences.c.ll
 ; faiss/optimized/utils.cpp.ll
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
@@ -31,6 +31,7 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; slurm/optimized/job_mgr.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; zstd/optimized/zstd_compress_sequences.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {

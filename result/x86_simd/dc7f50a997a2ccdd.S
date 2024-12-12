@@ -42,18 +42,9 @@ func0000000000000003:                   # @func0000000000000003
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
-.LCPI1_1:
-	.short	257                             # 0x101
-	.short	257                             # 0x101
-	.short	257                             # 0x101
-	.short	257                             # 0x101
-	.zero	2
-	.zero	2
-	.zero	2
-	.zero	2
 func0000000000000002:                   # @func0000000000000002
 	vpmovqw	%ymm0, %xmm0
 	vpand	.LCPI1_0(%rip), %xmm0, %xmm0
-	vpmullw	.LCPI1_1(%rip), %xmm0, %xmm0    # [257,257,257,257,u,u,u,u]
+	vpmullw	.LCPI1_0(%rip), %xmm0, %xmm0
 	vzeroupper
 	retq

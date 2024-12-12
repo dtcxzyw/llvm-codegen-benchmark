@@ -12,6 +12,10 @@ func0000000000000001:                   # @func0000000000000001
 	sh3add	a0, a1, a0
 	sext.w	a0, a0
 	ret
+func000000000000001f:                   # @func000000000000001f
+	slli	a0, a0, 4
+	addiw	a0, a0, 24
+	ret
 func0000000000000019:                   # @func0000000000000019
 	slli	a0, a0, 3
 	addiw	a0, a0, 12
@@ -34,10 +38,6 @@ func000000000000000b:                   # @func000000000000000b
 func0000000000000003:                   # @func0000000000000003
 	slli	a0, a0, 1
 	addiw	a0, a0, 7
-	ret
-func000000000000001f:                   # @func000000000000001f
-	slli	a0, a0, 1
-	addiw	a0, a0, 5
 	ret
 func000000000000000f:                   # @func000000000000000f
 	slli	a0, a0, 1

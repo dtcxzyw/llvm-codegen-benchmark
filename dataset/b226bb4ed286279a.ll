@@ -1,9 +1,13 @@
 
-; 4 occurrences:
+; 8 occurrences:
 ; lief/optimized/NoteGnuProperty.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/BlockFrequencyInfoImpl.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/1b5ll0cnnio0vvxmolgooij5i.ll
+; zed-rs/optimized/553y3uma3m7pxzk4dar8hjwb6.ll
+; zed-rs/optimized/bkz8gk2grsqnr2xbkvtnqlfhe.ll
 ; Function Attrs: nounwind
 define { i64, i8 } @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:

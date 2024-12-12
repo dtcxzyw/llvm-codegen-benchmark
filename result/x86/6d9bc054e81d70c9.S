@@ -16,12 +16,3 @@ func0000000000000007:                   # @func0000000000000007
 	vmovsd	%xmm0, %xmm1, %xmm1 {%k1}
 	vmovapd	%xmm1, %xmm0
 	retq
-.LCPI2_0:
-	.quad	0x3fe0000000000000              # double 0.5
-func0000000000000004:                   # @func0000000000000004
-	vaddsd	.LCPI2_0(%rip), %xmm2, %xmm2
-	vxorpd	%xmm3, %xmm3, %xmm3
-	vcmpltsd	%xmm2, %xmm3, %k1
-	vmovsd	%xmm0, %xmm1, %xmm1 {%k1}
-	vmovapd	%xmm1, %xmm0
-	retq

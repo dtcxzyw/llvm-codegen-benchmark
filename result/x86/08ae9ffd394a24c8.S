@@ -13,7 +13,7 @@ func0000000000000002:                   # @func0000000000000002
 	orl	%edi, %eax
 	orl	$1024, %eax                     # imm = 0x400
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000031:                   # @func0000000000000031
 	movzbl	%dil, %eax
 	xorl	%ecx, %ecx
 	cmpl	$7, %eax

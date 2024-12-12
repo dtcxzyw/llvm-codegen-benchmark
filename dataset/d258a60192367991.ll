@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 23 occurrences:
 ; rust-analyzer-rs/optimized/13whla2w760i0ne3.ll
 ; rust-analyzer-rs/optimized/1j91i64oabb508eh.ll
 ; rust-analyzer-rs/optimized/1lnhy2v45voxjwry.ll
@@ -22,8 +22,9 @@
 ; rust-analyzer-rs/optimized/sdlo5r5xb34d3pv.ll
 ; wasmtime-rs/optimized/3tukmgwo6vemwvwz.ll
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000029(i32 %0) #0 {
+define i64 @func0000000000000049(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -3
   %2 = icmp ult i32 %1, 12
@@ -32,10 +33,8 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; luau/optimized/Parser.cpp.ll
-; redis/optimized/arena.ll
-; redis/optimized/arena.sym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i32 %0) #0 {
 entry:
@@ -46,9 +45,8 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; hermes/optimized/JSParserImpl-flow.cpp.ll
-; icu/optimized/hebrwcal.ll
 ; llvm/optimized/TargetMachineC.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000009(i32 %0) #0 {

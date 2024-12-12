@@ -28,16 +28,15 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; linux/optimized/maple_tree.ll
-; qemu/optimized/hw_pci_shpc.c.ll
 ; qemu/optimized/tcg.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001b(i32 %0) #0 {
 entry:
-  %1 = shl i32 %0, 2
-  %2 = and i32 %1, 124
-  %3 = add nsw i32 %2, -4
+  %1 = shl i32 %0, 3
+  %2 = and i32 %1, 2040
+  %3 = add nsw i32 %2, -48
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }

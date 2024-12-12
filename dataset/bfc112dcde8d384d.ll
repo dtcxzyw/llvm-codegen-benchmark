@@ -1,8 +1,7 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; clamav/optimized/bytecode_vm.c.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
-; linux/optimized/rsmisc.ll
 ; linux/optimized/trace_eprobe.ll
 ; linux/optimized/trace_kprobe.ll
 ; linux/optimized/trace_uprobe.ll
@@ -53,8 +52,7 @@ entry:
   ret i8 %4
 }
 
-; 2 occurrences:
-; linux/optimized/rsmisc.ll
+; 1 occurrences:
 ; wireshark/optimized/packet-mtp2.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000018(i32 %0, i8 %1) #0 {

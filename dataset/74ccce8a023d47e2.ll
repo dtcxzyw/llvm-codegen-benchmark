@@ -1,10 +1,11 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; hyperscan/optimized/compiler.cpp.ll
 ; linux/optimized/uncore_snbep.ll
 ; llvm/optimized/AArch64AsmPrinter.cpp.ll
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
+; llvm/optimized/SanitizerSpecialCaseList.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i1 %0, i1 %1, i1 %2) #0 {
 entry:

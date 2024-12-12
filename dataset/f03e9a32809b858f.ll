@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/gc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 %1, %2
   %4 = urem i64 %3, %0
@@ -24,7 +24,8 @@ entry:
   ret i1 %5
 }
 
-; 11 occurrences:
+; 12 occurrences:
+; boost/optimized/within_pointlike_geometry.ll
 ; git/optimized/ws.ll
 ; hdf5/optimized/H5Shyper.c.ll
 ; lief/optimized/iostream.cpp.ll
@@ -49,7 +50,7 @@ entry:
 ; quantlib/optimized/multistepperiodcapletswaptions.ll
 ; wasmtime-rs/optimized/4qgt4edt0wnnlcua.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
   %4 = urem i64 %3, %0
@@ -63,7 +64,7 @@ entry:
 ; linux/optimized/drm_dsc_helper.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = urem i64 %3, %0
@@ -74,7 +75,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/dm-stats.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000004c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
   %4 = urem i64 %3, %0

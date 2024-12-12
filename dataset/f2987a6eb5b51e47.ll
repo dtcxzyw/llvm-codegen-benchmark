@@ -1,5 +1,5 @@
 
-; 90 occurrences:
+; 88 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; libpng/optimized/png.c.ll
 ; lief/optimized/File.cpp.ll
@@ -22,8 +22,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll

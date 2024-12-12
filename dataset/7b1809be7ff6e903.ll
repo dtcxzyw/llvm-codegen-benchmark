@@ -1,5 +1,5 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; llvm/optimized/GCOVProfiling.cpp.ll
 ; llvm/optimized/IRMover.cpp.ll
 ; llvm/optimized/LinkModules.cpp.ll
@@ -7,6 +7,7 @@
 ; llvm/optimized/MergeFunctions.cpp.ll
 ; llvm/optimized/WholeProgramDevirt.cpp.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000000f(i32 %0) #0 {
 entry:

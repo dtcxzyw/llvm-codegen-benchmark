@@ -66,9 +66,11 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; libwebp/optimized/pngdec.c.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1, i32 %2) #0 {
 entry:
@@ -78,11 +80,12 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; darktable/optimized/NefDecoder.cpp.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
-; openusd/optimized/aom_image.c.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
@@ -92,7 +95,7 @@ entry:
   ret i64 %5
 }
 
-; 45 occurrences:
+; 44 occurrences:
 ; cpython/optimized/unicodeobject.ll
 ; flac/optimized/decode.c.ll
 ; miniaudio/optimized/unity.c.ll
@@ -104,7 +107,6 @@ entry:
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
 ; ncnn/optimized/convolution_x86_avx2.cpp.ll
 ; ncnn/optimized/convolution_x86_avx512.cpp.ll
-; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
 ; ncnn/optimized/convolution_x86_fma.cpp.ll
 ; ncnn/optimized/deformableconv2d_x86.cpp.ll
 ; ncnn/optimized/deformableconv2d_x86_avx.cpp.ll
@@ -147,7 +149,7 @@ entry:
   ret i64 %5
 }
 
-; 21 occurrences:
+; 20 occurrences:
 ; darktable/optimized/introspection_clahe.c.ll
 ; darktable/optimized/introspection_lens.cc.ll
 ; darktable/optimized/introspection_rotatepixels.c.ll
@@ -168,7 +170,6 @@ entry:
 ; oiio/optimized/exroutput.cpp.ll
 ; oiio/optimized/imageinput.cpp.ll
 ; oiio/optimized/paramlist.cpp.ll
-; pbrt-v4/optimized/image.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
 entry:
@@ -178,8 +179,9 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; darktable/optimized/DeflateDecompressor.cpp.ll
+; openusd/optimized/aom_image.c.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001c(i64 %0, i64 %1, i32 %2) #0 {

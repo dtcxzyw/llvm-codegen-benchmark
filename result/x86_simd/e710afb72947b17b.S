@@ -17,7 +17,7 @@ func0000000000000008:                   # @func0000000000000008
 	retq
 .LCPI2_0:
 	.long	32                              # 0x20
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	vpmovqd	%ymm2, %xmm2
 	vpaddd	.LCPI2_0(%rip){1to4}, %xmm2, %xmm2
 	vpaddd	%xmm1, %xmm0, %xmm0

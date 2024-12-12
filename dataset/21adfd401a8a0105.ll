@@ -1,6 +1,6 @@
 
-%struct.in6_addr.3341452 = type { %union.anon.24.3341453 }
-%union.anon.24.3341453 = type { [4 x i32] }
+%struct.in6_addr.3530600 = type { %union.anon.24.3530601 }
+%union.anon.24.3530601 = type { [4 x i32] }
 
 ; 18 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
@@ -42,7 +42,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = sub nsw i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %struct.in6_addr.3341452, ptr %0, i64 %5
+  %6 = getelementptr %struct.in6_addr.3530600, ptr %0, i64 %5
   ret ptr %6
 }
 

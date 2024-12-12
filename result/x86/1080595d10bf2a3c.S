@@ -24,7 +24,7 @@ func0000000000000004:                   # @func0000000000000004
 	retq
 func0000000000000006:                   # @func0000000000000006
 	xorb	$1, %sil
-	testl	%edi, %edi
-	sets	%al
+	cmpl	$5, %edi
+	setl	%al
 	andb	%sil, %al
 	retq

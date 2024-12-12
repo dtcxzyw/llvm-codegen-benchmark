@@ -1,6 +1,5 @@
 
-; 14 occurrences:
-; box2d/optimized/b2_collision.cpp.ll
+; 13 occurrences:
 ; box2d/optimized/b2_distance.cpp.ll
 ; gromacs/optimized/cubicsplinetable.cpp.ll
 ; gromacs/optimized/quadraticsplinetable.cpp.ll

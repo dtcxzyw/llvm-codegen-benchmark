@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 23 occurrences:
 ; abc/optimized/acbUtil.c.ll
 ; abc/optimized/acecTree.c.ll
 ; abc/optimized/cecSatG2.c.ll
@@ -18,6 +18,7 @@
 ; abc/optimized/pdrIncr.c.ll
 ; abc/optimized/sbdCore.c.ll
 ; abc/optimized/sbdPath.c.ll
+; boost/optimized/approximately_equals.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; icu/optimized/ucnvmbcs.ll

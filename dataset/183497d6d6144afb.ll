@@ -18,13 +18,14 @@ entry:
   ret i32 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; git/optimized/grep.ll
 ; linux/optimized/i9xx_wm.ll
 ; llvm/optimized/AArch64A57FPLoadBalancing.cpp.ll
 ; llvm/optimized/X86ExpandPseudo.cpp.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; slurm/optimized/job_mgr.ll
+; wireshark/optimized/rtp_audio_routing.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
 entry:

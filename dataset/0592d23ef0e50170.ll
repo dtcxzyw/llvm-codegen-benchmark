@@ -1,7 +1,109 @@
 
-%struct.dynbuf.2649305 = type { ptr, i64, i64, i64 }
+%struct.dynbuf.2762605 = type { ptr, i64, i64, i64 }
 
-; 326 occurrences:
+; 12 occurrences:
+; abc/optimized/giaNf.c.ll
+; cmake/optimized/archive_rb.c.ll
+; darktable/optimized/CrwDecompressor.cpp.ll
+; eastl/optimized/EADateTime.cpp.ll
+; git/optimized/xdiff-interface.ll
+; libwebp/optimized/histogram_enc.c.ll
+; llvm/optimized/Compiler.cpp.ll
+; mitsuba3/optimized/jitallocator.cpp.ll
+; openusd/optimized/patchTableFactory.cpp.ll
+; z3/optimized/bv_solver.cpp.ll
+; z3/optimized/theory_arith.cpp.ll
+; z3/optimized/theory_bv.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000053(ptr %0, i32 %1) #0 {
+entry:
+  %2 = icmp sgt i32 %1, -1
+  %3 = zext i1 %2 to i64
+  %4 = getelementptr nusw nuw [2 x i64], ptr %0, i64 0, i64 %3
+  ret ptr %4
+}
+
+; 1 occurrences:
+; qemu/optimized/audio_audio.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000050(ptr %0, i32 %1) #0 {
+entry:
+  %2 = icmp sgt i32 %1, 1
+  %3 = zext i1 %2 to i64
+  %4 = getelementptr [16 x i8], ptr %0, i64 0, i64 %3
+  ret ptr %4
+}
+
+; 7 occurrences:
+; linux/optimized/compaction.ll
+; linux/optimized/e100.ll
+; linux/optimized/gen8_ppgtt.ll
+; linux/optimized/intel_ddi.ll
+; postgres/optimized/nbtsearch.ll
+; qemu/optimized/hw_display_cirrus_vga.c.ll
+; wireshark/optimized/packet-iax2.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000060(ptr %0, i32 %1) #0 {
+entry:
+  %2 = icmp ne i32 %1, 0
+  %3 = zext i1 %2 to i64
+  %4 = getelementptr [2 x i32], ptr %0, i64 0, i64 %3
+  ret ptr %4
+}
+
+; 7 occurrences:
+; linux/optimized/io-wq.ll
+; linux/optimized/zstd_decompress_block.ll
+; qemu/optimized/block_vhdx.c.ll
+; quickjs/optimized/quickjs.ll
+; wireshark/optimized/packet-h223.c.ll
+; wireshark/optimized/packet-umts_rlc.c.ll
+; wireshark/optimized/packet-usb-com.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000008(ptr %0, i32 %1) #0 {
+entry:
+  %2 = icmp eq i32 %1, 0
+  %3 = zext i1 %2 to i64
+  %4 = getelementptr [2 x ptr], ptr %0, i64 0, i64 %3
+  ret ptr %4
+}
+
+; 25 occurrences:
+; abc/optimized/dauTree.c.ll
+; abc/optimized/satSolver.c.ll
+; abc/optimized/satSolver2.c.ll
+; abc/optimized/satSolver3.c.ll
+; arrow/optimized/array_dict.cc.ll
+; arrow/optimized/builder_dict.cc.ll
+; arrow/optimized/vector_hash.cc.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; cmake/optimized/hostip.c.ll
+; curl/optimized/libcurl_la-hostip.ll
+; freetype/optimized/pshinter.c.ll
+; gromacs/optimized/swapcoords.cpp.ll
+; libwebp/optimized/lossless_enc.c.ll
+; libwebp/optimized/webpinfo.c.ll
+; llvm/optimized/Sema.cpp.ll
+; openusd/optimized/pred_common.c.ll
+; openusd/optimized/reconintra.c.ll
+; stockfish/optimized/position.ll
+; yaml-cpp/optimized/stream.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000063(ptr %0, i32 %1) #0 {
+entry:
+  %2 = icmp ne i32 %1, 2
+  %3 = zext i1 %2 to i64
+  %4 = getelementptr nusw nuw [2 x %struct.dynbuf.2762605], ptr %0, i64 0, i64 %3
+  ret ptr %4
+}
+
+; 332 occurrences:
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/amapMatch.c.ll
 ; abc/optimized/giaNf.c.ll
@@ -10,6 +112,13 @@
 ; abc/optimized/mapperRefs.c.ll
 ; abc/optimized/mapperSwitch.c.ll
 ; abc/optimized/sfmDec.c.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; cmake/optimized/zstd_decompress_block.c.ll
 ; cvc5/optimized/abduction_solver.cpp.ll
 ; cvc5/optimized/ackermann.cpp.ll
@@ -321,7 +430,6 @@
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
-; mitsuba3/optimized/zonestack.cpp.ll
 ; opencv/optimized/deriv.cpp.ll
 ; openmpi/optimized/comm.ll
 ; php/optimized/phpdbg_btree.ll
@@ -329,137 +437,40 @@
 ; z3/optimized/dl_mk_coi_filter.cpp.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = zext i1 %2 to i64
-  %4 = getelementptr nusw [2 x ptr], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [2 x ptr], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
-; 12 occurrences:
-; abc/optimized/giaNf.c.ll
-; cmake/optimized/archive_rb.c.ll
-; darktable/optimized/CrwDecompressor.cpp.ll
-; eastl/optimized/EADateTime.cpp.ll
-; git/optimized/xdiff-interface.ll
-; libwebp/optimized/histogram_enc.c.ll
-; llvm/optimized/Compiler.cpp.ll
-; mitsuba3/optimized/jitallocator.cpp.ll
-; openusd/optimized/patchTableFactory.cpp.ll
-; z3/optimized/bv_solver.cpp.ll
-; z3/optimized/theory_arith.cpp.ll
-; z3/optimized/theory_bv.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000052(ptr %0, i32 %1) #0 {
-entry:
-  %2 = icmp sgt i32 %1, -1
-  %3 = zext i1 %2 to i64
-  %4 = getelementptr nusw [2 x i64], ptr %0, i64 0, i64 %3
-  ret ptr %4
-}
-
-; 1 occurrences:
-; qemu/optimized/audio_audio.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000050(ptr %0, i32 %1) #0 {
-entry:
-  %2 = icmp sgt i32 %1, 1
-  %3 = zext i1 %2 to i64
-  %4 = getelementptr [16 x i8], ptr %0, i64 0, i64 %3
-  ret ptr %4
-}
-
-; 7 occurrences:
-; linux/optimized/compaction.ll
-; linux/optimized/e100.ll
-; linux/optimized/gen8_ppgtt.ll
-; linux/optimized/intel_ddi.ll
-; postgres/optimized/nbtsearch.ll
-; qemu/optimized/hw_display_cirrus_vga.c.ll
-; wireshark/optimized/packet-iax2.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000060(ptr %0, i32 %1) #0 {
-entry:
-  %2 = icmp ne i32 %1, 0
-  %3 = zext i1 %2 to i64
-  %4 = getelementptr [2 x i32], ptr %0, i64 0, i64 %3
-  ret ptr %4
-}
-
-; 7 occurrences:
-; linux/optimized/io-wq.ll
-; linux/optimized/zstd_decompress_block.ll
-; qemu/optimized/block_vhdx.c.ll
-; quickjs/optimized/quickjs.ll
-; wireshark/optimized/packet-h223.c.ll
-; wireshark/optimized/packet-umts_rlc.c.ll
-; wireshark/optimized/packet-usb-com.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i32 %1) #0 {
-entry:
-  %2 = icmp eq i32 %1, 0
-  %3 = zext i1 %2 to i64
-  %4 = getelementptr [2 x ptr], ptr %0, i64 0, i64 %3
-  ret ptr %4
-}
-
-; 18 occurrences:
-; abc/optimized/dauTree.c.ll
-; abc/optimized/satSolver.c.ll
-; abc/optimized/satSolver2.c.ll
-; abc/optimized/satSolver3.c.ll
-; arrow/optimized/array_dict.cc.ll
-; arrow/optimized/builder_dict.cc.ll
-; arrow/optimized/vector_hash.cc.ll
-; cmake/optimized/hostip.c.ll
-; curl/optimized/libcurl_la-hostip.ll
-; freetype/optimized/pshinter.c.ll
-; gromacs/optimized/swapcoords.cpp.ll
-; libwebp/optimized/lossless_enc.c.ll
-; libwebp/optimized/webpinfo.c.ll
-; llvm/optimized/Sema.cpp.ll
-; openusd/optimized/pred_common.c.ll
-; openusd/optimized/reconintra.c.ll
-; stockfish/optimized/position.ll
-; yaml-cpp/optimized/stream.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000062(ptr %0, i32 %1) #0 {
-entry:
-  %2 = icmp ne i32 %1, 2
-  %3 = zext i1 %2 to i64
-  %4 = getelementptr nusw [2 x %struct.dynbuf.2649305], ptr %0, i64 0, i64 %3
-  ret ptr %4
-}
-
-; 5 occurrences:
+; 4 occurrences:
 ; assimp/optimized/zip.c.ll
 ; hermes/optimized/zip.c.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
-; opencv/optimized/cap_mjpeg_encoder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000042(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000043(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 31
   %3 = zext i1 %2 to i64
-  %4 = getelementptr nusw [2 x i32], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [2 x i32], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
 ; 1 occurrences:
 ; gromacs/optimized/pme.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000032(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000033(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 2
   %3 = zext i1 %2 to i64
-  %4 = getelementptr nusw [2 x ptr], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [2 x ptr], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
-; 3 occurrences:
-; linux/optimized/evmisc.ll
+; 2 occurrences:
 ; linux/optimized/nf_conntrack_ftp.ll
 ; linux/optimized/nf_conntrack_proto_tcp.ll
 ; Function Attrs: nounwind

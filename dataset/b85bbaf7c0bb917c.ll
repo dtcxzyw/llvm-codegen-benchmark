@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a8(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 33554431
   %3 = ashr exact i32 %0, 24
@@ -15,7 +15,7 @@ entry:
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a4(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 33554431
   %3 = ashr exact i32 %0, 24
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 33554431
   %3 = ashr exact i32 %0, 24
@@ -40,7 +40,7 @@ entry:
 ; luajit/optimized/lj_ir.ll
 ; luajit/optimized/lj_ir_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
   %3 = ashr i32 %0, 31

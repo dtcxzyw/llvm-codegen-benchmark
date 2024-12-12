@@ -1,4 +1,4 @@
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	addq	%rsi, %rsi
 	leaq	(%rsi,%rsi,4), %rax
 	cmpq	$65536, %rax                    # imm = 0x10000

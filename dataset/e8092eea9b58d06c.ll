@@ -1,5 +1,5 @@
 
-; 140 occurrences:
+; 139 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -70,7 +70,6 @@
 ; abseil-cpp/optimized/randen_slow.cc.ll
 ; arrow/optimized/crc32.cc.ll
 ; assimp/optimized/zip.c.ll
-; clamav/optimized/crc.cpp.ll
 ; clamav/optimized/crypt.cpp.ll
 ; clamav/optimized/rijndael.c.ll
 ; clamav/optimized/rijndael.cpp.ll

@@ -3,7 +3,7 @@
 ; php/optimized/zend_ssa.ll
 ; zxing/optimized/ODCode39Writer.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0) #0 {
+define i32 @func0000000000000061(i32 %0) #0 {
 entry:
   %.not = icmp eq i32 %0, 1
   %1 = select i1 %.not, i32 -1073740799, i32 -1073740800
@@ -17,7 +17,7 @@ entry:
 ; luajit/optimized/lj_opt_fold.ll
 ; luajit/optimized/lj_opt_fold_dyn.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0) #0 {
+define i32 @func0000000000000041(i32 %0) #0 {
 entry:
   %1 = shl nuw i32 1, %0
   %2 = and i32 %1, 140

@@ -1,6 +1,7 @@
 
-; 1 occurrences:
+; 2 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
+; boost/optimized/area.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(double %0, i64 %1) #0 {
 entry:

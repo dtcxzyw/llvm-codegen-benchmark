@@ -107,15 +107,6 @@ func0000000000000011:                   # @func0000000000000011
 	vcmpunordps	%xmm2, %xmm1, %k0 {%k1}
 	kmovd	%k0, %eax
 	retq
-.LCPI15_0:
-	.long	0x38d1b717                      # float 9.99999974E-5
-func000000000000002e:                   # @func000000000000002e
-	vxorps	%xmm2, %xmm2, %xmm2
-	vcmpordps	%xmm2, %xmm0, %k1
-	vmovss	.LCPI15_0(%rip), %xmm0          # xmm0 = [9.99999974E-5,0.0E+0,0.0E+0,0.0E+0]
-	vcmpltps	%xmm0, %xmm1, %k0 {%k1}
-	kmovd	%k0, %eax
-	retq
 func000000000000001e:                   # @func000000000000001e
 	vxorps	%xmm2, %xmm2, %xmm2
 	vcmpordps	%xmm2, %xmm0, %k1
@@ -134,21 +125,21 @@ func00000000000000a6:                   # @func00000000000000a6
 	vcmpleps	%xmm2, %xmm1, %k0 {%k1}
 	kmovd	%k0, %eax
 	retq
-.LCPI19_0:
+.LCPI18_0:
 	.long	0x34000000                      # float 1.1920929E-7
 func00000000000000d2:                   # @func00000000000000d2
 	vxorps	%xmm2, %xmm2, %xmm2
 	vcmpltps	%xmm2, %xmm0, %k1
-	vmovss	.LCPI19_0(%rip), %xmm0          # xmm0 = [1.1920929E-7,0.0E+0,0.0E+0,0.0E+0]
+	vmovss	.LCPI18_0(%rip), %xmm0          # xmm0 = [1.1920929E-7,0.0E+0,0.0E+0,0.0E+0]
 	vcmpnltps	%xmm0, %xmm1, %k0 {%k1}
 	kmovd	%k0, %eax
 	retq
-.LCPI20_0:
+.LCPI19_0:
 	.long	0x34000000                      # float 1.1920929E-7
 func00000000000000db:                   # @func00000000000000db
 	vxorps	%xmm2, %xmm2, %xmm2
 	vcmpnltps	%xmm0, %xmm2, %k1
-	vmovss	.LCPI20_0(%rip), %xmm0          # xmm0 = [1.1920929E-7,0.0E+0,0.0E+0,0.0E+0]
+	vmovss	.LCPI19_0(%rip), %xmm0          # xmm0 = [1.1920929E-7,0.0E+0,0.0E+0,0.0E+0]
 	vcmpnltps	%xmm0, %xmm1, %k0 {%k1}
 	kmovd	%k0, %eax
 	retq
@@ -156,6 +147,14 @@ func0000000000000042:                   # @func0000000000000042
 	vxorps	%xmm2, %xmm2, %xmm2
 	vcmpltps	%xmm2, %xmm0, %k1
 	vcmpltps	%xmm1, %xmm2, %k0 {%k1}
+	kmovd	%k0, %eax
+	retq
+.LCPI21_0:
+	.long	0x41102d33                      # float 9.01103496
+func00000000000000bb:                   # @func00000000000000bb
+	vmovss	.LCPI21_0(%rip), %xmm2          # xmm2 = [9.01103496E+0,0.0E+0,0.0E+0,0.0E+0]
+	vcmpnltps	%xmm0, %xmm2, %k1
+	vcmpnltps	%xmm1, %xmm2, %k0 {%k1}
 	kmovd	%k0, %eax
 	retq
 func0000000000000055:                   # @func0000000000000055
@@ -180,21 +179,16 @@ func0000000000000066:                   # @func0000000000000066
 	vcmpneq_oqps	%xmm2, %xmm1, %k0 {%k1}
 	kmovd	%k0, %eax
 	retq
+func0000000000000048:                   # @func0000000000000048
+	vxorps	%xmm2, %xmm2, %xmm2
+	vcmpeqps	%xmm2, %xmm0, %k1
+	vcmpltps	%xmm1, %xmm2, %k0 {%k1}
+	kmovd	%k0, %eax
+	retq
 func0000000000000078:                   # @func0000000000000078
 	vxorps	%xmm2, %xmm2, %xmm2
 	vcmpeqps	%xmm2, %xmm0, %k1
 	vcmpneqps	%xmm2, %xmm1, %k0 {%k1}
-	kmovd	%k0, %eax
-	retq
-.LCPI26_0:
-	.long	0x7f7fffff                      # float 3.40282347E+38
-.LCPI26_1:
-	.long	0xff7fffff                      # float -3.40282347E+38
-func00000000000000ca:                   # @func00000000000000ca
-	vmovss	.LCPI26_0(%rip), %xmm2          # xmm2 = [3.40282347E+38,0.0E+0,0.0E+0,0.0E+0]
-	vcmpleps	%xmm2, %xmm0, %k1
-	vmovss	.LCPI26_1(%rip), %xmm0          # xmm0 = [-3.40282347E+38,0.0E+0,0.0E+0,0.0E+0]
-	vcmpleps	%xmm1, %xmm0, %k0 {%k1}
 	kmovd	%k0, %eax
 	retq
 func000000000000002a:                   # @func000000000000002a
@@ -209,14 +203,20 @@ func00000000000000c8:                   # @func00000000000000c8
 	vcmpleps	%xmm1, %xmm2, %k0 {%k1}
 	kmovd	%k0, %eax
 	retq
-.LCPI29_0:
+func0000000000000074:                   # @func0000000000000074
+	vxorps	%xmm2, %xmm2, %xmm2
+	vcmpltps	%xmm0, %xmm2, %k1
+	vcmpneqps	%xmm2, %xmm1, %k0 {%k1}
+	kmovd	%k0, %eax
+	retq
+.LCPI30_0:
 	.long	0xbf800000                      # float -1
-.LCPI29_1:
+.LCPI30_1:
 	.long	0x7f800000                      # float +Inf
 func0000000000000065:                   # @func0000000000000065
-	vmovss	.LCPI29_0(%rip), %xmm2          # xmm2 = [-1.0E+0,0.0E+0,0.0E+0,0.0E+0]
+	vmovss	.LCPI30_0(%rip), %xmm2          # xmm2 = [-1.0E+0,0.0E+0,0.0E+0,0.0E+0]
 	vcmpnleps	%xmm2, %xmm0, %k1
-	vmovss	.LCPI29_1(%rip), %xmm0          # xmm0 = [+Inf,0.0E+0,0.0E+0,0.0E+0]
+	vmovss	.LCPI30_1(%rip), %xmm0          # xmm0 = [+Inf,0.0E+0,0.0E+0,0.0E+0]
 	vcmpneq_oqps	%xmm0, %xmm1, %k0 {%k1}
 	kmovd	%k0, %eax
 	retq
@@ -226,12 +226,12 @@ func000000000000005d:                   # @func000000000000005d
 	vcmpnleps	%xmm2, %xmm1, %k0 {%k1}
 	kmovd	%k0, %eax
 	retq
-.LCPI31_0:
+.LCPI32_0:
 	.long	0x42c80000                      # float 100
 func00000000000000a7:                   # @func00000000000000a7
 	vxorps	%xmm2, %xmm2, %xmm2
 	vcmpneqps	%xmm2, %xmm0, %k1
-	vmovss	.LCPI31_0(%rip), %xmm0          # xmm0 = [1.0E+2,0.0E+0,0.0E+0,0.0E+0]
+	vmovss	.LCPI32_0(%rip), %xmm0          # xmm0 = [1.0E+2,0.0E+0,0.0E+0,0.0E+0]
 	vcmpleps	%xmm0, %xmm1, %k0 {%k1}
 	kmovd	%k0, %eax
 	retq
@@ -247,24 +247,32 @@ func0000000000000082:                   # @func0000000000000082
 	vcmpeqps	%xmm2, %xmm1, %k0 {%k1}
 	kmovd	%k0, %eax
 	retq
+.LCPI35_0:
+	.long	0x40490fdb                      # float 3.14159274
+func00000000000000ca:                   # @func00000000000000ca
+	vmovss	.LCPI35_0(%rip), %xmm2          # xmm2 = [3.14159274E+0,0.0E+0,0.0E+0,0.0E+0]
+	vcmpleps	%xmm2, %xmm0, %k1
+	vcmpleps	%xmm1, %xmm2, %k0 {%k1}
+	kmovd	%k0, %eax
+	retq
 func0000000000000087:                   # @func0000000000000087
 	vxorps	%xmm2, %xmm2, %xmm2
 	vcmpneqps	%xmm2, %xmm0, %k1
 	vcmpeqps	%xmm2, %xmm1, %k0 {%k1}
 	kmovd	%k0, %eax
 	retq
-.LCPI35_0:
+.LCPI37_0:
 	.long	0x358637bd                      # float 9.99999997E-7
 func00000000000000dd:                   # @func00000000000000dd
-	vmovss	.LCPI35_0(%rip), %xmm2          # xmm2 = [9.99999997E-7,0.0E+0,0.0E+0,0.0E+0]
+	vmovss	.LCPI37_0(%rip), %xmm2          # xmm2 = [9.99999997E-7,0.0E+0,0.0E+0,0.0E+0]
 	vcmpnltps	%xmm2, %xmm0, %k1
 	vcmpnltps	%xmm2, %xmm1, %k0 {%k1}
 	kmovd	%k0, %eax
 	retq
-.LCPI36_0:
+.LCPI38_0:
 	.long	0x7f800000                      # float +Inf
 func0000000000000086:                   # @func0000000000000086
-	vmovss	.LCPI36_0(%rip), %xmm2          # xmm2 = [+Inf,0.0E+0,0.0E+0,0.0E+0]
+	vmovss	.LCPI38_0(%rip), %xmm2          # xmm2 = [+Inf,0.0E+0,0.0E+0,0.0E+0]
 	vcmpneq_oqps	%xmm2, %xmm0, %k1
 	vxorps	%xmm0, %xmm0, %xmm0
 	vcmpeqps	%xmm0, %xmm1, %k0 {%k1}

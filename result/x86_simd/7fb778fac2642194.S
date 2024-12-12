@@ -5,7 +5,7 @@
 func0000000000000004:                   # @func0000000000000004
 	vptestnmd	.LCPI0_0(%rip){1to8}, %ymm2, %k1
 	vpandd	.LCPI0_1(%rip){1to8}, %ymm2, %ymm1 {%k1}
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.long	8                               # 0x8

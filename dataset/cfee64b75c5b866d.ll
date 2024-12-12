@@ -1,5 +1,5 @@
 
-; 41 occurrences:
+; 39 occurrences:
 ; darktable/optimized/introspection_clipping.c.ll
 ; git/optimized/add.ll
 ; git/optimized/checkout.ll
@@ -26,10 +26,8 @@
 ; llvm/optimized/Verifier.cpp.ll
 ; luau/optimized/lapi.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
-; nuttx/optimized/lib_isblank.c.ll
 ; opencv/optimized/demosaicing.cpp.ll
 ; openssl/optimized/clienthellotest-bin-clienthellotest.ll
-; openssl/optimized/ffc_internal_test-bin-ffc_internal_test.ll
 ; openssl/optimized/v3ext-bin-v3ext.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; quickjs/optimized/quickjs.ll
@@ -42,23 +40,10 @@
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000044(i32 %0) #0 {
+define i32 @func0000000000000084(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 7
   %2 = icmp eq i32 %0, 0
-  %3 = or i1 %2, %1
-  %4 = zext i1 %3 to i32
-  ret i32 %4
-}
-
-; 2 occurrences:
-; graphviz/optimized/strmatch.c.ll
-; hwloc/optimized/traversal.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000050(i32 %0) #0 {
-entry:
-  %1 = icmp eq i32 %0, 19
-  %2 = icmp ult i32 %0, 13
   %3 = or i1 %2, %1
   %4 = zext i1 %3 to i32
   ret i32 %4

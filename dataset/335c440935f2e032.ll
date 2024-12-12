@@ -6,7 +6,7 @@
 ; llvm/optimized/SetTheory.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i1 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %1
   %3 = select i1 %0, i64 %2, i64 %1
@@ -20,7 +20,7 @@ entry:
 ; openjdk/optimized/memReporter.ll
 ; php/optimized/interval.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %1
   %3 = select i1 %0, i64 %2, i64 %1
@@ -34,7 +34,7 @@ entry:
 ; opencv/optimized/softfloat.cpp.ll
 ; rust-analyzer-rs/optimized/36rfhun5ywaw64ay.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i1 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %1
   %3 = select i1 %0, i64 %2, i64 %1
@@ -64,7 +64,7 @@ entry:
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i1 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 65536, %1
   %3 = select i1 %0, i64 %2, i64 %1
@@ -75,22 +75,22 @@ entry:
 ; 1 occurrences:
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000078(i1 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 65536, %1
   %3 = select i1 %0, i64 %2, i64 %1
-  %4 = icmp ugt i64 %3, 31743
+  %4 = icmp samesign ugt i64 %3, 31743
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000074(i1 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 65536, %1
   %3 = select i1 %0, i64 %2, i64 %1
-  %4 = icmp ult i64 %3, 16384
+  %4 = icmp samesign ult i64 %3, 16384
   ret i1 %4
 }
 
@@ -98,22 +98,22 @@ entry:
 ; freetype/optimized/autofit.c.ll
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000034(i1 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %1
   %3 = select i1 %0, i64 %2, i64 %1
-  %4 = icmp ult i64 %3, 256
+  %4 = icmp samesign ult i64 %3, 256
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; freetype/optimized/type1.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000038(i1 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 65536, %1
   %3 = select i1 %0, i64 %2, i64 %1
-  %4 = icmp ugt i64 %3, 65535
+  %4 = icmp samesign ugt i64 %3, 65535
   ret i1 %4
 }
 

@@ -1,6 +1,7 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; assimp/optimized/LWOMaterial.cpp.ll
+; boost/optimized/static_string.ll
 ; clamav/optimized/unzip.c.ll
 ; flatbuffers/optimized/reflection.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -12,10 +13,10 @@
 ; sentencepiece/optimized/extension_set.cc.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(ptr %0, ptr %1, i16 %2) #0 {
+define i64 @func000000000000000c(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw ptr, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw ptr, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = ptrtoint ptr %0 to i64
   %7 = sub i64 %5, %6
@@ -26,17 +27,17 @@ entry:
 ; folly/optimized/SplitStringSimd.cpp.ll
 ; protobuf/optimized/extension_set.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(ptr %0, ptr %1, i16 %2) #0 {
+define i64 @func000000000000001c(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = ptrtoint ptr %0 to i64
   %7 = sub i64 %5, %6
   ret i64 %7
 }
 
-; 57 occurrences:
+; 54 occurrences:
 ; linux/optimized/af_packet.ll
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/esp6.ll
@@ -56,14 +57,11 @@ entry:
 ; linux/optimized/ip_sockglue.ll
 ; linux/optimized/ip_tunnel_core.ll
 ; linux/optimized/lsm_audit.ll
-; linux/optimized/mcast_snoop.ll
 ; linux/optimized/namei.ll
 ; linux/optimized/ndisc.ll
 ; linux/optimized/neighbour.ll
-; linux/optimized/net-traces.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/nf_conntrack_core.ll
-; linux/optimized/nf_conntrack_proto.ll
 ; linux/optimized/nf_conntrack_reasm.ll
 ; linux/optimized/nf_log_syslog.ll
 ; linux/optimized/nf_nat_proto.ll
@@ -108,10 +106,10 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/nmethod.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000009(ptr %0, ptr %1, i16 %2) #0 {
+define i64 @func000000000000000d(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = ptrtoint ptr %0 to i64
   %7 = sub nsw i64 %5, %6

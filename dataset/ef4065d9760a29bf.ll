@@ -12,7 +12,7 @@ entry:
   %4 = add i32 %1, 7
   %5 = add i32 %4, %3
   %6 = and i32 %5, -8
-  %7 = add i32 %6, %0
+  %7 = add i32 %0, %6
   ret i32 %7
 }
 
@@ -29,11 +29,10 @@ entry:
   ret i32 %7
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver2.c.ll
 ; abc/optimized/satSolver3.c.ll
-; abc/optimized/satUtil.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000003f(i32 %0, i32 %1, i32 %2) #0 {
 entry:

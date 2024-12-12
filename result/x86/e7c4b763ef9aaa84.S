@@ -1,4 +1,4 @@
-func0000000000000038:                   # @func0000000000000038
+func0000000000000058:                   # @func0000000000000058
 	sarq	$4, %rdx
 	movabsq	$-8198552921648689607, %rax     # imm = 0x8E38E38E38E38E39
 	imulq	%rdx, %rax
@@ -6,7 +6,7 @@ func0000000000000038:                   # @func0000000000000038
 	setne	%al
 	orb	%dil, %al
 	retq
-func0000000000000032:                   # @func0000000000000032
+func0000000000000052:                   # @func0000000000000052
 	sarq	$3, %rdx
 	movabsq	$-6148914691236517205, %rax     # imm = 0xAAAAAAAAAAAAAAAB
 	imulq	%rdx, %rax
@@ -14,7 +14,7 @@ func0000000000000032:                   # @func0000000000000032
 	setae	%al
 	orb	%dil, %al
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	sarq	$3, %rdx
 	movabsq	$-6148914691236517205, %rax     # imm = 0xAAAAAAAAAAAAAAAB
 	imulq	%rdx, %rax
@@ -34,7 +34,7 @@ func000000000000000c:                   # @func000000000000000c
 	setl	%al
 	orb	%dil, %al
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	sarq	$3, %rdx
 	movabsq	$-6148914691236517205, %rax     # imm = 0xAAAAAAAAAAAAAAAB
 	imulq	%rdx, %rax
@@ -42,7 +42,7 @@ func000000000000002a:                   # @func000000000000002a
 	setbe	%al
 	orb	%dil, %al
 	retq
-func000000000000002e:                   # @func000000000000002e
+func000000000000004e:                   # @func000000000000004e
 	sarq	$3, %rdx
 	movabsq	$-3208129404123400281, %rax     # imm = 0xD37A6F4DE9BD37A7
 	imulq	%rdx, %rax

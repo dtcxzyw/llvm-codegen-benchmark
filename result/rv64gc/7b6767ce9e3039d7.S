@@ -12,6 +12,20 @@ func0000000000000028:                   # @func0000000000000028
 	sraiw	a0, a0, 5
 	add	a0, a0, a1
 	ret
+func0000000000000078:                   # @func0000000000000078
+	lui	a2, 1048575
+	addi	a2, a2, 496
+	mul	a1, a1, a2
+	lui	a2, 559241
+	addiw	a2, a2, -1911
+	addw	a0, a0, a1
+	mul	a1, a0, a2
+	srli	a1, a1, 32
+	add	a0, a0, a1
+	srliw	a1, a0, 31
+	sraiw	a0, a0, 5
+	add	a0, a0, a1
+	ret
 func0000000000000050:                   # @func0000000000000050
 	subw	a0, a0, a1
 	sraiw	a1, a0, 31

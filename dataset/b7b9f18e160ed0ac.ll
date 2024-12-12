@@ -12,7 +12,7 @@ entry:
   ret i64 %5
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; linux/optimized/dm-table.ll
 ; linux/optimized/ehci-hcd.ll
 ; llvm/optimized/CGCUDANV.cpp.ll
@@ -21,7 +21,6 @@ entry:
 ; llvm/optimized/CodeGenModule.cpp.ll
 ; llvm/optimized/ELFObjectWriter.cpp.ll
 ; llvm/optimized/IRSymtab.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; oiio/optimized/tiffinput.cpp.ll
 ; opencv/optimized/arithm.cpp.ll
 ; Function Attrs: nounwind

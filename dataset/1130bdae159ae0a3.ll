@@ -1,23 +1,22 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; icu/optimized/ubidi.ll
-; icu/optimized/ubidiln.ll
 ; icu/optimized/ubidiwrt.ll
 ; icu/optimized/ucnvisci.ll
-; icu/optimized/ucnvscsu.ll
 ; icu/optimized/util.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
-; llvm/optimized/CodeMoverUtils.cpp.ll
-; llvm/optimized/SimplifyIndVar.cpp.ll
+; lvgl/optimized/lv_text.ll
 ; meshlab/optimized/Scanner.cpp.ll
 ; minetest/optimized/COpenGLDriver.cpp.ll
 ; postgres/optimized/print.ll
 ; regex-rs/optimized/v8mcpnwv4glojx2.ll
 ; ruby/optimized/string.ll
 ; typst-rs/optimized/1mrwywpkq81cby93.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -127
   %4 = icmp ult i32 %3, -95
@@ -29,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 1
   %4 = select i1 %0, i1 true, i1 %1
@@ -57,14 +56,13 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
-; llvm/optimized/IfConversion.cpp.ll
+; 1 occurrences:
 ; wireshark/optimized/packet-smb.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i1 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = add i32 %2, -5
-  %4 = icmp ult i32 %3, -2
+  %3 = add i32 %2, -13
+  %4 = icmp ult i32 %3, -12
   %5 = select i1 %0, i1 true, i1 %1
   %6 = select i1 %5, i1 true, i1 %4
   ret i1 %6
@@ -85,7 +83,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/redis-cli.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 2
   %4 = select i1 %0, i1 true, i1 %1

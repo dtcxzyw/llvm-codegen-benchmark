@@ -1,8 +1,16 @@
 
-; 181 occurrences:
+; 193 occurrences:
 ; abc/optimized/extraUtilMisc.c.ll
 ; abc/optimized/giaSwitch.c.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; clamav/optimized/cvd.c.ll
 ; cmake/optimized/System.c.ll
 ; cmake/optimized/multi.c.ll
@@ -14,6 +22,7 @@
 ; curl/optimized/libcurl_la-openssl.ll
 ; cvc5/optimized/justification_strategy.cpp.ll
 ; darktable/optimized/image.c.ll
+; darktable/optimized/introspection_invert.c.ll
 ; darktable/optimized/introspection_rotatepixels.c.ll
 ; darktable/optimized/introspection_temperature.c.ll
 ; eastl/optimized/TestBitset.cpp.ll
@@ -22,7 +31,6 @@
 ; git/optimized/grep.ll
 ; glslang/optimized/ShaderLang.cpp.ll
 ; gromacs/optimized/decidegpuusage.cpp.ll
-; gromacs/optimized/domdec_network.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hermes/optimized/ESTreeIRGen-expr.cpp.ll
 ; icu/optimized/number_affixutils.ll
@@ -73,7 +81,6 @@
 ; ninja/optimized/status.cc.ll
 ; nix/optimized/namespaces.ll
 ; nori/optimized/nanovg.c.ll
-; nuttx/optimized/sig_isemptyset.c.ll
 ; oiio/optimized/strutil.cpp.ll
 ; openblas/optimized/dbdsdc.c.ll
 ; openblas/optimized/dlarrv.c.ll
@@ -179,6 +186,11 @@
 ; z3/optimized/realclosure.cpp.ll
 ; z3/optimized/sat_local_search.cpp.ll
 ; z3/optimized/sat_xor_finder.cpp.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/8yk2p2sb65wc4uirlpwonhoj2.ll
+; zed-rs/optimized/cguh9zihnfg4v76y73tdlg6o2.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_decompress.c.ll
 ; Function Attrs: nounwind
@@ -188,7 +200,7 @@ entry:
   ret i1 %.not
 }
 
-; 269 occurrences:
+; 279 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/ifReduce.c.ll
@@ -200,6 +212,15 @@ entry:
 ; arrow/optimized/UriFile.c.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/string-to-double.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_sph_geo.ll
 ; c3c/optimized/llvm_codegen_expr.c.ll
 ; clamav/optimized/extract.cpp.ll
 ; clamav/optimized/sigtool.c.ll
@@ -296,9 +317,9 @@ entry:
 ; llvm/optimized/LoongArch.cpp.ll
 ; llvm/optimized/MachineOperand.cpp.ll
 ; llvm/optimized/PassBuilder.cpp.ll
+; llvm/optimized/PassBuilderPipelines.cpp.ll
 ; llvm/optimized/PrologEpilogInserter.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVVEmitter.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/ScalarEvolutionExpander.cpp.ll
@@ -355,7 +376,6 @@ entry:
 ; openjdk/optimized/dependencies.ll
 ; openjdk/optimized/pngread.ll
 ; openmpi/optimized/mca_base_components_open.ll
-; openmpi/optimized/monitoring_test.ll
 ; openmpi/optimized/nbc_ireduce.ll
 ; openmpi/optimized/pmix_iof.ll
 ; openmpi/optimized/pmix_mca_base_components_open.ll
@@ -380,7 +400,6 @@ entry:
 ; openssl/optimized/libssl-shlib-quic_wire_pkt.ll
 ; openssl/optimized/openssl-bin-cms.ll
 ; openssl/optimized/openssl-bin-enc.ll
-; openssl/optimized/quic_srt_gen_test-bin-quic_srt_gen_test.ll
 ; openssl/optimized/quicapitest-bin-quicapitest.ll
 ; openssl/optimized/sslapitest-bin-sslapitest.ll
 ; openusd/optimized/convolve.c.ll
@@ -456,6 +475,9 @@ entry:
 ; z3/optimized/sat_aig_cuts.cpp.ll
 ; z3/optimized/sat_solver.cpp.ll
 ; z3/optimized/smt_quantifier.cpp.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; Function Attrs: nounwind
@@ -465,8 +487,9 @@ entry:
   ret i1 %1
 }
 
-; 26 occurrences:
+; 24 occurrences:
 ; abc/optimized/giaNf.c.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; cvc5/optimized/theory_arith_private.cpp.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; git/optimized/transport.ll
@@ -482,9 +505,6 @@ entry:
 ; php/optimized/proc_open.ll
 ; postgres/optimized/fe-misc.ll
 ; postgres/optimized/partbounds.ll
-; postgres/optimized/pgmkdirp.ll
-; postgres/optimized/pgmkdirp_shlib.ll
-; postgres/optimized/pgmkdirp_srv.ll
 ; qemu/optimized/util_keyval.c.ll
 ; redis/optimized/t_set.ll
 ; ruby/optimized/class.ll
@@ -499,26 +519,27 @@ entry:
   ret i1 %1
 }
 
-; 25 occurrences:
-; abc/optimized/bmcMaj3.c.ll
+; 26 occurrences:
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; cmake/optimized/cmGeneratorExpressionDAGChecker.cxx.ll
 ; cmake/optimized/cmTargetLinkLibrariesCommand.cxx.ll
-; cmake/optimized/idna.c.ll
 ; cvc5/optimized/sine_solver.cpp.ll
 ; darktable/optimized/introspection_denoiseprofile.c.ll
 ; graphviz/optimized/write.c.ll
 ; gromacs/optimized/indexutil.cpp.ll
 ; hyperscan/optimized/rose_in_util.cpp.ll
-; libuv/optimized/idna.c.ll
 ; lief/optimized/psa_crypto.c.ll
 ; llvm/optimized/CGVTables.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SemaLookup.cpp.ll
 ; llvm/optimized/SemaTemplateVariadic.cpp.ll
-; node/optimized/idna.ll
 ; opencv/optimized/gapi_imgproc_perf_tests.cpp.ll
 ; opencv/optimized/gapi_video_perf_tests.cpp.ll
 ; openjdk/optimized/parse2.ll
@@ -533,6 +554,7 @@ entry:
 }
 
 ; 15 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
 ; cpython/optimized/unicodeobject.ll
 ; graphviz/optimized/sfvscanf.c.ll
 ; graphviz/optimized/spring_electrical.c.ll
@@ -545,7 +567,6 @@ entry:
 ; postgres/optimized/nodeFuncs.ll
 ; postgres/optimized/partbounds.ll
 ; rocksdb/optimized/db_impl_experimental.cc.ll
-; spike/optimized/f32_classify.ll
 ; spike/optimized/f32_to_ui64.ll
 ; spike/optimized/f32_to_ui64_r_minMag.ll
 ; Function Attrs: nounwind
@@ -555,18 +576,36 @@ entry:
   ret i1 %1
 }
 
-; 7 occurrences:
+; 3 occurrences:
 ; cmake/optimized/block_util.c.ll
-; linux/optimized/nf_conntrack_ftp.ll
 ; linux/optimized/nf_conntrack_proto_tcp.ll
-; linux/optimized/nf_nat_sip.ll
-; luau/optimized/lgcdebug.cpp.ll
 ; openjdk/optimized/lcm.ll
-; postgres/optimized/oracle_compat.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i32 %0) #0 {
 entry:
   %1 = icmp ult i32 %0, 11
+  ret i1 %1
+}
+
+; 4 occurrences:
+; abc/optimized/bmcMaj3.c.ll
+; cmake/optimized/idna.c.ll
+; libuv/optimized/idna.c.ll
+; node/optimized/idna.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0) #0 {
+entry:
+  %1 = icmp ugt i32 %0, 127
+  ret i1 %1
+}
+
+; 2 occurrences:
+; luau/optimized/lgcdebug.cpp.ll
+; postgres/optimized/oracle_compat.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i32 %0) #0 {
+entry:
+  %1 = icmp ult i32 %0, 5
   ret i1 %1
 }
 

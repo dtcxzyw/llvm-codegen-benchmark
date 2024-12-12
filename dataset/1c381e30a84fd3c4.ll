@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; cmake/optimized/zstd_compress_superblock.c.ll
 ; csmith/optimized/CVQualifiers.cpp.ll
 ; darktable/optimized/amaze.cc.ll
@@ -8,6 +8,7 @@
 ; linux/optimized/intel_dmc.ll
 ; linux/optimized/syncookies.ll
 ; linux/optimized/tg3.ll
+; lvgl/optimized/lv_dropdown.ll
 ; openblas/optimized/dlaqr5.c.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; verilator/optimized/V3DfgCache.cpp.ll
@@ -22,7 +23,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = shl i32 %3, 6
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = add i32 %5, %0
   ret i32 %6
 }
@@ -48,7 +49,7 @@ define i32 @func00000000000000d0(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = shl nsw i32 %3, 6
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = add i32 %5, %0
   ret i32 %6
 }
@@ -73,7 +74,7 @@ define i32 @func0000000000000010(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = shl nsw i32 %3, 2
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = add i32 %5, %0
   ret i32 %6
 }
@@ -85,8 +86,8 @@ define i32 @func00000000000000fe(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = shl nuw nsw i32 %3, 3
-  %5 = add nuw nsw i32 %4, %1
-  %6 = add nuw i32 %5, %0
+  %5 = add nuw nsw i32 %1, %4
+  %6 = add nuw i32 %0, %5
   ret i32 %6
 }
 
@@ -97,7 +98,7 @@ define i32 @func0000000000000030(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = shl nuw nsw i32 %3, 1
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = add i32 %5, %0
   ret i32 %6
 }
@@ -110,7 +111,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = shl nsw i32 %3, 1
   %5 = add nsw i32 %4, %1
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -122,7 +123,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = shl i32 %3, 2
   %5 = add nsw i32 %4, %1
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -145,18 +146,6 @@ define i32 @func0000000000000090(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = shl nsw i32 %3, 1
-  %5 = add i32 %4, %1
-  %6 = add i32 %5, %0
-  ret i32 %6
-}
-
-; 1 occurrences:
-; linux/optimized/intel_mocs.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000080(i32 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc nuw i64 %2 to i32
-  %4 = shl i32 %3, 2
   %5 = add i32 %4, %1
   %6 = add i32 %5, %0
   ret i32 %6
@@ -195,7 +184,7 @@ define i32 @func00000000000000f5(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = shl nuw nsw i32 %3, 4
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = add nsw i32 %5, %0
   ret i32 %6
 }
@@ -207,7 +196,7 @@ define i32 @func00000000000000fd(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = shl nuw nsw i32 %3, 2
-  %5 = add nuw nsw i32 %4, %1
+  %5 = add nuw nsw i32 %1, %4
   %6 = add nsw i32 %5, %0
   ret i32 %6
 }
@@ -219,8 +208,8 @@ define i32 @func000000000000000d(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = shl i32 %3, 2
-  %5 = add nuw nsw i32 %4, %1
-  %6 = add nsw i32 %5, %0
+  %5 = add nuw nsw i32 %1, %4
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 

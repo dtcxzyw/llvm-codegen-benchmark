@@ -9,6 +9,11 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 func0000000000000004:                   # @func0000000000000004
 	notb	%sil
-	cmpb	%dil, %sil
-	seta	%al
+	cmpb	%sil, %dil
+	setb	%al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	xorb	$1, %sil
+	cmpb	%sil, %dil
+	setb	%al
 	retq

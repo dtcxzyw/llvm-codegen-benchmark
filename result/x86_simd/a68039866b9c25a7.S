@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	9223372036854775807             # 0x7fffffffffffffff
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vpxorq	.LCPI0_0(%rip){1to4}, %ymm2, %ymm0
@@ -10,7 +10,7 @@ func0000000000000034:                   # @func0000000000000034
 	retq
 .LCPI1_0:
 	.quad	-16                             # 0xfffffffffffffff0
-func0000000000000039:                   # @func0000000000000039
+func0000000000000069:                   # @func0000000000000069
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vpbroadcastq	.LCPI1_0(%rip), %ymm0   # ymm0 = [18446744073709551600,18446744073709551600,18446744073709551600,18446744073709551600]
@@ -21,7 +21,7 @@ func0000000000000039:                   # @func0000000000000039
 	retq
 .LCPI2_0:
 	.quad	960                             # 0x3c0
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vpbroadcastq	.LCPI2_0(%rip), %ymm0   # ymm0 = [960,960,960,960]
@@ -32,7 +32,7 @@ func0000000000000018:                   # @func0000000000000018
 	retq
 .LCPI3_0:
 	.quad	1000000                         # 0xf4240
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vpbroadcastq	.LCPI3_0(%rip), %ymm0   # ymm0 = [1000000,1000000,1000000,1000000]

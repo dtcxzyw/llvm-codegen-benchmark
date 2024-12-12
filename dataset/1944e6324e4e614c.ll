@@ -62,11 +62,11 @@ define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = mul nsw i64 %2, 48
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
-; 126 occurrences:
+; 128 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/absGlaOld.c.ll
@@ -110,6 +110,7 @@ entry:
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/scalar_cast_temporal.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/gregorian.ll
 ; ceres/optimized/cuda_block_structure.cc.ll
 ; cmake/optimized/archive_getdate.c.ll
 ; cmake/optimized/cm_get_date.c.ll
@@ -144,7 +145,6 @@ entry:
 ; eastl/optimized/EATest.cpp.ll
 ; flac/optimized/fixed.c.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; folly/optimized/BridgeFromGoogleLogging.cpp.ll
 ; folly/optimized/OpenSSLCertUtils.cpp.ll
 ; git/optimized/date.ll
@@ -173,7 +173,6 @@ entry:
 ; openjdk/optimized/Any3Byte.ll
 ; openjdk/optimized/ThreeByteBgr.ll
 ; openssl/optimized/gmdifftest-bin-gmdifftest.ll
-; php/optimized/unixtime2tm.ll
 ; postgres/optimized/date.ll
 ; postgres/optimized/interval.ll
 ; postgres/optimized/pgbench.ll
@@ -186,12 +185,15 @@ entry:
 ; sentencepiece/optimized/time.cc.ll
 ; sqlite/optimized/sqlite3.ll
 ; tinyobjloader/optimized/tiny_obj_loader.cc.ll
+; turborepo-rs/optimized/4xosjxdd4tab2lzmgagh8c3os.ll
 ; vcpkg/optimized/chrono.cpp.ll
 ; velox/optimized/Sequence.cpp.ll
 ; velox/optimized/TimestampConversion.cpp.ll
 ; velox/optimized/VeloxException.cpp.ll
 ; xgboost/optimized/context.cc.ll
 ; yosys/optimized/ezminisat.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; zxing/optimized/ODDataBarReader.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i32 %1) #0 {
@@ -199,6 +201,21 @@ entry:
   %2 = sext i32 %1 to i64
   %3 = mul nsw i64 %2, 86400
   %4 = add nsw i64 %3, %0
+  ret i64 %4
+}
+
+; 5 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000007(i64 %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = mul nsw i64 %2, 3600
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -211,7 +228,7 @@ define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = mul i64 %2, 86400000000
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 

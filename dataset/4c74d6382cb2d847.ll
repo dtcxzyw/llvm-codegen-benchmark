@@ -1,13 +1,9 @@
 
-; 10 occurrences:
+; 6 occurrences:
 ; abc/optimized/rsbDec6.c.ll
 ; clamav/optimized/Bra.c.ll
 ; hyperscan/optimized/Parser.cpp.ll
-; jq/optimized/utf32_be.ll
-; jq/optimized/utf32_le.ll
 ; libphonenumber/optimized/rune.c.ll
-; oniguruma/optimized/utf32_be.ll
-; oniguruma/optimized/utf32_le.ll
 ; re2/optimized/rune.cc.ll
 ; ruby/optimized/utf_32be.ll
 ; Function Attrs: nounwind
@@ -39,7 +35,7 @@ entry:
   %3 = shl nuw i32 %2, 24
   %4 = shl nuw nsw i32 %1, 16
   %5 = or disjoint i32 %4, %3
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = shl i32 %6, 1
   ret i32 %7
 }

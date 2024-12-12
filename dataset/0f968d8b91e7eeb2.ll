@@ -1,5 +1,6 @@
 
-; 17 occurrences:
+; 20 occurrences:
+; boost/optimized/get_distance_measure.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; gromacs/optimized/sim_util.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
@@ -17,6 +18,8 @@
 ; wireshark/optimized/oids.c.ll
 ; wireshark/optimized/packet-openvpn.c.ll
 ; z3/optimized/realclosure.cpp.ll
+; zed-rs/optimized/4boerhlvhy0t7lexovmn31ni1.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i1 %1) #0 {
 entry:

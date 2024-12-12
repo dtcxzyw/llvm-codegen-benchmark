@@ -20,17 +20,16 @@ entry:
   ret i64 %6
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; clamav/optimized/readdb.c.ll
 ; hdf5/optimized/H5Olink.c.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; quickjs/optimized/libbf.ll
-; spike/optimized/s_mul64To128M.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i1 %1, i1 %2) #0 {
 entry:
-  %3 = select i1 %2, i64 4294967296, i64 0
-  %4 = add i64 %3, %0
+  %3 = select i1 %2, i64 8, i64 0
+  %4 = add i64 %0, %3
   %5 = zext i1 %1 to i64
   %6 = add i64 %4, %5
   ret i64 %6
@@ -48,14 +47,13 @@ entry:
   ret i64 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; quickjs/optimized/libbf.ll
-; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i1 %1, i1 %2) #0 {
 entry:
-  %3 = select i1 %2, i64 366, i64 365
-  %4 = add nsw i64 %3, %0
+  %3 = select i1 %2, i64 -2, i64 -1
+  %4 = add nsw i64 %0, %3
   %5 = zext i1 %1 to i64
   %6 = add nsw i64 %4, %5
   ret i64 %6

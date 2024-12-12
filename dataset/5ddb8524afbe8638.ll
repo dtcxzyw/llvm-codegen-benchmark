@@ -23,7 +23,24 @@ entry:
   %2 = and i8 %1, 1
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, i32 16, i32 8
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
+  ret i32 %5
+}
+
+; 6 occurrences:
+; linux/optimized/io_apic.ll
+; lvgl/optimized/lv_flex.ll
+; miniaudio/optimized/unity.c.ll
+; openusd/optimized/tessellation.cpp.ll
+; raylib/optimized/raudio.c.ll
+; wireshark/optimized/packet-cipsafety.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000005(i32 %0, i8 %1) #0 {
+entry:
+  %2 = and i8 %1, 4
+  %3 = icmp eq i8 %2, 0
+  %4 = select i1 %3, i32 1, i32 -1
+  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 
@@ -44,23 +61,7 @@ entry:
   %2 = and i8 %1, 1
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, i32 56, i32 72
-  %5 = add i32 %4, %0
-  ret i32 %5
-}
-
-; 5 occurrences:
-; linux/optimized/io_apic.ll
-; miniaudio/optimized/unity.c.ll
-; openusd/optimized/tessellation.cpp.ll
-; raylib/optimized/raudio.c.ll
-; wireshark/optimized/packet-cipsafety.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000005(i32 %0, i8 %1) #0 {
-entry:
-  %2 = and i8 %1, 4
-  %3 = icmp eq i8 %2, 0
-  %4 = select i1 %3, i32 1, i32 -1
-  %5 = add nsw i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 

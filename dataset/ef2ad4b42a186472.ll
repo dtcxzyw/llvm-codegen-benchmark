@@ -1,23 +1,5 @@
 
-; 9 occurrences:
-; cmake/optimized/nghttp2_hd.c.ll
-; grpc/optimized/flow_control.cc.ll
-; nghttp2/optimized/nghttp2_hd.c.ll
-; openusd/optimized/aom_integer.c.ll
-; ruby/optimized/prism.ll
-; rustfmt-rs/optimized/4ext43viwbyeinhu.ll
-; spike/optimized/f16_div.ll
-; tokenizers-rs/optimized/10h1ju7dwsvagf79.ll
-; tokenizers-rs/optimized/1k9vblvd5jyd3qmf.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000004(i64 %0, i64 %1) #0 {
-entry:
-  %2 = icmp ult i64 %0, %1
-  %3 = select i1 %2, i8 32, i8 94
-  ret i8 %3
-}
-
-; 19 occurrences:
+; 22 occurrences:
 ; abseil-cpp/optimized/proto.cc.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; coreutils-rs/optimized/3jp7gwpa2a0lw872.ll
@@ -37,11 +19,31 @@ entry:
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; rust-analyzer-rs/optimized/1au8fupciwcmum6.ll
 ; typst-rs/optimized/22a0ijn9jg8ilzgs.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cj7s0wliqptmxcvil2fbp8uvc.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %0, %1
   %3 = select i1 %2, i8 2, i8 0
+  ret i8 %3
+}
+
+; 8 occurrences:
+; cmake/optimized/nghttp2_hd.c.ll
+; nghttp2/optimized/nghttp2_hd.c.ll
+; openusd/optimized/aom_integer.c.ll
+; rustfmt-rs/optimized/4ext43viwbyeinhu.ll
+; spike/optimized/f16_div.ll
+; tokenizers-rs/optimized/10h1ju7dwsvagf79.ll
+; tokenizers-rs/optimized/1k9vblvd5jyd3qmf.ll
+; wasmtime-rs/optimized/1spnjfu340nob5zr.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000004(i64 %0, i64 %1) #0 {
+entry:
+  %2 = icmp ult i64 %0, %1
+  %3 = select i1 %2, i8 2, i8 1
   ret i8 %3
 }
 

@@ -31,10 +31,18 @@ func000000000000000d:                   # @func000000000000000d
 	vzeroupper
 	retq
 .LCPI4_0:
+	.long	1                               # 0x1
+func000000000000000c:                   # @func000000000000000c
+	vpmovqd	%ymm1, %xmm1
+	vpsrld	$1, %xmm1, %xmm1
+	vpternlogd	$248, .LCPI4_0(%rip){1to4}, %xmm1, %xmm0 # xmm0 = xmm0 | (xmm1 & mem)
+	vzeroupper
+	retq
+.LCPI5_0:
 	.long	15                              # 0xf
 func0000000000000003:                   # @func0000000000000003
 	vpmovqd	%ymm1, %xmm1
 	vpsrld	$6, %xmm1, %xmm1
-	vpternlogd	$248, .LCPI4_0(%rip){1to4}, %xmm1, %xmm0 # xmm0 = xmm0 | (xmm1 & mem)
+	vpternlogd	$248, .LCPI5_0(%rip){1to4}, %xmm1, %xmm0 # xmm0 = xmm0 | (xmm1 & mem)
 	vzeroupper
 	retq

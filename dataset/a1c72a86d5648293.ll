@@ -20,7 +20,7 @@
 ; llvm/optimized/TargetID.cpp.ll
 ; llvm/optimized/VerifyDiagnosticConsumer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp eq i64 %1, %0
@@ -33,7 +33,7 @@ entry:
 ; llvm/optimized/CodeGenInstruction.cpp.ll
 ; llvm/optimized/SveEmitter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, -1
   %4 = icmp ne i64 %1, %0

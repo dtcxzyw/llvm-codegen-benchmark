@@ -2,7 +2,7 @@
 	.long	0x3a83126f                      # float 0.00100000005
 func0000000000000004:                   # @func0000000000000004
 	vmulss	%xmm1, %xmm1, %xmm1
-	vmulss	%xmm0, %xmm1, %xmm0
+	vmulss	%xmm1, %xmm0, %xmm0
 	vucomiss	.LCPI0_0(%rip), %xmm0
 	seta	%al
 	retq
@@ -14,17 +14,4 @@ func0000000000000002:                   # @func0000000000000002
 	vmovss	.LCPI1_0(%rip), %xmm1           # xmm1 = [9.9212557E-2,0.0E+0,0.0E+0,0.0E+0]
 	vucomiss	%xmm0, %xmm1
 	seta	%al
-	retq
-func0000000000000008:                   # @func0000000000000008
-	vmulss	%xmm1, %xmm1, %xmm1
-	vmulss	%xmm0, %xmm1, %xmm0
-	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpeqss	%xmm1, %xmm0, %k0
-	kmovd	%k0, %eax
-	retq
-func000000000000000e:                   # @func000000000000000e
-	vmulss	%xmm1, %xmm1, %xmm1
-	vmulss	%xmm0, %xmm1, %xmm0
-	vucomiss	%xmm0, %xmm0
-	setnp	%al
 	retq

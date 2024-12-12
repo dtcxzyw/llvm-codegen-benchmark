@@ -1,15 +1,15 @@
-func0000000000000003:                   # @func0000000000000003
-	notb	%sil
-	movzbl	%sil, %eax
-	andl	$1, %eax
-	shll	$6, %eax
-	shrl	%edi
-	leal	48(%rdi,%rax), %eax
-	retq
 func0000000000000007:                   # @func0000000000000007
 	andl	$1, %esi
 	shrl	$8, %edi
 	leal	8(%rdi,%rsi,8), %eax
+	retq
+func0000000000000003:                   # @func0000000000000003
+	shrl	$2, %esi
+	notb	%dil
+	movzbl	%dil, %eax
+	andl	$1, %eax
+	shll	$14, %eax
+	leal	16383(%rsi,%rax), %eax
 	retq
 func0000000000000006:                   # @func0000000000000006
 	shrl	%esi

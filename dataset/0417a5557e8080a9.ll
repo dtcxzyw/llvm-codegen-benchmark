@@ -10,15 +10,15 @@
 ; wireshark/optimized/ngsniffer.c.ll
 ; wolfssl/optimized/tls.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i16 %0, i8 %1) #0 {
+define i1 @func000000000000002c(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i16
-  %3 = or disjoint i16 %2, %0
+  %3 = or disjoint i16 %0, %2
   %4 = icmp ne i16 %3, 0
   ret i1 %4
 }
 
-; 75 occurrences:
+; 73 occurrences:
 ; clamav/optimized/ishield.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
@@ -70,7 +70,6 @@ entry:
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; wireshark/optimized/charsets.c.ll
-; wireshark/optimized/csids.c.ll
 ; wireshark/optimized/editcap.c.ll
 ; wireshark/optimized/erf.c.ll
 ; wireshark/optimized/eyesdn.c.ll
@@ -80,7 +79,6 @@ entry:
 ; wireshark/optimized/netscaler.c.ll
 ; wireshark/optimized/ngsniffer.c.ll
 ; wireshark/optimized/packet-atm.c.ll
-; wireshark/optimized/packet-chdlc.c.ll
 ; wireshark/optimized/packet-dof.c.ll
 ; wireshark/optimized/packet-ieee802154.c.ll
 ; wireshark/optimized/packet-k12.c.ll
@@ -95,10 +93,10 @@ entry:
 ; wolfssl/optimized/tls.c.ll
 ; wolfssl/optimized/tls13.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i16
-  %3 = or disjoint i16 %2, %0
+  %3 = or disjoint i16 %0, %2
   %4 = icmp eq i16 %3, -219
   ret i1 %4
 }
@@ -126,10 +124,10 @@ entry:
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i16 %0, i8 %1) #0 {
+define i1 @func000000000000002a(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i16
-  %3 = or disjoint i16 %2, %0
+  %3 = or disjoint i16 %0, %2
   %4 = icmp sgt i16 %3, 0
   ret i1 %4
 }
@@ -138,11 +136,11 @@ entry:
 ; openjdk/optimized/check_classname.ll
 ; wireshark/optimized/packet-gmr1_rach.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i16 %0, i8 %1) #0 {
+define i1 @func0000000000000074(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i16
-  %3 = or disjoint i16 %2, %0
-  %4 = icmp ult i16 %3, 48
+  %3 = or disjoint i16 %0, %2
+  %4 = icmp samesign ult i16 %3, 48
   ret i1 %4
 }
 
@@ -150,15 +148,15 @@ entry:
 ; linux/optimized/intel_ggtt.ll
 ; php/optimized/zend_compile.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i16 %0, i8 %1) #0 {
+define i1 @func000000000000004c(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i16
-  %3 = or i16 %2, %0
+  %3 = or i16 %0, %2
   %4 = icmp ne i16 %3, 0
   ret i1 %4
 }
 
-; 17 occurrences:
+; 15 occurrences:
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/archive_read_support_format_zip.c.ll
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
@@ -166,8 +164,6 @@ entry:
 ; freetype/optimized/sfnt.c.ll
 ; php/optimized/zip.ll
 ; redis/optimized/cluster.ll
-; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
-; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; wireshark/optimized/erf.c.ll
 ; wireshark/optimized/k12.c.ll
 ; wireshark/optimized/netmon.c.ll
@@ -177,10 +173,10 @@ entry:
 ; wolfssl/optimized/tls.c.ll
 ; wolfssl/optimized/tls13.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i16 %0, i8 %1) #0 {
+define i1 @func0000000000000028(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i16
-  %3 = or disjoint i16 %2, %0
+  %3 = or disjoint i16 %0, %2
   %4 = icmp ugt i16 %3, 4
   ret i1 %4
 }
@@ -191,15 +187,41 @@ entry:
 ; openusd/optimized/changes.cpp.ll
 ; stockfish/optimized/tbprobe.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i16 %0, i8 %1) #0 {
+define i1 @func0000000000000061(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i16
-  %3 = or disjoint i16 %2, %0
+  %3 = or disjoint i16 %0, %2
   %4 = icmp eq i16 %3, 4095
   ret i1 %4
 }
 
-; 27 occurrences:
+; 3 occurrences:
+; boost/optimized/ipv6_address.ll
+; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
+; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i16 %0, i8 %1) #0 {
+entry:
+  %2 = zext i8 %1 to i16
+  %3 = or disjoint i16 %0, %2
+  %4 = icmp samesign ugt i16 %3, 15
+  ret i1 %4
+}
+
+; 3 occurrences:
+; libquic/optimized/poly.c.ll
+; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
+; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i16 %0, i8 %1) #0 {
+entry:
+  %2 = zext i8 %1 to i16
+  %3 = or disjoint i16 %0, %2
+  %4 = icmp samesign ult i16 %3, 12289
+  ret i1 %4
+}
+
+; 24 occurrences:
 ; clamav/optimized/XzIn.c.ll
 ; clamav/optimized/cabd.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
@@ -209,11 +231,8 @@ entry:
 ; draco/optimized/mesh_sequential_decoder.cc.ll
 ; draco/optimized/point_cloud_decoder.cc.ll
 ; freetype/optimized/sfnt.c.ll
-; libquic/optimized/poly.c.ll
 ; libquic/optimized/url_canon_host.cc.ll
 ; linux/optimized/vars.ll
-; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
-; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; wireshark/optimized/aethra.c.ll
 ; wireshark/optimized/editcap.c.ll
 ; wireshark/optimized/k12.c.ll
@@ -228,21 +247,21 @@ entry:
 ; wireshark/optimized/vwr.c.ll
 ; wolfssl/optimized/tls.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i16 %0, i8 %1) #0 {
+define i1 @func0000000000000024(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i16
-  %3 = or disjoint i16 %2, %0
-  %4 = icmp ult i16 %3, 12289
+  %3 = or disjoint i16 %0, %2
+  %4 = icmp ult i16 %3, 128
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; wireshark/optimized/packet-cemi.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i16 %0, i8 %1) #0 {
+define i1 @func000000000000006c(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i16
-  %3 = or disjoint i16 %2, %0
+  %3 = or disjoint i16 %0, %2
   %4 = icmp ne i16 %3, 977
   ret i1 %4
 }
@@ -250,10 +269,10 @@ entry:
 ; 1 occurrences:
 ; imgui/optimized/imgui_draw.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i16 %0, i8 %1) #0 {
+define i1 @func0000000000000026(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i16
-  %3 = or disjoint i16 %2, %0
+  %3 = or disjoint i16 %0, %2
   %4 = icmp slt i16 %3, 1
   ret i1 %4
 }

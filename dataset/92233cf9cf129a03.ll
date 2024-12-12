@@ -7,7 +7,7 @@ entry:
   %3 = uitofp nneg i64 %2 to double
   %4 = fmul double %1, 5.000000e-01
   %5 = fdiv double %4, %3
-  %6 = fadd double %5, %0
+  %6 = fadd double %0, %5
   ret double %6
 }
 
@@ -25,7 +25,7 @@ entry:
   %3 = uitofp i64 %2 to double
   %4 = fmul double %1, 5.000000e-01
   %5 = fdiv double %4, %3
-  %6 = fadd double %5, %0
+  %6 = fadd double %0, %5
   ret double %6
 }
 

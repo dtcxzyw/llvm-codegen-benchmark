@@ -1,7 +1,8 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; abc/optimized/sswRarity.c.ll
 ; abseil-cpp/optimized/fast_uniform_bits_test.cc.ll
+; linux/optimized/lbr.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000009(i64 %0, i64 %1) #0 {

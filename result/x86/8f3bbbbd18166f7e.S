@@ -1,4 +1,4 @@
-func000000000000056a:                   # @func000000000000056a
+func00000000000014ca:                   # @func00000000000014ca
 	leal	(%rsi,%rdx), %eax
 	leal	-1(%rsi,%rdx), %ecx
 	testl	%eax, %eax
@@ -6,7 +6,7 @@ func000000000000056a:                   # @func000000000000056a
 	cmpl	$100, %ecx
 	setge	%al
 	retq
-func0000000000000566:                   # @func0000000000000566
+func00000000000014c6:                   # @func00000000000014c6
 	leal	(%rsi,%rdx), %eax
 	testl	%eax, %eax
 	leal	-1(%rsi,%rdx), %eax

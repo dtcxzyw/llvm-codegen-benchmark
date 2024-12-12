@@ -1,4 +1,4 @@
-func0000000000000cc1:                   # @func0000000000000cc1
+func0000000000003181:                   # @func0000000000003181
 	xorb	$11, %dl
 	xorb	$7, %sil
 	orb	%dl, %sil

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nuw i32 1, %2
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/tcg.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c1(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000181(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl i32 16, %2
@@ -33,7 +33,7 @@ entry:
 ; qemu/optimized/tcg.c.ll
 ; yosys/optimized/pmux2shiftx.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000e1(i64 %0, i64 %1) #0 {
+define i32 @func00000000000001c1(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nuw i32 1, %2
@@ -46,7 +46,7 @@ entry:
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/mpmTruth.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000f1(i64 %0, i64 %1) #0 {
+define i32 @func00000000000001e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nuw nsw i32 1, %2
@@ -58,7 +58,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/pci.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nuw nsw i32 1, %2

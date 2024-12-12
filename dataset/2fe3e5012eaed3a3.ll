@@ -13,9 +13,9 @@ entry:
 ; 1 occurrences:
 ; openssl/optimized/asn1_encode_test-bin-asn1_encode_test.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000023(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000063(i64 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ugt i64 %0, 255
+  %2 = icmp samesign ugt i64 %0, 255
   %3 = select i1 %2, i64 4, i64 %1
   %4 = add nuw nsw i64 %3, %0
   ret i64 %4
@@ -63,7 +63,7 @@ define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %0, 65536
   %3 = select i1 %2, i64 6, i64 %1
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 

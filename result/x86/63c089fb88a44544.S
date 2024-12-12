@@ -10,19 +10,19 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	%edi, %eax
 	seta	%al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	leal	-1(%rsi,%rdx), %eax
 	addl	$-3, %edi
 	cmpl	%edi, %eax
 	setb	%al
 	retq
-func000000000000011a:                   # @func000000000000011a
+func000000000000022a:                   # @func000000000000022a
 	leal	3(%rsi,%rdx), %eax
 	addl	$-32, %edi
 	cmpl	%edi, %eax
 	setg	%al
 	retq
-func0000000000000116:                   # @func0000000000000116
+func0000000000000226:                   # @func0000000000000226
 	leal	3(%rsi,%rdx), %eax
 	addl	$-32, %edi
 	cmpl	%edi, %eax

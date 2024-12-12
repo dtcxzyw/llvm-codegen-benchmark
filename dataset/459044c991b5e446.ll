@@ -22,7 +22,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i1 %1) #0 {
 entry:
   %.tr = trunc i32 %0 to i1
-  %.narrow = or i1 %.tr, %1
+  %.narrow = or i1 %1, %.tr
   %2 = zext i1 %.narrow to i32
   ret i32 %2
 }

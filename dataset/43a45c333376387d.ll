@@ -1,5 +1,7 @@
 
-; 29 occurrences:
+; 31 occurrences:
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/btSoftBody.ll
 ; darktable/optimized/introspection_denoiseprofile.c.ll
 ; faiss/optimized/IndexRowwiseMinMax.cpp.ll
@@ -62,11 +64,8 @@ entry:
   ret float %3
 }
 
-; 9 occurrences:
-; gromacs/optimized/coupling.cpp.ll
-; gromacs/optimized/genconf.cpp.ll
+; 6 occurrences:
 ; gromacs/optimized/gmx_wham.cpp.ll
-; gromacs/optimized/insert_molecules.cpp.ll
 ; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
 ; pbrt-v4/optimized/interaction.cpp.ll
 ; pbrt-v4/optimized/lights.cpp.ll

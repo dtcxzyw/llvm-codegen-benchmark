@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 21 occurrences:
 ; gromacs/optimized/gmx_nmeig.cpp.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; hermes/optimized/TraceInterpreter.cpp.ll
@@ -19,6 +19,8 @@
 ; openjdk/optimized/doCall.ll
 ; openjdk/optimized/jvmFlagConstraintsCompiler.ll
 ; rocksdb/optimized/block_based_table_reader.cc.ll
+; yosys/optimized/sim.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i8 %2) #0 {
 entry:

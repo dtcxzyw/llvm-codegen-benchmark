@@ -51,9 +51,3 @@ func0000000000000043:                   # @func0000000000000043
 	cmpl	%edx, %esi
 	adcl	$0, %eax
 	retq
-func0000000000000021:                   # @func0000000000000021
-	movl	%edi, %eax
-	movzbl	%dl, %ecx
-	cmpl	%esi, %ecx
-	adcl	$0, %eax
-	retq

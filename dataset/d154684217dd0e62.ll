@@ -1,6 +1,5 @@
 
-; 24 occurrences:
-; linux/optimized/feat_ctl.ll
+; 23 occurrences:
 ; linux/optimized/tg3.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
@@ -30,7 +29,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = lshr i32 %3, 16
   %5 = and i32 %4, 4095
-  %6 = or disjoint i32 %5, %1
+  %6 = or disjoint i32 %1, %5
   %7 = or disjoint i32 %6, %0
   ret i32 %7
 }
@@ -70,14 +69,13 @@ entry:
   %3 = lshr i64 %2, 48
   %4 = trunc nuw nsw i64 %3 to i32
   %5 = and i32 %4, 255
-  %6 = or disjoint i32 %5, %1
+  %6 = or disjoint i32 %1, %5
   %7 = or disjoint i32 %6, %0
   ret i32 %7
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; icu/optimized/coleitr.ll
-; linux/optimized/feat_ctl.ll
 ; linux/optimized/insn-eval.ll
 ; llvm/optimized/CGBlocks.cpp.ll
 ; mold/optimized/output-chunks.cc.M68K.cc.ll
@@ -102,7 +100,7 @@ entry:
   %3 = lshr i64 %2, 26
   %4 = trunc i64 %3 to i32
   %5 = and i32 %4, 67108864
-  %6 = or disjoint i32 %5, %1
+  %6 = or disjoint i32 %1, %5
   %7 = or i32 %6, %0
   ret i32 %7
 }

@@ -3,7 +3,7 @@
 ; darktable/optimized/tagging.c.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000e6(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = add nuw nsw i32 %1, 1
@@ -15,10 +15,10 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/Utils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000006c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -3
-  %4 = icmp ne i32 %3, %1
+  %4 = icmp ne i32 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -26,10 +26,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/TargetLoweringObjectFile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000004c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -2
-  %4 = icmp ne i32 %3, %1
+  %4 = icmp ne i32 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -37,7 +37,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-zbee-zcl.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000044(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = add nuw i32 %1, 1
@@ -54,6 +54,19 @@ entry:
   %3 = add i32 %2, 4
   %4 = add i32 %1, -20
   %5 = icmp slt i32 %4, %3
+  %6 = select i1 %0, i1 %5, i1 false
+  ret i1 %6
+}
+
+; 2 occurrences:
+; opencv/optimized/imgwarp.cpp.ll
+; wireshark/optimized/packet-babel.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000a4(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %2, -8
+  %4 = add nsw i32 %1, -14
+  %5 = icmp ult i32 %4, %3
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }
@@ -85,7 +98,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-lmp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000086(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -4
   %4 = add i32 %1, 4
@@ -211,7 +224,7 @@ entry:
 ; z3/optimized/warning.cpp.ll
 ; z3/optimized/z3_replayer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000048(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 8
   %4 = add nuw i32 %1, 8
@@ -221,23 +234,11 @@ entry:
 }
 
 ; 1 occurrences:
-; opencv/optimized/imgwarp.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000054(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %2, -3
-  %4 = add nsw i32 %1, -1
-  %5 = icmp ult i32 %4, %3
-  %6 = select i1 %0, i1 %5, i1 false
-  ret i1 %6
-}
-
-; 1 occurrences:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a6(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp sge i32 %2, %1
+  %3 = icmp sle i32 %1, %2
   %4 = select i1 %0, i1 %3, i1 false
   ret i1 %4
 }

@@ -13,7 +13,8 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 
-; 6 occurrences:
+; 7 occurrences:
+; lvgl/optimized/lv_draw_sw_line.ll
 ; opencv/optimized/erfilter.cpp.ll
 ; verilator/optimized/V3AstNodes.cpp.ll
 ; verilator/optimized/V3Width.cpp.ll
@@ -29,7 +30,7 @@ entry:
   ret i32 %4
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; gromacs/optimized/dssp.cpp.ll
 ; llvm/optimized/AArch64ConditionOptimizer.cpp.ll
 ; llvm/optimized/CommentCommandTraits.cpp.ll
@@ -38,6 +39,7 @@ entry:
 ; llvm/optimized/SemaDeclObjC.cpp.ll
 ; llvm/optimized/SemaLookup.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
+; lvgl/optimized/lv_draw_sw_line.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; zxing/optimized/Barcode.cpp.ll
 ; zxing/optimized/ConcentricFinder.cpp.ll
@@ -46,7 +48,7 @@ define i32 @func0000000000000005(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = sub nsw i32 %0, %2
-  %4 = call i32 @llvm.abs.i32(i32 %3, i1 true)
+  %4 = tail call i32 @llvm.abs.i32(i32 %3, i1 true)
   ret i32 %4
 }
 

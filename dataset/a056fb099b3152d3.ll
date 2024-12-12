@@ -1,5 +1,5 @@
 
-; 31 occurrences:
+; 30 occurrences:
 ; cmake/optimized/multi.c.ll
 ; cpython/optimized/mpdecimal.ll
 ; curl/optimized/libcurl_la-multi.ll
@@ -8,7 +8,6 @@
 ; icu/optimized/ubidi.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; linux/optimized/drm_dp_mst_topology.ll
-; linux/optimized/logips2pp.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/MCAsmStreamer.cpp.ll
 ; llvm/optimized/PrecompiledPreamble.cpp.ll
@@ -32,7 +31,7 @@
 ; z3/optimized/mpfx.cpp.ll
 ; z3/optimized/nnf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = zext nneg i8 %2 to i32
@@ -41,12 +40,11 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
-; openusd/optimized/patchTableFactory.cpp.ll
 ; z3/optimized/mpff.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i8 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = zext nneg i8 %2 to i32

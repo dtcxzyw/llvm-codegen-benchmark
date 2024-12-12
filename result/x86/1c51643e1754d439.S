@@ -2,13 +2,13 @@ func0000000000000001:                   # @func0000000000000001
 	movslq	%edx, %rax
 	subq	%rax, %rsi
 	addq	$16, %rsi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	movslq	%edx, %rax
 	subq	%rax, %rsi
 	incq	%rsi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq

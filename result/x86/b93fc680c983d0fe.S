@@ -6,7 +6,7 @@ func0000000000000007:                   # @func0000000000000007
 	retq
 func0000000000000003:                   # @func0000000000000003
 	movzwl	%si, %eax
-	leaq	65536(%rax,%rdi), %rax
+	leaq	65536(%rdi,%rax), %rax
 	retq
 func0000000000000000:                   # @func0000000000000000
 	movzwl	%si, %eax

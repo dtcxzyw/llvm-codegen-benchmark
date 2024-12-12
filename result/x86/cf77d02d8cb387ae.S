@@ -22,7 +22,7 @@ func0000000000000006:                   # @func0000000000000006
 	testq	%rsi, %rsi
 	cmovsl	%edi, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	movl	%edx, %eax
 	andl	$1, %eax
 	shll	$5, %eax

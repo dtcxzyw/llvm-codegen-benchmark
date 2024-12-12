@@ -1,5 +1,6 @@
 
-; 20 occurrences:
+; 19 occurrences:
+; boost/optimized/to_chars.ll
 ; git/optimized/dir.ll
 ; libjpeg-turbo/optimized/jdcoefct.c.ll
 ; linux/optimized/binfmt_elf.ll
@@ -8,8 +9,6 @@
 ; linux/optimized/dmi_scan.ll
 ; linux/optimized/intel_engine_cs.ll
 ; linux/optimized/netconsole.ll
-; linux/optimized/support.ll
-; llvm/optimized/CGStmt.cpp.ll
 ; luajit/optimized/minilua.ll
 ; luau/optimized/lbuiltins.cpp.ll
 ; ncnn/optimized/mat_pixel_rotate.cpp.ll
@@ -29,7 +28,7 @@ entry:
   ret i64 %4
 }
 
-; 22 occurrences:
+; 25 occurrences:
 ; abc/optimized/kitIsop.c.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; llvm/optimized/ArgumentPromotion.cpp.ll
@@ -37,13 +36,16 @@ entry:
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/CGCleanup.cpp.ll
+; llvm/optimized/CGStmt.cpp.ll
 ; llvm/optimized/CodeGenModule.cpp.ll
 ; llvm/optimized/Core.cpp.ll
+; llvm/optimized/CoroSplit.cpp.ll
 ; llvm/optimized/DeadArgumentElimination.cpp.ll
 ; llvm/optimized/IRBuilder.cpp.ll
 ; llvm/optimized/InstCombineCalls.cpp.ll
 ; llvm/optimized/Instructions.cpp.ll
 ; llvm/optimized/LLParser.cpp.ll
+; llvm/optimized/WholeProgramDevirt.cpp.ll
 ; llvm/optimized/X86WinEHState.cpp.ll
 ; lua/optimized/lstrlib.ll
 ; lua/optimized/lvm.ll

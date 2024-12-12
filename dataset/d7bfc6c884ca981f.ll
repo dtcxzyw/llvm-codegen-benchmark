@@ -1,10 +1,13 @@
 
-; 67 occurrences:
+; 69 occurrences:
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/gaussian_distribution_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; casadi/optimized/newton.cpp.ll
 ; clamav/optimized/pe_icons.c.ll
 ; darktable/optimized/introspection_ashift.c.ll
@@ -25,7 +28,6 @@
 ; graphviz/optimized/taper.c.ll
 ; gromacs/optimized/grompp.cpp.ll
 ; gromacs/optimized/restcbt.cpp.ll
-; gromacs/optimized/tabulatednormaldistribution.cpp.ll
 ; grpc/optimized/flow_control.cc.ll
 ; icu/optimized/localematcher.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll

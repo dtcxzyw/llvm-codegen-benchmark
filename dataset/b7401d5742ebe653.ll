@@ -11,8 +11,10 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; folly/optimized/Request.cpp.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
@@ -33,13 +35,12 @@ entry:
   ret i64 %4
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; graphviz/optimized/pack.c.ll
 ; linux/optimized/xarray.ll
 ; llvm/optimized/AMDGPUEmitPrintf.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; Function Attrs: nounwind
@@ -67,7 +68,7 @@ entry:
 ; openmpi/optimized/ad_write_nolock.ll
 ; openmpi/optimized/ad_write_str_naive.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000002e(i64 %0, i64 %1) #0 {
+define i64 @func000000000000004e(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = icmp sle i64 %2, %0
@@ -85,10 +86,21 @@ entry:
 ; meshlab/optimized/filter_unsharp.cpp.ll
 ; protobuf/optimized/printer.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000022(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000042(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = icmp eq i64 %2, %0
+  %4 = zext i1 %3 to i64
+  ret i64 %4
+}
+
+; 1 occurrences:
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000092(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nuw i64 %1, 1
+  %3 = icmp uge i64 %2, %0
   %4 = zext i1 %3 to i64
   ret i64 %4
 }

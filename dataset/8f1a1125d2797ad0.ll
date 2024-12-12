@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; php/optimized/zend_inheritance.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 14
   %4 = and i32 %3, 1
@@ -17,7 +17,7 @@ entry:
 ; php/optimized/zend_closures.ll
 ; php/optimized/zend_inheritance.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 14
   %4 = and i32 %3, 1

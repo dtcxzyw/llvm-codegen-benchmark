@@ -13,6 +13,6 @@ func0000000000000022:                   # @func0000000000000022
 func0000000000000028:                   # @func0000000000000028
 	shrq	$32, %rdi
 	vmovd	%edi, %xmm1
-	vcmpeqss	%xmm0, %xmm1, %k0
+	vcmpeqss	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq

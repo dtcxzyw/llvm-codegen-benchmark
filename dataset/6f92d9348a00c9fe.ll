@@ -1,6 +1,6 @@
 
-%"class.llvm::Use.2944842" = type { ptr, ptr, ptr, ptr }
-%"class.llvm::Use.3045680" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3138418" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3239024" = type { ptr, ptr, ptr, ptr }
 
 ; 1 occurrences:
 ; openjdk/optimized/vmError.ll
@@ -15,7 +15,7 @@ entry:
   ret i64 %7
 }
 
-; 78 occurrences:
+; 77 occurrences:
 ; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64TargetMachine.cpp.ll
@@ -72,7 +72,6 @@ entry:
 ; llvm/optimized/MemorySanitizer.cpp.ll
 ; llvm/optimized/OMPIRBuilder.cpp.ll
 ; llvm/optimized/OpenMPOpt.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/RewriteStatepointsForGC.cpp.ll
@@ -98,7 +97,7 @@ entry:
 define i64 @func0000000000000031(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw %"class.llvm::Use.2944842", ptr %1, i64 %3
+  %4 = getelementptr nusw %"class.llvm::Use.3138418", ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
   %7 = lshr exact i64 %6, 5
@@ -111,7 +110,7 @@ entry:
 define i64 @func0000000000000020(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr %"class.llvm::Use.3045680", ptr %1, i64 %3
+  %4 = getelementptr %"class.llvm::Use.3239024", ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
   %7 = lshr i64 %6, 5

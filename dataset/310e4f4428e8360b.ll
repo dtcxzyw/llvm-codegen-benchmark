@@ -1,4 +1,28 @@
 
+; 1 occurrences:
+; yalantinglibs/optimized/benchmark.cpp.ll
+; Function Attrs: nounwind
+define i64 @func00000000000000c0(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 3
+  %4 = add i64 %3, 8
+  %5 = add i64 %1, %4
+  %6 = add i64 %5, %0
+  ret i64 %6
+}
+
+; 1 occurrences:
+; yalantinglibs/optimized/benchmark.cpp.ll
+; Function Attrs: nounwind
+define i64 @func00000000000000e0(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 1
+  %4 = add i64 %3, 2
+  %5 = add i64 %1, %4
+  %6 = add i64 %5, %0
+  ret i64 %6
+}
+
 ; 4 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; casadi/optimized/sparsity.cpp.ll
@@ -21,7 +45,7 @@ define i64 @func00000000000000f0(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 6
   %4 = add i64 %3, 169883889216
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = add i64 %5, %0
   ret i64 %6
 }
@@ -33,7 +57,7 @@ define i64 @func000000000000007f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 6
   %4 = add i64 %3, 169883889216
-  %5 = add nuw nsw i64 %4, %1
+  %5 = add nuw nsw i64 %1, %4
   %6 = add nuw nsw i64 %5, %0
   ret i64 %6
 }

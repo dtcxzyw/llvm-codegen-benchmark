@@ -10,21 +10,27 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	andb	%dil, %al
 	retq
-func0000000000000004:                   # @func0000000000000004
-	andl	$2146435072, %esi               # imm = 0x7FF00000
-	cmpl	$111149057, %esi                # imm = 0x6A00001
-	setb	%al
-	andb	%dil, %al
-	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	andl	$248, %esi
 	cmpl	$9, %esi
 	setae	%al
 	andb	%dil, %al
 	retq
+func0000000000000004:                   # @func0000000000000004
+	andl	$-2, %esi
+	cmpl	$49149, %esi                    # imm = 0xBFFD
+	setb	%al
+	andb	%dil, %al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	testl	$65504, %esi                    # imm = 0xFFE0
+	sete	%al
+	andb	%dil, %al
+	retq
 func000000000000000a:                   # @func000000000000000a
-	testl	$-4, %esi
-	setg	%al
+	andl	$-32769, %esi                   # imm = 0xFFFF7FFF
+	cmpl	$2, %esi
+	setge	%al
 	andb	%dil, %al
 	retq
 func0000000000000006:                   # @func0000000000000006

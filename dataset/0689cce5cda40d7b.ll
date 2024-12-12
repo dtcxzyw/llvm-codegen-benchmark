@@ -1,19 +1,19 @@
 
-%"struct.std::__1::pair.248.2492163" = type { i32, i32 }
-%struct.IOTest.2596765 = type { ptr, %struct.EventNotifier.2596766, i8, i32, i8, ptr, i32 }
-%struct.EventNotifier.2596766 = type { i32, i32, i8 }
-%"class.ZXing::Trit.3465983" = type { i8 }
+%"struct.std::__1::pair.248.2607584" = type { i32, i32 }
+%struct.IOTest.2710232 = type { ptr, %struct.EventNotifier.2710233, i8, i32, i8, ptr, i32 }
+%struct.EventNotifier.2710233 = type { i32, i32, i8 }
+%"class.ZXing::Trit.3650236" = type { i8 }
 
 ; 2 occurrences:
 ; git/optimized/block.ll
 ; mitsuba3/optimized/rgb2spec.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000022(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000023(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 3
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw float, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw float, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -49,12 +49,12 @@ entry:
 ; wasmtime-rs/optimized/44b2uzewkuf2yts2.ll
 ; wasmtime-rs/optimized/47hgs4eifsow3k34.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 3
   %4 = add i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw %"struct.std::__1::pair.248.2492163", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.std::__1::pair.248.2607584", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -62,16 +62,17 @@ entry:
 ; draco/optimized/obj_decoder.cc.ll
 ; minetest/optimized/treegen.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000002b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 7
   %4 = add nsw i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; linux/optimized/rc80211_minstrel_ht.ll
 ; postgres/optimized/multixact.ll
 ; qemu/optimized/hw_misc_pci-testdev.c.ll
 ; Function Attrs: nounwind
@@ -80,34 +81,35 @@ entry:
   %3 = mul nuw nsw i32 %2, 3
   %4 = add nuw nsw i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr %struct.IOTest.2596765, ptr %0, i64 %5
+  %6 = getelementptr %struct.IOTest.2710232, ptr %0, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 6
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i16, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i16, ptr %0, i64 %5
   ret ptr %6
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; abc/optimized/extraUtilPerm.c.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; opencv/optimized/color_lab.cpp.ll
+; stb/optimized/stb_connected_components.c.ll
 ; zxing/optimized/MCReader.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 5
   %4 = add nuw nsw i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i32, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i32, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -119,7 +121,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 3
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = zext i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
@@ -128,24 +130,24 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000062(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000063(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 3
   %4 = add i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw i32, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i32, ptr %0, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; zxing/optimized/QRMatrixUtil.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 7
   %4 = add nuw nsw i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw %"class.ZXing::Trit.3465983", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.ZXing::Trit.3650236", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -153,12 +155,12 @@ entry:
 ; luajit/optimized/lj_ccallback.ll
 ; luajit/optimized/lj_ccallback_dyn.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000042(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000043(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw i32 %2, 17
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 

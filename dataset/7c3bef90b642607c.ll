@@ -4,7 +4,7 @@
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/X86FastISel.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000141(i32 %0, i1 %1) #0 {
 entry:
   %2 = icmp slt i32 %0, 1
   %3 = xor i1 %1, true
@@ -16,7 +16,7 @@ entry:
 ; cmake/optimized/cmFileCommand.cxx.ll
 ; cvc5/optimized/constraint.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i1 %1) #0 {
 entry:
   %2 = icmp ne i32 %0, 0
   %3 = xor i1 %1, true

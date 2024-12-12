@@ -1,6 +1,7 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; darktable/optimized/NikonDecompressor.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; minetest/optimized/treegen.cpp.ll
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; wireshark/optimized/packet-kdsp.c.ll
@@ -12,7 +13,7 @@ entry:
   ret i16 %4
 }
 
-; 15 occurrences:
+; 17 occurrences:
 ; clamav/optimized/entconv.c.ll
 ; clamav/optimized/matcher-bm.c.ll
 ; clamav/optimized/vba_extract.c.ll
@@ -28,6 +29,8 @@ entry:
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wireshark/optimized/packet-v5ua.c.ll
 ; wireshark/optimized/peekclassic.c.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i1 %0, i16 %1, i16 %2) #0 {
 entry:
@@ -36,10 +39,11 @@ entry:
   ret i16 %4
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; clamav/optimized/entconv.c.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64LegalizerInfo.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; spike/optimized/clrs16.ll
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll

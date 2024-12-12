@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 24 occurrences:
 ; c3c/optimized/sema_casts.c.ll
 ; ceres/optimized/gradient_problem_solver.cc.ll
 ; ceres/optimized/solver.cc.ll
@@ -13,13 +13,11 @@
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86MCInstLower.cpp.ll
 ; llvm/optimized/X86MnemonicTables.cpp.ll
-; ocio/optimized/CDLOpData.cpp.ll
 ; quantlib/optimized/euribor.ll
 ; quantlib/optimized/eurlibor.ll
 ; quantlib/optimized/libor.ll
 ; quantlib/optimized/target.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
-; rust-analyzer-rs/optimized/68ytxs4wk5ncclk.ll
 ; rust-analyzer-rs/optimized/k57ct4r8b4mvzu9.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll

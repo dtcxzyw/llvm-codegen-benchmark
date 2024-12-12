@@ -29,13 +29,11 @@ func0000000000000000:                   # @func0000000000000000
 	or	a0, a0, a1
 	ret
 func000000000000000b:                   # @func000000000000000b
-	slli	a1, a1, 16
-	lui	a2, 2032
+	slli	a1, a1, 8
+	lui	a2, 3
 	add	a1, a1, a2
-	lui	a2, 4080
-	and	a1, a1, a2
-	lui	a2, 1044496
-	addiw	a2, a2, -1
-	and	a0, a0, a2
+	slli	a1, a1, 48
+	srli	a1, a1, 48
+	andi	a0, a0, 255
 	or	a0, a0, a1
 	ret

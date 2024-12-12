@@ -10,7 +10,7 @@ func0000000000000007:                   # @func0000000000000007
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpmovsxwd	%xmm2, %ymm0
-	vpcmpnltd	%ymm1, %ymm0, %k0 {%k1}
+	vpcmpled	%ymm0, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -26,7 +26,7 @@ func0000000000000008:                   # @func0000000000000008
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpmovsxwd	%xmm2, %ymm0
-	vpcmpltud	%ymm1, %ymm0, %k0 {%k1}
+	vpcmpnleud	%ymm0, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -34,7 +34,7 @@ func0000000000000001:                   # @func0000000000000001
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpmovsxwd	%xmm2, %ymm0
-	vpcmpeqd	%ymm1, %ymm0, %k0 {%k1}
+	vpcmpeqd	%ymm0, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

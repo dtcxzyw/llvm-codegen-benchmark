@@ -1,4 +1,4 @@
-func000000000000030c:                   // @func000000000000030c
+func000000000000060c:                   // @func000000000000060c
 // %bb.0:                               // %entry
 	cmp	x2, #0
 	csel	x8, x1, x0, eq
@@ -6,7 +6,7 @@ func000000000000030c:                   // @func000000000000030c
 	cset	w0, ne
 	ret
                                         // -- End function
-func0000000000000044:                   // @func0000000000000044
+func0000000000000084:                   // @func0000000000000084
 // %bb.0:                               // %entry
 	cmp	x2, #0
 	mov	x9, #-65484                     // =0xffffffffffff0034

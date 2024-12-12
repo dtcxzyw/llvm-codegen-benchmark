@@ -20,6 +20,16 @@ func0000000000000012:                   # @func0000000000000012
 	mulhu	a0, a0, a1
 	srli	a0, a0, 23
 	ret
+func0000000000000010:                   # @func0000000000000010
+	slli	a1, a0, 8
+	subw	a1, a1, a0
+	lui	a0, 1
+	slli	a1, a1, 48
+	srli	a1, a1, 50
+	addiw	a0, a0, 1147
+	mul	a0, a1, a0
+	srli	a0, a0, 17
+	ret
 func0000000000000018:                   # @func0000000000000018
 	slli	a1, a0, 7
 	subw	a1, a1, a0

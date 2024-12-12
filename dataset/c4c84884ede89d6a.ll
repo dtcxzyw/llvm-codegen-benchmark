@@ -1,8 +1,9 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; git/optimized/git.ll
 ; glslang/optimized/Initialize.cpp.ll
 ; lightgbm/optimized/train_share_states.cpp.ll
+; lvgl/optimized/lv_span.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {

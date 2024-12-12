@@ -10,7 +10,7 @@
 define i16 @func0000000000000004(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 157
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   %4 = zext i1 %3 to i16
   ret i16 %4
 }
@@ -34,7 +34,7 @@ entry:
 define i16 @func0000000000000028(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 511
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   %4 = zext i1 %3 to i16
   ret i16 %4
 }

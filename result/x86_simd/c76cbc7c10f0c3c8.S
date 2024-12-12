@@ -2,8 +2,8 @@ func0000000000000002:                   # @func0000000000000002
 	vcvtps2pd	%ymm3, %zmm4
 	vextractf64x4	$1, %zmm3, %ymm3
 	vcvtps2pd	%ymm3, %zmm3
-	vmulpd	%zmm1, %zmm3, %zmm1
-	vmulpd	%zmm0, %zmm4, %zmm0
+	vmulpd	%zmm3, %zmm1, %zmm1
+	vmulpd	%zmm4, %zmm0, %zmm0
 	vextractf64x4	$1, %zmm2, %ymm3
 	vcvtps2pd	%ymm3, %zmm3
 	vcvtps2pd	%ymm2, %zmm2

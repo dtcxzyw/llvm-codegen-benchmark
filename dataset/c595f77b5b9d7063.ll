@@ -3,7 +3,7 @@
 ; qemu/optimized/hw_nvram_eeprom93xx.c.ll
 ; wasmedge/optimized/filemgr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000081(i8 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -2
   %3 = zext i8 %0 to i32

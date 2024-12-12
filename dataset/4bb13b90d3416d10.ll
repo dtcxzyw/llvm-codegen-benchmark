@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/block_qcow2.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 8
   %4 = sub nuw i64 %0, %3
@@ -11,17 +11,18 @@ entry:
   ret i1 %6
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; clamav/optimized/vba_extract.c.ll
 ; grpc/optimized/status_helper.cc.ll
 ; libwebp/optimized/demux.c.ll
 ; libwebp/optimized/webpinfo.c.ll
 ; wasmedge/optimized/filemgr.cpp.ll
+; zed-rs/optimized/7almbq0vtpgp7q0c9d6k1td97.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %.neg = xor i64 %2, -1
-  %3 = add i64 %.neg, %0
+  %3 = add i64 %0, %.neg
   %4 = zext i32 %1 to i64
   %5 = icmp ult i64 %3, %4
   ret i1 %5
@@ -33,7 +34,7 @@ entry:
 ; tls-rs/optimized/4vg8hiu39ndz9uqe.ll
 ; tls-rs/optimized/7y9936vu35zt2sp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000c4(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 3
   %4 = sub nuw i64 %0, %3
@@ -46,7 +47,7 @@ entry:
 ; assimp/optimized/B3DImporter.cpp.ll
 ; libquic/optimized/pickle.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 12
   %4 = sub i64 %0, %3

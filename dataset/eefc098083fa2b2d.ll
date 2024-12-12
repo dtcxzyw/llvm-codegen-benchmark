@@ -1,5 +1,5 @@
 
-; 218 occurrences:
+; 219 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcExtract.c.ll
 ; abc/optimized/abcScorr.c.ll
@@ -87,7 +87,6 @@
 ; lief/optimized/pk_wrap.c.ll
 ; linux/optimized/8139too.ll
 ; linux/optimized/alternative.ll
-; linux/optimized/cap_audit.ll
 ; linux/optimized/cpuset.ll
 ; linux/optimized/e100.ll
 ; linux/optimized/e1000_main.ll
@@ -156,6 +155,8 @@
 ; llvm/optimized/Triple.cpp.ll
 ; llvm/optimized/TypePrinter.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_canvas.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; miniaudio/optimized/unity.c.ll
 ; mold/optimized/passes.cc.ALPHA.cc.ll
 ; mold/optimized/passes.cc.ARM32.cc.ll

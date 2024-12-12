@@ -1,8 +1,9 @@
 
-; 142 occurrences:
+; 144 occurrences:
 ; abc/optimized/cbaReadVer.c.ll
 ; abc/optimized/giaCSat.c.ll
 ; abc/optimized/giaCTas.c.ll
+; abc/optimized/giaFanout.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
@@ -46,7 +47,6 @@
 ; linux/optimized/acct.ll
 ; linux/optimized/cdrom.ll
 ; linux/optimized/dd.ll
-; linux/optimized/drm_debugfs_crc.ll
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/inetpeer.ll
 ; linux/optimized/intel_dp_hdcp.ll
@@ -65,6 +65,7 @@
 ; linux/optimized/timer.ll
 ; linux/optimized/virtio_net.ll
 ; linux/optimized/vt.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
@@ -91,6 +92,7 @@
 ; opencv/optimized/conv_depthwise.cpp.ll
 ; opencv/optimized/demosaicing.cpp.ll
 ; opencv/optimized/filter.dispatch.cpp.ll
+; opencv/optimized/hough.cpp.ll
 ; opencv/optimized/optflowgf.cpp.ll
 ; opencv/optimized/posit.cpp.ll
 ; openjdk/optimized/jcprepct.ll
@@ -150,7 +152,7 @@ entry:
   ret i64 %2
 }
 
-; 648 occurrences:
+; 647 occurrences:
 ; abc/optimized/abcSpeedup.c.ll
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/acbAbc.c.ll
@@ -197,6 +199,7 @@ entry:
 ; arrow/optimized/compare_internal_avx2.cc.ll
 ; assimp/optimized/IFCUtil.cpp.ll
 ; assimp/optimized/TriangulateProcess.cpp.ll
+; boost/optimized/gregorian.ll
 ; brotli/optimized/decode.c.ll
 ; brotli/optimized/transform.c.ll
 ; bullet3/optimized/b3FixedConstraint.ll
@@ -258,7 +261,6 @@ entry:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; darktable/optimized/introspection_lut3d.c.ll
-; darktable/optimized/jpeg.c.ll
 ; draco/optimized/ply_decoder.cc.ll
 ; duckdb/optimized/ub_duckdb_func_date.cpp.ll
 ; duckdb/optimized/ub_duckdb_main.cpp.ll
@@ -273,6 +275,7 @@ entry:
 ; g2o/optimized/solver_slam2d_linear.cpp.ll
 ; git/optimized/date.ll
 ; git/optimized/kwset.ll
+; git/optimized/merge-ort.ll
 ; git/optimized/parse-options.ll
 ; git/optimized/strbuf.ll
 ; graphviz/optimized/DotIO.c.ll
@@ -473,7 +476,6 @@ entry:
 ; meshlab/optimized/eigen_mesh_conversions.cpp.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -573,7 +575,6 @@ entry:
 ; openblas/optimized/dbdsqr.c.ll
 ; openblas/optimized/dhseqr.c.ll
 ; openblas/optimized/dlar1v.c.ll
-; openblas/optimized/dstein.c.ll
 ; openblas/optimized/dstemr.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; opencv/optimized/aruco_dictionary.cpp.ll
@@ -686,7 +687,6 @@ entry:
 ; openmpi/optimized/io_ompio.ll
 ; openmpi/optimized/ompi_datatype_args.ll
 ; openmpi/optimized/test_overhead.ll
-; openmpi/optimized/test_pvar_access.ll
 ; openmpi/optimized/topo_base_dist_graph_create.ll
 ; openmpi/optimized/topo_treematch_dist_graph_create.ll
 ; openspiel/optimized/TransTableS.cpp.ll
@@ -703,10 +703,8 @@ entry:
 ; openspiel/optimized/oh_hell_test.cc.ll
 ; openspiel/optimized/spades.cc.ll
 ; openssl/optimized/libcrypto-lib-curve25519.ll
-; openssl/optimized/libcrypto-lib-deterministic_nonce.ll
 ; openssl/optimized/libcrypto-lib-rsaz_exp_x2.ll
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
-; openssl/optimized/libcrypto-shlib-deterministic_nonce.ll
 ; openssl/optimized/libcrypto-shlib-rsaz_exp_x2.ll
 ; openssl/optimized/openssl-bin-ocsp.ll
 ; openusd/optimized/AVIFImage.cpp.ll
@@ -737,7 +735,9 @@ entry:
 ; php/optimized/php_date.ll
 ; php/optimized/unixtime2tm.ll
 ; portaudio/optimized/pa_converters.c.ll
+; postgres/optimized/execExpr.ll
 ; postgres/optimized/gindatapage.ll
+; postgres/optimized/parse_utilcmd.ll
 ; postgres/optimized/zic.ll
 ; pybind11/optimized/test_builtin_casters.cpp.ll
 ; pybind11/optimized/test_callbacks.cpp.ll
@@ -798,6 +798,7 @@ entry:
 ; velox/optimized/Base64.cpp.ll
 ; verilator/optimized/V3Undriven.cpp.ll
 ; wolfssl/optimized/asn.c.ll
+; zed-rs/optimized/4hdn1csvepxizqbxhztzuw0uw.ll
 ; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0) #0 {
@@ -814,17 +815,6 @@ entry:
 define i64 @func0000000000000002(i32 %0) #0 {
 entry:
   %1 = mul nuw i32 %0, 16843009
-  %2 = sext i32 %1 to i64
-  ret i64 %2
-}
-
-; 2 occurrences:
-; openusd/optimized/matrix3d.cpp.ll
-; openusd/optimized/matrix3f.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000003(i32 %0) #0 {
-entry:
-  %1 = mul nuw nsw i32 %0, 3
   %2 = sext i32 %1 to i64
   ret i64 %2
 }

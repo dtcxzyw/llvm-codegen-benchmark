@@ -19,7 +19,6 @@ entry:
 ; double_conversion/optimized/bignum-dtoa.cc.ll
 ; icu/optimized/double-conversion-bignum-dtoa.ll
 ; libquic/optimized/dtls_record.c.ll
-; linux/optimized/nvram.ll
 ; meshlab/optimized/miniz.c.ll
 ; minetest/optimized/mapnode.cpp.ll
 ; openspiel/optimized/chess_board.cc.ll
@@ -34,6 +33,7 @@ entry:
 ; wireshark/optimized/packet-rfid-pn532-hci.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wireshark/optimized/wtap.c.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i16 %0, i16 %1) #0 {
 entry:
@@ -64,11 +64,12 @@ entry:
   ret i8 %3
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; qdrant-rs/optimized/49gep1elv33vxlrq.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
 ; tree-sitter-rs/optimized/42mwgpotg9phq80h.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i16 %0, i16 %1) #0 {
 entry:

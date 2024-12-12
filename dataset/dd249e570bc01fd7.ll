@@ -26,9 +26,8 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; darktable/optimized/RawDecoder.cpp.ll
-; eastl/optimized/EAFixedPoint.cpp.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; Function Attrs: nounwind

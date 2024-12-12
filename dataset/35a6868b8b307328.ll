@@ -1,12 +1,8 @@
 
-; 24 occurrences:
+; 22 occurrences:
 ; faiss/optimized/IndexRowwiseMinMax.cpp.ll
 ; faiss/optimized/ScalarQuantizer.cpp.ll
 ; llvm/optimized/MsgPackWriter.cpp.ll
-; meshlab/optimized/cube_style_single_iteration.cpp.ll
-; meshlab/optimized/filter_cubization.cpp.ll
-; meshlab/optimized/fit_rotations_l1.cpp.ll
-; meshlab/optimized/orthogonal_procrustes.cpp.ll
 ; meshoptimizer/optimized/quantization.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/measured_polarized.cpp.ll
@@ -24,6 +20,8 @@
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; wasmedge/optimized/engine.cpp.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1, float %2) #0 {
 entry:

@@ -47,7 +47,7 @@ entry:
   ret i64 %4
 }
 
-; 25 occurrences:
+; 28 occurrences:
 ; freetype/optimized/bdf.c.ll
 ; freetype/optimized/sdf.c.ll
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
@@ -73,6 +73,9 @@ entry:
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
 ; ruby/optimized/bignum.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001e(i64 %0, i64 %1) #0 {
 entry:

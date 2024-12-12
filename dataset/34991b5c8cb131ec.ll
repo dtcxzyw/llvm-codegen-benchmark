@@ -1,6 +1,6 @@
 
-%struct.Abc_IffObj_t_.2764708 = type { [7 x float] }
-%struct.pci_extra_dev.3351457 = type { [4 x ptr] }
+%struct.Abc_IffObj_t_.2876965 = type { [7 x float] }
+%struct.pci_extra_dev.3539327 = type { [4 x ptr] }
 
 ; 8 occurrences:
 ; abc/optimized/abcIfif.c.ll
@@ -15,7 +15,7 @@
 define ptr @func000000000000000a(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw %struct.Abc_IffObj_t_.2764708, ptr %0, i64 %3
+  %4 = getelementptr nusw %struct.Abc_IffObj_t_.2876965, ptr %0, i64 %3
   %5 = sext i32 %1 to i64
   %6 = getelementptr nusw [7 x float], ptr %4, i64 0, i64 %5
   ret ptr %6
@@ -28,7 +28,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.pci_extra_dev.3351457, ptr %0, i64 %3
+  %4 = getelementptr %struct.pci_extra_dev.3539327, ptr %0, i64 %3
   %5 = sext i32 %1 to i64
   %6 = getelementptr [4 x ptr], ptr %4, i64 0, i64 %5
   ret ptr %6

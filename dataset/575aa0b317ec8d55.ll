@@ -21,7 +21,7 @@ entry:
   ret ptr %7
 }
 
-; 79 occurrences:
+; 87 occurrences:
 ; abc/optimized/acbAbc.c.ll
 ; abc/optimized/acbPush.c.ll
 ; abc/optimized/acbUtil.c.ll
@@ -29,6 +29,7 @@ entry:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; bullet3/optimized/btMultiBody.ll
+; bullet3/optimized/btMultiBodyDynamicsWorld.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_d.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_3_d.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_4_3.cc.ll
@@ -54,6 +55,7 @@ entry:
 ; icu/optimized/usprep.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; libphonenumber/optimized/generate_geocoding_data.cc.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll
@@ -95,10 +97,16 @@ entry:
 ; openusd/optimized/patchBuilder.cpp.ll
 ; openusd/optimized/quadRefinement.cpp.ll
 ; protobuf/optimized/command_line_interface.cc.ll
+; protobuf/optimized/descriptor.cc.ll
 ; protobuf/optimized/descriptor_database.cc.ll
 ; protobuf/optimized/enum.cc.ll
+; protobuf/optimized/extension_set.cc.ll
+; protobuf/optimized/feature_resolver.cc.ll
 ; protobuf/optimized/field_mask_util.cc.ll
 ; protobuf/optimized/file.cc.ll
+; protobuf/optimized/map.cc.ll
+; protobuf/optimized/message_builder.cc.ll
+; protobuf/optimized/message_builder_lite.cc.ll
 ; raylib/optimized/rtext.c.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; Function Attrs: nounwind
@@ -112,7 +120,7 @@ entry:
   ret ptr %7
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; darktable/optimized/print_settings.c.ll
 ; openblas/optimized/dgbbrd.c.ll
 ; openblas/optimized/dhgeqz.c.ll
@@ -126,7 +134,6 @@ entry:
 ; openjdk/optimized/generateOopMap.ll
 ; openjdk/optimized/method.ll
 ; openjdk/optimized/methodData.ll
-; openusd/optimized/restoration.c.ll
 ; php/optimized/ir.ll
 ; spike/optimized/fdt_rw.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
@@ -142,24 +149,8 @@ entry:
 }
 
 ; 2 occurrences:
-; bullet3/optimized/btMultiBodyDynamicsWorld.ll
-; openblas/optimized/dgtts2.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000010(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %1 to i64
-  %4 = getelementptr float, ptr %0, i64 %3
-  %5 = sext i32 %2 to i64
-  %6 = getelementptr float, ptr %4, i64 %5
-  %7 = getelementptr i8, ptr %6, i64 24
-  ret ptr %7
-}
-
-; 4 occurrences:
 ; gromacs/optimized/dlasd2.cpp.ll
 ; gromacs/optimized/slasd2.cpp.ll
-; openblas/optimized/dgbtf2.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000008(ptr %0, i32 %1, i32 %2) #0 {
 entry:
@@ -168,29 +159,6 @@ entry:
   %5 = sext i32 %1 to i64
   %6 = getelementptr nusw float, ptr %0, i64 %5
   %7 = getelementptr float, ptr %6, i64 %4
-  ret ptr %7
-}
-
-; 11 occurrences:
-; abseil-cpp/optimized/hash_instantiated_test.cc.ll
-; abseil-cpp/optimized/str_split_test.cc.ll
-; protobuf/optimized/command_line_interface.cc.ll
-; protobuf/optimized/descriptor.cc.ll
-; protobuf/optimized/descriptor_database.cc.ll
-; protobuf/optimized/extension_set.cc.ll
-; protobuf/optimized/feature_resolver.cc.ll
-; protobuf/optimized/file.cc.ll
-; protobuf/optimized/map.cc.ll
-; protobuf/optimized/message_builder.cc.ll
-; protobuf/optimized/message_builder_lite.cc.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %1 to i64
-  %4 = getelementptr i32, ptr %0, i64 %3
-  %5 = sext i32 %2 to i64
-  %6 = getelementptr i32, ptr %4, i64 %5
-  %7 = getelementptr i8, ptr %6, i64 -4
   ret ptr %7
 }
 
@@ -214,6 +182,19 @@ entry:
   %5 = sext i32 %2 to i64
   %6 = getelementptr i8, ptr %4, i64 %5
   %7 = getelementptr i8, ptr %6, i64 -1
+  ret ptr %7
+}
+
+; 1 occurrences:
+; openblas/optimized/dgtts2.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000010(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %1 to i64
+  %4 = getelementptr double, ptr %0, i64 %3
+  %5 = sext i32 %2 to i64
+  %6 = getelementptr double, ptr %4, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 -8
   ret ptr %7
 }
 

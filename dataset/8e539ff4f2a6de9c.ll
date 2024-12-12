@@ -12,7 +12,7 @@
 ; php/optimized/pcre2_compile.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000028(i32 %0) #0 {
+define i32 @func0000000000000048(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 65535
   %2 = add nsw i32 %1, -6

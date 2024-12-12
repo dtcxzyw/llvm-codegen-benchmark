@@ -6,14 +6,6 @@ func0000000000000000:                   # @func0000000000000000
 	vpaddd	.LCPI0_0(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq
-.LCPI1_0:
-	.long	4294967291                      # 0xfffffffb
-func0000000000000003:                   # @func0000000000000003
-	vpsubq	%ymm1, %ymm0, %ymm0
-	vpmovqd	%ymm0, %xmm0
-	vpaddd	.LCPI1_0(%rip){1to4}, %xmm0, %xmm0
-	vzeroupper
-	retq
 func000000000000000b:                   # @func000000000000000b
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
@@ -35,33 +27,41 @@ func0000000000000001:                   # @func0000000000000001
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-.LCPI5_0:
+.LCPI4_0:
 	.long	223                             # 0xdf
 func0000000000000020:                   # @func0000000000000020
+	vpsubq	%ymm1, %ymm0, %ymm0
+	vpmovqd	%ymm0, %xmm0
+	vpaddd	.LCPI4_0(%rip){1to4}, %xmm0, %xmm0
+	vzeroupper
+	retq
+.LCPI5_0:
+	.long	32760                           # 0x7ff8
+func0000000000000010:                   # @func0000000000000010
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
 	vpaddd	.LCPI5_0(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI6_0:
-	.long	32760                           # 0x7ff8
-func0000000000000010:                   # @func0000000000000010
+	.long	2                               # 0x2
+func000000000000000f:                   # @func000000000000000f
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
 	vpaddd	.LCPI6_0(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI7_0:
-	.long	2                               # 0x2
-func000000000000000f:                   # @func000000000000000f
+	.long	4294967290                      # 0xfffffffa
+func0000000000000011:                   # @func0000000000000011
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
 	vpaddd	.LCPI7_0(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI8_0:
-	.long	4294967290                      # 0xfffffffa
-func0000000000000011:                   # @func0000000000000011
+	.long	3                               # 0x3
+func0000000000000003:                   # @func0000000000000003
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
 	vpaddd	.LCPI8_0(%rip){1to4}, %xmm0, %xmm0

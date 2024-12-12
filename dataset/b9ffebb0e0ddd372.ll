@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; darktable/optimized/Cr2Decoder.cpp.ll
 ; darktable/optimized/RawDecoder.cpp.ll
@@ -10,7 +10,6 @@
 ; darktable/optimized/introspection_vibrance.c.ll
 ; darktable/optimized/rawspeed-identify.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/io_tri.cpp.ll
 ; openusd/optimized/decodeframe.c.ll
 ; qemu/optimized/block_vvfat.c.ll
@@ -19,19 +18,8 @@
 define i1 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 4
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = icmp sgt i32 %3, 0
-  ret i1 %4
-}
-
-; 1 occurrences:
-; qemu/optimized/tcg.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000f8(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl nuw nsw i32 %1, 3
-  %3 = mul nuw nsw i32 %2, %0
-  %4 = icmp ugt i32 %3, 32775
   ret i1 %4
 }
 
@@ -53,7 +41,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001e1(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = mul nuw nsw i32 %2, %0
@@ -67,10 +55,10 @@ entry:
 ; darktable/optimized/RawDecoder.cpp.ll
 ; darktable/optimized/rawspeed-identify.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000010a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 1
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = icmp sgt i32 %3, -1
   ret i1 %4
 }
@@ -86,7 +74,7 @@ entry:
 ; opencv/optimized/resize.cpp.ll
 ; openusd/optimized/grain_synthesis.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 4
   %3 = mul nsw i32 %2, %0
@@ -113,9 +101,8 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; darktable/optimized/introspection_colorin.c.ll
-; darktable/optimized/introspection_vibrance.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
@@ -135,7 +122,7 @@ entry:
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 2
   %3 = mul nsw i32 %2, %0
@@ -146,7 +133,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_primaries.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a4(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 2
   %3 = mul nsw i32 %2, %0
@@ -161,7 +148,7 @@ entry:
 ; opencv/optimized/resize.cpp.ll
 ; opencv/optimized/tracking_feature.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 2
   %3 = mul nsw i32 %2, %0
@@ -172,7 +159,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/resize.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a8(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = mul nsw i32 %2, %0
@@ -183,7 +170,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/grfmt_pxm.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000186(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = mul i32 %2, %0

@@ -8,11 +8,11 @@ func000000000000002f:                   # @func000000000000002f
 	retq
 func000000000000000f:                   # @func000000000000000f
 	decl	%edi
-	leaq	4(,%rdi,4), %rax
+	leaq	2(%rdi,%rdi), %rax
 	retq
 func000000000000003f:                   # @func000000000000003f
 	decl	%edi
-	leaq	8(,%rdi,8), %rax
+	leaq	2(%rdi,%rdi), %rax
 	retq
 func0000000000000042:                   # @func0000000000000042
 	leal	-1(%rdi), %ecx
@@ -48,5 +48,5 @@ func000000000000004d:                   # @func000000000000004d
 	retq
 func000000000000007f:                   # @func000000000000007f
 	movl	%edi, %eax
-	leaq	28(,%rax,4), %rax
+	leaq	52(,%rax,4), %rax
 	retq

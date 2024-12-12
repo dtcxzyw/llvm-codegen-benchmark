@@ -107,18 +107,3 @@ func0000000000000029:                   # @func0000000000000029
 	srai	a0, a0, 34
 	add	a0, a0, a1
 	ret
-.LCPI8_0:
-	.quad	-7178738738347512491            # 0x9c5fff26ed75ed55
-func0000000000000001:                   # @func0000000000000001
-	lui	a2, 244141
-	lui	a3, %hi(.LCPI8_0)
-	ld	a3, %lo(.LCPI8_0)(a3)
-	addiw	a2, a2, -1536
-	mul	a1, a1, a2
-	add	a0, a0, a1
-	mulh	a1, a0, a3
-	add	a0, a0, a1
-	srli	a1, a0, 63
-	srai	a0, a0, 41
-	add	a0, a0, a1
-	ret

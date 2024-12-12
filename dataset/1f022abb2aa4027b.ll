@@ -145,19 +145,6 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
-; hyperscan/optimized/ng_find_matches.cpp.ll
-; hyperscan/optimized/ng_squash.cpp.ll
-; Function Attrs: nounwind
-define i64 @func000000000000004f(i64 %0) #0 {
-entry:
-  %1 = add nuw i64 %0, 1
-  %2 = lshr i64 %1, 3
-  %3 = and i64 %2, 2305843009213693944
-  %4 = add nuw nsw i64 %3, 8
-  ret i64 %4
-}
-
 ; 1 occurrences:
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; Function Attrs: nounwind

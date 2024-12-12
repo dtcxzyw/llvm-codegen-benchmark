@@ -13,13 +13,8 @@ func000000000000000c:                   # @func000000000000000c
 	setns	%al
 	orb	%dil, %al
 	retq
-func0000000000000010:                   # @func0000000000000010
-	cmpl	$5, %esi
-	setb	%al
-	orb	%dil, %al
-	retq
 func0000000000000008:                   # @func0000000000000008
-	cmpl	$-18, %esi
+	cmpl	$524288, %esi                   # imm = 0x80000
 	setae	%al
 	orb	%dil, %al
 	retq

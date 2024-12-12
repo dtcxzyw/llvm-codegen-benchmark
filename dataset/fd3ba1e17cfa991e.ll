@@ -1,9 +1,11 @@
 
-; 4 occurrences:
+; 6 occurrences:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; image-rs/optimized/249ukonr3l56u09i.ll
 ; qemu/optimized/hw_scsi_mptsas.c.ll
 ; wireshark/optimized/packet-nas_eps.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000001(i8 %0) #0 {
 entry:

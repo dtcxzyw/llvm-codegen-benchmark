@@ -5,9 +5,3 @@ func0000000000000002:                   # @func0000000000000002
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func0000000000000008:                   # @func0000000000000008
-	andi	a2, a2, 31
-	sltiu	a2, a2, 29
-	or	a0, a0, a1
-	or	a0, a0, a2
-	ret

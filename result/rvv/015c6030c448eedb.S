@@ -10,5 +10,5 @@ func0000000000000001:                   # @func0000000000000001
 	vnmsub.vx	v11, a0, v10
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vsext.vf2	v12, v11
-	vmseq.vv	v0, v12, v8
+	vmseq.vv	v0, v8, v12
 	ret

@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 11 occurrences:
 ; abc/optimized/kitDsd.c.ll
 ; git/optimized/merge-ort.ll
 ; linux/optimized/hub.ll
@@ -7,6 +7,8 @@
 ; linux/optimized/vt.ll
 ; llvm/optimized/CGAtomic.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
+; lvgl/optimized/lv_display.ll
+; lvgl/optimized/lv_obj_style.ll
 ; qemu/optimized/hw_pci_msi.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
@@ -19,7 +21,7 @@ entry:
   ret i16 %5
 }
 
-; 31 occurrences:
+; 33 occurrences:
 ; clamav/optimized/events.c.ll
 ; icu/optimized/collationdatabuilder.ll
 ; icu/optimized/collationfastlatinbuilder.ll
@@ -48,9 +50,11 @@ entry:
 ; llvm/optimized/SCCPSolver.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; llvm/optimized/SemaLambda.cpp.ll
+; lvgl/optimized/lv_image.ll
 ; openjdk/optimized/relocInfo.ll
 ; qemu/optimized/replay_replay-internal.c.ll
 ; quickjs/optimized/quickjs.ll
+; stb/optimized/stb_connected_components.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000001(i16 %0, i32 %1) #0 {
 entry:
@@ -86,8 +90,13 @@ entry:
   ret i16 %5
 }
 
-; 1 occurrences:
+; 6 occurrences:
 ; llvm/optimized/AttributorAttributes.cpp.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000001d(i16 %0, i32 %1) #0 {
 entry:

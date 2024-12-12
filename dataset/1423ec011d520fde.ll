@@ -1,6 +1,8 @@
 
-; 4 occurrences:
+; 6 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; llvm/optimized/DWARFFormValue.cpp.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll

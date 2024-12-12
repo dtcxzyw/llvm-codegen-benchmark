@@ -3,9 +3,9 @@
 ; rust-analyzer-rs/optimized/547gv31sq3clwal6.ll
 ; rust-analyzer-rs/optimized/lvm5mow7j40zynh.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000043(i1 %0, i32 %1) #0 {
+define i64 @func0000000000000143(i1 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 3
+  %2 = icmp samesign ult i32 %1, 3
   %3 = zext i1 %2 to i64
   %4 = zext i1 %0 to i64
   %5 = add nuw nsw i64 %4, %3

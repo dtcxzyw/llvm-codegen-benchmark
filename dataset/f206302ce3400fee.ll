@@ -1,5 +1,5 @@
 
-; 335 occurrences:
+; 337 occurrences:
 ; abc/optimized/epd.c.ll
 ; abseil-cpp/optimized/ascii_test.cc.ll
 ; arrow/optimized/bignum-dtoa.cc.ll
@@ -8,6 +8,8 @@
 ; arrow/optimized/strtod.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; double_conversion/optimized/bignum-dtoa.cc.ll
 ; double_conversion/optimized/fast-dtoa.cc.ll
 ; double_conversion/optimized/fixed-dtoa.cc.ll
@@ -200,7 +202,7 @@
 ; luajit/optimized/lj_opt_fold.ll
 ; luajit/optimized/lj_opt_fold_dyn.ll
 ; luau/optimized/lnumprint.cpp.ll
-; nuttx/optimized/lib_trunc.c.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -344,7 +346,7 @@ entry:
   ret i32 %3
 }
 
-; 134 occurrences:
+; 135 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcExact.c.ll
@@ -377,6 +379,7 @@ entry:
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/inflate64.c.ll
 ; clamav/optimized/openioc.c.ll
 ; clamav/optimized/sha1.cpp.ll
@@ -488,7 +491,7 @@ entry:
   ret i32 %3
 }
 
-; 294 occurrences:
+; 296 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcDress2.c.ll
 ; abc/optimized/abcRec3.c.ll
@@ -563,7 +566,6 @@ entry:
 ; abc/optimized/llb1Hint.c.ll
 ; abc/optimized/llb1Pivot.c.ll
 ; abc/optimized/llb1Reach.c.ll
-; abc/optimized/llb2Bad.c.ll
 ; abc/optimized/llb2Flow.c.ll
 ; abc/optimized/llb2Image.c.ll
 ; abc/optimized/llb3Image.c.ll
@@ -608,7 +610,6 @@ entry:
 ; abc/optimized/sswRarity.c.ll
 ; abc/optimized/sswSemi.c.ll
 ; abc/optimized/sswSim.c.ll
-; abc/optimized/sswSimSat.c.ll
 ; abc/optimized/sswSweep.c.ll
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/AMFImporter_Geometry.cpp.ll
@@ -735,6 +736,10 @@ entry:
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
+; lvgl/optimized/lv_draw_sw_gradient.ll
+; lvgl/optimized/lv_file_explorer.ll
+; lvgl/optimized/lv_ime_pinyin.ll
+; lvgl/optimized/lv_scale.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; oiio/optimized/formatspec.cpp.ll
 ; opencv/optimized/rand.cpp.ll
@@ -792,7 +797,7 @@ entry:
   ret i32 %3
 }
 
-; 61 occurrences:
+; 59 occurrences:
 ; abc/optimized/giaTtopt.cpp.ll
 ; cpython/optimized/instrumentation.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
@@ -813,8 +818,6 @@ entry:
 ; linux/optimized/intel_display_trace.ll
 ; linux/optimized/iommu-traces.ll
 ; linux/optimized/main.ll
-; linux/optimized/net-traces.ll
-; linux/optimized/nfstrace.ll
 ; linux/optimized/orphan.ll
 ; linux/optimized/power-traces.ll
 ; linux/optimized/printk.ll
@@ -906,12 +909,18 @@ entry:
   ret i32 %3
 }
 
-; 8 occurrences:
+; 14 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; cpython/optimized/_stat.ll
 ; git/optimized/pack-bitmap-write.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; llvm/optimized/CoverageMappingReader.cpp.ll
+; lvgl/optimized/lv_canvas.ll
+; lvgl/optimized/lv_draw_buf.ll
+; lvgl/optimized/lv_draw_image.ll
+; lvgl/optimized/lv_draw_rect.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; lvgl/optimized/lv_draw_sw_img.ll
 ; openjdk/optimized/sharedRuntimeTrans.ll
 ; openjdk/optimized/sharedRuntimeTrig.ll
 ; regex-rs/optimized/1hv7a9vv5ulvjrv1.ll

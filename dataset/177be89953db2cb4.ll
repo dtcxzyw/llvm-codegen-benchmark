@@ -8,7 +8,7 @@ define i16 @func0000000000000004(i16 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = sext i1 %2 to i16
-  %4 = add i16 %3, %0
+  %4 = add i16 %0, %3
   ret i16 %4
 }
 
@@ -21,7 +21,7 @@ define i16 @func0000000000000028(i16 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 0
   %3 = sext i1 %2 to i16
-  %4 = add i16 %3, %0
+  %4 = add i16 %0, %3
   ret i16 %4
 }
 

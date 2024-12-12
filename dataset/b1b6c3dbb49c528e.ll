@@ -3,7 +3,7 @@
 ; entt/optimized/group.cpp.ll
 ; yosys/optimized/opt_expr.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000022(i32 %0, i32 %1, i32 %2) #0 {
+define i8 @func0000000000000042(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %0, %2
   %4 = icmp eq i32 %0, %1

@@ -1,5 +1,6 @@
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
 ; hermes/optimized/String.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
 ; openblas/optimized/dgeqr.c.ll

@@ -2,12 +2,12 @@
 ; 1 occurrences:
 ; php/optimized/unixtime2tm.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000b1(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000131(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = icmp slt i64 %3, 3
   %5 = zext i1 %4 to i64
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -18,9 +18,9 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
-  %4 = icmp eq i64 %3, %1
+  %4 = icmp eq i64 %1, %3
   %5 = zext i1 %4 to i64
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -31,9 +31,9 @@ entry:
 define i64 @func0000000000000009(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
-  %4 = icmp eq i64 %3, %1
+  %4 = icmp eq i64 %1, %3
   %5 = zext i1 %4 to i64
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -44,9 +44,9 @@ entry:
 define i64 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
-  %4 = icmp eq i64 %3, %1
+  %4 = icmp eq i64 %1, %3
   %5 = zext i1 %4 to i64
-  %6 = add nuw i64 %5, %0
+  %6 = add nuw i64 %0, %5
   ret i64 %6
 }
 
@@ -57,40 +57,39 @@ entry:
 ; simdjson/optimized/simdjson.cpp.ll
 ; wireshark/optimized/erf.c.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000001c3(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func00000000000003c3(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
-  %4 = icmp ugt i64 %3, 281474976710655
+  %4 = icmp samesign ugt i64 %3, 281474976710655
   %5 = zext i1 %4 to i64
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 
 ; 1 occurrences:
 ; hdf5/optimized/H5Tbit.c.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000001c0(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func00000000000003c0(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
-  %4 = icmp ugt i64 %3, 7
+  %4 = icmp samesign ugt i64 %3, 7
   %5 = zext i1 %4 to i64
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; cmake/optimized/ProcessUNIX.c.ll
 ; eastl/optimized/EATest.cpp.ll
 ; eastl/optimized/eathread_pool.cpp.ll
 ; libevent/optimized/event.c.ll
-; libevent/optimized/evthread_pthread.c.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000d1(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000151(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = icmp sgt i64 %3, 999999
   %5 = zext i1 %4 to i64
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -170,9 +169,9 @@ entry:
 define i64 @func0000000000000060(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
-  %4 = icmp ne i64 %3, %1
+  %4 = icmp ne i64 %1, %3
   %5 = zext i1 %4 to i64
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -182,33 +181,33 @@ entry:
 define i64 @func0000000000000063(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
-  %4 = icmp ne i64 %3, %1
+  %4 = icmp ne i64 %1, %3
   %5 = zext i1 %4 to i64
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 
 ; 1 occurrences:
 ; wireshark/optimized/netmon.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000023(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func00000000000000a3(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
-  %4 = icmp ult i64 %3, -1000000000
+  %4 = icmp samesign ult i64 %3, -1000000000
   %5 = zext i1 %4 to i64
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 
 ; 1 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000001c1(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func00000000000003c1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
-  %4 = icmp ugt i64 %3, 18014398509481983
+  %4 = icmp samesign ugt i64 %3, 18014398509481983
   %5 = zext i1 %4 to i64
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -221,19 +220,19 @@ entry:
   %3 = add i64 %1, %2
   %4 = icmp ugt i64 %3, 16383
   %5 = zext i1 %4 to i64
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 
 ; 1 occurrences:
 ; linux/optimized/timeconv.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000a3(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func00000000000001a3(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
-  %4 = icmp ult i64 %3, -86400
+  %4 = icmp samesign ult i64 %3, -86400
   %5 = zext i1 %4 to i64
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -244,9 +243,9 @@ entry:
 define i64 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
-  %4 = icmp ne i64 %3, %1
+  %4 = icmp ne i64 %1, %3
   %5 = zext i1 %4 to i64
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 

@@ -232,13 +232,13 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001e1(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func00000000000003e1(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = udiv i8 %2, 3
   %4 = zext nneg i8 %3 to i64
   %5 = getelementptr i8, ptr %1, i64 %4
   %6 = getelementptr i8, ptr %5, i64 1
-  %7 = icmp eq ptr %6, %0
+  %7 = icmp eq ptr %0, %6
   ret i1 %7
 }
 

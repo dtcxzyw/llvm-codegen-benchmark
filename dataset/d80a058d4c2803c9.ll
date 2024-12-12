@@ -3,7 +3,7 @@
 ; openjdk/optimized/jfrCheckpointWriter.ll
 ; rocksdb/optimized/write_batch.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000081(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 8
   %4 = select i1 %3, ptr %0, ptr %1
@@ -17,7 +17,7 @@ entry:
 ; folly/optimized/SplitStringSimd.cpp.ll
 ; proxygen/optimized/HTTPSession.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000000c1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %2, 0
   %4 = select i1 %3, ptr %0, ptr %1
@@ -54,7 +54,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, -9223372036854775808
   %4 = select i1 %3, ptr %0, ptr %1
@@ -67,7 +67,7 @@ entry:
 ; rust-analyzer-rs/optimized/58xaix613yc6ngmz.ll
 ; typst-rs/optimized/3y1kwutqz637t0om.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000002c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 21
   %4 = select i1 %3, ptr %0, ptr %1
@@ -78,7 +78,7 @@ entry:
 ; 1 occurrences:
 ; oiio/optimized/paramlist.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000008c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 17
   %4 = select i1 %3, ptr %0, ptr %1

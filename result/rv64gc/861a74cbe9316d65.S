@@ -20,7 +20,7 @@ func0000000000000008:                   # @func0000000000000008
 	sltiu	a0, a1, 501
 	xori	a0, a0, 1
 	ret
-func00000000000000a8:                   # @func00000000000000a8
+func0000000000000148:                   # @func0000000000000148
 	andi	a0, a0, 1
 	bnez	a0, .LBB2_2
 	sub	a1, a2, a1
@@ -34,37 +34,51 @@ func00000000000000a8:                   # @func00000000000000a8
 	sltiu	a0, a1, 25
 	xori	a0, a0, 1
 	ret
-func0000000000000001:                   # @func0000000000000001
+func0000000000000158:                   # @func0000000000000158
 	andi	a0, a0, 1
 	bnez	a0, .LBB3_2
 	sub	a1, a2, a1
-	seqz	a0, a1
+	srli	a1, a1, 22
+	sltiu	a0, a1, 25
+	xori	a0, a0, 1
 	ret
 .LBB3_2:
 	sub	a1, a1, a2
-	seqz	a0, a1
+	srli	a1, a1, 22
+	sltiu	a0, a1, 25
+	xori	a0, a0, 1
 	ret
-func00000000000000a4:                   # @func00000000000000a4
+func0000000000000001:                   # @func0000000000000001
 	andi	a0, a0, 1
 	bnez	a0, .LBB4_2
+	sub	a1, a2, a1
+	seqz	a0, a1
+	ret
+.LBB4_2:
+	sub	a1, a1, a2
+	seqz	a0, a1
+	ret
+func0000000000000144:                   # @func0000000000000144
+	andi	a0, a0, 1
+	bnez	a0, .LBB5_2
 	sub	a1, a2, a1
 	lui	a0, 1
 	addiw	a0, a0, 905
 	sltu	a0, a1, a0
 	ret
-.LBB4_2:
+.LBB5_2:
 	sub	a1, a1, a2
 	lui	a0, 1
 	addiw	a0, a0, 905
 	sltu	a0, a1, a0
 	ret
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000141:                   # @func0000000000000141
 	andi	a0, a0, 1
-	bnez	a0, .LBB5_2
+	bnez	a0, .LBB6_2
 	sub	a1, a2, a1
 	seqz	a0, a1
 	ret
-.LBB5_2:
+.LBB6_2:
 	sub	a1, a1, a2
 	seqz	a0, a1
 	ret

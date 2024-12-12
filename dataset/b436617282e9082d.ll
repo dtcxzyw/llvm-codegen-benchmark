@@ -53,7 +53,7 @@ entry:
   ret i64 %4
 }
 
-; 38 occurrences:
+; 39 occurrences:
 ; darktable/optimized/introspection_censorize.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; flac/optimized/stream_encoder.c.ll
@@ -92,11 +92,12 @@ entry:
 ; velox/optimized/Type.cpp.ll
 ; velox/optimized/UnsafeRowSerializer.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -1
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = lshr i64 %3, 6
   ret i64 %4
 }
@@ -130,7 +131,7 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 2
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = lshr i64 %3, 1
   ret i64 %4
 }

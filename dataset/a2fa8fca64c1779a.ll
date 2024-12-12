@@ -33,7 +33,7 @@ entry:
   %3 = icmp ugt i64 %2, 4294967295
   %4 = and i1 %3, %1
   %5 = select i1 %4, i32 33554432, i32 0
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   ret i32 %6
 }
 
@@ -45,7 +45,7 @@ entry:
   %3 = icmp eq i64 %2, 0
   %4 = and i1 %3, %1
   %5 = select i1 %4, i32 0, i32 512
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   ret i32 %6
 }
 

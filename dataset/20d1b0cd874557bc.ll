@@ -1,5 +1,5 @@
 
-; 92 occurrences:
+; 93 occurrences:
 ; assimp/optimized/3DSConverter.cpp.ll
 ; assimp/optimized/LWOAnimation.cpp.ll
 ; assimp/optimized/SkeletonMeshBuilder.cpp.ll
@@ -29,6 +29,7 @@
 ; gromacs/optimized/swapcoords.cpp.ll
 ; gromacs/optimized/toppush.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; meshlab/optimized/VisibleSet.cpp.ll
 ; meshlab/optimized/edit_manipulators.cpp.ll
 ; meshlab/optimized/filter_camera.cpp.ll

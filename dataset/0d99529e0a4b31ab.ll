@@ -57,4 +57,16 @@ entry:
   ret i64 %5
 }
 
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000006(i64 %0, i32 %1) #0 {
+entry:
+  %2 = shl nsw i32 %1, 1
+  %3 = and i32 %2, 62
+  %4 = zext nneg i32 %3 to i64
+  %5 = lshr i64 %0, %4
+  ret i64 %5
+}
+
 attributes #0 = { nounwind }

@@ -1,11 +1,10 @@
 
-; 19 occurrences:
+; 18 occurrences:
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_colorzones.c.ll
 ; darktable/optimized/introspection_rgbcurve.c.ll
 ; gromacs/optimized/convert_tpr.cpp.ll
-; gromacs/optimized/frameaverager.cpp.ll
 ; gromacs/optimized/gmx_analyze.cpp.ll
 ; gromacs/optimized/gmx_spatial.cpp.ll
 ; gromacs/optimized/gmx_wham.cpp.ll

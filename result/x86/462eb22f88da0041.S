@@ -1,4 +1,4 @@
-func000000000000001e:                   # @func000000000000001e
+func000000000000001f:                   # @func000000000000001f
 	movzwl	%si, %eax
 	leaq	(%rdi,%rax,4), %rax
 	retq

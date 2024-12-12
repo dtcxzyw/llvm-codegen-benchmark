@@ -13,7 +13,7 @@
 ; postgres/optimized/tsquery_gist.ll
 ; qemu/optimized/hw_block_virtio-blk.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i16 %1) #0 {
 entry:
   %2 = add i16 %1, -3
   %3 = zext i16 %2 to i64
@@ -26,7 +26,7 @@ entry:
 ; openusd/optimized/stencilTableFactory.cpp.ll
 ; php/optimized/ir_emit.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f1(i64 %0, i16 %1) #0 {
+define i1 @func00000000000003e1(i64 %0, i16 %1) #0 {
 entry:
   %2 = add nuw nsw i16 %1, 1
   %3 = zext nneg i16 %2 to i64
@@ -43,7 +43,7 @@ entry:
 ; postgres/optimized/preptlist.ll
 ; postgres/optimized/spgutils.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000131(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000261(i64 %0, i16 %1) #0 {
 entry:
   %2 = add nuw i16 %1, 1
   %3 = zext i16 %2 to i64

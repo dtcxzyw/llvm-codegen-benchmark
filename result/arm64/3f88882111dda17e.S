@@ -18,16 +18,22 @@ func0000000000000016:                   // @func0000000000000016
 	sub	x0, x0, w1, uxtw
 	ret
                                         // -- End function
+func0000000000000007:                   // @func0000000000000007
+// %bb.0:                               // %entry
+	sub	x8, x0, w1, uxtw
+	add	x0, x8, #64
+	ret
+                                        // -- End function
 func000000000000001c:                   // @func000000000000001c
 // %bb.0:                               // %entry
 	sub	x8, x0, w1, uxtw
 	add	x0, x8, #64
 	ret
                                         // -- End function
-func000000000000001e:                   // @func000000000000001e
+func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
 	sub	x8, x0, w1, uxtw
-	add	x0, x8, #64
+	add	x0, x8, #10
 	ret
                                         // -- End function
 func000000000000000e:                   // @func000000000000000e

@@ -1,6 +1,8 @@
 
-; 111 occurrences:
+; 113 occurrences:
 ; arrow/optimized/scalar_cast_temporal.cc.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; casadi/optimized/im_instantiator.cpp.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll

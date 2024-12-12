@@ -1,8 +1,9 @@
 
-; 25 occurrences:
+; 26 occurrences:
 ; abc/optimized/abcRr.c.ll
 ; abseil-cpp/optimized/randen_slow.cc.ll
 ; assimp/optimized/FindInstancesProcess.cpp.ll
+; boost/optimized/core.ll
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
 ; eastl/optimized/EARandom.cpp.ll
 ; libsodium/optimized/libsodium_la-softaes.ll
@@ -41,7 +42,7 @@ entry:
 define i64 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, %2
-  %4 = xor i32 %3, %0
+  %4 = xor i32 %0, %3
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }

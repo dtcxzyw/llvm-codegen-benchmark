@@ -99,7 +99,7 @@ entry:
   ret i32 %2
 }
 
-; 136 occurrences:
+; 138 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
@@ -119,6 +119,7 @@ entry:
 ; abc/optimized/sscSim.c.ll
 ; abc/optimized/utilIsop.c.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/ipc_reliable_message_queue.ll
 ; casadi/optimized/tinyxml2.cpp.ll
 ; cmake/optimized/archive_read_support_filter_xz.c.ll
 ; coreutils-rs/optimized/3wh0yla9idangd55.ll
@@ -236,6 +237,7 @@ entry:
 ; yosys/optimized/share.ll
 ; yosys/optimized/test_cell.ll
 ; z3/optimized/mpz.cpp.ll
+; zed-rs/optimized/7xoulo9o2q4wd1npp9yutbl3x.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i1 %0, i32 %1) #0 {
 entry:
@@ -245,11 +247,10 @@ entry:
   ret i32 %4
 }
 
-; 35 occurrences:
+; 34 occurrences:
 ; cmake/optimized/cmOutputConverter.cxx.ll
 ; coreutils-rs/optimized/3wh0yla9idangd55.ll
 ; darktable/optimized/masks.c.ll
-; hdf5/optimized/H5VLnative_file.c.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; linux/optimized/af_unix.ll
 ; linux/optimized/datagram.ll

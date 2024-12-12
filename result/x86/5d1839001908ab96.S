@@ -37,7 +37,7 @@ func0000000000000003:                   # @func0000000000000003
 	.quad	0xbff0000000000000              # double -1
 func0000000000000008:                   # @func0000000000000008
 	vaddsd	.LCPI5_0(%rip), %xmm1, %xmm1
-	vcmpeqsd	%xmm0, %xmm1, %k0
+	vcmpeqsd	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 .LCPI6_0:
@@ -55,7 +55,7 @@ func000000000000000c:                   # @func000000000000000c
 	setae	%al
 	retq
 .LCPI8_0:
-	.quad	0x3ff0000000000000              # double 1
+	.quad	0x4076800000000000              # double 360
 func000000000000000d:                   # @func000000000000000d
 	vaddsd	.LCPI8_0(%rip), %xmm1, %xmm1
 	vucomisd	%xmm0, %xmm1

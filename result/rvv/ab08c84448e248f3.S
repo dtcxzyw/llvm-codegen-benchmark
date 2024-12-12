@@ -15,5 +15,5 @@ func0000000000000006:                   # @func0000000000000006
 	vmv.v.x	v10, a0
 	vmerge.vim	v10, v10, 0, v0
 	csrwi	vxrm, 2
-	vaaddu.vv	v8, v10, v8
+	vaaddu.vv	v8, v8, v10
 	ret

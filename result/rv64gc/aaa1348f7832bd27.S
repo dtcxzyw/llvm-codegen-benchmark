@@ -31,9 +31,3 @@ func0000000000000048:                   # @func0000000000000048
 	flt.s	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
-func00000000000001dc:                   # @func00000000000001dc
-	fadd.s	fa5, fa1, fa2
-	feq.s	a0, fa5, fa5
-	feq.s	a1, fa0, fa0
-	or	a0, a0, a1
-	ret

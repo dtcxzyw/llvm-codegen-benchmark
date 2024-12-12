@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; coreutils-rs/optimized/3wh0yla9idangd55.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp eq i32 %0, 0
@@ -29,7 +29,7 @@ entry:
 ; opencv/optimized/calibrate_camera_charuco.cpp.ll
 ; opencv/optimized/omni_calibration.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc i8 %1 to i1
   %3 = icmp eq i32 %0, 0

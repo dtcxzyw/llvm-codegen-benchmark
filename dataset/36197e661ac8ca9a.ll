@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 20 occurrences:
 ; arrow/optimized/reader.cc.ll
 ; flatbuffers/optimized/idl_gen_text.cpp.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
@@ -14,7 +14,6 @@
 ; llvm/optimized/LegalizeDAG.cpp.ll
 ; llvm/optimized/LegalizeFloatTypes.cpp.ll
 ; llvm/optimized/LegalizeVectorOps.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; mitsuba3/optimized/qmc.cpp.ll
@@ -29,9 +28,8 @@ entry:
   ret i64 %2
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; icu/optimized/smpdtfmt.ll
-; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; velox/optimized/DenseHll.cpp.ll

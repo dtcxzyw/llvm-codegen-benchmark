@@ -16,25 +16,17 @@ func000000000000001f:                   # @func000000000000001f
 	retq
 .LCPI2_0:
 	.long	1                               # 0x1
-func0000000000000007:                   # @func0000000000000007
+func0000000000000005:                   # @func0000000000000005
 	vpmovqd	%ymm1, %xmm1
 	vpord	.LCPI2_0(%rip){1to4}, %xmm0, %xmm0
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI3_0:
-	.long	1                               # 0x1
-func0000000000000005:                   # @func0000000000000005
-	vpmovqd	%ymm1, %xmm1
-	vpord	.LCPI3_0(%rip){1to4}, %xmm0, %xmm0
-	vpsubd	%xmm1, %xmm0, %xmm0
-	vzeroupper
-	retq
-.LCPI4_0:
 	.long	63                              # 0x3f
 func0000000000000004:                   # @func0000000000000004
 	vpmovqd	%ymm1, %xmm1
-	vpord	.LCPI4_0(%rip){1to4}, %xmm0, %xmm0
+	vpord	.LCPI3_0(%rip){1to4}, %xmm0, %xmm0
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq

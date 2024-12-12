@@ -1,6 +1,8 @@
 
-; 5 occurrences:
+; 7 occurrences:
 ; linux/optimized/gup.ll
+; openblas/optimized/dgemv_n.c.ll
+; openblas/optimized/dgemv_t.c.ll
 ; openssl/optimized/libcrypto-lib-cts128.ll
 ; openssl/optimized/libcrypto-shlib-cts128.ll
 ; openssl/optimized/libdefault-lib-cipher_cts.ll
@@ -10,7 +12,20 @@ define i1 @func0000000000000001(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 15
   %4 = select i1 %1, i64 16, i64 %3
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
+  ret i1 %5
+}
+
+; 3 occurrences:
+; boost/optimized/alloc_lib.ll
+; luajit/optimized/lj_alloc.ll
+; luajit/optimized/lj_alloc_dyn.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i64 %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -16
+  %4 = select i1 %1, i64 32, i64 %3
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
@@ -36,20 +51,18 @@ define i1 @func0000000000000008(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 255
   %4 = select i1 %1, i64 0, i64 %3
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 
-; 3 occurrences:
-; linux/optimized/mmconf-fam10h_64.ll
-; luajit/optimized/lj_alloc.ll
-; luajit/optimized/lj_alloc_dyn.ll
+; 1 occurrences:
+; openblas/optimized/dgemv_n.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000014(i64 %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, -1048576
-  %4 = select i1 %1, i64 1082331758592, i64 %3
-  %5 = icmp ugt i64 %4, %0
+  %3 = and i64 %2, 2044
+  %4 = select i1 %1, i64 2048, i64 %3
+  %5 = icmp samesign ult i64 %0, %4
   ret i1 %5
 }
 
@@ -71,7 +84,7 @@ define i1 @func0000000000000009(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 9223372036854775807
   %4 = select i1 %1, i64 23, i64 %3
-  %5 = icmp ule i64 %4, %0
+  %5 = icmp uge i64 %0, %4
   ret i1 %5
 }
 

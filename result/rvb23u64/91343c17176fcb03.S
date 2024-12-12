@@ -19,7 +19,7 @@ func0000000000000063:                   # @func0000000000000063
 	slli.uw	a0, a0, 2
 	ret
 func0000000000000007:                   # @func0000000000000007
-	mulw	a0, a1, a0
+	mulw	a0, a0, a1
 	slli	a0, a0, 4
 	ret
 func000000000000000b:                   # @func000000000000000b
@@ -35,7 +35,7 @@ func000000000000004a:                   # @func000000000000004a
 	slli	a0, a0, 32
 	ret
 func000000000000000f:                   # @func000000000000000f
-	mulw	a0, a1, a0
+	mulw	a0, a0, a1
 	slli	a0, a0, 3
 	ret
 func000000000000004b:                   # @func000000000000004b

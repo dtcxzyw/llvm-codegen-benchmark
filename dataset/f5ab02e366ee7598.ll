@@ -1,5 +1,29 @@
 
-; 229 occurrences:
+; 14 occurrences:
+; llvm/optimized/GlobalModuleIndex.cpp.ll
+; llvm/optimized/LowerTypeTests.cpp.ll
+; llvm/optimized/RegisterInfoEmitter.cpp.ll
+; openusd/optimized/bboxCache.cpp.ll
+; openusd/optimized/changeManager.cpp.ll
+; openusd/optimized/changes.cpp.ll
+; openusd/optimized/dynamicFileFormatContext.cpp.ll
+; openusd/optimized/dynamicFileFormatDependencyData.cpp.ll
+; openusd/optimized/listOp.cpp.ll
+; openusd/optimized/schemaRegistry.cpp.ll
+; openusd/optimized/subset.cpp.ll
+; openusd/optimized/velocityMotionResolvingSceneIndex.cpp.ll
+; rocksdb/optimized/compaction.cc.ll
+; rocksdb/optimized/table_cache.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 4611686018427387903
+  %3 = icmp ult i64 %2, %0
+  %4 = select i1 %3, i64 16, i64 24
+  ret i64 %4
+}
+
+; 215 occurrences:
 ; cvc5/optimized/abduction_solver.cpp.ll
 ; cvc5/optimized/alf_node_converter.cpp.ll
 ; cvc5/optimized/alf_post_processor.cpp.ll
@@ -215,26 +239,12 @@
 ; cvc5/optimized/unsat_core_manager.cpp.ll
 ; cvc5/optimized/variadic_trie.cpp.ll
 ; cvc5/optimized/vts_term_cache.cpp.ll
-; llvm/optimized/GlobalModuleIndex.cpp.ll
-; llvm/optimized/LowerTypeTests.cpp.ll
-; llvm/optimized/RegisterInfoEmitter.cpp.ll
-; openusd/optimized/bboxCache.cpp.ll
-; openusd/optimized/changeManager.cpp.ll
-; openusd/optimized/changes.cpp.ll
-; openusd/optimized/dynamicFileFormatContext.cpp.ll
-; openusd/optimized/dynamicFileFormatDependencyData.cpp.ll
-; openusd/optimized/listOp.cpp.ll
-; openusd/optimized/schemaRegistry.cpp.ll
-; openusd/optimized/subset.cpp.ll
-; openusd/optimized/velocityMotionResolvingSceneIndex.cpp.ll
-; rocksdb/optimized/compaction.cc.ll
-; rocksdb/optimized/table_cache.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 4611686018427387903
-  %3 = icmp ult i64 %2, %0
-  %4 = select i1 %3, i64 16, i64 24
+  %2 = and i64 %1, 1099511627775
+  %3 = icmp samesign ult i64 %2, %0
+  %4 = select i1 %3, i64 24, i64 16
   ret i64 %4
 }
 

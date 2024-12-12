@@ -1,5 +1,5 @@
 
-; 79 occurrences:
+; 80 occurrences:
 ; bullet3/optimized/btReducedVector.ll
 ; darktable/optimized/introspection_liquify.c.ll
 ; gromacs/optimized/grompp.cpp.ll
@@ -11,6 +11,7 @@
 ; imgui/optimized/imgui_draw.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; llama.cpp/optimized/llama.cpp.ll
+; lvgl/optimized/lv_svg_render.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
@@ -19,7 +20,6 @@
 ; meshlab/optimized/trackmode.cpp.ll
 ; minetest/optimized/content_cao.cpp.ll
 ; minetest/optimized/localplayer.cpp.ll
-; minetest/optimized/test_serialization.cpp.ll
 ; mitsuba3/optimized/area.cpp.ll
 ; mitsuba3/optimized/bsplinecurve.cpp.ll
 ; mitsuba3/optimized/constant.cpp.ll
@@ -79,15 +79,16 @@
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_colmaker.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, float %1) #0 {
 entry:
   %2 = fcmp oeq float %1, 0.000000e+00
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   ret i1 %3
 }
 
-; 83 occurrences:
+; 84 occurrences:
 ; assimp/optimized/MMDPmxParser.cpp.ll
 ; assimp/optimized/StandardShapes.cpp.ll
 ; assimp/optimized/ValidateDataStructure.cpp.ll
@@ -171,6 +172,7 @@ entry:
 ; raylib/optimized/rcore.c.ll
 ; raylib/optimized/rmodels.c.ll
 ; stb/optimized/stb_tilemap_editor.c.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000007(i1 %0, float %1) #0 {
 entry:
@@ -179,7 +181,7 @@ entry:
   ret i1 %3
 }
 
-; 145 occurrences:
+; 148 occurrences:
 ; abc/optimized/sclSize.c.ll
 ; abc/optimized/superGate.c.ll
 ; box2d/optimized/b2_distance.cpp.ll
@@ -253,6 +255,8 @@ entry:
 ; libwebp/optimized/picture_psnr_enc.c.ll
 ; lightgbm/optimized/objective_function.cpp.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_svg_render.ll
 ; meshlab/optimized/VisibleSet.cpp.ll
 ; meshlab/optimized/filter_io_nxs.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
@@ -325,16 +329,20 @@ entry:
 ; typst-rs/optimized/4sdr2z2pqpqxs72u.ll
 ; yoga/optimized/AbsoluteLayout.cpp.ll
 ; yoga/optimized/FlexLine.cpp.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, float %1) #0 {
 entry:
   %2 = fcmp ogt float %1, 0.000000e+00
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   ret i1 %3
 }
 
-; 89 occurrences:
+; 87 occurrences:
 ; actix-rs/optimized/14bh10sj718x2c7a.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/to_chars.ll
 ; box2d/optimized/b2_distance.cpp.ll
 ; box2d/optimized/b2_island.cpp.ll
 ; bullet3/optimized/b3VoronoiSimplexSolver.ll
@@ -354,11 +362,9 @@ entry:
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
-; lodepng/optimized/lodepng_util.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; meshlab/optimized/edit_paint.cpp.ll
-; meshlab/optimized/edit_point.cpp.ll
 ; meshlab/optimized/edit_sample.cpp.ll
 ; meshlab/optimized/edit_select.cpp.ll
 ; meshlab/optimized/editpickpoints.cpp.ll
@@ -417,17 +423,14 @@ entry:
 ; recastnavigation/optimized/DetourCommon.cpp.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; stb/optimized/stb_truetype.c.ll
-; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
-; typst-rs/optimized/40w6rezair915kkd.ll
-; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, float %1) #0 {
 entry:
   %2 = fcmp oge float %1, 0.000000e+00
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   ret i1 %3
 }
 
@@ -515,9 +518,10 @@ entry:
   ret i1 %3
 }
 
-; 119 occurrences:
+; 116 occurrences:
 ; abc/optimized/sclSize.c.ll
 ; assimp/optimized/ComputeUVMappingProcess.cpp.ll
+; boost/optimized/to_chars.ll
 ; box2d/optimized/b2_collide_edge.cpp.ll
 ; box2d/optimized/b2_distance.cpp.ll
 ; box2d/optimized/b2_polygon_shape.cpp.ll
@@ -606,7 +610,6 @@ entry:
 ; opencv/optimized/optical_flow_evaluation.cpp.ll
 ; opencv/optimized/pcaflow_demo.cpp.ll
 ; opencv/optimized/short_term_imageless_tracker.cpp.ll
-; opencv/optimized/simpleflow_demo.cpp.ll
 ; opencv/optimized/tsdf.cpp.ll
 ; opencv/optimized/tvl1_optical_flow.cpp.ll
 ; opencv/optimized/zero_term_imageless_tracker.cpp.ll
@@ -624,12 +627,9 @@ entry:
 ; stb/optimized/stb_tilemap_editor.c.ll
 ; tev/optimized/ImageCanvas.cpp.ll
 ; typst-rs/optimized/1c2qpu6zljc8gscz.ll
-; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; typst-rs/optimized/377uk5tkmxagdt0q.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
-; typst-rs/optimized/40w6rezair915kkd.ll
 ; typst-rs/optimized/4sdr2z2pqpqxs72u.ll
-; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; velox/optimized/CastExpr.cpp.ll
 ; velox/optimized/Variant.cpp.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
@@ -643,12 +643,13 @@ entry:
   ret i1 %3
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; assimp/optimized/OgreBinarySerializer.cpp.ll
 ; assimp/optimized/OgreXmlSerializer.cpp.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/btContinuousConvexCollision.ll
 ; bullet3/optimized/btGjkConvexCast.ll
+; darktable/optimized/introspection_basicadj.c.ll
 ; gromacs/optimized/gmx_hbond.cpp.ll
 ; gromacs/optimized/histogram.cpp.ll
 ; imgui/optimized/imgui.cpp.ll
@@ -661,7 +662,7 @@ entry:
 define i1 @func000000000000000b(i1 %0, float %1) #0 {
 entry:
   %2 = fcmp ule float %1, 0.000000e+00
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   ret i1 %3
 }
 
@@ -687,7 +688,7 @@ entry:
 define i1 @func0000000000000003(i1 %0, float %1) #0 {
 entry:
   %2 = fcmp ult float %1, 3.000000e+02
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   ret i1 %3
 }
 
@@ -720,11 +721,11 @@ entry:
 define i1 @func000000000000000d(i1 %0, float %1) #0 {
 entry:
   %2 = fcmp uge float %1, 0.000000e+00
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   ret i1 %3
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; assimp/optimized/ComputeUVMappingProcess.cpp.ll
 ; darktable/optimized/introspection_ashift.c.ll
@@ -740,7 +741,6 @@ entry:
 ; opencv/optimized/text_detector_swt.cpp.ll
 ; openjdk/optimized/parse2.ll
 ; openusd/optimized/value.cpp.ll
-; pbrt-v4/optimized/lights.cpp.ll
 ; pbrt-v4/optimized/primitive.cpp.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
@@ -753,6 +753,7 @@ entry:
 
 ; 12 occurrences:
 ; abseil-cpp/optimized/distributions_test.cc.ll
+; boost/optimized/get_clusters.ll
 ; bullet3/optimized/b3GjkEpa.ll
 ; bullet3/optimized/btGjkEpa2.ll
 ; draco/optimized/kd_tree_attributes_encoder.cc.ll
@@ -762,13 +763,12 @@ entry:
 ; ocio/optimized/GpuShaderUtils.cpp.ll
 ; oiio/optimized/imagebufalgo_compare.cpp.ll
 ; openusd/optimized/value.cpp.ll
-; protobuf/optimized/field_comparator.cc.ll
 ; recastnavigation/optimized/DetourNavMeshQuery.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i1 %0, float %1) #0 {
 entry:
   %2 = fcmp one float %1, 0x7FF0000000000000
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   ret i1 %3
 }
 
@@ -787,22 +787,17 @@ entry:
 define i1 @func0000000000000001(i1 %0, float %1) #0 {
 entry:
   %2 = fcmp uno float %1, 0.000000e+00
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   ret i1 %3
 }
 
-; 16 occurrences:
+; 11 occurrences:
 ; bullet3/optimized/btSoftBody.ll
 ; ocio/optimized/RangeOpData.cpp.ll
 ; opencv/optimized/affine_feature2d.cpp.ll
-; opencv/optimized/optical_flow_evaluation.cpp.ll
-; opencv/optimized/pcaflow_demo.cpp.ll
-; opencv/optimized/simpleflow_demo.cpp.ll
 ; opencv/optimized/ts_func.cpp.ll
-; opencv/optimized/tvl1_optical_flow.cpp.ll
 ; postgres/optimized/float.ll
 ; qdrant-rs/optimized/4iacc535829shmz2.ll
-; qdrant-rs/optimized/i0sjm53t1vzpf3k.ll
 ; velox/optimized/MapZipWith.cpp.ll
 ; xgboost/optimized/iterative_dmatrix.cc.ll
 ; yoga/optimized/Cache.cpp.ll
@@ -822,7 +817,7 @@ entry:
 define i1 @func0000000000000009(i1 %0, float %1) #0 {
 entry:
   %2 = fcmp ueq float %1, 0x7FF0000000000000
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   ret i1 %3
 }
 

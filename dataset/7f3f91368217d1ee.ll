@@ -58,13 +58,12 @@ entry:
   ret i32 %5
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; clamav/optimized/upack.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; linux/optimized/intel_sprite.ll
 ; linux/optimized/stackdepot.ll
 ; llvm/optimized/Instructions.cpp.ll
-; lua/optimized/lcode.ll
 ; opencv/optimized/container_avi.cpp.ll
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/LevelSetMeasure.cc.ll

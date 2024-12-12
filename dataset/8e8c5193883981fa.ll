@@ -11,10 +11,8 @@ entry:
   ret ptr %5
 }
 
-; 5 occurrences:
-; abc/optimized/amapRead.c.ll
+; 3 occurrences:
 ; gromacs/optimized/pairlist.cpp.ll
-; hyperscan/optimized/rose_build_program.cpp.ll
 ; openssl/optimized/libssl-lib-ssl_conf.ll
 ; openssl/optimized/libssl-shlib-ssl_conf.ll
 ; Function Attrs: nounwind
@@ -23,6 +21,18 @@ entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 40
   %5 = getelementptr nusw [9 x ptr], ptr %0, i64 0, i64 %4
+  ret ptr %5
+}
+
+; 2 occurrences:
+; abc/optimized/amapRead.c.ll
+; hyperscan/optimized/rose_build_program.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = sdiv exact i64 %3, 72
+  %5 = getelementptr nusw nuw [128 x ptr], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

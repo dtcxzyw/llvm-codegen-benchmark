@@ -4,7 +4,6 @@
 ; bullet3/optimized/btSoftBody.ll
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; darktable/optimized/introspection_ashift.c.ll
-; darktable/optimized/introspection_colorequal.c.ll
 ; darktable/optimized/introspection_graduatednd.c.ll
 ; darktable/optimized/navigation.c.ll
 ; graphviz/optimized/stress.c.ll
@@ -31,11 +30,12 @@
 ; opencv/optimized/undistort.dispatch.cpp.ll
 ; openjdk/optimized/hb-font.ll
 ; recastnavigation/optimized/DetourObstacleAvoidance.cpp.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
-  %3 = fmul float %2, %0
+  %3 = fmul float %0, %2
   %4 = fmul float %3, 5.000000e-01
   ret float %4
 }

@@ -25,20 +25,20 @@ func0000000000000052:                   # @func0000000000000052
 	vzeroupper
 	retq
 .LCPI3_0:
-	.long	4095                            # 0xfff
-func000000000000007b:                   # @func000000000000007b
+	.long	8                               # 0x8
+func0000000000000078:                   # @func0000000000000078
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpaddd	.LCPI3_0(%rip){1to8}, %ymm0, %ymm0
-	vpsrld	$13, %ymm0, %ymm0
+	vpsrld	$4, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
 	vzeroupper
 	retq
 .LCPI4_0:
-	.long	16                              # 0x10
-func0000000000000078:                   # @func0000000000000078
+	.long	4095                            # 0xfff
+func000000000000007b:                   # @func000000000000007b
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpaddd	.LCPI4_0(%rip){1to8}, %ymm0, %ymm0
-	vpsrld	$5, %ymm0, %ymm0
+	vpsrld	$13, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
 	vzeroupper
 	retq

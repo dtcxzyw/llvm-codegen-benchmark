@@ -1,10 +1,6 @@
 
-; 12 occurrences:
+; 8 occurrences:
 ; box2d/optimized/b2_contact.cpp.ll
-; clamav/optimized/readdb.c.ll
-; linux/optimized/af_packet.ll
-; linux/optimized/nsproxy.ll
-; linux/optimized/raw.ll
 ; openssl/optimized/libdefault-lib-dh_kmgmt.ll
 ; openssl/optimized/libdefault-lib-dsa_kmgmt.ll
 ; openssl/optimized/libdefault-lib-ec_kmgmt.ll
@@ -13,7 +9,7 @@
 ; openssl/optimized/libdefault-lib-rsa_kmgmt.ll
 ; tev/optimized/ImageViewer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000042(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000082(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = or i1 %3, %0
@@ -35,7 +31,7 @@ entry:
 ; llvm/optimized/SemaDeclObjC.cpp.ll
 ; llvm/optimized/SemaTemplate.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000084(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 32768
   %4 = icmp eq i32 %3, 0

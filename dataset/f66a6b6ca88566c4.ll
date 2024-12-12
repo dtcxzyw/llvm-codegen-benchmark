@@ -6,6 +6,7 @@
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_csv_scanner.cpp.ll
+; duckdb/optimized/ub_duckdb_sort.cpp.ll
 ; folly/optimized/ElfCache.cpp.ll
 ; git/optimized/record.ll
 ; git/optimized/xmerge.ll
@@ -49,7 +50,6 @@
 ; ruby/optimized/regexec.ll
 ; wireshark/optimized/packet-dccp.c.ll
 ; yyjson/optimized/yyjson.c.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/ddnf.cpp.ll
 ; z3/optimized/mam.cpp.ll
 ; z3/optimized/opt_cores.cpp.ll

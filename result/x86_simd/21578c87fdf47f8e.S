@@ -38,7 +38,7 @@ func0000000000000018:                   # @func0000000000000018
 	.long	1                               # 0x1
 .LCPI3_2:
 	.long	2                               # 0x2
-func0000000000000010:                   # @func0000000000000010
+func0000000000000030:                   # @func0000000000000030
 	vpcmpnleud	.LCPI3_0(%rip){1to8}, %ymm1, %k1
 	vpbroadcastd	.LCPI3_1(%rip), %ymm1   # ymm1 = [1,1,1,1,1,1,1,1]
 	vpbroadcastd	.LCPI3_2(%rip), %ymm1 {%k1} # ymm1 {%k1} = [2,2,2,2,2,2,2,2]

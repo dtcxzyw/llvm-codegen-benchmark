@@ -1,6 +1,6 @@
 
-; 87 occurrences:
-; assimp/optimized/zip.c.ll
+; 78 occurrences:
+; boost/optimized/alloc_lib.ll
 ; brotli/optimized/decode.c.ll
 ; cpython/optimized/_zoneinfo.ll
 ; cpython/optimized/basearith.ll
@@ -11,15 +11,12 @@
 ; diesel-rs/optimized/1mcix0ravw4ybg9k.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
-; eastl/optimized/BenchmarkDeque.cpp.ll
-; eastl/optimized/TestDeque.cpp.ll
 ; faiss/optimized/Clustering.cpp.ll
 ; folly/optimized/MemoryIdler.cpp.ll
 ; git/optimized/xmerge.ll
 ; hdf5/optimized/H5FDonion.c.ll
 ; hdf5/optimized/H5PB.c.ll
 ; hermes/optimized/APFloat.cpp.ll
-; hermes/optimized/zip.c.ll
 ; icu/optimized/uconv.ll
 ; just-rs/optimized/53slus9exfz9w045.ll
 ; libquic/optimized/mul.c.ll
@@ -38,6 +35,7 @@
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/CVSymbolVisitor.cpp.ll
 ; llvm/optimized/CVTypeVisitor.cpp.ll
+; llvm/optimized/CodeGenSchedule.cpp.ll
 ; llvm/optimized/DbiModuleList.cpp.ll
 ; llvm/optimized/DbiStreamBuilder.cpp.ll
 ; llvm/optimized/DeadStoreElimination.cpp.ll
@@ -54,10 +52,6 @@
 ; lua/optimized/lgc.ll
 ; luajit/optimized/minilua.ll
 ; luau/optimized/isocline.c.ll
-; meshlab/optimized/filter_sketchfab.cpp.ll
-; meshlab/optimized/miniz.c.ll
-; mimalloc/optimized/alloc-aligned.c.ll
-; mimalloc/optimized/alloc.c.ll
 ; mimalloc/optimized/bitmap.c.ll
 ; openjdk/optimized/arguments.ll
 ; openjdk/optimized/collectedHeap.ll
@@ -75,18 +69,15 @@
 ; postgres/optimized/dsm_impl.ll
 ; qemu/optimized/block_io.c.ll
 ; qemu/optimized/qemu-io-cmds.c.ll
-; qemu/optimized/system_cpus.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; redis/optimized/lstrlib.ll
-; redis/optimized/sds.ll
 ; rocksdb/optimized/blob_file_reader.cc.ll
 ; rocksdb/optimized/comparator.cc.ll
 ; ruby/optimized/bignum.ll
-; rust-analyzer-rs/optimized/2hhegu64ori9jrrl.ll
-; rustfmt-rs/optimized/2vbyym84o66crvo9.ll
-; rustfmt-rs/optimized/3sx1t619hmuq0zz7.ll
 ; softposit-rs/optimized/4kf6wfleft5henpt.ll
 ; wasmtime-rs/optimized/4zpfk2x34146qelg.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/97q4mieihk6fgi9ya31e3gth7.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i1 %1, i64 %2) #0 {
 entry:
@@ -177,7 +168,7 @@ entry:
   ret i64 %4
 }
 
-; 42 occurrences:
+; 45 occurrences:
 ; coreutils-rs/optimized/1efo3swtygw8gpnj.ll
 ; duckdb/optimized/ub_duckdb_storage_table.cpp.ll
 ; hdf5/optimized/H5LD.c.ll
@@ -217,9 +208,12 @@ entry:
 ; rust-analyzer-rs/optimized/2hhegu64ori9jrrl.ll
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
 ; rustfmt-rs/optimized/2vbyym84o66crvo9.ll
-; rustfmt-rs/optimized/3sx1t619hmuq0zz7.ll
 ; rustfmt-rs/optimized/4ext43viwbyeinhu.ll
 ; spike/optimized/f64_rem.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/1b5ll0cnnio0vvxmolgooij5i.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/bkz8gk2grsqnr2xbkvtnqlfhe.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i1 %1, i64 %2) #0 {
 entry:

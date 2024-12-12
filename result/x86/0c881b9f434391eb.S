@@ -1,16 +1,18 @@
 func0000000000000001:                   # @func0000000000000001
-	cmpq	%rdi, %rdx
+	cmpq	%rdx, %rdi
 	sete	%al
 	retq
 func0000000000000004:                   # @func0000000000000004
-	cmpq	%rdi, %rdx
-	seta	%al
+	cmpq	%rdx, %rdi
+	setb	%al
 	retq
-func0000000000000024:                   # @func0000000000000024
-	cmpq	%rdi, %rdx
-	seta	%al
+func0000000000000044:                   # @func0000000000000044
+	cmpq	%rdx, %rdi
+	setb	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
-	cmpq	%rdi, %rdx
+func0000000000000041:                   # @func0000000000000041
+	subq	%rsi, %rdx
+	leaq	(%rsi,%rdx,2), %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq

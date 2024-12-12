@@ -84,18 +84,6 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/rpl.ll
-; Function Attrs: nounwind
-define i32 @func00000000000000f0(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc nuw nsw i64 %1 to i32
-  %3 = shl nuw nsw i32 %2, 12
-  %4 = sub i32 %0, %3
-  %5 = add i32 %4, 32768
-  ret i32 %5
-}
-
-; 1 occurrences:
 ; opencv/optimized/calibration.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000015(i32 %0, i64 %1) #0 {

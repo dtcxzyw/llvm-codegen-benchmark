@@ -12,13 +12,14 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/to_chars.ll
 ; freetype/optimized/ftbase.c.ll
 ; openjdk/optimized/sharedRuntimeTrans.ll
 ; velox/optimized/DecimalUtil.cpp.ll
 ; velox/optimized/DecimalVectorFunctions.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000026(i32 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %0
   %3 = icmp slt i64 %1, 0
@@ -46,7 +47,7 @@ entry:
 ; velox/optimized/VectorSaver.cpp.ll
 ; z3/optimized/nlsat_explain.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %0
   %3 = icmp eq i64 %1, 0
@@ -54,10 +55,22 @@ entry:
   ret i32 %4
 }
 
+; 2 occurrences:
+; cpython/optimized/longobject.ll
+; lvgl/optimized/lv_tabview.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(i32 %0, i64 %1) #0 {
+entry:
+  %2 = sub i32 0, %0
+  %3 = icmp eq i64 %1, 1
+  %4 = select i1 %3, i32 %2, i32 %0
+  ret i32 %4
+}
+
 ; 1 occurrences:
 ; postgres/optimized/int.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001c(i32 %0, i64 %1) #0 {
+define i32 @func000000000000002c(i32 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %0
   %.not = icmp eq i64 %1, 0
@@ -74,17 +87,6 @@ entry:
   %.not = icmp eq i64 %1, 0
   %3 = select i1 %.not, i32 %0, i32 %2
   ret i32 %3
-}
-
-; 1 occurrences:
-; cpython/optimized/longobject.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000001(i32 %0, i64 %1) #0 {
-entry:
-  %2 = sub i32 0, %0
-  %3 = icmp eq i64 %1, 2
-  %4 = select i1 %3, i32 %2, i32 %0
-  ret i32 %4
 }
 
 attributes #0 = { nounwind }

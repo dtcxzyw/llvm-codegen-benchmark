@@ -98,7 +98,7 @@
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; wireshark/optimized/packet-acr122.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0) #0 {
+define i1 @func000000000000018c(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 7
   %2 = icmp ne i32 %1, 0
@@ -118,10 +118,10 @@ entry:
 ; postgres/optimized/wchar_srv.ll
 ; wireshark/optimized/packet-cimd.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i32 %0) #0 {
+define i1 @func0000000000000198(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 65535
-  %2 = icmp ugt i32 %1, 35
+  %2 = icmp samesign ugt i32 %1, 35
   %3 = icmp ne i32 %1, 65534
   %4 = and i1 %2, %3
   ret i1 %4

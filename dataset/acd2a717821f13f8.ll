@@ -1,14 +1,11 @@
 
-; 4 occurrences:
-; freetype/optimized/sfnt.c.ll
-; llvm/optimized/IRTranslator.cpp.ll
-; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; 1 occurrences:
 ; qemu/optimized/ui_vnc-enc-tight.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, %0
-  %4 = icmp ugt i32 %0, %1
+  %4 = icmp samesign ugt i32 %0, %1
   %5 = select i1 %4, i32 0, i32 %3
   ret i32 %5
 }
@@ -17,10 +14,10 @@ entry:
 ; jq/optimized/regparse.ll
 ; oniguruma/optimized/regparse.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, %0
-  %4 = icmp ugt i32 %0, %1
+  %4 = icmp samesign ugt i32 %0, %1
   %5 = select i1 %4, i32 -208, i32 %3
   ret i32 %5
 }
@@ -40,6 +37,19 @@ entry:
   ret i32 %5
 }
 
+; 3 occurrences:
+; freetype/optimized/sfnt.c.ll
+; llvm/optimized/IRTranslator.cpp.ll
+; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %0, %2
+  %4 = icmp ugt i32 %0, %1
+  %5 = select i1 %4, i32 -2147483648, i32 %3
+  ret i32 %5
+}
+
 ; 1 occurrences:
 ; llvm/optimized/MachineLICM.cpp.ll
 ; Function Attrs: nounwind
@@ -54,7 +64,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/unistr.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %0, %2
   %4 = icmp sgt i32 %0, %1
@@ -65,10 +75,10 @@ entry:
 ; 1 occurrences:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %0, %2
-  %4 = icmp ult i32 %0, %1
+  %4 = icmp samesign ult i32 %0, %1
   %5 = select i1 %4, i32 1, i32 %3
   ret i32 %5
 }

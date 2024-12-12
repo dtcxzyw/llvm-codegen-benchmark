@@ -20,11 +20,9 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
+; 2 occurrences:
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; minetest/optimized/pipeline.cpp.ll
-; protobuf/optimized/generated_message_tctable_lite.cc.ll
-; qemu/optimized/hw_net_vmxnet3.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, i8 %1) #0 {
 entry:
@@ -35,25 +33,35 @@ entry:
 }
 
 ; 2 occurrences:
-; nuttx/optimized/fs_files.c.ll
-; qemu/optimized/hw_ufs_ufs.c.ll
+; protobuf/optimized/generated_message_tctable_lite.cc.ll
+; qemu/optimized/hw_net_vmxnet3.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000018(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = trunc nuw nsw i64 %0 to i32
-  %4 = icmp ult i32 %3, %2
+  %3 = trunc i64 %0 to i32
+  %4 = icmp samesign ugt i32 %3, %2
   ret i1 %4
 }
 
-; 9 occurrences:
+; 2 occurrences:
+; nuttx/optimized/fs_files.c.ll
+; qemu/optimized/hw_ufs_ufs.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000074(i64 %0, i8 %1) #0 {
+entry:
+  %2 = zext i8 %1 to i32
+  %3 = trunc nuw nsw i64 %0 to i32
+  %4 = icmp samesign ult i32 %3, %2
+  ret i1 %4
+}
+
+; 7 occurrences:
 ; hermes/optimized/Executor.cpp.ll
 ; hermes/optimized/Interpreter.cpp.ll
 ; libquic/optimized/rsa.c.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/virtio_net.ll
-; luajit/optimized/lj_parse.ll
-; luajit/optimized/lj_parse_dyn.ll
 ; qemu/optimized/hw_ufs_ufs.c.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; Function Attrs: nounwind
@@ -65,22 +73,21 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
-; llvm/optimized/MachOObjectFile.cpp.ll
+; 1 occurrences:
 ; openjdk/optimized/Inet4AddressImpl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000094(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = trunc i64 %0 to i32
-  %4 = icmp ult i32 %3, %2
+  %4 = icmp samesign ult i32 %3, %2
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; openjdk/optimized/verifier.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000066(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = trunc nuw nsw i64 %0 to i32
@@ -119,7 +126,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/merge-ort.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = trunc i64 %0 to i32
@@ -130,7 +137,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/XzDec.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i8 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = trunc nuw nsw i64 %0 to i32
@@ -138,18 +145,40 @@ entry:
   ret i1 %4
 }
 
-; 9 occurrences:
+; 1 occurrences:
+; llvm/optimized/MachOObjectFile.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000084(i64 %0, i8 %1) #0 {
+entry:
+  %2 = zext nneg i8 %1 to i32
+  %3 = trunc i64 %0 to i32
+  %4 = icmp ult i32 %3, %2
+  ret i1 %4
+}
+
+; 2 occurrences:
+; luajit/optimized/lj_parse.ll
+; luajit/optimized/lj_parse_dyn.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i64 %0, i8 %1) #0 {
+entry:
+  %2 = zext i8 %1 to i32
+  %3 = trunc i64 %0 to i32
+  %4 = icmp samesign ult i32 %3, %2
+  ret i1 %4
+}
+
+; 8 occurrences:
 ; hyperscan/optimized/block.c.ll
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/catchup.c.ll
-; hyperscan/optimized/init.c.ll
 ; hyperscan/optimized/mpv.c.ll
 ; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/repeat.c.ll
 ; hyperscan/optimized/som_runtime.c.ll
 ; hyperscan/optimized/stream.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = trunc nuw nsw i64 %0 to i32

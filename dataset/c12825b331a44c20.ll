@@ -1,16 +1,14 @@
 
-%"struct.std::pair.2755001" = type { %"class.std::__cxx11::basic_string.2754945", %"struct.vcpkg::Path.2755002" }
-%"class.std::__cxx11::basic_string.2754945" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2754946", i64, %union.anon.0.2754947 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2754946" = type { ptr }
-%union.anon.0.2754947 = type { i64, [8 x i8] }
-%"struct.vcpkg::Path.2755002" = type { %"class.std::__cxx11::basic_string.2754945" }
+%"struct.std::pair.2867287" = type { %"class.std::__cxx11::basic_string.2867231", %"struct.vcpkg::Path.2867288" }
+%"class.std::__cxx11::basic_string.2867231" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2867232", i64, %union.anon.0.2867233 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2867232" = type { ptr }
+%union.anon.0.2867233 = type { i64, [8 x i8] }
+%"struct.vcpkg::Path.2867288" = type { %"class.std::__cxx11::basic_string.2867231" }
 
-; 131 occurrences:
+; 129 occurrences:
 ; cmake/optimized/cmCTestBinPacker.cxx.ll
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
 ; eastl/optimized/TestTupleVector.cpp.ll
-; hermes/optimized/CommandLine.cpp.ll
-; hermes/optimized/HadesGC.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/ADCE.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
@@ -142,30 +140,8 @@ define i64 @func000000000000005a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %"struct.std::pair.2755001", ptr %0, i64 %1
-  %6 = getelementptr nusw %"struct.std::pair.2755001", ptr %5, i64 %4
-  %7 = ptrtoint ptr %6 to i64
-  ret i64 %7
-}
-
-; 10 occurrences:
-; llvm/optimized/CGNonTrivialStruct.cpp.ll
-; llvm/optimized/CGStmtOpenMP.cpp.ll
-; llvm/optimized/CodeGenFunction.cpp.ll
-; llvm/optimized/InterleavedAccessPass.cpp.ll
-; llvm/optimized/OMPIRBuilder.cpp.ll
-; llvm/optimized/Randstruct.cpp.ll
-; llvm/optimized/ScalarEvolution.cpp.ll
-; llvm/optimized/SemaType.cpp.ll
-; llvm/optimized/SimpleLoopUnswitch.cpp.ll
-; llvm/optimized/ThinLTOBitcodeWriter.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000052(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = ashr exact i64 %2, 3
-  %4 = sub nsw i64 0, %3
-  %5 = getelementptr ptr, ptr %0, i64 %1
-  %6 = getelementptr nusw ptr, ptr %5, i64 %4
+  %5 = getelementptr nusw %"struct.std::pair.2867287", ptr %0, i64 %1
+  %6 = getelementptr nusw %"struct.std::pair.2867287", ptr %5, i64 %4
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7
 }

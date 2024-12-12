@@ -25,10 +25,9 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; glslang/optimized/SpvBuilder.cpp.ll
-; slurm/optimized/ebpf.ll
 ; wireshark/optimized/packet-ieee802154.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000063(i1 %0, i32 %1) #0 {
@@ -40,15 +39,27 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
-; postgres/optimized/describe.ll
 ; wireshark/optimized/packet-c1222.c.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000043(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 999999
+  %3 = zext i1 %2 to i32
+  %4 = select i1 %0, i32 6, i32 5
+  %5 = add nuw nsw i32 %4, %3
+  ret i32 %5
+}
+
+; 2 occurrences:
+; duckdb/optimized/ub_duckdb_common_types.cpp.ll
+; postgres/optimized/describe.ll
+; Function Attrs: nounwind
+define i32 @func00000000000000c3(i1 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i32 %1, 999999
   %3 = zext i1 %2 to i32
   %4 = select i1 %0, i32 6, i32 5
   %5 = add nuw nsw i32 %4, %3

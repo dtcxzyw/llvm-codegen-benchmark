@@ -1,8 +1,9 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; icu/optimized/number_grouping.ll
 ; libjpeg-turbo/optimized/jcdctmgr.c.ll
 ; minetest/optimized/map.cpp.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i1 %0, i16 %1, i64 %2) #0 {
 entry:

@@ -1,4 +1,4 @@
-func00000000000000a1:                   // @func00000000000000a1
+func00000000000001e1:                   // @func00000000000001e1
 // %bb.0:                               // %entry
 	mov	x8, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
 	mov	w9, #24                         // =0x18
@@ -11,7 +11,7 @@ func00000000000000a1:                   // @func00000000000000a1
 	cset	w0, eq
 	ret
                                         // -- End function
-func00000000000000a4:                   // @func00000000000000a4
+func00000000000001e4:                   // @func00000000000001e4
 // %bb.0:                               // %entry
 	mov	x8, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
 	mov	w9, #24                         // =0x18

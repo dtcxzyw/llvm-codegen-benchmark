@@ -143,7 +143,7 @@ entry:
   ret i1 %3
 }
 
-; 163 occurrences:
+; 165 occurrences:
 ; assimp/optimized/BlenderModifier.cpp.ll
 ; box2d/optimized/b2_collision.cpp.ll
 ; bullet3/optimized/b3VoronoiSimplexSolver.ll
@@ -307,6 +307,8 @@ entry:
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; tinyobjloader/optimized/tiny_obj_loader.cc.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(float %0, float %1) #0 {
 entry:
@@ -488,7 +490,6 @@ entry:
 ; gromacs/optimized/slasd4.cpp.ll
 ; meshlab/optimized/eigen_mesh_conversions.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
@@ -572,6 +573,7 @@ entry:
 ; spike/optimized/vsuxei64_v.ll
 ; spike/optimized/vsuxei8_v.ll
 ; stb/optimized/stb_truetype.c.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000003(float %0, float %1) #0 {
 entry:
@@ -629,7 +631,7 @@ entry:
   ret i1 %3
 }
 
-; 65 occurrences:
+; 64 occurrences:
 ; bullet3/optimized/btAxisSweep3.ll
 ; darktable/optimized/introspection_basicadj.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
@@ -646,7 +648,6 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/meshselect.cpp.ll
 ; minetest/optimized/sky.cpp.ll
-; miniaudio/optimized/unity.c.ll
 ; nuklear/optimized/unity.c.ll
 ; oiio/optimized/texturesys.cpp.ll
 ; opencv/optimized/hash_tsdf.cpp.ll
@@ -714,10 +715,9 @@ entry:
   ret i1 %3
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; bullet3/optimized/btSoftBody.ll
 ; darktable/optimized/introspection_sigmoid.c.ll
-; openblas/optimized/ieeeck.c.ll
 ; opencv/optimized/intersection.cpp.ll
 ; opencv/optimized/rlof_localflow.cpp.ll
 ; Function Attrs: nounwind
@@ -728,10 +728,9 @@ entry:
   ret i1 %3
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; gromacs/optimized/slarrex.cpp.ll
 ; ocio/optimized/CTFTransform.cpp.ll
-; openblas/optimized/ieeeck.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(float %0, float %1) #0 {
 entry:

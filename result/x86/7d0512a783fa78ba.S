@@ -1,49 +1,49 @@
-func000000000000006a:                   # @func000000000000006a
+func00000000000004ca:                   # @func00000000000004ca
 	movl	$3000, %eax                     # imm = 0xBB8
 	subl	%esi, %eax
-	cmpl	%edi, %eax
-	setg	%cl
+	cmpl	%eax, %edi
+	setl	%cl
 	testl	%edi, %edi
 	setns	%al
 	andb	%cl, %al
 	retq
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	movl	$2048, %eax                     # imm = 0x800
 	subl	%esi, %eax
-	cmpl	%edi, %eax
-	seta	%cl
+	cmpl	%eax, %edi
+	setb	%cl
 	testl	%edi, %edi
 	setns	%al
 	andb	%cl, %al
 	retq
-func0000000000000116:                   # @func0000000000000116
+func0000000000000426:                   # @func0000000000000426
 	addl	%edi, %esi
 	sete	%cl
 	testl	%edi, %edi
 	sets	%al
 	andb	%cl, %al
 	retq
-func000000000000011a:                   # @func000000000000011a
+func000000000000042a:                   # @func000000000000042a
 	movl	$1, %eax
 	subl	%esi, %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%cl
 	testl	%edi, %edi
 	setg	%al
 	andb	%cl, %al
 	retq
-func00000000000001b6:                   # @func00000000000001b6
+func0000000000000566:                   # @func0000000000000566
 	negl	%esi
-	cmpl	%edi, %esi
-	setle	%cl
+	cmpl	%esi, %edi
+	setge	%cl
 	testl	%edi, %edi
 	sets	%al
 	andb	%cl, %al
 	retq
-func000000000000015a:                   # @func000000000000015a
+func00000000000006aa:                   # @func00000000000006aa
 	xorl	$2147483647, %esi               # imm = 0x7FFFFFFF
-	cmpl	%edi, %esi
-	setae	%cl
+	cmpl	%esi, %edi
+	setbe	%cl
 	testl	%edi, %edi
 	setns	%al
 	andb	%cl, %al

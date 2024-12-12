@@ -1,15 +1,15 @@
-func000000000000036b:                   # @func000000000000036b
+func0000000000000ccb:                   # @func0000000000000ccb
 	leal	704(%rsi), %eax
-	cmpl	%edi, %eax
-	setg	%cl
+	cmpl	%eax, %edi
+	setl	%cl
 	cmpl	%esi, %edi
 	setge	%al
 	andb	%cl, %al
 	retq
-func000000000000016b:                   # @func000000000000016b
+func00000000000004cb:                   # @func00000000000004cb
 	leal	704(%rsi), %eax
-	cmpl	%edi, %eax
-	setg	%cl
+	cmpl	%eax, %edi
+	setl	%cl
 	cmpl	%esi, %edi
 	setge	%al
 	andb	%cl, %al

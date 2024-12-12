@@ -10,7 +10,7 @@
 ; cvc5/optimized/sygus_unif_rl.cpp.ll
 ; gromacs/optimized/genion.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
   %4 = add nuw nsw i64 %3, 1
@@ -22,7 +22,7 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/graphcycles_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 32
   %4 = add nsw i64 %3, 1
@@ -34,7 +34,7 @@ entry:
 ; 1 occurrences:
 ; annoy/optimized/annoymodule.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000059(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a9(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = add nsw i64 %3, -1

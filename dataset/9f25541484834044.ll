@@ -1,12 +1,11 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; git/optimized/dir.ll
 ; icu/optimized/pkgitems.ll
 ; icu/optimized/udata.ll
 ; luajit/optimized/lib_package.ll
 ; luajit/optimized/lib_package_dyn.ll
 ; php/optimized/glob_wrapper.ll
-; redis/optimized/loadlib.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(ptr %0, ptr %1, ptr %2) #0 {
 entry:

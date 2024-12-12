@@ -1,5 +1,5 @@
 
-; 8 occurrences:
+; 10 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; llvm/optimized/ParseExpr.cpp.ll
 ; rust-analyzer-rs/optimized/1opoiu8yzxku2bb7.ll
@@ -8,6 +8,8 @@
 ; rust-analyzer-rs/optimized/5fgtm3ees9sdsrsg.ll
 ; wasmtime-rs/optimized/4op38pthexwwd97b.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -25,6 +27,7 @@ entry:
 ; assimp/optimized/glTFImporter.cpp.ll
 ; coreutils-rs/optimized/qcad8r5ga44hvbl.ll
 ; coreutils-rs/optimized/tq1d77uuiq535i2.ll
+; egg-rs/optimized/3vlwzyp0day7srdg.ll
 ; hermes/optimized/JSError.cpp.ll
 ; llvm/optimized/ASTImporterLookupTable.cpp.ll
 ; llvm/optimized/ASTMatchFinder.cpp.ll
@@ -43,9 +46,7 @@ entry:
 ; openjdk/optimized/shenandoahBarrierSet.ll
 ; openjdk/optimized/shenandoahCodeRoots.ll
 ; openjdk/optimized/shenandoahConcurrentGC.ll
-; openjdk/optimized/shenandoahGC.ll
 ; openjdk/optimized/shenandoahHeap.ll
-; openjdk/optimized/shenandoahMark.ll
 ; openjdk/optimized/shenandoahNMethod.ll
 ; openjdk/optimized/shenandoahRuntime.ll
 ; openjdk/optimized/shenandoahStackWatermark.ll
@@ -55,6 +56,7 @@ entry:
 ; protobuf/optimized/map_field.cc.ll
 ; protobuf/optimized/struct.pb.cc.ll
 ; redis/optimized/dict.ll
+; zed-rs/optimized/avfqkgc3wosoc0eacq6zrtrq5.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -62,6 +64,17 @@ entry:
   %4 = icmp eq i64 %1, 0
   %5 = select i1 %4, ptr %3, ptr %0
   ret ptr %5
+}
+
+; 1 occurrences:
+; zed-rs/optimized/d5przcl3nwvj7ddp1j7ydu4aq.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000c(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = inttoptr i64 %2 to ptr
+  %.not = icmp eq i64 %1, 21
+  %4 = select i1 %.not, ptr %0, ptr %3
+  ret ptr %4
 }
 
 ; 1 occurrences:

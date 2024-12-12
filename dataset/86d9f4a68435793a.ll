@@ -1,10 +1,9 @@
 
-; 134 occurrences:
+; 137 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/cuddGenCof.c.ll
 ; abc/optimized/giaJf.c.ll
 ; abc/optimized/kitTruth.c.ll
-; abc/optimized/mfsSat.c.ll
 ; abc/optimized/mpmPre.c.ll
 ; abc/optimized/wlcMem.c.ll
 ; abc/optimized/wlnRead.c.ll
@@ -13,7 +12,10 @@
 ; assimp/optimized/zip.c.ll
 ; base64-rs/optimized/1a04td3ag2jefly3.ll
 ; base64-rs/optimized/3i18zkzed1c7jyoe.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/parser_utils.ll
 ; clamav/optimized/bytecode_detect.c.ll
+; clamav/optimized/str.c.ll
 ; clamav/optimized/timefn.cpp.ll
 ; flac/optimized/bitreader.c.ll
 ; flac/optimized/metadata_object.c.ll
@@ -25,6 +27,7 @@
 ; icu/optimized/gencnvex.ll
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
+; libdeflate/optimized/deflate_decompress.c.ll
 ; libquic/optimized/cast.c.ll
 ; libwebp/optimized/anim_encode.c.ll
 ; libwebp/optimized/histogram_enc.c.ll
@@ -49,7 +52,6 @@
 ; linux/optimized/vt.ll
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
-; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
 ; llvm/optimized/DIBuilder.cpp.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
 ; llvm/optimized/MachObjectWriter.cpp.ll
@@ -71,11 +73,11 @@
 ; opencv/optimized/miniflann.cpp.ll
 ; openjdk/optimized/FourByteAbgrPre.ll
 ; openjdk/optimized/IntArgbPre.ll
-; openjdk/optimized/TransformHelper.ll
 ; openjdk/optimized/cmspack.ll
 ; openjdk/optimized/hb-set.ll
 ; openmpi/optimized/bml_r2.ll
 ; openusd/optimized/decodemv.c.ll
+; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/stream.c.ll
 ; openusd/optimized/zipFile.cpp.ll
 ; php/optimized/ZendAccelerator.ll
@@ -134,6 +136,7 @@
 ; wireshark/optimized/packet-isobus.c.ll
 ; wireshark/optimized/packet-knxip_decrypt.c.ll
 ; wireshark/optimized/packet-nfs.c.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -143,11 +146,10 @@ entry:
   ret i32 %5
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; clamav/optimized/pe_icons.c.ll
 ; libwebp/optimized/extras.c.ll
 ; linux/optimized/e1000_main.ll
-; linux/optimized/early.ll
 ; linux/optimized/icl_dsi.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/uhci-hcd.ll
@@ -163,12 +165,12 @@ entry:
 define i32 @func000000000000000d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 12
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
 
-; 1382 occurrences:
+; 1518 occurrences:
 ; abc/optimized/abcDress3.c.ll
 ; abc/optimized/extraUtilCanon.c.ll
 ; abc/optimized/giaGlitch.c.ll
@@ -186,6 +188,7 @@ entry:
 ; assimp/optimized/glTFImporter.cpp.ll
 ; assimp/optimized/o3dgcArithmeticCodec.cpp.ll
 ; assimp/optimized/o3dgcDynamicVectorDecoder.cpp.ll
+; boost/optimized/ipv4_address.ll
 ; bullet3/optimized/b3Solver.ll
 ; clamav/optimized/Bcj2.c.ll
 ; clamav/optimized/Bra.c.ll
@@ -195,7 +198,6 @@ entry:
 ; clamav/optimized/cabd.c.ll
 ; clamav/optimized/chmd.c.ll
 ; clamav/optimized/crypt.cpp.ll
-; clamav/optimized/dns.c.ll
 ; clamav/optimized/lzxd.c.ll
 ; clamav/optimized/oabd.c.ll
 ; clamav/optimized/pe_icons.c.ll
@@ -239,7 +241,6 @@ entry:
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/22bojphyikqmi872.ll
 ; coreutils-rs/optimized/26a2uyrtdxle93un.ll
-; coreutils-rs/optimized/28iasj18ri0rcf6l.ll
 ; coreutils-rs/optimized/292e4dp0v9ceas5l.ll
 ; coreutils-rs/optimized/2fxrwnovw97v41kk.ll
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
@@ -301,7 +302,6 @@ entry:
 ; coreutils-rs/optimized/ymrsitga6ypzvcp.ll
 ; cpython/optimized/_datetimemodule.ll
 ; cpython/optimized/codecs.ll
-; cpython/optimized/datetime.ll
 ; cpython/optimized/floatobject.ll
 ; cpython/optimized/obmalloc.ll
 ; cpython/optimized/unicodeobject.ll
@@ -345,6 +345,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_func_string_main.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; eastl/optimized/EAMemory.cpp.ll
+; egg-rs/optimized/2fp1d0strj8iokyf.ll
 ; flac/optimized/encode.c.ll
 ; flac/optimized/foreign_metadata.c.ll
 ; flac/optimized/operations.c.ll
@@ -422,7 +423,6 @@ entry:
 ; hdf5/optimized/H5FDonion_header.c.ll
 ; hdf5/optimized/H5FDonion_history.c.ll
 ; hdf5/optimized/H5FDonion_index.c.ll
-; hdf5/optimized/H5Fio.c.ll
 ; hdf5/optimized/H5Gbtree2.c.ll
 ; hdf5/optimized/H5Gent.c.ll
 ; hdf5/optimized/H5HFbtree2.c.ll
@@ -439,11 +439,18 @@ entry:
 ; hdf5/optimized/H5Snone.c.ll
 ; hdf5/optimized/H5Spoint.c.ll
 ; hdf5/optimized/H5Sselect.c.ll
-; hdf5/optimized/H5Zfletcher32.c.ll
+; hermes/optimized/AST2JS.cpp.ll
 ; hermes/optimized/BytecodeStream.cpp.ll
 ; hermes/optimized/ConsecutiveStringStorage.cpp.ll
 ; hermes/optimized/FoldingSet.cpp.ll
+; hermes/optimized/HBC.cpp.ll
+; hermes/optimized/JSLexer.cpp.ll
+; hermes/optimized/JSONEmitter.cpp.ll
 ; hermes/optimized/MD5.cpp.ll
+; hermes/optimized/RegexSerialization.cpp.ll
+; hermes/optimized/Runtime.cpp.ll
+; hermes/optimized/SourceErrorManager.cpp.ll
+; hermes/optimized/UTF8.cpp.ll
 ; html5ever-rs/optimized/2k27uywn6e9ruua6.ll
 ; html5ever-rs/optimized/38n20yzo26sy51uu.ll
 ; hyperscan/optimized/Parser.cpp.ll
@@ -478,8 +485,6 @@ entry:
 ; imgui/optimized/imgui_draw.cpp.ll
 ; influxdb-rs/optimized/2g8nrbnslhx52xx1.ll
 ; influxdb-rs/optimized/380gcqze52ow6205.ll
-; jq/optimized/utf32_be.ll
-; jq/optimized/utf32_le.ll
 ; jsonnet/optimized/md5.cpp.ll
 ; just-rs/optimized/1uppz7l1e89fp8n7.ll
 ; just-rs/optimized/2sblcsgax6v4zfcc.ll
@@ -622,7 +627,6 @@ entry:
 ; linux/optimized/hda_codec.ll
 ; linux/optimized/hdac_device.ll
 ; linux/optimized/hub.ll
-; linux/optimized/huf_decompress.ll
 ; linux/optimized/i915_perf.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/ich8lan.ll
@@ -700,6 +704,15 @@ entry:
 ; luajit/optimized/minilua.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
+; lvgl/optimized/lv_svg_parser.ll
+; lvgl/optimized/lv_text.ll
 ; meilisearch-rs/optimized/2bqmf34tdvo23w8l.ll
 ; meilisearch-rs/optimized/2d8gq047pqsnm94t.ll
 ; meilisearch-rs/optimized/2eqafq69fd46y14a.ll
@@ -717,7 +730,6 @@ entry:
 ; meshlab/optimized/eigen_mesh_conversions.cpp.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
@@ -751,10 +763,8 @@ entry:
 ; minetest/optimized/texturesource.cpp.ll
 ; minetest/optimized/wieldmesh.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
-; mitsuba3/optimized/x86func.cpp.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
@@ -869,8 +879,6 @@ entry:
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
-; oniguruma/optimized/utf32_be.ll
-; oniguruma/optimized/utf32_le.ll
 ; opencv/optimized/bitstrm.cpp.ll
 ; opencv/optimized/cap.cpp.ll
 ; opencv/optimized/denoising.cpp.ll
@@ -943,13 +951,9 @@ entry:
 ; openssl/optimized/fatalerrtest-bin-ssltestlib.ll
 ; openssl/optimized/libcrypto-lib-aria.ll
 ; openssl/optimized/libcrypto-lib-bf_cfb64.ll
-; openssl/optimized/libcrypto-lib-bf_ecb.ll
 ; openssl/optimized/libcrypto-lib-bf_enc.ll
-; openssl/optimized/libcrypto-lib-bf_ofb64.ll
 ; openssl/optimized/libcrypto-lib-c_cfb64.ll
-; openssl/optimized/libcrypto-lib-c_ecb.ll
 ; openssl/optimized/libcrypto-lib-c_enc.ll
-; openssl/optimized/libcrypto-lib-c_ofb64.ll
 ; openssl/optimized/libcrypto-lib-cbc_enc.ll
 ; openssl/optimized/libcrypto-lib-cfb64ede.ll
 ; openssl/optimized/libcrypto-lib-cfb_enc.ll
@@ -957,8 +961,6 @@ entry:
 ; openssl/optimized/libcrypto-lib-e_chacha20_poly1305.ll
 ; openssl/optimized/libcrypto-lib-md4_dgst.ll
 ; openssl/optimized/libcrypto-lib-mdc2dgst.ll
-; openssl/optimized/libcrypto-lib-ofb64ede.ll
-; openssl/optimized/libcrypto-lib-ofb64enc.ll
 ; openssl/optimized/libcrypto-lib-ofb_enc.ll
 ; openssl/optimized/libcrypto-lib-pcbc_enc.ll
 ; openssl/optimized/libcrypto-lib-rmd_dgst.ll
@@ -969,13 +971,9 @@ entry:
 ; openssl/optimized/libcrypto-lib-xcbc_enc.ll
 ; openssl/optimized/libcrypto-shlib-aria.ll
 ; openssl/optimized/libcrypto-shlib-bf_cfb64.ll
-; openssl/optimized/libcrypto-shlib-bf_ecb.ll
 ; openssl/optimized/libcrypto-shlib-bf_enc.ll
-; openssl/optimized/libcrypto-shlib-bf_ofb64.ll
 ; openssl/optimized/libcrypto-shlib-c_cfb64.ll
-; openssl/optimized/libcrypto-shlib-c_ecb.ll
 ; openssl/optimized/libcrypto-shlib-c_enc.ll
-; openssl/optimized/libcrypto-shlib-c_ofb64.ll
 ; openssl/optimized/libcrypto-shlib-cbc_enc.ll
 ; openssl/optimized/libcrypto-shlib-cfb64ede.ll
 ; openssl/optimized/libcrypto-shlib-cfb_enc.ll
@@ -983,8 +981,6 @@ entry:
 ; openssl/optimized/libcrypto-shlib-e_chacha20_poly1305.ll
 ; openssl/optimized/libcrypto-shlib-md4_dgst.ll
 ; openssl/optimized/libcrypto-shlib-mdc2dgst.ll
-; openssl/optimized/libcrypto-shlib-ofb64ede.ll
-; openssl/optimized/libcrypto-shlib-ofb64enc.ll
 ; openssl/optimized/libcrypto-shlib-ofb_enc.ll
 ; openssl/optimized/libcrypto-shlib-pcbc_enc.ll
 ; openssl/optimized/libcrypto-shlib-rmd_dgst.ll
@@ -1094,7 +1090,6 @@ entry:
 ; qemu/optimized/hw_scsi_scsi-generic.c.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll
 ; qemu/optimized/system_device_tree.c.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
 ; qemu/optimized/target_riscv_crypto_helper.c.ll
 ; qemu/optimized/target_riscv_vcrypto_helper.c.ll
 ; qemu/optimized/ui_vnc.c.ll
@@ -1280,6 +1275,10 @@ entry:
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
 ; tree-sitter-rs/optimized/fdq2a0xqmcc416o.ll
 ; tree-sitter-rs/optimized/hn52zjsrr4uofg0.ll
+; turborepo-rs/optimized/073xkjbb0bs34qvdns32a3q3u.ll
+; turborepo-rs/optimized/1ndqmllq8mi5y5aeb5nl95w3q.ll
+; turborepo-rs/optimized/avd1ga9yb4qq5g7sdqftppd4q.ll
+; turborepo-rs/optimized/dkgcknzedja5roez65x0uj4mc.ll
 ; typst-rs/optimized/15cic2jih5jwap60.ll
 ; typst-rs/optimized/18cop7j4xops9f9h.ll
 ; typst-rs/optimized/1fd2xpfefmgrcb9d.ll
@@ -1435,7 +1434,6 @@ entry:
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; wasmtime-rs/optimized/1mhgud7mrzoemrrh.ll
-; wasmtime-rs/optimized/1p299vfqqiqtk0uj.ll
 ; wasmtime-rs/optimized/23pphsjwudwti3b1.ll
 ; wasmtime-rs/optimized/2c2e8qj2oaih8jds.ll
 ; wasmtime-rs/optimized/2sf3ranrrf5pn6ms.ll
@@ -1445,10 +1443,8 @@ entry:
 ; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
 ; wasmtime-rs/optimized/47hgs4eifsow3k34.ll
 ; wasmtime-rs/optimized/4d248unwvleglo3y.ll
-; wasmtime-rs/optimized/4ij7rjr9zp31iq5b.ll
 ; wasmtime-rs/optimized/4nuxwfk1fz1jsu89.ll
 ; wasmtime-rs/optimized/4y19gy3l28n56lab.ll
-; wasmtime-rs/optimized/4z02b278nscq7j1a.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; wasmtime-rs/optimized/5poarlxbfmu9lbg.ll
@@ -1459,13 +1455,10 @@ entry:
 ; wireshark/optimized/address_types.c.ll
 ; wireshark/optimized/autosar_dlt.c.ll
 ; wireshark/optimized/charsets.c.ll
-; wireshark/optimized/csids.c.ll
-; wireshark/optimized/dpa400.c.ll
 ; wireshark/optimized/erf.c.ll
 ; wireshark/optimized/eyesdn.c.ll
 ; wireshark/optimized/iptrace.c.ll
 ; wireshark/optimized/k12.c.ll
-; wireshark/optimized/mpeg-audio.c.ll
 ; wireshark/optimized/nettl.c.ll
 ; wireshark/optimized/ngsniffer.c.ll
 ; wireshark/optimized/packet-acn.c.ll
@@ -1497,7 +1490,6 @@ entry:
 ; wireshark/optimized/packet-icmp.c.ll
 ; wireshark/optimized/packet-ieee80211-prism.c.ll
 ; wireshark/optimized/packet-ieee80211-radiotap-iter.c.ll
-; wireshark/optimized/packet-ieee80211-wlancap.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-iso15765.c.ll
 ; wireshark/optimized/packet-k12.c.ll
@@ -1543,6 +1535,152 @@ entry:
 ; yalantinglibs/optimized/chat_room.cpp.ll
 ; yalantinglibs/optimized/example.cpp.ll
 ; yosys/optimized/sha1.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/07dna7314zcp97b9l3ow4yqxr.ll
+; zed-rs/optimized/0alphtuk5g34mh3kiiec4rpgf.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/0nwivtw0lug3nh002ufjq6dhh.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/0wlgaqlqpgcjsjsmk5ypsukh3.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/12x3d7yxch19r9kog7sr8geci.ll
+; zed-rs/optimized/19l54bkp73b8vpqg6elueqjm7.ll
+; zed-rs/optimized/1dgnm6lfd9h2ap1ws2supa1aq.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/1jbe4zqf10fi4dnkcvibaggjj.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1qb020ndphzxmvf33d06yonm0.ll
+; zed-rs/optimized/1rxtw8y3xj0ox3oc92qj76kkb.ll
+; zed-rs/optimized/1szjr41vjnxcxgyq70q0xb6lv.ll
+; zed-rs/optimized/1wbwq1jcywou5oe0v0ig8uk8s.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/22ahis4uxapmr5sot3uwhf47g.ll
+; zed-rs/optimized/2ehxywt5i46yjybqa8jmzydsx.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/2i8hya6f2t9bndlbd6b6686oi.ll
+; zed-rs/optimized/2oaoo1au0mgurs9kk2rwi55od.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
+; zed-rs/optimized/2ouh3ql8sx6p5h4phjh0p73m4.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/32kqcem53id37kgf9pak7q7x7.ll
+; zed-rs/optimized/35jcvzd99rtsbpw1ntju6vgpx.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/3hyavwlupfwy674k0u5ll7gv6.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/3tqegt9m5oad3ocos87azd3mb.ll
+; zed-rs/optimized/3wc7tnd4g7jfnn81av5tll8e5.ll
+; zed-rs/optimized/3y76hj0efsluhdj732s0l4pjz.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/477pfick4ndzj3k3y8f79a5fg.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
+; zed-rs/optimized/4q1bnadqr1o107uase7gmrd0k.ll
+; zed-rs/optimized/4t9tdr5qgocuoz7ebpyy9bvqv.ll
+; zed-rs/optimized/4yj2hlxw19fp3dolnhsg3xkpy.ll
+; zed-rs/optimized/4yr6g2ok92pf18o3rcyc7uswo.ll
+; zed-rs/optimized/53iexoleo5ntv1dnjbqpooo1x.ll
+; zed-rs/optimized/58eqxolkuiavjghtj45u3c5th.ll
+; zed-rs/optimized/5e9omh398ijohtd01awo2ssl8.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/5gzhlrfve63v3ndyg8t40tttn.ll
+; zed-rs/optimized/5kbsfw3jcmbcslmu1o5kx13w3.ll
+; zed-rs/optimized/5kioou5gqw7kusdtotq0xka1i.ll
+; zed-rs/optimized/5kpr1irzb57viu7vn1ci12z94.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/5q8zw1h1kdgz0fiksol53zkaa.ll
+; zed-rs/optimized/5qf95fx0pqn6duuq4hkly3hl0.ll
+; zed-rs/optimized/5tjk7umffytrthtuv35pacndm.ll
+; zed-rs/optimized/5uhbvltlizm569jusm7kamf9x.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/5xyjbgzjrjfd06sknyxfrytq2.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/69ryzzuwe6uhdzky6991droy3.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7almbq0vtpgp7q0c9d6k1td97.ll
+; zed-rs/optimized/7aq90jycr3x842qyrhjbel971.ll
+; zed-rs/optimized/7fmm0tfd68kkbfwadepm13y36.ll
+; zed-rs/optimized/7for60ncc55q4u0jy3fqr6omg.ll
+; zed-rs/optimized/7rpe3bril898mttdoib5hjrj5.ll
+; zed-rs/optimized/7tab72wd3e4t2kifacclhb85x.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/7ukwrxq2hh2vqucbwedxkpvcs.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
+; zed-rs/optimized/835zkucuw8h9aw73lp3nfl4bh.ll
+; zed-rs/optimized/8c9m4dxfbx8n642b944htcs78.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/8ong401nghjuvw1pdqaahwms7.ll
+; zed-rs/optimized/8pzylepo63jgxs9pcfvvb1oj4.ll
+; zed-rs/optimized/8qol7q25vqqdxkncrkeuuvo2e.ll
+; zed-rs/optimized/8tscdb01zcabwdnjfgov818gm.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/914lh5mzek2kam75czht77x9a.ll
+; zed-rs/optimized/96hln4y97mhftmlht5x1xhnh1.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/9eafvdu9qxyugp5or14xw795l.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
+; zed-rs/optimized/9jkx32jki2vcljeo0xctxc8uw.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
+; zed-rs/optimized/9m6pb7xfonzy0fntd1p7uja7t.ll
+; zed-rs/optimized/9p59c0slbkpkbmcp28i14dl74.ll
+; zed-rs/optimized/9ph9ik6f4o8cna26bqiztqhx1.ll
+; zed-rs/optimized/9r3tgj00e2sbbyanbvf1oqgns.ll
+; zed-rs/optimized/9rjcnh2bkwcxhw260lzzkw0kl.ll
+; zed-rs/optimized/9sysltstjhp0j3770z48leqk1.ll
+; zed-rs/optimized/9upxkbg7t4a2myonrq663opfs.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/a19dler2qrv3afh8hccxiqxn7.ll
+; zed-rs/optimized/a3hrzugt78pdexsn4h7d7fddk.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
+; zed-rs/optimized/a5d6yyd6fi8sgpd1mrlxaz07z.ll
+; zed-rs/optimized/a9n822469hhbvmntwly5c3zys.ll
+; zed-rs/optimized/a9o648rm8h3erlto15zyd64wi.ll
+; zed-rs/optimized/ad3qos5opie5ae39m3c4ahrzq.ll
+; zed-rs/optimized/adhrhj1ih026npw6eixxu9sn1.ll
+; zed-rs/optimized/aemqmt46uh053lsq1r4xaert7.ll
+; zed-rs/optimized/ag0lml678ueaz8wuwxuz1u0bn.ll
+; zed-rs/optimized/avfqkgc3wosoc0eacq6zrtrq5.ll
+; zed-rs/optimized/axq0fnk57nrkchega3zj2zynp.ll
+; zed-rs/optimized/b0ehx4vbxawrtril1zkysl0b6.ll
+; zed-rs/optimized/b0jacrvunbgse6y69p1vx4gkq.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/b9ty0axfl2ld0co5krahg7gfq.ll
+; zed-rs/optimized/bc27zh41i1ia1dszunchw7cbt.ll
+; zed-rs/optimized/bflorbpxbjb42ccmeziz8dqw7.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/bwf7odsfkes1o9vw37iz67e4b.ll
+; zed-rs/optimized/bxqgsrk0kqvq41wnnozsjp44k.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
+; zed-rs/optimized/c6zcqmm1tlbhiy5p6czlxqg9e.ll
+; zed-rs/optimized/cgceu28znx3lfd8ddk7c9uglp.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/ckiwzakufh7d1bhz9acxsspq9.ll
+; zed-rs/optimized/clfnbm8q68pj6tyseqadz86ib.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
+; zed-rs/optimized/d236qqx54dpqso3cyloa7ybaj.ll
+; zed-rs/optimized/dcwegs3epbh2lxwma3jrco7jy.ll
+; zed-rs/optimized/dhtd8mxtyja4srmt3ddrqkjib.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/dq2w60loei6lzivjguqmeajyy.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; zed-rs/optimized/dx9yxhk8z0nuczbnxw7yidd6v.ll
+; zed-rs/optimized/dyvad4f2160xvx8b9yj3b8wnj.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
+; zed-rs/optimized/e41v0ag91t21no9hshe9jx8u4.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
+; zed-rs/optimized/eldybx25av55fm0jlf5yq64qn.ll
+; zed-rs/optimized/ensdmfe31f02o6ykga4vd445w.ll
+; zed-rs/optimized/enul73o10k5w3gxzdsfqj1w26.ll
+; zed-rs/optimized/erzde9u7wnx5zkvy3kzdy8721.ll
+; zed-rs/optimized/exy3mxytk4j1w94j908qbhdez.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
+; zed-rs/optimized/f1iubl8q66d2sxqoxpce2jw1m.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
+; zed-rs/optimized/f3ax6fwg663b1ze6yfrcfasp4.ll
+; zed-rs/optimized/f4g1cwrteaiub5fsoifj5amxy.ll
+; zed-rs/optimized/f4wwu90a2y9t62jcyj6nqzu8v.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; zstd/optimized/zstd_v03.c.ll
@@ -1555,25 +1693,25 @@ entry:
 define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 6
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
 
-; 66 occurrences:
+; 82 occurrences:
 ; abc/optimized/wlnRead.c.ll
 ; base64-rs/optimized/1a04td3ag2jefly3.ll
 ; base64-rs/optimized/3i18zkzed1c7jyoe.ll
+; boost/optimized/parser_utils.ll
 ; clamav/optimized/bytecode_detect.c.ll
 ; clamav/optimized/pe_icons.c.ll
 ; clamav/optimized/readdb.c.ll
+; egg-rs/optimized/2fp1d0strj8iokyf.ll
 ; git/optimized/transport.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; icu/optimized/ucnvscsu.ll
 ; icu/optimized/ucptrie.ll
-; linux/optimized/dw.ll
-; linux/optimized/early.ll
 ; linux/optimized/i915_pmu.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_dpll_mgr.ll
@@ -1584,6 +1722,7 @@ entry:
 ; linux/optimized/intel_workarounds.ll
 ; linux/optimized/mpparse.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
+; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
 ; llvm/optimized/AArch64MachObjectWriter.cpp.ll
 ; llvm/optimized/CodeViewDebug.cpp.ll
 ; llvm/optimized/FunctionAttrs.cpp.ll
@@ -1591,6 +1730,7 @@ entry:
 ; lua/optimized/lcode.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; luau/optimized/BytecodeBuilder.cpp.ll
+; lvgl/optimized/lv_text.ll
 ; meilisearch-rs/optimized/48hhebymxr5ff2nk.ll
 ; oiio/optimized/ddsinput.cpp.ll
 ; openjdk/optimized/ByteBinary1Bit.ll
@@ -1612,7 +1752,6 @@ entry:
 ; php/optimized/pcre2_compile.ll
 ; qemu/optimized/hw_acpi_aml-build.c.ll
 ; qemu/optimized/hw_usb_hcd-xhci.c.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
 ; qemu/optimized/ui_qemu-pixman.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; recastnavigation/optimized/DetourDebugDraw.cpp.ll
@@ -1626,12 +1765,27 @@ entry:
 ; wireshark/optimized/packet-6lowpan.c.ll
 ; wireshark/optimized/packet-gelf.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/1jbe4zqf10fi4dnkcvibaggjj.ll
+; zed-rs/optimized/35jcvzd99rtsbpw1ntju6vgpx.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/477pfick4ndzj3k3y8f79a5fg.ll
+; zed-rs/optimized/4km3eupdnqqnodg5d7nrlf2sf.ll
+; zed-rs/optimized/5kpr1irzb57viu7vn1ci12z94.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
+; zed-rs/optimized/8bnapxt4ilkd5y3egr7fzm1sv.ll
+; zed-rs/optimized/8c9m4dxfbx8n642b944htcs78.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/cgceu28znx3lfd8ddk7c9uglp.ll
+; zed-rs/optimized/e80b5h5uaylvf0myf6av6e6rx.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; zxing/optimized/MCDecoder.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 12
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = or i32 %4, %0
   ret i32 %5
 }
@@ -1642,7 +1796,7 @@ entry:
 ; abc/optimized/giaResub.c.ll
 ; libwebp/optimized/vp8_dec.c.ll
 ; lief/optimized/DylibCommand.cpp.ll
-; linux/optimized/hdac_regmap.ll
+; linux/optimized/hda_codec.ll
 ; linux/optimized/intel_dpll.ll
 ; linux/optimized/uncore_snbep.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
@@ -1678,7 +1832,7 @@ entry:
   ret i32 %5
 }
 
-; 343 occurrences:
+; 344 occurrences:
 ; abc/optimized/extraUtilCanon.c.ll
 ; abc/optimized/rwrLib.c.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
@@ -1690,6 +1844,7 @@ entry:
 ; assimp/optimized/glTFImporter.cpp.ll
 ; assimp/optimized/o3dgcArithmeticCodec.cpp.ll
 ; assimp/optimized/o3dgcDynamicVectorDecoder.cpp.ll
+; boost/optimized/ipv4_address.ll
 ; bullet3/optimized/b3File.ll
 ; clamav/optimized/Bcj2.c.ll
 ; clamav/optimized/Bra86.c.ll
@@ -1697,7 +1852,6 @@ entry:
 ; clamav/optimized/binhex.c.ll
 ; clamav/optimized/cabd.c.ll
 ; clamav/optimized/chmd.c.ll
-; clamav/optimized/dns.c.ll
 ; clamav/optimized/oabd.c.ll
 ; clamav/optimized/rijndael.c.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
@@ -1750,11 +1904,9 @@ entry:
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hdf5/optimized/H5Shyper.c.ll
-; hdf5/optimized/H5Zfletcher32.c.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; hermes/optimized/FoldingSet.cpp.ll
 ; icu/optimized/bytestrie.ll
-; icu/optimized/csrmbcs.ll
 ; icu/optimized/csrucode.ll
 ; icu/optimized/store.ll
 ; icu/optimized/ucnv_u32.ll
@@ -1807,11 +1959,16 @@ entry:
 ; lodepng/optimized/lodepng_util.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
 ; logos-rs/optimized/5f38ll801i7djw99.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; lvgl/optimized/lv_text.ll
 ; meilisearch-rs/optimized/2eqafq69fd46y14a.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/eigen_mesh_conversions.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
@@ -1884,25 +2041,17 @@ entry:
 ; openmpi/optimized/sha256.ll
 ; openssl/optimized/libcrypto-lib-aria.ll
 ; openssl/optimized/libcrypto-lib-bf_cfb64.ll
-; openssl/optimized/libcrypto-lib-bf_ecb.ll
 ; openssl/optimized/libcrypto-lib-bf_enc.ll
-; openssl/optimized/libcrypto-lib-bf_ofb64.ll
 ; openssl/optimized/libcrypto-lib-c_cfb64.ll
-; openssl/optimized/libcrypto-lib-c_ecb.ll
 ; openssl/optimized/libcrypto-lib-c_enc.ll
-; openssl/optimized/libcrypto-lib-c_ofb64.ll
 ; openssl/optimized/libcrypto-lib-seed.ll
 ; openssl/optimized/libcrypto-lib-sm3.ll
 ; openssl/optimized/libcrypto-lib-sm4.ll
 ; openssl/optimized/libcrypto-shlib-aria.ll
 ; openssl/optimized/libcrypto-shlib-bf_cfb64.ll
-; openssl/optimized/libcrypto-shlib-bf_ecb.ll
 ; openssl/optimized/libcrypto-shlib-bf_enc.ll
-; openssl/optimized/libcrypto-shlib-bf_ofb64.ll
 ; openssl/optimized/libcrypto-shlib-c_cfb64.ll
-; openssl/optimized/libcrypto-shlib-c_ecb.ll
 ; openssl/optimized/libcrypto-shlib-c_enc.ll
-; openssl/optimized/libcrypto-shlib-c_ofb64.ll
 ; openssl/optimized/libcrypto-shlib-seed.ll
 ; openssl/optimized/libcrypto-shlib-sm3.ll
 ; openssl/optimized/libcrypto-shlib-sm4.ll
@@ -1981,7 +2130,6 @@ entry:
 ; wireshark/optimized/address_types.c.ll
 ; wireshark/optimized/autosar_dlt.c.ll
 ; wireshark/optimized/charsets.c.ll
-; wireshark/optimized/csids.c.ll
 ; wireshark/optimized/erf.c.ll
 ; wireshark/optimized/iptrace.c.ll
 ; wireshark/optimized/k12.c.ll
@@ -1994,7 +2142,6 @@ entry:
 ; wireshark/optimized/packet-gtp.c.ll
 ; wireshark/optimized/packet-icmp.c.ll
 ; wireshark/optimized/packet-ieee80211-prism.c.ll
-; wireshark/optimized/packet-ieee80211-wlancap.c.ll
 ; wireshark/optimized/packet-iso15765.c.ll
 ; wireshark/optimized/packet-k12.c.ll
 ; wireshark/optimized/packet-lbmr.c.ll
@@ -2020,13 +2167,21 @@ entry:
 ; wireshark/optimized/vwr.c.ll
 ; wolfssl/optimized/aes.c.ll
 ; wolfssl/optimized/ssl.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/73pi95mikt3cntupcr2d2nefv.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 24
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
@@ -2043,10 +2198,9 @@ entry:
   ret i32 %5
 }
 
-; 20 occurrences:
+; 18 occurrences:
 ; abc/optimized/giaNf.c.ll
 ; abc/optimized/giaPf.c.ll
-; libdeflate/optimized/deflate_decompress.c.ll
 ; libwebp/optimized/extras.c.ll
 ; linux/optimized/devio.ll
 ; linux/optimized/e1000_main.ll
@@ -2061,7 +2215,6 @@ entry:
 ; luajit/optimized/lj_parse_dyn.ll
 ; luajit/optimized/minilua.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
-; openusd/optimized/openexr-c.c.ll
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; redis/optimized/lcode.ll
 ; Function Attrs: nounwind
@@ -2073,7 +2226,7 @@ entry:
   ret i32 %5
 }
 
-; 52 occurrences:
+; 50 occurrences:
 ; brotli/optimized/encode.c.ll
 ; clamav/optimized/pe_icons.c.ll
 ; darktable/optimized/DeflateDecompressor.cpp.ll
@@ -2083,7 +2236,6 @@ entry:
 ; image-rs/optimized/fyek6fuqg0ocunt.ll
 ; libwebp/optimized/extras.c.ll
 ; libwebp/optimized/vp8l_dec.c.ll
-; linux/optimized/dw.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/hdac_device.ll
 ; linux/optimized/intel_ddi.ll
@@ -2106,7 +2258,6 @@ entry:
 ; luajit/optimized/lj_parse_dyn.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; minetest/optimized/player.cpp.ll
-; mitsuba3/optimized/x86func.cpp.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; oiio/optimized/ddsinput.cpp.ll
 ; openjdk/optimized/hb-aat-layout.ll
@@ -2130,7 +2281,7 @@ entry:
 define i32 @func000000000000000e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = or i32 %4, %0
   ret i32 %5
 }
@@ -2160,7 +2311,7 @@ entry:
   ret i32 %5
 }
 
-; 261 occurrences:
+; 258 occurrences:
 ; abc/optimized/abcDress3.c.ll
 ; abc/optimized/cutMerge.c.ll
 ; abc/optimized/dauTree.c.ll
@@ -2168,7 +2319,6 @@ entry:
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/rwrLib.c.ll
-; abc/optimized/rwtUtil.c.ll
 ; abc/optimized/satSolver2.c.ll
 ; clamav/optimized/bytecode_api.c.ll
 ; cmake/optimized/zstd_compress_literals.c.ll
@@ -2203,7 +2353,6 @@ entry:
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; meshlab/optimized/ml_rendering_actions.cpp.ll
 ; meshlab/optimized/paintbox.cpp.ll
@@ -2213,7 +2362,6 @@ entry:
 ; minetest/optimized/CB3DMeshFileLoader.cpp.ll
 ; minetest/optimized/CGUISkin.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/clouds.cpp.ll
 ; minetest/optimized/game.cpp.ll
 ; minetest/optimized/guiButton.cpp.ll
@@ -2409,7 +2557,6 @@ entry:
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; wireshark/optimized/addr_resolv.c.ll
 ; wireshark/optimized/busmaster.c.ll
-; wireshark/optimized/file-rtpdump.c.ll
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; wireshark/optimized/packet-dcm.c.ll
 ; wireshark/optimized/packet-fpp.c.ll
@@ -2420,21 +2567,23 @@ entry:
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; wireshark/optimized/text_import.c.ll
 ; z3/optimized/bound_propagator.cpp.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
 ; zstd/optimized/zstd_compress_literals.c.ll
 ; zxing/optimized/QRBitMatrixParser.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 24
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = or disjoint i32 %4, %0
   ret i32 %5
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; flac/optimized/encode.c.ll
 ; icu/optimized/erarules.ll
 ; lua/optimized/lcode.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
@@ -2457,7 +2606,7 @@ entry:
   ret i32 %5
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; clamav/optimized/xlm_extract.c.ll
 ; git/optimized/bloom.ll
 ; git/optimized/pkt-line.ll
@@ -2468,6 +2617,7 @@ entry:
 ; libquic/optimized/quic_protocol.cc.ll
 ; libwebp/optimized/muxinternal.c.ll
 ; minetest/optimized/content_mapblock.cpp.ll
+; openjdk/optimized/TransformHelper.ll
 ; openspiel/optimized/TransTableL.cpp.ll
 ; postgres/optimized/pg_receivewal.ll
 ; protobuf/optimized/parser.cc.ll
@@ -2476,12 +2626,12 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 8
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = or i32 %4, %0
   ret i32 %5
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; libwebp/optimized/extras.c.ll
 ; linux/optimized/intel_fbc.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
@@ -2489,7 +2639,6 @@ entry:
 ; luajit/optimized/lj_opt_narrow_dyn.ll
 ; ncnn/optimized/mat.cpp.ll
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll
-; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; wireshark/optimized/packet-hci_usb.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
@@ -2500,19 +2649,21 @@ entry:
   ret i32 %5
 }
 
-; 7 occurrences:
+; 9 occurrences:
 ; clamav/optimized/bytecode_detect.c.ll
 ; flac/optimized/metadata_object.c.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; libwebp/optimized/vp8l_dec.c.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; node/optimized/simdutf.ll
+; openjdk/optimized/TransformHelper.ll
 ; qemu/optimized/hw_usb_hcd-xhci.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 24
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = or i32 %4, %0
   ret i32 %5
 }

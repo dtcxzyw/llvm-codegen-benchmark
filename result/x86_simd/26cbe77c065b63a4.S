@@ -1,20 +1,20 @@
 .LCPI0_0:
-	.long	201326592                       # 0xc000000
-func0000000000000007:                   # @func0000000000000007
-	vpsllw	$15, %xmm1, %xmm1
-	vpmovw2m	%xmm1, %k1
-	vpbroadcastd	.LCPI0_0(%rip), %ymm2 {%k1} # ymm2 {%k1} = [201326592,201326592,201326592,201326592,201326592,201326592,201326592,201326592]
-	vpslld	$16, %ymm0, %ymm0
-	vpor	%ymm2, %ymm0, %ymm0
-	retq
-.LCPI1_0:
 	.long	12                              # 0xc
 func0000000000000000:                   # @func0000000000000000
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpslld	$24, %ymm2, %ymm0
-	vpbroadcastd	.LCPI1_0(%rip), %ymm1 {%k1} # ymm1 {%k1} = [12,12,12,12,12,12,12,12]
+	vpbroadcastd	.LCPI0_0(%rip), %ymm1 {%k1} # ymm1 {%k1} = [12,12,12,12,12,12,12,12]
 	vpor	%ymm0, %ymm1, %ymm0
+	retq
+.LCPI1_0:
+	.long	9                               # 0x9
+func0000000000000007:                   # @func0000000000000007
+	vpsllw	$15, %xmm1, %xmm1
+	vpmovw2m	%xmm1, %k1
+	vpbroadcastd	.LCPI1_0(%rip), %ymm2 {%k1} # ymm2 {%k1} = [9,9,9,9,9,9,9,9]
+	vpslld	$8, %ymm0, %ymm0
+	vpor	%ymm2, %ymm0, %ymm0
 	retq
 .LCPI2_0:
 	.long	2                               # 0x2

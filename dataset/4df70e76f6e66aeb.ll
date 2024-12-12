@@ -22,7 +22,7 @@
 ; ncnn/optimized/lstm_x86_xop.cpp.ll
 ; ncnn/optimized/softmax_x86_avx512.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000186(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000306(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = or i32 %2, 7
@@ -39,7 +39,7 @@ entry:
 ; nuklear/optimized/unity.c.ll
 ; raylib/optimized/rtext.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f6(i32 %0, i64 %1) #0 {
+define i1 @func00000000000003e6(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = or i32 %2, 7
@@ -115,7 +115,7 @@ entry:
 ; yosys/optimized/glift.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000196(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000326(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = or i32 %2, 3
@@ -127,7 +127,7 @@ entry:
 ; 1 occurrences:
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001d6(i32 %0, i64 %1) #0 {
+define i1 @func00000000000003a6(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = or i32 %2, 1

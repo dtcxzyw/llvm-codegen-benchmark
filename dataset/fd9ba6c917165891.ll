@@ -1,11 +1,10 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; brotli/optimized/backward_references.c.ll
 ; hyperscan/optimized/noodle_engine.c.ll
 ; linux/optimized/vsprintf.ll
 ; llvm/optimized/CGExprConstant.cpp.ll
 ; llvm/optimized/SourceMgr.cpp.ll
-; nuttx/optimized/lib_gmtimer.c.ll
 ; oiio/optimized/exif.cpp.ll
 ; openssl/optimized/bignum-test-bin-bignum.ll
 ; openssl/optimized/libssl-lib-t1_lib.ll

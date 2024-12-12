@@ -78,7 +78,8 @@ entry:
   ret i1 %2
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/approximately_equals.ll
 ; velox/optimized/BaseVector.cpp.ll
 ; velox/optimized/Bridge.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
@@ -90,8 +91,9 @@ entry:
   ret i1 %2
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; assimp/optimized/TextureTransform.cpp.ll
+; typst-rs/optimized/1aflftgqyuracvze.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000d(float %0) #0 {
 entry:
@@ -111,8 +113,9 @@ entry:
   ret i1 %2
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; nori/optimized/warp.cpp.ll
+; typst-rs/optimized/1aflftgqyuracvze.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000003(float %0) #0 {
 entry:

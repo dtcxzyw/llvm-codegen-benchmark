@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openjdk/optimized/sharedRuntimeTrans.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 20
   %4 = add nsw i32 %0, %1

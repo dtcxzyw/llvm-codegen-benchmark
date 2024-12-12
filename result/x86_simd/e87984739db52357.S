@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	1                               # 0x1
-func000000000000000e:                   # @func000000000000000e
+func0000000000000002:                   # @func0000000000000002
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vpmovqd	%ymm2, %xmm1 {%k1}
@@ -10,7 +10,7 @@ func000000000000000e:                   # @func000000000000000e
 	retq
 .LCPI1_0:
 	.long	1                               # 0x1
-func0000000000000002:                   # @func0000000000000002
+func000000000000000e:                   # @func000000000000000e
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vpmovqd	%ymm2, %xmm1 {%k1}

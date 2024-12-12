@@ -27,7 +27,7 @@ entry:
   ret i64 %4
 }
 
-; 445 occurrences:
+; 442 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/key_map.cc.ll
@@ -117,11 +117,8 @@ entry:
 ; lief/optimized/VectorStream.cpp.ll
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
-; linux/optimized/8250_lpss.ll
-; linux/optimized/8250_mid.ll
 ; linux/optimized/quota_tree.ll
 ; linux/optimized/sd.ll
-; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/BitstreamReader.cpp.ll
 ; llvm/optimized/SanitizerStats.cpp.ll
 ; llvm/optimized/ScaledNumber.cpp.ll
@@ -482,7 +479,7 @@ entry:
   ret i64 %4
 }
 
-; 116 occurrences:
+; 113 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/giaResub.c.ll
@@ -505,7 +502,6 @@ entry:
 ; libwebp/optimized/vp8l_enc.c.ll
 ; lief/optimized/File.cpp.ll
 ; linux/optimized/apic.ll
-; linux/optimized/dw.ll
 ; linux/optimized/hw_breakpoint.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -528,8 +524,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -608,7 +602,7 @@ entry:
   ret i64 %4
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; assimp/optimized/zip.c.ll
 ; cpython/optimized/longobject.ll
 ; darktable/optimized/PanasonicV5Decompressor.cpp.ll
@@ -621,6 +615,7 @@ entry:
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
+; openusd/optimized/avif.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; pbrt-v4/optimized/camera.cpp.ll
 ; pbrt-v4/optimized/samples.cpp.ll

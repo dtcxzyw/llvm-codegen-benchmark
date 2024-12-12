@@ -28,7 +28,7 @@ entry:
   %4 = freeze i64 %3
   %5 = lshr i64 %4, 3
   %6 = and i64 %5, 2147483647
-  %7 = icmp eq i64 %6, %0
+  %7 = icmp eq i64 %0, %6
   ret i1 %7
 }
 

@@ -1,11 +1,12 @@
 
-; 81 occurrences:
+; 84 occurrences:
 ; abc/optimized/abcRr.c.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; hermes/optimized/RegExp.cpp.ll
 ; linux/optimized/mempolicy.ll
 ; luau/optimized/lnumprint.cpp.ll
+; minetest/optimized/texturesource.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -77,6 +78,8 @@
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
+; openusd/optimized/rprim.cpp.ll
+; openusd/optimized/unitTestNullRenderDelegate.cpp.ll
 ; php/optimized/dtoa.ll
 ; qemu/optimized/hw_timer_sifive_pwm.c.ll
 ; redis/optimized/fpconv_dtoa.ll
@@ -84,7 +87,7 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 12288
+  %3 = and i32 %2, 1
   %4 = icmp eq i32 %3, 0
   %5 = and i64 %1, 4294967295
   %6 = select i1 %4, i64 %5, i64 %0

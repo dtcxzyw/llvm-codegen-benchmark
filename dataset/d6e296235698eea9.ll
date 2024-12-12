@@ -49,7 +49,17 @@ entry:
   ret i16 %2
 }
 
-; 19 occurrences:
+; 1 occurrences:
+; spike/optimized/vsadd_vi.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000001(i64 %0) #0 {
+entry:
+  %1 = trunc nsw i64 %0 to i16
+  %2 = xor i16 %1, -1
+  ret i16 %2
+}
+
+; 21 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -69,6 +79,8 @@ entry:
 ; llvm/optimized/ScalarizeMaskedMemIntrin.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/X86TargetMachine.cpp.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000003(i64 %0) #0 {
 entry:

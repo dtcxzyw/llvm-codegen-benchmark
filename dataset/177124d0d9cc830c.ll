@@ -48,7 +48,7 @@ entry:
   ret i32 %2
 }
 
-; 206 occurrences:
+; 210 occurrences:
 ; assimp/optimized/ACLoader.cpp.ll
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/AMFImporter_Material.cpp.ll
@@ -136,7 +136,6 @@ entry:
 ; linux/optimized/dev_addr_lists.ll
 ; linux/optimized/devinet.ll
 ; linux/optimized/drm_dp_mst_topology.ll
-; linux/optimized/exprep.ll
 ; linux/optimized/fib_trie.ll
 ; linux/optimized/fse_decompress.ll
 ; linux/optimized/genetlink.ll
@@ -162,6 +161,10 @@ entry:
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVTargetParser.cpp.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
+; lvgl/optimized/lv_canvas.ll
+; lvgl/optimized/lv_indev.ll
+; lvgl/optimized/lv_indev_scroll.ll
+; lvgl/optimized/lv_roller.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/servermap.cpp.ll
 ; miniaudio/optimized/unity.c.ll
@@ -225,7 +228,6 @@ entry:
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__1.ll
-; spike/optimized/s_shortShiftLeft64To96M.ll
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_truetype.c.ll
 ; verilator/optimized/V3EmitCFunc.cpp.ll
@@ -246,6 +248,8 @@ entry:
 ; wireshark/optimized/tap-hosts.c.ll
 ; wolfssl/optimized/test.c.ll
 ; xgboost/optimized/c_api.cc.ll
+; zed-rs/optimized/4360dz3iad2ygf5m8hd0cmm88.ll
+; zed-rs/optimized/e7lqw1ynol01cwrgb8ri1wedr.ll
 ; zstd/optimized/fse_decompress.c.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; zstd/optimized/zstd_v01.c.ll
@@ -263,7 +267,7 @@ entry:
   ret i32 %2
 }
 
-; 35 occurrences:
+; 34 occurrences:
 ; clamav/optimized/aspack.c.ll
 ; clamav/optimized/explode.c.ll
 ; clamav/optimized/wwunpack.c.ll
@@ -281,7 +285,6 @@ entry:
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
-; opencv/optimized/color_yuv.dispatch.cpp.ll
 ; openjdk/optimized/png.ll
 ; openspiel/optimized/best_response.cc.ll
 ; openspiel/optimized/dynamic_routing.cc.ll
@@ -307,8 +310,12 @@ entry:
   ret i32 %2
 }
 
-; 39 occurrences:
+; 44 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/format_parser.ll
+; boost/optimized/init_from_settings.ll
+; boost/optimized/text_file_backend.ll
 ; clamav/optimized/wwunpack.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
 ; cpython/optimized/mpdecimal.ll
@@ -346,6 +353,7 @@ entry:
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; wireshark/optimized/packet-lldp.c.ll
 ; z3/optimized/parallel_tactical.cpp.ll
+; zed-rs/optimized/4q1bnadqr1o107uase7gmrd0k.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i8 %0) #0 {
@@ -367,7 +375,8 @@ entry:
   ret i32 %2
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/default_filter_factory.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i8 %0) #0 {

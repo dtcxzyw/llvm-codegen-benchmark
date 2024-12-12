@@ -1,9 +1,8 @@
 
-; 37 occurrences:
+; 36 occurrences:
 ; abseil-cpp/optimized/chi_square.cc.ll
 ; darktable/optimized/introspection_liquify.c.ll
 ; icu/optimized/numparse_parsednumber.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; nix/optimized/json-to-value.ll
 ; nlohmann_json/optimized/unit-bjdata.cpp.ll
 ; nlohmann_json/optimized/unit-bson.cpp.ll
@@ -49,10 +48,10 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/perf_pyramids.cpp.ll
 ; Function Attrs: nounwind
-define double @func0000000000000008(i32 %0) #0 {
+define double @func0000000000000018(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 7
-  %2 = icmp ugt i32 %1, 4
+  %2 = icmp samesign ugt i32 %1, 4
   %3 = select i1 %2, double 1.000000e-05, double 1.000000e+00
   ret double %3
 }

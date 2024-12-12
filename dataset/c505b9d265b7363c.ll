@@ -19,7 +19,7 @@
 ; wireshark/optimized/packet-afs.c.ll
 ; wireshark/optimized/packet-gsm_sms.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(ptr %0, i8 %1) #0 {
+define i1 @func0000000000000042(ptr %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 4
   %3 = icmp eq i8 %2, 0
@@ -105,7 +105,7 @@ entry:
 ; slurm/optimized/extra_constraints.ll
 ; wireshark/optimized/packet-afs.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(ptr %0, i8 %1) #0 {
+define i1 @func0000000000000302(ptr %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = icmp ne i8 %2, 0
@@ -120,7 +120,7 @@ entry:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(ptr %0, i8 %1) #0 {
+define i1 @func0000000000000318(ptr %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 16
   %3 = icmp ne i8 %2, 0
@@ -129,11 +129,10 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; linux/optimized/xfrm6_output.ll
+; 1 occurrences:
 ; protobuf/optimized/descriptor.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(ptr %0, i8 %1) #0 {
+define i1 @func0000000000000058(ptr %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 8
   %3 = icmp ne i8 %2, 0

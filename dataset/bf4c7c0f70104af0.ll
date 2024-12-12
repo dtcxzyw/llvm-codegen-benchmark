@@ -2,6 +2,7 @@
 ; 66 occurrences:
 ; abc/optimized/cnfUtil.c.ll
 ; abc/optimized/satStore.c.ll
+; boost/optimized/alloc_lib.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; cmake/optimized/zstd_opt.c.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
@@ -19,7 +20,6 @@
 ; folly/optimized/IOThreadPoolExecutor.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/LogCategory.cpp.ll
-; folly/optimized/LoggerDB.cpp.ll
 ; folly/optimized/ManualTimekeeper.cpp.ll
 ; folly/optimized/MuxIOThreadPoolExecutor.cpp.ll
 ; folly/optimized/ObserverManager.cpp.ll
@@ -95,7 +95,7 @@ entry:
   ret i32 %2
 }
 
-; 54 occurrences:
+; 55 occurrences:
 ; abc/optimized/abcRestruct.c.ll
 ; abc/optimized/kitGraph.c.ll
 ; abc/optimized/rwrDec.c.ll
@@ -112,6 +112,7 @@ entry:
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; luajit/optimized/lj_parse.ll
 ; luajit/optimized/lj_parse_dyn.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; opencv/optimized/t_hash_int.cpp.ll
 ; openjdk/optimized/interpreterRT_x86_64.ll
 ; openjdk/optimized/methodCounters.ll

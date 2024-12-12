@@ -34,46 +34,10 @@ func0000000000000002:                   # @func0000000000000002
 	vzeroupper
 	retq
 .LCPI2_0:
-	.long	2147483647                      # 0x7fffffff
-func000000000000000a:                   # @func000000000000000a
-	vpmovqd	%ymm1, %xmm1
-	vpandd	.LCPI2_0(%rip){1to4}, %xmm1, %xmm1
-	vpsllvd	%xmm0, %xmm1, %xmm0
-	vzeroupper
-	retq
-.LCPI3_0:
 	.long	3                               # 0x3
 func0000000000000000:                   # @func0000000000000000
 	vpmovqd	%ymm1, %xmm1
-	vpandd	.LCPI3_0(%rip){1to4}, %xmm1, %xmm1
-	vpsllvd	%xmm0, %xmm1, %xmm0
-	vzeroupper
-	retq
-.LCPI4_0:
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-.LCPI4_1:
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-	.byte	0                               # 0x0
-func000000000000000f:                   # @func000000000000000f
-	vpmovqd	%ymm1, %xmm1
-	vpandd	.LCPI4_1(%rip){1to4}, %xmm1, %xmm1
+	vpandd	.LCPI2_0(%rip){1to4}, %xmm1, %xmm1
 	vpsllvd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq

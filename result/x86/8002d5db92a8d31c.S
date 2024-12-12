@@ -1,11 +1,12 @@
-func0000000000000201:                   # @func0000000000000201
+func0000000000000401:                   # @func0000000000000401
 	xorl	%eax, %eax
 	vucomisd	%xmm1, %xmm0
 	seta	%al
-	addq	%rdi, %rax
+	negq	%rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000231:                   # @func0000000000000231
+func0000000000000461:                   # @func0000000000000461
 	xorl	%eax, %eax
 	vucomisd	%xmm1, %xmm0
 	seta	%al

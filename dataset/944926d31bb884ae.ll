@@ -13,7 +13,7 @@
 define i1 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65535
-  %4 = icmp eq i32 %3, %1
+  %4 = icmp eq i32 %1, %3
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }
@@ -47,7 +47,7 @@ entry:
 define i1 @func000000000000000c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -4096
-  %4 = icmp ne i32 %3, %1
+  %4 = icmp ne i32 %1, %3
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }
@@ -63,10 +63,10 @@ entry:
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; openjdk/optimized/cmsintrp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65535
-  %4 = icmp ugt i32 %3, %1
+  %4 = icmp samesign ult i32 %1, %3
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }
@@ -79,7 +79,20 @@ entry:
 define i1 @func0000000000000006(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -1024
-  %4 = icmp sgt i32 %3, %1
+  %4 = icmp slt i32 %1, %3
+  %5 = select i1 %4, i1 true, i1 %0
+  ret i1 %5
+}
+
+; 3 occurrences:
+; libwebp/optimized/predictor_enc.c.ll
+; php/optimized/pcre2_dfa_match.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000015(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 131070
+  %4 = icmp samesign ule i32 %1, %3
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }
@@ -91,7 +104,19 @@ entry:
 define i1 @func000000000000000a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1073741823
-  %4 = icmp slt i32 %3, %1
+  %4 = icmp sgt i32 %1, %3
+  %5 = select i1 %4, i1 true, i1 %0
+  ret i1 %5
+}
+
+; 2 occurrences:
+; lightgbm/optimized/bin.cpp.ll
+; opencv/optimized/arithm.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 15
+  %4 = icmp samesign ugt i32 %1, %3
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }
@@ -103,7 +128,7 @@ entry:
 define i1 @func000000000000000b(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -64
-  %4 = icmp sle i32 %3, %1
+  %4 = icmp sge i32 %1, %3
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }
@@ -114,29 +139,7 @@ entry:
 define i1 @func0000000000000009(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65535
-  %4 = icmp ule i32 %3, %1
-  %5 = select i1 %4, i1 true, i1 %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; sqlite/optimized/sqlite3.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000005(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 65535
-  %4 = icmp uge i32 %3, %1
-  %5 = select i1 %4, i1 true, i1 %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; opencv/optimized/arithm.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 511
-  %4 = icmp ult i32 %3, %1
+  %4 = icmp uge i32 %1, %3
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }

@@ -37,14 +37,14 @@ func000000000000000c:                   # @func000000000000000c
 	setae	%al
 	andb	%dil, %al
 	retq
-func000000000000000a:                   # @func000000000000000a
-	vucomisd	%xmm0, %xmm1
-	setae	%al
-	andb	%dil, %al
-	retq
 func000000000000000d:                   # @func000000000000000d
 	vucomisd	%xmm0, %xmm1
 	setbe	%al
+	andb	%dil, %al
+	retq
+func000000000000000a:                   # @func000000000000000a
+	vucomisd	%xmm0, %xmm1
+	setae	%al
 	andb	%dil, %al
 	retq
 func000000000000000b:                   # @func000000000000000b

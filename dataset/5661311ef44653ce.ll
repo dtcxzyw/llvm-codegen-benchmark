@@ -1,4 +1,16 @@
 
+; 1 occurrences:
+; darktable/optimized/amaze.cc.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001c(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = shl nuw nsw i64 %2, 2
+  %4 = inttoptr i64 %0 to ptr
+  %5 = getelementptr i8, ptr %4, i64 %3
+  ret ptr %5
+}
+
 ; 11 occurrences:
 ; hermes/optimized/ArrayStorage.cpp.ll
 ; hermes/optimized/BytecodeDataProvider.cpp.ll
@@ -12,12 +24,24 @@
 ; z3/optimized/rule_properties.cpp.ll
 ; z3/optimized/smt_consequences.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(i64 %0, i32 %1) #0 {
+define ptr @func000000000000000f(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw nsw i64 %2, 3
   %4 = inttoptr i64 %0 to ptr
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 1 occurrences:
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001f(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = shl nuw nsw i64 %2, 2
+  %4 = inttoptr i64 %0 to ptr
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   ret ptr %5
 }
 

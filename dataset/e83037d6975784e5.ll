@@ -1,5 +1,6 @@
 
-; 14 occurrences:
+; 15 occurrences:
+; boost/optimized/alloc_lib.ll
 ; hyperscan/optimized/mpv.c.ll
 ; hyperscan/optimized/multibit_build.cpp.ll
 ; libwebp/optimized/sharpyuv_gamma.c.ll

@@ -1,18 +1,10 @@
 
-; 13 occurrences:
+; 5 occurrences:
 ; assimp/optimized/SIBImporter.cpp.ll
-; casadi/optimized/polynomial.cpp.ll
 ; eastl/optimized/TestDeque.cpp.ll
-; glslang/optimized/SpvBuilder.cpp.ll
 ; gromacs/optimized/localtopology.cpp.ll
 ; gromacs/optimized/vsite.cpp.ll
 ; opencv/optimized/chessboard.cpp.ll
-; opencv/optimized/core_detect.cpp.ll
-; openusd/optimized/pathExpression.cpp.ll
-; openusd/optimized/predicateExpression.cpp.ll
-; openusd/optimized/renderSettingsFlatteningSceneIndex.cpp.ll
-; recastnavigation/optimized/catch_amalgamated.cpp.ll
-; zxing/optimized/PDFModulusPoly.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000056(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -22,10 +14,27 @@ entry:
   ret ptr %5
 }
 
-; 5 occurrences:
+; 8 occurrences:
+; casadi/optimized/polynomial.cpp.ll
+; glslang/optimized/SpvBuilder.cpp.ll
+; openusd/optimized/pathExpression.cpp.ll
+; openusd/optimized/predicateExpression.cpp.ll
+; openusd/optimized/renderSettingsFlatteningSceneIndex.cpp.ll
+; quantlib/optimized/convolvedstudentt.ll
+; recastnavigation/optimized/catch_amalgamated.cpp.ll
+; zxing/optimized/PDFModulusPoly.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000057(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr i8, ptr %0, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -8
+  %5 = getelementptr double, ptr %4, i64 %1
+  ret ptr %5
+}
+
+; 4 occurrences:
 ; eastl/optimized/BenchmarkDeque.cpp.ll
 ; gromacs/optimized/manyautocorrelation.cpp.ll
-; opencv/optimized/core_detect.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; z3/optimized/theory_str.cpp.ll
 ; Function Attrs: nounwind

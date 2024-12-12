@@ -1,11 +1,13 @@
 
-; 61 occurrences:
+; 67 occurrences:
 ; abc/optimized/bmcBmc3.c.ll
 ; abc/optimized/giaAiger.c.ll
 ; abc/optimized/giaTim.c.ll
 ; assimp/optimized/ObjExporter.cpp.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/syslog_backend.ll
 ; clamav/optimized/kwajd.c.ll
-; cmake/optimized/archive_write_add_filter_gzip.c.ll
+; cmake/optimized/nghttp2_hd.c.ll
 ; cpython/optimized/longobject.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
@@ -61,8 +63,12 @@
 ; yalantinglibs/optimized/file_server.cpp.ll
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
+; zed-rs/optimized/deqzoqcotewn9fb0m32sor9lr.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000011(i32 %0) #0 {
+define i8 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 9
   %2 = select i1 %1, i8 2, i8 0
@@ -71,24 +77,12 @@ entry:
   ret i8 %4
 }
 
-; 1 occurrences:
-; minetest/optimized/terminal_chat_console.cpp.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000044(i32 %0) #0 {
-entry:
-  %1 = icmp ult i32 %0, 240
-  %2 = select i1 %1, i8 2, i8 3
-  %3 = icmp ult i32 %0, 224
-  %4 = select i1 %3, i8 1, i8 %2
-  ret i8 %4
-}
-
 ; 3 occurrences:
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
 ; stockfish/optimized/evaluate_nnue.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000016(i32 %0) #0 {
+define i8 @func0000000000000026(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 0
   %2 = select i1 %1, i8 32, i8 43
@@ -100,9 +94,9 @@ entry:
 ; 1 occurrences:
 ; libwebp/optimized/palette.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000041(i32 %0) #0 {
+define i8 @func0000000000000281(i32 %0) #0 {
 entry:
-  %1 = icmp ult i32 %0, 128
+  %1 = icmp samesign ult i32 %0, 128
   %2 = select i1 %1, i8 1, i8 2
   %3 = icmp eq i32 %0, 0
   %4 = select i1 %3, i8 0, i8 %2

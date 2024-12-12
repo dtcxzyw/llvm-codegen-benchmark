@@ -1,12 +1,13 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; folly/optimized/Conv.cpp.ll
 ; libquic/optimized/a_strex.c.ll
 ; llvm/optimized/DIEHash.cpp.ll
 ; llvm/optimized/MemCpyOptimizer.cpp.ll
 ; rocksdb/optimized/blob_compaction_filter.cc.ll
+; zed-rs/optimized/b3fsiuvawj3jj0fngz22afvrc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000058(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -3
   %3 = icmp ne i8 %2, 0
@@ -15,7 +16,9 @@ entry:
   ret i1 %5
 }
 
-; 14 occurrences:
+; 19 occurrences:
+; abseil-cpp/optimized/float_conversion.cc.ll
+; egg-rs/optimized/55a7hv010cxk6f68.ll
 ; folly/optimized/Conv.cpp.ll
 ; folly/optimized/EDFThreadPoolExecutor.cpp.ll
 ; glslang/optimized/hlslParseables.cpp.ll
@@ -30,8 +33,11 @@ entry:
 ; spike/optimized/socketif.ll
 ; wasmtime-rs/optimized/320v7ko74ke0k4k4.ll
 ; wireshark/optimized/packet-umts_mac.c.ll
+; zed-rs/optimized/10zh1v68f2nhlerzsork25it5.ll
+; zed-rs/optimized/18cjjdq897fwjf59btw7ls4h5.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000302(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = icmp ne i8 %2, 0
@@ -51,7 +57,7 @@ entry:
 ; openjdk/optimized/modRefBarrierSetC2.ll
 ; spike/optimized/socketif.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000318(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -2
   %3 = icmp ne i8 %2, 12
@@ -69,7 +75,7 @@ entry:
 ; linux/optimized/string_helpers.ll
 ; openmpi/optimized/pmix_shmem.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000042(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = icmp eq i8 %2, 0
@@ -81,7 +87,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000308(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -33
   %3 = icmp ne i8 %2, 65
@@ -93,7 +99,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CGCleanup.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000118(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000218(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 32
   %3 = icmp ne i8 %2, 0

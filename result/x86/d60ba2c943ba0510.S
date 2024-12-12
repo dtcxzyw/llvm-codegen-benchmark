@@ -1,17 +1,17 @@
-func0000000000000024:                   # @func0000000000000024
+func0000000000000064:                   # @func0000000000000064
 	incq	%rdx
 	cmpq	%rdi, %rdx
 	setb	%al
 	notb	%sil
 	andb	%sil, %al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000061:                   # @func0000000000000061
 	incq	%rdx
 	cmpq	%rdi, %rdx
 	sete	%al
 	orb	%sil, %al
 	retq
-func000000000000002c:                   # @func000000000000002c
+func000000000000006c:                   # @func000000000000006c
 	incq	%rdx
 	cmpq	%rdi, %rdx
 	setne	%al

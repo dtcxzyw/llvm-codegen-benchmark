@@ -4,7 +4,7 @@
 ; eastl/optimized/TestSort.cpp.ll
 ; rocksdb/optimized/seqno_to_time_mapping.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000121(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp uge ptr %1, %2
   %4 = icmp eq ptr %1, %2
@@ -24,7 +24,7 @@ entry:
 ; pbrt-v4/optimized/loopsubdiv.cpp.ll
 ; rocksdb/optimized/seqno_to_time_mapping.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000081(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ult ptr %1, %2
   %4 = icmp eq ptr %1, %2

@@ -1,5 +1,5 @@
 
-; 49 occurrences:
+; 46 occurrences:
 ; abc/optimized/cecPat.c.ll
 ; abc/optimized/giaCSat.c.ll
 ; abc/optimized/giaCSatOld.c.ll
@@ -7,10 +7,7 @@
 ; abc/optimized/giaCTas.c.ll
 ; darktable/optimized/RawImageDataFloat.cpp.ll
 ; linux/optimized/efi_64.ll
-; linux/optimized/hugetlb.ll
 ; linux/optimized/i915_gem_shrinker.ll
-; linux/optimized/mprotect.ll
-; linux/optimized/scsiglue.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/BasicObjCFoundationChecks.cpp.ll
 ; llvm/optimized/CGBuiltin.cpp.ll

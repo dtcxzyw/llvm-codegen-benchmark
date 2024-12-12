@@ -12,7 +12,7 @@
 ; proj/optimized/proj_strtod.cpp.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000045(i32 %0, i32 %1, i8 %2) #0 {
+define i32 @func0000000000000085(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %1
   %4 = icmp eq i8 %2, 0
@@ -24,12 +24,12 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/interval.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000044(i32 %0, i32 %1, i8 %2) #0 {
+define i32 @func0000000000000084(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %1
   %4 = icmp eq i8 %2, 45
   %5 = select i1 %4, i32 %3, i32 %1
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 

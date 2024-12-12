@@ -7,7 +7,7 @@
 define i32 @func000000000000001f(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = shl nuw nsw i32 %3, 1
   ret i32 %4
 }
@@ -40,12 +40,12 @@ entry:
 define i32 @func0000000000000000(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = shl i32 %3, 16
   ret i32 %4
 }
 
-; 23 occurrences:
+; 24 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; gromacs/optimized/dispersioncorrection.cpp.ll
 ; icu/optimized/ucol_swp.ll
@@ -54,6 +54,7 @@ entry:
 ; libwebp/optimized/quant_enc.c.ll
 ; linux/optimized/e1000_hw.ll
 ; linux/optimized/i9xx_wm.ll
+; linux/optimized/ich8lan.ll
 ; linux/optimized/nvm.ll
 ; opencv/optimized/pyramids.cpp.ll
 ; opencv/optimized/smooth.dispatch.cpp.ll
@@ -73,7 +74,7 @@ entry:
 define i32 @func000000000000000f(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = shl nuw nsw i32 %3, 1
   ret i32 %4
 }
@@ -92,7 +93,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = shl nsw i32 %3, 1
   ret i32 %4
 }
@@ -103,7 +104,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = shl nsw i32 %3, 11
   ret i32 %4
 }
@@ -114,7 +115,7 @@ entry:
 define i32 @func000000000000000c(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = shl i32 %3, 24
   ret i32 %4
 }
@@ -125,7 +126,7 @@ entry:
 define i32 @func0000000000000010(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = shl i32 %3, 2
   ret i32 %4
 }
@@ -136,7 +137,7 @@ entry:
 define i32 @func0000000000000015(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = shl nsw i32 %3, 2
   ret i32 %4
 }

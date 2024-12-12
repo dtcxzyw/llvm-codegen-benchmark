@@ -3,13 +3,13 @@ func0000000000000000:                   # @func0000000000000000
 	movslq	%edx, %rax
 	leaq	56(%rdi,%rax,8), %rax
 	retq
-func00000000000000da:                   # @func00000000000000da
+func00000000000000db:                   # @func00000000000000db
 	subl	%esi, %edx
 	movslq	%edx, %rax
 	shlq	$4, %rax
 	leaq	4(%rdi,%rax), %rax
 	retq
-func000000000000005a:                   # @func000000000000005a
+func000000000000005b:                   # @func000000000000005b
 	subl	%esi, %edx
 	movslq	%edx, %rax
 	imulq	$56, %rax, %rax

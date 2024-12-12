@@ -1,7 +1,8 @@
 
-; 56 occurrences:
+; 57 occurrences:
 ; cpython/optimized/_decimal.ll
 ; duckdb/optimized/ub_duckdb_main.cpp.ll
+; lvgl/optimized/lv_svg_parser.ll
 ; nanosvg/optimized/nanosvg.ll
 ; openusd/optimized/reconinter.c.ll
 ; postgres/optimized/ruleutils.ll
@@ -57,7 +58,7 @@
 ; pybind11/optimized/test_vector_unique_ptr_member.cpp.ll
 ; pybind11/optimized/test_virtual_functions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i1 %0, i8 %1) #0 {
+define i1 @func00000000000000cc(i1 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = shl nuw i64 1, %2
@@ -70,7 +71,7 @@ entry:
 ; 1 occurrences:
 ; libevent/optimized/http.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, i8 %1) #0 {
+define i1 @func000000000000004c(i1 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = shl nuw i64 1, %2

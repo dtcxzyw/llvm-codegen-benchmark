@@ -6,7 +6,7 @@ func000000000000000f:                   # @func000000000000000f
 	vmv.v.x	v10, a0
 	lui	a0, 1
 	vmerge.vxm	v10, v10, a0, v0
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret
 func000000000000000e:                   # @func000000000000000e
 	vsetivli	zero, 8, e8, mf2, ta, ma

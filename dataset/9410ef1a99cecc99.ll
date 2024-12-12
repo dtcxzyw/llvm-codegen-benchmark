@@ -3,11 +3,11 @@
 ; abc/optimized/ifCut.c.ll
 ; graphviz/optimized/dotsplines.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000010(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000030(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 24
   %3 = lshr i32 %0, 24
-  %4 = icmp ugt i32 %3, %2
+  %4 = icmp samesign ugt i32 %3, %2
   %5 = zext i1 %4 to i32
   ret i32 %5
 }
@@ -16,11 +16,11 @@ entry:
 ; abc/optimized/mpmMig.c.ll
 ; z3/optimized/dd_bdd.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
   %3 = lshr i32 %0, 1
-  %4 = icmp ult i32 %3, %2
+  %4 = icmp samesign ult i32 %3, %2
   %5 = zext i1 %4 to i32
   ret i32 %5
 }

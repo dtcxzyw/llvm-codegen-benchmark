@@ -1,4 +1,4 @@
-func0000000000000032:                   // @func0000000000000032
+func000000000000003b:                   // @func000000000000003b
 // %bb.0:                               // %entry
 	sub	x8, x1, x2, lsl #3
 	add	x8, x8, x0
@@ -18,11 +18,11 @@ func00000000000000d0:                   // @func00000000000000d0
 	add	x0, x8, #20
 	ret
                                         // -- End function
-func000000000000003a:                   // @func000000000000003a
+func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	sub	x8, x1, x2, lsl #5
+	sub	x8, x1, x2, lsl #6
 	add	x8, x8, x0
-	sub	x0, x8, #32
+	add	x0, x8, #64
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a

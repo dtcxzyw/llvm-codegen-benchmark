@@ -4,7 +4,7 @@
 ; luajit/optimized/minilua.ll
 ; redis/optimized/lcode.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001d1(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000003a1(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = icmp eq i32 %3, 131069

@@ -1,15 +1,15 @@
 func0000000000000004:                   # @func0000000000000004
 	movl	%esi, %eax
-	cmpl	%edi, %edx
-	cmoval	%edi, %eax
+	cmpl	%edx, %edi
+	cmovbl	%edi, %eax
 	retq
 func0000000000000006:                   # @func0000000000000006
 	movl	%esi, %eax
-	cmpl	%edi, %edx
-	cmovgl	%edi, %eax
+	cmpl	%edx, %edi
+	cmovll	%edi, %eax
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	movl	%esi, %eax
-	cmpl	%edi, %edx
-	cmoval	%edi, %eax
+	cmpl	%edx, %edi
+	cmovbl	%edi, %eax
 	retq

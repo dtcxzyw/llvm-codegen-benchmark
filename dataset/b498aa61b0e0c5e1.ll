@@ -4,8 +4,8 @@
 ; graphviz/optimized/shapes.c.ll
 ; libpng/optimized/pngread.c.ll
 ; linux/optimized/array.ll
-; linux/optimized/i915_driver.ll
 ; linux/optimized/libahci.ll
+; openjdk/optimized/Inet6AddressImpl.ll
 ; openjdk/optimized/pngread.ll
 ; ruby/optimized/date_strftime.ll
 ; ruby/optimized/strftime.ll

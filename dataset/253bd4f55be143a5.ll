@@ -1,14 +1,15 @@
 
-; 19 occurrences:
-; c3c/optimized/sema_expr.c.ll
+; 20 occurrences:
 ; hermes/optimized/HiddenClass.cpp.ll
 ; hermes/optimized/String.cpp.ll
 ; linux/optimized/dm.ll
+; linux/optimized/genetlink.ll
 ; linux/optimized/hub.ll
 ; linux/optimized/intel_sdvo.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/resize.ll
 ; linux/optimized/wpa.ll
+; llvm/optimized/CompilerInvocation.cpp.ll
 ; openjdk/optimized/classFileParser.ll
 ; openjdk/optimized/jfrDeprecationManager.ll
 ; openjdk/optimized/jfrTypeSet.ll
@@ -23,7 +24,7 @@
 define i16 @func0000000000000000(i16 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i16 16374, i16 16246
-  %3 = and i16 %2, %0
+  %3 = and i16 %0, %2
   ret i16 %3
 }
 

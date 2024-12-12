@@ -30,18 +30,17 @@ entry:
   %2 = lshr i64 %1, 4
   %3 = and i64 %2, 1792
   %4 = and i64 %1, 255
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   %6 = or disjoint i64 %5, %3
   ret i64 %6
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; linux/optimized/page.ll
 ; spike/optimized/f128_div.ll
 ; spike/optimized/f128_mul.ll
 ; spike/optimized/f128_sqrt.ll
 ; spike/optimized/f128_to_i32_r_minMag.ll
-; spike/optimized/f128_to_ui32_r_minMag.ll
 ; spike/optimized/s_mulAddF128.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {

@@ -1,7 +1,7 @@
 func000000000000000d:                   # @func000000000000000d
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vand.vi	v9, v9, 1
-	vor.vv	v8, v9, v8
+	vor.vv	v8, v8, v9
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vzext.vf2	v10, v8
 	vsetvli	zero, zero, e32, m2, ta, ma
@@ -22,7 +22,7 @@ func0000000000000003:                   # @func0000000000000003
 func000000000000000f:                   # @func000000000000000f
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vand.vi	v9, v9, 7
-	vor.vv	v8, v9, v8
+	vor.vv	v8, v8, v9
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vzext.vf2	v10, v8
 	li	a0, 28

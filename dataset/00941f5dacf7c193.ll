@@ -1,12 +1,11 @@
 
-%"struct.G1PLABAllocator::PLABData.2625867" = type <{ ptr, i64, i64, i64, i64, i64, i32, [4 x i8] }>
-%struct.dt_liquify_path_data_t.2761282 = type { %struct.dt_liquify_path_header_t.2761283, %struct.dt_liquify_warp_t.2761284, %struct.dt_liquify_node_t.2761285 }
-%struct.dt_liquify_path_header_t.2761283 = type { i32, i32, i32, i32, i8, i8, i8 }
-%struct.dt_liquify_warp_t.2761284 = type { { float, float }, { float, float }, { float, float }, float, float, i32, i32 }
-%struct.dt_liquify_node_t.2761285 = type { { float, float }, { float, float } }
-%struct.WarpedMotionParams.3194446 = type { [8 x i32], i16, i16, i16, i16, i8, i8 }
+%"struct.G1PLABAllocator::PLABData.2739290" = type <{ ptr, i64, i64, i64, i64, i64, i32, [4 x i8] }>
+%struct.dt_liquify_path_data_t.2873560 = type { %struct.dt_liquify_path_header_t.2873561, %struct.dt_liquify_warp_t.2873562, %struct.dt_liquify_node_t.2873563 }
+%struct.dt_liquify_path_header_t.2873561 = type { i32, i32, i32, i32, i8, i8, i8 }
+%struct.dt_liquify_warp_t.2873562 = type { { float, float }, { float, float }, { float, float }, float, float, i32, i32 }
+%struct.dt_liquify_node_t.2873563 = type { { float, float }, { float, float } }
 
-; 72 occurrences:
+; 74 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/amapMatch.c.ll
 ; abc/optimized/darLib.c.ll
@@ -75,16 +74,18 @@
 ; opencv/optimized/tinyxml2.cpp.ll
 ; openjdk/optimized/g1Allocator.ll
 ; openjdk/optimized/g1ParScanThreadState.ll
+; openusd/optimized/av1_loopfilter.c.ll
+; openusd/optimized/decodemv.c.ll
+; openusd/optimized/mvref_common.c.ll
 ; proj/optimized/cct.cpp.ll
 ; proj/optimized/gie.cpp.ll
 ; sqlite/optimized/sqlite3.ll
-; velox/optimized/VectorPool.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i8 %1) #0 {
+define ptr @func000000000000000e(ptr %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 16
-  %4 = getelementptr nusw [2 x %"struct.G1PLABAllocator::PLABData.2625867"], ptr %3, i64 0, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 16
+  %4 = getelementptr nusw [2 x %"struct.G1PLABAllocator::PLABData.2739290"], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 
@@ -95,7 +96,7 @@ define ptr @func0000000000000000(ptr %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i64
   %3 = getelementptr i8, ptr %0, i64 18
-  %4 = getelementptr [100 x %struct.dt_liquify_path_data_t.2761282], ptr %3, i64 0, i64 %2
+  %4 = getelementptr [100 x %struct.dt_liquify_path_data_t.2873560], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 
@@ -110,19 +111,6 @@ entry:
   ret ptr %4
 }
 
-; 3 occurrences:
-; openusd/optimized/av1_loopfilter.c.ll
-; openusd/optimized/decodemv.c.ll
-; openusd/optimized/mvref_common.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i8 %1) #0 {
-entry:
-  %2 = sext i8 %1 to i64
-  %3 = getelementptr nusw nuw i8, ptr %0, i64 24832
-  %4 = getelementptr nusw [8 x %struct.WarpedMotionParams.3194446], ptr %3, i64 0, i64 %2
-  ret ptr %4
-}
-
 ; 5 occurrences:
 ; cpython/optimized/hamt.ll
 ; cpython/optimized/instrumentation.ll
@@ -130,10 +118,10 @@ entry:
 ; wireshark/optimized/packet-sdp.c.ll
 ; wireshark/optimized/voip_calls.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i8 %1) #0 {
+define ptr @func000000000000000c(ptr %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 40
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 40
   %4 = getelementptr [20 x i32], ptr %3, i64 0, i64 %2
   ret ptr %4
 }

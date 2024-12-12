@@ -10,5 +10,5 @@ func0000000000000000:                   # @func0000000000000000
 	vand.vi	v9, v9, 1
 	vmsne.vi	v9, v9, 0
 	vmor.mm	v8, v9, v8
-	vmor.mm	v0, v8, v0
+	vmor.mm	v0, v0, v8
 	ret

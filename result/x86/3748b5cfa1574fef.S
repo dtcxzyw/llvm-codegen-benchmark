@@ -35,10 +35,3 @@ func0000000000000030:                   # @func0000000000000030
 	addl	%edi, %eax
 	andl	$-128, %eax
 	retq
-func0000000000000013:                   # @func0000000000000013
-	leal	1900(%rdi), %eax
-	addl	$2000, %edi                     # imm = 0x7D0
-	cmpl	$96, %esi
-	cmovael	%eax, %edi
-	movzwl	%di, %eax
-	retq

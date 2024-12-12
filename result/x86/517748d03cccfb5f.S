@@ -1,4 +1,4 @@
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000141:                   # @func0000000000000141
 	leal	4(%rdi), %eax
 	cmpl	$-4, %edi
 	cmovll	%edi, %eax
@@ -6,7 +6,7 @@ func00000000000000a1:                   # @func00000000000000a1
 	cmpl	$613566757, %eax                # imm = 0x24924925
 	setb	%al
 	retq
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	leal	-1000000000(%rdi), %eax
 	cmpl	$1000000000, %edi               # imm = 0x3B9ACA00
 	cmovbl	%edi, %eax
@@ -15,7 +15,7 @@ func0000000000000081:                   # @func0000000000000081
 	cmpl	$4295, %eax                     # imm = 0x10C7
 	setb	%al
 	retq
-func00000000000001a8:                   # @func00000000000001a8
+func0000000000000558:                   # @func0000000000000558
 	leal	4(%rdi), %eax
 	cmpl	$-4, %edi
 	cmovll	%edi, %eax
@@ -32,7 +32,7 @@ func00000000000001a8:                   # @func00000000000001a8
 	cmpl	$2, %edx
 	setae	%al
 	retq
-func00000000000001a1:                   # @func00000000000001a1
+func0000000000000541:                   # @func0000000000000541
 	leal	4(%rdi), %eax
 	cmpl	$-4, %edi
 	cmovll	%edi, %eax

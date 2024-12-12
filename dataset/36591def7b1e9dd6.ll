@@ -1,5 +1,5 @@
 
-; 57 occurrences:
+; 56 occurrences:
 ; clamav/optimized/infblock.c.ll
 ; draco/optimized/mesh_attribute_corner_table.cc.ll
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
@@ -55,7 +55,6 @@
 ; openspiel/optimized/bridge_uncontested_bidding.cc.ll
 ; openspiel/optimized/spades.cc.ll
 ; openusd/optimized/openexr-c.c.ll
-; qemu/optimized/migration_qemu-file.c.ll
 ; yosys/optimized/opt_muxtree.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0, ptr %1) #0 {
@@ -63,7 +62,7 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
   %4 = trunc i64 %3 to i32
-  %5 = lshr i32 %4, 24
+  %5 = lshr i32 %4, 3
   ret i32 %5
 }
 

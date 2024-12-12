@@ -25,8 +25,7 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
-; hdf5/optimized/H5Zfletcher32.c.ll
+; 1 occurrences:
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
@@ -38,7 +37,7 @@ entry:
   ret i32 %5
 }
 
-; 35 occurrences:
+; 33 occurrences:
 ; abc/optimized/amapMerge.c.ll
 ; abseil-cpp/optimized/charconv.cc.ll
 ; cmake/optimized/xmltok.c.ll
@@ -61,7 +60,6 @@ entry:
 ; luajit/optimized/lj_crecord.ll
 ; luajit/optimized/lj_crecord_dyn.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
-; nuttx/optimized/lib_wcwidth.c.ll
 ; oniguruma/optimized/utf16_be.ll
 ; oniguruma/optimized/utf16_le.ll
 ; openjdk/optimized/IntBgr.ll
@@ -72,7 +70,6 @@ entry:
 ; php/optimized/pcre2_jit_compile.ll
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; velox/optimized/LzoDecompressor.cpp.ll
-; wireshark/optimized/mpeg-audio.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
@@ -84,7 +81,7 @@ entry:
   ret i32 %5
 }
 
-; 50 occurrences:
+; 49 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcDar.c.ll
@@ -97,7 +94,6 @@ entry:
 ; abc/optimized/bmcBCore.c.ll
 ; abc/optimized/bmcChain.c.ll
 ; abc/optimized/bmcFault.c.ll
-; abc/optimized/bmcLoad.c.ll
 ; abc/optimized/bmcMulti.c.ll
 ; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/cecSatG2.c.ll

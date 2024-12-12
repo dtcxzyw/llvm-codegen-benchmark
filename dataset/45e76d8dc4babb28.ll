@@ -1,5 +1,7 @@
 
-; 20 occurrences:
+; 22 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; gromacs/optimized/gmx_arpack.cpp.ll
 ; gromacs/optimized/nr_jacobi.cpp.ll
 ; gromacs/optimized/nrjac.cpp.ll

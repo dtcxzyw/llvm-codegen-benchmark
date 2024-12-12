@@ -1,26 +1,28 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; fmt/optimized/chrono-test.cc.ll
 ; hyperscan/optimized/hs.cpp.ll
 ; postgres/optimized/initdb.ll
+; qemu/optimized/qobject_qdict.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0) #0 {
 entry:
-  %1 = mul i32 %0, 3
-  %2 = and i32 %1, 3
-  %3 = icmp eq i32 %2, 0
+  %1 = mul i32 %0, 107
+  %2 = and i32 %1, 511
+  %3 = icmp eq i32 %2, 454
   ret i1 %3
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; fmt/optimized/format-impl-test.cc.ll
 ; linux/optimized/stream.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0) #0 {
+define i1 @func0000000000000074(i32 %0) #0 {
 entry:
   %1 = mul nuw nsw i32 %0, 6554
   %2 = and i32 %1, 65534
-  %3 = icmp ult i32 %2, 6554
+  %3 = icmp samesign ult i32 %2, 6554
   ret i1 %3
 }
 
@@ -31,7 +33,7 @@ entry:
 ; linux/optimized/route.ll
 ; linux/optimized/rsa-pkcs1pad.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0) #0 {
+define i1 @func0000000000000061(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 1
   %2 = icmp eq i32 %1, 0
@@ -112,18 +114,18 @@ entry:
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0) #0 {
+define i1 @func0000000000000014(i32 %0) #0 {
 entry:
   %1 = mul i32 %0, 52429
   %2 = and i32 %1, 65532
-  %3 = icmp ult i32 %2, 13108
+  %3 = icmp samesign ult i32 %2, 13108
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; oiio/optimized/Writer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0) #0 {
+define i1 @func000000000000002c(i32 %0) #0 {
 entry:
   %1 = mul nsw i32 %0, 10
   %2 = and i32 %1, 30
@@ -134,18 +136,18 @@ entry:
 ; 1 occurrences:
 ; oiio/optimized/Writer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0) #0 {
+define i1 @func0000000000000018(i32 %0) #0 {
 entry:
   %1 = mul i32 %0, 10
   %2 = and i32 %1, 30
-  %3 = icmp ugt i32 %2, 22
+  %3 = icmp samesign ugt i32 %2, 22
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0) #0 {
+define i1 @func0000000000000041(i32 %0) #0 {
 entry:
   %1 = mul nuw i32 %0, 65528
   %2 = and i32 %1, 65528

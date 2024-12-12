@@ -3,10 +3,10 @@
 ; quantlib/optimized/cmsmarketcalibration.ll
 ; quantlib/optimized/squarerootandersen.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000201(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = icmp eq i64 %3, -1
   ret i1 %4
 }
@@ -15,10 +15,10 @@ entry:
 ; quantlib/optimized/cmsmarketcalibration.ll
 ; quantlib/optimized/squarerootandersen.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000208(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = add i64 %3, -2305843009213693951
   %5 = icmp ult i64 %4, -2305843009213693952
   ret i1 %5
@@ -29,10 +29,10 @@ entry:
 ; postgres/optimized/arrayutils.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000154(i64 %0, i64 %1) #0 {
+define i1 @func00000000000002a4(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 32
-  %3 = mul nsw i64 %2, %0
+  %3 = mul nsw i64 %0, %2
   %4 = add nsw i64 %3, 2147483648
   %5 = icmp ult i64 %4, 4294967296
   ret i1 %5
@@ -41,7 +41,7 @@ entry:
 ; 1 occurrences:
 ; arrow/optimized/coo_converter.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 32
   %3 = mul nsw i64 %2, %0

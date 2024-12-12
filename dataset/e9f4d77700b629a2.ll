@@ -1,6 +1,7 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; hermes/optimized/HiddenClass.cpp.ll
+; linux/optimized/genetlink.ll
 ; linux/optimized/intel_sdvo.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/wpa.ll

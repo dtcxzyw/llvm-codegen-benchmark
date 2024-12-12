@@ -230,7 +230,7 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000091(i32 %0, i32 %1, i64 %2) #0 {
+define i32 @func0000000000000121(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1048576
   %4 = icmp eq i64 %3, 0

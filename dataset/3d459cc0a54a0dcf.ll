@@ -12,7 +12,7 @@ entry:
   ret i64 %5
 }
 
-; 177 occurrences:
+; 175 occurrences:
 ; abc/optimized/fraSim.c.ll
 ; abc/optimized/sswSim.c.ll
 ; darktable/optimized/introspection_bilat.c.ll
@@ -29,8 +29,6 @@ entry:
 ; faiss/optimized/LocalSearchQuantizer.cpp.ll
 ; faiss/optimized/ProductQuantizer.cpp.ll
 ; faiss/optimized/residual_quantizer_encode_steps.cpp.ll
-; gromacs/optimized/alltoall.cpp.ll
-; gromacs/optimized/scatter.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llama.cpp/optimized/llama.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll

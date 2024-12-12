@@ -1,13 +1,16 @@
 .LCPI0_0:
-	.quad	1                               # 0x1
+	.quad	63                              # 0x3f
 .LCPI0_1:
-	.quad	2                               # 0x2
+	.quad	31                              # 0x1f
+.LCPI0_2:
+	.quad	8                               # 0x8
+.LCPI0_3:
+	.quad	6                               # 0x6
 func0000000000000001:                   # @func0000000000000001
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
-	vpbroadcastq	.LCPI0_0(%rip), %ymm0   # ymm0 = [1,1,1,1]
-	vptestmq	%ymm0, %ymm1, %k2
-	vpbroadcastq	.LCPI0_1(%rip), %ymm1   # ymm1 = [2,2,2,2]
-	vmovdqa64	%ymm0, %ymm1 {%k1}
-	vmovdqa64	%ymm1, %ymm0 {%k2} {z}
+	vpandq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm0
+	vpcmpeqq	.LCPI0_1(%rip){1to4}, %ymm0, %k2
+	vpbroadcastq	.LCPI0_2(%rip), %ymm0 {%k1} {z} # ymm0 {%k1} {z} = [8,8,8,8]
+	vpbroadcastq	.LCPI0_3(%rip), %ymm0 {%k2} # ymm0 {%k2} = [6,6,6,6]
 	retq

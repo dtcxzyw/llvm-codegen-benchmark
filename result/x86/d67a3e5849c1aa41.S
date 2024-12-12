@@ -11,17 +11,16 @@ func0000000000000003:                   # @func0000000000000003
 func0000000000000000:                   # @func0000000000000000
 	movq	%rsi, %rdx
 	movabsq	$8589934597, %rax               # imm = 0x200000005
-	mulxq	%rax, %rcx, %rcx
-	addq	%rdi, %rsi
-	movq	%rdx, %rax
-	subq	%rcx, %rax
-	shrq	%rax
-	addq	%rcx, %rax
+	mulxq	%rax, %rax, %rax
+	leaq	(%rdi,%rsi), %rcx
+	subq	%rax, %rdx
+	shrq	%rdx
+	addq	%rdx, %rax
 	shrq	$30, %rax
-	movq	%rax, %rcx
-	shlq	$31, %rcx
-	subq	%rcx, %rax
-	addq	%rsi, %rax
+	movq	%rax, %rdx
+	shlq	$31, %rdx
+	subq	%rdx, %rax
+	addq	%rcx, %rax
 	retq
 func0000000000000001:                   # @func0000000000000001
 	movq	%rsi, %rdx

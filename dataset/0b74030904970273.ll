@@ -1,5 +1,5 @@
 
-; 134 occurrences:
+; 135 occurrences:
 ; abc/optimized/absOldCex.c.ll
 ; abc/optimized/absOldRef.c.ll
 ; abc/optimized/absOldSat.c.ll
@@ -87,6 +87,7 @@
 ; llvm/optimized/WindowsResource.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86InstCombineIntrinsic.cpp.ll
+; lvgl/optimized/lv_calendar_header_dropdown.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/clouds.cpp.ll
 ; minetest/optimized/noise.cpp.ll
@@ -138,7 +139,7 @@
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = and i32 %4, 31
   ret i32 %5
 }
@@ -174,7 +175,7 @@ entry:
   ret i32 %5
 }
 
-; 29 occurrences:
+; 30 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absOut.c.ll
@@ -191,6 +192,7 @@ entry:
 ; arrow/optimized/tz.cpp.ll
 ; icu/optimized/gencnvex.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_calendar.ll
 ; mixbox/optimized/mixbox.ll
 ; ncnn/optimized/padding_x86.cpp.ll
 ; ncnn/optimized/padding_x86_avx.cpp.ll
@@ -208,12 +210,12 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = and i32 %4, -8
   ret i32 %5
 }
 
-; 47 occurrences:
+; 48 occurrences:
 ; abc/optimized/giaSatLE.c.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
@@ -255,6 +257,7 @@ entry:
 ; wireshark/optimized/packet-5co-legacy.c.ll
 ; wireshark/optimized/packet-ansi_637.c.ll
 ; wireshark/optimized/packet-capwap.c.ll
+; wireshark/optimized/packet-gryphon.c.ll
 ; wireshark/optimized/packet-icmpv6.c.ll
 ; wireshark/optimized/packet-reload.c.ll
 ; yosys/optimized/ezsat.ll
@@ -276,7 +279,7 @@ entry:
 define i32 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   %5 = and i32 %4, 65528
   ret i32 %5
 }
@@ -316,7 +319,7 @@ entry:
 define i32 @func000000000000000e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   %5 = and i32 %4, 65535
   ret i32 %5
 }

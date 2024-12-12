@@ -5,7 +5,7 @@
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; postgres/optimized/command.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000cc(i32 %0) #0 {
+define i32 @func000000000000018c(i32 %0) #0 {
 entry:
   %1 = icmp ne i32 %0, 20
   %2 = icmp ne i32 %0, 2

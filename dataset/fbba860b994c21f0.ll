@@ -18,7 +18,6 @@
 ; gromacs/optimized/gmx_disre.cpp.ll
 ; libwebp/optimized/frame_dec.c.ll
 ; libwebp/optimized/webp_enc.c.ll
-; lightgbm/optimized/bin.cpp.ll
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
 ; linux/optimized/blktrace.ll
 ; linux/optimized/drm_displayid.ll
@@ -70,6 +69,7 @@
 ; velox/optimized/Timestamp.cpp.ll
 ; velox/optimized/tz.cpp.ll
 ; wolfssl/optimized/benchmark.c.ll
+; zed-rs/optimized/4hdn1csvepxizqbxhztzuw0uw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i32 %1) #0 {
 entry:
@@ -79,12 +79,11 @@ entry:
   ret i64 %4
 }
 
-; 144 occurrences:
+; 142 occurrences:
 ; arrow/optimized/message.cc.ll
 ; bdwgc/optimized/gc.c.ll
 ; casadi/optimized/cvodes_spils.c.ll
 ; casadi/optimized/idas_spils.c.ll
-; casadi/optimized/kinsol_spils.c.ll
 ; clamav/optimized/actions.c.ll
 ; clamav/optimized/manager.c.ll
 ; darktable/optimized/amaze.cc.ll
@@ -176,7 +175,6 @@ entry:
 ; opencv/optimized/fast_line_detector.cpp.ll
 ; opencv/optimized/fuzzy_F0_math.cpp.ll
 ; opencv/optimized/lrn_layer.cpp.ll
-; opencv/optimized/samplers.cpp.ll
 ; openexr/optimized/ImfOutputFile.cpp.ll
 ; openexr/optimized/ImfTiledOutputFile.cpp.ll
 ; openjdk/optimized/classLoaderExt.ll

@@ -6,7 +6,7 @@ func0000000000000001:                   # @func0000000000000001
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	slli	a2, a2, 4
 	addi	a2, a2, 16
 	czero.eqz	a0, a0, a1

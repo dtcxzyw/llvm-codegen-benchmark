@@ -12,6 +12,7 @@
 ; assimp/optimized/LWSLoader.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/within.ll
 ; casadi/optimized/idas_spbcgs.c.ll
 ; casadi/optimized/idas_spgmr.c.ll
 ; casadi/optimized/idas_sptfqmr.c.ll
@@ -83,7 +84,6 @@
 ; openmpi/optimized/fcoll_dynamic_gen2_file_write_all.ll
 ; openmpi/optimized/fcoll_vulcan_file_write_all.ll
 ; openspiel/optimized/Scheduler.cpp.ll
-; pbrt-v4/optimized/cameras.cpp.ll
 ; php/optimized/zend_alloc.ll
 ; postgres/optimized/costsize.ll
 ; postgres/optimized/gistbuild.ll
@@ -108,7 +108,7 @@
 define i1 @func0000000000000004(double %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to double
-  %3 = fcmp olt double %2, %0
+  %3 = fcmp ogt double %0, %2
   ret i1 %3
 }
 
@@ -119,7 +119,7 @@ entry:
 define i1 @func000000000000000b(double %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to double
-  %3 = fcmp uge double %2, %0
+  %3 = fcmp ule double %0, %2
   ret i1 %3
 }
 
@@ -153,11 +153,11 @@ entry:
 define i1 @func0000000000000007(double %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to double
-  %3 = fcmp une double %2, %0
+  %3 = fcmp une double %0, %2
   ret i1 %3
 }
 
-; 91 occurrences:
+; 90 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcOdc.c.ll
@@ -176,6 +176,7 @@ entry:
 ; abc/optimized/cuddZddSymm.c.ll
 ; abc/optimized/reoSift.c.ll
 ; abc/optimized/xsatSolver.c.ll
+; boost/optimized/within.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_basicadj.c.ll
 ; darktable/optimized/print_settings.c.ll
@@ -193,10 +194,8 @@ entry:
 ; icu/optimized/uperf.ll
 ; ipopt/optimized/IpMa97SolverInterface.ll
 ; ipopt/optimized/IpRegOptions.ll
-; libwebp/optimized/quant_levels_utils.c.ll
 ; lua/optimized/lvm.ll
 ; meshlab/optimized/edit_paint.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
 ; meshlab/optimized/trackmode.cpp.ll
@@ -253,11 +252,12 @@ entry:
 define i1 @func0000000000000002(double %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to double
-  %3 = fcmp ogt double %2, %0
+  %3 = fcmp olt double %0, %2
   ret i1 %3
 }
 
 ; 70 occurrences:
+; boost/optimized/within.ll
 ; casadi/optimized/sx_elem.cpp.ll
 ; cjson/optimized/cJSON.c.ll
 ; darktable/optimized/export.c.ll
@@ -316,7 +316,6 @@ entry:
 ; openusd/optimized/vec3i.cpp.ll
 ; openusd/optimized/vec4d.cpp.ll
 ; openusd/optimized/vec4i.cpp.ll
-; proj/optimized/io.cpp.ll
 ; proj/optimized/proj_json_streaming_writer.cpp.ll
 ; redis/optimized/ltable.ll
 ; redis/optimized/lua_cmsgpack.ll
@@ -332,11 +331,12 @@ entry:
 define i1 @func0000000000000008(double %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to double
-  %3 = fcmp oeq double %2, %0
+  %3 = fcmp oeq double %0, %2
   ret i1 %3
 }
 
-; 22 occurrences:
+; 23 occurrences:
+; boost/optimized/within.ll
 ; cmake/optimized/cmCTestTestHandler.cxx.ll
 ; cvc5/optimized/Solver.cc.ll
 ; lightgbm/optimized/bin.cpp.ll
@@ -363,11 +363,12 @@ entry:
 define i1 @func0000000000000005(double %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to double
-  %3 = fcmp ult double %2, %0
+  %3 = fcmp ugt double %0, %2
   ret i1 %3
 }
 
-; 13 occurrences:
+; 14 occurrences:
+; boost/optimized/within.ll
 ; lua/optimized/lvm.ll
 ; oiio/optimized/imageio.cpp.ll
 ; openblas/optimized/dspgvd.c.ll
@@ -385,11 +386,12 @@ entry:
 define i1 @func000000000000000c(double %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to double
-  %3 = fcmp ole double %2, %0
+  %3 = fcmp oge double %0, %2
   ret i1 %3
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/within.ll
 ; lua/optimized/lvm.ll
 ; openblas/optimized/dspgvd.c.ll
 ; openblas/optimized/dsygvd.c.ll
@@ -399,7 +401,7 @@ entry:
 define i1 @func000000000000000a(double %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to double
-  %3 = fcmp oge double %2, %0
+  %3 = fcmp ole double %0, %2
   ret i1 %3
 }
 
@@ -419,11 +421,12 @@ entry:
 define i1 @func000000000000000d(double %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to double
-  %3 = fcmp ule double %2, %0
+  %3 = fcmp uge double %0, %2
   ret i1 %3
 }
 
-; 18 occurrences:
+; 19 occurrences:
+; boost/optimized/within.ll
 ; graphviz/optimized/heap.c.ll
 ; graphviz/optimized/multispline.c.ll
 ; graphviz/optimized/taper.c.ll
@@ -446,7 +449,7 @@ entry:
 define i1 @func0000000000000003(double %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to double
-  %3 = fcmp ugt double %2, %0
+  %3 = fcmp ult double %0, %2
   ret i1 %3
 }
 

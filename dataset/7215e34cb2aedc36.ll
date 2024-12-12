@@ -1,9 +1,10 @@
 
-%struct.in6_addr.3369731 = type { %union.anon.31.3369732 }
-%union.anon.31.3369732 = type { [4 x i32] }
-%"struct.google::protobuf::internal::ExtensionSet::KeyValue.3489253" = type { i32, %"struct.google::protobuf::internal::ExtensionSet::Extension.3489251" }
-%"struct.google::protobuf::internal::ExtensionSet::Extension.3489251" = type { %union.anon.8.3489252, i8, i8, i8, i8, i32, ptr }
-%union.anon.8.3489252 = type { i64 }
+%"class.llvm::MCInstrDesc.3251960" = type { i16, i16, i8, i8, i16, i8, i8, i16, i16, i64, i64 }
+%struct.in6_addr.3555181 = type { %union.anon.31.3555182 }
+%union.anon.31.3555182 = type { [4 x i32] }
+%"struct.google::protobuf::internal::ExtensionSet::KeyValue.3671432" = type { i32, %"struct.google::protobuf::internal::ExtensionSet::Extension.3671433" }
+%"struct.google::protobuf::internal::ExtensionSet::Extension.3671433" = type { %union.anon.8.3671434, i8, i8, i8, i8, i32, ptr }
+%union.anon.8.3671434 = type { i64 }
 
 ; 7 occurrences:
 ; linux/optimized/arp.ll
@@ -23,7 +24,8 @@ entry:
   ret ptr %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; postgres/optimized/refint.ll
 ; qemu/optimized/hw_vfio_pci.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000040(i64 %0, ptr %1, i16 %2) #0 {
@@ -35,11 +37,9 @@ entry:
   ret ptr %6
 }
 
-; 48 occurrences:
+; 45 occurrences:
 ; clamav/optimized/yc.c.ll
-; git/optimized/fast-import.ll
 ; icu/optimized/ucnv_io.ll
-; icu/optimized/ucnvsel.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; llvm/optimized/AArch64A57FPLoadBalancing.cpp.ll
 ; llvm/optimized/APINotesReader.cpp.ll
@@ -77,31 +77,59 @@ entry:
 ; llvm/optimized/X86OptimizeLEAs.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
-; openexr/optimized/ImfDwaCompressor.cpp.ll
+; openjdk/optimized/zip_util.ll
 ; php/optimized/pcre2_compile.ll
 ; raylib/optimized/rtext.c.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
-; sentencepiece/optimized/extension_set.cc.ll
 ; stb/optimized/stb_truetype.c.ll
 ; wolfssl/optimized/tls.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(i64 %0, ptr %1, i16 %2) #0 {
+define ptr @func000000000000003f(i64 %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 2
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 46
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 4 occurrences:
+; git/optimized/fast-import.ll
+; icu/optimized/ucnvsel.ll
+; openexr/optimized/ImfDwaCompressor.cpp.ll
+; sentencepiece/optimized/extension_set.cc.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003e(i64 %0, ptr %1, i16 %2) #0 {
+entry:
+  %3 = zext i16 %2 to i64
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 1
   %6 = getelementptr nusw i8, ptr %5, i64 %0
   ret ptr %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/src.ll
+; icu/optimized/normalizer2impl.ll
+; Function Attrs: nounwind
+define ptr @func000000000000007f(i64 %0, ptr %1, i16 %2) #0 {
+entry:
+  %3 = zext nneg i16 %2 to i64
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 2 occurrences:
+; llvm/optimized/X86MCTargetDesc.cpp.ll
 ; openusd/optimized/detokenize.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000020(i64 %0, ptr %1, i16 %2) #0 {
+define ptr @func0000000000000030(i64 %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 -1
+  %4 = getelementptr nusw nuw %"class.llvm::MCInstrDesc.3251960", ptr %1, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 35
   %6 = getelementptr i8, ptr %5, i64 %0
   ret ptr %6
 }
@@ -109,12 +137,12 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/exthdrs.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(i64 %0, ptr %1, i16 %2) #0 {
+define ptr @func000000000000000c(i64 %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 8
-  %6 = getelementptr %struct.in6_addr.3369731, ptr %5, i64 %0
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 8
+  %6 = getelementptr %struct.in6_addr.3555181, ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -122,22 +150,22 @@ entry:
 ; icu/optimized/normalizer2impl.ll
 ; protobuf/optimized/extension_set.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(i64 %0, ptr %1, i16 %2) #0 {
+define ptr @func000000000000007e(i64 %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr nusw %"struct.google::protobuf::internal::ExtensionSet::KeyValue.3489253", ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 32
-  %6 = getelementptr nusw %"struct.google::protobuf::internal::ExtensionSet::KeyValue.3489253", ptr %5, i64 %0
+  %4 = getelementptr nusw nuw %"struct.google::protobuf::internal::ExtensionSet::KeyValue.3671432", ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 32
+  %6 = getelementptr nusw %"struct.google::protobuf::internal::ExtensionSet::KeyValue.3671432", ptr %5, i64 %0
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; icu/optimized/collationfastlatin.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000060(i64 %0, ptr %1, i16 %2) #0 {
+define ptr @func0000000000000070(i64 %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr nusw i16, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i16, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -15616
   %6 = getelementptr i16, ptr %5, i64 %0
   ret ptr %6
@@ -146,11 +174,11 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/collationdatareader.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000028(i64 %0, ptr %1, i16 %2) #0 {
+define ptr @func000000000000003c(i64 %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw i16, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 32
+  %4 = getelementptr nusw nuw i16, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 32
   %6 = getelementptr i16, ptr %5, i64 %0
   ret ptr %6
 }

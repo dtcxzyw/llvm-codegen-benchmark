@@ -55,7 +55,7 @@
 	.long	6                               # 0x6
 .LCPI0_5:
 	.zero	4,240
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpandd	.LCPI0_5(%rip){1to4}, %xmm0, %xmm1
 	vpcmpeqb	.LCPI0_1(%rip), %xmm1, %k1
 	vpbroadcastd	.LCPI0_2(%rip), %ymm1   # ymm1 = [2,2,2,2,2,2,2,2]
@@ -105,7 +105,7 @@ func0000000000000014:                   # @func0000000000000014
 	.long	1                               # 0x1
 .LCPI1_5:
 	.zero	4,3
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	vpandd	.LCPI1_5(%rip){1to4}, %xmm0, %xmm1
 	vpcmpeqb	.LCPI1_1(%rip), %xmm1, %k1
 	vpbroadcastd	.LCPI1_2(%rip), %ymm1   # ymm1 = [3,3,3,3,3,3,3,3]

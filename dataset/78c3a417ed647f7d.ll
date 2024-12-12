@@ -7,7 +7,7 @@
 ; tokio-rs/optimized/1rl1r5ea6bzd5c9z.ll
 ; tokio-rs/optimized/5cdni0zdopovrkgi.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 12, i64 24
@@ -28,7 +28,7 @@ entry:
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; quickjs/optimized/libbf.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000a6(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000146(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %2, 0
   %4 = select i1 %3, i64 9223372036854775807, i64 -9223372036854775808
@@ -41,7 +41,7 @@ entry:
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000a4(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000144(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %2, 0
   %4 = select i1 %3, i64 9223372036854775807, i64 -9223372036854775808

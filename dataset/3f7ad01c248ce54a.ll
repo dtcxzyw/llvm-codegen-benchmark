@@ -3,10 +3,10 @@
 ; luau/optimized/isocline.c.ll
 ; ruby/optimized/time.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000022(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000042(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   %5 = zext i1 %4 to i64
   ret i64 %5
 }
@@ -19,13 +19,14 @@ entry:
 define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   %5 = zext i1 %4 to i64
   ret i64 %5
 }
 
-; 187 occurrences:
+; 188 occurrences:
 ; annoy/optimized/annoymodule.ll
+; boost/optimized/to_chars.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; cpython/optimized/basearith.ll
@@ -216,7 +217,7 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   %5 = zext i1 %4 to i64
   ret i64 %5
 }
@@ -232,7 +233,7 @@ entry:
 define i64 @func0000000000000012(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
-  %4 = icmp ule i64 %3, %0
+  %4 = icmp uge i64 %0, %3
   %5 = zext i1 %4 to i64
   ret i64 %5
 }
@@ -241,10 +242,10 @@ entry:
 ; lief/optimized/ecp_curves.c.ll
 ; spike/optimized/f128_sqrt.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000068(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func00000000000000c8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   %5 = zext i1 %4 to i64
   ret i64 %5
 }
@@ -256,7 +257,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   %5 = zext i1 %4 to i64
   ret i64 %5
 }
@@ -269,7 +270,7 @@ entry:
 define i64 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
-  %4 = icmp ne i64 %3, %0
+  %4 = icmp ne i64 %0, %3
   %5 = zext i1 %4 to i64
   ret i64 %5
 }

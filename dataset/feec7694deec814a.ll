@@ -1,6 +1,5 @@
 
-; 20 occurrences:
-; darktable/optimized/TiffEntry.cpp.ll
+; 18 occurrences:
 ; mold/optimized/main.cc.ALPHA.cc.ll
 ; mold/optimized/main.cc.ARM32.cc.ll
 ; mold/optimized/main.cc.ARM64.cc.ll
@@ -19,9 +18,8 @@
 ; mold/optimized/main.cc.SH4.cc.ll
 ; mold/optimized/main.cc.SPARC64.cc.ll
 ; mold/optimized/main.cc.X86_64.cc.ll
-; spike/optimized/isa_parser.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000226(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000446(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
@@ -32,10 +30,48 @@ entry:
 }
 
 ; 2 occurrences:
+; darktable/optimized/TiffEntry.cpp.ll
+; spike/optimized/isa_parser.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000646(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %0, %4
+  %6 = add nuw i64 %5, 1
+  %7 = icmp slt i64 %6, 0
+  ret i1 %7
+}
+
+; 1 occurrences:
+; boost/optimized/static_string.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000621(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %0, %4
+  %6 = icmp eq i64 %5, -1
+  ret i1 %6
+}
+
+; 1 occurrences:
+; llvm/optimized/FormatTokenLexer.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000421(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %0, %4
+  %6 = icmp eq i64 %5, -1
+  ret i1 %6
+}
+
+; 2 occurrences:
 ; llvm/optimized/ClangBuiltinsEmitter.cpp.ll
 ; llvm/optimized/SampleProfReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000204(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000404(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
@@ -56,6 +92,18 @@ entry:
   %6 = add i64 %5, -274
   %7 = icmp ult i64 %6, -256
   ret i1 %7
+}
+
+; 1 occurrences:
+; graphviz/optimized/scan.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000401(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %0, %4
+  %6 = icmp eq i64 %5, -1
+  ret i1 %6
 }
 
 attributes #0 = { nounwind }

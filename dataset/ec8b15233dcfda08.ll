@@ -14,14 +14,34 @@ entry:
   %2 = and i32 %1, 3
   %3 = icmp eq i32 %2, 2
   %4 = zext i1 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
-; 118 occurrences:
+; 138 occurrences:
+; abc/optimized/cecSatG3.c.ll
 ; abc/optimized/exor.c.ll
+; abc/optimized/extraUtilBitMatrix.c.ll
 ; abc/optimized/fraigUtil.c.ll
+; abc/optimized/ifMan.c.ll
+; abc/optimized/ivyCutTrav.c.ll
+; abc/optimized/mvcUtils.c.ll
 ; abc/optimized/satInter.c.ll
+; arrow/optimized/vector_selection_take_internal.cc.ll
+; bullet3/optimized/b3BoundSearchCL.ll
+; bullet3/optimized/b3ConvexHullContact.ll
+; bullet3/optimized/b3FillCL.ll
+; bullet3/optimized/b3GpuGridBroadphase.ll
+; bullet3/optimized/b3GpuJacobiContactSolver.ll
+; bullet3/optimized/b3GpuParallelLinearBvh.ll
+; bullet3/optimized/b3GpuPgsConstraintSolver.ll
+; bullet3/optimized/b3GpuPgsContactSolver.ll
+; bullet3/optimized/b3GpuRaycast.ll
+; bullet3/optimized/b3GpuRigidBodyPipeline.ll
+; bullet3/optimized/b3GpuSapBroadphase.ll
+; bullet3/optimized/b3Solver.ll
+; graphviz/optimized/neatoinit.c.ll
+; graphviz/optimized/spring_electrical.c.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
 ; oiio/optimized/bmpinput.cpp.ll
@@ -143,11 +163,12 @@ entry:
   %2 = and i32 %1, 255
   %3 = icmp ne i32 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
-; 174 occurrences:
+; 175 occurrences:
+; boost/optimized/to_chars.ll
 ; cmake/optimized/zstd_compress_sequences.c.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
@@ -328,7 +349,38 @@ entry:
   %2 = and i32 %1, -2
   %3 = icmp ne i32 %2, 2
   %4 = zext i1 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
+  ret i64 %5
+}
+
+; 1 occurrences:
+; quickjs/optimized/quickjs.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000009(i64 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 3
+  %3 = icmp eq i32 %2, 0
+  %4 = zext i1 %3 to i64
+  %5 = add nsw i64 %0, %4
+  ret i64 %5
+}
+
+; 8 occurrences:
+; arrow/optimized/compare.cc.ll
+; arrow/optimized/int_util.cc.ll
+; arrow/optimized/light_array.cc.ll
+; arrow/optimized/list_util.cc.ll
+; arrow/optimized/row_encoder.cc.ll
+; arrow/optimized/vector_selection_filter_internal.cc.ll
+; arrow/optimized/vector_selection_take_internal.cc.ll
+; graphviz/optimized/sfprint.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000061(i64 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 7
+  %3 = icmp ne i32 %2, 0
+  %4 = zext i1 %3 to i64
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -360,19 +412,7 @@ entry:
   %2 = and i32 %1, 33
   %3 = icmp eq i32 %2, 32
   %4 = zext i1 %3 to i64
-  %5 = add i64 %4, %0
-  ret i64 %5
-}
-
-; 1 occurrences:
-; graphviz/optimized/sfprint.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000061(i64 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 268435840
-  %3 = icmp ne i32 %2, 0
-  %4 = zext i1 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 

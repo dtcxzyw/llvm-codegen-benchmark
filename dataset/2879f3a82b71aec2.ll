@@ -1,8 +1,10 @@
 
-; 8 occurrences:
+; 10 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
 ; opencv/optimized/grfmt_pxm.cpp.ll
 ; qemu/optimized/block_vmdk.c.ll
 ; qemu/optimized/hw_audio_hda-codec.c.ll

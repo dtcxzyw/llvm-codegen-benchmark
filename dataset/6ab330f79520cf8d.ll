@@ -1,6 +1,4 @@
 
-%"class.llvm::Use.2944921" = type { ptr, ptr, ptr, ptr }
-
 ; 6 occurrences:
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha1.ll
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha256.ll
@@ -9,67 +7,25 @@
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha1_hw.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha256_hw.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000004a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000004e(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -16
   %3 = add nuw i32 %2, 21
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   %6 = getelementptr nusw i8, ptr %5, i64 -16
   ret ptr %6
 }
 
-; 7 occurrences:
+; 137 occurrences:
 ; clamav/optimized/pe.c.ll
 ; freetype/optimized/sfnt.c.ll
-; llvm/optimized/AppendingTypeTableBuilder.cpp.ll
-; llvm/optimized/GlobalTypeTableBuilder.cpp.ll
-; llvm/optimized/LazyRandomTypeCollection.cpp.ll
-; llvm/optimized/MergingTypeTableBuilder.cpp.ll
-; llvm/optimized/TypeTableCollection.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, -4
-  %3 = add nsw i32 %2, -6
-  %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 6
-  ret ptr %6
-}
-
-; 16 occurrences:
-; entt/optimized/benchmark.cpp.ll
-; entt/optimized/custom_identifier.cpp.ll
-; entt/optimized/group.cpp.ll
-; entt/optimized/handle.cpp.ll
-; entt/optimized/helper.cpp.ll
-; entt/optimized/meta_ctor.cpp.ll
-; entt/optimized/meta_func.cpp.ll
-; entt/optimized/observer.cpp.ll
-; entt/optimized/organizer.cpp.ll
-; entt/optimized/registry.cpp.ll
-; entt/optimized/runtime_view.cpp.ll
-; entt/optimized/sigh_mixin.cpp.ll
-; entt/optimized/snapshot.cpp.ll
-; entt/optimized/view.cpp.ll
-; opencv/optimized/grfmt_jpeg2000_openjpeg.cpp.ll
-; wireshark/optimized/erf.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000070(ptr %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 1048575
-  %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr i32, ptr %0, i64 %3
-  ret ptr %4
-}
-
-; 131 occurrences:
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/ABIInfoImpl.cpp.ll
 ; llvm/optimized/AMDGPUEmitPrintf.cpp.ll
 ; llvm/optimized/AddressSanitizer.cpp.ll
 ; llvm/optimized/AggressiveInstCombine.cpp.ll
+; llvm/optimized/AppendingTypeTableBuilder.cpp.ll
 ; llvm/optimized/AtomicExpandPass.cpp.ll
 ; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/BasicBlockUtils.cpp.ll
@@ -115,6 +71,7 @@ entry:
 ; llvm/optimized/GCOVProfiling.cpp.ll
 ; llvm/optimized/GVN.cpp.ll
 ; llvm/optimized/GVNSink.cpp.ll
+; llvm/optimized/GlobalTypeTableBuilder.cpp.ll
 ; llvm/optimized/HardwareLoops.cpp.ll
 ; llvm/optimized/IndVarSimplify.cpp.ll
 ; llvm/optimized/IndirectBrExpandPass.cpp.ll
@@ -163,6 +120,7 @@ entry:
 ; llvm/optimized/MemorySanitizer.cpp.ll
 ; llvm/optimized/MergeICmps.cpp.ll
 ; llvm/optimized/MergedLoadStoreMotion.cpp.ll
+; llvm/optimized/MergingTypeTableBuilder.cpp.ll
 ; llvm/optimized/NewGVN.cpp.ll
 ; llvm/optimized/NumericalStabilitySanitizer.cpp.ll
 ; llvm/optimized/OMPIRBuilder.cpp.ll
@@ -189,6 +147,7 @@ entry:
 ; llvm/optimized/StructurizeCFG.cpp.ll
 ; llvm/optimized/TailRecursionElimination.cpp.ll
 ; llvm/optimized/TruncInstCombine.cpp.ll
+; llvm/optimized/TypeTableCollection.cpp.ll
 ; llvm/optimized/UnifyFunctionExitNodes.cpp.ll
 ; llvm/optimized/UnifyLoopExits.cpp.ll
 ; llvm/optimized/VPlan.cpp.ll
@@ -197,30 +156,80 @@ entry:
 ; llvm/optimized/X86LowerAMXIntrinsics.cpp.ll
 ; llvm/optimized/X86LowerAMXType.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002b(ptr %0, i32 %1) #0 {
+define ptr @func000000000000002f(ptr %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 134217727
-  %3 = add nsw i32 %2, -1
+  %2 = and i32 %1, -4
+  %3 = add nsw i32 %2, -6
   %4 = zext i32 %3 to i64
-  %5 = getelementptr %"class.llvm::Use.2944921", ptr %0, i64 %4, i32 1
-  ret ptr %5
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 6
+  ret ptr %6
 }
 
-; 7 occurrences:
-; freetype/optimized/sfnt.c.ll
+; 16 occurrences:
+; entt/optimized/benchmark.cpp.ll
+; entt/optimized/custom_identifier.cpp.ll
+; entt/optimized/group.cpp.ll
+; entt/optimized/handle.cpp.ll
+; entt/optimized/helper.cpp.ll
+; entt/optimized/meta_ctor.cpp.ll
+; entt/optimized/meta_func.cpp.ll
+; entt/optimized/observer.cpp.ll
+; entt/optimized/organizer.cpp.ll
+; entt/optimized/registry.cpp.ll
+; entt/optimized/runtime_view.cpp.ll
+; entt/optimized/sigh_mixin.cpp.ll
+; entt/optimized/snapshot.cpp.ll
+; entt/optimized/view.cpp.ll
+; opencv/optimized/grfmt_jpeg2000_openjpeg.cpp.ll
+; wireshark/optimized/erf.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000070(ptr %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 1048575
+  %3 = zext nneg i32 %2 to i64
+  %4 = getelementptr i32, ptr %0, i64 %3
+  ret ptr %4
+}
+
+; 1 occurrences:
+; linux/optimized/cistpl.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000020(ptr %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 3
+  %3 = add nsw i32 %2, -1
+  %4 = zext i32 %3 to i64
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 1
+  ret ptr %6
+}
+
+; 2 occurrences:
 ; luajit/optimized/lj_crecord.ll
 ; luajit/optimized/lj_crecord_dyn.ll
-; meshlab/optimized/filter_sampling.cpp.ll
-; opencv/optimized/chessboard.cpp.ll
-; opencv/optimized/demosaicing.cpp.ll
-; opencv/optimized/split.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000007e(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr i32, ptr %0, i64 %3
   ret ptr %4
+}
+
+; 4 occurrences:
+; freetype/optimized/sfnt.c.ll
+; meshlab/optimized/filter_sampling.cpp.ll
+; opencv/optimized/demosaicing.cpp.ll
+; opencv/optimized/split.dispatch.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000007f(ptr %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 511
+  %3 = zext nneg i32 %2 to i64
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 2
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

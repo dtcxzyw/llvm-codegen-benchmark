@@ -3,7 +3,6 @@
 ; git/optimized/transport.ll
 ; grpc/optimized/call.cc.ll
 ; hermes/optimized/Object.cpp.ll
-; linux/optimized/dvo_ch7017.ll
 ; linux/optimized/hda_controller.ll
 ; linux/optimized/intel_bios.ll
 ; linux/optimized/intel_sdvo.ll
@@ -29,11 +28,12 @@
 ; llvm/optimized/SemaType.cpp.ll
 ; llvm/optimized/StackProtector.cpp.ll
 ; llvm/optimized/cc1as_main.cpp.ll
+; lvgl/optimized/lv_canvas.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; openusd/optimized/changes.cpp.ll
 ; openusd/optimized/reformat.c.ll
 ; openusd/optimized/topologyRefiner.cpp.ll
-; php/optimized/pcre2_maketables.ll
 ; postgres/optimized/heapam.ll
 ; qemu/optimized/target_riscv_vcrypto_helper.c.ll
 ; ruby/optimized/gc.ll

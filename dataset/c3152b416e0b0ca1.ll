@@ -1,10 +1,9 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; linux/optimized/drm_gem_shmem_helper.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; minetest/optimized/CImage.cpp.ll
 ; qemu/optimized/hw_core_loader.c.ll
-; qemu/optimized/ui_vnc-enc-zlib.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:

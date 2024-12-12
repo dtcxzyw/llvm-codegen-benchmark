@@ -1,48 +1,17 @@
-func00000000000002b8:                   # @func00000000000002b8
-	slli	a1, a1, 56
-	srai	a1, a1, 56
-	slti	a1, a1, 0
-	xori	a1, a1, 1
-	add	a0, a0, a1
-	addiw	a0, a0, 96
-	sltiu	a0, a0, 255
-	xori	a0, a0, 1
-	ret
-func0000000000000116:                   # @func0000000000000116
-	andi	a1, a1, 255
-	li	a2, 58
-	bltu	a1, a2, .LBB1_2
-	li	a1, -55
-	addw	a0, a0, a1
-	slti	a0, a0, 0
-	ret
-.LBB1_2:
-	li	a1, -48
-	addw	a0, a0, a1
-	slti	a0, a0, 0
-	ret
-func000000000000011a:                   # @func000000000000011a
+func000000000000022a:                   # @func000000000000022a
 	andi	a1, a1, 255
 	li	a2, 16
-	bltu	a1, a2, .LBB2_2
+	bltu	a1, a2, .LBB0_2
 	li	a1, -129
 	addw	a0, a0, a1
 	sgtz	a0, a0
 	ret
-.LBB2_2:
+.LBB0_2:
 	li	a1, -65
 	addw	a0, a0, a1
 	sgtz	a0, a0
 	ret
-func0000000000000286:                   # @func0000000000000286
-	slli	a1, a1, 56
-	srai	a1, a1, 56
-	sgtz	a1, a1
-	add	a0, a0, a1
-	addiw	a0, a0, -2
-	slti	a0, a0, 1
-	ret
-func0000000000000304:                   # @func0000000000000304
+func0000000000000604:                   # @func0000000000000604
 	andi	a1, a1, 255
 	addi	a1, a1, -39
 	seqz	a1, a1
@@ -50,7 +19,7 @@ func0000000000000304:                   # @func0000000000000304
 	addiw	a0, a0, -3
 	sltiu	a0, a0, 2
 	ret
-func0000000000000301:                   # @func0000000000000301
+func0000000000000601:                   # @func0000000000000601
 	andi	a1, a1, 255
 	addi	a1, a1, -39
 	seqz	a1, a1
@@ -59,7 +28,7 @@ func0000000000000301:                   # @func0000000000000301
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	andi	a1, a1, 255
 	addi	a1, a1, -59
 	seqz	a1, a1
@@ -68,7 +37,7 @@ func0000000000000051:                   # @func0000000000000051
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	andi	a1, a1, 255
 	seqz	a1, a1
 	subw	a0, a0, a1
@@ -76,44 +45,52 @@ func000000000000005a:                   # @func000000000000005a
 	slti	a0, a0, 0
 	xori	a0, a0, 1
 	ret
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	andi	a1, a1, 255
 	li	a2, 10
-	beq	a1, a2, .LBB8_2
+	beq	a1, a2, .LBB5_2
 	li	a1, 16
 	addw	a0, a0, a1
 	sltiu	a0, a0, 256
 	ret
-.LBB8_2:
+.LBB5_2:
 	li	a1, 8
 	addw	a0, a0, a1
 	sltiu	a0, a0, 256
 	ret
-func0000000000000114:                   # @func0000000000000114
+func00000000000000a6:                   # @func00000000000000a6
+	andi	a1, a1, 255
+	seqz	a1, a1
+	addi	a1, a1, -1
+	ori	a1, a1, 1
+	addw	a0, a0, a1
+	slti	a0, a0, 0
+	ret
+func0000000000000224:                   # @func0000000000000224
 	andi	a1, a1, 255
 	li	a2, 253
-	bltu	a1, a2, .LBB9_2
+	bltu	a1, a2, .LBB7_2
 	li	a1, -88
 	addw	a0, a0, a1
 	sltiu	a0, a0, 3
 	ret
-.LBB9_2:
+.LBB7_2:
 	li	a1, -120
 	addw	a0, a0, a1
 	sltiu	a0, a0, 3
 	ret
-func0000000000000204:                   # @func0000000000000204
+func0000000000000404:                   # @func0000000000000404
 	andi	a2, a1, 255
 	li	a3, 5
 	lui	a1, 256
-	bltu	a3, a2, .LBB10_2
+	bltu	a3, a2, .LBB8_2
 	lui	a1, 3
-.LBB10_2:                               # %entry
+.LBB8_2:                                # %entry
 	add	a0, a0, a1
 	srliw	a0, a0, 18
 	seqz	a0, a0
 	ret
-func0000000000000216:                   # @func0000000000000216
+func0000000000000426:                   # @func0000000000000426
 	andi	a1, a1, 255
 	sltiu	a1, a1, 127
 	addi	a1, a1, -1
@@ -123,25 +100,11 @@ func0000000000000216:                   # @func0000000000000216
 	addiw	a1, a1, 1487
 	slt	a0, a0, a1
 	ret
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	andi	a1, a1, 255
 	snez	a1, a1
 	slli	a1, a1, 1
 	negw	a0, a0
 	xor	a0, a0, a1
 	seqz	a0, a0
-	ret
-func0000000000000078:                   # @func0000000000000078
-	andi	a1, a1, 255
-	beqz	a1, .LBB13_2
-	li	a1, 4
-	addw	a0, a0, a1
-	sltiu	a0, a0, 9
-	xori	a0, a0, 1
-	ret
-.LBB13_2:
-	li	a1, 9
-	addw	a0, a0, a1
-	sltiu	a0, a0, 9
-	xori	a0, a0, 1
 	ret

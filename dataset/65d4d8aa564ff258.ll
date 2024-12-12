@@ -1,7 +1,8 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; icu/optimized/bocsu.ll
+; lvgl/optimized/lv_timer.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, i8 %1) #0 {

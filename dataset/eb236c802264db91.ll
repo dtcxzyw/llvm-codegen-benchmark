@@ -3,7 +3,7 @@
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; qemu/optimized/target_riscv_debug.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 60
   %4 = trunc nuw nsw i64 %3 to i32
@@ -16,7 +16,7 @@ entry:
 ; lightgbm/optimized/gbdt_model_text.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000008a(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 3
   %4 = trunc i64 %3 to i32
@@ -30,7 +30,7 @@ entry:
 ; llvm/optimized/BitcodeAnalyzer.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
@@ -43,7 +43,7 @@ entry:
 ; opencv/optimized/filter.dispatch.cpp.ll
 ; opencv/optimized/morph.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000004a(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32

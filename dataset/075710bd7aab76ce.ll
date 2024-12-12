@@ -1,17 +1,15 @@
 
-; 10 occurrences:
+; 8 occurrences:
 ; hyperscan/optimized/ng_haig.cpp.ll
 ; hyperscan/optimized/ng_mcclellan.cpp.ll
 ; hyperscan/optimized/rdfa_merge.cpp.ll
 ; hyperscan/optimized/rose_build_compile.cpp.ll
 ; libquic/optimized/ssl_cipher.c.ll
-; linux/optimized/match.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; minetest/optimized/mapgen.cpp.ll
 ; wireshark/optimized/packet-aim.c.ll
 ; wireshark/optimized/packet-pn-rt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i16 %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %0, %1
   %3 = icmp eq i16 %0, 126
@@ -27,7 +25,7 @@ entry:
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; darktable/optimized/PentaxDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000081(i16 %0, i16 %1) #0 {
 entry:
   %2 = icmp ult i16 %0, %1
   %3 = icmp eq i16 %0, -1
@@ -38,7 +36,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/bufpage.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000104(i16 %0, i16 %1) #0 {
 entry:
   %2 = icmp ugt i16 %0, %1
   %3 = icmp ult i16 %0, 24

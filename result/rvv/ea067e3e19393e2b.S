@@ -6,7 +6,7 @@ func0000000000000005:                   # @func0000000000000005
 	vmsleu.vv	v13, v8, v10
 	vmand.mm	v0, v13, v12
 	ret
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vand.vi	v12, v12, 1
 	vmsne.vi	v12, v12, 0
@@ -22,7 +22,7 @@ func000000000000000c:                   # @func000000000000000c
 	vmsne.vv	v13, v8, v10
 	vmand.mm	v0, v13, v12
 	ret
-func0000000000000027:                   # @func0000000000000027
+func0000000000000047:                   # @func0000000000000047
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vand.vi	v12, v12, 1
 	vmsne.vi	v12, v12, 0
@@ -30,7 +30,7 @@ func0000000000000027:                   # @func0000000000000027
 	vmsle.vv	v13, v8, v10
 	vmand.mm	v0, v13, v12
 	ret
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vand.vi	v12, v12, 1
 	vmsne.vi	v12, v12, 0
@@ -38,7 +38,7 @@ func0000000000000026:                   # @func0000000000000026
 	vmslt.vv	v13, v8, v10
 	vmand.mm	v0, v13, v12
 	ret
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vand.vi	v12, v12, 1
 	vmsne.vi	v12, v12, 0
@@ -62,7 +62,7 @@ func000000000000000a:                   # @func000000000000000a
 	vmslt.vv	v13, v10, v8
 	vmand.mm	v0, v13, v12
 	ret
-func0000000000000025:                   # @func0000000000000025
+func0000000000000045:                   # @func0000000000000045
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vand.vi	v12, v12, 1
 	vmsne.vi	v12, v12, 0

@@ -60,7 +60,6 @@ entry:
 ; llvm/optimized/ParsePragma.cpp.ll
 ; llvm/optimized/ParseTentative.cpp.ll
 ; llvm/optimized/PassBuilder.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/RegionPrinter.cpp.ll
 ; llvm/optimized/SemaAccess.cpp.ll
@@ -91,6 +90,7 @@ entry:
 ; wireshark/optimized/tvbuff.c.ll
 ; z3/optimized/sat_solver.cpp.ll
 ; z3/optimized/smt_internalizer.cpp.ll
+; zed-rs/optimized/8f7mact1a9un9bc0wu959qx4z.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
@@ -135,7 +135,6 @@ entry:
 ; php/optimized/ir_emit.ll
 ; php/optimized/zend_strtod.ll
 ; qemu/optimized/hw_riscv_virt.c.ll
-; qemu/optimized/target_riscv_fpu_helper.c.ll
 ; qoi/optimized/qoi.ll
 ; raylib/optimized/rtextures.c.ll
 ; redis/optimized/server.ll
@@ -144,6 +143,7 @@ entry:
 ; tev/optimized/QoiImageLoader.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; verilator/optimized/V3Premit.cpp.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
@@ -197,12 +197,22 @@ entry:
   ret i64 %4
 }
 
-; 6 occurrences:
+; 4 occurrences:
 ; linux/optimized/ff-memless.ll
-; llvm/optimized/RISCVDisassembler.cpp.ll
 ; spike/optimized/fsr.ll
 ; spike/optimized/fsri.ll
 ; spike/optimized/fsrw.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000031(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i32 %1, 31
+  %3 = select i1 %2, i32 %0, i32 %1
+  %4 = zext nneg i32 %3 to i64
+  ret i64 %4
+}
+
+; 2 occurrences:
+; llvm/optimized/RISCVDisassembler.cpp.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000011(i32 %0, i32 %1) #0 {
@@ -214,22 +224,11 @@ entry:
 }
 
 ; 1 occurrences:
-; wireshark/optimized/packet-ieee80211-wlancap.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000008(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ult i32 %1, 100000
-  %3 = select i1 %2, i32 %0, i32 %1
-  %4 = zext i32 %3 to i64
-  ret i64 %4
-}
-
-; 1 occurrences:
 ; zxing/optimized/AZEncoder.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000009(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000029(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 4
+  %2 = icmp samesign ult i32 %1, 4
   %3 = select i1 %2, i32 %0, i32 %1
   %4 = zext nneg i32 %3 to i64
   ret i64 %4

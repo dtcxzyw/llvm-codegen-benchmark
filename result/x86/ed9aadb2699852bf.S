@@ -1,14 +1,14 @@
-func00000000000001a6:                   # @func00000000000001a6
+func0000000000000546:                   # @func0000000000000546
 	leal	1024(%rsi), %eax
-	cmpl	%edi, %eax
-	setl	%cl
+	cmpl	%eax, %edi
+	setg	%cl
 	cmpl	%esi, %edi
 	setl	%al
 	orb	%cl, %al
 	retq
-func0000000000000111:                   # @func0000000000000111
+func0000000000000421:                   # @func0000000000000421
 	leal	-1(%rsi), %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%cl
 	cmpl	%esi, %edi
 	sete	%al

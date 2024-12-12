@@ -14,7 +14,7 @@ func0000000000000008:                   # @func0000000000000008
 	vadd.vi	v10, v10, -1
 	vmsltu.vv	v0, v8, v10
 	ret
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	li	a0, 5
 	bseti	a0, a0, 33
 	vsetivli	zero, 4, e64, m2, ta, ma

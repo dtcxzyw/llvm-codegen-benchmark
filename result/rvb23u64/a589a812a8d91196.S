@@ -13,8 +13,9 @@ func000000000000001f:                   # @func000000000000001f
 	or	a0, a0, a1
 	ret
 func000000000000003f:                   # @func000000000000003f
-	xori	a1, a1, 7
-	slliw	a1, a1, 24
-	slliw	a0, a0, 16
+	xori	a1, a1, 32
+	andi	a1, a1, 255
+	slliw	a1, a1, 12
+	slliw	a0, a0, 18
 	or	a0, a0, a1
 	ret

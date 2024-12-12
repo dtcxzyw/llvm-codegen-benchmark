@@ -6,12 +6,12 @@
 ; mold/optimized/output-chunks.cc.RV32LE.cc.ll
 ; mold/optimized/output-chunks.cc.SH4.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func00000000000000e1(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = shl nuw nsw i32 %3, 8
   %5 = or disjoint i32 %4, %1
-  %6 = icmp eq i32 %5, %0
+  %6 = icmp eq i32 %0, %5
   ret i1 %6
 }
 
@@ -22,31 +22,30 @@ entry:
 ; mold/optimized/output-chunks.cc.RV32LE.cc.ll
 ; mold/optimized/output-chunks.cc.SH4.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func00000000000000f4(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = shl nuw nsw i32 %3, 8
   %5 = or disjoint i32 %4, %1
-  %6 = icmp ugt i32 %5, %0
+  %6 = icmp samesign ult i32 %0, %5
   ret i1 %6
 }
 
-; 4 occurrences:
-; postgres/optimized/itemptr.ll
+; 3 occurrences:
 ; postgres/optimized/nodeTidscan.ll
 ; postgres/optimized/vacuum.ll
 ; qemu/optimized/block_vvfat.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func00000000000000a8(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = shl nuw i32 %3, 16
   %5 = or disjoint i32 %4, %1
-  %6 = icmp ult i32 %5, %0
+  %6 = icmp ugt i32 %0, %5
   ret i1 %6
 }
 
-; 23 occurrences:
+; 21 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
@@ -59,10 +58,8 @@ entry:
 ; linux/optimized/udp.ll
 ; luajit/optimized/lj_opt_fold.ll
 ; luajit/optimized/lj_opt_fold_dyn.ll
-; postgres/optimized/brin_revmap.ll
 ; postgres/optimized/gistvacuum.ll
 ; postgres/optimized/heapam.ll
-; postgres/optimized/itemptr.ll
 ; postgres/optimized/nbtdedup.ll
 ; postgres/optimized/nbtsplitloc.ll
 ; postgres/optimized/spgvacuum.ll
@@ -71,41 +68,40 @@ entry:
 ; postgres/optimized/vacuumlazy.ll
 ; qemu/optimized/block_vvfat.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = shl nuw i32 %3, 16
   %5 = or disjoint i32 %4, %1
-  %6 = icmp eq i32 %5, %0
+  %6 = icmp eq i32 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; postgres/optimized/nodeTidscan.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func00000000000000ac(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = shl nuw i32 %3, 16
   %5 = or disjoint i32 %4, %1
-  %6 = icmp ne i32 %5, %0
+  %6 = icmp ne i32 %0, %5
   ret i1 %6
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; hyperscan/optimized/rose_build_lookaround.cpp.ll
 ; postgres/optimized/ginget.ll
-; postgres/optimized/itemptr.ll
 ; postgres/optimized/nodeTidscan.ll
 ; postgres/optimized/tuplesortvariants.ll
 ; postgres/optimized/vacuum.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func00000000000000a4(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = shl nuw i32 %3, 16
   %5 = or disjoint i32 %4, %1
-  %6 = icmp ugt i32 %5, %0
+  %6 = icmp ult i32 %0, %5
   ret i1 %6
 }
 

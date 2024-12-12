@@ -11,7 +11,7 @@ func0000000000000010:                   # @func0000000000000010
 	vrsub.vi	v12, v12, 8
 	vzext.vf4	v14, v10
 	vsll.vv	v10, v14, v12
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret
 func0000000000000034:                   # @func0000000000000034
 	li	a0, 24
@@ -50,7 +50,7 @@ func0000000000000016:                   # @func0000000000000016
 	vrsub.vi	v12, v12, 0
 	vzext.vf4	v14, v10
 	vsll.vv	v10, v14, v12
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret
 func0000000000000014:                   # @func0000000000000014
 	li	a0, 24

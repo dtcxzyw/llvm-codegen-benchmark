@@ -6,7 +6,7 @@
 ; minetest/optimized/guiEditBoxWithScrollbar.cpp.ll
 ; wireshark/optimized/packet-mac-lte.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i8 %1, i8 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = icmp eq i8 %1, 0

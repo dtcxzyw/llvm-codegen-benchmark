@@ -130,11 +130,10 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
-; arrow/optimized/float16.cc.ll
+; 1 occurrences:
 ; llama.cpp/optimized/ggml-quants.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, float %1) #0 {
+define i32 @func0000000000000014(i32 %0, float %1) #0 {
 entry:
   %2 = bitcast float %1 to i32
   %3 = and i32 %2, 4194304

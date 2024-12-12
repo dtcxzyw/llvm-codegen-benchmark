@@ -44,6 +44,13 @@ func00000000000000c2:                   # @func00000000000000c2
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+func000000000000004a:                   # @func000000000000004a
+	vxorps	%xmm2, %xmm2, %xmm2
+	vmaxps	%zmm2, %zmm1, %zmm1
+	vcmpleps	%zmm0, %zmm1, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
 func000000000000004c:                   # @func000000000000004c
 	vxorps	%xmm2, %xmm2, %xmm2
 	vmaxps	%zmm2, %zmm1, %zmm1

@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 20 occurrences:
 ; abc/optimized/giaGen.c.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; gromacs/optimized/bwlzh.c.ll
@@ -9,11 +9,7 @@
 ; nori/optimized/warptest.cpp.ll
 ; opencv/optimized/aruco_dictionary.cpp.ll
 ; opencv/optimized/omnidir.cpp.ll
-; openssl/optimized/libcrypto-lib-deterministic_nonce.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
 ; openssl/optimized/libcrypto-lib-rsaz_exp_x2.ll
-; openssl/optimized/libcrypto-shlib-deterministic_nonce.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; openssl/optimized/libcrypto-shlib-rsaz_exp_x2.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; proj/optimized/isea.cpp.ll
@@ -27,26 +23,26 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000009(i32 %0) #0 {
 entry:
-  %1 = add nsw i32 %0, 7
-  %2 = sdiv i32 %1, 8
-  %3 = mul nsw i32 %2, 3
+  %.fr1 = freeze i32 %0
+  %1 = add i32 %.fr1, 53
+  %2 = srem i32 %1, 52
+  %3 = sub nsw i32 %1, %2
   ret i32 %3
 }
 
-; 7 occurrences:
+; 5 occurrences:
 ; cpython/optimized/_datetimemodule.ll
 ; fmt/optimized/format.cc.ll
 ; libquic/optimized/time_support.c.ll
 ; opencv/optimized/omnidir.cpp.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; protobuf/optimized/unparser.cc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0) #0 {
 entry:
-  %1 = add i32 %0, 4900
-  %2 = sdiv i32 %1, 100
-  %3 = mul nsw i32 %2, 3
+  %.fr1 = freeze i32 %0
+  %1 = add i32 %.fr1, 292
+  %2 = srem i32 %1, 27
+  %3 = sub nsw i32 %1, %2
   ret i32 %3
 }
 

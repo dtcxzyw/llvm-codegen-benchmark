@@ -1,5 +1,7 @@
 
-; 11 occurrences:
+; 13 occurrences:
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
@@ -37,6 +39,7 @@ entry:
 ; folly/optimized/String.cpp.ll
 ; freetype/optimized/winfnt.c.ll
 ; graphviz/optimized/excontext.c.ll
+; gromacs/optimized/convert_tpr.cpp.ll
 ; hyperscan/optimized/mcclellan.c.ll
 ; hyperscan/optimized/mcsheng.c.ll
 ; libquic/optimized/quic_sent_entropy_manager.cc.ll
@@ -69,7 +72,6 @@ entry:
 ; spike/optimized/socketif.ll
 ; velox/optimized/URLFunctions.cpp.ll
 ; wireshark/optimized/follow_stream_dialog.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/ddnf.cpp.ll
 ; z3/optimized/mam.cpp.ll
 ; z3/optimized/opt_cores.cpp.ll

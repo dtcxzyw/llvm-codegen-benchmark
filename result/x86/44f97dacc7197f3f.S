@@ -8,6 +8,17 @@ func0000000000000007:                   # @func0000000000000007
 	cmovnel	%ecx, %eax
 	orl	$8192, %eax                     # imm = 0x2000
 	retq
+func0000000000000063:                   # @func0000000000000063
+	movabsq	$-4294967296, %rax              # imm = 0xFFFFFFFF00000000
+	xorl	%ecx, %ecx
+	cmpq	%rax, %rsi
+	setb	%cl
+	shll	$5, %ecx
+	leal	16(%rcx), %eax
+	testb	$1, %dil
+	cmovnel	%ecx, %eax
+	orl	$8, %eax
+	retq
 func0000000000000023:                   # @func0000000000000023
 	movabsq	$-4294967296, %rax              # imm = 0xFFFFFFFF00000000
 	xorl	%ecx, %ecx
@@ -28,4 +39,14 @@ func0000000000000013:                   # @func0000000000000013
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	orl	$8, %eax
+	retq
+func0000000000000053:                   # @func0000000000000053
+	xorl	%ecx, %ecx
+	cmpq	$65536, %rsi                    # imm = 0x10000
+	setae	%cl
+	shll	$4, %ecx
+	leal	8(%rcx), %eax
+	testb	$1, %dil
+	cmovnel	%ecx, %eax
+	orl	$4, %eax
 	retq

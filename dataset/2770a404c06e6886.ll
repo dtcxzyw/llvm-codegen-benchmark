@@ -5,7 +5,7 @@
 define i1 @func000000000000000a(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = sext i1 %1 to i32
   %6 = add i32 %4, %5
   %7 = icmp sgt i32 %6, 0
@@ -16,10 +16,10 @@ entry:
 ; openusd/optimized/rotation.cpp.ll
 ; php/optimized/ir_check.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i1 %1, i1 %2) #0 {
+define i1 @func00000000000000a1(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = sext i1 %1 to i32
   %6 = add nsw i32 %4, %5
   %7 = icmp eq i32 %6, 1
@@ -32,7 +32,7 @@ entry:
 define i1 @func000000000000000c(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = sext i1 %1 to i32
   %6 = add i32 %4, %5
   %7 = icmp ne i32 %6, 4
@@ -43,26 +43,13 @@ entry:
 ; icu/optimized/ubidiln.ll
 ; llvm/optimized/BugReporterVisitors.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i1 %1, i1 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = sext i1 %1 to i32
   %6 = add nsw i32 %4, %5
   %7 = icmp sgt i32 %6, 0
-  ret i1 %7
-}
-
-; 1 occurrences:
-; openusd/optimized/rotation.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i1 %1, i1 %2) #0 {
-entry:
-  %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
-  %5 = sext i1 %1 to i32
-  %6 = add nsw i32 %4, %5
-  %7 = icmp ult i32 %6, 3
   ret i1 %7
 }
 

@@ -11,7 +11,7 @@ func0000000000000007:                   # @func0000000000000007
 	li	a0, 256
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmerge.vxm	v10, v10, a0, v0
-	vmul.vv	v8, v10, v8
+	vmul.vv	v8, v8, v10
 	ret
 func0000000000000013:                   # @func0000000000000013
 	li	a0, 75

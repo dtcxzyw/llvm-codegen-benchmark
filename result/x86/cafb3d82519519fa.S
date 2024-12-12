@@ -15,8 +15,8 @@ func0000000000000008:                   # @func0000000000000008
 	setne	%al
 	retq
 func0000000000000004:                   # @func0000000000000004
-	cmpw	$22, %di
-	setb	%al
+	testl	$65280, %edi                    # imm = 0xFF00
+	sete	%al
 	retq
 func000000000000000c:                   # @func000000000000000c
 	movzwl	%di, %eax

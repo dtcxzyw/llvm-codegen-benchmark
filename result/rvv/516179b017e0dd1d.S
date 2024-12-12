@@ -22,5 +22,5 @@ func0000000000000006:                   # @func0000000000000006
 func0000000000000004:                   # @func0000000000000004
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vmsleu.vi	v0, v8, 1
-	vmerge.vim	v8, v8, 0, v0
+	vmerge.vim	v8, v8, 3, v0
 	ret

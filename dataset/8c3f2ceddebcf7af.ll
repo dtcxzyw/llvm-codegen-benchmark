@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 25 occurrences:
 ; cmake/optimized/hmac.c.ll
 ; curl/optimized/libcurl_la-hmac.ll
 ; freetype/optimized/ftbitmap.c.ll
@@ -10,7 +10,6 @@
 ; llvm/optimized/DWARFAcceleratorTable.cpp.ll
 ; llvm/optimized/DeclTemplate.cpp.ll
 ; llvm/optimized/ExprCXX.cpp.ll
-; llvm/optimized/SemaLambda.cpp.ll
 ; mitsuba3/optimized/rapass.cpp.ll
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll
 ; mold/optimized/output-chunks.cc.ARM64.cc.ll
@@ -22,7 +21,6 @@
 ; mold/optimized/output-chunks.cc.S390X.cc.ll
 ; mold/optimized/output-chunks.cc.SPARC64.cc.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
-; opencv/optimized/tflite_importer.cpp.ll
 ; openjdk/optimized/vectorization.ll
 ; php/optimized/ir_emit.ll
 ; php/optimized/zend_execute.ll
@@ -51,9 +49,8 @@ entry:
   ret i64 %3
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; darktable/optimized/ArwDecoder.cpp.ll
-; freetype/optimized/sfnt.c.ll
 ; freetype/optimized/truetype.c.ll
 ; jq/optimized/decNumber.ll
 ; linux/optimized/nl80211.ll
@@ -136,10 +133,9 @@ entry:
   ret i64 %3
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; hermes/optimized/Runtime.cpp.ll
 ; openexr/optimized/ImfDwaCompressor.cpp.ll
-; zxing/optimized/AZDetector.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000011(i32 %0) #0 {
 entry:

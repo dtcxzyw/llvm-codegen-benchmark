@@ -2,10 +2,10 @@
 ; 1 occurrences:
 ; rocksdb/optimized/clock_cache.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000141(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 8
-  %4 = add nuw i64 %3, %1
+  %4 = add nuw i64 %1, %3
   %5 = add nuw i64 %0, 1
   %6 = icmp eq i64 %5, %4
   ret i1 %6
@@ -26,10 +26,10 @@ entry:
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 8
-  %4 = add nuw i64 %3, %1
+  %4 = add nuw i64 %1, %3
   %5 = add i64 %0, 1
   %6 = icmp ult i64 %5, %4
   ret i1 %6
@@ -42,7 +42,7 @@ entry:
 define i1 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 4
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add i64 %0, 1
   %6 = icmp ugt i64 %5, %4
   ret i1 %6
@@ -55,12 +55,12 @@ entry:
 ; openjdk/optimized/zGeneration.ll
 ; openjdk/optimized/zPageTable.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001f4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 21
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = add nuw nsw i64 %0, 1
-  %6 = icmp ult i64 %5, %4
+  %6 = icmp samesign ult i64 %5, %4
   ret i1 %6
 }
 
@@ -68,7 +68,7 @@ entry:
 ; cmake/optimized/base64.c.ll
 ; curl/optimized/libcurl_la-base64.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000161(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002c1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 2
   %4 = add nsw i64 %3, %1
@@ -86,7 +86,7 @@ entry:
 ; yalantinglibs/optimized/client_pools.cpp.ll
 ; zstd/optimized/zstd_ldm.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001e1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 5
   %4 = add nuw nsw i64 %3, %1
@@ -98,12 +98,12 @@ entry:
 ; 1 occurrences:
 ; ring-rs/optimized/36n9a21mmta9vg69.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000198(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 3
   %4 = add nuw nsw i64 %3, %1
   %5 = add i64 %0, 1
-  %6 = icmp ugt i64 %5, %4
+  %6 = icmp samesign ugt i64 %5, %4
   ret i1 %6
 }
 
@@ -111,7 +111,7 @@ entry:
 ; cpython/optimized/longobject.ll
 ; darktable/optimized/introspection_hazeremoval.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = add i64 %3, %1
@@ -123,24 +123,12 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/VectorBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000121(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000241(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 32
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add nuw i64 %0, 1
   %6 = icmp eq i64 %5, %4
-  ret i1 %6
-}
-
-; 1 occurrences:
-; linux/optimized/ttm_bo_vm.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = lshr i64 %2, 12
-  %4 = add i64 %3, %1
-  %5 = add nuw i64 %0, 1
-  %6 = icmp ult i64 %5, %4
   ret i1 %6
 }
 

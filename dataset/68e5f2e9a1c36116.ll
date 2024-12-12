@@ -1,5 +1,7 @@
 
-; 20 occurrences:
+; 22 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; draco/optimized/ply_reader.cc.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
@@ -21,7 +23,7 @@
 ; yosys/optimized/share.ll
 ; yosys/optimized/subcircuit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000136(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000266(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 56
@@ -31,8 +33,10 @@ entry:
   ret i1 %7
 }
 
-; 23 occurrences:
+; 25 occurrences:
 ; assimp/optimized/IRRLoader.cpp.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
@@ -56,7 +60,7 @@ entry:
 ; yosys/optimized/memory_share.ll
 ; yosys/optimized/verilog_backend.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000226(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 24
@@ -72,7 +76,7 @@ entry:
 ; minetest/optimized/CMeshCache.cpp.ll
 ; minetest/optimized/CSkinnedMesh.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000204(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 72
@@ -89,7 +93,7 @@ entry:
 ; draco/optimized/ply_encoder.cc.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000124(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000244(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 36
@@ -103,7 +107,7 @@ entry:
 ; minetest/optimized/l_mainmenu.cpp.ll
 ; yosys/optimized/memory_bram.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000106(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000206(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 96
@@ -124,7 +128,7 @@ entry:
 ; llvm/optimized/SubtargetEmitter.cpp.ll
 ; yosys/optimized/recover_names.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000121(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000241(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 12
@@ -139,7 +143,7 @@ entry:
 ; yosys/optimized/pmux2shiftx.ll
 ; yosys/optimized/subcircuit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000221(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 48
@@ -166,7 +170,7 @@ entry:
 ; yosys/optimized/mem.ll
 ; yosys/optimized/memory_bram.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000131(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000261(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 376
@@ -181,7 +185,7 @@ entry:
 ; llvm/optimized/CodeGenSchedule.cpp.ll
 ; llvm/optimized/DAGISelMatcherGen.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000201(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 248
@@ -194,7 +198,7 @@ entry:
 ; 1 occurrences:
 ; openmpi/optimized/io_ompio_file_open.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv i64 %3, 33554432
@@ -208,7 +212,7 @@ entry:
 ; linux/optimized/svc_xprt.ll
 ; meshlab/optimized/trackmode.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000208(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 192
@@ -221,7 +225,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/tracker_model.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000022a(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 24

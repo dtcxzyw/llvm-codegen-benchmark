@@ -1,4 +1,4 @@
-func0000000000000091:                   # @func0000000000000091
+func0000000000000121:                   # @func0000000000000121
 	leal	7(%rsi), %eax
 	addl	$14, %esi
 	testl	%eax, %eax
@@ -7,7 +7,7 @@ func0000000000000091:                   # @func0000000000000091
 	addl	%edi, %esi
 	sete	%al
 	retq
-func000000000000009a:                   # @func000000000000009a
+func000000000000012a:                   # @func000000000000012a
 	addl	$8, %esi
 	movslq	%esi, %rax
 	imulq	$954437177, %rax, %rax          # imm = 0x38E38E39
@@ -18,7 +18,7 @@ func000000000000009a:                   # @func000000000000009a
 	addl	%edi, %eax
 	setg	%al
 	retq
-func0000000000000096:                   # @func0000000000000096
+func0000000000000126:                   # @func0000000000000126
 	addl	$8, %esi
 	movslq	%esi, %rax
 	imulq	$954437177, %rax, %rax          # imm = 0x38E38E39
@@ -41,7 +41,7 @@ func0000000000000006:                   # @func0000000000000006
 	cmpl	$2472633, %eax                  # imm = 0x25BAB9
 	setl	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	leal	-8192(%rsi), %eax
 	addl	$-7937, %esi                    # imm = 0xE0FF
 	testl	%eax, %eax
@@ -51,7 +51,7 @@ func0000000000000016:                   # @func0000000000000016
 	cmpl	$80, %esi
 	setl	%al
 	retq
-func000000000000008a:                   # @func000000000000008a
+func000000000000010a:                   # @func000000000000010a
 	leal	7(%rsi), %eax
 	addl	$14, %esi
 	testl	%eax, %eax

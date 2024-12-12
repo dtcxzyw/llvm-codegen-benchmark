@@ -15,6 +15,9 @@ func0000000000000004:                   # @func0000000000000004
 	movabsq	$-971890876800001, %rax         # imm = 0xFFFC8C12058723FF
 	addq	%rdi, %rax
 	retq
+func0000000000000002:                   # @func0000000000000002
+	leaq	1(%rdi), %rax
+	retq
 func000000000000000a:                   # @func000000000000000a
 	leaq	1(%rdi), %rax
 	retq

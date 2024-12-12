@@ -26,9 +26,11 @@ func0000000000000000:                   # @func0000000000000000
 	or	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001
-	andi	a2, a2, 7
-	srliw	a1, a1, 9
+	srli	a2, a2, 52
+	slli	a2, a2, 52
 	or	a0, a0, a2
-	slli	a1, a1, 9
+	lui	a2, 4095
+	slli	a2, a2, 28
+	and	a1, a1, a2
 	or	a0, a0, a1
 	ret

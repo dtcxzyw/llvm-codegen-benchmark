@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 11 occurrences:
 ; assimp/optimized/ASELoader.cpp.ll
 ; assimp/optimized/FBXConverter.cpp.ll
 ; assimp/optimized/OpenGEXImporter.cpp.ll
@@ -9,6 +9,8 @@
 ; gromacs/optimized/setup.cpp.ll
 ; gromacs/optimized/threaded_force_buffer.cpp.ll
 ; hermes/optimized/ESTreeIRGen-func.cpp.ll
+; quantlib/optimized/hestonslvfdmmodel.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:

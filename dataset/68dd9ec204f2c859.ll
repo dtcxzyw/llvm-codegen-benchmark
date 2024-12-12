@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; coreutils-rs/optimized/11lwsmxswp4jsl8v.ll
 ; coreutils-rs/optimized/whotp6m83kkoazv.ll
 ; cvc5/optimized/ceg_bv_instantiator.cpp.ll
@@ -14,11 +14,12 @@
 ; gromacs/optimized/genion.cpp.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; rocksdb/optimized/compaction_picker.cc.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000204(i64 %0, i128 %1, i64 %2) #0 {
+define i1 @func0000000000000404(i64 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = trunc i128 %1 to i64
-  %4 = mul i64 %3, %2
+  %4 = mul i64 %2, %3
   %5 = add i64 %0, -1
   %6 = icmp ult i64 %5, %4
   ret i1 %6
@@ -37,10 +38,10 @@ entry:
 ; grpc/optimized/round_robin.cc.ll
 ; grpc/optimized/weighted_target.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000208(i64 %0, i128 %1, i64 %2) #0 {
+define i1 @func0000000000000408(i64 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = trunc i128 %1 to i64
-  %4 = mul i64 %3, %2
+  %4 = mul i64 %2, %3
   %5 = add i64 %0, 1
   %6 = icmp ugt i64 %5, %4
   ret i1 %6
@@ -51,10 +52,10 @@ entry:
 ; openspiel/optimized/is_mcts.cc.ll
 ; openspiel/optimized/mcts.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000218(i64 %0, i128 %1, i64 %2) #0 {
+define i1 @func0000000000000428(i64 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = trunc i128 %1 to i64
-  %4 = mul i64 %3, %2
+  %4 = mul i64 %2, %3
   %5 = add nsw i64 %0, 1
   %6 = icmp ugt i64 %5, %4
   ret i1 %6

@@ -9,7 +9,7 @@ func0000000000000004:                   # @func0000000000000004
 	vpmovb2m	%xmm1, %k1
 	vptestmb	%xmm2, %xmm2, %k2
 	vmovdqu8	.LCPI0_0(%rip), %xmm1 {%k2} {z} # xmm1 {%k2} {z} = [6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6]
-	vpor	%xmm0, %xmm1, %xmm1
+	vpor	%xmm1, %xmm0, %xmm1
 	vpord	.LCPI0_2(%rip){1to4}, %xmm1, %xmm0
 	vmovdqu8	%xmm1, %xmm0 {%k1}
 	retq
@@ -43,7 +43,7 @@ func0000000000000012:                   # @func0000000000000012
 	vpmovb2m	%xmm1, %k1
 	vpcmpnltub	.LCPI2_0(%rip), %xmm2, %k2
 	vmovdqu8	.LCPI2_1(%rip), %xmm1 {%k2} {z} # xmm1 {%k2} {z} = [32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32]
-	vpor	%xmm0, %xmm1, %xmm1
+	vpor	%xmm1, %xmm0, %xmm1
 	vpord	.LCPI2_3(%rip){1to4}, %xmm1, %xmm0
 	vmovdqu8	%xmm1, %xmm0 {%k1}
 	retq
@@ -60,7 +60,7 @@ func0000000000000010:                   # @func0000000000000010
 	vpmovb2m	%xmm1, %k1
 	vpcmpnltub	.LCPI3_0(%rip), %xmm2, %k2
 	vmovdqu8	.LCPI3_1(%rip), %xmm1 {%k2} {z} # xmm1 {%k2} {z} = [64,64,64,64,64,64,64,64,64,64,64,64,64,64,64,64]
-	vpor	%xmm0, %xmm1, %xmm1
+	vpor	%xmm1, %xmm0, %xmm1
 	vpord	.LCPI3_3(%rip){1to4}, %xmm1, %xmm0
 	vmovdqu8	%xmm1, %xmm0 {%k1}
 	retq

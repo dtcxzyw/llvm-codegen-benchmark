@@ -17,9 +17,8 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 
-; 5 occurrences:
+; 4 occurrences:
 ; gromacs/optimized/domdec_setup.cpp.ll
-; gromacs/optimized/freeenergy.cpp.ll
 ; gromacs/optimized/genion.cpp.ll
 ; gromacs/optimized/tune_pme.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll

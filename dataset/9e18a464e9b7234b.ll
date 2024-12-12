@@ -1,5 +1,5 @@
 
-; 30 occurrences:
+; 31 occurrences:
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/unzip.c.ll
 ; cmake/optimized/huf_decompress.c.ll
@@ -28,16 +28,17 @@
 ; llvm/optimized/X86MCTargetDesc.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
+; openjdk/optimized/zip_util.ll
 ; openusd/optimized/zipFile.cpp.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000004a(i16 %0, ptr %1, i16 %2) #0 {
+define ptr @func000000000000006f(i16 %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 46
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 46
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   %6 = zext i16 %0 to i64
-  %7 = getelementptr nusw i8, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -52,13 +53,13 @@ entry:
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000da(i16 %0, ptr %1, i16 %2) #0 {
+define ptr @func00000000000000ff(i16 %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 40
-  %5 = getelementptr nusw ptr, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 40
+  %5 = getelementptr nusw nuw ptr, ptr %4, i64 %3
   %6 = zext nneg i16 %0 to i64
-  %7 = getelementptr nusw ptr, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw ptr, ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -87,10 +88,10 @@ entry:
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000040(i16 %0, ptr %1, i16 %2) #0 {
+define ptr @func0000000000000060(i16 %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 6
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 6
   %5 = getelementptr i8, ptr %4, i64 %3
   %6 = zext i16 %0 to i64
   %7 = getelementptr i8, ptr %5, i64 %6

@@ -131,7 +131,7 @@ entry:
   ret i32 %5
 }
 
-; 64 occurrences:
+; 62 occurrences:
 ; abc/optimized/cecSeq.c.ll
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/kitDsd.c.ll
@@ -147,7 +147,6 @@ entry:
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; meshlab/optimized/ml_rendering_actions.cpp.ll
 ; meshlab/optimized/rich_parameter_list.cpp.ll
@@ -156,7 +155,6 @@ entry:
 ; minetest/optimized/CB3DMeshFileLoader.cpp.ll
 ; minetest/optimized/CGUISkin.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/game.cpp.ll
 ; minetest/optimized/guiButton.cpp.ll
 ; minetest/optimized/guiSkin.cpp.ll
@@ -188,7 +186,6 @@ entry:
 ; stb/optimized/stb_vorbis.c.ll
 ; wireshark/optimized/addr_resolv.c.ll
 ; wireshark/optimized/busmaster.c.ll
-; wireshark/optimized/file-rtpdump.c.ll
 ; wireshark/optimized/packet-fpp.c.ll
 ; wireshark/optimized/packet-ftp.c.ll
 ; wireshark/optimized/packet-nbap.c.ll
@@ -196,6 +193,7 @@ entry:
 ; wireshark/optimized/packet-stt.c.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; wireshark/optimized/text_import.c.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
@@ -206,10 +204,12 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; minetest/optimized/map.cpp.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
+; wasmtime-rs/optimized/4z02b278nscq7j1a.ll
+; zed-rs/optimized/73pi95mikt3cntupcr2d2nefv.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000015(i32 %0, i32 %1) #0 {
 entry:
@@ -315,7 +315,17 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 12 occurrences:
+; hermes/optimized/AST2JS.cpp.ll
+; hermes/optimized/BytecodeGenerator.cpp.ll
+; hermes/optimized/ConsecutiveStringStorage.cpp.ll
+; hermes/optimized/HBC.cpp.ll
+; hermes/optimized/JSLexer.cpp.ll
+; hermes/optimized/JSONEmitter.cpp.ll
+; hermes/optimized/RegexSerialization.cpp.ll
+; hermes/optimized/Runtime.cpp.ll
+; hermes/optimized/SourceErrorManager.cpp.ll
+; hermes/optimized/UTF8.cpp.ll
 ; sentencepiece/optimized/util.cc.ll
 ; velox/optimized/Utf8Utils.cpp.ll
 ; Function Attrs: nounwind

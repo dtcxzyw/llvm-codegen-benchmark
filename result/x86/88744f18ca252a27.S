@@ -10,10 +10,6 @@ func0000000000000001:                   # @func0000000000000001
 	addl	%edx, %esi
 	leal	4(%rdi,%rsi), %eax
 	retq
-func00000000000000b5:                   # @func00000000000000b5
-	addl	%edx, %esi
-	leal	2(%rdi,%rsi), %eax
-	retq
 func0000000000000055:                   # @func0000000000000055
 	addl	%edx, %esi
 	leal	-2113536(%rdi,%rsi), %eax

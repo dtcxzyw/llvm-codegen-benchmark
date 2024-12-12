@@ -1,12 +1,11 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; darktable/optimized/introspection_colorreconstruction.c.ll
 ; mitsuba3/optimized/aov.cpp.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/merge.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/tensor.cpp.ll
@@ -18,7 +17,7 @@ define i1 @func0000000000000002(float %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
   %3 = uitofp i64 %2 to float
-  %4 = fcmp ogt float %3, %0
+  %4 = fcmp olt float %0, %3
   ret i1 %4
 }
 
@@ -30,7 +29,7 @@ define i1 @func0000000000000004(float %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
   %3 = uitofp i64 %2 to float
-  %4 = fcmp olt float %3, %0
+  %4 = fcmp ogt float %0, %3
   ret i1 %4
 }
 

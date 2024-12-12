@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/compile.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i32 %0, i32 %1) #0 {
+define i1 @func000000000000014a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 %0, %1
   %3 = icmp sgt i32 %2, 0
@@ -16,7 +16,7 @@ entry:
 ; linux/optimized/hooks.ll
 ; wireshark/optimized/netscaler.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000104(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 %1, %0
   %3 = icmp ugt i32 %2, 1048576
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000148(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 %0, %1
   %3 = icmp sgt i32 %2, 0
@@ -41,7 +41,7 @@ entry:
 ; linux/optimized/calipso.ll
 ; linux/optimized/cipso_ipv4.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000108(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 %0, %1
   %3 = icmp ugt i32 %2, 10

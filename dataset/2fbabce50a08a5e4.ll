@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; minetest/optimized/connection.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000128(i16 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000248(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp uge i16 %0, %2
   %4 = icmp ult i16 %0, %1
@@ -10,7 +10,8 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; arrow/optimized/int_util.cc.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-static.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -18,7 +19,7 @@ entry:
 ; openjdk/optimized/hb-ot-font.ll
 ; wireshark/optimized/packet-kafka.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014c(i16 %0, i16 %1, i16 %2) #0 {
+define i1 @func000000000000028c(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp sgt i16 %0, %2
   %4 = icmp slt i16 %0, %1
@@ -29,7 +30,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_expression_executor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014e(i16 %0, i16 %1, i16 %2) #0 {
+define i1 @func000000000000028e(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp sgt i16 %0, %2
   %4 = icmp sle i16 %0, %1
@@ -40,7 +41,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_expression_executor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010a(i16 %0, i16 %1, i16 %2) #0 {
+define i1 @func000000000000020a(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp ugt i16 %0, %2
   %4 = icmp ule i16 %0, %1
@@ -58,7 +59,7 @@ entry:
 ; llvm/optimized/UnwrappedLineParser.cpp.ll
 ; llvm/optimized/X86AsmParser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i16 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000042(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %0, %2
   %4 = icmp eq i16 %0, %1
@@ -67,9 +68,9 @@ entry:
 }
 
 ; 1 occurrences:
-; freetype/optimized/pcf.c.ll
+; arrow/optimized/int_util.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i16 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000208(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp ugt i16 %0, %2
   %4 = icmp ult i16 %0, %1

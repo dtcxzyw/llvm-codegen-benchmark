@@ -1,16 +1,16 @@
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	bltu	a0, a2, .LBB0_2
 	mv	a0, a1
 .LBB0_2:                                # %entry
 	seqz	a0, a0
 	ret
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	blt	a0, a2, .LBB1_2
 	mv	a0, a1
 .LBB1_2:                                # %entry
 	seqz	a0, a0
 	ret
-func000000000000006a:                   # @func000000000000006a
+func00000000000000ca:                   # @func00000000000000ca
 	blt	a0, a2, .LBB2_2
 	mv	a0, a1
 .LBB2_2:                                # %entry

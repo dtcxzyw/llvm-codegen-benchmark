@@ -11,7 +11,7 @@
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000011(i8 %0, i32 %1, i32 %2) #0 {
+define i8 @func0000000000000021(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i8 28, i8 29

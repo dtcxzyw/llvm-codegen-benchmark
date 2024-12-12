@@ -1,8 +1,9 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
+; lvgl/optimized/lv_calendar.ll
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind

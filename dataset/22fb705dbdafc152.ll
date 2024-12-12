@@ -79,6 +79,25 @@ entry:
   ret i1 %4
 }
 
+; 9 occurrences:
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; meshlab/optimized/edit_paint.cpp.ll
+; meshlab/optimized/edit_sample.cpp.ll
+; meshlab/optimized/edit_select.cpp.ll
+; meshlab/optimized/editpickpoints.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/meshselect.cpp.ll
+; pbrt-v4/optimized/shapes.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000ac(float %0, float %1) #0 {
+entry:
+  %2 = fcmp ole float %0, %1
+  %3 = fcmp oge float %0, 0.000000e+00
+  %4 = and i1 %3, %2
+  ret i1 %4
+}
+
 ; 1 occurrences:
 ; oiio/optimized/imagebufalgo.cpp.ll
 ; Function Attrs: nounwind
@@ -113,32 +132,14 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; meshlab/optimized/meshselect.cpp.ll
-; pbrt-v4/optimized/lights.cpp.ll
 ; pbrt-v4/optimized/primitive.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000035(float %0, float %1) #0 {
 entry:
   %2 = fcmp ult float %0, %1
   %3 = fcmp ugt float %0, 0.000000e+00
-  %4 = and i1 %3, %2
-  ret i1 %4
-}
-
-; 7 occurrences:
-; meshlab/optimized/edit_paint.cpp.ll
-; meshlab/optimized/edit_sample.cpp.ll
-; meshlab/optimized/edit_select.cpp.ll
-; meshlab/optimized/editpickpoints.cpp.ll
-; meshlab/optimized/meshfilter.cpp.ll
-; meshlab/optimized/meshselect.cpp.ll
-; pbrt-v4/optimized/shapes.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000ac(float %0, float %1) #0 {
-entry:
-  %2 = fcmp ole float %0, %1
-  %3 = fcmp oge float %0, 0.000000e+00
   %4 = and i1 %3, %2
   ret i1 %4
 }
@@ -176,9 +177,8 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; qdrant-rs/optimized/4iacc535829shmz2.ll
-; qdrant-rs/optimized/i0sjm53t1vzpf3k.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000003e(float %0, float %1) #0 {
 entry:

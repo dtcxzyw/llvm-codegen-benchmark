@@ -1,5 +1,5 @@
 
-; 85 occurrences:
+; 103 occurrences:
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
 ; actix-rs/optimized/3k33h0ss7dy62evb.ll
 ; actix-rs/optimized/5f3qk1oomglisntr.ll
@@ -24,6 +24,7 @@
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; delta-rs/optimized/5c4w4ukc3cdb4cwa.ll
 ; diesel-rs/optimized/2zzzvc1em6im74h3.ll
+; egg-rs/optimized/2fp1d0strj8iokyf.ll
 ; image-rs/optimized/5oy2v8fghrh79s8.ll
 ; influxdb-rs/optimized/380gcqze52ow6205.ll
 ; just-rs/optimized/2sblcsgax6v4zfcc.ll
@@ -85,8 +86,25 @@
 ; wasmtime-rs/optimized/33slbp9da8waph2q.ll
 ; wasmtime-rs/optimized/4y19gy3l28n56lab.ll
 ; wasmtime-rs/optimized/5poarlxbfmu9lbg.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/477pfick4ndzj3k3y8f79a5fg.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
+; zed-rs/optimized/5e9omh398ijohtd01awo2ssl8.ll
+; zed-rs/optimized/5gzhlrfve63v3ndyg8t40tttn.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
+; zed-rs/optimized/9jkx32jki2vcljeo0xctxc8uw.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
+; zed-rs/optimized/ak4ykc5o2q07hp1jptfv0x87c.ll
+; zed-rs/optimized/b0jacrvunbgse6y69p1vx4gkq.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i32 %0, i8 %1) #0 {
+define i1 @func00000000000001e1(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 63
   %3 = zext nneg i8 %2 to i32
@@ -96,20 +114,17 @@ entry:
   ret i1 %6
 }
 
-; 11 occurrences:
+; 8 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; lief/optimized/ssl_tls12_client.c.ll
 ; linux/optimized/gen8_engine_cs.ll
-; linux/optimized/i915_debugfs.ll
 ; linux/optimized/i915_perf.ll
-; linux/optimized/intel_mocs.ll
-; linux/optimized/intel_rc6.ll
 ; linux/optimized/intel_workarounds.ll
 ; openjdk/optimized/hb-ot-color.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i8 %1) #0 {
+define i1 @func00000000000000e1(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -2
   %3 = zext i8 %2 to i32
@@ -122,7 +137,7 @@ entry:
 ; 1 occurrences:
 ; hdf5/optimized/H5Pfapl.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000fc(i32 %0, i8 %1) #0 {
+define i1 @func00000000000001ec(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = zext nneg i8 %2 to i32
@@ -135,7 +150,7 @@ entry:
 ; 1 occurrences:
 ; hdf5/optimized/H5Pfapl.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000dc(i32 %0, i8 %1) #0 {
+define i1 @func00000000000001ac(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = zext nneg i8 %2 to i32
@@ -148,7 +163,7 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/icu_utf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000096(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000126(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 63
   %3 = zext nneg i8 %2 to i32
@@ -161,7 +176,7 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000121(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 127
   %3 = zext nneg i8 %2 to i32
@@ -174,7 +189,7 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000124(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 126
   %3 = zext nneg i8 %2 to i32
@@ -184,23 +199,24 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; typst-rs/optimized/18cop7j4xops9f9h.ll
+; zed-rs/optimized/e41v0ag91t21no9hshe9jx8u4.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i32 %0, i8 %1) #0 {
+define i1 @func00000000000001f4(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 48
   %3 = zext nneg i8 %2 to i32
   %4 = shl nuw nsw i32 %0, 6
   %5 = or disjoint i32 %4, %3
-  %6 = icmp ult i32 %5, 272
+  %6 = icmp samesign ult i32 %5, 272
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; yaml-cpp/optimized/emitterutils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000009a(i32 %0, i8 %1) #0 {
+define i1 @func000000000000012a(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 63
   %3 = zext nneg i8 %2 to i32

@@ -26,3 +26,18 @@ func000000000000000a:                   # @func000000000000000a
 	neg	a1, a1
 	or	a0, a0, a1
 	ret
+func0000000000000006:                   # @func0000000000000006
+	andi	a2, a0, 1
+	li	a0, 16
+	beqz	a2, .LBB2_3
+	sext.w	a1, a0
+	blez	a1, .LBB2_4
+.LBB2_2:                                # %entry
+	ret
+.LBB2_3:                                # %entry
+	mv	a0, a1
+	sext.w	a1, a1
+	bgtz	a1, .LBB2_2
+.LBB2_4:                                # %entry
+	li	a0, 16
+	ret

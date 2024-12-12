@@ -5,7 +5,7 @@
 ; ruby/optimized/thread.ll
 ; slurm/optimized/common_as.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000181(i32 %0, i16 %1, i16 %2) #0 {
+define i32 @func0000000000000301(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp ne i16 %2, 0
   %4 = zext i1 %3 to i32

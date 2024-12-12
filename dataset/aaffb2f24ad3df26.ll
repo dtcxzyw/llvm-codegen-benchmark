@@ -1,6 +1,7 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; abc/optimized/cuddUtil.c.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; minetest/optimized/imagefilters.cpp.ll
 ; quantlib/optimized/blackformula.ll
 ; stat-rs/optimized/2y2d191rk1p8v5y4.ll

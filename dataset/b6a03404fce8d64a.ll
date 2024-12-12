@@ -5,7 +5,7 @@
 ; proxygen/optimized/HTTPTransactionEgressSM.cpp.ll
 ; proxygen/optimized/HTTPTransactionIngressSM.cpp.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000011(i16 %0, i8 %1, i16 %2) #0 {
+define i16 @func0000000000000021(i16 %0, i8 %1, i16 %2) #0 {
 entry:
   %3 = or disjoint i16 %2, 256
   %4 = icmp eq i8 %1, -1

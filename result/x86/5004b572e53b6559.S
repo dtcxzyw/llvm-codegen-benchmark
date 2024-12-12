@@ -1,4 +1,4 @@
-func000000000000016a:                   # @func000000000000016a
+func00000000000004ca:                   # @func00000000000004ca
 	andl	$1, %edx
 	decl	%edx
 	orl	$1, %edx
@@ -8,7 +8,7 @@ func000000000000016a:                   # @func000000000000016a
 	setl	%al
 	andb	%cl, %al
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	andl	$1, %edx
 	decl	%edx
 	orl	$2, %edx
@@ -19,7 +19,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000001a6:                   # @func00000000000001a6
+func0000000000000546:                   # @func0000000000000546
 	andl	$1, %edx
 	negl	%edx
 	orl	$1, %edx

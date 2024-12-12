@@ -20,11 +20,11 @@
 define i1 @func0000000000000006(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
-  %3 = icmp slt i32 %2, %0
+  %3 = icmp sgt i32 %0, %2
   ret i1 %3
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; cmake/optimized/fse_compress.c.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_cast.cpp.ll
@@ -33,14 +33,13 @@ entry:
 ; llvm/optimized/XCOFFObjectFile.cpp.ll
 ; minetest/optimized/clouds.cpp.ll
 ; minetest/optimized/face_position_cache.cpp.ll
-; minetest/optimized/minimap.cpp.ll
 ; minetest/optimized/treegen.cpp.ll
 ; zstd/optimized/fse_compress.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
-  %3 = icmp sgt i32 %2, %0
+  %3 = icmp slt i32 %0, %2
   ret i1 %3
 }
 
@@ -50,7 +49,7 @@ entry:
 define i1 @func0000000000000007(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
-  %3 = icmp sle i32 %2, %0
+  %3 = icmp sge i32 %0, %2
   ret i1 %3
 }
 
@@ -60,7 +59,17 @@ entry:
 define i1 @func000000000000000b(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
-  %3 = icmp sge i32 %2, %0
+  %3 = icmp sle i32 %0, %2
+  ret i1 %3
+}
+
+; 1 occurrences:
+; minetest/optimized/minimap.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i32 %0, i16 %1) #0 {
+entry:
+  %2 = sext i16 %1 to i32
+  %3 = icmp ult i32 %0, %2
   ret i1 %3
 }
 
@@ -87,7 +96,7 @@ entry:
 define i1 @func0000000000000001(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   ret i1 %3
 }
 
@@ -97,7 +106,7 @@ entry:
 define i1 @func000000000000000c(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
-  %3 = icmp ne i32 %2, %0
+  %3 = icmp ne i32 %0, %2
   ret i1 %3
 }
 

@@ -3,12 +3,11 @@
 ; minetest/optimized/servermap.cpp.ll
 ; wireshark/optimized/packet-dmp.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000034(i8 %0) #0 {
+define i8 @func0000000000000074(i8 %0) #0 {
 entry:
-  %1 = add nuw nsw i8 %0, 4
-  %2 = icmp ult i8 %0, 3
-  %3 = select i1 %2, i8 %1, i8 7
-  ret i8 %3
+  %1 = call i8 @llvm.umin.i8(i8 %0, i8 3)
+  %2 = or disjoint i8 %1, 4
+  ret i8 %2
 }
 
 ; 1 occurrences:
@@ -37,12 +36,16 @@ entry:
 ; crow/optimized/example_ws.cpp.ll
 ; crow/optimized/helloworld.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000018(i8 %0) #0 {
+define i8 @func0000000000000038(i8 %0) #0 {
 entry:
   %1 = add nsw i8 %0, -87
-  %2 = icmp ugt i8 %0, 96
+  %2 = icmp samesign ugt i8 %0, 96
   %3 = select i1 %2, i8 %1, i8 0
   ret i8 %3
 }
 
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i8 @llvm.umin.i8(i8, i8) #1
+
 attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

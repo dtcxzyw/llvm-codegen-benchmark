@@ -13,7 +13,7 @@ func0000000000000018:                   # @func0000000000000018
 	.quad	524288                          # 0x80000
 .LCPI1_2:
 	.zero	16,1
-func0000000000000010:                   # @func0000000000000010
+func0000000000000030:                   # @func0000000000000030
 	vpandq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
 	vpcmpgtq	.LCPI1_1(%rip){1to4}, %ymm0, %k1
 	vmovdqu8	.LCPI1_2(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]

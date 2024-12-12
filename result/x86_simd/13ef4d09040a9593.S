@@ -5,7 +5,7 @@ func0000000000000002:                   # @func0000000000000002
 	vpmovw2m	%xmm0, %k1
 	vpcmpeqd	%ymm0, %ymm0, %ymm0
 	vpcmpeqd	%ymm0, %ymm2, %k2
-	korb	%k1, %k2, %k1
+	korb	%k2, %k1, %k1
 	kandnb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

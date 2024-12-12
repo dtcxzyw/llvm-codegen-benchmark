@@ -33,6 +33,17 @@ func0000000000000019:                   # @func0000000000000019
 	slliw	a0, a0, 23
 	or	a0, a0, a1
 	ret
+func000000000000005d:                   # @func000000000000005d
+	slliw	a1, a1, 16
+	slliw	a0, a0, 24
+	or	a0, a0, a1
+	ret
+func000000000000003d:                   # @func000000000000003d
+	andi	a1, a1, 255
+	slliw	a1, a1, 16
+	slliw	a0, a0, 24
+	or	a0, a0, a1
+	ret
 func0000000000000077:                   # @func0000000000000077
 	slliw	a1, a1, 28
 	slliw	a0, a0, 24

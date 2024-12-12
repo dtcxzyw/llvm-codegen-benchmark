@@ -11,8 +11,7 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
-; linux/optimized/vclock_gettime.ll
+; 3 occurrences:
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/bignum.ll
 ; z3/optimized/mpff.cpp.ll

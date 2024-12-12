@@ -14,7 +14,7 @@ entry:
   ret i64 %3
 }
 
-; 46 occurrences:
+; 44 occurrences:
 ; cmake/optimized/archive_read_support_filter_uu.c.ll
 ; cmake/optimized/archive_read_support_format_mtree.c.ll
 ; cpython/optimized/listobject.ll
@@ -44,7 +44,6 @@ entry:
 ; qemu/optimized/block_io.c.ll
 ; qemu/optimized/nbd_client-connection.c.ll
 ; qemu/optimized/source_s_addMagsF16.c.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; qemu/optimized/source_s_mulAddF16.c.ll
 ; readerwriterqueue/optimized/bench.cpp.ll
 ; redis/optimized/networking.ll
@@ -57,7 +56,6 @@ entry:
 ; spike/optimized/f32_mul.ll
 ; spike/optimized/f64_mul.ll
 ; spike/optimized/s_addMagsF16.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; spike/optimized/s_mulAddF16.ll
 ; spike/optimized/s_mulAddF32.ll
 ; yyjson/optimized/yyjson.c.ll

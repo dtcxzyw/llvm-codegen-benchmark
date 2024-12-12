@@ -24,7 +24,7 @@ func000000000000000c:                   # @func000000000000000c
 	li	a0, 102
 	vmsne.vx	v0, v8, a0
 	ret
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
 	lui	a0, 4
@@ -37,7 +37,7 @@ func0000000000000008:                   # @func0000000000000008
 	li	a0, 256
 	vmsgtu.vx	v0, v8, a0
 	ret
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
 	lui	a0, 4

@@ -1,9 +1,8 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; hdf5/optimized/H5B2int.c.ll
 ; linux/optimized/ah6.ll
 ; linux/optimized/namei.ll
-; minetest/optimized/cavegen.cpp.ll
 ; openexr/optimized/ImfWav.cpp.ll
 ; openexr/optimized/internal_piz.c.ll
 ; openusd/optimized/openexr-c.c.ll

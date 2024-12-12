@@ -86,7 +86,3 @@ func000000000000001c:                   # @func000000000000001c
 	mulw	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func0000000000000005:                   # @func0000000000000005
-	mulw	a1, a1, a2
-	add	a0, a0, a1
-	ret

@@ -1,5 +1,5 @@
 
-; 30 occurrences:
+; 29 occurrences:
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -26,12 +26,11 @@
 ; php/optimized/zend_inference.ll
 ; php/optimized/zend_jit.ll
 ; qemu/optimized/hw_net_can_ctucan_core.c.ll
-; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; qemu/optimized/tcg-op-ldst.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 64
   %4 = icmp eq i32 %3, 0
@@ -49,7 +48,7 @@ entry:
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-wassp.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 32768
   %4 = icmp eq i32 %3, 0
@@ -59,26 +58,13 @@ entry:
   ret i1 %7
 }
 
-; 1 occurrences:
-; qemu/optimized/tcg-op-ldst.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 32768
-  %4 = icmp eq i32 %3, 0
-  %5 = select i1 %4, i32 %0, i32 %1
-  %6 = and i32 %5, 7
-  %7 = icmp ult i32 %6, 3
-  ret i1 %7
-}
-
 ; 4 occurrences:
 ; hermes/optimized/dtoa.c.ll
 ; jq/optimized/jv_dtoa.ll
 ; libquic/optimized/dtoa.cc.ll
 ; php/optimized/zend_strtod.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000281(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2146435072
   %4 = icmp eq i32 %3, 0

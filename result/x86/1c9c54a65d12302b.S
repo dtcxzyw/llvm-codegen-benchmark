@@ -7,7 +7,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	%rcx, %rdx
 	seta	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	movslq	%edi, %rax
 	movabsq	$-9223372036854775808, %rcx     # imm = 0x8000000000000000
 	leaq	63(%rcx), %rdx
@@ -15,7 +15,7 @@ func0000000000000018:                   # @func0000000000000018
 	cmpq	%rcx, %rdx
 	seta	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	testb	%dil, %dil
 	sete	%al
 	retq

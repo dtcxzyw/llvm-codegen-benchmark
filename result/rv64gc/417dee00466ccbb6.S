@@ -5,5 +5,5 @@ func0000000000000020:                   # @func0000000000000020
 	bgeu	a2, a3, .LBB0_2
 	lui	a1, 10
 .LBB0_2:                                # %entry
-	mul	a0, a1, a0
+	mul	a0, a0, a1
 	ret

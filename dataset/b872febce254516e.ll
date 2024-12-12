@@ -1,6 +1,5 @@
 
-; 2 occurrences:
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; 1 occurrences:
 ; openjdk/optimized/utf8.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i32 %0, i16 %1, i1 %2) #0 {

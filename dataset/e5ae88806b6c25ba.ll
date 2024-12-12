@@ -1,10 +1,11 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; c3c/optimized/parse_global.c.ll
 ; linux/optimized/80003es2lan.ll
 ; linux/optimized/cistpl.ll
 ; llvm/optimized/ContinuationIndenter.cpp.ll
 ; llvm/optimized/ModuleSummaryAnalysis.cpp.ll
+; lvgl/optimized/lv_flex.ll
 ; openusd/optimized/refinement.cpp.ll
 ; php/optimized/util.ll
 ; wireshark/optimized/packet-nordic_ble.c.ll

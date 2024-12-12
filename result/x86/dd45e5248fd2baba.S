@@ -139,6 +139,11 @@ func000000000000002b:                   # @func000000000000002b
 	cmpl	%esi, %edx
 	sbbl	$-1, %eax
 	retq
+func00000000000000a3:                   # @func00000000000000a3
+	movl	%edi, %eax
+	cmpl	%edx, %esi
+	adcl	$0, %eax
+	retq
 func0000000000000041:                   # @func0000000000000041
 	movl	%edi, %eax
 	cmpl	%esi, %edx
@@ -148,6 +153,16 @@ func000000000000004b:                   # @func000000000000004b
 	movl	%edi, %eax
 	cmpl	%edx, %esi
 	sbbl	$-1, %eax
+	retq
+func00000000000000c1:                   # @func00000000000000c1
+	movl	%edi, %eax
+	cmpl	%esi, %edx
+	adcl	$0, %eax
+	retq
+func00000000000000c0:                   # @func00000000000000c0
+	movl	%edi, %eax
+	cmpl	%esi, %edx
+	adcl	$0, %eax
 	retq
 func0000000000000058:                   # @func0000000000000058
 	xorl	%eax, %eax
@@ -189,8 +204,43 @@ func0000000000000053:                   # @func0000000000000053
 	setg	%al
 	addl	%edi, %eax
 	retq
+func00000000000000c9:                   # @func00000000000000c9
+	movl	%edi, %eax
+	cmpl	%edx, %esi
+	sbbl	$-1, %eax
+	retq
+func00000000000000ab:                   # @func00000000000000ab
+	movl	%edi, %eax
+	cmpl	%esi, %edx
+	sbbl	$-1, %eax
+	retq
+func00000000000000a9:                   # @func00000000000000a9
+	movl	%edi, %eax
+	cmpl	%esi, %edx
+	sbbl	$-1, %eax
+	retq
+func00000000000000cb:                   # @func00000000000000cb
+	movl	%edi, %eax
+	cmpl	%edx, %esi
+	sbbl	$-1, %eax
+	retq
 func0000000000000029:                   # @func0000000000000029
 	movl	%edi, %eax
 	cmpl	%esi, %edx
 	sbbl	$-1, %eax
+	retq
+func00000000000000c8:                   # @func00000000000000c8
+	movl	%edi, %eax
+	cmpl	%edx, %esi
+	sbbl	$-1, %eax
+	retq
+func00000000000000a0:                   # @func00000000000000a0
+	movl	%edi, %eax
+	cmpl	%edx, %esi
+	adcl	$0, %eax
+	retq
+func00000000000000a1:                   # @func00000000000000a1
+	movl	%edi, %eax
+	cmpl	%edx, %esi
+	adcl	$0, %eax
 	retq

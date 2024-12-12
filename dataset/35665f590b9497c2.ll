@@ -1,5 +1,6 @@
 
-; 11 occurrences:
+; 12 occurrences:
+; boost/optimized/contract.ll
 ; git/optimized/unpack-trees.ll
 ; libquic/optimized/tasn_prn.c.ll
 ; llvm/optimized/ASTDiagnostic.cpp.ll
@@ -12,7 +13,7 @@
 ; openssl/optimized/libcrypto-lib-tasn_prn.ll
 ; openssl/optimized/libcrypto-shlib-tasn_prn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(ptr %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000318(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = select i1 %1, i1 %3, i1 false
@@ -33,7 +34,7 @@ entry:
 ; openjdk/optimized/vectorIntrinsics.ll
 ; typst-rs/optimized/49m3cs7hus53ztof.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(ptr %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000042(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %not. = xor i1 %1, true
@@ -48,7 +49,7 @@ entry:
 ; llvm/optimized/SeparateConstOffsetFromGEP.cpp.ll
 ; verilator/optimized/V3Const__gen.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(ptr %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000302(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %not. = xor i1 %1, true
@@ -63,7 +64,7 @@ entry:
 ; llvm/optimized/SemaTemplate.cpp.ll
 ; luau/optimized/Compiler.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(ptr %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000058(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %not. = xor i1 %1, true

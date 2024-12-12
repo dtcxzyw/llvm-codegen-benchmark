@@ -4,7 +4,7 @@ func0000000000000010:                   # @func0000000000000010
 	vpmovsxwd	%xmm2, %ymm2
 	vpmulld	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
 	vpaddd	%ymm0, %ymm1, %ymm0
-	vpaddd	%ymm0, %ymm2, %ymm0
+	vpaddd	%ymm2, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.long	86400                           # 0x15180

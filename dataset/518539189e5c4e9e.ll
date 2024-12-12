@@ -53,11 +53,24 @@
 ; opencc/optimized/louds-trie.cc.ll
 ; pbrt-v4/optimized/paramdict.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000a4c(i64 %0, ptr %1) #0 {
+define i1 @func000000000000288c(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr nusw i8, ptr %1, i64 %0
   %3 = getelementptr nusw i8, ptr %2, i64 -4
-  %4 = icmp ugt ptr %3, %1
+  %4 = icmp ult ptr %1, %3
+  %5 = icmp ne i64 %0, 0
+  %6 = select i1 %5, i1 %4, i1 false
+  ret i1 %6
+}
+
+; 1 occurrences:
+; boost/optimized/area.ll
+; Function Attrs: nounwind
+define i1 @func000000000000388c(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw nuw i32, ptr %1, i64 %0
+  %3 = getelementptr nusw i8, ptr %2, i64 -4
+  %4 = icmp ult ptr %1, %3
   %5 = icmp ne i64 %0, 0
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6

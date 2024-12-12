@@ -1,4 +1,4 @@
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	addb	$-8, %dl
 	shlxl	%edx, %esi, %eax
 	orl	%edi, %eax

@@ -10,7 +10,7 @@
 ; opencv/optimized/core_detect.cpp.ll
 ; openexr/optimized/ImfTileOffsets.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 2147483647
   %3 = and i64 %2, 2147483647
@@ -22,7 +22,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/DWARFUnit.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 1
   %3 = and i64 %2, 4294967295

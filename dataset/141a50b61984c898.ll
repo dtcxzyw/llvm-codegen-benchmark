@@ -26,7 +26,8 @@ entry:
   ret i1 %2
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/approximately_equals.ll
 ; opencv/optimized/erfilter.cpp.ll
 ; velox/optimized/BaseVector.cpp.ll
 ; velox/optimized/Bridge.cpp.ll
@@ -39,7 +40,8 @@ entry:
   ret i1 %2
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; duckdb/optimized/ub_duckdb_func_math.cpp.ll
 ; openblas/optimized/dgemmt.c.ll
 ; proj/optimized/gridshift.cpp.ll
 ; quantlib/optimized/fdsimpleextoustorageengine.ll
@@ -54,8 +56,9 @@ entry:
   ret i1 %2
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
+; duckdb/optimized/ub_duckdb_func_math.cpp.ll
 ; grpc/optimized/posix_endpoint.cc.ll
 ; grpc/optimized/tcp_posix.cc.ll
 ; quantlib/optimized/symmetricschurdecomposition.ll

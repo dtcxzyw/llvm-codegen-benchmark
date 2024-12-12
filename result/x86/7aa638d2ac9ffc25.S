@@ -10,15 +10,9 @@ func0000000000000000:                   # @func0000000000000000
 	leaq	(%rcx,%rax,4), %rcx
 	leaq	(%rcx,%rax,4), %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+func000000000000003f:                   # @func000000000000003f
 	movslq	%edi, %rax
-	leaq	(%rsi,%rax,4), %rcx
-	leaq	(%rcx,%rax,4), %rcx
-	leaq	(%rcx,%rax,4), %rax
-	retq
-func000000000000000a:                   # @func000000000000000a
-	movslq	%edi, %rax
-	leaq	(%rsi,%rax,4), %rcx
-	leaq	(%rcx,%rax,4), %rcx
-	leaq	(%rcx,%rax,4), %rax
+	leaq	(%rsi,%rax,2), %rcx
+	leaq	(%rcx,%rax,2), %rcx
+	leaq	(%rcx,%rax,2), %rax
 	retq

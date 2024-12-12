@@ -1,7 +1,6 @@
 
-; 60 occurrences:
+; 59 occurrences:
 ; assimp/optimized/FBXConverter.cpp.ll
-; assimp/optimized/ProcessHelper.cpp.ll
 ; assimp/optimized/SplitByBoneCountProcess.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -61,10 +60,10 @@
 ; verilator/optimized/V3VariableOrder.cpp.ll
 ; verilator/optimized/V3Width.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 8
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 8
   %5 = ashr exact i64 %3, 1
   %6 = getelementptr nusw i8, ptr %4, i64 %5
   ret ptr %6

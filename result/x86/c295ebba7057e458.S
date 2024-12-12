@@ -5,14 +5,14 @@ func0000000000000010:                   # @func0000000000000010
 	movzbl	%al, %eax
 	leaq	1(%rax,%rsi), %rax
 	retq
-func000000000000004a:                   # @func000000000000004a
+func000000000000004f:                   # @func000000000000004f
 	cmpl	$10, %edx
 	setb	%al
 	andb	%dil, %al
 	movzbl	%al, %eax
 	leaq	1(%rax,%rsi), %rax
 	retq
-func000000000000006a:                   # @func000000000000006a
+func000000000000006f:                   # @func000000000000006f
 	notb	%dil
 	movzbl	%dil, %ecx
 	andl	$1, %ecx
@@ -23,7 +23,7 @@ func000000000000006a:                   # @func000000000000006a
 	cmovsq	%rcx, %rax
 	addq	%rsi, %rax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000001f:                   # @func000000000000001f
 	notb	%dil
 	movzbl	%dil, %eax
 	andl	$1, %eax

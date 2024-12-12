@@ -1,5 +1,5 @@
 
-; 50 occurrences:
+; 48 occurrences:
 ; abc/optimized/giaGlitch.c.ll
 ; clamav/optimized/pe_icons.c.ll
 ; cmake/optimized/easy.c.ll
@@ -20,7 +20,6 @@
 ; eastl/optimized/EAMemory.cpp.ll
 ; graphviz/optimized/xlabels.c.ll
 ; hdf5/optimized/H5FDcore.c.ll
-; hdf5/optimized/H5Zfletcher32.c.ll
 ; icu/optimized/utf8collationiterator.ll
 ; icu/optimized/utf_impl.ll
 ; libpng/optimized/pngrtran.c.ll
@@ -45,7 +44,6 @@
 ; php/optimized/zend_compile.ll
 ; qemu/optimized/hw_net_e1000e_core.c.ll
 ; qemu/optimized/hw_net_igb_core.c.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-bthci_cmd.c.ll
 ; wireshark/optimized/packet-cipmotion.c.ll
@@ -55,22 +53,8 @@ define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 3
   %4 = and i32 %3, 56
-  %5 = or disjoint i32 %4, %1
-  %6 = or disjoint i32 %5, %0
-  ret i32 %6
-}
-
-; 3 occurrences:
-; linux/optimized/intel_dpll_mgr.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
-; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = shl i32 %2, 16
-  %4 = and i32 %3, 196608
-  %5 = or i32 %4, %1
-  %6 = or i32 %5, %0
+  %5 = or disjoint i32 %1, %4
+  %6 = or disjoint i32 %0, %5
   ret i32 %6
 }
 
@@ -85,21 +69,22 @@ define i32 @func000000000000000e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 11
   %4 = and i32 %3, 16384
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or i32 %5, %0
   ret i32 %6
 }
 
 ; 2 occurrences:
-; eastl/optimized/EAMemory.cpp.ll
-; hdf5/optimized/H5Zfletcher32.c.ll
+; linux/optimized/intel_dpll_mgr.ll
+; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000000b(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = shl i32 %2, 24
-  %4 = or disjoint i32 %3, %1
-  %5 = or disjoint i32 %4, %0
-  ret i32 %5
+  %3 = shl i32 %2, 21
+  %4 = and i32 %3, 6291456
+  %5 = or i32 %4, %1
+  %6 = or i32 %5, %0
+  ret i32 %6
 }
 
 ; 1 occurrences:
@@ -109,7 +94,7 @@ define i32 @func000000000000000d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 9
   %4 = and i32 %3, 512
-  %5 = or i32 %4, %1
+  %5 = or i32 %1, %4
   %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
@@ -124,6 +109,17 @@ entry:
   %5 = or disjoint i32 %4, %1
   %6 = or disjoint i32 %5, %0
   ret i32 %6
+}
+
+; 1 occurrences:
+; eastl/optimized/EAMemory.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000b(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl i32 %2, 24
+  %4 = or disjoint i32 %3, %1
+  %5 = or disjoint i32 %4, %0
+  ret i32 %5
 }
 
 attributes #0 = { nounwind }

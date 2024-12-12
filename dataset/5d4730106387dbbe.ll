@@ -1,8 +1,7 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; hermes/optimized/Operations.cpp.ll
 ; opencv/optimized/min_enclosing_triangle.cpp.ll
-; opencv/optimized/trackerKCF.cpp.ll
 ; quantlib/optimized/convolvedstudentt.ll
 ; yoga/optimized/PixelGrid.cpp.ll
 ; Function Attrs: nounwind

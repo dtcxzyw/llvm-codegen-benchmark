@@ -13,8 +13,9 @@ entry:
   ret i32 %7
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; image-rs/optimized/249ukonr3l56u09i.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000007f(i32 %0, i32 %1, i16 %2) #0 {
 entry:
@@ -33,7 +34,7 @@ define i32 @func00000000000000fc(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
   %4 = shl nuw nsw i32 %3, 1
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = add nuw nsw i32 %5, 6
   %7 = add i32 %6, %0
   ret i32 %7

@@ -15,7 +15,7 @@ entry:
 ; jq/optimized/decNumber.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i8 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %0
   %3 = icmp slt i8 %1, 0

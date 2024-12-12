@@ -39,11 +39,12 @@ entry:
   ret i64 %4
 }
 
-; 45 occurrences:
+; 46 occurrences:
 ; assimp/optimized/ASELoader.cpp.ll
 ; assimp/optimized/BlenderModifier.cpp.ll
 ; assimp/optimized/PretransformVertices.cpp.ll
 ; assimp/optimized/XFileImporter.cpp.ll
+; boost/optimized/attribute_name.ll
 ; cmake/optimized/cmQtAutoGenerator.cxx.ll
 ; cvc5/optimized/quant_conflict_find.cpp.ll
 ; eastl/optimized/TestDeque.cpp.ll

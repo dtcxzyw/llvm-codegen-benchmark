@@ -18,7 +18,7 @@
 ; openusd/optimized/usdtree.cpp.ll
 ; proxygen/optimized/Logging.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = ashr exact i64 %0, 6
@@ -33,7 +33,7 @@ entry:
 ; libquic/optimized/quic_framer.cc.ll
 ; yalantinglibs/optimized/benchmark.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = ashr exact i64 %0, 4
@@ -44,7 +44,7 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = ashr exact i64 %0, 2
@@ -59,7 +59,7 @@ entry:
 ; luau/optimized/Autocomplete.cpp.ll
 ; luau/optimized/ConstraintGenerator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000068(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = ashr exact i64 %0, 3

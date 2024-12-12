@@ -17,7 +17,7 @@ entry:
 ; pbrt-v4/optimized/integrator.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = icmp ne i32 %3, %0
@@ -43,7 +43,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/normalize_bbox_layer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp sge i32 %2, %0
   %not. = xor i1 %1, true

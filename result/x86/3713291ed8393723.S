@@ -25,10 +25,3 @@ func000000000000001d:                   # @func000000000000001d
 	cmovnel	%esi, %eax
 	imull	%edi, %eax
 	retq
-func000000000000004f:                   # @func000000000000004f
-	leal	112(%rsi), %ecx
-	leal	88(%rsi), %eax
-	cmpl	$4, %edx
-	cmovael	%ecx, %eax
-	imull	%edi, %eax
-	retq

@@ -1,8 +1,7 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; glslang/optimized/ParseHelper.cpp.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
-; linux/optimized/cap_audit.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; llvm/optimized/CGExpr.cpp.ll

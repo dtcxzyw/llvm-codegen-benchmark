@@ -23,14 +23,6 @@ func00000000000003ff:                   # @func00000000000003ff
 	add	a0, a0, a1
 	mulw	a0, a0, a3
 	ret
-func00000000000003fd:                   # @func00000000000003fd
-	li	a3, 85
-	mul	a2, a2, a3
-	add	a1, a1, a2
-	mul	a1, a1, a3
-	add	a0, a0, a1
-	mulw	a0, a0, a3
-	ret
 func0000000000000155:                   # @func0000000000000155
 	li	a3, 10
 	mul	a2, a2, a3

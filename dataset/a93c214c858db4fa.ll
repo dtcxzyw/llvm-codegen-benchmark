@@ -6,7 +6,7 @@ define i32 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 29
   %3 = ashr i64 %2, 32
-  %4 = icmp sgt i64 %3, %0
+  %4 = icmp slt i64 %0, %3
   %5 = zext i1 %4 to i32
   ret i32 %5
 }
@@ -14,11 +14,11 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-ipp.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000002c(i64 %0, i64 %1) #0 {
+define i32 @func000000000000004c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
-  %4 = icmp sgt i64 %3, %0
+  %4 = icmp slt i64 %0, %3
   %5 = zext i1 %4 to i32
   ret i32 %5
 }

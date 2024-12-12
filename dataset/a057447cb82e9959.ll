@@ -34,7 +34,7 @@ entry:
 define i32 @func0000000000000040(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 8
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = shl i32 %1, 4
   %6 = sub i32 %4, %5
   ret i32 %6

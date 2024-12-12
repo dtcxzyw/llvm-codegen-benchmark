@@ -20,7 +20,8 @@ entry:
   ret i64 %4
 }
 
-; 22 occurrences:
+; 25 occurrences:
+; boost/optimized/url_base.ll
 ; clamav/optimized/readdb.c.ll
 ; cvc5/optimized/quant_conflict_find.cpp.ll
 ; cvc5/optimized/type_node.cpp.ll
@@ -43,6 +44,8 @@ entry:
 ; rustfmt-rs/optimized/4arc02n7xt9gqo2v.ll
 ; syn/optimized/2i67i8azb4r5b3mw.ll
 ; velox/optimized/DateTimeFormatter.cpp.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i1 %1) #0 {
 entry:
@@ -81,7 +84,7 @@ entry:
   ret i64 %4
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; abseil-cpp/optimized/civil_time.cc.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time.cc.ll
@@ -91,7 +94,6 @@ entry:
 ; abseil-cpp/optimized/time_zone_libc.cc.ll
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/compare_internal_avx2.cc.ll
-; arrow/optimized/light_array.cc.ll
 ; arrow/optimized/writer.cc.ll
 ; cvc5/optimized/function_const.cpp.ll
 ; cvc5/optimized/regexp_operation.cpp.ll

@@ -25,7 +25,7 @@ func000000000000000c:                   # @func000000000000000c
 	vmandn.mm	v8, v11, v10
 	vmand.mm	v0, v8, v0
 	ret
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vand.vi	v10, v10, 1
 	vmsne.vi	v10, v10, 0
@@ -34,7 +34,7 @@ func0000000000000021:                   # @func0000000000000021
 	vmandn.mm	v8, v11, v10
 	vmand.mm	v0, v8, v0
 	ret
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vand.vi	v10, v10, 1
 	vmsne.vi	v10, v10, 0

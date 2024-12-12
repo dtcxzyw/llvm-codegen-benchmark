@@ -1,18 +1,18 @@
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	incl	%esi
 	andl	$3, %esi
 	movzbl	%dil, %eax
 	cmpl	%eax, %esi
 	sete	%al
 	retq
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	incl	%esi
 	andl	$3, %esi
 	movzbl	%dil, %eax
 	cmpl	%eax, %esi
 	sete	%al
 	retq
-func0000000000000064:                   # @func0000000000000064
+func00000000000000d4:                   # @func00000000000000d4
 	addl	$4, %esi
 	movzbl	%sil, %eax
 	movzbl	%dil, %ecx
@@ -21,24 +21,24 @@ func0000000000000064:                   # @func0000000000000064
 	retq
 func0000000000000001:                   # @func0000000000000001
 	incb	%sil
-	cmpb	%dil, %sil
+	cmpb	%sil, %dil
 	sete	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	incl	%esi
 	movzbl	%sil, %eax
 	movzbl	%dil, %ecx
 	cmpl	%ecx, %eax
 	setb	%al
 	retq
-func0000000000000068:                   # @func0000000000000068
+func00000000000000d8:                   # @func00000000000000d8
 	incl	%esi
 	movzbl	%sil, %eax
 	movzbl	%dil, %ecx
 	cmpl	%ecx, %eax
 	seta	%al
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000054:                   # @func0000000000000054
 	decl	%esi
 	movzbl	%sil, %eax
 	movzbl	%dil, %ecx

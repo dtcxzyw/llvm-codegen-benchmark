@@ -9,3 +9,11 @@ func0000000000000002:                   # @func0000000000000002
 .LBB0_2:                                # %entry
 	fcvt.s.d	fa0, fa5
 	ret
+func0000000000000004:                   # @func0000000000000004
+	fli.d	fa5, 1.0
+	flt.d	a0, fa5, fa0
+	bnez	a0, .LBB1_2
+	fmv.d	fa5, fa0
+.LBB1_2:                                # %entry
+	fcvt.s.d	fa0, fa5
+	ret

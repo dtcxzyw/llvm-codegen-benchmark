@@ -64,8 +64,7 @@ func000000000000003d:                   # @func000000000000003d
 	leal	2(%rdi,%rdi), %eax
 	retq
 func000000000000003f:                   # @func000000000000003f
-	shll	$10, %edi
-	leal	1024(%rdi), %eax
+	leal	12(,%rdi,4), %eax
 	retq
 func000000000000003e:                   # @func000000000000003e
 	leal	16(,%rdi,4), %eax

@@ -1,7 +1,9 @@
 
-; 12 occurrences:
+; 14 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; luau/optimized/CostModel.cpp.ll
 ; mitsuba3/optimized/string.cpp.ll
@@ -21,7 +23,8 @@ entry:
   ret i64 %3
 }
 
-; 33 occurrences:
+; 38 occurrences:
+; boost/optimized/to_chars.ll
 ; eastl/optimized/BenchmarkHash.cpp.ll
 ; eastl/optimized/BenchmarkMap.cpp.ll
 ; eastl/optimized/BenchmarkSet.cpp.ll
@@ -40,16 +43,20 @@ entry:
 ; libsodium/optimized/libsodium_la-poly1305_donna.ll
 ; linux/optimized/i915_hwmon.ll
 ; linux/optimized/printk.ll
+; linux/optimized/rc80211_minstrel_ht.ll
 ; linux/optimized/select.ll
 ; linux/optimized/snapshot.ll
 ; linux/optimized/swap_state.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/LowerSwitch.cpp.ll
 ; luau/optimized/CostModel.cpp.ll
+; lvgl/optimized/lv_canvas.ll
 ; openssl/optimized/libcrypto-lib-curve25519.ll
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
 ; qemu/optimized/block_nvme.c.ll
+; qemu/optimized/hw_audio_ac97.c.ll
 ; qemu/optimized/hw_block_virtio-blk.c.ll
+; qemu/optimized/hw_net_vmxnet3.c.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; wireshark/optimized/packet-alp.c.ll
 ; wireshark/optimized/packet-dect-nwk.c.ll
@@ -79,10 +86,11 @@ entry:
   ret i64 %3
 }
 
-; 10 occurrences:
+; 12 occurrences:
 ; assimp/optimized/AMFImporter_Postprocess.cpp.ll
 ; assimp/optimized/JoinVerticesProcess.cpp.ll
 ; assimp/optimized/X3DImporter.cpp.ll
+; coreutils-rs/optimized/356ademi3o5g91h6.ll
 ; linux/optimized/i915_gem_context.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
@@ -90,12 +98,13 @@ entry:
 ; llvm/optimized/MachineVerifier.cpp.ll
 ; llvm/optimized/RegisterClassInfo.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0) #0 {
 entry:
-  %1 = lshr exact i64 %0, 3
+  %1 = lshr exact i64 %0, 2
   %2 = and i64 %1, 4294967295
-  %3 = mul nuw nsw i64 %2, 1028
+  %3 = mul nuw nsw i64 %2, 80
   ret i64 %3
 }
 

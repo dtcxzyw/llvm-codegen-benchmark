@@ -1,6 +1,6 @@
 func0000000000000002:                   # @func0000000000000002
 	decl	%edx
-	testl	%esi, %edx
+	testl	%edx, %esi
 	sete	%al
 	orb	%dil, %al
 	retq

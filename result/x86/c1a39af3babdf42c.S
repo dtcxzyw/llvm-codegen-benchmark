@@ -1,5 +1,5 @@
 func000000000000000c:                   # @func000000000000000c
-	leal	78(%rdx,%rsi), %eax
+	leal	78(%rsi,%rdx), %eax
 	movl	%edx, %ecx
 	addl	$78, %ecx
 	cmpl	%ecx, %eax
@@ -8,7 +8,7 @@ func000000000000000c:                   # @func000000000000000c
 	retq
 func0000000000000008:                   # @func0000000000000008
 	negl	%edx
-	cmpl	%esi, %edx
-	setb	%al
+	cmpl	%edx, %esi
+	seta	%al
 	orb	%dil, %al
 	retq

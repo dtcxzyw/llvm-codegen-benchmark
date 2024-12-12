@@ -1,12 +1,11 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; abc/optimized/bmcMaj3.c.ll
 ; abc/optimized/dauDsd.c.ll
 ; cvc5/optimized/safe_print.cpp.ll
 ; linux/optimized/assoc_array.ll
 ; linux/optimized/ibs.ll
 ; linux/optimized/xt_conntrack.ll
-; linux/optimized/xt_state.ll
 ; llvm/optimized/BlockFrequencyInfoImpl.cpp.ll
 ; llvm/optimized/USRGeneration.cpp.ll
 ; qemu/optimized/tcg.c.ll

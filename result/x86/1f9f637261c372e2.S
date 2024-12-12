@@ -1,8 +1,8 @@
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	btq	%rsi, %rdi
 	setb	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	shrxq	%rsi, %rdi, %rax
 	testb	$63, %al
 	sete	%al
@@ -12,13 +12,13 @@ func0000000000000001:                   # @func0000000000000001
 	testb	%al, %al
 	sete	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000058:                   # @func0000000000000058
 	shrxq	%rsi, %rdi, %rax
 	andl	$63, %eax
 	cmpl	$59, %eax
 	setae	%al
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000054:                   # @func0000000000000054
 	shrxq	%rsi, %rdi, %rax
 	andl	$63, %eax
 	cmpl	$59, %eax

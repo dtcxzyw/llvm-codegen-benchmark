@@ -53,7 +53,7 @@ entry:
   %2 = shl nuw i32 %1, 1
   %3 = and i32 %2, 30
   %4 = shl nuw i32 3, %3
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
@@ -67,7 +67,7 @@ entry:
   %2 = shl nuw i32 %1, 1
   %3 = and i32 %2, 30
   %4 = shl nuw nsw i32 1, %3
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
@@ -101,23 +101,7 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
-; abc/optimized/covMinUtil.c.ll
-; llvm/optimized/BuildLibCalls.cpp.ll
-; llvm/optimized/ConstantFolding.cpp.ll
-; wireshark/optimized/packet-erldp.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl nuw nsw i32 %1, 1
-  %3 = and i32 %2, 30
-  %4 = shl nuw nsw i32 1, %3
-  %5 = and i32 %4, %0
-  ret i32 %5
-}
-
-; 6 occurrences:
-; abc/optimized/covMinUtil.c.ll
+; 5 occurrences:
 ; llvm/optimized/CodeGenPrepare.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/LegalizeDAG.cpp.ll
@@ -126,21 +110,23 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000e(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw nsw i32 %1, 1
-  %3 = and i32 %2, 30
-  %4 = shl nuw i32 2, %3
-  %5 = and i32 %4, %0
+  %2 = shl nuw nsw i32 %1, 2
+  %3 = and i32 %2, 28
+  %4 = shl nuw i32 15, %3
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
-; 1 occurrences:
-; linux/optimized/pkeys.ll
+; 3 occurrences:
+; llvm/optimized/BuildLibCalls.cpp.ll
+; llvm/optimized/ConstantFolding.cpp.ll
+; wireshark/optimized/packet-erldp.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
+define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl nsw i32 %1, 1
-  %3 = and i32 %2, 131070
-  %4 = shl nuw i32 1, %3
+  %2 = shl nuw nsw i32 %1, 1
+  %3 = and i32 %2, 6
+  %4 = shl nuw nsw i32 3, %3
   %5 = and i32 %4, %0
   ret i32 %5
 }

@@ -20,20 +20,30 @@ func0000000000000140:                   # @func0000000000000140
 	movl	%esi, %ecx
 	leaq	2(%rcx,%rax), %rax
 	retq
-func00000000000000ea:                   # @func00000000000000ea
+func00000000000000ff:                   # @func00000000000000ff
 	shlq	$4, %rdx
 	addq	%rdi, %rdx
 	movl	%esi, %eax
 	leaq	4(%rdx,%rax,4), %rax
 	retq
-func00000000000001ea:                   # @func00000000000001ea
+func00000000000001ff:                   # @func00000000000001ff
 	shlq	$9, %rdx
 	addq	%rdi, %rdx
 	movl	%esi, %eax
 	leaq	514(%rax,%rdx), %rax
 	retq
-func00000000000001aa:                   # @func00000000000001aa
+func00000000000001bf:                   # @func00000000000001bf
 	leaq	(%rdi,%rdx,4), %rax
 	movl	%esi, %ecx
 	leaq	4(%rcx,%rax), %rax
+	retq
+func00000000000001fe:                   # @func00000000000001fe
+	leaq	(%rdi,%rdx,8), %rax
+	movl	%esi, %ecx
+	leaq	-8(%rcx,%rax), %rax
+	retq
+func00000000000001be:                   # @func00000000000001be
+	leaq	(%rdi,%rdx,4), %rax
+	movl	%esi, %ecx
+	leaq	-4(%rcx,%rax), %rax
 	retq

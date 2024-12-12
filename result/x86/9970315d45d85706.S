@@ -1,18 +1,18 @@
-func0000000000000354:                   # @func0000000000000354
+func0000000000000eb4:                   # @func0000000000000eb4
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdi
 	setb	%al
-	addq	%rax, %rdi
-	cmpq	%rsi, %rdi
+	leaq	(%rax,%rdi), %rcx
+	cmpq	%rsi, %rcx
 	setbe	%cl
 	andb	%cl, %al
 	retq
-func0000000000000254:                   # @func0000000000000254
+func00000000000008a4:                   # @func00000000000008a4
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdi
 	setb	%al
-	addq	%rax, %rdi
-	cmpq	%rsi, %rdi
+	leaq	(%rax,%rdi), %rcx
+	cmpq	%rsi, %rcx
 	setbe	%cl
 	andb	%cl, %al
 	retq

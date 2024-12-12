@@ -17,7 +17,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %.neg = sub i64 %3, %1
   %.neg1 = trunc i64 %.neg to i32
-  %4 = add i32 %.neg1, %0
+  %4 = add i32 %0, %.neg1
   %5 = sdiv i32 %4, 2
   ret i32 %5
 }
@@ -32,7 +32,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %.neg = sub i64 %3, %1
   %.neg1 = trunc i64 %.neg to i32
-  %4 = add i32 %.neg1, %0
+  %4 = add i32 %0, %.neg1
   %5 = sdiv i32 %4, 2
   ret i32 %5
 }

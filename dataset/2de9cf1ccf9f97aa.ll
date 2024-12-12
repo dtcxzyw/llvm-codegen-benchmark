@@ -1,7 +1,8 @@
 
-; 104 occurrences:
+; 105 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll

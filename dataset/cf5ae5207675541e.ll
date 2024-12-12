@@ -1,6 +1,7 @@
 
-; 294 occurrences:
+; 297 occurrences:
 ; arrow/optimized/float16.cc.ll
+; boost/optimized/test_codecvt.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -116,11 +117,9 @@
 ; linux/optimized/act_api.ll
 ; linux/optimized/cls_api.ll
 ; linux/optimized/ehci-hcd.ll
-; linux/optimized/hdac_controller.ll
 ; linux/optimized/icl_dsi.ll
 ; linux/optimized/intel_color.ll
 ; linux/optimized/intel_sprite.ll
-; linux/optimized/nfsacl.ll
 ; linux/optimized/ohci-hcd.ll
 ; linux/optimized/poll.ll
 ; linux/optimized/sg.ll
@@ -294,6 +293,10 @@
 ; wireshark/optimized/packet-rlc-lte.c.ll
 ; wireshark/optimized/packet-umts_fp.c.ll
 ; wireshark/optimized/packet-usb.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i16 %0) #0 {
 entry:
@@ -303,9 +306,11 @@ entry:
   ret i32 %3
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; image-rs/optimized/34r8dryqmufipcqz.ll
 ; qemu/optimized/hw_net_pcnet.c.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i16 %0) #0 {
 entry:
@@ -315,14 +320,17 @@ entry:
   ret i32 %3
 }
 
-; 7 occurrences:
+; 10 occurrences:
 ; abc/optimized/giaEmbed.c.ll
 ; entt/optimized/registry.cpp.ll
 ; linux/optimized/cacheinfo.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; openspiel/optimized/chess_board.cc.ll
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; wireshark/optimized/packet-flexray.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i16 %0) #0 {
 entry:

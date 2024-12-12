@@ -40,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_rps.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %1, %2
   %4 = mul nuw nsw i64 %0, 25600000
@@ -51,7 +51,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_rps.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %1, %2
   %4 = mul nuw nsw i64 %0, 25600000

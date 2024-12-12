@@ -32,7 +32,7 @@ entry:
   %3 = zext i1 %2 to i8
   %4 = and i8 %1, -8
   %5 = or disjoint i8 %4, %3
-  %6 = or disjoint i8 %5, %0
+  %6 = or disjoint i8 %0, %5
   ret i8 %6
 }
 

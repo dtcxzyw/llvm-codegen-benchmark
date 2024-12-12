@@ -1,5 +1,5 @@
 
-; 30 occurrences:
+; 29 occurrences:
 ; abc/optimized/lpkMulti.c.ll
 ; abc/optimized/mioUtils.c.ll
 ; abc/optimized/sbdSat.c.ll
@@ -15,7 +15,6 @@
 ; gromacs/optimized/gmx_dipoles.cpp.ll
 ; gromacs/optimized/gmx_potential.cpp.ll
 ; gromacs/optimized/gmx_traj.cpp.ll
-; gromacs/optimized/nr_jacobi.cpp.ll
 ; gromacs/optimized/partition.cpp.ll
 ; gromacs/optimized/swapcoords.cpp.ll
 ; libjpeg-turbo/optimized/jquant2.c.ll

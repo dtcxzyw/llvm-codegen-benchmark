@@ -1,5 +1,5 @@
 
-; 39 occurrences:
+; 37 occurrences:
 ; abc/optimized/abcExtract.c.ll
 ; abc/optimized/giaCTas.c.ll
 ; abc/optimized/giaHash.c.ll
@@ -8,7 +8,6 @@
 ; abc/optimized/wlnRead.c.ll
 ; freetype/optimized/pfr.c.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
-; hdf5/optimized/H5Zfletcher32.c.ll
 ; icu/optimized/csrsbcs.ll
 ; icu/optimized/uchar.ll
 ; linux/optimized/dev-ioctl.ll
@@ -17,7 +16,6 @@
 ; linux/optimized/intel_pmdemand.ll
 ; linux/optimized/libata-core.ll
 ; linux/optimized/md.ll
-; linux/optimized/mii.ll
 ; linux/optimized/pci.ll
 ; linux/optimized/tg3.ll
 ; llvm/optimized/SemaDecl.cpp.ll
@@ -40,33 +38,26 @@
 ; wireshark/optimized/packet-per.c.ll
 ; z3/optimized/sat_simplifier.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 16711680
-  %4 = or disjoint i32 %3, %1
-  %5 = icmp eq i32 %4, %0
+  %4 = or disjoint i32 %1, %3
+  %5 = icmp eq i32 %0, %4
   ret i1 %5
 }
 
-; 12 occurrences:
-; darktable/optimized/introspection_cacorrect.c.ll
-; freetype/optimized/pfr.c.ll
+; 5 occurrences:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; icu/optimized/ucptrie.ll
 ; mold/optimized/output-chunks.cc.M68K.cc.ll
 ; mold/optimized/output-chunks.cc.PPC32.cc.ll
 ; mold/optimized/output-chunks.cc.RV32BE.cc.ll
-; openusd/optimized/openexr-c.c.ll
-; postgres/optimized/ginget.ll
-; quickjs/optimized/libunicode.ll
-; wireshark/optimized/packet-rtp.c.ll
-; wireshark/optimized/packet-zbee-aps.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 16711680
-  %4 = or disjoint i32 %3, %1
-  %5 = icmp ugt i32 %4, %0
+  %4 = or disjoint i32 %1, %3
+  %5 = icmp samesign ult i32 %0, %4
   ret i1 %5
 }
 
@@ -77,11 +68,11 @@ entry:
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000039(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 3840
   %4 = or disjoint i32 %3, %1
-  %5 = icmp ule i32 %4, %0
+  %5 = icmp samesign uge i32 %0, %4
   ret i1 %5
 }
 
@@ -90,27 +81,56 @@ entry:
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; wireshark/optimized/packet_diagram.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -64
   %4 = or disjoint i32 %3, %1
-  %5 = icmp sgt i32 %4, %0
+  %5 = icmp slt i32 %0, %4
   ret i1 %5
 }
 
-; 6 occurrences:
-; darktable/optimized/RawImageDataFloat.cpp.ll
+; 5 occurrences:
 ; darktable/optimized/RawImageDataU16.cpp.ll
 ; hermes/optimized/zip.c.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; postgres/optimized/ginget.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 131072
   %4 = or disjoint i32 %3, %1
-  %5 = icmp ult i32 %4, %0
+  %5 = icmp ugt i32 %0, %4
+  ret i1 %5
+}
+
+; 2 occurrences:
+; darktable/optimized/RawImageDataFloat.cpp.ll
+; darktable/optimized/RawImageDataU16.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 1
+  %4 = or disjoint i32 %1, %3
+  %5 = icmp samesign ugt i32 %0, %4
+  ret i1 %5
+}
+
+; 8 occurrences:
+; darktable/optimized/introspection_cacorrect.c.ll
+; freetype/optimized/pfr.c.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; openusd/optimized/openexr-c.c.ll
+; postgres/optimized/ginget.ll
+; quickjs/optimized/libunicode.ll
+; wireshark/optimized/packet-rtp.c.ll
+; wireshark/optimized/packet-zbee-aps.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 1
+  %4 = or disjoint i32 %3, %1
+  %5 = icmp ult i32 %0, %4
   ret i1 %5
 }
 
@@ -122,22 +142,22 @@ entry:
 ; icu/optimized/csrsbcs.ll
 ; wireshark/optimized/packet_diagram.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = or disjoint i32 %3, %1
-  %5 = icmp slt i32 %4, %0
+  %5 = icmp sgt i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; abc/optimized/cecSolveG.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000027(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
-  %4 = or disjoint i32 %3, %1
-  %5 = icmp sge i32 %4, %0
+  %4 = or disjoint i32 %1, %3
+  %5 = icmp sle i32 %0, %4
   ret i1 %5
 }
 
@@ -171,8 +191,8 @@ entry:
 define i1 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 3
-  %4 = or i32 %3, %1
-  %5 = icmp ult i32 %4, %0
+  %4 = or i32 %1, %3
+  %5 = icmp ugt i32 %0, %4
   ret i1 %5
 }
 
@@ -206,8 +226,8 @@ entry:
 define i1 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 3
-  %4 = or i32 %3, %1
-  %5 = icmp ugt i32 %4, %0
+  %4 = or i32 %1, %3
+  %5 = icmp ult i32 %0, %4
   ret i1 %5
 }
 
@@ -222,8 +242,8 @@ entry:
 define i1 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 3
-  %4 = or i32 %3, %1
-  %5 = icmp uge i32 %4, %0
+  %4 = or i32 %1, %3
+  %5 = icmp ule i32 %0, %4
   ret i1 %5
 }
 
@@ -233,8 +253,8 @@ entry:
 define i1 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 3
-  %4 = or i32 %3, %1
-  %5 = icmp ule i32 %4, %0
+  %4 = or i32 %1, %3
+  %5 = icmp uge i32 %0, %4
   ret i1 %5
 }
 
@@ -247,8 +267,8 @@ entry:
 define i1 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 3
-  %4 = or i32 %3, %1
-  %5 = icmp eq i32 %4, %0
+  %4 = or i32 %1, %3
+  %5 = icmp eq i32 %0, %4
   ret i1 %5
 }
 

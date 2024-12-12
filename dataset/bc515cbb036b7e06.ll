@@ -42,7 +42,7 @@ entry:
   ret i64 %4
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; clamav/optimized/mew.c.ll
 ; clamav/optimized/pe.c.ll
 ; hdf5/optimized/H5HFsection.c.ll
@@ -58,7 +58,6 @@ entry:
 ; wireshark/optimized/tvbuff_rdp.c.ll
 ; z3/optimized/ast_translation.cpp.ll
 ; z3/optimized/theory_user_propagator.cpp.ll
-; z3/optimized/watch_list.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -81,8 +80,9 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; cmake/optimized/archive_read_support_format_cab.c.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; velox/optimized/ArraySort.cpp.ll
@@ -158,8 +158,7 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
-; cpython/optimized/Hacl_Hash_SHA3.ll
+; 2 occurrences:
 ; icu/optimized/ucnvmbcs.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; Function Attrs: nounwind

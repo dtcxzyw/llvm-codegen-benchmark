@@ -11,7 +11,7 @@ entry:
   %4 = or disjoint i64 %3, %1
   %5 = lshr i64 %4, 2
   %6 = and i64 %5, 2097151
-  %7 = add nsw i64 %6, %0
+  %7 = add nsw i64 %0, %6
   ret i64 %7
 }
 
@@ -27,7 +27,7 @@ entry:
   %4 = or disjoint i64 %3, %1
   %5 = lshr i64 %4, 2
   %6 = and i64 %5, 2097151
-  %7 = add nuw nsw i64 %6, %0
+  %7 = add nuw nsw i64 %0, %6
   ret i64 %7
 }
 
@@ -40,7 +40,7 @@ entry:
   %4 = or disjoint i64 %3, %1
   %5 = lshr i64 %4, 2
   %6 = and i64 %5, 2097151
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 
@@ -52,7 +52,7 @@ entry:
   %3 = lshr i64 %1, 9
   %4 = or i64 %3, %2
   %5 = and i64 %4, 18014398509481983
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -64,7 +64,7 @@ entry:
   %3 = lshr i64 %1, 9
   %4 = or i64 %3, %2
   %5 = and i64 %4, 18014398509481983
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 

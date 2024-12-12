@@ -8,8 +8,8 @@
 define i1 @func000000000000000a(i1 %0, i64 %1, double %2) #0 {
 entry:
   %3 = fptosi double %2 to i64
-  %4 = icmp slt i64 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp sgt i64 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

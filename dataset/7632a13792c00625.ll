@@ -4,7 +4,7 @@
 ; openssl/optimized/openssl-bin-dsa.ll
 ; openssl/optimized/openssl-bin-ec.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = select i1 %1, i1 true, i1 %3
@@ -20,7 +20,7 @@ entry:
 ; openmpi/optimized/onesided_aggregation.ll
 ; redis/optimized/db.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %1, i1 true, i1 %3
@@ -32,7 +32,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/readdb.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000008c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 73
   %4 = select i1 %1, i1 true, i1 %3
@@ -44,7 +44,7 @@ entry:
 ; 1 occurrences:
 ; meshoptimizer/optimized/overdrawanalyzer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func00000000000000ca(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 1
   %4 = select i1 %1, i1 true, i1 %3
@@ -59,7 +59,7 @@ entry:
 ; redis/optimized/expire.ll
 ; wireshark/optimized/packet-mac-lte.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000018c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = select i1 %1, i1 true, i1 %3
@@ -71,7 +71,7 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/dl_mk_scale.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 4
   %4 = select i1 %1, i1 true, i1 %3

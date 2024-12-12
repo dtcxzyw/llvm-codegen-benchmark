@@ -16,11 +16,11 @@ entry:
 ; icu/optimized/double-conversion-fast-dtoa.ll
 ; openusd/optimized/fast-dtoa.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ule i32 %1, %2
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -31,7 +31,7 @@ define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %1, %2
   %4 = zext i1 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -39,7 +39,7 @@ entry:
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; openspiel/optimized/Moves.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %0, 22
   %.not = icmp eq i32 %1, %2
@@ -51,11 +51,11 @@ entry:
 ; icu/optimized/csrsbcs.ll
 ; openmpi/optimized/netpatterns_knomial_tree.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000003a(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000006a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sle i32 %1, %2
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -66,29 +66,18 @@ define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ule i32 %1, %2
   %4 = sext i1 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
 ; 1 occurrences:
 ; icu/optimized/calendar.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sge i32 %1, %2
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
-  ret i32 %5
-}
-
-; 1 occurrences:
-; icu/optimized/gregocal.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %0, -7
-  %4 = icmp ult i32 %1, %2
-  %5 = select i1 %4, i32 %0, i32 %3
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 

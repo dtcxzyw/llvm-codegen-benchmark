@@ -1,5 +1,5 @@
 
-; 112 occurrences:
+; 113 occurrences:
 ; clamav/optimized/pe.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/fse_compress.c.ll
@@ -62,7 +62,6 @@
 ; llvm/optimized/MemoryBuiltins.cpp.ll
 ; llvm/optimized/MicrosoftMangle.cpp.ll
 ; llvm/optimized/ODRHash.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/Randstruct.cpp.ll
 ; llvm/optimized/RewriteModernObjC.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
@@ -110,6 +109,8 @@
 ; xgboost/optimized/indexed_recordio_split.cc.ll
 ; xgboost/optimized/recordio.cc.ll
 ; xgboost/optimized/recordio_split.cc.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; zstd/optimized/fse_compress.c.ll
 ; zstd/optimized/zstd_compress_sequences.c.ll
 ; Function Attrs: nounwind

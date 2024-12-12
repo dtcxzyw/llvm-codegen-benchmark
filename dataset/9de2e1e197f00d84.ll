@@ -1,42 +1,5 @@
 
-; 26 occurrences:
-; abc/optimized/giaResub.c.ll
-; abc/optimized/giaSimBase.c.ll
-; darktable/optimized/VC5Decompressor.cpp.ll
-; draco/optimized/sequential_integer_attribute_decoder.cc.ll
-; draco/optimized/sequential_integer_attribute_encoder.cc.ll
-; draco/optimized/sequential_normal_attribute_encoder.cc.ll
-; libwebp/optimized/buffer_dec.c.ll
-; lightgbm/optimized/train_share_states.cpp.ll
-; llama.cpp/optimized/ggml.c.ll
-; ncnn/optimized/convolution_x86.cpp.ll
-; ncnn/optimized/convolution_x86_avx.cpp.ll
-; ncnn/optimized/convolution_x86_avx2.cpp.ll
-; ncnn/optimized/convolution_x86_avx512.cpp.ll
-; ncnn/optimized/convolution_x86_fma.cpp.ll
-; ncnn/optimized/gemm_x86.cpp.ll
-; ncnn/optimized/gemm_x86_avx.cpp.ll
-; ncnn/optimized/gemm_x86_avx512.cpp.ll
-; ncnn/optimized/gemm_x86_fma.cpp.ll
-; opencv/optimized/stereo_binary_sgbm.cpp.ll
-; openssl/optimized/libcrypto-lib-bsearch.ll
-; openssl/optimized/libcrypto-shlib-bsearch.ll
-; openusd/optimized/tessellation.cpp.ll
-; php/optimized/cdf.ll
-; recastnavigation/optimized/RecastMesh.cpp.ll
-; sqlite/optimized/sqlite3.ll
-; yosys/optimized/booth.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000016(ptr %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %1, -1
-  %5 = mul nsw i64 %4, %3
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
-  ret ptr %6
-}
-
-; 60 occurrences:
+; 52 occurrences:
 ; arrow/optimized/coo_converter.cc.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
@@ -56,23 +19,16 @@ entry:
 ; ncnn/optimized/mat_pixel_rotate.cpp.ll
 ; ncnn/optimized/padding.cpp.ll
 ; openblas/optimized/dgbbrd.c.ll
-; openblas/optimized/dgbtf2.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dgegv.c.ll
 ; openblas/optimized/dgejsv.c.ll
-; openblas/optimized/dgesc2.c.ll
 ; openblas/optimized/dgesvdq.c.ll
-; openblas/optimized/dgetri.c.ll
 ; openblas/optimized/dggev.c.ll
 ; openblas/optimized/dggev3.c.ll
 ; openblas/optimized/dggevx.c.ll
 ; openblas/optimized/dlaein.c.ll
 ; openblas/optimized/dlagge.c.ll
 ; openblas/optimized/dlahr2.c.ll
-; openblas/optimized/dlaqp2rk.c.ll
 ; openblas/optimized/dlasr.c.ll
-; openblas/optimized/dlasyf_aa.c.ll
-; openblas/optimized/dlatdf.c.ll
 ; openblas/optimized/dlatrs3.c.ll
 ; openblas/optimized/dorbdb.c.ll
 ; openblas/optimized/dorbdb1.c.ll
@@ -83,7 +39,6 @@ entry:
 ; openblas/optimized/dsytri2x.c.ll
 ; openblas/optimized/dsytri_3x.c.ll
 ; openblas/optimized/dtgevc.c.ll
-; openblas/optimized/dtrsna.c.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/calibinit.cpp.ll
 ; opencv/optimized/dis_flow.cpp.ll
@@ -131,6 +86,41 @@ entry:
   ret ptr %6
 }
 
+; 24 occurrences:
+; abc/optimized/giaResub.c.ll
+; abc/optimized/giaSimBase.c.ll
+; darktable/optimized/VC5Decompressor.cpp.ll
+; draco/optimized/sequential_integer_attribute_decoder.cc.ll
+; draco/optimized/sequential_integer_attribute_encoder.cc.ll
+; draco/optimized/sequential_normal_attribute_encoder.cc.ll
+; libwebp/optimized/buffer_dec.c.ll
+; lightgbm/optimized/train_share_states.cpp.ll
+; llama.cpp/optimized/ggml.c.ll
+; ncnn/optimized/convolution_x86.cpp.ll
+; ncnn/optimized/convolution_x86_avx.cpp.ll
+; ncnn/optimized/convolution_x86_avx2.cpp.ll
+; ncnn/optimized/convolution_x86_avx512.cpp.ll
+; ncnn/optimized/convolution_x86_fma.cpp.ll
+; ncnn/optimized/gemm_x86.cpp.ll
+; ncnn/optimized/gemm_x86_avx.cpp.ll
+; ncnn/optimized/gemm_x86_avx512.cpp.ll
+; ncnn/optimized/gemm_x86_fma.cpp.ll
+; opencv/optimized/stereo_binary_sgbm.cpp.ll
+; openusd/optimized/tessellation.cpp.ll
+; php/optimized/cdf.ll
+; recastnavigation/optimized/RecastMesh.cpp.ll
+; sqlite/optimized/sqlite3.ll
+; yosys/optimized/booth.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000016(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = add nsw i64 %1, 1
+  %5 = mul nsw i64 %4, %3
+  %6 = getelementptr nusw float, ptr %0, i64 %5
+  ret ptr %6
+}
+
 ; 4 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; ncnn/optimized/padding.cpp.ll
@@ -165,7 +155,7 @@ entry:
   ret ptr %6
 }
 
-; 63 occurrences:
+; 57 occurrences:
 ; abc/optimized/intCheck.c.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; darktable/optimized/introspection_clahe.c.ll
@@ -186,13 +176,12 @@ entry:
 ; gromacs/optimized/ssymv.cpp.ll
 ; gromacs/optimized/ssyr2k.cpp.ll
 ; gromacs/optimized/strsm.cpp.ll
-; llama.cpp/optimized/ggml.c.ll
+; meshlab/optimized/filter_img_patch_param.cpp.ll
+; meshlab/optimized/filter_texture.cpp.ll
 ; openblas/optimized/dbdsdc.c.ll
-; openblas/optimized/dgbcon.c.ll
 ; openblas/optimized/dgees.c.ll
 ; openblas/optimized/dgeesx.c.ll
 ; openblas/optimized/dgesvj.c.ll
-; openblas/optimized/dgetri.c.ll
 ; openblas/optimized/dgghd3.c.ll
 ; openblas/optimized/dgsvj0.c.ll
 ; openblas/optimized/dgsvj1.c.ll
@@ -211,19 +200,14 @@ entry:
 ; openblas/optimized/dlatmt.c.ll
 ; openblas/optimized/dorbdb.c.ll
 ; openblas/optimized/dorgbr.c.ll
-; openblas/optimized/dorghr.c.ll
-; openblas/optimized/dorgr2.c.ll
 ; openblas/optimized/dorgtsqr.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; openblas/optimized/dstedc.c.ll
 ; openblas/optimized/dsteqr.c.ll
 ; openblas/optimized/dsytrd_sb2st.c.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
-; openblas/optimized/dtfttr.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; openblas/optimized/dtrevc.c.ll
 ; openblas/optimized/dtrevc3.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/bitmatrixparser.cpp.ll
 ; opencv/optimized/msd.cpp.ll
@@ -242,12 +226,12 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
   %5 = mul nuw nsw i64 %4, %3
-  %6 = getelementptr nusw i16, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i16, ptr %0, i64 %5
   ret ptr %6
 }
 

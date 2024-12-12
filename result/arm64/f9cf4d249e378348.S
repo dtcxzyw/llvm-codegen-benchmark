@@ -1,4 +1,4 @@
-func0000000000000025:                   // @func0000000000000025
+func0000000000000045:                   // @func0000000000000045
 // %bb.0:                               // %entry
                                         // kill: def $w2 killed $w2 def $x2
 	add	x8, x1, w2, sxth #1
@@ -6,7 +6,7 @@ func0000000000000025:                   // @func0000000000000025
 	cset	w0, ls
 	ret
                                         // -- End function
-func0000000000000028:                   // @func0000000000000028
+func0000000000000048:                   // @func0000000000000048
 // %bb.0:                               // %entry
                                         // kill: def $w2 killed $w2 def $x2
 	add	x8, x1, w2, sxth
@@ -22,7 +22,7 @@ func0000000000000009:                   // @func0000000000000009
 	cset	w0, hs
 	ret
                                         // -- End function
-func0000000000000021:                   // @func0000000000000021
+func0000000000000041:                   // @func0000000000000041
 // %bb.0:                               // %entry
                                         // kill: def $w2 killed $w2 def $x2
 	sxth	x8, w2

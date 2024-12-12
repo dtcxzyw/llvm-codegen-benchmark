@@ -10,7 +10,7 @@
 .LCPI0_1:
 	.short	1                               # 0x1
 	.short	1                               # 0x1
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpandd	.LCPI0_1(%rip){1to4}, %xmm1, %xmm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpcmpeqd	%ymm2, %ymm0, %k1

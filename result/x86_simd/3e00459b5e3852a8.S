@@ -5,7 +5,7 @@ func0000000000000002:                   # @func0000000000000002
 	retq
 func000000000000000a:                   # @func000000000000000a
 	vpsrad	$16, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpsrld	$1, %ymm0, %ymm0
 	retq
 func0000000000000000:                   # @func0000000000000000

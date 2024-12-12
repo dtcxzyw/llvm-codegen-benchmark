@@ -26,13 +26,13 @@ entry:
 ; abc/optimized/lpkAbcMux.c.ll
 ; qemu/optimized/hw_pci_msi.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0) #0 {
+define i1 @func0000000000000018(i32 %0) #0 {
 entry:
   %1 = lshr i32 %0, 1
   %2 = and i32 %1, 7
   %3 = lshr i32 %0, 4
   %4 = and i32 %3, 7
-  %5 = icmp ugt i32 %4, %2
+  %5 = icmp samesign ugt i32 %4, %2
   ret i1 %5
 }
 

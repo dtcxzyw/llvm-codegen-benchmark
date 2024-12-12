@@ -7,7 +7,7 @@ func0000000000000000:                   # @func0000000000000000
 	vzext.vf2	v11, v10
 	vfwcvt.f.xu.v	v12, v11
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vfmul.vv	v8, v12, v8
+	vfmul.vv	v8, v8, v12
 	ret
 func0000000000000004:                   # @func0000000000000004
 	vsetivli	zero, 8, e16, m1, ta, ma
@@ -18,5 +18,5 @@ func0000000000000004:                   # @func0000000000000004
 	vzext.vf2	v11, v10
 	vfwcvt.f.xu.v	v12, v11
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vfmul.vv	v8, v12, v8
+	vfmul.vv	v8, v8, v12
 	ret

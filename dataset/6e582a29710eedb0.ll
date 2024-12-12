@@ -9,7 +9,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
   %4 = zext i32 %0 to i64
-  %5 = icmp sgt i64 %4, %1
+  %5 = icmp slt i64 %1, %4
   %6 = select i1 %5, i32 %3, i32 %0
   ret i32 %6
 }
@@ -22,7 +22,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -1
   %4 = zext i32 %0 to i64
-  %5 = icmp ugt i64 %4, %1
+  %5 = icmp ult i64 %1, %4
   %6 = select i1 %5, i32 %3, i32 %0
   ret i32 %6
 }

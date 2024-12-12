@@ -36,3 +36,22 @@ func000000000000000c:                   # @func000000000000000c
 	andi	a0, a2, 255
 	snez	a0, a0
 	ret
+func0000000000000018:                   # @func0000000000000018
+	andi	a3, a0, 1
+	bnez	a3, .LBB4_2
+	mv	a0, a1
+	ret
+.LBB4_2:
+	andi	a0, a2, 255
+	sltiu	a0, a0, 2
+	xori	a0, a0, 1
+	ret
+func0000000000000014:                   # @func0000000000000014
+	andi	a3, a0, 1
+	bnez	a3, .LBB5_2
+	mv	a0, a1
+	ret
+.LBB5_2:
+	andi	a0, a2, 255
+	sltiu	a0, a0, 3
+	ret

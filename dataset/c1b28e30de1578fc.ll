@@ -12,7 +12,7 @@ entry:
   ret i32 %5
 }
 
-; 19 occurrences:
+; 20 occurrences:
 ; abc/optimized/amapMerge.c.ll
 ; hermes/optimized/HBC.cpp.ll
 ; hermes/optimized/JSLexer.cpp.ll
@@ -26,6 +26,7 @@ entry:
 ; linux/optimized/stackdepot.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/vt.ll
+; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; qemu/optimized/disas_riscv.c.ll
 ; qemu/optimized/target_riscv_debug.c.ll
 ; qemu/optimized/target_riscv_translate.c.ll

@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 17 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; flac/optimized/decode.c.ll
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
@@ -15,16 +15,18 @@
 ; slurm/optimized/job_mgr.ll
 ; xgboost/optimized/cpu_predictor.cc.ll
 ; xgboost/optimized/gblinear.cc.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = mul i64 %4, %0
   ret i64 %5
 }
 
-; 15 occurrences:
+; 17 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; darktable/optimized/introspection_colorreconstruction.c.ll
 ; flac/optimized/md5.c.ll
@@ -40,11 +42,13 @@ entry:
 ; pbrt-v4/optimized/image.cpp.ll
 ; qemu/optimized/hw_display_edid-generate.c.ll
 ; slurm/optimized/gres_select_util.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw i64 %3, %1
+  %4 = mul nuw i64 %1, %3
   %5 = mul i64 %4, %0
   ret i64 %5
 }
@@ -57,7 +61,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = mul i64 %4, %0
   ret i64 %5
 }
@@ -72,37 +76,44 @@ entry:
 define i64 @func000000000000001f(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = mul nuw nsw i64 %4, %0
   ret i64 %5
 }
 
-; 3 occurrences:
+; 7 occurrences:
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; libwebp/optimized/pngdec.c.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = mul nuw nsw i64 %4, %0
   ret i64 %5
 }
 
-; 6 occurrences:
+; 9 occurrences:
 ; darktable/optimized/DeflateDecompressor.cpp.ll
 ; darktable/optimized/NefDecoder.cpp.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; image-rs/optimized/1clnprdgqfw2q9lq.ll
 ; oiio/optimized/tiffinput.cpp.ll
+; openusd/optimized/aom_image.c.ll
 ; slurm/optimized/job_mgr.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
-  %5 = mul i64 %4, %0
+  %4 = mul nuw nsw i64 %1, %3
+  %5 = mul i64 %0, %4
   ret i64 %5
 }
 
@@ -112,7 +123,7 @@ entry:
 define i64 @func000000000000000b(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw i64 %3, %1
+  %4 = mul nuw i64 %1, %3
   %5 = mul nuw nsw i64 %4, %0
   ret i64 %5
 }
@@ -157,7 +168,7 @@ entry:
 define i64 @func0000000000000010(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = mul i64 %4, %0
   ret i64 %5
 }
@@ -196,7 +207,7 @@ entry:
 define i64 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = mul i64 %4, %0
   ret i64 %5
 }
@@ -227,8 +238,8 @@ entry:
 define i64 @func000000000000001c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
-  %5 = mul i64 %4, %0
+  %4 = mul nuw nsw i64 %1, %3
+  %5 = mul i64 %0, %4
   ret i64 %5
 }
 
@@ -238,7 +249,7 @@ entry:
 define i64 @func0000000000000018(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nuw i64 %3, %1
+  %4 = mul nuw i64 %1, %3
   %5 = mul i64 %4, %0
   ret i64 %5
 }
@@ -252,7 +263,7 @@ entry:
 define i64 @func0000000000000011(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = mul nsw i64 %4, %0
   ret i64 %5
 }
@@ -263,7 +274,7 @@ entry:
 define i64 @func0000000000000015(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = mul nsw i64 %4, %0
   ret i64 %5
 }
@@ -277,7 +288,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = mul nsw i64 %4, %0
   ret i64 %5
 }
@@ -289,7 +300,7 @@ entry:
 define i64 @func000000000000000e(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = mul nuw i64 %4, %0
   ret i64 %5
 }
@@ -300,7 +311,7 @@ entry:
 define i64 @func000000000000001e(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = mul nuw i64 %4, %0
   ret i64 %5
 }
@@ -311,7 +322,7 @@ entry:
 define i64 @func000000000000001d(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = mul nsw i64 %4, %0
   ret i64 %5
 }

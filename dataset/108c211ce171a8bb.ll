@@ -1,8 +1,10 @@
 
-; 15 occurrences:
+; 17 occurrences:
+; boost/optimized/area.ll
 ; curl/optimized/libcurl_la-version.ll
 ; memcached/optimized/memcached-itoa_ljust.ll
 ; memcached/optimized/memcached_debug-itoa_ljust.ll
+; nuttx/optimized/lib_gmtimer.c.ll
 ; postgres/optimized/d2s.ll
 ; postgres/optimized/d2s_shlib.ll
 ; postgres/optimized/d2s_srv.ll

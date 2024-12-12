@@ -1,16 +1,30 @@
 
-%"class.Ipopt::TripletToCSRConverter::TripletEntry.2496215" = type { i32, i32, i32 }
-%"class.std::vector.112.2710966" = type { %"struct.std::_Vector_base.113.2710967" }
-%"struct.std::_Vector_base.113.2710967" = type { %"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl.2710968" }
-%"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl.2710968" = type { %"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl_data.2710969" }
-%"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl_data.2710969" = type { ptr, ptr, ptr }
+%"class.Ipopt::TripletToCSRConverter::TripletEntry.2611489" = type { i32, i32, i32 }
+%"class.std::vector.112.2823556" = type { %"struct.std::_Vector_base.113.2823557" }
+%"struct.std::_Vector_base.113.2823557" = type { %"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl.2823558" }
+%"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl.2823558" = type { %"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl_data.2823559" }
+%"struct.std::_Vector_base<unsigned int, std::allocator<unsigned int>>::_Vector_impl_data.2823559" = type { ptr, ptr, ptr }
+%"struct.duckdb::UnifiedVectorFormat.2951771" = type { ptr, ptr, %"struct.duckdb::ValidityMask.2951753", %"struct.duckdb::SelectionVector.2951772" }
+%"struct.duckdb::ValidityMask.2951753" = type { %"struct.duckdb::TemplatedValidityMask.2951755" }
+%"struct.duckdb::TemplatedValidityMask.2951755" = type { ptr, %"class.std::shared_ptr.58.2951756", i64 }
+%"class.std::shared_ptr.58.2951756" = type { %"class.std::__shared_ptr.59.2951757" }
+%"class.std::__shared_ptr.59.2951757" = type { ptr, %"class.std::__shared_count.2951731" }
+%"class.std::__shared_count.2951731" = type { ptr }
+%"struct.duckdb::SelectionVector.2951772" = type { ptr, %"class.std::shared_ptr.64.2951773" }
+%"class.std::shared_ptr.64.2951773" = type { %"class.std::__shared_ptr.65.2951774" }
+%"class.std::__shared_ptr.65.2951774" = type { ptr, %"class.std::__shared_count.2951731" }
+%"struct.llvm::ValueDFS.3317753" = type <{ i32, i32, i32, [4 x i8], ptr, ptr, ptr, i8, [7 x i8] }>
 
-; 149 occurrences:
+; 153 occurrences:
 ; assimp/optimized/3DSLoader.cpp.ll
 ; assimp/optimized/Q3DLoader.cpp.ll
 ; assimp/optimized/SGSpatialSort.cpp.ll
+; assimp/optimized/SMDLoader.cpp.ll
 ; assimp/optimized/SpatialSort.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; ceres/optimized/inner_product_computer.cc.ll
 ; duckdb/optimized/ub_duckdb_storage_statistics.cpp.ll
 ; faiss/optimized/IndexIVFFastScan.cpp.ll
@@ -156,12 +170,12 @@
 ; z3/optimized/dyn_ack.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, -12
-  %5 = getelementptr nusw i8, ptr %0, i64 24
-  %6 = getelementptr nusw %"class.Ipopt::TripletToCSRConverter::TripletEntry.2496215", ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 24
+  %6 = getelementptr nusw %"class.Ipopt::TripletToCSRConverter::TripletEntry.2611489", ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -173,12 +187,11 @@ entry:
   %3 = sub i64 %1, %2
   %4 = sdiv i64 %3, 736
   %5 = getelementptr i8, ptr %0, i64 8
-  %6 = getelementptr %"class.std::vector.112.2710966", ptr %5, i64 %4
+  %6 = getelementptr %"class.std::vector.112.2823556", ptr %5, i64 %4
   ret ptr %6
 }
 
-; 4 occurrences:
-; assimp/optimized/SMDLoader.cpp.ll
+; 3 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string_main.cpp.ll
@@ -186,9 +199,21 @@ entry:
 define ptr @func0000000000000012(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = getelementptr i8, ptr %0, i64 8
-  %5 = sdiv exact i64 %3, 6
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %4 = sdiv exact i64 %3, 104
+  %5 = getelementptr i8, ptr %0, i64 8
+  %6 = getelementptr nusw %"struct.duckdb::UnifiedVectorFormat.2951771", ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 1 occurrences:
+; llvm/optimized/PredicateInfo.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = sdiv exact i64 %3, -48
+  %5 = getelementptr nusw i8, ptr %0, i64 -48
+  %6 = getelementptr nusw %"struct.llvm::ValueDFS.3317753", ptr %5, i64 %4
   ret ptr %6
 }
 

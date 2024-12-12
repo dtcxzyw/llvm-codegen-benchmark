@@ -1,5 +1,5 @@
 
-; 121 occurrences:
+; 122 occurrences:
 ; abc/optimized/deflate.c.ll
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
 ; arrow/optimized/light_array.cc.ll
@@ -59,6 +59,8 @@
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; llvm/optimized/TokenLexer.cpp.ll
 ; luajit/optimized/minilua.ll
+; lvgl/optimized/lv_display.ll
+; lvgl/optimized/lv_label.ll
 ; minetest/optimized/CIrrDeviceSDL.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/content_mapblock.cpp.ll
@@ -103,7 +105,6 @@
 ; pybind11/optimized/test_tagbased_polymorphic.cpp.ll
 ; pybind11/optimized/test_type_caster_pyobject_ptr.cpp.ll
 ; qemu/optimized/block_file-posix.c.ll
-; qemu/optimized/chardev_msmouse.c.ll
 ; redis/optimized/jemalloc.ll
 ; redis/optimized/jemalloc.sym.ll
 ; redis/optimized/lgc.ll
@@ -125,7 +126,7 @@
 define i8 @func0000000000000003(i8 %0, i8 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i8 3, i8 0
-  %4 = or disjoint i8 %3, %1
+  %4 = or disjoint i8 %1, %3
   %5 = or disjoint i8 %4, %0
   ret i8 %5
 }
@@ -153,15 +154,16 @@ entry:
 define i8 @func0000000000000002(i8 %0, i8 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i8 4, i8 0
-  %4 = or disjoint i8 %3, %1
+  %4 = or disjoint i8 %1, %3
   %5 = or i8 %4, %0
   ret i8 %5
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; arrow/optimized/light_array.cc.ll
 ; c3c/optimized/sema_expr.c.ll
 ; lief/optimized/ccm.c.ll
+; linux/optimized/keyboard.ll
 ; llvm/optimized/ComputeDependence.cpp.ll
 ; ockam-rs/optimized/r526c2e8kd9diy6.ll
 ; opencv/optimized/orb.cpp.ll
@@ -169,12 +171,12 @@ entry:
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; yalantinglibs/optimized/benchmark.cpp.ll
-; yalantinglibs/optimized/serialize_config.cpp.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0, i8 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i8 4, i8 0
-  %4 = or i8 %3, %1
+  %4 = or i8 %1, %3
   %5 = or i8 %4, %0
   ret i8 %5
 }
@@ -185,7 +187,7 @@ entry:
 define i8 @func0000000000000001(i8 %0, i8 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i8 6, i8 0
-  %4 = or i8 %3, %1
+  %4 = or i8 %1, %3
   %5 = or disjoint i8 %4, %0
   ret i8 %5
 }

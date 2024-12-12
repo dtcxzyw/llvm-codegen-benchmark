@@ -1,6 +1,13 @@
 
-; 15 occurrences:
+; 22 occurrences:
 ; abc/optimized/bmcMaj2.c.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; darktable/optimized/NefDecoder.cpp.ll
 ; gromacs/optimized/type.cpp.ll
 ; grpc/optimized/grpc_authorization_engine.cc.ll
@@ -19,12 +26,19 @@
 define i32 @func0000000000000002(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
-  %3 = xor i1 %2, %0
+  %3 = xor i1 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
 
-; 15 occurrences:
+; 22 occurrences:
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; darktable/optimized/introspection_temperature.c.ll
 ; freetype/optimized/ftstroke.c.ll

@@ -1,5 +1,5 @@
 
-; 1619 occurrences:
+; 1674 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/satStore.c.ll
 ; abc/optimized/utilNam.c.ll
@@ -58,6 +58,64 @@
 ; assimp/optimized/glTFImporter.cpp.ll
 ; assimp/optimized/mesh_splitter.cpp.ll
 ; assimp/optimized/sweep_context.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/copy_segment_point.ll
+; boost/optimized/env.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/ext.ll
+; boost/optimized/extensions.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/graphml.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/partition.ll
+; boost/optimized/pid.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/process.ll
+; boost/optimized/run_exe.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/settings_parser.ll
+; boost/optimized/shell.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/static_string.ll
+; boost/optimized/sub_launcher.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/throw_on_error.ll
+; boost/optimized/to_chars.ll
+; boost/optimized/topology.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
+; boost/optimized/within.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
+; boost/optimized/write_dsv.ll
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/einstein.cpp.ll
@@ -470,7 +528,6 @@
 ; linux/optimized/rx.ll
 ; linux/optimized/skbuff.ll
 ; linux/optimized/virtio_net.ll
-; linux/optimized/wep.ll
 ; linux/optimized/wpa.ll
 ; llama.cpp/optimized/common.cpp.ll
 ; llama.cpp/optimized/llama.cpp.ll
@@ -838,6 +895,7 @@
 ; luau/optimized/BuiltinDefinitions.cpp.ll
 ; luau/optimized/BytecodeBuilder.cpp.ll
 ; luau/optimized/main.cpp.ll
+; lvgl/optimized/lv_svg_parser.ll
 ; lz4/optimized/lz4hc.c.ll
 ; meshlab/optimized/action_searcher.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
@@ -856,7 +914,6 @@
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -1007,7 +1064,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -1291,7 +1347,6 @@
 ; postgres/optimized/inet_net_ntop.ll
 ; postgres/optimized/inet_net_ntop_shlib.ll
 ; postgres/optimized/inet_net_ntop_srv.ll
-; proj/optimized/io.cpp.ll
 ; protobuf/optimized/coded_stream.cc.ll
 ; protobuf/optimized/csharp_message.cc.ll
 ; protobuf/optimized/descriptor.cc.ll
@@ -1305,6 +1360,7 @@
 ; proxygen/optimized/HTTP2PriorityQueue.cpp.ll
 ; qemu/optimized/accel_tcg_translate-all.c.ll
 ; qemu/optimized/block.c.ll
+; qemu/optimized/migration_qemu-file.c.ll
 ; quantlib/optimized/analytic_discr_geom_av_price_heston.ll
 ; quantlib/optimized/asianoption.ll
 ; quantlib/optimized/cmsmarketcalibration.ll
@@ -1350,8 +1406,6 @@
 ; rocksdb/optimized/vectorrep.cc.ll
 ; rocksdb/optimized/version_set.cc.ll
 ; rocksdb/optimized/write_prepared_txn_db.cc.ll
-; ruby/optimized/utf_16be.ll
-; ruby/optimized/utf_16le.ll
 ; sentencepiece/optimized/bpe_model.cc.ll
 ; sentencepiece/optimized/bpe_model_trainer.cc.ll
 ; sentencepiece/optimized/coded_stream.cc.ll
@@ -1411,6 +1465,7 @@
 ; velox/optimized/Slice.cpp.ll
 ; velox/optimized/SsdFile.cpp.ll
 ; velox/optimized/SsdFileTracker.cpp.ll
+; velox/optimized/SwitchExpr.cpp.ll
 ; velox/optimized/ToUtf8.cpp.ll
 ; velox/optimized/Transform.cpp.ll
 ; velox/optimized/TransformKeys.cpp.ll
@@ -1501,7 +1556,6 @@
 ; yosys/optimized/greenpak4_dffinv.ll
 ; yosys/optimized/hierarchy.ll
 ; yosys/optimized/ice40_dsp.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/ltp.ll
 ; yosys/optimized/mem.ll
 ; yosys/optimized/memory_bram.ll
@@ -1617,6 +1671,7 @@
 ; zstd/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_fast.c.ll
 ; zstd/optimized/zstd_lazy.c.ll
+; zxing/optimized/Content.cpp.ll
 ; zxing/optimized/PDFHighLevelEncoder.cpp.ll
 ; zxing/optimized/QRMatrixUtil.cpp.ll
 ; Function Attrs: nounwind
@@ -1624,12 +1679,12 @@ define i1 @func0000000000000001(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
-  %4 = and i64 %3, -9223372036854775807
-  %5 = icmp eq i64 %4, 1
+  %4 = and i64 %3, 4
+  %5 = icmp eq i64 %4, 0
   ret i1 %5
 }
 
-; 73 occurrences:
+; 72 occurrences:
 ; assimp/optimized/MS3DLoader.cpp.ll
 ; hermes/optimized/Callable.cpp.ll
 ; hermes/optimized/Interpreter-slowpaths.cpp.ll
@@ -1702,9 +1757,8 @@ entry:
 ; openjdk/optimized/zUncommitter.ll
 ; openjdk/optimized/zUnmapper.ll
 ; redis/optimized/util.ll
-; stockfish/optimized/tbprobe.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000018(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
@@ -1777,12 +1831,24 @@ entry:
 ; wireshark/optimized/rfc7468.c.ll
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000014(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
   %4 = and i64 %3, 4294967294
-  %5 = icmp ult i64 %4, 6
+  %5 = icmp samesign ult i64 %4, 6
+  ret i1 %5
+}
+
+; 1 occurrences:
+; stockfish/optimized/tbprobe.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i64 %0, ptr %1) #0 {
+entry:
+  %2 = ptrtoint ptr %1 to i64
+  %3 = sub i64 %2, %0
+  %4 = and i64 %3, -9223372036854775745
+  %5 = icmp ugt i64 %4, -9223372036854775808
   ret i1 %5
 }
 

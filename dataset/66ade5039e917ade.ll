@@ -68,8 +68,7 @@ entry:
   ret i1 %3
 }
 
-; 15 occurrences:
-; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
+; 14 occurrences:
 ; jemalloc/optimized/tcache.ll
 ; jemalloc/optimized/tcache.pic.ll
 ; jemalloc/optimized/tcache.sym.ll
@@ -105,7 +104,7 @@ entry:
 ; 1 occurrences:
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000026(i16 %0, i16 %1) #0 {
 entry:
   %2 = icmp slt i16 %0, %1
   ret i1 %2
@@ -116,7 +115,7 @@ entry:
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i16 %0, i16 %1) #0 {
+define i1 @func000000000000002a(i16 %0, i16 %1) #0 {
 entry:
   %2 = sub nsw i16 %0, %1
   %3 = icmp sgt i16 %2, 28
@@ -127,7 +126,7 @@ entry:
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000028(i16 %0, i16 %1) #0 {
 entry:
   %2 = sub nsw i16 %0, %1
   %3 = icmp ugt i16 %2, 31
@@ -138,7 +137,7 @@ entry:
 ; ockam-rs/optimized/2c367xut2lvnpep0.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000024(i16 %0, i16 %1) #0 {
 entry:
   %2 = sub nsw i16 %0, %1
   %3 = icmp ult i16 %2, 16384
@@ -173,29 +172,29 @@ entry:
 }
 
 ; 1 occurrences:
-; openusd/optimized/zipFile.cpp.ll
+; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000014(i16 %0, i16 %1) #0 {
 entry:
-  %2 = sub nuw nsw i16 %0, %1
-  %3 = icmp ugt i16 %2, 3
+  %2 = sub i16 %0, %1
+  %3 = icmp samesign ult i16 %2, -19
   ret i1 %3
 }
 
 ; 1 occurrences:
-; openusd/optimized/zipFile.cpp.ll
+; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000018(i16 %0, i16 %1) #0 {
 entry:
-  %2 = sub nuw nsw i16 %0, %1
-  %3 = icmp ult i16 %2, 69
+  %2 = sub i16 %0, %1
+  %3 = icmp samesign ugt i16 %2, -8
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; openusd/optimized/path.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000048(i16 %0, i16 %1) #0 {
 entry:
   %2 = sub nuw i16 %0, %1
   %3 = icmp ugt i16 %2, 16
@@ -207,7 +206,7 @@ entry:
 ; wireshark/optimized/packet-dvb-s2-bb.c.ll
 ; wireshark/optimized/vwr.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000044(i16 %0, i16 %1) #0 {
 entry:
   %2 = sub nuw i16 %0, %1
   %3 = icmp ult i16 %2, 4

@@ -114,7 +114,7 @@ entry:
 ; clamav/optimized/fmap.c.ll
 ; oiio/optimized/imageio.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = icmp eq i64 %0, 0
@@ -126,7 +126,7 @@ entry:
 ; arrow/optimized/grouper.cc.ll
 ; oiio/optimized/thread.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000026(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = icmp slt i64 %0, 1

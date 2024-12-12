@@ -1,5 +1,6 @@
 
-; 119 occurrences:
+; 132 occurrences:
+; abseil-cpp/optimized/str_split_test.cc.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; freetype/optimized/pfr.c.ll
@@ -95,10 +96,13 @@
 ; gromacs/optimized/kernel_ElecRF_VdwLJ_VgrpF.cpp.ll
 ; gromacs/optimized/kernel_ref.cpp.ll
 ; image-rs/optimized/fyek6fuqg0ocunt.ll
+; imgui/optimized/imgui.cpp.ll
 ; libpng/optimized/pngrtran.c.ll
 ; libquic/optimized/strike_register.cc.ll
 ; linux/optimized/hsu.ll
 ; linux/optimized/i915_hwmon.ll
+; linux/optimized/libahci.ll
+; linux/optimized/uncore_nhmex.ll
 ; linux/optimized/x_tables.ll
 ; llvm/optimized/DeclObjC.cpp.ll
 ; llvm/optimized/PeepholeOptimizer.cpp.ll
@@ -114,11 +118,20 @@
 ; openusd/optimized/catmarkPatchBuilder.cpp.ll
 ; openusd/optimized/grain_synthesis.c.ll
 ; openusd/optimized/rigidBodyAPI.cpp.ll
+; protobuf/optimized/command_line_interface.cc.ll
+; protobuf/optimized/descriptor.cc.ll
+; protobuf/optimized/descriptor_database.cc.ll
+; protobuf/optimized/field_mask_util.cc.ll
+; protobuf/optimized/file.cc.ll
+; protobuf/optimized/map.cc.ll
 ; qemu/optimized/block_vvfat.c.ll
+; qemu/optimized/hw_dma_sifive_pdma.c.ll
 ; qemu/optimized/hw_usb_hcd-ehci.c.ll
+; qemu/optimized/hw_usb_hcd-uhci.c.ll
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rmodels.c.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
+; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i32 %0) #0 {
 entry:

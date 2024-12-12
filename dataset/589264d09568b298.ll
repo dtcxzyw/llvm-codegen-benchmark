@@ -32,6 +32,31 @@ entry:
   ret i32 %5
 }
 
+; 4 occurrences:
+; icu/optimized/utrie2.ll
+; linux/optimized/vlv_dsi.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
+; wireshark/optimized/packet-scte35.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000003f(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl nuw nsw i32 %1, %2
+  %4 = add nuw nsw i32 %0, 8
+  %5 = add nuw nsw i32 %4, %3
+  ret i32 %5
+}
+
+; 1 occurrences:
+; openusd/optimized/restoration.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %2, -1
+  %4 = shl i32 %0, %1
+  %5 = add nsw i32 %4, %3
+  ret i32 %5
+}
+
 ; 1 occurrences:
 ; openusd/optimized/decodeframe.c.ll
 ; Function Attrs: nounwind
@@ -51,19 +76,6 @@ entry:
   %3 = shl nuw nsw i32 %1, %2
   %4 = add nsw i32 %0, 17
   %5 = add nuw i32 %4, %3
-  ret i32 %5
-}
-
-; 3 occurrences:
-; icu/optimized/utrie2.ll
-; linux/optimized/vlv_dsi.ll
-; wireshark/optimized/packet-scte35.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000003f(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = shl nuw nsw i32 %1, %2
-  %4 = add nuw nsw i32 %0, 1
-  %5 = add nuw nsw i32 %4, %3
   ret i32 %5
 }
 

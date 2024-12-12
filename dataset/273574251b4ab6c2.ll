@@ -25,33 +25,35 @@
 ; zstd/optimized/divsufsort.c.ll
 ; zxing/optimized/GTIN.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 31
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 10 occurrences:
+; 12 occurrences:
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; image-rs/optimized/249ukonr3l56u09i.ll
 ; libwebp/optimized/sharpyuv.c.ll
 ; llama.cpp/optimized/ggml-quants.c.ll
-; opencv/optimized/cap_mjpeg_encoder.cpp.ll
+; lz4/optimized/lz4.c.ll
 ; openjdk/optimized/bcEscapeAnalyzer.ll
 ; openusd/optimized/faceVertex.cpp.ll
+; openusd/optimized/lz4.cpp.ll
 ; php/optimized/ir_sccp.ll
 ; typst-rs/optimized/al9nyr8ju52xbc2.ll
 ; yosys/optimized/calc.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000036(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000037(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = lshr i32 %2, 3
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -68,48 +70,48 @@ entry:
 ; z3/optimized/smt_implied_equalities.cpp.ll
 ; z3/optimized/tab_context.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000026(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000027(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = lshr i32 %2, 5
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i32, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i32, ptr %0, i64 %4
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; darktable/optimized/CrwDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr exact i32 %2, 2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; darktable/optimized/CrwDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = lshr exact i32 %2, 2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; darktable/optimized/CrwDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = lshr exact i32 %2, 2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -129,12 +131,12 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/opt_preprocess.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000002f(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = lshr exact i32 %2, 5
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i32, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i32, ptr %0, i64 %4
   ret ptr %5
 }
 

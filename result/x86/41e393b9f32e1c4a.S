@@ -18,15 +18,13 @@ func0000000000000020:                   # @func0000000000000020
 	leaq	(%rsi,%rsi,4), %rax
 	leaq	-48(%rdi,%rax,2), %rax
 	retq
-func000000000000003d:                   # @func000000000000003d
-	imulq	$100, %rsi, %rcx
-	addq	%rdi, %rcx
-	movl	$4294962396, %eax               # imm = 0xFFFFECDC
-	addq	%rcx, %rax
-	retq
 func000000000000003f:                   # @func000000000000003f
 	leaq	(%rsi,%rsi,4), %rax
 	leaq	52(%rdi,%rax,8), %rax
+	retq
+func000000000000003d:                   # @func000000000000003d
+	leaq	(%rsi,%rsi,8), %rax
+	leaq	5(%rdi,%rax,2), %rax
 	retq
 func0000000000000001:                   # @func0000000000000001
 	leaq	(%rsi,%rsi,4), %rax

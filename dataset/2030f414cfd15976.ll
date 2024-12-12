@@ -1,5 +1,5 @@
 
-; 182 occurrences:
+; 179 occurrences:
 ; abc/optimized/acecXor.c.ll
 ; abc/optimized/cecPat.c.ll
 ; abc/optimized/sswConstr.c.ll
@@ -10,7 +10,6 @@
 ; lief/optimized/ChainedFixup.cpp.ll
 ; linux/optimized/insn-eval.ll
 ; linux/optimized/page.ll
-; linux/optimized/scsiglue.ll
 ; linux/optimized/set_memory.ll
 ; linux/optimized/slub.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
@@ -21,7 +20,6 @@
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/LegalizeIntegerTypes.cpp.ll
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
@@ -61,7 +59,6 @@
 ; openmpi/optimized/osc_rdma_component.ll
 ; openmpi/optimized/osc_rdma_peer.ll
 ; openmpi/optimized/pml_cm.ll
-; openmpi/optimized/pml_monitoring_isend.ll
 ; openmpi/optimized/pml_monitoring_start.ll
 ; openmpi/optimized/pml_ob1_comm.ll
 ; openmpi/optimized/pml_ob1_isend.ll

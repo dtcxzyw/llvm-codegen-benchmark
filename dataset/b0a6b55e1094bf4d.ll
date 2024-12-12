@@ -36,11 +36,11 @@
 ; rust-analyzer-rs/optimized/4x4kq4gfl0tghxcw.ll
 ; rust-analyzer-rs/optimized/6geurunh5eorswv.ll
 ; rust-analyzer-rs/optimized/7lpeywhc9n6h2ze.ll
-; slurm/optimized/job_features.ll
 ; spike/optimized/triggers.ll
 ; spike/optimized/vmsof_m.ll
 ; wireshark/optimized/expert_info_dialog.cpp.ll
 ; yosys/optimized/verilog_backend.ll
+; zed-rs/optimized/8x58xp4s22l8izlb56sviitm3.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i64 %1) #0 {
 entry:
@@ -50,7 +50,7 @@ entry:
   ret i1 %4
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; coreutils-rs/optimized/czge978gjagq0cc.ll
 ; cvc5/optimized/statistics_value.cpp.ll
@@ -62,13 +62,12 @@ entry:
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; luau/optimized/Normalize.cpp.ll
 ; openjdk/optimized/freetypeScaler.ll
-; proj/optimized/crs.cpp.ll
-; proj/optimized/io.cpp.ll
 ; rust-analyzer-rs/optimized/2hvuxgck7heujc9c.ll
 ; rust-analyzer-rs/optimized/2zm9eul0ycl9zsz3.ll
 ; rust-analyzer-rs/optimized/547gv31sq3clwal6.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
@@ -89,8 +88,7 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
-; llvm/optimized/AddressSanitizer.cpp.ll
+; 2 occurrences:
 ; llvm/optimized/Clang.cpp.ll
 ; llvm/optimized/SemaARM.cpp.ll
 ; Function Attrs: nounwind

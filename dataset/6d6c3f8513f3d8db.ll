@@ -1,5 +1,5 @@
 
-%struct.desc_struct.3343927 = type { i16, i16, i32 }
+%struct.desc_struct.3532780 = type { i16, i16, i32 }
 
 ; 6 occurrences:
 ; linux/optimized/ehci-hcd.ll
@@ -17,7 +17,8 @@ entry:
   ret ptr %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/static_string.ll
 ; clamav/optimized/bytecode_vm.c.ll
 ; icu/optimized/unames.ll
 ; llvm/optimized/LegalizeDAG.cpp.ll
@@ -27,26 +28,39 @@ entry:
 ; openspiel/optimized/go_board.cc.ll
 ; openspiel/optimized/phantom_go_board.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i16 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i16 %1) #0 {
 entry:
   %2 = add i16 %1, -5
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw [3 x float], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [3 x float], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/static_string.ll
 ; llvm/optimized/LegalizeIntegerTypes.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; opencv/optimized/mathfuncs.cpp.ll
 ; stockfish/optimized/position.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i16 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i16 %1) #0 {
 entry:
   %2 = add nuw nsw i16 %1, 2
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr nusw [8 x i64], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [8 x i64], ptr %0, i64 0, i64 %3
+  ret ptr %4
+}
+
+; 2 occurrences:
+; icu/optimized/unames.ll
+; lvgl/optimized/lv_ime_pinyin.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(ptr %0, i16 %1) #0 {
+entry:
+  %2 = add nsw i16 %1, -97
+  %3 = zext i16 %2 to i64
+  %4 = getelementptr nusw nuw [26 x i16], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
@@ -59,7 +73,7 @@ define ptr @func000000000000000c(ptr %0, i16 %1) #0 {
 entry:
   %2 = add nsw i16 %1, -12
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr [3 x %struct.desc_struct.3343927], ptr %0, i64 0, i64 %3
+  %4 = getelementptr [3 x %struct.desc_struct.3532780], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
@@ -82,17 +96,6 @@ entry:
   %2 = add i16 %1, 8
   %3 = zext nneg i16 %2 to i64
   %4 = getelementptr [32 x i8], ptr %0, i64 0, i64 %3
-  ret ptr %4
-}
-
-; 1 occurrences:
-; icu/optimized/unames.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i16 %1) #0 {
-entry:
-  %2 = add nsw i16 %1, -1
-  %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw [8 x i16], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

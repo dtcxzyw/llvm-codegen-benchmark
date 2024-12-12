@@ -1,5 +1,5 @@
 
-; 70 occurrences:
+; 69 occurrences:
 ; assimp/optimized/SplitLargeMeshes.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/mesh_splitter.cpp.ll
@@ -26,11 +26,9 @@
 ; linux/optimized/gss_krb5_crypto.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/icl_dsi.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_fb.ll
 ; linux/optimized/pcm_lib.ll
 ; linux/optimized/regcache-rbtree.ll
-; linux/optimized/scsicam.ll
 ; linux/optimized/vlv_dsi_pll.ll
 ; linux/optimized/xhci-ring.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
@@ -55,6 +53,8 @@
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86ShuffleDecode.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
+; lvgl/optimized/lv_demo_widgets.ll
+; lvgl/optimized/lv_refr.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/filter_ao.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
@@ -69,7 +69,6 @@
 ; ruby/optimized/util.ll
 ; sqlite/optimized/sqlite3.ll
 ; z3/optimized/mpbq.cpp.ll
-; z3/optimized/pb2bv_rewriter.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
@@ -78,7 +77,7 @@ entry:
   ret i32 %3
 }
 
-; 20 occurrences:
+; 19 occurrences:
 ; abc/optimized/giaUtil.c.ll
 ; arrow/optimized/bignum.cc.ll
 ; clamav/optimized/chmd.c.ll
@@ -92,7 +91,6 @@ entry:
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; minetest/optimized/texturesource.cpp.ll
-; opencv/optimized/testset.cpp.ll
 ; openexr/optimized/ImfInputFile.cpp.ll
 ; openjdk/optimized/superword.ll
 ; openmpi/optimized/coll_base_bcast.ll
@@ -107,7 +105,7 @@ entry:
   ret i32 %3
 }
 
-; 10 occurrences:
+; 13 occurrences:
 ; image-rs/optimized/1clnprdgqfw2q9lq.ll
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; libjpeg-turbo/optimized/jcdctmgr.c.ll
@@ -118,6 +116,9 @@ entry:
 ; llvm/optimized/Scalarizer.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; qemu/optimized/block_vvfat.c.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:

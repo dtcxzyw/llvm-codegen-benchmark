@@ -26,5 +26,5 @@ func000000000000007e:                   # @func000000000000007e
 	vadd.vv	v12, v12, v12
 	vadd.vv	v10, v10, v12
 	vadd.vi	v10, v10, 2
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret

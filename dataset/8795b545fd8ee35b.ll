@@ -1,9 +1,10 @@
 
-; 90 occurrences:
+; 95 occurrences:
 ; abc/optimized/giaMuxes.c.ll
 ; abc/optimized/sbdCore.c.ll
 ; abseil-cpp/optimized/demangle.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
+; boost/optimized/utf8_codecvt_facet.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; coreutils-rs/optimized/162a9hv49p91yl4q.ll
 ; coreutils-rs/optimized/1cffnn5jn7gf4ojp.ll
@@ -21,6 +22,7 @@
 ; llvm/optimized/ClangOpenCLBuiltinEmitter.cpp.ll
 ; llvm/optimized/CodeGenModule.cpp.ll
 ; llvm/optimized/LangOptions.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_developability.cpp.ll
@@ -88,6 +90,9 @@
 ; wireshark/optimized/packet-ismacryp.c.ll
 ; wireshark/optimized/tvbuff.c.ll
 ; wireshark/optimized/ws_strptime.c.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; zxing/optimized/PDFDetectionResultColumn.cpp.ll
 ; zxing/optimized/PDFReader.cpp.ll
 ; Function Attrs: nounwind

@@ -1,8 +1,9 @@
 
-; 203 occurrences:
+; 204 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/approximately_equals.ll
 ; clamav/optimized/iso9660.c.ll
 ; clamav/optimized/matcher.c.ll
 ; clamav/optimized/pdf.c.ll
@@ -207,7 +208,7 @@
 define i32 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }
@@ -226,7 +227,7 @@ entry:
 define i32 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }
@@ -239,7 +240,7 @@ entry:
 define i32 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = trunc nsw i64 %3 to i32
   ret i32 %4
 }

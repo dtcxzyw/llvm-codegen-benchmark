@@ -4,7 +4,7 @@ func000000000000000c:                   # @func000000000000000c
 	setne	%al
 	andb	%dil, %al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	addq	%rdx, %rdx
 	cmpq	%rsi, %rdx
 	sete	%al
@@ -22,31 +22,31 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	andb	%dil, %al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	shlq	$2, %rdx
 	cmpq	%rsi, %rdx
 	setg	%al
 	andb	%dil, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	shlq	$3, %rdx
 	cmpq	%rsi, %rdx
 	sete	%al
 	andb	%dil, %al
 	retq
-func0000000000000035:                   # @func0000000000000035
+func0000000000000065:                   # @func0000000000000065
 	shlq	$5, %rdx
 	cmpq	%rsi, %rdx
 	setbe	%al
 	andb	%dil, %al
 	retq
-func0000000000000025:                   # @func0000000000000025
+func0000000000000045:                   # @func0000000000000045
 	shlq	$6, %rdx
 	cmpq	%rsi, %rdx
 	setbe	%al
 	andb	%dil, %al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	addq	%rdx, %rdx
 	cmpq	%rsi, %rdx
 	sete	%al

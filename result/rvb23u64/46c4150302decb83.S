@@ -1,3 +1,12 @@
+func0000000000000007:                   # @func0000000000000007
+	addi	a0, a0, 5
+	lui	a1, 52429
+	slli	a1, a1, 4
+	slli	a0, a0, 48
+	mulhu	a0, a0, a1
+	srli	a0, a0, 19
+	slli	a0, a0, 10
+	ret
 func00000000000000f7:                   # @func00000000000000f7
 	addi	a0, a0, 1
 	lui	a1, 43691

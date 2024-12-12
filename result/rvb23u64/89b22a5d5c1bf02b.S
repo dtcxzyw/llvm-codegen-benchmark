@@ -15,6 +15,16 @@ func0000000000000005:                   # @func0000000000000005
 	or	a0, a0, a1
 	addi	a0, a0, 2
 	ret
+func0000000000000003:                   # @func0000000000000003
+	srli	a2, a2, 52
+	slli	a2, a2, 52
+	or	a0, a0, a2
+	lui	a2, 4095
+	slli	a2, a2, 28
+	and	a1, a1, a2
+	or	a0, a0, a1
+	bseti	a0, a0, 20
+	ret
 func0000000000000000:                   # @func0000000000000000
 	bseti	a3, zero, 59
 	and	a2, a2, a3
@@ -41,15 +51,4 @@ func0000000000000006:                   # @func0000000000000006
 	and	a1, a1, a3
 	or	a0, a0, a1
 	ori	a0, a0, 64
-	ret
-func0000000000000003:                   # @func0000000000000003
-	lui	a3, 65535
-	slli	a3, a3, 12
-	and	a2, a2, a3
-	lui	a3, 16383
-	slli	a3, a3, 36
-	or	a0, a0, a2
-	and	a1, a1, a3
-	or	a0, a0, a1
-	bseti	a0, a0, 62
 	ret

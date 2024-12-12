@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; llvm/optimized/ELFObjectFile.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i8 %0) #0 {
+define i32 @func0000000000000024(i8 %0) #0 {
 entry:
   %1 = and i8 %0, -16
   %2 = icmp eq i8 %1, 32
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-catapult-dct2000.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i8 %0) #0 {
+define i32 @func000000000000002a(i8 %0) #0 {
 entry:
   %1 = and i8 %0, 3
   %2 = icmp eq i8 %1, 1

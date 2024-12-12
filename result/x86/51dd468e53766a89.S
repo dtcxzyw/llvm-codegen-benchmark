@@ -1,36 +1,36 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movslq	%esi, %rax
 	incq	%rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	movslq	%esi, %rax
 	incq	%rax
-	cmpq	%rdi, %rax
-	setb	%al
-	retq
-func0000000000000014:                   # @func0000000000000014
-	movslq	%esi, %rax
-	addq	$8, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	seta	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000024:                   # @func0000000000000024
+	movslq	%esi, %rax
+	addq	$8, %rax
+	cmpq	%rax, %rdi
+	setb	%al
+	retq
+func0000000000000026:                   # @func0000000000000026
 	movslq	%esi, %rax
 	decq	%rax
-	cmpq	%rdi, %rax
-	setg	%al
-	retq
-func000000000000001a:                   # @func000000000000001a
-	movslq	%esi, %rax
-	addq	$-4, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	setl	%al
 	retq
-func0000000000000015:                   # @func0000000000000015
+func000000000000002a:                   # @func000000000000002a
+	movslq	%esi, %rax
+	addq	$-4, %rax
+	cmpq	%rax, %rdi
+	setg	%al
+	retq
+func0000000000000025:                   # @func0000000000000025
 	movslq	%esi, %rax
 	incq	%rax
-	cmpq	%rdi, %rax
-	setae	%al
+	cmpq	%rax, %rdi
+	setbe	%al
 	retq

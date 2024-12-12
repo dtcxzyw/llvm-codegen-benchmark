@@ -38,7 +38,7 @@
 ; taskflow/optimized/scalable_pipeline_with_deferred_tokens.cpp.ll
 ; xgboost/optimized/quantile.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 2
@@ -47,12 +47,11 @@ entry:
   ret i1 %6
 }
 
-; 39 occurrences:
+; 38 occurrences:
 ; casadi/optimized/sparsity.cpp.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; draco/optimized/sequential_integer_attribute_decoder.cc.ll
 ; faiss/optimized/AutoTune.cpp.ll
-; gromacs/optimized/quadraticsplinetable.cpp.ll
 ; hyperscan/optimized/ComponentSequence.cpp.ll
 ; llvm/optimized/BlockFrequencyInfo.cpp.ll
 ; llvm/optimized/MachineBlockFrequencyInfo.cpp.ll
@@ -88,11 +87,11 @@ entry:
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 3
-  %5 = mul i64 %4, %0
+  %5 = mul i64 %0, %4
   %6 = icmp eq i64 %5, 0
   ret i1 %6
 }
@@ -100,7 +99,7 @@ entry:
 ; 1 occurrences:
 ; faiss/optimized/MetaIndexes.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 3

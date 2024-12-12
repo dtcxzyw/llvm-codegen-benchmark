@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000014(i16 %0, i16 %1, i32 %2) #0 {
+define i16 @func0000000000000024(i16 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = icmp ult i32 %3, 3

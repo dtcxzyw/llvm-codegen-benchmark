@@ -3,14 +3,14 @@ func0000000000000001:                   # @func0000000000000001
 	btl	%esi, %edi
 	setae	%al
 	retq
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	addl	%esi, %esi
 	sarxl	%esi, %edi, %eax
 	andl	$3, %eax
 	cmpl	$2, %eax
 	sete	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	shll	$3, %esi
 	sarxl	%esi, %edi, %eax
 	testb	%al, %al

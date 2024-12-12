@@ -50,7 +50,7 @@ define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, 31
   %.masked = and i32 %0, 63
-  %4 = or i32 %3, %.masked
+  %4 = or i32 %.masked, %3
   ret i32 %4
 }
 
@@ -62,7 +62,7 @@ entry:
   %3 = and i32 %2, 8
   %4 = and i32 %1, 2
   %.masked1 = and i32 %0, -5
-  %.masked = or i32 %3, %.masked1
+  %.masked = or i32 %.masked1, %3
   %5 = or i32 %.masked, %4
   ret i32 %5
 }

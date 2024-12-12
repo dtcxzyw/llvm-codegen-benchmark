@@ -42,7 +42,7 @@ entry:
   %3 = sext i1 %2 to i64
   %4 = add nsw i64 %1, 2400
   %5 = add nsw i64 %4, %3
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 

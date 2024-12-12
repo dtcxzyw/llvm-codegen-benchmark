@@ -21,13 +21,13 @@ entry:
 ; 13 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/cuddLinear.c.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; minetest/optimized/content_mapblock.cpp.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; minetest/optimized/mapgen.cpp.ll
 ; minetest/optimized/mapgen_v6.cpp.ll
 ; minetest/optimized/mg_decoration.cpp.ll
 ; minetest/optimized/minimap.cpp.ll
-; minetest/optimized/test_voxelmanipulator.cpp.ll
 ; minetest/optimized/treegen.cpp.ll
 ; minetest/optimized/voxel.cpp.ll
 ; opencv/optimized/dxt.cpp.ll

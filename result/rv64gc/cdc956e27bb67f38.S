@@ -126,45 +126,44 @@ func00000000000000a4:                   # @func00000000000000a4
 	flt.d	a1, fa5, fa0
 	and	a0, a0, a1
 	ret
+.LCPI9_0:
+	.quad	0x0010000000000000              # double 2.2250738585072014E-308
+.LCPI9_1:
+	.quad	0x3ff0000000000000              # double 1
+func00000000000000a2:                   # @func00000000000000a2
+	lui	a0, %hi(.LCPI9_0)
+	fld	fa5, %lo(.LCPI9_0)(a0)
+	fle.d	a0, fa0, fa5
+	bnez	a0, .LBB9_2
+	fmv.d	fa5, fa0
+.LBB9_2:                                # %entry
+	lui	a0, %hi(.LCPI9_1)
+	fld	fa4, %lo(.LCPI9_1)(a0)
+	flt.d	a0, fa5, fa4
+	ret
 func0000000000000028:                   # @func0000000000000028
 	fmv.d.x	fa5, zero
 	flt.d	a0, fa0, fa5
 	fmv.d	fa4, fa5
-	bnez	a0, .LBB9_2
+	bnez	a0, .LBB10_2
 	fmv.d	fa4, fa0
-.LBB9_2:                                # %entry
+.LBB10_2:                               # %entry
 	feq.d	a0, fa4, fa5
 	ret
 func0000000000000021:                   # @func0000000000000021
 	fmv.d.x	fa5, zero
 	flt.d	a0, fa0, fa5
-	bnez	a0, .LBB10_2
-	fmv.d	fa5, fa0
-.LBB10_2:                               # %entry
-	feq.d	a0, fa5, fa5
-	xori	a0, a0, 1
-	ret
-.LCPI11_0:
-	.quad	0x4059000000000000              # double 100
-.LCPI11_1:
-	.quad	0xc069000000000000              # double -200
-func0000000000000045:                   # @func0000000000000045
-	lui	a0, %hi(.LCPI11_0)
-	fld	fa5, %lo(.LCPI11_0)(a0)
-	flt.d	a0, fa5, fa0
 	bnez	a0, .LBB11_2
 	fmv.d	fa5, fa0
 .LBB11_2:                               # %entry
-	lui	a0, %hi(.LCPI11_1)
-	fld	fa4, %lo(.LCPI11_1)(a0)
-	fle.d	a0, fa5, fa4
+	feq.d	a0, fa5, fa5
 	xori	a0, a0, 1
 	ret
 .LCPI12_0:
 	.quad	0x4059000000000000              # double 100
 .LCPI12_1:
-	.quad	0x4069000000000000              # double 200
-func0000000000000043:                   # @func0000000000000043
+	.quad	0xc069000000000000              # double -200
+func0000000000000045:                   # @func0000000000000045
 	lui	a0, %hi(.LCPI12_0)
 	fld	fa5, %lo(.LCPI12_0)(a0)
 	flt.d	a0, fa5, fa0
@@ -173,6 +172,22 @@ func0000000000000043:                   # @func0000000000000043
 .LBB12_2:                               # %entry
 	lui	a0, %hi(.LCPI12_1)
 	fld	fa4, %lo(.LCPI12_1)(a0)
+	fle.d	a0, fa5, fa4
+	xori	a0, a0, 1
+	ret
+.LCPI13_0:
+	.quad	0x4059000000000000              # double 100
+.LCPI13_1:
+	.quad	0x4069000000000000              # double 200
+func0000000000000043:                   # @func0000000000000043
+	lui	a0, %hi(.LCPI13_0)
+	fld	fa5, %lo(.LCPI13_0)(a0)
+	flt.d	a0, fa5, fa0
+	bnez	a0, .LBB13_2
+	fmv.d	fa5, fa0
+.LBB13_2:                               # %entry
+	lui	a0, %hi(.LCPI13_1)
+	fld	fa4, %lo(.LCPI13_1)(a0)
 	fle.d	a0, fa4, fa5
 	xori	a0, a0, 1
 	ret
@@ -180,39 +195,39 @@ func00000000000000a5:                   # @func00000000000000a5
 	fmv.d.x	fa5, zero
 	fle.d	a0, fa0, fa5
 	fmv.d	fa4, fa5
-	bnez	a0, .LBB13_2
+	bnez	a0, .LBB14_2
 	fmv.d	fa4, fa0
-.LBB13_2:                               # %entry
+.LBB14_2:                               # %entry
 	fle.d	a0, fa4, fa5
 	xori	a0, a0, 1
 	ret
-.LCPI14_0:
+.LCPI15_0:
 	.quad	0x3ff0000000000000              # double 1
 func000000000000004e:                   # @func000000000000004e
-	lui	a0, %hi(.LCPI14_0)
-	fld	fa5, %lo(.LCPI14_0)(a0)
-	flt.d	a0, fa5, fa0
-	bnez	a0, .LBB14_2
-	fmv.d	fa5, fa0
-.LBB14_2:                               # %entry
-	feq.d	a0, fa5, fa5
-	ret
-.LCPI15_0:
-	.quad	0x3feccccccccccccd              # double 0.90000000000000002
-func0000000000000084:                   # @func0000000000000084
 	lui	a0, %hi(.LCPI15_0)
 	fld	fa5, %lo(.LCPI15_0)(a0)
+	flt.d	a0, fa5, fa0
+	bnez	a0, .LBB15_2
+	fmv.d	fa5, fa0
+.LBB15_2:                               # %entry
+	feq.d	a0, fa5, fa5
+	ret
+.LCPI16_0:
+	.quad	0x3feccccccccccccd              # double 0.90000000000000002
+func0000000000000084:                   # @func0000000000000084
+	lui	a0, %hi(.LCPI16_0)
+	fld	fa5, %lo(.LCPI16_0)(a0)
 	fmv.d.x	fa4, zero
 	feq.d	a0, fa0, fa4
 	not	a0, a0
 	flt.d	a1, fa5, fa0
 	and	a0, a0, a1
 	ret
-.LCPI16_0:
+.LCPI17_0:
 	.quad	0x3ff0000000000000              # double 1
 func0000000000000027:                   # @func0000000000000027
-	lui	a0, %hi(.LCPI16_0)
-	fld	fa5, %lo(.LCPI16_0)(a0)
+	lui	a0, %hi(.LCPI17_0)
+	fld	fa5, %lo(.LCPI17_0)(a0)
 	fmv.d.x	fa4, zero
 	flt.d	a0, fa0, fa4
 	feq.d	a1, fa0, fa5

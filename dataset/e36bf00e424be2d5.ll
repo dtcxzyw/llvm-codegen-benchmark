@@ -1,11 +1,11 @@
 
-%struct.btMultibodyLink.2705783 = type { float, %class.btVector3.2705784, i32, %class.btQuaternion.2705785, %class.btVector3.2705784, %class.btVector3.2705784, %struct.btSpatialMotionVector.2705786, %struct.btSpatialMotionVector.2705786, [6 x %struct.btSpatialMotionVector.2705786], i32, i32, %class.btQuaternion.2705785, %class.btVector3.2705784, %class.btQuaternion.2705785, %class.btVector3.2705784, %class.btVector3.2705784, %class.btVector3.2705784, %class.btVector3.2705784, %class.btVector3.2705784, [7 x float], [7 x float], [6 x float], ptr, i32, i32, i32, i32, ptr, %class.btTransform.2705787, ptr, ptr, ptr, float, float, float, float, float, float }
-%struct.btSpatialMotionVector.2705786 = type { %class.btVector3.2705784, %class.btVector3.2705784 }
-%class.btQuaternion.2705785 = type { %class.btQuadWord.2705788 }
-%class.btQuadWord.2705788 = type { [4 x float] }
-%class.btVector3.2705784 = type { [4 x float] }
-%class.btTransform.2705787 = type { %class.btMatrix3x3.2705789, %class.btVector3.2705784 }
-%class.btMatrix3x3.2705789 = type { [3 x %class.btVector3.2705784] }
+%struct.btMultibodyLink.2818498 = type { float, %class.btVector3.2818499, i32, %class.btQuaternion.2818500, %class.btVector3.2818499, %class.btVector3.2818499, %struct.btSpatialMotionVector.2818501, %struct.btSpatialMotionVector.2818501, [6 x %struct.btSpatialMotionVector.2818501], i32, i32, %class.btQuaternion.2818500, %class.btVector3.2818499, %class.btQuaternion.2818500, %class.btVector3.2818499, %class.btVector3.2818499, %class.btVector3.2818499, %class.btVector3.2818499, %class.btVector3.2818499, [7 x float], [7 x float], [6 x float], ptr, i32, i32, i32, i32, ptr, %class.btTransform.2818502, ptr, ptr, ptr, float, float, float, float, float, float }
+%struct.btSpatialMotionVector.2818501 = type { %class.btVector3.2818499, %class.btVector3.2818499 }
+%class.btQuaternion.2818500 = type { %class.btQuadWord.2818503 }
+%class.btQuadWord.2818503 = type { [4 x float] }
+%class.btVector3.2818499 = type { [4 x float] }
+%class.btTransform.2818502 = type { %class.btMatrix3x3.2818504, %class.btVector3.2818499 }
+%class.btMatrix3x3.2818504 = type { [3 x %class.btVector3.2818499] }
 
 ; 8 occurrences:
 ; bullet3/optimized/btMultiBody.ll
@@ -17,15 +17,16 @@
 ; opencv/optimized/ocr_hmm_decoder.cpp.ll
 ; opencv/optimized/trainFacemark.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, float %1) #0 {
+define ptr @func000000000000000b(ptr %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.btMultibodyLink.2705783, ptr %0, i64 %3, i32 2
+  %4 = getelementptr %struct.btMultibodyLink.2818498, ptr %0, i64 %3, i32 2
   ret ptr %4
 }
 
-; 20 occurrences:
+; 21 occurrences:
+; bullet3/optimized/btMultiBody.ll
 ; darktable/optimized/histogram.c.ll
 ; darktable/optimized/introspection_basecurve.c.ll
 ; darktable/optimized/introspection_basicadj.c.ll
@@ -51,9 +52,8 @@ define ptr @func0000000000000008(ptr %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw float, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 4
-  ret ptr %5
+  %4 = getelementptr %struct.btMultibodyLink.2818498, ptr %0, i64 %3, i32 8, i64 1, i32 1
+  ret ptr %4
 }
 
 ; 2 occurrences:
@@ -66,6 +66,18 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr float, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; opencv/optimized/KAZEFeatures.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000a(ptr %0, float %1) #0 {
+entry:
+  %2 = fptosi float %1 to i32
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw float, ptr %0, i64 %3
+  %5 = getelementptr nusw i8, ptr %4, i64 -4
   ret ptr %5
 }
 

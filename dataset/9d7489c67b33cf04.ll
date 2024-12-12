@@ -1,5 +1,6 @@
 
-; 3 occurrences:
+; 4 occurrences:
+; lvgl/optimized/lv_font_fmt_txt.ll
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll
 ; ncnn/optimized/mat_pixel_resize.cpp.ll
 ; opencv/optimized/resize.cpp.ll
@@ -45,7 +46,7 @@ entry:
   %3 = mul nuw nsw i32 %1, %2
   %4 = lshr i32 %3, 8
   %5 = add nuw nsw i32 %4, 1
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -57,7 +58,7 @@ entry:
   %3 = mul nuw nsw i32 %1, %2
   %4 = lshr i32 %3, 1
   %5 = add nuw nsw i32 %4, 1
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 

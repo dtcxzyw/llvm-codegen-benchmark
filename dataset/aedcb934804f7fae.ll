@@ -1,5 +1,5 @@
 
-; 166 occurrences:
+; 165 occurrences:
 ; bullet3/optimized/btPolarDecomposition.ll
 ; bullet3/optimized/btSoftBody.ll
 ; darktable/optimized/darkroom.c.ll
@@ -119,7 +119,6 @@
 ; ncnn/optimized/pooling3d.cpp.ll
 ; ncnn/optimized/rnn.cpp.ll
 ; nori/optimized/nanovg.c.ll
-; openblas/optimized/ieeeck.c.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/KAZEFeatures.cpp.ll
 ; opencv/optimized/Match.cpp.ll

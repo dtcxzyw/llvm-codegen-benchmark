@@ -9,7 +9,7 @@ define i64 @func0000000000000004(i8 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i8 %0, 58
   %.v = select i1 %2, i64 4, i64 3
-  %3 = add i64 %.v, %1
+  %3 = add i64 %1, %.v
   %4 = add i64 %3, 2
   ret i64 %4
 }

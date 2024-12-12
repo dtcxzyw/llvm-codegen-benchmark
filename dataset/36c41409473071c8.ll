@@ -4,7 +4,7 @@
 ; openjdk/optimized/stubGenerator_x86_64_arraycopy.ll
 ; pocketpy/optimized/pocketpy_c.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i1 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = select i1 %1, i32 %3, i32 0
@@ -43,7 +43,7 @@ entry:
 ; opencv/optimized/gather_layer.cpp.ll
 ; opencv/optimized/onnx_importer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = select i1 %1, i32 %3, i32 0

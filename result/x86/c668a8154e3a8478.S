@@ -28,3 +28,13 @@ func0000000000000006:                   # @func0000000000000006
 	setle	%al
 	xorb	%dil, %al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpl	$398, %esi                      # imm = 0x18E
+	setb	%al
+	xorb	%dil, %al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	cmpl	$59, %esi
+	setae	%al
+	xorb	%dil, %al
+	retq

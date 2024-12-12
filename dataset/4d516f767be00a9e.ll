@@ -13,15 +13,16 @@ entry:
   ret i8 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; libquic/optimized/quic_framer.cc.ll
 ; libquic/optimized/spdy_framer.cc.ll
 ; wireshark/optimized/blf.c.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 1
-  %4 = or disjoint i8 %3, %1
+  %4 = or disjoint i8 %1, %3
   %5 = or disjoint i8 %4, 64
   %6 = select i1 %0, i8 %5, i8 %4
   ret i8 %6
@@ -34,7 +35,7 @@ entry:
 define i8 @func0000000000000002(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 7
-  %4 = or disjoint i8 %3, %1
+  %4 = or disjoint i8 %1, %3
   %5 = or i8 %4, 4
   %6 = select i1 %0, i8 %5, i8 %4
   ret i8 %6

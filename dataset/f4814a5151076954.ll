@@ -1,10 +1,9 @@
 
-; 19 occurrences:
+; 18 occurrences:
 ; hermes/optimized/APFloat.cpp.ll
 ; hermes/optimized/APInt.cpp.ll
 ; linux/optimized/af_netlink.ll
 ; linux/optimized/mon_bin.ll
-; linux/optimized/sky2.ll
 ; linux/optimized/x_tables.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
@@ -28,7 +27,8 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; lvgl/optimized/lv_flex.ll
 ; openjdk/optimized/c1_LinearScan.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
@@ -64,9 +64,8 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; linux/optimized/cipso_ipv4.ll
-; z3/optimized/watch_list.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:

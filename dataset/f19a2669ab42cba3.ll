@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; cmake/optimized/cmCPackDebGenerator.cxx.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; gromacs/optimized/colvarparams.cpp.ll
@@ -10,15 +10,25 @@
 ; linux/optimized/inotify_user.ll
 ; linux/optimized/locks.ll
 ; llvm/optimized/CGOpenMPRuntime.cpp.ll
-; meshoptimizer/optimized/indexcodec.cpp.ll
 ; vcpkg/optimized/dependencies.cpp.ll
 ; yosys/optimized/subcircuit.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(ptr %0, ptr %1) #0 {
+define i32 @func0000000000000061(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 152
-  %3 = icmp eq ptr %2, %0
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 152
+  %3 = icmp eq ptr %0, %2
   %4 = select i1 %3, i32 2, i32 1
+  ret i32 %4
+}
+
+; 1 occurrences:
+; meshoptimizer/optimized/indexcodec.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000041(ptr %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw i8, ptr %1, i64 -16
+  %3 = icmp eq ptr %0, %2
+  %4 = select i1 %3, i32 0, i32 -3
   ret i32 %4
 }
 
@@ -29,7 +39,7 @@ entry:
 define i32 @func0000000000000001(ptr %0, ptr %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %1, i64 2304
-  %3 = icmp eq ptr %2, %0
+  %3 = icmp eq ptr %0, %2
   %4 = select i1 %3, i32 -16, i32 0
   ret i32 %4
 }

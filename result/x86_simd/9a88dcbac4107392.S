@@ -2,14 +2,14 @@
 	.long	9                               # 0x9
 .LCPI0_1:
 	.long	33                              # 0x21
-func0000000000000066:                   # @func0000000000000066
+func00000000000000c6:                   # @func00000000000000c6
 	vpaddd	%ymm1, %ymm0, %ymm1
 	vpcmpltd	.LCPI0_0(%rip){1to8}, %ymm0, %k1
 	vpcmpltd	.LCPI0_1(%rip){1to8}, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000006a:                   # @func000000000000006a
+func00000000000000ca:                   # @func00000000000000ca
 	vpaddd	%ymm0, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpgtd	%ymm2, %ymm0, %k1
@@ -21,7 +21,7 @@ func000000000000006a:                   # @func000000000000006a
 	.long	16                              # 0x10
 .LCPI2_1:
 	.long	11                              # 0xb
-func000000000000008c:                   # @func000000000000008c
+func000000000000010c:                   # @func000000000000010c
 	vpaddd	%ymm1, %ymm0, %ymm1
 	vpcmpneqd	.LCPI2_0(%rip){1to8}, %ymm0, %k1
 	vpcmpnleud	.LCPI2_1(%rip){1to8}, %ymm1, %k0 {%k1}
@@ -32,7 +32,7 @@ func000000000000008c:                   # @func000000000000008c
 	.long	64                              # 0x40
 .LCPI3_1:
 	.long	65                              # 0x41
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	vpaddd	%ymm1, %ymm0, %ymm1
 	vpcmpltud	.LCPI3_0(%rip){1to8}, %ymm0, %k1
 	vpcmpltud	.LCPI3_1(%rip){1to8}, %ymm1, %k0 {%k1}
@@ -43,24 +43,24 @@ func0000000000000044:                   # @func0000000000000044
 	.long	64                              # 0x40
 .LCPI4_1:
 	.long	65                              # 0x41
-func0000000000000144:                   # @func0000000000000144
+func0000000000000484:                   # @func0000000000000484
 	vpaddd	%ymm1, %ymm0, %ymm1
 	vpcmpltud	.LCPI4_0(%rip){1to8}, %ymm0, %k1
 	vpcmpltud	.LCPI4_1(%rip){1to8}, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000011c:                   # @func000000000000011c
+func000000000000042c:                   # @func000000000000042c
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpsubd	%ymm1, %ymm2, %ymm1
-	vpcmpeqd	%ymm0, %ymm1, %k1
+	vpcmpeqd	%ymm1, %ymm0, %k1
 	vptestmd	%ymm0, %ymm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 .LCPI6_0:
 	.long	2                               # 0x2
-func00000000000000a6:                   # @func00000000000000a6
+func0000000000000146:                   # @func0000000000000146
 	vpaddd	%ymm0, %ymm1, %ymm1
 	vpbroadcastd	.LCPI6_0(%rip), %ymm2   # ymm2 = [2,2,2,2,2,2,2,2]
 	vpcmpgtd	%ymm0, %ymm2, %k1
@@ -70,7 +70,7 @@ func00000000000000a6:                   # @func00000000000000a6
 	retq
 .LCPI7_0:
 	.long	8                               # 0x8
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vpaddd	%ymm1, %ymm0, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpcmpneqd	%ymm2, %ymm0, %k1
@@ -82,14 +82,14 @@ func000000000000001c:                   # @func000000000000001c
 	.long	65536                           # 0x10000
 .LCPI8_1:
 	.long	65537                           # 0x10001
-func0000000000000166:                   # @func0000000000000166
+func00000000000004c6:                   # @func00000000000004c6
 	vpaddd	%ymm0, %ymm1, %ymm1
 	vpcmpltd	.LCPI8_0(%rip){1to8}, %ymm0, %k1
 	vpcmpltd	.LCPI8_1(%rip){1to8}, %ymm1, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000014a:                   # @func000000000000014a
 	vpaddd	%ymm1, %ymm0, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpcmpgtd	%ymm2, %ymm1, %k1

@@ -1,7 +1,7 @@
 func0000000000000007:                   # @func0000000000000007
 	movzbl	%dil, %eax
 	vcvtsi2ss	%eax, %xmm1, %xmm1
-	vcmpneqss	%xmm0, %xmm1, %k0
+	vcmpneqss	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 func0000000000000002:                   # @func0000000000000002

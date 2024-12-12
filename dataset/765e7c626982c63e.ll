@@ -19,7 +19,7 @@
 define i1 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %1, %2
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = icmp sgt i32 %4, -1
   ret i1 %5
 }
@@ -29,7 +29,7 @@ entry:
 ; oiio/optimized/DPXHeader.cpp.ll
 ; verilator/optimized/V3Number.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %1, %2
   %4 = or i32 %3, %0
@@ -40,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; verilator/optimized/V3Number.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000008a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %1, %2
   %4 = or i32 %3, %0
@@ -52,7 +52,7 @@ entry:
 ; verilator/optimized/V3Number.cpp.ll
 ; wireshark/optimized/packet-usb-hid.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000088(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %1, %2
   %4 = or i32 %3, %0
@@ -63,7 +63,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/crypt_freesec.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000c1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %1, %2
   %4 = or i32 %3, %0
@@ -74,7 +74,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/OlympusDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000004a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %1, %2
   %4 = or i32 %3, %0
@@ -119,7 +119,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/extraBddKmap.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000066(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000c6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %1, %2
   %4 = or i32 %3, %0
@@ -149,18 +149,6 @@ entry:
   %3 = shl i32 %1, %2
   %4 = or i32 %3, %0
   %5 = icmp ult i32 %4, 241
-  ret i1 %5
-}
-
-; 2 occurrences:
-; miniaudio/optimized/unity.c.ll
-; raylib/optimized/raudio.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000068(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = shl nuw nsw i32 %1, %2
-  %4 = or i32 %3, %0
-  %5 = icmp ugt i32 %4, 288
   ret i1 %5
 }
 

@@ -4,7 +4,7 @@
 ; minetest/optimized/mapgen.cpp.ll
 ; quantlib/optimized/sparseilupreconditioner.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i64 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = icmp slt i32 %3, %0
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SourceManager.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+define i64 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = icmp ult i32 %3, %0

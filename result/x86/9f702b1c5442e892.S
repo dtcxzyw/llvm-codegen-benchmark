@@ -9,25 +9,25 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	$33554432, %rax                 # imm = 0x2000000
 	setb	%al
 	retq
-func000000000000014a:                   # @func000000000000014a
+func000000000000028a:                   # @func000000000000028a
 	subq	%rdx, %rsi
 	addq	%rdi, %rsi
 	incq	%rsi
 	setns	%al
 	retq
-func0000000000000156:                   # @func0000000000000156
+func00000000000002a6:                   # @func00000000000002a6
 	subq	%rdx, %rsi
 	leaq	1086(%rsi,%rdi), %rax
 	testq	%rax, %rax
 	setle	%al
 	retq
-func0000000000000106:                   # @func0000000000000106
+func0000000000000206:                   # @func0000000000000206
 	subq	%rdx, %rsi
 	leaq	4(%rsi,%rdi), %rax
 	cmpq	$20, %rax
 	setl	%al
 	retq
-func0000000000000154:                   # @func0000000000000154
+func00000000000002a4:                   # @func00000000000002a4
 	subq	%rdx, %rsi
 	leaq	1(%rsi,%rdi), %rax
 	cmpq	$513, %rax                      # imm = 0x201

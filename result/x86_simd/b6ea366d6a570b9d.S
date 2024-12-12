@@ -26,7 +26,7 @@
 	.byte	64                              # 0x40
 	.byte	32                              # 0x20
 	.byte	16                              # 0x10
-func0000000000000010:                   # @func0000000000000010
+func0000000000000030:                   # @func0000000000000030
 	vpcmpnleub	.LCPI0_0(%rip), %xmm2, %k1
 	vmovdqu8	%xmm0, %xmm1 {%k1}
 	vgf2p8affineqb	$0, .LCPI0_2(%rip){1to2}, %xmm1, %xmm0
@@ -90,7 +90,7 @@ func0000000000000002:                   # @func0000000000000002
 	.byte	64                              # 0x40
 	.byte	32                              # 0x20
 	.byte	16                              # 0x10
-func0000000000000008:                   # @func0000000000000008
+func0000000000000028:                   # @func0000000000000028
 	vpcmpltub	.LCPI2_0(%rip), %xmm2, %k1
 	vmovdqu8	%xmm0, %xmm1 {%k1}
 	vgf2p8affineqb	$0, .LCPI2_2(%rip){1to2}, %xmm1, %xmm0

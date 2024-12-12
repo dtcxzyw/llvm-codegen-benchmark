@@ -1,22 +1,22 @@
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	movswl	%si, %eax
 	addl	$3, %edi
 	cmpl	%eax, %edi
 	sete	%al
 	retq
-func0000000000000057:                   # @func0000000000000057
+func00000000000000a7:                   # @func00000000000000a7
 	movswl	%si, %eax
 	addl	$16, %edi
 	cmpl	%eax, %edi
 	setle	%al
 	retq
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	movswl	%si, %eax
 	addl	$-64, %edi
 	cmpl	%eax, %edi
 	setg	%al
 	retq
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	movswl	%si, %eax
 	decl	%edi
 	cmpl	%eax, %edi

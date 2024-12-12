@@ -1,5 +1,5 @@
 .LCPI0_0:
-	.quad	0x3fb999999999999a              # double 0.10000000000000001
+	.quad	0x4010000000000000              # double 4
 func0000000000000002:                   # @func0000000000000002
 	fmv.d.x	fa5, zero
 	flt.d	a0, fa2, fa5

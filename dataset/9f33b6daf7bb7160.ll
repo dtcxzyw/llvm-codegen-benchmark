@@ -13,7 +13,7 @@ define double @func0000000000000000(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = fsub double 0x3FF921FB54442D18, %2
   %4 = select i1 %1, double %3, double %2
-  %5 = fmul double %4, %0
+  %5 = fmul double %0, %4
   ret double %5
 }
 

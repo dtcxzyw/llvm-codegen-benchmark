@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 34 occurrences:
 ; abc/optimized/sfmArea.c.ll
 ; gromacs/optimized/pme_spread.cpp.ll
 ; libwebp/optimized/dec_sse2.c.ll
@@ -15,7 +15,6 @@
 ; ncnn/optimized/mat_pixel_affine.cpp.ll
 ; ncnn/optimized/mat_pixel_rotate.cpp.ll
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
-; opencv/optimized/synthetic_seq.cpp.ll
 ; openjdk/optimized/mlib_ImageAffine_BC_D64.ll
 ; openjdk/optimized/mlib_ImageAffine_BC_F32.ll
 ; openjdk/optimized/mlib_ImageAffine_BC_S32.ll
@@ -60,10 +59,8 @@ entry:
   ret ptr %7
 }
 
-; 4 occurrences:
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
-; meshlab/optimized/solver.cpp.ll
+; 2 occurrences:
+; opencv/optimized/optflowgf.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000018(ptr %0, i32 %1, i32 %2) #0 {
@@ -79,25 +76,12 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/optflowgf.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000010(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = mul nsw i32 %2, 3
-  %4 = sext i32 %3 to i64
-  %5 = sext i32 %1 to i64
-  %6 = getelementptr float, ptr %0, i64 %5
-  %7 = getelementptr float, ptr %6, i64 %4
-  ret ptr %7
-}
-
-; 1 occurrences:
-; opencv/optimized/optflowgf.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000008(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 5
   %4 = sext i32 %3 to i64
   %5 = sext i32 %1 to i64
-  %6 = getelementptr double, ptr %0, i64 %5
+  %6 = getelementptr nusw double, ptr %0, i64 %5
   %7 = getelementptr double, ptr %6, i64 %4
   ret ptr %7
 }

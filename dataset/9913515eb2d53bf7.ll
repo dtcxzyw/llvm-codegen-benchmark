@@ -13,7 +13,7 @@ entry:
   %4 = add nsw i32 %3, -1
   %5 = add i32 %4, %1
   %6 = udiv i32 %5, %3
-  %7 = mul nsw i32 %6, %0
+  %7 = mul nsw i32 %0, %6
   ret i32 %7
 }
 

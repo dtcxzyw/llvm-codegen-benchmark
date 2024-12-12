@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/tcg.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c8(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000188(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 6144
   %3 = icmp ne i32 %2, 6144
@@ -17,7 +17,7 @@ entry:
 ; ncnn/optimized/reshape_x86.cpp.ll
 ; redis/optimized/networking.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 3
   %3 = icmp eq i32 %2, 0
@@ -30,7 +30,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/hda_codec.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i32 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -1073741824
   %3 = icmp eq i32 %2, 1073741824

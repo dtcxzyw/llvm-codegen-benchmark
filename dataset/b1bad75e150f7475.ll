@@ -3,7 +3,7 @@
 ; minetest/optimized/CB3DMeshFileLoader.cpp.ll
 ; minetest/optimized/CGUITabControl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000706(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000e06(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = trunc i64 %2 to i32
@@ -25,7 +25,7 @@ entry:
 ; velox/optimized/UnsafeRowSerializer.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000501(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000a01(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 4
   %3 = trunc i64 %2 to i32
@@ -80,7 +80,7 @@ entry:
 ; yosys/optimized/memory_share.ll
 ; yosys/optimized/qwp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000726(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000e46(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = trunc i64 %2 to i32
@@ -93,7 +93,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SROA.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000326(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000646(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 3
   %3 = trunc i64 %2 to i32
@@ -113,7 +113,7 @@ entry:
 ; llvm/optimized/GlobalsModRef.cpp.ll
 ; llvm/optimized/SubtargetEmitter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000701(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000e01(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 5
   %3 = trunc i64 %2 to i32
@@ -126,7 +126,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86InstCombineIntrinsic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000301(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000601(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 7
   %3 = trunc i64 %2 to i32
@@ -139,7 +139,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SubtargetEmitter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000704(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000e04(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 2
   %3 = trunc i64 %2 to i32
@@ -153,7 +153,7 @@ entry:
 ; gromacs/optimized/grid.cpp.ll
 ; opencv/optimized/plane.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000191(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000321(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
@@ -166,7 +166,7 @@ entry:
 ; 1 occurrences:
 ; cvc5/optimized/theory_sets_rels.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000511(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000a21(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = trunc i64 %2 to i32
@@ -179,7 +179,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ucnvhz.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000516(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000a26(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 1
   %3 = trunc i64 %2 to i32
@@ -189,10 +189,11 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; opencv/optimized/attention_layer.cpp.ll
+; xgboost/optimized/gbtree.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000181(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000301(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
@@ -205,7 +206,7 @@ entry:
 ; 1 occurrences:
 ; xgboost/optimized/gbtree.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000381(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000701(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32

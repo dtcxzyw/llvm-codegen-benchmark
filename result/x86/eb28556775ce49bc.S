@@ -1,26 +1,26 @@
-func000000000000027a:                   # @func000000000000027a
+func00000000000004ea:                   # @func00000000000004ea
 	addl	%esi, %edx
 	xorl	$2147483647, %edx               # imm = 0x7FFFFFFF
-	cmpl	%edi, %edx
-	setl	%al
+	cmpl	%edx, %edi
+	setg	%al
 	retq
 func0000000000000004:                   # @func0000000000000004
 	addl	%esi, %edx
 	movl	$1, %eax
 	subl	%edx, %eax
-	cmpl	%edi, %eax
-	seta	%al
+	cmpl	%eax, %edi
+	setb	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
 	addl	%esi, %edx
 	movl	$1, %eax
 	subl	%edx, %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq
-func0000000000000015:                   # @func0000000000000015
+func0000000000000035:                   # @func0000000000000035
 	addl	%esi, %edx
 	xorl	$2147483647, %edx               # imm = 0x7FFFFFFF
-	cmpl	%edi, %edx
-	setae	%al
+	cmpl	%edx, %edi
+	setbe	%al
 	retq

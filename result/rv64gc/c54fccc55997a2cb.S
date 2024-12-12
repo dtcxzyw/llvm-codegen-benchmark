@@ -14,13 +14,13 @@ func0000000000000010:                   # @func0000000000000010
 	add	a0, a0, a1
 	addiw	a0, a0, -8
 	ret
-func0000000000000040:                   # @func0000000000000040
+func0000000000000045:                   # @func0000000000000045
 	sext.w	a2, a2
-	sltiu	a2, a2, 2
+	sltiu	a2, a2, 3
 	addi	a2, a2, -1
 	and	a1, a1, a2
 	add	a0, a0, a1
-	addiw	a0, a0, 1
+	addiw	a0, a0, 2
 	ret
 func0000000000000065:                   # @func0000000000000065
 	sext.w	a2, a2
@@ -40,13 +40,4 @@ func0000000000000011:                   # @func0000000000000011
 	addi	a2, a2, 907
 	add	a0, a0, a2
 	addw	a0, a0, a1
-	ret
-func0000000000000064:                   # @func0000000000000064
-	sext.w	a2, a2
-	li	a3, 3
-	bge	a2, a3, .LBB5_2
-	li	a1, 1
-.LBB5_2:                                # %entry
-	add	a0, a0, a1
-	addiw	a0, a0, -1
 	ret

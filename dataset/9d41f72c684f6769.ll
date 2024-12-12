@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 34 occurrences:
 ; box2d/optimized/b2_rope.cpp.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/b3CpuRigidBodyPipeline.ll
@@ -18,6 +18,7 @@
 ; bullet3/optimized/btSliderConstraint.ll
 ; bullet3/optimized/btSoftBody.ll
 ; bullet3/optimized/btStaticPlaneShape.ll
+; darktable/optimized/introspection_colorbalancergb.c.ll
 ; gromacs/optimized/coupling.cpp.ll
 ; gromacs/optimized/gmx_vanhove.cpp.ll
 ; gromacs/optimized/grompp.cpp.ll
@@ -39,7 +40,7 @@ entry:
   %3 = fneg float %2
   %4 = fdiv float 1.000000e+00, %1
   %5 = fmul float %4, %3
-  %6 = fmul float %5, %0
+  %6 = fmul float %0, %5
   ret float %6
 }
 

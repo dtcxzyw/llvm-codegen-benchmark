@@ -9,15 +9,16 @@ func0000000000000002:                   # @func0000000000000002
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000010:                   # @func0000000000000010
-	testl	$-128, %esi
-	setne	%al
-	orb	%dil, %al
-	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000028:                   # @func0000000000000028
 	movb	$61, %al
 	bzhiq	%rax, %rsi, %rax
 	cmpq	$7, %rax
 	setb	%al
+	orb	%dil, %al
+	retq
+func0000000000000030:                   # @func0000000000000030
+	andl	$7, %esi
+	cmpl	$3, %esi
+	setae	%al
 	orb	%dil, %al
 	retq

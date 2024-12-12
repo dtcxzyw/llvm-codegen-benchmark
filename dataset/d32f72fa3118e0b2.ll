@@ -46,10 +46,10 @@
 ; yosys/optimized/rtlil_lexer.ll
 ; yosys/optimized/verilog_lexer.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000061(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = trunc i64 %4 to i32
   %6 = add nuw nsw i32 %0, 1
   %7 = icmp eq i32 %6, %5

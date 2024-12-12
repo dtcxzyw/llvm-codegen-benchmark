@@ -13,7 +13,7 @@ func000000000000000e:                   # @func000000000000000e
 	lui	a0, 196608
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmerge.vxm	v10, v12, a0, v0
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret
 func000000000000000f:                   # @func000000000000000f
 	vsetivli	zero, 8, e16, m1, ta, ma
@@ -23,7 +23,7 @@ func000000000000000f:                   # @func000000000000000f
 	slli	a0, a0, 11
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmerge.vxm	v10, v12, a0, v0
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret
 func0000000000000007:                   # @func0000000000000007
 	vsetivli	zero, 8, e16, m1, ta, ma

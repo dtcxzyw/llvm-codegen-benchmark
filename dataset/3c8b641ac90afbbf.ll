@@ -1,9 +1,10 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; arrow/optimized/strtod.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; double_conversion/optimized/strtod.cc.ll
-; hermes/optimized/ItaniumDemangle.cpp.ll
 ; icu/optimized/double-conversion-strtod.ll
 ; llvm/optimized/ItaniumDemangle.cpp.ll
 ; llvm/optimized/ItaniumManglingCanonicalizer.cpp.ll
@@ -21,8 +22,10 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind

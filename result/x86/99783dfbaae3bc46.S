@@ -1,4 +1,4 @@
-func0000000000000082:                   # @func0000000000000082
+func0000000000000102:                   # @func0000000000000102
 	addl	$-1919, %edx                    # imm = 0xF881
 	cmpl	$16, %edx
 	setb	%cl
@@ -7,7 +7,7 @@ func0000000000000082:                   # @func0000000000000082
 	andb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	addl	$-23, %edx
 	cmpl	$2, %edx
 	setb	%cl
@@ -16,7 +16,7 @@ func0000000000000028:                   # @func0000000000000028
 	andb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000298:                   # @func0000000000000298
+func0000000000000918:                   # @func0000000000000918
 	addl	$-14, %edx
 	cmpl	$-4, %edx
 	setb	%cl
@@ -25,7 +25,7 @@ func0000000000000298:                   # @func0000000000000298
 	andb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	addl	$59, %edx
 	cmpl	$8, %edx
 	setb	%cl

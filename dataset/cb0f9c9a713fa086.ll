@@ -1,9 +1,5 @@
 
-; 23 occurrences:
-; abc/optimized/kitDsd.c.ll
-; abc/optimized/lpkMulti.c.ll
-; clamav/optimized/hfsplus.c.ll
-; freetype/optimized/pcf.c.ll
+; 14 occurrences:
 ; jemalloc/optimized/jemalloc.ll
 ; jemalloc/optimized/jemalloc.pic.ll
 ; jemalloc/optimized/jemalloc.sym.ll
@@ -17,36 +13,26 @@
 ; redis/optimized/jemalloc.sym.ll
 ; redis/optimized/tcache.ll
 ; redis/optimized/tcache.sym.ll
-; typst-rs/optimized/1fd2xpfefmgrcb9d.ll
-; typst-rs/optimized/59tuvc5m3xlovl3o.ll
-; wireshark/optimized/packet-umts_rlc.c.ll
 ; wolfssl/optimized/internal.c.ll
-; zxing/optimized/ODCode128Reader.cpp.ll
-; zxing/optimized/ODCode93Reader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000014(i16 %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 4
-  %3 = icmp ult i16 %2, %0
+  %3 = icmp samesign ult i16 %2, %0
   ret i1 %3
 }
 
-; 6 occurrences:
-; abc/optimized/kitDsd.c.ll
-; abc/optimized/lpkAbcDsd.c.ll
-; abc/optimized/lpkCore.c.ll
-; abc/optimized/lpkMulti.c.ll
-; abc/optimized/lpkSets.c.ll
+; 1 occurrences:
 ; qemu/optimized/target_riscv_translate.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000009(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000019(i16 %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 4
-  %3 = icmp uge i16 %2, %0
+  %3 = icmp samesign uge i16 %2, %0
   ret i1 %3
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; clamav/optimized/events.c.ll
 ; libpng/optimized/pngrtran.c.ll
 ; linux/optimized/calipso.ll
@@ -57,6 +43,7 @@ entry:
 ; llvm/optimized/Attributes.cpp.ll
 ; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
 ; openjdk/optimized/oopMap.ll
 ; openjdk/optimized/pngrtran.ll
 ; openspiel/optimized/chess_board.cc.ll
@@ -80,10 +67,10 @@ entry:
 ; openjdk/optimized/hb-ot-shape-normalize.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000018(i16 %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 8
-  %3 = icmp ugt i16 %2, %0
+  %3 = icmp samesign ugt i16 %2, %0
   ret i1 %3
 }
 
@@ -94,7 +81,7 @@ entry:
 ; luajit/optimized/lj_opt_fold_dyn.ll
 ; openjdk/optimized/chaitin.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i16 %0, i16 %1) #0 {
 entry:
   %2 = lshr exact i16 %1, 7
   %3 = icmp eq i16 %2, %0
@@ -111,6 +98,38 @@ define i1 @func000000000000000c(i16 %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 11
   %3 = icmp ne i16 %2, %0
+  ret i1 %3
+}
+
+; 9 occurrences:
+; abc/optimized/kitDsd.c.ll
+; abc/optimized/lpkMulti.c.ll
+; clamav/optimized/hfsplus.c.ll
+; freetype/optimized/pcf.c.ll
+; typst-rs/optimized/1fd2xpfefmgrcb9d.ll
+; typst-rs/optimized/59tuvc5m3xlovl3o.ll
+; wireshark/optimized/packet-umts_rlc.c.ll
+; zxing/optimized/ODCode128Reader.cpp.ll
+; zxing/optimized/ODCode93Reader.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i16 %0, i16 %1) #0 {
+entry:
+  %2 = lshr i16 %1, 1
+  %3 = icmp ult i16 %2, %0
+  ret i1 %3
+}
+
+; 5 occurrences:
+; abc/optimized/kitDsd.c.ll
+; abc/optimized/lpkAbcDsd.c.ll
+; abc/optimized/lpkCore.c.ll
+; abc/optimized/lpkMulti.c.ll
+; abc/optimized/lpkSets.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000009(i16 %0, i16 %1) #0 {
+entry:
+  %2 = lshr i16 %1, 1
+  %3 = icmp uge i16 %2, %0
   ret i1 %3
 }
 

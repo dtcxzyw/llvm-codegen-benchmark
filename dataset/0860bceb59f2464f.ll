@@ -1,6 +1,7 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
+; brotli/optimized/metablock.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; coreutils-rs/optimized/4o7j3eorsq1l9mcp.ll
 ; git/optimized/sha1.ll

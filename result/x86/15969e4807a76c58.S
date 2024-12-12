@@ -1,4 +1,4 @@
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	movsbl	%sil, %eax
 	leal	-480(%rdi,%rax), %eax
 	cmpl	$98, %eax
@@ -34,13 +34,13 @@ func000000000000000c:                   # @func000000000000000c
 	addl	%eax, %edi
 	setne	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	movsbl	%sil, %eax
 	leal	-48(%rdi,%rax), %eax
 	cmpl	$65536, %eax                    # imm = 0x10000
 	setae	%al
 	retq
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	movsbl	%sil, %eax
 	leal	-1(%rdi,%rax), %eax
 	shrl	$31, %eax

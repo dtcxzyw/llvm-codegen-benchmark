@@ -62,7 +62,7 @@ entry:
   ret i32 %2
 }
 
-; 217 occurrences:
+; 220 occurrences:
 ; arrow/optimized/UriParse.c.ll
 ; arrow/optimized/bridge.cc.ll
 ; arrow/optimized/decimal.cc.ll
@@ -164,6 +164,9 @@ entry:
 ; luajit/optimized/lj_strscan.ll
 ; luajit/optimized/lj_strscan_dyn.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_tileview.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
@@ -322,12 +325,13 @@ entry:
   ret i32 %2
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; image-rs/optimized/fyek6fuqg0ocunt.ll
 ; libwebp/optimized/quant_enc.c.ll
 ; libwebp/optimized/vp8l_dec.c.ll
+; lvgl/optimized/lv_string_builtin.ll
 ; lz4/optimized/lz4.c.ll
 ; openjdk/optimized/OGLPaints.ll
 ; openjdk/optimized/copy.ll

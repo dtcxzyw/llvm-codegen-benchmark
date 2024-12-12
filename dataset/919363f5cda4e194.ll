@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; abc/optimized/ifDec16.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000001a2(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000342(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = add nsw i32 %0, %1
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/rangetypes_typanalyze.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000096(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000116(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = add i32 %0, %1

@@ -2,6 +2,10 @@ func0000000000000004:                   # @func0000000000000004
 	vucomiss	%xmm1, %xmm0
 	setbe	%al
 	retq
+func000000000000000c:                   # @func000000000000000c
+	vucomiss	%xmm1, %xmm0
+	setb	%al
+	retq
 func0000000000000002:                   # @func0000000000000002
 	vucomiss	%xmm0, %xmm1
 	setbe	%al
@@ -13,10 +17,6 @@ func0000000000000005:                   # @func0000000000000005
 func000000000000000d:                   # @func000000000000000d
 	vucomiss	%xmm0, %xmm1
 	seta	%al
-	retq
-func000000000000000c:                   # @func000000000000000c
-	vucomiss	%xmm1, %xmm0
-	setb	%al
 	retq
 func0000000000000008:                   # @func0000000000000008
 	vcmpneqss	%xmm1, %xmm0, %k0

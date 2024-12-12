@@ -1,11 +1,13 @@
 
-; 52 occurrences:
+; 53 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/tz.cpp.ll
+; boost/optimized/gregorian.ll
+; boost/optimized/src.ll
 ; clamav/optimized/pe_icons.c.ll
 ; darktable/optimized/timeline.c.ll
 ; draco/optimized/mesh_stripifier.cc.ll
@@ -14,7 +16,6 @@
 ; flac/optimized/replaygain_analysis.c.ll
 ; git/optimized/date.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
-; icu/optimized/gregoimp.ll
 ; icu/optimized/ucnvmbcs.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; linux/optimized/e1000_main.ll
@@ -93,7 +94,7 @@ entry:
 ; curl/optimized/libcurl_la-parsedate.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; linux/optimized/kapi.ll
-; nuttx/optimized/lib_timegm.c.ll
+; lvgl/optimized/lv_calendar.ll
 ; php/optimized/php_date.ll
 ; postgres/optimized/numutils.ll
 ; velox/optimized/DateTimeFormatter.cpp.ll

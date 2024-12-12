@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000101(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %.idx = shl i64 %2, 3
   %3 = getelementptr i8, ptr %1, i64 %.idx
@@ -10,15 +10,14 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; hermes/optimized/HadesGC.cpp.ll
 ; llvm/optimized/MemProfReader.cpp.ll
 ; openjdk/optimized/psParallelCompact.ll
-; php/optimized/cdf.ll
 ; rocksdb/optimized/xxhash.cc.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000044(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 6
   %4 = getelementptr nusw i8, ptr %1, i64 %3
@@ -26,7 +25,7 @@ entry:
   ret i1 %5
 }
 
-; 320 occurrences:
+; 319 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; assimp/optimized/3DSLoader.cpp.ll
@@ -149,7 +148,6 @@ entry:
 ; llvm/optimized/RDFGraph.cpp.ll
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RDFRegisters.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/Record.cpp.ll
 ; llvm/optimized/RecordLayoutBuilder.cpp.ll
@@ -348,7 +346,7 @@ entry:
 ; z3/optimized/subpaving_mpfx.cpp.ll
 ; z3/optimized/subpaving_mpq.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000000c1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %.idx = shl nsw i64 %2, 4
   %3 = getelementptr nusw i8, ptr %1, i64 %.idx
@@ -393,7 +391,7 @@ entry:
 ; minetest/optimized/CColorConverter.cpp.ll
 ; minetest/optimized/noise.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000188(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 2
   %4 = getelementptr i8, ptr %1, i64 %3
@@ -432,7 +430,7 @@ entry:
 ; mimalloc/optimized/segment-map.c.ll
 ; openjdk/optimized/psParallelCompact.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000048(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %.idx = shl i64 %2, 4
   %3 = getelementptr nusw i8, ptr %1, i64 %.idx
@@ -440,17 +438,29 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; cmake/optimized/stream.c.ll
 ; git/optimized/packfile.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; openjdk/optimized/psCardTable.ll
 ; openjdk/optimized/psParallelCompact.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e4(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000001e4(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 7
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = icmp ult ptr %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; php/optimized/cdf.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000064(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = icmp ult ptr %4, %0
   ret i1 %5
 }
@@ -460,15 +470,46 @@ entry:
 ; hermes/optimized/BytecodeDataProvider.cpp.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e8(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000001e8(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 2
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
 
-; 17 occurrences:
+; 48 occurrences:
+; abseil-cpp/optimized/inlined_vector_test.cc.ll
+; llvm/optimized/AArch64InstructionSelector.cpp.ll
+; llvm/optimized/AArch64SpeculationHardening.cpp.ll
+; llvm/optimized/ConstantFolding.cpp.ll
+; llvm/optimized/DAGCombiner.cpp.ll
+; llvm/optimized/EarlyIfConversion.cpp.ll
+; llvm/optimized/GVNHoist.cpp.ll
+; llvm/optimized/GVNSink.cpp.ll
+; llvm/optimized/InitUndef.cpp.ll
+; llvm/optimized/InstCombineCompares.cpp.ll
+; llvm/optimized/InstCombineLoadStoreAlloca.cpp.ll
+; llvm/optimized/InstCombinePHI.cpp.ll
+; llvm/optimized/InstrRefBasedImpl.cpp.ll
+; llvm/optimized/Instructions.cpp.ll
+; llvm/optimized/JumpThreading.cpp.ll
+; llvm/optimized/LiveDebugVariables.cpp.ll
+; llvm/optimized/LoopNestAnalysis.cpp.ll
+; llvm/optimized/LoopVectorize.cpp.ll
+; llvm/optimized/MachineVerifier.cpp.ll
+; llvm/optimized/MergeICmps.cpp.ll
+; llvm/optimized/Reassociate.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; llvm/optimized/SROA.cpp.ll
+; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
+; llvm/optimized/SimplifyCFGPass.cpp.ll
+; llvm/optimized/SplitKit.cpp.ll
+; llvm/optimized/TargetLoweringBase.cpp.ll
+; llvm/optimized/X86FlagsCopyLowering.cpp.ll
+; llvm/optimized/X86FrameLowering.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; llvm/optimized/X86InstrInfo.cpp.ll
 ; quantlib/optimized/andreasenhugevolatilityinterpl.ll
 ; quantlib/optimized/batesmodel.ll
 ; quantlib/optimized/blackkarasinski.ll
@@ -487,7 +528,7 @@ entry:
 ; quantlib/optimized/variancegammamodel.ll
 ; quantlib/optimized/vasicek.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000001e1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 3
   %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
@@ -510,7 +551,7 @@ entry:
 ; gromacs/optimized/dlar1vx.cpp.ll
 ; gromacs/optimized/slar1vx.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000084(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 1
   %4 = getelementptr i8, ptr %1, i64 %3
@@ -518,7 +559,7 @@ entry:
   ret i1 %5
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; darktable/optimized/DeflateDecompressor.cpp.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
@@ -535,9 +576,8 @@ entry:
 ; darktable/optimized/introspection_hotpixels.c.ll
 ; darktable/optimized/introspection_lens.cc.ll
 ; linux/optimized/ndisc.ll
-; linux/optimized/rom.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000184(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 1
   %4 = getelementptr i8, ptr %1, i64 %3
@@ -549,7 +589,7 @@ entry:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_retouch.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000088(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 2
   %4 = getelementptr i8, ptr %1, i64 %3
@@ -557,7 +597,7 @@ entry:
   ret i1 %5
 }
 
-; 39 occurrences:
+; 38 occurrences:
 ; hyperscan/optimized/teddy_compile.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64MCTargetDesc.cpp.ll
@@ -576,7 +616,6 @@ entry:
 ; llvm/optimized/LoopAccessAnalysis.cpp.ll
 ; llvm/optimized/LoopUnroll.cpp.ll
 ; llvm/optimized/MetaRenamer.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/RegAllocFast.cpp.ll
 ; llvm/optimized/RegAllocGreedy.cpp.ll
@@ -598,65 +637,11 @@ entry:
 ; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
 ; pbrt-v4/optimized/lights.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000000cc(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 2
   %4 = getelementptr nusw i8, ptr %1, i64 %3
   %5 = icmp ne ptr %4, %0
-  ret i1 %5
-}
-
-; 2 occurrences:
-; eastl/optimized/BenchmarkSort.cpp.ll
-; oiio/optimized/deepdata.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %.idx = shl i64 %2, 3
-  %3 = getelementptr i8, ptr %1, i64 %.idx
-  %4 = icmp eq ptr %3, %0
-  ret i1 %4
-}
-
-; 32 occurrences:
-; abseil-cpp/optimized/inlined_vector_test.cc.ll
-; llvm/optimized/AArch64InstructionSelector.cpp.ll
-; llvm/optimized/AArch64SpeculationHardening.cpp.ll
-; llvm/optimized/ConstantFolding.cpp.ll
-; llvm/optimized/DAGCombiner.cpp.ll
-; llvm/optimized/EarlyIfConversion.cpp.ll
-; llvm/optimized/GVNHoist.cpp.ll
-; llvm/optimized/GVNSink.cpp.ll
-; llvm/optimized/InitUndef.cpp.ll
-; llvm/optimized/InstCombineCompares.cpp.ll
-; llvm/optimized/InstCombineLoadStoreAlloca.cpp.ll
-; llvm/optimized/InstCombinePHI.cpp.ll
-; llvm/optimized/InstrRefBasedImpl.cpp.ll
-; llvm/optimized/Instructions.cpp.ll
-; llvm/optimized/JumpThreading.cpp.ll
-; llvm/optimized/LiveDebugVariables.cpp.ll
-; llvm/optimized/LoopNestAnalysis.cpp.ll
-; llvm/optimized/LoopVectorize.cpp.ll
-; llvm/optimized/MachineVerifier.cpp.ll
-; llvm/optimized/MergeICmps.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; llvm/optimized/Reassociate.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
-; llvm/optimized/SROA.cpp.ll
-; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
-; llvm/optimized/SimplifyCFGPass.cpp.ll
-; llvm/optimized/SplitKit.cpp.ll
-; llvm/optimized/TargetLoweringBase.cpp.ll
-; llvm/optimized/X86FlagsCopyLowering.cpp.ll
-; llvm/optimized/X86FrameLowering.cpp.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
-; llvm/optimized/X86InstrInfo.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000e1(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = shl nuw nsw i64 %2, 5
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
@@ -667,16 +652,17 @@ entry:
 ; llvm/optimized/SimplifyLibCalls.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ec(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000001ec(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 2
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = icmp ne ptr %4, %0
   ret i1 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; llvm/optimized/SimplifyCFG.cpp.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(ptr %0, ptr %1, i64 %2) #0 {
 entry:
@@ -690,7 +676,7 @@ entry:
 ; llvm/optimized/MemProfReader.cpp.ll
 ; opencv/optimized/dls.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000029(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000049(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 6
   %4 = getelementptr nusw i8, ptr %1, i64 %3
@@ -702,7 +688,7 @@ entry:
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000041(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 3
   %4 = getelementptr nusw i8, ptr %1, i64 %3

@@ -10,7 +10,7 @@
 ; opencv/optimized/ts_gtest.cpp.ll
 ; ruby/optimized/pm_memchr.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000008c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %0, %2
   %4 = icmp ult i64 %3, %1
@@ -26,7 +26,7 @@ entry:
 ; jemalloc/optimized/malloc_io.sym.ll
 ; qemu/optimized/chardev_char.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000008a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %0, %2
   %4 = icmp ult i64 %3, %1

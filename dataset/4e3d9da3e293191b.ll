@@ -13,7 +13,7 @@
 ; typst-rs/optimized/3rk2ctuzbghb17s4.ll
 ; typst-rs/optimized/49m3cs7hus53ztof.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000042(i1 %0, i8 %1) #0 {
+define i1 @func0000000000000082(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 22
   %3 = or i1 %2, %0

@@ -42,23 +42,23 @@ func000000000000000a:                   # @func000000000000000a
 	vucomiss	%xmm0, %xmm1
 	setae	%al
 	retq
+.LCPI8_0:
+	.long	0xc2fe0000                      # float -127
+func000000000000000d:                   # @func000000000000000d
+	vmovss	.LCPI8_0(%rip), %xmm1           # xmm1 = [-1.27E+2,0.0E+0,0.0E+0,0.0E+0]
+	vucomiss	%xmm0, %xmm1
+	setbe	%al
+	retq
+.LCPI9_0:
+	.long	0x7f800000                      # float +Inf
+func0000000000000009:                   # @func0000000000000009
+	vucomiss	.LCPI9_0(%rip), %xmm0
+	sete	%al
+	retq
 func000000000000000c:                   # @func000000000000000c
 	vxorps	%xmm1, %xmm1, %xmm1
 	vucomiss	%xmm1, %xmm0
 	setae	%al
-	retq
-.LCPI9_0:
-	.long	0xc2fe0000                      # float -127
-func000000000000000d:                   # @func000000000000000d
-	vmovss	.LCPI9_0(%rip), %xmm1           # xmm1 = [-1.27E+2,0.0E+0,0.0E+0,0.0E+0]
-	vucomiss	%xmm0, %xmm1
-	setbe	%al
-	retq
-.LCPI10_0:
-	.long	0x7f800000                      # float +Inf
-func0000000000000009:                   # @func0000000000000009
-	vucomiss	.LCPI10_0(%rip), %xmm0
-	sete	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
 	vucomiss	%xmm0, %xmm0

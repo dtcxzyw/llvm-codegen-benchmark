@@ -1,5 +1,5 @@
 
-; 37 occurrences:
+; 36 occurrences:
 ; cpython/optimized/mpdecimal.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
@@ -16,13 +16,12 @@
 ; crow/optimized/helloworld.cpp.ll
 ; linux/optimized/intel_psr.ll
 ; linux/optimized/scsi_scan.ll
+; lvgl/optimized/lv_flex.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/formatter.cpp.ll
 ; mitsuba3/optimized/fstream.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; openssl/optimized/libssl-lib-quic_stream_map.ll
 ; openssl/optimized/libssl-shlib-quic_stream_map.ll
-; proj/optimized/io.cpp.ll
 ; protobuf/optimized/generated_message_tctable_gen.cc.ll
 ; tev/optimized/main.cpp.ll
 ; yalantinglibs/optimized/channel.cpp.ll
@@ -38,7 +37,7 @@
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i8 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = icmp ne i8 %2, 0
@@ -50,15 +49,15 @@ entry:
 ; 9 occurrences:
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; git/optimized/diff.ll
-; linux/optimized/percpu-refcount.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/SemaInit.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; llvm/optimized/SemaStmt.cpp.ll
+; lvgl/optimized/lv_flex.ll
 ; qemu/optimized/target_riscv_pmp.c.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 3
   %3 = icmp eq i8 %2, 2
@@ -77,7 +76,7 @@ entry:
 ; spike/optimized/f16_mul.ll
 ; spike/optimized/f16_rem.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000181(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -2
   %3 = icmp eq i8 %2, 12
@@ -87,15 +86,15 @@ entry:
 }
 
 ; 3 occurrences:
-; hdf5/optimized/H5Oalloc.c.ll
-; linux/optimized/assoc_array.ll
+; ncnn/optimized/cpu.cpp.ll
 ; rust-analyzer-rs/optimized/3g8gmheh3yshr0h0.ll
+; wireshark/optimized/packet-erf.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0, i8 %1) #0 {
+define i1 @func000000000000028c(i64 %0, i8 %1) #0 {
 entry:
-  %2 = and i8 %1, 2
+  %2 = and i8 %1, 1
   %3 = icmp ne i8 %2, 0
-  %4 = icmp ult i64 %0, 3
+  %4 = icmp samesign ult i64 %0, 1024
   %5 = select i1 %3, i1 %4, i1 false
   ret i1 %5
 }
@@ -108,7 +107,7 @@ entry:
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; wireshark/optimized/vwr.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i8 %1) #0 {
+define i1 @func000000000000018c(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = icmp ne i8 %2, 0
@@ -117,14 +116,15 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; hdf5/optimized/H5Oalloc.c.ll
+; linux/optimized/assoc_array.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i8 %1) #0 {
+define i1 @func000000000000008c(i64 %0, i8 %1) #0 {
 entry:
-  %2 = and i8 %1, 2
+  %2 = and i8 %1, 3
   %3 = icmp ne i8 %2, 0
-  %4 = icmp ult i64 %0, 65536
+  %4 = icmp ult i64 %0, 256
   %5 = select i1 %3, i1 %4, i1 false
   ret i1 %5
 }
@@ -133,7 +133,7 @@ entry:
 ; hdf5/optimized/H5Oalloc.c.ll
 ; llvm/optimized/SemaStmt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 3
   %3 = icmp eq i8 %2, 3
@@ -151,7 +151,7 @@ entry:
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i64 %0, i8 %1) #0 {
+define i1 @func000000000000010c(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 2
   %3 = icmp ne i8 %2, 0
@@ -165,7 +165,7 @@ entry:
 ; wasmtime-rs/optimized/1f1skdqjemonth3f.ll
 ; wasmtime-rs/optimized/21g2sj3ridcu2juk.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000101(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -2
   %3 = icmp eq i8 %2, 24

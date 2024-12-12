@@ -10,7 +10,7 @@
 ; openjdk/optimized/instanceKlass.ll
 ; openjdk/optimized/zBarrierSetC2.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i8 %0, i1 %1) #0 {
+define i32 @func0000000000000021(i8 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 2, i32 0
   %3 = or disjoint i32 %2, 8
@@ -23,7 +23,7 @@ entry:
 ; openexr/optimized/write_header.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i8 %0, i1 %1) #0 {
+define i32 @func0000000000000028(i8 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 2, i32 4098
   %3 = or disjoint i32 %2, 1024

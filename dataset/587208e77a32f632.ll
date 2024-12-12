@@ -15,7 +15,6 @@
 ; lief/optimized/File.cpp.ll
 ; linux/optimized/uncore_nhmex.ll
 ; linux/optimized/xt_conntrack.ll
-; linux/optimized/xt_state.ll
 ; meilisearch-rs/optimized/2vln1wcrdf8krbw1.ll
 ; meilisearch-rs/optimized/50l87gnpqq82g6pe.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -37,8 +36,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -102,6 +99,9 @@
 ; simdjson/optimized/simdjson.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i32 %0) #0 {
 entry:
@@ -110,7 +110,8 @@ entry:
   ret i8 %2
 }
 
-; 30 occurrences:
+; 33 occurrences:
+; boost/optimized/ipv4_address.ll
 ; cmake/optimized/http.c.ll
 ; coreutils-rs/optimized/162a9hv49p91yl4q.ll
 ; coreutils-rs/optimized/1cffnn5jn7gf4ojp.ll
@@ -120,7 +121,6 @@ entry:
 ; coreutils-rs/optimized/2ph6t6nh0hmjeejh.ll
 ; coreutils-rs/optimized/3fp1x41wzh4l1rh9.ll
 ; coreutils-rs/optimized/4mlyvoaplnk0x351.ll
-; cpython/optimized/Hacl_Hash_SHA3.ll
 ; curl/optimized/libcurl_la-http.ll
 ; darktable/optimized/PanasonicV6Decompressor.cpp.ll
 ; delta-rs/optimized/4say4x9grcidoih4.ll
@@ -141,6 +141,9 @@ entry:
 ; ockam-rs/optimized/3trfdpf6q4y0wtix.ll
 ; qemu/optimized/ui_console-vc.c.ll
 ; wireshark/optimized/packet-udp.c.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i32 %0) #0 {
 entry:
@@ -149,11 +152,12 @@ entry:
   ret i8 %2
 }
 
-; 98 occurrences:
+; 97 occurrences:
 ; abc/optimized/abcCascade.c.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; abseil-cpp/optimized/hashtablez_sampler_test.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
+; boost/optimized/ipv4_address.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
 ; eastl/optimized/TestTupleVector.cpp.ll
@@ -182,8 +186,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll

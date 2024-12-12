@@ -35,6 +35,6 @@ func000000000000002e:                   # @func000000000000002e
 	vzext.vf2	v12, v11
 	vwsll.vi	v11, v12, 24
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vor.vv	v10, v11, v10
+	vor.vv	v10, v10, v11
 	vwsubu.wv	v8, v8, v10
 	ret

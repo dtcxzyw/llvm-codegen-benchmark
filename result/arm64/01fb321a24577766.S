@@ -1,100 +1,50 @@
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	movi	v4.4h, #1
-	bic	v2.4h, #255, lsl #8
-	ushll	v2.4s, v2.4h, #0
-	and	v3.8b, v3.8b, v4.8b
-	movi	v4.2d, #0x000000000000ff
-	ushll2	v6.2d, v2.4s, #0
-	ushll	v2.2d, v2.2s, #0
-	ushll	v3.4s, v3.4h, #0
-	orr	v0.16b, v2.16b, v0.16b
-	orr	v1.16b, v6.16b, v1.16b
-	ushll	v5.2d, v3.2s, #0
-	ushll2	v3.2d, v3.4s, #0
-	and	v5.16b, v5.16b, v4.16b
-	and	v3.16b, v3.16b, v4.16b
-	orr	v1.16b, v1.16b, v3.16b
-	orr	v0.16b, v0.16b, v5.16b
+                                        // kill: def $w1 killed $w1 def $x1
+	and	x8, x1, #0xff
+                                        // kill: def $w2 killed $w2 def $x2
+	and	x9, x2, #0x1
+	orr	x8, x0, x8
+	orr	x0, x8, x9
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	movi	v4.4h, #16
-	bic	v2.4h, #255, lsl #8
-	ushll	v2.4s, v2.4h, #0
-	and	v3.8b, v3.8b, v4.8b
-	movi	v4.2d, #0x000000000000ff
-	ushll2	v6.2d, v2.4s, #0
-	ushll	v2.2d, v2.2s, #0
-	ushll	v3.4s, v3.4h, #0
-	orr	v0.16b, v2.16b, v0.16b
-	orr	v1.16b, v6.16b, v1.16b
-	ushll	v5.2d, v3.2s, #0
-	ushll2	v3.2d, v3.4s, #0
-	and	v5.16b, v5.16b, v4.16b
-	and	v3.16b, v3.16b, v4.16b
-	orr	v1.16b, v1.16b, v3.16b
-	orr	v0.16b, v0.16b, v5.16b
+                                        // kill: def $w1 killed $w1 def $x1
+	and	x8, x1, #0xff
+                                        // kill: def $w2 killed $w2 def $x2
+	and	x9, x2, #0x10
+	orr	x8, x0, x8
+	orr	x0, x8, x9
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	movi	v4.4h, #64
-	bic	v2.4h, #255, lsl #8
-	ushll	v2.4s, v2.4h, #0
-	and	v3.8b, v3.8b, v4.8b
-	movi	v4.2d, #0x000000000000ff
-	ushll2	v6.2d, v2.4s, #0
-	ushll	v2.2d, v2.2s, #0
-	ushll	v3.4s, v3.4h, #0
-	orr	v0.16b, v2.16b, v0.16b
-	orr	v1.16b, v6.16b, v1.16b
-	ushll	v5.2d, v3.2s, #0
-	ushll2	v3.2d, v3.4s, #0
-	and	v5.16b, v5.16b, v4.16b
-	and	v3.16b, v3.16b, v4.16b
-	orr	v1.16b, v1.16b, v3.16b
-	orr	v0.16b, v0.16b, v5.16b
+                                        // kill: def $w1 killed $w1 def $x1
+	and	x8, x1, #0xff
+                                        // kill: def $w2 killed $w2 def $x2
+	and	x9, x2, #0x40
+	orr	x8, x0, x8
+	orr	x0, x8, x9
 	ret
                                         // -- End function
 func000000000000000e:                   // @func000000000000000e
 // %bb.0:                               // %entry
-	movi	v4.4h, #64
-	bic	v2.4h, #255, lsl #8
-	ushll	v2.4s, v2.4h, #0
-	and	v3.8b, v3.8b, v4.8b
-	movi	v4.2d, #0x000000000000ff
-	ushll2	v6.2d, v2.4s, #0
-	ushll	v2.2d, v2.2s, #0
-	ushll	v3.4s, v3.4h, #0
-	orr	v0.16b, v2.16b, v0.16b
-	orr	v1.16b, v6.16b, v1.16b
-	ushll	v5.2d, v3.2s, #0
-	ushll2	v3.2d, v3.4s, #0
-	and	v5.16b, v5.16b, v4.16b
-	and	v3.16b, v3.16b, v4.16b
-	orr	v1.16b, v1.16b, v3.16b
-	orr	v0.16b, v0.16b, v5.16b
+                                        // kill: def $w1 killed $w1 def $x1
+	and	x8, x1, #0xff
+                                        // kill: def $w2 killed $w2 def $x2
+	and	x9, x2, #0x40
+	orr	x8, x0, x8
+	orr	x0, x8, x9
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	movi	v4.4h, #64
-	bic	v2.4h, #255, lsl #8
-	ushll	v2.4s, v2.4h, #0
-	and	v3.8b, v3.8b, v4.8b
-	movi	v4.2d, #0x000000000000ff
-	ushll2	v6.2d, v2.4s, #0
-	ushll	v2.2d, v2.2s, #0
-	ushll	v3.4s, v3.4h, #0
-	orr	v0.16b, v2.16b, v0.16b
-	orr	v1.16b, v6.16b, v1.16b
-	ushll	v5.2d, v3.2s, #0
-	ushll2	v3.2d, v3.4s, #0
-	and	v5.16b, v5.16b, v4.16b
-	and	v3.16b, v3.16b, v4.16b
-	orr	v1.16b, v1.16b, v3.16b
-	orr	v0.16b, v0.16b, v5.16b
+                                        // kill: def $w1 killed $w1 def $x1
+	and	x8, x1, #0xff
+                                        // kill: def $w2 killed $w2 def $x2
+	and	x9, x2, #0x40
+	orr	x8, x0, x8
+	orr	x0, x8, x9
 	ret
                                         // -- End function

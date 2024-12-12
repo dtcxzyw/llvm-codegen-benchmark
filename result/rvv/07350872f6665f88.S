@@ -10,7 +10,7 @@ func000000000000000a:                   # @func000000000000000a
 	vadd.vv	v8, v8, v8
 	vmslt.vv	v0, v8, v10
 	ret
-func000000000000008a:                   # @func000000000000008a
+func000000000000010a:                   # @func000000000000010a
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v10, v10, 8
 	lui	a0, 233017

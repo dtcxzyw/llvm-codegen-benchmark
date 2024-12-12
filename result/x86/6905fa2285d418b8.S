@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	testl	$12288, %edx                    # imm = 0x3000
 	movl	%esi, %eax
 	cmovneq	%rdi, %rax

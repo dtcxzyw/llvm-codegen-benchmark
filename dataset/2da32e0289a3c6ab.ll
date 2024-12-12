@@ -1,7 +1,8 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/intel_tv.ll
+; lvgl/optimized/lv_math.ll
 ; openusd/optimized/bitreader_buffer.c.ll
 ; openusd/optimized/decodeframe.c.ll
 ; qemu/optimized/hw_9pfs_9p.c.ll
@@ -66,7 +67,7 @@ define i16 @func0000000000000030(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = add nuw nsw i16 %2, 65
   %4 = add i16 %3, %1
-  %5 = add i16 %4, %0
+  %5 = add i16 %0, %4
   ret i16 %5
 }
 

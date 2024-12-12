@@ -6,7 +6,7 @@
 ; qemu/optimized/hw_9pfs_9p.c.ll
 ; spike/optimized/dtm.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000023(i32 %0) #0 {
+define i32 @func0000000000000043(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 16384
   %2 = icmp eq i32 %0, 40960

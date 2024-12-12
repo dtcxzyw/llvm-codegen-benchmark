@@ -4,7 +4,7 @@
 ; qemu/optimized/target_riscv_cpu.c.ll
 ; qemu/optimized/target_riscv_pmu.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
   %3 = shl nuw i64 1, %2
@@ -21,7 +21,7 @@ entry:
 ; verilator/optimized/V3Const__gen.cpp.ll
 ; verilator/optimized/V3Number.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 31
   %3 = shl nuw nsw i64 1, %2
@@ -34,7 +34,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/driver-ops.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000a1(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
   %3 = zext nneg i32 %0 to i64
@@ -46,7 +46,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/rcec.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
   %3 = zext i32 %0 to i64
@@ -58,7 +58,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/pt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000e1(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 15
   %3 = shl nuw nsw i64 1, %2

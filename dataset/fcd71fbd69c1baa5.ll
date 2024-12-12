@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; arrow/optimized/compare.cc.ll
 ; arrow/optimized/list_util.cc.ll
 ; c3c/optimized/bigint.c.ll
@@ -10,7 +10,6 @@
 ; rocksdb/optimized/lru_cache.cc.ll
 ; ruby/optimized/numeric.ll
 ; spike/optimized/f128_to_i32_r_minMag.ll
-; spike/optimized/f128_to_ui32_r_minMag.ll
 ; spike/optimized/f64_to_i32_r_minMag.ll
 ; spike/optimized/f64_to_i64_r_minMag.ll
 ; spike/optimized/f64_to_ui32_r_minMag.ll
@@ -23,7 +22,8 @@ entry:
   ret i64 %3
 }
 
-; 13 occurrences:
+; 14 occurrences:
+; boost/optimized/approximately_equals.ll
 ; c3c/optimized/bigint.c.ll
 ; cpython/optimized/obmalloc.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
@@ -64,6 +64,31 @@ entry:
   ret i64 %3
 }
 
+; 2 occurrences:
+; openjdk/optimized/freeChunkList.ll
+; openjdk/optimized/metaspaceStatistics.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000d(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub nuw nsw i64 21, %1
+  %3 = shl nsw i64 %0, %2
+  ret i64 %3
+}
+
+; 5 occurrences:
+; darktable/optimized/Cr2Decompressor.cpp.ll
+; darktable/optimized/CrwDecompressor.cpp.ll
+; darktable/optimized/LJpegDecompressor.cpp.ll
+; openjdk/optimized/metaspaceStatistics.ll
+; redis/optimized/hyperloglog.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000f(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub nuw nsw i64 21, %1
+  %3 = shl nuw nsw i64 %0, %2
+  ret i64 %3
+}
+
 ; 4 occurrences:
 ; flac/optimized/encode.c.ll
 ; hyperscan/optimized/fdr_confirm_compile.cpp.ll
@@ -74,19 +99,6 @@ define i64 @func000000000000000e(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 56, %1
   %3 = shl nuw i64 %0, %2
-  ret i64 %3
-}
-
-; 4 occurrences:
-; darktable/optimized/Cr2Decompressor.cpp.ll
-; darktable/optimized/CrwDecompressor.cpp.ll
-; darktable/optimized/LJpegDecompressor.cpp.ll
-; redis/optimized/hyperloglog.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000f(i64 %0, i64 %1) #0 {
-entry:
-  %2 = sub nuw nsw i64 48, %1
-  %3 = shl nuw nsw i64 %0, %2
   ret i64 %3
 }
 

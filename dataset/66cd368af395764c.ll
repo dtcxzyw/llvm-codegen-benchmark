@@ -8,7 +8,7 @@
 define i8 @func000000000000000c(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 63
-  %3 = add i8 %2, %0
+  %3 = add i8 %0, %2
   ret i8 %3
 }
 

@@ -8,10 +8,10 @@
 ; rustfmt-rs/optimized/3n0n7c4xrusd0kzl.ll
 ; wasmtime-rs/optimized/2ta8crc4qgl9bp8t.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002cc(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000098c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %2, 24
-  %4 = icmp ne i64 %3, %1
+  %4 = icmp ne i64 %1, %3
   %5 = icmp ne i64 %0, 0
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -32,23 +32,11 @@ entry:
 ; crow/optimized/example_ws.cpp.ll
 ; crow/optimized/helloworld.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000034a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000e8a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 1000000
-  %4 = icmp ugt i64 %3, %1
+  %4 = icmp samesign ult i64 %1, %3
   %5 = icmp sgt i64 %0, -1
-  %6 = select i1 %5, i1 %4, i1 false
-  ret i1 %6
-}
-
-; 1 occurrences:
-; wasmtime-rs/optimized/4i2whcl4s27dqb04.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = mul i64 %2, 24
-  %4 = icmp ne i64 %3, %1
-  %5 = icmp ne i64 %0, 0
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
 }

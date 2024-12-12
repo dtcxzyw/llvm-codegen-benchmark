@@ -7,7 +7,7 @@
 ; opencv/optimized/tflite_importer.cpp.ll
 ; qemu/optimized/hw_virtio_virtio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %2, 4
   %4 = icmp ult i64 %3, %1
@@ -29,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/VTableBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %2, 1
   %4 = icmp eq i64 %3, %1

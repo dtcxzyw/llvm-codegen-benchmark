@@ -1,6 +1,8 @@
 
-; 72 occurrences:
-; cvc5/optimized/core_solver.cpp.ll
+; 74 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/sparring_partner.ll
+; boost/optimized/sub_launcher.ll
 ; cvc5/optimized/sequences_rewriter.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
@@ -105,7 +107,7 @@ entry:
   ret i64 %4
 }
 
-; 36 occurrences:
+; 35 occurrences:
 ; eastl/optimized/TestAlgorithm.cpp.ll
 ; hermes/optimized/CommandLine.cpp.ll
 ; hermes/optimized/HadesGC.cpp.ll
@@ -114,7 +116,6 @@ entry:
 ; llvm/optimized/GSIStreamBuilder.cpp.ll
 ; llvm/optimized/InstructionCombining.cpp.ll
 ; llvm/optimized/ValueEnumerator.cpp.ll
-; proxygen/optimized/QPACKHeaderTable.cpp.ll
 ; quantlib/optimized/fdm2dblackscholesop.ll
 ; quantlib/optimized/fdmbatesop.ll
 ; quantlib/optimized/fdmblackscholesfwdop.ll

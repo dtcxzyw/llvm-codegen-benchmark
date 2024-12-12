@@ -12,7 +12,7 @@ entry:
   %3 = add nuw nsw i32 %2, 73
   %4 = lshr i32 %3, 6
   %5 = lshr i32 %1, 6
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   %7 = add i32 %6, %4
   ret i32 %7
 }

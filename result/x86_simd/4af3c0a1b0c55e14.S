@@ -6,7 +6,7 @@ func0000000000000008:                   # @func0000000000000008
 	vpxor	%xmm0, %xmm0, %xmm0
 	vpcmpeqd	%ymm0, %ymm2, %ymm0
 	vpsrld	$31, %ymm0, %ymm0
-	vpor	%ymm1, %ymm0, %ymm0
+	vpor	%ymm0, %ymm1, %ymm0
 	vpord	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	retq
 .LCPI1_0:
@@ -29,6 +29,6 @@ func0000000000000050:                   # @func0000000000000050
 	vpbroadcastd	.LCPI2_0(%rip), %ymm0   # ymm0 = [3,3,3,3,3,3,3,3]
 	vpcmpgtd	%ymm0, %ymm2, %ymm0
 	vpsrld	$31, %ymm0, %ymm0
-	vpor	%ymm1, %ymm0, %ymm0
+	vpor	%ymm0, %ymm1, %ymm0
 	vpord	.LCPI2_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	retq

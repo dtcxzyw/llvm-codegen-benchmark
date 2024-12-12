@@ -1,55 +1,19 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	ldr	q16, [sp]
 	mov	x8, #4636737291354636288        // =0x4059000000000000
-	dup	v18.2d, x8
-	ushll2	v17.2d, v16.4s, #0
-	fmul	v5.2d, v5.2d, v18.2d
-	fmul	v7.2d, v7.2d, v18.2d
-	fmul	v4.2d, v4.2d, v18.2d
-	ucvtf	v17.2d, v17.2d
-	fmul	v5.2d, v5.2d, v17.2d
-	fdiv	v1.2d, v5.2d, v1.2d
-	ldr	q5, [sp, #16]
-	ushll2	v17.2d, v5.4s, #0
-	ucvtf	v17.2d, v17.2d
-	fmul	v7.2d, v7.2d, v17.2d
-	fdiv	v3.2d, v7.2d, v3.2d
-	ushll	v7.2d, v16.2s, #0
-	ucvtf	v7.2d, v7.2d
-	fmul	v4.2d, v4.2d, v7.2d
-	fdiv	v0.2d, v4.2d, v0.2d
-	ushll	v4.2d, v5.2s, #0
-	fmul	v5.2d, v6.2d, v18.2d
-	ucvtf	v4.2d, v4.2d
-	fmul	v4.2d, v5.2d, v4.2d
-	fdiv	v2.2d, v4.2d, v2.2d
+	ucvtf	d3, w0
+	fmov	d2, x8
+	fmul	d1, d1, d2
+	fmul	d1, d1, d3
+	fdiv	d0, d1, d0
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	ldr	q16, [sp]
-	fmov	v17.2d, #8.00000000
-	ushll2	v18.2d, v16.4s, #0
-	fmul	v5.2d, v5.2d, v17.2d
-	fmul	v7.2d, v7.2d, v17.2d
-	fmul	v4.2d, v4.2d, v17.2d
-	ucvtf	v18.2d, v18.2d
-	fmul	v5.2d, v5.2d, v18.2d
-	fdiv	v1.2d, v5.2d, v1.2d
-	ldr	q5, [sp, #16]
-	ushll2	v18.2d, v5.4s, #0
-	ucvtf	v18.2d, v18.2d
-	fmul	v7.2d, v7.2d, v18.2d
-	fdiv	v3.2d, v7.2d, v3.2d
-	ushll	v7.2d, v16.2s, #0
-	ucvtf	v7.2d, v7.2d
-	fmul	v4.2d, v4.2d, v7.2d
-	fdiv	v0.2d, v4.2d, v0.2d
-	ushll	v4.2d, v5.2s, #0
-	fmul	v5.2d, v6.2d, v17.2d
-	ucvtf	v4.2d, v4.2d
-	fmul	v4.2d, v5.2d, v4.2d
-	fdiv	v2.2d, v4.2d, v2.2d
+	fmov	d2, #8.00000000
+	ucvtf	d3, w0
+	fmul	d1, d1, d2
+	fmul	d1, d1, d3
+	fdiv	d0, d1, d0
 	ret
                                         // -- End function

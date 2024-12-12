@@ -7,14 +7,13 @@ entry:
   %3 = icmp eq i32 %2, 6
   %4 = select i1 %3, i32 524291, i32 0
   %5 = shl nuw nsw i32 %1, 11
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = or i32 %6, %4
   ret i32 %7
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; linux/optimized/hub.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; php/optimized/zend_compile.ll
 ; Function Attrs: nounwind
@@ -28,6 +27,20 @@ entry:
   ret i32 %7
 }
 
+; 2 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; Function Attrs: nounwind
+define i32 @func000000000000001b(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp eq i32 %2, 0
+  %4 = select i1 %3, i32 0, i32 255
+  %5 = shl nuw i32 %1, 24
+  %6 = or disjoint i32 %5, %0
+  %7 = or disjoint i32 %6, %4
+  ret i32 %7
+}
+
 ; 1 occurrences:
 ; wireshark/optimized/packet-hci_usb.c.ll
 ; Function Attrs: nounwind
@@ -36,7 +49,7 @@ entry:
   %3 = icmp eq i32 %2, 1
   %4 = select i1 %3, i32 128, i32 0
   %5 = shl nuw i32 %1, 16
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }
@@ -61,7 +74,7 @@ entry:
 define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 4
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = icmp eq i32 %1, 0
   %6 = select i1 %5, i32 2, i32 3
   %7 = or disjoint i32 %6, %4
@@ -77,7 +90,7 @@ entry:
   %3 = icmp eq i32 %2, 1
   %4 = select i1 %3, i32 32768, i32 0
   %5 = shl i32 %1, 20
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }
@@ -90,7 +103,7 @@ entry:
   %3 = icmp ugt i32 %2, 8999999
   %4 = select i1 %3, i32 5, i32 4
   %5 = shl nuw nsw i32 %1, 8
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }
@@ -104,7 +117,7 @@ entry:
   %3 = icmp eq i32 %2, 8
   %4 = select i1 %3, i32 4, i32 5
   %5 = shl i32 %1, 16
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }

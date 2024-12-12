@@ -9,9 +9,9 @@ func0000000000000007:                   # @func0000000000000007
 	addl	%edi, %eax
 	retq
 func0000000000000001:                   # @func0000000000000001
-	sarl	$3, %esi
-	andl	$-4, %esi
-	leal	(%rsi,%rdi), %eax
+	movl	%edi, %eax
+	btl	$7, %esi
+	adcl	$0, %eax
 	retq
 func0000000000000000:                   # @func0000000000000000
 	sarl	$8, %esi

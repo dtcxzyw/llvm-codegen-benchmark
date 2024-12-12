@@ -1,5 +1,5 @@
 
-; 53 occurrences:
+; 55 occurrences:
 ; ceres/optimized/cuda_block_structure.cc.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; faiss/optimized/MatrixStats.cpp.ll
@@ -53,6 +53,8 @@
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; wireshark/optimized/capture_file_properties_dialog.cpp.ll
 ; yalantinglibs/optimized/client.cpp.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:

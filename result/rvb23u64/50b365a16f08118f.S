@@ -3,6 +3,10 @@ func000000000000000a:                   # @func000000000000000a
 	addi	a0, a0, -105
 	zext.w	a0, a0
 	ret
+func000000000000003f:                   # @func000000000000003f
+	slli	a0, a0, 4
+	addiw	a0, a0, 24
+	ret
 func0000000000000002:                   # @func0000000000000002
 	slli	a0, a0, 1
 	addi	a0, a0, -1
@@ -33,8 +37,4 @@ func000000000000001a:                   # @func000000000000001a
 	slli	a0, a0, 1
 	addi	a0, a0, 2047
 	zext.w	a0, a0
-	ret
-func000000000000003f:                   # @func000000000000003f
-	slli	a0, a0, 1
-	addiw	a0, a0, 3
 	ret

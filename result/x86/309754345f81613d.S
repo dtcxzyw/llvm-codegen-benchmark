@@ -47,10 +47,3 @@ func00000000000000cb:                   # @func00000000000000cb
 	vucomisd	%xmm2, %xmm0
 	setbe	%al
 	retq
-func00000000000000c7:                   # @func00000000000000c7
-	vxorpd	%xmm3, %xmm3, %xmm3
-	vcmplesd	%xmm1, %xmm3, %k1
-	vmovsd	%xmm1, %xmm2, %xmm2 {%k1}
-	vcmpneqsd	%xmm0, %xmm2, %k0
-	kmovd	%k0, %eax
-	retq

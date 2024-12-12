@@ -1,4 +1,4 @@
-func00000000000000ac:                   # @func00000000000000ac
+func000000000000014c:                   # @func000000000000014c
 	sext.w	a3, a0
 	sext.w	a0, a1
 	sext.w	a2, a2
@@ -12,7 +12,7 @@ func00000000000000ac:                   # @func00000000000000ac
 	beqz	a2, .LBB0_2
 .LBB0_4:                                # %entry
 	ret
-func000000000000008c:                   # @func000000000000008c
+func000000000000010c:                   # @func000000000000010c
 	sext.w	a0, a0
 	sext.w	a3, a1
 	sext.w	a2, a2
@@ -26,7 +26,7 @@ func000000000000008c:                   # @func000000000000008c
 	beqz	a2, .LBB1_2
 .LBB1_4:                                # %entry
 	ret
-func000000000000006c:                   # @func000000000000006c
+func00000000000000cc:                   # @func00000000000000cc
 	sext.w	a3, a1
 	sext.w	a0, a0
 	sext.w	a2, a2

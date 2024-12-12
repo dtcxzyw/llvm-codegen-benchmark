@@ -1,14 +1,4 @@
-func0000000000000044:                   # @func0000000000000044
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsleu.vi	v14, v12, 1
-	li	a0, 193
-	vmsltu.vx	v12, v10, a0
-	li	a0, 64
-	vmand.mm	v0, v12, v14
-	vmv.v.x	v10, a0
-	vmerge.vvm	v8, v10, v8, v0
-	ret
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsne.vi	v14, v12, 0
 	vmsne.vi	v12, v10, 0
@@ -16,7 +6,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	vmv.v.i	v10, 0
 	vmerge.vvm	v8, v10, v8, v0
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vor.vv	v10, v10, v12
 	lui	a0, 262144
@@ -24,21 +14,21 @@ func0000000000000011:                   # @func0000000000000011
 	vmv.v.x	v10, a0
 	vmerge.vvm	v8, v10, v8, v0
 	ret
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000014a:                   # @func000000000000014a
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vor.vv	v10, v10, v12
 	vsra.vi	v10, v10, 31
 	vor.vv	v8, v10, v8
 	ret
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	ret
-func0000000000000066:                   # @func0000000000000066
+func00000000000000c6:                   # @func00000000000000c6
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vv	v10, v10, v12
 	vsra.vi	v10, v10, 31
 	vand.vv	v8, v10, v8
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v14, v12, 0
 	lui	a0, 2
@@ -47,15 +37,7 @@ func0000000000000014:                   # @func0000000000000014
 	vmv.v.i	v10, 0
 	vmerge.vvm	v8, v10, v8, v0
 	ret
-func00000000000000ac:                   # @func00000000000000ac
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsgt.vi	v14, v12, 0
-	vmsne.vi	v12, v10, 0
-	vmand.mm	v0, v12, v14
-	vmv.v.i	v10, 2
-	vmerge.vvm	v8, v10, v8, v0
-	ret
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsne.vi	v14, v12, 2
 	vmseq.vi	v12, v10, 0

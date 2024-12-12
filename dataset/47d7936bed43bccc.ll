@@ -1,5 +1,5 @@
 
-; 286 occurrences:
+; 285 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/giaEmbed.c.ll
 ; abc/optimized/giaFront.c.ll
@@ -36,12 +36,10 @@
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; darktable/optimized/introspection_grain.c.ll
-; darktable/optimized/introspection_lens.cc.ll
 ; darktable/optimized/introspection_levels.c.ll
 ; darktable/optimized/introspection_lowpass.c.ll
 ; darktable/optimized/introspection_profile_gamma.c.ll
 ; darktable/optimized/introspection_rgbcurve.c.ll
-; darktable/optimized/introspection_rgblevels.c.ll
 ; darktable/optimized/introspection_tonecurve.c.ll
 ; darktable/optimized/introspection_toneequal.c.ll
 ; darktable/optimized/masks.c.ll
@@ -64,6 +62,7 @@
 ; libquic/optimized/spdy_protocol.cc.ll
 ; lightgbm/optimized/linkers_socket.cpp.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/edit_manipulators.cpp.ll
 ; meshlab/optimized/edit_select.cpp.ll

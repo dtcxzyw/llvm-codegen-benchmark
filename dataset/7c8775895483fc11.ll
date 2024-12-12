@@ -7,25 +7,12 @@ define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, -80
   %3 = add i32 %2, 16384
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   %5 = add i32 %4, 32768
   ret i32 %5
 }
 
-; 1 occurrences:
-; openspiel/optimized/chess_test.cc.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000041(i32 %0, i32 %1) #0 {
-entry:
-  %2 = mul nsw i32 %1, 17
-  %3 = add i32 %2, 1
-  %4 = mul i32 %3, %0
-  %5 = add nsw i32 %4, 1
-  ret i32 %5
-}
-
-; 4 occurrences:
-; linux/optimized/he.ll
+; 3 occurrences:
 ; linux/optimized/mlme.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/tdls.ll

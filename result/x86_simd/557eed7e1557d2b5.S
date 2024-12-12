@@ -43,7 +43,7 @@ func0000000000000002:                   # @func0000000000000002
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
-func0000000000000011:                   # @func0000000000000011
+func0000000000000031:                   # @func0000000000000031
 	vpandd	.LCPI2_2(%rip){1to4}, %xmm0, %xmm0
 	vpcmpltd	.LCPI2_1(%rip){1to4}, %xmm0, %k1
 	vmovdqa32	%xmm0, %xmm0 {%k1} {z}

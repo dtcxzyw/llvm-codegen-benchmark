@@ -1,5 +1,5 @@
 
-; 36 occurrences:
+; 39 occurrences:
 ; c3c/optimized/sema_expr.c.ll
 ; cmake/optimized/SystemInformation.cxx.ll
 ; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
@@ -13,6 +13,7 @@
 ; llvm/optimized/HWAddressSanitizer.cpp.ll
 ; llvm/optimized/ParseStmt.cpp.ll
 ; llvm/optimized/TargetLoweringObjectFileImpl.cpp.ll
+; lvgl/optimized/lv_indev_scroll.ll
 ; openjdk/optimized/gtk2_interface.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; openjdk/optimized/hb-ot-layout.ll
@@ -36,6 +37,8 @@
 ; yosys/optimized/recover_names.ll
 ; yosys/optimized/share.ll
 ; yosys/optimized/test_cell.ll
+; zed-rs/optimized/4u0dswi9tif78fn5u6xqz5z9a.ll
+; zed-rs/optimized/8f7mact1a9un9bc0wu959qx4z.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, i1 %1, i8 %2) #0 {
 entry:

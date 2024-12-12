@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 25 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; linux/optimized/drm_dp_helper.ll
@@ -12,7 +12,6 @@
 ; llvm/optimized/MachineVerifier.cpp.ll
 ; llvm/optimized/StackMaps.cpp.ll
 ; llvm/optimized/TargetInstrInfo.cpp.ll
-; openblas/optimized/dgbtrf.c.ll
 ; opencv/optimized/imgwarp.cpp.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll
 ; postgres/optimized/fe-protocol3.ll
@@ -36,8 +35,7 @@ entry:
   ret i32 %6
 }
 
-; 4 occurrences:
-; openblas/optimized/dgbtf2.c.ll
+; 3 occurrences:
 ; qemu/optimized/hw_display_ati.c.ll
 ; wireshark/optimized/catapult_dct2000.c.ll
 ; wireshark/optimized/packet-synphasor.c.ll

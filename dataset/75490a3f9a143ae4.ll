@@ -29,10 +29,9 @@ entry:
   ret i1 %3
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; llvm/optimized/GIMatchTableExecutor.cpp.ll
 ; openssl/optimized/evp_libctx_test-bin-evp_libctx_test.ll
-; openusd/optimized/fvarLevel.cpp.ll
 ; php/optimized/zend_jit.ll
 ; qemu/optimized/hw_intc_riscv_aplic.c.ll
 ; wireshark/optimized/packet-erf.c.ll

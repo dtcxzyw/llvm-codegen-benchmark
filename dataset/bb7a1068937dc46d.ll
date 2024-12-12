@@ -74,7 +74,7 @@ entry:
   ret i32 %2
 }
 
-; 154 occurrences:
+; 148 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcMfs.c.ll
 ; abc/optimized/abcOrchestration.c.ll
@@ -105,7 +105,6 @@ entry:
 ; abc/optimized/giaMfs.c.ll
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/giaSimBase.c.ll
-; abc/optimized/giaSupMin.c.ll
 ; abc/optimized/giaSupps.c.ll
 ; abc/optimized/giaTruth.c.ll
 ; abc/optimized/giaUtil.c.ll
@@ -124,7 +123,6 @@ entry:
 ; abc/optimized/ioWriteEdgelist.c.ll
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/kitTruth.c.ll
-; abc/optimized/lpkMan.c.ll
 ; abc/optimized/luckySwap.c.ll
 ; abc/optimized/mioParse.c.ll
 ; abc/optimized/satTruth.c.ll
@@ -157,18 +155,14 @@ entry:
 ; libwebp/optimized/vp8l_dec.c.ll
 ; lief/optimized/x509_crt.c.ll
 ; linux/optimized/af_packet.ll
-; linux/optimized/fonts.ll
 ; linux/optimized/hda_codec.ll
 ; linux/optimized/i9xx_plane.ll
 ; linux/optimized/inftrees.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_dpll.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/intel_psr.ll
 ; linux/optimized/intel_sseu_debugfs.ll
-; linux/optimized/kvmclock.ll
-; linux/optimized/md-autodetect.ll
 ; linux/optimized/md-bitmap.ll
 ; linux/optimized/neighbour.ll
 ; linux/optimized/ntp.ll
@@ -237,7 +231,7 @@ entry:
   ret i32 %2
 }
 
-; 284 occurrences:
+; 277 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcBidec.c.ll
 ; abc/optimized/abcCascade.c.ll
@@ -270,7 +264,6 @@ entry:
 ; abc/optimized/bblif.c.ll
 ; abc/optimized/bdcCore.c.ll
 ; abc/optimized/bdcDec.c.ll
-; abc/optimized/bdcTable.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/bmcMaj3.c.ll
@@ -278,7 +271,6 @@ entry:
 ; abc/optimized/cloud.c.ll
 ; abc/optimized/cnfCut.c.ll
 ; abc/optimized/cswCut.c.ll
-; abc/optimized/cswMan.c.ll
 ; abc/optimized/cswTable.c.ll
 ; abc/optimized/cuddHarwell.c.ll
 ; abc/optimized/cuddPriority.c.ll
@@ -287,7 +279,6 @@ entry:
 ; abc/optimized/cutPre22.c.ll
 ; abc/optimized/darRefact.c.ll
 ; abc/optimized/dauCanon.c.ll
-; abc/optimized/dauCount.c.ll
 ; abc/optimized/dauDivs.c.ll
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/dauGia.c.ll
@@ -325,7 +316,6 @@ entry:
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/giaShrink.c.ll
 ; abc/optimized/giaSimBase.c.ll
-; abc/optimized/giaSupMin.c.ll
 ; abc/optimized/giaSupps.c.ll
 ; abc/optimized/giaTruth.c.ll
 ; abc/optimized/giaTtopt.cpp.ll
@@ -357,14 +347,11 @@ entry:
 ; abc/optimized/lpkAbcMux.c.ll
 ; abc/optimized/lpkAbcUtil.c.ll
 ; abc/optimized/lpkCut.c.ll
-; abc/optimized/lpkMan.c.ll
 ; abc/optimized/lpkMulti.c.ll
-; abc/optimized/lpkMux.c.ll
 ; abc/optimized/luckyFast16.c.ll
 ; abc/optimized/luckyFast6.c.ll
 ; abc/optimized/luckyRead.c.ll
 ; abc/optimized/luckySwap.c.ll
-; abc/optimized/mfsSat.c.ll
 ; abc/optimized/mioParse.c.ll
 ; abc/optimized/mpmMan.c.ll
 ; abc/optimized/mpmTruth.c.ll
@@ -399,6 +386,7 @@ entry:
 ; assimp/optimized/glTFImporter.cpp.ll
 ; assimp/optimized/o3dgcDynamicVectorDecoder.cpp.ll
 ; assimp/optimized/o3dgcTriangleFans.cpp.ll
+; boost/optimized/utf8_codecvt_facet.ll
 ; brotli/optimized/decode.c.ll
 ; brotli/optimized/encode.c.ll
 ; brotli/optimized/huffman.c.ll
@@ -418,13 +406,11 @@ entry:
 ; draco/optimized/dynamic_integer_points_kd_tree_encoder.cc.ll
 ; folly/optimized/Checksum.cpp.ll
 ; gromacs/optimized/coder.c.ll
-; gromacs/optimized/dlasd0.cpp.ll
 ; gromacs/optimized/dlasda.cpp.ll
 ; gromacs/optimized/domdec.cpp.ll
 ; gromacs/optimized/gmx_lmcurve.cpp.ll
 ; gromacs/optimized/libxdrf.cpp.ll
 ; gromacs/optimized/partition.cpp.ll
-; gromacs/optimized/slasd0.cpp.ll
 ; gromacs/optimized/slasda.cpp.ll
 ; grpc/optimized/chttp2_transport.cc.ll
 ; hermes/optimized/dtoa.c.ll
@@ -460,6 +446,7 @@ entry:
 ; luau/optimized/BytecodeBuilder.cpp.ll
 ; luau/optimized/IrTranslation.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; minetest/optimized/reflowscan.cpp.ll
@@ -530,7 +517,7 @@ entry:
   ret i32 %2
 }
 
-; 77 occurrences:
+; 74 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcIf.c.ll
@@ -573,10 +560,8 @@ entry:
 ; clamav/optimized/unarj.c.ll
 ; darktable/optimized/introspection_atrous.c.ll
 ; gromacs/optimized/coder.c.ll
-; gromacs/optimized/dlasd0.cpp.ll
 ; gromacs/optimized/dlasda.cpp.ll
 ; gromacs/optimized/huffman.c.ll
-; gromacs/optimized/slasd0.cpp.ll
 ; gromacs/optimized/slasda.cpp.ll
 ; libquic/optimized/mul.c.ll
 ; libwebp/optimized/sharpyuv_csp.c.ll
@@ -584,7 +569,6 @@ entry:
 ; linux/optimized/dquot.ll
 ; linux/optimized/drm_dsc_helper.ll
 ; linux/optimized/e100.ll
-; linux/optimized/gen_estimator.ll
 ; linux/optimized/hub.ll
 ; linux/optimized/pci.ll
 ; linux/optimized/usb.ll
@@ -616,7 +600,7 @@ entry:
   ret i32 %2
 }
 
-; 120 occurrences:
+; 115 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcIf.c.ll
 ; abc/optimized/abcLut.c.ll
@@ -630,7 +614,6 @@ entry:
 ; abc/optimized/cutPre22.c.ll
 ; abc/optimized/cutTruth.c.ll
 ; abc/optimized/dauCanon.c.ll
-; abc/optimized/dauCount.c.ll
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/extraUtilMaj.c.ll
@@ -673,19 +656,15 @@ entry:
 ; libquic/optimized/dtoa.cc.ll
 ; libquic/optimized/exponentiation.c.ll
 ; libquic/optimized/quic_crypto_client_stream.cc.ll
-; libquic/optimized/random.c.ll
 ; lief/optimized/ecp.c.ll
 ; lief/optimized/ssl_msg.c.ll
 ; linux/optimized/devio.ll
 ; linux/optimized/ehci-dbgp.ll
 ; linux/optimized/hdac_device.ll
 ; linux/optimized/hid-core.ll
-; linux/optimized/hub.ll
-; linux/optimized/message.ll
 ; linux/optimized/pci.ll
 ; linux/optimized/pcmcia_resource.ll
 ; linux/optimized/rapl.ll
-; linux/optimized/transport.ll
 ; linux/optimized/uncore_nhmex.ll
 ; linux/optimized/uncore_snbep.ll
 ; linux/optimized/vlv_dsi_pll.ll
@@ -780,7 +759,7 @@ entry:
   ret i32 %2
 }
 
-; 35 occurrences:
+; 34 occurrences:
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/extraUtilMaj.c.ll
 ; abc/optimized/extraUtilTruth.c.ll
@@ -798,7 +777,6 @@ entry:
 ; cpython/optimized/frameobject.ll
 ; cpython/optimized/longobject.ll
 ; icu/optimized/ucnv_lmb.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_dpll.ll
 ; linux/optimized/intel_psr.ll

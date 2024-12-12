@@ -1,5 +1,5 @@
 
-; 77 occurrences:
+; 80 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/giaCSat2.c.ll
@@ -9,6 +9,7 @@
 ; abc/optimized/ioaWriteAig.c.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
+; boost/optimized/gregorian.ll
 ; ceres/optimized/program.cc.ll
 ; clamav/optimized/pe_icons.c.ll
 ; cmake/optimized/archive_getdate.c.ll
@@ -41,6 +42,7 @@
 ; linux/optimized/hid-lg4ff.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
+; lvgl/optimized/lv_draw_sw_gradient.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; minetest/optimized/mapgen_carpathian.cpp.ll
 ; miniaudio/optimized/unity.c.ll
@@ -77,6 +79,7 @@
 ; stockfish/optimized/evaluate.ll
 ; stockfish/optimized/search.ll
 ; stockfish/optimized/tbprobe.ll
+; zed-rs/optimized/4hdn1csvepxizqbxhztzuw0uw.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
@@ -85,7 +88,11 @@ entry:
   ret i32 %3
 }
 
-; 164 occurrences:
+; 169 occurrences:
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/gregorian.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/clamdtop.c.ll
 ; cmake/optimized/archive_getdate.c.ll
 ; cmake/optimized/cm_get_date.c.ll
@@ -107,7 +114,6 @@ entry:
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/castlecompile.cpp.ll
 ; hyperscan/optimized/catchup.c.ll
-; hyperscan/optimized/init.c.ll
 ; hyperscan/optimized/mpv.c.ll
 ; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/repeat.c.ll
@@ -200,6 +206,8 @@ entry:
 ; linux/optimized/workqueue.ll
 ; linux/optimized/xhci.ll
 ; llvm/optimized/MCCodeView.cpp.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_math.ll
 ; opencv/optimized/brisk.cpp.ll
 ; opencv/optimized/qrcode_reader.cpp.ll
 ; openjdk/optimized/hb-buffer.ll
@@ -258,7 +266,8 @@ entry:
   ret i32 %3
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; lvgl/optimized/lv_color.ll
 ; postgres/optimized/nbtdedup.ll
 ; qemu/optimized/system_physmem.c.ll
 ; Function Attrs: nounwind

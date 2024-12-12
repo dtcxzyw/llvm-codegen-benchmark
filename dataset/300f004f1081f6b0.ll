@@ -9,7 +9,7 @@
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/file.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000181(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp ne i16 %2, 0
   %4 = select i1 %3, i1 %0, i1 false
@@ -25,7 +25,7 @@ entry:
 ; wireshark/optimized/packet-5co-legacy.c.ll
 ; wireshark/optimized/packet-h225.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i16 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 0
   %4 = select i1 %3, i1 %0, i1 false
@@ -37,7 +37,7 @@ entry:
 ; 1 occurrences:
 ; recastnavigation/optimized/DetourNavMeshQuery.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i1 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000186(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp ne i16 %2, 0
   %4 = select i1 %3, i1 %0, i1 false
@@ -49,7 +49,7 @@ entry:
 ; 1 occurrences:
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i1 %0, i32 %1, i16 %2) #0 {
+define i1 @func000000000000018a(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp ne i16 %2, 0
   %4 = select i1 %3, i1 %0, i1 false
@@ -62,7 +62,7 @@ entry:
 ; libwebp/optimized/tiffdec.c.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1, i16 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 5
   %4 = select i1 %3, i1 %0, i1 false
@@ -77,11 +77,11 @@ entry:
 ; brotli/optimized/encode.c.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000034(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 6
   %4 = select i1 %3, i1 %0, i1 false
-  %5 = icmp ult i32 %1, 2
+  %5 = icmp samesign ult i32 %1, 2
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
 }
@@ -90,7 +90,7 @@ entry:
 ; llvm/optimized/ModuleMap.cpp.ll
 ; openusd/optimized/exif.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 0
   %4 = select i1 %3, i1 %0, i1 false

@@ -1,11 +1,13 @@
 
-%"class.std::__1::basic_string.2490584" = type { %"class.std::__1::__compressed_pair.10.2490585" }
-%"class.std::__1::__compressed_pair.10.2490585" = type { %"struct.std::__1::__compressed_pair_elem.11.2490586" }
-%"struct.std::__1::__compressed_pair_elem.11.2490586" = type { %"struct.std::__1::basic_string<char>::__rep.2490587" }
-%"struct.std::__1::basic_string<char>::__rep.2490587" = type { %union.anon.2490588 }
-%union.anon.2490588 = type { %"struct.std::__1::basic_string<char>::__long.2490589" }
-%"struct.std::__1::basic_string<char>::__long.2490589" = type { %struct.anon.12.2490590, i64, ptr }
-%struct.anon.12.2490590 = type { i64 }
+%"class.std::__1::basic_string.2606005" = type { %"class.std::__1::__compressed_pair.10.2606006" }
+%"class.std::__1::__compressed_pair.10.2606006" = type { %"struct.std::__1::__compressed_pair_elem.11.2606007" }
+%"struct.std::__1::__compressed_pair_elem.11.2606007" = type { %"struct.std::__1::basic_string<char>::__rep.2606008" }
+%"struct.std::__1::basic_string<char>::__rep.2606008" = type { %union.anon.2606009 }
+%union.anon.2606009 = type { %"struct.std::__1::basic_string<char>::__long.2606010" }
+%"struct.std::__1::basic_string<char>::__long.2606010" = type { %struct.anon.12.2606011, i64, ptr }
+%struct.anon.12.2606011 = type { i64 }
+%struct._zend_arg_info.2789883 = type { ptr, %struct.zend_type.2789884, ptr }
+%struct.zend_type.2789884 = type { ptr, i32 }
 
 ; 8 occurrences:
 ; cpython/optimized/ast_opt.ll
@@ -22,14 +24,66 @@ entry:
   %3 = and i32 %2, 1
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, i64 4, i64 5
-  %6 = getelementptr %"class.std::__1::basic_string.2490584", ptr %1, i64 %5
-  %7 = getelementptr %"class.std::__1::basic_string.2490584", ptr %6, i64 %0
+  %6 = getelementptr %"class.std::__1::basic_string.2606005", ptr %1, i64 %5
+  %7 = getelementptr %"class.std::__1::basic_string.2606005", ptr %6, i64 %0
   ret ptr %7
 }
 
-; 78 occurrences:
+; 3 occurrences:
 ; graphviz/optimized/cluster.c.ll
 ; graphviz/optimized/edge.c.ll
+; openjdk/optimized/constMethod.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001a(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 16
+  %4 = icmp eq i32 %3, 0
+  %5 = select i1 %4, i64 -2, i64 -4
+  %6 = getelementptr nusw i8, ptr %1, i64 %5
+  %7 = getelementptr nusw i8, ptr %6, i64 %0
+  ret ptr %7
+}
+
+; 4 occurrences:
+; graphviz/optimized/cluster.c.ll
+; graphviz/optimized/edge.c.ll
+; php/optimized/zend_opcode.ll
+; php/optimized/zend_persist_calc.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001b(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 8192
+  %4 = icmp eq i32 %3, 0
+  %5 = select i1 %4, i64 0, i64 -32
+  %6 = getelementptr nusw i8, ptr %1, i64 %5
+  %7 = getelementptr nusw nuw %struct._zend_arg_info.2789883, ptr %6, i64 %0
+  ret ptr %7
+}
+
+; 10 occurrences:
+; assimp/optimized/MDLMaterialLoader.cpp.ll
+; linux/optimized/devio.ll
+; linux/optimized/ehci-hcd.ll
+; linux/optimized/hid-core.ll
+; linux/optimized/message.ll
+; linux/optimized/ohci-hcd.ll
+; linux/optimized/transport.ll
+; linux/optimized/urb.ll
+; opencv/optimized/persistence.cpp.ll
+; wireshark/optimized/io_graph_dialog.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001c(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 16
+  %4 = icmp eq i32 %3, 0
+  %5 = select i1 %4, i64 0, i64 68
+  %6 = getelementptr nusw nuw i8, ptr %1, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 %0
+  ret ptr %7
+}
+
+; 74 occurrences:
+; boost/optimized/numeric.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTDumper.cpp.ll
 ; llvm/optimized/ASTImporter.cpp.ll
@@ -103,38 +157,14 @@ entry:
 ; llvm/optimized/UncountedLocalVarsChecker.cpp.ll
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
-; openjdk/optimized/constMethod.ll
-; php/optimized/zend_opcode.ll
-; php/optimized/zend_persist_calc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000001f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 16
+  %3 = and i32 %2, 16384
   %4 = icmp eq i32 %3, 0
-  %5 = select i1 %4, i64 -2, i64 -4
-  %6 = getelementptr nusw i8, ptr %1, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 %0
-  ret ptr %7
-}
-
-; 9 occurrences:
-; assimp/optimized/MDLMaterialLoader.cpp.ll
-; linux/optimized/devio.ll
-; linux/optimized/ehci-hcd.ll
-; linux/optimized/hid-core.ll
-; linux/optimized/message.ll
-; linux/optimized/ohci-hcd.ll
-; linux/optimized/transport.ll
-; linux/optimized/urb.ll
-; opencv/optimized/persistence.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000018(i64 %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 16
-  %4 = icmp eq i32 %3, 0
-  %5 = select i1 %4, i64 0, i64 68
-  %6 = getelementptr nusw i8, ptr %1, i64 %5
-  %7 = getelementptr i8, ptr %6, i64 %0
+  %5 = select i1 %4, i64 4, i64 20
+  %6 = getelementptr nusw nuw i8, ptr %1, i64 %5
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %0
   ret ptr %7
 }
 

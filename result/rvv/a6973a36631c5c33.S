@@ -19,14 +19,14 @@ func0000000000000006:                   # @func0000000000000006
 	vsext.vf2	v12, v10
 	vmslt.vv	v0, v8, v12
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsub.vv	v10, v10, v11
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsext.vf2	v12, v10
 	vmslt.vv	v0, v12, v8
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsub.vv	v10, v10, v11
 	vsetvli	zero, zero, e64, m2, ta, ma
@@ -40,7 +40,7 @@ func0000000000000004:                   # @func0000000000000004
 	vsext.vf2	v12, v10
 	vmsltu.vv	v0, v8, v12
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsub.vv	v10, v10, v11
 	vsetvli	zero, zero, e64, m2, ta, ma
@@ -52,42 +52,49 @@ func0000000000000001:                   # @func0000000000000001
 	vsub.vv	v10, v10, v11
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsext.vf2	v12, v10
-	vmseq.vv	v0, v12, v8
+	vmseq.vv	v0, v8, v12
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsub.vv	v10, v10, v11
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsext.vf2	v12, v10
-	vmseq.vv	v0, v12, v8
+	vmseq.vv	v0, v8, v12
 	ret
-func000000000000001b:                   # @func000000000000001b
+func000000000000002b:                   # @func000000000000002b
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsub.vv	v10, v10, v11
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsext.vf2	v12, v10
 	vmsle.vv	v0, v12, v8
 	ret
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsub.vv	v10, v10, v11
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsext.vf2	v12, v10
 	vmslt.vv	v0, v8, v12
 	ret
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsub.vv	v10, v10, v11
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsext.vf2	v12, v10
 	vmsltu.vv	v0, v12, v8
 	ret
+func0000000000000034:                   # @func0000000000000034
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vsub.vv	v10, v10, v11
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vsext.vf2	v12, v10
+	vmsltu.vv	v0, v8, v12
+	ret
 func000000000000000c:                   # @func000000000000000c
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsub.vv	v10, v10, v11
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsext.vf2	v12, v10
-	vmsne.vv	v0, v12, v8
+	vmsne.vv	v0, v8, v12
 	ret
 func000000000000000b:                   # @func000000000000000b
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -97,13 +104,6 @@ func000000000000000b:                   # @func000000000000000b
 	vmsle.vv	v0, v12, v8
 	ret
 func0000000000000007:                   # @func0000000000000007
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vsub.vv	v10, v10, v11
-	vsetvli	zero, zero, e64, m2, ta, ma
-	vsext.vf2	v12, v10
-	vmsle.vv	v0, v8, v12
-	ret
-func0000000000000017:                   # @func0000000000000017
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsub.vv	v10, v10, v11
 	vsetvli	zero, zero, e64, m2, ta, ma

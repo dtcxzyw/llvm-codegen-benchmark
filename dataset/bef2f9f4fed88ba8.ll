@@ -16,10 +16,10 @@ entry:
 ; openssl/optimized/libcrypto-shlib-rsaz_exp.ll
 ; rocksdb/optimized/xxhash.cc.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000000e(ptr %0, i64 %1) #0 {
+define i64 @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 64, %1
-  %3 = getelementptr nusw i8, ptr %0, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = and i64 %4, 63
   ret i64 %5

@@ -1,5 +1,6 @@
 
-; 150 occurrences:
+; 148 occurrences:
+; boost/optimized/topology.ll
 ; cmake/optimized/proctitle.c.ll
 ; libquic/optimized/pair.c.ll
 ; libuv/optimized/proctitle.c.ll
@@ -89,13 +90,10 @@
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -154,6 +152,17 @@
 define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %1, %0
+  %4 = select i1 %3, i64 %1, i64 %2
+  %5 = sub i64 %0, %4
+  ret i64 %5
+}
+
+; 1 occurrences:
+; boost/optimized/alloc_lib.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000020(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ugt i64 %0, %1
   %4 = select i1 %3, i64 %1, i64 %2
   %5 = sub i64 %0, %4
   ret i64 %5

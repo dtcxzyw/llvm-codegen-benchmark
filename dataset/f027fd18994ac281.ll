@@ -57,7 +57,7 @@ entry:
 ; openjdk/optimized/xPhysicalMemoryBacking_linux.ll
 ; openjdk/optimized/zPhysicalMemoryBacking_linux.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000208(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = add i64 %3, %1
@@ -72,7 +72,7 @@ entry:
 ; llvm/optimized/GlobalMerge.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000204(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = add i64 %3, %1
@@ -86,7 +86,7 @@ entry:
 ; llvm/optimized/GlobalOpt.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000201(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = add i64 %3, %1
@@ -99,7 +99,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/dmapool.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000105(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000205(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = add i64 %3, %1

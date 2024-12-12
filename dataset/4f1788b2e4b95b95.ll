@@ -3,7 +3,7 @@
 ; protobuf/optimized/parse_context.cc.ll
 ; sentencepiece/optimized/parse_context.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000708(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000e08(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw nsw i32 %2, 28
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/output_core.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000308(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000608(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw nsw i32 %2, 3

@@ -1,5 +1,5 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; hyperscan/optimized/ue2string.cpp.ll
 ; influxdb-rs/optimized/1s5ibqekmzia6ibu.ll
 ; linux/optimized/maple_tree.ll
@@ -8,6 +8,7 @@
 ; ockam-rs/optimized/3trfdpf6q4y0wtix.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; vcpkg/optimized/strings.cpp.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i1 %0, i8 %1) #0 {
 entry:
@@ -26,7 +27,6 @@ entry:
 ; hyperscan/optimized/charreach.cpp.ll
 ; hyperscan/optimized/rose_build_lit_accel.cpp.ll
 ; hyperscan/optimized/ue2string.cpp.ll
-; linux/optimized/acpi_pnp.ll
 ; linux/optimized/kallsyms.ll
 ; linux/optimized/keyboard.ll
 ; linux/optimized/n_tty.ll
@@ -43,6 +43,7 @@ entry:
 ; nuttx/optimized/lib_libvsprintf.c.ll
 ; qemu/optimized/hw_net_igb_core.c.ll
 ; wireshark/optimized/str_util.c.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, i8 %1) #0 {
 entry:
@@ -51,9 +52,8 @@ entry:
   ret i8 %3
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; libpng/optimized/pngread.c.ll
-; linux/optimized/eht.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/rx.ll

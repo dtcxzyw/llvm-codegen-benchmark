@@ -26,9 +26,9 @@ entry:
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
 ; llvm/optimized/EarlyCSE.cpp.ll
 ; nori/optimized/textarea.cpp.ll
-; openmpi/optimized/monitoring_test.ll
 ; openssl/optimized/openssl-bin-cms.ll
 ; yosys/optimized/lz4.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:

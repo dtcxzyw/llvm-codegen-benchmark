@@ -1,6 +1,8 @@
 
-; 15 occurrences:
+; 17 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; cvc5/optimized/sequence.cpp.ll
 ; cvc5/optimized/string.cpp.ll
 ; duckdb/optimized/ub_duckdb_catalog.cpp.ll
@@ -20,7 +22,7 @@ define i64 @func0000000000000000(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = sub i64 %3, %5
   ret i64 %6
 }

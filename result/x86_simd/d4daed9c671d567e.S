@@ -15,18 +15,20 @@ func0000000000000003:                   # @func0000000000000003
 	vpaddd	%ymm2, %ymm0, %ymm0
 	retq
 .LCPI1_0:
-	.long	1                               # 0x1
+	.long	18                              # 0x12
 .LCPI1_1:
-	.long	2                               # 0x2
+	.long	3                               # 0x3
+.LCPI1_2:
+	.long	4                               # 0x4
 func0000000000000000:                   # @func0000000000000000
-	vpsllw	$15, %xmm1, %xmm1
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpcmpnltw	%xmm3, %xmm1, %k1
 	vpsllw	$15, %xmm0, %xmm0
+	vpmovw2m	%xmm0, %k1
+	vpsllw	$15, %xmm1, %xmm0
 	vpmovw2m	%xmm0, %k2
-	vpbroadcastd	.LCPI1_0(%rip), %ymm0   # ymm0 = [1,1,1,1,1,1,1,1]
-	vpbroadcastd	.LCPI1_1(%rip), %ymm0 {%k2} # ymm0 {%k2} = [2,2,2,2,2,2,2,2]
-	vpaddd	%ymm2, %ymm0, %ymm0 {%k1}
+	vpbroadcastd	.LCPI1_0(%rip), %ymm2 {%k2} # ymm2 {%k2} = [18,18,18,18,18,18,18,18]
+	vpbroadcastd	.LCPI1_1(%rip), %ymm0   # ymm0 = [3,3,3,3,3,3,3,3]
+	vpbroadcastd	.LCPI1_2(%rip), %ymm0 {%k1} # ymm0 {%k1} = [4,4,4,4,4,4,4,4]
+	vpaddd	%ymm2, %ymm0, %ymm0
 	retq
 .LCPI2_0:
 	.long	14                              # 0xe

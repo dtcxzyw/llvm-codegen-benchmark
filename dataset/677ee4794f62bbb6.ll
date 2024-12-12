@@ -13,7 +13,9 @@ entry:
   ret float %5
 }
 
-; 8 occurrences:
+; 10 occurrences:
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/btGeneric6DofConstraint.ll
 ; bullet3/optimized/poly34.ll
 ; gromacs/optimized/rf_util.cpp.ll

@@ -1,6 +1,7 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; linux/optimized/intel_pstate.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; ruby/optimized/compile.ll
 ; ruby/optimized/vm.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll

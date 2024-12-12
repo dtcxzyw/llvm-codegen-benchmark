@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 16 occurrences:
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
 ; coreutils-rs/optimized/3fp1x41wzh4l1rh9.ll
@@ -12,6 +12,10 @@
 ; ockam-rs/optimized/3trfdpf6q4y0wtix.ll
 ; rocksdb/optimized/fault_injection_fs.cc.ll
 ; velox/optimized/DateTimeFormatter.cpp.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
@@ -26,12 +30,12 @@ entry:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000038(i1 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 4
   %3 = select i1 %0, i32 %2, i32 %1
   %4 = urem i32 %3, 7
-  %5 = icmp ugt i32 %4, 1
+  %5 = icmp samesign ugt i32 %4, 1
   ret i1 %5
 }
 
@@ -39,7 +43,7 @@ entry:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 4
   %3 = select i1 %0, i32 %2, i32 %1

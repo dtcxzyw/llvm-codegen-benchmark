@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; cmake/optimized/archive_ppmd8.c.ll
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; darktable/optimized/OlympusDecompressor.cpp.ll
@@ -11,6 +11,7 @@
 ; linux/optimized/intel_tv.ll
 ; linux/optimized/rscalc.ll
 ; openusd/optimized/intrapred.c.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i16 %1, i16 %2) #0 {
 entry:

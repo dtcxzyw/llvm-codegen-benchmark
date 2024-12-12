@@ -6,7 +6,7 @@
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002f1(i32 %0, i16 %1, i32 %2) #0 {
+define i1 @func00000000000005e1(i32 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 16
   %4 = or disjoint i32 %3, %0

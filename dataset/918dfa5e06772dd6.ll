@@ -55,11 +55,12 @@ entry:
   ret i8 %4
 }
 
-; 127 occurrences:
+; 128 occurrences:
 ; arrow/optimized/array_nested.cc.ll
 ; arrow/optimized/bit_util.cc.ll
 ; arrow/optimized/row_encoder.cc.ll
 ; arrow/optimized/scalar_cast_boolean.cc.ll
+; boost/optimized/topology.ll
 ; clamav/optimized/extract.cpp.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cvc5/optimized/options_handler.cpp.ll
@@ -144,7 +145,6 @@ entry:
 ; nix/optimized/lockfile.ll
 ; nix/optimized/mercurial.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -179,6 +179,7 @@ entry:
 ; wireshark/optimized/sharkd.c.ll
 ; xgboost/optimized/context.cc.ll
 ; xgboost/optimized/input_split_base.cc.ll
+; yoga/optimized/CalculateLayout.cpp.ll
 ; yosys/optimized/exec.ll
 ; yosys/optimized/log.ll
 ; yosys/optimized/qbfsat.ll

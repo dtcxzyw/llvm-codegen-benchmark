@@ -21,7 +21,7 @@ entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = lshr i32 %2, 3
   %4 = and i32 %3, 3968
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = zext i32 %5 to i64
   ret i64 %6
 }
@@ -34,7 +34,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 3
   %4 = and i32 %3, 536870784
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = zext i32 %5 to i64
   ret i64 %6
 }
@@ -76,7 +76,7 @@ entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = lshr i32 %2, 1
   %4 = and i32 %3, 1
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   %6 = zext nneg i32 %5 to i64
   ret i64 %6
 }
@@ -95,7 +95,7 @@ entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = lshr i32 %2, 1
   %4 = and i32 %3, 1
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   %6 = zext nneg i32 %5 to i64
   ret i64 %6
 }
@@ -109,7 +109,7 @@ entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = lshr exact i32 %2, 1
   %4 = and i32 %3, 1
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   %6 = zext nneg i32 %5 to i64
   ret i64 %6
 }

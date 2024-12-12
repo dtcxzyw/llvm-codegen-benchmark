@@ -1,6 +1,5 @@
 
-; 6 occurrences:
-; linux/optimized/blk-settings.ll
+; 5 occurrences:
 ; openmpi/optimized/coll_base_allgather.ll
 ; openmpi/optimized/coll_base_allgatherv.ll
 ; postgres/optimized/heapam_handler.ll

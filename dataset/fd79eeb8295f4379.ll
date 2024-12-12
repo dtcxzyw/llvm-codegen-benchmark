@@ -6,7 +6,7 @@
 ; llvm/optimized/TargetLoweringBase.cpp.ll
 ; openjdk/optimized/SctpChannelImpl.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i16 %0) #0 {
+define i32 @func0000000000000064(i16 %0) #0 {
 entry:
   %1 = zext i16 %0 to i32
   %2 = add nuw nsw i32 %1, 1
@@ -19,7 +19,7 @@ entry:
 ; wireshark/optimized/blf.c.ll
 ; wireshark/optimized/packet-openflow_v4.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i16 %0) #0 {
+define i32 @func0000000000000028(i16 %0) #0 {
 entry:
   %1 = zext i16 %0 to i32
   %2 = add nsw i32 %1, -8

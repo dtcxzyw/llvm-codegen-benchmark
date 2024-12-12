@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; minetest/optimized/texturesource.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000008a(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = udiv i32 %3, %1
@@ -81,7 +81,7 @@ entry:
 ; hwloc/optimized/hwloc-annotate.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = udiv i32 %3, %1

@@ -22,7 +22,7 @@ entry:
   ret i64 %3
 }
 
-; 487 occurrences:
+; 486 occurrences:
 ; hermes/optimized/Analysis.cpp.ll
 ; hermes/optimized/BCOpt.cpp.ll
 ; hermes/optimized/BytecodeGenerator.cpp.ll
@@ -353,7 +353,6 @@ entry:
 ; llvm/optimized/ProvenanceAnalysisEvaluator.cpp.ll
 ; llvm/optimized/RDFGraph.cpp.ll
 ; llvm/optimized/RDFLiveness.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVMergeBaseOffset.cpp.ll
 ; llvm/optimized/RawCommentList.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll

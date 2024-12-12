@@ -19,7 +19,7 @@ entry:
 define i32 @func0000000000000010(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = select i1 %4, i32 1, i32 2
   ret i32 %5
 }
@@ -41,7 +41,7 @@ entry:
 define i32 @func0000000000000016(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sge i32 %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = select i1 %4, i32 2, i32 3
   ret i32 %5
 }
@@ -54,7 +54,7 @@ entry:
 define i32 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = select i1 %4, i32 -9216, i32 0
   ret i32 %5
 }
@@ -76,7 +76,7 @@ entry:
 define i32 @func000000000000000c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = select i1 %4, i32 2, i32 1
   ret i32 %5
 }
@@ -87,7 +87,7 @@ entry:
 define i32 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = select i1 %4, i32 -22, i32 0
   ret i32 %5
 }

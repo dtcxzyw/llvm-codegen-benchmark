@@ -1,5 +1,5 @@
 
-; 79 occurrences:
+; 80 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abseil-cpp/optimized/city.cc.ll
 ; arrow/optimized/key_hash.cc.ll
@@ -23,6 +23,7 @@
 ; linux/optimized/xxhash.ll
 ; luau/optimized/OptimizeConstProp.cpp.ll
 ; luau/optimized/ltable.cpp.ll
+; lvgl/optimized/lv_lru.ll
 ; lz4/optimized/xxhash.c.ll
 ; memcached/optimized/memcached-murmur3_hash.ll
 ; memcached/optimized/memcached_debug-murmur3_hash.ll

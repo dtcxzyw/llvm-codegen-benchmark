@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; cpython/optimized/frameobject.ll
 ; flac/optimized/bitreader.c.ll
 ; linux/optimized/gen8_ppgtt.ll
@@ -13,6 +13,7 @@
 ; spike/optimized/vfsgnj_vf.ll
 ; spike/optimized/vfsgnjn_vf.ll
 ; spike/optimized/vfsgnjx_vf.ll
+; tree-sitter-rs/optimized/3pra6a7meoswj3tu.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i64 %1) #0 {
 entry:
@@ -33,6 +34,17 @@ entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = and i32 %2, 1
   %4 = select i1 %0, i32 %3, i32 0
+  ret i32 %4
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_dropdown.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000002(i1 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw i64 %1 to i32
+  %3 = and i32 %2, 65535
+  %4 = select i1 %0, i32 %3, i32 -1
   ret i32 %4
 }
 

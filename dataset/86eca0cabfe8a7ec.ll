@@ -7,7 +7,7 @@ define i1 @func0000000000000001(i8 %0, i8 %1) #0 {
 entry:
   %2 = trunc i8 %1 to i1
   %3 = select i1 %2, i8 16, i8 15
-  %4 = icmp eq i8 %3, %0
+  %4 = icmp eq i8 %0, %3
   ret i1 %4
 }
 
@@ -17,22 +17,22 @@ entry:
 ; tree-sitter-rs/optimized/18kt1xijwoc4jebp.ll
 ; tree-sitter-rs/optimized/50gi8jfmf82cuy8e.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000041(i8 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = select i1 %2, i8 2, i8 1
-  %4 = icmp eq i8 %3, %0
+  %4 = icmp eq i8 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; wasmtime-rs/optimized/x7ydxa15kh51k9x.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000044(i8 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = select i1 %2, i8 121, i8 33
-  %4 = icmp ugt i8 %3, %0
+  %4 = icmp ult i8 %0, %3
   ret i1 %4
 }
 

@@ -1,6 +1,8 @@
 
-; 4 occurrences:
+; 6 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; openjdk/optimized/shenandoahMark.ll
 ; qemu/optimized/hw_net_pcnet.c.ll
@@ -8,7 +10,7 @@
 define i16 @func0000000000000002(i64 %0, i16 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i16
-  %3 = add i16 %2, %1
+  %3 = add i16 %1, %2
   ret i16 %3
 }
 
@@ -46,14 +48,13 @@ entry:
 define i16 @func0000000000000004(i64 %0, i16 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i16
-  %3 = add i16 %2, %1
+  %3 = add i16 %1, %2
   ret i16 %3
 }
 
 ; 23 occurrences:
 ; logos-rs/optimized/1w5j7pvycf8p27lv.ll
 ; meilisearch-rs/optimized/55beptyn1v6yeqaz.ll
-; nuttx/optimized/lib_rand48.c.ll
 ; ockam-rs/optimized/16eth4dr0rzwo5zh.ll
 ; ockam-rs/optimized/1kl4v6vvko2mygns.ll
 ; ockam-rs/optimized/27nutj9k22uohtyi.ll
@@ -74,15 +75,16 @@ entry:
 ; wasmtime-rs/optimized/1yipc6g1ijw8sqf9.ll
 ; wasmtime-rs/optimized/30bs26v8gk3pt07g.ll
 ; wasmtime-rs/optimized/i5u7vsclgey2ddj.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i64 %0, i16 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i16
-  %3 = add i16 %2, %1
+  %3 = add i16 %1, %2
   ret i16 %3
 }
 
-; 21 occurrences:
+; 22 occurrences:
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; influxdb-rs/optimized/4xdswox27ronf9w0.ll
@@ -104,11 +106,12 @@ entry:
 ; wasmtime-rs/optimized/3flv1664rwe55t82.ll
 ; wasmtime-rs/optimized/48myxw210mngc99c.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000000f(i64 %0, i16 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i16
-  %3 = add i16 %2, %1
+  %3 = add i16 %1, %2
   ret i16 %3
 }
 
@@ -123,7 +126,7 @@ entry:
 define i16 @func0000000000000003(i64 %0, i16 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i16
-  %3 = add i16 %2, %1
+  %3 = add i16 %1, %2
   ret i16 %3
 }
 

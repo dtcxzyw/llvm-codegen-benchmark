@@ -1,10 +1,10 @@
 
-%"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const std::basic_string_view<char>, mold::elf::ComdatGroup>>, tbb::detail::d1::spin_rw_mutex>::bucket.2523220" = type { %"class.tbb::detail::d1::spin_rw_mutex.2523221", %"struct.std::atomic.109.2523222" }
-%"class.tbb::detail::d1::spin_rw_mutex.2523221" = type { %"struct.std::atomic.107.2523223" }
-%"struct.std::atomic.107.2523223" = type { %"struct.std::__atomic_base.108.2523224" }
-%"struct.std::__atomic_base.108.2523224" = type { i64 }
-%"struct.std::atomic.109.2523222" = type { %"struct.std::__atomic_base.110.2523225" }
-%"struct.std::__atomic_base.110.2523225" = type { ptr }
+%"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const std::basic_string_view<char>, mold::elf::ComdatGroup>>, tbb::detail::d1::spin_rw_mutex>::bucket.2637629" = type { %"class.tbb::detail::d1::spin_rw_mutex.2637630", %"struct.std::atomic.109.2637631" }
+%"class.tbb::detail::d1::spin_rw_mutex.2637630" = type { %"struct.std::atomic.107.2637632" }
+%"struct.std::atomic.107.2637632" = type { %"struct.std::__atomic_base.108.2637633" }
+%"struct.std::__atomic_base.108.2637633" = type { i64 }
+%"struct.std::atomic.109.2637631" = type { %"struct.std::__atomic_base.110.2637634" }
+%"struct.std::__atomic_base.110.2637634" = type { ptr }
 
 ; 79 occurrences:
 ; mold/optimized/input-files.cc.ALPHA.cc.ll
@@ -87,11 +87,11 @@
 ; openvdb/optimized/VolumeAdvect.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000003a(ptr %0, i64 %1) #0 {
+define i64 @func000000000000003b(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 1, %1
   %3 = getelementptr nusw i8, ptr %0, i64 -32
-  %4 = getelementptr nusw %"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const std::basic_string_view<char>, mold::elf::ComdatGroup>>, tbb::detail::d1::spin_rw_mutex>::bucket.2523220", ptr %3, i64 %2
+  %4 = getelementptr nusw nuw %"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const std::basic_string_view<char>, mold::elf::ComdatGroup>>, tbb::detail::d1::spin_rw_mutex>::bucket.2637629", ptr %3, i64 %2
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }

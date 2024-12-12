@@ -1,51 +1,29 @@
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
-	ushr	v2.4s, v2.4s, #31
-	mov	w8, #49                         // =0x31
-	uaddw	v0.2d, v0.2d, v2.2s
-	uaddw2	v1.2d, v1.2d, v2.4s
-	dup	v2.2d, x8
-	add	v1.2d, v1.2d, v2.2d
-	add	v0.2d, v0.2d, v2.2d
+	lsr	w8, w1, #31
+	add	x8, x0, x8
+	add	x0, x8, #49
 	ret
                                         // -- End function
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
-	ushr	v2.4s, v2.4s, #9
-	movi	v3.2d, #0x000000ffffffff
-	uaddw	v0.2d, v0.2d, v2.2s
-	uaddw2	v1.2d, v1.2d, v2.4s
-	add	v1.2d, v1.2d, v3.2d
-	add	v0.2d, v0.2d, v3.2d
+	mov	w8, #-1                         // =0xffffffff
+	lsr	w9, w1, #9
+	add	x8, x0, x8
+	add	x0, x8, x9
 	ret
                                         // -- End function
 func0000000000000017:                   // @func0000000000000017
 // %bb.0:                               // %entry
-	ushr	v2.4s, v2.4s, #24
-	movi	v3.2d, #0xffffffffffffffff
-	uaddw	v0.2d, v0.2d, v2.2s
-	uaddw2	v1.2d, v1.2d, v2.4s
-	add	v1.2d, v1.2d, v3.2d
-	add	v0.2d, v0.2d, v3.2d
+	lsr	w8, w1, #24
+	add	x8, x0, x8
+	sub	x0, x8, #1
 	ret
                                         // -- End function
 func0000000000000015:                   // @func0000000000000015
 // %bb.0:                               // %entry
-	ushr	v2.4s, v2.4s, #8
-	movi	v3.2d, #0xffffffffffffffff
-	uaddw	v0.2d, v0.2d, v2.2s
-	uaddw2	v1.2d, v1.2d, v2.4s
-	add	v1.2d, v1.2d, v3.2d
-	add	v0.2d, v0.2d, v3.2d
-	ret
-                                        // -- End function
-func0000000000000012:                   // @func0000000000000012
-// %bb.0:                               // %entry
-	ushr	v2.4s, v2.4s, #3
-	movi	v3.2d, #0xffffffffffffffff
-	uaddw	v0.2d, v0.2d, v2.2s
-	uaddw2	v1.2d, v1.2d, v2.4s
-	add	v1.2d, v1.2d, v3.2d
-	add	v0.2d, v0.2d, v3.2d
+	lsr	w8, w1, #8
+	add	x8, x0, x8
+	sub	x0, x8, #1
 	ret
                                         // -- End function

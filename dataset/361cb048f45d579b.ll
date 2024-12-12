@@ -3,7 +3,7 @@
 ; jq/optimized/jv_unicode.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000054(i1 %0, i32 %1) #0 {
 entry:
   %2 = select i1 %0, i32 0, i32 %1
   %3 = icmp sgt i32 %2, -1
@@ -17,7 +17,7 @@ entry:
 ; llvm/optimized/ParseDecl.cpp.ll
 ; luau/optimized/isocline.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000042(i1 %0, i32 %1) #0 {
 entry:
   %2 = select i1 %0, i32 1, i32 %1
   %3 = icmp eq i32 %2, -17958193

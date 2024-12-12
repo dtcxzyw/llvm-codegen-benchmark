@@ -12,14 +12,14 @@ func0000000000000001:                   # @func0000000000000001
 	vpsrld	$4, %ymm2, %ymm2
 	vpmulld	.LCPI0_1(%rip){1to8}, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	vptestnmd	%ymm0, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 .LCPI1_0:
 	.long	138547333                       # 0x8421085
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vpshufd	$245, %ymm1, %ymm2              # ymm2 = ymm1[1,1,3,3,5,5,7,7]
 	vpbroadcastd	.LCPI1_0(%rip), %ymm3   # ymm3 = [138547333,138547333,138547333,138547333,138547333,138547333,138547333,138547333]
 	vpmuludq	%ymm3, %ymm2, %ymm2

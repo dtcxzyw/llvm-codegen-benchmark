@@ -1,7 +1,6 @@
 
-; 106 occurrences:
+; 105 occurrences:
 ; abc/optimized/abcExact.c.ll
-; abc/optimized/satUtil.c.ll
 ; brotli/optimized/metablock.c.ll
 ; clamav/optimized/pe_icons.c.ll
 ; grpc/optimized/static_stride_scheduler.cc.ll

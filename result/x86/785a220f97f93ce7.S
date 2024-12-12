@@ -1,6 +1,5 @@
 func0000000000000000:                   # @func0000000000000000
-	movabsq	$4611686018427387904, %rax      # imm = 0x4000000000000000
-	addq	%rdi, %rax
+	leaq	1(%rdi), %rax
 	retq
 func0000000000000001:                   # @func0000000000000001
 	leaq	-960(%rdi), %rax

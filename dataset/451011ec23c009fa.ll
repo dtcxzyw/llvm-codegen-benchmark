@@ -1,5 +1,5 @@
 
-; 55 occurrences:
+; 52 occurrences:
 ; cvc5/optimized/floatingpoint.cpp.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; hdf5/optimized/H5HFsection.c.ll
@@ -14,9 +14,7 @@
 ; linux/optimized/hwmon.ll
 ; linux/optimized/intel_display_trace.ll
 ; linux/optimized/iommu-traces.ll
-; linux/optimized/net-traces.ll
 ; linux/optimized/nfs4trace.ll
-; linux/optimized/nfstrace.ll
 ; linux/optimized/power-traces.ll
 ; linux/optimized/regmap.ll
 ; linux/optimized/sched.ll
@@ -34,7 +32,6 @@
 ; stb/optimized/stb_image_resize2.c.ll
 ; wireshark/optimized/address_types.c.ll
 ; wireshark/optimized/packet-3g-a11.c.ll
-; wireshark/optimized/packet-adwin-config.c.ll
 ; wireshark/optimized/packet-alljoyn.c.ll
 ; wireshark/optimized/packet-bzr.c.ll
 ; wireshark/optimized/packet-cipsafety.c.ll
@@ -205,10 +202,9 @@ entry:
   ret i32 %3
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; clamav/optimized/bytecode.c.ll
 ; openblas/optimized/dsbgst.c.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
 ; openblas/optimized/dtgex2.c.ll
 ; redis/optimized/print.ll
 ; velox/optimized/CompactRow.cpp.ll
@@ -236,7 +232,7 @@ entry:
   ret i32 %3
 }
 
-; 27 occurrences:
+; 26 occurrences:
 ; clamav/optimized/bytecode.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; openblas/optimized/dsptri.c.ll
@@ -255,7 +251,6 @@ entry:
 ; wireshark/optimized/packet-ged125.c.ll
 ; wireshark/optimized/packet-ieee1905.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
-; wireshark/optimized/packet-knxip.c.ll
 ; wireshark/optimized/packet-mka.c.ll
 ; wireshark/optimized/packet-obex.c.ll
 ; wireshark/optimized/packet-rsl.c.ll
@@ -338,20 +333,6 @@ entry:
   ret i32 %3
 }
 
-; 5 occurrences:
-; gromacs/optimized/dlasd1.cpp.ll
-; gromacs/optimized/slasd1.cpp.ll
-; linux/optimized/drm_edid.ll
-; wireshark/optimized/packet-isup.c.ll
-; wireshark/optimized/packet-s5066dts.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000035(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add i32 %0, %1
-  %3 = add i32 %2, 2
-  ret i32 %3
-}
-
 ; 2 occurrences:
 ; openblas/optimized/dbdsdc.c.ll
 ; openusd/optimized/tessellation.cpp.ll
@@ -382,6 +363,18 @@ define i32 @func000000000000001f(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %0, %1
   %3 = add i32 %2, 2
+  ret i32 %3
+}
+
+; 3 occurrences:
+; linux/optimized/drm_edid.ll
+; wireshark/optimized/packet-isup.c.ll
+; wireshark/optimized/packet-s5066dts.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000035(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add i32 %0, %1
+  %3 = add i32 %2, 1
   ret i32 %3
 }
 

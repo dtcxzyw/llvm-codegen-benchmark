@@ -1,11 +1,10 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; cvc5/optimized/fc_simplex.cpp.ll
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; openjdk/optimized/mlib_c_ImageCopy.ll
-; zxing/optimized/PDFDetectionResultColumn.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 %2, i32 1
   %4 = mul nsw i32 %3, %0
@@ -21,7 +20,7 @@ entry:
 ; oiio/optimized/tiffinput.cpp.ll
 ; openjdk/optimized/mlib_c_ImageCopy.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 %2, i32 1
   %4 = mul nsw i32 %3, %0
@@ -46,7 +45,7 @@ entry:
 define i1 @func0000000000000004(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 %2, i32 65535
-  %4 = mul i32 %3, %0
+  %4 = mul i32 %0, %3
   %5 = icmp ult i32 %4, 65535
   ret i1 %5
 }

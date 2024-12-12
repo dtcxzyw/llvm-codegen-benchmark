@@ -1,5 +1,5 @@
 
-; 44 occurrences:
+; 45 occurrences:
 ; abc/optimized/abcIfMux.c.ll
 ; abc/optimized/giaSatLut.c.ll
 ; bullet3/optimized/btSoftBody.ll
@@ -23,6 +23,7 @@
 ; llvm/optimized/InstCombineSelect.cpp.ll
 ; llvm/optimized/MachineInstr.cpp.ll
 ; llvm/optimized/Verifier.cpp.ll
+; lvgl/optimized/lv_math.ll
 ; meshoptimizer/optimized/clusterizer.cpp.ll
 ; opencv/optimized/array.cpp.ll
 ; opencv/optimized/convhull.cpp.ll

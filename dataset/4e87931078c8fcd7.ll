@@ -1,5 +1,5 @@
 
-; 163 occurrences:
+; 162 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/kitDsd.c.ll
@@ -62,7 +62,6 @@
 ; libwebp/optimized/io_dec.c.ll
 ; linux/optimized/af_packet.ll
 ; linux/optimized/igmp.ll
-; linux/optimized/nl80211.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; meshlab/optimized/Factor.cpp.ll
 ; meshlab/optimized/Scanner.cpp.ll

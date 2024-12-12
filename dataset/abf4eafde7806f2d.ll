@@ -1,6 +1,12 @@
 
-; 547 occurrences:
+; 568 occurrences:
 ; assimp/optimized/LimitBoneWeightsProcess.cpp.ll
+; boost/optimized/channel.ll
+; boost/optimized/pool_resource.ll
+; boost/optimized/round_robin.ll
+; boost/optimized/scheduler.ll
+; boost/optimized/shared_work.ll
+; boost/optimized/src.ll
 ; casadi/optimized/tinyxml2.cpp.ll
 ; clamav/optimized/ishield.c.ll
 ; cmake/optimized/cmMakefile.cxx.ll
@@ -66,8 +72,10 @@
 ; llvm/optimized/CodeGenPrepare.cpp.ll
 ; llvm/optimized/CodeMoverUtils.cpp.ll
 ; llvm/optimized/ComplexDeinterleavingPass.cpp.ll
+; llvm/optimized/Core.cpp.ll
 ; llvm/optimized/CoroFrame.cpp.ll
 ; llvm/optimized/CoroSplit.cpp.ll
+; llvm/optimized/DIBuilder.cpp.ll
 ; llvm/optimized/DataFlowSanitizer.cpp.ll
 ; llvm/optimized/DebugHandlerBase.cpp.ll
 ; llvm/optimized/Debugify.cpp.ll
@@ -94,7 +102,21 @@
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SafeStack.cpp.ll
 ; llvm/optimized/SampleProfileProbe.cpp.ll
+; llvm/optimized/SemaCXXScopeSpec.cpp.ll
+; llvm/optimized/SemaConcept.cpp.ll
+; llvm/optimized/SemaDecl.cpp.ll
+; llvm/optimized/SemaDeclObjC.cpp.ll
+; llvm/optimized/SemaExprCXX.cpp.ll
+; llvm/optimized/SemaLambda.cpp.ll
+; llvm/optimized/SemaTemplate.cpp.ll
+; llvm/optimized/SemaTemplateDeduction.cpp.ll
+; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
+; llvm/optimized/SemaTemplateInstantiate.cpp.ll
+; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
+; llvm/optimized/SemaTemplateVariadic.cpp.ll
+; llvm/optimized/SemaType.cpp.ll
 ; llvm/optimized/SimplifyCFG.cpp.ll
+; llvm/optimized/TypeLocBuilder.cpp.ll
 ; llvm/optimized/Verifier.cpp.ll
 ; llvm/optimized/WasmEHPrepare.cpp.ll
 ; llvm/optimized/WinEHPrepare.cpp.ll
@@ -208,11 +230,11 @@
 ; opencv/optimized/umatrix.cpp.ll
 ; opencv/optimized/warpfield.cpp.ll
 ; opencv/optimized/zmaxheap.cpp.ll
+; openusd/optimized/tessellation.cpp.ll
 ; postgres/optimized/autovacuum.ll
 ; postgres/optimized/predicate.ll
 ; postgres/optimized/proc.ll
 ; postgres/optimized/reorderbuffer.ll
-; postgres/optimized/xlogprefetcher.ll
 ; proxygen/optimized/ByteEventTracker.cpp.ll
 ; proxygen/optimized/HTTP2PriorityQueue.cpp.ll
 ; proxygen/optimized/PersistentQuicPskCache.cpp.ll
@@ -283,7 +305,6 @@
 ; z3/optimized/bvarray2uf_tactic.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/check_logic.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/cofactor_elim_term_ite.cpp.ll
 ; z3/optimized/cofactor_term_ite_tactic.cpp.ll
 ; z3/optimized/collect_occs.cpp.ll
@@ -548,38 +569,10 @@
 ; z3/optimized/well_sorted.cpp.ll
 ; z3/optimized/zstring.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000422(ptr %0, ptr %1) #0 {
+define i1 @func0000000000001842(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 32
-  %3 = icmp eq ptr %2, %0
-  %4 = icmp eq ptr %0, null
-  %5 = or i1 %3, %4
-  ret i1 %5
-}
-
-; 17 occurrences:
-; llvm/optimized/Core.cpp.ll
-; llvm/optimized/DIBuilder.cpp.ll
-; llvm/optimized/SemaCXXScopeSpec.cpp.ll
-; llvm/optimized/SemaConcept.cpp.ll
-; llvm/optimized/SemaDecl.cpp.ll
-; llvm/optimized/SemaDeclObjC.cpp.ll
-; llvm/optimized/SemaExprCXX.cpp.ll
-; llvm/optimized/SemaLambda.cpp.ll
-; llvm/optimized/SemaTemplate.cpp.ll
-; llvm/optimized/SemaTemplateDeduction.cpp.ll
-; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
-; llvm/optimized/SemaTemplateInstantiate.cpp.ll
-; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
-; llvm/optimized/SemaTemplateVariadic.cpp.ll
-; llvm/optimized/SemaType.cpp.ll
-; llvm/optimized/TypeLocBuilder.cpp.ll
-; openusd/optimized/tessellation.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000622(ptr %0, ptr %1) #0 {
-entry:
-  %2 = getelementptr nusw nuw i8, ptr %1, i64 24
-  %3 = icmp eq ptr %2, %0
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 32
+  %3 = icmp eq ptr %0, %2
   %4 = icmp eq ptr %0, null
   %5 = or i1 %3, %4
   ret i1 %5
@@ -601,10 +594,10 @@ entry:
 ; postgres/optimized/predicate.ll
 ; postgres/optimized/syncrep.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000042(ptr %0, ptr %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %1, i64 -120
-  %3 = icmp eq ptr %2, %0
+  %3 = icmp eq ptr %0, %2
   %4 = icmp eq ptr %0, null
   %5 = or i1 %3, %4
   ret i1 %5

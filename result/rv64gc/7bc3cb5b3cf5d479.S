@@ -34,3 +34,14 @@ func0000000000000014:                   # @func0000000000000014
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
+func0000000000000030:                   # @func0000000000000030
+	andi	a1, a1, 255
+	sltiu	a1, a1, 32
+	xori	a1, a1, 1
+	or	a0, a0, a1
+	ret
+func0000000000000028:                   # @func0000000000000028
+	andi	a1, a1, 255
+	sltiu	a1, a1, 240
+	or	a0, a0, a1
+	ret

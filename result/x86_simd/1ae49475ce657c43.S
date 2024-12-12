@@ -59,6 +59,32 @@ func0000000000000004:                   # @func0000000000000004
 	vpbroadcastd	.LCPI3_1(%rip), %ymm0 {%k1} # ymm0 {%k1} = [1,1,1,1,1,1,1,1]
 	retq
 .LCPI4_0:
+	.short	1024                            # 0x400
+	.short	1024                            # 0x400
+	.short	1024                            # 0x400
+	.short	1024                            # 0x400
+	.short	1024                            # 0x400
+	.short	1024                            # 0x400
+	.short	1024                            # 0x400
+	.short	1024                            # 0x400
+func0000000000000014:                   # @func0000000000000014
+	vpcmpnltuw	.LCPI4_0(%rip), %xmm1, %k1
+	vmovdqa32	%ymm0, %ymm0 {%k1} {z}
+	retq
+.LCPI5_0:
+	.short	2560                            # 0xa00
+	.short	2560                            # 0xa00
+	.short	2560                            # 0xa00
+	.short	2560                            # 0xa00
+	.short	2560                            # 0xa00
+	.short	2560                            # 0xa00
+	.short	2560                            # 0xa00
+	.short	2560                            # 0xa00
+func0000000000000018:                   # @func0000000000000018
+	vpcmpleuw	.LCPI5_0(%rip), %xmm1, %k1
+	vmovdqa32	%ymm0, %ymm0 {%k1} {z}
+	retq
+.LCPI6_0:
 	.short	12                              # 0xc
 	.short	12                              # 0xc
 	.short	12                              # 0xc
@@ -68,7 +94,7 @@ func0000000000000004:                   # @func0000000000000004
 	.short	12                              # 0xc
 	.short	12                              # 0xc
 func000000000000000c:                   # @func000000000000000c
-	vpcmpeqw	.LCPI4_0(%rip), %xmm1, %k1
+	vpcmpeqw	.LCPI6_0(%rip), %xmm1, %k1
 	vmovdqa32	%ymm0, %ymm0 {%k1} {z}
 	retq
 func000000000000000a:                   # @func000000000000000a

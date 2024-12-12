@@ -9,7 +9,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = sub i32 %3, %1
   %5 = sitofp i32 %4 to float
-  %6 = fmul float %5, %0
+  %6 = fmul float %0, %5
   ret float %6
 }
 
@@ -23,7 +23,7 @@ entry:
   %3 = trunc nsw i64 %2 to i32
   %4 = sub nsw i32 %3, %1
   %5 = sitofp i32 %4 to float
-  %6 = fmul float %5, %0
+  %6 = fmul float %0, %5
   ret float %6
 }
 
@@ -35,7 +35,7 @@ entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = sub nsw i32 %3, %1
   %5 = sitofp i32 %4 to float
-  %6 = fmul float %5, %0
+  %6 = fmul float %0, %5
   ret float %6
 }
 
@@ -48,7 +48,7 @@ entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = sub nsw i32 %3, %1
   %5 = sitofp i32 %4 to float
-  %6 = fmul float %5, %0
+  %6 = fmul float %0, %5
   ret float %6
 }
 
@@ -60,7 +60,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nsw i32 %3, %1
   %5 = sitofp i32 %4 to float
-  %6 = fmul float %5, %0
+  %6 = fmul float %0, %5
   ret float %6
 }
 

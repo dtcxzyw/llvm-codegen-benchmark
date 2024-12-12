@@ -14,8 +14,8 @@ define i1 @func0000000000000002(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 15
   %4 = trunc i64 %3 to i32
-  %5 = icmp eq i32 %4, %1
-  %6 = or i1 %5, %0
+  %5 = icmp eq i32 %1, %4
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -33,12 +33,12 @@ entry:
 ; glog/optimized/mock-log_unittest.cc.ll
 ; minetest/optimized/CGUITabControl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008e(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000010e(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 3
   %4 = trunc i64 %3 to i32
-  %5 = icmp sge i32 %4, %1
-  %6 = or i1 %5, %0
+  %5 = icmp sle i32 %1, %4
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -47,12 +47,12 @@ entry:
 ; minetest/optimized/chat.cpp.ll
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000010c(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 5
   %4 = trunc i64 %3 to i32
-  %5 = icmp sgt i32 %4, %1
-  %6 = or i1 %5, %0
+  %5 = icmp slt i32 %1, %4
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -63,8 +63,8 @@ define i1 @func0000000000000010(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 3
   %4 = trunc i64 %3 to i32
-  %5 = icmp ult i32 %4, %1
-  %6 = or i1 %5, %0
+  %5 = icmp ugt i32 %1, %4
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -72,12 +72,12 @@ entry:
 ; llvm/optimized/FastISelEmitter.cpp.ll
 ; php/optimized/zend_hash.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000108(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 5
   %4 = trunc i64 %3 to i32
-  %5 = icmp ugt i32 %4, %1
-  %6 = or i1 %5, %0
+  %5 = icmp ult i32 %1, %4
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -85,36 +85,36 @@ entry:
 ; jq/optimized/jv.ll
 ; opencv/optimized/cascadedetect.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000094(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
-  %5 = icmp slt i32 %4, %1
-  %6 = or i1 %5, %0
+  %5 = icmp sgt i32 %1, %4
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; jq/optimized/jv.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000096(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
-  %5 = icmp sle i32 %4, %1
-  %6 = or i1 %5, %0
+  %5 = icmp sge i32 %1, %4
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; darktable/optimized/ColorFilterArray.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004e(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000008e(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
-  %5 = icmp sge i32 %4, %1
-  %6 = or i1 %5, %0
+  %5 = icmp sle i32 %1, %4
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -122,12 +122,12 @@ entry:
 ; lief/optimized/ecp_curves.c.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000088(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
-  %5 = icmp ugt i32 %4, %1
-  %6 = or i1 %5, %0
+  %5 = icmp ult i32 %1, %4
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -144,12 +144,12 @@ entry:
 ; tev/optimized/ImageViewer.cpp.ll
 ; yosys/optimized/nlutmap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000102(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 3
   %4 = trunc i64 %3 to i32
-  %5 = icmp eq i32 %4, %1
-  %6 = or i1 %5, %0
+  %5 = icmp eq i32 %1, %4
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -157,12 +157,12 @@ entry:
 ; oiio/optimized/imagecache.cpp.ll
 ; opencv/optimized/detector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000096(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000116(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 7
   %4 = trunc i64 %3 to i32
-  %5 = icmp sle i32 %4, %1
-  %6 = or i1 %5, %0
+  %5 = icmp sge i32 %1, %4
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -185,36 +185,37 @@ entry:
 ; zxing/optimized/QRDetector.cpp.ll
 ; zxing/optimized/QRVersion.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000042(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000082(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
-  %5 = icmp eq i32 %4, %1
-  %6 = or i1 %5, %0
+  %5 = icmp eq i32 %1, %4
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; llvm/optimized/CGExprCXX.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000118(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 3
   %4 = trunc i64 %3 to i32
-  %5 = icmp ne i32 %4, %1
+  %5 = icmp ne i32 %1, %4
   %6 = or i1 %5, %0
   ret i1 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; abseil-cpp/optimized/graphcycles.cc.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000098(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
-  %5 = icmp ne i32 %4, %1
-  %6 = or i1 %5, %0
+  %5 = icmp ne i32 %1, %4
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -226,8 +227,8 @@ define i1 @func0000000000000018(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 3
   %4 = trunc i64 %3 to i32
-  %5 = icmp ne i32 %4, %1
-  %6 = or i1 %5, %0
+  %5 = icmp ne i32 %1, %4
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -239,7 +240,7 @@ define i1 @func0000000000000014(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 3
   %4 = trunc i64 %3 to i32
-  %5 = icmp slt i32 %4, %1
+  %5 = icmp sgt i32 %1, %4
   %6 = or i1 %5, %0
   ret i1 %6
 }
@@ -251,12 +252,12 @@ entry:
 ; hyperscan/optimized/ucp_table.cpp.ll
 ; linux/optimized/fib_rules.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000050(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000090(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
-  %5 = icmp ult i32 %4, %1
-  %6 = or i1 %5, %0
+  %5 = icmp ugt i32 %1, %4
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -264,11 +265,11 @@ entry:
 ; z3/optimized/fm_tactic.cpp.ll
 ; z3/optimized/qe_lite_tactic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000008a(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
-  %5 = icmp uge i32 %4, %1
+  %5 = icmp ule i32 %1, %4
   %6 = or i1 %5, %0
   ret i1 %6
 }
@@ -279,24 +280,24 @@ entry:
 ; opencv/optimized/short_term_imageless_tracker.cpp.ll
 ; opencv/optimized/zero_term_imageless_tracker.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000114(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 1
   %4 = trunc i64 %3 to i32
-  %5 = icmp slt i32 %4, %1
-  %6 = or i1 %5, %0
+  %5 = icmp sgt i32 %1, %4
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000008c(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
-  %5 = icmp sgt i32 %4, %1
-  %6 = or i1 %5, %0
+  %5 = icmp slt i32 %1, %4
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

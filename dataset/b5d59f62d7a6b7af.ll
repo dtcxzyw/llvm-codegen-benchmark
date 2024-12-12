@@ -1,9 +1,8 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; folly/optimized/IPAddressV4.cpp.ll
 ; folly/optimized/IPAddressV6.cpp.ll
 ; grpc/optimized/b64.cc.ll
-; linux/optimized/tbfadt.ll
 ; wireshark/optimized/file-elf.c.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000000c(i8 %0) #0 {

@@ -6,10 +6,11 @@ func0000000000000000:                   # @func0000000000000000
 	cmovneq	%rcx, %rax
 	retq
 func0000000000000003:                   # @func0000000000000003
-	leal	13(%rsi), %ecx
-	andl	$131064, %ecx                   # imm = 0x1FFF8
+	leaq	33554431(%rsi), %rax
+	movabsq	$4611686018393833472, %rcx      # imm = 0x3FFFFFFFFE000000
+	andq	%rax, %rcx
 	testb	$1, %dil
-	movl	$8, %eax
+	movabsq	$1844674407377666048, %rax      # imm = 0x199999999A000000
 	cmovneq	%rcx, %rax
 	retq
 func0000000000000002:                   # @func0000000000000002

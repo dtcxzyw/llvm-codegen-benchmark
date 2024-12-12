@@ -1,5 +1,5 @@
 
-; 83 occurrences:
+; 82 occurrences:
 ; abseil-cpp/optimized/chi_square.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/gaussian_distribution_test.cc.ll
@@ -69,7 +69,6 @@
 ; openusd/optimized/vec3d.cpp.ll
 ; openvdb/optimized/LevelSetFilter.cc.ll
 ; openvdb/optimized/LevelSetMeasure.cc.ll
-; pbrt-v4/optimized/integrators.cpp.ll
 ; pocketpy/optimized/easing.cpp.ll
 ; proj/optimized/sconics.cpp.ll
 ; proj/optimized/vandg2.cpp.ll

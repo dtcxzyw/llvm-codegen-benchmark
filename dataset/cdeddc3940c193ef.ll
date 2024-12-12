@@ -15,13 +15,13 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/merge.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 3
   %3 = and i32 %2, 511
   %4 = add i32 %0, 1
   %5 = add i32 %4, %3
-  %6 = icmp ugt i32 %5, 132
+  %6 = icmp samesign ugt i32 %5, 132
   ret i1 %6
 }
 

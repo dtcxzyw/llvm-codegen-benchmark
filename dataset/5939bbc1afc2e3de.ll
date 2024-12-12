@@ -1,9 +1,11 @@
 
-%"struct.asio::detail::timer_queue<asio::detail::chrono_time_traits<std::chrono::_V2::steady_clock, asio::wait_traits<std::chrono::_V2::steady_clock>>>::heap_entry.2663416" = type { %"class.std::chrono::time_point.170.2663417", ptr }
-%"class.std::chrono::time_point.170.2663417" = type { %"class.std::chrono::duration.2663323" }
-%"class.std::chrono::duration.2663323" = type { i64 }
+%"struct.asio::detail::timer_queue<asio::detail::chrono_time_traits<std::chrono::_V2::steady_clock, asio::wait_traits<std::chrono::_V2::steady_clock>>>::heap_entry.2776533" = type { %"class.std::chrono::time_point.170.2776534", ptr }
+%"class.std::chrono::time_point.170.2776534" = type { %"class.std::chrono::duration.2776440" }
+%"class.std::chrono::duration.2776440" = type { i64 }
+%struct._zend_op.2792325 = type { ptr, %union._znode_op.2792334, %union._znode_op.2792334, %union._znode_op.2792334, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2792334 = type { i32 }
 
-; 30 occurrences:
+; 29 occurrences:
 ; assimp/optimized/clipper.cpp.ll
 ; clamav/optimized/js-norm.c.ll
 ; crow/optimized/example.cpp.ll
@@ -21,7 +23,6 @@
 ; crow/optimized/helloworld.cpp.ll
 ; gromacs/optimized/muParserBytecode.cpp.ll
 ; llvm/optimized/DwarfDebug.cpp.ll
-; php/optimized/zend_inference.ll
 ; yalantinglibs/optimized/channel.cpp.ll
 ; yalantinglibs/optimized/chat_room.cpp.ll
 ; yalantinglibs/optimized/client.cpp.ll
@@ -39,7 +40,24 @@ define ptr @func0000000000000016(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 4
   %3 = add nsw i64 %2, -1
-  %4 = getelementptr nusw %"struct.asio::detail::timer_queue<asio::detail::chrono_time_traits<std::chrono::_V2::steady_clock, asio::wait_traits<std::chrono::_V2::steady_clock>>>::heap_entry.2663416", ptr %0, i64 %3, i32 1
+  %4 = getelementptr nusw %"struct.asio::detail::timer_queue<asio::detail::chrono_time_traits<std::chrono::_V2::steady_clock, asio::wait_traits<std::chrono::_V2::steady_clock>>>::heap_entry.2776533", ptr %0, i64 %3, i32 1
+  ret ptr %4
+}
+
+; 7 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/process.ll
+; boost/optimized/target.ll
+; boost/optimized/wait.ll
+; php/optimized/zend_inference.ll
+; quantlib/optimized/longstaffschwartzmultipathpricer.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000017(ptr %0, i64 %1) #0 {
+entry:
+  %2 = ashr exact i64 %1, 5
+  %3 = add nsw i64 %2, 1
+  %4 = getelementptr nusw nuw %struct._zend_op.2792325, ptr %0, i64 %3, i32 6
   ret ptr %4
 }
 

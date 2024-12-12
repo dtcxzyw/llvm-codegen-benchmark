@@ -5,7 +5,7 @@
 func0000000000000044:                   # @func0000000000000044
 	vcmpgtps	.LCPI0_0(%rip){1to16}, %zmm2, %k1
 	vmovaps	%zmm1, %zmm1 {%k1} {z}
-	vmulps	%zmm0, %zmm1, %zmm0
+	vmulps	%zmm1, %zmm0, %zmm0
 	vcmpgtps	.LCPI0_1(%rip){1to16}, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
@@ -14,7 +14,7 @@ func0000000000000024:                   # @func0000000000000024
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpltps	%zmm3, %zmm2, %k1
 	vmovaps	%zmm1, %zmm1 {%k1} {z}
-	vmulps	%zmm0, %zmm1, %zmm0
+	vmulps	%zmm1, %zmm0, %zmm0
 	vcmpltps	%zmm0, %zmm3, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
@@ -44,7 +44,7 @@ func0000000000000042:                   # @func0000000000000042
 func0000000000000062:                   # @func0000000000000062
 	vcmpneq_oqps	.LCPI4_0(%rip){1to16}, %zmm2, %k1
 	vmovaps	%zmm1, %zmm1 {%k1} {z}
-	vmulps	%zmm0, %zmm1, %zmm0
+	vmulps	%zmm1, %zmm0, %zmm0
 	vcmpltps	.LCPI4_1(%rip){1to16}, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
@@ -56,7 +56,7 @@ func0000000000000062:                   # @func0000000000000062
 func0000000000000064:                   # @func0000000000000064
 	vcmpneq_oqps	.LCPI5_0(%rip){1to16}, %zmm2, %k1
 	vmovaps	%zmm1, %zmm1 {%k1} {z}
-	vmulps	%zmm0, %zmm1, %zmm0
+	vmulps	%zmm1, %zmm0, %zmm0
 	vcmpgtps	.LCPI5_1(%rip){1to16}, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

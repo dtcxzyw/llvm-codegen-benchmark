@@ -15,7 +15,8 @@ entry:
   ret i1 %3
 }
 
-; 17 occurrences:
+; 19 occurrences:
+; boost/optimized/wait_for.ll
 ; darktable/optimized/introspection_liquify.c.ll
 ; darktable/optimized/tagging.c.ll
 ; gromacs/optimized/gen_vsite.cpp.ll
@@ -33,6 +34,7 @@ entry:
 ; z3/optimized/nla_intervals.cpp.ll
 ; z3/optimized/realclosure.cpp.ll
 ; z3/optimized/theory_str.cpp.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:

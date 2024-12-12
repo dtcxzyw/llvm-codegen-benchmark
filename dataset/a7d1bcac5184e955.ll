@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/compile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294901760
   %3 = icmp eq i64 %2, 0
@@ -34,7 +34,7 @@ entry:
 ; qemu/optimized/hw_watchdog_wdt_i6300esb.c.ll
 ; z3/optimized/nlqsat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp eq i32 %2, 0
@@ -47,7 +47,7 @@ entry:
 ; linux/optimized/sch_generic.ll
 ; qemu/optimized/block_qcow2-refcount.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i64 %0, i64 %1) #0 {
+define i1 @func000000000000014a(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp sgt i32 %2, 0
@@ -60,7 +60,7 @@ entry:
 ; icu/optimized/number_patternstring.ll
 ; qemu/optimized/linux-user_syscall.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000184(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp ne i32 %2, 0
@@ -80,7 +80,7 @@ entry:
 ; openmpi/optimized/pmix_mca_base_var.ll
 ; slurm/optimized/gres_ctld.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i64 %0, i64 %1) #0 {
+define i1 @func000000000000014c(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp sgt i32 %2, 0
@@ -149,7 +149,7 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000144(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2147483648
   %3 = icmp eq i64 %2, 0
@@ -161,7 +161,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/parse_date.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000186(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp slt i32 %2, 4
@@ -185,7 +185,7 @@ entry:
 ; llvm/optimized/WarnMissedTransforms.cpp.ll
 ; opencv/optimized/arithm.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i64 %1) #0 {
+define i1 @func000000000000018c(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp ne i32 %2, 0
@@ -194,11 +194,10 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; linux/optimized/rseq.ll
+; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000101(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp eq i32 %2, 64
@@ -212,7 +211,7 @@ entry:
 ; llvm/optimized/CombinerHelper.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967264
   %3 = icmp ne i64 %2, 0
@@ -227,7 +226,7 @@ entry:
 ; llvm/optimized/ScheduleDAGSDNodes.cpp.ll
 ; llvm/optimized/Targets.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000188(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967294
   %3 = icmp ne i64 %2, 0
@@ -239,31 +238,12 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaStmt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000108(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp ugt i32 %2, 49
   %4 = icmp ugt i64 %0, 1
   %5 = and i1 %4, %3
-  ret i1 %5
-}
-
-; 8 occurrences:
-; icu/optimized/number_patternstring.ll
-; linux/optimized/msync.ll
-; llama.cpp/optimized/llama.cpp.ll
-; llvm/optimized/AArch64.cpp.ll
-; llvm/optimized/ASTContext.cpp.ll
-; llvm/optimized/CheckSecuritySyntaxOnly.cpp.ll
-; llvm/optimized/Darwin.cpp.ll
-; llvm/optimized/OSTargets.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = icmp eq i32 %2, 8
-  %4 = icmp ult i64 %0, 12884901888
-  %5 = and i1 %3, %4
   ret i1 %5
 }
 
@@ -273,7 +253,7 @@ entry:
 ; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp ne i32 %2, 3
@@ -286,7 +266,7 @@ entry:
 ; llvm/optimized/Hexagon.cpp.ll
 ; llvm/optimized/Targets.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000010c(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp ugt i32 %2, 72
@@ -300,7 +280,7 @@ entry:
 ; llvm/optimized/CGOpenMPRuntime.cpp.ll
 ; llvm/optimized/SemaObjC.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000008c(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp ult i32 %2, 3
@@ -314,7 +294,7 @@ entry:
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/X86RegisterInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000181(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp eq i32 %2, 4
@@ -323,24 +303,35 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
-; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
+; 2 occurrences:
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; postgres/optimized/varbit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp ult i32 %2, 3
+  %3 = icmp samesign ult i32 %2, 3
   %4 = icmp eq i64 %0, 4294967296
   %5 = and i1 %3, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
+; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = icmp eq i32 %2, 32
+  %4 = icmp ult i64 %0, 32
+  %5 = and i1 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; openspiel/optimized/coop_box_pushing.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000c1(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp slt i32 %2, 8
@@ -349,16 +340,40 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; linux/optimized/filter.ll
-; linux/optimized/r8169_main.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967294
   %3 = icmp ne i64 %2, 0
   %4 = icmp ult i64 %0, 2
   %5 = and i1 %3, %4
+  ret i1 %5
+}
+
+; 3 occurrences:
+; icu/optimized/number_patternstring.ll
+; linux/optimized/msync.ll
+; llama.cpp/optimized/llama.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 4294967288
+  %3 = or i64 %0, %2
+  %4 = icmp eq i64 %3, 0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; linux/optimized/r8169_main.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000098(i64 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = icmp ult i32 %2, 47
+  %4 = icmp samesign ugt i64 %0, 3
+  %5 = and i1 %4, %3
   ret i1 %5
 }
 

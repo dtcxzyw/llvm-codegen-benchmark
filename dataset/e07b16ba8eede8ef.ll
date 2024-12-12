@@ -6,7 +6,7 @@
 ; openjdk/optimized/hb-ot-cff1-table.ll
 ; openjdk/optimized/hb-ot-cff2-table.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000a4(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = or disjoint i32 %2, 1
@@ -53,7 +53,7 @@ entry:
 ; nuklear/optimized/unity.c.ll
 ; raylib/optimized/rtext.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000e6(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = or disjoint i32 %2, 7
@@ -129,7 +129,7 @@ entry:
 ; yosys/optimized/glift.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = or disjoint i32 %2, 3
@@ -140,7 +140,7 @@ entry:
 ; 1 occurrences:
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000a6(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = or disjoint i32 %2, 1
@@ -152,7 +152,7 @@ entry:
 ; z3/optimized/lar_solver.cpp.ll
 ; z3/optimized/nla_core.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = or i32 %2, -2147483648

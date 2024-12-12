@@ -9,7 +9,7 @@
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000161(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 %2
@@ -23,7 +23,7 @@ entry:
 ; libjpeg-turbo/optimized/jccoefct.c.ll
 ; openjdk/optimized/jccoefct.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000531(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000a61(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 %2
@@ -50,7 +50,7 @@ entry:
 ; opencv/optimized/scale_layer.cpp.ll
 ; php/optimized/zend_strtod.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001e1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, -233
   %4 = select i1 %3, i32 %1, i32 %2
@@ -65,7 +65,7 @@ entry:
 ; icu/optimized/locutil.ll
 ; yosys/optimized/calc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000371(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000006e1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 %2

@@ -11,9 +11,9 @@ func0000000000000003:                   # @func0000000000000003
 	add	a0, a0, a1
 	ret
 func0000000000000007:                   # @func0000000000000007
-	xori	a0, a0, 1
+	xori	a0, a0, 16
 	andi	a0, a0, 255
-	addi	a0, a0, 1
+	addi	a0, a0, 16
 	ret
 func0000000000000005:                   # @func0000000000000005
 	xori	a0, a0, 32

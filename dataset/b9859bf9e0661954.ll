@@ -1,5 +1,5 @@
 
-; 73 occurrences:
+; 75 occurrences:
 ; abc/optimized/retArea.c.ll
 ; cmake/optimized/deflate.c.ll
 ; coreutils-rs/optimized/2vd9rhgrl6pfdvv0.ll
@@ -12,7 +12,6 @@
 ; gromacs/optimized/mshift.cpp.ll
 ; hwloc/optimized/topology.ll
 ; libpng/optimized/pngwutil.c.ll
-; libwebp/optimized/demux.c.ll
 ; lief/optimized/psa_crypto.c.ll
 ; linux/optimized/hcd.ll
 ; linux/optimized/namei.ll
@@ -61,7 +60,6 @@
 ; ruby/optimized/parse.ll
 ; ruby/optimized/prism.ll
 ; ruby/optimized/ripper.ll
-; slurm/optimized/scancel.ll
 ; sqlite/optimized/sqlite3.ll
 ; typst-rs/optimized/1mrwywpkq81cby93.ll
 ; wireshark/optimized/packet-cemi.c.ll
@@ -72,6 +70,10 @@
 ; z3/optimized/theory_special_relations.cpp.ll
 ; z3/optimized/theory_utvpi.cpp.ll
 ; z3/optimized/upolynomial.cpp.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
+; zed-rs/optimized/bxqgsrk0kqvq41wnnozsjp44k.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
 ; zlib/optimized/deflate.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i32 %0, i1 %1, i1 %2) #0 {
@@ -82,7 +84,7 @@ entry:
   ret i1 %5
 }
 
-; 83 occurrences:
+; 84 occurrences:
 ; clamav/optimized/pdf.c.ll
 ; clap-rs/optimized/1zp92zvstj9lufi9.ll
 ; clap-rs/optimized/46qpaucouebcxfrx.ll
@@ -166,6 +168,7 @@ entry:
 ; wireshark/optimized/packet-tpncp.c.ll
 ; wolfssl/optimized/ssl.c.ll
 ; z3/optimized/sat_simplifier.cpp.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0, i1 %1, i1 %2) #0 {
 entry:
@@ -175,15 +178,12 @@ entry:
   ret i1 %5
 }
 
-; 17 occurrences:
-; brotli/optimized/brotli_bit_stream.c.ll
-; brotli/optimized/histogram.c.ll
+; 14 occurrences:
 ; cmake/optimized/tcp.c.ll
 ; cmake/optimized/uv-common.c.ll
 ; flac/optimized/format.c.ll
 ; libuv/optimized/tcp.c.ll
 ; libuv/optimized/uv-common.c.ll
-; linux/optimized/insn-eval.ll
 ; linux/optimized/matrix.ll
 ; linux/optimized/skl_universal_plane.ll
 ; llvm/optimized/AArch64LegalizerInfo.cpp.ll
@@ -202,8 +202,7 @@ entry:
   ret i1 %5
 }
 
-; 18 occurrences:
-; clamav/optimized/cabd.c.ll
+; 15 occurrences:
 ; cvc5/optimized/arith_entail.cpp.ll
 ; gromacs/optimized/gmx_hbond.cpp.ll
 ; gromacs/optimized/gmx_nmr.cpp.ll
@@ -217,8 +216,6 @@ entry:
 ; openblas/optimized/dlatmt.c.ll
 ; openjdk/optimized/ProcessHandleImpl_unix.ll
 ; openmpi/optimized/libmpi_c_profile_la-testany.ll
-; openmpi/optimized/libmpi_c_profile_la-testsome.ll
-; openmpi/optimized/libmpi_c_profile_la-waitsome.ll
 ; quantlib/optimized/target.ll
 ; redis/optimized/ldebug.ll
 ; Function Attrs: nounwind
@@ -230,7 +227,7 @@ entry:
   ret i1 %5
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; darktable/optimized/introspection_denoiseprofile.c.ll
 ; icu/optimized/number_formatimpl.ll
@@ -244,7 +241,6 @@ entry:
 ; llvm/optimized/X86FixupLEAs.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
 ; openjdk/optimized/memnode.ll
-; postgres/optimized/catalog.ll
 ; qemu/optimized/dump_dump.c.ll
 ; wireshark/optimized/packet-dnp.c.ll
 ; Function Attrs: nounwind
@@ -256,9 +252,10 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; darktable/optimized/introspection_retouch.c.ll
 ; gromacs/optimized/enxio.cpp.ll
+; linux/optimized/insn-eval.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; opencv/optimized/icp.cpp.ll
 ; php/optimized/zend_operators.ll
@@ -345,32 +342,29 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
-; lief/optimized/psa_crypto_aead.c.ll
-; llvm/optimized/AArch64PromoteConstant.cpp.ll
-; llvm/optimized/X86InstrInfo.cpp.ll
-; openmpi/optimized/btl_tcp_component.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000010(i1 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ugt i32 %2, 16
-  %4 = or i1 %0, %1
-  %5 = and i1 %4, %3
-  ret i1 %5
-}
-
-; 7 occurrences:
+; 5 occurrences:
 ; hermes/optimized/JSParserImpl-flow.cpp.ll
 ; hwloc/optimized/topology-x86.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/SemaBoundsSafety.cpp.ll
-; meshlab/optimized/filter_sketchfab.cpp.ll
 ; openspiel/optimized/morpion_solitaire.cc.ll
 ; z3/optimized/model_based_opt.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 2
+  %4 = or i1 %0, %1
+  %5 = and i1 %4, %3
+  ret i1 %5
+}
+
+; 3 occurrences:
+; llvm/optimized/AArch64PromoteConstant.cpp.ll
+; llvm/optimized/X86InstrInfo.cpp.ll
+; openmpi/optimized/btl_tcp_component.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000010(i1 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ugt i32 %2, 32
   %4 = or i1 %0, %1
   %5 = and i1 %4, %3
   ret i1 %5

@@ -4,7 +4,7 @@
 ; yalantinglibs/optimized/chat_room.cpp.ll
 ; yalantinglibs/optimized/example.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i1 %1, i16 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = add nsw i16 %2, -1012
   %4 = icmp ult i16 %3, 2988

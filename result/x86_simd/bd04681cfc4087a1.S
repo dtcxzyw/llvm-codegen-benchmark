@@ -10,7 +10,7 @@ func0000000000000016:                   # @func0000000000000016
 	.long	1                               # 0x1
 func0000000000000002:                   # @func0000000000000002
 	vpaddd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpbroadcastd	.LCPI1_0(%rip), %ymm1   # ymm1 = [1,1,1,1,1,1,1,1]
 	vpsllvd	%ymm0, %ymm1, %ymm0
 	retq

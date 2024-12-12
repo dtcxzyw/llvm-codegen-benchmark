@@ -4,7 +4,7 @@
 ; jq/optimized/decNumber.ll
 ; wireshark/optimized/related_packet_delegate.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %0
   %4 = icmp sgt i32 %1, %2
@@ -12,12 +12,14 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; abc/optimized/giaAiger.c.ll
 ; abc/optimized/ioWriteAiger.c.ll
 ; abc/optimized/ioaWriteAig.c.ll
+; boost/optimized/within.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %0
   %4 = icmp slt i32 %1, %2
@@ -50,7 +52,7 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/seq_offset_eq.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %0
   %4 = icmp ugt i32 %1, %2
@@ -61,7 +63,7 @@ entry:
 ; 1 occurrences:
 ; libwebp/optimized/bit_reader_utils.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %0
   %4 = icmp ult i32 %1, %2

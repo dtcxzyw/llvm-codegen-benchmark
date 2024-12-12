@@ -1,11 +1,11 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	addi	a2, a2, -1
 	zext.w	a2, a2
 	xor	a1, a1, a2
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	addi	a2, a2, 1
 	zext.w	a2, a2
 	sltu	a1, a1, a2

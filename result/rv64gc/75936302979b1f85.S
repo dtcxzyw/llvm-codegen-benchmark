@@ -4,7 +4,7 @@ func0000000000000004:                   # @func0000000000000004
 	bne	a2, a3, .LBB0_2
 	li	a1, 44
 .LBB0_2:                                # %entry
-	mul	a0, a1, a0
+	mul	a0, a0, a1
 	ret
 func0000000000000007:                   # @func0000000000000007
 	sext.w	a2, a2
@@ -12,7 +12,7 @@ func0000000000000007:                   # @func0000000000000007
 	bne	a2, a3, .LBB1_2
 	li	a1, 44
 .LBB1_2:                                # %entry
-	mul	a0, a1, a0
+	mul	a0, a0, a1
 	ret
 func0000000000000005:                   # @func0000000000000005
 	sext.w	a2, a2
@@ -43,7 +43,7 @@ func0000000000000018:                   # @func0000000000000018
 	bge	a2, a3, .LBB5_2
 	li	a1, 16
 .LBB5_2:                                # %entry
-	mul	a0, a1, a0
+	mul	a0, a0, a1
 	ret
 func0000000000000006:                   # @func0000000000000006
 	sext.w	a2, a2
@@ -51,5 +51,5 @@ func0000000000000006:                   # @func0000000000000006
 	lui	a1, 268352
 	addiw	a1, a1, 1170
 .LBB6_2:                                # %entry
-	mul	a0, a1, a0
+	mul	a0, a0, a1
 	ret

@@ -36,7 +36,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = mul i32 %2, 6
   %4 = add i32 %3, 6
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 

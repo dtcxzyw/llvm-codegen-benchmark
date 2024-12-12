@@ -1,5 +1,6 @@
 
-; 53 occurrences:
+; 55 occurrences:
+; boost/optimized/expand_on_spheroid.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; g2o/optimized/optimization_algorithm_dogleg.cpp.ll
 ; graphviz/optimized/gvrender_pango.c.ll
@@ -53,6 +54,7 @@
 ; stb/optimized/stb_image_resize2.c.ll
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
+; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(i1 %0, double %1, double %2) #0 {
 entry:

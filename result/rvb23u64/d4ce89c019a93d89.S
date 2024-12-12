@@ -38,10 +38,10 @@ func000000000000000d:                   # @func000000000000000d
 	ret
 func0000000000000008:                   # @func0000000000000008
 	fsub.s	fa5, fa1, fa2
-	feq.s	a0, fa5, fa0
+	feq.s	a0, fa0, fa5
 	ret
 func0000000000000007:                   # @func0000000000000007
 	fsub.s	fa5, fa1, fa2
-	feq.s	a0, fa5, fa0
+	feq.s	a0, fa0, fa5
 	xori	a0, a0, 1
 	ret

@@ -1,5 +1,6 @@
 
-; 44 occurrences:
+; 46 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
 ; clamav/optimized/pe_icons.c.ll
 ; faiss/optimized/ScalarQuantizer.cpp.ll
 ; graphviz/optimized/lab.c.ll
@@ -7,6 +8,7 @@
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; image-rs/optimized/30755d6iao7ojcvl.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
+; lvgl/optimized/lv_indev.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
 ; minetest/optimized/touchscreengui.cpp.ll
@@ -49,7 +51,7 @@ define i32 @func0000000000000017(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = mul nsw i32 %3, %3
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -79,7 +81,8 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; lvgl/optimized/lv_area.ll
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/seam_finders.cpp.ll
@@ -88,18 +91,7 @@ define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = mul nsw i32 %3, %3
-  %5 = add nuw nsw i32 %4, %0
-  ret i32 %5
-}
-
-; 1 occurrences:
-; linux/optimized/input-mt.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sub i32 %1, %2
-  %4 = mul i32 %3, %3
-  %5 = add i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -110,7 +102,7 @@ define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = mul i32 %3, %3
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -121,7 +113,7 @@ define i32 @func0000000000000013(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = mul i32 %3, %3
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 

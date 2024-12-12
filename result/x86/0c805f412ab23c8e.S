@@ -4,6 +4,13 @@ func0000000000000004:                   # @func0000000000000004
 	sbbq	$0, %rax
 	subq	%rdi, %rax
 	retq
+func0000000000000007:                   # @func0000000000000007
+	cmpb	$2, %sil
+	movl	$64, %ecx
+	movl	$52, %eax
+	cmoveq	%rcx, %rax
+	subq	%rdi, %rax
+	retq
 func0000000000000005:                   # @func0000000000000005
 	cmpb	$10, %sil
 	movq	$-2147483648, %rcx              # imm = 0x80000000

@@ -7,11 +7,11 @@
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; z3/optimized/bit_util.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000018(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 16, i32 0
   %3 = lshr i32 %0, %2
-  %4 = icmp ugt i32 %3, 255
+  %4 = icmp samesign ugt i32 %3, 255
   ret i1 %4
 }
 

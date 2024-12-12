@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; libquic/optimized/p224-64.c.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; libsodium/optimized/libsodium_la-poly1305_donna.ll
@@ -12,6 +12,7 @@
 ; openssl/optimized/libcrypto-shlib-scalar.ll
 ; quickjs/optimized/libbf.ll
 ; wolfssl/optimized/sp_int.c.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003c(i128 %0, i128 %1, i128 %2) #0 {
 entry:
@@ -21,7 +22,8 @@ entry:
   ret i64 %5
 }
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/to_chars.ll
 ; libquic/optimized/p224-64.c.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; libsodium/optimized/libsodium_la-keypair.ll
@@ -53,9 +55,10 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/wide_multiply_test.cc.ll
+; boost/optimized/approximately_equals.ll
 ; libquic/optimized/p224-64.c.ll
 ; quickjs/optimized/libbf.ll
 ; Function Attrs: nounwind

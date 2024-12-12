@@ -72,8 +72,7 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
-; linux/optimized/rpl.ll
+; 1 occurrences:
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i32 %0, i32 %1) #0 {

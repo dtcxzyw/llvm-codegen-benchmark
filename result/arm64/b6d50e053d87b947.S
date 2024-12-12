@@ -1,4 +1,4 @@
-func0000000000000042:                   // @func0000000000000042
+func0000000000000043:                   // @func0000000000000043
 // %bb.0:                               // %entry
 	add	w8, w2, w2, lsl #1
 	add	x8, x1, w8, sxtw #2
@@ -14,7 +14,7 @@ func0000000000000060:                   // @func0000000000000060
 	sub	x0, x8, #3
 	ret
                                         // -- End function
-func000000000000002a:                   // @func000000000000002a
+func000000000000002f:                   // @func000000000000002f
 // %bb.0:                               // %entry
 	add	w8, w2, w2, lsl #2
 	lsl	w8, w8, #1
@@ -23,7 +23,7 @@ func000000000000002a:                   // @func000000000000002a
 	add	x0, x8, #1
 	ret
                                         // -- End function
-func000000000000006a:                   // @func000000000000006a
+func000000000000006f:                   // @func000000000000006f
 // %bb.0:                               // %entry
 	add	w8, w2, w2, lsl #2
 	add	x8, x1, w8, sxtw #2
@@ -31,7 +31,7 @@ func000000000000006a:                   // @func000000000000006a
 	add	x0, x8, #4
 	ret
                                         // -- End function
-func0000000000000068:                   // @func0000000000000068
+func000000000000007c:                   // @func000000000000007c
 // %bb.0:                               // %entry
 	add	w8, w2, w2, lsl #1
 	add	x8, x1, w8, sxtw #2
@@ -39,7 +39,16 @@ func0000000000000068:                   // @func0000000000000068
 	add	x0, x8, #12
 	ret
                                         // -- End function
-func0000000000000002:                   // @func0000000000000002
+func000000000000006e:                   // @func000000000000006e
+// %bb.0:                               // %entry
+	lsl	w8, w2, #4
+	sub	w8, w8, w2, lsl #1
+	add	x8, x1, w8, sxtw
+	add	x8, x8, x0
+	add	x0, x8, #14
+	ret
+                                        // -- End function
+func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
 	mov	w8, #54                         // =0x36
 	mov	w9, #4320                       // =0x10e0

@@ -1,9 +1,8 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; hdf5/optimized/H5FDint.c.ll
 ; postgres/optimized/pgoutput.ll
 ; ruby/optimized/gc.ll
-; spike/optimized/f128_classify.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i64 %1) #0 {
 entry:
@@ -19,7 +18,7 @@ entry:
 ; llvm/optimized/SemaOverload.cpp.ll
 ; qemu/optimized/block_io.c.ll
 ; qemu/optimized/util_hbitmap.c.ll
-; spike/optimized/f128_classify.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:

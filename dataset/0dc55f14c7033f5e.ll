@@ -1,5 +1,5 @@
 
-; 254 occurrences:
+; 250 occurrences:
 ; abc/optimized/abcBidec.c.ll
 ; abc/optimized/nwkBidec.c.ll
 ; abc/optimized/sclLibUtil.c.ll
@@ -94,16 +94,12 @@
 ; gromacs/optimized/pull_rotation.cpp.ll
 ; gromacs/optimized/rdf.cpp.ll
 ; gromacs/optimized/restcbt.cpp.ll
-; gromacs/optimized/slapy2.cpp.ll
-; gromacs/optimized/slarnv.cpp.ll
 ; gromacs/optimized/slarrex.cpp.ll
 ; gromacs/optimized/slas2.cpp.ll
 ; gromacs/optimized/slasq2.cpp.ll
 ; gromacs/optimized/slasq3.cpp.ll
 ; gromacs/optimized/slasq4.cpp.ll
 ; gromacs/optimized/slasv2.cpp.ll
-; gromacs/optimized/slatrd.cpp.ll
-; gromacs/optimized/ssytd2.cpp.ll
 ; gromacs/optimized/tngio.cpp.ll
 ; gromacs/optimized/trjcat.cpp.ll
 ; gromacs/optimized/update.cpp.ll
@@ -258,7 +254,7 @@
 define float @func0000000000000000(double %0, float %1) #0 {
 entry:
   %2 = fpext float %1 to double
-  %3 = fmul double %2, %0
+  %3 = fmul double %0, %2
   %4 = fptrunc double %3 to float
   ret float %4
 }

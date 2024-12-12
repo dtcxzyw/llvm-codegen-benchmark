@@ -33,8 +33,7 @@ entry:
   ret i64 %6
 }
 
-; 2 occurrences:
-; openblas/optimized/dsytrd_sy2sb.c.ll
+; 1 occurrences:
 ; openusd/optimized/grain_synthesis.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000007f(i32 %0, i32 %1, i32 %2) #0 {

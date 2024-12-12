@@ -1,6 +1,7 @@
 func0000000000000003:                   # @func0000000000000003
-	shrl	$16, %edi
-	imull	$7152, %edi, %eax               # imm = 0x1BF0
+	shrl	%edi
+	andl	$-8, %edi
+	leal	(%rdi,%rdi,2), %eax
 	retq
 func0000000000000000:                   # @func0000000000000000
 	shrl	%edi

@@ -1,16 +1,4 @@
 
-; 1 occurrences:
-; rocksdb/optimized/slice.cc.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000011(i8 %0) #0 {
-entry:
-  %1 = icmp ult i8 %0, 58
-  %2 = select i1 %1, i32 -48, i32 -55
-  %3 = sext i8 %0 to i32
-  %4 = add nsw i32 %2, %3
-  ret i32 %4
-}
-
 ; 3 occurrences:
 ; abc/optimized/bmcMaj3.c.ll
 ; imgui/optimized/imgui_draw.cpp.ll

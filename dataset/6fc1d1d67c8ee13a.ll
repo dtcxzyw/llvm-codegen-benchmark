@@ -44,7 +44,9 @@ entry:
   ret double %3
 }
 
-; 12 occurrences:
+; 14 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; cpython/optimized/mathmodule.ll
 ; hermes/optimized/APInt.cpp.ll
 ; hermes/optimized/BytecodeDisassembler.cpp.ll

@@ -4,18 +4,16 @@
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000308(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %1, 3
+  %2 = icmp samesign ugt i32 %1, 3
   %3 = icmp ugt i32 %1, %0
   %4 = select i1 %2, i1 %3, i1 false
   ret i1 %4
 }
 
-; 35 occurrences:
-; llvm/optimized/Lexer.cpp.ll
+; 34 occurrences:
 ; openjdk/optimized/ad_x86.ll
-; php/optimized/pcre2_jit_compile.ll
 ; rust-analyzer-rs/optimized/13a8uuxp2yipqyp9.ll
 ; rust-analyzer-rs/optimized/13whla2w760i0ne3.ll
 ; rust-analyzer-rs/optimized/1j91i64oabb508eh.ll
@@ -48,11 +46,24 @@ entry:
 ; rust-analyzer-rs/optimized/sdlo5r5xb34d3pv.ll
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
+; zed-rs/optimized/d2w35dg2d82avud97ap9t4v42.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 32
   %3 = select i1 %2, i32 %1, i32 -1
+  %4 = icmp eq i32 %3, %0
+  ret i1 %4
+}
+
+; 2 occurrences:
+; llvm/optimized/Lexer.cpp.ll
+; php/optimized/pcre2_jit_compile.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000281(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 127
+  %3 = select i1 %2, i32 %1, i32 15
   %4 = icmp eq i32 %3, %0
   ret i1 %4
 }

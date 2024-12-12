@@ -33,6 +33,16 @@ func0000000000000018:                   # @func0000000000000018
 	addl	%edi, %eax
 	addl	%esi, %eax
 	retq
+func000000000000002f:                   # @func000000000000002f
+	movzbl	%dl, %eax
+	addl	%edi, %eax
+	addl	%esi, %eax
+	retq
+func0000000000000028:                   # @func0000000000000028
+	movzbl	%dl, %eax
+	addl	%edi, %eax
+	addl	%esi, %eax
+	retq
 func000000000000003b:                   # @func000000000000003b
 	movzbl	%dl, %eax
 	addl	%edi, %eax

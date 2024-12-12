@@ -13,13 +13,6 @@ func0000000000000066:                   # @func0000000000000066
 	subq	%rax, %rsi
 	leaq	(%rdi,%rsi,4), %rax
 	retq
-func000000000000004e:                   # @func000000000000004e
-	xorl	%eax, %eax
-	cmpq	%rdx, %rsi
-	cmovaeq	%rdx, %rax
-	subq	%rax, %rsi
-	leaq	(%rdi,%rsi,4), %rax
-	retq
 func0000000000000082:                   # @func0000000000000082
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdx

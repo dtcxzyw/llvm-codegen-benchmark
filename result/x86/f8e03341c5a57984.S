@@ -11,8 +11,8 @@ func0000000000000004:                   # @func0000000000000004
 	retq
 func0000000000000009:                   # @func0000000000000009
 	negl	%esi
-	cmpl	%edi, %esi
-	setae	%al
+	cmpl	%esi, %edi
+	setbe	%al
 	retq
 func0000000000000006:                   # @func0000000000000006
 	leal	8(%rsi,%rdi), %eax

@@ -4,7 +4,7 @@ func0000000000000006:                   # @func0000000000000006
 	shlq	$6, %rdi
 	addq	%rdi, %rax
 	retq
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	leaq	63(%rsi), %rax
 	andq	$-64, %rax
 	shlq	$6, %rdi

@@ -1,4 +1,4 @@
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	addb	$-48, %sil
 	movzbl	%sil, %eax
 	leaq	(%rdi,%rdi,4), %rcx
@@ -7,22 +7,14 @@ func0000000000000084:                   # @func0000000000000084
 	cmpq	%rcx, %rax
 	setb	%al
 	retq
-func0000000000000156:                   # @func0000000000000156
+func00000000000002a6:                   # @func00000000000002a6
 	addb	$-48, %sil
 	movzbl	%sil, %eax
 	leaq	(%rdi,%rdi,4), %rcx
 	leaq	(%rax,%rcx,2), %rax
 	shrq	$63, %rax
 	retq
-func00000000000001f8:                   # @func00000000000001f8
-	addb	$-48, %sil
-	movzbl	%sil, %eax
-	leaq	(%rdi,%rdi,4), %rcx
-	leaq	(%rax,%rcx,2), %rax
-	cmpq	$60, %rax
-	setae	%al
-	retq
-func0000000000000154:                   # @func0000000000000154
+func00000000000002a4:                   # @func00000000000002a4
 	addb	$-48, %sil
 	movzbl	%sil, %eax
 	leaq	(%rdi,%rdi,4), %rcx
@@ -30,7 +22,7 @@ func0000000000000154:                   # @func0000000000000154
 	cmpq	$256, %rax                      # imm = 0x100
 	setb	%al
 	retq
-func0000000000000388:                   # @func0000000000000388
+func0000000000000708:                   # @func0000000000000708
 	addb	$-48, %sil
 	movzbl	%sil, %eax
 	leaq	(%rdi,%rdi,4), %rcx
@@ -38,7 +30,7 @@ func0000000000000388:                   # @func0000000000000388
 	shrq	$32, %rax
 	setne	%al
 	retq
-func00000000000001a8:                   # @func00000000000001a8
+func0000000000000348:                   # @func0000000000000348
 	addb	$-48, %sil
 	movzbl	%sil, %eax
 	leaq	(%rdi,%rdi,4), %rcx
@@ -47,7 +39,7 @@ func00000000000001a8:                   # @func00000000000001a8
 	cmpq	%rcx, %rax
 	seta	%al
 	retq
-func0000000000000338:                   # @func0000000000000338
+func0000000000000668:                   # @func0000000000000668
 	addb	$-48, %sil
 	movzbl	%sil, %eax
 	leaq	(%rdi,%rdi,4), %rcx

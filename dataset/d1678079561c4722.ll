@@ -38,14 +38,16 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
+; 3 occurrences:
+; lvgl/optimized/lv_draw_sw_mask.ll
+; qemu/optimized/target_riscv_vector_helper.c.ll
 ; spike/optimized/khmx16.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %0, %1
-  %3 = lshr i32 %2, 15
-  %4 = and i32 %3, 65535
+  %3 = lshr i32 %2, 14
+  %4 = and i32 %3, 1
   ret i32 %4
 }
 

@@ -1,9 +1,19 @@
 
-; 61 occurrences:
+; 69 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcSweep.c.ll
 ; abc/optimized/sswConstr.c.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; bullet3/optimized/btPersistentManifold.ll
 ; clamav/optimized/bytecode_api.c.ll
 ; clamav/optimized/clamdtop.c.ll
@@ -19,7 +29,6 @@
 ; hdf5/optimized/H5Pocpypl.c.ll
 ; imgui/optimized/imgui_demo.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
-; libevent/optimized/evthread_pthread.c.ll
 ; llvm/optimized/AsmParser.cpp.ll
 ; llvm/optimized/MasmParser.cpp.ll
 ; llvm/optimized/NamespaceEndCommentsFixer.cpp.ll
@@ -30,7 +39,6 @@
 ; llvm/optimized/UnwrappedLineParser.cpp.ll
 ; llvm/optimized/WhitespaceManager.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
-; nuttx/optimized/lib_wcwidth.c.ll
 ; oiio/optimized/strutil.cpp.ll
 ; openblas/optimized/cblas_dgemm.c.ll
 ; openblas/optimized/cblas_dgemmt.c.ll

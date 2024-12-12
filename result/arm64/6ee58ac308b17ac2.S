@@ -1,6 +1,6 @@
 func000000000000001e:                   // @func000000000000001e
 // %bb.0:                               // %entry
-	adds	x8, x3, x0
+	adds	x8, x0, x3
 	cinc	x9, x1, hs
 	adds	x8, x8, x2
 	cinc	x9, x9, hs
@@ -10,7 +10,7 @@ func000000000000001e:                   // @func000000000000001e
                                         // -- End function
 func000000000000005e:                   // @func000000000000005e
 // %bb.0:                               // %entry
-	adds	x8, x3, x0
+	adds	x8, x0, x3
 	cinc	x9, x1, hs
 	cmn	x8, x2
 	mov	x1, #0                          // =0x0
@@ -19,7 +19,7 @@ func000000000000005e:                   // @func000000000000005e
                                         // -- End function
 func000000000000007e:                   // @func000000000000007e
 // %bb.0:                               // %entry
-	adds	x8, x3, x0
+	adds	x8, x0, x3
 	cinc	x9, x1, hs
 	adds	x8, x8, x2
 	cinc	x9, x9, hs
@@ -29,7 +29,7 @@ func000000000000007e:                   // @func000000000000007e
                                         // -- End function
 func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
-	adds	x8, x3, x0
+	adds	x8, x0, x3
 	cinc	x9, x1, hs
 	cmn	x8, x2
 	mov	x1, #0                          // =0x0

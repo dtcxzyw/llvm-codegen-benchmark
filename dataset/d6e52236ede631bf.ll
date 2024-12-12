@@ -1,5 +1,5 @@
 
-; 44 occurrences:
+; 43 occurrences:
 ; abc/optimized/extraUtilTruth.c.ll
 ; abc/optimized/giaHash.c.ll
 ; abc/optimized/giaIf.c.ll
@@ -13,12 +13,12 @@
 ; arrow/optimized/hashing.cc.ll
 ; arrow/optimized/scalar_cast_numeric.cc.ll
 ; arrow/optimized/scalar_cast_temporal.cc.ll
+; boost/optimized/alloc_lib.ll
 ; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
 ; eastl/optimized/TestBitVector.cpp.ll
 ; grpc/optimized/frame_settings.cc.ll
 ; grpc/optimized/retry_filter_legacy_call_data.cc.ll
 ; hdf5/optimized/H5Z.c.ll
-; libquic/optimized/custom_extensions.c.ll
 ; linux/optimized/devres.ll
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/ehci-hcd.ll
@@ -38,23 +38,22 @@
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
 ; minetest/optimized/mapblock.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; openusd/optimized/flatteningSceneIndex.cpp.ll
 ; ruby/optimized/error.ll
 ; spike/optimized/vclz_v.ll
 ; yosys/optimized/freduce.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nuw i32 1, %2
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   %5 = icmp eq i32 %4, 0
   ret i1 %5
 }
 
-; 100 occurrences:
+; 102 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/abcCascade.c.ll
 ; abc/optimized/abcExact.c.ll
@@ -110,6 +109,7 @@ entry:
 ; abc/optimized/sclBuffer.c.ll
 ; abc/optimized/superAnd.c.ll
 ; abc/optimized/superGate.c.ll
+; boost/optimized/alloc_lib.ll
 ; faiss/optimized/ProductQuantizer.cpp.ll
 ; git/optimized/receive-pack.ll
 ; gromacs/optimized/atomdata.cpp.ll
@@ -126,6 +126,7 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
+; lvgl/optimized/lv_tlsf.ll
 ; oniguruma/optimized/regcomp.ll
 ; opencv/optimized/tf_importer.cpp.ll
 ; postgres/optimized/lock.ll
@@ -156,7 +157,7 @@ entry:
 ; yosys/optimized/satgen.ll
 ; yosys/optimized/test_abcloop.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e1(i32 %0, i64 %1) #0 {
+define i1 @func00000000000001c1(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nuw i32 1, %2
@@ -165,7 +166,7 @@ entry:
   ret i1 %5
 }
 
-; 136 occurrences:
+; 133 occurrences:
 ; abc/optimized/abcAttach.c.ll
 ; abc/optimized/acecRe.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -222,6 +223,7 @@ entry:
 ; llvm/optimized/AsmMatcherEmitter.cpp.ll
 ; llvm/optimized/UninitializedValues.cpp.ll
 ; llvm/optimized/X86InstCombineIntrinsic.cpp.ll
+; lvgl/optimized/lv_tlsf.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
@@ -230,7 +232,6 @@ entry:
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
@@ -286,15 +287,12 @@ entry:
 ; stb/optimized/stb_vorbis.c.ll
 ; wireshark/optimized/crc5.c.ll
 ; wireshark/optimized/erf.c.ll
-; wireshark/optimized/golay.c.ll
 ; wireshark/optimized/packet-btmesh.c.ll
 ; wireshark/optimized/packet-couchbase.c.ll
 ; wireshark/optimized/packet-ftdi-mpsse.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-mac-nr.c.ll
-; wireshark/optimized/packet-netanalyzer.c.ll
 ; wireshark/optimized/packet-ocfs2.c.ll
-; wireshark/optimized/packet-sita.c.ll
 ; wireshark/optimized/packet-tcp.c.ll
 ; wireshark/optimized/packet-ua3g.c.ll
 ; wireshark/optimized/packet-vrt.c.ll
@@ -303,7 +301,7 @@ entry:
 ; yosys/optimized/anlogic_eqn.ll
 ; yosys/optimized/blifparse.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i32 %0, i64 %1) #0 {
+define i1 @func00000000000001e1(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nuw nsw i32 1, %2
@@ -320,7 +318,7 @@ entry:
 ; re2/optimized/onepass.cc.ll
 ; wireshark/optimized/packet-tetra.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000181(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl i32 32, %2
@@ -329,7 +327,8 @@ entry:
   ret i1 %5
 }
 
-; 28 occurrences:
+; 29 occurrences:
+; boost/optimized/alloc_lib.ll
 ; linux/optimized/cgroup-v1.ll
 ; linux/optimized/cgroup.ll
 ; linux/optimized/cistpl.ll
@@ -359,7 +358,7 @@ entry:
 ; minetest/optimized/log.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nuw nsw i32 1, %2
@@ -377,7 +376,7 @@ entry:
 ; redis/optimized/bitops.ll
 ; soc-simulator/optimized/sim_mycpu.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000fc(i32 %0, i64 %1) #0 {
+define i1 @func00000000000001ec(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nuw nsw i32 1, %2
@@ -391,11 +390,11 @@ entry:
 ; linux/optimized/dquot.ll
 ; qemu/optimized/hw_gpio_sifive_gpio.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i32 %0, i64 %1) #0 {
+define i1 @func000000000000014c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = shl nuw i32 1, %2
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   %5 = icmp ne i32 %4, 0
   ret i1 %5
 }
@@ -419,11 +418,11 @@ entry:
 ; z3/optimized/sat_xor_finder.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000141(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = shl nuw i32 1, %2
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   %5 = icmp eq i32 %4, 0
   ret i1 %5
 }
@@ -437,7 +436,7 @@ entry:
 ; postgres/optimized/lock.ll
 ; qemu/optimized/hw_intc_sifive_plic.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ec(i32 %0, i64 %1) #0 {
+define i1 @func00000000000001cc(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nuw i32 1, %2
@@ -463,7 +462,7 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/memory_libmap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000c1(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = shl nuw i32 1, %2
@@ -475,7 +474,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/frustum.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000161(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = shl nuw nsw i32 1, %2
@@ -490,11 +489,11 @@ entry:
 ; linux/optimized/ip6_tables.ll
 ; linux/optimized/ip_tables.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i32 %0, i64 %1) #0 {
+define i1 @func000000000000006c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nuw nsw i32 1, %2
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   %5 = icmp ne i32 %4, 0
   ret i1 %5
 }
@@ -502,11 +501,11 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/dquot.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000101(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = shl i32 64, %2
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   %5 = icmp eq i32 %4, 0
   ret i1 %5
 }
@@ -514,7 +513,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestBitset.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i32 %0, i64 %1) #0 {
+define i1 @func00000000000001a1(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = lshr i32 %0, %2
@@ -525,11 +524,11 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/floatobject.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000e1(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = shl nuw nsw i32 1, %2
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   %5 = icmp eq i32 %4, 0
   ret i1 %5
 }

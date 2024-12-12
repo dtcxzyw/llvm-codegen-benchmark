@@ -14,7 +14,7 @@ entry:
   ret i64 %4
 }
 
-; 77 occurrences:
+; 76 occurrences:
 ; abc/optimized/abcNpnSave.c.ll
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/acbTest.c.ll
@@ -89,7 +89,6 @@ entry:
 ; spike/optimized/vwaddu_vv.ll
 ; spike/optimized/vwaddu_vx.ll
 ; velox/optimized/StringFunctions.cpp.ll
-; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; wireshark/optimized/ftype-ipv4.c.ll
 ; wireshark/optimized/packet-iso15765.c.ll
 ; Function Attrs: nounwind
@@ -101,7 +100,8 @@ entry:
   ret i64 %4
 }
 
-; 83 occurrences:
+; 84 occurrences:
+; boost/optimized/alloc_lib.ll
 ; cpython/optimized/typeobject.ll
 ; hdf5/optimized/H5HG.c.ll
 ; hdf5/optimized/H5HGcache.c.ll

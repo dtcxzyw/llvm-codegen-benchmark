@@ -3,7 +3,7 @@
 ; cmake/optimized/entropy_common.c.ll
 ; zstd/optimized/entropy_common.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000068(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000a8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = icmp sgt i32 %2, 0
@@ -15,12 +15,12 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/fpconv_dtoa.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000059(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000099(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = icmp slt i32 %2, 1
   %5 = select i1 %4, i32 %1, i32 %3
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 

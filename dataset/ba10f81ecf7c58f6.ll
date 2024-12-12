@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openjdk/optimized/convertnode.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a6(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000146(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = icmp sgt i64 %2, 0
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; openmpi/optimized/libompi_dbg_msgq_la-ompi_msgq_dll.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001aa(i64 %0, i64 %1) #0 {
+define i1 @func000000000000054a(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i64 %0, %1
   %3 = icmp sgt i64 %0, 0
@@ -25,7 +25,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/srcutree.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i64 %0, i64 %1) #0 {
+define i1 @func000000000000014c(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = icmp sgt i64 %2, -1
@@ -37,7 +37,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/smooth.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a6(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000546(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i64 %0, %1
   %3 = icmp slt i64 %0, 1

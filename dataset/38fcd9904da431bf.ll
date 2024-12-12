@@ -1,5 +1,5 @@
 
-; 70 occurrences:
+; 71 occurrences:
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
 ; darktable/optimized/introspection_colorbalance.c.ll
@@ -70,6 +70,7 @@
 ; raylib/optimized/rtextures.c.ll
 ; slurm/optimized/pack.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(float %0) #0 {
 entry:

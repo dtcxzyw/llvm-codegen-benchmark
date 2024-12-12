@@ -11,7 +11,7 @@
 ; pbrt-v4/optimized/shapes.cpp.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0) #0 {
+define i1 @func0000000000000021(i64 %0) #0 {
 entry:
   %1 = ashr exact i64 %0, 3
   %2 = urem i64 %1, 3

@@ -1,7 +1,5 @@
 
-; 19 occurrences:
-; abc/optimized/acecSt.c.ll
-; abc/optimized/mfsSat.c.ll
+; 17 occurrences:
 ; abc/optimized/wlnRead.c.ll
 ; cmake/optimized/divsufsort.c.ll
 ; darktable/optimized/RawImageDataU16.cpp.ll
@@ -90,7 +88,7 @@ entry:
 define i32 @func0000000000000002(i32 %0) #0 {
 entry:
   %1 = shl nsw i32 %0, 8
-  %2 = or i32 %1, %0
+  %2 = or i32 %0, %1
   ret i32 %2
 }
 

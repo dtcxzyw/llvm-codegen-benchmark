@@ -11,7 +11,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 6
   %.idx = and i64 %2, 70368744177600
-  %3 = add i64 %.idx, %0
+  %3 = add i64 %0, %.idx
   ret i64 %3
 }
 

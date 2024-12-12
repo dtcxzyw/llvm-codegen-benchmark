@@ -1,5 +1,5 @@
 
-; 102 occurrences:
+; 103 occurrences:
 ; abc/optimized/abcSpeedup.c.ll
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/giaEmbed.c.ll
@@ -55,6 +55,7 @@
 ; luajit/optimized/minilua.ll
 ; luau/optimized/BytecodeBuilder.cpp.ll
 ; luau/optimized/lstring.cpp.ll
+; lvgl/optimized/lv_scale.ll
 ; mitsuba3/optimized/measured.cpp.ll
 ; oiio/optimized/SHA1.cpp.ll
 ; oiio/optimized/xxhash.cpp.ll
@@ -106,8 +107,8 @@
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
-  %4 = add i32 %3, %1
-  %5 = add i32 %4, %0
+  %4 = add i32 %1, %3
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -120,12 +121,12 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 
-; 61 occurrences:
+; 62 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/FxchSCHashTable.c.ll
@@ -161,6 +162,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; libjpeg-turbo/optimized/rdgif.c.ll
 ; libwebp/optimized/near_lossless_enc.c.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; ncnn/optimized/convolution1d_x86.cpp.ll
@@ -191,18 +193,19 @@ entry:
 define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 3
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add nuw nsw i32 %4, %0
   ret i32 %5
 }
 
-; 127 occurrences:
+; 129 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/scalar_cast_temporal.cc.ll
 ; arrow/optimized/tz.cpp.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/to_chars.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -281,6 +284,7 @@ entry:
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
+; lvgl/optimized/lv_scale.ll
 ; miniaudio/optimized/unity.c.ll
 ; openjdk/optimized/ByteGray.ll
 ; openjdk/optimized/ByteIndexed.ll
@@ -328,17 +332,16 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 6
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; darktable/optimized/RafDecoder.cpp.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
 ; wireshark/optimized/packet-iso8583.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
@@ -375,28 +378,29 @@ define i32 @func000000000000001f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 3
   %4 = add nuw nsw i32 %3, %1
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; abc/optimized/kitTruth.c.ll
 ; abc/optimized/lpkAbcDsd.c.ll
 ; abc/optimized/lpkSets.c.ll
 ; abc/optimized/wlnWriteVer.c.ll
 ; git/optimized/date.ll
 ; llvm/optimized/AutoUpgrade.cpp.ll
+; lvgl/optimized/lv_calendar.ll
 ; zxing/optimized/AZDecoder.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 16
-  %4 = add nuw nsw i32 %3, %1
-  %5 = add nsw i32 %4, %0
+  %4 = add nuw nsw i32 %1, %3
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
-; 25 occurrences:
+; 26 occurrences:
 ; abc/optimized/aigUtil.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/utilSort.c.ll
@@ -409,6 +413,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; linux/optimized/fse_decompress.ll
 ; linux/optimized/zstd_decompress_block.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; wireshark/optimized/packet-dis.c.ll
 ; wireshark/optimized/packet-tetra.c.ll
 ; zstd/optimized/fse_compress.c.ll
@@ -426,14 +431,16 @@ entry:
 define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 16
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; abc/optimized/bmcFx.c.ll
 ; abc/optimized/wlcWriteVer.c.ll
+; boost/optimized/src.ll
+; lvgl/optimized/lv_scale.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -449,7 +456,7 @@ entry:
 define i32 @func000000000000001d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 17
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }
@@ -482,7 +489,7 @@ entry:
 define i32 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 22
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
@@ -505,7 +512,7 @@ entry:
 define i32 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 6
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }

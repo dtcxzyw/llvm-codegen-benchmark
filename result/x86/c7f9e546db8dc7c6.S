@@ -1,16 +1,22 @@
-func0000000000000045:                   # @func0000000000000045
+func0000000000000085:                   # @func0000000000000085
 	andl	$1, %edx
 	subq	%rsi, %rdi
 	cmpq	%rdx, %rdi
 	setbe	%al
 	retq
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	andl	$8191, %edx                     # imm = 0x1FFF
 	subq	%rsi, %rdi
 	cmpq	%rdx, %rdi
 	setl	%al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
+	andl	$511, %edx                      # imm = 0x1FF
+	subq	%rsi, %rdi
+	cmpq	%rdx, %rdi
+	setb	%al
+	retq
+func0000000000000094:                   # @func0000000000000094
 	andl	$511, %edx                      # imm = 0x1FF
 	subq	%rsi, %rdi
 	cmpq	%rdx, %rdi
@@ -22,37 +28,37 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	%rdx, %rdi
 	sete	%al
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	movzbl	%dl, %eax
 	subq	%rsi, %rdi
 	cmpq	%rax, %rdi
 	seta	%al
 	retq
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	andl	$2147483647, %edx               # imm = 0x7FFFFFFF
 	subq	%rsi, %rdi
 	cmpq	%rdx, %rdi
 	setb	%al
 	retq
-func000000000000005b:                   # @func000000000000005b
+func00000000000000ab:                   # @func00000000000000ab
 	movzwl	%dx, %eax
 	subq	%rsi, %rdi
 	cmpq	%rax, %rdi
 	setge	%al
 	retq
-func0000000000000074:                   # @func0000000000000074
+func00000000000000e4:                   # @func00000000000000e4
 	movzwl	%dx, %eax
 	subq	%rsi, %rdi
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
-func0000000000000068:                   # @func0000000000000068
+func00000000000000c8:                   # @func00000000000000c8
 	andl	$33554431, %edx                 # imm = 0x1FFFFFF
 	subq	%rsi, %rdi
 	cmpq	%rdx, %rdi
 	seta	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	movzwl	%dx, %eax
 	subq	%rsi, %rdi
 	cmpq	%rax, %rdi

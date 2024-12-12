@@ -1,5 +1,5 @@
 
-; 128 occurrences:
+; 135 occurrences:
 ; abseil-cpp/optimized/gaussian_distribution_test.cc.ll
 ; abseil-cpp/optimized/log_severity_test.cc.ll
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
@@ -14,6 +14,7 @@
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/normalize.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; cvc5/optimized/didyoumean.cpp.ll
@@ -56,12 +57,10 @@
 ; llvm/optimized/DecoderEmitter.cpp.ll
 ; llvm/optimized/LowerSwitch.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/eigen_mesh_conversions.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/io_tri.cpp.ll
-; meshlab/optimized/meshfilter.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/hdrfilm.cpp.ll
@@ -115,7 +114,6 @@
 ; typst-rs/optimized/49m3cs7hus53ztof.ll
 ; velox/optimized/URLFunctions.cpp.ll
 ; wireshark/optimized/androiddump.c.ll
-; wireshark/optimized/file-btsnoop.c.ll
 ; wireshark/optimized/packet-http3.c.ll
 ; wireshark/optimized/packet-tls-utils.c.ll
 ; yalantinglibs/optimized/benchmark.cpp.ll
@@ -128,6 +126,15 @@
 ; z3/optimized/q_mam.cpp.ll
 ; z3/optimized/theory_lra.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
+; zed-rs/optimized/01a9u2e0i8wru57e54nrmyia7.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/b0jacrvunbgse6y69p1vx4gkq.ll
+; zed-rs/optimized/bxm2tfnh5mvxjpr839l8em8o3.ll
+; zed-rs/optimized/cu6jannw5ajqip9tl6sqjzagm.ll
+; zed-rs/optimized/en4jszg1hvtl62im6poo4zhnt.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0) #0 {
 entry:
@@ -136,7 +143,7 @@ entry:
   ret i64 %2
 }
 
-; 112 occurrences:
+; 113 occurrences:
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/builder_dict.cc.ll
 ; arrow/optimized/scalar.cc.ll
@@ -203,6 +210,7 @@ entry:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; assimp/optimized/mesh_splitter.cpp.ll
+; boost/optimized/get_turn_info.ll
 ; ceres/optimized/block_random_access_dense_matrix.cc.ll
 ; ceres/optimized/evaluator.cc.ll
 ; ceres/optimized/problem_impl.cc.ll

@@ -16,7 +16,7 @@
 ; slurm/optimized/gres.ll
 ; slurm/optimized/slurm_protocol_defs.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(ptr %0, i1 %1, i32 %2) #0 {
+define i32 @func0000000000000061(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 16
   %4 = select i1 %1, i32 %2, i32 %3
@@ -50,7 +50,7 @@ entry:
 ; slurm/optimized/gres.ll
 ; slurm/optimized/slurm_protocol_defs.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(ptr %0, i1 %1, i32 %2) #0 {
+define i32 @func0000000000000041(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 524288
   %4 = select i1 %1, i32 %2, i32 %3

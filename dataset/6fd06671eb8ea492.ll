@@ -22,11 +22,12 @@ define i1 @func000000000000000a(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fadd double %1, %2
   %4 = fcmp ole double %3, 1.000000e+00
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
+; boost/optimized/buffer_piece_border.ll
 ; hermes/optimized/SynthTraceParser.cpp.ll
 ; mitsuba3/optimized/cylinder.cpp.ll
 ; proj/optimized/igh.cpp.ll
@@ -75,7 +76,7 @@ define i1 @func0000000000000005(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fadd double %1, %2
   %4 = fcmp ugt double %3, 0xC00921FB54442D18
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -99,7 +100,7 @@ define i1 @func0000000000000002(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fadd double %1, %2
   %4 = fcmp olt double %3, 0.000000e+00
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

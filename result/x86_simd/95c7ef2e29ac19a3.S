@@ -47,7 +47,7 @@ func0000000000000002:                   # @func0000000000000002
 	vpinsrd	$3, %edx, %xmm3, %xmm1
 	vinserti128	$1, %xmm0, %ymm1, %ymm0
 	vptestnmd	%ymm0, %ymm0, %k1
-	korb	%k0, %k1, %k0
+	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

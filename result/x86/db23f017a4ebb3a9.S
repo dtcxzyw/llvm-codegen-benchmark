@@ -1,28 +1,28 @@
 func0000000000000003:                   # @func0000000000000003
 	movl	%edx, %ecx
 	xorl	%eax, %eax
-	cmpq	%rsi, %rcx
+	cmpq	%rcx, %rsi
 	movl	%edi, %ecx
 	cmoveq	%rcx, %rax
 	retq
-func0000000000000023:                   # @func0000000000000023
+func0000000000000043:                   # @func0000000000000043
 	movl	%edx, %eax
-	cmpq	%rsi, %rax
+	cmpq	%rax, %rsi
 	movl	%edi, %ecx
 	movl	$1024, %eax                     # imm = 0x400
 	cmoveq	%rcx, %rax
 	retq
-func0000000000000029:                   # @func0000000000000029
+func0000000000000049:                   # @func0000000000000049
 	movl	%edx, %ecx
 	xorl	%eax, %eax
-	cmpq	%rsi, %rcx
+	cmpq	%rcx, %rsi
 	movl	%edi, %ecx
-	cmovaq	%rcx, %rax
+	cmovbq	%rcx, %rax
 	retq
 func0000000000000008:                   # @func0000000000000008
 	movl	%edx, %ecx
 	xorl	%eax, %eax
-	cmpq	%rsi, %rcx
+	cmpq	%rcx, %rsi
 	movl	%edi, %ecx
-	cmovaq	%rcx, %rax
+	cmovbq	%rcx, %rax
 	retq

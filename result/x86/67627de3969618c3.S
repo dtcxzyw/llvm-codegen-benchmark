@@ -3,31 +3,31 @@ func0000000000000006:                   # @func0000000000000006
 	movq	%rsi, %rax
 	xorl	%edx, %edx
 	divq	%rcx
-	cmpl	%edi, %eax
-	setg	%al
+	cmpl	%eax, %edi
+	setl	%al
 	retq
 func0000000000000008:                   # @func0000000000000008
 	movq	%rdx, %rcx
 	movq	%rsi, %rax
 	xorl	%edx, %edx
 	divq	%rcx
-	cmpl	%edi, %eax
-	setb	%al
+	cmpl	%eax, %edi
+	seta	%al
 	retq
 func000000000000000a:                   # @func000000000000000a
 	movq	%rdx, %rcx
 	movq	%rsi, %rax
 	xorl	%edx, %edx
 	divq	%rcx
-	cmpl	%edi, %eax
-	setl	%al
+	cmpl	%eax, %edi
+	setg	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
 	movq	%rdx, %rcx
 	movq	%rsi, %rax
 	xorl	%edx, %edx
 	divq	%rcx
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq
 func0000000000000004:                   # @func0000000000000004
@@ -35,54 +35,54 @@ func0000000000000004:                   # @func0000000000000004
 	movq	%rsi, %rax
 	xorl	%edx, %edx
 	divq	%rcx
-	cmpl	%edi, %eax
-	seta	%al
-	retq
-func0000000000000034:                   # @func0000000000000034
-	movq	%rdx, %rcx
-	movq	%rsi, %rax
-	xorl	%edx, %edx
-	divq	%rcx
-	cmpl	%edi, %eax
-	seta	%al
-	retq
-func0000000000000024:                   # @func0000000000000024
-	movq	%rdx, %rcx
-	movq	%rsi, %rax
-	xorl	%edx, %edx
-	divq	%rcx
-	cmpl	%edi, %eax
-	seta	%al
-	retq
-func0000000000000025:                   # @func0000000000000025
-	movq	%rdx, %rcx
-	movq	%rsi, %rax
-	xorl	%edx, %edx
-	divq	%rcx
-	cmpl	%edi, %eax
-	setae	%al
-	retq
-func0000000000000021:                   # @func0000000000000021
-	movq	%rdx, %rcx
-	movq	%rsi, %rax
-	xorl	%edx, %edx
-	divq	%rcx
-	cmpl	%edi, %eax
-	sete	%al
-	retq
-func0000000000000028:                   # @func0000000000000028
-	movq	%rdx, %rcx
-	movq	%rsi, %rax
-	xorl	%edx, %edx
-	divq	%rcx
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	setb	%al
 	retq
-func000000000000002a:                   # @func000000000000002a
+func0000000000000074:                   # @func0000000000000074
 	movq	%rdx, %rcx
 	movq	%rsi, %rax
 	xorl	%edx, %edx
 	divq	%rcx
-	cmpl	%edi, %eax
-	setl	%al
+	cmpl	%eax, %edi
+	setb	%al
+	retq
+func0000000000000044:                   # @func0000000000000044
+	movq	%rdx, %rcx
+	movq	%rsi, %rax
+	xorl	%edx, %edx
+	divq	%rcx
+	cmpl	%eax, %edi
+	setb	%al
+	retq
+func0000000000000041:                   # @func0000000000000041
+	movq	%rdx, %rcx
+	movq	%rsi, %rax
+	xorl	%edx, %edx
+	divq	%rcx
+	cmpl	%eax, %edi
+	sete	%al
+	retq
+func0000000000000045:                   # @func0000000000000045
+	movq	%rdx, %rcx
+	movq	%rsi, %rax
+	xorl	%edx, %edx
+	divq	%rcx
+	cmpl	%eax, %edi
+	setbe	%al
+	retq
+func0000000000000048:                   # @func0000000000000048
+	movq	%rdx, %rcx
+	movq	%rsi, %rax
+	xorl	%edx, %edx
+	divq	%rcx
+	cmpl	%eax, %edi
+	seta	%al
+	retq
+func000000000000004a:                   # @func000000000000004a
+	movq	%rdx, %rcx
+	movq	%rsi, %rax
+	xorl	%edx, %edx
+	divq	%rcx
+	cmpl	%eax, %edi
+	setg	%al
 	retq

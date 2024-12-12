@@ -1,5 +1,5 @@
 
-%"struct.(anonymous namespace)::ValuePair.3719995" = type { i32, i32 }
+%"struct.(anonymous namespace)::ValuePair.3899211" = type { i32, i32 }
 
 ; 8 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
@@ -11,12 +11,12 @@
 ; velox/optimized/Bridge.cpp.ll
 ; verilator/optimized/V3OrderProcessDomains.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000002b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
   %4 = add nsw i64 %3, %1
   %5 = lshr i64 %4, 5
-  %6 = getelementptr nusw ptr, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw ptr, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -24,12 +24,12 @@ entry:
 ; eastl/optimized/BenchmarkDeque.cpp.ll
 ; eastl/optimized/TestSort.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000022(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000023(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = lshr i64 %4, 1
-  %6 = getelementptr nusw %"struct.(anonymous namespace)::ValuePair.3719995", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.(anonymous namespace)::ValuePair.3899211", ptr %0, i64 %5
   ret ptr %6
 }
 

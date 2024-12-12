@@ -1,4 +1,4 @@
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	zext.h	a1, a1
 	add	a0, a0, a1
 	addiw	a0, a0, 1
@@ -10,13 +10,7 @@ func000000000000000a:                   # @func000000000000000a
 	addiw	a0, a0, -1
 	sgtz	a0, a0
 	ret
-func0000000000000054:                   # @func0000000000000054
-	zext.h	a1, a1
-	add	a0, a0, a1
-	addiw	a0, a0, 40
-	sltiu	a0, a0, 28
-	ret
-func0000000000000074:                   # @func0000000000000074
+func00000000000000f4:                   # @func00000000000000f4
 	zext.h	a1, a1
 	add	a0, a0, a1
 	lui	a1, 1034754
@@ -25,21 +19,21 @@ func0000000000000074:                   # @func0000000000000074
 	srliw	a0, a0, 16
 	sltiu	a0, a0, 17
 	ret
-func0000000000000158:                   # @func0000000000000158
+func00000000000002b8:                   # @func00000000000002b8
 	zext.h	a1, a1
 	add	a0, a0, a1
 	addiw	a0, a0, -48
 	sltiu	a0, a0, 25
 	xori	a0, a0, 1
 	ret
-func0000000000000148:                   # @func0000000000000148
+func0000000000000298:                   # @func0000000000000298
 	zext.h	a1, a1
 	add	a0, a0, a1
 	addiw	a0, a0, -48
 	sltiu	a0, a0, 256
 	xori	a0, a0, 1
 	ret
-func0000000000000078:                   # @func0000000000000078
+func00000000000000f8:                   # @func00000000000000f8
 	zext.h	a1, a1
 	add	a0, a0, a1
 	lui	a1, 1034754

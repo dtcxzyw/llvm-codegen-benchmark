@@ -1,5 +1,5 @@
 
-; 189 occurrences:
+; 188 occurrences:
 ; clamav/optimized/disasm.c.ll
 ; hermes/optimized/APInt.cpp.ll
 ; linux/optimized/lbr.ll
@@ -122,7 +122,6 @@
 ; llvm/optimized/PPExpressions.cpp.ll
 ; llvm/optimized/PassBuilder.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RISCVLegalizerInfo.cpp.ll
 ; llvm/optimized/RISCVMatInt.cpp.ll

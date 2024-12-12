@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 20 occurrences:
 ; darktable/optimized/introspection_zonesystem.c.ll
 ; hdf5/optimized/H5Ztrans.c.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
@@ -8,7 +8,6 @@
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; opencv/optimized/box_filter.dispatch.cpp.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
 ; opencv/optimized/deriche_filter.cpp.ll
@@ -25,7 +24,7 @@
 define double @func0000000000000000(double %0, i8 %1) #0 {
 entry:
   %2 = uitofp i8 %1 to double
-  %3 = fmul double %2, %0
+  %3 = fmul double %0, %2
   ret double %3
 }
 

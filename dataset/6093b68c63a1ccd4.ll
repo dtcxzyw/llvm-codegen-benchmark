@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 13 occurrences:
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
@@ -8,7 +8,9 @@
 ; minetest/optimized/serverenvironment.cpp.ll
 ; openspiel/optimized/go_board.cc.ll
 ; postgres/optimized/xloginsert.ll
-; typst-rs/optimized/59tuvc5m3xlovl3o.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
+; turborepo-rs/optimized/c500hnb79kuh9h85697qija6o.ll
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; Function Attrs: nounwind

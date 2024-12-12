@@ -1,5 +1,5 @@
 
-; 64 occurrences:
+; 77 occurrences:
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
 ; actix-rs/optimized/q4aavw6wh20so0r.ll
 ; coreutils-rs/optimized/22bojphyikqmi872.ll
@@ -64,12 +64,25 @@
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; wasmtime-rs/optimized/2sf3ranrrf5pn6ms.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/1jbe4zqf10fi4dnkcvibaggjj.ll
+; zed-rs/optimized/1qb020ndphzxmvf33d06yonm0.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/3u7utqtgdovrxzbad3tfrps40.ll
+; zed-rs/optimized/7ukwrxq2hh2vqucbwedxkpvcs.ll
+; zed-rs/optimized/8et4dphxwbm7ry4e21dik6h9d.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/a9o648rm8h3erlto15zyd64wi.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/bwf7odsfkes1o9vw37iz67e4b.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000002(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl nuw i16 1, %1
   %3 = xor i16 %2, -1
-  %4 = and i16 %3, %0
+  %4 = and i16 %0, %3
   ret i16 %4
 }
 
@@ -83,7 +96,7 @@ define i16 @func0000000000000001(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl nsw i16 -1, %1
   %3 = xor i16 %2, -1
-  %4 = and i16 %3, %0
+  %4 = and i16 %0, %3
   ret i16 %4
 }
 
@@ -94,7 +107,7 @@ define i16 @func0000000000000003(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl nuw nsw i16 1, %1
   %3 = xor i16 %2, -1
-  %4 = and i16 %3, %0
+  %4 = and i16 %0, %3
   ret i16 %4
 }
 

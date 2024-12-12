@@ -17,7 +17,7 @@
 ; openjdk/optimized/referenceProcessor.ll
 ; openjdk/optimized/threadLocalAllocBuffer.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000102(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 3
   %4 = select i1 %0, i1 %3, i1 false
@@ -109,7 +109,7 @@ entry:
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i32 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000318(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = select i1 %1, i1 %3, i1 false
@@ -126,7 +126,7 @@ entry:
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; llvm/optimized/Pointer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i32 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000042(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %1, i1 %3, i1 false
@@ -143,7 +143,7 @@ entry:
 ; nlohmann_json/optimized/unit-cbor.cpp.ll
 ; nlohmann_json/optimized/unit-msgpack.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i32 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000302(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = select i1 %1, i1 %3, i1 false

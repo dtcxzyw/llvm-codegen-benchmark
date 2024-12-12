@@ -5,7 +5,7 @@
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, float %1) #0 {
+define i1 @func000000000000002a(i32 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
   %3 = shl nsw i32 %0, 1

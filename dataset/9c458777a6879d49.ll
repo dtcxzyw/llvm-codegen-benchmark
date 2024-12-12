@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; c3c/optimized/parse_global.c.ll
 ; linux/optimized/r8169_main.ll
 ; linux/optimized/tcp_ipv4.ll
@@ -8,6 +8,7 @@
 ; llvm/optimized/InlineFunction.cpp.ll
 ; llvm/optimized/LegalizeDAG.cpp.ll
 ; llvm/optimized/LegalizeVectorOps.cpp.ll
+; lvgl/optimized/lv_obj_style.ll
 ; ruby/optimized/time.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-ieee80211.c.ll

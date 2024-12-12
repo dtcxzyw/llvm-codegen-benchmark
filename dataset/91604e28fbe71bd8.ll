@@ -1,5 +1,6 @@
 
-; 2 occurrences:
+; 3 occurrences:
+; lvgl/optimized/lv_image.ll
 ; lz4/optimized/lz4.c.ll
 ; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind

@@ -1,112 +1,32 @@
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	mov	x8, v4.d[1]
-	mov	x9, v2.d[1]
-	fmov	x11, d4
-	fmov	x12, d2
-	fmov	x14, d5
-	fmov	x15, d3
-	mov	x17, v5.d[1]
-	mov	x18, v3.d[1]
-	udiv	x10, x9, x8
-	udiv	x13, x12, x11
-	msub	x8, x10, x8, x9
-	udiv	x16, x15, x14
-	msub	x9, x13, x11, x12
-	fmov	d4, x9
-	mov	v4.d[1], x8
-	sub	v2.2d, v4.2d, v2.2d
-	add	v0.2d, v2.2d, v0.2d
-	udiv	x0, x18, x17
-	msub	x10, x16, x14, x15
-	fmov	d5, x10
-	msub	x11, x0, x17, x18
-	mov	v5.d[1], x11
-	sub	v3.2d, v5.2d, v3.2d
-	add	v1.2d, v3.2d, v1.2d
+	udiv	x8, x1, x2
+	msub	x8, x8, x2, x1
+	sub	x8, x8, x1
+	add	x0, x8, x0
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	mov	x8, v4.d[1]
-	mov	x9, v2.d[1]
-	fmov	x11, d4
-	fmov	x12, d2
-	fmov	x14, d5
-	fmov	x15, d3
-	mov	x17, v5.d[1]
-	mov	x18, v3.d[1]
-	udiv	x10, x9, x8
-	udiv	x13, x12, x11
-	msub	x8, x10, x8, x9
-	udiv	x16, x15, x14
-	msub	x9, x13, x11, x12
-	fmov	d4, x9
-	mov	v4.d[1], x8
-	sub	v2.2d, v4.2d, v2.2d
-	add	v0.2d, v2.2d, v0.2d
-	udiv	x0, x18, x17
-	msub	x10, x16, x14, x15
-	fmov	d5, x10
-	msub	x11, x0, x17, x18
-	mov	v5.d[1], x11
-	sub	v3.2d, v5.2d, v3.2d
-	add	v1.2d, v3.2d, v1.2d
+	udiv	x8, x1, x2
+	msub	x8, x8, x2, x1
+	sub	x8, x8, x1
+	add	x0, x8, x0
 	ret
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	mov	x8, v4.d[1]
-	mov	x9, v2.d[1]
-	fmov	x11, d4
-	fmov	x12, d2
-	fmov	x14, d5
-	fmov	x15, d3
-	mov	x17, v5.d[1]
-	mov	x18, v3.d[1]
-	udiv	x10, x9, x8
-	udiv	x13, x12, x11
-	msub	x8, x10, x8, x9
-	udiv	x16, x15, x14
-	msub	x9, x13, x11, x12
-	fmov	d4, x9
-	mov	v4.d[1], x8
-	sub	v2.2d, v4.2d, v2.2d
-	add	v0.2d, v2.2d, v0.2d
-	udiv	x0, x18, x17
-	msub	x10, x16, x14, x15
-	fmov	d5, x10
-	msub	x11, x0, x17, x18
-	mov	v5.d[1], x11
-	sub	v3.2d, v5.2d, v3.2d
-	add	v1.2d, v3.2d, v1.2d
+	udiv	x8, x1, x2
+	msub	x8, x8, x2, x1
+	sub	x8, x8, x1
+	add	x0, x8, x0
 	ret
                                         // -- End function
 func000000000000000d:                   // @func000000000000000d
 // %bb.0:                               // %entry
-	mov	x8, v4.d[1]
-	mov	x9, v2.d[1]
-	fmov	x11, d4
-	fmov	x12, d2
-	fmov	x14, d5
-	fmov	x15, d3
-	mov	x17, v5.d[1]
-	mov	x18, v3.d[1]
-	udiv	x10, x9, x8
-	udiv	x13, x12, x11
-	msub	x8, x10, x8, x9
-	udiv	x16, x15, x14
-	msub	x9, x13, x11, x12
-	fmov	d4, x9
-	mov	v4.d[1], x8
-	sub	v2.2d, v4.2d, v2.2d
-	add	v0.2d, v2.2d, v0.2d
-	udiv	x0, x18, x17
-	msub	x10, x16, x14, x15
-	fmov	d5, x10
-	msub	x11, x0, x17, x18
-	mov	v5.d[1], x11
-	sub	v3.2d, v5.2d, v3.2d
-	add	v1.2d, v3.2d, v1.2d
+	udiv	x8, x1, x2
+	msub	x8, x8, x2, x1
+	sub	x8, x8, x1
+	add	x0, x8, x0
 	ret
                                         // -- End function

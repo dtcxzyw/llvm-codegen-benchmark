@@ -2,12 +2,12 @@
 ; 1 occurrences:
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000012(ptr %0, i32 %1) #0 {
+define i64 @func0000000000000013(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 32767
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 2
-  %5 = getelementptr nusw i16, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw i16, ptr %4, i64 %3
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }
@@ -50,12 +50,12 @@ entry:
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(ptr %0, i32 %1) #0 {
+define i64 @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 32767
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 200
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 200
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }

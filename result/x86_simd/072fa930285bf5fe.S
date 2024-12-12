@@ -15,7 +15,7 @@
 	.short	30                              # 0x1e
 	.short	30                              # 0x1e
 	.short	30                              # 0x1e
-func000000000000003c:                   # @func000000000000003c
+func000000000000006c:                   # @func000000000000006c
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpsubw	%ymm1, %ymm0, %ymm0
 	vptestmw	.LCPI0_0(%rip), %ymm0, %k0
@@ -56,7 +56,7 @@ func000000000000003c:                   # @func000000000000003c
 	.short	65503                           # 0xffdf
 	.short	65503                           # 0xffdf
 	.short	65503                           # 0xffdf
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpaddw	.LCPI1_0(%rip), %ymm0, %ymm0
 	vptestnmw	.LCPI1_1(%rip), %ymm0, %k0
 	vpmovm2b	%k0, %xmm0
@@ -96,7 +96,7 @@ func0000000000000011:                   # @func0000000000000011
 	.short	65533                           # 0xfffd
 	.short	65533                           # 0xfffd
 	.short	65533                           # 0xfffd
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vpaddw	.LCPI2_0(%rip), %ymm0, %ymm0
 	vptestmw	.LCPI2_1(%rip), %ymm0, %k0
 	vpmovm2b	%k0, %xmm0
@@ -236,7 +236,7 @@ func0000000000000001:                   # @func0000000000000001
 .LCPI5_3:
 	.short	240                             # 0xf0
 	.short	240                             # 0xf0
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpaddw	.LCPI5_0(%rip), %ymm0, %ymm0
 	vpandd	.LCPI5_3(%rip){1to8}, %ymm0, %ymm0
 	vpcmpeqw	.LCPI5_2(%rip), %ymm0, %k0
@@ -297,7 +297,7 @@ func0000000000000031:                   # @func0000000000000031
 .LCPI6_3:
 	.short	254                             # 0xfe
 	.short	254                             # 0xfe
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	vpaddw	.LCPI6_0(%rip), %ymm0, %ymm0
 	vpandd	.LCPI6_3(%rip){1to8}, %ymm0, %ymm0
 	vpcmpltw	.LCPI6_2(%rip), %ymm0, %k0

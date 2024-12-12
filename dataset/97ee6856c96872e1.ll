@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 40 occurrences:
 ; assimp/optimized/3DSConverter.cpp.ll
 ; assimp/optimized/3DSExporter.cpp.ll
 ; assimp/optimized/3DSLoader.cpp.ll
@@ -24,6 +24,8 @@
 ; linux/optimized/intel_dp.ll
 ; linux/optimized/intel_vdsc.ll
 ; lodepng/optimized/pngdetail.cpp.ll
+; lvgl/optimized/lv_demo_widgets.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; oiio/optimized/pnminput.cpp.ll
 ; opencv/optimized/colormap.cpp.ll

@@ -23,8 +23,8 @@ entry:
   %3 = lshr i8 %2, 3
   %4 = zext nneg i8 %3 to i32
   %5 = shl nuw nsw i32 %4, 16
-  %6 = or disjoint i32 %5, %1
-  %7 = or i32 %6, %0
+  %6 = or disjoint i32 %1, %5
+  %7 = or i32 %0, %6
   ret i32 %7
 }
 
@@ -49,7 +49,7 @@ entry:
   %3 = lshr exact i8 %2, 2
   %4 = zext nneg i8 %3 to i32
   %5 = shl nuw nsw i32 %4, 16
-  %6 = or disjoint i32 %5, %1
+  %6 = or disjoint i32 %1, %5
   %7 = or disjoint i32 %6, %0
   ret i32 %7
 }
@@ -59,11 +59,11 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000001c(i32 %0, i32 %1, i8 %2) #0 {
 entry:
-  %3 = lshr i8 %2, 3
+  %3 = lshr i8 %2, 6
   %4 = zext nneg i8 %3 to i32
-  %5 = shl nuw nsw i32 %4, 6
-  %6 = or i32 %5, %1
-  %7 = or i32 %6, %0
+  %5 = shl nuw nsw i32 %4, 11
+  %6 = or i32 %1, %5
+  %7 = or i32 %0, %6
   ret i32 %7
 }
 

@@ -57,7 +57,7 @@ func0000000000000001:                   # @func0000000000000001
 	.long	1                               # 0x1
 .LCPI1_3:
 	.zero	4,31
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	vpandd	.LCPI1_3(%rip){1to4}, %xmm1, %xmm1
 	vpcmpltb	.LCPI1_1(%rip), %xmm1, %k1
 	vpbroadcastd	.LCPI1_2(%rip), %ymm0 {%k1} # ymm0 {%k1} = [1,1,1,1,1,1,1,1]
@@ -108,7 +108,7 @@ func000000000000000c:                   # @func000000000000000c
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vptestnmb	.LCPI3_0(%rip), %xmm1, %k1
 	vmovdqa32	%ymm0, %ymm0 {%k1} {z}
 	retq

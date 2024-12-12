@@ -1,5 +1,6 @@
 
-; 79 occurrences:
+; 80 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
 ; fmt/optimized/header-only-test.cc.ll
@@ -85,11 +86,12 @@ entry:
   %3 = icmp eq i64 %2, 0
   %4 = and i1 %3, %1
   %5 = sext i1 %4 to i64
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/to_chars.ll
 ; duckdb/optimized/ub_duckdb_aggr_algebraic.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
 ; Function Attrs: nounwind
@@ -98,20 +100,19 @@ entry:
   %3 = icmp ne i64 %2, 6
   %4 = and i1 %3, %1
   %5 = sext i1 %4 to i64
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 
-; 2 occurrences:
-; llvm/optimized/COFFImportFile.cpp.ll
+; 1 occurrences:
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000030(i64 %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ne i64 %2, -1
+  %3 = icmp ne i64 %2, 0
   %4 = and i1 %3, %1
   %5 = sext i1 %4 to i64
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 

@@ -1,6 +1,6 @@
 
-%"struct.hb_hashmap_t<unsigned int, face_table_info_t>::item_t.2620709" = type { i32, i32, %struct.face_table_info_t.2620710 }
-%struct.face_table_info_t.2620710 = type { ptr, i32 }
+%"struct.hb_hashmap_t<unsigned int, face_table_info_t>::item_t.2734151" = type { i32, i32, %struct.face_table_info_t.2734152 }
+%struct.face_table_info_t.2734152 = type { ptr, i32 }
 
 ; 9 occurrences:
 ; eastl/optimized/TestFixedHash.cpp.ll
@@ -13,11 +13,11 @@
 ; openjdk/optimized/hb-face-builder.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = urem i32 194747424, %1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw %"struct.hb_hashmap_t<unsigned int, face_table_info_t>::item_t.2620709", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"struct.hb_hashmap_t<unsigned int, face_table_info_t>::item_t.2734151", ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -27,11 +27,11 @@ entry:
 ; eastl/optimized/TestStringHashMap.cpp.ll
 ; graphviz/optimized/sfprint.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = urem i32 -2147483648, %1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 

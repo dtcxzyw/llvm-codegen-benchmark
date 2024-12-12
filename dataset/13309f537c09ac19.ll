@@ -3,7 +3,7 @@
 ; curl/optimized/libcurl_la-multi.ll
 ; wireshark/optimized/packet-erf.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i8 %0, i64 %1) #0 {
+define i1 @func00000000000000e1(i8 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 33
   %3 = trunc nuw nsw i64 %2 to i32
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; proxygen/optimized/ResourceStats.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i8 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
@@ -30,7 +30,7 @@ entry:
 ; cmake/optimized/multi.c.ll
 ; llvm/optimized/PrecompiledPreamble.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i8 %0, i64 %1) #0 {
+define i1 @func00000000000000a1(i8 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32

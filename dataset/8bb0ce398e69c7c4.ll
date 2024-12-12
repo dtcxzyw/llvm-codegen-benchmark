@@ -1,18 +1,7 @@
 
-; 13 occurrences:
-; lightgbm/optimized/dataset_loader.cpp.ll
-; meilisearch-rs/optimized/nd5rqkzol64hjfl.ll
-; ockam-rs/optimized/274k60s1efyiyv8u.ll
-; ockam-rs/optimized/z0rkq6s90lca7cm.ll
-; openblas/optimized/dtrsm_kernel_LN.c.ll
-; openblas/optimized/strsm_kernel_LN.c.ll
-; openblas/optimized/strsm_kernel_RT.c.ll
-; opencv/optimized/edge_drawing.cpp.ll
-; opencv/optimized/histogram.cpp.ll
+; 2 occurrences:
 ; openssl/optimized/libcrypto-lib-sha1dgst.ll
 ; openssl/optimized/libcrypto-shlib-sha1dgst.ll
-; php/optimized/pcre2_dfa_match.ll
-; php/optimized/zend_inference.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -23,67 +12,56 @@ entry:
   ret ptr %6
 }
 
-; 37 occurrences:
-; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
-; folly/optimized/AsyncFdSocket.cpp.ll
-; folly/optimized/AsyncSocket.cpp.ll
-; folly/optimized/AsyncUDPSocket.cpp.ll
-; folly/optimized/NetOps.cpp.ll
-; folly/optimized/farmhash.cpp.ll
-; git/optimized/dir.ll
-; git/optimized/fmt-merge-msg.ll
-; hermes/optimized/RegExp.cpp.ll
-; hyperscan/optimized/fdr.c.ll
-; hyperscan/optimized/fdr_compile.cpp.ll
-; hyperscan/optimized/teddy_compile.cpp.ll
-; icu/optimized/wrtjava.ll
-; llvm/optimized/AddressSanitizer.cpp.ll
-; llvm/optimized/HeaderMap.cpp.ll
-; meshoptimizer/optimized/vertexcodec.cpp.ll
-; mold/optimized/output-chunks.cc.ARM32.cc.ll
-; mold/optimized/output-chunks.cc.ARM64.cc.ll
-; mold/optimized/output-chunks.cc.I386.cc.ll
-; mold/optimized/output-chunks.cc.LOONGARCH32.cc.ll
-; mold/optimized/output-chunks.cc.LOONGARCH64.cc.ll
-; mold/optimized/output-chunks.cc.M68K.cc.ll
-; mold/optimized/output-chunks.cc.PPC32.cc.ll
-; mold/optimized/output-chunks.cc.PPC64V2.cc.ll
-; mold/optimized/output-chunks.cc.RV32BE.cc.ll
-; mold/optimized/output-chunks.cc.RV32LE.cc.ll
-; mold/optimized/output-chunks.cc.RV64BE.cc.ll
-; mold/optimized/output-chunks.cc.RV64LE.cc.ll
-; mold/optimized/output-chunks.cc.S390X.cc.ll
-; mold/optimized/output-chunks.cc.SH4.cc.ll
-; mold/optimized/output-chunks.cc.SPARC64.cc.ll
-; mold/optimized/output-chunks.cc.X86_64.cc.ll
-; oiio/optimized/farmhash.cpp.ll
-; oiio/optimized/ustring.cpp.ll
-; openmpi/optimized/mpl_trmem.ll
-; openusd/optimized/obu.c.ll
-; yosys/optimized/fstapi.ll
+; 7 occurrences:
+; meilisearch-rs/optimized/nd5rqkzol64hjfl.ll
+; ockam-rs/optimized/274k60s1efyiyv8u.ll
+; ockam-rs/optimized/z0rkq6s90lca7cm.ll
+; openssl/optimized/libcrypto-lib-sha1dgst.ll
+; openssl/optimized/libcrypto-shlib-sha1dgst.ll
+; php/optimized/zend_inference.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %2, 32
-  %4 = and i64 %3, 4294967280
-  %5 = getelementptr nusw i8, ptr %0, i64 %1
+  %3 = add nsw i64 %2, -24
+  %4 = and i64 %3, -64
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
   %6 = getelementptr nusw i8, ptr %5, i64 %4
   ret ptr %6
 }
 
-; 30 occurrences:
-; abc/optimized/acbPush.c.ll
+; 16 occurrences:
+; folly/optimized/farmhash.cpp.ll
+; git/optimized/dir.ll
+; git/optimized/fmt-merge-msg.ll
+; hyperscan/optimized/fdr.c.ll
+; llvm/optimized/AddressSanitizer.cpp.ll
+; mold/optimized/output-chunks.cc.ARM64.cc.ll
+; mold/optimized/output-chunks.cc.LOONGARCH64.cc.ll
+; mold/optimized/output-chunks.cc.PPC64V2.cc.ll
+; mold/optimized/output-chunks.cc.RV64BE.cc.ll
+; mold/optimized/output-chunks.cc.RV64LE.cc.ll
+; mold/optimized/output-chunks.cc.S390X.cc.ll
+; mold/optimized/output-chunks.cc.SPARC64.cc.ll
+; mold/optimized/output-chunks.cc.X86_64.cc.ll
+; oiio/optimized/farmhash.cpp.ll
+; oiio/optimized/ustring.cpp.ll
+; openusd/optimized/obu.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %2, 32
+  %4 = and i64 %3, 4294967280
+  %5 = getelementptr nusw i8, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 22 occurrences:
 ; hyperscan/optimized/mcclellan.c.ll
 ; hyperscan/optimized/mcclellancompile.cpp.ll
 ; hyperscan/optimized/teddy_compile.cpp.ll
-; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
-; llvm/optimized/AutoUpgrade.cpp.ll
-; llvm/optimized/IRTranslator.cpp.ll
-; llvm/optimized/IntrinsicInst.cpp.ll
-; llvm/optimized/MemorySanitizer.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
-; llvm/optimized/Verifier.cpp.ll
 ; mold/optimized/input-files.cc.ALPHA.cc.ll
 ; mold/optimized/input-files.cc.ARM32.cc.ll
 ; mold/optimized/input-files.cc.ARM64.cc.ll
@@ -103,18 +81,59 @@ entry:
 ; mold/optimized/input-files.cc.SPARC64.cc.ll
 ; mold/optimized/input-files.cc.X86_64.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 7
   %4 = and i64 %3, 8589934584
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 13 occurrences:
+; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
+; hermes/optimized/RegExp.cpp.ll
+; icu/optimized/wrtjava.ll
+; llvm/optimized/HeaderMap.cpp.ll
+; mold/optimized/output-chunks.cc.ARM32.cc.ll
+; mold/optimized/output-chunks.cc.I386.cc.ll
+; mold/optimized/output-chunks.cc.LOONGARCH32.cc.ll
+; mold/optimized/output-chunks.cc.M68K.cc.ll
+; mold/optimized/output-chunks.cc.PPC32.cc.ll
+; mold/optimized/output-chunks.cc.RV32BE.cc.ll
+; mold/optimized/output-chunks.cc.RV32LE.cc.ll
+; mold/optimized/output-chunks.cc.SH4.cc.ll
+; yosys/optimized/fstapi.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %2, 32
+  %4 = and i64 %3, 4294967280
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 5 occurrences:
+; folly/optimized/AsyncFdSocket.cpp.ll
+; folly/optimized/AsyncSocket.cpp.ll
+; folly/optimized/AsyncUDPSocket.cpp.ll
+; folly/optimized/NetOps.cpp.ll
+; openmpi/optimized/mpl_trmem.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %2, 7
+  %4 = and i64 %3, -8
   %5 = getelementptr nusw i8, ptr %0, i64 %1
   %6 = getelementptr nusw i8, ptr %5, i64 %4
   ret ptr %6
 }
 
-; 25 occurrences:
+; 26 occurrences:
 ; darktable/optimized/introspection_colorin.c.ll
 ; duckdb/optimized/ub_duckdb_optimizer.cpp.ll
+; hyperscan/optimized/rose_build_program.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; ockam-rs/optimized/1d1qxhuj8x85dazd.ll
 ; ockam-rs/optimized/2ngtaq92gcad4v6j.ll
@@ -148,13 +167,12 @@ entry:
   ret ptr %6
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; openjdk/optimized/cdsEnumKlass.ll
 ; openjdk/optimized/runTimeClassInfo.ll
 ; postgres/optimized/brin.ll
 ; postgres/optimized/extended_stats.ll
 ; postgres/optimized/integerset.ll
-; postgres/optimized/tsvector_op.ll
 ; postgres/optimized/twophase.ll
 ; postgres/optimized/xactdesc.ll
 ; Function Attrs: nounwind
@@ -167,22 +185,65 @@ entry:
   ret ptr %6
 }
 
+; 5 occurrences:
+; openblas/optimized/dtrsm_kernel_LN.c.ll
+; openblas/optimized/strsm_kernel_LN.c.ll
+; opencv/optimized/edge_drawing.cpp.ll
+; opencv/optimized/histogram.cpp.ll
+; php/optimized/pcre2_dfa_match.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %2, 4294967294
+  %4 = and i64 %3, 4294967294
+  %5 = getelementptr nusw i32, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw i64, ptr %5, i64 %4
+  ret ptr %6
+}
+
 ; 8 occurrences:
-; g2o/optimized/optimizable_graph.cpp.ll
-; g2o/optimized/vertex_ellipse.cpp.ll
+; abc/optimized/acbPush.c.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
+; llvm/optimized/AutoUpgrade.cpp.ll
+; llvm/optimized/IRTranslator.cpp.ll
+; llvm/optimized/IntrinsicInst.cpp.ll
+; llvm/optimized/MemorySanitizer.cpp.ll
+; llvm/optimized/Verifier.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003b(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %2, 1
+  %4 = and i64 %3, 4294967295
+  %5 = getelementptr nusw i32, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw i32, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 3 occurrences:
+; hyperscan/optimized/fdr_compile.cpp.ll
+; hyperscan/optimized/teddy_compile.cpp.ll
+; meshoptimizer/optimized/vertexcodec.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %2, 15
+  %4 = and i64 %3, -16
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 2 occurrences:
 ; hermes/optimized/RegExp.cpp.ll
 ; llvm/optimized/RegAllocPBQP.cpp.ll
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/edit_referencing.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
-; meshlab/optimized/meshfilter.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000002f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr nusw i16, ptr %0, i64 %1
-  %6 = getelementptr nusw i16, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i16, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw i16, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -199,16 +260,45 @@ entry:
   ret ptr %6
 }
 
+; 6 occurrences:
+; g2o/optimized/optimizable_graph.cpp.ll
+; g2o/optimized/vertex_ellipse.cpp.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/edit_referencing.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002b(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw i64 %2, 4294967288
+  %4 = and i64 %3, 4294967294
+  %5 = getelementptr nusw double, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw double, ptr %5, i64 %4
+  ret ptr %6
+}
+
 ; 2 occurrences:
 ; g2o/optimized/edge_se2_lotsofxy.cpp.ll
 ; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000038(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000003c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 4294967294
   %4 = and i64 %3, 4294967294
-  %5 = getelementptr nusw double, ptr %0, i64 %1
+  %5 = getelementptr nusw nuw double, ptr %0, i64 %1
   %6 = getelementptr double, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 1 occurrences:
+; openblas/optimized/strsm_kernel_RT.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %2, 2147483647
+  %4 = and i64 %3, 2147483647
+  %5 = getelementptr nusw nuw float, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw float, ptr %5, i64 %4
   ret ptr %6
 }
 

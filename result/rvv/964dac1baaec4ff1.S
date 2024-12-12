@@ -10,5 +10,5 @@ func0000000000000008:                   # @func0000000000000008
 	vfncvt.rtz.x.f.w	v16, v12
 	vfwcvt.f.x.v	v12, v16
 	vsetvli	zero, zero, e64, m4, ta, ma
-	vmfeq.vv	v0, v12, v8
+	vmfeq.vv	v0, v8, v12
 	ret

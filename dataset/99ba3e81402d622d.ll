@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, double %1) #0 {
+define i1 @func000000000000002a(i32 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = add nsw i32 %2, -1
@@ -19,7 +19,7 @@ entry:
 ; opencv/optimized/trackerCSRTUtils.cpp.ll
 ; openjdk/optimized/gtk3_interface.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, double %1) #0 {
+define i1 @func0000000000000026(i32 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = add nsw i32 %2, 1
@@ -34,7 +34,7 @@ entry:
 ; opencv/optimized/samplers.cpp.ll
 ; redis/optimized/ltable.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, double %1) #0 {
+define i1 @func0000000000000024(i32 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = add nsw i32 %2, -1
@@ -56,7 +56,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/trackerCSRTSegmentation.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, double %1) #0 {
+define i1 @func0000000000000041(i32 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = add nuw i32 %2, 1
@@ -67,7 +67,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, double %1) #0 {
+define i1 @func0000000000000066(i32 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = add nuw nsw i32 %2, 1
@@ -78,11 +78,11 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/edge_drawing.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, double %1) #0 {
+define i1 @func0000000000000074(i32 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = add nuw nsw i32 %2, 1
-  %4 = icmp ult i32 %3, %0
+  %4 = icmp samesign ult i32 %3, %0
   ret i1 %4
 }
 

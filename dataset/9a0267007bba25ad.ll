@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; delta-rs/optimized/s2xrj2sh770tx8d.ll
 ; libsodium/optimized/libsodium_la-codecs.ll
 ; lief/optimized/nist_kw.c.ll
@@ -9,6 +9,7 @@
 ; openusd/optimized/openexr-c.c.ll
 ; rocksdb/optimized/arena.cc.ll
 ; spike/optimized/processor.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -27,7 +28,7 @@ entry:
   %3 = and i64 %2, 72057594037927935
   %4 = icmp eq i64 %3, 0
   %5 = select i1 %4, i64 0, i64 %1
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -45,7 +46,7 @@ entry:
   %3 = and i64 %2, 268435440
   %4 = icmp eq i64 %3, 0
   %5 = select i1 %4, i64 8, i64 %1
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 

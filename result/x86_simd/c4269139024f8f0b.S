@@ -4,7 +4,7 @@ func0000000000000000:                   # @func0000000000000000
 	vpslld	$31, %ymm1, %ymm0
 	vpmovd2m	%ymm0, %k1
 	knotb	%k1, %k1
-	korb	%k0, %k1, %k0
+	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

@@ -6,7 +6,7 @@
 ; qemu/optimized/fpu_softfloat.c.ll
 ; ruby/optimized/gc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = and i32 %3, 255

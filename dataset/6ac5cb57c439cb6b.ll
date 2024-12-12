@@ -1,19 +1,31 @@
 
-%"struct.std::pair.3087422" = type { i32, i32 }
+%"struct.std::pair.3280201" = type { i32, i32 }
 
-; 142 occurrences:
-; folly/optimized/AsyncFdSocket.cpp.ll
-; folly/optimized/AsyncSocket.cpp.ll
-; folly/optimized/AsyncUDPSocket.cpp.ll
-; folly/optimized/NetOps.cpp.ll
+; 6 occurrences:
+; hyperscan/optimized/fdr_compile.cpp.ll
+; hyperscan/optimized/teddy_compile.cpp.ll
+; luajit/optimized/lj_alloc.ll
+; luajit/optimized/lj_alloc_dyn.ll
+; openssl/optimized/libcommon-lib-tls_pad.ll
+; openssl/optimized/libssl-shlib-tls_pad.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 48
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = and i64 %1, -33
+  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 132 occurrences:
+; boost/optimized/alloc_lib.ll
 ; git/optimized/record.ll
 ; hermes/optimized/BytecodeDisassembler.cpp.ll
 ; hermes/optimized/GlobalObject.cpp.ll
 ; hermes/optimized/RegExp.cpp.ll
 ; hermes/optimized/RuntimeJSONUtils.cpp.ll
-; hyperscan/optimized/fdr_compile.cpp.ll
 ; hyperscan/optimized/teddy_compile.cpp.ll
-; lightgbm/optimized/dataset_loader.cpp.ll
 ; llvm/optimized/AArch64Disassembler.cpp.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
@@ -119,8 +131,6 @@
 ; llvm/optimized/Visitor.cpp.ll
 ; llvm/optimized/WasmObjectFile.cpp.ll
 ; llvm/optimized/WholeProgramDevirt.cpp.ll
-; luajit/optimized/lj_alloc.ll
-; luajit/optimized/lj_alloc_dyn.ll
 ; mold/optimized/input-files.cc.ALPHA.cc.ll
 ; mold/optimized/input-files.cc.ARM32.cc.ll
 ; mold/optimized/input-files.cc.ARM64.cc.ll
@@ -139,17 +149,30 @@
 ; mold/optimized/input-files.cc.SH4.cc.ll
 ; mold/optimized/input-files.cc.SPARC64.cc.ll
 ; mold/optimized/input-files.cc.X86_64.cc.ll
-; nuttx/optimized/mm_free.c.ll
-; openssl/optimized/libcommon-lib-tls_pad.ll
-; openssl/optimized/libssl-shlib-tls_pad.ll
 ; yosys/optimized/fstapi.ll
 ; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
+define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 8589934588
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = and i64 %1, 8589934584
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 5 occurrences:
+; folly/optimized/AsyncFdSocket.cpp.ll
+; folly/optimized/AsyncSocket.cpp.ll
+; folly/optimized/AsyncUDPSocket.cpp.ll
+; folly/optimized/NetOps.cpp.ll
+; nuttx/optimized/mm_free.c.ll
+; Function Attrs: nounwind
 define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, 48
+  %3 = and i64 %2, -8
   %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = and i64 %1, -33
+  %5 = and i64 %1, -8
   %6 = getelementptr nusw i8, ptr %4, i64 %5
   ret ptr %6
 }
@@ -157,10 +180,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr nusw %"struct.std::pair.3087422", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"struct.std::pair.3280201", ptr %0, i64 %3
   %5 = and i64 %1, -32
   %6 = getelementptr i8, ptr %4, i64 %5
   ret ptr %6

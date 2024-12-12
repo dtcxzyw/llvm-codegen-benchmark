@@ -1,9 +1,8 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; abc/optimized/giaSupps.c.ll
 ; abc/optimized/rsbDec6.c.ll
 ; linux/optimized/intel_lrc.ll
-; miniaudio/optimized/unity.c.ll
 ; openjdk/optimized/countbitsnode.ll
 ; spike/optimized/spike.ll
 ; Function Attrs: nounwind
@@ -58,6 +57,18 @@ entry:
 define i32 @func0000000000000003(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
+  %3 = select i1 %2, i32 32, i32 0
+  %4 = or disjoint i32 %3, 16
+  %5 = select i1 %0, i32 %4, i32 %3
+  ret i32 %5
+}
+
+; 1 occurrences:
+; miniaudio/optimized/unity.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000029(i1 %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ult i64 %1, 4294967296
   %3 = select i1 %2, i32 32, i32 0
   %4 = or disjoint i32 %3, 16
   %5 = select i1 %0, i32 %4, i32 %3

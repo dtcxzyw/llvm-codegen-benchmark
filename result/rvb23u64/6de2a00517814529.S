@@ -35,6 +35,18 @@ func000000000000001f:                   # @func000000000000001f
 	sh2add	a0, a0, a0
 	slli	a0, a0, 3
 	ret
+func0000000000000010:                   # @func0000000000000010
+	sext.w	a1, a1
+	add	a0, a0, a1
+	sh2add	a0, a0, a0
+	slli	a0, a0, 1
+	ret
+func0000000000000012:                   # @func0000000000000012
+	sext.w	a1, a1
+	add	a0, a0, a1
+	sh2add	a0, a0, a0
+	slli	a0, a0, 1
+	ret
 func0000000000000000:                   # @func0000000000000000
 	add.uw	a0, a1, a0
 	lui	a1, 13
@@ -45,11 +57,11 @@ func000000000000000f:                   # @func000000000000000f
 	add.uw	a0, a1, a0
 	sh1add	a0, a0, a0
 	ret
-.LCPI9_0:
+.LCPI11_0:
 	.quad	-7046029254386353067            # 0x9e3779b97f4a7c55
 func0000000000000018:                   # @func0000000000000018
-	lui	a2, %hi(.LCPI9_0)
-	ld	a2, %lo(.LCPI9_0)(a2)
+	lui	a2, %hi(.LCPI11_0)
+	ld	a2, %lo(.LCPI11_0)(a2)
 	sext.w	a1, a1
 	add	a0, a0, a1
 	mul	a0, a0, a2
@@ -71,15 +83,6 @@ func0000000000000005:                   # @func0000000000000005
 	sh3add	a1, a0, a0
 	sh2add	a0, a1, a0
 	ret
-.LCPI13_0:
-	.quad	7046029254386353131             # 0x61c8864680b583eb
-func0000000000000010:                   # @func0000000000000010
-	lui	a2, %hi(.LCPI13_0)
-	ld	a2, %lo(.LCPI13_0)(a2)
-	sext.w	a1, a1
-	add	a0, a0, a1
-	mul	a0, a0, a2
-	ret
 func0000000000000011:                   # @func0000000000000011
 	sext.w	a1, a1
 	add	a0, a0, a1
@@ -92,10 +95,4 @@ func000000000000000d:                   # @func000000000000000d
 	lui	a1, 1048574
 	addiw	a1, a1, 819
 	mul	a0, a0, a1
-	ret
-func0000000000000012:                   # @func0000000000000012
-	sext.w	a1, a1
-	add	a0, a0, a1
-	sh2add	a0, a0, a0
-	slli	a0, a0, 1
 	ret

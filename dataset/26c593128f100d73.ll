@@ -24,12 +24,11 @@ entry:
   ret i32 %4
 }
 
-; 16 occurrences:
+; 14 occurrences:
 ; opencv/optimized/softfloat.cpp.ll
 ; qemu/optimized/source_s_mulAddF16.c.ll
 ; qemu/optimized/source_s_roundPackToF16.c.ll
 ; qemu/optimized/source_s_roundPackToF32.c.ll
-; qemu/optimized/source_s_shiftRightJam32.c.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; softposit-rs/optimized/3x9ny7yhpewmwf1y.ll
 ; spike/optimized/s_addMagsF32.ll
@@ -37,7 +36,6 @@ entry:
 ; spike/optimized/s_roundPackToBF16.ll
 ; spike/optimized/s_roundPackToF16.ll
 ; spike/optimized/s_roundPackToF32.ll
-; spike/optimized/s_shiftRightJam32.ll
 ; spike/optimized/s_subMagsF32.ll
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll

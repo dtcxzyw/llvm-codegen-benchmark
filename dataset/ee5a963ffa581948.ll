@@ -1,5 +1,5 @@
 
-; 55 occurrences:
+; 56 occurrences:
 ; abc/optimized/cbaBlast.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; csmith/optimized/StatementFor.cpp.ll
@@ -45,7 +45,6 @@
 ; openmpi/optimized/nbc_ibarrier.ll
 ; openmpi/optimized/nbc_ibcast.ll
 ; openmpi/optimized/ompi_datatype_create_darray.ll
-; openmpi/optimized/ompi_mpi_preconnect.ll
 ; openspiel/optimized/tiny_bridge.cc.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
@@ -55,6 +54,8 @@
 ; wireshark/optimized/packet_diagram.cpp.ll
 ; xgboost/optimized/allgather.cc.ll
 ; xgboost/optimized/allreduce.cc.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -63,8 +64,7 @@ entry:
   ret i32 %4
 }
 
-; 64 occurrences:
-; abc/optimized/abcLog.c.ll
+; 62 occurrences:
 ; abc/optimized/bmcCexTools.c.ll
 ; abc/optimized/cmdPlugin.c.ll
 ; abc/optimized/giaUtil.c.ll
@@ -122,7 +122,6 @@ entry:
 ; openmpi/optimized/coll_base_allreduce.ll
 ; openmpi/optimized/coll_base_bcast.ll
 ; openmpi/optimized/coll_base_reduce_scatter.ll
-; openmpi/optimized/group_strided.ll
 ; openmpi/optimized/libprrte_la-routed_radix.ll
 ; openspiel/optimized/dou_dizhu_utils.cc.ll
 ; wireshark/optimized/packet-olsr.c.ll

@@ -1,16 +1,16 @@
 
-%"struct.OT::IntType.167.2617260" = type { %struct.BEInt.168.2617261 }
-%struct.BEInt.168.2617261 = type { i8 }
-%"union.absl::debian2::container_internal::map_slot_type.2748286" = type { %"struct.std::pair.2748287" }
-%"struct.std::pair.2748287" = type { i32, %"class.std::__cxx11::basic_string.2748263" }
-%"class.std::__cxx11::basic_string.2748263" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2748264", i64, %union.anon.2748265 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2748264" = type { ptr }
-%union.anon.2748265 = type { i64, [8 x i8] }
-%"class.std::__cxx11::basic_string.2865835" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2865836", i64, %union.anon.2865837 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2865836" = type { ptr }
-%union.anon.2865837 = type { i64, [8 x i8] }
+%"struct.OT::IntType.167.2730712" = type { %struct.BEInt.168.2730713 }
+%struct.BEInt.168.2730713 = type { i8 }
+%"union.absl::debian2::container_internal::map_slot_type.2860613" = type { %"struct.std::pair.2860614" }
+%"struct.std::pair.2860614" = type { i32, %"class.std::__cxx11::basic_string.2860583" }
+%"class.std::__cxx11::basic_string.2860583" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2860584", i64, %union.anon.2860585 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2860584" = type { ptr }
+%union.anon.2860585 = type { i64, [8 x i8] }
+%"class.std::__cxx11::basic_string.3059494" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3059495", i64, %union.anon.3059496 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3059495" = type { ptr }
+%union.anon.3059496 = type { i64, [8 x i8] }
 
-; 241 occurrences:
+; 242 occurrences:
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
 ; fmt/optimized/format-test.cc.ll
@@ -176,6 +176,7 @@
 ; oiio/optimized/zfile.cpp.ll
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
+; openjdk/optimized/imageFile.ll
 ; rust-analyzer-rs/optimized/3v26vzwqvuu0pyc9.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
@@ -253,7 +254,7 @@
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i8 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i64
   %3 = getelementptr i8, ptr %0, i64 %2
@@ -261,15 +262,12 @@ entry:
   ret ptr %4
 }
 
-; 14 occurrences:
+; 11 occurrences:
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; freetype/optimized/truetype.c.ll
 ; linux/optimized/exthdrs.ll
 ; linux/optimized/ip_options.ll
 ; linux/optimized/maple_tree.ll
-; protobuf/optimized/descriptor.cc.ll
-; protobuf/optimized/extension_set.cc.ll
-; protobuf/optimized/map.cc.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; qemu/optimized/hw_pci_msi.c.ll
 ; qemu/optimized/hw_pci_pci.c.ll
@@ -305,11 +303,11 @@ entry:
 ; protobuf/optimized/message_builder.cc.ll
 ; protobuf/optimized/message_builder_lite.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i8 %1) #0 {
+define ptr @func0000000000000013(ptr %0, i8 %1) #0 {
 entry:
   %2 = add nuw i8 %1, 1
   %3 = zext i8 %2 to i64
-  %4 = getelementptr nusw %"struct.OT::IntType.167.2617260", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"struct.OT::IntType.167.2730712", ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -343,11 +341,11 @@ entry:
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i8 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -1
   %3 = zext i8 %2 to i64
-  %4 = getelementptr nusw %"union.absl::debian2::container_internal::map_slot_type.2748286", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"union.absl::debian2::container_internal::map_slot_type.2860613", ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -365,21 +363,22 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/ioReadDsd.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i8 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -97
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr nusw ptr, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw ptr, ptr %0, i64 %3
   ret ptr %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; libquic/optimized/string_util.cc.ll
+; lvgl/optimized/lv_style.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i8 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i64
-  %3 = getelementptr %"class.std::__cxx11::basic_string.2865835", ptr %0, i64 %2
+  %3 = getelementptr %"class.std::__cxx11::basic_string.3059494", ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -1568
   ret ptr %4
 }

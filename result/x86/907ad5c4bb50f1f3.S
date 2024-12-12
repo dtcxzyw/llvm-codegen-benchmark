@@ -6,7 +6,7 @@ func000000000000000b:                   # @func000000000000000b
 	andl	$1, %edi
 	addq	%rdi, %rax
 	retq
-func0000000000000023:                   # @func0000000000000023
+func00000000000000a3:                   # @func00000000000000a3
 	movl	%edi, %eax
 	andl	$1, %eax
 	cmpb	$27, %sil

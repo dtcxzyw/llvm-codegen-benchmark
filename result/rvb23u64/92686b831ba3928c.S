@@ -29,13 +29,13 @@ func000000000000000c:                   # @func000000000000000c
 	fle.d	a1, fa1, fa0
 	and	a0, a0, a1
 	ret
-func000000000000000a:                   # @func000000000000000a
-	fle.d	a1, fa0, fa1
-	and	a0, a0, a1
-	ret
 func000000000000000d:                   # @func000000000000000d
 	flt.d	a1, fa0, fa1
 	xori	a1, a1, 1
+	and	a0, a0, a1
+	ret
+func000000000000000a:                   # @func000000000000000a
+	fle.d	a1, fa0, fa1
 	and	a0, a0, a1
 	ret
 func000000000000000b:                   # @func000000000000000b

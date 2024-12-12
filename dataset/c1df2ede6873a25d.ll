@@ -10,11 +10,11 @@
 ; abc/optimized/sclLibScl.c.ll
 ; openjdk/optimized/sharedRuntime_x86_64.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000046(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
   %4 = select i1 %1, i32 1, i32 %3
-  %5 = icmp sgt i32 %4, %0
+  %5 = icmp slt i32 %0, %4
   ret i1 %5
 }
 
@@ -28,11 +28,11 @@ entry:
 ; abc/optimized/ifTruth.c.ll
 ; abc/optimized/sfmDec.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000004c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
   %4 = select i1 %1, i32 1, i32 %3
-  %5 = icmp ne i32 %4, %0
+  %5 = icmp ne i32 %0, %4
   ret i1 %5
 }
 
@@ -43,7 +43,7 @@ define i1 @func0000000000000006(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 4, %2
   %4 = select i1 %1, i32 4, i32 %3
-  %5 = icmp sgt i32 %4, %0
+  %5 = icmp slt i32 %0, %4
   ret i1 %5
 }
 
@@ -54,11 +54,11 @@ entry:
 ; llvm/optimized/DylibVerifier.cpp.ll
 ; llvm/optimized/InterfaceFile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
   %4 = select i1 %1, i32 1, i32 %3
-  %5 = icmp eq i32 %4, %0
+  %5 = icmp eq i32 %0, %4
   ret i1 %5
 }
 
@@ -66,29 +66,29 @@ entry:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; linux/optimized/resize.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000044(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
   %4 = select i1 %1, i32 1, i32 %3
-  %5 = icmp ugt i32 %4, %0
+  %5 = icmp ult i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000048(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
   %4 = select i1 %1, i32 0, i32 %3
-  %5 = icmp ult i32 %4, %0
+  %5 = icmp ugt i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; linux/optimized/aspm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000068(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 64, %2
   %4 = icmp ult i32 %3, %0
@@ -105,7 +105,7 @@ define i1 @func0000000000000001(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 3, %2
   %4 = select i1 %1, i32 0, i32 %3
-  %5 = icmp eq i32 %4, %0
+  %5 = icmp eq i32 %0, %4
   ret i1 %5
 }
 
@@ -116,18 +116,18 @@ define i1 @func000000000000000c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 3, %2
   %4 = select i1 %1, i32 0, i32 %3
-  %5 = icmp ne i32 %4, %0
+  %5 = icmp ne i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 1, %2
   %4 = select i1 %1, i32 0, i32 %3
-  %5 = icmp eq i32 %4, %0
+  %5 = icmp eq i32 %0, %4
   ret i1 %5
 }
 

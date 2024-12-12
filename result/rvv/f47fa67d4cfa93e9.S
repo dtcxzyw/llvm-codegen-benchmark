@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	164703072086692425              # 0x249249249249249
-func0000000000000075:                   # @func0000000000000075
+func00000000000000e5:                   # @func00000000000000e5
 	lui	a0, 748983
 	addiw	a0, a0, -585
 	slli	a1, a0, 33
@@ -14,7 +14,7 @@ func0000000000000075:                   # @func0000000000000075
 	vrsub.vx	v8, v8, a1
 	vmsleu.vv	v0, v10, v8
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
 	lui	a0, 838861
@@ -26,7 +26,7 @@ func0000000000000011:                   # @func0000000000000011
 	vrsub.vi	v8, v8, 0
 	vmseq.vv	v0, v10, v8
 	ret
-func0000000000000074:                   # @func0000000000000074
+func00000000000000e4:                   # @func00000000000000e4
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
 	lui	a0, 699051
@@ -38,7 +38,7 @@ func0000000000000074:                   # @func0000000000000074
 	vrsub.vi	v8, v8, 8
 	vmsltu.vv	v0, v10, v8
 	ret
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
 	lui	a0, 699051
@@ -50,7 +50,7 @@ func0000000000000031:                   # @func0000000000000031
 	vrsub.vi	v8, v8, 0
 	vmseq.vv	v0, v10, v8
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v10, v12
 	lui	a0, 699051

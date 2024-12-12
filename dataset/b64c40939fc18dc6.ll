@@ -1,5 +1,7 @@
 
-; 8 occurrences:
+; 10 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; icu/optimized/astro.ll
 ; mitsuba3/optimized/rgb2spec_opt.cpp.ll
 ; opencv/optimized/distance.cpp.ll

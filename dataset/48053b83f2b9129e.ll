@@ -53,7 +53,7 @@ entry:
 define double @func000000000000000d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %1, %2
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   %5 = sitofp i32 %4 to double
   ret double %5
 }

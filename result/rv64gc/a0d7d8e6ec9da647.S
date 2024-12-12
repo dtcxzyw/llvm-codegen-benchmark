@@ -6,6 +6,10 @@ func0000000000000001:                   # @func0000000000000001
 	slli	a0, a0, 3
 	addiw	a0, a0, 156
 	ret
+func0000000000000039:                   # @func0000000000000039
+	slli	a0, a0, 2
+	addiw	a0, a0, 4
+	ret
 func000000000000003f:                   # @func000000000000003f
 	slli	a0, a0, 3
 	addiw	a0, a0, 12

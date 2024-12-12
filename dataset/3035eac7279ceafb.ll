@@ -1,5 +1,5 @@
 
-; 205 occurrences:
+; 207 occurrences:
 ; abseil-cpp/optimized/nonsecure_base_test.cc.ll
 ; clamav/optimized/filestr.cpp.ll
 ; cpython/optimized/dtoa.ll
@@ -203,8 +203,10 @@
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
+; turborepo-rs/optimized/6jkgkc1600lrz2u0oa3gubskw.ll
 ; wireshark/optimized/ftype-ipv4.c.ll
 ; wireshark/optimized/packet-iso15765.c.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:

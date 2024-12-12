@@ -1,6 +1,5 @@
 
-; 6 occurrences:
-; icu/optimized/tzfmt.ll
+; 5 occurrences:
 ; linux/optimized/mlme.ll
 ; qemu/optimized/hw_ide_ahci.c.ll
 ; qemu/optimized/util_aio-posix.c.ll

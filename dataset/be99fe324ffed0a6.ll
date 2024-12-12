@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 25 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/extraUtilSupp.c.ll
 ; abc/optimized/giaCut.c.ll
@@ -11,8 +11,6 @@
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; hyperscan/optimized/match.c.ll
 ; linux/optimized/intel_cx0_phy.ll
-; linux/optimized/intel_engine_user.ll
-; linux/optimized/intel_rc6.ll
 ; linux/optimized/mempolicy.ll
 ; linux/optimized/pci.ll
 ; linux/optimized/power_supply_sysfs.ll

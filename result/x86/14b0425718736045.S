@@ -13,9 +13,9 @@ func0000000000000000:                   # @func0000000000000000
 	cmoveq	%rcx, %rax
 	retq
 func0000000000000002:                   # @func0000000000000002
-	leaq	-1(%rsi), %rcx
-	shrq	$12, %rcx
+	leaq	1024(%rsi), %rcx
+	shrq	$2, %rcx
 	testb	$1, %dil
-	movabsq	$2251799813685247, %rax         # imm = 0x7FFFFFFFFFFFF
+	movl	$512, %eax                      # imm = 0x200
 	cmoveq	%rcx, %rax
 	retq

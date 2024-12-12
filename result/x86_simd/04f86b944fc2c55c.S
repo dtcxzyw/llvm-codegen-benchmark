@@ -20,7 +20,7 @@ func0000000000000018:                   # @func0000000000000018
 	retq
 .LCPI2_0:
 	.zero	16,1
-func0000000000000078:                   # @func0000000000000078
+func00000000000000d8:                   # @func00000000000000d8
 	vpor	%ymm1, %ymm0, %ymm0
 	vptestmq	%ymm0, %ymm0, %k1
 	vmovdqu8	.LCPI2_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
@@ -30,7 +30,7 @@ func0000000000000078:                   # @func0000000000000078
 	.quad	4294967295                      # 0xffffffff
 .LCPI3_1:
 	.zero	16,1
-func0000000000000030:                   # @func0000000000000030
+func0000000000000050:                   # @func0000000000000050
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpcmpnleuq	.LCPI3_0(%rip){1to4}, %ymm0, %k1
 	vmovdqu8	.LCPI3_1(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
@@ -40,7 +40,7 @@ func0000000000000030:                   # @func0000000000000030
 	.quad	4294967295                      # 0xffffffff
 .LCPI4_1:
 	.zero	16,1
-func0000000000000070:                   # @func0000000000000070
+func00000000000000f0:                   # @func00000000000000f0
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpcmpnleuq	.LCPI4_0(%rip){1to4}, %ymm0, %k1
 	vmovdqu8	.LCPI4_1(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]

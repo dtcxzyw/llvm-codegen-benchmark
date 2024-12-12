@@ -11,10 +11,3 @@ func0000000000000002:                   # @func0000000000000002
 	movabsq	$-281474976710656, %rax         # imm = 0xFFFF000000000000
 	cmoveq	%rsi, %rax
 	retq
-func0000000000000007:                   # @func0000000000000007
-	movzwl	%si, %ecx
-	shlq	$32, %rcx
-	xorl	%eax, %eax
-	testb	$1, %dil
-	cmoveq	%rcx, %rax
-	retq

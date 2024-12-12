@@ -1,5 +1,7 @@
 
-; 34 occurrences:
+; 35 occurrences:
+; boost/optimized/any_params_iter.ll
+; boost/optimized/shell.ll
 ; darktable/optimized/Camera.cpp.ll
 ; darktable/optimized/ChecksumFile.cpp.ll
 ; darktable/optimized/RawDecoder.cpp.ll
@@ -21,7 +23,6 @@
 ; nix/optimized/archive.ll
 ; nix/optimized/fromTOML.ll
 ; nix/optimized/local-derivation-goal.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/util.ll
 ; node/optimized/libnode.node_blob.ll
 ; openjdk/optimized/socketTransport.ll
@@ -35,7 +36,7 @@
 ; yalantinglibs/optimized/chat_room.cpp.ll
 ; zxing/optimized/GTIN.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000042(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp eq i64 %3, -1
@@ -47,7 +48,7 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000030(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000050(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp ugt i64 %3, 64
@@ -59,7 +60,7 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/isocline.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000222(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000842(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = icmp eq i64 %3, 2
@@ -71,7 +72,7 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/isocline.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002c2(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000982(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp sle i64 %1, %2
   %4 = icmp eq ptr %0, null
@@ -82,7 +83,7 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/isocline.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c2(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000182(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp slt i64 %3, 1
@@ -94,7 +95,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/Darwin.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000048(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp ult i64 %3, 33
@@ -106,7 +107,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ELFObjectWriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000308(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp ult i64 %3, 2
@@ -118,7 +119,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/colvarbias_abf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000118(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000218(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp ugt i64 %3, 8
@@ -130,7 +131,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/build_policy.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000142(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000282(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp sgt i64 %3, -1
@@ -144,7 +145,7 @@ entry:
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000118(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp ult i64 %3, 8
@@ -157,7 +158,7 @@ entry:
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000058(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %1, %2
   %4 = icmp ne ptr %0, null
@@ -169,7 +170,7 @@ entry:
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000302(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %1, %2
   %4 = icmp ne ptr %0, null

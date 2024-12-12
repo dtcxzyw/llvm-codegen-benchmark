@@ -1,7 +1,8 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; abseil-cpp/optimized/ascii_test.cc.ll
 ; abseil-cpp/optimized/strip_test.cc.ll
+; boost/optimized/area.ll
 ; openspiel/optimized/nfg_writer.cc.ll
 ; php/optimized/zend_jit.ll
 ; protobuf/optimized/descriptor.cc.ll

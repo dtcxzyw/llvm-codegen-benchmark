@@ -1,7 +1,6 @@
 
-; 2 occurrences:
+; 1 occurrences:
 ; mitsuba3/optimized/x86assembler.cpp.ll
-; slurm/optimized/ebpf.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000018f(i32 %0, i1 %1, i32 %2) #0 {
 entry:
@@ -24,7 +23,7 @@ entry:
   %3 = icmp eq i32 %2, 166
   %4 = zext i1 %3 to i32
   %5 = select i1 %1, i32 4, i32 0
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   %7 = add nuw nsw i32 %6, %4
   ret i32 %7
 }
@@ -114,7 +113,7 @@ entry:
   %3 = icmp sgt i32 %2, 255
   %4 = zext i1 %3 to i32
   %5 = select i1 %1, i32 2, i32 1
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   %7 = add i32 %6, %4
   ret i32 %7
 }

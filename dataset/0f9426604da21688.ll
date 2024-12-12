@@ -1,5 +1,5 @@
 
-; 41 occurrences:
+; 40 occurrences:
 ; abc/optimized/abcBlifMv.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/extraUtilFile.c.ll
@@ -22,7 +22,6 @@
 ; libwebp/optimized/vp8l_enc.c.ll
 ; linux/optimized/82571.ll
 ; linux/optimized/e1000_hw.ll
-; linux/optimized/he.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/intel_overlay.ll
 ; linux/optimized/intel_sseu.ll
@@ -50,13 +49,12 @@ entry:
   ret i32 %4
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; abc/optimized/giaIf.c.ll
 ; abc/optimized/giaNf.c.ll
 ; abc/optimized/saigSynch.c.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; linux/optimized/amd_nb.ll
-; linux/optimized/hdac_regmap.ll
 ; linux/optimized/intel_bios.ll
 ; linux/optimized/vht.ll
 ; llvm/optimized/AutoUpgrade.cpp.ll

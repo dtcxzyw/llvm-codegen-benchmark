@@ -8,11 +8,6 @@ func0000000000000006:                   # @func0000000000000006
 	add	a0, a0, a1
 	addi	a0, a0, 1
 	ret
-func0000000000000014:                   # @func0000000000000014
-	sub	a1, a1, a2
-	add	a0, a0, a1
-	addi	a0, a0, -8
-	ret
 func0000000000000002:                   # @func0000000000000002
 	sub	a1, a1, a2
 	add	a0, a0, a1
@@ -33,7 +28,7 @@ func0000000000000020:                   # @func0000000000000020
 	add	a0, a0, a1
 	addi	a0, a0, 24
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000017:                   # @func0000000000000017
 	sub	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 16
@@ -43,12 +38,17 @@ func000000000000000a:                   # @func000000000000000a
 	add	a0, a0, a1
 	addi	a0, a0, 1
 	ret
+func0000000000000007:                   # @func0000000000000007
+	sub	a1, a1, a2
+	add	a0, a0, a1
+	addi	a0, a0, -4
+	ret
 func0000000000000008:                   # @func0000000000000008
 	sub	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 1
 	ret
-func000000000000003e:                   # @func000000000000003e
+func000000000000003f:                   # @func000000000000003f
 	sub	a1, a1, a2
 	sh1add	a1, a1, a1
 	sh3add	a0, a1, a0
@@ -61,10 +61,26 @@ func0000000000000036:                   # @func0000000000000036
 	ret
 func0000000000000004:                   # @func0000000000000004
 	not	a2, a2
-	sh3add	a0, a2, a0
 	sh3add	a0, a1, a0
+	sh3add	a0, a2, a0
+	ret
+func0000000000000014:                   # @func0000000000000014
+	sub	a1, a1, a2
+	sh3add	a0, a1, a0
+	addi	a0, a0, 8
+	ret
+func0000000000000003:                   # @func0000000000000003
+	sub	a1, a1, a2
+	slli	a1, a1, 4
+	add	a0, a0, a1
+	addi	a0, a0, 32
 	ret
 func0000000000000010:                   # @func0000000000000010
+	sub	a1, a1, a2
+	sh3add	a0, a1, a0
+	addi	a0, a0, 8
+	ret
+func0000000000000016:                   # @func0000000000000016
 	sub	a1, a1, a2
 	sh3add	a0, a1, a0
 	addi	a0, a0, 8
@@ -74,10 +90,21 @@ func0000000000000022:                   # @func0000000000000022
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func000000000000000e:                   # @func000000000000000e
+func000000000000000b:                   # @func000000000000000b
+	sub	a1, a1, a2
+	add	a0, a0, a1
+	addi	a0, a0, 1
+	ret
+func000000000000000f:                   # @func000000000000000f
 	sub	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, 11
+	ret
+func000000000000003e:                   # @func000000000000003e
+	sub	a1, a1, a2
+	slli	a1, a1, 4
+	add	a0, a0, a1
+	addi	a0, a0, 32
 	ret
 func0000000000000034:                   # @func0000000000000034
 	sub	a1, a1, a2

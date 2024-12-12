@@ -1,18 +1,17 @@
 
-; 134 occurrences:
+; 133 occurrences:
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/builder_dict.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/type.cc.ll
 ; arrow/optimized/vector_hash.cc.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/CacheLocality.cpp.ll
 ; folly/optimized/DistributedMutex.cpp.ll
 ; folly/optimized/EDFThreadPoolExecutor.cpp.ll
 ; folly/optimized/EventBase.cpp.ll
-; folly/optimized/F14Table.cpp.ll
-; folly/optimized/Futex.cpp.ll
 ; folly/optimized/Future.cpp.ll
 ; folly/optimized/GlobalExecutor.cpp.ll
 ; folly/optimized/GlobalShutdownSocketSet.cpp.ll
@@ -138,7 +137,7 @@
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
-  %4 = xor i64 %3, %0
+  %4 = xor i64 %0, %3
   %5 = mul i64 %4, 1609587929392839161
   %6 = lshr i64 %5, 32
   %7 = xor i64 %6, %5
@@ -227,7 +226,7 @@ entry:
 define i64 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
-  %4 = xor i64 %3, %0
+  %4 = xor i64 %0, %3
   %5 = mul nsw i64 %4, 265
   %6 = lshr i64 %5, 14
   %7 = xor i64 %6, %5
@@ -241,7 +240,7 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
-  %4 = xor i64 %3, %0
+  %4 = xor i64 %0, %3
   %5 = mul i64 %4, -2960836687051489901
   %6 = lshr i64 %5, 32
   %7 = xor i64 %6, %5

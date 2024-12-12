@@ -30,14 +30,14 @@ entry:
 
 ; 2 occurrences:
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
-; qemu/optimized/util_buffer.c.ll
+; zed-rs/optimized/e7lqw1ynol01cwrgb8ri1wedr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sub i64 %1, %2
-  %4 = lshr i64 %0, 7
+  %3 = lshr i64 %2, 21
+  %4 = sub i64 %0, %1
   %5 = add i64 %4, %3
-  %6 = add i64 %5, -1
+  %6 = add i64 %5, 1048576
   ret i64 %6
 }
 

@@ -1,10 +1,3 @@
-func0000000000000003:                   # @func0000000000000003
-	shll	$16, %edx
-	testb	$1, %dil
-	movl	$201326592, %eax                # imm = 0xC000000
-	cmovel	%esi, %eax
-	addl	%edx, %eax
-	retq
 func0000000000000005:                   # @func0000000000000005
 	shll	$8, %edx
 	testb	$1, %dil

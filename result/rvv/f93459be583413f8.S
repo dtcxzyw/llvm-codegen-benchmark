@@ -1,10 +1,10 @@
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000014a:                   # @func000000000000014a
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vfcvt.rtz.x.f.v	v10, v10
 	vor.vv	v8, v8, v10
 	vmsgt.vi	v0, v8, -1
 	ret
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000141:                   # @func0000000000000141
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vfcvt.rtz.x.f.v	v10, v10
 	vmsgt.vi	v12, v10, -1

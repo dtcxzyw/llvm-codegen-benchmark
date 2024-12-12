@@ -68,17 +68,17 @@ func000000000000001d:                   # @func000000000000001d
 	add	a0, a0, a1
 	addi	a0, a0, 4
 	ret
-func0000000000000012:                   # @func0000000000000012
-	sext.w	a1, a1
-	add	a0, a0, a1
-	addi	a0, a0, -1
-	ret
 func000000000000001a:                   # @func000000000000001a
 	sext.w	a1, a1
 	add	a0, a0, a1
 	li	a1, -1
 	srli	a1, a1, 32
 	add	a0, a0, a1
+	ret
+func0000000000000012:                   # @func0000000000000012
+	sext.w	a1, a1
+	add	a0, a0, a1
+	addi	a0, a0, -1
 	ret
 func0000000000000006:                   # @func0000000000000006
 	add.uw	a0, a1, a0

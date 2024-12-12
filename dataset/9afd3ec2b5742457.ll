@@ -1,6 +1,7 @@
 
-; 76 occurrences:
+; 77 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
+; boost/optimized/src.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -80,7 +81,7 @@
 define i128 @func0000000000000052(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = mul nuw i128 %3, %1
+  %4 = mul nuw i128 %1, %3
   %5 = lshr i128 %4, 64
   %6 = mul nuw i128 %0, %1
   %7 = add nuw i128 %5, %6
@@ -163,7 +164,7 @@ entry:
 define i128 @func000000000000004a(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = mul nuw i128 %3, %1
+  %4 = mul nuw i128 %1, %3
   %5 = lshr i128 %4, 64
   %6 = mul nuw i128 %0, %1
   %7 = add nuw i128 %6, %5
@@ -179,7 +180,7 @@ entry:
 define i128 @func000000000000007b(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = mul nuw nsw i128 %3, %1
+  %4 = mul nuw nsw i128 %1, %3
   %5 = lshr i128 %4, 64
   %6 = mul nuw nsw i128 %0, %1
   %7 = add nuw nsw i128 %5, %6

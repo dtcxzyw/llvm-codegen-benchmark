@@ -132,7 +132,7 @@ entry:
 ; spike/optimized/vzext_vf4.ll
 ; spike/optimized/vzext_vf8.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0) #0 {
+define i1 @func0000000000000021(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 7
   %2 = and i64 %1, 31
@@ -166,7 +166,7 @@ entry:
 ; 1 occurrences:
 ; coreutils-rs/optimized/tq1d77uuiq535i2.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0) #0 {
+define i1 @func000000000000002c(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 12
   %2 = and i64 %1, 4294967040

@@ -23,10 +23,20 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	%rdi, %rsi
 	setb	%al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	andl	$248, %esi
+	cmpq	%rdi, %rsi
+	setb	%al
+	retq
 func0000000000000001:                   # @func0000000000000001
 	andl	$61471, %esi                    # imm = 0xF01F
 	cmpq	%rdi, %rsi
 	sete	%al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	andl	$127, %esi
+	cmpq	%rdi, %rsi
+	seta	%al
 	retq
 func0000000000000009:                   # @func0000000000000009
 	movb	$62, %al
@@ -39,6 +49,21 @@ func0000000000000005:                   # @func0000000000000005
 	bzhiq	%rax, %rsi, %rax
 	cmpq	%rdi, %rax
 	setbe	%al
+	retq
+func0000000000000019:                   # @func0000000000000019
+	movl	%esi, %eax
+	cmpq	%rdi, %rax
+	setae	%al
+	retq
+func0000000000000015:                   # @func0000000000000015
+	movl	%esi, %eax
+	cmpq	%rdi, %rax
+	setbe	%al
+	retq
+func0000000000000011:                   # @func0000000000000011
+	movl	%esi, %eax
+	cmpq	%rdi, %rax
+	sete	%al
 	retq
 func000000000000000b:                   # @func000000000000000b
 	andl	$67108863, %esi                 # imm = 0x3FFFFFF

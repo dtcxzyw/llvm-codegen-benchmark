@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 22 occurrences:
 ; gromacs/optimized/dgesdd.cpp.ll
 ; gromacs/optimized/dlasd8.cpp.ll
 ; gromacs/optimized/dlasda.cpp.ll
@@ -13,7 +13,6 @@
 ; openblas/optimized/dgeesx.c.ll
 ; openblas/optimized/dgegs.c.ll
 ; openblas/optimized/dgegv.c.ll
-; openblas/optimized/dgesdd.c.ll
 ; openblas/optimized/dgesvd.c.ll
 ; openblas/optimized/dgges.c.ll
 ; openblas/optimized/dgges3.c.ll
@@ -22,11 +21,7 @@
 ; openblas/optimized/dggev3.c.ll
 ; openblas/optimized/dggevx.c.ll
 ; openblas/optimized/dlasd8.c.ll
-; openblas/optimized/dsyevd.c.ll
-; openblas/optimized/dsyevr.c.ll
-; openblas/optimized/dsyevr_2stage.c.ll
 ; openblas/optimized/dsyevx.c.ll
-; openblas/optimized/dsyevx_2stage.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000016(ptr %0, i32 %1) #0 {
 entry:
@@ -34,18 +29,6 @@ entry:
   %2 = or disjoint i32 %reass.add, 1
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw float, ptr %0, i64 %3
-  ret ptr %4
-}
-
-; 1 occurrences:
-; linux/optimized/mpih-mul.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000010(ptr %0, i32 %1) #0 {
-entry:
-  %reass.add = shl i32 %1, 1
-  %2 = add i32 %reass.add, -1
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr i64, ptr %0, i64 %3
   ret ptr %4
 }
 

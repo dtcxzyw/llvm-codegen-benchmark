@@ -113,7 +113,7 @@
 define i128 @func000000000000000f(i128 %0, i128 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i128
-  %4 = mul nuw nsw i128 %3, %1
+  %4 = mul nuw nsw i128 %1, %3
   %5 = add nuw nsw i128 %4, %0
   ret i128 %5
 }
@@ -230,7 +230,7 @@ entry:
 define i128 @func000000000000000a(i128 %0, i128 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i128
-  %4 = mul nuw i128 %3, %1
+  %4 = mul nuw i128 %1, %3
   %5 = add nuw i128 %4, %0
   ret i128 %5
 }

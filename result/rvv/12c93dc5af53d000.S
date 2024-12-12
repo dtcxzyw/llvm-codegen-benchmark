@@ -50,8 +50,8 @@ func000000000000000c:                   # @func000000000000000c
 func0000000000000000:                   # @func0000000000000000
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vzext.vf2	v12, v10
-	lui	a0, 47
-	addi	a0, a0, -512
+	lui	a0, 1953
+	addi	a0, a0, 512
 	vmadd.vx	v12, a0, v8
 	vadd.vi	v8, v12, -1
 	ret

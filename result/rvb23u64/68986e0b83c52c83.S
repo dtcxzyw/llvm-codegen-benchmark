@@ -6,11 +6,11 @@ func0000000000000009:                   # @func0000000000000009
 	beqz	a0, .LBB0_2
 	fli.s	fa5, 1.0
 	fdiv.s	fa5, fa5, fa2
-	fmul.s	fa0, fa5, fa0
+	fmul.s	fa0, fa0, fa5
 	ret
 .LBB0_2:
 	fmv.w.x	fa5, zero
-	fmul.s	fa0, fa5, fa0
+	fmul.s	fa0, fa0, fa5
 	ret
 .LCPI1_0:
 	.word	0x322bcc77                      # float 9.99999993E-9
@@ -21,11 +21,11 @@ func000000000000000b:                   # @func000000000000000b
 	beqz	a0, .LBB1_2
 	fli.s	fa5, 2.0
 	fdiv.s	fa5, fa5, fa2
-	fmul.s	fa0, fa5, fa0
+	fmul.s	fa0, fa0, fa5
 	ret
 .LBB1_2:
 	fmv.w.x	fa5, zero
-	fmul.s	fa0, fa5, fa0
+	fmul.s	fa0, fa0, fa5
 	ret
 func0000000000000008:                   # @func0000000000000008
 	fmv.w.x	fa5, zero
@@ -34,7 +34,7 @@ func0000000000000008:                   # @func0000000000000008
 	fli.s	fa5, 1.0
 	fdiv.s	fa5, fa5, fa2
 .LBB2_2:                                # %entry
-	fmul.s	fa0, fa5, fa0
+	fmul.s	fa0, fa0, fa5
 	ret
 .LCPI3_0:
 	.word	0x322bcc77                      # float 9.99999993E-9
@@ -45,9 +45,9 @@ func0000000000000002:                   # @func0000000000000002
 	bnez	a0, .LBB3_2
 	fli.s	fa5, 1.0
 	fdiv.s	fa5, fa5, fa2
-	fmul.s	fa0, fa5, fa0
+	fmul.s	fa0, fa0, fa5
 	ret
 .LBB3_2:
 	fmv.w.x	fa5, zero
-	fmul.s	fa0, fa5, fa0
+	fmul.s	fa0, fa0, fa5
 	ret

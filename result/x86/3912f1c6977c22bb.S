@@ -16,12 +16,3 @@ func000000000000002b:                   # @func000000000000002b
 	cmovel	%edx, %eax
 	addl	%ecx, %eax
 	retq
-func0000000000000028:                   # @func0000000000000028
-	testl	%edx, %edx
-	movl	$-1, %ecx
-	cmovgl	%edx, %ecx
-	testb	$1, %dil
-	movl	$2, %eax
-	cmovel	%esi, %eax
-	addl	%ecx, %eax
-	retq

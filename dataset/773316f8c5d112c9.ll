@@ -1,9 +1,9 @@
 
-%"struct.std::pair.2643858" = type { ptr, i64 }
-%"struct.std::pair.3258423" = type { i32, i32 }
-%class.QCPGraphData.3260420 = type { double, double }
+%"struct.std::pair.2757165" = type { ptr, i64 }
+%"struct.std::pair.3449273" = type { i32, i32 }
+%class.QCPGraphData.3451166 = type { double, double }
 
-; 224 occurrences:
+; 226 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; arrow/optimized/api_scalar.cc.ll
 ; assimp/optimized/IFCUtil.cpp.ll
@@ -159,6 +159,8 @@
 ; ozz-animation/optimized/track_sampling_job.cc.ll
 ; proj/optimized/singleoperation.cpp.ll
 ; protobuf/optimized/context.cc.ll
+; quantlib/optimized/markovfunctional.ll
+; quantlib/optimized/nonstandardswap.ll
 ; re2/optimized/dfa.cc.ll
 ; re2/optimized/prog.cc.ll
 ; readerwriterqueue/optimized/bench.cpp.ll
@@ -229,18 +231,20 @@
 ; z3/optimized/theory_pb.cpp.ll
 ; z3/optimized/theory_wmaxsat.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000002b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 2
   %5 = add nsw i64 %4, -2
   %6 = lshr i64 %5, 1
-  %7 = getelementptr nusw i32, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i32, ptr %0, i64 %6
   ret ptr %7
 }
 
-; 145 occurrences:
+; 147 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/einstein.cpp.ll
 ; casadi/optimized/im_instantiator.cpp.ll
@@ -278,6 +282,7 @@ entry:
 ; llvm/optimized/InstrProfWriter.cpp.ll
 ; llvm/optimized/LegacyLegalizerInfo.cpp.ll
 ; llvm/optimized/MacroExpansionContext.cpp.ll
+; llvm/optimized/SplitModule.cpp.ll
 ; meshlab/optimized/action_searcher.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
@@ -287,7 +292,6 @@ entry:
 ; meshlab/optimized/eigen_mesh_conversions.cpp.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -386,28 +390,13 @@ entry:
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
 ; yosys/optimized/opt_clean.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000002f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 4
   %5 = add nsw i64 %4, -2
   %6 = lshr exact i64 %5, 1
-  %7 = getelementptr nusw %"struct.std::pair.2643858", ptr %0, i64 %6
-  ret ptr %7
-}
-
-; 3 occurrences:
-; quantlib/optimized/floatfloatswap.ll
-; quantlib/optimized/markovfunctional.ll
-; quantlib/optimized/nonstandardswap.ll
-; Function Attrs: nounwind
-define ptr @func000000000000002b(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sub i64 %1, %2
-  %4 = ashr exact i64 %3, 3
-  %5 = add nsw i64 %4, 63
-  %6 = lshr i64 %5, 6
-  %7 = getelementptr nusw nuw i64, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"struct.std::pair.2757165", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -421,7 +410,7 @@ entry:
   %4 = ashr exact i64 %3, 3
   %5 = add nsw i64 %4, -2
   %6 = lshr exact i64 %5, 1
-  %7 = getelementptr %"struct.std::pair.3258423", ptr %0, i64 %6
+  %7 = getelementptr %"struct.std::pair.3449273", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -434,7 +423,7 @@ entry:
   %4 = ashr exact i64 %3, 4
   %5 = add nsw i64 %4, -2
   %6 = lshr i64 %5, 1
-  %7 = getelementptr %class.QCPGraphData.3260420, ptr %0, i64 %6
+  %7 = getelementptr %class.QCPGraphData.3451166, ptr %0, i64 %6
   ret ptr %7
 }
 

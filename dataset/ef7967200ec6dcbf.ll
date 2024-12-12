@@ -1,6 +1,7 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; abc/optimized/absOldSim.c.ll
+; boost/optimized/unique_path.ll
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll

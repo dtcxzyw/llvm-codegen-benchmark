@@ -20,7 +20,7 @@ entry:
   ret i1 %4
 }
 
-; 64 occurrences:
+; 63 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/cordz_handle_test.cc.ll
 ; abseil-cpp/optimized/layout_test.cc.ll
@@ -40,7 +40,6 @@ entry:
 ; llvm/optimized/Archive.cpp.ll
 ; llvm/optimized/Delinearization.cpp.ll
 ; llvm/optimized/VPlan.cpp.ll
-; nix/optimized/nix-env.ll
 ; openusd/optimized/testUsdTimeValueAuthoring.cpp.ll
 ; recastnavigation/optimized/DetourNavMesh.cpp.ll
 ; sqlite/optimized/sqlite3.ll
@@ -90,7 +89,7 @@ define i1 @func0000000000000002(i1 %0, ptr %1) #0 {
 entry:
   %2 = freeze ptr %1
   %3 = icmp eq ptr %2, null
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 

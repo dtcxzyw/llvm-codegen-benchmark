@@ -1,11 +1,14 @@
 
-; 56 occurrences:
+; 57 occurrences:
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; abseil-cpp/optimized/numbers.cc.ll
 ; annoy/optimized/annoymodule.ll
 ; arrow/optimized/basic_decimal.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; c3c/optimized/bigint.c.ll
@@ -27,8 +30,6 @@
 ; lief/optimized/ecp_curves.c.ll
 ; lightgbm/optimized/parser.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
-; linux/optimized/generic_mpih-add1.ll
-; linux/optimized/generic_mpih-sub1.ll
 ; linux/optimized/mpih-div.ll
 ; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/ScaledNumber.cpp.ll
@@ -60,7 +61,7 @@
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %0, -1
-  %3 = icmp ult i64 %2, %1
+  %3 = icmp ugt i64 %1, %2
   %4 = zext i1 %3 to i64
   ret i64 %4
 }

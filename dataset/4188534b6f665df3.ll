@@ -1,10 +1,10 @@
 
-%"class.hermes::vm::GCHermesValueBase.461.2887600" = type { %"class.hermes::vm::HermesValue.2887472" }
-%"class.hermes::vm::HermesValue.2887472" = type { i64 }
-%union.acpi_object.3361155 = type { %struct.anon.8.3361156 }
-%struct.anon.8.3361156 = type { i32, i32, i64, i32 }
+%"class.hermes::vm::GCHermesValueBase.461.3082118" = type { %"class.hermes::vm::HermesValue.3081990" }
+%"class.hermes::vm::HermesValue.3081990" = type { i64 }
+%union.acpi_object.3547865 = type { %struct.anon.8.3547866 }
+%struct.anon.8.3547866 = type { i32, i32, i64, i32 }
 
-; 37 occurrences:
+; 36 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; assimp/optimized/ASEParser.cpp.ll
 ; assimp/optimized/SIBImporter.cpp.ll
@@ -13,7 +13,6 @@
 ; clamav/optimized/unsp.c.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_lut3d.c.ll
-; darktable/optimized/jpeg.c.ll
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
 ; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
 ; gromacs/optimized/lz77.c.ll
@@ -43,24 +42,24 @@
 ; raylib/optimized/rmodels.c.ll
 ; z3/optimized/realclosure.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 3
   %3 = add i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw float, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw float, ptr %0, i64 %4
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000013(ptr %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 3
   %3 = add nuw i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i32, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i32, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -76,7 +75,7 @@ entry:
   ret ptr %5
 }
 
-; 96 occurrences:
+; 93 occurrences:
 ; abc/optimized/giaShow.c.ll
 ; gromacs/optimized/kernel_ElecEwTwinCut_VdwLJCombGeom_F.cpp.ll
 ; gromacs/optimized/kernel_ElecEwTwinCut_VdwLJCombGeom_VF.cpp.ll
@@ -168,16 +167,13 @@ entry:
 ; gromacs/optimized/kernel_ElecRF_VdwLJ_F.cpp.ll
 ; gromacs/optimized/kernel_ElecRF_VdwLJ_VF.cpp.ll
 ; gromacs/optimized/kernel_ElecRF_VdwLJ_VgrpF.cpp.ll
-; miniaudio/optimized/unity.c.ll
 ; openblas/optimized/dgesvj.c.ll
 ; openblas/optimized/dlarrv.c.ll
-; openspiel/optimized/hearts_test.cc.ll
-; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000007f(ptr %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 6
-  %3 = sext i32 %2 to i64
+  %3 = zext nneg i32 %2 to i64
   %4 = getelementptr i32, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 12
   ret ptr %5
@@ -187,12 +183,12 @@ entry:
 ; git/optimized/block.ll
 ; recastnavigation/optimized/DetourNavMeshQuery.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 3
   %3 = add i32 %2, -3
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -200,39 +196,50 @@ entry:
 ; hermes/optimized/Runtime.cpp.ll
 ; hermes/optimized/require.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000052(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000053(ptr %0, i32 %1) #0 {
 entry:
   %2 = mul nuw i32 %1, 3
   %3 = add nuw i32 %2, 2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw %"class.hermes::vm::GCHermesValueBase.461.2887600", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.461.3082118", ptr %0, i64 %4
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; hermes/optimized/escape.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000006b(ptr %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 3
   %3 = add nsw i32 %2, -3
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 4 occurrences:
+; 1 occurrences:
+; imgui/optimized/imgui.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000068(ptr %0, i32 %1) #0 {
+entry:
+  %2 = mul nuw nsw i32 %1, 12
+  %3 = add nsw i32 %2, -6144
+  %4 = zext i32 %3 to i64
+  %5 = getelementptr i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 3 occurrences:
 ; linux/optimized/binfmt_elf.ll
 ; linux/optimized/compat_binfmt_elf.ll
 ; linux/optimized/drm_hdcp_helper.ll
-; linux/optimized/ds.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000007c(ptr %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 24
-  %3 = sext i32 %2 to i64
+  %3 = zext nneg i32 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 24
+  %5 = getelementptr i8, ptr %4, i64 16
   ret ptr %5
 }
 
@@ -245,7 +252,7 @@ entry:
   %2 = mul i32 %1, 3
   %3 = add i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr %union.acpi_object.3361155, ptr %0, i64 %4
+  %5 = getelementptr %union.acpi_object.3547865, ptr %0, i64 %4
   ret ptr %5
 }
 

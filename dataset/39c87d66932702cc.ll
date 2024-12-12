@@ -1,14 +1,12 @@
 
-; 11 occurrences:
-; harfbuzz/optimized/harfbuzz.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
+; 9 occurrences:
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/intel_sseu.ll
 ; linux/optimized/pcmcia_resource.ll
 ; luajit/optimized/lj_crecord.ll
 ; luajit/optimized/lj_crecord_dyn.ll
-; openjdk/optimized/hb-face-builder.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; openssl/optimized/libssl-lib-quic_txp.ll
 ; openssl/optimized/libssl-shlib-quic_txp.ll
 ; Function Attrs: nounwind
@@ -39,24 +37,22 @@ entry:
 ; linux/optimized/cgroup-v1.ll
 ; linux/optimized/cgroup.ll
 ; linux/optimized/drm_dp_helper.ll
-; linux/optimized/he.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/mprotect.ll
 ; linux/optimized/mqueue.ll
 ; linux/optimized/nfs4proc.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/pci.ll
-; linux/optimized/pkeys.ll
 ; linux/optimized/posix_acl.ll
 ; linux/optimized/vht.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Function.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/TargetLoweringBase.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; logos-rs/optimized/2d6rtvvpl2r8cwd3.ll
+; lvgl/optimized/lv_obj_style.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; nlohmann_json/optimized/unit-cbor.cpp.ll
@@ -98,6 +94,8 @@ entry:
 ; wasmtime-rs/optimized/5cg4tioh62hln65r.ll
 ; wireshark/optimized/crc16.c.ll
 ; wireshark/optimized/packet-smb.c.ll
+; zed-rs/optimized/a1jdntn5hiutu9tuect63bb1g.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i32 %0) #0 {
 entry:

@@ -4,6 +4,13 @@ func0000000000000010:                   # @func0000000000000010
 	setae	%al
 	leal	1(%rdi,%rax,4), %eax
 	retq
+func0000000000000050:                   # @func0000000000000050
+	xorl	%eax, %eax
+	cmpq	$1000000000, %rsi               # imm = 0x3B9ACA00
+	setae	%al
+	leal	(%rax,%rax,8), %eax
+	leal	1(%rdi,%rax), %eax
+	retq
 func0000000000000011:                   # @func0000000000000011
 	shrq	$52, %rsi
 	leal	-1022(%rdi), %ecx
@@ -11,7 +18,13 @@ func0000000000000011:                   # @func0000000000000011
 	testq	%rsi, %rsi
 	cmovnel	%ecx, %eax
 	retq
-func0000000000000023:                   # @func0000000000000023
+func0000000000000051:                   # @func0000000000000051
+	cmpq	$16777216, %rsi                 # imm = 0x1000000
+	movl	$127, %eax
+	sbbl	$0, %eax
+	addl	%edi, %eax
+	retq
+func0000000000000063:                   # @func0000000000000063
 	xorl	%eax, %eax
 	cmpq	$65536, %rsi                    # imm = 0x10000
 	setae	%al
@@ -65,6 +78,16 @@ func0000000000000028:                   # @func0000000000000028
 	cmpq	$65536, %rsi                    # imm = 0x10000
 	setge	%al
 	leal	7(%rdi,%rax,4), %eax
+	retq
+func0000000000000053:                   # @func0000000000000053
+	leal	13(%rdi), %eax
+	cmpq	$4096, %rsi                     # imm = 0x1000
+	cmovbl	%edi, %eax
+	retq
+func0000000000000023:                   # @func0000000000000023
+	cmpq	$32, %rsi
+	sbbl	$-1, %edi
+	leal	1(%rdi), %eax
 	retq
 func0000000000000030:                   # @func0000000000000030
 	xorl	%eax, %eax

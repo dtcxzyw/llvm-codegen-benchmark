@@ -18,7 +18,15 @@ func0000000000000014:                   # @func0000000000000014
 	cmpb	$-64, %dil
 	setge	%al
 	retq
+func0000000000000028:                   # @func0000000000000028
+	cmpb	$2, %dil
+	setb	%al
+	retq
 func000000000000000c:                   # @func000000000000000c
 	cmpb	$56, %dil
 	setl	%al
+	retq
+func0000000000000030:                   # @func0000000000000030
+	cmpb	$2, %dil
+	setae	%al
 	retq

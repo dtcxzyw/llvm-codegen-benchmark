@@ -45,7 +45,8 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/area.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; opencv/optimized/stardetector.cpp.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
@@ -135,18 +136,6 @@ define i32 @func0000000000000018(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = trunc nuw i64 %0 to i32
-  %4 = sub i32 %3, %2
-  ret i32 %4
-}
-
-; 2 occurrences:
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtrttf.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000020(i64 %0, i32 %1) #0 {
-entry:
-  %2 = shl nuw i32 %1, 1
-  %3 = trunc i64 %0 to i32
   %4 = sub i32 %3, %2
   ret i32 %4
 }

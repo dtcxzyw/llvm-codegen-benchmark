@@ -1,4 +1,16 @@
 
+; 2 occurrences:
+; meshlab/optimized/filter_screened_poisson.cpp.ll
+; openjdk/optimized/cmspack.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000007(i1 %0, i32 %1) #0 {
+entry:
+  %2 = shl nuw nsw i32 %1, 1
+  %3 = zext nneg i32 %2 to i64
+  %4 = select i1 %0, i64 %3, i64 0
+  ret i64 %4
+}
+
 ; 3 occurrences:
 ; hdf5/optimized/H5Odtype.c.ll
 ; hermes/optimized/BigIntSupport.cpp.ll

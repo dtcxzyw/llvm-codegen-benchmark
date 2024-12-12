@@ -23,18 +23,18 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, i128 %1) #0 {
+define i1 @func0000000000000041(i1 %0, i128 %1) #0 {
 entry:
   %2 = and i128 %1, 9426286221665580875776
   %3 = icmp eq i128 %2, 9426286221665580875776
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, i128 %1) #0 {
+define i1 @func000000000000004c(i1 %0, i128 %1) #0 {
 entry:
   %2 = and i128 %1, 73786976294838206464
   %3 = icmp ne i128 %2, 0
@@ -45,7 +45,7 @@ entry:
 ; 1 occurrences:
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i1 %0, i128 %1) #0 {
+define i1 @func000000000000006c(i1 %0, i128 %1) #0 {
 entry:
   %2 = and i128 %1, 73786976294838206464
   %3 = icmp ne i128 %2, 0

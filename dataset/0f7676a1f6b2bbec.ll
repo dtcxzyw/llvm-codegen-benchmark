@@ -42,15 +42,16 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/alloc_lib.ll
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add nuw i64 %1, 15
-  %3 = and i64 %2, -8
-  %4 = and i64 %0, -4
+  %2 = add nuw i64 %1, 23
+  %3 = and i64 %2, -16
+  %4 = and i64 %0, -8
   %5 = sub i64 %4, %3
   ret i64 %5
 }

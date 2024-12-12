@@ -1,15 +1,16 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; assimp/optimized/MD5Loader.cpp.ll
 ; assimp/optimized/SGSpatialSort.cpp.ll
 ; assimp/optimized/SpatialSort.cpp.ll
 ; assimp/optimized/TargetAnimation.cpp.ll
+; boost/optimized/cmdline.ll
 ; llvm/optimized/SveEmitter.cpp.ll
 ; openspiel/optimized/TimerGroup.cpp.ll
 ; rocksdb/optimized/compaction_picker_level.cc.ll
 ; rocksdb/optimized/compaction_picker_universal.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000128(i32 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 40
   %3 = add nsw i64 %2, -1
@@ -21,7 +22,7 @@ entry:
 ; 1 occurrences:
 ; arrow/optimized/key_hash_avx2.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i32 %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 16
   %3 = add nsw i64 %2, 1

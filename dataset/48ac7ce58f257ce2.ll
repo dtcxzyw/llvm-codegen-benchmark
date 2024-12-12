@@ -76,8 +76,9 @@ entry:
   ret i8 %4
 }
 
-; 13 occurrences:
+; 15 occurrences:
 ; c3c/optimized/sema_decls.c.ll
+; gromacs/optimized/vsite_parm.cpp.ll
 ; ockam-rs/optimized/1411u8drt798uxi8.ll
 ; ockam-rs/optimized/1d1qxhuj8x85dazd.ll
 ; ockam-rs/optimized/2b6p4x953b2bb7vv.ll
@@ -90,6 +91,7 @@ entry:
 ; rustfmt-rs/optimized/4arc02n7xt9gqo2v.ll
 ; rustfmt-rs/optimized/x2cb3fifm47d4t5.ll
 ; wasmtime-rs/optimized/5lt5r4zkd9qrbog.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000004(i1 %0, i8 %1) #0 {
 entry:

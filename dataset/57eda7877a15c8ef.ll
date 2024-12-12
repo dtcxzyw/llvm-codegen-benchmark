@@ -9,13 +9,14 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 65536
   %5 = zext nneg i32 %4 to i64
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   ret i64 %6
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; folly/optimized/AsyncUDPSocket.cpp.ll
 ; libjpeg-turbo/optimized/tjexample.c.ll
+; llvm/optimized/GenericTaintChecker.cpp.ll
 ; opencv/optimized/filter.dispatch.cpp.ll
 ; z3/optimized/nlqsat.cpp.ll
 ; z3/optimized/qsat.cpp.ll
@@ -25,7 +26,7 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 -1
   %5 = zext i32 %4 to i64
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   ret i64 %6
 }
 
@@ -42,7 +43,7 @@ entry:
   %3 = icmp ugt i32 %2, 131071
   %4 = select i1 %3, i32 %1, i32 undef
   %5 = zext i32 %4 to i64
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   ret i64 %6
 }
 

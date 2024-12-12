@@ -1,5 +1,5 @@
 
-; 43 occurrences:
+; 44 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/ColladaExporter.cpp.ll
 ; assimp/optimized/ColladaLoader.cpp.ll
@@ -27,8 +27,8 @@
 ; gromacs/optimized/slasq4.cpp.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
+; lvgl/optimized/lv_svg_render.ll
 ; minetest/optimized/camera.cpp.ll
-; minetest/optimized/clientdynamicinfo.cpp.ll
 ; minetest/optimized/content_cao.cpp.ll
 ; minetest/optimized/playing_sound.cpp.ll
 ; mitsuba3/optimized/bsplinecurve.cpp.ll
@@ -43,6 +43,7 @@
 ; pbrt-v4/optimized/subsurface.cpp.ll
 ; pbrt-v4/optimized/surfscatter.cpp.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i1 %0, float %1, float %2) #0 {
 entry:

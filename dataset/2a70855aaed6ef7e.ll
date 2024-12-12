@@ -17,7 +17,6 @@ entry:
 ; cpython/optimized/basearith.ll
 ; cpython/optimized/obmalloc.ll
 ; draco/optimized/encoder_buffer.cc.ll
-; linux/optimized/checkpoint.ll
 ; linux/optimized/commit.ll
 ; linux/optimized/intel_execlists_submission.ll
 ; linux/optimized/n_tty.ll
@@ -32,6 +31,7 @@ entry:
 ; quickjs/optimized/libbf.ll
 ; redis/optimized/evict.ll
 ; yosys/optimized/BigUnsigned.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
 ; zxing/optimized/ZXBigInteger.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1, i64 %2) #0 {
@@ -56,12 +56,11 @@ entry:
   ret i64 %5
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; cmake/optimized/ProcessUNIX.c.ll
 ; eastl/optimized/EATest.cpp.ll
 ; freetype/optimized/autofit.c.ll
 ; libevent/optimized/evutil_time.c.ll
-; libquic/optimized/d1_lib.c.ll
 ; php/optimized/network.ll
 ; redis/optimized/evict.ll
 ; Function Attrs: nounwind

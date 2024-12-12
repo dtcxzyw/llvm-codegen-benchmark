@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 16 occurrences:
 ; delta-rs/optimized/4say4x9grcidoih4.ll
 ; html5ever-rs/optimized/38n20yzo26sy51uu.ll
 ; meilisearch-rs/optimized/3f4k2xees4fvt0r.ll
@@ -11,8 +11,13 @@
 ; serde-rs-json/optimized/30jxdu82z9wuspjj.ll
 ; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
 ; tree-sitter-rs/optimized/42mwgpotg9phq80h.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0) #0 {
+define i1 @func0000000000000024(i32 %0) #0 {
 entry:
   %1 = xor i32 %0, 55296
   %2 = add nsw i32 %1, -1114112
@@ -20,7 +25,7 @@ entry:
   ret i1 %3
 }
 
-; 20 occurrences:
+; 23 occurrences:
 ; coreutils-rs/optimized/yeky3kbm8zdu7bp.ll
 ; html5ever-rs/optimized/102v6xburpu2qkif.ll
 ; html5ever-rs/optimized/iuandvk122jw87c.ll
@@ -41,6 +46,9 @@ entry:
 ; typst-rs/optimized/3rk2ctuzbghb17s4.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; wasmtime-rs/optimized/3vdx8w41hjyzioqv.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/exy3mxytk4j1w94j908qbhdez.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0) #0 {
 entry:

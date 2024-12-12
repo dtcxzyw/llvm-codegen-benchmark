@@ -22,6 +22,13 @@ func000000000000000e:                   # @func000000000000000e
 	vmovss	%xmm0, %xmm1, %xmm1 {%k1}
 	vmovaps	%xmm1, %xmm0
 	retq
+.LCPI4_0:
+	.long	0x41102d33                      # float 9.01103496
+func000000000000000b:                   # @func000000000000000b
+	vcmpngtss	.LCPI4_0(%rip), %xmm0, %k1
+	vmovss	%xmm0, %xmm1, %xmm1 {%k1}
+	vmovaps	%xmm1, %xmm0
+	retq
 func0000000000000008:                   # @func0000000000000008
 	vxorps	%xmm2, %xmm2, %xmm2
 	vcmpeqss	%xmm2, %xmm0, %k1
@@ -49,12 +56,6 @@ func000000000000000d:                   # @func000000000000000d
 func0000000000000005:                   # @func0000000000000005
 	vxorps	%xmm2, %xmm2, %xmm2
 	vcmpnless	%xmm2, %xmm0, %k1
-	vmovss	%xmm0, %xmm1, %xmm1 {%k1}
-	vmovaps	%xmm1, %xmm0
-	retq
-func000000000000000b:                   # @func000000000000000b
-	vxorps	%xmm2, %xmm2, %xmm2
-	vcmpnltss	%xmm0, %xmm2, %k1
 	vmovss	%xmm0, %xmm1, %xmm1 {%k1}
 	vmovaps	%xmm1, %xmm0
 	retq

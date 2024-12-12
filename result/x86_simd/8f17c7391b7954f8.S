@@ -42,6 +42,6 @@ func000000000000001c:                   # @func000000000000001c
 	vpbroadcastw	.LCPI0_3(%rip), %ymm2   # ymm2 = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
 	vpsllvw	%ymm1, %ymm2, %ymm1
 	vpmovwb	%ymm1, %xmm1
-	vpor	%xmm0, %xmm1, %xmm0
+	vpor	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq

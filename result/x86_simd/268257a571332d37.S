@@ -20,7 +20,7 @@ func0000000000000030:                   # @func0000000000000030
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubd	%ymm2, %ymm1, %ymm1
 	vpsubd	%ymm2, %ymm0, %ymm0
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000035:                   # @func0000000000000035
 	vpcmpeqd	%ymm2, %ymm2, %ymm2

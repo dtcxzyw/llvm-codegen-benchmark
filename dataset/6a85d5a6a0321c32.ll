@@ -18,9 +18,11 @@ entry:
   ret i8 %4
 }
 
-; 30 occurrences:
+; 33 occurrences:
 ; arrow/optimized/api_scalar.cc.ll
 ; arrow/optimized/cast.cc.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -49,6 +51,7 @@ entry:
 ; typst-rs/optimized/26ex1w19ixz6ifuk.ll
 ; z3/optimized/arith_decl_plugin.cpp.ll
 ; z3/optimized/karr_relation.cpp.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i1 %0, i8 %1) #0 {
 entry:

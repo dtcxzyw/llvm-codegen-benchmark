@@ -9,6 +9,9 @@ func0000000000000007:                   # @func0000000000000007
 	feq.s	a0, fa1, fa0
 	xori	a0, a0, 1
 	ret
+func0000000000000008:                   # @func0000000000000008
+	feq.s	a0, fa1, fa0
+	ret
 func0000000000000003:                   # @func0000000000000003
 	fle.s	a0, fa0, fa1
 	xori	a0, a0, 1

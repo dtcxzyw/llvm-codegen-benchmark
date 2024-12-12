@@ -1,11 +1,12 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; g2o/optimized/sbacam.cpp.ll
 ; opencv/optimized/fisheye.cpp.ll
 ; opencv/optimized/p3p.cpp.ll
 ; openjdk/optimized/sharedRuntimeTrig.ll
 ; proj/optimized/isea.cpp.ll
 ; quantlib/optimized/analytichestonengine.ll
+; quantlib/optimized/gaussian1dmodel.ll
 ; quantlib/optimized/hestonprocess.ll
 ; quantlib/optimized/integralhestonvarianceoptionengine.ll
 ; quantlib/optimized/kronrodintegral.ll

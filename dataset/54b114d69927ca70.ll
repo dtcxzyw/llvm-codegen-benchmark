@@ -125,7 +125,8 @@ entry:
   ret double %3
 }
 
-; 21 occurrences:
+; 22 occurrences:
+; boost/optimized/default_filter_factory.ll
 ; flac/optimized/stream_decoder.c.ll
 ; hdf5/optimized/H5Tconv_bitfield.c.ll
 ; hdf5/optimized/H5Tconv_float.c.ll
@@ -168,7 +169,8 @@ entry:
   ret double %3
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; qemu/optimized/util_throttle.c.ll
 ; quickjs/optimized/quickjs.ll
@@ -181,11 +183,12 @@ entry:
   ret double %3
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; cmake/optimized/progress.c.ll
 ; curl/optimized/libcurl_la-progress.ll
 ; faiss/optimized/kmeans1d.cpp.ll
 ; gromacs/optimized/dispersioncorrection.cpp.ll
+; oiio/optimized/benchmark.cpp.ll
 ; openjdk/optimized/zStat.ll
 ; quantlib/optimized/actualactual.ll
 ; Function Attrs: nounwind

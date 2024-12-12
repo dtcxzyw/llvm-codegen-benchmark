@@ -35,26 +35,62 @@ func0000000000000008:                   # @func0000000000000008
 	addiw	a1, a1, 320
 	sltu	a0, a1, a0
 	ret
-func000000000000000c:                   # @func000000000000000c
+.LCPI5_0:
+	.quad	18446744073709551               # 0x4189374bc6a7ef
+func0000000000000018:                   # @func0000000000000018
 	andi	a1, a1, 1
 	bnez	a1, .LBB5_2
+	lui	a1, %hi(.LCPI5_0)
+	ld	a1, %lo(.LCPI5_0)(a1)
+	sltu	a0, a1, a0
+	ret
+.LBB5_2:
+	lui	a1, 524288
+	addiw	a1, a1, -1
+	sltu	a0, a1, a0
+	ret
+func000000000000000c:                   # @func000000000000000c
+	andi	a1, a1, 1
+	bnez	a1, .LBB6_2
 	li	a1, 36
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
-.LBB5_2:
+.LBB6_2:
 	li	a1, 32
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
+func0000000000000014:                   # @func0000000000000014
+	andi	a1, a1, 1
+	bnez	a1, .LBB7_2
+	li	a1, 2
+	sltu	a0, a0, a1
+	ret
+.LBB7_2:
+	li	a1, 8
+	sltu	a0, a0, a1
+	ret
 func000000000000000a:                   # @func000000000000000a
 	andi	a2, a1, 1
 	lui	a1, 524288
-	bnez	a2, .LBB6_2
+	bnez	a2, .LBB8_2
 	li	a1, -1
 	slli	a1, a1, 63
-.LBB6_2:                                # %entry
+.LBB8_2:                                # %entry
 	slt	a0, a1, a0
+	ret
+func0000000000000011:                   # @func0000000000000011
+	andi	a1, a1, 1
+	bnez	a1, .LBB9_2
+	li	a1, 16
+	xor	a0, a0, a1
+	seqz	a0, a0
+	ret
+.LBB9_2:
+	li	a1, 12
+	xor	a0, a0, a1
+	seqz	a0, a0
 	ret
 func0000000000000005:                   # @func0000000000000005
 	andi	a1, a1, 1

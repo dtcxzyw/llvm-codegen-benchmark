@@ -3,7 +3,7 @@
 ; openssl/optimized/libcrypto-lib-o_str.ll
 ; openssl/optimized/libcrypto-shlib-o_str.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0, i8 %1, i64 %2) #0 {
+define i64 @func0000000000000061(i64 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 1
   %4 = or disjoint i64 %3, 1
@@ -18,7 +18,7 @@ entry:
 ; rust-analyzer-rs/optimized/2i82iai7kwxbnc4v.ll
 ; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000071(i64 %0, i8 %1, i64 %2) #0 {
+define i64 @func00000000000000e1(i64 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 1
   %4 = or disjoint i64 %3, 1

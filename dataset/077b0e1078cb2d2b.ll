@@ -1,10 +1,11 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; darktable/optimized/introspection_equalizer.c.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; mitsuba3/optimized/progress.cpp.ll
 ; mixbox/optimized/mixbox.ll
 ; ocio/optimized/CDLOpCPU.cpp.ll
+; opencv/optimized/tracker.cpp.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; pbrt-v4/optimized/surfscatter.cpp.ll
@@ -17,13 +18,12 @@ entry:
   ret float %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; bullet3/optimized/b3PgsJacobiSolver.ll
 ; bullet3/optimized/btMultiBodyConstraintSolver.ll
 ; bullet3/optimized/btSequentialImpulseConstraintSolver.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
-; ncnn/optimized/roialign.cpp.ll
 ; Function Attrs: nounwind
 define float @func000000000000000a(float %0, float %1) #0 {
 entry:
@@ -33,15 +33,13 @@ entry:
   ret float %4
 }
 
-; 9 occurrences:
+; 7 occurrences:
 ; box2d/optimized/b2_distance_joint.cpp.ll
 ; box2d/optimized/b2_time_of_impact.cpp.ll
 ; meshlab/optimized/VisibilityCheck.cpp.ll
 ; meshlab/optimized/decorate_raster_proj.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; nuklear/optimized/unity.c.ll
-; opencv/optimized/short_term_imageless_tracker.cpp.ll
-; opencv/optimized/zero_term_imageless_tracker.cpp.ll
 ; ozz-animation/optimized/track_sampling_job.cc.ll
 ; Function Attrs: nounwind
 define float @func0000000000000002(float %0, float %1) #0 {

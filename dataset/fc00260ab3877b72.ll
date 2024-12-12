@@ -20,7 +20,7 @@ entry:
 define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 16
-  %4 = xor i32 %3, %0
+  %4 = xor i32 %0, %3
   %5 = shl nuw nsw i32 %1, 8
   %6 = xor i32 %4, %5
   ret i32 %6
@@ -82,10 +82,11 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = xor i32 %2, %0
-  %4 = shl i32 %3, 16
-  %5 = xor i32 %4, %1
-  ret i32 %5
+  %3 = shl i32 %2, 16
+  %4 = xor i32 %1, %3
+  %5 = shl i32 %0, 16
+  %6 = xor i32 %5, %4
+  ret i32 %6
 }
 
 ; 1 occurrences:
@@ -106,7 +107,7 @@ entry:
 define i32 @func000000000000000e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 16
-  %4 = xor i32 %3, %0
+  %4 = xor i32 %0, %3
   %5 = shl nuw i32 %1, 24
   %6 = xor i32 %4, %5
   ret i32 %6
@@ -120,7 +121,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 6
-  %4 = xor i32 %3, %0
+  %4 = xor i32 %0, %3
   %5 = shl nsw i32 %1, 2
   %6 = xor i32 %4, %5
   ret i32 %6

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/block_qcow2-cluster.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000041(i64 %0, i32 %1) #0 {
+define i32 @func0000000000000081(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl i64 4294967296, %2
@@ -27,7 +27,7 @@ entry:
 ; qemu/optimized/block_qcow2-cluster.c.ll
 ; yosys/optimized/share.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000061(i64 %0, i32 %1) #0 {
+define i32 @func00000000000000c1(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 1, %2
@@ -40,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; verilator/optimized/V3Number.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000071(i64 %0, i32 %1) #0 {
+define i32 @func00000000000000e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw nsw i64 1, %2

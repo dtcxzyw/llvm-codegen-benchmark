@@ -4,7 +4,7 @@
 ; php/optimized/pcre2_match.ll
 ; php/optimized/pcre2_xclass.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i8 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %1, %2
   %4 = icmp eq i8 %0, 3
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/xt_policy.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = icmp eq i32 %0, %1

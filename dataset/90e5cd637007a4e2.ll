@@ -1,6 +1,5 @@
 
-; 10 occurrences:
-; eastl/optimized/BenchmarkAlgorithm.cpp.ll
+; 9 occurrences:
 ; lief/optimized/CoreAuxv.cpp.ll
 ; lief/optimized/CorePrStatus.cpp.ll
 ; lief/optimized/LoadConfiguration.cpp.ll
@@ -11,7 +10,7 @@
 ; lief/optimized/X86Feature.cpp.ll
 ; lief/optimized/X86ISA.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001b1(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000361(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %1, %2
   %4 = select i1 %3, i64 16, i64 0
@@ -24,11 +23,11 @@ entry:
 ; lief/optimized/RelocationSizes.cpp.ll
 ; lief/optimized/RelocationStrings.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000131(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000261(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %1, %2
   %4 = select i1 %3, i64 16, i64 0
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   %6 = icmp eq i64 %5, 696
   ret i1 %6
 }
@@ -36,12 +35,24 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001bc(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000036c(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %1, %2
   %4 = select i1 %3, i64 0, i64 4
   %5 = add nuw nsw i64 %4, %0
   %6 = icmp ne i64 %5, 40000
+  ret i1 %6
+}
+
+; 1 occurrences:
+; eastl/optimized/BenchmarkAlgorithm.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000371(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp slt i32 %1, %2
+  %4 = select i1 %3, i64 0, i64 4
+  %5 = add nuw nsw i64 %4, %0
+  %6 = icmp samesign eq i64 %5, 40000
   ret i1 %6
 }
 

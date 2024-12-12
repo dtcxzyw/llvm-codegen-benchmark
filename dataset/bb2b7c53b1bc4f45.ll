@@ -30,13 +30,13 @@
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
-; minetest/optimized/mapblock_mesh.cpp.ll
 ; minetest/optimized/mapgen.cpp.ll
-; minetest/optimized/voxel.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; nori/optimized/nanovg.c.ll
+; opencv/optimized/contours_new.cpp.ll
 ; openjdk/optimized/ciArray.ll
 ; openjdk/optimized/ciMethod.ll
+; openjdk/optimized/codeCache.ll
 ; openjdk/optimized/constantPool.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
@@ -49,10 +49,10 @@
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/rmodels.c.ll
 ; raylib/optimized/rtextures.c.ll
-; rust-analyzer-rs/optimized/1lnhy2v45voxjwry.ll
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
 ; soc-simulator/optimized/sim_mycpu.ll
 ; spike/optimized/ns16550.ll
+; sqlite/optimized/sqlite3.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wasmedge/optimized/filemgr.cpp.ll
 ; wireshark/optimized/packet-iec104.c.ll
@@ -67,18 +67,6 @@ entry:
   %2 = and i8 %1, 1
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, i8 0, i8 %0
-  ret i8 %4
-}
-
-; 2 occurrences:
-; linux/optimized/cypress_ps2.ll
-; linux/optimized/mlme.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000008(i8 %0, i8 %1) #0 {
-entry:
-  %2 = and i8 %1, 127
-  %3 = icmp ugt i8 %2, 22
-  %4 = select i1 %3, i8 1, i8 %0
   ret i8 %4
 }
 

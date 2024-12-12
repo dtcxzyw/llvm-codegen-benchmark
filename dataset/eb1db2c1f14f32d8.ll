@@ -5,7 +5,7 @@
 ; openssl/optimized/libssl-shlib-statem_clnt.ll
 ; openssl/optimized/libssl-shlib-t1_lib.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002b(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 256
   %4 = select i1 %3, i32 65280, i32 %2
@@ -29,7 +29,7 @@ entry:
 ; openssl/optimized/libssl-shlib-statem_srvr.ll
 ; openssl/optimized/libssl-shlib-t1_lib.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 256
   %4 = select i1 %3, i32 65280, i32 %2
@@ -46,7 +46,7 @@ entry:
 ; openssl/optimized/libssl-shlib-statem_lib.ll
 ; openssl/optimized/libssl-shlib-t1_lib.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 256
   %4 = select i1 %3, i32 65280, i32 %2
@@ -59,7 +59,7 @@ entry:
 ; openssl/optimized/libssl-lib-d1_lib.ll
 ; openssl/optimized/libssl-shlib-d1_lib.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000025(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 256
   %4 = select i1 %3, i32 65280, i32 %2
@@ -68,7 +68,7 @@ entry:
   ret i1 %6
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; cmake/optimized/http2.c.ll
 ; cvc5/optimized/fc_simplex.cpp.ll
 ; cvc5/optimized/linear_equality.cpp.ll
@@ -76,11 +76,10 @@ entry:
 ; graphviz/optimized/actions.c.ll
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
 ; linux/optimized/filter.ll
-; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; xgboost/optimized/comm_group.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, -1
   %4 = select i1 %3, i32 2147483647, i32 %2
@@ -89,19 +88,30 @@ entry:
   ret i1 %6
 }
 
-; 6 occurrences:
+; 1 occurrences:
+; lvgl/optimized/lv_draw_arc.ll
+; Function Attrs: nounwind
+define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp eq i32 %2, 4
+  %4 = select i1 %3, i32 3, i32 %2
+  %5 = select i1 %0, i32 3, i32 %1
+  %6 = icmp ne i32 %5, %4
+  ret i1 %6
+}
+
+; 5 occurrences:
 ; cmake/optimized/cover.c.ll
 ; cmake/optimized/fastcover.c.ll
-; graphviz/optimized/actions.c.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; zstd/optimized/cover.c.ll
 ; zstd/optimized/fastcover.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 -1, i32 %2
-  %5 = icmp ugt i32 %4, %1
+  %5 = icmp ult i32 %1, %4
   %not. = xor i1 %0, true
   %6 = select i1 %not., i1 %5, i1 false
   ret i1 %6

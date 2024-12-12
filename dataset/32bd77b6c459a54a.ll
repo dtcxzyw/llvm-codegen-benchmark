@@ -1,5 +1,5 @@
 
-; 202 occurrences:
+; 205 occurrences:
 ; abc/optimized/abcHieGia.c.ll
 ; abc/optimized/acecRe.c.ll
 ; abc/optimized/bdcSpfd.c.ll
@@ -20,8 +20,8 @@
 ; abseil-cpp/optimized/time_zone_libc.cc.ll
 ; assimp/optimized/BlenderDNA.cpp.ll
 ; assimp/optimized/BlenderScene.cpp.ll
+; boost/optimized/src.ll
 ; bullet3/optimized/b3File.ll
-; cmake/optimized/archive_pack_dev.c.ll
 ; cvc5/optimized/Solver.cc.ll
 ; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
 ; folly/optimized/Compression.cpp.ll
@@ -31,6 +31,7 @@
 ; hermes/optimized/APFloat.cpp.ll
 ; hermes/optimized/DateUtil.cpp.ll
 ; icu/optimized/collationbuilder.ll
+; image-rs/optimized/4srzh4wujeew249y.ll
 ; image-rs/optimized/5oy2v8fghrh79s8.ll
 ; lief/optimized/ChainedFixup.cpp.ll
 ; lief/optimized/RelocationFixup.cpp.ll
@@ -123,7 +124,6 @@
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86InstructionSelector.cpp.ll
 ; llvm/optimized/X86LegalizerInfo.cpp.ll
-; luau/optimized/isocline.c.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; openjdk/optimized/shenandoahHeapRegionCounters.ll
 ; openspiel/optimized/negotiation.cc.ll
@@ -142,7 +142,6 @@
 ; qemu/optimized/source_s_subMagsF16.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; qemu/optimized/tcg.c.ll
-; redis/optimized/script.ll
 ; ring-rs/optimized/1vabw27ldssjsz66.ll
 ; ruby/optimized/compile.ll
 ; rust-analyzer-rs/optimized/15tfqr3l9t81r1af.ll
@@ -176,6 +175,7 @@
 ; spike/optimized/shfli.ll
 ; spike/optimized/triggers.ll
 ; spike/optimized/unshfli.ll
+; turborepo-rs/optimized/b9mxqsqxupsuldn67x7vgrl1g.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
 ; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
@@ -202,6 +202,9 @@
 ; z3/optimized/sat_cutset.cpp.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
 ; z3/optimized/spacer_context.cpp.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/6pnl53dvchkj2615muwn1tztk.ll
+; zed-rs/optimized/73pi95mikt3cntupcr2d2nefv.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -212,7 +215,7 @@ entry:
   ret i64 %6
 }
 
-; 71 occurrences:
+; 70 occurrences:
 ; abc/optimized/cuddCache.c.ll
 ; abseil-cpp/optimized/civil_time.cc.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
@@ -225,7 +228,6 @@ entry:
 ; folly/optimized/Compression.cpp.ll
 ; linux/optimized/ds.ll
 ; linux/optimized/page.ll
-; linux/optimized/set_memory.ll
 ; linux/optimized/swap_state.ll
 ; llvm/optimized/AArch64MCCodeEmitter.cpp.ll
 ; llvm/optimized/APValue.cpp.ll
@@ -294,7 +296,8 @@ entry:
   ret i64 %6
 }
 
-; 76 occurrences:
+; 77 occurrences:
+; abc/optimized/bdcSpfd.c.ll
 ; arrow/optimized/key_map.cc.ll
 ; folly/optimized/Compression.cpp.ll
 ; glslang/optimized/ParseHelper.cpp.ll
@@ -352,10 +355,10 @@ entry:
 ; spike/optimized/f128_mul.ll
 ; spike/optimized/f128_sqrt.ll
 ; spike/optimized/f128_to_i32_r_minMag.ll
-; spike/optimized/f128_to_ui32_r_minMag.ll
 ; spike/optimized/s_addMagsF128.ll
 ; spike/optimized/s_mulAddF128.ll
 ; spike/optimized/triggers.ll
+; tokio-rs/optimized/46apu3hqx0w07xoc.ll
 ; yalantinglibs/optimized/addressbook.struct_pb.cc.ll
 ; yalantinglibs/optimized/any.struct_pb.cc.ll
 ; yalantinglibs/optimized/conformance.struct_pb.cc.ll
@@ -381,7 +384,8 @@ entry:
   ret i64 %6
 }
 
-; 17 occurrences:
+; 18 occurrences:
+; abc/optimized/bdcSpfd.c.ll
 ; linux/optimized/init_64.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
@@ -402,9 +406,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, 7
+  %3 = and i64 %2, -4503599627370496
   %4 = or i64 %3, %0
-  %5 = and i64 %1, 4294966784
+  %5 = and i64 %1, 4502500115742720
   %6 = or disjoint i64 %4, %5
   ret i64 %6
 }

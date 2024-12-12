@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	testb	$3, %dil
 	sete	%al
 	retq
@@ -7,6 +7,6 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	retq
 func000000000000000c:                   # @func000000000000000c
-	testb	$127, %dil
+	testl	$1023, %edi                     # imm = 0x3FF
 	setne	%al
 	retq

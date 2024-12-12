@@ -1,7 +1,7 @@
 func000000000000000c:                   # @func000000000000000c
-	li	a3, 18
-	mul	a2, a2, a3
-	addw	a1, a1, a2
+	slli	a3, a2, 1
+	add	a1, a1, a2
+	addw	a1, a1, a3
 	and	a0, a0, a1
 	ret
 func0000000000000005:                   # @func0000000000000005

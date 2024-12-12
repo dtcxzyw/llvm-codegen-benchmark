@@ -1,8 +1,22 @@
 
-%"class.llvm::Use.3129095" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3138418" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3321779" = type { ptr, ptr, ptr, ptr }
 
-; 109 occurrences:
+; 2 occurrences:
 ; clamav/optimized/petite.c.ll
+; simdjson/optimized/simdjson.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000019e(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = sub nsw i64 0, %2
+  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 84
+  %6 = sub nsw i64 0, %0
+  %7 = getelementptr nusw i8, ptr %5, i64 %6
+  ret ptr %7
+}
+
+; 106 occurrences:
 ; icu/optimized/normalizer2impl.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -81,7 +95,6 @@
 ; llvm/optimized/OpenMPOpt.cpp.ll
 ; llvm/optimized/PartialInlining.cpp.ll
 ; llvm/optimized/PreISelIntrinsicLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/ReplaceWithVeclib.cpp.ll
@@ -110,15 +123,14 @@
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; llvm/optimized/X86WinEHState.cpp.ll
 ; opencv/optimized/brisk.cpp.ll
-; simdjson/optimized/simdjson.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000019a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 84
+  %4 = getelementptr nusw %"class.llvm::Use.3138418", ptr %1, i64 %3
+  %5 = getelementptr nusw i8, ptr %4, i64 -32
   %6 = sub nsw i64 0, %0
-  %7 = getelementptr nusw i8, ptr %5, i64 %6
+  %7 = getelementptr nusw %"class.llvm::Use.3138418", ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -128,7 +140,7 @@ entry:
 define ptr @func000000000000018a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw %"class.llvm::Use.3129095", ptr %1, i64 %3
+  %4 = getelementptr nusw %"class.llvm::Use.3321779", ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -8
   %6 = sub i64 0, %0
   %7 = getelementptr nusw i8, ptr %5, i64 %6

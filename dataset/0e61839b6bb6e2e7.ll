@@ -1,5 +1,5 @@
 
-; 1020 occurrences:
+; 1068 occurrences:
 ; abc/optimized/abcDsd.c.ll
 ; abc/optimized/abcExtract.c.ll
 ; abc/optimized/abcUtil.c.ll
@@ -50,6 +50,7 @@
 ; arrow/optimized/file.cc.ll
 ; arrow/optimized/key_map.cc.ll
 ; assimp/optimized/TriangulateProcess.cpp.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
@@ -146,8 +147,12 @@
 ; git/optimized/wt-status.ll
 ; glslang/optimized/SPVRemapper.cpp.ll
 ; graphviz/optimized/dthash.c.ll
+; gromacs/optimized/anadih.cpp.ll
 ; gromacs/optimized/fft_fftw3.cpp.ll
+; gromacs/optimized/gmx_sigeps.cpp.ll
+; gromacs/optimized/gmx_wham.cpp.ll
 ; gromacs/optimized/inffast.c.ll
+; gromacs/optimized/xvgr.cpp.ll
 ; hdf5/optimized/H5FDonion.c.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; hermes/optimized/APInt.cpp.ll
@@ -277,7 +282,6 @@
 ; linux/optimized/ohci-hcd.ll
 ; linux/optimized/p4.ll
 ; linux/optimized/page_alloc.ll
-; linux/optimized/pcm.ll
 ; linux/optimized/printk_ringbuffer.ll
 ; linux/optimized/processor_throttling.ll
 ; linux/optimized/quota_tree.ll
@@ -483,7 +487,6 @@
 ; llvm/optimized/RDFRegisters.cpp.ll
 ; llvm/optimized/RISCVAsmPrinter.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RISCVLegalizerInfo.cpp.ll
@@ -619,6 +622,7 @@
 ; luau/optimized/IrRegAllocA64.cpp.ll
 ; luau/optimized/lgc.cpp.ll
 ; luau/optimized/ltable.cpp.ll
+; lvgl/optimized/lv_tlsf.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
@@ -787,18 +791,55 @@
 ; pbrt-v4/optimized/samples.cpp.ll
 ; pbrt-v4/optimized/subsurface.cpp.ll
 ; pbrt-v4/optimized/surfscatter.cpp.ll
+; php/optimized/array.ll
 ; php/optimized/ascmagic.ll
+; php/optimized/basic_functions.ll
+; php/optimized/block_pass.ll
+; php/optimized/dfa_pass.ll
+; php/optimized/file.ll
+; php/optimized/formatted_print.ll
+; php/optimized/http_fopen_wrapper.ll
 ; php/optimized/ir.ll
 ; php/optimized/md5.ll
+; php/optimized/node.ll
 ; php/optimized/pcre2_jit_compile.ll
+; php/optimized/pdo_stmt.ll
+; php/optimized/phar_object.ll
+; php/optimized/php_pcre.ll
+; php/optimized/phpdbg.ll
+; php/optimized/phpdbg_bp.ll
+; php/optimized/phpdbg_frame.ll
+; php/optimized/phpdbg_watch.ll
+; php/optimized/proc_open.ll
 ; php/optimized/snprintf.ll
 ; php/optimized/spl_dllist.ll
+; php/optimized/spl_fixedarray.ll
+; php/optimized/spl_observer.ll
+; php/optimized/sqlite3.ll
+; php/optimized/streams.ll
+; php/optimized/streamsfuncs.ll
+; php/optimized/string.ll
+; php/optimized/tokenizer.ll
+; php/optimized/url.ll
+; php/optimized/var.ll
+; php/optimized/zend_API.ll
 ; php/optimized/zend_alloc.ll
+; php/optimized/zend_attributes.ll
+; php/optimized/zend_builtin_functions.ll
+; php/optimized/zend_cfg.ll
+; php/optimized/zend_compile.ll
+; php/optimized/zend_execute.ll
+; php/optimized/zend_fibers.ll
+; php/optimized/zend_generators.ll
+; php/optimized/zend_hash.ll
+; php/optimized/zend_inheritance.ll
+; php/optimized/zend_jit.ll
+; php/optimized/zend_observer.ll
+; php/optimized/zend_opcode.ll
+; php/optimized/zend_optimizer.ll
 ; postgres/optimized/acl.ll
 ; postgres/optimized/brin.ll
 ; postgres/optimized/brin_pageops.ll
-; postgres/optimized/brin_revmap.ll
-; postgres/optimized/brin_xlog.ll
 ; postgres/optimized/bufmgr.ll
 ; postgres/optimized/clog.ll
 ; postgres/optimized/dbcommands.ll
@@ -811,7 +852,6 @@
 ; postgres/optimized/ginentrypage.ll
 ; postgres/optimized/ginfast.ll
 ; postgres/optimized/ginget.ll
-; postgres/optimized/gininsert.ll
 ; postgres/optimized/ginutil.ll
 ; postgres/optimized/ginvacuum.ll
 ; postgres/optimized/ginxlog.ll
@@ -1018,8 +1058,16 @@
 ; z3/optimized/sat_local_search.cpp.ll
 ; z3/optimized/sat_lookahead.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
 ; zstd/optimized/divsufsort.c.ll
 ; zstd/optimized/zstd_opt.c.ll
+; zstd/optimized/zstd_v01.c.ll
+; zstd/optimized/zstd_v02.c.ll
+; zstd/optimized/zstd_v03.c.ll
+; zstd/optimized/zstd_v04.c.ll
+; zstd/optimized/zstd_v05.c.ll
+; zstd/optimized/zstd_v06.c.ll
+; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0) #0 {
 entry:
@@ -1028,7 +1076,7 @@ entry:
   ret i64 %2
 }
 
-; 165 occurrences:
+; 161 occurrences:
 ; abc/optimized/crc32.c.ll
 ; abc/optimized/solver.c.ll
 ; abc/optimized/solver_api.c.ll
@@ -1048,8 +1096,6 @@ entry:
 ; libquic/optimized/tls_cbc.c.ll
 ; linux/optimized/bio.ll
 ; linux/optimized/dma-iommu.ll
-; linux/optimized/fs-writeback.ll
-; linux/optimized/hibernate.ll
 ; linux/optimized/hwgpe.ll
 ; linux/optimized/i915_gem_context.ll
 ; linux/optimized/i915_vma.ll
@@ -1097,8 +1143,6 @@ entry:
 ; llvm/optimized/xxhash.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
-; luajit/optimized/lj_snap.ll
-; luajit/optimized/lj_snap_dyn.ll
 ; memcached/optimized/crc32c.ll
 ; memcached/optimized/memcached-crc32c.ll
 ; memcached/optimized/memcached_debug-crc32c.ll

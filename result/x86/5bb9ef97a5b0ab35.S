@@ -6,12 +6,6 @@ func000000000000000c:                   # @func000000000000000c
 	testw	%si, %di
 	setne	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
-	andl	%esi, %edi
-	movzwl	%di, %eax
-	cmpl	$256, %eax                      # imm = 0x100
-	setae	%al
-	retq
 func000000000000000a:                   # @func000000000000000a
 	testw	%si, %di
 	setns	%al

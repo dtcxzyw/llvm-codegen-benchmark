@@ -9,7 +9,7 @@ define i64 @func0000000000000004(i64 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 6
   %3 = zext i1 %2 to i64
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
@@ -42,7 +42,7 @@ define i64 @func0000000000000005(i64 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 105
   %3 = zext i1 %2 to i64
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
@@ -60,20 +60,36 @@ define i64 @func0000000000000031(i64 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 0
   %3 = zext i1 %2 to i64
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
-; 3 occurrences:
+; 1 occurrences:
+; llvm/optimized/MicrosoftMangle.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000010(i64 %0, i8 %1) #0 {
+entry:
+  %2 = icmp ult i8 %1, 5
+  %3 = zext i1 %2 to i64
+  %4 = or i64 %0, %3
+  ret i64 %4
+}
+
+; 8 occurrences:
 ; linux/optimized/generic.ll
 ; luajit/optimized/lj_strscan.ll
 ; luajit/optimized/lj_strscan_dyn.ll
+; zed-rs/optimized/28x1e2vfzxi98zqprbft2w8hu.ll
+; zed-rs/optimized/3hsn9nyfo1lk9hjlnx6o7tl2d.ll
+; zed-rs/optimized/4jjx0s36b1sfrqbb0zz907syp.ll
+; zed-rs/optimized/8v0fi0zpujn3n5viw54gladc4.ll
+; zed-rs/optimized/a50lo7f303ucwqc37yc15xnyr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000030(i64 %0, i8 %1) #0 {
 entry:
-  %2 = icmp ne i8 %1, 0
+  %2 = icmp ne i8 %1, 3
   %3 = zext i1 %2 to i64
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
@@ -92,7 +108,7 @@ define i64 @func0000000000000011(i64 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, -2
   %3 = zext i1 %2 to i64
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 

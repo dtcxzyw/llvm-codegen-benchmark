@@ -9,7 +9,7 @@ define i16 @func0000000000000008(i16 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 2
   %3 = zext i1 %2 to i16
-  %4 = add i16 %3, %0
+  %4 = add i16 %0, %3
   ret i16 %4
 }
 

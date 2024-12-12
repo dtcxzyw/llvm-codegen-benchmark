@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 23 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/qtmd.c.ll
 ; clamav/optimized/unpack.cpp.ll
@@ -12,11 +12,9 @@
 ; linux/optimized/ah6.ll
 ; linux/optimized/extents.ll
 ; linux/optimized/ip6_input.ll
-; linux/optimized/mcast_snoop.ll
 ; linux/optimized/nf_nat_core.ll
 ; oiio/optimized/iffinput.cpp.ll
 ; php/optimized/pcre2_compile.ll
-; postgres/optimized/bufpage.ll
 ; postgres/optimized/spgxlog.ll
 ; slurm/optimized/net.ll
 ; sqlite/optimized/sqlite3.ll
@@ -52,11 +50,10 @@ entry:
   ret i32 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
 ; linux/optimized/intel_panel.ll
 ; linux/optimized/vmcore.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; wireshark/optimized/erf.c.ll
 ; wireshark/optimized/packet-wifi-nan.c.ll
 ; Function Attrs: nounwind

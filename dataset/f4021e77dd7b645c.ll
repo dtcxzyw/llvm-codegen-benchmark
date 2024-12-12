@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 26 occurrences:
 ; abc/optimized/abcNtbdd.c.ll
 ; abc/optimized/aigOper.c.ll
 ; bullet3/optimized/btCapsuleShape.ll
@@ -8,7 +8,6 @@
 ; bullet3/optimized/btConvexShape.ll
 ; git/optimized/name-hash.ll
 ; gromacs/optimized/collective.cpp.ll
-; icu/optimized/cal.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; nori/optimized/layout.cpp.ll
 ; nuttx/optimized/fs_files.c.ll
@@ -36,11 +35,10 @@ entry:
   ret ptr %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; cpython/optimized/_posixsubprocess.ll
 ; icu/optimized/collationiterator.ll
 ; linux/optimized/dmar.ll
-; linux/optimized/head64.ll
 ; openspiel/optimized/dou_dizhu.cc.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i32 %1) #0 {

@@ -1,8 +1,8 @@
 func0000000000000000:                   # @func0000000000000000
 	notq	%rdi
-	tzcntq	%rdi, %rax
+	lzcntq	%rdi, %rax
 	retq
 func0000000000000001:                   # @func0000000000000001
 	notq	%rdi
-	tzcntq	%rdi, %rax
+	lzcntq	%rdi, %rax
 	retq

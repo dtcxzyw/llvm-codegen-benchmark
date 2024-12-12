@@ -6,7 +6,7 @@
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/TargetLoweringObjectFileImpl.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i32 %0) #0 {
+define i64 @func0000000000000024(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 511
   %2 = add nsw i32 %1, -33

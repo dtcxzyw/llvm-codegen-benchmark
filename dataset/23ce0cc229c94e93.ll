@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; bullet3/optimized/b3Solver.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
@@ -10,7 +10,6 @@
 ; openjdk/optimized/Ushort555Rgb.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; qemu/optimized/target_riscv_translate.c.ll
-; wireshark/optimized/mpeg-audio.c.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
@@ -46,7 +45,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %0, 2
-  %3 = or i32 %2, %1
+  %3 = or i32 %1, %2
   %4 = and i32 %3, 4
   ret i32 %4
 }

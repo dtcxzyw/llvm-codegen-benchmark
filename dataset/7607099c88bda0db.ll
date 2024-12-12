@@ -1,11 +1,17 @@
 
-; 15 occurrences:
+; 21 occurrences:
 ; coremark/optimized/core_list_join.c.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; icu/optimized/normalizer2impl.ll
 ; libjpeg-turbo/optimized/jdcolor.c.ll
 ; linux/optimized/agg-rx.ll
 ; linux/optimized/inffast.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; oiio/optimized/Codec.cpp.ll
 ; opencv/optimized/color_rgb.dispatch.cpp.ll
@@ -19,7 +25,7 @@
 define i16 @func0000000000000001(i16 %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 12
-  %3 = or disjoint i16 %2, %0
+  %3 = or disjoint i16 %0, %2
   ret i16 %3
 }
 

@@ -3,7 +3,7 @@
 ; llvm/optimized/CachePruning.cpp.ll
 ; rocksdb/optimized/write_thread.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = mul nsw i64 %0, 1000
@@ -15,7 +15,7 @@ entry:
 ; image-rs/optimized/30755d6iao7ojcvl.ll
 ; linux/optimized/dmar.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = mul nuw nsw i64 %0, 3
@@ -26,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000168(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
   %4 = mul nuw nsw i64 %0, 3
@@ -37,7 +37,7 @@ entry:
 ; 1 occurrences:
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001e8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 %1, %2
   %4 = mul nuw nsw i64 %0, 3
@@ -49,7 +49,7 @@ entry:
 ; flatbuffers/optimized/flatc.cpp.ll
 ; linux/optimized/dmar.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = mul nuw nsw i64 %0, 3
@@ -244,7 +244,7 @@ entry:
 ; 1 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000085(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000105(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
   %4 = mul i64 %0, 50
@@ -266,7 +266,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/blendShapeQuery.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = mul nsw i64 %0, 12
@@ -277,7 +277,7 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000cc(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = mul nuw i64 %0, 52

@@ -25,7 +25,7 @@ entry:
   %3 = and i32 %1, -7
   %4 = icmp ult i32 %2, 2
   %5 = select i1 %4, i32 %1, i32 %3
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   ret i32 %6
 }
 

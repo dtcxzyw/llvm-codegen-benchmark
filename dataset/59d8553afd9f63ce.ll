@@ -6,8 +6,8 @@
 ; freetype/optimized/sfnt.c.ll
 ; freetype/optimized/winfnt.c.ll
 ; hyperscan/optimized/mcsheng_compile.cpp.ll
-; linux/optimized/e1000_hw.ll
 ; linux/optimized/ich8lan.ll
+; lvgl/optimized/lv_ime_pinyin.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/clientpackethandler.cpp.ll
 ; minetest/optimized/craftdef.cpp.ll
@@ -27,7 +27,7 @@
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; z3/optimized/mam.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000044(i16 %0, i16 %1) #0 {
 entry:
   %2 = add nuw i16 %1, 1
   %3 = icmp ult i16 %2, %0
@@ -84,7 +84,7 @@ entry:
   ret i1 %3
 }
 
-; 77 occurrences:
+; 90 occurrences:
 ; clamav/optimized/hwp.c.ll
 ; clamav/optimized/tiff.c.ll
 ; crow/optimized/example.cpp.ll
@@ -139,6 +139,9 @@ entry:
 ; protobuf/optimized/parse_function_generator.cc.ll
 ; raylib/optimized/raudio.c.ll
 ; slurm/optimized/gang.ll
+; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; typst-rs/optimized/1fd2xpfefmgrcb9d.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
@@ -162,15 +165,25 @@ entry:
 ; wireshark/optimized/packet-smb2.c.ll
 ; wireshark/optimized/packet-uftp.c.ll
 ; wireshark/optimized/tvbuff_rdp.c.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/5lgahps99tv0rsaolw3x59ow2.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/diggdkpukg0xn23g7ivuh3jfw.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000041(i16 %0, i16 %1) #0 {
 entry:
   %2 = add nuw i16 %1, 1
   %3 = icmp eq i16 %2, %0
   ret i1 %3
 }
 
-; 62 occurrences:
+; 66 occurrences:
 ; clamav/optimized/ole2_extract.c.ll
 ; cmake/optimized/archive_read_support_format_zip.c.ll
 ; crow/optimized/example.cpp.ll
@@ -217,11 +230,13 @@ entry:
 ; postgres/optimized/nbtinsert.ll
 ; postgres/optimized/nbtsearch.ll
 ; postgres/optimized/pruneheap.ll
+; postgres/optimized/rangetypes_gist.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll
 ; raylib/optimized/raudio.c.ll
 ; recastnavigation/optimized/RecastRegion.cpp.ll
 ; slurm/optimized/dist_tasks.ll
 ; sqlite/optimized/sqlite3.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; typst-rs/optimized/18i60ist7isq7y2m.ll
 ; typst-rs/optimized/1ojadsqfk0rsifsx.ll
 ; typst-rs/optimized/2lj01bfl72moc27l.ll
@@ -233,6 +248,8 @@ entry:
 ; wireshark/optimized/packet-zebra.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/tls.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i16 %0, i16 %1) #0 {
 entry:
@@ -241,7 +258,7 @@ entry:
   ret i1 %3
 }
 
-; 29 occurrences:
+; 34 occurrences:
 ; clamav/optimized/matcher-ac.c.ll
 ; curl/optimized/libcurl_la-tftp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
@@ -265,12 +282,17 @@ entry:
 ; protobuf/optimized/generated_message_tctable_gen.cc.ll
 ; protobuf/optimized/parse_function_generator.cc.ll
 ; qemu/optimized/hw_net_vmxnet3.c.ll
+; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; wireshark/optimized/packet-5co-legacy.c.ll
 ; wireshark/optimized/packet-lte-rrc.c.ll
 ; wireshark/optimized/packet-mpls-echo.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wireshark/optimized/packet-smb.c.ll
 ; wireshark/optimized/packet-v5ua.c.ll
+; zed-rs/optimized/5lgahps99tv0rsaolw3x59ow2.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i16 %0, i16 %1) #0 {
 entry:
@@ -283,7 +305,7 @@ entry:
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/mapgen_fractal.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000029(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000049(i16 %0, i16 %1) #0 {
 entry:
   %2 = add nuw i16 %1, 1
   %3 = icmp uge i16 %2, %0
@@ -294,7 +316,7 @@ entry:
 ; minetest/optimized/mapgen_v6.cpp.ll
 ; minetest/optimized/voxel.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000066(i16 %0, i16 %1) #0 {
 entry:
   %2 = add nuw nsw i16 %1, 1
   %3 = icmp slt i16 %2, %0
@@ -313,7 +335,7 @@ entry:
   ret i1 %3
 }
 
-; 85 occurrences:
+; 86 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
@@ -392,7 +414,8 @@ entry:
 ; postgres/optimized/tsgistidx.ll
 ; postgres/optimized/tsquery_gist.ll
 ; postgres/optimized/vacuumlazy.ll
-; recastnavigation/optimized/RecastRegion.cpp.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; wireshark/optimized/file-mp4.c.ll
 ; wireshark/optimized/packet-cdma2k.c.ll
 ; wireshark/optimized/packet-ncp2222.c.ll
@@ -422,18 +445,18 @@ entry:
 ; clamav/optimized/lzxd.c.ll
 ; clamav/optimized/mszipd.c.ll
 ; icu/optimized/ucnvmbcs.ll
+; linux/optimized/e1000_hw.ll
 ; minetest/optimized/serverpackethandler.cpp.ll
-; postgres/optimized/to_tsany.ll
 ; wireshark/optimized/packet-enttec.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000074(i16 %0, i16 %1) #0 {
 entry:
   %2 = add nuw nsw i16 %1, 1
-  %3 = icmp ult i16 %2, %0
+  %3 = icmp samesign ult i16 %2, %0
   ret i1 %3
 }
 
-; 28 occurrences:
+; 29 occurrences:
 ; assimp/optimized/LWOLoader.cpp.ll
 ; coremark/optimized/core_list_join.c.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
@@ -441,6 +464,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; icu/optimized/olsontz.ll
 ; icu/optimized/unames.ll
+; image-rs/optimized/4srzh4wujeew249y.ll
 ; minetest/optimized/dungeongen.cpp.ll
 ; nix/optimized/json-to-value.ll
 ; nlohmann_json/optimized/unit-bjdata.cpp.ll
@@ -463,7 +487,7 @@ entry:
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wireshark/optimized/packet-woww.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000061(i16 %0, i16 %1) #0 {
 entry:
   %2 = add nuw nsw i16 %1, 1
   %3 = icmp eq i16 %2, %0
@@ -511,10 +535,21 @@ entry:
 }
 
 ; 2 occurrences:
+; freetype/optimized/pcf.c.ll
+; lvgl/optimized/lv_file_explorer.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000026(i16 %0, i16 %1) #0 {
+entry:
+  %2 = add nsw i16 %1, 1
+  %3 = icmp slt i16 %2, %0
+  ret i1 %3
+}
+
+; 2 occurrences:
 ; postgres/optimized/nbtsearch.ll
 ; wireshark/optimized/packet-cp2179.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000028(i16 %0, i16 %1) #0 {
 entry:
   %2 = add nsw i16 %1, 1
   %3 = icmp ugt i16 %2, %0
@@ -524,10 +559,10 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/exthdrs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000078(i16 %0, i16 %1) #0 {
 entry:
   %2 = add nuw nsw i16 %1, 10
-  %3 = icmp ugt i16 %2, %0
+  %3 = icmp samesign ugt i16 %2, %0
   ret i1 %3
 }
 
@@ -535,7 +570,7 @@ entry:
 ; postgres/optimized/heapam.ll
 ; postgres/optimized/pruneheap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000024(i16 %0, i16 %1) #0 {
 entry:
   %2 = add nsw i16 %1, -1
   %3 = icmp ult i16 %2, %0
@@ -543,12 +578,12 @@ entry:
 }
 
 ; 1 occurrences:
-; freetype/optimized/pcf.c.ll
+; postgres/optimized/to_tsany.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000064(i16 %0, i16 %1) #0 {
 entry:
-  %2 = add nsw i16 %1, -128
-  %3 = icmp slt i16 %2, %0
+  %2 = add nuw nsw i16 %1, 1
+  %3 = icmp ult i16 %2, %0
   ret i1 %3
 }
 

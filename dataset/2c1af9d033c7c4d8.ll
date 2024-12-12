@@ -1,5 +1,6 @@
 
-; 22 occurrences:
+; 24 occurrences:
+; boost/optimized/format_args.ll
 ; cpython/optimized/mpdecimal.ll
 ; folly/optimized/CacheLocality.cpp.ll
 ; libjpeg-turbo/optimized/jquant1.c.ll
@@ -7,6 +8,7 @@
 ; linux/optimized/exthdrs.ll
 ; linux/optimized/tcp_input.ll
 ; llvm/optimized/GCOV.cpp.ll
+; lvgl/optimized/lv_mem_core_builtin.ll
 ; nuttx/optimized/lib_dtoa_engine.c.ll
 ; qemu/optimized/ahci.c.ll
 ; redis/optimized/fpconv_dtoa.ll

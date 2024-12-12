@@ -18,7 +18,7 @@ func000000000000006e:                   # @func000000000000006e
 	vsrl.vi	v10, v10, 1
 	vwsll.vi	v12, v10, 8
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vor.vv	v8, v12, v8
+	vor.vv	v8, v8, v12
 	ret
 func000000000000004e:                   # @func000000000000004e
 	lui	a0, 2
@@ -30,7 +30,7 @@ func000000000000004e:                   # @func000000000000004e
 	vsrl.vi	v10, v10, 7
 	vwsll.vi	v12, v10, 8
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vor.vv	v8, v12, v8
+	vor.vv	v8, v8, v12
 	ret
 func000000000000004c:                   # @func000000000000004c
 	bseti	a0, zero, 11
@@ -42,7 +42,7 @@ func000000000000004c:                   # @func000000000000004c
 	vsrl.vi	v10, v10, 7
 	vwsll.vi	v12, v10, 24
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vor.vv	v8, v12, v8
+	vor.vv	v8, v8, v12
 	ret
 func000000000000002e:                   # @func000000000000002e
 	li	a0, -576

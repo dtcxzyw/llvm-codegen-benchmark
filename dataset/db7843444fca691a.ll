@@ -17,7 +17,7 @@ entry:
   ret i64 %6
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; clamav/optimized/special.c.ll
 ; hdf5/optimized/H5EAcache.c.ll
 ; hdf5/optimized/H5FS.c.ll
@@ -26,7 +26,6 @@ entry:
 ; hdf5/optimized/H5FSstat.c.ll
 ; hdf5/optimized/H5HFcache.c.ll
 ; hdf5/optimized/H5HL.c.ll
-; hdf5/optimized/H5HLdblk.c.ll
 ; hdf5/optimized/H5Ofsinfo.c.ll
 ; lief/optimized/ssl_tls12_server.c.ll
 ; llvm/optimized/CGBlocks.cpp.ll

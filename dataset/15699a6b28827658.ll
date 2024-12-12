@@ -1,5 +1,5 @@
 
-; 157 occurrences:
+; 154 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcVerify.c.ll
 ; abc/optimized/aigFrames.c.ll
@@ -9,10 +9,6 @@
 ; abc/optimized/fraMan.c.ll
 ; abc/optimized/fraSim.c.ll
 ; abc/optimized/fraigMan.c.ll
-; abc/optimized/ifDec08.c.ll
-; abc/optimized/ifDec10.c.ll
-; abc/optimized/ifDec16.c.ll
-; abc/optimized/kitTruth.c.ll
 ; abc/optimized/saigPhase.c.ll
 ; abc/optimized/simUtils.c.ll
 ; abc/optimized/sswMan.c.ll
@@ -140,6 +136,7 @@
 ; openusd/optimized/resize.c.ll
 ; openusd/optimized/restoration.c.ll
 ; openusd/optimized/stbImage.cpp.ll
+; openusd/optimized/tessellation.cpp.ll
 ; postgres/optimized/brin.ll
 ; postgres/optimized/mvdistinct.ll
 ; postgres/optimized/regexec.ll
@@ -187,7 +184,7 @@ define i64 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = shl nuw nsw i64 %2, 2
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   ret i64 %4
 }
 
@@ -202,7 +199,7 @@ define i64 @func0000000000000006(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = shl nsw i64 %2, 2
-  %4 = mul nuw i64 %3, %0
+  %4 = mul nuw i64 %0, %3
   ret i64 %4
 }
 
@@ -236,7 +233,7 @@ define i64 @func0000000000000007(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = shl nsw i64 %2, 2
-  %4 = mul nuw nsw i64 %3, %0
+  %4 = mul nuw nsw i64 %0, %3
   ret i64 %4
 }
 

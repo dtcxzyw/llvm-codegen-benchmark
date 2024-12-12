@@ -1,5 +1,5 @@
 
-; 63 occurrences:
+; 64 occurrences:
 ; clamav/optimized/pe_icons.c.ll
 ; libwebp/optimized/alpha_processing.c.ll
 ; linux/optimized/intel_dpll_mgr.ll
@@ -55,6 +55,7 @@
 ; llvm/optimized/StmtProfile.cpp.ll
 ; llvm/optimized/ThreadSafetyCommon.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; miniaudio/optimized/unity.c.ll
 ; nanosvg/optimized/nanosvg.ll
 ; openjdk/optimized/cmspack.ll
@@ -72,7 +73,7 @@ entry:
   ret i32 %4
 }
 
-; 48 occurrences:
+; 52 occurrences:
 ; abc/optimized/kitCloud.c.ll
 ; clamav/optimized/pe_icons.c.ll
 ; coremark/optimized/core_matrix.c.ll
@@ -96,6 +97,10 @@ entry:
 ; linux/optimized/pci.ll
 ; linux/optimized/uncore_discovery.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
+; lvgl/optimized/lv_color_op.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; lvgl/optimized/lv_draw_sw_img.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/texture_rendering.cpp.ll
@@ -126,20 +131,16 @@ define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 8
   %3 = and i32 %2, 255
-  %4 = mul nuw nsw i32 %3, %0
+  %4 = mul nuw nsw i32 %0, %3
   ret i32 %4
 }
 
-; 11 occurrences:
+; 7 occurrences:
 ; libwebp/optimized/alpha_processing.c.ll
 ; libwebp/optimized/anim_decode.c.ll
 ; minetest/optimized/CImage.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
-; qemu/optimized/source_s_approxRecip32_1.c.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
-; spike/optimized/s_approxRecip32_1.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; typst-rs/optimized/18i60ist7isq7y2m.ll
 ; typst-rs/optimized/p1dgiootfedk7bo.ll
 ; Function Attrs: nounwind
@@ -147,16 +148,17 @@ define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 16
   %3 = and i32 %2, 65280
-  %4 = mul nuw i32 %3, %0
+  %4 = mul nuw i32 %0, %3
   ret i32 %4
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; abc/optimized/ifTruth.c.ll
 ; abc/optimized/kitCloud.c.ll
 ; abc/optimized/wlcMem.c.ll
 ; jq/optimized/jv_print.ll
 ; libwebp/optimized/picture_csp_enc.c.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; opencv/optimized/array.cpp.ll
 ; opencv/optimized/gfluidimgproc.cpp.ll
 ; openjdk/optimized/TransformHelper.ll

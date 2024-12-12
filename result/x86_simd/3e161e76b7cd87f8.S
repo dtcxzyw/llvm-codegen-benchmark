@@ -28,7 +28,7 @@
 	.byte	8                               # 0x8
 .LCPI0_3:
 	.zero	4,1
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vgf2p8affineqb	$0, .LCPI0_2(%rip){1to2}, %xmm1, %xmm1
 	vpternlogd	$236, .LCPI0_3(%rip){1to4}, %xmm0, %xmm1 # xmm1 = (xmm1 & mem) | xmm0
 	vpxor	%xmm0, %xmm0, %xmm0
@@ -66,10 +66,10 @@ func0000000000000031:                   # @func0000000000000031
 	.byte	2                               # 0x2
 .LCPI1_4:
 	.zero	4,120
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vgf2p8affineqb	$0, .LCPI1_3(%rip){1to2}, %xmm1, %xmm1
 	vpandd	.LCPI1_4(%rip){1to4}, %xmm1, %xmm1
-	vpaddb	%xmm0, %xmm1, %xmm0
+	vpaddb	%xmm1, %xmm0, %xmm0
 	vpcmpltub	.LCPI1_2(%rip), %xmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	retq

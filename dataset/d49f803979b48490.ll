@@ -1,8 +1,10 @@
 
-; 3 occurrences:
+; 5 occurrences:
 ; coreutils-rs/optimized/5csmbnxbvn5bvzoy.ll
 ; meilisearch-rs/optimized/7fmwz6nrtt7kwsj.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
+; zed-rs/optimized/3syn8d61makvd8ra76uhpcrmo.ll
+; zed-rs/optimized/eabk1i73d9nic55wlyvjkefow.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:

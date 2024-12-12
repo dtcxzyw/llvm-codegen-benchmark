@@ -1,5 +1,5 @@
 
-; 58 occurrences:
+; 59 occurrences:
 ; abc/optimized/bblif.c.ll
 ; abc/optimized/cuddReorder.c.ll
 ; abc/optimized/cuddZddReord.c.ll
@@ -23,6 +23,7 @@
 ; opencv/optimized/array.cpp.ll
 ; opencv/optimized/aruco.cpp.ll
 ; opencv/optimized/aruco_board.cpp.ll
+; opencv/optimized/audio_spectrogram.cpp.ll
 ; opencv/optimized/bif.cpp.ll
 ; opencv/optimized/calcHist_Demo.cpp.ll
 ; opencv/optimized/chessboard.cpp.ll
@@ -39,12 +40,12 @@
 ; opencv/optimized/matrix.cpp.ll
 ; opencv/optimized/nonrigid_icp.cpp.ll
 ; opencv/optimized/npr.cpp.ll
-; opencv/optimized/onnx_importer.cpp.ll
 ; opencv/optimized/perf_resize.cpp.ll
 ; opencv/optimized/rlof_localflow.cpp.ll
 ; opencv/optimized/scansegment.cpp.ll
 ; opencv/optimized/sift.dispatch.cpp.ll
 ; opencv/optimized/simple_color_balance.cpp.ll
+; opencv/optimized/speech_recognition.cpp.ll
 ; opencv/optimized/svm.cpp.ll
 ; opencv/optimized/tf_importer.cpp.ll
 ; opencv/optimized/umatrix.cpp.ll

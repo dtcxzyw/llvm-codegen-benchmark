@@ -37,6 +37,13 @@ func0000000000000007:                   # @func0000000000000007
 	li	a1, 64
 	subw	a0, a1, a0
 	ret
+func000000000000000a:                   # @func000000000000000a
+	slli	a0, a0, 4
+	li	a1, 128
+	subw	a1, a1, a0
+	slli	a0, a1, 32
+	srli	a0, a0, 32
+	ret
 func000000000000000b:                   # @func000000000000000b
 	slli	a0, a0, 1
 	li	a1, 686

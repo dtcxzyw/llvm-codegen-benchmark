@@ -3,7 +3,7 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	$-1, %edi
 	cmovnel	%edi, %eax
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	movq	%rsi, %rax
 	cmpl	$-1, %edi
 	cmovnel	%edi, %eax
@@ -23,32 +23,27 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	$239, %edi
 	cmovbl	%edi, %eax
 	retq
+func0000000000000041:                   # @func0000000000000041
+	movq	%rsi, %rax
+	cmpl	$-1, %edi
+	cmovnel	%edi, %eax
+	retq
+func0000000000000066:                   # @func0000000000000066
+	movq	%rsi, %rax
+	testl	%edi, %edi
+	cmovnsl	%edi, %eax
+	retq
 func0000000000000021:                   # @func0000000000000021
 	movq	%rsi, %rax
 	cmpl	$-1, %edi
 	cmovnel	%edi, %eax
 	retq
-func0000000000000024:                   # @func0000000000000024
-	movq	%rsi, %rax
-	cmpl	$1048576, %edi                  # imm = 0x100000
-	cmovael	%edi, %eax
-	retq
-func0000000000000036:                   # @func0000000000000036
-	movq	%rsi, %rax
-	testl	%edi, %edi
-	cmovnsl	%edi, %eax
-	retq
-func0000000000000011:                   # @func0000000000000011
-	movq	%rsi, %rax
-	cmpl	$-1, %edi
-	cmovnel	%edi, %eax
-	retq
-func0000000000000016:                   # @func0000000000000016
-	movq	%rsi, %rax
-	testl	%edi, %edi
-	cmovnsl	%edi, %eax
-	retq
 func0000000000000026:                   # @func0000000000000026
+	movq	%rsi, %rax
+	testl	%edi, %edi
+	cmovnsl	%edi, %eax
+	retq
+func0000000000000046:                   # @func0000000000000046
 	movq	%rsi, %rax
 	testl	%edi, %edi
 	cmovgl	%edi, %eax

@@ -12,7 +12,7 @@ func000000000000002b:                   # @func000000000000002b
 	andnl	%esi, %eax, %eax
 	addl	%edi, %eax
 	retq
-func000000000000006a:                   # @func000000000000006a
+func00000000000000aa:                   # @func00000000000000aa
 	addl	%edx, %esi
 	movl	%esi, %eax
 	sarl	$31, %eax

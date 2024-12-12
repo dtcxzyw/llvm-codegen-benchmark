@@ -1,4 +1,4 @@
-func0000000000000311:                   # @func0000000000000311
+func0000000000000c21:                   # @func0000000000000c21
 	sext.w	a1, a1
 	addi	a1, a1, -1
 	czero.eqz	a2, a2, a1
@@ -8,7 +8,7 @@ func0000000000000311:                   # @func0000000000000311
 	addi	a0, a0, -3
 	seqz	a0, a0
 	ret
-func000000000000031a:                   # @func000000000000031a
+func0000000000000c2a:                   # @func0000000000000c2a
 	sext.w	a1, a1
 	czero.eqz	a2, a2, a1
 	czero.nez	a0, a0, a1
@@ -16,7 +16,7 @@ func000000000000031a:                   # @func000000000000031a
 	sext.w	a0, a0
 	sgtz	a0, a0
 	ret
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000014a:                   # @func000000000000014a
 	sext.w	a1, a1
 	sgtz	a1, a1
 	czero.nez	a2, a2, a1
@@ -25,7 +25,7 @@ func00000000000000aa:                   # @func00000000000000aa
 	sext.w	a0, a0
 	sgtz	a0, a0
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	sext.w	a1, a1
 	addi	a1, a1, -4
 	czero.eqz	a2, a2, a1
@@ -35,7 +35,7 @@ func0000000000000011:                   # @func0000000000000011
 	addi	a0, a0, -4
 	seqz	a0, a0
 	ret
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	sext.w	a1, a1
 	addi	a1, a1, -1
 	czero.eqz	a2, a2, a1
@@ -44,20 +44,20 @@ func000000000000001c:                   # @func000000000000001c
 	sext.w	a0, a0
 	snez	a0, a0
 	ret
-func000000000000031c:                   # @func000000000000031c
+func0000000000000c34:                   # @func0000000000000c34
 	sext.w	a1, a1
-	addi	a1, a1, -255
 	czero.eqz	a2, a2, a1
 	czero.nez	a0, a0, a1
 	or	a0, a0, a2
 	sext.w	a0, a0
-	snez	a0, a0
+	sltiu	a0, a0, 16
 	ret
-func0000000000000316:                   # @func0000000000000316
+func0000000000000c38:                   # @func0000000000000c38
 	sext.w	a1, a1
 	czero.eqz	a2, a2, a1
 	czero.nez	a0, a0, a1
 	or	a0, a0, a2
 	sext.w	a0, a0
-	slti	a0, a0, 16
+	sltiu	a0, a0, 11
+	xori	a0, a0, 1
 	ret

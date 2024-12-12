@@ -24,15 +24,17 @@ func0000000000000006:                   # @func0000000000000006
 	retq
 func0000000000000007:                   # @func0000000000000007
 	movzbl	%dl, %ecx
-	leal	8(%rcx,%rsi), %eax
-	orl	%esi, %ecx
+	leal	8(%rsi,%rcx), %eax
+	movl	%esi, %edx
+	orl	%ecx, %edx
 	testb	$1, %dil
-	cmovel	%ecx, %eax
+	cmovel	%edx, %eax
 	retq
 func0000000000000003:                   # @func0000000000000003
 	movzbl	%dl, %ecx
-	leal	-16777216(%rcx,%rsi), %eax
-	orl	%esi, %ecx
+	leal	-16777216(%rsi,%rcx), %eax
+	movl	%esi, %edx
+	orl	%ecx, %edx
 	testb	$1, %dil
-	cmovel	%ecx, %eax
+	cmovel	%edx, %eax
 	retq

@@ -37,3 +37,17 @@ func0000000000000010:                   # @func0000000000000010
 	andb	%sil, %al
 	orb	%dil, %al
 	retq
+func0000000000000030:                   # @func0000000000000030
+	cmpl	$100, %edx
+	setae	%al
+	notb	%sil
+	andb	%sil, %al
+	orb	%dil, %al
+	retq
+func0000000000000028:                   # @func0000000000000028
+	cmpl	$4096, %edx                     # imm = 0x1000
+	setb	%al
+	notb	%sil
+	andb	%sil, %al
+	orb	%dil, %al
+	retq

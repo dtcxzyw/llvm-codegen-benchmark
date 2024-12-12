@@ -1,5 +1,6 @@
 
-; 19 occurrences:
+; 21 occurrences:
+; boost/optimized/test_iostream.ll
 ; cmake/optimized/archive_string.c.ll
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
@@ -19,6 +20,7 @@
 ; quickjs/optimized/libunicode.ll
 ; tokenizers-rs/optimized/1ve5rid4048y19bt.ll
 ; z3/optimized/theory_arith.cpp.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i16 %0) #0 {
 entry:

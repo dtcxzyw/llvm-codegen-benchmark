@@ -14,7 +14,7 @@ func0000000000000001:                   # @func0000000000000001
 	.quad	40                              # 0x28
 .LCPI1_2:
 	.quad	36                              # 0x24
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	vpternlogd	$254, %xmm2, %xmm1, %xmm0 # xmm0 = xmm0 | xmm1 | xmm2
 	vpcmpltud	.LCPI1_0(%rip){1to4}, %xmm0, %k1
 	vpbroadcastq	.LCPI1_1(%rip), %ymm0   # ymm0 = [40,40,40,40]
@@ -22,7 +22,7 @@ func0000000000000034:                   # @func0000000000000034
 	retq
 .LCPI2_0:
 	.quad	4294967296                      # 0x100000000
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpternlogd	$254, %xmm2, %xmm1, %xmm0 # xmm0 = xmm0 | xmm1 | xmm2
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpcmpeqd	%xmm1, %xmm0, %k1

@@ -82,7 +82,7 @@ entry:
 ; meshlab/optimized/filter_fractal.cpp.ll
 ; openjdk/optimized/sharedRuntimeTrans.ll
 ; Function Attrs: nounwind
-define double @func0000000000000004(double %0, double %1, i32 %2) #0 {
+define double @func0000000000000014(double %0, double %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2146435072
   %4 = icmp eq i32 %3, 0

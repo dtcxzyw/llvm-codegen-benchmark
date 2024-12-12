@@ -1,7 +1,9 @@
 
-; 36 occurrences:
+; 38 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; arrow/optimized/fixed-dtoa.cc.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/faulthandler.ll
 ; cpython/optimized/mpdecimal.ll
 ; double_conversion/optimized/fixed-dtoa.cc.ll

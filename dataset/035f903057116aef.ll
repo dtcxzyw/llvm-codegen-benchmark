@@ -16,13 +16,14 @@ entry:
   ret i64 %5
 }
 
-; 42 occurrences:
+; 43 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/alloc_lib.ll
 ; clamav/optimized/iso9660.c.ll
 ; cpython/optimized/obmalloc.ll
 ; git/optimized/diff-delta.ll

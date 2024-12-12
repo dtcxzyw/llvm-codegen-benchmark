@@ -4,7 +4,7 @@ func0000000000000008:                   # @func0000000000000008
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
 	vpbroadcastq	.LCPI0_0(%rip), %ymm3   # ymm3 = [1,1,1,1]
 	vpsllvq	%ymm2, %ymm3, %ymm2
-	vpaddq	%ymm1, %ymm2, %ymm1
+	vpaddq	%ymm2, %ymm1, %ymm1
 	vpand	%ymm0, %ymm1, %ymm0
 	retq
 .LCPI1_0:
@@ -14,7 +14,7 @@ func0000000000000018:                   # @func0000000000000018
 	vpbroadcastq	.LCPI1_0(%rip), %ymm3   # ymm3 = [1,1,1,1]
 	vpsllvq	%ymm2, %ymm3, %ymm2
 	vpaddq	%ymm1, %ymm2, %ymm1
-	vpand	%ymm0, %ymm1, %ymm0
+	vpand	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI2_0:
 	.quad	1                               # 0x1
@@ -31,7 +31,7 @@ func0000000000000010:                   # @func0000000000000010
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
 	vpbroadcastq	.LCPI3_0(%rip), %ymm3   # ymm3 = [4096,4096,4096,4096]
 	vpsllvq	%ymm2, %ymm3, %ymm2
-	vpaddq	%ymm1, %ymm2, %ymm1
+	vpaddq	%ymm2, %ymm1, %ymm1
 	vpand	%ymm0, %ymm1, %ymm0
 	retq
 .LCPI4_0:

@@ -28,8 +28,9 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; coreutils-rs/optimized/2jm5bfr1qa6ga934.ll
+; lvgl/optimized/lv_indev_scroll.ll
 ; ockam-rs/optimized/8g2r22yshp3qi00.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i1 %1, i8 %2) #0 {

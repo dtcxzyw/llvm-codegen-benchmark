@@ -16,7 +16,7 @@ func0000000000000064:                   # @func0000000000000064
 	leaq	(%rcx,%rcx,2), %rcx
 	subq	%rcx, %rax
 	retq
-func000000000000002e:                   # @func000000000000002e
+func000000000000002f:                   # @func000000000000002f
 	leaq	-1(%rsi), %rdx
 	movabsq	$-2049638230412172401, %rax     # imm = 0xE38E38E38E38E38F
 	mulxq	%rax, %rax, %rax

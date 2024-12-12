@@ -1,10 +1,10 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	testl	$65528, %esi                    # imm = 0xFFF8
 	cmovnel	%esi, %edi
 	testb	%dil, %dil
 	sete	%al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	movl	%edi, %eax
 	movl	%esi, %ecx
 	notl	%ecx

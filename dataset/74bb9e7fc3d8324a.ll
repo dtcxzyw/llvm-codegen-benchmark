@@ -1,7 +1,8 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; abc/optimized/fraSim.c.ll
 ; linux/optimized/hid-lg4ff.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; openusd/optimized/stbImage.cpp.ll

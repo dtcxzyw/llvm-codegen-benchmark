@@ -12,7 +12,7 @@ entry:
   %3 = add i32 %1, -1
   %4 = add i32 %3, %2
   %5 = sdiv i32 %4, %1
-  %6 = icmp sgt i32 %5, %0
+  %6 = icmp slt i32 %0, %5
   ret i1 %6
 }
 
@@ -29,7 +29,7 @@ entry:
   %3 = add i32 %1, -1
   %4 = add i32 %3, %2
   %5 = sdiv i32 %4, %1
-  %6 = icmp eq i32 %5, %0
+  %6 = icmp eq i32 %0, %5
   ret i1 %6
 }
 
@@ -42,43 +42,43 @@ entry:
   %3 = add i32 %1, -1
   %4 = add i32 %3, %2
   %5 = sdiv i32 %4, %1
-  %6 = icmp ugt i32 %5, %0
+  %6 = icmp ult i32 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; slurm/optimized/gres_filter.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000087(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000107(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, -1
   %4 = add i32 %3, %2
   %5 = sdiv i32 %4, %1
-  %6 = icmp sge i32 %5, %0
+  %6 = icmp sle i32 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; slurm/optimized/gres_filter.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000010a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, -1
   %4 = add i32 %3, %2
   %5 = sdiv i32 %4, %1
-  %6 = icmp slt i32 %5, %0
+  %6 = icmp sgt i32 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; slurm/optimized/gres_filter.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000106(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, -1
   %4 = add i32 %3, %2
   %5 = sdiv i32 %4, %1
-  %6 = icmp sgt i32 %5, %0
+  %6 = icmp slt i32 %0, %5
   ret i1 %6
 }
 
@@ -90,7 +90,7 @@ entry:
   %3 = add i32 %1, -1
   %4 = add i32 %3, %2
   %5 = sdiv i32 %4, %1
-  %6 = icmp slt i32 %5, %0
+  %6 = icmp sgt i32 %0, %5
   ret i1 %6
 }
 

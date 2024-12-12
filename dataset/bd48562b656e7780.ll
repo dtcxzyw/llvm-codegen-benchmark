@@ -1,5 +1,5 @@
 
-; 206 occurrences:
+; 208 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
 ; assimp/optimized/Assimp.cpp.ll
@@ -10,6 +10,7 @@
 ; assimp/optimized/SMDLoader.cpp.ll
 ; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
 ; assimp/optimized/X3DImporter_Group.cpp.ll
+; boost/optimized/from_chars.ll
 ; box2d/optimized/b2_contact_solver.cpp.ll
 ; box2d/optimized/b2_distance_joint.cpp.ll
 ; box2d/optimized/b2_friction_joint.cpp.ll
@@ -110,11 +111,11 @@
 ; imgui/optimized/imgui_draw.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; meshlab/optimized/coordinateframe.cpp.ll
 ; meshlab/optimized/edit_point.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
@@ -206,11 +207,12 @@
 ; recastnavigation/optimized/DebugDraw.cpp.ll
 ; recastnavigation/optimized/DetourObstacleAvoidance.cpp.ll
 ; redis/optimized/lolwut5.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1) #0 {
 entry:
-  %2 = fneg float %0
-  %3 = fmul float %2, %1
+  %2 = fneg float %1
+  %3 = fmul float %0, %2
   ret float %3
 }
 

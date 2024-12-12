@@ -5,23 +5,9 @@ func0000000000000030:                   # @func0000000000000030
 	andb	$1, %dil
 	orb	%dil, %al
 	retq
-func0000000000000005:                   # @func0000000000000005
-	andl	$37120, %esi                    # imm = 0x9100
-	cmpl	$256, %esi                      # imm = 0x100
-	sete	%al
-	andb	$-2, %dil
-	orb	%dil, %al
-	retq
 func0000000000000031:                   # @func0000000000000031
 	testl	$528, %esi                      # imm = 0x210
 	setne	%al
-	andb	$-2, %dil
-	orb	%dil, %al
-	retq
-func0000000000000021:                   # @func0000000000000021
-	movzbl	%sil, %eax
-	cmpl	$3, %eax
-	setae	%al
 	andb	$-2, %dil
 	orb	%dil, %al
 	retq
@@ -29,5 +15,11 @@ func0000000000000004:                   # @func0000000000000004
 	testb	$16, %sil
 	sete	%al
 	andb	$1, %dil
+	orb	%dil, %al
+	retq
+func0000000000000005:                   # @func0000000000000005
+	testb	$32, %sil
+	sete	%al
+	andb	$-2, %dil
 	orb	%dil, %al
 	retq

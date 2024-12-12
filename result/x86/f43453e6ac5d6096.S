@@ -1,4 +1,4 @@
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	movzbl	%dl, %eax
 	andl	$3840, %esi                     # imm = 0xF00
 	orl	%eax, %esi

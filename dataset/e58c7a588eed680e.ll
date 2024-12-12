@@ -1,12 +1,12 @@
 
 ; 19 occurrences:
 ; abc/optimized/verCore.c.ll
-; assimp/optimized/B3DImporter.cpp.ll
 ; gromacs/optimized/gmx_spatial.cpp.ll
 ; icu/optimized/utrie_swap.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libwebp/optimized/muxedit.c.ll
 ; linux/optimized/tcp_input.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; opencv/optimized/lsc.cpp.ll
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
@@ -28,8 +28,10 @@ entry:
   ret i1 %5
 }
 
-; 49 occurrences:
+; 51 occurrences:
 ; abc/optimized/deflate.c.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; clamav/optimized/matcher-pcre.c.ll
 ; cmake/optimized/cmTargetLinkLibrariesCommand.cxx.ll
 ; coreutils-rs/optimized/2qsl5bwp4bvo535d.ll
@@ -82,12 +84,12 @@ entry:
 define i1 @func000000000000000c(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, -1
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
 
-; 31 occurrences:
+; 30 occurrences:
 ; cmake/optimized/test_int_C.c.ll
 ; cmake/optimized/test_int_CXX.cxx.ll
 ; duckdb/optimized/ub_duckdb_operator_csv_scanner.cpp.ll
@@ -108,7 +110,6 @@ entry:
 ; luau/optimized/lvmutils.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; ncnn/optimized/net.cpp.ll
-; openspiel/optimized/chess_board.cc.ll
 ; openspiel/optimized/tic_tac_toe.cc.ll
 ; openusd/optimized/bigRWMutex.cpp.ll
 ; openusd/optimized/patchTableFactory.cpp.ll
@@ -128,8 +129,7 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
-; abc/optimized/giaSatLE.c.ll
+; 6 occurrences:
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; linux/optimized/dev_ioctl.ll
 ; linux/optimized/yenta_socket.ll
@@ -140,7 +140,7 @@ entry:
 define i1 @func0000000000000004(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 2
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -159,13 +159,12 @@ entry:
 define i1 @func0000000000000006(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 1024
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
 
-; 3 occurrences:
-; darktable/optimized/introspection_highlights.c.ll
+; 2 occurrences:
 ; gromacs/optimized/bwt.c.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; Function Attrs: nounwind

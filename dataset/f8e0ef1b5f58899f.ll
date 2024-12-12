@@ -1,5 +1,5 @@
 
-; 89 occurrences:
+; 90 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; abc/optimized/compress.c.ll
 ; cmake/optimized/blocksort.c.ll
@@ -14,6 +14,7 @@
 ; luajit/optimized/lib_string.ll
 ; luajit/optimized/lib_string_dyn.ll
 ; luau/optimized/lstrlib.cpp.ll
+; lvgl/optimized/lv_obj_tree.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/grid.cpp.ll
 ; mitsuba3/optimized/sdfgrid.cpp.ll
@@ -98,9 +99,10 @@ entry:
   ret i32 %4
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; clamav/optimized/others.c.ll
 ; jq/optimized/jv.ll
+; lvgl/optimized/lv_textarea.ll
 ; opencv/optimized/datastructs.cpp.ll
 ; opencv/optimized/flatten_layer.cpp.ll
 ; opencv/optimized/onnx_importer.cpp.ll
@@ -135,9 +137,9 @@ entry:
 ; gromacs/optimized/md5.c.ll
 ; gromacs/optimized/md5.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000023(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000063(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %0, 56
+  %2 = icmp samesign ugt i32 %0, 56
   %3 = select i1 %2, i32 %1, i32 8
   %4 = add nuw nsw i32 %3, %0
   ret i32 %4
@@ -181,11 +183,11 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ucnv2022.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000051(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %0, 159
+  %2 = icmp samesign ult i32 %0, 159
   %3 = select i1 %2, i32 %1, i32 -126
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -196,7 +198,7 @@ define i32 @func0000000000000029(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %0, 0
   %3 = select i1 %2, i32 %1, i32 0
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 

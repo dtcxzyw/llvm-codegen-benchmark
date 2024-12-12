@@ -1,6 +1,5 @@
 
-; 6 occurrences:
-; ceres/optimized/covariance_impl.cc.ll
+; 5 occurrences:
 ; llvm/optimized/Instructions.cpp.ll
 ; llvm/optimized/MoveChecker.cpp.ll
 ; llvm/optimized/TailRecursionElimination.cpp.ll

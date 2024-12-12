@@ -5,12 +5,12 @@
 ; qemu/optimized/hw_dma_sifive_pdma.c.ll
 ; qemu/optimized/hw_net_cadence_gem.c.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000f8(ptr %0, i32 %1) #0 {
+define ptr @func00000000000000fc(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = or disjoint i32 %2, 448
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 9484
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 9484
   %6 = getelementptr [512 x i32], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
@@ -19,13 +19,13 @@ entry:
 ; abc/optimized/aigRet.c.ll
 ; php/optimized/pcre2_substring.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000fa(ptr %0, i32 %1) #0 {
+define ptr @func00000000000000ff(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = or disjoint i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 104
-  %6 = getelementptr nusw [131072 x i64], ptr %5, i64 0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 104
+  %6 = getelementptr nusw nuw [131072 x i64], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 
@@ -33,18 +33,17 @@ entry:
 ; stockfish/optimized/evaluate.ll
 ; stockfish/optimized/position.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000002f(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 3
   %3 = or disjoint i32 %2, 6
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 336
-  %6 = getelementptr nusw [16 x i32], ptr %5, i64 0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 336
+  %6 = getelementptr nusw nuw [16 x i32], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 
-; 2 occurrences:
-; cpython/optimized/hamt.ll
+; 1 occurrences:
 ; linux/optimized/hdac_bus.ll
 ; Function Attrs: nounwind
 define ptr @func00000000000000f0(ptr %0, i32 %1) #0 {

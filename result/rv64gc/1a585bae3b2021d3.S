@@ -31,3 +31,14 @@ func0000000000000004:                   # @func0000000000000004
 	addi	a1, a1, -1
 	and	a0, a0, a1
 	ret
+func0000000000000014:                   # @func0000000000000014
+	sltiu	a1, a1, 9
+	addi	a1, a1, -1
+	and	a0, a0, a1
+	ret
+func0000000000000018:                   # @func0000000000000018
+	srli	a1, a1, 31
+	snez	a1, a1
+	addi	a1, a1, -1
+	and	a0, a0, a1
+	ret

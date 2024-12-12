@@ -5,7 +5,7 @@
 func0000000000000002:                   # @func0000000000000002
 	vdivsd	%xmm2, %xmm1, %xmm1
 	vaddsd	.LCPI0_0(%rip), %xmm1, %xmm1
-	vmulsd	%xmm0, %xmm1, %xmm0
+	vmulsd	%xmm1, %xmm0, %xmm0
 	vmovsd	.LCPI0_1(%rip), %xmm1           # xmm1 = [-1.0E+0,0.0E+0]
 	vucomisd	%xmm0, %xmm1
 	seta	%al
@@ -17,7 +17,7 @@ func0000000000000002:                   # @func0000000000000002
 func0000000000000008:                   # @func0000000000000008
 	vdivsd	%xmm2, %xmm1, %xmm1
 	vaddsd	.LCPI1_0(%rip), %xmm1, %xmm1
-	vmulsd	%xmm0, %xmm1, %xmm0
+	vmulsd	%xmm1, %xmm0, %xmm0
 	vcmpeqsd	.LCPI1_1(%rip), %xmm0, %k0
 	kmovd	%k0, %eax
 	retq

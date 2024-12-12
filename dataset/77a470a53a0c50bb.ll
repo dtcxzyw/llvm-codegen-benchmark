@@ -1,5 +1,5 @@
 
-; 696 occurrences:
+; 685 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Fxch.c.ll
@@ -10,7 +10,6 @@
 ; abc/optimized/abcAttach.c.ll
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcGen.c.ll
-; abc/optimized/abcLog.c.ll
 ; abc/optimized/abcLut.c.ll
 ; abc/optimized/abcNpn.c.ll
 ; abc/optimized/abcOdc.c.ll
@@ -77,7 +76,6 @@
 ; abc/optimized/cecSolve.c.ll
 ; abc/optimized/cgtCore.c.ll
 ; abc/optimized/covMinSop.c.ll
-; abc/optimized/covMinUtil.c.ll
 ; abc/optimized/cswCut.c.ll
 ; abc/optimized/cuddApa.c.ll
 ; abc/optimized/cuddLinear.c.ll
@@ -131,7 +129,6 @@
 ; abc/optimized/llb4Nonlin.c.ll
 ; abc/optimized/lpkCut.c.ll
 ; abc/optimized/mfsResub.c.ll
-; abc/optimized/mfsSat.c.ll
 ; abc/optimized/mvcApi.c.ll
 ; abc/optimized/mvcDivide.c.ll
 ; abc/optimized/mvcLits.c.ll
@@ -156,7 +153,6 @@
 ; abc/optimized/sfmSat.c.ll
 ; abc/optimized/simMan.c.ll
 ; abc/optimized/simSupp.c.ll
-; abc/optimized/simSym.c.ll
 ; abc/optimized/simSymSat.c.ll
 ; abc/optimized/simSymSim.c.ll
 ; abc/optimized/simSymStr.c.ll
@@ -274,14 +270,12 @@
 ; linux/optimized/netdev.ll
 ; linux/optimized/pcm_lib.ll
 ; linux/optimized/pcm_native.ll
-; linux/optimized/pkeys.ll
 ; linux/optimized/r8169_main.ll
 ; linux/optimized/radix-tree.ll
 ; linux/optimized/raw.ll
 ; linux/optimized/selection.ll
 ; linux/optimized/services.ll
 ; linux/optimized/tg3.ll
-; linux/optimized/utownerid.ll
 ; linux/optimized/vector.ll
 ; linux/optimized/vfs_super.ll
 ; linux/optimized/xfrm_replay.ll
@@ -326,7 +320,6 @@
 ; llvm/optimized/RDFGraph.cpp.ll
 ; llvm/optimized/RDFRegisters.cpp.ll
 ; llvm/optimized/RISCVCallLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVRegisterInfo.cpp.ll
 ; llvm/optimized/RegAllocFast.cpp.ll
@@ -364,7 +357,6 @@
 ; luajit/optimized/lj_crecord_dyn.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; miniaudio/optimized/unity.c.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
@@ -376,8 +368,6 @@
 ; mold/optimized/output-chunks.cc.RV32LE.cc.ll
 ; mold/optimized/output-chunks.cc.SH4.cc.ll
 ; nuttx/optimized/fs_select.c.ll
-; nuttx/optimized/sig_addset.c.ll
-; nuttx/optimized/sig_delset.c.ll
 ; oniguruma/optimized/regcomp.ll
 ; oniguruma/optimized/regexec.ll
 ; oniguruma/optimized/regparse.ll
@@ -569,7 +559,6 @@
 ; z3/optimized/bv2real_rewriter.cpp.ll
 ; z3/optimized/bv_slice.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/collect_statistics_tactic.cpp.ll
 ; z3/optimized/demodulator_rewriter.cpp.ll
 ; z3/optimized/demodulator_simplifier.cpp.ll
@@ -704,7 +693,7 @@ entry:
   ret i32 %2
 }
 
-; 83 occurrences:
+; 84 occurrences:
 ; abc/optimized/acecCo.c.ll
 ; abc/optimized/acecPolyn.c.ll
 ; abc/optimized/acecRe.c.ll
@@ -734,7 +723,6 @@ entry:
 ; linux/optimized/libahci.ll
 ; linux/optimized/libata-core.ll
 ; linux/optimized/tcp_output.ll
-; linux/optimized/vsmp_64.ll
 ; llvm/optimized/AArch64AsmPrinter.cpp.ll
 ; llvm/optimized/ARMWinEH.cpp.ll
 ; llvm/optimized/ExpandLargeFpConvert.cpp.ll
@@ -788,6 +776,8 @@ entry:
 ; wolfssl/optimized/rsa.c.ll
 ; z3/optimized/bit_util.cpp.ll
 ; z3/optimized/fixed_bit_vector.cpp.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0) #0 {
 entry:
@@ -796,10 +786,9 @@ entry:
   ret i32 %2
 }
 
-; 565 occurrences:
+; 553 occurrences:
 ; abc/optimized/aigTsim.c.ll
 ; abc/optimized/bmcCexMin2.c.ll
-; abc/optimized/covMinUtil.c.ll
 ; abc/optimized/giaEra2.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/ifDec07.c.ll
@@ -917,13 +906,11 @@ entry:
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/catchup.c.ll
 ; hyperscan/optimized/fdr_compile.cpp.ll
-; hyperscan/optimized/init.c.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; hyperscan/optimized/mpv.c.ll
 ; hyperscan/optimized/ng_width.cpp.ll
 ; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/repeat.c.ll
-; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; hyperscan/optimized/shufticompile.cpp.ll
 ; hyperscan/optimized/smallwrite_build.cpp.ll
 ; hyperscan/optimized/som_runtime.c.ll
@@ -968,13 +955,11 @@ entry:
 ; linux/optimized/fault.ll
 ; linux/optimized/gup.ll
 ; linux/optimized/hub.ll
-; linux/optimized/i915_irq.ll
 ; linux/optimized/i915_pmu.ll
 ; linux/optimized/i915_syncmap.ll
 ; linux/optimized/inflate.ll
 ; linux/optimized/intel_cx0_phy.ll
 ; linux/optimized/intel_dram.ll
-; linux/optimized/intel_snps_phy.ll
 ; linux/optimized/irq.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mpparse.ll
@@ -1035,7 +1020,6 @@ entry:
 ; llvm/optimized/RISCVBaseInfo.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVMakeCompressible.cpp.ll
@@ -1076,14 +1060,11 @@ entry:
 ; luajit/optimized/lj_cdata_dyn.ll
 ; luajit/optimized/lj_cparse.ll
 ; luajit/optimized/lj_cparse_dyn.ll
-; luajit/optimized/lj_vmevent.ll
-; luajit/optimized/lj_vmevent_dyn.ll
 ; meilisearch-rs/optimized/2bqmf34tdvo23w8l.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/imagefilters.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/x86formatter.cpp.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
@@ -1128,7 +1109,6 @@ entry:
 ; node/optimized/libnode.crypto_aes.ll
 ; node/optimized/linux.ll
 ; nori/optimized/nanovg.c.ll
-; nuttx/optimized/lib_wcwidth.c.ll
 ; ockam-rs/optimized/2lsooj7vvp8k6cii.ll
 ; ockam-rs/optimized/2ngtaq92gcad4v6j.ll
 ; ockam-rs/optimized/3srf4j1tze6zn8ex.ll
@@ -1181,7 +1161,6 @@ entry:
 ; postgres/optimized/brin_bloom.ll
 ; postgres/optimized/catcache.ll
 ; postgres/optimized/clog.ll
-; postgres/optimized/datapagemap.ll
 ; postgres/optimized/dbcommands.ll
 ; postgres/optimized/event_trigger.ll
 ; postgres/optimized/execExprInterp.ll
@@ -1344,7 +1323,6 @@ entry:
 ; wireshark/optimized/proto.c.ll
 ; wireshark/optimized/sharkd.c.ll
 ; wireshark/optimized/sharkd_session.c.ll
-; wireshark/optimized/wimax_utils.c.ll
 ; wolfssl/optimized/rsa.c.ll
 ; yosys/optimized/fstapi.ll
 ; yosys/optimized/setundef.ll

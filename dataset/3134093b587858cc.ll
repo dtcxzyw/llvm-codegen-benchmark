@@ -13,11 +13,10 @@ entry:
   ret i64 %7
 }
 
-; 28 occurrences:
+; 27 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; hermes/optimized/RuntimeModule.cpp.ll
 ; z3/optimized/automaton.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/dl_mk_rule_inliner.cpp.ll
 ; z3/optimized/emonics.cpp.ll
 ; z3/optimized/indexed_vector.cpp.ll

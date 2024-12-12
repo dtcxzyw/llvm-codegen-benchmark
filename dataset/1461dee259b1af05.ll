@@ -19,7 +19,7 @@ entry:
   ret i64 %5
 }
 
-; 121 occurrences:
+; 120 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/strtod.cc.ll
 ; assimp/optimized/IFCBoolean.cpp.ll
@@ -63,8 +63,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -129,6 +127,7 @@ entry:
 ; openusd/optimized/strtod.cc.ll
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; php/optimized/dtoa.ll
+; php/optimized/fastcgi.ll
 ; php/optimized/spl_iterators.ll
 ; php/optimized/strtod.ll
 ; qemu/optimized/source_s_addMagsF16.c.ll
@@ -150,7 +149,7 @@ entry:
   ret i64 %5
 }
 
-; 74 occurrences:
+; 72 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; clamav/optimized/htmlnorm.c.ll
 ; clamav/optimized/untar.c.ll
@@ -212,10 +211,8 @@ entry:
 ; php/optimized/der.ll
 ; postgres/optimized/execTuples.ll
 ; postgres/optimized/extended_stats.ll
-; postgres/optimized/shm_toc.ll
 ; postgres/optimized/slru.ll
 ; qemu/optimized/accel_tcg_translate-all.c.ll
-; qemu/optimized/hw_rtc_goldfish_rtc.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; quickjs/optimized/libbf.ll
 ; redis/optimized/rax.ll
@@ -234,15 +231,14 @@ entry:
   ret i64 %5
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; abc/optimized/extraUtilMult.c.ll
 ; arrow/optimized/bitmap_ops.cc.ll
+; boost/optimized/default_formatter_factory.ll
 ; clamav/optimized/matcher-byte-comp.c.ll
 ; duckdb/optimized/ub_duckdb_aggr_distr.cpp.ll
-; glog/optimized/signalhandler.cc.ll
 ; libquic/optimized/p224-64.c.ll
 ; openmpi/optimized/osc_sm_component.ll
-; php/optimized/fastcgi.ll
 ; php/optimized/zend_inference.ll
 ; postgres/optimized/slru.ll
 ; protobuf/optimized/parser.cc.ll
@@ -251,7 +247,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, 4294967295
+  %3 = and i64 %2, -8
   %4 = add nsw i64 %0, %1
   %5 = add nsw i64 %4, %3
   ret i64 %5

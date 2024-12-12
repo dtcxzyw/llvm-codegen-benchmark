@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 13 occurrences:
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/intel_bios.ll
 ; llvm/optimized/BitcodeWriter.cpp.ll
@@ -7,7 +7,6 @@
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; ncnn/optimized/mat.cpp.ll
-; nuttx/optimized/sched_getscheduler.c.ll
 ; stockfish/optimized/position.ll
 ; wireshark/optimized/packet-ansi_637.c.ll
 ; wireshark/optimized/packet-btbredr_rf.c.ll

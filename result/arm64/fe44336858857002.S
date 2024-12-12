@@ -1,12 +1,9 @@
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	sub	v0.2d, v0.2d, v2.2d
-	sub	v1.2d, v1.2d, v3.2d
-	sshr	v3.2d, v0.2d, #3
-	sshr	v2.2d, v1.2d, #3
-	usra	v3.2d, v0.2d, #63
-	usra	v2.2d, v1.2d, #63
-	shrn	v0.2s, v3.2d, #1
-	shrn2	v0.4s, v2.2d, #1
+	sub	x8, x0, x1
+	lsr	x9, x8, #3
+	add	x8, x9, x8, lsr #63
+	lsr	x0, x8, #1
+                                        // kill: def $w0 killed $w0 killed $x0
 	ret
                                         // -- End function

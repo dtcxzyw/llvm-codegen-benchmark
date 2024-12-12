@@ -26,11 +26,6 @@ func0000000000000000:                   # @func0000000000000000
 	slli	a1, a1, 12
 	sub	a0, a0, a1
 	ret
-func0000000000000007:                   # @func0000000000000007
-	add	a1, a1, a2
-	andi	a1, a1, 3
-	sub	a0, a0, a1
-	ret
 func0000000000000008:                   # @func0000000000000008
 	add	a1, a1, a2
 	slli	a1, a1, 32
@@ -59,5 +54,10 @@ func0000000000000005:                   # @func0000000000000005
 	add	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 32
+	sub	a0, a0, a1
+	ret
+func0000000000000007:                   # @func0000000000000007
+	add	a1, a1, a2
+	andi	a1, a1, 15
 	sub	a0, a0, a1
 	ret

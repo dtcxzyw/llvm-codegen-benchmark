@@ -1,10 +1,9 @@
 
-; 228 occurrences:
+; 229 occurrences:
 ; abc/optimized/abcCollapse.c.ll
 ; abc/optimized/abcDress3.c.ll
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/abcNtbdd.c.ll
-; abc/optimized/abcOrder.c.ll
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/acbMfs.c.ll
@@ -63,6 +62,7 @@
 ; abc/optimized/xsatSolverAPI.c.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/to_chars.ll
 ; bullet3/optimized/btDantzigLCP.ll
 ; bullet3/optimized/btMultiBodyConstraintSolver.ll
 ; clamav/optimized/rs.cpp.ll
@@ -110,6 +110,8 @@
 ; luajit/optimized/minilua.ll
 ; luau/optimized/CodeGenUtils.cpp.ll
 ; luau/optimized/lbuiltins.cpp.ll
+; lvgl/optimized/lv_draw_sw.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
@@ -121,7 +123,6 @@
 ; nori/optimized/nanovg.c.ll
 ; oiio/optimized/sgioutput.cpp.ll
 ; oiio/optimized/targaoutput.cpp.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
 ; openblas/optimized/dsbgst.c.ll
@@ -232,7 +233,7 @@
 define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
@@ -266,7 +267,7 @@ entry:
 define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }

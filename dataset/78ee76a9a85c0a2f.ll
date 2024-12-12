@@ -14,13 +14,14 @@ entry:
   ret ptr %5
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_hotpixels.c.ll
 ; darktable/optimized/introspection_retouch.c.ll
 ; graphviz/optimized/make_map.c.ll
 ; openblas/optimized/dtgevc.c.ll
+; opencv/optimized/tree.cpp.ll
 ; postgres/optimized/jsonpath.ll
 ; stb/optimized/stb_connected_components.c.ll
 ; Function Attrs: nounwind

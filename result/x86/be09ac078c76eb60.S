@@ -10,8 +10,3 @@ func0000000000000019:                   # @func0000000000000019
 	cmovel	%esi, %eax
 	andl	$63, %eax
 	retq
-func0000000000000009:                   # @func0000000000000009
-	cmpl	$8, %edx
-	cmovael	%esi, %edi
-	movzbl	%dil, %eax
-	retq

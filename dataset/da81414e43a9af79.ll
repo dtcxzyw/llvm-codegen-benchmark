@@ -1,31 +1,29 @@
 
-%struct.rb_econv_elem_t.2485295 = type { ptr, ptr, ptr, ptr, ptr, i32 }
-%"struct.std::pair.2635679" = type { i32, i32 }
-%struct._zval_struct.2680004 = type { %union._zend_value.2680005, %union.anon.2680006, %union.anon.2.2680007 }
-%union._zend_value.2680005 = type { i64 }
-%union.anon.2680006 = type { i32 }
-%union.anon.2.2680007 = type { i32 }
-%"struct.std::pair.3087.2948581" = type { i32, %"class.clang::DiagnosticMapping.2948582" }
-%"class.clang::DiagnosticMapping.2948582" = type { i8, [3 x i8] }
-%class.QPointF.3260221 = type { double, double }
-%"class.cv::Point_.3566796" = type { float, float }
-%"class.eastl::tuple.62.3716058" = type { %"struct.eastl::Internal::TupleImpl.63.3716059" }
-%"struct.eastl::Internal::TupleImpl.63.3716059" = type { %"class.eastl::Internal::TupleLeaf.28.3716060", %"class.eastl::Internal::TupleLeaf.64.3716061" }
-%"class.eastl::Internal::TupleLeaf.28.3716060" = type { i64 }
-%"class.eastl::Internal::TupleLeaf.64.3716061" = type { %struct.PaddingStruct.3716062 }
-%struct.PaddingStruct.3716062 = type { [56 x i8] }
-%"struct.(anonymous namespace)::ValuePair.3719660" = type { i32, i32 }
+%struct.rb_econv_elem_t.2600781 = type { ptr, ptr, ptr, ptr, ptr, i32 }
+%"struct.std::pair.2749024" = type { i32, i32 }
+%struct._zval_struct.2792825 = type { %union._zend_value.2792826, %union.anon.2792827, %union.anon.2.2792828 }
+%union._zend_value.2792826 = type { i64 }
+%union.anon.2792827 = type { i32 }
+%union.anon.2.2792828 = type { i32 }
+%class.QPointF.3450967 = type { double, double }
+%"class.cv::Point_.3747481" = type { float, float }
+%"class.eastl::tuple.62.3895347" = type { %"struct.eastl::Internal::TupleImpl.63.3895348" }
+%"struct.eastl::Internal::TupleImpl.63.3895348" = type { %"class.eastl::Internal::TupleLeaf.28.3895349", %"class.eastl::Internal::TupleLeaf.64.3895350" }
+%"class.eastl::Internal::TupleLeaf.28.3895349" = type { i64 }
+%"class.eastl::Internal::TupleLeaf.64.3895350" = type { %struct.PaddingStruct.3895351 }
+%struct.PaddingStruct.3895351 = type { [56 x i8] }
+%"struct.(anonymous namespace)::ValuePair.3898876" = type { i32, i32 }
 
 ; 3 occurrences:
 ; linux/optimized/memblock.ll
 ; ruby/optimized/transcode.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000013(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -4294967296
   %3 = ashr exact i64 %2, 32
-  %4 = getelementptr %struct.rb_econv_elem_t.2485295, ptr %0, i64 %3, i32 2
+  %4 = getelementptr %struct.rb_econv_elem_t.2600781, ptr %0, i64 %3, i32 2
   ret ptr %4
 }
 
@@ -44,9 +42,14 @@ entry:
   ret ptr %5
 }
 
-; 15 occurrences:
+; 20 occurrences:
 ; hermes/optimized/Exceptions.cpp.ll
 ; lightgbm/optimized/bin.cpp.ll
+; llvm/optimized/ASTReader.cpp.ll
+; llvm/optimized/ASTWriter.cpp.ll
+; llvm/optimized/InstrRefBasedImpl.cpp.ll
+; llvm/optimized/PromoteMemoryToRegister.cpp.ll
+; llvm/optimized/SemaDeclCXX.cpp.ll
 ; opencc/optimized/louds-trie.cc.ll
 ; opencv/optimized/detection_output_layer.cpp.ll
 ; xgboost/optimized/rank_metric.cc.ll
@@ -61,11 +64,11 @@ entry:
 ; z3/optimized/subpaving_mpfx.cpp.ll
 ; z3/optimized/subpaving_mpq.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000003b(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -2
   %3 = ashr exact i64 %2, 1
-  %4 = getelementptr %"struct.std::pair.2635679", ptr %0, i64 %3, i32 1
+  %4 = getelementptr %"struct.std::pair.2749024", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -77,15 +80,15 @@ entry:
 ; php/optimized/zend_execute_API.ll
 ; yosys/optimized/pmux2shiftx.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 21474836480
   %3 = ashr i64 %2, 32
-  %4 = getelementptr %struct._zval_struct.2680004, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %struct._zval_struct.2792825, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
-; 23 occurrences:
+; 24 occurrences:
 ; cmake/optimized/cmCTestResourceGroupsLexer.cxx.ll
 ; cmake/optimized/cmCommandArgumentLexer.cxx.ll
 ; cmake/optimized/cmExprLexer.cxx.ll
@@ -98,6 +101,7 @@ entry:
 ; graphviz/optimized/scan.c.ll
 ; gromacs/optimized/pme_load_balancing.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
+; llvm/optimized/LegacyLegalizerInfo.cpp.ll
 ; ninja/optimized/depfile_parser.cc.ll
 ; opencv/optimized/find_ellipses.cpp.ll
 ; opencv/optimized/floodfill.cpp.ll
@@ -110,40 +114,12 @@ entry:
 ; yosys/optimized/sat.ll
 ; yosys/optimized/scc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001b(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 8589934592
   %3 = ashr exact i64 %2, 32
   %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 4
-  ret ptr %5
-}
-
-; 6 occurrences:
-; llvm/optimized/ASTReader.cpp.ll
-; llvm/optimized/ASTWriter.cpp.ll
-; llvm/optimized/InstrRefBasedImpl.cpp.ll
-; llvm/optimized/PromoteMemoryToRegister.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
-; llvm/optimized/SemaDeclCXX.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000003b(ptr %0, i64 %1) #0 {
-entry:
-  %2 = add nsw i64 %1, -2
-  %3 = ashr exact i64 %2, 1
-  %4 = getelementptr %"struct.std::pair.3087.2948581", ptr %0, i64 %3, i32 1
-  ret ptr %4
-}
-
-; 1 occurrences:
-; llvm/optimized/LegacyLegalizerInfo.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001b(ptr %0, i64 %1) #0 {
-entry:
-  %2 = add i64 %1, -4294967296
-  %3 = ashr exact i64 %2, 30
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw nuw i8, ptr %4, i64 2
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 4
   ret ptr %5
 }
 
@@ -163,11 +139,11 @@ entry:
 ; linux/optimized/intel_color.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -4294967296
   %3 = ashr i64 %2, 32
-  %4 = getelementptr %class.QPointF.3260221, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %class.QPointF.3450967, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -178,7 +154,7 @@ define ptr @func0000000000000008(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -8589934592
   %3 = ashr i64 %2, 32
-  %4 = getelementptr %"class.cv::Point_.3566796", ptr %0, i64 %3, i32 1
+  %4 = getelementptr %"class.cv::Point_.3747481", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -203,11 +179,11 @@ entry:
 ; eastl/optimized/TestSort.cpp.ll
 ; eastl/optimized/TestVariant.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000002b(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = ashr i64 %2, 1
-  %4 = getelementptr %"class.eastl::tuple.62.3716058", ptr %0, i64 %3, i32 0, i32 1
+  %4 = getelementptr %"class.eastl::tuple.62.3895347", ptr %0, i64 %3, i32 0, i32 1
   ret ptr %4
 }
 
@@ -218,7 +194,7 @@ define ptr @func0000000000000028(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = ashr i64 %2, 1
-  %4 = getelementptr %"struct.(anonymous namespace)::ValuePair.3719660", ptr %0, i64 %3, i32 1
+  %4 = getelementptr %"struct.(anonymous namespace)::ValuePair.3898876", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 

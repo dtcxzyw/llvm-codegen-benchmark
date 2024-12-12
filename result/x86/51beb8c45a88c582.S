@@ -1,4 +1,4 @@
-func00000000000004aa:                   # @func00000000000004aa
+func000000000000114a:                   # @func000000000000114a
 	movl	%esi, %eax
 	subl	%edx, %eax
 	addl	%edi, %edx
@@ -7,7 +7,7 @@ func00000000000004aa:                   # @func00000000000004aa
 	testl	%eax, %eax
 	setg	%al
 	retq
-func00000000000005a6:                   # @func00000000000005a6
+func0000000000001546:                   # @func0000000000001546
 	leal	(%rdi,%rdx), %eax
 	movl	%esi, %ecx
 	subl	%edx, %ecx
@@ -16,7 +16,7 @@ func00000000000005a6:                   # @func00000000000005a6
 	testl	%ecx, %ecx
 	setle	%al
 	retq
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	movl	%esi, %eax
 	subl	%edx, %eax
 	addl	%edi, %edx
@@ -25,7 +25,7 @@ func0000000000000081:                   # @func0000000000000081
 	testl	%eax, %eax
 	sete	%al
 	retq
-func00000000000005aa:                   # @func00000000000005aa
+func000000000000154a:                   # @func000000000000154a
 	leal	(%rdi,%rdx), %eax
 	movl	%esi, %ecx
 	subl	%edx, %ecx
@@ -34,7 +34,7 @@ func00000000000005aa:                   # @func00000000000005aa
 	testl	%ecx, %ecx
 	setg	%al
 	retq
-func0000000000000566:                   # @func0000000000000566
+func00000000000014c6:                   # @func00000000000014c6
 	leal	(%rdi,%rdx), %ecx
 	movl	%esi, %eax
 	subl	%edx, %eax
@@ -42,7 +42,7 @@ func0000000000000566:                   # @func0000000000000566
 	cmovgel	%edi, %eax
 	shrl	$31, %eax
 	retq
-func0000000000000561:                   # @func0000000000000561
+func00000000000014c1:                   # @func00000000000014c1
 	leal	(%rdi,%rdx), %eax
 	movl	%esi, %ecx
 	subl	%edx, %ecx
@@ -51,25 +51,7 @@ func0000000000000561:                   # @func0000000000000561
 	testl	%ecx, %ecx
 	sete	%al
 	retq
-func0000000000000da1:                   # @func0000000000000da1
-	leal	(%rdi,%rdx), %eax
-	movl	%esi, %ecx
-	subl	%edx, %ecx
-	cmpl	%esi, %eax
-	cmovlel	%edi, %ecx
-	testl	%ecx, %ecx
-	sete	%al
-	retq
-func00000000000005a1:                   # @func00000000000005a1
-	movl	%esi, %eax
-	subl	%edx, %eax
-	addl	%edi, %edx
-	cmpl	%esi, %edx
-	cmovlel	%edi, %eax
-	testl	%eax, %eax
-	sete	%al
-	retq
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000014a:                   # @func000000000000014a
 	leal	(%rdi,%rdx), %eax
 	movl	%esi, %ecx
 	subl	%edx, %ecx
@@ -78,7 +60,25 @@ func00000000000000aa:                   # @func00000000000000aa
 	testl	%ecx, %ecx
 	setg	%al
 	retq
-func00000000000005ac:                   # @func00000000000005ac
+func0000000000003541:                   # @func0000000000003541
+	leal	(%rdi,%rdx), %eax
+	movl	%esi, %ecx
+	subl	%edx, %ecx
+	cmpl	%esi, %eax
+	cmovlel	%edi, %ecx
+	testl	%ecx, %ecx
+	sete	%al
+	retq
+func0000000000001541:                   # @func0000000000001541
+	movl	%esi, %eax
+	subl	%edx, %eax
+	addl	%edi, %edx
+	cmpl	%esi, %edx
+	cmovlel	%edi, %eax
+	testl	%eax, %eax
+	sete	%al
+	retq
+func000000000000154c:                   # @func000000000000154c
 	leal	(%rdi,%rdx), %eax
 	movl	%esi, %ecx
 	subl	%edx, %ecx

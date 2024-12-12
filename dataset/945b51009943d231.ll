@@ -1,12 +1,11 @@
 
-; 54 occurrences:
+; 52 occurrences:
 ; abc/optimized/abcCascade.c.ll
 ; abc/optimized/blocksort.c.ll
 ; abc/optimized/deflate.c.ll
 ; abc/optimized/rsbDec6.c.ll
 ; clamav/optimized/Lzma2Dec.c.ll
 ; clamav/optimized/LzmaDec.c.ll
-; clamav/optimized/Xz.c.ll
 ; clamav/optimized/bytecode.c.ll
 ; clamav/optimized/bytecode_vm.c.ll
 ; clamav/optimized/unsp.c.ll
@@ -31,7 +30,6 @@
 ; linux/optimized/intel_sseu_debugfs.ll
 ; linux/optimized/maple_tree.ll
 ; linux/optimized/oid_registry.ll
-; linux/optimized/socket_sysfs.ll
 ; linux/optimized/vlv_dsi_pll.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll

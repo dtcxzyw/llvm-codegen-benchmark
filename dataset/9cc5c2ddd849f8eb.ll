@@ -1,8 +1,8 @@
 
-%"class.openvdb::v11_0::math::Vec3.236.2603504" = type { %"class.openvdb::v11_0::math::Tuple.237.2603505" }
-%"class.openvdb::v11_0::math::Tuple.237.2603505" = type { [3 x float] }
-%"struct.pxrInternal_v0_24__pxrReserved__::UsdSkelBlendShapeQuery::_SubShape.3231859" = type { i32, i32, float }
-%class.QCPCurveData.3260428 = type { double, double, double }
+%"class.openvdb::v11_0::math::Vec3.236.2716960" = type { %"class.openvdb::v11_0::math::Tuple.237.2716961" }
+%"class.openvdb::v11_0::math::Tuple.237.2716961" = type { [3 x float] }
+%"struct.pxrInternal_v0_24__pxrReserved__::UsdSkelBlendShapeQuery::_SubShape.3423389" = type { i32, i32, float }
+%class.QCPCurveData.3451174 = type { double, double, double }
 
 ; 29 occurrences:
 ; assimp/optimized/SGSpatialSort.cpp.ll
@@ -39,7 +39,7 @@ define ptr @func000000000000002e(ptr %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 12
   %3 = or i64 %2, 1
-  %4 = getelementptr %"class.openvdb::v11_0::math::Vec3.236.2603504", ptr %0, i64 %3
+  %4 = getelementptr %"class.openvdb::v11_0::math::Vec3.236.2716960", ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -24
   ret ptr %5
 }
@@ -54,7 +54,7 @@ define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 12
   %3 = or i64 %2, 1
-  %4 = getelementptr %"struct.pxrInternal_v0_24__pxrReserved__::UsdSkelBlendShapeQuery::_SubShape.3231859", ptr %0, i64 %3
+  %4 = getelementptr %"struct.pxrInternal_v0_24__pxrReserved__::UsdSkelBlendShapeQuery::_SubShape.3423389", ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -24
   ret ptr %5
 }
@@ -66,7 +66,7 @@ define ptr @func000000000000002c(ptr %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 24
   %3 = or i64 %2, 1
-  %4 = getelementptr %class.QCPCurveData.3260428, ptr %0, i64 %3
+  %4 = getelementptr %class.QCPCurveData.3451174, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -48
   ret ptr %5
 }

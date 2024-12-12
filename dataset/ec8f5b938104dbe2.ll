@@ -27,7 +27,7 @@ entry:
   ret i16 %3
 }
 
-; 22 occurrences:
+; 23 occurrences:
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/xmltok.ll
 ; eastl/optimized/TestAtomicBasic.cpp.ll
@@ -50,6 +50,7 @@ entry:
 ; qemu/optimized/block_vvfat.c.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
+; zed-rs/optimized/a19dler2qrv3afh8hccxiqxn7.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000002(i1 %0, i32 %1) #0 {
 entry:
@@ -58,7 +59,7 @@ entry:
   ret i16 %3
 }
 
-; 85 occurrences:
+; 82 occurrences:
 ; duckdb/optimized/ub_duckdb_common_serializer.cpp.ll
 ; eastl/optimized/TestAtomicBasic.cpp.ll
 ; eastl/optimized/TestBitVector.cpp.ll
@@ -84,8 +85,6 @@ entry:
 ; linux/optimized/ioprio.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/nl80211.ll
-; linux/optimized/nls_utf8.ll
-; linux/optimized/output_core.ll
 ; linux/optimized/page_io.ll
 ; linux/optimized/profile.ll
 ; linux/optimized/public_key.ll
@@ -104,7 +103,6 @@ entry:
 ; php/optimized/ir.ll
 ; php/optimized/xml.ll
 ; postgres/optimized/brin_pageops.ll
-; postgres/optimized/brin_revmap.ll
 ; postgres/optimized/bufpage.ll
 ; postgres/optimized/ginentrypage.ll
 ; postgres/optimized/ginfast.ll

@@ -5,7 +5,7 @@
 ; linux/optimized/intel_vdsc.ll
 ; redis/optimized/module.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000198(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000318(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = icmp ne i32 %2, 0

@@ -1,14 +1,14 @@
-func000000000000003c:                   # @func000000000000003c
+func000000000000006c:                   # @func000000000000006c
 	xorl	%eax, %eax
 	btl	%esi, %edi
 	sbbl	%eax, %eax
 	retq
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	xorl	%eax, %eax
 	btl	%esi, %edi
 	sbbl	%eax, %eax
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	xorl	%eax, %eax
 	btl	%esi, %edi
 	adcb	$-1, %al

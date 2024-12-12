@@ -1,55 +1,5 @@
 
-%union.TValue.3498591 = type { i64 }
-
-; 41 occurrences:
-; cmake/optimized/cmListFileLexer.c.ll
-; cmake/optimized/cmakemain.cxx.ll
-; cmake/optimized/cpack.cxx.ll
-; git/optimized/sequencer.ll
-; hyperscan/optimized/rose_build_bytecode.cpp.ll
-; hyperscan/optimized/rose_build_role_aliasing.cpp.ll
-; llvm/optimized/AArch64Arm64ECCallLowering.cpp.ll
-; llvm/optimized/CFGuard.cpp.ll
-; llvm/optimized/Core.cpp.ll
-; llvm/optimized/CoverageMapping.cpp.ll
-; llvm/optimized/DataFlowSanitizer.cpp.ll
-; llvm/optimized/DeadArgumentElimination.cpp.ll
-; llvm/optimized/IRBuilder.cpp.ll
-; llvm/optimized/InlineFunction.cpp.ll
-; llvm/optimized/InstrInfoEmitter.cpp.ll
-; llvm/optimized/Instructions.cpp.ll
-; llvm/optimized/LegalizeTypes.cpp.ll
-; llvm/optimized/ObjCARCOpts.cpp.ll
-; llvm/optimized/PGOInstrumentation.cpp.ll
-; llvm/optimized/PromoteMemoryToRegister.cpp.ll
-; llvm/optimized/SemaConcept.cpp.ll
-; llvm/optimized/SemaExprCXX.cpp.ll
-; llvm/optimized/SemaTemplate.cpp.ll
-; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
-; llvm/optimized/SemaTemplateInstantiate.cpp.ll
-; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
-; llvm/optimized/WholeProgramDevirt.cpp.ll
-; minetest/optimized/CGUIEditBox.cpp.ll
-; minetest/optimized/CGUIStaticText.cpp.ll
-; minetest/optimized/guiEditBoxWithScrollbar.cpp.ll
-; nlohmann_json/optimized/unit-modifiers.cpp.ll
-; nlohmann_json/optimized/unit-ordered_map.cpp.ll
-; openusd/optimized/crateData.cpp.ll
-; openusd/optimized/dataSourceMapped.cpp.ll
-; php/optimized/zend_jit.ll
-; protobuf/optimized/descriptor.cc.ll
-; quantlib/optimized/hestonslvfdmmodel.ll
-; recastnavigation/optimized/catch_amalgamated.cpp.ll
-; rocksdb/optimized/blob_db_impl.cc.ll
-; rocksdb/optimized/version_builder.cc.ll
-; yosys/optimized/fstapi.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000061(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = getelementptr nusw i8, ptr %1, i64 %2
-  %4 = icmp eq ptr %3, %0
-  ret i1 %4
-}
+%union.TValue.3680757 = type { i64 }
 
 ; 11 occurrences:
 ; darktable/optimized/DeflateDecompressor.cpp.ll
@@ -64,7 +14,7 @@ entry:
 ; wireshark/optimized/ascend_scanner.c.ll
 ; xgboost/optimized/data.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000084(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
   %4 = getelementptr i8, ptr %1, i64 %3
@@ -77,7 +27,7 @@ entry:
 ; git/optimized/dir.ll
 ; openjdk/optimized/interpreterRuntime.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000000c8(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
   %4 = getelementptr nusw i8, ptr %1, i64 %3
@@ -85,10 +35,9 @@ entry:
   ret i1 %5
 }
 
-; 20 occurrences:
+; 18 occurrences:
 ; abseil-cpp/optimized/charconv_parse.cc.ll
 ; cmake/optimized/cmFortranLexer.cxx.ll
-; cmake/optimized/divsufsort.c.ll
 ; graphviz/optimized/gmlscan.c.ll
 ; graphviz/optimized/scan.c.ll
 ; hwloc/optimized/hwloc_dump_hwdata-hwloc-dump-hwdata-knl.ll
@@ -105,9 +54,8 @@ entry:
 ; velox/optimized/Timestamp.cpp.ll
 ; verilator/optimized/V3ParseLex.cpp.ll
 ; verilator/optimized/V3PreProc.cpp.ll
-; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000000c4(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 30
   %4 = getelementptr nusw i8, ptr %1, i64 %3
@@ -115,10 +63,50 @@ entry:
   ret i1 %5
 }
 
+; 30 occurrences:
+; cmake/optimized/cmListFileLexer.c.ll
+; cmake/optimized/cmakemain.cxx.ll
+; cmake/optimized/cpack.cxx.ll
+; llvm/optimized/AArch64Arm64ECCallLowering.cpp.ll
+; llvm/optimized/CFGuard.cpp.ll
+; llvm/optimized/Core.cpp.ll
+; llvm/optimized/CoverageMapping.cpp.ll
+; llvm/optimized/DataFlowSanitizer.cpp.ll
+; llvm/optimized/DeadArgumentElimination.cpp.ll
+; llvm/optimized/IRBuilder.cpp.ll
+; llvm/optimized/InlineFunction.cpp.ll
+; llvm/optimized/Instructions.cpp.ll
+; llvm/optimized/LegalizeTypes.cpp.ll
+; llvm/optimized/ObjCARCOpts.cpp.ll
+; llvm/optimized/PGOInstrumentation.cpp.ll
+; llvm/optimized/PromoteMemoryToRegister.cpp.ll
+; llvm/optimized/SemaConcept.cpp.ll
+; llvm/optimized/SemaExprCXX.cpp.ll
+; llvm/optimized/SemaTemplate.cpp.ll
+; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
+; llvm/optimized/SemaTemplateInstantiate.cpp.ll
+; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
+; llvm/optimized/WholeProgramDevirt.cpp.ll
+; nlohmann_json/optimized/unit-modifiers.cpp.ll
+; openusd/optimized/crateData.cpp.ll
+; openusd/optimized/dataSourceMapped.cpp.ll
+; php/optimized/zend_jit.ll
+; protobuf/optimized/descriptor.cc.ll
+; recastnavigation/optimized/catch_amalgamated.cpp.ll
+; yosys/optimized/fstapi.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000c1(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = ashr exact i64 %2, 32
+  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %5 = icmp eq ptr %4, %0
+  ret i1 %5
+}
+
 ; 1 occurrences:
 ; velox/optimized/Timestamp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000000cc(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
   %4 = getelementptr nusw i8, ptr %1, i64 %3
@@ -129,7 +117,7 @@ entry:
 ; 1 occurrences:
 ; quantlib/optimized/distribution.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000041(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 32
   %4 = getelementptr nusw double, ptr %1, i64 %3
@@ -141,7 +129,7 @@ entry:
 ; darktable/optimized/TableLookUp.cpp.ll
 ; openspiel/optimized/twixtboard.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000044(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 32
   %4 = getelementptr nusw i16, ptr %1, i64 %3
@@ -149,11 +137,21 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; cpython/optimized/listobject.ll
+; 1 occurrences:
+; git/optimized/sequencer.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000081(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = ashr exact i64 %2, 32
+  %4 = getelementptr i8, ptr %1, i64 %3
+  %5 = icmp eq ptr %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; linux/optimized/filter.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000088(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
   %4 = getelementptr i8, ptr %1, i64 %3
@@ -165,22 +163,12 @@ entry:
 ; luajit/optimized/lj_debug.ll
 ; luajit/optimized/lj_debug_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000048(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 32
-  %4 = getelementptr nusw %union.TValue.3498591, ptr %1, i64 %3
+  %4 = getelementptr nusw %union.TValue.3680757, ptr %1, i64 %3
   %5 = icmp ugt ptr %4, %0
   ret i1 %5
-}
-
-; 1 occurrences:
-; eastl/optimized/TestBitVector.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000069(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = getelementptr nusw i8, ptr %1, i64 %2
-  %4 = icmp uge ptr %3, %0
-  ret i1 %4
 }
 
 attributes #0 = { nounwind }

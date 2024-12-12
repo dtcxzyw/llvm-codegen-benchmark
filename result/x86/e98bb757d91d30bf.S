@@ -1,10 +1,3 @@
-func0000000000000011:                   # @func0000000000000011
-	movsbl	%dil, %ecx
-	leal	-55(%rcx), %edx
-	leal	-48(%rcx), %eax
-	cmpb	$58, %cl
-	cmovael	%edx, %eax
-	retq
 func0000000000000029:                   # @func0000000000000029
 	xorl	%eax, %eax
 	cmpb	$97, %dil

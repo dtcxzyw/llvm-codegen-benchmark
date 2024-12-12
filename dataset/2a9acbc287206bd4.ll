@@ -1,5 +1,5 @@
 
-; 232 occurrences:
+; 234 occurrences:
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -232,6 +232,8 @@
 ; wasmedge/optimized/validator.cpp.ll
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000007f(i16 %0, i16 %1) #0 {
 entry:
@@ -243,8 +245,10 @@ entry:
   ret i32 %6
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; image-rs/optimized/34r8dryqmufipcqz.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000005d(i16 %0, i16 %1) #0 {
 entry:
@@ -308,6 +312,20 @@ entry:
   %4 = zext i16 %0 to i32
   %5 = shl nuw nsw i32 %4, 8
   %6 = or i32 %5, %3
+  ret i32 %6
+}
+
+; 2 occurrences:
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; Function Attrs: nounwind
+define i32 @func000000000000007d(i16 %0, i16 %1) #0 {
+entry:
+  %2 = zext nneg i16 %1 to i32
+  %3 = shl nuw nsw i32 %2, 16
+  %4 = zext nneg i16 %0 to i32
+  %5 = shl nuw i32 %4, 24
+  %6 = or disjoint i32 %5, %3
   ret i32 %6
 }
 

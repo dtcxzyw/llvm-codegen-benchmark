@@ -7,7 +7,7 @@ func000000000000000c:                   # @func000000000000000c
 	vadd.vi	v12, v12, 8
 	vxor.vv	v12, v12, v8
 	vmul.vx	v12, v12, a0
-	vxor.vv	v10, v12, v10
+	vxor.vv	v10, v10, v12
 	vxor.vv	v8, v10, v8
 	ret
 .LCPI1_0:
@@ -23,6 +23,6 @@ func0000000000000000:                   # @func0000000000000000
 	vadd.vx	v12, v12, a0
 	vxor.vv	v12, v12, v8
 	vmul.vx	v12, v12, a1
-	vxor.vv	v10, v12, v10
+	vxor.vv	v10, v10, v12
 	vxor.vv	v8, v10, v8
 	ret

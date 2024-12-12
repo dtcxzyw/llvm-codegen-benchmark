@@ -3,7 +3,7 @@
 ; imgui/optimized/imgui_tables.cpp.ll
 ; re2/optimized/parse.cc.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000003a(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000006a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = icmp sgt i32 %0, %1
@@ -19,7 +19,7 @@ entry:
 ; opencv/optimized/colormap.cpp.ll
 ; rocksdb/optimized/column_family.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 3
   %4 = icmp slt i32 %0, %1
@@ -32,17 +32,18 @@ entry:
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-math.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000074(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = icmp ult i32 %0, %1
+  %4 = icmp samesign ult i32 %0, %1
   %5 = select i1 %4, i32 0, i32 %3
   ret i32 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; cmake/optimized/archive_write_add_filter_compress.c.ll
 ; darktable/optimized/introspection_rawdenoise.c.ll
+; llvm/optimized/TypeTableCollection.cpp.ll
 ; php/optimized/fastcgi.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
@@ -57,11 +58,26 @@ entry:
 ; jq/optimized/decNumber.ll
 ; lz4/optimized/lz4hc.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 5
-  %4 = icmp ult i32 %0, %1
+  %4 = icmp samesign ult i32 %0, %1
   %5 = select i1 %4, i32 7, i32 %3
+  ret i32 %5
+}
+
+; 5 occurrences:
+; abc/optimized/sbdCore.c.ll
+; meshlab/optimized/baseio.cpp.ll
+; meshlab/optimized/filter_plymc.cpp.ll
+; meshlab/optimized/mesh.cpp.ll
+; openspiel/optimized/PlayAnalyser.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %2, 1
+  %4 = icmp sgt i32 %0, %1
+  %5 = select i1 %4, i32 1000000000, i32 %3
   ret i32 %5
 }
 
@@ -95,7 +111,7 @@ entry:
 ; eastl/optimized/EADateTime.cpp.ll
 ; llvm/optimized/BitcodeWriter.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = icmp eq i32 %0, %1
@@ -110,7 +126,7 @@ entry:
 ; openmpi/optimized/pmix_ring_buffer.ll
 ; quickjs/optimized/libbf.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = icmp eq i32 %0, %1
@@ -118,24 +134,10 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
-; meshlab/optimized/baseio.cpp.ll
-; meshlab/optimized/filter_plymc.cpp.ll
-; meshlab/optimized/mesh.cpp.ll
-; openspiel/optimized/PlayAnalyser.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %2, 1
-  %4 = icmp sgt i32 %0, %1
-  %5 = select i1 %4, i32 4, i32 %3
-  ret i32 %5
-}
-
 ; 1 occurrences:
 ; linux/optimized/vpd.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000048(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 3
   %4 = icmp ugt i32 %0, %1
@@ -147,7 +149,7 @@ entry:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; linux/optimized/calipso.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000068(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 2
   %4 = icmp ugt i32 %0, %1
@@ -156,9 +158,20 @@ entry:
 }
 
 ; 1 occurrences:
+; linux/optimized/calipso.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000078(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw nsw i32 %2, 2
+  %4 = icmp samesign ugt i32 %0, %1
+  %5 = select i1 %4, i32 -22, i32 %3
+  ret i32 %5
+}
+
+; 1 occurrences:
 ; cmake/optimized/cmFileCommand.cxx.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000003c(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000006c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 2
   %.not = icmp eq i32 %0, %1
@@ -169,7 +182,7 @@ entry:
 ; 1 occurrences:
 ; graphviz/optimized/graph_generator.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 2
   %4 = icmp eq i32 %0, %1

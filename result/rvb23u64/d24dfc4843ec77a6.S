@@ -24,7 +24,7 @@ func0000000000000014:                   # @func0000000000000014
 	flt.s	a1, fa1, fa0
 	and	a0, a0, a1
 	ret
-func0000000000000044:                   # @func0000000000000044
+func0000000000000144:                   # @func0000000000000144
 	sext.w	a0, a0
 	sltiu	a0, a0, 99
 	flt.s	a1, fa1, fa0
@@ -44,7 +44,7 @@ func00000000000000a4:                   # @func00000000000000a4
 	flt.s	a1, fa1, fa0
 	and	a0, a0, a1
 	ret
-func000000000000004d:                   # @func000000000000004d
+func000000000000014d:                   # @func000000000000014d
 	sext.w	a0, a0
 	sltiu	a0, a0, 2
 	flt.s	a1, fa0, fa1

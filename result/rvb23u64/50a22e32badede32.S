@@ -10,7 +10,7 @@ func000000000000000f:                   # @func000000000000000f
 	sh3add	a0, a1, a0
 	addi	a0, a0, -8
 	ret
-func000000000000001e:                   # @func000000000000001e
+func000000000000001f:                   # @func000000000000001f
 	mul	a2, a2, a1
 	sh3add	a0, a2, a0
 	sh3add	a0, a1, a0
@@ -28,6 +28,12 @@ func000000000000007a:                   # @func000000000000007a
 	sh3add	a0, a1, a0
 	addi	a0, a0, 8
 	ret
+func000000000000007b:                   # @func000000000000007b
+	mul	a2, a2, a1
+	sh3add	a0, a2, a0
+	sh3add	a0, a1, a0
+	addi	a0, a0, 8
+	ret
 func0000000000000050:                   # @func0000000000000050
 	mul	a2, a2, a1
 	sh3add	a0, a2, a0
@@ -40,7 +46,7 @@ func0000000000000058:                   # @func0000000000000058
 	sh3add	a0, a1, a0
 	addi	a0, a0, -8
 	ret
-func0000000000000072:                   # @func0000000000000072
+func0000000000000073:                   # @func0000000000000073
 	mul	a2, a2, a1
 	sh3add	a0, a2, a0
 	sh3add	a0, a1, a0

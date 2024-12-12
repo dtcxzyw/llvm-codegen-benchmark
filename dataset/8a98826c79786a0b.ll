@@ -56,11 +56,12 @@ entry:
   ret i64 %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; assimp/optimized/o3dgcDynamicVectorDecoder.cpp.ll
 ; assimp/optimized/o3dgcTriangleFans.cpp.ll
+; boost/optimized/gzip.ll
 ; clamav/optimized/disasm.c.ll
 ; openusd/optimized/cdef_block.c.ll
 ; php/optimized/ir.ll

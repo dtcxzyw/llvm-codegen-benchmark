@@ -14,9 +14,10 @@ entry:
   ret i1 %4
 }
 
-; 62 occurrences:
+; 69 occurrences:
 ; clamav/optimized/tiff.c.ll
 ; clamav/optimized/vba_extract.c.ll
+; cmake/optimized/cmELF.cxx.ll
 ; darktable/optimized/AbstractLJpegDecoder.cpp.ll
 ; darktable/optimized/CiffIFD.cpp.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
@@ -31,6 +32,7 @@ entry:
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/intel_sdvo.ll
 ; linux/optimized/nls_base.ll
+; linux/optimized/tg3.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/Attributes.cpp.ll
 ; llvm/optimized/COFFObjectFile.cpp.ll
@@ -38,6 +40,7 @@ entry:
 ; llvm/optimized/Transforms.cpp.ll
 ; llvm/optimized/TypeRecordMapping.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_spinbox.ll
 ; memcached/optimized/memcached-proto_text.ll
 ; memcached/optimized/memcached_debug-proto_text.ll
 ; minetest/optimized/dungeongen.cpp.ll
@@ -66,6 +69,8 @@ entry:
 ; rust-analyzer-rs/optimized/4xr6qa4j33qfqd4q.ll
 ; slurm/optimized/common_topo.ll
 ; sqlite/optimized/sqlite3.ll
+; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/2ta8crc4qgl9bp8t.ll
 ; wasmtime-rs/optimized/33slbp9da8waph2q.ll
@@ -77,6 +82,8 @@ entry:
 ; wireshark/optimized/packet-qnet6.c.ll
 ; wireshark/optimized/packet-rdm.c.ll
 ; wireshark/optimized/packet-smb.c.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i16 %1, i16 %2) #0 {
 entry:
@@ -85,8 +92,10 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 4 occurrences:
+; clamav/optimized/cpio.c.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
+; linux/optimized/event_inode.ll
 ; minetest/optimized/server.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i1 %0, i16 %1, i16 %2) #0 {
@@ -96,14 +105,13 @@ entry:
   ret i1 %4
 }
 
-; 20 occurrences:
+; 18 occurrences:
 ; clamav/optimized/cpio.c.ll
 ; clamav/optimized/unarj.c.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; darktable/optimized/PentaxDecompressor.cpp.ll
 ; darktable/optimized/TiffEntry.cpp.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
-; eastl/optimized/TestBitset.cpp.ll
 ; libquic/optimized/ssl_lib.c.ll
 ; linux/optimized/intel_bios.ll
 ; linux/optimized/nls_base.ll
@@ -111,7 +119,6 @@ entry:
 ; oiio/optimized/exif.cpp.ll
 ; openjdk/optimized/jvmtiRedefineClasses.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
-; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; wireshark/optimized/packet-dhcp.c.ll
 ; wireshark/optimized/packet-qnet6.c.ll
 ; wireshark/optimized/packet-s7comm.c.ll
@@ -125,10 +132,9 @@ entry:
   ret i1 %4
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; clamav/optimized/entconv.c.ll
 ; darktable/optimized/AbstractLJpegDecoder.cpp.ll
-; eastl/optimized/TestBitset.cpp.ll
 ; hyperscan/optimized/mcsheng_compile.cpp.ll
 ; libjpeg-turbo/optimized/jcdctmgr.c.ll
 ; linux/optimized/hda_intel.ll
@@ -162,6 +168,29 @@ define i1 @func000000000000000c(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = select i1 %0, i16 %1, i16 %2
   %4 = icmp ne i16 %3, -1
+  ret i1 %4
+}
+
+; 3 occurrences:
+; eastl/optimized/TestBitset.cpp.ll
+; libquic/optimized/ssl_lib.c.ll
+; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i16 %1, i16 %2) #0 {
+entry:
+  %3 = select i1 %0, i16 %1, i16 %2
+  %4 = icmp samesign ugt i16 %3, 768
+  ret i1 %4
+}
+
+; 2 occurrences:
+; clamav/optimized/entconv.c.ll
+; eastl/optimized/TestBitset.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i16 %1, i16 %2) #0 {
+entry:
+  %3 = select i1 %0, i16 %1, i16 %2
+  %4 = icmp samesign ult i16 %3, -9216
   ret i1 %4
 }
 

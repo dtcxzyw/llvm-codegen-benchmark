@@ -1,11 +1,10 @@
 
-; 108 occurrences:
+; 106 occurrences:
 ; abc/optimized/acecRe.c.ll
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/wlcBlast.c.ll
-; cmake/optimized/archive_pack_dev.c.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
-; glslang/optimized/hlslParseHelper.cpp.ll
 ; gromacs/optimized/tng_io.c.ll
 ; icu/optimized/collationbuilder.ll
 ; lief/optimized/ChainedFixup.cpp.ll
@@ -73,7 +72,6 @@
 ; qemu/optimized/hw_sd_sdhci.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; qemu/optimized/tcg.c.ll
-; redis/optimized/script.ll
 ; ring-rs/optimized/1vabw27ldssjsz66.ll
 ; spike/optimized/beq.ll
 ; spike/optimized/bge.ll
@@ -119,7 +117,8 @@ entry:
   ret i64 %7
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; abc/optimized/bdcSpfd.c.ll
 ; libquic/optimized/p224-64.c.ll
 ; linux/optimized/hugetlb.ll
 ; llvm/optimized/AArch64MCCodeEmitter.cpp.ll
@@ -127,10 +126,12 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = or i64 %1, %2
-  %4 = or i64 %3, %0
-  %5 = and i64 %4, 72057594037927935
-  ret i64 %5
+  %3 = and i64 %2, 255
+  %4 = and i64 %1, 1095216660480
+  %5 = or disjoint i64 %4, %3
+  %6 = and i64 %0, 1048320
+  %7 = or disjoint i64 %5, %6
+  ret i64 %7
 }
 
 ; 5 occurrences:
@@ -147,19 +148,6 @@ entry:
   %5 = or i64 %4, %3
   %6 = and i64 %0, -16
   %7 = or disjoint i64 %6, %5
-  ret i64 %7
-}
-
-; 1 occurrences:
-; linux/optimized/set_memory.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = and i64 %2, 4096
-  %4 = and i64 %1, -4225
-  %5 = or disjoint i64 %4, %3
-  %6 = and i64 %0, 4503598553628672
-  %7 = or i64 %5, %6
   ret i64 %7
 }
 

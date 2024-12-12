@@ -9,8 +9,6 @@
 ; duckdb/optimized/ub_duckdb_func_scalar.cpp.ll
 ; icu/optimized/olsontz.ll
 ; lief/optimized/ssl_tls.c.ll
-; linux/optimized/i8237.ll
-; linux/optimized/isadma.ll
 ; linux/optimized/tcp_ipv4.ll
 ; linux/optimized/tls.ll
 ; linux/optimized/vgacon.ll
@@ -29,6 +27,7 @@
 ; mold/optimized/arch-riscv.cc.RV64LE.cc.ll
 ; ockam-rs/optimized/gotvfwvqrrp4xgl.ll
 ; oiio/optimized/ddsinput.cpp.ll
+; openusd/optimized/decodemv.c.ll
 ; openusd/optimized/json.cpp.ll
 ; pocketpy/optimized/expr.cpp.ll
 ; qemu/optimized/hw_pci_msi.c.ll
@@ -40,6 +39,7 @@
 ; typst-rs/optimized/3rk2ctuzbghb17s4.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
+; zed-rs/optimized/f3wmqxw6x607w7cbx1edvfc95.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000007(i16 %0) #0 {
 entry:
@@ -48,13 +48,12 @@ entry:
   ret i16 %2
 }
 
-; 44 occurrences:
+; 43 occurrences:
 ; clamav/optimized/qtmd.c.ll
 ; cmake/optimized/zstd_compress_literals.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; icu/optimized/store.ll
 ; icu/optimized/unistr.ll
-; linux/optimized/8250_mid.ll
 ; linux/optimized/agg-tx.ll
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/vgacon.ll

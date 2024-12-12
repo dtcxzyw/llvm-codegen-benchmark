@@ -16,7 +16,7 @@ func000000000000000a:                   # @func000000000000000a
 	vmslt.vv	v12, v10, v8
 	vmor.mm	v0, v12, v0
 	ret
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	lui	a0, 524288
 	addi	a0, a0, -1
 	vsetivli	zero, 8, e32, m2, ta, ma

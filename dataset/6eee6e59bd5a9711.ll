@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 36 occurrences:
 ; delta-rs/optimized/3qkwqfk85qralejq.ll
 ; jemalloc/optimized/extent.ll
 ; jemalloc/optimized/extent.pic.ll
@@ -33,35 +33,38 @@
 ; redis/optimized/pages.sym.ll
 ; rocksdb/optimized/readahead_raf.cc.ll
 ; wasmtime-rs/optimized/4sy2q5i3qnvymrev.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/8bnapxt4ilkd5y3egr7fzm1sv.ll
+; zed-rs/optimized/deqzoqcotewn9fb0m32sor9lr.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
-  %4 = and i64 %3, %1
+  %4 = and i64 %1, %3
   %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; linux/optimized/exfldio.ll
 ; mitsuba3/optimized/codeholder.cpp.ll
 ; mitsuba3/optimized/jitallocator.cpp.ll
 ; qemu/optimized/hw_vfio_pci.c.ll
-; qemu/optimized/tcg-op-gvec.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = and i64 %3, %1
+  %4 = and i64 %1, %3
   %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
 
-; 25 occurrences:
+; 26 occurrences:
 ; abseil-cpp/optimized/low_level_alloc.cc.ll
 ; arrow/optimized/feather.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/alloc_lib.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; flatbuffers/optimized/reflection.cpp.ll
 ; folly/optimized/MemoryIdler.cpp.ll
@@ -87,7 +90,7 @@ entry:
 define i1 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
-  %4 = and i64 %3, %1
+  %4 = and i64 %1, %3
   %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
@@ -99,7 +102,7 @@ entry:
 define i1 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
-  %4 = and i64 %3, %1
+  %4 = and i64 %1, %3
   %5 = icmp ne i64 %4, %0
   ret i1 %5
 }
@@ -133,7 +136,7 @@ entry:
 define i1 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
-  %4 = and i64 %3, %1
+  %4 = and i64 %1, %3
   %5 = icmp ult i64 %4, %0
   ret i1 %5
 }
@@ -143,10 +146,10 @@ entry:
 ; nuttx/optimized/mm_memalign.c.ll
 ; qemu/optimized/block_qcow2-refcount.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = and i64 %3, %1
+  %4 = and i64 %1, %3
   %5 = icmp eq i64 %4, %0
   ret i1 %5
 }
@@ -160,7 +163,7 @@ entry:
 define i1 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
-  %4 = and i64 %3, %1
+  %4 = and i64 %1, %3
   %5 = icmp ule i64 %4, %0
   ret i1 %5
 }
@@ -169,10 +172,10 @@ entry:
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; flatbuffers/optimized/reflection.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = and i64 %3, %1
+  %4 = and i64 %1, %3
   %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
@@ -182,10 +185,10 @@ entry:
 ; spike/optimized/f32_roundToInt.ll
 ; spike/optimized/f64_roundToInt.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = and i64 %3, %1
+  %4 = and i64 %1, %3
   %5 = icmp ne i64 %4, %0
   ret i1 %5
 }
@@ -196,7 +199,7 @@ entry:
 define i1 @func0000000000000009(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
-  %4 = and i64 %3, %1
+  %4 = and i64 %1, %3
   %5 = icmp uge i64 %4, %0
   ret i1 %5
 }

@@ -57,12 +57,11 @@ entry:
   ret i1 %4
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; darktable/optimized/introspection_lowlight.c.ll
 ; darktable/optimized/introspection_relight.c.ll
 ; darktable/optimized/introspection_vignette.c.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
@@ -100,7 +99,7 @@ entry:
 define i1 @func0000000000000004(float %0, float %1) #0 {
 entry:
   %2 = fmul float %1, 6.553500e+04
-  %3 = fmul float %2, %0
+  %3 = fmul float %0, %2
   %4 = fcmp ogt float %3, 0x40EFFFDFA0000000
   ret i1 %4
 }

@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; minetest/optimized/CB3DMeshFileLoader.cpp.ll
 ; minetest/optimized/CFileList.cpp.ll
@@ -15,9 +15,8 @@
 ; nuklear/optimized/unity.c.ll
 ; openjdk/optimized/jvmtiClassFileReconstituter.ll
 ; ruby/optimized/date_core.ll
-; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 7
   %4 = select i1 %1, i32 %3, i32 %2
@@ -36,7 +35,7 @@ entry:
 define i1 @func0000000000000004(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext i1 %1 to i32
-  %4 = add i32 %3, %2
+  %4 = add i32 %2, %3
   %5 = icmp ult i32 %4, %0
   ret i1 %5
 }
@@ -47,7 +46,7 @@ entry:
 ; minetest/optimized/CFileList.cpp.ll
 ; zxing/optimized/PDFEncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 32
   %4 = select i1 %1, i32 %3, i32 %2
@@ -71,15 +70,16 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
+; lvgl/optimized/lv_draw_arc.ll
 ; openjdk/optimized/instanceKlass.ll
 ; openjdk/optimized/jvm.ll
 ; openjdk/optimized/jvmtiRedefineClasses.ll
 ; raylib/optimized/rtextures.c.ll
 ; zxing/optimized/PDFEncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -2
   %4 = select i1 %1, i32 %3, i32 %2
@@ -92,10 +92,10 @@ entry:
 ; eastl/optimized/TestBitset.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext i1 %1 to i32
-  %4 = add nuw nsw i32 %3, %2
+  %4 = add nuw nsw i32 %2, %3
   %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
@@ -103,7 +103,7 @@ entry:
 ; 1 occurrences:
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000066(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 3
   %4 = select i1 %1, i32 %3, i32 %2
@@ -114,7 +114,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/RegAllocFast.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -20
   %4 = select i1 %1, i32 %3, i32 %2
@@ -125,7 +125,7 @@ entry:
 ; 1 occurrences:
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -65248
   %4 = select i1 %1, i32 %3, i32 %2
@@ -136,7 +136,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/bufpage.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000006a(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 4
   %4 = select i1 %1, i32 %3, i32 %2

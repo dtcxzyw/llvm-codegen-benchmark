@@ -5,7 +5,7 @@ func0000000000000002:                   // @func0000000000000002
 	movk	x8, #55753, lsl #32
 	movk	x8, #29560, lsl #48
 	add	x8, x2, x8
-	eor	x9, x8, x1
+	eor	x9, x1, x8
 	mul	x8, x0, x9
 	umulh	x1, x0, x9
 	mov	x0, x8

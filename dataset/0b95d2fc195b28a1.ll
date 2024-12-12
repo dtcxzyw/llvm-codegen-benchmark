@@ -6,7 +6,7 @@
 ; linux/optimized/ip_sockglue.ll
 ; llvm/optimized/YAMLParser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000304(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000604(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 1
   %3 = and i1 %2, %0

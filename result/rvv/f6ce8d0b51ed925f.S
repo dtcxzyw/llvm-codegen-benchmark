@@ -4,7 +4,7 @@ func0000000000000007:                   # @func0000000000000007
 	vmseq.vi	v0, v12, 0
 	vmv.v.i	v12, 1
 	vxor.vi	v12, v10, 2, v0.t
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	ret
 func0000000000000004:                   # @func0000000000000004
 	li	a0, 255

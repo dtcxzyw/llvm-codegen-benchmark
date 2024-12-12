@@ -1,9 +1,11 @@
 
-; 443 occurrences:
+; 434 occurrences:
 ; abc/optimized/bmcBmc3.c.ll
 ; arrow/optimized/UriIp4.c.ll
 ; assimp/optimized/OpenDDLParser.cpp.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/sparring_partner.ll
+; boost/optimized/wave_config_constant.ll
 ; box2d/optimized/b2_contact.cpp.ll
 ; casadi/optimized/cs_counts.c.ll
 ; casadi/optimized/cs_dfs.c.ll
@@ -47,7 +49,6 @@
 ; cmake/optimized/easy.c.ll
 ; cmake/optimized/escape.c.ll
 ; cmake/optimized/fastcover.c.ll
-; cmake/optimized/fld_ftchoice.c.ll
 ; cmake/optimized/http2.c.ll
 ; cmake/optimized/zdict.c.ll
 ; cmake/optimized/zstd_compress.c.ll
@@ -140,24 +141,17 @@
 ; linux/optimized/cpuidle.ll
 ; linux/optimized/dma-fence.ll
 ; linux/optimized/evxface.ll
-; linux/optimized/evxfgpe.ll
 ; linux/optimized/hugetlb_cgroup.ll
 ; linux/optimized/hwmon.ll
-; linux/optimized/hwxface.ll
 ; linux/optimized/intel_guc_capture.ll
-; linux/optimized/intel_hdcp_gsc_message.ll
 ; linux/optimized/intel_panel.ll
 ; linux/optimized/libata-acpi.ll
 ; linux/optimized/message.ll
-; linux/optimized/mlme.ll
 ; linux/optimized/ndisc.ll
 ; linux/optimized/nf_conntrack_core.ll
-; linux/optimized/nssearch.ll
 ; linux/optimized/nsutils.ll
 ; linux/optimized/nsxfeval.ll
-; linux/optimized/platform-msi.ll
 ; linux/optimized/reg.ll
-; linux/optimized/rsxface.ll
 ; linux/optimized/virtio_input.ll
 ; linux/optimized/xhci-mem.ll
 ; linux/optimized/xhci-ring.ll
@@ -266,7 +260,6 @@
 ; msdfgen/optimized/save-png.cpp.ll
 ; node/optimized/libnode.js_native_api_v8.ll
 ; nuklear/optimized/unity.c.ll
-; nuttx/optimized/pthread_attr_getstack.c.ll
 ; ocio/optimized/FileFormatICC.cpp.ll
 ; oiio/optimized/filesystem.cpp.ll
 ; oiio/optimized/texture3d.cpp.ll
@@ -328,7 +321,6 @@
 ; openssl/optimized/sslbuffertest-bin-ssltestlib.ll
 ; openssl/optimized/sslcorrupttest-bin-ssltestlib.ll
 ; openssl/optimized/tls13ccstest-bin-ssltestlib.ll
-; openssl/optimized/x509_time_test-bin-x509_time_test.ll
 ; openusd/optimized/AVIFImage.cpp.ll
 ; openusd/optimized/aom_decoder.c.ll
 ; openusd/optimized/aom_integer.c.ll
@@ -359,13 +351,13 @@
 ; php/optimized/versioning.ll
 ; php/optimized/zend_jit.ll
 ; postgres/optimized/datetime.ll
+; postgres/optimized/dumputils.ll
 ; postgres/optimized/fe-print.ll
 ; postgres/optimized/libpq-events.ll
 ; postgres/optimized/localbuf.ll
 ; postgres/optimized/parse_func.ll
 ; postgres/optimized/pathnode.ll
 ; proj/optimized/c_api.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; proj/optimized/networkfilemanager.cpp.ll
 ; proxygen/optimized/ProxyStatus.cpp.ll
 ; proxygen/optimized/StructuredHeadersEncoder.cpp.ll
@@ -407,7 +399,6 @@
 ; wireshark/optimized/blf.c.ll
 ; wireshark/optimized/dot11decrypt.c.ll
 ; wireshark/optimized/dot11decrypt_util.c.ll
-; wireshark/optimized/dpa400.c.ll
 ; wireshark/optimized/expert_info_model.cpp.ll
 ; wireshark/optimized/packet-autosar-ipdu-multiplexer.c.ll
 ; wireshark/optimized/packet-btatt.c.ll
@@ -448,12 +439,11 @@ define i1 @func000000000000000c(i1 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = and i1 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 90 occurrences:
-; arrow/optimized/UriQuery.c.ll
+; 91 occurrences:
 ; assimp/optimized/zip.c.ll
 ; ceres/optimized/problem_impl.cc.ll
 ; cmake/optimized/strcase.c.ll
@@ -543,11 +533,13 @@ entry:
 ; wireshark/optimized/packet-mac-lte.c.ll
 ; wireshark/optimized/packet-mac-nr.c.ll
 ; wireshark/optimized/packet-oran.c.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }

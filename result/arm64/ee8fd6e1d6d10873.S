@@ -1,43 +1,25 @@
 func0000000000000054:                   // @func0000000000000054
 // %bb.0:                               // %entry
-	sshll	v5.2d, v4.2s, #6
-	sshll2	v4.2d, v4.4s, #6
-	mov	w8, #31161                      // =0x79b9
-	add	v0.2d, v2.2d, v0.2d
-	add	v1.2d, v3.2d, v1.2d
-	movk	w8, #40503, lsl #16
-	dup	v2.2d, x8
-	add	v0.2d, v5.2d, v0.2d
-	add	v1.2d, v4.2d, v1.2d
-	add	v1.2d, v1.2d, v2.2d
-	add	v0.2d, v0.2d, v2.2d
+                                        // kill: def $w2 killed $w2 def $x2
+	sxtw	x8, w2
+	mov	w9, #31161                      // =0x79b9
+	movk	w9, #40503, lsl #16
+	add	x8, x1, x8, lsl #6
+	add	x9, x0, x9
+	add	x0, x8, x9
 	ret
                                         // -- End function
 func0000000000000055:                   // @func0000000000000055
 // %bb.0:                               // %entry
-	sshll	v5.2d, v4.2s, #2
-	sshll2	v4.2d, v4.4s, #2
-	mov	w8, #176                        // =0xb0
-	add	v0.2d, v2.2d, v0.2d
-	add	v1.2d, v3.2d, v1.2d
-	dup	v2.2d, x8
-	add	v0.2d, v5.2d, v0.2d
-	add	v1.2d, v4.2d, v1.2d
-	add	v1.2d, v1.2d, v2.2d
-	add	v0.2d, v0.2d, v2.2d
+	add	x8, x1, w2, sxtw #2
+	add	x8, x8, x0
+	add	x0, x8, #176
 	ret
                                         // -- End function
 func0000000000000050:                   // @func0000000000000050
 // %bb.0:                               // %entry
-	sshll	v5.2d, v4.2s, #2
-	sshll2	v4.2d, v4.4s, #2
-	mov	w8, #64                         // =0x40
-	add	v0.2d, v2.2d, v0.2d
-	add	v1.2d, v3.2d, v1.2d
-	dup	v2.2d, x8
-	add	v0.2d, v5.2d, v0.2d
-	add	v1.2d, v4.2d, v1.2d
-	add	v1.2d, v1.2d, v2.2d
-	add	v0.2d, v0.2d, v2.2d
+	add	x8, x1, w2, sxtw #2
+	add	x8, x8, x0
+	add	x0, x8, #64
 	ret
                                         // -- End function

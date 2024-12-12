@@ -45,7 +45,7 @@
 define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %0, -1
-  %3 = icmp ult i32 %2, %1
+  %3 = icmp ugt i32 %1, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }

@@ -15,9 +15,22 @@
 ; typst-rs/optimized/3ze8abiqj6g8qouh.ll
 ; typst-rs/optimized/5e0rue5wyvshgkgw.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000184(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 1
+  %4 = select i1 %3, i1 true, i1 %0
+  %5 = icmp ult i64 %1, 32
+  %6 = and i1 %4, %5
+  ret i1 %6
+}
+
+; 2 occurrences:
+; image-rs/optimized/30755d6iao7ojcvl.ll
+; rust-analyzer-rs/optimized/xh6m92l5tmfbxs4.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i1 true, i1 %0
   %5 = icmp ult i64 %1, 32
   %6 = and i1 %4, %5
@@ -27,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/barrierSetC1.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000181(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = select i1 %3, i1 true, i1 %1
@@ -36,13 +49,12 @@ entry:
   ret i1 %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; spike/optimized/f128_to_i32.ll
 ; spike/optimized/f128_to_i64.ll
 ; spike/optimized/f128_to_ui32.ll
-; spike/optimized/f128_to_ui32_r_minMag.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000186(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 32767
   %4 = select i1 %3, i1 true, i1 %1
@@ -54,7 +66,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ucnv.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 2147483648
   %4 = select i1 %3, i1 true, i1 %1

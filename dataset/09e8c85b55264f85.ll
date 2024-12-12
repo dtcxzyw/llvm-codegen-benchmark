@@ -13,15 +13,15 @@
 ; ruby/optimized/ripper.ll
 ; wireshark/optimized/packet-isobus.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0) #0 {
+define i32 @func0000000000000014(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 224
-  %2 = icmp ult i32 %1, 160
+  %2 = icmp samesign ult i32 %1, 160
   %3 = select i1 %2, i32 48, i32 55
   ret i32 %3
 }
 
-; 40 occurrences:
+; 42 occurrences:
 ; abc/optimized/giaMan.c.ll
 ; abc/optimized/ivyHaig.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
@@ -53,6 +53,8 @@ entry:
 ; llvm/optimized/SemaStmt.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; opencv/optimized/grfmt_bmp.cpp.ll
 ; opencv/optimized/grfmt_png.cpp.ll
 ; opencv/optimized/grfmt_tiff.cpp.ll
@@ -76,10 +78,10 @@ entry:
 ; opencv/optimized/grfmt_jpeg2000_openjpeg.cpp.ll
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0) #0 {
+define i32 @func0000000000000018(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 16515072
-  %2 = icmp ugt i32 %1, 7340032
+  %2 = icmp samesign ugt i32 %1, 7340032
   %3 = select i1 %2, i32 -13, i32 -20
   ret i32 %3
 }

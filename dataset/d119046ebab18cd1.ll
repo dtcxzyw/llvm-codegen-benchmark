@@ -1,5 +1,6 @@
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/to_chars.ll
 ; cpython/optimized/unicodeobject.ll
 ; linux/optimized/intel_modeset_setup.ll
 ; openjdk/optimized/mlib_ImageCopy_Bit.ll

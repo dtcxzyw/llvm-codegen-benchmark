@@ -1,16 +1,4 @@
 
-; 1 occurrences:
-; ruby/optimized/japanese.ll
-; Function Attrs: nounwind
-define i32 @func00000000000000af(i32 %0, i8 %1) #0 {
-entry:
-  %2 = icmp sgt i8 %1, -1
-  %3 = select i1 %2, i32 97, i32 96
-  %4 = add nuw nsw i32 %3, %0
-  %5 = add nuw nsw i32 %4, 162
-  ret i32 %5
-}
-
 ; 3 occurrences:
 ; wireshark/optimized/packet-ppp.c.ll
 ; wireshark/optimized/packet-rlc-lte.c.ll
@@ -55,7 +43,7 @@ define i32 @func0000000000000010(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 16
   %3 = select i1 %2, i32 16, i32 10
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = add i32 %4, 1
   ret i32 %5
 }
@@ -80,7 +68,7 @@ define i32 @func000000000000008f(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp ugt i8 %1, 1
   %3 = select i1 %2, i32 8, i32 2
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = add nuw nsw i32 %4, 1
   ret i32 %5
 }
@@ -93,7 +81,7 @@ define i32 @func000000000000001d(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 0
   %3 = select i1 %2, i32 9, i32 4
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = add nsw i32 %4, -8
   ret i32 %5
 }

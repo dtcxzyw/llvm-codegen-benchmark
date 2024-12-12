@@ -15,7 +15,9 @@ entry:
   ret i64 %6
 }
 
-; 6 occurrences:
+; 8 occurrences:
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side_basic.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestRingBuffer.cpp.ll
 ; eastl/optimized/TestVector.cpp.ll
@@ -25,9 +27,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000055(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sdiv exact i64 %2, 120
+  %3 = sdiv exact i64 %2, 200
   %4 = add nsw i64 %3, %0
-  %5 = shl nsw i64 %1, 2
+  %5 = shl nsw i64 %1, 1
   %6 = sub nsw i64 %4, %5
   ret i64 %6
 }

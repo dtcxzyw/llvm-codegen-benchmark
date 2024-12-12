@@ -1,5 +1,5 @@
 
-; 694 occurrences:
+; 689 occurrences:
 ; abc/optimized/abcNpnSave.c.ll
 ; abseil-cpp/optimized/city.cc.ll
 ; arrow/optimized/array_dict.cc.ll
@@ -10,6 +10,7 @@
 ; arrow/optimized/type.cc.ll
 ; arrow/optimized/vector_hash.cc.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/src.ll
 ; c3c/optimized/asm_target.c.ll
 ; chibicc/optimized/hashmap.ll
 ; cmake/optimized/cookie.c.ll
@@ -62,9 +63,7 @@
 ; folly/optimized/EDFThreadPoolExecutor.cpp.ll
 ; folly/optimized/EventBase.cpp.ll
 ; folly/optimized/EventBaseLocal.cpp.ll
-; folly/optimized/F14Table.cpp.ll
 ; folly/optimized/FiberManager.cpp.ll
-; folly/optimized/Futex.cpp.ll
 ; folly/optimized/Future.cpp.ll
 ; folly/optimized/GlobalExecutor.cpp.ll
 ; folly/optimized/GlobalShutdownSocketSet.cpp.ll
@@ -491,7 +490,6 @@
 ; mitsuba3/optimized/merge.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/tensor.cpp.ll
@@ -566,7 +564,6 @@
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openjdk/optimized/hb-set.ll
 ; openjdk/optimized/shenandoahEvacOOMHandler.ll
-; openmpi/optimized/tm_mt.ll
 ; pbrt-v4/optimized/aggregate.cpp.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll
 ; pbrt-v4/optimized/camera.cpp.ll
@@ -614,13 +611,11 @@
 ; quantlib/optimized/markovfunctional.ll
 ; quantlib/optimized/mt19937uniformrng.ll
 ; quantlib/optimized/xoshiro256starstaruniformrng.ll
-; quest/optimized/mt19937ar.c.ll
 ; raylib/optimized/rcore.c.ll
 ; redis/optimized/ckh.ll
 ; redis/optimized/ckh.sym.ll
 ; redis/optimized/dict.ll
 ; redis/optimized/hyperloglog.ll
-; redis/optimized/mt19937-64.ll
 ; regex-rs/optimized/183h9dropc9vohym.ll
 ; regex-rs/optimized/6f4i3c8223u3bmw.ll
 ; rocksdb/optimized/filter_policy.cc.ll
@@ -698,7 +693,7 @@
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, -4658895280553007687
-  %3 = xor i64 %2, %0
+  %3 = xor i64 %0, %2
   ret i64 %3
 }
 

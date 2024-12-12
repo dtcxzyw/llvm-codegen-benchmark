@@ -1,7 +1,3 @@
-func00000000000000bc:                   # @func00000000000000bc
-	decl	%esi
-	leaq	28(%rdi,%rsi,4), %rax
-	retq
 func000000000000003c:                   # @func000000000000003c
 	decl	%esi
 	leaq	4(%rdi,%rsi,4), %rax
@@ -10,15 +6,11 @@ func00000000000000fc:                   # @func00000000000000fc
 	decl	%esi
 	leaq	8(%rdi,%rsi,8), %rax
 	retq
-func00000000000000fe:                   # @func00000000000000fe
+func00000000000000ff:                   # @func00000000000000ff
 	decl	%esi
 	leaq	10(%rdi,%rsi,2), %rax
 	retq
 func000000000000007c:                   # @func000000000000007c
 	addl	$-2, %esi
-	leaq	16(%rdi,%rsi,8), %rax
-	retq
-func000000000000003e:                   # @func000000000000003e
-	decl	%esi
 	leaq	8(%rdi,%rsi,8), %rax
 	retq

@@ -2,7 +2,7 @@
 	.quad	-3689348814741910323            # 0xcccccccccccccccd
 .LCPI0_1:
 	.quad	8                               # 0x8
-func0000000000000104:                   # @func0000000000000104
+func0000000000000204:                   # @func0000000000000204
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpsraq	$4, %ymm1, %ymm1
 	vpmullq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
@@ -17,7 +17,7 @@ func0000000000000104:                   # @func0000000000000104
 	.quad	-6148914691236517205            # 0xaaaaaaaaaaaaaaab
 .LCPI1_1:
 	.quad	384307168202282325              # 0x555555555555555
-func0000000000000108:                   # @func0000000000000108
+func0000000000000208:                   # @func0000000000000208
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpsraq	$3, %ymm1, %ymm1
 	vpmullq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
@@ -30,7 +30,7 @@ func0000000000000108:                   # @func0000000000000108
 	retq
 .LCPI2_0:
 	.quad	-1229782938247303441            # 0xeeeeeeeeeeeeeeef
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpsraq	$3, %ymm1, %ymm1
 	vpmullq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm1
@@ -45,7 +45,7 @@ func000000000000005a:                   # @func000000000000005a
 	.quad	-1229782938247303441            # 0xeeeeeeeeeeeeeeef
 .LCPI3_1:
 	.quad	4                               # 0x4
-func0000000000000054:                   # @func0000000000000054
+func00000000000000b4:                   # @func00000000000000b4
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpsraq	$3, %ymm1, %ymm1
 	vpmullq	.LCPI3_0(%rip){1to4}, %ymm1, %ymm1
@@ -60,7 +60,7 @@ func0000000000000054:                   # @func0000000000000054
 	.quad	-6148914691236517205            # 0xaaaaaaaaaaaaaaab
 .LCPI4_1:
 	.quad	8                               # 0x8
-func0000000000000114:                   # @func0000000000000114
+func0000000000000224:                   # @func0000000000000224
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpsraq	$3, %ymm1, %ymm1
 	vpmullq	.LCPI4_0(%rip){1to4}, %ymm1, %ymm1

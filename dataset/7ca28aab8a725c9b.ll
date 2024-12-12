@@ -4,7 +4,7 @@
 ; faiss/optimized/lattice_Zn.cpp.ll
 ; opencv/optimized/btv_l1.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -2
   %3 = sext i32 %2 to i64
@@ -17,7 +17,7 @@ entry:
 ; quantlib/optimized/gaussiannoncentralchisquaredpolynomial.ll
 ; quantlib/optimized/squarerootclvmodel.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000e4(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = sext i32 %2 to i64
@@ -30,7 +30,7 @@ entry:
 ; quantlib/optimized/gaussiannoncentralchisquaredpolynomial.ll
 ; quantlib/optimized/squarerootclvmodel.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000e8(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = sext i32 %2 to i64
@@ -64,7 +64,7 @@ entry:
 ; zxing/optimized/PDFDetectionResult.cpp.ll
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000064(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = sext i32 %2 to i64
@@ -73,13 +73,12 @@ entry:
   ret i1 %5
 }
 
-; 24 occurrences:
+; 23 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; ceres/optimized/visibility.cc.ll
 ; faiss/optimized/NSG.cpp.ll
 ; gromacs/optimized/hardwaretopology.cpp.ll
 ; lightgbm/optimized/dataset_loader.cpp.ll
-; llvm/optimized/BranchProbabilityInfo.cpp.ll
 ; opencv/optimized/blenders.cpp.ll
 ; opencv/optimized/daisy.cpp.ll
 ; opencv/optimized/dis_flow.cpp.ll
@@ -99,7 +98,7 @@ entry:
 ; zxing/optimized/PDFDetectionResult.cpp.ll
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000068(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = sext i32 %2 to i64
@@ -112,7 +111,7 @@ entry:
 ; gromacs/optimized/pme_grid.cpp.ll
 ; pbrt-v4/optimized/shapes.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = sext i32 %2 to i64
@@ -124,7 +123,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/readir.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = sext i32 %2 to i64
@@ -137,7 +136,7 @@ entry:
 ; faiss/optimized/lattice_Zn.cpp.ll
 ; opencv/optimized/btv_l1.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = sext i32 %2 to i64

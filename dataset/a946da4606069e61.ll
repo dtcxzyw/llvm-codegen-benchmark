@@ -20,7 +20,6 @@ entry:
 }
 
 ; 24 occurrences:
-; abc/optimized/abcDetect.c.ll
 ; abc/optimized/abcFx.c.ll
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/acecFadds.c.ll
@@ -38,6 +37,7 @@ entry:
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/ioJson.c.ll
 ; abc/optimized/ioUtil.c.ll
+; boost/optimized/area.ll
 ; libevent/optimized/evutil.c.ll
 ; libquic/optimized/mul.c.ll
 ; minetest/optimized/COBJMeshFileLoader.cpp.ll

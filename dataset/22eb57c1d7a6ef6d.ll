@@ -47,7 +47,7 @@ entry:
 ; llvm/optimized/SlotIndexes.cpp.ll
 ; yosys/optimized/sat.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func000000000000004c(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = icmp ne ptr %0, %1
@@ -62,7 +62,7 @@ entry:
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000041(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = icmp eq ptr %0, %1
@@ -86,7 +86,7 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000029(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000049(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = icmp uge ptr %0, %1

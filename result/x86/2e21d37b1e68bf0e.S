@@ -27,6 +27,12 @@ func00000000000000a8:                   # @func00000000000000a8
 	addl	%edx, %eax
 	shrl	$12, %eax
 	retq
+func00000000000000aa:                   # @func00000000000000aa
+	shll	$8, %edx
+	leal	(%rdi,%rsi), %eax
+	addl	%edx, %eax
+	shrl	$12, %eax
+	retq
 func0000000000000182:                   # @func0000000000000182
 	shll	$16, %edx
 	leal	(%rdi,%rsi), %eax

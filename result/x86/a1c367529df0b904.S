@@ -3,7 +3,7 @@ func0000000000000001:                   # @func0000000000000001
 	testl	$-4096, %edi                    # imm = 0xF000
 	sete	%al
 	retq
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	andl	$-16, %edi
 	cmpl	$128, %edi
 	sete	%al

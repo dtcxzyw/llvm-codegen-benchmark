@@ -3,7 +3,7 @@ func000000000000000a:                   # @func000000000000000a
 	vsra.vi	v8, v8, 31
 	vor.vi	v8, v8, 1
 	ret
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	lui	a0, 522240
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgtu.vx	v0, v8, a0

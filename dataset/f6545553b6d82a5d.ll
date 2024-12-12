@@ -7,7 +7,7 @@
 ; openusd/optimized/utils.c.ll
 ; z3/optimized/mpz.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a4(i32 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = sext i32 %0 to i64
@@ -25,7 +25,7 @@ entry:
 ; darktable/optimized/introspection_toneequal.c.ll
 ; opencv/optimized/connectedcomponents.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a8(i32 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = sext i32 %0 to i64
@@ -38,7 +38,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/connectedcomponents.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = sext i32 %0 to i64

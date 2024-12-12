@@ -1,6 +1,7 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; abc/optimized/saigRetStep.c.ll
+; boost/optimized/alloc_lib.ll
 ; html5ever-rs/optimized/1wenjtbhc61q6deg.ll
 ; libjpeg-turbo/optimized/jmemmgr.c.ll
 ; linux/optimized/generic-radix-tree.ll

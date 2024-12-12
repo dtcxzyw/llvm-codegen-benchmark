@@ -1,5 +1,5 @@
 
-; 516 occurrences:
+; 517 occurrences:
 ; abseil-cpp/optimized/str_cat_test.cc.ll
 ; arrow/optimized/api_scalar.cc.ll
 ; arrow/optimized/array_dict.cc.ll
@@ -16,6 +16,7 @@
 ; assimp/optimized/RemoveRedundantMaterials.cpp.ll
 ; assimp/optimized/SplitByBoneCountProcess.cpp.ll
 ; assimp/optimized/X3DXmlHelper.cpp.ll
+; boost/optimized/options_description.ll
 ; c3c/optimized/c_abi_x86.c.ll
 ; casadi/optimized/mx_function.cpp.ll
 ; casadi/optimized/nlp_builder.cpp.ll
@@ -114,7 +115,6 @@
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; linux/optimized/af_netlink.ll
 ; linux/optimized/ah6.ll
-; linux/optimized/bitmap-str.ll
 ; linux/optimized/bitmap.ll
 ; linux/optimized/bitset.ll
 ; linux/optimized/blk-map.ll
@@ -217,7 +217,6 @@
 ; llvm/optimized/PaddingChecker.cpp.ll
 ; llvm/optimized/ParentMapContext.cpp.ll
 ; llvm/optimized/RISCVExpandPseudoInsts.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RangeConstraintManager.cpp.ll
 ; llvm/optimized/ReachableCode.cpp.ll
@@ -371,8 +370,6 @@
 ; php/optimized/zend_ssa.ll
 ; pocketpy/optimized/vm.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; protobuf/optimized/generated_enum_util.cc.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
@@ -514,7 +511,11 @@
 ; z3/optimized/lar_solver.cpp.ll
 ; z3/optimized/solve_context_eqs.cpp.ll
 ; z3/optimized/theory_lra.cpp.ll
-; z3/optimized/watch_list.cpp.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
 ; zxing/optimized/Content.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i32 %0) #0 {
@@ -525,7 +526,7 @@ entry:
   ret i64 %3
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; hermes/optimized/APInt.cpp.ll
 ; hwloc/optimized/topology-linux.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
@@ -537,6 +538,7 @@ entry:
 ; postgres/optimized/tsgistidx.ll
 ; qemu/optimized/util_thread-context.c.ll
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
+; zed-rs/optimized/d5przcl3nwvj7ddp1j7ydu4aq.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000e(i32 %0) #0 {
 entry:
@@ -608,13 +610,14 @@ entry:
   ret i64 %3
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; abc/optimized/acecXor.c.ll
 ; abc/optimized/giaShow.c.ll
 ; darktable/optimized/KodakDecompressor.cpp.ll
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
 ; darktable/optimized/introspection_vibrance.c.ll
 ; linux/optimized/pasid.ll
+; openexr/optimized/ImfHuf.cpp.ll
 ; postgres/optimized/tsgistidx.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i32 %0) #0 {

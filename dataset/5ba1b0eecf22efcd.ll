@@ -1,12 +1,10 @@
 
-; 5 occurrences:
+; 3 occurrences:
 ; jq/optimized/euc_jp.ll
 ; oniguruma/optimized/euc_jp.ll
-; opencv/optimized/stringutils.cpp.ll
 ; ruby/optimized/euc_jp.ll
-; zxing/optimized/TextDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000050(i8 %0, i8 %1) #0 {
+define i32 @func0000000000000090(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, -114
   %3 = icmp ult i8 %0, 127
@@ -19,7 +17,7 @@ entry:
 ; php/optimized/basic_functions.ll
 ; redis/optimized/sds.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000110(i8 %0, i8 %1) #0 {
+define i32 @func0000000000000210(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, 26
   %3 = icmp ult i8 %0, 10

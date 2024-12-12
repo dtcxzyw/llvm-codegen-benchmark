@@ -3,7 +3,7 @@
 ; cpython/optimized/unicodeobject.ll
 ; llvm/optimized/Instructions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub i32 %3, %1
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/topio.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000a6(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nsw i32 %3, %1
@@ -50,7 +50,7 @@ entry:
 ; ceres/optimized/schur_eliminator_4_4_d.cc.ll
 ; ceres/optimized/schur_eliminator_d_d_d.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000e6(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nsw i32 %3, %1

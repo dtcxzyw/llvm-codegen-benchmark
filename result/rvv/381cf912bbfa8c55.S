@@ -5,8 +5,8 @@ func000000000000003f:                   # @func000000000000003f
 	vadd.vv	v12, v14, v12
 	addi	a0, a0, -241
 	vand.vx	v12, v12, a0
-	vadd.vv	v8, v10, v8
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v10
+	vadd.vv	v8, v8, v12
 	ret
 func000000000000000f:                   # @func000000000000000f
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -15,6 +15,6 @@ func000000000000000f:                   # @func000000000000000f
 	vadd.vv	v12, v14, v12
 	addi	a0, a0, 455
 	vand.vx	v12, v12, a0
-	vadd.vv	v8, v10, v8
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v10
+	vadd.vv	v8, v8, v12
 	ret

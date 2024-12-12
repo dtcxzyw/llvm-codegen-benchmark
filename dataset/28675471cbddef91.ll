@@ -1,5 +1,8 @@
 
-; 5 occurrences:
+; 8 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; coreutils-rs/optimized/22bojphyikqmi872.ll
 ; coreutils-rs/optimized/ixpgh0gjooq08dy.ll
 ; quantlib/optimized/noarbsabr.ll

@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	andl	$7, %esi
 	andl	$256, %edi                      # imm = 0x100
 	orq	%rsi, %rdi
@@ -10,7 +10,7 @@ func0000000000000001:                   # @func0000000000000001
 	orq	%rsi, %rdi
 	sete	%al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	andl	$-128, %esi
 	andl	$7, %edi
 	orq	%rsi, %rdi
@@ -22,18 +22,4 @@ func000000000000000c:                   # @func000000000000000c
 	andl	$2047, %edi                     # imm = 0x7FF
 	orq	%rax, %rdi
 	setne	%al
-	retq
-func0000000000000014:                   # @func0000000000000014
-	movzbl	%sil, %eax
-	andl	$3840, %edi                     # imm = 0xF00
-	orl	%eax, %edi
-	cmpl	$1797, %edi                     # imm = 0x705
-	setb	%al
-	retq
-func0000000000000018:                   # @func0000000000000018
-	movzbl	%sil, %eax
-	andl	$3840, %edi                     # imm = 0xF00
-	orl	%eax, %edi
-	cmpl	$1797, %edi                     # imm = 0x705
-	setae	%al
 	retq

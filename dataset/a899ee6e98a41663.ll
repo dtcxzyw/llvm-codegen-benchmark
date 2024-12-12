@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; curl/optimized/libcurl_la-setopt.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000024(i32 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -1
   %3 = icmp ult i64 %2, 11
@@ -29,7 +29,7 @@ entry:
 ; velox/optimized/Filter.cpp.ll
 ; velox/optimized/JsonType.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000058(i32 %0, i64 %1) #0 {
+define i32 @func00000000000000b8(i32 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -20481
   %3 = icmp ult i64 %2, -20480

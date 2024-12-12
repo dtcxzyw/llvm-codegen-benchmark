@@ -1,6 +1,6 @@
 func0000000000000001:                   # @func0000000000000001
-	movsbl	%dil, %eax
-	andl	$1024, %eax                     # imm = 0x400
+	movswl	%di, %eax
+	andl	$-262144, %eax                  # imm = 0xFFFC0000
 	retq
 func0000000000000000:                   # @func0000000000000000
 	movl	%edi, %eax

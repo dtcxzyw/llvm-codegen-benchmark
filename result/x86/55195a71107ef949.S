@@ -1,4 +1,4 @@
-func0000000000000052:                   # @func0000000000000052
+func0000000000000092:                   # @func0000000000000092
 	subl	%edx, %esi
 	cmpl	%edi, %esi
 	setae	%al
@@ -8,17 +8,17 @@ func0000000000000016:                   # @func0000000000000016
 	cmpl	%edi, %esi
 	setge	%al
 	retq
-func0000000000000070:                   # @func0000000000000070
+func00000000000000d0:                   # @func00000000000000d0
 	subl	%edx, %esi
 	cmpl	%edi, %esi
 	seta	%al
 	retq
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	subl	%edx, %esi
 	cmpl	%edi, %esi
 	setl	%al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000058:                   # @func0000000000000058
 	subl	%edx, %esi
 	cmpl	%edi, %esi
 	setne	%al

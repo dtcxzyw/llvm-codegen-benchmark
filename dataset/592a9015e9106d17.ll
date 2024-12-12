@@ -1,5 +1,6 @@
 
 ; 25 occurrences:
+; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_diffuse.c.ll
 ; faiss/optimized/lattice_Zn.cpp.ll
 ; graphviz/optimized/smart_ini_x.c.ll
@@ -24,7 +25,6 @@
 ; opencv/optimized/odometry.cpp.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; recastnavigation/optimized/RecastContour.cpp.ll
-; zxing/optimized/ResultPoint.cpp.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i32 %0) #0 {
 entry:

@@ -12,13 +12,13 @@ func0000000000000006:                   # @func0000000000000006
 	sext.b	a0, a0
 	slti	a0, a0, 26
 	ret
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	srli	a0, a0, 24
 	sext.b	a0, a0
 	slti	a0, a0, -59
 	xori	a0, a0, 1
 	ret
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	srli	a0, a0, 24
 	sext.b	a0, a0
 	slti	a0, a0, 60
@@ -36,6 +36,6 @@ func000000000000000c:                   # @func000000000000000c
 func0000000000000008:                   # @func0000000000000008
 	slli	a0, a0, 40
 	srli	a0, a0, 56
-	sltiu	a0, a0, 3
+	sltiu	a0, a0, 100
 	xori	a0, a0, 1
 	ret

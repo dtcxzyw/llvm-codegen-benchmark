@@ -1,6 +1,6 @@
 func0000000000000002:                   # @func0000000000000002
+	xorl	%eax, %eax
 	testb	$1, %sil
-	movl	$1, %eax
 	cmoveq	%rdi, %rax
 	retq
 func0000000000000000:                   # @func0000000000000000

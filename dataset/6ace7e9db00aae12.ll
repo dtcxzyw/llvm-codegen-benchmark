@@ -7,13 +7,13 @@
 define i1 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 9
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = shl i64 %1, 9
   %6 = icmp ult i64 %4, %5
   ret i1 %6
 }
 
-; 25 occurrences:
+; 24 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/X3DImporter_Metadata.cpp.ll
@@ -35,12 +35,11 @@ entry:
 ; opencv/optimized/ransac_solvers.cpp.ll
 ; opencv/optimized/short_term_imageless_tracker.cpp.ll
 ; opencv/optimized/zero_term_imageless_tracker.cpp.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/gaussian1dmodel.ll
 ; soc-simulator/optimized/sim_mycpu.ll
 ; zxing/optimized/PDFWriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000158(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002a8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 3
   %4 = add nsw i64 %3, %0
@@ -115,10 +114,10 @@ entry:
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000176(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002e6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 2
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = shl nsw i64 %1, 2
   %6 = icmp slt i64 %4, %5
   ret i1 %6
@@ -130,7 +129,7 @@ entry:
 define i1 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 3
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = shl i64 %1, 3
   %6 = icmp ugt i64 %4, %5
   ret i1 %6

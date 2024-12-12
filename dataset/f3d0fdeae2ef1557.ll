@@ -1,10 +1,12 @@
 
-; 5 occurrences:
+; 7 occurrences:
 ; mini-lsm-rs/optimized/211qm7emy1a6xqse.ll
 ; mini-lsm-rs/optimized/45avienzelzw747t.ll
 ; node/optimized/simdutf.ll
 ; ruby/optimized/dir.ll
 ; rustfmt-rs/optimized/4arc02n7xt9gqo2v.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i1 %2) #0 {
 entry:

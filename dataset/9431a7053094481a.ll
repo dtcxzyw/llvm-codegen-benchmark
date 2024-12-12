@@ -1,10 +1,9 @@
 
-; 14 occurrences:
+; 13 occurrences:
 ; arrow/optimized/UriRecompose.c.ll
 ; clamav/optimized/js-norm.c.ll
 ; linux/optimized/exconvrt.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
-; postgres/optimized/oracle_compat.ll
 ; rocksdb/optimized/block_based_table_iterator.cc.ll
 ; rocksdb/optimized/block_based_table_reader.cc.ll
 ; rocksdb/optimized/block_prefetcher.cc.ll
@@ -23,43 +22,13 @@ entry:
   ret i32 %4
 }
 
-; 22 occurrences:
-; abseil-cpp/optimized/cord.cc.ll
-; abseil-cpp/optimized/cord_analysis.cc.ll
-; abseil-cpp/optimized/cord_rep_btree.cc.ll
-; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
-; abseil-cpp/optimized/cord_test.cc.ll
-; abseil-cpp/optimized/cordz_info.cc.ll
-; abseil-cpp/optimized/cordz_info_statistics_test.cc.ll
-; chibicc/optimized/tokenize.ll
-; freetype/optimized/autofit.c.ll
-; hermes/optimized/BigIntSupport.cpp.ll
-; linux/optimized/cypress_ps2.ll
-; llvm/optimized/ELFObjectFile.cpp.ll
-; mitsuba3/optimized/x86func.cpp.ll
-; postgres/optimized/like.ll
-; postgres/optimized/like_support.ll
-; protobuf/optimized/message_lite.cc.ll
-; protobuf/optimized/zero_copy_stream.cc.ll
-; protobuf/optimized/zero_copy_stream_impl_lite.cc.ll
-; wireshark/optimized/packet-diameter_3gpp.c.ll
-; wireshark/optimized/packet-gsm_a_gm.c.ll
-; wireshark/optimized/packet-gsm_map.c.ll
-; wireshark/optimized/packet-tds.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i8 %0, i1 %1) #0 {
-entry:
-  %2 = select i1 %1, i32 218103808, i32 234881024
-  %3 = icmp ult i8 %0, 81
-  %4 = select i1 %3, i32 201326592, i32 %2
-  ret i32 %4
-}
-
-; 129 occurrences:
+; 127 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/parseEqn.c.ll
 ; abc/optimized/saigSynch.c.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; c3c/optimized/sema_decls.c.ll
 ; cmake/optimized/ftplistparser.c.ll
 ; cmake/optimized/xmltok.c.ll
@@ -92,7 +61,6 @@ entry:
 ; linux/optimized/exconvrt.ll
 ; linux/optimized/gen8_engine_cs.ll
 ; linux/optimized/intel_bios.ll
-; linux/optimized/intel_dsi.ll
 ; linux/optimized/policy.ll
 ; linux/optimized/radix-tree.ll
 ; linux/optimized/reg.ll
@@ -112,7 +80,6 @@ entry:
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/RewriteModernObjC.cpp.ll
 ; llvm/optimized/RewriteObjC.cpp.ll
-; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SemaTemplate.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
 ; llvm/optimized/TargetLoweringObjectFileImpl.cpp.ll
@@ -138,9 +105,7 @@ entry:
 ; openjdk/optimized/vectorIntrinsics.ll
 ; openmpi/optimized/coll_base_util.ll
 ; openssl/optimized/libcrypto-lib-bio_print.ll
-; openssl/optimized/libcrypto-lib-ct_sct.ll
 ; openssl/optimized/libcrypto-shlib-bio_print.ll
-; openssl/optimized/libcrypto-shlib-ct_sct.ll
 ; openusd/optimized/decodeframe.c.ll
 ; openusd/optimized/patchTreeBuilder.cpp.ll
 ; openusd/optimized/testUsdImagingStageSceneIndexContents.cpp.ll
@@ -194,6 +159,36 @@ entry:
   ret i32 %4
 }
 
+; 20 occurrences:
+; abseil-cpp/optimized/cord.cc.ll
+; abseil-cpp/optimized/cord_analysis.cc.ll
+; abseil-cpp/optimized/cord_rep_btree.cc.ll
+; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
+; abseil-cpp/optimized/cord_test.cc.ll
+; abseil-cpp/optimized/cordz_info.cc.ll
+; abseil-cpp/optimized/cordz_info_statistics_test.cc.ll
+; chibicc/optimized/tokenize.ll
+; hermes/optimized/BigIntSupport.cpp.ll
+; linux/optimized/cypress_ps2.ll
+; llvm/optimized/ELFObjectFile.cpp.ll
+; postgres/optimized/like.ll
+; postgres/optimized/like_support.ll
+; protobuf/optimized/message_lite.cc.ll
+; protobuf/optimized/zero_copy_stream.cc.ll
+; protobuf/optimized/zero_copy_stream_impl_lite.cc.ll
+; wireshark/optimized/packet-diameter_3gpp.c.ll
+; wireshark/optimized/packet-gsm_a_gm.c.ll
+; wireshark/optimized/packet-gsm_map.c.ll
+; wireshark/optimized/packet-tds.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i8 %0, i1 %1) #0 {
+entry:
+  %2 = select i1 %1, i32 -87, i32 -55
+  %3 = icmp ult i8 %0, 10
+  %4 = select i1 %3, i32 -48, i32 %2
+  ret i32 %4
+}
+
 ; 4 occurrences:
 ; crow/optimized/example.cpp.ll
 ; linux/optimized/libahci.ll
@@ -216,6 +211,28 @@ entry:
   %2 = select i1 %1, i32 46, i32 88
   %3 = icmp slt i8 %0, 0
   %4 = select i1 %3, i32 98, i32 %2
+  ret i32 %4
+}
+
+; 1 occurrences:
+; postgres/optimized/oracle_compat.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000018(i8 %0, i1 %1) #0 {
+entry:
+  %2 = select i1 %1, i32 15, i32 31
+  %3 = icmp samesign ugt i8 %0, -17
+  %4 = select i1 %3, i32 7, i32 %2
+  ret i32 %4
+}
+
+; 1 occurrences:
+; freetype/optimized/autofit.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i8 %0, i1 %1) #0 {
+entry:
+  %2 = select i1 %1, i32 15, i32 7
+  %3 = icmp samesign ult i8 %0, -32
+  %4 = select i1 %3, i32 31, i32 %2
   ret i32 %4
 }
 

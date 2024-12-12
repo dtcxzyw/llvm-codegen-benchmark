@@ -13,13 +13,7 @@ func0000000000000008:                   # @func0000000000000008
 	czero.nez	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func0000000000000046:                   # @func0000000000000046
-	subw	a2, a2, a1
-	addiw	a1, a2, -1023
-	slti	a1, a1, -6
-	czero.nez	a0, a0, a1
-	ret
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	subw	a2, a2, a1
 	li	a1, 64
 	addiw	a2, a2, 64
@@ -28,7 +22,7 @@ func0000000000000056:                   # @func0000000000000056
 	czero.eqz	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	subw	a2, a2, a1
 	li	a1, 11
 	addiw	a2, a2, 64

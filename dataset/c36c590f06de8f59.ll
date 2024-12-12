@@ -12,7 +12,7 @@ define i32 @func000000000000001e(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = select i1 %1, i64 1, i64 %3
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   %6 = trunc nuw i64 %5 to i32
   ret i32 %6
 }
@@ -32,7 +32,7 @@ define i32 @func0000000000000002(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = select i1 %1, i64 0, i64 %3
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = trunc nuw i64 %5 to i32
   ret i32 %6
 }
@@ -56,7 +56,7 @@ define i32 @func0000000000000010(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = select i1 %1, i64 0, i64 %3
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = trunc i64 %5 to i32
   ret i32 %6
 }

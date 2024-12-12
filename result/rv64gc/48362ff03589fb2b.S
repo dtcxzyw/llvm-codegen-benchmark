@@ -23,7 +23,7 @@ func000000000000000f:                   # @func000000000000000f
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func0000000000000005:                   # @func0000000000000005
+func0000000000000007:                   # @func0000000000000007
 	slli	a2, a2, 63
 	srai	a2, a2, 63
 	andi	a2, a2, 100
@@ -42,11 +42,17 @@ func000000000000000d:                   # @func000000000000000d
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func0000000000000007:                   # @func0000000000000007
+func0000000000000005:                   # @func0000000000000005
 	andi	a2, a2, 1
+	bnez	a2, .LBB6_2
+	li	a2, 96
 	add	a0, a0, a1
 	add	a0, a0, a2
-	addi	a0, a0, 365
+	ret
+.LBB6_2:
+	li	a2, 128
+	add	a0, a0, a1
+	add	a0, a0, a2
 	ret
 func0000000000000008:                   # @func0000000000000008
 	slli	a2, a2, 63

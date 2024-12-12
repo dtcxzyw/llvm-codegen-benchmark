@@ -1,5 +1,5 @@
 
-; 167 occurrences:
+; 165 occurrences:
 ; abc/optimized/solver.c.ll
 ; annoy/optimized/annoymodule.ll
 ; bullet3/optimized/b3DynamicBvhBroadphase.ll
@@ -73,7 +73,6 @@
 ; gromacs/optimized/partition.cpp.ll
 ; gromacs/optimized/pme_load_balancing.cpp.ll
 ; gromacs/optimized/slasq4.cpp.ll
-; gromacs/optimized/slasq5.cpp.ll
 ; gromacs/optimized/sm_insolidangle.cpp.ll
 ; gromacs/optimized/solvate.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
@@ -84,7 +83,6 @@
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
@@ -115,7 +113,6 @@
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/perspective.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/projector.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
@@ -166,6 +163,7 @@
 ; stb/optimized/stb_truetype.c.ll
 ; tev/optimized/Image.cpp.ll
 ; tev/optimized/main.cpp.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; zxing/optimized/PDFDetector.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(float %0, float %1, float %2) #0 {
@@ -175,19 +173,17 @@ entry:
   ret i1 %4
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; box2d/optimized/b2_circle_shape.cpp.ll
 ; bullet3/optimized/btAxisSweep3.ll
 ; gromacs/optimized/domdec.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
 ; mitsuba3/optimized/spot.cpp.ll
-; openblas/optimized/ieeeck.c.ll
 ; opencv/optimized/affine_feature2d.cpp.ll
 ; opencv/optimized/dynafu_tsdf.cpp.ll
 ; opencv/optimized/erfilter.cpp.ll
@@ -195,6 +191,7 @@ entry:
 ; opencv/optimized/rapid.cpp.ll
 ; opencv/optimized/sift.dispatch.cpp.ll
 ; opencv/optimized/tsdf_functions.cpp.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000003(float %0, float %1, float %2) #0 {
 entry:
@@ -310,7 +307,7 @@ entry:
   ret i1 %4
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-ot-cff1-table.cc.ll
 ; harfbuzz/optimized/hb-ot-cff2-table.cc.ll
@@ -326,6 +323,7 @@ entry:
 ; openjdk/optimized/hb-ot-font.ll
 ; pbrt-v4/optimized/cameras.cpp.ll
 ; recastnavigation/optimized/DetourCommon.cpp.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(float %0, float %1, float %2) #0 {
 entry:

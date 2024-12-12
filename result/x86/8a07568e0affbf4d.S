@@ -1,4 +1,4 @@
-func0000000000000064:                   # @func0000000000000064
+func00000000000000e4:                   # @func00000000000000e4
 	xorl	%eax, %eax
 	testb	%dl, %dl
 	setne	%al
@@ -6,7 +6,7 @@ func0000000000000064:                   # @func0000000000000064
 	cmpq	%rdi, %rax
 	setb	%al
 	retq
-func0000000000000124:                   # @func0000000000000124
+func0000000000000264:                   # @func0000000000000264
 	xorl	%eax, %eax
 	cmpb	$2, %dl
 	setb	%al
@@ -14,7 +14,7 @@ func0000000000000124:                   # @func0000000000000124
 	cmpq	%rdi, %rax
 	setb	%al
 	retq
-func0000000000000129:                   # @func0000000000000129
+func0000000000000269:                   # @func0000000000000269
 	xorl	%eax, %eax
 	cmpb	$2, %dl
 	setb	%al
@@ -22,7 +22,15 @@ func0000000000000129:                   # @func0000000000000129
 	cmpq	%rdi, %rax
 	setae	%al
 	retq
-func000000000000006c:                   # @func000000000000006c
+func00000000000000e1:                   # @func00000000000000e1
+	xorl	%eax, %eax
+	cmpb	$126, %dl
+	sete	%al
+	leaq	1(%rax,%rsi), %rax
+	cmpq	%rdi, %rax
+	sete	%al
+	retq
+func00000000000000ec:                   # @func00000000000000ec
 	xorl	%eax, %eax
 	cmpb	$2, %dl
 	sete	%al
@@ -31,16 +39,25 @@ func000000000000006c:                   # @func000000000000006c
 	cmpq	%rdi, %rax
 	setne	%al
 	retq
-func0000000000000061:                   # @func0000000000000061
+func00000000000000cc:                   # @func00000000000000cc
 	xorl	%eax, %eax
 	cmpb	$2, %dl
-	sete	%al
+	setne	%al
 	shll	$4, %eax
-	addq	%rsi, %rax
+	leaq	-16(%rax,%rsi), %rax
+	cmpq	%rdi, %rax
+	setne	%al
+	retq
+func00000000000000c1:                   # @func00000000000000c1
+	xorl	%eax, %eax
+	cmpb	$2, %dl
+	setne	%al
+	shll	$4, %eax
+	leaq	-16(%rax,%rsi), %rax
 	cmpq	%rdi, %rax
 	sete	%al
 	retq
-func0000000000000065:                   # @func0000000000000065
+func00000000000000e5:                   # @func00000000000000e5
 	xorl	%eax, %eax
 	testb	%dl, %dl
 	sete	%al
@@ -49,7 +66,7 @@ func0000000000000065:                   # @func0000000000000065
 	cmpq	%rdi, %rax
 	setbe	%al
 	retq
-func0000000000000068:                   # @func0000000000000068
+func00000000000000e8:                   # @func00000000000000e8
 	xorl	%eax, %eax
 	testb	%dl, %dl
 	sete	%al

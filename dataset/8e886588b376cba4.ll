@@ -8,7 +8,7 @@ entry:
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i32
   %5 = zext i1 %1 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   %7 = add i32 %6, %4
   ret i32 %7
 }
@@ -22,7 +22,7 @@ entry:
   %3 = icmp eq i64 %2, 12884901888
   %4 = zext i1 %3 to i32
   %5 = zext i1 %1 to i32
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   %7 = add nsw i32 %6, %4
   ret i32 %7
 }
@@ -38,7 +38,7 @@ entry:
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i32
   %5 = zext i1 %1 to i32
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   %7 = add nuw nsw i32 %6, %4
   ret i32 %7
 }
@@ -51,7 +51,7 @@ entry:
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i32
   %5 = zext i1 %1 to i32
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   %7 = add nsw i32 %6, %4
   ret i32 %7
 }
@@ -64,23 +64,20 @@ entry:
   %3 = icmp eq i64 %2, 0
   %4 = zext i1 %3 to i32
   %5 = zext i1 %1 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   %7 = add i32 %6, %4
   ret i32 %7
 }
 
-; 4 occurrences:
+; 1 occurrences:
 ; abc/optimized/giaSatLut.c.ll
-; cmake/optimized/zstd_compress.c.ll
-; redis/optimized/object.ll
-; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000020f(i32 %0, i1 %1, i64 %2) #0 {
+define i32 @func000000000000060f(i32 %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ugt i64 %2, 1
+  %3 = icmp samesign ugt i64 %2, 1
   %4 = zext i1 %3 to i32
   %5 = zext i1 %1 to i32
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   %7 = add nuw nsw i32 %6, %4
   ret i32 %7
 }
@@ -93,7 +90,22 @@ entry:
   %3 = icmp eq i64 %2, 8
   %4 = zext i1 %3 to i32
   %5 = zext i1 %1 to i32
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
+  %7 = add nuw nsw i32 %6, %4
+  ret i32 %7
+}
+
+; 3 occurrences:
+; cmake/optimized/zstd_compress.c.ll
+; redis/optimized/object.ll
+; zstd/optimized/zstd_compress.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000020f(i32 %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ugt i64 %2, 4294967294
+  %4 = zext i1 %3 to i32
+  %5 = zext i1 %1 to i32
+  %6 = add nuw nsw i32 %0, %5
   %7 = add nuw nsw i32 %6, %4
   ret i32 %7
 }

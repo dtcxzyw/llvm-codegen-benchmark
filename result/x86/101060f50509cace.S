@@ -12,3 +12,10 @@ func000000000000001c:                   # @func000000000000001c
 	addl	%eax, %eax
 	andl	$-16, %eax
 	retq
+func0000000000000007:                   # @func0000000000000007
+	movabsq	$-6067343680855748867, %rax     # imm = 0xABCC77118461CEFD
+	movq	%rdi, %rdx
+	mulxq	%rax, %rax, %rax
+	shrq	$26, %rax
+	addl	%eax, %eax
+	retq

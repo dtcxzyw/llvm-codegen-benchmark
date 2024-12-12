@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; abc/optimized/giaDup.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000311(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000c21(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = icmp eq i64 %3, %1

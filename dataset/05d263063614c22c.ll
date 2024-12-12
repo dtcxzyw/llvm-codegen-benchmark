@@ -1,5 +1,5 @@
 
-; 63 occurrences:
+; 62 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcCascade.c.ll
 ; abc/optimized/abcDress3.c.ll
@@ -49,7 +49,6 @@
 ; abc/optimized/sswConstr.c.ll
 ; abc/optimized/sswFilter.c.ll
 ; abc/optimized/sswRarity.c.ll
-; abc/optimized/sswSimSat.c.ll
 ; abc/optimized/sswSweep.c.ll
 ; coreutils-rs/optimized/4o7j3eorsq1l9mcp.ll
 ; flac/optimized/bitreader.c.ll
@@ -72,7 +71,7 @@ entry:
   ret i32 %4
 }
 
-; 100 occurrences:
+; 99 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcHieCec.c.ll
@@ -165,7 +164,6 @@ entry:
 ; abc/optimized/ifTune.c.ll
 ; abc/optimized/mpmAbc.c.ll
 ; abc/optimized/sbdCore.c.ll
-; abc/optimized/sbdWin.c.ll
 ; abc/optimized/sscCore.c.ll
 ; abc/optimized/utilBridge.c.ll
 ; abc/optimized/wlcAbs.c.ll
@@ -178,7 +176,7 @@ define i32 @func0000000000000003(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = and i32 %2, 1
-  %4 = xor i32 %3, %0
+  %4 = xor i32 %0, %3
   ret i32 %4
 }
 

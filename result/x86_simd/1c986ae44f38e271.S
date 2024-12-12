@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vptestnmd	%ymm0, %ymm0, %k1
 	vpaddb	%xmm2, %xmm1, %xmm2 {%k1}
@@ -24,7 +24,7 @@ func0000000000000011:                   # @func0000000000000011
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vpcmpnleud	.LCPI1_0(%rip){1to8}, %ymm0, %k1
 	vpaddb	.LCPI1_1(%rip), %xmm1, %xmm0 {%k1} {z}
 	vzeroupper

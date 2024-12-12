@@ -13,3 +13,11 @@ func0000000000000003:                   # @func0000000000000003
 .LBB1_2:                                # %entry
 	srai	a0, a0, 32
 	ret
+func0000000000000015:                   # @func0000000000000015
+	sext.w	a2, a2
+	li	a3, 15
+	blt	a3, a2, .LBB2_2
+	mv	a0, a1
+.LBB2_2:                                # %entry
+	srai	a0, a0, 32
+	ret

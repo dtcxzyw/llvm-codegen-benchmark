@@ -1,9 +1,8 @@
 
-; 41 occurrences:
+; 40 occurrences:
 ; g2o/optimized/edge_project_stereo_xyz.cpp.ll
 ; g2o/optimized/edge_project_xyz.cpp.ll
 ; g2o/optimized/edge_project_xyz2uv.cpp.ll
-; openblas/optimized/dgetsqrhrt.c.ll
 ; opencv/optimized/trackerCSRTUtils.cpp.ll
 ; quantlib/optimized/analyticcompoundoptionengine.ll
 ; quantlib/optimized/analytichestonengine.ll

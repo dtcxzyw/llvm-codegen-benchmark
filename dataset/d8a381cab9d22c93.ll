@@ -11,7 +11,20 @@ entry:
   ret i64 %5
 }
 
-; 152 occurrences:
+; 2 occurrences:
+; openjdk/optimized/mutableNUMASpace.ll
+; protobuf/optimized/generated_message_tctable_lite.cc.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000c(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %.idx = shl nuw nsw i64 %1, 3
+  %3 = add nuw i64 %2, %.idx
+  %4 = ptrtoint ptr %0 to i64
+  %5 = sub i64 %3, %4
+  ret i64 %5
+}
+
+; 150 occurrences:
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
 ; fmt/optimized/header-only-test.cc.ll
@@ -91,10 +104,8 @@ entry:
 ; lightgbm/optimized/tree.cpp.ll
 ; openjdk/optimized/g1ConcurrentRebuildAndScrub.ll
 ; openjdk/optimized/g1RemSet.ll
-; openjdk/optimized/mutableNUMASpace.ll
 ; openjdk/optimized/psParallelCompact.ll
 ; openjdk/optimized/zHeapIterator.ll
-; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
 ; tev/optimized/Channel.cpp.ll
@@ -168,7 +179,7 @@ entry:
 define i64 @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %.idx = shl nsw i64 %1, 3
-  %3 = add i64 %.idx, %2
+  %3 = add i64 %2, %.idx
   %4 = ptrtoint ptr %0 to i64
   %5 = sub i64 %3, %4
   ret i64 %5

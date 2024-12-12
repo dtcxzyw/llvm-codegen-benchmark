@@ -5,10 +5,10 @@ func000000000000000a:                   # @func000000000000000a
 	leaq	(%rdi,%rcx,4), %rcx
 	leaq	(%rcx,%rax,4), %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+func0000000000000008:                   # @func0000000000000008
 	notl	%edx
-	movslq	%edx, %rcx
-	movslq	%esi, %rax
-	addq	%rdi, %rax
-	addq	%rcx, %rax
+	movslq	%edx, %rax
+	movslq	%esi, %rcx
+	leaq	(%rdi,%rcx,8), %rcx
+	leaq	(%rcx,%rax,8), %rax
 	retq

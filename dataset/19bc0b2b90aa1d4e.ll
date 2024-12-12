@@ -28,7 +28,7 @@ entry:
   %2 = sitofp i32 %1 to double
   %3 = fdiv double 1.000000e+00, %2
   %4 = fptrunc double %3 to float
-  %5 = fmul float %4, %0
+  %5 = fmul float %0, %4
   ret float %5
 }
 

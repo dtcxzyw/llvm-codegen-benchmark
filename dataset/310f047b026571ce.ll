@@ -1,10 +1,9 @@
 
-%"struct.rocksdb::FdWithKeyRange.2499118" = type { %"struct.rocksdb::FileDescriptor.2499119", ptr, %"class.rocksdb::Slice.2499098", %"class.rocksdb::Slice.2499098" }
-%"struct.rocksdb::FileDescriptor.2499119" = type { ptr, i64, i64, i64, i64 }
-%"class.rocksdb::Slice.2499098" = type { ptr, i64 }
-%"class.QuantLib::Date.2718954" = type { i64 }
+%"struct.rocksdb::FdWithKeyRange.2614359" = type { %"struct.rocksdb::FileDescriptor.2614360", ptr, %"class.rocksdb::Slice.2614339", %"class.rocksdb::Slice.2614339" }
+%"struct.rocksdb::FileDescriptor.2614360" = type { ptr, i64, i64, i64, i64 }
+%"class.rocksdb::Slice.2614339" = type { ptr, i64 }
 
-; 301 occurrences:
+; 314 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/poisson_distribution_test.cc.ll
 ; assimp/optimized/3DSLoader.cpp.ll
@@ -252,6 +251,19 @@
 ; protobuf/optimized/padding_optimizer.cc.ll
 ; protobuf/optimized/text_format.cc.ll
 ; protobuf/optimized/wire_format.cc.ll
+; quantlib/optimized/analyticptdhestonengine.ll
+; quantlib/optimized/bond.ll
+; quantlib/optimized/cmsmarketcalibration.ll
+; quantlib/optimized/concentrating1dmesher.ll
+; quantlib/optimized/discounter.ll
+; quantlib/optimized/exponentialfittinghestonengine.ll
+; quantlib/optimized/fixedlocalvolsurface.ll
+; quantlib/optimized/lfmhullwhiteparam.ll
+; quantlib/optimized/liborforwardmodel.ll
+; quantlib/optimized/optionletstripper2.ll
+; quantlib/optimized/overnightindexedcouponpricer.ll
+; quantlib/optimized/pathwisediscounter.ll
+; quantlib/optimized/timegrid.ll
 ; rocksdb/optimized/compacted_db_impl.cc.ll
 ; rocksdb/optimized/cuckoo_table_reader.cc.ll
 ; rocksdb/optimized/histogram.cc.ll
@@ -307,36 +319,11 @@
 ; z3/optimized/theory_arith.cpp.ll
 ; zxing/optimized/PDFCodewordDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000000a(i1 %0, ptr %1, i64 %2) #0 {
+define i64 @func000000000000000f(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
-  %4 = getelementptr nusw %"struct.rocksdb::FdWithKeyRange.2499118", ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 80
-  %6 = select i1 %0, ptr %5, ptr %1
-  %7 = ptrtoint ptr %6 to i64
-  ret i64 %7
-}
-
-; 13 occurrences:
-; quantlib/optimized/analyticptdhestonengine.ll
-; quantlib/optimized/bond.ll
-; quantlib/optimized/cmsmarketcalibration.ll
-; quantlib/optimized/concentrating1dmesher.ll
-; quantlib/optimized/discounter.ll
-; quantlib/optimized/exponentialfittinghestonengine.ll
-; quantlib/optimized/fixedlocalvolsurface.ll
-; quantlib/optimized/lfmhullwhiteparam.ll
-; quantlib/optimized/liborforwardmodel.ll
-; quantlib/optimized/optionletstripper2.ll
-; quantlib/optimized/overnightindexedcouponpricer.ll
-; quantlib/optimized/pathwisediscounter.ll
-; quantlib/optimized/timegrid.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000b(i1 %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = lshr i64 %2, 1
-  %4 = getelementptr nusw %"class.QuantLib::Date.2718954", ptr %1, i64 %3
-  %5 = getelementptr nusw nuw i8, ptr %4, i64 8
+  %4 = getelementptr nusw nuw %"struct.rocksdb::FdWithKeyRange.2614359", ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 80
   %6 = select i1 %0, ptr %5, ptr %1
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7

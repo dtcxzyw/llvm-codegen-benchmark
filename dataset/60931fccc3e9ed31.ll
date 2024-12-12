@@ -1,28 +1,5 @@
 
-; 13 occurrences:
-; cmake/optimized/archive_string.c.ll
-; duckdb/optimized/ub_duckdb_func_scalar.cpp.ll
-; openssl/optimized/libcrypto-lib-dh_ctrl.ll
-; openssl/optimized/libcrypto-lib-rsa_lib.ll
-; openssl/optimized/libcrypto-shlib-dh_ctrl.ll
-; openssl/optimized/libcrypto-shlib-rsa_lib.ll
-; openusd/optimized/read.c.ll
-; php/optimized/formatted_print.ll
-; slurm/optimized/job_info.ll
-; slurm/optimized/proc_args.ll
-; wireshark/optimized/packet-http3.c.ll
-; wireshark/optimized/vwr.c.ll
-; z3/optimized/approx_nat.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000038(i64 %0) #0 {
-entry:
-  %1 = trunc nuw nsw i64 %0 to i32
-  %2 = icmp ugt i64 %0, 2147483647
-  %3 = select i1 %2, i32 -1, i32 %1
-  ret i32 %3
-}
-
-; 26 occurrences:
+; 21 occurrences:
 ; cpython/optimized/_posixsubprocess.ll
 ; cpython/optimized/memoryobject.ll
 ; curl/optimized/libcurl_la-tftp.ll
@@ -30,17 +7,12 @@ entry:
 ; libquic/optimized/sys_info_posix.cc.ll
 ; linux/optimized/blk-map.ll
 ; linux/optimized/drm_mipi_dsi.ll
-; linux/optimized/drm_prime.ll
-; linux/optimized/ptp_kvm_x86.ll
 ; linux/optimized/tty_ioctl.ll
 ; llvm/optimized/BreakableToken.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
 ; mold/optimized/output-chunks.cc.I386.cc.ll
 ; mold/optimized/output-chunks.cc.LOONGARCH32.cc.ll
-; mold/optimized/output-chunks.cc.M68K.cc.ll
-; mold/optimized/output-chunks.cc.PPC32.cc.ll
-; mold/optimized/output-chunks.cc.RV32BE.cc.ll
 ; mold/optimized/output-chunks.cc.RV32LE.cc.ll
 ; mold/optimized/output-chunks.cc.SH4.cc.ll
 ; openjdk/optimized/IOUtil.ll
@@ -54,6 +26,25 @@ define i32 @func0000000000000001(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
   %2 = icmp eq i64 %0, 0
+  %3 = select i1 %2, i32 -1, i32 %1
+  ret i32 %3
+}
+
+; 9 occurrences:
+; duckdb/optimized/ub_duckdb_func_scalar.cpp.ll
+; openssl/optimized/libcrypto-lib-rsa_lib.ll
+; openssl/optimized/libcrypto-shlib-rsa_lib.ll
+; openusd/optimized/read.c.ll
+; php/optimized/formatted_print.ll
+; slurm/optimized/job_info.ll
+; slurm/optimized/proc_args.ll
+; wireshark/optimized/packet-http3.c.ll
+; z3/optimized/approx_nat.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000068(i64 %0) #0 {
+entry:
+  %1 = trunc nuw nsw i64 %0 to i32
+  %2 = icmp ugt i64 %0, 2147483647
   %3 = select i1 %2, i32 -1, i32 %1
   ret i32 %3
 }
@@ -73,7 +64,7 @@ entry:
 ; openusd/optimized/quadRefinement.cpp.ll
 ; spike/optimized/triggers.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i64 %0) #0 {
+define i32 @func0000000000000061(i64 %0) #0 {
 entry:
   %1 = trunc nuw nsw i64 %0 to i32
   %2 = icmp eq i64 %0, 0
@@ -133,7 +124,7 @@ entry:
 ; quantlib/optimized/unitedstates.ll
 ; quantlib/optimized/weekendsonly.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i64 %0) #0 {
+define i32 @func0000000000000021(i64 %0) #0 {
 entry:
   %1 = trunc nsw i64 %0 to i32
   %2 = icmp eq i64 %0, 0
@@ -156,7 +147,7 @@ entry:
   ret i32 %3
 }
 
-; 21 occurrences:
+; 20 occurrences:
 ; freetype/optimized/bdf.c.ll
 ; rust-analyzer-rs/optimized/1f55n198c3xcwe5h.ll
 ; rust-analyzer-rs/optimized/1wws471dcmaaem6a.ll
@@ -176,10 +167,9 @@ entry:
 ; slurm/optimized/data_parser_v0_0_40_la-parsers.ll
 ; slurm/optimized/data_parser_v0_0_41_la-parsers.ll
 ; typst-rs/optimized/3rk2ctuzbghb17s4.ll
-; wasmtime-rs/optimized/320v7ko74ke0k4k4.ll
 ; wasmtime-rs/optimized/3brysg9si6kuvbeh.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000028(i64 %0) #0 {
+define i32 @func0000000000000048(i64 %0) #0 {
 entry:
   %1 = trunc nuw i64 %0 to i32
   %2 = icmp ugt i64 %0, 4294967295
@@ -205,9 +195,8 @@ entry:
   ret i32 %3
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; linux/optimized/clnt.ll
-; linux/optimized/clntxdr.ll
 ; slurm/optimized/common.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i64 %0) #0 {
@@ -221,10 +210,10 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/JSLexer.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i64 %0) #0 {
+define i32 @func0000000000000014(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
-  %2 = icmp ult i64 %0, 4294967296
+  %2 = icmp samesign ult i64 %0, 4294967296
   %3 = select i1 %2, i32 65533, i32 %1
   ret i32 %3
 }
@@ -232,11 +221,35 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/AutoUpgrade.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000024(i64 %0) #0 {
+define i32 @func0000000000000054(i64 %0) #0 {
 entry:
   %1 = trunc nuw i64 %0 to i32
-  %2 = icmp ult i64 %0, 2
+  %2 = icmp samesign ult i64 %0, 2
   %3 = select i1 %2, i32 7, i32 %1
+  ret i32 %3
+}
+
+; 2 occurrences:
+; wasmtime-rs/optimized/320v7ko74ke0k4k4.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000058(i64 %0) #0 {
+entry:
+  %1 = trunc nuw i64 %0 to i32
+  %2 = icmp samesign ugt i64 %0, 4294967295
+  %3 = select i1 %2, i32 undef, i32 %1
+  ret i32 %3
+}
+
+; 2 occurrences:
+; cmake/optimized/archive_string.c.ll
+; wireshark/optimized/vwr.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000078(i64 %0) #0 {
+entry:
+  %1 = trunc nuw nsw i64 %0 to i32
+  %2 = icmp samesign ugt i64 %0, 268435456
+  %3 = select i1 %2, i32 0, i32 %1
   ret i32 %3
 }
 
@@ -245,7 +258,7 @@ entry:
 ; openmpi/optimized/comm.ll
 ; openmpi/optimized/pml_base_select.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i64 %0) #0 {
+define i32 @func0000000000000041(i64 %0) #0 {
 entry:
   %1 = trunc nuw i64 %0 to i32
   %2 = icmp eq i64 %0, 4294967295

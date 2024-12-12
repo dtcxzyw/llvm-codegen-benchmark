@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; llvm/optimized/MCWin64EH.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000044(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i8
   %3 = add nuw i8 %0, 1
@@ -31,7 +31,7 @@ entry:
 ; nlohmann_json/optimized/unit-ubjson.cpp.ll
 ; nlohmann_json/optimized/unit-udt_macro.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i8
   %3 = add nuw nsw i8 %0, 1
@@ -49,7 +49,7 @@ entry:
 ; nlohmann_json/optimized/unit-ubjson.cpp.ll
 ; nlohmann_json/optimized/unit-udt_macro.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i8
   %3 = add nuw i8 %0, 1

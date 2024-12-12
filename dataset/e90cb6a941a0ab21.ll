@@ -9,9 +9,9 @@
 ; php/optimized/hash_sha.ll
 ; php/optimized/sha1.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000004d4(i32 %0) #0 {
+define i1 @func00000000000029a4(i32 %0) #0 {
 entry:
-  %1 = icmp ult i32 %0, 56
+  %1 = icmp samesign ult i32 %0, 56
   %2 = select i1 %1, i32 56, i32 120
   %3 = sub nsw i32 %2, %0
   %4 = sub nuw nsw i32 64, %0

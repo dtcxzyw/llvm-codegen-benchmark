@@ -5,7 +5,7 @@ func0000000000000004:                   # @func0000000000000004
 	vpmovb2m	%xmm0, %k0
 	vmulps	%zmm2, %zmm1, %zmm0
 	vcmpltps	.LCPI0_0(%rip){1to16}, %zmm0, %k1
-	korw	%k0, %k1, %k0
+	korw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
@@ -35,7 +35,7 @@ func0000000000000006:                   # @func0000000000000006
 	vmulps	%zmm2, %zmm1, %zmm0
 	vxorps	%xmm1, %xmm1, %xmm1
 	vcmpnleps	%zmm0, %zmm1, %k1
-	korw	%k0, %k1, %k0
+	korw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
@@ -46,7 +46,7 @@ func000000000000000a:                   # @func000000000000000a
 	vpmovb2m	%xmm0, %k0
 	vmulps	%zmm2, %zmm1, %zmm0
 	vcmpnleps	.LCPI4_0(%rip){1to16}, %zmm0, %k1
-	korw	%k0, %k1, %k0
+	korw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
@@ -66,17 +66,7 @@ func0000000000000014:                   # @func0000000000000014
 	vmulps	%zmm2, %zmm1, %zmm0
 	vxorps	%xmm1, %xmm1, %xmm1
 	vcmpleps	%zmm1, %zmm0, %k1
-	korw	%k0, %k1, %k0
-	vpmovm2b	%k0, %xmm0
-	vzeroupper
-	retq
-func000000000000001c:                   # @func000000000000001c
-	vpsllw	$7, %xmm0, %xmm0
-	vpmovb2m	%xmm0, %k0
-	vmulps	%zmm2, %zmm1, %zmm0
-	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpordps	%zmm1, %zmm0, %k1
-	korw	%k0, %k1, %k0
+	korw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

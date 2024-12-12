@@ -5,15 +5,15 @@
 ; qemu/optimized/accel_tcg_translate-all.c.ll
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, i1 %1, i8 %2) #0 {
+define i64 @func0000000000000028(i64 %0, i1 %1, i8 %2) #0 {
 entry:
-  %3 = icmp ult i8 %2, 64
-  %4 = or i1 %3, %1
+  %3 = icmp samesign ult i8 %2, 64
+  %4 = or i1 %1, %3
   %5 = select i1 %4, i64 0, i64 %0
   ret i64 %5
 }
 
-; 31 occurrences:
+; 32 occurrences:
 ; duckdb/optimized/ub_duckdb_operator_csv_sniffer.cpp.ll
 ; openjdk/optimized/elfFile.ll
 ; postgres/optimized/arrayfuncs.ll
@@ -45,11 +45,12 @@ entry:
 ; postgres/optimized/to_tsany.ll
 ; postgres/optimized/tsvector_op.ll
 ; postgres/optimized/varlena.ll
+; zed-rs/optimized/2dbu45lers7mkstxlrhw3mc97.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = select i1 %4, i64 0, i64 %0
   ret i64 %5
 }

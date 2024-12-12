@@ -1,11 +1,3 @@
-func0000000000000000:                   # @func0000000000000000
-	orl	%edx, %esi
-	movl	%esi, %eax
-	orl	$262144, %eax                   # imm = 0x40000
-	testb	$1, %dil
-	cmovnel	%esi, %eax
-	orl	$524288, %eax                   # imm = 0x80000
-	retq
 func0000000000000007:                   # @func0000000000000007
 	leal	64(%rsi,%rdx), %eax
 	movl	%esi, %ecx
@@ -21,6 +13,14 @@ func0000000000000006:                   # @func0000000000000006
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	orl	$49152, %eax                    # imm = 0xC000
+	retq
+func0000000000000000:                   # @func0000000000000000
+	orl	%edx, %esi
+	movl	%esi, %eax
+	orl	$553646080, %eax                # imm = 0x20FFF800
+	testb	$1, %dil
+	cmovnel	%esi, %eax
+	orl	$256, %eax                      # imm = 0x100
 	retq
 func0000000000000002:                   # @func0000000000000002
 	orl	%edx, %esi

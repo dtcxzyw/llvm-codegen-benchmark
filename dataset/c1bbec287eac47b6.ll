@@ -3,7 +3,7 @@
 ; clamav/optimized/petite.c.ll
 ; clamav/optimized/upack.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000c4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -4
   %4 = zext i32 %3 to i64
@@ -17,7 +17,7 @@ entry:
 ; imgui/optimized/imgui_draw.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000364(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000006c4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1048575
   %4 = zext nneg i32 %3 to i64
@@ -30,7 +30,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/sre.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000088(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = zext i32 %3 to i64

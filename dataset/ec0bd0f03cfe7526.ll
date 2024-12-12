@@ -1,6 +1,6 @@
 
-%struct.PMUCTRState.2596297 = type { i64, i64, i64, i64, i8, i64 }
-%struct.Map_TimeStruct_t_.2765282 = type { float, float, float }
+%struct.PMUCTRState.2709819 = type { i64, i64, i64, i64, i8, i64 }
+%struct.Map_TimeStruct_t_.2877527 = type { float, float, float }
 
 ; 2 occurrences:
 ; linux/optimized/x_tables.ll
@@ -10,7 +10,7 @@ define ptr @func0000000000000000(ptr %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr [32 x %struct.PMUCTRState.2596297], ptr %0, i64 0, i64 %3
+  %4 = getelementptr [32 x %struct.PMUCTRState.2709819], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
@@ -19,11 +19,11 @@ entry:
 ; abc/optimized/mapperTime.c.ll
 ; wasmtime-rs/optimized/5dheicv8h8x61a9w.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, ptr %1) #0 {
+define ptr @func0000000000000003(ptr %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, 1
-  %4 = getelementptr nusw [2 x %struct.Map_TimeStruct_t_.2765282], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [2 x %struct.Map_TimeStruct_t_.2877527], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

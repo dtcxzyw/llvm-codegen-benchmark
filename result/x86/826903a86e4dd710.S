@@ -1,4 +1,4 @@
-func0000000000000030:                   # @func0000000000000030
+func0000000000000070:                   # @func0000000000000070
 	movl	%esi, %eax
 	negl	%eax
 	cmovsl	%esi, %eax
@@ -6,7 +6,7 @@ func0000000000000030:                   # @func0000000000000030
 	setae	%al
 	orb	%dil, %al
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	incl	%esi
 	testl	$-3, %esi
 	sete	%al

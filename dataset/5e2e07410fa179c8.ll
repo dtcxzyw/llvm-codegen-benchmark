@@ -1,6 +1,8 @@
 
-%"struct.OT::IntType.2628621" = type { %struct.BEInt.2628627 }
-%struct.BEInt.2628627 = type { [2 x i8] }
+%"struct.OT::IntType.2730689" = type { %struct.BEInt.2730691 }
+%struct.BEInt.2730691 = type { [2 x i8] }
+%"struct.OT::IntType.2742031" = type { %struct.BEInt.2742037 }
+%struct.BEInt.2742037 = type { [2 x i8] }
 
 ; 3 occurrences:
 ; linux/optimized/filter.ll
@@ -26,9 +28,9 @@ entry:
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000018c(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %0, %4
   %6 = and i64 %5, 4294967292
@@ -36,18 +38,56 @@ entry:
   ret i1 %7
 }
 
-; 58 occurrences:
-; arrow/optimized/feather.cc.ll
-; arrow/optimized/metadata_internal.cc.ll
+; 6 occurrences:
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-static.cc.ll
+; harfbuzz/optimized/hb-subset-plan.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; openjdk/optimized/hb-common.ll
+; openjdk/optimized/hb-ot-font.ll
+; Function Attrs: nounwind
+define i1 @func000000000000010c(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw %"struct.OT::IntType.2730689", ptr %1, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %0, %4
+  %6 = and i64 %5, 4294967294
+  %7 = icmp ne i64 %6, 0
+  ret i1 %7
+}
+
+; 15 occurrences:
 ; assimp/optimized/NFFLoader.cpp.ll
 ; assimp/optimized/SIBImporter.cpp.ll
 ; cmake/optimized/zstd_fast.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
 ; cvc5/optimized/symmetry_breaker.cpp.ll
-; flatbuffers/optimized/idl_parser.cpp.ll
-; flatbuffers/optimized/reflection.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hyperscan/optimized/rose_build_exclusive.cpp.ll
+; llvm/optimized/DebugHandlerBase.cpp.ll
+; llvm/optimized/MachineInstr.cpp.ll
+; openjdk/optimized/barrierSetNMethod_x86.ll
+; openjdk/optimized/hb-aat-layout.ll
+; openjdk/optimized/jvmciCompilerToVM.ll
+; openjdk/optimized/nmethod.ll
+; zstd/optimized/zstd_fast.c.ll
+; zstd/optimized/zstd_lazy.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000181(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw %"struct.OT::IntType.2742031", ptr %1, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %0, %4
+  %6 = and i64 %5, 4294967288
+  %7 = icmp eq i64 %6, 0
+  ret i1 %7
+}
+
+; 43 occurrences:
+; arrow/optimized/feather.cc.ll
+; arrow/optimized/metadata_internal.cc.ll
+; flatbuffers/optimized/idl_parser.cpp.ll
+; flatbuffers/optimized/reflection.cpp.ll
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; llvm/optimized/AddressSanitizer.cpp.ll
 ; llvm/optimized/AsmWriter.cpp.ll
@@ -58,7 +98,6 @@ entry:
 ; llvm/optimized/ConstantFolding.cpp.ll
 ; llvm/optimized/CoroFrame.cpp.ll
 ; llvm/optimized/CoroSplit.cpp.ll
-; llvm/optimized/DebugHandlerBase.cpp.ll
 ; llvm/optimized/EarlyCSE.cpp.ll
 ; llvm/optimized/GVN.cpp.ll
 ; llvm/optimized/GlobalOpt.cpp.ll
@@ -71,7 +110,6 @@ entry:
 ; llvm/optimized/IntrinsicLowering.cpp.ll
 ; llvm/optimized/LoopVectorizationLegality.cpp.ll
 ; llvm/optimized/LowerTypeTests.cpp.ll
-; llvm/optimized/MachineInstr.cpp.ll
 ; llvm/optimized/MemCpyOptimizer.cpp.ll
 ; llvm/optimized/MemoryLocation.cpp.ll
 ; llvm/optimized/MemorySanitizer.cpp.ll
@@ -89,19 +127,13 @@ entry:
 ; meshlab/optimized/mainwindow_Init.cpp.ll
 ; meshlab/optimized/mainwindow_RunTime.cpp.ll
 ; meshlab/optimized/multiViewer_Container.cpp.ll
-; openjdk/optimized/barrierSetNMethod_x86.ll
-; openjdk/optimized/hb-aat-layout.ll
-; openjdk/optimized/jvmciCompilerToVM.ll
-; openjdk/optimized/nmethod.ll
-; zstd/optimized/zstd_fast.c.ll
-; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000101(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.OT::IntType.2628621", ptr %1, i64 %2
+  %3 = getelementptr nusw i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %0, %4
-  %6 = and i64 %5, 4294967288
+  %6 = and i64 %5, 4294967292
   %7 = icmp eq i64 %6, 0
   ret i1 %7
 }

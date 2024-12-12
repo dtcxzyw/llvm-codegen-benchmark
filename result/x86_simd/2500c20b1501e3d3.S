@@ -19,7 +19,7 @@
 	.long	6                               # 0x6
 .LCPI0_2:
 	.long	1                               # 0x1
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpcmpneqb	.LCPI0_0(%rip), %xmm2, %k2

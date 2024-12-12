@@ -1,8 +1,7 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; abc/optimized/saigSynch.c.ll
 ; libsodium/optimized/libsodium_la-codecs.ll
-; lief/optimized/constant_time.c.ll
 ; linux/optimized/dquot.ll
 ; linux/optimized/yenta_socket.ll
 ; llvm/optimized/TargetInstrInfo.cpp.ll
@@ -16,7 +15,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 31
   %3 = xor i32 %2, -1
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   ret i32 %4
 }
 

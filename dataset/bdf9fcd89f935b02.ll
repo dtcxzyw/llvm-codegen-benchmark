@@ -1,5 +1,5 @@
 
-; 325 occurrences:
+; 324 occurrences:
 ; abc/optimized/abcCollapse.c.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; darktable/optimized/introspection_ashift.c.ll
@@ -32,7 +32,6 @@
 ; faiss/optimized/ResidualQuantizer.cpp.ll
 ; gromacs/optimized/colvargrid.cpp.ll
 ; gromacs/optimized/compute_io.cpp.ll
-; gromacs/optimized/gather.cpp.ll
 ; libjpeg-turbo/optimized/tjbench.c.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -329,7 +328,7 @@
 define i64 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = mul i64 %4, %0
   ret i64 %5
 }
@@ -401,12 +400,12 @@ entry:
 define i64 @func0000000000000005(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = mul nsw i64 %4, %0
   ret i64 %5
 }
 
-; 228 occurrences:
+; 226 occurrences:
 ; abc/optimized/fraSim.c.ll
 ; abc/optimized/sswSim.c.ll
 ; cpython/optimized/arraymodule.ll
@@ -426,8 +425,6 @@ entry:
 ; faiss/optimized/ResidualQuantizer.cpp.ll
 ; faiss/optimized/hamming.cpp.ll
 ; faiss/optimized/residual_quantizer_encode_steps.cpp.ll
-; gromacs/optimized/alltoall.cpp.ll
-; gromacs/optimized/scatter.cpp.ll
 ; linux/optimized/tcp_input.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
@@ -639,7 +636,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = mul i64 %4, %0
   ret i64 %5
 }
@@ -654,7 +651,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = mul nsw i64 %4, %0
   ret i64 %5
 }

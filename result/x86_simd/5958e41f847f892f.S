@@ -2,7 +2,7 @@
 	.long	1                               # 0x1
 .LCPI0_1:
 	.long	2                               # 0x2
-func0000000000000181:                   # @func0000000000000181
+func0000000000000301:                   # @func0000000000000301
 	vptestmd	%ymm1, %ymm1, %k1
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqd	%ymm2, %ymm1, %ymm2
@@ -16,7 +16,7 @@ func0000000000000181:                   # @func0000000000000181
 	.long	1                               # 0x1
 .LCPI1_1:
 	.long	2                               # 0x2
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vptestnmd	%ymm1, %ymm1, %k1
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqd	%ymm2, %ymm1, %ymm2
@@ -30,7 +30,7 @@ func0000000000000021:                   # @func0000000000000021
 	.long	1                               # 0x1
 .LCPI2_1:
 	.long	2                               # 0x2
-func000000000000014a:                   # @func000000000000014a
+func000000000000028a:                   # @func000000000000028a
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpgtd	%ymm2, %ymm1, %k1
 	vpcmpgtd	%ymm2, %ymm1, %ymm2

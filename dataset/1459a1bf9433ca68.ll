@@ -32,7 +32,7 @@ define i64 @func0000000000000072(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %.neg = xor i32 %2, -1
-  %3 = add i32 %.neg, %0
+  %3 = add i32 %0, %.neg
   %4 = zext i32 %3 to i64
   ret i64 %4
 }

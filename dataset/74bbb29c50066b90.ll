@@ -10,11 +10,13 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
+; 6 occurrences:
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; linux/optimized/drm_fourcc.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000035(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -78,7 +80,7 @@ entry:
   ret i64 %5
 }
 
-; 34 occurrences:
+; 43 occurrences:
 ; clamav/optimized/libfreshclam_internal.c.ll
 ; cpython/optimized/dictobject.ll
 ; cpython/optimized/listobject.ll
@@ -112,6 +114,15 @@ entry:
 ; slurm/optimized/jobcomp_elasticsearch.ll
 ; velox/optimized/ComplexVector.cpp.ll
 ; velox/optimized/Variant.cpp.ll
+; zed-rs/optimized/3tqegt9m5oad3ocos87azd3mb.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/4yr6g2ok92pf18o3rcyc7uswo.ll
+; zed-rs/optimized/5e9omh398ijohtd01awo2ssl8.ll
+; zed-rs/optimized/5q8zw1h1kdgz0fiksol53zkaa.ll
+; zed-rs/optimized/69ryzzuwe6uhdzky6991droy3.ll
+; zed-rs/optimized/7for60ncc55q4u0jy3fqr6omg.ll
+; zed-rs/optimized/914lh5mzek2kam75czht77x9a.ll
+; zed-rs/optimized/c6zcqmm1tlbhiy5p6czlxqg9e.ll
 ; zfp/optimized/zfp.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
@@ -136,11 +147,10 @@ entry:
   ret i64 %5
 }
 
-; 88 occurrences:
+; 85 occurrences:
 ; lief/optimized/File.cpp.ll
 ; linux/optimized/blk-iocost.ll
 ; linux/optimized/intel_atomic_plane.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_sprite.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -162,8 +172,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -261,7 +269,7 @@ define i64 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
   %4 = add nsw i64 %3, 1
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -309,11 +317,11 @@ define i64 @func000000000000003e(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %1, %2
   %4 = add nuw nsw i64 %3, 1
-  %5 = add nuw i64 %4, %0
+  %5 = add nuw i64 %0, %4
   ret i64 %5
 }
 
-; 82 occurrences:
+; 80 occurrences:
 ; hdf5/optimized/H5Dlayout.c.ll
 ; lief/optimized/File.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -335,8 +343,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -413,13 +419,12 @@ define i64 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %1, %2
   %4 = add nsw i64 %3, -1
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/io_tri.cpp.ll
 ; recastnavigation/optimized/RecastArea.cpp.ll
 ; Function Attrs: nounwind
@@ -431,9 +436,11 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; recastnavigation/optimized/RecastArea.cpp.ll
 ; recastnavigation/optimized/RecastRegion.cpp.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000030(i64 %0, i64 %1, i64 %2) #0 {
 entry:

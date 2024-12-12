@@ -1,9 +1,8 @@
 
-; 60 occurrences:
+; 59 occurrences:
 ; abc/optimized/darLib.c.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; clamav/optimized/udf.c.ll
-; cmake/optimized/archive_pack_dev.c.ll
 ; darktable/optimized/introspection_graduatednd.c.ll
 ; darktable/optimized/introspection_profile_gamma.c.ll
 ; darktable/optimized/introspection_rawoverexposed.c.ll
@@ -68,7 +67,7 @@ entry:
   ret i64 %2
 }
 
-; 1172 occurrences:
+; 1182 occurrences:
 ; abc/optimized/abcHieGia.c.ll
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/bmcCexMin2.c.ll
@@ -107,6 +106,7 @@ entry:
 ; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/mesh_splitter.cpp.ll
+; boost/optimized/src.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; clamav/optimized/udf.c.ll
 ; cmake/optimized/hostip.c.ll
@@ -132,6 +132,7 @@ entry:
 ; darktable/optimized/introspection_highlights.c.ll
 ; darktable/optimized/introspection_hotpixels.c.ll
 ; darktable/optimized/introspection_lens.cc.ll
+; darktable/optimized/introspection_liquify.c.ll
 ; darktable/optimized/introspection_lut3d.c.ll
 ; darktable/optimized/introspection_rawprepare.c.ll
 ; darktable/optimized/introspection_rotatepixels.c.ll
@@ -186,7 +187,6 @@ entry:
 ; git/optimized/pack-bitmap.ll
 ; git/optimized/remote-curl.ll
 ; glslang/optimized/SPVRemapper.cpp.ll
-; harfbuzz/optimized/hb-subset.cc.ll
 ; hdf5/optimized/H5HL.c.ll
 ; hermes/optimized/FoldingSet.cpp.ll
 ; hermes/optimized/JSParserImpl.cpp.ll
@@ -228,7 +228,6 @@ entry:
 ; linux/optimized/badblocks.ll
 ; linux/optimized/gup.ll
 ; linux/optimized/hugetlb.ll
-; linux/optimized/kexec.ll
 ; linux/optimized/libata-core.ll
 ; linux/optimized/memalloc.ll
 ; linux/optimized/memory.ll
@@ -264,7 +263,9 @@ entry:
 ; llvm/optimized/Attributor.cpp.ll
 ; llvm/optimized/BugSuppression.cpp.ll
 ; llvm/optimized/CFIInstrInserter.cpp.ll
+; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
+; llvm/optimized/CGExprCXX.cpp.ll
 ; llvm/optimized/CallLowering.cpp.ll
 ; llvm/optimized/CalledOnceCheck.cpp.ll
 ; llvm/optimized/CastToStructChecker.cpp.ll
@@ -440,6 +441,8 @@ entry:
 ; postgres/optimized/d2s_srv.ll
 ; postgres/optimized/generation.ll
 ; postgres/optimized/gistproc.ll
+; proxygen/optimized/HTTPConnectorWithFizz.cpp.ll
+; proxygen/optimized/HTTPSession.cpp.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; qemu/optimized/accel_tcg_user-exec.c.ll
 ; qemu/optimized/block_qcow2-refcount.c.ll
@@ -544,7 +547,6 @@ entry:
 ; spike/optimized/bclri.ll
 ; spike/optimized/bext.ll
 ; spike/optimized/bexti.ll
-; spike/optimized/bf16_to_f32.ll
 ; spike/optimized/binv.ll
 ; spike/optimized/binvi.ll
 ; spike/optimized/bset.ll
@@ -1241,6 +1243,13 @@ entry:
 ; z3/optimized/array_rewriter.cpp.ll
 ; z3/optimized/dl_rule.cpp.ll
 ; z3/optimized/realclosure.cpp.ll
+; zed-rs/optimized/04fhfmlktnjtedpduz35189qo.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/b8qhlvoy2nskqwvkt99c6cu9u.ll
+; zed-rs/optimized/cu6jannw5ajqip9tl6sqjzagm.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0) #0 {
 entry:
@@ -1249,7 +1258,7 @@ entry:
   ret i64 %2
 }
 
-; 365 occurrences:
+; 364 occurrences:
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -1439,7 +1448,6 @@ entry:
 ; minetest/optimized/COBJMeshFileLoader.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; minetest/optimized/anaglyph.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/chat.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/dynamicshadowsrender.cpp.ll
@@ -1623,7 +1631,7 @@ entry:
   ret i64 %2
 }
 
-; 9 occurrences:
+; 7 occurrences:
 ; darktable/optimized/introspection_colorout.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
@@ -1631,8 +1639,6 @@ entry:
 ; pocketpy/optimized/compiler.cpp.ll
 ; pocketpy/optimized/expr.cpp.ll
 ; pocketpy/optimized/lexer.cpp.ll
-; proxygen/optimized/HTTPConnectorWithFizz.cpp.ll
-; proxygen/optimized/HTTPSession.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0) #0 {
 entry:

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; abc/optimized/utilIsop.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000018a(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 1, i32 %2
   %4 = icmp ne i32 %3, %0
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/TokenAnnotator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func00000000000000cc(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 13, i32 %2
   %4 = icmp ne i32 %3, -1
@@ -28,7 +28,7 @@ entry:
 ; icu/optimized/number_decimalquantity.ll
 ; opencv/optimized/synthetic_seq.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func00000000000000ca(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 0, i32 %2
   %4 = icmp sgt i32 %3, -1
@@ -40,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-per.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func00000000000000c1(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 0, i32 %2
   %4 = icmp eq i32 %3, %0
@@ -52,7 +52,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/unistr.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ba(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000016a(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 0, i32 %2
   %4 = icmp sgt i32 %3, 0

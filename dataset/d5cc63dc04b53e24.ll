@@ -1,9 +1,11 @@
 
-; 101 occurrences:
+; 104 occurrences:
 ; abc/optimized/sclDnsize.c.ll
 ; abc/optimized/sclLibUtil.c.ll
 ; abc/optimized/sclUpsize.c.ll
 ; assimp/optimized/IRRLoader.cpp.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; box2d/optimized/b2_edge_shape.cpp.ll
 ; bullet3/optimized/btDantzigLCP.ll
 ; bullet3/optimized/btRaycastVehicle.ll
@@ -22,6 +24,7 @@
 ; gromacs/optimized/slarrvx.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
+; lvgl/optimized/lv_svg_render.ll
 ; meshlab/optimized/trackmode.cpp.ll
 ; minetest/optimized/guiEngine.cpp.ll
 ; miniaudio/optimized/unity.c.ll
@@ -105,7 +108,7 @@
 define i1 @func0000000000000002(float %0, float %1, float %2) #0 {
 entry:
   %3 = fdiv float %1, %2
-  %4 = fcmp ogt float %3, %0
+  %4 = fcmp olt float %0, %3
   ret i1 %4
 }
 
@@ -116,7 +119,7 @@ entry:
 define i1 @func000000000000000c(float %0, float %1, float %2) #0 {
 entry:
   %3 = fdiv float %1, %2
-  %4 = fcmp ole float %3, %0
+  %4 = fcmp oge float %0, %3
   ret i1 %4
 }
 
@@ -127,11 +130,11 @@ entry:
 define i1 @func000000000000000d(float %0, float %1, float %2) #0 {
 entry:
   %3 = fdiv float %1, %2
-  %4 = fcmp ule float %3, %0
+  %4 = fcmp uge float %0, %3
   ret i1 %4
 }
 
-; 29 occurrences:
+; 31 occurrences:
 ; abc/optimized/sclLibUtil.c.ll
 ; assimp/optimized/XFileImporter.cpp.ll
 ; bullet3/optimized/b3GpuRaycast.ll
@@ -149,6 +152,7 @@ entry:
 ; gromacs/optimized/surfacearea.cpp.ll
 ; hwloc/optimized/lstopo-lstopo-cairo.ll
 ; imgui/optimized/imgui_draw.cpp.ll
+; lvgl/optimized/lv_svg_render.ll
 ; minetest/optimized/player_sao.cpp.ll
 ; ocio/optimized/FileFormatICC.cpp.ll
 ; ocio/optimized/GradingBSplineCurve.cpp.ll
@@ -161,11 +165,12 @@ entry:
 ; raylib/optimized/rshapes.c.ll
 ; recastnavigation/optimized/DetourNavMesh.cpp.ll
 ; velox/optimized/ConjunctExpr.cpp.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(float %0, float %1, float %2) #0 {
 entry:
   %3 = fdiv float %1, %2
-  %4 = fcmp olt float %3, %0
+  %4 = fcmp ogt float %0, %3
   ret i1 %4
 }
 
@@ -181,7 +186,7 @@ entry:
 define i1 @func0000000000000005(float %0, float %1, float %2) #0 {
 entry:
   %3 = fdiv float %1, %2
-  %4 = fcmp ult float %3, %0
+  %4 = fcmp ugt float %0, %3
   ret i1 %4
 }
 
@@ -193,7 +198,7 @@ entry:
 define i1 @func0000000000000007(float %0, float %1, float %2) #0 {
 entry:
   %3 = fdiv float %1, %2
-  %4 = fcmp une float %3, %0
+  %4 = fcmp une float %0, %3
   ret i1 %4
 }
 
@@ -210,11 +215,13 @@ entry:
 define i1 @func0000000000000003(float %0, float %1, float %2) #0 {
 entry:
   %3 = fdiv float %1, %2
-  %4 = fcmp ugt float %3, %0
+  %4 = fcmp ult float %0, %3
   ret i1 %4
 }
 
-; 3 occurrences:
+; 5 occurrences:
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; darktable/optimized/introspection_filmic.c.ll
 ; nix/optimized/build-remote.ll
 ; opencv/optimized/find_ellipses.cpp.ll
@@ -222,7 +229,7 @@ entry:
 define i1 @func0000000000000008(float %0, float %1, float %2) #0 {
 entry:
   %3 = fdiv float %1, %2
-  %4 = fcmp oeq float %3, %0
+  %4 = fcmp oeq float %0, %3
   ret i1 %4
 }
 
@@ -232,7 +239,7 @@ entry:
 define i1 @func000000000000000a(float %0, float %1, float %2) #0 {
 entry:
   %3 = fdiv float %1, %2
-  %4 = fcmp oge float %3, %0
+  %4 = fcmp ole float %0, %3
   ret i1 %4
 }
 

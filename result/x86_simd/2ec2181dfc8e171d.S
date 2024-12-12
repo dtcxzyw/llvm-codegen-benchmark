@@ -1,6 +1,6 @@
 func0000000000000001:                   # @func0000000000000001
 	vpaddd	%ymm1, %ymm1, %ymm2
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpaddd	%ymm2, %ymm0, %ymm0
 	vpabsd	%ymm0, %ymm0
 	retq

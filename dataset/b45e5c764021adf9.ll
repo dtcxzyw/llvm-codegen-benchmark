@@ -1,12 +1,11 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; darktable/optimized/Cr2Decoder.cpp.ll
 ; darktable/optimized/introspection_basecurve.c.ll
 ; linux/optimized/intel_dpll.ll
 ; linux/optimized/memory.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; php/optimized/document.ll
-; postgres/optimized/tsgistidx.ll
 ; spike/optimized/cbo_clean.ll
 ; spike/optimized/cbo_flush.ll
 ; spike/optimized/cbo_inval.ll
@@ -22,6 +21,7 @@ entry:
 }
 
 ; 10 occurrences:
+; boost/optimized/alloc_lib.ll
 ; darktable/optimized/Cr2Decoder.cpp.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; linux/optimized/memory.ll
@@ -31,7 +31,6 @@ entry:
 ; spike/optimized/fmin_s.ll
 ; spike/optimized/fminm_h.ll
 ; spike/optimized/fminm_s.ll
-; wireshark/optimized/scanner.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i1 %1, i64 %2) #0 {
 entry:

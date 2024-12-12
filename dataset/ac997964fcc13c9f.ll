@@ -1,6 +1,5 @@
 
-; 9 occurrences:
-; clamav/optimized/cabd.c.ll
+; 8 occurrences:
 ; cmake/optimized/xxhash.c.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/inline.ll
@@ -13,9 +12,9 @@
 define i1 @func0000000000000010(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = icmp ugt i32 %4, 15
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -27,10 +26,10 @@ entry:
 ; openssl/optimized/openssl-bin-ca.ll
 ; velox/optimized/ElementAt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000004c(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = icmp slt i32 %4, 2
   %6 = or i1 %5, %0
   ret i1 %6
@@ -98,10 +97,10 @@ entry:
 ; zxing/optimized/DMDetector.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000012c(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000024c(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = icmp slt i32 %4, -3
   %6 = or i1 %5, %0
   ret i1 %6
@@ -110,11 +109,11 @@ entry:
 ; 1 occurrences:
 ; snappy/optimized/snappy.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a2(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000142(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
-  %4 = sub i32 0, %1
-  %5 = icmp eq i32 %3, %4
+  %4 = sub i32 0, %3
+  %5 = icmp eq i32 %1, %4
   %6 = or i1 %5, %0
   ret i1 %6
 }
@@ -140,9 +139,21 @@ entry:
 define i1 @func0000000000000018(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = sub i32 0, %1
-  %5 = icmp ne i32 %3, %4
+  %4 = sub i32 0, %3
+  %5 = icmp ne i32 %1, %4
   %6 = or i1 %5, %0
+  ret i1 %6
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000218(i1 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc nuw i64 %2 to i32
+  %4 = sub i32 0, %3
+  %5 = icmp ne i32 %1, %4
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -152,9 +163,9 @@ entry:
 define i1 @func0000000000000008(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = icmp ult i32 %4, 7
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -166,31 +177,31 @@ entry:
 define i1 @func000000000000000c(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = icmp slt i32 %4, 0
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; llvm/optimized/LiteralSupport.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a8(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000348(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = icmp ult i32 %4, 8
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000030(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000050(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = icmp ugt i32 %4, 31
   %6 = or i1 %5, %0
   ret i1 %6
@@ -199,10 +210,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001b0(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000350(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = icmp ugt i32 %4, 31
   %6 = or i1 %5, %0
   ret i1 %6
@@ -211,23 +222,23 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/netscaler.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000102(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000202(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = icmp eq i32 %4, 16383
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; openspiel/optimized/coop_box_pushing.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000042(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = sub i32 0, %1
-  %5 = icmp eq i32 %3, %4
+  %4 = sub i32 0, %3
+  %5 = icmp eq i32 %1, %4
   %6 = or i1 %5, %0
   ret i1 %6
 }
@@ -235,10 +246,10 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/extents.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000070(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000d0(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = icmp ugt i32 %4, 32768
   %6 = or i1 %5, %0
   ret i1 %6

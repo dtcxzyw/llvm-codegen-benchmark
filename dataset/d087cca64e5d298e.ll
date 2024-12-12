@@ -3,7 +3,7 @@
 ; abc/optimized/pdrCore.c.ll
 ; abc/optimized/pdrIncr.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %0, %1
   %3 = srem i32 %2, 1000
@@ -26,7 +26,7 @@ entry:
 ; zxing/optimized/QRBitMatrixParser.cpp.ll
 ; zxing/optimized/QRMatrixUtil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %0, %1
   %3 = srem i32 %2, 6
@@ -39,7 +39,7 @@ entry:
 ; zxing/optimized/QRBitMatrixParser.cpp.ll
 ; zxing/optimized/QRMatrixUtil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %0, %1
   %3 = srem i32 %2, 6
@@ -50,7 +50,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/vtzone.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %0, %1
   %3 = srem i32 %2, 100

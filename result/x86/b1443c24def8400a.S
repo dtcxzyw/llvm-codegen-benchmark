@@ -1,5 +1,5 @@
 func0000000000000000:                   # @func0000000000000000
-	addl	%esi, %edi
-	shrl	$21, %edi
-	movzbl	%dil, %eax
+	leal	(%rdi,%rsi), %eax
+	shrl	$5, %eax
+	andl	$16777215, %eax                 # imm = 0xFFFFFF
 	retq

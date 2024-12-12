@@ -1,5 +1,5 @@
 
-; 36 occurrences:
+; 40 occurrences:
 ; assimp/optimized/BlenderScene.cpp.ll
 ; assimp/optimized/ColladaParser.cpp.ll
 ; cvc5/optimized/partition_generator.cpp.ll
@@ -35,9 +35,13 @@
 ; spike/optimized/dtm.ll
 ; tev/optimized/MultiGraph.cpp.ll
 ; wireshark/optimized/l16decode.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
 ; zfp/optimized/zfp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %1, %2
   %4 = add nuw i64 %0, 1
@@ -51,7 +55,7 @@ entry:
 ; openssl/optimized/libdefault-lib-ssl3_cbc.ll
 ; openssl/optimized/libssl-shlib-ssl3_cbc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %1, %2
   %4 = add nuw nsw i64 %0, 1
@@ -87,7 +91,7 @@ entry:
 ; 1 occurrences:
 ; hdf5/optimized/H5Ocopy_ref.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %1, %2
   %4 = add nuw i64 %0, 1
@@ -95,9 +99,11 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; clamav/optimized/fmap.c.ll
 ; postgres/optimized/reorderbuffer.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -107,19 +113,29 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
+; 4 occurrences:
 ; faiss/optimized/InvertedLists.cpp.ll
-; linux/optimized/hexdump.ll
-; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/ExpandMemCmp.cpp.ll
 ; llvm/optimized/JumpTableToSwitch.cpp.ll
 ; wasmtime-rs/optimized/2y3wfjzj02o80wks.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %1, %2
   %4 = add nuw nsw i64 %0, 1
   %5 = icmp ult i64 %4, %3
+  ret i1 %5
+}
+
+; 2 occurrences:
+; linux/optimized/hexdump.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000074(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = udiv i64 %1, %2
+  %4 = add nuw nsw i64 %0, 1
+  %5 = icmp samesign ult i64 %4, %3
   ret i1 %5
 }
 

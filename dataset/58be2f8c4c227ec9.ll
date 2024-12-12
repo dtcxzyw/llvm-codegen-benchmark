@@ -41,7 +41,7 @@ define i32 @func0000000000000010(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 10
   %4 = select i1 %3, i32 1, i32 2
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = add i32 %5, %0
   ret i32 %6
 }
@@ -53,7 +53,7 @@ define i32 @func0000000000000045(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 127
   %4 = select i1 %3, i32 -20253, i32 -20351
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = add nsw i32 %5, %0
   ret i32 %6
 }
@@ -106,7 +106,7 @@ entry:
   %3 = icmp sgt i8 %2, -1
   %4 = select i1 %3, i32 3, i32 2
   %5 = add i32 %4, %1
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -118,7 +118,7 @@ entry:
   %3 = icmp ult i8 %2, 2
   %4 = select i1 %3, i32 3, i32 2
   %5 = add i32 %4, %1
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -129,8 +129,8 @@ define i32 @func000000000000008c(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp ugt i8 %2, 1
   %4 = select i1 %3, i32 8, i32 2
-  %5 = add nuw nsw i32 %4, %1
-  %6 = add i32 %5, %0
+  %5 = add nuw nsw i32 %1, %4
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -153,20 +153,19 @@ define i32 @func0000000000000080(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp ugt i8 %2, 5
   %4 = select i1 %3, i32 1048576, i32 12288
-  %5 = add i32 %4, %1
-  %6 = add i32 %5, %0
+  %5 = add i32 %1, %4
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; icu/optimized/ucnvbocu.ll
-; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000085(i32 %0, i32 %1, i8 %2) #0 {
 entry:
-  %3 = icmp ugt i8 %2, -84
-  %4 = select i1 %3, i32 -3, i32 0
-  %5 = add nsw i32 %4, %1
+  %3 = icmp ugt i8 %2, -113
+  %4 = select i1 %3, i32 -50480, i32 -19504
+  %5 = add nsw i32 %1, %4
   %6 = add nsw i32 %5, %0
   ret i32 %6
 }

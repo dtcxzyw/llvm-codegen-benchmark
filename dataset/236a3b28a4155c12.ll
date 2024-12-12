@@ -1,7 +1,6 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; llvm/optimized/LegalizerHelper.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; ruby/optimized/ossl_asn1.ll
 ; wasmtime-rs/optimized/47hgs4eifsow3k34.ll

@@ -1,5 +1,5 @@
 
-; 72 occurrences:
+; 71 occurrences:
 ; box2d/optimized/b2_contact.cpp.ll
 ; clamav/optimized/bytecode_vm.c.ll
 ; clamav/optimized/clamconf.c.ll
@@ -7,12 +7,13 @@
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; icu/optimized/olsontz.ll
 ; icu/optimized/rbtz.ll
-; icu/optimized/ucptrie.ll
 ; jq/optimized/regenc.ll
 ; libpng/optimized/png.c.ll
 ; libquic/optimized/err_test.cc.ll
+; libquic/optimized/persistent_memory_allocator.cc.ll
 ; libwebp/optimized/sharpyuv.c.ll
 ; lief/optimized/rsa.c.ll
+; linux/optimized/ip_options.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/ASTWriterStmt.cpp.ll
 ; llvm/optimized/CGException.cpp.ll
@@ -37,7 +38,6 @@
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
 ; luau/optimized/IrTranslation.cpp.ll
 ; meshlab/optimized/filter_dock_dialog.cpp.ll
-; meshlab/optimized/filter_sketchfab.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; ocio/optimized/GammaOpData.cpp.ll
 ; oniguruma/optimized/regenc.ll
@@ -68,7 +68,6 @@
 ; quickjs/optimized/libbf.ll
 ; quickjs/optimized/quickjs.ll
 ; sqlite/optimized/sqlite3.ll
-; wireshark/optimized/packet-cops.c.ll
 ; wireshark/optimized/packet-rtp-midi.c.ll
 ; wireshark/optimized/packet-tcp.c.ll
 ; z3/optimized/sat_simplifier.cpp.ll
@@ -86,10 +85,10 @@ entry:
 ; clamav/optimized/file.cpp.ll
 ; clamav/optimized/scanners.c.ll
 ; glslang/optimized/Initialize.cpp.ll
+; icu/optimized/tzfmt.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libevent/optimized/evutil.c.ll
 ; linux/optimized/intel_combo_phy.ll
-; linux/optimized/message.ll
 ; linux/optimized/msi.ll
 ; linux/optimized/nf_conntrack_core.ll
 ; llvm/optimized/Decl.cpp.ll
@@ -123,32 +122,6 @@ entry:
   %4 = icmp ne i32 %3, 0
   %5 = and i1 %0, %1
   %6 = and i1 %4, %5
-  ret i1 %6
-}
-
-; 2 occurrences:
-; icu/optimized/collationdatabuilder.ll
-; lief/optimized/psa_crypto_aead.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 63
-  %4 = icmp ugt i32 %3, 16
-  %5 = and i1 %0, %1
-  %6 = and i1 %4, %5
-  ret i1 %6
-}
-
-; 2 occurrences:
-; linux/optimized/nf_nat_core.ll
-; wireshark/optimized/packet-ieee80211-radiotap.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 15
-  %4 = icmp ult i32 %3, 9
-  %5 = and i1 %0, %1
-  %6 = and i1 %5, %4
   ret i1 %6
 }
 

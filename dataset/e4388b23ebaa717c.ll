@@ -1,13 +1,12 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; image-rs/optimized/ptscn4jakoj4p9m.ll
-; linux/optimized/intel_audio.ll
 ; redis/optimized/t_string.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw i64 %3, %1
+  %4 = mul nuw i64 %1, %3
   %5 = udiv i64 %0, %4
   ret i64 %5
 }
@@ -20,18 +19,19 @@ entry:
 define i64 @func000000000000000e(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = udiv i64 %0, %4
   ret i64 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; linux/optimized/tcp_cubic.ll
+; zed-rs/optimized/0431hruu0kb4k1yxxvcap38im.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = udiv i64 %0, %4
   ret i64 %5
 }
@@ -46,7 +46,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = udiv i64 %0, %4
   ret i64 %5
 }

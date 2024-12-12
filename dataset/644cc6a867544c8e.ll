@@ -1,11 +1,11 @@
 
-; 24 occurrences:
-; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
-; actix-rs/optimized/4pmtvrahn6eloepe.ll
-; brotli/optimized/backward_references_hq.c.ll
+; 20 occurrences:
+; arrow/optimized/string-to-double.cc.ll
+; double_conversion/optimized/string-to-double.cc.ll
 ; folly/optimized/IPAddressV6.cpp.ll
 ; hermes/optimized/BCP47Parser.cpp.ll
 ; hermes/optimized/escape.cpp.ll
+; icu/optimized/double-conversion-string-to-double.ll
 ; icu/optimized/dtitvfmt.ll
 ; icu/optimized/uidna.ll
 ; icu/optimized/ustring.ll
@@ -14,16 +14,12 @@
 ; llvm/optimized/AArch64CallLowering.cpp.ll
 ; llvm/optimized/AArch64CallingConvention.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
-; openusd/optimized/warped_motion.c.ll
+; openusd/optimized/string-to-double.cc.ll
 ; slurm/optimized/job_test.ll
 ; spike/optimized/clrs16.ll
 ; spike/optimized/clz16.ll
-; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
-; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
-; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000004(i16 %0, i16 %1, i16 %2) #0 {
 entry:
@@ -32,8 +28,28 @@ entry:
   ret i16 %4
 }
 
-; 16 occurrences:
+; 9 occurrences:
+; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
+; actix-rs/optimized/4pmtvrahn6eloepe.ll
+; brotli/optimized/backward_references_hq.c.ll
+; folly/optimized/IPAddressV6.cpp.ll
+; hermes/optimized/escape.cpp.ll
+; openusd/optimized/warped_motion.c.ll
+; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
+; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
+; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000014(i16 %0, i16 %1, i16 %2) #0 {
+entry:
+  %3 = icmp samesign ult i16 %2, 2560
+  %4 = select i1 %3, i16 %0, i16 %1
+  ret i16 %4
+}
+
+; 20 occurrences:
 ; duckdb/optimized/ub_duckdb_func_math.cpp.ll
+; icu/optimized/collationdatabuilder.ll
+; icu/optimized/dtptngen.ll
 ; linux/optimized/i2c-core-smbus.ll
 ; minetest/optimized/clientiface.cpp.ll
 ; minetest/optimized/joystick_controller.cpp.ll
@@ -49,6 +65,8 @@ entry:
 ; spike/optimized/vssub_vv.ll
 ; spike/optimized/vssub_vx.ll
 ; wireshark/optimized/packet-kingfisher.c.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000006(i16 %0, i16 %1, i16 %2) #0 {
 entry:
@@ -57,7 +75,7 @@ entry:
   ret i16 %4
 }
 
-; 84 occurrences:
+; 81 occurrences:
 ; actix-rs/optimized/4vksfexudgt1qids.ll
 ; actix-rs/optimized/xcr5yeosl21p44j.ll
 ; clamav/optimized/cpio.c.ll
@@ -78,8 +96,6 @@ entry:
 ; linux/optimized/amd64-agp.ll
 ; linux/optimized/drm_dp_mst_topology.ll
 ; linux/optimized/e1000_hw.ll
-; linux/optimized/genetlink.ll
-; linux/optimized/ht.ll
 ; linux/optimized/i2c-core-base.ll
 ; linux/optimized/intel_sdvo.ll
 ; linux/optimized/io_uring.ll
@@ -120,7 +136,6 @@ entry:
 ; openjdk/optimized/parse2.ll
 ; openjdk/optimized/sharedRuntime.ll
 ; openusd/optimized/faceVertex.cpp.ll
-; qemu/optimized/hw_sd_ssi-sd.c.ll
 ; qemu/optimized/hw_usb_hcd-uhci.c.ll
 ; qemu/optimized/ui_input-barrier.c.ll
 ; rust-analyzer-rs/optimized/13a8uuxp2yipqyp9.ll
@@ -204,6 +219,16 @@ entry:
 define i16 @func0000000000000008(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp ugt i16 %2, 63
+  %4 = select i1 %3, i16 %0, i16 %1
+  ret i16 %4
+}
+
+; 1 occurrences:
+; openvdb/optimized/points.cc.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000018(i16 %0, i16 %1, i16 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i16 %2, 126
   %4 = select i1 %3, i16 %0, i16 %1
   ret i16 %4
 }

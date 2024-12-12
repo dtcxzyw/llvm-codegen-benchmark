@@ -4,9 +4,9 @@
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-buffer.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i1 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000018a(i1 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %1, %4
   %6 = icmp sgt i64 %5, 2
@@ -17,9 +17,9 @@ entry:
 ; 1 occurrences:
 ; protobuf/optimized/parse_context.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i1 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000184(i1 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 40
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 40
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %1, %4
   %6 = icmp ult i64 %5, 33
@@ -30,9 +30,9 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/persistence_yml.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i1 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000188(i1 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %1, %4
   %6 = icmp ugt i64 %5, 19
@@ -43,9 +43,9 @@ entry:
 ; 1 occurrences:
 ; meshlab/optimized/ofbx.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i1 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000186(i1 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 16
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 16
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %1, %4
   %6 = icmp slt i64 %5, 127

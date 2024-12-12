@@ -2,7 +2,7 @@
 	.long	31                              # 0x1f
 .LCPI0_1:
 	.long	30                              # 0x1e
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm1   # ymm1 = [31,31,31,31,31,31,31,31]
@@ -15,7 +15,7 @@ func0000000000000011:                   # @func0000000000000011
 	.long	32                              # 0x20
 .LCPI1_1:
 	.long	64                              # 0x40
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
 	vpbroadcastd	.LCPI1_0(%rip), %ymm1   # ymm1 = [32,32,32,32,32,32,32,32]

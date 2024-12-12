@@ -11,29 +11,28 @@
 ; spike/optimized/ukstas32.ll
 ; wireshark/optimized/packet-aeron.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000104(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = xor i32 %2, -1
-  %4 = icmp ult i32 %3, %0
+  %4 = icmp ugt i32 %0, %3
   ret i1 %4
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; cmake/optimized/fastcover.c.ll
 ; hermes/optimized/CharacterProperties.cpp.ll
 ; linux/optimized/intel-gtt.ll
 ; linux/optimized/namei.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
-; qemu/optimized/monitor_hmp-cmds.c.ll
 ; z3/optimized/theory_str_mc.cpp.ll
 ; zstd/optimized/fastcover.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = icmp ugt i32 %3, %2
   ret i1 %4
 }
@@ -57,18 +56,18 @@ define i1 @func0000000000000004(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = xor i32 %2, -1
-  %4 = icmp ult i32 %3, %0
+  %4 = icmp ugt i32 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; spike/optimized/fdt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000049(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000089(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = xor i32 %2, -1
-  %4 = icmp uge i32 %3, %0
+  %4 = icmp ule i32 %0, %3
   ret i1 %4
 }
 
@@ -79,7 +78,7 @@ define i1 @func0000000000000009(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = xor i32 %2, -1
-  %4 = icmp uge i32 %3, %0
+  %4 = icmp ule i32 %0, %3
   ret i1 %4
 }
 
@@ -90,7 +89,7 @@ entry:
 define i1 @func0000000000000006(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = icmp slt i32 %3, %2
   ret i1 %4
 }
@@ -102,7 +101,7 @@ entry:
 define i1 @func000000000000000a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = icmp sgt i32 %3, %2
   ret i1 %4
 }

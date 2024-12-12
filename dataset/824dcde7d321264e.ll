@@ -1,12 +1,12 @@
 
 ; 13 occurrences:
+; boost/optimized/approximately_equals.ll
 ; gromacs/optimized/andersentemperaturecoupling.cpp.ll
 ; gromacs/optimized/correlationgrid.cpp.ll
 ; libpng/optimized/png.c.ll
 ; libwebp/optimized/anim_encode.c.ll
 ; luau/optimized/Compiler.cpp.ll
 ; luau/optimized/ltable.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; openjdk/optimized/png.ll
 ; quantlib/optimized/cashflows.ll
 ; quantlib/optimized/fdmbatesop.ll

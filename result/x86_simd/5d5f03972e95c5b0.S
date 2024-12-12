@@ -8,7 +8,7 @@ func000000000000000c:                   # @func000000000000000c
 	retq
 .LCPI1_0:
 	.quad	31                              # 0x1f
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vpmullq	%ymm2, %ymm1, %ymm0

@@ -6,11 +6,11 @@
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000084(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = add i32 %2, %0
-  %4 = icmp ugt i32 %3, %0
+  %3 = add i32 %0, %2
+  %4 = icmp ult i32 %0, %3
   ret i1 %4
 }
 
@@ -29,8 +29,8 @@ entry:
 define i1 @func0000000000000004(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add i32 %2, %0
-  %4 = icmp ugt i32 %3, %0
+  %3 = add i32 %0, %2
+  %4 = icmp ult i32 %0, %3
   ret i1 %4
 }
 
@@ -38,11 +38,11 @@ entry:
 ; wasmtime-rs/optimized/4d0kq0wivbp8j3p.ll
 ; wasmtime-rs/optimized/4jtzwzfip25p8spx.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000088(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = xor i32 %0, -1
-  %4 = icmp ult i32 %3, %2
+  %4 = icmp ugt i32 %2, %3
   ret i1 %4
 }
 
@@ -58,8 +58,8 @@ entry:
 define i1 @func0000000000000006(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add i32 %2, %0
-  %4 = icmp sgt i32 %3, %0
+  %3 = add i32 %0, %2
+  %4 = icmp slt i32 %0, %3
   ret i1 %4
 }
 

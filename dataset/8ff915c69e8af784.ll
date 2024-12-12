@@ -1,5 +1,5 @@
 
-; 510 occurrences:
+; 500 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcFraig.c.ll
 ; abc/optimized/abcIf.c.ll
@@ -52,7 +52,6 @@
 ; abc/optimized/rwrDec.c.ll
 ; abc/optimized/rwrLib.c.ll
 ; abc/optimized/rwtDec.c.ll
-; abc/optimized/rwtUtil.c.ll
 ; abc/optimized/saigIsoFast.c.ll
 ; abc/optimized/satStore.c.ll
 ; abc/optimized/sbdCut.c.ll
@@ -109,7 +108,6 @@
 ; graphviz/optimized/actions.c.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; gromacs/optimized/tng_io.c.ll
-; gromacs/optimized/vals16.c.ll
 ; harfbuzz/optimized/hb-subset-cff1.cc.ll
 ; harfbuzz/optimized/hb-subset-cff2.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -143,7 +141,6 @@
 ; libwebp/optimized/lossless_enc.c.ll
 ; lief/optimized/BinaryStream.cpp.ll
 ; lief/optimized/des.c.ll
-; linux/optimized/8250_dwlib.ll
 ; linux/optimized/8250_port.ll
 ; linux/optimized/cfg.ll
 ; linux/optimized/core.ll
@@ -151,9 +148,6 @@
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/ehci-dbgp.ll
 ; linux/optimized/ehci-hcd.ll
-; linux/optimized/feat_ctl.ll
-; linux/optimized/file_table.ll
-; linux/optimized/fixed_phy.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/hdmi.ll
 ; linux/optimized/hooks.ll
@@ -165,7 +159,6 @@
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/iface.ll
 ; linux/optimized/insn-eval.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_color.ll
 ; linux/optimized/intel_cursor.ll
 ; linux/optimized/intel_ddi.ll
@@ -191,7 +184,6 @@
 ; linux/optimized/lbr.ll
 ; linux/optimized/libata-core.ll
 ; linux/optimized/libata-sata.ll
-; linux/optimized/mii.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/neighbour.ll
 ; linux/optimized/ohci-hcd.ll
@@ -204,7 +196,6 @@
 ; linux/optimized/scsi_ioctl.ll
 ; linux/optimized/slub.ll
 ; linux/optimized/stackdepot.ll
-; linux/optimized/statfs.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/transaction.ll
 ; linux/optimized/vfs_inode.ll
@@ -289,7 +280,6 @@
 ; llvm/optimized/PeepholeOptimizer.cpp.ll
 ; llvm/optimized/ProgramPoint.cpp.ll
 ; llvm/optimized/RISCVDisassembler.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RISCVMCCodeEmitter.cpp.ll
@@ -330,9 +320,10 @@
 ; luajit/optimized/minilua.ll
 ; luau/optimized/CodeGenUtils.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
+; lvgl/optimized/lv_draw_sw.ll
+; lvgl/optimized/lv_svg_parser.ll
 ; lz4/optimized/lz4frame.c.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
@@ -392,7 +383,6 @@
 ; openmpi/optimized/fs_base_get_parent_dir.ll
 ; openspiel/optimized/havannah.cc.ll
 ; openspiel/optimized/y.cc.ll
-; openssl/optimized/legacy-dso-legacyprov.ll
 ; openssl/optimized/libcrypto-lib-aria.ll
 ; openssl/optimized/libcrypto-lib-err_blocks.ll
 ; openssl/optimized/libcrypto-shlib-aria.ll
@@ -448,7 +438,6 @@
 ; qemu/optimized/block_nvme.c.ll
 ; qemu/optimized/hw_9pfs_9p.c.ll
 ; qemu/optimized/hw_display_vga.c.ll
-; qemu/optimized/hw_net_cadence_gem.c.ll
 ; qemu/optimized/hw_net_can_ctucan_core.c.ll
 ; qemu/optimized/hw_scsi_megasas.c.ll
 ; qemu/optimized/hw_usb_dev-audio.c.ll
@@ -509,6 +498,7 @@
 ; wireshark/optimized/packet-signal-pdu.c.ll
 ; z3/optimized/mpf.cpp.ll
 ; z3/optimized/theory_arith.cpp.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
 ; zxing/optimized/AZDetector.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
@@ -520,7 +510,7 @@ entry:
   ret i32 %5
 }
 
-; 192 occurrences:
+; 191 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; abc/optimized/giaIso.c.ll
@@ -576,13 +566,11 @@ entry:
 ; linux/optimized/hooks.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/idma32.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_color.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_guc_ads.ll
 ; linux/optimized/intel_pps.ll
 ; linux/optimized/intel_psr.ll
-; linux/optimized/intel_snps_phy.ll
 ; linux/optimized/intel_vdsc.ll
 ; linux/optimized/intel_workarounds.ll
 ; linux/optimized/libata-core.ll
@@ -614,6 +602,7 @@ entry:
 ; luajit/optimized/lj_asm_dyn.ll
 ; luajit/optimized/lj_cparse.ll
 ; luajit/optimized/lj_cparse_dyn.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; memcached/optimized/memcached-crawler.ll
 ; memcached/optimized/memcached-items.ll
 ; memcached/optimized/memcached-slabs.ll
@@ -665,7 +654,6 @@ entry:
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Filter.cc.ll
 ; openvdb/optimized/FindActiveValues.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFilter.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetMeasure.cc.ll
@@ -692,7 +680,6 @@ entry:
 ; qemu/optimized/hw_char_serial.c.ll
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
 ; qemu/optimized/hw_display_vga.c.ll
-; qemu/optimized/hw_net_can_ctucan_core.c.ll
 ; qemu/optimized/hw_usb_dev-audio.c.ll
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/raudio.c.ll
@@ -713,6 +700,8 @@ entry:
 ; wireshark/optimized/packet-per.c.ll
 ; wireshark/optimized/packet-ua3g.c.ll
 ; wireshark/optimized/peekclassic.c.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
@@ -744,7 +733,6 @@ entry:
 ; hermes/optimized/APFloat.cpp.ll
 ; hermes/optimized/AST2JS.cpp.ll
 ; hermes/optimized/BytecodeFormConverter.cpp.ll
-; hermes/optimized/BytecodeGenerator.cpp.ll
 ; hermes/optimized/ConsecutiveStringStorage.cpp.ll
 ; hermes/optimized/HBC.cpp.ll
 ; hermes/optimized/JSLexer.cpp.ll
@@ -761,6 +749,7 @@ entry:
 ; llvm/optimized/MachineInstr.cpp.ll
 ; llvm/optimized/YAMLParser.cpp.ll
 ; lua/optimized/lcode.ll
+; lvgl/optimized/lv_text.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; nix/optimized/json-to-value.ll
 ; nlohmann_json/optimized/unit-bjdata.cpp.ll
@@ -792,7 +781,7 @@ entry:
   ret i32 %5
 }
 
-; 22 occurrences:
+; 23 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcLatch.c.ll
 ; abc/optimized/aigTsim.c.ll
@@ -811,6 +800,7 @@ entry:
 ; llvm/optimized/AArch64MCCodeEmitter.cpp.ll
 ; llvm/optimized/InstrEmitter.cpp.ll
 ; llvm/optimized/SplitKit.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; minetest/optimized/map.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; openvdb/optimized/VolumeAdvect.cc.ll
@@ -825,10 +815,25 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
+; 20 occurrences:
 ; git/optimized/unpack-trees.ll
 ; llvm/optimized/MCSymbolELF.cpp.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
+; openvdb/optimized/Diagnostics.cc.ll
+; openvdb/optimized/FastSweeping.cc.ll
+; openvdb/optimized/Filter.cc.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
+; openvdb/optimized/LevelSetRebuild.cc.ll
+; openvdb/optimized/LevelSetSphere.cc.ll
+; openvdb/optimized/LevelSetTracker.cc.ll
+; openvdb/optimized/Mask.cc.ll
+; openvdb/optimized/Merge.cc.ll
+; openvdb/optimized/MultiResGrid.cc.ll
+; openvdb/optimized/PoissonSolver.cc.ll
+; openvdb/optimized/TopologyToLevelSet.cc.ll
+; openvdb/optimized/VolumeAdvect.cc.ll
+; openvdb/optimized/VolumeToMesh.cc.ll
+; openvdb/optimized/points.cc.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; wireshark/optimized/packet-uavcan-can.c.ll
 ; Function Attrs: nounwind

@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 42 occurrences:
 ; actix-rs/optimized/1fcqyxrltkf78u1u.ll
 ; clap-rs/optimized/4r6y4qxwk52m92uh.ll
 ; coreutils-rs/optimized/3ovky1nu4e8ycm16.ll
@@ -22,10 +22,26 @@
 ; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
 ; tree-sitter-rs/optimized/2ihg39n1dg1po2l8.ll
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
+; turborepo-rs/optimized/89cy3dc5sqigrf2vjvcua5sbv.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; wasmtime-rs/optimized/5euizg9wb5pa0ryd.ll
+; zed-rs/optimized/35jcvzd99rtsbpw1ntju6vgpx.ll
+; zed-rs/optimized/3tqegt9m5oad3ocos87azd3mb.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/5xyjbgzjrjfd06sknyxfrytq2.ll
+; zed-rs/optimized/6t66wyfdhcx0enyarsxt68bq7.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/96hln4y97mhftmlht5x1xhnh1.ll
+; zed-rs/optimized/a80esttvizzblelz7vl2fpyaz.ll
+; zed-rs/optimized/ayy5pqcx1yuz6kdx9ooq2ruee.ll
+; zed-rs/optimized/b8qgowmgtglca3x1tojob83nm.ll
+; zed-rs/optimized/bjeparp10jwpmju7lihptx53f.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i64 %1) #0 {
 entry:
@@ -34,7 +50,7 @@ entry:
   ret i1 %3
 }
 
-; 10 occurrences:
+; 8 occurrences:
 ; gromacs/optimized/toppush.cpp.ll
 ; hyperscan/optimized/ng.cpp.ll
 ; hyperscan/optimized/ng_literal_analysis.cpp.ll
@@ -42,9 +58,7 @@ entry:
 ; hyperscan/optimized/ng_som.cpp.ll
 ; hyperscan/optimized/rose_build_add_mask.cpp.ll
 ; llvm/optimized/Compiler.cpp.ll
-; llvm/optimized/InstructionSimplify.cpp.ll
 ; llvm/optimized/ParseDecl.cpp.ll
-; rust-analyzer-rs/optimized/hknx1qr3lu9291s.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i64 %1) #0 {
 entry:

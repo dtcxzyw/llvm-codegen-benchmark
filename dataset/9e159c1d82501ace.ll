@@ -1,9 +1,8 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; darktable/optimized/print_settings.c.ll
 ; memcached/optimized/memcached-proto_text.ll
 ; memcached/optimized/memcached_debug-proto_text.ll
-; sentencepiece/optimized/unigram_model.cc.ll
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(ptr %0, i64 %1) #0 {

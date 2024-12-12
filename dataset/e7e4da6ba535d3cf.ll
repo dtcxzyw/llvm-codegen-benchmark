@@ -113,39 +113,28 @@ entry:
   ret i32 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; snappy/optimized/snappy.cc.ll
+; stockfish/optimized/evaluate_nnue.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000038(i32 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = zext nneg i8 %1 to i32
   %5 = shl i32 %4, %3
-  %6 = or i32 %5, %0
-  ret i32 %6
-}
-
-; 1 occurrences:
-; stockfish/optimized/evaluate_nnue.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000e(i32 %0, i8 %1, i64 %2) #0 {
-entry:
-  %3 = trunc i64 %2 to i32
-  %4 = zext nneg i8 %1 to i32
-  %5 = shl nuw nsw i32 %4, %3
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   ret i32 %6
 }
 
 ; 2 occurrences:
-; duckdb/optimized/ub_duckdb_common_serializer.cpp.ll
+; spike/optimized/debug_module.ll
 ; stockfish/optimized/evaluate_nnue.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i8 %1, i64 %2) #0 {
+define i32 @func000000000000003e(i32 %0, i8 %1, i64 %2) #0 {
 entry:
-  %3 = trunc i64 %2 to i32
+  %3 = trunc nuw nsw i64 %2 to i32
   %4 = zext nneg i8 %1 to i32
-  %5 = shl i32 %4, %3
+  %5 = shl nuw nsw i32 %4, %3
   %6 = or i32 %5, %0
   ret i32 %6
 }
@@ -166,18 +155,6 @@ entry:
 }
 
 ; 1 occurrences:
-; spike/optimized/debug_module.ll
-; Function Attrs: nounwind
-define i32 @func000000000000003e(i32 %0, i8 %1, i64 %2) #0 {
-entry:
-  %3 = trunc nuw nsw i64 %2 to i32
-  %4 = zext nneg i8 %1 to i32
-  %5 = shl nuw nsw i32 %4, %3
-  %6 = or i32 %5, %0
-  ret i32 %6
-}
-
-; 1 occurrences:
 ; spike/optimized/vrol_vv.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000030(i32 %0, i8 %1, i64 %2) #0 {
@@ -185,18 +162,18 @@ entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = zext i8 %1 to i32
   %5 = shl i32 %4, %3
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   ret i32 %6
 }
 
 ; 1 occurrences:
-; abseil-cpp/optimized/hash.cc.ll
+; duckdb/optimized/ub_duckdb_common_serializer.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000036(i32 %0, i8 %1, i64 %2) #0 {
+define i32 @func0000000000000008(i32 %0, i8 %1, i64 %2) #0 {
 entry:
-  %3 = trunc nuw nsw i64 %2 to i32
-  %4 = zext i8 %1 to i32
-  %5 = shl nuw nsw i32 %4, %3
+  %3 = trunc i64 %2 to i32
+  %4 = zext nneg i8 %1 to i32
+  %5 = shl i32 %4, %3
   %6 = or i32 %5, %0
   ret i32 %6
 }

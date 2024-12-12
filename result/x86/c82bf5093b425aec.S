@@ -1,7 +1,7 @@
-func00000000000001cc:                   # @func00000000000001cc
+func000000000000058c:                   # @func000000000000058c
 	movzbl	%dl, %eax
-	negl	%esi
-	xorl	%eax, %esi
-	orl	%edi, %esi
+	negl	%eax
+	xorl	%esi, %eax
+	orl	%edi, %eax
 	setne	%al
 	retq

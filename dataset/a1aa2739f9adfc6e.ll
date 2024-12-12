@@ -1,54 +1,26 @@
 
-%"class.boost::shared_ptr.83.2740189" = type { ptr, %"class.boost::detail::shared_count.2740181" }
-%"class.boost::detail::shared_count.2740181" = type { ptr }
+%"struct.rapidjson::GenericPointer<rapidjson::GenericValue<rapidjson::UTF8<>>>::Token.2825553" = type { ptr, i32, i32 }
+%"class.boost::shared_ptr.83.2852607" = type { ptr, %"class.boost::detail::shared_count.2852599" }
+%"class.boost::detail::shared_count.2852599" = type { ptr }
+%struct.Gia_Obj_t_.2876250 = type <{ i64, i32 }>
+%struct.page.3534732 = type { i64, %union.anon.9.3534733, %union.anon.17.3534734, %struct.atomic_t.3534696, [8 x i8] }
+%union.anon.9.3534733 = type { %struct.anon.10.3534735 }
+%struct.anon.10.3534735 = type { %union.anon.11.3534736, ptr, %union.anon.13.3534737, i64 }
+%union.anon.11.3534736 = type { %struct.list_head.3534700 }
+%struct.list_head.3534700 = type { ptr, ptr }
+%union.anon.13.3534737 = type { i64 }
+%union.anon.17.3534734 = type { %struct.atomic_t.3534696 }
+%struct.atomic_t.3534696 = type { i32 }
 
-; 26 occurrences:
-; assimp/optimized/glTF2Importer.cpp.ll
-; brotli/optimized/compress_fragment.c.ll
-; brotli/optimized/compress_fragment_two_pass.c.ll
-; clamav/optimized/ishield.c.ll
-; crow/optimized/example.cpp.ll
-; crow/optimized/example_blueprint.cpp.ll
-; crow/optimized/example_catchall.cpp.ll
-; crow/optimized/example_chat.cpp.ll
-; crow/optimized/example_cookies.cpp.ll
-; crow/optimized/example_cors.cpp.ll
-; crow/optimized/example_file_upload.cpp.ll
-; crow/optimized/example_json_map.cpp.ll
-; crow/optimized/example_middleware.cpp.ll
-; crow/optimized/example_session.cpp.ll
-; crow/optimized/example_static_file.cpp.ll
-; crow/optimized/example_ws.cpp.ll
-; crow/optimized/helloworld.cpp.ll
-; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
-; duckdb/optimized/ub_duckdb_common_types.cpp.ll
-; git/optimized/sequencer.ll
-; hyperscan/optimized/sheng.c.ll
-; opencv/optimized/freak.cpp.ll
-; openusd/optimized/openexr-c.c.ll
-; php/optimized/php_http_parser.ll
-; proxygen/optimized/http_parser_cpp.cpp.ll
-; yosys/optimized/lz4.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = getelementptr i8, ptr %1, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 -1
-  %5 = ptrtoint ptr %4 to i64
-  %6 = sub i64 %5, %0
-  ret i64 %6
-}
-
-; 7 occurrences:
+; 6 occurrences:
+; cjson/optimized/cJSON.c.ll
+; clamav/optimized/pdfng.c.ll
 ; eastl/optimized/TestFixedString.cpp.ll
 ; git/optimized/diff.ll
 ; llvm/optimized/AsmLexer.cpp.ll
-; lz4/optimized/lz4.c.ll
-; openusd/optimized/lz4.cpp.ll
 ; php/optimized/string.ll
-; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000038(i64 %0, ptr %1, i64 %2) #0 {
+define i64 @func000000000000003c(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 24
@@ -57,15 +29,9 @@ entry:
   ret i64 %6
 }
 
-; 12 occurrences:
-; abc/optimized/bmcCexMin2.c.ll
-; abc/optimized/giaBound.c.ll
-; abc/optimized/giaUtil.c.ll
-; cjson/optimized/cJSON.c.ll
-; clamav/optimized/pdfng.c.ll
+; 6 occurrences:
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; eastl/optimized/BenchmarkString.cpp.ll
-; hermes/optimized/ItaniumDemangle.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/Pragma.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -80,15 +46,20 @@ entry:
   ret i64 %6
 }
 
-; 4 occurrences:
-; cvc5/optimized/justification_strategy.cpp.ll
-; meshlab/optimized/io_json.cpp.ll
-; quantlib/optimized/floatfloatswap.ll
-; quantlib/optimized/nonstandardswap.ll
+; 9 occurrences:
+; assimp/optimized/glTF2Importer.cpp.ll
+; brotli/optimized/compress_fragment.c.ll
+; brotli/optimized/compress_fragment_two_pass.c.ll
+; clamav/optimized/ishield.c.ll
+; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
+; duckdb/optimized/ub_duckdb_common_types.cpp.ll
+; hyperscan/optimized/sheng.c.ll
+; opencv/optimized/freak.cpp.ll
+; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(i64 %0, ptr %1, i64 %2) #0 {
+define i64 @func0000000000000008(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"class.boost::shared_ptr.83.2740189", ptr %1, i64 %2
+  %3 = getelementptr %"struct.rapidjson::GenericPointer<rapidjson::GenericValue<rapidjson::UTF8<>>>::Token.2825553", ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 16
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
@@ -96,14 +67,41 @@ entry:
 }
 
 ; 3 occurrences:
-; linux/optimized/lzo1x_compress.ll
+; cvc5/optimized/justification_strategy.cpp.ll
+; meshlab/optimized/io_json.cpp.ll
+; quantlib/optimized/nonstandardswap.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000028(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr %"class.boost::shared_ptr.83.2852607", ptr %1, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 16
+  %5 = ptrtoint ptr %4 to i64
+  %6 = sub i64 %5, %0
+  ret i64 %6
+}
+
+; 3 occurrences:
+; abc/optimized/bmcCexMin2.c.ll
+; abc/optimized/giaBound.c.ll
+; abc/optimized/giaUtil.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001c(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr %struct.Gia_Obj_t_.2876250, ptr %1, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -12
+  %5 = ptrtoint ptr %4 to i64
+  %6 = sub i64 %5, %0
+  ret i64 %6
+}
+
+; 2 occurrences:
 ; linux/optimized/memory.ll
 ; linux/optimized/page_alloc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr i8, ptr %1, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 1
+  %3 = getelementptr %struct.page.3534732, ptr %1, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -64
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   ret i64 %6
@@ -123,7 +121,8 @@ entry:
   ret i64 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; grpc/optimized/parser.cc.ll
 ; linux/optimized/dm-ioctl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, ptr %1, i64 %2) #0 {

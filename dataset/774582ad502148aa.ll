@@ -3,7 +3,7 @@
 ; glslang/optimized/SpvBuilder.cpp.ll
 ; rocksdb/optimized/column_family.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 5
   %4 = icmp ne i64 %3, %1
@@ -18,7 +18,7 @@ entry:
 ; openspiel/optimized/first_sealed_auction.cc.ll
 ; rocksdb/optimized/external_sst_file_ingestion_job.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 5
   %4 = icmp eq i64 %3, %1
@@ -30,7 +30,7 @@ entry:
 ; gromacs/optimized/gmx_awh.cpp.ll
 ; minetest/optimized/s_async.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = icmp ult i64 %3, %1
@@ -52,7 +52,7 @@ entry:
 ; velox/optimized/MapZipWith.cpp.ll
 ; velox/optimized/SparseHll.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
   %4 = icmp ugt i64 %3, %1
@@ -64,7 +64,7 @@ entry:
 ; linux/optimized/compaction.ll
 ; velox/optimized/DecodedVector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000029(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
   %4 = icmp uge i64 %3, %1
@@ -76,7 +76,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; gromacs/optimized/gmx_hbond.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 48
   %4 = icmp sgt i64 %3, %1
@@ -87,7 +87,7 @@ entry:
 ; 1 occurrences:
 ; cvc5/optimized/ceg_instantiator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000025(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = icmp ule i64 %3, %1

@@ -5,14 +5,6 @@ func0000000000000018:                   # @func0000000000000018
 	setne	%al
 	orb	%dil, %al
 	retq
-func0000000000000010:                   # @func0000000000000010
-	shrl	$16, %edx
-	andl	$63, %edx
-	andl	$63, %esi
-	cmpl	%esi, %edx
-	seta	%al
-	orb	%dil, %al
-	retq
 func0000000000000002:                   # @func0000000000000002
 	shrl	$10, %edx
 	xorl	%esi, %edx

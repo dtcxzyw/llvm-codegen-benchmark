@@ -5,7 +5,7 @@ func0000000000000001:                   # @func0000000000000001
 	testl	$2047, %eax                     # imm = 0x7FF
 	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movl	%edi, %eax
 	shrl	%eax
 	andl	$2, %eax

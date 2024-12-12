@@ -22,12 +22,12 @@ entry:
 define i1 @func0000000000000004(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = select i1 %1, double 0.000000e+00, double %2
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   %5 = fcmp ogt double %4, 0.000000e+00
   ret i1 %5
 }
 
-; 27 occurrences:
+; 29 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_2.cc.ll
@@ -55,11 +55,13 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; postgres/optimized/costsize.ll
+; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
+; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000005(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = select i1 %1, double 0.000000e+00, double %2
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   %5 = fcmp ugt double %4, 0x3E50000000000000
   ret i1 %5
 }
@@ -75,15 +77,13 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
-; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
-; typst-rs/optimized/59tuvc5m3xlovl3o.ll
+; 1 occurrences:
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000e(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = select i1 %1, double 0.000000e+00, double %2
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   %5 = fcmp ord double %4, 0.000000e+00
   ret i1 %5
 }
@@ -94,7 +94,7 @@ entry:
 define i1 @func000000000000000c(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = select i1 %1, double 1.000000e+01, double %2
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   %5 = fcmp oge double %4, 0.000000e+00
   ret i1 %5
 }
@@ -105,7 +105,7 @@ entry:
 define i1 @func000000000000000d(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = select i1 %1, double 1.000000e+01, double %2
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   %5 = fcmp uge double %4, 0.000000e+00
   ret i1 %5
 }

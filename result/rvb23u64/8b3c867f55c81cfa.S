@@ -57,21 +57,21 @@ func0000000000000003:                   # @func0000000000000003
 	sh3add	a0, a0, a1
 	fld	fa0, 0(a0)
 	ret
+.LCPI6_0:
+	.quad	0xc066800000000000              # double -180
+	.quad	0x4066800000000000              # double 180
+func000000000000000a:                   # @func000000000000000a
+	fmv.d.x	fa5, zero
+	fle.d	a0, fa0, fa5
+	lui	a1, %hi(.LCPI6_0)
+	addi	a1, a1, %lo(.LCPI6_0)
+	sh3add	a0, a0, a1
+	fld	fa0, 0(a0)
+	ret
 func000000000000000e:                   # @func000000000000000e
 	feq.d	a0, fa0, fa0
 	fli.d	fa0, 0.5
-	bnez	a0, .LBB6_2
+	bnez	a0, .LBB7_2
 	fneg.d	fa0, fa0
-.LBB6_2:                                # %entry
-	ret
-.LCPI7_0:
-	.quad	0x406fe00000000000              # double 255
-func000000000000000a:                   # @func000000000000000a
-	fmv.d	fa5, fa0
-	fli.d	fa0, 1.0
-	fle.d	a0, fa5, fa0
-	beqz	a0, .LBB7_2
-	lui	a0, %hi(.LCPI7_0)
-	fld	fa0, %lo(.LCPI7_0)(a0)
 .LBB7_2:                                # %entry
 	ret

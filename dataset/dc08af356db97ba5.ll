@@ -1,8 +1,6 @@
 
-; 18 occurrences:
+; 16 occurrences:
 ; c3c/optimized/llvm_codegen_expr.c.ll
-; linux/optimized/inet_connection_sock.ll
-; linux/optimized/sta_info.ll
 ; llvm/optimized/IVDescriptors.cpp.ll
 ; llvm/optimized/LoadStoreOpt.cpp.ll
 ; llvm/optimized/LoopAccessAnalysis.cpp.ll
@@ -19,7 +17,7 @@
 ; verilator/optimized/V3SplitVar.cpp.ll
 ; verilator/optimized/V3Width.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i16 %1) #0 {
+define i1 @func0000000000000021(ptr %0, i16 %1) #0 {
 entry:
   %2 = icmp ne i16 %1, 39
   %3 = icmp eq ptr %0, null
@@ -41,7 +39,7 @@ entry:
 ; llvm/optimized/SemaDecl.cpp.ll
 ; verilator/optimized/V3DfgPeephole.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i16 %1) #0 {
+define i1 @func000000000000002c(ptr %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %1, 0
   %3 = icmp ne ptr %0, null
@@ -49,13 +47,14 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; llvm/optimized/ParseDeclCXX.cpp.ll
+; lvgl/optimized/lv_image.ll
 ; verilator/optimized/V3Param.cpp.ll
 ; verilator/optimized/V3Reloop.cpp.ll
 ; verilator/optimized/V3Split.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, i16 %1) #0 {
+define i1 @func0000000000000081(ptr %0, i16 %1) #0 {
 entry:
   %2 = icmp ugt i16 %1, 2
   %3 = icmp eq ptr %0, null

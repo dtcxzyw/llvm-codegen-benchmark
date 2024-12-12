@@ -6,7 +6,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	notl	%eax
 	addl	%edi, %eax
 	retq
-func000000000000008c:                   # @func000000000000008c
+func000000000000028c:                   # @func000000000000028c
 	cmpl	$-1000000, %edx                 # imm = 0xFFF0BDC0
 	adcl	$0, %esi
 	notl	%esi

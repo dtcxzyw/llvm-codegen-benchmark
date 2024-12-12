@@ -10,6 +10,12 @@ func0000000000000008:                   # @func0000000000000008
 	cmovneq	%rdx, %rax
 	leaq	40(%rdi,%rax), %rax
 	retq
+func000000000000000d:                   # @func000000000000000d
+	xorl	%eax, %eax
+	testb	$1, %sil
+	cmovneq	%rdx, %rax
+	leaq	2(%rdi,%rax), %rax
+	retq
 func000000000000000f:                   # @func000000000000000f
 	xorl	%eax, %eax
 	testb	$1, %sil

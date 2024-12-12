@@ -17,7 +17,8 @@ entry:
   ret i32 %6
 }
 
-; 78 occurrences:
+; 79 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
 ; fmt/optimized/header-only-test.cc.ll
@@ -107,7 +108,8 @@ entry:
   ret i32 %6
 }
 
-; 78 occurrences:
+; 79 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
 ; fmt/optimized/header-only-test.cc.ll
@@ -190,6 +192,19 @@ entry:
 define i32 @func0000000000000010(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 64, %1
+  %3 = zext nneg i32 %2 to i64
+  %4 = lshr i64 %0, %3
+  %5 = trunc i64 %4 to i32
+  %6 = and i32 %5, 1
+  ret i32 %6
+}
+
+; 1 occurrences:
+; boost/optimized/alloc_lib.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000038(i64 %0, i32 %1) #0 {
+entry:
+  %2 = sub nuw nsw i32 38, %1
   %3 = zext nneg i32 %2 to i64
   %4 = lshr i64 %0, %3
   %5 = trunc i64 %4 to i32

@@ -1,5 +1,5 @@
 
-; 30 occurrences:
+; 31 occurrences:
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/bmcFault.c.ll
 ; abc/optimized/bmcMesh2.c.ll
@@ -18,6 +18,7 @@
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; luau/optimized/CodeGenUtils.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; openblas/optimized/dlaeda.c.ll
 ; opencv/optimized/reed_solomon_decoder.cpp.ll
@@ -34,12 +35,12 @@
 define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
 
-; 412 occurrences:
+; 410 occurrences:
 ; abc/optimized/abcSaucy.c.ll
 ; abc/optimized/acecPo.c.ll
 ; abc/optimized/bacBlast.c.ll
@@ -169,6 +170,7 @@ entry:
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; luajit/optimized/lj_tab.ll
 ; luajit/optimized/lj_tab_dyn.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
 ; meshlab/optimized/io_tri.cpp.ll
 ; meshoptimizer/optimized/stripifier.cpp.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
@@ -199,11 +201,9 @@ entry:
 ; openblas/optimized/dhseqr.c.ll
 ; openblas/optimized/dlaeda.c.ll
 ; openblas/optimized/dlansf.c.ll
-; openblas/optimized/dlaqp2rk.c.ll
 ; openblas/optimized/dlarrv.c.ll
 ; openblas/optimized/dlatm7.c.ll
 ; openblas/optimized/dlatrs3.c.ll
-; openblas/optimized/dorghr.c.ll
 ; openblas/optimized/dtrevc.c.ll
 ; openblas/optimized/dtrevc3.c.ll
 ; opencv/optimized/binary_descriptor.cpp.ll
@@ -353,7 +353,6 @@ entry:
 ; z3/optimized/bvarray2uf_rewriter.cpp.ll
 ; z3/optimized/check_relation.cpp.ll
 ; z3/optimized/clp_context.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/cofactor_elim_term_ite.cpp.ll
 ; z3/optimized/cost_evaluator.cpp.ll
 ; z3/optimized/dd_bdd.cpp.ll
@@ -456,12 +455,12 @@ entry:
 define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
 
-; 91 occurrences:
+; 89 occurrences:
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; clamav/optimized/Ppmd7.c.ll
@@ -492,8 +491,6 @@ entry:
 ; luajit/optimized/lj_strfmt_dyn.ll
 ; mitsuba3/optimized/builder.cpp.ll
 ; openblas/optimized/dlansf.c.ll
-; openblas/optimized/dorgl2.c.ll
-; openblas/optimized/dorgr2.c.ll
 ; opencv/optimized/morph.dispatch.cpp.ll
 ; openjdk/optimized/callGenerator.ll
 ; openjdk/optimized/cmspack.ll
@@ -557,7 +554,7 @@ entry:
 define i64 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
@@ -578,7 +575,7 @@ entry:
 define i64 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -619,7 +616,7 @@ entry:
 define i64 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
-  %3 = add nuw i32 %2, %0
+  %3 = add nuw i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }

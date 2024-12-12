@@ -1,6 +1,10 @@
 
-; 84 occurrences:
+; 87 occurrences:
+; boost/optimized/alloc_lib.ll
+; boost/optimized/dump_avx2.ll
+; bullet3/optimized/b3Generic6DofConstraint.ll
 ; bullet3/optimized/btConvexHull.ll
+; bullet3/optimized/btGeneric6DofConstraint.ll
 ; llvm/optimized/AArch64TargetMachine.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTDiagnostic.cpp.ll
@@ -83,14 +87,39 @@
 ; mitsuba3/optimized/scene.cpp.ll
 ; opencv/optimized/minarea.cpp.ll
 ; opencv/optimized/pointPolygonTest_demo.cpp.ll
-; z3/optimized/sat_lookahead.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = icmp eq i64 %1, 1
   %5 = select i1 %4, i64 0, i64 %3
-  %6 = getelementptr nusw ptr, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw ptr, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 3 occurrences:
+; boost/optimized/alloc_lib.ll
+; luajit/optimized/lj_alloc.ll
+; luajit/optimized/lj_alloc_dyn.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000053(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 496
+  %4 = icmp samesign ult i64 %1, 23
+  %5 = select i1 %4, i64 32, i64 %3
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; boost/optimized/alloc_lib.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000013(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -16
+  %4 = icmp ult i64 %1, 23
+  %5 = select i1 %4, i64 32, i64 %3
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 

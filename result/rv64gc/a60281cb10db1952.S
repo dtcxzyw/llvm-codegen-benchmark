@@ -20,10 +20,3 @@ func0000000000000009:                   # @func0000000000000009
 	sltu	a0, a0, a1
 	slli	a0, a0, 2
 	ret
-func0000000000000008:                   # @func0000000000000008
-	sext.w	a0, a0
-	sext.w	a1, a1
-	sltu	a0, a1, a0
-	negw	a0, a0
-	andi	a0, a0, 25
-	ret

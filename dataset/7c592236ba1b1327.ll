@@ -1,12 +1,11 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; ceres/optimized/gradient_problem_solver.cc.ll
 ; ceres/optimized/solver.cc.ll
 ; cmake/optimized/cmTarget.cxx.ll
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; llvm/optimized/X86MCInstLower.cpp.ll
 ; llvm/optimized/X86MnemonicTables.cpp.ll
-; ocio/optimized/CDLOpData.cpp.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; rust-analyzer-rs/optimized/k57ct4r8b4mvzu9.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll

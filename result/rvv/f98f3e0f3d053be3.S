@@ -3,7 +3,7 @@ func0000000000000002:                   # @func0000000000000002
 	vsll.vi	v10, v10, 24
 	lui	a0, 520192
 	vand.vx	v10, v10, a0
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	vsrl.vi	v8, v8, 16
 	ret
 func000000000000000f:                   # @func000000000000000f
@@ -11,7 +11,7 @@ func000000000000000f:                   # @func000000000000000f
 	vsll.vi	v10, v10, 4
 	lui	a0, 112
 	vand.vx	v10, v10, a0
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	vsrl.vi	v8, v8, 16
 	ret
 func0000000000000003:                   # @func0000000000000003
@@ -20,7 +20,7 @@ func0000000000000003:                   # @func0000000000000003
 	li	a0, 15
 	slli	a0, a0, 8
 	vand.vx	v10, v10, a0
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	vsrl.vi	v8, v8, 6
 	ret
 func000000000000000e:                   # @func000000000000000e
@@ -28,7 +28,7 @@ func000000000000000e:                   # @func000000000000000e
 	vsll.vi	v10, v10, 18
 	lui	a0, 192
 	vand.vx	v10, v10, a0
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	vsrl.vi	v8, v8, 16
 	ret
 func000000000000000c:                   # @func000000000000000c
@@ -36,7 +36,7 @@ func000000000000000c:                   # @func000000000000000c
 	vsll.vi	v10, v10, 18
 	lui	a0, 64
 	vand.vx	v10, v10, a0
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	vsrl.vi	v8, v8, 8
 	ret
 func0000000000000000:                   # @func0000000000000000

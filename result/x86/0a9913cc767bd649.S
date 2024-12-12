@@ -6,7 +6,7 @@ func0000000000000004:                   # @func0000000000000004
 	andb	%sil, %al
 	retq
 func000000000000000a:                   # @func000000000000000a
-	decb	%dl
+	incb	%dl
 	setns	%al
 	andb	%dil, %sil
 	andb	%sil, %al

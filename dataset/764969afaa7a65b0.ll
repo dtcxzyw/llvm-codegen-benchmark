@@ -5,7 +5,7 @@
 ; icu/optimized/double-conversion-fast-dtoa.ll
 ; openusd/optimized/fast-dtoa.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i1 %0, i32 %1) #0 {
+define i1 @func000000000000004a(i1 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 80145
   %3 = ashr i32 %2, 12

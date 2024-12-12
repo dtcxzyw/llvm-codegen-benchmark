@@ -22,9 +22,6 @@ func0000000000000004:                   # @func0000000000000004
 	shll	$2, %edi
 	leal	(%rdi,%rdi,2), %eax
 	retq
-func000000000000000c:                   # @func000000000000000c
-	imull	$-12289, %edi, %eax             # imm = 0xCFFF
-	retq
 func000000000000000d:                   # @func000000000000000d
 	movl	%edi, %eax
 	leal	(,%rax,8), %ecx

@@ -1,6 +1,6 @@
 func0000000000000008:                   # @func0000000000000008
 	fneg.d	fa5, fa1
-	feq.d	a1, fa5, fa0
+	feq.d	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
 func0000000000000005:                   # @func0000000000000005

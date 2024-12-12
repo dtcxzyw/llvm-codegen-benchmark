@@ -36,7 +36,7 @@ entry:
   ret i64 %5
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; grpc/optimized/parsing.cc.ll
 ; linux/optimized/manager.ll
 ; llvm/optimized/SemaOverload.cpp.ll
@@ -50,7 +50,6 @@ entry:
 ; mold/optimized/output-chunks.cc.RV32LE.cc.ll
 ; mold/optimized/output-chunks.cc.SH4.cc.ll
 ; php/optimized/ir_emit.ll
-; protobuf/optimized/json.cc.ll
 ; rust-analyzer-rs/optimized/2u22uu4kc5lsbxda.ll
 ; verilator/optimized/V3AstNodes.cpp.ll
 ; zxing/optimized/QRFormatInformation.cpp.ll
@@ -84,7 +83,7 @@ define i64 @func000000000000001c(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = shl nuw nsw i64 %2, 44
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = or i64 %4, 35184372088832
   ret i64 %5
 }

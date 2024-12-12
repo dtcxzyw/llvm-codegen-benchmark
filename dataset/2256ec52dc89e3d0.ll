@@ -41,11 +41,13 @@ entry:
   ret i32 %6
 }
 
-; 10 occurrences:
+; 12 occurrences:
+; boost/optimized/src.ll
 ; brotli/optimized/transform.c.ll
 ; c3c/optimized/parse_expr.c.ll
 ; libwebp/optimized/lossless.c.ll
 ; linux/optimized/xhci-mem.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; opencv/optimized/FilterTIG.cpp.ll
 ; openssl/optimized/openssl-bin-s_client.ll
 ; openusd/optimized/loopfilter.c.ll
@@ -56,14 +58,15 @@ entry:
 define i32 @func00000000000000ff(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = shl nuw nsw i32 %1, 16
   %6 = add nuw nsw i32 %4, %5
   ret i32 %6
 }
 
-; 32 occurrences:
+; 33 occurrences:
 ; abc/optimized/wlcReadSmt.c.ll
+; boost/optimized/src.ll
 ; bullet3/optimized/btSimulationIslandManagerMt.ll
 ; crow/optimized/example.cpp.ll
 ; git/optimized/archive-zip.ll
@@ -112,7 +115,7 @@ entry:
 define i32 @func000000000000001d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 16
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = shl nsw i32 %1, 8
   %6 = add nsw i32 %4, %5
   ret i32 %6
@@ -161,7 +164,7 @@ entry:
 define i32 @func00000000000000f0(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 16
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = shl nuw nsw i32 %1, 8
   %6 = add i32 %4, %5
   ret i32 %6
@@ -180,7 +183,7 @@ entry:
 define i32 @func00000000000000f5(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = shl nuw nsw i32 %1, 4
   %6 = add nsw i32 %4, %5
   ret i32 %6
@@ -232,7 +235,7 @@ entry:
 define i32 @func0000000000000040(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = shl i32 %1, 1
   %6 = add i32 %4, %5
   ret i32 %6
@@ -257,7 +260,7 @@ entry:
 define i32 @func00000000000000e0(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 16
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = shl nuw i32 %1, 24
   %6 = add i32 %4, %5
   ret i32 %6
@@ -271,7 +274,7 @@ entry:
 define i32 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 16
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = shl i32 %1, 24
   %6 = add i32 %4, %5
   ret i32 %6
@@ -284,7 +287,7 @@ entry:
 define i32 @func00000000000000b0(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 24
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = shl nuw nsw i32 %1, 16
   %6 = add i32 %4, %5
   ret i32 %6
@@ -296,7 +299,7 @@ entry:
 define i32 @func000000000000004c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 5
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = shl nuw nsw i32 %0, 3
   %6 = add i32 %5, %4
   ret i32 %6
@@ -308,7 +311,7 @@ entry:
 define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 5
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = shl nuw nsw i32 %0, 3
   %6 = add i32 %5, %4
   ret i32 %6
@@ -322,7 +325,7 @@ entry:
 define i32 @func0000000000000030(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 16
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = shl nuw nsw i32 %1, 8
   %6 = add i32 %4, %5
   ret i32 %6
@@ -335,7 +338,7 @@ entry:
 define i32 @func0000000000000080(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 25
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = shl i32 %1, 16
   %6 = add i32 %4, %5
   ret i32 %6
@@ -360,10 +363,11 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func00000000000000cc(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add i32 %2, %0
-  %4 = shl i32 %3, 8
-  %5 = add i32 %4, %1
-  ret i32 %5
+  %3 = shl nuw nsw i32 %2, 8
+  %4 = add i32 %1, %3
+  %5 = shl nuw nsw i32 %0, 8
+  %6 = add i32 %5, %4
+  ret i32 %6
 }
 
 ; 1 occurrences:
@@ -384,7 +388,7 @@ entry:
 define i32 @func00000000000000b5(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 24
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = shl nuw nsw i32 %1, 12
   %6 = add nsw i32 %4, %5
   ret i32 %6
@@ -408,7 +412,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 3
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = shl nsw i32 %0, 1
   %6 = add i32 %5, %4
   ret i32 %6
@@ -419,10 +423,11 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add i32 %2, %1
-  %4 = shl i32 %3, 1
-  %5 = add i32 %4, %0
-  ret i32 %5
+  %3 = shl i32 %2, 1
+  %4 = add i32 %0, %3
+  %5 = shl nsw i32 %1, 1
+  %6 = add i32 %4, %5
+  ret i32 %6
 }
 
 ; 1 occurrences:

@@ -1,6 +1,7 @@
 
-; 229 occurrences:
+; 230 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
+; boost/optimized/to_chars.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -236,7 +237,7 @@ entry:
   ret i128 %1
 }
 
-; 174 occurrences:
+; 177 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
@@ -244,6 +245,9 @@ entry:
 ; abseil-cpp/optimized/int128_test.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; abseil-cpp/optimized/wide_multiply_test.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; coreutils-rs/optimized/bay6adxmosnf2qi.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; eastl/optimized/TestBitset.cpp.ll

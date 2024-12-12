@@ -32,6 +32,14 @@ func0000000000000023:                   # @func0000000000000023
 	add	a0, a0, a1
 	addiw	a0, a0, 1
 	ret
+func0000000000000053:                   # @func0000000000000053
+	zext.h	a1, a1
+	lui	a2, 16
+	sltiu	a1, a1, 4
+	addi	a2, a2, -7
+	czero.nez	a1, a2, a1
+	addw	a0, a0, a1
+	ret
 func0000000000000007:                   # @func0000000000000007
 	zext.h	a1, a1
 	addi	a1, a1, -18
@@ -39,6 +47,14 @@ func0000000000000007:                   # @func0000000000000007
 	czero.eqz	a1, a2, a1
 	add	a0, a0, a1
 	addiw	a0, a0, 11
+	ret
+func0000000000000063:                   # @func0000000000000063
+	slli	a1, a1, 48
+	srli	a1, a1, 58
+	sltiu	a1, a1, 31
+	lui	a2, 229376
+	czero.nez	a1, a2, a1
+	addw	a0, a0, a1
 	ret
 func000000000000002b:                   # @func000000000000002b
 	sext.h	a1, a1
@@ -90,10 +106,26 @@ func0000000000000019:                   # @func0000000000000019
 	czero.nez	a1, a2, a1
 	addw	a0, a0, a1
 	ret
+func0000000000000051:                   # @func0000000000000051
+	zext.h	a1, a1
+	sltiu	a1, a1, 10
+	li	a2, -6
+	czero.nez	a1, a2, a1
+	add	a0, a0, a1
+	addiw	a0, a0, -4
+	ret
 func0000000000000022:                   # @func0000000000000022
 	zext.h	a1, a1
 	lui	a2, 16
 	sltiu	a1, a1, 2
+	xori	a1, a1, 1
+	add	a0, a0, a2
+	addw	a0, a0, a1
+	ret
+func0000000000000062:                   # @func0000000000000062
+	zext.h	a1, a1
+	lui	a2, 16
+	sltiu	a1, a1, 7
 	xori	a1, a1, 1
 	add	a0, a0, a2
 	addw	a0, a0, a1

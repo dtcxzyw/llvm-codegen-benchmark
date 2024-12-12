@@ -37,14 +37,14 @@ func0000000000000029:                   # @func0000000000000029
 	add	a0, a0, a1
 	ret
 .LCPI3_0:
-	.quad	2361183241434822607             # 0x20c49ba5e353f7cf
+	.quad	4835703278458516699             # 0x431bde82d7b634db
 func0000000000000020:                   # @func0000000000000020
 	lui	a3, %hi(.LCPI3_0)
 	ld	a3, %lo(.LCPI3_0)(a3)
 	sub	a1, a1, a2
 	mulh	a1, a1, a3
 	srli	a2, a1, 63
-	srai	a1, a1, 7
+	srai	a1, a1, 18
 	add	a1, a1, a2
 	li	a2, 1000
 	mul	a0, a0, a2

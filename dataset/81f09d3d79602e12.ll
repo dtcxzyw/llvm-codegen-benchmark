@@ -1,7 +1,9 @@
 
-; 13 occurrences:
+; 15 occurrences:
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; hermes/optimized/HadesGC.cpp.ll
 ; miniaudio/optimized/unity.c.ll

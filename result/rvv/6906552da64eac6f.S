@@ -5,7 +5,7 @@ func0000000000000009:                   # @func0000000000000009
 	vmv.v.i	v9, 0
 	li	a0, 31
 	vmerge.vim	v9, v9, 1, v0
-	vor.vv	v8, v9, v8
+	vor.vv	v8, v8, v9
 	slli	a0, a0, 10
 	vor.vx	v8, v8, a0
 	ret

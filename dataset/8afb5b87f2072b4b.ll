@@ -1,6 +1,7 @@
 
 ; 123 occurrences:
 ; abseil-cpp/optimized/ascii_test.cc.ll
+; boost/optimized/src.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTDiagnostic.cpp.ll
@@ -102,7 +103,6 @@
 ; postgres/optimized/d2s.ll
 ; postgres/optimized/d2s_shlib.ll
 ; postgres/optimized/d2s_srv.ll
-; qemu/optimized/fpu_softfloat.c.ll
 ; ruby/optimized/array.ll
 ; ruby/optimized/bignum.ll
 ; ruby/optimized/compile.ll
@@ -124,7 +124,7 @@
 ; ruby/optimized/vm.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i64 %0) #0 {
+define i1 @func00000000000001a4(i64 %0) #0 {
 entry:
   %1 = trunc nuw nsw i64 %0 to i32
   %2 = and i32 %1, 7
@@ -139,14 +139,14 @@ entry:
 ; quickjs/optimized/libbf.ll
 ; ruby/optimized/gc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0) #0 {
+define i1 @func0000000000000061(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 3
   %2 = icmp eq i64 %1, 2
   ret i1 %2
 }
 
-; 240 occurrences:
+; 238 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcDress2.c.ll
 ; abc/optimized/absOldCex.c.ll
@@ -219,7 +219,6 @@ entry:
 ; abc/optimized/llb1Hint.c.ll
 ; abc/optimized/llb1Pivot.c.ll
 ; abc/optimized/llb1Reach.c.ll
-; abc/optimized/llb2Bad.c.ll
 ; abc/optimized/llb2Flow.c.ll
 ; abc/optimized/llb2Image.c.ll
 ; abc/optimized/llb3Image.c.ll
@@ -264,7 +263,6 @@ entry:
 ; abc/optimized/sswRarity.c.ll
 ; abc/optimized/sswSemi.c.ll
 ; abc/optimized/sswSim.c.ll
-; abc/optimized/sswSimSat.c.ll
 ; abc/optimized/sswSweep.c.ll
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/AMFImporter_Geometry.cpp.ll
@@ -373,12 +371,12 @@ entry:
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
+; lvgl/optimized/lv_ime_pinyin.ll
 ; oiio/optimized/formatspec.cpp.ll
 ; openjdk/optimized/png.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; qemu/optimized/hw_usb_hcd-xhci.c.ll
 ; qemu/optimized/linux-user_strace.c.ll
-; qemu/optimized/target_riscv_vector_helper.c.ll
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/string.ll
 ; ruby/optimized/vm.ll
@@ -388,7 +386,7 @@ entry:
 ; wireshark/optimized/packet-pn-ptcp.c.ll
 ; wireshark/optimized/packet-pn-rt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0) #0 {
+define i1 @func0000000000000024(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
   %2 = and i32 %1, 31
@@ -400,7 +398,19 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/fpu_softfloat.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d8(i64 %0) #0 {
+define i1 @func00000000000001b4(i64 %0) #0 {
+entry:
+  %1 = trunc nuw nsw i64 %0 to i32
+  %2 = and i32 %1, 2047
+  %3 = add nsw i32 %2, -1023
+  %4 = icmp samesign ult i32 %3, 62
+  ret i1 %4
+}
+
+; 1 occurrences:
+; qemu/optimized/fpu_softfloat.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001b8(i64 %0) #0 {
 entry:
   %1 = trunc nuw nsw i64 %0 to i32
   %2 = and i32 %1, 2047
@@ -413,7 +423,7 @@ entry:
 ; linux/optimized/drm_buddy.ll
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0) #0 {
+define i1 @func0000000000000038(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 252
   %2 = icmp ne i64 %1, 16
@@ -520,7 +530,7 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i64 %0) #0 {
+define i1 @func00000000000001a1(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 2047
   %2 = icmp eq i64 %1, 998
@@ -530,7 +540,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000009c(i64 %0) #0 {
+define i1 @func000000000000012c(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 255
   %2 = icmp ne i64 %1, 37
@@ -542,7 +552,7 @@ entry:
 ; git/optimized/pack-bitmap-write.ll
 ; regex-rs/optimized/1hv7a9vv5ulvjrv1.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i64 %0) #0 {
+define i1 @func0000000000000124(i64 %0) #0 {
 entry:
   %1 = trunc nuw i64 %0 to i32
   %2 = and i32 %1, 7
@@ -554,7 +564,7 @@ entry:
 ; 1 occurrences:
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0) #0 {
+define i1 @func0000000000000021(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 2147483647
   %2 = icmp eq i64 %1, 1

@@ -17,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/ltablib.cpp.ll
 ; Function Attrs: nounwind
-define double @func0000000000000011(double %0, i32 %1, i32 %2) #0 {
+define double @func0000000000000021(double %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = uitofp nneg i32 %2 to double
   %4 = icmp eq i32 %1, 0

@@ -1,28 +1,7 @@
 
-%"class.llvm::LiveIntervalCalc.2949697" = type { %"class.llvm::LiveRangeCalc.2949698" }
-%"class.llvm::LiveRangeCalc.2949698" = type { ptr, ptr, ptr, ptr, ptr, %"class.llvm::BitVector.2949699", %"class.llvm::DenseMap.330.2949700", %"class.llvm::IndexedMap.333.2949701", %"class.llvm::SmallVector.342.2949702" }
-%"class.llvm::BitVector.2949699" = type <{ %"class.llvm::SmallVector.107.2949703", i32, [4 x i8] }>
-%"class.llvm::SmallVector.107.2949703" = type { %"class.llvm::SmallVectorImpl.108.2949704", %"struct.llvm::SmallVectorStorage.111.2949705" }
-%"class.llvm::SmallVectorImpl.108.2949704" = type { %"class.llvm::SmallVectorTemplateBase.109.2949706" }
-%"class.llvm::SmallVectorTemplateBase.109.2949706" = type { %"class.llvm::SmallVectorTemplateCommon.110.2949707" }
-%"class.llvm::SmallVectorTemplateCommon.110.2949707" = type { %"class.llvm::SmallVectorBase.2949601" }
-%"class.llvm::SmallVectorBase.2949601" = type { ptr, i32, i32 }
-%"struct.llvm::SmallVectorStorage.111.2949705" = type { [48 x i8] }
-%"class.llvm::DenseMap.330.2949700" = type <{ ptr, i32, i32, i32, [4 x i8] }>
-%"class.llvm::IndexedMap.333.2949701" = type <{ %"class.llvm::SmallVector.334.2949708", %"struct.std::pair.339.2949709", [8 x i8] }>
-%"class.llvm::SmallVector.334.2949708" = type { %"class.llvm::SmallVectorImpl.335.2949710" }
-%"class.llvm::SmallVectorImpl.335.2949710" = type { %"class.llvm::SmallVectorTemplateBase.336.2949711" }
-%"class.llvm::SmallVectorTemplateBase.336.2949711" = type { %"class.llvm::SmallVectorTemplateCommon.337.2949712" }
-%"class.llvm::SmallVectorTemplateCommon.337.2949712" = type { %"class.llvm::SmallVectorBase.2949601" }
-%"struct.std::pair.339.2949709" = type { ptr, ptr }
-%"class.llvm::SmallVector.342.2949702" = type { %"class.llvm::SmallVectorImpl.343.2949713", %"struct.llvm::SmallVectorStorage.346.2949714" }
-%"class.llvm::SmallVectorImpl.343.2949713" = type { %"class.llvm::SmallVectorTemplateBase.344.2949715" }
-%"class.llvm::SmallVectorTemplateBase.344.2949715" = type { %"class.llvm::SmallVectorTemplateCommon.345.2949716" }
-%"class.llvm::SmallVectorTemplateCommon.345.2949716" = type { %"class.llvm::SmallVectorBase.2949601" }
-%"struct.llvm::SmallVectorStorage.346.2949714" = type { [512 x i8] }
-%struct.resource.3343077 = type { i64, i64, ptr, i64, i64, ptr, ptr, ptr }
+%struct.resource.3532026 = type { i64, i64, ptr, i64, i64, ptr, ptr, ptr }
 
-; 382 occurrences:
+; 412 occurrences:
 ; abc/optimized/amapMatch.c.ll
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/giaLf.c.ll
@@ -40,6 +19,13 @@
 ; arrow/optimized/builder_dict.cc.ll
 ; arrow/optimized/vector_hash.cc.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; bullet3/optimized/b3DynamicBvh.ll
 ; bullet3/optimized/btDbvt.ll
 ; bullet3/optimized/btGImpactBvh.ll
@@ -374,13 +360,20 @@
 ; libwebp/optimized/webpinfo.c.ll
 ; lightgbm/optimized/objective_function.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
+; llvm/optimized/AddressSanitizer.cpp.ll
+; llvm/optimized/Dominators.cpp.ll
+; llvm/optimized/MachineDominators.cpp.ll
+; llvm/optimized/MachinePostDominators.cpp.ll
+; llvm/optimized/MemProfiler.cpp.ll
+; llvm/optimized/MemorySSAUpdater.cpp.ll
+; llvm/optimized/Sema.cpp.ll
 ; llvm/optimized/SimplifyIndVar.cpp.ll
+; llvm/optimized/SplitKit.cpp.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; mitsuba3/optimized/blendbsdf.cpp.ll
 ; mitsuba3/optimized/blendphase.cpp.ll
-; mitsuba3/optimized/zonestack.cpp.ll
 ; msdfgen/optimized/edge-segments.cpp.ll
 ; oiio/optimized/SHA1.cpp.ll
 ; opencv/optimized/datastructs.cpp.ll
@@ -388,12 +381,28 @@
 ; openjdk/optimized/cardTable.ll
 ; openjdk/optimized/os_posix.ll
 ; openjdk/optimized/zPageAllocator.ll
+; openspiel/optimized/ABstats.cpp.ll
+; openspiel/optimized/chess_board.cc.ll
+; openusd/optimized/aom_scale.c.ll
+; openusd/optimized/decodeframe.c.ll
+; openusd/optimized/decodemv.c.ll
+; openusd/optimized/frustum.cpp.ll
+; openusd/optimized/pred_common.c.ll
+; openusd/optimized/reconinter.c.ll
+; openusd/optimized/reconintra.c.ll
+; openusd/optimized/resize.c.ll
+; openusd/optimized/restoration.c.ll
+; openusd/optimized/tessellation.cpp.ll
+; openusd/optimized/yv12extend.c.ll
 ; php/optimized/zend_jit.ll
 ; redis/optimized/dict.ll
 ; redis/optimized/sha1.ll
 ; ruby/optimized/sha1.ll
 ; sqlite/optimized/sqlite3.ll
 ; stockfish/optimized/position.ll
+; yoga/optimized/AbsoluteLayout.cpp.ll
+; yoga/optimized/CalculateLayout.cpp.ll
+; yoga/optimized/Node.cpp.ll
 ; z3/optimized/arith_solver.cpp.ll
 ; z3/optimized/bv_solver.cpp.ll
 ; z3/optimized/dl_mk_coi_filter.cpp.ll
@@ -406,20 +415,19 @@
 ; z3/optimized/theory_lra.cpp.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i1 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 20
-  %4 = getelementptr nusw [2 x i32], ptr %3, i64 0, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 20
+  %4 = getelementptr nusw nuw [2 x i32], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 
-; 28 occurrences:
+; 27 occurrences:
 ; cpython/optimized/pystate.ll
 ; linux/optimized/compaction.ll
 ; linux/optimized/e100.ll
 ; linux/optimized/ehci-hcd.ll
-; linux/optimized/evmisc.ll
 ; linux/optimized/hcd.ll
 ; linux/optimized/i915_pci.ll
 ; linux/optimized/intel_ddi.ll
@@ -444,10 +452,10 @@ entry:
 ; wireshark/optimized/packet-umts_rlc.c.ll
 ; wireshark/optimized/packet-usb-com.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i1 %1) #0 {
+define ptr @func000000000000000c(ptr %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 8
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 8
   %4 = getelementptr [16 x i8], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
@@ -456,42 +464,11 @@ entry:
 ; abc/optimized/amapOutput.c.ll
 ; abc/optimized/giaLf.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i1 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
   %3 = getelementptr i8, ptr %0, i64 52
-  %4 = getelementptr nusw [2 x i32], ptr %3, i64 0, i64 %2
-  ret ptr %4
-}
-
-; 21 occurrences:
-; llvm/optimized/AddressSanitizer.cpp.ll
-; llvm/optimized/Dominators.cpp.ll
-; llvm/optimized/MachineDominators.cpp.ll
-; llvm/optimized/MachinePostDominators.cpp.ll
-; llvm/optimized/MemProfiler.cpp.ll
-; llvm/optimized/MemorySSAUpdater.cpp.ll
-; llvm/optimized/Sema.cpp.ll
-; llvm/optimized/SplitKit.cpp.ll
-; openspiel/optimized/ABstats.cpp.ll
-; openspiel/optimized/chess_board.cc.ll
-; openusd/optimized/aom_scale.c.ll
-; openusd/optimized/decodeframe.c.ll
-; openusd/optimized/decodemv.c.ll
-; openusd/optimized/frustum.cpp.ll
-; openusd/optimized/pred_common.c.ll
-; openusd/optimized/reconinter.c.ll
-; openusd/optimized/reconintra.c.ll
-; openusd/optimized/resize.c.ll
-; openusd/optimized/restoration.c.ll
-; openusd/optimized/tessellation.cpp.ll
-; openusd/optimized/yv12extend.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i1 %1) #0 {
-entry:
-  %2 = zext i1 %1 to i64
-  %3 = getelementptr nusw nuw i8, ptr %0, i64 416
-  %4 = getelementptr nusw [2 x %"class.llvm::LiveIntervalCalc.2949697"], ptr %3, i64 0, i64 %2
+  %4 = getelementptr nusw nuw [2 x i32], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 
@@ -503,7 +480,7 @@ define ptr @func0000000000000000(ptr %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
   %3 = getelementptr i8, ptr %0, i64 736
-  %4 = getelementptr [11 x %struct.resource.3343077], ptr %3, i64 0, i64 %2
+  %4 = getelementptr [11 x %struct.resource.3532026], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 

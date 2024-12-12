@@ -5,7 +5,7 @@
 define i1 @func0000000000000002(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = select i1 %1, double %2, double -0.000000e+00
-  %4 = fadd double %3, %0
+  %4 = fadd double %0, %3
   %5 = fcmp olt double %4, 0.000000e+00
   ret i1 %5
 }
@@ -16,7 +16,7 @@ entry:
 define i1 @func0000000000000007(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = select i1 %1, double %2, double 0.000000e+00
-  %4 = fadd double %3, %0
+  %4 = fadd double %0, %3
   %5 = fcmp une double %4, 0.000000e+00
   ret i1 %5
 }
@@ -27,7 +27,7 @@ entry:
 define i1 @func0000000000000004(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = select i1 %1, double %2, double 0.000000e+00
-  %4 = fadd double %3, %0
+  %4 = fadd double %0, %3
   %5 = fcmp ogt double %4, 0.000000e+00
   ret i1 %5
 }
@@ -43,13 +43,12 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; redis/optimized/t_zset.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/3rk2ctuzbghb17s4.ll
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
-; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(double %0, i1 %1, double %2) #0 {
@@ -77,7 +76,7 @@ entry:
 define i1 @func000000000000000e(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = select i1 %1, double %2, double 0.000000e+00
-  %4 = fadd double %3, %0
+  %4 = fadd double %0, %3
   %5 = fcmp ord double %4, 0.000000e+00
   ret i1 %5
 }

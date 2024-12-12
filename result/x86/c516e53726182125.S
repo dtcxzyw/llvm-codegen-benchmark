@@ -1,4 +1,4 @@
-func000000000000001e:                   # @func000000000000001e
+func000000000000001f:                   # @func000000000000001f
 	shrl	$3, %esi
 	leaq	1(%rsi,%rdi), %rax
 	retq
@@ -8,22 +8,22 @@ func000000000000000c:                   # @func000000000000000c
 	imulq	$272, %rsi, %rax                # imm = 0x110
 	addq	%rdi, %rax
 	retq
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	shrl	$3, %esi
 	decl	%esi
 	leaq	(%rdi,%rsi,8), %rax
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000002b:                   # @func000000000000002b
 	shrl	$4, %esi
 	addl	$-5, %esi
 	leaq	(%rdi,%rsi,8), %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	shrl	$4, %esi
 	addl	$-5, %esi
 	leaq	(%rdi,%rsi,8), %rax
 	retq
-func000000000000002e:                   # @func000000000000002e
+func000000000000002f:                   # @func000000000000002f
 	shrl	$3, %esi
 	addl	$-2, %esi
 	leaq	(%rdi,%rsi,8), %rax

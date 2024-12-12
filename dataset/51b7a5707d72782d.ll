@@ -6,7 +6,7 @@ define i1 @func0000000000000010(i1 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i16
   %3 = icmp ugt i16 %2, 512
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
@@ -24,12 +24,11 @@ define i1 @func0000000000000002(i1 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i16
   %3 = icmp eq i16 %2, 0
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
-; 2 occurrences:
-; llvm/optimized/CodeGenDAGPatterns.cpp.ll
+; 1 occurrences:
 ; wasmedge/optimized/wasifunc.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i32 %1) #0 {
@@ -47,7 +46,7 @@ define i1 @func0000000000000018(i1 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i16
   %3 = icmp ne i16 %2, 129
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
@@ -62,8 +61,7 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
-; arrow/optimized/vector_selection_internal.cc.ll
+; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i32 %1) #0 {

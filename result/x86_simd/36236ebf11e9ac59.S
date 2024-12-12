@@ -80,7 +80,7 @@ func0000000000000020:                   # @func0000000000000020
 	vpmovqd	%ymm2, %xmm2
 	vpandd	.LCPI4_0(%rip){1to4}, %xmm2, %xmm2
 	vpaddd	%xmm0, %xmm1, %xmm0
-	vpaddd	%xmm0, %xmm2, %xmm0
+	vpaddd	%xmm2, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI5_0:
@@ -145,7 +145,7 @@ func0000000000000025:                   # @func0000000000000025
 	vpmovqd	%ymm2, %xmm2
 	vpandd	.LCPI9_1(%rip){1to4}, %xmm2, %xmm2
 	vpaddd	%xmm0, %xmm1, %xmm0
-	vpaddd	%xmm0, %xmm2, %xmm0
+	vpaddd	%xmm2, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI10_0:
@@ -154,7 +154,7 @@ func0000000000000030:                   # @func0000000000000030
 	vpmovqd	%ymm2, %xmm2
 	vpandd	.LCPI10_0(%rip){1to4}, %xmm2, %xmm2
 	vpaddd	%xmm0, %xmm1, %xmm0
-	vpaddd	%xmm0, %xmm2, %xmm0
+	vpaddd	%xmm2, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI11_0:
@@ -162,8 +162,8 @@ func0000000000000030:                   # @func0000000000000030
 func000000000000002d:                   # @func000000000000002d
 	vpmovqd	%ymm2, %xmm2
 	vpandd	.LCPI11_0(%rip){1to4}, %xmm2, %xmm2
-	vpaddd	%xmm0, %xmm1, %xmm0
-	vpaddd	%xmm0, %xmm2, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
+	vpaddd	%xmm2, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI12_0:
@@ -180,7 +180,7 @@ func0000000000000015:                   # @func0000000000000015
 func000000000000000c:                   # @func000000000000000c
 	vpmovqd	%ymm2, %xmm2
 	vpandd	.LCPI13_0(%rip){1to4}, %xmm2, %xmm2
-	vpaddd	%xmm0, %xmm1, %xmm0
-	vpaddd	%xmm0, %xmm2, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
+	vpaddd	%xmm2, %xmm0, %xmm0
 	vzeroupper
 	retq

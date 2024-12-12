@@ -16,7 +16,7 @@ entry:
 ; icu/optimized/collationkeys.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000048(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -33
   %4 = select i1 %0, i32 1, i32 %3
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/utext.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000008a(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 32
   %4 = select i1 %0, i32 2147483647, i32 %3
@@ -47,19 +47,6 @@ entry:
   %4 = select i1 %0, i32 0, i32 %3
   %5 = trunc i64 %1 to i32
   %6 = icmp sgt i32 %4, %5
-  ret i1 %6
-}
-
-; 2 occurrences:
-; opencv/optimized/fast_gemm.cpp.ll
-; opencv/optimized/matmul_layer.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = add i32 %2, -2
-  %4 = select i1 %0, i32 0, i32 %3
-  %5 = trunc i64 %1 to i32
-  %6 = icmp ult i32 %4, %5
   ret i1 %6
 }
 

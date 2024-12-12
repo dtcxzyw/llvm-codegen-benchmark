@@ -4,7 +4,7 @@ func000000000000003b:                   # @func000000000000003b
 	lui	a0, 209715
 	addi	a0, a0, 819
 	vand.vx	v10, v10, a0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	vsrl.vi	v10, v8, 4
 	vadd.vv	v8, v10, v8
 	ret
@@ -14,7 +14,7 @@ func000000000000001b:                   # @func000000000000001b
 	lui	a0, 209715
 	addi	a0, a0, 819
 	vand.vx	v10, v10, a0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	vsrl.vi	v10, v8, 4
 	vadd.vv	v8, v10, v8
 	ret

@@ -1,15 +1,34 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; openblas/optimized/dbdsvdx.c.ll
+; quantlib/optimized/perturbativebarrieroptionengine.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = fneg double %2
   %4 = select i1 %1, double %3, double %2
-  %5 = fcmp ogt double %4, %0
+  %5 = fcmp olt double %0, %4
+  ret i1 %5
+}
+
+; 8 occurrences:
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; openblas/optimized/dlanv2.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000a(double %0, i1 %1, double %2) #0 {
+entry:
+  %3 = fneg double %2
+  %4 = select i1 %1, double %3, double %2
+  %5 = fcmp ole double %0, %4
   ret i1 %5
 }
 
@@ -28,7 +47,7 @@ define i1 @func0000000000000007(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = fneg double %2
   %4 = select i1 %1, double %3, double %2
-  %5 = fcmp une double %4, %0
+  %5 = fcmp une double %0, %4
   ret i1 %5
 }
 
@@ -41,7 +60,7 @@ define i1 @func0000000000000005(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = fneg double %2
   %4 = select i1 %1, double %3, double %2
-  %5 = fcmp ult double %4, %0
+  %5 = fcmp ugt double %0, %4
   ret i1 %5
 }
 
@@ -82,7 +101,7 @@ define i1 @func0000000000000008(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = fneg double %2
   %4 = select i1 %1, double %3, double %2
-  %5 = fcmp oeq double %4, %0
+  %5 = fcmp oeq double %0, %4
   ret i1 %5
 }
 
@@ -96,7 +115,7 @@ define i1 @func000000000000000c(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = fneg double %2
   %4 = select i1 %1, double %3, double %2
-  %5 = fcmp ole double %4, %0
+  %5 = fcmp oge double %0, %4
   ret i1 %5
 }
 
@@ -108,18 +127,7 @@ define i1 @func0000000000000003(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = fneg double %2
   %4 = select i1 %1, double %3, double %2
-  %5 = fcmp ugt double %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; openblas/optimized/dlanv2.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000a(double %0, i1 %1, double %2) #0 {
-entry:
-  %3 = fneg double %2
-  %4 = select i1 %1, double %3, double %2
-  %5 = fcmp oge double %4, %0
+  %5 = fcmp ult double %0, %4
   ret i1 %5
 }
 

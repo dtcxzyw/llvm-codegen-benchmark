@@ -1,4 +1,4 @@
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	sext.w	a3, a1
 	sext.w	a4, a2
 	subw	a1, a1, a2
@@ -7,7 +7,7 @@ func0000000000000028:                   # @func0000000000000028
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	sext.w	a3, a1
 	sext.w	a4, a2
 	subw	a1, a1, a2
@@ -16,7 +16,7 @@ func0000000000000088:                   # @func0000000000000088
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func00000000000000b8:                   # @func00000000000000b8
+func0000000000000168:                   # @func0000000000000168
 	sext.w	a3, a1
 	sext.w	a4, a2
 	subw	a1, a1, a2
@@ -25,7 +25,7 @@ func00000000000000b8:                   # @func00000000000000b8
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	sext.w	a3, a1
 	sext.w	a4, a2
 	subw	a1, a1, a2

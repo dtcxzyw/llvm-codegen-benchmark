@@ -11,11 +11,10 @@ entry:
   ret i32 %5
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; icu/optimized/n2builder.ll
 ; linux/optimized/vgaarb.ll
 ; llvm/optimized/TargetInstrInfo.cpp.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; php/optimized/zend_jit.ll
 ; qemu/optimized/hw_usb_hcd-ehci.c.ll
 ; qemu/optimized/hw_usb_hcd-xhci.c.ll

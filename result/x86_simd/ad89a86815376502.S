@@ -17,7 +17,7 @@
 	.short	5                               # 0x5
 .LCPI0_1:
 	.short	5                               # 0x5
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	vpbroadcastw	.LCPI0_1(%rip), %ymm2   # ymm2 = [5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5]
 	vpsubw	%ymm1, %ymm2, %ymm1
 	vpcmpnleuw	%ymm0, %ymm1, %k0

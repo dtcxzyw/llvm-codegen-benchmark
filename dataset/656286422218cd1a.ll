@@ -1,5 +1,7 @@
 
-; 15 occurrences:
+; 17 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; gromacs/optimized/coupling.cpp.ll
 ; gromacs/optimized/energyoutput.cpp.ll
 ; gromacs/optimized/gmx_energy.cpp.ll

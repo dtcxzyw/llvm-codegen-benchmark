@@ -95,3 +95,100 @@ func0000000000000011:                   # @func0000000000000011
 	vmovdqa	%xmm1, %xmm0
 	vzeroupper
 	retq
+.LCPI2_0:
+	.byte	127                             # 0x7f
+	.byte	127                             # 0x7f
+	.byte	127                             # 0x7f
+	.byte	127                             # 0x7f
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+.LCPI2_2:
+	.byte	128                             # 0x80
+	.byte	128                             # 0x80
+	.byte	128                             # 0x80
+	.byte	128                             # 0x80
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+.LCPI2_1:
+	.quad	127                             # 0x7f
+.LCPI2_3:
+	.zero	4,127
+.LCPI2_4:
+	.zero	4,128
+func0000000000000031:                   # @func0000000000000031
+	vpmovqb	%ymm0, %xmm1
+	vpandd	.LCPI2_3(%rip){1to4}, %xmm1, %xmm1
+	vpcmpnleuq	.LCPI2_1(%rip){1to4}, %ymm0, %k1
+	vpord	.LCPI2_4(%rip){1to4}, %xmm1, %xmm0
+	vmovdqu8	%xmm0, %xmm1 {%k1}
+	vmovdqa	%xmm1, %xmm0
+	vzeroupper
+	retq
+.LCPI3_0:
+	.quad	128                             # 0x80
+.LCPI3_1:
+	.byte	127                             # 0x7f
+	.byte	127                             # 0x7f
+	.byte	127                             # 0x7f
+	.byte	127                             # 0x7f
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+.LCPI3_2:
+	.byte	128                             # 0x80
+	.byte	128                             # 0x80
+	.byte	128                             # 0x80
+	.byte	128                             # 0x80
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+.LCPI3_3:
+	.zero	4,127
+.LCPI3_4:
+	.zero	4,128
+func00000000000000a1:                   # @func00000000000000a1
+	vpcmpltuq	.LCPI3_0(%rip){1to4}, %ymm0, %k1
+	vpmovqb	%ymm0, %xmm0
+	vpandd	.LCPI3_3(%rip){1to4}, %xmm0, %xmm1
+	vpord	.LCPI3_4(%rip){1to4}, %xmm1, %xmm0
+	vmovdqu8	%xmm1, %xmm0 {%k1}
+	vzeroupper
+	retq

@@ -95,9 +95,9 @@ entry:
 
 ; 6 occurrences:
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
-; draco/optimized/symbol_encoding.cc.ll
 ; gromacs/optimized/constraintrange.cpp.ll
 ; opencv/optimized/fuzzy_F0_math.cpp.ll
+; opencv/optimized/run_length_morphology.cpp.ll
 ; opencv/optimized/selectivesearchsegmentation.cpp.ll
 ; opencv/optimized/speech_recognition.cpp.ll
 ; Function Attrs: nounwind

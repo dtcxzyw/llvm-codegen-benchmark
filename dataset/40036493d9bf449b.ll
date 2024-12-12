@@ -1,20 +1,18 @@
 
-; 4 occurrences:
-; lz4/optimized/lz4.c.ll
-; openusd/optimized/lz4.cpp.ll
+; 2 occurrences:
+; boost/optimized/static_string.ll
 ; sqlite/optimized/sqlite3.ll
-; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000020(i64 %0, ptr %1, i64 %2) #0 {
+define i16 @func0000000000000030(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
   %6 = trunc i64 %5 to i16
   ret i16 %6
 }
 
-; 63 occurrences:
+; 59 occurrences:
 ; linux/optimized/act_api.ll
 ; linux/optimized/addrconf.ll
 ; linux/optimized/af_inet.ll
@@ -28,7 +26,6 @@ entry:
 ; linux/optimized/cls_cgroup.ll
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/ematch.ll
-; linux/optimized/fec.ll
 ; linux/optimized/fib_semantics.ll
 ; linux/optimized/gen_stats.ll
 ; linux/optimized/genetlink.ll
@@ -41,9 +38,7 @@ entry:
 ; linux/optimized/ip_sockglue.ll
 ; linux/optimized/ipmr.ll
 ; linux/optimized/ipmr_base.ll
-; linux/optimized/lzo1x_compress.ll
 ; linux/optimized/mcast.ll
-; linux/optimized/mm.ll
 ; linux/optimized/namei.ll
 ; linux/optimized/ndisc.ll
 ; linux/optimized/neighbour.ll
@@ -57,7 +52,6 @@ entry:
 ; linux/optimized/nf_nat_proto.ll
 ; linux/optimized/nfnetlink_log.ll
 ; linux/optimized/nl80211.ll
-; linux/optimized/pause.ll
 ; linux/optimized/pmsr.ll
 ; linux/optimized/policy.ll
 ; linux/optimized/reassembly.ll

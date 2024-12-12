@@ -48,7 +48,7 @@ func000000000000000c:                   # @func000000000000000c
 	.quad	0x400921fb54442d18              # double 3.1415926535897931
 func0000000000000007:                   # @func0000000000000007
 	vmulsd	.LCPI6_0(%rip), %xmm1, %xmm1
-	vucomisd	%xmm0, %xmm1
+	vucomisd	%xmm1, %xmm0
 	setp	%cl
 	setne	%al
 	orb	%cl, %al
@@ -58,7 +58,7 @@ func0000000000000007:                   # @func0000000000000007
 	.quad	0x3fee54edc0000000              # double 0.94786727428436279
 func0000000000000008:                   # @func0000000000000008
 	vmulsd	.LCPI7_0(%rip), %xmm1, %xmm1
-	vucomisd	%xmm0, %xmm1
+	vucomisd	%xmm1, %xmm0
 	setnp	%cl
 	sete	%al
 	andb	%cl, %al

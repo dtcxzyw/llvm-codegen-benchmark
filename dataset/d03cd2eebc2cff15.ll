@@ -1,14 +1,13 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; linux/optimized/blk-iocost.ll
-; linux/optimized/intel_audio.ll
 ; openjdk/optimized/g1MonotonicArena.ll
 ; openjdk/optimized/g1MonotonicArenaFreePool.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000020(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw i64 %3, %1
+  %4 = mul nuw i64 %1, %3
   %5 = add i64 %0, 128
   %6 = add i64 %5, %4
   ret i64 %6
@@ -25,7 +24,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = add i64 %0, 8
   %6 = add i64 %5, %4
   ret i64 %6
@@ -39,7 +38,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = add nsw i64 %0, 56
   %6 = add i64 %5, %4
   ret i64 %6
@@ -52,7 +51,7 @@ entry:
 define i64 @func0000000000000075(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = add nsw i64 %0, -1
   %6 = add nsw i64 %5, %4
   ret i64 %6
@@ -65,7 +64,7 @@ entry:
 define i64 @func0000000000000035(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = add nsw i64 %0, -1
   %6 = add nsw i64 %5, %4
   ret i64 %6
@@ -77,7 +76,7 @@ entry:
 define i64 @func0000000000000026(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw i64 %3, %1
+  %4 = mul nuw i64 %1, %3
   %5 = add nsw i64 %0, -1
   %6 = add nuw i64 %5, %4
   ret i64 %6
@@ -90,7 +89,7 @@ entry:
 define i64 @func0000000000000010(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   %5 = add nsw i64 %1, -1
   %6 = add i64 %4, %5
   ret i64 %6
@@ -102,7 +101,7 @@ entry:
 define i64 @func0000000000000018(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw i64 %3, %0
+  %4 = mul nuw i64 %0, %3
   %5 = add nsw i64 %1, -1
   %6 = add i64 %4, %5
   ret i64 %6
@@ -114,7 +113,7 @@ entry:
 define i64 @func0000000000000024(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw i64 %3, %1
+  %4 = mul nuw i64 %1, %3
   %5 = add nsw i64 %0, -1
   %6 = add i64 %5, %4
   ret i64 %6
@@ -126,7 +125,7 @@ entry:
 define i64 @func0000000000000030(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = add i64 %0, 4
   %6 = add i64 %5, %4
   ret i64 %6
@@ -138,7 +137,7 @@ entry:
 define i64 @func000000000000000c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = add nuw nsw i64 %0, 32768
   %6 = add i64 %5, %4
   ret i64 %6
@@ -150,7 +149,7 @@ entry:
 define i64 @func0000000000000050(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = add i64 %0, 32
   %6 = add i64 %5, %4
   ret i64 %6
@@ -162,7 +161,7 @@ entry:
 define i64 @func000000000000003f(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = add nuw nsw i64 %0, 1
   %6 = add nuw nsw i64 %5, %4
   ret i64 %6
@@ -175,7 +174,7 @@ entry:
 define i64 @func0000000000000028(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw i64 %3, %1
+  %4 = mul nuw i64 %1, %3
   %5 = add nuw i64 %0, 2147483648
   %6 = add i64 %5, %4
   ret i64 %6

@@ -14,5 +14,5 @@ func0000000000000072:                   # @func0000000000000072
 	movzbl	%dl, %eax
 	shll	$8, %eax
 	orq	%rsi, %rax
-	leaq	1(%rax,%rdi), %rax
+	leaq	1(%rdi,%rax), %rax
 	retq

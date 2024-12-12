@@ -3,7 +3,12 @@ func0000000000000008:                   # @func0000000000000008
 	cmovnel	%esi, %edi
 	leal	-1(%rdi), %eax
 	retq
-func0000000000000023:                   # @func0000000000000023
+func0000000000000021:                   # @func0000000000000021
+	cmpq	$9, %rdx
+	cmovael	%esi, %edi
+	leal	-1(%rdi), %eax
+	retq
+func0000000000000022:                   # @func0000000000000022
 	cmpq	$58982, %rdx                    # imm = 0xE666
 	cmovael	%esi, %edi
 	leal	-1(%rdi), %eax

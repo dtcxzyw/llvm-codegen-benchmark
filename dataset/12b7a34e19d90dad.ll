@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; bullet3/optimized/b3VoronoiSimplexSolver.ll
 ; bullet3/optimized/btVoronoiSimplexSolver.ll
 ; meshlab/optimized/coordinateframe.cpp.ll
@@ -9,7 +9,6 @@
 ; meshlab/optimized/glarea.cpp.ll
 ; meshlab/optimized/io_e57.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/shadow_mapping.cpp.ll
 ; meshlab/optimized/trackball.cpp.ll
 ; meshlab/optimized/trackmode.cpp.ll

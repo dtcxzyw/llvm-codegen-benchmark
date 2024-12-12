@@ -1,6 +1,7 @@
 
-; 254 occurrences:
+; 255 occurrences:
 ; cmake/optimized/archive_string.c.ll
+; faiss/optimized/IndexIVFPQ.cpp.ll
 ; faiss/optimized/IndexPQ.cpp.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -263,7 +264,7 @@ entry:
   ret i1 %3
 }
 
-; 24 occurrences:
+; 22 occurrences:
 ; clamav/optimized/unzip.c.ll
 ; duckdb/optimized/comparison_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
@@ -275,7 +276,6 @@ entry:
 ; duckdb/optimized/ub_duckdb_operator_projection.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_schema.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
-; linux/optimized/namei.ll
 ; linux/optimized/xarray.ll
 ; llvm/optimized/Compiler.cpp.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
@@ -286,7 +286,6 @@ entry:
 ; velox/optimized/ArrayDuplicates.cpp.ll
 ; velox/optimized/ArrayIntersectExcept.cpp.ll
 ; velox/optimized/ArraySort.cpp.ll
-; velox/optimized/StringView.cpp.ll
 ; velox/optimized/SubscriptUtil.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0) #0 {
@@ -294,6 +293,21 @@ entry:
   %1 = freeze i64 %0
   %2 = trunc i64 %1 to i32
   %3 = icmp ult i32 %2, 12
+  ret i1 %3
+}
+
+; 5 occurrences:
+; linux/optimized/namei.ll
+; velox/optimized/ArrayDistinct.cpp.ll
+; velox/optimized/ArrayDuplicates.cpp.ll
+; velox/optimized/ArrayIntersectExcept.cpp.ll
+; velox/optimized/SubscriptUtil.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i64 %0) #0 {
+entry:
+  %1 = freeze i64 %0
+  %2 = trunc i64 %1 to i32
+  %3 = icmp samesign ult i32 %2, 5
   ret i1 %3
 }
 
@@ -359,10 +373,9 @@ entry:
   ret i1 %3
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; linux/optimized/namei.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
-; llvm/optimized/OSTargets.cpp.ll
 ; lz4/optimized/lz4.c.ll
 ; openusd/optimized/lz4.cpp.ll
 ; quickjs/optimized/quickjs.ll
@@ -372,6 +385,17 @@ entry:
   %1 = freeze i64 %0
   %2 = trunc i64 %1 to i32
   %3 = icmp ugt i32 %2, 4
+  ret i1 %3
+}
+
+; 1 occurrences:
+; llvm/optimized/OSTargets.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i64 %0) #0 {
+entry:
+  %1 = freeze i64 %0
+  %2 = trunc i64 %1 to i32
+  %3 = icmp samesign ugt i32 %2, 9
   ret i1 %3
 }
 

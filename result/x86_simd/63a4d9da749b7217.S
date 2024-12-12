@@ -1,4 +1,4 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpcmpeqq	%ymm1, %ymm0, %k1
 	vpmovqd	%ymm2, %xmm0 {%k1} {z}
 	vzeroupper

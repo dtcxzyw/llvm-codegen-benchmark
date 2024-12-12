@@ -1,4 +1,4 @@
-func000000000000001a:                   // @func000000000000001a
+func000000000000002a:                   // @func000000000000002a
 // %bb.0:                               // %entry
 	orr	x8, x2, x4
 	orr	x9, x3, x5
@@ -7,16 +7,7 @@ func000000000000001a:                   // @func000000000000001a
 	cset	w0, lt
 	ret
                                         // -- End function
-func0000000000000018:                   // @func0000000000000018
-// %bb.0:                               // %entry
-	orr	x8, x2, x4
-	orr	x9, x3, x5
-	cmp	x0, x8
-	sbcs	xzr, x1, x9
-	cset	w0, lo
-	ret
-                                        // -- End function
-func0000000000000014:                   // @func0000000000000014
+func0000000000000024:                   // @func0000000000000024
 // %bb.0:                               // %entry
 	orr	x8, x2, x4
 	orr	x9, x3, x5
@@ -25,7 +16,7 @@ func0000000000000014:                   // @func0000000000000014
 	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000019:                   // @func0000000000000019
+func0000000000000029:                   // @func0000000000000029
 // %bb.0:                               // %entry
 	orr	x8, x2, x4
 	orr	x9, x3, x5
@@ -34,7 +25,7 @@ func0000000000000019:                   // @func0000000000000019
 	cset	w0, hs
 	ret
                                         // -- End function
-func0000000000000011:                   // @func0000000000000011
+func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
 	orr	x8, x2, x4
 	orr	x9, x3, x5
@@ -43,7 +34,7 @@ func0000000000000011:                   // @func0000000000000011
 	cset	w0, eq
 	ret
                                         // -- End function
-func000000000000001b:                   // @func000000000000001b
+func000000000000002b:                   // @func000000000000002b
 // %bb.0:                               // %entry
 	orr	x8, x2, x4
 	orr	x9, x3, x5
@@ -52,7 +43,7 @@ func000000000000001b:                   // @func000000000000001b
 	cset	w0, ge
 	ret
                                         // -- End function
-func0000000000000017:                   // @func0000000000000017
+func0000000000000027:                   // @func0000000000000027
 // %bb.0:                               // %entry
 	orr	x8, x2, x4
 	orr	x9, x3, x5
@@ -61,7 +52,7 @@ func0000000000000017:                   // @func0000000000000017
 	cset	w0, ge
 	ret
                                         // -- End function
-func000000000000001c:                   // @func000000000000001c
+func000000000000002c:                   // @func000000000000002c
 // %bb.0:                               // %entry
 	orr	x8, x2, x4
 	orr	x9, x3, x5
@@ -70,7 +61,16 @@ func000000000000001c:                   // @func000000000000001c
 	cset	w0, ne
 	ret
                                         // -- End function
-func0000000000000016:                   // @func0000000000000016
+func0000000000000028:                   // @func0000000000000028
+// %bb.0:                               // %entry
+	orr	x8, x2, x4
+	orr	x9, x3, x5
+	cmp	x0, x8
+	sbcs	xzr, x1, x9
+	cset	w0, lo
+	ret
+                                        // -- End function
+func0000000000000026:                   // @func0000000000000026
 // %bb.0:                               // %entry
 	orr	x8, x2, x4
 	orr	x9, x3, x5

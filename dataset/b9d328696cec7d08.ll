@@ -1,5 +1,5 @@
 
-; 7 occurrences:
+; 9 occurrences:
 ; delta-rs/optimized/3qkwqfk85qralejq.ll
 ; linux/optimized/remap_range.ll
 ; llvm/optimized/Memory.cpp.ll
@@ -7,6 +7,8 @@
 ; openjdk/optimized/mutableNUMASpace.ll
 ; openjdk/optimized/shenandoahCollectionSet.ll
 ; wasmtime-rs/optimized/1f0cdl9sv7ergjr2.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/8bnapxt4ilkd5y3egr7fzm1sv.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:

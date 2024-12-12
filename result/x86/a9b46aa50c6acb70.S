@@ -26,3 +26,10 @@ func0000000000000008:                   # @func0000000000000008
 	movl	$3, %eax
 	cmovbl	%esi, %eax
 	retq
+func0000000000000014:                   # @func0000000000000014
+	testb	$1, %dil
+	cmovel	%edx, %esi
+	cmpl	$577, %esi                      # imm = 0x241
+	movl	$480, %eax                      # imm = 0x1E0
+	cmovael	%esi, %eax
+	retq

@@ -1,7 +1,10 @@
 
-; 116 occurrences:
+; 119 occurrences:
+; abc/optimized/rsbDec6.c.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; minetest/optimized/dungeongen.cpp.ll
+; opencv/optimized/box_filter.dispatch.cpp.ll
+; opencv/optimized/sumpixels.dispatch.cpp.ll
 ; openjdk/optimized/archiveHeapLoader.ll
 ; openjdk/optimized/archiveHeapWriter.ll
 ; openjdk/optimized/arrayKlass.ll

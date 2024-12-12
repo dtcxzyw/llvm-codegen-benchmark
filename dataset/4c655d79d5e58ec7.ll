@@ -1,5 +1,5 @@
 
-; 60 occurrences:
+; 63 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; c3c/optimized/sema_decls.c.ll
 ; clamav/optimized/matcher-ac.c.ll
@@ -60,6 +60,9 @@
 ; wireshark/optimized/packet-lapd.c.ll
 ; wireshark/optimized/packet-mgcp.c.ll
 ; wireshark/optimized/packet-v5dl.c.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000001(i16 %0) #0 {
 entry:
@@ -68,9 +71,8 @@ entry:
   ret i16 %2
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; folly/optimized/IPAddressV6.cpp.ll
-; minetest/optimized/content_nodemeta.cpp.ll
 ; oiio/optimized/Codec.cpp.ll
 ; openusd/optimized/reformat.c.ll
 ; qemu/optimized/hw_audio_ac97.c.ll

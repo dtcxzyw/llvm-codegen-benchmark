@@ -58,8 +58,9 @@ entry:
   ret double %2
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; gromacs/optimized/pp2shift.cpp.ll
+; libwebp/optimized/quant_levels_utils.c.ll
 ; opencv/optimized/freak.cpp.ll
 ; raylib/optimized/raudio.c.ll
 ; stb/optimized/stb_vorbis.c.ll

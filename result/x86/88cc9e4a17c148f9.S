@@ -1,9 +1,3 @@
-func0000000000000008:                   # @func0000000000000008
-	shll	$8, %edx
-	orl	%esi, %edx
-	movzwl	%dx, %eax
-	addq	%rdi, %rax
-	retq
 func0000000000000028:                   # @func0000000000000028
 	shll	$8, %edx
 	orl	%esi, %edx

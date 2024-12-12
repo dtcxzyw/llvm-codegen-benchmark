@@ -1,5 +1,5 @@
 
-; 62 occurrences:
+; 61 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; clamav/optimized/libfreshclam.c.ll
 ; clamav/optimized/phishcheck.c.ll
@@ -21,7 +21,6 @@
 ; linux/optimized/hda_auto_parser.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/intel_bw.ll
-; linux/optimized/intel_guc_slpc.ll
 ; linux/optimized/intel_pps.ll
 ; linux/optimized/intel_vdsc.ll
 ; linux/optimized/mac.ll
@@ -38,6 +37,7 @@
 ; llvm/optimized/ModuleSummaryAnalysis.cpp.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
+; lvgl/optimized/lv_buttonmatrix.ll
 ; openjdk/optimized/oopMap.ll
 ; openjdk/optimized/splashscreen_sys.ll
 ; openusd/optimized/topologyRefiner.cpp.ll
@@ -47,7 +47,6 @@
 ; qemu/optimized/hw_net_cadence_gem.c.ll
 ; qemu/optimized/hw_net_igb_core.c.ll
 ; qemu/optimized/hw_nvram_fw_cfg.c.ll
-; qemu/optimized/hw_sd_ssi-sd.c.ll
 ; qemu/optimized/ui_curses.c.ll
 ; recastnavigation/optimized/DetourDebugDraw.cpp.ll
 ; recastnavigation/optimized/RecastDebugDraw.cpp.ll
@@ -70,10 +69,11 @@ entry:
   ret i16 %2
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; folly/optimized/json.cpp.ll
 ; linux/optimized/hda_codec.ll
 ; llvm/optimized/AttributorAttributes.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
 ; stb/optimized/stb_image.c.ll

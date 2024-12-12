@@ -14,30 +14,6 @@ entry:
 }
 
 ; 1 occurrences:
-; abc/optimized/abcDec.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000023(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ult i32 %1, 7
-  %3 = select i1 %2, i32 0, i32 %0
-  %4 = zext i32 %3 to i64
-  %5 = add nuw nsw i64 %4, 3
-  ret i64 %5
-}
-
-; 1 occurrences:
-; abc/optimized/abcRpo.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000027(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ult i32 %1, 7
-  %3 = select i1 %2, i32 0, i32 %0
-  %4 = zext nneg i32 %3 to i64
-  %5 = add nuw nsw i64 %4, 3
-  ret i64 %5
-}
-
-; 1 occurrences:
 ; protobuf/optimized/zero_copy_stream.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000025(i32 %0, i32 %1) #0 {

@@ -1,9 +1,9 @@
-func0000000000000306:                   # @func0000000000000306
+func0000000000000606:                   # @func0000000000000606
 	leal	48(%rdi,%rdi,2), %eax
 	cmpl	$-1, %eax
 	setl	%al
 	retq
-func0000000000000201:                   # @func0000000000000201
+func0000000000000401:                   # @func0000000000000401
 	leal	(%rdi,%rdi,2), %eax
 	cmpl	$-3, %eax
 	sete	%al

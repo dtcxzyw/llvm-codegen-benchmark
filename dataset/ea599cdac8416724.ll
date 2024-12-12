@@ -1,10 +1,12 @@
 
-; 15 occurrences:
+; 18 occurrences:
 ; box2d/optimized/b2_world.cpp.ll
 ; git/optimized/apply.ll
 ; icu/optimized/ucnvisci.ll
 ; llvm/optimized/CallLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_indev.ll
+; lvgl/optimized/lv_indev_scroll.ll
 ; oiio/optimized/targainput.cpp.ll
 ; ruby/optimized/vm.ll
 ; sqlite/optimized/sqlite3.ll
@@ -15,6 +17,7 @@
 ; wireshark/optimized/packet-rftap.c.ll
 ; wireshark/optimized/packet-rtp.c.ll
 ; wireshark/optimized/packet-tds.c.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i1 %1, i16 %2) #0 {
 entry:

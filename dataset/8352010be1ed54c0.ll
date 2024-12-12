@@ -30,12 +30,12 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; z3/optimized/linear_equation.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000fa(ptr %0, i64 %1) #0 {
+define ptr @func00000000000000ff(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 4
-  %3 = getelementptr nusw i8, ptr %0, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
   %4 = shl nuw nsw i64 %1, 3
-  %5 = getelementptr nusw i8, ptr %3, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %3, i64 %4
   ret ptr %5
 }
 

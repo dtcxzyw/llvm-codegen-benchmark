@@ -33,7 +33,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/ColorFilterArray.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %0, %1
   %3 = trunc i64 %2 to i32
@@ -44,7 +44,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000281(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %0, %1
   %3 = trunc i64 %2 to i32
@@ -67,7 +67,7 @@ entry:
 ; openspiel/optimized/havannah.cc.ll
 ; openspiel/optimized/y.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000010a(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %0, %1
   %3 = and i64 %2, 2147483648
@@ -90,7 +90,7 @@ entry:
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000c1(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %0, %1
   %3 = trunc i64 %2 to i32
@@ -101,7 +101,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000141(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %0, %1
   %3 = trunc i64 %2 to i32
@@ -112,7 +112,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/lsd.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001ea(i64 %0, i64 %1) #0 {
+define i1 @func00000000000003ca(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %0, %1
   %3 = and i64 %2, 2147483648
@@ -123,7 +123,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/simpleflow.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001e1(i64 %0, i64 %1) #0 {
+define i1 @func00000000000003c1(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %0, %1
   %3 = trunc i64 %2 to i32
@@ -134,7 +134,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/depth_cleaner.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000341(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %0, %1
   %3 = trunc i64 %2 to i32
@@ -145,7 +145,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/slic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i64 %0, i64 %1) #0 {
+define i1 @func000000000000014a(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %0, %1
   %3 = and i64 %2, 2147483648

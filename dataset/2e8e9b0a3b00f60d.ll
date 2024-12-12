@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; git/optimized/packfile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000306(i64 %0) #0 {
+define i1 @func0000000000000606(i64 %0) #0 {
 entry:
   %1 = trunc nuw nsw i64 %0 to i32
   %2 = mul i32 %1, 3
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; draco/optimized/corner_table.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000201(i64 %0) #0 {
+define i1 @func0000000000000401(i64 %0) #0 {
 entry:
   %1 = trunc nuw i64 %0 to i32
   %2 = mul i32 %1, 3

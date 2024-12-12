@@ -3,7 +3,7 @@
 ; oiio/optimized/strutil.cpp.ll
 ; stb/optimized/stb_sprintf.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000064(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 134217727
   %4 = add nuw nsw i32 %3, 1

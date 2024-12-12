@@ -29,16 +29,18 @@
 define i8 @func0000000000000018(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = zext i1 %3 to i8
   ret i8 %4
 }
 
-; 18 occurrences:
+; 21 occurrences:
+; boost/optimized/any_params_iter.ll
 ; cvc5/optimized/quant_util.cpp.ll
 ; faiss/optimized/LocalSearchQuantizer.cpp.ll
 ; linux/optimized/utascii.ll
 ; llvm/optimized/ODRDiagsEmitter.cpp.ll
+; lvgl/optimized/lv_slider.ll
 ; nix/optimized/develop.ll
 ; openspiel/optimized/cursor_go.cc.ll
 ; openspiel/optimized/dark_chess.cc.ll
@@ -53,6 +55,7 @@ entry:
 ; rustfmt-rs/optimized/3xcdaapyewyrfogi.ll
 ; velox/optimized/ExprToSubfieldFilter.cpp.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
+; zed-rs/optimized/ak4ykc5o2q07hp1jptfv0x87c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i1 %0, i64 %1) #0 {
 entry:
@@ -75,12 +78,12 @@ entry:
 }
 
 ; 2 occurrences:
-; gromacs/optimized/vsite_parm.cpp.ll
 ; wasmtime-rs/optimized/47hgs4eifsow3k34.ll
+; zed-rs/optimized/ak4ykc5o2q07hp1jptfv0x87c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000008(i1 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ult i64 %1, 2
+  %2 = icmp ult i64 %1, 1099511627776
   %3 = and i1 %2, %0
   %4 = zext i1 %3 to i8
   ret i8 %4

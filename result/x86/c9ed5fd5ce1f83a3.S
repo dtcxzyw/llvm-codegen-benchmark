@@ -12,7 +12,7 @@ func000000000000000c:                   # @func000000000000000c
 	testq	%rax, %rax
 	setne	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	andl	$134217727, %edx                # imm = 0x7FFFFFF
 	testb	$1, %dil
 	cmoveq	%rsi, %rdx
@@ -24,4 +24,17 @@ func0000000000000008:                   # @func0000000000000008
 	cmovneq	%rdx, %rsi
 	shrq	$32, %rsi
 	setne	%al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	testb	$1, %dil
+	cmovneq	%rdx, %rsi
+	cmpq	$65536, %rsi                    # imm = 0x10000
+	setae	%al
+	retq
+func0000000000000004:                   # @func0000000000000004
+	testb	$1, %dil
+	cmovneq	%rdx, %rsi
+	movabsq	$-73014444032, %rax             # imm = 0xFFFFFFEF00000000
+	cmpq	%rax, %rsi
+	setb	%al
 	retq

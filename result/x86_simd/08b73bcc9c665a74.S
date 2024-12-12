@@ -15,7 +15,7 @@ func0000000000000007:                   # @func0000000000000007
 	vpmovzxwq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero
 	retq
 func0000000000000006:                   # @func0000000000000006
-	vpsrlw	$15, %xmm0, %xmm0
+	vpsrlw	$8, %xmm0, %xmm0
 	vpmovzxwq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero
-	vpsllq	$63, %ymm0, %ymm0
+	vpsllq	$56, %ymm0, %ymm0
 	retq

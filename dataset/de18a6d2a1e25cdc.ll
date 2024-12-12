@@ -1,5 +1,7 @@
 
-; 26 occurrences:
+; 28 occurrences:
+; boost/optimized/process.ll
+; boost/optimized/target.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -27,11 +29,11 @@
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000f4(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %1
   %3 = sub nuw nsw i64 9223372036854775807, %0
-  %4 = icmp ult i64 %3, %2
+  %4 = icmp samesign ult i64 %3, %2
   ret i1 %4
 }
 
@@ -66,7 +68,7 @@ entry:
 ; grpc/optimized/xds_client.cc.ll
 ; postgres/optimized/zic.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 0, %1
   %3 = sub nsw i64 -9223372036854775808, %0
@@ -105,7 +107,7 @@ entry:
 ; grpc/optimized/xds_client.cc.ll
 ; postgres/optimized/zic.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000066(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 0, %1
   %3 = sub nuw nsw i64 9223372036854775807, %0
@@ -127,18 +129,18 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/int8.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 0, %1
   %3 = sub i64 0, %0
-  %4 = icmp ugt i64 %3, %2
+  %4 = icmp samesign ugt i64 %3, %2
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000aa(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 1, %1
   %3 = sub nsw i64 -9223372036854775807, %0
@@ -150,7 +152,7 @@ entry:
 ; hyperscan/optimized/ng_redundancy.cpp.ll
 ; hyperscan/optimized/rose_build_role_aliasing.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %1
   %3 = sub nsw i64 576460752303423487, %0

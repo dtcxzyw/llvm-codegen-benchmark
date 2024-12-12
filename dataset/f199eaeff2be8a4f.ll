@@ -1,11 +1,11 @@
 
-%"class.pxrInternal_v0_24__pxrReserved__::SdfPath.3235950" = type { %"struct.pxrInternal_v0_24__pxrReserved__::Sdf_PathNodeHandleImpl.3235951", %"struct.pxrInternal_v0_24__pxrReserved__::Sdf_PathNodeHandleImpl.3.3235952" }
-%"struct.pxrInternal_v0_24__pxrReserved__::Sdf_PathNodeHandleImpl.3235951" = type { %"struct.pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPrimTag, 24, 8>::Handle.3235953" }
-%"struct.pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPrimTag, 24, 8>::Handle.3235953" = type { i32 }
-%"struct.pxrInternal_v0_24__pxrReserved__::Sdf_PathNodeHandleImpl.3.3235952" = type { %"struct.pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPropTag, 24, 8>::Handle.3235954" }
-%"struct.pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPropTag, 24, 8>::Handle.3235954" = type { i32 }
+%"class.pxrInternal_v0_24__pxrReserved__::SdfPath.3427461" = type { %"struct.pxrInternal_v0_24__pxrReserved__::Sdf_PathNodeHandleImpl.3427462", %"struct.pxrInternal_v0_24__pxrReserved__::Sdf_PathNodeHandleImpl.3.3427463" }
+%"struct.pxrInternal_v0_24__pxrReserved__::Sdf_PathNodeHandleImpl.3427462" = type { %"struct.pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPrimTag, 24, 8>::Handle.3427464" }
+%"struct.pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPrimTag, 24, 8>::Handle.3427464" = type { i32 }
+%"struct.pxrInternal_v0_24__pxrReserved__::Sdf_PathNodeHandleImpl.3.3427463" = type { %"struct.pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPropTag, 24, 8>::Handle.3427465" }
+%"struct.pxrInternal_v0_24__pxrReserved__::Sdf_Pool<pxrInternal_v0_24__pxrReserved__::Sdf_PathPropTag, 24, 8>::Handle.3427465" = type { i32 }
 
-; 33 occurrences:
+; 32 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/examples_test.cc.ll
 ; cvc5/optimized/ceg_bv_instantiator.cpp.ll
@@ -19,7 +19,6 @@
 ; cvc5/optimized/sygus_unif_rl.cpp.ll
 ; gromacs/optimized/genion.cpp.ll
 ; grpc/optimized/pick_first.cc.ll
-; lightgbm/optimized/bin.cpp.ll
 ; llvm/optimized/Randstruct.cpp.ll
 ; meshlab/optimized/filter_ao.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
@@ -48,15 +47,26 @@ entry:
   ret ptr %5
 }
 
+; 1 occurrences:
+; lightgbm/optimized/bin.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %2, 1
+  %4 = udiv i64 %1, %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
 ; 2 occurrences:
 ; openusd/optimized/testHdSortedIdsPerf.cpp.ll
 ; pcg-cpp/optimized/pcg-demo.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = udiv i64 %1, %3
-  %5 = getelementptr nusw %"class.pxrInternal_v0_24__pxrReserved__::SdfPath.3235950", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.pxrInternal_v0_24__pxrReserved__::SdfPath.3427461", ptr %0, i64 %4
   ret ptr %5
 }
 

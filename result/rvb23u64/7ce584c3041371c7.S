@@ -1,4 +1,8 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000f:                   # @func000000000000000f
 	add	a1, a1, a2
 	addi	a1, a1, 276
+	ret
+func000000000000000e:                   # @func000000000000000e
+	sh3add	a1, a1, a2
+	addi	a1, a1, 272
 	ret

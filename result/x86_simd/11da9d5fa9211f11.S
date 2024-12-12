@@ -3,8 +3,8 @@ func0000000000000005:                   # @func0000000000000005
 	vpaddd	%xmm3, %xmm2, %xmm2
 	vpsrad	$1, %xmm2, %xmm2
 	vpmovsxdq	%xmm2, %ymm2
-	vpmullq	%ymm1, %ymm2, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpmullq	%ymm2, %ymm1, %ymm1
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.long	1431655766                      # 0x55555556
@@ -18,16 +18,8 @@ func0000000000000000:                   # @func0000000000000000
 	vpsrld	$31, %xmm2, %xmm3
 	vpaddd	%xmm3, %xmm2, %xmm2
 	vpmovsxdq	%xmm2, %ymm2
-	vpmullq	%ymm1, %ymm2, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
-	retq
-func0000000000000001:                   # @func0000000000000001
-	vpsrld	$31, %xmm2, %xmm3
-	vpaddd	%xmm3, %xmm2, %xmm2
-	vpsrad	$1, %xmm2, %xmm2
-	vpmovsxdq	%xmm2, %ymm2
-	vpmullq	%ymm1, %ymm2, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpmullq	%ymm2, %ymm1, %ymm1
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000004:                   # @func0000000000000004
 	vpsrad	$31, %xmm2, %xmm3
@@ -35,6 +27,6 @@ func0000000000000004:                   # @func0000000000000004
 	vpaddd	%xmm3, %xmm2, %xmm2
 	vpsrad	$3, %xmm2, %xmm2
 	vpmovsxdq	%xmm2, %ymm2
-	vpmullq	%ymm1, %ymm2, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpmullq	%ymm2, %ymm1, %ymm1
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq

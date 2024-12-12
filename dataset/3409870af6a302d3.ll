@@ -8,7 +8,7 @@
 ; wireshark/optimized/packet-iwarp-ddp-rdmap.c.ll
 ; wireshark/optimized/packet-reload.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -123
   %3 = icmp ult i8 %2, -26
@@ -21,11 +21,11 @@ entry:
 ; clamav/optimized/7zDec.c.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; linux/optimized/dm.ll
-; llvm/optimized/SemaExprCXX.cpp.ll
+; llvm/optimized/SimplifyIndVar.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; proxygen/optimized/StructuredHeadersUtilities.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000084(i32 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -45
   %3 = icmp ult i8 %2, 2
@@ -35,9 +35,21 @@ entry:
 }
 
 ; 1 occurrences:
+; boost/optimized/thread.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000104(i32 %0, i8 %1) #0 {
+entry:
+  %2 = add i8 %1, -58
+  %3 = icmp ult i8 %2, -10
+  %4 = icmp ugt i32 %0, 429496729
+  %5 = select i1 %3, i1 true, i1 %4
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; eastl/optimized/EADateTime.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000144(i32 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -58
   %3 = icmp ult i8 %2, -10

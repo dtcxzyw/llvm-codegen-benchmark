@@ -13,7 +13,7 @@ func000000000000001f:                   # @func000000000000001f
 func000000000000000b:                   # @func000000000000000b
 	movzbl	%dl, %eax
 	orq	%rdi, %rax
-	shlq	$32, %rsi
+	shlq	$16, %rsi
 	orq	%rsi, %rax
 	retq
 func000000000000000d:                   # @func000000000000000d

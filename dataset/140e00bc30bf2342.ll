@@ -16,9 +16,8 @@ entry:
   ret i64 %3
 }
 
-; 26 occurrences:
+; 25 occurrences:
 ; abc/optimized/extraUtilPerm.c.ll
-; abc/optimized/fxuPair.c.ll
 ; assimp/optimized/HL1MDLLoader.cpp.ll
 ; bullet3/optimized/btDantzigLCP.ll
 ; bullet3/optimized/btSoftBody.ll
@@ -52,7 +51,7 @@ entry:
   ret i64 %3
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; bullet3/optimized/btMultiBody.ll
 ; faiss/optimized/VectorTransform.cpp.ll
 ; hwloc/optimized/diff.ll
@@ -60,7 +59,6 @@ entry:
 ; hwloc/optimized/hwloc-annotate.ll
 ; hwloc/optimized/topology-linux.ll
 ; hwloc/optimized/topology-xml.ll
-; linux/optimized/input-mt.ll
 ; meshlab/optimized/mutual.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i32 %0) #0 {

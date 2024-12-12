@@ -11,13 +11,11 @@ entry:
   ret i64 %4
 }
 
-; 9 occurrences:
+; 7 occurrences:
 ; abc/optimized/ifMan.c.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; icu/optimized/measunit.ll
 ; icu/optimized/number_usageprefs.ll
-; luajit/optimized/lj_asm.ll
-; luajit/optimized/lj_asm_dyn.ll
 ; openusd/optimized/decodemv.c.ll
 ; postgres/optimized/nodeModifyTable.ll
 ; postgres/optimized/relnode.ll

@@ -5,7 +5,7 @@
 define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %1, -1
-  %.neg = add i64 %3, %2
+  %.neg = add i64 %2, %3
   %4 = add i64 %.neg, %0
   ret i64 %4
 }
@@ -48,7 +48,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %1, -1
-  %.neg = add i64 %3, %2
+  %.neg = add i64 %2, %3
   %4 = add i64 %.neg, %0
   ret i64 %4
 }
@@ -106,14 +106,16 @@ entry:
 define i64 @func000000000000000e(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %1, -1
-  %.neg = add i64 %3, %2
+  %.neg = add i64 %2, %3
   %4 = add i64 %.neg, %0
   ret i64 %4
 }
 
-; 40 occurrences:
+; 42 occurrences:
 ; abseil-cpp/optimized/parse.cc.ll
 ; arrow/optimized/uri.cc.ll
+; boost/optimized/environment.ll
+; boost/optimized/shell.ll
 ; coreutils-rs/optimized/5dmrxisq30bb0giv.ll
 ; grpc/optimized/retry_service_config.cc.ll
 ; grpc/optimized/ssl_transport_security.cc.ll
@@ -156,12 +158,13 @@ entry:
 define i64 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %1, -1
-  %.neg = add i64 %3, %2
+  %.neg = add i64 %2, %3
   %4 = add i64 %.neg, %0
   ret i64 %4
 }
 
-; 9 occurrences:
+; 10 occurrences:
+; boost/optimized/url_view_base.ll
 ; grpc/optimized/uri_parser.cc.ll
 ; hyperscan/optimized/noodle_engine.c.ll
 ; mold/optimized/rust-demangle.c.ll
@@ -192,18 +195,7 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %1, -1
-  %.neg = add i64 %3, %2
-  %4 = add i64 %.neg, %0
-  ret i64 %4
-}
-
-; 1 occurrences:
-; proxygen/optimized/HTTPMessage.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000009(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = xor i64 %1, -1
-  %.neg = add i64 %3, %2
+  %.neg = add i64 %2, %3
   %4 = add i64 %.neg, %0
   ret i64 %4
 }
@@ -243,7 +235,7 @@ entry:
 define i64 @func0000000000000015(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub nsw i64 %0, %4
   ret i64 %5
 }

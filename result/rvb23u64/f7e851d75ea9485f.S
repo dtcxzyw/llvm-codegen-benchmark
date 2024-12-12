@@ -10,6 +10,10 @@ func00000000000000f0:                   # @func00000000000000f0
 	sh1add	a0, a0, a1
 	slliw	a0, a0, 3
 	ret
+func0000000000000030:                   # @func0000000000000030
+	sh1add	a0, a1, a0
+	slliw	a0, a0, 3
+	ret
 func0000000000000014:                   # @func0000000000000014
 	add	a0, a0, a1
 	slliw	a0, a0, 1

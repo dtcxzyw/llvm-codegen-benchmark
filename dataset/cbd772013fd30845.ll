@@ -31,7 +31,7 @@ entry:
 ; qemu/optimized/ui_vnc-enc-zrle.c.ll
 ; wireshark/optimized/packet-tcp.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 1
   %3 = icmp eq i32 %0, 0
@@ -42,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; verilator/optimized/V3Param.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 24
   %3 = icmp ult i32 %0, -26

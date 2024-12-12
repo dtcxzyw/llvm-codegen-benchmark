@@ -1,17 +1,14 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	movi	v2.4s, #1
-	eor	v1.16b, v1.16b, v2.16b
-	add	v0.4s, v1.4s, v0.4s
-	sshll2	v1.2d, v0.4s, #1
-	sshll	v0.2d, v0.2s, #1
+	eor	w8, w1, #0x1
+	add	w8, w8, w0
+	sbfiz	x0, x8, #1, #32
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	mvn	v1.16b, v1.16b
-	add	v0.4s, v1.4s, v0.4s
-	sshll2	v1.2d, v0.4s, #3
-	sshll	v0.2d, v0.2s, #3
+	mvn	w8, w1
+	add	w8, w0, w8
+	sbfiz	x0, x8, #3, #32
 	ret
                                         // -- End function

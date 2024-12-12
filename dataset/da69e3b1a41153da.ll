@@ -6,7 +6,7 @@
 ; spike/optimized/f64_to_i32.ll
 ; spike/optimized/f64_to_ui32.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 281474976710655
   %4 = icmp eq i64 %1, 0
@@ -15,28 +15,27 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
-; linux/optimized/efi_64.ll
+; 1 occurrences:
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 134217727
   %4 = icmp eq i64 %1, 0
   %5 = select i1 %4, i64 %3, i64 %0
-  %6 = icmp ult i64 %5, 942081
+  %6 = icmp samesign ult i64 %5, 942081
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; wireshark/optimized/packet-lldp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 17179869183
   %4 = icmp eq i64 %1, 0
   %5 = select i1 %4, i64 %3, i64 %0
-  %6 = icmp ugt i64 %5, 3019898880
+  %6 = icmp samesign ugt i64 %5, 3019898880
   ret i1 %6
 }
 
@@ -82,13 +81,24 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1
   %4 = icmp eq i64 %1, 0
   %5 = select i1 %4, i64 %3, i64 %0
   %6 = icmp eq i64 %5, 0
   ret i1 %6
+}
+
+; 1 occurrences:
+; linux/optimized/efi_64.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp eq i64 %1, 0
+  %4 = select i1 %3, i64 %2, i64 %0
+  %5 = icmp ult i64 %4, -73014444032
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

@@ -5,5 +5,5 @@ func0000000000000000:                   # @func0000000000000000
 	addi	a0, a0, -265
 	vrsub.vx	v12, v12, a0
 	vxor.vv	v10, v12, v10
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret

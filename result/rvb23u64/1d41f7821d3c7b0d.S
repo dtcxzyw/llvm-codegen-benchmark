@@ -1,10 +1,20 @@
-func000000000000006a:                   # @func000000000000006a
-	slli.uw	a1, a1, 4
-	sh1add	a1, a1, a1
+func000000000000017b:                   # @func000000000000017b
+	sext.w	a1, a1
+	slli	a1, a1, 4
 	add	a0, a0, a1
-	addi	a0, a0, -880
+	lui	a1, 4
+	addiw	a1, a1, -1482
+	add	a0, a0, a1
 	ret
-func000000000000016a:                   # @func000000000000016a
+func000000000000007f:                   # @func000000000000007f
+	slli.uw	a1, a1, 5
+	add	a0, a0, a1
+	ret
+func000000000000007b:                   # @func000000000000007b
+	slli.uw	a1, a1, 5
+	add	a0, a0, a1
+	ret
+func000000000000017f:                   # @func000000000000017f
 	sext.w	a1, a1
 	sh1add	a1, a1, a1
 	sh3add	a0, a1, a0

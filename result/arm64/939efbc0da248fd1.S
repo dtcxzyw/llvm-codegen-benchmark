@@ -1,18 +1,14 @@
 func0000000000000009:                   // @func0000000000000009
 // %bb.0:                               // %entry
-	sub	v2.4s, v1.4s, v2.4s
-	ushll	v3.2d, v0.2s, #0
-	ushll2	v0.2d, v0.4s, #0
-	saddw2	v1.2d, v0.2d, v2.4s
-	saddw	v0.2d, v3.2d, v2.2s
+	sub	w8, w1, w2
+	mov	w9, w0
+	add	x0, x9, w8, sxtw
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	sub	v1.4s, v1.4s, v2.4s
-	sshll	v2.2d, v1.2s, #0
-	sshll2	v1.2d, v1.4s, #0
-	uaddw2	v1.2d, v1.2d, v0.4s
-	uaddw	v0.2d, v2.2d, v0.2s
+	sub	w8, w1, w2
+	sxtw	x8, w8
+	add	x0, x8, w0, uxtw
 	ret
                                         // -- End function

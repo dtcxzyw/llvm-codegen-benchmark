@@ -1,6 +1,13 @@
 
-; 192 occurrences:
-; brotli/optimized/bit_reader.c.ll
+; 205 occurrences:
+; boost/optimized/benchmark_fstream.ll
+; boost/optimized/message.ll
+; boost/optimized/test_filebuf.ll
+; boost/optimized/test_fstream.ll
+; boost/optimized/test_fstream_special.ll
+; boost/optimized/test_ifstream.ll
+; boost/optimized/test_ofstream.ll
+; boost/optimized/test_stackstring.ll
 ; brotli/optimized/decode.c.ll
 ; cmake/optimized/zstd_compress_superblock.c.ll
 ; coreutils-rs/optimized/czge978gjagq0cc.ll
@@ -191,6 +198,12 @@
 ; tokenizers-rs/optimized/4vpw5vpiz5qnu5om.ll
 ; xgboost/optimized/data.cc.ll
 ; xgboost/optimized/input_split_base.cc.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/4t9tdr5qgocuoz7ebpyy9bvqv.ll
+; zed-rs/optimized/8c9m4dxfbx8n642b944htcs78.ll
+; zed-rs/optimized/8et4dphxwbm7ry4e21dik6h9d.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
 ; zstd/optimized/zstd_compress_superblock.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, ptr %1) #0 {
@@ -202,8 +215,17 @@ entry:
   ret i1 %5
 }
 
-; 14 occurrences:
+; 23 occurrences:
 ; abseil-cpp/optimized/demangle.cc.ll
+; boost/optimized/benchmark_fstream.ll
+; boost/optimized/cstdio.ll
+; boost/optimized/test_filebuf.ll
+; boost/optimized/test_fstream.ll
+; boost/optimized/test_fstream_special.ll
+; boost/optimized/test_ifstream.ll
+; boost/optimized/test_ofstream.ll
+; boost/optimized/test_stackstring.ll
+; boost/optimized/to_chars.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; eastl/optimized/TestString.cpp.ll
 ; folly/optimized/Conv.cpp.ll
@@ -221,9 +243,9 @@ entry:
 define i1 @func0000000000000001(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = add i64 %0, -1
-  %4 = icmp eq i64 %3, %2
-  ret i1 %4
+  %.neg = add i64 %2, 1
+  %3 = icmp eq i64 %0, %.neg
+  ret i1 %3
 }
 
 ; 7 occurrences:
@@ -244,7 +266,10 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
+; 11 occurrences:
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; lief/optimized/ResourceIcon.cpp.ll
 ; linux/optimized/opt.ll
 ; php/optimized/pcre2_jit_compile.ll
@@ -263,8 +288,7 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
-; cmake/optimized/cmCTestBuildHandler.cxx.ll
+; 7 occurrences:
 ; entt/optimized/storage.cpp.ll
 ; hdf5/optimized/H5HGcache.c.ll
 ; lief/optimized/ssl_tls.c.ll
@@ -273,7 +297,7 @@ entry:
 ; ruby/optimized/date_parse.ll
 ; velox/optimized/ArraySort.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000024(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %0, %2
@@ -282,7 +306,7 @@ entry:
   ret i1 %5
 }
 
-; 87 occurrences:
+; 86 occurrences:
 ; darktable/optimized/TiffEntry.cpp.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
@@ -359,7 +383,6 @@ entry:
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -371,7 +394,7 @@ entry:
 ; spike/optimized/socketif.ll
 ; spike/optimized/spike-log-parser.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000046(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %0, %2
@@ -380,7 +403,15 @@ entry:
   ret i1 %5
 }
 
-; 12 occurrences:
+; 20 occurrences:
+; boost/optimized/benchmark_fstream.ll
+; boost/optimized/path_traits.ll
+; boost/optimized/test_filebuf.ll
+; boost/optimized/test_fstream.ll
+; boost/optimized/test_fstream_special.ll
+; boost/optimized/test_ifstream.ll
+; boost/optimized/test_ofstream.ll
+; boost/optimized/test_stackstring.ll
 ; linux/optimized/lzo1x_compress.ll
 ; lz4/optimized/lz4.c.ll
 ; lz4/optimized/lz4hc.c.ll
@@ -402,7 +433,8 @@ entry:
   ret i1 %4
 }
 
-; 13 occurrences:
+; 14 occurrences:
+; boost/optimized/static_string.ll
 ; draco/optimized/metadata.cc.ll
 ; faiss/optimized/IndexFlatCodes.cpp.ll
 ; freetype/optimized/psaux.c.ll
@@ -417,7 +449,7 @@ entry:
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000021(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %0, %2
@@ -445,7 +477,7 @@ entry:
 ; xgboost/optimized/input_split_base.cc.ll
 ; xgboost/optimized/io.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000028(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %0, %2
@@ -457,7 +489,7 @@ entry:
 ; 1 occurrences:
 ; oiio/optimized/strutil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000041(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %0, %2
@@ -470,7 +502,7 @@ entry:
 ; xgboost/optimized/input_split_base.cc.ll
 ; xgboost/optimized/io.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, ptr %1) #0 {
+define i1 @func000000000000002c(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %0, %2

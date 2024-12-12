@@ -1,8 +1,8 @@
 
-%"class.std::vector.111.3173499" = type { %"struct.std::_Vector_base.112.3173500" }
-%"struct.std::_Vector_base.112.3173500" = type { %"struct.std::_Vector_base<std::vector<HydrogenGridCell>, std::allocator<std::vector<HydrogenGridCell>>>::_Vector_impl.3173501" }
-%"struct.std::_Vector_base<std::vector<HydrogenGridCell>, std::allocator<std::vector<HydrogenGridCell>>>::_Vector_impl.3173501" = type { %"struct.std::_Vector_base<std::vector<HydrogenGridCell>, std::allocator<std::vector<HydrogenGridCell>>>::_Vector_impl_data.3173502" }
-%"struct.std::_Vector_base<std::vector<HydrogenGridCell>, std::allocator<std::vector<HydrogenGridCell>>>::_Vector_impl_data.3173502" = type { ptr, ptr, ptr }
+%"class.std::vector.111.3365931" = type { %"struct.std::_Vector_base.112.3365932" }
+%"struct.std::_Vector_base.112.3365932" = type { %"struct.std::_Vector_base<std::vector<HydrogenGridCell>, std::allocator<std::vector<HydrogenGridCell>>>::_Vector_impl.3365933" }
+%"struct.std::_Vector_base<std::vector<HydrogenGridCell>, std::allocator<std::vector<HydrogenGridCell>>>::_Vector_impl.3365933" = type { %"struct.std::_Vector_base<std::vector<HydrogenGridCell>, std::allocator<std::vector<HydrogenGridCell>>>::_Vector_impl_data.3365934" }
+%"struct.std::_Vector_base<std::vector<HydrogenGridCell>, std::allocator<std::vector<HydrogenGridCell>>>::_Vector_impl_data.3365934" = type { ptr, ptr, ptr }
 
 ; 1 occurrences:
 ; darktable/optimized/ColorFilterArray.cpp.ll
@@ -31,7 +31,7 @@ entry:
   %3 = add nsw i32 %2, %1
   %4 = srem i32 %3, %1
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw %"class.std::vector.111.3173499", ptr %0, i64 %5
+  %6 = getelementptr nusw %"class.std::vector.111.3365931", ptr %0, i64 %5
   ret ptr %6
 }
 

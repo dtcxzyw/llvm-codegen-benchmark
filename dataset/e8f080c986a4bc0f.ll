@@ -36,7 +36,7 @@
 define i1 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   %4 = and i32 %3, 31
   %5 = icmp eq i32 %4, 0
   ret i1 %5
@@ -70,10 +70,10 @@ entry:
 ; luau/optimized/isocline.c.ll
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   %4 = and i32 %3, 2146435072
   %5 = icmp eq i32 %4, 0
   ret i1 %5
@@ -131,12 +131,12 @@ entry:
 ; llvm/optimized/Triple.cpp.ll
 ; qemu/optimized/optimize.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000054(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = and i32 %2, 7
   %4 = and i32 %0, 7
-  %5 = icmp ult i32 %4, %3
+  %5 = icmp samesign ult i32 %4, %3
   ret i1 %5
 }
 
@@ -152,10 +152,10 @@ entry:
 ; abc/optimized/giaOf.c.ll
 ; abc/optimized/giaPf.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i32 %0, i64 %1) #0 {
+define i1 @func000000000000006c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   %4 = and i32 %3, 1
   %5 = icmp ne i32 %4, 0
   ret i1 %5
@@ -190,12 +190,12 @@ entry:
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; llvm/optimized/Triple.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000029(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000059(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = and i32 %2, 536870911
   %4 = and i32 %0, 536870911
-  %5 = icmp uge i32 %4, %3
+  %5 = icmp samesign uge i32 %4, %3
   ret i1 %5
 }
 
@@ -215,10 +215,10 @@ entry:
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/wlnRead.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, i64 %1) #0 {
+define i1 @func000000000000004c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   %4 = and i32 %3, 536870911
   %5 = icmp ne i32 %4, 0
   ret i1 %5
@@ -232,7 +232,7 @@ entry:
 define i1 @func000000000000000c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   %4 = and i32 %3, 1
   %5 = icmp ne i32 %4, 0
   ret i1 %5
@@ -276,12 +276,12 @@ entry:
 ; z3/optimized/spacer_context.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000014(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, 1
   %4 = and i32 %0, 1
-  %5 = icmp ult i32 %4, %3
+  %5 = icmp samesign ult i32 %4, %3
   ret i1 %5
 }
 
@@ -299,12 +299,12 @@ entry:
 ; spike/optimized/umax8.ll
 ; z3/optimized/smt_internalizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000018(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, 1
   %4 = and i32 %0, 1
-  %5 = icmp ugt i32 %4, %3
+  %5 = icmp samesign ugt i32 %4, %3
   ret i1 %5
 }
 
@@ -321,12 +321,12 @@ entry:
 ; spike/optimized/pbsada.ll
 ; z3/optimized/spacer_context.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000058(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = and i32 %2, 16777215
   %4 = and i32 %0, 16777215
-  %5 = icmp ugt i32 %4, %3
+  %5 = icmp samesign ugt i32 %4, %3
   ret i1 %5
 }
 
@@ -346,10 +346,10 @@ entry:
 ; llvm/optimized/SemaAccess.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   %4 = and i32 %3, 1
   %5 = icmp eq i32 %4, 0
   ret i1 %5
@@ -372,36 +372,36 @@ entry:
 ; llvm/optimized/SemaHLSL.cpp.ll
 ; llvm/optimized/Triple.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000009(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000019(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, 2147483647
   %4 = and i32 %0, 2147483647
-  %5 = icmp uge i32 %4, %3
+  %5 = icmp samesign uge i32 %4, %3
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; llvm/optimized/SemaCast.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000078(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = and i32 %2, 65535
   %4 = and i32 %0, 65535
-  %5 = icmp ugt i32 %4, %3
+  %5 = icmp samesign ugt i32 %4, %3
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; llvm/optimized/SemaCast.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000039(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000079(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = and i32 %2, 65535
   %4 = and i32 %0, 65535
-  %5 = icmp uge i32 %4, %3
+  %5 = icmp samesign uge i32 %4, %3
   ret i1 %5
 }
 

@@ -1,5 +1,7 @@
 
-; 18 occurrences:
+; 20 occurrences:
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; llvm/optimized/HLSL.cpp.ll
 ; llvm/optimized/X86MCTargetDesc.cpp.ll
 ; llvm/optimized/X86Subtarget.cpp.ll

@@ -17,7 +17,7 @@
 	.short	256                             # 0x100
 .LCPI0_1:
 	.zero	16,3
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	vptestmw	.LCPI0_0(%rip), %ymm2, %k1 {%k1}
@@ -44,7 +44,7 @@ func00000000000000c1:                   # @func00000000000000c1
 	.short	8                               # 0x8
 	.short	8                               # 0x8
 	.short	8                               # 0x8
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpsllw	$7, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqb	.LCPI1_0(%rip), %xmm0, %k1

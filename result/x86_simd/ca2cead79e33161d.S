@@ -8,6 +8,6 @@ func0000000000000000:                   # @func0000000000000000
 	korw	%k0, %k1, %k2
 	vbroadcastss	.LCPI0_0(%rip), %zmm1 {%k2} {z} # zmm1 {%k2} {z} = [1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0]
 	knotw	%k0, %k0
-	korw	%k1, %k0, %k1
+	korw	%k0, %k1, %k1
 	vmovaps	%zmm1, %zmm0 {%k1}
 	retq

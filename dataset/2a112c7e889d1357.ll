@@ -1,5 +1,6 @@
 
-; 24 occurrences:
+; 26 occurrences:
+; boost/optimized/static_string.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; influxdb-rs/optimized/4xdswox27ronf9w0.ll
 ; just-rs/optimized/15cobjmzhaiu6jpj.ll
@@ -24,13 +25,14 @@
 ; wasmtime-rs/optimized/3flv1664rwe55t82.ll
 ; wasmtime-rs/optimized/48myxw210mngc99c.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1, i16 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = sub nuw nsw i64 %3, %1
-  %5 = getelementptr nusw i8, ptr %0, i64 8
-  %6 = getelementptr nusw { [3 x i64] }, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 8
+  %6 = getelementptr nusw nuw { [3 x i64] }, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -38,11 +40,11 @@ entry:
 ; linux/optimized/sock_reuseport.ll
 ; qemu/optimized/hw_net_tulip.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i64 %1, i16 %2) #0 {
+define ptr @func000000000000001c(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = sub nsw i64 %3, %1
-  %5 = getelementptr nusw i8, ptr %0, i64 11488
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 11488
   %6 = getelementptr i8, ptr %5, i64 %4
   ret ptr %6
 }

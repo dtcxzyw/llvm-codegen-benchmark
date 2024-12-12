@@ -6,7 +6,7 @@ func0000000000000002:                   # @func0000000000000002
 	vpmovqd	%ymm2, %xmm1
 	vpslld	$5, %xmm1, %xmm1
 	vpord	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1 {%k1}
-	vpor	%xmm0, %xmm1, %xmm0
+	vpor	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI1_0:
@@ -17,7 +17,7 @@ func0000000000000003:                   # @func0000000000000003
 	vpmovqd	%ymm2, %xmm1
 	vpslld	$4, %xmm1, %xmm1
 	vpord	.LCPI1_0(%rip){1to4}, %xmm1, %xmm1 {%k1}
-	vpor	%xmm0, %xmm1, %xmm0
+	vpor	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI2_0:

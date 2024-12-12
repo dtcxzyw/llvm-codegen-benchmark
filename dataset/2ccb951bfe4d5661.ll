@@ -23,19 +23,6 @@ entry:
   ret i16 %7
 }
 
-; 1 occurrences:
-; qemu/optimized/hw_sd_ssi-sd.c.ll
-; Function Attrs: nounwind
-define i16 @func0000000000000004(i16 %0, i16 %1, i16 %2) #0 {
-entry:
-  %3 = and i16 %2, 96
-  %4 = and i16 %1, 28
-  %5 = or disjoint i16 %4, %3
-  %6 = or i16 %5, %0
-  %7 = or i16 %6, 128
-  ret i16 %7
-}
-
 ; 2 occurrences:
 ; linux/optimized/ds.ll
 ; php/optimized/phar_object.ll

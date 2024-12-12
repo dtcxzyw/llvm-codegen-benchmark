@@ -5,7 +5,7 @@
 ; php/optimized/parse_date.ll
 ; php/optimized/parse_iso_intervals.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func000000000000008c(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 8192
   %4 = icmp ne i16 %3, 0
@@ -19,7 +19,7 @@ entry:
 ; lua/optimized/ldo.ll
 ; php/optimized/softmagic.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func0000000000000081(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 8192
   %4 = icmp eq i16 %3, 0
@@ -32,7 +32,7 @@ entry:
 ; git/optimized/apply.ll
 ; postgres/optimized/inet_net_pton.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func000000000000010c(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 2
   %4 = icmp ne i16 %3, 0
@@ -44,7 +44,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/phishcheck.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func00000000000000a1(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 8
   %4 = icmp eq i16 %3, 0
@@ -57,7 +57,7 @@ entry:
 ; cvc5/optimized/inst_match_generator.cpp.ll
 ; llvm/optimized/InstCombineSelect.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 63
   %4 = icmp eq i16 %3, 32
@@ -70,7 +70,7 @@ entry:
 ; llvm/optimized/MachineScheduler.cpp.ll
 ; z3/optimized/mbp_term_graph.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func0000000000000181(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 1024
   %4 = icmp eq i16 %3, 0
@@ -82,7 +82,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaCodeComplete.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func000000000000002c(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 12
   %4 = icmp ne i16 %3, 0
@@ -94,7 +94,7 @@ entry:
 ; 1 occurrences:
 ; cvc5/optimized/theory_bool_rewriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func000000000000018c(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 1023
   %4 = icmp ne i16 %3, 19

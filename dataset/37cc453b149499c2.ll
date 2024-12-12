@@ -1,9 +1,10 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; llvm/optimized/RISCVInsertWriteVXRM.cpp.ll
 ; minetest/optimized/localplayer.cpp.ll
 ; wireshark/optimized/packet-snmp.c.ll
 ; yosys/optimized/sim.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, i8 %2) #0 {
 entry:

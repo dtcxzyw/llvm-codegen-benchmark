@@ -80,7 +80,7 @@ entry:
   %2 = sub nsw i32 0, %1
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 
@@ -93,7 +93,7 @@ entry:
   %2 = sub nsw i32 64, %1
   %3 = zext nneg i32 %2 to i64
   %4 = shl nsw i64 -1, %3
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 
@@ -124,7 +124,8 @@ entry:
   ret i64 %5
 }
 
-; 98 occurrences:
+; 99 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -241,6 +242,18 @@ entry:
   %2 = sub i32 64, %1
   %3 = zext nneg i32 %2 to i64
   %4 = shl nsw i64 -1, %3
+  %5 = and i64 %0, %4
+  ret i64 %5
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000006(i64 %0, i32 %1) #0 {
+entry:
+  %2 = sub i32 52, %1
+  %3 = zext nneg i32 %2 to i64
+  %4 = shl nuw i64 1, %3
   %5 = and i64 %4, %0
   ret i64 %5
 }
@@ -253,7 +266,7 @@ entry:
   %2 = sub i32 8, %1
   %3 = zext nneg i32 %2 to i64
   %4 = shl i64 72624976668147840, %3
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 
@@ -279,7 +292,7 @@ entry:
   %2 = sub nuw nsw i32 -1075, %1
   %3 = zext nneg i32 %2 to i64
   %4 = shl i64 -2, %3
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 

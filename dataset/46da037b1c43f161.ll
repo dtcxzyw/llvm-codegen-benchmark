@@ -1,8 +1,9 @@
 
-; 65 occurrences:
+; 66 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; arrow/optimized/tdigest.cc.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; folly/optimized/TDigest.cpp.ll
 ; g2o/optimized/tictoc.cpp.ll
@@ -76,8 +77,10 @@ entry:
   ret i64 %7
 }
 
-; 11 occurrences:
+; 13 occurrences:
 ; arrow/optimized/tdigest.cc.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/sort_by_side.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; g2o/optimized/hyper_dijkstra.cpp.ll
 ; lightgbm/optimized/metric.cpp.ll

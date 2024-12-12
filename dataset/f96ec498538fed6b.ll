@@ -1,5 +1,5 @@
 
-; 80 occurrences:
+; 92 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree_navigator_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_reader_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
@@ -9,6 +9,18 @@
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; abseil-cpp/optimized/spinlock_test_common.cc.ll
 ; arrow/optimized/io_util.cc.ll
+; boost/optimized/barrier.ll
+; boost/optimized/condition_variable.ll
+; boost/optimized/context.ll
+; boost/optimized/file_test_helpers.ll
+; boost/optimized/mutex.ll
+; boost/optimized/partition.ll
+; boost/optimized/recursive_mutex.ll
+; boost/optimized/recursive_timed_mutex.ll
+; boost/optimized/scheduler.ll
+; boost/optimized/test_filebuf.ll
+; boost/optimized/timed_mutex.ll
+; boost/optimized/work_stealing.ll
 ; cpython/optimized/pystrhex.ll
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; darktable/optimized/DngDecoder.cpp.ll
@@ -88,8 +100,7 @@ entry:
   ret i64 %3
 }
 
-; 2 occurrences:
-; linux/optimized/jiffies.ll
+; 1 occurrences:
 ; ruby/optimized/gc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
@@ -99,7 +110,7 @@ entry:
   ret i64 %3
 }
 
-; 67 occurrences:
+; 71 occurrences:
 ; clamav/optimized/fmap.c.ll
 ; clamav/optimized/mpool.c.ll
 ; coreutils-rs/optimized/2g9ijtjos2xwh9zs.ll
@@ -115,7 +126,6 @@ entry:
 ; hdf5/optimized/H5Dchunk.c.ll
 ; hdf5/optimized/H5FDcore.c.ll
 ; hdf5/optimized/H5PB.c.ll
-; libquic/optimized/hkdf.c.ll
 ; libquic/optimized/spdy_framer.cc.ll
 ; linux/optimized/buffer.ll
 ; linux/optimized/vmstat.ll
@@ -166,6 +176,11 @@ entry:
 ; tokenizers-rs/optimized/pctti7iv1zxrcsb.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; xgboost/optimized/regression_obj.cc.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/92iizbpp16n9wzmmxw0rpztpt.ll
+; zed-rs/optimized/ahuveaqkmks5i6nnvip2o62e5.ll
+; zed-rs/optimized/dthtcetij943j6s50gke0fkdr.ll
 ; zfp/optimized/zfp.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {

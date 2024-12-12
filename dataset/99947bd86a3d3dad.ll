@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; abc/optimized/sclUpsize.c.ll
 ; box2d/optimized/b2_contact_solver.cpp.ll
 ; box2d/optimized/b2_prismatic_joint.cpp.ll
@@ -10,7 +10,6 @@
 ; mitsuba3/optimized/medium.cpp.ll
 ; ocio/optimized/FixedFunctionOpCPU.cpp.ll
 ; opencv/optimized/rlof_localflow.cpp.ll
-; opencv/optimized/tracker.cpp.ll
 ; opencv/optimized/tracker_nano.cpp.ll
 ; pbrt-v4/optimized/mipmap.cpp.ll
 ; Function Attrs: nounwind
@@ -22,11 +21,13 @@ entry:
   ret float %4
 }
 
-; 4 occurrences:
+; 6 occurrences:
 ; bullet3/optimized/b3CpuRigidBodyPipeline.ll
 ; bullet3/optimized/b3GpuJacobiContactSolver.ll
 ; bullet3/optimized/b3Solver.ll
 ; darktable/optimized/introspection_retouch.c.ll
+; opencv/optimized/short_term_imageless_tracker.cpp.ll
+; opencv/optimized/zero_term_imageless_tracker.cpp.ll
 ; Function Attrs: nounwind
 define float @func0000000000000002(float %0, float %1) #0 {
 entry:

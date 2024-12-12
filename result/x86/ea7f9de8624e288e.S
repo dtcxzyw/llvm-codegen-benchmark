@@ -1,7 +1,7 @@
 func0000000000000024:                   # @func0000000000000024
 	vxorps	%xmm3, %xmm3, %xmm3
 	vmaxss	%xmm2, %xmm3, %xmm2
-	vmulss	%xmm1, %xmm2, %xmm1
+	vmulss	%xmm2, %xmm1, %xmm1
 	vucomiss	%xmm0, %xmm1
 	seta	%al
 	retq

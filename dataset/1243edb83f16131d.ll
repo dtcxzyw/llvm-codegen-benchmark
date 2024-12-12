@@ -1,5 +1,5 @@
 
-; 47 occurrences:
+; 48 occurrences:
 ; abc/optimized/abcCollapse.c.ll
 ; abc/optimized/bacPrsBuild.c.ll
 ; abc/optimized/bacWriteBlif.c.ll
@@ -20,6 +20,7 @@
 ; linux/optimized/intel_dp.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/vsprintf.ll
+; lvgl/optimized/lv_draw_sw.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; openblas/optimized/dsbgst.c.ll
@@ -52,7 +53,7 @@ define i64 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = xor i32 %2, -1
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }
@@ -70,16 +71,15 @@ define i64 @func000000000000000d(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = xor i32 %2, -1
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }
 
-; 57 occurrences:
+; 56 occurrences:
 ; abc/optimized/abcDress3.c.ll
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/abcNtbdd.c.ll
-; abc/optimized/abcOrder.c.ll
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/acbMfs.c.ll
@@ -138,7 +138,7 @@ define i64 @func000000000000000c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = xor i32 %2, -1
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }
@@ -153,7 +153,7 @@ define i64 @func0000000000000005(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = xor i32 %2, -1
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }
@@ -167,7 +167,7 @@ define i64 @func0000000000000004(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = xor i32 %2, -1
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }
@@ -179,7 +179,7 @@ define i64 @func0000000000000008(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = xor i32 %2, -1
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }

@@ -1,5 +1,5 @@
 
-; 81 occurrences:
+; 82 occurrences:
 ; clamav/optimized/arcread.cpp.ll
 ; cmake/optimized/cpack.cxx.ll
 ; cpython/optimized/dictobject.ll
@@ -38,6 +38,7 @@
 ; rocksdb/optimized/filter_policy.cc.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
+; turborepo-rs/optimized/cfoasa6bvi7hpmvo2g502kghe.ll
 ; verilator/optimized/V3Assert.cpp.ll
 ; verilator/optimized/V3AssertPre.cpp.ll
 ; verilator/optimized/V3AstNodes.cpp.ll
@@ -85,7 +86,7 @@
 define i8 @func0000000000000018(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = zext i1 %3 to i8
   ret i8 %4
 }
@@ -171,9 +172,9 @@ entry:
 ; slurm/optimized/job_mgr.ll
 ; wireshark/optimized/packet-pldm.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000010(i1 %0, i32 %1) #0 {
+define i8 @func0000000000000030(i1 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %1, 2
+  %2 = icmp samesign ugt i32 %1, 2
   %3 = and i1 %2, %0
   %4 = zext i1 %3 to i8
   ret i8 %4
@@ -187,7 +188,7 @@ entry:
 define i8 @func0000000000000008(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, -2
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = zext i1 %3 to i8
   ret i8 %4
 }

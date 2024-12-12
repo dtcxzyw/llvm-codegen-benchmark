@@ -43,6 +43,11 @@ func0000000000000009:                   # @func0000000000000009
 	or	a0, a0, a1
 	slliw	a0, a0, 1
 	ret
+func0000000000000006:                   # @func0000000000000006
+	or	a1, a1, a2
+	or	a0, a0, a1
+	slliw	a0, a0, 8
+	ret
 func000000000000000d:                   # @func000000000000000d
 	or	a1, a1, a2
 	or	a0, a0, a1

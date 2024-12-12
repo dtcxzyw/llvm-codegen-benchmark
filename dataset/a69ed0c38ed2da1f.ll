@@ -8,7 +8,7 @@
 ; rustfmt-rs/optimized/3n0n7c4xrusd0kzl.ll
 ; wasmtime-rs/optimized/2ta8crc4qgl9bp8t.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002cc(i64 %0, i64 %1) #0 {
+define i1 @func000000000000098c(i64 %0, i64 %1) #0 {
 entry:
   %.fr = freeze i64 %1
   %2 = urem i64 %.fr, 24

@@ -1,6 +1,7 @@
 
-; 118 occurrences:
+; 126 occurrences:
 ; assimp/optimized/ColladaLoader.cpp.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; coreutils-rs/optimized/jw8446l5nymmnol.ll
 ; coreutils-rs/optimized/yeky3kbm8zdu7bp.ll
 ; cpython/optimized/bufferedio.ll
@@ -16,7 +17,6 @@
 ; g2o/optimized/slam2d_linear.cpp.ll
 ; g2o/optimized/solver_eigen.cpp.ll
 ; g2o/optimized/solver_slam2d_linear.cpp.ll
-; git/optimized/pack-redundant.ll
 ; graphviz/optimized/DotIO.c.ll
 ; graphviz/optimized/actions.c.ll
 ; graphviz/optimized/bcomps.c.ll
@@ -57,7 +57,6 @@
 ; graphviz/optimized/pathpath.c.ll
 ; graphviz/optimized/postproc.c.ll
 ; graphviz/optimized/scan.c.ll
-; graphviz/optimized/shapes.c.ll
 ; graphviz/optimized/textspan_lut.c.ll
 ; hdf5/optimized/H5FDcore.c.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
@@ -82,7 +81,6 @@
 ; llvm/optimized/MachineVerifier.cpp.ll
 ; llvm/optimized/PPMacroExpansion.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RegisterCoalescer.cpp.ll
 ; llvm/optimized/SelectionDAGISel.cpp.ll
 ; llvm/optimized/StackSlotColoring.cpp.ll
@@ -118,6 +116,16 @@
 ; xgboost/optimized/allreduce.cc.ll
 ; yalantinglibs/optimized/channel.cpp.ll
 ; yalantinglibs/optimized/example.cpp.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/4t9tdr5qgocuoz7ebpyy9bvqv.ll
+; zed-rs/optimized/8ong401nghjuvw1pdqaahwms7.ll
+; zed-rs/optimized/a19dler2qrv3afh8hccxiqxn7.ll
+; zed-rs/optimized/a9o648rm8h3erlto15zyd64wi.ll
+; zed-rs/optimized/adhrhj1ih026npw6eixxu9sn1.ll
+; zed-rs/optimized/f1iubl8q66d2sxqoxpce2jw1m.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
@@ -126,18 +134,17 @@ entry:
   ret i64 %3
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; cmake/optimized/archive_read_support_filter_uu.c.ll
 ; cmake/optimized/archive_read_support_format_mtree.c.ll
-; openblas/optimized/dpotrf_U_single.c.ll
 ; redis/optimized/redis-cli.ll
 ; velox/optimized/Timestamp.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   ret i64 %3
 }
 

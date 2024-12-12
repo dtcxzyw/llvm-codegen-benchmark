@@ -60,22 +60,7 @@ entry:
 }
 
 ; 2 occurrences:
-; gromacs/optimized/dlasd0.cpp.ll
-; gromacs/optimized/slasd0.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000018(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc nsw i64 %1 to i32
-  %3 = shl nuw i32 %0, 1
-  %4 = add i32 %3, %2
-  %5 = sext i32 %4 to i64
-  ret i64 %5
-}
-
-; 4 occurrences:
-; gromacs/optimized/dlasd0.cpp.ll
 ; gromacs/optimized/dlasda.cpp.ll
-; gromacs/optimized/slasd0.cpp.ll
 ; gromacs/optimized/slasda.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i32 %0, i64 %1) #0 {

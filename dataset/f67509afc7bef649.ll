@@ -1,16 +1,16 @@
 
-%class.aiVector3t.2716369 = type { double, double, double }
+%class.aiVector3t.2828902 = type { double, double, double }
 
 ; 2 occurrences:
 ; qemu/optimized/util_cutils.c.ll
 ; quickjs/optimized/cutils.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000204(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -1
-  %6 = icmp ugt ptr %5, %1
+  %6 = icmp ult ptr %1, %5
   %7 = select i1 %0, i1 %6, i1 false
   ret i1 %7
 }
@@ -42,12 +42,12 @@ entry:
 ; z3/optimized/upolynomial.cpp.ll
 ; z3/optimized/var_subst.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000001c4(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw %class.aiVector3t.2716369, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %class.aiVector3t.2828902, ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -24
-  %6 = icmp ugt ptr %5, %1
+  %6 = icmp ult ptr %1, %5
   %7 = select i1 %0, i1 %6, i1 false
   ret i1 %7
 }

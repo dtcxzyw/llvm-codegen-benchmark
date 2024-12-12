@@ -1,15 +1,9 @@
 func00000000000001d5:                   // @func00000000000001d5
 // %bb.0:                               // %entry
-	ushll2	v5.4s, v4.8h, #0
-	ushll	v4.4s, v4.4h, #0
-	mov	w8, #292                        // =0x124
-	mvni	v6.4s, #26
-	dup	v7.4s, w8
-	mla	v3.4s, v5.4s, v6.4s
-	mla	v2.4s, v4.4s, v6.4s
-	add	v1.4s, v1.4s, v7.4s
-	add	v0.4s, v0.4s, v7.4s
-	add	v1.4s, v3.4s, v1.4s
-	add	v0.4s, v2.4s, v0.4s
+	mov	w8, #-27                        // =0xffffffe5
+	and	w9, w2, #0xffff
+	madd	w8, w9, w8, w1
+	add	w8, w8, w0
+	add	w0, w8, #292
 	ret
                                         // -- End function

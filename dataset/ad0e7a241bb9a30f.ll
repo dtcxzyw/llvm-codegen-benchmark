@@ -1,5 +1,6 @@
 
-; 11 occurrences:
+; 12 occurrences:
+; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; linux/optimized/xfrm_output.ll
 ; miniaudio/optimized/unity.c.ll
@@ -20,7 +21,11 @@ entry:
   ret i32 %3
 }
 
-; 1 occurrences:
+; 5 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i8 %0) #0 {

@@ -19,13 +19,13 @@ entry:
 ; meshoptimizer/optimized/overdrawoptimizer.cpp.ll
 ; meshoptimizer/optimized/spatialorder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = lshr i64 %1, 2
   %5 = mul i64 %4, %3
   %6 = getelementptr nusw float, ptr %0, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 4
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 4
   ret ptr %7
 }
 

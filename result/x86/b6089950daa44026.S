@@ -4,15 +4,15 @@ func0000000000000030:                   # @func0000000000000030
 	imulq	%rdx, %rax
 	addq	%rdi, %rax
 	retq
+func000000000000003f:                   # @func000000000000003f
+	shrq	$14, %rdx
+	movl	$4194967296, %eax               # imm = 0xFA0A1F00
+	imulq	%rdx, %rax
+	addq	%rdi, %rax
+	retq
 func0000000000000000:                   # @func0000000000000000
 	shrdq	$42, %rdx, %rsi
 	leaq	(%rsi,%rsi,4), %rax
-	addq	%rdi, %rax
-	retq
-func000000000000003f:                   # @func000000000000003f
-	shrdq	$51, %rdx, %rsi
-	leaq	(%rsi,%rsi,8), %rax
-	leaq	(%rsi,%rax,2), %rax
 	addq	%rdi, %rax
 	retq
 func0000000000000020:                   # @func0000000000000020

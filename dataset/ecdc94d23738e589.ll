@@ -10,7 +10,7 @@ entry:
   %4 = add nuw nsw i64 %3, 176
   %5 = zext i32 %1 to i64
   %6 = add nuw nsw i64 %4, %5
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 
@@ -52,7 +52,7 @@ entry:
   %4 = add nsw i64 %3, -24
   %5 = zext nneg i32 %1 to i64
   %6 = add nsw i64 %4, %5
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 

@@ -1,5 +1,5 @@
 
-; 67 occurrences:
+; 66 occurrences:
 ; bullet3/optimized/b3VoronoiSimplexSolver.ll
 ; bullet3/optimized/btSoftBody.ll
 ; bullet3/optimized/btVoronoiSimplexSolver.ll
@@ -27,7 +27,6 @@
 ; meshlab/optimized/glarea.cpp.ll
 ; meshlab/optimized/io_e57.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/rimls.cpp.ll
 ; meshlab/optimized/shadow_mapping.cpp.ll
 ; meshlab/optimized/trackball.cpp.ll

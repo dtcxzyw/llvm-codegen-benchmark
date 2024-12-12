@@ -50,7 +50,7 @@ entry:
   %3 = icmp ne ptr %2, null
   %not. = xor i1 %1, true
   %4 = select i1 %not., i1 %3, i1 false
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

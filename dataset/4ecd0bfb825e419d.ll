@@ -40,7 +40,7 @@ entry:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/print_settings.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000306(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000606(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl i32 %2, 4
@@ -52,7 +52,7 @@ entry:
 ; 1 occurrences:
 ; spike/optimized/fdt_ro.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000204(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = shl i32 %2, 4

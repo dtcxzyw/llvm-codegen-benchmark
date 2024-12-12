@@ -34,6 +34,17 @@ entry:
 }
 
 ; 2 occurrences:
+; raylib/optimized/rmodels.c.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(i64 %0) #0 {
+entry:
+  %1 = shl nuw nsw i64 %0, 8
+  %2 = inttoptr i64 %1 to ptr
+  ret ptr %2
+}
+
+; 2 occurrences:
 ; meshlab/optimized/alignset.cpp.ll
 ; raylib/optimized/rcore.c.ll
 ; Function Attrs: nounwind

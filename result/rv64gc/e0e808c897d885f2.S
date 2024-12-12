@@ -23,6 +23,16 @@ func0000000000000003:                   # @func0000000000000003
 	slli	a0, a0, 4
 	add	a0, a0, a1
 	ret
+func000000000000003c:                   # @func000000000000003c
+	slli	a1, a1, 34
+	slli	a0, a0, 32
+	add	a0, a0, a1
+	ret
+func000000000000003f:                   # @func000000000000003f
+	slli	a1, a1, 10
+	slli	a0, a0, 2
+	add	a0, a0, a1
+	ret
 func0000000000000014:                   # @func0000000000000014
 	slli	a1, a1, 36
 	slli	a0, a0, 32

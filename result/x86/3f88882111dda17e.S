@@ -18,15 +18,20 @@ func0000000000000016:                   # @func0000000000000016
 	movl	%esi, %ecx
 	subq	%rcx, %rax
 	retq
+func0000000000000007:                   # @func0000000000000007
+	movl	%esi, %eax
+	subq	%rax, %rdi
+	leaq	64(%rdi), %rax
+	retq
 func000000000000001c:                   # @func000000000000001c
 	movl	%esi, %eax
 	subq	%rax, %rdi
 	leaq	64(%rdi), %rax
 	retq
-func000000000000001e:                   # @func000000000000001e
+func000000000000001f:                   # @func000000000000001f
 	movl	%esi, %eax
 	subq	%rax, %rdi
-	leaq	64(%rdi), %rax
+	leaq	10(%rdi), %rax
 	retq
 func000000000000000e:                   # @func000000000000000e
 	movl	%esi, %eax

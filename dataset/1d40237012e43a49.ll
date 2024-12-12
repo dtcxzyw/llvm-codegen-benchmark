@@ -5,7 +5,7 @@
 ; quantlib/optimized/smilesectionutils.ll
 ; rocksdb/optimized/merge_operator.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000028(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3

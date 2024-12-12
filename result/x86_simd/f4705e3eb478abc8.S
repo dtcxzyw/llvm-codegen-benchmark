@@ -10,7 +10,7 @@ func0000000000000054:                   # @func0000000000000054
 func0000000000000040:                   # @func0000000000000040
 	vpsllq	$3, %ymm2, %ymm2
 	vpaddq	%ymm0, %ymm1, %ymm0
-	vpaddq	%ymm0, %ymm2, %ymm0
+	vpaddq	%ymm2, %ymm0, %ymm0
 	vpbroadcastq	.LCPI1_0(%rip), %ymm1   # ymm1 = [63,63,63,63]
 	vpsubq	%ymm0, %ymm1, %ymm0
 	retq

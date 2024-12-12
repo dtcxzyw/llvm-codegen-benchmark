@@ -12,10 +12,9 @@ entry:
   ret i32 %7
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; eastl/optimized/EAMemory.cpp.ll
 ; glslang/optimized/ParseHelper.cpp.ll
-; hdf5/optimized/H5Zfletcher32.c.ll
 ; linux/optimized/hda_codec.ll
 ; llvm/optimized/AArch64Disassembler.cpp.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
@@ -43,18 +42,17 @@ entry:
   %3 = lshr exact i32 %2, 1
   %4 = and i32 %3, 2046
   %5 = shl nuw nsw i32 %1, 11
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; libwebp/optimized/anim_decode.c.ll
 ; llvm/optimized/ASTWriter.cpp.ll
 ; php/optimized/crypt_sha256.ll
 ; wireshark/optimized/addr_resolv.c.ll
 ; wireshark/optimized/busmaster.c.ll
-; wireshark/optimized/file-rtpdump.c.ll
 ; wireshark/optimized/packet-fpp.c.ll
 ; wireshark/optimized/packet-ftp.c.ll
 ; wireshark/optimized/packet-nfs.c.ll
@@ -66,7 +64,7 @@ entry:
   %3 = lshr i32 %2, 8
   %4 = and i32 %3, 65280
   %5 = shl i32 %1, 27
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }
@@ -79,7 +77,7 @@ entry:
   %3 = lshr i32 %2, 4
   %4 = and i32 %3, 65472
   %5 = shl nuw i32 %1, 31
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = or disjoint i32 %6, %4
   ret i32 %7
 }
@@ -92,7 +90,7 @@ entry:
   %3 = lshr i32 %2, 9
   %4 = and i32 %3, 4194304
   %5 = shl i32 %1, 21
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   %7 = or i32 %6, %4
   ret i32 %7
 }
@@ -105,7 +103,7 @@ entry:
   %3 = lshr i32 %2, 16
   %4 = and i32 %3, 32768
   %5 = shl nuw nsw i32 %1, 10
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   %7 = or i32 %6, %4
   ret i32 %7
 }
@@ -116,7 +114,7 @@ entry:
 define i32 @func0000000000000013(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 24
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = lshr i32 %1, 15
   %6 = and i32 %5, 1
   %7 = or disjoint i32 %6, %4

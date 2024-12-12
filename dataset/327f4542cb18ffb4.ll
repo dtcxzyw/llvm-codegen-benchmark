@@ -1,7 +1,6 @@
 
 ; 25 occurrences:
 ; box2d/optimized/b2_collide_circle.cpp.ll
-; darktable/optimized/introspection_channelmixerrgb.c.ll
 ; mitsuba3/optimized/bsplinecurve.cpp.ll
 ; mitsuba3/optimized/circular.cpp.ll
 ; mitsuba3/optimized/conductor.cpp.ll
@@ -25,6 +24,7 @@
 ; postgres/optimized/float.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:

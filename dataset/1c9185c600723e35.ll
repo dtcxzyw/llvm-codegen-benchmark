@@ -1,7 +1,8 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; lief/optimized/psa_crypto_cipher.c.ll
 ; linux/optimized/libata-scsi.ll
+; lvgl/optimized/lv_obj_style.ll
 ; openjdk/optimized/jni_util.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
@@ -12,16 +13,13 @@ entry:
   ret i8 %3
 }
 
-; 9 occurrences:
-; arrow/optimized/metadata_internal.cc.ll
+; 6 occurrences:
 ; icu/optimized/normalizer2impl.ll
 ; lief/optimized/psa_crypto.c.ll
 ; lief/optimized/psa_crypto_ecp.c.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/ExpandVectorPredication.cpp.ll
 ; llvm/optimized/InstCombineCalls.cpp.ll
-; llvm/optimized/LinkModules.cpp.ll
-; llvm/optimized/MergeFunctions.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, i16 %1) #0 {
 entry:

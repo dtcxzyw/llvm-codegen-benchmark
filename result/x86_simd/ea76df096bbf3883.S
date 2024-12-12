@@ -26,19 +26,11 @@ func0000000000000030:                   # @func0000000000000030
 	vpaddd	%ymm0, %ymm1, %ymm0
 	retq
 .LCPI1_0:
-	.long	4294967202                      # 0xffffffa2
-func0000000000000035:                   # @func0000000000000035
-	vpslld	$31, %ymm2, %ymm2
-	vpmovd2m	%ymm2, %k1
-	vpaddd	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1 {%k1}
-	vpaddd	%ymm0, %ymm1, %ymm0
-	retq
-.LCPI2_0:
 	.long	63                              # 0x3f
-.LCPI2_2:
+.LCPI1_2:
 	.short	60                              # 0x3c
 	.short	0                               # 0x0
-.LCPI2_1:
+.LCPI1_1:
 	.short	60                              # 0x3c
 	.short	0                               # 0x0
 	.short	60                              # 0x3c
@@ -56,9 +48,18 @@ func0000000000000035:                   # @func0000000000000035
 	.short	60                              # 0x3c
 	.short	0                               # 0x0
 func000000000000003f:                   # @func000000000000003f
-	vpandd	.LCPI2_0(%rip){1to8}, %ymm2, %ymm2
-	vpdpwssd	.LCPI2_2(%rip){1to8}, %ymm2, %ymm1
+	vpandd	.LCPI1_0(%rip){1to8}, %ymm2, %ymm2
+	vpdpwssd	.LCPI1_2(%rip){1to8}, %ymm2, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
+	retq
+.LCPI2_0:
+	.long	365                             # 0x16d
+func0000000000000035:                   # @func0000000000000035
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpblendw	$170, %ymm3, %ymm2, %ymm2       # ymm2 = ymm2[0],ymm3[1],ymm2[2],ymm3[3],ymm2[4],ymm3[5],ymm2[6],ymm3[7],ymm2[8],ymm3[9],ymm2[10],ymm3[11],ymm2[12],ymm3[13],ymm2[14],ymm3[15]
+	vpmulld	.LCPI2_0(%rip){1to8}, %ymm2, %ymm2
+	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm2, %ymm0, %ymm0
 	retq
 .LCPI3_0:
 	.long	18000                           # 0x4650
@@ -204,5 +205,5 @@ func000000000000003d:                   # @func000000000000003d
 	vpandd	.LCPI8_2(%rip){1to8}, %ymm2, %ymm2
 	vpmulld	.LCPI8_1(%rip){1to8}, %ymm2, %ymm2
 	vpaddd	%ymm0, %ymm1, %ymm0
-	vpaddd	%ymm0, %ymm2, %ymm0
+	vpaddd	%ymm2, %ymm0, %ymm0
 	retq

@@ -29,7 +29,7 @@ entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 11
   %5 = and i64 %4, 2048
-  %6 = or disjoint i64 %5, %1
+  %6 = or disjoint i64 %1, %5
   %7 = or i64 %6, %0
   ret i64 %7
 }
@@ -43,7 +43,7 @@ entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 20
   %5 = and i64 %4, 1048576
-  %6 = or i64 %5, %1
+  %6 = or i64 %1, %5
   %7 = or i64 %6, %0
   ret i64 %7
 }
@@ -56,7 +56,7 @@ entry:
   %3 = zext nneg i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 31
   %5 = and i64 %4, 2147483648
-  %6 = or disjoint i64 %5, %1
+  %6 = or disjoint i64 %1, %5
   %7 = or disjoint i64 %6, %0
   ret i64 %7
 }
@@ -69,7 +69,7 @@ entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw i64 %3, 56
   %5 = and i64 %4, 4539628424389459968
-  %6 = or disjoint i64 %5, %1
+  %6 = or disjoint i64 %1, %5
   %7 = or disjoint i64 %6, %0
   ret i64 %7
 }

@@ -1,5 +1,5 @@
 
-; 138 occurrences:
+; 141 occurrences:
 ; abc/optimized/acecRe.c.ll
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/giaClp.c.ll
@@ -19,8 +19,8 @@
 ; arrow/optimized/vector_hash.cc.ll
 ; assimp/optimized/BlenderDNA.cpp.ll
 ; assimp/optimized/BlenderScene.cpp.ll
+; boost/optimized/src.ll
 ; bullet3/optimized/b3File.ll
-; cmake/optimized/archive_pack_dev.c.ll
 ; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
 ; gromacs/optimized/tng_io.c.ll
 ; hermes/optimized/APFloat.cpp.ll
@@ -138,13 +138,16 @@
 ; wireshark/optimized/btsnoop.c.ll
 ; wolfssl/optimized/aes.c.ll
 ; z3/optimized/sat_cutset.cpp.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/6pnl53dvchkj2615muwn1tztk.ll
+; zed-rs/optimized/73pi95mikt3cntupcr2d2nefv.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 16
   %4 = and i64 %3, 4294901760
   %5 = or disjoint i64 %4, %1
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   ret i64 %6
 }
 
@@ -204,14 +207,13 @@ entry:
   ret i64 %6
 }
 
-; 50 occurrences:
+; 49 occurrences:
 ; abc/optimized/ifDec07.c.ll
 ; arrow/optimized/float16.cc.ll
 ; linux/optimized/ds.ll
 ; linux/optimized/init_64.ll
 ; linux/optimized/intel_ggtt.ll
 ; linux/optimized/page.ll
-; linux/optimized/set_memory.ll
 ; llvm/optimized/AArch64ExternalSymbolizer.cpp.ll
 ; llvm/optimized/AArch64MCCodeEmitter.cpp.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
@@ -260,7 +262,7 @@ define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 1
   %4 = and i64 %3, 4
-  %5 = or disjoint i64 %4, %1
+  %5 = or disjoint i64 %1, %4
   %6 = or i64 %5, %0
   ret i64 %6
 }
@@ -289,7 +291,7 @@ entry:
   %3 = shl nsw i64 %2, 7
   %4 = and i64 %3, 16256
   %5 = or disjoint i64 %4, %1
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   ret i64 %6
 }
 
@@ -316,7 +318,7 @@ entry:
   %3 = shl nsw i64 %2, 35
   %4 = and i64 %3, 4363686772736
   %5 = or disjoint i64 %4, %1
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   ret i64 %6
 }
 
@@ -342,11 +344,12 @@ entry:
   %3 = shl nsw i64 %2, 42
   %4 = and i64 %3, 558551906910208
   %5 = or i64 %4, %1
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   ret i64 %6
 }
 
-; 44 occurrences:
+; 45 occurrences:
+; abc/optimized/bdcSpfd.c.ll
 ; linux/optimized/page.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/AArch64ExternalSymbolizer.cpp.ll
@@ -396,7 +399,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 3
   %4 = and i64 %3, 32
-  %5 = or i64 %4, %1
+  %5 = or i64 %1, %4
   %6 = or i64 %5, %0
   ret i64 %6
 }
@@ -447,7 +450,7 @@ define i64 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 8
   %4 = and i64 %3, 65280
-  %5 = or disjoint i64 %4, %1
+  %5 = or disjoint i64 %1, %4
   %6 = or i64 %5, %0
   ret i64 %6
 }
@@ -463,7 +466,7 @@ define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 7
   %4 = and i64 %3, 1920
-  %5 = or i64 %4, %1
+  %5 = or i64 %1, %4
   %6 = or i64 %5, %0
   ret i64 %6
 }
@@ -476,7 +479,7 @@ define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 34
   %4 = and i64 %3, 17179869184
-  %5 = or i64 %4, %1
+  %5 = or i64 %1, %4
   %6 = or disjoint i64 %5, %0
   ret i64 %6
 }

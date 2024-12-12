@@ -46,3 +46,9 @@ func0000000000000007:                   # @func0000000000000007
 	imulq	%rsi, %rax
 	addq	%rdi, %rax
 	retq
+func0000000000000006:                   # @func0000000000000006
+	shrq	$4, %rsi
+	movabsq	$-6148914691236517205, %rax     # imm = 0xAAAAAAAAAAAAAAAB
+	imulq	%rsi, %rax
+	addq	%rdi, %rax
+	retq

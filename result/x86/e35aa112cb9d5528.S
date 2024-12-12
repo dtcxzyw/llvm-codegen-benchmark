@@ -26,3 +26,10 @@ func0000000000000006:                   # @func0000000000000006
 	orb	%dil, %sil
 	orb	%sil, %al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpq	$3, %rdx
+	setb	%al
+	xorb	$1, %sil
+	orb	%dil, %sil
+	orb	%sil, %al
+	retq

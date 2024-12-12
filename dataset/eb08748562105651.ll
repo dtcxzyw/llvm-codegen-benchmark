@@ -1,11 +1,10 @@
 
-%struct.XineramaScreenInfo.2617906 = type { i32, i16, i16, i16, i16 }
+%struct.XineramaScreenInfo.2731356 = type { i32, i16, i16, i16, i16 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/extraUtilFile.c.ll
 ; linux/optimized/svc_xprt.ll
 ; postgres/optimized/heaptoast.ll
-; postgres/optimized/regcomp.ll
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/util.ll
 ; wireshark/optimized/addr_resolv.c.ll
@@ -273,15 +272,18 @@ entry:
 ; wasmedge/optimized/compiler.cpp.ll
 ; wasmedge/optimized/formchecker.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i1 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = select i1 %1, i64 %3, i64 0
-  %5 = getelementptr nusw ptr, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw ptr, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 26 occurrences:
+; 29 occurrences:
+; box2d/optimized/b2_collide_circle.cpp.ll
+; box2d/optimized/b2_collide_polygon.cpp.ll
+; bullet3/optimized/btBox2dBox2dCollisionAlgorithm.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; darktable/optimized/introspection_colorzones.c.ll
 ; gromacs/optimized/md5.c.ll
@@ -309,11 +311,11 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; yosys/optimized/fsm_recode.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i1 %1, i32 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = select i1 %1, i64 %3, i64 0
-  %5 = getelementptr nusw %struct.XineramaScreenInfo.2617906, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %struct.XineramaScreenInfo.2731356, ptr %0, i64 %4
   ret ptr %5
 }
 

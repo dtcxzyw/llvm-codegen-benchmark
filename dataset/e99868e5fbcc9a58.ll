@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; coreutils-rs/optimized/1vrxha14kpfjcqak.ll
 ; coreutils-rs/optimized/jdhpc8bthd0ylxt.ll
 ; delta-rs/optimized/264wku5om6u5pdmz.ll
@@ -10,6 +10,7 @@
 ; wasmtime-rs/optimized/18flldcd4wnig7ks.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/55kotg5r2nkrpa1d.ll
+; zed-rs/optimized/6i9q21vg747q3orsxnutiwubi.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -34,7 +35,7 @@ entry:
 ; wasmtime-rs/optimized/4cnvf14b3xea7eab.ll
 ; wasmtime-rs/optimized/4hvnupd8slkxulls.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000024(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000044(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
   %4 = icmp ult i64 %3, %1

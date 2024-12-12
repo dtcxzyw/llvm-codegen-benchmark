@@ -33,6 +33,11 @@ func0000000000000075:                   # @func0000000000000075
 	leal	(%rsi,%rsi,4), %eax
 	leal	-48(%rdi,%rax,2), %eax
 	retq
+func0000000000000077:                   # @func0000000000000077
+	addl	%edx, %esi
+	leal	(%rsi,%rsi,4), %eax
+	leal	-48(%rdi,%rax,2), %eax
+	retq
 func00000000000000f7:                   # @func00000000000000f7
 	addl	%edx, %esi
 	leal	(%rsi,%rsi,4), %eax
@@ -42,6 +47,11 @@ func00000000000000f5:                   # @func00000000000000f5
 	addl	%edx, %esi
 	leal	(%rsi,%rsi,4), %eax
 	leal	-2428(%rdi,%rax,2), %eax
+	retq
+func00000000000000c0:                   # @func00000000000000c0
+	addl	%edx, %esi
+	imull	$3600, %esi, %eax               # imm = 0xE10
+	leal	3600(%rax,%rdi), %eax
 	retq
 func0000000000000057:                   # @func0000000000000057
 	addl	%edx, %esi
@@ -62,11 +72,6 @@ func0000000000000040:                   # @func0000000000000040
 	addl	%edx, %esi
 	leal	(%rsi,%rsi,8), %eax
 	leal	400(%rdi,%rax,8), %eax
-	retq
-func00000000000000c0:                   # @func00000000000000c0
-	addl	%edx, %esi
-	imull	$67099145, %esi, %eax           # imm = 0x3FFDA09
-	leal	33685504(%rax,%rdi), %eax
 	retq
 func00000000000000fc:                   # @func00000000000000fc
 	addl	%edx, %esi

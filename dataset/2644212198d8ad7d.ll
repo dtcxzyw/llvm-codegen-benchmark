@@ -7,13 +7,12 @@
 define i32 @func000000000000000e(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = trunc nuw i64 %3 to i32
   ret i32 %4
 }
 
-; 4 occurrences:
-; abc/optimized/satUtil.c.ll
+; 3 occurrences:
 ; c3c/optimized/bigint.c.ll
 ; ipopt/optimized/IpTNLPAdapter.ll
 ; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
@@ -21,7 +20,7 @@ entry:
 define i32 @func000000000000000f(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = trunc nuw nsw i64 %3 to i32
   ret i32 %4
 }
@@ -32,30 +31,13 @@ entry:
 define i32 @func000000000000000d(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = trunc nsw i64 %3 to i32
   ret i32 %4
 }
 
-; 8 occurrences:
-; clamav/optimized/mew.c.ll
-; graphviz/optimized/sfprint.c.ll
-; libquic/optimized/time_support.c.ll
-; llvm/optimized/MachineInstr.cpp.ll
-; node/optimized/libnode.crypto_util.ll
-; openmpi/optimized/common_ompio_aggregators.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i64 %0, i1 %1) #0 {
-entry:
-  %2 = zext i1 %1 to i64
-  %3 = add nsw i64 %2, %0
-  %4 = trunc i64 %3 to i32
-  ret i32 %4
-}
-
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/to_chars.ll
 ; miniaudio/optimized/unity.c.ll
 ; openjdk/optimized/synchronizer.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
@@ -64,12 +46,12 @@ entry:
 define i32 @func0000000000000008(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }
 
-; 25 occurrences:
+; 26 occurrences:
 ; abc/optimized/cecSatG3.c.ll
 ; abc/optimized/exor.c.ll
 ; abc/optimized/extraUtilBitMatrix.c.ll
@@ -78,6 +60,7 @@ entry:
 ; abc/optimized/ivyCutTrav.c.ll
 ; abc/optimized/satInter.c.ll
 ; arrow/optimized/basic_decimal.cc.ll
+; boost/optimized/to_chars.ll
 ; duckdb/optimized/ub_duckdb_execution_index.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; jemalloc/optimized/sc.ll
@@ -99,12 +82,12 @@ entry:
 define i32 @func000000000000000c(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }
 
-; 23 occurrences:
+; 21 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/builder_dict.cc.ll
@@ -119,12 +102,10 @@ entry:
 ; llvm/optimized/Mangler.cpp.ll
 ; llvm/optimized/PDBFile.cpp.ll
 ; llvm/optimized/ParseDecl.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; openmpi/optimized/onesided_aggregation.ll
 ; php/optimized/phpdbg_lexer.ll
-; spike/optimized/s_mul64To128M.ll
 ; velox/optimized/Split.cpp.ll
 ; wireshark/optimized/packet-rpcrdma.c.ll
 ; zstd/optimized/zstd_decompress.c.ll
@@ -132,7 +113,23 @@ entry:
 define i32 @func0000000000000000(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
+  %4 = trunc i64 %3 to i32
+  ret i32 %4
+}
+
+; 6 occurrences:
+; clamav/optimized/mew.c.ll
+; graphviz/optimized/sfprint.c.ll
+; libquic/optimized/time_support.c.ll
+; llvm/optimized/MachineInstr.cpp.ll
+; node/optimized/libnode.crypto_util.ll
+; openmpi/optimized/common_ompio_aggregators.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i64 %0, i1 %1) #0 {
+entry:
+  %2 = zext i1 %1 to i64
+  %3 = add nsw i64 %0, %2
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }
@@ -143,7 +140,7 @@ entry:
 define i32 @func0000000000000002(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = trunc nuw i64 %3 to i32
   ret i32 %4
 }
@@ -154,7 +151,7 @@ entry:
 define i32 @func0000000000000003(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = trunc nuw nsw i64 %3 to i32
   ret i32 %4
 }
@@ -165,7 +162,7 @@ entry:
 define i32 @func0000000000000007(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = trunc nuw nsw i64 %3 to i32
   ret i32 %4
 }
@@ -177,7 +174,7 @@ entry:
 define i32 @func0000000000000005(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = trunc nsw i64 %3 to i32
   ret i32 %4
 }

@@ -1,7 +1,9 @@
 
-; 11 occurrences:
+; 13 occurrences:
 ; arrow/optimized/encode_internal.cc.ll
 ; arrow/optimized/encode_internal_avx2.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; lief/optimized/Attribute.cpp.ll
 ; lief/optimized/CodeView.cpp.ll
 ; lief/optimized/Note.cpp.ll

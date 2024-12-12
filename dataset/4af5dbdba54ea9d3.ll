@@ -1,7 +1,8 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; libsodium/optimized/libsodium_la-codecs.ll
 ; nanosvg/optimized/nanosvg.ll
+; soc-simulator/optimized/verilated.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0) #0 {
 entry:

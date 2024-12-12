@@ -8,7 +8,7 @@
 ; qemu/optimized/net_tap-linux.c.ll
 ; rust-analyzer-rs/optimized/55rapmz9wj276hro.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i1 %1, i32 %2) #0 {
+define i32 @func0000000000000061(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 8
   %4 = select i1 %1, i32 %3, i32 %2

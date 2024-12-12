@@ -1,5 +1,5 @@
 
-; 45 occurrences:
+; 44 occurrences:
 ; clamav/optimized/list.cpp.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; icu/optimized/tzgnames.ll
@@ -31,7 +31,6 @@
 ; mitsuba3/optimized/x86emithelper.cpp.ll
 ; nori/optimized/screen.cpp.ll
 ; ocio/optimized/CTFTransform.cpp.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; openjdk/optimized/macro.ll
 ; php/optimized/ir_emit.ll
 ; php/optimized/zend_inference.ll

@@ -1,10 +1,9 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; git/optimized/show-branch.ll
 ; icu/optimized/ucurr.ll
 ; linux/optimized/auditfilter.ll
 ; linux/optimized/regmap.ll
-; openmpi/optimized/arch.ll
 ; openmpi/optimized/coll_base_allgather.ll
 ; openmpi/optimized/coll_base_allgatherv.ll
 ; Function Attrs: nounwind

@@ -24,14 +24,12 @@ entry:
   ret i8 %5
 }
 
-; 3 occurrences:
-; grpc/optimized/socket_utils_common_posix.cc.ll
-; grpc/optimized/tcp_socket_utils.cc.ll
+; 1 occurrences:
 ; meshlab/optimized/MarchingCubes.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000018(i1 %0, i8 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ne i32 %2, 2147483647
+  %3 = icmp ne i32 %2, 0
   %4 = zext i1 %3 to i8
   %5 = select i1 %0, i8 %4, i8 %1
   ret i8 %5

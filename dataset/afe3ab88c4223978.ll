@@ -1,6 +1,5 @@
 
-; 15 occurrences:
-; arrow/optimized/decimal.cc.ll
+; 14 occurrences:
 ; clamav/optimized/LzmaDec.c.ll
 ; cmake/optimized/archive_write_set_format_ar.c.ll
 ; imgui/optimized/imgui_draw.cpp.ll
@@ -58,8 +57,7 @@ entry:
   ret i64 %3
 }
 
-; 2 occurrences:
-; openssl/optimized/chacha_internal_test-bin-chacha_internal_test.ll
+; 1 occurrences:
 ; ruby/optimized/regparse.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000009(i32 %0) #0 {
@@ -70,7 +68,8 @@ entry:
   ret i64 %3
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/default_filter_factory.ll
 ; clamav/optimized/rarvm.cpp.ll
 ; clamav/optimized/sis.c.ll
 ; cmake/optimized/lzma_decoder.c.ll
@@ -129,6 +128,19 @@ entry:
   %1 = add nuw nsw i32 %0, 1
   %2 = zext nneg i32 %1 to i64
   %3 = sub nsw i64 0, %2
+  ret i64 %3
+}
+
+; 3 occurrences:
+; boost/optimized/alloc_lib.ll
+; openssl/optimized/quic_stream_test-bin-quic_stream_test.ll
+; postgres/optimized/visibilitymap.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001f(i32 %0) #0 {
+entry:
+  %1 = add nuw nsw i32 %0, 1
+  %2 = zext nneg i32 %1 to i64
+  %3 = sub nuw nsw i64 10000, %2
   ret i64 %3
 }
 

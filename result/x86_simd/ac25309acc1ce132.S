@@ -3,7 +3,7 @@
 func000000000000001f:                   # @func000000000000001f
 	vpsllq	$2, %ymm2, %ymm2
 	vpternlogq	$248, .LCPI0_0(%rip){1to4}, %ymm1, %ymm2 # ymm2 = ymm2 | (ymm1 & mem)
-	vpaddq	%ymm0, %ymm2, %ymm0
+	vpaddq	%ymm2, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.long	0                               # 0x0

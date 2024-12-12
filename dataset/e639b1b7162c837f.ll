@@ -12,11 +12,10 @@ entry:
   ret double %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; lightgbm/optimized/objective_function.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; Function Attrs: nounwind
 define double @func0000000000000001(double %0, double %1, i32 %2) #0 {
 entry:

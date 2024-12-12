@@ -1,5 +1,6 @@
 
-; 12 occurrences:
+; 13 occurrences:
+; boost/optimized/math_normalize_spheroidal.ll
 ; minetest/optimized/sound_manager.cpp.ll
 ; nori/optimized/colorwheel.cpp.ll
 ; nori/optimized/progressbar.cpp.ll

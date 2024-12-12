@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; linux/optimized/dm-table.ll
 ; llvm/optimized/CGCUDANV.cpp.ll
 ; llvm/optimized/CGDecl.cpp.ll
@@ -8,9 +8,8 @@
 ; llvm/optimized/ELFObjectWriter.cpp.ll
 ; llvm/optimized/IRSymtab.cpp.ll
 ; llvm/optimized/LTOModule.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0) #0 {
+define i32 @func0000000000000061(i32 %0) #0 {
 entry:
   %1 = add nuw nsw i32 %0, 255
   %2 = and i32 %1, 255

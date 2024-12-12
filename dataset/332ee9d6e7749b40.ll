@@ -5,7 +5,7 @@
 ; openssl/optimized/libssl-shlib-statem_dtls.ll
 ; wireshark/optimized/packet-rtps.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = icmp ne i64 %3, 0
@@ -28,12 +28,13 @@ entry:
   ret i1 %5
 }
 
-; 24 occurrences:
+; 26 occurrences:
 ; coreutils-rs/optimized/yiho3rob7ld9k5q.ll
 ; cpython/optimized/obmalloc.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/InstrProfReader.cpp.ll
 ; mimalloc/optimized/bitmap.c.ll
+; opencv/optimized/softfloat.cpp.ll
 ; tev/optimized/Channel.cpp.ll
 ; tev/optimized/ClipboardImageLoader.cpp.ll
 ; tev/optimized/Common.cpp.ll
@@ -53,6 +54,7 @@ entry:
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
+; zed-rs/optimized/b0ehx4vbxawrtril1zkysl0b6.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -69,7 +71,7 @@ entry:
 ; openusd/optimized/pointInstancerAdapter.cpp.ll
 ; openusd/optimized/primRange.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = icmp eq i64 %3, 4294967295

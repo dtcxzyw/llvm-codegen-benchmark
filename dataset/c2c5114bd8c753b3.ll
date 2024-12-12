@@ -1,8 +1,9 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; darktable/optimized/SamsungV0Decompressor.cpp.ll
 ; darktable/optimized/SamsungV2Decompressor.cpp.ll
 ; freetype/optimized/ftbase.c.ll
+; openusd/optimized/json.cpp.ll
 ; php/optimized/strtod.ll
 ; qemu/optimized/optimize.c.ll
 ; Function Attrs: nounwind
@@ -37,7 +38,7 @@ entry:
   ret i64 %4
 }
 
-; 183 occurrences:
+; 182 occurrences:
 ; clamav/optimized/disasm.c.ll
 ; hermes/optimized/APInt.cpp.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
@@ -159,7 +160,6 @@ entry:
 ; llvm/optimized/PPExpressions.cpp.ll
 ; llvm/optimized/PassBuilder.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RISCVLegalizerInfo.cpp.ll
 ; llvm/optimized/RISCVMatInt.cpp.ll
@@ -244,14 +244,13 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; freetype/optimized/ftbase.c.ll
 ; freetype/optimized/ftbbox.c.ll
-; openusd/optimized/json.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i32 %1) #0 {
 entry:
-  %2 = sub nsw i32 4, %1
+  %2 = sub nsw i32 2, %1
   %3 = zext nneg i32 %2 to i64
   %4 = ashr i64 %0, %3
   ret i64 %4

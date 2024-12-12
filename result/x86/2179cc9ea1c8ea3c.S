@@ -1,10 +1,4 @@
-func000000000000000c:                   # @func000000000000000c
-	testl	%esi, %esi
-	movl	$16, %ecx
-	shlxl	%edi, %ecx, %eax
-	cmovel	%ecx, %eax
-	retq
-func0000000000000025:                   # @func0000000000000025
+func00000000000000a5:                   # @func00000000000000a5
 	cmpl	$2, %esi
 	movl	$-1, %eax
 	shlxl	%edi, %eax, %ecx

@@ -4,5 +4,5 @@ func0000000000000000:                   # @func0000000000000000
 	vfrsub.vf	v12, v12, fa5
 	fmv.w.x	fa5, zero
 	vfmul.vf	v12, v12, fa5
-	vfadd.vv	v8, v12, v8
+	vfadd.vv	v8, v8, v12
 	ret

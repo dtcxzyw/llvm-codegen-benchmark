@@ -18,7 +18,7 @@
 ; rocksdb/optimized/log_reader.cc.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp eq i32 %3, 0
@@ -26,7 +26,8 @@ entry:
   ret i1 %5
 }
 
-; 9 occurrences:
+; 10 occurrences:
+; boost/optimized/to_chars.ll
 ; cmake/optimized/alone_decoder.c.ll
 ; git/optimized/merge-ort.ll
 ; linux/optimized/memtype.ll
@@ -41,6 +42,21 @@ define i1 @func000000000000000c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = icmp ne i32 %3, 0
+  %5 = select i1 %0, i1 %4, i1 false
+  ret i1 %5
+}
+
+; 5 occurrences:
+; cmake/optimized/idna.c.ll
+; icu/optimized/utf_impl.ll
+; libuv/optimized/idna.c.ll
+; node/optimized/idna.ll
+; qemu/optimized/hw_scsi_esp.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or disjoint i32 %1, %2
+  %4 = icmp samesign ult i32 %3, 17
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -67,7 +83,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp ne i32 %3, 0
@@ -139,7 +155,7 @@ entry:
 ; libjpeg-turbo/optimized/rdbmp.c.ll
 ; openusd/optimized/decodeframe.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp sgt i32 %3, 0
@@ -147,11 +163,10 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; coreutils-rs/optimized/12183t08bisz8vo8.ll
-; icu/optimized/utf_impl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp ult i32 %3, 128
@@ -159,15 +174,17 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; eastl/optimized/string.cpp.ll
 ; icu/optimized/utf_impl.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; nori/optimized/nanovg.c.ll
 ; sentencepiece/optimized/util.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000038(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = icmp ugt i32 %3, 65535
+  %4 = icmp samesign ugt i32 %3, 65535
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }

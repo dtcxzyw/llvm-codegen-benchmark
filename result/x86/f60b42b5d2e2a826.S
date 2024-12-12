@@ -29,6 +29,26 @@ func0000000000000008:                   # @func0000000000000008
 	movl	$8, %eax
 	cmovbl	%ecx, %eax
 	retq
+func000000000000000a:                   # @func000000000000000a
+	andl	$1, %edx
+	xorl	$5, %edx
+	testb	$1, %sil
+	movl	$6, %ecx
+	cmovel	%edx, %ecx
+	cmpl	$100, %edi
+	movl	$5, %eax
+	cmovll	%ecx, %eax
+	retq
+func0000000000000018:                   # @func0000000000000018
+	andl	$1, %edx
+	leal	3(%rdx), %eax
+	testb	$1, %sil
+	movl	$5, %ecx
+	cmovel	%eax, %ecx
+	cmpl	$1000, %edi                     # imm = 0x3E8
+	movl	$6, %eax
+	cmovbl	%ecx, %eax
+	retq
 func0000000000000004:                   # @func0000000000000004
 	notb	%dl
 	movzbl	%dl, %eax
@@ -41,15 +61,14 @@ func0000000000000004:                   # @func0000000000000004
 	movl	$1, %eax
 	cmovael	%ecx, %eax
 	retq
-func000000000000000a:                   # @func000000000000000a
-	testb	$1, %dl
-	movl	$2648, %eax                     # imm = 0xA58
-	movl	$2089, %ecx                     # imm = 0x829
-	cmovnel	%eax, %ecx
+func0000000000000014:                   # @func0000000000000014
+	andl	$1, %edx
+	movl	$4, %eax
+	subl	%edx, %eax
 	testb	$1, %sil
-	movl	$13832, %edx                    # imm = 0x3608
-	cmovel	%ecx, %edx
-	cmpl	$9, %edi
-	movl	$13821, %eax                    # imm = 0x35FD
-	cmovll	%edx, %eax
+	movl	$2, %ecx
+	cmovel	%eax, %ecx
+	cmpl	$128, %edi
+	movl	$1, %eax
+	cmovael	%ecx, %eax
 	retq

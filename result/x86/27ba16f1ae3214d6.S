@@ -1,23 +1,23 @@
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	addq	%rdx, %rsi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	sete	%cl
 	testq	%rdi, %rdi
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000102:                   # @func0000000000000102
+func0000000000000202:                   # @func0000000000000202
 	addq	%rdx, %rsi
-	cmpq	%rdi, %rsi
-	setb	%cl
+	cmpq	%rsi, %rdi
+	seta	%cl
 	cmpq	$-1, %rdi
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000108:                   # @func0000000000000108
+func0000000000000208:                   # @func0000000000000208
 	addq	%rdx, %rsi
-	cmpq	%rdi, %rsi
-	seta	%cl
+	cmpq	%rsi, %rdi
+	setb	%cl
 	movabsq	$9223372036854775806, %rax      # imm = 0x7FFFFFFFFFFFFFFE
 	cmpq	%rax, %rdi
 	seta	%al

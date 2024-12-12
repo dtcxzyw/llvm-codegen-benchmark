@@ -13,7 +13,7 @@ define i1 @func000000000000000a(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
   %4 = shl i32 %1, %3
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   %6 = icmp sgt i32 %5, -1
   ret i1 %6
 }

@@ -43,7 +43,7 @@ func000000000000000f:                   # @func000000000000000f
 func000000000000000e:                   # @func000000000000000e
 	leal	256(%rdx), %eax
 	andl	$16711680, %eax                 # imm = 0xFF0000
-	andl	$16776960, %esi                 # imm = 0xFFFF00
+	andl	$8388352, %esi                  # imm = 0x7FFF00
 	orl	%edi, %esi
 	orl	%esi, %eax
 	retq

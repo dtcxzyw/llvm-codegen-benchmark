@@ -9,6 +9,6 @@ func0000000000000004:                   # @func0000000000000004
 	vcmpltpd	%zmm1, %zmm6, %k2
 	vmovapd	%zmm3, %zmm4 {%k2}
 	vmovapd	%zmm2, %zmm5 {%k1}
-	vaddpd	%zmm0, %zmm5, %zmm0
-	vaddpd	%zmm1, %zmm4, %zmm1
+	vaddpd	%zmm5, %zmm0, %zmm0
+	vaddpd	%zmm4, %zmm1, %zmm1
 	retq

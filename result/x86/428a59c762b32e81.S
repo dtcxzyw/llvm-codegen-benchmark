@@ -1,8 +1,3 @@
-func000000000000000a:                   # @func000000000000000a
-	movl	%esi, %eax
-	sarl	$16, %eax
-	imull	%edi, %eax
-	retq
 func0000000000000000:                   # @func0000000000000000
 	movl	%esi, %eax
 	sarl	$5, %eax
@@ -26,6 +21,11 @@ func0000000000000008:                   # @func0000000000000008
 func0000000000000002:                   # @func0000000000000002
 	movl	%esi, %eax
 	sarl	%eax
+	imull	%edi, %eax
+	retq
+func000000000000000a:                   # @func000000000000000a
+	movl	%esi, %eax
+	sarl	$24, %eax
 	imull	%edi, %eax
 	retq
 func0000000000000001:                   # @func0000000000000001

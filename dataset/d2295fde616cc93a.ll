@@ -1,5 +1,5 @@
 
-; 79 occurrences:
+; 80 occurrences:
 ; abc/optimized/absUtil.c.ll
 ; abc/optimized/infback.c.ll
 ; abc/optimized/inflate.c.ll
@@ -49,6 +49,7 @@
 ; lua/optimized/ltable.ll
 ; luau/optimized/ltable.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; mitsuba3/optimized/x86formatter.cpp.ll
 ; oiio/optimized/ddsinput.cpp.ll
 ; oiio/optimized/tiffinput.cpp.ll
@@ -83,7 +84,7 @@
 define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -126,7 +127,7 @@ entry:
 define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }

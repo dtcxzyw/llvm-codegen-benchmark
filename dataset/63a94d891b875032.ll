@@ -1,17 +1,4 @@
 
-; 2 occurrences:
-; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
-; Function Attrs: nounwind
-define i8 @func000000000000000c(i32 %0) #0 {
-entry:
-  %1 = lshr i32 %0, 8
-  %2 = and i32 %1, 15
-  %3 = shl nuw nsw i32 1, %2
-  %4 = trunc i32 %3 to i8
-  ret i8 %4
-}
-
 ; 9 occurrences:
 ; hyperscan/optimized/trufflecompile.cpp.ll
 ; icu/optimized/n2builder.ll
@@ -29,6 +16,18 @@ entry:
   %2 = and i32 %1, 7
   %3 = shl nuw nsw i32 1, %2
   %4 = trunc nuw i32 %3 to i8
+  ret i8 %4
+}
+
+; 1 occurrences:
+; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
+; Function Attrs: nounwind
+define i8 @func000000000000000c(i32 %0) #0 {
+entry:
+  %1 = lshr i32 %0, 3
+  %2 = and i32 %1, 7
+  %3 = shl nuw nsw i32 8, %2
+  %4 = trunc i32 %3 to i8
   ret i8 %4
 }
 

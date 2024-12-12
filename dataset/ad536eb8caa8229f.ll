@@ -1,10 +1,11 @@
 
-; 43 occurrences:
+; 45 occurrences:
 ; abc/optimized/giaFalse.c.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; icu/optimized/collationdatabuilder.ll
 ; llvm/optimized/APFixedPoint.cpp.ll
 ; llvm/optimized/CGExprScalar.cpp.ll
+; lvgl/optimized/lv_draw_sw_gradient.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/mg_ore.cpp.ll
 ; opencv/optimized/kalman_filter_no_opencv.cpp.ll
@@ -35,6 +36,7 @@
 ; wireshark/optimized/packet-h264.c.ll
 ; wireshark/optimized/packet-h265.c.ll
 ; wireshark/optimized/packet-per.c.ll
+; zed-rs/optimized/4hdn1csvepxizqbxhztzuw0uw.ll
 ; zfp/optimized/encode1f.c.ll
 ; zfp/optimized/encode1i.c.ll
 ; zfp/optimized/encode2f.c.ll

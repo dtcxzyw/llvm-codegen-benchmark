@@ -134,9 +134,10 @@ entry:
   ret i16 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; freetype/optimized/autofit.c.ll
 ; linux/optimized/extents.ll
+; lvgl/optimized/lv_freetype_glyph.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000008(i64 %0, i64 %1) #0 {

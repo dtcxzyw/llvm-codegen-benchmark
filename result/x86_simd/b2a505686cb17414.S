@@ -9,6 +9,6 @@ func000000000000000d:                   # @func000000000000000d
 	.quad	16                              # 0x10
 func0000000000000008:                   # @func0000000000000008
 	vpsrlq	$12, %ymm2, %ymm2
-	vpor	%ymm1, %ymm2, %ymm1
+	vpor	%ymm2, %ymm1, %ymm1
 	vpternlogq	$254, .LCPI1_0(%rip){1to4}, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | mem
 	retq

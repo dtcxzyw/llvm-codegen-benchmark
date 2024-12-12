@@ -30,6 +30,6 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 func000000000000000e:                   # @func000000000000000e
 	vpaddd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vcvtdq2pd	%ymm0, %zmm0
 	retq

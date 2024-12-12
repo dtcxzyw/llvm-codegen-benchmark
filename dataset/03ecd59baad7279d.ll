@@ -1,57 +1,17 @@
 
-; 46 occurrences:
-; abc/optimized/aigTsim.c.ll
-; brotli/optimized/utf8_util.c.ll
+; 6 occurrences:
 ; clamav/optimized/upx.c.ll
-; cmake/optimized/archive_string.c.ll
-; eastl/optimized/string.cpp.ll
-; freetype/optimized/sfnt.c.ll
-; git/optimized/convert.ll
-; harfbuzz/optimized/harfbuzz.cc.ll
-; harfbuzz/optimized/hb-static.cc.ll
-; harfbuzz/optimized/hb-subset-plan.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
-; icu/optimized/bmpset.ll
-; linux/optimized/cdrom.ll
-; linux/optimized/intel_engine_cs.ll
-; linux/optimized/intel_lrc.ll
-; linux/optimized/intel_workarounds.ll
-; linux/optimized/xz_dec_lzma2.ll
-; llvm/optimized/CallEvent.cpp.ll
-; llvm/optimized/YAMLParser.cpp.ll
-; luau/optimized/isocline.c.ll
-; node/optimized/simdutf.ll
-; openjdk/optimized/hb-aat-layout.ll
-; openjdk/optimized/hb-buffer.ll
-; openjdk/optimized/hb-common.ll
-; openjdk/optimized/hb-face.ll
-; openjdk/optimized/hb-font.ll
-; openjdk/optimized/hb-ot-layout.ll
-; openjdk/optimized/hb-ot-math.ll
-; openjdk/optimized/hb-ot-shape-fallback.ll
-; openjdk/optimized/hb-ot-shaper-arabic.ll
-; openjdk/optimized/hb-ot-var.ll
 ; openssl/optimized/libcrypto-lib-e_aes.ll
 ; openssl/optimized/libcrypto-lib-e_aria.ll
 ; openssl/optimized/libcrypto-shlib-e_aes.ll
 ; openssl/optimized/libcrypto-shlib-e_aria.ll
-; openusd/optimized/pathExpression.cpp.ll
-; openusd/optimized/pathParser.cpp.ll
-; openusd/optimized/predicateExpression.cpp.ll
-; php/optimized/encoding.ll
-; php/optimized/html.ll
-; postgres/optimized/euc_jp_and_sjis.ll
-; recastnavigation/optimized/DetourNavMeshBuilder.cpp.ll
 ; sentencepiece/optimized/util.cc.ll
-; sqlite/optimized/sqlite3.ll
-; zxing/optimized/QREncoder.cpp.ll
-; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000b4(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, %1
   %3 = add nsw i32 %2, -8
-  %4 = icmp ult i32 %3, 16
+  %4 = icmp samesign ult i32 %3, 16
   ret i1 %4
 }
 
@@ -80,14 +40,13 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; clamav/optimized/pe.c.ll
-; clamav/optimized/xlm_extract.c.ll
 ; linux/optimized/intel_display_power.ll
 ; mold/optimized/rust-demangle.c.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %0, %1
   %3 = add nsw i32 %2, -32
@@ -101,7 +60,7 @@ entry:
 ; openjdk/optimized/divnode.ll
 ; openjdk/optimized/pngrutil.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000086(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, %1
   %3 = add i32 %2, -1
@@ -109,17 +68,64 @@ entry:
   ret i1 %4
 }
 
-; 8 occurrences:
+; 40 occurrences:
+; abc/optimized/aigTsim.c.ll
+; brotli/optimized/utf8_util.c.ll
+; cmake/optimized/archive_string.c.ll
+; eastl/optimized/string.cpp.ll
+; freetype/optimized/sfnt.c.ll
+; git/optimized/convert.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-static.cc.ll
+; harfbuzz/optimized/hb-subset-plan.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; icu/optimized/bmpset.ll
+; linux/optimized/cdrom.ll
+; linux/optimized/intel_engine_cs.ll
+; linux/optimized/intel_lrc.ll
+; linux/optimized/intel_workarounds.ll
+; linux/optimized/xz_dec_lzma2.ll
+; llvm/optimized/CallEvent.cpp.ll
+; llvm/optimized/YAMLParser.cpp.ll
+; luau/optimized/isocline.c.ll
+; node/optimized/simdutf.ll
+; openjdk/optimized/hb-aat-layout.ll
+; openjdk/optimized/hb-buffer.ll
+; openjdk/optimized/hb-common.ll
+; openjdk/optimized/hb-face.ll
+; openjdk/optimized/hb-font.ll
+; openjdk/optimized/hb-ot-layout.ll
+; openjdk/optimized/hb-ot-math.ll
+; openjdk/optimized/hb-ot-shape-fallback.ll
+; openjdk/optimized/hb-ot-shaper-arabic.ll
+; openjdk/optimized/hb-ot-var.ll
+; openusd/optimized/pathExpression.cpp.ll
+; openusd/optimized/pathParser.cpp.ll
+; openusd/optimized/predicateExpression.cpp.ll
+; php/optimized/encoding.ll
+; php/optimized/html.ll
+; postgres/optimized/euc_jp_and_sjis.ll
+; recastnavigation/optimized/DetourNavMeshBuilder.cpp.ll
+; sqlite/optimized/sqlite3.ll
+; zxing/optimized/QREncoder.cpp.ll
+; zxing/optimized/zueci.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000a4(i32 %0, i32 %1) #0 {
+entry:
+  %2 = or disjoint i32 %0, %1
+  %3 = add nsw i32 %2, -16
+  %4 = icmp ult i32 %3, 16369
+  ret i1 %4
+}
+
+; 5 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
-; miniaudio/optimized/unity.c.ll
 ; openjdk/optimized/hb-font.ll
 ; openjdk/optimized/hb-ot-var.ll
-; raylib/optimized/raudio.c.ll
-; wireshark/optimized/visual.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000b8(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, %1
   %3 = add i32 %2, -3
@@ -136,7 +142,7 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; wireshark/optimized/packet-ssh.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, %1
   %3 = icmp eq i32 %2, 1
@@ -172,7 +178,7 @@ entry:
 ; wireshark/optimized/packet-ssh.c.ll
 ; yaml-cpp/optimized/emitterutils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000084(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, %1
   %3 = and i32 %2, -1024
@@ -183,7 +189,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/pkt-line.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %0, %1
   %3 = icmp ne i32 %2, 4
@@ -194,11 +200,22 @@ entry:
 ; clamav/optimized/mew.c.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000088(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, %1
   %3 = add i32 %2, -78
   %4 = icmp ult i32 %3, -14
+  ret i1 %4
+}
+
+; 1 occurrences:
+; clamav/optimized/xlm_extract.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
+entry:
+  %2 = or i32 %0, %1
+  %3 = add nsw i32 %2, -32768
+  %4 = icmp samesign ult i32 %3, 809
   ret i1 %4
 }
 
@@ -216,6 +233,19 @@ entry:
   ret i1 %4
 }
 
+; 3 occurrences:
+; miniaudio/optimized/unity.c.ll
+; raylib/optimized/raudio.c.ll
+; wireshark/optimized/visual.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000a8(i32 %0, i32 %1) #0 {
+entry:
+  %2 = or disjoint i32 %0, %1
+  %3 = add i32 %2, -262165
+  %4 = icmp ult i32 %3, -262145
+  ret i1 %4
+}
+
 ; 1 occurrences:
 ; z3/optimized/dl_sparse_table.cpp.ll
 ; Function Attrs: nounwind
@@ -229,7 +259,7 @@ entry:
 ; 1 occurrences:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000008a(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, %1
   %3 = add i32 %2, -1

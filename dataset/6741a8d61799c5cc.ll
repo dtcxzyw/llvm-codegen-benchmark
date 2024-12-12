@@ -1,9 +1,10 @@
 
-; 20 occurrences:
+; 21 occurrences:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libjpeg-turbo/optimized/jcdctmgr.c.ll
+; lvgl/optimized/lv_arc.ll
 ; meshoptimizer/optimized/overdrawoptimizer.cpp.ll
 ; meshoptimizer/optimized/vertexfilter.cpp.ll
 ; minetest/optimized/clientiface.cpp.ll

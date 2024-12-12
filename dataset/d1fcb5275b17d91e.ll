@@ -1,5 +1,5 @@
 
-; 46 occurrences:
+; 45 occurrences:
 ; abc/optimized/cuddAnneal.c.ll
 ; casadi/optimized/cs_updown.c.ll
 ; casadi/optimized/cvodes.c.ll
@@ -16,7 +16,6 @@
 ; meshlab/optimized/edit_mutualcorrs.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/intersection.cpp.ll
 ; opencv/optimized/dpm_cascade.cpp.ll

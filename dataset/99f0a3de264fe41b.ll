@@ -15,12 +15,13 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/path_traits.ll
 ; opencv/optimized/canny.cpp.ll
 ; openexr/optimized/ImfRgbaFile.cpp.ll
 ; quantlib/optimized/cmsmarketcalibration.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000048(i64 %0) #0 {
+define i64 @func0000000000000088(i64 %0) #0 {
 entry:
   %1 = mul nsw i64 %0, 3
   %2 = icmp ugt i64 %1, 2305843009213693951

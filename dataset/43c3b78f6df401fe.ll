@@ -8,7 +8,7 @@
 ; opencv/optimized/obsensor_stream_channel_v4l2.cpp.ll
 ; wireshark/optimized/packet-ethertype.c.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000011(i8 %0) #0 {
+define i16 @func0000000000000021(i8 %0) #0 {
 entry:
   %1 = icmp eq i8 %0, 0
   %2 = select i1 %1, i16 404, i16 500

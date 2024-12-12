@@ -1,9 +1,10 @@
 
-; 51 occurrences:
+; 50 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/bmcMaj3.c.ll
 ; abc/optimized/giaGen.c.ll
 ; abc/optimized/giaSimBase.c.ll
+; boost/optimized/alloc_lib.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/zstd_double_fast.c.ll
 ; cmake/optimized/zstd_fast.c.ll
@@ -28,8 +29,6 @@
 ; quest/optimized/QuEST_cpu.c.ll
 ; redis/optimized/base.ll
 ; redis/optimized/base.sym.ll
-; redis/optimized/bin.ll
-; redis/optimized/bin.sym.ll
 ; redis/optimized/buf_writer.ll
 ; redis/optimized/buf_writer.sym.ll
 ; redis/optimized/eset.ll
@@ -61,7 +60,8 @@ entry:
   ret i32 %6
 }
 
-; 79 occurrences:
+; 80 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
 ; fmt/optimized/header-only-test.cc.ll
@@ -147,7 +147,7 @@ entry:
   %3 = lshr i64 %1, %2
   %4 = trunc i64 %3 to i32
   %5 = and i32 %4, 1
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   ret i32 %6
 }
 

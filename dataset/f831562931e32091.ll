@@ -9,19 +9,18 @@
 ; ruby/optimized/string.ll
 ; ruby/optimized/thread.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000304(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000604(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 6
   %4 = icmp ne i64 %3, 0
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   %6 = icmp eq i64 %1, 0
   %7 = or i1 %5, %6
   ret i1 %7
 }
 
-; 25 occurrences:
+; 24 occurrences:
 ; abc/optimized/aigRetF.c.ll
-; abc/optimized/bmcLoad.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; git/optimized/rev-list.ll
 ; glslang/optimized/linkValidate.cpp.ll
@@ -46,11 +45,11 @@ entry:
 ; spike/optimized/csrs.ll
 ; wolfssl/optimized/tls13.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000042(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000082(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 31
   %4 = icmp eq i64 %3, 27
-  %5 = or i1 %4, %1
+  %5 = or i1 %1, %4
   %6 = icmp eq i64 %0, 0
   %7 = or i1 %6, %5
   ret i1 %7
@@ -63,18 +62,17 @@ entry:
 ; ruby/optimized/array.ll
 ; ruby/optimized/string.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000098(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 31
   %4 = icmp eq i64 %3, 27
-  %5 = or i1 %4, %1
+  %5 = or i1 %1, %4
   %6 = icmp ne i64 %0, 0
   %7 = or i1 %6, %5
   ret i1 %7
 }
 
-; 14 occurrences:
-; abc/optimized/bmcLoad.c.ll
+; 13 occurrences:
 ; libquic/optimized/v3_purp.c.ll
 ; linux/optimized/bio.ll
 ; linux/optimized/filemap.ll
@@ -89,11 +87,11 @@ entry:
 ; ruby/optimized/numeric.ll
 ; wolfssl/optimized/tls13.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000302(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000602(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 7
   %4 = icmp ne i64 %3, 0
-  %5 = or i1 %4, %1
+  %5 = or i1 %1, %4
   %6 = icmp eq i64 %0, 12
   %7 = or i1 %6, %5
   ret i1 %7
@@ -102,69 +100,64 @@ entry:
 ; 1 occurrences:
 ; ruby/optimized/class.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000330(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000630(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 7
   %4 = icmp ne i64 %3, 0
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   %6 = icmp ne i64 %1, 32771
   %7 = or i1 %5, %6
   ret i1 %7
 }
 
-; 4 occurrences:
-; cmake/optimized/setopt.c.ll
-; curl/optimized/libcurl_la-setopt.ll
+; 1 occurrences:
 ; lief/optimized/ccm.c.ll
-; linux/optimized/p4.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000310(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000610(i64 %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, 65528
+  %3 = and i64 %2, 1
   %4 = icmp ne i64 %3, 0
-  %5 = or i1 %4, %1
-  %6 = icmp ugt i64 %0, 524287
+  %5 = or i1 %1, %4
+  %6 = icmp ugt i64 %0, 65279
   %7 = or i1 %6, %5
+  ret i1 %7
+}
+
+; 1 occurrences:
+; just-rs/optimized/2sblcsgax6v4zfcc.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000b0(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 14
+  %4 = icmp eq i64 %3, 14
+  %5 = or i1 %0, %4
+  %6 = icmp ne i64 %1, 16
+  %7 = or i1 %5, %6
   ret i1 %7
 }
 
 ; 2 occurrences:
-; cmake/optimized/setopt.c.ll
-; curl/optimized/libcurl_la-setopt.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000050(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, 65534
-  %4 = icmp eq i64 %3, 2
+  %3 = and i64 %2, -4
+  %4 = icmp eq i64 %3, 8144
   %5 = or i1 %4, %1
-  %6 = icmp ugt i64 %0, 524287
+  %6 = icmp ult i64 %0, 6
   %7 = or i1 %6, %5
-  ret i1 %7
-}
-
-; 3 occurrences:
-; abc/optimized/giaLf.c.ll
-; abc/optimized/giaMuxes.c.ll
-; just-rs/optimized/2sblcsgax6v4zfcc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000070(i1 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = and i64 %2, 536870911
-  %4 = icmp eq i64 %3, 536870911
-  %5 = or i1 %4, %0
-  %6 = icmp ne i64 %1, 0
-  %7 = or i1 %5, %6
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 255
   %4 = icmp eq i64 %3, 255
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   %6 = icmp eq i64 %1, 0
   %7 = or i1 %5, %6
   ret i1 %7

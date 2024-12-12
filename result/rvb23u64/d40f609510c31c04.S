@@ -1,43 +1,43 @@
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	srai	a1, a1, 3
 	neg	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000074:                   # @func0000000000000074
+func00000000000000e4:                   # @func00000000000000e4
 	srai	a1, a1, 2
 	li	a2, 8
 	sub	a2, a2, a1
 	sltu	a0, a0, a2
 	ret
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	srai	a1, a1, 32
 	li	a2, -58
 	sub	a2, a2, a1
 	sltu	a0, a2, a0
 	ret
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	srai	a1, a1, 48
 	neg	a1, a1
 	slt	a0, a1, a0
 	ret
-func000000000000005c:                   # @func000000000000005c
+func00000000000000ac:                   # @func00000000000000ac
 	srai	a1, a1, 5
 	neg	a1, a1
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	srai	a1, a1, 2
 	neg	a1, a1
 	slt	a0, a0, a1
 	ret
-func0000000000000054:                   # @func0000000000000054
-	srai	a1, a1, 2
+func00000000000000a4:                   # @func00000000000000a4
+	srai	a1, a1, 4
 	neg	a1, a1
 	sltu	a0, a0, a1
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	srai	a1, a1, 1
 	neg	a1, a1
 	slt	a0, a0, a1

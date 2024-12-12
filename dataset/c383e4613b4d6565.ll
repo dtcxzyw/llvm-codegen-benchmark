@@ -84,11 +84,11 @@ entry:
   %4 = sub i64 %1, %3
   %5 = lshr exact i64 %4, 3
   %6 = trunc i64 %5 to i32
-  %7 = add nsw i32 %6, %0
+  %7 = add nsw i32 %0, %6
   ret i32 %7
 }
 
-; 256 occurrences:
+; 257 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; annoy/optimized/annoymodule.ll
@@ -238,7 +238,6 @@ entry:
 ; llvm/optimized/PoisonChecking.cpp.ll
 ; llvm/optimized/PreISelIntrinsicLowering.cpp.ll
 ; llvm/optimized/PredicateInfo.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RealtimeSanitizer.cpp.ll
 ; llvm/optimized/RegisterInfoEmitter.cpp.ll
 ; llvm/optimized/RelLookupTableConverter.cpp.ll
@@ -284,6 +283,7 @@ entry:
 ; luau/optimized/lapi.cpp.ll
 ; luau/optimized/lbuiltins.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
 ; meshlab/optimized/action_searcher.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
@@ -314,6 +314,7 @@ entry:
 ; ninja/optimized/dyndep.cc.ll
 ; nix/optimized/parser-tab.ll
 ; opencv/optimized/data.cpp.ll
+; opencv/optimized/find_ellipses.cpp.ll
 ; opencv/optimized/genericgfpoly.cpp.ll
 ; opencv/optimized/hough.cpp.ll
 ; opencv/optimized/pcaflow.cpp.ll
@@ -352,7 +353,7 @@ entry:
   %4 = sub i64 %1, %3
   %5 = lshr exact i64 %4, 4
   %6 = trunc i64 %5 to i32
-  %7 = add i32 %6, %0
+  %7 = add i32 %0, %6
   ret i32 %7
 }
 
@@ -374,7 +375,7 @@ entry:
   %4 = sub i64 %1, %3
   %5 = lshr i64 %4, 3
   %6 = trunc i64 %5 to i32
-  %7 = add i32 %6, %0
+  %7 = add i32 %0, %6
   ret i32 %7
 }
 
@@ -394,7 +395,7 @@ entry:
   %4 = sub i64 %1, %3
   %5 = lshr i64 %4, 3
   %6 = trunc i64 %5 to i32
-  %7 = add nsw i32 %6, %0
+  %7 = add nsw i32 %0, %6
   ret i32 %7
 }
 
@@ -407,7 +408,7 @@ entry:
   %4 = sub i64 %1, %3
   %5 = lshr exact i64 %4, 1
   %6 = trunc i64 %5 to i32
-  %7 = add nuw nsw i32 %6, %0
+  %7 = add nuw nsw i32 %0, %6
   ret i32 %7
 }
 
@@ -420,7 +421,7 @@ entry:
   %4 = sub i64 %1, %3
   %5 = lshr exact i64 %4, 1
   %6 = trunc i64 %5 to i32
-  %7 = add nuw i32 %6, %0
+  %7 = add nuw i32 %0, %6
   ret i32 %7
 }
 

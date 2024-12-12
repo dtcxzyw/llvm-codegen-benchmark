@@ -11,7 +11,7 @@ func0000000000000002:                   # @func0000000000000002
 	seta	%al
 	retq
 .LCPI1_0:
-	.long	0x3b808081                      # float 0.00392156886
+	.long	0x3f000000                      # float 0.5
 func0000000000000008:                   # @func0000000000000008
 	vmulss	.LCPI1_0(%rip), %xmm1, %xmm1
 	kmovd	%edi, %k1

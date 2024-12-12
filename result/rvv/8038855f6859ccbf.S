@@ -9,7 +9,7 @@ func0000000000000020:                   # @func0000000000000020
 	vmv1r.v	v0, v11
 	vmerge.vim	v10, v12, 1, v0
 	vsub.vv	v8, v8, v10
-	vadd.vv	v8, v14, v8
+	vadd.vv	v8, v8, v14
 	ret
 func0000000000000025:                   # @func0000000000000025
 	vsetivli	zero, 8, e8, mf2, ta, ma
@@ -22,7 +22,7 @@ func0000000000000025:                   # @func0000000000000025
 	vmv1r.v	v0, v11
 	vmerge.vim	v10, v12, 1, v0
 	vsub.vv	v8, v8, v10
-	vadd.vv	v8, v14, v8
+	vadd.vv	v8, v8, v14
 	ret
 func0000000000000024:                   # @func0000000000000024
 	vsetivli	zero, 8, e8, mf2, ta, ma
@@ -35,5 +35,5 @@ func0000000000000024:                   # @func0000000000000024
 	vmv1r.v	v0, v11
 	vmerge.vim	v10, v12, 1, v0
 	vsub.vv	v8, v8, v10
-	vadd.vv	v8, v14, v8
+	vadd.vv	v8, v8, v14
 	ret

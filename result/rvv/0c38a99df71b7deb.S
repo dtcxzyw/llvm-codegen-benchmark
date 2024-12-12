@@ -6,16 +6,6 @@ func000000000000003e:                   # @func000000000000003e
 	vnsrl.wi	v10, v8, 0
 	vmv.v.v	v8, v10
 	ret
-func0000000000000000:                   # @func0000000000000000
-	lui	a0, 8192
-	addiw	a0, a0, -675
-	slli	a0, a0, 7
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmacc.vx	v8, a0, v10
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vnsrl.wi	v10, v8, 0
-	vmv.v.v	v8, v10
-	ret
 func0000000000000004:                   # @func0000000000000004
 	li	a0, 36
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -36,6 +26,14 @@ func0000000000000014:                   # @func0000000000000014
 	lui	a0, 262083
 	slli	a0, a0, 2
 	addi	a0, a0, -576
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmacc.vx	v8, a0, v10
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vnsrl.wi	v10, v8, 0
+	vmv.v.v	v8, v10
+	ret
+func0000000000000000:                   # @func0000000000000000
+	li	a0, 85
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10
 	vsetvli	zero, zero, e32, m1, ta, ma

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; re2/optimized/re2.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000c4(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 6
   %4 = select i1 %0, i1 %3, i1 false
@@ -11,7 +11,7 @@ entry:
   ret i1 %6
 }
 
-; 14 occurrences:
+; 39 occurrences:
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; duckdb/optimized/ub_duckdb_func_date.cpp.ll
 ; git/optimized/index-pack.ll
@@ -26,8 +26,33 @@ entry:
 ; qemu/optimized/block_vmdk.c.ll
 ; qemu/optimized/hw_9pfs_9p.c.ll
 ; redis/optimized/module.ll
+; zed-rs/optimized/01a9u2e0i8wru57e54nrmyia7.ll
+; zed-rs/optimized/0b032pjjfhzfqpvy5k7rem7aa.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/2qu3ksqe5t2g2a0ursek881ws.ll
+; zed-rs/optimized/455yb6ma6j3a5kpbn5166o5rm.ll
+; zed-rs/optimized/4hp0irs2cz4kzngruuptibfn4.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/553y3uma3m7pxzk4dar8hjwb6.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/5zwiozx0qizoaz5dy257szmof.ll
+; zed-rs/optimized/6r3dn74hs4qkhjs23erjoyfu5.ll
+; zed-rs/optimized/7tab72wd3e4t2kifacclhb85x.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/8eg3c68hjyduepshag5n9ghr7.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
+; zed-rs/optimized/a48ncfl2mo4yu8srnhcxrs0e7.ll
+; zed-rs/optimized/a9n822469hhbvmntwly5c3zys.ll
+; zed-rs/optimized/ag0lml678ueaz8wuwxuz1u0bn.ll
+; zed-rs/optimized/bxqgsrk0kqvq41wnnozsjp44k.ll
+; zed-rs/optimized/byetpqxts7g45vq87gqqiy5uv.ll
+; zed-rs/optimized/c8rrq6pnwhh8lrfnv140dr3y1.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 10
   %4 = select i1 %0, i1 %3, i1 false
@@ -40,7 +65,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-bio_print.ll
 ; openssl/optimized/libcrypto-shlib-bio_print.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %0, i1 %3, i1 false
@@ -52,7 +77,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/is_csv.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %0, i1 %3, i1 false
@@ -64,7 +89,7 @@ entry:
 ; 1 occurrences:
 ; flac/optimized/encode.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000144(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
   %4 = select i1 %0, i1 %3, i1 false
@@ -79,7 +104,7 @@ entry:
 ; redis/optimized/script.ll
 ; wasmtime-rs/optimized/1zz7jsxv168dc7km.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000018c(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 1
   %4 = select i1 %0, i1 %3, i1 false
@@ -92,7 +117,7 @@ entry:
 ; memcached/optimized/memcached-memcached.ll
 ; memcached/optimized/memcached_debug-memcached.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a6(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000146(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
   %4 = select i1 %0, i1 %3, i1 false
@@ -105,7 +130,7 @@ entry:
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; redis/optimized/t_stream.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 7
   %4 = select i1 %0, i1 %3, i1 false
@@ -115,21 +140,9 @@ entry:
 }
 
 ; 1 occurrences:
-; wireshark/optimized/packet-tcp.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000c4(i1 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ne i32 %2, 0
-  %4 = select i1 %0, i1 %3, i1 false
-  %5 = icmp ult i64 %1, 3
-  %6 = select i1 %4, i1 %5, i1 false
-  ret i1 %6
-}
-
-; 1 occurrences:
 ; linux/optimized/gen8_ppgtt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000101(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %2, 2097151
   %4 = select i1 %0, i1 %3, i1 false
@@ -141,7 +154,7 @@ entry:
 ; 1 occurrences:
 ; cvc5/optimized/resolution_proofs_util.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000088(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 2
   %4 = select i1 %0, i1 %3, i1 false
@@ -153,7 +166,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/selfuncs.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000018a(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = select i1 %0, i1 %3, i1 false
@@ -254,7 +267,7 @@ entry:
 ; xgboost/optimized/updater_sync.cc.ll
 ; xgboost/optimized/version.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %0, i1 %3, i1 false

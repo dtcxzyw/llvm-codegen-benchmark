@@ -5,11 +5,11 @@
 ; luajit/optimized/lj_api_dyn.ll
 ; php/optimized/zend_alloc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(i32 %0, i64 %1) #0 {
+define ptr @func000000000000000e(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -2097152
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw i8, ptr %3, i64 520
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 520
   %5 = sext i32 %0 to i64
   %6 = getelementptr nusw [512 x i32], ptr %4, i64 0, i64 %5
   ret ptr %6
@@ -31,11 +31,11 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/assoc_array.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(i32 %0, i64 %1) #0 {
+define ptr @func000000000000000c(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -4
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw i8, ptr %3, i64 24
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 24
   %5 = sext i32 %0 to i64
   %6 = getelementptr [0 x i64], ptr %4, i64 0, i64 %5
   ret ptr %6

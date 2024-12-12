@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; cmake/optimized/zstd_compress.c.ll
@@ -14,6 +14,7 @@
 ; quickjs/optimized/libbf.ll
 ; rust-analyzer-rs/optimized/3o2zsvb0ik8z2nqt.ll
 ; yosys/optimized/BigUnsigned.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; zxing/optimized/ZXBigInteger.cpp.ll
 ; Function Attrs: nounwind
@@ -25,7 +26,7 @@ entry:
   ret i64 %5
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; abseil-cpp/optimized/civil_time.cc.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time.cc.ll
@@ -37,7 +38,6 @@ entry:
 ; eastl/optimized/EATest.cpp.ll
 ; eastl/optimized/eathread_pool.cpp.ll
 ; freetype/optimized/autofit.c.ll
-; libevent/optimized/evthread_pthread.c.ll
 ; php/optimized/dow.ll
 ; php/optimized/tm2unixtime.ll
 ; php/optimized/unixtime2tm.ll

@@ -19,7 +19,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
-func000000000000014c:                   # @func000000000000014c
+func000000000000048c:                   # @func000000000000048c
 	vpmovsxbd	%xmm0, %ymm1
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
 	vpcmpneqb	.LCPI0_1(%rip), %xmm0, %k1
@@ -48,7 +48,7 @@ func000000000000014c:                   # @func000000000000014c
 	.zero	1
 	.zero	1
 	.zero	1
-func000000000000014a:                   # @func000000000000014a
+func000000000000048a:                   # @func000000000000048a
 	vpmovsxbd	%xmm0, %ymm1
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
 	vpcmpgtb	.LCPI1_1(%rip), %xmm0, %k1

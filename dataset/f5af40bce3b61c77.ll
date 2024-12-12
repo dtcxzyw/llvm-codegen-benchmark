@@ -1,9 +1,7 @@
 
-; 5 occurrences:
-; linux/optimized/dma-iommu.ll
+; 3 occurrences:
 ; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/ExprCXX.cpp.ll
-; ruby/optimized/eval.ll
 ; ruby/optimized/regcomp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i32 %0, i64 %1) #0 {
@@ -14,13 +12,21 @@ entry:
   ret i32 %4
 }
 
-; 8 occurrences:
-; arrow/optimized/value_parsing.cc.ll
+; 2 occurrences:
+; linux/optimized/dma-iommu.ll
+; ruby/optimized/eval.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000050(i32 %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ult i64 %1, 1000000000
+  %3 = select i1 %2, i32 1, i32 10
+  %4 = add i32 %3, %0
+  ret i32 %4
+}
+
+; 4 occurrences:
+; boost/optimized/to_chars.ll
 ; icu/optimized/number_affixutils.ll
-; meshlab/optimized/filter_screened_poisson.cpp.ll
-; mitsuba3/optimized/string.cpp.ll
-; openspiel/optimized/backgammon.cc.ll
-; openusd/optimized/refinerSurfaceFactory.cpp.ll
 ; ruby/optimized/util.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
@@ -32,28 +38,44 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
-; cmake/optimized/zstd_compress_literals.c.ll
+; 9 occurrences:
+; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
+; mitsuba3/optimized/string.cpp.ll
+; openspiel/optimized/backgammon.cc.ll
+; openusd/optimized/refinerSurfaceFactory.cpp.ll
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000051(i32 %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ult i64 %1, 16777216
+  %3 = select i1 %2, i32 126, i32 127
+  %4 = add nsw i32 %3, %0
+  ret i32 %4
+}
+
+; 2 occurrences:
 ; openssl/optimized/libcrypto-lib-p12_utl.ll
 ; openssl/optimized/libcrypto-shlib-p12_utl.ll
-; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000023(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000063(i32 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ugt i64 %1, 65535
+  %2 = icmp samesign ugt i64 %1, 65535
   %3 = select i1 %2, i32 4, i32 2
   %4 = add nuw nsw i32 %3, %0
   ret i32 %4
 }
 
-; 20 occurrences:
+; 19 occurrences:
 ; abc/optimized/giaKf.c.ll
 ; hermes/optimized/CFG.cpp.ll
 ; libquic/optimized/a_strex.c.ll
 ; llvm/optimized/Dominators.cpp.ll
 ; llvm/optimized/MachineDominators.cpp.ll
 ; llvm/optimized/MachinePostDominators.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertReadWriteCSR.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInsertWriteVXRM.cpp.ll
@@ -121,7 +143,7 @@ define i32 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %1, 999999999999999999
   %3 = select i1 %2, i32 19, i32 18
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -132,7 +154,7 @@ define i32 @func0000000000000019(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp slt i64 %1, -3600
   %3 = select i1 %2, i32 900000, i32 36000
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -152,7 +174,7 @@ define i32 @func0000000000000007(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 6
   %3 = select i1 %2, i32 2, i32 1
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -163,13 +185,12 @@ define i32 @func000000000000002b(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i64 %1, -1
   %3 = select i1 %2, i32 5, i32 9
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; llvm/optimized/TokenAnnotator.cpp.ll
-; openspiel/optimized/Scheduler.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000013(i32 %0, i64 %1) #0 {
 entry:
@@ -199,7 +220,30 @@ define i32 @func0000000000000028(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i64 %1, 65535
   %3 = select i1 %2, i32 11, i32 7
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
+  ret i32 %4
+}
+
+; 1 occurrences:
+; openspiel/optimized/Scheduler.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000053(i32 %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ult i64 %1, 4096
+  %3 = select i1 %2, i32 0, i32 13
+  %4 = add nuw nsw i32 %0, %3
+  ret i32 %4
+}
+
+; 2 occurrences:
+; cmake/optimized/zstd_compress_literals.c.ll
+; zstd/optimized/zstd_compress_literals.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000023(i32 %0, i64 %1) #0 {
+entry:
+  %2 = icmp ugt i64 %1, 31
+  %3 = select i1 %2, i32 2, i32 1
+  %4 = add nuw nsw i32 %3, %0
   ret i32 %4
 }
 
@@ -211,7 +255,7 @@ define i32 @func0000000000000030(i32 %0, i64 %1) #0 {
 entry:
   %.not = icmp eq i64 %1, 0
   %2 = select i1 %.not, i32 45056, i32 47104
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   ret i32 %3
 }
 

@@ -1,9 +1,12 @@
 
-; 52 occurrences:
+; 53 occurrences:
 ; abc/optimized/ifDec07.c.ll
 ; abc/optimized/saigPhase.c.ll
+; abseil-cpp/optimized/arg.cc.ll
+; abseil-cpp/optimized/charconv.cc.ll
 ; abseil-cpp/optimized/charset_test.cc.ll
 ; abseil-cpp/optimized/string_view_test.cc.ll
+; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; actix-rs/optimized/3arfg1ogrgyw4qv2.ll
 ; arrow/optimized/encode_internal.cc.ll
 ; arrow/optimized/encode_internal_avx2.cc.ll
@@ -23,8 +26,6 @@
 ; libquic/optimized/quic_received_packet_manager.cc.ll
 ; libquic/optimized/time.cc.ll
 ; linux/optimized/intel_gt_requests.ll
-; linux/optimized/page-writeback.ll
-; linux/optimized/page_alloc.ll
 ; llvm/optimized/MachineInstr.cpp.ll
 ; llvm/optimized/MemoryLocation.cpp.ll
 ; llvm/optimized/X86FastISel.cpp.ll
@@ -45,12 +46,12 @@
 ; quickjs/optimized/quickjs.ll
 ; redis/optimized/stats.ll
 ; redis/optimized/stats.sym.ll
-; ripgrep-rs/optimized/vfmkapehee5qzol.ll
 ; ruby/optimized/hash.ll
 ; ruby/optimized/weakmap.ll
 ; sentencepiece/optimized/extension_set.cc.ll
 ; tev/optimized/Common.cpp.ll
-; wasmtime-rs/optimized/joyny9bexuq72mb.ll
+; tree-sitter-rs/optimized/1o0ocmb45sbun3ez.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
 ; zstd/optimized/zstd_decompress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i1 %1, i64 %2) #0 {

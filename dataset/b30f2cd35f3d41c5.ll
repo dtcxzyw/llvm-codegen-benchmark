@@ -4,7 +4,7 @@
 ; openjdk/optimized/xBarrierSetC2.ll
 ; slurm/optimized/gres_sock_list.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i1 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000018a(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = and i1 %3, %0
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/filemap.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000018c(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = and i1 %3, %0

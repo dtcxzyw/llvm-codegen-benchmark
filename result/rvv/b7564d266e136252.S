@@ -31,7 +31,7 @@ func0000000000000035:                   # @func0000000000000035
 func0000000000000011:                   # @func0000000000000011
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vi	v9, v9, -1
-	vmul.vv	v8, v9, v8
+	vmul.vv	v8, v8, v9
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsext.vf2	v10, v8
 	vsll.vi	v8, v10, 2
@@ -61,7 +61,7 @@ func0000000000000037:                   # @func0000000000000037
 func0000000000000013:                   # @func0000000000000013
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vi	v9, v9, 2
-	vmul.vv	v8, v9, v8
+	vmul.vv	v8, v8, v9
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsext.vf2	v10, v8
 	vsll.vi	v8, v10, 2

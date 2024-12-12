@@ -1,6 +1,5 @@
 
-; 21 occurrences:
-; grpc/optimized/ev_poll_posix.cc.ll
+; 20 occurrences:
 ; icu/optimized/ucase.ll
 ; icu/optimized/ucnvbocu.ll
 ; linux/optimized/hooks.ll
@@ -35,7 +34,7 @@ entry:
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-ospf.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i16 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 2
   %4 = icmp eq i16 %3, 0
@@ -47,7 +46,7 @@ entry:
 ; linux/optimized/libata-core.ll
 ; postgres/optimized/big5.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i32 %1, i16 %2) #0 {
+define i32 @func0000000000000018(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 6
   %.not = icmp eq i16 %3, 0

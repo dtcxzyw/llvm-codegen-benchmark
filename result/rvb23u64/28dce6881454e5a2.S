@@ -48,3 +48,16 @@ func0000000000000019:                   # @func0000000000000019
 	srli	a0, a0, 4
 	addi	a0, a0, -182
 	ret
+.LCPI5_0:
+	.quad	2635249153387078803             # 0x2492492492492493
+func0000000000000011:                   # @func0000000000000011
+	lui	a1, %hi(.LCPI5_0)
+	ld	a1, %lo(.LCPI5_0)(a1)
+	addi	a0, a0, 8
+	mulhu	a1, a0, a1
+	sub	a0, a0, a1
+	srli	a0, a0, 1
+	add	a0, a0, a1
+	srli	a0, a0, 2
+	addi	a0, a0, -1
+	ret

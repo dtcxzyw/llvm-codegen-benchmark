@@ -21,11 +21,11 @@ define i1 @func0000000000000004(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, -8
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   ret i1 %4
 }
 
-; 79 occurrences:
+; 81 occurrences:
 ; abc/optimized/abcStrash.c.ll
 ; abc/optimized/aigPart.c.ll
 ; abc/optimized/aigRepr.c.ll
@@ -88,6 +88,8 @@ entry:
 ; llvm/optimized/SemaOverload.cpp.ll
 ; llvm/optimized/Store.cpp.ll
 ; llvm/optimized/TextNodeDumper.cpp.ll
+; lvgl/optimized/lv_grid.ll
+; lvgl/optimized/lv_string_builtin.ll
 ; opencv/optimized/emd.cpp.ll
 ; openjdk/optimized/edgeStore.ll
 ; openjdk/optimized/psParallelCompact.ll
@@ -110,7 +112,7 @@ define i1 @func0000000000000001(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, -16
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
@@ -124,7 +126,7 @@ define i1 @func000000000000000c(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, -4
-  %4 = icmp ne i64 %3, %0
+  %4 = icmp ne i64 %0, %3
   ret i1 %4
 }
 
@@ -138,7 +140,7 @@ define i1 @func0000000000000008(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, -4
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   ret i1 %4
 }
 

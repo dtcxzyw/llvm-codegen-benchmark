@@ -1,10 +1,14 @@
 
-; 93 occurrences:
+; 113 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; abseil-cpp/optimized/numbers.cc.ll
 ; arrow/optimized/basic_decimal.cc.ll
 ; assimp/optimized/ColladaExporter.cpp.ll
+; boost/optimized/authority_view.ll
+; boost/optimized/to_chars.ll
+; boost/optimized/url_base.ll
+; boost/optimized/url_view_base.ll
 ; brotli/optimized/entropy_encode.c.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
@@ -40,7 +44,6 @@
 ; hermes/optimized/HadesGC.cpp.ll
 ; hyperscan/optimized/ng_violet.cpp.ll
 ; libquic/optimized/sha512.c.ll
-; linux/optimized/fs-writeback.ll
 ; linux/optimized/timekeeping.ll
 ; linux/optimized/zstd_decompress.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -61,8 +64,6 @@
 ; openmpi/optimized/gds_fetch.ll
 ; openmpi/optimized/gds_shmem_fetch.ll
 ; openmpi/optimized/onesided_aggregation.ll
-; openmpi/optimized/os_path.ll
-; openmpi/optimized/pmix_os_path.ll
 ; openssl/optimized/libcrypto-lib-sha512.ll
 ; openssl/optimized/libcrypto-shlib-sha512.ll
 ; openusd/optimized/fileSystem.cpp.ll
@@ -82,7 +83,6 @@
 ; spike/optimized/f128_rem.ll
 ; spike/optimized/f128_sqrt.ll
 ; spike/optimized/s_addMagsF128.ll
-; spike/optimized/s_mul64To128M.ll
 ; spike/optimized/s_mulAddF128.ll
 ; spike/optimized/s_mulAddF64.ll
 ; syn/optimized/59s55fjcmu2d325w.ll
@@ -91,6 +91,26 @@
 ; wireshark/optimized/busmaster.c.ll
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
+; zed-rs/optimized/1jbe4zqf10fi4dnkcvibaggjj.ll
+; zed-rs/optimized/2tnb5q2nu282joegshdwbwmo4.ll
+; zed-rs/optimized/34wa3jua7n3vs803j44lzfk5b.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/3asl26bwuz5g6rf3ammr043cc.ll
+; zed-rs/optimized/3gxjnopqjcvfkrlhukk2wsrdt.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
+; zed-rs/optimized/5kpr1irzb57viu7vn1ci12z94.ll
+; zed-rs/optimized/5syv1375c7i7870jctt3co1ip.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/6hbnfszf6gkk4nniq4f5ts2z6.ll
+; zed-rs/optimized/74i1v673pe7qetuqalfjvc8x1.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/an9c1nbjiirpzpjk20en0tyzy.ll
+; zed-rs/optimized/cgceu28znx3lfd8ddk7c9uglp.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; zstd/optimized/zstd_decompress.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
@@ -102,42 +122,7 @@ entry:
   ret i64 %5
 }
 
-; 25 occurrences:
-; bullet3/optimized/b3ConvexHullComputer.ll
-; bullet3/optimized/btConvexHullComputer.ll
-; cmake/optimized/ProcessUNIX.c.ll
-; cmake/optimized/multi.c.ll
-; cpython/optimized/convolute.ll
-; cpython/optimized/crt.ll
-; cpython/optimized/difradix2.ll
-; cpython/optimized/fourstep.ll
-; cpython/optimized/numbertheory.ll
-; cpython/optimized/sixstep.ll
-; curl/optimized/libcurl_la-multi.ll
-; delta-rs/optimized/2braxl0lj34anf5z.ll
-; eastl/optimized/EATest.cpp.ll
-; eastl/optimized/eathread_pool.cpp.ll
-; libevent/optimized/event.c.ll
-; libevent/optimized/evthread_pthread.c.ll
-; libquic/optimized/time_support.c.ll
-; linux/optimized/timeconv.ll
-; llvm/optimized/MachineInstr.cpp.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; php/optimized/unixtime2tm.ll
-; qemu/optimized/fpu_softfloat.c.ll
-; quickjs/optimized/libbf.ll
-; quickjs/optimized/quickjs.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000005(i64 %0, i64 %1, i1 %2) #0 {
-entry:
-  %3 = zext i1 %2 to i64
-  %4 = add nsw i64 %0, %1
-  %5 = add nsw i64 %4, %3
-  ret i64 %5
-}
-
-; 59 occurrences:
+; 69 occurrences:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver3.c.ll
 ; abc/optimized/solver.c.ll
@@ -196,6 +181,16 @@ entry:
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
 ; wasmtime-rs/optimized/pc3lkwoxfkbj2dl.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/28x1e2vfzxi98zqprbft2w8hu.ll
+; zed-rs/optimized/3hsn9nyfo1lk9hjlnx6o7tl2d.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/4jjx0s36b1sfrqbb0zz907syp.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/8v0fi0zpujn3n5viw54gladc4.ll
+; zed-rs/optimized/9fz5l76t5byggb8exxkeuxjql.ll
+; zed-rs/optimized/a50lo7f303ucwqc37yc15xnyr.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1, i1 %2) #0 {
@@ -222,6 +217,38 @@ entry:
   %3 = zext i1 %2 to i64
   %4 = add nuw i64 %0, %1
   %5 = add i64 %4, %3
+  ret i64 %5
+}
+
+; 22 occurrences:
+; bullet3/optimized/b3ConvexHullComputer.ll
+; bullet3/optimized/btConvexHullComputer.ll
+; cmake/optimized/ProcessUNIX.c.ll
+; cmake/optimized/multi.c.ll
+; cpython/optimized/convolute.ll
+; cpython/optimized/crt.ll
+; cpython/optimized/difradix2.ll
+; cpython/optimized/fourstep.ll
+; cpython/optimized/numbertheory.ll
+; cpython/optimized/sixstep.ll
+; curl/optimized/libcurl_la-multi.ll
+; delta-rs/optimized/2braxl0lj34anf5z.ll
+; eastl/optimized/EATest.cpp.ll
+; eastl/optimized/eathread_pool.cpp.ll
+; libevent/optimized/event.c.ll
+; libquic/optimized/time_support.c.ll
+; linux/optimized/timeconv.ll
+; llvm/optimized/MachineInstr.cpp.ll
+; php/optimized/unixtime2tm.ll
+; qemu/optimized/fpu_softfloat.c.ll
+; quickjs/optimized/libbf.ll
+; quickjs/optimized/quickjs.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000005(i64 %0, i64 %1, i1 %2) #0 {
+entry:
+  %3 = zext i1 %2 to i64
+  %4 = add nsw i64 %0, %1
+  %5 = add nsw i64 %4, %3
   ret i64 %5
 }
 

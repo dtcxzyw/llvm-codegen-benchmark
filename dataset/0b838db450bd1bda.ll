@@ -1,6 +1,7 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/src.ll
 ; cpython/optimized/obmalloc.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll
 ; openjdk/optimized/os.ll

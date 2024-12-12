@@ -34,7 +34,7 @@ define i64 @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 16807
   %3 = and i64 %2, 2147483647
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -45,7 +45,7 @@ define i64 @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw i64 %1, 2654435761
   %3 = and i64 %2, 4294967295
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   ret i64 %4
 }
 
@@ -57,7 +57,7 @@ define i64 @func000000000000000b(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw i64 %1, 3266489917
   %3 = and i64 %2, 4294967295
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -71,17 +71,6 @@ entry:
   %2 = mul i64 %1, 3
   %3 = and i64 %2, 4294967295
   %4 = add nuw nsw i64 %3, %0
-  ret i64 %4
-}
-
-; 1 occurrences:
-; pbrt-v4/optimized/image.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
-entry:
-  %2 = mul i64 %1, 3
-  %3 = and i64 %2, 4294967295
-  %4 = add nsw i64 %3, %0
   ret i64 %4
 }
 

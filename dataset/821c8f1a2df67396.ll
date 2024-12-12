@@ -11,8 +11,7 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
-; hyperscan/optimized/limex_compile.cpp.ll
+; 3 occurrences:
 ; nix/optimized/profiles.ll
 ; nuttx/optimized/lib_gmtimer.c.ll
 ; sqlite/optimized/sqlite3.ll

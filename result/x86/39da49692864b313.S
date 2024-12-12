@@ -5,14 +5,14 @@ func0000000000000001:                   # @func0000000000000001
 	cmpb	$43, %dil
 	cmovel	%ecx, %eax
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	leal	(%rsi,%rdx), %ecx
 	movl	%ecx, %eax
 	negl	%eax
 	cmpb	$43, %dil
 	cmovel	%ecx, %eax
 	retq
-func0000000000000054:                   # @func0000000000000054
+func00000000000000b4:                   # @func00000000000000b4
 	leal	(%rsi,%rdx), %ecx
 	movl	%ecx, %eax
 	negl	%eax

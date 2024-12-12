@@ -3,7 +3,7 @@ func0000000000000001:                   # @func0000000000000001
 	vadd.vi	v12, v12, 1
 	vfcvt.f.x.v	v12, v12
 	vfsub.vv	v10, v10, v12
-	vfadd.vv	v8, v10, v8
+	vfadd.vv	v8, v8, v10
 	fli.s	fa5, 0.5
 	vfmul.vf	v8, v8, fa5
 	ret

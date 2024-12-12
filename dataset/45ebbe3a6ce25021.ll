@@ -68,8 +68,7 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
-; proj/optimized/cs2cs.cpp.ll
+; 1 occurrences:
 ; quantlib/optimized/concentrating1dmesher.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000087(double %0, double %1) #0 {
@@ -100,6 +99,30 @@ entry:
   %2 = fcmp oeq double %1, 0x47EFFFFFE0000000
   %3 = fcmp oeq double %0, 0x47EFFFFFE0000000
   %4 = select i1 %2, i1 true, i1 %3
+  ret i1 %4
+}
+
+; 2 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000048(double %0, double %1) #0 {
+entry:
+  %2 = fcmp ule double %1, 9.000000e+01
+  %3 = fcmp oeq double %0, 0.000000e+00
+  %4 = select i1 %2, i1 %3, i1 false
+  ret i1 %4
+}
+
+; 2 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000042(double %0, double %1) #0 {
+entry:
+  %2 = fcmp ule double %1, 9.000000e+01
+  %3 = fcmp olt double %0, 0.000000e+00
+  %4 = select i1 %2, i1 %3, i1 false
   ret i1 %4
 }
 

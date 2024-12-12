@@ -1,9 +1,8 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; cpython/optimized/_datetimemodule.ll
 ; flac/optimized/picture.c.ll
 ; libjpeg-turbo/optimized/rdbmp.c.ll
-; wireshark/optimized/dpa400.c.ll
 ; wireshark/optimized/packet-selfm.c.ll
 ; wireshark/optimized/peekclassic.c.ll
 ; Function Attrs: nounwind

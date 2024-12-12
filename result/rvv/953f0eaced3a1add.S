@@ -3,7 +3,7 @@ func0000000000000004:                   # @func0000000000000004
 	vnsrl.wi	v9, v10, 0
 	lui	a0, 8
 	vnot.v	v9, v9
-	vadd.vv	v8, v9, v8
+	vadd.vv	v8, v8, v9
 	vadd.vx	v8, v8, a0
 	lui	a0, 16
 	vmsltu.vx	v0, v8, a0

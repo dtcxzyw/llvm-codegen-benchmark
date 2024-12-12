@@ -1,5 +1,5 @@
 
-%struct.hb_pair_t.2617263 = type { i32, i32 }
+%struct.hb_pair_t.2730715 = type { i32, i32 }
 
 ; 22 occurrences:
 ; brotli/optimized/encode.c.ll
@@ -25,13 +25,13 @@
 ; openvdb/optimized/points.cc.ll
 ; raylib/optimized/rmodels.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 6
   %4 = and i32 %3, 448
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw i32, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i32, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -51,13 +51,13 @@ entry:
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = and i32 %3, 3840
   %5 = or disjoint i32 %4, %1
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw %struct.hb_pair_t.2617263, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %struct.hb_pair_t.2730715, ptr %0, i64 %6
   ret ptr %7
 }
 

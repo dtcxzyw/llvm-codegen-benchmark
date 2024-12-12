@@ -8,7 +8,7 @@
 ; openssl/optimized/libcrypto-shlib-evp_enc.ll
 ; yosys/optimized/opt_expr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(ptr %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000318(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = select i1 %3, i1 true, i1 %1
@@ -28,7 +28,7 @@ entry:
 ; wireshark/optimized/packet-enip.c.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(ptr %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000042(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, i1 true, i1 %1
@@ -42,7 +42,7 @@ entry:
 ; openjdk/optimized/parse1.ll
 ; php/optimized/zend_language_scanner.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(ptr %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000302(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = select i1 %3, i1 true, i1 %1

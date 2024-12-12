@@ -29,6 +29,18 @@ entry:
   ret i32 %6
 }
 
+; 1 occurrences:
+; lvgl/optimized/lv_binfont_loader.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 3
+  %4 = add i32 %3, %1
+  %5 = xor i32 %4, -1
+  %6 = add i32 %0, %5
+  ret i32 %6
+}
+
 ; 2 occurrences:
 ; cmake/optimized/zstd_fast.c.ll
 ; zstd/optimized/zstd_fast.c.ll

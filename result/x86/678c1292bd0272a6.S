@@ -1,26 +1,25 @@
 func0000000000000010:                   # @func0000000000000010
 	testb	$1, %dl
-	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
-	movabsq	$18446744073709551, %rcx        # imm = 0x4189374BC6A7EF
+	movl	$65535, %eax                    # imm = 0xFFFF
+	movl	$18437, %ecx                    # imm = 0x4805
 	cmovneq	%rax, %rcx
-	cmpq	%rsi, %rcx
-	setb	%al
+	cmpq	%rcx, %rsi
+	seta	%al
 	orb	%dil, %al
 	retq
 func0000000000000012:                   # @func0000000000000012
-	notb	%dl
-	movzbl	%dl, %eax
-	andl	$1, %eax
-	shll	$6, %eax
-	addq	$64, %rax
-	cmpq	%rsi, %rax
-	setbe	%al
+	testb	$1, %dl
+	movl	$2015, %eax                     # imm = 0x7DF
+	movl	$223, %ecx
+	cmovneq	%rax, %rcx
+	cmpq	%rcx, %rsi
+	setae	%al
 	orb	%dil, %al
 	retq
 func0000000000000002:                   # @func0000000000000002
 	andl	$1, %edx
 	addl	%edx, %edx
-	cmpq	%rsi, %rdx
+	cmpq	%rdx, %rsi
 	sete	%al
 	orb	%dil, %al
 	retq

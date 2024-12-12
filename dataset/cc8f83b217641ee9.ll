@@ -1,5 +1,5 @@
 
-; 148 occurrences:
+; 138 occurrences:
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/ifDec75.c.ll
 ; abc/optimized/mapperCut.c.ll
@@ -15,25 +15,18 @@
 ; darktable/optimized/AbstractLJpegDecoder.cpp.ll
 ; darktable/optimized/Camera.cpp.ll
 ; darktable/optimized/CrwDecompressor.cpp.ll
-; darktable/optimized/DngDecoder.cpp.ll
-; darktable/optimized/IiqDecoder.cpp.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; darktable/optimized/PentaxDecompressor.cpp.ll
 ; darktable/optimized/RafDecoder.cpp.ll
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
-; darktable/optimized/introspection_bilateral.cc.ll
 ; darktable/optimized/introspection_hotpixels.c.ll
-; darktable/optimized/introspection_liquify.c.ll
-; darktable/optimized/introspection_tonemap.cc.ll
 ; draco/optimized/hash_utils.cc.ll
-; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_arrow.cpp.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_aggregate.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_join.cpp.ll
-; duckdb/optimized/ub_duckdb_optimizer.cpp.ll
 ; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
 ; entt/optimized/benchmark.cpp.ll
@@ -58,7 +51,6 @@
 ; entt/optimized/view.cpp.ll
 ; faiss/optimized/IndexShards.cpp.ll
 ; faiss/optimized/IndexShardsIVF.cpp.ll
-; folly/optimized/TDigest.cpp.ll
 ; git/optimized/levenshtein.ll
 ; git/optimized/remote-curl.ll
 ; git/optimized/show-branch.ll
@@ -71,11 +63,9 @@
 ; hdf5/optimized/h5import.c.ll
 ; hyperscan/optimized/ng_find_matches.cpp.ll
 ; hyperscan/optimized/ng_violet.cpp.ll
-; hyperscan/optimized/rose_build_bytecode.cpp.ll
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; hyperscan/optimized/ue2string.cpp.ll
 ; icu/optimized/uconv.ll
-; libquic/optimized/a_enum.c.ll
 ; libquic/optimized/a_int.c.ll
 ; libuv/optimized/inet.c.ll
 ; lightgbm/optimized/bin.cpp.ll
@@ -149,7 +139,7 @@
 ; yosys/optimized/opt_muxtree.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 4294967295
   %3 = and i64 %2, 4294967295
@@ -161,7 +151,7 @@ entry:
 ; 1 occurrences:
 ; mitsuba3/optimized/jitallocator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000184(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 63
   %3 = and i64 %2, 8589934528
@@ -170,28 +160,10 @@ entry:
   ret i1 %5
 }
 
-; 19 occurrences:
-; abc/optimized/dauDsd.c.ll
-; abc/optimized/inflate.c.ll
-; bullet3/optimized/btDantzigLCP.ll
-; clamav/optimized/pe.c.ll
-; cmake/optimized/inflate.c.ll
-; freetype/optimized/truetype.c.ll
-; gromacs/optimized/inflate.c.ll
-; libquic/optimized/inflate.c.ll
-; linux/optimized/cipso_ipv4.ll
-; linux/optimized/ehci-dbgp.ll
-; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
-; llvm/optimized/CombinerHelper.cpp.ll
-; llvm/optimized/LegalizerHelper.cpp.ll
-; llvm/optimized/X86ExpandPseudo.cpp.ll
-; llvm/optimized/X86LegalizerInfo.cpp.ll
+; 1 occurrences:
 ; mitsuba3/optimized/jitallocator.cpp.ll
-; openjdk/optimized/sharedRuntime_x86_64.ll
-; verilator/optimized/V3OrderParallel.cpp.ll
-; zlib/optimized/inflate.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001e4(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 63
   %3 = and i64 %2, 8589934528
@@ -200,7 +172,7 @@ entry:
   ret i1 %5
 }
 
-; 228 occurrences:
+; 227 occurrences:
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -399,7 +371,6 @@ entry:
 ; minetest/optimized/COBJMeshFileLoader.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; minetest/optimized/anaglyph.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/chat.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/enriched_string.cpp.ll
@@ -430,7 +401,7 @@ entry:
 ; xgboost/optimized/data.cc.ll
 ; xgboost/optimized/input_split_base.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e1(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001c1(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
   %3 = and i64 %2, 4611686018427387900
@@ -439,9 +410,10 @@ entry:
   ret i1 %5
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; darktable/optimized/RawImageDataFloat.cpp.ll
 ; darktable/optimized/introspection_colorzones.c.ll
+; darktable/optimized/introspection_demosaic.c.ll
 ; duckdb/optimized/null_operations.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types_row.cpp.ll
@@ -453,7 +425,7 @@ entry:
 ; folly/optimized/Uri.cpp.ll
 ; minetest/optimized/mg_biome.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -3
   %3 = and i64 %2, -4
@@ -491,7 +463,7 @@ entry:
 ; opencv/optimized/textdetection.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
   %3 = and i64 %2, 3
@@ -500,7 +472,7 @@ entry:
   ret i1 %5
 }
 
-; 9 occurrences:
+; 11 occurrences:
 ; duckdb/optimized/generators.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_cast.cpp.ll
@@ -509,6 +481,8 @@ entry:
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
 ; folly/optimized/Uri.cpp.ll
+; llvm/optimized/LoopCacheAnalysis.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
@@ -520,12 +494,44 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 19 occurrences:
+; darktable/optimized/DngDecoder.cpp.ll
+; darktable/optimized/IiqDecoder.cpp.ll
+; darktable/optimized/introspection_ashift.c.ll
+; darktable/optimized/introspection_basecurve.c.ll
+; darktable/optimized/introspection_bilateral.cc.ll
+; darktable/optimized/introspection_colorcontrast.c.ll
+; darktable/optimized/introspection_colormapping.c.ll
+; darktable/optimized/introspection_diffuse.c.ll
+; darktable/optimized/introspection_filmicrgb.c.ll
+; darktable/optimized/introspection_hotpixels.c.ll
+; darktable/optimized/introspection_liquify.c.ll
+; darktable/optimized/introspection_tonemap.cc.ll
+; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
+; duckdb/optimized/ub_duckdb_func_string.cpp.ll
+; duckdb/optimized/ub_duckdb_optimizer.cpp.ll
+; entt/optimized/group.cpp.ll
+; entt/optimized/storage.cpp.ll
+; folly/optimized/TDigest.cpp.ll
+; hyperscan/optimized/rose_build_bytecode.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000181(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nuw nsw i64 %1, 1
+  %3 = and i64 %2, 3
+  %4 = add i64 %0, 1
+  %5 = icmp eq i64 %4, %3
+  ret i1 %5
+}
+
+; 5 occurrences:
+; boost/optimized/find_address_sse2.ll
+; boost/optimized/find_address_sse41.ll
 ; faiss/optimized/residual_quantizer_encode_steps.cpp.ll
 ; folly/optimized/JemallocHugePageAllocator.cpp.ll
 ; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 2097151
   %3 = and i64 %2, -2097152
@@ -551,7 +557,7 @@ entry:
 ; minetest/optimized/dynamicshadowsrender.cpp.ll
 ; xgboost/optimized/input_split_base.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000141(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 1
   %3 = and i64 %2, -16
@@ -581,7 +587,7 @@ entry:
 ; sundials/optimized/sundials_nvector.c.ll
 ; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000161(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 2
   %3 = and i64 %2, 4294967295
@@ -590,7 +596,7 @@ entry:
   ret i1 %5
 }
 
-; 28 occurrences:
+; 26 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/wlnRead.c.ll
@@ -608,10 +614,8 @@ entry:
 ; hyperscan/optimized/rose_build_convert.cpp.ll
 ; hyperscan/optimized/rose_build_role_aliasing.cpp.ll
 ; llvm/optimized/Comment.cpp.ll
-; llvm/optimized/LoopCacheAnalysis.cpp.ll
 ; llvm/optimized/Metadata.cpp.ll
 ; llvm/optimized/OMPIRBuilder.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/TokenAnalyzer.cpp.ll
 ; meshlab/optimized/Scanner.cpp.ll
 ; opencv/optimized/onnx_importer.cpp.ll
@@ -620,7 +624,7 @@ entry:
 ; slurm/optimized/gres_ctld.ll
 ; stockfish/optimized/tbprobe.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 4294967292
   %3 = and i64 %2, 4294967295
@@ -642,7 +646,7 @@ entry:
   ret i1 %5
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; darktable/optimized/introspection_bilateral.cc.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; darktable/optimized/introspection_tonemap.cc.ll
@@ -654,14 +658,45 @@ entry:
 ; mini-lsm-rs/optimized/1zm93ee80v61t4c3.ll
 ; mini-lsm-rs/optimized/45da4db1y19tqmo.ll
 ; qdrant-rs/optimized/mmfuyqzmr1ty69v.ll
+; turborepo-rs/optimized/eyin3u3cupdp2wcinr2t4x92g.ll
 ; typst-rs/optimized/26ex1w19ixz6ifuk.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 2305843009213693951
   %3 = and i64 %2, 2305843009213693951
   %4 = add nuw i64 %0, 1
   %5 = icmp eq i64 %4, %3
+  ret i1 %5
+}
+
+; 19 occurrences:
+; abc/optimized/dauDsd.c.ll
+; abc/optimized/inflate.c.ll
+; bullet3/optimized/btDantzigLCP.ll
+; clamav/optimized/pe.c.ll
+; cmake/optimized/inflate.c.ll
+; freetype/optimized/truetype.c.ll
+; gromacs/optimized/inflate.c.ll
+; libquic/optimized/inflate.c.ll
+; linux/optimized/cipso_ipv4.ll
+; linux/optimized/ehci-dbgp.ll
+; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
+; llvm/optimized/CombinerHelper.cpp.ll
+; llvm/optimized/LegalizerHelper.cpp.ll
+; llvm/optimized/X86ExpandPseudo.cpp.ll
+; llvm/optimized/X86LegalizerInfo.cpp.ll
+; lvgl/optimized/lv_obj_style.ll
+; openjdk/optimized/sharedRuntime_x86_64.ll
+; verilator/optimized/V3OrderParallel.cpp.ll
+; zlib/optimized/inflate.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001f4(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nuw nsw i64 %1, 2
+  %3 = and i64 %2, 4294967294
+  %4 = add nuw nsw i64 %0, 2
+  %5 = icmp samesign ult i64 %4, %3
   ret i1 %5
 }
 
@@ -680,19 +715,19 @@ entry:
 ; openjdk/optimized/hb-ot-shaper-myanmar.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000f4(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 4294967295
   %3 = and i64 %2, 4294967295
   %4 = add nuw nsw i64 %0, 1
-  %5 = icmp ult i64 %4, %3
+  %5 = icmp samesign ult i64 %4, %3
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; php/optimized/pcre2_jit_compile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 8191
   %3 = and i64 %2, -8192
@@ -717,7 +752,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000c1(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = and i64 %2, -8
@@ -726,28 +761,10 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
-; darktable/optimized/introspection_ashift.c.ll
-; darktable/optimized/introspection_basecurve.c.ll
-; darktable/optimized/introspection_colorcontrast.c.ll
-; darktable/optimized/introspection_colormapping.c.ll
-; darktable/optimized/introspection_diffuse.c.ll
-; darktable/optimized/introspection_filmicrgb.c.ll
-; darktable/optimized/introspection_hotpixels.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add nuw nsw i64 %1, 1
-  %3 = and i64 %2, 9223372036854775806
-  %4 = add i64 %0, 2
-  %5 = icmp eq i64 %4, %3
-  ret i1 %5
-}
-
 ; 1 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
   %3 = and i64 %2, 4294967295
@@ -759,7 +776,7 @@ entry:
 ; 1 occurrences:
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d8(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001a8(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 4294967280
   %3 = and i64 %2, 4294967295
@@ -783,7 +800,7 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/BigUnsigned.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 4294967295
   %3 = and i64 %2, 4294967295
@@ -795,7 +812,7 @@ entry:
 ; 1 occurrences:
 ; wasmtime-rs/optimized/2lz954crgst412nx.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 15
   %3 = and i64 %2, -16
@@ -808,12 +825,12 @@ entry:
 ; opencv/optimized/retinacolor.cpp.ll
 ; wireshark/optimized/packet-giop.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000074(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 4294967295
   %3 = and i64 %2, 4294967295
   %4 = add nuw nsw i64 %0, 2
-  %5 = icmp ult i64 %4, %3
+  %5 = icmp samesign ult i64 %4, %3
   ret i1 %5
 }
 
@@ -832,7 +849,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000008a(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 2147483647
   %3 = and i64 %2, 2147483647
@@ -846,7 +863,7 @@ entry:
 ; ceres/optimized/polynomial.cc.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000e6(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = and i64 %2, -4
@@ -858,12 +875,12 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/cipso_ipv4.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001f8(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 4294967292
   %3 = and i64 %2, 4294967295
   %4 = add nuw nsw i64 %0, 4
-  %5 = icmp ugt i64 %4, %3
+  %5 = icmp samesign ugt i64 %4, %3
   ret i1 %5
 }
 
@@ -875,12 +892,12 @@ entry:
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b4(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000174(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 4294967288
   %3 = and i64 %2, 4294967294
   %4 = add nuw nsw i64 %0, 2
-  %5 = icmp ult i64 %4, %3
+  %5 = icmp samesign ult i64 %4, %3
   ret i1 %5
 }
 

@@ -1,8 +1,3 @@
-func000000000000001d:                   # @func000000000000001d
-	addb	$-14, %dil
-	movq	$-1, %rax
-	shlxq	%rdi, %rax, %rax
-	retq
 func000000000000001e:                   # @func000000000000001e
 	movl	$1, %eax
 	shlxq	%rdi, %rax, %rax

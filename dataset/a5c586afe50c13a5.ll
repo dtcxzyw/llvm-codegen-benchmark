@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i8 %0, i8 %1) #0 {
+define i32 @func0000000000000028(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 0
   %3 = select i1 %2, i32 421, i32 1154
@@ -25,7 +25,7 @@ entry:
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wireshark/optimized/packet-btavrcp.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i8 %0, i8 %1) #0 {
+define i32 @func0000000000000021(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 0
   %3 = select i1 %2, i32 -1430533120, i32 -1430533118
@@ -38,7 +38,7 @@ entry:
 ; chibicc/optimized/tokenize.ll
 ; wireshark/optimized/packet-tds.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000044(i8 %0, i8 %1) #0 {
+define i32 @func0000000000000084(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, 6
   %3 = select i1 %2, i32 -87, i32 -55
@@ -48,15 +48,15 @@ entry:
 }
 
 ; 2 occurrences:
-; llvm/optimized/SemaChecking.cpp.ll
+; llvm/optimized/ExprClassification.cpp.ll
 ; wolfssl/optimized/ecc.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000041(i8 %0, i8 %1) #0 {
+define i32 @func0000000000000081(i8 %0, i8 %1) #0 {
 entry:
-  %2 = icmp ult i8 %1, 2
-  %3 = select i1 %2, i32 1, i32 2
-  %4 = icmp eq i8 %0, 4
-  %5 = select i1 %4, i32 0, i32 %3
+  %2 = icmp ult i8 %1, 5
+  %3 = select i1 %2, i32 9, i32 11
+  %4 = icmp eq i8 %0, 47
+  %5 = select i1 %4, i32 8, i32 %3
   ret i32 %5
 }
 
@@ -66,7 +66,7 @@ entry:
 ; postgres/optimized/like.ll
 ; postgres/optimized/like_support.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i8 %0, i8 %1) #0 {
+define i32 @func0000000000000024(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 32
   %3 = select i1 %2, i32 6, i32 2
@@ -78,7 +78,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-catapult-dct2000.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i8 %0, i8 %1) #0 {
+define i32 @func000000000000002a(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 1
   %3 = select i1 %2, i32 2, i32 3

@@ -1,6 +1,6 @@
 func0000000000000001:                   # @func0000000000000001
 	movl	%esi, %eax
 	addl	%edi, %edx
-	cmpl	%esi, %edx
+	cmpl	%edx, %esi
 	cmovel	%edi, %eax
 	retq

@@ -47,8 +47,9 @@ func00000000000000b0:                   # @func00000000000000b0
 	retq
 func00000000000000cc:                   # @func00000000000000cc
 	movzbl	%dl, %eax
-	addl	%edi, %eax
 	shll	$8, %eax
+	shll	$8, %edi
+	addl	%edi, %eax
 	addl	%esi, %eax
 	retq
 func00000000000001cc:                   # @func00000000000001cc

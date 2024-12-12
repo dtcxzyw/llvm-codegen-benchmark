@@ -1,12 +1,17 @@
 
-; 32 occurrences:
+; 37 occurrences:
+; arrow/optimized/string-to-double.cc.ll
 ; cmake/optimized/nghttp2_http.c.ll
+; cpython/optimized/_json.ll
+; double_conversion/optimized/string-to-double.cc.ll
 ; hermes/optimized/RegexParser.cpp.ll
 ; icu/optimized/collationruleparser.ll
+; icu/optimized/double-conversion-string-to-double.ll
 ; icu/optimized/ucnv_lmb.ll
 ; libpng/optimized/pngwrite.c.ll
 ; linux/optimized/rtnetlink.ll
 ; linux/optimized/sch_api.ll
+; llvm/optimized/CombinerHelper.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/LegalizeDAG.cpp.ll
 ; llvm/optimized/LegalizeIntegerTypes.cpp.ll
@@ -14,7 +19,6 @@
 ; llvm/optimized/LegalizeVectorOps.cpp.ll
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -23,6 +27,7 @@
 ; meshlab/optimized/meshfilter.cpp.ll
 ; nghttp2/optimized/nghttp2_http.c.ll
 ; node/optimized/libnode.Protocol.ll
+; openusd/optimized/string-to-double.cc.ll
 ; proxygen/optimized/http_parser_cpp.cpp.ll
 ; slurm/optimized/job_test.ll
 ; verilator/optimized/V3Cast.cpp.ll
@@ -40,17 +45,21 @@ entry:
   ret i16 %2
 }
 
-; 5 occurrences:
+; 9 occurrences:
+; arrow/optimized/string-to-double.cc.ll
+; double_conversion/optimized/string-to-double.cc.ll
 ; hermes/optimized/RegexParser.cpp.ll
+; icu/optimized/double-conversion-string-to-double.ll
 ; icu/optimized/ucnv_lmb.ll
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; openusd/optimized/string-to-double.cc.ll
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000001(i16 %0) #0 {
 entry:
   %1 = freeze i16 %0
-  %2 = add nsw i16 %1, -97
+  %2 = add nsw i16 %1, -65
   ret i16 %2
 }
 

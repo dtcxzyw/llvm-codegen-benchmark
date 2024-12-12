@@ -14,13 +14,12 @@ entry:
   ret i32 %6
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; darktable/optimized/introspection_highlights.c.ll
 ; mold/optimized/arch-arm64.cc.ll
 ; mold/optimized/arch-s390x.cc.ll
 ; qemu/optimized/disas_riscv.c.ll
 ; spike/optimized/disasm.ll
-; wireshark/optimized/packet-etag.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:

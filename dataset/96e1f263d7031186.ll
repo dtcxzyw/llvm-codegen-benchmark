@@ -25,12 +25,12 @@
 define i32 @func0000000000000000(i32 %0, i8 %1) #0 {
 entry:
   %.tr = trunc i32 %0 to i8
-  %.narrow = or i8 %.tr, %1
+  %.narrow = or i8 %1, %.tr
   %2 = zext i8 %.narrow to i32
   ret i32 %2
 }
 
-; 22 occurrences:
+; 23 occurrences:
 ; clamav/optimized/cabd.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; git/optimized/read-cache.ll
@@ -53,6 +53,7 @@ entry:
 ; wireshark/optimized/k12.c.ll
 ; wireshark/optimized/packet-flexray.c.ll
 ; wireshark/optimized/packet-h223.c.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:
@@ -85,7 +86,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i8 %1) #0 {
 entry:
   %.tr = trunc i32 %0 to i8
-  %.narrow = or i8 %.tr, %1
+  %.narrow = or i8 %1, %.tr
   %2 = zext i8 %.narrow to i32
   ret i32 %2
 }

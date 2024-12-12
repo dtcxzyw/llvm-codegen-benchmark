@@ -17,12 +17,12 @@ define i64 @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 12, i64 76
-  %5 = or disjoint i64 %4, %1
+  %5 = or disjoint i64 %1, %4
   %6 = or i64 %5, %0
   ret i64 %6
 }
 
-; 27 occurrences:
+; 29 occurrences:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; jemalloc/optimized/extent_dss.ll
 ; jemalloc/optimized/extent_dss.pic.ll
@@ -50,6 +50,8 @@ entry:
 ; spike/optimized/csrs.ll
 ; spike/optimized/mret.ll
 ; spike/optimized/processor.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -73,19 +75,6 @@ entry:
   ret i64 %6
 }
 
-; 2 occurrences:
-; lief/optimized/DynamicEntryFlags.cpp.ll
-; linux/optimized/reciprocal_div.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000023(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = icmp ugt i64 %2, 4294968320
-  %4 = select i1 %3, i64 264, i64 8
-  %5 = or disjoint i64 %4, %1
-  %6 = or disjoint i64 %5, %0
-  ret i64 %6
-}
-
 ; 1 occurrences:
 ; llvm/optimized/ASTReader.cpp.ll
 ; Function Attrs: nounwind
@@ -94,7 +83,7 @@ entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 0, i64 2305843009213693952
   %5 = or i64 %4, %1
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   ret i64 %6
 }
 

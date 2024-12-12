@@ -1,7 +1,8 @@
 func0000000000000182:                   // @func0000000000000182
 // %bb.0:                               // %entry
 	cmp	x2, #0
-	cinc	x8, x0, ne
-	add	x0, x8, x1
+	add	x8, x0, x1, lsl #4
+	cset	w9, ne
+	add	x0, x8, w9, uxtw #4
 	ret
                                         // -- End function

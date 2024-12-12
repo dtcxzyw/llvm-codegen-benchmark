@@ -33,7 +33,7 @@ entry:
 ; openusd/optimized/detokenize.c.ll
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000078(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 28
   %not. = xor i1 %0, true
@@ -46,7 +46,7 @@ entry:
 ; ruby/optimized/util.ll
 ; wireshark/optimized/packet-cesoeth.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 28
   %not. = xor i1 %0, true
@@ -70,7 +70,7 @@ entry:
 ; libquic/optimized/dtoa.cc.ll
 ; php/optimized/zend_strtod.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 0
   %not. = xor i1 %0, true
@@ -82,7 +82,7 @@ entry:
 ; bullet3/optimized/b3QuantizedBvh.ll
 ; bullet3/optimized/btQuantizedBvh.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000034(i1 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 128
   %3 = icmp ult i32 %2, 129
@@ -95,7 +95,7 @@ entry:
 ; graphviz/optimized/position.c.ll
 ; libwebp/optimized/sharpyuv.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, -129
   %3 = select i1 %0, i1 true, i1 %2
@@ -105,7 +105,7 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 11
   %3 = select i1 %0, i1 true, i1 %2
@@ -115,7 +115,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/hashutil.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000074(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 22
   %3 = select i1 %0, i1 true, i1 %2
@@ -125,7 +125,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/dtoa.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000014(i1 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 3
   %3 = icmp ult i32 %2, 4

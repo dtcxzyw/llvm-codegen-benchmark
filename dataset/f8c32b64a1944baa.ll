@@ -1,10 +1,9 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; arrow/optimized/scalar.cc.ll
 ; linux/optimized/x509_cert_parser.ll
 ; wireshark/optimized/packet-diameter_3gpp.c.ll
 ; wireshark/optimized/packet-etsi_card_app_toolkit.c.ll
-; wireshark/optimized/packet-gprscdr.c.ll
 ; wireshark/optimized/packet-gsm_a_dtap.c.ll
 ; wireshark/optimized/packet-gsm_sms.c.ll
 ; wireshark/optimized/packet-gtp.c.ll

@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	xorl	%eax, %eax
 	movabsq	$108086680950914688, %rcx       # imm = 0x18000437F07BE80
 	testq	%rcx, %rdx
@@ -6,7 +6,7 @@ func0000000000000011:                   # @func0000000000000011
 	cmpl	%edi, %eax
 	sete	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	xorl	%eax, %eax
 	btq	$32, %rdx
 	cmovbl	%esi, %eax

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openjdk/optimized/dfa_x86.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i1 %0, i32 %1, i16 %2) #0 {
+define i1 @func000000000000014c(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 1
   %4 = icmp ne i16 %3, 0
@@ -18,7 +18,7 @@ entry:
 ; llvm/optimized/regexec.c.ll
 ; wireshark/optimized/packet-uma.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000181(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 8
   %4 = icmp eq i16 %3, 0
@@ -31,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; quickjs/optimized/libregexp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, -1024
   %4 = icmp eq i16 %3, -10240
@@ -44,7 +44,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/file.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i32 %1, i16 %2) #0 {
+define i1 @func000000000000018c(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 1
   %4 = icmp ne i16 %3, 0
@@ -57,7 +57,7 @@ entry:
 ; 1 occurrences:
 ; nuttx/optimized/lib_libvsprintf.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i16 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 256
   %4 = icmp ne i16 %3, 0
@@ -72,11 +72,11 @@ entry:
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/encode.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i1 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000281(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 1023
   %4 = icmp eq i16 %3, 0
-  %5 = icmp ult i32 %1, 8
+  %5 = icmp samesign ult i32 %1, 8
   %6 = select i1 %4, i1 %5, i1 false
   %7 = select i1 %6, i1 %0, i1 false
   ret i1 %7

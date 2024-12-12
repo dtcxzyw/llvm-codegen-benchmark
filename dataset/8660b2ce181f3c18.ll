@@ -1,13 +1,11 @@
 
-; 6 occurrences:
+; 4 occurrences:
 ; icu/optimized/bytestriebuilder.ll
 ; libquic/optimized/mul.c.ll
-; luajit/optimized/lj_asm.ll
-; luajit/optimized/lj_asm_dyn.ll
 ; openssl/optimized/libcrypto-lib-bn_mul.ll
 ; openssl/optimized/libcrypto-shlib-bn_mul.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.smax.i32(i32 %1, i32 %0)
   ret i32 %2
@@ -59,7 +57,7 @@ entry:
 ; 1 occurrences:
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i32 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.smin.i32(i32 %1, i32 %0)
   ret i32 %2

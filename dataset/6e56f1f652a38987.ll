@@ -3,7 +3,7 @@
 ; minetest/optimized/raycast.cpp.ll
 ; postgres/optimized/ginget.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i8 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000081(i8 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp ult i16 %1, %2
   %4 = icmp eq i8 %0, 2
@@ -16,7 +16,7 @@ entry:
 ; minetest/optimized/inventorymanager.cpp.ll
 ; minetest/optimized/mapblock.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i8 %0, i16 %1, i16 %2) #0 {
+define i1 @func000000000000002c(i8 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %1, %2
   %4 = icmp ne i8 %0, 0
@@ -31,7 +31,7 @@ entry:
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000021(i8 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %1, %2
   %4 = icmp eq i8 %0, 0
@@ -42,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/normalizer2impl.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i8 %0, i16 %1, i16 %2) #0 {
+define i1 @func000000000000008c(i8 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp ult i16 %1, %2
   %4 = icmp ne i8 %0, 0

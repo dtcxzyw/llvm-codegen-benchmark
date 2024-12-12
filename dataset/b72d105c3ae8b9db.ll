@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 16 occurrences:
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; graphviz/optimized/neatoinit.c.ll
 ; graphviz/optimized/shapes.c.ll
@@ -9,6 +9,7 @@
 ; linux/optimized/nfs3proc.ll
 ; linux/optimized/seccomp.ll
 ; linux/optimized/vmalloc.ll
+; lvgl/optimized/lv_text.ll
 ; openjdk/optimized/jvmtiEnvBase.ll
 ; openssl/optimized/libcrypto-lib-pcy_tree.ll
 ; openssl/optimized/libcrypto-shlib-pcy_tree.ll
@@ -50,7 +51,7 @@ entry:
 ; wasmtime-rs/optimized/3ks7b643ljwe3j81.ll
 ; wireshark/optimized/packet-wassp.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, 8
   %3 = icmp eq i32 %1, 1052672

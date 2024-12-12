@@ -44,7 +44,7 @@ entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = sub nsw i32 32, %3
   %5 = lshr i32 %1, %4
-  %6 = and i32 %5, %0
+  %6 = and i32 %0, %5
   ret i32 %6
 }
 

@@ -13,7 +13,7 @@ entry:
   ret i32 %3
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
@@ -22,7 +22,6 @@ entry:
 ; abc/optimized/xsatSolver.c.ll
 ; cvc5/optimized/SimpSolver.cc.ll
 ; cvc5/optimized/Solver.cc.ll
-; linux/optimized/net-traces.ll
 ; linux/optimized/tcp_input.ll
 ; linux/optimized/tcp_output.ll
 ; yosys/optimized/SimpSolver.ll

@@ -12,8 +12,9 @@ entry:
   ret i64 %2
 }
 
-; 14 occurrences:
+; 16 occurrences:
 ; arrow/optimized/strtod.cc.ll
+; boost/optimized/src.ll
 ; double_conversion/optimized/strtod.cc.ll
 ; icu/optimized/double-conversion-strtod.ll
 ; luajit/optimized/lj_strfmt_num.ll
@@ -27,6 +28,7 @@ entry:
 ; stat-rs/optimized/n94tvlll45kxl7r.ll
 ; stat-rs/optimized/rkxxfn3f5mhspne.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(double %0) #0 {
 entry:
@@ -35,7 +37,7 @@ entry:
   ret i64 %2
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; arrow/optimized/strtod.cc.ll
 ; double_conversion/optimized/strtod.cc.ll
 ; flac/optimized/replaygain_synthesis.c.ll
@@ -43,6 +45,7 @@ entry:
 ; icu/optimized/double-conversion-strtod.ll
 ; openusd/optimized/strtod.cc.ll
 ; stat-rs/optimized/1957ju1ns40544yq.ll
+; stat-rs/optimized/4d9pj14shc9lbmph.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll

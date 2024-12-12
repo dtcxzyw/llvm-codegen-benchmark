@@ -4,7 +4,7 @@
 ; libuv/optimized/inet.c.ll
 ; node/optimized/inet.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c8(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000588(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = icmp ne i32 %1, 0

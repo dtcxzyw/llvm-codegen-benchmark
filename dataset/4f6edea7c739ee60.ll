@@ -10,6 +10,8 @@
 ; assimp/optimized/IFCBoolean.cpp.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/constant_mx.cpp.ll
 ; casadi/optimized/convexify.cpp.ll
 ; casadi/optimized/cvodes.c.ll
@@ -120,7 +122,6 @@
 ; openblas/optimized/dtgevc.c.ll
 ; openblas/optimized/dtrevc.c.ll
 ; openblas/optimized/dtrevc3.c.ll
-; openblas/optimized/dtrsna.c.ll
 ; opencv/optimized/ann_mlp.cpp.ll
 ; opencv/optimized/ap3p.cpp.ll
 ; opencv/optimized/autocalib.cpp.ll
@@ -161,7 +162,6 @@
 ; openusd/optimized/simplify.cpp.ll
 ; openvdb/optimized/LevelSetMorph.cc.ll
 ; openvdb/optimized/LevelSetTracker.cc.ll
-; osqp/optimized/derivative.c.ll
 ; php/optimized/gammasection.ll
 ; postgres/optimized/float.ll
 ; postgres/optimized/geo_ops.ll

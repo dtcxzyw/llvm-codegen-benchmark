@@ -25,7 +25,7 @@ entry:
 ; postgres/optimized/heapam_handler.ll
 ; ruby/optimized/loop.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000024(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000044(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 1
   %3 = icmp ult i32 %2, %0
@@ -33,7 +33,7 @@ entry:
   ret i32 %4
 }
 
-; 20 occurrences:
+; 21 occurrences:
 ; git/optimized/object.ll
 ; linux/optimized/aio.ll
 ; linux/optimized/arc4.ll
@@ -49,6 +49,7 @@ entry:
 ; linux/optimized/swiotlb.ll
 ; linux/optimized/virtio_ring.ll
 ; llvm/optimized/TextDiagnostic.cpp.ll
+; lvgl/optimized/lv_buttonmatrix.ll
 ; mitsuba3/optimized/rapass.cpp.ll
 ; openmpi/optimized/pml_ob1_recvreq.ll
 ; postgres/optimized/heapam.ll
@@ -63,9 +64,8 @@ entry:
   ret i32 %4
 }
 
-; 46 occurrences:
+; 43 occurrences:
 ; assimp/optimized/TriangulateProcess.cpp.ll
-; box2d/optimized/b2_collide_circle.cpp.ll
 ; box2d/optimized/b2_collide_edge.cpp.ll
 ; box2d/optimized/b2_collide_polygon.cpp.ll
 ; box2d/optimized/b2_distance.cpp.ll
@@ -102,16 +102,14 @@ entry:
 ; openjdk/optimized/vmThread.ll
 ; openjdk/optimized/zGeneration.ll
 ; openmpi/optimized/comm_cid.ll
-; openmpi/optimized/tm_mt.ll
 ; openspiel/optimized/spiel_utils.cc.ll
-; quest/optimized/mt19937ar.c.ll
 ; raylib/optimized/rcore.c.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; slurm/optimized/port_mgr.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = icmp slt i32 %2, %0
@@ -119,14 +117,17 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 8 occurrences:
+; box2d/optimized/b2_collide_circle.cpp.ll
+; box2d/optimized/b2_collide_edge.cpp.ll
+; box2d/optimized/b2_collide_polygon.cpp.ll
 ; imgui/optimized/imgui_demo.cpp.ll
 ; opencv/optimized/convhull.cpp.ll
 ; openusd/optimized/fvarLevel.cpp.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000036(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000066(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = icmp slt i32 %2, %0
@@ -137,7 +138,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SourceManager.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000064(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = icmp ult i32 %2, %0
@@ -148,7 +149,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/MachineModuleInfo.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = icmp ult i32 %2, %0

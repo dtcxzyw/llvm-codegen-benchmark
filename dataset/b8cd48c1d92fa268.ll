@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 20 occurrences:
 ; libquic/optimized/cubic.cc.ll
 ; libquic/optimized/cubic_bytes.cc.ll
 ; meshlab/optimized/filter_ao.cpp.ll
@@ -19,13 +19,12 @@
 ; pbrt-v4/optimized/shapes.cpp.ll
 ; pbrt-v4/optimized/subsurface.cpp.ll
 ; pbrt-v4/optimized/surfscatter.cpp.ll
-; sentencepiece/optimized/unigram_model_trainer.cc.ll
 ; xgboost/optimized/random.cc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(float %0, i64 %1) #0 {
 entry:
   %2 = uitofp i64 %1 to float
-  %3 = fmul float %2, %0
+  %3 = fmul float %0, %2
   %4 = fptosi float %3 to i32
   ret i32 %4
 }

@@ -1,5 +1,7 @@
 
-; 6 occurrences:
+; 8 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
@@ -7,11 +9,11 @@
 ; spike/optimized/socketif.ll
 ; velox/optimized/URLFunctions.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(ptr %0, ptr %1, i64 %2) #0 {
+define i64 @func0000000000000041(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = xor i64 %3, -1
-  %5 = add nsw i64 %4, %2
+  %5 = add nsw i64 %2, %4
   %6 = icmp eq ptr %0, %1
   %7 = select i1 %6, i64 %3, i64 %5
   ret i64 %7
@@ -22,11 +24,11 @@ entry:
 ; llvm/optimized/SemaLookup.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000024(ptr %0, ptr %1, i64 %2) #0 {
+define i64 @func0000000000000044(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = xor i64 %3, -1
-  %5 = add nsw i64 %4, %2
+  %5 = add nsw i64 %2, %4
   %6 = icmp ult ptr %0, %1
   %7 = select i1 %6, i64 %3, i64 %5
   ret i64 %7

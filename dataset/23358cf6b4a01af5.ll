@@ -12,7 +12,7 @@ entry:
   ret i32 %7
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; faiss/optimized/AdditiveQuantizer.cpp.ll
 ; faiss/optimized/IVFlib.cpp.ll
 ; faiss/optimized/IndexFastScan.cpp.ll
@@ -27,6 +27,7 @@ entry:
 ; linux/optimized/access.ll
 ; llvm/optimized/AutoUpgrade.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {

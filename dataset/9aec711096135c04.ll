@@ -1,11 +1,12 @@
 
-; 338 occurrences:
+; 344 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
-; abseil-cpp/optimized/memutil.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/cstring_ref.ll
+; boost/optimized/environment.ll
 ; brotli/optimized/transform.c.ll
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/crtmgr.c.ll
@@ -122,7 +123,6 @@
 ; linux/optimized/lifebook.ll
 ; linux/optimized/maple_tree.ll
 ; linux/optimized/mmconfig-shared.ll
-; linux/optimized/mmconfig_64.ll
 ; linux/optimized/ndisc.ll
 ; linux/optimized/nf_conntrack_proto_tcp.ll
 ; linux/optimized/psmouse-base.ll
@@ -147,6 +147,13 @@
 ; luajit/optimized/lj_snap_dyn.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; luau/optimized/lvmutils.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_string_builtin.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -281,7 +288,6 @@
 ; recastnavigation/optimized/DetourNavMeshBuilder.cpp.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
-; ruby/optimized/qsort.ll
 ; ruby/optimized/regparse.ll
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_dxt.c.ll
@@ -346,7 +352,8 @@ entry:
   ret i32 %3
 }
 
-; 44 occurrences:
+; 45 occurrences:
+; boost/optimized/default_filter_factory.ll
 ; clamav/optimized/disasm.c.ll
 ; darktable/optimized/KodakDecompressor.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
@@ -399,7 +406,7 @@ entry:
   ret i32 %3
 }
 
-; 311 occurrences:
+; 314 occurrences:
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
@@ -523,6 +530,9 @@ entry:
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
 ; llvm/optimized/InitPreprocessor.cpp.ll
 ; llvm/optimized/WhitespaceManager.cpp.ll
+; lvgl/optimized/lv_draw_rect.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
@@ -778,7 +788,6 @@ entry:
 ; linux/optimized/inflate.ll
 ; linux/optimized/libata-core.ll
 ; linux/optimized/maple_tree.ll
-; linux/optimized/reciprocal_div.ll
 ; linux/optimized/rock.ll
 ; linux/optimized/rsutils.ll
 ; linux/optimized/rx.ll
@@ -789,6 +798,7 @@ entry:
 ; llvm/optimized/Option.cpp.ll
 ; llvm/optimized/ScheduleDAGRRList.cpp.ll
 ; luau/optimized/Compiler.cpp.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
 ; minetest/optimized/CImageLoaderBMP.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll

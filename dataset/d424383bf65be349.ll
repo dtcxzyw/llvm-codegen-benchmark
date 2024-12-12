@@ -1,10 +1,6 @@
 
-; 9 occurrences:
+; 5 occurrences:
 ; gromacs/optimized/gmx_tcaf.cpp.ll
-; openblas/optimized/lapacke_cgb_nancheck.c.ll
-; openblas/optimized/lapacke_dgb_nancheck.c.ll
-; openblas/optimized/lapacke_sgb_nancheck.c.ll
-; openblas/optimized/lapacke_zgb_nancheck.c.ll
 ; openjdk/optimized/compilationPolicy.ll
 ; openmpi/optimized/coll_base_allgatherv.ll
 ; openusd/optimized/decodeframe.c.ll
@@ -44,8 +40,7 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
-; linux/optimized/serial_core.ll
+; 1 occurrences:
 ; llvm/optimized/DependenceAnalysis.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {

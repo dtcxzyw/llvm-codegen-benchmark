@@ -1,5 +1,5 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; clamav/optimized/extract.cpp.ll
 ; luau/optimized/Unifier2.cpp.ll
 ; mitsuba3/optimized/volpath.cpp.ll
@@ -7,6 +7,7 @@
 ; oiio/optimized/texture3d.cpp.ll
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
+; zed-rs/optimized/1oqbug516qe1j9jzuop2d87nk.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:

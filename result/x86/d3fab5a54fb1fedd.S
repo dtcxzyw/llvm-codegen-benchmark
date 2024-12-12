@@ -1,0 +1,5 @@
+func0000000000000004:                   # @func0000000000000004
+	leal	-2(%rdi), %ecx
+	movb	$-49, %al
+	shrb	%cl, %al
+	retq

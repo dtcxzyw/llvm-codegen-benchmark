@@ -17,7 +17,7 @@ entry:
 ; ncnn/optimized/slice_x86_avx512.cpp.ll
 ; ncnn/optimized/slice_x86_fma.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = icmp slt i32 %0, 0
@@ -33,7 +33,7 @@ entry:
 ; openusd/optimized/patchTable.cpp.ll
 ; zxing/optimized/AZDetector.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = icmp eq i32 %0, 1
@@ -41,15 +41,14 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; hermes/optimized/Conversions.cpp.ll
 ; libquic/optimized/tls_cbc.c.ll
-; linux/optimized/gss_krb5_crypto.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
-  %4 = icmp ugt i32 %0, 6
+  %4 = icmp samesign ugt i32 %0, 6
   %5 = select i1 %4, i32 %3, i32 0
   ret i32 %5
 }
@@ -57,10 +56,10 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/Conversions.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
-  %4 = icmp ult i32 %0, 1107
+  %4 = icmp samesign ult i32 %0, 1107
   %5 = select i1 %4, i32 %3, i32 0
   ret i32 %5
 }
@@ -68,7 +67,7 @@ entry:
 ; 1 occurrences:
 ; openmpi/optimized/ompi_datatype_create_darray.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = icmp sgt i32 %0, 0
@@ -76,15 +75,36 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
-; opencv/optimized/grfmt_bmp.cpp.ll
+; 1 occurrences:
+; linux/optimized/gss_krb5_crypto.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = mul i32 %1, %2
+  %4 = icmp ugt i32 %0, 2
+  %5 = select i1 %4, i32 %3, i32 0
+  ret i32 %5
+}
+
+; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
-  %4 = icmp ugt i32 %0, 8
+  %4 = icmp samesign ugt i32 %0, 8
   %5 = select i1 %4, i32 %3, i32 1
+  ret i32 %5
+}
+
+; 1 occurrences:
+; opencv/optimized/grfmt_bmp.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = mul nsw i32 %1, %2
+  %4 = icmp ugt i32 %0, 255
+  %5 = select i1 %4, i32 %3, i32 0
   ret i32 %5
 }
 

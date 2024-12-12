@@ -1,5 +1,5 @@
 
-; 123 occurrences:
+; 125 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; clap-rs/optimized/421wxj3t0b5xgmkw.ll
 ; cvc5/optimized/linear_equality.cpp.ll
@@ -58,6 +58,7 @@
 ; meshlab/optimized/mesh_document.cpp.ll
 ; minetest/optimized/guiButton.cpp.ll
 ; ms-gsl/optimized/span_tests.cpp.ll
+; openjdk/optimized/hb-ot-name.ll
 ; openspiel/optimized/tensor_game.cc.ll
 ; openusd/optimized/piPrototypeSceneIndex.cpp.ll
 ; openusd/optimized/primGather.cpp.ll
@@ -123,6 +124,7 @@
 ; yosys/optimized/wreduce.ll
 ; yosys/optimized/xaiger.ll
 ; z3/optimized/dd_bdd.cpp.ll
+; zed-rs/optimized/6rnwmhc4ug1ovqxxgp9ysf06c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(ptr %0, ptr %1) #0 {
 entry:

@@ -3,7 +3,7 @@
 func00000000000000a5:                   # @func00000000000000a5
 	vmovdqa	%ymm0, %ymm2
 	vpternlogq	$15, %ymm0, %ymm0, %ymm2 # ymm2 = ~ymm2
-	vpaddq	%ymm1, %ymm2, %ymm1
+	vpaddq	%ymm2, %ymm1, %ymm1
 	vpsrlq	$63, %ymm1, %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpandq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1

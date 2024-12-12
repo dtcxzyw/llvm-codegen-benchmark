@@ -10,7 +10,7 @@
 define double @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = uitofp i64 %3 to double
   ret double %4
 }
@@ -21,7 +21,7 @@ entry:
 define double @func0000000000000007(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = mul nuw nsw i64 %2, %0
+  %3 = mul nuw nsw i64 %0, %2
   %4 = uitofp nneg i64 %3 to double
   ret double %4
 }
@@ -32,7 +32,7 @@ entry:
 define double @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = mul nsw i64 %2, %0
+  %3 = mul nsw i64 %0, %2
   %4 = uitofp i64 %3 to double
   ret double %4
 }

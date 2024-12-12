@@ -1,94 +1,30 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	ldp	q16, q18, [sp, #32]
-	fcvtn	v4.2s, v4.2d
-	ldp	q17, q19, [sp]
-	fcvtn	v6.2s, v6.2d
-	fcvtn	v16.2s, v16.2d
-	fcvtn	v17.2s, v17.2d
-	fcvtn2	v4.4s, v5.2d
-	fcvtn2	v6.4s, v7.2d
-	fcvtn2	v16.4s, v18.2d
-	fcvtn2	v17.4s, v19.2d
-	fcmgt	v0.4s, v0.4s, v4.4s
-	fcmgt	v1.4s, v1.4s, v6.4s
-	fcmgt	v3.4s, v3.4s, v16.4s
-	fcmgt	v2.4s, v2.4s, v17.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	uzp1	v2.8h, v2.8h, v3.8h
-	uzp1	v0.16b, v0.16b, v2.16b
+	fcvt	s1, d1
+	fcmp	s0, s1
+	cset	w0, gt
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	ldp	q16, q18, [sp, #32]
-	fcvtn	v4.2s, v4.2d
-	ldp	q17, q19, [sp]
-	fcvtn	v6.2s, v6.2d
-	fcvtn	v16.2s, v16.2d
-	fcvtn	v17.2s, v17.2d
-	fcvtn2	v4.4s, v5.2d
-	fcvtn2	v6.4s, v7.2d
-	fcvtn2	v16.4s, v18.2d
-	fcvtn2	v17.4s, v19.2d
-	fcmgt	v0.4s, v4.4s, v0.4s
-	fcmgt	v1.4s, v6.4s, v1.4s
-	fcmgt	v3.4s, v16.4s, v3.4s
-	fcmgt	v2.4s, v17.4s, v2.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	uzp1	v2.8h, v2.8h, v3.8h
-	uzp1	v0.16b, v0.16b, v2.16b
+	fcvt	s1, d1
+	fcmp	s0, s1
+	cset	w0, mi
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	ldp	q16, q18, [sp, #32]
-	fcvtn	v6.2s, v6.2d
-	ldp	q17, q19, [sp]
-	fcvtn	v4.2s, v4.2d
-	fcvtn	v16.2s, v16.2d
-	fcvtn	v17.2s, v17.2d
-	fcvtn2	v6.4s, v7.2d
-	fcvtn2	v4.4s, v5.2d
-	fcvtn2	v16.4s, v18.2d
-	fcvtn2	v17.4s, v19.2d
-	fsub	v1.4s, v6.4s, v1.4s
-	fsub	v0.4s, v4.4s, v0.4s
-	fsub	v3.4s, v16.4s, v3.4s
-	fsub	v2.4s, v17.4s, v2.4s
-	fcmle	v1.4s, v1.4s, #0.0
-	fcmle	v0.4s, v0.4s, #0.0
-	fcmle	v3.4s, v3.4s, #0.0
-	fcmle	v2.4s, v2.4s, #0.0
-	uzp1	v0.8h, v0.8h, v1.8h
-	uzp1	v2.8h, v2.8h, v3.8h
-	uzp1	v0.16b, v0.16b, v2.16b
-	mvn	v0.16b, v0.16b
+	fcvt	s1, d1
+	fsub	s0, s1, s0
+	fcmp	s0, #0.0
+	cset	w0, hi
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	ldp	q16, q18, [sp, #32]
-	fcvtn	v6.2s, v6.2d
-	ldp	q17, q19, [sp]
-	fcvtn	v4.2s, v4.2d
-	fcvtn	v16.2s, v16.2d
-	fcvtn	v17.2s, v17.2d
-	fcvtn2	v6.4s, v7.2d
-	fcvtn2	v4.4s, v5.2d
-	fcvtn2	v16.4s, v18.2d
-	fcvtn2	v17.4s, v19.2d
-	fsub	v1.4s, v6.4s, v1.4s
-	fsub	v0.4s, v4.4s, v0.4s
-	fsub	v3.4s, v16.4s, v3.4s
-	fsub	v2.4s, v17.4s, v2.4s
-	fcmeq	v1.4s, v1.4s, #0.0
-	fcmeq	v0.4s, v0.4s, #0.0
-	fcmeq	v3.4s, v3.4s, #0.0
-	fcmeq	v2.4s, v2.4s, #0.0
-	uzp1	v0.8h, v0.8h, v1.8h
-	uzp1	v2.8h, v2.8h, v3.8h
-	uzp1	v0.16b, v0.16b, v2.16b
-	mvn	v0.16b, v0.16b
+	fcvt	s1, d1
+	fsub	s0, s1, s0
+	fcmp	s0, #0.0
+	cset	w0, ne
 	ret
                                         // -- End function

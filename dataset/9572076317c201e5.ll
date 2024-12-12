@@ -1,7 +1,9 @@
 
-; 30 occurrences:
+; 31 occurrences:
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; libquic/optimized/poly1305_vec.c.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
@@ -9,7 +11,6 @@
 ; libsodium/optimized/libsodium_la-poly1305_donna.ll
 ; libsodium/optimized/libsodium_la-x25519_ref10.ll
 ; lief/optimized/poly1305.c.ll
-; linux/optimized/fs-writeback.ll
 ; linux/optimized/ioremap.ll
 ; linux/optimized/keyring.ll
 ; linux/optimized/page-writeback.ll
@@ -34,12 +35,12 @@
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 8
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = lshr i64 %3, 16
   ret i64 %4
 }
 
-; 30 occurrences:
+; 28 occurrences:
 ; abc/optimized/wlcGraft.c.ll
 ; arrow/optimized/fixed-dtoa.cc.ll
 ; c3c/optimized/bigint.c.ll
@@ -61,13 +62,11 @@ entry:
 ; openssl/optimized/libcrypto-shlib-bn_nist.ll
 ; openusd/optimized/fixed-dtoa.cc.ll
 ; openusd/optimized/json.cpp.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; redis/optimized/fpconv_dtoa.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; spike/optimized/mulh.ll
 ; spike/optimized/mulhsu.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; spike/optimized/urcrsa32.ll
 ; wolfssl/optimized/poly1305.c.ll
 ; Function Attrs: nounwind

@@ -35,12 +35,12 @@ entry:
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000100(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000500(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 10
+  %3 = icmp samesign ult i32 %2, 10
   %4 = zext i1 %3 to i32
   %5 = lshr i32 %1, 8
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   %7 = add i32 %6, %4
   ret i32 %7
 }

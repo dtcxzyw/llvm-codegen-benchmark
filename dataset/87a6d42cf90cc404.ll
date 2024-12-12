@@ -1,5 +1,6 @@
 
-; 36 occurrences:
+; 37 occurrences:
+; boost/optimized/expand_on_spheroid.ll
 ; graphviz/optimized/gvrender_pango.c.ll
 ; graphviz/optimized/lab.c.ll
 ; gromacs/optimized/fixpoint.c.ll
@@ -58,10 +59,11 @@ entry:
   ret double %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; fmt/optimized/chrono-test.cc.ll
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
+; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; Function Attrs: nounwind
 define double @func0000000000000001(double %0, double %1) #0 {
 entry:

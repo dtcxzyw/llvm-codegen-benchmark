@@ -12,7 +12,7 @@ entry:
   ret i1 %4
 }
 
-; 196 occurrences:
+; 200 occurrences:
 ; abc/optimized/abcIvy.c.ll
 ; abc/optimized/cuddSubsetSP.c.ll
 ; abc/optimized/giaFanout.c.ll
@@ -36,7 +36,6 @@ entry:
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/JemallocHugePageAllocator.cpp.ll
 ; folly/optimized/LogCategory.cpp.ll
-; folly/optimized/LoggerDB.cpp.ll
 ; folly/optimized/ManualTimekeeper.cpp.ll
 ; folly/optimized/MaxConcurrentRateLimiter.cpp.ll
 ; folly/optimized/ObserverManager.cpp.ll
@@ -209,6 +208,11 @@ entry:
 ; wireshark/optimized/wireshark_preference.cpp.ll
 ; wireshark/optimized/wireshark_zip_helper.cpp.ll
 ; wireshark/optimized/wlan_statistics_dialog.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/7xoulo9o2q4wd1npp9yutbl3x.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/eldybx25av55fm0jlf5yq64qn.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, ptr %1) #0 {
 entry:

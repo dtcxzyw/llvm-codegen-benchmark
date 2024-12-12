@@ -46,7 +46,7 @@
 ; velox/optimized/Zip.cpp.ll
 ; velox/optimized/ZipWith.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000086(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 1
   %4 = add i64 %3, 2
@@ -60,7 +60,7 @@ entry:
 ; openexr/optimized/internal_huf.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000164(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func00000000000002c4(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 1
   %4 = add nuw i64 %3, 2

@@ -1,12 +1,11 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/CGClass.cpp.ll
 ; llvm/optimized/CGExprAgg.cpp.ll
 ; llvm/optimized/CGPointerAuth.cpp.ll
 ; llvm/optimized/CGVTables.cpp.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
-; postgres/optimized/char.ll
 ; qemu/optimized/disas_riscv.c.ll
 ; qemu/optimized/tcg.c.ll
 ; tomlplusplus/optimized/toml.cpp.ll

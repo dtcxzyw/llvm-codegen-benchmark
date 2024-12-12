@@ -1,5 +1,6 @@
 
-; 24 occurrences:
+; 29 occurrences:
+; boost/optimized/text_file_backend.ll
 ; clamav/optimized/htmlnorm.c.ll
 ; hermes/optimized/ConsecutiveStringStorage.cpp.ll
 ; hermes/optimized/Inlining.cpp.ll
@@ -19,6 +20,10 @@
 ; llvm/optimized/TargetTransformInfo.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86TargetMachine.cpp.ll
+; lvgl/optimized/lv_flex.ll
+; lvgl/optimized/lv_grid.ll
+; lvgl/optimized/lv_obj_pos.ll
+; lvgl/optimized/lv_obj_scroll.ll
 ; opencv/optimized/bagofwords_classification.cpp.ll
 ; opencv/optimized/templmatch.cpp.ll
 ; php/optimized/softmagic.ll
@@ -40,7 +45,7 @@ define i32 @func0000000000000004(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
   %4 = select i1 %1, i32 7, i32 %3
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -73,11 +78,16 @@ entry:
   ret i32 %5
 }
 
-; 6 occurrences:
+; 11 occurrences:
 ; clamav/optimized/file.cpp.ll
 ; grpc/optimized/ring_hash.cc.ll
 ; icu/optimized/ustring.ll
 ; icu/optimized/utext.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; lvgl/optimized/lv_grid.ll
+; lvgl/optimized/lv_label.ll
+; lvgl/optimized/lv_obj_pos.ll
+; lvgl/optimized/lv_obj_scroll.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; sentencepiece/optimized/strutil.cc.ll
 ; Function Attrs: nounwind

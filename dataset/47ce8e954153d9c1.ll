@@ -13,12 +13,13 @@ entry:
   ret i64 %3
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; entt/optimized/registry.cpp.ll
 ; entt/optimized/sparse_set.cpp.ll
 ; entt/optimized/storage_entity.cpp.ll
 ; entt/optimized/storage_no_instance.cpp.ll
+; opencv/optimized/onnx_importer.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000d(i64 %0) #0 {
 entry:

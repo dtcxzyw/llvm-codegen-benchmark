@@ -13,17 +13,6 @@ func0000000000000040:                   # @func0000000000000040
 	shrq	$2, %rsi
 	leal	(%rsi,%rdi), %eax
 	retq
-func0000000000000005:                   # @func0000000000000005
-	movq	%rsi, %rax
-	movabsq	$5247073869855161349, %rcx      # imm = 0x48D159E26AF37C05
-	imulq	%rcx
-	movq	%rdx, %rax
-	shrq	$63, %rax
-	shrq	$10, %rdx
-	addl	%eax, %edx
-	imull	$100, %edx, %eax
-	addl	%edi, %eax
-	retq
 func0000000000000000:                   # @func0000000000000000
 	movq	%rsi, %rax
 	movabsq	$3234497591006606311, %rcx      # imm = 0x2CE33E6C02CE33E7

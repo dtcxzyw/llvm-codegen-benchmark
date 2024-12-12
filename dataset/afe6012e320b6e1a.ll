@@ -8,7 +8,7 @@
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 3840
   %4 = or disjoint i32 %3, %1
@@ -26,10 +26,10 @@ entry:
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 32
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = icmp ne i32 %4, 0
   %6 = select i1 %5, i1 true, i1 %0
   ret i1 %6
@@ -47,15 +47,16 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; linux/optimized/drm_edid.ll
+; llvm/optimized/YAMLParser.cpp.ll
 ; luau/optimized/isocline.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000034(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1984
   %4 = or disjoint i32 %3, %1
-  %5 = icmp ult i32 %4, 32
+  %5 = icmp samesign ult i32 %4, 32
   %6 = select i1 %5, i1 true, i1 %0
   ret i1 %6
 }

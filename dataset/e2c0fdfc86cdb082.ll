@@ -10,14 +10,14 @@ entry:
   %3 = add i32 %2, 8
   %4 = sub i32 0, %1
   %5 = icmp eq i32 %3, %4
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; abc/optimized/giaDecs.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b4(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000154(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = add nsw i32 %3, %1
@@ -48,7 +48,7 @@ entry:
 define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = icmp ult i32 %4, 3
   %6 = or i1 %5, %0
   ret i1 %6
@@ -71,36 +71,36 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/LiteralSupport.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000148(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -64
   %4 = add nsw i32 %3, %1
   %5 = icmp ult i32 %4, 8
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; wireshark/optimized/netscaler.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000102(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -35
   %4 = add i32 %3, %1
   %5 = icmp eq i32 %4, 16383
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; linux/optimized/fib_trie.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b0(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000150(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = add nsw i32 %3, %1
   %5 = icmp ugt i32 %4, 32
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

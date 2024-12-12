@@ -13,13 +13,13 @@
 define i64 @func0000000000000004(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw i64 %3, %0
+  %4 = mul nuw i64 %0, %3
   %5 = zext i32 %1 to i64
   %6 = udiv i64 %4, %5
   ret i64 %6
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; git/optimized/midx.ll
 ; hdf5/optimized/H5Zscaleoffset.c.ll
 ; linux/optimized/cppc_acpi.ll
@@ -30,11 +30,12 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; openjdk/optimized/g1CollectedHeap.ll
 ; raylib/optimized/raudio.c.ll
+; zed-rs/optimized/bijypxqg3gfu3lugp8zf7c61q.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   %5 = zext i32 %1 to i64
   %6 = udiv i64 %4, %5
   ret i64 %6
@@ -47,7 +48,7 @@ entry:
 define i64 @func0000000000000006(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %0
+  %4 = mul nuw nsw i64 %0, %3
   %5 = zext i32 %1 to i64
   %6 = udiv i64 %4, %5
   ret i64 %6
@@ -59,7 +60,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nsw i64 %3, %0
+  %4 = mul nsw i64 %0, %3
   %5 = zext i32 %1 to i64
   %6 = udiv i64 %4, %5
   ret i64 %6

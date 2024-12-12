@@ -11,10 +11,10 @@
 ; openmpi/optimized/libmpi_c_profile_la-rget_accumulate.ll
 ; openmpi/optimized/libmpi_c_profile_la-rput.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ec(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func00000000000001cc(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp sle i32 %2, %0
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = icmp ne i32 %0, -2
   %6 = and i1 %5, %4
   ret i1 %6
@@ -23,10 +23,10 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/slot.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000004c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, %0
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = icmp ne i32 %0, 0
   %6 = and i1 %5, %4
   ret i1 %6
@@ -37,10 +37,10 @@ entry:
 ; openblas/optimized/dlatmt.c.ll
 ; redis/optimized/ldebug.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000004a(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, %0
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = icmp sgt i32 %0, 0
   %6 = and i1 %5, %4
   ret i1 %6

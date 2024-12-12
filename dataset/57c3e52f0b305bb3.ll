@@ -1,7 +1,6 @@
 
 ; 63 occurrences:
 ; abc/optimized/fraInd.c.ll
-; linux/optimized/mlme.ll
 ; llvm/optimized/AArch64StackTagging.cpp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/AddressSanitizer.cpp.ll
@@ -63,11 +62,12 @@
 ; openjdk/optimized/exceptions.ll
 ; postgres/optimized/reorderbuffer.ll
 ; tinympc/optimized/tiny_api.cpp.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = select i1 %4, ptr null, ptr %0
   ret ptr %5
 }

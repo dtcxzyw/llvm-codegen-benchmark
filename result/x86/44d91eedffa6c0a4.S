@@ -25,12 +25,6 @@ func00000000000000ff:                   # @func00000000000000ff
 	addl	%edi, %eax
 	imull	$85, %eax, %eax
 	retq
-func00000000000000fd:                   # @func00000000000000fd
-	addl	%edx, %esi
-	imull	$85, %esi, %eax
-	addl	%edi, %eax
-	imull	$85, %eax, %eax
-	retq
 func00000000000000c1:                   # @func00000000000000c1
 	addl	%edx, %esi
 	imull	$-12289, %esi, %eax             # imm = 0xCFFF

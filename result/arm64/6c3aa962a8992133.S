@@ -1,4 +1,4 @@
-func0000000000000031:                   // @func0000000000000031
+func0000000000000061:                   // @func0000000000000061
 // %bb.0:                               // %entry
 	mov	x9, #44099                      // =0xac43
 	asr	x8, x0, #3
@@ -11,7 +11,7 @@ func0000000000000031:                   // @func0000000000000031
 	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000038:                   // @func0000000000000038
+func0000000000000068:                   // @func0000000000000068
 // %bb.0:                               // %entry
 	asr	x8, x0, #3
 	mov	x9, #-3689348814741910324       // =0xcccccccccccccccc
@@ -22,7 +22,7 @@ func0000000000000038:                   // @func0000000000000038
 	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000034:                   // @func0000000000000034
+func0000000000000064:                   // @func0000000000000064
 // %bb.0:                               // %entry
 	asr	x8, x0, #3
 	mov	x9, #-3689348814741910324       // =0xcccccccccccccccc
@@ -33,7 +33,7 @@ func0000000000000034:                   // @func0000000000000034
 	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000014:                   // @func0000000000000014
+func0000000000000024:                   // @func0000000000000024
 // %bb.0:                               // %entry
 	sub	x8, x1, x2
 	add	x9, x0, #3
@@ -44,7 +44,7 @@ func0000000000000014:                   // @func0000000000000014
 	cset	w0, lo
 	ret
                                         // -- End function
-func000000000000003c:                   // @func000000000000003c
+func000000000000006c:                   // @func000000000000006c
 // %bb.0:                               // %entry
 	asr	x8, x0, #2
 	mov	x9, #-3689348814741910324       // =0xcccccccccccccccc

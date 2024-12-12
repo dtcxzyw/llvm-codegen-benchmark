@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 34 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; gromacs/optimized/domdec_specatomcomm.cpp.ll
 ; gromacs/optimized/gmx_bar.cpp.ll
@@ -13,7 +13,6 @@
 ; ipopt/optimized/IpTNLPAdapter.ll
 ; lightgbm/optimized/objective_function.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll
 ; ncnn/optimized/proposal.cpp.ll
 ; nix/optimized/lock.ll
@@ -45,9 +44,8 @@ entry:
   ret ptr %6
 }
 
-; 206 occurrences:
+; 204 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
-; duckdb/optimized/ub_duckdb_main.cpp.ll
 ; gromacs/optimized/atomdata.cpp.ll
 ; gromacs/optimized/domdec_specatomcomm.cpp.ll
 ; gromacs/optimized/gmx_bar.cpp.ll
@@ -67,7 +65,6 @@ entry:
 ; llvm/optimized/CloneFunction.cpp.ll
 ; llvm/optimized/LazyValueInfo.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll
 ; ncnn/optimized/proposal.cpp.ll

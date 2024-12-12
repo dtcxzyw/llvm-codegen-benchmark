@@ -1,9 +1,9 @@
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	xorl	%eax, %eax
 	cmpb	$10, %dl
 	sete	%al
 	xorl	$343, %eax                      # imm = 0x157
-	cmpl	%esi, %eax
+	cmpl	%eax, %esi
 	sete	%al
 	orb	%dil, %al
 	retq

@@ -1,4 +1,4 @@
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	sub	a1, a1, a2
 	srai	a1, a1, 3
 	sext.w	a0, a0
@@ -6,14 +6,14 @@ func000000000000005a:                   # @func000000000000005a
 	slti	a0, a0, 0
 	xori	a0, a0, 1
 	ret
-func0000000000000054:                   # @func0000000000000054
+func00000000000000b4:                   # @func00000000000000b4
 	sub	a1, a1, a2
 	srai	a1, a1, 3
 	sext.w	a0, a0
 	add	a0, a0, a1
 	sltiu	a0, a0, 64
 	ret
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	sub	a1, a1, a2
 	srai	a1, a1, 3
 	sext.w	a0, a0
@@ -21,7 +21,7 @@ func0000000000000058:                   # @func0000000000000058
 	srli	a0, a0, 60
 	snez	a0, a0
 	ret
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	sub	a1, a1, a2
 	sext.w	a0, a0
 	srai	a1, a1, 3

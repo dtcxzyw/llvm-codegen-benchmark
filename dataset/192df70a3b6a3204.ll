@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 21 occurrences:
 ; delta-rs/optimized/1x96nto90vd3u3mo.ll
 ; delta-rs/optimized/4say4x9grcidoih4.ll
 ; delta-rs/optimized/5f0eiaabmf6x2cpj.ll
@@ -20,13 +20,14 @@
 ; ockam-rs/optimized/546kmyffuelq6tnl.ll
 ; ockam-rs/optimized/6i1m1ipgbjjr3bk.ll
 ; ockam-rs/optimized/8vw3dw8isly7xg2.ll
+; zed-rs/optimized/driumlpfhwzx6147be2mcsi4u.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr i64 %3, 5
   %5 = and i64 %0, 31
-  %6 = icmp ugt i64 %4, %5
+  %6 = icmp samesign ugt i64 %4, %5
   ret i1 %6
 }
 

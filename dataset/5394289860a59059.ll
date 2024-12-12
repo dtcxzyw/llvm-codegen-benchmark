@@ -1,5 +1,5 @@
 
-; 75 occurrences:
+; 71 occurrences:
 ; ceres/optimized/cuda_block_structure.cc.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; faiss/optimized/MatrixStats.cpp.ll
@@ -66,15 +66,11 @@
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; wireshark/optimized/capture_file_properties_dialog.cpp.ll
-; wireshark/optimized/packet-asap.c.ll
-; wireshark/optimized/packet-calcappprotocol.c.ll
 ; wireshark/optimized/packet-componentstatus.c.ll
-; wireshark/optimized/packet-enrp.c.ll
-; wireshark/optimized/packet-fractalgeneratorprotocol.c.ll
 ; wireshark/optimized/packet-netperfmeter.c.ll
-; wireshark/optimized/packet-pingpongprotocol.c.ll
-; wireshark/optimized/packet-scriptingservice.c.ll
 ; yalantinglibs/optimized/client.cpp.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(double %0, i64 %1) #0 {
 entry:

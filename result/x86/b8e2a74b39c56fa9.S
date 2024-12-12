@@ -1,40 +1,56 @@
-func000000000000007c:                   # @func000000000000007c
+func00000000000000ec:                   # @func00000000000000ec
 	movzbl	%dl, %eax
 	shll	$8, %eax
 	movzbl	%sil, %ecx
 	orl	%eax, %ecx
-	cmpq	%rdi, %rcx
+	cmpq	%rcx, %rdi
 	setne	%al
 	retq
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	movzbl	%dl, %eax
 	shll	$8, %eax
 	movzbl	%sil, %ecx
 	orl	%eax, %ecx
-	cmpq	%rdi, %rcx
+	cmpq	%rcx, %rdi
 	sete	%al
 	retq
-func0000000000000074:                   # @func0000000000000074
+func00000000000000e4:                   # @func00000000000000e4
 	movzbl	%dl, %eax
 	shll	$8, %eax
 	movzbl	%sil, %ecx
 	orl	%eax, %ecx
-	cmpq	%rdi, %rcx
-	seta	%al
-	retq
-func0000000000000078:                   # @func0000000000000078
-	movzbl	%dl, %eax
-	shll	$8, %eax
-	movzbl	%sil, %ecx
-	orl	%eax, %ecx
-	cmpq	%rdi, %rcx
+	cmpq	%rcx, %rdi
 	setb	%al
 	retq
-func0000000000000075:                   # @func0000000000000075
+func00000000000000f4:                   # @func00000000000000f4
 	movzbl	%dl, %eax
 	shll	$8, %eax
 	movzbl	%sil, %ecx
 	orl	%eax, %ecx
-	cmpq	%rdi, %rcx
-	setae	%al
+	cmpq	%rcx, %rdi
+	setb	%al
+	retq
+func00000000000000e8:                   # @func00000000000000e8
+	movzbl	%dl, %eax
+	shll	$8, %eax
+	movzbl	%sil, %ecx
+	orl	%eax, %ecx
+	cmpq	%rcx, %rdi
+	seta	%al
+	retq
+func00000000000000f8:                   # @func00000000000000f8
+	movzbl	%dl, %eax
+	shll	$8, %eax
+	movzbl	%sil, %ecx
+	orl	%eax, %ecx
+	cmpq	%rcx, %rdi
+	seta	%al
+	retq
+func00000000000000f5:                   # @func00000000000000f5
+	movzbl	%dl, %eax
+	shll	$8, %eax
+	movzbl	%sil, %ecx
+	orl	%eax, %ecx
+	cmpq	%rcx, %rdi
+	setbe	%al
 	retq

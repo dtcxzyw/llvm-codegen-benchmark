@@ -1,8 +1,7 @@
 
-%"class.tbb::detail::d1::blocked_range.2521460" = type { i64, i64, i64 }
-%"class.tbb::detail::d1::blocked_range.3188756" = type { i64, i64, i64 }
+%"class.tbb::detail::d1::blocked_range.2635870" = type { i64, i64, i64 }
 
-; 219 occurrences:
+; 247 occurrences:
 ; brotli/optimized/static_dict.c.ll
 ; clamav/optimized/7zIn.c.ll
 ; icu/optimized/bytestrie.ll
@@ -191,6 +190,34 @@
 ; nori/optimized/nanovg.c.ll
 ; oiio/optimized/thread.cpp.ll
 ; openspiel/optimized/bridge.cc.ll
+; openusd/optimized/authoring.cpp.ll
+; openusd/optimized/bakeSkinning.cpp.ll
+; openusd/optimized/blendShapeQuery.cpp.ll
+; openusd/optimized/crateData.cpp.ll
+; openusd/optimized/delegate.cpp.ll
+; openusd/optimized/flatNormals.cpp.ll
+; openusd/optimized/generativeProceduralResolvingSceneIndex.cpp.ll
+; openusd/optimized/materialBindingAPI.cpp.ll
+; openusd/optimized/pathTable.cpp.ll
+; openusd/optimized/piPrototypeSceneIndex.cpp.ll
+; openusd/optimized/pointBased.cpp.ll
+; openusd/optimized/pointInstancer.cpp.ll
+; openusd/optimized/prim.cpp.ll
+; openusd/optimized/primGather.cpp.ll
+; openusd/optimized/primTypeIndex.cpp.ll
+; openusd/optimized/renderIndex.cpp.ll
+; openusd/optimized/resolvedAttributeCache.cpp.ll
+; openusd/optimized/schemaRegistry.cpp.ll
+; openusd/optimized/simplify.cpp.ll
+; openusd/optimized/skeletonAdapter.cpp.ll
+; openusd/optimized/smoothNormals.cpp.ll
+; openusd/optimized/stbImage.cpp.ll
+; openusd/optimized/stitchClips.cpp.ll
+; openusd/optimized/tbbKernel.cpp.ll
+; openusd/optimized/testWorkLoops.cpp.ll
+; openusd/optimized/testWorkReduce.cpp.ll
+; openusd/optimized/testWorkThreadLimits.cpp.ll
+; openusd/optimized/utils.cpp.ll
 ; openvdb/optimized/Activate.cc.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/AttributeArrayString.cc.ll
@@ -223,12 +250,12 @@
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i8 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 7
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 16
-  %5 = getelementptr nusw %"class.tbb::detail::d1::blocked_range.2521460", ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 16
+  %5 = getelementptr nusw nuw %"class.tbb::detail::d1::blocked_range.2635870", ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -247,54 +274,15 @@ entry:
   ret ptr %5
 }
 
-; 28 occurrences:
-; openusd/optimized/authoring.cpp.ll
-; openusd/optimized/bakeSkinning.cpp.ll
-; openusd/optimized/blendShapeQuery.cpp.ll
-; openusd/optimized/crateData.cpp.ll
-; openusd/optimized/delegate.cpp.ll
-; openusd/optimized/flatNormals.cpp.ll
-; openusd/optimized/generativeProceduralResolvingSceneIndex.cpp.ll
-; openusd/optimized/materialBindingAPI.cpp.ll
-; openusd/optimized/pathTable.cpp.ll
-; openusd/optimized/piPrototypeSceneIndex.cpp.ll
-; openusd/optimized/pointBased.cpp.ll
-; openusd/optimized/pointInstancer.cpp.ll
-; openusd/optimized/prim.cpp.ll
-; openusd/optimized/primGather.cpp.ll
-; openusd/optimized/primTypeIndex.cpp.ll
-; openusd/optimized/renderIndex.cpp.ll
-; openusd/optimized/resolvedAttributeCache.cpp.ll
-; openusd/optimized/schemaRegistry.cpp.ll
-; openusd/optimized/simplify.cpp.ll
-; openusd/optimized/skeletonAdapter.cpp.ll
-; openusd/optimized/smoothNormals.cpp.ll
-; openusd/optimized/stbImage.cpp.ll
-; openusd/optimized/stitchClips.cpp.ll
-; openusd/optimized/tbbKernel.cpp.ll
-; openusd/optimized/testWorkLoops.cpp.ll
-; openusd/optimized/testWorkReduce.cpp.ll
-; openusd/optimized/testWorkThreadLimits.cpp.ll
-; openusd/optimized/utils.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i8 %1) #0 {
-entry:
-  %2 = and i8 %1, 7
-  %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 16
-  %5 = getelementptr nusw %"class.tbb::detail::d1::blocked_range.3188756", ptr %4, i64 %3
-  ret ptr %5
-}
-
 ; 1 occurrences:
 ; brotli/optimized/static_dict.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i8 %1) #0 {
+define ptr @func0000000000000013(ptr %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 31
   %3 = zext nneg i8 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 12
-  %5 = getelementptr nusw i32, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw i32, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -304,11 +292,11 @@ entry:
 ; cpython/optimized/bytesobject.ll
 ; cpython/optimized/unicodeobject.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i8 %1) #0 {
+define ptr @func000000000000001c(ptr %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 63
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 44
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 44
   %5 = getelementptr i8, ptr %4, i64 %3
   ret ptr %5
 }

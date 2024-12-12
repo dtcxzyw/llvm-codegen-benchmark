@@ -1,5 +1,7 @@
 
-; 24 occurrences:
+%struct.Gia_Obj_t_.2877220 = type <{ i64, i32 }>
+
+; 22 occurrences:
 ; abc/optimized/abcDfs.c.ll
 ; abc/optimized/abcDress3.c.ll
 ; abc/optimized/acbFunc.c.ll
@@ -22,14 +24,26 @@
 ; abc/optimized/sscSat.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; bdwgc/optimized/gc.c.ll
-; cmake/optimized/zstd_compress.c.ll
-; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = and i64 %4, -8
+  %6 = sub i64 %5, %0
+  ret i64 %6
+}
+
+; 3 occurrences:
+; abc/optimized/darLib.c.ll
+; cmake/optimized/zstd_compress.c.ll
+; zstd/optimized/zstd_compress.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000c(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw %struct.Gia_Obj_t_.2877220, ptr %1, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = and i64 %4, -2
   %6 = sub i64 %5, %0
   ret i64 %6
 }

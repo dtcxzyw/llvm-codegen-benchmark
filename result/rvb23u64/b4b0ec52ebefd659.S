@@ -22,19 +22,19 @@ func0000000000000008:                   # @func0000000000000008
 	sext.w	a0, a0
 	sltu	a0, a0, a1
 	ret
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	sub	a1, a1, a2
 	addi	a1, a1, 16
 	sext.w	a0, a0
 	slt	a0, a0, a1
 	ret
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	sub	a1, a1, a2
 	addi	a1, a1, 1
 	sext.w	a0, a0
 	slt	a0, a1, a0
 	ret
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	sub	a1, a1, a2
 	addi	a1, a1, 1
 	sext.w	a0, a0

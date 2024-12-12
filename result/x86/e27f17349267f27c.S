@@ -1,37 +1,37 @@
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	notq	%rdx
 	addq	%rsi, %rdx
 	movq	%rdx, %rax
 	shrq	$63, %rax
 	addq	%rdx, %rax
 	sarq	%rax
-	cmpq	%rdi, %rax
-	setg	%al
-	retq
-func00000000000000a1:                   # @func00000000000000a1
-	subq	%rdx, %rsi
-	leaq	1(%rsi), %rax
-	shrq	$63, %rax
-	leaq	1(%rsi,%rax), %rax
-	sarq	%rax
-	cmpq	%rdi, %rax
-	sete	%al
-	retq
-func00000000000000aa:                   # @func00000000000000aa
-	subq	%rdx, %rsi
-	leaq	1(%rsi), %rax
-	shrq	$63, %rax
-	leaq	1(%rsi,%rax), %rax
-	sarq	%rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	setl	%al
 	retq
-func00000000000000a6:                   # @func00000000000000a6
+func0000000000000141:                   # @func0000000000000141
 	subq	%rdx, %rsi
 	leaq	1(%rsi), %rax
 	shrq	$63, %rax
 	leaq	1(%rsi,%rax), %rax
 	sarq	%rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
+	sete	%al
+	retq
+func000000000000014a:                   # @func000000000000014a
+	subq	%rdx, %rsi
+	leaq	1(%rsi), %rax
+	shrq	$63, %rax
+	leaq	1(%rsi,%rax), %rax
+	sarq	%rax
+	cmpq	%rax, %rdi
 	setg	%al
+	retq
+func0000000000000146:                   # @func0000000000000146
+	subq	%rdx, %rsi
+	leaq	1(%rsi), %rax
+	shrq	$63, %rax
+	leaq	1(%rsi,%rax), %rax
+	sarq	%rax
+	cmpq	%rax, %rdi
+	setl	%al
 	retq

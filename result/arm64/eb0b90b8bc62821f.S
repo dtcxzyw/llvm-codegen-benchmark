@@ -1,42 +1,24 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	neg	v5.2d, v5.2d
-	neg	v4.2d, v4.2d
-	ushl	v3.2d, v3.2d, v5.2d
-	ushl	v2.2d, v2.2d, v4.2d
-	sli	v2.2d, v0.2d, #1
-	sli	v3.2d, v1.2d, #1
-	mov	v0.16b, v2.16b
-	mov	v1.16b, v3.16b
+	lsr	x8, x1, x2
+	bfi	x8, x0, #1, #63
+	mov	x0, x8
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	neg	v5.2d, v5.2d
-	neg	v4.2d, v4.2d
-	mov	x8, #4607                       // =0x11ff
-	movk	x8, #65198, lsl #32
-	shl	v1.2d, v1.2d, #13
-	shl	v0.2d, v0.2d, #13
-	movk	x8, #65535, lsl #48
-	ushl	v3.2d, v3.2d, v5.2d
-	dup	v5.2d, x8
-	ushl	v2.2d, v2.2d, v4.2d
-	and	v3.16b, v3.16b, v5.16b
-	and	v2.16b, v2.16b, v5.16b
-	orr	v0.16b, v0.16b, v2.16b
-	orr	v1.16b, v1.16b, v3.16b
+	mov	x9, #4607                       // =0x11ff
+	lsr	x8, x1, x2
+	movk	x9, #65198, lsl #32
+	movk	x9, #65535, lsl #48
+	and	x8, x8, x9
+	orr	x0, x8, x0, lsl #13
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	neg	v5.2d, v5.2d
-	neg	v4.2d, v4.2d
-	ushl	v3.2d, v3.2d, v5.2d
-	ushl	v2.2d, v2.2d, v4.2d
-	sli	v2.2d, v0.2d, #32
-	sli	v3.2d, v1.2d, #32
-	mov	v0.16b, v2.16b
-	mov	v1.16b, v3.16b
+	lsr	x8, x1, x2
+	bfi	x8, x0, #32, #32
+	mov	x0, x8
 	ret
                                         // -- End function

@@ -1,16 +1,4 @@
 
-; 1 occurrences:
-; abseil-cpp/optimized/cordz_info.cc.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000021(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ugt i32 %2, 1
-  %4 = select i1 %3, i32 %1, i32 1
-  %5 = sext i32 %4 to i64
-  %6 = mul nsw i64 %5, %0
-  ret i64 %6
-}
-
 ; 2 occurrences:
 ; opencv/optimized/cumsum_layer.cpp.ll
 ; openmpi/optimized/hook_comm_method_fns.ll
@@ -20,7 +8,7 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 1
   %5 = sext i32 %4 to i64
-  %6 = mul i64 %5, %0
+  %6 = mul i64 %0, %5
   ret i64 %6
 }
 
@@ -68,7 +56,7 @@ entry:
   %3 = icmp ult i32 %2, 3
   %4 = select i1 %3, i32 %1, i32 0
   %5 = sext i32 %4 to i64
-  %6 = mul i64 %5, %0
+  %6 = mul i64 %0, %5
   ret i64 %6
 }
 
@@ -81,7 +69,7 @@ entry:
   %3 = icmp eq i32 %2, 1
   %4 = select i1 %3, i32 %1, i32 1
   %5 = sext i32 %4 to i64
-  %6 = mul nsw i64 %5, %0
+  %6 = mul nsw i64 %0, %5
   ret i64 %6
 }
 

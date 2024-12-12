@@ -14,17 +14,16 @@ entry:
   ret i32 %7
 }
 
-; 3 occurrences:
-; abc/optimized/giaSatLut.c.ll
+; 2 occurrences:
 ; cmake/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000020f(i32 %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ugt i64 %2, 1
+  %3 = icmp ugt i64 %2, 65791
   %4 = zext i1 %3 to i32
   %5 = zext i1 %1 to i32
-  %6 = add nuw nsw i32 %4, %5
+  %6 = add nuw nsw i32 %5, %4
   %7 = add nuw nsw i32 %6, %0
   ret i32 %7
 }

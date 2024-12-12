@@ -6,7 +6,7 @@
 ; openssl/optimized/openssl-bin-pkeyutl.ll
 ; php/optimized/zend_jit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000ccc(i32 %0, i32 %1) #0 {
+define i1 @func000000000000318c(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 32
   %3 = icmp ne i32 %1, 16

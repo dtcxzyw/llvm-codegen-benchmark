@@ -25,7 +25,7 @@ entry:
   ret i1 %5
 }
 
-; 111 occurrences:
+; 121 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
@@ -44,6 +44,8 @@ entry:
 ; abc/optimized/sscSim.c.ll
 ; abc/optimized/utilIsop.c.ll
 ; abseil-cpp/optimized/status_internal.cc.ll
+; base64-rs/optimized/3i18zkzed1c7jyoe.ll
+; boost/optimized/src.ll
 ; clamav/optimized/untar.c.ll
 ; cmake/optimized/archive_getdate.c.ll
 ; cmake/optimized/cm_get_date.c.ll
@@ -84,7 +86,6 @@ entry:
 ; linux/optimized/xfrm_policy.ll
 ; llvm/optimized/AArch64AsmBackend.cpp.ll
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
-; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/AArch64LegalizerInfo.cpp.ll
 ; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
@@ -110,9 +111,18 @@ entry:
 ; openssl/optimized/libcrypto-shlib-conf_mod.ll
 ; openssl/optimized/libssl-lib-quic_txp.ll
 ; openssl/optimized/libssl-shlib-quic_txp.ll
-; openusd/optimized/evalUtils.cpp.ll
+; openusd/optimized/aggregateNode.cpp.ll
+; openusd/optimized/aggregateTreeBuilder.cpp.ll
+; openusd/optimized/basisCurves.cpp.ll
+; openusd/optimized/collectionAPIAdapter.cpp.ll
+; openusd/optimized/eventTree.cpp.ll
+; openusd/optimized/mesh.cpp.ll
 ; openusd/optimized/primAdapter.cpp.ll
+; openusd/optimized/renderIndex.cpp.ll
 ; openusd/optimized/repr.cpp.ll
+; openusd/optimized/rprim.cpp.ll
+; openusd/optimized/typeRegistry.cpp.ll
+; openusd/optimized/unitTestNullRenderDelegate.cpp.ll
 ; pcg-cpp/optimized/make-partytrick.cpp.ll
 ; php/optimized/document.ll
 ; php/optimized/zend_jit.ll
@@ -146,12 +156,9 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
-; hermes/optimized/GlobalObject.cpp.ll
-; linux/optimized/scsi_ioctl.ll
+; 2 occurrences:
 ; ozz-animation/optimized/animation_optimizer.cc.ll
 ; quantlib/optimized/gsrprocesscore.ll
-; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -161,15 +168,28 @@ entry:
   ret i1 %5
 }
 
+; 3 occurrences:
+; hermes/optimized/GlobalObject.cpp.ll
+; linux/optimized/scsi_ioctl.ll
+; typst-rs/optimized/2i78fvbm4wocuesi.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = select i1 %0, i64 %1, i64 %2
+  %4 = and i64 %3, 4294967264
+  %5 = icmp ne i64 %4, 0
+  ret i1 %5
+}
+
 ; 2 occurrences:
 ; freetype/optimized/pshinter.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000014(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %0, i64 %1, i64 %2
   %4 = and i64 %3, 4294967295
-  %5 = icmp ult i64 %4, 129
+  %5 = icmp samesign ult i64 %4, 129
   ret i1 %5
 }
 

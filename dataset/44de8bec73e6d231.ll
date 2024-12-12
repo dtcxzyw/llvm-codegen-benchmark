@@ -18,18 +18,6 @@ entry:
 }
 
 ; 1 occurrences:
-; gromacs/optimized/forcetable.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000042(double %0, double %1) #0 {
-entry:
-  %2 = fsub double %0, %1
-  %3 = fcmp uno double %2, 0.000000e+00
-  %4 = fcmp olt double %2, 0xC71A36E2E0000000
-  %5 = or i1 %3, %4
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; msdfgen/optimized/edge-segments.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000194(double %0, double %1) #0 {

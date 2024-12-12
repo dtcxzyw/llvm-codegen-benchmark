@@ -20,7 +20,7 @@
 ; oiio/optimized/xmp.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i8 %0) #0 {
+define i1 @func0000000000000024(i8 %0) #0 {
 entry:
   %1 = or i8 %0, 32
   %2 = sext i8 %1 to i32

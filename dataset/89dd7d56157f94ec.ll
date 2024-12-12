@@ -1,11 +1,10 @@
 
-; 122 occurrences:
+; 120 occurrences:
 ; abc/optimized/dauNpn2.c.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
 ; abseil-cpp/optimized/globals.cc.ll
-; abseil-cpp/optimized/hash.cc.ll
 ; abseil-cpp/optimized/hash_function_defaults_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; abseil-cpp/optimized/node_hash_map_test.cc.ll
@@ -25,7 +24,6 @@
 ; libphonenumber/optimized/phonenumberutil.cc.ll
 ; libphonenumber/optimized/shortnumberinfo.cc.ll
 ; linux/optimized/e1000_hw.ll
-; linux/optimized/he.ll
 ; linux/optimized/mac.ll
 ; linux/optimized/regset.ll
 ; linux/optimized/vht.ll
@@ -243,8 +241,9 @@ entry:
   ret i32 %3
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; abc/optimized/timDump.c.ll
+; boost/optimized/gzip.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; graphviz/optimized/arrows.c.ll
@@ -266,16 +265,6 @@ define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 2
   %3 = shl nsw i32 %0, %2
-  ret i32 %3
-}
-
-; 1 occurrences:
-; linux/optimized/intel_dkl_phy.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl nsw i32 %1, 3
-  %3 = shl nuw nsw i32 %0, %2
   ret i32 %3
 }
 

@@ -1,8 +1,7 @@
 
-; 234 occurrences:
+; 233 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; folly/optimized/CacheLocality.cpp.ll
-; folly/optimized/F14Table.cpp.ll
 ; hermes/optimized/ES6Class.cpp.ll
 ; llvm/optimized/AArch64ExpandImm.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll

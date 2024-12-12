@@ -1,6 +1,6 @@
 func000000000000000f:                   # @func000000000000000f
 	addl	%esi, %edi
-	leaq	4(,%rdi,4), %rax
+	leaq	2(%rdi,%rdi), %rax
 	retq
 func000000000000002f:                   # @func000000000000002f
 	leal	(%rdi,%rsi), %eax

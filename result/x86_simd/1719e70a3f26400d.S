@@ -20,37 +20,20 @@ func0000000000000008:                   # @func0000000000000008
 	vmovdqu8	%xmm0, %xmm1 {%k1}
 	vpmovzxbd	%xmm1, %ymm0            # ymm0 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero,xmm1[4],zero,zero,zero,xmm1[5],zero,zero,zero,xmm1[6],zero,zero,zero,xmm1[7],zero,zero,zero
 	retq
-.LCPI1_0:
-	.byte	96                              # 0x60
-	.byte	96                              # 0x60
-	.byte	96                              # 0x60
-	.byte	96                              # 0x60
-	.byte	96                              # 0x60
-	.byte	96                              # 0x60
-	.byte	96                              # 0x60
-	.byte	96                              # 0x60
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-func0000000000000011:                   # @func0000000000000011
-	vpcmpnleub	.LCPI1_0(%rip), %xmm2, %k1
+func0000000000000003:                   # @func0000000000000003
+	vptestnmb	%xmm2, %xmm2, %k1
 	vmovdqu8	%xmm0, %xmm1 {%k1}
 	vpmovzxbd	%xmm1, %ymm0            # ymm0 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero,xmm1[4],zero,zero,zero,xmm1[5],zero,zero,zero,xmm1[6],zero,zero,zero,xmm1[7],zero,zero,zero
 	retq
 .LCPI2_0:
-	.byte	45                              # 0x2d
-	.byte	45                              # 0x2d
-	.byte	45                              # 0x2d
-	.byte	45                              # 0x2d
-	.byte	45                              # 0x2d
-	.byte	45                              # 0x2d
-	.byte	45                              # 0x2d
-	.byte	45                              # 0x2d
+	.byte	96                              # 0x60
+	.byte	96                              # 0x60
+	.byte	96                              # 0x60
+	.byte	96                              # 0x60
+	.byte	96                              # 0x60
+	.byte	96                              # 0x60
+	.byte	96                              # 0x60
+	.byte	96                              # 0x60
 	.zero	1
 	.zero	1
 	.zero	1
@@ -59,8 +42,8 @@ func0000000000000011:                   # @func0000000000000011
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000003:                   # @func0000000000000003
-	vpcmpeqb	.LCPI2_0(%rip), %xmm2, %k1
+func0000000000000031:                   # @func0000000000000031
+	vpcmpnleub	.LCPI2_0(%rip), %xmm2, %k1
 	vmovdqu8	%xmm0, %xmm1 {%k1}
 	vpmovzxbd	%xmm1, %ymm0            # ymm0 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero,xmm1[4],zero,zero,zero,xmm1[5],zero,zero,zero,xmm1[6],zero,zero,zero,xmm1[7],zero,zero,zero
 	retq
@@ -105,6 +88,28 @@ func0000000000000002:                   # @func0000000000000002
 	.zero	1
 func0000000000000010:                   # @func0000000000000010
 	vpcmpnleub	.LCPI4_0(%rip), %xmm2, %k1
+	vmovdqu8	%xmm0, %xmm1 {%k1}
+	vpmovzxbd	%xmm1, %ymm0            # ymm0 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero,xmm1[4],zero,zero,zero,xmm1[5],zero,zero,zero,xmm1[6],zero,zero,zero,xmm1[7],zero,zero,zero
+	retq
+.LCPI5_0:
+	.byte	107                             # 0x6b
+	.byte	107                             # 0x6b
+	.byte	107                             # 0x6b
+	.byte	107                             # 0x6b
+	.byte	107                             # 0x6b
+	.byte	107                             # 0x6b
+	.byte	107                             # 0x6b
+	.byte	107                             # 0x6b
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+func0000000000000028:                   # @func0000000000000028
+	vpcmpltub	.LCPI5_0(%rip), %xmm2, %k1
 	vmovdqu8	%xmm0, %xmm1 {%k1}
 	vpmovzxbd	%xmm1, %ymm0            # ymm0 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero,xmm1[4],zero,zero,zero,xmm1[5],zero,zero,zero,xmm1[6],zero,zero,zero,xmm1[7],zero,zero,zero
 	retq

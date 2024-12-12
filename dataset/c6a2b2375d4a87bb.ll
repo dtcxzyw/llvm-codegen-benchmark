@@ -1,6 +1,7 @@
 
 ; 93 occurrences:
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/to_chars.ll
 ; flatbuffers/optimized/flatc.cpp.ll
 ; hdf5/optimized/H5HGcache.c.ll
 ; hermes/optimized/BytecodeDisassembler.cpp.ll
@@ -69,7 +70,6 @@
 ; llvm/optimized/UninitializedObjectChecker.cpp.ll
 ; llvm/optimized/UnixAPIChecker.cpp.ll
 ; oiio/optimized/imagebuf.cpp.ll
-; opencv/optimized/qrcode_encoder.cpp.ll
 ; php/optimized/ZendAccelerator.ll
 ; php/optimized/block_pass.ll
 ; php/optimized/compact_literals.ll
@@ -103,7 +103,8 @@ entry:
   ret i1 %6
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/alloc_lib.ll
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
 ; luau/optimized/UnwindBuilderDwarf2.cpp.ll
@@ -120,7 +121,8 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/to_chars.ll
 ; git/optimized/apply.ll
 ; linux/optimized/ipconfig.ll
 ; Function Attrs: nounwind

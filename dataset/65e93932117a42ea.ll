@@ -1,4 +1,17 @@
 
+; 2 occurrences:
+; openssl/optimized/ca_internals_test-bin-ca.ll
+; openssl/optimized/openssl-bin-ca.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000020(i64 %0, i32 %1) #0 {
+entry:
+  %2 = shl nuw i32 %1, 1
+  %3 = add i32 %2, 5
+  %4 = sext i32 %3 to i64
+  %5 = add i64 %0, %4
+  ret i64 %5
+}
+
 ; 4 occurrences:
 ; libwebp/optimized/vp8l_enc.c.ll
 ; mold/optimized/passes.cc.ARM32.cc.ll
@@ -10,7 +23,7 @@ entry:
   %2 = shl i32 %1, 1
   %3 = add i32 %2, 16
   %4 = sext i32 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -26,7 +39,19 @@ entry:
   %2 = shl i32 %1, 3
   %3 = add i32 %2, 8
   %4 = sext i32 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
+  ret i64 %5
+}
+
+; 1 occurrences:
+; quickjs/optimized/quickjs.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000035(i64 %0, i32 %1) #0 {
+entry:
+  %2 = shl nuw nsw i32 %1, 1
+  %3 = add nsw i32 %2, -287
+  %4 = sext i32 %3 to i64
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -38,7 +63,7 @@ entry:
   %2 = shl nsw i32 %1, 20
   %3 = add nsw i32 %2, 1048576
   %4 = sext i32 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -50,7 +75,7 @@ entry:
   %2 = shl nsw i32 %1, 1
   %3 = add nsw i32 %2, 2
   %4 = sext i32 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 

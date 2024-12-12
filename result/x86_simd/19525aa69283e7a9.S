@@ -60,11 +60,3 @@ func000000000000001a:                   # @func000000000000001a
 	vpaddq	.LCPI6_0(%rip){1to4}, %ymm0, %ymm0
 	vpandq	.LCPI6_1(%rip){1to4}, %ymm0, %ymm0
 	retq
-.LCPI7_0:
-	.quad	2305843009213693944             # 0x1ffffffffffffff8
-func0000000000000013:                   # @func0000000000000013
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubq	%ymm1, %ymm0, %ymm0
-	vpsrlq	$3, %ymm0, %ymm0
-	vpandq	.LCPI7_0(%rip){1to4}, %ymm0, %ymm0
-	retq

@@ -26,7 +26,7 @@ func0000000000000019:                   # @func0000000000000019
 	or	a1, a1, a3
 	sub	a0, a0, a1
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000051:                   # @func0000000000000051
 	sltiu	a2, a2, 96
 	li	a3, 48
 	czero.nez	a3, a3, a2
@@ -35,11 +35,6 @@ func0000000000000011:                   # @func0000000000000011
 	sub	a0, a0, a1
 	ret
 func0000000000000006:                   # @func0000000000000006
-	czero.nez	a1, a1, a2
-	sub	a0, a0, a1
-	ret
-func0000000000000020:                   # @func0000000000000020
-	sltiu	a2, a2, 8
 	czero.nez	a1, a1, a2
 	sub	a0, a0, a1
 	ret

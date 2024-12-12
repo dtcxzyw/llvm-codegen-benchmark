@@ -5,7 +5,7 @@
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wireshark/optimized/pcapng.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i64 %0) #0 {
+define i32 @func0000000000000061(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
   %2 = and i32 %1, 1023

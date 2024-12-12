@@ -15,7 +15,7 @@ func0000000000000007:                   # @func0000000000000007
 	vcvtpd2ps	%zmm2, %ymm0
 	vcvtpd2ps	%zmm3, %ymm2
 	vinsertf64x4	$1, %ymm2, %zmm0, %zmm0
-	vcmpneqps	%zmm1, %zmm0, %k1
+	vcmpneqps	%zmm0, %zmm1, %k1
 	korw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

@@ -1,5 +1,5 @@
 
-; 194 occurrences:
+; 188 occurrences:
 ; abc/optimized/fretInit.c.ll
 ; abc/optimized/lpkMulti.c.ll
 ; c3c/optimized/c_abi_win64.c.ll
@@ -36,24 +36,20 @@
 ; linux/optimized/acpi_pcihp.ll
 ; linux/optimized/dcache.ll
 ; linux/optimized/e1000_hw.ll
-; linux/optimized/extents.ll
 ; linux/optimized/flow_dissector.ll
 ; linux/optimized/gre_offload.ll
 ; linux/optimized/hda_controller.ll
 ; linux/optimized/hub.ll
 ; linux/optimized/hugetlb.ll
-; linux/optimized/i915_irq.ll
 ; linux/optimized/inotify_user.ll
 ; linux/optimized/intel-gtt.ll
 ; linux/optimized/intel_backlight.ll
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/intel_gmbus.ll
 ; linux/optimized/intel_overlay.ll
-; linux/optimized/io_uring.ll
 ; linux/optimized/libata-core.ll
 ; linux/optimized/libfs.ll
 ; linux/optimized/mac.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/mmu_gather.ll
@@ -68,7 +64,6 @@
 ; linux/optimized/sem.ll
 ; linux/optimized/sr_ioctl.ll
 ; linux/optimized/tcp_minisocks.ll
-; linux/optimized/tg3.ll
 ; linux/optimized/tx.ll
 ; linux/optimized/unwind_orc.ll
 ; linux/optimized/vht.ll
@@ -94,7 +89,6 @@
 ; llvm/optimized/LegalizeIntegerTypes.cpp.ll
 ; llvm/optimized/ModuleMap.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ResourcePriorityQueue.cpp.ll
 ; llvm/optimized/SemaCast.cpp.ll
 ; llvm/optimized/SemaCoroutine.cpp.ll
@@ -211,7 +205,7 @@ entry:
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; vcpkg/optimized/strings.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i16 %0) #0 {
+define i32 @func0000000000000014(i16 %0) #0 {
 entry:
   %1 = and i16 %0, 6
   %2 = icmp eq i16 %1, 0
@@ -236,7 +230,7 @@ entry:
 ; 1 occurrences:
 ; meshoptimizer/optimized/quantization.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i16 %0) #0 {
+define i32 @func0000000000000018(i16 %0) #0 {
 entry:
   %1 = and i16 %0, 31744
   %2 = icmp eq i16 %1, 31744

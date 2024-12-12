@@ -37,19 +37,19 @@ func000000000000000f:                   # @func000000000000000f
 	vpsubd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
-.LCPI5_0:
+func0000000000000000:                   # @func0000000000000000
+	vpsrlq	$6, %ymm0, %ymm0
+	vpmovqd	%ymm0, %xmm0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpsubd	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq
+.LCPI6_0:
 	.long	8                               # 0x8
 func0000000000000003:                   # @func0000000000000003
 	vpsrlq	$3, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
-	vpbroadcastd	.LCPI5_0(%rip), %xmm1   # xmm1 = [8,8,8,8]
-	vpsubd	%xmm0, %xmm1, %xmm0
-	vzeroupper
-	retq
-func0000000000000000:                   # @func0000000000000000
-	vpsrlq	$4, %ymm0, %ymm0
-	vpmovqd	%ymm0, %xmm0
-	vpxor	%xmm1, %xmm1, %xmm1
+	vpbroadcastd	.LCPI6_0(%rip), %xmm1   # xmm1 = [8,8,8,8]
 	vpsubd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq

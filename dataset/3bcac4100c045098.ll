@@ -1,5 +1,5 @@
 
-; 405 occurrences:
+; 401 occurrences:
 ; darktable/optimized/Camera.cpp.ll
 ; darktable/optimized/Cr2Decoder.cpp.ll
 ; darktable/optimized/MosDecoder.cpp.ll
@@ -7,7 +7,6 @@
 ; darktable/optimized/RafDecoder.cpp.ll
 ; darktable/optimized/Rw2Decoder.cpp.ll
 ; darktable/optimized/SrwDecoder.cpp.ll
-; eastl/optimized/BenchmarkString.cpp.ll
 ; glslang/optimized/ParseContextBase.cpp.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; glslang/optimized/PpAtom.cpp.ll
@@ -288,13 +287,10 @@
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/outputs-spec.ll
 ; nix/optimized/parsed-derivations.ll
@@ -409,6 +405,33 @@
 define ptr @func0000000000000022(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %0, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = ptrtoint ptr %1 to i64
+  %6 = sub i64 %4, %5
+  %7 = getelementptr nusw i8, ptr %0, i64 %6
+  ret ptr %7
+}
+
+; 2 occurrences:
+; boost/optimized/code_conversion.ll
+; boost/optimized/main.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000033(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = ptrtoint ptr %1 to i64
+  %6 = sub i64 %4, %5
+  %7 = getelementptr nusw nuw i8, ptr %0, i64 %6
+  ret ptr %7
+}
+
+; 1 occurrences:
+; eastl/optimized/BenchmarkString.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000032(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i16, ptr %0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = ptrtoint ptr %1 to i64
   %6 = sub i64 %4, %5

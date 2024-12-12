@@ -1,5 +1,5 @@
 
-; 88 occurrences:
+; 84 occurrences:
 ; annoy/optimized/annoymodule.ll
 ; assimp/optimized/MS3DLoader.cpp.ll
 ; bullet3/optimized/btConeTwistConstraint.ll
@@ -47,11 +47,6 @@
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; nanosvg/optimized/nanosvg.ll
-; ncnn/optimized/yolov3detectionoutput.cpp.ll
-; ncnn/optimized/yolov3detectionoutput_x86.cpp.ll
-; ncnn/optimized/yolov3detectionoutput_x86_avx.cpp.ll
-; ncnn/optimized/yolov3detectionoutput_x86_avx512.cpp.ll
-; ncnn/optimized/yolov3detectionoutput_x86_fma.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; nori/optimized/warptest.cpp.ll
 ; nuklear/optimized/unity.c.ll
@@ -88,12 +83,13 @@
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %1, %2
   %4 = fmul float %3, 5.000000e-01
-  %5 = fadd float %4, %0
+  %5 = fadd float %0, %4
   ret float %5
 }
 

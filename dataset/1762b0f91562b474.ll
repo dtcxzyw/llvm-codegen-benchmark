@@ -16,7 +16,7 @@ define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 3
   %4 = and i32 %3, 7
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = sub nsw i32 %5, %0
   ret i32 %6
 }
@@ -29,7 +29,7 @@ define i32 @func000000000000000d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 16
   %4 = and i32 %3, 255
-  %5 = add nuw nsw i32 %4, %1
+  %5 = add nuw nsw i32 %1, %4
   %6 = sub nsw i32 %5, %0
   ret i32 %6
 }

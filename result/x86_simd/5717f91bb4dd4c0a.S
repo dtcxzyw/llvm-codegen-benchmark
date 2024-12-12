@@ -32,24 +32,37 @@ func000000000000000c:                   # @func000000000000000c
 	retq
 .LCPI2_0:
 	.long	2130706432                      # 0x7f000000
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	vptestnmd	.LCPI2_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 .LCPI3_0:
-	.long	16191                           # 0x3f3f
+	.long	4294934272                      # 0xffff7f00
 .LCPI3_1:
-	.long	65343                           # 0xff3f
-.LCPI3_2:
-	.long	256                             # 0x100
-func0000000000000008:                   # @func0000000000000008
+	.long	4294967040                      # 0xffffff00
+func0000000000000004:                   # @func0000000000000004
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
-	vpbroadcastd	.LCPI3_0(%rip), %ymm1   # ymm1 = [16191,16191,16191,16191,16191,16191,16191,16191]
-	vpbroadcastd	.LCPI3_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [65343,65343,65343,65343,65343,65343,65343,65343]
+	vpbroadcastd	.LCPI3_0(%rip), %ymm1   # ymm1 = [4294934272,4294934272,4294934272,4294934272,4294934272,4294934272,4294934272,4294934272]
+	vpbroadcastd	.LCPI3_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [4294967040,4294967040,4294967040,4294967040,4294967040,4294967040,4294967040,4294967040]
+	vptestnmd	%ymm1, %ymm0, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI4_0:
+	.long	16191                           # 0x3f3f
+.LCPI4_1:
+	.long	65343                           # 0xff3f
+.LCPI4_2:
+	.long	256                             # 0x100
+func0000000000000018:                   # @func0000000000000018
+	vpsllw	$15, %xmm1, %xmm1
+	vpmovw2m	%xmm1, %k1
+	vpbroadcastd	.LCPI4_0(%rip), %ymm1   # ymm1 = [16191,16191,16191,16191,16191,16191,16191,16191]
+	vpbroadcastd	.LCPI4_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [65343,65343,65343,65343,65343,65343,65343,65343]
 	vpand	%ymm0, %ymm1, %ymm0
-	vpcmpgtd	.LCPI3_2(%rip){1to8}, %ymm0, %k0
+	vpcmpgtd	.LCPI4_2(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

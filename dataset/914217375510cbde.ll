@@ -10,11 +10,11 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, -8
   %4 = inttoptr i64 %3 to ptr
-  %5 = icmp ugt ptr %4, %0
+  %5 = icmp ult ptr %0, %4
   ret i1 %5
 }
 
-; 151 occurrences:
+; 152 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcHieGia.c.ll
@@ -84,6 +84,7 @@ entry:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/attribute_name.ll
 ; folly/optimized/SimpleSimdStringUtils.cpp.ll
 ; folly/optimized/SplitStringSimd.cpp.ll
 ; hermes/optimized/Array.cpp.ll
@@ -172,7 +173,7 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, -16
   %4 = inttoptr i64 %3 to ptr
-  %5 = icmp eq ptr %4, %0
+  %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 
@@ -194,7 +195,7 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, -4
   %4 = inttoptr i64 %3 to ptr
-  %5 = icmp ne ptr %4, %0
+  %5 = icmp ne ptr %0, %4
   ret i1 %5
 }
 
@@ -206,7 +207,7 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, -524288
   %4 = inttoptr i64 %3 to ptr
-  %5 = icmp ule ptr %4, %0
+  %5 = icmp uge ptr %0, %4
   ret i1 %5
 }
 
@@ -218,7 +219,7 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, -524288
   %4 = inttoptr i64 %3 to ptr
-  %5 = icmp uge ptr %4, %0
+  %5 = icmp ule ptr %0, %4
   ret i1 %5
 }
 
@@ -230,7 +231,7 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, -524288
   %4 = inttoptr i64 %3 to ptr
-  %5 = icmp ult ptr %4, %0
+  %5 = icmp ugt ptr %0, %4
   ret i1 %5
 }
 

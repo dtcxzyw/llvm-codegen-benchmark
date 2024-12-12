@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; c3c/optimized/parse_expr.c.ll
 ; c3c/optimized/parse_global.c.ll
 ; c3c/optimized/parse_stmt.c.ll
@@ -8,6 +8,7 @@
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; linux/optimized/vc_screen.ll
+; lvgl/optimized/lv_scale.ll
 ; openjdk/optimized/hb-face.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; qemu/optimized/fpu_softfloat.c.ll

@@ -262,7 +262,8 @@ entry:
   ret i64 %3
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; graphviz/optimized/grammar.c.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; php/optimized/soundex.ll
 ; tomlplusplus/optimized/toml.cpp.ll

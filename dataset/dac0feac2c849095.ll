@@ -1,23 +1,25 @@
 
-%"class.std::__1::shared_ptr.24.3664010" = type { ptr, ptr }
+%"class.std::__1::shared_ptr.24.3843661" = type { ptr, ptr }
 
-; 34 occurrences:
+; 36 occurrences:
+; boost/optimized/args_cmd.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/env.ll
+; boost/optimized/group.ll
+; boost/optimized/pipe.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/wargs_cmd.ll
 ; cmake/optimized/cmListFileLexer.c.ll
 ; cvc5/optimized/inst_match_generator_multi.cpp.ll
 ; darktable/optimized/print_settings.c.ll
-; git/optimized/sequencer.ll
 ; git/optimized/unpack-trees.ll
-; hermes/optimized/DependencyExtractor.cpp.ll
-; hermes/optimized/JSLibInternal.cpp.ll
-; hermes/optimized/JSRegExp.cpp.ll
-; hermes/optimized/RegexParser.cpp.ll
-; hermes/optimized/RegexSerialization.cpp.ll
-; hyperscan/optimized/ng_find_matches.cpp.ll
-; hyperscan/optimized/ng_violet.cpp.ll
-; hyperscan/optimized/rose_build_bytecode.cpp.ll
-; hyperscan/optimized/rose_build_merge.cpp.ll
-; hyperscan/optimized/rose_build_program.cpp.ll
-; hyperscan/optimized/rose_in_util.cpp.ll
 ; icu/optimized/localeprioritylist.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/RegisterInfoEmitter.cpp.ll
@@ -46,8 +48,9 @@ entry:
   ret i64 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; annoy/optimized/annoymodule.ll
+; git/optimized/sequencer.ll
 ; linux/optimized/filter.ll
 ; postgres/optimized/arrayfuncs.ll
 ; Function Attrs: nounwind
@@ -66,7 +69,7 @@ entry:
 define i64 @func0000000000000008(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 32
-  %4 = getelementptr nusw %"class.std::__1::shared_ptr.24.3664010", ptr %1, i64 %3
+  %4 = getelementptr nusw %"class.std::__1::shared_ptr.24.3843661", ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
   ret i64 %6

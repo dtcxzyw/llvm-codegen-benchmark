@@ -1,31 +1,48 @@
 
-%struct.ssl_mac_buf_st.2518676 = type { ptr, i32 }
-%struct.ieee80211_sband_iftype_data.3355807 = type <{ i16, %struct.ieee80211_sta_he_cap.3355808, %struct.ieee80211_he_6ghz_capa.3355809, %struct.ieee80211_sta_eht_cap.3355810, %struct.anon.144.3355811 }>
-%struct.ieee80211_sta_he_cap.3355808 = type <{ i8, %struct.ieee80211_he_cap_elem.3355812, %struct.ieee80211_he_mcs_nss_supp.3355813, [25 x i8] }>
-%struct.ieee80211_he_cap_elem.3355812 = type { [6 x i8], [11 x i8] }
-%struct.ieee80211_he_mcs_nss_supp.3355813 = type { i16, i16, i16, i16, i16, i16 }
-%struct.ieee80211_he_6ghz_capa.3355809 = type { i16 }
-%struct.ieee80211_sta_eht_cap.3355810 = type { i8, %struct.ieee80211_eht_cap_elem_fixed.3355814, %struct.ieee80211_eht_mcs_nss_supp.3355815, [32 x i8] }
-%struct.ieee80211_eht_cap_elem_fixed.3355814 = type { [2 x i8], [9 x i8] }
-%struct.ieee80211_eht_mcs_nss_supp.3355815 = type { %union.anon.105.3355816 }
-%union.anon.105.3355816 = type { %struct.anon.108.3355817 }
-%struct.anon.108.3355817 = type { %struct.ieee80211_eht_mcs_nss_supp_bw.3355818, %struct.ieee80211_eht_mcs_nss_supp_bw.3355818, %struct.ieee80211_eht_mcs_nss_supp_bw.3355818 }
-%struct.ieee80211_eht_mcs_nss_supp_bw.3355818 = type { %union.anon.109.3355819 }
-%union.anon.109.3355819 = type { %struct.anon.110.3355820 }
-%struct.anon.110.3355820 = type { i8, i8, i8 }
-%struct.anon.144.3355811 = type { ptr, i32 }
+%struct.ssl_mac_buf_st.2633660 = type { ptr, i32 }
+%"class.std::__cxx11::basic_string.2802902" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2802903", i64, %union.anon.2802904 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2802903" = type { ptr }
+%union.anon.2802904 = type { i64, [8 x i8] }
+%struct.ieee80211_sband_iftype_data.3543204 = type <{ i16, %struct.ieee80211_sta_he_cap.3543205, %struct.ieee80211_he_6ghz_capa.3543206, %struct.ieee80211_sta_eht_cap.3543207, %struct.anon.144.3543208 }>
+%struct.ieee80211_sta_he_cap.3543205 = type <{ i8, %struct.ieee80211_he_cap_elem.3543209, %struct.ieee80211_he_mcs_nss_supp.3543210, [25 x i8] }>
+%struct.ieee80211_he_cap_elem.3543209 = type { [6 x i8], [11 x i8] }
+%struct.ieee80211_he_mcs_nss_supp.3543210 = type { i16, i16, i16, i16, i16, i16 }
+%struct.ieee80211_he_6ghz_capa.3543206 = type { i16 }
+%struct.ieee80211_sta_eht_cap.3543207 = type { i8, %struct.ieee80211_eht_cap_elem_fixed.3543211, %struct.ieee80211_eht_mcs_nss_supp.3543212, [32 x i8] }
+%struct.ieee80211_eht_cap_elem_fixed.3543211 = type { [2 x i8], [9 x i8] }
+%struct.ieee80211_eht_mcs_nss_supp.3543212 = type { %union.anon.105.3543213 }
+%union.anon.105.3543213 = type { %struct.anon.108.3543214 }
+%struct.anon.108.3543214 = type { %struct.ieee80211_eht_mcs_nss_supp_bw.3543215, %struct.ieee80211_eht_mcs_nss_supp_bw.3543215, %struct.ieee80211_eht_mcs_nss_supp_bw.3543215 }
+%struct.ieee80211_eht_mcs_nss_supp_bw.3543215 = type { %union.anon.109.3543216 }
+%union.anon.109.3543216 = type { %struct.anon.110.3543217 }
+%struct.anon.110.3543217 = type { i8, i8, i8 }
+%struct.anon.144.3543208 = type { ptr, i32 }
 
-; 88 occurrences:
+; 14 occurrences:
 ; casadi/optimized/codegen_usage.cpp.ll
 ; diesel-rs/optimized/1d2qvx9ydcknzsic.ll
 ; diesel-rs/optimized/1hwven6eovlu4ao9.ll
 ; diesel-rs/optimized/2fxh6hu0vuy6xjr.ll
-; freetype/optimized/autofit.c.ll
-; git/optimized/apply.ll
-; git/optimized/kwset.ll
 ; git/optimized/ref-filter.ll
 ; gromacs/optimized/msd.cpp.ll
-; hwloc/optimized/pci-common.ll
+; llvm/optimized/ConstantPools.cpp.ll
+; luau/optimized/OptimizeConstProp.cpp.ll
+; openssl/optimized/libssl-lib-tls1_meth.ll
+; openssl/optimized/libssl-shlib-tls1_meth.ll
+; ring-rs/optimized/36n9a21mmta9vg69.ll
+; rust-analyzer-rs/optimized/4uaufavgtitxbs81.ll
+; vcpkg/optimized/json.cpp.ll
+; zed-rs/optimized/8x58xp4s22l8izlb56sviitm3.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(i1 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr %struct.ssl_mac_buf_st.2633660, ptr %1, i64 %2, i32 1
+  %4 = select i1 %0, ptr null, ptr %3
+  ret ptr %4
+}
+
+; 71 occurrences:
+; git/optimized/apply.ll
 ; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTImporterLookupTable.cpp.ll
@@ -39,7 +56,6 @@
 ; llvm/optimized/CastToStructChecker.cpp.ll
 ; llvm/optimized/CodeGenModule.cpp.ll
 ; llvm/optimized/CodeGenPGO.cpp.ll
-; llvm/optimized/Core.cpp.ll
 ; llvm/optimized/DeadStoresChecker.cpp.ll
 ; llvm/optimized/DynamicTypePropagation.cpp.ll
 ; llvm/optimized/ExtractAPIConsumer.cpp.ll
@@ -90,26 +106,32 @@
 ; llvm/optimized/UncountedLocalVarsChecker.cpp.ll
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
-; luau/optimized/OptimizeConstProp.cpp.ll
-; openssl/optimized/libssl-lib-tls1_meth.ll
-; openssl/optimized/libssl-shlib-tls1_meth.ll
 ; php/optimized/exec.ll
 ; php/optimized/pcre2_jit_compile.ll
-; ring-rs/optimized/36n9a21mmta9vg69.ll
-; rust-analyzer-rs/optimized/24c6enrnc2qfqvzp.ll
-; rust-analyzer-rs/optimized/4uaufavgtitxbs81.ll
-; vcpkg/optimized/json.cpp.ll
-; velox/optimized/Filter.cpp.ll
-; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
-; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
+; protobuf/optimized/command_line_interface.cc.ll
 ; wasmtime-rs/optimized/joyny9bexuq72mb.ll
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(i1 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000000f(i1 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.ssl_mac_buf_st.2518676, ptr %1, i64 %2, i32 1
-  %4 = select i1 %0, ptr null, ptr %3
-  ret ptr %4
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 16
+  %5 = select i1 %0, ptr null, ptr %4
+  ret ptr %5
+}
+
+; 2 occurrences:
+; freetype/optimized/autofit.c.ll
+; velox/optimized/Filter.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000e(i1 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw %"class.std::__cxx11::basic_string.2802902", ptr %1, i64 %2
+  %4 = getelementptr nusw i8, ptr %3, i64 -32
+  %5 = select i1 %0, ptr null, ptr %4
+  ret ptr %5
 }
 
 ; 19 occurrences:
@@ -141,18 +163,36 @@ entry:
   ret ptr %5
 }
 
+; 7 occurrences:
+; git/optimized/kwset.ll
+; llvm/optimized/Core.cpp.ll
+; rust-analyzer-rs/optimized/24c6enrnc2qfqvzp.ll
+; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
+; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000a(i1 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw { { { { i64, ptr, {} }, i64 } }, { { { i64, ptr, {} }, i64 }, { { i64, ptr, {} }, i64 } } }, ptr %1, i64 %2
+  %4 = getelementptr nusw i8, ptr %3, i64 -48
+  %5 = select i1 %0, ptr undef, ptr %4
+  ret ptr %5
+}
+
 ; 2 occurrences:
 ; linux/optimized/mlme.ll
 ; linux/optimized/tdls.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(i1 %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000003(i1 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.ieee80211_sband_iftype_data.3355807, ptr %1, i64 %2, i32 1
+  %3 = getelementptr %struct.ieee80211_sband_iftype_data.3543204, ptr %1, i64 %2, i32 1
   %4 = select i1 %0, ptr null, ptr %3
   ret ptr %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; hwloc/optimized/pci-common.ll
 ; tree-sitter-rs/optimized/2jber9b3bsvatks5.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000008(i1 %0, ptr %1, i64 %2) #0 {

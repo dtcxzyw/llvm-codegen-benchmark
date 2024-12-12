@@ -1,65 +1,35 @@
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
-	movi	v2.4s, #124
-	shl	v0.4s, v0.4s, #2
-	shl	v1.4s, v1.4s, #2
-	movi	v3.4s, #32
-	and	v1.16b, v1.16b, v2.16b
-	and	v0.16b, v0.16b, v2.16b
-	add	v0.4s, v0.4s, v3.4s
-	add	v1.4s, v1.4s, v3.4s
+	ubfiz	w8, w0, #2, #5
+	add	w0, w8, #32
 	ret
                                         // -- End function
 func000000000000003f:                   // @func000000000000003f
 // %bb.0:                               // %entry
-	mov	w8, #260096                     // =0x3f800
-	shl	v0.4s, v0.4s, #9
-	shl	v1.4s, v1.4s, #9
-	dup	v2.4s, w8
-	mov	w8, #6144                       // =0x1800
-	movk	w8, #1, lsl #16
-	and	v1.16b, v1.16b, v2.16b
-	and	v0.16b, v0.16b, v2.16b
-	dup	v2.4s, w8
-	add	v0.4s, v0.4s, v2.4s
-	add	v1.4s, v1.4s, v2.4s
+	lsl	w8, w0, #9
+	and	w8, w8, #0x3f800
+	add	w8, w8, #17, lsl #12            // =69632
+	add	w0, w8, #2048
 	ret
                                         // -- End function
 func0000000000000015:                   // @func0000000000000015
 // %bb.0:                               // %entry
-	mvni	v2.4s, #3, msl #8
-	shl	v0.4s, v0.4s, #7
-	mov	w8, #3072                       // =0xc00
-	shl	v1.4s, v1.4s, #7
-	movk	w8, #65472, lsl #16
-	fneg	v2.4s, v2.4s
-	and	v1.16b, v1.16b, v2.16b
-	and	v0.16b, v0.16b, v2.16b
-	dup	v2.4s, w8
-	add	v0.4s, v0.4s, v2.4s
-	add	v1.4s, v1.4s, v2.4s
+	lsl	w8, w0, #7
+	and	w8, w8, #0x7ffffc00
+	sub	w8, w8, #1023, lsl #12          // =4190208
+	sub	w0, w8, #1024
 	ret
                                         // -- End function
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
-	shl	v0.4s, v0.4s, #8
-	shl	v1.4s, v1.4s, #8
-	mov	w8, #2048                       // =0x800
-	movk	w8, #65472, lsl #16
-	dup	v2.4s, w8
-	bic	v1.4s, #3, lsl #8
-	bic	v0.4s, #3, lsl #8
-	add	v0.4s, v0.4s, v2.4s
-	add	v1.4s, v1.4s, v2.4s
+	lsr	w8, w0, #2
+	mov	w9, #2048                       // =0x800
+	movk	w9, #65472, lsl #16
+	add	w0, w9, w8, lsl #10
 	ret
                                         // -- End function
 func000000000000003d:                   // @func000000000000003d
 // %bb.0:                               // %entry
-	mov	w8, #4088                       // =0xff8
-	shl	v1.4s, v1.4s, #3
-	shl	v0.4s, v0.4s, #3
-	dup	v2.4s, w8
-	and	v0.16b, v0.16b, v2.16b
-	and	v1.16b, v1.16b, v2.16b
+	ubfiz	w0, w0, #3, #9
 	ret
                                         // -- End function

@@ -7,7 +7,7 @@ entry:
   %3 = icmp eq i16 %2, 126
   %4 = and i1 %3, %1
   %5 = zext i1 %4 to i32
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -17,9 +17,9 @@ entry:
 define i32 @func0000000000000061(i32 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = icmp ne i16 %2, 15
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = zext i1 %4 to i32
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -30,9 +30,9 @@ entry:
 define i32 @func0000000000000020(i32 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = icmp ult i16 %2, -5
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = zext i1 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -45,7 +45,7 @@ entry:
   %3 = icmp ne i16 %2, 7
   %4 = and i1 %3, %1
   %5 = zext i1 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -55,9 +55,21 @@ entry:
 define i32 @func0000000000000009(i32 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 0
+  %4 = and i1 %1, %3
+  %5 = zext i1 %4 to i32
+  %6 = add nsw i32 %0, %5
+  ret i32 %6
+}
+
+; 1 occurrences:
+; icu/optimized/ubidiwrt.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000023(i32 %0, i1 %1, i16 %2) #0 {
+entry:
+  %3 = icmp ult i16 %2, -4
   %4 = and i1 %3, %1
   %5 = zext i1 %4 to i32
-  %6 = add nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   ret i32 %6
 }
 

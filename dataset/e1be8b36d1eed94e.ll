@@ -1,5 +1,5 @@
 
-; 278 occurrences:
+; 301 occurrences:
 ; abc/optimized/acecPo.c.ll
 ; abc/optimized/aigPack.c.ll
 ; abc/optimized/cnf_reader.c.ll
@@ -18,6 +18,20 @@
 ; assimp/optimized/XFileParser.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/zlib.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/b3CpuNarrowPhase.ll
 ; casadi/optimized/cs_dfs.c.ll
@@ -87,13 +101,20 @@
 ; llvm/optimized/CoverageMapping.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/PrologEpilogInserter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SetTheory.cpp.ll
 ; llvm/optimized/VLIWMachineScheduler.cpp.ll
 ; llvm/optimized/VPlan.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_flex.ll
+; lvgl/optimized/lv_grid.ll
+; lvgl/optimized/lv_line.ll
+; lvgl/optimized/lv_obj_pos.ll
+; lvgl/optimized/lv_refr.ll
+; lvgl/optimized/lv_span.ll
 ; minetest/optimized/CGUIScrollBar.cpp.ll
 ; minetest/optimized/COBJMeshFileLoader.cpp.ll
 ; minetest/optimized/COpenGLExtensionHandler.cpp.ll
@@ -276,6 +297,8 @@
 ; z3/optimized/sat_solver.cpp.ll
 ; z3/optimized/seq_offset_eq.cpp.ll
 ; z3/optimized/value_generator.cpp.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; zxing/optimized/ZXBigInteger.cpp.ll
 ; Function Attrs: nounwind
@@ -286,9 +309,10 @@ entry:
   ret i32 %3
 }
 
-; 53 occurrences:
+; 54 occurrences:
 ; abseil-cpp/optimized/demangle.cc.ll
 ; abseil-cpp/optimized/duration.cc.ll
+; boost/optimized/numeric.ll
 ; clamav/optimized/Bra86.c.ll
 ; clamav/optimized/BraIA64.c.ll
 ; cpython/optimized/longobject.ll
@@ -316,10 +340,10 @@ entry:
 ; luajit/optimized/lj_strscan_dyn.ll
 ; luajit/optimized/lj_vmmath.ll
 ; luajit/optimized/lj_vmmath_dyn.ll
+; lvgl/optimized/lv_scale.ll
+; lvgl/optimized/lv_tabview.ll
 ; openssl/optimized/libcrypto-lib-bio_print.ll
-; openssl/optimized/libcrypto-lib-x_int64.ll
 ; openssl/optimized/libcrypto-shlib-bio_print.ll
-; openssl/optimized/libcrypto-shlib-x_int64.ll
 ; postgres/optimized/formatting.ll
 ; postgres/optimized/interval.ll
 ; postgres/optimized/partbounds.ll

@@ -8,22 +8,22 @@ func000000000000000c:                   # @func000000000000000c
 	cmpl	%edi, %esi
 	setne	%al
 	retq
-func000000000000002b:                   # @func000000000000002b
+func000000000000004b:                   # @func000000000000004b
 	sarl	$16, %esi
 	cmpl	%edi, %esi
 	setge	%al
 	retq
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	sarl	$16, %esi
 	cmpl	%edi, %esi
 	setne	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	sarl	$16, %esi
 	cmpl	%edi, %esi
 	sete	%al
 	retq
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	sarl	$16, %esi
 	cmpl	%edi, %esi
 	setl	%al

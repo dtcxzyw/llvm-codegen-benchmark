@@ -33,3 +33,10 @@ func000000000000000c:                   # @func000000000000000c
 	addl	%edi, %eax
 	addl	%esi, %eax
 	retq
+func0000000000000008:                   # @func0000000000000008
+	notb	%dl
+	movzbl	%dl, %eax
+	andl	$1, %eax
+	addl	%edi, %eax
+	addl	%esi, %eax
+	retq

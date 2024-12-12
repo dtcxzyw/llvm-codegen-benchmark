@@ -1,11 +1,14 @@
 
-; 6 occurrences:
+; 9 occurrences:
+; boost/optimized/src.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; mitsuba3/optimized/compiler.cpp.ll
-; ncnn/optimized/lstm_x86_avx512vnni.cpp.ll
-; ncnn/optimized/lstm_x86_avxvnni.cpp.ll
 ; openjdk/optimized/hb-ot-tag.ll
 ; qemu/optimized/hw_block_m25p80.c.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/6t4g10gl152q55lxtcl2heeia.ll
+; zed-rs/optimized/97q4mieihk6fgi9ya31e3gth7.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000008(i32 %0) #0 {
 entry:
@@ -15,8 +18,9 @@ entry:
   ret i8 %3
 }
 
-; 58 occurrences:
+; 65 occurrences:
 ; abc/optimized/superGate.c.ll
+; boost/optimized/src.ll
 ; clamav/optimized/unpack.cpp.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
@@ -59,8 +63,7 @@ entry:
 ; luau/optimized/IrTranslateBuiltins.cpp.ll
 ; luau/optimized/IrTranslation.cpp.ll
 ; luau/optimized/OptimizeDeadStore.cpp.ll
-; ncnn/optimized/lstm_x86_avx512vnni.cpp.ll
-; ncnn/optimized/lstm_x86_avxvnni.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; oniguruma/optimized/utf16_be.ll
 ; oniguruma/optimized/utf16_le.ll
 ; opencv/optimized/tldUtils.cpp.ll
@@ -73,6 +76,13 @@ entry:
 ; stockfish/optimized/uci.ll
 ; yosys/optimized/fastlz.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/4boerhlvhy0t7lexovmn31ni1.ll
+; zed-rs/optimized/6t4g10gl152q55lxtcl2heeia.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/97q4mieihk6fgi9ya31e3gth7.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i32 %0) #0 {
@@ -98,9 +108,10 @@ entry:
   ret i8 %3
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-tag.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i32 %0) #0 {
 entry:
@@ -110,7 +121,7 @@ entry:
   ret i8 %3
 }
 
-; 18 occurrences:
+; 20 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; gromacs/optimized/cpuinfo.cpp.ll
 ; hdf5/optimized/H5B2hdr.c.ll
@@ -129,6 +140,8 @@ entry:
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000000f(i32 %0) #0 {
 entry:
@@ -138,12 +151,13 @@ entry:
   ret i8 %3
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; influxdb-rs/optimized/1s5ibqekmzia6ibu.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; ockam-rs/optimized/2n1wyoax2qficosw.ll
 ; wireshark/optimized/packet-6lowpan.c.ll
 ; wolfssl/optimized/internal.c.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000000d(i32 %0) #0 {
 entry:

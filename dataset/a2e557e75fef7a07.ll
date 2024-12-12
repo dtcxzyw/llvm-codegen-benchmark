@@ -1,5 +1,5 @@
 
-; 271 occurrences:
+; 274 occurrences:
 ; abc/optimized/SimpSolver.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
 ; abc/optimized/extraUtilPath.c.ll
@@ -67,7 +67,6 @@
 ; libjpeg-turbo/optimized/jdhuff.c.ll
 ; libpng/optimized/png.c.ll
 ; libquic/optimized/dtoa.cc.ll
-; libquic/optimized/x_long.c.ll
 ; libwebp/optimized/analysis_enc.c.ll
 ; libwebp/optimized/io_dec.c.ll
 ; libwebp/optimized/iterator_enc.c.ll
@@ -104,6 +103,8 @@
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; llvm/optimized/X86FastISel.cpp.ll
 ; luau/optimized/BytecodeBuilder.cpp.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -270,6 +271,8 @@
 ; tinyrenderer/optimized/tgaimage.cpp.ll
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; yosys/optimized/SimpSolver.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; zxing/optimized/AZDetector.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i32 %0) #0 {
@@ -278,7 +281,7 @@ entry:
   ret i1 %1
 }
 
-; 41 occurrences:
+; 40 occurrences:
 ; abc/optimized/cuddZddUtil.c.ll
 ; abc/optimized/ifDec16.c.ll
 ; abc/optimized/wlcReadSmt.c.ll
@@ -289,7 +292,6 @@ entry:
 ; libquic/optimized/f_int.c.ll
 ; linux/optimized/compaction.ll
 ; linux/optimized/huf_decompress.ll
-; linux/optimized/mpih-mul.ll
 ; minetest/optimized/dungeongen.cpp.ll
 ; minetest/optimized/mg_decoration.cpp.ll
 ; minetest/optimized/pathfinder.cpp.ll
@@ -321,21 +323,22 @@ entry:
 ; wireshark/optimized/packet-idn.c.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0) #0 {
+define i1 @func000000000000002a(i32 %0) #0 {
 entry:
   %1 = icmp sgt i32 %0, 0
   ret i1 %1
 }
 
-; 26 occurrences:
+; 27 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
+; boost/optimized/rational.ll
 ; flac/optimized/window.c.ll
 ; linux/optimized/assoc_array.ll
 ; linux/optimized/battery.ll
-; linux/optimized/mpih-mul.ll
+; lvgl/optimized/lv_calendar.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/dungeongen.cpp.ll
 ; minetest/optimized/pathfinder.cpp.ll
@@ -355,25 +358,23 @@ entry:
 ; slurm/optimized/common_as.ll
 ; wireshark/optimized/packet-giop.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0) #0 {
+define i1 @func0000000000000026(i32 %0) #0 {
 entry:
   %1 = icmp slt i32 %0, -67108864
   ret i1 %1
 }
 
-; 4 occurrences:
-; meshlab/optimized/baseio.cpp.ll
+; 2 occurrences:
 ; php/optimized/metaphone.ll
 ; ruby/optimized/marshal.ll
-; wireshark/optimized/packet-ospf.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0) #0 {
+define i1 @func0000000000000038(i32 %0) #0 {
 entry:
   %1 = icmp ugt i32 %0, 67108864
   ret i1 %1
 }
 
-; 80 occurrences:
+; 85 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/cbaWriteVer.c.ll
 ; abc/optimized/cuddLinear.c.ll
@@ -416,6 +417,9 @@ entry:
 ; llvm/optimized/APFixedPoint.cpp.ll
 ; llvm/optimized/ReachingDefAnalysis.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/dungeongen.cpp.ll
@@ -446,14 +450,16 @@ entry:
 ; php/optimized/zend_jit.ll
 ; postgres/optimized/setrefs.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
-; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; softposit-rs/optimized/3x9ny7yhpewmwf1y.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; stb/optimized/stb_image.c.ll
-; stb/optimized/stb_vorbis.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
+; turborepo-rs/optimized/4xosjxdd4tab2lzmgagh8c3os.ll
+; zed-rs/optimized/2nwrl7qhv6ci6obqg1itckcv6.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i32 %0) #0 {
 entry:
@@ -475,15 +481,12 @@ entry:
 ; influxdb-rs/optimized/2g8nrbnslhx52xx1.ll
 ; libjpeg-turbo/optimized/jcarith.c.ll
 ; libjpeg-turbo/optimized/jdarith.c.ll
-; libpng/optimized/png.c.ll
-; libwebp/optimized/iterator_enc.c.ll
 ; linux/optimized/revoke.ll
 ; meilisearch-rs/optimized/2vln1wcrdf8krbw1.ll
 ; meilisearch-rs/optimized/50l87gnpqq82g6pe.ll
 ; meshlab/optimized/mutual.cpp.ll
 ; ockam-rs/optimized/2n1wyoax2qficosw.ll
 ; ockam-rs/optimized/3trfdpf6q4y0wtix.ll
-; opencv/optimized/grfmt_bmp.cpp.ll
 ; opencv/optimized/input_array_utility.cpp.ll
 ; openjdk/optimized/barrierSetAssembler_x86.ll
 ; openjdk/optimized/c1_FrameMap_x86.ll
@@ -494,7 +497,6 @@ entry:
 ; openjdk/optimized/matcher.ll
 ; openjdk/optimized/memnode.ll
 ; openjdk/optimized/mlib_c_ImageAffine_BC.ll
-; openjdk/optimized/png.ll
 ; openjdk/optimized/sharedRuntime_x86_64.ll
 ; openjdk/optimized/xBarrierSetAssembler_x86.ll
 ; yosys/optimized/aiger.ll
@@ -515,6 +517,10 @@ entry:
 ; z3/optimized/theory_diff_logic.cpp.ll
 ; z3/optimized/theory_special_relations.cpp.ll
 ; z3/optimized/theory_utvpi.cpp.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0) #0 {
 entry:
@@ -522,7 +528,7 @@ entry:
   ret i1 %1
 }
 
-; 28 occurrences:
+; 30 occurrences:
 ; abc/optimized/extraUtilPath.c.ll
 ; abc/optimized/saigSimSeq.c.ll
 ; abc/optimized/wlcReadSmt.c.ll
@@ -551,6 +557,8 @@ entry:
 ; z3/optimized/sat_th.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
 ; z3/optimized/theory_arith.cpp.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0) #0 {
 entry:
@@ -559,15 +567,13 @@ entry:
   ret i1 %1
 }
 
-; 19 occurrences:
-; abseil-cpp/optimized/cordz_info.cc.ll
+; 18 occurrences:
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
 ; coreutils-rs/optimized/3fp1x41wzh4l1rh9.ll
 ; coreutils-rs/optimized/4mlyvoaplnk0x351.ll
 ; delta-rs/optimized/9v8xvedf69luuxb.ll
 ; linux/optimized/addrlabel.ll
-; linux/optimized/intel_sprite.ll
 ; linux/optimized/sg.ll
 ; linux/optimized/waitwake.ll
 ; meshlab/optimized/baseio.cpp.ll
@@ -579,10 +585,25 @@ entry:
 ; openjdk/optimized/mlib_ImageConv_F32nw.ll
 ; openjdk/optimized/mlib_ImageConv_u16nw.ll
 ; stb/optimized/stb_image.c.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i32 %0) #0 {
 entry:
   %1 = icmp ugt i32 %0, 65537
+  ret i1 %1
+}
+
+; 6 occurrences:
+; libpng/optimized/png.c.ll
+; libwebp/optimized/iterator_enc.c.ll
+; opencv/optimized/grfmt_bmp.cpp.ll
+; openjdk/optimized/png.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0) #0 {
+entry:
+  %1 = icmp ult i32 %0, -78592
   ret i1 %1
 }
 
@@ -600,13 +621,42 @@ entry:
   ret i1 %1
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/basic_text_iprimitive.ll
 ; fmt/optimized/xchar-test.cc.ll
-; php/optimized/metaphone.ll
+; lvgl/optimized/lv_calendar.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0) #0 {
+define i1 @func0000000000000024(i32 %0) #0 {
 entry:
   %1 = icmp ult i32 %0, 536870912
+  ret i1 %1
+}
+
+; 1 occurrences:
+; php/optimized/metaphone.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i32 %0) #0 {
+entry:
+  %1 = icmp ult i32 %0, 1526726656
+  ret i1 %1
+}
+
+; 2 occurrences:
+; meshlab/optimized/baseio.cpp.ll
+; wireshark/optimized/packet-ospf.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i32 %0) #0 {
+entry:
+  %1 = icmp ugt i32 %0, 32
+  ret i1 %1
+}
+
+; 1 occurrences:
+; linux/optimized/intel_sprite.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i32 %0) #0 {
+entry:
+  %1 = icmp ugt i32 %0, 134283263
   ret i1 %1
 }
 

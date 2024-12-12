@@ -1,8 +1,7 @@
 
-; 14 occurrences:
+; 13 occurrences:
 ; abc/optimized/fraigUtil.c.ll
 ; abc/optimized/satInter.c.ll
-; clamav/optimized/upack.c.ll
 ; libpng/optimized/pngset.c.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/PPMacroExpansion.cpp.ll
@@ -47,9 +46,8 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; hermes/optimized/APFloat.cpp.ll
-; linux/optimized/phc_vclocks.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1) #0 {
 entry:

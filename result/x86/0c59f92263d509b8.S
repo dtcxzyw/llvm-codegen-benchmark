@@ -13,7 +13,7 @@ func0000000000000006:                   # @func0000000000000006
 	sbbl	%eax, %eax
 	orl	%edx, %eax
 	xorl	%ecx, %ecx
-	cmpl	%edi, %eax
-	setg	%cl
+	cmpl	%eax, %edi
+	setl	%cl
 	leaq	16(,%rcx,8), %rax
 	retq

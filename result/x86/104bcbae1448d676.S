@@ -5,7 +5,7 @@ func000000000000000f:                   # @func000000000000000f
 	retq
 func000000000000002f:                   # @func000000000000002f
 	movl	%esi, %ecx
-	shlq	$23, %rcx
+	shlq	$28, %rcx
 	movl	%edi, %eax
 	addq	%rcx, %rax
 	retq

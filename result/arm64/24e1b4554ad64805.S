@@ -8,7 +8,7 @@ func0000000000000004:                   // @func0000000000000004
 	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000704:                   // @func0000000000000704
+func0000000000000e04:                   // @func0000000000000e04
 // %bb.0:                               // %entry
 	add	x8, x1, w2, sxtw
 	add	x8, x8, #25

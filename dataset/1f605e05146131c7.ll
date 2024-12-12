@@ -1,5 +1,5 @@
 
-; 614 occurrences:
+; 611 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/fretMain.c.ll
 ; abc/optimized/wlcBlast.c.ll
@@ -159,6 +159,7 @@
 ; icu/optimized/utext.ll
 ; icu/optimized/vtzone.ll
 ; icu/optimized/xmlparser.ll
+; libevent/optimized/event.c.ll
 ; libquic/optimized/dtls_record.c.ll
 ; libquic/optimized/prtime.cc.ll
 ; libquic/optimized/tls_record.c.ll
@@ -246,8 +247,6 @@
 ; linux/optimized/libata-core.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/namei_msdos.ll
-; linux/optimized/read_write.ll
-; linux/optimized/remap_range.ll
 ; linux/optimized/rtnetlink.ll
 ; linux/optimized/rx.ll
 ; linux/optimized/sky2.ll
@@ -262,7 +261,6 @@
 ; llvm/optimized/AArch64PostLegalizerCombiner.cpp.ll
 ; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
 ; llvm/optimized/AArch64PreLegalizerCombiner.cpp.ll
-; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/ASTStructuralEquivalence.cpp.ll
 ; llvm/optimized/Attributes.cpp.ll
@@ -449,8 +447,7 @@
 ; openmpi/optimized/rmaps_base_support_fns.ll
 ; openmpi/optimized/tm_topology.ll
 ; openspiel/optimized/chess_board.cc.ll
-; openspiel/optimized/dark_chess.cc.ll
-; openspiel/optimized/rbc.cc.ll
+; openssl/optimized/rpktest-bin-rpktest.ll
 ; openusd/optimized/loopPatchBuilder.cpp.ll
 ; openusd/optimized/patchBuilder.cpp.ll
 ; openusd/optimized/patchTreeBuilder.cpp.ll
@@ -462,6 +459,7 @@
 ; php/optimized/streams.ll
 ; php/optimized/util.ll
 ; php/optimized/zend_compile.ll
+; postgres/optimized/autoinc.ll
 ; postgres/optimized/ginentrypage.ll
 ; postgres/optimized/gist.ll
 ; postgres/optimized/nbtpage.ll
@@ -488,7 +486,6 @@
 ; slurm/optimized/job_step_info.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
-; spike/optimized/f16_classify.ll
 ; spike/optimized/f16_roundToInt.ll
 ; sqlite/optimized/sqlite3.ll
 ; tev/optimized/Channel.cpp.ll
@@ -619,11 +616,11 @@ define i1 @func0000000000000001(i1 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 512
   %3 = icmp eq i16 %2, 0
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
-; 586 occurrences:
+; 585 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/fretInit.c.ll
 ; abc/optimized/wlcBlast.c.ll
@@ -631,6 +628,9 @@ entry:
 ; abc/optimized/wlcMem.c.ll
 ; abc/optimized/wlcNtk.c.ll
 ; abc/optimized/wlcWriteVer.c.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/topology.ll
 ; c3c/optimized/sema_decls.c.ll
 ; c3c/optimized/sema_expr.c.ll
 ; c3c/optimized/sema_stmts.c.ll
@@ -712,6 +712,7 @@ entry:
 ; icu/optimized/smpdtfmt.ll
 ; icu/optimized/translit.ll
 ; icu/optimized/tridpars.ll
+; icu/optimized/ubidiwrt.ll
 ; icu/optimized/ucharstrieiterator.ll
 ; icu/optimized/uniset.ll
 ; icu/optimized/unistr.ll
@@ -805,7 +806,6 @@ entry:
 ; linux/optimized/libata-eh.ll
 ; linux/optimized/libata-scsi.ll
 ; linux/optimized/nsarguments.ll
-; linux/optimized/nsobject.ll
 ; linux/optimized/processor_idle.ll
 ; linux/optimized/ptrace.ll
 ; linux/optimized/runtime.ll
@@ -855,7 +855,6 @@ entry:
 ; llvm/optimized/ParseDecl.cpp.ll
 ; llvm/optimized/PointerArithChecker.cpp.ll
 ; llvm/optimized/RDFLiveness.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RetainCountChecker.cpp.ll
 ; llvm/optimized/RetainCountDiagnostics.cpp.ll
 ; llvm/optimized/SMTConstraintManager.cpp.ll
@@ -877,6 +876,7 @@ entry:
 ; llvm/optimized/X86CodeGenPassBuilder.cpp.ll
 ; llvm/optimized/X86ISelLoweringCall.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
+; lvgl/optimized/lv_spinbox.ll
 ; memcached/optimized/memcached-proto_bin.ll
 ; memcached/optimized/memcached-proto_text.ll
 ; memcached/optimized/memcached_debug-proto_bin.ll
@@ -937,7 +937,6 @@ entry:
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -1088,8 +1087,6 @@ entry:
 ; slurm/optimized/step_mgr.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
-; spike/optimized/f16_to_ui32_r_minMag.ll
-; spike/optimized/f16_to_ui64_r_minMag.ll
 ; spike/optimized/socketif.ll
 ; spike/optimized/spike-log-parser.ll
 ; sqlite/optimized/sqlite3.ll
@@ -1170,7 +1167,6 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
-; wireshark/optimized/catapult_dct2000.c.ll
 ; wireshark/optimized/disabled_protos.c.ll
 ; wireshark/optimized/file.c.ll
 ; wireshark/optimized/packet-cemi.c.ll
@@ -1182,7 +1178,6 @@ entry:
 ; wireshark/optimized/packet-smb.c.ll
 ; wireshark/optimized/packet-snort.c.ll
 ; wireshark/optimized/packet-sprt.c.ll
-; wireshark/optimized/packet-syslog.c.ll
 ; wireshark/optimized/packet-tecmp.c.ll
 ; wireshark/optimized/strutil.c.ll
 ; wireshark/optimized/ws_strptime.c.ll
@@ -1191,7 +1186,6 @@ entry:
 ; xgboost/optimized/input_split_base.cc.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; z3/optimized/api_ast.cpp.ll
 ; z3/optimized/ast.cpp.ll
@@ -1210,37 +1204,24 @@ entry:
 ; z3/optimized/symmetry_reduce_tactic.cpp.ll
 ; z3/optimized/th_rewriter.cpp.ll
 ; z3/optimized/well_sorted.cpp.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 512
   %3 = icmp ne i16 %2, 0
-  %4 = and i1 %3, %0
-  ret i1 %4
-}
-
-; 5 occurrences:
-; abseil-cpp/optimized/generators_test.cc.ll
-; llvm/optimized/InstCombineSelect.cpp.ll
-; postgres/optimized/bufpage.ll
-; wireshark/optimized/packet-ieee80211-radio.c.ll
-; wireshark/optimized/packet-oampdu.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i16 %1) #0 {
-entry:
-  %2 = and i16 %1, 48
-  %3 = icmp eq i16 %2, 0
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
-; cpython/optimized/_codecs_kr.ll
+; postgres/optimized/bufpage.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i16 %1) #0 {
+define i1 @func0000000000000004(i1 %0, i16 %1) #0 {
 entry:
-  %2 = and i16 %1, 255
-  %3 = icmp ugt i16 %2, 32
+  %2 = and i16 %1, -256
+  %3 = icmp ult i16 %2, 1025
   %4 = and i1 %3, %0
   ret i1 %4
 }

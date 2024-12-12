@@ -1,17 +1,27 @@
+func0000000000000050:                   # @func0000000000000050
+	li	a3, 184
+	mul	a1, a1, a3
+	lui	a3, 2
+	addiw	a3, a3, -832
+	mul	a2, a2, a3
+	add	a0, a0, a1
+	add	a0, a0, a2
+	ret
+func00000000000000f0:                   # @func00000000000000f0
+	li	a3, 184
+	mul	a1, a1, a3
+	lui	a3, 2
+	addiw	a3, a3, -832
+	mul	a2, a2, a3
+	add	a0, a0, a1
+	add	a0, a0, a2
+	ret
 func00000000000000aa:                   # @func00000000000000aa
 	slli	a3, a2, 1
 	add	a0, a0, a2
 	slli	a2, a1, 1
 	add	a0, a0, a3
 	add	a1, a1, a2
-	add	a0, a0, a1
-	ret
-func00000000000000f0:                   # @func00000000000000f0
-	li	a3, 80
-	mul	a2, a2, a3
-	li	a3, 72
-	add	a0, a0, a2
-	mul	a1, a1, a3
 	add	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
@@ -22,7 +32,7 @@ func0000000000000008:                   # @func0000000000000008
 	mul	a1, a1, a3
 	add	a0, a0, a1
 	ret
-func00000000000000da:                   # @func00000000000000da
+func00000000000000de:                   # @func00000000000000de
 	li	a3, 20
 	mul	a2, a2, a3
 	li	a3, -20
@@ -30,7 +40,7 @@ func00000000000000da:                   # @func00000000000000da
 	mul	a1, a1, a3
 	add	a0, a0, a1
 	ret
-func00000000000000fa:                   # @func00000000000000fa
+func00000000000000ff:                   # @func00000000000000ff
 	li	a3, 296
 	mul	a2, a2, a3
 	li	a3, 1688
@@ -38,7 +48,7 @@ func00000000000000fa:                   # @func00000000000000fa
 	mul	a1, a1, a3
 	add	a0, a0, a1
 	ret
-func00000000000000ca:                   # @func00000000000000ca
+func00000000000000ce:                   # @func00000000000000ce
 	slli	a3, a2, 3
 	slli	a2, a2, 6
 	sub	a2, a2, a3
@@ -48,7 +58,7 @@ func00000000000000ca:                   # @func00000000000000ca
 	sub	a1, a1, a3
 	add	a0, a0, a1
 	ret
-func000000000000003a:                   # @func000000000000003a
+func00000000000000bf:                   # @func00000000000000bf
 	slli	a3, a2, 4
 	slli	a2, a2, 6
 	sub	a2, a2, a3
@@ -61,6 +71,16 @@ func000000000000003a:                   # @func000000000000003a
 func000000000000000a:                   # @func000000000000000a
 	slli	a3, a2, 3
 	slli	a2, a2, 5
+	sub	a2, a2, a3
+	slli	a3, a1, 3
+	slli	a1, a1, 5
+	add	a0, a0, a2
+	sub	a1, a1, a3
+	add	a0, a0, a1
+	ret
+func00000000000000d0:                   # @func00000000000000d0
+	slli	a3, a2, 2
+	slli	a2, a2, 8
 	sub	a2, a2, a3
 	slli	a3, a1, 3
 	slli	a1, a1, 5
@@ -87,7 +107,7 @@ func0000000000000000:                   # @func0000000000000000
 	add	a1, a1, a3
 	add	a0, a0, a1
 	ret
-func00000000000000c8:                   # @func00000000000000c8
+func00000000000000cc:                   # @func00000000000000cc
 	slli	a3, a2, 5
 	slli	a2, a2, 7
 	sub	a2, a2, a3
@@ -97,7 +117,7 @@ func00000000000000c8:                   # @func00000000000000c8
 	sub	a1, a1, a3
 	add	a0, a0, a1
 	ret
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000000fc:                   # @func00000000000000fc
 	slli	a3, a2, 5
 	slli	a2, a2, 7
 	sub	a2, a2, a3

@@ -1,9 +1,8 @@
 
-; 97 occurrences:
+; 94 occurrences:
 ; abc/optimized/sclLiberty.c.ll
 ; abseil-cpp/optimized/elf_mem_image.cc.ll
 ; cmake/optimized/cover.c.ll
-; cpython/optimized/datetime.ll
 ; cpython/optimized/pathconfig.ll
 ; cpython/optimized/tracemalloc.ll
 ; darktable/optimized/introspection_rawprepare.c.ll
@@ -53,7 +52,6 @@
 ; openssl/optimized/libcrypto-lib-property_string.ll
 ; openssl/optimized/libcrypto-lib-rsa_backend.ll
 ; openssl/optimized/libcrypto-lib-rsa_chk.ll
-; openssl/optimized/libcrypto-lib-rsa_depr.ll
 ; openssl/optimized/libcrypto-lib-rsa_sp800_56b_gen.ll
 ; openssl/optimized/libcrypto-lib-sm2_crypt.ll
 ; openssl/optimized/libcrypto-lib-x_pubkey.ll
@@ -66,7 +64,6 @@
 ; openssl/optimized/libcrypto-shlib-property_string.ll
 ; openssl/optimized/libcrypto-shlib-rsa_backend.ll
 ; openssl/optimized/libcrypto-shlib-rsa_chk.ll
-; openssl/optimized/libcrypto-shlib-rsa_depr.ll
 ; openssl/optimized/libcrypto-shlib-rsa_sp800_56b_gen.ll
 ; openssl/optimized/libcrypto-shlib-sm2_crypt.ll
 ; openssl/optimized/libcrypto-shlib-x_pubkey.ll
@@ -98,7 +95,7 @@
 ; zstd/optimized/cover.c.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000421(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp eq ptr %1, null
@@ -108,7 +105,7 @@ entry:
   ret i1 %7
 }
 
-; 73 occurrences:
+; 72 occurrences:
 ; c3c/optimized/llvm_codegen_stmt.c.ll
 ; cmake/optimized/cmGlobalGenerator.cxx.ll
 ; cmake/optimized/openssl.c.ll
@@ -175,7 +172,6 @@ entry:
 ; postgres/optimized/user.ll
 ; qemu/optimized/block_nbd.c.ll
 ; qemu/optimized/hw_pci_pci.c.ll
-; qemu/optimized/system_balloon.c.ll
 ; qemu/optimized/virtio-9p-client.c.ll
 ; rocksdb/optimized/filter_block_reader_common.cc.ll
 ; rocksdb/optimized/index_reader_common.cc.ll
@@ -183,7 +179,7 @@ entry:
 ; slurm/optimized/opt.ll
 ; slurm/optimized/scancel.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000ccc(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000318c(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp ne ptr %1, null
@@ -197,7 +193,7 @@ entry:
 ; openssl/optimized/openssl-bin-ts.ll
 ; proj/optimized/concatenatedoperation.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c1c(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000302c(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp eq ptr %1, null
@@ -210,7 +206,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CStringChecker.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c11(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000003021(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp eq ptr %1, null
@@ -223,7 +219,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/pg_dump.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011c(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000042c(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp eq ptr %1, null

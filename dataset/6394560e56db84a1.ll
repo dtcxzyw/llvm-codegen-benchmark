@@ -1,6 +1,7 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; linux/optimized/drm_edid.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; raylib/optimized/raudio.c.ll
 ; wireshark/optimized/packet-mausb.c.ll
 ; Function Attrs: nounwind

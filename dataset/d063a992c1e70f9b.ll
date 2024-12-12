@@ -24,11 +24,12 @@ entry:
   %3 = icmp ne i64 %2, 0
   %4 = select i1 %1, i1 %3, i1 false
   %5 = zext i1 %4 to i64
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/url_base.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; Function Attrs: nounwind
@@ -37,12 +38,11 @@ entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %1, i1 %3, i1 false
   %5 = zext i1 %4 to i64
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
-; 2 occurrences:
-; delta-rs/optimized/2braxl0lj34anf5z.ll
+; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000051(i64 %0, i1 %1, i64 %2) #0 {
@@ -50,11 +50,13 @@ entry:
   %3 = icmp sgt i64 %2, 4
   %4 = select i1 %1, i1 %3, i1 false
   %5 = zext i1 %4 to i64
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 
-; 1 occurrences:
+; 3 occurrences:
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; duckdb/optimized/ub_duckdb_operator_csv_sniffer.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000060(i64 %0, i1 %1, i64 %2) #0 {
@@ -62,7 +64,7 @@ entry:
   %3 = icmp ne i64 %2, 0
   %4 = select i1 %1, i1 %3, i1 false
   %5 = zext i1 %4 to i64
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -74,7 +76,19 @@ entry:
   %3 = icmp eq i64 %2, -2
   %4 = select i1 %1, i1 %3, i1 false
   %5 = zext i1 %4 to i64
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
+  ret i64 %6
+}
+
+; 1 occurrences:
+; boost/optimized/sort_by_side.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000040(i64 %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ugt i64 %2, 1
+  %4 = select i1 %1, i1 %3, i1 false
+  %5 = zext i1 %4 to i64
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -86,7 +100,7 @@ entry:
   %3 = icmp slt i64 %2, 0
   %4 = select i1 %1, i1 %3, i1 false
   %5 = zext i1 %4 to i64
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -98,7 +112,19 @@ entry:
   %3 = icmp sgt i64 %2, -1
   %4 = select i1 %1, i1 %3, i1 false
   %5 = zext i1 %4 to i64
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
+  ret i64 %6
+}
+
+; 1 occurrences:
+; delta-rs/optimized/2braxl0lj34anf5z.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000061(i64 %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ne i64 %2, 0
+  %4 = select i1 %1, i1 %3, i1 false
+  %5 = zext i1 %4 to i64
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 

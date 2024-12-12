@@ -18,12 +18,12 @@ func000000000000001f:                   # @func000000000000001f
 	shlxq	%rsi, %rax, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000018:                   # @func0000000000000018
+func000000000000001c:                   # @func000000000000001c
 	movl	%edx, %eax
 	shlxq	%rsi, %rax, %rax
 	addq	%rdi, %rax
 	retq
-func000000000000001c:                   # @func000000000000001c
+func0000000000000018:                   # @func0000000000000018
 	movl	%edx, %eax
 	shlxq	%rsi, %rax, %rax
 	addq	%rdi, %rax

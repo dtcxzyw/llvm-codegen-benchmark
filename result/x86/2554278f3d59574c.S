@@ -5,21 +5,20 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	$23, %edi
 	setae	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	andl	%edx, %esi
 	andl	$1, %esi
-	negl	%esi
-	addl	%edi, %esi
+	cmpl	%esi, %edi
 	sete	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	andl	%edx, %esi
 	andl	$1, %esi
 	subl	%esi, %edi
 	cmpl	$23, %edi
 	setae	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	andl	%edx, %esi
 	andl	$1, %esi
 	subl	%esi, %edi

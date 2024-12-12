@@ -7,7 +7,7 @@ define i16 @func0000000000000102(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 32768
   %4 = add i32 %3, %1
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   %6 = lshr i32 %5, 16
   %7 = trunc nuw i32 %6 to i16
   ret i16 %7
@@ -102,7 +102,7 @@ define i16 @func00000000000000a8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 3
   %4 = add nsw i32 %3, %1
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = lshr i32 %5, 3
   %7 = trunc i32 %6 to i16
   ret i16 %7

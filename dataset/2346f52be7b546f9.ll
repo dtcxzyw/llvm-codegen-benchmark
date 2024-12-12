@@ -42,7 +42,8 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/to_chars.ll
 ; openjdk/optimized/constantPool.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i1 %1) #0 {

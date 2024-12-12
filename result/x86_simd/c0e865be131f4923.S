@@ -4,7 +4,7 @@
 	.quad	4                               # 0x4
 .LCPI0_1:
 	.long	127                             # 0x7f
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vptestnmd	%xmm1, %xmm1, %k1
 	vpbroadcastq	.LCPI0_0(%rip), %ymm1 {%k1} {z} # ymm1 {%k1} {z} = [20,20,20,20]
 	vptestnmd	.LCPI0_1(%rip){1to4}, %xmm0, %k1
@@ -19,7 +19,7 @@ func0000000000000011:                   # @func0000000000000011
 	.quad	8588                            # 0x218c
 .LCPI1_2:
 	.long	16                              # 0x10
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	vptestnmd	%xmm1, %xmm1, %k1
 	vpbroadcastq	.LCPI1_0(%rip), %ymm1   # ymm1 = [8592,8592,8592,8592]
 	vpbroadcastq	.LCPI1_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [8584,8584,8584,8584]

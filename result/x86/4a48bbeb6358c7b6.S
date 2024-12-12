@@ -1,4 +1,4 @@
-func0000000000000030:                   # @func0000000000000030
+func0000000000000050:                   # @func0000000000000050
 	testq	%rdx, %rdx
 	setne	%cl
 	shrq	$61, %rsi
@@ -6,7 +6,7 @@ func0000000000000030:                   # @func0000000000000030
 	andb	%cl, %al
 	orb	%dil, %al
 	retq
-func000000000000014c:                   # @func000000000000014c
+func000000000000028c:                   # @func000000000000028c
 	movabsq	$4611686018427387903, %rax      # imm = 0x3FFFFFFFFFFFFFFF
 	cmpq	%rax, %rdx
 	setl	%cl
@@ -16,7 +16,7 @@ func000000000000014c:                   # @func000000000000014c
 	andb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000148:                   # @func0000000000000148
+func00000000000002a8:                   # @func00000000000002a8
 	movabsq	$4611686018427387903, %rax      # imm = 0x3FFFFFFFFFFFFFFF
 	cmpq	%rax, %rdx
 	setl	%cl
@@ -25,7 +25,7 @@ func0000000000000148:                   # @func0000000000000148
 	andb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000058:                   # @func0000000000000058
 	testq	%rdx, %rdx
 	sete	%cl
 	testq	%rsi, %rsi

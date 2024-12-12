@@ -10,7 +10,7 @@ func0000000000000001:                   # @func0000000000000001
 	vzeroupper
 	retq
 .LCPI1_0:
-	.long	4                               # 0x4
+	.long	1024                            # 0x400
 func000000000000000c:                   # @func000000000000000c
 	vptestmd	.LCPI1_0(%rip){1to8}, %ymm2, %k0
 	vpand	%xmm1, %xmm0, %xmm0

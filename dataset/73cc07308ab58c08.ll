@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 34 occurrences:
 ; cpython/optimized/_datetimemodule.ll
 ; flatbuffers/optimized/idl_gen_text.cpp.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
@@ -17,11 +17,9 @@
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTStructuralEquivalence.cpp.ll
-; llvm/optimized/CGExpr.cpp.ll
 ; llvm/optimized/CGExprScalar.cpp.ll
 ; llvm/optimized/CGStmt.cpp.ll
 ; llvm/optimized/ConversionChecker.cpp.ll
-; llvm/optimized/FunctionImport.cpp.ll
 ; llvm/optimized/Instructions.cpp.ll
 ; llvm/optimized/LLVMTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
@@ -34,9 +32,10 @@
 ; openusd/optimized/schemaRegistry.cpp.ll
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/encoding.ll
-; ruby/optimized/regexec.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000544(i32 %0, i32 %1) #0 {
+define i1 @func0000000000001484(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -48
   %3 = icmp ult i32 %2, 10
@@ -66,7 +65,7 @@ entry:
 ; zxing/optimized/DMDetector.cpp.ll
 ; zxing/optimized/ODITFWriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000084(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -65535
   %3 = icmp ult i32 %2, -65534
@@ -80,7 +79,7 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1
   %3 = icmp eq i32 %0, 1
@@ -102,7 +101,7 @@ entry:
 ; clamav/optimized/clamdtop.c.ll
 ; tev/optimized/ExrImageLoader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000511(i32 %0, i32 %1) #0 {
+define i1 @func0000000000001421(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 37
   %3 = icmp eq i32 %0, 37
@@ -113,7 +112,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/pe_icons.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000444(i32 %0, i32 %1) #0 {
+define i1 @func0000000000001084(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -257
   %3 = icmp ult i32 %2, -241
@@ -124,9 +123,21 @@ entry:
 }
 
 ; 1 occurrences:
+; linux/optimized/mmconfig-shared.ll
+; Function Attrs: nounwind
+define i1 @func0000000000001024(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp eq i32 %1, -1
+  %3 = add i32 %0, -44
+  %4 = icmp ult i32 %3, 16
+  %5 = select i1 %4, i1 true, i1 %2
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; linux/optimized/hub.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000108(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -255001
   %3 = icmp ult i32 %2, -256000
@@ -139,7 +150,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/bugs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000484(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -3
   %3 = icmp ult i32 %2, 2
@@ -152,7 +163,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/tcp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -4096
   %3 = icmp eq i32 %2, 4096

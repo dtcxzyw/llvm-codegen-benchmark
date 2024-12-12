@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	2                               # 0x2
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpaddq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rdx
@@ -28,7 +28,7 @@ func0000000000000031:                   # @func0000000000000031
 	retq
 .LCPI1_0:
 	.quad	2                               # 0x2
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpaddq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rdx
@@ -58,7 +58,7 @@ func0000000000000021:                   # @func0000000000000021
 	.quad	80                              # 0x50
 .LCPI2_1:
 	.quad	-3689348814741910323            # 0xcccccccccccccccd
-func00000000000001e1:                   # @func00000000000001e1
+func00000000000003c1:                   # @func00000000000003c1
 	vpaddq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$4, %ymm1, %ymm1
 	vpmullq	.LCPI2_1(%rip){1to4}, %ymm1, %ymm1
@@ -72,7 +72,7 @@ func00000000000001e1:                   # @func00000000000001e1
 	.quad	-144                            # 0xffffffffffffff70
 .LCPI3_1:
 	.quad	-8198552921648689607            # 0x8e38e38e38e38e39
-func00000000000000e1:                   # @func00000000000000e1
+func00000000000001c1:                   # @func00000000000001c1
 	vpaddq	.LCPI3_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlq	$4, %ymm1, %ymm1
 	vpmullq	.LCPI3_1(%rip){1to4}, %ymm1, %ymm1
@@ -122,7 +122,7 @@ func0000000000000001:                   # @func0000000000000001
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000000b1:                   # @func00000000000000b1
+func0000000000000161:                   # @func0000000000000161
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vextracti128	$1, %ymm1, %xmm3
@@ -150,7 +150,7 @@ func00000000000000b1:                   # @func00000000000000b1
 	retq
 .LCPI6_0:
 	.quad	12                              # 0xc
-func00000000000001b1:                   # @func00000000000001b1
+func0000000000000361:                   # @func0000000000000361
 	vpaddq	.LCPI6_0(%rip){1to4}, %ymm1, %ymm1
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rdx

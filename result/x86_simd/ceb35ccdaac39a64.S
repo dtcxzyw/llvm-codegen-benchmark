@@ -4,8 +4,9 @@
 	.long	4164943871                      # 0xf83fffff
 func000000000000000b:                   # @func000000000000000b
 	vpslld	$27, %ymm2, %ymm2
-	vpternlogd	$248, .LCPI0_0(%rip){1to8}, %ymm1, %ymm2 # ymm2 = ymm2 | (ymm1 & mem)
-	vpternlogd	$236, .LCPI0_1(%rip){1to8}, %ymm2, %ymm0 # ymm0 = (ymm0 & mem) | ymm2
+	vpandd	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
+	vpandd	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0
+	vpternlogd	$254, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | ymm1
 	retq
 .LCPI1_0:
 	.long	4161798143                      # 0xf80fffff

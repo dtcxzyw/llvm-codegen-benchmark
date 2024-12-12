@@ -1,5 +1,5 @@
 
-; 188 occurrences:
+; 186 occurrences:
 ; abc/optimized/abcDress2.c.ll
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/abcPrint.c.ll
@@ -17,9 +17,7 @@
 ; abc/optimized/cbaReadBlif.c.ll
 ; abc/optimized/cbaReadVer.c.ll
 ; abc/optimized/cgtCore.c.ll
-; abc/optimized/cswMan.c.ll
 ; abc/optimized/dauCanon.c.ll
-; abc/optimized/dchMan.c.ll
 ; abc/optimized/fraSim.c.ll
 ; abc/optimized/fraigMan.c.ll
 ; abc/optimized/giaCut.c.ll
@@ -45,6 +43,7 @@
 ; abc/optimized/saigStrSim.c.ll
 ; abc/optimized/saigSwitch.c.ll
 ; abc/optimized/wlcNtk.c.ll
+; boost/optimized/partition.ll
 ; casadi/optimized/cs_sqr.c.ll
 ; csmith/optimized/Bookkeeper.cpp.ll
 ; darktable/optimized/camera.c.ll
@@ -109,7 +108,6 @@
 ; msdfgen/optimized/render-sdf.cpp.ll
 ; nori/optimized/window.cpp.ll
 ; openblas/optimized/dgegv.c.ll
-; openblas/optimized/dgeqp3.c.ll
 ; openblas/optimized/dggglm.c.ll
 ; openblas/optimized/dlaqr2.c.ll
 ; openblas/optimized/dlatms.c.ll
@@ -196,7 +194,7 @@ entry:
   ret double %3
 }
 
-; 98 occurrences:
+; 97 occurrences:
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/absDup.c.ll
 ; abc/optimized/absRpm.c.ll
@@ -243,7 +241,6 @@ entry:
 ; gromacs/optimized/gmx_spatial.cpp.ll
 ; gromacs/optimized/matio.cpp.ll
 ; gromacs/optimized/perf_est.cpp.ll
-; icu/optimized/gregoimp.ll
 ; icu/optimized/plurrule.ll
 ; lightgbm/optimized/boosting.cpp.ll
 ; llama.cpp/optimized/train.cpp.ll

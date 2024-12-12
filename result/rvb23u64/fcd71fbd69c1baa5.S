@@ -11,13 +11,18 @@ func0000000000000000:                   # @func0000000000000000
 	subw	a2, a2, a1
 	sll	a0, a0, a2
 	ret
-func000000000000000e:                   # @func000000000000000e
-	li	a2, 56
+func000000000000000d:                   # @func000000000000000d
+	li	a2, 21
 	subw	a2, a2, a1
 	sll	a0, a0, a2
 	ret
 func000000000000000f:                   # @func000000000000000f
-	li	a2, 48
+	li	a2, 21
+	subw	a2, a2, a1
+	sll	a0, a0, a2
+	ret
+func000000000000000e:                   # @func000000000000000e
+	li	a2, 56
 	subw	a2, a2, a1
 	sll	a0, a0, a2
 	ret

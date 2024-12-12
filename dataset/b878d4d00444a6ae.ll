@@ -1,7 +1,8 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; abc/optimized/giaQbf.c.ll
 ; arrow/optimized/decimal.cc.ll
+; boost/optimized/area.ll
 ; openssl/optimized/libcrypto-lib-bn_exp.ll
 ; openssl/optimized/libcrypto-lib-bn_gf2m.ll
 ; openssl/optimized/libcrypto-lib-srp_vfy.ll

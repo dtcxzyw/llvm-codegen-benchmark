@@ -5,7 +5,7 @@ func0000000000000003:                   # @func0000000000000003
 	sbbl	$0, %eax
 	orl	%edi, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000028:                   # @func0000000000000028
 	testb	$6, %sil
 	movl	$48, %ecx
 	movl	$12288, %eax                    # imm = 0x3000

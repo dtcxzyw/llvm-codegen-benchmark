@@ -10,7 +10,9 @@ entry:
   ret i32 %3
 }
 
-; 12 occurrences:
+; 14 occurrences:
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; darktable/optimized/avif.c.ll
 ; eastl/optimized/EADateTime.cpp.ll
 ; hermes/optimized/APFloat.cpp.ll
@@ -46,13 +48,13 @@ entry:
 
 ; 15 occurrences:
 ; abc/optimized/acecRe.c.ll
+; boost/optimized/to_chars.ll
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; duckdb/optimized/ub_duckdb_func_date.cpp.ll
 ; icu/optimized/ucnvbocu.ll
 ; linux/optimized/intel_vdsc.ll
 ; linux/optimized/sky2.ll
 ; linux/optimized/xhci.ll
-; nuttx/optimized/lib_timegm.c.ll
 ; openspiel/optimized/oh_hell_test.cc.ll
 ; postgres/optimized/formatting.ll
 ; sqlite/optimized/sqlite3.ll

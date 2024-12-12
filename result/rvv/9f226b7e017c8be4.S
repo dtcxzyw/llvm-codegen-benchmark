@@ -12,5 +12,5 @@ func000000000000000d:                   # @func000000000000000d
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmv.v.i	v12, 0
 	vadd.vi	v12, v10, 1, v0.t
-	vmul.vv	v8, v12, v8
+	vmul.vv	v8, v8, v12
 	ret

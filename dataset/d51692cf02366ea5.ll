@@ -2,11 +2,9 @@
 ; 199 occurrences:
 ; abc/optimized/abcHaig.c.ll
 ; abc/optimized/cutMan.c.ll
-; abc/optimized/darMan.c.ll
 ; abc/optimized/giaRex.c.ll
 ; abc/optimized/giaSwitch.c.ll
 ; abc/optimized/mapperCut.c.ll
-; abc/optimized/reoProfile.c.ll
 ; abc/optimized/saigConstr2.c.ll
 ; abc/optimized/saigSimFast.c.ll
 ; abc/optimized/saigSwitch.c.ll
@@ -196,6 +194,8 @@
 ; redis/optimized/lolwut5.ll
 ; tev/optimized/UberShader.cpp.ll
 ; wireshark/optimized/packet-oran.c.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; zxing/optimized/PDFDetector.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll

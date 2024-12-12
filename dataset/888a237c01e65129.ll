@@ -1,10 +1,10 @@
 
-%"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const std::basic_string_view<char>, mold::elf::ComdatGroup>>, tbb::detail::d1::spin_rw_mutex>::bucket.2523220" = type { %"class.tbb::detail::d1::spin_rw_mutex.2523221", %"struct.std::atomic.109.2523222" }
-%"class.tbb::detail::d1::spin_rw_mutex.2523221" = type { %"struct.std::atomic.107.2523223" }
-%"struct.std::atomic.107.2523223" = type { %"struct.std::__atomic_base.108.2523224" }
-%"struct.std::__atomic_base.108.2523224" = type { i64 }
-%"struct.std::atomic.109.2523222" = type { %"struct.std::__atomic_base.110.2523225" }
-%"struct.std::__atomic_base.110.2523225" = type { ptr }
+%"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const std::basic_string_view<char>, mold::elf::ComdatGroup>>, tbb::detail::d1::spin_rw_mutex>::bucket.2637629" = type { %"class.tbb::detail::d1::spin_rw_mutex.2637630", %"struct.std::atomic.109.2637631" }
+%"class.tbb::detail::d1::spin_rw_mutex.2637630" = type { %"struct.std::atomic.107.2637632" }
+%"struct.std::atomic.107.2637632" = type { %"struct.std::__atomic_base.108.2637633" }
+%"struct.std::__atomic_base.108.2637633" = type { i64 }
+%"struct.std::atomic.109.2637631" = type { %"struct.std::__atomic_base.110.2637634" }
+%"struct.std::__atomic_base.110.2637634" = type { ptr }
 
 ; 8 occurrences:
 ; linux/optimized/bts.ll
@@ -152,7 +152,7 @@ entry:
   ret ptr %5
 }
 
-; 85 occurrences:
+; 84 occurrences:
 ; mold/optimized/input-files.cc.ALPHA.cc.ll
 ; mold/optimized/input-files.cc.ARM32.cc.ll
 ; mold/optimized/input-files.cc.ARM64.cc.ll
@@ -210,7 +210,6 @@ entry:
 ; opencv/optimized/lkpyramid.cpp.ll
 ; opencv/optimized/optflowgf.cpp.ll
 ; opencv/optimized/rlof_localflow.cpp.ll
-; openjdk/optimized/check_code.ll
 ; openusd/optimized/cacheImpl.cpp.ll
 ; openusd/optimized/changeTracker.cpp.ll
 ; openusd/optimized/flatteningSceneIndex.cpp.ll
@@ -243,7 +242,7 @@ define ptr @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = inttoptr i64 %0 to ptr
-  %5 = getelementptr nusw %"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const std::basic_string_view<char>, mold::elf::ComdatGroup>>, tbb::detail::d1::spin_rw_mutex>::bucket.2523220", ptr %4, i64 %3
+  %5 = getelementptr nusw %"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const std::basic_string_view<char>, mold::elf::ComdatGroup>>, tbb::detail::d1::spin_rw_mutex>::bucket.2637629", ptr %4, i64 %3
   ret ptr %5
 }
 

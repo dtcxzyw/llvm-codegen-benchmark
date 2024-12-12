@@ -56,7 +56,7 @@ entry:
   ret i16 %3
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; faiss/optimized/AdditiveQuantizer.cpp.ll
 ; linux/optimized/af_netlink.ll
 ; linux/optimized/amd.ll
@@ -64,6 +64,7 @@ entry:
 ; linux/optimized/ipconfig.ll
 ; linux/optimized/phy-c45.ll
 ; linux/optimized/select.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:

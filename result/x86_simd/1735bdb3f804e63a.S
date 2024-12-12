@@ -2,14 +2,14 @@
 	.quad	1000000                         # 0xf4240
 func0000000000000000:                   # @func0000000000000000
 	vpmullq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vcvtuqq2pd	%ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.quad	10                              # 0xa
 func000000000000001f:                   # @func000000000000001f
 	vpmullq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vcvtqq2pd	%ymm0, %ymm0
 	retq
 .LCPI2_0:
@@ -23,13 +23,13 @@ func0000000000000008:                   # @func0000000000000008
 	.quad	40                              # 0x28
 func000000000000000a:                   # @func000000000000000a
 	vpmullq	.LCPI3_0(%rip){1to4}, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vcvtuqq2pd	%ymm0, %ymm0
 	retq
 .LCPI4_0:
 	.quad	10                              # 0xa
 func0000000000000010:                   # @func0000000000000010
 	vpmullq	.LCPI4_0(%rip){1to4}, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vcvtuqq2pd	%ymm0, %ymm0
 	retq

@@ -1,5 +1,5 @@
 
-; 541 occurrences:
+; 539 occurrences:
 ; cvc5/optimized/SimpSolver.cc.ll
 ; cvc5/optimized/Solver.cc.ll
 ; cvc5/optimized/abduction_solver.cpp.ll
@@ -129,7 +129,6 @@
 ; cvc5/optimized/eq_proof.cpp.ll
 ; cvc5/optimized/eqc_info.cpp.ll
 ; cvc5/optimized/equality_engine.cpp.ll
-; cvc5/optimized/equality_engine_iterator.cpp.ll
 ; cvc5/optimized/equality_query.cpp.ll
 ; cvc5/optimized/equality_solver.cpp.ll
 ; cvc5/optimized/equality_substitution.cpp.ll
@@ -533,7 +532,6 @@
 ; cvc5/optimized/zero_level_learner.cpp.ll
 ; hermes/optimized/Conversions.cpp.ll
 ; icu/optimized/number_decimalquantity.ll
-; nuttx/optimized/lib_trunc.c.ll
 ; postgres/optimized/d2s.ll
 ; postgres/optimized/d2s_shlib.ll
 ; postgres/optimized/d2s_srv.ll
@@ -542,10 +540,10 @@
 ; ruby/optimized/util.ll
 ; z3/optimized/hwf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0) #0 {
+define i1 @func0000000000000074(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 9218868437227405312
-  %2 = icmp ult i64 %1, 481885160128643072
+  %2 = icmp samesign ult i64 %1, 481885160128643072
   ret i1 %2
 }
 
@@ -564,14 +562,14 @@ entry:
 ; php/optimized/zend_strtod.ll
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0) #0 {
+define i1 @func0000000000000058(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 9218868437227405312
-  %2 = icmp ugt i64 %1, 8980177656976769024
+  %2 = icmp samesign ugt i64 %1, 8980177656976769024
   ret i1 %2
 }
 
-; 284 occurrences:
+; 285 occurrences:
 ; c3c/optimized/sema_asm.c.ll
 ; coreutils-rs/optimized/56596qkor8w4ma8l.ll
 ; fmt/optimized/chrono-test.cc.ll
@@ -696,6 +694,7 @@ entry:
 ; llvm/optimized/TypePrinter.cpp.ll
 ; llvm/optimized/USRGeneration.cpp.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; node/optimized/libnode.node_i18n.ll
 ; node/optimized/libnode.node_zlib.ll
 ; nuttx/optimized/lib_lgamma.c.ll
@@ -857,7 +856,7 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0) #0 {
+define i1 @func0000000000000041(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 9218868437227405312
   %2 = icmp eq i64 %1, 9214364837600034816
@@ -904,17 +903,17 @@ entry:
 ; openjdk/optimized/sharedRuntimeTrig.ll
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0) #0 {
+define i1 @func0000000000000054(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 9218868437227405312
-  %2 = icmp ult i64 %1, 477381564796239872
+  %2 = icmp samesign ult i64 %1, 477381564796239872
   ret i1 %2
 }
 
 ; 1 occurrences:
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i64 %0) #0 {
+define i1 @func00000000000000cc(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 4503595332403200
   %2 = icmp ne i64 %1, 0
@@ -924,14 +923,14 @@ entry:
 ; 1 occurrences:
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0) #0 {
+define i1 @func00000000000000d4(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 9218868437227405312
-  %2 = icmp ult i64 %1, 481885164423610368
+  %2 = icmp samesign ult i64 %1, 481885164423610368
   ret i1 %2
 }
 
-; 788 occurrences:
+; 789 occurrences:
 ; abc/optimized/aigTsim.c.ll
 ; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/cecSatG2.c.ll
@@ -943,6 +942,8 @@ entry:
 ; abc/optimized/wlcNtk.c.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; c3c/optimized/sema_asm.c.ll
 ; cpython/optimized/dtoa.ll
 ; cvc5/optimized/SimpSolver.cc.ll
@@ -1074,7 +1075,6 @@ entry:
 ; cvc5/optimized/eq_proof.cpp.ll
 ; cvc5/optimized/eqc_info.cpp.ll
 ; cvc5/optimized/equality_engine.cpp.ll
-; cvc5/optimized/equality_engine_iterator.cpp.ll
 ; cvc5/optimized/equality_query.cpp.ll
 ; cvc5/optimized/equality_solver.cpp.ll
 ; cvc5/optimized/equality_substitution.cpp.ll
@@ -1721,14 +1721,14 @@ entry:
 ; wolfssl/optimized/internal.c.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0) #0 {
+define i1 @func0000000000000061(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 9218868437227405312
   %2 = icmp eq i64 %1, 9218868437227405312
   ret i1 %2
 }
 
-; 243 occurrences:
+; 242 occurrences:
 ; coreutils-rs/optimized/56596qkor8w4ma8l.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -1816,7 +1816,6 @@ entry:
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
-; linux/optimized/feat_ctl.ll
 ; linux/optimized/vsprintf.ll
 ; llvm/optimized/CGObjC.cpp.ll
 ; llvm/optimized/Clang.cpp.ll
@@ -1973,17 +1972,18 @@ entry:
 ; zxing/optimized/QRDetector.cpp.ll
 ; zxing/optimized/QRVersion.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i64 %0) #0 {
+define i1 @func000000000000004c(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 9187343239835811840
   %2 = icmp ne i64 %1, 9187343239835811840
   ret i1 %2
 }
 
-; 33 occurrences:
+; 35 occurrences:
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; abc/optimized/giaUtil.c.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/dtoa.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -2014,8 +2014,9 @@ entry:
 ; llvm/optimized/SemaExceptionSpec.cpp.ll
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i64 %0) #0 {
+define i1 @func000000000000006c(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 4294967296
   %2 = icmp ne i64 %1, 0
@@ -2025,7 +2026,7 @@ entry:
 ; 1 occurrences:
 ; fmt/optimized/compile-test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0) #0 {
+define i1 @func00000000000000c1(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 72057589742960640
   %2 = icmp eq i64 %1, 0
@@ -2043,7 +2044,7 @@ entry:
 ; pocketpy/optimized/pocketpy.cpp.ll
 ; velox/optimized/LeadLag.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0) #0 {
+define i1 @func0000000000000081(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 17179868672
   %2 = icmp eq i64 %1, 0
@@ -2092,10 +2093,9 @@ entry:
   ret i1 %2
 }
 
-; 76 occurrences:
+; 75 occurrences:
 ; hermes/optimized/Conversions.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
-; nuttx/optimized/lib_trunc.c.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -2170,44 +2170,41 @@ entry:
 ; spike/optimized/fcvtmod_w_d.ll
 ; z3/optimized/hwf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0) #0 {
+define i1 @func0000000000000078(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 9218868437227405312
-  %2 = icmp ugt i64 %1, 5125096375947624448
+  %2 = icmp samesign ugt i64 %1, 5125096375947624448
   ret i1 %2
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; cmake/optimized/inflate.c.ll
-; linux/optimized/select.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; zlib/optimized/inflate.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0) #0 {
+define i1 @func0000000000000018(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 128
   %2 = icmp ne i64 %1, 0
   ret i1 %2
 }
 
-; 3 occurrences:
-; gromacs/optimized/gmx_hbond.cpp.ll
-; opencv/optimized/aff_trans.cpp.ll
-; opencv/optimized/subdivision2d.cpp.ll
+; 1 occurrences:
+; linux/optimized/select.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000000a(i64 %0) #0 {
+define i1 @func0000000000000008(i64 %0) #0 {
 entry:
-  %1 = lshr i64 %0, 1
+  %1 = lshr i64 %0, 3
   %2 = trunc i64 %1 to i32
-  %3 = and i32 %2, -2
-  %4 = icmp sgt i32 %3, 0
+  %3 = and i32 %2, -8
+  %4 = icmp ugt i32 %3, 42
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; freetype/optimized/psaux.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0) #0 {
+define i1 @func000000000000008c(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 8
   %2 = icmp ne i64 %1, 0

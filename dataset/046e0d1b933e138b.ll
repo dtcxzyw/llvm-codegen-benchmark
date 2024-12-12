@@ -1,5 +1,5 @@
 
-; 41 occurrences:
+; 40 occurrences:
 ; abc/optimized/luckyFast16.c.ll
 ; arrow/optimized/strtod.cc.ll
 ; c3c/optimized/bigint.c.ll
@@ -12,7 +12,6 @@
 ; icu/optimized/double-conversion-strtod.ll
 ; linux/optimized/clockevents.ll
 ; linux/optimized/fse_decompress.ll
-; linux/optimized/gen_estimator.ll
 ; linux/optimized/huf_decompress.ll
 ; linux/optimized/md-bitmap.ll
 ; linux/optimized/trace_eprobe.ll

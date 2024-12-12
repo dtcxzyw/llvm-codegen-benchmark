@@ -1,9 +1,10 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; cmake/optimized/huf_decompress.c.ll
 ; hyperscan/optimized/repeat.c.ll
 ; linux/optimized/filter.ll
 ; llvm/optimized/ExpandLargeFpConvert.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; openjdk/optimized/sharedRuntime_x86_64.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind

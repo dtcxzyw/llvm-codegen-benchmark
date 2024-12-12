@@ -1,5 +1,5 @@
 
-; 111 occurrences:
+; 110 occurrences:
 ; annoy/optimized/annoymodule.ll
 ; box2d/optimized/b2_contact_solver.cpp.ll
 ; box2d/optimized/b2_friction_joint.cpp.ll
@@ -53,7 +53,6 @@
 ; meshlab/optimized/filter_createiso.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
@@ -115,7 +114,7 @@
 define i1 @func0000000000000002(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %1, %2
-  %4 = fcmp ogt float %3, %0
+  %4 = fcmp olt float %0, %3
   ret i1 %4
 }
 
@@ -131,11 +130,11 @@ entry:
 define i1 @func000000000000000d(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %1, %2
-  %4 = fcmp ule float %3, %0
+  %4 = fcmp uge float %0, %3
   ret i1 %4
 }
 
-; 25 occurrences:
+; 24 occurrences:
 ; bullet3/optimized/btMultiBodyConstraintSolver.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
@@ -145,7 +144,6 @@ entry:
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
@@ -165,7 +163,7 @@ entry:
 define i1 @func0000000000000003(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %1, %2
-  %4 = fcmp ugt float %3, %0
+  %4 = fcmp ult float %0, %3
   ret i1 %4
 }
 
@@ -185,7 +183,7 @@ entry:
 define i1 @func000000000000000a(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %1, %2
-  %4 = fcmp oge float %3, %0
+  %4 = fcmp ole float %0, %3
   ret i1 %4
 }
 
@@ -257,7 +255,7 @@ entry:
 define i1 @func0000000000000004(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %1, %2
-  %4 = fcmp olt float %3, %0
+  %4 = fcmp ogt float %0, %3
   ret i1 %4
 }
 
@@ -269,7 +267,7 @@ entry:
 define i1 @func0000000000000008(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %1, %2
-  %4 = fcmp oeq float %3, %0
+  %4 = fcmp oeq float %0, %3
   ret i1 %4
 }
 
@@ -289,11 +287,11 @@ entry:
 define i1 @func000000000000000c(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %1, %2
-  %4 = fcmp ole float %3, %0
+  %4 = fcmp oge float %0, %3
   ret i1 %4
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; bullet3/optimized/btCompoundShape.ll
 ; bullet3/optimized/btConeTwistConstraint.ll
 ; bullet3/optimized/btConvexTriangleMeshShape.ll
@@ -303,7 +301,6 @@ entry:
 ; darktable/optimized/introspection_lens.cc.ll
 ; gromacs/optimized/check.cpp.ll
 ; gromacs/optimized/gmx_arpack.cpp.ll
-; gromacs/optimized/slagtf.cpp.ll
 ; gromacs/optimized/sm_insolidangle.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; meshoptimizer/optimized/overdrawoptimizer.cpp.ll
@@ -316,7 +313,7 @@ entry:
 define i1 @func0000000000000005(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %1, %2
-  %4 = fcmp ult float %3, %0
+  %4 = fcmp ugt float %0, %3
   ret i1 %4
 }
 
@@ -326,7 +323,7 @@ entry:
 define i1 @func000000000000000e(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %1, %2
-  %4 = fcmp ord float %3, %0
+  %4 = fcmp ord float %0, %3
   ret i1 %4
 }
 
@@ -340,7 +337,7 @@ entry:
 define i1 @func000000000000000b(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %1, %2
-  %4 = fcmp uge float %3, %0
+  %4 = fcmp ule float %0, %3
   ret i1 %4
 }
 
@@ -350,7 +347,7 @@ entry:
 define i1 @func0000000000000007(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %1, %2
-  %4 = fcmp une float %3, %0
+  %4 = fcmp une float %0, %3
   ret i1 %4
 }
 

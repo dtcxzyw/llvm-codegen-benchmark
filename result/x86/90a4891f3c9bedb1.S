@@ -1,3 +1,8 @@
+func0000000000000015:                   # @func0000000000000015
+	movzbl	%sil, %eax
+	subl	%eax, %edi
+	leal	48(%rdi), %eax
+	retq
 func000000000000000c:                   # @func000000000000000c
 	movzbl	%sil, %eax
 	subl	%eax, %edi
@@ -17,6 +22,11 @@ func000000000000000f:                   # @func000000000000000f
 	movzbl	%sil, %eax
 	subl	%eax, %edi
 	leal	-2(%rdi), %eax
+	retq
+func000000000000001c:                   # @func000000000000001c
+	movzbl	%sil, %eax
+	subl	%eax, %edi
+	leal	-3(%rdi), %eax
 	retq
 func0000000000000005:                   # @func0000000000000005
 	movzbl	%sil, %eax

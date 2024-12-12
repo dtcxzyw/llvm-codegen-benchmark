@@ -1,11 +1,12 @@
 
-; 27 occurrences:
+; 28 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; hwloc/optimized/hwloc-ps.ll
 ; linux/optimized/hid-quirks.ll
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/SanitizerArgs.cpp.ll
+; llvm/optimized/SanitizerSpecialCaseList.cpp.ll
 ; llvm/optimized/Sanitizers.cpp.ll
 ; llvm/optimized/X86InstructionSelector.cpp.ll
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll
@@ -37,7 +38,7 @@ entry:
   ret i64 %6
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; git/optimized/http.ll
 ; hyperscan/optimized/compiler.cpp.ll
 ; linux/optimized/hdac_device.ll
@@ -46,6 +47,7 @@ entry:
 ; llvm/optimized/AArch64AsmPrinter.cpp.ll
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
+; llvm/optimized/SanitizerSpecialCaseList.cpp.ll
 ; llvm/optimized/ToolChain.cpp.ll
 ; llvm/optimized/X86AsmPrinter.cpp.ll
 ; portaudio/optimized/pa_linux_alsa.c.ll
@@ -60,9 +62,10 @@ entry:
   ret i64 %6
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; linux/optimized/uncore_snbep.ll
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
+; llvm/optimized/SanitizerSpecialCaseList.cpp.ll
 ; portaudio/optimized/pa_linux_alsa.c.ll
 ; tokio-rs/optimized/1k577qo9p6sw2dlc.ll
 ; tokio-rs/optimized/1rl1r5ea6bzd5c9z.ll

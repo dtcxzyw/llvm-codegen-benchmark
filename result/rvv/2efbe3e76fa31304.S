@@ -10,7 +10,7 @@ func0000000000000000:                   # @func0000000000000000
 	addi	a0, a0, 899
 	slli	a0, a0, 12
 	addi	a0, a0, -663
-	vxor.vv	v10, v12, v10
+	vxor.vv	v10, v10, v12
 	slli	a0, a0, 21
 	vmacc.vx	v8, a0, v10
 	ret

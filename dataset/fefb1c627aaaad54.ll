@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 20 occurrences:
 ; abc/optimized/bacBac.c.ll
 ; abc/optimized/giaGen.c.ll
 ; git/optimized/strbuf.ll
@@ -12,9 +12,7 @@
 ; opencv/optimized/aruco_dictionary.cpp.ll
 ; opencv/optimized/omnidir.cpp.ll
 ; openjdk/optimized/sharedRuntime_x86_64.ll
-; openssl/optimized/libcrypto-lib-deterministic_nonce.ll
 ; openssl/optimized/libcrypto-lib-rsaz_exp_x2.ll
-; openssl/optimized/libcrypto-shlib-deterministic_nonce.ll
 ; openssl/optimized/libcrypto-shlib-rsaz_exp_x2.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; raylib/optimized/rcore.c.ll
@@ -25,8 +23,8 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0) #0 {
 entry:
-  %1 = sdiv i32 %0, 8
-  %2 = mul nsw i32 %1, 3
+  %1 = sdiv i32 %0, 256
+  %2 = mul nsw i32 %1, 12
   %3 = sext i32 %2 to i64
   ret i64 %3
 }

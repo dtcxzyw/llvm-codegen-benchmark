@@ -63,6 +63,12 @@ func00000000000000d0:                   # @func00000000000000d0
 	vadd.vv	v8, v10, v8
 	vadd.vi	v8, v8, -1
 	ret
+func0000000000000080:                   # @func0000000000000080
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmadd.vv	v10, v12, v10
+	vadd.vv	v8, v10, v8
+	vadd.vi	v8, v8, 1
+	ret
 func00000000000000f8:                   # @func00000000000000f8
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmadd.vv	v10, v12, v10

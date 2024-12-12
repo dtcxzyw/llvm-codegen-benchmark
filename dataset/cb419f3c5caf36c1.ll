@@ -19,8 +19,7 @@ entry:
   ret i64 %6
 }
 
-; 4 occurrences:
-; clamav/optimized/lzma_iface.c.ll
+; 3 occurrences:
 ; delta-rs/optimized/s2xrj2sh770tx8d.ll
 ; spike/optimized/ror.ll
 ; spike/optimized/rorw.ll

@@ -51,7 +51,7 @@
 	.zero	1
 .LCPI0_3:
 	.byte	12                              # 0xc
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vptestnmd	%ymm1, %ymm1, %k1
 	vpbroadcastb	.LCPI0_3(%rip), %xmm1   # xmm1 = [12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12]
 	vmovdqu8	.LCPI0_1(%rip), %xmm1 {%k1}     # xmm1 {%k1} = [10,10,10,10,10,10,10,10,u,u,u,u,u,u,u,u]

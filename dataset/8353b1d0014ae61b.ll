@@ -13,13 +13,14 @@
 define i64 @func0000000000000004(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }
 
 ; 26 occurrences:
 ; abc/optimized/adler32.c.ll
+; boost/optimized/static_string.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; clamav/optimized/jpeg.c.ll
 ; cmake/optimized/adler32.c.ll
@@ -35,7 +36,6 @@ entry:
 ; linux/optimized/deflate.ll
 ; linux/optimized/inflate.ll
 ; linux/optimized/opt.ll
-; linux/optimized/uprobes.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; opencc/optimized/bit-vector.cc.ll
 ; openexr/optimized/attributes.c.ll
@@ -49,7 +49,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }
@@ -69,12 +69,13 @@ entry:
 define i64 @func000000000000000c(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }
 
-; 14 occurrences:
+; 15 occurrences:
+; boost/optimized/pattern.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; hdf5/optimized/H5Ocopy.c.ll
 ; hermes/optimized/ItaniumDemangle.cpp.ll
@@ -93,7 +94,7 @@ entry:
 define i64 @func0000000000000010(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }
@@ -107,7 +108,7 @@ entry:
 define i64 @func000000000000001f(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = add nuw nsw i64 %4, %0
   ret i64 %5
 }
@@ -118,25 +119,24 @@ entry:
 define i64 @func0000000000000016(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = add nsw i64 %3, %1
-  %5 = add nuw i64 %4, %0
+  %4 = add nsw i64 %1, %3
+  %5 = add nuw i64 %0, %4
   ret i64 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; postgres/optimized/zic.ll
-; wireshark/optimized/packet-mpeg-sect.c.ll
 ; yalantinglibs/optimized/data_gen.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001c(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }
 
-; 25 occurrences:
+; 24 occurrences:
 ; hdf5/optimized/H5B2cache.c.ll
 ; hdf5/optimized/H5EAcache.c.ll
 ; hdf5/optimized/H5FS.c.ll
@@ -146,7 +146,6 @@ entry:
 ; hdf5/optimized/H5HFdbg.c.ll
 ; hdf5/optimized/H5HFman.c.ll
 ; hdf5/optimized/H5HL.c.ll
-; hdf5/optimized/H5HLdblk.c.ll
 ; hdf5/optimized/H5Oainfo.c.ll
 ; hdf5/optimized/H5Oefl.c.ll
 ; hdf5/optimized/H5Ofsinfo.c.ll
@@ -166,7 +165,7 @@ entry:
 define i64 @func000000000000000f(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = add nuw nsw i64 %4, %0
   ret i64 %5
 }
@@ -183,7 +182,7 @@ entry:
 define i64 @func000000000000000d(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = add nsw i64 %4, %0
   ret i64 %5
 }
@@ -197,7 +196,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = add nsw i64 %4, %0
   ret i64 %5
 }
@@ -208,7 +207,7 @@ entry:
 define i64 @func0000000000000014(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }
@@ -220,7 +219,7 @@ entry:
 define i64 @func000000000000001d(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = add nsw i64 %4, %0
   ret i64 %5
 }
@@ -232,7 +231,7 @@ entry:
 define i64 @func0000000000000015(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = add nsw i64 %4, %0
   ret i64 %5
 }

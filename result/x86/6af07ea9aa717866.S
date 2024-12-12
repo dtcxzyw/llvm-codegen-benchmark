@@ -1,9 +1,9 @@
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	sarxl	%esi, %edi, %eax
 	cmpl	$121, %eax
 	setl	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	sarxl	%esi, %edi, %eax
 	testl	%eax, %eax
 	sete	%al

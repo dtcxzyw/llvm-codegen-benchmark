@@ -12,7 +12,7 @@
 define i64 @func0000000000000050(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = trunc i128 %0 to i64
-  %4 = add i64 %3, %2
+  %4 = add i64 %2, %3
   ret i64 %4
 }
 

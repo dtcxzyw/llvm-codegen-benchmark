@@ -55,11 +55,12 @@ entry:
   ret i32 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; icu/optimized/collation.ll
 ; linux/optimized/vc_screen.ll
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
 ; luau/optimized/IrTranslation.cpp.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; openusd/optimized/ilmbase_half.cpp.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; Function Attrs: nounwind

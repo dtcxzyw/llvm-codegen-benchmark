@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 27 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
@@ -7,6 +7,7 @@
 ; libpng/optimized/pngrutil.c.ll
 ; libpng/optimized/pngwutil.c.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/bitmap.cpp.ll
 ; nori/optimized/nanovg.c.ll
@@ -30,20 +31,8 @@
 define i8 @func000000000000001a(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i16
-  %3 = add nuw nsw i16 %2, %0
+  %3 = add nuw nsw i16 %0, %2
   %4 = lshr i16 %3, 1
-  %5 = trunc nuw i16 %4 to i8
-  ret i8 %5
-}
-
-; 1 occurrences:
-; linux/optimized/nvram.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000002(i16 %0, i8 %1) #0 {
-entry:
-  %2 = zext i8 %1 to i16
-  %3 = add i16 %2, %0
-  %4 = lshr i16 %3, 8
   %5 = trunc nuw i16 %4 to i8
   ret i8 %5
 }

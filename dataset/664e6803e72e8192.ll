@@ -1,14 +1,12 @@
 
-; 4 occurrences:
+; 2 occurrences:
 ; opencv/optimized/softfloat.cpp.ll
 ; qemu/optimized/hw_pci_pci_bridge.c.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000d(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = shl nuw nsw i64 %2, 14
+  %3 = shl nuw nsw i64 %2, 16
   %4 = sub nsw i64 %0, %3
   ret i64 %4
 }

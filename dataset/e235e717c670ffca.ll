@@ -28,7 +28,7 @@
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; openvdb/optimized/points.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, ptr %1) #0 {
+define i1 @func0000000000000058(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = icmp ne i32 %0, 0
@@ -40,7 +40,7 @@ entry:
 ; git/optimized/refs.ll
 ; php/optimized/zend_API.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i32 %0, ptr %1) #0 {
+define i1 @func0000000000000318(i32 %0, ptr %1) #0 {
 entry:
   %.not = icmp eq ptr %1, null
   %2 = icmp ne i32 %0, 0

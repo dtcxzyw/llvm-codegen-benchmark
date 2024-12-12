@@ -2,7 +2,7 @@ func0000000000000004:                   # @func0000000000000004
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmv.v.i	v12, 1
 	vsll.vv	v12, v12, v10, v0.t
-	vor.vv	v8, v12, v8
+	vor.vv	v8, v8, v12
 	ret
 func0000000000000006:                   # @func0000000000000006
 	vsetivli	zero, 8, e32, m2, ta, mu

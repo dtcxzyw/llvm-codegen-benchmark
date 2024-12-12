@@ -13,6 +13,20 @@ entry:
   ret double %6
 }
 
+; 2 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; Function Attrs: nounwind
+define double @func0000000000000024(double %0, double %1) #0 {
+entry:
+  %2 = fcmp olt double %1, 1.000000e+00
+  %3 = select i1 %2, double %1, double 1.000000e+00
+  %4 = fcmp ogt double %0, 1.000000e-03
+  %5 = select i1 %4, double %0, double 1.000000e-03
+  %6 = fmul double %5, %3
+  ret double %6
+}
+
 ; 5 occurrences:
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll

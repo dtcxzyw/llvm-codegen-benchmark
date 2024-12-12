@@ -1,16 +1,4 @@
 
-; 1 occurrences:
-; image-rs/optimized/8143hfqbwzfmz2f.ll
-; Function Attrs: nounwind
-define i64 @func000000000000010f(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ugt i32 %2, 999999999
-  %4 = zext i1 %3 to i64
-  %5 = add nuw nsw i64 %0, %1
-  %6 = add nuw nsw i64 %5, %4
-  ret i64 %6
-}
-
 ; 2 occurrences:
 ; cmake/optimized/multi.c.ll
 ; curl/optimized/libcurl_la-multi.ll
@@ -133,6 +121,20 @@ entry:
   ret i64 %6
 }
 
+; 3 occurrences:
+; redis/optimized/server.ll
+; sqlite/optimized/sqlite3.ll
+; zed-rs/optimized/4jjx0s36b1sfrqbb0zz907syp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000018f(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ne i32 %2, 2
+  %4 = zext i1 %3 to i64
+  %5 = add nuw nsw i64 %0, %1
+  %6 = add nuw nsw i64 %5, %4
+  ret i64 %6
+}
+
 ; 1 occurrences:
 ; linux/optimized/timeconv.ll
 ; Function Attrs: nounwind
@@ -154,19 +156,6 @@ entry:
   %4 = zext i1 %3 to i64
   %5 = add nsw i64 %0, %1
   %6 = add i64 %5, %4
-  ret i64 %6
-}
-
-; 2 occurrences:
-; redis/optimized/server.ll
-; sqlite/optimized/sqlite3.ll
-; Function Attrs: nounwind
-define i64 @func000000000000018f(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ne i32 %2, 0
-  %4 = zext i1 %3 to i64
-  %5 = add nuw nsw i64 %0, %1
-  %6 = add nuw nsw i64 %5, %4
   ret i64 %6
 }
 

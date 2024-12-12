@@ -42,6 +42,7 @@
 ; linux/optimized/transaction.ll
 ; linux/optimized/vlv_dsi.ll
 ; llama.cpp/optimized/ggml.c.ll
+; lvgl/optimized/lv_tabview.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
@@ -95,7 +96,6 @@
 ; oiio/optimized/exroutput.cpp.ll
 ; oiio/optimized/tiffinput.cpp.ll
 ; oiio/optimized/tiffoutput.cpp.ll
-; openblas/optimized/dgesdd.c.ll
 ; openblas/optimized/dgesvd.c.ll
 ; openblas/optimized/dlatrs3.c.ll
 ; openblas/optimized/dorgtsqr_row.c.ll
@@ -154,7 +154,7 @@ entry:
   ret i32 %4
 }
 
-; 79 occurrences:
+; 83 occurrences:
 ; abc/optimized/bmcCexMin1.c.ll
 ; abc/optimized/giaOf.c.ll
 ; abc/optimized/giaSif.c.ll
@@ -180,6 +180,10 @@ entry:
 ; linux/optimized/intel_vdsc.ll
 ; linux/optimized/ohci-hcd.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_dropdown.ll
+; lvgl/optimized/lv_grid.ll
+; lvgl/optimized/lv_slider.ll
+; lvgl/optimized/lv_tabview.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll

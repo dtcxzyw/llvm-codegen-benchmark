@@ -1,17 +1,15 @@
 
-; 57 occurrences:
+; 54 occurrences:
 ; gromacs/optimized/colvarbias_abf.cpp.ll
 ; gromacs/optimized/gmx_wham.cpp.ll
 ; gromacs/optimized/nbsearch.cpp.ll
 ; gromacs/optimized/sm_insolidangle.cpp.ll
 ; icu/optimized/format.ll
 ; icu/optimized/ucbuf.ll
-; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; libjpeg-turbo/optimized/jdcoefct.c.ll
 ; libquic/optimized/bio_mem.c.ll
 ; libquic/optimized/histogram.cc.ll
 ; libwebp/optimized/quant_levels_dec_utils.c.ll
-; libwebp/optimized/sharpyuv.c.ll
 ; linux/optimized/intel_pstate.ll
 ; linux/optimized/vt.ll
 ; minetest/optimized/chat.cpp.ll
@@ -45,7 +43,6 @@
 ; openssl/optimized/libcrypto-shlib-dso_dlfcn.ll
 ; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/stbImage.cpp.ll
-; postgres/optimized/float.ll
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rcore.c.ll
 ; raylib/optimized/rtextures.c.ll
@@ -65,12 +62,13 @@ entry:
   ret i32 %4
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; bullet3/optimized/btMiniSDF.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; linux/optimized/vt.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
+; lvgl/optimized/lv_table.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; opencv/optimized/Logos.cpp.ll
 ; openjdk/optimized/cmsnamed.ll
@@ -88,7 +86,7 @@ entry:
   ret i32 %4
 }
 
-; 27 occurrences:
+; 28 occurrences:
 ; git/optimized/line-log.ll
 ; grpc/optimized/chttp2_transport.cc.ll
 ; grpc/optimized/flow_control.cc.ll
@@ -116,6 +114,7 @@ entry:
 ; wasmtime-rs/optimized/3flv1664rwe55t82.ll
 ; z3/optimized/sat_aig_finder.cpp.ll
 ; z3/optimized/sat_lookahead.cpp.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -124,7 +123,7 @@ entry:
   ret i32 %4
 }
 
-; 66 occurrences:
+; 68 occurrences:
 ; abc/optimized/aigObj.c.ll
 ; abc/optimized/aigTiming.c.ll
 ; abc/optimized/bacBlast.c.ll
@@ -150,7 +149,6 @@ entry:
 ; libquic/optimized/histogram.cc.ll
 ; libwebp/optimized/quant_levels_dec_utils.c.ll
 ; libwebp/optimized/vp8l_dec.c.ll
-; linux/optimized/input-mt.ll
 ; llama.cpp/optimized/train.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/InstCombineVectorOps.cpp.ll
@@ -166,7 +164,6 @@ entry:
 ; oiio/optimized/imageinput.cpp.ll
 ; opencv/optimized/hough.cpp.ll
 ; opencv/optimized/hybrid_binarizer.cpp.ll
-; opencv/optimized/matrix_wrap.cpp.ll
 ; opencv/optimized/stringutils.cpp.ll
 ; openexr/optimized/ImfRgbaFile.cpp.ll
 ; openexr/optimized/channel_list.c.ll
@@ -190,6 +187,10 @@ entry:
 ; stb/optimized/stb_truetype.c.ll
 ; typst-rs/optimized/x7jq6ogp3t9ef5k.ll
 ; wasmtime-rs/optimized/2b53gxk7phibxp54.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; zxing/optimized/TextDecoder.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
@@ -223,7 +224,8 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; flac/optimized/stream_encoder.c.ll
 ; wireshark/optimized/packet-pvfs2.c.ll
 ; z3/optimized/qe_arith_plugin.cpp.ll
 ; Function Attrs: nounwind

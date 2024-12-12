@@ -5,7 +5,7 @@
 ; assimp/optimized/glTFImporter.cpp.ll
 ; opencc/optimized/Config.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000421(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 13, %2
   %4 = icmp eq i64 %1, 0

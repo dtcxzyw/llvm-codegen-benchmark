@@ -99,12 +99,12 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000014(i8 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 8
   %3 = and i32 %2, 255
   %4 = zext i8 %0 to i32
-  %5 = icmp ult i32 %3, %4
+  %5 = icmp samesign ult i32 %3, %4
   ret i1 %5
 }
 
@@ -212,7 +212,7 @@ define i1 @func0000000000000001(i8 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 8
   %3 = trunc i32 %2 to i8
-  %4 = icmp eq i8 %3, %0
+  %4 = icmp eq i8 %0, %3
   ret i1 %4
 }
 
@@ -221,7 +221,7 @@ entry:
 ; nanobind/optimized/nb_type.cpp.ll
 ; php/optimized/zend_inference.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i8 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 5
   %3 = and i32 %2, 1

@@ -7,5 +7,5 @@ func0000000000000001:                   # @func0000000000000001
 	vmv.v.i	v14, 2
 	vmv1r.v	v0, v11
 	vrsub.vi	v14, v12, 4, v0.t
-	vmseq.vv	v0, v14, v8
+	vmseq.vv	v0, v8, v14
 	ret

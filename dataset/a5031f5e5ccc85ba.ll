@@ -16,7 +16,7 @@ entry:
 ; opencv/optimized/tracker_nano.cpp.ll
 ; zxing/optimized/WhiteRectDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %.neg = sdiv i32 %1, -2
   %2 = add i32 %.neg, %0
@@ -41,7 +41,7 @@ entry:
 ; opencv/optimized/smooth.dispatch.cpp.ll
 ; stb/optimized/stb_herringbone_wang_tile.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %.neg = sdiv i32 %1, -16
   %2 = add i32 %.neg, %0

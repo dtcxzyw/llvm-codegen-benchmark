@@ -7,6 +7,13 @@ func0000000000000006:                   # @func0000000000000006
 	or	a0, a0, a1
 	srliw	a0, a0, 16
 	ret
+func0000000000000000:                   # @func0000000000000000
+	li	a0, 15
+	slli	a0, a0, 8
+	and	a0, a0, a2
+	or	a0, a0, a1
+	srliw	a0, a0, 6
+	ret
 func0000000000000004:                   # @func0000000000000004
 	andi	a2, a2, 1024
 	or	a0, a0, a2

@@ -1,15 +1,17 @@
 
-; 1 occurrences:
+; 2 occurrences:
+; qemu/optimized/target_riscv_vector_helper.c.ll
 ; ruby/optimized/time.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000001(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 7
-  %3 = add nsw i16 %2, %0
+  %3 = add nsw i16 %0, %2
   ret i16 %3
 }
 
-; 115 occurrences:
+; 118 occurrences:
+; git/optimized/merge-ort.ll
 ; grpc/optimized/writing.cc.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; linux/optimized/aspm.ll
@@ -58,10 +60,12 @@ entry:
 ; llvm/optimized/TransProtectedScope.cpp.ll
 ; llvm/optimized/Transforms.cpp.ll
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; node/optimized/simdutf.ll
 ; openusd/optimized/decodemv.c.ll
 ; openusd/optimized/faceVertex.cpp.ll
 ; openvdb/optimized/points.cc.ll
+; postgres/optimized/trigger.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
@@ -129,27 +133,26 @@ entry:
 define i16 @func0000000000000003(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, -449
-  %3 = add nuw nsw i16 %2, %0
+  %3 = add nuw nsw i16 %0, %2
   ret i16 %3
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; arrow/optimized/float16.cc.ll
 ; minetest/optimized/mapgen_fractal.cpp.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; stb/optimized/stb_dxt.c.ll
 ; wireshark/optimized/packet-gsm_a_rr.c.ll
-; wireshark/optimized/packet-tdmoe.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000002(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 1
-  %3 = add nuw i16 %2, %0
+  %3 = add nuw i16 %0, %2
   ret i16 %3
 }
 
-; 25 occurrences:
+; 26 occurrences:
 ; coremark/optimized/core_main.c.ll
 ; linux/optimized/cipso_ipv4.ll
 ; linux/optimized/drm_edid.ll
@@ -158,6 +161,7 @@ entry:
 ; linux/optimized/virtio_ring.ll
 ; llvm/optimized/Archive.cpp.ll
 ; llvm/optimized/DWARFAbbreviationDeclaration.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; minetest/optimized/map.cpp.ll
 ; openexr/optimized/ImfWav.cpp.ll
 ; openexr/optimized/internal_piz.c.ll

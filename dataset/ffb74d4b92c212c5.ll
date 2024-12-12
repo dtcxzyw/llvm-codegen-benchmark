@@ -2,11 +2,11 @@
 ; 1 occurrences:
 ; darktable/optimized/introspection_highlights.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000304(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 262143
   %3 = icmp ult i32 %2, %0
-  %4 = icmp ugt i32 %2, 1
+  %4 = icmp samesign ugt i32 %2, 1
   %5 = and i1 %3, %4
   ret i1 %5
 }
@@ -36,7 +36,7 @@ entry:
 ; wasmtime-rs/optimized/1f1skdqjemonth3f.ll
 ; wasmtime-rs/optimized/21g2sj3ridcu2juk.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 536870911
   %3 = icmp eq i32 %2, %0
@@ -46,21 +46,9 @@ entry:
 }
 
 ; 1 occurrences:
-; wireshark/optimized/packet-icmp.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 2147483647
-  %3 = icmp ult i32 %2, %0
-  %4 = icmp ult i32 %2, 21600001
-  %5 = and i1 %4, %3
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; linux/optimized/blk-merge.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i32 %1) #0 {
+define i1 @func000000000000018c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1792
   %3 = icmp ne i32 %2, 0
@@ -73,11 +61,11 @@ entry:
 ; luajit/optimized/lj_opt_loop.ll
 ; luajit/optimized/lj_opt_loop_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000030c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 65535
   %3 = icmp ne i32 %2, 65535
-  %4 = icmp ugt i32 %2, %0
+  %4 = icmp samesign ugt i32 %2, %0
   %5 = and i1 %3, %4
   ret i1 %5
 }

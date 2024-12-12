@@ -6,7 +6,7 @@ func0000000000000002:                   # @func0000000000000002
 	vfmul.vf	v8, v8, fa5
 	ret
 .LCPI1_0:
-	.quad	0x3ddb7cdfd9d7bdbb              # double 1.0E-10
+	.quad	0x3cb0000000000000              # double 2.2204460492503131E-16
 func0000000000000004:                   # @func0000000000000004
 	lui	a0, %hi(.LCPI1_0)
 	fld	fa5, %lo(.LCPI1_0)(a0)

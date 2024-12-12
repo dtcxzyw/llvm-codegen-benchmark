@@ -1,15 +1,15 @@
 
-%struct.aiFace.2709746 = type { i32, ptr }
+%struct.aiFace.2822415 = type { i32, ptr }
 
 ; 1 occurrences:
 ; openjdk/optimized/classFileParser.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002a4(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000007e4(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr nusw i8, ptr %1, i64 1
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
-  %6 = getelementptr nusw i8, ptr %0, i64 1
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 1
   %7 = icmp ult ptr %6, %5
   ret i1 %7
 }
@@ -17,17 +17,17 @@ entry:
 ; 1 occurrences:
 ; snappy/optimized/snappy.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000001e4(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 2147483647
   %4 = getelementptr i8, ptr %1, i64 1
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
-  %6 = getelementptr nusw i8, ptr %0, i64 16
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 16
   %7 = icmp ult ptr %6, %5
   ret i1 %7
 }
 
-; 37 occurrences:
+; 38 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; assimp/optimized/3DSConverter.cpp.ll
 ; assimp/optimized/ACLoader.cpp.ll
@@ -65,13 +65,14 @@ entry:
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; llvm/optimized/VTableBuilder.cpp.ll
+; z3/optimized/realclosure.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002a1(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000007e1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr nusw i8, ptr %1, i64 8
-  %5 = getelementptr nusw %struct.aiFace.2709746, ptr %4, i64 %3
-  %6 = getelementptr nusw i8, ptr %0, i64 16
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 8
+  %5 = getelementptr nusw nuw %struct.aiFace.2822415, ptr %4, i64 %3
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 16
   %7 = icmp eq ptr %6, %5
   ret i1 %7
 }
@@ -107,25 +108,12 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/morpion_solitaire.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000061(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -8
   %4 = getelementptr i8, ptr %1, i64 8
   %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = getelementptr nusw i8, ptr %0, i64 8
-  %7 = icmp eq ptr %6, %5
-  ret i1 %7
-}
-
-; 1 occurrences:
-; z3/optimized/realclosure.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = and i64 %2, 4294967295
-  %4 = getelementptr i8, ptr %1, i64 8
-  %5 = getelementptr nusw ptr, ptr %4, i64 %3
-  %6 = getelementptr nusw i8, ptr %0, i64 8
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 8
   %7 = icmp eq ptr %6, %5
   ret i1 %7
 }

@@ -69,7 +69,7 @@ entry:
   ret float %2
 }
 
-; 17 occurrences:
+; 20 occurrences:
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; assimp/optimized/Subdivision.cpp.ll
 ; cmake/optimized/cmGlobalGenerator.cxx.ll
@@ -87,6 +87,9 @@ entry:
 ; opencv/optimized/basicretinafilter.cpp.ll
 ; wireshark/optimized/packet-lte-rrc.c.ll
 ; wireshark/optimized/packet-nr-rrc.c.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i32 %0) #0 {
 entry:

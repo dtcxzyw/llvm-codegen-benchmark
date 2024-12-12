@@ -198,17 +198,9 @@ entry:
   ret i64 %3
 }
 
-; 12 occurrences:
+; 4 occurrences:
 ; openjdk/optimized/parserTests.ll
 ; qemu/optimized/source_s_subMagsF16.c.ll
-; spike/optimized/f16_to_i32.ll
-; spike/optimized/f16_to_i32_r_minMag.ll
-; spike/optimized/f16_to_i64.ll
-; spike/optimized/f16_to_i64_r_minMag.ll
-; spike/optimized/f16_to_ui32.ll
-; spike/optimized/f16_to_ui32_r_minMag.ll
-; spike/optimized/f16_to_ui64.ll
-; spike/optimized/f16_to_ui64_r_minMag.ll
 ; spike/optimized/f64_to_i64_r_minMag.ll
 ; spike/optimized/s_subMagsF16.ll
 ; Function Attrs: nounwind
@@ -219,13 +211,15 @@ entry:
   ret i64 %3
 }
 
-; 6 occurrences:
+; 8 occurrences:
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; spike/optimized/f128_to_i64.ll
 ; spike/optimized/f128_to_ui64.ll
 ; spike/optimized/f64_to_ui64_r_minMag.ll
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
@@ -234,7 +228,8 @@ entry:
   ret i64 %3
 }
 
-; 7 occurrences:
+; 8 occurrences:
+; boost/optimized/to_chars.ll
 ; cmake/optimized/huf_decompress.c.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; spike/optimized/f16_div.ll

@@ -1,4 +1,4 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	movl	%edi, %eax
 	xorl	%edx, %edx
 	divl	%esi
@@ -12,19 +12,12 @@ func0000000000000001:                   # @func0000000000000001
 	testl	%edx, %edx
 	sete	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	movl	%edi, %eax
 	xorl	%edx, %edx
 	divl	%esi
 	testl	%edx, %edx
 	sete	%al
-	retq
-func0000000000000008:                   # @func0000000000000008
-	movl	%edi, %eax
-	xorl	%edx, %edx
-	divl	%esi
-	cmpl	$100, %edx
-	setae	%al
 	retq
 func0000000000000004:                   # @func0000000000000004
 	movl	%edi, %eax
@@ -40,7 +33,7 @@ func000000000000000c:                   # @func000000000000000c
 	testl	%edx, %edx
 	setne	%al
 	retq
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	movl	%edi, %eax
 	xorl	%edx, %edx
 	divl	%esi

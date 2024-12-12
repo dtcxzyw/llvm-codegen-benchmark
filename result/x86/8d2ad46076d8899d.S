@@ -12,3 +12,10 @@ func0000000000000002:                   # @func0000000000000002
 	movl	$4194303, %eax                  # imm = 0x3FFFFF
 	cmovel	%ecx, %eax
 	retq
+func0000000000000000:                   # @func0000000000000000
+	leal	16711680(%rsi), %ecx
+	shrl	$10, %ecx
+	testb	$1, %dil
+	movl	$16383, %eax                    # imm = 0x3FFF
+	cmovel	%ecx, %eax
+	retq

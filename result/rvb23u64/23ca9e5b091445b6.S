@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000f:                   # @func000000000000000f
 	negw	a2, a2
 	srlw	a1, a1, a2
 	slli.uw	a1, a1, 4

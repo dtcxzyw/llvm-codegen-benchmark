@@ -1,5 +1,5 @@
 
-; 48 occurrences:
+; 53 occurrences:
 ; cmake/optimized/nghttp2_http.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/timeline.c.ll
@@ -11,7 +11,6 @@
 ; icu/optimized/calendar.ll
 ; icu/optimized/choicfmt.ll
 ; icu/optimized/hebrwcal.ll
-; icu/optimized/ubidiwrt.ll
 ; jq/optimized/builtin.ll
 ; libevent/optimized/evdns.c.ll
 ; linux/optimized/intel_guc_submission.ll
@@ -26,8 +25,8 @@
 ; msdfgen/optimized/edge-segments.cpp.ll
 ; nghttp2/optimized/nghttp2_http.c.ll
 ; nuklear/optimized/unity.c.ll
+; opencv/optimized/binary_descriptor.cpp.ll
 ; openjdk/optimized/hb-ot-shaper-indic.ll
-; openmpi/optimized/libprrte_la-hwloc_base_maffinity.ll
 ; openssl/optimized/libcrypto-lib-bn_lib.ll
 ; openssl/optimized/libcrypto-lib-x509_cmp.ll
 ; openssl/optimized/libcrypto-shlib-bn_lib.ll
@@ -48,6 +47,12 @@
 ; wireshark/optimized/packet-ax25-kiss.c.ll
 ; yosys/optimized/share.ll
 ; z3/optimized/expr_context_simplifier.cpp.ll
+; zed-rs/optimized/b2ktka7yg7i1nuhew6e88xzwi.ll
+; zed-rs/optimized/d7h2r6mystjn2jzwcl5ofeoiz.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
+; zed-rs/optimized/eldybx25av55fm0jlf5yq64qn.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i1 %1) #0 {
 entry:

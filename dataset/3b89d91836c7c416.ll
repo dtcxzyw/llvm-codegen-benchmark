@@ -1,5 +1,5 @@
 
-; 121 occurrences:
+; 120 occurrences:
 ; abc/optimized/abcVerify.c.ll
 ; abc/optimized/bmcFx.c.ll
 ; abc/optimized/giaJf.c.ll
@@ -59,7 +59,6 @@
 ; linux/optimized/rsrc.ll
 ; linux/optimized/tctx.ll
 ; linux/optimized/tg3.ll
-; linux/optimized/tsc_msr.ll
 ; lua/optimized/lstring.ll
 ; luajit/optimized/minilua.ll
 ; luau/optimized/lstring.cpp.ll

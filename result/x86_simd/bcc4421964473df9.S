@@ -13,7 +13,7 @@ func0000000000000004:                   # @func0000000000000004
 	vpmovd2m	%xmm1, %k1
 	vpmovqd	%ymm2, %xmm1
 	vpbroadcastd	.LCPI1_0(%rip), %xmm1 {%k1} # xmm1 {%k1} = [7,7,7,7]
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 func000000000000000d:                   # @func000000000000000d

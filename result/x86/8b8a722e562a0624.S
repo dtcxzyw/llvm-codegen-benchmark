@@ -1,7 +1,7 @@
 func0000000000000007:                   # @func0000000000000007
 	movq	%rdi, %rax
-	shrq	$52, %rax
-	andl	$2047, %eax                     # imm = 0x7FF
+	shrl	$18, %eax
+	andl	$1, %eax
 	retq
 func0000000000000003:                   # @func0000000000000003
 	movq	%rdi, %rax

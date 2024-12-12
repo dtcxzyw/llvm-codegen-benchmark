@@ -1,5 +1,5 @@
 
-; 54 occurrences:
+; 53 occurrences:
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dense_qr.cc.ll
@@ -46,7 +46,6 @@
 ; openmpi/optimized/ad_coll_build_req_new.ll
 ; openmpi/optimized/ad_io_coll.ll
 ; openmpi/optimized/opal_datatype_add.ll
-; openmpi/optimized/vprotocol_pessimist_sender_based.ll
 ; postgres/optimized/syslogger.ll
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; qemu/optimized/block_io.c.ll

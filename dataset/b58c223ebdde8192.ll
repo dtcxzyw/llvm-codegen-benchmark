@@ -1,5 +1,5 @@
 
-%class.XMMRegister.2619844 = type { i32 }
+%class.XMMRegister.2733288 = type { i32 }
 
 ; 3 occurrences:
 ; linux/optimized/sha512_generic.ll
@@ -26,12 +26,12 @@ entry:
 ; oiio/optimized/ddsinput.cpp.ll
 ; openjdk/optimized/c2_MacroAssembler_x86.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2
   %3 = or disjoint i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw [4 x %class.XMMRegister.2619844], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [4 x %class.XMMRegister.2733288], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

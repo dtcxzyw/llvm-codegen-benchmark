@@ -24,7 +24,7 @@
 define i1 @func000000000000000c(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 0
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = xor i1 %3, true
   ret i1 %4
 }
@@ -62,9 +62,9 @@ entry:
 ; 1 occurrences:
 ; yoga/optimized/CalculateLayout.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i8 %1) #0 {
+define i1 @func0000000000000018(i1 %0, i8 %1) #0 {
 entry:
-  %2 = icmp ugt i8 %1, 1
+  %2 = icmp samesign ugt i8 %1, 1
   %3 = and i1 %2, %0
   %4 = xor i1 %3, true
   ret i1 %4
@@ -73,10 +73,10 @@ entry:
 ; 1 occurrences:
 ; wasmtime-rs/optimized/377rrvl9zeztt32x.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i8 %1) #0 {
+define i1 @func0000000000000014(i1 %0, i8 %1) #0 {
 entry:
-  %2 = icmp ult i8 %1, 3
-  %3 = and i1 %2, %0
+  %2 = icmp samesign ult i8 %1, 3
+  %3 = and i1 %0, %2
   %4 = xor i1 %3, true
   ret i1 %4
 }

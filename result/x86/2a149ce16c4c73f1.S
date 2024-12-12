@@ -28,3 +28,13 @@ func0000000000000008:                   # @func0000000000000008
 	andb	$1, %al
 	shlb	$3, %al
 	retq
+func0000000000000030:                   # @func0000000000000030
+	cmpb	$67, %sil
+	setae	%al
+	addb	%al, %al
+	orb	$65, %al
+	movzbl	%al, %ecx
+	testb	$1, %dil
+	movl	$67, %eax
+	cmovel	%ecx, %eax
+	retq

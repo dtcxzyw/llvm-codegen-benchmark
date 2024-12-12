@@ -23,6 +23,17 @@ entry:
   ret i64 %3
 }
 
+; 1 occurrences:
+; php/optimized/unixtime2tm.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(i64 %0) #0 {
+entry:
+  %1 = trunc nsw i64 %0 to i32
+  %2 = urem i32 %1, 60
+  %3 = zext nneg i32 %2 to i64
+  ret i64 %3
+}
+
 ; 31 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchDiv.c.ll

@@ -4,7 +4,7 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	$27, %rdi
 	cmovneq	%rsi, %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	andl	$58720255, %esi                 # imm = 0x37FFFFF
 	xorl	%eax, %eax
 	cmpq	$33554432, %rdi                 # imm = 0x2000000
@@ -16,10 +16,24 @@ func000000000000000a:                   # @func000000000000000a
 	cmpq	$255, %rdi
 	cmovlq	%rsi, %rax
 	retq
+func0000000000000008:                   # @func0000000000000008
+	andq	$-512, %rsi                     # imm = 0xFE00
+	shrq	$61, %rdi
+	xorl	%eax, %eax
+	negq	%rdi
+	sbbq	%rax, %rax
+	orq	%rsi, %rax
+	retq
+func0000000000000014:                   # @func0000000000000014
+	andl	$496, %esi                      # imm = 0x1F0
+	cmpq	$23, %rdi
+	movl	$32, %eax
+	cmovaeq	%rsi, %rax
+	retq
 func0000000000000004:                   # @func0000000000000004
-	andq	$-4096, %rsi                    # imm = 0xF000
-	cmpq	$134213633, %rdi                # imm = 0x7FFF001
-	movl	$134217728, %eax                # imm = 0x8000000
+	andq	$-16, %rsi
+	cmpq	$23, %rdi
+	movl	$32, %eax
 	cmovaeq	%rsi, %rax
 	retq
 func0000000000000006:                   # @func0000000000000006

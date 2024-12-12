@@ -2,7 +2,7 @@
 	.long	2454267027                      # 0x92492493
 func0000000000000015:                   # @func0000000000000015
 	vpslld	$2, %ymm2, %ymm3
-	vpaddd	%ymm1, %ymm2, %ymm1
+	vpaddd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm3, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpshufd	$245, %ymm0, %ymm1              # ymm1 = ymm0[1,1,3,3,5,5,7,7]

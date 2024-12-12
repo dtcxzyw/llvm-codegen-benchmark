@@ -11,8 +11,19 @@
 define i1 @func0000000000000004(i8 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, 2
-  %3 = or i8 %2, %0
+  %3 = or i8 %0, %2
   %4 = icmp ult i8 %3, 4
+  ret i1 %4
+}
+
+; 1 occurrences:
+; openjdk/optimized/superword.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i8 %0, i8 %1) #0 {
+entry:
+  %2 = add i8 %1, -4
+  %3 = or i8 %0, %2
+  %4 = icmp ugt i8 %3, 7
   ret i1 %4
 }
 

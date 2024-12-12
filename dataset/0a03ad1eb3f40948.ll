@@ -31,7 +31,7 @@ entry:
 define i8 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %.neg = xor i64 %1, -1
-  %2 = add i64 %.neg, %0
+  %2 = add i64 %0, %.neg
   %3 = trunc nuw i64 %2 to i8
   ret i8 %3
 }
@@ -42,7 +42,7 @@ entry:
 define i8 @func000000000000001e(i64 %0, i64 %1) #0 {
 entry:
   %.neg = xor i64 %1, -1
-  %2 = add i64 %.neg, %0
+  %2 = add i64 %0, %.neg
   %3 = trunc nuw i64 %2 to i8
   ret i8 %3
 }

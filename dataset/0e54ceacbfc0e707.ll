@@ -57,17 +57,6 @@ entry:
 }
 
 ; 1 occurrences:
-; minetest/optimized/COBJMeshFileLoader.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000007(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nsw i64 %1, %2
-  %4 = and i64 %3, 4294967295
-  %5 = sub nuw nsw i64 %4, %0
-  ret i64 %5
-}
-
-; 1 occurrences:
 ; minetest/optimized/CB3DMeshFileLoader.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {

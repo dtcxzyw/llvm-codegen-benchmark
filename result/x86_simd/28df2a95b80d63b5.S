@@ -6,7 +6,7 @@ func0000000000000004:                   # @func0000000000000004
 	vbroadcastss	.LCPI0_0(%rip), %ymm1   # ymm1 = [1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0]
 	knotb	%k0, %k1
 	vminps	%ymm2, %ymm1, %ymm1 {%k1} {z}
-	vmulps	%ymm0, %ymm1, %ymm0
+	vmulps	%ymm1, %ymm0, %ymm0
 	vcvttps2dq	%ymm0, %ymm0
 	retq
 func0000000000000002:                   # @func0000000000000002

@@ -8,7 +8,7 @@ entry:
   %sh.diff = lshr i64 %1, 30
   %tr.sh.diff = trunc i64 %sh.diff to i32
   %2 = and i32 %tr.sh.diff, -4
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   ret i32 %3
 }
 
@@ -34,8 +34,21 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = shl i32 %2, 1
   %4 = and i32 %3, -8
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
+}
+
+; 2 occurrences:
+; lvgl/optimized/lv_draw_sw_transform.ll
+; openspiel/optimized/quoridor.cc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000025(i32 %0, i64 %1) #0 {
+entry:
+  %sh.diff = lshr i64 %1, 24
+  %tr.sh.diff = trunc i64 %sh.diff to i32
+  %2 = and i32 %tr.sh.diff, -256
+  %3 = add nsw i32 %0, %2
+  ret i32 %3
 }
 
 ; 2 occurrences:
@@ -47,19 +60,7 @@ entry:
   %sh.diff = lshr i64 %1, 1
   %tr.sh.diff = trunc i64 %sh.diff to i32
   %2 = and i32 %tr.sh.diff, -4
-  %3 = add i32 %2, %0
-  ret i32 %3
-}
-
-; 1 occurrences:
-; openspiel/optimized/quoridor.cc.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000025(i32 %0, i64 %1) #0 {
-entry:
-  %sh.diff = lshr i64 %1, 31
-  %tr.sh.diff = trunc i64 %sh.diff to i32
-  %2 = and i32 %tr.sh.diff, -2
-  %3 = add nsw i32 %2, %0
+  %3 = add i32 %0, %2
   ret i32 %3
 }
 
@@ -96,7 +97,7 @@ entry:
   %sh.diff = lshr i64 %1, 31
   %tr.sh.diff = trunc i64 %sh.diff to i32
   %2 = and i32 %tr.sh.diff, -2
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   ret i32 %3
 }
 

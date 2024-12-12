@@ -13,7 +13,6 @@
 ; linux/optimized/sch_api.ll
 ; linux/optimized/tx.ll
 ; linux/optimized/vc.ll
-; linux/optimized/wep.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/AssumeBundleBuilder.cpp.ll
@@ -25,6 +24,7 @@
 ; llvm/optimized/JumpDiagnostics.cpp.ll
 ; llvm/optimized/SCCPSolver.cpp.ll
 ; llvm/optimized/ScheduleDAGRRList.cpp.ll
+; llvm/optimized/StackSafetyAnalysis.cpp.ll
 ; llvm/optimized/UnwrappedLineParser.cpp.ll
 ; llvm/optimized/Verifier.cpp.ll
 ; openusd/optimized/patchBuilder.cpp.ll
@@ -37,7 +37,7 @@
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000042(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 64
   %3 = icmp eq i16 %2, 0
@@ -46,14 +46,13 @@ entry:
   ret i1 %5
 }
 
-; 22 occurrences:
+; 24 occurrences:
 ; abc/optimized/wlcAbs.c.ll
 ; abc/optimized/wlcAbs2.c.ll
 ; clamav/optimized/events.c.ll
 ; cvc5/optimized/model_blocker.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_serializer.cpp.ll
 ; libquic/optimized/prtime.cc.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
 ; linux/optimized/rx.ll
 ; linux/optimized/tx.ll
@@ -64,13 +63,16 @@ entry:
 ; llvm/optimized/SemaObjC.cpp.ll
 ; llvm/optimized/SemaStmtAsm.cpp.ll
 ; ocio/optimized/MathUtils.cpp.ll
+; openvdb/optimized/LevelSetRebuild.cc.ll
+; openvdb/optimized/VolumeToMesh.cc.ll
 ; php/optimized/ir_ra.ll
 ; qemu/optimized/hw_net_pcnet.c.ll
 ; quickjs/optimized/quickjs.ll
+; slurm/optimized/slurm_protocol_socket.ll
 ; wolfssl/optimized/internal.c.ll
 ; z3/optimized/smt_context.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000058(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 4
   %3 = icmp eq i16 %2, 0
@@ -98,7 +100,7 @@ entry:
 ; wireshark/optimized/packet-9p.c.ll
 ; wireshark/optimized/packet-netflow.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000302(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 2048
   %3 = icmp ne i16 %2, 0
@@ -107,32 +109,19 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; darktable/optimized/VC5Decompressor.cpp.ll
-; llvm/optimized/SemaDecl.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000018c(i16 %0, i16 %1) #0 {
-entry:
-  %2 = and i16 %1, 8192
-  %3 = icmp ne i16 %2, 0
-  %4 = icmp slt i16 %0, 0
-  %5 = or i1 %4, %3
-  ret i1 %5
-}
-
 ; 10 occurrences:
 ; abc/optimized/wlcShow.c.ll
-; cmake/optimized/cmELF.cxx.ll
 ; hermes/optimized/JSONLexer.cpp.ll
-; linux/optimized/access.ll
+; icu/optimized/ubidiln.ll
 ; linux/optimized/irq.ll
-; llvm/optimized/Verifier.cpp.ll
+; llvm/optimized/SemaDecl.cpp.ll
+; llvm/optimized/SemaPseudoObject.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wireshark/optimized/packet-5co-legacy.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000102(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 63
   %3 = icmp eq i16 %2, 15
@@ -141,39 +130,16 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; spike/optimized/f16_classify.ll
-; Function Attrs: nounwind
-define i1 @func000000000000002c(i16 %0, i16 %1) #0 {
-entry:
-  %2 = and i16 %1, 31
-  %3 = icmp eq i16 %2, 31
-  %4 = icmp slt i16 %0, 0
-  %5 = or i1 %4, %3
-  ret i1 %5
-}
-
-; 2 occurrences:
+; 3 occurrences:
+; cvc5/optimized/theory_sep.cpp.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000048(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, -2
   %3 = icmp eq i16 %2, 10
   %4 = icmp ult i16 %0, 173
-  %5 = or i1 %4, %3
-  ret i1 %5
-}
-
-; 1 occurrences:
-; llvm/optimized/AArch64FastISel.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000102(i16 %0, i16 %1) #0 {
-entry:
-  %2 = and i16 %1, 255
-  %3 = icmp ugt i16 %2, 2
-  %4 = icmp eq i16 %0, 0
   %5 = or i1 %4, %3
   ret i1 %5
 }
@@ -183,11 +149,23 @@ entry:
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; openspiel/optimized/chess_board.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000318(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 28
   %3 = icmp ne i16 %2, 16
   %4 = icmp ne i16 %0, 16
+  %5 = or i1 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; linux/optimized/access.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000502(i16 %0, i16 %1) #0 {
+entry:
+  %2 = and i16 %1, 14
+  %3 = icmp eq i16 %2, 0
+  %4 = icmp eq i16 %0, 64
   %5 = or i1 %4, %3
   ret i1 %5
 }

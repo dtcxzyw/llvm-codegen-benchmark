@@ -13,9 +13,9 @@ func000000000000001f:                   # @func000000000000001f
 	orl	%edi, %eax
 	retq
 func000000000000003f:                   # @func000000000000003f
-	xorb	$7, %sil
+	xorb	$32, %sil
 	movzbl	%sil, %eax
-	shll	$24, %eax
-	shll	$16, %edi
+	shll	$12, %eax
+	shll	$18, %edi
 	orl	%edi, %eax
 	retq

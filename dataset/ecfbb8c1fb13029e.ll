@@ -1,10 +1,11 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; casadi/optimized/convexify.cpp.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; casadi/optimized/sqpmethod.cpp.ll
 ; darktable/optimized/introspection_basecurve.c.ll
 ; quantlib/optimized/qrdecomposition.ll
+; quantlib/optimized/tapcorrelations.ll
 ; stat-rs/optimized/11haqsqxcf11j877.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
@@ -38,7 +39,7 @@ define ptr @func00000000000003f0(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 3
   %4 = add nuw nsw i64 %3, 8
-  %5 = mul nuw nsw i64 %4, %1
+  %5 = mul nuw nsw i64 %1, %4
   %6 = getelementptr i8, ptr %0, i64 8
   %7 = getelementptr i8, ptr %6, i64 %5
   ret ptr %7

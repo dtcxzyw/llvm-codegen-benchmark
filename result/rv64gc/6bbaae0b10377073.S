@@ -28,6 +28,13 @@ func000000000000000a:                   # @func000000000000000a
 	addiw	a0, a0, -1
 .LBB3_2:                                # %entry
 	ret
+func0000000000000014:                   # @func0000000000000014
+	sext.w	a2, a0
+	sext.w	a1, a1
+	sltu	a1, a1, a2
+	addi	a1, a1, -1
+	and	a0, a0, a1
+	ret
 func0000000000000008:                   # @func0000000000000008
 	sext.w	a1, a1
 	sext.w	a2, a0

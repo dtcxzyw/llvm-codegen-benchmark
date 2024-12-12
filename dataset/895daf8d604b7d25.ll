@@ -1,7 +1,5 @@
 
-; 18 occurrences:
-; arrow/optimized/fixed-dtoa.cc.ll
-; double_conversion/optimized/fixed-dtoa.cc.ll
+; 15 occurrences:
 ; openjdk/optimized/barrierSetC1.ll
 ; openjdk/optimized/c1_FrameMap.ll
 ; openjdk/optimized/c1_LIRAssembler.ll
@@ -16,10 +14,9 @@
 ; openjdk/optimized/shenandoahBarrierSetC1_x86.ll
 ; openjdk/optimized/xBarrierSetC1.ll
 ; openjdk/optimized/zBarrierSetC1.ll
-; openusd/optimized/fixed-dtoa.cc.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000114(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000424(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 7
   %3 = icmp ne i64 %2, 7
@@ -50,7 +47,7 @@ entry:
 ; lightgbm/optimized/tree.cpp.ll
 ; openusd/optimized/fixed-dtoa.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000426(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 9218868437227405312
   %3 = icmp eq i64 %2, 0
@@ -65,7 +62,7 @@ entry:
 ; openusd/optimized/fixed-dtoa.cc.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000042a(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 9218868437227405312
   %3 = icmp ne i64 %2, 0
@@ -79,13 +76,28 @@ entry:
 ; double_conversion/optimized/fixed-dtoa.cc.ll
 ; openusd/optimized/fixed-dtoa.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000118(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000438(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 9218868437227405312
   %3 = icmp ne i64 %2, 0
   %4 = add i32 %0, -1023
   %5 = icmp ult i32 %4, 52
   %6 = select i1 %3, i1 %5, i1 false
+  ret i1 %6
+}
+
+; 3 occurrences:
+; arrow/optimized/fixed-dtoa.cc.ll
+; double_conversion/optimized/fixed-dtoa.cc.ll
+; openusd/optimized/fixed-dtoa.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000434(i32 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 9218868437227405312
+  %3 = icmp eq i64 %2, 0
+  %4 = add nsw i32 %0, -1075
+  %5 = icmp ult i32 %4, -128
+  %6 = select i1 %3, i1 true, i1 %5
   ret i1 %6
 }
 

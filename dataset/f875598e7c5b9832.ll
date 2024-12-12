@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 34 occurrences:
 ; assimp/optimized/HMPLoader.cpp.ll
 ; box2d/optimized/b2_rope.cpp.ll
 ; bullet3/optimized/btConeTwistConstraint.ll
@@ -12,7 +12,6 @@
 ; darktable/optimized/introspection_blurs.c.ll
 ; darktable/optimized/introspection_colorequal.c.ll
 ; darktable/optimized/introspection_colorreconstruction.c.ll
-; darktable/optimized/introspection_denoiseprofile.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; darktable/optimized/introspection_globaltonemap.c.ll
 ; darktable/optimized/introspection_monochrome.c.ll

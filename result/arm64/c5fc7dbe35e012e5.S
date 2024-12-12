@@ -1,60 +1,26 @@
-func0000000000000058:                   // @func0000000000000058
+func0000000000000098:                   // @func0000000000000098
 // %bb.0:                               // %entry
-	uzp2	v2.4s, v2.4s, v3.4s
-	bic	v2.4s, #224, lsl #24
-	cmeq	v1.4s, v2.4s, v1.4s
-	mvn	v1.16b, v1.16b
-	xtn	v1.4h, v1.4s
-	orr	v0.8b, v1.8b, v0.8b
+	ubfx	x8, x2, #32, #29
+	cmp	w1, w8
+	cset	w8, ne
+	orr	w8, w0, w8
+	and	w0, w8, #0x1
 	ret
                                         // -- End function
-func0000000000000078:                   // @func0000000000000078
+func00000000000000d8:                   // @func00000000000000d8
 // %bb.0:                               // %entry
-	uzp2	v2.4s, v2.4s, v3.4s
-	ushr	v2.4s, v2.4s, #29
-	bic	v2.4s, #6
-	cmeq	v1.4s, v2.4s, v1.4s
-	mvn	v1.16b, v1.16b
-	xtn	v1.4h, v1.4s
-	orr	v0.8b, v1.8b, v0.8b
-	ret
-                                        // -- End function
-func0000000000000052:                   // @func0000000000000052
-// %bb.0:                               // %entry
-	uzp2	v2.4s, v2.4s, v3.4s
-	bic	v2.4s, #224, lsl #24
-	cmhs	v1.4s, v1.4s, v2.4s
-	xtn	v1.4h, v1.4s
-	orr	v0.8b, v1.8b, v0.8b
-	ret
-                                        // -- End function
-func0000000000000042:                   // @func0000000000000042
-// %bb.0:                               // %entry
-	uzp2	v2.4s, v2.4s, v3.4s
-	bic	v2.4s, #240, lsl #24
-	cmeq	v1.4s, v2.4s, v1.4s
-	xtn	v1.4h, v1.4s
-	orr	v0.8b, v1.8b, v0.8b
-	ret
-                                        // -- End function
-func0000000000000072:                   // @func0000000000000072
-// %bb.0:                               // %entry
-	uzp2	v2.4s, v2.4s, v3.4s
-	movi	v3.2d, #0x00ffff0000ffff
-	ushr	v2.4s, v2.4s, #6
-	and	v2.16b, v2.16b, v3.16b
-	cmhs	v1.4s, v1.4s, v2.4s
-	xtn	v1.4h, v1.4s
-	orr	v0.8b, v1.8b, v0.8b
+	ubfx	x8, x2, #61, #1
+	cmp	w1, w8
+	cset	w8, ne
+	orr	w8, w0, w8
+	and	w0, w8, #0x1
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	uzp1	v2.4s, v2.4s, v3.4s
-	ushr	v2.4s, v2.4s, #24
-	cmeq	v1.4s, v2.4s, v1.4s
-	mvn	v1.16b, v1.16b
-	xtn	v1.4h, v1.4s
-	orr	v0.8b, v1.8b, v0.8b
+	cmp	w1, w2, lsr #24
+	cset	w8, ne
+	orr	w8, w0, w8
+	and	w0, w8, #0x1
 	ret
                                         // -- End function

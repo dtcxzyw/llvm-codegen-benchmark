@@ -1,6 +1,7 @@
 
-; 99 occurrences:
+; 104 occurrences:
 ; abc/optimized/fraInd.c.ll
+; boost/optimized/codepage.ll
 ; cmake/optimized/archive_string.c.ll
 ; coreutils-rs/optimized/1vrxha14kpfjcqak.ll
 ; coreutils-rs/optimized/jdhpc8bthd0ylxt.ll
@@ -10,7 +11,6 @@
 ; icu/optimized/bytestream.ll
 ; image-rs/optimized/30755d6iao7ojcvl.ll
 ; imgui/optimized/imgui_draw.cpp.ll
-; linux/optimized/mlme.ll
 ; linux/optimized/xarray.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64StackTagging.cpp.ll
@@ -99,6 +99,11 @@
 ; tls-rs/optimized/z2cy5bf5cayilz9.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
+; zed-rs/optimized/4kidsk70o8yfs5e4frb89ok7e.ll
+; zed-rs/optimized/5jgfm3klpby9utjhkan94f3dk.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/9tt6eh72scdop5d6biwv5himz.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i1 %1, i1 %2) #0 {
 entry:

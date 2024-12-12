@@ -1,5 +1,5 @@
 
-%"struct.ncnn::PreCalc.2636009" = type { i32, i32, i32, i32, float, float, float, float }
+%"struct.ncnn::PreCalc.2749334" = type { i32, i32, i32, i32, float, float, float, float }
 
 ; 5 occurrences:
 ; darktable/optimized/introspection_toneequal.c.ll
@@ -12,8 +12,8 @@ define ptr @func0000000000000000(ptr %0, i64 %1, float %2) #0 {
 entry:
   %3 = fptosi float %2 to i32
   %4 = sext i32 %3 to i64
-  %5 = mul i64 %4, %1
-  %6 = getelementptr %"struct.ncnn::PreCalc.2636009", ptr %0, i64 %5
+  %5 = mul i64 %1, %4
+  %6 = getelementptr %"struct.ncnn::PreCalc.2749334", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -48,7 +48,7 @@ define ptr @func0000000000000002(ptr %0, i64 %1, float %2) #0 {
 entry:
   %3 = fptosi float %2 to i32
   %4 = sext i32 %3 to i64
-  %5 = mul i64 %4, %1
+  %5 = mul i64 %1, %4
   %6 = getelementptr nusw i8, ptr %0, i64 %5
   ret ptr %6
 }
@@ -60,7 +60,7 @@ define ptr @func0000000000000006(ptr %0, i64 %1, float %2) #0 {
 entry:
   %3 = fptosi float %2 to i32
   %4 = sext i32 %3 to i64
-  %5 = mul nsw i64 %4, %1
+  %5 = mul nsw i64 %1, %4
   %6 = getelementptr nusw float, ptr %0, i64 %5
   ret ptr %6
 }

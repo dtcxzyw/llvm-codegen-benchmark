@@ -2,10 +2,10 @@
 ; 1 occurrences:
 ; folly/optimized/HHWheelTimer.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
-  %4 = icmp ugt i64 %3, 4294967295
+  %4 = icmp samesign ugt i64 %3, 4294967295
   %5 = select i1 %4, i64 %0, i64 %1
   ret i64 %5
 }
@@ -13,7 +13,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/xprepare.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func000000000000002a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = icmp sgt i64 %3, 100
@@ -21,15 +21,14 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
-; cmake/optimized/stream_encoder_mt.c.ll
+; 2 occurrences:
 ; linux/optimized/bts.ll
 ; linux/optimized/timer.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = icmp ugt i64 %3, 24
+  %4 = icmp samesign ugt i64 %3, 24
   %5 = select i1 %4, i64 %0, i64 %1
   ret i64 %5
 }
@@ -53,6 +52,17 @@ define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp ult i64 %3, 32
+  %5 = select i1 %4, i64 %0, i64 %1
+  ret i64 %5
+}
+
+; 1 occurrences:
+; cmake/optimized/stream_encoder_mt.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = icmp ugt i64 %3, 16384
   %5 = select i1 %4, i64 %0, i64 %1
   ret i64 %5
 }

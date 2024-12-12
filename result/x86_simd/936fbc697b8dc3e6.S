@@ -52,7 +52,7 @@ func0000000000000004:                   # @func0000000000000004
 	.zero	1
 .LCPI1_3:
 	.byte	63                              # 0x3f
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
 	vpcmpltud	.LCPI1_1(%rip){1to8}, %ymm1, %k1
 	vpbroadcastb	.LCPI1_3(%rip), %xmm1   # xmm1 = [63,63,63,63,63,63,63,63,63,63,63,63,63,63,63,63]

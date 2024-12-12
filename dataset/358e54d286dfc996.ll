@@ -1,5 +1,5 @@
 
-; 154 occurrences:
+; 152 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcDsd.c.ll
@@ -83,7 +83,6 @@
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
@@ -149,7 +148,6 @@
 ; tinyrenderer/optimized/model.cpp.ll
 ; wireshark/optimized/color_utils.cpp.ll
 ; wireshark/optimized/follow_stream_dialog.cpp.ll
-; wireshark/optimized/ftype-time.c.ll
 ; wireshark/optimized/packet_diagram.cpp.ll
 ; wireshark/optimized/packet_list.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll

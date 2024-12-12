@@ -5,5 +5,5 @@
 func0000000000000001:                   # @func0000000000000001
 	vptestmq	.LCPI0_0(%rip){1to4}, %ymm2, %k1
 	vxorpd	.LCPI0_1(%rip){1to4}, %ymm1, %ymm1 {%k1}
-	vxorpd	%ymm0, %ymm1, %ymm0
+	vxorpd	%ymm1, %ymm0, %ymm0
 	retq

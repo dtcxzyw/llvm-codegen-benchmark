@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; mitsuba3/optimized/func.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000031(i8 %0, i32 %1) #0 {
+define i8 @func0000000000000061(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i32 %1 to i8
   %3 = icmp eq i8 %0, 32
@@ -42,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_func_ops.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000014(i8 %0, i32 %1) #0 {
+define i8 @func0000000000000024(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc nsw i32 %1 to i8
   %3 = icmp ult i8 %0, 8
@@ -53,7 +53,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_func_ops.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000024(i8 %0, i32 %1) #0 {
+define i8 @func0000000000000044(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i8
   %3 = icmp ult i8 %0, 8
@@ -65,7 +65,7 @@ entry:
 ; stb/optimized/stb_connected_components.c.ll
 ; yosys/optimized/rtlil.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000021(i8 %0, i32 %1) #0 {
+define i8 @func0000000000000041(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i8
   %3 = icmp eq i8 %0, 0

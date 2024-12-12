@@ -7,7 +7,7 @@
 define i32 @func000000000000000c(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp slt i64 %1, 0
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -177,14 +177,12 @@ entry:
 define i32 @func0000000000000002(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 10
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
 
-; 7 occurrences:
-; abc/optimized/abcFx.c.ll
-; abc/optimized/epd.c.ll
+; 5 occurrences:
 ; hyperscan/optimized/ng_equivalence.cpp.ll
 ; llvm/optimized/ASTWriterStmt.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
@@ -199,7 +197,7 @@ entry:
   ret i32 %4
 }
 
-; 156 occurrences:
+; 155 occurrences:
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/epd.c.ll
@@ -295,7 +293,6 @@ entry:
 ; wireshark/optimized/manuf_table_model.cpp.ll
 ; wireshark/optimized/module_preferences_scroll_area.cpp.ll
 ; wireshark/optimized/multicast_statistics_dialog.cpp.ll
-; wireshark/optimized/packet-lbm.c.ll
 ; wireshark/optimized/packet_comment_dialog.cpp.ll
 ; wireshark/optimized/packet_diagram.cpp.ll
 ; wireshark/optimized/packet_dialog.cpp.ll
@@ -360,7 +357,7 @@ entry:
 define i32 @func0000000000000018(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -376,8 +373,7 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
-; cpython/optimized/_pickle.ll
+; 4 occurrences:
 ; linux/optimized/journal.ll
 ; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
 ; php/optimized/dow.ll
@@ -386,7 +382,18 @@ entry:
 define i32 @func0000000000000008(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %1, 60
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
+  %4 = zext i1 %3 to i32
+  ret i32 %4
+}
+
+; 1 occurrences:
+; cpython/optimized/_pickle.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000028(i1 %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ult i64 %1, 3
+  %3 = and i1 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }

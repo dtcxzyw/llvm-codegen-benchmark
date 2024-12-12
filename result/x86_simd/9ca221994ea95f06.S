@@ -1,6 +1,6 @@
 func0000000000000004:                   # @func0000000000000004
 	vpmovsxdq	%xmm2, %ymm2
-	vpcmpeqq	%ymm1, %ymm2, %k0
+	vpcmpeqq	%ymm2, %ymm1, %k0
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	korw	%k0, %k1, %k0

@@ -32,6 +32,19 @@ entry:
   ret i32 %6
 }
 
+; 2 occurrences:
+; boost/optimized/src.ll
+; redis/optimized/lua_cjson.ll
+; Function Attrs: nounwind
+define i32 @func000000000000007f(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %1, %2
+  %4 = shl nuw nsw i32 %3, 12
+  %5 = shl nuw nsw i32 %0, 8
+  %6 = add nuw nsw i32 %5, %4
+  ret i32 %6
+}
+
 ; 1 occurrences:
 ; llvm/optimized/MCWin64EH.cpp.ll
 ; Function Attrs: nounwind
@@ -78,18 +91,6 @@ entry:
   %4 = shl nsw i32 %3, 8
   %5 = shl nsw i32 %0, 4
   %6 = add nsw i32 %5, %4
-  ret i32 %6
-}
-
-; 1 occurrences:
-; redis/optimized/lua_cjson.ll
-; Function Attrs: nounwind
-define i32 @func000000000000007f(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %1, %2
-  %4 = shl nuw nsw i32 %3, 12
-  %5 = shl nuw nsw i32 %0, 8
-  %6 = add nuw nsw i32 %5, %4
   ret i32 %6
 }
 

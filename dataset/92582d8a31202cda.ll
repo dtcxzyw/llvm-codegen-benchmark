@@ -1,10 +1,9 @@
 
-; 3 occurrences:
-; nuttx/optimized/pthread_attr_setstack.c.ll
+; 2 occurrences:
 ; rocksdb/optimized/xxhash.cc.ll
 ; wireshark/optimized/dot11decrypt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000450(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000001090(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp eq ptr %1, null
@@ -27,7 +26,7 @@ entry:
 ; openssl/optimized/libssl-lib-ssl_rsa.ll
 ; openssl/optimized/libssl-shlib-ssl_rsa.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000444(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000001084(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp eq ptr %1, null
@@ -42,7 +41,7 @@ entry:
 ; cpython/optimized/obmalloc.ll
 ; openusd/optimized/OpenEXRImage.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000442(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000001082(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp eq ptr %1, null
@@ -53,22 +52,9 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/utxface.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000448(i64 %0, ptr %1, ptr %2) #0 {
-entry:
-  %3 = icmp eq ptr %2, null
-  %4 = icmp eq ptr %1, null
-  %5 = or i1 %4, %3
-  %6 = icmp ult i64 %0, 16
-  %7 = or i1 %6, %5
-  ret i1 %7
-}
-
-; 1 occurrences:
 ; wolfssl/optimized/ssl.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000458(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000001098(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp eq ptr %1, null
@@ -81,7 +67,7 @@ entry:
 ; 1 occurrences:
 ; nuttx/optimized/wd_start.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000044c(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000108c(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp eq ptr %1, null

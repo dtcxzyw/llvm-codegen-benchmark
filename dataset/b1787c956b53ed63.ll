@@ -10,8 +10,14 @@ entry:
   ret i16 %2
 }
 
-; 10 occurrences:
+; 16 occurrences:
 ; image-rs/optimized/fyek6fuqg0ocunt.ll
+; lvgl/optimized/lv_canvas.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; openjdk/optimized/splashscreen_sys.ll
 ; recastnavigation/optimized/DetourDebugDraw.cpp.ll
@@ -36,7 +42,7 @@ entry:
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; libpng/optimized/pngread.c.ll
 ; lief/optimized/psa_crypto.c.ll
-; linux/optimized/intel_guc_slpc.ll
+; lvgl/optimized/lv_color.ll
 ; node/optimized/simdutf.ll
 ; openjdk/optimized/pngread.ll
 ; raylib/optimized/rtextures.c.ll

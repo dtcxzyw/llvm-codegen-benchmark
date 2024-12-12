@@ -13,8 +13,9 @@ entry:
   ret i8 %2
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; spike/optimized/clrs8.ll
+; spike/optimized/clz8.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000009(i8 %0) #0 {
 entry:

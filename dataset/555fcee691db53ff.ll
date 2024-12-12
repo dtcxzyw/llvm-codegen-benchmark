@@ -1,5 +1,5 @@
 
-; 83 occurrences:
+; 82 occurrences:
 ; abc/optimized/cnfPost.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; cpython/optimized/_codecs_jp.ll
@@ -25,7 +25,6 @@
 ; glslang/optimized/Initialize.cpp.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; linux/optimized/hda_auto_parser.ll
-; linux/optimized/intel_display_device.ll
 ; linux/optimized/interrupt.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/slub.ll

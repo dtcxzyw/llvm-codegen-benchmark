@@ -16,15 +16,13 @@ entry:
   ret i32 %5
 }
 
-; 8 occurrences:
+; 6 occurrences:
 ; abc/optimized/gzlib.c.ll
 ; cmake/optimized/gzlib.c.ll
 ; cmake/optimized/lzma_decoder.c.ll
-; libquic/optimized/gzlib.c.ll
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; wireshark/optimized/file_wrappers.c.ll
-; zlib/optimized/gzlib.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i1 %1, i64 %2) #0 {
 entry:

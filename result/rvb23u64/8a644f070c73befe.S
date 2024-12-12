@@ -39,11 +39,6 @@ func0000000000000011:                   # @func0000000000000011
 	li	a1, 64
 	subw	a0, a1, a0
 	ret
-func000000000000001f:                   # @func000000000000001f
-	add	a0, a0, a1
-	li	a1, 96
-	subw	a0, a1, a0
-	ret
 func0000000000000002:                   # @func0000000000000002
 	add	a0, a0, a1
 	negw	a0, a0
@@ -52,6 +47,11 @@ func0000000000000002:                   # @func0000000000000002
 func000000000000001b:                   # @func000000000000001b
 	add	a0, a0, a1
 	li	a1, 14
+	subw	a0, a1, a0
+	ret
+func000000000000001f:                   # @func000000000000001f
+	add	a0, a0, a1
+	lui	a1, 2
 	subw	a0, a1, a0
 	ret
 func0000000000000009:                   # @func0000000000000009

@@ -1,11 +1,12 @@
 
-; 1 occurrences:
+; 2 occurrences:
 ; abc/optimized/mpmMap.c.ll
+; openjdk/optimized/classFileParser.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003d(i32 %0) #0 {
 entry:
-  %1 = shl nuw nsw i32 %0, 2
-  %2 = add nuw nsw i32 %1, 12
+  %1 = shl nuw nsw i32 %0, 1
+  %2 = add nuw nsw i32 %1, 15
   %3 = lshr i32 %2, 3
   %4 = zext nneg i32 %3 to i64
   ret i64 %4

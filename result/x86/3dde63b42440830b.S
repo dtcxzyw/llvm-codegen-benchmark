@@ -1,22 +1,22 @@
-func0000000000000094:                   # @func0000000000000094
+func0000000000000114:                   # @func0000000000000114
 	shrq	$3, %rsi
 	testl	%esi, %esi
 	setg	%al
 	orb	%dil, %al
 	retq
-func0000000000000098:                   # @func0000000000000098
+func0000000000000118:                   # @func0000000000000118
 	shrq	$2, %rsi
 	cmpl	$2, %esi
 	setne	%al
 	orb	%dil, %al
 	retq
-func000000000000008c:                   # @func000000000000008c
+func000000000000010c:                   # @func000000000000010c
 	shrq	$3, %rsi
 	cmpl	$5, %esi
 	setl	%al
 	orb	%dil, %al
 	retq
-func0000000000000082:                   # @func0000000000000082
+func0000000000000102:                   # @func0000000000000102
 	shrq	$3, %rsi
 	testl	%esi, %esi
 	sete	%al

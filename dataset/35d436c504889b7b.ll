@@ -1,5 +1,5 @@
 
-; 66 occurrences:
+; 64 occurrences:
 ; bullet3/optimized/btDeformableBodySolver.ll
 ; bullet3/optimized/btDeformableMultiBodyDynamicsWorld.ll
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
@@ -47,8 +47,6 @@
 ; gromacs/optimized/restcbt.cpp.ll
 ; gromacs/optimized/setup.cpp.ll
 ; gromacs/optimized/sim_util.cpp.ll
-; gromacs/optimized/slatrd.cpp.ll
-; gromacs/optimized/ssytd2.cpp.ll
 ; gromacs/optimized/update.cpp.ll
 ; gromacs/optimized/velocityscalingtemperaturecoupling.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll

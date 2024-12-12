@@ -28,12 +28,6 @@ func0000000000000000:                   # @func0000000000000000
 	leal	-1(%rdx,%rdi), %eax
 	cltq
 	retq
-func0000000000000040:                   # @func0000000000000040
-	incl	%edx
-	imull	%esi, %edx
-	leal	1(%rdx,%rdi), %eax
-	cltq
-	retq
 func0000000000000055:                   # @func0000000000000055
 	addl	$-2, %edx
 	imull	%esi, %edx

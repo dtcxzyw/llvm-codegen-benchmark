@@ -4,12 +4,12 @@ func0000000000000001:                   # @func0000000000000001
 	sub	a0, a1, a2
 .LBB0_2:                                # %entry
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	bnez	a0, .LBB1_2
 	sub	a0, a1, a2
 .LBB1_2:                                # %entry
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	bgtz	a0, .LBB2_2
 	sub	a0, a1, a2
 .LBB2_2:                                # %entry

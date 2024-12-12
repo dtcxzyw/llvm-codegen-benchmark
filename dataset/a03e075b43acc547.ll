@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; arrow/optimized/basic_decimal.cc.ll
 ; c3c/optimized/bigint.c.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
@@ -15,19 +15,19 @@
 ; portaudio/optimized/pa_linux_alsa.c.ll
 ; pyo3-rs/optimized/3d4odyxrz46ne8x3.ll
 ; ruby/optimized/vm.ll
-; taskflow/optimized/exclusive_scan.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
   %3 = sext i1 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
-; 98 occurrences:
+; 101 occurrences:
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
 ; annoy/optimized/annoymodule.ll
+; boost/optimized/url_base.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/EDFThreadPoolExecutor.cpp.ll
 ; folly/optimized/MuxIOThreadPoolExecutor.cpp.ll
@@ -56,8 +56,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -124,12 +122,16 @@ entry:
 ; spike/optimized/s_mulAddF64.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; velox/optimized/BitUtil.cpp.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000030(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = sext i1 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -148,7 +150,7 @@ define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 1
   %3 = sext i1 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -159,7 +161,7 @@ define i64 @func0000000000000029(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i64 %1, -1
   %3 = sext i1 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -177,7 +179,7 @@ define i64 @func0000000000000031(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = sext i1 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -188,7 +190,7 @@ define i64 @func0000000000000019(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp slt i64 %1, 2
   %3 = sext i1 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -199,54 +201,65 @@ define i64 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp slt i64 %1, 3
   %3 = sext i1 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
+  ret i64 %4
+}
+
+; 4 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; lightgbm/optimized/parser.cpp.ll
+; lightgbm/optimized/tree.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000061(i64 %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i64 %1, 18014398509481983
+  %3 = sext i1 %2 to i64
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
 ; 1 occurrences:
-; php/optimized/phar.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000020(i64 %0, i64 %1) #0 {
-entry:
-  %2 = icmp ugt i64 %1, 1
-  %3 = sext i1 %2 to i64
-  %4 = add i64 %3, %0
-  ret i64 %4
-}
-
-; 2 occurrences:
-; lightgbm/optimized/parser.cpp.ll
-; lightgbm/optimized/tree.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
-entry:
-  %2 = icmp ugt i64 %1, 18014398509481983
-  %3 = sext i1 %2 to i64
-  %4 = add nsw i64 %3, %0
-  ret i64 %4
-}
-
-; 2 occurrences:
-; linux/optimized/timeconv.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %1, 4294967296
   %3 = sext i1 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
-; 2 occurrences:
-; eastl/optimized/Int128_t.cpp.ll
+; 1 occurrences:
 ; llvm/optimized/FastISel.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000050(i64 %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ult i64 %1, 2
+  %3 = sext i1 %2 to i64
+  %4 = add i64 %0, %3
+  ret i64 %4
+}
+
+; 1 occurrences:
+; linux/optimized/timeconv.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000051(i64 %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ult i64 %1, -86400
+  %3 = sext i1 %2 to i64
+  %4 = add nsw i64 %0, %3
+  ret i64 %4
+}
+
+; 1 occurrences:
+; eastl/optimized/Int128_t.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ult i64 %1, 2
+  %2 = icmp ult i64 %1, 10
   %3 = sext i1 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 

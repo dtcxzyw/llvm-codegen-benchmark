@@ -1,4 +1,4 @@
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	testb	$1, %sil
 	movl	$8, %eax
 	movl	$2, %ecx
@@ -15,7 +15,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	%rsi, %rdi
 	setb	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	andl	$1, %esi
 	leaq	4(%rsi,%rsi), %rax
 	incq	%rdi

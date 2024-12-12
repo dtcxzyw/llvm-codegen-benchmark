@@ -1,5 +1,6 @@
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/dump_ssse3.ll
 ; cmake/optimized/huf_compress.c.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; libdeflate/optimized/crc32.c.ll

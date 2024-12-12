@@ -10,7 +10,7 @@
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/ts_func.cpp.ll
 ; opencv/optimized/umatrix.cpp.ll
-; qemu/optimized/hw_net_can_ctucan_core.c.ll
+; velox/optimized/PrestoSerializer.cpp.ll
 ; wireshark/optimized/packet-metamako.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i1 %0, i32 %1, i32 %2) #0 {
@@ -22,8 +22,9 @@ entry:
   ret i32 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; openusd/optimized/ilmbase_half.cpp.ll
+; z3/optimized/mpf.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:

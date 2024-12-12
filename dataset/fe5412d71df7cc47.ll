@@ -1,5 +1,5 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
 ; llvm/optimized/ParseDecl.cpp.ll
 ; oiio/optimized/imagebuf.cpp.ll
@@ -8,6 +8,7 @@
 ; rust-analyzer-rs/optimized/2zm9eul0ycl9zsz3.ll
 ; rust-analyzer-rs/optimized/547gv31sq3clwal6.ll
 ; vcpkg/optimized/paragraphs.cpp.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, ptr %1, i1 %2) #0 {
 entry:
@@ -18,9 +19,8 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; openjdk/optimized/packageEntry.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, ptr %1, i1 %2) #0 {
 entry:

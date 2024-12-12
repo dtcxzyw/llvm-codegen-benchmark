@@ -1,5 +1,5 @@
-func0000000000000021:                   # @func0000000000000021
-	addb	$-3, %sil
-	cmpb	%dil, %sil
+func0000000000000041:                   # @func0000000000000041
+	incb	%sil
+	cmpb	%sil, %dil
 	sete	%al
 	retq

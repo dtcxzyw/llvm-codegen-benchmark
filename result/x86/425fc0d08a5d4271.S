@@ -1,4 +1,4 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	testb	$24, %dil
 	sete	%al
 	retq
@@ -11,7 +11,7 @@ func000000000000000c:                   # @func000000000000000c
 	testl	$1792, %edi                     # imm = 0x700
 	setne	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	andl	$1792, %edi                     # imm = 0x700
 	cmpl	$1025, %edi                     # imm = 0x401
 	setae	%al

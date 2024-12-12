@@ -1,5 +1,5 @@
 
-; 44 occurrences:
+; 42 occurrences:
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/b3CpuRigidBodyPipeline.ll
 ; bullet3/optimized/b3GpuNarrowPhase.ll
@@ -11,11 +11,9 @@
 ; darktable/optimized/introspection_colorbalance.c.ll
 ; darktable/optimized/introspection_colorize.c.ll
 ; darktable/optimized/introspection_colormapping.c.ll
-; darktable/optimized/introspection_exposure.c.ll
 ; darktable/optimized/introspection_filmic.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; darktable/optimized/introspection_levels.c.ll
-; darktable/optimized/introspection_primaries.c.ll
 ; darktable/optimized/introspection_rgblevels.c.ll
 ; darktable/optimized/introspection_soften.c.ll
 ; darktable/optimized/introspection_splittoning.c.ll

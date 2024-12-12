@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openjdk/optimized/memnode.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000154(i64 %0, i32 %1) #0 {
+define i1 @func00000000000002a4(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = sub nsw i64 %2, %0
@@ -18,11 +18,11 @@ entry:
 ; spike/optimized/elfloader.ll
 ; wasmedge/optimized/vinode.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001a1(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = add nsw i64 %2, -1
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
@@ -34,18 +34,18 @@ entry:
 ; oiio/optimized/strutil.cpp.ll
 ; yosys/optimized/ast.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001d1(i64 %0, i32 %1) #0 {
+define i1 @func00000000000003a1(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = add nsw i64 %2, -1
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; postgres/optimized/varbit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = sub nsw i64 %2, %0
@@ -68,7 +68,7 @@ entry:
 ; 1 occurrences:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a4(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = sub nsw i64 %2, %0

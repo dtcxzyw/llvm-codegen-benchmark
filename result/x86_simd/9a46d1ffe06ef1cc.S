@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	1                               # 0x1
-func00000000000000b8:                   # @func00000000000000b8
+func0000000000000178:                   # @func0000000000000178
 	vpcmpeqb	%xmm2, %xmm1, %k0
 	vpmovm2d	%k0, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
@@ -10,7 +10,7 @@ func00000000000000b8:                   # @func00000000000000b8
 	retq
 .LCPI1_0:
 	.long	1                               # 0x1
-func00000000000000b1:                   # @func00000000000000b1
+func0000000000000161:                   # @func0000000000000161
 	vpcmpeqb	%xmm2, %xmm1, %k0
 	vpmovm2d	%k0, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
@@ -20,7 +20,7 @@ func00000000000000b1:                   # @func00000000000000b1
 	retq
 .LCPI2_0:
 	.long	1                               # 0x1
-func0000000000000631:                   # @func0000000000000631
+func0000000000000c61:                   # @func0000000000000c61
 	vpcmpneqb	%xmm2, %xmm1, %k0
 	vpmovm2d	%k0, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
@@ -30,7 +30,7 @@ func0000000000000631:                   # @func0000000000000631
 	retq
 .LCPI3_0:
 	.long	4                               # 0x4
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	vpcmpeqb	%xmm2, %xmm1, %k0
 	vpmovm2d	%k0, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
@@ -40,7 +40,7 @@ func0000000000000081:                   # @func0000000000000081
 	retq
 .LCPI4_0:
 	.long	7                               # 0x7
-func0000000000000088:                   # @func0000000000000088
+func0000000000000118:                   # @func0000000000000118
 	vpcmpeqb	%xmm2, %xmm1, %k0
 	vpmovm2d	%k0, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
@@ -50,7 +50,7 @@ func0000000000000088:                   # @func0000000000000088
 	retq
 .LCPI5_0:
 	.long	4                               # 0x4
-func0000000000000611:                   # @func0000000000000611
+func0000000000000c21:                   # @func0000000000000c21
 	vpcmpneqb	%xmm2, %xmm1, %k0
 	vpmovm2d	%k0, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0

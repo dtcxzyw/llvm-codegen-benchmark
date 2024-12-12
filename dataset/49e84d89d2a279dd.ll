@@ -32,8 +32,7 @@ entry:
   ret i32 %6
 }
 
-; 7 occurrences:
-; linux/optimized/intel_audio.ll
+; 6 occurrences:
 ; openjdk/optimized/jvmtiClassFileReconstituter.ll
 ; postgres/optimized/dt_common.ll
 ; postgres/optimized/tsvector.ll

@@ -1,5 +1,5 @@
 
-; 96 occurrences:
+; 98 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abseil-cpp/optimized/city.cc.ll
 ; abseil-cpp/optimized/duration_test.cc.ll
@@ -12,6 +12,7 @@
 ; abseil-cpp/optimized/seed_sequences_test.cc.ll
 ; arrow/optimized/key_hash.cc.ll
 ; arrow/optimized/key_hash_avx2.cc.ll
+; boost/optimized/partition.ll
 ; bullet3/optimized/btCollisionWorld.ll
 ; bullet3/optimized/btCollisionWorldImporter.ll
 ; bullet3/optimized/btDeformableContactProjection.ll
@@ -37,6 +38,7 @@
 ; luau/optimized/BytecodeBuilder.cpp.ll
 ; luau/optimized/OptimizeConstProp.cpp.ll
 ; luau/optimized/ltable.cpp.ll
+; lvgl/optimized/lv_lru.ll
 ; lz4/optimized/xxhash.c.ll
 ; memcached/optimized/memcached-murmur3_hash.ll
 ; memcached/optimized/memcached_debug-murmur3_hash.ll
@@ -118,7 +120,7 @@ entry:
   %2 = lshr i32 %1, 22
   %3 = xor i32 %2, %1
   %4 = mul nsw i32 %3, 17
-  %5 = xor i32 %4, %0
+  %5 = xor i32 %0, %4
   ret i32 %5
 }
 

@@ -1,10 +1,9 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; opencv/optimized/grfmt_pxm.cpp.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; qemu/optimized/hw_display_virtio-gpu.c.ll
 ; qemu/optimized/ui_dbus-listener.c.ll
-; qemu/optimized/ui_vnc.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
@@ -14,7 +13,7 @@ entry:
   ret i64 %4
 }
 
-; 164 occurrences:
+; 163 occurrences:
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/bmcInse.c.ll
 ; abc/optimized/cecSim.c.ll
@@ -94,7 +93,6 @@ entry:
 ; linux/optimized/intel-gtt.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/io_tri.cpp.ll
 ; msdfgen/optimized/MSDFErrorCorrection.cpp.ll
@@ -203,7 +201,7 @@ entry:
   ret i64 %4
 }
 
-; 53 occurrences:
+; 54 occurrences:
 ; abc/optimized/bmcInse.c.ll
 ; abc/optimized/cecSim.c.ll
 ; abc/optimized/giaPat2.c.ll
@@ -224,6 +222,7 @@ entry:
 ; libwebp/optimized/get_disto.c.ll
 ; libwebp/optimized/iterator_enc.c.ll
 ; libwebp/optimized/picture_rescale_enc.c.ll
+; lvgl/optimized/lv_draw_sw_img.ll
 ; meshlab/optimized/TexturePainter.cpp.ll
 ; meshlab/optimized/VisibilityCheck.cpp.ll
 ; meshlab/optimized/decorate_raster_proj.cpp.ll

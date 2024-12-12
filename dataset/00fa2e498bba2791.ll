@@ -1,5 +1,5 @@
 
-; 1413 occurrences:
+; 1407 occurrences:
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/dauNpn.c.ll
 ; abc/optimized/extraUtilCube.c.ll
@@ -32,6 +32,10 @@
 ; assimp/optimized/RemoveRedundantMaterials.cpp.ll
 ; assimp/optimized/SplitByBoneCountProcess.cpp.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/options_description.ll
+; boost/optimized/topology.ll
+; boost/optimized/xml_grammar.ll
 ; c3c/optimized/target.c.ll
 ; casadi/optimized/casadi_misc.cpp.ll
 ; casadi/optimized/dae_builder_internal.cpp.ll
@@ -59,7 +63,6 @@
 ; csmith/optimized/FunctionInvocationUser.cpp.ll
 ; cvc5/optimized/ceg_instantiator.cpp.ll
 ; cvc5/optimized/equality_engine.cpp.ll
-; cvc5/optimized/equality_engine_iterator.cpp.ll
 ; cvc5/optimized/index_trie.cpp.ll
 ; cvc5/optimized/match_trie.cpp.ll
 ; cvc5/optimized/pattern_term_selector.cpp.ll
@@ -259,7 +262,6 @@
 ; llvm/optimized/PredicateExpander.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/RISCVAsmPrinter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVRegisterInfo.cpp.ll
 ; llvm/optimized/RegUsageInfoCollector.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
@@ -429,13 +431,10 @@
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -856,9 +855,6 @@
 ; php/optimized/zend_jit.ll
 ; php/optimized/zend_ssa.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/singleoperation.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; protobuf/optimized/context.cc.ll
@@ -926,7 +922,6 @@
 ; qemu/optimized/plugins_core.c.ll
 ; qemu/optimized/target_riscv_cpu.c.ll
 ; qemu/optimized/target_riscv_pmu.c.ll
-; qemu/optimized/ui_kbd-state.c.ll
 ; qemu/optimized/ui_vnc.c.ll
 ; qemu/optimized/util_qemu-thread-posix.c.ll
 ; quantlib/optimized/abcdatmvolcurve.ll
@@ -1324,7 +1319,6 @@
 ; velox/optimized/BooleanMix.cpp.ll
 ; velox/optimized/Bridge.cpp.ll
 ; velox/optimized/CastExpr.cpp.ll
-; velox/optimized/CheckNestedNulls.cpp.ll
 ; velox/optimized/CompactRow.cpp.ll
 ; velox/optimized/ComplexVector.cpp.ll
 ; velox/optimized/ConjunctExpr.cpp.ll
@@ -1414,7 +1408,7 @@
 ; yosys/optimized/verilog_backend.ll
 ; zxing/optimized/PDFWriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 63
   %3 = shl nuw i64 1, %2
@@ -1423,7 +1417,7 @@ entry:
   ret i1 %5
 }
 
-; 100 occurrences:
+; 99 occurrences:
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; folly/optimized/HHWheelTimer.cpp.ll
 ; hermes/optimized/HadesGC.cpp.ll
@@ -1489,7 +1483,6 @@ entry:
 ; linux/optimized/iface.ll
 ; linux/optimized/iova.ll
 ; linux/optimized/ip_tunnel.ll
-; linux/optimized/loopback.ll
 ; linux/optimized/percpu.ll
 ; linux/optimized/perfmon.ll
 ; linux/optimized/processor_core.ll
@@ -1525,7 +1518,7 @@ entry:
 ; redis/optimized/psset.ll
 ; redis/optimized/psset.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 63
   %3 = lshr i64 %0, %2
@@ -1533,7 +1526,7 @@ entry:
   ret i1 %4
 }
 
-; 47 occurrences:
+; 48 occurrences:
 ; clamav/optimized/hashtab.c.ll
 ; cpython/optimized/obmalloc.ll
 ; delta-rs/optimized/11w0at10aiwuq3yr.ll
@@ -1581,8 +1574,9 @@ entry:
 ; verilator/optimized/V3Number.cpp.ll
 ; wasmtime-rs/optimized/4z02b278nscq7j1a.ll
 ; wasmtime-rs/optimized/v5prf101dn49s3v.ll
+; zed-rs/optimized/driumlpfhwzx6147be2mcsi4u.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 7
   %3 = shl nuw nsw i64 1, %2
@@ -1591,12 +1585,14 @@ entry:
   ret i1 %5
 }
 
-; 271 occurrences:
+; 269 occurrences:
 ; abc/optimized/giaDecs.c.ll
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/builder_dict.cc.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/vector_hash.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/topology.ll
 ; casadi/optimized/function.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; casadi/optimized/mapsum.cpp.ll
@@ -1729,7 +1725,6 @@ entry:
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -1801,7 +1796,6 @@ entry:
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; openvdb/optimized/points.cc.ll
 ; php/optimized/compact_vars.ll
-; proj/optimized/io.cpp.ll
 ; proxygen/optimized/HTTPHeaders.cpp.ll
 ; proxygen/optimized/QPACKCodec.cpp.ll
 ; pybind11/optimized/pybind11_cross_module_tests.cpp.ll
@@ -1809,7 +1803,6 @@ entry:
 ; qemu/optimized/chardev_char.c.ll
 ; qemu/optimized/migration_ram.c.ll
 ; qemu/optimized/system_physmem.c.ll
-; qemu/optimized/ui_kbd-state.c.ll
 ; qemu/optimized/util_hbitmap.c.ll
 ; quantlib/optimized/gsrprocesscore.ll
 ; quantlib/optimized/schedule.ll
@@ -1856,7 +1849,6 @@ entry:
 ; yosys/optimized/driver.ll
 ; yosys/optimized/eval.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/mem.ll
 ; yosys/optimized/memory_libmap.ll
 ; yosys/optimized/opt_muxtree.ll
@@ -1864,7 +1856,7 @@ entry:
 ; yosys/optimized/sat.ll
 ; yosys/optimized/subcircuit.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000004c(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 63
   %3 = shl nuw i64 1, %2
@@ -1877,7 +1869,7 @@ entry:
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
 ; qemu/optimized/util_bitmap.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 63
   %3 = lshr i64 %0, %2
@@ -2095,11 +2087,11 @@ entry:
 ; openusd/optimized/reporterDataSourceCollector.cpp.ll
 ; spike/optimized/csrs.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000006c(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 62
   %3 = shl nuw nsw i64 1, %2
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   %5 = icmp ne i64 %4, 0
   ret i1 %5
 }

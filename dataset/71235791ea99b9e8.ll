@@ -4,7 +4,7 @@
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; qemu/optimized/block_vvfat.c.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000028(i32 %0) #0 {
+define i16 @func0000000000000048(i32 %0) #0 {
 entry:
   %1 = trunc nuw i32 %0 to i16
   %2 = icmp ugt i32 %0, 65535
@@ -17,7 +17,7 @@ entry:
 ; openjdk/optimized/mlib_ImageConv_16nw.ll
 ; openjdk/optimized/mlib_c_ImageAffine_BC_S16.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000016(i32 %0) #0 {
+define i16 @func0000000000000026(i32 %0) #0 {
 entry:
   %1 = trunc nsw i32 %0 to i16
   %2 = icmp slt i32 %0, -32767
@@ -30,7 +30,7 @@ entry:
 ; openjdk/optimized/mlib_ImageConv_u16nw.ll
 ; openjdk/optimized/mlib_c_ImageAffine_BC_U16.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000026(i32 %0) #0 {
+define i16 @func0000000000000046(i32 %0) #0 {
 entry:
   %1 = trunc nuw i32 %0 to i16
   %2 = icmp slt i32 %0, 1
@@ -60,7 +60,7 @@ entry:
 ; luajit/optimized/lj_record_dyn.ll
 ; wireshark/optimized/packet-fp_hint.c.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000031(i32 %0) #0 {
+define i16 @func0000000000000061(i32 %0) #0 {
 entry:
   %1 = trunc nuw nsw i32 %0 to i16
   %2 = icmp eq i32 %0, 0
@@ -68,9 +68,8 @@ entry:
   ret i16 %3
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; jq/optimized/decNumber.ll
-; linux/optimized/output_core.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000000a(i32 %0) #0 {
 entry:
@@ -95,7 +94,7 @@ entry:
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/xmltok.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000021(i32 %0) #0 {
+define i16 @func0000000000000041(i32 %0) #0 {
 entry:
   %1 = trunc nuw i32 %0 to i16
   %2 = icmp eq i32 %0, 0
@@ -106,7 +105,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000018(i32 %0) #0 {
+define i16 @func0000000000000028(i32 %0) #0 {
 entry:
   %1 = trunc nsw i32 %0 to i16
   %2 = icmp ugt i32 %0, 257

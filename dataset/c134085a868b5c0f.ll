@@ -1,16 +1,14 @@
 
-; 4 occurrences:
-; hyperscan/optimized/teddy.c.ll
-; hyperscan/optimized/teddy_avx2.c.ll
+; 2 occurrences:
 ; openjdk/optimized/bytecodes.ll
 ; openjdk/optimized/check_code.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000064(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 3
   %3 = and i64 %2, -4
   %4 = inttoptr i64 %3 to ptr
-  %5 = getelementptr nusw i8, ptr %4, i64 4
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 4
   %6 = icmp ult ptr %5, %0
   ret i1 %6
 }
@@ -58,12 +56,12 @@ entry:
 ; llvm/optimized/X86TargetMachine.cpp.ll
 ; llvm/optimized/YAMLTraits.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000068(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 3
   %3 = and i64 %2, -4
   %4 = inttoptr i64 %3 to ptr
-  %5 = getelementptr nusw i8, ptr %4, i64 4
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 4
   %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
@@ -78,6 +76,20 @@ entry:
   %4 = inttoptr i64 %3 to ptr
   %5 = getelementptr i8, ptr %4, i64 2
   %6 = icmp ugt ptr %5, %0
+  ret i1 %6
+}
+
+; 2 occurrences:
+; hyperscan/optimized/teddy.c.ll
+; hyperscan/optimized/teddy_avx2.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000044(ptr %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %1, 15
+  %3 = and i64 %2, -16
+  %4 = inttoptr i64 %3 to ptr
+  %5 = getelementptr nusw i8, ptr %4, i64 -16
+  %6 = icmp ult ptr %5, %0
   ret i1 %6
 }
 

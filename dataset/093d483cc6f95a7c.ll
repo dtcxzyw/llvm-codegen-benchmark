@@ -1,5 +1,18 @@
 
-; 67 occurrences:
+; 2 occurrences:
+; openvdb/optimized/LevelSetMeasure.cc.ll
+; php/optimized/zend_observer.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000561(ptr %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw double, ptr %2, i64 %1
+  %4 = getelementptr nusw double, ptr %3, i64 %1
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 8
+  %6 = icmp eq ptr %5, %4
+  ret i1 %6
+}
+
+; 65 occurrences:
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTImporterLookupTable.cpp.ll
 ; llvm/optimized/ASTMatchFinder.cpp.ll
@@ -65,14 +78,12 @@
 ; llvm/optimized/UncountedLocalVarsChecker.cpp.ll
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
-; openvdb/optimized/LevelSetMeasure.cc.ll
-; php/optimized/zend_observer.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002a1(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000007e1(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw double, ptr %2, i64 %1
-  %4 = getelementptr nusw double, ptr %3, i64 %1
-  %5 = getelementptr nusw i8, ptr %0, i64 8
+  %3 = getelementptr nusw nuw ptr, ptr %2, i64 %1
+  %4 = getelementptr nusw nuw ptr, ptr %3, i64 %1
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 8
   %6 = icmp eq ptr %5, %4
   ret i1 %6
 }
@@ -137,11 +148,11 @@ entry:
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002ac(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000007ec(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw ptr, ptr %2, i64 %1
-  %4 = getelementptr nusw ptr, ptr %3, i64 %1
-  %5 = getelementptr nusw i8, ptr %0, i64 8
+  %3 = getelementptr nusw nuw ptr, ptr %2, i64 %1
+  %4 = getelementptr nusw nuw ptr, ptr %3, i64 %1
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 8
   %6 = icmp ne ptr %5, %4
   ret i1 %6
 }
@@ -150,11 +161,11 @@ entry:
 ; cmake/optimized/huf_decompress.c.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002a4(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000007e4(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 %1
-  %4 = getelementptr nusw i8, ptr %3, i64 %1
-  %5 = getelementptr nusw i8, ptr %0, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 %1
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %1
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 1
   %6 = icmp ult ptr %5, %4
   ret i1 %6
 }

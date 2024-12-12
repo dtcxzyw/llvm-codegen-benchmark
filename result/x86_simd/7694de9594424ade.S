@@ -16,3 +16,11 @@ func000000000000000e:                   # @func000000000000000e
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpsllq	$31, %ymm0, %ymm0
 	retq
+.LCPI3_0:
+	.quad	-2                              # 0xfffffffffffffffe
+func0000000000000008:                   # @func0000000000000008
+	vpbroadcastq	.LCPI3_0(%rip), %ymm2   # ymm2 = [18446744073709551614,18446744073709551614,18446744073709551614,18446744073709551614]
+	vpand	%ymm2, %ymm0, %ymm0
+	vpaddq	%ymm0, %ymm1, %ymm0
+	vpand	%ymm2, %ymm0, %ymm0
+	retq

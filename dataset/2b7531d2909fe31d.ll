@@ -25,8 +25,9 @@ entry:
   ret i8 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; llvm/optimized/ScalarEvolution.cpp.ll
+; postgres/optimized/trigger.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000004(i8 %0, i16 %1) #0 {
 entry:

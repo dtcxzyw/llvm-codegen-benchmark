@@ -84,9 +84,8 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; bullet3/optimized/b3PgsJacobiSolver.ll
-; nuklear/optimized/unity.c.ll
 ; opencv/optimized/deblurring.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000a4(float %0, i32 %1) #0 {
@@ -97,14 +96,26 @@ entry:
   ret i1 %4
 }
 
+; 2 occurrences:
+; nuklear/optimized/unity.c.ll
+; raylib/optimized/rcore.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000c4(float %0, i32 %1) #0 {
+entry:
+  %2 = icmp ne i32 %1, 0
+  %3 = fcmp ogt float %0, 0.000000e+00
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
+}
+
 ; 3 occurrences:
 ; oiio/optimized/dpxoutput.cpp.ll
 ; oiio/optimized/exif.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(float %0, i32 %1) #0 {
+define i1 @func0000000000000144(float %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 100000
+  %2 = icmp samesign ult i32 %1, 100000
   %3 = fcmp ogt float %0, 0x3EE4F8B580000000
   %4 = select i1 %3, i1 %2, i1 false
   ret i1 %4
@@ -159,6 +170,17 @@ entry:
   ret i1 %4
 }
 
+; 1 occurrences:
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000016(float %0, i32 %1) #0 {
+entry:
+  %2 = icmp eq i32 %1, 5
+  %3 = fcmp one float %0, 0x7FF0000000000000
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
+}
+
 ; 3 occurrences:
 ; opencv/optimized/tvl1flow.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
@@ -179,17 +201,6 @@ define i1 @func00000000000000a6(float %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 0
   %3 = fcmp one float %0, 0x7FF0000000000000
-  %4 = select i1 %3, i1 %2, i1 false
-  ret i1 %4
-}
-
-; 1 occurrences:
-; raylib/optimized/rcore.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000c4(float %0, i32 %1) #0 {
-entry:
-  %2 = icmp ne i32 %1, 8
-  %3 = fcmp ogt float %0, 0x3FC99999A0000000
   %4 = select i1 %3, i1 %2, i1 false
   ret i1 %4
 }

@@ -1,17 +1,4 @@
 
-; 1 occurrences:
-; abseil-cpp/optimized/mutex.cc.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(i64 %0, i64 %1, i1 %2) #0 {
-entry:
-  %3 = select i1 %2, i64 0, i64 32
-  %4 = or i64 %3, %0
-  %5 = and i64 %1, 187
-  %6 = or i64 %4, %5
-  %7 = or i64 %6, 4
-  ret i64 %7
-}
-
 ; 6 occurrences:
 ; jemalloc/optimized/extent.ll
 ; jemalloc/optimized/extent.pic.ll
@@ -23,7 +10,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 1744830464, i64 1342177280
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = and i64 %1, -1100585369632
   %6 = or i64 %4, %5
   %7 = or disjoint i64 %6, 1099511627780

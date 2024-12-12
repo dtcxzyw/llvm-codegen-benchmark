@@ -19,7 +19,7 @@
 define i8 @func000000000000000f(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 1
-  %4 = add nuw nsw i8 %3, %1
+  %4 = add nuw nsw i8 %1, %3
   %5 = add nuw nsw i8 %4, %0
   ret i8 %5
 }

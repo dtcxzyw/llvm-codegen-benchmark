@@ -19,7 +19,7 @@ entry:
   ret i32 %3
 }
 
-; 23 occurrences:
+; 24 occurrences:
 ; abc/optimized/acbUtil.c.ll
 ; abc/optimized/acecTree.c.ll
 ; abc/optimized/cecSatG2.c.ll
@@ -32,6 +32,7 @@ entry:
 ; abc/optimized/giaSatLE.c.ll
 ; abc/optimized/giaShow.c.ll
 ; abc/optimized/giaSplit.c.ll
+; abc/optimized/mvcUtils.c.ll
 ; abc/optimized/sbdCore.c.ll
 ; abc/optimized/sbdPath.c.ll
 ; hyperscan/optimized/accelcompile.cpp.ll

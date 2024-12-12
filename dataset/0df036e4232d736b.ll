@@ -1,5 +1,5 @@
 
-; 45 occurrences:
+; 43 occurrences:
 ; abc/optimized/abcDress3.c.ll
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/giaMini.c.ll
@@ -13,12 +13,10 @@
 ; linux/optimized/base.ll
 ; linux/optimized/hrtimer.ll
 ; linux/optimized/msync.ll
-; linux/optimized/readdir.ll
 ; linux/optimized/scsi_proc.ll
 ; linux/optimized/scsi_sysfs.ll
 ; linux/optimized/seq_clientmgr.ll
 ; linux/optimized/thermal_sysfs.ll
-; linux/optimized/vfs_addr.ll
 ; linux/optimized/x_tables.ll
 ; llvm/optimized/WinException.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
@@ -54,7 +52,7 @@ entry:
   ret i64 %4
 }
 
-; 20 occurrences:
+; 19 occurrences:
 ; cmake/optimized/archive_write_add_filter_compress.c.ll
 ; cmake/optimized/mprintf.c.ll
 ; curl/optimized/libcurl_la-mprintf.ll
@@ -71,7 +69,6 @@ entry:
 ; openexr/optimized/ImfDwaCompressor.cpp.ll
 ; openexr/optimized/internal_dwa.c.ll
 ; openusd/optimized/openexr-c.c.ll
-; php/optimized/engine_combinedlcg.ll
 ; php/optimized/zend_jit.ll
 ; postgres/optimized/geo_ops.ll
 ; yosys/optimized/calc.ll
@@ -79,17 +76,6 @@ entry:
 define i64 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 0
-  %3 = select i1 %2, i32 %0, i32 %1
-  %4 = sext i32 %3 to i64
-  ret i64 %4
-}
-
-; 1 occurrences:
-; abc/optimized/aigPack.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000008(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ugt i32 %1, 32
   %3 = select i1 %2, i32 %0, i32 %1
   %4 = sext i32 %3 to i64
   ret i64 %4

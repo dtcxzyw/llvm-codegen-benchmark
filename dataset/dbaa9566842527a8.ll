@@ -15,10 +15,11 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; qemu/optimized/hw_sd_sdhci.c.ll
 ; spike/optimized/slli16.ll
 ; spike/optimized/slli8.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:

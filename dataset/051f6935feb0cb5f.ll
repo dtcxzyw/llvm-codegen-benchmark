@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 23 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd7.c.ll
@@ -11,7 +11,6 @@
 ; linux/optimized/intel_display.ll
 ; linux/optimized/skl_watermark.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86InterleavedAccess.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll

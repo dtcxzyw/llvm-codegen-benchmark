@@ -20,7 +20,7 @@ entry:
 ; hyperscan/optimized/som_stream.c.ll
 ; hyperscan/optimized/stream_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0) #0 {
+define i1 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = freeze i32 %0
   %2 = and i32 %1, 7

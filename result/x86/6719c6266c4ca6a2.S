@@ -1,234 +1,283 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	xorl	%esi, %edx
 	xorl	%esi, %edi
 	orl	%edx, %edi
 	sete	%al
 	retq
-func00000000000000a6:                   # @func00000000000000a6
+func0000000000000146:                   # @func0000000000000146
 	cmpl	%esi, %edx
 	setg	%cl
 	cmpl	%esi, %edi
 	setl	%al
 	andb	%cl, %al
 	retq
-func00000000000000b7:                   # @func00000000000000b7
+func0000000000000167:                   # @func0000000000000167
 	cmpl	%esi, %edx
 	setge	%cl
 	cmpl	%esi, %edi
 	setle	%al
 	andb	%cl, %al
 	retq
-func00000000000000a7:                   # @func00000000000000a7
+func0000000000000147:                   # @func0000000000000147
 	cmpl	%esi, %edx
 	setg	%cl
 	cmpl	%esi, %edi
 	setle	%al
 	andb	%cl, %al
 	retq
-func0000000000000085:                   # @func0000000000000085
+func0000000000000299:                   # @func0000000000000299
+	cmpl	%esi, %edx
+	setb	%cl
+	cmpl	%esi, %edi
+	setae	%al
+	andb	%cl, %al
+	retq
+func0000000000000105:                   # @func0000000000000105
 	cmpl	%esi, %edx
 	seta	%cl
 	cmpl	%esi, %edi
 	setbe	%al
 	andb	%cl, %al
 	retq
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000014a:                   # @func000000000000014a
 	cmpl	%esi, %edx
 	setg	%cl
 	cmpl	%esi, %edi
 	setg	%al
 	andb	%cl, %al
 	retq
-func0000000000000055:                   # @func0000000000000055
+func00000000000000a5:                   # @func00000000000000a5
 	cmpl	%esi, %edx
 	setbe	%cl
 	cmpl	%esi, %edi
 	setbe	%al
 	andb	%cl, %al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	cmpl	%esi, %edx
 	setb	%cl
 	cmpl	%esi, %edi
 	setb	%al
 	andb	%cl, %al
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	cmpl	%esi, %edx
 	setne	%cl
 	cmpl	%esi, %edi
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000066:                   # @func0000000000000066
+func00000000000000c6:                   # @func00000000000000c6
 	cmpl	%esi, %edx
 	setl	%cl
 	cmpl	%esi, %edi
 	setl	%al
 	andb	%cl, %al
 	retq
-func0000000000000054:                   # @func0000000000000054
+func00000000000002b4:                   # @func00000000000002b4
 	cmpl	%esi, %edx
 	setbe	%cl
 	cmpl	%esi, %edi
 	setb	%al
 	andb	%cl, %al
 	retq
-func00000000000000b4:                   # @func00000000000000b4
+func0000000000000164:                   # @func0000000000000164
 	cmpl	%esi, %edx
 	setge	%cl
 	cmpl	%esi, %edi
 	setb	%al
 	andb	%cl, %al
 	retq
-func000000000000006a:                   # @func000000000000006a
+func00000000000000ca:                   # @func00000000000000ca
 	cmpl	%esi, %edx
 	setl	%cl
 	cmpl	%esi, %edi
 	setg	%al
 	andb	%cl, %al
 	retq
-func0000000000000077:                   # @func0000000000000077
+func00000000000000a8:                   # @func00000000000000a8
+	cmpl	%esi, %edx
+	setbe	%cl
+	cmpl	%esi, %edi
+	seta	%al
+	andb	%cl, %al
+	retq
+func00000000000000cb:                   # @func00000000000000cb
+	cmpl	%esi, %edx
+	setl	%cl
+	cmpl	%esi, %edi
+	setge	%al
+	andb	%cl, %al
+	retq
+func000000000000002c:                   # @func000000000000002c
+	cmpl	%esi, %edx
+	sete	%cl
+	cmpl	%esi, %edi
+	setne	%al
+	andb	%cl, %al
+	retq
+func0000000000000024:                   # @func0000000000000024
+	cmpl	%esi, %edx
+	sete	%cl
+	cmpl	%esi, %edi
+	setb	%al
+	andb	%cl, %al
+	retq
+func0000000000000294:                   # @func0000000000000294
+	cmpl	%esi, %edx
+	setb	%cl
+	cmpl	%esi, %edi
+	setb	%al
+	andb	%cl, %al
+	retq
+func0000000000000085:                   # @func0000000000000085
+	cmpl	%esi, %edx
+	setb	%cl
+	cmpl	%esi, %edi
+	setbe	%al
+	andb	%cl, %al
+	retq
+func0000000000000184:                   # @func0000000000000184
+	cmpl	%esi, %edx
+	setne	%cl
+	cmpl	%esi, %edi
+	setb	%al
+	andb	%cl, %al
+	retq
+func0000000000000129:                   # @func0000000000000129
+	cmpl	%esi, %edx
+	setae	%cl
+	cmpl	%esi, %edi
+	setae	%al
+	andb	%cl, %al
+	retq
+func0000000000000284:                   # @func0000000000000284
+	cmpl	%esi, %edx
+	setb	%cl
+	cmpl	%esi, %edi
+	setb	%al
+	andb	%cl, %al
+	retq
+func00000000000000a4:                   # @func00000000000000a4
+	cmpl	%esi, %edx
+	setbe	%cl
+	cmpl	%esi, %edi
+	setb	%al
+	andb	%cl, %al
+	retq
+func00000000000000e6:                   # @func00000000000000e6
+	cmpl	%esi, %edx
+	setle	%cl
+	cmpl	%esi, %edi
+	setl	%al
+	andb	%cl, %al
+	retq
+func0000000000000141:                   # @func0000000000000141
+	cmpl	%esi, %edx
+	setg	%cl
+	cmpl	%esi, %edi
+	sete	%al
+	andb	%cl, %al
+	retq
+func00000000000000e7:                   # @func00000000000000e7
 	cmpl	%esi, %edx
 	setle	%cl
 	cmpl	%esi, %edi
 	setle	%al
 	andb	%cl, %al
 	retq
-func0000000000000058:                   # @func0000000000000058
-	cmpl	%esi, %edx
-	setbe	%cl
-	cmpl	%esi, %edi
-	seta	%al
-	andb	%cl, %al
-	retq
-func000000000000006b:                   # @func000000000000006b
-	cmpl	%esi, %edx
-	setl	%cl
-	cmpl	%esi, %edi
-	setge	%al
-	andb	%cl, %al
-	retq
-func000000000000001c:                   # @func000000000000001c
-	cmpl	%esi, %edx
-	sete	%cl
-	cmpl	%esi, %edi
-	setne	%al
-	andb	%cl, %al
-	retq
-func0000000000000014:                   # @func0000000000000014
-	cmpl	%esi, %edx
-	sete	%cl
-	cmpl	%esi, %edi
-	setb	%al
-	andb	%cl, %al
-	retq
-func0000000000000045:                   # @func0000000000000045
-	cmpl	%esi, %edx
-	setb	%cl
-	cmpl	%esi, %edi
-	setbe	%al
-	andb	%cl, %al
-	retq
-func00000000000000c4:                   # @func00000000000000c4
-	cmpl	%esi, %edx
-	setne	%cl
-	cmpl	%esi, %edi
-	setb	%al
-	andb	%cl, %al
-	retq
-func0000000000000099:                   # @func0000000000000099
-	cmpl	%esi, %edx
-	setae	%cl
-	cmpl	%esi, %edi
-	setae	%al
-	andb	%cl, %al
-	retq
-func00000000000000a1:                   # @func00000000000000a1
-	cmpl	%esi, %edx
-	setg	%cl
-	cmpl	%esi, %edi
-	sete	%al
-	andb	%cl, %al
-	retq
-func0000000000000095:                   # @func0000000000000095
+func0000000000000335:                   # @func0000000000000335
 	cmpl	%esi, %edx
 	setae	%cl
 	cmpl	%esi, %edi
 	setbe	%al
 	andb	%cl, %al
 	retq
-func0000000000000049:                   # @func0000000000000049
+func0000000000000089:                   # @func0000000000000089
 	cmpl	%esi, %edx
 	setb	%cl
 	cmpl	%esi, %edi
 	setae	%al
 	andb	%cl, %al
 	retq
-func0000000000000098:                   # @func0000000000000098
+func0000000000000128:                   # @func0000000000000128
 	cmpl	%esi, %edx
 	setae	%cl
 	cmpl	%esi, %edi
 	seta	%al
 	andb	%cl, %al
 	retq
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	cmpl	%esi, %edx
 	seta	%cl
 	cmpl	%esi, %edi
 	setb	%al
 	andb	%cl, %al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	cmpl	%esi, %edx
 	setne	%cl
 	cmpl	%esi, %edi
 	sete	%al
 	andb	%cl, %al
 	retq
-func00000000000000bb:                   # @func00000000000000bb
+func000000000000016b:                   # @func000000000000016b
 	cmpl	%esi, %edx
 	setge	%cl
 	cmpl	%esi, %edi
 	setge	%al
 	andb	%cl, %al
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000315:                   # @func0000000000000315
+	cmpl	%esi, %edx
+	seta	%cl
+	cmpl	%esi, %edi
+	setbe	%al
+	andb	%cl, %al
+	retq
+func0000000000000088:                   # @func0000000000000088
 	cmpl	%esi, %edx
 	setb	%cl
 	cmpl	%esi, %edi
 	seta	%al
 	andb	%cl, %al
 	retq
-func000000000000006c:                   # @func000000000000006c
+func0000000000000298:                   # @func0000000000000298
+	cmpl	%esi, %edx
+	setb	%cl
+	cmpl	%esi, %edi
+	seta	%al
+	andb	%cl, %al
+	retq
+func00000000000000cc:                   # @func00000000000000cc
 	cmpl	%esi, %edx
 	setl	%cl
 	cmpl	%esi, %edi
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000089:                   # @func0000000000000089
+func0000000000000319:                   # @func0000000000000319
 	cmpl	%esi, %edx
 	seta	%cl
 	cmpl	%esi, %edi
 	setae	%al
 	andb	%cl, %al
 	retq
-func00000000000000ab:                   # @func00000000000000ab
+func000000000000014b:                   # @func000000000000014b
 	cmpl	%esi, %edx
 	setg	%cl
 	cmpl	%esi, %edi
 	setge	%al
 	andb	%cl, %al
 	retq
-func00000000000000b6:                   # @func00000000000000b6
+func0000000000000166:                   # @func0000000000000166
 	cmpl	%esi, %edx
 	setge	%cl
 	cmpl	%esi, %edi
 	setl	%al
 	andb	%cl, %al
 	retq
-func0000000000000046:                   # @func0000000000000046
+func0000000000000286:                   # @func0000000000000286
 	cmpl	%esi, %edx
 	setb	%cl
 	cmpl	%esi, %edi

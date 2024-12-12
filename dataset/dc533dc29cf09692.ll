@@ -9,7 +9,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = sub nsw i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -22,7 +22,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = sub nuw i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -34,7 +34,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = sub i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -46,7 +46,20 @@ entry:
   %3 = zext nneg i16 %2 to i32
   %4 = sub nsw i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
+  ret i64 %6
+}
+
+; 2 occurrences:
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(i64 %0, i32 %1, i16 %2) #0 {
+entry:
+  %3 = zext i16 %2 to i32
+  %4 = sub i32 %1, %3
+  %5 = zext i32 %4 to i64
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -58,7 +71,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = sub nuw i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -70,7 +83,7 @@ entry:
   %3 = zext nneg i16 %2 to i32
   %4 = sub nuw nsw i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 

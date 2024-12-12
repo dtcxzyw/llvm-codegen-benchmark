@@ -63,7 +63,7 @@ func000000000000000a:                   # @func000000000000000a
 	.long	0x477ffefd                      # float 65534.9883
 func0000000000000004:                   # @func0000000000000004
 	vmulss	.LCPI6_0(%rip), %xmm1, %xmm1
-	vmulss	%xmm0, %xmm1, %xmm0
+	vmulss	%xmm1, %xmm0, %xmm0
 	vucomiss	.LCPI6_1(%rip), %xmm0
 	seta	%al
 	retq

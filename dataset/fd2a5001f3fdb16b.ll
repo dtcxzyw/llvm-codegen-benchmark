@@ -1,6 +1,5 @@
 
-; 9 occurrences:
-; clamav/optimized/bytecode_api.c.ll
+; 8 occurrences:
 ; cpython/optimized/ceval.ll
 ; icu/optimized/formatted_string_builder.ll
 ; linux/optimized/filter.ll
@@ -43,8 +42,9 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; abc/optimized/giaPat2.c.ll
+; clamav/optimized/bytecode_api.c.ll
 ; gromacs/optimized/tpi.cpp.ll
 ; openjdk/optimized/MaskFill.ll
 ; Function Attrs: nounwind
@@ -56,8 +56,9 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; flac/optimized/getopt.c.ll
+; oiio/optimized/imagecache.cpp.ll
 ; openblas/optimized/dlaqr0.c.ll
 ; openblas/optimized/dlaqr4.c.ll
 ; openblas/optimized/dsptrs.c.ll

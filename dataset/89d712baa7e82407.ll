@@ -5,7 +5,7 @@
 ; openssl/optimized/openssl-bin-cmp.ll
 ; ruby/optimized/prism.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(ptr %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000421(ptr %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp eq i32 %1, 2
@@ -24,7 +24,7 @@ entry:
 ; slurm/optimized/fed_mgr.ll
 ; wireshark/optimized/packet-snmp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000ccc(ptr %0, i32 %1, ptr %2) #0 {
+define i1 @func000000000000318c(ptr %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp ne i32 %1, 0
@@ -34,19 +34,18 @@ entry:
   ret i1 %7
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; c3c/optimized/semantic_analyser.c.ll
 ; git/optimized/credential-store.ll
 ; git/optimized/submodule--helper.ll
 ; hwloc/optimized/topology-xml.ll
-; linux/optimized/nfsacl.ll
 ; linux/optimized/trace_eprobe.ll
 ; openssl/optimized/libssl-lib-statem_clnt.ll
 ; openssl/optimized/libssl-shlib-statem_clnt.ll
 ; recastnavigation/optimized/main.cpp.ll
 ; wireshark/optimized/lemon.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c1c(ptr %0, i32 %1, ptr %2) #0 {
+define i1 @func000000000000302c(ptr %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp eq i32 %1, 1

@@ -1,5 +1,5 @@
 
-; 201 occurrences:
+; 218 occurrences:
 ; abc/optimized/acecCore.c.ll
 ; abc/optimized/bmcBmci.c.ll
 ; abc/optimized/cecSatG2.c.ll
@@ -22,7 +22,6 @@
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/AArch64LegalizerInfo.cpp.ll
 ; llvm/optimized/CallLowering.cpp.ll
-; llvm/optimized/GlobalISelMatchTable.cpp.ll
 ; llvm/optimized/Legalizer.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/LoadStoreOpt.cpp.ll
@@ -201,16 +200,34 @@
 ; wireshark/optimized/wireshark_dialog.cpp.ll
 ; wireshark/optimized/wireshark_main_window.cpp.ll
 ; wireshark/optimized/wireshark_main_window_slots.cpp.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/0zv49ldtv6tf31uz4olgw7861.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/2xv7gcyhgnpwydetyfctbxzbn.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
+; zed-rs/optimized/4h84anocrn0e2zexjpu5utgbx.ll
+; zed-rs/optimized/655upmhuk5u49g6wx9tv0hih8.ll
+; zed-rs/optimized/6ynx0w9sgeecr389qqgspp29k.ll
+; zed-rs/optimized/7ukwrxq2hh2vqucbwedxkpvcs.ll
+; zed-rs/optimized/8429boafm438obcc9d542xswj.ll
+; zed-rs/optimized/9ydmyaey957xyuywtl3djlzml.ll
+; zed-rs/optimized/anp459b0r1vn8pok0ofwmqun4.ll
+; zed-rs/optimized/c3nozc4nsp9d7jgiddflq9oh8.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
+; zed-rs/optimized/eio6txv0nku2we5mnjcgiiw85.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
-  %4 = or i1 %3, %1
-  %5 = and i1 %4, %0
+  %4 = or i1 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 50 occurrences:
+; 48 occurrences:
 ; abc/optimized/acecCore.c.ll
 ; abc/optimized/bmcBmci.c.ll
 ; abc/optimized/cecSatG2.c.ll
@@ -220,11 +237,11 @@ entry:
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/sscClass.c.ll
 ; abc/optimized/sscCore.c.ll
+; boost/optimized/to_chars.ll
 ; cvc5/optimized/theory_arrays.cpp.ll
 ; gromacs/optimized/cubicsplinetable.cpp.ll
 ; gromacs/optimized/quadraticsplinetable.cpp.ll
 ; libevent/optimized/buffer.c.ll
-; libwebp/optimized/predictor_enc.c.ll
 ; lief/optimized/asn1parse.c.ll
 ; linux/optimized/filemap.ll
 ; linux/optimized/manage.ll
@@ -236,7 +253,6 @@ entry:
 ; llvm/optimized/CGCleanup.cpp.ll
 ; llvm/optimized/CallLowering.cpp.ll
 ; llvm/optimized/ELFObjectWriter.cpp.ll
-; llvm/optimized/GlobalISelMatchTable.cpp.ll
 ; llvm/optimized/Legalizer.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/LoadStoreOpt.cpp.ll
@@ -245,11 +261,9 @@ entry:
 ; llvm/optimized/SValBuilder.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; llvm/optimized/X86InstructionSelector.cpp.ll
-; opencv/optimized/erfilter.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; openusd/optimized/shaderProperty.cpp.ll
 ; php/optimized/array.ll
-; quickjs/optimized/quickjs.ll
 ; ruby/optimized/object.ll
 ; spike/optimized/f32_to_i32.ll
 ; spike/optimized/f32_to_ui32.ll
@@ -261,20 +275,19 @@ entry:
 ; typst-rs/optimized/1mrwywpkq81cby93.ll
 ; typst-rs/optimized/49m3cs7hus53ztof.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
+; zed-rs/optimized/d1rzz8mrspct74ymgl9sm92kt.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i1 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
-  %4 = or i1 %3, %1
-  %5 = and i1 %4, %0
+  %4 = or i1 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 6 occurrences:
+; 4 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; cpython/optimized/basearith.ll
-; llvm/optimized/X86ISelDAGToDAG.cpp.ll
-; php/optimized/pcre2_dfa_match.ll
 ; rust-analyzer-rs/optimized/2hvuxgck7heujc9c.ll
 ; typst-rs/optimized/3rk2ctuzbghb17s4.ll
 ; Function Attrs: nounwind
@@ -282,7 +295,7 @@ define i1 @func0000000000000010(i1 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, 4096
   %4 = or i1 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -295,20 +308,19 @@ entry:
 define i1 @func000000000000000c(i1 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %2, 2147483648
-  %4 = or i1 %3, %1
-  %5 = and i1 %4, %0
+  %4 = or i1 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 4 occurrences:
-; gromacs/optimized/gen_vsite.cpp.ll
-; influxdb-rs/optimized/3x4ltxca4agvimmq.ll
-; opencv/optimized/erfilter.cpp.ll
-; quickjs/optimized/quickjs.ll
+; 3 occurrences:
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
+; zed-rs/optimized/c3nozc4nsp9d7jgiddflq9oh8.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000014(i1 %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ult i64 %2, 9
+  %3 = icmp sgt i64 %2, -9223372036854775805
   %4 = or i1 %3, %1
   %5 = and i1 %4, %0
   ret i1 %5

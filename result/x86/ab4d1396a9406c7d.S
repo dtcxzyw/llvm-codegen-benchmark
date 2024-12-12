@@ -8,8 +8,3 @@ func0000000000000001:                   # @func0000000000000001
 	xorb	$1, %dil
 	orb	%dil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
-	testb	$14, %sil
-	setne	%al
-	andb	%dil, %al
-	retq

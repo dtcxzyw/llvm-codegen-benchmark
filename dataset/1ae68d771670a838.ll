@@ -7,6 +7,8 @@
 ; arrow/optimized/fixed-dtoa.cc.ll
 ; arrow/optimized/float16.cc.ll
 ; arrow/optimized/strtod.cc.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; coreutils-rs/optimized/56596qkor8w4ma8l.ll
 ; double_conversion/optimized/bignum-dtoa.cc.ll
 ; double_conversion/optimized/double-to-string.cc.ll
@@ -131,8 +133,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -477,20 +477,21 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(double %0) #0 {
+define i1 @func0000000000000018(double %0) #0 {
 entry:
   %1 = bitcast double %0 to i64
   %2 = and i64 %1, 9214364837600034816
-  %3 = icmp ugt i64 %2, 8980177652681801728
+  %3 = icmp samesign ugt i64 %2, 8980177652681801728
   ret i1 %3
 }
 
-; 23 occurrences:
+; 24 occurrences:
 ; abc/optimized/epd.c.ll
 ; arrow/optimized/bignum-dtoa.cc.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/to_chars.ll
 ; double_conversion/optimized/bignum-dtoa.cc.ll
 ; double_conversion/optimized/fast-dtoa.cc.ll
 ; hermes/optimized/APFloat.cpp.ll
@@ -525,11 +526,11 @@ entry:
 ; openjdk/optimized/sharedRuntimeTrig.ll
 ; z3/optimized/mpf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(double %0) #0 {
+define i1 @func0000000000000014(double %0) #0 {
 entry:
   %1 = bitcast double %0 to i64
   %2 = and i64 %1, 9205357638345293824
-  %3 = icmp ult i64 %2, 4485585228861014016
+  %3 = icmp samesign ult i64 %2, 4485585228861014016
   ret i1 %3
 }
 

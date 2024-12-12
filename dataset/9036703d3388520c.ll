@@ -4,7 +4,7 @@
 ; opencv/optimized/datastructs.cpp.ll
 ; ruby/optimized/ossl_asn1.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0) #0 {
+define i1 @func0000000000000061(i32 %0) #0 {
 entry:
   %1 = zext nneg i32 %0 to i64
   %2 = shl nuw i64 1, %1
@@ -17,7 +17,7 @@ entry:
 ; cmake/optimized/cmExprParser.cxx.ll
 ; openjdk/optimized/compilerOracle.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0) #0 {
+define i1 @func000000000000004c(i32 %0) #0 {
 entry:
   %1 = zext nneg i32 %0 to i64
   %2 = shl nuw i64 1, %1
@@ -42,7 +42,7 @@ entry:
 ; postgres/optimized/specparse.ll
 ; postgres/optimized/syncrep_gram.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0) #0 {
+define i1 @func0000000000000041(i32 %0) #0 {
 entry:
   %1 = zext nneg i32 %0 to i64
   %2 = shl nuw i64 1, %1

@@ -1,6 +1,14 @@
 func00000000000001d0:                   # @func00000000000001d0
-	leaq	(%rdi,%rdx,2), %rax
-	leaq	6(%rax,%rsi,4), %rax
+	shlq	$6, %rdx
+	addq	%rdi, %rdx
+	shlq	$5, %rsi
+	leaq	16(%rsi,%rdx), %rax
+	retq
+func00000000000000f0:                   # @func00000000000000f0
+	shlq	$5, %rdx
+	addq	%rdi, %rdx
+	shlq	$6, %rsi
+	leaq	16(%rsi,%rdx), %rax
 	retq
 func00000000000001c0:                   # @func00000000000001c0
 	shlq	$12, %rdx

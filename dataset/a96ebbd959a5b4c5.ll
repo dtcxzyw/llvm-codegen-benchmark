@@ -8,7 +8,7 @@
 define i32 @func0000000000000000(i1 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 16384, i32 0
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = or i32 %4, 4096
   %6 = select i1 %0, i32 %5, i32 %4
   %7 = and i32 %6, -4096
@@ -21,13 +21,12 @@ entry:
 define i32 @func0000000000000002(i1 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 7, i32 5
-  %.masked = and i32 %1, 7
-  %4 = or i32 %3, %.masked
+  %.masked = and i32 %1, 2
+  %4 = or i32 %.masked, %3
   ret i32 %4
 }
 
-; 2 occurrences:
-; imgui/optimized/imgui_widgets.cpp.ll
+; 1 occurrences:
 ; wireshark/optimized/packet-wassp.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i1 %0, i32 %1, i1 %2) #0 {

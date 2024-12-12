@@ -1,5 +1,6 @@
 
-; 11 occurrences:
+; 12 occurrences:
+; boost/optimized/to_chars.ll
 ; cvc5/optimized/ceg_bv_instantiator.cpp.ll
 ; cvc5/optimized/cegis_core_connective.cpp.ll
 ; cvc5/optimized/conjecture_generator.cpp.ll
@@ -16,7 +17,7 @@ define i128 @func0000000000000002(i128 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %1, %2
   %4 = zext i64 %3 to i128
-  %5 = mul nuw i128 %4, %0
+  %5 = mul nuw i128 %0, %4
   ret i128 %5
 }
 

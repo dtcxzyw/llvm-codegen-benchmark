@@ -23,7 +23,7 @@ entry:
   ret i32 %5
 }
 
-; 50 occurrences:
+; 51 occurrences:
 ; abc/optimized/bmcFx.c.ll
 ; abc/optimized/dauNpn2.c.ll
 ; abc/optimized/dauTree.c.ll
@@ -44,6 +44,7 @@ entry:
 ; llvm/optimized/SemaLookup.cpp.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
+; lvgl/optimized/lv_color.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; ncnn/optimized/mat_pixel.cpp.ll
@@ -83,7 +84,7 @@ entry:
   ret i32 %5
 }
 
-; 88 occurrences:
+; 89 occurrences:
 ; abc/optimized/acecRe.c.ll
 ; abc/optimized/giaEmbed.c.ll
 ; abc/optimized/wlcNtk.c.ll
@@ -103,6 +104,8 @@ entry:
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/tz.cpp.ll
 ; assimp/optimized/Importer.cpp.ll
+; boost/optimized/gregorian.ll
+; boost/optimized/partition.ll
 ; cmake/optimized/archive_getdate.c.ll
 ; cmake/optimized/cmCTestGIT.cxx.ll
 ; cmake/optimized/cm_get_date.c.ll
@@ -117,7 +120,6 @@ entry:
 ; hwloc/optimized/lstopo_no_graphics-lstopo-draw.ll
 ; hwloc/optimized/lstopo_no_graphics-lstopo-fig.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
-; icu/optimized/gregoimp.ll
 ; libpng/optimized/pngread.c.ll
 ; libquic/optimized/prtime.cc.ll
 ; libwebp/optimized/yuv.c.ll
@@ -181,7 +183,7 @@ entry:
   ret i32 %5
 }
 
-; 69 occurrences:
+; 70 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/bacBac.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -215,6 +217,7 @@ entry:
 ; libwebp/optimized/yuv.c.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
+; lvgl/optimized/lv_calendar_header_dropdown.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; minetest/optimized/noise.cpp.ll
 ; minetest/optimized/reflowscan.cpp.ll
@@ -267,6 +270,7 @@ entry:
 ; abc/optimized/giaHash.c.ll
 ; arrow/optimized/UriQuery.c.ll
 ; arrow/optimized/tz.cpp.ll
+; boost/optimized/gregorian.ll
 ; cpython/optimized/_datetimemodule.ll
 ; git/optimized/xdiffi.ll
 ; icu/optimized/cecal.ll
@@ -276,6 +280,7 @@ entry:
 ; llvm/optimized/VLIWMachineScheduler.cpp.ll
 ; llvm/optimized/WinCOFFObjectWriter.cpp.ll
 ; luau/optimized/loslib.cpp.ll
+; lvgl/optimized/lv_calendar_header_dropdown.ll
 ; minetest/optimized/mapgen.cpp.ll
 ; minetest/optimized/mapgen_v6.cpp.ll
 ; minetest/optimized/noise.cpp.ll
@@ -283,8 +288,6 @@ entry:
 ; opencv/optimized/brisk.cpp.ll
 ; openjdk/optimized/jidctred.ll
 ; openspiel/optimized/spades_scoring.cc.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; openusd/optimized/grain_synthesis.c.ll
 ; quantlib/optimized/thirty360.ll
 ; quantlib/optimized/thirty365.ll
@@ -347,7 +350,7 @@ entry:
   ret i32 %5
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
 ; hdf5/optimized/H5Omtime.c.ll
 ; libwebp/optimized/picture_csp_enc.c.ll
@@ -355,6 +358,7 @@ entry:
 ; llvm/optimized/GCOVProfiling.cpp.ll
 ; luajit/optimized/lj_strscan.ll
 ; luajit/optimized/lj_strscan_dyn.ll
+; lvgl/optimized/lv_label.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; php/optimized/decode.ll
 ; postgres/optimized/utf8_and_gb18030.ll

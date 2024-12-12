@@ -9,7 +9,7 @@ entry:
   %2 = and i32 %1, 31
   %notmask = shl nsw i32 -1, %2
   %3 = xor i32 %notmask, -1
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   ret i32 %4
 }
 
@@ -35,7 +35,7 @@ entry:
   %2 = and i32 %1, 15
   %3 = shl nuw nsw i32 2, %2
   %4 = add nsw i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 

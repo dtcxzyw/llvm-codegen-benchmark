@@ -1,16 +1,13 @@
 
-; 13 occurrences:
+; 10 occurrences:
 ; assimp/optimized/zip.c.ll
 ; hermes/optimized/zip.c.ll
 ; libquic/optimized/des.c.ll
 ; lief/optimized/des.c.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; openssl/optimized/libcrypto-lib-des_enc.ll
-; openssl/optimized/libcrypto-lib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-shlib-des_enc.ll
-; openssl/optimized/libcrypto-shlib-fcrypt_b.ll
 ; openssl/optimized/liblegacy-lib-des_enc.ll
-; openssl/optimized/liblegacy-lib-fcrypt_b.ll
 ; spike/optimized/aes64im.ll
 ; wireshark/optimized/packet-z21.c.ll
 ; Function Attrs: nounwind

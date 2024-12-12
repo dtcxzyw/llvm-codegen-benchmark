@@ -8,6 +8,13 @@ func0000000000000055:                   # @func0000000000000055
 	sh1add	a0, a1, a0
 	addiw	a0, a0, -528
 	ret
+func00000000000000ff:                   # @func00000000000000ff
+	sh2add	a1, a1, a1
+	sh1add	a0, a1, a0
+	lui	a1, 176
+	addi	a1, a1, -528
+	addw	a0, a0, a1
+	ret
 func0000000000000050:                   # @func0000000000000050
 	sh2add	a1, a1, a1
 	sh1add	a0, a1, a0

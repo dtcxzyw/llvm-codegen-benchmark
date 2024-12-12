@@ -1,8 +1,9 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; llvm/optimized/DebugLinesSubsection.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; oiio/optimized/ddsinput.cpp.ll
+; openusd/optimized/decodemv.c.ll
 ; recastnavigation/optimized/DetourDebugDraw.cpp.ll
 ; ruby/optimized/compile.ll
 ; Function Attrs: nounwind

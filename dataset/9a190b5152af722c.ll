@@ -1,7 +1,10 @@
 
-; 2 occurrences:
+; 5 occurrences:
 ; actix-rs/optimized/5k5ycrtlwwxldg7.ll
 ; qemu/optimized/fpu_softfloat.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i16 %0) #0 {
 entry:
@@ -10,11 +13,10 @@ entry:
   ret i32 %2
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; c3c/optimized/sema_decls.c.ll
 ; cvc5/optimized/theory_arith.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
 ; postgres/optimized/nbtsplitloc.ll
 ; Function Attrs: nounwind

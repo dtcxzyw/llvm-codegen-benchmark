@@ -59,7 +59,7 @@ func0000000000000007:                   # @func0000000000000007
 	addq	%rdx, %rax
 	retq
 func000000000000001e:                   # @func000000000000001e
-	shrq	$2, %rdx
+	shrq	$5, %rdx
 	leaq	(%rdi,%rsi), %rax
 	addq	%rdx, %rax
 	retq

@@ -315,7 +315,7 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000441(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000881(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = add nsw i32 %2, -48
@@ -328,13 +328,13 @@ entry:
 ; 1 occurrences:
 ; php/optimized/decode.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000378(i32 %0, i8 %1) #0 {
+define i1 @func00000000000006f8(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = add nsw i32 %2, -161
   %4 = mul nuw nsw i32 %0, 94
   %5 = add nuw nsw i32 %3, %4
-  %6 = icmp ugt i32 %5, 7210
+  %6 = icmp samesign ugt i32 %5, 7210
   ret i1 %6
 }
 
@@ -343,7 +343,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000766(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000ec6(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = add nsw i32 %2, -48
@@ -356,7 +356,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/cdrom.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000356(i32 %0, i8 %1) #0 {
+define i1 @func00000000000006a6(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = add nsw i32 %2, -150
@@ -369,7 +369,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/dayperiodrules.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000541(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000a81(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = add nsw i32 %2, -48
@@ -381,13 +381,26 @@ entry:
 ; 1 occurrences:
 ; xgboost/optimized/data.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000448(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000888(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = add nsw i32 %2, -48
   %4 = mul i32 %0, 10
   %5 = add i32 %3, %4
   %6 = icmp ugt i32 %5, 37
+  ret i1 %6
+}
+
+; 1 occurrences:
+; xgboost/optimized/data.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000898(i32 %0, i8 %1) #0 {
+entry:
+  %2 = zext nneg i8 %1 to i32
+  %3 = add nsw i32 %2, -48
+  %4 = mul i32 %0, 10
+  %5 = add i32 %3, %4
+  %6 = icmp samesign ugt i32 %5, 7
   ret i1 %6
 }
 

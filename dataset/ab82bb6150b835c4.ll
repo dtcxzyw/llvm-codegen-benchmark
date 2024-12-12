@@ -1,8 +1,7 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; eastl/optimized/TestBitset.cpp.ll
 ; graphviz/optimized/htmltable.c.ll
-; linux/optimized/io_uring.ll
 ; linux/optimized/ndisc.ll
 ; linux/optimized/tg3.ll
 ; llvm/optimized/AArch64.cpp.ll

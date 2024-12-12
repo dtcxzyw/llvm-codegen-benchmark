@@ -12,29 +12,29 @@
 ; quantlib/optimized/svd.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0) #0 {
+define i1 @func0000000000000038(i32 %0) #0 {
 entry:
   %1 = sext i32 %0 to i64
   %2 = mul nsw i64 %1, %1
-  %3 = icmp ugt i64 %2, 2305843009213693951
+  %3 = icmp samesign ugt i64 %2, 2305843009213693951
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; darktable/optimized/introspection_blurs.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0) #0 {
+define i1 @func0000000000000034(i32 %0) #0 {
 entry:
   %1 = sext i32 %0 to i64
   %2 = mul nsw i64 %1, %1
-  %3 = icmp ult i64 %2, 32
+  %3 = icmp samesign ult i64 %2, 32
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; faiss/optimized/VectorTransform.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0) #0 {
+define i1 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = sext i32 %0 to i64
   %2 = mul nsw i64 %1, %1
@@ -45,11 +45,11 @@ entry:
 ; 1 occurrences:
 ; faiss/optimized/VectorTransform.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0) #0 {
+define i1 @func0000000000000078(i32 %0) #0 {
 entry:
   %1 = sext i32 %0 to i64
   %2 = mul nuw nsw i64 %1, %1
-  %3 = icmp ugt i64 %2, 576460752303423487
+  %3 = icmp samesign ugt i64 %2, 576460752303423487
   ret i1 %3
 }
 

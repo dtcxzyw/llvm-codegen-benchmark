@@ -1,5 +1,5 @@
 
-; 434 occurrences:
+; 432 occurrences:
 ; abseil-cpp/optimized/cord_analysis.cc.ll
 ; abseil-cpp/optimized/exception_safety_testing_test.cc.ll
 ; abseil-cpp/optimized/fixed_array_exception_safety_test.cc.ll
@@ -80,7 +80,6 @@
 ; duckdb/optimized/ub_duckdb_planner_subquery.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage.cpp.ll
 ; duckdb/optimized/ub_duckdb_transaction.cpp.ll
-; eastl/optimized/TestFixedHash.cpp.ll
 ; folly/optimized/AsyncFdSocket.cpp.ll
 ; folly/optimized/AsyncSocket.cpp.ll
 ; folly/optimized/DeterministicSchedule.cpp.ll
@@ -88,7 +87,6 @@
 ; folly/optimized/EventBaseLocal.cpp.ll
 ; folly/optimized/IOThreadPoolDeadlockDetectorObserver.cpp.ll
 ; folly/optimized/LogCategory.cpp.ll
-; folly/optimized/LoggerDB.cpp.ll
 ; folly/optimized/SanitizeLeak.cpp.ll
 ; folly/optimized/Singleton.cpp.ll
 ; folly/optimized/json.cpp.ll

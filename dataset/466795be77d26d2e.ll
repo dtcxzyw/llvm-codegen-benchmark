@@ -233,7 +233,7 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i64 %1, i8 %2) #0 {
+define ptr @func000000000000007b(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = udiv i8 %2, 3
   %4 = getelementptr nusw i8, ptr %0, i64 %1

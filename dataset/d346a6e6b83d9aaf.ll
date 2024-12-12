@@ -14,7 +14,7 @@
 ; proxygen/optimized/Logging.cpp.ll
 ; velox/optimized/md5.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000044c(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000108c(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = zext nneg i32 %0 to i64
   %4 = sub i64 %1, %2
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; folly/optimized/SSLContext.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000041a(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000102a(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = zext nneg i32 %0 to i64
   %4 = sub i64 %1, %2
@@ -41,7 +41,7 @@ entry:
 ; openjdk/optimized/imageioJPEG.ll
 ; openjdk/optimized/jpegdecoder.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000044a(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000108a(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = zext nneg i32 %0 to i64
   %4 = sub i64 %1, %2
@@ -54,7 +54,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/sre.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000008c(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = zext i32 %0 to i64
   %4 = sub i64 %1, %2

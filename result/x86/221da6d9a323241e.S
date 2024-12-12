@@ -7,7 +7,8 @@ func0000000000000002:                   # @func0000000000000002
 	retq
 func0000000000000000:                   # @func0000000000000000
 	movl	%edi, %eax
-	shrb	$7, %al
+	sarb	$7, %al
+	shrb	$5, %al
 	addb	%dil, %al
-	sarb	%al
+	sarb	$3, %al
 	retq

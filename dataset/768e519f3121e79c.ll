@@ -1,7 +1,8 @@
 
-; 39 occurrences:
+; 38 occurrences:
 ; abc/optimized/giaGen.c.ll
 ; abc/optimized/ifDec07.c.ll
+; boost/optimized/alloc_lib.ll
 ; jemalloc/optimized/base.ll
 ; jemalloc/optimized/base.pic.ll
 ; jemalloc/optimized/base.sym.ll
@@ -29,8 +30,6 @@
 ; mold/optimized/arch-riscv.cc.RV64LE.cc.ll
 ; redis/optimized/base.ll
 ; redis/optimized/base.sym.ll
-; redis/optimized/bin.ll
-; redis/optimized/bin.sym.ll
 ; redis/optimized/eset.ll
 ; redis/optimized/eset.sym.ll
 ; redis/optimized/psset.ll
@@ -88,7 +87,9 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
+; 3 occurrences:
+; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
 ; c3c/optimized/asm_target.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i64 %1) #0 {
@@ -172,13 +173,12 @@ entry:
   ret i32 %5
 }
 
-; 29 occurrences:
+; 28 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/acecPo.c.ll
 ; abc/optimized/bmcBCore.c.ll
 ; abc/optimized/bmcFault.c.ll
-; abc/optimized/bmcLoad.c.ll
 ; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
@@ -224,6 +224,21 @@ entry:
   ret i32 %5
 }
 
+; 4 occurrences:
+; linux/optimized/libahci.ll
+; llvm/optimized/SemaAttr.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
+; wireshark/optimized/packet-pn-rt.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = and i32 %2, -65536
+  %4 = shl i32 %0, 16
+  %5 = or i32 %3, %4
+  ret i32 %5
+}
+
 ; 1 occurrences:
 ; llvm/optimized/SemaAttr.cpp.ll
 ; Function Attrs: nounwind
@@ -232,20 +247,6 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, -57
   %4 = shl nsw i32 %0, 3
-  %5 = or i32 %3, %4
-  ret i32 %5
-}
-
-; 3 occurrences:
-; linux/optimized/libahci.ll
-; llvm/optimized/SemaAttr.cpp.ll
-; wireshark/optimized/packet-pn-rt.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = and i32 %2, -193
-  %4 = shl i32 %0, 6
   %5 = or i32 %3, %4
   ret i32 %5
 }

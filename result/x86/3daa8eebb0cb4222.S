@@ -4,7 +4,7 @@ func0000000000000001:                   # @func0000000000000001
 	notb	%dil
 	andb	%dil, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	testl	$131072, %esi                   # imm = 0x20000
 	sete	%al
 	notb	%dil

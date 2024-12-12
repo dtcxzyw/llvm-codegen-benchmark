@@ -28,3 +28,8 @@ func000000000000000a:                   # @func000000000000000a
 	testl	%esi, %esi
 	cmovgq	%rdi, %rax
 	retq
+func0000000000000014:                   # @func0000000000000014
+	xorl	%eax, %eax
+	cmpl	$2048, %esi                     # imm = 0x800
+	cmovbq	%rdi, %rax
+	retq

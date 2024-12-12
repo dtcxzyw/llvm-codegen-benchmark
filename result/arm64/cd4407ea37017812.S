@@ -1,87 +1,60 @@
-func000000000000001a:                   // @func000000000000001a
+func000000000000002a:                   // @func000000000000002a
 // %bb.0:                               // %entry
-	cmeq	v4.2d, v4.2d, #0
-	cmeq	v3.2d, v3.2d, #0
-	sshll2	v5.2d, v2.4s, #0
-	sshll	v2.2d, v2.2s, #0
-	bic	v2.16b, v2.16b, v3.16b
-	bic	v3.16b, v5.16b, v4.16b
-	cmgt	v1.2d, v1.2d, v3.2d
-	cmgt	v0.2d, v0.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+                                        // kill: def $w1 killed $w1 def $x1
+	sxtw	x8, w1
+	cmp	x2, #0
+	csel	x8, xzr, x8, eq
+	cmp	x0, x8
+	cset	w0, gt
 	ret
                                         // -- End function
-func0000000000000018:                   // @func0000000000000018
+func0000000000000028:                   // @func0000000000000028
 // %bb.0:                               // %entry
-	cmeq	v4.2d, v4.2d, #0
-	cmeq	v3.2d, v3.2d, #0
-	sshll2	v5.2d, v2.4s, #0
-	sshll	v2.2d, v2.2s, #0
-	bic	v2.16b, v2.16b, v3.16b
-	bic	v3.16b, v5.16b, v4.16b
-	cmhi	v1.2d, v1.2d, v3.2d
-	cmhi	v0.2d, v0.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+                                        // kill: def $w1 killed $w1 def $x1
+	sxtw	x8, w1
+	cmp	x2, #0
+	csel	x8, xzr, x8, eq
+	cmp	x0, x8
+	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000014:                   // @func0000000000000014
+func0000000000000024:                   // @func0000000000000024
 // %bb.0:                               // %entry
-	movi	v5.2d, #0x000000ffffffff
-	sshll	v6.2d, v2.2s, #0
-	sshll2	v2.2d, v2.4s, #0
-	cmhi	v1.2d, v2.2d, v1.2d
-	cmhi	v0.2d, v6.2d, v0.2d
-	cmeq	v4.2d, v4.2d, v5.2d
-	cmeq	v3.2d, v3.2d, v5.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	uzp1	v2.4s, v3.4s, v4.4s
-	bic	v0.16b, v0.16b, v2.16b
-	xtn	v0.4h, v0.4s
+                                        // kill: def $w1 killed $w1 def $x1
+	mov	w8, #-1                         // =0xffffffff
+	sxtw	x9, w1
+	cmp	x2, x8
+	ccmp	x0, x9, #2, ne
+	cset	w0, lo
 	ret
                                         // -- End function
-func000000000000006a:                   // @func000000000000006a
+func00000000000000ca:                   // @func00000000000000ca
 // %bb.0:                               // %entry
-	ext	v5.16b, v2.16b, v2.16b, #8
-	sshll	v2.2d, v2.2s, #0
-	cmge	v4.2d, v4.2d, #0
-	cmge	v3.2d, v3.2d, #0
-	sshll	v5.2d, v5.2s, #0
-	and	v2.16b, v3.16b, v2.16b
-	and	v4.16b, v4.16b, v5.16b
-	cmgt	v0.2d, v0.2d, v2.2d
-	cmgt	v1.2d, v1.2d, v4.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+                                        // kill: def $w1 killed $w1 def $x1
+	sxtw	x8, w1
+	cmp	x2, #0
+	csel	x8, xzr, x8, lt
+	cmp	x0, x8
+	cset	w0, gt
 	ret
                                         // -- End function
-func0000000000000066:                   // @func0000000000000066
+func00000000000000c6:                   // @func00000000000000c6
 // %bb.0:                               // %entry
-	ext	v5.16b, v2.16b, v2.16b, #8
-	sshll	v2.2d, v2.2s, #0
-	cmge	v4.2d, v4.2d, #0
-	cmge	v3.2d, v3.2d, #0
-	sshll	v5.2d, v5.2s, #0
-	and	v2.16b, v3.16b, v2.16b
-	and	v4.16b, v4.16b, v5.16b
-	cmgt	v0.2d, v2.2d, v0.2d
-	cmgt	v1.2d, v4.2d, v1.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+                                        // kill: def $w1 killed $w1 def $x1
+	sxtw	x8, w1
+	cmp	x2, #0
+	csel	x8, xzr, x8, lt
+	cmp	x0, x8
+	cset	w0, lt
 	ret
                                         // -- End function
-func0000000000000016:                   // @func0000000000000016
+func0000000000000026:                   // @func0000000000000026
 // %bb.0:                               // %entry
-	cmeq	v4.2d, v4.2d, #0
-	cmeq	v3.2d, v3.2d, #0
-	sshll2	v5.2d, v2.4s, #0
-	sshll	v2.2d, v2.2s, #0
-	bic	v2.16b, v2.16b, v3.16b
-	bic	v3.16b, v5.16b, v4.16b
-	cmgt	v1.2d, v3.2d, v1.2d
-	cmgt	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+                                        // kill: def $w1 killed $w1 def $x1
+	sxtw	x8, w1
+	cmp	x2, #0
+	csel	x8, xzr, x8, eq
+	cmp	x0, x8
+	cset	w0, lt
 	ret
                                         // -- End function

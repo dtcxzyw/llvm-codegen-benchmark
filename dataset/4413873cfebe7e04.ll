@@ -4,7 +4,7 @@
 ; luajit/optimized/lj_api_dyn.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a8(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000348(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 0, %3
@@ -20,12 +20,12 @@ entry:
 ; opencv/optimized/aruco_detector.cpp.ll
 ; pocketpy/optimized/vm.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000361(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 0, %3
   %5 = getelementptr nusw ptr, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %0, i64 8
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 8
   %7 = icmp eq ptr %6, %5
   ret i1 %7
 }
@@ -37,12 +37,12 @@ entry:
 ; zxing/optimized/ODMultiUPCEANReader.cpp.ll
 ; zxing/optimized/PDFDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a4(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000364(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nsw i64 0, %3
   %5 = getelementptr nusw i16, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %0, i64 4
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 4
   %7 = icmp ult ptr %6, %5
   ret i1 %7
 }

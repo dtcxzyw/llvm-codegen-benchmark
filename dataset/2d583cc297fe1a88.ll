@@ -1,5 +1,5 @@
 
-; 160 occurrences:
+; 163 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; arrow/optimized/bit_run_reader.cc.ll
@@ -28,7 +28,6 @@
 ; folly/optimized/IOThreadPoolExecutor.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/LogCategory.cpp.ll
-; folly/optimized/LoggerDB.cpp.ll
 ; folly/optimized/ManualTimekeeper.cpp.ll
 ; folly/optimized/MuxIOThreadPoolExecutor.cpp.ll
 ; folly/optimized/ObserverManager.cpp.ll
@@ -73,7 +72,6 @@
 ; linux/optimized/io_uring.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/rscalc.ll
-; linux/optimized/scsicam.ll
 ; linux/optimized/skl_watermark.ll
 ; llvm/optimized/InitPreprocessor.cpp.ll
 ; llvm/optimized/Option.cpp.ll
@@ -83,6 +81,11 @@
 ; luau/optimized/CodeGenUtils.cpp.ll
 ; luau/optimized/lbuiltins.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
+; lvgl/optimized/lv_color_op.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; meshoptimizer/optimized/indexcodec.cpp.ll
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll
 ; nuklear/optimized/unity.c.ll
@@ -168,13 +171,11 @@ entry:
   ret i32 %2
 }
 
-; 12 occurrences:
+; 10 occurrences:
 ; c3c/optimized/lexer.c.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
-; luajit/optimized/lj_snap.ll
-; luajit/optimized/lj_snap_dyn.ll
 ; nghttp2/optimized/llhttp.c.ll
 ; openusd/optimized/decodeframe.c.ll
 ; qemu/optimized/hw_display_cirrus_vga.c.ll

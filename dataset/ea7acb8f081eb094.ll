@@ -159,19 +159,8 @@ entry:
   ret i16 %4
 }
 
-; 2 occurrences:
-; libquic/optimized/reduce.c.ll
-; opencv/optimized/freak.cpp.ll
-; Function Attrs: nounwind
-define i16 @func0000000000000003(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add i32 %0, %1
-  %3 = lshr i32 %2, 18
-  %4 = trunc nuw nsw i32 %3 to i16
-  ret i16 %4
-}
-
-; 9 occurrences:
+; 10 occurrences:
+; lvgl/optimized/lv_font_fmt_txt.ll
 ; opencv/optimized/convert.dispatch.cpp.ll
 ; opencv/optimized/convert_scale.dispatch.cpp.ll
 ; opencv/optimized/copy.cpp.ll
@@ -185,7 +174,7 @@ entry:
 define i16 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %0, %1
-  %3 = lshr i32 %2, 5
+  %3 = lshr i32 %2, 4
   %4 = trunc i32 %3 to i16
   ret i16 %4
 }
@@ -215,6 +204,17 @@ entry:
   %2 = add i32 %0, %1
   %3 = lshr i32 %2, 8
   %4 = trunc i32 %3 to i16
+  ret i16 %4
+}
+
+; 1 occurrences:
+; opencv/optimized/freak.cpp.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000003(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add i32 %0, %1
+  %3 = lshr i32 %2, 22
+  %4 = trunc nuw nsw i32 %3 to i16
   ret i16 %4
 }
 

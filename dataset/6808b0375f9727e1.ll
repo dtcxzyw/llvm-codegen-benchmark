@@ -160,27 +160,23 @@
 ; xgboost/optimized/data.cc.ll
 ; xgboost/optimized/input_split_base.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0) #0 {
+define i1 @func0000000000000061(i64 %0) #0 {
 entry:
-  %1 = add i64 %0, 24
-  %2 = lshr i64 %1, 3
-  %3 = add nuw nsw i64 %2, 1
-  %4 = and i64 %3, 3
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
+  %1 = sub i64 7, %0
+  %2 = and i64 %1, 24
+  %3 = icmp eq i64 %2, 0
+  ret i1 %3
 }
 
 ; 1 occurrences:
 ; darktable/optimized/introspection_basecurve.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0) #0 {
+define i1 @func0000000000000141(i64 %0) #0 {
 entry:
-  %1 = add i64 %0, 15
-  %2 = lshr i64 %1, 1
-  %3 = add nuw i64 %2, 1
-  %4 = and i64 %3, 7
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
+  %1 = sub i64 0, %0
+  %2 = and i64 %1, 14
+  %3 = icmp eq i64 %2, 0
+  ret i1 %3
 }
 
 ; 10 occurrences:
@@ -195,54 +191,46 @@ entry:
 ; entt/optimized/version.cpp.ll
 ; xgboost/optimized/input_split_base.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0) #0 {
+define i1 @func0000000000000041(i64 %0) #0 {
 entry:
-  %1 = add i64 %0, 15
-  %2 = lshr i64 %1, 1
-  %3 = add nuw i64 %2, 1
-  %4 = and i64 %3, 7
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
+  %1 = sub i64 0, %0
+  %2 = and i64 %1, 14
+  %3 = icmp eq i64 %2, 0
+  ret i1 %3
 }
 
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i64 %0) #0 {
+define i1 @func0000000000000121(i64 %0) #0 {
 entry:
   %1 = add nsw i64 %0, 7
-  %2 = lshr i64 %1, 3
-  %3 = add nuw nsw i64 %2, 31
-  %4 = and i64 %3, 31
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
+  %2 = and i64 %1, 248
+  %3 = icmp eq i64 %2, 8
+  ret i1 %3
 }
 
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types_row.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0) #0 {
+define i1 @func0000000000000021(i64 %0) #0 {
 entry:
   %1 = add i64 %0, 7
-  %2 = lshr i64 %1, 3
-  %3 = add nuw nsw i64 %2, 31
-  %4 = and i64 %3, 31
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
+  %2 = and i64 %1, 248
+  %3 = icmp eq i64 %2, 8
+  ret i1 %3
 }
 
 ; 2 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; entt/optimized/storage.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i64 %0) #0 {
+define i1 @func0000000000000161(i64 %0) #0 {
 entry:
-  %1 = add i64 %0, 24
-  %2 = lshr i64 %1, 3
-  %3 = add nuw nsw i64 %2, 1
-  %4 = and i64 %3, 3
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
+  %1 = sub i64 7, %0
+  %2 = and i64 %1, 24
+  %3 = icmp eq i64 %2, 0
+  ret i1 %3
 }
 
 attributes #0 = { nounwind }

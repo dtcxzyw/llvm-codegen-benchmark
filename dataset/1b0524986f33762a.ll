@@ -1,5 +1,5 @@
 
-; 30 occurrences:
+; 29 occurrences:
 ; abc/optimized/lpkSets.c.ll
 ; abc/optimized/mvcUtils.c.ll
 ; draco/optimized/sequential_integer_attribute_encoder.cc.ll
@@ -21,7 +21,6 @@
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
 ; luau/optimized/isocline.c.ll
-; mitsuba3/optimized/x86func.cpp.ll
 ; node/optimized/simdutf.ll
 ; oniguruma/optimized/regcomp.ll
 ; openblas/optimized/dlasdq.c.ll
@@ -34,7 +33,7 @@
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   ret i32 %3
 }
 

@@ -1,5 +1,6 @@
 
-; 79 occurrences:
+; 80 occurrences:
+; boost/optimized/operations.ll
 ; c3c/optimized/build_options.c.ll
 ; c3c/optimized/c_abi.c.ll
 ; c3c/optimized/parse_expr.c.ll
@@ -83,7 +84,7 @@
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = lshr i32 %4, 24
   %6 = lshr i32 %4, 16
   %7 = or i32 %5, %6
@@ -96,7 +97,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = lshr i32 %4, 12
   %6 = lshr i32 %4, 8
   %7 = or i32 %5, %6

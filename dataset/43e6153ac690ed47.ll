@@ -52,7 +52,7 @@ entry:
   %3 = icmp ne i8 %2, 0
   %4 = select i1 %1, i1 %3, i1 false
   %5 = zext i1 %4 to i8
-  %6 = or disjoint i8 %5, %0
+  %6 = or disjoint i8 %0, %5
   ret i8 %6
 }
 

@@ -25,11 +25,20 @@ func0000000000000011:                   # @func0000000000000011
 .LBB2_2:                                # %entry
 	ori	a0, a1, 4
 	ret
-func0000000000000002:                   # @func0000000000000002
+func0000000000000031:                   # @func0000000000000031
 	andi	a0, a0, 1
 	bnez	a0, .LBB3_2
+	srliw	a0, a2, 23
+	snez	a1, a0
+	addi	a1, a1, 2
+.LBB3_2:                                # %entry
+	ori	a0, a1, 4
+	ret
+func0000000000000002:                   # @func0000000000000002
+	andi	a0, a0, 1
+	bnez	a0, .LBB4_2
 	li	a0, 2
 	ret
-.LBB3_2:
+.LBB4_2:
 	ori	a0, a1, 2
 	ret

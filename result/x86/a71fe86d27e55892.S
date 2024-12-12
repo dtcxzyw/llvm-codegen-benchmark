@@ -16,8 +16,7 @@ func0000000000000014:                   # @func0000000000000014
 	addq	%rdi, %rax
 	retq
 func0000000000000015:                   # @func0000000000000015
-	leaq	(%rsi,%rsi,2), %rax
-	leaq	7(,%rax,4), %rax
+	leaq	7(%rsi,%rsi,2), %rax
 	andq	$-8, %rax
 	addq	%rdi, %rax
 	retq

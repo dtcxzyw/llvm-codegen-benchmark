@@ -24,11 +24,10 @@ entry:
   ret i32 %5
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; clamav/optimized/explode.c.ll
 ; cmake/optimized/json_reader.cpp.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
-; linux/optimized/intel_snps_phy.ll
 ; ozz-animation/optimized/jsoncpp.cpp.ll
 ; postgres/optimized/jsonapi.ll
 ; postgres/optimized/jsonapi_shlib.ll
@@ -42,7 +41,7 @@ entry:
   %2 = shl i32 %1, 10
   %3 = and i32 %2, 1047552
   %4 = add nuw nsw i32 %3, 65536
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 

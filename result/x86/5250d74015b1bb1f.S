@@ -99,11 +99,6 @@ func00000000000000fd:                   # @func00000000000000fd
 	addl	%esi, %eax
 	leal	-1665391(%rdi,%rax), %eax
 	retq
-func0000000000000071:                   # @func0000000000000071
-	imull	$365, %edx, %eax                # imm = 0x16D
-	addl	%esi, %eax
-	leal	1721423(%rdi,%rax), %eax
-	retq
 func00000000000000fa:                   # @func00000000000000fa
 	imull	$4191920, %edx, %eax            # imm = 0x3FF6B0
 	addl	%esi, %eax

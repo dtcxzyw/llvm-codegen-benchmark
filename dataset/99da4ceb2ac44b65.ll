@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; coreutils-rs/optimized/1vsll3ssk1zrfv2c.ll
 ; delta-rs/optimized/4say4x9grcidoih4.ll
 ; image-rs/optimized/30755d6iao7ojcvl.ll
@@ -16,12 +16,11 @@
 ; tokenizers-rs/optimized/4hn9gefsll13qr1r.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
 ; wasmtime-rs/optimized/cxg2cx8gn6v5trt.ll
-; wireshark/optimized/display_filter_expression_dialog.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000018c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 2
-  %4 = icmp ne i64 %3, %1
+  %4 = icmp ne i64 %1, %3
   %5 = icmp ne i64 %0, 0
   %6 = and i1 %5, %4
   ret i1 %6
@@ -30,10 +29,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/LoopAccessAnalysis.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000008c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 3
-  %4 = icmp ugt i64 %3, %1
+  %4 = icmp ult i64 %1, %3
   %5 = icmp ne i64 %0, 0
   %6 = and i1 %5, %4
   ret i1 %6

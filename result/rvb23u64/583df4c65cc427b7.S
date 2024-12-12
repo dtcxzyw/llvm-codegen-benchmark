@@ -19,11 +19,11 @@ func000000000000001c:                   # @func000000000000001c
 	sext.w	a0, a0
 	mul	a0, a0, a1
 	ret
-func000000000000006c:                   # @func000000000000006c
+func000000000000005c:                   # @func000000000000005c
 	sext.w	a2, a2
-	sext.w	a1, a1
+	zext.w	a1, a1
 	mul	a1, a1, a2
-	zext.w	a0, a0
+	sext.w	a0, a0
 	mul	a0, a0, a1
 	ret
 func000000000000005e:                   # @func000000000000005e

@@ -1,32 +1,8 @@
-func00000000000000d8:                   // @func00000000000000d8
+func00000000000001a1:                   // @func00000000000001a1
 // %bb.0:                               // %entry
-	ushll	v3.8h, v3.8b, #0
-	ushll	v2.8h, v2.8b, #0
-	ushll	v4.4s, v3.4h, #8
-	ushll2	v3.4s, v3.8h, #8
-	orr	v0.16b, v4.16b, v0.16b
-	orr	v1.16b, v3.16b, v1.16b
-	ushll	v3.4s, v2.4h, #0
-	ushll2	v2.4s, v2.8h, #0
-	cmhi	v0.4s, v0.4s, v3.4s
-	cmhi	v1.4s, v1.4s, v2.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
-	ret
-                                        // -- End function
-func00000000000000d1:                   // @func00000000000000d1
-// %bb.0:                               // %entry
-	ushll	v3.8h, v3.8b, #0
-	ushll	v2.8h, v2.8b, #0
-	ushll	v4.4s, v3.4h, #8
-	ushll2	v3.4s, v3.8h, #8
-	orr	v0.16b, v4.16b, v0.16b
-	orr	v1.16b, v3.16b, v1.16b
-	ushll	v3.4s, v2.4h, #0
-	ushll2	v2.4s, v2.8h, #0
-	cmeq	v0.4s, v0.4s, v3.4s
-	cmeq	v1.4s, v1.4s, v2.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	and	w8, w2, #0xff
+	orr	w8, w0, w8, lsl #8
+	cmp	w8, w1, uxtb
+	cset	w0, eq
 	ret
                                         // -- End function

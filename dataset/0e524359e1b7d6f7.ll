@@ -23,8 +23,7 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
-; linux/optimized/tbfadt.ll
+; 4 occurrences:
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; oiio/optimized/softimageinput.cpp.ll
 ; qemu/optimized/block_vpc.c.ll

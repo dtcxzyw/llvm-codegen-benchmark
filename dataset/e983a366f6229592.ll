@@ -1,5 +1,6 @@
 
-; 9 occurrences:
+; 10 occurrences:
+; boost/optimized/gregorian.ll
 ; cmake/optimized/cm_get_date.c.ll
 ; cpython/optimized/_datetimemodule.ll
 ; cpython/optimized/_zoneinfo.ll
@@ -33,11 +34,11 @@ entry:
   %3 = add nsw i32 %1, %2
   %4 = sext i32 %3 to i64
   %5 = mul nsw i64 %4, 144
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
-; 18 occurrences:
+; 21 occurrences:
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/21mzc6y6po60ra2.ll
 ; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
@@ -54,7 +55,10 @@ entry:
 ; delta-rs/optimized/9v8xvedf69luuxb.ll
 ; libquic/optimized/prtime.cc.ll
 ; nuklear/optimized/unity.c.ll
+; turborepo-rs/optimized/4xosjxdd4tab2lzmgagh8c3os.ll
 ; velox/optimized/Sequence.cpp.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; zxing/optimized/ODDataBarReader.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0, i32 %1, i32 %2) #0 {
@@ -75,7 +79,7 @@ entry:
   %3 = add i32 %1, %2
   %4 = sext i32 %3 to i64
   %5 = mul nsw i64 %4, 6
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 

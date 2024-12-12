@@ -1,5 +1,8 @@
-func0000000000000024:                   # @func0000000000000024
-	sh1add	a2, a2, a0
-	sltu	a0, a0, a2
+func0000000000000064:                   # @func0000000000000064
+	snez	a0, a2
+	andn	a0, a0, a1
+	ret
+func0000000000000044:                   # @func0000000000000044
+	sgtz	a0, a2
 	andn	a0, a0, a1
 	ret

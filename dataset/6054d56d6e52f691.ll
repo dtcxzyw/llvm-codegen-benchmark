@@ -1,5 +1,5 @@
 
-; 43 occurrences:
+; 47 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/cecSeq.c.ll
@@ -24,6 +24,7 @@
 ; delta-rs/optimized/9v8xvedf69luuxb.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; gromacs/optimized/comm.cpp.ll
+; imgui/optimized/imgui_draw.cpp.ll
 ; libquic/optimized/prtime.cc.ll
 ; mitsuba3/optimized/rgb2spec_opt.cpp.ll
 ; nori/optimized/nanovg.c.ll
@@ -38,10 +39,13 @@
 ; slurm/optimized/ring.ll
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_truetype.c.ll
+; turborepo-rs/optimized/4xosjxdd4tab2lzmgagh8c3os.ll
 ; velox/optimized/DateTimeFormatter.cpp.ll
 ; velox/optimized/Sequence.cpp.ll
 ; velox/optimized/Timestamp.cpp.ll
 ; velox/optimized/tz.cpp.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; zxing/optimized/ODDataBarReader.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i32 %0, i32 %1) #0 {
@@ -66,7 +70,8 @@ entry:
   ret i64 %4
 }
 
-; 25 occurrences:
+; 28 occurrences:
+; boost/optimized/gregorian.ll
 ; cmake/optimized/cm_get_date.c.ll
 ; cpython/optimized/_datetimemodule.ll
 ; cpython/optimized/_zoneinfo.ll
@@ -75,6 +80,7 @@ entry:
 ; linux/optimized/build_utility.ll
 ; linux/optimized/drm_vblank.ll
 ; linux/optimized/regmap.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; opencv/optimized/denoising.cpp.ll
 ; postgres/optimized/brin_minmax_multi.ll
 ; postgres/optimized/date.ll
@@ -84,6 +90,7 @@ entry:
 ; postgres/optimized/nbtdedup.ll
 ; postgres/optimized/nodeTidscan.ll
 ; postgres/optimized/parse_clause.ll
+; postgres/optimized/parse_relation.ll
 ; postgres/optimized/predicate.ll
 ; postgres/optimized/timestamp.ll
 ; protobuf/optimized/parser.cc.ll

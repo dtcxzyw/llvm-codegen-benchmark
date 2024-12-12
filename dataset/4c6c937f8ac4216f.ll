@@ -6,7 +6,7 @@
 define i8 @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 15
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = trunc nuw nsw i64 %3 to i8
   ret i8 %4
 }
@@ -20,7 +20,7 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, %0
+  %2 = add i64 %0, %1
   %3 = trunc i64 %2 to i8
   ret i8 %3
 }
@@ -58,7 +58,7 @@ entry:
 define i8 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = trunc i64 %3 to i8
   ret i8 %4
 }

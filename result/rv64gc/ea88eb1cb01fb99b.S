@@ -6,13 +6,13 @@ func000000000000000b:                   # @func000000000000000b
 	slli	a0, a0, 44
 	srli	a0, a0, 44
 	ret
-func0000000000000023:                   # @func0000000000000023
+func00000000000000a3:                   # @func00000000000000a3
 	andi	a1, a1, 255
 	sltiu	a1, a1, 127
 	add	a0, a0, a1
 	andi	a0, a0, 31
 	ret
-func0000000000000021:                   # @func0000000000000021
+func00000000000000a1:                   # @func00000000000000a1
 	andi	a1, a1, 255
 	sltiu	a1, a1, 127
 	add	a0, a0, a1

@@ -3,5 +3,5 @@ func0000000000000006:                   # @func0000000000000006
 	vfncvt.rtz.x.f.w	v10, v12
 	vnot.v	v10, v10
 	vmslt.vv	v12, v8, v10
-	vmand.mm	v0, v12, v0
+	vmand.mm	v0, v0, v12
 	ret

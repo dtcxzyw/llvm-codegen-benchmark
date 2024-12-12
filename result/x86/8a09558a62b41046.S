@@ -153,33 +153,22 @@ func00000000000000a4:                   # @func00000000000000a4
 	retq
 .LCPI13_0:
 	.long	0x3f800000                      # float 1
-func0000000000000027:                   # @func0000000000000027
-	vmovss	.LCPI13_0(%rip), %xmm2          # xmm2 = [1.0E+0,0.0E+0,0.0E+0,0.0E+0]
-	vucomiss	%xmm1, %xmm2
-	seta	%cl
-	vxorps	%xmm1, %xmm1, %xmm1
-	vucomiss	%xmm1, %xmm0
-	setp	%dl
-	setne	%al
-	orb	%dl, %al
-	andb	%dil, %al
-	andb	%cl, %al
-	retq
-func0000000000000047:                   # @func0000000000000047
+func0000000000000072:                   # @func0000000000000072
 	vxorps	%xmm2, %xmm2, %xmm2
 	vucomiss	%xmm2, %xmm1
-	seta	%cl
+	setp	%al
+	setne	%cl
+	orb	%al, %cl
 	andb	%dil, %cl
-	vucomiss	%xmm2, %xmm0
-	setp	%dl
-	setne	%al
-	orb	%dl, %al
+	vmovss	.LCPI13_0(%rip), %xmm1          # xmm1 = [1.0E+0,0.0E+0,0.0E+0,0.0E+0]
+	vucomiss	%xmm0, %xmm1
+	seta	%al
 	andb	%cl, %al
 	retq
-.LCPI15_0:
+.LCPI14_0:
 	.long	0x3f000000                      # float 0.5
 func000000000000004a:                   # @func000000000000004a
-	vmovss	.LCPI15_0(%rip), %xmm2          # xmm2 = [5.0E-1,0.0E+0,0.0E+0,0.0E+0]
+	vmovss	.LCPI14_0(%rip), %xmm2          # xmm2 = [5.0E-1,0.0E+0,0.0E+0,0.0E+0]
 	vucomiss	%xmm2, %xmm1
 	seta	%cl
 	andb	%dil, %cl
@@ -187,10 +176,10 @@ func000000000000004a:                   # @func000000000000004a
 	setae	%al
 	andb	%cl, %al
 	retq
-.LCPI16_0:
+.LCPI15_0:
 	.long	0x3f000000                      # float 0.5
 func000000000000002c:                   # @func000000000000002c
-	vmovss	.LCPI16_0(%rip), %xmm2          # xmm2 = [5.0E-1,0.0E+0,0.0E+0,0.0E+0]
+	vmovss	.LCPI15_0(%rip), %xmm2          # xmm2 = [5.0E-1,0.0E+0,0.0E+0,0.0E+0]
 	vucomiss	%xmm1, %xmm2
 	seta	%cl
 	andb	%dil, %cl
@@ -213,16 +202,5 @@ func0000000000000011:                   # @func0000000000000011
 	andb	%dil, %cl
 	vucomiss	%xmm0, %xmm0
 	setp	%al
-	andb	%cl, %al
-	retq
-.LCPI19_0:
-	.long	0x4e6e6b28                      # float 1.0E+9
-func00000000000000e2:                   # @func00000000000000e2
-	vucomiss	%xmm1, %xmm1
-	setnp	%cl
-	andb	%dil, %cl
-	vmovss	.LCPI19_0(%rip), %xmm1          # xmm1 = [1.0E+9,0.0E+0,0.0E+0,0.0E+0]
-	vucomiss	%xmm0, %xmm1
-	seta	%al
 	andb	%cl, %al
 	retq

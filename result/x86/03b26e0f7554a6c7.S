@@ -1,4 +1,4 @@
-func000000000000038c:                   # @func000000000000038c
+func0000000000000b0c:                   # @func0000000000000b0c
 	addl	%esi, %edx
 	cmpl	$2, %edx
 	setl	%cl
@@ -6,7 +6,7 @@ func000000000000038c:                   # @func000000000000038c
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000000190:                   # @func0000000000000190
+func0000000000000310:                   # @func0000000000000310
 	addl	%esi, %edx
 	cmpl	$513, %edx                      # imm = 0x201
 	setae	%cl

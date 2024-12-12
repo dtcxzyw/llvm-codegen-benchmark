@@ -86,17 +86,6 @@ entry:
 }
 
 ; 1 occurrences:
-; coreutils-rs/optimized/2wc2yx8ferzqfnf3.ll
-; Function Attrs: nounwind
-define i1 @func000000000000004c(double %0, double %1, i64 %2) #0 {
-entry:
-  %3 = icmp ult i64 %2, 7
-  %4 = fcmp oge double %0, %1
-  %5 = select i1 %4, i1 %3, i1 false
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; opencv/optimized/ts_func.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000cd(double %0, double %1, i64 %2) #0 {

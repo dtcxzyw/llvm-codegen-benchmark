@@ -16,7 +16,7 @@
 ; ruby/optimized/parse.ll
 ; ruby/optimized/regexec.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000088(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ult ptr %1, %2
   %4 = select i1 %3, ptr %1, ptr %2
@@ -111,7 +111,7 @@ entry:
 ; ruby/optimized/regexec.ll
 ; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000104(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ugt ptr %2, %1
   %4 = select i1 %3, ptr %1, ptr %2
@@ -119,25 +119,11 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
-; abc/optimized/cuddClip.c.ll
-; folly/optimized/Libgen.cpp.ll
-; llvm/optimized/DataFlowSanitizer.cpp.ll
-; llvm/optimized/Preprocessor.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000081(ptr %0, ptr %1, ptr %2) #0 {
-entry:
-  %3 = icmp ugt ptr %1, %2
-  %4 = select i1 %3, ptr %1, ptr %2
-  %5 = icmp eq ptr %4, %0
-  ret i1 %5
-}
-
 ; 2 occurrences:
 ; jq/optimized/regexec.ll
 ; oniguruma/optimized/regexec.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000089(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000109(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ugt ptr %2, %1
   %4 = select i1 %3, ptr %1, ptr %2
@@ -152,7 +138,7 @@ entry:
 ; openjdk/optimized/shenandoahMark.ll
 ; wireshark/optimized/blf.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000108(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ugt ptr %2, %1
   %4 = select i1 %3, ptr %1, ptr %2
@@ -166,7 +152,7 @@ entry:
 ; pbrt-v4/optimized/loopsubdiv.cpp.ll
 ; verilator/optimized/V3Dfg.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000081(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ult ptr %1, %2
   %4 = select i1 %3, ptr %1, ptr %2
@@ -174,17 +160,32 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 6 occurrences:
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; hermes/optimized/HadesGC.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; pbrt-v4/optimized/loopsubdiv.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000084(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ult ptr %1, %2
   %4 = select i1 %3, ptr %1, ptr %2
   %5 = icmp ult ptr %4, %0
+  ret i1 %5
+}
+
+; 3 occurrences:
+; abc/optimized/cuddClip.c.ll
+; llvm/optimized/DataFlowSanitizer.cpp.ll
+; llvm/optimized/Preprocessor.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000101(ptr %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = icmp ugt ptr %2, %1
+  %4 = select i1 %3, ptr %1, ptr %2
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; abc/optimized/giaUtil.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d6(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000001a6(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; stb/optimized/stb_herringbone_wang_tile.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a6(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nsw i64 %1, 4
@@ -30,7 +30,7 @@ entry:
 ; openmpi/optimized/tm_kpartitioning.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000da(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000001aa(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1

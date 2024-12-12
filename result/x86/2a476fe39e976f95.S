@@ -1,6 +1,6 @@
 func0000000000000014:                   # @func0000000000000014
-	movq	%rsi, %rax
-	imull	%edi, %eax
+	movq	%rdi, %rax
+	imull	%esi, %eax
 	shlq	$32, %rax
 	retq
 func0000000000000016:                   # @func0000000000000016

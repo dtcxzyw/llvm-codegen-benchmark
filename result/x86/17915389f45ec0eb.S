@@ -37,3 +37,11 @@ func0000000000000007:                   # @func0000000000000007
 	vcmpneqss	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
+.LCPI5_0:
+	.long	0x3f4ccccd                      # float 0.800000011
+func000000000000000c:                   # @func000000000000000c
+	vcvtusi2ss	%rdi, %xmm1, %xmm1
+	vdivss	%xmm0, %xmm1, %xmm0
+	vucomiss	.LCPI5_0(%rip), %xmm0
+	setae	%al
+	retq

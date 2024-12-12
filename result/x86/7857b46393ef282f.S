@@ -10,6 +10,13 @@ func0000000000000004:                   # @func0000000000000004
 	setb	%al
 	shll	$11, %eax
 	retq
+func0000000000000014:                   # @func0000000000000014
+	xorl	%eax, %eax
+	shrq	$51, %rdi
+	sete	%al
+	shll	$13, %eax
+	incl	%eax
+	retq
 func000000000000000a:                   # @func000000000000000a
 	xorl	%eax, %eax
 	testq	%rdi, %rdi
@@ -21,6 +28,13 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	$65, %rdi
 	movw	$7, %ax
 	sbbw	$-1, %ax
+	retq
+func0000000000000018:                   # @func0000000000000018
+	xorl	%eax, %eax
+	cmpq	$2097152, %rdi                  # imm = 0x200000
+	setae	%al
+	shll	$4, %eax
+	addl	$16, %eax
 	retq
 func000000000000000c:                   # @func000000000000000c
 	xorl	%eax, %eax

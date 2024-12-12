@@ -4,13 +4,13 @@
 ; hermes/optimized/JSTypedArray.cpp.ll
 ; hermes/optimized/TypedArray.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(i32 %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000000f(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = inttoptr i64 %1 to ptr
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   %6 = zext i32 %0 to i64
-  %7 = getelementptr nusw i8, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -48,13 +48,13 @@ entry:
 ; z3/optimized/smt_clause.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(i32 %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000003f(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = inttoptr i64 %1 to ptr
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   %6 = zext nneg i32 %0 to i64
-  %7 = getelementptr nusw i8, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %5, i64 %6
   ret ptr %7
 }
 

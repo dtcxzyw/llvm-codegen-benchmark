@@ -16,10 +16,10 @@
 ; postgres/optimized/mbutils.ll
 ; z3/optimized/euf_egraph.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000042(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000082(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, %0
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = icmp eq i32 %0, 0
   %6 = or i1 %5, %4
   ret i1 %6
@@ -33,10 +33,10 @@ entry:
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-set.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000202(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000402(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %2, %0
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = icmp eq i32 %0, -1
   %6 = or i1 %5, %4
   ret i1 %6
@@ -45,10 +45,10 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/device_cgroup.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, %1
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = icmp eq i32 %1, -1
   %6 = or i1 %4, %5
   ret i1 %6
@@ -57,23 +57,11 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/utilities.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000094(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, %0
   %4 = or i1 %3, %1
   %5 = icmp sgt i32 %0, 0
-  %6 = or i1 %5, %4
-  ret i1 %6
-}
-
-; 1 occurrences:
-; nuttx/optimized/lib_wcsncmp.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000302(i32 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ne i32 %2, %0
-  %4 = or i1 %3, %1
-  %5 = icmp eq i32 %0, 0
   %6 = or i1 %5, %4
   ret i1 %6
 }

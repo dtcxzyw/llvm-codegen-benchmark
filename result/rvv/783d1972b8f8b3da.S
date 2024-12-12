@@ -131,22 +131,3 @@ func0000000000000029:                   # @func0000000000000029
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v8, v10, 0
 	ret
-.LCPI8_0:
-	.quad	-7178738738347512491            # 0x9c5fff26ed75ed55
-func0000000000000001:                   # @func0000000000000001
-	lui	a0, %hi(.LCPI8_0)
-	ld	a0, %lo(.LCPI8_0)(a0)
-	lui	a1, 244141
-	addiw	a1, a1, -1536
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmacc.vx	v8, a1, v10
-	vmulh.vx	v10, v8, a0
-	li	a0, 63
-	vadd.vv	v8, v10, v8
-	vsrl.vx	v10, v8, a0
-	li	a0, 41
-	vsra.vx	v8, v8, a0
-	vadd.vv	v10, v8, v10
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vnsrl.wi	v8, v10, 0
-	ret

@@ -1,9 +1,14 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	shl	v0.16b, v0.16b, #7
-	sub	v1.16b, v1.16b, v2.16b
-	cmlt	v0.16b, v0.16b, #0
-	bic	v1.16b, v1.16b, v0.16b
-	sub	v0.16b, v1.16b, v0.16b
+	sub	w8, w1, w2
+	tst	w0, #0x1
+	csinc	w0, w8, wzr, eq
+	ret
+                                        // -- End function
+func0000000000000001:                   // @func0000000000000001
+// %bb.0:                               // %entry
+	sub	w8, w1, w2
+	tst	w0, #0x1
+	csinc	w0, w8, wzr, eq
 	ret
                                         // -- End function

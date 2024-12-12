@@ -14,7 +14,8 @@ entry:
   ret i64 %5
 }
 
-; 26 occurrences:
+; 27 occurrences:
+; boost/optimized/alloc_lib.ll
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
 ; eastl/optimized/BenchmarkHash.cpp.ll
 ; eastl/optimized/BenchmarkString.cpp.ll
@@ -47,7 +48,7 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %3, %2
-  %5 = or i64 %4, 2449958197289549824
+  %5 = or i64 %4, 1
   ret i64 %5
 }
 

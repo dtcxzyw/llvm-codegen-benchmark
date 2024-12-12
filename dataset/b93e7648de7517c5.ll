@@ -16,7 +16,7 @@
 ; quantlib/optimized/proxygreekengine.ll
 ; quantlib/optimized/zabr.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000181(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
   %3 = ashr exact i64 %0, 3
@@ -42,7 +42,7 @@ entry:
 ; quantlib/optimized/proxygreekengine.ll
 ; quantlib/optimized/zabr.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000188(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
   %3 = ashr exact i64 %0, 3
@@ -57,7 +57,7 @@ entry:
 ; quickjs/optimized/quickjs.ll
 ; tev/optimized/ClipboardImageLoader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 32
   %3 = ashr exact i64 %0, 32
@@ -70,7 +70,7 @@ entry:
 ; quantlib/optimized/levenbergmarquardt.ll
 ; quantlib/optimized/svd.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d8(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001a8(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 32
   %3 = ashr exact i64 %0, 32
@@ -82,7 +82,7 @@ entry:
 ; 1 occurrences:
 ; lightgbm/optimized/metadata.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 32
   %3 = ashr exact i64 %0, 32
@@ -94,7 +94,7 @@ entry:
 ; 1 occurrences:
 ; lightgbm/optimized/metadata.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 32
   %3 = ashr exact i64 %0, 32
@@ -106,7 +106,7 @@ entry:
 ; 1 occurrences:
 ; tev/optimized/Channel.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000121(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 32
   %3 = ashr i64 %0, 32

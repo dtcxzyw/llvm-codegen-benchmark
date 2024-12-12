@@ -35,7 +35,7 @@ entry:
   %sum.shift = lshr i64 %1, 48
   %2 = trunc nuw nsw i64 %sum.shift to i32
   %3 = and i32 %2, 255
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 

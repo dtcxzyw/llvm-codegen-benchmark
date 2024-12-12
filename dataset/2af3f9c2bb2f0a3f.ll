@@ -14,6 +14,19 @@ entry:
   ret i1 %4
 }
 
+; 3 occurrences:
+; llvm/optimized/X86AsmBackend.cpp.ll
+; wireshark/optimized/packet-h265.c.ll
+; wireshark/optimized/packet-ieee80211.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000144(i8 %0, i32 %1) #0 {
+entry:
+  %2 = trunc nuw i32 %1 to i8
+  %3 = add nuw i8 %0, 1
+  %4 = icmp ult i8 %3, %2
+  ret i1 %4
+}
+
 ; 11 occurrences:
 ; nix/optimized/json-to-value.ll
 ; nlohmann_json/optimized/unit-bjdata.cpp.ll
@@ -27,7 +40,7 @@ entry:
 ; nlohmann_json/optimized/unit-ubjson.cpp.ll
 ; wireshark/optimized/asn1.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i8
   %3 = add nuw nsw i8 %0, 1
@@ -47,7 +60,7 @@ entry:
 ; nlohmann_json/optimized/unit-regression2.cpp.ll
 ; nlohmann_json/optimized/unit-ubjson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i8
   %3 = add nuw i8 %0, 1

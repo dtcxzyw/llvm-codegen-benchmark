@@ -23,9 +23,9 @@ func0000000000000004:                   # @func0000000000000004
 	subl	%edi, %eax
 	retq
 func0000000000000019:                   # @func0000000000000019
-	xorl	%eax, %eax
-	testl	%edx, %edx
-	cmovnsl	%esi, %eax
+	cmpl	$7, %edx
+	movl	$1, %eax
+	cmovgel	%esi, %eax
 	subl	%edi, %eax
 	retq
 func0000000000000011:                   # @func0000000000000011

@@ -3,6 +3,8 @@
 ; abseil-cpp/optimized/city.cc.ll
 ; abseil-cpp/optimized/city_test.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; clamav/optimized/pdfdecode.c.ll
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
@@ -53,7 +55,6 @@
 ; libsodium/optimized/libsodium_la-poly1305_donna.ll
 ; libsodium/optimized/libsodium_la-x25519_ref10.ll
 ; linux/optimized/commit.ll
-; linux/optimized/drm_self_refresh_helper.ll
 ; linux/optimized/extents_status.ll
 ; linux/optimized/fast_commit.ll
 ; linux/optimized/intel_engine_pm.ll
@@ -207,7 +208,6 @@
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
@@ -246,18 +246,19 @@
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, -5435081209227447693
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = lshr i64 %3, 47
   ret i64 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; arrow/optimized/tz.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; minetest/optimized/profilergraph.cpp.ll
 ; mitsuba3/optimized/virtmem.cpp.ll
 ; velox/optimized/Timestamp.cpp.ll
 ; velox/optimized/tz.cpp.ll
+; zed-rs/optimized/1dgnm6lfd9h2ap1ws2supa1aq.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
@@ -279,7 +280,7 @@ entry:
 define i64 @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 7
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = lshr i64 %3, 1
   ret i64 %4
 }
@@ -512,7 +513,7 @@ entry:
 define i64 @func000000000000001e(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 18
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = lshr i64 %3, 6
   ret i64 %4
 }
@@ -593,7 +594,7 @@ entry:
 define i64 @func000000000000001a(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 10033
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = lshr i64 %3, 18
   ret i64 %4
 }

@@ -19,10 +19,3 @@ func0000000000000004:                   # @func0000000000000004
 	testb	$1, %sil
 	cmoveq	%rdi, %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
-	shrq	$32, %rdx
-	movq	$-22, %rax
-	cmovneq	%rax, %rdi
-	testb	$1, %sil
-	cmoveq	%rdi, %rax
-	retq

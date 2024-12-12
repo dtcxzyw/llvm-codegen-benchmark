@@ -20,8 +20,8 @@ func0000000000000036:                   // @func0000000000000036
 	mul	x8, x2, x8
 	extr	x8, x9, x8, #51
 	lsr	x9, x9, #51
-	adds	x8, x8, x0
-	adc	x9, x9, x1
+	adds	x8, x0, x8
+	adc	x9, x1, x9
 	extr	x0, x9, x8, #51
 	lsr	x1, x9, #51
 	ret

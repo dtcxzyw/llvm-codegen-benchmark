@@ -1,5 +1,5 @@
 
-; 294 occurrences:
+; 300 occurrences:
 ; abseil-cpp/optimized/bind.cc.ll
 ; abseil-cpp/optimized/civil_time.cc.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
@@ -95,7 +95,6 @@
 ; hdf5/optimized/H5Shyper.c.ll
 ; hdf5/optimized/H5Spoint.c.ll
 ; hdf5/optimized/H5Tvlen.c.ll
-; hdf5/optimized/H5VLnative_blob.c.ll
 ; hyperscan/optimized/limex_64.c.ll
 ; hyperscan/optimized/mpv.c.ll
 ; hyperscan/optimized/noodle_engine.c.ll
@@ -293,6 +292,13 @@
 ; wireshark/optimized/tvbuff.c.ll
 ; wireshark/optimized/vwr.c.ll
 ; wolfssl/optimized/sp_int.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; zed-rs/optimized/etmluiftgqx5jpyivviyferrj.ll
 ; zxing/optimized/QRFormatInformation.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1, i8 %2) #0 {
@@ -304,7 +310,7 @@ entry:
   ret i64 %6
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
@@ -317,6 +323,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-siphash.ll
 ; openssl/optimized/libcrypto-shlib-siphash.ll
 ; redis/optimized/listpack.ll
+; zed-rs/optimized/cp92gkg5707l1e819dflws6md.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000b(i64 %0, i64 %1, i8 %2) #0 {
 entry:
@@ -411,7 +418,7 @@ entry:
   ret i64 %6
 }
 
-; 36 occurrences:
+; 37 occurrences:
 ; c3c/optimized/parse_global.c.ll
 ; folly/optimized/Compression.cpp.ll
 ; git/optimized/commit-graph.ll
@@ -445,6 +452,7 @@ entry:
 ; wireshark/optimized/packet-ptp.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; yosys/optimized/xprop.ll
+; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll

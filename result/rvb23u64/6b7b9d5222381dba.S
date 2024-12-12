@@ -64,18 +64,6 @@ func0000000000000040:                   # @func0000000000000040
 	add	a0, a0, a1
 	addiw	a0, a0, 3
 	ret
-func0000000000000045:                   # @func0000000000000045
-	addi	a2, a2, 2
-	mul	a0, a0, a2
-	add	a0, a0, a1
-	addiw	a0, a0, 2
-	ret
-func0000000000000015:                   # @func0000000000000015
-	addi	a2, a2, 2
-	mul	a1, a1, a2
-	add	a0, a0, a1
-	addiw	a0, a0, 1
-	ret
 func0000000000000044:                   # @func0000000000000044
 	addi	a2, a2, 1
 	mul	a0, a0, a2
@@ -117,6 +105,18 @@ func00000000000000f0:                   # @func00000000000000f0
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	addiw	a0, a0, 1
+	ret
+func0000000000000015:                   # @func0000000000000015
+	addi	a2, a2, 5
+	mul	a1, a1, a2
+	add	a0, a0, a1
+	addiw	a0, a0, 5
+	ret
+func0000000000000045:                   # @func0000000000000045
+	addi	a2, a2, -1
+	mul	a0, a0, a2
+	add	a0, a0, a1
+	addiw	a0, a0, 108
 	ret
 func00000000000000c4:                   # @func00000000000000c4
 	addi	a2, a2, 1
@@ -161,12 +161,6 @@ func0000000000000077:                   # @func0000000000000077
 	addiw	a0, a0, 1
 	ret
 func00000000000000f7:                   # @func00000000000000f7
-	addi	a2, a2, 1
-	mul	a0, a0, a2
-	add	a0, a0, a1
-	addiw	a0, a0, 1
-	ret
-func0000000000000031:                   # @func0000000000000031
 	addi	a2, a2, 1
 	mul	a0, a0, a2
 	add	a0, a0, a1

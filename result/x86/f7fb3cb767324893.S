@@ -6,7 +6,7 @@ func0000000000000002:                   # @func0000000000000002
 	movl	$2, %eax
 	cmovnel	%ecx, %eax
 	retq
-func0000000000000010:                   # @func0000000000000010
+func0000000000000030:                   # @func0000000000000030
 	andb	$1, %dil
 	xorl	%ecx, %ecx
 	cmpl	$86400, %esi                    # imm = 0x15180
@@ -33,4 +33,12 @@ func0000000000000014:                   # @func0000000000000014
 	cmpb	$1, %dil
 	sbbl	%eax, %eax
 	orl	%ecx, %eax
+	retq
+func0000000000000010:                   # @func0000000000000010
+	xorl	%ecx, %ecx
+	cmpl	$4, %esi
+	setae	%cl
+	testb	$1, %dil
+	movl	$2, %eax
+	cmovnel	%ecx, %eax
 	retq

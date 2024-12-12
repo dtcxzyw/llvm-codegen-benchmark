@@ -1,6 +1,13 @@
 
-; 8 occurrences:
+; 15 occurrences:
 ; arrow/optimized/tdigest.cc.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; opencv/optimized/tldDetector.cpp.ll
 ; openjdk/optimized/DrawParallelogram.ll
 ; openjdk/optimized/FillParallelogram.ll

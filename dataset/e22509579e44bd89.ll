@@ -56,7 +56,7 @@ define i8 @func0000000000000001(i8 %0, i8 %1) #0 {
 entry:
   %2 = shl i8 %1, 4
   %3 = and i8 %2, 48
-  %4 = add nsw i8 %3, %0
+  %4 = add nsw i8 %0, %3
   ret i8 %4
 }
 

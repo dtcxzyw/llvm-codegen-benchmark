@@ -8,7 +8,7 @@
 define double @func000000000000000c(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = fcmp oge double %2, 0xC1E0000000000000
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = select i1 %4, double %0, double 0.000000e+00
   ret double %5
 }
@@ -34,7 +34,7 @@ entry:
 define double @func0000000000000006(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = fcmp one double %2, 0x7FF0000000000000
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = select i1 %4, double %0, double 0x7FF8000000000000
   ret double %5
 }

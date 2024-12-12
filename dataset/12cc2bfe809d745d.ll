@@ -2,12 +2,12 @@
 ; 1 occurrences:
 ; openjdk/optimized/xMark.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000001e4(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 1
   %4 = and i64 %3, 8589934584
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %0, i64 8
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 8
   %7 = icmp ult ptr %6, %5
   ret i1 %7
 }
@@ -34,12 +34,12 @@ entry:
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a4(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000364(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 2
   %4 = and i64 %3, -16
   %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %0, i64 16
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 16
   %7 = icmp ult ptr %6, %5
   ret i1 %7
 }

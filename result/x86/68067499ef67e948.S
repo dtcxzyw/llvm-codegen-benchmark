@@ -22,6 +22,12 @@ func0000000000000001:                   # @func0000000000000001
 	negl	%eax
 	cmovsl	%ecx, %eax
 	retq
+func0000000000000007:                   # @func0000000000000007
+	leal	1(%rdi), %ecx
+	movl	%ecx, %eax
+	negl	%eax
+	cmovsl	%ecx, %eax
+	retq
 func0000000000000002:                   # @func0000000000000002
 	leal	1(%rdi), %ecx
 	movl	%ecx, %eax
@@ -29,12 +35,6 @@ func0000000000000002:                   # @func0000000000000002
 	cmovsl	%ecx, %eax
 	retq
 func0000000000000003:                   # @func0000000000000003
-	leal	-1(%rdi), %ecx
-	movl	%ecx, %eax
-	negl	%eax
-	cmovsl	%ecx, %eax
-	retq
-func0000000000000007:                   # @func0000000000000007
 	leal	-1(%rdi), %ecx
 	movl	%ecx, %eax
 	negl	%eax

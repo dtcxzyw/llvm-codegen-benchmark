@@ -1,6 +1,7 @@
 
-; 27 occurrences:
+; 28 occurrences:
 ; abc/optimized/cuddPriority.c.ll
+; boost/optimized/area.ll
 ; graphviz/optimized/gvusershape.c.ll
 ; graphviz/optimized/neatoinit.c.ll
 ; graphviz/optimized/ortho.c.ll

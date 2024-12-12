@@ -1,22 +1,15 @@
 
-; 12 occurrences:
+; 5 occurrences:
 ; abc/optimized/abcFanOrder.c.ll
-; abc/optimized/fxuReduce.c.ll
 ; abc/optimized/ioReadBlif.c.ll
 ; darktable/optimized/masks.c.ll
 ; gromacs/optimized/gmx_wham.cpp.ll
-; libjpeg-turbo/optimized/jccoefct.c.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
-; opencv/optimized/msd.cpp.ll
-; openexr/optimized/unpack.c.ll
-; openjdk/optimized/jccoefct.ll
-; openusd/optimized/openexr-c.c.ll
-; sentencepiece/optimized/bpe_model_trainer.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0) #0 {
 entry:
   %1 = freeze i32 %0
-  %2 = add nsw i32 %1, -1
+  %2 = add nsw i32 %1, -2
   %3 = sext i32 %2 to i64
   ret i64 %3
 }

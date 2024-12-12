@@ -1,11 +1,12 @@
 func0000000000000000:                   # @func0000000000000000
-	notb	%dil
-	movzbl	%dil, %eax
+	notb	%dl
+	movzbl	%dl, %eax
 	andl	$1, %eax
-	leaq	16(,%rax,8), %rcx
-	testb	$1, %dl
-	movl	$16, %eax
-	cmoveq	%rcx, %rax
+	leaq	16(,%rax,8), %rax
 	testb	$1, %sil
+	movl	$24, %ecx
+	cmovneq	%rax, %rcx
+	testb	$1, %dil
+	movl	$16, %eax
 	cmoveq	%rcx, %rax
 	retq

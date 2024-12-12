@@ -1,10 +1,9 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV64BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV64LE.cc.ll
-; postgres/optimized/spgutils.ll
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i64 %1) #0 {

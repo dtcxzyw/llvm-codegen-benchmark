@@ -1,8 +1,7 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; hyperscan/optimized/goughcompile.cpp.ll
 ; hyperscan/optimized/mcclellan.c.ll
-; linux/optimized/8250_dwlib.ll
 ; linux/optimized/8250_port.ll
 ; linux/optimized/move_extent.ll
 ; linux/optimized/namei.ll
@@ -31,7 +30,7 @@ define i32 @func0000000000000011(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
   %4 = shl i32 %1, %3
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -46,7 +45,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
   %4 = shl i32 %1, %3
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 

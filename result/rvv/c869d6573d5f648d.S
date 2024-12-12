@@ -1,4 +1,4 @@
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000014a:                   # @func000000000000014a
 	lui	a0, 16
 	addi	a0, a0, -1
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -6,7 +6,7 @@ func00000000000000aa:                   # @func00000000000000aa
 	vmsgt.vi	v10, v8, 0
 	vmand.mm	v0, v12, v10
 	ret
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000141:                   # @func0000000000000141
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgt.vi	v12, v10, -1
 	li	a0, 23

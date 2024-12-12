@@ -64,6 +64,6 @@ func0000000000000018:                   # @func0000000000000018
 	vpmovb2m	%xmm0, %k0
 	vpbroadcastw	.LCPI1_1(%rip), %ymm0   # ymm0 = [1024,1024,1024,1024,1024,1024,1024,1024,1024,1024,1024,1024,1024,1024,1024,1024]
 	vptestmw	%ymm0, %ymm1, %k1
-	korw	%k0, %k1, %k1
+	korw	%k1, %k0, %k1
 	vmovdqu16	%ymm0, %ymm0 {%k1} {z}
 	retq

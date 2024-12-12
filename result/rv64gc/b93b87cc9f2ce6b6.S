@@ -49,7 +49,7 @@ func0000000000000005:                   # @func0000000000000005
 .LBB6_2:                                # %entry
 	slliw	a0, a0, 1
 	ret
-func0000000000000023:                   # @func0000000000000023
+func0000000000000063:                   # @func0000000000000063
 	sext.w	a2, a1
 	li	a3, 15
 	bltu	a3, a2, .LBB7_2
@@ -57,7 +57,7 @@ func0000000000000023:                   # @func0000000000000023
 .LBB7_2:                                # %entry
 	slliw	a0, a0, 2
 	ret
-func0000000000000013:                   # @func0000000000000013
+func0000000000000053:                   # @func0000000000000053
 	sext.w	a2, a1
 	li	a3, 4
 	bltu	a2, a3, .LBB8_2
@@ -72,4 +72,11 @@ func0000000000000006:                   # @func0000000000000006
 	mv	a0, a1
 .LBB9_2:                                # %entry
 	slliw	a0, a0, 1
+	ret
+func0000000000000052:                   # @func0000000000000052
+	srliw	a2, a1, 16
+	beqz	a2, .LBB10_2
+	mv	a0, a1
+.LBB10_2:                               # %entry
+	slliw	a0, a0, 8
 	ret

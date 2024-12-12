@@ -4,7 +4,7 @@
 	.long	4294967265                      # 0xffffffe1
 .LCPI0_2:
 	.long	1                               # 0x1
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
 	vpcmpnltud	.LCPI0_1(%rip){1to8}, %ymm1, %k1
 	vpbroadcastd	.LCPI0_2(%rip), %ymm1   # ymm1 = [1,1,1,1,1,1,1,1]
@@ -18,7 +18,7 @@ func0000000000000034:                   # @func0000000000000034
 	.long	1                               # 0x1
 .LCPI1_3:
 	.long	64                              # 0x40
-func0000000000000064:                   # @func0000000000000064
+func00000000000000c4:                   # @func00000000000000c4
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
 	vpcmpnltud	.LCPI1_1(%rip){1to8}, %ymm1, %k1
 	vpbroadcastd	.LCPI1_2(%rip), %ymm2   # ymm2 = [1,1,1,1,1,1,1,1]
@@ -28,7 +28,7 @@ func0000000000000064:                   # @func0000000000000064
 	retq
 .LCPI2_0:
 	.long	1                               # 0x1
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpcmpneqd	%ymm2, %ymm1, %k1
 	vpbroadcastd	.LCPI2_0(%rip), %ymm1   # ymm1 = [1,1,1,1,1,1,1,1]
@@ -40,7 +40,7 @@ func0000000000000021:                   # @func0000000000000021
 	.long	4294967264                      # 0xffffffe0
 .LCPI3_2:
 	.long	1                               # 0x1
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	vpaddd	.LCPI3_0(%rip){1to8}, %ymm1, %ymm1
 	vpcmpnltud	.LCPI3_1(%rip){1to8}, %ymm1, %k1
 	vpbroadcastd	.LCPI3_2(%rip), %ymm1   # ymm1 = [1,1,1,1,1,1,1,1]
@@ -59,7 +59,7 @@ func0000000000000001:                   # @func0000000000000001
 	.long	10                              # 0xa
 .LCPI5_1:
 	.long	1                               # 0x1
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	vpcmpneqd	.LCPI5_0(%rip){1to8}, %ymm1, %k1
 	vpbroadcastd	.LCPI5_1(%rip), %ymm1   # ymm1 = [1,1,1,1,1,1,1,1]
 	vpsllvd	%ymm0, %ymm1, %ymm0 {%k1} {z}

@@ -1,8 +1,7 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; mitsuba3/optimized/rgb2spec_opt.cpp.ll
 ; mitsuba3/optimized/spectrum.cpp.ll
 ; pbrt-v4/optimized/rgb2spec_opt.cpp.ll

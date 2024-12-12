@@ -24,7 +24,7 @@ func0000000000000000:                   # @func0000000000000000
 	bltz	a5, .LBB1_2
 	srai	a5, a5, 63
 	and	a3, a5, a6
-	or	a1, a6, a1
+	or	a1, a1, a6
 	or	a0, a0, a3
 	ret
 .LBB1_2:

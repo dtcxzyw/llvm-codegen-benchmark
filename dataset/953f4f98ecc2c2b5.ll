@@ -1,5 +1,5 @@
 
-; 110 occurrences:
+; 117 occurrences:
 ; abc/optimized/cuddAPI.c.ll
 ; assimp/optimized/SMDLoader.cpp.ll
 ; assimp/optimized/SplitLargeMeshes.cpp.ll
@@ -66,6 +66,12 @@
 ; llvm/optimized/X86ShuffleDecode.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; llvm/optimized/raw_ostream.cpp.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_demo_widgets.ll
+; lvgl/optimized/lv_math.ll
+; lvgl/optimized/lv_roller.ll
+; lvgl/optimized/lv_scale.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
@@ -109,6 +115,7 @@
 ; z3/optimized/mpz.cpp.ll
 ; z3/optimized/mpz_matrix.cpp.ll
 ; z3/optimized/upolynomial.cpp.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
 ; zstd/optimized/zdict.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
@@ -118,7 +125,7 @@ entry:
   ret i32 %4
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; cpython/optimized/mathmodule.ll
 ; git/optimized/preload-index.ll
 ; linux/optimized/drm_dp_helper.ll
@@ -127,7 +134,6 @@ entry:
 ; linux/optimized/objpool.ll
 ; linux/optimized/vlv_dsi.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ShuffleDecode.cpp.ll
 ; openssl/optimized/libcrypto-lib-rsa_gen.ll
 ; openssl/optimized/libcrypto-shlib-rsa_gen.ll
@@ -143,10 +149,11 @@ entry:
   ret i32 %4
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; darktable/optimized/DngDecoder.cpp.ll
 ; git/optimized/name-hash.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_chart.ll
 ; ncnn/optimized/deformableconv2d_x86.cpp.ll
 ; ncnn/optimized/deformableconv2d_x86_avx.cpp.ll
 ; ncnn/optimized/deformableconv2d_x86_avx512.cpp.ll
@@ -189,7 +196,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = udiv i32 %1, %2
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   ret i32 %4
 }
 

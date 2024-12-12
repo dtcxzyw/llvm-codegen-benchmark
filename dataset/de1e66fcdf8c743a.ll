@@ -41,7 +41,7 @@ entry:
 define i32 @func000000000000000c(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 5
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = zext i8 %1 to i32
   %6 = mul nuw nsw i32 %5, 5
   %7 = add i32 %6, %4

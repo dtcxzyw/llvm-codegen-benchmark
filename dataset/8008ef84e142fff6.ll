@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 21 occurrences:
 ; git/optimized/diff-merges.ll
 ; grpc/optimized/bin_decoder.cc.ll
 ; linux/optimized/set_memory.ll
@@ -8,6 +8,16 @@
 ; llvm/optimized/SemaType.cpp.ll
 ; openssl/optimized/libcrypto-lib-a_mbstr.ll
 ; openssl/optimized/libcrypto-shlib-a_mbstr.ll
+; openusd/optimized/aggregateNode.cpp.ll
+; openusd/optimized/aggregateTreeBuilder.cpp.ll
+; openusd/optimized/basisCurves.cpp.ll
+; openusd/optimized/collectionAPIAdapter.cpp.ll
+; openusd/optimized/eventTree.cpp.ll
+; openusd/optimized/mesh.cpp.ll
+; openusd/optimized/renderIndex.cpp.ll
+; openusd/optimized/rprim.cpp.ll
+; openusd/optimized/typeRegistry.cpp.ll
+; openusd/optimized/unitTestNullRenderDelegate.cpp.ll
 ; redis/optimized/networking.ll
 ; spike/optimized/csrs.ll
 ; sqlite/optimized/sqlite3.ll

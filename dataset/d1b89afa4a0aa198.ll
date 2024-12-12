@@ -1,5 +1,5 @@
 
-; 32 occurrences:
+; 31 occurrences:
 ; abc/optimized/aigMffc.c.ll
 ; abc/optimized/aigShow.c.ll
 ; abc/optimized/aigTiming.c.ll
@@ -10,7 +10,6 @@
 ; abc/optimized/giaSweep.c.ll
 ; cmake/optimized/multi.c.ll
 ; icu/optimized/usearch.ll
-; linux/optimized/pkeys.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/PrecompiledPreamble.cpp.ll
@@ -33,7 +32,7 @@
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
@@ -56,9 +55,8 @@ entry:
   ret i1 %4
 }
 
-; 36 occurrences:
+; 31 occurrences:
 ; abc/optimized/saigIsoFast.c.ll
-; glslang/optimized/ParseHelper.cpp.ll
 ; llvm/optimized/AArch64.cpp.ll
 ; llvm/optimized/AArch64TargetParser.cpp.ll
 ; llvm/optimized/APINotesReader.cpp.ll
@@ -81,25 +79,21 @@ entry:
 ; llvm/optimized/MCStreamer.cpp.ll
 ; llvm/optimized/MSVCPaths.cpp.ll
 ; llvm/optimized/Platform.cpp.ll
-; llvm/optimized/PreprocessingRecord.cpp.ll
 ; llvm/optimized/SemaAvailability.cpp.ll
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; llvm/optimized/SemaDeclObjC.cpp.ll
 ; llvm/optimized/SemaHLSL.cpp.ll
-; llvm/optimized/SemaTemplate.cpp.ll
-; llvm/optimized/SemaTemplateInstantiate.cpp.ll
-; llvm/optimized/SemaTemplateVariadic.cpp.ll
 ; llvm/optimized/Targets.cpp.ll
 ; llvm/optimized/TextDiagnostic.cpp.ll
 ; llvm/optimized/Triple.cpp.ll
 ; qemu/optimized/optimize.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000054(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
   %4 = and i32 %3, 7
-  %5 = icmp ult i32 %4, %0
+  %5 = icmp samesign ult i32 %4, %0
   ret i1 %5
 }
 
@@ -134,7 +128,7 @@ entry:
 ; wireshark/optimized/packet-erf.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 34
   %3 = trunc nuw nsw i64 %2 to i32
@@ -192,7 +186,7 @@ entry:
 ; abc/optimized/wlcSim.c.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000046(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
@@ -201,19 +195,13 @@ entry:
   ret i1 %5
 }
 
-; 10 occurrences:
+; 4 occurrences:
 ; abc/optimized/aigMffc.c.ll
-; abc/optimized/aigWin.c.ll
-; abc/optimized/darBalance.c.ll
-; abc/optimized/fraClass.c.ll
 ; abc/optimized/fraClaus.c.ll
-; abc/optimized/llb4Nonlin.c.ll
-; abc/optimized/llb4Sweep.c.ll
-; llvm/optimized/ASTWriter.cpp.ll
 ; z3/optimized/smt_conflict_resolution.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000048(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
@@ -222,12 +210,30 @@ entry:
   ret i1 %5
 }
 
+; 7 occurrences:
+; abc/optimized/aigWin.c.ll
+; abc/optimized/darBalance.c.ll
+; abc/optimized/darRefact.c.ll
+; abc/optimized/fraClass.c.ll
+; abc/optimized/llb4Nonlin.c.ll
+; abc/optimized/llb4Sweep.c.ll
+; llvm/optimized/ASTWriter.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000058(i32 %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 32
+  %3 = trunc nuw i64 %2 to i32
+  %4 = and i32 %3, 16777215
+  %5 = icmp samesign ugt i32 %4, %0
+  ret i1 %5
+}
+
 ; 3 occurrences:
 ; abc/optimized/fraSat.c.ll
 ; llvm/optimized/AArch64.cpp.ll
 ; llvm/optimized/AArch64TargetParser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000025(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000045(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
@@ -243,7 +249,7 @@ entry:
 ; abc/optimized/fraCore.c.ll
 ; abc/optimized/sswClass.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000004a(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
@@ -260,7 +266,7 @@ entry:
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/giaDup.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002b(i32 %0, i64 %1) #0 {
+define i1 @func000000000000004b(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
@@ -274,7 +280,7 @@ entry:
 ; abc/optimized/giaUtil.c.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i32 %0, i64 %1) #0 {
+define i1 @func000000000000006c(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 61
   %3 = trunc nuw nsw i64 %2 to i32
@@ -293,12 +299,12 @@ entry:
 ; llvm/optimized/SemaAvailability.cpp.ll
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000029(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000059(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
   %4 = and i32 %3, 536870911
-  %5 = icmp uge i32 %4, %0
+  %5 = icmp samesign uge i32 %4, %0
   ret i1 %5
 }
 
@@ -334,10 +340,32 @@ entry:
   ret i1 %5
 }
 
+; 11 occurrences:
+; glslang/optimized/ParseHelper.cpp.ll
+; llvm/optimized/ASTWriter.cpp.ll
+; llvm/optimized/BugReporter.cpp.ll
+; llvm/optimized/DiagnosticRenderer.cpp.ll
+; llvm/optimized/Lexer.cpp.ll
+; llvm/optimized/PreprocessingRecord.cpp.ll
+; llvm/optimized/SemaAvailability.cpp.ll
+; llvm/optimized/SemaTemplate.cpp.ll
+; llvm/optimized/SemaTemplateInstantiate.cpp.ll
+; llvm/optimized/SemaTemplateVariadic.cpp.ll
+; llvm/optimized/TextDiagnostic.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000044(i32 %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 32
+  %3 = trunc nuw i64 %2 to i32
+  %4 = and i32 %3, 65535
+  %5 = icmp ult i32 %4, %0
+  ret i1 %5
+}
+
 ; 1 occurrences:
 ; hdf5/optimized/H5Iint.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000066(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 56
   %3 = trunc nuw nsw i64 %2 to i32
@@ -358,13 +386,11 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
-; linux/optimized/shmem.ll
+; 2 occurrences:
 ; linux/optimized/vmscan.ll
-; llvm/optimized/SemaCast.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000068(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 38
   %3 = trunc nuw nsw i64 %2 to i32
@@ -376,24 +402,37 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/GlobalISelMatchTable.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000014(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 19
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, 16777215
-  %5 = icmp ult i32 %4, %0
+  %5 = icmp samesign ult i32 %4, %0
+  ret i1 %5
+}
+
+; 2 occurrences:
+; linux/optimized/shmem.ll
+; llvm/optimized/SemaCast.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000078(i32 %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 38
+  %3 = trunc nuw nsw i64 %2 to i32
+  %4 = and i32 %3, 65535
+  %5 = icmp samesign ugt i32 %4, %0
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; llvm/optimized/SemaCast.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000039(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000079(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 38
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = and i32 %3, 65535
-  %5 = icmp uge i32 %4, %0
+  %5 = icmp samesign uge i32 %4, %0
   ret i1 %5
 }
 
@@ -409,12 +448,11 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; linux/optimized/tg3.ll
 ; llvm/optimized/SemaOverload.cpp.ll
-; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000064(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 38
   %3 = trunc nuw nsw i64 %2 to i32
@@ -424,9 +462,21 @@ entry:
 }
 
 ; 1 occurrences:
+; zxing/optimized/QRDetector.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000074(i32 %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 40
+  %3 = trunc nuw nsw i64 %2 to i32
+  %4 = and i32 %3, 255
+  %5 = icmp samesign ult i32 %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; freetype/optimized/psaux.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000084(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 3

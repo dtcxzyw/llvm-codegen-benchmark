@@ -1,12 +1,12 @@
 
-; 25 occurrences:
+; 26 occurrences:
+; faiss/optimized/AdditiveQuantizer.cpp.ll
 ; freetype/optimized/type1.c.ll
 ; git/optimized/parse-options-cb.ll
 ; gromacs/optimized/hardwaretopology.cpp.ll
 ; gromacs/optimized/hbond.cpp.ll
 ; icu/optimized/rematch.ll
 ; icu/optimized/utext.ll
-; libquic/optimized/file.c.ll
 ; linux/optimized/move_extent.ll
 ; linux/optimized/trace_eprobe.ll
 ; linux/optimized/trace_kprobe.ll
@@ -14,6 +14,7 @@
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
+; llvm/optimized/SemaDeclAttr.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; nori/optimized/layout.cpp.ll
 ; opencv/optimized/cascadedetect.cpp.ll
@@ -108,6 +109,27 @@ entry:
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000a(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %.v = select i1 %0, i64 %1, i64 %2
+  %3 = trunc i64 %.v to i32
+  ret i32 %3
+}
+
+; 1 occurrences:
+; linux/optimized/gup.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %.v = select i1 %0, i64 %1, i64 %2
+  %3 = trunc i64 %.v to i32
+  ret i32 %3
+}
+
+; 2 occurrences:
+; luajit/optimized/lj_strfmt_num.ll
+; luajit/optimized/lj_strfmt_num_dyn.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %.v = select i1 %0, i64 %1, i64 %2
   %3 = trunc i64 %.v to i32

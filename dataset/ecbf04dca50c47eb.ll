@@ -1,6 +1,8 @@
 
-; 15 occurrences:
+; 17 occurrences:
 ; abc/optimized/abcSaucy.c.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/cvodea.c.ll
 ; casadi/optimized/idaa.c.ll
 ; flac/optimized/replaygain_synthesis.c.ll
@@ -19,7 +21,7 @@
 define i1 @func0000000000000004(double %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to double
-  %3 = fmul double %2, %0
+  %3 = fmul double %0, %2
   %4 = fcmp ogt double %3, 6.553500e+04
   ret i1 %4
 }
@@ -49,12 +51,14 @@ entry:
 define i1 @func0000000000000002(double %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to double
-  %3 = fmul double %2, %0
+  %3 = fmul double %0, %2
   %4 = fcmp olt double %3, -5.000000e-01
   ret i1 %4
 }
 
-; 3 occurrences:
+; 5 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; postgres/optimized/float.ll
 ; proj/optimized/geodesic.c.ll
 ; quantlib/optimized/blackformula.ll
@@ -62,7 +66,7 @@ entry:
 define i1 @func0000000000000008(double %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to double
-  %3 = fmul double %2, %0
+  %3 = fmul double %0, %2
   %4 = fcmp oeq double %3, 0.000000e+00
   ret i1 %4
 }
@@ -79,8 +83,20 @@ entry:
 define i1 @func0000000000000003(double %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to double
-  %3 = fmul double %2, %0
+  %3 = fmul double %0, %2
   %4 = fcmp ult double %3, 0.000000e+00
+  ret i1 %4
+}
+
+; 2 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000007(double %0, i32 %1) #0 {
+entry:
+  %2 = sitofp i32 %1 to double
+  %3 = fmul double %0, %2
+  %4 = fcmp une double %3, 0.000000e+00
   ret i1 %4
 }
 
@@ -90,7 +106,7 @@ entry:
 define i1 @func000000000000000c(double %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to double
-  %3 = fmul double %2, %0
+  %3 = fmul double %0, %2
   %4 = fcmp oge double %3, 0.000000e+00
   ret i1 %4
 }
@@ -113,7 +129,7 @@ entry:
 define i1 @func0000000000000005(double %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to double
-  %3 = fmul double %2, %0
+  %3 = fmul double %0, %2
   %4 = fcmp ugt double %3, 1.000000e+00
   ret i1 %4
 }
@@ -124,7 +140,7 @@ entry:
 define i1 @func000000000000000a(double %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to double
-  %3 = fmul double %2, %0
+  %3 = fmul double %0, %2
   %4 = fcmp ole double %3, 1.000000e+00
   ret i1 %4
 }

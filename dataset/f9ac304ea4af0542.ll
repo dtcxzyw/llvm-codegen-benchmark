@@ -1,5 +1,11 @@
 
-; 2 occurrences:
+; 8 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; quantlib/optimized/dataparsers.ll
 ; quantlib/optimized/date.ll
 ; Function Attrs: nounwind
@@ -21,6 +27,18 @@ entry:
   %2 = sub i32 %0, %1
   %3 = trunc nuw i32 %2 to i16
   %4 = udiv i16 %3, 60
+  ret i16 %4
+}
+
+; 2 occurrences:
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000000(i32 %0, i32 %1) #0 {
+entry:
+  %2 = sub i32 %0, %1
+  %3 = trunc i32 %2 to i16
+  %4 = udiv i16 %3, 100
   ret i16 %4
 }
 

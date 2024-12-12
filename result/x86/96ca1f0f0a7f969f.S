@@ -9,12 +9,12 @@ func000000000000000a:                   # @func000000000000000a
 	notb	%dil
 	andb	%dil, %al
 	retq
-func00000000000000d6:                   # @func00000000000000d6
+func00000000000001a6:                   # @func00000000000001a6
 	cmpl	$1023, %esi                     # imm = 0x3FF
 	setl	%al
 	orb	%dil, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	cmpl	$-1, %esi
 	sete	%al
 	notb	%dil
@@ -26,13 +26,13 @@ func000000000000000c:                   # @func000000000000000c
 	notb	%dil
 	andb	%dil, %al
 	retq
-func00000000000000da:                   # @func00000000000000da
+func00000000000001aa:                   # @func00000000000001aa
 	cmpl	$1077, %esi                     # imm = 0x435
 	setge	%al
 	notb	%dil
 	andb	%dil, %al
 	retq
-func00000000000000d4:                   # @func00000000000000d4
+func00000000000001a4:                   # @func00000000000001a4
 	addl	$-1076, %esi                    # imm = 0xFBCC
 	cmpl	$64, %esi
 	setb	%al

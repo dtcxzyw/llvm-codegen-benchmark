@@ -5,7 +5,7 @@
 define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 5
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = and i32 %1, 31
   %6 = add nuw nsw i32 %4, %5
   ret i32 %6
@@ -56,7 +56,7 @@ entry:
 define i32 @func000000000000001b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 3
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = and i32 %1, 15
   %6 = add nuw nsw i32 %4, %5
   ret i32 %6

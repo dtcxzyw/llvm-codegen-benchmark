@@ -1,5 +1,5 @@
 
-; 66 occurrences:
+; 63 occurrences:
 ; abc/optimized/acecCover.c.ll
 ; abc/optimized/acecMult.c.ll
 ; abc/optimized/cbaNtk.c.ll
@@ -30,7 +30,6 @@
 ; libquic/optimized/f_int.c.ll
 ; libquic/optimized/f_string.c.ll
 ; libquic/optimized/print.c.ll
-; libquic/optimized/x509.c.ll
 ; memcached/optimized/memcached-memcached.ll
 ; memcached/optimized/memcached_debug-memcached.ll
 ; meshlab/optimized/baseio.cpp.ll
@@ -51,12 +50,10 @@
 ; openssl/optimized/libcrypto-lib-bn_conv.ll
 ; openssl/optimized/libcrypto-lib-f_int.ll
 ; openssl/optimized/libcrypto-lib-f_string.ll
-; openssl/optimized/libcrypto-lib-t_spki.ll
 ; openssl/optimized/libcrypto-lib-t_x509.ll
 ; openssl/optimized/libcrypto-shlib-bn_conv.ll
 ; openssl/optimized/libcrypto-shlib-f_int.ll
 ; openssl/optimized/libcrypto-shlib-f_string.ll
-; openssl/optimized/libcrypto-shlib-t_spki.ll
 ; openssl/optimized/libcrypto-shlib-t_x509.ll
 ; postgres/optimized/cash.ll
 ; protobuf/optimized/shared_code_generator.cc.ll
@@ -67,7 +64,7 @@
 ; raylib/optimized/utils.c.ll
 ; yosys/optimized/xilinx_dsp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0) #0 {
+define i1 @func0000000000000061(i64 %0) #0 {
 entry:
   %1 = trunc nuw nsw i64 %0 to i32
   %2 = urem i32 %1, 19
@@ -75,9 +72,10 @@ entry:
   ret i1 %3
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; actix-rs/optimized/2pgtlhl4qd060m9c.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/nghttp2_session.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; linux/optimized/i915_perf.ll
@@ -102,28 +100,27 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/block_vvfat.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0) #0 {
+define i1 @func0000000000000074(i64 %0) #0 {
 entry:
   %1 = trunc nuw nsw i64 %0 to i32
   %2 = urem i32 %1, 26
-  %3 = icmp ult i32 %2, 10
+  %3 = icmp samesign ult i32 %2, 10
   ret i1 %3
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; assimp/optimized/AssxmlFileWriter.cpp.ll
 ; assimp/optimized/PbrtExporter.cpp.ll
 ; clamav/optimized/matcher.c.ll
 ; draco/optimized/mesh_attribute_corner_table.cc.ll
 ; gromacs/optimized/gmx_dyecoupl.cpp.ll
-; linux/optimized/scsicam.ll
 ; llvm/optimized/AsmWriterEmitter.cpp.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; openjdk/optimized/cmsps2.ll
 ; openjdk/optimized/exceptionHandlerTable.ll
 ; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0) #0 {
+define i1 @func0000000000000041(i64 %0) #0 {
 entry:
   %1 = trunc nuw i64 %0 to i32
   %2 = urem i32 %1, 10
@@ -131,13 +128,22 @@ entry:
   ret i1 %3
 }
 
-; 4 occurrences:
-; coreutils-rs/optimized/ymrsitga6ypzvcp.ll
-; delta-rs/optimized/3qkwqfk85qralejq.ll
-; delta-rs/optimized/43y2svfstmvqcl15.ll
-; delta-rs/optimized/4zvphat0q9a964bz.ll
+; 2 occurrences:
+; boost/optimized/to_chars.ll
+; opencv/optimized/drawing.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i64 %0) #0 {
+define i1 @func0000000000000018(i64 %0) #0 {
+entry:
+  %1 = trunc i64 %0 to i32
+  %2 = urem i32 %1, 10
+  %3 = icmp samesign ugt i32 %2, 4
+  ret i1 %3
+}
+
+; 1 occurrences:
+; coreutils-rs/optimized/ymrsitga6ypzvcp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000006c(i64 %0) #0 {
 entry:
   %1 = trunc nuw nsw i64 %0 to i32
   %2 = urem i32 %1, 60
@@ -145,11 +151,12 @@ entry:
   ret i1 %3
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; diesel-rs/optimized/2phdoksmzkii6al2.ll
 ; influxdb-rs/optimized/3x4ltxca4agvimmq.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0) #0 {
+define i1 @func0000000000000021(i64 %0) #0 {
 entry:
   %1 = trunc nsw i64 %0 to i32
   %2 = urem i32 %1, 60
@@ -160,22 +167,11 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/drawing.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0) #0 {
+define i1 @func0000000000000014(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
   %2 = urem i32 %1, 6
-  %3 = icmp ult i32 %2, 3
-  ret i1 %3
-}
-
-; 1 occurrences:
-; opencv/optimized/drawing.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0) #0 {
-entry:
-  %1 = trunc i64 %0 to i32
-  %2 = urem i32 %1, 10
-  %3 = icmp ugt i32 %2, 5
+  %3 = icmp samesign ult i32 %2, 3
   ret i1 %3
 }
 
@@ -184,7 +180,7 @@ entry:
 ; delta-rs/optimized/43y2svfstmvqcl15.ll
 ; delta-rs/optimized/4zvphat0q9a964bz.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0) #0 {
+define i1 @func000000000000002c(i64 %0) #0 {
 entry:
   %1 = trunc nsw i64 %0 to i32
   %2 = urem i32 %1, 60

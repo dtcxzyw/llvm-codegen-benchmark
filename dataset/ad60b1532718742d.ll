@@ -1,24 +1,23 @@
 
-; 14 occurrences:
+; 13 occurrences:
 ; darktable/optimized/introspection_highlights.c.ll
 ; gromacs/optimized/colvarvalue.cpp.ll
 ; hdf5/optimized/H5FDcore.c.ll
 ; llvm/optimized/InstCombineCasts.cpp.ll
-; luau/optimized/StringUtils.cpp.ll
 ; openjdk/optimized/xRelocate.ll
 ; openusd/optimized/sphereMeshGenerator.cpp.ll
 ; postgres/optimized/pg_resetwal.ll
 ; postgres/optimized/xlogutils.ll
-; quantlib/optimized/tapcorrelations.ll
 ; ruby/optimized/array.ll
 ; ruby/optimized/string.ll
 ; stat-rs/optimized/1dt2wsqttaly1xii.ll
 ; velox/optimized/CoverageUtil.cpp.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = add i64 %3, 20
   ret i64 %4
 }
@@ -59,15 +58,15 @@ entry:
 define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 1
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = add i64 %3, -1
   ret i64 %4
 }
 
 ; 3 occurrences:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
-; luau/optimized/StringUtils.cpp.ll
 ; quickjs/optimized/libbf.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000020(i64 %0, i64 %1) #0 {
 entry:
@@ -77,9 +76,11 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001d(i64 %0, i64 %1) #0 {
 entry:
@@ -110,7 +111,7 @@ entry:
 define i64 @func000000000000003a(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
-  %3 = mul nuw i64 %2, %0
+  %3 = mul nuw i64 %0, %2
   %4 = add nuw i64 %3, 63
   ret i64 %4
 }
@@ -124,16 +125,15 @@ entry:
 define i64 @func0000000000000030(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = add i64 %3, 15
   ret i64 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; openblas/optimized/dsbtrd.c.ll
 ; openmpi/optimized/onesided_aggregation.ll
-; pbrt-v4/optimized/bxdfs.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000035(i64 %0, i64 %1) #0 {
 entry:
@@ -184,9 +184,8 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/io_tri.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003e(i64 %0, i64 %1) #0 {

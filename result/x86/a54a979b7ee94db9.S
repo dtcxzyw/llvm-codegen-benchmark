@@ -1,4 +1,4 @@
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	incl	%edx
 	xorl	%eax, %eax
 	cmpl	%esi, %edx
@@ -14,7 +14,7 @@ func000000000000002c:                   # @func000000000000002c
 	cltq
 	leaq	(%rdi,%rax,4), %rax
 	retq
-func00000000000000c6:                   # @func00000000000000c6
+func0000000000000186:                   # @func0000000000000186
 	incl	%edx
 	xorl	%eax, %eax
 	cmpl	%esi, %edx

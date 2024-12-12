@@ -1,12 +1,4 @@
-func0000000000000041:                   # @func0000000000000041
-	cmpq	$31, %rdx
-	setb	%cl
-	andb	%dil, %cl
-	cmpq	%rdx, %rsi
-	sete	%al
-	andb	%cl, %al
-	retq
-func00000000000000c8:                   # @func00000000000000c8
+func0000000000000188:                   # @func0000000000000188
 	cmpq	$-1, %rdx
 	setne	%cl
 	andb	%dil, %cl
@@ -14,7 +6,7 @@ func00000000000000c8:                   # @func00000000000000c8
 	seta	%al
 	andb	%cl, %al
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	movabsq	$-1483400188077313, %rax        # imm = 0xFFFABADAFABADAFF
 	cmpq	%rax, %rdx
 	setne	%cl
@@ -23,7 +15,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	andb	%dil, %al
 	andb	%cl, %al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	movabsq	$-1483400188077313, %rax        # imm = 0xFFFABADAFABADAFF
 	cmpq	%rax, %rdx
 	setne	%cl
@@ -32,7 +24,7 @@ func00000000000000c1:                   # @func00000000000000c1
 	andb	%dil, %al
 	andb	%cl, %al
 	retq
-func00000000000000cb:                   # @func00000000000000cb
+func000000000000018b:                   # @func000000000000018b
 	movabsq	$-1483400188077313, %rax        # imm = 0xFFFABADAFABADAFF
 	cmpq	%rax, %rdx
 	setne	%cl
@@ -41,7 +33,7 @@ func00000000000000cb:                   # @func00000000000000cb
 	andb	%dil, %al
 	andb	%cl, %al
 	retq
-func00000000000000c7:                   # @func00000000000000c7
+func0000000000000187:                   # @func0000000000000187
 	movabsq	$-1483400188077313, %rax        # imm = 0xFFFABADAFABADAFF
 	cmpq	%rax, %rdx
 	setne	%cl
@@ -50,7 +42,7 @@ func00000000000000c7:                   # @func00000000000000c7
 	andb	%dil, %al
 	andb	%cl, %al
 	retq
-func00000000000000ca:                   # @func00000000000000ca
+func000000000000018a:                   # @func000000000000018a
 	movabsq	$-1483400188077313, %rax        # imm = 0xFFFABADAFABADAFF
 	cmpq	%rax, %rdx
 	setne	%cl
@@ -59,7 +51,7 @@ func00000000000000ca:                   # @func00000000000000ca
 	andb	%dil, %al
 	andb	%cl, %al
 	retq
-func00000000000000c6:                   # @func00000000000000c6
+func0000000000000186:                   # @func0000000000000186
 	movabsq	$-1483400188077313, %rax        # imm = 0xFFFABADAFABADAFF
 	cmpq	%rax, %rdx
 	setne	%cl

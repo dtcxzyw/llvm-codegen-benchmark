@@ -1,5 +1,5 @@
 
-; 784 occurrences:
+; 782 occurrences:
 ; abc/optimized/gzread.c.ll
 ; abc/optimized/infback.c.ll
 ; abc/optimized/inffast.c.ll
@@ -20,6 +20,9 @@
 ; assimp/optimized/PlyParser.cpp.ll
 ; assimp/optimized/SortByPTypeProcess.cpp.ll
 ; assimp/optimized/X3DImporter_Postprocess.cpp.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
+; boost/optimized/topology.ll
 ; casadi/optimized/casadi_misc.cpp.ll
 ; casadi/optimized/fmu.cpp.ll
 ; casadi/optimized/integration_tools.cpp.ll
@@ -62,7 +65,6 @@
 ; cmake/optimized/lzma_encoder_optimum_fast.c.ll
 ; cmake/optimized/lzma_encoder_optimum_normal.c.ll
 ; cmake/optimized/transfer.c.ll
-; cmake/optimized/uncompr.c.ll
 ; cmake/optimized/zdict.c.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; cmake/optimized/zstd_decompress_block.c.ll
@@ -335,7 +337,6 @@
 ; llvm/optimized/RISCVDisassembler.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVMCCodeEmitter.cpp.ll
 ; llvm/optimized/RISCVMCTargetDesc.cpp.ll
@@ -352,7 +353,6 @@
 ; llvm/optimized/ScheduleDAGRRList.cpp.ll
 ; llvm/optimized/ScheduleDAGSDNodes.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
-; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; llvm/optimized/SeparateConstOffsetFromGEP.cpp.ll
 ; llvm/optimized/ShadowStackGCLowering.cpp.ll
 ; llvm/optimized/SimplifyCFG.cpp.ll
@@ -416,6 +416,8 @@
 ; luajit/optimized/lj_trace.ll
 ; luajit/optimized/lj_trace_dyn.ll
 ; luau/optimized/lvmutils.cpp.ll
+; lvgl/optimized/lv_cache_entry.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; lz4/optimized/lz4.c.ll
 ; lz4/optimized/lz4hc.c.ll
 ; meshlab/optimized/edit_mutualcorrs.cpp.ll
@@ -540,13 +542,10 @@
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -625,7 +624,6 @@
 ; openspiel/optimized/deep_sea.cc.ll
 ; openspiel/optimized/goofspiel.cc.ll
 ; openspiel/optimized/sheriff.cc.ll
-; openssl/optimized/chacha_internal_test-bin-chacha_internal_test.ll
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha1.ll
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha256.ll
 ; openssl/optimized/libcrypto-lib-evp_enc.ll
@@ -703,7 +701,6 @@
 ; recastnavigation/optimized/fastlz.c.ll
 ; redis/optimized/lvm.ll
 ; redis/optimized/ziplist.ll
-; rocksdb/optimized/clock_cache.cc.ll
 ; rocksdb/optimized/histogram_windowing.cc.ll
 ; rocksdb/optimized/memtable.cc.ll
 ; ruby/optimized/bignum.ll
@@ -761,11 +758,12 @@
 ; z3/optimized/quant_hoist.cpp.ll
 ; z3/optimized/seq_eq_solver.cpp.ll
 ; z3/optimized/upolynomial.cpp.ll
+; zed-rs/optimized/9tt6eh72scdop5d6biwv5himz.ll
+; zed-rs/optimized/dthtcetij943j6s50gke0fkdr.ll
 ; zlib/optimized/deflate.c.ll
 ; zlib/optimized/gzread.c.ll
 ; zlib/optimized/infback.c.ll
 ; zlib/optimized/inflate.c.ll
-; zlib/optimized/uncompr.c.ll
 ; zstd/optimized/fse_decompress.c.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; zstd/optimized/zdict.c.ll
@@ -792,7 +790,7 @@ entry:
   ret i64 %2
 }
 
-; 717 occurrences:
+; 730 occurrences:
 ; abc/optimized/giaCof.c.ll
 ; abc/optimized/inffast.c.ll
 ; abc/optimized/ioReadBlifAig.c.ll
@@ -802,6 +800,7 @@ entry:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
+; abseil-cpp/optimized/mutex.cc.ll
 ; abseil-cpp/optimized/numbers.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; abseil-cpp/optimized/str_cat_test.cc.ll
@@ -810,9 +809,23 @@ entry:
 ; arrow/optimized/feather.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
 ; assimp/optimized/Assimp.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/benchmark_fstream.ll
+; boost/optimized/console_buffer.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/test_codecvt.ll
+; boost/optimized/test_convert.ll
+; boost/optimized/test_filebuf.ll
+; boost/optimized/test_fs.ll
+; boost/optimized/test_fstream.ll
+; boost/optimized/test_fstream_special.ll
+; boost/optimized/test_ifstream.ll
+; boost/optimized/test_iostream.ll
+; boost/optimized/test_ofstream.ll
+; boost/optimized/test_stackstring.ll
+; boost/optimized/test_system.ll
 ; clamav/optimized/LzmaDec.c.ll
 ; clamav/optimized/Ppmd7.c.ll
-; clamav/optimized/adc.c.ll
 ; clamav/optimized/petite.c.ll
 ; clamav/optimized/rarvm.cpp.ll
 ; clamav/optimized/scanners.c.ll
@@ -919,13 +932,11 @@ entry:
 ; linux/optimized/ipi.ll
 ; linux/optimized/kthread.ll
 ; linux/optimized/main.ll
-; linux/optimized/map.ll
 ; linux/optimized/namei.ll
 ; linux/optimized/sqpoll.ll
 ; linux/optimized/stop_machine.ll
 ; linux/optimized/svcauth_gss.ll
 ; linux/optimized/tick-broadcast.ll
-; linux/optimized/tick-common.ll
 ; linux/optimized/vector.ll
 ; linux/optimized/xdp.ll
 ; linux/optimized/xz_dec_lzma2.ll
@@ -1208,7 +1219,6 @@ entry:
 ; llvm/optimized/RISCVExpandPseudoInsts.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
@@ -1339,6 +1349,7 @@ entry:
 ; luau/optimized/ldebug.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
 ; luau/optimized/lvmutils.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; lz4/optimized/lz4.c.ll
 ; lz4/optimized/lz4frame.c.ll
 ; lz4/optimized/lz4hc.c.ll
@@ -1518,9 +1529,11 @@ entry:
   ret i64 %2
 }
 
-; 68 occurrences:
+; 67 occurrences:
 ; arrow/optimized/basic_decimal.cc.ll
 ; arrow/optimized/validate.cc.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/to_chars.ll
 ; c3c/optimized/bigint.c.ll
 ; clamav/optimized/netcode.c.ll
 ; cmake/optimized/MD5.c.ll
@@ -1547,11 +1560,8 @@ entry:
 ; linux/optimized/extents.ll
 ; linux/optimized/md5.ll
 ; linux/optimized/pgtable.ll
-; linux/optimized/rpl.ll
 ; linux/optimized/svcsock.ll
-; linux/optimized/xdr4.ll
 ; llvm/optimized/MD5.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVLegalizerInfo.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; oiio/optimized/ddsinput.cpp.ll

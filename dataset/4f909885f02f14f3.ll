@@ -1,5 +1,6 @@
 
-; 86 occurrences:
+; 88 occurrences:
+; boost/optimized/sort_by_side.ll
 ; cmake/optimized/cmFileCommand.cxx.ll
 ; cmake/optimized/connect.c.ll
 ; cpython/optimized/compile.ll
@@ -59,6 +60,7 @@
 ; openssl/optimized/sslapitest-bin-sslapitest.ll
 ; openusd/optimized/OpenEXRImage.cpp.ll
 ; openusd/optimized/stbImage.cpp.ll
+; ozz-animation/optimized/jsoncpp.cpp.ll
 ; php/optimized/html.ll
 ; php/optimized/pcre2_compile.ll
 ; postgres/optimized/data.ll
@@ -95,8 +97,9 @@ entry:
   ret i1 %5
 }
 
-; 34 occurrences:
+; 35 occurrences:
 ; arrow/optimized/vector_selection_filter_internal.cc.ll
+; boost/optimized/area.ll
 ; casadi/optimized/cs_util.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; graphviz/optimized/dtview.c.ll
@@ -107,8 +110,8 @@ entry:
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/InstrRefBasedImpl.cpp.ll
 ; llvm/optimized/TypePromotion.cpp.ll
-; openblas/optimized/dgesdd.c.ll
 ; openblas/optimized/dgesvd.c.ll
+; openblas/optimized/dsyevx.c.ll
 ; opencv/optimized/posit.cpp.ll
 ; opencv/optimized/undistort.dispatch.cpp.ll
 ; openjdk/optimized/jdphuff.ll
@@ -139,10 +142,11 @@ entry:
   ret i1 %5
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
+; gromacs/optimized/gmx_chi.cpp.ll
 ; gromacs/optimized/sim_util.cpp.ll
 ; icu/optimized/dtptngen.ll
 ; libquic/optimized/bssl_shim.cc.ll

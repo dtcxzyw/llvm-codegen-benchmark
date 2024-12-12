@@ -6,7 +6,6 @@
 ; llvm/optimized/AutoUpgrade.cpp.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/Scalarizer.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
@@ -15,6 +14,7 @@
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86InterleavedAccess.cpp.ll
 ; llvm/optimized/X86ShuffleDecode.cpp.ll
+; lvgl/optimized/lv_roller.ll
 ; minetest/optimized/CGUITTFont.cpp.ll
 ; openjdk/optimized/os.ll
 ; openmpi/optimized/netpatterns_multinomial_tree.ll

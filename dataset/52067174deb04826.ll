@@ -1,17 +1,15 @@
 
-; 13 occurrences:
+; 11 occurrences:
 ; harfbuzz/optimized/hb-subset-cff1.cc.ll
 ; harfbuzz/optimized/hb-subset-cff2.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; linux/optimized/avtab.ll
 ; linux/optimized/icl_dsi.ll
-; linux/optimized/intel_audio.ll
 ; openjdk/optimized/cmspack.ll
 ; ruby/optimized/static_literals.ll
 ; wireshark/optimized/cllog.c.ll
 ; wireshark/optimized/netmon.c.ll
 ; wireshark/optimized/packet-canopen.c.ll
-; wireshark/optimized/packet-ipmi-trace.c.ll
 ; wireshark/optimized/packet-mms.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i16 %0) #0 {
@@ -21,9 +19,15 @@ entry:
   ret i32 %2
 }
 
-; 169 occurrences:
+; 178 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; assimp/optimized/Assimp.cpp.ll
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd7.c.ll
@@ -53,7 +57,6 @@ entry:
 ; libpng/optimized/pngrtran.c.ll
 ; libpng/optimized/pngwrite.c.ll
 ; libquic/optimized/poly.c.ll
-; libquic/optimized/reduce.c.ll
 ; libwebp/optimized/picture_csp_enc.c.ll
 ; libwebp/optimized/quant_dec.c.ll
 ; libwebp/optimized/quant_enc.c.ll
@@ -97,6 +100,8 @@ entry:
 ; llvm/optimized/X86MCTargetDesc.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_label.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/io_bre.cpp.ll
@@ -184,6 +189,8 @@ entry:
 ; wireshark/optimized/packet-uds.c.ll
 ; wireshark/optimized/packet-vnc.c.ll
 ; wireshark/optimized/packet-x11.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zxing/optimized/ODCodabarReader.cpp.ll
 ; zxing/optimized/ODCode39Reader.cpp.ll
 ; zxing/optimized/ODCode93Reader.cpp.ll
@@ -212,7 +219,7 @@ entry:
   ret i32 %2
 }
 
-; 22 occurrences:
+; 24 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; eastl/optimized/EAMemory.cpp.ll
 ; libpng/optimized/pngread.c.ll
@@ -221,6 +228,8 @@ entry:
 ; linux/optimized/intel_cx0_phy.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
@@ -243,8 +252,9 @@ entry:
   ret i32 %2
 }
 
-; 198 occurrences:
+; 199 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
 ; fmt/optimized/header-only-test.cc.ll
@@ -450,13 +460,15 @@ entry:
   ret i32 %2
 }
 
-; 11 occurrences:
+; 13 occurrences:
 ; cpython/optimized/ceval.ll
 ; git/optimized/block.ll
 ; libquic/optimized/error_correction.c.ll
 ; libwebp/optimized/picture_csp_enc.c.ll
 ; libwebp/optimized/yuv.c.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
+; lvgl/optimized/lv_label.ll
+; lvgl/optimized/lv_span.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
 ; ncnn/optimized/convolution_x86_avx2.cpp.ll

@@ -1,5 +1,5 @@
 
-; 73 occurrences:
+; 72 occurrences:
 ; cmake/optimized/zstd_compress.c.ll
 ; mitsuba3/optimized/aov.cpp.ll
 ; mitsuba3/optimized/batch.cpp.ll
@@ -33,7 +33,6 @@
 ; mitsuba3/optimized/null.cpp.ll
 ; mitsuba3/optimized/obj.cpp.ll
 ; mitsuba3/optimized/plastic.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/polarizer.cpp.ll
 ; mitsuba3/optimized/pplastic.cpp.ll
 ; mitsuba3/optimized/principled.cpp.ll
@@ -80,31 +79,6 @@ entry:
   %4 = sub i64 %1, %3
   %5 = icmp ult i64 %4, 9223372036854775800
   %6 = select i1 %5, i64 %0, i64 2305843009213693951
-  ret i64 %6
-}
-
-; 14 occurrences:
-; assimp/optimized/COBLoader.cpp.ll
-; assimp/optimized/ColladaLoader.cpp.ll
-; assimp/optimized/glTF2Importer.cpp.ll
-; g2o/optimized/slam2d_linear.cpp.ll
-; g2o/optimized/solver_cholmod.cpp.ll
-; g2o/optimized/solver_csparse.cpp.ll
-; g2o/optimized/solver_dense.cpp.ll
-; g2o/optimized/solver_eigen.cpp.ll
-; g2o/optimized/solver_pcg.cpp.ll
-; hyperscan/optimized/goughcompile_reg.cpp.ll
-; opencv/optimized/linemod.cpp.ll
-; openvdb/optimized/LevelSetRebuild.cc.ll
-; openvdb/optimized/VolumeToMesh.cc.ll
-; proj/optimized/ctx.cpp.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000a(i64 %0, i64 %1, ptr %2) #0 {
-entry:
-  %3 = ptrtoint ptr %2 to i64
-  %4 = sub i64 %1, %3
-  %5 = icmp sgt i64 %4, -1
-  %6 = select i1 %5, i64 %0, i64 -1
   ret i64 %6
 }
 

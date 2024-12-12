@@ -1,5 +1,5 @@
 
-; 90 occurrences:
+; 87 occurrences:
 ; abc/optimized/cuddPriority.c.ll
 ; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/extraUtilMisc.c.ll
@@ -33,7 +33,6 @@
 ; libwebp/optimized/frame_enc.c.ll
 ; libwebp/optimized/quality_estimate.c.ll
 ; libwebp/optimized/webpinfo.c.ll
-; lief/optimized/aesni.c.ll
 ; linux/optimized/hid-lg-g15.ll
 ; linux/optimized/intel_display_power_well.ll
 ; linux/optimized/jack.ll
@@ -65,8 +64,6 @@
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; qemu/optimized/hw_pci_pcie_aer.c.ll
 ; qemu/optimized/hw_scsi_mptsas.c.ll
-; qemu/optimized/hw_ssi_sifive_spi.c.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
 ; qemu/optimized/hw_usb_hcd-ehci.c.ll
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; quickjs/optimized/quickjs.ll
@@ -99,7 +96,7 @@ entry:
   ret i32 %4
 }
 
-; 29 occurrences:
+; 27 occurrences:
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/giaTsim.c.ll
 ; abc/optimized/satSolver.c.ll
@@ -114,11 +111,9 @@ entry:
 ; libquic/optimized/a_bitstr.c.ll
 ; libwebp/optimized/alpha_processing_sse2.c.ll
 ; libwebp/optimized/alpha_processing_sse41.c.ll
-; linux/optimized/cn_proc.ll
 ; linux/optimized/devinet.ll
 ; linux/optimized/phy_device.ll
 ; meshlab/optimized/meshfilter.cpp.ll
-; openssl/optimized/d2i_test-bin-d2i_test.ll
 ; openssl/optimized/ec_internal_test-bin-ec_internal_test.ll
 ; openssl/optimized/libcrypto-lib-a_bitstr.ll
 ; openssl/optimized/libcrypto-lib-conf_mod.ll

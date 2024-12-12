@@ -1,5 +1,7 @@
 
-; 33 occurrences:
+; 35 occurrences:
+; boost/optimized/graphml.ll
+; boost/optimized/src.ll
 ; coreutils-rs/optimized/4dx3xgc2q0yp2q7n.ll
 ; libphonenumber/optimized/rune.c.ll
 ; libquic/optimized/a_utf8.c.ll

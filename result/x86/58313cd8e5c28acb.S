@@ -1,8 +1,8 @@
 func000000000000003f:                   # @func000000000000003f
-	andl	$3, %edx
-	shll	$8, %edx
-	orl	%esi, %edx
-	leal	65536(%rdi,%rdx), %eax
+	andl	$4, %edx
+	shll	$7, %edx
+	orl	%edi, %edx
+	leal	1024(%rsi,%rdx), %eax
 	retq
 func000000000000003b:                   # @func000000000000003b
 	shll	$12, %edx

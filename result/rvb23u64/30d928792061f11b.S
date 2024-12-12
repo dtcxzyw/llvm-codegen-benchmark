@@ -1,3 +1,11 @@
+func000000000000001e:                   # @func000000000000001e
+	li	a3, -1
+	slli	a3, a3, 32
+	add	a2, a2, a3
+	sh3add	a0, a1, a0
+	srai	a2, a2, 29
+	add	a0, a0, a2
+	ret
 func000000000000001a:                   # @func000000000000001a
 	bseti	a3, zero, 32
 	add	a2, a2, a3
@@ -12,7 +20,7 @@ func0000000000000010:                   # @func0000000000000010
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func0000000000000002:                   # @func0000000000000002
+func000000000000000e:                   # @func000000000000000e
 	li	a3, -1
 	slli	a3, a3, 32
 	add	a2, a2, a3

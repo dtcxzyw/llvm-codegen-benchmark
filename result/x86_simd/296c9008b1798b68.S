@@ -65,47 +65,12 @@ func000000000000000a:                   # @func000000000000000a
 	vmovdqa32	%ymm0, %ymm0 {%k1} {z}
 	retq
 .LCPI4_0:
-	.long	16777214                        # 0xfffffe
+	.long	32767                           # 0x7fff
 .LCPI4_1:
-	.long	4294967040                      # 0xffffff00
-.LCPI4_2:
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	0                               # 0x0
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
-	.byte	255                             # 0xff
+	.long	65536                           # 0x10000
 func0000000000000008:                   # @func0000000000000008
 	vpcmpleud	.LCPI4_0(%rip){1to8}, %ymm1, %k1
-	vbroadcastss	.LCPI4_1(%rip), %ymm1   # ymm1 = [4294967040,4294967040,4294967040,4294967040,4294967040,4294967040,4294967040,4294967040]
-	vandps	.LCPI4_1(%rip){1to8}, %ymm0, %ymm1 {%k1}
-	vmovaps	%ymm1, %ymm0
+	vandps	.LCPI4_1(%rip){1to8}, %ymm0, %ymm0 {%k1} {z}
 	retq
 .LCPI5_0:
 	.long	1024                            # 0x400

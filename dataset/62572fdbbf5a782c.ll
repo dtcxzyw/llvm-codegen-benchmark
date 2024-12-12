@@ -1,7 +1,6 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; cmake/optimized/MD5.c.ll
-; linux/optimized/rpl.ll
 ; ruby/optimized/md5.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i32 %0) #0 {

@@ -22,7 +22,7 @@ define i128 @func0000000000000007(i128 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1442695040888963407
   %3 = zext i64 %2 to i128
-  %4 = or disjoint i128 %3, %0
+  %4 = or disjoint i128 %0, %3
   ret i128 %4
 }
 
@@ -34,7 +34,7 @@ define i128 @func0000000000000003(i128 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -1
   %3 = zext i64 %2 to i128
-  %4 = or disjoint i128 %3, %0
+  %4 = or disjoint i128 %0, %3
   ret i128 %4
 }
 

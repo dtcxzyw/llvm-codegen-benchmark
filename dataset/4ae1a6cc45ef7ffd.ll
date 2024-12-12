@@ -1,10 +1,11 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; assimp/optimized/zip.c.ll
 ; hdf5/optimized/H5HFcache.c.ll
 ; image-rs/optimized/249ukonr3l56u09i.ll
 ; libwebp/optimized/upsampling.c.ll
 ; wireshark/optimized/vwr.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000007f(i32 %0, i32 %1, i8 %2) #0 {
 entry:
@@ -31,7 +32,7 @@ entry:
   %4 = shl nuw nsw i32 %1, 8
   %5 = or disjoint i32 %4, %3
   %6 = add nuw nsw i32 %5, 1
-  %7 = add i32 %6, %0
+  %7 = add i32 %0, %6
   ret i32 %7
 }
 

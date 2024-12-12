@@ -1,4 +1,18 @@
 
+; 3 occurrences:
+; qemu/optimized/target_riscv_vector_helper.c.ll
+; recastnavigation/optimized/DetourNavMeshBuilder.cpp.ll
+; wireshark/optimized/packet-dns.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000186(i16 %0) #0 {
+entry:
+  %1 = and i16 %0, 32767
+  %2 = icmp ne i16 %1, 0
+  %3 = icmp slt i16 %0, -31744
+  %4 = and i1 %3, %2
+  ret i1 %4
+}
+
 ; 7 occurrences:
 ; git/optimized/diff.ll
 ; hermes/optimized/BigIntSupport.cpp.ll
@@ -8,7 +22,7 @@
 ; tls-rs/optimized/1pt3w3786vo2dyk0.ll
 ; wireshark/optimized/packet-reload.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i16 %0) #0 {
+define i1 @func000000000000018c(i16 %0) #0 {
 entry:
   %1 = and i16 %0, 55
   %2 = icmp ne i16 %1, 23
@@ -27,7 +41,7 @@ entry:
 ; wireshark/optimized/packet-dhcp.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i16 %0) #0 {
+define i1 @func000000000000002c(i16 %0) #0 {
 entry:
   %1 = and i16 %0, -897
   %2 = icmp eq i16 %1, 0
@@ -40,7 +54,7 @@ entry:
 ; llvm/optimized/CGCall.cpp.ll
 ; wireshark/optimized/packet-sprt.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i16 %0) #0 {
+define i1 @func0000000000000184(i16 %0) #0 {
 entry:
   %1 = and i16 %0, 255
   %2 = icmp ne i16 %1, 255
@@ -49,22 +63,30 @@ entry:
   ret i1 %4
 }
 
-; 9 occurrences:
-; icu/optimized/locdspnm.ll
-; icu/optimized/unistr_case.ll
-; icu/optimized/ustring.ll
-; llvm/optimized/ValueTracking.cpp.ll
-; openspiel/optimized/chess_board.cc.ll
-; openspiel/optimized/dark_chess.cc.ll
-; openspiel/optimized/rbc.cc.ll
-; proj/optimized/grids.cpp.ll
-; wolfssl/optimized/internal.c.ll
+; 1 occurrences:
+; postgres/optimized/autoinc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i16 %0) #0 {
+define i1 @func000000000000002a(i16 %0) #0 {
 entry:
   %1 = and i16 %0, 1
   %2 = icmp eq i16 %1, 0
-  %3 = icmp ugt i16 %0, 255
+  %3 = icmp sgt i16 %0, 0
+  %4 = and i1 %3, %2
+  ret i1 %4
+}
+
+; 5 occurrences:
+; icu/optimized/locdspnm.ll
+; icu/optimized/unistr_case.ll
+; icu/optimized/ustring.ll
+; proj/optimized/grids.cpp.ll
+; wolfssl/optimized/internal.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i16 %0) #0 {
+entry:
+  %1 = and i16 %0, 3
+  %2 = icmp eq i16 %1, 0
+  %3 = icmp ugt i16 %0, 3
   %4 = and i1 %3, %2
   ret i1 %4
 }
@@ -73,7 +95,7 @@ entry:
 ; opencv/optimized/hash_tsdf.cpp.ll
 ; wolfssl/optimized/tls.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i16 %0) #0 {
+define i1 @func0000000000000188(i16 %0) #0 {
 entry:
   %1 = and i16 %0, -256
   %2 = icmp ne i16 %1, 256

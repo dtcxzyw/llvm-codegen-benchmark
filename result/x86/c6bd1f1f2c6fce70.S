@@ -22,6 +22,14 @@ func000000000000000c:                   # @func000000000000000c
 	cmpq	%rcx, %rsi
 	cmovel	%edi, %eax
 	retq
+func0000000000000014:                   # @func0000000000000014
+	notb	%dl
+	movzbl	%dl, %eax
+	andl	$1, %eax
+	shll	$5, %eax
+	cmpq	$65536, %rsi                    # imm = 0x10000
+	cmovael	%edi, %eax
+	retq
 func0000000000000008:                   # @func0000000000000008
 	andl	$1, %edx
 	leal	1(%rdx), %eax

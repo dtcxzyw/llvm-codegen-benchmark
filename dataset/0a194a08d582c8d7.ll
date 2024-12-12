@@ -79,4 +79,16 @@ entry:
   ret i64 %5
 }
 
+; 1 occurrences:
+; zed-rs/optimized/e7lqw1ynol01cwrgb8ri1wedr.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %1, 7
+  %3 = lshr i64 %2, 3
+  %4 = xor i64 %0, -1
+  %5 = add i64 %3, %4
+  ret i64 %5
+}
+
 attributes #0 = { nounwind }

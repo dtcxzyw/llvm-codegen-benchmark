@@ -11,7 +11,7 @@ entry:
   ret i64 %4
 }
 
-; 23 occurrences:
+; 22 occurrences:
 ; arrow/optimized/feather.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
@@ -23,7 +23,6 @@ entry:
 ; jq/optimized/utf16_le.ll
 ; libdeflate/optimized/adler32.c.ll
 ; linux/optimized/gre_offload.ll
-; linux/optimized/gso.ll
 ; linux/optimized/ndisc.ll
 ; linux/optimized/skbuff.ll
 ; linux/optimized/udp.ll

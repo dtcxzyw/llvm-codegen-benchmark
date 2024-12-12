@@ -1,18 +1,14 @@
 func0000000000000029:                   # @func0000000000000029
-	movq	%rsi, %rax
-	subq	%rdx, %rax
-	xorl	%ecx, %ecx
+	xorl	%eax, %eax
+	subq	%rdx, %rsi
+	cmovleq	%rax, %rsi
 	testb	$1, %dil
-	cmoveq	%rcx, %rax
-	cmpq	%rdx, %rsi
-	cmovleq	%rcx, %rax
+	cmovneq	%rsi, %rax
 	retq
 func0000000000000028:                   # @func0000000000000028
-	movq	%rsi, %rax
-	subq	%rdx, %rax
-	xorl	%ecx, %ecx
+	xorl	%eax, %eax
+	subq	%rdx, %rsi
+	cmovleq	%rax, %rsi
 	testb	$1, %dil
-	cmoveq	%rcx, %rax
-	cmpq	%rdx, %rsi
-	cmovleq	%rcx, %rax
+	cmovneq	%rsi, %rax
 	retq

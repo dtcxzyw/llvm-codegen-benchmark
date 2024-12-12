@@ -1,18 +1,17 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; hermes/optimized/InstSimplify.cpp.ll
 ; linux/optimized/gen8_ppgtt.ll
 ; llvm/optimized/HeaderSearch.cpp.ll
 ; postgres/optimized/nbtutils.ll
-; spike/optimized/f16_classify.ll
 ; wireshark/optimized/packet-btbredr_rf.c.ll
 ; wireshark/optimized/packet-quic.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, i16 %2) #0 {
 entry:
-  %3 = and i16 %2, 31
-  %4 = icmp eq i16 %3, 31
-  %5 = and i1 %4, %1
+  %3 = and i16 %2, -127
+  %4 = icmp eq i16 %3, 0
+  %5 = and i1 %1, %4
   %6 = select i1 %5, i1 %0, i1 false
   ret i1 %6
 }

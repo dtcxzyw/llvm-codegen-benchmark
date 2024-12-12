@@ -1,9 +1,8 @@
 
-; 25 occurrences:
+; 24 occurrences:
 ; bullet3/optimized/b3ConvexUtility.ll
 ; bullet3/optimized/btConvexPolyhedron.ll
 ; darktable/optimized/introspection_graduatednd.c.ll
-; darktable/optimized/introspection_primaries.c.ll
 ; gromacs/optimized/vsite_parm.cpp.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; meshlab/optimized/quadric_simp.cpp.ll

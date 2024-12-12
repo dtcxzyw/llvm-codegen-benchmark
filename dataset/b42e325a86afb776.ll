@@ -29,13 +29,12 @@ entry:
   ret i1 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; gromacs/optimized/gmx_sham.cpp.ll
 ; lightgbm/optimized/objective_function.cpp.ll
 ; meshlab/optimized/edit_mutualcorrs.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; openblas/optimized/dsyequb.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(double %0, double %1) #0 {

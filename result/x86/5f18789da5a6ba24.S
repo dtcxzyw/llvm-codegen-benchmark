@@ -18,6 +18,11 @@ func0000000000000030:                   # @func0000000000000030
 	setne	%al
 	orb	%dil, %al
 	retq
+func0000000000000050:                   # @func0000000000000050
+	cmpl	$2, %esi
+	setb	%al
+	orb	%dil, %al
+	retq
 func0000000000000018:                   # @func0000000000000018
 	testl	%esi, %esi
 	setle	%al
@@ -50,6 +55,11 @@ func0000000000000006:                   # @func0000000000000006
 	retq
 func0000000000000020:                   # @func0000000000000020
 	cmpl	$2, %esi
+	setae	%al
+	orb	%dil, %al
+	retq
+func0000000000000060:                   # @func0000000000000060
+	cmpl	$9, %esi
 	setae	%al
 	orb	%dil, %al
 	retq

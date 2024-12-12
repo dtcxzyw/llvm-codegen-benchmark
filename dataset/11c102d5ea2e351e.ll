@@ -1,7 +1,8 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; gromacs/optimized/dispersioncorrection.cpp.ll
 ; gromacs/optimized/gmx_xpm2ps.cpp.ll
+; lvgl/optimized/lv_draw_arc.ll
 ; minetest/optimized/guiEngine.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; minetest/optimized/mg_ore.cpp.ll

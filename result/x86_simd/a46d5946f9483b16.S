@@ -1,6 +1,6 @@
 func0000000000000008:                   # @func0000000000000008
 	vpsubd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrd	$1, %xmm2, %ecx
 	vextracti128	$1, %ymm0, %xmm3

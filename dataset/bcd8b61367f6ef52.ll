@@ -1,9 +1,8 @@
 
-; 2 occurrences:
-; php/optimized/string.ll
+; 1 occurrences:
 ; ruby/optimized/pack.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000010c(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -13,7 +12,7 @@ entry:
   ret i1 %7
 }
 
-; 97 occurrences:
+; 95 occurrences:
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_chat.cpp.ll
 ; crow/optimized/example_ws.cpp.ll
@@ -86,14 +85,12 @@ entry:
 ; folly/optimized/MemoryMapping.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
 ; folly/optimized/Uri.cpp.ll
-; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; minetest/optimized/CGUIFont.cpp.ll
 ; minetest/optimized/CGUISpriteBank.cpp.ll
 ; minetest/optimized/CGUITTFont.cpp.ll
 ; minetest/optimized/CIrrDeviceSDL.cpp.ll
 ; minetest/optimized/COBJMeshFileLoader.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/chat.cpp.ll
 ; minetest/optimized/dynamicshadowsrender.cpp.ll
 ; minetest/optimized/enriched_string.cpp.ll
@@ -112,7 +109,7 @@ entry:
 ; php/optimized/string.ll
 ; xgboost/optimized/input_split_base.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000108(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -130,7 +127,7 @@ entry:
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
 ; redis/optimized/debug.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000042(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -143,7 +140,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/fopen_wrappers.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000114(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -154,9 +151,22 @@ entry:
 }
 
 ; 1 occurrences:
+; php/optimized/string.ll
+; Function Attrs: nounwind
+define i1 @func000000000000050c(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %1
+  %5 = icmp slt i64 %4, 1024
+  %6 = icmp samesign ult i64 %0, 3
+  %7 = or i1 %5, %6
+  ret i1 %7
+}
+
+; 1 occurrences:
 ; velox/optimized/HashStringAllocator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -169,7 +179,7 @@ entry:
 ; 1 occurrences:
 ; proxygen/optimized/HTTP1xCodec.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000208(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -186,7 +196,7 @@ entry:
 ; hdf5/optimized/H5Olink.c.ll
 ; llvm/optimized/GSIStreamBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000004c(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -201,7 +211,7 @@ entry:
 ; llvm/optimized/UnifyFunctionExitNodes.cpp.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000110(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000210(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -215,7 +225,7 @@ entry:
 ; llvm/optimized/CodeLayout.cpp.ll
 ; proj/optimized/transformation.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000302(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -230,7 +240,7 @@ entry:
 ; linux/optimized/zstd_decompress_block.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014c(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000028c(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -245,7 +255,7 @@ entry:
 ; linux/optimized/zstd_decompress_block.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000194(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -258,7 +268,7 @@ entry:
 ; 1 occurrences:
 ; proj/optimized/transformation.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000058(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -271,7 +281,7 @@ entry:
 ; 1 occurrences:
 ; nuttx/optimized/lib_libfwrite.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000308(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -282,13 +292,39 @@ entry:
 }
 
 ; 1 occurrences:
+; hyperscan/optimized/rose_build_long_lit.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000508(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %1
+  %5 = icmp samesign ult i64 %4, 8
+  %6 = icmp ult i64 %0, 32
+  %7 = or i1 %6, %5
+  ret i1 %7
+}
+
+; 1 occurrences:
 ; cpython/optimized/traceback.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d0(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000001b0(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = icmp slt i64 %4, 8
+  %6 = icmp samesign ugt i64 %0, 15
+  %7 = or i1 %6, %5
+  ret i1 %7
+}
+
+; 1 occurrences:
+; cpython/optimized/traceback.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000190(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %1
+  %5 = icmp slt i64 %4, 16
   %6 = icmp ugt i64 %0, 15
   %7 = or i1 %6, %5
   ret i1 %7

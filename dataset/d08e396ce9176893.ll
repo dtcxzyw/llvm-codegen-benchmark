@@ -1,11 +1,11 @@
 
-%struct.intel_uncore_extra_reg.3344265 = type { %struct.raw_spinlock.3344266, i64, i64, i64, %struct.atomic_t.3344262 }
-%struct.raw_spinlock.3344266 = type { %struct.qspinlock.3344267 }
-%struct.qspinlock.3344267 = type { %union.anon.4.3344268 }
-%union.anon.4.3344268 = type { %struct.atomic_t.3344262 }
-%struct.atomic_t.3344262 = type { i32 }
+%struct.intel_uncore_extra_reg.3533108 = type { %struct.raw_spinlock.3533109, i64, i64, i64, %struct.atomic_t.3533105 }
+%struct.raw_spinlock.3533109 = type { %struct.qspinlock.3533110 }
+%struct.qspinlock.3533110 = type { %union.anon.4.3533111 }
+%union.anon.4.3533111 = type { %struct.atomic_t.3533105 }
+%struct.atomic_t.3533105 = type { i32 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; cpython/optimized/ceval.ll
 ; cpython/optimized/dtoa.ll
 ; cpython/optimized/frameobject.ll
@@ -20,25 +20,25 @@
 ; postgres/optimized/geo_ops.ll
 ; postgres/optimized/integerset.ll
 ; postgres/optimized/jsonb_util.ll
+; postgres/optimized/tsvector_op.ll
 ; qemu/optimized/block_vvfat.c.ll
 ; quickjs/optimized/libbf.ll
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/regcomp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 36
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 36
   %6 = getelementptr [24 x i8], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 
-; 140 occurrences:
+; 185 occurrences:
 ; abc/optimized/decompress.c.ll
 ; abc/optimized/giaGlitch.c.ll
 ; abc/optimized/timMan.c.ll
-; abc/optimized/timTrav.c.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; clamav/optimized/bzlib.c.ll
 ; clamav/optimized/unpack.cpp.ll
@@ -140,95 +140,6 @@ entry:
 ; cvc5/optimized/theory_uf_type_rules.cpp.ll
 ; cvc5/optimized/tuple_utils.cpp.ll
 ; cvc5/optimized/type_node.cpp.ll
-; glslang/optimized/Initialize.cpp.ll
-; gromacs/optimized/partition.cpp.ll
-; hermes/optimized/dtoa.c.ll
-; icu/optimized/number_compact.ll
-; icu/optimized/numparse_affixes.ll
-; icu/optimized/utext.ll
-; icu/optimized/utrie2.ll
-; imgui/optimized/imgui_widgets.cpp.ll
-; jq/optimized/execute.ll
-; libjpeg-turbo/optimized/jccoefct.c.ll
-; luajit/optimized/minilua.ll
-; meshlab/optimized/filter_cubization.cpp.ll
-; meshlab/optimized/filter_trioptimize.cpp.ll
-; meshlab/optimized/gltf_loader.cpp.ll
-; meshlab/optimized/meshfilter.cpp.ll
-; minetest/optimized/minimap.cpp.ll
-; minetest/optimized/reflowscan.cpp.ll
-; mixbox/optimized/mixbox.ll
-; nori/optimized/nanovg.c.ll
-; nuklear/optimized/unity.c.ll
-; opencv/optimized/color_lab.cpp.ll
-; openjdk/optimized/c1_LIRGenerator.ll
-; openjdk/optimized/ciMethod.ll
-; openjdk/optimized/ciMethodData.ll
-; openjdk/optimized/jccoefct.ll
-; openjdk/optimized/jchuff.ll
-; openjdk/optimized/jcphuff.ll
-; openjdk/optimized/jdhuff.ll
-; openjdk/optimized/methodData.ll
-; raylib/optimized/rmodels.c.ll
-; raylib/optimized/rtextures.c.ll
-; redis/optimized/lparser.ll
-; sqlite/optimized/sqlite3.ll
-; stb/optimized/stb_image.c.ll
-; tinygltf/optimized/tiny_gltf.cc.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %1, %2
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 40
-  %6 = getelementptr nusw [27 x ptr], ptr %5, i64 0, i64 %4
-  ret ptr %6
-}
-
-; 20 occurrences:
-; abc/optimized/decompress.c.ll
-; abc/optimized/ifDec16.c.ll
-; abc/optimized/saigSimFast.c.ll
-; assimp/optimized/zip.c.ll
-; clamav/optimized/bzlib.c.ll
-; cmake/optimized/archive_read_support_format_rar5.c.ll
-; cmake/optimized/decompress.c.ll
-; darktable/optimized/introspection_cacorrect.c.ll
-; glslang/optimized/Initialize.cpp.ll
-; hermes/optimized/zip.c.ll
-; libjpeg-turbo/optimized/jccoefct.c.ll
-; meshlab/optimized/filter_sketchfab.cpp.ll
-; meshlab/optimized/gltf_loader.cpp.ll
-; meshlab/optimized/miniz.c.ll
-; nori/optimized/nanovg.c.ll
-; openjdk/optimized/awt_ImagingLib.ll
-; openjdk/optimized/c1_FpuStackSim_x86.ll
-; openjdk/optimized/jccoefct.ll
-; pbrt-v4/optimized/stbimage.cpp.ll
-; php/optimized/dns.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add i32 %1, %2
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 32
-  %6 = getelementptr nusw [32 x i32], ptr %5, i64 0, i64 %4
-  ret ptr %6
-}
-
-; 1 occurrences:
-; abc/optimized/abcHieNew.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nuw i32 %1, %2
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 8
-  %6 = getelementptr nusw [2 x i32], ptr %5, i64 0, i64 %4
-  ret ptr %6
-}
-
-; 48 occurrences:
 ; g2o/optimized/edge_line2d.cpp.ll
 ; g2o/optimized/edge_line2d_pointxy.cpp.ll
 ; g2o/optimized/edge_plane.cpp.ll
@@ -264,6 +175,33 @@ entry:
 ; g2o/optimized/edge_se3_pointxyz_disparity.cpp.ll
 ; g2o/optimized/types_icp.cpp.ll
 ; g2o/optimized/types_seven_dof_expmap.cpp.ll
+; glslang/optimized/Initialize.cpp.ll
+; gromacs/optimized/partition.cpp.ll
+; hermes/optimized/dtoa.c.ll
+; icu/optimized/number_compact.ll
+; icu/optimized/numparse_affixes.ll
+; icu/optimized/utext.ll
+; icu/optimized/utrie2.ll
+; imgui/optimized/imgui_widgets.cpp.ll
+; jq/optimized/execute.ll
+; libjpeg-turbo/optimized/jccoefct.c.ll
+; luajit/optimized/minilua.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; minetest/optimized/minimap.cpp.ll
+; minetest/optimized/reflowscan.cpp.ll
+; mixbox/optimized/mixbox.ll
+; nori/optimized/nanovg.c.ll
+; nuklear/optimized/unity.c.ll
+; opencv/optimized/color_lab.cpp.ll
+; openjdk/optimized/c1_LIRGenerator.ll
+; openjdk/optimized/ciMethod.ll
+; openjdk/optimized/ciMethodData.ll
+; openjdk/optimized/jccoefct.ll
+; openjdk/optimized/jchuff.ll
+; openjdk/optimized/jcphuff.ll
+; openjdk/optimized/jdhuff.ll
+; openjdk/optimized/methodData.ll
 ; openspiel/optimized/chess.cc.ll
 ; openspiel/optimized/chess_board.cc.ll
 ; openspiel/optimized/connect_four.cc.ll
@@ -277,49 +215,63 @@ entry:
 ; openusd/optimized/decodeframe.c.ll
 ; openusd/optimized/decodemv.c.ll
 ; openusd/optimized/stbImage.cpp.ll
+; raylib/optimized/rmodels.c.ll
+; raylib/optimized/rtextures.c.ll
+; redis/optimized/lparser.ll
+; sqlite/optimized/sqlite3.ll
+; stb/optimized/stb_image.c.ll
+; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001e(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw nuw i8, ptr %0, i64 154
-  %6 = getelementptr nusw [16 x i8], ptr %5, i64 0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 40
+  %6 = getelementptr nusw [27 x ptr], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 
-; 1 occurrences:
+; 21 occurrences:
+; abc/optimized/decompress.c.ll
+; abc/optimized/ifDec16.c.ll
+; abc/optimized/saigSimFast.c.ll
+; assimp/optimized/zip.c.ll
+; clamav/optimized/bzlib.c.ll
+; cmake/optimized/archive_read_support_format_rar5.c.ll
+; cmake/optimized/decompress.c.ll
+; darktable/optimized/introspection_cacorrect.c.ll
+; glslang/optimized/Initialize.cpp.ll
+; hermes/optimized/zip.c.ll
+; libjpeg-turbo/optimized/jccoefct.c.ll
+; meshlab/optimized/filter_sketchfab.cpp.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; meshlab/optimized/miniz.c.ll
+; nori/optimized/nanovg.c.ll
+; openjdk/optimized/awt_ImagingLib.ll
+; openjdk/optimized/c1_FpuStackSim_x86.ll
+; openjdk/optimized/jccoefct.ll
 ; openspiel/optimized/PlayAnalyser.cpp.ll
+; pbrt-v4/optimized/stbimage.cpp.ll
+; php/optimized/dns.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000e(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw nuw i8, ptr %0, i64 4
-  %6 = getelementptr nusw [52 x i32], ptr %5, i64 0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 32
+  %6 = getelementptr nusw [32 x i32], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 
 ; 1 occurrences:
-; openspiel/optimized/mancala.cc.ll
+; abc/optimized/abcHieNew.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000002e(ptr %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nuw nsw i32 %1, %2
+  %3 = add nuw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw nuw i8, ptr %0, i64 60
-  %6 = getelementptr nusw [14 x i32], ptr %5, i64 0, i64 %4
-  ret ptr %6
-}
-
-; 1 occurrences:
-; linux/optimized/uncore_nhmex.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %1, %2
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 488
-  %6 = getelementptr [0 x %struct.intel_uncore_extra_reg.3344265], ptr %5, i64 0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 8
+  %6 = getelementptr nusw [2 x i32], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 
@@ -379,7 +331,6 @@ entry:
 ; cvc5/optimized/sep_skolem_emp.cpp.ll
 ; cvc5/optimized/sequences_rewriter.cpp.ll
 ; cvc5/optimized/single_inv_partition.cpp.ll
-; cvc5/optimized/skolemize.cpp.ll
 ; cvc5/optimized/sort_inference.cpp.ll
 ; cvc5/optimized/strings_entail.cpp.ll
 ; cvc5/optimized/subs_minimize.cpp.ll
@@ -418,13 +369,26 @@ entry:
 ; cvc5/optimized/type_info.cpp.ll
 ; cvc5/optimized/type_node.cpp.ll
 ; cvc5/optimized/type_set.cpp.ll
+; openspiel/optimized/mancala.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000003e(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 16
-  %6 = getelementptr nusw [0 x ptr], ptr %5, i64 0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 60
+  %6 = getelementptr nusw [14 x i32], ptr %5, i64 0, i64 %4
+  ret ptr %6
+}
+
+; 1 occurrences:
+; linux/optimized/uncore_nhmex.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001c(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %1, %2
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 488
+  %6 = getelementptr [0 x %struct.intel_uncore_extra_reg.3533108], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 

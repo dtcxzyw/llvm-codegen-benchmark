@@ -1,10 +1,10 @@
-func000000000000006b:                   # @func000000000000006b
+func00000000000000ab:                   # @func00000000000000ab
 	sext.w	a1, a1
 	andi	a0, a0, 31
 	min	a1, a1, zero
 	subw	a0, a0, a1
 	ret
-func00000000000000c7:                   # @func00000000000000c7
+func0000000000000187:                   # @func0000000000000187
 	sext.w	a2, a1
 	li	a3, 4
 	sub	a3, a3, a1

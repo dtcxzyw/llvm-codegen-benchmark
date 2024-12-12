@@ -1,118 +1,40 @@
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	ldp	q18, q16, [sp]
-	fmul	v5.4s, v5.4s, v5.4s
-	ldp	q19, q17, [sp, #32]
-	fmul	v4.4s, v4.4s, v4.4s
-	fmul	v7.4s, v7.4s, v7.4s
-	fmul	v6.4s, v6.4s, v6.4s
-	fmul	v3.4s, v3.4s, v3.4s
-	fmul	v16.4s, v16.4s, v16.4s
-	fmul	v18.4s, v18.4s, v18.4s
-	fmul	v0.4s, v0.4s, v0.4s
-	fmul	v17.4s, v17.4s, v17.4s
-	fmul	v19.4s, v19.4s, v19.4s
-	fmul	v1.4s, v1.4s, v1.4s
-	fmul	v2.4s, v2.4s, v2.4s
-	fadd	v4.4s, v4.4s, v18.4s
-	fadd	v5.4s, v5.4s, v16.4s
-	fadd	v6.4s, v6.4s, v19.4s
-	fadd	v7.4s, v7.4s, v17.4s
-	fcmge	v1.4s, v1.4s, v5.4s
-	fcmge	v0.4s, v0.4s, v4.4s
-	fcmge	v3.4s, v3.4s, v7.4s
-	fcmge	v2.4s, v2.4s, v6.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	uzp1	v2.8h, v2.8h, v3.8h
-	uzp1	v0.16b, v0.16b, v2.16b
-	mvn	v0.16b, v0.16b
+	fmul	s2, s2, s2
+	fmul	s1, s1, s1
+	fmul	s0, s0, s0
+	fadd	s1, s1, s2
+	fcmp	s1, s0
+	cset	w0, hi
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	ldp	q18, q16, [sp]
-	fmul	v5.4s, v5.4s, v5.4s
-	ldp	q19, q17, [sp, #32]
-	fmul	v4.4s, v4.4s, v4.4s
-	fmul	v7.4s, v7.4s, v7.4s
-	fmul	v6.4s, v6.4s, v6.4s
-	fmul	v3.4s, v3.4s, v3.4s
-	fmul	v16.4s, v16.4s, v16.4s
-	fmul	v18.4s, v18.4s, v18.4s
-	fmul	v0.4s, v0.4s, v0.4s
-	fmul	v17.4s, v17.4s, v17.4s
-	fmul	v19.4s, v19.4s, v19.4s
-	fmul	v1.4s, v1.4s, v1.4s
-	fmul	v2.4s, v2.4s, v2.4s
-	fadd	v4.4s, v4.4s, v18.4s
-	fadd	v5.4s, v5.4s, v16.4s
-	fadd	v6.4s, v6.4s, v19.4s
-	fadd	v7.4s, v7.4s, v17.4s
-	fcmge	v1.4s, v5.4s, v1.4s
-	fcmge	v0.4s, v4.4s, v0.4s
-	fcmge	v3.4s, v7.4s, v3.4s
-	fcmge	v2.4s, v6.4s, v2.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	uzp1	v2.8h, v2.8h, v3.8h
-	uzp1	v0.16b, v0.16b, v2.16b
-	mvn	v0.16b, v0.16b
+	fmul	s2, s2, s2
+	fmul	s1, s1, s1
+	fmul	s0, s0, s0
+	fadd	s1, s1, s2
+	fcmp	s1, s0
+	cset	w0, lt
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	ldp	q18, q16, [sp]
-	fmul	v5.4s, v5.4s, v5.4s
-	ldp	q19, q17, [sp, #32]
-	fmul	v4.4s, v4.4s, v4.4s
-	fmul	v7.4s, v7.4s, v7.4s
-	fmul	v6.4s, v6.4s, v6.4s
-	fmul	v3.4s, v3.4s, v3.4s
-	fmul	v16.4s, v16.4s, v16.4s
-	fmul	v18.4s, v18.4s, v18.4s
-	fmul	v0.4s, v0.4s, v0.4s
-	fmul	v17.4s, v17.4s, v17.4s
-	fmul	v19.4s, v19.4s, v19.4s
-	fmul	v1.4s, v1.4s, v1.4s
-	fmul	v2.4s, v2.4s, v2.4s
-	fadd	v4.4s, v4.4s, v18.4s
-	fadd	v5.4s, v5.4s, v16.4s
-	fadd	v6.4s, v6.4s, v19.4s
-	fadd	v7.4s, v7.4s, v17.4s
-	fcmgt	v1.4s, v5.4s, v1.4s
-	fcmgt	v0.4s, v4.4s, v0.4s
-	fcmgt	v3.4s, v7.4s, v3.4s
-	fcmgt	v2.4s, v6.4s, v2.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	uzp1	v2.8h, v2.8h, v3.8h
-	uzp1	v0.16b, v0.16b, v2.16b
+	fmul	s2, s2, s2
+	fmul	s1, s1, s1
+	fmul	s0, s0, s0
+	fadd	s1, s1, s2
+	fcmp	s1, s0
+	cset	w0, gt
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	ldp	q18, q16, [sp]
-	fmul	v5.4s, v5.4s, v5.4s
-	ldp	q19, q17, [sp, #32]
-	fmul	v4.4s, v4.4s, v4.4s
-	fmul	v7.4s, v7.4s, v7.4s
-	fmul	v6.4s, v6.4s, v6.4s
-	fmul	v3.4s, v3.4s, v3.4s
-	fmul	v16.4s, v16.4s, v16.4s
-	fmul	v18.4s, v18.4s, v18.4s
-	fmul	v0.4s, v0.4s, v0.4s
-	fmul	v17.4s, v17.4s, v17.4s
-	fmul	v19.4s, v19.4s, v19.4s
-	fmul	v1.4s, v1.4s, v1.4s
-	fmul	v2.4s, v2.4s, v2.4s
-	fadd	v4.4s, v4.4s, v18.4s
-	fadd	v5.4s, v5.4s, v16.4s
-	fadd	v6.4s, v6.4s, v19.4s
-	fadd	v7.4s, v7.4s, v17.4s
-	fcmgt	v1.4s, v1.4s, v5.4s
-	fcmgt	v0.4s, v0.4s, v4.4s
-	fcmgt	v3.4s, v3.4s, v7.4s
-	fcmgt	v2.4s, v2.4s, v6.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	uzp1	v2.8h, v2.8h, v3.8h
-	uzp1	v0.16b, v0.16b, v2.16b
+	fmul	s2, s2, s2
+	fmul	s1, s1, s1
+	fmul	s0, s0, s0
+	fadd	s1, s1, s2
+	fcmp	s1, s0
+	cset	w0, mi
 	ret
                                         // -- End function

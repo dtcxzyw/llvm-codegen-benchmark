@@ -1,19 +1,4 @@
 
-; 4 occurrences:
-; libquic/optimized/padding.c.ll
-; openssl/optimized/libcrypto-lib-rsa_pss.ll
-; openssl/optimized/libcrypto-shlib-rsa_pss.ll
-; wolfssl/optimized/rsa.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000002(i32 %0) #0 {
-entry:
-  %1 = add i32 %0, 7
-  %2 = and i32 %1, 7
-  %3 = icmp eq i32 %2, 0
-  %4 = zext i1 %3 to i64
-  ret i64 %4
-}
-
 ; 169 occurrences:
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
@@ -185,7 +170,7 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000038(i32 %0) #0 {
+define i64 @func0000000000000058(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -1075
   %2 = and i32 %1, -2
@@ -200,25 +185,12 @@ entry:
 ; zstd/optimized/fse_compress.c.ll
 ; zstd/optimized/zstd_compress_sequences.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000078(i32 %0) #0 {
+define i64 @func00000000000000d8(i32 %0) #0 {
 entry:
-  %1 = add nuw nsw i32 %0, 1
-  %2 = and i32 %1, 7
-  %3 = icmp ne i32 %2, 0
-  %4 = zext i1 %3 to i64
-  ret i64 %4
-}
-
-; 1 occurrences:
-; cmake/optimized/hex.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000062(i32 %0) #0 {
-entry:
-  %1 = add nuw nsw i32 %0, 5
-  %2 = and i32 %1, 7
-  %3 = icmp eq i32 %2, 0
-  %4 = zext i1 %3 to i64
-  ret i64 %4
+  %1 = and i32 %0, 7
+  %2 = icmp ne i32 %1, 7
+  %3 = zext i1 %2 to i64
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

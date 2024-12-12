@@ -2,7 +2,7 @@
 	.quad	2147483648                      # 0x80000000
 .LCPI0_1:
 	.long	2                               # 0x2
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	vptestnmq	.LCPI0_0(%rip){1to4}, %ymm1, %k1
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpaddd	.LCPI0_1(%rip){1to4}, %xmm0, %xmm1 {%k1}

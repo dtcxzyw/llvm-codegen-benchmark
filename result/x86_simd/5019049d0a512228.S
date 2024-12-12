@@ -16,12 +16,12 @@ func0000000000000003:                   # @func0000000000000003
 	vpsubq	%ymm1, %ymm0, %ymm0 {%k1} {z}
 	retq
 .LCPI2_0:
-	.quad	-16384                          # 0xffffffffffffc000
+	.quad	-128                            # 0xffffffffffffff80
 func0000000000000000:                   # @func0000000000000000
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpnltd	%xmm2, %xmm0, %k1
 	vpxor	%xmm2, %xmm2, %xmm2
-	vpbroadcastq	.LCPI2_0(%rip), %ymm0   # ymm0 = [18446744073709535232,18446744073709535232,18446744073709535232,18446744073709535232]
+	vpbroadcastq	.LCPI2_0(%rip), %ymm0   # ymm0 = [18446744073709551488,18446744073709551488,18446744073709551488,18446744073709551488]
 	vpsubq	%ymm1, %ymm2, %ymm0 {%k1}
 	retq

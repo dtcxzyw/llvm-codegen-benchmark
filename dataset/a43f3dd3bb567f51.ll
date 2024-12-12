@@ -20,7 +20,8 @@ entry:
   ret double %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
 ; graphviz/optimized/country_graph_coloring.c.ll
 ; luau/optimized/ltablib.cpp.ll
 ; raylib/optimized/raudio.c.ll

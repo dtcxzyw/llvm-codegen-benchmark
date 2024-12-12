@@ -27,7 +27,7 @@
 ; quantlib/optimized/longstaffschwartzmultipathpricer.ll
 ; rocksdb/optimized/c.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0) #0 {
+define i64 @func0000000000000028(i64 %0) #0 {
 entry:
   %1 = shl i64 %0, 4
   %2 = or disjoint i64 %1, 8
@@ -36,7 +36,7 @@ entry:
   ret i64 %4
 }
 
-; 62 occurrences:
+; 55 occurrences:
 ; assimp/optimized/BlenderCustomData.cpp.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; opencv/optimized/accum_layer.cpp.ll
@@ -92,15 +92,8 @@ entry:
 ; openusd/optimized/stitchClips.cpp.ll
 ; openusd/optimized/testSdfMetaDataPlugInfo.cpp.ll
 ; openusd/optimized/testUsdAttributeInterpolationCpp.cpp.ll
-; proxygen/optimized/HPACKDecoder.cpp.ll
-; proxygen/optimized/HPACKDecoderBase.cpp.ll
-; proxygen/optimized/HPACKEncoder.cpp.ll
-; proxygen/optimized/HeaderTable.cpp.ll
-; proxygen/optimized/QPACKEncoder.cpp.ll
-; proxygen/optimized/QPACKHeaderTable.cpp.ll
-; proxygen/optimized/StaticHeaderTable.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000058(i64 %0) #0 {
+define i64 @func00000000000000a8(i64 %0) #0 {
 entry:
   %1 = shl nuw i64 %0, 7
   %2 = or disjoint i64 %1, 16
@@ -112,7 +105,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/ZendAccelerator.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0) #0 {
+define i64 @func0000000000000061(i64 %0) #0 {
 entry:
   %1 = shl nsw i64 %0, 20
   %2 = or disjoint i64 %1, 208
@@ -125,7 +118,7 @@ entry:
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0) #0 {
+define i64 @func0000000000000021(i64 %0) #0 {
 entry:
   %1 = shl i64 %0, 1
   %2 = or disjoint i64 %1, 1
@@ -137,7 +130,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/frameobject.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000078(i64 %0) #0 {
+define i64 @func00000000000000e8(i64 %0) #0 {
 entry:
   %1 = shl nuw nsw i64 %0, 3
   %2 = or disjoint i64 %1, 5

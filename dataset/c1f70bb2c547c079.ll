@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 33 occurrences:
 ; gromacs/optimized/andersentemperaturecoupling.cpp.ll
 ; hyperscan/optimized/rose_build_instructions.cpp.ll
 ; rayon-rs/optimized/5ev50in5ju1pej99.ll
@@ -21,6 +21,10 @@
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; typst-rs/optimized/w6iknwszr5npyaz.ll
 ; typst-rs/optimized/xrijsyrxk2ciyk9.ll
+; zed-rs/optimized/0o1pecj7sihe8j10tk83wbgu7.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/d9zbxounqkt24vk3xyo3kqpk8.ll
 ; zfp/optimized/encode1d.c.ll
 ; zfp/optimized/encode1l.c.ll
 ; zfp/optimized/encode2d.c.ll

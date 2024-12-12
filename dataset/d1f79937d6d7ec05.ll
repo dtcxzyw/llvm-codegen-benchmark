@@ -1,10 +1,9 @@
 
-; 30 occurrences:
+; 29 occurrences:
 ; abc/optimized/solver.c.ll
 ; flac/optimized/fixed.c.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
 ; flac/optimized/fixed_intrin_sse2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; flac/optimized/fixed_intrin_ssse3.c.ll
 ; flac/optimized/lpc.c.ll
 ; flac/optimized/stream_encoder.c.ll
@@ -39,7 +38,7 @@ entry:
   ret double %4
 }
 
-; 56 occurrences:
+; 57 occurrences:
 ; abc/optimized/abcSaucy.c.ll
 ; abc/optimized/bmcMulti.c.ll
 ; abc/optimized/cecSatG2.c.ll
@@ -58,6 +57,7 @@ entry:
 ; abc/optimized/sfmCore.c.ll
 ; abc/optimized/sfmDec.c.ll
 ; abc/optimized/wlnRetime.c.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; graphviz/optimized/make_map.c.ll
 ; gromacs/optimized/freevolume.cpp.ll

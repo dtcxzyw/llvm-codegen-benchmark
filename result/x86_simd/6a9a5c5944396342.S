@@ -74,7 +74,7 @@ func0000000000000002:                   # @func0000000000000002
 func0000000000000003:                   # @func0000000000000003
 	vmovq	.LCPI1_1(%rip), %xmm2           # xmm2 = [1,2,4,8,16,32,64,128,0,0,0,0,0,0,0,0]
 	vpshufb	%xmm1, %xmm2, %xmm1
-	vpand	%xmm0, %xmm1, %xmm0
+	vpand	%xmm1, %xmm0, %xmm0
 	retq
 .LCPI2_0:
 	.byte	255                             # 0xff
@@ -113,5 +113,5 @@ func0000000000000003:                   # @func0000000000000003
 func0000000000000001:                   # @func0000000000000001
 	vmovq	.LCPI2_1(%rip), %xmm2           # xmm2 = [255,254,252,248,240,224,192,128,0,0,0,0,0,0,0,0]
 	vpshufb	%xmm1, %xmm2, %xmm1
-	vpand	%xmm0, %xmm1, %xmm0
+	vpand	%xmm1, %xmm0, %xmm0
 	retq

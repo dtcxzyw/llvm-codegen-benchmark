@@ -20,7 +20,7 @@ entry:
   ret i64 %4
 }
 
-; 26 occurrences:
+; 27 occurrences:
 ; cvc5/optimized/attempt_solution_simplex.cpp.ll
 ; cvc5/optimized/constraint.cpp.ll
 ; cvc5/optimized/error_set.cpp.ll
@@ -32,6 +32,7 @@ entry:
 ; cvc5/optimized/soi_simplex.cpp.ll
 ; cvc5/optimized/tableau.cpp.ll
 ; cvc5/optimized/theory_arith_private.cpp.ll
+; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
 ; duckdb/optimized/ub_duckdb_common_types_row.cpp.ll
 ; hermes/optimized/CFG.cpp.ll
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
@@ -111,11 +112,12 @@ entry:
   ret i64 %4
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; cvc5/optimized/regexp_elim.cpp.ll
 ; gromacs/optimized/colvarbias_meta.cpp.ll
 ; gromacs/optimized/colvargrid.cpp.ll
 ; linux/optimized/nfs4proc.ll
+; llvm/optimized/CodeGenDAGPatterns.cpp.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
 ; openjdk/optimized/replacednodes.ll
@@ -131,8 +133,9 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; qemu/optimized/hw_intc_riscv_aplic.c.ll
+; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000027(i64 %0) #0 {
 entry:
@@ -143,7 +146,8 @@ entry:
   ret i64 %4
 }
 
-; 22 occurrences:
+; 23 occurrences:
+; assimp/optimized/clipper.cpp.ll
 ; freetype/optimized/raster.c.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; glslang/optimized/ShaderLang.cpp.ll
@@ -228,18 +232,6 @@ entry:
   %1 = lshr i64 %0, 32
   %2 = trunc nuw i64 %1 to i32
   %3 = add nsw i32 %2, -1
-  %4 = zext nneg i32 %3 to i64
-  ret i64 %4
-}
-
-; 1 occurrences:
-; z3/optimized/cmd_context.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000007(i64 %0) #0 {
-entry:
-  %1 = lshr i64 %0, 3
-  %2 = trunc i64 %1 to i32
-  %3 = add nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }

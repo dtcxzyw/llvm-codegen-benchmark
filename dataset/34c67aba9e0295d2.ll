@@ -2,10 +2,10 @@
 ; 1 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(i64 %0, i64 %1) #0 {
+define ptr @func000000000000001e(i64 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr nusw i8, ptr %2, i64 4096
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 4096
   %4 = sub nsw i64 0, %0
   %5 = getelementptr nusw i8, ptr %3, i64 %4
   ret ptr %5

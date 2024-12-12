@@ -1,5 +1,5 @@
 
-; 283 occurrences:
+; 288 occurrences:
 ; abseil-cpp/optimized/bind.cc.ll
 ; abseil-cpp/optimized/civil_time.cc.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
@@ -95,7 +95,7 @@
 ; hdf5/optimized/H5Shyper.c.ll
 ; hdf5/optimized/H5Spoint.c.ll
 ; hdf5/optimized/H5Tvlen.c.ll
-; hdf5/optimized/H5VLnative_blob.c.ll
+; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; image-rs/optimized/ptscn4jakoj4p9m.ll
 ; imgui/optimized/imgui_draw.cpp.ll
@@ -279,6 +279,11 @@
 ; wireshark/optimized/tvbuff.c.ll
 ; wireshark/optimized/vwr.c.ll
 ; wolfssl/optimized/sp_int.c.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
@@ -288,13 +293,13 @@ define i64 @func000000000000003f(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 9
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   %6 = shl nuw nsw i64 %1, 1
   %7 = or disjoint i64 %5, %6
   ret i64 %7
 }
 
-; 40 occurrences:
+; 47 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
@@ -311,6 +316,7 @@ entry:
 ; git/optimized/packfile.ll
 ; git/optimized/reader.ll
 ; git/optimized/record.ll
+; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; lief/optimized/gcm.c.ll
 ; lz4/optimized/lz4frame.c.ll
@@ -335,18 +341,24 @@ entry:
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; wireshark/optimized/packet-zbee-direct.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/avfqkgc3wosoc0eacq6zrtrq5.ll
+; zed-rs/optimized/cp92gkg5707l1e819dflws6md.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003b(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 48
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   %6 = shl nuw i64 %1, 56
   %7 = or disjoint i64 %5, %6
   ret i64 %7
 }
 
-; 42 occurrences:
+; 43 occurrences:
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; duckdb/optimized/ub_duckdb_func_string_main.cpp.ll
@@ -389,12 +401,13 @@ entry:
 ; wireshark/optimized/peekclassic.c.ll
 ; wireshark/optimized/tvbuff.c.ll
 ; wireshark/optimized/vwr.c.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000002f(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw i64 %3, 56
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   %6 = shl nuw nsw i64 %1, 40
   %7 = or disjoint i64 %5, %6
   ret i64 %7
@@ -454,7 +467,7 @@ define i64 @func000000000000003e(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 16
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   %6 = shl nuw nsw i64 %1, 8
   %7 = or i64 %5, %6
   ret i64 %7
@@ -498,7 +511,7 @@ define i64 @func000000000000007f(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 24
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   %6 = shl nuw nsw i64 %1, 8
   %7 = or disjoint i64 %5, %6
   ret i64 %7
@@ -525,7 +538,7 @@ define i64 @func0000000000000038(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 48
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   %6 = shl nuw i64 %1, 56
   %7 = or i64 %5, %6
   ret i64 %7
@@ -626,7 +639,7 @@ define i64 @func000000000000000c(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl i64 %3, 58
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   %6 = shl nuw nsw i64 %1, 46
   %7 = or i64 %5, %6
   ret i64 %7
@@ -641,7 +654,7 @@ define i64 @func000000000000007c(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 32
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   %6 = shl nuw nsw i64 %1, 40
   %7 = or i64 %5, %6
   ret i64 %7
@@ -654,7 +667,7 @@ define i64 @func0000000000000036(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 8
-  %5 = or i64 %4, %1
+  %5 = or i64 %1, %4
   %6 = shl nuw nsw i64 %0, 16
   %7 = or i64 %6, %5
   ret i64 %7

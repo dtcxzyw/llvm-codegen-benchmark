@@ -39,13 +39,13 @@ func0000000000000088:                   # @func0000000000000088
 	vxorpd	%xmm2, %xmm2, %xmm2
 	vcmpeqsd	%xmm2, %xmm1, %k1
 	vmovsd	%xmm2, %xmm1, %xmm1 {%k1}
-	vcmpeqsd	%xmm0, %xmm1, %k0
+	vcmpeqsd	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 func0000000000000048:                   # @func0000000000000048
 	vxorpd	%xmm2, %xmm2, %xmm2
 	vminsd	%xmm1, %xmm2, %xmm1
-	vcmpeqsd	%xmm0, %xmm1, %k0
+	vcmpeqsd	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 func0000000000000025:                   # @func0000000000000025
@@ -57,7 +57,7 @@ func0000000000000025:                   # @func0000000000000025
 func000000000000002e:                   # @func000000000000002e
 	vxorpd	%xmm2, %xmm2, %xmm2
 	vmaxsd	%xmm1, %xmm2, %xmm1
-	vucomisd	%xmm0, %xmm1
+	vucomisd	%xmm1, %xmm0
 	setnp	%al
 	retq
 .LCPI9_0:
@@ -75,12 +75,4 @@ func000000000000002c:                   # @func000000000000002c
 	vmaxsd	%xmm1, %xmm2, %xmm1
 	vucomisd	%xmm1, %xmm0
 	setae	%al
-	retq
-.LCPI11_0:
-	.quad	0x40c3880000000000              # double 1.0E+4
-func0000000000000044:                   # @func0000000000000044
-	vmovsd	.LCPI11_0(%rip), %xmm2          # xmm2 = [1.0E+4,0.0E+0]
-	vminsd	%xmm1, %xmm2, %xmm1
-	vucomisd	%xmm1, %xmm0
-	seta	%al
 	retq

@@ -1,7 +1,8 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; libjpeg-turbo/optimized/jdcolor.c.ll
 ; libjpeg-turbo/optimized/jdmerge.c.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; minetest/optimized/CImage.cpp.ll
 ; opencv/optimized/obsensor_uvc_stream_channel.cpp.ll

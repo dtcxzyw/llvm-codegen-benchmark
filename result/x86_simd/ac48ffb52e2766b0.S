@@ -26,7 +26,7 @@ func0000000000000005:                   # @func0000000000000005
 	vinserti128	$1, %xmm3, %ymm1, %ymm1
 	vpsllq	$32, %ymm1, %ymm1
 	vpsraq	$32, %ymm1, %ymm1
-	vpmullq	%ymm0, %ymm1, %ymm0
+	vpmullq	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000000:                   # @func0000000000000000
 	vextracti128	$1, %ymm1, %xmm3
@@ -56,7 +56,7 @@ func0000000000000000:                   # @func0000000000000000
 	vinserti128	$1, %xmm3, %ymm1, %ymm1
 	vpsllq	$32, %ymm1, %ymm1
 	vpsraq	$48, %ymm1, %ymm1
-	vpmullq	%ymm0, %ymm1, %ymm0
+	vpmullq	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000004:                   # @func0000000000000004
 	vextracti128	$1, %ymm1, %xmm3
@@ -146,5 +146,5 @@ func0000000000000015:                   # @func0000000000000015
 	vinserti128	$1, %xmm3, %ymm1, %ymm1
 	vpsllq	$48, %ymm1, %ymm1
 	vpsraq	$48, %ymm1, %ymm1
-	vpmullq	%ymm0, %ymm1, %ymm0
+	vpmullq	%ymm1, %ymm0, %ymm0
 	retq

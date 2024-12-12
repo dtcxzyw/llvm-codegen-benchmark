@@ -35,7 +35,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, 1
   %5 = icmp eq i32 %4, %1
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -44,38 +44,24 @@ entry:
 ; abc/optimized/absRef.c.ll
 ; abc/optimized/absVta.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002b(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000004b(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = and i32 %3, 536870911
   %5 = icmp sge i32 %4, %1
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; abc/optimized/cecCec.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000046(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = and i32 %3, 536870911
   %5 = icmp slt i32 %4, %1
-  %6 = and i1 %5, %0
-  ret i1 %6
-}
-
-; 3 occurrences:
-; abc/optimized/sbdWin.c.ll
-; llvm/optimized/DXILEmitter.cpp.ll
-; ozz-animation/optimized/jsoncpp.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc i64 %2 to i32
-  %4 = and i32 %3, 536870911
-  %5 = icmp ult i32 %4, %1
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -83,12 +69,12 @@ entry:
 ; proxygen/optimized/ResourceStats.cpp.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = and i32 %3, 1
   %5 = icmp eq i32 %4, %1
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -100,7 +86,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, 16777215
   %5 = icmp ugt i32 %4, %1
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

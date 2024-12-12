@@ -1,5 +1,5 @@
 
-%"class.mold::LittleEndian.3.2521444" = type { [8 x i8] }
+%"class.mold::LittleEndian.3.2635854" = type { [8 x i8] }
 
 ; 21 occurrences:
 ; abc/optimized/giaCone.c.ll
@@ -24,12 +24,12 @@
 ; mold/optimized/output-chunks.cc.SPARC64.cc.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 6
   %4 = urem i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw %"class.mold::LittleEndian.3.2521444", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.mold::LittleEndian.3.2635854", ptr %0, i64 %5
   ret ptr %6
 }
 

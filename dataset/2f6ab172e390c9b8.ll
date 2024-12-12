@@ -95,6 +95,18 @@ entry:
 }
 
 ; 1 occurrences:
+; boost/optimized/cmdline.ll
+; Function Attrs: nounwind
+define i64 @func000000000000002b(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nsw i64 %0, %1
+  %3 = shl nsw i64 %2, 3
+  %4 = add nsw i64 %3, -8
+  %5 = ashr exact i64 %4, 3
+  ret i64 %5
+}
+
+; 1 occurrences:
 ; linux/optimized/sparse.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {

@@ -1,5 +1,5 @@
 
-%struct.dx_map_entry.3361330 = type { i32, i16, i16 }
+%struct.dx_map_entry.3548012 = type { i32, i16, i16 }
 
 ; 1 occurrences:
 ; clamav/optimized/Delta.c.ll
@@ -40,7 +40,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = select i1 %1, i64 11, i64 %3
   %5 = sub nsw i64 0, %4
-  %6 = getelementptr %struct.dx_map_entry.3361330, ptr %0, i64 %5
+  %6 = getelementptr %struct.dx_map_entry.3548012, ptr %0, i64 %5
   ret ptr %6
 }
 

@@ -2,7 +2,7 @@ func0000000000000012:                   // @func0000000000000012
 // %bb.0:                               // %entry
 	lsr	x8, x2, #1
 	sub	x8, x8, #1
-	madd	x0, x8, x1, x0
+	madd	x0, x1, x8, x0
 	ret
                                         // -- End function
 func0000000000000022:                   // @func0000000000000022

@@ -3,16 +3,16 @@ func0000000000000004:                   # @func0000000000000004
 	vle64.v	v24, (a0)
 	fli.d	fa5, 1.0
 	vfmax.vf	v24, v24, fa5
-	vfmul.vv	v16, v24, v16
-	vfadd.vv	v8, v16, v8
+	vfmul.vv	v16, v16, v24
+	vfadd.vv	v8, v8, v16
 	ret
 func0000000000000002:                   # @func0000000000000002
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	fli.d	fa5, 1.0
 	vfmin.vf	v24, v24, fa5
-	vfmul.vv	v16, v24, v16
-	vfadd.vv	v8, v16, v8
+	vfmul.vv	v16, v16, v24
+	vfadd.vv	v8, v8, v16
 	ret
 func000000000000000e:                   # @func000000000000000e
 	addi	sp, sp, -16
@@ -29,7 +29,7 @@ func000000000000000e:                   # @func000000000000000e
 	vfmul.vv	v16, v24, v16
 	addi	a0, sp, 16
 	vl8r.v	v8, (a0)                        # Unknown-size Folded Reload
-	vfadd.vv	v8, v16, v8
+	vfadd.vv	v8, v8, v16
 	csrr	a0, vlenb
 	sh3add	sp, a0, sp
 	addi	sp, sp, 16

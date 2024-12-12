@@ -1,6 +1,7 @@
 
-%"class.llvm::Use.2944921" = type { ptr, ptr, ptr, ptr }
-%"class.llvm::Use.2994019" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3138497" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3187482" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3194155" = type { ptr, ptr, ptr, ptr }
 
 ; 129 occurrences:
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
@@ -133,34 +134,62 @@
 ; llvm/optimized/X86LowerAMXIntrinsics.cpp.ll
 ; llvm/optimized/X86LowerAMXType.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000002f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 134217727
   %4 = add nsw i32 %3, -1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw %"class.llvm::Use.2944921", ptr %0, i64 %1
-  %7 = getelementptr nusw ptr, ptr %6, i64 %5
+  %6 = getelementptr nusw nuw %"class.llvm::Use.3138497", ptr %0, i64 %1
+  %7 = getelementptr nusw nuw ptr, ptr %6, i64 %5
   ret ptr %7
 }
 
 ; 1 occurrences:
 ; llvm/optimized/LoopIdiomVectorize.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000003b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 134217727
-  %4 = getelementptr nusw %"class.llvm::Use.2994019", ptr %0, i64 %1
+  %4 = getelementptr nusw %"class.llvm::Use.3187482", ptr %0, i64 %1
   %5 = zext nneg i32 %3 to i64
-  %6 = getelementptr %"class.llvm::Use.2994019", ptr %4, i64 %5
+  %6 = getelementptr %"class.llvm::Use.3187482", ptr %4, i64 %5
   %7 = getelementptr i8, ptr %6, i64 -32
   ret ptr %7
 }
 
-; 14 occurrences:
+; 1 occurrences:
+; llvm/optimized/InstructionCombining.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002b(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 134217727
+  %4 = add nsw i32 %3, -1
+  %5 = zext i32 %4 to i64
+  %6 = getelementptr nusw %"class.llvm::Use.3194155", ptr %0, i64 %1
+  %7 = getelementptr nusw nuw %"class.llvm::Use.3194155", ptr %6, i64 %5
+  ret ptr %7
+}
+
+; 6 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; icu/optimized/genrb.ll
-; icu/optimized/uresdata.ll
 ; opencv/optimized/bgfg_KNN.cpp.ll
+; opencv/optimized/imgwarp.cpp.ll
+; opencv/optimized/rand.cpp.ll
+; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
+; Function Attrs: nounwind
+define ptr @func000000000000007f(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 255
+  %4 = getelementptr nusw nuw { ptr, i64 }, ptr %0, i64 %1
+  %5 = zext nneg i32 %3 to i64
+  %6 = getelementptr { ptr, i64 }, ptr %4, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 16
+  ret ptr %7
+}
+
+; 9 occurrences:
+; icu/optimized/uresdata.ll
 ; opencv/optimized/demosaicing.cpp.ll
 ; opencv/optimized/imgwarp.cpp.ll
 ; opencv/optimized/lkpyramid.cpp.ll
@@ -168,17 +197,15 @@ entry:
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/npr.cpp.ll
 ; opencv/optimized/pyramids.cpp.ll
-; opencv/optimized/rand.cpp.ll
 ; opencv/optimized/samplers.cpp.ll
-; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000007b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
-  %4 = getelementptr nusw { ptr, i64 }, ptr %0, i64 %1
+  %4 = getelementptr nusw i8, ptr %0, i64 %1
   %5 = zext nneg i32 %3 to i64
-  %6 = getelementptr { ptr, i64 }, ptr %4, i64 %5
-  %7 = getelementptr i8, ptr %6, i64 16
+  %6 = getelementptr i32, ptr %4, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 4
   ret ptr %7
 }
 
@@ -200,10 +227,10 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/imgwarp.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000078(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000007c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 511
-  %4 = getelementptr nusw float, ptr %0, i64 %1
+  %4 = getelementptr nusw nuw float, ptr %0, i64 %1
   %5 = zext nneg i32 %3 to i64
   %6 = getelementptr float, ptr %4, i64 %5
   %7 = getelementptr i8, ptr %6, i64 4
@@ -213,7 +240,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/lkpyramid.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000072(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000073(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 511
   %4 = getelementptr i8, ptr %0, i64 %1

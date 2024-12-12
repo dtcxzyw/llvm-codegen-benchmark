@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; cpython/optimized/listobject.ll
 ; flac/optimized/decode.c.ll
 ; freetype/optimized/pshinter.c.ll
@@ -8,6 +8,7 @@
 ; linux/optimized/timeconv.ll
 ; llvm/optimized/AArch64LegalizerInfo.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
+; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/X86ShuffleDecode.cpp.ll
 ; opencv/optimized/lapack.cpp.ll
 ; qemu/optimized/hw_riscv_boot.c.ll

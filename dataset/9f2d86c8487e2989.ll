@@ -1,50 +1,30 @@
 
-%"struct.tbb::detail::d1::ets_base<tbb::detail::d1::ets_no_key>::slot.2521645" = type { %"struct.std::atomic.742.2521646", ptr }
-%"struct.std::atomic.742.2521646" = type { %"class.std::thread::id.2521644" }
-%"class.std::thread::id.2521644" = type { i64 }
-%"struct.clang::ObjCDictionaryLiteral_KeyValuePair.2994639" = type { ptr, ptr }
-%struct.perf_guest_switch_msr.3344407 = type { i32, i64, i64 }
-%struct.elf64_phdr.3361347 = type { i32, i32, i64, i64, i64, i64, i64, i64 }
+%struct.perf_guest_switch_msr.3533249 = type { i32, i64, i64 }
 
-; 6 occurrences:
+; 9 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; hermes/optimized/RegExp.cpp.ll
+; linux/optimized/nf_conntrack_sip.ll
+; linux/optimized/nf_nat_proto.ll
+; linux/optimized/nf_nat_sip.ll
 ; luajit/optimized/lj_trace.ll
 ; luajit/optimized/lj_trace_dyn.ll
 ; postgres/optimized/reloptions.ll
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000020(i64 %0, i64 %1) #0 {
+define ptr @func0000000000000030(i64 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr nusw i8, ptr %2, i64 16
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 16
   %4 = getelementptr i32, ptr %3, i64 %0
   %5 = getelementptr i8, ptr %4, i64 -4
   ret ptr %5
 }
 
-; 135 occurrences:
-; abc/optimized/mapperTime.c.ll
-; abc/optimized/mapperUtils.c.ll
-; coreutils-rs/optimized/3xc4e7mmntf4esc6.ll
+; 156 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; folly/optimized/Barrier.cpp.ll
-; hermes/optimized/DictPropertyMap.cpp.ll
-; hermes/optimized/HermesBuiltin.cpp.ll
-; hermes/optimized/HiddenClass.cpp.ll
-; hermes/optimized/JSArray.cpp.ll
-; hermes/optimized/JSObject.cpp.ll
-; hermes/optimized/RegExp.cpp.ll
-; hyperscan/optimized/teddy.c.ll
-; hyperscan/optimized/teddy_avx2.c.ll
 ; libquic/optimized/poly1305_vec.c.ll
-; llvm/optimized/DXContainer.cpp.ll
-; llvm/optimized/ModuleMap.cpp.ll
-; llvm/optimized/SemaAvailability.cpp.ll
-; luajit/optimized/lj_debug.ll
-; luajit/optimized/lj_debug_dyn.ll
-; luajit/optimized/lj_str.ll
-; luajit/optimized/lj_str_dyn.ll
 ; mold/optimized/gc-sections.cc.ALPHA.cc.ll
 ; mold/optimized/gc-sections.cc.ARM32.cc.ll
 ; mold/optimized/gc-sections.cc.ARM64.cc.ll
@@ -153,72 +133,6 @@ entry:
 ; mold/optimized/passes.cc.SH4.cc.ll
 ; mold/optimized/passes.cc.SPARC64.cc.ll
 ; mold/optimized/passes.cc.X86_64.cc.ll
-; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/LevelSetSphere.cc.ll
-; openvdb/optimized/MultiResGrid.cc.ll
-; rayon-rs/optimized/2xi93mrj8f00xnic.ll
-; rust-analyzer-rs/optimized/2i82iai7kwxbnc4v.ll
-; wasmtime-rs/optimized/172871zsy4nrpcmu.ll
-; Function Attrs: nounwind
-define ptr @func000000000000002a(i64 %0, i64 %1) #0 {
-entry:
-  %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr nusw i8, ptr %2, i64 16
-  %4 = getelementptr %"struct.tbb::detail::d1::ets_base<tbb::detail::d1::ets_no_key>::slot.2521645", ptr %3, i64 %0, i32 1
-  ret ptr %4
-}
-
-; 1 occurrences:
-; darktable/optimized/amaze.cc.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000a(i64 %0, i64 %1) #0 {
-entry:
-  %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr i8, ptr %2, i64 1281920
-  %4 = getelementptr nusw float, ptr %3, i64 %0
-  %5 = getelementptr nusw i8, ptr %4, i64 32
-  ret ptr %5
-}
-
-; 2 occurrences:
-; darktable/optimized/amaze.cc.ll
-; linux/optimized/dm-ioctl.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000000(i64 %0, i64 %1) #0 {
-entry:
-  %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr i8, ptr %2, i64 1281920
-  %4 = getelementptr float, ptr %3, i64 %0
-  %5 = getelementptr i8, ptr %4, i64 -4
-  ret ptr %5
-}
-
-; 1 occurrences:
-; darktable/optimized/amaze.cc.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000008(i64 %0, i64 %1) #0 {
-entry:
-  %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr i8, ptr %2, i64 1281920
-  %4 = getelementptr nusw float, ptr %3, i64 %0
-  %5 = getelementptr i8, ptr %4, i64 -4
-  ret ptr %5
-}
-
-; 1 occurrences:
-; darktable/optimized/amaze.cc.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000028(i64 %0, i64 %1) #0 {
-entry:
-  %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr nusw i8, ptr %2, i64 410112
-  %4 = getelementptr nusw float, ptr %3, i64 %0
-  %5 = getelementptr i8, ptr %4, i64 -1920
-  ret ptr %5
-}
-
-; 40 occurrences:
-; llvm/optimized/SemaTemplateVariadic.cpp.ll
 ; openusd/optimized/bboxCache.cpp.ll
 ; openusd/optimized/changeManager.cpp.ll
 ; openusd/optimized/changes.cpp.ll
@@ -258,40 +172,184 @@ entry:
 ; openusd/optimized/usdcat.cpp.ll
 ; openusd/optimized/usdtree.cpp.ll
 ; openusd/optimized/usdzResolver.cpp.ll
+; openvdb/optimized/FastSweeping.cc.ll
+; openvdb/optimized/LevelSetSphere.cc.ll
+; openvdb/optimized/MultiResGrid.cc.ll
+; zed-rs/optimized/3wc7tnd4g7jfnn81av5tll8e5.ll
+; zed-rs/optimized/78nr3ruxuq6h5rfkaolnxa52k.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002b(i64 %0, i64 %1) #0 {
+define ptr @func000000000000003b(i64 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr nusw i8, ptr %2, i64 40
-  %4 = getelementptr %"struct.clang::ObjCDictionaryLiteral_KeyValuePair.2994639", ptr %3, i64 %0, i32 1
+  %.idx = shl i64 %0, 4
+  %3 = getelementptr i8, ptr %2, i64 24
+  %4 = getelementptr i8, ptr %3, i64 %.idx
   ret ptr %4
 }
 
-; 4 occurrences:
-; linux/optimized/build_policy.ll
-; linux/optimized/core.ll
-; linux/optimized/md.ll
-; linux/optimized/timer_list.ll
+; 21 occurrences:
+; abc/optimized/mapperTime.c.ll
+; abc/optimized/mapperUtils.c.ll
+; coreutils-rs/optimized/3xc4e7mmntf4esc6.ll
+; folly/optimized/Barrier.cpp.ll
+; hermes/optimized/DictPropertyMap.cpp.ll
+; hermes/optimized/HermesBuiltin.cpp.ll
+; hermes/optimized/HiddenClass.cpp.ll
+; hermes/optimized/Interpreter.cpp.ll
+; hermes/optimized/JSArray.cpp.ll
+; hermes/optimized/JSObject.cpp.ll
+; hermes/optimized/RegExp.cpp.ll
+; hermes/optimized/Runtime.cpp.ll
+; llvm/optimized/DXContainer.cpp.ll
+; llvm/optimized/SemaAvailability.cpp.ll
+; llvm/optimized/SemaTemplateVariadic.cpp.ll
+; luajit/optimized/lj_debug.ll
+; luajit/optimized/lj_debug_dyn.ll
+; rayon-rs/optimized/2xi93mrj8f00xnic.ll
+; rust-analyzer-rs/optimized/2i82iai7kwxbnc4v.ll
+; wasmtime-rs/optimized/172871zsy4nrpcmu.ll
+; zed-rs/optimized/clfnbm8q68pj6tyseqadz86ib.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000022(i64 %0, i64 %1) #0 {
+define ptr @func000000000000003f(i64 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr nusw i8, ptr %2, i64 3552
-  %4 = getelementptr %struct.perf_guest_switch_msr.3344407, ptr %3, i64 %0
-  %5 = getelementptr nusw i8, ptr %4, i64 16
+  %.idx = shl nuw i64 %0, 4
+  %3 = getelementptr i8, ptr %2, i64 16
+  %4 = getelementptr i8, ptr %3, i64 %.idx
+  ret ptr %4
+}
+
+; 1 occurrences:
+; darktable/optimized/amaze.cc.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(i64 %0, i64 %1) #0 {
+entry:
+  %2 = inttoptr i64 %1 to ptr
+  %3 = getelementptr i8, ptr %2, i64 1281920
+  %4 = getelementptr nusw float, ptr %3, i64 %0
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 32
   ret ptr %5
 }
 
 ; 2 occurrences:
-; linux/optimized/buildid.ll
-; postgres/optimized/tsginidx.ll
+; darktable/optimized/amaze.cc.ll
+; linux/optimized/dm-ioctl.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(i64 %0, i64 %1) #0 {
+define ptr @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr i8, ptr %2, i64 64
-  %4 = getelementptr %struct.elf64_phdr.3361347, ptr %3, i64 %0, i32 2
-  ret ptr %4
+  %3 = getelementptr i8, ptr %2, i64 1281920
+  %4 = getelementptr float, ptr %3, i64 %0
+  %5 = getelementptr i8, ptr %4, i64 -4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; darktable/optimized/amaze.cc.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000008(i64 %0, i64 %1) #0 {
+entry:
+  %2 = inttoptr i64 %1 to ptr
+  %3 = getelementptr i8, ptr %2, i64 1281920
+  %4 = getelementptr nusw float, ptr %3, i64 %0
+  %5 = getelementptr i8, ptr %4, i64 -4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; darktable/optimized/amaze.cc.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000038(i64 %0, i64 %1) #0 {
+entry:
+  %2 = inttoptr i64 %1 to ptr
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 410112
+  %4 = getelementptr nusw float, ptr %3, i64 %0
+  %5 = getelementptr i8, ptr %4, i64 -1920
+  ret ptr %5
+}
+
+; 1 occurrences:
+; boost/optimized/alloc_lib.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002f(i64 %0, i64 %1) #0 {
+entry:
+  %2 = inttoptr i64 %1 to ptr
+  %3 = getelementptr nusw i8, ptr %2, i64 -16
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %0
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 8
+  ret ptr %5
+}
+
+; 1 occurrences:
+; llvm/optimized/ModuleMap.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003a(i64 %0, i64 %1) #0 {
+entry:
+  %2 = inttoptr i64 %1 to ptr
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 32
+  %4 = getelementptr nusw i8, ptr %3, i64 %0
+  %5 = getelementptr nusw i8, ptr %4, i64 -10
+  ret ptr %5
+}
+
+; 8 occurrences:
+; linux/optimized/build_policy.ll
+; linux/optimized/core.ll
+; linux/optimized/md.ll
+; linux/optimized/nf_conntrack_sip.ll
+; linux/optimized/nf_nat_core.ll
+; linux/optimized/nf_nat_proto.ll
+; linux/optimized/nf_nat_sip.ll
+; linux/optimized/timer_list.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000033(i64 %0, i64 %1) #0 {
+entry:
+  %2 = inttoptr i64 %1 to ptr
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 3552
+  %4 = getelementptr %struct.perf_guest_switch_msr.3533249, ptr %3, i64 %0
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 16
+  ret ptr %5
+}
+
+; 3 occurrences:
+; linux/optimized/buildid.ll
+; linux/optimized/dma-iommu.ll
+; postgres/optimized/tsginidx.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(i64 %0, i64 %1) #0 {
+entry:
+  %2 = inttoptr i64 %1 to ptr
+  %3 = getelementptr i8, ptr %2, i64 32
+  %4 = getelementptr i8, ptr %3, i64 %0
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 8
+  ret ptr %5
+}
+
+; 2 occurrences:
+; luajit/optimized/lj_str.ll
+; luajit/optimized/lj_str_dyn.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003e(i64 %0, i64 %1) #0 {
+entry:
+  %2 = inttoptr i64 %1 to ptr
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 24
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %0
+  %5 = getelementptr nusw i8, ptr %4, i64 -1
+  ret ptr %5
+}
+
+; 2 occurrences:
+; hyperscan/optimized/teddy.c.ll
+; hyperscan/optimized/teddy_avx2.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002b(i64 %0, i64 %1) #0 {
+entry:
+  %2 = inttoptr i64 %1 to ptr
+  %3 = getelementptr nusw i8, ptr %2, i64 -16
+  %4 = getelementptr nusw i8, ptr %3, i64 %0
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 2
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

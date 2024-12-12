@@ -1,5 +1,5 @@
 
-; 235 occurrences:
+; 237 occurrences:
 ; assimp/optimized/DXFLoader.cpp.ll
 ; assimp/optimized/IFCLoader.cpp.ll
 ; assimp/optimized/TextureTransform.cpp.ll
@@ -158,6 +158,7 @@
 ; oiio/optimized/filter.cpp.ll
 ; oiio/optimized/imagebuf.cpp.ll
 ; oiio/optimized/imagebufalgo_channels.cpp.ll
+; oiio/optimized/imagebufalgo_minmaxchan.cpp.ll
 ; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
 ; oiio/optimized/imagebufalgo_xform.cpp.ll
 ; oiio/optimized/maketexture.cpp.ll
@@ -232,8 +233,9 @@
 ; wireshark/optimized/packet-nr-rrc.c.ll
 ; wireshark/optimized/packet-s1ap.c.ll
 ; wireshark/optimized/packet-ulp.c.ll
-; wireshark/optimized/packet-x2ap.c.ll
 ; wireshark/optimized/packet-xnap.c.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
 ; zxing/optimized/PDFEncoder.cpp.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0) #0 {

@@ -1,6 +1,5 @@
 
-; 4 occurrences:
-; eastl/optimized/TestChrono.cpp.ll
+; 3 occurrences:
 ; postgres/optimized/isolationtester.ll
 ; postgres/optimized/pgstat_io.ll
 ; postgres/optimized/sync.ll

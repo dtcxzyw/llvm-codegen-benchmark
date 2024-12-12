@@ -1,9 +1,8 @@
 
-; 30 occurrences:
+; 29 occurrences:
 ; cmake/optimized/cookie.c.ll
 ; curl/optimized/libcurl_la-cookie.ll
 ; duckdb/optimized/ub_duckdb_optimizer_statistics_expr.cpp.ll
-; hdf5/optimized/H5I.c.ll
 ; linux/optimized/drm_client_modeset.ll
 ; linux/optimized/drm_crtc_helper.ll
 ; linux/optimized/drm_edid.ll
@@ -36,6 +35,18 @@ entry:
   %2 = icmp eq ptr %1, null
   %3 = select i1 %2, i8 0, i8 %0
   ret i8 %3
+}
+
+; 3 occurrences:
+; image-rs/optimized/1clnprdgqfw2q9lq.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; Function Attrs: nounwind
+define i8 @func000000000000000c(i8 %0, ptr %1) #0 {
+entry:
+  %.not = icmp eq ptr %1, null
+  %2 = select i1 %.not, i8 %0, i8 undef
+  ret i8 %2
 }
 
 attributes #0 = { nounwind }

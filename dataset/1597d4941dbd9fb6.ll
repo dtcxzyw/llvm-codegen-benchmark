@@ -1,5 +1,6 @@
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/approximately_equals.ll
 ; linux/optimized/core.ll
 ; ruby/optimized/weakmap.ll
 ; rustfmt-rs/optimized/4arc02n7xt9gqo2v.ll

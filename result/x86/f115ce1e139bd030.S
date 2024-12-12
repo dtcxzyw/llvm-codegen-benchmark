@@ -74,13 +74,13 @@ func0000000000000010:                   # @func0000000000000010
 	movabsq	$4611686018427387903, %rax      # imm = 0x3FFFFFFFFFFFFFFF
 	addq	%rdi, %rax
 	retq
-func0000000000000037:                   # @func0000000000000037
+func000000000000000f:                   # @func000000000000000f
 	subq	%rsi, %rdi
 	leaq	2(%rdi,%rdi), %rax
 	retq
-func000000000000000f:                   # @func000000000000000f
+func0000000000000037:                   # @func0000000000000037
 	subq	%rsi, %rdi
-	leaq	4(%rdi,%rdi), %rax
+	leaq	2(%rdi,%rdi), %rax
 	retq
 func0000000000000001:                   # @func0000000000000001
 	subq	%rsi, %rdi

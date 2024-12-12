@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 18 occurrences:
 ; coreutils-rs/optimized/450bow9j8399x84k.ll
 ; hermes/optimized/HadesGC.cpp.ll
 ; hermes/optimized/raw_ostream.cpp.ll
@@ -15,6 +15,9 @@
 ; sqlite/optimized/sqlite3.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i8 %1) #0 {
 entry:

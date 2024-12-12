@@ -1,12 +1,8 @@
 
-; 46 occurrences:
-; abc/optimized/cecSatG2.c.ll
-; abc/optimized/cecSatG3.c.ll
+; 48 occurrences:
 ; arrow/optimized/basic_decimal.cc.ll
 ; clamav/optimized/Ppmd7.c.ll
 ; cmake/optimized/archive_ppmd7.c.ll
-; cmake/optimized/archive_ppmd8.c.ll
-; darktable/optimized/IiqDecoder.cpp.ll
 ; image-rs/optimized/2mngkegtim1o10y3.ll
 ; influxdb-rs/optimized/1s5ibqekmzia6ibu.ll
 ; libwebp/optimized/tree_dec.c.ll
@@ -40,6 +36,12 @@
 ; wasmtime-rs/optimized/1bmc0pjvdnh09g73.ll
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
+; zed-rs/optimized/34wa3jua7n3vs803j44lzfk5b.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
+; zed-rs/optimized/4pyl8821jbmubnjyx7hxe0q2i.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/cu6jannw5ajqip9tl6sqjzagm.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; zstd/optimized/zstd_v03.c.ll
 ; zstd/optimized/zstd_v04.c.ll
@@ -54,7 +56,7 @@ entry:
   ret i64 %3
 }
 
-; 74 occurrences:
+; 75 occurrences:
 ; abc/optimized/amapMatch.c.ll
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
@@ -64,6 +66,7 @@ entry:
 ; abseil-cpp/optimized/pool_urbg_test.cc.ll
 ; abseil-cpp/optimized/randen_engine_test.cc.ll
 ; abseil-cpp/optimized/unordered_set_test.cc.ll
+; boost/optimized/limit_fd.ll
 ; cmake/optimized/multi.c.ll
 ; cmake/optimized/sendf.c.ll
 ; coreutils-rs/optimized/4il3dwdvn9kvvj4p.ll
@@ -81,7 +84,6 @@ entry:
 ; llvm/optimized/CodeGenSchedule.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/PPExpressions.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; luau/optimized/AstQuery.test.cpp.ll
 ; luau/optimized/AstVisitor.test.cpp.ll
 ; luau/optimized/Parser.test.cpp.ll
@@ -129,6 +131,7 @@ entry:
 ; yosys/optimized/test_cell.ll
 ; z3/optimized/smt_conflict_resolution.cpp.ll
 ; z3/optimized/theory_bv.cpp.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
@@ -137,7 +140,7 @@ entry:
   ret i64 %3
 }
 
-; 48 occurrences:
+; 49 occurrences:
 ; abc/optimized/giaResub.c.ll
 ; abseil-cpp/optimized/container_test.cc.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
@@ -186,6 +189,7 @@ entry:
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
 ; z3/optimized/sat_asymm_branch.cpp.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000016(i32 %0, i32 %1) #0 {
 entry:
@@ -194,19 +198,18 @@ entry:
   ret i64 %3
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; duckdb/optimized/is_distinct_from.cpp.ll
 ; duckdb/optimized/ub_duckdb_expression_executor.cpp.ll
 ; libdeflate/optimized/deflate_compress.c.ll
 ; linux/optimized/pcmcia_cis.ll
 ; llama.cpp/optimized/train.cpp.ll
 ; llvm/optimized/BranchProbability.cpp.ll
-; opencv/optimized/cap_mjpeg_encoder.cpp.ll
-; openusd/optimized/decodeframe.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; postgres/optimized/mac8.ll
 ; postgres/optimized/oid.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i32 %0, i32 %1) #0 {
 entry:
@@ -215,7 +218,19 @@ entry:
   ret i64 %3
 }
 
-; 52 occurrences:
+; 3 occurrences:
+; opencv/optimized/cap_mjpeg_encoder.cpp.ll
+; openusd/optimized/decodeframe.c.ll
+; qemu/optimized/target_riscv_vector_helper.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000030(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i32 %0, %1
+  %3 = zext i1 %2 to i64
+  ret i64 %3
+}
+
+; 64 occurrences:
 ; abc/optimized/abcHieGia.c.ll
 ; abc/optimized/abcMiter.c.ll
 ; actix-rs/optimized/5k5ycrtlwwxldg7.ll
@@ -231,6 +246,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_expression_executor.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
+; egg-rs/optimized/2fp1d0strj8iokyf.ll
 ; git/optimized/setup.ll
 ; hermes/optimized/DebugInfo.cpp.ll
 ; image-rs/optimized/5oy2v8fghrh79s8.ll
@@ -268,6 +284,17 @@ entry:
 ; typst-rs/optimized/5antv5sfgwt5l2ke.ll
 ; wireshark/optimized/packet-ftp.c.ll
 ; wireshark/optimized/packet-ssh.c.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/35jcvzd99rtsbpw1ntju6vgpx.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/477pfick4ndzj3k3y8f79a5fg.ll
+; zed-rs/optimized/5kpr1irzb57viu7vn1ci12z94.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
+; zed-rs/optimized/8c9m4dxfbx8n642b944htcs78.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/cgceu28znx3lfd8ddk7c9uglp.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
@@ -276,7 +303,7 @@ entry:
   ret i64 %3
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; clamav/optimized/unpack.cpp.ll
 ; postgres/optimized/date.ll
 ; postgres/optimized/geo_ops.ll
@@ -285,6 +312,7 @@ entry:
 ; quickjs/optimized/quickjs.ll
 ; rust-analyzer-rs/optimized/1r9ygi4s2x06bwuz.ll
 ; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
@@ -293,14 +321,13 @@ entry:
   ret i64 %3
 }
 
-; 19 occurrences:
+; 22 occurrences:
 ; brotli/optimized/entropy_encode.c.ll
 ; duckdb/optimized/is_distinct_from.cpp.ll
 ; duckdb/optimized/ub_duckdb_expression_executor.cpp.ll
 ; image-rs/optimized/30755d6iao7ojcvl.ll
 ; llvm/optimized/MachineUniformityAnalysis.cpp.ll
 ; llvm/optimized/UniformityAnalysis.cpp.ll
-; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; postgres/optimized/mac8.ll
 ; postgres/optimized/oid.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
@@ -313,6 +340,10 @@ entry:
 ; wasmtime-rs/optimized/4y19gy3l28n56lab.ll
 ; wasmtime-rs/optimized/526qiozl2mm0d4p0.ll
 ; z3/optimized/dl_rule_transformer.cpp.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/d7h2r6mystjn2jzwcl5ofeoiz.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
@@ -367,8 +398,37 @@ entry:
   ret i64 %3
 }
 
-; 33 occurrences:
+; 5 occurrences:
 ; clamav/optimized/yara_exec.c.ll
+; opencv/optimized/cap_mjpeg_encoder.cpp.ll
+; openusd/optimized/reconinter.c.ll
+; qemu/optimized/target_riscv_vector_helper.c.ll
+; tokenizers-rs/optimized/2w5yihn8z6xjncvn.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000032(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign uge i32 %0, %1
+  %3 = zext i1 %2 to i64
+  ret i64 %3
+}
+
+; 7 occurrences:
+; abc/optimized/cecSatG2.c.ll
+; abc/optimized/cecSatG3.c.ll
+; cmake/optimized/archive_ppmd8.c.ll
+; darktable/optimized/IiqDecoder.cpp.ll
+; qemu/optimized/target_riscv_vector_helper.c.ll
+; rust-analyzer-rs/optimized/1r9ygi4s2x06bwuz.ll
+; tokenizers-rs/optimized/2w5yihn8z6xjncvn.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000028(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %0, %1
+  %3 = zext i1 %2 to i64
+  ret i64 %3
+}
+
+; 31 occurrences:
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; hermes/optimized/CFG.cpp.ll
 ; hyperscan/optimized/rose_build_dedupe.cpp.ll
@@ -382,12 +442,9 @@ entry:
 ; llvm/optimized/Dominators.cpp.ll
 ; llvm/optimized/MachineDominators.cpp.ll
 ; nix/optimized/attr-set.ll
-; opencv/optimized/cap_mjpeg_encoder.cpp.ll
-; openusd/optimized/reconinter.c.ll
 ; postgres/optimized/mac8.ll
 ; postgres/optimized/oid.ll
 ; qdrant-rs/optimized/pgs97hhgng8x0qz.ll
-; qemu/optimized/target_riscv_vector_helper.c.ll
 ; tokenizers-rs/optimized/2w5yihn8z6xjncvn.ll
 ; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
 ; wasmtime-rs/optimized/18j9bq48s0hpcaoq.ll
@@ -401,10 +458,22 @@ entry:
 ; z3/optimized/smt_context.cpp.ll
 ; z3/optimized/spacer_context.cpp.ll
 ; z3/optimized/symmetry_reduce_tactic.cpp.ll
+; zed-rs/optimized/34wa3jua7n3vs803j44lzfk5b.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000012(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp uge i32 %0, %1
+  %3 = zext i1 %2 to i64
+  ret i64 %3
+}
+
+; 1 occurrences:
+; meshoptimizer/optimized/vertexcodec.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000002a(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ule i32 %0, %1
   %3 = zext i1 %2 to i64
   ret i64 %3
 }

@@ -18,7 +18,7 @@ entry:
 ; ncnn/optimized/convolution_x86_fma.cpp.ll
 ; opencv/optimized/bgfg_gsoc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %1, %2
   %4 = add nsw i32 %3, 1

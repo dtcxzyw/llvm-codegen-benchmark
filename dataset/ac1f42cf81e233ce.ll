@@ -2,11 +2,11 @@
 ; 1 occurrences:
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0) #0 {
+define i1 @func0000000000000078(i32 %0) #0 {
 entry:
   %1 = sub nuw nsw i32 64, %0
   %2 = and i32 %1, 126
-  %3 = icmp ugt i32 %2, 52
+  %3 = icmp samesign ugt i32 %2, 52
   ret i1 %3
 }
 
@@ -16,7 +16,7 @@ entry:
 ; wireshark/optimized/tvbuff.c.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0) #0 {
+define i1 @func0000000000000061(i32 %0) #0 {
 entry:
   %1 = sub nuw nsw i32 64, %0
   %2 = and i32 %1, 126
@@ -92,7 +92,7 @@ entry:
 ; 1 occurrences:
 ; rocksdb/optimized/filter_policy.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0) #0 {
+define i1 @func0000000000000018(i32 %0) #0 {
 entry:
   %1 = sub i32 0, %0
   %2 = and i32 %1, 64
@@ -113,8 +113,7 @@ entry:
   ret i1 %3
 }
 
-; 31 occurrences:
-; git/optimized/merge-ort.ll
+; 30 occurrences:
 ; gromacs/optimized/md5.c.ll
 ; gromacs/optimized/md5.cpp.ll
 ; hermes/optimized/dtoa.c.ll
@@ -146,7 +145,7 @@ entry:
 ; wolfssl/optimized/ssl.c.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0) #0 {
+define i1 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = sub nsw i32 0, %0
   %2 = and i32 %1, 15
@@ -157,7 +156,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/mpi-bit.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i32 %0) #0 {
+define i1 @func000000000000006c(i32 %0) #0 {
 entry:
   %1 = sub i32 0, %0
   %2 = and i32 %1, 63
@@ -169,11 +168,11 @@ entry:
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/tls13.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0) #0 {
+define i1 @func0000000000000014(i32 %0) #0 {
 entry:
   %1 = sub i32 0, %0
   %2 = and i32 %1, 7
-  %3 = icmp ult i32 %2, 5
+  %3 = icmp samesign ult i32 %2, 5
   ret i1 %3
 }
 

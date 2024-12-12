@@ -9,6 +9,6 @@ func0000000000000007:                   # @func0000000000000007
 	retq
 func0000000000000002:                   # @func0000000000000002
 	movl	%edi, %eax
-	shll	$8, %eax
+	shll	$16, %eax
 	andl	$-16777216, %eax                # imm = 0xFF000000
 	retq

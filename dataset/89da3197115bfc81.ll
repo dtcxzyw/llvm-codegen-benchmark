@@ -1,8 +1,8 @@
 
-%"struct.tbb::detail::d0::padded.2521506" = type { %"struct.tbb::detail::d0::padded_base.base.2521507", [7 x i8] }
-%"struct.tbb::detail::d0::padded_base.base.2521507" = type { %"struct.tbb::detail::d1::ets_element.base.2521508", [112 x i8] }
-%"struct.tbb::detail::d1::ets_element.base.2521508" = type { %"class.tbb::detail::d0::aligned_space.2521500", i8 }
-%"class.tbb::detail::d0::aligned_space.2521500" = type { [8 x i8] }
+%"struct.tbb::detail::d0::padded.2635915" = type { %"struct.tbb::detail::d0::padded_base.base.2635916", [7 x i8] }
+%"struct.tbb::detail::d0::padded_base.base.2635916" = type { %"struct.tbb::detail::d1::ets_element.base.2635917", [112 x i8] }
+%"struct.tbb::detail::d1::ets_element.base.2635917" = type { %"class.tbb::detail::d0::aligned_space.2635909", i8 }
+%"class.tbb::detail::d0::aligned_space.2635909" = type { [8 x i8] }
 
 ; 128 occurrences:
 ; cmake/optimized/zstd_compress.c.ll
@@ -137,7 +137,7 @@
 define ptr @func0000000000000022(ptr %0, i64 %1) #0 {
 entry:
   %.neg = shl nsw i64 -1, %1
-  %2 = getelementptr nusw %"struct.tbb::detail::d0::padded.2521506", ptr %0, i64 %.neg
+  %2 = getelementptr nusw %"struct.tbb::detail::d0::padded.2635915", ptr %0, i64 %.neg
   ret ptr %2
 }
 

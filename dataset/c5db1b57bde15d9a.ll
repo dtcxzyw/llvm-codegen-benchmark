@@ -13,7 +13,7 @@ entry:
 ; 1 occurrences:
 ; grpc/optimized/timeout_encoding.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0) #0 {
+define i1 @func0000000000000061(i32 %0) #0 {
 entry:
   %1 = mul nuw nsw i32 %0, 100
   %2 = urem i32 %1, 60

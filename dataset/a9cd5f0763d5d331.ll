@@ -5,7 +5,7 @@
 ; minetest/optimized/luaentity_sao.cpp.ll
 ; opencv/optimized/box_filter.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
@@ -19,7 +19,7 @@ entry:
 ; oiio/optimized/imageio.cpp.ll
 ; oiio/optimized/nullimageio.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000041(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000081(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 4
   %3 = trunc i64 %2 to i32

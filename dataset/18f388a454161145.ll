@@ -1,5 +1,5 @@
 
-; 112 occurrences:
+; 111 occurrences:
 ; abc/optimized/abcTim.c.ll
 ; abc/optimized/mioUtils.c.ll
 ; entt/optimized/handle.cpp.ll
@@ -11,7 +11,6 @@
 ; linux/optimized/devio.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/intel_dpll.ll
-; linux/optimized/mii.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/vfs_inode.ll
 ; linux/optimized/vht.ll
@@ -117,7 +116,7 @@ define i32 @func0000000000000001(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 7680
   %4 = select i1 %1, i32 512, i32 %3
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 

@@ -1,9 +1,10 @@
 
-; 13 occurrences:
+; 14 occurrences:
+; boost/optimized/area.ll
 ; gromacs/optimized/gmx_make_edi.cpp.ll
 ; hyperscan/optimized/repeat.c.ll
+; lvgl/optimized/lv_refr.ll
 ; meshlab/optimized/additionalgui.cpp.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dormql.c.ll
 ; openblas/optimized/dormrq.c.ll
 ; postgres/optimized/freespace.ll

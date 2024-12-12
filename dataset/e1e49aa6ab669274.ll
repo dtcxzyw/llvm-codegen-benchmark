@@ -13,7 +13,7 @@ entry:
   ret i32 %5
 }
 
-; 28 occurrences:
+; 29 occurrences:
 ; abc/optimized/bmcInse.c.ll
 ; abc/optimized/giaNf.c.ll
 ; abc/optimized/giaPf.c.ll
@@ -42,6 +42,7 @@ entry:
 ; qemu/optimized/target_riscv_translate.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; redis/optimized/module.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:

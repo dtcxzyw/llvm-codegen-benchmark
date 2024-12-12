@@ -1,9 +1,3 @@
-func0000000000000035:                   # @func0000000000000035
-	movzbl	%dl, %ecx
-	imull	$-94, %esi, %eax
-	addl	%ecx, %eax
-	addl	%edi, %eax
-	retq
 func000000000000003f:                   # @func000000000000003f
 	movzbl	%dl, %ecx
 	leal	(%rsi,%rsi,2), %eax

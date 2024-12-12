@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 23 occurrences:
 ; darktable/optimized/introspection_basecurve.c.ll
 ; darktable/optimized/introspection_cacorrectrgb.c.ll
 ; darktable/optimized/introspection_colorcorrection.c.ll
@@ -15,6 +15,14 @@
 ; openexr/optimized/ImfDeepTiledInputFile.cpp.ll
 ; openjdk/optimized/verifier.ll
 ; openvdb/optimized/Compression.cc.ll
+; zed-rs/optimized/3tqegt9m5oad3ocos87azd3mb.ll
+; zed-rs/optimized/4yr6g2ok92pf18o3rcyc7uswo.ll
+; zed-rs/optimized/5e9omh398ijohtd01awo2ssl8.ll
+; zed-rs/optimized/5q8zw1h1kdgz0fiksol53zkaa.ll
+; zed-rs/optimized/69ryzzuwe6uhdzky6991droy3.ll
+; zed-rs/optimized/7for60ncc55q4u0jy3fqr6omg.ll
+; zed-rs/optimized/914lh5mzek2kam75czht77x9a.ll
+; zed-rs/optimized/c6zcqmm1tlbhiy5p6czlxqg9e.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
@@ -76,19 +84,6 @@ entry:
   %2 = mul i64 %0, %1
   %3 = shl nuw nsw i64 %2, 3
   %4 = add nsw i64 %3, -8
-  ret i64 %4
-}
-
-; 3 occurrences:
-; casadi/optimized/sparsity.cpp.ll
-; casadi/optimized/sparsity_internal.cpp.ll
-; quantlib/optimized/hestonslvfdmmodel.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000f(i64 %0, i64 %1) #0 {
-entry:
-  %2 = mul i64 %0, %1
-  %3 = shl nuw nsw i64 %2, 3
-  %4 = add nuw nsw i64 %3, 8
   ret i64 %4
 }
 
@@ -273,6 +268,18 @@ entry:
   %2 = mul nuw nsw i64 %0, %1
   %3 = shl nuw nsw i64 %2, 1
   %4 = add nuw nsw i64 %3, 1310720
+  ret i64 %4
+}
+
+; 2 occurrences:
+; casadi/optimized/sparsity.cpp.ll
+; casadi/optimized/sparsity_internal.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000f(i64 %0, i64 %1) #0 {
+entry:
+  %2 = mul i64 %0, %1
+  %3 = shl nuw nsw i64 %2, 3
+  %4 = add nuw nsw i64 %3, 8
   ret i64 %4
 }
 

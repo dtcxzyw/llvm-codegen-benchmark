@@ -1,26 +1,24 @@
 
-; 2 occurrences:
-; eastl/optimized/TestString.cpp.ll
+; 1 occurrences:
 ; php/optimized/json_scanner.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000201(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000601(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 12
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 12
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0
   %5 = icmp eq i64 %4, 12
   ret i1 %5
 }
 
-; 4 occurrences:
-; nix/optimized/fromTOML.ll
+; 3 occurrences:
 ; soc-simulator/optimized/verilated.ll
 ; spike/optimized/cachesim.ll
 ; spike/optimized/isa_parser.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000226(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000646(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 1
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 1
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0
   %5 = add nuw i64 %4, 1
@@ -57,20 +55,45 @@ entry:
   ret i1 %6
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; hdf5/optimized/H5Ocache.c.ll
 ; hdf5/optimized/H5Omtime.c.ll
 ; hdf5/optimized/H5Sselect.c.ll
-; luajit/optimized/lj_asm.ll
-; luajit/optimized/lj_asm_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000204(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000404(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr nusw i8, ptr %1, i64 -1
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0
   %5 = add i64 %4, 1
   %6 = icmp ult i64 %5, 16
+  ret i1 %6
+}
+
+; 2 occurrences:
+; luajit/optimized/lj_asm.ll
+; luajit/optimized/lj_asm_dyn.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000604(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 8
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %0
+  %5 = add i64 %4, 2147483648
+  %6 = icmp ult i64 %5, 4294967296
+  ret i1 %6
+}
+
+; 1 occurrences:
+; nix/optimized/fromTOML.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000446(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw i8, ptr %1, i64 -1
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %0
+  %5 = add nuw i64 %4, 1
+  %6 = icmp slt i64 %5, 0
   ret i1 %6
 }
 
@@ -83,6 +106,18 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0
   %5 = icmp eq i64 %4, 35
+  ret i1 %5
+}
+
+; 1 occurrences:
+; eastl/optimized/TestString.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000401(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw i8, ptr %1, i64 -1
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %0
+  %5 = icmp eq i64 %4, 34
   ret i1 %5
 }
 

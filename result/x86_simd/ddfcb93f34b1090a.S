@@ -10,7 +10,7 @@ func0000000000000090:                   # @func0000000000000090
 	vcmpltpd	%zmm0, %zmm3, %k2
 	kunpckbw	%k1, %k2, %k1
 	vcmpgtps	.LCPI0_1(%rip){1to16}, %zmm1, %k2
-	korw	%k0, %k2, %k0
+	korw	%k2, %k0, %k0
 	korw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

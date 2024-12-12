@@ -7,18 +7,6 @@ func0000000000002210:                   # @func0000000000002210
 	feq.s	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
-.LCPI1_0:
-	.word	0x3cffff04                      # float 0.0312495306
-func0000000000000888:                   # @func0000000000000888
-	lui	a0, %hi(.LCPI1_0)
-	flw	fa5, %lo(.LCPI1_0)(a0)
-	fmin.s	fa4, fa0, fa1
-	lui	a0, 266752
-	flt.s	a1, fa4, fa5
-	fmv.w.x	fa5, a0
-	flt.s	a0, fa5, fa0
-	or	a0, a0, a1
-	ret
 func0000000000002698:                   # @func0000000000002698
 	fli.s	fa5, inf
 	lui	a0, 798736

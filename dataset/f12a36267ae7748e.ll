@@ -1,7 +1,16 @@
 
-; 22 occurrences:
+%"union.absl::debian2::container_internal::map_slot_type.3489309" = type { %"struct.std::pair.35.3489310" }
+%"struct.std::pair.35.3489310" = type { i64, %"struct.std::pair.23.3489311" }
+%"struct.std::pair.23.3489311" = type { double, %"class.std::unique_ptr.25.3489312" }
+%"class.std::unique_ptr.25.3489312" = type { %"struct.std::__uniq_ptr_data.26.3489313" }
+%"struct.std::__uniq_ptr_data.26.3489313" = type { %"class.std::__uniq_ptr_impl.27.3489314" }
+%"class.std::__uniq_ptr_impl.27.3489314" = type { %"class.std::tuple.28.3489315" }
+%"class.std::tuple.28.3489315" = type { %"struct.std::_Tuple_impl.29.3489316" }
+%"struct.std::_Tuple_impl.29.3489316" = type { %"struct.std::_Head_base.32.3489317" }
+%"struct.std::_Head_base.32.3489317" = type { ptr }
+
+; 20 occurrences:
 ; freetype/optimized/truetype.c.ll
-; hyperscan/optimized/fdr_compile.cpp.ll
 ; hyperscan/optimized/teddy_compile.cpp.ll
 ; mold/optimized/input-files.cc.ALPHA.cc.ll
 ; mold/optimized/input-files.cc.ARM32.cc.ll
@@ -21,15 +30,14 @@
 ; mold/optimized/input-files.cc.SH4.cc.ll
 ; mold/optimized/input-files.cc.SPARC64.cc.ll
 ; mold/optimized/input-files.cc.X86_64.cc.ll
-; openspiel/optimized/history_tree.cc.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000ea(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func00000000000000ff(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 3
   %4 = and i64 %3, 8589934588
-  %5 = getelementptr nusw i8, ptr %1, i64 12
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
-  %7 = getelementptr nusw i8, ptr %6, i64 %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 12
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %0
   ret ptr %7
 }
 
@@ -78,6 +86,20 @@ entry:
   %5 = getelementptr i8, ptr %1, i64 28
   %6 = getelementptr i8, ptr %5, i64 %4
   %7 = getelementptr i8, ptr %6, i64 %0
+  ret ptr %7
+}
+
+; 2 occurrences:
+; hyperscan/optimized/fdr_compile.cpp.ll
+; openspiel/optimized/history_tree.cc.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000fe(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %2, 4294967295
+  %4 = and i64 %3, 4294967295
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 16
+  %6 = getelementptr nusw nuw %"union.absl::debian2::container_internal::map_slot_type.3489309", ptr %5, i64 %4
+  %7 = getelementptr nusw %"union.absl::debian2::container_internal::map_slot_type.3489309", ptr %6, i64 %0
   ret ptr %7
 }
 

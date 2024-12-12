@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; yosys/optimized/ql_dsp_macc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000444(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000001084(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 3
   %4 = icmp ult i64 %1, 3
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/reconinter.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000cc1(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000003181(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp ne i64 %1, 0

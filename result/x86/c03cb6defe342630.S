@@ -13,3 +13,8 @@ func0000000000000009:                   # @func0000000000000009
 	cmovael	%esi, %edi
 	movzbl	%dil, %eax
 	retq
+func0000000000000029:                   # @func0000000000000029
+	cmpb	$10, %dl
+	cmovael	%esi, %edi
+	movzbl	%dil, %eax
+	retq

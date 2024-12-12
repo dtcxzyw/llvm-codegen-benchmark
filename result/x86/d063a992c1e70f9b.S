@@ -33,6 +33,13 @@ func0000000000000009:                   # @func0000000000000009
 	movzbl	%al, %eax
 	addq	%rdi, %rax
 	retq
+func0000000000000040:                   # @func0000000000000040
+	cmpq	$2, %rdx
+	setae	%al
+	andb	%sil, %al
+	movzbl	%al, %eax
+	addq	%rdi, %rax
+	retq
 func0000000000000030:                   # @func0000000000000030
 	testq	%rdx, %rdx
 	sets	%al
@@ -43,6 +50,13 @@ func0000000000000030:                   # @func0000000000000030
 func0000000000000053:                   # @func0000000000000053
 	testq	%rdx, %rdx
 	setns	%al
+	andb	%sil, %al
+	movzbl	%al, %eax
+	addq	%rdi, %rax
+	retq
+func0000000000000061:                   # @func0000000000000061
+	testq	%rdx, %rdx
+	setne	%al
 	andb	%sil, %al
 	movzbl	%al, %eax
 	addq	%rdi, %rax

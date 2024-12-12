@@ -44,7 +44,7 @@
 ; minetest/optimized/guiTable.cpp.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0) #0 {
+define i1 @func0000000000000061(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 7
   %2 = icmp eq i64 %1, 0
@@ -90,7 +90,7 @@ entry:
 ; hyperscan/optimized/ue2string.cpp.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0) #0 {
+define i1 @func00000000000001e1(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 3
   %2 = icmp eq i64 %1, 0
@@ -104,7 +104,7 @@ entry:
 ; darktable/optimized/PentaxDecompressor.cpp.ll
 ; darktable/optimized/TableLookUp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0) #0 {
+define i1 @func0000000000000041(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 63
   %2 = icmp eq i64 %1, 0
@@ -118,7 +118,7 @@ entry:
 ; darktable/optimized/PentaxDecompressor.cpp.ll
 ; darktable/optimized/TableLookUp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0) #0 {
+define i1 @func0000000000000141(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 63
   %2 = icmp eq i64 %1, 0

@@ -1,7 +1,9 @@
 
-; 54 occurrences:
+; 56 occurrences:
 ; arrow/optimized/kernel.cc.ll
 ; arrow/optimized/key_hash.cc.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; casadi/optimized/code_generator.cpp.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
@@ -58,7 +60,7 @@
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %0, 2
-  %4 = add i64 %3, %2
+  %4 = add i64 %2, %3
   %5 = add i64 %4, %1
   %6 = xor i64 %5, %0
   ret i64 %6
@@ -73,7 +75,7 @@ entry:
 define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %0, 2
-  %4 = add nuw nsw i64 %3, %2
+  %4 = add nuw nsw i64 %2, %3
   %5 = add i64 %4, %1
   %6 = xor i64 %5, %0
   ret i64 %6
@@ -85,7 +87,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %0, 2
-  %4 = add nsw i64 %3, %2
+  %4 = add nsw i64 %2, %3
   %5 = add i64 %4, %1
   %6 = xor i64 %5, %0
   ret i64 %6
@@ -116,7 +118,7 @@ entry:
 define i64 @func000000000000000d(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %0, 2
-  %4 = add nuw nsw i64 %3, %2
+  %4 = add nuw nsw i64 %2, %3
   %5 = add nsw i64 %4, %1
   %6 = xor i64 %5, %0
   ret i64 %6

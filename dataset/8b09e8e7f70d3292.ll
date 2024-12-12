@@ -1,7 +1,6 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; libquic/optimized/poly.c.ll
-; linux/optimized/af_inet.ll
 ; linux/optimized/alps.ll
 ; linux/optimized/aspm.ll
 ; linux/optimized/hosts.ll
@@ -52,6 +51,19 @@ entry:
   ret i16 %5
 }
 
+; 3 occurrences:
+; lvgl/optimized/lv_binfont_loader.ll
+; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
+; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
+; Function Attrs: nounwind
+define i16 @func000000000000000d(i16 %0, i16 %1, i16 %2) #0 {
+entry:
+  %3 = or disjoint i16 %1, %2
+  %4 = shl nuw i16 %0, 14
+  %5 = or disjoint i16 %4, %3
+  ret i16 %5
+}
+
 ; 4 occurrences:
 ; linux/optimized/agg-rx.ll
 ; llvm/optimized/Instructions.cpp.ll
@@ -77,18 +89,6 @@ entry:
   %3 = shl nuw nsw i16 %2, 3
   %4 = or i16 %0, %1
   %5 = or i16 %4, %3
-  ret i16 %5
-}
-
-; 2 occurrences:
-; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
-; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
-; Function Attrs: nounwind
-define i16 @func000000000000000d(i16 %0, i16 %1, i16 %2) #0 {
-entry:
-  %3 = or disjoint i16 %1, %2
-  %4 = shl nuw i16 %0, 14
-  %5 = or disjoint i16 %4, %3
   ret i16 %5
 }
 

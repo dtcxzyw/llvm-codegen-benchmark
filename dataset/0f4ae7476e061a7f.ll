@@ -11,15 +11,14 @@ define i32 @func0000000000000000(i32 %0, i1 %1) #0 {
 entry:
   %2 = xor i1 %1, true
   %3 = zext i1 %2 to i32
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; abc/optimized/bmcMaj3.c.ll
 ; abc/optimized/giaNf.c.ll
 ; abc/optimized/giaTtopt.cpp.ll
-; darktable/optimized/introspection_temperature.c.ll
 ; imgui/optimized/imgui.cpp.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/tg3.ll
@@ -37,7 +36,7 @@ define i32 @func0000000000000001(i32 %0, i1 %1) #0 {
 entry:
   %2 = xor i1 %1, true
   %3 = zext i1 %2 to i32
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 

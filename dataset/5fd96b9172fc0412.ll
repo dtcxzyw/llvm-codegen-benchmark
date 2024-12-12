@@ -19,7 +19,7 @@ entry:
 ; stb/optimized/stb_vorbis.c.ll
 ; yosys/optimized/subcircuit.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000056(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %0, %2
   %4 = icmp slt i32 %3, %1

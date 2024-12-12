@@ -19,9 +19,8 @@ entry:
   ret i1 %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; imgui/optimized/imgui_widgets.cpp.ll
-; linux/optimized/pty.ll
 ; minetest/optimized/clientpackethandler.cpp.ll
 ; recastnavigation/optimized/RecastContour.cpp.ll
 ; Function Attrs: nounwind
@@ -37,7 +36,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ucnv_u32.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = and i32 %3, 2095104

@@ -11,7 +11,7 @@ define i1 @func0000000000000042(double %0, double %1) #0 {
 entry:
   %2 = fcmp ogt double %1, 0.000000e+00
   %3 = select i1 %2, double %1, double 0.000000e+00
-  %4 = fcmp ogt double %3, %0
+  %4 = fcmp olt double %0, %3
   ret i1 %4
 }
 
@@ -52,20 +52,19 @@ define i1 @func0000000000000044(double %0, double %1) #0 {
 entry:
   %2 = fcmp ogt double %1, 0x3EB0C6F7A0B5ED8D
   %3 = select i1 %2, double %1, double 0x3EB0C6F7A0B5ED8D
-  %4 = fcmp olt double %3, %0
+  %4 = fcmp ogt double %0, %3
   ret i1 %4
 }
 
-; 3 occurrences:
-; gromacs/optimized/dlagtf.cpp.ll
+; 2 occurrences:
 ; gromacs/optimized/topio.cpp.ll
 ; opencv/optimized/edge_drawing.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000045(double %0, double %1) #0 {
 entry:
-  %2 = fcmp ogt double %1, 0x3CB0000000000000
-  %3 = select i1 %2, double %1, double 0x3CB0000000000000
-  %4 = fcmp ult double %3, %0
+  %2 = fcmp ogt double %1, 0x3EB0C6F7A0B5ED8D
+  %3 = select i1 %2, double %1, double 0x3EB0C6F7A0B5ED8D
+  %4 = fcmp ugt double %0, %3
   ret i1 %4
 }
 
@@ -77,7 +76,7 @@ define i1 @func000000000000004a(double %0, double %1) #0 {
 entry:
   %2 = fcmp ogt double %1, 1.000000e-10
   %3 = select i1 %2, double %1, double 1.000000e-10
-  %4 = fcmp oge double %3, %0
+  %4 = fcmp ole double %0, %3
   ret i1 %4
 }
 
@@ -88,7 +87,7 @@ define i1 @func0000000000000022(double %0, double %1) #0 {
 entry:
   %2 = fcmp olt double %1, 0.000000e+00
   %3 = select i1 %2, double %1, double 0.000000e+00
-  %4 = fcmp ogt double %3, %0
+  %4 = fcmp olt double %0, %3
   ret i1 %4
 }
 
@@ -100,7 +99,7 @@ define i1 @func0000000000000025(double %0, double %1) #0 {
 entry:
   %2 = fcmp olt double %1, 9.000000e+01
   %3 = select i1 %2, double %1, double 9.000000e+01
-  %4 = fcmp ult double %3, %0
+  %4 = fcmp ugt double %0, %3
   ret i1 %4
 }
 
@@ -111,7 +110,7 @@ define i1 @func000000000000002a(double %0, double %1) #0 {
 entry:
   %2 = fcmp olt double %1, 9.000000e+01
   %3 = select i1 %2, double %1, double 9.000000e+01
-  %4 = fcmp oge double %3, %0
+  %4 = fcmp ole double %0, %3
   ret i1 %4
 }
 
@@ -128,7 +127,7 @@ define i1 @func00000000000000e5(double %0, double %1) #0 {
 entry:
   %2 = fcmp ord double %1, 0.000000e+00
   %3 = select i1 %2, double %1, double 0.000000e+00
-  %4 = fcmp ult double %3, %0
+  %4 = fcmp ugt double %0, %3
   ret i1 %4
 }
 
@@ -145,7 +144,7 @@ define i1 @func00000000000000e3(double %0, double %1) #0 {
 entry:
   %2 = fcmp ord double %1, 0.000000e+00
   %3 = select i1 %2, double %1, double 0.000000e+00
-  %4 = fcmp ugt double %3, %0
+  %4 = fcmp ult double %0, %3
   ret i1 %4
 }
 
@@ -157,7 +156,7 @@ define i1 @func00000000000000ed(double %0, double %1) #0 {
 entry:
   %2 = fcmp ord double %1, 0.000000e+00
   %3 = select i1 %2, double %1, double 0.000000e+00
-  %4 = fcmp ule double %3, %0
+  %4 = fcmp uge double %0, %3
   ret i1 %4
 }
 
@@ -168,7 +167,7 @@ define i1 @func00000000000000ec(double %0, double %1) #0 {
 entry:
   %2 = fcmp ord double %1, 0.000000e+00
   %3 = select i1 %2, double %1, double 0.000000e+00
-  %4 = fcmp ole double %3, %0
+  %4 = fcmp oge double %0, %3
   ret i1 %4
 }
 
@@ -179,7 +178,7 @@ define i1 @func00000000000000a8(double %0, double %1) #0 {
 entry:
   %2 = fcmp ole double %1, 0.000000e+00
   %3 = select i1 %2, double %1, double 0.000000e+00
-  %4 = fcmp oeq double %3, %0
+  %4 = fcmp oeq double %0, %3
   ret i1 %4
 }
 

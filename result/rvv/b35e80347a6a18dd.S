@@ -13,7 +13,7 @@ func0000000000000002:                   # @func0000000000000002
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfadd.vf	v12, v12, fa5
 	vmflt.vv	v16, v8, v12
-	vmand.mm	v0, v16, v0
+	vmand.mm	v0, v0, v16
 	ret
 func000000000000000c:                   # @func000000000000000c
 	fli.s	fa5, 1.5

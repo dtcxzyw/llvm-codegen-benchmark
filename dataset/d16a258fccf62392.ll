@@ -46,10 +46,12 @@ entry:
   ret i1 %7
 }
 
-; 73 occurrences:
+; 75 occurrences:
 ; abc/optimized/wlcReadVer.c.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/XFileParser.cpp.ll
+; boost/optimized/test_codecvt.ll
+; boost/optimized/to_chars.ll
 ; chibicc/optimized/unicode.ll
 ; clamav/optimized/regexec.c.ll
 ; cmake/optimized/System.c.ll
@@ -135,6 +137,7 @@ entry:
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/mapperTree.c.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
+; boost/optimized/ipv6_address.ll
 ; cpython/optimized/unicodedata.ll
 ; jq/optimized/euc_jp.ll
 ; jq/optimized/regenc.ll
@@ -198,7 +201,6 @@ entry:
 ; openjdk/optimized/vframe.ll
 ; openssl/optimized/libcrypto-lib-txt_db.ll
 ; openssl/optimized/libcrypto-shlib-txt_db.ll
-; openssl/optimized/x509aux-bin-x509aux.ll
 ; proxygen/optimized/HTTP1xCodec.cpp.ll
 ; ruby/optimized/emacs_mule.ll
 ; ruby/optimized/regcomp.ll
@@ -222,7 +224,8 @@ entry:
   ret i1 %7
 }
 
-; 108 occurrences:
+; 109 occurrences:
+; boost/optimized/conversion.ll
 ; cmake/optimized/cmProcess.cxx.ll
 ; folly/optimized/AsyncSSLSocket.cpp.ll
 ; folly/optimized/AsyncSocketException.cpp.ll
@@ -356,8 +359,9 @@ entry:
   ret i1 %7
 }
 
-; 58 occurrences:
+; 59 occurrences:
 ; abseil-cpp/optimized/extension_test.cc.ll
+; boost/optimized/conversion.ll
 ; cmake/optimized/cmProcess.cxx.ll
 ; draco/optimized/ply_reader.cc.ll
 ; folly/optimized/Conv.cpp.ll
@@ -426,7 +430,9 @@ entry:
   ret i1 %7
 }
 
-; 7 occurrences:
+; 9 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll

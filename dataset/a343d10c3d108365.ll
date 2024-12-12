@@ -14,24 +14,26 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; mitsuba3/optimized/string.cpp.ll
-; openusd/optimized/testTraceReportPerf.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000004(i64 %0, i1 %1, i64 %2) #0 {
+define i64 @func0000000000000014(i64 %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ult i64 %2, 16777216
+  %3 = icmp samesign ult i64 %2, 16777216
   %4 = select i1 %1, i1 %3, i1 false
   %5 = select i1 %4, i64 %0, i64 0
   ret i64 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; llvm/optimized/LangOptions.cpp.ll
 ; meilisearch-rs/optimized/4p6euf9p6jz4j36m.ll
 ; rust-analyzer-rs/optimized/202uzsghjvp73kcw.ll
 ; serde-rs-json/optimized/1z3u82elh7pk3w5r.ll
+; zed-rs/optimized/3ly3b3fonqg7nd45488b8bsgs.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i1 %1, i64 %2) #0 {
 entry:
@@ -60,6 +62,17 @@ entry:
   %3 = icmp ugt i64 %2, -4294967297
   %4 = select i1 %1, i1 %3, i1 false
   %5 = select i1 %4, i64 %0, i64 0
+  ret i64 %5
+}
+
+; 1 occurrences:
+; openusd/optimized/testTraceReportPerf.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(i64 %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ult i64 %2, 3
+  %4 = select i1 %1, i1 %3, i1 false
+  %5 = select i1 %4, i64 %0, i64 1
   ret i64 %5
 }
 

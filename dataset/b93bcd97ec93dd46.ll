@@ -1,10 +1,11 @@
 
-; 57 occurrences:
+; 58 occurrences:
 ; abc/optimized/cuddCache.c.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/attribute_name.ll
 ; git/optimized/notes.ll
 ; graphviz/optimized/exeval.c.ll
 ; gromacs/optimized/muParserBytecode.cpp.ll
@@ -61,12 +62,12 @@
 define ptr @func0000000000000000(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = inttoptr i64 %3 to ptr
   ret ptr %4
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; abc/optimized/cecSat.c.ll
 ; abc/optimized/cecSatG.c.ll
 ; abc/optimized/cecSatG2.c.ll
@@ -77,6 +78,7 @@ entry:
 ; abc/optimized/giaHash.c.ll
 ; abc/optimized/giaSupp.c.ll
 ; abc/optimized/giaUtil.c.ll
+; boost/optimized/attribute_name.ll
 ; jemalloc/optimized/prof_data.ll
 ; jemalloc/optimized/prof_data.pic.ll
 ; jemalloc/optimized/prof_data.sym.ll
@@ -87,7 +89,7 @@ entry:
 define ptr @func0000000000000001(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = inttoptr i64 %3 to ptr
   ret ptr %4
 }

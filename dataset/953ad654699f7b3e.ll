@@ -1,5 +1,10 @@
 
-; 104 occurrences:
+; 107 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_2.cc.ll
@@ -34,13 +39,12 @@
 ; gromacs/optimized/dlas2.cpp.ll
 ; gromacs/optimized/dlasq4.cpp.ll
 ; gromacs/optimized/expfit.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; mitsuba3/optimized/rgb2spec_opt.cpp.ll
 ; ocio/optimized/GradingTone.cpp.ll
 ; openblas/optimized/dhgeqz.c.ll
-; openblas/optimized/dlacn2.c.ll
-; openblas/optimized/dlacon.c.ll
 ; openblas/optimized/dlaqp3rk.c.ll
 ; openblas/optimized/dlaqps.c.ll
 ; opencv/optimized/ann_mlp.cpp.ll
@@ -55,7 +59,6 @@
 ; postgres/optimized/costsize.ll
 ; proj/optimized/col_urban.cpp.ll
 ; proj/optimized/geodesic.c.ll
-; proj/optimized/mbt_fps.cpp.ll
 ; proj/optimized/mbtfpq.cpp.ll
 ; quantlib/optimized/americanpayoffathit.ll
 ; quantlib/optimized/amortizingfixedratebond.ll

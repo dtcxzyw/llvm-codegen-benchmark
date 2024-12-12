@@ -6,10 +6,10 @@
 ; mini-lsm-rs/optimized/fxok0uwzlvxge5x.ll
 ; tree-sitter-rs/optimized/43qizak8uz8ar6lc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i1 %1) #0 {
+define i1 @func0000000000000034(i64 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 5, i64 1
-  %3 = icmp ult i64 %2, %0
+  %3 = icmp samesign ult i64 %2, %0
   ret i1 %3
 }
 

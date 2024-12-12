@@ -1,5 +1,6 @@
 
-%"class.(anonymous namespace)::StackSlotColoring::ColorAssignmentInfo.2972212" = type { ptr, ptr, [216 x i8] }
+%"class.(anonymous namespace)::StackSlotColoring::ColorAssignmentInfo.3165705" = type { ptr, ptr, [216 x i8] }
+%"struct.(anonymous namespace)::FrameObject.3276313" = type { i8, i32, i32, i8, i8, i32 }
 
 ; 12 occurrences:
 ; linux/optimized/acpi_video.ll
@@ -81,7 +82,7 @@ entry:
   ret ptr %6
 }
 
-; 22 occurrences:
+; 20 occurrences:
 ; abc/optimized/giaJf.c.ll
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/giaResub2.c.ll
@@ -90,7 +91,6 @@ entry:
 ; abc/optimized/giaTruth.c.ll
 ; arrow/optimized/decimal.cc.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
-; git/optimized/worktree.ll
 ; gromacs/optimized/listed_forces.cpp.ll
 ; icu/optimized/package.ll
 ; jq/optimized/execute.ll
@@ -98,7 +98,6 @@ entry:
 ; luajit/optimized/lj_record_dyn.ll
 ; opencv/optimized/cuda_test.cpp.ll
 ; opencv/optimized/datablock.cpp.ll
-; opencv/optimized/genericgfpoly.cpp.ll
 ; opencv/optimized/sumpixels.dispatch.cpp.ll
 ; pocketpy/optimized/str.cpp.ll
 ; slurm/optimized/hostlist.ll
@@ -172,13 +171,9 @@ entry:
   ret ptr %6
 }
 
-; 8 occurrences:
-; ceres/optimized/schur_jacobi_preconditioner.cc.ll
-; llvm/optimized/AArch64FrameLowering.cpp.ll
+; 4 occurrences:
 ; llvm/optimized/Instructions.cpp.ll
-; llvm/optimized/StackColoring.cpp.ll
 ; llvm/optimized/StackSlotColoring.cpp.ll
-; llvm/optimized/X86FrameLowering.cpp.ll
 ; openblas/optimized/dsbgst.c.ll
 ; openmpi/optimized/tm_tree.ll
 ; Function Attrs: nounwind
@@ -187,7 +182,22 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = sub i32 %3, %1
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw %"class.(anonymous namespace)::StackSlotColoring::ColorAssignmentInfo.2972212", ptr %0, i64 %5
+  %6 = getelementptr nusw %"class.(anonymous namespace)::StackSlotColoring::ColorAssignmentInfo.3165705", ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 4 occurrences:
+; ceres/optimized/schur_jacobi_preconditioner.cc.ll
+; llvm/optimized/AArch64FrameLowering.cpp.ll
+; llvm/optimized/StackColoring.cpp.ll
+; llvm/optimized/X86FrameLowering.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %2 to i32
+  %4 = sub i32 %3, %1
+  %5 = sext i32 %4 to i64
+  %6 = getelementptr nusw nuw %"struct.(anonymous namespace)::FrameObject.3276313", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -230,6 +240,18 @@ entry:
   %4 = sub i32 %3, %1
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw ptr, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; opencv/optimized/genericgfpoly.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %2 to i32
+  %4 = sub nsw i32 %3, %1
+  %5 = sext i32 %4 to i64
+  %6 = getelementptr nusw nuw i32, ptr %0, i64 %5
   ret ptr %6
 }
 

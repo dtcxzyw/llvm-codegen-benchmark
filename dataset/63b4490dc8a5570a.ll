@@ -1,5 +1,5 @@
 
-; 134 occurrences:
+; 126 occurrences:
 ; abc/optimized/cuddAPI.c.ll
 ; abc/optimized/cuddCheck.c.ll
 ; abc/optimized/cuddGroup.c.ll
@@ -94,7 +94,6 @@
 ; redis/optimized/listpack.ll
 ; redis/optimized/ziplist.ll
 ; rocksdb/optimized/filter_policy.cc.ll
-; rocksdb/optimized/ribbon_config.cc.ll
 ; slurm/optimized/assoc_mgr.ll
 ; slurm/optimized/fair_tree.ll
 ; slurm/optimized/priority_multifactor.ll
@@ -110,16 +109,9 @@
 ; wireshark/optimized/lte_rlc_statistics_dialog.cpp.ll
 ; wireshark/optimized/mcast_stream.c.ll
 ; wireshark/optimized/packet-amqp.c.ll
-; wireshark/optimized/packet-asap.c.ll
-; wireshark/optimized/packet-calcappprotocol.c.ll
 ; wireshark/optimized/packet-componentstatus.c.ll
-; wireshark/optimized/packet-enrp.c.ll
-; wireshark/optimized/packet-fractalgeneratorprotocol.c.ll
 ; wireshark/optimized/packet-mtp3.c.ll
 ; wireshark/optimized/packet-netperfmeter.c.ll
-; wireshark/optimized/packet-pingpongprotocol.c.ll
-; wireshark/optimized/packet-scriptingservice.c.ll
-; wireshark/optimized/packet-usb-i1d3.c.ll
 ; wireshark/optimized/tap-sctp-analysis.c.ll
 ; xgboost/optimized/constraints.cc.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
@@ -145,6 +137,7 @@ entry:
 ; 84 occurrences:
 ; abc/optimized/extraBddMisc.c.ll
 ; abseil-cpp/optimized/chi_square.cc.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; c3c/optimized/json.c.ll
 ; clamav/optimized/pe_icons.c.ll
 ; darktable/optimized/introspection_ashift.c.ll
@@ -154,7 +147,6 @@ entry:
 ; graphviz/optimized/make_map.c.ll
 ; graphviz/optimized/routespl.c.ll
 ; graphviz/optimized/trapezoid.c.ll
-; gromacs/optimized/dlasdt.cpp.ll
 ; gromacs/optimized/expanded.cpp.ll
 ; gromacs/optimized/forcetable.cpp.ll
 ; gromacs/optimized/freeenergyparameters.cpp.ll

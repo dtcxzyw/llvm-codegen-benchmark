@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; spike/optimized/fsri.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, ptr %1, i32 %2) #0 {
+define ptr @func0000000000000018(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 33554432
   %.not = icmp eq i32 %3, 0

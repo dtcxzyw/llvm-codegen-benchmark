@@ -13,6 +13,15 @@ func000000000000002f:                   # @func000000000000002f
 	imull	$400, %eax, %eax                # imm = 0x190
 	addl	$2370, %eax                     # imm = 0x942
 	retq
+func000000000000002d:                   # @func000000000000002d
+	addl	$294, %edi                      # imm = 0x126
+	movl	$3123612579, %eax               # imm = 0xBA2E8BA3
+	imulq	%rdi, %rax
+	shrq	$36, %rax
+	leal	(%rax,%rax,4), %ecx
+	leal	(%rax,%rcx,4), %ecx
+	leal	-272(%rax,%rcx), %eax
+	retq
 func000000000000000d:                   # @func000000000000000d
 	addl	$2877875, %edi                  # imm = 0x2BE9B3
 	imulq	$963315389, %rdi, %rax          # imm = 0x396B06BD

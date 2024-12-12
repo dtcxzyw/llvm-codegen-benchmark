@@ -1,10 +1,12 @@
 
-; 10 occurrences:
+; 12 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/tz.cpp.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; quantlib/optimized/date.ll
 ; velox/optimized/DateTimeFormatter.cpp.ll
 ; velox/optimized/Sequence.cpp.ll
@@ -30,6 +32,19 @@ entry:
   %2 = udiv i32 %1, 146097
   %3 = mul nuw nsw i32 %2, 400
   %4 = add nuw nsw i32 %3, 2370
+  ret i32 %4
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i32 @func000000000000002d(i32 %0) #0 {
+entry:
+  %.fr1 = freeze i32 %0
+  %1 = add i32 %.fr1, 294
+  %2 = urem i32 %1, 22
+  %3 = sub nuw i32 %1, %2
+  %4 = add nsw i32 %3, -272
   ret i32 %4
 }
 

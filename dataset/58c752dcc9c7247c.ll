@@ -3,7 +3,7 @@
 ; darktable/optimized/introspection_basecurve.c.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000088(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %2, 3
   %4 = getelementptr i8, ptr %1, i64 %3
@@ -15,10 +15,10 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-face-builder.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000000ec(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %2, 8
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = icmp ne ptr %4, %0
   ret i1 %5
 }
@@ -32,7 +32,7 @@ entry:
 ; darktable/optimized/introspection_rgbcurve.c.ll
 ; darktable/optimized/introspection_tonecurve.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000084(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %2, 4
   %4 = getelementptr i8, ptr %1, i64 %3
@@ -43,10 +43,10 @@ entry:
 ; 1 occurrences:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000000e1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %2, 2
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = icmp eq ptr %4, %0
   ret i1 %5
 }

@@ -37,9 +37,8 @@ entry:
   ret i8 %2
 }
 
-; 13 occurrences:
+; 16 occurrences:
 ; image-rs/optimized/4srzh4wujeew249y.ll
-; libquic/optimized/util-64.c.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; softposit-rs/optimized/4kf6wfleft5henpt.ll
@@ -51,6 +50,10 @@ entry:
 ; softposit-rs/optimized/oveg98n4r9tnk39.ll
 ; stb/optimized/stb_voxel_render.c.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i8 %0) #0 {
 entry:

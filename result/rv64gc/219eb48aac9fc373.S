@@ -6,13 +6,13 @@ func0000000000000001:                   # @func0000000000000001
 	srli	a0, a0, 32
 .LBB0_2:                                # %entry
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	sext.w	a1, a1
 	bnez	a1, .LBB1_2
 	sext.w	a0, a2
 .LBB1_2:                                # %entry
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	srliw	a1, a1, 23
 	bnez	a1, .LBB2_2
 	sext.w	a0, a2

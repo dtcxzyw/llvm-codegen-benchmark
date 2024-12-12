@@ -1,10 +1,9 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; llvm/optimized/DependenceAnalysis.cpp.ll
 ; llvm/optimized/DylibVerifier.cpp.ll
 ; meshlab/optimized/MarchingCubes.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll

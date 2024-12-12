@@ -1,6 +1,7 @@
 
-; 408 occurrences:
+; 405 occurrences:
 ; arrow/optimized/coo_converter.cc.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/encode.c.ll
 ; clamav/optimized/udf.c.ll
@@ -217,7 +218,6 @@
 ; hyperscan/optimized/rose_build_program.cpp.ll
 ; hyperscan/optimized/ue2string.cpp.ll
 ; linux/optimized/bitmap.ll
-; linux/optimized/intel_guc_log_debugfs.ll
 ; linux/optimized/intel_guc_submission.ll
 ; linux/optimized/md-bitmap.ll
 ; linux/optimized/md.ll
@@ -275,7 +275,6 @@
 ; llvm/optimized/ObjCMT.cpp.ll
 ; llvm/optimized/PPExpressions.cpp.ll
 ; llvm/optimized/RDFGraph.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RangeConstraintManager.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
@@ -318,7 +317,6 @@
 ; minetest/optimized/COBJMeshFileLoader.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; minetest/optimized/anaglyph.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/chat.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/enriched_string.cpp.ll
@@ -352,7 +350,6 @@
 ; openblas/optimized/dgemm_thread_tt.c.ll
 ; openblas/optimized/dgetrf_parallel.c.ll
 ; openblas/optimized/dgetrf_single.c.ll
-; openblas/optimized/dpotrf_U_single.c.ll
 ; openblas/optimized/dsymm_thread_LL.c.ll
 ; openblas/optimized/dsymm_thread_LU.c.ll
 ; openblas/optimized/dsymm_thread_RL.c.ll
@@ -378,10 +375,8 @@
 ; php/optimized/hash_whirlpool.ll
 ; php/optimized/zend_jit.ll
 ; postgres/optimized/xlog.ll
-; proxygen/optimized/QPACKEncoder.cpp.ll
 ; qemu/optimized/hw_ipack_tpci200.c.ll
 ; qemu/optimized/hw_usb_hcd-xhci.c.ll
-; qemu/optimized/hw_usb_imx-usb-phy.c.ll
 ; qemu/optimized/migration_ram.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; redis/optimized/quicklist.ll
@@ -407,6 +402,8 @@
 ; xgboost/optimized/charconv.cc.ll
 ; xgboost/optimized/data.cc.ll
 ; xgboost/optimized/input_split_base.cc.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0) #0 {
@@ -417,7 +414,7 @@ entry:
   ret i64 %3
 }
 
-; 136 occurrences:
+; 135 occurrences:
 ; abc/optimized/utilSort.c.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; crow/optimized/example_cookies.cpp.ll
@@ -546,7 +543,6 @@ entry:
 ; rocksdb/optimized/sortlist.cc.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; stockfish/optimized/tbprobe.ll
-; velox/optimized/PrestoSerializer.cpp.ll
 ; wasmedge/optimized/global.cpp.ll
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasimodule.cpp.ll
@@ -563,7 +559,7 @@ entry:
   ret i64 %3
 }
 
-; 22 occurrences:
+; 21 occurrences:
 ; darktable/optimized/AbstractLJpegDecoder.cpp.ll
 ; darktable/optimized/Cr2LJpegDecoder.cpp.ll
 ; darktable/optimized/CrwDecompressor.cpp.ll
@@ -578,7 +574,6 @@ entry:
 ; folly/optimized/AsyncSSLSocket.cpp.ll
 ; linux/optimized/swiotlb.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; minetest/optimized/dynamicshadowsrender.cpp.ll
 ; mold/optimized/output-chunks.cc.PPC64V2.cc.ll
 ; openjdk/optimized/zAddressSpaceLimit.ll

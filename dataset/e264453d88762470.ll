@@ -45,15 +45,11 @@ entry:
   ret i32 %5
 }
 
-; 11 occurrences:
+; 7 occurrences:
 ; freetype/optimized/autofit.c.ll
 ; libquic/optimized/time_support.c.ll
 ; libquic/optimized/url_parse.cc.ll
 ; opencv/optimized/bgfg_gaussmix.cpp.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-lib-x_int64.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; openssl/optimized/libcrypto-shlib-x_int64.ll
 ; postgres/optimized/generic_xlog.ll
 ; postgres/optimized/pl_gram.ll
 ; qemu/optimized/hw_display_bochs-display.c.ll
@@ -61,21 +57,6 @@ entry:
 define i32 @func0000000000000006(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = icmp slt i32 %1, 0
-  %4 = select i1 %2, i1 %3, i1 false
-  %5 = select i1 %4, i32 %0, i32 %1
-  ret i32 %5
-}
-
-; 5 occurrences:
-; libquic/optimized/time_support.c.ll
-; llvm/optimized/WhitespaceManager.cpp.ll
-; opencv/optimized/selectivesearchsegmentation_demo.cpp.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000a(i32 %0, i32 %1, i1 %2) #0 {
-entry:
-  %3 = icmp sgt i32 %1, 0
   %4 = select i1 %2, i1 %3, i1 false
   %5 = select i1 %4, i32 %0, i32 %1
   ret i32 %5
@@ -93,15 +74,26 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 2 occurrences:
 ; llvm/optimized/BreakableToken.cpp.ll
-; luajit/optimized/lj_asm.ll
-; luajit/optimized/lj_asm_dyn.ll
 ; php/optimized/pcre2_compile.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = icmp ugt i32 %1, -3
+  %4 = select i1 %2, i1 %3, i1 false
+  %5 = select i1 %4, i32 %0, i32 %1
+  ret i32 %5
+}
+
+; 3 occurrences:
+; libquic/optimized/time_support.c.ll
+; llvm/optimized/WhitespaceManager.cpp.ll
+; opencv/optimized/selectivesearchsegmentation_demo.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000a(i32 %0, i32 %1, i1 %2) #0 {
+entry:
+  %3 = icmp sgt i32 %1, 0
   %4 = select i1 %2, i1 %3, i1 false
   %5 = select i1 %4, i32 %0, i32 %1
   ret i32 %5

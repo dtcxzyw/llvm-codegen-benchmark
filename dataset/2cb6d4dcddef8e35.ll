@@ -1,10 +1,11 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; eastl/optimized/TestBitset.cpp.ll
 ; llvm/optimized/AArch64.cpp.ll
+; lvgl/optimized/lv_label.ll
 ; qemu/optimized/nbd_server.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i16 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 2
   %3 = icmp eq i16 %2, 0

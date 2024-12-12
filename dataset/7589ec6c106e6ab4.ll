@@ -1,16 +1,15 @@
 
-%"struct.rocksdb::TransactionBaseImpl::SavePoint.2496950" = type { %"class.std::shared_ptr.2.2496938", i8, %"class.std::shared_ptr.2496935", i64, i64, i64, %"class.std::shared_ptr.372.2496951" }
-%"class.std::shared_ptr.2.2496938" = type { %"class.std::__shared_ptr.3.2496939" }
-%"class.std::__shared_ptr.3.2496939" = type { ptr, %"class.std::__shared_count.2496937" }
-%"class.std::__shared_count.2496937" = type { ptr }
-%"class.std::shared_ptr.2496935" = type { %"class.std::__shared_ptr.2496936" }
-%"class.std::__shared_ptr.2496936" = type { ptr, %"class.std::__shared_count.2496937" }
-%"class.std::shared_ptr.372.2496951" = type { %"class.std::__shared_ptr.373.2496952" }
-%"class.std::__shared_ptr.373.2496952" = type { ptr, %"class.std::__shared_count.2496937" }
+%"struct.rocksdb::TransactionBaseImpl::SavePoint.2612209" = type { %"class.std::shared_ptr.2.2612197", i8, %"class.std::shared_ptr.2612194", i64, i64, i64, %"class.std::shared_ptr.372.2612210" }
+%"class.std::shared_ptr.2.2612197" = type { %"class.std::__shared_ptr.3.2612198" }
+%"class.std::__shared_ptr.3.2612198" = type { ptr, %"class.std::__shared_count.2612196" }
+%"class.std::__shared_count.2612196" = type { ptr }
+%"class.std::shared_ptr.2612194" = type { %"class.std::__shared_ptr.2612195" }
+%"class.std::__shared_ptr.2612195" = type { ptr, %"class.std::__shared_count.2612196" }
+%"class.std::shared_ptr.372.2612210" = type { %"class.std::__shared_ptr.373.2612211" }
+%"class.std::__shared_ptr.373.2612211" = type { ptr, %"class.std::__shared_count.2612196" }
 
-; 49 occurrences:
+; 46 occurrences:
 ; cmake/optimized/zstdmt_compress.c.ll
-; llvm/optimized/COFFImportFile.cpp.ll
 ; rocksdb/optimized/blob_file_reader.cc.ll
 ; rocksdb/optimized/blob_source.cc.ll
 ; rocksdb/optimized/block_based_table_reader.cc.ll
@@ -22,7 +21,6 @@
 ; rocksdb/optimized/compaction_merging_iterator.cc.ll
 ; rocksdb/optimized/compaction_picker.cc.ll
 ; rocksdb/optimized/compaction_picker_level.cc.ll
-; rocksdb/optimized/cuckoo_table_builder.cc.ll
 ; rocksdb/optimized/db_impl.cc.ll
 ; rocksdb/optimized/db_impl_compaction_flush.cc.ll
 ; rocksdb/optimized/db_impl_experimental.cc.ll
@@ -53,16 +51,34 @@
 ; rocksdb/optimized/thread_local.cc.ll
 ; rocksdb/optimized/transaction_base.cc.ll
 ; rocksdb/optimized/version_set.cc.ll
-; rocksdb/optimized/wide_column_serialization.cc.ll
 ; rocksdb/optimized/write_batch.cc.ll
 ; rocksdb/optimized/write_batch_with_index.cc.ll
 ; rocksdb/optimized/write_unprepared_txn.cc.ll
 ; zstd/optimized/zstdmt_compress.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000024(ptr %0, i64 %1, ptr %2) #0 {
+define ptr @func0000000000000064(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.rocksdb::TransactionBaseImpl::SavePoint.2496950", ptr %2, i64 %1
+  %3 = getelementptr nusw nuw %"struct.rocksdb::TransactionBaseImpl::SavePoint.2612209", ptr %2, i64 %1
   %4 = icmp ult i64 %1, 8
+  %5 = select i1 %4, ptr %3, ptr %0
+  ret ptr %5
+}
+
+; 9 occurrences:
+; rocksdb/optimized/compacted_db_impl.cc.ll
+; rocksdb/optimized/cuckoo_table_builder.cc.ll
+; rocksdb/optimized/db_impl.cc.ll
+; rocksdb/optimized/db_impl_compaction_flush.cc.ll
+; rocksdb/optimized/io_posix.cc.ll
+; rocksdb/optimized/point_lock_manager.cc.ll
+; rocksdb/optimized/version_set.cc.ll
+; rocksdb/optimized/wide_column_serialization.cc.ll
+; rocksdb/optimized/write_batch.cc.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000074(ptr %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw ptr, ptr %2, i64 %1
+  %4 = icmp samesign ult i64 %1, 16
   %5 = select i1 %4, ptr %3, ptr %0
   ret ptr %5
 }
@@ -74,7 +90,7 @@ entry:
 ; sentencepiece/optimized/builder.cc.ll
 ; z3/optimized/theory_str.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000026(ptr %0, i64 %1, ptr %2) #0 {
+define ptr @func0000000000000046(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 %1
   %4 = icmp slt i64 %1, 12
@@ -83,11 +99,22 @@ entry:
 }
 
 ; 1 occurrences:
+; llvm/optimized/COFFImportFile.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000044(ptr %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 %1
+  %4 = icmp ult i64 %1, 150
+  %5 = select i1 %4, ptr %3, ptr %0
+  ret ptr %5
+}
+
+; 1 occurrences:
 ; opencv/optimized/expand_layer.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(ptr %0, i64 %1, ptr %2) #0 {
+define ptr @func0000000000000061(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 4
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 4
   %4 = icmp eq i64 %1, 4
   %5 = select i1 %4, ptr %3, ptr %0
   ret ptr %5

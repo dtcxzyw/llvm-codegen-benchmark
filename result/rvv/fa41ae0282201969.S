@@ -93,13 +93,6 @@ func00000000000001a6:                   # @func00000000000001a6
 	vmnot.m	v8, v12
 	vmorn.mm	v0, v8, v16
 	ret
-func0000000000000110:                   # @func0000000000000110
-	fmv.w.x	fa5, zero
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vmfeq.vf	v16, v8, fa5
-	vmfeq.vv	v17, v8, v12
-	vmor.mm	v0, v17, v16
-	ret
 func00000000000000a6:                   # @func00000000000000a6
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfle.vv	v16, v8, v12

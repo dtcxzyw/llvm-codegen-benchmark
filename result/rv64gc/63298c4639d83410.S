@@ -19,13 +19,6 @@ func000000000000000c:                   # @func000000000000000c
 	slti	a0, a0, 8
 	or	a0, a0, a1
 	ret
-func0000000000000008:                   # @func0000000000000008
-	sext.w	a0, a0
-	and	a1, a1, a2
-	xori	a1, a1, 1
-	sltiu	a0, a0, -4
-	or	a0, a0, a1
-	ret
 func0000000000000014:                   # @func0000000000000014
 	sext.w	a0, a0
 	and	a1, a1, a2

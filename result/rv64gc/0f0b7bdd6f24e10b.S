@@ -1,4 +1,11 @@
-func000000000000002a:                   # @func000000000000002a
+func000000000000028f:                   # @func000000000000028f
+	andi	a1, a1, 255
+	sltiu	a1, a1, 2
+	slli	a1, a1, 2
+	add	a0, a0, a1
+	addi	a0, a0, 500
+	ret
+func000000000000002f:                   # @func000000000000002f
 	andi	a1, a1, 255
 	addi	a1, a1, -15
 	seqz	a1, a1
@@ -6,33 +13,12 @@ func000000000000002a:                   # @func000000000000002a
 	add	a0, a0, a1
 	addi	a0, a0, 448
 	ret
-func000000000000018a:                   # @func000000000000018a
+func000000000000018f:                   # @func000000000000018f
 	andi	a1, a1, 255
 	snez	a1, a1
 	slli	a1, a1, 2
 	add	a0, a0, a1
 	addi	a0, a0, 864
-	ret
-func000000000000018e:                   # @func000000000000018e
-	andi	a1, a1, 255
-	snez	a1, a1
-	slli	a2, a1, 1
-	slli	a1, a1, 3
-	sub	a1, a1, a2
-	lui	a2, 3
-	addiw	a2, a2, -958
-	add	a0, a0, a2
-	add	a0, a0, a1
-	ret
-func000000000000002e:                   # @func000000000000002e
-	andi	a1, a1, 255
-	addi	a1, a1, -1
-	seqz	a1, a1
-	slli	a2, a1, 1
-	slli	a1, a1, 3
-	sub	a1, a1, a2
-	add	a0, a0, a1
-	addi	a0, a0, 148
 	ret
 func0000000000000020:                   # @func0000000000000020
 	andi	a1, a1, 255
@@ -42,7 +28,7 @@ func0000000000000020:                   # @func0000000000000020
 	add	a0, a0, a1
 	addi	a0, a0, 736
 	ret
-func0000000000000028:                   # @func0000000000000028
+func000000000000002c:                   # @func000000000000002c
 	andi	a1, a1, 255
 	addi	a1, a1, -1
 	seqz	a1, a1
@@ -50,7 +36,7 @@ func0000000000000028:                   # @func0000000000000028
 	add	a0, a0, a1
 	addi	a0, a0, 152
 	ret
-func0000000000000148:                   # @func0000000000000148
+func000000000000014c:                   # @func000000000000014c
 	slli	a1, a1, 56
 	srai	a1, a1, 56
 	slti	a1, a1, 0
@@ -59,7 +45,7 @@ func0000000000000148:                   # @func0000000000000148
 	add	a0, a0, a1
 	addi	a0, a0, 60
 	ret
-func000000000000014a:                   # @func000000000000014a
+func000000000000014f:                   # @func000000000000014f
 	slli	a1, a1, 56
 	srai	a1, a1, 56
 	sgtz	a1, a1

@@ -28,3 +28,9 @@ func000000000000000c:                   # @func000000000000000c
 	orb	%dil, %sil
 	orb	%sil, %al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	testb	%dl, %dl
+	setns	%al
+	orb	%dil, %sil
+	orb	%sil, %al
+	retq

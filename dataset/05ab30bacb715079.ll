@@ -11,7 +11,7 @@
 ; verilator/optimized/V3CCtors.cpp.ll
 ; verilator/optimized/V3Const__gen.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 -1, %1
   %3 = xor i64 %2, -1

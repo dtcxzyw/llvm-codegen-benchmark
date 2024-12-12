@@ -1,11 +1,10 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; ceres/optimized/polynomial.cc.ll
 ; meshlab/optimized/matching.cpp.ll
 ; proj/optimized/eck4.cpp.ll
 ; proj/optimized/moll.cpp.ll
 ; proj/optimized/putp2.cpp.ll
-; proj/optimized/wink2.cpp.ll
 ; quantlib/optimized/suowangdoublebarrierengine.ll
 ; Function Attrs: nounwind
 define double @func0000000000000002(double %0, double %1) #0 {

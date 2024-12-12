@@ -12,7 +12,7 @@
 ; pybind11/optimized/test_builtin_casters.cpp.ll
 ; qemu/optimized/hw_scsi_scsi-bus.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i64 4, i64 8

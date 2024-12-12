@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 31 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
@@ -8,6 +8,8 @@
 ; arrow/optimized/value_parsing.cc.ll
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; delta-rs/optimized/31i6j0ayu6bevt9n.ll
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_draw_arc.ll
 ; minetest/optimized/client.cpp.ll
 ; minetest/optimized/clientiface.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll

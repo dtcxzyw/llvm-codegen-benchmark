@@ -1,5 +1,5 @@
 
-; 36 occurrences:
+; 34 occurrences:
 ; abc/optimized/aigPack.c.ll
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
@@ -20,8 +20,6 @@
 ; linux/optimized/lz4_decompress.ll
 ; minetest/optimized/CGUITTFont.cpp.ll
 ; openblas/optimized/dsptrf.c.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; openblas/optimized/lapacke_ctp_trans.c.ll
 ; openblas/optimized/lapacke_dtp_trans.c.ll
 ; openblas/optimized/lapacke_stp_trans.c.ll
@@ -46,13 +44,20 @@ entry:
   ret ptr %6
 }
 
-; 168 occurrences:
+; 167 occurrences:
 ; abc/optimized/aigRet.c.ll
-; abc/optimized/amapPerm.c.ll
 ; abc/optimized/giaSatMap.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/rsbDec6.c.ll
 ; arrow/optimized/key_hash.cc.ll
+; boost/optimized/cmd.ll
+; boost/optimized/cwd.ll
+; boost/optimized/exe.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/process_name.ll
 ; clamav/optimized/pe_icons.c.ll
 ; clamav/optimized/rarvm.cpp.ll
 ; crow/optimized/example.cpp.ll
@@ -71,7 +76,6 @@ entry:
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
 ; flac/optimized/fixed_intrin_sse2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; flac/optimized/fixed_intrin_ssse3.c.ll
 ; freetype/optimized/ftbitmap.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -81,8 +85,6 @@ entry:
 ; icu/optimized/collationsets.ll
 ; icu/optimized/ucnv_bld.ll
 ; imgui/optimized/imgui_draw.cpp.ll
-; libquic/optimized/curve25519.c.ll
-; lief/optimized/ssl_tls.c.ll
 ; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/ASTImporter.cpp.ll
 ; llvm/optimized/ASTReaderStmt.cpp.ll
@@ -167,9 +169,6 @@ entry:
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-accessor.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/outputs-spec.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/path-info.ll
@@ -184,7 +183,6 @@ entry:
 ; nix/optimized/value-to-json.ll
 ; nlohmann_json/optimized/unit-comparison.cpp.ll
 ; nlohmann_json/optimized/unit-regression2.cpp.ll
-; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; openjdk/optimized/hb-face.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; openssl/optimized/libcrypto-lib-bn_shift.ll
@@ -201,7 +199,6 @@ entry:
 ; spike/optimized/processor.ll
 ; spike/optimized/rfb.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
-; wolfssl/optimized/kdf.c.ll
 ; yalantinglibs/optimized/EnumGenerator.cpp.ll
 ; yalantinglibs/optimized/FieldGenerator.cpp.ll
 ; yalantinglibs/optimized/MessageGenerator.cpp.ll
@@ -216,12 +213,28 @@ entry:
 ; z3/optimized/solver_subsumption_tactic.cpp.ll
 ; zxing/optimized/AZEncoder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000001f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 6
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i64, ptr %1, i64 %4
-  %6 = getelementptr nusw i64, ptr %5, i64 %0
+  %5 = getelementptr nusw nuw i64, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i64, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 5 occurrences:
+; abc/optimized/aigRet.c.ll
+; abc/optimized/amapPerm.c.ll
+; lief/optimized/ssl_tls.c.ll
+; opencv/optimized/apriltag_quad_thresh.cpp.ll
+; wolfssl/optimized/kdf.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001e(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 12
+  %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr nusw nuw i32, ptr %1, i64 %4
+  %6 = getelementptr nusw i32, ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -232,39 +245,36 @@ entry:
 ; llvm/optimized/Expr.cpp.ll
 ; redis/optimized/rax.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000003f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 4
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = getelementptr nusw i16, ptr %5, i64 %0
-  ret ptr %6
-}
-
-; 4 occurrences:
-; hermes/optimized/APInt.cpp.ll
-; icu/optimized/collationdatabuilder.ll
-; llvm/optimized/APInt.cpp.ll
-; zxing/optimized/AZDecoder.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000012(i64 %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = lshr i32 %2, 6
-  %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr i64, ptr %1, i64 %4
-  %6 = getelementptr nusw i64, ptr %5, i64 %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i16, ptr %5, i64 %0
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000001c(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i32, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw i32, ptr %1, i64 %4
   %6 = getelementptr i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 1 occurrences:
+; zxing/optimized/AZDecoder.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000013(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 1
+  %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr i32, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i32, ptr %5, i64 %0
   ret ptr %6
 }
 

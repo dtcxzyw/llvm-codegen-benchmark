@@ -10,6 +10,6 @@ func000000000000000f:                   # @func000000000000000f
 	retq
 func000000000000000e:                   # @func000000000000000e
 	movzwl	%si, %eax
-	subq	%rax, %rdi
-	leaq	-2(%rdi), %rax
+	notq	%rax
+	addq	%rdi, %rax
 	retq

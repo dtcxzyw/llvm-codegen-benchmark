@@ -17,6 +17,6 @@ func0000000000000005:                   # @func0000000000000005
 	vwsll.vx	v14, v12, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vor.vv	v10, v14, v10
-	vxor.vv	v8, v10, v8
+	vxor.vv	v8, v8, v10
 	vxor.vx	v8, v8, a1
 	ret

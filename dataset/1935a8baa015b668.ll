@@ -1,7 +1,20 @@
 
-%"struct.clang::FunctionType::FunctionTypeExtraBitfields.2948842" = type { i16, [6 x i8] }
-%"struct.clang::FunctionType::FunctionTypeArmAttributes.2948841" = type { i8, [7 x i8] }
-%"class.cv::Rect_.3562885" = type { i32, i32, i32, i32 }
+%"struct.clang::FunctionType::FunctionTypeExtraBitfields.3142407" = type { i16, [6 x i8] }
+%"struct.clang::FunctionType::FunctionTypeArmAttributes.3142406" = type { i8, [7 x i8] }
+%"class.cv::Rect_.3743588" = type { i32, i32, i32, i32 }
+
+; 1 occurrences:
+; minetest/optimized/clientmap.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = lshr i64 %2, 1
+  %4 = and i64 %3, 4294967295
+  %5 = getelementptr i32, ptr %1, i64 %4
+  %6 = getelementptr i32, ptr %5, i64 %0
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 16
+  ret ptr %7
+}
 
 ; 27 occurrences:
 ; llama.cpp/optimized/ggml.c.ll
@@ -32,13 +45,13 @@
 ; llvm/optimized/SemaType.cpp.ll
 ; llvm/optimized/TextNodeDumper.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000003f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 59
   %4 = and i64 %3, 1
-  %5 = getelementptr nusw %"struct.clang::FunctionType::FunctionTypeExtraBitfields.2948842", ptr %1, i64 %4
-  %6 = getelementptr nusw %"struct.clang::FunctionType::FunctionTypeArmAttributes.2948841", ptr %5, i64 %0
-  %7 = getelementptr nusw i8, ptr %6, i64 8
+  %5 = getelementptr nusw nuw %"struct.clang::FunctionType::FunctionTypeExtraBitfields.3142407", ptr %1, i64 %4
+  %6 = getelementptr nusw nuw %"struct.clang::FunctionType::FunctionTypeArmAttributes.3142406", ptr %5, i64 %0
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 8
   ret ptr %7
 }
 
@@ -58,12 +71,12 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/detection_based_tracker.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000042(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000043(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 4
   %4 = and i64 %3, 2147483647
-  %5 = getelementptr %"class.cv::Rect_.3562885", ptr %1, i64 %4
-  %6 = getelementptr %"class.cv::Rect_.3562885", ptr %5, i64 %0, i32 2
+  %5 = getelementptr %"class.cv::Rect_.3743588", ptr %1, i64 %4
+  %6 = getelementptr %"class.cv::Rect_.3743588", ptr %5, i64 %0, i32 2
   ret ptr %6
 }
 

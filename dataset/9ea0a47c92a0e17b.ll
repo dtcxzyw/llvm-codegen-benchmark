@@ -24,6 +24,18 @@ entry:
   ret i32 %6
 }
 
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; Function Attrs: nounwind
+define i32 @func000000000000001f(i32 %0, i32 %1, i16 %2) #0 {
+entry:
+  %3 = zext nneg i16 %2 to i32
+  %4 = and i32 %1, 255
+  %5 = mul nuw nsw i32 %4, %3
+  %6 = add nuw nsw i32 %0, %5
+  ret i32 %6
+}
+
 ; 2 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; openusd/optimized/reconintra.c.ll
@@ -58,7 +70,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = and i32 %1, 255
   %5 = mul nuw nsw i32 %4, %3
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 

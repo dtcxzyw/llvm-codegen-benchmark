@@ -41,7 +41,7 @@ entry:
   ret i32 %3
 }
 
-; 42 occurrences:
+; 37 occurrences:
 ; cmake/optimized/zstd_opt.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; icu/optimized/icuexportdata.ll
@@ -56,11 +56,7 @@ entry:
 ; linux/optimized/iommu-traces.ll
 ; linux/optimized/main.ll
 ; linux/optimized/mei-trace.ll
-; linux/optimized/mmap_lock.ll
-; linux/optimized/net-procfs.ll
-; linux/optimized/net-traces.ll
 ; linux/optimized/nfs4trace.ll
-; linux/optimized/nfstrace.ll
 ; linux/optimized/power-traces.ll
 ; linux/optimized/printk.ll
 ; linux/optimized/regmap.ll
@@ -70,7 +66,6 @@ entry:
 ; linux/optimized/softirq.ll
 ; linux/optimized/swiotlb.ll
 ; linux/optimized/thermal_core.ll
-; linux/optimized/virtgpu_trace_points.ll
 ; linux/optimized/workqueue.ll
 ; llvm/optimized/BlockFrequencyInfoImpl.cpp.ll
 ; llvm/optimized/SymbolCache.cpp.ll
@@ -193,10 +188,8 @@ entry:
   ret i32 %3
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; icu/optimized/sprintf.ll
-; icu/optimized/sscanf.ll
-; icu/optimized/uscanf.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i64 %0) #0 {
 entry:

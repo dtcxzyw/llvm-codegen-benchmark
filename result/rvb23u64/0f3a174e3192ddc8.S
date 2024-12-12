@@ -9,7 +9,7 @@ func0000000000000000:                   # @func0000000000000000
 	add.uw	a0, a1, a0
 	ret
 func000000000000006f:                   # @func000000000000006f
-	sh3add	a2, a2, a2
+	sh2add	a2, a2, a2
 	sh1add	a0, a2, a0
 	add.uw	a0, a1, a0
 	ret

@@ -1,11 +1,11 @@
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v8, v10
 	vmseq.vi	v12, v10, -1
 	vmseq.vi	v10, v8, -1
 	vmor.mm	v0, v10, v12
 	ret
-func0000000000000094:                   # @func0000000000000094
+func0000000000000114:                   # @func0000000000000114
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v8
 	lui	a0, 1048575
@@ -14,7 +14,7 @@ func0000000000000094:                   # @func0000000000000094
 	vmsgt.vx	v10, v8, a0
 	vmor.mm	v0, v10, v12
 	ret
-func0000000000000110:                   # @func0000000000000110
+func0000000000000210:                   # @func0000000000000210
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v8, v10
 	li	a0, 32
@@ -22,7 +22,7 @@ func0000000000000110:                   # @func0000000000000110
 	vmsgtu.vi	v10, v8, 8
 	vmor.mm	v0, v10, v12
 	ret
-func0000000000000082:                   # @func0000000000000082
+func0000000000000102:                   # @func0000000000000102
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v8, v10
 	lui	a0, 2
@@ -30,7 +30,7 @@ func0000000000000082:                   # @func0000000000000082
 	vmseq.vi	v10, v8, 0
 	vmor.mm	v0, v10, v12
 	ret
-func0000000000000102:                   # @func0000000000000102
+func0000000000000202:                   # @func0000000000000202
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v8, v10
 	bseti	a0, zero, 11
@@ -38,7 +38,7 @@ func0000000000000102:                   # @func0000000000000102
 	vmseq.vi	v10, v8, 0
 	vmor.mm	v0, v10, v12
 	ret
-func0000000000000090:                   # @func0000000000000090
+func0000000000000110:                   # @func0000000000000110
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v8
 	lui	a0, 1048320
@@ -48,7 +48,7 @@ func0000000000000090:                   # @func0000000000000090
 	vmsgtu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v12
 	ret
-func0000000000000182:                   # @func0000000000000182
+func0000000000000302:                   # @func0000000000000302
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v8, v10
 	li	a0, 1024

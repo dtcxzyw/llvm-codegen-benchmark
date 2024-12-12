@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 13 occurrences:
 ; abc/optimized/aigOper.c.ll
 ; abc/optimized/cuddBddAbs.c.ll
 ; abc/optimized/cuddBddCorr.c.ll
@@ -9,7 +9,6 @@
 ; abc/optimized/cuddSat.c.ll
 ; abc/optimized/dsdProc.c.ll
 ; abc/optimized/extraBddMisc.c.ll
-; abc/optimized/sswSat.c.ll
 ; bdwgc/optimized/gc.c.ll
 ; eastl/optimized/TestFixedString.cpp.ll
 ; eastl/optimized/TestString.cpp.ll

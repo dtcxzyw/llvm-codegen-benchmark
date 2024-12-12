@@ -12,7 +12,7 @@ entry:
   ret i64 %6
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; cmake/optimized/cm_get_date.c.ll
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
@@ -22,6 +22,7 @@ entry:
 ; diesel-rs/optimized/2zzzvc1em6im74h3.ll
 ; influxdb-rs/optimized/2g8nrbnslhx52xx1.ll
 ; libquic/optimized/prtime.cc.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0, i64 %1, i32 %2) #0 {
 entry:

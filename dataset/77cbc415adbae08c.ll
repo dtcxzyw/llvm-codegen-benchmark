@@ -10,7 +10,7 @@ entry:
   ret i32 %4
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/extraUtilDsd.c.ll
 ; abc/optimized/giaCSat3.c.ll
@@ -26,6 +26,7 @@ entry:
 ; openusd/optimized/decodeframe.c.ll
 ; raylib/optimized/raudio.c.ll
 ; wireshark/optimized/packet-h264.c.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1, i32 %2) #0 {
 entry:

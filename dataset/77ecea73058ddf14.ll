@@ -8,7 +8,7 @@
 define i64 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %.not = icmp eq i64 %2, %0
+  %.not = icmp eq i64 %0, %2
   %3 = select i1 %.not, i64 0, i64 %0
   ret i64 %3
 }
@@ -18,10 +18,10 @@ entry:
 ; icu/optimized/numparse_affixes.ll
 ; php/optimized/escape_analysis.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001c(i64 %0, i32 %1) #0 {
+define i64 @func000000000000002c(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %.not = icmp eq i64 %2, %0
+  %.not = icmp eq i64 %0, %2
   %3 = select i1 %.not, i64 0, i64 %0
   ret i64 %3
 }
@@ -35,18 +35,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = icmp ugt i64 %2, %0
-  %4 = select i1 %3, i64 %0, i64 0
-  ret i64 %4
-}
-
-; 1 occurrences:
-; graphviz/optimized/neatosplines.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i32 %1) #0 {
-entry:
-  %2 = zext nneg i32 %1 to i64
-  %3 = icmp ugt i64 %2, %0
+  %3 = icmp ult i64 %0, %2
   %4 = select i1 %3, i64 %0, i64 0
   ret i64 %4
 }

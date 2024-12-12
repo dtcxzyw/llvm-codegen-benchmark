@@ -21,20 +21,14 @@ func000000000000000c:                   # @func000000000000000c
 	ret
 func0000000000000004:                   # @func0000000000000004
 	slli	a1, a1, 48
-	srli	a1, a1, 56
-	sltiu	a1, a1, 255
-	and	a0, a0, a1
-	lui	a1, 16
-	neg	a0, a0
-	addiw	a1, a1, -257
-	and	a0, a0, a1
-	ret
-func0000000000000008:                   # @func0000000000000008
-	slli	a1, a1, 48
+	lui	a2, 16
 	srli	a1, a1, 48
-	sltiu	a1, a1, 768
-	xori	a1, a1, 1
+	addiw	a2, a2, -2
+	sltu	a1, a1, a2
 	and	a0, a0, a1
-	negw	a0, a0
-	andi	a0, a0, 768
+	bnez	a0, .LBB2_2
+	li	a0, -4
+	ret
+.LBB2_2:
+	li	a0, -2
 	ret

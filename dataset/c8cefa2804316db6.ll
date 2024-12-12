@@ -1,5 +1,6 @@
 
-; 99 occurrences:
+; 98 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
 ; fmt/optimized/header-only-test.cc.ll
@@ -82,10 +83,8 @@
 ; linux/optimized/gup.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/hugetlb_vmemmap.ll
-; linux/optimized/i915_mm.ll
 ; linux/optimized/init_64.ll
 ; linux/optimized/ldt.ll
-; linux/optimized/machine_kexec_64.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mlock.ll
 ; linux/optimized/mprotect.ll
@@ -108,7 +107,9 @@ entry:
   ret i64 %4
 }
 
-; 29 occurrences:
+; 28 occurrences:
+; boost/optimized/test_codecvt.ll
+; boost/optimized/to_chars.ll
 ; cvc5/optimized/theory_model.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_algebraic.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
@@ -118,11 +119,9 @@ entry:
 ; linux/optimized/gup.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/hugetlb_vmemmap.ll
-; linux/optimized/i915_mm.ll
 ; linux/optimized/init_64.ll
 ; linux/optimized/insn-eval.ll
 ; linux/optimized/ldt.ll
-; linux/optimized/machine_kexec_64.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mlock.ll
 ; linux/optimized/mprotect.ll
@@ -133,7 +132,6 @@ entry:
 ; linux/optimized/set_memory.ll
 ; linux/optimized/sparse-vmemmap.ll
 ; linux/optimized/vmalloc.ll
-; llvm/optimized/COFFImportFile.cpp.ll
 ; openusd/optimized/reconinter.c.ll
 ; postgres/optimized/freepage.ll
 ; spike/optimized/processor.ll
@@ -142,7 +140,7 @@ entry:
 define i64 @func000000000000000c(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = sext i1 %3 to i64
   ret i64 %4
 }

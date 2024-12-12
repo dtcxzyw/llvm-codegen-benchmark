@@ -1,7 +1,18 @@
 
-; 4 occurrences:
+; 2 occurrences:
+; boost/optimized/test_codecvt.ll
+; boost/optimized/test_fs.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(i64 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ult i32 %2, 2048
+  %4 = select i1 %1, i1 %3, i1 false
+  %5 = select i1 %4, i64 2, i64 %0
+  ret i64 %5
+}
+
+; 3 occurrences:
 ; cmake/optimized/zstd_compress.c.ll
-; linux/optimized/i915_driver.ll
 ; llvm/optimized/SemaChecking.cpp.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind

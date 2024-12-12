@@ -1,112 +1,32 @@
-func0000000000000076:                   // @func0000000000000076
+func00000000000000e6:                   // @func00000000000000e6
 // %bb.0:                               // %entry
-	ushll	v4.2d, v3.2s, #0
-	ushll2	v3.2d, v3.4s, #0
-	fmov	x8, d0
-	mov	x10, v0.d[1]
-	mov	x13, v1.d[1]
-	fmov	x9, d4
-	fmov	x12, d3
-	mov	x11, v4.d[1]
-	mov	x14, v3.d[1]
-	sshll	v3.2d, v2.2s, #0
-	sshll2	v2.2d, v2.4s, #0
-	mul	x8, x9, x8
-	fmov	x9, d1
-	mul	x10, x11, x10
-	mul	x9, x12, x9
-	fmov	d0, x8
-	mul	x11, x14, x13
-	mov	v0.d[1], x10
-	fmov	d1, x9
-	mov	v1.d[1], x11
-	cmgt	v0.2d, v3.2d, v0.2d
-	cmgt	v1.2d, v2.2d, v1.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	mov	w8, w2
+	mul	x8, x0, x8
+	cmp	x8, w1, sxtw
+	cset	w0, lt
 	ret
                                         // -- End function
-func0000000000000054:                   // @func0000000000000054
+func00000000000000a4:                   // @func00000000000000a4
 // %bb.0:                               // %entry
-	ushll	v4.2d, v3.2s, #0
-	ushll2	v3.2d, v3.4s, #0
-	fmov	x8, d0
-	mov	x10, v0.d[1]
-	mov	x13, v1.d[1]
-	fmov	x9, d4
-	fmov	x12, d3
-	mov	x11, v4.d[1]
-	mov	x14, v3.d[1]
-	sshll	v3.2d, v2.2s, #0
-	sshll2	v2.2d, v2.4s, #0
-	mul	x8, x9, x8
-	fmov	x9, d1
-	mul	x10, x11, x10
-	mul	x9, x12, x9
-	fmov	d0, x8
-	mul	x11, x14, x13
-	mov	v0.d[1], x10
-	fmov	d1, x9
-	mov	v1.d[1], x11
-	cmhi	v0.2d, v3.2d, v0.2d
-	cmhi	v1.2d, v2.2d, v1.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	mov	w8, w2
+	mul	x8, x0, x8
+	cmp	x8, w1, sxtw
+	cset	w0, lo
 	ret
                                         // -- End function
-func000000000000005a:                   // @func000000000000005a
+func00000000000000aa:                   // @func00000000000000aa
 // %bb.0:                               // %entry
-	ushll	v4.2d, v3.2s, #0
-	ushll2	v3.2d, v3.4s, #0
-	fmov	x8, d0
-	mov	x10, v0.d[1]
-	mov	x13, v1.d[1]
-	fmov	x9, d4
-	fmov	x12, d3
-	mov	x11, v4.d[1]
-	mov	x14, v3.d[1]
-	sshll	v3.2d, v2.2s, #0
-	sshll2	v2.2d, v2.4s, #0
-	mul	x8, x9, x8
-	fmov	x9, d1
-	mul	x10, x11, x10
-	mul	x9, x12, x9
-	fmov	d0, x8
-	mul	x11, x14, x13
-	mov	v0.d[1], x10
-	fmov	d1, x9
-	mov	v1.d[1], x11
-	cmgt	v0.2d, v0.2d, v3.2d
-	cmgt	v1.2d, v1.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	mov	w8, w2
+	mul	x8, x0, x8
+	cmp	x8, w1, sxtw
+	cset	w0, gt
 	ret
                                         // -- End function
-func0000000000000028:                   // @func0000000000000028
+func0000000000000048:                   // @func0000000000000048
 // %bb.0:                               // %entry
-	ushll	v4.2d, v3.2s, #0
-	ushll2	v3.2d, v3.4s, #0
-	fmov	x8, d0
-	mov	x10, v0.d[1]
-	mov	x13, v1.d[1]
-	fmov	x9, d4
-	fmov	x12, d3
-	mov	x11, v4.d[1]
-	mov	x14, v3.d[1]
-	sshll	v3.2d, v2.2s, #0
-	sshll2	v2.2d, v2.4s, #0
-	mul	x8, x9, x8
-	fmov	x9, d1
-	mul	x10, x11, x10
-	mul	x9, x12, x9
-	fmov	d0, x8
-	mul	x11, x14, x13
-	mov	v0.d[1], x10
-	fmov	d1, x9
-	mov	v1.d[1], x11
-	cmhi	v0.2d, v0.2d, v3.2d
-	cmhi	v1.2d, v1.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	mov	w8, w2
+	mul	x8, x0, x8
+	cmp	x8, w1, sxtw
+	cset	w0, hi
 	ret
                                         // -- End function

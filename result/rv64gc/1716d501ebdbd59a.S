@@ -28,3 +28,10 @@ func0000000000000002:                   # @func0000000000000002
 .LBB3_2:                                # %entry
 	flt.s	a0, fa1, fa0
 	ret
+func000000000000000a:                   # @func000000000000000a
+	andi	a0, a0, 1
+	beqz	a0, .LBB4_2
+	fneg.s	fa1, fa1
+.LBB4_2:                                # %entry
+	fle.s	a0, fa1, fa0
+	ret

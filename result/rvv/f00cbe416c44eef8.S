@@ -1,4 +1,4 @@
-func0000000000000156:                   # @func0000000000000156
+func00000000000002a6:                   # @func00000000000002a6
 	li	a0, -128
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vnmsac.vv	v10, v8, v12

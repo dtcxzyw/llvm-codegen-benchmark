@@ -1,4 +1,4 @@
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000014a:                   # @func000000000000014a
 	addq	%rsi, %rdi
 	shrq	$32, %rdi
 	testl	%edi, %edi
@@ -16,13 +16,13 @@ func000000000000000a:                   # @func000000000000000a
 	testl	%edi, %edi
 	setg	%al
 	retq
-func0000000000000086:                   # @func0000000000000086
+func0000000000000106:                   # @func0000000000000106
 	addq	%rsi, %rdi
 	shrq	$16, %rdi
 	cmpl	$32, %edi
 	setl	%al
 	retq
-func000000000000008a:                   # @func000000000000008a
+func000000000000010a:                   # @func000000000000010a
 	addq	%rsi, %rdi
 	shrq	$16, %rdi
 	cmpl	$17, %edi

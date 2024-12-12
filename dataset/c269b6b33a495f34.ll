@@ -12,6 +12,38 @@ entry:
   ret i64 %7
 }
 
+; 7 occurrences:
+; hermes/optimized/ConsecutiveStringStorage.cpp.ll
+; hermes/optimized/HBC.cpp.ll
+; hermes/optimized/JSLexer.cpp.ll
+; hermes/optimized/JSONEmitter.cpp.ll
+; hermes/optimized/RegexSerialization.cpp.ll
+; hermes/optimized/Runtime.cpp.ll
+; hermes/optimized/UTF8.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003f(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext nneg i8 %2 to i32
+  %4 = shl nuw nsw i32 %1, 6
+  %5 = or disjoint i32 %4, %3
+  %6 = or disjoint i32 %5, %0
+  %7 = zext nneg i32 %6 to i64
+  ret i64 %7
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-lapdm.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000024(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext nneg i8 %2 to i32
+  %4 = shl i32 %1, 4
+  %5 = or disjoint i32 %4, %3
+  %6 = or i32 %5, %0
+  %7 = zext i32 %6 to i64
+  ret i64 %7
+}
+
 ; 2 occurrences:
 ; wireshark/optimized/addr_resolv.c.ll
 ; zstd/optimized/zstd_v07.c.ll

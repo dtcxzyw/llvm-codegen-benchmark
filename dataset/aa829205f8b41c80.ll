@@ -1,5 +1,5 @@
 
-%struct.drm_color_lut.3341904 = type { i16, i16, i16, i16 }
+%struct.drm_color_lut.3531009 = type { i16, i16, i16, i16 }
 
 ; 1 occurrences:
 ; linux/optimized/intel_color.ll
@@ -10,7 +10,7 @@ entry:
   %4 = mul i32 %3, %1
   %5 = sdiv i32 %4, 511
   %6 = sext i32 %5 to i64
-  %7 = getelementptr %struct.drm_color_lut.3341904, ptr %0, i64 %6
+  %7 = getelementptr %struct.drm_color_lut.3531009, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -21,7 +21,7 @@ entry:
 define ptr @func0000000000000028(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = sdiv i32 %4, 2
   %6 = sext i32 %5 to i64
   %7 = getelementptr double, ptr %0, i64 %6

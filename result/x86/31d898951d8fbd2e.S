@@ -1,7 +1,7 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	addl	$-2, %edx
 	movslq	%edx, %rax
-	cmpq	%rsi, %rax
-	setl	%al
+	cmpq	%rax, %rsi
+	setg	%al
 	andb	%dil, %al
 	retq

@@ -1,14 +1,26 @@
 
-; 2 occurrences:
-; hdf5/optimized/H5Ocache.c.ll
+; 1 occurrences:
 ; php/optimized/zend_jit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000204(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000604(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 31
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 31
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %1
   %6 = add i64 %5, 8
+  %7 = icmp ult i64 %6, %0
+  ret i1 %7
+}
+
+; 1 occurrences:
+; hdf5/optimized/H5Ocache.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000404(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -1
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %4, %1
+  %6 = add i64 %5, 1
   %7 = icmp ult i64 %6, %0
   ret i1 %7
 }
@@ -29,9 +41,9 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-kerberos.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000206(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000606(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 48
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 48
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %1
   %6 = add i64 %5, 256
@@ -42,9 +54,9 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/pcap-common.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000208(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000608(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 4
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 4
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %1
   %6 = add i64 %5, 4
@@ -84,7 +96,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000020a(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000040a(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -1
   %4 = ptrtoint ptr %3 to i64

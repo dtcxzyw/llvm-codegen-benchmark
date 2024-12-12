@@ -9,12 +9,6 @@ func0000000000000003:                   # @func0000000000000003
 	orl	%edi, %eax
 	orl	$24577, %eax                    # imm = 0x6001
 	retq
-func000000000000000e:                   # @func000000000000000e
-	movl	%esi, %eax
-	andl	$1, %eax
-	orl	%edi, %eax
-	orl	$2, %eax
-	retq
 func000000000000000c:                   # @func000000000000000c
 	movl	%esi, %eax
 	andl	$32, %eax

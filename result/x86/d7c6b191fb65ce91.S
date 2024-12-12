@@ -1,116 +1,116 @@
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	xorl	%eax, %eax
 	cmpl	$1, %edx
 	sete	%al
 	subl	%eax, %esi
-	cmpl	%edi, %esi
-	setl	%al
+	cmpl	%esi, %edi
+	setg	%al
 	retq
-func000000000000031a:                   # @func000000000000031a
+func000000000000062a:                   # @func000000000000062a
 	xorl	%eax, %eax
 	cmpl	$511, %edx                      # imm = 0x1FF
 	setne	%al
 	subl	%eax, %esi
-	cmpl	%edi, %esi
-	setl	%al
+	cmpl	%esi, %edi
+	setg	%al
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	cmpl	$1, %edx
 	sbbl	$0, %esi
-	cmpl	%edi, %esi
+	cmpl	%esi, %edi
+	seta	%al
+	retq
+func0000000000000081:                   # @func0000000000000081
+	cmpl	$1, %edx
+	sbbl	$0, %esi
+	cmpl	%esi, %edi
+	sete	%al
+	retq
+func0000000000000c29:                   # @func0000000000000c29
+	cmpl	$4, %edx
+	adcl	$-1, %esi
+	cmpl	%esi, %edi
+	setae	%al
+	retq
+func0000000000000c24:                   # @func0000000000000c24
+	cmpl	$4, %edx
+	adcl	$-1, %esi
+	cmpl	%esi, %edi
 	setb	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func00000000000000a1:                   # @func00000000000000a1
 	cmpl	$1, %edx
 	sbbl	$0, %esi
-	cmpl	%edi, %esi
+	cmpl	%esi, %edi
 	sete	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
-	cmpl	$1, %edx
-	sbbl	$0, %esi
-	cmpl	%edi, %esi
-	sete	%al
-	retq
-func0000000000000281:                   # @func0000000000000281
+func0000000000000501:                   # @func0000000000000501
 	xorl	%eax, %eax
 	testl	%edx, %edx
 	setg	%al
 	subl	%eax, %esi
-	cmpl	%edi, %esi
+	cmpl	%esi, %edi
 	sete	%al
 	retq
-func0000000000000286:                   # @func0000000000000286
+func0000000000000506:                   # @func0000000000000506
 	xorl	%eax, %eax
 	testl	%edx, %edx
 	setg	%al
 	subl	%eax, %esi
-	cmpl	%edi, %esi
-	setg	%al
+	cmpl	%esi, %edi
+	setl	%al
 	retq
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	xorl	%eax, %eax
 	cmpl	$44, %edx
 	sete	%al
 	subl	%eax, %esi
-	cmpl	%edi, %esi
-	setg	%al
+	cmpl	%esi, %edi
+	setl	%al
 	retq
-func0000000000000311:                   # @func0000000000000311
+func0000000000000621:                   # @func0000000000000621
 	xorl	%eax, %eax
 	cmpl	$1, %edx
 	setne	%al
 	subl	%eax, %esi
-	cmpl	%edi, %esi
+	cmpl	%esi, %edi
 	sete	%al
 	retq
-func0000000000000316:                   # @func0000000000000316
+func0000000000000626:                   # @func0000000000000626
 	xorl	%eax, %eax
 	cmpl	$1, %edx
 	setne	%al
 	subl	%eax, %esi
-	cmpl	%edi, %esi
-	setg	%al
+	cmpl	%esi, %edi
+	setl	%al
 	retq
-func0000000000000301:                   # @func0000000000000301
+func0000000000000601:                   # @func0000000000000601
 	cmpl	$1, %edx
 	adcl	$-1, %esi
-	cmpl	%edi, %esi
+	cmpl	%esi, %edi
 	sete	%al
 	retq
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	xorl	%eax, %eax
 	cmpl	$2, %edx
 	sete	%al
 	subl	%eax, %esi
-	cmpl	%edi, %esi
-	seta	%al
-	retq
-func000000000000005c:                   # @func000000000000005c
-	xorl	%eax, %eax
-	cmpl	$2, %edx
-	sete	%al
-	subl	%eax, %esi
-	cmpl	%edi, %esi
-	setne	%al
-	retq
-func0000000000000058:                   # @func0000000000000058
-	xorl	%eax, %eax
-	cmpl	$2, %edx
-	sete	%al
-	subl	%eax, %esi
-	cmpl	%edi, %esi
+	cmpl	%esi, %edi
 	setb	%al
 	retq
-func0000000000000219:                   # @func0000000000000219
-	cmpl	$4, %edx
-	adcl	$-1, %esi
-	cmpl	%edi, %esi
-	setbe	%al
+func00000000000000ac:                   # @func00000000000000ac
+	xorl	%eax, %eax
+	cmpl	$2, %edx
+	sete	%al
+	subl	%eax, %esi
+	cmpl	%esi, %edi
+	setne	%al
 	retq
-func0000000000000214:                   # @func0000000000000214
-	cmpl	$4, %edx
-	adcl	$-1, %esi
-	cmpl	%edi, %esi
+func00000000000000a8:                   # @func00000000000000a8
+	xorl	%eax, %eax
+	cmpl	$2, %edx
+	sete	%al
+	subl	%eax, %esi
+	cmpl	%esi, %edi
 	seta	%al
 	retq

@@ -1,5 +1,5 @@
 
-; 319 occurrences:
+; 317 occurrences:
 ; abc/optimized/abcFraig.c.ll
 ; abc/optimized/abcHaig.c.ll
 ; abc/optimized/abcStrash.c.ll
@@ -48,10 +48,11 @@
 ; assimp/optimized/PostStepRegistry.cpp.ll
 ; assimp/optimized/SceneCombiner.cpp.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/core.ll
+; boost/optimized/partition.ll
 ; bullet3/optimized/btDeformableBodySolver.ll
 ; bullet3/optimized/btSoftBody.ll
 ; clamav/optimized/autoit.c.ll
-; clamav/optimized/crc.cpp.ll
 ; clamav/optimized/crypt.cpp.ll
 ; clamav/optimized/pe_icons.c.ll
 ; clamav/optimized/rijndael.c.ll
@@ -118,6 +119,7 @@
 ; luau/optimized/BytecodeBuilder.cpp.ll
 ; luau/optimized/IrBuilder.cpp.ll
 ; luau/optimized/OptimizeConstProp.cpp.ll
+; lvgl/optimized/lv_math.ll
 ; meilisearch-rs/optimized/4llghrvh6vzci59o.ll
 ; memcached/optimized/crc32c.ll
 ; memcached/optimized/memcached-crc32c.ll
@@ -161,7 +163,6 @@
 ; openssl/optimized/libcrypto-lib-cfb64ede.ll
 ; openssl/optimized/libcrypto-lib-cfb_enc.ll
 ; openssl/optimized/libcrypto-lib-des_enc.ll
-; openssl/optimized/libcrypto-lib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-lib-mdc2dgst.ll
 ; openssl/optimized/libcrypto-lib-pcbc_enc.ll
 ; openssl/optimized/libcrypto-lib-property.ll
@@ -176,7 +177,6 @@
 ; openssl/optimized/libcrypto-shlib-cfb64ede.ll
 ; openssl/optimized/libcrypto-shlib-cfb_enc.ll
 ; openssl/optimized/libcrypto-shlib-des_enc.ll
-; openssl/optimized/libcrypto-shlib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-shlib-mdc2dgst.ll
 ; openssl/optimized/libcrypto-shlib-pcbc_enc.ll
 ; openssl/optimized/libcrypto-shlib-property.ll
@@ -186,7 +186,6 @@
 ; openssl/optimized/libcrypto-shlib-xcbc_enc.ll
 ; openssl/optimized/libdefault-lib-test_rng.ll
 ; openssl/optimized/liblegacy-lib-des_enc.ll
-; openssl/optimized/liblegacy-lib-fcrypt_b.ll
 ; openssl/optimized/padlock-dso-e_padlock.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; ozz-animation/optimized/animation.cc.ll
@@ -204,7 +203,6 @@
 ; php/optimized/random.ll
 ; php/optimized/string.ll
 ; pocketpy/optimized/random.cpp.ll
-; postgres/optimized/checksum.ll
 ; postgres/optimized/file.ll
 ; postgres/optimized/pg_checksums.ll
 ; postgres/optimized/pg_crc32c_sb8.ll

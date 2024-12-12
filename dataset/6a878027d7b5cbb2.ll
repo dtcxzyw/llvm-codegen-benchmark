@@ -160,11 +160,11 @@
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %1, -2
   %.neg = add nsw i32 %2, 1
-  %3 = icmp slt i32 %.neg, %0
+  %3 = icmp sgt i32 %0, %.neg
   ret i1 %3
 }
 

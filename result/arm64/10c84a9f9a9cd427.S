@@ -1,44 +1,28 @@
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	cmlt	v4.4s, v3.4s, #0
-	cmlt	v5.4s, v2.4s, #0
-	usra	v3.4s, v4.4s, #23
-	movi	v4.4s, #54
-	usra	v2.4s, v5.4s, #23
-	sshr	v3.4s, v3.4s, #9
-	sshr	v2.4s, v2.4s, #9
-	cmgt	v1.4s, v4.4s, v1.4s
-	cmgt	v0.4s, v4.4s, v0.4s
-	bic	v0.16b, v2.16b, v0.16b
-	bic	v1.16b, v3.16b, v1.16b
+	add	w8, w1, #511
+	cmp	w1, #0
+	csel	w8, w8, w1, lt
+	cmp	w0, #54
+	asr	w8, w8, #9
+	csel	w0, wzr, w8, lt
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	cmlt	v4.4s, v3.4s, #0
-	cmlt	v5.4s, v2.4s, #0
-	usra	v3.4s, v4.4s, #29
-	movi	v4.4s, #15
-	usra	v2.4s, v5.4s, #29
-	sshr	v3.4s, v3.4s, #3
-	sshr	v2.4s, v2.4s, #3
-	cmhi	v1.4s, v4.4s, v1.4s
-	cmhi	v0.4s, v4.4s, v0.4s
-	bic	v2.16b, v2.16b, v0.16b
-	bic	v3.16b, v3.16b, v1.16b
-	sub	v0.4s, v2.4s, v0.4s
-	sub	v1.4s, v3.4s, v1.4s
+	add	w8, w1, #7
+	cmp	w1, #0
+	csel	w8, w8, w1, lt
+	cmp	w0, #15
+	asr	w8, w8, #3
+	csinc	w0, w8, wzr, hs
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	usra	v3.4s, v3.4s, #31
-	usra	v2.4s, v2.4s, #31
-	cmeq	v1.4s, v1.4s, #0
-	cmeq	v0.4s, v0.4s, #0
-	sshr	v3.4s, v3.4s, #1
-	sshr	v2.4s, v2.4s, #1
-	bic	v0.16b, v2.16b, v0.16b
-	bic	v1.16b, v3.16b, v1.16b
+	add	w8, w1, w1, lsr #31
+	cmp	w0, #0
+	asr	w8, w8, #1
+	csel	w0, wzr, w8, eq
 	ret
                                         // -- End function

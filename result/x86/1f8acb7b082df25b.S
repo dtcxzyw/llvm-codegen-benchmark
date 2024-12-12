@@ -19,6 +19,20 @@ func0000000000000011:                   # @func0000000000000011
 	andb	$127, %dil
 	orb	%dil, %al
 	retq
+func0000000000000031:                   # @func0000000000000031
+	cmpq	$127, %rsi
+	seta	%al
+	shlb	$7, %al
+	andb	$127, %dil
+	orb	%dil, %al
+	retq
+func0000000000000029:                   # @func0000000000000029
+	cmpq	$127, %rsi
+	seta	%al
+	shlb	$7, %al
+	andb	$127, %dil
+	orb	%dil, %al
+	retq
 func000000000000000d:                   # @func000000000000000d
 	testq	%rsi, %rsi
 	setns	%al

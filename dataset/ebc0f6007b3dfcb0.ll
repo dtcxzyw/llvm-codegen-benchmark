@@ -1,5 +1,5 @@
 
-; 230 occurrences:
+; 231 occurrences:
 ; actix-rs/optimized/1v3445utu4y7ica.ll
 ; assimp/optimized/ColladaExporter.cpp.ll
 ; assimp/optimized/ConvertToLHProcess.cpp.ll
@@ -83,7 +83,6 @@
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_mutualglobal.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
@@ -230,6 +229,8 @@
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; typst-rs/optimized/53ug9lwflkq7ucu8.ll
+; zed-rs/optimized/11rrvqb0alhs5mh4wxxke3etr.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1) #0 {
 entry:

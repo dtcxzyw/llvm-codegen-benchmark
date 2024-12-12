@@ -4,7 +4,7 @@
 ; imgui/optimized/imgui_draw.cpp.ll
 ; ruby/optimized/date_core.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000002d(i32 %0) #0 {
+define i64 @func000000000000004d(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, 13
   %2 = icmp slt i32 %0, 0
@@ -33,10 +33,10 @@ entry:
 ; spike/optimized/fsri.ll
 ; spike/optimized/fsrw.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i32 %0) #0 {
+define i64 @func0000000000000071(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -32
-  %2 = icmp ugt i32 %0, 31
+  %2 = icmp samesign ugt i32 %0, 31
   %3 = select i1 %2, i32 %1, i32 %0
   %4 = zext nneg i32 %3 to i64
   ret i64 %4

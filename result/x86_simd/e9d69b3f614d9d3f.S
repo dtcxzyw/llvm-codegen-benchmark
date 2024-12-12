@@ -35,7 +35,7 @@
 	.long	4294967291                      # 0xfffffffb
 .LCPI0_2:
 	.long	2                               # 0x2
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpshufb	.LCPI0_0(%rip), %ymm1, %ymm0    # ymm0 = ymm1[2],zero,zero,zero,ymm1[6],zero,zero,zero,ymm1[10],zero,zero,zero,ymm1[14],zero,zero,zero,ymm1[18],zero,zero,zero,ymm1[22],zero,zero,zero,ymm1[26],zero,zero,zero,ymm1[30],zero,zero,zero
@@ -50,7 +50,7 @@ func0000000000000014:                   # @func0000000000000014
 	.long	4294967292                      # 0xfffffffc
 .LCPI1_2:
 	.long	4294967293                      # 0xfffffffd
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpsrld	$1, %ymm1, %ymm0
@@ -64,7 +64,7 @@ func0000000000000018:                   # @func0000000000000018
 	.long	134217726                       # 0x7fffffe
 .LCPI2_1:
 	.long	4                               # 0x4
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm1, %ymm0

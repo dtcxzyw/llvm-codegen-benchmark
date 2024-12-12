@@ -1,7 +1,7 @@
 
-%struct.Run.3538579 = type { i32, i32, i32 }
+%struct.Run.3719341 = type { i32, i32, i32 }
 
-; 73 occurrences:
+; 74 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/ifDec16.c.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
@@ -42,6 +42,7 @@
 ; icu/optimized/uvectr32.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; llvm/optimized/DwarfUnit.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; ncnn/optimized/detectionoutput.cpp.ll
 ; ncnn/optimized/proposal.cpp.ll
@@ -85,8 +86,9 @@ entry:
   ret ptr %6
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; csmith/optimized/CVQualifiers.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; oiio/optimized/imagecache.cpp.ll
 ; opencv/optimized/pooling_layer.cpp.ll
@@ -131,7 +133,7 @@ entry:
   %3 = add nsw i32 %1, %2
   %4 = sdiv i32 %3, 2
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %struct.Run.3538579, ptr %0, i64 %5
+  %6 = getelementptr %struct.Run.3719341, ptr %0, i64 %5
   ret ptr %6
 }
 

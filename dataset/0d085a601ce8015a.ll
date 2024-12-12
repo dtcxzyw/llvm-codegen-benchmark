@@ -9,7 +9,6 @@
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; icu/optimized/double-conversion-bignum.ll
 ; libpng/optimized/png.c.ll
-; linux/optimized/8250_mid.ll
 ; linux/optimized/af_packet.ll
 ; linux/optimized/drm_dsc_helper.ll
 ; linux/optimized/ff-memless.ll
@@ -26,6 +25,7 @@
 ; linux/optimized/vt.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
 ; miniaudio/optimized/unity.c.ll
 ; oiio/optimized/pnminput.cpp.ll
 ; opencv/optimized/perf_resize.cpp.ll

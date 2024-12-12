@@ -9,7 +9,7 @@ entry:
   %3 = add i32 %2, 1
   %4 = zext i32 %3 to i64
   %5 = zext i32 %1 to i64
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   %7 = icmp ugt i64 %6, %4
   ret i1 %7
 }
@@ -19,52 +19,65 @@ entry:
 ; openexr/optimized/internal_huf.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003f8(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000007f8(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 8
   %4 = zext nneg i32 %3 to i64
   %5 = zext nneg i32 %1 to i64
-  %6 = add nuw nsw i64 %5, %0
-  %7 = icmp ugt i64 %6, %4
+  %6 = add nuw nsw i64 %0, %5
+  %7 = icmp samesign ugt i64 %6, %4
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; darktable/optimized/MrwDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000378(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000006f8(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 8
   %4 = zext nneg i32 %3 to i64
   %5 = zext i32 %1 to i64
-  %6 = add nuw nsw i64 %5, %0
-  %7 = icmp ugt i64 %6, %4
+  %6 = add nuw nsw i64 %0, %5
+  %7 = icmp samesign ugt i64 %6, %4
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f8(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000003f8(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -8
   %4 = zext nneg i32 %3 to i64
   %5 = zext nneg i32 %1 to i64
-  %6 = add nuw nsw i64 %5, %0
-  %7 = icmp ugt i64 %6, %4
+  %6 = add nuw nsw i64 %0, %5
+  %7 = icmp samesign ugt i64 %6, %4
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000178(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002f8(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -8
   %4 = zext nneg i32 %3 to i64
   %5 = zext i32 %1 to i64
-  %6 = add nuw nsw i64 %5, %0
-  %7 = icmp ugt i64 %6, %4
+  %6 = add nuw nsw i64 %0, %5
+  %7 = icmp samesign ugt i64 %6, %4
+  ret i1 %7
+}
+
+; 1 occurrences:
+; abc/optimized/giaTransduction.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %2, 1
+  %4 = zext i32 %3 to i64
+  %5 = zext i32 %1 to i64
+  %6 = add nsw i64 %0, %5
+  %7 = icmp samesign ugt i64 %6, %4
   ret i1 %7
 }
 
@@ -82,12 +95,12 @@ entry:
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; openspiel/optimized/System.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = zext i32 %3 to i64
   %5 = zext i32 %1 to i64
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   %7 = icmp ugt i64 %6, %4
   ret i1 %7
 }
@@ -95,25 +108,25 @@ entry:
 ; 1 occurrences:
 ; draco/optimized/sequential_attribute_encoders_controller.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000358(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000006b8(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
   %5 = zext i32 %1 to i64
-  %6 = add nsw i64 %5, %0
-  %7 = icmp ugt i64 %6, %4
+  %6 = add nsw i64 %0, %5
+  %7 = icmp samesign ugt i64 %6, %4
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; lodepng/optimized/lodepng.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000161(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = zext i32 %3 to i64
   %5 = zext nneg i32 %1 to i64
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   %7 = icmp eq i64 %6, %4
   ret i1 %7
 }
@@ -121,13 +134,13 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/listpack.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000078(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = zext i32 %3 to i64
   %5 = zext i32 %1 to i64
-  %6 = add nuw nsw i64 %5, %0
-  %7 = icmp ugt i64 %6, %4
+  %6 = add nuw nsw i64 %0, %5
+  %7 = icmp samesign ugt i64 %6, %4
   ret i1 %7
 }
 

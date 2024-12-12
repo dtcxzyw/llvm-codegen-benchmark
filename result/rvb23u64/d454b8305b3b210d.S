@@ -36,18 +36,18 @@ func0000000000000002:                   # @func0000000000000002
 	add	a3, a3, a5
 	add	a4, a4, a2
 	sltu	a2, a4, a2
+	add	a3, a3, a0
 	add	a2, a2, a3
-	add	a0, a0, a2
-	sltu	a0, a0, a2
+	sltu	a0, a2, a0
 	add	a0, a0, a1
 	ret
 func00000000000000d2:                   # @func00000000000000d2
 	add	a3, a3, a5
 	add	a4, a4, a2
 	sltu	a2, a4, a2
+	add	a3, a3, a0
 	add	a2, a2, a3
-	add	a0, a0, a2
-	sltu	a0, a0, a2
+	sltu	a0, a2, a0
 	add	a0, a0, a1
 	ret
 func000000000000009b:                   # @func000000000000009b

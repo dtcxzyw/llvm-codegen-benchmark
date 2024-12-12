@@ -8,7 +8,7 @@
 define i16 @func0000000000000031(i16 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = icmp ne i16 %2, 0
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = select i1 %4, i16 1024, i16 0
   %6 = or disjoint i16 %5, %0
   ret i16 %6
@@ -21,9 +21,9 @@ entry:
 define i16 @func0000000000000005(i16 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 0
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = select i1 %4, i16 4, i16 0
-  %6 = or disjoint i16 %5, %0
+  %6 = or disjoint i16 %0, %5
   ret i16 %6
 }
 

@@ -4,12 +4,17 @@ func000000000000000c:                   # @func000000000000000c
 	setne	%al
 	negl	%eax
 	retq
+func0000000000000014:                   # @func0000000000000014
+	xorl	%eax, %eax
+	cmpl	%esi, %edi
+	sbbl	%eax, %eax
+	retq
 func0000000000000004:                   # @func0000000000000004
 	xorl	%eax, %eax
 	cmpl	%esi, %edi
 	sbbl	%eax, %eax
 	retq
-func0000000000000009:                   # @func0000000000000009
+func0000000000000019:                   # @func0000000000000019
 	xorl	%eax, %eax
 	cmpl	%esi, %edi
 	adcl	$-1, %eax
@@ -53,4 +58,9 @@ func0000000000000008:                   # @func0000000000000008
 	xorl	%eax, %eax
 	cmpl	%edi, %esi
 	sbbl	%eax, %eax
+	retq
+func0000000000000009:                   # @func0000000000000009
+	xorl	%eax, %eax
+	cmpl	%esi, %edi
+	adcl	$-1, %eax
 	retq

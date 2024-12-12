@@ -1,5 +1,6 @@
 
-; 35 occurrences:
+; 36 occurrences:
+; abseil-cpp/optimized/endian_test.cc.ll
 ; cvc5/optimized/monomial_bounds_check.cpp.ll
 ; glslang/optimized/SpvBuilder.cpp.ll
 ; graphviz/optimized/block.cpp.ll
@@ -69,10 +70,12 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 3 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; rust-analyzer-rs/optimized/p80zqc6dxbxvppz.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000041(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = icmp eq ptr %0, %1
@@ -84,7 +87,7 @@ entry:
 ; protobuf/optimized/descriptor.cc.ll
 ; pybind11/optimized/test_numpy_vectorize.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func000000000000004c(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = icmp ne ptr %0, %1

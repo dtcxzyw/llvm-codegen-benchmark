@@ -4,7 +4,7 @@
 ; linux/optimized/workqueue.ll
 ; ruby/optimized/gc.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, 255
   %4 = icmp eq i32 %3, 0

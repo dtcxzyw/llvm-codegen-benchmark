@@ -28,21 +28,21 @@ func000000000000000c:                   # @func000000000000000c
 func000000000000000f:                   # @func000000000000000f
 	vpaddd	%ymm1, %ymm2, %ymm1
 	vpaddd	.LCPI4_0(%rip){1to8}, %ymm1, %ymm1
-	vpand	%ymm0, %ymm1, %ymm0
+	vpand	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI5_0:
 	.long	6673113                         # 0x65d2d9
 func0000000000000008:                   # @func0000000000000008
 	vpaddd	%ymm1, %ymm2, %ymm1
 	vpaddd	.LCPI5_0(%rip){1to8}, %ymm1, %ymm1
-	vpand	%ymm0, %ymm1, %ymm0
+	vpand	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI6_0:
 	.long	1024                            # 0x400
 func0000000000000001:                   # @func0000000000000001
 	vpaddd	%ymm1, %ymm2, %ymm1
 	vpaddd	.LCPI6_0(%rip){1to8}, %ymm1, %ymm1
-	vpand	%ymm0, %ymm1, %ymm0
+	vpand	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000006:                   # @func0000000000000006
 	vpaddd	%ymm1, %ymm2, %ymm1

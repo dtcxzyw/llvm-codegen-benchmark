@@ -5,7 +5,7 @@
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; spike/optimized/vmslt_vx.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i8 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl i32 %2, 24
@@ -21,7 +21,7 @@ entry:
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; spike/optimized/vmsle_vx.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i8 %0, i64 %1) #0 {
+define i1 @func000000000000002b(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl i32 %2, 24
@@ -36,7 +36,7 @@ entry:
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; spike/optimized/vmsgt_vx.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl i32 %2, 24
@@ -49,7 +49,7 @@ entry:
 ; 1 occurrences:
 ; spike/optimized/vmsne_vx.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i8 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl i32 %2, 24
@@ -66,7 +66,7 @@ entry:
 ; spike/optimized/vmseq_vx.ll
 ; wireshark/optimized/packet-dbus.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl i32 %2, 24
@@ -79,7 +79,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/trace_events_filter.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000027(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl i32 %2, 24

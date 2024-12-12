@@ -14,7 +14,3 @@ func0000000000000002:                   # @func0000000000000002
 	notq	%rax
 	leaq	(%rdi,%rax,8), %rax
 	retq
-func0000000000000006:                   # @func0000000000000006
-	xorl	$3, %esi
-	leaq	(%rdi,%rsi,8), %rax
-	retq

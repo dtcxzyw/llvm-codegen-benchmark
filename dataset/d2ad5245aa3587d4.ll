@@ -179,7 +179,7 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000019a(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000032a(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = zext i32 %0 to i64
@@ -191,7 +191,7 @@ entry:
 ; memcached/optimized/memcached-storage.ll
 ; memcached/optimized/memcached_debug-storage.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000194(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000324(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = zext i32 %0 to i64
@@ -203,7 +203,7 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = zext i32 %0 to i64

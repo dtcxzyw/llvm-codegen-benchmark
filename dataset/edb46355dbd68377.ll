@@ -1,5 +1,5 @@
 
-; 182 occurrences:
+; 181 occurrences:
 ; abc/optimized/absRef.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
@@ -47,7 +47,6 @@
 ; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
 ; flac/optimized/fixed.c.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; flac/optimized/stream_encoder.c.ll
 ; freetype/optimized/pshinter.c.ll
 ; freetype/optimized/sdf.c.ll
@@ -99,7 +98,6 @@
 ; ninja/optimized/ninja.cc.ll
 ; node/optimized/libnode.crypto_aes.ll
 ; node/optimized/libnode.node_http2.ll
-; nuttx/optimized/lib_calendar2utc.c.ll
 ; oiio/optimized/texture3d.cpp.ll
 ; openblas/optimized/dgtts2.c.ll
 ; openblas/optimized/dhgeqz.c.ll
@@ -111,6 +109,7 @@
 ; opencv/optimized/distransform.cpp.ll
 ; opencv/optimized/matrix.cpp.ll
 ; opencv/optimized/onnx_importer.cpp.ll
+; opencv/optimized/qrcode_encoder.cpp.ll
 ; opencv/optimized/resize.cpp.ll
 ; opencv/optimized/stackblur.cpp.ll
 ; openexr/optimized/ImfMisc.cpp.ll

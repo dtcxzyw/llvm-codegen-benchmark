@@ -1,9 +1,9 @@
 .LCPI0_0:
 	.long	1                               # 0x1
 .LCPI0_1:
-	.long	2                               # 0x2
+	.long	4294967294                      # 0xfffffffe
 func0000000000000011:                   # @func0000000000000011
-	vpcmpnltuq	%ymm2, %ymm1, %k1
+	vpcmpltuq	%ymm2, %ymm1, %k1
 	vandps	.LCPI0_0(%rip){1to4}, %xmm0, %xmm0
 	vorps	.LCPI0_1(%rip){1to4}, %xmm0, %xmm0 {%k1}
 	vzeroupper

@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 21 occurrences:
 ; coreutils-rs/optimized/12183t08bisz8vo8.ll
 ; meilisearch-rs/optimized/1bqqlm3jtb9rf3cv.ll
 ; rust-analyzer-rs/optimized/2b934puhcj043qyo.ll
@@ -9,6 +9,7 @@
 ; rust-analyzer-rs/optimized/5a391sezfv8ojps9.ll
 ; rust-analyzer-rs/optimized/9xkc74kd1bsgldb.ll
 ; rust-analyzer-rs/optimized/leba1wmgxgrzxkl.ll
+; turborepo-rs/optimized/5oyfkcp83qeshlhfpeq645wiv.ll
 ; wasmtime-rs/optimized/2rxishkjui70pb7b.ll
 ; wasmtime-rs/optimized/35t0vcavp8gy3o68.ll
 ; wasmtime-rs/optimized/418fbsxk94brftzb.ll
@@ -17,6 +18,9 @@
 ; wasmtime-rs/optimized/4xu6ecb82tc69emg.ll
 ; wasmtime-rs/optimized/5xd8cuntd9iqkym.ll
 ; wasmtime-rs/optimized/pc3lkwoxfkbj2dl.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
+; zed-rs/optimized/56i9d5rrx6hrud8ee30t4acpd.ll
+; zed-rs/optimized/d31g6vudldcq1cl7b9cowxr8a.ll
 ; Function Attrs: nounwind
 define { i64, i1 } @func0000000000000000(i1 %0, i64 %1) #0 {
 entry:

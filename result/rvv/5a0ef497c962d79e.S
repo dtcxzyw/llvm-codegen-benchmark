@@ -4,7 +4,7 @@ func0000000000000005:                   # @func0000000000000005
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vmv.v.i	v9, 0
 	vmerge.vim	v9, v9, 1, v0
-	vor.vv	v8, v9, v8
+	vor.vv	v8, v8, v9
 	ret
 func0000000000000030:                   # @func0000000000000030
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -12,7 +12,7 @@ func0000000000000030:                   # @func0000000000000030
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vmv.v.i	v9, 0
 	vmerge.vim	v9, v9, 1, v0
-	vor.vv	v8, v9, v8
+	vor.vv	v8, v8, v9
 	ret
 func0000000000000031:                   # @func0000000000000031
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -20,7 +20,7 @@ func0000000000000031:                   # @func0000000000000031
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vmv.v.i	v9, 0
 	vmerge.vim	v9, v9, 1, v0
-	vor.vv	v8, v9, v8
+	vor.vv	v8, v8, v9
 	ret
 func0000000000000021:                   # @func0000000000000021
 	li	a0, 63
@@ -29,7 +29,7 @@ func0000000000000021:                   # @func0000000000000021
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vmv.v.i	v9, 0
 	vmerge.vim	v9, v9, 1, v0
-	vor.vv	v8, v9, v8
+	vor.vv	v8, v8, v9
 	ret
 func0000000000000020:                   # @func0000000000000020
 	li	a0, 255
@@ -38,7 +38,7 @@ func0000000000000020:                   # @func0000000000000020
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vmv.v.i	v9, 0
 	vmerge.vim	v9, v9, 1, v0
-	vor.vv	v8, v9, v8
+	vor.vv	v8, v8, v9
 	ret
 func0000000000000010:                   # @func0000000000000010
 	li	a0, -1
@@ -48,7 +48,7 @@ func0000000000000010:                   # @func0000000000000010
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vmv.v.i	v9, 0
 	vmerge.vim	v9, v9, 1, v0
-	vor.vv	v8, v9, v8
+	vor.vv	v8, v8, v9
 	ret
 func0000000000000004:                   # @func0000000000000004
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -56,5 +56,15 @@ func0000000000000004:                   # @func0000000000000004
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vmv.v.i	v9, 0
 	vmerge.vim	v9, v9, 1, v0
-	vor.vv	v8, v9, v8
+	vor.vv	v8, v8, v9
+	ret
+func0000000000000060:                   # @func0000000000000060
+	li	a0, -1
+	srli	a0, a0, 32
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmsgtu.vx	v0, v10, a0
+	vsetvli	zero, zero, e8, mf4, ta, ma
+	vmv.v.i	v9, 0
+	vmerge.vim	v9, v9, 1, v0
+	vor.vv	v8, v8, v9
 	ret

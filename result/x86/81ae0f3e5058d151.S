@@ -1,21 +1,15 @@
-func0000000000000035:                   # @func0000000000000035
-	imull	$-94, %edx, %eax
-	addl	%esi, %eax
-	andl	$1, %edi
-	leal	253(%rdi,%rax), %eax
-	retq
 func0000000000000015:                   # @func0000000000000015
 	imull	$3600, %edx, %eax               # imm = 0xE10
 	testb	$1, %dil
-	leal	-86400(%rax,%rsi), %ecx
-	leal	86400(%rax,%rsi), %eax
+	leal	-86400(%rsi,%rax), %ecx
+	leal	86400(%rsi,%rax), %eax
 	cmovnel	%ecx, %eax
 	retq
 func0000000000000010:                   # @func0000000000000010
 	imull	$2971, %edx, %eax               # imm = 0xB9B
-	leal	(%rax,%rdi), %ecx
+	leal	(%rdi,%rax), %ecx
 	testb	$1, %sil
-	leal	353(%rax,%rdi), %eax
+	leal	353(%rdi,%rax), %eax
 	cmovel	%ecx, %eax
 	retq
 func0000000000000011:                   # @func0000000000000011

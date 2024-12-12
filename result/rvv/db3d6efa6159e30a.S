@@ -17,7 +17,7 @@ func000000000000002a:                   # @func000000000000002a
 	vmerge.vvm	v8, v12, v8, v0
 	fli.s	fa5, 1.0
 	vmfle.vf	v12, v8, fa5
-	vmand.mm	v0, v12, v16
+	vmand.mm	v0, v16, v12
 	ret
 func000000000000002c:                   # @func000000000000002c
 	vsetivli	zero, 16, e32, m4, ta, ma
@@ -44,7 +44,7 @@ func0000000000000024:                   # @func0000000000000024
 	vmerge.vvm	v8, v12, v8, v0
 	fli.s	fa5, 0.5
 	vmfgt.vf	v12, v8, fa5
-	vmand.mm	v0, v12, v16
+	vmand.mm	v0, v16, v12
 	ret
 func0000000000000022:                   # @func0000000000000022
 	vsetivli	zero, 16, e32, m4, ta, ma
@@ -53,7 +53,7 @@ func0000000000000022:                   # @func0000000000000022
 	vmerge.vvm	v8, v12, v8, v0
 	fli.s	fa5, 0.5
 	vmflt.vf	v12, v8, fa5
-	vmand.mm	v0, v12, v16
+	vmand.mm	v0, v16, v12
 	ret
 func0000000000000028:                   # @func0000000000000028
 	vsetivli	zero, 16, e32, m4, ta, ma

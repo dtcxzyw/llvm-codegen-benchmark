@@ -23,5 +23,5 @@ func0000000000000003:                   # @func0000000000000003
 	vptestnmd	%ymm1, %ymm2, %k2
 	vpbroadcastd	.LCPI1_1(%rip), %ymm2 {%k1} {z} # ymm2 {%k1} {z} = [2,2,2,2,2,2,2,2]
 	vmovdqa32	%ymm1, %ymm2 {%k2}
-	vpor	%ymm0, %ymm2, %ymm0
+	vpor	%ymm2, %ymm0, %ymm0
 	retq

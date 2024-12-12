@@ -23,7 +23,7 @@ define i64 @func0000000000000007(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc nuw nsw i128 %1 to i64
   %3 = and i64 %2, 2459565876494606882
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 

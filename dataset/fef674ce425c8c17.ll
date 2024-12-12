@@ -5,7 +5,7 @@
 ; llama.cpp/optimized/llama.cpp.ll
 ; minetest/optimized/c_packer.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000005b(ptr %0, i64 %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %0, i64 %1
   %3 = getelementptr i8, ptr %2, i64 -40

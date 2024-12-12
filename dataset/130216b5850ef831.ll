@@ -1,8 +1,9 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; bullet3/optimized/btBox2dShape.ll
 ; bullet3/optimized/btBoxShape.ll
 ; gromacs/optimized/kernel_gpu_ref.cpp.ll
+; lvgl/optimized/lv_svg_render.ll
 ; minetest/optimized/mg_ore.cpp.ll
 ; openusd/optimized/cpuEvaluator.cpp.ll
 ; openusd/optimized/ompEvaluator.cpp.ll

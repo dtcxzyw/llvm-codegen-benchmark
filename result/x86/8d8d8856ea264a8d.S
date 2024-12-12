@@ -1,4 +1,11 @@
-func0000000000000011:                   # @func0000000000000011
+func000000000000018c:                   # @func000000000000018c
+	testq	%rdx, %rdx
+	setne	%al
+	shrl	$12, %esi
+	andb	%dil, %sil
+	andb	%sil, %al
+	retq
+func0000000000000021:                   # @func0000000000000021
 	testb	$1, %dl
 	sete	%cl
 	testq	%rsi, %rsi
@@ -6,7 +13,7 @@ func0000000000000011:                   # @func0000000000000011
 	andb	%dil, %al
 	andb	%cl, %al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	testq	%rdx, %rdx
 	setne	%cl
 	andb	%dil, %cl

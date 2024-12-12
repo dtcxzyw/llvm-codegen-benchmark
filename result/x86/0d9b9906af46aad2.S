@@ -13,7 +13,7 @@ func0000000000000003:                   # @func0000000000000003
 func0000000000000002:                   # @func0000000000000002
 	movl	%edi, %eax
 	xorl	%edx, %esi
-	shll	$8, %eax
+	shll	$16, %eax
 	xorl	%esi, %eax
 	retq
 func0000000000000001:                   # @func0000000000000001

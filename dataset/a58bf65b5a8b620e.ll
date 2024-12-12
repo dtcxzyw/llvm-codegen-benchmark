@@ -1,5 +1,5 @@
 
-; 31 occurrences:
+; 32 occurrences:
 ; abc/optimized/covCore.c.ll
 ; abc/optimized/kitBdd.c.ll
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
@@ -25,6 +25,7 @@
 ; llvm/optimized/AutoUpgrade.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; luau/optimized/lbuiltins.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; qemu/optimized/hw_net_can_ctucan_core.c.ll
 ; qemu/optimized/hw_pci_pcie_doe.c.ll
 ; qemu/optimized/hw_scsi_esp-pci.c.ll

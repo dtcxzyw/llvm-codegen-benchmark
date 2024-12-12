@@ -28,7 +28,15 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func0000000000000004:                   # @func0000000000000004
 	sext.w	a2, a2
-	sltiu	a2, a2, 27
+	lui	a3, 15
+	addiw	a3, a3, 2047
+	sltu	a2, a2, a3
+	and	a1, a1, a2
+	or	a0, a0, a1
+	ret
+func0000000000000014:                   # @func0000000000000014
+	srliw	a2, a2, 1
+	sltiu	a2, a2, 1561
 	and	a1, a1, a2
 	or	a0, a0, a1
 	ret

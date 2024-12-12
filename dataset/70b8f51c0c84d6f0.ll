@@ -1,8 +1,7 @@
 
-; 14 occurrences:
+; 13 occurrences:
 ; abc/optimized/sbdCore.c.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
-; icu/optimized/ustring.ll
 ; libquic/optimized/a_object.c.ll
 ; nuttx/optimized/fs_files.c.ll
 ; opencv/optimized/filter.dispatch.cpp.ll

@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 21 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/xmltok.ll
@@ -14,7 +14,6 @@
 ; linux/optimized/af_unix.ll
 ; linux/optimized/dvo_tfp410.ll
 ; linux/optimized/maple_tree.ll
-; linux/optimized/utownerid.ll
 ; ruby/optimized/thread.ll
 ; wireshark/optimized/packet-acn.c.ll
 ; wireshark/optimized/packet-ieee80211-prism.c.ll
@@ -44,7 +43,7 @@ entry:
   ret i8 %2
 }
 
-; 89 occurrences:
+; 88 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/Bcj2.c.ll
@@ -65,7 +64,6 @@ entry:
 ; libquic/optimized/ctr.c.ll
 ; libquic/optimized/e_ssl3.c.ll
 ; libquic/optimized/gcm.c.ll
-; libquic/optimized/hkdf.c.ll
 ; libwebp/optimized/muxinternal.c.ll
 ; lief/optimized/ecjpake.c.ll
 ; lief/optimized/ecp.c.ll
@@ -75,7 +73,6 @@ entry:
 ; linux/optimized/drm_dp_mst_topology.ll
 ; linux/optimized/esp6.ll
 ; linux/optimized/ip_options.ll
-; linux/optimized/isadma.ll
 ; linux/optimized/maple_tree.ll
 ; linux/optimized/ohci-hcd.ll
 ; linux/optimized/radix-tree.ll
@@ -133,6 +130,7 @@ entry:
 ; wireshark/optimized/sync_pipe_write.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/tls13.c.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
 ; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i32 %0) #0 {
@@ -142,10 +140,8 @@ entry:
   ret i8 %2
 }
 
-; 96 occurrences:
+; 92 occurrences:
 ; assimp/optimized/ColladaExporter.cpp.ll
-; casadi/optimized/kinsol_spbcgs.c.ll
-; casadi/optimized/kinsol_sptfqmr.c.ll
 ; chibicc/optimized/codegen.ll
 ; clamav/optimized/crtmgr.c.ll
 ; cmake/optimized/cmCTestMemCheckHandler.cxx.ll
@@ -177,7 +173,6 @@ entry:
 ; llvm/optimized/Linux.cpp.ll
 ; llvm/optimized/MCAsmStreamer.cpp.ll
 ; llvm/optimized/PGOMemOPSizeOpt.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RecordStreamer.cpp.ll
 ; llvm/optimized/SampleProfileMatcher.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
@@ -192,7 +187,6 @@ entry:
 ; luajit/optimized/lj_serialize_dyn.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; nori/optimized/texture.cpp.ll
-; nuttx/optimized/lib_pathconf.c.ll
 ; ocio/optimized/BitDepthUtils.cpp.ll
 ; ocio/optimized/CTFTransform.cpp.ll
 ; ocio/optimized/GpuShaderUtils.cpp.ll
@@ -247,7 +241,7 @@ entry:
   ret i8 %2
 }
 
-; 87 occurrences:
+; 86 occurrences:
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/ifDec16.c.ll
 ; assimp/optimized/zip.c.ll
@@ -278,7 +272,6 @@ entry:
 ; linux/optimized/drm_dp_mst_topology.ll
 ; linux/optimized/dsutils.ll
 ; linux/optimized/fib_trie.ll
-; linux/optimized/gen_estimator.ll
 ; linux/optimized/intel_execlists_submission.ll
 ; linux/optimized/rate.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
@@ -343,8 +336,9 @@ entry:
   ret i8 %2
 }
 
-; 63 occurrences:
+; 65 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
+; boost/optimized/init_from_settings.ll
 ; bullet3/optimized/b3GjkEpa.ll
 ; bullet3/optimized/btGjkEpa2.ll
 ; clamav/optimized/matcher-ac.c.ll
@@ -407,6 +401,7 @@ entry:
 ; wireshark/optimized/packet-zbee-zdp-management.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/tls13.c.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000000c(i32 %0) #0 {
 entry:
@@ -469,7 +464,8 @@ entry:
   ret i8 %2
 }
 
-; 15 occurrences:
+; 14 occurrences:
+; boost/optimized/dec_octet_rule.ll
 ; chibicc/optimized/codegen.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; hdf5/optimized/H5HFhuge.c.ll
@@ -483,8 +479,6 @@ entry:
 ; openjdk/optimized/macroAssembler_x86.ll
 ; proxygen/optimized/Huffman.cpp.ll
 ; qemu/optimized/hw_display_edid-generate.c.ll
-; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
-; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000006(i32 %0) #0 {
 entry:

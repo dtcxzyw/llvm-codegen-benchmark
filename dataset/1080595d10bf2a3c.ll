@@ -1,5 +1,5 @@
 
-; 46 occurrences:
+; 47 occurrences:
 ; assimp/optimized/FBXMeshGeometry.cpp.ll
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
 ; cpython/optimized/obmalloc.ll
@@ -23,6 +23,7 @@
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
+; lvgl/optimized/lv_indev.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; mimalloc/optimized/arena.c.ll
 ; mitsuba3/optimized/ptracer.cpp.ll
@@ -55,8 +56,15 @@ entry:
   ret i1 %4
 }
 
-; 26 occurrences:
+; 34 occurrences:
 ; abc/optimized/abcExact.c.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; darktable/optimized/introspection_denoiseprofile.c.ll
 ; gromacs/optimized/atomprop.cpp.ll
 ; grpc/optimized/ev_epoll1_linux.cc.ll
@@ -82,6 +90,7 @@ entry:
 ; openssl/optimized/ssl_old_test-bin-ssl_old_test.ll
 ; verilator/optimized/V3EmitCSyms.cpp.ll
 ; wireshark/optimized/packet_range_group_box.cpp.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i32 %0, i1 %1) #0 {
 entry:
@@ -119,7 +128,8 @@ entry:
   ret i1 %4
 }
 
-; 101 occurrences:
+; 102 occurrences:
+; boost/optimized/text_file_backend.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -230,16 +240,15 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; gromacs/optimized/decidegpuusage.cpp.ll
-; spike/optimized/f32_classify.ll
 ; wireshark/optimized/profile_model.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i32 %0, i1 %1) #0 {
 entry:
   %2 = xor i1 %1, true
-  %3 = icmp slt i32 %0, 0
+  %3 = icmp slt i32 %0, 5
   %4 = and i1 %3, %2
   ret i1 %4
 }

@@ -1,4 +1,4 @@
-func00000000000000f6:                   # @func00000000000000f6
+func00000000000001e6:                   # @func00000000000001e6
 	sext.w	a0, a0
 	slli	a1, a0, 2
 	slti	a0, a0, -1
@@ -6,7 +6,16 @@ func00000000000000f6:                   # @func00000000000000f6
 	neg	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000036:                   # @func0000000000000036
+func00000000000003e6:                   # @func00000000000003e6
+	sext.w	a0, a0
+	bgez	a0, .LBB1_2
+	li	a0, 128
+	ret
+.LBB1_2:
+	slli	a0, a0, 3
+	addi	a0, a0, 8
+	ret
+func0000000000000066:                   # @func0000000000000066
 	sext.w	a1, a0
 	addi	a0, a0, 1
 	slli	a0, a0, 32

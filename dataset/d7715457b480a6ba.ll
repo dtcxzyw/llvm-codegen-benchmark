@@ -57,36 +57,34 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001cc(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func000000000000058c(i32 %0, i32 %1, i1 %2) #0 {
 entry:
-  %3 = sext i1 %2 to i32
-  %4 = sub i32 0, %1
-  %5 = icmp ne i32 %3, %4
-  %6 = icmp ne i32 %0, 0
-  %7 = select i1 %6, i1 true, i1 %5
-  ret i1 %7
+  %.neg = zext i1 %2 to i32
+  %3 = icmp ne i32 %1, %.neg
+  %4 = icmp ne i32 %0, 0
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
 }
 
 ; 1 occurrences:
 ; slurm/optimized/cbuf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000421(i32 %0, i32 %1, i1 %2) #0 {
 entry:
-  %3 = sext i1 %2 to i32
-  %4 = sub i32 0, %1
-  %5 = icmp eq i32 %3, %4
-  %6 = icmp eq i32 %0, 0
-  %7 = select i1 %6, i1 true, i1 %5
-  ret i1 %7
+  %.neg = zext i1 %2 to i32
+  %3 = icmp eq i32 %1, %.neg
+  %4 = icmp eq i32 %0, 0
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
 }
 
 ; 1 occurrences:
 ; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func000000000000018a(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = icmp ne i32 %4, 4
   %6 = icmp sgt i32 %0, -1
   %7 = select i1 %6, i1 true, i1 %5
@@ -96,10 +94,10 @@ entry:
 ; 1 occurrences:
 ; openblas/optimized/dtrevc3.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000426(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = icmp eq i32 %4, 1
   %6 = icmp slt i32 %0, 3
   %7 = select i1 %6, i1 true, i1 %5

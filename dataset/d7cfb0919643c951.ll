@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; folly/optimized/SymbolizePrinter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000184(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 8
   %4 = icmp ne i32 %3, 0
@@ -18,7 +18,7 @@ entry:
 ; php/optimized/pcre2_compile.ll
 ; php/optimized/zend_jit.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 524288
   %4 = icmp ne i32 %3, 0
@@ -33,7 +33,7 @@ entry:
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 4
   %4 = icmp eq i32 %3, 0
@@ -46,7 +46,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/RISCVVectorPeephole.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
   %4 = icmp eq i32 %3, 1
@@ -60,26 +60,12 @@ entry:
 ; meshlab/optimized/io_x3d.cpp.ll
 ; redis/optimized/sentinel.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000018c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2
   %4 = icmp ne i32 %3, 0
   %5 = select i1 %4, i1 %1, i1 false
   %6 = icmp ne i32 %0, 0
-  %7 = and i1 %6, %5
-  ret i1 %7
-}
-
-; 2 occurrences:
-; luajit/optimized/lj_strfmt_num.ll
-; luajit/optimized/lj_strfmt_num_dyn.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 4096
-  %4 = icmp eq i32 %3, 0
-  %5 = select i1 %4, i1 %1, i1 false
-  %6 = icmp ugt i32 %0, 5
   %7 = and i1 %6, %5
   ret i1 %7
 }

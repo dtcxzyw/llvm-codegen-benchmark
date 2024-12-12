@@ -1,8 +1,13 @@
 
-; 57 occurrences:
+; 62 occurrences:
 ; abc/optimized/casCore.c.ll
 ; assimp/optimized/FBXConverter.cpp.ll
 ; assimp/optimized/FBXMeshGeometry.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/visit.ll
 ; bullet3/optimized/b3BulletFile.ll
 ; bullet3/optimized/b3DNA.ll
 ; bullet3/optimized/b3File.ll

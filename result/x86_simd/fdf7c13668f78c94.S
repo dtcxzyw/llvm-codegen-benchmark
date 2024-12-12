@@ -48,6 +48,6 @@ func0000000000000005:                   # @func0000000000000005
 	.long	65536                           # 0x10000
 func0000000000000001:                   # @func0000000000000001
 	vpslld	$16, %ymm2, %ymm2
-	vpxor	%ymm1, %ymm2, %ymm1
+	vpxor	%ymm2, %ymm1, %ymm1
 	vpternlogd	$216, .LCPI1_0(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 ^ (mem & (ymm0 ^ ymm1))
 	retq

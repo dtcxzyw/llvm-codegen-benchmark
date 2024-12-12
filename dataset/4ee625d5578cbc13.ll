@@ -1,5 +1,5 @@
 
-; 202 occurrences:
+; 200 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcPrint.c.ll
@@ -81,7 +81,6 @@
 ; nori/optimized/ttest.cpp.ll
 ; nori/optimized/warptest.cpp.ll
 ; openblas/optimized/dlamch.c.ll
-; openblas/optimized/dstein.c.ll
 ; opencv/optimized/ann_mlp.cpp.ll
 ; opencv/optimized/bagofwords.cpp.ll
 ; opencv/optimized/bgfg_KNN.cpp.ll
@@ -197,7 +196,6 @@
 ; sundials/optimized/idas_nls_stg.c.ll
 ; velox/optimized/DenseHll.cpp.ll
 ; velox/optimized/SparseHll.cpp.ll
-; wireshark/optimized/packet-its.c.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; xgboost/optimized/hist_util.cc.ll
 ; yosys/optimized/Solver.ll

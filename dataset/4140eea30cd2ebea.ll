@@ -1,5 +1,6 @@
 
-; 97 occurrences:
+; 101 occurrences:
+; boost/optimized/topology.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cvc5/optimized/options_handler.cpp.ll
 ; cxxopts/optimized/example.cpp.ll
@@ -42,7 +43,6 @@
 ; mold/optimized/cmdline.cc.SH4.cc.ll
 ; mold/optimized/cmdline.cc.SPARC64.cc.ll
 ; mold/optimized/cmdline.cc.X86_64.cc.ll
-; mold/optimized/glob.cc.ll
 ; mold/optimized/multi-glob.cc.ll
 ; mold/optimized/passes.cc.ALPHA.cc.ll
 ; mold/optimized/passes.cc.ARM32.cc.ll
@@ -75,7 +75,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -88,6 +87,12 @@
 ; oiio/optimized/filesystem.cpp.ll
 ; oiio/optimized/formatspec.cpp.ll
 ; oiio/optimized/imagecache.cpp.ll
+; openusd/optimized/env.cpp.ll
+; openusd/optimized/info.cpp.ll
+; openusd/optimized/instanceAdapter.cpp.ll
+; openusd/optimized/mallocTag.cpp.ll
+; openusd/optimized/pointInstancerAdapter.cpp.ll
+; openusd/optimized/reporter.cpp.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; spike/optimized/spike-log-parser.ll
 ; vcpkg/optimized/tools.cpp.ll
@@ -95,32 +100,26 @@
 ; xgboost/optimized/input_split_base.cc.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i8 %1) #0 {
-entry:
-  %2 = lshr i8 %1, 6
-  %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 120
-  %5 = getelementptr nusw [4 x i64], ptr %4, i64 0, i64 %3
-  ret ptr %5
-}
-
-; 6 occurrences:
-; openusd/optimized/env.cpp.ll
-; openusd/optimized/info.cpp.ll
-; openusd/optimized/instanceAdapter.cpp.ll
-; openusd/optimized/mallocTag.cpp.ll
-; openusd/optimized/pointInstancerAdapter.cpp.ll
-; openusd/optimized/reporter.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i8 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %1, 6
   %3 = zext nneg i8 %2 to i64
   %4 = getelementptr nusw nuw i8, ptr %0, i64 120
-  %5 = getelementptr nusw [4 x i64], ptr %4, i64 0, i64 %3
+  %5 = getelementptr nusw nuw [4 x i64], ptr %4, i64 0, i64 %3
+  ret ptr %5
+}
+
+; 1 occurrences:
+; mold/optimized/glob.cc.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(ptr %0, i8 %1) #0 {
+entry:
+  %2 = lshr i8 %1, 6
+  %3 = zext nneg i8 %2 to i64
+  %4 = getelementptr nusw i8, ptr %0, i64 -32
+  %5 = getelementptr nusw nuw [4 x i64], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 

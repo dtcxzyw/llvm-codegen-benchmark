@@ -4,7 +4,7 @@
 ; spike/optimized/f32_mul.ll
 ; spike/optimized/f32_rem.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000181(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 8388607
   %3 = icmp ne i32 %2, 0
@@ -34,7 +34,7 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c1(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000581(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = icmp ne i32 %2, 0

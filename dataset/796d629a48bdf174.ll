@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 17 occurrences:
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -16,14 +16,13 @@
 ; icu/optimized/utf_impl.ll
 ; libwebp/optimized/picture_tools_enc.c.ll
 ; php/optimized/pcre2_study.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
 ; wireshark/optimized/packet-cipmotion.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000003f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = shl i32 %2, 10
-  %4 = and i32 %3, 7168
-  %5 = shl nuw nsw i32 %1, 14
+  %3 = shl i32 %2, 18
+  %4 = and i32 %3, 1835008
+  %5 = shl nuw nsw i32 %1, 12
   %6 = or disjoint i32 %5, %4
   %7 = or disjoint i32 %6, %0
   ret i32 %7
@@ -52,7 +51,7 @@ entry:
   %4 = and i32 %3, 65536
   %5 = shl i32 %1, 8
   %6 = or i32 %5, %4
-  %7 = or i32 %6, %0
+  %7 = or i32 %0, %6
   ret i32 %7
 }
 

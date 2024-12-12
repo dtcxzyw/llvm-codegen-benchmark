@@ -1,10 +1,11 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; llvm/optimized/X86FloatingPoint.cpp.ll
 ; llvm/optimized/X86PartialReduction.cpp.ll
 ; mitsuba3/optimized/builder.cpp.ll
 ; openspiel/optimized/negotiation.cc.ll
 ; qemu/optimized/hw_virtio_vhost-user.c.ll
+; wireshark/optimized/packet_list_model.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
@@ -45,6 +46,7 @@ entry:
 ; ncnn/optimized/padding_x86_avx.cpp.ll
 ; ncnn/optimized/padding_x86_avx512.cpp.ll
 ; ncnn/optimized/padding_x86_fma.cpp.ll
+; proxygen/optimized/QPACKHeaderTable.cpp.ll
 ; soc-simulator/optimized/verilated.ll
 ; z3/optimized/aig.cpp.ll
 ; z3/optimized/api_ast_vector.cpp.ll
@@ -66,7 +68,6 @@ entry:
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/check_relation.cpp.ll
 ; z3/optimized/clp_context.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/ctx_simplify_tactic.cpp.ll
 ; z3/optimized/dd_bdd.cpp.ll
 ; z3/optimized/dd_pdd.cpp.ll
@@ -243,7 +244,7 @@ entry:
   ret i64 %4
 }
 
-; 75 occurrences:
+; 74 occurrences:
 ; abc/optimized/cuddTable.c.ll
 ; abc/optimized/giaSatLE.c.ll
 ; abc/optimized/ifDec16.c.ll
@@ -267,7 +268,6 @@ entry:
 ; z3/optimized/ast_counter.cpp.ll
 ; z3/optimized/automaton.cpp.ll
 ; z3/optimized/bv_slice.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/dd_bdd.cpp.ll
 ; z3/optimized/demodulator_rewriter.cpp.ll
 ; z3/optimized/demodulator_simplifier.cpp.ll
@@ -388,7 +388,7 @@ entry:
   ret i64 %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; llvm/optimized/AArch64A57FPLoadBalancing.cpp.ll
 ; llvm/optimized/CoroFrame.cpp.ll
 ; llvm/optimized/CoverageMapping.cpp.ll
@@ -397,25 +397,12 @@ entry:
 ; llvm/optimized/Scalarizer.cpp.ll
 ; llvm/optimized/StackColoring.cpp.ll
 ; llvm/optimized/X86PartialReduction.cpp.ll
+; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = sub i64 %2, %0
-  %4 = shl i64 %3, 2
-  ret i64 %4
-}
-
-; 4 occurrences:
-; gromacs/optimized/dorg2r.cpp.ll
-; gromacs/optimized/sorg2r.cpp.ll
-; openblas/optimized/dorg2r.c.ll
-; quest/optimized/QuEST_common.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i32 %1) #0 {
-entry:
-  %2 = zext nneg i32 %1 to i64
-  %3 = sub nsw i64 %2, %0
   %4 = shl i64 %3, 2
   ret i64 %4
 }
@@ -428,6 +415,17 @@ entry:
   %2 = zext i32 %1 to i64
   %3 = sub nuw nsw i64 %2, %0
   %4 = shl nuw i64 %3, 32
+  ret i64 %4
+}
+
+; 1 occurrences:
+; openblas/optimized/dorg2r.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = sub nsw i64 %2, %0
+  %4 = shl i64 %3, 3
   ret i64 %4
 }
 

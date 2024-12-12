@@ -20,6 +20,11 @@ func000000000000000a:                   # @func000000000000000a
 	shlq	$5, %rax
 	addq	%rdi, %rax
 	retq
+func0000000000000003:                   # @func0000000000000003
+	shlxl	%edx, %esi, %eax
+	cltq
+	leaq	(%rdi,%rax,8), %rax
+	retq
 func0000000000000006:                   # @func0000000000000006
 	shlxl	%edx, %esi, %eax
 	cltq

@@ -1,12 +1,11 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; abc/optimized/cuddAnneal.c.ll
 ; graphviz/optimized/heap.c.ll
 ; graphviz/optimized/hedges.c.ll
 ; meshlab/optimized/edit_mutualcorrs.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; openjdk/optimized/ScaledBlit.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(double %0, double %1, i32 %2) #0 {

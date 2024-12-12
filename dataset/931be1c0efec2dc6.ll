@@ -6,7 +6,7 @@
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define float @func0000000000000011(i8 %0, float %1, i32 %2) #0 {
+define float @func0000000000000021(i8 %0, float %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 1, %2
   %4 = sitofp i32 %3 to float

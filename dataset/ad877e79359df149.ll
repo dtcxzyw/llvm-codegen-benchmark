@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openjdk/optimized/check_code.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 65504
   %3 = icmp eq i32 %2, 32
@@ -18,7 +18,7 @@ entry:
 ; llvm/optimized/SMEABIPass.cpp.ll
 ; wireshark/optimized/packet-pw-atm.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i1 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 19
   %3 = and i32 %2, 511

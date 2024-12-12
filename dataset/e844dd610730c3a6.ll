@@ -28,9 +28,8 @@ entry:
   ret i64 %3
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; gromacs/optimized/matio.cpp.ll
-; openblas/optimized/dpotrf_U_single.c.ll
 ; openblas/optimized/dtrsm_kernel_RN.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
@@ -40,10 +39,9 @@ entry:
   ret i64 %3
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; ceres/optimized/covariance_impl.cc.ll
-; openblas/optimized/dpotrf_U_single.c.ll
 ; openblas/optimized/dtrsm_kernel_RN.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
@@ -59,7 +57,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
-  %3 = mul nuw i64 %2, %0
+  %3 = mul nuw i64 %0, %2
   ret i64 %3
 }
 

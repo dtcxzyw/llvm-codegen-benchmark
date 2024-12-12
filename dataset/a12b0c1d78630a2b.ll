@@ -16,7 +16,7 @@ define i64 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 3
   %3 = and i32 %2, 56
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }

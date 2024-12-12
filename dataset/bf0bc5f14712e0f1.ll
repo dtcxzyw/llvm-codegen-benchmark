@@ -20,7 +20,7 @@ entry:
   %3 = add nsw i64 %1, %2
   %4 = trunc i64 %3 to i32
   %5 = and i32 %4, -64
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -51,7 +51,7 @@ entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = trunc i64 %3 to i32
   %5 = and i32 %4, 255
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 

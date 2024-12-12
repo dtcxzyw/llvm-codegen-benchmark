@@ -19,6 +19,7 @@
 ; abc/optimized/pdrTsim.c.ll
 ; abc/optimized/saigSynch.c.ll
 ; arrow/optimized/float16.cc.ll
+; boost/optimized/alloc_lib.ll
 ; clamav/optimized/arcread.cpp.ll
 ; clamav/optimized/rarvm.cpp.ll
 ; clamav/optimized/unpack.cpp.ll
@@ -141,7 +142,6 @@
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/82571.ll
 ; linux/optimized/drm_dp_helper.ll
-; linux/optimized/he.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/intel_overlay.ll
 ; linux/optimized/intel_rps.ll
@@ -249,7 +249,6 @@
 ; openusd/optimized/openexr-c.c.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -427,13 +426,14 @@
 ; wireshark/optimized/msg_ulmap.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-openflow_v6.c.ll
+; xgboost/optimized/charconv.cc.ll
 ; zfp/optimized/encode4f.c.ll
 ; zfp/optimized/encode4i.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 255, %1
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
@@ -449,19 +449,18 @@ entry:
 ; openssl/optimized/libcrypto-lib-ecp_nistz256.ll
 ; openssl/optimized/libcrypto-shlib-ecp_nistz256.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 128, %1
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; abc/optimized/bmcBmc3.c.ll
 ; abc/optimized/covMinEsop.c.ll
 ; abc/optimized/covMinSop.c.ll
-; abc/optimized/covMinUtil.c.ll
 ; darktable/optimized/PanasonicV4Decompressor.cpp.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; freetype/optimized/cff.c.ll
@@ -489,11 +488,11 @@ entry:
 ; freetype/optimized/cff.c.ll
 ; soc-simulator/optimized/verilated.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %0, %1
   %3 = and i32 %2, 15
-  %4 = icmp ugt i32 %3, 4
+  %4 = icmp samesign ugt i32 %3, 4
   ret i1 %4
 }
 

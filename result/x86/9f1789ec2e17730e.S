@@ -1,4 +1,4 @@
-func0000000000000881:                   # @func0000000000000881
+func0000000000002101:                   # @func0000000000002101
 	cmpl	$2, %edx
 	setb	%al
 	cmpl	$2, %esi
@@ -8,7 +8,7 @@ func0000000000000881:                   # @func0000000000000881
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000821:                   # @func0000000000000821
+func0000000000002041:                   # @func0000000000002041
 	cmpl	$2, %edx
 	setb	%al
 	testl	%esi, %esi
@@ -18,7 +18,7 @@ func0000000000000821:                   # @func0000000000000821
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000221:                   # @func0000000000000221
+func0000000000000841:                   # @func0000000000000841
 	testl	%edx, %edx
 	sete	%al
 	testl	%esi, %esi
@@ -28,7 +28,7 @@ func0000000000000221:                   # @func0000000000000221
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000001821:                   # @func0000000000001821
+func0000000000006041:                   # @func0000000000006041
 	testl	%edx, %edx
 	setne	%al
 	testl	%esi, %esi

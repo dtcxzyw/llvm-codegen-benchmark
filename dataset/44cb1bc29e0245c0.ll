@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 20 occurrences:
 ; casadi/optimized/idas.c.ll
 ; cvc5/optimized/sygus_unif_rl.cpp.ll
 ; gromacs/optimized/dbdsqr.cpp.ll
@@ -15,7 +15,6 @@
 ; openblas/optimized/dlaqr5.c.ll
 ; openblas/optimized/dlasq2.c.ll
 ; openblas/optimized/dlasq5.c.ll
-; openblas/optimized/dlasq6.c.ll
 ; openblas/optimized/dlatrs.c.ll
 ; openvdb/optimized/Proximity.cc.ll
 ; quantlib/optimized/kirkspreadoptionengine.ll

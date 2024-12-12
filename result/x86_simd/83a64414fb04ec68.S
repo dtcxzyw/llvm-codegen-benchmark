@@ -1,5 +1,5 @@
 func000000000000000e:                   # @func000000000000000e
-	vpsrlq	$16, %ymm1, %ymm1
+	vpsrlq	$3, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
 	vpsrlvd	%xmm1, %xmm0, %xmm0
 	vzeroupper

@@ -51,7 +51,7 @@ func000000000000000e:                   # @func000000000000000e
 func000000000000003f:                   # @func000000000000003f
 	imull	%edx, %esi
 	leal	(%rsi,%rdi), %eax
-	addl	%eax, %eax
+	shll	$3, %eax
 	retq
 func000000000000001c:                   # @func000000000000001c
 	imull	%edx, %esi

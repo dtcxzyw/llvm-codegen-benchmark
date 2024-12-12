@@ -1,9 +1,8 @@
 
-%struct.Indirect.3341356 = type { ptr, i32, ptr }
+%struct.Indirect.3530524 = type { ptr, i32, ptr }
 
-; 3 occurrences:
+; 2 occurrences:
 ; eastl/optimized/TestHeap.cpp.ll
-; linux/optimized/tpm.ll
 ; qemu/optimized/block_parallels-ext.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, ptr %1, i32 %2) #0 {
@@ -16,9 +15,8 @@ entry:
   ret i64 %7
 }
 
-; 16 occurrences:
-; abc/optimized/inffast.c.ll
-; gromacs/optimized/inffast.c.ll
+; 15 occurrences:
+; boost/optimized/src.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; llvm/optimized/Archive.cpp.ll
@@ -34,11 +32,11 @@ entry:
 ; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/jvmciCodeInstaller.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(i64 %0, ptr %1, i32 %2) #0 {
+define i64 @func000000000000003c(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 12
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 12
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %6, %0
   ret i64 %7
@@ -80,11 +78,11 @@ entry:
 ; lua/optimized/lapi.ll
 ; wolfssl/optimized/rsa.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000068(i64 %0, ptr %1, i32 %2) #0 {
+define i64 @func000000000000007c(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 16
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 16
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %6, %0
   ret i64 %7
@@ -93,11 +91,25 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000048(i64 %0, ptr %1, i32 %2) #0 {
+define i64 @func000000000000004c(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 2
-  %5 = getelementptr nusw i16, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw i16, ptr %4, i64 %3
+  %6 = ptrtoint ptr %5 to i64
+  %7 = sub i64 %6, %0
+  ret i64 %7
+}
+
+; 2 occurrences:
+; abc/optimized/inffast.c.ll
+; gromacs/optimized/inffast.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000002c(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = getelementptr nusw i8, ptr %1, i64 -1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %6, %0
   ret i64 %7
@@ -114,7 +126,7 @@ define i64 @func0000000000000040(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 -24
-  %5 = getelementptr %struct.Indirect.3341356, ptr %4, i64 %3
+  %5 = getelementptr %struct.Indirect.3530524, ptr %4, i64 %3
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %6, %0
   ret i64 %7

@@ -19,9 +19,10 @@ entry:
   ret float %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; assimp/optimized/CalcTangentsProcess.cpp.ll
 ; assimp/optimized/GenVertexNormalsProcess.cpp.ll
+; boost/optimized/math_normalize_spheroidal.ll
 ; darktable/optimized/introspection_basicadj.c.ll
 ; meshlab/optimized/trackmode.cpp.ll
 ; Function Attrs: nounwind

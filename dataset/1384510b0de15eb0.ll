@@ -1,5 +1,5 @@
 
-; 202 occurrences:
+; 200 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; arrow/optimized/align_util.cc.ll
 ; arrow/optimized/crc32.cc.ll
@@ -123,8 +123,6 @@
 ; php/optimized/pcre2_match.ll
 ; postgres/optimized/inv_api.ll
 ; postgres/optimized/varbit.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
@@ -224,7 +222,8 @@ entry:
   ret i32 %3
 }
 
-; 13 occurrences:
+; 14 occurrences:
+; boost/optimized/src.ll
 ; hermes/optimized/Conversions.cpp.ll
 ; lief/optimized/ssl_msg.c.ll
 ; luajit/optimized/lj_opt_fold.ll
@@ -258,7 +257,7 @@ entry:
   ret i32 %3
 }
 
-; 22 occurrences:
+; 26 occurrences:
 ; abc/optimized/acecCover.c.ll
 ; abc/optimized/bmcFx.c.ll
 ; abc/optimized/darCut.c.ll
@@ -271,6 +270,10 @@ entry:
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; lvgl/optimized/lv_flex.ll
+; lvgl/optimized/lv_grid.ll
+; lvgl/optimized/lv_obj_pos.ll
+; lvgl/optimized/lv_refr.ll
 ; protobuf/optimized/extension_set.cc.ll
 ; protobuf/optimized/extension_set_heavy.cc.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll

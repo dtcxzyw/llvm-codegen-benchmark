@@ -1,4 +1,4 @@
-func00000000000000ee:                   // @func00000000000000ee
+func00000000000000ef:                   // @func00000000000000ef
 // %bb.0:                               // %entry
 	mov	w8, #5                          // =0x5
                                         // kill: def $w1 killed $w1 def $x1

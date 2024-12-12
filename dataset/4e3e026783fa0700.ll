@@ -1,8 +1,11 @@
 
-; 42 occurrences:
+; 44 occurrences:
 ; abseil-cpp/optimized/ascii.cc.ll
 ; arrow/optimized/compare.cc.ll
+; arrow/optimized/decimal.cc.ll
 ; arrow/optimized/exec.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/js-norm.c.ll
 ; coreutils-rs/optimized/2qsl5bwp4bvo535d.ll
 ; cpython/optimized/io.ll
@@ -11,8 +14,6 @@
 ; hermes/optimized/DateUtil.cpp.ll
 ; libquic/optimized/time_support.c.ll
 ; libquic/optimized/x509_cmp.c.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; openusd/optimized/introspection.cpp.ll
 ; openusd/optimized/reconinter.c.ll
 ; php/optimized/apprentice.ll
@@ -42,6 +43,7 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; typst-rs/optimized/4khbogid70pr8yfn.ll
+; zed-rs/optimized/70oxjc4k9uv7kvad3t5u6bzag.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i1 %1) #0 {
 entry:

@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 24 occurrences:
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; minetest/optimized/CImage.cpp.ll
@@ -17,8 +17,6 @@
 ; nix/optimized/get-drvs.ll
 ; nix/optimized/installables.ll
 ; nix/optimized/lexer-tab.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parser-tab.ll
 ; nix/optimized/print-ambiguous.ll
@@ -27,11 +25,11 @@
 ; nix/optimized/value-to-xml.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -2
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i16, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i16, ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -64,11 +62,11 @@ entry:
 ; entt/optimized/view.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2147483646
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i16, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i16, ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -120,7 +118,7 @@ entry:
   ret ptr %4
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; darktable/optimized/CiffEntry.cpp.ll
 ; darktable/optimized/ColorFilterArray.cpp.ll
 ; darktable/optimized/MosDecoder.cpp.ll
@@ -131,7 +129,6 @@ entry:
 ; z3/optimized/dl_external_relation.cpp.ll
 ; z3/optimized/dl_relation_manager.cpp.ll
 ; z3/optimized/dl_sparse_table.cpp.ll
-; z3/optimized/watch_list.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i32 %1) #0 {
 entry:

@@ -1,6 +1,7 @@
 
-; 19 occurrences:
+; 20 occurrences:
 ; abc/optimized/giaFrames.c.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/compile.ll
 ; git/optimized/dir.ll
 ; linux/optimized/rx.ll
@@ -28,7 +29,7 @@ entry:
   ret i64 %5
 }
 
-; 71 occurrences:
+; 68 occurrences:
 ; abc/optimized/bdcCore.c.ll
 ; abc/optimized/giaBidec.c.ll
 ; abc/optimized/giaMinLut2.c.ll
@@ -55,7 +56,6 @@ entry:
 ; hyperscan/optimized/ng_mcclellan.cpp.ll
 ; hyperscan/optimized/ng_squash.cpp.ll
 ; icu/optimized/ucnvsel.ll
-; icu/optimized/umutablecptrie.ll
 ; icu/optimized/unistr.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; ipopt/optimized/IpTNLPAdapter.ll
@@ -73,8 +73,6 @@ entry:
 ; openblas/optimized/dgesvj.c.ll
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
-; openblas/optimized/dorcsd.c.ll
-; openblas/optimized/dorcsd2by1.c.ll
 ; openblas/optimized/dstedc.c.ll
 ; opencv/optimized/approx.cpp.ll
 ; opencv/optimized/edgeboxes.cpp.ll

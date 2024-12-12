@@ -1,5 +1,5 @@
 
-; 589 occurrences:
+; 558 occurrences:
 ; arrow/optimized/buffered.cc.ll
 ; arrow/optimized/compressed.cc.ll
 ; arrow/optimized/device.cc.ll
@@ -7,6 +7,8 @@
 ; arrow/optimized/hdfs.cc.ll
 ; arrow/optimized/memory.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/environment.ll
+; boost/optimized/process.ll
 ; c3c/optimized/build_options.c.ll
 ; ceres/optimized/evaluator.cc.ll
 ; ceres/optimized/problem_impl.cc.ll
@@ -22,7 +24,6 @@
 ; coreutils-rs/optimized/1c0bwvv43j289y30.ll
 ; coreutils-rs/optimized/1e5pt7vtfxa4ahz7.ll
 ; coreutils-rs/optimized/1iiitxeck9g2ksb7.ll
-; coreutils-rs/optimized/1mhb4e8l0v9dncti.ll
 ; coreutils-rs/optimized/1pn74b1r3k1s4pck.ll
 ; coreutils-rs/optimized/1ui3yxdetdbghtw.ll
 ; coreutils-rs/optimized/1unp4st43r7zdtb0.ll
@@ -31,7 +32,6 @@
 ; coreutils-rs/optimized/1xgh31va70j84rdd.ll
 ; coreutils-rs/optimized/1xrz1ag37fklzklg.ll
 ; coreutils-rs/optimized/26a2uyrtdxle93un.ll
-; coreutils-rs/optimized/2ahdhlyatyqueo1a.ll
 ; coreutils-rs/optimized/2eb96ulhupdvrip8.ll
 ; coreutils-rs/optimized/2etc5gfaqs8pnymi.ll
 ; coreutils-rs/optimized/2jm5bfr1qa6ga934.ll
@@ -44,7 +44,6 @@
 ; coreutils-rs/optimized/3q8ukvkopatfv0x0.ll
 ; coreutils-rs/optimized/3qd2nnv0mbtxq1wn.ll
 ; coreutils-rs/optimized/3r2vyvwpz7j7c5gy.ll
-; coreutils-rs/optimized/3ummpw5ql7d4y98b.ll
 ; coreutils-rs/optimized/3vfybkcp5ufzff0e.ll
 ; coreutils-rs/optimized/3x959pa9na58uqov.ll
 ; coreutils-rs/optimized/3yatagipaedyu36z.ll
@@ -64,12 +63,10 @@
 ; coreutils-rs/optimized/942h4e64iw767xo.ll
 ; coreutils-rs/optimized/d2l5f8sei2pacyj.ll
 ; coreutils-rs/optimized/exyrvqdrhfrgv84.ll
-; coreutils-rs/optimized/ga96dm5uabspngk.ll
 ; coreutils-rs/optimized/gy31avu15bepulc.ll
 ; coreutils-rs/optimized/h56aibhqef681ic.ll
 ; coreutils-rs/optimized/icw7irkz6mu05a9.ll
 ; coreutils-rs/optimized/l1lqbqyvia1m667.ll
-; coreutils-rs/optimized/plvfu1855xjk96c.ll
 ; coreutils-rs/optimized/qcad8r5ga44hvbl.ll
 ; coreutils-rs/optimized/vylkzjuq6grxql.ll
 ; coreutils-rs/optimized/yiho3rob7ld9k5q.ll
@@ -113,7 +110,6 @@
 ; libquic/optimized/ssl_cipher.c.ll
 ; libsodium/optimized/libsodium_la-utils.ll
 ; linux/optimized/8250_core.ll
-; linux/optimized/ac.ll
 ; linux/optimized/addrconf.ll
 ; linux/optimized/addrlabel.ll
 ; linux/optimized/af_netlink.ll
@@ -122,11 +118,9 @@
 ; linux/optimized/aio.ll
 ; linux/optimized/algapi.ll
 ; linux/optimized/anycast.ll
-; linux/optimized/async.ll
 ; linux/optimized/audit_tree.ll
 ; linux/optimized/audit_watch.ll
 ; linux/optimized/auth_gss.ll
-; linux/optimized/auxiliary.ll
 ; linux/optimized/avc.ll
 ; linux/optimized/base.ll
 ; linux/optimized/blk-cgroup.ll
@@ -161,7 +155,6 @@
 ; linux/optimized/dm-target.ll
 ; linux/optimized/dma-fence-chain.ll
 ; linux/optimized/dma-fence.ll
-; linux/optimized/dmi_scan.ll
 ; linux/optimized/dock.ll
 ; linux/optimized/dquot.ll
 ; linux/optimized/drm_atomic_helper.ll
@@ -203,10 +196,8 @@
 ; linux/optimized/fib_trie.ll
 ; linux/optimized/fid.ll
 ; linux/optimized/flow_offload.ll
-; linux/optimized/fs-writeback.ll
 ; linux/optimized/futex.ll
 ; linux/optimized/genetlink.ll
-; linux/optimized/governor.ll
 ; linux/optimized/hcd.ll
 ; linux/optimized/hid-quirks.ll
 ; linux/optimized/hooks.ll
@@ -215,9 +206,6 @@
 ; linux/optimized/hvc_console.ll
 ; linux/optimized/hwdep.ll
 ; linux/optimized/i2c-core-base.ll
-; linux/optimized/i915_cmd_parser.ll
-; linux/optimized/i915_debugfs.ll
-; linux/optimized/i915_driver.ll
 ; linux/optimized/i915_drm_client.ll
 ; linux/optimized/i915_gem.ll
 ; linux/optimized/i915_gem_context.ll
@@ -229,7 +217,6 @@
 ; linux/optimized/i915_gem_throttle.ll
 ; linux/optimized/i915_gem_ttm_move.ll
 ; linux/optimized/i915_gem_ww.ll
-; linux/optimized/i915_irq.ll
 ; linux/optimized/i915_perf.ll
 ; linux/optimized/i915_pmu.ll
 ; linux/optimized/i915_query.ll
@@ -245,11 +232,9 @@
 ; linux/optimized/intel_bios.ll
 ; linux/optimized/intel_breadcrumbs.ll
 ; linux/optimized/intel_display.ll
-; linux/optimized/intel_display_debugfs.ll
 ; linux/optimized/intel_display_power_well.ll
 ; linux/optimized/intel_dp_aux.ll
 ; linux/optimized/intel_engine_cs.ll
-; linux/optimized/intel_engine_user.ll
 ; linux/optimized/intel_execlists_submission.ll
 ; linux/optimized/intel_frontbuffer.ll
 ; linux/optimized/intel_guc_submission.ll
@@ -258,7 +243,6 @@
 ; linux/optimized/intel_lvds.ll
 ; linux/optimized/intel_opregion.ll
 ; linux/optimized/intel_overlay.ll
-; linux/optimized/intel_rc6.ll
 ; linux/optimized/intel_ring_submission.ll
 ; linux/optimized/io_uring.ll
 ; linux/optimized/ioam6.ll
@@ -284,22 +268,15 @@
 ; linux/optimized/namei.ll
 ; linux/optimized/namespace.ll
 ; linux/optimized/ndisc.ll
-; linux/optimized/net-procfs.ll
-; linux/optimized/net-traces.ll
 ; linux/optimized/netdev-genl.ll
-; linux/optimized/netlabel_addrlist.ll
-; linux/optimized/netlabel_calipso.ll
 ; linux/optimized/netlabel_cipso_v4.ll
 ; linux/optimized/netlabel_domainhash.ll
 ; linux/optimized/netlabel_mgmt.ll
 ; linux/optimized/netlabel_unlabeled.ll
-; linux/optimized/netnode.ll
-; linux/optimized/netport.ll
 ; linux/optimized/nexthop.ll
 ; linux/optimized/nf_conntrack_core.ll
 ; linux/optimized/nf_conntrack_expect.ll
 ; linux/optimized/nf_conntrack_netlink.ll
-; linux/optimized/nf_conntrack_proto.ll
 ; linux/optimized/nf_conntrack_proto_icmp.ll
 ; linux/optimized/nf_nat_core.ll
 ; linux/optimized/nfnetlink_log.ll
@@ -318,11 +295,8 @@
 ; linux/optimized/posix-timers.ll
 ; linux/optimized/printk.ll
 ; linux/optimized/prmt.ll
-; linux/optimized/probe_roms.ll
 ; linux/optimized/proc_sysctl.ll
-; linux/optimized/process_keys.ll
 ; linux/optimized/property.ll
-; linux/optimized/ptp_vclock.ll
 ; linux/optimized/raw.ll
 ; linux/optimized/rdma.ll
 ; linux/optimized/reg.ll
@@ -357,7 +331,7 @@
 ; linux/optimized/swnode.ll
 ; linux/optimized/sys.ll
 ; linux/optimized/syscall.ll
-; linux/optimized/sysfs_engines.ll
+; linux/optimized/tcp.ll
 ; linux/optimized/tcp_cong.ll
 ; linux/optimized/tcp_ipv4.ll
 ; linux/optimized/tcp_ipv6.ll
@@ -380,8 +354,6 @@
 ; linux/optimized/uncore.ll
 ; linux/optimized/urb.ll
 ; linux/optimized/vector.ll
-; linux/optimized/vfs_dentry.ll
-; linux/optimized/virt-dma.ll
 ; linux/optimized/virtgpu_fence.ll
 ; linux/optimized/virtgpu_gem.ll
 ; linux/optimized/virtgpu_vq.ll
@@ -576,19 +548,16 @@
 ; wireshark/optimized/tap-protocolinfo.c.ll
 ; wireshark/optimized/wireshark_preference.cpp.ll
 ; wolfssl/optimized/sp_int.c.ll
-; z3/optimized/arith_eq_adapter.cpp.ll
-; z3/optimized/datatype_decl_plugin.cpp.ll
 ; z3/optimized/hnf_cutter.cpp.ll
 ; z3/optimized/nla_grobner.cpp.ll
-; z3/optimized/pb_solver.cpp.ll
 ; z3/optimized/sat_anf_simplifier.cpp.ll
-; z3/optimized/sat_lookahead.cpp.ll
 ; z3/optimized/sat_solver.cpp.ll
 ; z3/optimized/smt_parallel.cpp.ll
 ; z3/optimized/spacer_qe_project.cpp.ll
 ; z3/optimized/tactical.cpp.ll
-; z3/optimized/theory_pb.cpp.ll
-; z3/optimized/theory_seq.cpp.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/6i9q21vg747q3orsxnutiwubi.ll
+; zed-rs/optimized/cogvsa3bjgiftuxgwhwbiuj8x.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(ptr %0) #0 {
 entry:
@@ -597,7 +566,7 @@ entry:
   ret i1 %2
 }
 
-; 510 occurrences:
+; 593 occurrences:
 ; actix-rs/optimized/15m54lduehnycako.ll
 ; actix-rs/optimized/17w7f2f3gva337g5.ll
 ; actix-rs/optimized/1rmq6g519rw6hl6a.ll
@@ -830,7 +799,6 @@ entry:
 ; just-rs/optimized/2sotx4bdu006z307.ll
 ; just-rs/optimized/52uhuxfcop8n85cu.ll
 ; just-rs/optimized/xt6bvrk4jdo7mpy.ll
-; linux/optimized/8250_exar.ll
 ; linux/optimized/acpi-dma.ll
 ; linux/optimized/acpi_pcihp.ll
 ; linux/optimized/airtime.ll
@@ -842,8 +810,6 @@ entry:
 ; linux/optimized/device_pm.ll
 ; linux/optimized/drm_client_modeset.ll
 ; linux/optimized/drm_dp_mst_topology.ll
-; linux/optimized/evged.ll
-; linux/optimized/glue.ll
 ; linux/optimized/hub.ll
 ; linux/optimized/i2c-core-acpi.ll
 ; linux/optimized/i2c-core-base.ll
@@ -855,7 +821,6 @@ entry:
 ; linux/optimized/message.ll
 ; linux/optimized/mqueue.ll
 ; linux/optimized/ndisc.ll
-; linux/optimized/netlabel_addrlist.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/nsnames.ll
 ; linux/optimized/pci-acpi.ll
@@ -863,7 +828,6 @@ entry:
 ; linux/optimized/pci.ll
 ; linux/optimized/pci_irq.ll
 ; linux/optimized/pci_root.ll
-; linux/optimized/physical_location.ll
 ; linux/optimized/prmt.ll
 ; linux/optimized/processor_driver.ll
 ; linux/optimized/scan.ll
@@ -1058,6 +1022,9 @@ entry:
 ; tree-sitter-rs/optimized/55e7aotywrgrb7st.ll
 ; tree-sitter-rs/optimized/5edwf61672v3jzil.ll
 ; tree-sitter-rs/optimized/99e7gbsiai38vp2.ll
+; turborepo-rs/optimized/667fw7b0fgqo2a1672jmft41u.ll
+; turborepo-rs/optimized/b1v9cwehov8lq62y4x0jjbf7v.ll
+; turborepo-rs/optimized/clh5e1e9fyovc9s5zwgyomiuh.ll
 ; typst-rs/optimized/18uucpkka5ar9ni.ll
 ; typst-rs/optimized/1ieizyrayutd063g.ll
 ; typst-rs/optimized/1kzf18l51n5fftpf.ll
@@ -1108,124 +1075,96 @@ entry:
 ; wasmtime-rs/optimized/r9f6jef0e11b5fk.ll
 ; wasmtime-rs/optimized/v5prf101dn49s3v.ll
 ; wireshark/optimized/blf.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/0f282tckerjhkw6myg5j2gjc9.ll
+; zed-rs/optimized/0to2qnzux9yza52oo44ef62bn.ll
+; zed-rs/optimized/0wlgaqlqpgcjsjsmk5ypsukh3.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/12x3d7yxch19r9kog7sr8geci.ll
+; zed-rs/optimized/14nzgp7qqjehsllc2nbkdaoyu.ll
+; zed-rs/optimized/160h40gmjuq6w4py8cgz7ceyb.ll
+; zed-rs/optimized/1ftc77y2sv97gmniy36ag141f.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/1qoospyzgc86mrbrflush3m5b.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/23nswl1llway8978jvm857sny.ll
+; zed-rs/optimized/25n0f77f67cr7ewl17g7eja8w.ll
+; zed-rs/optimized/2dbu45lers7mkstxlrhw3mc97.ll
+; zed-rs/optimized/2tseelemdefm2fo39q21ogou2.ll
+; zed-rs/optimized/32kqcem53id37kgf9pak7q7x7.ll
+; zed-rs/optimized/3m5xyr1xu4yees5ut16dqcvjd.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/3quypyfrg8uizn5sealer8xsk.ll
+; zed-rs/optimized/3wc7tnd4g7jfnn81av5tll8e5.ll
+; zed-rs/optimized/44bj4n5407vag46bun63mwelh.ll
+; zed-rs/optimized/477pfick4ndzj3k3y8f79a5fg.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/4kidsk70o8yfs5e4frb89ok7e.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/4wlt97p2na7yq96c9gq3wlrfc.ll
+; zed-rs/optimized/4z6vlo4eo03eve34h1wxhlae7.ll
+; zed-rs/optimized/50na78mbd3ev0fg48iszd7iya.ll
+; zed-rs/optimized/59wnsznecs6we2kopjyje48jo.ll
+; zed-rs/optimized/5mqaql67fk8cb5w1h1xcbyeu9.ll
+; zed-rs/optimized/5sucshn5njulvmxjucq4wg81p.ll
+; zed-rs/optimized/62p0ysciwr0duwav9qlwb71rc.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/71cpo5c8gfob1nb30s7nlggwn.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7hsbxpr1hqy17ngn0bqyx5x8s.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/7zi7aijefhi526c3u5em8y2tq.ll
+; zed-rs/optimized/835zkucuw8h9aw73lp3nfl4bh.ll
+; zed-rs/optimized/83f7cv59nhkcel85ism08ubeo.ll
+; zed-rs/optimized/8bnapxt4ilkd5y3egr7fzm1sv.ll
+; zed-rs/optimized/8dp0jnh8nmgy45q902vokx58m.ll
+; zed-rs/optimized/8et4dphxwbm7ry4e21dik6h9d.ll
+; zed-rs/optimized/8fnqr4x4dcnr22hiqkfhgttys.ll
+; zed-rs/optimized/8mr81aw0ctvqdrbyiysor7awe.ll
+; zed-rs/optimized/8saagxlqr1drbipxii3ylnn9h.ll
+; zed-rs/optimized/8tscdb01zcabwdnjfgov818gm.ll
+; zed-rs/optimized/8yk2p2sb65wc4uirlpwonhoj2.ll
+; zed-rs/optimized/96hln4y97mhftmlht5x1xhnh1.ll
+; zed-rs/optimized/9dr2kwkk18o137jk0clql0t7q.ll
+; zed-rs/optimized/9k0j7f35vt58mons3nxvubmtw.ll
+; zed-rs/optimized/9tt6eh72scdop5d6biwv5himz.ll
+; zed-rs/optimized/9tx3ef1bysuj1ynm6i6wgnanl.ll
+; zed-rs/optimized/a4ig8dgz5t1q56qsxep8b7iux.ll
+; zed-rs/optimized/ahd9e352ekh05680xrqpqafs1.ll
+; zed-rs/optimized/atq9mmg913h76iyxx32io10uu.ll
+; zed-rs/optimized/b7azyji7w0gj79cpvibdmzbyg.ll
+; zed-rs/optimized/b9loi3at7jzhs8cuay6b4rmu9.ll
+; zed-rs/optimized/b9ty0axfl2ld0co5krahg7gfq.ll
+; zed-rs/optimized/bflorbpxbjb42ccmeziz8dqw7.ll
+; zed-rs/optimized/byetpqxts7g45vq87gqqiy5uv.ll
+; zed-rs/optimized/bzk1je3s858jgu5p8vqae1j7s.ll
+; zed-rs/optimized/c4c7jl64zv8zhv2ne6xdvhty4.ll
+; zed-rs/optimized/c7xkpt7ryrhwv9v8woklewxya.ll
+; zed-rs/optimized/ckiwzakufh7d1bhz9acxsspq9.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
+; zed-rs/optimized/coobscod1tjvofpoi7fi6r7gk.ll
+; zed-rs/optimized/d236qqx54dpqso3cyloa7ybaj.ll
+; zed-rs/optimized/d9zbxounqkt24vk3xyo3kqpk8.ll
+; zed-rs/optimized/dtvy13he5qwv8e5jkwyblypio.ll
+; zed-rs/optimized/dvq6k4pdp44031v89wsqrb53z.ll
+; zed-rs/optimized/e0nyk03b5twszr55stktey742.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/ebj1t6ydn0lm59l6uu3qqz6z0.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
+; zed-rs/optimized/ensdmfe31f02o6ykga4vd445w.ll
+; zed-rs/optimized/epxvirz0hhxtp4t1e4z6eeiu9.ll
+; zed-rs/optimized/f0amc3mihxn9sd1mhsostg4ox.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
+; zed-rs/optimized/f14wyqlydqq8lgfacllh8zw2j.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
+; zed-rs/optimized/f3wmqxw6x607w7cbx1edvfc95.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(ptr %0) #0 {
 entry:
   %1 = getelementptr i8, ptr %0, i64 16
   %2 = icmp ne ptr %1, null
-  ret i1 %2
-}
-
-; 32 occurrences:
-; linux/optimized/control.ll
-; linux/optimized/dev.ll
-; linux/optimized/devio.ll
-; linux/optimized/drm_debugfs_crc.ll
-; linux/optimized/drm_file.ll
-; linux/optimized/evdev.ll
-; linux/optimized/eventfd.ll
-; linux/optimized/eventpoll.ll
-; linux/optimized/fork.ll
-; linux/optimized/hid-debug.ll
-; linux/optimized/hiddev.ll
-; linux/optimized/hidraw.ll
-; linux/optimized/inotify_user.ll
-; linux/optimized/io_uring.ll
-; linux/optimized/mlme.ll
-; linux/optimized/mon_bin.ll
-; linux/optimized/ndisc.ll
-; linux/optimized/nfs4proc.ll
-; linux/optimized/pcm_misc.ll
-; linux/optimized/pipe.ll
-; linux/optimized/pps.ll
-; linux/optimized/proc_namespace.ll
-; linux/optimized/ptp_chardev.ll
-; linux/optimized/relay.ll
-; linux/optimized/rpc_pipe.ll
-; linux/optimized/seccomp.ll
-; linux/optimized/signalfd.ll
-; linux/optimized/sync_file.ll
-; linux/optimized/timerfd.ll
-; linux/optimized/trace_output.ll
-; linux/optimized/usblp.ll
-; linux/optimized/virtio_console.ll
-; Function Attrs: nounwind
-define i1 @func000000000000002c(ptr %0) #0 {
-entry:
-  %1 = getelementptr nusw i8, ptr %0, i64 152
-  %2 = icmp ne ptr %1, null
-  ret i1 %2
-}
-
-; 63 occurrences:
-; linux/optimized/af_packet.ll
-; linux/optimized/algapi.ll
-; linux/optimized/alps.ll
-; linux/optimized/blk-iocost.ll
-; linux/optimized/build_policy.ll
-; linux/optimized/cgroup-v1.ll
-; linux/optimized/cgroup.ll
-; linux/optimized/cpuset.ll
-; linux/optimized/dcache.ll
-; linux/optimized/drm_dsc_helper.ll
-; linux/optimized/eht.ll
-; linux/optimized/event_inode.ll
-; linux/optimized/exit.ll
-; linux/optimized/fair.ll
-; linux/optimized/fib_trie.ll
-; linux/optimized/he.ll
-; linux/optimized/hid-apple.ll
-; linux/optimized/hid-belkin.ll
-; linux/optimized/hid-cherry.ll
-; linux/optimized/hid-chicony.ll
-; linux/optimized/hid-ezkey.ll
-; linux/optimized/hid-gyration.ll
-; linux/optimized/hid-ite.ll
-; linux/optimized/hid-kensington.ll
-; linux/optimized/hid-lg.ll
-; linux/optimized/hid-microsoft.ll
-; linux/optimized/hid-monterey.ll
-; linux/optimized/hid-ntrig.ll
-; linux/optimized/hid-petalynx.ll
-; linux/optimized/hid-samsung.ll
-; linux/optimized/hid-sony.ll
-; linux/optimized/hid-sunplus.ll
-; linux/optimized/hid-topseed.ll
-; linux/optimized/i915_gpu_error.ll
-; linux/optimized/i915_vma.ll
-; linux/optimized/intel-nhlt.ll
-; linux/optimized/intel_ggtt.ll
-; linux/optimized/intel_psr.ll
-; linux/optimized/libata-core.ll
-; linux/optimized/mempolicy.ll
-; linux/optimized/mlme.ll
-; linux/optimized/net-traces.ll
-; linux/optimized/nl80211.ll
-; linux/optimized/page_alloc.ll
-; linux/optimized/pata_amd.ll
-; linux/optimized/pci-driver.ll
-; linux/optimized/printk.ll
-; linux/optimized/property.ll
-; linux/optimized/pt.ll
-; linux/optimized/raw.ll
-; linux/optimized/read_write.ll
-; linux/optimized/reg.ll
-; linux/optimized/requeue.ll
-; linux/optimized/rpc_pipe.ll
-; linux/optimized/scan.ll
-; linux/optimized/slub.ll
-; linux/optimized/socket.ll
-; linux/optimized/swnode.ll
-; linux/optimized/virtio_net.ll
-; linux/optimized/vmalloc.ll
-; linux/optimized/vmscan.ll
-; linux/optimized/workqueue.ll
-; linux/optimized/xhci.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0) #0 {
-entry:
-  %1 = getelementptr nusw i8, ptr %0, i64 40
-  %2 = icmp eq ptr %1, null
   ret i1 %2
 }
 

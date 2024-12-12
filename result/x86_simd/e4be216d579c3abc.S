@@ -60,6 +60,32 @@ func000000000000006d:                   # @func000000000000006d
 	vzeroupper
 	retq
 .LCPI3_0:
+	.long	33                              # 0x21
+.LCPI3_1:
+	.byte	192                             # 0xc0
+	.byte	192                             # 0xc0
+	.byte	192                             # 0xc0
+	.byte	192                             # 0xc0
+	.byte	192                             # 0xc0
+	.byte	192                             # 0xc0
+	.byte	192                             # 0xc0
+	.byte	192                             # 0xc0
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+func0000000000000063:                   # @func0000000000000063
+	vpaddd	.LCPI3_0(%rip){1to8}, %ymm0, %ymm0
+	vpsrld	$6, %ymm0, %ymm0
+	vpmovdb	%ymm0, %xmm0
+	vpaddb	.LCPI3_1(%rip), %xmm0, %xmm0
+	vzeroupper
+	retq
+.LCPI4_0:
 	.byte	16                              # 0x10
 	.byte	16                              # 0x10
 	.byte	16                              # 0x10
@@ -81,12 +107,12 @@ func0000000000000000:                   # @func0000000000000000
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpsrld	$1, %ymm0, %ymm0
 	vpmovdb	%ymm0, %xmm0
-	vpaddb	.LCPI3_0(%rip), %xmm0, %xmm0
+	vpaddb	.LCPI4_0(%rip), %xmm0, %xmm0
 	vzeroupper
 	retq
-.LCPI4_0:
+.LCPI5_0:
 	.long	267                             # 0x10b
-.LCPI4_1:
+.LCPI5_1:
 	.byte	245                             # 0xf5
 	.byte	245                             # 0xf5
 	.byte	245                             # 0xf5
@@ -104,10 +130,10 @@ func0000000000000000:                   # @func0000000000000000
 	.zero	1
 	.zero	1
 func0000000000000060:                   # @func0000000000000060
-	vpaddd	.LCPI4_0(%rip){1to8}, %ymm0, %ymm0
+	vpaddd	.LCPI5_0(%rip){1to8}, %ymm0, %ymm0
 	vpsrld	$1, %ymm0, %ymm0
 	vpmovdb	%ymm0, %xmm0
-	vpaddb	.LCPI4_1(%rip), %xmm0, %xmm0
+	vpaddb	.LCPI5_1(%rip), %xmm0, %xmm0
 	vzeroupper
 	retq
 func000000000000000d:                   # @func000000000000000d
@@ -119,10 +145,10 @@ func000000000000000d:                   # @func000000000000000d
 	vpaddb	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-.LCPI6_0:
+.LCPI7_0:
 	.long	7                               # 0x7
 func0000000000000040:                   # @func0000000000000040
-	vpaddd	.LCPI6_0(%rip){1to8}, %ymm0, %ymm0
+	vpaddd	.LCPI7_0(%rip){1to8}, %ymm0, %ymm0
 	vpsrld	$3, %ymm0, %ymm0
 	vpmovdb	%ymm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1

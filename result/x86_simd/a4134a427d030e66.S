@@ -32,7 +32,7 @@ func000000000000000a:                   # @func000000000000000a
 	.long	1991868891                      # 0x76b981db
 func0000000000000002:                   # @func0000000000000002
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1 # ymm1 = ~ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpshufd	$245, %ymm0, %ymm1              # ymm1 = ymm0[1,1,3,3,5,5,7,7]
 	vpbroadcastd	.LCPI2_0(%rip), %ymm2   # ymm2 = [1991868891,1991868891,1991868891,1991868891,1991868891,1991868891,1991868891,1991868891]
 	vpmuludq	%ymm2, %ymm1, %ymm1

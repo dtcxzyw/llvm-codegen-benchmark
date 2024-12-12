@@ -1,5 +1,5 @@
 
-; 88 occurrences:
+; 89 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/ifDec16.c.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
@@ -50,6 +50,7 @@
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; llvm/optimized/DwarfUnit.cpp.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; ncnn/optimized/detectionoutput.cpp.ll
 ; ncnn/optimized/proposal.cpp.ll
@@ -97,7 +98,7 @@ entry:
   ret i64 %4
 }
 
-; 35 occurrences:
+; 36 occurrences:
 ; csmith/optimized/CVQualifiers.cpp.ll
 ; freetype/optimized/psaux.c.ll
 ; linux/optimized/badblocks.ll
@@ -106,6 +107,7 @@ entry:
 ; linux/optimized/percpu.ll
 ; linux/optimized/regmap.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; oiio/optimized/imagecache.cpp.ll
 ; openblas/optimized/dlaqr5.c.ll

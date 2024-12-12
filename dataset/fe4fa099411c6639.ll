@@ -1,6 +1,5 @@
 
-; 3 occurrences:
-; libevent/optimized/evmap.c.ll
+; 2 occurrences:
 ; llvm/optimized/COFFObjectFile.cpp.ll
 ; qemu/optimized/hw_pci_msi.c.ll
 ; Function Attrs: nounwind

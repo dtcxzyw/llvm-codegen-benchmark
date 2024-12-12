@@ -7,7 +7,7 @@ entry:
   %3 = add nsw i32 %2, 1
   %4 = sdiv i32 %3, 2
   %5 = sext i32 %4 to i64
-  %6 = mul i64 %5, %1
+  %6 = mul i64 %1, %5
   %7 = getelementptr float, ptr %0, i64 %6
   ret ptr %7
 }
@@ -21,7 +21,7 @@ entry:
   %3 = add nsw i32 %2, 1
   %4 = sdiv i32 %3, 2
   %5 = sext i32 %4 to i64
-  %6 = mul nsw i64 %5, %1
+  %6 = mul nsw i64 %1, %5
   %7 = getelementptr float, ptr %0, i64 %6
   ret ptr %7
 }
@@ -37,7 +37,7 @@ entry:
   %3 = add nsw i32 %2, 63
   %4 = sdiv i32 %3, 64
   %5 = sext i32 %4 to i64
-  %6 = mul nsw i64 %5, %1
+  %6 = mul nsw i64 %1, %5
   %7 = getelementptr nusw i64, ptr %0, i64 %6
   ret ptr %7
 }

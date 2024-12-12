@@ -1,5 +1,5 @@
 
-; 135 occurrences:
+; 141 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcSymm.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -50,6 +50,7 @@
 ; grpc/optimized/chttp2_transport.cc.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hermes/optimized/zip.c.ll
+; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; icu/optimized/regexcmp.ll
 ; icu/optimized/ubidi.ll
 ; imgui/optimized/imgui_draw.cpp.ll
@@ -134,7 +135,12 @@
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; wireshark/optimized/proto.c.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; zstd/optimized/zstd_v01.c.ll
+; zstd/optimized/zstd_v02.c.ll
+; zstd/optimized/zstd_v03.c.ll
+; zstd/optimized/zstd_v04.c.ll
+; zstd/optimized/zstd_v05.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1) #0 {
 entry:

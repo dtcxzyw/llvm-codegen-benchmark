@@ -1,8 +1,9 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; lua/optimized/ldebug.ll
 ; luajit/optimized/lj_bcwrite.ll
 ; luajit/optimized/lj_bcwrite_dyn.ll
+; lvgl/optimized/lv_scale.ll
 ; opencv/optimized/attr_value.pb.cc.ll
 ; opencv/optimized/function.pb.cc.ll
 ; opencv/optimized/graph.pb.cc.ll

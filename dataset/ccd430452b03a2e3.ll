@@ -1,8 +1,7 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; folly/optimized/AsyncSocket.cpp.ll
 ; linux/optimized/i9xx_wm.ll
-; linux/optimized/mii.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; ruby/optimized/time.ll
 ; Function Attrs: nounwind
@@ -11,7 +10,7 @@ entry:
   %3 = shl i32 %2, 9
   %4 = and i32 %3, 7680
   %5 = select i1 %1, i32 512, i32 %4
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   ret i32 %6
 }
 
@@ -24,7 +23,7 @@ entry:
   %3 = shl i32 %2, 10
   %4 = and i32 %3, 1046528
   %5 = select i1 %1, i32 0, i32 %4
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   ret i32 %6
 }
 

@@ -86,12 +86,12 @@ entry:
 define i1 @func0000000000000007(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %1, %2
-  %4 = fmul float %3, %0
+  %4 = fmul float %0, %3
   %5 = fcmp une float %4, 0.000000e+00
   ret i1 %5
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; darktable/optimized/introspection_basicadj.c.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
@@ -100,7 +100,6 @@ entry:
 ; meshlab/optimized/filter_trioptimize.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/meshselect.cpp.ll
-; miniaudio/optimized/unity.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000005(float %0, float %1, float %2) #0 {
 entry:
@@ -110,9 +109,8 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
@@ -123,30 +121,8 @@ entry:
 define i1 @func0000000000000003(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %1, %2
-  %4 = fmul float %3, %0
+  %4 = fmul float %0, %3
   %5 = fcmp ult float %4, 0.000000e+00
-  ret i1 %5
-}
-
-; 1 occurrences:
-; openblas/optimized/ieeeck.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000e(float %0, float %1, float %2) #0 {
-entry:
-  %3 = fmul float %1, %2
-  %4 = fmul float %3, %0
-  %5 = fcmp ord float %4, 0.000000e+00
-  ret i1 %5
-}
-
-; 1 occurrences:
-; openblas/optimized/ieeeck.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000001(float %0, float %1, float %2) #0 {
-entry:
-  %3 = fmul float %1, %2
-  %4 = fmul float %3, %0
-  %5 = fcmp uno float %4, 0.000000e+00
   ret i1 %5
 }
 

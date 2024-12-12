@@ -6,7 +6,7 @@ func0000000000000021:                   # @func0000000000000021
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func0000000000000013:                   # @func0000000000000013
 	vsetivli	zero, 8, e64, m4, ta, ma
@@ -16,7 +16,7 @@ func0000000000000013:                   # @func0000000000000013
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func000000000000005b:                   # @func000000000000005b
 	vsetivli	zero, 8, e64, m4, ta, ma
@@ -27,7 +27,7 @@ func000000000000005b:                   # @func000000000000005b
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 .LCPI3_0:
 	.quad	0x4341c37937e08000              # double 1.0E+16
@@ -40,7 +40,7 @@ func0000000000000061:                   # @func0000000000000061
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func0000000000000010:                   # @func0000000000000010
 	vsetivli	zero, 8, e64, m4, ta, ma
@@ -50,7 +50,7 @@ func0000000000000010:                   # @func0000000000000010
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func0000000000000059:                   # @func0000000000000059
 	vsetivli	zero, 8, e64, m4, ta, ma
@@ -61,5 +61,5 @@ func0000000000000059:                   # @func0000000000000059
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret

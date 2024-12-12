@@ -25,10 +25,10 @@ entry:
 ; abc/optimized/giaSimBase.c.ll
 ; z3/optimized/theory_dense_diff_logic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
-  %4 = xor i32 %3, %1
+  %4 = xor i32 %1, %3
   %5 = and i32 %4, %0
   %6 = icmp eq i32 %5, 0
   ret i1 %6
@@ -37,11 +37,11 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = xor i32 %3, %1
-  %5 = and i32 %4, %0
+  %4 = xor i32 %1, %3
+  %5 = and i32 %0, %4
   %6 = icmp eq i32 %5, 0
   ret i1 %6
 }
@@ -57,11 +57,11 @@ entry:
 ; spike/optimized/vssub_vv.ll
 ; spike/optimized/vssub_vx.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000046(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 2147483647
   %4 = xor i32 %3, %1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   %6 = icmp slt i32 %5, 0
   ret i1 %6
 }
@@ -75,11 +75,11 @@ entry:
 ; spike/optimized/kstsa32.ll
 ; spike/optimized/ksub32.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000004a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 2147483647
   %4 = xor i32 %3, %1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   %6 = icmp sgt i32 %5, -1
   ret i1 %6
 }

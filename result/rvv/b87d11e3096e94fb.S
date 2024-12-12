@@ -12,7 +12,7 @@ func0000000000000014:                   # @func0000000000000014
 	vmslt.vv	v12, v10, v8
 	vmor.mm	v0, v12, v0
 	ret
-func0000000000000032:                   # @func0000000000000032
+func0000000000000052:                   # @func0000000000000052
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v10, v10, 3
 	lui	a0, 748983
@@ -21,5 +21,5 @@ func0000000000000032:                   # @func0000000000000032
 	add	a0, a0, a1
 	vmul.vx	v10, v10, a0
 	vmsleu.vv	v12, v10, v8
-	vmor.mm	v0, v12, v0
+	vmor.mm	v0, v0, v12
 	ret

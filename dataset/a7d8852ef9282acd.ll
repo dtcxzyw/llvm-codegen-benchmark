@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; libquic/optimized/x509_vfy.c.ll
 ; linux/optimized/cdrom.ll
 ; linux/optimized/cls_api.ll
@@ -8,7 +8,6 @@
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; openjdk/optimized/c1_IR.ll
 ; openssl/optimized/libcrypto-lib-x509_vfy.ll
 ; openssl/optimized/libcrypto-shlib-x509_vfy.ll

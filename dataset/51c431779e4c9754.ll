@@ -1,6 +1,7 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; abc/optimized/cuddEssent.c.ll
+; boost/optimized/approximately_equals.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; duckdb/optimized/ub_duckdb_nested_loop_join.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_statistics.cpp.ll
@@ -20,7 +21,7 @@
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   %4 = freeze i64 %3
   ret i64 %4
 }
@@ -36,7 +37,7 @@ entry:
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 1, %1
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   %4 = freeze i64 %3
   ret i64 %4
 }

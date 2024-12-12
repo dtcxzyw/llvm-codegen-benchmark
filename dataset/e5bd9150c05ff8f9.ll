@@ -1,7 +1,8 @@
 
-; 104 occurrences:
+; 105 occurrences:
 ; abseil-cpp/optimized/chi_square.cc.ll
 ; assimp/optimized/IFCProfile.cpp.ll
+; boost/optimized/buffer_piece_border.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/idas.c.ll
 ; ceres/optimized/covariance_impl.cc.ll

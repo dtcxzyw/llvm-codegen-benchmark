@@ -1,12 +1,11 @@
 
-; 22 occurrences:
+; 21 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; icu/optimized/collationsettings.ll
 ; icu/optimized/decContext.ll
 ; icu/optimized/propsvec.ll
 ; jq/optimized/decContext.ll
 ; libquic/optimized/padding.c.ll
-; linux/optimized/hdac_regmap.ll
 ; linux/optimized/i915_vma.ll
 ; linux/optimized/intel_display_irq.ll
 ; linux/optimized/iosf_mbi.ll
@@ -26,12 +25,12 @@
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = and i32 %3, %1
-  %5 = or disjoint i32 %4, %0
+  %4 = and i32 %1, %3
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
-; 218 occurrences:
+; 219 occurrences:
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
@@ -47,6 +46,10 @@ entry:
 ; abc/optimized/kitCloud.c.ll
 ; abc/optimized/kitIsop.c.ll
 ; abc/optimized/saigSynch.c.ll
+; boost/optimized/basic_text_iprimitive.ll
+; boost/optimized/basic_text_oprimitive.ll
+; boost/optimized/basic_text_wiprimitive.ll
+; boost/optimized/basic_text_woprimitive.ll
 ; clamav/optimized/sha256.cpp.ll
 ; cmake/optimized/MD5.c.ll
 ; cmake/optimized/sha1.c.ll
@@ -84,6 +87,7 @@ entry:
 ; libquic/optimized/cfb.c.ll
 ; libquic/optimized/p256-x86_64.c.ll
 ; libsodium/optimized/libsodium_la-codecs.ll
+; lief/optimized/constant_time.c.ll
 ; lief/optimized/ripemd160.c.ll
 ; lief/optimized/ssl_tls12_server.c.ll
 ; linux/optimized/8250_pci.ll
@@ -96,16 +100,12 @@ entry:
 ; linux/optimized/decompress_bunzip2.ll
 ; linux/optimized/e1000_hw.ll
 ; linux/optimized/fib_frontend.ll
-; linux/optimized/hwsleep.ll
-; linux/optimized/hwxface.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/icl_dsi.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_cx0_phy.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_display_power.ll
 ; linux/optimized/intel_display_power_well.ll
-; linux/optimized/intel_dkl_phy.ll
 ; linux/optimized/intel_dpio_phy.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/intel_dsi_vbt.ll
@@ -146,7 +146,6 @@ entry:
 ; llvm/optimized/GlobalsModRef.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
 ; llvm/optimized/LLParser.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVRegisterInfo.cpp.ll
 ; llvm/optimized/SHA256.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
@@ -165,6 +164,7 @@ entry:
 ; luau/optimized/BuiltinFolding.cpp.ll
 ; luau/optimized/lbitlib.cpp.ll
 ; luau/optimized/lbuiltins.cpp.ll
+; lvgl/optimized/lv_canvas.ll
 ; minetest/optimized/CImageLoaderBMP.cpp.ll
 ; minetest/optimized/CNullDriver.cpp.ll
 ; minetest/optimized/clientpackethandler.cpp.ll
@@ -254,7 +254,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = or i32 %4, %0
   ret i32 %5
 }

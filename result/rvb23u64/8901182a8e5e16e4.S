@@ -1,10 +1,12 @@
-func0000000000000041:                   # @func0000000000000041
-	bexti	a1, a1, 1
-	negw	a0, a0
+func0000000000000081:                   # @func0000000000000081
+	sext.w	a0, a0
+	srli	a1, a1, 1
+	slli	a1, a1, 63
+	srai	a1, a1, 63
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	bexti	a1, a1, 1
 	or	a0, a0, a1
 	sext.w	a0, a0

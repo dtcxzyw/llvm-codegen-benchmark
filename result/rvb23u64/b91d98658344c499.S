@@ -24,17 +24,3 @@ func0000000000000010:                   # @func0000000000000010
 	mul	a0, a0, a1
 	srli	a0, a0, 38
 	ret
-func0000000000000008:                   # @func0000000000000008
-	sext.w	a2, a1
-	lui	a3, 24
-	addiw	a3, a3, 1696
-	sltu	a2, a2, a3
-	lui	a3, 274878
-	czero.nez	a1, a1, a2
-	czero.eqz	a0, a0, a2
-	or	a0, a0, a1
-	zext.w	a0, a0
-	addiw	a1, a3, -381
-	mul	a0, a0, a1
-	srli	a0, a0, 50
-	ret

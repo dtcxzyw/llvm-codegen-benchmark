@@ -10,6 +10,14 @@ func0000000000000063:                   # @func0000000000000063
 	snez	a1, a1
 	add	a0, a0, a1
 	ret
+func0000000000000020:                   # @func0000000000000020
+	slli	a1, a1, 48
+	lui	a2, 16
+	srli	a1, a1, 48
+	addiw	a2, a2, -2
+	sltu	a1, a1, a2
+	add	a0, a0, a1
+	ret
 func0000000000000040:                   # @func0000000000000040
 	slli	a1, a1, 48
 	srli	a1, a1, 48

@@ -1,7 +1,8 @@
 
-; 219 occurrences:
+; 213 occurrences:
 ; arrow/optimized/UriIp4.c.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/wave_config_constant.ll
 ; casadi/optimized/cs_leaf.c.ll
 ; casadi/optimized/cs_tdfs.c.ll
 ; casadi/optimized/cvodes_interface.cpp.ll
@@ -29,7 +30,6 @@
 ; cmake/optimized/divsufsort.c.ll
 ; cmake/optimized/easy.c.ll
 ; cmake/optimized/fastcover.c.ll
-; cmake/optimized/fld_ftchoice.c.ll
 ; cmake/optimized/zdict.c.ll
 ; csmith/optimized/Variable.cpp.ll
 ; curl/optimized/libcurl_la-easy.ll
@@ -82,16 +82,11 @@
 ; lief/optimized/rsa_alt_helpers.c.ll
 ; linux/optimized/conditional.ll
 ; linux/optimized/evxface.ll
-; linux/optimized/evxfgpe.ll
 ; linux/optimized/hugetlb_cgroup.ll
 ; linux/optimized/hwmon.ll
 ; linux/optimized/intel_guc_capture.ll
-; linux/optimized/intel_hdcp_gsc_message.ll
 ; linux/optimized/message.ll
-; linux/optimized/mlme.ll
 ; linux/optimized/nsxfeval.ll
-; linux/optimized/platform-msi.ll
-; linux/optimized/rsxface.ll
 ; linux/optimized/xhci-mem.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
@@ -121,7 +116,6 @@
 ; miniaudio/optimized/unity.c.ll
 ; node/optimized/libnode.js_native_api_v8.ll
 ; nuklear/optimized/unity.c.ll
-; nuttx/optimized/pthread_attr_getstack.c.ll
 ; ocio/optimized/FileFormatICC.cpp.ll
 ; oiio/optimized/texture3d.cpp.ll
 ; opencv/optimized/datastructs.cpp.ll
@@ -157,7 +151,6 @@
 ; openssl/optimized/sslbuffertest-bin-ssltestlib.ll
 ; openssl/optimized/sslcorrupttest-bin-ssltestlib.ll
 ; openssl/optimized/tls13ccstest-bin-ssltestlib.ll
-; openssl/optimized/x509_time_test-bin-x509_time_test.ll
 ; openusd/optimized/AVIFImage.cpp.ll
 ; openusd/optimized/aom_decoder.c.ll
 ; openusd/optimized/clipSetDefinition.cpp.ll
@@ -170,6 +163,8 @@
 ; openusd/optimized/primvar.cpp.ll
 ; openusd/optimized/tbbKernel.cpp.ll
 ; openusd/optimized/xformCommonAPI.cpp.ll
+; openvdb/optimized/LevelSetRebuild.cc.ll
+; openvdb/optimized/VolumeToMesh.cc.ll
 ; osqp/optimized/polish.c.ll
 ; osqp/optimized/qdldl_interface.c.ll
 ; postgres/optimized/datetime.ll
@@ -192,7 +187,6 @@
 ; rocksdb/optimized/arena_wrapped_db_iter.cc.ll
 ; rocksdb/optimized/db_ttl_impl.cc.ll
 ; slurm/optimized/conmgr.ll
-; slurm/optimized/gpu_nvml.ll
 ; slurm/optimized/node_features_knl_generic.ll
 ; slurm/optimized/xhash.ll
 ; verilator/optimized/V3Const__gen.cpp.ll
@@ -200,7 +194,6 @@
 ; wireshark/optimized/blf.c.ll
 ; wireshark/optimized/dot11decrypt.c.ll
 ; wireshark/optimized/dot11decrypt_util.c.ll
-; wireshark/optimized/dpa400.c.ll
 ; wireshark/optimized/expert_info_model.cpp.ll
 ; wireshark/optimized/packet-autosar-ipdu-multiplexer.c.ll
 ; wireshark/optimized/packet-btbredr_rf.c.ll
@@ -214,13 +207,14 @@
 ; wolfssl/optimized/rsa.c.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; yosys/optimized/fstapi.ll
+; yosys/optimized/sim.ll
 ; z3/optimized/qe.cpp.ll
 ; zstd/optimized/divsufsort.c.ll
 ; zstd/optimized/fastcover.c.ll
 ; zstd/optimized/zdict.c.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000018c(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp ne ptr %1, null
@@ -229,7 +223,7 @@ entry:
   ret i1 %6
 }
 
-; 27 occurrences:
+; 29 occurrences:
 ; ceres/optimized/problem_impl.cc.ll
 ; cmake/optimized/strcase.c.ll
 ; curl/optimized/libcurl_la-strcase.ll
@@ -257,8 +251,10 @@ entry:
 ; wireshark/optimized/packet-mac-lte.c.ll
 ; wireshark/optimized/packet-mac-nr.c.ll
 ; wireshark/optimized/packet-oran.c.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000021(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp eq ptr %1, null
@@ -271,12 +267,12 @@ entry:
 ; llvm/optimized/CodeViewRecordIO.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000002c(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp ne ptr %1, null
   %5 = and i1 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

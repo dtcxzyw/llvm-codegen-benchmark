@@ -1,5 +1,5 @@
 
-; 444 occurrences:
+; 431 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; abc/optimized/absGlaOld.c.ll
@@ -22,7 +22,6 @@
 ; abc/optimized/mpmPre.c.ll
 ; abc/optimized/msatClause.c.ll
 ; abc/optimized/rwrLib.c.ll
-; abc/optimized/rwtUtil.c.ll
 ; actix-rs/optimized/5k5ycrtlwwxldg7.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
@@ -35,7 +34,6 @@
 ; c3c/optimized/types.c.ll
 ; clamav/optimized/bytecode_api.c.ll
 ; cmake/optimized/archive_write_set_format_zip.c.ll
-; cmake/optimized/poll.c.ll
 ; cmake/optimized/transfer.c.ll
 ; coreutils-rs/optimized/1nj6h5colnkxfn01.ll
 ; coreutils-rs/optimized/2vlueqjvzu597xlx.ll
@@ -59,7 +57,6 @@
 ; glslang/optimized/hlslGrammar.cpp.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; graphviz/optimized/actions.c.ll
-; gromacs/optimized/vals16.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-cff2.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -73,7 +70,6 @@
 ; image-rs/optimized/5oy2v8fghrh79s8.ll
 ; just-rs/optimized/2sotx4bdu006z307.ll
 ; libquic/optimized/des.c.ll
-; libuv/optimized/poll.c.ll
 ; libwebp/optimized/lossless.c.ll
 ; libwebp/optimized/lossless_enc.c.ll
 ; libwebp/optimized/predictor_enc.c.ll
@@ -85,8 +81,6 @@
 ; linux/optimized/dnotify.ll
 ; linux/optimized/drm_format_helper.ll
 ; linux/optimized/extents.ll
-; linux/optimized/feat_ctl.ll
-; linux/optimized/file_table.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/g4x_hdmi.ll
 ; linux/optimized/hda_codec.ll
@@ -96,7 +90,6 @@
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/idma32.ll
 ; linux/optimized/iface.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_crt.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_display_irq.ll
@@ -112,7 +105,6 @@
 ; linux/optimized/lbr.ll
 ; linux/optimized/libata-core.ll
 ; linux/optimized/libata-sata.ll
-; linux/optimized/mii.ll
 ; linux/optimized/neighbour.ll
 ; linux/optimized/open.ll
 ; linux/optimized/phy-c45.ll
@@ -121,7 +113,6 @@
 ; linux/optimized/quota.ll
 ; linux/optimized/reg.ll
 ; linux/optimized/scsi_ioctl.ll
-; linux/optimized/statfs.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/transaction.ll
 ; linux/optimized/vfs_inode.ll
@@ -202,6 +193,7 @@
 ; luajit/optimized/lib_jit.ll
 ; luajit/optimized/lib_jit_dyn.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
+; lvgl/optimized/lv_svg_parser.ll
 ; lz4/optimized/lz4frame.c.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
@@ -212,7 +204,6 @@
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/glarea.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; meshlab/optimized/ml_rendering_actions.cpp.ll
 ; meshlab/optimized/paintbox.cpp.ll
@@ -224,7 +215,6 @@
 ; minetest/optimized/CGUISkin.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; minetest/optimized/Driver.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/clouds.cpp.ll
 ; minetest/optimized/game.cpp.ll
 ; minetest/optimized/guiButton.cpp.ll
@@ -267,7 +257,6 @@
 ; mold/optimized/passes.cc.SPARC64.cc.ll
 ; mold/optimized/passes.cc.X86_64.cc.ll
 ; nanosvg/optimized/nanosvg.ll
-; node/optimized/poll.ll
 ; node/optimized/simdutf.ll
 ; nuklear/optimized/unity.c.ll
 ; ockam-rs/optimized/1145kugil9dl94a2.ll
@@ -324,7 +313,6 @@
 ; openvdb/optimized/LevelSetRebuild.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/LevelSetTracker.cc.ll
-; openvdb/optimized/Mask.cc.ll
 ; openvdb/optimized/Merge.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
 ; openvdb/optimized/PoissonSolver.cc.ll
@@ -363,7 +351,6 @@
 ; qemu/optimized/hw_net_can_ctucan_core.c.ll
 ; qemu/optimized/hw_scsi_megasas.c.ll
 ; qemu/optimized/hw_usb_dev-audio.c.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
 ; qemu/optimized/target_riscv_translate.c.ll
 ; qemu/optimized/tcg.c.ll
 ; quest/optimized/QuEST_cpu.c.ll
@@ -416,7 +403,6 @@
 ; wasmtime-rs/optimized/2rq7jdvcgv8h6zge.ll
 ; wireshark/optimized/addr_resolv.c.ll
 ; wireshark/optimized/busmaster.c.ll
-; wireshark/optimized/file-rtpdump.c.ll
 ; wireshark/optimized/packet-autosar-ipdu-multiplexer.c.ll
 ; wireshark/optimized/packet-bthci_cmd.c.ll
 ; wireshark/optimized/packet-flexray.c.ll
@@ -438,6 +424,7 @@
 ; z3/optimized/bound_propagator.cpp.ll
 ; z3/optimized/mpf.cpp.ll
 ; z3/optimized/smt_clause.cpp.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; zstd/optimized/zstd_v03.c.ll
 ; zstd/optimized/zstd_v04.c.ll
@@ -449,12 +436,12 @@ define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 8
   %4 = and i32 %3, 16711680
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 
-; 202 occurrences:
+; 200 occurrences:
 ; abc/optimized/darCut.c.ll
 ; abc/optimized/rwrLib.c.ll
 ; actix-rs/optimized/5k5ycrtlwwxldg7.ll
@@ -516,10 +503,8 @@ entry:
 ; linux/optimized/hooks.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/idma32.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_color.ll
 ; linux/optimized/intel_pmdemand.ll
-; linux/optimized/intel_snps_phy.ll
 ; linux/optimized/intel_vdsc.ll
 ; linux/optimized/ldt.ll
 ; linux/optimized/libata-core.ll
@@ -608,8 +593,6 @@ entry:
 ; recastnavigation/optimized/RecastRasterization.cpp.ll
 ; ruby/optimized/cesu_8.ll
 ; ruby/optimized/time.ll
-; ruby/optimized/utf_16be.ll
-; ruby/optimized/utf_16le.ll
 ; rust-analyzer-rs/optimized/178ko0g73oimi4oy.ll
 ; rust-analyzer-rs/optimized/1a2athgpe0u8z37j.ll
 ; rust-analyzer-rs/optimized/1n2nbybgay5hs9t3.ll
@@ -650,6 +633,8 @@ entry:
 ; wireshark/optimized/packet-q933.c.ll
 ; wireshark/optimized/packet-vnc.c.ll
 ; yosys/optimized/dfflegalize.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; zstd/optimized/zstd_v03.c.ll
@@ -660,20 +645,19 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = shl nuw nsw i32 %2, 8
-  %4 = and i32 %3, 768
-  %5 = or disjoint i32 %4, %1
+  %3 = shl nuw nsw i32 %2, 18
+  %4 = and i32 %3, 8126464
+  %5 = or disjoint i32 %1, %4
   %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 
-; 20 occurrences:
+; 34 occurrences:
 ; clamav/optimized/bytecode_api.c.ll
 ; lief/optimized/des.c.ll
 ; linux/optimized/blktrace.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_sprite.ll
-; linux/optimized/mii.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/reg.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
@@ -682,6 +666,21 @@ entry:
 ; opencv/optimized/window_gtk.cpp.ll
 ; openjdk/optimized/assembler_x86.ll
 ; openjdk/optimized/javaClasses.ll
+; openvdb/optimized/Diagnostics.cc.ll
+; openvdb/optimized/FastSweeping.cc.ll
+; openvdb/optimized/Filter.cc.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
+; openvdb/optimized/LevelSetRebuild.cc.ll
+; openvdb/optimized/LevelSetSphere.cc.ll
+; openvdb/optimized/LevelSetTracker.cc.ll
+; openvdb/optimized/Mask.cc.ll
+; openvdb/optimized/Merge.cc.ll
+; openvdb/optimized/MultiResGrid.cc.ll
+; openvdb/optimized/PoissonSolver.cc.ll
+; openvdb/optimized/TopologyToLevelSet.cc.ll
+; openvdb/optimized/VolumeAdvect.cc.ll
+; openvdb/optimized/VolumeToMesh.cc.ll
+; openvdb/optimized/points.cc.ll
 ; php/optimized/zend_inference.ll
 ; qemu/optimized/block_file-posix.c.ll
 ; qemu/optimized/util_cpuinfo-i386.c.ll
@@ -693,12 +692,12 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 3
   %4 = and i32 %3, 17825792
-  %5 = or i32 %4, %1
+  %5 = or i32 %1, %4
   %6 = or i32 %5, %0
   ret i32 %6
 }
 
-; 50 occurrences:
+; 48 occurrences:
 ; abc/optimized/kitCloud.c.ll
 ; arrow/optimized/float16.cc.ll
 ; clamav/optimized/bytecode_api.c.ll
@@ -711,7 +710,6 @@ entry:
 ; linux/optimized/intel_sprite.ll
 ; linux/optimized/lbr.ll
 ; linux/optimized/quota.ll
-; linux/optimized/statfs.ll
 ; linux/optimized/xhci-hub.ll
 ; linux/optimized/xhci-ring.ll
 ; linux/optimized/xhci.ll
@@ -745,7 +743,6 @@ entry:
 ; openexr/optimized/ImfTimeCode.cpp.ll
 ; php/optimized/zend_inference.ll
 ; qemu/optimized/hw_9pfs_9p.c.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/sim_mycpu.ll
 ; yosys/optimized/dfflegalize.ll
@@ -754,12 +751,12 @@ define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 2
   %4 = and i32 %3, 32
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or i32 %5, %0
   ret i32 %6
 }
 
-; 40 occurrences:
+; 39 occurrences:
 ; abc/optimized/giaMf.c.ll
 ; abc/optimized/giaNf.c.ll
 ; abc/optimized/giaOf.c.ll
@@ -784,11 +781,11 @@ entry:
 ; jsonnet/optimized/vm.cpp.ll
 ; libevent/optimized/epoll.c.ll
 ; libevent/optimized/poll.c.ll
-; libzmq/optimized/zmq.cpp.ll
 ; llvm/optimized/APFixedPoint.cpp.ll
 ; llvm/optimized/YAMLParser.cpp.ll
 ; lua/optimized/lcode.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
+; lvgl/optimized/lv_text.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
@@ -797,7 +794,6 @@ entry:
 ; openjdk/optimized/Inet6AddressImpl.ll
 ; openjdk/optimized/UshortIndexed.ll
 ; postgres/optimized/utf8_and_gb18030.ll
-; qemu/optimized/hw_9pfs_9p.c.ll
 ; raylib/optimized/rtext.c.ll
 ; sentencepiece/optimized/util.cc.ll
 ; Function Attrs: nounwind
@@ -810,7 +806,7 @@ entry:
   ret i32 %6
 }
 
-; 22 occurrences:
+; 23 occurrences:
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/ifDec07.c.ll
 ; clamav/optimized/pe_icons.c.ll
@@ -824,6 +820,7 @@ entry:
 ; linux/optimized/libata-core.ll
 ; linux/optimized/vfs_inode.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; minetest/optimized/CImage.cpp.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
@@ -838,7 +835,7 @@ define i32 @func000000000000000e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 3
   %4 = and i32 %3, 248
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or i32 %5, %0
   ret i32 %6
 }
@@ -856,7 +853,7 @@ entry:
   ret i32 %6
 }
 
-; 42 occurrences:
+; 45 occurrences:
 ; assimp/optimized/BlenderDNA.cpp.ll
 ; assimp/optimized/BlenderScene.cpp.ll
 ; assimp/optimized/PlyParser.cpp.ll
@@ -875,6 +872,7 @@ entry:
 ; llvm/optimized/NativeInlineSiteSymbol.cpp.ll
 ; llvm/optimized/SplitKit.cpp.ll
 ; llvm/optimized/SymbolDumper.cpp.ll
+; lvgl/optimized/lv_color_op.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; minetest/optimized/map.cpp.ll
 ; openjdk/optimized/hb-aat-layout.ll
@@ -897,25 +895,28 @@ entry:
 ; stockfish/optimized/tbprobe.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
+; wasmtime-rs/optimized/4z02b278nscq7j1a.ll
 ; wireshark/optimized/packet-dhcp.c.ll
 ; wireshark/optimized/packet-rpc.c.ll
+; zed-rs/optimized/73pi95mikt3cntupcr2d2nefv.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 16
   %4 = and i32 %3, 16711680
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; lief/optimized/des.c.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/intel_psr.ll
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; luajit/optimized/lj_cparse.ll
 ; luajit/optimized/lj_cparse_dyn.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; openjdk/optimized/Ushort555Rgb.ll
 ; openjdk/optimized/Ushort565Rgb.ll
 ; php/optimized/decode.ll
@@ -927,7 +928,7 @@ define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 11
   %4 = and i32 %3, 33554432
-  %5 = or i32 %4, %1
+  %5 = or i32 %1, %4
   %6 = or i32 %5, %0
   ret i32 %6
 }
@@ -943,7 +944,7 @@ define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 1
   %4 = and i32 %3, 2
-  %5 = or i32 %4, %1
+  %5 = or i32 %1, %4
   %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
@@ -955,7 +956,7 @@ define i32 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 16
   %4 = and i32 %3, -2147483648
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or i32 %5, %0
   ret i32 %6
 }
@@ -967,7 +968,7 @@ define i32 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 10
   %4 = and i32 %3, 1024
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or i32 %5, %0
   ret i32 %6
 }

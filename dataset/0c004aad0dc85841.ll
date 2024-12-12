@@ -15,7 +15,7 @@ entry:
 ; opencv/optimized/dpm_feature.cpp.ll
 ; sundials/optimized/sundials_iterative.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007e(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nuw nsw i64 %1, %3

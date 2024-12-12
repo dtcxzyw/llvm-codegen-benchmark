@@ -1,30 +1,30 @@
-func0000000000000192:                   # @func0000000000000192
+func0000000000000332:                   # @func0000000000000332
 	movl	%edx, %eax
-	cmpq	%rdi, %rax
-	setbe	%cl
+	cmpq	%rax, %rdi
+	setae	%cl
 	testq	%rsi, %rsi
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	movl	%edx, %eax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%cl
 	testq	%rsi, %rsi
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000032:                   # @func0000000000000032
+func0000000000000072:                   # @func0000000000000072
 	movl	%edx, %eax
-	cmpq	%rdi, %rax
-	setbe	%cl
+	cmpq	%rax, %rdi
+	setae	%cl
 	testq	%rsi, %rsi
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000182:                   # @func0000000000000182
+func0000000000000302:                   # @func0000000000000302
 	movl	%edx, %eax
-	cmpq	%rsi, %rax
+	cmpq	%rax, %rsi
 	setne	%cl
 	testq	%rdi, %rdi
 	sete	%al

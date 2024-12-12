@@ -1,18 +1,19 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; ruby/optimized/pm_buffer.ll
 ; ruby/optimized/time.ll
 ; velox/optimized/CompactRow.cpp.ll
+; velox/optimized/JsonType.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
-; 33 occurrences:
+; 37 occurrences:
 ; abc/optimized/trees.c.ll
 ; faiss/optimized/lattice_Zn.cpp.ll
 ; git/optimized/block.ll
@@ -27,6 +28,8 @@ entry:
 ; linux/optimized/hpet.ll
 ; linux/optimized/mmconfig-shared.ll
 ; llama.cpp/optimized/ggml.c.ll
+; openssl/optimized/ca_internals_test-bin-ca.ll
+; openssl/optimized/openssl-bin-ca.ll
 ; openusd/optimized/textFileFormat.lex.cpp.ll
 ; postgres/optimized/nodeHash.ll
 ; postgres/optimized/regcomp.ll
@@ -46,16 +49,18 @@ entry:
 ; ruby/optimized/sprintf.ll
 ; wireshark/optimized/lanalyzer.c.ll
 ; wireshark/optimized/packet-nfs.c.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
-; 175 occurrences:
+; 174 occurrences:
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; cpython/optimized/bytesobject.ll
@@ -223,7 +228,6 @@ entry:
 ; openssl/optimized/libcrypto-shlib-bn_conv.ll
 ; openssl/optimized/libcrypto-shlib-ct_oct.ll
 ; openusd/optimized/openexr-c.c.ll
-; openusd/optimized/yv12config.c.ll
 ; postgres/optimized/varbit.ll
 ; quickjs/optimized/libbf.ll
 ; redis/optimized/rio.ll
@@ -236,7 +240,7 @@ define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 5
   %3 = sext i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -250,11 +254,11 @@ define i64 @func0000000000000009(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
-; 42 occurrences:
+; 40 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/giaAiger.c.ll
 ; darktable/optimized/introspection_temperature.c.ll
@@ -271,14 +275,12 @@ entry:
 ; gromacs/optimized/reversetopology.cpp.ll
 ; gromacs/optimized/settle.cpp.ll
 ; gromacs/optimized/strmm.cpp.ll
-; gromacs/optimized/topio.cpp.ll
 ; gromacs/optimized/vsite.cpp.ll
 ; jq/optimized/execute.ll
 ; libwebp/optimized/vp8l_enc.c.ll
 ; luajit/optimized/minilua.ll
 ; meshlab/optimized/solver.cpp.ll
 ; mold/optimized/passes.cc.ARM32.cc.ll
-; nuttx/optimized/lib_calendar2utc.c.ll
 ; openblas/optimized/dlaein.c.ll
 ; openblas/optimized/dorgbr.c.ll
 ; opencv/optimized/distransform.cpp.ll
@@ -302,26 +304,16 @@ define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 16
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
-; 1 occurrences:
-; qemu/optimized/block_vvfat.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000003(i64 %0, i32 %1) #0 {
-entry:
-  %2 = add i32 %1, 1
-  %3 = sext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
-  ret i64 %4
-}
-
-; 99 occurrences:
+; 98 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/bacWriteBlif.c.ll
-; abc/optimized/cmdUtils.c.ll
+; arrow/optimized/light_array.cc.ll
+; boost/optimized/area.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; clamav/optimized/chmd.c.ll
 ; clamav/optimized/htmlnorm.c.ll
@@ -336,7 +328,6 @@ entry:
 ; gromacs/optimized/dlarrvx.cpp.ll
 ; gromacs/optimized/gmx_awh.cpp.ll
 ; gromacs/optimized/slarrvx.cpp.ll
-; gromacs/optimized/topio.cpp.ll
 ; gromacs/optimized/vsite.cpp.ll
 ; gromacs/optimized/vsite_parm.cpp.ll
 ; grpc/optimized/bdp_estimator.cc.ll
@@ -348,7 +339,6 @@ entry:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/io_collada.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; nuttx/optimized/lib_calendar2utc.c.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/targaoutput.cpp.ll
 ; oniguruma/optimized/regcomp.ll
@@ -422,29 +412,7 @@ define i64 @func0000000000000005(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, %0
-  ret i64 %4
-}
-
-; 1 occurrences:
-; opencv/optimized/cornersubpix.cpp.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000f(i64 %0, i32 %1) #0 {
-entry:
-  %2 = add nuw nsw i32 %1, 3
-  %3 = sext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
-  ret i64 %4
-}
-
-; 1 occurrences:
-; opencv/optimized/rapid.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000007(i64 %0, i32 %1) #0 {
-entry:
-  %2 = add nsw i32 %1, 1
-  %3 = sext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 

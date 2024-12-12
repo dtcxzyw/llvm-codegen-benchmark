@@ -1,5 +1,6 @@
 
-; 7 occurrences:
+; 8 occurrences:
+; boost/optimized/src.ll
 ; openjdk/optimized/c1_GraphBuilder.ll
 ; openjdk/optimized/mulnode.ll
 ; postgres/optimized/d2s.ll

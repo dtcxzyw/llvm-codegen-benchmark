@@ -28,16 +28,15 @@ entry:
   ret i32 %7
 }
 
-; 2 occurrences:
-; linux/optimized/intel_audio.ll
+; 1 occurrences:
 ; postgres/optimized/dt_common.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000030(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = udiv i32 %2, 250
-  %4 = mul nuw nsw i32 %3, 6
+  %3 = udiv i32 %2, 146097
+  %4 = mul nuw nsw i32 %3, 3
   %5 = add i32 %0, %1
-  %6 = add i32 %5, 4
+  %6 = add i32 %5, 32105
   %7 = add i32 %6, %4
   ret i32 %7
 }

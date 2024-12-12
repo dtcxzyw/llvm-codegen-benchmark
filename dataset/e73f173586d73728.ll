@@ -1,5 +1,7 @@
 
-; 11 occurrences:
+; 13 occurrences:
+; duckdb/optimized/ub_duckdb_parallel.cpp.ll
+; duckdb/optimized/ub_duckdb_storage_buffer.cpp.ll
 ; yalantinglibs/optimized/channel.cpp.ll
 ; yalantinglibs/optimized/chat_room.cpp.ll
 ; yalantinglibs/optimized/client_pool.cpp.ll
@@ -12,10 +14,10 @@
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
+define i64 @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 4
-  %4 = getelementptr i8, ptr %0, i64 %1
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %1
   %5 = getelementptr nusw i8, ptr %4, i64 %3
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
@@ -24,24 +26,23 @@ entry:
 ; 1 occurrences:
 ; php/optimized/cdf.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000032(ptr %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000033(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 2
   %4 = getelementptr i8, ptr %0, i64 %1
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }
 
-; 2 occurrences:
-; duckdb/optimized/ub_duckdb_parallel.cpp.ll
-; duckdb/optimized/ub_duckdb_storage_buffer.cpp.ll
+; 1 occurrences:
+; boost/optimized/url_base.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
+define i64 @func000000000000000b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = shl i64 %2, 4
+  %3 = shl i64 %2, 1
   %4 = getelementptr nusw i8, ptr %0, i64 %1
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }
@@ -75,11 +76,11 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/BenchmarkString.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000003a(ptr %0, i64 %1, i64 %2) #0 {
+define i64 @func000000000000003b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 1
   %4 = getelementptr nusw i16, ptr %0, i64 %1
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }

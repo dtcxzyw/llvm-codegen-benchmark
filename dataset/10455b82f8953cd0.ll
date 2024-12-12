@@ -1,7 +1,6 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; darktable/optimized/NikonDecompressor.cpp.ll
-; opencv/optimized/geometry.cpp.ll
 ; postgres/optimized/brin.ll
 ; postgres/optimized/nbtsplitloc.ll
 ; postgres/optimized/qsort.ll
@@ -23,7 +22,7 @@ entry:
   ret ptr %3
 }
 
-; 93 occurrences:
+; 90 occurrences:
 ; abc/optimized/bmcInse.c.ll
 ; clamav/optimized/qsort.c.ll
 ; cmake/optimized/divsufsort.c.ll
@@ -101,17 +100,14 @@ entry:
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
 ; luau/optimized/ltable.cpp.ll
-; nlohmann_json/optimized/unit-bson.cpp.ll
-; nlohmann_json/optimized/unit-cbor.cpp.ll
-; nlohmann_json/optimized/unit-msgpack.cpp.ll
 ; nuttx/optimized/lib_qsort.c.ll
+; opencv/optimized/onnx_importer.cpp.ll
 ; opencv/optimized/svm.cpp.ll
 ; openjdk/optimized/ciMethodData.ll
 ; openjdk/optimized/methodData.ll
 ; openusd/optimized/decodeframe.c.ll
 ; php/optimized/zend_jit.ll
 ; protobuf/optimized/arena.cc.ll
-; pugixml/optimized/pugixml.cpp.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
 ; tls-rs/optimized/4vvnrvl2eceao62c.ll
@@ -122,6 +118,22 @@ define ptr @func0000000000000002(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %.idx = select i1 %0, i64 0, i64 %2
   %3 = getelementptr nusw i8, ptr %1, i64 %.idx
+  ret ptr %3
+}
+
+; 7 occurrences:
+; cmake/optimized/divsufsort.c.ll
+; nlohmann_json/optimized/unit-bson.cpp.ll
+; nlohmann_json/optimized/unit-cbor.cpp.ll
+; nlohmann_json/optimized/unit-msgpack.cpp.ll
+; opencv/optimized/geometry.cpp.ll
+; pugixml/optimized/pugixml.cpp.ll
+; zstd/optimized/divsufsort.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(i1 %0, ptr %1, i64 %2) #0 {
+entry:
+  %.idx = select i1 %0, i64 0, i64 %2
+  %3 = getelementptr nusw nuw i32, ptr %1, i64 %.idx
   ret ptr %3
 }
 

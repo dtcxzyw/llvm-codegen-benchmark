@@ -3,7 +3,7 @@ func0000000000000001:                   # @func0000000000000001
 	vnsrl.wi	v9, v10, 0
 	li	a0, 134
 	vmseq.vx	v9, v9, a0
-	vmand.mm	v8, v9, v8
+	vmand.mm	v8, v8, v9
 	vmand.mm	v0, v8, v0
 	ret
 func000000000000000a:                   # @func000000000000000a

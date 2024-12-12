@@ -1,5 +1,5 @@
 
-; 65 occurrences:
+; 66 occurrences:
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -65,6 +65,7 @@
 ; openssl/optimized/modes_internal_test-bin-modes_internal_test.ll
 ; redis/optimized/ltable.ll
 ; tinympc/optimized/tiny_api.cpp.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0) #0 {
 entry:

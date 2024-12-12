@@ -1,5 +1,6 @@
 
-; 11 occurrences:
+; 12 occurrences:
+; boost/optimized/rational.ll
 ; duckdb/optimized/ub_duckdb_func_cast.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_math.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll

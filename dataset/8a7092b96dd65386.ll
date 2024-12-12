@@ -1,16 +1,7 @@
 
-; 130 occurrences:
-; libphonenumber/optimized/asyoutypeformatter.cc.ll
-; libphonenumber/optimized/phonemetadata.pb.cc.ll
-; libphonenumber/optimized/phonenumbermatcher.cc.ll
-; libphonenumber/optimized/phonenumberutil.cc.ll
-; libphonenumber/optimized/shortnumberinfo.cc.ll
-; libquic/optimized/quic_crypto_server_config.cc.ll
-; libwebp/optimized/enc.c.ll
-; libwebp/optimized/enc_sse2.c.ll
+; 99 occurrences:
 ; llvm/optimized/AArch64PromoteConstant.cpp.ll
 ; llvm/optimized/ADCE.cpp.ll
-; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/AddressSanitizer.cpp.ll
 ; llvm/optimized/AsmWriter.cpp.ll
 ; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
@@ -108,6 +99,23 @@
 ; llvm/optimized/X86LowerAMXType.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; mitsuba3/optimized/appender.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000106(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw i8, ptr %1, i64 -16
+  %3 = icmp eq ptr %1, null
+  %4 = select i1 %3, ptr null, ptr %2
+  %5 = getelementptr nusw i8, ptr %4, i64 %0
+  ret ptr %5
+}
+
+; 27 occurrences:
+; libphonenumber/optimized/asyoutypeformatter.cc.ll
+; libphonenumber/optimized/phonemetadata.pb.cc.ll
+; libphonenumber/optimized/phonenumbermatcher.cc.ll
+; libphonenumber/optimized/phonenumberutil.cc.ll
+; libphonenumber/optimized/shortnumberinfo.cc.ll
+; libquic/optimized/quic_crypto_server_config.cc.ll
 ; opencv/optimized/attr_value.pb.cc.ll
 ; opencv/optimized/function.pb.cc.ll
 ; opencv/optimized/graph.pb.cc.ll
@@ -116,7 +124,7 @@
 ; opencv/optimized/opencv-onnx.pb.cc.ll
 ; opencv/optimized/tensor_shape.pb.cc.ll
 ; opencv/optimized/tf_importer.cpp.ll
-; sentencepiece/optimized/generated_message_util.cc.ll
+; openusd/optimized/pred_common.c.ll
 ; sentencepiece/optimized/pretokenizer_for_training.cc.ll
 ; sentencepiece/optimized/repeated_field.cc.ll
 ; sentencepiece/optimized/sentencepiece.pb.cc.ll
@@ -129,14 +137,41 @@
 ; yalantinglibs/optimized/data_def.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
-; zxing/optimized/ODMultiUPCEANReader.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000086(i64 %0, ptr %1) #0 {
+define ptr @func0000000000000186(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 -16
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 8
   %3 = icmp eq ptr %1, null
   %4 = select i1 %3, ptr null, ptr %2
-  %5 = getelementptr nusw i8, ptr %4, i64 %0
+  %5 = getelementptr nusw ptr, ptr %4, i64 %0
+  ret ptr %5
+}
+
+; 2 occurrences:
+; llvm/optimized/ASTContext.cpp.ll
+; llvm/optimized/LoopVectorize.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000107(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw i8, ptr %1, i64 -24
+  %3 = icmp eq ptr %1, null
+  %4 = select i1 %3, ptr null, ptr %2
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %0
+  ret ptr %5
+}
+
+; 4 occurrences:
+; libwebp/optimized/enc.c.ll
+; libwebp/optimized/enc_sse2.c.ll
+; sentencepiece/optimized/generated_message_util.cc.ll
+; zxing/optimized/ODMultiUPCEANReader.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000187(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 8
+  %3 = icmp eq ptr %1, null
+  %4 = select i1 %3, ptr null, ptr %2
+  %5 = getelementptr nusw nuw ptr, ptr %4, i64 %0
   ret ptr %5
 }
 
@@ -155,9 +190,9 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/tidbitmap.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000084(i64 %0, ptr %1) #0 {
+define ptr @func0000000000000184(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 4
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 4
   %3 = icmp eq ptr %1, null
   %4 = select i1 %3, ptr null, ptr %2
   %5 = getelementptr i32, ptr %4, i64 %0

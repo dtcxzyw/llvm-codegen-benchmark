@@ -14,7 +14,7 @@ func0000000000000009:                   # @func0000000000000009
 	retq
 func0000000000000005:                   # @func0000000000000005
 	movl	%edi, %ecx
-	movl	$2863311531, %eax               # imm = 0xAAAAAAAB
+	movl	$2443359173, %eax               # imm = 0x91A2B3C5
 	imulq	%rcx, %rax
-	shrq	$33, %rax
+	shrq	$43, %rax
 	retq

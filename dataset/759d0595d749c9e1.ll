@@ -4,7 +4,7 @@
 ; linux/optimized/trace_kprobe.ll
 ; ruby/optimized/ruby.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, ptr %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = icmp eq ptr %1, null

@@ -1,7 +1,10 @@
 
-; 74 occurrences:
+; 77 occurrences:
 ; abc/optimized/cuddApprox.c.ll
 ; abseil-cpp/optimized/exponential_biased_test.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/expand_on_spheroid.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
 ; ceres/optimized/loss_function.cc.ll

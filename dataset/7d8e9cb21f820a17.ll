@@ -1,5 +1,6 @@
 
-; 5 occurrences:
+; 6 occurrences:
+; darktable/optimized/darkroom.c.ll
 ; darktable/optimized/introspection_atrous.c.ll
 ; darktable/optimized/snapshots.c.ll
 ; gromacs/optimized/perf_est.cpp.ll

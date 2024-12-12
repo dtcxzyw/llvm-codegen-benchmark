@@ -1,6 +1,5 @@
 
-; 5 occurrences:
-; linux/optimized/int_log.ll
+; 4 occurrences:
 ; openusd/optimized/reconintra.c.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll
 ; qemu/optimized/ui_vnc.c.ll

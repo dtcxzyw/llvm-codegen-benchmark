@@ -4,20 +4,19 @@
 ; rocksdb/optimized/plain_table_bloom.cc.ll
 ; ruby/optimized/md5.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i1 %1, i64 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 64, %2
   %4 = select i1 %1, i64 %3, i64 8
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 28 occurrences:
+; 27 occurrences:
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
 ; delta-rs/optimized/3qkwqfk85qralejq.ll
 ; image-rs/optimized/2mngkegtim1o10y3.ll
 ; influxdb-rs/optimized/1s5ibqekmzia6ibu.ll
-; llvm/optimized/ConstantFolding.cpp.ll
 ; meilisearch-rs/optimized/1bqqlm3jtb9rf3cv.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; minetest/optimized/CColorConverter.cpp.ll
@@ -86,6 +85,17 @@ entry:
   %3 = sub i64 0, %2
   %4 = select i1 %1, i64 %3, i64 0
   %5 = getelementptr nusw i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; llvm/optimized/ConstantFolding.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = sub nsw i64 0, %2
+  %4 = select i1 %1, i64 %3, i64 0
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 

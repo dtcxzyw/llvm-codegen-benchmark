@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 45 occurrences:
 ; coreutils-rs/optimized/5dvo81hn4cx7e334.ll
 ; diesel-rs/optimized/3btvyztn2iiarpvf.ll
 ; fmt/optimized/std-test.cc.ll
@@ -9,7 +9,6 @@
 ; llvm/optimized/LoongArchTargetParser.cpp.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; llvm/optimized/OMP.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SpeculativeExecution.cpp.ll
 ; llvm/optimized/SymbolGraphSerializer.cpp.ll
 ; llvm/optimized/SystemZ.cpp.ll
@@ -38,6 +37,14 @@
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/11rrvqb0alhs5mh4wxxke3etr.ll
+; zed-rs/optimized/1g4llau8b68ay2vvwa3gtrt6g.ll
+; zed-rs/optimized/2ki47jl401le7d880vult9vcg.ll
+; zed-rs/optimized/7z2xfgroq6luy23s4a62wgt90.ll
+; zed-rs/optimized/8aib3kswyxtai67bpawu71ihu.ll
+; zed-rs/optimized/a9n822469hhbvmntwly5c3zys.ll
+; zed-rs/optimized/e7sq1vacbh4jwrroyxorjc2j4.ll
 ; Function Attrs: nounwind
 define { ptr, i64 } @func0000000000000000(ptr %0, i1 %1) #0 {
 entry:

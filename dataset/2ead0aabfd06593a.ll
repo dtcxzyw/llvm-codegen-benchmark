@@ -1,14 +1,12 @@
 
-; 22 occurrences:
+; 20 occurrences:
 ; imgui/optimized/imgui_tables.cpp.ll
 ; lief/optimized/psa_crypto.c.ll
 ; lief/optimized/ssl_msg.c.ll
-; linux/optimized/8250_exar.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/sock.ll
 ; llvm/optimized/SemaDecl.cpp.ll
-; nuttx/optimized/pthread_mutexattr_setprotocol.c.ll
-; nuttx/optimized/pthread_mutexattr_settype.c.ll
+; lvgl/optimized/lv_span.ll
 ; openssl/optimized/libcommon-lib-ciphercommon.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_ocb.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_wrp.ll
@@ -51,7 +49,7 @@ define i8 @func0000000000000001(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i8
   %3 = shl i8 %2, 4
-  %4 = or disjoint i8 %3, %0
+  %4 = or disjoint i8 %0, %3
   ret i8 %4
 }
 
@@ -116,7 +114,7 @@ define i8 @func0000000000000017(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i8
   %3 = shl nuw nsw i8 %2, 4
-  %4 = or disjoint i8 %3, %0
+  %4 = or disjoint i8 %0, %3
   ret i8 %4
 }
 
@@ -150,7 +148,7 @@ define i8 @func0000000000000010(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i8
   %3 = shl i8 %2, 6
-  %4 = or i8 %3, %0
+  %4 = or i8 %0, %3
   ret i8 %4
 }
 

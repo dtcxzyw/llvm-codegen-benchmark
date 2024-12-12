@@ -18,7 +18,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-ucp.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 4
   %3 = and i32 %2, 240

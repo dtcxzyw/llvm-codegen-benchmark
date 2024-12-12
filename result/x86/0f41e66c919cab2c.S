@@ -39,10 +39,24 @@ func0000000000000008:                   # @func0000000000000008
 	orl	$1, %eax
 	retq
 func0000000000000006:                   # @func0000000000000006
-	testb	$1, %dil
+	cmpl	$3, %esi
 	movl	$33566765, %eax                 # imm = 0x200302D
 	movl	$16777261, %ecx                 # imm = 0x100002D
-	cmovel	%ecx, %eax
-	cmpl	$3, %esi
 	cmovgel	%ecx, %eax
+	testb	$1, %dil
+	cmovel	%ecx, %eax
+	retq
+func0000000000000018:                   # @func0000000000000018
+	cmpl	$16777216, %esi                 # imm = 0x1000000
+	setae	%al
+	andb	%dil, %al
+	movzbl	%al, %eax
+	orl	$2, %eax
+	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpl	$5, %esi
+	setb	%al
+	andb	%dil, %al
+	movzbl	%al, %eax
+	xorl	$1649, %eax                     # imm = 0x671
 	retq

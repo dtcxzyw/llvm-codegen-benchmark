@@ -1,5 +1,5 @@
 
-; 119 occurrences:
+; 116 occurrences:
 ; abc/optimized/cecChoice.c.ll
 ; abc/optimized/cecCorr.c.ll
 ; abc/optimized/giaEquiv.c.ll
@@ -13,13 +13,14 @@
 ; assimp/optimized/OgreXmlSerializer.cpp.ll
 ; assimp/optimized/X3DImporter.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/topology.ll
 ; bullet3/optimized/btDeformableMultiBodyConstraintSolver.ll
 ; bullet3/optimized/btDiscreteDynamicsWorld.ll
 ; bullet3/optimized/btMultiBodyConstraintSolver.ll
 ; bullet3/optimized/btReducedDeformableContactConstraint.ll
 ; bullet3/optimized/btSequentialImpulseConstraintSolver.ll
 ; bullet3/optimized/btSimpleDynamicsWorld.ll
-; clamav/optimized/readdb.c.ll
 ; clamav/optimized/scanner.c.ll
 ; cmake/optimized/huf_compress.c.ll
 ; cpython/optimized/sre.ll
@@ -35,7 +36,6 @@
 ; imgui/optimized/imgui.cpp.ll
 ; libevent/optimized/bufferevent_ssl.c.ll
 ; libevent/optimized/evdns.c.ll
-; linux/optimized/af_packet.ll
 ; linux/optimized/avc.ll
 ; linux/optimized/bitset.ll
 ; linux/optimized/i915_gpu_error.ll
@@ -43,11 +43,8 @@
 ; linux/optimized/ip_options.ll
 ; linux/optimized/keyring.ll
 ; linux/optimized/mballoc.ll
-; linux/optimized/nsproxy.ll
-; linux/optimized/raw.ll
 ; linux/optimized/route.ll
 ; linux/optimized/rtnetlink.ll
-; linux/optimized/socket.ll
 ; linux/optimized/tcp_ipv4.ll
 ; llvm/optimized/DeadStoreElimination.cpp.ll
 ; llvm/optimized/ExprClassification.cpp.ll
@@ -120,7 +117,7 @@
 ; wireshark/optimized/packet-lwm.c.ll
 ; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000042(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 24576
   %3 = icmp eq i32 %2, 8192
@@ -156,7 +153,7 @@ entry:
 ; slurm/optimized/slurmdb_defs.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000318(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 67
   %3 = icmp ne i32 %2, 0
@@ -209,7 +206,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/wmem_allocator_block.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000058(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 64
   %3 = icmp ne i32 %2, 0
@@ -218,7 +215,7 @@ entry:
   ret i1 %5
 }
 
-; 402 occurrences:
+; 401 occurrences:
 ; bullet3/optimized/btDiscreteDynamicsWorld.ll
 ; bullet3/optimized/btMultiBodyDynamicsWorld.ll
 ; clap-rs/optimized/3b4nqkxyl1xqdcre.ll
@@ -472,7 +469,6 @@ entry:
 ; llvm/optimized/QualTypeNames.cpp.ll
 ; llvm/optimized/RISCVCodeGenPrepare.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVOptWInstrs.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
@@ -622,24 +618,12 @@ entry:
 ; redis/optimized/t_stream.ll
 ; slurm/optimized/job_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000302(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 32
   %3 = icmp eq i32 %2, 0
   %4 = icmp ne ptr %0, null
   %5 = or i1 %3, %4
-  ret i1 %5
-}
-
-; 1 occurrences:
-; slurm/optimized/reservation.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000102(ptr %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 255
-  %3 = icmp ugt i32 %2, 2
-  %4 = icmp eq ptr %0, null
-  %5 = or i1 %4, %3
   ret i1 %5
 }
 

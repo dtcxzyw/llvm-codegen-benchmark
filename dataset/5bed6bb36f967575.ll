@@ -1,5 +1,5 @@
 
-; 335 occurrences:
+; 336 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
@@ -9,6 +9,12 @@
 ; arrow/optimized/tdigest.cc.ll
 ; assimp/optimized/IFCBoolean.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; brotli/optimized/bit_cost.c.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/idas.c.ll
@@ -71,7 +77,6 @@
 ; gromacs/optimized/gmx_gyrate.cpp.ll
 ; grpc/optimized/histogram_view.cc.ll
 ; hdf5/optimized/H5timer.c.ll
-; hdf5/optimized/io_timer.c.ll
 ; hermes/optimized/Array.cpp.ll
 ; hermes/optimized/Timer.cpp.ll
 ; icu/optimized/astro.ll
@@ -82,7 +87,6 @@
 ; imgui/optimized/imgui.cpp.ll
 ; ipopt/optimized/IpCGPenaltyCq.ll
 ; ipopt/optimized/IpDenseVector.ll
-; ipopt/optimized/IpUtils.ll
 ; libjpeg-turbo/optimized/tjbench.c.ll
 ; lightgbm/optimized/objective_function.cpp.ll
 ; llvm/optimized/Timer.cpp.ll
@@ -187,7 +191,6 @@
 ; postgres/optimized/geo_ops.ll
 ; proj/optimized/boggs.cpp.ll
 ; proj/optimized/bonne.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; proj/optimized/deriv.cpp.ll
 ; proj/optimized/eqdc.cpp.ll
 ; proj/optimized/geodesic.c.ll
@@ -203,7 +206,6 @@
 ; proj/optimized/nell.cpp.ll
 ; proj/optimized/poly.cpp.ll
 ; proj/optimized/sconics.cpp.ll
-; proj/optimized/wink2.cpp.ll
 ; quantlib/optimized/analytic_discr_geom_av_price.ll
 ; quantlib/optimized/analytic_discr_geom_av_price_heston.ll
 ; quantlib/optimized/analyticbarrierengine.ll
@@ -320,7 +322,6 @@
 ; wireshark/optimized/rtp_player_dialog.cpp.ll
 ; wireshark/optimized/tap-rtp-analysis.c.ll
 ; wireshark/optimized/tcp_stream_dialog.cpp.ll
-; wireshark/optimized/time_util.c.ll
 ; wolfssl/optimized/api.c.ll
 ; wolfssl/optimized/benchmark.c.ll
 ; wolfssl/optimized/client.c.ll

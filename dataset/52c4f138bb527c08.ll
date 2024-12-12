@@ -1,5 +1,6 @@
 
-; 12 occurrences:
+; 13 occurrences:
+; boost/optimized/message.ll
 ; folly/optimized/Zlib.cpp.ll
 ; llvm/optimized/COFFObjectFile.cpp.ll
 ; rocksdb/optimized/agg_merge.cc.ll
@@ -17,7 +18,7 @@ define i64 @func0000000000000002(i64 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = zext i32 %1 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = sub i64 %3, %5
   ret i64 %6
 }
@@ -34,7 +35,7 @@ define i64 @func0000000000000000(i64 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = zext i32 %1 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = sub i64 %3, %5
   ret i64 %6
 }

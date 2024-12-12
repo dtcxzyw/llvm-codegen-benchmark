@@ -4,9 +4,9 @@
 	.quad	-7723592293110705685            # 0x94d049bb133111eb
 func0000000000000000:                   # @func0000000000000000
 	vpmullq	.LCPI0_0(%rip){1to4}, %ymm2, %ymm2
-	vpxor	%ymm1, %ymm2, %ymm1
+	vpxor	%ymm2, %ymm1, %ymm1
 	vpmullq	.LCPI0_1(%rip){1to4}, %ymm1, %ymm1
-	vpxor	%ymm0, %ymm1, %ymm0
+	vpxor	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.quad	16777619                        # 0x1000193
@@ -23,9 +23,9 @@ func0000000000000004:                   # @func0000000000000004
 	.quad	21                              # 0x15
 func0000000000000005:                   # @func0000000000000005
 	vpmullq	.LCPI2_0(%rip){1to4}, %ymm2, %ymm2
-	vpxor	%ymm1, %ymm2, %ymm1
+	vpxor	%ymm2, %ymm1, %ymm1
 	vpmullq	.LCPI2_1(%rip){1to4}, %ymm1, %ymm1
-	vpxor	%ymm0, %ymm1, %ymm0
+	vpxor	%ymm1, %ymm0, %ymm0
 	retq
 func000000000000000f:                   # @func000000000000000f
 	vpsllq	$5, %ymm2, %ymm3

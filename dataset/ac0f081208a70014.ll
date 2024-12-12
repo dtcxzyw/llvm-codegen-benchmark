@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 22 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; brotli/optimized/compress_fragment.c.ll
@@ -20,6 +20,7 @@
 ; llvm/optimized/SplitKit.cpp.ll
 ; llvm/optimized/VarLocBasedImpl.cpp.ll
 ; llvm/optimized/X86InstCombineIntrinsic.cpp.ll
+; openspiel/optimized/2048.cc.ll
 ; ruby/optimized/signal.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0, i64 %1) #0 {
@@ -34,7 +35,7 @@ entry:
 ; openjdk/optimized/check_code.ll
 ; verilator/optimized/V3Const__gen.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000006a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = freeze i32 %0
@@ -78,7 +79,7 @@ entry:
 ; postgres/optimized/geo_ops.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = freeze i32 %0
@@ -114,7 +115,7 @@ entry:
 ; gromacs/optimized/dasum.cpp.ll
 ; gromacs/optimized/sasum.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000046(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = freeze i32 %0
@@ -127,7 +128,7 @@ entry:
 ; gromacs/optimized/sdot.cpp.ll
 ; icu/optimized/ucnv_u8.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000004a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = freeze i32 %0
@@ -139,7 +140,7 @@ entry:
 ; z3/optimized/lar_solver.cpp.ll
 ; z3/optimized/polynomial.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = freeze i32 %0
@@ -150,7 +151,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/dtptngen.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = freeze i32 %0

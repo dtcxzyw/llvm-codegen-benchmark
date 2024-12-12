@@ -1,8 +1,15 @@
 
-; 34 occurrences:
+; 40 occurrences:
 ; abc/optimized/ifReduce.c.ll
 ; abc/optimized/ivyFastMap.c.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; cpython/optimized/listobject.ll
 ; cpython/optimized/rangeobject.ll
 ; cpython/optimized/sre.ll
@@ -31,7 +38,6 @@
 ; openssl/optimized/libssl-shlib-t1_lib.ll
 ; openssl/optimized/libssl-shlib-t1_trce.ll
 ; redis/optimized/lolwut5.ll
-; slurm/optimized/slurm_rlimits_info.ll
 ; wireshark/optimized/packet-snort.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
@@ -53,6 +59,20 @@ define i32 @func0000000000000004(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
   %4 = icmp ult i32 %1, 1073741824
+  %5 = select i1 %4, i32 %3, i32 %0
+  ret i32 %5
+}
+
+; 4 occurrences:
+; wireshark/optimized/packet-ppi-antenna.c.ll
+; wireshark/optimized/packet-ppi-gps.c.ll
+; wireshark/optimized/packet-ppi-sensor.c.ll
+; wireshark/optimized/packet-ppi-vector.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, i32 %1, i1 %2) #0 {
+entry:
+  %3 = zext i1 %2 to i32
+  %4 = icmp samesign ult i32 %1, 4194304
   %5 = select i1 %4, i32 %3, i32 %0
   ret i32 %5
 }

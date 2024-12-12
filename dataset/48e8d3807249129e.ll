@@ -17,11 +17,12 @@ entry:
   ret i64 %2
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; image-rs/optimized/249ukonr3l56u09i.ll
 ; linux/optimized/intel_sseu.ll
 ; openusd/optimized/dualQuath.cpp.ll
 ; typst-rs/optimized/al9nyr8ju52xbc2.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i16 %0) #0 {
 entry:

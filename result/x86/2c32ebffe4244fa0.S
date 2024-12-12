@@ -8,7 +8,7 @@ func000000000000000c:                   # @func000000000000000c
 	andl	$2147483640, %eax               # imm = 0x7FFFFFF8
 	addq	%rdi, %rax
 	retq
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	movzwl	%si, %eax
 	decl	%eax
 	leaq	(%rdi,%rax,8), %rax

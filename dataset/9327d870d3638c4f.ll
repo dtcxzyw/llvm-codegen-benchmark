@@ -1,12 +1,12 @@
 
-%"struct.llvm::rdf::PhysicalRegisterInfo::MaskInfo.2984616" = type { %"class.llvm::BitVector.2984601" }
-%"class.llvm::BitVector.2984601" = type <{ %"class.llvm::SmallVector.2984602", i32, [4 x i8] }>
-%"class.llvm::SmallVector.2984602" = type { %"class.llvm::SmallVectorImpl.2984603", %"struct.llvm::SmallVectorStorage.2984604" }
-%"class.llvm::SmallVectorImpl.2984603" = type { %"class.llvm::SmallVectorTemplateBase.2984605" }
-%"class.llvm::SmallVectorTemplateBase.2984605" = type { %"class.llvm::SmallVectorTemplateCommon.2984606" }
-%"class.llvm::SmallVectorTemplateCommon.2984606" = type { %"class.llvm::SmallVectorBase.2984607" }
-%"class.llvm::SmallVectorBase.2984607" = type { ptr, i32, i32 }
-%"struct.llvm::SmallVectorStorage.2984604" = type { [48 x i8] }
+%"struct.llvm::rdf::PhysicalRegisterInfo::MaskInfo.3178094" = type { %"class.llvm::BitVector.3178079" }
+%"class.llvm::BitVector.3178079" = type <{ %"class.llvm::SmallVector.3178080", i32, [4 x i8] }>
+%"class.llvm::SmallVector.3178080" = type { %"class.llvm::SmallVectorImpl.3178081", %"struct.llvm::SmallVectorStorage.3178082" }
+%"class.llvm::SmallVectorImpl.3178081" = type { %"class.llvm::SmallVectorTemplateBase.3178083" }
+%"class.llvm::SmallVectorTemplateBase.3178083" = type { %"class.llvm::SmallVectorTemplateCommon.3178084" }
+%"class.llvm::SmallVectorTemplateCommon.3178084" = type { %"class.llvm::SmallVectorBase.3178085" }
+%"class.llvm::SmallVectorBase.3178085" = type { ptr, i32, i32 }
+%"struct.llvm::SmallVectorStorage.3178082" = type { [48 x i8] }
 
 ; 68 occurrences:
 ; crow/optimized/example.cpp.ll
@@ -83,32 +83,24 @@ entry:
   %3 = and i64 %2, -8
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -8
-  %6 = icmp ugt ptr %5, %0
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
-; 14 occurrences:
-; abseil-cpp/optimized/cord_rep_btree.cc.ll
+; 6 occurrences:
 ; folly/optimized/farmhash.cpp.ll
-; hermes/optimized/BytecodeGenerator.cpp.ll
 ; hermes/optimized/SimpleBytecodeBuilder.cpp.ll
-; hermes/optimized/SourceMapGenerator.cpp.ll
-; llvm/optimized/ASTWriterDecl.cpp.ll
-; llvm/optimized/SemaType.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; oiio/optimized/farmhash.cpp.ll
 ; oiio/optimized/imagebuf.cpp.ll
 ; oiio/optimized/ustring.cpp.ll
-; opencv/optimized/onnx_importer.cpp.ll
 ; spike/optimized/sim.ll
-; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000041(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -1
   %4 = and i64 %3, -64
   %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = icmp eq ptr %5, %0
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
@@ -116,24 +108,44 @@ entry:
 ; openvdb/optimized/Filter.cc.ll
 ; openvdb/optimized/LevelSetFilter.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000000e8(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -2
   %4 = and i64 %3, -4
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = icmp ult ptr %5, %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = icmp ugt ptr %0, %5
+  ret i1 %6
+}
+
+; 9 occurrences:
+; abseil-cpp/optimized/cord_rep_btree.cc.ll
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
+; hermes/optimized/BytecodeGenerator.cpp.ll
+; hermes/optimized/SourceMapGenerator.cpp.ll
+; llvm/optimized/ASTWriterDecl.cpp.ll
+; llvm/optimized/SemaType.cpp.ll
+; opencv/optimized/onnx_importer.cpp.ll
+; yosys/optimized/fstapi.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000061(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %2, 7
+  %4 = and i64 %3, -8
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; entt/optimized/storage.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000000e1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1023
   %4 = and i64 %3, 1023
-  %5 = getelementptr nusw i32, ptr %1, i64 %4
-  %6 = icmp eq ptr %5, %0
+  %5 = getelementptr nusw nuw i32, ptr %1, i64 %4
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
@@ -142,12 +154,12 @@ entry:
 ; llvm/optimized/RDFRegisters.cpp.ll
 ; meshlab/optimized/rimls.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e1(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000001e1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr nusw %"struct.llvm::rdf::PhysicalRegisterInfo::MaskInfo.2984616", ptr %1, i64 %4
-  %6 = icmp eq ptr %5, %0
+  %5 = getelementptr nusw nuw %"struct.llvm::rdf::PhysicalRegisterInfo::MaskInfo.3178094", ptr %1, i64 %4
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 

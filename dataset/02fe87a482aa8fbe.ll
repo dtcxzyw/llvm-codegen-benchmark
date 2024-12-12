@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 34 occurrences:
 ; git/optimized/pack-bitmap-write.ll
 ; linux/optimized/eeepc-laptop.ll
 ; linux/optimized/hid-lg.ll
@@ -31,27 +31,15 @@
 ; luajit/optimized/lj_opt_fold.ll
 ; luajit/optimized/lj_opt_fold_dyn.ll
 ; openjdk/optimized/check_code.ll
+; openjdk/optimized/classFileParser.ll
 ; php/optimized/zend_jit.ll
 ; slurm/optimized/node_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i1 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 31
-  %3 = add nsw i32 %2, -13
-  %4 = icmp ult i32 %3, 4
-  %5 = select i1 %0, i1 %4, i1 false
-  ret i1 %5
-}
-
-; 2 occurrences:
-; clamav/optimized/pe.c.ll
-; wireshark/optimized/packet-flip.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 65535
-  %3 = add nsw i32 %2, -99
-  %4 = icmp ult i32 %3, -7
+  %2 = and i32 %1, 65534
+  %3 = add nsw i32 %2, -48
+  %4 = icmp ult i32 %3, 10
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }

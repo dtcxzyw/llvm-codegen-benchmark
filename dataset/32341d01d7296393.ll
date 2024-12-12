@@ -1,5 +1,6 @@
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/approximately_equals.ll
 ; cpython/optimized/bltinmodule.ll
 ; cpython/optimized/mathmodule.ll
 ; graphviz/optimized/shapes.c.ll

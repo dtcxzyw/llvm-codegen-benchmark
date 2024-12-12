@@ -30,3 +30,11 @@ func000000000000001b:                   # @func000000000000001b
 	vpsrld	$5, %ymm0, %ymm0
 	vpmulld	%ymm1, %ymm0, %ymm0
 	retq
+.LCPI4_0:
+	.long	255                             # 0xff
+func0000000000000008:                   # @func0000000000000008
+	vpbroadcastd	.LCPI4_0(%rip), %ymm2   # ymm2 = [255,255,255,255,255,255,255,255]
+	vpsubd	%ymm1, %ymm2, %ymm1
+	vpsrld	$10, %ymm0, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
+	retq

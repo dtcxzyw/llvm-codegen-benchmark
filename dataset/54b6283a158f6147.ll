@@ -7,7 +7,7 @@ entry:
   %3 = or i32 %1, %2
   %4 = and i32 %3, 8388608
   %.masked = and i32 %0, -7340033
-  %5 = or i32 %4, %.masked
+  %5 = or i32 %.masked, %4
   %6 = or disjoint i32 %5, 1048576
   ret i32 %6
 }
@@ -33,7 +33,7 @@ entry:
   %3 = or disjoint i32 %1, %2
   %4 = and i32 %3, 123000
   %.masked = and i32 %0, 123003
-  %5 = or i32 %4, %.masked
+  %5 = or i32 %.masked, %4
   %6 = or disjoint i32 %5, 128
   ret i32 %6
 }

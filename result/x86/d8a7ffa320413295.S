@@ -23,13 +23,6 @@ func0000000000000000:                   # @func0000000000000000
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
-	shll	$16, %esi
-	leal	65536(%rsi), %ecx
-	testb	$1, %dil
-	movl	$65536, %eax                    # imm = 0x10000
-	cmovel	%ecx, %eax
-	retq
 func0000000000000003:                   # @func0000000000000003
 	leal	-4(,%rsi,4), %ecx
 	xorl	%eax, %eax

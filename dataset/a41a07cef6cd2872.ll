@@ -47,16 +47,4 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
-; linux/optimized/intel_audio.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000006(i32 %0) #0 {
-entry:
-  %1 = shl i32 %0, 2
-  %2 = add i32 %1, -4
-  %3 = zext nneg i32 %2 to i64
-  %4 = shl nuw i64 1, %3
-  ret i64 %4
-}
-
 attributes #0 = { nounwind }

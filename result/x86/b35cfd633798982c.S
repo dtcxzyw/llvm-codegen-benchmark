@@ -1,10 +1,11 @@
 func0000000000000001:                   # @func0000000000000001
-	movzbl	%sil, %eax
+	movl	%esi, %eax
+	andl	$1, %eax
 	subl	%edi, %eax
 	retq
 func0000000000000000:                   # @func0000000000000000
 	movl	%esi, %eax
-	andl	$-1793, %eax                    # imm = 0xF8FF
+	andl	$252, %eax
 	subl	%edi, %eax
 	retq
 func0000000000000002:                   # @func0000000000000002

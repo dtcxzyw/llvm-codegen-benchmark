@@ -1,7 +1,7 @@
 func0000000000000052:                   # @func0000000000000052
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v12, v12, 4
-	vadd.vv	v10, v12, v10
+	vadd.vv	v10, v10, v12
 	li	a0, 63
 	vsrl.vx	v12, v10, a0
 	vadd.vv	v10, v10, v12
@@ -12,7 +12,7 @@ func0000000000000052:                   # @func0000000000000052
 func0000000000000042:                   # @func0000000000000042
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v12, v12, 5
-	vadd.vv	v10, v12, v10
+	vadd.vv	v10, v10, v12
 	li	a0, 63
 	vsrl.vx	v12, v10, a0
 	vadd.vv	v10, v10, v12

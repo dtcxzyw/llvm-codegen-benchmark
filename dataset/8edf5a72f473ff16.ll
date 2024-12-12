@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 24 occurrences:
 ; abc/optimized/giaEmbed.c.ll
 ; abc/optimized/giaForce.c.ll
 ; cmake/optimized/archive_rb.c.ll
@@ -23,16 +23,17 @@
 ; llvm/optimized/LoopFuse.cpp.ll
 ; ruby/optimized/enumerator.ll
 ; wireshark/optimized/tvbuff.c.ll
+; zed-rs/optimized/6i9q21vg747q3orsxnutiwubi.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 1
   %3 = select i1 %2, i64 2, i64 0
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
-; 324 occurrences:
+; 323 occurrences:
 ; abc/optimized/absRef.c.ll
 ; abc/optimized/cecSolve.c.ll
 ; abc/optimized/cecSolveG.c.ll
@@ -54,10 +55,9 @@ entry:
 ; linux/optimized/badblocks.ll
 ; linux/optimized/ds.ll
 ; linux/optimized/efi_64.ll
-; linux/optimized/hid-cypress.ll
 ; linux/optimized/intel-gtt.ll
 ; linux/optimized/intel_ggtt.ll
-; linux/optimized/io_pgtable_v2.ll
+; linux/optimized/maple_tree.ll
 ; linux/optimized/net_failover.ll
 ; linux/optimized/sd.ll
 ; linux/optimized/sit.ll
@@ -237,7 +237,6 @@ entry:
 ; llvm/optimized/Program.cpp.ll
 ; llvm/optimized/PromoteMemoryToRegister.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVMCCodeEmitter.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
@@ -357,6 +356,7 @@ entry:
 ; wolfssl/optimized/ssl.c.ll
 ; z3/optimized/smt_theory.cpp.ll
 ; z3/optimized/theory_seq.cpp.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i32 %1) #0 {
 entry:
@@ -378,11 +378,11 @@ define i64 @func000000000000000d(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 0
   %3 = select i1 %2, i64 0, i64 8192
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
-; 29 occurrences:
+; 30 occurrences:
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
@@ -405,6 +405,7 @@ entry:
 ; linux/optimized/mlme.ll
 ; linux/optimized/nf_nat_core.ll
 ; llvm/optimized/AArch64AsmBackend.cpp.ll
+; llvm/optimized/NetBSD.cpp.ll
 ; llvm/optimized/SemaObjCProperty.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; openjdk/optimized/vm_version_x86.ll
@@ -417,16 +418,12 @@ define i64 @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 8
   %3 = select i1 %2, i64 9, i64 1
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
-; 11 occurrences:
+; 7 occurrences:
 ; abc/optimized/absGla.c.ll
-; lief/optimized/CoreAuxv.cpp.ll
-; lief/optimized/Note.cpp.ll
-; lief/optimized/RelocationSizes.cpp.ll
-; lief/optimized/RelocationStrings.cpp.ll
 ; llvm/optimized/ASTImporter.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
@@ -442,13 +439,26 @@ entry:
   ret i64 %4
 }
 
-; 6 occurrences:
+; 4 occurrences:
+; lief/optimized/CoreAuxv.cpp.ll
+; lief/optimized/Note.cpp.ll
+; lief/optimized/RelocationSizes.cpp.ll
+; lief/optimized/RelocationStrings.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000031(i64 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i32 %1, 134217743
+  %3 = select i1 %2, i64 264, i64 8
+  %4 = or disjoint i64 %0, %3
+  ret i64 %4
+}
+
+; 5 occurrences:
 ; libquic/optimized/cached_network_parameters.pb.cc.ll
 ; libquic/optimized/source_address_token.pb.cc.ll
 ; llvm/optimized/TargetLoweringObjectFileImpl.cpp.ll
 ; llvm/optimized/TargetMachineC.cpp.ll
 ; luau/optimized/Parser.cpp.ll
-; openspiel/optimized/dou_dizhu_utils.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000009(i64 %0, i32 %1) #0 {
 entry:
@@ -470,6 +480,17 @@ entry:
   %2 = select i1 %.not, i64 0, i64 4294967296
   %3 = or disjoint i64 %2, %0
   ret i64 %3
+}
+
+; 1 occurrences:
+; openspiel/optimized/dou_dizhu_utils.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000029(i64 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 23104
+  %3 = select i1 %2, i64 1, i64 2
+  %4 = or disjoint i64 %0, %3
+  ret i64 %4
 }
 
 attributes #0 = { nounwind }

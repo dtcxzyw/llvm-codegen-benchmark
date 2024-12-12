@@ -202,13 +202,15 @@ entry:
   ret i1 %3
 }
 
-; 161 occurrences:
+; 163 occurrences:
 ; abc/optimized/giaScript.c.ll
 ; abc/optimized/lpkCore.c.ll
 ; abseil-cpp/optimized/chi_square.cc.ll
 ; assimp/optimized/IFCBoolean.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; bullet3/optimized/btGjkPairDetector.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
@@ -494,7 +496,7 @@ entry:
   ret i1 %3
 }
 
-; 90 occurrences:
+; 89 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/duration_test.cc.ll
 ; abseil-cpp/optimized/graphcycles_test.cc.ll
@@ -529,7 +531,6 @@ entry:
 ; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/HWAddressSanitizer.cpp.ll
 ; llvm/optimized/LowerAllowCheckPass.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; nix/optimized/filetransfer.ll
 ; opencv/optimized/edge_drawing.cpp.ll
 ; opencv/optimized/gfluidbackend.cpp.ll

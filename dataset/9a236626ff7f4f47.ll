@@ -1,5 +1,5 @@
 
-; 56 occurrences:
+; 57 occurrences:
 ; cmake/optimized/nghttp2_session.c.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; eastl/optimized/TestSort.cpp.ll
@@ -9,6 +9,7 @@
 ; linux/optimized/md-bitmap.ll
 ; linux/optimized/md.ll
 ; linux/optimized/tree.ll
+; meilisearch-rs/optimized/4llghrvh6vzci59o.ll
 ; nghttp2/optimized/nghttp2_session.c.ll
 ; node/optimized/libnode.node_report.ll
 ; node/optimized/libnode.session.ll

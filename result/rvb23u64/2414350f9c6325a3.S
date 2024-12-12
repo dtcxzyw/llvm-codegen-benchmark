@@ -4,6 +4,21 @@ func0000000000000037:                   # @func0000000000000037
 	srliw	a1, a1, 12
 	addw	a0, a0, a1
 	ret
+func0000000000000003:                   # @func0000000000000003
+	lui	a2, 1048397
+	addi	a2, a2, 261
+	mul	a1, a1, a2
+	srliw	a1, a1, 20
+	addw	a0, a0, a1
+	ret
+func0000000000000002:                   # @func0000000000000002
+	lui	a2, 19
+	addi	a2, a2, 1089
+	mul	a1, a1, a2
+	srliw	a1, a1, 18
+	add	a0, a0, a1
+	zext.w	a0, a0
+	ret
 func0000000000000007:                   # @func0000000000000007
 	lui	a2, 4112
 	addi	a2, a2, 257

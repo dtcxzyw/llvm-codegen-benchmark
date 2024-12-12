@@ -22,7 +22,7 @@ entry:
   %4 = fmul float %1, 5.000000e-01
   %5 = fadd float %4, %3
   %6 = fmul float %5, 5.000000e-01
-  %7 = fadd float %6, %0
+  %7 = fadd float %0, %6
   ret float %7
 }
 

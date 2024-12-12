@@ -20,7 +20,15 @@ func0000000000000024:                   # @func0000000000000024
 	andq	$-2, %rax
 	leaq	(%rdi,%rax,4), %rax
 	retq
-func0000000000000006:                   # @func0000000000000006
+func0000000000000027:                   # @func0000000000000027
+	leaq	-1(%rsi), %rax
+	addq	$2, %rsi
+	testq	%rax, %rax
+	cmovnsq	%rax, %rsi
+	andq	$-4, %rsi
+	leaq	(%rdi,%rsi,8), %rax
+	retq
+func0000000000000007:                   # @func0000000000000007
 	leaq	1(%rsi), %rax
 	addq	$4, %rsi
 	testq	%rax, %rax

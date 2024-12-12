@@ -2,33 +2,21 @@ func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
 	mov	w8, #15641                      // =0x3d19
 	movk	w8, #6856, lsl #16
-	dup	v2.4s, w8
-	smull2	v3.2d, v1.4s, v2.4s
-	smull	v1.2d, v1.2s, v2.2s
-	movi	v2.4s, #2
-	uzp2	v1.4s, v1.4s, v3.4s
-	add	v0.4s, v0.4s, v2.4s
-	sshr	v3.4s, v1.4s, #8
-	usra	v3.4s, v1.4s, #31
-	add	v0.4s, v3.4s, v0.4s
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
+	smull	x8, w1, w8
+	asr	x8, x8, #40
+	add	w8, w8, w8, lsr #31
+	add	w8, w8, w0
+	add	w0, w8, #2
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
 	mov	w8, #62415                      // =0xf3cf
 	movk	w8, #53052, lsl #16
-	dup	v2.4s, w8
-	smull2	v3.2d, v1.4s, v2.4s
-	smull	v1.2d, v1.2s, v2.2s
-	uzp2	v1.4s, v1.4s, v3.4s
-	mvni	v3.4s, #3
-	add	v0.4s, v0.4s, v3.4s
-	sshr	v2.4s, v1.4s, #2
-	usra	v2.4s, v1.4s, #31
-	add	v0.4s, v2.4s, v0.4s
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
+	smull	x8, w1, w8
+	asr	x8, x8, #34
+	add	w8, w8, w8, lsr #31
+	add	w8, w8, w0
+	sub	w0, w8, #4
 	ret
                                         // -- End function

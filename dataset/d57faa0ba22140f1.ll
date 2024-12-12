@@ -1,5 +1,7 @@
 
-; 13 occurrences:
+; 15 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/cvodes.c.ll
 ; gromacs/optimized/gmx_dos.cpp.ll
 ; gromacs/optimized/sfactor.cpp.ll

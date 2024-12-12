@@ -1,5 +1,6 @@
 
-; 3 occurrences:
+; 4 occurrences:
+; lvgl/optimized/lv_tlsf.ll
 ; node/optimized/libnode.node_file.ll
 ; openjdk/optimized/screencast_pipewire.ll
 ; verilator/optimized/V3OrderParallel.cpp.ll
@@ -8,7 +9,7 @@ define i1 @func0000000000000001(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 8
   %3 = inttoptr i64 %2 to ptr
-  %4 = icmp eq ptr %3, %0
+  %4 = icmp eq ptr %0, %3
   ret i1 %4
 }
 
@@ -25,11 +26,23 @@ entry:
 ; openjdk/optimized/escape.ll
 ; openjdk/optimized/jvm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000021(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -960
   %3 = inttoptr i64 %2 to ptr
-  %4 = icmp eq ptr %3, %0
+  %4 = icmp eq ptr %0, %3
+  ret i1 %4
+}
+
+; 2 occurrences:
+; boost/optimized/work_stealing.ll
+; linux/optimized/ioremap.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(ptr %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %1, 232
+  %3 = inttoptr i64 %2 to ptr
+  %4 = icmp ult ptr %0, %3
   ret i1 %4
 }
 
@@ -43,7 +56,7 @@ define i1 @func0000000000000008(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 983040
   %3 = inttoptr i64 %2 to ptr
-  %4 = icmp ult ptr %3, %0
+  %4 = icmp ugt ptr %0, %3
   ret i1 %4
 }
 
@@ -54,18 +67,7 @@ define i1 @func0000000000000009(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 655360
   %3 = inttoptr i64 %2 to ptr
-  %4 = icmp ule ptr %3, %0
-  ret i1 %4
-}
-
-; 1 occurrences:
-; linux/optimized/ioremap.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(ptr %0, i64 %1) #0 {
-entry:
-  %2 = add i64 %1, 1048576
-  %3 = inttoptr i64 %2 to ptr
-  %4 = icmp ugt ptr %3, %0
+  %4 = icmp uge ptr %0, %3
   ret i1 %4
 }
 
@@ -77,7 +79,7 @@ define i1 @func0000000000000005(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -8
   %3 = inttoptr i64 %2 to ptr
-  %4 = icmp uge ptr %3, %0
+  %4 = icmp ule ptr %0, %3
   ret i1 %4
 }
 

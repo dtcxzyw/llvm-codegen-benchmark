@@ -1,5 +1,5 @@
 
-; 39 occurrences:
+; 38 occurrences:
 ; abc/optimized/cuddExact.c.ll
 ; clamav/optimized/petite.c.ll
 ; cmake/optimized/cmConditionEvaluator.cxx.ll
@@ -11,7 +11,6 @@
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; linux/optimized/extents_status.ll
 ; linux/optimized/intel_guc_submission.ll
-; linux/optimized/mpi-mul.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
 ; llvm/optimized/ConstantRange.cpp.ll
 ; llvm/optimized/DbiModuleDescriptorBuilder.cpp.ll
@@ -48,7 +47,7 @@ entry:
   ret i32 %5
 }
 
-; 143 occurrences:
+; 144 occurrences:
 ; abc/optimized/amapLiberty.c.ll
 ; abc/optimized/cbaReadVer.c.ll
 ; abc/optimized/giaFront.c.ll
@@ -56,6 +55,7 @@ entry:
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/ifTune.c.ll
 ; abc/optimized/wlcReadVer.c.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/vba_extract.c.ll
 ; cmake/optimized/cmIfCommand.cxx.ll
 ; cmake/optimized/huf_compress.c.ll
@@ -201,7 +201,8 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; icu/optimized/ubidiln.ll
 ; stockfish/optimized/search.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i32 %0, i32 %1, i1 %2) #0 {
@@ -224,9 +225,8 @@ entry:
   ret i32 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; cmake/optimized/fse_compress.c.ll
-; icu/optimized/ubidiln.ll
 ; opencv/optimized/persistence_xml.cpp.ll
 ; openmpi/optimized/coll_base_topo.ll
 ; stockfish/optimized/search.ll
@@ -240,9 +240,10 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; git/optimized/date.ll
 ; llvm/optimized/TokenAnnotator.cpp.ll
+; lvgl/optimized/lv_calendar.ll
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; stb/optimized/stb_dxt.c.ll

@@ -83,28 +83,27 @@ func000000000000002c:                   # @func000000000000002c
 	vpaddd	.LCPI13_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI14_0:
-	.long	2                               # 0x2
-func0000000000000035:                   # @func0000000000000035
+	.long	4294967292                      # 0xfffffffc
+func0000000000000014:                   # @func0000000000000014
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpaddd	.LCPI14_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI15_0:
-	.long	4294967292                      # 0xfffffffc
-func0000000000000014:                   # @func0000000000000014
+	.long	5                               # 0x5
+func0000000000000008:                   # @func0000000000000008
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpaddd	.LCPI15_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI16_0:
-	.long	5                               # 0x5
-func0000000000000008:                   # @func0000000000000008
-	vpaddd	%ymm1, %ymm0, %ymm0
-	vpaddd	.LCPI16_0(%rip){1to8}, %ymm0, %ymm0
-	retq
-.LCPI17_0:
 	.long	2                               # 0x2
 func000000000000001f:                   # @func000000000000001f
 	vpaddd	%ymm1, %ymm0, %ymm0
-	vpaddd	.LCPI17_0(%rip){1to8}, %ymm0, %ymm0
+	vpaddd	.LCPI16_0(%rip){1to8}, %ymm0, %ymm0
+	retq
+func0000000000000035:                   # @func0000000000000035
+	vpaddd	%ymm1, %ymm0, %ymm0
+	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI18_0:
 	.long	224                             # 0xe0

@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 24 occurrences:
 ; gromacs/optimized/eneconv.cpp.ll
 ; gromacs/optimized/gmx_analyze.cpp.ll
 ; gromacs/optimized/gmx_density.cpp.ll
@@ -23,11 +23,12 @@
 ; opencv/optimized/shapedescr.cpp.ll
 ; pbrt-v4/optimized/lights.cpp.ll
 ; xgboost/optimized/rank_metric.cc.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(double %0, double %1, float %2) #0 {
 entry:
   %3 = fpext float %2 to double
-  %4 = fadd double %3, %1
+  %4 = fadd double %1, %3
   %5 = fdiv double %4, %0
   ret double %5
 }

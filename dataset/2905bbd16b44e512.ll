@@ -12,18 +12,16 @@ entry:
   ret i64 %3
 }
 
-; 22 occurrences:
-; abseil-cpp/optimized/arg.cc.ll
+; 20 occurrences:
 ; assimp/optimized/PlyParser.cpp.ll
-; cmake/optimized/archive_read_support_format_mtree.c.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
 ; folly/optimized/Uri.cpp.ll
-; git/optimized/apply.ll
 ; git/optimized/sh-i18n--envsubst.ll
-; hermes/optimized/BigIntSupport.cpp.ll
 ; linux/optimized/mlme.ll
 ; llvm/optimized/AsmPrinterInlineAsm.cpp.ll
 ; llvm/optimized/LiteralSupport.cpp.ll
@@ -36,9 +34,23 @@ entry:
 ; spike/optimized/socketif.ll
 ; velox/optimized/URLFunctions.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000000a(i1 %0, ptr %1) #0 {
+define i64 @func000000000000000f(i1 %0, ptr %1) #0 {
 entry:
   %.v = select i1 %0, i64 3, i64 2
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 %.v
+  %3 = ptrtoint ptr %2 to i64
+  ret i64 %3
+}
+
+; 4 occurrences:
+; abseil-cpp/optimized/arg.cc.ll
+; cmake/optimized/archive_read_support_format_mtree.c.ll
+; git/optimized/apply.ll
+; hermes/optimized/BigIntSupport.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000a(i1 %0, ptr %1) #0 {
+entry:
+  %.v = select i1 %0, i64 -8, i64 -10
   %2 = getelementptr nusw i8, ptr %1, i64 %.v
   %3 = ptrtoint ptr %2 to i64
   ret i64 %3

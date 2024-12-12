@@ -1,22 +1,22 @@
-func00000000000003a8:                   # @func00000000000003a8
+func0000000000000d58:                   # @func0000000000000d58
 	addl	%edx, %esi
 	cmpl	$2, %esi
 	setae	%cl
-	cmpl	%edi, %esi
-	setl	%al
+	cmpl	%esi, %edi
+	setg	%al
 	andb	%cl, %al
 	retq
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000014a:                   # @func000000000000014a
 	addl	%edx, %esi
 	setns	%cl
-	cmpl	%edi, %esi
-	setl	%al
+	cmpl	%esi, %edi
+	setg	%al
 	andb	%cl, %al
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	addl	%edx, %esi
 	setne	%cl
-	cmpl	%edi, %esi
+	cmpl	%esi, %edi
 	setne	%al
 	andb	%cl, %al
 	retq

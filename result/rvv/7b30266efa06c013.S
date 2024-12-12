@@ -1,4 +1,4 @@
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vx	v12, v12, a0
@@ -6,7 +6,7 @@ func0000000000000044:                   # @func0000000000000044
 	vnot.v	v10, v10
 	vmsltu.vv	v0, v10, v8
 	ret
-func00000000000000c5:                   # @func00000000000000c5
+func0000000000000185:                   # @func0000000000000185
 	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vx	v12, v12, a0
@@ -14,7 +14,7 @@ func00000000000000c5:                   # @func00000000000000c5
 	vadd.vv	v8, v10, v8
 	vmsleu.vv	v0, v8, v10
 	ret
-func0000000000000144:                   # @func0000000000000144
+func0000000000000284:                   # @func0000000000000284
 	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vx	v12, v12, a0

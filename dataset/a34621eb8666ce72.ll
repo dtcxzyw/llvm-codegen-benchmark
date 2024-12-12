@@ -17,7 +17,7 @@ define double @func0000000000000002(double %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 2
   %3 = uitofp i64 %2 to double
-  %4 = fadd double %3, %0
+  %4 = fadd double %0, %3
   ret double %4
 }
 
@@ -28,7 +28,7 @@ define double @func0000000000000000(double %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 3
   %3 = uitofp i64 %2 to double
-  %4 = fadd double %3, %0
+  %4 = fadd double %0, %3
   ret double %4
 }
 

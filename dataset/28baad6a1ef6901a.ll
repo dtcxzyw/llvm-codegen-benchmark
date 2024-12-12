@@ -1,6 +1,6 @@
 
-%"struct.OT::IntType.167.2617260" = type { %struct.BEInt.168.2617261 }
-%struct.BEInt.168.2617261 = type { i8 }
+%"struct.OT::IntType.167.2730712" = type { %struct.BEInt.168.2730713 }
+%struct.BEInt.168.2730713 = type { i8 }
 
 ; 4 occurrences:
 ; linux/optimized/intel_engine_cs.ll
@@ -25,12 +25,12 @@ entry:
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i8 %1) #0 {
+define ptr @func000000000000003f(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw %"struct.OT::IntType.167.2617260", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.OT::IntType.167.2730712", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -62,12 +62,12 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i8 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw %"struct.OT::IntType.167.2617260", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.OT::IntType.167.2730712", ptr %0, i64 %4
   ret ptr %5
 }
 

@@ -1,10 +1,9 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; linux/optimized/sta_info.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; qemu/optimized/source_s_mulAddF16.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
-; spike/optimized/i64_to_f32.ll
 ; spike/optimized/s_mulAddF16.ll
 ; spike/optimized/s_mulAddF32.ll
 ; spike/optimized/s_mulAddF64.ll
@@ -14,7 +13,7 @@ entry:
   %3 = and i64 %1, %2
   %4 = icmp ne i64 %3, 0
   %5 = zext i1 %4 to i64
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   ret i64 %6
 }
 
@@ -28,7 +27,7 @@ entry:
   %3 = and i64 %1, %2
   %4 = icmp ne i64 %3, 0
   %5 = zext i1 %4 to i64
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   ret i64 %6
 }
 

@@ -1,5 +1,6 @@
 
-; 83 occurrences:
+; 82 occurrences:
+; boost/optimized/formatters_cache.ll
 ; cmake/optimized/select.c.ll
 ; cpython/optimized/_codecs_iso2022.ll
 ; curl/optimized/libcurl_la-select.ll
@@ -73,12 +74,10 @@
 ; llvm/optimized/SMTConstraintManager.cpp.ll
 ; llvm/optimized/SemaCast.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; lvgl/optimized/lv_spinbox.ll
 ; openusd/optimized/topologyRefinerFactory.cpp.ll
 ; php/optimized/pcre2_match.ll
-; qemu/optimized/target_riscv_vector_helper.c.ll
-; slurm/optimized/data_parser_v0_0_39_la-parsers.ll
-; slurm/optimized/data_parser_v0_0_40_la-parsers.ll
-; slurm/optimized/data_parser_v0_0_41_la-parsers.ll
 ; spike/optimized/vfsgnj_vf.ll
 ; spike/optimized/vfsgnjn_vf.ll
 ; spike/optimized/vfsgnjx_vf.ll
@@ -87,7 +86,7 @@
 define i16 @func0000000000000000(i1 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 1
-  %3 = select i1 %0, i16 %2, i16 0
+  %3 = select i1 %0, i16 %2, i16 5
   ret i16 %3
 }
 

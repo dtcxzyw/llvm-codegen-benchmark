@@ -1,5 +1,5 @@
 
-; 104 occurrences:
+; 105 occurrences:
 ; abc/optimized/dchSweep.c.ll
 ; abc/optimized/fraInd.c.ll
 ; abc/optimized/saigMiter.c.ll
@@ -104,6 +104,7 @@
 ; sqlite/optimized/sqlite3.ll
 ; wasmtime-rs/optimized/320v7ko74ke0k4k4.ll
 ; z3/optimized/pull_quant.cpp.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
@@ -113,15 +114,13 @@ entry:
   ret ptr %4
 }
 
-; 3 occurrences:
-; eastl/optimized/TestMemory.cpp.ll
-; linux/optimized/iomap.ll
+; 1 occurrences:
 ; nix/optimized/serialise.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = icmp ugt i64 %0, 65535
+  %3 = icmp ugt i64 %0, 64
   %4 = select i1 %3, ptr null, ptr %2
   ret ptr %4
 }

@@ -14,13 +14,13 @@
 ; sentencepiece/optimized/util.cc.ll
 ; velox/optimized/Utf8Utils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000078(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = shl nsw i32 %2, 6
   %4 = and i32 %3, 2048
   %5 = or i32 %4, %0
-  %6 = icmp ugt i32 %5, 55295
+  %6 = icmp samesign ugt i32 %5, 55295
   ret i1 %6
 }
 
@@ -36,13 +36,13 @@ entry:
 ; sentencepiece/optimized/util.cc.ll
 ; velox/optimized/Utf8Utils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000074(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = shl nsw i32 %2, 6
   %4 = and i32 %3, 2048
   %5 = or i32 %4, %0
-  %6 = icmp ult i32 %5, 2048
+  %6 = icmp samesign ult i32 %5, 2048
   ret i1 %6
 }
 

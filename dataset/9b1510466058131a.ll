@@ -1,9 +1,10 @@
 
-; 51 occurrences:
+; 52 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/giaSweeper.c.ll
+; boost/optimized/area.ll
 ; clamav/optimized/clamdtop.c.ll
 ; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
 ; g2o/optimized/edge_se3_pointxyz.cpp.ll

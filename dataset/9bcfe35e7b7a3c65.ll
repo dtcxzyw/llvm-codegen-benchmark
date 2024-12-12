@@ -19,7 +19,7 @@
 ; ruby/optimized/variable.ll
 ; ruby/optimized/vm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i32 %0, 0
   %3 = icmp eq i64 %1, 0
@@ -40,7 +40,7 @@ entry:
 ; openjdk/optimized/xHeapIterator.ll
 ; openjdk/optimized/zHeapIterator.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i32 %0, 0
   %3 = icmp ne i64 %1, 0

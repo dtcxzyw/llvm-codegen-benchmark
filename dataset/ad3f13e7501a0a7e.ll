@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/net_checksum.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000481(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = icmp ult i32 %3, 8
@@ -34,7 +34,7 @@ entry:
 ; pocketpy/optimized/array2d.cpp.ll
 ; tev/optimized/ImageCanvas.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000166(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000004c6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sle i32 %1, %2
   %4 = icmp slt i32 %0, 1
@@ -50,7 +50,7 @@ entry:
 ; ncnn/optimized/unfold.cpp.ll
 ; opencv/optimized/filter.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000014a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = icmp sgt i32 %3, 0
@@ -62,7 +62,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/xmerge.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001ac(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000054c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = icmp sgt i32 %3, 3
@@ -74,7 +74,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/dir.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001cc(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000058c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %1, %2
   %4 = icmp ne i32 %0, 0
@@ -86,7 +86,7 @@ entry:
 ; kcp/optimized/ikcp.ll
 ; linux/optimized/tcp_input.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000141(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = icmp sgt i32 %3, 0
@@ -98,7 +98,7 @@ entry:
 ; 1 occurrences:
 ; kcp/optimized/ikcp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000c1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = icmp slt i32 %3, 0
@@ -111,7 +111,7 @@ entry:
 ; ceres/optimized/coordinate_descent_minimizer.cc.ll
 ; oiio/optimized/psdinput.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000161(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000004c1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %1, %2
   %4 = icmp eq i32 %0, 0
@@ -122,7 +122,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/AArch64ExpandImm.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = icmp ult i32 %3, 2
@@ -137,7 +137,7 @@ entry:
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; openblas/optimized/dstebz.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001aa(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000054a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %1, %2
   %4 = icmp sgt i32 %0, 0
@@ -155,7 +155,7 @@ entry:
 ; openusd/optimized/OpenEXRImage.cpp.ll
 ; pocketpy/optimized/array2d.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000066(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000c6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = icmp slt i32 %3, 1
@@ -165,21 +165,9 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/ohci-hcd.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000064(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sub i32 %1, %2
-  %4 = icmp slt i32 %3, 1
-  %5 = icmp ult i32 %0, 2
-  %6 = select i1 %5, i1 true, i1 %4
-  ret i1 %6
-}
-
-; 1 occurrences:
 ; zxing/optimized/DMHighLevelEncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001ca(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000058a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = icmp ne i32 %3, 1
@@ -191,7 +179,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/dictbe.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000016a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000004ca(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = icmp slt i32 %3, 4
@@ -203,7 +191,7 @@ entry:
 ; 1 occurrences:
 ; hwloc/optimized/hwloc-distrib.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = icmp ult i32 %3, 2

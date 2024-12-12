@@ -12,7 +12,7 @@
 define i1 @func0000000000000007(float %0, float %1) #0 {
 entry:
   %2 = fadd float %1, 1.000000e+00
-  %3 = fmul float %2, %0
+  %3 = fmul float %0, %2
   %4 = fcmp une float %3, 0.000000e+00
   ret i1 %4
 }
@@ -30,7 +30,7 @@ entry:
 define i1 @func0000000000000008(float %0, float %1) #0 {
 entry:
   %2 = fadd float %1, 1.000000e+00
-  %3 = fmul float %2, %0
+  %3 = fmul float %0, %2
   %4 = fcmp oeq float %3, 0x7FF0000000000000
   ret i1 %4
 }
@@ -49,12 +49,12 @@ entry:
 define i1 @func0000000000000003(float %0, float %1) #0 {
 entry:
   %2 = fadd float %1, 1.000000e+00
-  %3 = fmul float %2, %0
+  %3 = fmul float %0, %2
   %4 = fcmp ult float %3, 0.000000e+00
   ret i1 %4
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; darktable/optimized/introspection_colorbalance.c.ll
 ; darktable/optimized/introspection_colorequal.c.ll
 ; darktable/optimized/introspection_denoiseprofile.c.ll
@@ -66,6 +66,7 @@ entry:
 ; ncnn/optimized/gridsample_x86_avx512.cpp.ll
 ; ncnn/optimized/gridsample_x86_fma.cpp.ll
 ; opencv/optimized/chessboard.cpp.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(float %0, float %1) #0 {
 entry:
@@ -96,7 +97,7 @@ entry:
 define i1 @func000000000000000a(float %0, float %1) #0 {
 entry:
   %2 = fadd float %1, 0xBFD6666600000000
-  %3 = fmul float %2, %0
+  %3 = fmul float %0, %2
   %4 = fcmp ole float %3, 1.000000e+00
   ret i1 %4
 }
@@ -108,7 +109,7 @@ entry:
 define i1 @func000000000000000c(float %0, float %1) #0 {
 entry:
   %2 = fadd float %1, 1.000000e+00
-  %3 = fmul float %2, %0
+  %3 = fmul float %0, %2
   %4 = fcmp oge float %3, 0x3810000000000000
   ret i1 %4
 }

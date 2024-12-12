@@ -1,110 +1,45 @@
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	fmov	v16.4s, #1.00000000
-	ldp	q17, q18, [sp]
-	ldp	q20, q19, [sp, #32]
-	fdiv	v17.4s, v16.4s, v17.4s
-	fdiv	v18.4s, v16.4s, v18.4s
-	fmul	v4.4s, v17.4s, v4.4s
-	fadd	v0.4s, v4.4s, v0.4s
-	fdiv	v19.4s, v16.4s, v19.4s
-	fcmge	v0.4s, v16.4s, v0.4s
-	fmul	v5.4s, v18.4s, v5.4s
-	fadd	v1.4s, v5.4s, v1.4s
-	fdiv	v20.4s, v16.4s, v20.4s
-	fcmge	v1.4s, v16.4s, v1.4s
-	fmul	v7.4s, v19.4s, v7.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	fadd	v3.4s, v7.4s, v3.4s
-	fcmge	v3.4s, v16.4s, v3.4s
-	fmul	v6.4s, v20.4s, v6.4s
-	fadd	v2.4s, v6.4s, v2.4s
-	fcmge	v2.4s, v16.4s, v2.4s
-	uzp1	v2.8h, v2.8h, v3.8h
-	uzp1	v0.16b, v0.16b, v2.16b
+	fmov	s3, #1.00000000
+	fdiv	s2, s3, s2
+	fmul	s1, s2, s1
+	fadd	s0, s0, s1
+	fcmp	s0, s3
+	cset	w0, ls
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	fmov	v16.4s, #1.00000000
-	ldp	q17, q18, [sp]
-	ldp	q20, q19, [sp, #32]
-	fdiv	v17.4s, v16.4s, v17.4s
-	fdiv	v18.4s, v16.4s, v18.4s
-	fmul	v4.4s, v17.4s, v4.4s
-	fadd	v0.4s, v4.4s, v0.4s
-	fdiv	v19.4s, v16.4s, v19.4s
-	fmul	v5.4s, v18.4s, v5.4s
-	fadd	v1.4s, v5.4s, v1.4s
-	fdiv	v16.4s, v16.4s, v20.4s
-	fmul	v7.4s, v19.4s, v7.4s
-	fadd	v3.4s, v7.4s, v3.4s
-	fmov	v7.4s, #-1.00000000
-	fcmgt	v3.4s, v7.4s, v3.4s
-	fcmgt	v1.4s, v7.4s, v1.4s
-	fcmgt	v0.4s, v7.4s, v0.4s
-	fmul	v6.4s, v16.4s, v6.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	fadd	v2.4s, v6.4s, v2.4s
-	fcmgt	v2.4s, v7.4s, v2.4s
-	uzp1	v2.8h, v2.8h, v3.8h
-	uzp1	v0.16b, v0.16b, v2.16b
+	fmov	s3, #1.00000000
+	fdiv	s2, s3, s2
+	fmul	s1, s1, s2
+	fadd	s0, s0, s1
+	fmov	s1, #-1.00000000
+	fcmp	s0, s1
+	cset	w0, mi
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	fmov	v16.4s, #1.00000000
-	ldp	q17, q18, [sp]
-	ldp	q20, q19, [sp, #32]
-	fdiv	v17.4s, v16.4s, v17.4s
-	fdiv	v18.4s, v16.4s, v18.4s
-	fmul	v4.4s, v17.4s, v4.4s
-	fadd	v0.4s, v4.4s, v0.4s
-	fdiv	v19.4s, v16.4s, v19.4s
-	fmul	v5.4s, v18.4s, v5.4s
-	fadd	v1.4s, v5.4s, v1.4s
-	fdiv	v16.4s, v16.4s, v20.4s
-	fmul	v7.4s, v19.4s, v7.4s
-	fadd	v3.4s, v7.4s, v3.4s
-	movi	v7.4s, #52, lsl #24
-	fcmgt	v3.4s, v3.4s, v7.4s
-	fcmgt	v1.4s, v1.4s, v7.4s
-	fcmgt	v0.4s, v0.4s, v7.4s
-	fmul	v6.4s, v16.4s, v6.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	fadd	v2.4s, v6.4s, v2.4s
-	fcmgt	v2.4s, v2.4s, v7.4s
-	uzp1	v2.8h, v2.8h, v3.8h
-	uzp1	v0.16b, v0.16b, v2.16b
+	fmov	s3, #1.00000000
+	fdiv	s2, s3, s2
+	fmul	s1, s2, s1
+	fadd	s0, s1, s0
+	movi	v1.2s, #52, lsl #24
+	fcmp	s0, s1
+	cset	w0, gt
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	fmov	v16.4s, #1.00000000
-	ldp	q17, q18, [sp]
-	ldp	q20, q19, [sp, #32]
+	fmov	s3, #1.00000000
 	mov	w8, #839                        // =0x347
 	movk	w8, #16256, lsl #16
-	fdiv	v17.4s, v16.4s, v17.4s
-	fdiv	v18.4s, v16.4s, v18.4s
-	fmul	v4.4s, v17.4s, v4.4s
-	fadd	v0.4s, v4.4s, v0.4s
-	dup	v4.4s, w8
-	fdiv	v19.4s, v16.4s, v19.4s
-	fcmge	v0.4s, v4.4s, v0.4s
-	fmul	v5.4s, v18.4s, v5.4s
-	fadd	v1.4s, v5.4s, v1.4s
-	fdiv	v16.4s, v16.4s, v20.4s
-	fcmge	v1.4s, v4.4s, v1.4s
-	fmul	v7.4s, v19.4s, v7.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	fadd	v3.4s, v7.4s, v3.4s
-	fcmge	v3.4s, v4.4s, v3.4s
-	fmul	v6.4s, v16.4s, v6.4s
-	fadd	v2.4s, v6.4s, v2.4s
-	fcmge	v2.4s, v4.4s, v2.4s
-	uzp1	v2.8h, v2.8h, v3.8h
-	uzp1	v0.16b, v0.16b, v2.16b
-	mvn	v0.16b, v0.16b
+	fdiv	s2, s3, s2
+	fmul	s1, s1, s2
+	fadd	s0, s0, s1
+	fmov	s1, w8
+	fcmp	s0, s1
+	cset	w0, hi
 	ret
                                         // -- End function

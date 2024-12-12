@@ -3,6 +3,11 @@ func0000000000000014:                   # @func0000000000000014
 	vpmovm2q	%k0, %ymm0
 	vpsrlq	$63, %ymm0, %ymm0
 	retq
+func0000000000000028:                   # @func0000000000000028
+	vpcmpnltud	%xmm1, %xmm0, %k0
+	vpmovm2q	%k0, %ymm0
+	vpsrlq	$63, %ymm0, %ymm0
+	retq
 func0000000000000008:                   # @func0000000000000008
 	vpcmpnltud	%xmm1, %xmm0, %k0
 	vpmovm2q	%k0, %ymm0
@@ -40,6 +45,11 @@ func000000000000000e:                   # @func000000000000000e
 	retq
 func000000000000000a:                   # @func000000000000000a
 	vpcmpnleud	%xmm1, %xmm0, %k0
+	vpmovm2q	%k0, %ymm0
+	vpsrlq	$63, %ymm0, %ymm0
+	retq
+func0000000000000032:                   # @func0000000000000032
+	vpcmpltud	%xmm1, %xmm0, %k0
 	vpmovm2q	%k0, %ymm0
 	vpsrlq	$63, %ymm0, %ymm0
 	retq

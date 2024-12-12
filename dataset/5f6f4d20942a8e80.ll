@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 28 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
 ; flac/optimized/decode.c.ll
@@ -27,6 +27,7 @@
 ; spike/optimized/fsr.ll
 ; spike/optimized/fsri.ll
 ; spike/optimized/fsrw.ll
+; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -72,11 +73,7 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
-; opencv/optimized/gapi_compiler_perf_tests.cpp.ll
-; opencv/optimized/gapi_core_perf_tests.cpp.ll
-; opencv/optimized/gapi_imgproc_perf_tests.cpp.ll
-; opencv/optimized/perf_bench.cpp.ll
+; 1 occurrences:
 ; wireshark/optimized/packet-dns.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
@@ -90,11 +87,25 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_execlists_submission.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1984
   %4 = select i1 %0, i32 %1, i32 %3
-  %5 = icmp ult i32 %4, 64
+  %5 = icmp samesign ult i32 %4, 64
+  ret i1 %5
+}
+
+; 4 occurrences:
+; opencv/optimized/gapi_compiler_perf_tests.cpp.ll
+; opencv/optimized/gapi_core_perf_tests.cpp.ll
+; opencv/optimized/gapi_imgproc_perf_tests.cpp.ll
+; opencv/optimized/perf_bench.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 7
+  %4 = select i1 %0, i32 %1, i32 %3
+  %5 = icmp samesign ugt i32 %4, 4
   ret i1 %5
 }
 

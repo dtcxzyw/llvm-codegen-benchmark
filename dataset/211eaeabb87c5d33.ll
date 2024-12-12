@@ -61,7 +61,7 @@
 ; openjdk/optimized/ad_x86.ll
 ; velox/optimized/DateTimeFormatter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000042(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = icmp eq i8 %1, 10
@@ -73,7 +73,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-dmp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000030(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000050(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 2
   %4 = icmp ugt i8 %1, 63
@@ -85,7 +85,7 @@ entry:
 ; 1 occurrences:
 ; nlohmann_json/optimized/unit-assert_macro.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000102(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 3
   %4 = icmp eq i8 %1, 8

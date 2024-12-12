@@ -6,7 +6,7 @@ func0000000000000001:                   # @func0000000000000001
 	movzbl	%al, %eax
 	cmovnel	%edi, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	andl	$240, %esi
 	movl	%edi, %eax
 	orb	$2, %al

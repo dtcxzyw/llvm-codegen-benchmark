@@ -1,34 +1,24 @@
 
-; 9 occurrences:
-; assimp/optimized/glTF2Exporter.cpp.ll
-; assimp/optimized/glTF2Importer.cpp.ll
-; assimp/optimized/glTFImporter.cpp.ll
+; 3 occurrences:
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; linux/optimized/filter.ll
-; linux/optimized/i9xx_wm.ll
 ; minetest/optimized/database.cpp.ll
-; opencc/optimized/Config.cpp.ll
-; openusd/optimized/json.cpp.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000004(i16 %0, i16 %1, i64 %2) #0 {
+define i16 @func0000000000000014(i16 %0, i16 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ult i64 %2, 2048
+  %3 = icmp samesign ult i64 %2, 2048
   %4 = select i1 %3, i16 %0, i16 %1
   ret i16 %4
 }
 
-; 7 occurrences:
+; 3 occurrences:
 ; eastl/optimized/EAString.cpp.ll
-; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/EvalEmitter.cpp.ll
-; llvm/optimized/Interp.cpp.ll
 ; qemu/optimized/source_s_subMagsF16.c.ll
 ; spike/optimized/s_subMagsF16.ll
-; spike/optimized/vbrev_v.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000008(i16 %0, i16 %1, i64 %2) #0 {
+define i16 @func0000000000000018(i16 %0, i16 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ugt i64 %2, 255
+  %3 = icmp samesign ugt i64 %2, 255
   %4 = select i1 %3, i16 %0, i16 %1
   ret i16 %4
 }
@@ -36,7 +26,6 @@ entry:
 ; 22 occurrences:
 ; curl/optimized/libcurl_la-curl_sasl.ll
 ; darktable/optimized/TiffIFD.cpp.ll
-; freetype/optimized/cff.c.ll
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; icu/optimized/number_grouping.ll
 ; libevent/optimized/select.c.ll
@@ -50,12 +39,13 @@ entry:
 ; qemu/optimized/fpu_softfloat.c.ll
 ; qemu/optimized/nbd_server.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
-; spike/optimized/clz16.ll
 ; spike/optimized/vfmerge_vfm.ll
 ; spike/optimized/vmerge_vim.ll
 ; spike/optimized/vmerge_vvm.ll
 ; spike/optimized/vmerge_vxm.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/a9n822469hhbvmntwly5c3zys.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000001(i16 %0, i16 %1, i64 %2) #0 {
 entry:
@@ -64,7 +54,7 @@ entry:
   ret i16 %4
 }
 
-; 7 occurrences:
+; 9 occurrences:
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; nuttx/optimized/lib_libvsprintf.c.ll
@@ -72,10 +62,40 @@ entry:
 ; openblas/optimized/sgemm_small_kernel_tt.c.ll
 ; openusd/optimized/warped_motion.c.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000006(i16 %0, i16 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %2, 0
+  %4 = select i1 %3, i16 %0, i16 %1
+  ret i16 %4
+}
+
+; 6 occurrences:
+; assimp/optimized/glTF2Exporter.cpp.ll
+; assimp/optimized/glTF2Importer.cpp.ll
+; assimp/optimized/glTFImporter.cpp.ll
+; linux/optimized/i9xx_wm.ll
+; opencc/optimized/Config.cpp.ll
+; openusd/optimized/json.cpp.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000004(i16 %0, i16 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ult i64 %2, 4294967296
+  %4 = select i1 %3, i16 %0, i16 %1
+  ret i16 %4
+}
+
+; 4 occurrences:
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; llvm/optimized/EvalEmitter.cpp.ll
+; llvm/optimized/Interp.cpp.ll
+; spike/optimized/vbrev_v.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000008(i16 %0, i16 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ugt i64 %2, 8
   %4 = select i1 %3, i16 %0, i16 %1
   ret i16 %4
 }

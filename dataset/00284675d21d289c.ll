@@ -1,5 +1,5 @@
 
-; 88 occurrences:
+; 89 occurrences:
 ; abc/optimized/sclDnsize.c.ll
 ; abc/optimized/sclSize.c.ll
 ; box2d/optimized/b2_polygon_shape.cpp.ll
@@ -87,6 +87,7 @@
 ; yoga/optimized/AbsoluteLayout.cpp.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
 ; yoga/optimized/FlexLine.cpp.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, float %1, float %2) #0 {
@@ -119,7 +120,9 @@ entry:
   ret i1 %4
 }
 
-; 47 occurrences:
+; 50 occurrences:
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; box2d/optimized/b2_dynamic_tree.cpp.ll
 ; bullet3/optimized/btConvexConcaveCollisionAlgorithm.ll
 ; darktable/optimized/collect.c.ll
@@ -167,6 +170,7 @@ entry:
 ; pbrt-v4/optimized/subsurface.cpp.ll
 ; pbrt-v4/optimized/surfscatter.cpp.ll
 ; raylib/optimized/rshapes.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i1 %0, float %1, float %2) #0 {
 entry:
@@ -175,7 +179,7 @@ entry:
   ret i1 %4
 }
 
-; 91 occurrences:
+; 108 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/gaussian_distribution_test.cc.ll
 ; abseil-cpp/optimized/marshalling.cc.ll
@@ -184,13 +188,15 @@ entry:
 ; assimp/optimized/BaseImporter.cpp.ll
 ; assimp/optimized/DXFLoader.cpp.ll
 ; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; darktable/optimized/introspection_basicadj.c.ll
 ; darktable/optimized/introspection_filmic.c.ll
 ; darktable/optimized/introspection_rgblevels.c.ll
 ; gromacs/optimized/constraint_gpu_helpers.cpp.ll
 ; gromacs/optimized/gpp_atomtype.cpp.ll
 ; gromacs/optimized/pairlist_tuning.cpp.ll
-; gromacs/optimized/particletype.cpp.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; imgui/optimized/imgui.cpp.ll
@@ -204,6 +210,8 @@ entry:
 ; llvm/optimized/MemoryProfileInfo.cpp.ll
 ; llvm/optimized/PartialInlining.cpp.ll
 ; llvm/optimized/VLIWMachineScheduler.cpp.ll
+; lvgl/optimized/lv_draw_sw_line.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; meshlab/optimized/point3_value.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; meshlab/optimized/shot_value.cpp.ll
@@ -267,6 +275,19 @@ entry:
 ; typst-rs/optimized/18i60ist7isq7y2m.ll
 ; wasmtime-rs/optimized/3vdx8w41hjyzioqv.ll
 ; yoga/optimized/LayoutResults.cpp.ll
+; zed-rs/optimized/0bnc87yviwo8pzd5mdfzedrf9.ll
+; zed-rs/optimized/1i7qzw3x0brpuvmm674e62mm0.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/8429boafm438obcc9d542xswj.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/d1rzz8mrspct74ymgl9sm92kt.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, float %1, float %2) #0 {
 entry:
@@ -275,7 +296,7 @@ entry:
   ret i1 %4
 }
 
-; 61 occurrences:
+; 62 occurrences:
 ; abc/optimized/sclBufSize.c.ll
 ; abc/optimized/superGate.c.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
@@ -337,6 +358,7 @@ entry:
 ; yoga/optimized/AbsoluteLayout.cpp.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
 ; yoga/optimized/FlexLine.cpp.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, float %1, float %2) #0 {
 entry:

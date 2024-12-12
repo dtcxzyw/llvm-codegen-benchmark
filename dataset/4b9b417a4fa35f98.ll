@@ -3,7 +3,7 @@
 ; openssl/optimized/libcrypto-lib-ecp_nistz256.ll
 ; openssl/optimized/libcrypto-shlib-ecp_nistz256.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0) #0 {
+define i1 @func0000000000000028(i64 %0) #0 {
 entry:
   %1 = shl i64 %0, 4
   %2 = or disjoint i64 %1, 6
@@ -28,7 +28,7 @@ entry:
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0) #0 {
+define i1 @func0000000000000024(i64 %0) #0 {
 entry:
   %1 = shl i64 %0, 1
   %2 = or disjoint i64 %1, 1
@@ -43,7 +43,7 @@ entry:
 ; ceres/optimized/schur_eliminator_2_2_d.cc.ll
 ; postgres/optimized/rowtypes.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0) #0 {
+define i1 @func0000000000000064(i64 %0) #0 {
 entry:
   %1 = shl nsw i64 %0, 1
   %2 = or disjoint i64 %1, 1
@@ -52,20 +52,9 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/ioctl.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0) #0 {
-entry:
-  %1 = shl nuw nsw i64 %0, 5
-  %2 = or disjoint i64 %1, 24
-  %3 = icmp ugt i64 %2, 4096
-  ret i1 %3
-}
-
-; 1 occurrences:
 ; postgres/optimized/spell.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0) #0 {
+define i1 @func0000000000000068(i64 %0) #0 {
 entry:
   %1 = shl nsw i64 %0, 4
   %2 = or disjoint i64 %1, 8
@@ -78,7 +67,7 @@ entry:
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; typst-rs/optimized/4p30esqzpn2o5olu.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0) #0 {
+define i1 @func00000000000000a4(i64 %0) #0 {
 entry:
   %1 = shl nuw i64 %0, 5
   %2 = or disjoint i64 %1, 16

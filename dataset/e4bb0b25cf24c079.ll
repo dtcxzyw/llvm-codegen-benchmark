@@ -6,7 +6,7 @@
 define i1 @func0000000000000003(float %0, i16 %1) #0 {
 entry:
   %2 = uitofp i16 %1 to float
-  %3 = fcmp ugt float %2, %0
+  %3 = fcmp ult float %0, %2
   ret i1 %3
 }
 
@@ -18,7 +18,7 @@ entry:
 define i1 @func0000000000000007(float %0, i16 %1) #0 {
 entry:
   %2 = uitofp i16 %1 to float
-  %3 = fcmp une float %2, %0
+  %3 = fcmp une float %0, %2
   ret i1 %3
 }
 
@@ -34,7 +34,7 @@ entry:
 define i1 @func0000000000000005(float %0, i16 %1) #0 {
 entry:
   %2 = uitofp i16 %1 to float
-  %3 = fcmp ult float %2, %0
+  %3 = fcmp ugt float %0, %2
   ret i1 %3
 }
 
@@ -45,7 +45,7 @@ entry:
 define i1 @func0000000000000002(float %0, i16 %1) #0 {
 entry:
   %2 = uitofp i16 %1 to float
-  %3 = fcmp ogt float %2, %0
+  %3 = fcmp olt float %0, %2
   ret i1 %3
 }
 
@@ -56,7 +56,7 @@ entry:
 define i1 @func0000000000000004(float %0, i16 %1) #0 {
 entry:
   %2 = uitofp i16 %1 to float
-  %3 = fcmp olt float %2, %0
+  %3 = fcmp ogt float %0, %2
   ret i1 %3
 }
 

@@ -6,7 +6,7 @@
 ; wireshark/optimized/packet-ber.c.ll
 ; wireshark/optimized/text_import.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 63
   %3 = sdiv i32 %2, 64
@@ -20,7 +20,7 @@ entry:
 ; velox/optimized/LazyVector.cpp.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000271(i64 %0, i32 %1) #0 {
+define i1 @func00000000000004e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 63
   %3 = sdiv i32 %2, 64
@@ -37,7 +37,7 @@ entry:
 ; raylib/optimized/rcore.c.ll
 ; soc-simulator/optimized/verilated.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000171(i64 %0, i32 %1) #0 {
+define i1 @func00000000000002e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 6
   %3 = sdiv i32 %2, 2
@@ -50,7 +50,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/tessellation.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000131(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000261(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = sdiv i32 %2, 2

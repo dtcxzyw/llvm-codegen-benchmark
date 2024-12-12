@@ -1,9 +1,8 @@
 
-; 40 occurrences:
+; 39 occurrences:
 ; arrow/optimized/message.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
 ; arrow/optimized/reader.cc.ll
-; clamav/optimized/pdf.c.ll
 ; cmake/optimized/cmSystemTools.cxx.ll
 ; draco/optimized/mesh_cleanup.cc.ll
 ; flatbuffers/optimized/bfbs_gen_lua.cpp.ll
@@ -51,15 +50,49 @@ entry:
   ret ptr %7
 }
 
-; 6 occurrences:
+; 40 occurrences:
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/copy_segment_point.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/difference_pl_pl.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/get_ring.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/intersection_pl_pl.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/partition.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/union_pl_pl.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
+; boost/optimized/write_dsv.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
 ; folly/optimized/Uri.cpp.ll
-; hyperscan/optimized/teddy.c.ll
-; hyperscan/optimized/teddy_avx2.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1, ptr %2) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %0 to i64
   %4 = ptrtoint ptr %2 to i64
@@ -69,12 +102,38 @@ entry:
   ret ptr %7
 }
 
-; 3 occurrences:
+; 1 occurrences:
+; clamav/optimized/pdf.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %0 to i64
+  %4 = ptrtoint ptr %2 to i64
+  %5 = sub i64 %4, %3
+  %6 = getelementptr i8, ptr %0, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 %1
+  ret ptr %7
+}
+
+; 2 occurrences:
 ; linux/optimized/kobject_uevent.ll
 ; linux/optimized/printk.ll
-; linux/optimized/wep.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %0 to i64
+  %4 = ptrtoint ptr %2 to i64
+  %5 = sub i64 %4, %3
+  %6 = getelementptr i8, ptr %0, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 %1
+  ret ptr %7
+}
+
+; 2 occurrences:
+; hyperscan/optimized/teddy.c.ll
+; hyperscan/optimized/teddy_avx2.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000006(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %0 to i64
   %4 = ptrtoint ptr %2 to i64

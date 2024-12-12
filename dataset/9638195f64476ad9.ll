@@ -1,6 +1,7 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; freetype/optimized/psaux.c.ll
+; git/optimized/apply.ll
 ; llvm/optimized/VerifyDiagnosticConsumer.cpp.ll
 ; postgres/optimized/dt_common.ll
 ; quickjs/optimized/quickjs.ll
@@ -15,9 +16,8 @@ entry:
   ret i32 %4
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; abseil-cpp/optimized/time_zone_format.cc.ll
-; git/optimized/apply.ll
 ; jq/optimized/decNumber.ll
 ; libquic/optimized/prtime.cc.ll
 ; linux/optimized/atkbd.ll
@@ -29,7 +29,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; wolfssl/optimized/asn.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i8 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %0
   %3 = icmp eq i8 %1, 45
@@ -37,12 +37,10 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; llvm/optimized/RISCVTargetParser.cpp.ll
-; miniaudio/optimized/unity.c.ll
-; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000024(i32 %0, i8 %1) #0 {
 entry:
   %2 = sub nsw i32 8, %0
   %3 = icmp ult i8 %1, 4

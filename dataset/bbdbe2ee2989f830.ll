@@ -40,9 +40,10 @@ entry:
   ret i32 %4
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; darktable/optimized/introspection_lut3d.c.ll
 ; luau/optimized/CostModel.cpp.ll
+; lvgl/optimized/lv_demo_render.ll
 ; oiio/optimized/texture3d.cpp.ll
 ; spike/optimized/vwmaccu_vx.ll
 ; spike/optimized/vwmulu_vx.ll
@@ -53,7 +54,7 @@ define i32 @func0000000000000003(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, 65535
-  %4 = mul nuw nsw i32 %3, %0
+  %4 = mul nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -72,8 +73,11 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
+; 4 occurrences:
 ; abc/optimized/giaUtil.c.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_draw_buf.ll
+; lvgl/optimized/lv_image_decoder.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000b(i32 %0, i64 %1) #0 {
 entry:
@@ -90,7 +94,7 @@ define i32 @func0000000000000008(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = and i32 %2, 16777215
-  %4 = mul i32 %3, %0
+  %4 = mul i32 %0, %3
   ret i32 %4
 }
 
@@ -109,7 +113,7 @@ define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, 255
-  %4 = mul i32 %3, %0
+  %4 = mul i32 %0, %3
   ret i32 %4
 }
 

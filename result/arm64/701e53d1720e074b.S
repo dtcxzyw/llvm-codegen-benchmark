@@ -1,45 +1,30 @@
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	shl	v1.4s, v1.4s, #10
-	add	v0.4s, v1.4s, v0.4s
-	ushr	v0.4s, v0.4s, #6
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
+	add	w8, w0, w1, lsl #10
+	lsr	w0, w8, #6
 	ret
                                         // -- End function
 func000000000000003d:                   // @func000000000000003d
 // %bb.0:                               // %entry
-	shl	v1.4s, v1.4s, #7
-	add	v0.4s, v1.4s, v0.4s
-	ushr	v0.4s, v0.4s, #15
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
+	add	w8, w0, w1, lsl #7
+	lsr	w0, w8, #15
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	shl	v1.4s, v1.4s, #6
-	add	v0.4s, v1.4s, v0.4s
-	ushr	v0.4s, v0.4s, #3
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
+	add	w8, w0, w1, lsl #6
+	lsr	w0, w8, #3
 	ret
                                         // -- End function
 func0000000000000015:                   // @func0000000000000015
 // %bb.0:                               // %entry
-	add	v1.4s, v1.4s, v1.4s
-	add	v0.4s, v1.4s, v0.4s
-	ushr	v0.4s, v0.4s, #6
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
+	add	w8, w0, w1, lsl #1
+	lsr	w0, w8, #6
 	ret
                                         // -- End function
 func0000000000000035:                   // @func0000000000000035
 // %bb.0:                               // %entry
-	shl	v1.4s, v1.4s, #10
-	add	v0.4s, v1.4s, v0.4s
-	ushr	v0.4s, v0.4s, #11
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
+	add	w8, w0, w1, lsl #10
+	lsr	w0, w8, #11
 	ret
                                         // -- End function

@@ -1,5 +1,5 @@
 
-; 43 occurrences:
+; 42 occurrences:
 ; chibicc/optimized/tokenize.ll
 ; darktable/optimized/PanasonicV6Decompressor.cpp.ll
 ; darktable/optimized/PanasonicV7Decompressor.cpp.ll
@@ -18,7 +18,6 @@
 ; image-rs/optimized/fyek6fuqg0ocunt.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/intel_bw.ll
-; linux/optimized/intel_display_device.ll
 ; linux/optimized/intel_pmdemand.ll
 ; linux/optimized/isoch.ll
 ; linux/optimized/nfs3proc.ll
@@ -27,6 +26,7 @@
 ; llvm/optimized/ARMWinEH.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTImporter.cpp.ll
+; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/SemaExceptionSpec.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/SemaObjCProperty.cpp.ll
@@ -37,7 +37,6 @@
 ; postgres/optimized/spgdoinsert.ll
 ; qemu/optimized/hw_display_ati.c.ll
 ; qemu/optimized/hw_net_igb_core.c.ll
-; qemu/optimized/hw_sd_ssi-sd.c.ll
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/gc.ll
 ; sqlite/optimized/sqlite3.ll
@@ -85,7 +84,6 @@ entry:
 ; qemu/optimized/hw_net_cadence_gem.c.ll
 ; qemu/optimized/hw_net_igb_core.c.ll
 ; qemu/optimized/hw_pci_pcie.c.ll
-; qemu/optimized/hw_sd_ssi-sd.c.ll
 ; qemu/optimized/hw_vfio_pci.c.ll
 ; ruby/optimized/time.ll
 ; sqlite/optimized/sqlite3.ll
@@ -93,6 +91,7 @@ entry:
 ; wireshark/optimized/packet-fp_hint.c.ll
 ; wireshark/optimized/packet-meta.c.ll
 ; wireshark/optimized/packet-tibia.c.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000003(i32 %0) #0 {
 entry:
@@ -102,7 +101,7 @@ entry:
   ret i16 %3
 }
 
-; 76 occurrences:
+; 80 occurrences:
 ; arrow/optimized/float16.cc.ll
 ; darktable/optimized/PanasonicV7Decompressor.cpp.ll
 ; git/optimized/read-cache.ll
@@ -127,6 +126,7 @@ entry:
 ; linux/optimized/skl_watermark.ll
 ; linux/optimized/sky2.ll
 ; llvm/optimized/AttributorAttributes.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
 ; ocio/optimized/CPUProcessor.cpp.ll
 ; ocio/optimized/CTFTransform.cpp.ll
 ; ocio/optimized/Lut1DOpCPU.cpp.ll
@@ -154,7 +154,6 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -165,7 +164,6 @@ entry:
 ; php/optimized/phar.ll
 ; qemu/optimized/hw_net_pcnet.c.ll
 ; qemu/optimized/hw_net_rocker_rocker_of_dpa.c.ll
-; qemu/optimized/hw_sd_ssi-sd.c.ll
 ; qemu/optimized/hw_virtio_virtio.c.ll
 ; recastnavigation/optimized/DetourDebugDraw.cpp.ll
 ; recastnavigation/optimized/RecastDebugDraw.cpp.ll
@@ -179,12 +177,17 @@ entry:
 ; z3/optimized/smt_internalizer.cpp.ll
 ; z3/optimized/theory_arith.cpp.ll
 ; z3/optimized/theory_lra.cpp.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000002(i32 %0) #0 {
 entry:
   %1 = lshr i32 %0, 16
   %2 = trunc nuw i32 %1 to i16
-  %3 = and i16 %2, 4096
+  %3 = and i16 %2, 4095
   ret i16 %3
 }
 

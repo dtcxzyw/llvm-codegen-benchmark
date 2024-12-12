@@ -1,4 +1,4 @@
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	movl	%esi, %ecx
 	negl	%ecx
 	cmovsl	%esi, %ecx
@@ -14,7 +14,7 @@ func0000000000000006:                   # @func0000000000000006
 	movl	$-2147483648, %eax              # imm = 0x80000000
 	cmovll	%edi, %eax
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	movl	%esi, %ecx
 	negl	%ecx
 	cmovsl	%esi, %ecx

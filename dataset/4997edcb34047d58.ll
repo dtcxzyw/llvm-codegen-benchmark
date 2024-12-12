@@ -8,7 +8,7 @@
 ; rust-analyzer-rs/optimized/1lnhy2v45voxjwry.ll
 ; tree-sitter-rs/optimized/4sxnw2peombwi3hz.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000034(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000064(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -788
   %3 = icmp ult i32 %2, 3
@@ -17,7 +17,7 @@ entry:
   ret i64 %5
 }
 
-; 36 occurrences:
+; 41 occurrences:
 ; just-rs/optimized/2sblcsgax6v4zfcc.ll
 ; ockam-rs/optimized/1d1qxhuj8x85dazd.ll
 ; ockam-rs/optimized/1j8f46ag92qmaepd.ll
@@ -54,8 +54,13 @@ entry:
 ; wasmtime-rs/optimized/3xduz4g7ko7uj0pm.ll
 ; wasmtime-rs/optimized/4jtzwzfip25p8spx.ll
 ; wasmtime-rs/optimized/526qiozl2mm0d4p0.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/el2ujbjp7xo4qjt47dh50oqat.ll
+; zed-rs/optimized/ewfky7337ygatenw8mnh0raxz.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000054(i64 %0, i32 %1) #0 {
+define i64 @func00000000000000a4(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -3
   %3 = icmp ult i32 %2, 5
@@ -67,7 +72,7 @@ entry:
 ; 1 occurrences:
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000074(i64 %0, i32 %1) #0 {
+define i64 @func00000000000000e4(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -3
   %3 = icmp ult i32 %2, 6

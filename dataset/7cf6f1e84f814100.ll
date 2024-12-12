@@ -1,9 +1,10 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; arrow/optimized/data.cc.ll
 ; cmake/optimized/SystemTools.cxx.ll
 ; cmake/optimized/cmQtAutoGenInitializer.cxx.ll
 ; duckdb/optimized/ub_duckdb_func_date.cpp.ll
+; llvm/optimized/ELFObjectFile.cpp.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; postgres/optimized/alter.ll
@@ -21,8 +22,9 @@ entry:
   ret { i64, i64 } %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll
+; llvm/optimized/ELFObjectFile.cpp.ll
 ; llvm/optimized/WasmObjectFile.cpp.ll
 ; Function Attrs: nounwind
 define { i64, i64 } @func0000000000000001(i64 %0, i64 %1) #0 {

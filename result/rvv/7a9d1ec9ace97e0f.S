@@ -12,6 +12,11 @@ func000000000000000a:                   # @func000000000000000a
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgt.vi	v0, v8, -1
 	ret
+func0000000000000014:                   # @func0000000000000014
+	bseti	a0, zero, 52
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmsltu.vx	v0, v8, a0
+	ret
 func0000000000000004:                   # @func0000000000000004
 	bseti	a0, zero, 52
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -19,7 +24,14 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func0000000000000008:                   # @func0000000000000008
 	li	a0, -1
-	bclri	a0, a0, 52
+	srli	a0, a0, 11
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmsgtu.vx	v0, v8, a0
+	ret
+func0000000000000018:                   # @func0000000000000018
+	li	a0, 2047
+	slli	a0, a0, 52
+	addi	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vx	v0, v8, a0
 	ret

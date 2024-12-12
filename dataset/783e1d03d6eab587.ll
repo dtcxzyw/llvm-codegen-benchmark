@@ -1,5 +1,5 @@
 
-; 257 occurrences:
+; 254 occurrences:
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/giaCone.c.ll
@@ -49,7 +49,6 @@
 ; linux/optimized/bitmap.ll
 ; linux/optimized/blk-merge.ll
 ; linux/optimized/exfldio.ll
-; linux/optimized/head64.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/nf_conntrack_helper.ll
 ; linux/optimized/quota_tree.ll
@@ -63,6 +62,7 @@
 ; llvm/optimized/X86InterleavedAccess.cpp.ll
 ; lua/optimized/ltable.ll
 ; luajit/optimized/buildvm_fold.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
@@ -107,8 +107,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -238,7 +236,6 @@
 ; z3/optimized/opt_cores.cpp.ll
 ; z3/optimized/opt_lns.cpp.ll
 ; z3/optimized/pb_sls.cpp.ll
-; z3/optimized/pb_solver.cpp.ll
 ; z3/optimized/q_model_fixer.cpp.ll
 ; z3/optimized/sat_aig_cuts.cpp.ll
 ; z3/optimized/sat_anf_simplifier.cpp.ll
@@ -265,11 +262,10 @@ entry:
   ret i64 %3
 }
 
-; 177 occurrences:
+; 179 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/fraigTable.c.ll
-; abc/optimized/fxuMatrix.c.ll
 ; abc/optimized/fxuSelect.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/ioReadBlifAig.c.ll
@@ -283,7 +279,6 @@ entry:
 ; bullet3/optimized/btMiniSDF.ll
 ; casadi/optimized/cs_amd.c.ll
 ; clamav/optimized/connpool.c.ll
-; clamav/optimized/yara_hash.c.ll
 ; cpython/optimized/Hacl_Hash_SHA3.ll
 ; darktable/optimized/PanasonicV4Decompressor.cpp.ll
 ; darktable/optimized/PanasonicV5Decompressor.cpp.ll
@@ -315,7 +310,6 @@ entry:
 ; libwebp/optimized/palette.c.ll
 ; lief/optimized/GnuHash.cpp.ll
 ; linux/optimized/bitmap.ll
-; linux/optimized/blk-settings.ll
 ; linux/optimized/ialloc.ll
 ; linux/optimized/slub.ll
 ; linux/optimized/vt.ll
@@ -331,11 +325,11 @@ entry:
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; llvm/optimized/PDBStringTable.cpp.ll
 ; llvm/optimized/PDBStringTableBuilder.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/Scalarizer.cpp.ll
 ; llvm/optimized/TpiStream.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_chart.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/eigen_mesh_conversions.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -443,6 +437,11 @@ entry:
 ; z3/optimized/symbol.cpp.ll
 ; z3/optimized/theory_special_relations.cpp.ll
 ; z3/optimized/value_generator.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
+; zed-rs/optimized/8mr81aw0ctvqdrbyiysor7awe.ll
+; zed-rs/optimized/ddwqyvi7204z7yxly1a7n0b57.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:

@@ -1,11 +1,11 @@
-func00000000000000c7:                   # @func00000000000000c7
+func0000000000000187:                   # @func0000000000000187
 	movl	$60, %ecx
 	subl	%edi, %ecx
 	testl	%edi, %edi
 	movl	$28, %eax
 	cmovnel	%ecx, %eax
 	retq
-func00000000000000c5:                   # @func00000000000000c5
+func0000000000000185:                   # @func0000000000000185
 	movl	$28, %ecx
 	subl	%edi, %ecx
 	testl	%edi, %edi

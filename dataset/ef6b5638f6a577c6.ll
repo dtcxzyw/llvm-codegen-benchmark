@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; casadi/optimized/idas.c.ll
 ; casadi/optimized/sundials_sptfqmr.c.ll
 ; graphviz/optimized/gvrender.c.ll
@@ -8,7 +8,6 @@
 ; meshlab/optimized/filter_measure.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; openblas/optimized/dtgsen.c.ll
-; openblas/optimized/dtgsna.c.ll
 ; opencv/optimized/termination.cpp.ll
 ; quantlib/optimized/analyticgjrgarchengine.ll
 ; quantlib/optimized/andreasenhugevolatilityinterpl.ll
@@ -20,7 +19,7 @@
 define double @func0000000000000000(double %0, double %1) #0 {
 entry:
   %2 = fdiv double %1, %0
-  %3 = fmul double %2, %0
+  %3 = fmul double %0, %2
   ret double %3
 }
 

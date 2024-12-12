@@ -13,7 +13,7 @@ func0000000000000005:                   # @func0000000000000005
 	addi	a1, a1, %lo(.LCPI0_1)
 	add	a0, a0, a1
 	fld	fa5, 0(a0)
-	fadd.d	fa5, fa5, fa0
+	fadd.d	fa5, fa0, fa5
 	fcvt.w.d	a0, fa5, rtz
 	ret
 .LCPI1_0:
@@ -27,7 +27,7 @@ func0000000000000002:                   # @func0000000000000002
 	addi	a1, a1, %lo(.LCPI1_0)
 	add	a0, a0, a1
 	fld	fa5, 0(a0)
-	fadd.d	fa5, fa5, fa0
+	fadd.d	fa5, fa0, fa5
 	fcvt.w.d	a0, fa5, rtz
 	ret
 .LCPI2_0:
@@ -41,7 +41,7 @@ func000000000000000c:                   # @func000000000000000c
 	addi	a1, a1, %lo(.LCPI2_0)
 	add	a0, a0, a1
 	fld	fa5, 0(a0)
-	fadd.d	fa5, fa5, fa0
+	fadd.d	fa5, fa0, fa5
 	fcvt.w.d	a0, fa5, rtz
 	ret
 .LCPI3_0:
@@ -56,6 +56,6 @@ func0000000000000003:                   # @func0000000000000003
 	addi	a1, a1, %lo(.LCPI3_0)
 	add	a0, a0, a1
 	fld	fa5, 0(a0)
-	fadd.d	fa5, fa5, fa0
+	fadd.d	fa5, fa0, fa5
 	fcvt.w.d	a0, fa5, rtz
 	ret

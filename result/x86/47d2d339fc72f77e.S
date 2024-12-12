@@ -16,7 +16,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	testb	$1, %dl
 	movl	$25, %eax
 	movl	$13, %ecx
@@ -25,7 +25,14 @@ func0000000000000024:                   # @func0000000000000024
 	cmpq	%rcx, %rdi
 	setb	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000006:                   # @func0000000000000006
+	andl	$1, %edx
+	addq	$9, %rdx
+	subq	%rsi, %rdi
+	cmpq	%rdx, %rdi
+	setl	%al
+	retq
+func0000000000000026:                   # @func0000000000000026
 	movl	$3155673600, %eax               # imm = 0xBC17C200
 	leaq	86400(%rax), %rcx
 	testb	$1, %dl
@@ -34,7 +41,7 @@ func0000000000000016:                   # @func0000000000000016
 	cmpq	%rcx, %rdi
 	setl	%al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	andl	$1, %edx
 	orq	$36524, %rdx                    # imm = 0x8EAC
 	subq	%rsi, %rdi
@@ -50,17 +57,17 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	%rcx, %rdi
 	seta	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	andl	$1, %edx
 	addq	$365, %rdx                      # imm = 0x16D
 	subq	%rsi, %rdi
 	cmpq	%rdx, %rdi
 	setb	%al
 	retq
-func0000000000000006:                   # @func0000000000000006
+func0000000000000014:                   # @func0000000000000014
 	andl	$1, %edx
-	incq	%rdx
+	leaq	10(,%rdx,4), %rax
 	subq	%rsi, %rdi
-	cmpq	%rdx, %rdi
-	setl	%al
+	cmpq	%rax, %rdi
+	setb	%al
 	retq

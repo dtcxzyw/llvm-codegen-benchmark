@@ -1,15 +1,15 @@
 func0000000000000010:                   # @func0000000000000010
 	slli	a3, a2, 3
-	subw	a2, a2, a0
-	subw	a3, a3, a2
-	add	a0, a1, a3
+	subw	a0, a0, a2
+	add	a0, a0, a3
+	add	a0, a0, a1
 	addiw	a0, a0, 3
 	ret
 func0000000000000050:                   # @func0000000000000050
 	slli	a3, a2, 3
-	subw	a2, a2, a0
-	subw	a3, a3, a2
-	add	a0, a1, a3
+	subw	a0, a0, a2
+	add	a0, a0, a3
+	add	a0, a0, a1
 	addiw	a0, a0, 6
 	ret
 func0000000000000000:                   # @func0000000000000000

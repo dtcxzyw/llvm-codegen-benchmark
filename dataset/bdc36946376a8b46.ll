@@ -27,13 +27,14 @@ entry:
   ret i8 %2
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; duckdb/optimized/ub_duckdb_execution_index_art.cpp.ll
 ; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
 ; hdf5/optimized/H5Tbit.c.ll
 ; qemu/optimized/hw_pci_pci.c.ll
 ; wireshark/optimized/packet-iwarp-mpa.c.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i16 %0) #0 {
 entry:

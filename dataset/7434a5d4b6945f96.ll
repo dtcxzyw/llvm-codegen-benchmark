@@ -1,5 +1,5 @@
 
-%"struct.rocksdb::CuckooTableBuilder::CuckooBucket.2507004" = type { i32, i32 }
+%"struct.rocksdb::CuckooTableBuilder::CuckooBucket.2622165" = type { i32, i32 }
 
 ; 4 occurrences:
 ; clamav/optimized/vba_extract.c.ll
@@ -10,16 +10,14 @@
 define ptr @func0000000000000002(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %"struct.rocksdb::CuckooTableBuilder::CuckooBucket.2507004", ptr %0, i64 %1
+  %4 = getelementptr %"struct.rocksdb::CuckooTableBuilder::CuckooBucket.2622165", ptr %0, i64 %1
   %5 = getelementptr i8, ptr %4, i64 -8
-  %6 = getelementptr %"struct.rocksdb::CuckooTableBuilder::CuckooBucket.2507004", ptr %5, i64 %3
+  %6 = getelementptr %"struct.rocksdb::CuckooTableBuilder::CuckooBucket.2622165", ptr %5, i64 %3
   ret ptr %6
 }
 
-; 22 occurrences:
-; lightgbm/optimized/boosting.cpp.ll
+; 20 occurrences:
 ; lightgbm/optimized/dataset.cpp.ll
-; lightgbm/optimized/gbdt.cpp.ll
 ; openjdk/optimized/c1_Runtime1.ll
 ; openjdk/optimized/compileBroker.ll
 ; openjdk/optimized/constantPool.ll
@@ -40,7 +38,7 @@ entry:
 ; openjdk/optimized/vframe.ll
 ; openusd/optimized/restoration.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007e(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 %1
@@ -67,7 +65,7 @@ entry:
 ; darktable/optimized/JpegDecompressor.cpp.ll
 ; redis/optimized/zipmap.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr i16, ptr %0, i64 %1

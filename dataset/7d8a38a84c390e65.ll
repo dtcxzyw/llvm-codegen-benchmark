@@ -1,16 +1,17 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; gromacs/optimized/genconf.cpp.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; mitsuba3/optimized/orthogonal.cpp.ll
 ; mitsuba3/optimized/perspective.cpp.ll
 ; xgboost/optimized/cpu_treeshap.cc.ll
+; zed-rs/optimized/5lgahps99tv0rsaolw3x59ow2.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, i32 %2) #0 {
 entry:
   %3 = uitofp i32 %2 to float
   %4 = fdiv float %1, %3
-  %5 = fadd float %4, %0
+  %5 = fadd float %0, %4
   ret float %5
 }
 

@@ -1,10 +1,9 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; darktable/optimized/introspection_colorequal.c.ll
 ; darktable/optimized/introspection_colorreconstruction.c.ll
 ; gromacs/optimized/gmx_wham.cpp.ll
 ; nori/optimized/nanovg.c.ll
-; opencv/optimized/signal_resample.cpp.ll
 ; pbrt-v4/optimized/film.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; pbrt-v4/optimized/lights.cpp.ll

@@ -14,13 +14,13 @@ func0000000000000020:                   # @func0000000000000020
 	andl	$16711680, %esi                 # imm = 0xFF0000
 	leal	-1640531527(%rdi,%rsi), %eax
 	retq
+func0000000000000005:                   # @func0000000000000005
+	andl	$1, %esi
+	leal	1(%rdi,%rsi), %eax
+	retq
 func0000000000000007:                   # @func0000000000000007
 	andl	$2, %esi
 	leal	-6(%rdi,%rsi), %eax
-	retq
-func0000000000000005:                   # @func0000000000000005
-	andl	$3, %esi
-	leal	-3(%rdi,%rsi), %eax
 	retq
 func000000000000000f:                   # @func000000000000000f
 	andl	$63, %esi

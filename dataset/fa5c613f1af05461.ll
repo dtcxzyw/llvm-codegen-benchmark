@@ -13,12 +13,10 @@ entry:
   ret ptr %6
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; abc/optimized/resWin.c.ll
 ; abc/optimized/sfmLib.c.ll
 ; icu/optimized/collationdatareader.ll
-; libwebp/optimized/upsampling_sse2.c.ll
-; libwebp/optimized/upsampling_sse41.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
 entry:
@@ -38,6 +36,19 @@ entry:
   %4 = sub i32 %3, %1
   %5 = sext i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 2 occurrences:
+; libwebp/optimized/upsampling_sse2.c.ll
+; libwebp/optimized/upsampling_sse41.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 1
+  %4 = sub nsw i32 %3, %1
+  %5 = sext i32 %4 to i64
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 

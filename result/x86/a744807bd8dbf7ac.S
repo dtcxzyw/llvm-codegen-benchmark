@@ -10,7 +10,7 @@ func0000000000000005:                   # @func0000000000000005
 	movslq	%edi, %rax
 	shlq	$3, %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000051:                   # @func0000000000000051
 	cmpl	$2, %edx
 	cmovael	%esi, %edi
 	movslq	%edi, %rax

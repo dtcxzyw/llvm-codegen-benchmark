@@ -1,4 +1,4 @@
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	movl	%edi, %eax
 	andb	$-2, %al
 	cmpb	$-114, %al
@@ -7,23 +7,14 @@ func0000000000000028:                   # @func0000000000000028
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000182:                   # @func0000000000000182
+func0000000000000302:                   # @func0000000000000302
 	testb	$9, %dil
 	setne	%cl
 	testb	%dil, %dil
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000110:                   # @func0000000000000110
-	movl	%edi, %eax
-	notb	%al
-	testb	$14, %al
-	sete	%cl
-	cmpb	$-32, %dil
-	setae	%al
-	orb	%cl, %al
-	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	movl	%edi, %eax
 	andb	$3, %al
 	cmpb	$2, %al
@@ -32,36 +23,27 @@ func0000000000000022:                   # @func0000000000000022
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000190:                   # @func0000000000000190
+func0000000000000310:                   # @func0000000000000310
 	testb	$7, %dil
 	setne	%cl
 	cmpb	$33, %dil
 	setae	%al
 	orb	%cl, %al
 	retq
-func0000000000000102:                   # @func0000000000000102
+func0000000000000330:                   # @func0000000000000330
 	movl	%edi, %eax
-	andb	$-64, %al
-	negb	%al
-	seto	%cl
-	cmpb	$-64, %dil
+	andb	$-4, %al
+	cmpb	$-8, %al
+	setne	%cl
+	cmpb	$-5, %dil
 	setae	%al
 	orb	%cl, %al
 	retq
-func0000000000000030:                   # @func0000000000000030
-	movl	%edi, %eax
-	andb	$-64, %al
-	negb	%al
-	seto	%cl
-	cmpb	$-64, %dil
-	setae	%al
-	orb	%cl, %al
-	retq
-func000000000000010c:                   # @func000000000000010c
+func000000000000060c:                   # @func000000000000060c
 	testb	$-116, %dil
 	setne	%al
 	retq
-func0000000000000188:                   # @func0000000000000188
+func0000000000000308:                   # @func0000000000000308
 	movl	%edi, %eax
 	andb	$-2, %al
 	cmpb	$82, %al
@@ -70,7 +52,16 @@ func0000000000000188:                   # @func0000000000000188
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000050:                   # @func0000000000000050
+	movl	%edi, %eax
+	andb	$30, %al
+	cmpb	$12, %al
+	sete	%cl
+	cmpb	$29, %dil
+	setae	%al
+	orb	%cl, %al
+	retq
+func0000000000000058:                   # @func0000000000000058
 	movl	%edi, %eax
 	andb	$-2, %al
 	cmpb	$60, %al
@@ -79,16 +70,14 @@ func0000000000000038:                   # @func0000000000000038
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000082:                   # @func0000000000000082
-	movl	%edi, %eax
-	notb	%al
-	testb	$6, %al
+func0000000000000068:                   # @func0000000000000068
+	testb	$63, %dil
 	sete	%cl
-	cmpb	$5, %dil
+	cmpb	$64, %dil
 	setb	%al
 	orb	%cl, %al
 	retq
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	movl	%edi, %eax
 	andb	$-3, %al
 	cmpb	$8, %al
@@ -97,7 +86,16 @@ func000000000000002c:                   # @func000000000000002c
 	sets	%al
 	orb	%cl, %al
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000610:                   # @func0000000000000610
+	movl	%edi, %eax
+	andb	$14, %al
+	cmpb	$10, %al
+	setae	%cl
+	cmpb	$-96, %dil
+	setae	%al
+	orb	%cl, %al
+	retq
+func0000000000000054:                   # @func0000000000000054
 	testb	$10, %dil
 	sete	%cl
 	testb	%dil, %dil

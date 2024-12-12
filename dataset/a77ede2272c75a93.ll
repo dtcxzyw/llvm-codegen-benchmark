@@ -1,5 +1,6 @@
 
-; 138 occurrences:
+; 140 occurrences:
+; boost/optimized/operations.ll
 ; c3c/optimized/build_options.c.ll
 ; c3c/optimized/c_abi.c.ll
 ; c3c/optimized/parse_expr.c.ll
@@ -33,6 +34,7 @@
 ; lief/optimized/rsa.c.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; lua/optimized/ltable.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
@@ -166,7 +168,7 @@ entry:
   ret i32 %5
 }
 
-; 36 occurrences:
+; 23 occurrences:
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; git/optimized/commit-graph.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -179,26 +181,13 @@ entry:
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/ExprCXX.cpp.ll
 ; llvm/optimized/UnicodeNameToCodepoint.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; minetest/optimized/CImage.cpp.ll
 ; minetest/optimized/objdef.cpp.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openssl/optimized/libcrypto-lib-set_key.ll
 ; openssl/optimized/libcrypto-shlib-set_key.ll
-; openvdb/optimized/Diagnostics.cc.ll
-; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Filter.cc.ll
-; openvdb/optimized/LevelSetFracture.cc.ll
-; openvdb/optimized/LevelSetRebuild.cc.ll
-; openvdb/optimized/LevelSetSphere.cc.ll
-; openvdb/optimized/LevelSetTracker.cc.ll
-; openvdb/optimized/Mask.cc.ll
-; openvdb/optimized/Merge.cc.ll
-; openvdb/optimized/MultiResGrid.cc.ll
-; openvdb/optimized/PoissonSolver.cc.ll
-; openvdb/optimized/TopologyToLevelSet.cc.ll
-; openvdb/optimized/VolumeAdvect.cc.ll
-; openvdb/optimized/VolumeToMesh.cc.ll
-; openvdb/optimized/points.cc.ll
 ; spike/optimized/aes64dsm.ll
 ; spike/optimized/aes64esm.ll
 ; spike/optimized/debug_module.ll
@@ -218,14 +207,16 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = lshr exact i32 %4, 4
   ret i32 %5
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; php/optimized/hash_haval.ll
 ; yosys/optimized/dfflegalize.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:

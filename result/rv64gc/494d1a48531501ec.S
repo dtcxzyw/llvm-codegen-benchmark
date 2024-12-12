@@ -38,7 +38,7 @@ func0000000000000019:                   # @func0000000000000019
 .LBB4_2:                                # %entry
 	addiw	a0, a0, 1
 	ret
-func0000000000000012:                   # @func0000000000000012
+func0000000000000052:                   # @func0000000000000052
 	sext.w	a2, a2
 	sext.w	a3, a0
 	bltu	a3, a2, .LBB5_2

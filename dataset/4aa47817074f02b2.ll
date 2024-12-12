@@ -1,7 +1,7 @@
 
-%struct.USBEndpoint.2594563 = type { i8, i8, i8, i8, i32, i32, i8, i8, ptr, %union.anon.0.2594564 }
-%union.anon.0.2594564 = type { %struct.QTailQLink.2594565 }
-%struct.QTailQLink.2594565 = type { ptr, ptr }
+%struct.USBEndpoint.2708164 = type { i8, i8, i8, i8, i32, i32, i8, i8, ptr, %union.anon.0.2708165 }
+%union.anon.0.2708165 = type { %struct.QTailQLink.2708166 }
+%struct.QTailQLink.2708166 = type { ptr, ptr }
 
 ; 8 occurrences:
 ; linux/optimized/devio.ll
@@ -13,17 +13,17 @@
 ; linux/optimized/urb.ll
 ; qemu/optimized/hw_usb_core.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000038(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000003c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 105
   %4 = select i1 %3, i64 4432, i64 5032
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   %6 = zext nneg i32 %1 to i64
-  %7 = getelementptr %struct.USBEndpoint.2594563, ptr %5, i64 %6
+  %7 = getelementptr %struct.USBEndpoint.2708164, ptr %5, i64 %6
   ret ptr %7
 }
 
-; 80 occurrences:
+; 81 occurrences:
 ; cvc5/optimized/eq_proof.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -104,66 +104,41 @@ entry:
 ; openjdk/optimized/hb-face-builder.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; wolfssl/optimized/asn.c.ll
+; zed-rs/optimized/bxm2tfnh5mvxjpr839l8em8o3.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000002f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i64 0, i64 8
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   %6 = zext i32 %1 to i64
-  %7 = getelementptr nusw ptr, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw ptr, ptr %5, i64 %6
   ret ptr %7
 }
 
 ; 1 occurrences:
 ; php/optimized/pcre2_substitute.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000015a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000015f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
   %4 = select i1 %3, i64 96, i64 128
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   %6 = zext nneg i32 %1 to i64
-  %7 = getelementptr nusw i8, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %5, i64 %6
   ret ptr %7
 }
 
 ; 1 occurrences:
 ; git/optimized/packfile.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000014a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000014f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 1
   %4 = select i1 %3, i64 8, i64 0
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   %6 = zext i32 %1 to i64
-  %7 = getelementptr nusw i32, ptr %5, i64 %6
-  ret ptr %7
-}
-
-; 1 occurrences:
-; linux/optimized/virtio_pci_legacy.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000020(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp eq i32 %2, 0
-  %4 = select i1 %3, i64 20, i64 24
-  %5 = getelementptr i8, ptr %0, i64 %4
-  %6 = zext i32 %1 to i64
-  %7 = getelementptr i8, ptr %5, i64 %6
-  ret ptr %7
-}
-
-; 1 occurrences:
-; linux/optimized/devio.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000098(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ult i32 %2, 128
-  %4 = select i1 %3, i64 1072, i64 944
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
-  %6 = zext nneg i32 %1 to i64
-  %7 = getelementptr ptr, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i32, ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -209,13 +184,13 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/zipmap.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000008a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000008f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 254
   %4 = select i1 %3, i64 1, i64 5
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   %6 = zext i32 %1 to i64
-  %7 = getelementptr nusw i8, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %5, i64 %6
   ret ptr %7
 }
 

@@ -1,20 +1,23 @@
 
-; 7 occurrences:
+; 10 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/JumpDiagnostics.cpp.ll
+; llvm/optimized/TargetLowering.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
 ; openjdk/optimized/hb-face.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000007f(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 4
-  %5 = getelementptr nusw i8, ptr %0, i64 12
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 12
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   ret ptr %6
 }
 

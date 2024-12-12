@@ -126,6 +126,18 @@ entry:
   ret i32 %4
 }
 
+; 1 occurrences:
+; linux/optimized/xhci-ring.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000007(i32 %0) #0 {
+entry:
+  %1 = lshr i32 %0, 16
+  %2 = and i32 %1, 31
+  %3 = mul nuw nsw i32 %2, 144
+  %4 = add nsw i32 %3, -144
+  ret i32 %4
+}
+
 ; 2 occurrences:
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll

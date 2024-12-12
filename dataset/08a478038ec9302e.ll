@@ -22,7 +22,7 @@ entry:
   ret i8 %3
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; c3c/optimized/sema_decls.c.ll
 ; grpc/optimized/retry_filter_legacy_call_data.cc.ll
@@ -37,6 +37,7 @@ entry:
 ; postgres/optimized/heapam.ll
 ; postgres/optimized/spgscan.ll
 ; wireshark/optimized/blf.c.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000007(i16 %0) #0 {
 entry:

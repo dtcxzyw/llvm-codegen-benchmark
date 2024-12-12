@@ -34,8 +34,9 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; libwebp/optimized/anim_decode.c.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; ncnn/optimized/mat_pixel_affine.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001b(i32 %0, i32 %1) #0 {
@@ -43,6 +44,17 @@ entry:
   %2 = sub nuw nsw i32 1024, %1
   %3 = lshr i32 %0, 5
   %4 = mul nuw nsw i32 %3, %2
+  ret i32 %4
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_mask.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
+entry:
+  %2 = sub nsw i32 255, %1
+  %3 = lshr i32 %0, 10
+  %4 = mul i32 %3, %2
   ret i32 %4
 }
 

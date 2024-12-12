@@ -1,10 +1,8 @@
 
-; 19 occurrences:
+; 17 occurrences:
 ; box2d/optimized/b2_edge_shape.cpp.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
-; gromacs/optimized/vsite_parm.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
@@ -28,12 +26,10 @@ entry:
   ret i1 %5
 }
 
-; 15 occurrences:
+; 13 occurrences:
 ; box2d/optimized/b2_edge_shape.cpp.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
-; gromacs/optimized/vsite_parm.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
@@ -62,7 +58,7 @@ define i1 @func000000000000000a(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fdiv float %1, %2
   %4 = fcmp ugt float %3, 1.000000e+00
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -89,7 +85,7 @@ define i1 @func000000000000000e(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fdiv float %1, %2
   %4 = fcmp une float %3, 0.000000e+00
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

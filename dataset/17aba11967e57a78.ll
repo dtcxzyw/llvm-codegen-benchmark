@@ -1,5 +1,5 @@
 
-; 7 occurrences:
+; 9 occurrences:
 ; clamav/optimized/wwunpack.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
@@ -7,6 +7,8 @@
 ; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/hb-ot-var.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000e(i32 %0, i8 %1) #0 {
 entry:

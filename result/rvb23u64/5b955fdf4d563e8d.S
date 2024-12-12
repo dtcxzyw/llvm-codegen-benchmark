@@ -1,11 +1,13 @@
-func000000000000005a:                   # @func000000000000005a
-	andi	a2, a2, 255
-	slli	a1, a1, 6
+func000000000000007f:                   # @func000000000000007f
+	andi	a2, a2, 1023
+	lui	a3, 1
+	addiw	a3, a3, -608
+	mul	a1, a1, a3
 	add	a0, a0, a1
-	add	a0, a0, a2
-	addi	a0, a0, 32
+	sh1add	a0, a2, a0
+	addi	a0, a0, 288
 	ret
-func0000000000000018:                   # @func0000000000000018
+func000000000000001c:                   # @func000000000000001c
 	andi	a2, a2, 1
 	sh1add	a1, a1, a1
 	sh2add	a1, a1, a2

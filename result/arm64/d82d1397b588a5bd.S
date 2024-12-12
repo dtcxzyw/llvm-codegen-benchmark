@@ -1,46 +1,25 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	mov	w8, #63                         // =0x3f
-	movi	v7.2d, #0xffffffffffffffff
-	orr	v1.16b, v1.16b, v3.16b
-	dup	v6.2d, x8
-	orr	v0.16b, v0.16b, v2.16b
-	and	v5.16b, v5.16b, v6.16b
-	and	v4.16b, v4.16b, v6.16b
-	ushl	v5.2d, v7.2d, v5.2d
-	ushl	v4.2d, v7.2d, v4.2d
-	bic	v0.16b, v0.16b, v4.16b
-	bic	v1.16b, v1.16b, v5.16b
+	mov	x8, #-1                         // =0xffffffffffffffff
+	orr	x9, x0, x1
+	lsl	x8, x8, x2
+	bic	x0, x9, x8
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	mov	w8, #63                         // =0x3f
-	orr	v1.16b, v1.16b, v3.16b
-	orr	v0.16b, v0.16b, v2.16b
-	dup	v6.2d, x8
 	mov	w8, #1                          // =0x1
-	dup	v7.2d, x8
-	and	v5.16b, v5.16b, v6.16b
-	and	v4.16b, v4.16b, v6.16b
-	ushl	v5.2d, v7.2d, v5.2d
-	ushl	v4.2d, v7.2d, v4.2d
-	bic	v0.16b, v0.16b, v4.16b
-	bic	v1.16b, v1.16b, v5.16b
+	orr	x9, x0, x1
+	lsl	x8, x8, x2
+	bic	x0, x9, x8
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	mov	w8, #-16                        // =0xfffffff0
-	movi	v7.2d, #0x0000000000ffff
-	orr	v1.16b, v1.16b, v3.16b
-	dup	v6.2d, x8
-	orr	v0.16b, v0.16b, v2.16b
-	and	v5.16b, v5.16b, v6.16b
-	and	v4.16b, v4.16b, v6.16b
-	ushl	v5.2d, v7.2d, v5.2d
-	ushl	v4.2d, v7.2d, v4.2d
-	bic	v0.16b, v0.16b, v4.16b
-	bic	v1.16b, v1.16b, v5.16b
+	and	x8, x2, #0xfffffff0
+	mov	w9, #65535                      // =0xffff
+	lsl	x8, x9, x8
+	orr	x9, x0, x1
+	bic	x0, x9, x8
 	ret
                                         // -- End function

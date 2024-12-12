@@ -6,7 +6,7 @@
 ; ncnn/optimized/multiheadattention_x86_avx512.cpp.ll
 ; ncnn/optimized/multiheadattention_x86_fma.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %1, i1 true, i1 %3
@@ -20,7 +20,7 @@ entry:
 ; double_conversion/optimized/double-to-string.cc.ll
 ; openusd/optimized/double-to-string.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %1, i1 true, i1 %3

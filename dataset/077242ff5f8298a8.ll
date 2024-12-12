@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; casadi/optimized/scpgen.cpp.ll
 ; gromacs/optimized/gmx_bar.cpp.ll
 ; icu/optimized/calendar.ll
@@ -8,6 +8,7 @@
 ; openjdk/optimized/sharedRuntimeTrig.ll
 ; quantlib/optimized/bsmoperator.ll
 ; quantlib/optimized/fdminnervaluecalculator.ll
+; quantlib/optimized/gaussian1dmodel.ll
 ; sundials/optimized/arkode_sprk.c.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind

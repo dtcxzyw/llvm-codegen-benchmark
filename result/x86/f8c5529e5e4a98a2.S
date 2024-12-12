@@ -7,7 +7,7 @@ func0000000000000003:                   # @func0000000000000003
 	testl	%esi, %esi
 	cmovnel	%edi, %eax
 	retq
-func0000000000000009:                   # @func0000000000000009
+func0000000000000029:                   # @func0000000000000029
 	notb	%dl
 	movzbl	%dl, %eax
 	andl	$1, %eax

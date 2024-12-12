@@ -8,7 +8,7 @@ func0000000000000000:                   # @func0000000000000000
 	vmulh.vx	v12, v12, a0
 	vsra.vi	v14, v14, 2
 	vsra.vi	v12, v12, 5
-	vadd.vv	v10, v14, v10
+	vadd.vv	v10, v10, v14
 	vsrl.vi	v14, v12, 31
 	vadd.vv	v12, v12, v14
 	vadd.vv	v8, v10, v8
@@ -25,7 +25,7 @@ func0000000000000015:                   # @func0000000000000015
 	vsra.vi	v14, v14, 5
 	vsra.vi	v12, v12, 7
 	vsrl.vi	v16, v14, 31
-	vadd.vv	v10, v14, v10
+	vadd.vv	v10, v10, v14
 	vsrl.vi	v14, v12, 31
 	vadd.vv	v10, v10, v16
 	vadd.vv	v12, v12, v14
@@ -42,7 +42,7 @@ func0000000000000011:                   # @func0000000000000011
 	vmulh.vx	v12, v12, a0
 	vsra.vi	v14, v14, 2
 	vsra.vi	v12, v12, 5
-	vadd.vv	v10, v14, v10
+	vadd.vv	v10, v10, v14
 	vsrl.vi	v14, v12, 31
 	vadd.vv	v12, v12, v14
 	vadd.vv	v8, v10, v8
@@ -59,7 +59,7 @@ func0000000000000005:                   # @func0000000000000005
 	vsra.vi	v14, v14, 5
 	vsra.vi	v12, v12, 7
 	vsrl.vi	v16, v14, 31
-	vadd.vv	v10, v14, v10
+	vadd.vv	v10, v10, v14
 	vsrl.vi	v14, v12, 31
 	vadd.vv	v10, v10, v16
 	vadd.vv	v12, v12, v14
@@ -77,7 +77,7 @@ func0000000000000014:                   # @func0000000000000014
 	vsra.vi	v14, v14, 5
 	vsra.vi	v12, v12, 7
 	vsrl.vi	v16, v14, 31
-	vadd.vv	v10, v14, v10
+	vadd.vv	v10, v10, v14
 	vsrl.vi	v14, v12, 31
 	vadd.vv	v10, v10, v16
 	vadd.vv	v12, v12, v14

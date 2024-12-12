@@ -7,9 +7,8 @@ func000000000000000c:                   # @func000000000000000c
 	movl	%edi, %eax
 	orl	%esi, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
-	movl	%esi, %eax
-	andb	$2, %al
-	shrb	%al
+func0000000000000018:                   # @func0000000000000018
+	testb	$12, %sil
+	setne	%al
 	orb	%dil, %al
 	retq

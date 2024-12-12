@@ -14,14 +14,14 @@ func0000000000000008:                   # @func0000000000000008
 	vnsrl.wi	v11, v8, 0
 	vmsltu.vv	v0, v11, v10
 	ret
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsrl.vi	v10, v10, 1
 	vand.vi	v10, v10, 1
 	vnsrl.wi	v11, v8, 0
 	vmseq.vv	v0, v10, v11
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsrl.vi	v10, v10, 8
 	li	a0, 255

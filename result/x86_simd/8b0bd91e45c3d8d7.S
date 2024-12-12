@@ -17,11 +17,11 @@
 	.zero	1
 	.zero	1
 	.zero	1
-func000000000000008c:                   # @func000000000000008c
+func000000000000010c:                   # @func000000000000010c
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
 	vpcmpltud	.LCPI0_0(%rip){1to8}, %ymm2, %k1
-	korb	%k0, %k1, %k0
+	korb	%k1, %k0, %k0
 	vpcmpneqb	.LCPI0_1(%rip), %xmm0, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
@@ -46,11 +46,11 @@ func000000000000008c:                   # @func000000000000008c
 	.zero	1
 	.zero	1
 	.zero	1
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
 	vpcmpeqd	.LCPI1_0(%rip){1to8}, %ymm2, %k1
-	korb	%k0, %k1, %k0
+	korb	%k1, %k0, %k0
 	vpcmpneqb	.LCPI1_1(%rip), %xmm0, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0

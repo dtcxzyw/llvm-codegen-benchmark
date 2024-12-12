@@ -1,4 +1,4 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
@@ -6,7 +6,7 @@ func0000000000000031:                   # @func0000000000000031
 	vpcmpeqd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
@@ -14,7 +14,7 @@ func0000000000000021:                   # @func0000000000000021
 	vpcmpeqd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-func0000000000000211:                   # @func0000000000000211
+func0000000000000421:                   # @func0000000000000421
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
@@ -22,7 +22,7 @@ func0000000000000211:                   # @func0000000000000211
 	vpcmpeqd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-func0000000000000136:                   # @func0000000000000136
+func0000000000000266:                   # @func0000000000000266
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
@@ -30,7 +30,7 @@ func0000000000000136:                   # @func0000000000000136
 	vpcmpgtd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
-func0000000000000118:                   # @func0000000000000118
+func0000000000000228:                   # @func0000000000000228
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
@@ -50,7 +50,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 .LCPI6_0:
 	.long	64                              # 0x40
-func0000000000000308:                   # @func0000000000000308
+func0000000000000608:                   # @func0000000000000608
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	.LCPI6_0(%rip){1to4}, %xmm0, %xmm0
@@ -58,7 +58,7 @@ func0000000000000308:                   # @func0000000000000308
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000121:                   # @func0000000000000121
+func0000000000000241:                   # @func0000000000000241
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
@@ -66,7 +66,7 @@ func0000000000000121:                   # @func0000000000000121
 	vpcmpeqd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000141:                   # @func0000000000000141
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
@@ -74,7 +74,7 @@ func00000000000000a1:                   # @func00000000000000a1
 	vpcmpeqd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-func00000000000003b6:                   # @func00000000000003b6
+func0000000000000766:                   # @func0000000000000766
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
@@ -82,7 +82,7 @@ func00000000000003b6:                   # @func00000000000003b6
 	vpcmpgtd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
@@ -92,7 +92,7 @@ func0000000000000036:                   # @func0000000000000036
 	retq
 .LCPI11_0:
 	.long	4294967264                      # 0xffffffe0
-func0000000000000396:                   # @func0000000000000396
+func0000000000000726:                   # @func0000000000000726
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	.LCPI11_0(%rip){1to4}, %xmm0, %xmm0
@@ -101,7 +101,7 @@ func0000000000000396:                   # @func0000000000000396
 	retq
 .LCPI12_0:
 	.long	4294967292                      # 0xfffffffc
-func000000000000039a:                   # @func000000000000039a
+func000000000000072a:                   # @func000000000000072a
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	.LCPI12_0(%rip){1to4}, %xmm0, %xmm0

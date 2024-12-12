@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 26 occurrences:
 ; abc/optimized/decompress.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; clamav/optimized/bzlib.c.ll
@@ -23,7 +23,6 @@
 ; oiio/optimized/tiffinput.cpp.ll
 ; oiio/optimized/tiffoutput.cpp.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; wireshark/optimized/packet-csn1.c.ll
 ; zxing/optimized/BitSource.cpp.ll
@@ -62,7 +61,8 @@ entry:
   ret i32 %4
 }
 
-; 9 occurrences:
+; 10 occurrences:
+; boost/optimized/basic_text_wiprimitive.ll
 ; clamav/optimized/ole2_extract.c.ll
 ; clamav/optimized/pe_icons.c.ll
 ; draco/optimized/dynamic_integer_points_kd_tree_decoder.cc.ll

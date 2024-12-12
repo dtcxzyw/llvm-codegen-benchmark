@@ -71,16 +71,24 @@ func0000000000000005:                   # @func0000000000000005
 	retq
 .LCPI10_0:
 	.long	14348907                        # 0xdaf26b
-func0000000000000011:                   # @func0000000000000011
+func0000000000000051:                   # @func0000000000000051
 	vpcmpltud	.LCPI10_0(%rip){1to8}, %ymm2, %k1
 	vmovdqa32	%ymm0, %ymm1 {%k1}
 	vpmovdw	%ymm1, %xmm0
 	vzeroupper
 	retq
 .LCPI11_0:
+	.long	16                              # 0x10
+func0000000000000050:                   # @func0000000000000050
+	vpcmpltud	.LCPI11_0(%rip){1to8}, %ymm2, %k1
+	vmovdqa32	%ymm0, %ymm1 {%k1}
+	vpmovdw	%ymm1, %xmm0
+	vzeroupper
+	retq
+.LCPI12_0:
 	.long	31743                           # 0x7bff
-func0000000000000020:                   # @func0000000000000020
-	vpcmpnleud	.LCPI11_0(%rip){1to8}, %ymm2, %k1
+func0000000000000060:                   # @func0000000000000060
+	vpcmpnleud	.LCPI12_0(%rip){1to8}, %ymm2, %k1
 	vmovdqa32	%ymm0, %ymm1 {%k1}
 	vpmovdw	%ymm1, %xmm0
 	vzeroupper

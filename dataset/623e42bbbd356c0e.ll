@@ -1,5 +1,5 @@
 
-; 718 occurrences:
+; 735 occurrences:
 ; abc/optimized/absOldSim.c.ll
 ; abc/optimized/bmcFault.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -30,6 +30,7 @@
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/area.ll
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/Ppmd7Dec.c.ll
 ; clamav/optimized/bytecode_vm.c.ll
@@ -223,14 +224,12 @@
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/af_unix.ll
 ; linux/optimized/auth_gss.ll
-; linux/optimized/auth_unix.ll
 ; linux/optimized/calipso.ll
 ; linux/optimized/client.ll
 ; linux/optimized/compaction.ll
 ; linux/optimized/drm_dp_helper.ll
 ; linux/optimized/drm_dsc_helper.ll
 ; linux/optimized/evdev.ll
-; linux/optimized/he.ll
 ; linux/optimized/i915_query.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/input.ll
@@ -288,6 +287,10 @@
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; luau/optimized/ltablib.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_draw_buf.ll
+; lvgl/optimized/lv_image_decoder.ll
 ; meilisearch-rs/optimized/3f4k2xees4fvt0r.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
@@ -373,8 +376,6 @@
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtpttf.c.ll
 ; opencv/optimized/attr_value.pb.cc.ll
 ; opencv/optimized/color_lab.cpp.ll
 ; opencv/optimized/convolution.cpp.ll
@@ -398,6 +399,7 @@
 ; openjdk/optimized/archiveHeapWriter.ll
 ; openjdk/optimized/arrayKlass.ll
 ; openjdk/optimized/c2_MacroAssembler_x86.ll
+; openjdk/optimized/classFileParser.ll
 ; openjdk/optimized/constantPool.ll
 ; openjdk/optimized/hb-ot-name.ll
 ; openjdk/optimized/instanceKlass.ll
@@ -471,8 +473,6 @@
 ; php/optimized/zend_jit.ll
 ; postgres/optimized/brin_minmax_multi.ll
 ; postgres/optimized/brin_pageops.ll
-; postgres/optimized/brin_revmap.ll
-; postgres/optimized/brin_xlog.ll
 ; postgres/optimized/bufpage.ll
 ; postgres/optimized/dbcommands.ll
 ; postgres/optimized/euc2004_sjis2004.ll
@@ -712,6 +712,23 @@
 ; z3/optimized/pb2bv_rewriter.cpp.ll
 ; z3/optimized/sortmax.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/2i8hya6f2t9bndlbd6b6686oi.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
+; zed-rs/optimized/4wlt97p2na7yq96c9gq3wlrfc.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
+; zed-rs/optimized/ad3qos5opie5ae39m3c4ahrzq.ll
+; zed-rs/optimized/b1bc3rbs9s229gjbf718xcm8w.ll
+; zed-rs/optimized/boyei0qs0y80q8snoztbi8jt7.ll
+; zed-rs/optimized/d8k4gi60mp0onf0c8t6rhs7ks.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
+; zed-rs/optimized/f10ffiihtazjqkmwr0jihceey.ll
 ; zstd/optimized/fse_compress.c.ll
 ; zstd/optimized/huf_compress.c.ll
 ; zstd/optimized/zstd_compress_sequences.c.ll
@@ -726,7 +743,7 @@ entry:
   ret i32 %2
 }
 
-; 441 occurrences:
+; 438 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/acecXor.c.ll
@@ -757,10 +774,11 @@ entry:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/zip.c.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/operations.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/encode.c.ll
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; c3c/optimized/parse_expr.c.ll
-; ceres/optimized/schur_eliminator_2_d_d.cc.ll
 ; clamav/optimized/LzmaDec.c.ll
 ; clamav/optimized/aspack.c.ll
 ; clamav/optimized/lzxd.c.ll
@@ -791,7 +809,6 @@ entry:
 ; freetype/optimized/pcf.c.ll
 ; git/optimized/date.ll
 ; git/optimized/notes.ll
-; git/optimized/pq.ll
 ; graphviz/optimized/mincross.c.ll
 ; graphviz/optimized/stuff.c.ll
 ; gromacs/optimized/trees.c.ll
@@ -816,7 +833,6 @@ entry:
 ; icu/optimized/bmpset.ll
 ; icu/optimized/decNumber.ll
 ; icu/optimized/gencnvex.ll
-; icu/optimized/gregoimp.ll
 ; icu/optimized/normalizer2impl.ll
 ; icu/optimized/patternprops.ll
 ; icu/optimized/uchar.ll
@@ -864,9 +880,7 @@ entry:
 ; linux/optimized/hooks.ll
 ; linux/optimized/intel_bios.ll
 ; linux/optimized/intel_panel.ll
-; linux/optimized/perfctr-watchdog.ll
 ; linux/optimized/ptrace.ll
-; linux/optimized/sd.ll
 ; linux/optimized/seq_clientmgr.ll
 ; linux/optimized/swap_state.ll
 ; linux/optimized/tcp_input.ll
@@ -1176,7 +1190,7 @@ entry:
   ret i32 %2
 }
 
-; 1746 occurrences:
+; 1740 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/decompress.c.ll
@@ -1210,6 +1224,8 @@ entry:
 ; assimp/optimized/glTFImporter.cpp.ll
 ; assimp/optimized/o3dgcArithmeticCodec.cpp.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/test_codecvt.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; brotli/optimized/metablock.c.ll
@@ -1219,6 +1235,7 @@ entry:
 ; c3c/optimized/codegen_general.c.ll
 ; c3c/optimized/symtab.c.ll
 ; c3c/optimized/types.c.ll
+; ceres/optimized/schur_eliminator_2_d_d.cc.ll
 ; chibicc/optimized/tokenize.ll
 ; clamav/optimized/Bcj2.c.ll
 ; clamav/optimized/Ppmd7.c.ll
@@ -1245,6 +1262,7 @@ entry:
 ; cmake/optimized/divsufsort.c.ll
 ; cmake/optimized/fse_compress.c.ll
 ; cmake/optimized/lz_encoder.c.ll
+; cmake/optimized/lzma2_encoder.c.ll
 ; cmake/optimized/lzma_decoder.c.ll
 ; cmake/optimized/ntlm.c.ll
 ; cmake/optimized/threadpool.c.ll
@@ -1312,7 +1330,6 @@ entry:
 ; git/optimized/bloom.ll
 ; git/optimized/bulk-checkin.ll
 ; git/optimized/delta-islands.ll
-; git/optimized/diff.ll
 ; git/optimized/dir.ll
 ; git/optimized/line-log.ll
 ; git/optimized/object-file.ll
@@ -1421,12 +1438,10 @@ entry:
 ; libquic/optimized/deflate.c.ll
 ; libquic/optimized/gcm.c.ll
 ; libquic/optimized/p256-64.c.ll
-; libquic/optimized/p_ec.c.ll
 ; libquic/optimized/s3_srvr.c.ll
 ; libquic/optimized/shift.c.ll
 ; libquic/optimized/ssl_ecdh.c.ll
 ; libquic/optimized/trees.c.ll
-; libsodium/optimized/libsodium_la-verify.ll
 ; libuv/optimized/core.c.ll
 ; libuv/optimized/threadpool.c.ll
 ; libwebp/optimized/alpha_processing.c.ll
@@ -1522,7 +1537,6 @@ entry:
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
-; linux/optimized/acpi_cmos_rtc.ll
 ; linux/optimized/af_netlink.ll
 ; linux/optimized/ah6.ll
 ; linux/optimized/auth_gss.ll
@@ -1540,12 +1554,10 @@ entry:
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/efi.ll
 ; linux/optimized/ehci-hcd.ll
-; linux/optimized/eht.ll
 ; linux/optimized/esp6.ll
 ; linux/optimized/evdev.ll
 ; linux/optimized/exfield.ll
 ; linux/optimized/exfldio.ll
-; linux/optimized/exprep.ll
 ; linux/optimized/fair.ll
 ; linux/optimized/gss_krb5_wrap.ll
 ; linux/optimized/hid-core.ll
@@ -1556,10 +1568,8 @@ entry:
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_dpll_mgr.ll
-; linux/optimized/intel_mocs.ll
 ; linux/optimized/intel_modeset_setup.ll
 ; linux/optimized/irq.ll
-; linux/optimized/isadma.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/mpicoder.ll
 ; linux/optimized/netdev.ll
@@ -1577,7 +1587,6 @@ entry:
 ; linux/optimized/vgacon.ll
 ; linux/optimized/virtio_net.ll
 ; linux/optimized/vt.ll
-; linux/optimized/wep.ll
 ; linux/optimized/xfrm_replay.ll
 ; linux/optimized/xfrm_user.ll
 ; linux/optimized/xhci.ll
@@ -1763,7 +1772,6 @@ entry:
 ; llvm/optimized/RDFGraph.cpp.ll
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RDFRegisters.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVMoveMerger.cpp.ll
 ; llvm/optimized/RISCVO0PreLegalizerCombiner.cpp.ll
@@ -1885,6 +1893,8 @@ entry:
 ; luajit/optimized/lj_ccallback_dyn.ll
 ; luajit/optimized/minilua.ll
 ; luau/optimized/OptimizeConstProp.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/miniz.c.ll
@@ -2133,18 +2143,14 @@ entry:
 ; php/optimized/zend_inheritance.ll
 ; php/optimized/zend_jit.ll
 ; postgres/optimized/data.ll
-; postgres/optimized/hashpage.ll
-; postgres/optimized/hashsort.ll
 ; postgres/optimized/hashutil.ll
 ; postgres/optimized/heapam.ll
 ; postgres/optimized/localtime.ll
 ; postgres/optimized/multixact.ll
 ; postgres/optimized/partbounds.ll
 ; postgres/optimized/print.ll
-; postgres/optimized/rangetypes_gist.ll
 ; postgres/optimized/subtrans.ll
 ; postgres/optimized/tupdesc.ll
-; postgres/optimized/wait_event.ll
 ; postgres/optimized/xml.ll
 ; protobuf/optimized/parser.cc.ll
 ; qemu/optimized/ahci.c.ll
@@ -2372,7 +2378,6 @@ entry:
 ; z3/optimized/check_relation.cpp.ll
 ; z3/optimized/check_sat_result.cpp.ll
 ; z3/optimized/clp_context.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/cofactor_elim_term_ite.cpp.ll
 ; z3/optimized/cofactor_term_ite_tactic.cpp.ll
 ; z3/optimized/collect_occs.cpp.ll
@@ -2916,6 +2921,9 @@ entry:
 ; z3/optimized/warning.cpp.ll
 ; z3/optimized/wmax.cpp.ll
 ; z3/optimized/z3_replayer.cpp.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zlib/optimized/trees.c.ll
 ; zstd/optimized/divsufsort.c.ll
 ; zstd/optimized/fse_compress.c.ll
@@ -2931,12 +2939,12 @@ entry:
   ret i32 %2
 }
 
-; 118 occurrences:
+; 119 occurrences:
 ; assimp/optimized/OgreBinarySerializer.cpp.ll
+; boost/optimized/limit_fd.ll
 ; cmake/optimized/Terminal.c.ll
 ; cmake/optimized/archive_entry_link_resolver.c.ll
 ; cmake/optimized/archive_read_set_format.c.ll
-; cmake/optimized/archive_read_support_format_by_code.c.ll
 ; cmake/optimized/archive_read_support_format_mtree.c.ll
 ; cmake/optimized/archive_write_disk_posix.c.ll
 ; cmake/optimized/getinfo.c.ll
@@ -2977,7 +2985,6 @@ entry:
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/early-quirks.ll
 ; linux/optimized/fid.ll
-; linux/optimized/hdac_regmap.ll
 ; linux/optimized/hooks.ll
 ; linux/optimized/i9xx_plane.ll
 ; linux/optimized/ibss.ll
@@ -2986,6 +2993,7 @@ entry:
 ; linux/optimized/intel_overlay.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/rx.ll
+; linux/optimized/sd.ll
 ; linux/optimized/seccomp.ll
 ; linux/optimized/skl_universal_plane.ll
 ; linux/optimized/tg3.ll
@@ -3049,6 +3057,7 @@ entry:
 ; wolfssl/optimized/ecc.c.ll
 ; z3/optimized/pb2bv_rewriter.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; zxing/optimized/QRVersion.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0) #0 {
@@ -3208,12 +3217,13 @@ entry:
   ret i32 %2
 }
 
-; 85 occurrences:
+; 90 occurrences:
 ; arrow/optimized/util_avx2.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/lzma2_encoder.c.ll
 ; faiss/optimized/lattice_Zn.cpp.ll
 ; faiss/optimized/sorting.cpp.ll
@@ -3294,6 +3304,10 @@ entry:
 ; z3/optimized/pb2bv_rewriter.cpp.ll
 ; z3/optimized/sortmax.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0) #0 {
 entry:

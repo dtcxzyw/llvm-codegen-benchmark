@@ -31,7 +31,7 @@ func0000000000000025:                   # @func0000000000000025
 	retq
 .LCPI3_0:
 	.quad	1                               # 0x1
-func0000000000000105:                   # @func0000000000000105
+func0000000000000305:                   # @func0000000000000305
 	vpcmpnleuq	.LCPI3_0(%rip){1to4}, %ymm1, %k0
 	vpmovm2d	%k0, %xmm1
 	vpternlogq	$15, %xmm1, %xmm1, %xmm1 # xmm1 = ~xmm1

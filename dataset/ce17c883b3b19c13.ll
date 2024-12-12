@@ -1,5 +1,5 @@
 
-; 171 occurrences:
+; 165 occurrences:
 ; abc/optimized/cbaReadBlif.c.ll
 ; abc/optimized/cnfWrite.c.ll
 ; abc/optimized/dauCanon.c.ll
@@ -72,14 +72,12 @@
 ; darktable/optimized/pfm.c.ll
 ; gromacs/optimized/compute_io.cpp.ll
 ; gromacs/optimized/dlarft.cpp.ll
-; gromacs/optimized/dorg2r.cpp.ll
 ; gromacs/optimized/dorgl2.cpp.ll
 ; gromacs/optimized/dorglq.cpp.ll
 ; gromacs/optimized/dorgqr.cpp.ll
 ; gromacs/optimized/dstein.cpp.ll
 ; gromacs/optimized/grid.cpp.ll
 ; gromacs/optimized/slarft.cpp.ll
-; gromacs/optimized/sorg2r.cpp.ll
 ; gromacs/optimized/sorgl2.cpp.ll
 ; gromacs/optimized/sorglq.cpp.ll
 ; gromacs/optimized/sorgqr.cpp.ll
@@ -103,9 +101,8 @@
 ; luajit/optimized/buildvm.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
-; openblas/optimized/dgbtf2.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dgels.c.ll
 ; openblas/optimized/dgelst.c.ll
 ; openblas/optimized/dgelsy.c.ll
@@ -117,10 +114,7 @@
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
 ; openblas/optimized/dlatrs3.c.ll
-; openblas/optimized/dorghr.c.ll
-; openblas/optimized/dorgl2.c.ll
 ; openblas/optimized/dorgql.c.ll
-; openblas/optimized/dorgr2.c.ll
 ; openblas/optimized/dtrevc.c.ll
 ; openblas/optimized/dtrevc3.c.ll
 ; opencv/optimized/cornersubpix.cpp.ll
@@ -140,6 +134,7 @@
 ; postgres/optimized/buffile.ll
 ; postgres/optimized/extended_stats.ll
 ; postgres/optimized/function.ll
+; postgres/optimized/geo_ops.ll
 ; postgres/optimized/gistutil.ll
 ; postgres/optimized/list.ll
 ; postgres/optimized/lock.ll
@@ -153,7 +148,6 @@
 ; postgres/optimized/reloptions.ll
 ; postgres/optimized/spell.ll
 ; postgres/optimized/tsvector.ll
-; postgres/optimized/tsvector_op.ll
 ; proj/optimized/grids.cpp.ll
 ; qemu/optimized/block_quorum.c.ll
 ; qemu/optimized/hw_virtio_vhost-user.c.ll
@@ -180,8 +174,9 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; git/optimized/cache-tree.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
 ; opencv/optimized/bagofwords_classification.cpp.ll
 ; opencv/optimized/svm.cpp.ll
 ; opencv/optimized/tree.cpp.ll
@@ -195,7 +190,7 @@ entry:
   ret i64 %4
 }
 
-; 193 occurrences:
+; 195 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Glucose.cpp.ll
@@ -331,6 +326,7 @@ entry:
 ; libquic/optimized/dtoa.cc.ll
 ; libwebp/optimized/predictor_enc.c.ll
 ; linux/optimized/maple_tree.ll
+; minetest/optimized/minimap.cpp.ll
 ; ncnn/optimized/interp.cpp.ll
 ; ncnn/optimized/interp_x86.cpp.ll
 ; ncnn/optimized/interp_x86_avx.cpp.ll
@@ -354,14 +350,15 @@ entry:
 ; openjdk/optimized/zRelocationSet.ll
 ; openmpi/optimized/ad_aggregate.ll
 ; openmpi/optimized/ad_coll_build_req_new.ll
-; openmpi/optimized/ad_read_coll.ll
-; openmpi/optimized/ad_write_coll.ll
 ; openmpi/optimized/coll_ftagree_earlyreturning.ll
 ; openmpi/optimized/common_ompio_aggregators.ll
 ; openmpi/optimized/sharedfp_individual_collaborate_data.ll
 ; openmpi/optimized/tm_bucket.ll
 ; openmpi/optimized/tm_tree.ll
 ; openmpi/optimized/topo_treematch_dist_graph_create.ll
+; openspiel/optimized/chess.cc.ll
+; openspiel/optimized/chess_board.cc.ll
+; openspiel/optimized/kriegspiel.cc.ll
 ; openssl/optimized/libcrypto-lib-stack.ll
 ; openssl/optimized/libcrypto-shlib-stack.ll
 ; openusd/optimized/cpuKernel.cpp.ll

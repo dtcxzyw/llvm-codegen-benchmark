@@ -1,3 +1,9 @@
+func0000000000000010:                   # @func0000000000000010
+	addl	%edx, %edi
+	notl	%esi
+	addl	%edi, %esi
+	movslq	%esi, %rax
+	retq
 func0000000000000000:                   # @func0000000000000000
 	addl	%edx, %edi
 	subl	%esi, %edi

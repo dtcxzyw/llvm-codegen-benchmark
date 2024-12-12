@@ -24,8 +24,8 @@ func0000000000000000:                   // @func0000000000000000
 	orr	x8, x10, x8
 	csel	x8, x9, x8, ne
 	csel	x9, xzr, x9, ne
-	orr	x0, x9, x0
-	orr	x1, x8, x1
+	orr	x0, x0, x9
+	orr	x1, x1, x8
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004

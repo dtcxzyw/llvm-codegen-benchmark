@@ -1,11 +1,15 @@
 
-; 17 occurrences:
+; 21 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; g2o/optimized/optimizable_graph.cpp.ll
-; gromacs/optimized/dlapy2.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; llvm/optimized/CodeLayout.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll

@@ -2,12 +2,12 @@
 ; 1 occurrences:
 ; qemu/optimized/hw_nvme_dif.c.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000a0(i64 %0, i8 %1) #0 {
+define i64 @func0000000000000120(i64 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i8 %1, -1
   %3 = icmp ult i8 %2, 2
   %4 = zext i1 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -19,7 +19,7 @@ define i64 @func0000000000000008(i64 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 7
   %3 = zext i1 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -68,7 +68,7 @@ entry:
   %2 = add i8 %1, -5
   %3 = icmp ult i8 %2, -2
   %4 = zext i1 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -86,7 +86,20 @@ entry:
   %2 = add i8 %1, 1
   %3 = icmp sgt i8 %2, 12
   %4 = zext i1 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
+  ret i64 %5
+}
+
+; 2 occurrences:
+; tokenizers-rs/optimized/10h1ju7dwsvagf79.ll
+; zed-rs/optimized/0b032pjjfhzfqpvy5k7rem7aa.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000022(i64 %0, i8 %1) #0 {
+entry:
+  %2 = add i8 %1, -3
+  %3 = icmp ult i8 %2, -2
+  %4 = zext i1 %3 to i64
+  %5 = add nuw i64 %0, %4
   ret i64 %5
 }
 
@@ -98,7 +111,7 @@ entry:
   %2 = add i8 %1, -5
   %3 = icmp ult i8 %2, 3
   %4 = zext i1 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -107,24 +120,12 @@ entry:
 ; mini-lsm-rs/optimized/4xntel1vrsy72qk8.ll
 ; tokenizers-rs/optimized/10h1ju7dwsvagf79.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000a2(i64 %0, i8 %1) #0 {
+define i64 @func00000000000001a2(i64 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i8 %1, -3
-  %3 = icmp ult i8 %2, -2
+  %3 = icmp samesign ult i8 %2, -2
   %4 = zext i1 %3 to i64
-  %5 = add nuw i64 %4, %0
-  ret i64 %5
-}
-
-; 1 occurrences:
-; tokenizers-rs/optimized/10h1ju7dwsvagf79.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000022(i64 %0, i8 %1) #0 {
-entry:
-  %2 = add i8 %1, -3
-  %3 = icmp ult i8 %2, -2
-  %4 = zext i1 %3 to i64
-  %5 = add nuw i64 %4, %0
+  %5 = add nuw i64 %0, %4
   ret i64 %5
 }
 

@@ -1,5 +1,5 @@
 
-; 806 occurrences:
+; 830 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/exponential_distribution_test.cc.ll
@@ -18,6 +18,33 @@
 ; assimp/optimized/IFCUtil.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/sweep.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/relative_order.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
 ; bullet3/optimized/btGjkPairDetector.ll
 ; bullet3/optimized/poly34.ll
 ; casadi/optimized/convexify.cpp.ll
@@ -194,7 +221,6 @@
 ; gromacs/optimized/dlae2.cpp.ll
 ; gromacs/optimized/dlaed6.cpp.ll
 ; gromacs/optimized/dlaev2.cpp.ll
-; gromacs/optimized/dlagtf.cpp.ll
 ; gromacs/optimized/dlar1vx.cpp.ll
 ; gromacs/optimized/dlasd2.cpp.ll
 ; gromacs/optimized/dlasd4.cpp.ll
@@ -311,7 +337,6 @@
 ; openblas/optimized/dgghd3.c.ll
 ; openblas/optimized/dgsvj0.c.ll
 ; openblas/optimized/dgsvj1.c.ll
-; openblas/optimized/dgttrf.c.ll
 ; openblas/optimized/dhgeqz.c.ll
 ; openblas/optimized/dlaed4.c.ll
 ; openblas/optimized/dlaed6.c.ll
@@ -323,7 +348,6 @@
 ; openblas/optimized/dlanv2.c.ll
 ; openblas/optimized/dlaqr5.c.ll
 ; openblas/optimized/dlar1v.c.ll
-; openblas/optimized/dlarra.c.ll
 ; openblas/optimized/dlasd2.c.ll
 ; openblas/optimized/dlasd4.c.ll
 ; openblas/optimized/dlasr.c.ll
@@ -810,7 +834,7 @@
 define double @func0000000000000000(double %0, double %1) #0 {
 entry:
   %2 = fneg double %1
-  %3 = fmul double %2, %0
+  %3 = fmul double %0, %2
   ret double %3
 }
 

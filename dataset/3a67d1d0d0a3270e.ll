@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 29 occurrences:
 ; bullet3/optimized/btBoxBoxDetector.ll
 ; darktable/optimized/introspection_colormapping.c.ll
 ; darktable/optimized/introspection_sigmoid.c.ll
@@ -7,6 +7,7 @@
 ; gromacs/optimized/cellsizes.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/function_parameter.cpp.ll

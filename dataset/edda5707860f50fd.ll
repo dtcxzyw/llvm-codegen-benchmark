@@ -31,7 +31,7 @@ entry:
   ret double %3
 }
 
-; 27 occurrences:
+; 26 occurrences:
 ; gromacs/optimized/colvarcomp_distances.cpp.ll
 ; opencv/optimized/colored_tsdf.cpp.ll
 ; opencv/optimized/dynafu_tsdf.cpp.ll
@@ -58,7 +58,6 @@ entry:
 ; openusd/optimized/skeletonAdapter.cpp.ll
 ; proj/optimized/datum.cpp.ll
 ; proj/optimized/ell_set.cpp.ll
-; proj/optimized/io.cpp.ll
 ; Function Attrs: nounwind
 define double @func0000000000000007(double %0) #0 {
 entry:

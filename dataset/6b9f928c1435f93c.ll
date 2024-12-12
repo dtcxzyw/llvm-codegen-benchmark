@@ -42,7 +42,7 @@ entry:
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
 ; openusd/optimized/string-to-double.cc.ll
 ; qemu/optimized/block_io.c.ll
-; spike/optimized/f128_classify.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:

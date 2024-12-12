@@ -3,7 +3,7 @@
 ; cpython/optimized/dtoa.ll
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000a8a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000150a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = call i32 @llvm.smax.i32(i32 %2, i32 0)
   %4 = add nuw i32 %3, %1
@@ -18,7 +18,7 @@ entry:
 ; libquic/optimized/dtoa.cc.ll
 ; php/optimized/zend_strtod.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000ada(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000015aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = call i32 @llvm.smax.i32(i32 %2, i32 0)
   %4 = add nuw nsw i32 %3, %1

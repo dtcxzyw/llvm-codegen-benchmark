@@ -1,5 +1,5 @@
 
-; 85 occurrences:
+; 86 occurrences:
 ; abc/optimized/abcAuto.c.ll
 ; abc/optimized/abcBlifMv.c.ll
 ; abc/optimized/abcCas.c.ll
@@ -51,6 +51,7 @@
 ; abc/optimized/wlcReadVer.c.ll
 ; abc/optimized/xsatSolverAPI.c.ll
 ; cpython/optimized/compile.ll
+; darktable/optimized/AbstractLJpegDecoder.cpp.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; icu/optimized/caniter.ll
 ; icu/optimized/number_skeletons.ll
@@ -94,7 +95,7 @@ entry:
   ret i64 %5
 }
 
-; 40 occurrences:
+; 41 occurrences:
 ; git/optimized/archive-tar.ll
 ; git/optimized/archive.ll
 ; git/optimized/attr.ll
@@ -133,6 +134,7 @@ entry:
 ; meshlab/optimized/meshselect.cpp.ll
 ; meshlab/optimized/ml_default_decorators.cpp.ll
 ; ocio/optimized/FileFormat3DL.cpp.ll
+; opencv/optimized/calibinit.cpp.ll
 ; opencv/optimized/matrix_decomp.cpp.ll
 ; openspiel/optimized/tiny_hanabi.cc.ll
 ; Function Attrs: nounwind

@@ -89,17 +89,21 @@ func0000000000000cd4:                   # @func0000000000000cd4
 	and	a0, a0, a1
 	xori	a0, a0, 1
 	ret
-func0000000000000660:                   # @func0000000000000660
-	feq.s	a0, fa2, fa2
-	lui	a1, 522240
-	fmv.w.x	fa5, a1
-	flt.s	a1, fa1, fa5
-	flt.s	a2, fa5, fa1
+func0000000000002664:                   # @func0000000000002664
+	lui	a0, 522240
+	fmv.w.x	fa5, a0
+	flt.s	a0, fa2, fa5
+	flt.s	a1, fa5, fa2
+	flt.s	a2, fa1, fa5
+	or	a0, a0, a1
+	flt.s	a1, fa5, fa1
+	or	a1, a1, a2
+	flt.s	a2, fa0, fa5
+	and	a0, a0, a1
+	flt.s	a1, fa5, fa0
 	or	a1, a1, a2
 	and	a0, a0, a1
 	xori	a0, a0, 1
-	feq.s	a1, fa0, fa5
-	or	a0, a0, a1
 	ret
 func0000000000002210:                   # @func0000000000002210
 	fmv.w.x	fa5, zero
@@ -117,12 +121,5 @@ func0000000000001e10:                   # @func0000000000001e10
 	feq.s	a2, fa0, fa5
 	xori	a0, a0, 1
 	or	a1, a1, a2
-	or	a0, a0, a1
-	ret
-func0000000000003b9c:                   # @func0000000000003b9c
-	feq.s	a0, fa2, fa2
-	feq.s	a1, fa1, fa1
-	or	a0, a0, a1
-	feq.s	a1, fa0, fa0
 	or	a0, a0, a1
 	ret

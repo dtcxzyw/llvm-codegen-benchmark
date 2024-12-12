@@ -4,5 +4,5 @@ func0000000000000000:                   # @func0000000000000000
 	vfcvt.f.xu.v	v10, v12
 	vfcvt.f.xu.v	v9, v9
 	vfdiv.vv	v9, v9, v10
-	vfmul.vv	v8, v9, v8
+	vfmul.vv	v8, v8, v9
 	ret

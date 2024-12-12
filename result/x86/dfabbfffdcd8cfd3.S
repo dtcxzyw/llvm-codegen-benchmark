@@ -23,9 +23,10 @@ func0000000000000040:                   # @func0000000000000040
 	leal	4800(%rdi), %eax
 	retq
 func0000000000000010:                   # @func0000000000000010
+	xorl	%eax, %eax
 	cmpl	$1, %esi
-	movl	$-1, %eax
-	sbbl	$0, %eax
+	sete	%al
+	notl	%eax
 	addl	%edi, %eax
 	retq
 func00000000000000c8:                   # @func00000000000000c8

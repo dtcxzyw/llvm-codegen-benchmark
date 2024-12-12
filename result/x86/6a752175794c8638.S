@@ -22,6 +22,12 @@ func0000000000000003:                   # @func0000000000000003
 	shrl	$24, %eax
 	addl	%edi, %eax
 	retq
+func000000000000000b:                   # @func000000000000000b
+	movzwl	%dx, %eax
+	addl	%esi, %eax
+	shrl	$2, %eax
+	addl	%edi, %eax
+	retq
 func0000000000000001:                   # @func0000000000000001
 	andl	$2139062143, %edx               # imm = 0x7F7F7F7F
 	leal	(%rdx,%rsi), %eax

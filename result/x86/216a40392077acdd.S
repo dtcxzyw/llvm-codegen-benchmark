@@ -27,3 +27,9 @@ func0000000000000007:                   # @func0000000000000007
 	andl	$1, %edi
 	leaq	(%rdi,%rsi,2), %rax
 	retq
+func000000000000000e:                   # @func000000000000000e
+	orq	%rdx, %rsi
+	shlq	$5, %rsi
+	andl	$31, %edi
+	leaq	(%rdi,%rsi), %rax
+	retq

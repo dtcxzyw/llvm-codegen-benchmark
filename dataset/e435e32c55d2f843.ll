@@ -4,7 +4,7 @@
 ; llvm/optimized/MoveChecker.cpp.ll
 ; opencv/optimized/ts_func.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c1(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000181(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = icmp eq i32 %0, 0
@@ -22,7 +22,7 @@ entry:
 ; openusd/optimized/testSdfPredicateExpression.cpp.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 4294967296
   %3 = icmp eq i32 %0, 0

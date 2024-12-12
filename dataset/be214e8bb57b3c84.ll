@@ -1,8 +1,7 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; ruby/optimized/prism.ll
 ; wireshark/optimized/packet-catapult-dct2000.c.ll
-; wolfssl/optimized/coding.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000010(i8 %0, i8 %1, i8 %2) #0 {
 entry:

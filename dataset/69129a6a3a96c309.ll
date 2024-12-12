@@ -16,18 +16,6 @@ entry:
 }
 
 ; 1 occurrences:
-; php/optimized/pcre2_match.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000023(i8 %0, i8 %1) #0 {
-entry:
-  %2 = icmp ult i8 %1, 46
-  %3 = select i1 %2, i64 4294967263, i64 4294967250
-  %4 = zext i8 %0 to i64
-  %5 = add nuw nsw i64 %3, %4
-  ret i64 %5
-}
-
-; 1 occurrences:
 ; llvm/optimized/MicrosoftDemangle.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000025(i8 %0, i8 %1) #0 {

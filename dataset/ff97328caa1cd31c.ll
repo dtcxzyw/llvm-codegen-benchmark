@@ -1,8 +1,9 @@
 
-%"class.llvm::detail::DenseSetPair.581.2963990" = type { %"struct.llvm::ValueInfo.2963987" }
-%"struct.llvm::ValueInfo.2963987" = type { %"class.llvm::PointerIntPair.522.2963988" }
-%"class.llvm::PointerIntPair.522.2963988" = type { %"struct.llvm::detail::PunnedPointer.523.2963989" }
-%"struct.llvm::detail::PunnedPointer.523.2963989" = type { [8 x i8] }
+%"struct.llvm::detail::DenseMapPair.576.3157598" = type { %"struct.std::pair.base.579.3157599", [4 x i8] }
+%"struct.std::pair.base.579.3157599" = type { %"struct.llvm::ValueInfo.3157498", i32 }
+%"struct.llvm::ValueInfo.3157498" = type { %"class.llvm::PointerIntPair.522.3157499" }
+%"class.llvm::PointerIntPair.522.3157499" = type { %"struct.llvm::detail::PunnedPointer.523.3157500" }
+%"struct.llvm::detail::PunnedPointer.523.3157500" = type { [8 x i8] }
 
 ; 2 occurrences:
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
@@ -23,12 +24,12 @@ entry:
 ; z3/optimized/arith_sls.cpp.ll
 ; z3/optimized/grobner.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65535
   %4 = and i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i16, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i16, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -42,12 +43,12 @@ entry:
 ; llvm/optimized/SyntheticCountsUtils.cpp.ll
 ; llvm/optimized/ThinLTOCodeGenerator.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -8
   %4 = and i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw %"class.llvm::detail::DenseSetPair.581.2963990", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.llvm::detail::DenseMapPair.576.3157598", ptr %0, i64 %5
   ret ptr %6
 }
 

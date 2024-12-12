@@ -1,13 +1,7 @@
 func0000000000000015:                   // @func0000000000000015
 // %bb.0:                               // %entry
-	movi	v3.8b, #63
-	and	v2.8b, v2.8b, v3.8b
-	ushll	v2.8h, v2.8b, #0
-	uaddw2	v1.4s, v1.4s, v2.8h
-	uaddw	v0.4s, v0.4s, v2.4h
-	uzp1	v0.8h, v0.8h, v1.8h
-	movi	v1.8b, #216
-	xtn	v0.8b, v0.8h
-	add	v0.8b, v0.8b, v1.8b
+	and	w8, w1, #0x3f
+	add	w8, w8, w0
+	add	w0, w8, #216
 	ret
                                         // -- End function

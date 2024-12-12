@@ -4,10 +4,10 @@ func000000000000001d:                   # @func000000000000001d
 	leaq	(%rdi,%rsi), %rax
 	retq
 func000000000000001f:                   # @func000000000000001f
-	movzwl	%si, %ecx
-	shll	$8, %ecx
-	movl	%edi, %eax
-	shlq	$24, %rax
+	movl	%esi, %ecx
+	shlq	$24, %rcx
+	movzwl	%di, %eax
+	shll	$8, %eax
 	orq	%rcx, %rax
 	retq
 func000000000000003d:                   # @func000000000000003d

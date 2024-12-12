@@ -1,5 +1,12 @@
 
-; 11 occurrences:
+; 18 occurrences:
+; boost/optimized/console_buffer.ll
+; boost/optimized/cstdio.ll
+; boost/optimized/test_codecvt.ll
+; boost/optimized/test_convert.ll
+; boost/optimized/test_fs.ll
+; boost/optimized/test_fstream.ll
+; boost/optimized/test_stackstring.ll
 ; clamav/optimized/vba_extract.c.ll
 ; cmake/optimized/archive_string.c.ll
 ; icu/optimized/utf_impl.ll

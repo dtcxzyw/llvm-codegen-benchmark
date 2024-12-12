@@ -6,7 +6,7 @@ define i8 @func0000000000000015(i8 %0, i16 %1) #0 {
 entry:
   %2 = icmp sgt i16 %1, 0
   %3 = select i1 %2, i8 1, i8 2
-  %4 = or disjoint i8 %3, %0
+  %4 = or disjoint i8 %0, %3
   ret i8 %4
 }
 
@@ -30,7 +30,7 @@ define i8 @func0000000000000003(i8 %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %1, 0
   %3 = select i1 %2, i8 0, i8 2
-  %4 = or disjoint i8 %3, %0
+  %4 = or disjoint i8 %0, %3
   ret i8 %4
 }
 

@@ -10,7 +10,7 @@
 ; ruby/optimized/ripper.ll
 ; wireshark/optimized/file-rbm.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = add nuw nsw i32 %0, 1
@@ -26,7 +26,7 @@ entry:
 ; openspiel/optimized/chess_board.cc.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i8 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = add nsw i32 %0, -1
@@ -51,7 +51,7 @@ entry:
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; openvdb/optimized/points.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000066(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = add nuw nsw i32 %0, 1
@@ -65,11 +65,11 @@ entry:
 ; icu/optimized/double-conversion-string-to-double.ll
 ; openusd/optimized/string-to-double.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000078(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = add nuw nsw i32 %0, 48
-  %4 = icmp ugt i32 %3, %2
+  %4 = icmp samesign ugt i32 %3, %2
   ret i1 %4
 }
 
@@ -90,7 +90,7 @@ entry:
 ; openspiel/optimized/havannah.cc.ll
 ; openspiel/optimized/rbc.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = add nsw i32 %0, 49
@@ -124,11 +124,10 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; abc/optimized/dauDsd.c.ll
-; icu/optimized/gregoimp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i32 %0, i8 %1) #0 {
+define i1 @func000000000000006a(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = add nuw nsw i32 %0, 97
@@ -141,7 +140,7 @@ entry:
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; llvm/optimized/SimplifyLibCalls.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = add nsw i32 %0, 1

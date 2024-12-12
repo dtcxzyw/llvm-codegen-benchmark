@@ -1,5 +1,17 @@
 
-; 9 occurrences:
+; 21 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/process.ll
+; boost/optimized/spawn.ll
+; boost/optimized/static_string.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
 ; cmake/optimized/cmMakefile.cxx.ll
 ; cmake/optimized/cmStringCommand.cxx.ll
 ; cmake/optimized/cmStringReplaceHelper.cxx.ll
@@ -12,13 +24,16 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %.neg = sub i64 %1, %2
-  %3 = sub i64 %0, %1
-  %4 = add i64 %.neg, %3
-  ret i64 %4
+  %3 = sub i64 %0, %2
+  ret i64 %3
 }
 
-; 5 occurrences:
+; 10 occurrences:
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/spawn.ll
 ; spike/optimized/socketif.ll
 ; tev/optimized/ImageButton.cpp.ll
 ; yalantinglibs/optimized/channel.cpp.ll
@@ -27,14 +42,13 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000020(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %.neg = sub i64 %1, %2
-  %3 = sub i64 %0, %1
-  %4 = add i64 %.neg, %3
-  ret i64 %4
+  %3 = sub i64 %0, %2
+  ret i64 %3
 }
 
-; 50 occurrences:
+; 51 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
+; boost/optimized/static_string.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; hermes/optimized/IR.cpp.ll
 ; hermes/optimized/Instrs.cpp.ll
@@ -87,23 +101,29 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %.neg = sub i64 %1, %2
-  %3 = sub i64 %0, %1
-  %4 = add i64 %.neg, %3
-  ret i64 %4
+  %3 = sub i64 %0, %2
+  ret i64 %3
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; llvm/optimized/FormatTokenLexer.cpp.ll
 ; wasmtime-rs/optimized/2k8uokn0kx6wa0pk.ll
 ; yaml-cpp/optimized/binary.cpp.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %.neg = sub i64 %1, %2
-  %3 = sub i64 %0, %1
-  %4 = add i64 %.neg, %3
-  ret i64 %4
+  %3 = sub i64 %0, %2
+  ret i64 %3
+}
+
+; 1 occurrences:
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %0, %2
+  ret i64 %3
 }
 
 ; 1 occurrences:
@@ -111,10 +131,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %.neg = sub i64 %1, %2
-  %3 = sub i64 %0, %1
-  %4 = add i64 %.neg, %3
-  ret i64 %4
+  %3 = sub i64 %0, %2
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

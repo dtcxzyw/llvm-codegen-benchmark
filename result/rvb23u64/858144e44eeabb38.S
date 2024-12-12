@@ -1,10 +1,10 @@
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	add	a1, a1, a2
 	addiw	a1, a1, -1
 	sgtz	a1, a1
 	and	a0, a0, a1
 	ret
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	add	a1, a1, a2
 	addiw	a1, a1, -528
 	slti	a1, a1, 61
@@ -18,7 +18,13 @@ func0000000000000006:                   # @func0000000000000006
 	slt	a1, a1, a2
 	and	a0, a0, a1
 	ret
-func0000000000000054:                   # @func0000000000000054
+func0000000000000086:                   # @func0000000000000086
+	add	a1, a1, a2
+	addiw	a1, a1, -3
+	slti	a1, a1, 0
+	and	a0, a0, a1
+	ret
+func00000000000000a4:                   # @func00000000000000a4
 	add	a1, a1, a2
 	addiw	a1, a1, -1
 	sltiu	a1, a1, 16

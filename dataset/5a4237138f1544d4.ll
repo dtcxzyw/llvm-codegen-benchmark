@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000061(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nuw nsw i32 %2, 6
@@ -17,7 +17,7 @@ entry:
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; postgres/optimized/syslogger.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nsw i32 %2, -6
@@ -41,7 +41,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/trace_probe.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000091(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000121(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = icmp eq i32 %0, 0

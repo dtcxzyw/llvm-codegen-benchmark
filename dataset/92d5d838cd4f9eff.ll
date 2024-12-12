@@ -18,7 +18,7 @@ entry:
 ; protobuf/optimized/map_field.cc.ll
 ; protobuf/optimized/struct.pb.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = sub nsw i64 %0, %3

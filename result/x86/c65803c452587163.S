@@ -1,10 +1,10 @@
-func000000000000018a:                   # @func000000000000018a
+func000000000000018f:                   # @func000000000000018f
 	andl	$7936, %edx                     # imm = 0x1F00
 	leaq	(%rdi,%rsi), %rax
 	cmpl	$1, %edx
 	sbbq	$-1, %rax
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000002f:                   # @func000000000000002f
 	movq	%rdi, %rax
 	notl	%edx
 	andl	$33, %edx
@@ -16,4 +16,13 @@ func0000000000000180:                   # @func0000000000000180
 	leaq	(%rdi,%rsi), %rax
 	cmpl	$1, %edx
 	sbbq	$-1, %rax
+	retq
+func000000000000002b:                   # @func000000000000002b
+	xorl	%eax, %eax
+	cmpb	$7, %dl
+	sete	%al
+	shlq	$5, %rsi
+	shll	$5, %eax
+	addq	%rsi, %rax
+	addq	%rdi, %rax
 	retq

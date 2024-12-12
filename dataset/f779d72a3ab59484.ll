@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 10 occurrences:
 ; cmake/optimized/archive_read_support_format_warc.c.ll
 ; linux/optimized/blk-iocost.ll
 ; ruby/optimized/date_core.ll
@@ -8,11 +8,8 @@
 ; wireshark/optimized/packet-bacapp.c.ll
 ; wireshark/optimized/packet-gtpv2.c.ll
 ; wireshark/optimized/packet-isakmp.c.ll
-; wireshark/optimized/packet-its.c.ll
-; wireshark/optimized/packet-ouch.c.ll
 ; wireshark/optimized/packet-pvfs2.c.ll
 ; wireshark/optimized/packet-ua3g.c.ll
-; wireshark/optimized/radcom.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0) #0 {
 entry:

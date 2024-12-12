@@ -95,10 +95,10 @@
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
+; llvm/optimized/CGOpenMPRuntimeGPU.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/NonNullParamChecker.cpp.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
-; openjdk/optimized/method.ll
 ; openusd/optimized/string-to-double.cc.ll
 ; php/optimized/html.ll
 ; proxygen/optimized/HTTPBinaryCodec.cpp.ll
@@ -181,11 +181,11 @@
 ; vcpkg/optimized/versions.cpp.ll
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000048(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -11904
   %4 = icmp ult i32 %3, 30288
-  %5 = and i1 %4, %1
+  %5 = and i1 %1, %4
   %6 = or i1 %5, %0
   ret i1 %6
 }
@@ -366,7 +366,7 @@ entry:
   %3 = add i32 %2, -23
   %4 = icmp ult i32 %3, -3
   %5 = and i1 %4, %1
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -378,8 +378,8 @@ define i1 @func0000000000000010(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = icmp ult i32 %3, -2
-  %5 = and i1 %4, %1
-  %6 = or i1 %5, %0
+  %5 = and i1 %1, %4
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -387,11 +387,11 @@ entry:
 ; llvm/optimized/InstructionCombining.cpp.ll
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000058(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 42
-  %4 = and i1 %3, %1
-  %5 = or i1 %4, %0
+  %4 = and i1 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

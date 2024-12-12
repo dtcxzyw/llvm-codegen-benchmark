@@ -1,16 +1,17 @@
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	eor	v1.16b, v1.16b, v2.16b
-	cmlt	v1.16b, v1.16b, #0
-	and	v0.16b, v1.16b, v0.16b
+	eor	w8, w1, w2
+	sxtb	w8, w8
+	cmp	w8, #0
+	cset	w8, lt
+	and	w0, w0, w8
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	movi	v3.16b, #48
-	eor	v1.16b, v1.16b, v2.16b
-	and	v1.16b, v1.16b, v3.16b
-	cmeq	v1.16b, v1.16b, #0
-	and	v0.16b, v1.16b, v0.16b
+	eor	w8, w1, w2
+	tst	w8, #0x30
+	cset	w8, eq
+	and	w0, w0, w8
 	ret
                                         // -- End function

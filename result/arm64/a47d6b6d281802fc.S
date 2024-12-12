@@ -75,6 +75,6 @@ func00000000000001fc:                   // @func00000000000001fc
                                         // kill: def $w2 killed $w2 def $x2
 	ubfiz	x8, x2, #3, #32
 	add	x8, x8, #8
-	madd	x0, x8, x1, x0
+	madd	x0, x1, x8, x0
 	ret
                                         // -- End function

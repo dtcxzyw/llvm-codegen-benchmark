@@ -1,6 +1,5 @@
 
-; 10 occurrences:
-; abc/optimized/cmdUtils.c.ll
+; 9 occurrences:
 ; linux/optimized/cmdline.ll
 ; linux/optimized/policydb.ll
 ; linux/optimized/vht.ll

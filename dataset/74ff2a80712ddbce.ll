@@ -1,20 +1,20 @@
 
-%struct.JSValue.3243652 = type { %union.JSValueUnion.3243653, i64 }
-%union.JSValueUnion.3243653 = type { double }
+%struct.JSValue.3435081 = type { %union.JSValueUnion.3435082, i64 }
+%union.JSValueUnion.3435082 = type { double }
 
 ; 1 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(i64 %0, ptr %1, i16 %2) #0 {
+define ptr @func000000000000005b(i64 %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
   %4 = sub nsw i64 0, %3
   %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 %0
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
   ret ptr %6
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; clamav/optimized/matcher-bm.c.ll
 ; llvm/optimized/RISCVVectorPeephole.cpp.ll
 ; llvm/optimized/X86DomainReassignment.cpp.ll
@@ -22,6 +22,18 @@ entry:
 ; memcached/optimized/memcached-proto_bin.ll
 ; memcached/optimized/memcached_debug-proto_bin.ll
 ; openusd/optimized/lz4.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001b(i64 %0, ptr %1, i16 %2) #0 {
+entry:
+  %3 = zext i16 %2 to i64
+  %4 = sub nsw i64 0, %3
+  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 2 occurrences:
+; lz4/optimized/lz4.c.ll
 ; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001a(i64 %0, ptr %1, i16 %2) #0 {
@@ -50,8 +62,8 @@ define ptr @func0000000000000010(i64 %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr %struct.JSValue.3243652, ptr %1, i64 %4
-  %6 = getelementptr %struct.JSValue.3243652, ptr %5, i64 %0
+  %5 = getelementptr %struct.JSValue.3435081, ptr %1, i64 %4
+  %6 = getelementptr %struct.JSValue.3435081, ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -65,18 +77,6 @@ entry:
   %4 = sub nsw i64 0, %3
   %5 = getelementptr i8, ptr %1, i64 %4
   %6 = getelementptr i8, ptr %5, i64 %0
-  ret ptr %6
-}
-
-; 1 occurrences:
-; lz4/optimized/lz4.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000012(i64 %0, ptr %1, i16 %2) #0 {
-entry:
-  %3 = zext i16 %2 to i64
-  %4 = sub nsw i64 0, %3
-  %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 %0
   ret ptr %6
 }
 

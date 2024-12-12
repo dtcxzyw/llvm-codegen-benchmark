@@ -1,6 +1,8 @@
 
-; 13 occurrences:
+; 15 occurrences:
 ; abc/optimized/fretInit.c.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; linux/optimized/ip6_offload.ll
 ; openusd/optimized/catmarkPatchBuilder.cpp.ll
 ; openusd/optimized/faceVertex.cpp.ll

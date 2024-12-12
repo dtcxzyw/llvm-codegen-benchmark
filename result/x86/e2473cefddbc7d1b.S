@@ -5,7 +5,7 @@ func000000000000000a:                   # @func000000000000000a
 	cmovnsl	%ecx, %eax
 	andl	%edi, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	xorl	%eax, %eax
 	cmpl	$16, %edi
 	setae	%al

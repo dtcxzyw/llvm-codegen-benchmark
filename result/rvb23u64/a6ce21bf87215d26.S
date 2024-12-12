@@ -9,7 +9,7 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 .LCPI1_0:
 	.quad	999999999999999999              # 0xde0b6b3a763ffff
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	lui	a3, %hi(.LCPI1_0)
 	ld	a3, %lo(.LCPI1_0)(a3)
 	add	a1, a1, a2
@@ -18,7 +18,7 @@ func0000000000000028:                   # @func0000000000000028
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	add	a1, a1, a2
 	sgtz	a2, a1
 	czero.eqz	a1, a1, a2

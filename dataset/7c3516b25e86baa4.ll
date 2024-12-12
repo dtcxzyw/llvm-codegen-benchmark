@@ -1,10 +1,11 @@
 
-; 20 occurrences:
+; 21 occurrences:
 ; abc/optimized/giaSupps.c.ll
 ; abc/optimized/rsbDec6.c.ll
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
 ; arrow/optimized/key_hash_avx2.cc.ll
+; boost/optimized/options_description.ll
 ; darktable/optimized/timeline.c.ll
 ; git/optimized/attr.ll
 ; git/optimized/date.ll
@@ -29,9 +30,8 @@ entry:
   ret i32 %5
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; cvc5/optimized/query_generator_sample_sat.cpp.ll
-; linux/optimized/mpi-div.ll
 ; llvm/optimized/ModuloSchedule.cpp.ll
 ; minetest/optimized/CGUITabControl.cpp.ll
 ; openjdk/optimized/ciTypeFlow.ll

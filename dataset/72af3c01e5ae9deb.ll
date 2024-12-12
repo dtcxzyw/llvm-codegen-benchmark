@@ -1,5 +1,8 @@
 
-; 23 occurrences:
+; 28 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/numeric.ll
+; boost/optimized/read_graphviz_new.ll
 ; clamav/optimized/htmlnorm.c.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; hermes/optimized/gtest-all.cc.ll
@@ -23,8 +26,10 @@
 ; ruby/optimized/prism.ll
 ; tls-rs/optimized/1oa4q9ydtxtlathz.ll
 ; z3/optimized/push_app_ite.cpp.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, i8 %1) #0 {
+define i1 @func000000000000004c(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp ne i32 %0, 0
@@ -32,7 +37,7 @@ entry:
   ret i1 %4
 }
 
-; 47 occurrences:
+; 46 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; bullet3/optimized/btMultiBody.ll
 ; bullet3/optimized/btSequentialImpulseConstraintSolverMt.ll
@@ -71,7 +76,6 @@ entry:
 ; openspiel/optimized/goofspiel.cc.ll
 ; postgres/optimized/fastpath.ll
 ; postgres/optimized/spgscan.ll
-; rocksdb/optimized/column_family.cc.ll
 ; rocksdb/optimized/memtable_list.cc.ll
 ; rocksdb/optimized/version_set.cc.ll
 ; ruby/optimized/class.ll
@@ -89,14 +93,15 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; postgres/optimized/copy.ll
 ; postgres/optimized/interval.ll
 ; postgres/optimized/partbounds.ll
 ; ruby/optimized/ractor.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0, i8 %1) #0 {
+define i1 @func000000000000004a(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp sgt i32 %0, 0
@@ -104,7 +109,7 @@ entry:
   ret i1 %4
 }
 
-; 347 occurrences:
+; 349 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; bullet3/optimized/b3GpuPgsContactSolver.ll
 ; bullet3/optimized/b3GpuRigidBodyPipeline.ll
@@ -193,7 +198,6 @@ entry:
 ; ozz-animation/optimized/track.cc.ll
 ; php/optimized/zend_execute.ll
 ; php/optimized/zend_persist.ll
-; postgres/optimized/backend_progress.ll
 ; postgres/optimized/index.ll
 ; postgres/optimized/joinpath.ll
 ; postgres/optimized/setrefs.ll
@@ -452,6 +456,9 @@ entry:
 ; z3/optimized/arith_rewriter.cpp.ll
 ; z3/optimized/dl_compiler.cpp.ll
 ; z3/optimized/sat_bcd.cpp.ll
+; zed-rs/optimized/6r72qkitrvbw1ftdc9j10udqo.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i32 %0, i8 %1) #0 {
 entry:
@@ -461,7 +468,7 @@ entry:
   ret i1 %4
 }
 
-; 24 occurrences:
+; 26 occurrences:
 ; clap-rs/optimized/1zp92zvstj9lufi9.ll
 ; clap-rs/optimized/46qpaucouebcxfrx.ll
 ; clap-rs/optimized/5651dp9k16h53y8x.ll
@@ -476,7 +483,6 @@ entry:
 ; influxdb-rs/optimized/1zobaqtttt01ywwe.ll
 ; ipopt/optimized/IpOptionsList.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
 ; ockam-rs/optimized/1411u8drt798uxi8.ll
 ; ockam-rs/optimized/32cbw7iiw6inrqgd.ll
@@ -486,8 +492,11 @@ entry:
 ; quantlib/optimized/overnightindexedcouponpricer.ll
 ; ripgrep-rs/optimized/15yuur60snxgm6cb.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp eq i32 %0, 34
@@ -711,40 +720,10 @@ entry:
   ret i1 %4
 }
 
-; 20 occurrences:
-; flatbuffers/optimized/idl_gen_cpp.cpp.ll
-; flatbuffers/optimized/idl_gen_swift.cpp.ll
-; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/LoopUnrollPass.cpp.ll
-; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
-; llvm/optimized/RetainCountChecker.cpp.ll
-; llvm/optimized/Scalarizer.cpp.ll
-; llvm/optimized/SelectionDAGBuilder.cpp.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
-; ockam-rs/optimized/1411u8drt798uxi8.ll
-; ockam-rs/optimized/1d1qxhuj8x85dazd.ll
-; ockam-rs/optimized/3trfdpf6q4y0wtix.ll
-; oiio/optimized/DPXHeader.cpp.ll
-; openspiel/optimized/maedn.cc.ll
-; php/optimized/phpdbg_out.ll
-; protobuf/optimized/extension_set.cc.ll
-; rocksdb/optimized/column_family.cc.ll
-; spike/optimized/csrs.ll
-; typst-rs/optimized/d6l9ieo9tcw33dn.ll
-; wireshark/optimized/multicast_statistics_dialog.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i8 %1) #0 {
-entry:
-  %2 = trunc i8 %1 to i1
-  %3 = icmp ult i32 %0, 3
-  %4 = and i1 %3, %2
-  ret i1 %4
-}
-
 ; 1 occurrences:
 ; rocksdb/optimized/db_iter.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000046(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp slt i32 %0, 0
@@ -752,26 +731,34 @@ entry:
   ret i1 %4
 }
 
-; 20 occurrences:
-; cvc5/optimized/theory_bv_rewriter.cpp.ll
+; 5 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
+; luau/optimized/IrTranslateBuiltins.cpp.ll
+; openjdk/optimized/hb-ot-layout.ll
+; rocksdb/optimized/ldb_cmd.cc.ll
+; yosys/optimized/qwp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i32 %0, i8 %1) #0 {
+entry:
+  %2 = trunc i8 %1 to i1
+  %3 = icmp samesign ugt i32 %0, 1
+  %4 = and i1 %3, %2
+  ret i1 %4
+}
+
+; 13 occurrences:
+; cvc5/optimized/theory_bv_rewriter.cpp.ll
 ; llvm/optimized/ASTUnit.cpp.ll
-; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/ELFObjectFile.cpp.ll
 ; llvm/optimized/PassBuilderPipelines.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86PartialReduction.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
-; luau/optimized/IrTranslateBuiltins.cpp.ll
-; opencv/optimized/grfmt_tiff.cpp.ll
-; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/heapDumper.ll
 ; openjdk/optimized/lcm.ll
 ; openjdk/optimized/referenceProcessor.ll
-; rocksdb/optimized/ldb_cmd.cc.ll
 ; wireshark/optimized/packet-ber.c.ll
-; yosys/optimized/qwp.ll
 ; z3/optimized/nlsat_explain.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i32 %0, i8 %1) #0 {
@@ -782,16 +769,55 @@ entry:
   ret i1 %4
 }
 
+; 14 occurrences:
+; flatbuffers/optimized/idl_gen_cpp.cpp.ll
+; flatbuffers/optimized/idl_gen_swift.cpp.ll
+; llvm/optimized/LoopUnrollPass.cpp.ll
+; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
+; llvm/optimized/RetainCountChecker.cpp.ll
+; llvm/optimized/Scalarizer.cpp.ll
+; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; oiio/optimized/DPXHeader.cpp.ll
+; openspiel/optimized/maedn.cc.ll
+; php/optimized/phpdbg_out.ll
+; protobuf/optimized/extension_set.cc.ll
+; spike/optimized/csrs.ll
+; wireshark/optimized/multicast_statistics_dialog.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i32 %0, i8 %1) #0 {
+entry:
+  %2 = trunc i8 %1 to i1
+  %3 = icmp ult i32 %0, -2
+  %4 = and i1 %3, %2
+  ret i1 %4
+}
+
 ; 4 occurrences:
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/4d777aa7b78zo7jc.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000048(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp ugt i32 %0, 544
+  %4 = and i1 %3, %2
+  ret i1 %4
+}
+
+; 5 occurrences:
+; llvm/optimized/X86ISelLowering.cpp.ll
+; ockam-rs/optimized/1411u8drt798uxi8.ll
+; ockam-rs/optimized/1d1qxhuj8x85dazd.ll
+; ockam-rs/optimized/3trfdpf6q4y0wtix.ll
+; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0, i8 %1) #0 {
+entry:
+  %2 = trunc i8 %1 to i1
+  %3 = icmp samesign ult i32 %0, 16
   %4 = and i1 %3, %2
   ret i1 %4
 }
@@ -815,15 +841,29 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; cmake/optimized/cmInstallCommand.cxx.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000044(i32 %0, i8 %1) #0 {
+entry:
+  %2 = trunc nuw i8 %1 to i1
+  %3 = icmp ult i32 %0, 256
+  %4 = and i1 %3, %2
+  ret i1 %4
+}
+
+; 2 occurrences:
 ; ockam-rs/optimized/1411u8drt798uxi8.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000054(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
-  %3 = icmp ult i32 %0, 2
+  %3 = icmp samesign ult i32 %0, 2
   %4 = and i1 %3, %2
   ret i1 %4
 }

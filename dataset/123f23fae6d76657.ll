@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000544(i64 %0) #0 {
+define i1 @func0000000000000a84(i64 %0) #0 {
 entry:
   %1 = ashr exact i64 %0, 2
   %2 = add nsw i64 %1, 1
@@ -25,7 +25,7 @@ entry:
 ; gromacs/optimized/genion.cpp.ll
 ; grpc/optimized/pick_first.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000541(i64 %0) #0 {
+define i1 @func0000000000000a81(i64 %0) #0 {
 entry:
   %1 = ashr exact i64 %0, 2
   %2 = add nsw i64 %1, 1

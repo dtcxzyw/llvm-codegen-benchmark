@@ -1,18 +1,13 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	cmeq	v2.8h, v2.8h, #0
-	cmeq	v1.8h, v1.8h, #0
-	uzp1	v3.16b, v3.16b, v4.16b
-	uzp1	v1.16b, v1.16b, v2.16b
-	bif	v0.16b, v3.16b, v1.16b
+	tst	w1, #0xffff
+	csel	w0, w0, w2, eq
 	ret
                                         // -- End function
-func0000000000000036:                   // @func0000000000000036
+func0000000000000066:                   // @func0000000000000066
 // %bb.0:                               // %entry
-	cmlt	v2.8h, v2.8h, #0
-	cmlt	v1.8h, v1.8h, #0
-	uzp1	v3.16b, v3.16b, v4.16b
-	uzp1	v1.16b, v1.16b, v2.16b
-	bif	v0.16b, v3.16b, v1.16b
+	sxth	w8, w1
+	cmp	w8, #0
+	csel	w0, w0, w2, lt
 	ret
                                         // -- End function

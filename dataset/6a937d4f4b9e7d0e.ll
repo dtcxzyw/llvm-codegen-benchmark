@@ -1,4 +1,17 @@
 
+; 3 occurrences:
+; linux/optimized/intel_dpll_mgr.ll
+; llvm/optimized/GlobalsStream.cpp.ll
+; lvgl/optimized/lv_color.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+entry:
+  %2 = udiv i32 %1, 255
+  %3 = udiv i32 %0, 255
+  %4 = icmp samesign ult i32 %3, %2
+  ret i1 %4
+}
+
 ; 5 occurrences:
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
 ; postgres/optimized/f2s.ll
@@ -6,11 +19,11 @@
 ; postgres/optimized/f2s_srv.ll
 ; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = udiv i32 %1, 3
   %3 = udiv i32 %0, 3
-  %4 = icmp ugt i32 %3, %2
+  %4 = icmp samesign ugt i32 %3, %2
   ret i1 %4
 }
 

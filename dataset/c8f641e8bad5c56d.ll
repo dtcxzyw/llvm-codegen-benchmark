@@ -1,11 +1,16 @@
 
-; 61 occurrences:
+; 71 occurrences:
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/sfmDec.c.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; actix-rs/optimized/2pgtlhl4qd060m9c.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/date_time_format_parser.ll
+; boost/optimized/named_scope_format_parser.ll
+; boost/optimized/object_name.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/clamdtop.c.ll
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
@@ -61,6 +66,11 @@
 ; wireshark/optimized/packet-protobuf.c.ll
 ; wireshark/optimized/packet-rtps.c.ll
 ; xgboost/optimized/charconv.cc.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/67gayid14ydsuhkv0lcnhbsvb.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0) #0 {
 entry:

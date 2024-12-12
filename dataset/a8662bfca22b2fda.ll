@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 17 occurrences:
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; graphviz/optimized/gvusershape.c.ll
 ; graphviz/optimized/scan.c.ll
@@ -10,7 +10,6 @@
 ; openjdk/optimized/mallocLimit.ll
 ; openjdk/optimized/signals_posix.ll
 ; pocketpy/optimized/lexer.cpp.ll
-; proj/optimized/dmstor.cpp.ll
 ; proj/optimized/proj_strtod.cpp.ll
 ; proxygen/optimized/StructuredHeadersBuffer.cpp.ll
 ; slurm/optimized/tres_bind.ll
@@ -19,7 +18,7 @@
 ; verilator/optimized/V3PreProc.cpp.ll
 ; zxing/optimized/DMHighLevelEncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000282(i8 %0) #0 {
+define i1 @func0000000000000902(i8 %0) #0 {
 entry:
   %1 = sext i8 %0 to i32
   %2 = add nsw i32 %1, -48
@@ -35,7 +34,7 @@ entry:
 ; icu/optimized/double-conversion-string-to-double.ll
 ; openusd/optimized/string-to-double.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000290(i8 %0) #0 {
+define i1 @func0000000000000910(i8 %0) #0 {
 entry:
   %1 = sext i8 %0 to i32
   %2 = add nsw i32 %1, -58
@@ -49,7 +48,7 @@ entry:
 ; hermes/optimized/JSLexer.cpp.ll
 ; luau/optimized/Lexer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000228(i8 %0) #0 {
+define i1 @func0000000000000848(i8 %0) #0 {
 entry:
   %1 = sext i8 %0 to i32
   %2 = add nsw i32 %1, -48
@@ -62,7 +61,7 @@ entry:
 ; 1 occurrences:
 ; nuttx/optimized/lib_etheraton.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000028c(i8 %0) #0 {
+define i1 @func000000000000090c(i8 %0) #0 {
 entry:
   %1 = sext i8 %0 to i32
   %2 = add nsw i32 %1, -71

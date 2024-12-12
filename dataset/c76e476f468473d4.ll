@@ -11,8 +11,9 @@ entry:
   ret double %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; ceres/optimized/polynomial.cc.ll
 ; meshlab/optimized/matching.cpp.ll
 ; opencv/optimized/ann_mlp.cpp.ll

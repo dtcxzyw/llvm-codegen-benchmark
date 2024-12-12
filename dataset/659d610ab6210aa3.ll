@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 23 occurrences:
 ; abc/optimized/ifDec07.c.ll
 ; git/optimized/xmerge.ll
 ; hermes/optimized/HermesBuiltin.cpp.ll
@@ -21,6 +21,8 @@
 ; spike/optimized/f16_sqrt.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0) #0 {
 entry:

@@ -4,7 +4,7 @@ func000000000000000c:                   # @func000000000000000c
 	andl	$6, %esi
 	leaq	(%rsi,%rdi), %rax
 	retq
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	andl	$3, %esi
 	xorl	%eax, %eax
 	cmpl	$2, %esi

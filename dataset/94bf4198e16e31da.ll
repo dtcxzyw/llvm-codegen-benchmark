@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 37 occurrences:
 ; clamav/optimized/list.cpp.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; cmake/optimized/pipe.c.ll
@@ -27,7 +27,6 @@
 ; nuttx/optimized/serial.c.ll
 ; opencv/optimized/batch_distance.cpp.ll
 ; opencv/optimized/sumpixels.dispatch.cpp.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; php/optimized/pcre2_compile.ll
 ; php/optimized/pcre2_substitute.ll
 ; php/optimized/zend_inference.ll

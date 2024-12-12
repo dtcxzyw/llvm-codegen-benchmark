@@ -1,7 +1,8 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; hyperscan/optimized/teddy_compile.cpp.ll
 ; linux/optimized/namei.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
 ; openusd/optimized/decodemv.c.ll
 ; postgres/optimized/big5.ll
 ; qemu/optimized/net_checksum.c.ll

@@ -1,5 +1,5 @@
 
-; 77 occurrences:
+; 59 occurrences:
 ; abseil-cpp/optimized/convert_test.cc.ll
 ; abseil-cpp/optimized/endian_test.cc.ll
 ; coreutils-rs/optimized/1aqq6ooh2lp9lqic.ll
@@ -36,24 +36,6 @@
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; mitsuba3/optimized/properties.cpp.ll
 ; mitsuba3/optimized/xml.cpp.ll
-; mold/optimized/output-chunks.cc.ALPHA.cc.ll
-; mold/optimized/output-chunks.cc.ARM32.cc.ll
-; mold/optimized/output-chunks.cc.ARM64.cc.ll
-; mold/optimized/output-chunks.cc.I386.cc.ll
-; mold/optimized/output-chunks.cc.LOONGARCH32.cc.ll
-; mold/optimized/output-chunks.cc.LOONGARCH64.cc.ll
-; mold/optimized/output-chunks.cc.M68K.cc.ll
-; mold/optimized/output-chunks.cc.PPC32.cc.ll
-; mold/optimized/output-chunks.cc.PPC64V1.cc.ll
-; mold/optimized/output-chunks.cc.PPC64V2.cc.ll
-; mold/optimized/output-chunks.cc.RV32BE.cc.ll
-; mold/optimized/output-chunks.cc.RV32LE.cc.ll
-; mold/optimized/output-chunks.cc.RV64BE.cc.ll
-; mold/optimized/output-chunks.cc.RV64LE.cc.ll
-; mold/optimized/output-chunks.cc.S390X.cc.ll
-; mold/optimized/output-chunks.cc.SH4.cc.ll
-; mold/optimized/output-chunks.cc.SPARC64.cc.ll
-; mold/optimized/output-chunks.cc.X86_64.cc.ll
 ; nix/optimized/primops.ll
 ; nix/optimized/search.ll
 ; opencv/optimized/camera_calibration.cpp.ll
@@ -61,7 +43,6 @@
 ; openjdk/optimized/linkResolver.ll
 ; openvdb/optimized/LevelSetTracker.cc.ll
 ; openvdb/optimized/TopologyToLevelSet.cc.ll
-; proj/optimized/io.cpp.ll
 ; proxygen/optimized/HTTP1xCodec.cpp.ll
 ; re2/optimized/bitstate.cc.ll
 ; re2/optimized/dfa.cc.ll
@@ -77,6 +58,7 @@
 ; yosys/optimized/sim.ll
 ; z3/optimized/ast_smt2_pp.cpp.ll
 ; z3/optimized/dd_fdd.cpp.ll
+; zed-rs/optimized/1wbwq1jcywou5oe0v0ig8uk8s.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000030(i8 %0, ptr %1, ptr %2) #0 {
 entry:
@@ -144,19 +126,10 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; llvm/optimized/SelectionDAGBuilder.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000010(i8 %0, ptr %1, ptr %2) #0 {
-entry:
-  %3 = icmp ult ptr %1, %2
-  %4 = trunc i8 %0 to i1
-  %5 = select i1 %4, i1 %3, i1 false
-  ret i1 %5
-}
-
-; 16 occurrences:
+; 20 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/static_string.ll
 ; cmake/optimized/cmGeneratorTarget.cxx.ll
 ; cvc5/optimized/miplib_trick.cpp.ll
 ; hyperscan/optimized/ng_som.cpp.ll
@@ -172,11 +145,24 @@ entry:
 ; tree-sitter-rs/optimized/3flgp21wlj9z2cn6.ll
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
 ; tree-sitter-rs/optimized/hpag7w091st4k7n.ll
+; zed-rs/optimized/7m8fd3drcujrn3b7m72kwodjc.ll
+; zed-rs/optimized/bhm2bjcgbdwnubkgels8aniip.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000032(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %1, %2
   %4 = trunc nuw i8 %0 to i1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
+; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000010(i8 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = icmp ult ptr %1, %2
+  %4 = trunc i8 %0 to i1
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
 }

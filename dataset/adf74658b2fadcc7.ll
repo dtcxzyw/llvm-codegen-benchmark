@@ -39,7 +39,7 @@ entry:
   ret i64 %7
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; abc/optimized/ifDec07.c.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/gaussian_distribution_test.cc.ll
@@ -53,6 +53,7 @@ entry:
 ; openspiel/optimized/negotiation.cc.ll
 ; openusd/optimized/surfaceFactory.cpp.ll
 ; rust-analyzer-rs/optimized/2qyzpr7jeax5a9tm.ll
+; turborepo-rs/optimized/b9mxqsqxupsuldn67x7vgrl1g.ll
 ; z3/optimized/sat_cutset.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
@@ -78,9 +79,8 @@ entry:
   ret i64 %7
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; llvm/optimized/TypePrinter.cpp.ll
-; tokio-rs/optimized/46apu3hqx0w07xoc.ll
 ; z3/optimized/sat_cutset.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000e(i64 %0, i64 %1, i64 %2) #0 {
@@ -106,7 +106,8 @@ entry:
   ret i64 %7
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; tokio-rs/optimized/46apu3hqx0w07xoc.ll
 ; z3/optimized/sat_cutset.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {

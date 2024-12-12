@@ -24,7 +24,7 @@
 ; wireshark/optimized/packet-usb-audio.c.ll
 ; wireshark/optimized/packet-wcp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i16 %0, i16 %1) #0 {
 entry:
   %.mask = and i16 %1, -256
   %2 = icmp eq i16 %.mask, 1536

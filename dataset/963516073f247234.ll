@@ -1,25 +1,4 @@
 
-; 10 occurrences:
-; abc/optimized/satSolver2.c.ll
-; cmake/optimized/zstd_compress_literals.c.ll
-; hermes/optimized/Metadata.cpp.ll
-; icu/optimized/collationdatabuilder.ll
-; linux/optimized/hda_codec.ll
-; minetest/optimized/c_content.cpp.ll
-; postgres/optimized/bufpage.ll
-; rust-analyzer-rs/optimized/1g0h5ha3lba2bol5.ll
-; rust-analyzer-rs/optimized/4o4li8dzw61k3tqx.ll
-; zstd/optimized/zstd_compress_literals.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000003(i32 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc i64 %2 to i32
-  %4 = shl i32 %3, 24
-  %5 = or disjoint i32 %4, %1
-  %6 = or disjoint i32 %5, %0
-  ret i32 %6
-}
-
 ; 2 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-set.ll
@@ -45,8 +24,28 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = shl i32 %3, 15
-  %5 = or i32 %4, %1
-  %6 = or i32 %5, %0
+  %5 = or i32 %1, %4
+  %6 = or i32 %0, %5
+  ret i32 %6
+}
+
+; 9 occurrences:
+; abc/optimized/satSolver2.c.ll
+; cmake/optimized/zstd_compress_literals.c.ll
+; hermes/optimized/Metadata.cpp.ll
+; icu/optimized/collationdatabuilder.ll
+; linux/optimized/hda_codec.ll
+; postgres/optimized/bufpage.ll
+; rust-analyzer-rs/optimized/1g0h5ha3lba2bol5.ll
+; rust-analyzer-rs/optimized/4o4li8dzw61k3tqx.ll
+; zstd/optimized/zstd_compress_literals.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000003(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %2 to i32
+  %4 = shl i32 %3, 16
+  %5 = or disjoint i32 %1, %4
+  %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
 
@@ -94,7 +93,7 @@ define i32 @func0000000000000002(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = shl i32 %3, 11
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or i32 %5, %0
   ret i32 %6
 }
@@ -118,7 +117,7 @@ define i32 @func000000000000000f(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = shl nuw nsw i32 %3, 22
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
@@ -131,7 +130,7 @@ define i32 @func0000000000000001(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = shl i32 %3, 8
-  %5 = or i32 %4, %1
+  %5 = or i32 %1, %4
   %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
@@ -143,7 +142,7 @@ define i32 @func0000000000000023(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = shl i32 %3, 16
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or disjoint i32 %5, %0
   ret i32 %6
 }

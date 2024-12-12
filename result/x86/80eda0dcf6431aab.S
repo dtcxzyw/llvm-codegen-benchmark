@@ -1,9 +1,9 @@
 func0000000000000001:                   # @func0000000000000001
-	cmpb	$1, %sil
+	cmpb	$5, %sil
 	sete	%al
 	orb	%dil, %al
 	andb	$1, %al
-	orb	$32, %al
+	addb	%al, %al
 	retq
 func000000000000000c:                   # @func000000000000000c
 	notb	%dil

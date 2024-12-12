@@ -4,7 +4,7 @@
 ; rust-analyzer-rs/optimized/2n800w7wl0k2x7go.ll
 ; rustfmt-rs/optimized/3n0n7c4xrusd0kzl.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001c(i64 %0, i64 %1) #0 {
+define i64 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
   %3 = icmp ne i64 %0, 0
@@ -17,7 +17,7 @@ entry:
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; llvm/optimized/ScalarEvolutionExpander.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000ac(i64 %0, i64 %1) #0 {
+define i64 @func000000000000014c(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i64 %1, 0
   %3 = icmp ne i64 %0, 0
@@ -26,18 +26,17 @@ entry:
   ret i64 %5
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/FunctionSpecialization.cpp.ll
 ; llvm/optimized/IROutliner.cpp.ll
 ; llvm/optimized/LLVMTargetMachine.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/ScalarEvolutionExpander.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000066(i64 %0, i64 %1) #0 {
+define i64 @func00000000000000c6(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp slt i64 %1, 0
   %3 = icmp slt i64 %0, 0
@@ -51,7 +50,7 @@ entry:
 ; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000ca(i64 %0, i64 %1) #0 {
+define i64 @func000000000000018a(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = icmp sgt i64 %0, 0

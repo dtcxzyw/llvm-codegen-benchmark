@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 16 occurrences:
 ; grpc/optimized/completion_queue.cc.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; mold/optimized/passes.cc.ALPHA.cc.ll
@@ -15,16 +15,17 @@
 ; tokio-rs/optimized/1rl1r5ea6bzd5c9z.ll
 ; tokio-rs/optimized/4brh9kql6tjayli1.ll
 ; z3/optimized/dl_rule.cpp.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 14
   %3 = zext i1 %2 to i64
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
-; 23 occurrences:
+; 38 occurrences:
 ; coreutils-rs/optimized/1iwhjsqyasmq9db9.ll
 ; coreutils-rs/optimized/2zjxva3p2avqok6n.ll
 ; coreutils-rs/optimized/3xc4e7mmntf4esc6.ll
@@ -48,17 +49,33 @@ entry:
 ; smol-rs/optimized/21eidrukyvr99qqv.ll
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
 ; wasmtime-rs/optimized/172871zsy4nrpcmu.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/05lrpc5icj3w7c2jbbww9rt02.ll
+; zed-rs/optimized/22ahis4uxapmr5sot3uwhf47g.ll
+; zed-rs/optimized/47dhsg4crd0e549rnj4wgynqw.ll
+; zed-rs/optimized/5jgfm3klpby9utjhkan94f3dk.ll
+; zed-rs/optimized/5uhbvltlizm569jusm7kamf9x.ll
+; zed-rs/optimized/6hxn0twt3h5sh337x4zo515i3.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8wa0knulc7q0w36j1a9to646h.ll
+; zed-rs/optimized/9zd8wd1s2fxo541ze2ot3j12x.ll
+; zed-rs/optimized/bx60353v5ms1nsmjqyoxenjec.ll
+; zed-rs/optimized/d5przcl3nwvj7ddp1j7ydu4aq.ll
+; zed-rs/optimized/ept7l7id9yl52ab8m2qhombt7.ll
+; zed-rs/optimized/f1suy9miqr5txm7nzzcuw0lf4.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %1, 63
   %3 = zext i1 %2 to i64
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
-; 56 occurrences:
+; 55 occurrences:
 ; arrow/optimized/decimal.cc.ll
+; boost/optimized/to_chars.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -88,38 +105,36 @@ entry:
 ; spike/optimized/f128_div.ll
 ; spike/optimized/f128_mul.ll
 ; spike/optimized/f128_roundToInt.ll
-; spike/optimized/f128_to_f16.ll
-; spike/optimized/f128_to_f32.ll
 ; spike/optimized/f128_to_i32.ll
 ; spike/optimized/f128_to_i32_r_minMag.ll
 ; spike/optimized/f128_to_i64.ll
 ; spike/optimized/f128_to_ui32.ll
-; spike/optimized/f128_to_ui32_r_minMag.ll
 ; spike/optimized/f128_to_ui64.ll
 ; spike/optimized/f16_mul.ll
 ; spike/optimized/f32_mul.ll
 ; spike/optimized/f32_to_bf16.ll
-; spike/optimized/f32_to_f16.ll
 ; spike/optimized/f32_to_i32.ll
 ; spike/optimized/f32_to_ui32.ll
 ; spike/optimized/f64_mul.ll
-; spike/optimized/f64_to_f16.ll
-; spike/optimized/f64_to_f32.ll
 ; spike/optimized/f64_to_i32.ll
 ; spike/optimized/f64_to_ui32.ll
-; spike/optimized/i64_to_f32.ll
 ; spike/optimized/s_addMagsF64.ll
 ; spike/optimized/s_mulAddF128.ll
 ; spike/optimized/s_mulAddF16.ll
 ; spike/optimized/s_mulAddF32.ll
 ; spike/optimized/s_mulAddF64.ll
 ; spike/optimized/s_subMagsF64.ll
+; zed-rs/optimized/28x1e2vfzxi98zqprbft2w8hu.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
+; zed-rs/optimized/4jjx0s36b1sfrqbb0zz907syp.ll
+; zed-rs/optimized/9fz5l76t5byggb8exxkeuxjql.ll
+; zed-rs/optimized/a50lo7f303ucwqc37yc15xnyr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000030(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 2
   %3 = zext i1 %2 to i64
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
@@ -146,7 +161,7 @@ define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 24
   %3 = zext i1 %2 to i64
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
@@ -157,11 +172,11 @@ define i64 @func0000000000000029(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i64 %1, -1
   %3 = zext i1 %2 to i64
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
-; 43 occurrences:
+; 44 occurrences:
 ; abc/optimized/ifDelay.c.ll
 ; arrow/optimized/key_map.cc.ll
 ; coreutils-rs/optimized/1iwhjsqyasmq9db9.ll
@@ -205,12 +220,13 @@ entry:
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
 ; wasmtime-rs/optimized/172871zsy4nrpcmu.ll
 ; z3/optimized/pb2bv_tactic.cpp.ll
+; zed-rs/optimized/b2ktka7yg7i1nuhew6e88xzwi.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000031(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = zext i1 %2 to i64
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
@@ -223,7 +239,7 @@ define i64 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i64 %1, -9223372036854775807
   %3 = zext i1 %2 to i64
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
@@ -235,7 +251,7 @@ define i64 @func0000000000000020(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %1, 1
   %3 = zext i1 %2 to i64
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
@@ -246,7 +262,7 @@ define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %1, 16
   %3 = zext i1 %2 to i64
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
@@ -257,7 +273,7 @@ define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %1, 8
   %3 = zext i1 %2 to i64
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 

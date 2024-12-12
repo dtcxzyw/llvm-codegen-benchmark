@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openjdk/optimized/g1FullGCCompactionPoint.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
   %4 = select i1 %3, i32 %0, i32 1
@@ -20,7 +20,7 @@ entry:
 ; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000e8(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 %0, i32 4
@@ -32,7 +32,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ushape.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a1(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 %0, i32 -1

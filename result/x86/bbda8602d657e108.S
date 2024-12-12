@@ -4,40 +4,46 @@ func0000000000000009:                   # @func0000000000000009
 	setae	%al
 	orb	%dil, %al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000061:                   # @func0000000000000061
 	incq	%rdx
 	cmpq	%rsi, %rdx
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000025:                   # @func0000000000000025
+func0000000000000041:                   # @func0000000000000041
+	addq	$-312, %rdx                     # imm = 0xFEC8
+	cmpq	%rsi, %rdx
+	sete	%al
+	orb	%dil, %al
+	retq
+func0000000000000065:                   # @func0000000000000065
 	addq	$6, %rdx
 	cmpq	%rsi, %rdx
 	setbe	%al
 	orb	%dil, %al
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	decq	%rdx
 	cmpq	%rsi, %rdx
 	setb	%al
 	orb	%dil, %al
 	retq
-func0000000000000029:                   # @func0000000000000029
+func0000000000000069:                   # @func0000000000000069
 	incq	%rdx
 	cmpq	%rsi, %rdx
 	setae	%al
 	orb	%dil, %al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000068:                   # @func0000000000000068
 	addq	$12, %rdx
 	cmpq	%rsi, %rdx
 	seta	%al
 	orb	%dil, %al
 	retq
-func0000000000000031:                   # @func0000000000000031
-	incq	%rdx
+func0000000000000064:                   # @func0000000000000064
+	addq	$421, %rdx                      # imm = 0x1A5
 	cmpq	%rsi, %rdx
-	sete	%al
+	setb	%al
 	orb	%dil, %al
 	retq
 func0000000000000008:                   # @func0000000000000008
@@ -46,8 +52,14 @@ func0000000000000008:                   # @func0000000000000008
 	seta	%al
 	orb	%dil, %al
 	retq
-func000000000000002c:                   # @func000000000000002c
+func000000000000006c:                   # @func000000000000006c
 	incq	%rdx
+	cmpq	%rsi, %rdx
+	setne	%al
+	orb	%dil, %al
+	retq
+func000000000000004c:                   # @func000000000000004c
+	addq	$-8, %rdx
 	cmpq	%rsi, %rdx
 	setne	%al
 	orb	%dil, %al

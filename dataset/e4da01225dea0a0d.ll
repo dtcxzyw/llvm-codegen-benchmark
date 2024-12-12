@@ -17,12 +17,12 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000002b(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 8, %1
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw float, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 4
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 4
   ret ptr %5
 }
 

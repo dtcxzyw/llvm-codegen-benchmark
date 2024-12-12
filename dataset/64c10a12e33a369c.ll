@@ -1,12 +1,6 @@
 
-; 14 occurrences:
-; linux/optimized/af_inet.ll
-; linux/optimized/eth.ll
-; linux/optimized/gre_offload.ll
-; linux/optimized/ip6_offload.ll
+; 8 occurrences:
 ; linux/optimized/rx.ll
-; linux/optimized/xfrm4_input.ll
-; linux/optimized/xfrm6_input.ll
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/LazyValueInfo.cpp.ll
 ; llvm/optimized/SCCPSolver.cpp.ll

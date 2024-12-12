@@ -74,10 +74,29 @@ func0000000000000001:                   # @func0000000000000001
 	.short	3                               # 0x3
 	.short	3                               # 0x3
 	.short	3                               # 0x3
-func0000000000000011:                   # @func0000000000000011
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpaddw	%ymm1, %ymm0, %ymm0
-	vptestnmw	.LCPI1_0(%rip), %ymm0, %k0
+.LCPI1_1:
+	.short	1                               # 0x1
+	.short	1                               # 0x1
+	.short	1                               # 0x1
+	.short	1                               # 0x1
+	.short	1                               # 0x1
+	.short	1                               # 0x1
+	.short	1                               # 0x1
+	.short	1                               # 0x1
+	.short	1                               # 0x1
+	.short	1                               # 0x1
+	.short	1                               # 0x1
+	.short	1                               # 0x1
+	.short	1                               # 0x1
+	.short	1                               # 0x1
+	.short	1                               # 0x1
+	.short	1                               # 0x1
+.LCPI1_2:
+	.short	3                               # 0x3
+	.short	3                               # 0x3
+func0000000000000021:                   # @func0000000000000021
+	vpandd	.LCPI1_2(%rip){1to8}, %ymm0, %ymm0
+	vpcmpeqw	.LCPI1_1(%rip), %ymm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
@@ -115,7 +134,7 @@ func0000000000000011:                   # @func0000000000000011
 	.short	60                              # 0x3c
 	.short	60                              # 0x3c
 	.short	60                              # 0x3c
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpsubw	%ymm1, %ymm0, %ymm0
 	vpmulhw	.LCPI2_0(%rip), %ymm0, %ymm1    # [34953,34953,34953,34953,34953,34953,34953,34953,34953,34953,34953,34953,34953,34953,34953,34953]

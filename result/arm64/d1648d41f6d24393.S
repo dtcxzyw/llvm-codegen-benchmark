@@ -1,131 +1,105 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	uzp1	v1.4s, v1.4s, v2.4s
-	bic	v0.4h, #255, lsl #8
-	xtn	v1.4h, v1.4s
-	bic	v1.4h, #255, lsl #8
-	cmeq	v0.4h, v1.4h, v0.4h
+	and	w8, w0, #0xff
+	cmp	w8, w1, uxtb
+	cset	w0, eq
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	uzp1	v1.4s, v1.4s, v2.4s
-	bic	v0.4h, #255, lsl #8
-	xtn	v1.4h, v1.4s
-	bic	v1.4h, #255, lsl #8
-	cmhi	v0.4h, v1.4h, v0.4h
+	and	w8, w0, #0xff
+	cmp	w8, w1, uxtb
+	cset	w0, lo
 	ret
                                         // -- End function
 func0000000000000009:                   // @func0000000000000009
 // %bb.0:                               // %entry
-	uzp1	v1.4s, v1.4s, v2.4s
-	bic	v0.4h, #255, lsl #8
-	xtn	v1.4h, v1.4s
-	bic	v1.4h, #255, lsl #8
-	cmhs	v0.4h, v0.4h, v1.4h
+	and	w8, w0, #0xff
+	cmp	w8, w1, uxtb
+	cset	w0, hs
 	ret
                                         // -- End function
-func0000000000000034:                   // @func0000000000000034
+func0000000000000064:                   // @func0000000000000064
 // %bb.0:                               // %entry
-	uzp1	v1.4s, v1.4s, v2.4s
-	bic	v0.4h, #255, lsl #8
-	xtn	v1.4h, v1.4s
-	bic	v1.4h, #255, lsl #8
-	cmhi	v0.4h, v1.4h, v0.4h
+	and	w8, w0, #0xff
+	cmp	w8, w1, uxtb
+	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000038:                   // @func0000000000000038
+func0000000000000068:                   // @func0000000000000068
 // %bb.0:                               // %entry
-	uzp1	v1.4s, v1.4s, v2.4s
-	bic	v0.4h, #255, lsl #8
-	xtn	v1.4h, v1.4s
-	bic	v1.4h, #255, lsl #8
-	cmhi	v0.4h, v0.4h, v1.4h
+	and	w8, w0, #0xff
+	cmp	w8, w1, uxtb
+	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000024:                   // @func0000000000000024
+func0000000000000044:                   // @func0000000000000044
 // %bb.0:                               // %entry
-	uzp1	v1.4s, v1.4s, v2.4s
-	bic	v0.4h, #255, lsl #8
-	xtn	v1.4h, v1.4s
-	bic	v1.4h, #255, lsl #8
-	cmhi	v0.4h, v1.4h, v0.4h
+	and	w8, w0, #0xff
+	cmp	w8, w1, uxtb
+	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000028:                   // @func0000000000000028
+func0000000000000048:                   // @func0000000000000048
 // %bb.0:                               // %entry
-	uzp1	v1.4s, v1.4s, v2.4s
-	bic	v0.4h, #255, lsl #8
-	xtn	v1.4h, v1.4s
-	bic	v1.4h, #255, lsl #8
-	cmhi	v0.4h, v0.4h, v1.4h
+	and	w8, w0, #0xff
+	cmp	w8, w1, uxtb
+	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000008:                   // @func0000000000000008
+func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	uzp1	v1.4s, v1.4s, v2.4s
-	bic	v0.4h, #255, lsl #8
-	xtn	v1.4h, v1.4s
-	bic	v1.4h, #255, lsl #8
-	cmhi	v0.4h, v0.4h, v1.4h
+	and	w8, w0, #0xff
+	cmp	w8, w1, uxtb
+	cset	w0, hi
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	uzp1	v1.4s, v1.4s, v2.4s
-	bic	v0.4h, #255, lsl #8
-	xtn	v1.4h, v1.4s
-	bic	v1.4h, #255, lsl #8
-	cmeq	v0.4h, v1.4h, v0.4h
-	mvn	v0.8b, v0.8b
+	and	w8, w0, #0xff
+	cmp	w8, w1, uxtb
+	cset	w0, ne
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	uzp1	v1.4s, v1.4s, v2.4s
-	shl	v0.4h, v0.4h, #8
-	sshr	v0.4h, v0.4h, #8
-	xtn	v1.4h, v1.4s
-	shl	v1.4h, v1.4h, #8
-	sshr	v1.4h, v1.4h, #8
-	cmgt	v0.4h, v0.4h, v1.4h
+	sxtb	w8, w0
+	cmp	w8, w1, sxtb
+	cset	w0, gt
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	uzp1	v1.4s, v1.4s, v2.4s
-	shl	v0.4h, v0.4h, #8
-	sshr	v0.4h, v0.4h, #8
-	xtn	v1.4h, v1.4s
-	shl	v1.4h, v1.4h, #8
-	sshr	v1.4h, v1.4h, #8
-	cmgt	v0.4h, v1.4h, v0.4h
+	sxtb	w8, w0
+	cmp	w8, w1, sxtb
+	cset	w0, lt
 	ret
                                         // -- End function
-func0000000000000021:                   // @func0000000000000021
+func0000000000000041:                   // @func0000000000000041
 // %bb.0:                               // %entry
-	uzp1	v1.4s, v1.4s, v2.4s
-	bic	v0.4h, #255, lsl #8
-	xtn	v1.4h, v1.4s
-	bic	v1.4h, #255, lsl #8
-	cmeq	v0.4h, v1.4h, v0.4h
+	and	w8, w0, #0xff
+	cmp	w8, w1, uxtb
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000031:                   // @func0000000000000031
+func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	uzp1	v1.4s, v1.4s, v2.4s
-	bic	v0.4h, #255, lsl #8
-	xtn	v1.4h, v1.4s
-	bic	v1.4h, #255, lsl #8
-	cmeq	v0.4h, v1.4h, v0.4h
+	and	w8, w0, #0xff
+	cmp	w8, w1, uxtb
+	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000005:                   // @func0000000000000005
+func0000000000000061:                   // @func0000000000000061
 // %bb.0:                               // %entry
-	uzp1	v1.4s, v1.4s, v2.4s
-	bic	v0.4h, #255, lsl #8
-	xtn	v1.4h, v1.4s
-	bic	v1.4h, #255, lsl #8
-	cmhs	v0.4h, v1.4h, v0.4h
+	and	w8, w0, #0xff
+	cmp	w8, w1, uxtb
+	cset	w0, eq
+	ret
+                                        // -- End function
+func0000000000000014:                   // @func0000000000000014
+// %bb.0:                               // %entry
+	and	w8, w0, #0xff
+	cmp	w8, w1, uxtb
+	cset	w0, lo
 	ret
                                         // -- End function

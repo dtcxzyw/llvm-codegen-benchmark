@@ -1,4 +1,4 @@
-func000000000000002a:                   # @func000000000000002a
+func000000000000002e:                   # @func000000000000002e
 	fcvt.w.s	a2, fa0, rtz
 	slli	a1, a1, 2
 	add	a0, a0, a1

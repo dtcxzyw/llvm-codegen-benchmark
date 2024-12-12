@@ -1,5 +1,5 @@
 
-; 335 occurrences:
+; 342 occurrences:
 ; abc/optimized/aigTsim.c.ll
 ; abc/optimized/saigPhase.c.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
@@ -9,6 +9,7 @@
 ; arrow/optimized/dictionary.cc.ll
 ; assimp/optimized/3DSLoader.cpp.ll
 ; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
+; boost/optimized/to_chars.ll
 ; ceres/optimized/trust_region_minimizer.cc.ll
 ; coreutils-rs/optimized/3ntjj58b904wujzh.ll
 ; cpython/optimized/assemble.ll
@@ -110,9 +111,9 @@
 ; llvm/optimized/MergeFunctions.cpp.ll
 ; llvm/optimized/Metadata.cpp.ll
 ; llvm/optimized/MoveChecker.cpp.ll
-; llvm/optimized/ObjCMT.cpp.ll
 ; llvm/optimized/PGOInstrumentation.cpp.ll
 ; llvm/optimized/PredicateInfo.cpp.ll
+; llvm/optimized/RISCVMatInt.cpp.ll
 ; llvm/optimized/RISCVVEmitter.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/RegisterInfoEmitter.cpp.ll
@@ -334,6 +335,12 @@
 ; z3/optimized/sat_simplifier.cpp.ll
 ; z3/optimized/sat_solver.cpp.ll
 ; z3/optimized/theory_arith.cpp.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/3syn8d61makvd8ra76uhpcrmo.ll
+; zed-rs/optimized/4360dz3iad2ygf5m8hd0cmm88.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
 ; zxing/optimized/PDFReader.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0) #0 {

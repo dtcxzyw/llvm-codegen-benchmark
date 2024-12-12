@@ -42,11 +42,11 @@ entry:
 ; g2o/optimized/edge_se2_lotsofxy.cpp.ll
 ; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000038(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000003c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw double, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw double, ptr %0, i64 %4
   %.idx = shl i64 %1, 4
   %6 = getelementptr i8, ptr %5, i64 %.idx
   ret ptr %6

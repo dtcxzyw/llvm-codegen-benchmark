@@ -1,26 +1,26 @@
-func0000000000000044:                   // @func0000000000000044
+func0000000000000084:                   // @func0000000000000084
 // %bb.0:                               // %entry
 	cmp	x2, #0
 	cset	w8, eq
 	cmp	x1, #0
-	orr	w8, w8, w0
+	orr	w8, w0, w8
 	cset	w9, eq
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
                                         // -- End function
-func0000000000000042:                   // @func0000000000000042
+func0000000000000082:                   // @func0000000000000082
 // %bb.0:                               // %entry
 	cmp	x2, #0
 	cset	w8, eq
 	cmp	x0, #0
-	orr	w8, w8, w1
+	orr	w8, w1, w8
 	cset	w9, eq
 	orr	w8, w9, w8
 	and	w0, w8, #0x1
 	ret
                                         // -- End function
-func0000000000000304:                   // @func0000000000000304
+func0000000000000604:                   // @func0000000000000604
 // %bb.0:                               // %entry
 	cmp	x2, #4
 	cset	w8, ne
@@ -31,18 +31,18 @@ func0000000000000304:                   // @func0000000000000304
 	and	w0, w8, #0x1
 	ret
                                         // -- End function
-func0000000000000184:                   // @func0000000000000184
+func0000000000000304:                   // @func0000000000000304
 // %bb.0:                               // %entry
 	cmp	x2, #0
 	cset	w8, lt
 	cmp	x1, #0
-	orr	w8, w8, w0
+	orr	w8, w0, w8
 	cset	w9, eq
 	orr	w8, w8, w9
 	and	w0, w8, #0x1
 	ret
                                         // -- End function
-func0000000000000302:                   // @func0000000000000302
+func0000000000000602:                   // @func0000000000000602
 // %bb.0:                               // %entry
 	cmp	x2, #1
 	cset	w8, ne
@@ -53,7 +53,7 @@ func0000000000000302:                   // @func0000000000000302
 	and	w0, w8, #0x1
 	ret
                                         // -- End function
-func0000000000000102:                   // @func0000000000000102
+func0000000000000202:                   // @func0000000000000202
 // %bb.0:                               // %entry
 	mov	x8, #-2147483647                // =0xffffffff80000001
 	cmp	x2, x8

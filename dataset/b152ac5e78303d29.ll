@@ -14,7 +14,7 @@ entry:
   %3 = shl nsw i32 -1, %2
   %4 = xor i32 %3, -1
   %5 = select i1 %1, i32 %4, i32 255
-  %6 = and i32 %5, %0
+  %6 = and i32 %0, %5
   ret i32 %6
 }
 

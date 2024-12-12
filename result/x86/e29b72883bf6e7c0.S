@@ -12,7 +12,7 @@ func0000000000000002:                   # @func0000000000000002
 	andl	$-6914, %edi                    # imm = 0xE4FE
 	orl	%edi, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000031:                   # @func0000000000000031
 	andl	$240, %esi
 	xorl	%ecx, %ecx
 	cmpl	$144, %esi

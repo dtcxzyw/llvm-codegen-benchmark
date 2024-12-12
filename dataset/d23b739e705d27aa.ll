@@ -7,8 +7,8 @@
 define i1 @func000000000000000c(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = sub i8 0, %2
-  %4 = icmp ne i8 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp ne i8 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -28,11 +28,11 @@ entry:
 ; arrow/optimized/scalar_cast_temporal.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000061(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add nuw nsw i8 %1, %2
   %4 = icmp eq i8 %3, 2
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

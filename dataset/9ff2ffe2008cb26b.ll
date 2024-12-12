@@ -17,6 +17,19 @@ entry:
   ret i16 %7
 }
 
+; 1 occurrences:
+; lvgl/optimized/lv_binfont_loader.ll
+; Function Attrs: nounwind
+define i16 @func000000000000001d(i16 %0, i16 %1, i8 %2) #0 {
+entry:
+  %3 = and i8 %2, 3
+  %4 = zext nneg i8 %3 to i16
+  %5 = shl nuw i16 %4, 14
+  %6 = or disjoint i16 %0, %1
+  %7 = or disjoint i16 %5, %6
+  ret i16 %7
+}
+
 ; 2 occurrences:
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; opencv/optimized/color_rgb.dispatch.cpp.ll

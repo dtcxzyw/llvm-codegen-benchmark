@@ -6,7 +6,7 @@ define i32 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 473
   %4 = ashr i32 %3, 8
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = ashr i32 %0, 8
   %7 = sub nsw i32 %6, %5
   ret i32 %7
@@ -19,7 +19,7 @@ define i32 @func0000000000000040(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 1741647
   %4 = ashr i32 %3, 19
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = ashr i32 %0, 19
   %7 = sub i32 %6, %5
   ret i32 %7
@@ -200,7 +200,7 @@ define i32 @func0000000000000049(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 1741647
   %4 = ashr i32 %3, 19
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = ashr i32 %0, 19
   %7 = sub nsw i32 %6, %5
   ret i32 %7

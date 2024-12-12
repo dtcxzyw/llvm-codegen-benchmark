@@ -1,4 +1,4 @@
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	incq	%rsi
 	andl	$63, %edi
 	cmpq	%rsi, %rdi
@@ -10,25 +10,25 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	%rsi, %rax
 	seta	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	decq	%rsi
 	movl	%edi, %eax
 	cmpq	%rsi, %rax
 	setb	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	addq	$4, %rsi
 	andq	$-4, %rdi
 	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func000000000000003a:                   # @func000000000000003a
+func000000000000006a:                   # @func000000000000006a
 	addq	$4, %rsi
 	andq	$-4, %rdi
 	cmpq	%rsi, %rdi
 	setg	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	addq	$16, %rsi
 	andq	$-16, %rdi
 	cmpq	%rsi, %rdi
@@ -40,32 +40,38 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	decq	%rsi
 	andl	$2047, %edi                     # imm = 0x7FF
 	cmpq	%rsi, %rdi
 	setl	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
-	addq	$-12, %rsi
-	movl	%edi, %eax
-	cmpq	%rsi, %rax
+func0000000000000044:                   # @func0000000000000044
+	addq	$8, %rsi
+	andq	$-8, %rdi
+	cmpq	%rsi, %rdi
 	setb	%al
 	retq
-func0000000000000009:                   # @func0000000000000009
-	addq	$269484032, %rsi                # imm = 0x10100000
-	andq	$-1048576, %rdi                 # imm = 0xFFF00000
+func0000000000000064:                   # @func0000000000000064
+	addq	$32, %rsi
+	andq	$-4, %rdi
 	cmpq	%rsi, %rdi
-	setae	%al
+	setb	%al
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000004:                   # @func0000000000000004
+	addq	$32, %rsi
+	andq	$-4, %rdi
+	cmpq	%rsi, %rdi
+	setb	%al
+	retq
+func0000000000000074:                   # @func0000000000000074
 	addq	$2, %rsi
 	movabsq	$9223372036854775804, %rax      # imm = 0x7FFFFFFFFFFFFFFC
 	andq	%rdi, %rax
 	cmpq	%rsi, %rax
 	setb	%al
 	retq
-func0000000000000029:                   # @func0000000000000029
+func0000000000000049:                   # @func0000000000000049
 	addq	$8, %rsi
 	andq	$-4, %rdi
 	cmpq	%rsi, %rdi

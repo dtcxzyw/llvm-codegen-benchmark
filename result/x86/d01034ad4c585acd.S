@@ -26,10 +26,3 @@ func0000000000000006:                   # @func0000000000000006
 	movzbl	%al, %eax
 	negl	%eax
 	retq
-func0000000000000004:                   # @func0000000000000004
-	cmpl	$-4, %esi
-	setb	%al
-	andb	%dil, %al
-	movzbl	%al, %eax
-	negl	%eax
-	retq

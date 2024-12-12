@@ -51,6 +51,13 @@ func000000000000004d:                   # @func000000000000004d
 	add	a0, a0, a1
 	addiw	a0, a0, 9
 	ret
+func0000000000000073:                   # @func0000000000000073
+	andi	a2, a2, 255
+	slli	a2, a2, 1
+	or	a1, a1, a2
+	add	a0, a0, a1
+	addiw	a0, a0, 1
+	ret
 func0000000000000044:                   # @func0000000000000044
 	slli	a2, a2, 24
 	or	a0, a0, a2

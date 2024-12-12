@@ -31,12 +31,12 @@ func0000000000000010:                   # @func0000000000000010
 	shlxl	%edx, %esi, %eax
 	orl	%ecx, %eax
 	retq
-func000000000000000e:                   # @func000000000000000e
+func0000000000000008:                   # @func0000000000000008
 	bzhil	%edx, %edi, %ecx
 	shlxl	%edx, %esi, %eax
 	orl	%ecx, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func000000000000000e:                   # @func000000000000000e
 	bzhil	%edx, %edi, %ecx
 	shlxl	%edx, %esi, %eax
 	orl	%ecx, %eax

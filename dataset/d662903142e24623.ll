@@ -19,7 +19,7 @@ entry:
   ret i64 %4
 }
 
-; 23 occurrences:
+; 22 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; cpython/optimized/obmalloc.ll
@@ -38,7 +38,6 @@ entry:
 ; protobuf/optimized/map.cc.ll
 ; protobuf/optimized/map_field.cc.ll
 ; protobuf/optimized/struct.pb.cc.ll
-; proxygen/optimized/QPACKHeaderTable.cpp.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; xgboost/optimized/c_api.cc.ll
 ; z3/optimized/euf_proof.cpp.ll
@@ -94,10 +93,9 @@ entry:
   ret i64 %4
 }
 
-; 41 occurrences:
+; 40 occurrences:
 ; linux/optimized/iov_iter.ll
 ; linux/optimized/skcipher.ll
-; wireshark/optimized/qcustomplot.cpp.ll
 ; yosys/optimized/abc.ll
 ; yosys/optimized/blif.ll
 ; yosys/optimized/clean_zerowidth.ll
@@ -145,14 +143,13 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; linux/optimized/i915_gem_execbuffer.ll
-; wireshark/optimized/packet_list_model.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = shl nuw nsw i64 %2, 2
+  %3 = shl nuw nsw i64 %2, 5
   %4 = sub i64 %3, %0
   ret i64 %4
 }

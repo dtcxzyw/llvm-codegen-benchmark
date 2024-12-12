@@ -1,5 +1,6 @@
 
-; 4 occurrences:
+; 5 occurrences:
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; minetest/optimized/CGUIListBox.cpp.ll
 ; opencv/optimized/lapack.cpp.ll
 ; openspiel/optimized/coop_box_pushing.cc.ll

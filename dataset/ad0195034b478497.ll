@@ -1,5 +1,5 @@
 
-; 355 occurrences:
+; 354 occurrences:
 ; cvc5/optimized/abduction_solver.cpp.ll
 ; cvc5/optimized/ackermann.cpp.ll
 ; cvc5/optimized/addition.cpp.ll
@@ -155,7 +155,6 @@
 ; cvc5/optimized/node_converter.cpp.ll
 ; cvc5/optimized/node_manager.cpp.ll
 ; cvc5/optimized/node_traversal.cpp.ll
-; cvc5/optimized/node_utils.cpp.ll
 ; cvc5/optimized/node_value.cpp.ll
 ; cvc5/optimized/non_clausal_simp.cpp.ll
 ; cvc5/optimized/normal_form.cpp.ll
@@ -356,7 +355,7 @@
 ; llvm/optimized/InstructionSimplify.cpp.ll
 ; ruby/optimized/time.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i16 %0) #0 {
+define i32 @func0000000000000021(i16 %0) #0 {
 entry:
   %1 = zext nneg i16 %0 to i32
   %2 = icmp eq i16 %0, 3

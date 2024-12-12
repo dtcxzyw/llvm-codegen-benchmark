@@ -136,18 +136,6 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
-; qemu/optimized/hw_audio_es1370.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0) #0 {
-entry:
-  %1 = zext i32 %0 to i64
-  %2 = add nuw nsw i64 %1, 17179869148
-  %3 = lshr i64 %2, 2
-  %4 = trunc i64 %3 to i32
-  ret i32 %4
-}
-
 ; 7 occurrences:
 ; git/optimized/read-cache.ll
 ; linux/optimized/i915_perf.ll
@@ -163,18 +151,6 @@ entry:
   %2 = add nuw nsw i64 %1, 17179869172
   %3 = lshr i64 %2, 2
   %4 = trunc i64 %3 to i32
-  ret i32 %4
-}
-
-; 1 occurrences:
-; z3/optimized/watch_list.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0) #0 {
-entry:
-  %1 = zext i32 %0 to i64
-  %2 = add nuw nsw i64 %1, 8
-  %3 = lshr i64 %2, 1
-  %4 = trunc nuw i64 %3 to i32
   ret i32 %4
 }
 

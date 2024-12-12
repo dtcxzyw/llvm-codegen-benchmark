@@ -1,28 +1,4 @@
 
-; 1 occurrences:
-; qemu/optimized/util_buffer.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = lshr i64 %2, 3
-  %4 = icmp ugt i64 %3, %1
-  %5 = icmp ugt i64 %0, 65535
-  %6 = and i1 %5, %4
-  ret i1 %6
-}
-
-; 1 occurrences:
-; qemu/optimized/util_buffer.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = lshr i64 %2, 3
-  %4 = icmp ugt i64 %3, %1
-  %5 = icmp ult i64 %0, 48
-  %6 = and i1 %5, %4
-  ret i1 %6
-}
-
 ; 7 occurrences:
 ; opencv/optimized/attr_value.pb.cc.ll
 ; opencv/optimized/function.pb.cc.ll
@@ -32,10 +8,10 @@ entry:
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002a8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 6
-  %4 = icmp uge i64 %3, %1
+  %4 = icmp samesign ule i64 %1, %3
   %5 = icmp ugt i64 %0, 8
   %6 = and i1 %5, %4
   ret i1 %6
@@ -46,10 +22,10 @@ entry:
 ; openexr/optimized/internal_huf.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 59
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   %5 = icmp eq i64 %1, 0
   %6 = and i1 %4, %5
   ret i1 %6
@@ -66,10 +42,10 @@ entry:
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
 ; wasmtime-rs/optimized/172871zsy4nrpcmu.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
-  %4 = icmp ne i64 %3, %0
+  %4 = icmp ne i64 %0, %3
   %5 = icmp eq i64 %1, 0
   %6 = and i1 %4, %5
   ret i1 %6
@@ -78,10 +54,10 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/i915_gem.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000010c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
-  %4 = icmp ult i64 %3, %1
+  %4 = icmp ugt i64 %1, %3
   %5 = icmp ne i64 %0, 0
   %6 = and i1 %5, %4
   ret i1 %6
@@ -90,10 +66,10 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/networking.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 2
-  %4 = icmp ult i64 %3, %1
+  %4 = icmp ugt i64 %1, %3
   %5 = icmp ult i64 %0, 16384
   %6 = and i1 %5, %4
   ret i1 %6

@@ -17,12 +17,12 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 func0000000000000004:                   # @func0000000000000004
 	xorl	%ecx, %ecx
-	cmpb	$91, %sil
+	cmpb	$6, %sil
 	setae	%cl
-	shll	$24, %ecx
-	addl	$218103808, %ecx                # imm = 0xD000000
+	shll	$5, %ecx
+	addl	$-87, %ecx
 	testb	$1, %dil
-	movl	$201326592, %eax                # imm = 0xC000000
+	movl	$-48, %eax
 	cmovel	%ecx, %eax
 	retq
 func000000000000000a:                   # @func000000000000000a
@@ -32,5 +32,23 @@ func000000000000000a:                   # @func000000000000000a
 	cmovgel	%eax, %ecx
 	testb	$1, %dil
 	movl	$-87, %eax
+	cmovel	%ecx, %eax
+	retq
+func0000000000000018:                   # @func0000000000000018
+	cmpb	$65, %sil
+	movl	$-29, %eax
+	movl	$-48, %ecx
+	cmovael	%eax, %ecx
+	testb	$1, %dil
+	movl	$-87, %eax
+	cmovel	%ecx, %eax
+	retq
+func0000000000000014:                   # @func0000000000000014
+	xorl	%eax, %eax
+	cmpb	$-16, %sil
+	setb	%al
+	leal	7(,%rax,8), %ecx
+	testb	$1, %dil
+	movl	$31, %eax
 	cmovel	%ecx, %eax
 	retq

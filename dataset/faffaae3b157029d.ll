@@ -1,8 +1,9 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; freetype/optimized/ftbitmap.c.ll
 ; linux/optimized/hid-lg-g15.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nanosvg/optimized/nanosvg.ll
 ; nori/optimized/nanovg.c.ll

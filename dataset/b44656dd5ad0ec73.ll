@@ -12,7 +12,7 @@ entry:
   %2 = shl i16 %1, 1
   %3 = and i16 %2, 112
   %4 = and i16 %1, 7
-  %5 = or disjoint i16 %4, %0
+  %5 = or disjoint i16 %0, %4
   %6 = or disjoint i16 %5, %3
   ret i16 %6
 }

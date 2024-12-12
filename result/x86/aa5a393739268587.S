@@ -46,10 +46,6 @@ func000000000000000f:                   # @func000000000000000f
 	movq	%rsi, %rax
 	subl	%edi, %eax
 	retq
-func000000000000000b:                   # @func000000000000000b
-	movq	%rsi, %rax
-	subl	%edi, %eax
-	retq
 func000000000000000e:                   # @func000000000000000e
 	movq	%rsi, %rax
 	subl	%edi, %eax

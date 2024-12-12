@@ -20,24 +20,6 @@ entry:
   ret ptr %6
 }
 
-; 7 occurrences:
-; abc/optimized/cecSim.c.ll
-; abc/optimized/giaResub.c.ll
-; abc/optimized/giaSupps.c.ll
-; darktable/optimized/introspection_bilateral.cc.ll
-; libwebp/optimized/webp_enc.c.ll
-; oiio/optimized/imagebufalgo_xform.cpp.ll
-; openusd/optimized/patchTableFactory.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000016(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = or disjoint i32 %2, 1
-  %4 = mul nsw i32 %3, %1
-  %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw float, ptr %0, i64 %5
-  ret ptr %6
-}
-
 ; 1 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; Function Attrs: nounwind
@@ -50,6 +32,23 @@ entry:
   ret ptr %6
 }
 
+; 6 occurrences:
+; abc/optimized/cecSim.c.ll
+; abc/optimized/giaResub.c.ll
+; abc/optimized/giaSupps.c.ll
+; libwebp/optimized/webp_enc.c.ll
+; oiio/optimized/imagebufalgo_xform.cpp.ll
+; openusd/optimized/patchTableFactory.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000016(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or disjoint i32 %2, 1
+  %4 = mul nsw i32 %3, %1
+  %5 = sext i32 %4 to i64
+  %6 = getelementptr nusw i64, ptr %0, i64 %5
+  ret ptr %6
+}
+
 ; 2 occurrences:
 ; openusd/optimized/decodeframe.c.ll
 ; openusd/optimized/reconinter.c.ll
@@ -57,7 +56,7 @@ entry:
 define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %2, 1
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw ptr, ptr %0, i64 %5
   ret ptr %6
@@ -72,7 +71,7 @@ entry:
 define ptr @func0000000000000014(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 1
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr double, ptr %0, i64 %5
   ret ptr %6

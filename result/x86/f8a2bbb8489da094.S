@@ -4,7 +4,7 @@ func000000000000000a:                   # @func000000000000000a
 	cmpq	%rdi, %rdx
 	setg	%al
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	notq	%rdx
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx
@@ -16,7 +16,7 @@ func0000000000000009:                   # @func0000000000000009
 	cmpq	%rdi, %rdx
 	setae	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	notq	%rdx
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx
@@ -46,26 +46,32 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	%rdi, %rdx
 	seta	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	notq	%rdx
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx
 	sete	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	movabsq	$9223372036854775807, %rax      # imm = 0x7FFFFFFFFFFFFFFF
 	xorq	%rdx, %rax
 	addq	%rsi, %rax
 	cmpq	%rdi, %rax
 	setl	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func0000000000000024:                   # @func0000000000000024
+	notq	%rdx
+	addq	%rsi, %rdx
+	cmpq	%rdi, %rdx
+	setb	%al
+	retq
+func000000000000002a:                   # @func000000000000002a
 	notq	%rdx
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx
 	setg	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	notq	%rdx
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx

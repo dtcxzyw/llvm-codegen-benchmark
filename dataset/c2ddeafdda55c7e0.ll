@@ -2,12 +2,12 @@
 ; 1 occurrences:
 ; qemu/optimized/hw_core_numa.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003f4(i64 %0, i64 %1) #0 {
+define i1 @func00000000000007f4(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = trunc nuw nsw i64 %0 to i32
   %4 = add nuw nsw i32 %3, %2
-  %5 = icmp ult i32 %4, 48
+  %5 = icmp samesign ult i32 %4, 48
   ret i1 %5
 }
 
@@ -19,7 +19,7 @@ entry:
 ; openjdk/optimized/childproc.ll
 ; wolfssl/optimized/wc_port.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = trunc i64 %0 to i32
@@ -61,7 +61,7 @@ entry:
 ; 1 occurrences:
 ; verilator/optimized/V3Width.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000101(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = trunc nuw i64 %0 to i32
@@ -73,7 +73,7 @@ entry:
 ; 1 occurrences:
 ; assimp/optimized/SIBImporter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000201(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000401(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = trunc i64 %0 to i32
@@ -82,7 +82,8 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/core.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
 ; wireshark/optimized/packet-tls-utils.c.ll
@@ -100,7 +101,7 @@ entry:
 ; git/optimized/diff.ll
 ; llvm/optimized/SampleProfileMatcher.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = trunc i64 %0 to i32
@@ -124,7 +125,7 @@ entry:
 ; llvm/optimized/SimplifyLibCalls.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003f1(i64 %0, i64 %1) #0 {
+define i1 @func00000000000007e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = trunc nuw nsw i64 %0 to i32
@@ -148,12 +149,12 @@ entry:
 ; llvm/optimized/SampleProfileMatcher.cpp.ll
 ; llvm/optimized/SimplifyLibCalls.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003f8(i64 %0, i64 %1) #0 {
+define i1 @func00000000000007f8(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = trunc nuw nsw i64 %0 to i32
   %4 = add nuw nsw i32 %3, %2
-  %5 = icmp ugt i32 %4, 63
+  %5 = icmp samesign ugt i32 %4, 63
   ret i1 %5
 }
 
@@ -164,7 +165,7 @@ entry:
 ; zxing/optimized/ConcentricFinder.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = trunc i64 %0 to i32
@@ -202,7 +203,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d8(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001a8(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = trunc nuw nsw i64 %0 to i32
@@ -215,7 +216,7 @@ entry:
 ; wireshark/optimized/main_status_bar.cpp.ll
 ; wireshark/optimized/packet_dialog.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000028a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000050a(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = trunc nuw i64 %0 to i32
@@ -240,7 +241,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/seq_timer.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000208(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000408(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = trunc i64 %0 to i32
@@ -252,7 +253,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/extents.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = trunc i64 %0 to i32
@@ -264,7 +265,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/extents.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = trunc i64 %0 to i32
@@ -281,7 +282,7 @@ entry:
 ; zxing/optimized/ConcentricFinder.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000296(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000526(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = trunc nuw i64 %0 to i32
@@ -293,7 +294,7 @@ entry:
 ; 1 occurrences:
 ; wolfssl/optimized/rsa.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000106(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = trunc nuw i64 %0 to i32
@@ -305,7 +306,7 @@ entry:
 ; 1 occurrences:
 ; llama.cpp/optimized/ggml.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d6(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001a6(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = trunc nuw nsw i64 %0 to i32
@@ -317,7 +318,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/run_length_morphology.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000029a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000052a(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = trunc nuw i64 %0 to i32
@@ -329,7 +330,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/expand_layer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i64 %0, i64 %1) #0 {
+define i1 @func000000000000018a(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = trunc nuw nsw i64 %0 to i32
@@ -341,7 +342,7 @@ entry:
 ; 1 occurrences:
 ; tev/optimized/ImageViewer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000020a(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = trunc i64 %0 to i32
@@ -353,7 +354,7 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/ng_extparam.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000288(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000508(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = trunc nuw i64 %0 to i32

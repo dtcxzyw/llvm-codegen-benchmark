@@ -1,8 +1,7 @@
 
-; 320 occurrences:
+; 316 occurrences:
 ; abc/optimized/ifDec10.c.ll
 ; abseil-cpp/optimized/charset_test.cc.ll
-; bdwgc/optimized/gc.c.ll
 ; cmake/optimized/cover.c.ll
 ; cpython/optimized/obmalloc.ll
 ; eastl/optimized/TestBitVector.cpp.ll
@@ -25,7 +24,6 @@
 ; hyperscan/optimized/stream_compress.c.ll
 ; linux/optimized/alternative.ll
 ; linux/optimized/binfmt_elf.ll
-; linux/optimized/blk-sysfs.ll
 ; linux/optimized/client.ll
 ; linux/optimized/compat_binfmt_elf.ll
 ; linux/optimized/cpu_entry_area.ll
@@ -35,14 +33,11 @@
 ; linux/optimized/hugetlb_vmemmap.ll
 ; linux/optimized/hwregs.ll
 ; linux/optimized/i915_gem.ll
-; linux/optimized/i915_mm.ll
 ; linux/optimized/init_64.ll
 ; linux/optimized/intel_bw.ll
-; linux/optimized/machine_kexec_64.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mprotect.ll
 ; linux/optimized/pgtable.ll
-; linux/optimized/probe.ll
 ; linux/optimized/pti.ll
 ; linux/optimized/set_memory.ll
 ; linux/optimized/setup-bus.ll
@@ -197,7 +192,6 @@
 ; llvm/optimized/ParentMapContext.cpp.ll
 ; llvm/optimized/ParseHLSL.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RISCVMatInt.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
@@ -319,6 +313,8 @@
 ; verilator/optimized/V3CCtors.cpp.ll
 ; wireshark/optimized/packet-pldm.c.ll
 ; wireshark/optimized/proto.c.ll
+; zed-rs/optimized/3syn8d61makvd8ra76uhpcrmo.ll
+; zed-rs/optimized/d7h2r6mystjn2jzwcl5ofeoiz.ll
 ; zstd/optimized/cover.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i1 %1, i64 %2) #0 {

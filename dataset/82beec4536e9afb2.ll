@@ -1,24 +1,12 @@
 
-%struct.TValue.3532557 = type { %union.Value.3532558, i8 }
-%union.Value.3532558 = type { ptr }
-
-; 1 occurrences:
-; duckdb/optimized/ub_duckdb_common_types.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000002c(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nsw i64 %1, %2
-  %4 = lshr i64 %3, 3
-  %5 = getelementptr i8, ptr %0, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 2
-  ret ptr %6
-}
+%struct.TValue.3713476 = type { %union.Value.3713477, i8 }
+%union.Value.3713477 = type { ptr }
 
 ; 2 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = lshr i64 %3, 3
@@ -41,7 +29,7 @@ entry:
 ; llvm/optimized/SelectOptimize.cpp.ll
 ; llvm/optimized/XCOFFObjectWriter.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000002f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = lshr i64 %3, 6
@@ -57,7 +45,7 @@ define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = lshr i64 %3, 1
-  %5 = getelementptr %struct.TValue.3532557, ptr %0, i64 %4
+  %5 = getelementptr %struct.TValue.3713476, ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 -16
   ret ptr %6
 }

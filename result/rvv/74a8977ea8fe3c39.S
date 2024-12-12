@@ -28,6 +28,16 @@ func000000000000002c:                   # @func000000000000002c
 	vmfge.vf	v0, v8, fa4
 	vfmerge.vfm	v8, v8, fa4, v0
 	ret
+func0000000000000022:                   # @func0000000000000022
+	lui	a0, 273216
+	fmv.w.x	fa5, a0
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vmflt.vf	v0, v8, fa5
+	fli.s	fa5, 1.0
+	vmerge.vxm	v8, v8, a0, v0
+	vmflt.vf	v0, v8, fa5
+	vfmerge.vfm	v8, v8, fa5, v0
+	ret
 func00000000000000ca:                   # @func00000000000000ca
 	fli.s	fa5, 1.0
 	vsetivli	zero, 16, e32, m4, ta, ma

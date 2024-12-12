@@ -23,10 +23,9 @@ entry:
   ret float %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
-; gromacs/optimized/slagtf.cpp.ll
 ; minetest/optimized/player_sao.cpp.ll
 ; Function Attrs: nounwind
 define float @func0000000000000004(float %0, i1 %1, float %2) #0 {

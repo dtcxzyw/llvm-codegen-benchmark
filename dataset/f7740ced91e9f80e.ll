@@ -1,11 +1,10 @@
 
-; 23 occurrences:
+; 21 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; glslang/optimized/iomapper.cpp.ll
 ; gromacs/optimized/compiler.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; linux/optimized/8139too.ll
-; linux/optimized/8250_dwlib.ll
 ; linux/optimized/byd.ll
 ; linux/optimized/r8169_main.ll
 ; linux/optimized/tg3.ll
@@ -19,7 +18,6 @@
 ; php/optimized/document.ll
 ; qemu/optimized/target_riscv_debug.c.ll
 ; qemu/optimized/tcg.c.ll
-; ruby/optimized/basicsocket.ll
 ; ruby/optimized/console.ll
 ; ruby/optimized/io.ll
 ; ruby/optimized/parse.ll
@@ -29,7 +27,7 @@ entry:
   %2 = and i64 %1, -5
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i32 0, i32 32
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 

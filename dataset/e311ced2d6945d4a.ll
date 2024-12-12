@@ -1,5 +1,5 @@
 
-; 175 occurrences:
+; 176 occurrences:
 ; abc/optimized/bmcBmcG.c.ll
 ; abc/optimized/bmcBmcS.c.ll
 ; abc/optimized/bmcFault.c.ll
@@ -8,6 +8,7 @@
 ; abc/optimized/timBox.c.ll
 ; abc/optimized/wlnRead.c.ll
 ; arrow/optimized/align_util.cc.ll
+; boost/optimized/approximately_equals.ll
 ; bullet3/optimized/btDantzigLCP.ll
 ; ceres/optimized/dynamic_compressed_row_sparse_matrix.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_2.cc.ll
@@ -179,7 +180,7 @@
 define i32 @func0000000000000005(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   ret i32 %3
 }
 
@@ -227,11 +228,11 @@ entry:
 define i32 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   ret i32 %3
 }
 
-; 54 occurrences:
+; 55 occurrences:
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/bmcFault.c.ll
 ; abc/optimized/giaQbf.c.ll
@@ -254,6 +255,7 @@ entry:
 ; linux/optimized/mballoc.ll
 ; linux/optimized/xprtsock.ll
 ; llvm/optimized/CoverageMapping.cpp.ll
+; llvm/optimized/PrologEpilogInserter.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; llvm/optimized/X86RegisterInfo.cpp.ll
 ; luau/optimized/IrLoweringA64.cpp.ll
@@ -290,7 +292,7 @@ entry:
 define i32 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   ret i32 %3
 }
 
@@ -304,7 +306,7 @@ entry:
 define i32 @func000000000000000d(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   ret i32 %3
 }
 
@@ -315,7 +317,7 @@ entry:
 define i32 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   ret i32 %3
 }
 
@@ -328,7 +330,7 @@ entry:
 define i32 @func0000000000000007(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   ret i32 %3
 }
 
@@ -339,7 +341,7 @@ entry:
 define i32 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   ret i32 %3
 }
 
@@ -350,7 +352,7 @@ entry:
 define i32 @func0000000000000006(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   ret i32 %3
 }
 
@@ -362,7 +364,7 @@ entry:
 define i32 @func0000000000000003(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   ret i32 %3
 }
 

@@ -3,11 +3,6 @@ func0000000000000038:                   # @func0000000000000038
 	shlxq	%rdx, %rsi, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000000:                   # @func0000000000000000
-	shll	$3, %edx
-	shlxq	%rdx, %rsi, %rax
-	addq	%rdi, %rax
-	retq
 func0000000000000030:                   # @func0000000000000030
 	shll	$3, %edx
 	shlxq	%rdx, %rsi, %rax

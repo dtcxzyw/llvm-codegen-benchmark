@@ -1,5 +1,5 @@
 
-%"class.Catch::TestCaseHandle.2914091" = type { ptr, ptr }
+%"class.Catch::TestCaseHandle.3108139" = type { ptr, ptr }
 
 ; 7 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -10,11 +10,11 @@
 ; opencv/optimized/rgbe.cpp.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000003e(ptr %0, i64 %1, i64 %2) #0 {
+define i64 @func000000000000003f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = mul nuw nsw i64 %3, %1
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }
@@ -22,11 +22,11 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/StringUtils.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 2
-  %4 = mul i64 %3, %1
-  %5 = getelementptr nusw i64, ptr %0, i64 %4
+  %4 = mul i64 %1, %3
+  %5 = getelementptr nusw nuw i64, ptr %0, i64 %4
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }
@@ -37,8 +37,8 @@ entry:
 define i64 @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1
-  %4 = mul i64 %3, %1
-  %5 = getelementptr %"class.Catch::TestCaseHandle.2914091", ptr %0, i64 %4
+  %4 = mul i64 %1, %3
+  %5 = getelementptr %"class.Catch::TestCaseHandle.3108139", ptr %0, i64 %4
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }
@@ -49,7 +49,7 @@ entry:
 define i64 @func0000000000000016(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 1
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = getelementptr nusw float, ptr %0, i64 %4
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6

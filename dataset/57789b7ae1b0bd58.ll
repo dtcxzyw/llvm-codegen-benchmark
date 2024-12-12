@@ -12,8 +12,9 @@ entry:
   ret i1 %5
 }
 
-; 123 occurrences:
+; 127 occurrences:
 ; abc/optimized/llb1Hint.c.ll
+; abc/optimized/sfmDec.c.ll
 ; git/optimized/http.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
@@ -25,6 +26,7 @@ entry:
 ; graphviz/optimized/write.c.ll
 ; graphviz/optimized/xdot.c.ll
 ; icu/optimized/uregex.ll
+; jq/optimized/gb18030.ll
 ; libpng/optimized/pngerror.c.ll
 ; libpng/optimized/pngrutil.c.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
@@ -81,7 +83,6 @@ entry:
 ; llvm/optimized/ReplaceWithVeclib.cpp.ll
 ; llvm/optimized/RewriteStatepointsForGC.cpp.ll
 ; llvm/optimized/SemaAvailability.cpp.ll
-; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
 ; llvm/optimized/SemaConcept.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
@@ -127,6 +128,7 @@ entry:
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
 ; minetest/optimized/COpenGLDriver.cpp.ll
+; oniguruma/optimized/gb18030.ll
 ; openjdk/optimized/pngerror.ll
 ; openjdk/optimized/pngrutil.ll
 ; openusd/optimized/clipsAPI.cpp.ll
@@ -134,10 +136,12 @@ entry:
 ; openusd/optimized/schemaRegistry.cpp.ll
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/encoding.ll
-; ruby/optimized/regexec.ll
 ; wireshark/optimized/packet-obd-ii.c.ll
+; wireshark/optimized/packet-pn-ptcp.c.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -33
   %3 = add nsw i32 %2, -65

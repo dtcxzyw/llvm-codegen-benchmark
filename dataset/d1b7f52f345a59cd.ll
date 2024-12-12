@@ -1,5 +1,9 @@
 
-; 17 occurrences:
+; 21 occurrences:
+; boost/optimized/get_clusters.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; ipopt/optimized/IpTripletToCSRConverter.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
 ; llvm/optimized/CGProfile.cpp.ll
@@ -18,20 +22,22 @@
 ; openusd/optimized/meshUtil.cpp.ll
 ; openvdb/optimized/Prune.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000161(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv exact i64 %2, 12
   %4 = add nsw i64 %3, -2
   %5 = lshr exact i64 %4, 1
-  %6 = icmp eq i64 %5, %1
+  %6 = icmp eq i64 %1, %5
   %7 = select i1 %0, i1 %6, i1 false
   ret i1 %7
 }
 
-; 59 occurrences:
+; 61 occurrences:
 ; assimp/optimized/SGSpatialSort.cpp.ll
 ; assimp/optimized/SpatialSort.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/sort_by_side.ll
 ; faiss/optimized/IndexIVFFastScan.cpp.ll
 ; faiss/optimized/NNDescent.cpp.ll
 ; faiss/optimized/NSG.cpp.ll
@@ -89,12 +95,12 @@ entry:
 ; yosys/optimized/xaiger.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000141(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv exact i64 %2, 24
   %4 = add nsw i64 %3, -2
   %5 = lshr i64 %4, 1
-  %6 = icmp eq i64 %5, %1
+  %6 = icmp eq i64 %1, %5
   %7 = select i1 %0, i1 %6, i1 false
   ret i1 %7
 }

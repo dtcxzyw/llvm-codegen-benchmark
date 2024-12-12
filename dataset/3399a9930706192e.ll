@@ -1,13 +1,13 @@
 
-%"class.std::unique_ptr.41.2497319" = type { %"struct.std::__uniq_ptr_data.42.2497320" }
-%"struct.std::__uniq_ptr_data.42.2497320" = type { %"class.std::__uniq_ptr_impl.43.2497321" }
-%"class.std::__uniq_ptr_impl.43.2497321" = type { %"class.std::tuple.44.2497322" }
-%"class.std::tuple.44.2497322" = type { %"struct.std::_Tuple_impl.45.2497323" }
-%"struct.std::_Tuple_impl.45.2497323" = type { %"struct.std::_Head_base.48.2497324" }
-%"struct.std::_Head_base.48.2497324" = type { ptr }
-%struct.pmp_entry_t.2596713 = type { i64, i8 }
+%"class.std::unique_ptr.41.2612578" = type { %"struct.std::__uniq_ptr_data.42.2612579" }
+%"struct.std::__uniq_ptr_data.42.2612579" = type { %"class.std::__uniq_ptr_impl.43.2612580" }
+%"class.std::__uniq_ptr_impl.43.2612580" = type { %"class.std::tuple.44.2612581" }
+%"class.std::tuple.44.2612581" = type { %"struct.std::_Tuple_impl.45.2612582" }
+%"struct.std::_Tuple_impl.45.2612582" = type { %"struct.std::_Head_base.48.2612583" }
+%"struct.std::_Head_base.48.2612583" = type { ptr }
+%struct.pmp_entry_t.2710180 = type { i64, i8 }
 
-; 77 occurrences:
+; 78 occurrences:
 ; abc/optimized/amapMerge.c.ll
 ; abc/optimized/dauNpn2.c.ll
 ; abc/optimized/giaCof.c.ll
@@ -85,16 +85,17 @@
 ; regex-rs/optimized/1x04d8372kemp7hd.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; z3/optimized/small_object_allocator.cpp.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw [1 x i32], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [1 x i32], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
-; 121 occurrences:
+; 125 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/decompress.c.ll
 ; abc/optimized/giaCof.c.ll
@@ -216,12 +217,16 @@ entry:
 ; z3/optimized/mam.cpp.ll
 ; z3/optimized/q_mam.cpp.ll
 ; z3/optimized/sat_drat.cpp.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw [2 x %"class.std::unique_ptr.41.2497319"], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [2 x %"class.std::unique_ptr.41.2612578"], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -278,7 +283,7 @@ define ptr @func0000000000000004(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr [16 x %struct.pmp_entry_t.2596713], ptr %0, i64 0, i64 %4
+  %5 = getelementptr [16 x %struct.pmp_entry_t.2710180], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -290,40 +295,42 @@ entry:
 ; openjdk/optimized/shenandoahPhaseTimings.ll
 ; z3/optimized/polynomial.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw [316 x ptr], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [316 x ptr], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; jq/optimized/jv.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000013(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw [0 x i8], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [0 x i8], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
-; 8 occurrences:
+; 10 occurrences:
 ; cmake/optimized/archive_acl.c.ll
 ; darktable/optimized/introspection_colorchecker.c.ll
 ; icu/optimized/dtptngen.ll
+; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
+; meshlab/optimized/filter_trioptimize.cpp.ll
 ; opencv/optimized/scansegment.cpp.ll
 ; opencv/optimized/stereo_binary_bm.cpp.ll
 ; opencv/optimized/stereobm.cpp.ll
 ; openspiel/optimized/ultimate_tic_tac_toe.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw [49 x float], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [49 x float], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -335,11 +342,11 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw [256 x i16], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [256 x i16], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

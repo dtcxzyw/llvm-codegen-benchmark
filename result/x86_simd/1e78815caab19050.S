@@ -30,10 +30,3 @@ func0000000000000030:                   # @func0000000000000030
 	vpsubd	%ymm0, %ymm1, %ymm0
 	vpaddd	.LCPI4_0(%rip){1to8}, %ymm0, %ymm0
 	retq
-.LCPI5_0:
-	.long	2                               # 0x2
-func0000000000000040:                   # @func0000000000000040
-	vpaddd	%ymm2, %ymm1, %ymm1
-	vpsubd	%ymm0, %ymm1, %ymm0
-	vpaddd	.LCPI5_0(%rip){1to8}, %ymm0, %ymm0
-	retq

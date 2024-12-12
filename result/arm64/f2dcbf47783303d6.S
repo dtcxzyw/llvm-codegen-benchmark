@@ -1,48 +1,32 @@
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	sshll	v5.2d, v4.2s, #0
-	sshll2	v4.2d, v4.4s, #0
-	shl	v2.2d, v2.2d, #40
-	shl	v3.2d, v3.2d, #40
-	orr	v0.16b, v5.16b, v0.16b
-	orr	v1.16b, v4.16b, v1.16b
-	orr	v1.16b, v1.16b, v3.16b
-	orr	v0.16b, v0.16b, v2.16b
+                                        // kill: def $w2 killed $w2 def $x2
+	sxtw	x8, w2
+	orr	x8, x0, x8
+	orr	x0, x8, x1, lsl #40
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	sshll	v5.2d, v4.2s, #0
-	sshll2	v4.2d, v4.4s, #0
-	shl	v2.2d, v2.2d, #31
-	shl	v3.2d, v3.2d, #31
-	orr	v0.16b, v5.16b, v0.16b
-	orr	v1.16b, v4.16b, v1.16b
-	orr	v1.16b, v1.16b, v3.16b
-	orr	v0.16b, v0.16b, v2.16b
+                                        // kill: def $w2 killed $w2 def $x2
+	sxtw	x8, w2
+	orr	x8, x0, x8
+	orr	x0, x8, x1, lsl #31
 	ret
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	sshll	v5.2d, v4.2s, #0
-	sshll2	v4.2d, v4.4s, #0
-	shl	v0.2d, v0.2d, #8
-	shl	v1.2d, v1.2d, #8
-	orr	v2.16b, v5.16b, v2.16b
-	orr	v3.16b, v4.16b, v3.16b
-	orr	v1.16b, v1.16b, v3.16b
-	orr	v0.16b, v0.16b, v2.16b
+                                        // kill: def $w2 killed $w2 def $x2
+	sxtw	x8, w2
+	orr	x8, x1, x8
+	orr	x0, x8, x0, lsl #8
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	sshll	v5.2d, v4.2s, #0
-	sshll2	v4.2d, v4.4s, #0
-	shl	v2.2d, v2.2d, #42
-	shl	v3.2d, v3.2d, #42
-	orr	v0.16b, v5.16b, v0.16b
-	orr	v1.16b, v4.16b, v1.16b
-	orr	v1.16b, v1.16b, v3.16b
-	orr	v0.16b, v0.16b, v2.16b
+                                        // kill: def $w2 killed $w2 def $x2
+	sxtw	x8, w2
+	orr	x8, x0, x8
+	orr	x0, x8, x1, lsl #42
 	ret
                                         // -- End function

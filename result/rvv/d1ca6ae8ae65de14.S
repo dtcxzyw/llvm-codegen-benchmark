@@ -4,7 +4,7 @@ func000000000000000c:                   # @func000000000000000c
 	vmv.v.i	v8, 1
 	vzext.vf4	v8, v10, v0.t
 	ret
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf4	v12, v10
 	lui	a0, 13

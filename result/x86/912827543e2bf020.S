@@ -12,6 +12,13 @@ func0000000000000002:                   # @func0000000000000002
 	divl	%esi
 	leal	1(%rdx), %eax
 	retq
+func0000000000000003:                   # @func0000000000000003
+	movl	%edi, %eax
+	addl	$-2, %esi
+	xorl	%edx, %edx
+	divl	%esi
+	leal	1(%rdx), %eax
+	retq
 func000000000000000f:                   # @func000000000000000f
 	movl	%edi, %eax
 	incl	%esi
@@ -25,13 +32,6 @@ func000000000000000d:                   # @func000000000000000d
 	xorl	%edx, %edx
 	divl	%esi
 	leal	-1(%rdx), %eax
-	retq
-func0000000000000003:                   # @func0000000000000003
-	movl	%edi, %eax
-	decl	%esi
-	xorl	%edx, %edx
-	divl	%esi
-	leal	1(%rdx), %eax
 	retq
 func0000000000000007:                   # @func0000000000000007
 	movl	%edi, %eax

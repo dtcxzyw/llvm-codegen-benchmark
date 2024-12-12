@@ -24,7 +24,6 @@
 ; abseil-cpp/optimized/exponential_biased_test.cc.ll
 ; abseil-cpp/optimized/generate_real_test.cc.ll
 ; arrow/optimized/type.cc.ll
-; c3c/optimized/decltable.c.ll
 ; c3c/optimized/symtab.c.ll
 ; cpython/optimized/floatobject.ll
 ; csmith/optimized/Bookkeeper.cpp.ll
@@ -120,6 +119,7 @@
 ; openjdk/optimized/TransformHelper.ll
 ; openjdk/optimized/X11Color.ll
 ; openjdk/optimized/cmsgamma.ll
+; openjdk/optimized/cmslut.ll
 ; openjdk/optimized/cmsopt.ll
 ; openjdk/optimized/img_colors.ll
 ; openjdk/optimized/jfrAdaptiveSampler.ll
@@ -151,7 +151,6 @@
 ; slurm/optimized/salloc.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; stockfish/optimized/uci.ll
-; typst-rs/optimized/3z60jkym58xbhjyi.ll
 ; wireshark/optimized/file-gif.c.ll
 ; wireshark/optimized/packet-ansi_a.c.ll
 ; wireshark/optimized/packet-bthci_cmd.c.ll
@@ -170,6 +169,7 @@
 ; wireshark/optimized/packet-uftp4.c.ll
 ; wireshark/optimized/packet-uftp5.c.ll
 ; wireshark/optimized/packet-wisun.c.ll
+; yosys/optimized/mutate.ll
 ; yosys/optimized/sat.ll
 ; z3/optimized/sat_ddfw.cpp.ll
 ; Function Attrs: nounwind
@@ -180,7 +180,7 @@ entry:
   ret double %2
 }
 
-; 156 occurrences:
+; 146 occurrences:
 ; abc/optimized/cuddLCache.c.ll
 ; abc/optimized/cuddTable.c.ll
 ; abc/optimized/ioWriteBook.c.ll
@@ -189,7 +189,6 @@ entry:
 ; abc/optimized/satSolver3.c.ll
 ; abc/optimized/solver.c.ll
 ; abc/optimized/solver_api.c.ll
-; c3c/optimized/decltable.c.ll
 ; c3c/optimized/symtab.c.ll
 ; c3c/optimized/types.c.ll
 ; clamav/optimized/thrmgr.c.ll
@@ -247,7 +246,6 @@ entry:
 ; opencv/optimized/proposal_layer.cpp.ll
 ; opencv/optimized/smooth.dispatch.cpp.ll
 ; openjdk/optimized/cmsgmt.ll
-; openjdk/optimized/cmslut.ll
 ; openjdk/optimized/cmstypes.ll
 ; openjdk/optimized/deoptimization.ll
 ; openjdk/optimized/escape.ll
@@ -295,35 +293,28 @@ entry:
 ; verilator/optimized/V3ExecGraph.cpp.ll
 ; wireshark/optimized/capture_file_properties_dialog.cpp.ll
 ; wireshark/optimized/msg_rng_rsp.c.ll
-; wireshark/optimized/packet-asap.c.ll
 ; wireshark/optimized/packet-bluetooth.c.ll
 ; wireshark/optimized/packet-btavdtp.c.ll
 ; wireshark/optimized/packet-bthci_cmd.c.ll
 ; wireshark/optimized/packet-bthci_evt.c.ll
 ; wireshark/optimized/packet-btle.c.ll
 ; wireshark/optimized/packet-btmesh.c.ll
-; wireshark/optimized/packet-calcappprotocol.c.ll
 ; wireshark/optimized/packet-cipsafety.c.ll
 ; wireshark/optimized/packet-componentstatus.c.ll
 ; wireshark/optimized/packet-docsis-macmgmt.c.ll
 ; wireshark/optimized/packet-docsis-tlv.c.ll
-; wireshark/optimized/packet-enrp.c.ll
-; wireshark/optimized/packet-fractalgeneratorprotocol.c.ll
 ; wireshark/optimized/packet-ftp.c.ll
 ; wireshark/optimized/packet-hdfsdata.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-ipdc.c.ll
 ; wireshark/optimized/packet-isi.c.ll
-; wireshark/optimized/packet-its.c.ll
 ; wireshark/optimized/packet-lpp.c.ll
 ; wireshark/optimized/packet-metamako.c.ll
 ; wireshark/optimized/packet-netperfmeter.c.ll
 ; wireshark/optimized/packet-nr-rrc.c.ll
-; wireshark/optimized/packet-pingpongprotocol.c.ll
 ; wireshark/optimized/packet-rtcp.c.ll
 ; wireshark/optimized/packet-rtp-ed137.c.ll
 ; wireshark/optimized/packet-rtps.c.ll
-; wireshark/optimized/packet-scriptingservice.c.ll
 ; wireshark/optimized/packet-stanag4607.c.ll
 ; wireshark/optimized/packet-ulp.c.ll
 ; wireshark/optimized/packet-vrt.c.ll
@@ -334,7 +325,6 @@ entry:
 ; wireshark/optimized/tap-icmpv6stat.c.ll
 ; wireshark/optimized/tap-rtd.c.ll
 ; wireshark/optimized/tcp_stream_dialog.cpp.ll
-; wireshark/optimized/wimax_utils.c.ll
 ; xgboost/optimized/cpu_predictor.cc.ll
 ; z3/optimized/aig_tactic.cpp.ll
 ; Function Attrs: nounwind

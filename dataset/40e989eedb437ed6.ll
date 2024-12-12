@@ -28,27 +28,13 @@ entry:
   ret i8 %5
 }
 
-; 3 occurrences:
-; openmpi/optimized/hb_tree.ll
+; 1 occurrences:
 ; qemu/optimized/target_riscv_translate.c.ll
-; qemu/optimized/util_qtree.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000018(i8 %0, i8 %1, i8 %2) #0 {
 entry:
-  %3 = icmp slt i8 %2, 0
+  %3 = icmp slt i8 %2, 1
   %4 = select i1 %3, i8 1, i8 %1
-  %5 = add i8 %4, %0
-  ret i8 %5
-}
-
-; 2 occurrences:
-; openmpi/optimized/hb_tree.ll
-; qemu/optimized/util_qtree.c.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000028(i8 %0, i8 %1, i8 %2) #0 {
-entry:
-  %3 = icmp sgt i8 %2, 0
-  %4 = select i1 %3, i8 -1, i8 %1
   %5 = add i8 %4, %0
   ret i8 %5
 }
@@ -72,7 +58,7 @@ define i8 @func0000000000000004(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, i8 0, i8 %1
-  %5 = add i8 %4, %0
+  %5 = add i8 %0, %4
   ret i8 %5
 }
 

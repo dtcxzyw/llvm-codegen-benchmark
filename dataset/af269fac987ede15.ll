@@ -12,11 +12,11 @@
 ; openssl/optimized/libssl-shlib-t1_trce.ll
 ; openssl/optimized/tls13ccstest-bin-tls13ccstest.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func00000000000000c1(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = or disjoint i64 %3, %1
-  %5 = icmp eq i64 %4, %0
+  %4 = or disjoint i64 %1, %3
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
@@ -27,7 +27,7 @@ entry:
 define i1 @func0000000000000006(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = sub i64 %0, %4
   %6 = icmp slt i64 %5, 0
   ret i1 %6
@@ -40,7 +40,7 @@ entry:
 define i1 @func000000000000000a(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = sub i64 %0, %4
   %6 = icmp sgt i64 %5, 0
   ret i1 %6
@@ -55,10 +55,10 @@ entry:
 ; openssl/optimized/libssl-shlib-statem_clnt.ll
 ; openssl/optimized/libssl-shlib-statem_srvr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func00000000000000c4(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = sub nuw i64 %0, %4
   %6 = icmp ult i64 %5, 2
   ret i1 %6
@@ -68,10 +68,10 @@ entry:
 ; git/optimized/pack-bitmap.ll
 ; libquic/optimized/dtls_record.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = sub i64 %0, %4
   %6 = icmp ult i64 %5, 6
   ret i1 %6
@@ -80,10 +80,10 @@ entry:
 ; 1 occurrences:
 ; lief/optimized/nist_kw.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = sub nsw i64 %0, %4
   %6 = icmp ugt i64 %5, 7
   ret i1 %6
@@ -94,10 +94,10 @@ entry:
 ; libzmq/optimized/mechanism.cpp.ll
 ; lief/optimized/ssl_msg.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func00000000000000c8(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = sub nuw i64 %0, %4
   %6 = icmp ugt i64 %5, 63
   ret i1 %6
@@ -106,10 +106,10 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/vwr.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = sub nuw nsw i64 %0, %4
   %6 = icmp ugt i64 %5, 268435456
   ret i1 %6

@@ -1,4 +1,4 @@
-func0000000000000c41:                   # @func0000000000000c41
+func0000000000003081:                   # @func0000000000003081
 	testl	%edx, %edx
 	setne	%al
 	cmpq	$65535, %rsi                    # imm = 0xFFFF

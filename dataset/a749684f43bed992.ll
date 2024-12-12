@@ -1,5 +1,5 @@
 
-; 48 occurrences:
+; 47 occurrences:
 ; abseil-cpp/optimized/unordered_map_test.cc.ll
 ; abseil-cpp/optimized/unordered_set_test.cc.ll
 ; arrow/optimized/key_value_metadata.cc.ll
@@ -25,7 +25,6 @@
 ; luau/optimized/DataFlowGraph.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; meshlab/optimized/mesh_graph.cpp.ll
-; minetest/optimized/mt_opengl_loader.cpp.ll
 ; nlohmann_json/optimized/unit-conversions.cpp.ll
 ; node/optimized/libnode.node_builtins.ll
 ; opencv/optimized/calibinit.cpp.ll

@@ -1,9 +1,11 @@
 
-; 19 occurrences:
+; 21 occurrences:
 ; abc/optimized/giaIf.c.ll
 ; abc/optimized/ifDec07.c.ll
 ; abseil-cpp/optimized/charconv.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; lightgbm/optimized/parser.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
@@ -28,7 +30,9 @@ entry:
   ret i64 %4
 }
 
-; 14 occurrences:
+; 16 occurrences:
+; boost/optimized/process_id.ll
+; boost/optimized/thread_id.ll
 ; clamav/optimized/lzwdec.c.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; icu/optimized/utrace.ll

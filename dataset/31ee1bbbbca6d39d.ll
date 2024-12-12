@@ -5,7 +5,7 @@
 ; llvm/optimized/MCPseudoProbe.cpp.ll
 ; openusd/optimized/textFileFormat.lex.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = icmp eq i64 %0, 0

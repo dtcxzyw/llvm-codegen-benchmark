@@ -8,7 +8,7 @@
 ; mitsuba3/optimized/linearcurve.cpp.ll
 ; qemu/optimized/audio_audio.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000061(i32 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 3
   %3 = icmp eq i32 %0, 1
@@ -23,7 +23,7 @@ entry:
 ; slurm/optimized/backfill.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 24
   %3 = icmp eq i32 %0, 0
@@ -46,7 +46,7 @@ entry:
 ; linux/optimized/build_policy.ll
 ; linux/optimized/sock.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000036(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000066(i32 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 1000
   %3 = icmp slt i32 %0, 0

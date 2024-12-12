@@ -21,12 +21,11 @@ entry:
   ret i32 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; abc/optimized/cbaCom.c.ll
 ; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/giaSupps.c.ll
 ; darktable/optimized/darktable.c.ll
-; openblas/optimized/dorcsd.c.ll
 ; opencv/optimized/stereosgbm.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i32 %1, double %2) #0 {

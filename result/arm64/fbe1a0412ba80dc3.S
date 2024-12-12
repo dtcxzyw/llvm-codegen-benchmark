@@ -1,48 +1,36 @@
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	mla	v1.4s, v3.4s, v5.4s
-	mla	v0.4s, v2.4s, v4.4s
-	sshr	v0.4s, v0.4s, #12
-	sshr	v1.4s, v1.4s, #12
+	madd	w8, w1, w2, w0
+	asr	w0, w8, #12
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	mla	v1.4s, v3.4s, v5.4s
-	mla	v0.4s, v2.4s, v4.4s
-	sshr	v0.4s, v0.4s, #15
-	sshr	v1.4s, v1.4s, #15
+	madd	w8, w1, w2, w0
+	asr	w0, w8, #15
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	mla	v1.4s, v3.4s, v5.4s
-	mla	v0.4s, v2.4s, v4.4s
-	sshr	v0.4s, v0.4s, #16
-	sshr	v1.4s, v1.4s, #16
+	madd	w8, w1, w2, w0
+	asr	w0, w8, #16
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	mla	v1.4s, v3.4s, v5.4s
-	mla	v0.4s, v2.4s, v4.4s
-	sshr	v0.4s, v0.4s, #1
-	sshr	v1.4s, v1.4s, #1
+	madd	w8, w1, w2, w0
+	asr	w0, w8, #18
 	ret
                                         // -- End function
 func000000000000001a:                   // @func000000000000001a
 // %bb.0:                               // %entry
-	mla	v1.4s, v3.4s, v5.4s
-	mla	v0.4s, v2.4s, v4.4s
-	sshr	v0.4s, v0.4s, #6
-	sshr	v1.4s, v1.4s, #6
+	madd	w8, w1, w2, w0
+	asr	w0, w8, #6
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	mla	v1.4s, v3.4s, v5.4s
-	mla	v0.4s, v2.4s, v4.4s
-	sshr	v0.4s, v0.4s, #10
-	sshr	v1.4s, v1.4s, #10
+	madd	w8, w1, w2, w0
+	asr	w0, w8, #10
 	ret
                                         // -- End function

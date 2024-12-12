@@ -41,3 +41,9 @@ func0000000000000004:                   # @func0000000000000004
 	andb	$1, %dil
 	orb	%dil, %al
 	retq
+func0000000000000060:                   # @func0000000000000060
+	shrq	$32, %rsi
+	setne	%al
+	andb	$1, %dil
+	orb	%dil, %al
+	retq

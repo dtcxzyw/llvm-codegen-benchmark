@@ -44,11 +44,6 @@ func000000000000002e:                   # @func000000000000002e
 	andq	$-4, %rax
 	addq	$4, %rax
 	retq
-func000000000000004f:                   # @func000000000000004f
-	incq	%rdi
-	shrq	$6, %rdi
-	leaq	8(,%rdi,8), %rax
-	retq
 func0000000000000068:                   # @func0000000000000068
 	leaq	2(%rdi,%rdi), %rcx
 	andq	$-4, %rcx

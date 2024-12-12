@@ -1,10 +1,9 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; cpython/optimized/dtoa.ll
 ; hermes/optimized/dtoa.c.ll
 ; jq/optimized/jv_dtoa.ll
 ; libquic/optimized/dtoa.cc.ll
-; linux/optimized/gen8_engine_cs.ll
 ; openjdk/optimized/countbitsnode.ll
 ; php/optimized/zend_strtod.ll
 ; ruby/optimized/util.ll
@@ -20,7 +19,8 @@ entry:
   ret i32 %5
 }
 
-; 23 occurrences:
+; 24 occurrences:
+; boost/optimized/ipc_reliable_message_queue.ll
 ; cpython/optimized/compile.ll
 ; cpython/optimized/dtoa.ll
 ; eastl/optimized/TestBitset.cpp.ll
@@ -84,6 +84,18 @@ entry:
   %2 = icmp ugt i32 %1, 65535
   %3 = select i1 %2, i32 16, i32 0
   %4 = or disjoint i32 %3, 8
+  %5 = select i1 %0, i32 %4, i32 %3
+  ret i32 %5
+}
+
+; 1 occurrences:
+; linux/optimized/gen8_engine_cs.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000029(i1 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 3142
+  %3 = select i1 %2, i32 403968161, i32 269750433
+  %4 = or disjoint i32 %3, 8192
   %5 = select i1 %0, i32 %4, i32 %3
   ret i32 %5
 }

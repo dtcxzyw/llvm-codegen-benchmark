@@ -1,7 +1,6 @@
 
-; 44 occurrences:
+; 43 occurrences:
 ; abc/optimized/giaMan.c.ll
-; abc/optimized/mapperCore.c.ll
 ; abc/optimized/mfsMan.c.ll
 ; abc/optimized/sclBufSize.c.ll
 ; abc/optimized/sclDnsize.c.ll

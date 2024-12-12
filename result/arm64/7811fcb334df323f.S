@@ -1,7 +1,7 @@
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
 	mvn	w8, w1
-	add	w8, w8, w2
+	add	w8, w2, w8
 	add	x0, x0, w8, uxtw #2
 	ret
                                         // -- End function

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; rocksdb/optimized/backup_engine.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000108(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
   %4 = sub i64 %0, %3
@@ -15,7 +15,7 @@ entry:
 ; wasmedge/optimized/proxy.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000124(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
   %4 = sub nsw i64 %0, %3
@@ -28,7 +28,7 @@ entry:
 ; protobuf/optimized/generated_enum_util.cc.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000001a4(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 48
   %4 = sub nsw i64 %0, %3
@@ -40,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/trackerKCF.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000128(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = sub nsw i64 %0, %3

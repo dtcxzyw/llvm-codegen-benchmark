@@ -38,7 +38,8 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; hwloc/optimized/topology-synthetic.ll
 ; llvm/optimized/Expr.cpp.ll
 ; opencv/optimized/seam_finders.cpp.ll
 ; postgres/optimized/proc.ll

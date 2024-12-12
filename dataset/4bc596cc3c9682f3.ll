@@ -9,7 +9,6 @@
 ; git/optimized/notes-merge.ll
 ; git/optimized/read-cache.ll
 ; graphviz/optimized/hedges.c.ll
-; gromacs/optimized/eigensolver.cpp.ll
 ; gromacs/optimized/expanded.cpp.ll
 ; gromacs/optimized/gmx_nmr.cpp.ll
 ; gromacs/optimized/matio.cpp.ll
@@ -19,6 +18,8 @@
 ; libquic/optimized/histogram.cc.ll
 ; libquic/optimized/x509name.c.ll
 ; libwebp/optimized/backward_references_enc.c.ll
+; lvgl/optimized/lv_animimage.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshoptimizer/optimized/simplifier.cpp.ll
 ; minetest/optimized/guiTable.cpp.ll
@@ -37,7 +38,6 @@
 ; oiio/optimized/imagebufalgo_compare.cpp.ll
 ; oiio/optimized/imageinput.cpp.ll
 ; openblas/optimized/dbbcsd.c.ll
-; openblas/optimized/dgeqp3.c.ll
 ; opencv/optimized/KAZEFeatures.cpp.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; opencv/optimized/beblid.cpp.ll
@@ -77,7 +77,7 @@
 ; zxing/optimized/PDFBoundingBox.cpp.ll
 ; zxing/optimized/TextDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = icmp slt i32 %0, %1
@@ -99,7 +99,7 @@ entry:
   ret i32 %4
 }
 
-; 87 occurrences:
+; 86 occurrences:
 ; abc/optimized/abcAuto.c.ll
 ; abc/optimized/abcBlifMv.c.ll
 ; abc/optimized/abcCas.c.ll
@@ -181,14 +181,13 @@ entry:
 ; openssl/optimized/libcrypto-shlib-bss_mem.ll
 ; openssl/optimized/libcrypto-shlib-dso_dlfcn.ll
 ; openusd/optimized/stbImage.cpp.ll
-; postgres/optimized/float.ll
 ; raylib/optimized/rtextures.c.ll
 ; recastnavigation/optimized/RecastArea.cpp.ll
 ; stb/optimized/stb_hexwave.c.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; stb/optimized/stb_sprintf.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i32 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = icmp sgt i32 %1, %0
@@ -204,7 +203,7 @@ entry:
 ; openssl/optimized/ca_internals_test-bin-apps.ll
 ; openssl/optimized/libapps-lib-apps.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000003a(i32 %0, i32 %1) #0 {
+define i32 @func000000000000006a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = icmp sgt i32 %0, %1
@@ -230,7 +229,7 @@ entry:
   ret i32 %4
 }
 
-; 22 occurrences:
+; 25 occurrences:
 ; clamav/optimized/cvd.c.ll
 ; clamav/optimized/readdb.c.ll
 ; cmake/optimized/zdict.c.ll
@@ -245,6 +244,9 @@ entry:
 ; hwloc/optimized/bitmap.ll
 ; linux/optimized/hda_codec.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
+; lvgl/optimized/lv_dropdown.ll
+; lvgl/optimized/lv_roller.ll
+; lvgl/optimized/lv_tabview.ll
 ; minetest/optimized/CGUISpriteBank.cpp.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/hb-ot-var.ll
@@ -267,7 +269,7 @@ entry:
 ; c3c/optimized/sema_initializers.c.ll
 ; libwebp/optimized/vp8l_dec.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000036(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000066(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = icmp slt i32 %1, %0
@@ -275,9 +277,10 @@ entry:
   ret i32 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; cpython/optimized/compile.ll
 ; draco/optimized/symbol_encoding.cc.ll
+; lvgl/optimized/lv_roller.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; qemu/optimized/cpu-common.c.ll
@@ -296,7 +299,7 @@ entry:
 ; libuv/optimized/linux.c.ll
 ; node/optimized/linux.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000064(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = icmp ult i32 %1, %0
@@ -307,7 +310,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/klass.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000068(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = icmp ugt i32 %0, %1
@@ -315,19 +318,16 @@ entry:
   ret i32 %4
 }
 
-; 10 occurrences:
+; 7 occurrences:
 ; flac/optimized/stream_encoder.c.ll
 ; freetype/optimized/truetype.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
-; icu/optimized/ucptrie.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/hb-ot-var.ll
-; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
-; wireshark/optimized/tvbuff.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = icmp ult i32 %0, %1
@@ -335,12 +335,13 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; linux/optimized/vt.ll
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
+; lvgl/optimized/lv_table.ll
 ; openjdk/optimized/cmsnamed.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = icmp ugt i32 %1, %0
@@ -356,12 +357,25 @@ entry:
 ; linux/optimized/deftree.ll
 ; zlib/optimized/trees.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000037(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000067(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %.not = icmp sgt i32 %0, %1
   %3 = select i1 %.not, i32 %2, i32 %0
   ret i32 %3
+}
+
+; 3 occurrences:
+; icu/optimized/ucptrie.ll
+; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
+; wireshark/optimized/tvbuff.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, -1
+  %3 = icmp samesign ult i32 %0, %1
+  %4 = select i1 %3, i32 %0, i32 %2
+  ret i32 %4
 }
 
 ; 1 occurrences:
@@ -378,7 +392,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/extents.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000028(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000048(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 1
   %3 = icmp ugt i32 %0, %1
@@ -389,7 +403,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/bgfg_gaussmix2.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i32 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %.not = icmp eq i32 %0, %1

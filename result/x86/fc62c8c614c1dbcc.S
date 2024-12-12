@@ -10,7 +10,7 @@ func0000000000000000:                   # @func0000000000000000
 	movl	%edi, %ecx
 	leaq	12(%rax,%rcx,4), %rax
 	retq
-func00000000000001ca:                   # @func00000000000001ca
+func00000000000001ef:                   # @func00000000000001ef
 	leaq	(%rdx,%rdx,4), %rax
 	leaq	(%rsi,%rax,4), %rax
 	movl	%edi, %ecx

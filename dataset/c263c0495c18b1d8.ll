@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; minetest/optimized/CColorConverter.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000196(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000326(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 1
   %3 = select i1 %2, i32 7, i32 %0
@@ -22,7 +22,7 @@ entry:
 ; verilator/optimized/V3VariableOrder.cpp.ll
 ; zxing/optimized/Content.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000041(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000081(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 63
   %3 = select i1 %2, i32 0, i32 %0
@@ -35,7 +35,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/quadRefinement.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000051(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000a1(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i32 3, i32 %0

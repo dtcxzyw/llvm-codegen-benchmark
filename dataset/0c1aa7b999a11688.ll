@@ -3,6 +3,7 @@
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; abc/optimized/bdcDec.c.ll
+; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/fraClaus.c.ll
 ; abc/optimized/giaEra2.c.ll
 ; abc/optimized/ivyMulti.c.ll
@@ -16,7 +17,6 @@
 ; darktable/optimized/PentaxDecompressor.cpp.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; hyperscan/optimized/program_runtime.c.ll
-; linux/optimized/disk-events.ll
 ; linux/optimized/dquot.ll
 ; linux/optimized/i915_vma.ll
 ; linux/optimized/intel_display.ll
@@ -44,8 +44,8 @@
 define i1 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = and i32 %3, %1
-  %5 = and i32 %4, %0
+  %4 = and i32 %1, %3
+  %5 = and i32 %0, %4
   %6 = icmp eq i32 %5, 0
   ret i1 %6
 }
@@ -59,7 +59,7 @@ entry:
 define i1 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = and i32 %4, %0
   %6 = icmp ne i32 %5, 0
   ret i1 %6

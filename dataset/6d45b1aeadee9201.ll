@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; folly/optimized/IOBuf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 1025
   %4 = icmp eq i32 %1, 0
@@ -25,7 +25,7 @@ entry:
 ; openjdk/optimized/serialStringDedup.ll
 ; openjdk/optimized/shenandoahMark.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 2
   %4 = icmp eq i32 %1, 2
@@ -51,7 +51,7 @@ entry:
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; velox/optimized/SimpleComparisonMatcher.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000c1(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %2, 0
   %4 = icmp eq i32 %1, 0
@@ -83,7 +83,7 @@ entry:
 ; llvm/optimized/VectorCombine.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000141(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %2, 1
   %4 = icmp eq i32 %1, 3
@@ -96,7 +96,7 @@ entry:
 ; llvm/optimized/PPC.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000181(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 1
   %4 = icmp eq i32 %1, 0
@@ -107,7 +107,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/collationbuilder.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000104(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, 72057594037927935
   %4 = icmp ult i32 %1, -1073741824

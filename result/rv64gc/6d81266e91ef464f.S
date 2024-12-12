@@ -21,6 +21,13 @@ func000000000000000d:                   # @func000000000000000d
 	slli	a0, a0, 32
 	or	a0, a0, a1
 	ret
+func0000000000000057:                   # @func0000000000000057
+	sraiw	a1, a1, 31
+	srli	a1, a1, 56
+	slli	a1, a1, 56
+	slli	a0, a0, 24
+	or	a0, a0, a1
+	ret
 func000000000000000f:                   # @func000000000000000f
 	sext.w	a1, a1
 	snez	a1, a1

@@ -1,7 +1,6 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; linux/optimized/cgroup.ll
-; linux/optimized/he.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/vht.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
@@ -11,7 +10,7 @@ entry:
   %2 = shl nuw nsw i32 1, %1
   %3 = trunc i32 %2 to i16
   %4 = xor i16 %3, -1
-  %5 = and i16 %4, %0
+  %5 = and i16 %0, %4
   ret i16 %5
 }
 
@@ -28,7 +27,7 @@ entry:
   %2 = shl nuw nsw i32 1, %1
   %3 = trunc nuw i32 %2 to i16
   %4 = xor i16 %3, -1
-  %5 = and i16 %4, %0
+  %5 = and i16 %0, %4
   ret i16 %5
 }
 
@@ -40,14 +39,13 @@ entry:
   %2 = shl nsw i32 -1, %1
   %3 = trunc nsw i32 %2 to i16
   %4 = xor i16 %3, -1
-  %5 = and i16 %4, %0
+  %5 = and i16 %0, %4
   ret i16 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; linux/optimized/ata_piix.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/TargetLoweringBase.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
@@ -56,17 +54,16 @@ entry:
   %2 = shl i32 15, %1
   %3 = trunc i32 %2 to i16
   %4 = xor i16 %3, -1
-  %5 = and i16 %4, %0
+  %5 = and i16 %0, %4
   ret i16 %5
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; eastl/optimized/TestBitVector.cpp.ll
 ; icu/optimized/ucnv2022.ll
 ; linux/optimized/ahci.ll
 ; linux/optimized/mprotect.ll
 ; linux/optimized/nl80211.ll
-; linux/optimized/pkeys.ll
 ; llvm/optimized/Function.cpp.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000008(i16 %0, i32 %1) #0 {
@@ -74,7 +71,7 @@ entry:
   %2 = shl nuw i32 1, %1
   %3 = trunc i32 %2 to i16
   %4 = xor i16 %3, -1
-  %5 = and i16 %4, %0
+  %5 = and i16 %0, %4
   ret i16 %5
 }
 
@@ -86,7 +83,7 @@ entry:
   %2 = shl nuw nsw i32 8, %1
   %3 = trunc nuw nsw i32 %2 to i16
   %4 = xor i16 %3, -1
-  %5 = and i16 %4, %0
+  %5 = and i16 %0, %4
   ret i16 %5
 }
 

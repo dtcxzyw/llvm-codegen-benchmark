@@ -1,5 +1,7 @@
 
-; 44 occurrences:
+; 46 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/kinsol.c.ll
 ; gromacs/optimized/colvarbias_restraint.cpp.ll
@@ -49,7 +51,7 @@ define double @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %1, %2
   %4 = fmul double %3, 5.000000e-01
-  %5 = fmul double %4, %0
+  %5 = fmul double %0, %4
   ret double %5
 }
 

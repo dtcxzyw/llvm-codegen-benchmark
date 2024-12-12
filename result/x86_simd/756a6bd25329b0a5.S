@@ -14,6 +14,6 @@ func0000000000000005:                   # @func0000000000000005
 	vptestnmq	.LCPI1_0(%rip){1to4}, %ymm1, %k1
 	vpmovqd	%ymm1, %xmm1
 	vpbroadcastd	.LCPI1_1(%rip), %xmm1 {%k1} # xmm1 {%k1} = [1,1,1,1]
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq

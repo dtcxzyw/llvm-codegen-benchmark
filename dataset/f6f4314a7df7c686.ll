@@ -11,17 +11,18 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/src.ll
 ; libquic/optimized/tcp_cubic_sender_packets.cc.ll
 ; postgres/optimized/d2s.ll
 ; postgres/optimized/d2s_shlib.ll
 ; postgres/optimized/d2s_srv.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
-  %2 = udiv i64 %1, 1460
-  %3 = udiv i64 %0, 1460
-  %4 = icmp ugt i64 %3, %2
+  %2 = udiv i64 %1, 100
+  %3 = udiv i64 %0, 100
+  %4 = icmp samesign ugt i64 %3, %2
   ret i1 %4
 }
 

@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/accel_tcg_translate-all.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i64 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 1
   %4 = icmp eq i64 %1, -1
@@ -22,13 +22,14 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; eastl/optimized/EASprintfCore.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i64 %1, i32 %2) #0 {
+define i32 @func0000000000000034(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 48
-  %4 = icmp ult i64 %1, 10
+  %4 = icmp samesign ult i64 %1, 10
   %5 = select i1 %4, i32 %3, i32 %0
   ret i32 %5
 }

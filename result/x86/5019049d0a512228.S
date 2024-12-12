@@ -16,6 +16,6 @@ func0000000000000003:                   # @func0000000000000003
 func0000000000000000:                   # @func0000000000000000
 	negq	%rsi
 	testb	$1, %dil
-	movq	$-16384, %rax                   # imm = 0xC000
+	movq	$-128, %rax
 	cmoveq	%rsi, %rax
 	retq

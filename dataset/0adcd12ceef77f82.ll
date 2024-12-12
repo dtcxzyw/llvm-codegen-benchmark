@@ -1,5 +1,5 @@
 
-; 69 occurrences:
+; 67 occurrences:
 ; abc/optimized/extraUtilTruth.c.ll
 ; abc/optimized/giaSatLE.c.ll
 ; abc/optimized/ifDsd.c.ll
@@ -26,7 +26,6 @@
 ; libwebp/optimized/near_lossless_enc.c.ll
 ; libwebp/optimized/predictor_enc.c.ll
 ; linux/optimized/intel_engine_cs.ll
-; linux/optimized/nfs3xdr.ll
 ; llvm/optimized/DeclCXX.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -49,7 +48,6 @@
 ; openusd/optimized/stbImage.cpp.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
 ; php/optimized/zend_jit.ll
-; postgres/optimized/trigger.ll
 ; protobuf/optimized/descriptor.pb.cc.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; qemu/optimized/hw_usb_dev-smartcard-reader.c.ll
@@ -74,7 +72,7 @@ define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 5
   %4 = and i32 %3, 1
-  %5 = add nuw nsw i32 %4, %1
+  %5 = add nuw nsw i32 %1, %4
   %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
@@ -91,7 +89,7 @@ define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 3
   %4 = and i32 %3, 7
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = add nsw i32 %5, %0
   ret i32 %6
 }
@@ -103,7 +101,7 @@ define i32 @func000000000000000d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 7
   %4 = and i32 %3, 7
-  %5 = add nuw nsw i32 %4, %1
+  %5 = add nuw nsw i32 %1, %4
   %6 = add nsw i32 %5, %0
   ret i32 %6
 }
@@ -160,7 +158,7 @@ define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 2
   %4 = and i32 %3, 1
-  %5 = add nuw nsw i32 %4, %1
+  %5 = add nuw nsw i32 %1, %4
   %6 = add i32 %5, %0
   ret i32 %6
 }
@@ -185,7 +183,7 @@ entry:
   %3 = lshr i32 %2, 2
   %4 = and i32 %3, 1
   %5 = add i32 %4, %1
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 

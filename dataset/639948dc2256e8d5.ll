@@ -12,7 +12,7 @@ define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %reass.add = shl nsw i64 %2, 1
-  %3 = add i64 %reass.add, %0
+  %3 = add i64 %0, %reass.add
   ret i64 %3
 }
 
@@ -23,7 +23,7 @@ define i64 @func0000000000000005(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %reass.add = shl nsw i64 %2, 1
-  %3 = add i64 %reass.add, %0
+  %3 = add i64 %0, %reass.add
   ret i64 %3
 }
 

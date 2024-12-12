@@ -43,10 +43,6 @@ func00000000000000bf:                   # @func00000000000000bf
 	shlq	$32, %rax
 	orq	%rdi, %rax
 	retq
-func0000000000000017:                   # @func0000000000000017
-	addl	%esi, %edx
-	leaq	(%rdi,%rdx,4), %rax
-	retq
 func000000000000005f:                   # @func000000000000005f
 	leal	(%rdx,%rsi), %eax
 	shlq	$32, %rax

@@ -9,7 +9,7 @@ func0000000000000007:                   # @func0000000000000007
 	andl	$-2, %edx
 	cmpl	$2, %edx
 	cmovnel	%esi, %edx
-	leal	64(%rdx,%rdi), %eax
+	leal	64(%rdi,%rdx), %eax
 	retq
 func0000000000000005:                   # @func0000000000000005
 	movl	%edx, %eax

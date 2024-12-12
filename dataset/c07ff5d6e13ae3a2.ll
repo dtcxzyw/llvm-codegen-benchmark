@@ -20,7 +20,8 @@ entry:
   ret i64 %6
 }
 
-; 227 occurrences:
+; 228 occurrences:
+; boost/optimized/text_file_backend.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
 ; fmt/optimized/format.cc.ll

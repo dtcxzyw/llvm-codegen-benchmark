@@ -1,5 +1,5 @@
 
-; 94 occurrences:
+; 98 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; cpython/optimized/compile.ll
 ; darktable/optimized/export.c.ll
@@ -43,7 +43,6 @@
 ; openusd/optimized/parserHelpers.cpp.ll
 ; openusd/optimized/value.cpp.ll
 ; php/optimized/zend_hash.ll
-; postgres/optimized/spgutils.ll
 ; qemu/optimized/net_stream.c.ll
 ; quickjs/optimized/quickjs.ll
 ; redis/optimized/rdb.ll
@@ -94,6 +93,11 @@
 ; velox/optimized/VectorFuzzer.cpp.ll
 ; yosys/optimized/const2ast.ll
 ; z3/optimized/mpz.cpp.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/eldybx25av55fm0jlf5yq64qn.ll
+; zed-rs/optimized/exy3mxytk4j1w94j908qbhdez.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i64 %1) #0 {
 entry:
@@ -102,13 +106,14 @@ entry:
   ret i32 %3
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; clamav/optimized/scanners.c.ll
 ; cpython/optimized/myreadline.ll
 ; grpc/optimized/hpack_parser.cc.ll
 ; linux/optimized/intel_dp_aux.ll
 ; lz4/optimized/lz4hc.c.ll
 ; openssl/optimized/openssl-bin-passwd.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i1 %0, i64 %1) #0 {
 entry:
@@ -138,8 +143,8 @@ entry:
 }
 
 ; 2 occurrences:
+; boost/optimized/area.ll
 ; linux/optimized/direct-io.ll
-; openblas/optimized/dgemv_n.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:

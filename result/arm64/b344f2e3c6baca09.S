@@ -1,54 +1,36 @@
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
-	movi	v2.4s, #36
-	uaddw	v0.4s, v0.4s, v1.4h
-	add	v0.4s, v0.4s, v2.4s
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
+	add	w8, w0, w1, uxth
+	add	w0, w8, #36
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	movi	v2.4s, #10
-	uaddw	v0.4s, v0.4s, v1.4h
-	add	v0.4s, v0.4s, v2.4s
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
+	add	w8, w0, w1, uxth
+	add	w0, w8, #10
 	ret
                                         // -- End function
 func0000000000000020:                   // @func0000000000000020
 // %bb.0:                               // %entry
-	movi	v2.2d, #0xffffffffffffffff
-	uaddw	v0.4s, v0.4s, v1.4h
-	add	v0.4s, v0.4s, v2.4s
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
+	add	w8, w0, w1, uxth
+	sub	w0, w8, #1
 	ret
                                         // -- End function
 func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
-	mvni	v2.4s, #47
-	uaddw	v0.4s, v0.4s, v1.4h
-	add	v0.4s, v0.4s, v2.4s
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
+	add	w8, w0, w1, uxth
+	sub	w0, w8, #48
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	movi	v2.2d, #0xffffffffffffffff
-	uaddw	v0.4s, v0.4s, v1.4h
-	add	v0.4s, v0.4s, v2.4s
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
+	add	w8, w0, w1, uxth
+	sub	w0, w8, #1
 	ret
                                         // -- End function
 func000000000000003b:                   // @func000000000000003b
 // %bb.0:                               // %entry
-	mvni	v2.4s, #7
-	uaddw	v0.4s, v0.4s, v1.4h
-	add	v0.4s, v0.4s, v2.4s
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
+	add	w8, w0, w1, uxth
+	sub	w0, w8, #8
 	ret
                                         // -- End function

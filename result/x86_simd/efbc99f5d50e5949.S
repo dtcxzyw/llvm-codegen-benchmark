@@ -35,13 +35,13 @@ func0000000000000050:                   # @func0000000000000050
 	vpbroadcastd	.LCPI2_0(%rip), %ymm0   # ymm0 = [1,1,1,1,1,1,1,1]
 	vpcmpgtd	%ymm0, %ymm2, %ymm0
 	vpsrld	$31, %ymm0, %ymm0
-	vpor	%ymm1, %ymm0, %ymm0
+	vpor	%ymm0, %ymm1, %ymm0
 	vpord	.LCPI2_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	retq
 .LCPI3_0:
 	.long	1                               # 0x1
 .LCPI3_1:
-	.long	4                               # 0x4
+	.long	2                               # 0x2
 func0000000000000060:                   # @func0000000000000060
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3

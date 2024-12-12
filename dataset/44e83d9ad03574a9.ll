@@ -1,5 +1,5 @@
 
-; 93 occurrences:
+; 95 occurrences:
 ; abc/optimized/cecSolve.c.ll
 ; abc/optimized/cecSolveG.c.ll
 ; abc/optimized/wlnRead.c.ll
@@ -79,12 +79,14 @@
 ; llvm/optimized/UncountedLocalVarsChecker.cpp.ll
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; mitsuba3/optimized/x86formatter.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; opencv/optimized/weighted_median_filter.cpp.ll
 ; openjdk/optimized/cmspack.ll
 ; postgres/optimized/spgscan.ll
 ; qemu/optimized/accel_tcg_plugin-gen.c.ll
+; qemu/optimized/hw_pci_shpc.c.ll
 ; qemu/optimized/hw_scsi_mptsas.c.ll
 ; qemu/optimized/target_riscv_debug.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll

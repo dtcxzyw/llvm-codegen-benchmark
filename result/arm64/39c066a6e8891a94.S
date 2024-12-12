@@ -12,13 +12,6 @@ func0000000000000007:                   // @func0000000000000007
 	csel	x0, xzr, x8, eq
 	ret
                                         // -- End function
-func0000000000000005:                   // @func0000000000000005
-// %bb.0:                               // %entry
-	lsl	x8, x0, #3
-	cmp	x1, #0
-	csel	x0, xzr, x8, eq
-	ret
-                                        // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
 	lsl	x8, x0, #4

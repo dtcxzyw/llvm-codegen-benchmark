@@ -4,11 +4,11 @@
 ; gromacs/optimized/slagts.cpp.ll
 ; stockfish/optimized/search.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000030(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000070(i1 %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.abs.i32(i32 %1, i1 true)
-  %3 = icmp ugt i32 %2, 31506
-  %4 = or i1 %3, %0
+  %3 = icmp samesign ugt i32 %2, 31506
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
@@ -22,7 +22,7 @@ declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 ; openusd/optimized/scale_common.c.ll
 ; z3/optimized/mpz.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000042(i1 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 true)
   %3 = icmp eq i32 %2, 1

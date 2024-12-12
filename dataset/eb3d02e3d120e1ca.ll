@@ -7,12 +7,12 @@
 ; openusd/optimized/decodeframe.c.ll
 ; php/optimized/zend_inference.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000302(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 32
   %4 = icmp eq i32 %1, 0
   %5 = or i1 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -21,12 +21,12 @@ entry:
 ; wireshark/optimized/packet-zbee-zcl.c.ll
 ; z3/optimized/upolynomial.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i1 %0, i8 %1, i32 %2) #0 {
+define i1 @func0000000000000318(i1 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 50
   %4 = icmp ne i8 %1, 7
   %5 = or i1 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -34,22 +34,24 @@ entry:
 ; linux/optimized/rx.ll
 ; php/optimized/zend_jit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000042(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 90
   %4 = icmp eq i32 %1, 0
   %5 = or i1 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
-; 1 occurrences:
-; clamav/optimized/filtering.c.ll
+; 3 occurrences:
+; gromacs/optimized/tng_io.c.ll
+; icu/optimized/utrie.ll
+; wireshark/optimized/packet-cops.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000110(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000058(i1 %0, i32 %1, i8 %2) #0 {
 entry:
-  %3 = icmp ugt i8 %2, 7
-  %4 = icmp ugt i32 %1, 99
+  %3 = icmp eq i8 %2, 0
+  %4 = icmp ne i32 %1, 0
   %5 = or i1 %4, %3
   %6 = and i1 %5, %0
   ret i1 %6
@@ -58,44 +60,31 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-rlc-lte.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000190(i1 %0, i8 %1, i32 %2) #0 {
+define i1 @func0000000000000310(i1 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp ugt i8 %1, 1
   %5 = or i1 %4, %3
-  %6 = and i1 %5, %0
-  ret i1 %6
-}
-
-; 2 occurrences:
-; icu/optimized/utrie.ll
-; wireshark/optimized/packet-cops.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i8 %1, i32 %2) #0 {
-entry:
-  %3 = icmp eq i32 %2, 1
-  %4 = icmp ne i8 %1, 2
-  %5 = or i1 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; wireshark/optimized/packet-zebra.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i8 %1, i32 %2) #0 {
+define i1 @func0000000000000048(i1 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp ult i8 %1, 5
   %5 = or i1 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; wireshark/optimized/packet-zebra.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000030(i1 %0, i8 %1, i32 %2) #0 {
+define i1 @func0000000000000050(i1 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp ugt i8 %1, 4

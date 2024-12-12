@@ -40,9 +40,9 @@ entry:
 ; 1 occurrences:
 ; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000009(i32 %0, i32 %1) #0 {
+define i8 @func0000000000000019(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp uge i32 %0, %1
+  %2 = icmp samesign uge i32 %0, %1
   %3 = sext i1 %2 to i8
   ret i8 %3
 }

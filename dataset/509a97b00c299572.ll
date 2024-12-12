@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 28 occurrences:
 ; arrow/optimized/key_map.cc.ll
 ; cmake/optimized/zstd_decompress.c.ll
 ; darktable/optimized/rawspeed-identify.cpp.ll
@@ -12,6 +12,7 @@
 ; linux/optimized/virtio_pci_modern_dev.ll
 ; linux/optimized/zstd_decompress.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_canvas.ll
 ; miniaudio/optimized/unity.c.ll
 ; opencv/optimized/lapack.cpp.ll
 ; opencv/optimized/mathfuncs.cpp.ll
@@ -24,13 +25,15 @@
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; qemu/optimized/ui_cursor.c.ll
 ; raylib/optimized/raudio.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zstd/optimized/zstd_decompress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2097151
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %0
+  %4 = mul nuw nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -44,7 +47,7 @@ define i64 @func0000000000000003(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -8
   %3 = zext i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %0
+  %4 = mul nuw nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -56,7 +59,7 @@ define i64 @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -16
   %3 = zext i32 %2 to i64
-  %4 = mul nuw i64 %3, %0
+  %4 = mul nuw i64 %0, %3
   ret i64 %4
 }
 
@@ -81,7 +84,7 @@ define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
   %3 = zext nneg i32 %2 to i64
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   ret i64 %4
 }
 
@@ -103,7 +106,7 @@ define i64 @func0000000000000005(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nsw i64 %3, %0
+  %4 = mul nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -114,7 +117,7 @@ define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -64
   %3 = zext i32 %2 to i64
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   ret i64 %4
 }
 
@@ -125,7 +128,7 @@ define i64 @func0000000000000006(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 127
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nuw i64 %3, %0
+  %4 = mul nuw i64 %0, %3
   ret i64 %4
 }
 

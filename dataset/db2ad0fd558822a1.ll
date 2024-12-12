@@ -7,12 +7,12 @@
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha1_hw.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha256_hw.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 64, %2
   %4 = zext i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %1
-  %6 = icmp ult i64 %5, %0
+  %5 = add nuw nsw i64 %1, %4
+  %6 = icmp ugt i64 %0, %5
   ret i1 %6
 }
 
@@ -249,12 +249,12 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c4(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000384(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 32, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = add i64 %4, %1
-  %6 = icmp ugt i64 %5, %0
+  %5 = add i64 %1, %4
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 

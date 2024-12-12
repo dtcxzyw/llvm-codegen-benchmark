@@ -24,7 +24,7 @@ func0000000000000045:                   # @func0000000000000045
 	vsra.vi	v10, v10, 6
 	vadd.vv	v10, v10, v14
 	vadd.vv	v8, v8, v12
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 .LCPI1_0:
 	.quad	-6640827866535438581            # 0xa3d70a3d70a3d70b
@@ -48,7 +48,7 @@ func0000000000000040:                   # @func0000000000000040
 	vadd.vv	v12, v12, v14
 	vsrl.vx	v14, v10, a0
 	vsra.vi	v10, v10, 8
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	vadd.vv	v10, v10, v14
 	vadd.vv	v8, v8, v10
 	ret

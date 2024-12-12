@@ -7,7 +7,7 @@
 define i64 @func0000000000000001(i64 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 2
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = select i1 %4, i64 %0, i64 1
   ret i64 %5
 }
@@ -18,10 +18,10 @@ entry:
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, i1 %1, i8 %2) #0 {
+define i64 @func0000000000000018(i64 %0, i1 %1, i8 %2) #0 {
 entry:
-  %3 = icmp ugt i8 %2, 63
-  %4 = and i1 %3, %1
+  %3 = icmp samesign ugt i8 %2, 63
+  %4 = and i1 %1, %3
   %5 = select i1 %4, i64 %0, i64 0
   ret i64 %5
 }

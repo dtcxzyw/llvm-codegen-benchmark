@@ -1,10 +1,10 @@
 func0000000000000001:                   # @func0000000000000001
-	decq	%rdi
+	incq	%rsi
 	cmpq	%rsi, %rdi
 	sete	%al
 	retq
 func000000000000000c:                   # @func000000000000000c
-	decq	%rdi
+	incq	%rsi
 	cmpq	%rsi, %rdi
 	setne	%al
 	retq
@@ -20,6 +20,11 @@ func0000000000000006:                   # @func0000000000000006
 	retq
 func0000000000000004:                   # @func0000000000000004
 	subq	%rdi, %rsi
-	cmpq	$-9, %rsi
+	cmpq	$-7, %rsi
 	setae	%al
+	retq
+func0000000000000011:                   # @func0000000000000011
+	incq	%rsi
+	cmpq	%rsi, %rdi
+	sete	%al
 	retq

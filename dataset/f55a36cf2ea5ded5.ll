@@ -21,11 +21,12 @@ entry:
   ret i8 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; arrow/optimized/scalar.cc.ll
 ; cpython/optimized/_zoneinfo.ll
 ; duckdb/optimized/comparison_operators.cpp.ll
 ; yosys/optimized/simplify.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000016(i1 %0, i64 %1, i64 %2) #0 {
 entry:

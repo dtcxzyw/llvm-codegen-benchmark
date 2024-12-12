@@ -24,8 +24,7 @@ entry:
   ret ptr %5
 }
 
-; 4 occurrences:
-; gromacs/optimized/listed_forces.cpp.ll
+; 3 occurrences:
 ; openusd/optimized/stbImage.cpp.ll
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_resize2.c.ll

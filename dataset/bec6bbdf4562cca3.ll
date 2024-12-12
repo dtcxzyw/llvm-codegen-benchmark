@@ -3,13 +3,13 @@
 ; clamav/optimized/autoit.c.ll
 ; hdf5/optimized/h5tools_dump.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -2
   %3 = icmp eq i32 %1, 1
   %4 = select i1 %3, i32 0, i32 %2
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw [32 x i64], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [32 x i64], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -31,20 +31,20 @@ entry:
 ; meshlab/optimized/filter_trioptimize.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000008e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000010f(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = icmp eq i32 %1, 1
   %4 = select i1 %3, i32 1, i32 %2
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw [4 x i32], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [4 x i32], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; linux/optimized/rx.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000008c(ptr %0, i32 %1) #0 {
+define ptr @func000000000000010c(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = icmp eq i32 %1, 6
@@ -61,13 +61,13 @@ entry:
 ; meshlab/optimized/filter_trioptimize.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000018e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000030f(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = icmp eq i32 %1, 2
   %4 = select i1 %3, i32 0, i32 %2
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw [3 x ptr], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [3 x ptr], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 

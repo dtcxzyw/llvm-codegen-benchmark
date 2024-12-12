@@ -311,3 +311,112 @@ func0000000000000011:                   # @func0000000000000011
 	vmovdqu8	%xmm1, %xmm0 {%k1}
 	vzeroupper
 	retq
+.LCPI6_0:
+	.byte	2                               # 0x2
+	.byte	2                               # 0x2
+	.byte	2                               # 0x2
+	.byte	2                               # 0x2
+	.byte	2                               # 0x2
+	.byte	2                               # 0x2
+	.byte	2                               # 0x2
+	.byte	2                               # 0x2
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+.LCPI6_1:
+	.byte	48                              # 0x30
+	.byte	48                              # 0x30
+	.byte	48                              # 0x30
+	.byte	48                              # 0x30
+	.byte	48                              # 0x30
+	.byte	48                              # 0x30
+	.byte	48                              # 0x30
+	.byte	48                              # 0x30
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+.LCPI6_2:
+	.zero	4,2
+.LCPI6_3:
+	.zero	4,48
+func0000000000000002:                   # @func0000000000000002
+	vptestnmd	%ymm1, %ymm1, %k1
+	vpandd	.LCPI6_2(%rip){1to4}, %xmm0, %xmm1
+	vpord	.LCPI6_3(%rip){1to4}, %xmm1, %xmm0
+	vmovdqu8	%xmm1, %xmm0 {%k1}
+	vzeroupper
+	retq
+.LCPI7_0:
+	.long	16385                           # 0x4001
+.LCPI7_5:
+	.zero	4,1
+.LCPI7_1:
+	.byte	10                              # 0xa
+	.byte	10                              # 0xa
+	.byte	10                              # 0xa
+	.byte	10                              # 0xa
+	.byte	10                              # 0xa
+	.byte	10                              # 0xa
+	.byte	10                              # 0xa
+	.byte	10                              # 0xa
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+.LCPI7_2:
+	.byte	34                              # 0x22
+	.byte	34                              # 0x22
+	.byte	34                              # 0x22
+	.byte	34                              # 0x22
+	.byte	34                              # 0x22
+	.byte	34                              # 0x22
+	.byte	34                              # 0x22
+	.byte	34                              # 0x22
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+.LCPI7_3:
+	.byte	1                               # 0x1
+	.byte	1                               # 0x1
+	.byte	1                               # 0x1
+	.byte	1                               # 0x1
+	.byte	1                               # 0x1
+	.byte	1                               # 0x1
+	.byte	1                               # 0x1
+	.byte	1                               # 0x1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+.LCPI7_4:
+	.byte	10                              # 0xa
+func0000000000000029:                   # @func0000000000000029
+	vpcmpltud	.LCPI7_0(%rip){1to8}, %ymm1, %k1
+	vpbroadcastb	.LCPI7_4(%rip), %xmm1   # xmm1 = [10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10]
+	vmovdqu8	.LCPI7_2(%rip), %xmm1 {%k1}     # xmm1 {%k1} = [34,34,34,34,34,34,34,34,u,u,u,u,u,u,u,u]
+	vpternlogd	$236, .LCPI7_5(%rip){1to4}, %xmm1, %xmm0 # xmm0 = (xmm0 & mem) | xmm1
+	vzeroupper
+	retq

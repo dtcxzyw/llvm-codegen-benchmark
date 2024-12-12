@@ -1,17 +1,4 @@
 
-; 1 occurrences:
-; soc-simulator/optimized/verilated.ll
-; Function Attrs: nounwind
-define i32 @func00000000000000f9(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl nsw i32 %1, 5
-  %3 = add nuw nsw i32 %2, 32
-  %4 = add nuw nsw i32 %3, %0
-  %5 = lshr i32 %4, 5
-  %6 = add nsw i32 %5, -1
-  ret i32 %6
-}
-
 ; 5 occurrences:
 ; icu/optimized/usprep.ll
 ; nori/optimized/nanovg.c.ll

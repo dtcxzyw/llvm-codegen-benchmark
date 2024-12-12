@@ -2,13 +2,13 @@
 ; 1 occurrences:
 ; lief/optimized/camellia.c.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000ea(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func00000000000000ff(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 32
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 4
-  %6 = getelementptr nusw i32, ptr %5, i64 %4
-  %7 = getelementptr nusw i32, ptr %6, i64 %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 4
+  %6 = getelementptr nusw nuw i32, ptr %5, i64 %4
+  %7 = getelementptr nusw nuw i32, ptr %6, i64 %0
   ret ptr %7
 }
 
@@ -18,13 +18,13 @@ entry:
 ; llvm/optimized/CGOpenMPRuntime.cpp.ll
 ; llvm/optimized/OpenMPClause.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000aa(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func00000000000000bf(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 144
-  %6 = getelementptr nusw ptr, ptr %5, i64 %4
-  %7 = getelementptr nusw ptr, ptr %6, i64 %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 144
+  %6 = getelementptr nusw nuw ptr, ptr %5, i64 %4
+  %7 = getelementptr nusw nuw ptr, ptr %6, i64 %0
   ret ptr %7
 }
 

@@ -1,5 +1,5 @@
 
-; 454 occurrences:
+; 449 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/str_cat_test.cc.ll
@@ -14,6 +14,7 @@
 ; assimp/optimized/LWOLoader.cpp.ll
 ; assimp/optimized/X3DImporter_Metadata.cpp.ll
 ; assimp/optimized/X3DXmlHelper.cpp.ll
+; boost/optimized/options_description.ll
 ; casadi/optimized/casadi_misc.cpp.ll
 ; casadi/optimized/function.cpp.ll
 ; casadi/optimized/generic_type.cpp.ll
@@ -170,13 +171,10 @@
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -283,8 +281,6 @@
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; pocketpy/optimized/vm.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
@@ -353,7 +349,6 @@
 ; quantlib/optimized/fdg2swaptionengine.ll
 ; quantlib/optimized/fdhullwhiteswaptionengine.ll
 ; quantlib/optimized/fixedvsfloatingswap.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
 ; quantlib/optimized/gaussian1dmodel.ll
 ; quantlib/optimized/gaussian1dnonstandardswaptionengine.ll
@@ -455,7 +450,7 @@
 ; zxing/optimized/Content.cpp.ll
 ; zxing/optimized/PDFWriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a1(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = shl nsw i64 %3, 3
@@ -465,7 +460,7 @@ entry:
   ret i1 %7
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; arrow/optimized/api_scalar.cc.ll
 ; arrow/optimized/diff.cc.ll
 ; assimp/optimized/MDLLoader.cpp.ll
@@ -479,12 +474,11 @@ entry:
 ; opencv/optimized/infer_ie_onnx_hybrid.cpp.ll
 ; opencv/optimized/layers_common.cpp.ll
 ; openspiel/optimized/System.cpp.ll
-; proj/optimized/io.cpp.ll
 ; quantlib/optimized/laplaceinterpolation.ll
 ; quantlib/optimized/schedule.ll
 ; verilator/optimized/V3Undriven.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a8(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = shl nsw i64 %3, 3
@@ -498,7 +492,7 @@ entry:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; verilator/optimized/V3Undriven.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a4(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = shl nsw i64 %3, 3
@@ -511,7 +505,7 @@ entry:
 ; 1 occurrences:
 ; csmith/optimized/CVQualifiers.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000ac(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = shl nsw i64 %3, 3
@@ -525,7 +519,7 @@ entry:
 ; draco/optimized/adaptive_rans_bit_encoder.cc.ll
 ; yosys/optimized/rtlil.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a6(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = shl nsw i64 %3, 3
@@ -539,7 +533,7 @@ entry:
 ; arrow/optimized/builder_primitive.cc.ll
 ; opencv/optimized/cv2.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000aa(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = shl nsw i64 %3, 3
@@ -554,7 +548,7 @@ entry:
 ; casadi/optimized/nlpsol.cpp.ll
 ; casadi/optimized/sx_instantiator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000008a(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = shl nsw i64 %3, 3
@@ -567,7 +561,7 @@ entry:
 ; 1 occurrences:
 ; casadi/optimized/fmu2.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000158(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002a8(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = shl nsw i64 %3, 3
@@ -580,7 +574,7 @@ entry:
 ; 1 occurrences:
 ; casadi/optimized/fmu2.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000151(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002a1(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = shl nsw i64 %3, 3

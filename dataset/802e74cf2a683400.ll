@@ -7,8 +7,8 @@ define i64 @func000000000000001d(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 12
-  %5 = or disjoint i32 %4, %1
-  %6 = add nsw i32 %5, %0
+  %5 = or disjoint i32 %1, %4
+  %6 = add nsw i32 %0, %5
   %7 = sext i32 %6 to i64
   ret i64 %7
 }
@@ -37,7 +37,7 @@ define i64 @func0000000000000015(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw i32 %3, 24
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = add nsw i32 %5, %0
   %7 = sext i32 %6 to i64
   ret i64 %7

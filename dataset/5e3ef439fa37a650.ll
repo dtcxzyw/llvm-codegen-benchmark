@@ -46,7 +46,7 @@ entry:
 ; linux/optimized/memory.ll
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000064(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = sub nuw nsw i64 4096, %0
@@ -65,7 +65,7 @@ entry:
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; qemu/optimized/accel_tcg_user-exec.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = sub nsw i64 0, %0
@@ -86,11 +86,22 @@ entry:
 ; sentencepiece/optimized/parse_context.cc.ll
 ; z3/optimized/mpf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = sub nsw i64 6, %0
   %4 = icmp slt i64 %3, %2
+  ret i1 %4
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_spinbox.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000a(i64 %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = sub i64 1, %0
+  %4 = icmp sgt i64 %3, %2
   ret i1 %4
 }
 
@@ -100,7 +111,7 @@ entry:
 ; linux/optimized/kobject_uevent.ll
 ; linux/optimized/tcp_input.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = sub nsw i64 2048, %0
@@ -112,7 +123,7 @@ entry:
 ; linux/optimized/svcsock.ll
 ; zxing/optimized/ODDataBarCommon.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000006a(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = sub nuw nsw i64 4, %0
@@ -129,7 +140,7 @@ entry:
 ; grpc/optimized/xds_common_types.cc.ll
 ; postgres/optimized/zic.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = sub nsw i64 -9223372036854775808, %0
@@ -145,7 +156,7 @@ entry:
 ; grpc/optimized/xds_common_types.cc.ll
 ; postgres/optimized/zic.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000066(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = sub nuw nsw i64 9223372036854775807, %0

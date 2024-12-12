@@ -49,7 +49,7 @@ func0000000000000010:                   # @func0000000000000010
 	vpinsrd	$3, %eax, %xmm3, %xmm1
 	vinserti128	$1, %xmm0, %ymm1, %ymm0
 	vpcmpnleud	.LCPI0_0(%rip){1to8}, %ymm0, %k1
-	korb	%k0, %k1, %k0
+	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -104,7 +104,7 @@ func0000000000000018:                   # @func0000000000000018
 	vpinsrd	$3, %eax, %xmm3, %xmm1
 	vinserti128	$1, %xmm0, %ymm1, %ymm0
 	vpcmpneqd	.LCPI1_0(%rip){1to8}, %ymm0, %k1
-	korb	%k0, %k1, %k0
+	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -214,7 +214,7 @@ func000000000000000c:                   # @func000000000000000c
 	vpinsrd	$3, %eax, %xmm3, %xmm1
 	vinserti128	$1, %xmm0, %ymm1, %ymm0
 	vpcmpltd	.LCPI3_0(%rip){1to8}, %ymm0, %k1
-	korb	%k0, %k1, %k0
+	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

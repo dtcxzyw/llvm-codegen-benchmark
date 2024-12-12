@@ -7,7 +7,7 @@
 ; openspiel/optimized/go_board.cc.ll
 ; openspiel/optimized/phantom_go_board.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i8 %0, i16 %1, i16 %2) #0 {
+define i1 @func000000000000002c(i8 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %1, %2
   %4 = icmp ne i8 %0, 0

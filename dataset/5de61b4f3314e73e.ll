@@ -1,5 +1,5 @@
 
-; 268 occurrences:
+; 272 occurrences:
 ; abc/optimized/abcTiming.c.ll
 ; abc/optimized/amapMatch.c.ll
 ; abc/optimized/sclSize.c.ll
@@ -12,6 +12,9 @@
 ; assimp/optimized/LWOLoader.cpp.ll
 ; assimp/optimized/SkeletonMeshBuilder.cpp.ll
 ; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; box2d/optimized/b2_collide_edge.cpp.ll
 ; box2d/optimized/b2_collision.cpp.ll
 ; box2d/optimized/b2_distance.cpp.ll
@@ -114,6 +117,7 @@
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libjpeg-turbo/optimized/jidctflt.c.ll
 ; libwebp/optimized/sharpyuv_csp.c.ll
+; lvgl/optimized/lv_arc.ll
 ; meshlab/optimized/VisibilityCheck.cpp.ll
 ; meshlab/optimized/VisibleSet.cpp.ll
 ; meshlab/optimized/alignset.cpp.ll
@@ -137,7 +141,6 @@
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
@@ -156,7 +159,6 @@
 ; meshlab/optimized/io_collada.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/load_save.cpp.ll
 ; meshlab/optimized/mesh_model.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
@@ -226,6 +228,7 @@
 ; openusd/optimized/stbImage.cpp.ll
 ; openusd/optimized/tetMesh.cpp.ll
 ; openvdb/optimized/FastSweeping.cc.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetMorph.cc.ll
 ; openvdb/optimized/LevelSetRebuild.cc.ll
 ; openvdb/optimized/LevelSetTracker.cc.ll
@@ -267,6 +270,7 @@
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; xgboost/optimized/elementwise_metric.cc.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1) #0 {

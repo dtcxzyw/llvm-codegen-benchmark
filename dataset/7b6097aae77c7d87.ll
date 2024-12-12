@@ -1,8 +1,14 @@
 
-; 216 occurrences:
+; 247 occurrences:
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
 ; arrow/optimized/UriQuery.c.ll
 ; arrow/optimized/diff.cc.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/url_impl.ll
 ; clamav/optimized/udf.c.ll
 ; clap-rs/optimized/3b4nqkxyl1xqdcre.ll
 ; clap-rs/optimized/5651dp9k16h53y8x.ll
@@ -56,6 +62,7 @@
 ; git/optimized/record.ll
 ; graphviz/optimized/excontext.c.ll
 ; gromacs/optimized/colvars_memstream.cpp.ll
+; gromacs/optimized/convert_tpr.cpp.ll
 ; hdf5/optimized/H5B2int.c.ll
 ; hdf5/optimized/H5Shyper.c.ll
 ; hermes/optimized/BytecodeDisassembler.cpp.ll
@@ -167,6 +174,7 @@
 ; qemu/optimized/libvduse.c.ll
 ; qemu/optimized/linux-user_mmap.c.ll
 ; qemu/optimized/linux-user_syscall.c.ll
+; qemu/optimized/util_buffer.c.ll
 ; quickjs/optimized/libbf.ll
 ; redis/optimized/hpdata.ll
 ; redis/optimized/hpdata.sym.ll
@@ -216,6 +224,29 @@
 ; wireshark/optimized/packet-smb.c.ll
 ; yosys/optimized/lz4.ll
 ; z3/optimized/sat_simplifier.cpp.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/1qb020ndphzxmvf33d06yonm0.ll
+; zed-rs/optimized/1rxtw8y3xj0ox3oc92qj76kkb.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/4t9tdr5qgocuoz7ebpyy9bvqv.ll
+; zed-rs/optimized/5xyjbgzjrjfd06sknyxfrytq2.ll
+; zed-rs/optimized/7fmm0tfd68kkbfwadepm13y36.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/8ong401nghjuvw1pdqaahwms7.ll
+; zed-rs/optimized/8pzylepo63jgxs9pcfvvb1oj4.ll
+; zed-rs/optimized/8tscdb01zcabwdnjfgov818gm.ll
+; zed-rs/optimized/96hln4y97mhftmlht5x1xhnh1.ll
+; zed-rs/optimized/a19dler2qrv3afh8hccxiqxn7.ll
+; zed-rs/optimized/a5d6yyd6fi8sgpd1mrlxaz07z.ll
+; zed-rs/optimized/a9o648rm8h3erlto15zyd64wi.ll
+; zed-rs/optimized/adhrhj1ih026npw6eixxu9sn1.ll
+; zed-rs/optimized/b9ty0axfl2ld0co5krahg7gfq.ll
+; zed-rs/optimized/dq2w60loei6lzivjguqmeajyy.ll
+; zed-rs/optimized/f1iubl8q66d2sxqoxpce2jw1m.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
+; zed-rs/optimized/f4wwu90a2y9t62jcyj6nqzu8v.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -237,7 +268,7 @@ define i64 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = add nsw i64 %3, 16
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -254,35 +285,10 @@ entry:
   ret i64 %5
 }
 
-; 17 occurrences:
-; arrow/optimized/builder_run_end.cc.ll
-; hyperscan/optimized/noodle_engine.c.ll
-; image-rs/optimized/2ndzmzcdt55acj4k.ll
-; libjpeg-turbo/optimized/jidctint.c.ll
-; libjpeg-turbo/optimized/jidctred.c.ll
-; libquic/optimized/time_support.c.ll
-; libsodium/optimized/libsodium_la-ed25519_ref10.ll
-; libsodium/optimized/libsodium_la-x25519_ref10.ll
-; linux/optimized/badblocks.ll
-; openjdk/optimized/parse2.ll
-; openmpi/optimized/onesided_aggregation.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; openusd/optimized/convolve.c.ll
-; proxygen/optimized/HeaderTable.cpp.ll
-; simdjson/optimized/simdjson.cpp.ll
-; sqlite/optimized/sqlite3.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000015(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sub nsw i64 %1, %2
-  %4 = add nsw i64 %3, 31
-  %5 = add nsw i64 %4, %0
-  ret i64 %5
-}
-
-; 13 occurrences:
+; 15 occurrences:
 ; bdwgc/optimized/cordxtra.c.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; cmake/optimized/cmGeneratorExpression.cxx.ll
 ; cmake/optimized/http.c.ll
 ; curl/optimized/libcurl_la-http.ll
@@ -300,27 +306,59 @@ define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = add nsw i64 %3, 1
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
-; 6 occurrences:
+; 13 occurrences:
 ; coreutils-rs/optimized/5dmrxisq30bb0giv.ll
 ; coreutils-rs/optimized/gy31avu15bepulc.ll
 ; folly/optimized/TimeUtil.cpp.ll
 ; git/optimized/strbuf.ll
 ; ripgrep-rs/optimized/3st324p1krxj76od.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
+; zed-rs/optimized/18fe87pvcvcmccnycfh7q0atj.ll
+; zed-rs/optimized/247uvyk35qd8oseq9xzgyw4k7.ll
+; zed-rs/optimized/3hsn9nyfo1lk9hjlnx6o7tl2d.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
+; zed-rs/optimized/9c745mpyev6016wrbif8w6jcd.ll
+; zed-rs/optimized/a19dler2qrv3afh8hccxiqxn7.ll
+; zed-rs/optimized/d334eo7xhndhquqddprlqx6j8.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = add nuw i64 %3, 1
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
-; 30 occurrences:
+; 15 occurrences:
+; arrow/optimized/builder_run_end.cc.ll
+; hyperscan/optimized/noodle_engine.c.ll
+; image-rs/optimized/2ndzmzcdt55acj4k.ll
+; libjpeg-turbo/optimized/jidctint.c.ll
+; libjpeg-turbo/optimized/jidctred.c.ll
+; libquic/optimized/time_support.c.ll
+; libsodium/optimized/libsodium_la-ed25519_ref10.ll
+; libsodium/optimized/libsodium_la-x25519_ref10.ll
+; linux/optimized/badblocks.ll
+; openjdk/optimized/parse2.ll
+; openmpi/optimized/onesided_aggregation.ll
+; openusd/optimized/convolve.c.ll
+; proxygen/optimized/HeaderTable.cpp.ll
+; simdjson/optimized/simdjson.cpp.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000015(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub nsw i64 %1, %2
+  %4 = add nsw i64 %3, 4
+  %5 = add nsw i64 %4, %0
+  ret i64 %5
+}
+
+; 58 occurrences:
 ; coreutils-rs/optimized/19uuw70xphf8i75b.ll
 ; coreutils-rs/optimized/1h544hbxou17yglq.ll
 ; coreutils-rs/optimized/2kp67l99mfbx1s03.ll
@@ -341,6 +379,7 @@ entry:
 ; tls-rs/optimized/4klah4jfox7oqufu.ll
 ; tokenizers-rs/optimized/4vpw5vpiz5qnu5om.ll
 ; tree-sitter-rs/optimized/5e4w8uibwrcl4d4a.ll
+; turborepo-rs/optimized/d72w0e3d392jdxg8lc3zx40z4.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; typst-rs/optimized/al9nyr8ju52xbc2.ll
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
@@ -351,11 +390,38 @@ entry:
 ; wasmtime-rs/optimized/43lpynww5yjnoft1.ll
 ; wasmtime-rs/optimized/jd0egfnydpuo3ak.ll
 ; wasmtime-rs/optimized/yijsgxkf5yj6ls1.ll
+; zed-rs/optimized/06ynmbpbae1je7d5yiue751dw.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/18fe87pvcvcmccnycfh7q0atj.ll
+; zed-rs/optimized/19l54bkp73b8vpqg6elueqjm7.ll
+; zed-rs/optimized/1dgnm6lfd9h2ap1ws2supa1aq.ll
+; zed-rs/optimized/3syn8d61makvd8ra76uhpcrmo.ll
+; zed-rs/optimized/3wc7tnd4g7jfnn81av5tll8e5.ll
+; zed-rs/optimized/7m8fd3drcujrn3b7m72kwodjc.ll
+; zed-rs/optimized/7od02cvs02zg2t1jcuk4h4evv.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9eafvdu9qxyugp5or14xw795l.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/9jlworagd4ne92tsld97hkqun.ll
+; zed-rs/optimized/9p59c0slbkpkbmcp28i14dl74.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/a3hrzugt78pdexsn4h7d7fddk.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
+; zed-rs/optimized/a50lo7f303ucwqc37yc15xnyr.ll
+; zed-rs/optimized/c3nozc4nsp9d7jgiddflq9oh8.ll
+; zed-rs/optimized/ca5us8h013in59yvcsgdq94h9.ll
+; zed-rs/optimized/clfnbm8q68pj6tyseqadz86ib.ll
+; zed-rs/optimized/d334eo7xhndhquqddprlqx6j8.ll
+; zed-rs/optimized/dhtd8mxtyja4srmt3ddrqkjib.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
+; zed-rs/optimized/erzde9u7wnx5zkvy3kzdy8721.ll
+; zed-rs/optimized/f0amc3mihxn9sd1mhsostg4ox.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000020(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }
@@ -408,6 +474,20 @@ entry:
   ret i64 %5
 }
 
+; 4 occurrences:
+; boost/optimized/get_ring.ll
+; boost/optimized/sort_by_side.ll
+; ceres/optimized/covariance_impl.cc.ll
+; freetype/optimized/smooth.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = xor i64 %2, -1
+  %4 = add i64 %1, %3
+  %5 = add i64 %4, %0
+  ret i64 %5
+}
+
 ; 1 occurrences:
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; Function Attrs: nounwind
@@ -443,15 +523,14 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
-; ceres/optimized/covariance_impl.cc.ll
-; freetype/optimized/smooth.c.ll
+; 1 occurrences:
+; zed-rs/optimized/53iexoleo5ntv1dnjbqpooo1x.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func000000000000003c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sub nsw i64 %1, %2
-  %4 = add i64 %3, 4
-  %5 = add i64 %4, %0
+  %3 = sub nuw nsw i64 %1, %2
+  %4 = add nuw nsw i64 %3, 1
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -461,7 +540,7 @@ entry:
 define i64 @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add nuw i64 %4, %0
   ret i64 %5
 }
@@ -495,7 +574,7 @@ define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = add i64 %3, 1
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 

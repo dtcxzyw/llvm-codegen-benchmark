@@ -1,9 +1,11 @@
 
-; 34 occurrences:
+; 36 occurrences:
 ; assimp/optimized/3DSLoader.cpp.ll
 ; assimp/optimized/FBXConverter.cpp.ll
 ; assimp/optimized/FBXExporter.cpp.ll
 ; assimp/optimized/UnrealLoader.cpp.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/btDeformableBodySolver.ll
 ; bullet3/optimized/btSoftBody.ll
 ; bullet3/optimized/poly34.ll

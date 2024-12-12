@@ -1,22 +1,22 @@
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	leal	2(%rsi), %eax
 	testq	%rdx, %rdx
 	cmovnel	%esi, %eax
 	addl	%edi, %eax
 	retq
-func00000000000000c7:                   # @func00000000000000c7
+func0000000000000187:                   # @func0000000000000187
 	leal	2(%rsi), %eax
 	testq	%rdx, %rdx
 	cmovnel	%esi, %eax
 	addl	%edi, %eax
 	retq
-func00000000000000d3:                   # @func00000000000000d3
+func0000000000000193:                   # @func0000000000000193
 	leal	2(%rsi), %eax
 	shrq	$62, %rdx
 	cmovnel	%esi, %eax
 	addl	%edi, %eax
 	retq
-func00000000000000d8:                   # @func00000000000000d8
+func0000000000000198:                   # @func0000000000000198
 	leal	4(%rsi), %eax
 	testq	%rdx, %rdx
 	cmovnsl	%esi, %eax
@@ -28,11 +28,11 @@ func0000000000000018:                   # @func0000000000000018
 	cmovnsl	%esi, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000044:                   # @func0000000000000044
-	movl	%esi, %eax
+func0000000000000084:                   # @func0000000000000084
+	movl	%edi, %eax
 	testq	%rdx, %rdx
 	jne	.LBB5_2
-	addl	$-4, %eax
+	addl	$-4, %esi
 .LBB5_2:                                # %select.end
-	addl	%edi, %eax
+	addl	%esi, %eax
 	retq

@@ -15,7 +15,7 @@ entry:
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000041(i32 %0, i32 %1, i64 %2) #0 {
+define i32 @func0000000000000081(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 2146435072
   %4 = icmp eq i64 %3, 0

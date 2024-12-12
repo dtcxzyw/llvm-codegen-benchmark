@@ -1,14 +1,17 @@
 
-%"struct.rocksdb::ConcurrentArena::Shard.2510489" = type { [40 x i8], %"class.rocksdb::SpinMutex.2510490", ptr, %"struct.std::atomic.2510491" }
-%"class.rocksdb::SpinMutex.2510490" = type { %"struct.std::atomic.94.2510492" }
-%"struct.std::atomic.94.2510492" = type { %"struct.std::__atomic_base.95.2510493" }
-%"struct.std::__atomic_base.95.2510493" = type { i8 }
-%"struct.std::atomic.2510491" = type { %"struct.std::__atomic_base.2510494" }
-%"struct.std::__atomic_base.2510494" = type { i64 }
+%"struct.rocksdb::ConcurrentArena::Shard.2625629" = type { [40 x i8], %"class.rocksdb::SpinMutex.2625630", ptr, %"struct.std::atomic.2625631" }
+%"class.rocksdb::SpinMutex.2625630" = type { %"struct.std::atomic.94.2625632" }
+%"struct.std::atomic.94.2625632" = type { %"struct.std::__atomic_base.95.2625633" }
+%"struct.std::__atomic_base.95.2625633" = type { i8 }
+%"struct.std::atomic.2625631" = type { %"struct.std::__atomic_base.2625634" }
+%"struct.std::__atomic_base.2625634" = type { i64 }
+%"struct.std::atomic.265.2638962" = type { %"struct.std::__atomic_base.266.2638963" }
+%"struct.std::__atomic_base.266.2638963" = type { ptr }
 
-; 8 occurrences:
+; 9 occurrences:
 ; cmake/optimized/fse_decompress.c.ll
 ; cpython/optimized/dictobject.ll
+; faiss/optimized/IndexPQ.cpp.ll
 ; linux/optimized/fse_decompress.ll
 ; linux/optimized/printk_ringbuffer.ll
 ; linux/optimized/zstd_decompress_block.ll
@@ -19,12 +22,12 @@
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
-  %4 = and i64 %3, %1
+  %4 = and i64 %1, %3
   %5 = getelementptr i32, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 209 occurrences:
+; 189 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; cmake/optimized/zstd_decompress_block.c.ll
 ; faiss/optimized/IndexIVFPQ.cpp.ll
@@ -162,40 +165,24 @@ entry:
 ; mold/optimized/passes.cc.SH4.cc.ll
 ; mold/optimized/passes.cc.SPARC64.cc.ll
 ; mold/optimized/passes.cc.X86_64.cc.ll
-; openusd/optimized/adapterManager.cpp.ll
-; openusd/optimized/basisCurvesAdapter.cpp.ll
 ; openusd/optimized/bboxCache.cpp.ll
 ; openusd/optimized/changeManager.cpp.ll
 ; openusd/optimized/changes.cpp.ll
 ; openusd/optimized/crateData.cpp.ll
 ; openusd/optimized/dataSourceMaterial.cpp.ll
 ; openusd/optimized/delegate.cpp.ll
-; openusd/optimized/dependencyForwardingSceneIndex.cpp.ll
 ; openusd/optimized/diagnosticMgr.cpp.ll
 ; openusd/optimized/dispatcher.cpp.ll
-; openusd/optimized/drawModeAdapter.cpp.ll
 ; openusd/optimized/errorMark.cpp.ll
 ; openusd/optimized/flatteningSceneIndex.cpp.ll
-; openusd/optimized/generativeProceduralAdapter.cpp.ll
-; openusd/optimized/generativeProceduralResolvingSceneIndex.cpp.ll
-; openusd/optimized/gprimAdapter.cpp.ll
-; openusd/optimized/indexProxy.cpp.ll
 ; openusd/optimized/inherits.cpp.ll
-; openusd/optimized/instanceAdapter.cpp.ll
 ; openusd/optimized/layer.cpp.ll
 ; openusd/optimized/layerRegistry.cpp.ll
 ; openusd/optimized/layerStack.cpp.ll
-; openusd/optimized/lightAdapter.cpp.ll
-; openusd/optimized/materialBindingAPI.cpp.ll
-; openusd/optimized/meshAdapter.cpp.ll
 ; openusd/optimized/noticeRegistry.cpp.ll
-; openusd/optimized/nurbsCurvesAdapter.cpp.ll
 ; openusd/optimized/payloads.cpp.ll
 ; openusd/optimized/piPrototypeSceneIndex.cpp.ll
-; openusd/optimized/pointInstancerAdapter.cpp.ll
-; openusd/optimized/pointsAdapter.cpp.ll
 ; openusd/optimized/prim.cpp.ll
-; openusd/optimized/primAdapter.cpp.ll
 ; openusd/optimized/primDataSourceOverlayCache.cpp.ll
 ; openusd/optimized/primGather.cpp.ll
 ; openusd/optimized/primIndex.cpp.ll
@@ -204,8 +191,6 @@ entry:
 ; openusd/optimized/registryManager.cpp.ll
 ; openusd/optimized/renderIndex.cpp.ll
 ; openusd/optimized/resolver.cpp.ll
-; openusd/optimized/sceneIndexAdapterSceneDelegate.cpp.ll
-; openusd/optimized/skeletonAdapter.cpp.ll
 ; openusd/optimized/specializes.cpp.ll
 ; openusd/optimized/stageCacheContext.cpp.ll
 ; openusd/optimized/testHdBufferSourceEmptyVal.cpp.ll
@@ -219,11 +204,9 @@ entry:
 ; openusd/optimized/usdcat.cpp.ll
 ; openusd/optimized/usdtree.cpp.ll
 ; openusd/optimized/usdzResolver.cpp.ll
-; openusd/optimized/value.cpp.ll
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
-; php/optimized/pcre2_jit_compile.ll
 ; proxygen/optimized/HTTP2PriorityQueue.cpp.ll
 ; proxygen/optimized/HTTPSession.cpp.ll
 ; proxygen/optimized/HeaderTable.cpp.ll
@@ -235,11 +218,62 @@ entry:
 ; rocksdb/optimized/concurrent_arena.cc.ll
 ; rocksdb/optimized/memtable.cc.ll
 ; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = xor i64 %2, -1
+  %4 = and i64 %1, %3
+  %5 = getelementptr nusw nuw %"struct.rocksdb::ConcurrentArena::Shard.2625629", ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 41 occurrences:
+; mold/optimized/icf.cc.ALPHA.cc.ll
+; mold/optimized/icf.cc.ARM32.cc.ll
+; mold/optimized/icf.cc.ARM64.cc.ll
+; mold/optimized/icf.cc.I386.cc.ll
+; mold/optimized/icf.cc.LOONGARCH32.cc.ll
+; mold/optimized/icf.cc.LOONGARCH64.cc.ll
+; mold/optimized/icf.cc.M68K.cc.ll
+; mold/optimized/icf.cc.PPC32.cc.ll
+; mold/optimized/icf.cc.PPC64V1.cc.ll
+; mold/optimized/icf.cc.PPC64V2.cc.ll
+; mold/optimized/icf.cc.RV32BE.cc.ll
+; mold/optimized/icf.cc.RV32LE.cc.ll
+; mold/optimized/icf.cc.RV64BE.cc.ll
+; mold/optimized/icf.cc.RV64LE.cc.ll
+; mold/optimized/icf.cc.S390X.cc.ll
+; mold/optimized/icf.cc.SH4.cc.ll
+; mold/optimized/icf.cc.SPARC64.cc.ll
+; mold/optimized/icf.cc.X86_64.cc.ll
+; openusd/optimized/adapterManager.cpp.ll
+; openusd/optimized/basisCurvesAdapter.cpp.ll
+; openusd/optimized/dataSourceMaterial.cpp.ll
+; openusd/optimized/delegate.cpp.ll
+; openusd/optimized/dependencyForwardingSceneIndex.cpp.ll
+; openusd/optimized/drawModeAdapter.cpp.ll
+; openusd/optimized/generativeProceduralAdapter.cpp.ll
+; openusd/optimized/generativeProceduralResolvingSceneIndex.cpp.ll
+; openusd/optimized/gprimAdapter.cpp.ll
+; openusd/optimized/indexProxy.cpp.ll
+; openusd/optimized/instanceAdapter.cpp.ll
+; openusd/optimized/lightAdapter.cpp.ll
+; openusd/optimized/materialBindingAPI.cpp.ll
+; openusd/optimized/meshAdapter.cpp.ll
+; openusd/optimized/nurbsCurvesAdapter.cpp.ll
+; openusd/optimized/pointInstancerAdapter.cpp.ll
+; openusd/optimized/pointsAdapter.cpp.ll
+; openusd/optimized/prim.cpp.ll
+; openusd/optimized/primAdapter.cpp.ll
+; openusd/optimized/sceneIndexAdapterSceneDelegate.cpp.ll
+; openusd/optimized/skeletonAdapter.cpp.ll
+; openusd/optimized/value.cpp.ll
+; php/optimized/pcre2_jit_compile.ll
+; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
-  %4 = and i64 %3, %1
-  %5 = getelementptr nusw %"struct.rocksdb::ConcurrentArena::Shard.2510489", ptr %0, i64 %4
+  %4 = and i64 %1, %3
+  %5 = getelementptr nusw %"struct.std::atomic.265.2638962", ptr %0, i64 %4
   ret ptr %5
 }
 

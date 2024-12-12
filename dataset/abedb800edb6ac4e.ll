@@ -3,7 +3,7 @@
 ; rust-analyzer-rs/optimized/1r5fg81ha4dpx7ns.ll
 ; rustfmt-rs/optimized/s8gyre8ye3tvwam.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i1 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000098(i1 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = icmp ne i64 %1, 0

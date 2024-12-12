@@ -9,7 +9,7 @@ func000000000000000c:                   # @func000000000000000c
 	shll	$2, %eax
 	addq	%rdi, %rax
 	retq
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	movzbl	%dl, %eax
 	subl	%esi, %eax
 	shll	$2, %eax

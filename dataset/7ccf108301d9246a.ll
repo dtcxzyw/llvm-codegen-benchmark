@@ -1,10 +1,11 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; darktable/optimized/ratings.c.ll
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; libjpeg-turbo/optimized/jidctflt.c.ll
+; lvgl/optimized/lv_arc.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; minetest/optimized/treegen.cpp.ll
 ; nori/optimized/textbox.cpp.ll

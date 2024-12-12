@@ -15,6 +15,11 @@
 ; arrow/optimized/metadata_internal.cc.ll
 ; arrow/optimized/scalar_cast_temporal.cc.ll
 ; arrow/optimized/tensor.cc.ll
+; boost/optimized/format_args.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/mo_lambda.ll
+; boost/optimized/rational.ll
 ; casadi/optimized/casadi_misc.cpp.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/dple.cpp.ll
@@ -71,7 +76,6 @@
 ; chibicc/optimized/parse.ll
 ; clamav/optimized/bytecode_vm.c.ll
 ; clamav/optimized/chmd.c.ll
-; clamav/optimized/smallfn.cpp.ll
 ; clamav/optimized/yara_exec.c.ll
 ; cmake/optimized/archive_write_add_filter_compress.c.ll
 ; cmake/optimized/archive_write_disk_posix.c.ll
@@ -93,7 +97,6 @@
 ; cpython/optimized/sliceobject.ll
 ; cpython/optimized/sre.ll
 ; cpython/optimized/textio.ll
-; cpython/optimized/unicode.ll
 ; cpython/optimized/unicodeobject.ll
 ; curl/optimized/libcurl_la-progress.ll
 ; curl/optimized/libcurl_la-tftp.ll
@@ -107,7 +110,6 @@
 ; duckdb/optimized/ub_duckdb_func_cast.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_math.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll
-; eastl/optimized/EAFixedPoint.cpp.ll
 ; faiss/optimized/IndexFastScan.cpp.ll
 ; faiss/optimized/IndexIVF.cpp.ll
 ; faiss/optimized/IndexIVFFastScan.cpp.ll
@@ -154,7 +156,6 @@
 ; gromacs/optimized/tpi.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hdf5/optimized/H5Ztrans.c.ll
-; icu/optimized/gregoimp.ll
 ; icu/optimized/nfrs.ll
 ; icu/optimized/nfsubs.ll
 ; icu/optimized/propsvec.ll
@@ -219,7 +220,6 @@
 ; llvm/optimized/MCExpr.cpp.ll
 ; llvm/optimized/NeonEmitter.cpp.ll
 ; llvm/optimized/OpenMPOpt.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/Record.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SelectOptimize.cpp.ll
@@ -235,6 +235,7 @@
 ; luajit/optimized/lj_carith.ll
 ; luajit/optimized/lj_carith_dyn.ll
 ; luau/optimized/Conformance.test.cpp.ll
+; lvgl/optimized/lv_math.ll
 ; memcached/optimized/memcached-slabs.ll
 ; memcached/optimized/memcached_debug-slabs.ll
 ; meshlab/optimized/arap.cpp.ll
@@ -420,7 +421,6 @@
 ; ruby/optimized/numeric.ll
 ; ruby/optimized/pack.ll
 ; ruby/optimized/process.ll
-; ruby/optimized/qsort.ll
 ; ruby/optimized/rational.ll
 ; ruby/optimized/rjit_c.ll
 ; ruby/optimized/string.ll
@@ -456,7 +456,6 @@
 ; wireshark/optimized/coloring_rules_dialog.cpp.ll
 ; wireshark/optimized/file.c.ll
 ; wireshark/optimized/ftype-integer.c.ll
-; wireshark/optimized/ftype-time.c.ll
 ; wireshark/optimized/iax2_analysis_dialog.cpp.ll
 ; wireshark/optimized/io_graph_item.c.ll
 ; wireshark/optimized/main_window_layout.cpp.ll
@@ -477,6 +476,7 @@
 ; z3/optimized/arith_sls.cpp.ll
 ; z3/optimized/mpz.cpp.ll
 ; z3/optimized/pb_solver.cpp.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; zxing/optimized/BitMatrix.cpp.ll
 ; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
 ; zxing/optimized/QRMaskUtil.cpp.ll

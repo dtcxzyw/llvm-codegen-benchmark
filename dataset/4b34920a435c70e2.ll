@@ -10,11 +10,11 @@
 define i32 @func0000000000000000(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   ret i32 %3
 }
 
-; 65 occurrences:
+; 67 occurrences:
 ; abc/optimized/utilNam.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; draco/optimized/point_attribute.cc.ll
@@ -80,11 +80,13 @@ entry:
 ; spike/optimized/vwmul_vx.ll
 ; spike/optimized/vwmulsu_vv.ll
 ; spike/optimized/vwmulsu_vx.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   ret i32 %3
 }
 

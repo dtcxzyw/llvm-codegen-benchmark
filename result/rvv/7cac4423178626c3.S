@@ -12,5 +12,5 @@ func000000000000001b:                   # @func000000000000001b
 	vadd.vi	v10, v10, -16
 	li	a0, 48
 	vmerge.vxm	v10, v10, a0, v0
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret

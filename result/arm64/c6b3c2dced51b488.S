@@ -1,42 +1,23 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	and	v1.16b, v1.16b, v3.16b
-	and	v0.16b, v0.16b, v2.16b
 	mov	w8, #20                         // =0x14
-	dup	v2.2d, x8
-	cmeq	v1.2d, v1.2d, #0
-	cmeq	v0.2d, v0.2d, #0
-	bic	v0.16b, v2.16b, v0.16b
-	bic	v1.16b, v2.16b, v1.16b
+	tst	x0, x1
+	csel	x0, xzr, x8, eq
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	and	v1.16b, v1.16b, v3.16b
-	and	v0.16b, v0.16b, v2.16b
 	mov	w8, #4                          // =0x4
-	dup	v2.2d, x8
-	mov	w8, #5                          // =0x5
-	dup	v3.2d, x8
-	cmeq	v1.2d, v1.2d, #0
-	cmeq	v0.2d, v0.2d, #0
-	bsl	v0.16b, v3.16b, v2.16b
-	bsl	v1.16b, v3.16b, v2.16b
+	tst	x0, x1
+	cinc	x0, x8, eq
 	ret
                                         // -- End function
-func0000000000000004:                   // @func0000000000000004
+func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
-	mov	w8, #513                        // =0x201
-	and	v0.16b, v0.16b, v2.16b
-	and	v1.16b, v1.16b, v3.16b
-	dup	v2.2d, x8
+	and	x9, x0, x1
 	mov	w8, #6                          // =0x6
-	dup	v3.2d, x8
-	mov	w8, #3                          // =0x3
-	cmhi	v1.2d, v2.2d, v1.2d
-	cmhi	v0.2d, v2.2d, v0.2d
-	dup	v2.2d, x8
-	bsl	v0.16b, v2.16b, v3.16b
-	bsl	v1.16b, v2.16b, v3.16b
+	cmp	x9, #513
+	mov	w9, #3                          // =0x3
+	csel	x0, x9, x8, lo
 	ret
                                         // -- End function

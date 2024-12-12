@@ -19,9 +19,9 @@ func000000000000002a:                   # @func000000000000002a
 func0000000000000000:                   # @func0000000000000000
 	incl	%edx
 	imull	%esi, %edx
-	leal	31(%rdx,%rdi), %eax
-	movl	%edx, %ecx
-	addl	%edi, %ecx
+	leal	31(%rdi,%rdx), %eax
+	movl	%edi, %ecx
+	addl	%edx, %ecx
 	cmovnsl	%ecx, %eax
 	sarl	$5, %eax
 	retq

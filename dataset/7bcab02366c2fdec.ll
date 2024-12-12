@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/hw_scsi_mptconfig.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i1 %0, i32 %1) #0 {
+define i1 @func00000000000001a4(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -8
   %3 = icmp eq i32 %2, 8
@@ -36,7 +36,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ucnvscsu.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i1 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 8
   %3 = select i1 %0, i1 true, i1 %2

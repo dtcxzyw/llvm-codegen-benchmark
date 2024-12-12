@@ -8,7 +8,7 @@
 ; openssl/optimized/libcrypto-shlib-bio_addr.ll
 ; wireshark/optimized/packet-tls-utils.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000302(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = and i1 %3, %0
@@ -21,7 +21,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-bio_lib.ll
 ; openssl/optimized/libcrypto-shlib-bio_lib.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000194(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000314(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = and i1 %3, %0
@@ -39,27 +39,12 @@ entry:
 ; wireshark/optimized/proto.c.ll
 ; wolfssl/optimized/ssl.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i32 %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000042(i32 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = icmp eq i32 %0, 0
   %6 = or i1 %5, %4
-  ret i1 %6
-}
-
-; 4 occurrences:
-; assimp/optimized/zip.c.ll
-; hermes/optimized/zip.c.ll
-; meshlab/optimized/filter_sketchfab.cpp.ll
-; meshlab/optimized/miniz.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000030(i1 %0, i32 %1, ptr %2) #0 {
-entry:
-  %3 = icmp eq ptr %2, null
-  %4 = and i1 %3, %0
-  %5 = icmp ugt i32 %1, 10
-  %6 = or i1 %4, %5
   ret i1 %6
 }
 
@@ -68,7 +53,7 @@ entry:
 ; linux/optimized/slub.ll
 ; luau/optimized/Compiler.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000018c(i32 %0, i1 %1, ptr %2) #0 {
+define i1 @func000000000000030c(i32 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = and i1 %3, %1
@@ -92,10 +77,10 @@ entry:
 ; icu/optimized/ustrtrns.ll
 ; openmpi/optimized/libmpi_c_profile_la-waitany.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, i1 %1, ptr %2) #0 {
+define i1 @func000000000000004c(i32 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = icmp slt i32 %0, 0
   %6 = or i1 %5, %4
   ret i1 %6
@@ -104,10 +89,10 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/listpack.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000058(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = icmp ne i32 %1, 2
   %6 = or i1 %4, %5
   ret i1 %6
@@ -119,7 +104,7 @@ entry:
 ; hwloc/optimized/hwloc-calc.ll
 ; icu/optimized/ustrtrns.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000054(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = and i1 %3, %0

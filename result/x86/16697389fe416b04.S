@@ -1,3 +1,10 @@
+func00000000000001f4:                   # @func00000000000001f4
+	movzbl	%dl, %eax
+	addq	%rdi, %rax
+	movl	%esi, %ecx
+	cmpq	%rcx, %rax
+	setb	%al
+	retq
 func00000000000000f4:                   # @func00000000000000f4
 	movzbl	%dl, %eax
 	addq	%rdi, %rax
@@ -5,7 +12,7 @@ func00000000000000f4:                   # @func00000000000000f4
 	cmpq	%rcx, %rax
 	setb	%al
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	movzbl	%dl, %eax
 	addq	%rdi, %rax
 	movl	%esi, %ecx

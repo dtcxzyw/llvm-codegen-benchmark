@@ -7,7 +7,7 @@
 ; ncnn/optimized/convolution_x86_fma.cpp.ll
 ; openjdk/optimized/c1_Compilation.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 28
   %3 = add nsw i32 %2, 209
@@ -19,7 +19,7 @@ entry:
 ; openjdk/optimized/classFileParser.ll
 ; wireshark/optimized/packet-sapdiag.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001e1(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 10
   %3 = add nuw nsw i32 %2, 2
@@ -197,7 +197,7 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001a1(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 27
   %3 = add nsw i32 %2, -292
@@ -222,7 +222,7 @@ entry:
 ; hermes/optimized/APFloat.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 3
   %3 = add nsw i32 %2, 3
@@ -246,7 +246,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/Cr2sRawInterpolator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000075(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000e5(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 6
   %3 = add nuw nsw i32 %2, 6
@@ -257,18 +257,18 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/Cr2Decompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f5(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001f5(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 6
   %3 = add nuw nsw i32 %2, 6
-  %4 = icmp ule i32 %3, %0
+  %4 = icmp samesign ule i32 %3, %0
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000fa(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001ea(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 94
   %3 = add nuw nsw i32 %2, 112
@@ -279,7 +279,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000006a(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 94
   %3 = add nuw nsw i32 %2, 112
@@ -299,11 +299,10 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
-; wireshark/optimized/packet-cip.c.ll
+; 1 occurrences:
 ; wireshark/optimized/packet-vnc.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001e8(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 6
   %3 = add nuw nsw i32 %2, 5
@@ -311,7 +310,7 @@ entry:
   ret i1 %4
 }
 
-; 153 occurrences:
+; 152 occurrences:
 ; wireshark/optimized/sequence_analysis.c.ll
 ; z3/optimized/aig_exporter.cpp.ll
 ; z3/optimized/arith_axioms.cpp.ll
@@ -329,7 +328,6 @@ entry:
 ; z3/optimized/bv_bounds_tactic.cpp.ll
 ; z3/optimized/bv_size_reduction_tactic.cpp.ll
 ; z3/optimized/bvarray2uf_rewriter.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/ctx_solver_simplify_tactic.cpp.ll
 ; z3/optimized/dd_pdd.cpp.ll
 ; z3/optimized/degree_shift_tactic.cpp.ll
@@ -474,11 +472,21 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
-; cmake/optimized/archive_ppmd8.c.ll
+; 1 occurrences:
+; wireshark/optimized/packet-cip.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001f8(i32 %0, i32 %1) #0 {
+entry:
+  %2 = mul nuw nsw i32 %1, 10
+  %3 = add nuw nsw i32 %2, 2
+  %4 = icmp samesign ugt i32 %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
 ; wireshark/optimized/packet-umts_fp.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001e4(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 3
   %3 = add nuw nsw i32 %2, 8
@@ -489,7 +497,7 @@ entry:
 ; 1 occurrences:
 ; zxing/optimized/PDFDetectionResultColumn.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 3
   %3 = add nsw i32 %2, 1
@@ -500,7 +508,7 @@ entry:
 ; 1 occurrences:
 ; zxing/optimized/ODCode93Reader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d6(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001a6(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 3
   %3 = add nsw i32 %2, -2
@@ -511,11 +519,22 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/fast_window_binarizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i32 %0, i32 %1) #0 {
+define i1 @func000000000000014a(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw i32 %1, 6
   %3 = add nuw i32 %2, 6
   %4 = icmp sgt i32 %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; cmake/optimized/archive_ppmd8.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001f4(i32 %0, i32 %1) #0 {
+entry:
+  %2 = mul nuw nsw i32 %1, 11
+  %3 = add nuw nsw i32 %2, 11
+  %4 = icmp samesign ult i32 %3, %0
   ret i1 %4
 }
 

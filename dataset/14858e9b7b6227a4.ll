@@ -13,7 +13,7 @@ entry:
   ret i1 %5
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; darktable/optimized/Cr2Decoder.cpp.ll
 ; darktable/optimized/introspection_basecurve.c.ll
 ; linux/optimized/intel_dpll.ll
@@ -21,7 +21,6 @@ entry:
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; php/optimized/document.ll
-; postgres/optimized/tsgistidx.ll
 ; rust-analyzer-rs/optimized/1r5fg81ha4dpx7ns.ll
 ; rustfmt-rs/optimized/s8gyre8ye3tvwam.ll
 ; spike/optimized/cbo_clean.ll
@@ -39,6 +38,7 @@ entry:
 
 ; 21 occurrences:
 ; abc/optimized/acbPush.c.ll
+; boost/optimized/alloc_lib.ll
 ; darktable/optimized/Cr2Decoder.cpp.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; graphviz/optimized/sfprint.c.ll
@@ -58,7 +58,6 @@ entry:
 ; spike/optimized/fmin_s.ll
 ; spike/optimized/fminm_h.ll
 ; spike/optimized/fminm_s.ll
-; wireshark/optimized/scanner.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i1 %1, i64 %2) #0 {
 entry:
@@ -90,12 +89,11 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; darktable/optimized/RawImageDataFloat.cpp.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; darktable/optimized/introspection_basecurve.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
-; wireshark/optimized/scanner.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000010(i1 %0, i1 %1, i64 %2) #0 {
 entry:

@@ -1,5 +1,5 @@
 
-; 369 occurrences:
+; 402 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/acecRe.c.ll
 ; abc/optimized/giaEdge.c.ll
@@ -9,6 +9,32 @@
 ; actix-rs/optimized/188iedib5veo0ne9.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; arrow/optimized/metadata_internal.cc.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/ext.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/main.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pid.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/process.ll
+; boost/optimized/shell.ll
+; boost/optimized/spawn.ll
+; boost/optimized/syslog_backend.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/target.ll
+; boost/optimized/wait.ll
+; brotli/optimized/brotli_bit_stream.c.ll
+; brotli/optimized/histogram.c.ll
 ; bullet3/optimized/btHingeConstraint.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/polynomial.cc.ll
@@ -35,6 +61,7 @@
 ; ceres/optimized/schur_eliminator_4_4_d.cc.ll
 ; ceres/optimized/schur_eliminator_d_d_d.cc.ll
 ; clamav/optimized/extract.cpp.ll
+; clamav/optimized/filtering.c.ll
 ; clamav/optimized/inflate64.c.ll
 ; clamav/optimized/matcher-ac.c.ll
 ; clamav/optimized/unzip.c.ll
@@ -105,6 +132,8 @@
 ; jq/optimized/unicode.ll
 ; libquic/optimized/base64.c.ll
 ; libquic/optimized/inflate.c.ll
+; libwebp/optimized/predictor_enc.c.ll
+; lief/optimized/psa_crypto_aead.c.ll
 ; linux/optimized/cgroup.ll
 ; linux/optimized/dm-io.ll
 ; linux/optimized/fault.ll
@@ -137,7 +166,6 @@
 ; llvm/optimized/LiveRangeCalc.cpp.ll
 ; llvm/optimized/LoopFlatten.cpp.ll
 ; llvm/optimized/LoopUnrollPass.cpp.ll
-; llvm/optimized/LoopVectorizationLegality.cpp.ll
 ; llvm/optimized/MachineInstr.cpp.ll
 ; llvm/optimized/MachineRegionInfo.cpp.ll
 ; llvm/optimized/MemorySSAUpdater.cpp.ll
@@ -145,7 +173,6 @@
 ; llvm/optimized/ParseExprCXX.cpp.ll
 ; llvm/optimized/ParseStmt.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RegAllocEvictionAdvisor.cpp.ll
 ; llvm/optimized/RegionInfo.cpp.ll
 ; llvm/optimized/RewriteModernObjC.cpp.ll
@@ -167,6 +194,7 @@
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; luau/optimized/TypeInfer.cpp.ll
 ; luau/optimized/isocline.c.ll
+; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; minetest/optimized/inputhandler.cpp.ll
@@ -288,6 +316,7 @@
 ; openssl/optimized/quicapitest-bin-quictestlib.ll
 ; openssl/optimized/quicfaultstest-bin-quictestlib.ll
 ; openusd/optimized/changeList.cpp.ll
+; openusd/optimized/frustum.cpp.ll
 ; openusd/optimized/primGather.cpp.ll
 ; php/optimized/logical_filters.ll
 ; php/optimized/pcre2_compile.ll
@@ -324,6 +353,7 @@
 ; tls-rs/optimized/z2cy5bf5cayilz9.ll
 ; tree-sitter-rs/optimized/1an3e3vgwrgy9kls.ll
 ; typst-rs/optimized/2hy987uth4sp8yoc.ll
+; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; velox/optimized/DateTimeFormatter.cpp.ll
 ; verilator/optimized/V3Const__gen.cpp.ll
 ; wasmtime-rs/optimized/1d7m6di32gj3j7pj.ll
@@ -361,6 +391,9 @@
 ; z3/optimized/mpf.cpp.ll
 ; z3/optimized/sat_solver.cpp.ll
 ; z3/optimized/smt_case_split_queue.cpp.ll
+; zed-rs/optimized/1774ern7vmjezjfzajsdneavj.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
+; zed-rs/optimized/4q1bnadqr1o107uase7gmrd0k.ll
 ; zlib/optimized/inflate.c.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; zxing/optimized/ConcentricFinder.cpp.ll

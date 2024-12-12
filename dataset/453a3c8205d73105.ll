@@ -1,6 +1,5 @@
 
-; 24 occurrences:
-; freetype/optimized/cff.c.ll
+; 23 occurrences:
 ; linux/optimized/keyring.ll
 ; linux/optimized/libata-sff.ll
 ; llvm/optimized/ASTMatchFinder.cpp.ll
@@ -25,25 +24,12 @@
 ; wasmtime-rs/optimized/320v7ko74ke0k4k4.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000302(i8 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 7
   %3 = icmp eq i64 %2, 0
   %4 = icmp ne i8 %0, 0
   %5 = or i1 %3, %4
-  ret i1 %5
-}
-
-; 2 occurrences:
-; openssl/optimized/libcrypto-lib-fcrypt.ll
-; openssl/optimized/libcrypto-shlib-fcrypt.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000102(i8 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 4294967168
-  %3 = icmp ne i64 %2, 0
-  %4 = icmp eq i8 %0, 0
-  %5 = or i1 %4, %3
   ret i1 %5
 }
 
@@ -62,7 +48,7 @@ entry:
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; wolfssl/optimized/tls13.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000058(i8 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1
   %3 = icmp eq i64 %2, 0
@@ -82,7 +68,7 @@ entry:
 ; openjdk/optimized/modRefBarrierSetC2.ll
 ; openjdk/optimized/vectornode.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000318(i8 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 549755813888
   %3 = icmp ne i64 %2, 0
@@ -103,7 +89,7 @@ entry:
 ; llvm/optimized/TransProperties.cpp.ll
 ; wireshark/optimized/packet-netflow.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000042(i8 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4
   %3 = icmp eq i64 %2, 0
@@ -113,10 +99,23 @@ entry:
 }
 
 ; 2 occurrences:
+; boost/optimized/static_string.ll
+; llvm/optimized/SemaDecl.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000048(i8 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 252
+  %3 = icmp eq i64 %2, 4
+  %4 = icmp ult i8 %0, 4
+  %5 = or i1 %4, %3
+  ret i1 %5
+}
+
+; 2 occurrences:
 ; linux/optimized/scsi.ll
 ; linux/optimized/sd.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000118(i8 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 536870912
   %3 = icmp ne i64 %2, 0
@@ -129,7 +128,7 @@ entry:
 ; linux/optimized/processor_idle.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000308(i8 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 72057594037927936
   %3 = icmp ne i64 %2, 0

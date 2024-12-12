@@ -141,7 +141,7 @@ entry:
 ; hdf5/optimized/H5HL.c.ll
 ; velox/optimized/StringFunctions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 2
   %3 = and i64 %2, 17179869180
@@ -807,7 +807,7 @@ entry:
 ; spike/optimized/zunpkd831.ll
 ; spike/optimized/zunpkd832.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 4
   %3 = and i64 %2, 496

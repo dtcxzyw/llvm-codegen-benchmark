@@ -64,7 +64,7 @@ define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 4
   %3 = and i64 %2, 4222124902318095
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = or disjoint i64 %4, 3472339291344613424
   ret i64 %5
 }
@@ -77,7 +77,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 24
   %3 = and i64 %2, 1572864
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = or i64 %4, 2
   ret i64 %5
 }
@@ -89,7 +89,7 @@ define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 52
   %3 = and i64 %2, 64
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = or disjoint i64 %4, 2
   ret i64 %5
 }

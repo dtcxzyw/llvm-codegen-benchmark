@@ -1,51 +1,62 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	cmeq	v2.8h, v2.8h, #0
-	cmeq	v1.8h, v1.8h, #0
-	uzp1	v1.16b, v1.16b, v2.16b
-	and	v0.16b, v1.16b, v0.16b
+	tst	w1, #0xffff
+	cset	w8, eq
+	and	w0, w0, w8
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	cmeq	v2.8h, v2.8h, #0
-	cmeq	v1.8h, v1.8h, #0
-	uzp1	v1.16b, v1.16b, v2.16b
-	bic	v0.16b, v0.16b, v1.16b
+	tst	w1, #0xffff
+	cset	w8, ne
+	and	w0, w0, w8
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	movi	v3.8h, #9
-	cmhi	v2.8h, v2.8h, v3.8h
-	cmhi	v1.8h, v1.8h, v3.8h
-	uzp1	v1.16b, v1.16b, v2.16b
-	and	v0.16b, v1.16b, v0.16b
+	and	w8, w1, #0xffff
+	cmp	w8, #9
+	cset	w8, hi
+	and	w0, w0, w8
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	movi	v3.8h, #11
-	cmhi	v2.8h, v3.8h, v2.8h
-	cmhi	v1.8h, v3.8h, v1.8h
-	uzp1	v1.16b, v1.16b, v2.16b
-	and	v0.16b, v1.16b, v0.16b
+	and	w8, w1, #0xffff
+	cmp	w8, #11
+	cset	w8, lo
+	and	w0, w8, w0
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	movi	v3.8h, #8
-	cmgt	v2.8h, v3.8h, v2.8h
-	cmgt	v1.8h, v3.8h, v1.8h
-	uzp1	v1.16b, v1.16b, v2.16b
-	and	v0.16b, v1.16b, v0.16b
+	sxth	w8, w1
+	cmp	w8, #8
+	cset	w8, lt
+	and	w0, w8, w0
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	cmge	v2.8h, v2.8h, #0
-	cmge	v1.8h, v1.8h, #0
-	uzp1	v1.16b, v1.16b, v2.16b
-	and	v0.16b, v1.16b, v0.16b
+	sxth	w8, w1
+	cmp	w8, #0
+	cset	w8, ge
+	and	w0, w8, w0
+	ret
+                                        // -- End function
+func0000000000000014:                   // @func0000000000000014
+// %bb.0:                               // %entry
+	and	w8, w1, #0xffff
+	cmp	w8, #10
+	cset	w8, lo
+	and	w0, w0, w8
+	ret
+                                        // -- End function
+func0000000000000018:                   // @func0000000000000018
+// %bb.0:                               // %entry
+	and	w8, w1, #0xffff
+	cmp	w8, #1
+	cset	w8, hi
+	and	w0, w8, w0
 	ret
                                         // -- End function

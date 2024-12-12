@@ -4,7 +4,7 @@
 ; ruby/optimized/prism.ll
 ; wireshark/optimized/packet-iso8583.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000018(i8 %0, i8 %1, i8 %2) #0 {
+define i8 @func0000000000000028(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = or disjoint i8 %2, 48
   %4 = icmp ugt i8 %1, -97
@@ -17,7 +17,7 @@ entry:
 ; lua/optimized/lgc.ll
 ; php/optimized/apprentice.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000011(i8 %0, i8 %1, i8 %2) #0 {
+define i8 @func0000000000000021(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = or disjoint i8 %2, 4
   %4 = icmp eq i8 %1, 0

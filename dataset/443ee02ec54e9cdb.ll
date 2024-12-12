@@ -28,8 +28,9 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; abc/optimized/ifDelay.c.ll
+; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i64 %1) #0 {

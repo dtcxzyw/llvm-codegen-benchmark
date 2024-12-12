@@ -1,13 +1,9 @@
 func000000000000001f:                   # @func000000000000001f
+	andi	a2, a2, 255
 	andi	a1, a1, 1
-	slliw	a2, a2, 24
+	slli	a2, a2, 16
 	or	a0, a0, a2
-	bnez	a1, .LBB0_2
-	li	a1, 39
-	or	a0, a0, a1
-	ret
-.LBB0_2:
-	li	a1, 41
+	slli	a1, a1, 8
 	or	a0, a0, a1
 	ret
 func000000000000000f:                   # @func000000000000000f
@@ -15,12 +11,9 @@ func000000000000000f:                   # @func000000000000000f
 	andi	a2, a2, 255
 	slli	a2, a2, 16
 	or	a0, a0, a2
-	bnez	a1, .LBB1_2
-	li	a1, 39
-	or	a0, a0, a1
-	ret
-.LBB1_2:
-	li	a1, 41
+	lui	a2, 786432
+	addi	a1, a1, -1
+	and	a1, a1, a2
 	or	a0, a0, a1
 	ret
 func000000000000000a:                   # @func000000000000000a
@@ -60,9 +53,10 @@ func000000000000001e:                   # @func000000000000001e
 	or	a0, a0, a1
 	ret
 func000000000000000b:                   # @func000000000000000b
-	slliw	a2, a2, 24
 	andi	a1, a1, 1
+	slliw	a2, a2, 24
 	or	a0, a0, a2
-	slli	a1, a1, 8
+	addi	a1, a1, -1
+	andi	a1, a1, 255
 	or	a0, a0, a1
 	ret

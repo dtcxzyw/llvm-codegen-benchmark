@@ -1,14 +1,13 @@
 
-; 23 occurrences:
+; 22 occurrences:
+; boost/optimized/async_pipe.ll
 ; duckdb/optimized/ub_duckdb_operator_csv_scanner.cpp.ll
 ; harfbuzz/optimized/hb-subset-cff1.cc.ll
 ; hdf5/optimized/H5Shyper.c.ll
 ; linux/optimized/ibss.ll
 ; linux/optimized/mlme.ll
-; linux/optimized/video_detect.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/CGObjCGNU.cpp.ll
-; llvm/optimized/CommandFlags.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/Driver.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll

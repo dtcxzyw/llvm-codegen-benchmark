@@ -1,6 +1,7 @@
 
-; 15 occurrences:
+; 16 occurrences:
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
+; darktable/optimized/amaze.cc.ll
 ; image-rs/optimized/2mngkegtim1o10y3.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; opencv/optimized/matmul.dispatch.cpp.ll
@@ -16,23 +17,23 @@
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
 ; wasmtime-rs/optimized/pc3lkwoxfkbj2dl.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
   %3 = or i64 %2, 1
-  %4 = getelementptr nusw { i16, [3 x i16], { i64, [2 x i64] } }, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw { i16, [3 x i16], { i64, [2 x i64] } }, ptr %0, i64 %3
   ret ptr %4
 }
 
 ; 1 occurrences:
 ; grpc/optimized/work_serializer.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 4
   %3 = and i64 %2, 9223372036854775776
   %4 = or disjoint i64 %3, 8
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 

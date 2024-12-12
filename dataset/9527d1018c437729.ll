@@ -7,7 +7,7 @@
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define i8 @func00000000000000e2(i32 %0, i32 %1) #0 {
+define i8 @func00000000000001c2(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 8
   %3 = or disjoint i32 %2, %0
@@ -27,7 +27,7 @@ entry:
 ; openjdk/optimized/hb-ot-shape-fallback.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; Function Attrs: nounwind
-define i8 @func00000000000000f8(i32 %0, i32 %1) #0 {
+define i8 @func00000000000001d8(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 8
   %3 = or disjoint i32 %2, %0
@@ -40,7 +40,7 @@ entry:
 ; hdf5/optimized/H5Pfapl.c.ll
 ; llvm/optimized/CoverageMapping.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func00000000000000b8(i32 %0, i32 %1) #0 {
+define i8 @func0000000000000158(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 24
   %3 = or disjoint i32 %2, %0
@@ -52,7 +52,7 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/castle.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i8 @func0000000000000058(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 6
   %3 = or disjoint i32 %2, %0

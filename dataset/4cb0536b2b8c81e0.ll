@@ -1,11 +1,12 @@
 
-; 33 occurrences:
+; 34 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; coreutils-rs/optimized/53yhdh06nqcwsoo6.ll
 ; coreutils-rs/optimized/56596qkor8w4ma8l.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hwloc/optimized/topology-linux.ll
+; linux/optimized/dmar.ll
 ; linux/optimized/dmi_scan.ll
 ; linux/optimized/early-quirks.ll
 ; linux/optimized/intel_ggtt.ll

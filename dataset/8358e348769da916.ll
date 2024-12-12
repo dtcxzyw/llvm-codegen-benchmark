@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; linux/optimized/seq_clientmgr.ll
 ; luajit/optimized/lj_cparse.ll
 ; luajit/optimized/lj_cparse_dyn.ll
@@ -7,7 +7,6 @@
 ; openssl/optimized/libssl-lib-quic_stream_map.ll
 ; openssl/optimized/libssl-shlib-quic_stream_map.ll
 ; php/optimized/plain_wrapper.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
 ; redis/optimized/networking.ll
 ; redis/optimized/rax.ll
 ; ruby/optimized/regparse.ll

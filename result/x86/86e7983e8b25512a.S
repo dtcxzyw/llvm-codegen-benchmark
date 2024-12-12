@@ -9,7 +9,7 @@ func0000000000000005:                   # @func0000000000000005
 	leaq	(%rdi,%rsi), %rax
 	retq
 func000000000000000d:                   # @func000000000000000d
-	sarq	$3, %rsi
-	shrq	$3, %rdi
+	sarq	$5, %rsi
+	shrq	$5, %rdi
 	leaq	(%rdi,%rsi), %rax
 	retq

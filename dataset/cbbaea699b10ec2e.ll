@@ -6,7 +6,7 @@
 ; openssl/optimized/libcrypto-lib-v3_utl.ll
 ; openssl/optimized/libcrypto-shlib-v3_utl.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000198(i8 %0) #0 {
+define i32 @func0000000000000318(i8 %0) #0 {
 entry:
   %1 = icmp ne i8 %0, 0
   %2 = icmp ne i8 %0, 46

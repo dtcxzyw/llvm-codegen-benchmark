@@ -1,6 +1,5 @@
 
-; 4 occurrences:
-; linux/optimized/i915_cmd_parser.ll
+; 3 occurrences:
 ; llvm/optimized/CallLowering.cpp.ll
 ; php/optimized/zend_constants.ll
 ; sentencepiece/optimized/strutil.cc.ll

@@ -33,7 +33,8 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; wireshark/optimized/packet-opensafety.c.ll
 ; wireshark/optimized/packet-umts_rlc.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i1 %0, i32 %1, i16 %2) #0 {

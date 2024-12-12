@@ -129,16 +129,6 @@ entry:
   ret i32 %1
 }
 
-; 2 occurrences:
-; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
-; wasmtime-rs/optimized/rpltamrj260p6v4.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000017(i32 %0) #0 {
-entry:
-  %1 = add i32 %0, -8
-  ret i32 %1
-}
-
 ; 1 occurrences:
 ; openusd/optimized/entdec.c.ll
 ; Function Attrs: nounwind

@@ -4,7 +4,7 @@
 ; spike/optimized/pack.ll
 ; spike/optimized/packw.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000581(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = icmp ne i64 %1, 0
@@ -17,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; wasmtime-rs/optimized/2wcii8z2urex364d.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000cc1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000003181(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = icmp ne i64 %1, 0

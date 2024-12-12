@@ -18,7 +18,7 @@ entry:
 ; postgres/optimized/f2s_shlib.ll
 ; postgres/optimized/f2s_srv.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, 8388608
   %4 = icmp eq i32 %2, 0
@@ -32,12 +32,12 @@ entry:
 ; libuv/optimized/pipe.c.ll
 ; node/optimized/pipe.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, 146
-  %4 = icmp ult i32 %2, 2
+  %4 = icmp samesign ult i32 %2, 2
   %5 = select i1 %4, i32 %1, i32 %3
-  %6 = and i32 %5, %0
+  %6 = and i32 %0, %5
   ret i32 %6
 }
 

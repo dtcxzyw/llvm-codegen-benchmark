@@ -13,11 +13,13 @@ entry:
   ret i8 %4
 }
 
-; 4 occurrences:
+; 6 occurrences:
 ; icu/optimized/ucnvscsu.ll
 ; linux/optimized/sr_ioctl.ll
 ; llvm/optimized/AArch64CallingConvention.cpp.ll
 ; qemu/optimized/hw_usb_dev-mtp.c.ll
+; wasmtime-rs/optimized/1f1skdqjemonth3f.ll
+; wasmtime-rs/optimized/21g2sj3ridcu2juk.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
@@ -51,21 +53,19 @@ entry:
   ret i8 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; yalantinglibs/optimized/benchmark.cpp.ll
-; yalantinglibs/optimized/serialize_config.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000013(i32 %0, i32 %1) #0 {
+define i8 @func0000000000000053(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 128
+  %2 = icmp samesign ult i32 %1, 128
   %3 = trunc nuw nsw i32 %0 to i8
   %4 = select i1 %2, i8 0, i8 %3
   ret i8 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
-; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000020(i32 %0, i32 %1) #0 {
 entry:
@@ -79,11 +79,22 @@ entry:
 ; oiio/optimized/strutil.cpp.ll
 ; stb/optimized/stb_sprintf.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000023(i32 %0, i32 %1) #0 {
+define i8 @func0000000000000063(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %1, 999
+  %2 = icmp samesign ugt i32 %1, 999
   %3 = trunc nuw nsw i32 %0 to i8
   %4 = select i1 %2, i8 6, i8 %3
+  ret i8 %4
+}
+
+; 1 occurrences:
+; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000060(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i32 %1, 16777214
+  %3 = trunc i32 %0 to i8
+  %4 = select i1 %2, i8 -1, i8 %3
   ret i8 %4
 }
 
@@ -98,12 +109,24 @@ entry:
   ret i8 %4
 }
 
+; 2 occurrences:
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; Function Attrs: nounwind
+define i8 @func000000000000001b(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp slt i32 %1, 0
+  %3 = trunc nuw nsw i32 %0 to i8
+  %4 = select i1 %2, i8 0, i8 %3
+  ret i8 %4
+}
+
 ; 1 occurrences:
 ; llama.cpp/optimized/ggml-quants.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000010(i32 %0, i32 %1) #0 {
+define i8 @func0000000000000050(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 4194304
+  %2 = icmp samesign ult i32 %1, 4194304
   %3 = trunc i32 %0 to i8
   %4 = select i1 %2, i8 0, i8 %3
   ret i8 %4

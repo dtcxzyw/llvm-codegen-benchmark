@@ -1,7 +1,7 @@
 
-%"struct.rocksdb::(anonymous namespace)::Fsize.2500336" = type { i64, ptr }
+%"struct.rocksdb::(anonymous namespace)::Fsize.2615561" = type { i64, ptr }
 
-; 79 occurrences:
+; 78 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
@@ -29,7 +29,6 @@
 ; hyperscan/optimized/rose_build_role_aliasing.cpp.ll
 ; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/ClangAttrEmitter.cpp.ll
-; llvm/optimized/MemProf.cpp.ll
 ; luau/optimized/ToString.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
@@ -86,11 +85,11 @@ define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = add i64 %2, 2
-  %4 = getelementptr nusw %"struct.rocksdb::(anonymous namespace)::Fsize.2500336", ptr %0, i64 %3, i32 1
+  %4 = getelementptr nusw %"struct.rocksdb::(anonymous namespace)::Fsize.2615561", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
-; 38 occurrences:
+; 37 occurrences:
 ; ceres/optimized/block_jacobian_writer.cc.ll
 ; cvc5/optimized/resolution_proofs_util.cpp.ll
 ; duckdb/optimized/ub_duckdb_optimizer.cpp.ll
@@ -118,7 +117,6 @@ entry:
 ; ocio/optimized/Lut3DOpCPU.cpp.ll
 ; opencv/optimized/face_detection_mtcnn.cpp.ll
 ; opencv/optimized/scansegment.cpp.ll
-; proj/optimized/factory.cpp.ll
 ; protobuf/optimized/enum.cc.ll
 ; proxygen/optimized/HTTP2PriorityQueue.cpp.ll
 ; quantlib/optimized/differentialevolution.ll
@@ -134,18 +132,7 @@ define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = add i64 %2, 2
-  %4 = getelementptr %"struct.rocksdb::(anonymous namespace)::Fsize.2500336", ptr %0, i64 %3, i32 1
-  ret ptr %4
-}
-
-; 1 occurrences:
-; meilisearch-rs/optimized/1bqqlm3jtb9rf3cv.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000036(ptr %0, i64 %1) #0 {
-entry:
-  %2 = shl nuw nsw i64 %1, 1
-  %3 = add nsw i64 %2, -1
-  %4 = getelementptr nusw { { { i64, ptr, {} }, i64 }, { { i64, ptr, {} }, i64 }, { i64, [2 x i64] }, { i64, [2 x i64] }, { { i32, { i32, i8, i8, i8, i8 } }, { i8, i8, i8 }, [1 x i8] }, { { i32, { i32, i8, i8, i8, i8 } }, { i8, i8, i8 }, [1 x i8] }, { [11 x i8], i8, [4 x i8] }, { [16 x i8] } }, ptr %0, i64 %3, i32 4
+  %4 = getelementptr %"struct.rocksdb::(anonymous namespace)::Fsize.2615561", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 

@@ -6,7 +6,7 @@ define i64 @func000000000000003e(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 22
   %3 = add nuw nsw i32 %2, 1013972992
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }
@@ -77,8 +77,22 @@ define i64 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 3
   %3 = add nsw i32 %2, -1
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = zext i32 %4 to i64
+  ret i64 %5
+}
+
+; 3 occurrences:
+; gromacs/optimized/dlasq2.cpp.ll
+; gromacs/optimized/slasq2.cpp.ll
+; openblas/optimized/dlasq2.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 2
+  %3 = add i32 %2, -4
+  %4 = or disjoint i32 %3, %0
+  %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }
 
@@ -89,7 +103,7 @@ define i64 @func0000000000000036(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 3
   %3 = add nsw i32 %2, -109736
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }
@@ -102,7 +116,7 @@ define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 16
   %3 = add i32 %2, -65536
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }

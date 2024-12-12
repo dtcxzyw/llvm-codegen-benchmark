@@ -7,7 +7,7 @@
 ; rust-analyzer-rs/optimized/egul20e4uygvok2.ll
 ; rustfmt-rs/optimized/3n0n7c4xrusd0kzl.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000010c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %2, 80
   %4 = mul i64 %1, 88

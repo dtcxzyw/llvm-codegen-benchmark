@@ -13,7 +13,7 @@ entry:
   %2 = fcmp olt float %1, 0.000000e+00
   %3 = select i1 %2, float 0.000000e+00, float %1
   %4 = fpext float %3 to double
-  %5 = fmul double %4, %0
+  %5 = fmul double %0, %4
   ret double %5
 }
 
@@ -26,7 +26,7 @@ entry:
   %2 = fcmp ogt float %1, 1.000000e+00
   %3 = select i1 %2, float 1.000000e+00, float %1
   %4 = fpext float %3 to double
-  %5 = fmul double %4, %0
+  %5 = fmul double %0, %4
   ret double %5
 }
 

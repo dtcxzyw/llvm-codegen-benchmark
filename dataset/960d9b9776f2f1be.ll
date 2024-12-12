@@ -1,5 +1,5 @@
 
-; 51 occurrences:
+; 50 occurrences:
 ; abseil-cpp/optimized/nonsecure_base_test.cc.ll
 ; annoy/optimized/annoymodule.ll
 ; delta-rs/optimized/3qkwqfk85qralejq.ll
@@ -27,7 +27,6 @@
 ; mold/optimized/passes.cc.SH4.cc.ll
 ; mold/optimized/passes.cc.SPARC64.cc.ll
 ; mold/optimized/passes.cc.X86_64.cc.ll
-; openmpi/optimized/tm_mt.ll
 ; openspiel/optimized/cfr.cc.ll
 ; openspiel/optimized/garnet.cc.ll
 ; openspiel/optimized/is_mcts_test.cc.ll

@@ -1,16 +1,9 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	movi	v2.4h, #6
-	bic	v0.4h, #255, lsl #8
-	and	v1.8b, v1.8b, v2.8b
-	movi	v2.2d, #0x000000000000ff
-	neg	v1.4h, v1.4h
-	ushl	v0.4h, v0.4h, v1.4h
-	bic	v0.4h, #252
-	ushll	v0.4s, v0.4h, #0
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
-	and	v1.16b, v1.16b, v2.16b
-	and	v0.16b, v0.16b, v2.16b
+                                        // kill: def $w1 killed $w1 def $x1
+	and	w8, w0, #0xff
+	and	x9, x1, #0x6
+	lsr	w8, w8, w9
+	and	w0, w8, #0x3
 	ret
                                         // -- End function

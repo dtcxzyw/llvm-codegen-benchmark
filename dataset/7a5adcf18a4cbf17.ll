@@ -10,12 +10,12 @@ define i8 @func0000000000000000(i1 %0, i8 %1) #0 {
 entry:
   %not. = xor i1 %0, true
   %2 = zext i1 %not. to i8
-  %3 = or i8 %2, %1
+  %3 = or i8 %1, %2
   %4 = or i8 %3, 66
   ret i8 %4
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; hdf5/optimized/H5Cimage.c.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
@@ -23,7 +23,6 @@ entry:
 ; llvm/optimized/DylibVerifier.cpp.ll
 ; meshlab/optimized/MarchingCubes.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll

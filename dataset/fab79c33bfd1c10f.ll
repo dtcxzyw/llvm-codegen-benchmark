@@ -118,14 +118,12 @@ define i1 @func0000000000000002(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 72057594037927424
   %4 = icmp eq i64 %3, %1
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
-; libquic/optimized/quic_stream_sequencer_buffer.cc.ll
-; linux/optimized/cap_audit.ll
 ; linux/optimized/transaction.ll
 ; openjdk/optimized/metaspaceShared.ll
 ; Function Attrs: nounwind
@@ -133,16 +131,14 @@ define i1 @func0000000000000010(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967296
   %4 = icmp ugt i64 %3, %1
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 9 occurrences:
+; 7 occurrences:
 ; linux/optimized/printk_ringbuffer.ll
 ; llvm/optimized/CheckSecuritySyntaxOnly.cpp.ll
 ; llvm/optimized/InstrRefBasedImpl.cpp.ll
-; openblas/optimized/dgemv_n.c.ll
-; openblas/optimized/dgemv_t.c.ll
 ; openjdk/optimized/jfrCheckpointManager.ll
 ; openjdk/optimized/jfrStorage.ll
 ; openjdk/optimized/jfrTraceIdKlassQueue.ll
@@ -156,7 +152,7 @@ entry:
   ret i1 %5
 }
 
-; 18 occurrences:
+; 16 occurrences:
 ; hermes/optimized/CompilerDriver.cpp.ll
 ; hermes/optimized/ISel.cpp.ll
 ; hermes/optimized/JSParserImpl.cpp.ll
@@ -172,9 +168,7 @@ entry:
 ; hermes/optimized/synth.cpp.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/transaction.ll
-; llvm/optimized/MemoryDependenceAnalysis.cpp.ll
 ; openjdk/optimized/objectSampleWriter.ll
-; postgres/optimized/nbtutils.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -199,10 +193,10 @@ entry:
 ; hermes/optimized/rust-api.cpp.ll
 ; hermes/optimized/synth.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000000a(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = icmp ule i64 %3, %1
+  %4 = icmp samesign ule i64 %3, %1
   %5 = or i1 %4, %0
   ret i1 %5
 }

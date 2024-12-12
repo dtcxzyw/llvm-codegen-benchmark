@@ -14,13 +14,13 @@ func0000000000000004:                   # @func0000000000000004
 	lui	a0, 1
 	vmsltu.vx	v0, v8, a0
 	ret
-func0000000000000086:                   # @func0000000000000086
+func0000000000000106:                   # @func0000000000000106
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v12, v8
 	vsub.vv	v8, v10, v8
 	vmsgt.vi	v0, v8, -1
 	ret
-func0000000000000304:                   # @func0000000000000304
+func0000000000000604:                   # @func0000000000000604
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v12, v10
 	lui	a0, 64
@@ -38,7 +38,7 @@ func0000000000000008:                   # @func0000000000000008
 	li	a0, 99
 	vmsgtu.vx	v0, v8, a0
 	ret
-func0000000000000104:                   # @func0000000000000104
+func0000000000000204:                   # @func0000000000000204
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v12, v10
 	vadd.vv	v8, v10, v8
@@ -46,14 +46,14 @@ func0000000000000104:                   # @func0000000000000104
 	li	a0, 32
 	vmsltu.vx	v0, v8, a0
 	ret
-func000000000000021a:                   # @func000000000000021a
+func000000000000042a:                   # @func000000000000042a
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v12, v10
 	vadd.vv	v8, v10, v8
 	vadd.vi	v8, v8, 1
 	vmsgt.vi	v0, v8, -1
 	ret
-func0000000000000214:                   # @func0000000000000214
+func0000000000000434:                   # @func0000000000000434
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v10, v12, v10
 	vadd.vv	v8, v10, v8
@@ -61,13 +61,13 @@ func0000000000000214:                   # @func0000000000000214
 	li	a0, 512
 	vmsltu.vx	v0, v8, a0
 	ret
-func000000000000009a:                   # @func000000000000009a
+func000000000000012a:                   # @func000000000000012a
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v12, v8
 	vsub.vv	v8, v10, v8
 	vmsle.vi	v0, v8, -1
 	ret
-func0000000000000094:                   # @func0000000000000094
+func0000000000000134:                   # @func0000000000000134
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v12, v8
 	vsub.vv	v8, v10, v8

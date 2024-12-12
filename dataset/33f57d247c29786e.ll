@@ -1,7 +1,6 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; libevent/optimized/poll.c.ll
-; libzmq/optimized/zmq.cpp.ll
 ; linux/optimized/drm_format_helper.ll
 ; linux/optimized/quota.ll
 ; llvm/optimized/ModuleSummaryAnalysis.cpp.ll

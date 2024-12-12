@@ -52,8 +52,37 @@ define i1 @func0000000000000008(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = add i8 %2, -91
   %4 = icmp ult i8 %3, -26
-  %5 = and i1 %4, %1
+  %5 = and i1 %1, %4
   %6 = or i1 %5, %0
+  ret i1 %6
+}
+
+; 4 occurrences:
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000058(i1 %0, i1 %1, i8 %2) #0 {
+entry:
+  %3 = icmp ne i8 %2, 13
+  %4 = and i1 %1, %3
+  %5 = or i1 %0, %4
+  ret i1 %5
+}
+
+; 4 occurrences:
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000048(i1 %0, i1 %1, i8 %2) #0 {
+entry:
+  %3 = add nsw i8 %2, -12
+  %4 = icmp ult i8 %3, 3
+  %5 = and i1 %4, %1
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

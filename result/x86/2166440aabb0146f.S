@@ -1,9 +1,9 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	orq	%rdx, %rsi
 	sete	%al
 	andb	%dil, %al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	orq	%rdx, %rsi
 	movabsq	$4611686018427387905, %rax      # imm = 0x4000000000000001
 	cmpq	%rax, %rsi
@@ -15,15 +15,9 @@ func000000000000000a:                   # @func000000000000000a
 	setns	%al
 	andb	%dil, %al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	orq	%rdx, %rsi
 	setne	%al
-	andb	%dil, %al
-	retq
-func0000000000000014:                   # @func0000000000000014
-	orq	%rdx, %rsi
-	cmpq	$257, %rsi                      # imm = 0x101
-	setb	%al
 	andb	%dil, %al
 	retq
 func0000000000000001:                   # @func0000000000000001

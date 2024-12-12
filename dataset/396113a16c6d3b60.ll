@@ -4,7 +4,7 @@
 ; slurm/optimized/step_io.ll
 ; slurm/optimized/step_launch.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000054(i64 %0) #0 {
+define i32 @func0000000000000094(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 32
   %2 = trunc nuw i64 %1 to i32
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/patchTableFactory.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000094(i64 %0) #0 {
+define i32 @func0000000000000114(i64 %0) #0 {
 entry:
   %1 = lshr exact i64 %0, 2
   %2 = trunc i64 %1 to i32

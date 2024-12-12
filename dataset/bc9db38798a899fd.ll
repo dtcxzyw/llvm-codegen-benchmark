@@ -1,12 +1,11 @@
 
-; 40 occurrences:
+; 39 occurrences:
 ; flatbuffers/optimized/idl_gen_text.cpp.ll
 ; freetype/optimized/raster.c.ll
 ; hermes/optimized/MemoryBuffer.cpp.ll
 ; linux/optimized/build_utility.ll
 ; linux/optimized/cdrom.ll
 ; linux/optimized/hda_controller.ll
-; linux/optimized/intel-sdw-acpi.ll
 ; linux/optimized/loop.ll
 ; linux/optimized/proc_namespace.ll
 ; linux/optimized/scsi_debugfs.ll
@@ -44,7 +43,7 @@
 define i1 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   %4 = icmp eq i64 %3, 0
   ret i1 %4
 }
@@ -61,7 +60,7 @@ entry:
 define i1 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   %4 = icmp ne i64 %3, 0
   ret i1 %4
 }
@@ -73,7 +72,7 @@ entry:
 define i1 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   %4 = icmp ult i64 %3, 2147483647
   ret i1 %4
 }
@@ -85,7 +84,7 @@ entry:
 define i1 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   %4 = icmp ugt i64 %3, 8192
   ret i1 %4
 }

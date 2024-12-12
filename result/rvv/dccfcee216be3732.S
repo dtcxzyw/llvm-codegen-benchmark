@@ -8,7 +8,7 @@ func0000000000000002:                   # @func0000000000000002
 	vmflt.vf	v0, v8, fa4
 	vmv.v.i	v12, 0
 	vfmerge.vfm	v12, v12, fa5, v0
-	vfadd.vv	v8, v12, v8
+	vfadd.vv	v8, v8, v12
 	ret
 func0000000000000004:                   # @func0000000000000004
 	fmv.w.x	fa5, zero
@@ -18,7 +18,7 @@ func0000000000000004:                   # @func0000000000000004
 	vmv.v.x	v12, a0
 	lui	a0, 264704
 	vmerge.vxm	v12, v12, a0, v0
-	vfadd.vv	v8, v12, v8
+	vfadd.vv	v8, v8, v12
 	ret
 func000000000000000c:                   # @func000000000000000c
 	fmv.w.x	fa5, zero
@@ -44,5 +44,5 @@ func000000000000000a:                   # @func000000000000000a
 	vmfle.vf	v0, v8, fa3
 	vfmv.v.f	v12, fa5
 	vfmerge.vfm	v12, v12, fa4, v0
-	vfadd.vv	v8, v12, v8
+	vfadd.vv	v8, v8, v12
 	ret

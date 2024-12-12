@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 17 occurrences:
 ; jemalloc/optimized/emap.ll
 ; jemalloc/optimized/emap.pic.ll
 ; jemalloc/optimized/emap.sym.ll
@@ -16,7 +16,6 @@
 ; re2/optimized/compile.cc.ll
 ; redis/optimized/emap.ll
 ; redis/optimized/emap.sym.ll
-; spike/optimized/f32_classify.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1, i1 %2) #0 {

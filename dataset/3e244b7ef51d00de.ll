@@ -1,12 +1,13 @@
 
-; 2 occurrences:
+; 3 occurrences:
+; llvm/optimized/DbiStreamBuilder.cpp.ll
 ; raylib/optimized/rmodels.c.ll
 ; wireshark/optimized/packet-wai.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000030(i32 %0) #0 {
 entry:
   %1 = trunc i32 %0 to i16
-  %2 = add i16 %1, 37
+  %2 = add i16 %1, 2
   ret i16 %2
 }
 

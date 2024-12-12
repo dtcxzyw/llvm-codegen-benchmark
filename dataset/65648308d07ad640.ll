@@ -12,7 +12,7 @@
 ; verilator/optimized/V3Options.cpp.ll
 ; zstd/optimized/zstd_ldm.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %1, 1
   %3 = add i64 %2, 2
@@ -65,7 +65,7 @@ entry:
 ; ncnn/optimized/softmax_x86_avx512.cpp.ll
 ; ncnn/optimized/softmax_x86_fma.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000e6(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %1, 3
   %3 = add nuw nsw i64 %2, 4
@@ -123,11 +123,11 @@ entry:
 ; stb/optimized/stb_truetype.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000f4(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %1, 15
   %3 = add nuw nsw i64 %2, 16
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp samesign ult i64 %3, %0
   ret i1 %4
 }
 
@@ -135,7 +135,7 @@ entry:
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/giaResub6.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000066(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %1, 1
   %3 = add nsw i64 %2, 2
@@ -146,7 +146,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/grfmt_hdr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %1, 1
   %3 = add nuw i64 %2, 2

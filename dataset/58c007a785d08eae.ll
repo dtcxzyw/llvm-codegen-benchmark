@@ -1,5 +1,29 @@
 
-; 45 occurrences:
+; 89 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/ext.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/main.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pid.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/process.ll
+; boost/optimized/shell.ll
+; boost/optimized/spawn.ll
+; boost/optimized/syslog_backend.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/target.ll
+; boost/optimized/wait.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -45,6 +69,26 @@
 ; tokio-rs/optimized/2i86qkpybymk1snv.ll
 ; typst-rs/optimized/5antv5sfgwt5l2ke.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/1qb020ndphzxmvf33d06yonm0.ll
+; zed-rs/optimized/35jcvzd99rtsbpw1ntju6vgpx.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/4l6caaucwla3801rwx69seh61.ll
+; zed-rs/optimized/5e9omh398ijohtd01awo2ssl8.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/5p9dc47ccf9r9dua6dccyemun.ll
+; zed-rs/optimized/6gy7cm9m32a7fdg31v3lbyxhl.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7for60ncc55q4u0jy3fqr6omg.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
+; zed-rs/optimized/8yk2p2sb65wc4uirlpwonhoj2.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/bofvfc19lueo6mgf4butzdvgk.ll
+; zed-rs/optimized/bz6p16t2qoqszqvs08hoy0zu5.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
+; zed-rs/optimized/exs06pxuzkdidwvzya8luo4wf.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000032(i8 %0, ptr %1) #0 {
 entry:
@@ -54,7 +98,7 @@ entry:
   ret i1 %4
 }
 
-; 479 occurrences:
+; 475 occurrences:
 ; arrow/optimized/compare.cc.ll
 ; arrow/optimized/writer.cc.ll
 ; box2d/optimized/b2_world.cpp.ll
@@ -147,7 +191,6 @@ entry:
 ; mitsuba3/optimized/measured_polarized.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/obj.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/regular.cpp.ll
 ; mitsuba3/optimized/roughplastic.cpp.ll
 ; mitsuba3/optimized/scene.cpp.ll
@@ -199,7 +242,6 @@ entry:
 ; openjdk/optimized/vmThread.ll
 ; openjdk/optimized/zBarrier.ll
 ; openjdk/optimized/zGeneration.ll
-; openmpi/optimized/coll_tuned_component.ll
 ; openmpi/optimized/pmix_event_registration.ll
 ; openmpi/optimized/psensor_base_frame.ll
 ; openmpi/optimized/ras_base_node.ll
@@ -468,7 +510,6 @@ entry:
 ; pbrt-v4/optimized/scene.cpp.ll
 ; php/optimized/SAPI.ll
 ; php/optimized/ZendAccelerator.ll
-; php/optimized/php_pcre.ll
 ; php/optimized/phpdbg_print.ll
 ; php/optimized/zend_gc.ll
 ; postgres/optimized/allpaths.ll
@@ -530,7 +571,6 @@ entry:
 ; yalantinglibs/optimized/server.cpp.ll
 ; yosys/optimized/sim.ll
 ; z3/optimized/api_log.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/opt_frontend.cpp.ll
 ; z3/optimized/pb_solver.cpp.ll
 ; z3/optimized/smtlib_frontend.cpp.ll
@@ -543,7 +583,7 @@ entry:
   ret i1 %4
 }
 
-; 82 occurrences:
+; 81 occurrences:
 ; gromacs/optimized/energyhistory.cpp.ll
 ; gromacs/optimized/gmx_anaeig.cpp.ll
 ; grpc/optimized/subchannel_stream_client.cc.ll
@@ -616,7 +656,6 @@ entry:
 ; postgres/optimized/ruleutils.ll
 ; postgres/optimized/subscriptioncmds.ll
 ; postgres/optimized/wparser_def.ll
-; proj/optimized/cs2cs.cpp.ll
 ; qemu/optimized/system_vl.c.ll
 ; qemu/optimized/target_riscv_tcg_tcg-cpu.c.ll
 ; redis/optimized/background_thread.ll

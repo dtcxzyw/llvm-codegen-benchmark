@@ -1,268 +1,347 @@
 
-; 87 occurrences:
-; faiss/optimized/IndexBinaryHash.cpp.ll
-; jemalloc/optimized/edata.ll
-; jemalloc/optimized/edata.pic.ll
-; jemalloc/optimized/edata.sym.ll
-; jemalloc/optimized/hpdata.ll
-; jemalloc/optimized/hpdata.pic.ll
-; jemalloc/optimized/hpdata.sym.ll
-; oiio/optimized/CineonHeader.cpp.ll
-; oiio/optimized/argparse.cpp.ll
-; oiio/optimized/benchmark.cpp.ll
-; oiio/optimized/bmpinput.cpp.ll
-; oiio/optimized/bmpoutput.cpp.ll
-; oiio/optimized/cineoninput.cpp.ll
-; oiio/optimized/color_ocio.cpp.ll
-; oiio/optimized/ddsinput.cpp.ll
-; oiio/optimized/dpxinput.cpp.ll
-; oiio/optimized/dpxoutput.cpp.ll
-; oiio/optimized/environment.cpp.ll
-; oiio/optimized/errorhandler.cpp.ll
-; oiio/optimized/exrinput.cpp.ll
-; oiio/optimized/exroutput.cpp.ll
-; oiio/optimized/filesystem.cpp.ll
-; oiio/optimized/fitsinput.cpp.ll
-; oiio/optimized/fitsoutput.cpp.ll
-; oiio/optimized/formatspec.cpp.ll
-; oiio/optimized/hdrinput.cpp.ll
-; oiio/optimized/hdroutput.cpp.ll
-; oiio/optimized/icc.cpp.ll
-; oiio/optimized/icoinput.cpp.ll
-; oiio/optimized/icooutput.cpp.ll
-; oiio/optimized/iffinput.cpp.ll
-; oiio/optimized/iffoutput.cpp.ll
-; oiio/optimized/imagebuf.cpp.ll
-; oiio/optimized/imagebufalgo.cpp.ll
-; oiio/optimized/imagebufalgo_addsub.cpp.ll
-; oiio/optimized/imagebufalgo_channels.cpp.ll
-; oiio/optimized/imagebufalgo_compare.cpp.ll
-; oiio/optimized/imagebufalgo_copy.cpp.ll
-; oiio/optimized/imagebufalgo_deep.cpp.ll
-; oiio/optimized/imagebufalgo_draw.cpp.ll
-; oiio/optimized/imagebufalgo_mad.cpp.ll
-; oiio/optimized/imagebufalgo_minmaxchan.cpp.ll
-; oiio/optimized/imagebufalgo_muldiv.cpp.ll
-; oiio/optimized/imagebufalgo_opencv.cpp.ll
-; oiio/optimized/imagebufalgo_orient.cpp.ll
-; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
-; oiio/optimized/imagebufalgo_xform.cpp.ll
-; oiio/optimized/imagecache.cpp.ll
-; oiio/optimized/imageinput.cpp.ll
-; oiio/optimized/imageio.cpp.ll
-; oiio/optimized/imageioplugin.cpp.ll
-; oiio/optimized/imageoutput.cpp.ll
-; oiio/optimized/jpeginput.cpp.ll
-; oiio/optimized/jpegoutput.cpp.ll
-; oiio/optimized/maketexture.cpp.ll
-; oiio/optimized/paramlist.cpp.ll
-; oiio/optimized/pnginput.cpp.ll
-; oiio/optimized/pngoutput.cpp.ll
-; oiio/optimized/pnmoutput.cpp.ll
-; oiio/optimized/printinfo.cpp.ll
-; oiio/optimized/psdinput.cpp.ll
-; oiio/optimized/rlainput.cpp.ll
-; oiio/optimized/rlaoutput.cpp.ll
-; oiio/optimized/sgiinput.cpp.ll
-; oiio/optimized/sgioutput.cpp.ll
-; oiio/optimized/softimageinput.cpp.ll
-; oiio/optimized/strutil.cpp.ll
-; oiio/optimized/sysutil.cpp.ll
-; oiio/optimized/targainput.cpp.ll
-; oiio/optimized/targaoutput.cpp.ll
-; oiio/optimized/termoutput.cpp.ll
-; oiio/optimized/texture3d.cpp.ll
-; oiio/optimized/texturesys.cpp.ll
-; oiio/optimized/tiffinput.cpp.ll
-; oiio/optimized/tiffoutput.cpp.ll
-; oiio/optimized/typedesc.cpp.ll
-; oiio/optimized/xmp.cpp.ll
-; oiio/optimized/zfile.cpp.ll
-; openjdk/optimized/regmask.ll
-; php/optimized/ir_emit.ll
-; qemu/optimized/tcg-op.c.ll
-; qemu/optimized/util_memfd.c.ll
-; redis/optimized/edata.ll
-; redis/optimized/edata.sym.ll
-; redis/optimized/hpdata.ll
-; redis/optimized/hpdata.sym.ll
-; verilator/optimized/V3Const__gen.cpp.ll
+; 14 occurrences:
+; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
+; llvm/optimized/RISCVLegalizerInfo.cpp.ll
+; llvm/optimized/ScaledNumber.cpp.ll
+; mitsuba3/optimized/string.cpp.ll
+; qemu/optimized/fpu_softfloat.c.ll
+; qemu/optimized/optimize.c.ll
+; quickjs/optimized/libbf.ll
+; raylib/optimized/rcore.c.ll
+; tomlplusplus/optimized/toml.cpp.ll
+; velox/optimized/DecimalUtil.cpp.ll
+; zed-rs/optimized/9n21501da57t9vdyldumsgur9.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0) #0 {
+define i1 @func0000000000000021(i64 %0) #0 {
 entry:
-  %1 = and i64 %0, 1
-  %2 = icmp ne i64 %1, 0
-  ret i1 %2
+  %1 = icmp slt i64 %0, 0
+  ret i1 %1
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
-declare i64 @llvm.cttz.i64(i64, i1 immarg) #1
+declare i64 @llvm.ctlz.i64(i64, i1 immarg) #1
 
-; 7 occurrences:
-; abseil-cpp/optimized/hash_test.cc.ll
-; image-rs/optimized/249ukonr3l56u09i.ll
-; meshlab/optimized/save_project.cpp.ll
-; mini-lsm-rs/optimized/2y1m09w3fogtr6jd.ll
-; mini-lsm-rs/optimized/haynj55bb7tm6r1.ll
-; openjdk/optimized/divnode.ll
-; typst-rs/optimized/al9nyr8ju52xbc2.ll
+; 266 occurrences:
+; boost/optimized/monotonic_buffer_resource.ll
+; mold/optimized/arch-arm32.cc.ll
+; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
+; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
+; mold/optimized/arch-riscv.cc.RV64BE.cc.ll
+; mold/optimized/arch-riscv.cc.RV64LE.cc.ll
+; mold/optimized/cmdline.cc.ALPHA.cc.ll
+; mold/optimized/cmdline.cc.ARM32.cc.ll
+; mold/optimized/cmdline.cc.ARM64.cc.ll
+; mold/optimized/cmdline.cc.I386.cc.ll
+; mold/optimized/cmdline.cc.LOONGARCH32.cc.ll
+; mold/optimized/cmdline.cc.LOONGARCH64.cc.ll
+; mold/optimized/cmdline.cc.M68K.cc.ll
+; mold/optimized/cmdline.cc.PPC32.cc.ll
+; mold/optimized/cmdline.cc.PPC64V1.cc.ll
+; mold/optimized/cmdline.cc.PPC64V2.cc.ll
+; mold/optimized/cmdline.cc.RV32BE.cc.ll
+; mold/optimized/cmdline.cc.RV32LE.cc.ll
+; mold/optimized/cmdline.cc.RV64BE.cc.ll
+; mold/optimized/cmdline.cc.RV64LE.cc.ll
+; mold/optimized/cmdline.cc.S390X.cc.ll
+; mold/optimized/cmdline.cc.SH4.cc.ll
+; mold/optimized/cmdline.cc.SPARC64.cc.ll
+; mold/optimized/cmdline.cc.X86_64.cc.ll
+; mold/optimized/gc-sections.cc.ALPHA.cc.ll
+; mold/optimized/gc-sections.cc.ARM32.cc.ll
+; mold/optimized/gc-sections.cc.ARM64.cc.ll
+; mold/optimized/gc-sections.cc.I386.cc.ll
+; mold/optimized/gc-sections.cc.LOONGARCH32.cc.ll
+; mold/optimized/gc-sections.cc.LOONGARCH64.cc.ll
+; mold/optimized/gc-sections.cc.M68K.cc.ll
+; mold/optimized/gc-sections.cc.PPC32.cc.ll
+; mold/optimized/gc-sections.cc.PPC64V1.cc.ll
+; mold/optimized/gc-sections.cc.PPC64V2.cc.ll
+; mold/optimized/gc-sections.cc.RV32BE.cc.ll
+; mold/optimized/gc-sections.cc.RV32LE.cc.ll
+; mold/optimized/gc-sections.cc.RV64BE.cc.ll
+; mold/optimized/gc-sections.cc.RV64LE.cc.ll
+; mold/optimized/gc-sections.cc.S390X.cc.ll
+; mold/optimized/gc-sections.cc.SH4.cc.ll
+; mold/optimized/gc-sections.cc.SPARC64.cc.ll
+; mold/optimized/gc-sections.cc.X86_64.cc.ll
+; mold/optimized/gdb-index.cc.ALPHA.cc.ll
+; mold/optimized/gdb-index.cc.ARM32.cc.ll
+; mold/optimized/gdb-index.cc.ARM64.cc.ll
+; mold/optimized/gdb-index.cc.I386.cc.ll
+; mold/optimized/gdb-index.cc.LOONGARCH32.cc.ll
+; mold/optimized/gdb-index.cc.LOONGARCH64.cc.ll
+; mold/optimized/gdb-index.cc.M68K.cc.ll
+; mold/optimized/gdb-index.cc.PPC32.cc.ll
+; mold/optimized/gdb-index.cc.PPC64V1.cc.ll
+; mold/optimized/gdb-index.cc.PPC64V2.cc.ll
+; mold/optimized/gdb-index.cc.RV32BE.cc.ll
+; mold/optimized/gdb-index.cc.RV32LE.cc.ll
+; mold/optimized/gdb-index.cc.RV64BE.cc.ll
+; mold/optimized/gdb-index.cc.RV64LE.cc.ll
+; mold/optimized/gdb-index.cc.S390X.cc.ll
+; mold/optimized/gdb-index.cc.SH4.cc.ll
+; mold/optimized/gdb-index.cc.SPARC64.cc.ll
+; mold/optimized/gdb-index.cc.X86_64.cc.ll
+; mold/optimized/icf.cc.ALPHA.cc.ll
+; mold/optimized/icf.cc.ARM32.cc.ll
+; mold/optimized/icf.cc.ARM64.cc.ll
+; mold/optimized/icf.cc.I386.cc.ll
+; mold/optimized/icf.cc.LOONGARCH32.cc.ll
+; mold/optimized/icf.cc.LOONGARCH64.cc.ll
+; mold/optimized/icf.cc.M68K.cc.ll
+; mold/optimized/icf.cc.PPC32.cc.ll
+; mold/optimized/icf.cc.PPC64V1.cc.ll
+; mold/optimized/icf.cc.PPC64V2.cc.ll
+; mold/optimized/icf.cc.RV32BE.cc.ll
+; mold/optimized/icf.cc.RV32LE.cc.ll
+; mold/optimized/icf.cc.RV64BE.cc.ll
+; mold/optimized/icf.cc.RV64LE.cc.ll
+; mold/optimized/icf.cc.S390X.cc.ll
+; mold/optimized/icf.cc.SH4.cc.ll
+; mold/optimized/icf.cc.SPARC64.cc.ll
+; mold/optimized/icf.cc.X86_64.cc.ll
+; mold/optimized/input-files.cc.ALPHA.cc.ll
+; mold/optimized/input-files.cc.ARM32.cc.ll
+; mold/optimized/input-files.cc.ARM64.cc.ll
+; mold/optimized/input-files.cc.I386.cc.ll
+; mold/optimized/input-files.cc.LOONGARCH32.cc.ll
+; mold/optimized/input-files.cc.LOONGARCH64.cc.ll
+; mold/optimized/input-files.cc.M68K.cc.ll
+; mold/optimized/input-files.cc.PPC32.cc.ll
+; mold/optimized/input-files.cc.PPC64V1.cc.ll
+; mold/optimized/input-files.cc.PPC64V2.cc.ll
+; mold/optimized/input-files.cc.RV32BE.cc.ll
+; mold/optimized/input-files.cc.RV32LE.cc.ll
+; mold/optimized/input-files.cc.RV64BE.cc.ll
+; mold/optimized/input-files.cc.RV64LE.cc.ll
+; mold/optimized/input-files.cc.S390X.cc.ll
+; mold/optimized/input-files.cc.SH4.cc.ll
+; mold/optimized/input-files.cc.SPARC64.cc.ll
+; mold/optimized/input-files.cc.X86_64.cc.ll
+; mold/optimized/input-sections.cc.ALPHA.cc.ll
+; mold/optimized/input-sections.cc.ARM32.cc.ll
+; mold/optimized/input-sections.cc.ARM64.cc.ll
+; mold/optimized/input-sections.cc.I386.cc.ll
+; mold/optimized/input-sections.cc.LOONGARCH32.cc.ll
+; mold/optimized/input-sections.cc.LOONGARCH64.cc.ll
+; mold/optimized/input-sections.cc.M68K.cc.ll
+; mold/optimized/input-sections.cc.PPC32.cc.ll
+; mold/optimized/input-sections.cc.PPC64V1.cc.ll
+; mold/optimized/input-sections.cc.PPC64V2.cc.ll
+; mold/optimized/input-sections.cc.RV32BE.cc.ll
+; mold/optimized/input-sections.cc.RV32LE.cc.ll
+; mold/optimized/input-sections.cc.RV64BE.cc.ll
+; mold/optimized/input-sections.cc.RV64LE.cc.ll
+; mold/optimized/input-sections.cc.S390X.cc.ll
+; mold/optimized/input-sections.cc.SH4.cc.ll
+; mold/optimized/input-sections.cc.SPARC64.cc.ll
+; mold/optimized/input-sections.cc.X86_64.cc.ll
+; mold/optimized/linker-script.cc.ALPHA.cc.ll
+; mold/optimized/linker-script.cc.ARM32.cc.ll
+; mold/optimized/linker-script.cc.ARM64.cc.ll
+; mold/optimized/linker-script.cc.I386.cc.ll
+; mold/optimized/linker-script.cc.LOONGARCH32.cc.ll
+; mold/optimized/linker-script.cc.LOONGARCH64.cc.ll
+; mold/optimized/linker-script.cc.M68K.cc.ll
+; mold/optimized/linker-script.cc.PPC32.cc.ll
+; mold/optimized/linker-script.cc.PPC64V1.cc.ll
+; mold/optimized/linker-script.cc.PPC64V2.cc.ll
+; mold/optimized/linker-script.cc.RV32BE.cc.ll
+; mold/optimized/linker-script.cc.RV32LE.cc.ll
+; mold/optimized/linker-script.cc.RV64BE.cc.ll
+; mold/optimized/linker-script.cc.RV64LE.cc.ll
+; mold/optimized/linker-script.cc.S390X.cc.ll
+; mold/optimized/linker-script.cc.SH4.cc.ll
+; mold/optimized/linker-script.cc.SPARC64.cc.ll
+; mold/optimized/linker-script.cc.X86_64.cc.ll
+; mold/optimized/lto.cc.ALPHA.cc.ll
+; mold/optimized/lto.cc.ARM32.cc.ll
+; mold/optimized/lto.cc.ARM64.cc.ll
+; mold/optimized/lto.cc.I386.cc.ll
+; mold/optimized/lto.cc.LOONGARCH32.cc.ll
+; mold/optimized/lto.cc.LOONGARCH64.cc.ll
+; mold/optimized/lto.cc.M68K.cc.ll
+; mold/optimized/lto.cc.PPC32.cc.ll
+; mold/optimized/lto.cc.PPC64V1.cc.ll
+; mold/optimized/lto.cc.PPC64V2.cc.ll
+; mold/optimized/lto.cc.RV32BE.cc.ll
+; mold/optimized/lto.cc.RV32LE.cc.ll
+; mold/optimized/lto.cc.RV64BE.cc.ll
+; mold/optimized/lto.cc.RV64LE.cc.ll
+; mold/optimized/lto.cc.S390X.cc.ll
+; mold/optimized/lto.cc.SH4.cc.ll
+; mold/optimized/lto.cc.SPARC64.cc.ll
+; mold/optimized/lto.cc.X86_64.cc.ll
+; mold/optimized/main.cc.ALPHA.cc.ll
+; mold/optimized/main.cc.ARM32.cc.ll
+; mold/optimized/main.cc.ARM64.cc.ll
+; mold/optimized/main.cc.I386.cc.ll
+; mold/optimized/main.cc.LOONGARCH32.cc.ll
+; mold/optimized/main.cc.LOONGARCH64.cc.ll
+; mold/optimized/main.cc.M68K.cc.ll
+; mold/optimized/main.cc.PPC32.cc.ll
+; mold/optimized/main.cc.PPC64V1.cc.ll
+; mold/optimized/main.cc.PPC64V2.cc.ll
+; mold/optimized/main.cc.RV32BE.cc.ll
+; mold/optimized/main.cc.RV32LE.cc.ll
+; mold/optimized/main.cc.RV64BE.cc.ll
+; mold/optimized/main.cc.RV64LE.cc.ll
+; mold/optimized/main.cc.S390X.cc.ll
+; mold/optimized/main.cc.SH4.cc.ll
+; mold/optimized/main.cc.SPARC64.cc.ll
+; mold/optimized/main.cc.X86_64.cc.ll
+; mold/optimized/output-chunks.cc.ALPHA.cc.ll
+; mold/optimized/output-chunks.cc.ARM32.cc.ll
+; mold/optimized/output-chunks.cc.ARM64.cc.ll
+; mold/optimized/output-chunks.cc.I386.cc.ll
+; mold/optimized/output-chunks.cc.LOONGARCH32.cc.ll
+; mold/optimized/output-chunks.cc.LOONGARCH64.cc.ll
+; mold/optimized/output-chunks.cc.M68K.cc.ll
+; mold/optimized/output-chunks.cc.PPC32.cc.ll
+; mold/optimized/output-chunks.cc.PPC64V1.cc.ll
+; mold/optimized/output-chunks.cc.PPC64V2.cc.ll
+; mold/optimized/output-chunks.cc.RV32BE.cc.ll
+; mold/optimized/output-chunks.cc.RV32LE.cc.ll
+; mold/optimized/output-chunks.cc.RV64BE.cc.ll
+; mold/optimized/output-chunks.cc.RV64LE.cc.ll
+; mold/optimized/output-chunks.cc.S390X.cc.ll
+; mold/optimized/output-chunks.cc.SH4.cc.ll
+; mold/optimized/output-chunks.cc.SPARC64.cc.ll
+; mold/optimized/output-chunks.cc.X86_64.cc.ll
+; mold/optimized/passes.cc.ALPHA.cc.ll
+; mold/optimized/passes.cc.ARM32.cc.ll
+; mold/optimized/passes.cc.ARM64.cc.ll
+; mold/optimized/passes.cc.I386.cc.ll
+; mold/optimized/passes.cc.LOONGARCH32.cc.ll
+; mold/optimized/passes.cc.LOONGARCH64.cc.ll
+; mold/optimized/passes.cc.M68K.cc.ll
+; mold/optimized/passes.cc.PPC32.cc.ll
+; mold/optimized/passes.cc.PPC64V1.cc.ll
+; mold/optimized/passes.cc.PPC64V2.cc.ll
+; mold/optimized/passes.cc.RV32BE.cc.ll
+; mold/optimized/passes.cc.RV32LE.cc.ll
+; mold/optimized/passes.cc.RV64BE.cc.ll
+; mold/optimized/passes.cc.RV64LE.cc.ll
+; mold/optimized/passes.cc.S390X.cc.ll
+; mold/optimized/passes.cc.SH4.cc.ll
+; mold/optimized/passes.cc.SPARC64.cc.ll
+; mold/optimized/passes.cc.X86_64.cc.ll
+; mold/optimized/perf.cc.ll
+; mold/optimized/relocatable.cc.ALPHA.cc.ll
+; mold/optimized/relocatable.cc.ARM32.cc.ll
+; mold/optimized/relocatable.cc.ARM64.cc.ll
+; mold/optimized/relocatable.cc.I386.cc.ll
+; mold/optimized/relocatable.cc.LOONGARCH32.cc.ll
+; mold/optimized/relocatable.cc.LOONGARCH64.cc.ll
+; mold/optimized/relocatable.cc.M68K.cc.ll
+; mold/optimized/relocatable.cc.PPC32.cc.ll
+; mold/optimized/relocatable.cc.PPC64V1.cc.ll
+; mold/optimized/relocatable.cc.PPC64V2.cc.ll
+; mold/optimized/relocatable.cc.RV32BE.cc.ll
+; mold/optimized/relocatable.cc.RV32LE.cc.ll
+; mold/optimized/relocatable.cc.RV64BE.cc.ll
+; mold/optimized/relocatable.cc.RV64LE.cc.ll
+; mold/optimized/relocatable.cc.S390X.cc.ll
+; mold/optimized/relocatable.cc.SH4.cc.ll
+; mold/optimized/relocatable.cc.SPARC64.cc.ll
+; mold/optimized/relocatable.cc.X86_64.cc.ll
+; openusd/optimized/adapterManager.cpp.ll
+; openusd/optimized/basisCurvesAdapter.cpp.ll
+; openusd/optimized/bboxCache.cpp.ll
+; openusd/optimized/changeManager.cpp.ll
+; openusd/optimized/dataSourceMaterial.cpp.ll
+; openusd/optimized/delegate.cpp.ll
+; openusd/optimized/dependencyForwardingSceneIndex.cpp.ll
+; openusd/optimized/diagnosticMgr.cpp.ll
+; openusd/optimized/dirtyList.cpp.ll
+; openusd/optimized/dispatcher.cpp.ll
+; openusd/optimized/drawModeAdapter.cpp.ll
+; openusd/optimized/generativeProceduralAdapter.cpp.ll
+; openusd/optimized/generativeProceduralResolvingSceneIndex.cpp.ll
+; openusd/optimized/gprimAdapter.cpp.ll
+; openusd/optimized/indexProxy.cpp.ll
+; openusd/optimized/instanceAdapter.cpp.ll
+; openusd/optimized/lightAdapter.cpp.ll
+; openusd/optimized/materialBindingAPI.cpp.ll
+; openusd/optimized/meshAdapter.cpp.ll
+; openusd/optimized/noticeRegistry.cpp.ll
+; openusd/optimized/nurbsCurvesAdapter.cpp.ll
+; openusd/optimized/piPrototypeSceneIndex.cpp.ll
+; openusd/optimized/pointInstancerAdapter.cpp.ll
+; openusd/optimized/pointsAdapter.cpp.ll
+; openusd/optimized/prim.cpp.ll
+; openusd/optimized/primAdapter.cpp.ll
+; openusd/optimized/primTypeIndex.cpp.ll
+; openusd/optimized/registry.cpp.ll
+; openusd/optimized/registryManager.cpp.ll
+; openusd/optimized/renderIndex.cpp.ll
+; openusd/optimized/reporterBase.cpp.ll
+; openusd/optimized/resolvedAttributeCache.cpp.ll
+; openusd/optimized/resolver.cpp.ll
+; openusd/optimized/sceneIndexAdapterSceneDelegate.cpp.ll
+; openusd/optimized/skeletonAdapter.cpp.ll
+; openusd/optimized/stageCacheContext.cpp.ll
+; openusd/optimized/testUsdThreadedAuthoring.cpp.ll
+; openusd/optimized/usdzResolver.cpp.ll
+; openusd/optimized/value.cpp.ll
+; openvdb/optimized/FastSweeping.cc.ll
+; openvdb/optimized/Filter.cc.ll
+; openvdb/optimized/LevelSetSphere.cc.ll
+; openvdb/optimized/MultiResGrid.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0) #0 {
+define i1 @func0000000000000061(i64 %0) #0 {
 entry:
-  %1 = and i64 %0, 255
-  %2 = icmp ne i64 %1, 0
-  ret i1 %2
+  %1 = icmp eq i64 %0, 1
+  ret i1 %1
 }
 
-; 76 occurrences:
-; libjpeg-turbo/optimized/jcphuff.c.ll
-; oiio/optimized/CineonHeader.cpp.ll
-; oiio/optimized/argparse.cpp.ll
-; oiio/optimized/benchmark.cpp.ll
-; oiio/optimized/bmpinput.cpp.ll
-; oiio/optimized/bmpoutput.cpp.ll
-; oiio/optimized/cineoninput.cpp.ll
-; oiio/optimized/color_ocio.cpp.ll
-; oiio/optimized/ddsinput.cpp.ll
-; oiio/optimized/dpxinput.cpp.ll
-; oiio/optimized/dpxoutput.cpp.ll
-; oiio/optimized/environment.cpp.ll
-; oiio/optimized/errorhandler.cpp.ll
-; oiio/optimized/exrinput.cpp.ll
-; oiio/optimized/exroutput.cpp.ll
-; oiio/optimized/filesystem.cpp.ll
-; oiio/optimized/fitsinput.cpp.ll
-; oiio/optimized/fitsoutput.cpp.ll
-; oiio/optimized/formatspec.cpp.ll
-; oiio/optimized/hdrinput.cpp.ll
-; oiio/optimized/hdroutput.cpp.ll
-; oiio/optimized/icc.cpp.ll
-; oiio/optimized/icoinput.cpp.ll
-; oiio/optimized/icooutput.cpp.ll
-; oiio/optimized/iffinput.cpp.ll
-; oiio/optimized/iffoutput.cpp.ll
-; oiio/optimized/imagebuf.cpp.ll
-; oiio/optimized/imagebufalgo.cpp.ll
-; oiio/optimized/imagebufalgo_addsub.cpp.ll
-; oiio/optimized/imagebufalgo_channels.cpp.ll
-; oiio/optimized/imagebufalgo_compare.cpp.ll
-; oiio/optimized/imagebufalgo_copy.cpp.ll
-; oiio/optimized/imagebufalgo_deep.cpp.ll
-; oiio/optimized/imagebufalgo_draw.cpp.ll
-; oiio/optimized/imagebufalgo_mad.cpp.ll
-; oiio/optimized/imagebufalgo_minmaxchan.cpp.ll
-; oiio/optimized/imagebufalgo_muldiv.cpp.ll
-; oiio/optimized/imagebufalgo_opencv.cpp.ll
-; oiio/optimized/imagebufalgo_orient.cpp.ll
-; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
-; oiio/optimized/imagebufalgo_xform.cpp.ll
-; oiio/optimized/imagecache.cpp.ll
-; oiio/optimized/imageinput.cpp.ll
-; oiio/optimized/imageio.cpp.ll
-; oiio/optimized/imageioplugin.cpp.ll
-; oiio/optimized/imageoutput.cpp.ll
-; oiio/optimized/jpeginput.cpp.ll
-; oiio/optimized/jpegoutput.cpp.ll
-; oiio/optimized/maketexture.cpp.ll
-; oiio/optimized/paramlist.cpp.ll
-; oiio/optimized/pnginput.cpp.ll
-; oiio/optimized/pngoutput.cpp.ll
-; oiio/optimized/pnmoutput.cpp.ll
-; oiio/optimized/printinfo.cpp.ll
-; oiio/optimized/psdinput.cpp.ll
-; oiio/optimized/rlainput.cpp.ll
-; oiio/optimized/rlaoutput.cpp.ll
-; oiio/optimized/sgiinput.cpp.ll
-; oiio/optimized/sgioutput.cpp.ll
-; oiio/optimized/softimageinput.cpp.ll
-; oiio/optimized/strutil.cpp.ll
-; oiio/optimized/sysutil.cpp.ll
-; oiio/optimized/targainput.cpp.ll
-; oiio/optimized/targaoutput.cpp.ll
-; oiio/optimized/termoutput.cpp.ll
-; oiio/optimized/texture3d.cpp.ll
-; oiio/optimized/texturesys.cpp.ll
-; oiio/optimized/tiffinput.cpp.ll
-; oiio/optimized/tiffoutput.cpp.ll
-; oiio/optimized/typedesc.cpp.ll
-; oiio/optimized/xmp.cpp.ll
-; oiio/optimized/zfile.cpp.ll
-; openjdk/optimized/macroAssembler_x86.ll
-; rust-analyzer-rs/optimized/2pjlntmpzwg88apl.ll
-; rust-analyzer-rs/optimized/4ij72b67lj8l3d8u.ll
-; rust-analyzer-rs/optimized/8q1esjraj83sh5t.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0) #0 {
-entry:
-  %1 = and i64 %0, 4294967295
-  %2 = icmp eq i64 %1, 0
-  ret i1 %2
-}
-
-; 1 occurrences:
-; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0) #0 {
-entry:
-  %1 = and i64 %0, 16383
-  %2 = icmp eq i64 %1, 0
-  ret i1 %2
-}
-
-; 10 occurrences:
-; arrow/optimized/compare.cc.ll
-; arrow/optimized/int_util.cc.ll
+; 19 occurrences:
+; abseil-cpp/optimized/numbers.cc.ll
 ; arrow/optimized/list_util.cc.ll
-; arrow/optimized/vector_selection_filter_internal.cc.ll
-; arrow/optimized/vector_selection_take_internal.cc.ll
-; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
-; llvm/optimized/DAGCombiner.cpp.ll
-; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
+; cpython/optimized/obmalloc.ll
+; hermes/optimized/BigIntSupport.cpp.ll
+; llvm/optimized/AsmPrinter.cpp.ll
+; llvm/optimized/AttributorAttributes.cpp.ll
+; llvm/optimized/RISCVMatInt.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
-; tree-sitter-rs/optimized/50gi8jfmf82cuy8e.ll
+; mimalloc/optimized/bitmap.c.ll
+; qemu/optimized/accel_tcg_cputlb.c.ll
+; qemu/optimized/fpu_softfloat.c.ll
+; qemu/optimized/hw_vfio_pci.c.ll
+; qemu/optimized/hw_virtio_virtio-pci.c.ll
+; qemu/optimized/linux-user_elfload.c.ll
+; qemu/optimized/optimize.c.ll
+; qemu/optimized/util_buffer.c.ll
+; qemu/optimized/util_qht.c.ll
+; quickjs/optimized/libbf.ll
+; tomlplusplus/optimized/toml.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0) #0 {
 entry:
-  %1 = and i64 %0, 1
-  %2 = icmp ne i64 %1, 0
-  ret i1 %2
+  %1 = icmp slt i64 %0, 0
+  ret i1 %1
 }
 
-; 6 occurrences:
-; arrow/optimized/compare.cc.ll
-; arrow/optimized/int_util.cc.ll
-; arrow/optimized/list_util.cc.ll
-; arrow/optimized/vector_selection_filter_internal.cc.ll
-; arrow/optimized/vector_selection_take_internal.cc.ll
-; llvm/optimized/RISCVMatInt.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0) #0 {
-entry:
-  %1 = and i64 %0, 8191
-  %2 = icmp ne i64 %1, 0
-  ret i1 %2
-}
-
-; 3 occurrences:
-; arrow/optimized/concatenate.cc.ll
-; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
+; 2 occurrences:
+; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i64 %0) #0 {
 entry:
-  %1 = and i64 %0, 1
-  %2 = icmp eq i64 %1, 0
-  ret i1 %2
+  %1 = icmp sgt i64 %0, -1
+  ret i1 %1
 }
 
 ; 1 occurrences:
-; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
+; llvm/optimized/blake3.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0) #0 {
+define i1 @func000000000000002c(i64 %0) #0 {
 entry:
-  %1 = and i64 %0, 1
-  %2 = icmp eq i64 %1, 0
-  ret i1 %2
+  %1 = icmp ne i64 %0, 1
+  ret i1 %1
 }
 
 attributes #0 = { nounwind }

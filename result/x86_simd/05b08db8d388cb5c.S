@@ -50,3 +50,20 @@ func0000000000000007:                   # @func0000000000000007
 	vpord	.LCPI2_2(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq
+.LCPI3_0:
+	.quad	4294967296                      # 0x100000000
+.LCPI3_1:
+	.long	32                              # 0x20
+.LCPI3_2:
+	.long	16                              # 0x10
+.LCPI3_3:
+	.long	8                               # 0x8
+func0000000000000053:                   # @func0000000000000053
+	vpslld	$31, %xmm0, %xmm0
+	vpmovd2m	%xmm0, %k1
+	vpcmpltuq	.LCPI3_0(%rip){1to4}, %ymm1, %k2
+	vpbroadcastd	.LCPI3_1(%rip), %xmm0 {%k2} {z} # xmm0 {%k2} {z} = [32,32,32,32]
+	vpord	.LCPI3_2(%rip){1to4}, %xmm0, %xmm0 {%k1}
+	vpord	.LCPI3_3(%rip){1to4}, %xmm0, %xmm0
+	vzeroupper
+	retq

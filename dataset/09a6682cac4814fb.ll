@@ -6,9 +6,9 @@
 ; opencv/optimized/fr_lfw_benchmark.cpp.ll
 ; openspiel/optimized/markov_soccer.cc.ll
 ; Function Attrs: nounwind
-define double @func0000000000000022(i64 %0, ptr %1) #0 {
+define double @func0000000000000032(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 32
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 32
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0
   %5 = ashr exact i64 %4, 5

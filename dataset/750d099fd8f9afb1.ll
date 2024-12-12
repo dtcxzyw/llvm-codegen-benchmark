@@ -62,7 +62,7 @@ entry:
 ; abc/optimized/cuddCache.c.ll
 ; abc/optimized/cuddReorder.c.ll
 ; abc/optimized/cuddTable.c.ll
-; hyperscan/optimized/accel.c.ll
+; boost/optimized/dump_avx2.ll
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/hwlm.c.ll
 ; hyperscan/optimized/lbr.c.ll
@@ -71,12 +71,12 @@ entry:
 ; hyperscan/optimized/truffle.c.ll
 ; libjpeg-turbo/optimized/jmemmgr.c.ll
 ; libquic/optimized/exponentiation.c.ll
-; linux/optimized/bitmap-str.ll
 ; linux/optimized/buffered-io.ll
 ; linux/optimized/direct-io.ll
 ; linux/optimized/kfifo.ll
 ; linux/optimized/string.ll
 ; linux/optimized/vmalloc.ll
+; lvgl/optimized/lv_string_builtin.ll
 ; miniaudio/optimized/unity.c.ll
 ; nuklear/optimized/unity.c.ll
 ; nuttx/optimized/lib_getgrbufr.c.ll

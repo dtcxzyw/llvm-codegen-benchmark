@@ -1,33 +1,25 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	movi	v2.16b, #248
-	movi	v3.16b, #250
-	and	v1.16b, v1.16b, v2.16b
-	and	v0.16b, v0.16b, v3.16b
-	movi	v2.16b, #1
-	orr	v0.16b, v1.16b, v0.16b
-	orr	v0.16b, v0.16b, v2.16b
+	and	w8, w1, #0xfffffff8
+	and	w9, w0, #0xfffffffb
+	orr	w8, w8, w9
+	orr	w0, w8, #0x1
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	movi	v2.16b, #154
-	movi	v3.16b, #155
-	and	v1.16b, v1.16b, v2.16b
-	and	v0.16b, v0.16b, v3.16b
-	movi	v2.16b, #4
-	orr	v0.16b, v1.16b, v0.16b
-	orr	v0.16b, v0.16b, v2.16b
+	mov	w8, #-102                       // =0xffffff9a
+	and	w9, w0, #0xffffff9f
+	and	w8, w1, w8
+	orr	w8, w8, w9
+	orr	w0, w8, #0x4
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	movi	v2.16b, #248
-	movi	v3.16b, #250
-	and	v1.16b, v1.16b, v2.16b
-	and	v0.16b, v0.16b, v3.16b
-	movi	v2.16b, #1
-	orr	v0.16b, v1.16b, v0.16b
-	orr	v0.16b, v0.16b, v2.16b
+	and	w8, w1, #0xfffffff8
+	and	w9, w0, #0xfffffffb
+	orr	w8, w8, w9
+	orr	w0, w8, #0x1
 	ret
                                         // -- End function

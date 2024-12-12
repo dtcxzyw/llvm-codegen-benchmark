@@ -2,12 +2,12 @@
 ; 1 occurrences:
 ; darktable/optimized/RawImageDataFloat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -2
   %4 = add i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   %7 = icmp ugt i64 %6, 1
   ret i1 %7
 }
@@ -15,12 +15,12 @@ entry:
 ; 1 occurrences:
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000108(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 33554431
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   %7 = icmp ugt i64 %6, 122784
   ret i1 %7
 }
@@ -91,25 +91,25 @@ entry:
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001cc(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000038c(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1016
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = sub i64 0, %0
-  %7 = icmp ne i64 %5, %6
+  %6 = sub nsw i64 0, %5
+  %7 = icmp ne i64 %0, %6
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c4(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000384(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65535
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   %7 = icmp ult i64 %6, 79
   ret i1 %7
 }

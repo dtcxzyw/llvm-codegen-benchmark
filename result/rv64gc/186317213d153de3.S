@@ -25,7 +25,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	fle.s	a1, fa5, fa0
 	and	a0, a0, a1
 	ret
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	sext.w	a0, a0
 	fmv.w.x	fa5, zero
 	feq.s	a1, fa0, fa5
@@ -34,7 +34,7 @@ func0000000000000071:                   # @func0000000000000071
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000141:                   # @func0000000000000141
 	sext.w	a0, a0
 	fmv.w.x	fa5, zero
 	fle.s	a1, fa0, fa5
@@ -42,7 +42,7 @@ func00000000000000a1:                   # @func00000000000000a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	sext.w	a0, a0
 	fmv.w.x	fa5, zero
 	flt.s	a1, fa0, fa5
@@ -50,7 +50,7 @@ func0000000000000021:                   # @func0000000000000021
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func00000000000000ac:                   # @func00000000000000ac
+func000000000000014c:                   # @func000000000000014c
 	sext.w	a0, a0
 	lui	a1, 2048
 	fmv.w.x	fa5, a1
@@ -58,7 +58,7 @@ func00000000000000ac:                   # @func00000000000000ac
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	sext.w	a0, a0
 	fmv.w.x	fa5, zero
 	flt.s	a1, fa5, fa0
@@ -82,7 +82,7 @@ func00000000000000a8:                   # @func00000000000000a8
 	feq.s	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	sext.w	a0, a0
 	lui	a1, 212992
 	fmv.w.x	fa5, a1
@@ -115,7 +115,7 @@ func0000000000000014:                   # @func0000000000000014
 	ret
 .LCPI14_0:
 	.word	0x3b23d70a                      # float 0.00249999994
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	lui	a1, %hi(.LCPI14_0)
 	flw	fa5, %lo(.LCPI14_0)(a1)
 	sext.w	a0, a0
@@ -142,14 +142,14 @@ func00000000000000c4:                   # @func00000000000000c4
 	flt.s	a1, fa5, fa0
 	and	a0, a0, a1
 	ret
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	sext.w	a0, a0
 	fmv.w.x	fa5, zero
 	flt.s	a1, fa5, fa0
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	sext.w	a0, a0
 	lui	a1, 258048
 	fmv.w.x	fa5, a1
@@ -171,7 +171,7 @@ func0000000000000018:                   # @func0000000000000018
 	feq.s	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
-func000000000000007a:                   # @func000000000000007a
+func00000000000000ea:                   # @func00000000000000ea
 	sext.w	a0, a0
 	fmv.w.x	fa5, zero
 	feq.s	a1, fa0, fa5
@@ -179,7 +179,7 @@ func000000000000007a:                   # @func000000000000007a
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret
-func00000000000000b1:                   # @func00000000000000b1
+func0000000000000161:                   # @func0000000000000161
 	sext.w	a0, a0
 	fmv.w.x	fa5, zero
 	flt.s	a1, fa5, fa0
@@ -187,11 +187,27 @@ func00000000000000b1:                   # @func00000000000000b1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
+func000000000000018c:                   # @func000000000000018c
+	sext.w	a0, a0
+	fmv.w.x	fa5, zero
+	fle.s	a1, fa5, fa0
+	addi	a0, a0, -8
+	snez	a0, a0
+	and	a0, a0, a1
+	ret
 func00000000000000c8:                   # @func00000000000000c8
 	sext.w	a0, a0
 	fmv.w.x	fa5, zero
 	snez	a0, a0
 	feq.s	a1, fa0, fa5
+	and	a0, a0, a1
+	ret
+func0000000000000188:                   # @func0000000000000188
+	sext.w	a0, a0
+	fmv.w.x	fa5, zero
+	fle.s	a1, fa5, fa0
+	sltiu	a0, a0, 2
+	not	a0, a0
 	and	a0, a0, a1
 	ret
 func000000000000001c:                   # @func000000000000001c
@@ -211,7 +227,7 @@ func00000000000000a4:                   # @func00000000000000a4
 	flt.s	a1, fa5, fa0
 	and	a0, a0, a1
 	ret
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	sext.w	a0, a0
 	fmv.w.x	fa5, zero
 	feq.s	a1, fa0, fa5

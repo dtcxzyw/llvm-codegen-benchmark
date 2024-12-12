@@ -18,9 +18,9 @@ func0000000000000010:                   # @func0000000000000010
 	li	a0, 1
 .LBB2_2:                                # %entry
 	ret
-func0000000000000020:                   # @func0000000000000020
-	srliw	a1, a1, 15
-	snez	a1, a1
+func000000000000001b:                   # @func000000000000001b
+	sext.w	a1, a1
+	slti	a1, a1, 0
 	addi	a1, a1, -1
 	and	a0, a0, a1
 	ret

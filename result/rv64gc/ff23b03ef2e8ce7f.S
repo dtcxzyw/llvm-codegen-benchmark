@@ -6,6 +6,14 @@ func000000000000007e:                   # @func000000000000007e
 	mul	a0, a0, a1
 	srliw	a0, a0, 16
 	ret
+func0000000000000020:                   # @func0000000000000020
+	add	a1, a1, a2
+	lui	a2, 1048279
+	add	a0, a0, a1
+	addi	a1, a2, -847
+	mul	a0, a0, a1
+	srliw	a0, a0, 19
+	ret
 func000000000000002a:                   # @func000000000000002a
 	add	a1, a1, a2
 	lui	a2, 1048279

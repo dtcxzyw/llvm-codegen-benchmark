@@ -3,6 +3,6 @@ func0000000000000001:                   # @func0000000000000001
 	bzhiq	%rax, %rdx, %rax
 	xorl	%edx, %edx
 	divq	%rsi
-	cmpq	%rdi, %rdx
+	cmpq	%rdx, %rdi
 	sete	%al
 	retq

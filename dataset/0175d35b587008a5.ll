@@ -21,18 +21,18 @@ entry:
 ; llvm/optimized/SMTConstraintManager.cpp.ll
 ; qemu/optimized/hw_net_rocker_rocker.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = add i32 %2, 3
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; openjdk/optimized/mlib_ImageLookUp_Bit.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000017a(i32 %0, i32 %1) #0 {
+define i1 @func00000000000002ea(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = add nsw i32 %2, -16
@@ -47,7 +47,7 @@ entry:
 ; openjdk/optimized/mlib_ImageLookUp_Bit.ll
 ; openspiel/optimized/oh_hell.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000176(i32 %0, i32 %1) #0 {
+define i1 @func00000000000002e6(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = add nsw i32 %2, -8
@@ -59,7 +59,7 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/MmapAllocator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000044(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 3
   %3 = add i32 %2, 8
@@ -71,11 +71,11 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/wlcBlast.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003d6(i32 %0, i32 %1) #0 {
+define i1 @func00000000000007a6(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = add nuw nsw i32 %2, 2
-  %4 = icmp sgt i32 %3, %0
+  %4 = icmp slt i32 %0, %3
   ret i1 %4
 }
 
@@ -96,7 +96,7 @@ entry:
 ; openusd/optimized/yuv_scale.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 16
   %3 = add i32 %2, -65536
@@ -109,7 +109,7 @@ entry:
 ; wireshark/optimized/msg_dlmap.c.ll
 ; wireshark/optimized/msg_ulmap.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000346(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000686(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 2
   %3 = add nsw i32 %2, -7
@@ -121,7 +121,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/msg_ulmap.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000356(i32 %0, i32 %1) #0 {
+define i1 @func00000000000006a6(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 2
   %3 = add nsw i32 %2, -7
@@ -130,31 +130,30 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; linux/optimized/calipso.ll
-; wireshark/optimized/packet-shim6.c.ll
+; 1 occurrences:
+; openmpi/optimized/nbc_iallreduce.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003f4(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000281(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl nsw i32 %1, 1
+  %3 = add i32 %2, -3
+  %4 = icmp eq i32 %0, %3
+  ret i1 %4
+}
+
+; 1 occurrences:
+; linux/optimized/calipso.ll
+; Function Attrs: nounwind
+define i1 @func00000000000007e4(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 3
   %3 = add nuw nsw i32 %2, 8
-  %4 = add nuw nsw i32 %0, 5
+  %4 = add nuw nsw i32 %0, 1
   %5 = icmp ult i32 %4, %3
   ret i1 %5
 }
 
-; 1 occurrences:
-; openmpi/optimized/nbc_iallreduce.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000141(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl nsw i32 %1, 1
-  %3 = add i32 %2, -3
-  %4 = icmp eq i32 %3, %0
-  ret i1 %4
-}
-
-; 623 occurrences:
+; 622 occurrences:
 ; z3/optimized/ackermannize_bv_tactic.cpp.ll
 ; z3/optimized/ackr_bound_probe.cpp.ll
 ; z3/optimized/ackr_model_converter.cpp.ll
@@ -252,7 +251,6 @@ entry:
 ; z3/optimized/check_relation.cpp.ll
 ; z3/optimized/check_sat_result.cpp.ll
 ; z3/optimized/clp_context.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/cofactor_elim_term_ite.cpp.ll
 ; z3/optimized/cofactor_term_ite_tactic.cpp.ll
 ; z3/optimized/collect_occs.cpp.ll
@@ -791,11 +789,11 @@ entry:
 ; 1 occurrences:
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003f1(i32 %0, i32 %1) #0 {
+define i1 @func00000000000007e1(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = add nuw nsw i32 %2, 8
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
@@ -803,7 +801,7 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 3
   %3 = add i32 %2, -32

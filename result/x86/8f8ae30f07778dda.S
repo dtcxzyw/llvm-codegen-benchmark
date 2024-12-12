@@ -1,5 +1,9 @@
 func0000000000000182:                   # @func0000000000000182
-	cmpq	$1, %rdx
-	sbbq	$-1, %rdi
-	leaq	(%rdi,%rsi), %rax
+	xorl	%eax, %eax
+	testq	%rdx, %rdx
+	setne	%al
+	shlq	$4, %rsi
+	shll	$4, %eax
+	addq	%rsi, %rax
+	addq	%rdi, %rax
 	retq

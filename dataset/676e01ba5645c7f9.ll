@@ -1,8 +1,9 @@
 
-; 433 occurrences:
+; 429 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; abc/optimized/aigRetF.c.ll
+; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/bmcCexCut.c.ll
 ; abc/optimized/bmcCexDepth.c.ll
 ; abc/optimized/bmcCexTools.c.ll
@@ -16,11 +17,9 @@
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/decode.c.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
-; cmake/optimized/setopt.c.ll
 ; cpython/optimized/bytearrayobject.ll
 ; cpython/optimized/bytesobject.ll
 ; cpython/optimized/unicodeobject.ll
-; curl/optimized/libcurl_la-setopt.ll
 ; git/optimized/http.ll
 ; git/optimized/unpack-trees.ll
 ; hermes/optimized/zip.c.ll
@@ -54,7 +53,6 @@
 ; linux/optimized/io_uring.ll
 ; linux/optimized/libahci.ll
 ; linux/optimized/link.ll
-; linux/optimized/machine_kexec_64.ll
 ; linux/optimized/manage.ll
 ; linux/optimized/maple_tree.ll
 ; linux/optimized/memory.ll
@@ -83,7 +81,6 @@
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTDiagnostic.cpp.ll
-; llvm/optimized/BasicAliasAnalysis.cpp.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; llvm/optimized/CallLowering.cpp.ll
 ; llvm/optimized/CombinerHelper.cpp.ll
@@ -427,7 +424,6 @@
 ; spike/optimized/triggers.ll
 ; spike/optimized/umaqa.ll
 ; stockfish/optimized/movegen.ll
-; tokio-rs/optimized/46apu3hqx0w07xoc.ll
 ; velox/optimized/HashStringAllocator.cpp.ll
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll

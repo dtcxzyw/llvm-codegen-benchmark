@@ -2,7 +2,7 @@
 	.quad	4096                            # 0x1000
 .LCPI0_1:
 	.quad	3                               # 0x3
-func0000000000000023:                   # @func0000000000000023
+func0000000000000043:                   # @func0000000000000043
 	vptestmd	%xmm1, %xmm1, %k1
 	vorpd	.LCPI0_0(%rip){1to4}, %ymm0, %ymm0 {%k1}
 	vorpd	.LCPI0_1(%rip){1to4}, %ymm0, %ymm0
@@ -11,7 +11,7 @@ func0000000000000023:                   # @func0000000000000023
 	.quad	1095216660480                   # 0xff00000000
 .LCPI1_1:
 	.quad	4278190080                      # 0xff000000
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	vptestmd	%xmm1, %xmm1, %k1
 	vorpd	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0 {%k1}
 	vorpd	.LCPI1_1(%rip){1to4}, %ymm0, %ymm0
@@ -51,7 +51,7 @@ func0000000000000014:                   # @func0000000000000014
 	.quad	2                               # 0x2
 .LCPI5_1:
 	.quad	4                               # 0x4
-func000000000000002d:                   # @func000000000000002d
+func000000000000004d:                   # @func000000000000004d
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpnltd	%xmm2, %xmm1, %k1
 	vorpd	.LCPI5_0(%rip){1to4}, %ymm0, %ymm0 {%k1}
@@ -61,7 +61,7 @@ func000000000000002d:                   # @func000000000000002d
 	.quad	8                               # 0x8
 .LCPI6_1:
 	.quad	32                              # 0x20
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpnltd	%xmm2, %xmm1, %k1
 	vorpd	.LCPI6_0(%rip){1to4}, %ymm0, %ymm0 {%k1}

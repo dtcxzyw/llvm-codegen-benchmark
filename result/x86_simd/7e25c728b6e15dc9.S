@@ -106,7 +106,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 .LCPI2_0:
 	.long	1                               # 0x1
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrd	$1, %xmm2, %eax
 	vextracti128	$1, %ymm1, %xmm3

@@ -40,13 +40,13 @@
 ; mitsuba3/optimized/codeholder.cpp.ll
 ; mitsuba3/optimized/rapass.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 2305843009213693951
   %3 = and i64 %2, 2305843009213693951
   %4 = add nuw nsw i64 %3, 1
   %5 = and i64 %4, 4611686018427387900
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
@@ -95,13 +95,13 @@ entry:
 ; minetest/optimized/guiTable.cpp.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 4611686018427387903
   %3 = and i64 %2, 4611686018427387903
   %4 = add nuw nsw i64 %3, 1
   %5 = and i64 %4, 9223372036854775800
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
@@ -112,13 +112,13 @@ entry:
 ; darktable/optimized/PentaxDecompressor.cpp.ll
 ; darktable/optimized/TableLookUp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 9223372036854775807
   %3 = and i64 %2, 9223372036854775807
   %4 = add nuw i64 %3, 1
   %5 = and i64 %4, -64
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
@@ -129,13 +129,13 @@ entry:
 ; darktable/optimized/PentaxDecompressor.cpp.ll
 ; darktable/optimized/TableLookUp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000141(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 9223372036854775807
   %3 = and i64 %2, 9223372036854775807
   %4 = add nuw i64 %3, 1
   %5 = and i64 %4, -64
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 

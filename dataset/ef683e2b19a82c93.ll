@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 21 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -20,6 +20,7 @@
 ; wireshark/optimized/mtp3_summary_dialog.cpp.ll
 ; wireshark/optimized/packet-nasdaq-itch.c.ll
 ; wireshark/optimized/packet-pn-ptcp.c.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0) #0 {
 entry:

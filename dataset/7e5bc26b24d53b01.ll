@@ -1,8 +1,7 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; delta-rs/optimized/47qjbhol909h8zu7.ll
 ; diesel-rs/optimized/3btvyztn2iiarpvf.ll
-; flatbuffers/optimized/flatc.cpp.ll
 ; llvm/optimized/Mangler.cpp.ll
 ; llvm/optimized/NeonEmitter.cpp.ll
 ; llvm/optimized/RISCVVIntrinsicUtils.cpp.ll

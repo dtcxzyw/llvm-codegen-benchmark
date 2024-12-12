@@ -1,6 +1,5 @@
 
-; 9 occurrences:
-; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
+; 8 occurrences:
 ; ceres/optimized/fake_bundle_adjustment_jacobian.cc.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; minetest/optimized/content_mapblock.cpp.ll
@@ -10,7 +9,7 @@
 ; opencv/optimized/darknet_io.cpp.ll
 ; openusd/optimized/velocityMotionResolvingSceneIndex.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000274(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000004e4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
   %4 = sub nuw nsw i64 8, %3
@@ -32,7 +31,7 @@ entry:
 ; openusd/optimized/usdtree.cpp.ll
 ; yosys/optimized/sim.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000231(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000461(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = sub nsw i64 0, %3
@@ -51,7 +50,7 @@ entry:
 ; openusd/optimized/usdcat.cpp.ll
 ; openusd/optimized/usdtree.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000023c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000046c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 5
   %4 = sub nsw i64 0, %3
@@ -66,7 +65,7 @@ entry:
 ; hyperscan/optimized/ng_redundancy.cpp.ll
 ; hyperscan/optimized/rose_build_role_aliasing.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000234(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000464(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
   %4 = sub nsw i64 0, %3
@@ -80,7 +79,7 @@ entry:
 ; hyperscan/optimized/ng_redundancy.cpp.ll
 ; hyperscan/optimized/rose_build_role_aliasing.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000238(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000468(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
   %4 = sub nsw i64 0, %3

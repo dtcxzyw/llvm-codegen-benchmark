@@ -1,11 +1,14 @@
 
-; 14 occurrences:
+; 17 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; freetype/optimized/ftbase.c.ll
 ; graphviz/optimized/splines.c.ll
 ; icu/optimized/decNumber.ll
 ; jq/optimized/decNumber.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
+; nuttx/optimized/lib_strtold.c.ll
 ; opencv/optimized/shapedescr.cpp.ll
 ; postgres/optimized/float.ll
 ; re2/optimized/parse.cc.ll

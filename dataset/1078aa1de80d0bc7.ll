@@ -1,5 +1,5 @@
 
-; 55 occurrences:
+; 54 occurrences:
 ; openvdb/optimized/Queue.cc.ll
 ; pbrt-v4/optimized/integrator.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
@@ -9,7 +9,6 @@
 ; pocketpy/optimized/modules.cpp.ll
 ; z3/optimized/api_tactic.cpp.ll
 ; z3/optimized/bit_matrix.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/datalog_frontend.cpp.ll
 ; z3/optimized/dl_cmds.cpp.ll
 ; z3/optimized/dl_costs.cpp.ll

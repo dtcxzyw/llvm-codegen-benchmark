@@ -21,7 +21,7 @@ entry:
 define i8 @func0000000000000006(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 247
-  %3 = or disjoint i16 %2, %0
+  %3 = or disjoint i16 %0, %2
   %4 = trunc nuw i16 %3 to i8
   ret i8 %4
 }
@@ -37,14 +37,13 @@ entry:
   ret i8 %4
 }
 
-; 2 occurrences:
-; linux/optimized/dvo_ch7017.ll
+; 1 occurrences:
 ; postgres/optimized/heapam.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000007(i16 %0, i16 %1) #0 {
 entry:
-  %2 = and i16 %1, 7
-  %3 = or disjoint i16 %2, %0
+  %2 = and i16 %1, 16
+  %3 = or disjoint i16 %0, %2
   %4 = trunc nuw nsw i16 %3 to i8
   ret i8 %4
 }

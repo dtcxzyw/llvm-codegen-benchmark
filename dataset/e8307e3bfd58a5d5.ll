@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 28 occurrences:
 ; draco/optimized/sequential_integer_attribute_encoder.cc.ll
 ; draco/optimized/sequential_normal_attribute_encoder.cc.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
@@ -10,6 +10,7 @@
 ; libwebp/optimized/lossless.c.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; oiio/optimized/bmpoutput.cpp.ll
 ; oiio/optimized/targaoutput.cpp.ll
 ; openblas/optimized/dsptrs.c.ll
@@ -31,7 +32,7 @@
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %0, -1
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   ret i32 %3
 }
 
@@ -62,7 +63,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %0, -1
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   ret i32 %3
 }
 

@@ -55,11 +55,13 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 6 occurrences:
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; postgres/optimized/indexam.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i16 %1) #0 {
 entry:
@@ -84,6 +86,29 @@ entry:
   %2 = zext i16 %1 to i64
   %3 = add nsw i64 %0, -4
   %4 = mul nsw i64 %3, %2
+  ret i64 %4
+}
+
+; 2 occurrences:
+; image-rs/optimized/244uszkx0e8t5ie1.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000017(i64 %0, i16 %1) #0 {
+entry:
+  %2 = zext nneg i16 %1 to i64
+  %3 = add nsw i64 %0, -1
+  %4 = mul nuw nsw i64 %3, %2
+  ret i64 %4
+}
+
+; 1 occurrences:
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i64 %0, i16 %1) #0 {
+entry:
+  %2 = zext nneg i16 %1 to i64
+  %3 = add nsw i64 %0, -1
+  %4 = mul i64 %3, %2
   ret i64 %4
 }
 

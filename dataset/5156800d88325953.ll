@@ -11,15 +11,7 @@ entry:
   ret i64 %4
 }
 
-; 10 occurrences:
-; harfbuzz/optimized/harfbuzz.cc.ll
-; harfbuzz/optimized/hb-subset-cff-common.cc.ll
-; harfbuzz/optimized/hb-subset-cff1.cc.ll
-; harfbuzz/optimized/hb-subset-cff2.cc.ll
-; harfbuzz/optimized/hb-subset-plan.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
-; openjdk/optimized/hb-ot-layout.ll
-; openjdk/optimized/hb-set.ll
+; 2 occurrences:
 ; ruby/optimized/iseq.ll
 ; soc-simulator/optimized/verilated.ll
 ; Function Attrs: nounwind

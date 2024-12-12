@@ -1,5 +1,6 @@
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/area.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; linux/optimized/lzo1x_compress.ll
 ; nuttx/optimized/lib_gmtimer.c.ll

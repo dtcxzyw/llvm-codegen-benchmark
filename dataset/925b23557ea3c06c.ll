@@ -1,17 +1,10 @@
 
-; 13 occurrences:
+; 6 occurrences:
 ; darktable/optimized/RawImage.cpp.ll
 ; folly/optimized/ElfCache.cpp.ll
-; lightgbm/optimized/bin.cpp.ll
 ; linux/optimized/lz4_decompress.ll
 ; linux/optimized/zstd_decompress_block.ll
-; lz4/optimized/lz4.c.ll
-; nlohmann_json/optimized/unit-regression2.cpp.ll
 ; oiio/optimized/deepdata.cpp.ll
-; openusd/optimized/fvarLevel.cpp.ll
-; openusd/optimized/lz4.cpp.ll
-; openusd/optimized/refinement.cpp.ll
-; ozz-animation/optimized/animation_builder.cc.ll
 ; ruby/optimized/gc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, ptr %1, i64 %2) #0 {
@@ -23,7 +16,7 @@ entry:
   ret i64 %5
 }
 
-; 208 occurrences:
+; 212 occurrences:
 ; abseil-cpp/optimized/convert_test.cc.ll
 ; abseil-cpp/optimized/symbolize.cc.ll
 ; assimp/optimized/PlyParser.cpp.ll
@@ -75,7 +68,6 @@ entry:
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
-; eastl/optimized/BenchmarkString.cpp.ll
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
 ; eastl/optimized/TestTupleVector.cpp.ll
 ; eastl/optimized/TestVector.cpp.ll
@@ -135,6 +127,7 @@ entry:
 ; lodepng/optimized/lodepng_util.cpp.ll
 ; luau/optimized/BytecodeAnalysis.cpp.ll
 ; luau/optimized/IrAnalysis.cpp.ll
+; lz4/optimized/lz4.c.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -170,8 +163,12 @@ entry:
 ; openspiel/optimized/laser_tag.cc.ll
 ; openspiel/optimized/markov_soccer.cc.ll
 ; openspiel/optimized/quoridor.cc.ll
+; openusd/optimized/fvarLevel.cpp.ll
+; openusd/optimized/lz4.cpp.ll
+; openusd/optimized/refinement.cpp.ll
 ; openvdb/optimized/LevelSetRebuild.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
+; ozz-animation/optimized/animation_builder.cc.ll
 ; php/optimized/math.ll
 ; php/optimized/str.ll
 ; protobuf/optimized/generated_message_tctable_gen.cc.ll
@@ -241,27 +238,28 @@ entry:
   ret i64 %.neg
 }
 
-; 1 occurrences:
-; openusd/optimized/lz4.cpp.ll
+; 2 occurrences:
+; boost/optimized/url_base.ll
+; eastl/optimized/BenchmarkString.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000001(i64 %0, ptr %1, i64 %2) #0 {
+define i64 @func0000000000000030(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr i8, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %.neg = sub i64 %0, %4
   ret i64 %.neg
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; hyperscan/optimized/hwlm.c.ll
+; openusd/optimized/lz4.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000021(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %.neg = sub i64 %0, %4
-  %5 = add i64 %.neg, 17
-  ret i64 %5
+  ret i64 %.neg
 }
 
 attributes #0 = { nounwind }

@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	testl	%esi, %esi
 	movl	$79, %eax
 	movl	$69, %ecx
@@ -7,7 +7,7 @@ func0000000000000011:                   # @func0000000000000011
 	movl	$78, %eax
 	cmovnel	%ecx, %eax
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	testl	%esi, %esi
 	movl	$636, %eax                      # imm = 0x27C
 	movl	$697, %ecx                      # imm = 0x2B9

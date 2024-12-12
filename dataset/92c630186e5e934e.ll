@@ -13,7 +13,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %.fr = freeze i32 %1
   %2 = urem i32 %.fr, 100000000
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   ret i32 %3
 }
 
@@ -28,7 +28,7 @@ define i32 @func0000000000000015(i32 %0, i32 %1) #0 {
 entry:
   %.fr = freeze i32 %1
   %2 = urem i32 %.fr, 146097
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   ret i32 %3
 }
 

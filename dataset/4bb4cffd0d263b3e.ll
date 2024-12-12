@@ -4,7 +4,7 @@
 ; libevent/optimized/select.c.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000011(i16 %0, i64 %1) #0 {
+define i16 @func0000000000000021(i16 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i16 %0, 8
   %3 = icmp eq i64 %1, 0

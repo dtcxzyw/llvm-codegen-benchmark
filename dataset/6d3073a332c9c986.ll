@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 24 occurrences:
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_colorbalancergb.c.ll
 ; darktable/optimized/introspection_colorequal.c.ll
@@ -7,6 +7,7 @@
 ; darktable/optimized/introspection_lens.cc.ll
 ; faiss/optimized/IndexBinaryHash.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
+; lvgl/optimized/lv_sdl_window.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; meshlab/optimized/edit_point.cpp.ll
 ; meshlab/optimized/edit_sample.cpp.ll

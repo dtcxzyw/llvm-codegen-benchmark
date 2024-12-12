@@ -1,9 +1,10 @@
 
-; 25 occurrences:
+; 26 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
+; boost/optimized/to_chars.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; libquic/optimized/p256-64.c.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll

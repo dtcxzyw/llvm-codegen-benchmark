@@ -1,5 +1,5 @@
 func000000000000003c:                   # @func000000000000003c
-	leal	(%rdx,%rdi), %ecx
+	leal	(%rdi,%rdx), %ecx
 	shlq	$44, %rcx
 	addq	%rsi, %rcx
 	movabsq	$-17592186044416, %rax          # imm = 0xFFFFF00000000000

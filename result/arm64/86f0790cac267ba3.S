@@ -1,10 +1,9 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	ushr	v2.4s, v2.4s, #8
-	orr	v0.16b, v1.16b, v0.16b
-	bic	v2.8h, #255
-	orr	v0.16b, v2.16b, v0.16b
-	sshll2	v1.2d, v0.4s, #0
-	sshll	v0.2d, v0.2s, #0
+	lsr	w8, w2, #8
+	orr	w9, w1, w0
+	and	w8, w8, #0xff00
+	orr	w8, w9, w8
+	sxtw	x0, w8
 	ret
                                         // -- End function

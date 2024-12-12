@@ -15,8 +15,7 @@ entry:
   ret i64 %6
 }
 
-; 2 occurrences:
-; linux/optimized/tbfadt.ll
+; 1 occurrences:
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000002c(i64 %0, i8 %1, i8 %2) #0 {
@@ -50,7 +49,7 @@ entry:
   %3 = zext i8 %2 to i64
   %4 = zext i8 %1 to i64
   %5 = mul nuw nsw i64 %4, %3
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 

@@ -1,12 +1,14 @@
 
-; 68 occurrences:
+; 75 occurrences:
 ; abc/optimized/bmcBmc3.c.ll
 ; abc/optimized/giaAiger.c.ll
 ; abc/optimized/giaTim.c.ll
 ; assimp/optimized/ObjExporter.cpp.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/syslog_backend.ll
 ; clamav/optimized/kwajd.c.ll
 ; clamav/optimized/nulsft.c.ll
-; cmake/optimized/archive_write_add_filter_gzip.c.ll
+; cmake/optimized/nghttp2_hd.c.ll
 ; cpython/optimized/longobject.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
@@ -33,6 +35,7 @@
 ; llvm/optimized/NativeFormatting.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
 ; llvm/optimized/TargetTransformInfo.cpp.ll
+; lvgl/optimized/lv_freetype.ll
 ; meilisearch-rs/optimized/3m3x2x3yg1gvj93u.ll
 ; miniaudio/optimized/unity.c.ll
 ; msgpack/optimized/asio_send_recv.cpp.ll
@@ -68,6 +71,10 @@
 ; yalantinglibs/optimized/file_server.cpp.ll
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
+; zed-rs/optimized/deqzoqcotewn9fb0m32sor9lr.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i32 %0, i1 %1) #0 {
 entry:
@@ -89,19 +96,6 @@ entry:
   ret i8 %4
 }
 
-; 3 occurrences:
-; llvm/optimized/YAMLTraits.cpp.ll
-; minetest/optimized/terminal_chat_console.cpp.ll
-; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000004(i32 %0, i1 %1) #0 {
-entry:
-  %2 = select i1 %1, i8 2, i8 3
-  %3 = icmp ult i32 %0, 224
-  %4 = select i1 %3, i8 1, i8 %2
-  ret i8 %4
-}
-
 ; 4 occurrences:
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
@@ -113,6 +107,18 @@ entry:
   %2 = select i1 %1, i8 32, i8 43
   %3 = icmp slt i32 %0, 0
   %4 = select i1 %3, i8 45, i8 %2
+  ret i8 %4
+}
+
+; 2 occurrences:
+; llvm/optimized/YAMLTraits.cpp.ll
+; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000004(i32 %0, i1 %1) #0 {
+entry:
+  %2 = select i1 %1, i8 1, i8 2
+  %3 = icmp ult i32 %0, 2
+  %4 = select i1 %3, i8 0, i8 %2
   ret i8 %4
 }
 

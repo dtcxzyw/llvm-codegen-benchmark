@@ -28,3 +28,13 @@ func000000000000000a:                   # @func000000000000000a
 	setns	%al
 	orb	%dil, %al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpb	$5, %sil
+	setb	%al
+	orb	%dil, %al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	cmpb	$6, %sil
+	setae	%al
+	orb	%dil, %al
+	retq

@@ -16,6 +16,7 @@
 ; abc/optimized/wlnWlc.c.ll
 ; arrow/optimized/bignum.cc.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/approximately_equals.ll
 ; cmake/optimized/huf_compress.c.ll
 ; darktable/optimized/introspection_basecurve.c.ll
 ; double_conversion/optimized/bignum.cc.ll
@@ -55,8 +56,6 @@
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; nuttx/optimized/lib_libvsprintf.c.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; opencv/optimized/calibinit.cpp.ll
 ; opencv/optimized/mser.cpp.ll
 ; opencv/optimized/scatterND_layer.cpp.ll
@@ -72,6 +71,7 @@
 ; openusd/optimized/patchTreeBuilder.cpp.ll
 ; openusd/optimized/stencilTableFactory.cpp.ll
 ; ozz-animation/optimized/animation_optimizer.cc.ll
+; php/optimized/sccp.ll
 ; pybind11/optimized/test_kwargs_and_defaults.cpp.ll
 ; quantlib/optimized/sparseilupreconditioner.ll
 ; ruby/optimized/enumerator.ll
@@ -94,7 +94,7 @@ entry:
   ret i64 %3
 }
 
-; 24 occurrences:
+; 25 occurrences:
 ; abc/optimized/absOldCex.c.ll
 ; abc/optimized/bacBlast.c.ll
 ; abc/optimized/ifLibLut.c.ll
@@ -113,6 +113,7 @@ entry:
 ; luau/optimized/lutf8lib.cpp.ll
 ; openblas/optimized/dtgsy2.c.ll
 ; openjdk/optimized/type.ll
+; php/optimized/pcre2_jit_compile.ll
 ; php/optimized/phpdbg_io.ll
 ; postgres/optimized/partprune.ll
 ; ruby/optimized/util.ll
@@ -128,9 +129,10 @@ entry:
   ret i64 %3
 }
 
-; 163 occurrences:
+; 161 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/ifDsd.c.ll
+; boost/optimized/approximately_equals.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; faiss/optimized/hamming.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
@@ -221,13 +223,10 @@ entry:
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll

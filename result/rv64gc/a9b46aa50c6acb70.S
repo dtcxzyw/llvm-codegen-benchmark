@@ -56,3 +56,20 @@ func0000000000000008:                   # @func0000000000000008
 .LBB3_4:                                # %entry
 	li	a0, 3
 	ret
+func0000000000000014:                   # @func0000000000000014
+	andi	a3, a0, 1
+	mv	a0, a1
+	beqz	a3, .LBB4_3
+	sext.w	a1, a0
+	li	a2, 577
+	bltu	a1, a2, .LBB4_4
+.LBB4_2:                                # %entry
+	ret
+.LBB4_3:                                # %entry
+	mv	a0, a2
+	sext.w	a1, a2
+	li	a2, 577
+	bgeu	a1, a2, .LBB4_2
+.LBB4_4:                                # %entry
+	li	a0, 480
+	ret

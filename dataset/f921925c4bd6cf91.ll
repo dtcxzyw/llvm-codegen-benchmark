@@ -1,11 +1,8 @@
 
-; 12 occurrences:
+; 9 occurrences:
 ; cmake/optimized/archive_write_set_format_zip.c.ll
 ; gromacs/optimized/colvargrid.cpp.ll
-; ncnn/optimized/deformableconv2d_x86.cpp.ll
-; ncnn/optimized/deformableconv2d_x86_avx.cpp.ll
 ; ncnn/optimized/deformableconv2d_x86_avx512.cpp.ll
-; ncnn/optimized/deformableconv2d_x86_fma.cpp.ll
 ; openssl/optimized/libcrypto-lib-cms_env.ll
 ; openssl/optimized/libcrypto-shlib-cms_env.ll
 ; protobuf/optimized/extension_set_heavy.cc.ll

@@ -12,7 +12,7 @@
 ; ruby/optimized/vm.ll
 ; ruby/optimized/vm_backtrace.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i8 %0) #0 {
+define i1 @func0000000000000058(i8 %0) #0 {
 entry:
   %1 = and i8 %0, 15
   %2 = icmp eq i8 %1, 11
@@ -45,7 +45,7 @@ entry:
 ; wireshark/optimized/packet-rf4ce-nwk.c.ll
 ; wireshark/optimized/packet-scsi.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i8 %0) #0 {
+define i1 @func0000000000000042(i8 %0) #0 {
 entry:
   %1 = and i8 %0, 12
   %2 = icmp eq i8 %1, 0
@@ -59,7 +59,7 @@ entry:
 ; llvm/optimized/FrontendAction.cpp.ll
 ; protobuf/optimized/helpers.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i8 %0) #0 {
+define i1 @func0000000000000302(i8 %0) #0 {
 entry:
   %1 = and i8 %0, 8
   %2 = icmp ne i8 %1, 0

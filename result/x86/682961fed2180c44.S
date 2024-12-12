@@ -1,4 +1,4 @@
-func0000000000000492:                   # @func0000000000000492
+func0000000000000892:                   # @func0000000000000892
 	movq	%rdi, %rax
 	cmpq	%rcx, %rdx
 	adcq	$0, %rax

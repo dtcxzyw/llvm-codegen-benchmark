@@ -1,5 +1,5 @@
 
-; 48 occurrences:
+; 47 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; bdwgc/optimized/gc.c.ll
 ; cpython/optimized/obmalloc.ll
@@ -17,7 +17,6 @@
 ; llvm/optimized/CodeGenInstruction.cpp.ll
 ; llvm/optimized/LegalizeVectorOps.cpp.ll
 ; llvm/optimized/NewGVN.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
 ; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll

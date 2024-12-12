@@ -6,7 +6,7 @@ func0000000000000008:                   # @func0000000000000008
 	li	a0, 32
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wx	v9, v10, a0
-	vadd.vv	v8, v9, v8
+	vadd.vv	v8, v8, v9
 	ret
 func0000000000000021:                   # @func0000000000000021
 	lui	a0, 8
@@ -14,14 +14,14 @@ func0000000000000021:                   # @func0000000000000021
 	vadd.vx	v10, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 16
-	vadd.vv	v8, v9, v8
+	vadd.vv	v8, v8, v9
 	ret
 func0000000000000068:                   # @func0000000000000068
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v10, v10, 15
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 4
-	vadd.vv	v8, v9, v8
+	vadd.vv	v8, v8, v9
 	ret
 func000000000000006b:                   # @func000000000000006b
 	lui	a0, 1
@@ -30,14 +30,14 @@ func000000000000006b:                   # @func000000000000006b
 	vadd.vx	v10, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 12
-	vadd.vv	v8, v9, v8
+	vadd.vv	v8, v8, v9
 	ret
 func0000000000000069:                   # @func0000000000000069
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vi	v10, v10, 15
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 4
-	vadd.vv	v8, v9, v8
+	vadd.vv	v8, v8, v9
 	ret
 func0000000000000060:                   # @func0000000000000060
 	li	a0, 1
@@ -46,7 +46,7 @@ func0000000000000060:                   # @func0000000000000060
 	vaaddu.vx	v10, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
-	vadd.vv	v8, v9, v8
+	vadd.vv	v8, v8, v9
 	ret
 func0000000000000020:                   # @func0000000000000020
 	li	a0, 1
@@ -56,7 +56,7 @@ func0000000000000020:                   # @func0000000000000020
 	vadd.vx	v10, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 3
-	vadd.vv	v8, v9, v8
+	vadd.vv	v8, v8, v9
 	ret
 func0000000000000000:                   # @func0000000000000000
 	li	a0, 1
@@ -66,7 +66,7 @@ func0000000000000000:                   # @func0000000000000000
 	vadd.vx	v10, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 3
-	vadd.vv	v8, v9, v8
+	vadd.vv	v8, v8, v9
 	ret
 func000000000000006c:                   # @func000000000000006c
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -74,7 +74,7 @@ func000000000000006c:                   # @func000000000000006c
 	li	a0, 32
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wx	v9, v10, a0
-	vadd.vv	v8, v9, v8
+	vadd.vv	v8, v8, v9
 	ret
 func0000000000000040:                   # @func0000000000000040
 	lui	a0, 262144
@@ -82,7 +82,7 @@ func0000000000000040:                   # @func0000000000000040
 	vadd.vx	v10, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 31
-	vadd.vv	v8, v9, v8
+	vadd.vv	v8, v8, v9
 	ret
 func000000000000000c:                   # @func000000000000000c
 	lui	a0, 1048569
@@ -92,7 +92,7 @@ func000000000000000c:                   # @func000000000000000c
 	li	a0, 63
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wx	v9, v10, a0
-	vadd.vv	v8, v9, v8
+	vadd.vv	v8, v8, v9
 	ret
 func000000000000006d:                   # @func000000000000006d
 	lui	a0, 512
@@ -100,7 +100,7 @@ func000000000000006d:                   # @func000000000000006d
 	vadd.vx	v10, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 22
-	vadd.vv	v8, v9, v8
+	vadd.vv	v8, v8, v9
 	ret
 func0000000000000001:                   # @func0000000000000001
 	li	a0, 1
@@ -110,7 +110,7 @@ func0000000000000001:                   # @func0000000000000001
 	vadd.vx	v10, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 2
-	vadd.vv	v8, v9, v8
+	vadd.vv	v8, v8, v9
 	ret
 func000000000000000f:                   # @func000000000000000f
 	lui	a0, 1048561
@@ -120,7 +120,7 @@ func000000000000000f:                   # @func000000000000000f
 	li	a0, 63
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wx	v9, v10, a0
-	vadd.vv	v8, v9, v8
+	vadd.vv	v8, v8, v9
 	ret
 func000000000000006f:                   # @func000000000000006f
 	lui	a0, 8
@@ -128,5 +128,5 @@ func000000000000006f:                   # @func000000000000006f
 	vadd.vx	v10, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 16
-	vadd.vv	v8, v9, v8
+	vadd.vv	v8, v8, v9
 	ret

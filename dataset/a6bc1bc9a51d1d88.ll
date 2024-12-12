@@ -1,9 +1,7 @@
 
-; 19 occurrences:
+; 12 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; hwloc/optimized/topology-linux.ll
-; linux/optimized/8250_lpss.ll
-; linux/optimized/8250_mid.ll
 ; linux/optimized/dm-table.ll
 ; linux/optimized/fib_semantics.ll
 ; linux/optimized/vsprintf.ll
@@ -13,11 +11,6 @@
 ; postgres/optimized/resowner.ll
 ; quickjs/optimized/quickjs.ll
 ; redis/optimized/quicklist.ll
-; rocksdb/optimized/lock_request.cc.ll
-; rocksdb/optimized/locktree.cc.ll
-; rocksdb/optimized/manager.cc.ll
-; rocksdb/optimized/txnid_set.cc.ll
-; rocksdb/optimized/wfg.cc.ll
 ; ruby/optimized/static_literals.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i32 %1) #0 {
@@ -28,8 +21,10 @@ entry:
   ret i64 %4
 }
 
-; 15 occurrences:
-; c3c/optimized/decltable.c.ll
+; 13 occurrences:
+; abc/optimized/abcRec3.c.ll
+; abc/optimized/bacBlast.c.ll
+; abc/optimized/wlcReadVer.c.ll
 ; c3c/optimized/symtab.c.ll
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
 ; folly/optimized/Singleton.cpp.ll
@@ -38,11 +33,7 @@ entry:
 ; libevent/optimized/event.c.ll
 ; libevent/optimized/evmap.c.ll
 ; libevent/optimized/poll.c.ll
-; luajit/optimized/lj_udata.ll
-; luajit/optimized/lj_udata_dyn.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/zmaxheap.cpp.ll
-; postgres/optimized/varlena.ll
 ; wireshark/optimized/packet-lbmpdm.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i1 %0, i32 %1) #0 {

@@ -24,10 +24,8 @@ entry:
   ret i64 %5
 }
 
-; 8 occurrences:
+; 6 occurrences:
 ; eastl/optimized/BenchmarkString.cpp.ll
-; luajit/optimized/lj_record.ll
-; luajit/optimized/lj_record_dyn.ll
 ; miniaudio/optimized/unity.c.ll
 ; opencc/optimized/bit-vector.cc.ll
 ; postgres/optimized/multirangetypes.ll

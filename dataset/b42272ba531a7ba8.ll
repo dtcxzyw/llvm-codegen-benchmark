@@ -22,7 +22,7 @@
 ; z3/optimized/theory_str_mc.cpp.ll
 ; z3/optimized/theory_str_regex.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000302(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = icmp ne i32 %3, 24
@@ -35,7 +35,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/zend_jit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000042(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 48
   %4 = icmp eq i32 %3, 0
@@ -50,25 +50,12 @@ entry:
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000058(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = icmp eq i32 %3, 0
   %5 = and i32 %0, 192
   %6 = icmp ne i32 %5, 64
-  %7 = or i1 %6, %4
-  ret i1 %7
-}
-
-; 1 occurrences:
-; openexr/optimized/IexMathFpu.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000030(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 32
-  %4 = icmp eq i32 %3, 0
-  %5 = and i32 %0, %1
-  %6 = icmp ugt i32 %5, 31
   %7 = or i1 %6, %4
   ret i1 %7
 }

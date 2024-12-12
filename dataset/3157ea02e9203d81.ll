@@ -1,6 +1,7 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; abseil-cpp/optimized/randen_slow.cc.ll
+; boost/optimized/to_chars.ll
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
 ; libsodium/optimized/libsodium_la-softaes.ll
 ; openjdk/optimized/altHashing.ll

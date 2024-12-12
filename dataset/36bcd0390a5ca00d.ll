@@ -8,7 +8,7 @@
 define i1 @func0000000000000001(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %0, i64 4294967295, i64 1
-  %4 = add i64 %3, %2
+  %4 = add i64 %2, %3
   %5 = trunc i64 %4 to i32
   %6 = select i1 %0, i32 -1, i32 %1
   %7 = icmp eq i32 %6, %5
@@ -20,10 +20,10 @@ entry:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; opencv/optimized/sparse_match_interpolators.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000a1(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %0, i64 4294967295, i64 1
-  %4 = add i64 %3, %2
+  %4 = add i64 %2, %3
   %5 = trunc i64 %4 to i32
   %6 = select i1 %0, i32 -1, i32 %1
   %7 = icmp eq i32 %6, %5

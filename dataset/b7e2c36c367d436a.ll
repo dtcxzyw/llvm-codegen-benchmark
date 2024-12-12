@@ -6,12 +6,13 @@ define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 64
   %4 = mul i32 %3, %1
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; gromacs/optimized/shake.cpp.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; miniaudio/optimized/unity.c.ll
 ; openblas/optimized/dsytrd_sb2st.c.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
@@ -27,8 +28,8 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 64
-  %4 = mul nsw i32 %3, %1
-  %5 = add nsw i32 %4, %0
+  %4 = mul nsw i32 %1, %3
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 

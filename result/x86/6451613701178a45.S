@@ -1,10 +1,10 @@
-func0000000000000058:                   # @func0000000000000058
+func0000000000000098:                   # @func0000000000000098
 	cmpl	$105, %esi
 	setne	%al
 	orb	%dil, %al
 	retq
 func0000000000000002:                   # @func0000000000000002
-	testb	$3, %sil
+	testb	$8, %sil
 	sete	%al
 	orb	%dil, %al
 	retq
@@ -13,7 +13,7 @@ func0000000000000018:                   # @func0000000000000018
 	sets	%al
 	orb	%dil, %al
 	retq
-func0000000000000042:                   # @func0000000000000042
+func0000000000000082:                   # @func0000000000000082
 	testl	$16384, %esi                    # imm = 0x4000
 	sete	%al
 	orb	%dil, %al

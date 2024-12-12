@@ -1,7 +1,9 @@
 
-; 96 occurrences:
+; 98 occurrences:
 ; icu/optimized/smpdtfmt.ll
+; libpng/optimized/pngread.c.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
+; openjdk/optimized/pngread.ll
 ; openssl/optimized/libcrypto-lib-keymgmt_meth.ll
 ; openssl/optimized/libcrypto-shlib-keymgmt_meth.ll
 ; openusd/optimized/cdef_block.c.ll
@@ -97,7 +99,7 @@
 ; xgboost/optimized/updater_sync.cc.ll
 ; xgboost/optimized/version.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp ne ptr %1, null
@@ -117,7 +119,7 @@ entry:
 ; wireshark/optimized/packet-ndmp.c.ll
 ; wireshark/optimized/packet-tcp.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000018c(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, -1
   %4 = icmp ne ptr %1, null
@@ -132,7 +134,7 @@ entry:
 ; redis/optimized/db.ll
 ; wireshark/optimized/packet-ndmp.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000181(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp eq ptr %1, null
@@ -141,7 +143,7 @@ entry:
   ret i1 %6
 }
 
-; 36 occurrences:
+; 35 occurrences:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/InstrEmitter.cpp.ll
@@ -151,7 +153,6 @@ entry:
 ; llvm/optimized/LegalizeTypesGeneric.cpp.ll
 ; llvm/optimized/LegalizeVectorOps.cpp.ll
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SemaCUDA.cpp.ll
 ; llvm/optimized/StatepointLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -179,7 +180,7 @@ entry:
 ; yosys/optimized/pmux2shiftx.ll
 ; yosys/optimized/tribuf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp eq ptr %1, null
@@ -195,7 +196,7 @@ entry:
 ; openjdk/optimized/vtableStubs.ll
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000014c(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
   %4 = icmp ne ptr %1, null
@@ -227,7 +228,7 @@ entry:
 ; opencv/optimized/ransac_solvers.cpp.ll
 ; opencv/optimized/sqpnp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000cc(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 3
   %4 = icmp ne ptr %1, null

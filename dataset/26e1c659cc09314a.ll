@@ -1,8 +1,10 @@
 
-; 36 occurrences:
+; 37 occurrences:
 ; arrow/optimized/bignum.cc.ll
 ; arrow/optimized/strtod.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; c3c/optimized/bigint.c.ll
 ; cmake/optimized/content_stream.cpp.ll
 ; cpython/optimized/bytesobject.ll
@@ -32,7 +34,6 @@
 ; php/optimized/der.ll
 ; pocketpy/optimized/compiler.cpp.ll
 ; ruby/optimized/date_strptime.ll
-; spdlog/optimized/spdlog.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; velox/optimized/CastExpr.cpp.ll
 ; z3/optimized/dl_util.cpp.ll

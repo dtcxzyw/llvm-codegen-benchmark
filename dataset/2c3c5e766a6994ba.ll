@@ -32,8 +32,8 @@ entry:
 define i32 @func0000000000000017(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
-  %4 = call range(i32 0, -2147483648) i32 @llvm.abs.i32(i32 %3, i1 true)
-  %5 = add nuw nsw i32 %4, %0
+  %4 = call range(i32 0, -2147483648) i32 @llvm.abs.i32(i32 range(i32 -2147483647, -2147483648) %3, i1 true)
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -45,7 +45,7 @@ define i32 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = tail call i32 @llvm.abs.i32(i32 %3, i1 true)
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -57,7 +57,7 @@ define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = call i32 @llvm.abs.i32(i32 %3, i1 true)
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 

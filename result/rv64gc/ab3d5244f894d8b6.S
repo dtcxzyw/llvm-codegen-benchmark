@@ -1,59 +1,86 @@
-func0000000000000019:                   # @func0000000000000019
+func0000000000000029:                   # @func0000000000000029
 	seqz	a2, a2
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
 	or	a0, a0, a2
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	seqz	a2, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	or	a0, a0, a2
 	ret
-func00000000000000c9:                   # @func00000000000000c9
+func0000000000000189:                   # @func0000000000000189
 	snez	a2, a2
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
 	or	a0, a0, a2
 	ret
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	seqz	a2, a2
 	sltu	a0, a1, a0
 	or	a0, a0, a2
 	ret
-func0000000000000015:                   # @func0000000000000015
+func0000000000000035:                   # @func0000000000000035
 	seqz	a2, a2
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	or	a0, a0, a2
 	ret
-func000000000000001c:                   # @func000000000000001c
+func0000000000000025:                   # @func0000000000000025
+	seqz	a2, a2
+	sltu	a0, a1, a0
+	xori	a0, a0, 1
+	or	a0, a0, a2
+	ret
+func000000000000002c:                   # @func000000000000002c
 	seqz	a2, a2
 	xor	a0, a0, a1
 	snez	a0, a0
 	or	a0, a0, a2
 	ret
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000199:                   # @func0000000000000199
+	snez	a2, a2
+	sltu	a0, a0, a1
+	xori	a0, a0, 1
+	or	a0, a0, a2
+	ret
+func0000000000000194:                   # @func0000000000000194
 	snez	a2, a2
 	sltu	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	xor	a0, a0, a1
 	or	a0, a0, a2
 	snez	a0, a0
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000028:                   # @func0000000000000028
+	seqz	a2, a2
+	sltu	a0, a1, a0
+	or	a0, a0, a2
+	ret
+func0000000000000024:                   # @func0000000000000024
 	seqz	a2, a2
 	sltu	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	seqz	a2, a2
 	slt	a0, a1, a0
 	or	a0, a0, a2
 	ret
-func00000000000000cb:                   # @func00000000000000cb
+func0000000000000034:                   # @func0000000000000034
+	seqz	a2, a2
+	sltu	a0, a0, a1
+	or	a0, a0, a2
+	ret
+func0000000000000184:                   # @func0000000000000184
+	snez	a2, a2
+	sltu	a0, a0, a1
+	or	a0, a0, a2
+	ret
+func000000000000018b:                   # @func000000000000018b
 	snez	a2, a2
 	slt	a0, a0, a1
 	xori	a0, a0, 1

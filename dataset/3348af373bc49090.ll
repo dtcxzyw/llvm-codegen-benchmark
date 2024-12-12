@@ -10,7 +10,7 @@
 define i64 @func0000000000000005(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = sext i32 %3 to i64
   %5 = mul nsw i64 %4, -86400
   ret i64 %5
@@ -22,7 +22,7 @@ entry:
 define i64 @func0000000000000015(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = sext i32 %3 to i64
   %5 = mul nsw i64 %4, -86400000
   ret i64 %5
@@ -35,7 +35,7 @@ entry:
 define i64 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = sext i32 %3 to i64
   %5 = mul nsw i64 %4, 56
   ret i64 %5
@@ -47,9 +47,21 @@ entry:
 define i64 @func0000000000000031(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = sext i32 %3 to i64
   %5 = mul nsw i64 %4, 3
+  ret i64 %5
+}
+
+; 1 occurrences:
+; meshlab/optimized/filter_screened_poisson.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000011(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nsw i64 %1 to i32
+  %3 = add i32 %0, %2
+  %4 = sext i32 %3 to i64
+  %5 = mul nsw i64 %4, 24
   ret i64 %5
 }
 

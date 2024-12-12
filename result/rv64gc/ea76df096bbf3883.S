@@ -6,18 +6,18 @@ func0000000000000030:                   # @func0000000000000030
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
-func0000000000000035:                   # @func0000000000000035
-	slli	a2, a2, 63
-	srai	a2, a2, 63
-	andi	a2, a2, -94
-	add	a0, a0, a1
-	addw	a0, a0, a2
-	ret
 func000000000000003f:                   # @func000000000000003f
 	andi	a2, a2, 63
 	slli	a3, a2, 2
 	slli	a2, a2, 6
 	subw	a2, a2, a3
+	add	a0, a0, a1
+	addw	a0, a0, a2
+	ret
+func0000000000000035:                   # @func0000000000000035
+	slli	a2, a2, 48
+	lui	a3, 5840
+	mulhu	a2, a2, a3
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret

@@ -38,6 +38,7 @@ entry:
 ; llvm/optimized/SemaExprMember.cpp.ll
 ; llvm/optimized/TargetMachineC.cpp.ll
 ; llvm/optimized/WhitespaceManager.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
 ; minetest/optimized/content_cao.cpp.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openmpi/optimized/libprrte_la-pmix_server_dyn.ll
@@ -46,7 +47,6 @@ entry:
 ; postgres/optimized/spgutils.ll
 ; qemu/optimized/hw_net_cadence_gem.c.ll
 ; qemu/optimized/hw_net_rtl8139.c.ll
-; qemu/optimized/hw_sd_ssi-sd.c.ll
 ; quickjs/optimized/quickjs.ll
 ; redis/optimized/socket.ll
 ; sqlite/optimized/sqlite3.ll

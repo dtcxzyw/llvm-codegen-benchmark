@@ -33,7 +33,7 @@
 ; openssl/optimized/sslcorrupttest-bin-ssltestlib.ll
 ; openssl/optimized/tls13ccstest-bin-ssltestlib.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0) #0 {
+define i1 @func0000000000000061(i32 %0) #0 {
 entry:
   %1 = add nuw nsw i32 %0, 1
   %2 = urem i32 %1, 10
@@ -81,7 +81,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/math.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i32 %0) #0 {
+define i1 @func000000000000006c(i32 %0) #0 {
 entry:
   %1 = add nuw nsw i32 %0, 1
   %2 = urem i32 %1, 3
@@ -96,7 +96,7 @@ entry:
 ; postgres/optimized/localtime.ll
 ; quantlib/optimized/mexico.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0) #0 {
+define i1 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -2024
   %2 = urem i32 %1, 6
@@ -116,7 +116,7 @@ entry:
 ; draco/optimized/sequential_normal_attribute_decoder.cc.ll
 ; draco/optimized/sequential_normal_attribute_encoder.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0) #0 {
+define i1 @func0000000000000041(i32 %0) #0 {
 entry:
   %1 = add nuw i32 %0, 1
   %2 = urem i32 %1, 3
@@ -128,11 +128,11 @@ entry:
 ; icu/optimized/islamcal.ll
 ; icu/optimized/ucnvbocu.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0) #0 {
+define i1 @func0000000000000038(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -187660
   %2 = urem i32 %1, 243
-  %3 = icmp ugt i32 %2, 19
+  %3 = icmp samesign ugt i32 %2, 19
   ret i1 %3
 }
 

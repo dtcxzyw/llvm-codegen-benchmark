@@ -1,5 +1,5 @@
 
-; 89 occurrences:
+; 92 occurrences:
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
 ; actix-rs/optimized/3k33h0ss7dy62evb.ll
 ; actix-rs/optimized/5f3qk1oomglisntr.ll
@@ -20,7 +20,6 @@
 ; coreutils-rs/optimized/3l1fz4picv1xqozx.ll
 ; coreutils-rs/optimized/4ez78vmdxhxkcda.ll
 ; coreutils-rs/optimized/4il3dwdvn9kvvj4p.ll
-; coreutils-rs/optimized/4j5cjya214zps8p4.ll
 ; coreutils-rs/optimized/yeky3kbm8zdu7bp.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; diesel-rs/optimized/2zzzvc1em6im74h3.ll
@@ -46,6 +45,7 @@
 ; llvm/optimized/SemaType.cpp.ll
 ; llvm/optimized/TailDuplicator.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
+; lvgl/optimized/lv_obj_event.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
 ; ncnn/optimized/convolution_x86_avx512.cpp.ll
@@ -86,9 +86,12 @@
 ; wasmtime-rs/optimized/2x1mxlm9f496za8a.ll
 ; wasmtime-rs/optimized/4y19gy3l28n56lab.ll
 ; wasmtime-rs/optimized/5poarlxbfmu9lbg.ll
-; wasmtime-rs/optimized/awtl26sjra3upo4.ll
-; wasmtime-rs/optimized/oont1606ku4b766.ll
+; wireshark/optimized/dot11decrypt.c.ll
 ; wireshark/optimized/tap-iostat.c.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/44bj4n5407vag46bun63mwelh.ll
+; zed-rs/optimized/7ukwrxq2hh2vqucbwedxkpvcs.ll
+; zed-rs/optimized/8tscdb01zcabwdnjfgov818gm.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i32 %0) #0 {
 entry:
@@ -98,11 +101,12 @@ entry:
   ret i1 %3
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; llvm/optimized/Decl.cpp.ll
 ; llvm/optimized/ExprClassification.cpp.ll
 ; llvm/optimized/ParsedAttr.cpp.ll
 ; llvm/optimized/UnicodeCaseFold.cpp.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i32 %0) #0 {
 entry:

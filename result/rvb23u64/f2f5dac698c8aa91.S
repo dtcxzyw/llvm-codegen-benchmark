@@ -1,8 +1,3 @@
-func0000000000000002:                   # @func0000000000000002
-	zext.w	a2, a2
-	mul	a1, a1, a2
-	sub	a0, a1, a0
-	ret
 func000000000000001d:                   # @func000000000000001d
 	sext.w	a2, a2
 	mul	a1, a1, a2
@@ -50,6 +45,11 @@ func0000000000000016:                   # @func0000000000000016
 	ret
 func0000000000000011:                   # @func0000000000000011
 	sext.w	a2, a2
+	mul	a1, a1, a2
+	sub	a0, a1, a0
+	ret
+func0000000000000002:                   # @func0000000000000002
+	zext.w	a2, a2
 	mul	a1, a1, a2
 	sub	a0, a1, a0
 	ret

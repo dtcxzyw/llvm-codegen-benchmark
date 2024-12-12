@@ -1,5 +1,5 @@
 
-; 1306 occurrences:
+; 1313 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcCascade.c.ll
@@ -7,7 +7,6 @@
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcFraig.c.ll
 ; abc/optimized/abcGen.c.ll
-; abc/optimized/abcLog.c.ll
 ; abc/optimized/abcMiter.c.ll
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/abcPart.c.ll
@@ -43,7 +42,6 @@
 ; abc/optimized/cuddAPI.c.ll
 ; abc/optimized/cuddReorder.c.ll
 ; abc/optimized/cuddZddReord.c.ll
-; abc/optimized/darMan.c.ll
 ; abc/optimized/darPrec.c.ll
 ; abc/optimized/extraUtilMisc.c.ll
 ; abc/optimized/fraClaus.c.ll
@@ -118,6 +116,11 @@
 ; assimp/optimized/SceneCombiner.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/gregorian.ll
+; boost/optimized/rational.ll
+; boost/optimized/utf8_codecvt_facet.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; bullet3/optimized/b3File.ll
 ; bullet3/optimized/btHeightfieldTerrainShape.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
@@ -241,8 +244,6 @@
 ; gromacs/optimized/constraint_gpu_helpers.cpp.ll
 ; gromacs/optimized/convert_tpr.cpp.ll
 ; gromacs/optimized/dgebrd.cpp.ll
-; gromacs/optimized/dgelqf.cpp.ll
-; gromacs/optimized/dgeqrf.cpp.ll
 ; gromacs/optimized/dgetri.cpp.ll
 ; gromacs/optimized/displacement.cpp.ll
 ; gromacs/optimized/distribute.cpp.ll
@@ -301,8 +302,6 @@
 ; gromacs/optimized/reversetopology.cpp.ll
 ; gromacs/optimized/settle.cpp.ll
 ; gromacs/optimized/sgebrd.cpp.ll
-; gromacs/optimized/sgelqf.cpp.ll
-; gromacs/optimized/sgeqrf.cpp.ll
 ; gromacs/optimized/sgetri.cpp.ll
 ; gromacs/optimized/sm_merge.cpp.ll
 ; gromacs/optimized/sm_simple.cpp.ll
@@ -327,7 +326,6 @@
 ; icu/optimized/decNumber.ll
 ; icu/optimized/edits.ll
 ; icu/optimized/gencnvex.ll
-; icu/optimized/gregoimp.ll
 ; icu/optimized/propsvec.ll
 ; icu/optimized/punycode.ll
 ; icu/optimized/smpdtfmt.ll
@@ -380,7 +378,6 @@
 ; lightgbm/optimized/train_share_states.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
-; linux/optimized/acpi_lpat.ll
 ; linux/optimized/airtime.ll
 ; linux/optimized/alps.ll
 ; linux/optimized/battery.ll
@@ -457,7 +454,6 @@
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/LoopAccessAnalysis.cpp.ll
 ; llvm/optimized/MachinePipeliner.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/SimpleLoopUnswitch.cpp.ll
@@ -471,6 +467,25 @@
 ; luau/optimized/Compiler.cpp.ll
 ; luau/optimized/CostModel.cpp.ll
 ; luau/optimized/lgc.cpp.ll
+; lvgl/optimized/lv_bar.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_demo_widgets.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
+; lvgl/optimized/lv_draw_sw_gradient.ll
+; lvgl/optimized/lv_draw_sw_line.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
+; lvgl/optimized/lv_dropdown.ll
+; lvgl/optimized/lv_flex.ll
+; lvgl/optimized/lv_grid.ll
+; lvgl/optimized/lv_image.ll
+; lvgl/optimized/lv_math.ll
+; lvgl/optimized/lv_obj_scroll.ll
+; lvgl/optimized/lv_roller.ll
+; lvgl/optimized/lv_scale.ll
+; lvgl/optimized/lv_slider.ll
+; lvgl/optimized/lv_tabview.ll
 ; memcached/optimized/memcached-slabs.ll
 ; memcached/optimized/memcached_debug-slabs.ll
 ; meshlab/optimized/alignset.cpp.ll
@@ -485,7 +500,6 @@
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
@@ -680,14 +694,11 @@
 ; openblas/optimized/dgelq.c.ll
 ; openblas/optimized/dgelqf.c.ll
 ; openblas/optimized/dgelst.c.ll
-; openblas/optimized/dgeqp3.c.ll
 ; openblas/optimized/dgeqr.c.ll
 ; openblas/optimized/dgeqrf.c.ll
 ; openblas/optimized/dgeqrfp.c.ll
-; openblas/optimized/dgesdd.c.ll
 ; openblas/optimized/dgesvd.c.ll
 ; openblas/optimized/dgesvj.c.ll
-; openblas/optimized/dgetri.c.ll
 ; openblas/optimized/dgghd3.c.ll
 ; openblas/optimized/dgsvj0.c.ll
 ; openblas/optimized/dgsvj1.c.ll
@@ -705,7 +716,6 @@
 ; openblas/optimized/dsytrf_aa_2stage.c.ll
 ; openblas/optimized/dtrevc3.c.ll
 ; openblas/optimized/dtrsyl3.c.ll
-; openblas/optimized/iparmq.c.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/LSDDetector.cpp.ll
 ; opencv/optimized/OpenEXRimages_HDR_Retina_toneMapping.cpp.ll
@@ -1037,12 +1047,10 @@
 ; openmpi/optimized/coll_han_reduce.ll
 ; openmpi/optimized/coll_han_scatter.ll
 ; openmpi/optimized/coll_han_topo.ll
-; openmpi/optimized/coll_sm_component.ll
 ; openmpi/optimized/coll_sm_module.ll
 ; openmpi/optimized/common_ompio_aggregators.ll
 ; openmpi/optimized/fcoll_dynamic_gen2_file_write_all.ll
 ; openmpi/optimized/group_bitmap.ll
-; openmpi/optimized/group_strided.ll
 ; openmpi/optimized/k-partitioning.ll
 ; openmpi/optimized/libmpi_c_profile_la-dims_create.ll
 ; openmpi/optimized/libprrte_la-routed_radix.ll
@@ -1236,7 +1244,6 @@
 ; wireshark/optimized/byte_view_text.cpp.ll
 ; wireshark/optimized/coloring_rules_dialog.cpp.ll
 ; wireshark/optimized/data_printer.cpp.ll
-; wireshark/optimized/ftype-time.c.ll
 ; wireshark/optimized/io_graph_dialog.cpp.ll
 ; wireshark/optimized/lemon.c.ll
 ; wireshark/optimized/overlay_scroll_bar.cpp.ll

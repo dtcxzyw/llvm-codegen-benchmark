@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 14 occurrences:
 ; cpython/optimized/instrumentation.ll
 ; linux/optimized/memblock.ll
 ; llvm/optimized/EHStreamer.cpp.ll
@@ -12,6 +12,8 @@
 ; z3/optimized/sat_solver.cpp.ll
 ; z3/optimized/seq_rewriter.cpp.ll
 ; z3/optimized/smt_consequences.cpp.ll
+; zed-rs/optimized/14nzgp7qqjehsllc2nbkdaoyu.ll
+; zed-rs/optimized/boyei0qs0y80q8snoztbi8jt7.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
@@ -52,10 +54,11 @@ entry:
   ret i64 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; imgui/optimized/imgui_draw.cpp.ll
 ; llvm/optimized/ARMException.cpp.ll
 ; llvm/optimized/EHStreamer.cpp.ll
+; lvgl/optimized/lv_obj_style.ll
 ; nuklear/optimized/unity.c.ll
 ; raylib/optimized/rtext.c.ll
 ; stb/optimized/stb_truetype.c.ll

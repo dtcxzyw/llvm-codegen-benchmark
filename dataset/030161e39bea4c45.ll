@@ -114,10 +114,10 @@ entry:
 
 ; 5 occurrences:
 ; abc/optimized/giaGlitch.c.ll
-; abseil-cpp/optimized/hash.cc.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; qemu/optimized/block_qcow2.c.ll
 ; spike/optimized/debug_module.ll
+; stockfish/optimized/evaluate_nnue.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001e(i32 %0, i32 %1, i64 %2) #0 {
 entry:
@@ -168,7 +168,7 @@ entry:
   ret i32 %5
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; brotli/optimized/decode.c.ll
 ; duckdb/optimized/ub_duckdb_common_serializer.cpp.ll
 ; eastl/optimized/TestBitset.cpp.ll
@@ -177,7 +177,6 @@ entry:
 ; spike/optimized/vror_vi.ll
 ; spike/optimized/vror_vv.ll
 ; spike/optimized/vror_vx.ll
-; stockfish/optimized/evaluate_nnue.ll
 ; wasmedge/optimized/filemgr.cpp.ll
 ; yosys/optimized/memory_libmap.ll
 ; Function Attrs: nounwind
@@ -189,29 +188,19 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; brotli/optimized/metablock.c.ll
 ; libwebp/optimized/quant_enc.c.ll
 ; openusd/optimized/decodemv.c.ll
 ; snappy/optimized/snappy.cc.ll
 ; spike/optimized/vrol_vv.ll
+; stockfish/optimized/evaluate_nnue.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000018(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = shl i32 %1, %3
-  %5 = or i32 %4, %0
-  ret i32 %5
-}
-
-; 1 occurrences:
-; stockfish/optimized/evaluate_nnue.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000006(i32 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc i64 %2 to i32
-  %4 = shl nuw nsw i32 %1, %3
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -222,7 +211,7 @@ define i32 @func0000000000000010(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = shl i32 %1, %3
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 

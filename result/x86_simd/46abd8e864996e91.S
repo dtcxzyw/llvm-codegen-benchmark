@@ -17,7 +17,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpcmpeqb	.LCPI0_1(%rip), %xmm0, %k1
@@ -45,7 +45,7 @@ func0000000000000051:                   # @func0000000000000051
 	.zero	1
 	.zero	1
 	.zero	1
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000001e8:                   # @func00000000000001e8
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm2, %ymm2
 	vpcmpnleub	.LCPI1_1(%rip), %xmm0, %k1
 	vpaddd	.LCPI1_2(%rip){1to8}, %ymm1, %ymm2 {%k1}
@@ -72,13 +72,13 @@ func00000000000000f8:                   # @func00000000000000f8
 	.zero	1
 	.zero	1
 	.zero	1
-func00000000000000d4:                   # @func00000000000000d4
+func00000000000001b4:                   # @func00000000000001b4
 	vpaddd	.LCPI2_0(%rip){1to8}, %ymm2, %ymm2
 	vpcmpltub	.LCPI2_1(%rip), %xmm0, %k1
 	vpaddd	.LCPI2_2(%rip){1to8}, %ymm1, %ymm2 {%k1}
 	vmovdqa	%ymm2, %ymm0
 	retq
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	vptestnmb	%xmm0, %xmm0, %k1
 	vmovdqa32	%ymm1, %ymm2 {%k1}
 	vpcmpeqd	%ymm0, %ymm0, %ymm0
@@ -88,7 +88,7 @@ func00000000000000f1:                   # @func00000000000000f1
 	.long	4294967248                      # 0xffffffd0
 .LCPI4_1:
 	.long	9                               # 0x9
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	vpaddd	.LCPI4_0(%rip){1to8}, %ymm2, %ymm2
 	vptestnmb	%xmm0, %xmm0, %k1
 	vpaddd	.LCPI4_1(%rip){1to8}, %ymm1, %ymm2 {%k1}
@@ -115,7 +115,7 @@ func0000000000000071:                   # @func0000000000000071
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	vpaddd	.LCPI5_0(%rip){1to8}, %ymm2, %ymm2
 	vpcmpnleub	.LCPI5_1(%rip), %xmm0, %k1
 	vpaddd	.LCPI5_2(%rip){1to8}, %ymm1, %ymm2 {%k1}

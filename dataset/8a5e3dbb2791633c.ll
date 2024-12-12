@@ -1,8 +1,7 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; grpc/optimized/frame_goaway.cc.ll
 ; grpc/optimized/message_compress.cc.ll
-; linux/optimized/hwvalid.ll
 ; linux/optimized/ptrace.ll
 ; llvm/optimized/AArch64LegalizerInfo.cpp.ll
 ; llvm/optimized/AArch64RegisterBankInfo.cpp.ll

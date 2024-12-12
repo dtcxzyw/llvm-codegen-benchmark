@@ -5,17 +5,17 @@
 ; cmake/optimized/bzlib.c.ll
 ; openjdk/optimized/type.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000204(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -27
   %4 = icmp ult i32 %3, -3
   %5 = icmp eq ptr %1, null
   %6 = or i1 %5, %4
-  %7 = or i1 %6, %0
+  %7 = or i1 %0, %6
   ret i1 %7
 }
 
-; 51 occurrences:
+; 50 occurrences:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
@@ -49,7 +49,6 @@ entry:
 ; llvm/optimized/OverflowInstAnalysis.cpp.ll
 ; llvm/optimized/ParseDecl.cpp.ll
 ; llvm/optimized/RISCVCodeGenPrepare.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/SelectOptimize.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
@@ -68,7 +67,7 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86InstCombineIntrinsic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000504(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000001204(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -59
   %4 = icmp ult i32 %3, -3

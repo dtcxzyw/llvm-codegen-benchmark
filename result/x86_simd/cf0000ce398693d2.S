@@ -1,9 +1,9 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpcmpeqb	%xmm1, %xmm0, %xmm0
 	retq
 .LCPI1_0:
 	.long	15                              # 0xf
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	vpmovsxbd	%xmm1, %ymm1
 	vpmovsxbd	%xmm0, %ymm0
 	vpsubd	%ymm1, %ymm0, %ymm0

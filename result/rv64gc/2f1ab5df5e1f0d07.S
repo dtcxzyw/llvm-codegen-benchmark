@@ -29,10 +29,3 @@ func0000000000000008:                   # @func0000000000000008
 	srli	a1, a1, 5
 	addw	a0, a0, a1
 	ret
-func000000000000000d:                   # @func000000000000000d
-	srliw	a1, a1, 2
-	subw	a0, a0, a1
-	lui	a1, 420
-	addi	a1, a1, 1102
-	addw	a0, a0, a1
-	ret

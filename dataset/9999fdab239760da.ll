@@ -116,10 +116,9 @@ entry:
   ret i8 %3
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; linux/optimized/amd_bus.ll
 ; linux/optimized/amdtopology.ll
-; linux/optimized/mmconf-fam10h_64.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000007(i32 %0) #0 {
 entry:

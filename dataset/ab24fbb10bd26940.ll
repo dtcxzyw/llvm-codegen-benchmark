@@ -1,6 +1,5 @@
 
-; 4 occurrences:
-; gromacs/optimized/slasq5.cpp.ll
+; 3 occurrences:
 ; openjdk/optimized/mlib_ImageConv_16ext.ll
 ; openjdk/optimized/mlib_ImageConv_8ext.ll
 ; openjdk/optimized/mlib_ImageConv_u16ext.ll
@@ -203,9 +202,7 @@ entry:
   ret i64 %6
 }
 
-; 6 occurrences:
-; gromacs/optimized/dlasd0.cpp.ll
-; gromacs/optimized/slasd0.cpp.ll
+; 4 occurrences:
 ; llvm/optimized/SampleProfileMatcher.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; openblas/optimized/dlasd0.c.ll

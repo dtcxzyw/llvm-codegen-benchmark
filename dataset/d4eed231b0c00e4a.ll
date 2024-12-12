@@ -1,10 +1,9 @@
 
-; 153 occurrences:
+; 152 occurrences:
 ; cmake/optimized/cmPolicies.cxx.ll
 ; darktable/optimized/collect.c.ll
 ; icu/optimized/dictbe.ll
 ; lief/optimized/psa_crypto_slot_management.c.ll
-; linux/optimized/input-mt.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; oiio/optimized/CineonHeader.cpp.ll
@@ -333,7 +332,7 @@ entry:
 ; vcpkg/optimized/versiondeserializers.cpp.ll
 ; vcpkg/optimized/versions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000048(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -44032
   %4 = icmp ult i32 %3, 11172

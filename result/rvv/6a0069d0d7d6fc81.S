@@ -25,7 +25,7 @@ func0000000000000042:                   # @func0000000000000042
 	vfmerge.vfm	v16, v16, fa5, v0
 	vmflt.vf	v0, v16, fa4
 	vfmerge.vfm	v16, v16, fa4, v0
-	vfmul.vv	v8, v16, v8
+	vfmul.vv	v8, v8, v16
 	ret
 .LCPI2_0:
 	.quad	0x4059000000000000              # double 100
@@ -41,5 +41,5 @@ func00000000000000ca:                   # @func00000000000000ca
 	vfmerge.vfm	v16, v16, fa5, v0
 	vmfle.vf	v0, v16, fa4
 	vfmerge.vfm	v16, v16, fa4, v0
-	vfmul.vv	v8, v16, v8
+	vfmul.vv	v8, v8, v16
 	ret

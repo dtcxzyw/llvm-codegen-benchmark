@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/util_readline.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %.neg = sub i32 %2, %1
   %3 = add nuw nsw i32 %0, 1

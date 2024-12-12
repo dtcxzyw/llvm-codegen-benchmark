@@ -1,10 +1,10 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000051:                   # @func0000000000000051
 	movl	%edi, %eax
 	cmpq	$10, %rdx
 	cmovael	%esi, %eax
 	negl	%eax
 	retq
-func0000000000000023:                   # @func0000000000000023
+func0000000000000063:                   # @func0000000000000063
 	cmpq	$16, %rdx
 	cmovbl	%esi, %edi
 	movl	$64, %eax

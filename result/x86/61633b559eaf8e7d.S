@@ -1,4 +1,4 @@
-func000000000000002a:                   # @func000000000000002a
+func000000000000002e:                   # @func000000000000002e
 	xorl	%eax, %eax
 	cmpb	$103, %dl
 	setne	%al
@@ -8,7 +8,7 @@ func000000000000002a:                   # @func000000000000002a
 	addq	%rdi, %rcx
 	leaq	-32(%rax,%rcx), %rax
 	retq
-func000000000000003a:                   # @func000000000000003a
+func000000000000003e:                   # @func000000000000003e
 	cmpb	$-119, %dl
 	movl	%esi, %eax
 	leaq	(%rax,%rax,8), %rax

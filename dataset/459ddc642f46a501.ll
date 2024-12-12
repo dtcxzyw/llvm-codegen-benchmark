@@ -1,21 +1,6 @@
 
 ; 1 occurrences:
-; php/optimized/math.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000040(ptr %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext nneg i32 %2 to i64
-  %4 = add i64 %1, 24
-  %5 = sub i64 %4, %3
-  %6 = getelementptr i8, ptr %0, i64 %5
-  ret ptr %6
-}
-
-; 4 occurrences:
 ; jq/optimized/decNumber.ll
-; luau/optimized/lstrlib.cpp.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000054(ptr %0, i64 %1, i32 %2) #0 {
 entry:
@@ -34,8 +19,8 @@ define ptr @func0000000000000056(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr i32, ptr %0, i64 %4
-  %6 = getelementptr i32, ptr %5, i64 %1
+  %5 = getelementptr i32, ptr %0, i64 %1
+  %6 = getelementptr i32, ptr %5, i64 %4
   ret ptr %6
 }
 

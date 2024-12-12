@@ -1,5 +1,6 @@
 
-; 172 occurrences:
+; 173 occurrences:
+; boost/optimized/to_chars.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/encode.c.ll
@@ -179,7 +180,7 @@ entry:
   %4 = zext nneg i32 %3 to i64
   %5 = lshr i64 %1, %4
   %6 = trunc i64 %5 to i32
-  %7 = add i32 %6, %0
+  %7 = add i32 %0, %6
   ret i32 %7
 }
 
@@ -198,7 +199,7 @@ entry:
   %4 = zext nneg i32 %3 to i64
   %5 = lshr i64 %1, %4
   %6 = trunc nuw nsw i64 %5 to i32
-  %7 = add nsw i32 %6, %0
+  %7 = add nsw i32 %0, %6
   ret i32 %7
 }
 
@@ -211,7 +212,7 @@ entry:
   %4 = zext nneg i32 %3 to i64
   %5 = lshr i64 %1, %4
   %6 = trunc nuw i64 %5 to i32
-  %7 = add i32 %6, %0
+  %7 = add i32 %0, %6
   ret i32 %7
 }
 
@@ -225,7 +226,7 @@ entry:
   %4 = zext nneg i32 %3 to i64
   %5 = lshr i64 %1, %4
   %6 = trunc i64 %5 to i32
-  %7 = add i32 %6, %0
+  %7 = add i32 %0, %6
   ret i32 %7
 }
 
@@ -238,7 +239,7 @@ entry:
   %4 = zext nneg i32 %3 to i64
   %5 = lshr i64 %1, %4
   %6 = trunc i64 %5 to i32
-  %7 = add nsw i32 %6, %0
+  %7 = add nsw i32 %0, %6
   ret i32 %7
 }
 
@@ -252,7 +253,7 @@ entry:
   %4 = zext nneg i32 %3 to i64
   %5 = lshr i64 %1, %4
   %6 = trunc nuw i64 %5 to i32
-  %7 = add nuw nsw i32 %6, %0
+  %7 = add nuw nsw i32 %0, %6
   ret i32 %7
 }
 
@@ -267,7 +268,7 @@ entry:
   %4 = zext nneg i32 %3 to i64
   %5 = lshr i64 %1, %4
   %6 = trunc i64 %5 to i32
-  %7 = add nuw nsw i32 %6, %0
+  %7 = add nuw nsw i32 %0, %6
   ret i32 %7
 }
 

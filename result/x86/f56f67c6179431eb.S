@@ -1,33 +1,33 @@
-func0000000000000017:                   # @func0000000000000017
+func0000000000000027:                   # @func0000000000000027
 	notl	%edx
 	cmpl	$1, %esi
 	movl	$127, %eax
 	cmovnel	%edx, %eax
-	cmpl	%edi, %eax
-	setge	%al
+	cmpl	%eax, %edi
+	setle	%al
 	retq
-func0000000000000015:                   # @func0000000000000015
+func0000000000000025:                   # @func0000000000000025
 	notl	%edx
 	testl	%esi, %esi
 	sete	%cl
-	cmpl	%edi, %edx
-	setae	%al
+	cmpl	%edx, %edi
+	setbe	%al
 	orb	%cl, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	notl	%edx
 	cmpl	$32, %esi
 	movl	$-1, %eax
 	cmovnel	%edx, %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	xorl	$31, %edx
 	xorl	%eax, %eax
 	cmpl	$1, %esi
 	sbbl	%eax, %eax
 	orl	%edx, %eax
-	cmpl	%edi, %eax
-	setg	%al
+	cmpl	%eax, %edi
+	setl	%al
 	retq

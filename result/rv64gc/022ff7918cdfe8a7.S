@@ -21,13 +21,3 @@ func0000000000000024:                   # @func0000000000000024
 	fmv.d.x	fa4, zero
 	flt.d	a0, fa4, fa5
 	ret
-func00000000000000e5:                   # @func00000000000000e5
-	fmul.d	fa5, fa0, fa1
-	feq.d	a0, fa5, fa5
-	fmv.d.x	fa4, zero
-	bnez	a0, .LBB2_2
-	fmv.d	fa5, fa4
-.LBB2_2:                                # %entry
-	fle.d	a0, fa5, fa4
-	xori	a0, a0, 1
-	ret

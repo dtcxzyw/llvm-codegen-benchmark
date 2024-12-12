@@ -1,8 +1,7 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
-; clamav/optimized/Xz.c.ll
 ; cmake/optimized/blocksort.c.ll
 ; flatbuffers/optimized/flatc.cpp.ll
 ; freetype/optimized/sfnt.c.ll
@@ -32,7 +31,7 @@ entry:
   ret i8 %2
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; libquic/optimized/deflate.c.ll
 ; linux/optimized/decompress_unlzma.ll
@@ -41,6 +40,7 @@ entry:
 ; meshoptimizer/optimized/indexcodec.cpp.ll
 ; quickjs/optimized/quickjs.ll
 ; wireshark/optimized/packet-cigi.c.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0) #0 {
 entry:

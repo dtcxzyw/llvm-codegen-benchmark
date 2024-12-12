@@ -37,7 +37,7 @@ func0000000000000010:                   # @func0000000000000010
 	vpmovw2m	%xmm0, %k0
 	vpaddb	.LCPI0_0(%rip), %xmm1, %xmm0
 	vpcmpltub	.LCPI0_1(%rip), %xmm0, %k1
-	korb	%k0, %k1, %k0
+	korb	%k1, %k0, %k0
 	vpmovm2d	%k0, %ymm0
 	vpsrld	$31, %ymm0, %ymm0
 	retq

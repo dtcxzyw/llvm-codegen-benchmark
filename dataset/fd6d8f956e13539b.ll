@@ -2,17 +2,16 @@
 ; 1 occurrences:
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000c1(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = and i32 %3, -1027
   %5 = icmp eq i32 %4, 0
   ret i1 %5
 }
 
-; 18 occurrences:
-; arrow/optimized/value_parsing.cc.ll
+; 17 occurrences:
 ; icu/optimized/collationcompare.ll
 ; linux/optimized/drm_probe_helper.ll
 ; linux/optimized/pci-acpi.ll
@@ -34,7 +33,7 @@ entry:
 define i1 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = and i32 %3, 1073741824
   %5 = icmp eq i32 %4, 0
   ret i1 %5
@@ -43,10 +42,10 @@ entry:
 ; 1 occurrences:
 ; openvdb/optimized/MultiResGrid.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = and i32 %3, 1
   %5 = icmp eq i32 %4, 0
   ret i1 %5
@@ -55,10 +54,10 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/quoridor.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = and i32 %3, 1
   %5 = icmp eq i32 %4, 0
   ret i1 %5

@@ -78,23 +78,23 @@ entry:
   %3 = and i64 %2, -8
   %4 = getelementptr i8, ptr %1, i64 8
   %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = icmp ugt ptr %5, %0
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; openjdk/optimized/classFileParser.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000001e4(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr nusw i8, ptr %1, i64 1
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
-  %6 = icmp ugt ptr %5, %0
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
-; 42 occurrences:
+; 41 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; assimp/optimized/3DSConverter.cpp.ll
 ; assimp/optimized/ACLoader.cpp.ll
@@ -134,28 +134,27 @@ entry:
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; llvm/optimized/VTableBuilder.cpp.ll
-; luajit/optimized/lj_alloc.ll
-; luajit/optimized/lj_alloc_dyn.ll
 ; openjdk/optimized/classFileParser.ll
+; z3/optimized/realclosure.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000001e1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr nusw i8, ptr %1, i64 1
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
-  %6 = icmp eq ptr %5, %0
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; snappy/optimized/snappy.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000064(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 2147483647
   %4 = getelementptr i8, ptr %1, i64 1
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
-  %6 = icmp ugt ptr %5, %0
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
@@ -163,12 +162,38 @@ entry:
 ; duckdb/optimized/ub_duckdb_transformer_expression.cpp.ll
 ; linux/optimized/libata-core.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000184(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -8
-  %4 = getelementptr nusw i8, ptr %1, i64 8
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 8
   %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = icmp ugt ptr %5, %0
+  %6 = icmp ult ptr %0, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; boost/optimized/alloc_lib.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000144(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -8
+  %4 = getelementptr nusw i8, ptr %1, i64 -16
+  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %6 = icmp ult ptr %0, %5
+  ret i1 %6
+}
+
+; 3 occurrences:
+; boost/optimized/alloc_lib.ll
+; luajit/optimized/lj_alloc.ll
+; luajit/optimized/lj_alloc_dyn.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000141(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -8
+  %4 = getelementptr nusw i8, ptr %1, i64 -16
+  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
@@ -182,19 +207,7 @@ entry:
   %3 = and i64 %2, 4294967295
   %4 = getelementptr i8, ptr %1, i64 18
   %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = icmp eq ptr %5, %0
-  ret i1 %6
-}
-
-; 1 occurrences:
-; z3/optimized/realclosure.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = and i64 %2, 4294967295
-  %4 = getelementptr i8, ptr %1, i64 8
-  %5 = getelementptr nusw ptr, ptr %4, i64 %3
-  %6 = icmp eq ptr %5, %0
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 

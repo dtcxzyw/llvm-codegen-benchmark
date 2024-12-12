@@ -50,9 +50,8 @@ entry:
   ret i32 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; abc/optimized/compress.c.ll
-; gromacs/optimized/eigensolver.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; raylib/optimized/rtextures.c.ll
@@ -69,9 +68,9 @@ entry:
 ; 1 occurrences:
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000012(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000052(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %0, %2
+  %3 = icmp samesign ult i32 %0, %2
   %4 = select i1 %3, i32 %0, i32 %1
   %5 = add nuw i32 %4, 1
   ret i32 %5

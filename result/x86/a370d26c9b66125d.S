@@ -13,7 +13,7 @@ func000000000000000a:                   # @func000000000000000a
 	setg	%al
 	negb	%al
 	retq
-func0000000000000009:                   # @func0000000000000009
+func0000000000000019:                   # @func0000000000000019
 	xorl	%eax, %eax
 	cmpl	%esi, %edi
 	adcb	$-1, %al

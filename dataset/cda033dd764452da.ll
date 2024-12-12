@@ -11,10 +11,9 @@ entry:
   ret i1 %3
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; imgui/optimized/imgui_tables.cpp.ll
 ; llvm/optimized/DbiModuleList.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
@@ -34,8 +33,7 @@ entry:
   ret i1 %3
 }
 
-; 2 occurrences:
-; llvm/optimized/ScheduleDAGRRList.cpp.ll
+; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i16 %0, i16 %1) #0 {

@@ -7,7 +7,7 @@ define i32 @func000000000000000c(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 1
   %4 = zext nneg i8 %3 to i32
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = add i32 %5, %0
   ret i32 %6
 }
@@ -21,7 +21,7 @@ define i32 @func000000000000000f(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 63
   %4 = zext nneg i8 %3 to i32
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }

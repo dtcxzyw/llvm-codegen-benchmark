@@ -1,4 +1,4 @@
-func0000000000000151:                   # @func0000000000000151
+func00000000000002a1:                   # @func00000000000002a1
 	vpsllq	$6, %ymm2, %ymm2
 	vpaddq	%ymm0, %ymm2, %ymm0
 	vpxor	%xmm2, %xmm2, %xmm2
@@ -7,7 +7,7 @@ func0000000000000151:                   # @func0000000000000151
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000015c:                   # @func000000000000015c
+func00000000000002ac:                   # @func00000000000002ac
 	vpsllq	$5, %ymm2, %ymm2
 	vpaddq	%ymm0, %ymm2, %ymm0
 	vpxor	%xmm2, %xmm2, %xmm2
@@ -18,7 +18,7 @@ func000000000000015c:                   # @func000000000000015c
 	retq
 .LCPI2_0:
 	.quad	2                               # 0x2
-func0000000000000116:                   # @func0000000000000116
+func0000000000000226:                   # @func0000000000000226
 	vpaddq	%ymm2, %ymm2, %ymm2
 	vpaddq	%ymm0, %ymm2, %ymm0
 	vpbroadcastq	.LCPI2_0(%rip), %ymm2   # ymm2 = [2,2,2,2]
@@ -29,7 +29,7 @@ func0000000000000116:                   # @func0000000000000116
 	retq
 .LCPI3_0:
 	.quad	2                               # 0x2
-func0000000000000146:                   # @func0000000000000146
+func0000000000000286:                   # @func0000000000000286
 	vpsllq	$2, %ymm2, %ymm2
 	vpbroadcastq	.LCPI3_0(%rip), %ymm3   # ymm3 = [2,2,2,2]
 	vpaddq	%ymm0, %ymm2, %ymm0
@@ -40,7 +40,7 @@ func0000000000000146:                   # @func0000000000000146
 	retq
 .LCPI4_0:
 	.quad	3                               # 0x3
-func0000000000000156:                   # @func0000000000000156
+func00000000000002a6:                   # @func00000000000002a6
 	vpaddq	%ymm2, %ymm2, %ymm2
 	vpaddq	%ymm0, %ymm2, %ymm0
 	vpbroadcastq	.LCPI4_0(%rip), %ymm2   # ymm2 = [3,3,3,3]

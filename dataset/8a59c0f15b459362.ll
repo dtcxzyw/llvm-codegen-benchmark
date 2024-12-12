@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 11 occurrences:
 ; arrow/optimized/datum.cc.ll
 ; cpython/optimized/_codecs_iso2022.ll
 ; icu/optimized/ucnv2022.ll
@@ -7,10 +7,12 @@
 ; llvm/optimized/Core.cpp.ll
 ; opencv/optimized/einsum_layer.cpp.ll
 ; openjdk/optimized/vectornode.ll
+; php/optimized/decode.ll
 ; qemu/optimized/libvduse.c.ll
 ; wolfssl/optimized/internal.c.ll
+; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000064(i32 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -1
   %3 = icmp ult i8 %2, 3
@@ -19,7 +21,7 @@ entry:
   ret i32 %5
 }
 
-; 26 occurrences:
+; 30 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcRpo.c.ll
@@ -35,6 +37,7 @@ entry:
 ; abc/optimized/luckyRead.c.ll
 ; abc/optimized/wlcReadSmt.c.ll
 ; abc/optimized/wlcReadVer.c.ll
+; boost/optimized/parser_utils.ll
 ; cmake/optimized/archive_read_support_format_mtree.c.ll
 ; graphviz/optimized/DotIO.c.ll
 ; hermes/optimized/APFloat.cpp.ll
@@ -45,14 +48,17 @@ entry:
 ; postgres/optimized/parse_manifest.ll
 ; postgres/optimized/parse_manifest_shlib.ll
 ; postgres/optimized/parse_manifest_srv.ll
+; qemu/optimized/gdbstub.c.ll
+; quickjs/optimized/libbf.ll
+; quickjs/optimized/quickjs.ll
 ; slurm/optimized/select.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000024(i32 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -97
   %3 = icmp ult i8 %2, 6
   %4 = add nsw i32 %0, -87
-  %5 = select i1 %3, i32 %4, i32 -1
+  %5 = select i1 %3, i32 %4, i32 0
   ret i32 %5
 }
 

@@ -1,5 +1,5 @@
 
-; 297 occurrences:
+; 298 occurrences:
 ; coremark/optimized/core_list_join.c.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -221,6 +221,7 @@
 ; postgres/optimized/spgdoinsert.ll
 ; postgres/optimized/tsvector_parser.ll
 ; qemu/optimized/hw_net_igb_core.c.ll
+; qemu/optimized/target_riscv_vector_helper.c.ll
 ; ruby/optimized/strftime.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll

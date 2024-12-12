@@ -1,5 +1,6 @@
 
-; 9 occurrences:
+; 10 occurrences:
+; boost/optimized/parser_utils.ll
 ; cpython/optimized/Hacl_Hash_SHA3.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; lief/optimized/ccm.c.ll
@@ -21,6 +22,7 @@ entry:
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
+; boost/optimized/parser_utils.ll
 ; c3c/optimized/parse_expr.c.ll
 ; clamav/optimized/pdf.c.ll
 ; cmake/optimized/zstd_compress.c.ll
@@ -39,9 +41,9 @@ entry:
 ; linux/optimized/xhci-hub.ll
 ; llvm/optimized/APINotesWriter.cpp.ll
 ; llvm/optimized/APINotesYAMLCompiler.cpp.ll
+; lvgl/optimized/lv_color.ll
 ; openusd/optimized/decodemv.c.ll
 ; php/optimized/var_unserializer.ll
-; postgres/optimized/char.ll
 ; postgres/optimized/fe-exec.ll
 ; protobuf/optimized/generated_message_reflection.cc.ll
 ; qemu/optimized/hw_net_igb_core.c.ll
@@ -55,7 +57,6 @@ entry:
 ; wasmtime-rs/optimized/1qo0tg1ju819b23h.ll
 ; wasmtime-rs/optimized/3jqdez78s6gt3fnc.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
-; wireshark/optimized/daintree-sna.c.ll
 ; wireshark/optimized/dbs-etherwatch.c.ll
 ; wireshark/optimized/packet-aprs.c.ll
 ; wireshark/optimized/packet-nbt.c.ll
@@ -83,7 +84,7 @@ entry:
   ret i8 %2
 }
 
-; 14 occurrences:
+; 17 occurrences:
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; lief/optimized/BinaryParser.cpp.ll
 ; lief/optimized/RelocationObject.cpp.ll
@@ -92,12 +93,15 @@ entry:
 ; linux/optimized/ehci-hcd.ll
 ; llvm/optimized/RISCVDisassembler.cpp.ll
 ; quickjs/optimized/quickjs.ll
+; turborepo-rs/optimized/3wg34qzs64td8o5fq33fcg5rk.ll
 ; typst-rs/optimized/26ex1w19ixz6ifuk.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; wasmtime-rs/optimized/1qo0tg1ju819b23h.ll
 ; wasmtime-rs/optimized/3brysg9si6kuvbeh.ll
 ; wasmtime-rs/optimized/526qiozl2mm0d4p0.ll
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000000f(i8 %0) #0 {
 entry:

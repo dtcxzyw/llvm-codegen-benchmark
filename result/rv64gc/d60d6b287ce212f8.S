@@ -1,4 +1,4 @@
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	addiw	a1, a1, -100
 	andi	a0, a0, 255
 	sltiu	a1, a1, 900
@@ -6,25 +6,31 @@ func0000000000000041:                   # @func0000000000000041
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000014c:                   # @func000000000000014c
+func000000000000048c:                   # @func000000000000048c
 	addiw	a1, a1, -1
 	sltiu	a1, a1, 4
 	srli	a0, a0, 30
 	and	a0, a0, a1
 	ret
-func0000000000000141:                   # @func0000000000000141
-	lui	a2, 4480
-	and	a0, a0, a2
-	lui	a2, 1048574
-	addi	a2, a2, -509
-	addw	a1, a1, a2
-	sltiu	a1, a1, -2
-	seqz	a0, a0
+func000000000000018c:                   # @func000000000000018c
+	sext.w	a1, a1
+	andi	a0, a0, 3
+	addi	a1, a1, -1
+	snez	a1, a1
+	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	addiw	a1, a1, -13
 	sltiu	a1, a1, 8
 	srli	a0, a0, 61
+	and	a0, a0, a1
+	ret
+func0000000000000481:                   # @func0000000000000481
+	addiw	a1, a1, -1
+	slli	a0, a0, 12
+	sltiu	a1, a1, 2045
+	srli	a0, a0, 12
+	seqz	a0, a0
 	and	a0, a0, a1
 	ret

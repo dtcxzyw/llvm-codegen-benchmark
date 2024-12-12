@@ -1,6 +1,6 @@
 func0000000000000006:                   # @func0000000000000006
 	vcvttsd2si	%xmm0, %eax
 	notl	%eax
-	cmpl	%edi, %eax
-	setg	%al
+	cmpl	%eax, %edi
+	setl	%al
 	retq

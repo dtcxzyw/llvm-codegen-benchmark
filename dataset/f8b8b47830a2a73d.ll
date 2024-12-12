@@ -13,7 +13,7 @@ define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 -6, i32 %1
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   %6 = sdiv i32 %5, 7
   ret i32 %6
 }

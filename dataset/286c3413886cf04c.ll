@@ -7,12 +7,10 @@
 ; openjdk/optimized/xHeapIterator.ll
 ; openjdk/optimized/zHeapIterator.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000048(ptr %0, i32 %1) #0 {
 entry:
-  %2 = sext i32 %1 to i64
-  %3 = getelementptr nusw ptr, ptr %0, i64 %2
-  %4 = icmp ugt ptr %3, %0
-  ret i1 %4
+  %2 = icmp sgt i32 %1, 0
+  ret i1 %2
 }
 
 ; 4 occurrences:

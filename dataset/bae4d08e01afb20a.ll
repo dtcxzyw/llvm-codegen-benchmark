@@ -41,15 +41,4 @@ entry:
   ret double %3
 }
 
-; 1 occurrences:
-; wireshark/optimized/wimax_utils.c.ll
-; Function Attrs: nounwind
-define double @func0000000000000002(i8 %0) #0 {
-entry:
-  %1 = zext i8 %0 to i32
-  %2 = add nsw i32 %1, -128
-  %3 = uitofp i32 %2 to double
-  ret double %3
-}
-
 attributes #0 = { nounwind }

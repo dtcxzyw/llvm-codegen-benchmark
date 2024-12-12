@@ -51,9 +51,8 @@ entry:
   ret i64 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; cvc5/optimized/instantiate.cpp.ll
-; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/SubtargetEmitter.cpp.ll
 ; rocksdb/optimized/db_impl_compaction_flush.cc.ll
 ; rocksdb/optimized/point_lock_manager.cc.ll
@@ -80,7 +79,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 21
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = and i64 %3, 2097151
   ret i64 %4
 }
@@ -105,7 +104,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 52
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = and i64 %3, 7
   ret i64 %4
 }

@@ -4,7 +4,7 @@
 ; wireshark/optimized/packet-ismacryp.c.ll
 ; wolfssl/optimized/test.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000cc(i1 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000018c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp ne i32 %1, 0

@@ -3,7 +3,7 @@ func0000000000000009:                   # @func0000000000000009
 	vadd.vv	v10, v10, v12
 	lui	a0, 512
 	vsrl.vi	v10, v10, 21
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	addiw	a0, a0, -1
 	vand.vx	v8, v8, a0
 	ret

@@ -1,7 +1,6 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; folly/optimized/MemoryIdler.cpp.ll
-; linux/optimized/i915_gem_gtt.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
 ; openjdk/optimized/os_linux.ll

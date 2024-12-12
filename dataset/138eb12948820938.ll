@@ -1,6 +1,9 @@
 
-; 1 occurrences:
+; 4 occurrences:
+; hwloc/optimized/traversal.ll
 ; llvm/optimized/SemaType.cpp.ll
+; llvm/optimized/StmtPrinter.cpp.ll
+; nlohmann_json/optimized/unit-conversions.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
@@ -11,17 +14,15 @@ entry:
   ret ptr %5
 }
 
-; 3 occurrences:
-; hwloc/optimized/traversal.ll
-; llvm/optimized/StmtPrinter.cpp.ll
-; nlohmann_json/optimized/unit-conversions.cpp.ll
+; 1 occurrences:
+; linux/optimized/nf_nat_sip.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000050(ptr %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 256
-  %3 = icmp eq i64 %2, 0
-  %4 = select i1 %3, i64 3, i64 2
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %2 = and i64 %1, 7
+  %3 = icmp samesign ult i64 %2, 3
+  %4 = select i1 %3, i64 16, i64 72
+  %5 = getelementptr i8, ptr %0, i64 %4
   ret ptr %5
 }
 

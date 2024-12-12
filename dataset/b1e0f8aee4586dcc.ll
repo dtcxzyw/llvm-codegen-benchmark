@@ -230,13 +230,13 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000154(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000294(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = icmp sgt i32 %3, 0
   %5 = select i1 %4, i32 %3, i32 16
-  %6 = icmp slt i32 %5, %1
-  %7 = or i1 %6, %0
+  %6 = icmp sgt i32 %1, %5
+  %7 = or i1 %0, %6
   ret i1 %7
 }
 

@@ -1,16 +1,16 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	xorl	%eax, %eax
 	cmpq	%rdx, %rsi
 	sete	%al
 	leaq	(%rdi,%rax,8), %rax
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000023:                   # @func0000000000000023
 	xorl	%eax, %eax
 	cmpq	%rdx, %rsi
 	setb	%al
 	leaq	(%rdi,%rax,8), %rax
 	retq
-func0000000000000062:                   # @func0000000000000062
+func0000000000000063:                   # @func0000000000000063
 	xorl	%eax, %eax
 	cmpq	%rdx, %rsi
 	setne	%al

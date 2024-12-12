@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 26 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/giaDup.c.ll
@@ -10,7 +10,6 @@
 ; abc/optimized/mpmMan.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; abc/optimized/wlcReadVer.c.ll
-; bullet3/optimized/btBatchedConstraints.ll
 ; clamav/optimized/macho.c.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; hyperscan/optimized/rose_build_program.cpp.ll
@@ -35,7 +34,8 @@ entry:
   ret i32 %4
 }
 
-; 7 occurrences:
+; 8 occurrences:
+; bullet3/optimized/btBatchedConstraints.ll
 ; icu/optimized/ucnv_u8.ll
 ; icu/optimized/utf_impl.ll
 ; libwebp/optimized/vp8l_enc.c.ll
@@ -51,13 +51,14 @@ entry:
   ret i32 %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; abc/optimized/absDup.c.ll
 ; abc/optimized/absUtil.c.ll
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/extraUtilMult.c.ll
 ; abc/optimized/extraUtilPerm.c.ll
 ; hdf5/optimized/H5Tbit.c.ll
+; linux/optimized/core.ll
 ; llvm/optimized/SemaHexagon.cpp.ll
 ; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; Function Attrs: nounwind

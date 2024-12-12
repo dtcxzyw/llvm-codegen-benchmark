@@ -18,7 +18,7 @@ entry:
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; wireshark/optimized/blf.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000011(i8 %0, i32 %1) #0 {
+define i8 @func0000000000000021(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 240
   %3 = icmp eq i32 %2, 16

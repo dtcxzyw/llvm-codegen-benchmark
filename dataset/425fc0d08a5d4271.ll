@@ -4,7 +4,7 @@
 ; icu/optimized/ucptrie.ll
 ; qemu/optimized/target_riscv_translate.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i16 %0) #0 {
+define i1 @func0000000000000014(i16 %0) #0 {
 entry:
   %1 = and i16 %0, 24
   %2 = icmp eq i16 %1, 0
@@ -51,10 +51,10 @@ entry:
 ; linux/optimized/libata-core.ll
 ; wireshark/optimized/packet-smb.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i16 %0) #0 {
+define i1 @func0000000000000018(i16 %0) #0 {
 entry:
   %1 = and i16 %0, 1792
-  %2 = icmp ugt i16 %1, 1024
+  %2 = icmp samesign ugt i16 %1, 1024
   ret i1 %2
 }
 

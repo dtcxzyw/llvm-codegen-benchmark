@@ -26,7 +26,7 @@ entry:
   %2 = and i32 %1, 31
   %3 = shl nsw i32 -1, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
@@ -41,11 +41,11 @@ entry:
   %2 = and i32 %1, 65535
   %3 = shl i32 65537, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
-; 103 occurrences:
+; 101 occurrences:
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/acbUtil.c.ll
 ; abc/optimized/acecCo.c.ll
@@ -89,13 +89,11 @@ entry:
 ; linux/optimized/xfrm_replay.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/CallingConvLower.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RegUsageInfoCollector.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLoweringCall.cpp.ll
 ; llvm/optimized/X86RegisterInfo.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; nuttx/optimized/sig_delset.c.ll
 ; openjdk/optimized/bcEscapeAnalyzer.ll
 ; openjdk/optimized/buildOopMap.ll
 ; openjdk/optimized/compile.ll
@@ -155,12 +153,11 @@ entry:
   %2 = and i32 %1, 24
   %3 = shl nuw i32 255, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
-; 7 occurrences:
-; linux/optimized/i915_irq.ll
+; 6 occurrences:
 ; linux/optimized/i915_pmu.ll
 ; linux/optimized/pcmcia_resource.ll
 ; linux/optimized/uhci-hcd.ll
@@ -173,7 +170,7 @@ entry:
   %2 = and i32 %1, 7
   %3 = shl nuw nsw i32 1, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 

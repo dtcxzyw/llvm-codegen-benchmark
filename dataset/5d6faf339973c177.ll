@@ -11,7 +11,7 @@
 define i1 @func0000000000000008(i1 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = icmp ugt i16 %2, 96
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -38,11 +38,13 @@ entry:
   ret i1 %5
 }
 
-; 19 occurrences:
+; 20 occurrences:
 ; hermes/optimized/InstSimplify.cpp.ll
+; lief/optimized/psa_crypto_aead.c.ll
 ; linux/optimized/gen8_ppgtt.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/pci.ll
+; llvm/optimized/AArch64CallingConvention.cpp.ll
 ; llvm/optimized/HeaderSearch.cpp.ll
 ; llvm/optimized/ParseDecl.cpp.ll
 ; llvm/optimized/TokenAnnotator.cpp.ll
@@ -50,7 +52,6 @@ entry:
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; postgres/optimized/nbtutils.ll
 ; raylib/optimized/rmodels.c.ll
-; spike/optimized/f16_classify.ll
 ; sqlite/optimized/sqlite3.ll
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; wireshark/optimized/libpcap.c.ll
@@ -61,25 +62,13 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, i16 %2) #0 {
 entry:
-  %3 = icmp eq i16 %2, 31
-  %4 = and i1 %3, %1
+  %3 = icmp eq i16 %2, 8196
+  %4 = and i1 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
 
-; 1 occurrences:
-; spike/optimized/f16_classify.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000006(i1 %0, i1 %1, i16 %2) #0 {
-entry:
-  %3 = icmp slt i16 %2, 0
-  %4 = and i1 %3, %1
-  %5 = select i1 %4, i1 %0, i1 false
-  ret i1 %5
-}
-
-; 11 occurrences:
-; brotli/optimized/backward_references_hq.c.ll
+; 10 occurrences:
 ; icu/optimized/normalizer2impl.ll
 ; icu/optimized/uprops.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -94,18 +83,7 @@ entry:
 define i1 @func0000000000000004(i1 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = icmp ult i16 %2, 120
-  %4 = and i1 %3, %1
-  %5 = select i1 %4, i1 %0, i1 false
-  ret i1 %5
-}
-
-; 1 occurrences:
-; sqlite/optimized/sqlite3.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000a(i1 %0, i1 %1, i16 %2) #0 {
-entry:
-  %3 = icmp sgt i16 %2, -1
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }

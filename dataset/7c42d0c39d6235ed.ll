@@ -1,5 +1,5 @@
 
-; 109 occurrences:
+; 108 occurrences:
 ; abc/optimized/acbPush.c.ll
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/cecSim.c.ll
@@ -79,7 +79,6 @@
 ; spike/optimized/mmu.ll
 ; spike/optimized/orn.ll
 ; spike/optimized/vmorn_mm.ll
-; spike/optimized/vsadd_vi.ll
 ; spike/optimized/vsadd_vv.ll
 ; spike/optimized/vsadd_vx.ll
 ; velox/optimized/ArrayContains.cpp.ll
@@ -113,7 +112,7 @@
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, 2
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   ret i64 %3
 }
 
@@ -125,7 +124,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, 63
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   ret i64 %3
 }
 

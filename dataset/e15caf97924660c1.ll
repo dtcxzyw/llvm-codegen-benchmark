@@ -1,10 +1,12 @@
 
-; 262 occurrences:
+; 264 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; abseil-cpp/optimized/int128.cc.ll
 ; abseil-cpp/optimized/int128_test.cc.ll
 ; abseil-cpp/optimized/numbers.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/to_chars.ll
 ; coreutils-rs/optimized/3qd2nnv0mbtxq1wn.ll
 ; coreutils-rs/optimized/3wh0yla9idangd55.ll
 ; coreutils-rs/optimized/4kgtcn9evb3aj2za.ll
@@ -176,7 +178,6 @@
 ; qemu/optimized/util_host-utils.c.ll
 ; quickjs/optimized/libbf.ll
 ; rayon-rs/optimized/21gejo1m4tab0cb8.ll
-; rayon-rs/optimized/2389eek2c9skvu2t.ll
 ; rayon-rs/optimized/9qhkgr4qio1yp41.ll
 ; rust-analyzer-rs/optimized/1lnhy2v45voxjwry.ll
 ; rust-analyzer-rs/optimized/2pjlntmpzwg88apl.ll
@@ -262,6 +263,7 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; wolfssl/optimized/sp_int.c.ll
+; zed-rs/optimized/53iexoleo5ntv1dnjbqpooo1x.ll
 ; Function Attrs: nounwind
 define i128 @func0000000000000000(i128 %0, i128 %1) #0 {
 entry:
@@ -269,7 +271,7 @@ entry:
   ret i128 %2
 }
 
-; 34 occurrences:
+; 36 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/int128_test.cc.ll
@@ -304,6 +306,8 @@ entry:
 ; velox/optimized/CastExpr.cpp.ll
 ; velox/optimized/Sequence.cpp.ll
 ; wolfssl/optimized/sp_int.c.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i128 @func0000000000000001(i128 %0, i128 %1) #0 {
 entry:

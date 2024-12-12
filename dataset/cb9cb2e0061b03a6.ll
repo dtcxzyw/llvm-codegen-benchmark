@@ -1,5 +1,5 @@
 
-; 8 occurrences:
+; 11 occurrences:
 ; folly/optimized/IPAddressV6.cpp.ll
 ; image-rs/optimized/34r8dryqmufipcqz.ll
 ; linux/optimized/tree.ll
@@ -8,6 +8,9 @@
 ; rust-analyzer-rs/optimized/3o0zta0tnq3ij8lb.ll
 ; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
 ; wasmtime-rs/optimized/xl3b912aq97wiv3.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000b(i32 %0, i32 %1, i16 %2) #0 {
 entry:
@@ -57,8 +60,7 @@ entry:
   ret i32 %6
 }
 
-; 3 occurrences:
-; linux/optimized/hda_codec.ll
+; 2 occurrences:
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; openjdk/optimized/mlib_c_ImageLookUp_f.ll
 ; Function Attrs: nounwind
@@ -140,6 +142,18 @@ entry:
   %4 = shl nuw i32 %3, 16
   %5 = or i32 %0, %1
   %6 = or i32 %5, %4
+  ret i32 %6
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; Function Attrs: nounwind
+define i32 @func000000000000001d(i32 %0, i32 %1, i16 %2) #0 {
+entry:
+  %3 = zext nneg i16 %2 to i32
+  %4 = shl nuw i32 %3, 24
+  %5 = or disjoint i32 %0, %1
+  %6 = or disjoint i32 %4, %5
   ret i32 %6
 }
 

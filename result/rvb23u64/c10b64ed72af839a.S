@@ -34,9 +34,3 @@ func0000000000000000:                   # @func0000000000000000
 	slli	a0, a0, 34
 	srli	a0, a0, 34
 	ret
-func000000000000006a:                   # @func000000000000006a
-	add	a0, a0, a1
-	srli	a0, a0, 16
-	add	a0, a0, a2
-	zext.h	a0, a0
-	ret

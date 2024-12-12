@@ -1,5 +1,5 @@
 
-%struct.SortTuple.3469052 = type { ptr, i64, i8, i32 }
+%struct.SortTuple.3653185 = type { ptr, i64, i8, i32 }
 
 ; 8 occurrences:
 ; postgres/optimized/qsort.ll
@@ -52,7 +52,7 @@ define ptr @func0000000000000004(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %.idx = select i1 %0, i64 %3, i64 0
-  %4 = getelementptr %struct.SortTuple.3469052, ptr %1, i64 %.idx
+  %4 = getelementptr %struct.SortTuple.3653185, ptr %1, i64 %.idx
   ret ptr %4
 }
 

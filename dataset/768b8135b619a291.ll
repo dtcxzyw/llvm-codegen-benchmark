@@ -11,7 +11,7 @@ define float @func0000000000000000(float %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = uitofp i32 %2 to float
-  %4 = fmul float %3, %0
+  %4 = fmul float %0, %3
   ret float %4
 }
 
@@ -24,11 +24,11 @@ define float @func0000000000000004(float %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = uitofp i32 %2 to float
-  %4 = fmul float %3, %0
+  %4 = fmul float %0, %3
   ret float %4
 }
 
-; 71 occurrences:
+; 70 occurrences:
 ; abc/optimized/abcPrint.c.ll
 ; assimp/optimized/TerragenLoader.cpp.ll
 ; flac/optimized/window.c.ll
@@ -56,7 +56,6 @@ entry:
 ; gromacs/optimized/sm_insolidangle.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
 ; meshlab/optimized/qualitymapperdialog.cpp.ll
@@ -105,7 +104,7 @@ define float @func0000000000000007(float %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = uitofp nneg i32 %2 to float
-  %4 = fmul float %3, %0
+  %4 = fmul float %0, %3
   ret float %4
 }
 
@@ -120,7 +119,7 @@ define float @func0000000000000005(float %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = uitofp nneg i32 %2 to float
-  %4 = fmul float %3, %0
+  %4 = fmul float %0, %3
   ret float %4
 }
 
@@ -132,7 +131,7 @@ define float @func0000000000000001(float %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = uitofp nneg i32 %2 to float
-  %4 = fmul float %3, %0
+  %4 = fmul float %0, %3
   ret float %4
 }
 
@@ -143,7 +142,7 @@ define float @func0000000000000003(float %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = uitofp nneg i32 %2 to float
-  %4 = fmul float %3, %0
+  %4 = fmul float %0, %3
   ret float %4
 }
 

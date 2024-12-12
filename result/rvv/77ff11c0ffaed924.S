@@ -4,7 +4,7 @@ func0000000000000014:                   # @func0000000000000014
 	li	a0, 32
 	vsll.vi	v12, v14, 16
 	vsll.vx	v10, v10, a0
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	vor.vv	v8, v8, v12
 	ret
 func0000000000000016:                   # @func0000000000000016
@@ -21,7 +21,7 @@ func0000000000000004:                   # @func0000000000000004
 	li	a0, 36
 	vsll.vi	v12, v14, 12
 	vsll.vx	v10, v10, a0
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	vor.vv	v8, v8, v12
 	ret
 func0000000000000006:                   # @func0000000000000006

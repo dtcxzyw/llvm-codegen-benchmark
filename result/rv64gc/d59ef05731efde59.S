@@ -40,3 +40,10 @@ func000000000000004f:                   # @func000000000000004f
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
+func0000000000000280:                   # @func0000000000000280
+	not	a2, a2
+	andi	a1, a1, 1
+	srli	a2, a2, 63
+	add	a0, a0, a1
+	add	a0, a0, a2
+	ret

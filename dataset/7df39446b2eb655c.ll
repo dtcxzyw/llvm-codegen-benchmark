@@ -1,5 +1,5 @@
 
-; 117 occurrences:
+; 129 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -53,12 +53,13 @@
 ; llvm/optimized/MemorySanitizer.cpp.ll
 ; llvm/optimized/RecordLayoutBuilder.cpp.ll
 ; llvm/optimized/SafeStack.cpp.ll
+; lvgl/optimized/lv_sdl_window.ll
+; lvgl/optimized/lv_style.ll
 ; minetest/optimized/CImageLoaderBMP.cpp.ll
 ; minetest/optimized/mapgen.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/codeholder.cpp.ll
 ; mitsuba3/optimized/jitallocator.cpp.ll
-; mitsuba3/optimized/jitruntime.cpp.ll
 ; mitsuba3/optimized/rapass.cpp.ll
 ; mitsuba3/optimized/rastack.cpp.ll
 ; mold/optimized/input-files.cc.ALPHA.cc.ll
@@ -117,6 +118,17 @@
 ; redis/optimized/ctl.sym.ll
 ; ruby/optimized/compile.ll
 ; sqlite/optimized/sqlite3.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/4s3i3gpn7nuv3jdpoq0skrhno.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
+; zed-rs/optimized/el2ujbjp7xo4qjt47dh50oqat.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i32 %0) #0 {
 entry:
@@ -126,7 +138,8 @@ entry:
   ret i64 %3
 }
 
-; 81 occurrences:
+; 80 occurrences:
+; boost/optimized/options_description.ll
 ; brotli/optimized/encode.c.ll
 ; csmith/optimized/FunctionInvocationUser.cpp.ll
 ; cvc5/optimized/query_generator_sample_sat.cpp.ll
@@ -202,8 +215,6 @@ entry:
 ; pocketpy/optimized/vm.cpp.ll
 ; postgres/optimized/varbit.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; pybind11/optimized/pybind11_cross_module_tests.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll

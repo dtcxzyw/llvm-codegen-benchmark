@@ -24,8 +24,7 @@ entry:
   ret i64 %5
 }
 
-; 81 occurrences:
-; qemu/optimized/target_riscv_pmu.c.ll
+; 80 occurrences:
 ; spike/optimized/add32.ll
 ; spike/optimized/clrs32.ll
 ; spike/optimized/clz32.ll
@@ -109,8 +108,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 4294967295
-  %3 = shl nuw i64 1, %2
+  %2 = and i64 %1, 4294967264
+  %3 = shl nuw i64 4294967295, %2
   %4 = xor i64 %0, -1
   %5 = and i64 %3, %4
   ret i64 %5

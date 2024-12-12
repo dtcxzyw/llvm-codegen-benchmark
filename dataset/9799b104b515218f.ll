@@ -1,5 +1,5 @@
 
-; 252 occurrences:
+; 254 occurrences:
 ; abc/optimized/abcHieGia.c.ll
 ; abc/optimized/acecRe.c.ll
 ; abc/optimized/bdcSpfd.c.ll
@@ -23,8 +23,8 @@
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; assimp/optimized/BlenderDNA.cpp.ll
 ; assimp/optimized/BlenderScene.cpp.ll
+; boost/optimized/src.ll
 ; bullet3/optimized/b3File.ll
-; cmake/optimized/archive_pack_dev.c.ll
 ; coreutils-rs/optimized/3ntjj58b904wujzh.ll
 ; cvc5/optimized/Solver.cc.ll
 ; delta-rs/optimized/2gd5h5hcnilezwzy.ll
@@ -39,6 +39,7 @@
 ; hermes/optimized/APFloat.cpp.ll
 ; hermes/optimized/DateUtil.cpp.ll
 ; icu/optimized/collationbuilder.ll
+; image-rs/optimized/4srzh4wujeew249y.ll
 ; image-rs/optimized/5oy2v8fghrh79s8.ll
 ; jq/optimized/jv.ll
 ; libsodium/optimized/libsse2_la-poly1305_sse2.ll
@@ -54,7 +55,6 @@
 ; linux/optimized/libata-core.ll
 ; linux/optimized/mprotect.ll
 ; linux/optimized/page.ll
-; linux/optimized/reciprocal_div.ll
 ; linux/optimized/slub.ll
 ; linux/optimized/swap.ll
 ; linux/optimized/swap_state.ll
@@ -146,8 +146,6 @@
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86InstructionSelector.cpp.ll
 ; llvm/optimized/X86LegalizerInfo.cpp.ll
-; luau/optimized/isocline.c.ll
-; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; mold/optimized/input-sections.cc.ARM32.cc.ll
 ; mold/optimized/input-sections.cc.I386.cc.ll
@@ -179,7 +177,6 @@
 ; qemu/optimized/target_riscv_debug.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; qemu/optimized/tcg.c.ll
-; redis/optimized/script.ll
 ; ring-rs/optimized/1vabw27ldssjsz66.ll
 ; ruby/optimized/compile.ll
 ; rust-analyzer-rs/optimized/15tfqr3l9t81r1af.ll
@@ -224,6 +221,7 @@
 ; spike/optimized/shfli.ll
 ; spike/optimized/triggers.ll
 ; spike/optimized/unshfli.ll
+; turborepo-rs/optimized/b9mxqsqxupsuldn67x7vgrl1g.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
 ; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
@@ -251,6 +249,10 @@
 ; z3/optimized/sat_cutset.cpp.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
 ; z3/optimized/spacer_context.cpp.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/6pnl53dvchkj2615muwn1tztk.ll
+; zed-rs/optimized/73pi95mikt3cntupcr2d2nefv.ll
+; zed-rs/optimized/8y2n395sf7zaarcc3wfqoazez.ll
 ; zxing/optimized/QRFormatInformation.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
@@ -261,7 +263,7 @@ entry:
   ret i64 %5
 }
 
-; 90 occurrences:
+; 89 occurrences:
 ; abc/optimized/cuddCache.c.ll
 ; abseil-cpp/optimized/civil_time.cc.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
@@ -283,7 +285,6 @@ entry:
 ; jemalloc/optimized/extent_dss.sym.ll
 ; linux/optimized/ds.ll
 ; linux/optimized/page.ll
-; linux/optimized/set_memory.ll
 ; linux/optimized/swap_state.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/AArch64MCCodeEmitter.cpp.ll
@@ -361,7 +362,8 @@ entry:
   ret i64 %5
 }
 
-; 99 occurrences:
+; 95 occurrences:
+; abc/optimized/bdcSpfd.c.ll
 ; abseil-cpp/optimized/mutex.cc.ll
 ; arrow/optimized/key_map.cc.ll
 ; folly/optimized/Compression.cpp.ll
@@ -435,16 +437,11 @@ entry:
 ; spike/optimized/f128_div.ll
 ; spike/optimized/f128_mul.ll
 ; spike/optimized/f128_sqrt.ll
-; spike/optimized/f128_to_f16.ll
-; spike/optimized/f128_to_f32.ll
 ; spike/optimized/f128_to_i32_r_minMag.ll
-; spike/optimized/f128_to_ui32_r_minMag.ll
-; spike/optimized/f32_to_f16.ll
-; spike/optimized/f64_to_f16.ll
-; spike/optimized/f64_to_f32.ll
 ; spike/optimized/s_addMagsF128.ll
 ; spike/optimized/s_mulAddF128.ll
 ; spike/optimized/triggers.ll
+; tokio-rs/optimized/46apu3hqx0w07xoc.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; yalantinglibs/optimized/addressbook.struct_pb.cc.ll
 ; yalantinglibs/optimized/any.struct_pb.cc.ll
@@ -470,7 +467,8 @@ entry:
   ret i64 %5
 }
 
-; 18 occurrences:
+; 19 occurrences:
+; abc/optimized/bdcSpfd.c.ll
 ; linux/optimized/init_64.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
@@ -492,7 +490,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, 268435456
+  %3 = and i64 %2, 4502500115742720
   %4 = or i64 %0, %1
   %5 = or disjoint i64 %4, %3
   ret i64 %5

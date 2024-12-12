@@ -76,15 +76,14 @@ entry:
   ret i64 %3
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; postgres/optimized/gistutil.ll
 ; postgres/optimized/slru.ll
-; slurm/optimized/bitstring.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0) #0 {
 entry:
   %1 = trunc nuw nsw i64 %0 to i32
-  %2 = ashr i32 %1, 6
+  %2 = ashr i32 %1, 3
   %3 = sext i32 %2 to i64
   ret i64 %3
 }

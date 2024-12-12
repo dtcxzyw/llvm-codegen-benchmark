@@ -15,7 +15,7 @@
 	.short	2                               # 0x2
 	.short	2                               # 0x2
 	.short	2                               # 0x2
-func0000000000000144:                   # @func0000000000000144
+func0000000000000284:                   # @func0000000000000284
 	vpsllw	$8, %ymm1, %ymm1
 	vpor	%ymm0, %ymm1, %ymm0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
@@ -41,7 +41,7 @@ func0000000000000144:                   # @func0000000000000144
 	.short	1500                            # 0x5dc
 	.short	1500                            # 0x5dc
 	.short	1500                            # 0x5dc
-func0000000000000154:                   # @func0000000000000154
+func00000000000002a4:                   # @func00000000000002a4
 	vpsllw	$8, %ymm1, %ymm1
 	vpor	%ymm0, %ymm1, %ymm0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1

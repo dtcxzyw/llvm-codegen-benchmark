@@ -24,11 +24,11 @@ entry:
   %3 = shl nuw i64 %2, 32
   %4 = and i64 %1, 4294901760
   %5 = or disjoint i64 %4, %3
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   ret i64 %6
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; hermes/optimized/APFloat.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/AsmParser.cpp.ll
@@ -36,6 +36,7 @@ entry:
 ; mold/optimized/arch-arm32.cc.ll
 ; php/optimized/crypt_sha512.ll
 ; wireshark/optimized/btsnoop.c.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -57,11 +58,11 @@ entry:
   %3 = and i64 %2, 562949953421310
   %4 = shl i64 %1, 49
   %5 = or disjoint i64 %4, %3
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   ret i64 %6
 }
 
-; 106 occurrences:
+; 108 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -151,6 +152,7 @@ entry:
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; llvm/optimized/StackMaps.cpp.ll
+; lvgl/optimized/lv_image.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; openspiel/optimized/negotiation.cc.ll
 ; openusd/optimized/surfaceFactory.cpp.ll
@@ -163,6 +165,7 @@ entry:
 ; rust-analyzer-rs/optimized/5amh0jp09v3snpag.ll
 ; rust-analyzer-rs/optimized/p6tl2rrfx0amk3d.ll
 ; simdjson/optimized/simdjson.cpp.ll
+; turborepo-rs/optimized/b9mxqsqxupsuldn67x7vgrl1g.ll
 ; wireshark/optimized/tvbuff.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; yyjson/optimized/yyjson.c.ll
@@ -202,13 +205,12 @@ entry:
   ret i64 %6
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; linux/optimized/dmar.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/memory.ll
 ; llvm/optimized/TypePrinter.cpp.ll
-; tokio-rs/optimized/46apu3hqx0w07xoc.ll
 ; z3/optimized/sat_cutset.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000e(i64 %0, i64 %1, i64 %2) #0 {
@@ -220,8 +222,10 @@ entry:
   ret i64 %6
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
+; tokio-rs/optimized/46apu3hqx0w07xoc.ll
 ; z3/optimized/sat_cutset.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {

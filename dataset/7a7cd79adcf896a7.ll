@@ -1,5 +1,7 @@
 
-; 6 occurrences:
+; 8 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
@@ -20,7 +22,7 @@ entry:
 ; opencv/optimized/guided_filter.cpp.ll
 ; qemu/optimized/block_qcow2-refcount.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = icmp eq i64 %0, 0
@@ -28,10 +30,16 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
+; 10 occurrences:
 ; llvm/optimized/Debugify.cpp.ll
 ; llvm/optimized/MachineCheckDebugify.cpp.ll
 ; openjdk/optimized/bytecodes.ll
+; proxygen/optimized/HPACKDecoder.cpp.ll
+; proxygen/optimized/HPACKEncoder.cpp.ll
+; proxygen/optimized/HeaderTable.cpp.ll
+; proxygen/optimized/QPACKEncoder.cpp.ll
+; proxygen/optimized/QPACKHeaderTable.cpp.ll
+; proxygen/optimized/StaticHeaderTable.cpp.ll
 ; wireshark/optimized/bluetooth_hci_summary_dialog.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i64 %0, i32 %1) #0 {
@@ -42,12 +50,11 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; curl/optimized/libcurl_la-setopt.ll
-; meshlab/optimized/qualitymapperdialog.cpp.ll
 ; snappy/optimized/snappy.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i32 @func0000000000000024(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = icmp ult i64 %0, 11
@@ -60,10 +67,10 @@ entry:
 ; velox/optimized/Filter.cpp.ll
 ; velox/optimized/JsonType.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i64 %0, i32 %1) #0 {
+define i32 @func0000000000000038(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -20
-  %3 = icmp ugt i64 %0, 20479
+  %3 = icmp samesign ugt i64 %0, 20479
   %4 = select i1 %3, i32 %2, i32 0
   ret i32 %4
 }
@@ -77,27 +84,11 @@ entry:
 ; darktable/optimized/SamsungV1Decompressor.cpp.ll
 ; darktable/optimized/SonyArw1Decompressor.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000003a(i64 %0, i32 %1) #0 {
+define i32 @func000000000000006a(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = icmp sgt i64 %0, -1
   %4 = select i1 %3, i32 %2, i32 0
-  ret i32 %4
-}
-
-; 6 occurrences:
-; proxygen/optimized/HPACKDecoder.cpp.ll
-; proxygen/optimized/HPACKEncoder.cpp.ll
-; proxygen/optimized/HeaderTable.cpp.ll
-; proxygen/optimized/QPACKEncoder.cpp.ll
-; proxygen/optimized/QPACKHeaderTable.cpp.ll
-; proxygen/optimized/StaticHeaderTable.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000001(i64 %0, i32 %1) #0 {
-entry:
-  %2 = add i32 %1, 32
-  %3 = icmp eq i64 %0, 1
-  %4 = select i1 %3, i32 %2, i32 31
   ret i32 %4
 }
 
@@ -123,10 +114,10 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/addr_resolv.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i64 %0, i32 %1) #0 {
+define i32 @func0000000000000078(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
-  %3 = icmp ugt i64 %0, 7
+  %3 = icmp samesign ugt i64 %0, 7
   %4 = select i1 %3, i32 %2, i32 0
   ret i32 %4
 }
@@ -137,7 +128,7 @@ entry:
 ; hwloc/optimized/traversal.ll
 ; openmpi/optimized/libprrte_la-hwloc_base_util.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i64 %0, i32 %1) #0 {
+define i32 @func000000000000002a(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = icmp sgt i64 %0, 0
@@ -145,23 +136,10 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
-; ceres/optimized/covariance_impl.cc.ll
-; meshlab/optimized/cube_style_precomputation.cpp.ll
-; meshlab/optimized/filter_parametrization.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000a(i64 %0, i32 %1) #0 {
-entry:
-  %2 = add i32 %1, -1
-  %3 = icmp sgt i64 %0, 1
-  %4 = select i1 %3, i32 %2, i32 1
-  ret i32 %4
-}
-
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i64 %0, i32 %1) #0 {
+define i32 @func0000000000000026(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -63
   %3 = icmp slt i64 %0, 0
@@ -170,20 +148,20 @@ entry:
 }
 
 ; 1 occurrences:
-; nuttx/optimized/lib_puts.c.ll
+; meshlab/optimized/qualitymapperdialog.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i64 %0, i32 %1) #0 {
+define i32 @func0000000000000034(i64 %0, i32 %1) #0 {
 entry:
-  %2 = add nuw nsw i32 %1, 1
-  %3 = icmp eq i64 %0, 0
-  %4 = select i1 %3, i32 %2, i32 -1
+  %2 = add nsw i32 %1, 7
+  %3 = icmp samesign ult i64 %0, 3
+  %4 = select i1 %3, i32 %2, i32 2
   ret i32 %4
 }
 
 ; 1 occurrences:
 ; hwloc/optimized/bitmap.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000003c(i64 %0, i32 %1) #0 {
+define i32 @func000000000000006c(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %.not = icmp eq i64 %0, 0

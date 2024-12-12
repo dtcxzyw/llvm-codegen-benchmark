@@ -1,12 +1,11 @@
 
-; 351 occurrences:
+; 352 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absRef.c.ll
 ; abc/optimized/aigUtil.c.ll
 ; abc/optimized/bmcCexMin2.c.ll
 ; abc/optimized/covCore.c.ll
 ; abc/optimized/dauDsd.c.ll
-; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/giaCex.c.ll
 ; abc/optimized/giaEra2.c.ll
 ; abc/optimized/giaIf.c.ll
@@ -16,7 +15,6 @@
 ; abc/optimized/ifDec10.c.ll
 ; abc/optimized/ifDelay.c.ll
 ; abc/optimized/ifSat.c.ll
-; abc/optimized/lpkMux.c.ll
 ; abc/optimized/mioSop.c.ll
 ; assimp/optimized/Importer.cpp.ll
 ; clamav/optimized/hfsplus.c.ll
@@ -26,6 +24,7 @@
 ; cmake/optimized/rhash.c.ll
 ; cmake/optimized/tcp.c.ll
 ; cmake/optimized/transfer.c.ll
+; cpython/optimized/io.ll
 ; curl/optimized/libcurl_la-easy.ll
 ; curl/optimized/libcurl_la-transfer.ll
 ; darktable/optimized/CrwDecompressor.cpp.ll
@@ -33,6 +32,7 @@
 ; darktable/optimized/introspection_clipping.c.ll
 ; darktable/optimized/introspection_crop.c.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
+; freetype/optimized/pshinter.c.ll
 ; git/optimized/symlinks.ll
 ; glslang/optimized/SpvBuilder.cpp.ll
 ; gromacs/optimized/parsetree.cpp.ll
@@ -43,6 +43,7 @@
 ; hermes/optimized/TypeInference.cpp.ll
 ; hyperscan/optimized/program_runtime.c.ll
 ; jq/optimized/jv.ll
+; libevent/optimized/evmap.c.ll
 ; libpng/optimized/png.c.ll
 ; libquic/optimized/tasn_enc.c.ll
 ; libuv/optimized/pipe.c.ll
@@ -60,14 +61,12 @@
 ; linux/optimized/drm_atomic_helper.ll
 ; linux/optimized/drm_atomic_uapi.ll
 ; linux/optimized/drm_auth.ll
-; linux/optimized/drm_client.ll
 ; linux/optimized/drm_client_modeset.ll
 ; linux/optimized/drm_color_mgmt.ll
 ; linux/optimized/drm_connector.ll
 ; linux/optimized/drm_crtc.ll
 ; linux/optimized/drm_crtc_helper.ll
 ; linux/optimized/drm_debugfs.ll
-; linux/optimized/drm_debugfs_crc.ll
 ; linux/optimized/drm_drv.ll
 ; linux/optimized/drm_encoder.ll
 ; linux/optimized/drm_file.ll
@@ -99,7 +98,6 @@
 ; linux/optimized/serial_core.ll
 ; linux/optimized/slub.ll
 ; linux/optimized/util.ll
-; linux/optimized/vsmp_64.ll
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
@@ -166,12 +164,12 @@
 ; qemu/optimized/hw_usb_hcd-ehci.c.ll
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; qemu/optimized/target_riscv_debug.c.ll
-; qemu/optimized/virtio-mmio.c.ll
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/rcore.c.ll
 ; re2/optimized/onepass.cc.ll
 ; recastnavigation/optimized/RecastContour.cpp.ll
 ; redis/optimized/ae.ll
+; redis/optimized/lolwut6.ll
 ; redis/optimized/module.ll
 ; ruby/optimized/thread.ll
 ; ruby/optimized/unicode.ll
@@ -345,12 +343,15 @@
 ; spike/optimized/vxor_vv.ll
 ; spike/optimized/vxor_vx.ll
 ; sqlite/optimized/sqlite3.ll
-; wireshark/optimized/golay.c.ll
+; wasmtime-rs/optimized/33slbp9da8waph2q.ll
+; wasmtime-rs/optimized/lin3yywv836im8d.ll
 ; wireshark/optimized/packet-autosar-nm.c.ll
 ; wireshark/optimized/packet-zbee-tlv.c.ll
 ; wireshark/optimized/packet-zbee-zdp.c.ll
 ; z3/optimized/grobner.cpp.ll
 ; z3/optimized/polynomial.cpp.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
@@ -393,17 +394,6 @@ entry:
   %2 = and i32 %1, 213887
   %3 = and i32 %2, %0
   %4 = icmp ne i32 %3, 0
-  ret i1 %4
-}
-
-; 1 occurrences:
-; llvm/optimized/ValueTracking.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 960
-  %3 = and i32 %2, %0
-  %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
 

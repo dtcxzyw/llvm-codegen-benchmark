@@ -1,3 +1,7 @@
+func0000000000000005:                   # @func0000000000000005
+	subl	%esi, %edx
+	leal	-19(%rdi,%rdx), %eax
+	retq
 func000000000000000d:                   # @func000000000000000d
 	subl	%esi, %edx
 	leal	15(%rdi,%rdx), %eax

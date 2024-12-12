@@ -9,6 +9,7 @@ func000000000000001f:                   # @func000000000000001f
 	retq
 func000000000000000f:                   # @func000000000000000f
 	decl	%edi
+	shlq	$3, %rdi
 	leaq	(%rdi,%rdi,2), %rax
 	retq
 func0000000000000002:                   # @func0000000000000002
@@ -16,6 +17,10 @@ func0000000000000002:                   # @func0000000000000002
 	movq	%rcx, %rax
 	shlq	$32, %rax
 	orq	%rcx, %rax
+	retq
+func0000000000000007:                   # @func0000000000000007
+	addl	$-3, %edi
+	imulq	$88, %rdi, %rax
 	retq
 func000000000000000c:                   # @func000000000000000c
 	decl	%edi
@@ -47,9 +52,4 @@ func0000000000000005:                   # @func0000000000000005
 	shlq	$4, %rdi
 	leaq	(%rdi,%rdi,2), %rax
 	negq	%rax
-	retq
-func0000000000000007:                   # @func0000000000000007
-	incl	%edi
-	shlq	$2, %rdi
-	leaq	(%rdi,%rdi,2), %rax
 	retq

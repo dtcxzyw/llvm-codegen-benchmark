@@ -10,12 +10,10 @@ entry:
   ret i32 %5
 }
 
-; 6 occurrences:
+; 4 occurrences:
 ; meshlab/optimized/edit_paint.cpp.ll
 ; opencv/optimized/grfmt_tiff.cpp.ll
-; openusd/optimized/stbImage.cpp.ll
 ; qemu/optimized/block_vvfat.c.ll
-; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {

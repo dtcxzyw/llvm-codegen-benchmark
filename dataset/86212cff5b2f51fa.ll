@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 23 occurrences:
 ; abc/optimized/absOldSim.c.ll
 ; abc/optimized/amapMatch.c.ll
 ; abc/optimized/amapMerge.c.ll
@@ -11,6 +11,10 @@
 ; abc/optimized/exorLink.c.ll
 ; abc/optimized/fraBmc.c.ll
 ; abc/optimized/fraImp.c.ll
+; abc/optimized/sbdWin.c.ll
+; boost/optimized/collate.ll
+; boost/optimized/collator.ll
+; boost/optimized/message.ll
 ; graphviz/optimized/xlabels.c.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; linux/optimized/sit.ll

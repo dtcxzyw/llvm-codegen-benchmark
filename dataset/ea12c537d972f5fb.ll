@@ -26,4 +26,16 @@ entry:
   ret i32 %6
 }
 
+; 1 occurrences:
+; abseil-cpp/optimized/numbers.cc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000030(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw nsw i32 %1, %2
+  %4 = shl i32 %3, 8
+  %5 = add i32 %0, %4
+  %6 = and i32 %5, 65535
+  ret i32 %6
+}
+
 attributes #0 = { nounwind }

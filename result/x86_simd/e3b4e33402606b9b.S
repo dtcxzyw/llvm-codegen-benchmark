@@ -63,13 +63,6 @@ func0000000000000000:                   # @func0000000000000000
 	vpsllvd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI4_0:
-	.long	15                              # 0xf
-func0000000000000007:                   # @func0000000000000007
-	vpslld	$3, %ymm1, %ymm1
-	vpandd	.LCPI4_0(%rip){1to8}, %ymm0, %ymm0
-	vpsllvd	%ymm1, %ymm0, %ymm0
-	retq
-.LCPI5_0:
 	.byte	255                             # 0xff
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
@@ -102,13 +95,13 @@ func0000000000000007:                   # @func0000000000000007
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
-.LCPI5_1:
+.LCPI4_1:
 	.byte	255                             # 0xff
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 func0000000000000004:                   # @func0000000000000004
 	vpslld	$3, %ymm1, %ymm1
-	vpandd	.LCPI5_1(%rip){1to8}, %ymm0, %ymm0
+	vpandd	.LCPI4_1(%rip){1to8}, %ymm0, %ymm0
 	vpsllvd	%ymm1, %ymm0, %ymm0
 	retq

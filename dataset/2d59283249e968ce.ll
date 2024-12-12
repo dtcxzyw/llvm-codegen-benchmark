@@ -4,7 +4,7 @@
 ; nuklear/optimized/unity.c.ll
 ; openjdk/optimized/psParallelCompact.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000002(ptr %0) #0 {
+define i64 @func0000000000000003(ptr %0) #0 {
 entry:
   %1 = ptrtoint ptr %0 to i64
   %2 = and i64 %1, -524288

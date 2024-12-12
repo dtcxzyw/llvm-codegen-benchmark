@@ -1,8 +1,6 @@
 
-; 7 occurrences:
+; 5 occurrences:
 ; ipopt/optimized/IpLimMemQuasiNewtonUpdater.ll
-; openblas/optimized/dsyevr.c.ll
-; openblas/optimized/dsyevr_2stage.c.ll
 ; opencv/optimized/approx.cpp.ll
 ; quantlib/optimized/andreasenhugevolatilityinterpl.ll
 ; quantlib/optimized/money.ll
@@ -12,7 +10,7 @@ define i1 @func000000000000000a(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, 0x3E50000000000000
   %4 = fmul double %3, %1
-  %5 = fcmp oge double %4, %0
+  %5 = fcmp ole double %0, %4
   ret i1 %5
 }
 
@@ -35,8 +33,8 @@ entry:
 define i1 @func0000000000000004(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, 5.000000e-01
-  %4 = fmul double %3, %1
-  %5 = fcmp olt double %4, %0
+  %4 = fmul double %1, %3
+  %5 = fcmp ogt double %0, %4
   ret i1 %5
 }
 
@@ -73,8 +71,8 @@ entry:
 define i1 @func0000000000000002(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, -5.000000e-01
-  %4 = fmul double %3, %1
-  %5 = fcmp ogt double %4, %0
+  %4 = fmul double %1, %3
+  %5 = fcmp olt double %0, %4
   ret i1 %5
 }
 
@@ -86,7 +84,7 @@ define i1 @func000000000000000d(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, 1.000000e-01
   %4 = fmul double %3, %1
-  %5 = fcmp ule double %4, %0
+  %5 = fcmp uge double %0, %4
   ret i1 %5
 }
 
@@ -102,7 +100,7 @@ define i1 @func0000000000000003(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, 4.000000e+00
   %4 = fmul double %3, %1
-  %5 = fcmp ugt double %4, %0
+  %5 = fcmp ult double %0, %4
   ret i1 %5
 }
 
@@ -129,7 +127,7 @@ define i1 @func0000000000000005(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, 0x3EB2000000000000
   %4 = fmul double %3, %1
-  %5 = fcmp ult double %4, %0
+  %5 = fcmp ugt double %0, %4
   ret i1 %5
 }
 
@@ -140,7 +138,7 @@ define i1 @func000000000000000c(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, 2.000000e+00
   %4 = fmul double %3, %1
-  %5 = fcmp ole double %4, %0
+  %5 = fcmp oge double %0, %4
   ret i1 %5
 }
 

@@ -5,7 +5,7 @@
 ; ipopt/optimized/IpLowRankSSAugSystemSolver.ll
 ; ipopt/optimized/IpStdAugSystemSolver.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007c(i32 %0, double %1, double %2) #0 {
+define i1 @func00000000000000ec(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp une double %1, %2
   %4 = icmp ne i32 %0, 0
@@ -17,7 +17,7 @@ entry:
 ; abc/optimized/cnfUtil.c.ll
 ; openjdk/optimized/ciTypeFlow.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, double %1, double %2) #0 {
+define i1 @func0000000000000041(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %1, %2
   %4 = icmp eq i32 %0, 0
@@ -29,7 +29,7 @@ entry:
 ; gromacs/optimized/forcetable.cpp.ll
 ; quantlib/optimized/lineartsrpricer.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i32 %0, double %1, double %2) #0 {
+define i1 @func000000000000006c(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ult double %1, %2
   %4 = icmp ne i32 %0, 1
@@ -47,7 +47,7 @@ entry:
 ; opencv/optimized/omnidir.cpp.ll
 ; quantlib/optimized/lineartsrpricer.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(i32 %0, double %1, double %2) #0 {
+define i1 @func00000000000000ac(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ugt double %1, %2
   %4 = icmp ne i32 %0, -1
@@ -59,7 +59,7 @@ entry:
 ; redis/optimized/t_zset.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, double %1, double %2) #0 {
+define i1 @func00000000000000a1(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ugt double %1, %2
   %4 = icmp eq i32 %0, 0
@@ -70,7 +70,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/t_zset.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, double %1, double %2) #0 {
+define i1 @func0000000000000061(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ult double %1, %2
   %4 = icmp eq i32 %0, 0
@@ -81,7 +81,7 @@ entry:
 ; 1 occurrences:
 ; openblas/optimized/dbdsvdx.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, double %1, double %2) #0 {
+define i1 @func000000000000004c(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %1, %2
   %4 = icmp ne i32 %0, 0

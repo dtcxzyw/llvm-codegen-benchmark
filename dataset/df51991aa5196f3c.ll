@@ -41,7 +41,7 @@ entry:
 ; 1 occurrences:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0) #0 {
+define i1 @func0000000000000024(i64 %0) #0 {
 entry:
   %1 = ashr i64 %0, 63
   %2 = shl nsw i64 %0, 1
@@ -54,7 +54,7 @@ entry:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/o3dgcDynamicVectorEncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0) #0 {
+define i1 @func0000000000000028(i64 %0) #0 {
 entry:
   %1 = ashr i64 %0, 63
   %2 = shl nsw i64 %0, 1

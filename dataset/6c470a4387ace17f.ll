@@ -1,5 +1,5 @@
 
-; 61 occurrences:
+; 56 occurrences:
 ; abc/optimized/cecSatG3.c.ll
 ; abc/optimized/exor.c.ll
 ; abc/optimized/extraUtilBitMatrix.c.ll
@@ -15,7 +15,6 @@
 ; jemalloc/optimized/sc.pic.ll
 ; jemalloc/optimized/sc.sym.ll
 ; lief/optimized/poly1305.c.ll
-; linux/optimized/drm_self_refresh_helper.ll
 ; linux/optimized/intel_ggtt.ll
 ; linux/optimized/intel_vblank.ll
 ; linux/optimized/snapshot.ll
@@ -53,14 +52,10 @@
 ; openusd/optimized/testHdExtComputationUtils.cpp.ll
 ; openusd/optimized/velocityMotionResolvingSceneIndex.cpp.ll
 ; qemu/optimized/hw_intc_riscv_aclint.c.ll
-; qemu/optimized/source_s_approxRecip32_1.c.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; redis/optimized/sc.ll
 ; redis/optimized/sc.sym.ll
 ; ruby/optimized/bignum.ll
-; spike/optimized/s_approxRecip32_1.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
@@ -147,10 +142,10 @@ entry:
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; duckdb/optimized/ub_duckdb_parallel.cpp.ll
 ; eastl/optimized/TestAlgorithm.cpp.ll
-; git/optimized/apply.ll
 ; glslang/optimized/disassemble.cpp.ll
 ; hermes/optimized/BytecodeGenerator.cpp.ll
 ; hermes/optimized/GCBase.cpp.ll
+; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; pocketpy/optimized/collections.cpp.ll
 ; proxygen/optimized/HTTP2Codec.cpp.ll
@@ -176,7 +171,7 @@ entry:
 define i32 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 26
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = trunc nsw i64 %3 to i32
   ret i32 %4
 }
@@ -190,7 +185,7 @@ entry:
 define i32 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 26
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }
@@ -201,7 +196,7 @@ entry:
 define i32 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 9
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = trunc nuw i64 %3 to i32
   ret i32 %4
 }
@@ -299,8 +294,7 @@ entry:
   ret i32 %4
 }
 
-; 9 occurrences:
-; abc/optimized/nmApi.c.ll
+; 8 occurrences:
 ; assimp/optimized/3DSConverter.cpp.ll
 ; llvm/optimized/ClangDiagnosticsEmitter.cpp.ll
 ; llvm/optimized/Patterns.cpp.ll
@@ -313,20 +307,18 @@ entry:
 define i32 @func000000000000001c(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }
 
-; 10 occurrences:
+; 8 occurrences:
+; boost/optimized/cmdline.ll
 ; gromacs/optimized/qmmminputgenerator.cpp.ll
+; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/IRSymtab.cpp.ll
 ; llvm/optimized/MemProf.cpp.ll
 ; opencv/optimized/objects_associator.cpp.ll
-; slurm/optimized/node_features_knl_generic.ll
-; slurm/optimized/run_command.ll
-; slurm/optimized/slurm_persist_conn.ll
-; slurm/optimized/slurm_protocol_socket.ll
 ; velox/optimized/HashStringAllocator.cpp.ll
 ; yosys/optimized/json.ll
 ; Function Attrs: nounwind
@@ -346,7 +338,7 @@ entry:
 define i32 @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = trunc nuw nsw i64 %3 to i32
   ret i32 %4
 }
@@ -360,7 +352,7 @@ entry:
 define i32 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 2
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }

@@ -25,7 +25,7 @@ entry:
   %3 = or disjoint i32 %1, %2
   %4 = shl nuw i32 %3, 2
   %5 = and i32 %4, 1073741792
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = shl nuw i32 %6, 2
   ret i32 %7
 }

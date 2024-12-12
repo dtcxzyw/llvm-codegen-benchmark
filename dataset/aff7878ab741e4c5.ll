@@ -1,10 +1,11 @@
 
-; 16 occurrences:
+; 17 occurrences:
+; boost/optimized/numeric.ll
+; boost/optimized/test_fs.ll
 ; icu/optimized/rbnf.ll
 ; minetest/optimized/client.cpp.ll
 ; minetest/optimized/server.cpp.ll
 ; minetest/optimized/string.cpp.ll
-; minetest/optimized/test_serialization.cpp.ll
 ; minetest/optimized/translation.cpp.ll
 ; openjdk/optimized/cardTableRS.ll
 ; openjdk/optimized/g1ConcurrentRebuildAndScrub.ll

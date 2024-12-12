@@ -4,7 +4,7 @@ func0000000000000004:                   # @func0000000000000004
 	movl	$10, %eax
 	sbbl	$0, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	shrxq	%rsi, %rdi, %rax
 	xorl	%ecx, %ecx
 	cmpl	$10, %eax

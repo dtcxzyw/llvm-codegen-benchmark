@@ -1,5 +1,5 @@
 
-; 40 occurrences:
+; 38 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/abcRec3.c.ll
@@ -14,8 +14,6 @@
 ; abc/optimized/cecSatG.c.ll
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
-; abc/optimized/cswMan.c.ll
-; abc/optimized/dchMan.c.ll
 ; abc/optimized/extraUtilSupp.c.ll
 ; abc/optimized/giaIso.c.ll
 ; abc/optimized/giaSatLut.c.ll

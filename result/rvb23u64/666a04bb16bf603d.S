@@ -8,6 +8,16 @@ func0000000000000020:                   # @func0000000000000020
 	add	a0, a0, a1
 	addi	a0, a0, 1
 	ret
+func00000000000000a0:                   # @func00000000000000a0
+	sext.w	a2, a2
+	sltiu	a2, a2, 3
+	or	a1, a1, a2
+	andi	a1, a1, 1
+	li	a2, -8
+	czero.nez	a1, a2, a1
+	add	a0, a0, a1
+	addi	a0, a0, 13
+	ret
 func0000000000000008:                   # @func0000000000000008
 	sext.w	a2, a2
 	addi	a2, a2, -5
@@ -19,7 +29,7 @@ func0000000000000008:                   # @func0000000000000008
 	add	a0, a0, a1
 	addi	a0, a0, 13
 	ret
-func0000000000000009:                   # @func0000000000000009
+func000000000000000b:                   # @func000000000000000b
 	sext.w	a2, a2
 	seqz	a2, a2
 	or	a1, a1, a2

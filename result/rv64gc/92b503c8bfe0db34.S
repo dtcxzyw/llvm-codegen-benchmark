@@ -1,4 +1,4 @@
-func0000000000000a88:                   # @func0000000000000a88
+func0000000000002908:                   # @func0000000000002908
 	bltu	a2, a1, .LBB0_2
 	sub	a1, a2, a1
 	sltu	a0, a0, a1
@@ -7,7 +7,7 @@ func0000000000000a88:                   # @func0000000000000a88
 	sub	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
-func0000000000000a44:                   # @func0000000000000a44
+func0000000000002884:                   # @func0000000000002884
 	bltu	a2, a1, .LBB1_2
 	sub	a1, a2, a1
 	sltu	a0, a1, a0
@@ -16,7 +16,7 @@ func0000000000000a44:                   # @func0000000000000a44
 	sub	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
-func0000000000000a48:                   # @func0000000000000a48
+func0000000000002888:                   # @func0000000000002888
 	bltu	a2, a1, .LBB2_2
 	sub	a1, a2, a1
 	sltu	a0, a0, a1
@@ -25,7 +25,7 @@ func0000000000000a48:                   # @func0000000000000a48
 	sub	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
-func0000000000000e88:                   # @func0000000000000e88
+func0000000000003908:                   # @func0000000000003908
 	bltu	a2, a1, .LBB3_2
 	sub	a1, a2, a1
 	sltu	a0, a0, a1

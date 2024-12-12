@@ -1,4 +1,4 @@
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	vcvttsd2si	%xmm0, %eax
 	cmpl	$229, %eax
 	setb	%cl
@@ -6,7 +6,7 @@ func0000000000000014:                   # @func0000000000000014
 	sete	%al
 	andb	%cl, %al
 	retq
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000141:                   # @func0000000000000141
 	vcvttsd2si	%xmm0, %eax
 	cmpl	$65535, %eax                    # imm = 0xFFFF
 	setge	%cl

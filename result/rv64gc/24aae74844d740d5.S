@@ -33,7 +33,21 @@ func000000000000000a:                   # @func000000000000000a
 	li	a0, 126
 .LBB4_2:                                # %entry
 	ret
-func0000000000000005:                   # @func0000000000000005
+func0000000000000018:                   # @func0000000000000018
+	sext.w	a1, a1
+	sext.w	a2, a2
+	sltu	a1, a2, a1
+	neg	a1, a1
+	and	a0, a0, a1
+	ret
+func0000000000000014:                   # @func0000000000000014
+	sext.w	a2, a2
+	sext.w	a1, a1
+	sltu	a1, a1, a2
+	neg	a1, a1
+	and	a0, a0, a1
+	ret
+func0000000000000015:                   # @func0000000000000015
 	sext.w	a1, a1
 	sext.w	a2, a2
 	sltu	a1, a2, a1
@@ -43,9 +57,9 @@ func0000000000000005:                   # @func0000000000000005
 func0000000000000007:                   # @func0000000000000007
 	sext.w	a1, a1
 	sext.w	a2, a2
-	bge	a2, a1, .LBB6_2
+	bge	a2, a1, .LBB8_2
 	li	a0, 94
-.LBB6_2:                                # %entry
+.LBB8_2:                                # %entry
 	ret
 func000000000000000b:                   # @func000000000000000b
 	sext.w	a2, a2
@@ -66,6 +80,13 @@ func0000000000000009:                   # @func0000000000000009
 	sext.w	a2, a2
 	sext.w	a1, a1
 	sltu	a1, a1, a2
+	addi	a1, a1, -1
+	and	a0, a0, a1
+	ret
+func0000000000000005:                   # @func0000000000000005
+	sext.w	a1, a1
+	sext.w	a2, a2
+	sltu	a1, a2, a1
 	addi	a1, a1, -1
 	and	a0, a0, a1
 	ret

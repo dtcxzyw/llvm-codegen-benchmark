@@ -17,7 +17,7 @@ entry:
   ret ptr %7
 }
 
-; 94 occurrences:
+; 93 occurrences:
 ; llvm/optimized/ASTDumper.cpp.ll
 ; llvm/optimized/ASTImporter.cpp.ll
 ; llvm/optimized/ASTStructuralEquivalence.cpp.ll
@@ -111,15 +111,27 @@ entry:
 ; llvm/optimized/UninitializedValues.cpp.ll
 ; llvm/optimized/UnixAPIChecker.cpp.ll
 ; redis/optimized/rax.ll
-; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000007f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 24
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 8
-  %7 = getelementptr nusw ptr, ptr %6, i64 %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 8
+  %7 = getelementptr nusw nuw ptr, ptr %6, i64 %0
+  ret ptr %7
+}
+
+; 1 occurrences:
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000007e(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 31
+  %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 2
+  %7 = getelementptr nusw i8, ptr %6, i64 %0
   ret ptr %7
 }
 

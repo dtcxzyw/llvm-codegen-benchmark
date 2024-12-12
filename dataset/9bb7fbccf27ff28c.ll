@@ -1,8 +1,9 @@
 
-; 25 occurrences:
+; 26 occurrences:
 ; icu/optimized/rulebasedcollator.ll
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
+; linux/optimized/drbg.ll
 ; linux/optimized/early-quirks.ll
 ; linux/optimized/hda_auto_parser.ll
 ; linux/optimized/slub.ll

@@ -4,8 +4,8 @@ func0000000000000008:                   # @func0000000000000008
 	xorl	%edx, %edx
 	divq	%rcx
 	xorl	%eax, %eax
-	cmpq	%rdi, %rdx
-	seta	%al
+	cmpq	%rdx, %rdi
+	setb	%al
 	retq
 func0000000000000012:                   # @func0000000000000012
 	movq	%rdx, %rcx
@@ -13,6 +13,6 @@ func0000000000000012:                   # @func0000000000000012
 	xorl	%edx, %edx
 	divq	%rcx
 	xorl	%eax, %eax
-	cmpq	%rdi, %rdx
-	setbe	%al
+	cmpq	%rdx, %rdi
+	setae	%al
 	retq

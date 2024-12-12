@@ -1,4 +1,4 @@
-func0000000000000044:                   // @func0000000000000044
+func0000000000000084:                   // @func0000000000000084
 // %bb.0:                               // %entry
 	sub	x8, x1, x2
 	cmp	w0, #1024
@@ -7,7 +7,7 @@ func0000000000000044:                   // @func0000000000000044
 	cset	w0, lo
 	ret
                                         // -- End function
-func000000000000004c:                   // @func000000000000004c
+func000000000000008c:                   // @func000000000000008c
 // %bb.0:                               // %entry
 	sub	x8, x1, x2
 	cmp	w0, #1
@@ -16,7 +16,7 @@ func000000000000004c:                   // @func000000000000004c
 	cset	w0, lo
 	ret
                                         // -- End function
-func00000000000000ac:                   // @func00000000000000ac
+func000000000000014c:                   // @func000000000000014c
 // %bb.0:                               // %entry
 	sub	x8, x1, x2
 	cmp	w0, #0
@@ -24,7 +24,16 @@ func00000000000000ac:                   // @func00000000000000ac
 	cset	w0, ge
 	ret
                                         // -- End function
-func00000000000000a1:                   // @func00000000000000a1
+func0000000000000094:                   // @func0000000000000094
+// %bb.0:                               // %entry
+	sub	x8, x1, x2
+	cmp	w0, #32
+	mov	w9, #128                        // =0x80
+	ccmp	x8, x9, #0, hs
+	cset	w0, lo
+	ret
+                                        // -- End function
+func0000000000000141:                   // @func0000000000000141
 // %bb.0:                               // %entry
 	sub	x8, x1, x2
 	cmp	w0, #0
@@ -32,7 +41,7 @@ func00000000000000a1:                   // @func00000000000000a1
 	cset	w0, gt
 	ret
                                         // -- End function
-func0000000000000061:                   // @func0000000000000061
+func00000000000000c1:                   // @func00000000000000c1
 // %bb.0:                               // %entry
 	mov	w8, #55296                      // =0xd800
 	sub	x9, x1, x2

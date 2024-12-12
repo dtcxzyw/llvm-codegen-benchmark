@@ -1,5 +1,5 @@
 
-; 45 occurrences:
+; 47 occurrences:
 ; abc/optimized/absDup.c.ll
 ; abc/optimized/absRpmOld.c.ll
 ; abc/optimized/acecCl.c.ll
@@ -38,6 +38,7 @@
 ; llvm/optimized/DeclCXX.cpp.ll
 ; llvm/optimized/RISCVMCCodeEmitter.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; mitsuba3/optimized/cpuinfo.cpp.ll
 ; openjdk/optimized/vm_version_x86.ll
 ; openssl/optimized/libssl-lib-quic_stream_map.ll
@@ -45,6 +46,7 @@
 ; openusd/optimized/surfaceFactory.cpp.ll
 ; qemu/optimized/hw_scsi_megasas.c.ll
 ; wireshark/optimized/packet-flexray.c.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i64 %1, i32 %2) #0 {
 entry:
@@ -69,6 +71,20 @@ entry:
   %5 = zext nneg i32 %4 to i64
   %6 = or i64 %0, %1
   %7 = or i64 %6, %5
+  ret i64 %7
+}
+
+; 2 occurrences:
+; c3c/optimized/lexer.c.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001f(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = shl nuw nsw i32 %2, 16
+  %4 = and i32 %3, 16711680
+  %5 = zext nneg i32 %4 to i64
+  %6 = or disjoint i64 %0, %1
+  %7 = or disjoint i64 %6, %5
   ret i64 %7
 }
 

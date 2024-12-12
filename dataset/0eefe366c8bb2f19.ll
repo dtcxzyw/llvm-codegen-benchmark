@@ -26,12 +26,14 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, 65535
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; abc/optimized/saigIso.c.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; lvgl/optimized/lv_scale.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, ptr %1) #0 {
 entry:

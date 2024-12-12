@@ -43,18 +43,17 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; graphviz/optimized/mincross.c.ll
 ; opencv/optimized/checkchessboard.cpp.ll
 ; opencv/optimized/denoising.cpp.ll
 ; opencv/optimized/videocapture_gphoto2_autofocus.cpp.ll
-; pbrt-v4/optimized/cameras.cpp.ll
 ; postgres/optimized/vacuum.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to double
-  %3 = fmul double %2, 7.500000e-01
+  %3 = fmul double %2, 0x3FEE666666666666
   %4 = sitofp i32 %0 to double
   %5 = fcmp ogt double %3, %4
   ret i1 %5

@@ -1,6 +1,5 @@
 
-; 266 occurrences:
-; abc/optimized/abcExact.c.ll
+; 265 occurrences:
 ; abc/optimized/amapMatch.c.ll
 ; abc/optimized/amapOutput.c.ll
 ; abc/optimized/giaCSat2.c.ll
@@ -32,6 +31,7 @@
 ; glslang/optimized/iomapper.cpp.ll
 ; gromacs/optimized/cstringutil.cpp.ll
 ; hdf5/optimized/H5Zscaleoffset.c.ll
+; lvgl/optimized/lv_lru.ll
 ; openjdk/optimized/foreignGlobals.ll
 ; postgres/optimized/guc.ll
 ; postgres/optimized/pg_lzcompress.ll
@@ -146,7 +146,6 @@
 ; yosys/optimized/lattice_gsr.ll
 ; yosys/optimized/liberty.ll
 ; yosys/optimized/log.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/ltp.ll
 ; yosys/optimized/lut2mux.ll
 ; yosys/optimized/maccmap.ll
@@ -270,7 +269,7 @@
 define i32 @func0000000000000000(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   ret i32 %3
 }
 

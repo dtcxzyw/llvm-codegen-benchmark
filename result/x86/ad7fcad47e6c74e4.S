@@ -24,7 +24,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 .LCPI3_0:
 	.quad	0x3fe0000000000000              # double 0.5
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vaddsd	.LCPI3_0(%rip), %xmm0, %xmm0
 	vcvttsd2si	%xmm0, %eax
 	cmpl	$2, %eax

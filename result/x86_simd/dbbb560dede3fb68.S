@@ -7,7 +7,7 @@ func0000000000000004:                   # @func0000000000000004
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpmovqd	%ymm1, %xmm1
 	vpslld	$3, %xmm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
@@ -24,7 +24,7 @@ func0000000000000008:                   # @func0000000000000008
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	vpmovqd	%ymm1, %xmm1
 	vpslld	$2, %xmm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
@@ -32,7 +32,7 @@ func0000000000000071:                   # @func0000000000000071
 	vpcmpeqd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-func00000000000000bb:                   # @func00000000000000bb
+func000000000000016b:                   # @func000000000000016b
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
@@ -41,7 +41,7 @@ func00000000000000bb:                   # @func00000000000000bb
 	vpternlogq	$15, %xmm0, %xmm0, %xmm0 # xmm0 = ~xmm0
 	vzeroupper
 	retq
-func00000000000000b1:                   # @func00000000000000b1
+func0000000000000161:                   # @func0000000000000161
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
@@ -49,7 +49,7 @@ func00000000000000b1:                   # @func00000000000000b1
 	vpcmpeqd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	vpmovqd	%ymm1, %xmm1
 	vpslld	$3, %xmm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
@@ -59,7 +59,7 @@ func0000000000000051:                   # @func0000000000000051
 	retq
 .LCPI7_0:
 	.long	8                               # 0x8
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	vpmovqd	%ymm1, %xmm1
 	vpslld	$3, %xmm1, %xmm1
 	vpaddd	.LCPI7_0(%rip){1to4}, %xmm0, %xmm0

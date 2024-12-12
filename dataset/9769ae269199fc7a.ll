@@ -37,21 +37,22 @@
 define i1 @func0000000000000000(i1 %0, i8 %1) #0 {
 entry:
   %2 = trunc i8 %1 to i1
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = xor i1 %3, true
   ret i1 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; coreutils-rs/optimized/45371cbry3cnr73y.ll
 ; ockam-rs/optimized/3trfdpf6q4y0wtix.ll
 ; rust-analyzer-rs/optimized/2pjtxeptskgmq0yj.ll
 ; tls-rs/optimized/1oa4q9ydtxtlathz.ll
+; zed-rs/optimized/dqlxdbn4bc486rcuwzrxwttzb.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = xor i1 %3, true
   ret i1 %4
 }

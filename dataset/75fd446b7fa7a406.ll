@@ -239,8 +239,7 @@ entry:
   ret i1 %3
 }
 
-; 2 occurrences:
-; delta-rs/optimized/43y2svfstmvqcl15.ll
+; 1 occurrences:
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i128 %1) #0 {
@@ -269,6 +268,26 @@ entry:
 define i1 @func0000000000000001(i1 %0, i128 %1) #0 {
 entry:
   %2 = icmp eq i128 %1, 0
+  %3 = select i1 %0, i1 %2, i1 false
+  ret i1 %3
+}
+
+; 1 occurrences:
+; abseil-cpp/optimized/duration.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i128 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i128 %1, 9223372036854775807
+  %3 = select i1 %0, i1 %2, i1 false
+  ret i1 %3
+}
+
+; 1 occurrences:
+; delta-rs/optimized/43y2svfstmvqcl15.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i128 %1) #0 {
+entry:
+  %2 = icmp samesign ult i128 %1, 2
   %3 = select i1 %0, i1 %2, i1 false
   ret i1 %3
 }

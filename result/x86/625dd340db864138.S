@@ -28,12 +28,6 @@ func00000000000000f4:                   # @func00000000000000f4
 	addl	%edi, %edx
 	movslq	%edx, %rax
 	retq
-func0000000000000040:                   # @func0000000000000040
-	incl	%edx
-	imull	%esi, %edx
-	addl	%edi, %edx
-	movslq	%edx, %rax
-	retq
 func0000000000000045:                   # @func0000000000000045
 	decl	%edx
 	imull	%esi, %edx

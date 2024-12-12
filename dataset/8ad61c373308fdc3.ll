@@ -1,10 +1,9 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; cmake/optimized/nghttp2_session.c.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; freetype/optimized/truetype.c.ll
 ; graphviz/optimized/edge_distinct_coloring.c.ll
-; linux/optimized/md-bitmap.ll
 ; linux/optimized/md.ll
 ; linux/optimized/tree.ll
 ; nghttp2/optimized/nghttp2_session.c.ll

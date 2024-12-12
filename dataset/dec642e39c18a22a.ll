@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; jq/optimized/decNumber.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i16 %0) #0 {
+define i1 @func000000000000002c(i16 %0) #0 {
 entry:
   %1 = and i16 %0, 1
   %2 = icmp eq i16 %1, 0
@@ -16,7 +16,7 @@ entry:
 ; hyperscan/optimized/mcsheng.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i16 %0) #0 {
+define i1 @func000000000000002a(i16 %0) #0 {
 entry:
   %1 = and i16 %0, -30720
   %2 = icmp eq i16 %1, 0
@@ -26,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/vpd.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i16 %0) #0 {
+define i1 @func0000000000000184(i16 %0) #0 {
 entry:
   %1 = and i16 %0, 224
   %2 = icmp ne i16 %1, 0
@@ -40,7 +40,7 @@ entry:
 ; linux/optimized/vpd.ll
 ; wolfssl/optimized/tls.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i16 %0) #0 {
+define i1 @func0000000000000028(i16 %0) #0 {
 entry:
   %1 = and i16 %0, 2048
   %2 = icmp eq i16 %1, 0
@@ -52,7 +52,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ustrtrns.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i16 %0) #0 {
+define i1 @func000000000000018c(i16 %0) #0 {
 entry:
   %1 = and i16 %0, -2048
   %2 = icmp ne i16 %1, -10240

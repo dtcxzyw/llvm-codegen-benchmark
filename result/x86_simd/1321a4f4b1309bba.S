@@ -18,3 +18,7 @@ func0000000000000009:                   # @func0000000000000009
 	vpcmpltuq	%ymm1, %ymm2, %k1
 	vmovdqa64	%ymm1, %ymm0 {%k1}
 	retq
+func0000000000000014:                   # @func0000000000000014
+	vpcmpltuq	%ymm1, %ymm2, %k1
+	vpblendmq	%ymm0, %ymm1, %ymm0 {%k1}
+	retq

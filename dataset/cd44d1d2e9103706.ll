@@ -43,8 +43,7 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
-; linux/optimized/reciprocal_div.ll
+; 3 occurrences:
 ; llvm/optimized/Expr.cpp.ll
 ; postgres/optimized/gistproc.ll
 ; postgres/optimized/rangetypes_gist.ll

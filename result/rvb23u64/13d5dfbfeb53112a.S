@@ -30,3 +30,17 @@ func000000000000001a:                   # @func000000000000001a
 	add	a0, a0, a1
 	addi	a0, a0, -2
 	ret
+func000000000000001b:                   # @func000000000000001b
+	czero.nez	a1, a1, a2
+	or	a1, a1, a2
+	add	a0, a0, a1
+	addi	a0, a0, 15
+	ret
+func000000000000008b:                   # @func000000000000008b
+	sltiu	a3, a2, 1025
+	czero.eqz	a2, a2, a3
+	czero.nez	a1, a1, a3
+	or	a1, a1, a2
+	add	a0, a0, a1
+	addi	a0, a0, 2
+	ret

@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 30 occurrences:
 ; darktable/optimized/histogram.c.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_clipping.c.ll
@@ -27,6 +27,7 @@
 ; raylib/optimized/raudio.c.ll
 ; tev/optimized/ImageButton.cpp.ll
 ; tev/optimized/ImageViewer.cpp.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind

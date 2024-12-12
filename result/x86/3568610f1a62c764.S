@@ -25,9 +25,3 @@ func0000000000000030:                   # @func0000000000000030
 	orl	%esi, %edi
 	orb	%dil, %al
 	retq
-func0000000000000010:                   # @func0000000000000010
-	testl	$-524288, %edx                  # imm = 0xFFF80000
-	setne	%al
-	orl	%esi, %edi
-	orb	%dil, %al
-	retq

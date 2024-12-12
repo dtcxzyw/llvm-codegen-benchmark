@@ -1,5 +1,5 @@
 
-; 46 occurrences:
+; 44 occurrences:
 ; abseil-cpp/optimized/pcg_engine_test.cc.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -11,7 +11,6 @@
 ; llvm/optimized/LegalizeTypesGeneric.cpp.ll
 ; llvm/optimized/LegalizeVectorOps.cpp.ll
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ScheduleDAGSDNodes.cpp.ll
 ; llvm/optimized/StatepointLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -44,7 +43,6 @@
 ; pcg-cpp/optimized/pcg-demo.cpp.ll
 ; pcg-cpp/optimized/use-partytrick.cpp.ll
 ; protobuf/optimized/lexer.cc.ll
-; rand-rs/optimized/3wentbx1vl0iwznb.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0) #0 {

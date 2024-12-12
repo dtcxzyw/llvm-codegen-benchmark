@@ -9,11 +9,11 @@ entry:
   %3 = icmp sgt i32 %2, 0
   %not. = xor i1 %1, true
   %4 = select i1 %not., i1 %3, i1 false
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 31 occurrences:
+; 32 occurrences:
 ; abc/optimized/saigSimMv.c.ll
 ; abseil-cpp/optimized/charconv.cc.ll
 ; cmake/optimized/archive_write_set_format_zip.c.ll
@@ -44,6 +44,7 @@ entry:
 ; postgres/optimized/walsender.ll
 ; qemu/optimized/hw_net_can_ctucan_core.c.ll
 ; softposit-rs/optimized/8mae6k72v4zmmji.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
 ; zstd/optimized/zstdmt_compress.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i1 %1, i32 %2) #0 {
@@ -54,9 +55,10 @@ entry:
   ret i1 %5
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; abc/optimized/abcSymm.c.ll
 ; abc/optimized/dauDsd.c.ll
+; abc/optimized/extraBddThresh.c.ll
 ; abc/optimized/extraUtilTruth.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/ifDec16.c.ll
@@ -76,17 +78,13 @@ define i1 @func000000000000000c(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 0
   %4 = select i1 %1, i1 true, i1 %3
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 7 occurrences:
+; 3 occurrences:
 ; fmt/optimized/format-impl-test.cc.ll
 ; icu/optimized/uniset_props.ll
-; libphonenumber/optimized/rune.c.ll
-; linux/optimized/blk-sysfs.ll
-; linux/optimized/client.ll
-; linux/optimized/nfs4client.ll
 ; llvm/optimized/DwarfDebug.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i1 %1, i32 %2) #0 {
@@ -117,13 +115,12 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/deflate.c.ll
 ; cmake/optimized/deflate.c.ll
 ; gromacs/optimized/deflate.c.ll
 ; libquic/optimized/deflate.c.ll
 ; linux/optimized/deflate.ll
-; llvm/optimized/CompilerInvocation.cpp.ll
 ; zlib/optimized/deflate.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000010(i1 %0, i1 %1, i32 %2) #0 {
@@ -132,6 +129,31 @@ entry:
   %not. = xor i1 %1, true
   %4 = select i1 %not., i1 %3, i1 false
   %5 = or i1 %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; llvm/optimized/CompilerInvocation.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000030(i1 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ugt i32 %2, 99
+  %not. = xor i1 %1, true
+  %4 = select i1 %not., i1 %3, i1 false
+  %5 = or i1 %0, %4
+  ret i1 %5
+}
+
+; 2 occurrences:
+; linux/optimized/client.ll
+; linux/optimized/nfs4client.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i1 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ult i32 %2, 4096
+  %not. = xor i1 %1, true
+  %4 = select i1 %not., i1 %3, i1 false
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

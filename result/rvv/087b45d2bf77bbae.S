@@ -17,17 +17,20 @@ func000000000000000b:                   # @func000000000000000b
 	vmfgt.vf	v12, v8, fa5
 	vmnot.m	v0, v12
 	ret
-func000000000000000c:                   # @func000000000000000c
-	vsetivli	zero, 16, e32, m4, ta, ma
-	vmerge.vvm	v8, v12, v8, v0
-	fmv.w.x	fa5, zero
-	vmfge.vf	v0, v8, fa5
-	ret
 func0000000000000007:                   # @func0000000000000007
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmerge.vvm	v8, v12, v8, v0
 	fmv.w.x	fa5, zero
 	vmfne.vf	v0, v8, fa5
+	ret
+.LCPI4_0:
+	.word	0x40c90fdb                      # float 6.28318548
+func000000000000000c:                   # @func000000000000000c
+	lui	a0, %hi(.LCPI4_0)
+	flw	fa5, %lo(.LCPI4_0)(a0)
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vmerge.vvm	v8, v12, v8, v0
+	vmfge.vf	v0, v8, fa5
 	ret
 func0000000000000003:                   # @func0000000000000003
 	vsetivli	zero, 16, e32, m4, ta, ma

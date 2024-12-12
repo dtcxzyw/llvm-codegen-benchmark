@@ -13,12 +13,11 @@ entry:
   ret i1 %6
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; imgui/optimized/imgui.cpp.ll
 ; ncnn/optimized/padding_x86_avx.cpp.ll
 ; ncnn/optimized/padding_x86_avx512.cpp.ll
 ; ncnn/optimized/padding_x86_fma.cpp.ll
-; openjdk/optimized/ad_x86.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; Function Attrs: nounwind

@@ -60,7 +60,7 @@ func0000000000000001:                   # @func0000000000000001
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vpandq	.LCPI2_2(%rip){1to4}, %ymm1, %ymm0
@@ -70,7 +70,7 @@ func0000000000000004:                   # @func0000000000000004
 	retq
 .LCPI3_0:
 	.quad	4                               # 0x4
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vptestmq	.LCPI3_0(%rip){1to4}, %ymm1, %k0 {%k1}

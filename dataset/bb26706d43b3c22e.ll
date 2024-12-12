@@ -31,6 +31,29 @@ entry:
 }
 
 ; 1 occurrences:
+; softposit-rs/optimized/m1vpptg00bzmp9y.ll
+; Function Attrs: nounwind
+define i8 @func000000000000000f(i8 %0, i16 %1) #0 {
+entry:
+  %2 = lshr i16 %1, 14
+  %3 = trunc nuw nsw i16 %2 to i8
+  %4 = sub nuw nsw i8 %0, %3
+  ret i8 %4
+}
+
+; 2 occurrences:
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; Function Attrs: nounwind
+define i8 @func000000000000000a(i8 %0, i16 %1) #0 {
+entry:
+  %2 = lshr i16 %1, 1
+  %3 = trunc nuw i16 %2 to i8
+  %4 = sub nuw i8 %0, %3
+  ret i8 %4
+}
+
+; 1 occurrences:
 ; libwebp/optimized/quant_enc.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0, i16 %1) #0 {

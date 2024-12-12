@@ -25,3 +25,17 @@ func000000000000000c:                   # @func000000000000000c
 	addi	a2, a2, 1
 	add	a0, a0, a2
 	ret
+func000000000000000f:                   # @func000000000000000f
+	addi	a2, a2, 1
+	slli	a1, a1, 63
+	srai	a1, a1, 63
+	and	a1, a1, a2
+	add	a0, a0, a1
+	ret
+func000000000000000d:                   # @func000000000000000d
+	addi	a2, a2, 1
+	slli	a1, a1, 63
+	srai	a1, a1, 63
+	and	a1, a1, a2
+	add	a0, a0, a1
+	ret

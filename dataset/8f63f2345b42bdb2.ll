@@ -26,7 +26,7 @@ entry:
   %4 = add i32 %3, -67108864
   %5 = and i32 %1, -67108868
   %6 = or i32 %4, %5
-  %7 = or disjoint i32 %6, %0
+  %7 = or disjoint i32 %0, %6
   ret i32 %7
 }
 

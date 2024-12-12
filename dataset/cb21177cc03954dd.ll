@@ -55,7 +55,8 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/within_pointlike_geometry.ll
 ; llvm/optimized/Format.cpp.ll
 ; llvm/optimized/RegAllocPBQP.cpp.ll
 ; openusd/optimized/materialBindingResolvingSceneIndex.cpp.ll
@@ -67,7 +68,7 @@ define i1 @func0000000000000002(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
   %4 = freeze i1 %3
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

@@ -1,11 +1,10 @@
 
-; 175 occurrences:
+; 172 occurrences:
 ; abc/optimized/sclLiberty.c.ll
 ; abseil-cpp/optimized/elf_mem_image.cc.ll
 ; cmake/optimized/cover.c.ll
 ; cmake/optimized/netrc.c.ll
 ; cmake/optimized/stream.c.ll
-; cpython/optimized/datetime.ll
 ; cpython/optimized/pathconfig.ll
 ; cpython/optimized/tracemalloc.ll
 ; curl/optimized/libcurl_la-netrc.ll
@@ -40,7 +39,6 @@
 ; libwebp/optimized/image_enc.c.ll
 ; libwebp/optimized/picture_tools_enc.c.ll
 ; linux/optimized/aio.ll
-; linux/optimized/build_policy.ll
 ; linux/optimized/compaction.ll
 ; linux/optimized/processor_throttling.ll
 ; linux/optimized/workqueue.ll
@@ -111,7 +109,6 @@
 ; openssl/optimized/libcrypto-lib-property_string.ll
 ; openssl/optimized/libcrypto-lib-rsa_backend.ll
 ; openssl/optimized/libcrypto-lib-rsa_chk.ll
-; openssl/optimized/libcrypto-lib-rsa_depr.ll
 ; openssl/optimized/libcrypto-lib-rsa_sp800_56b_gen.ll
 ; openssl/optimized/libcrypto-lib-sm2_crypt.ll
 ; openssl/optimized/libcrypto-lib-v3_addr.ll
@@ -128,7 +125,6 @@
 ; openssl/optimized/libcrypto-shlib-property_string.ll
 ; openssl/optimized/libcrypto-shlib-rsa_backend.ll
 ; openssl/optimized/libcrypto-shlib-rsa_chk.ll
-; openssl/optimized/libcrypto-shlib-rsa_depr.ll
 ; openssl/optimized/libcrypto-shlib-rsa_sp800_56b_gen.ll
 ; openssl/optimized/libcrypto-shlib-sm2_crypt.ll
 ; openssl/optimized/libcrypto-shlib-v3_addr.ll
@@ -173,6 +169,7 @@
 ; wireshark/optimized/profile_dialog.cpp.ll
 ; wireshark/optimized/protocol_preferences_menu.cpp.ll
 ; z3/optimized/theory_str.cpp.ll
+; zed-rs/optimized/2i8hya6f2t9bndlbd6b6686oi.ll
 ; zstd/optimized/cover.c.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; Function Attrs: nounwind
@@ -184,7 +181,7 @@ entry:
   ret i1 %5
 }
 
-; 115 occurrences:
+; 113 occurrences:
 ; c3c/optimized/llvm_codegen_stmt.c.ll
 ; clamav/optimized/clamfi.c.ll
 ; cmake/optimized/cmGlobalGenerator.cxx.ll
@@ -279,10 +276,8 @@ entry:
 ; postgres/optimized/relcache.ll
 ; postgres/optimized/user.ll
 ; proj/optimized/concatenatedoperation.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; qemu/optimized/block_nbd.c.ll
 ; qemu/optimized/hw_pci_pci.c.ll
-; qemu/optimized/system_balloon.c.ll
 ; qemu/optimized/virtio-9p-client.c.ll
 ; rocksdb/optimized/filter_block_reader_common.cc.ll
 ; rocksdb/optimized/index_reader_common.cc.ll

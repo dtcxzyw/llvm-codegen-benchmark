@@ -12,7 +12,7 @@ entry:
   %2 = shl nuw i16 %1, 1
   %3 = or disjoint i16 %2, 1
   %4 = zext i16 %3 to i32
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 

@@ -1,9 +1,9 @@
 func000000000000000f:                   # @func000000000000000f
 	subq	%rdx, %rsi
 	sarq	$3, %rsi
-	movabsq	$3689348814741910323, %rax      # imm = 0x3333333333333333
+	movabsq	$6148914691236517205, %rax      # imm = 0x5555555555555555
 	imulq	%rsi, %rax
-	sarq	$5, %rdi
+	sarq	$4, %rdi
 	addq	%rdi, %rax
 	retq
 func000000000000000b:                   # @func000000000000000b

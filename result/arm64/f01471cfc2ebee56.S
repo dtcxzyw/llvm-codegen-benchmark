@@ -1,8 +1,7 @@
 func0000000000000030:                   // @func0000000000000030
 // %bb.0:                               // %entry
-	cmtst	v3.2d, v3.2d, v3.2d
-	cmtst	v2.2d, v2.2d, v2.2d
-	sshl	v0.2d, v0.2d, v2.2d
-	sshl	v1.2d, v1.2d, v3.2d
+	cmp	x1, #0
+	cset	w8, ne
+	asr	x0, x0, x8
 	ret
                                         // -- End function

@@ -10,7 +10,7 @@ entry:
   %4 = and i32 %3, 255
   %5 = zext nneg i32 %4 to i64
   %6 = shl nuw nsw i64 %5, 40
-  %7 = or disjoint i64 %6, %0
+  %7 = or disjoint i64 %0, %6
   ret i64 %7
 }
 
@@ -54,7 +54,7 @@ entry:
   %4 = and i32 %3, 255
   %5 = zext nneg i32 %4 to i64
   %6 = shl nuw nsw i64 %5, 32
-  %7 = or disjoint i64 %6, %0
+  %7 = or disjoint i64 %0, %6
   ret i64 %7
 }
 
@@ -81,7 +81,7 @@ entry:
   %4 = and i32 %3, 65280
   %5 = zext nneg i32 %4 to i64
   %6 = shl nuw nsw i64 %5, 32
-  %7 = or disjoint i64 %6, %0
+  %7 = or disjoint i64 %0, %6
   ret i64 %7
 }
 

@@ -1,9 +1,6 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	fmul	v0.4s, v0.4s, v1.4s
-	fcvtl2	v1.2d, v0.4s
-	fcvtl	v0.2d, v0.2s
-	fcvtzs	v1.2d, v1.2d
-	fcvtzs	v0.2d, v0.2d
+	fmul	s0, s0, s1
+	fcvtzs	x0, s0
 	ret
                                         // -- End function

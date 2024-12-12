@@ -8,7 +8,7 @@
 ; qemu/optimized/hw_pci_shpc.c.ll
 ; yosys/optimized/xilinx_dffopt.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000e1(i32 %0, i32 %1, i64 %2) #0 {
+define i32 @func00000000000001c1(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = shl nuw i32 2, %3
@@ -38,7 +38,7 @@ entry:
 ; abc/optimized/giaGlitch.c.ll
 ; cpython/optimized/instrumentation.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000f1(i32 %0, i32 %1, i64 %2) #0 {
+define i32 @func00000000000001e1(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = shl nuw nsw i32 1, %3
@@ -51,7 +51,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/proto.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000d1(i32 %0, i32 %1, i64 %2) #0 {
+define i32 @func00000000000001a1(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = shl nsw i32 -1, %3
@@ -64,7 +64,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/services.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i32 %1, i64 %2) #0 {
+define i32 @func0000000000000041(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = shl nuw i32 1, %3

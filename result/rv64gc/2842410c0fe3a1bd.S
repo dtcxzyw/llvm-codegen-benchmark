@@ -9,14 +9,12 @@ func0000000000000004:                   # @func0000000000000004
 	neg	a0, a0
 	andi	a0, a0, -22
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	slli	a0, a0, 48
+	lui	a1, 1
 	srli	a0, a0, 48
-	addi	a0, a0, -218
-	li	a1, 3
-	bltu	a0, a1, .LBB1_2
-	li	a0, 17
-	ret
-.LBB1_2:
-	li	a0, 13
+	addi	a0, a0, -1
+	sltiu	a0, a0, 2
+	addiw	a1, a1, 339
+	add	a0, a0, a1
 	ret

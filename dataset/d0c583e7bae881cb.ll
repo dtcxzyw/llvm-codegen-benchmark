@@ -1,10 +1,8 @@
 
-; 10 occurrences:
+; 8 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; linux/optimized/drm_atomic_helper.ll
 ; linux/optimized/drm_lease.ll
-; linux/optimized/intel_engine_user.ll
-; linux/optimized/intel_rc6.ll
 ; linux/optimized/netdev.ll
 ; llvm/optimized/AArch64BaseInfo.cpp.ll
 ; openjdk/optimized/memMapPrinter.ll
@@ -15,7 +13,7 @@ define i32 @func0000000000000000(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = select i1 %1, i32 -1, i32 %3
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 

@@ -41,23 +41,23 @@ func0000000000000014:                   # @func0000000000000014
 	vzeroupper
 	retq
 .LCPI4_0:
-	.long	256                             # 0x100
-.LCPI4_1:
-	.zero	16,1
-func0000000000000008:                   # @func0000000000000008
-	vpsllw	$15, %xmm0, %xmm0
-	vpmovw2m	%xmm0, %k1
-	vpcmpltud	.LCPI4_0(%rip){1to8}, %ymm1, %k1 {%k1}
-	vmovdqu8	.LCPI4_1(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
-	vzeroupper
-	retq
-.LCPI5_0:
 	.zero	16,1
 func000000000000000c:                   # @func000000000000000c
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpxor	%xmm0, %xmm0, %xmm0
 	vpcmpgtd	%ymm1, %ymm0, %k1 {%k1}
-	vmovdqu8	.LCPI5_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+	vmovdqu8	.LCPI4_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+	vzeroupper
+	retq
+.LCPI5_0:
+	.long	4294967201                      # 0xffffffa1
+.LCPI5_1:
+	.zero	16,1
+func0000000000000008:                   # @func0000000000000008
+	vpsllw	$15, %xmm0, %xmm0
+	vpmovw2m	%xmm0, %k1
+	vpcmpltud	.LCPI5_0(%rip){1to8}, %ymm1, %k1 {%k1}
+	vmovdqu8	.LCPI5_1(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
 	vzeroupper
 	retq

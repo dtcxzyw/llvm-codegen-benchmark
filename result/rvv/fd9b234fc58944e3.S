@@ -3,5 +3,5 @@ func0000000000000000:                   # @func0000000000000000
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vfmv.v.f	v24, fa5
 	vfrdiv.vf	v24, v16, fa5, v0.t
-	vfadd.vv	v8, v24, v8
+	vfadd.vv	v8, v8, v24
 	ret

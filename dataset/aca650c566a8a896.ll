@@ -1,5 +1,6 @@
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/alloc_lib.ll
 ; llvm/optimized/AArch64Subtarget.cpp.ll
 ; qemu/optimized/hw_nvme_ns.c.ll
 ; slurm/optimized/job_test.ll

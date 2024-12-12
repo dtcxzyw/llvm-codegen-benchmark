@@ -61,18 +61,42 @@ func0000000000000011:                   # @func0000000000000011
 	.long	48                              # 0x30
 .LCPI5_2:
 	.long	32                              # 0x20
-func0000000000000009:                   # @func0000000000000009
+func0000000000000029:                   # @func0000000000000029
 	vpcmpltud	.LCPI5_0(%rip){1to4}, %xmm0, %k1
 	vpbroadcastd	.LCPI5_1(%rip), %xmm0   # xmm0 = [48,48,48,48]
 	vpbroadcastd	.LCPI5_2(%rip), %xmm0 {%k1} # xmm0 {%k1} = [32,32,32,32]
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
 .LCPI6_0:
+	.long	99                              # 0x63
+.LCPI6_1:
+	.long	4                               # 0x4
+.LCPI6_2:
+	.long	5                               # 0x5
+func0000000000000031:                   # @func0000000000000031
+	vpcmpnleud	.LCPI6_0(%rip){1to4}, %xmm0, %k1
+	vpbroadcastd	.LCPI6_1(%rip), %xmm0   # xmm0 = [4,4,4,4]
+	vpbroadcastd	.LCPI6_2(%rip), %xmm0 {%k1} # xmm0 {%k1} = [5,5,5,5]
+	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	retq
+.LCPI7_0:
+	.long	4                               # 0x4
+.LCPI7_1:
+	.long	178                             # 0xb2
+.LCPI7_2:
+	.long	177                             # 0xb1
+func0000000000000009:                   # @func0000000000000009
+	vpcmpltud	.LCPI7_0(%rip){1to4}, %xmm0, %k1
+	vpbroadcastd	.LCPI7_1(%rip), %xmm0   # xmm0 = [178,178,178,178]
+	vpbroadcastd	.LCPI7_2(%rip), %xmm0 {%k1} # xmm0 {%k1} = [177,177,177,177]
+	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	retq
+.LCPI8_0:
 	.long	1                               # 0x1
 func0000000000000002:                   # @func0000000000000002
 	vptestnmd	%xmm0, %xmm0, %k1
 	vpcmpeqd	%xmm0, %xmm0, %xmm0
-	vpbroadcastd	.LCPI6_0(%rip), %xmm1   # xmm1 = [1,1,1,1]
+	vpbroadcastd	.LCPI8_0(%rip), %xmm1   # xmm1 = [1,1,1,1]
 	vmovdqa32	%xmm0, %xmm1 {%k1}
 	vpmovzxdq	%xmm1, %ymm0            # ymm0 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
 	retq

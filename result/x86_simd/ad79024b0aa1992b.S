@@ -24,7 +24,7 @@ func0000000000000005:                   # @func0000000000000005
 	vpslld	$31, %ymm1, %ymm1
 	vpsrad	$31, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
-	vpaddd	%ymm0, %ymm2, %ymm0
+	vpaddd	%ymm2, %ymm0, %ymm0
 	retq
 .LCPI2_0:
 	.long	4                               # 0x4

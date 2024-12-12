@@ -25,13 +25,13 @@
 ; darktable/optimized/introspection_zonesystem.c.ll
 ; darktable/optimized/tethering.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = shl nsw i64 %3, 2
   %5 = sext i32 %1 to i64
   %6 = mul i64 %4, %5
-  %7 = icmp ugt i64 %6, %0
+  %7 = icmp ult i64 %0, %6
   ret i1 %7
 }
 
@@ -40,13 +40,13 @@ entry:
 ; openexr/optimized/encoding.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = shl nsw i64 %3, 2
   %5 = sext i32 %1 to i64
   %6 = mul i64 %4, %5
-  %7 = icmp eq i64 %6, %0
+  %7 = icmp eq i64 %0, %6
   ret i1 %7
 }
 

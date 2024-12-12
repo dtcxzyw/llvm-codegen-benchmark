@@ -24,7 +24,7 @@
 ; raylib/optimized/rtextures.c.ll
 ; yosys/optimized/booth.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000e6(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 3
   %3 = sext i32 %2 to i64
@@ -39,7 +39,7 @@ entry:
 ; openblas/optimized/dsyequb.c.ll
 ; openjdk/optimized/zip_util.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = sext i32 %2 to i64
@@ -73,7 +73,7 @@ entry:
 ; openmpi/optimized/coll_ftagree_earlyterminating.ll
 ; openusd/optimized/bignum.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = sext i32 %2 to i64
@@ -85,7 +85,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/sharedRuntime_x86_64.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = sext i32 %2 to i64
@@ -97,7 +97,7 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000006a(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 3
   %3 = sext i32 %2 to i64
@@ -110,7 +110,7 @@ entry:
 ; darktable/optimized/introspection_lens.cc.ll
 ; quickjs/optimized/libregexp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = sext i32 %2 to i64
@@ -124,7 +124,7 @@ entry:
 ; cmake/optimized/huffman.c.ll
 ; cvc5/optimized/equality_engine.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = sext i32 %2 to i64
@@ -136,7 +136,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaResub6.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000066(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 6
   %3 = sext i32 %2 to i64
@@ -157,7 +157,7 @@ entry:
 ; opencv/optimized/color_yuv.dispatch.cpp.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a6(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = sext i32 %2 to i64
@@ -169,7 +169,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/abcQuant.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000aa(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = sext i32 %2 to i64
@@ -181,7 +181,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaFalse.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = sext i32 %2 to i64
@@ -193,7 +193,7 @@ entry:
 ; 1 occurrences:
 ; proj/optimized/grids.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000c1(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = sext i32 %2 to i64

@@ -1,5 +1,6 @@
 
-; 7 occurrences:
+; 8 occurrences:
+; boost/optimized/default_filter_factory.ll
 ; jemalloc/optimized/ckh.ll
 ; jemalloc/optimized/ckh.pic.ll
 ; jemalloc/optimized/ckh.sym.ll
@@ -12,7 +13,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 5
   %3 = add i64 %2, 1390208809
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = mul i64 %4, 5
   %6 = add i64 %5, 944331445
   ret i64 %6

@@ -1,5 +1,5 @@
 
-%struct.chan.2595438 = type { i32, i32, i32, i32, i32 }
+%struct.chan.2709019 = type { i32, i32, i32, i32, i32 }
 
 ; 7 occurrences:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
@@ -10,16 +10,16 @@
 ; openexr/optimized/internal_huf.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = add nsw i64 %2, -1
   %4 = lshr i64 %3, 6
-  %5 = getelementptr nusw i64, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i64, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 259 occurrences:
+; 258 occurrences:
 ; abseil-cpp/optimized/str_cat_test.cc.ll
 ; arrow/optimized/api_scalar.cc.ll
 ; arrow/optimized/array_dict.cc.ll
@@ -33,6 +33,7 @@ entry:
 ; assimp/optimized/LWOLoader.cpp.ll
 ; assimp/optimized/SplitByBoneCountProcess.cpp.ll
 ; assimp/optimized/X3DXmlHelper.cpp.ll
+; boost/optimized/options_description.ll
 ; casadi/optimized/mx_function.cpp.ll
 ; casadi/optimized/nlp_builder.cpp.ll
 ; casadi/optimized/optistack_internal.cpp.ll
@@ -159,8 +160,6 @@ entry:
 ; php/optimized/zend_ssa.ll
 ; pocketpy/optimized/vm.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; protobuf/optimized/generated_enum_util.cc.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
@@ -280,12 +279,12 @@ entry:
 ; yosys/optimized/opt_lut.ll
 ; zxing/optimized/Content.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001b(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = add nuw nsw i64 %2, 1
   %4 = lshr i64 %3, 6
-  %5 = getelementptr nusw i64, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i64, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -294,12 +293,12 @@ entry:
 ; openjdk/optimized/xObjArrayAllocator.ll
 ; ozz-animation/optimized/sampling_job.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000003b(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = add nuw nsw i64 %2, 7
   %4 = lshr i64 %3, 3
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -311,7 +310,7 @@ entry:
   %2 = zext i32 %1 to i64
   %3 = add nsw i64 %2, -3120
   %4 = lshr i64 %3, 3
-  %5 = getelementptr %struct.chan.2595438, ptr %0, i64 %4
+  %5 = getelementptr %struct.chan.2709019, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -340,6 +339,18 @@ entry:
   %3 = add nsw i64 %2, -8
   %4 = lshr i64 %3, 2
   %5 = getelementptr i32, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; openexr/optimized/ImfHuf.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002b(ptr %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = add nsw i64 %2, -2
+  %4 = lshr i64 %3, 1
+  %5 = getelementptr nusw nuw ptr, ptr %0, i64 %4
   ret ptr %5
 }
 

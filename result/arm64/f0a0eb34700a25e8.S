@@ -1,4 +1,4 @@
-func000000000000000a:                   // @func000000000000000a
+func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
 	sub	x8, x1, x2
 	mov	x9, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa

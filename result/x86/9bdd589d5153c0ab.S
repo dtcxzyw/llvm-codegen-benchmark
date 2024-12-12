@@ -13,8 +13,18 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	$11, %rax
 	setae	%al
 	retq
+func0000000000000018:                   # @func0000000000000018
+	vcvttsd2usi	%xmm0, %rax
+	cmpq	$104857600, %rax                # imm = 0x6400000
+	setae	%al
+	retq
 func000000000000000c:                   # @func000000000000000c
 	vcvttsd2usi	%xmm0, %rax
 	testq	%rax, %rax
 	setne	%al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	vcvttsd2usi	%xmm0, %rax
+	cmpq	$59, %rax
+	setb	%al
 	retq

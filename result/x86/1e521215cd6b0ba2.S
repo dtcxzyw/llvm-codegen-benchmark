@@ -22,15 +22,15 @@ func0000000000000005:                   # @func0000000000000005
 	leal	(%rsi,%rdx), %eax
 	addl	%edi, %eax
 	retq
+func000000000000000e:                   # @func000000000000000e
+	leal	(%rsi,%rdx), %eax
+	addl	%edi, %eax
+	retq
 func000000000000000a:                   # @func000000000000000a
 	leal	(%rsi,%rdx), %eax
 	addl	%edi, %eax
 	retq
 func000000000000000d:                   # @func000000000000000d
-	leal	(%rsi,%rdx), %eax
-	addl	%edi, %eax
-	retq
-func000000000000000e:                   # @func000000000000000e
 	leal	(%rsi,%rdx), %eax
 	addl	%edi, %eax
 	retq

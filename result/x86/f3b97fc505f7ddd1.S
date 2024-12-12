@@ -20,3 +20,15 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	$3, %edi
 	cmovael	%edx, %eax
 	retq
+func0000000000000014:                   # @func0000000000000014
+	notb	%dl
+	movzbl	%dl, %eax
+	andl	$1, %eax
+	leal	17(,%rax,4), %ecx
+	notb	%sil
+	movzbl	%sil, %eax
+	andl	$1, %eax
+	leal	12(%rax,%rax,2), %eax
+	cmpl	$32783, %edi                    # imm = 0x800F
+	cmovael	%ecx, %eax
+	retq

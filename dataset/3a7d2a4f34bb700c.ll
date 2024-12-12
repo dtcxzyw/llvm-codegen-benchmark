@@ -1,8 +1,10 @@
 
-; 9 occurrences:
+; 11 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; libsodium/optimized/libsodium_la-x25519_ref10.ll
 ; meilisearch-rs/optimized/4llghrvh6vzci59o.ll
@@ -51,7 +53,7 @@ entry:
 define i64 @func000000000000003f(i128 %0, i128 %1) #0 {
 entry:
   %2 = mul nuw nsw i128 %1, 19
-  %3 = add nuw nsw i128 %2, %0
+  %3 = add nuw nsw i128 %0, %2
   %4 = trunc nuw nsw i128 %3 to i64
   ret i64 %4
 }

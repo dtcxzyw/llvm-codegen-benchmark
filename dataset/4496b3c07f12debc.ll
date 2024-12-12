@@ -1,6 +1,42 @@
 
-; 20 occurrences:
+; 56 occurrences:
 ; abc/optimized/dauDsd.c.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/env.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/extensions.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/run_exe.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/sub_launcher.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/throw_on_error.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
 ; clamav/optimized/binhex.c.ll
 ; clamav/optimized/pdf.c.ll
 ; clamav/optimized/scanners.c.ll
@@ -29,10 +65,18 @@ entry:
   ret i32 %5
 }
 
-; 29 occurrences:
+; 38 occurrences:
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; git/optimized/diff.ll
 ; git/optimized/submodule.ll
 ; icu/optimized/measfmt.ll
+; image-rs/optimized/2mngkegtim1o10y3.ll
 ; libquic/optimized/a_int.c.ll
 ; linux/optimized/acpi_processor.ll
 ; linux/optimized/reg.ll
@@ -44,8 +88,6 @@ entry:
 ; nuttx/optimized/lib_libvscanf.c.ll
 ; openjdk/optimized/check_code.ll
 ; openjdk/optimized/javaClasses.ll
-; openssl/optimized/libssl-lib-s3_msg.ll
-; openssl/optimized/libssl-shlib-s3_msg.ll
 ; openssl/optimized/openssl-bin-pkey.ll
 ; php/optimized/parse_iso_intervals.ll
 ; qemu/optimized/disas_riscv.c.ll
@@ -53,12 +95,15 @@ entry:
 ; qemu/optimized/linux-user_syscall.c.ll
 ; raylib/optimized/rcore.c.ll
 ; slurm/optimized/mgr.ll
+; wireshark/optimized/packet-btbredr_rf.c.ll
 ; wireshark/optimized/packet-dmp.c.ll
 ; wireshark/optimized/packet-rsvd.c.ll
 ; wireshark/optimized/packet-wow.c.ll
 ; wireshark/optimized/packet-z21.c.ll
 ; wireshark/optimized/proto.c.ll
 ; wolfssl/optimized/tls.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/diggdkpukg0xn23g7ivuh3jfw.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i1 %1, i32 %2) #0 {
 entry:
@@ -87,19 +132,27 @@ entry:
   ret i32 %5
 }
 
-; 6 occurrences:
-; cmake/optimized/huf_decompress.c.ll
+; 3 occurrences:
 ; libjpeg-turbo/optimized/jdapistd.c.ll
-; linux/optimized/huf_decompress.ll
 ; linux/optimized/tsc.ll
 ; luau/optimized/isocline.c.ll
-; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 9
   %4 = select i1 %3, i1 %1, i1 false
   %5 = select i1 %4, i32 13, i32 %0
+  ret i32 %5
+}
+
+; 1 occurrences:
+; hermes/optimized/HBC.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000018(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i32 %2, 55295
+  %4 = select i1 %3, i1 %1, i1 false
+  %5 = select i1 %4, i32 65533, i32 %0
   ret i32 %5
 }
 
@@ -112,6 +165,19 @@ entry:
   %3 = icmp slt i32 %2, 0
   %4 = select i1 %3, i1 %1, i1 false
   %5 = select i1 %4, i32 2147483647, i32 %0
+  ret i32 %5
+}
+
+; 3 occurrences:
+; cmake/optimized/huf_decompress.c.ll
+; linux/optimized/huf_decompress.ll
+; zstd/optimized/huf_decompress.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 12
+  %4 = select i1 %3, i1 %1, i1 false
+  %5 = select i1 %4, i32 11, i32 %0
   ret i32 %5
 }
 

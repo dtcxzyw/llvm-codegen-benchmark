@@ -3,6 +3,7 @@
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; linux/optimized/e1000_main.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
 ; openexr/optimized/internal_pxr24.c.ll
@@ -12,7 +13,6 @@
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
 ; stockfish/optimized/tbprobe.ll
-; wireshark/optimized/dot11decrypt_tkip.c.ll
 ; wireshark/optimized/logcat.c.ll
 ; wireshark/optimized/packet-eth.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll

@@ -1,5 +1,8 @@
 
-; 3 occurrences:
+; 6 occurrences:
+; freetype/optimized/cff.c.ll
+; freetype/optimized/type1.c.ll
+; freetype/optimized/type1cid.c.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; linux/optimized/cfg.ll
 ; openjdk/optimized/classPrinter.ll

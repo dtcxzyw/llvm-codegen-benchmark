@@ -1,5 +1,8 @@
 
-; 23 occurrences:
+; 26 occurrences:
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/within_sph_geo.ll
 ; graphviz/optimized/ellipse.c.ll
 ; gromacs/optimized/functions.cpp.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll

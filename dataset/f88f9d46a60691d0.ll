@@ -5,7 +5,7 @@
 ; ruby/optimized/bignum.ll
 ; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 -2, %1
   %3 = xor i32 %2, -1

@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	1                               # 0x1
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	vptestnmw	%xmm1, %xmm1, %k0
 	vpmovm2d	%k0, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
@@ -8,20 +8,20 @@ func0000000000000081:                   # @func0000000000000081
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000063c:                   # @func000000000000063c
+func0000000000000c6c:                   # @func0000000000000c6c
 	vptestmw	%xmm1, %xmm1, %k0
 	vpmovm2d	%k0, %ymm1
 	vpsrld	$31, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	vptestmd	%ymm0, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000000bc:                   # @func00000000000000bc
+func000000000000016c:                   # @func000000000000016c
 	vptestnmw	%xmm1, %xmm1, %k0
 	vpmovm2d	%k0, %ymm1
 	vpsrld	$31, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	vptestmd	%ymm0, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -37,7 +37,7 @@ func00000000000000bc:                   # @func00000000000000bc
 	.short	2                               # 0x2
 .LCPI3_1:
 	.long	3                               # 0x3
-func0000000000000234:                   # @func0000000000000234
+func0000000000000474:                   # @func0000000000000474
 	vpcmpltuw	.LCPI3_0(%rip), %xmm1, %k0
 	vpmovm2d	%k0, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
@@ -45,19 +45,16 @@ func0000000000000234:                   # @func0000000000000234
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000601:                   # @func0000000000000601
+func0000000000000c01:                   # @func0000000000000c01
 	vptestmw	%xmm1, %xmm1, %k0
 	vpmovm2d	%k0, %ymm1
-	vpsrld	$31, %ymm1, %ymm1
-	vpxor	%xmm2, %xmm2, %xmm2
-	vpsubd	%ymm0, %ymm2, %ymm0
-	vpcmpeqd	%ymm0, %ymm1, %k0
+	vpcmpeqd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 .LCPI5_0:
 	.long	1                               # 0x1
-func0000000000000638:                   # @func0000000000000638
+func0000000000000c78:                   # @func0000000000000c78
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpcmpneqw	%xmm2, %xmm1, %k0
 	vpmovm2d	%k0, %ymm1
@@ -66,20 +63,19 @@ func0000000000000638:                   # @func0000000000000638
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-.LCPI6_0:
-	.long	1                               # 0x1
-func0000000000000631:                   # @func0000000000000631
+func0000000000000c61:                   # @func0000000000000c61
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpcmpneqw	%xmm2, %xmm1, %k0
 	vpmovm2d	%k0, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	.LCPI6_0(%rip){1to8}, %ymm0, %k0
+	vpsrld	$31, %ymm1, %ymm1
+	vpor	%ymm1, %ymm0, %ymm0
+	vptestnmd	%ymm0, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 .LCPI7_0:
 	.long	1                               # 0x1
-func000000000000061a:                   # @func000000000000061a
+func0000000000000c2a:                   # @func0000000000000c2a
 	vptestmw	%xmm1, %xmm1, %k0
 	vpmovm2d	%k0, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
@@ -89,7 +85,7 @@ func000000000000061a:                   # @func000000000000061a
 	retq
 .LCPI8_0:
 	.long	1                               # 0x1
-func0000000000000091:                   # @func0000000000000091
+func0000000000000121:                   # @func0000000000000121
 	vptestnmw	%xmm1, %xmm1, %k0
 	vpmovm2d	%k0, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0

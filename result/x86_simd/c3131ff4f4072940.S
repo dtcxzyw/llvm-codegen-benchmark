@@ -90,16 +90,3 @@ func000000000000002f:                   # @func000000000000002f
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpaddd	.LCPI4_1(%rip){1to8}, %ymm0, %ymm0
 	retq
-.LCPI5_0:
-	.long	8388607                         # 0x7fffff
-.LCPI5_1:
-	.long	3474674                         # 0x3504f2
-.LCPI5_2:
-	.long	4294967169                      # 0xffffff81
-func0000000000000105:                   # @func0000000000000105
-	vpandd	.LCPI5_0(%rip){1to8}, %ymm1, %ymm1
-	vpbroadcastd	.LCPI5_1(%rip), %ymm2   # ymm2 = [3474674,3474674,3474674,3474674,3474674,3474674,3474674,3474674]
-	vpcmpgtd	%ymm2, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
-	vpaddd	.LCPI5_2(%rip){1to8}, %ymm0, %ymm0
-	retq

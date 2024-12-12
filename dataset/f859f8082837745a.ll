@@ -11,8 +11,8 @@ define i32 @func0000000000000007(i1 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = sitofp i32 %2 to double
-  %4 = fcmp une double %3, %1
-  %5 = and i1 %4, %0
+  %4 = fcmp une double %1, %3
+  %5 = and i1 %0, %4
   %6 = sext i1 %5 to i32
   ret i32 %6
 }

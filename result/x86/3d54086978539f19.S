@@ -1,10 +1,10 @@
 .LCPI0_0:
 	.quad	0x3ff0000000000000              # double 1
 func000000000000000a:                   # @func000000000000000a
-	kmovd	%edi, %k1
+	vcmplesd	.LCPI0_0(%rip), %xmm0, %k1
 	vmovapd	%xmm1, %xmm2
 	vmovsd	%xmm0, %xmm2, %xmm2 {%k1}
-	vcmplesd	.LCPI0_0(%rip), %xmm0, %k1
+	kmovd	%edi, %k1
 	vmovsd	%xmm2, %xmm1, %xmm1 {%k1}
 	vmovapd	%xmm1, %xmm0
 	retq
@@ -49,10 +49,10 @@ func000000000000000d:                   # @func000000000000000d
 .LCPI5_0:
 	.quad	0x3ff0000000000000              # double 1
 func0000000000000003:                   # @func0000000000000003
-	kmovd	%edi, %k1
+	vcmpngesd	.LCPI5_0(%rip), %xmm0, %k1
 	vmovapd	%xmm1, %xmm2
 	vmovsd	%xmm0, %xmm2, %xmm2 {%k1}
-	vcmpngesd	.LCPI5_0(%rip), %xmm0, %k1
+	kmovd	%edi, %k1
 	vmovsd	%xmm2, %xmm1, %xmm1 {%k1}
 	vmovapd	%xmm1, %xmm0
 	retq

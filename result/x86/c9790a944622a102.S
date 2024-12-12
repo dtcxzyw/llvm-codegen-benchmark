@@ -1,13 +1,13 @@
-func0000000000000588:                   # @func0000000000000588
+func0000000000001718:                   # @func0000000000001718
 	movl	%edx, %eax
 	negl	%eax
 	cmovsl	%edx, %eax
-	cmpl	%edi, %eax
-	setb	%cl
+	cmpl	%eax, %edi
+	seta	%cl
 	movl	%esi, %eax
 	negl	%eax
 	cmovsl	%esi, %eax
-	cmpl	%edi, %eax
-	setb	%al
+	cmpl	%eax, %edi
+	seta	%al
 	orb	%cl, %al
 	retq

@@ -65,10 +65,8 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; php/optimized/ir_emit.ll
-; stb/optimized/stb_image.c.ll
-; wireshark/optimized/packet-babel.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i32 %1, i1 %2) #0 {
 entry:
@@ -88,6 +86,18 @@ entry:
   %3 = icmp ult i32 %1, 3
   %4 = select i1 %0, i1 %2, i1 %3
   ret i1 %4
+}
+
+; 2 occurrences:
+; stb/optimized/stb_image.c.ll
+; wireshark/optimized/packet-babel.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i32 %1, i1 %2) #0 {
+entry:
+  %3 = select i1 %2, i32 1, i32 3
+  %4 = select i1 %0, i32 %3, i32 %1
+  %5 = icmp samesign ugt i32 %4, 2
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

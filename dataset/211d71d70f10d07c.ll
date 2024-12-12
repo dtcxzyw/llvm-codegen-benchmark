@@ -14,11 +14,10 @@ entry:
   ret i64 %4
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; linux/optimized/callback_xdr.ll
 ; linux/optimized/ioam6.ll
 ; linux/optimized/rtnetlink.ll
-; linux/optimized/xdr4.ll
 ; llvm/optimized/AsmPrinter.cpp.ll
 ; llvm/optimized/GSIStreamBuilder.cpp.ll
 ; postgres/optimized/gindatapage.ll
@@ -112,7 +111,7 @@ entry:
   ret i64 %4
 }
 
-; 130 occurrences:
+; 131 occurrences:
 ; clamav/optimized/pe.c.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/ABIInfoImpl.cpp.ll
@@ -243,6 +242,7 @@ entry:
 ; llvm/optimized/WinEHPrepare.cpp.ll
 ; llvm/optimized/X86LowerAMXIntrinsics.cpp.ll
 ; llvm/optimized/X86LowerAMXType.cpp.ll
+; lvgl/optimized/lv_scale.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i32 %0) #0 {
 entry:
@@ -269,30 +269,6 @@ entry:
 }
 
 ; 1 occurrences:
-; tinyrenderer/optimized/tgaimage.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000003(i32 %0) #0 {
-entry:
-  %1 = add i32 %0, 129
-  %2 = and i32 %1, 255
-  %3 = add nsw i32 %2, -1
-  %4 = zext nneg i32 %3 to i64
-  ret i64 %4
-}
-
-; 1 occurrences:
-; tinyrenderer/optimized/tgaimage.cpp.ll
-; Function Attrs: nounwind
-define i64 @func000000000000001b(i32 %0) #0 {
-entry:
-  %1 = add nuw nsw i32 %0, 1
-  %2 = and i32 %1, 255
-  %3 = add nsw i32 %2, -1
-  %4 = zext nneg i32 %3 to i64
-  ret i64 %4
-}
-
-; 1 occurrences:
 ; postgres/optimized/varbit.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i32 %0) #0 {
@@ -313,18 +289,6 @@ entry:
   %2 = and i32 %1, 1020
   %3 = add nsw i32 %2, -2
   %4 = zext i32 %3 to i64
-  ret i64 %4
-}
-
-; 1 occurrences:
-; openblas/optimized/dpttrf.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000017(i32 %0) #0 {
-entry:
-  %1 = add nuw i32 %0, 3
-  %2 = and i32 %1, 3
-  %3 = add nuw nsw i32 %2, 1
-  %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
 

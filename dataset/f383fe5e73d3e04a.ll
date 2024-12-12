@@ -1,8 +1,8 @@
 
-%"struct.std::atomic.7.3189929" = type { %"struct.std::__atomic_base.8.3189930" }
-%"struct.std::__atomic_base.8.3189930" = type { ptr }
+%"struct.std::atomic.30.2777666" = type { %"struct.std::__atomic_base.31.2777676" }
+%"struct.std::__atomic_base.31.2777676" = type { i64 }
 
-; 120 occurrences:
+; 133 occurrences:
 ; abc/optimized/mapperMatch.c.ll
 ; abc/optimized/mapperTime.c.ll
 ; abc/optimized/mapperUtils.c.ll
@@ -14,6 +14,8 @@
 ; jemalloc/optimized/psset.sym.ll
 ; luajit/optimized/lj_carith.ll
 ; luajit/optimized/lj_carith_dyn.ll
+; luajit/optimized/lj_ffrecord.ll
+; luajit/optimized/lj_ffrecord_dyn.ll
 ; minetest/optimized/content_mapblock.cpp.ll
 ; mold/optimized/input-files.cc.ALPHA.cc.ll
 ; mold/optimized/input-files.cc.ARM32.cc.ll
@@ -90,6 +92,17 @@
 ; opencv/optimized/calibinit.cpp.ll
 ; openssl/optimized/libssl-lib-quic_record_shared.ll
 ; openssl/optimized/libssl-shlib-quic_record_shared.ll
+; openusd/optimized/cacheImpl.cpp.ll
+; openusd/optimized/changeTracker.cpp.ll
+; openusd/optimized/flattenedPrimvarsDataSourceProvider.cpp.ll
+; openusd/optimized/flatteningSceneIndex.cpp.ll
+; openusd/optimized/mallocTag.cpp.ll
+; openusd/optimized/mapExpression.cpp.ll
+; openusd/optimized/pathNode.cpp.ll
+; openusd/optimized/primTypeInfoCache.cpp.ll
+; openusd/optimized/resolver.cpp.ll
+; openusd/optimized/stageSceneIndex.cpp.ll
+; openusd/optimized/usdzResolver.cpp.ll
 ; openvdb/optimized/Diagnostics.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Filter.cc.ll
@@ -124,32 +137,24 @@
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, 1
-  %3 = getelementptr nusw i8, ptr %0, i64 48
-  %4 = getelementptr nusw [2 x ptr], ptr %3, i64 0, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 48
+  %4 = getelementptr nusw nuw [2 x ptr], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 
-; 11 occurrences:
-; openusd/optimized/cacheImpl.cpp.ll
-; openusd/optimized/changeTracker.cpp.ll
-; openusd/optimized/flattenedPrimvarsDataSourceProvider.cpp.ll
-; openusd/optimized/flatteningSceneIndex.cpp.ll
-; openusd/optimized/mallocTag.cpp.ll
-; openusd/optimized/mapExpression.cpp.ll
-; openusd/optimized/pathNode.cpp.ll
-; openusd/optimized/primTypeInfoCache.cpp.ll
-; openusd/optimized/resolver.cpp.ll
-; openusd/optimized/stageSceneIndex.cpp.ll
-; openusd/optimized/usdzResolver.cpp.ll
+; 3 occurrences:
+; yalantinglibs/optimized/channel.cpp.ll
+; yalantinglibs/optimized/client_pool.cpp.ll
+; yalantinglibs/optimized/client_pools.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
 entry:
-  %2 = xor i64 %1, 63
-  %3 = getelementptr nusw nuw i8, ptr %0, i64 56
-  %4 = getelementptr nusw [64 x %"struct.std::atomic.7.3189929"], ptr %3, i64 0, i64 %2
+  %2 = xor i64 %1, 1
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 1240
+  %4 = getelementptr nusw [2 x %"struct.std::atomic.30.2777666"], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 
@@ -163,10 +168,10 @@ entry:
 ; postgres/optimized/sha1_srv.ll
 ; wireshark/optimized/packet-ssyncp.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000c(ptr %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, 1
-  %3 = getelementptr nusw i8, ptr %0, i64 28
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 28
   %4 = getelementptr [2 x i32], ptr %3, i64 0, i64 %2
   ret ptr %4
 }

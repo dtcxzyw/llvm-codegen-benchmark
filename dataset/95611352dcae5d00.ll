@@ -1,6 +1,7 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; clamav/optimized/pe.c.ll
+; lvgl/optimized/lv_bar.ll
 ; opencv/optimized/contours_new.cpp.ll
 ; wireshark/optimized/packet-uts.c.ll
 ; Function Attrs: nounwind

@@ -1,3 +1,10 @@
+func000000000000005f:                   # @func000000000000005f
+	movslq	%edx, %rax
+	imulq	$3600, %rax, %rcx               # imm = 0xE10
+	imulq	$60, %rsi, %rax
+	addq	%rdi, %rax
+	addq	%rcx, %rax
+	retq
 func0000000000000010:                   # @func0000000000000010
 	movslq	%edx, %rax
 	leaq	(%rax,%rax,4), %rax

@@ -57,18 +57,19 @@ entry:
 define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
-  %4 = add nuw i32 %3, %1
+  %4 = add nuw i32 %1, %3
   %5 = sub i32 %0, %4
   ret i32 %5
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; cmake/optimized/zstd_double_fast.c.ll
 ; cmake/optimized/zstd_fast.c.ll
 ; cvc5/optimized/soi_simplex.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; luajit/optimized/lj_strfmt.ll
 ; luajit/optimized/lj_strfmt_dyn.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; openusd/optimized/entdec.c.ll
 ; redis/optimized/rax.ll
 ; zstd/optimized/zstd_double_fast.c.ll
@@ -77,7 +78,7 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = lshr i32 %2, 1
+  %3 = lshr i32 %2, 3
   %4 = add i32 %3, %1
   %5 = sub i32 %0, %4
   ret i32 %5
@@ -89,7 +90,7 @@ entry:
 define i32 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 1
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = sub i32 %0, %4
   ret i32 %5
 }
@@ -113,7 +114,7 @@ entry:
 define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 1
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sub i32 %0, %4
   ret i32 %5
 }
@@ -135,7 +136,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 31
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sub i32 %0, %4
   ret i32 %5
 }

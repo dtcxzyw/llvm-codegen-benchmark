@@ -1,6 +1,7 @@
 
-; 106 occurrences:
+; 107 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/convolute.ll
 ; cpython/optimized/crt.ll
 ; cpython/optimized/difradix2.ll
@@ -114,12 +115,13 @@ entry:
   ret i64 %1
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/to_chars.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i128 %0) #0 {
 entry:
-  %sum.shift = lshr i128 %0, 66
+  %sum.shift = lshr i128 %0, 96
   %1 = trunc nuw nsw i128 %sum.shift to i64
   ret i64 %1
 }

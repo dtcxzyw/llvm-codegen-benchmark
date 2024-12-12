@@ -1,9 +1,8 @@
 
-; 22 occurrences:
+; 20 occurrences:
 ; abc/optimized/aigCanon.c.ll
 ; abc/optimized/aigCuts.c.ll
 ; abc/optimized/bdcCore.c.ll
-; abc/optimized/cswMan.c.ll
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/extraBddThresh.c.ll
 ; abc/optimized/extraUtilMaj.c.ll
@@ -15,7 +14,6 @@
 ; abc/optimized/ifTruth.c.ll
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/kitTruth.c.ll
-; abc/optimized/lpkMan.c.ll
 ; abc/optimized/lpkMulti.c.ll
 ; abc/optimized/sfmLib.c.ll
 ; icu/optimized/collationsettings.ll
@@ -31,10 +29,9 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; freetype/optimized/psaux.c.ll
 ; linux/optimized/dmar.ll
-; opencv/optimized/array.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i32 %1) #0 {
 entry:

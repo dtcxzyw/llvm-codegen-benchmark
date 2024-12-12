@@ -81,13 +81,6 @@ func000000000000006f:                   # @func000000000000006f
 	add	a0, a0, a2
 	addi	a0, a0, 1
 	ret
-func0000000000000015:                   # @func0000000000000015
-	sext.w	a2, a2
-	seqz	a2, a2
-	xori	a2, a2, -365
-	add	a0, a0, a1
-	add	a0, a0, a2
-	ret
 func0000000000000080:                   # @func0000000000000080
 	sext.w	a2, a2
 	lui	a3, 36
@@ -114,11 +107,11 @@ func0000000000000087:                   # @func0000000000000087
 	add	a0, a0, a2
 	addi	a0, a0, 1
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000015:                   # @func0000000000000015
 	sext.w	a2, a2
-	li	a3, 5
+	lui	a3, 1
+	addiw	a3, a3, -2017
 	czero.eqz	a2, a3, a2
 	add	a0, a0, a1
 	add	a0, a0, a2
-	addi	a0, a0, 3
 	ret

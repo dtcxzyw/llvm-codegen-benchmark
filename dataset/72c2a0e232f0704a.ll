@@ -1,49 +1,38 @@
 
-; 28 occurrences:
-; eastl/optimized/TestExtra.cpp.ll
-; hermes/optimized/CommandLine.cpp.ll
+%"class.llvm::Use.3138418" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::MachineOperand.3184385" = type { i32, %union.anon.274.3184386, ptr, %"union.llvm::MachineOperand::ContentsUnion.3184387" }
+%union.anon.274.3184386 = type { i32 }
+%"union.llvm::MachineOperand::ContentsUnion.3184387" = type { %"class.llvm::ArrayRef.275.3184388" }
+%"class.llvm::ArrayRef.275.3184388" = type { ptr, i64 }
+
+; 10 occurrences:
 ; libquic/optimized/v3_utl.c.ll
-; llvm/optimized/AliasAnalysis.cpp.ll
 ; llvm/optimized/AsmMatcherEmitter.cpp.ll
-; llvm/optimized/Attributes.cpp.ll
-; llvm/optimized/BasicAliasAnalysis.cpp.ll
 ; llvm/optimized/ClangDiagnosticsEmitter.cpp.ll
-; llvm/optimized/CommandLine.cpp.ll
 ; llvm/optimized/DIExpressionOptimizer.cpp.ll
 ; llvm/optimized/DbgEntityHistoryCalculator.cpp.ll
-; llvm/optimized/Driver.cpp.ll
-; llvm/optimized/Expr.cpp.ll
-; llvm/optimized/InstructionCombining.cpp.ll
 ; llvm/optimized/LazyCallGraph.cpp.ll
-; llvm/optimized/LiveDebugVariables.cpp.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
-; llvm/optimized/OpenMPClause.cpp.ll
-; llvm/optimized/Reassociate.cpp.ll
-; llvm/optimized/ScalarEvolution.cpp.ll
-; llvm/optimized/SemaDecl.cpp.ll
-; llvm/optimized/SemaDeclAttr.cpp.ll
-; llvm/optimized/StmtPrinter.cpp.ll
-; llvm/optimized/StructurizeCFG.cpp.ll
-; llvm/optimized/X86EncodingOptimization.cpp.ll
 ; openssl/optimized/libcrypto-lib-v3_utl.ll
 ; openssl/optimized/libcrypto-shlib-v3_utl.ll
 ; stockfish/optimized/search.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002a1(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000005c1(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %0, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 1
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 1
   %5 = getelementptr nusw i8, ptr %0, i64 %1
   %6 = icmp eq ptr %5, %4
   ret i1 %6
 }
 
-; 21 occurrences:
+; 28 occurrences:
 ; actix-rs/optimized/5k5ycrtlwwxldg7.ll
 ; coreutils-rs/optimized/1nj6h5colnkxfn01.ll
 ; coreutils-rs/optimized/4il3dwdvn9kvvj4p.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; delta-rs/optimized/5c4w4ukc3cdb4cwa.ll
+; egg-rs/optimized/2fp1d0strj8iokyf.ll
 ; image-rs/optimized/5oy2v8fghrh79s8.ll
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; meilisearch-rs/optimized/2vln1wcrdf8krbw1.ll
@@ -60,8 +49,14 @@ entry:
 ; rust-analyzer-rs/optimized/mucn4qgqdg2891h.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; typst-rs/optimized/5antv5sfgwt5l2ke.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/35jcvzd99rtsbpw1ntju6vgpx.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/cgceu28znx3lfd8ddk7c9uglp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002ac(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000054c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %0, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -1
@@ -85,14 +80,9 @@ entry:
   ret i1 %6
 }
 
-; 62 occurrences:
-; cmake/optimized/fse_compress.c.ll
-; cmake/optimized/huf_compress.c.ll
-; cmake/optimized/zstd_compress_sequences.c.ll
-; cmake/optimized/zstd_fast.c.ll
+; 52 occurrences:
 ; hdf5/optimized/H5HLcache.c.ll
 ; imgui/optimized/imgui.cpp.ll
-; lz4/optimized/lz4.c.ll
 ; openjdk/optimized/archiveHeapLoader.ll
 ; openjdk/optimized/archiveHeapWriter.ll
 ; openjdk/optimized/bfsClosure.ll
@@ -118,7 +108,6 @@ entry:
 ; openjdk/optimized/mlib_ImageAffine_BC_F32.ll
 ; openjdk/optimized/mlib_ImageAffine_BC_S32.ll
 ; openjdk/optimized/mlib_c_ImageAffine_BC.ll
-; openjdk/optimized/nmethod.ll
 ; openjdk/optimized/parMarkBitMap.ll
 ; openjdk/optimized/psCardTable.ll
 ; openjdk/optimized/psCompactionManager.ll
@@ -144,12 +133,8 @@ entry:
 ; openjdk/optimized/zVerify.ll
 ; openusd/optimized/lz4.cpp.ll
 ; yosys/optimized/lz4.ll
-; zstd/optimized/fse_compress.c.ll
-; zstd/optimized/huf_compress.c.ll
-; zstd/optimized/zstd_compress_sequences.c.ll
-; zstd/optimized/zstd_fast.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002a8(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000548(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw float, ptr %0, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -4
@@ -158,16 +143,36 @@ entry:
   ret i1 %6
 }
 
-; 82 occurrences:
-; cmake/optimized/zstd_double_fast.c.ll
-; cmake/optimized/zstd_lazy.c.ll
-; cmake/optimized/zstd_ldm.c.ll
-; cmake/optimized/zstd_opt.c.ll
+; 5 occurrences:
 ; glog/optimized/signalhandler.cc.ll
 ; hermes/optimized/APInt.cpp.ll
+; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; openjdk/optimized/attachListener_posix.ll
+; z3/optimized/nnf.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000764(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
+  %4 = getelementptr nusw i8, ptr %3, i64 -1
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %6 = icmp ult ptr %5, %4
+  ret i1 %6
+}
+
+; 1 occurrences:
+; openjdk/optimized/cardTableRS.ll
+; Function Attrs: nounwind
+define i1 @func00000000000005c4(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %0, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 1
+  %5 = getelementptr nusw i8, ptr %0, i64 %1
+  %6 = icmp ult ptr %5, %4
+  ret i1 %6
+}
+
+; 64 occurrences:
 ; lightgbm/optimized/network.cpp.ll
-; lightgbm/optimized/sample_strategy.cpp.ll
-; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTImporterLookupTable.cpp.ll
 ; llvm/optimized/ASTMatchFinder.cpp.ll
@@ -187,7 +192,6 @@ entry:
 ; llvm/optimized/IndexBody.cpp.ll
 ; llvm/optimized/InterfaceStubFunctionsConsumer.cpp.ll
 ; llvm/optimized/LocalizationChecker.cpp.ll
-; llvm/optimized/MCPseudoProbe.cpp.ll
 ; llvm/optimized/NoUncountedMembersChecker.cpp.ll
 ; llvm/optimized/ObjCMT.cpp.ll
 ; llvm/optimized/ObjCMissingSuperCallChecker.cpp.ll
@@ -196,7 +200,6 @@ entry:
 ; llvm/optimized/ParentMapContext.cpp.ll
 ; llvm/optimized/ReachableCode.cpp.ll
 ; llvm/optimized/RefCntblBaseVirtualDtorChecker.cpp.ll
-; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/SemaAvailability.cpp.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
 ; llvm/optimized/SemaDeclAttr.cpp.ll
@@ -230,36 +233,92 @@ entry:
 ; llvm/optimized/UncountedLocalVarsChecker.cpp.ll
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
-; lz4/optimized/lz4.c.ll
 ; opencc/optimized/louds-trie.cc.ll
-; openjdk/optimized/attachListener_posix.ll
-; openjdk/optimized/cardTableRS.ll
 ; openjdk/optimized/nmethod.ll
 ; openusd/optimized/lz4.cpp.ll
-; z3/optimized/nnf.cpp.ll
-; zstd/optimized/zstd_double_fast.c.ll
-; zstd/optimized/zstd_lazy.c.ll
-; zstd/optimized/zstd_ldm.c.ll
-; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002a4(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000544(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %0, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 -1
+  %4 = getelementptr nusw i8, ptr %3, i64 -16
   %5 = getelementptr nusw i8, ptr %0, i64 %1
   %6 = icmp ult ptr %5, %4
   ret i1 %6
 }
 
 ; 1 occurrences:
+; openjdk/optimized/nmethod.ll
+; Function Attrs: nounwind
+define i1 @func00000000000007c8(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 5
+  %5 = getelementptr nusw i8, ptr %0, i64 %1
+  %6 = icmp ugt ptr %5, %4
+  ret i1 %6
+}
+
+; 40 occurrences:
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/copy_segment_point.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/difference_pl_pl.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/get_ring.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/intersection_pl_pl.ll
+; boost/optimized/partition.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/union_pl_pl.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
+; boost/optimized/write_dsv.ll
+; hermes/optimized/CommandLine.cpp.ll
+; llvm/optimized/Attributes.cpp.ll
+; llvm/optimized/Expr.cpp.ll
+; llvm/optimized/OpenMPClause.cpp.ll
+; llvm/optimized/StmtPrinter.cpp.ll
 ; quantlib/optimized/lfmprocess.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003b1(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000007e1(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw nuw double, ptr %0, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 8
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 8
   %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
   %6 = icmp eq ptr %5, %4
+  ret i1 %6
+}
+
+; 2 occurrences:
+; lightgbm/optimized/sample_strategy.cpp.ll
+; lz4/optimized/lz4.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000744(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i32, ptr %0, i64 %2
+  %4 = getelementptr nusw i8, ptr %3, i64 -4
+  %5 = getelementptr nusw i32, ptr %0, i64 %1
+  %6 = icmp ult ptr %5, %4
   ret i1 %6
 }
 
@@ -267,10 +326,109 @@ entry:
 ; hdf5/optimized/H5Osdspace.c.ll
 ; redis/optimized/zipmap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000068(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -1
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %6 = icmp ugt ptr %5, %4
+  ret i1 %6
+}
+
+; 4 occurrences:
+; eastl/optimized/TestExtra.cpp.ll
+; llvm/optimized/AliasAnalysis.cpp.ll
+; llvm/optimized/BasicAliasAnalysis.cpp.ll
+; llvm/optimized/LoopStrengthReduce.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000541(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw %"class.llvm::Use.3138418", ptr %0, i64 %2
+  %4 = getelementptr nusw i8, ptr %3, i64 -32
+  %5 = getelementptr nusw %"class.llvm::Use.3138418", ptr %0, i64 %1
+  %6 = icmp eq ptr %5, %4
+  ret i1 %6
+}
+
+; 10 occurrences:
+; cmake/optimized/zstd_double_fast.c.ll
+; cmake/optimized/zstd_lazy.c.ll
+; cmake/optimized/zstd_ldm.c.ll
+; cmake/optimized/zstd_opt.c.ll
+; llvm/optimized/APInt.cpp.ll
+; llvm/optimized/MCPseudoProbe.cpp.ll
+; zstd/optimized/zstd_double_fast.c.ll
+; zstd/optimized/zstd_lazy.c.ll
+; zstd/optimized/zstd_ldm.c.ll
+; zstd/optimized/zstd_opt.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000564(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %0, i64 %2
+  %4 = getelementptr nusw i8, ptr %3, i64 -1
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %6 = icmp ult ptr %5, %4
+  ret i1 %6
+}
+
+; 9 occurrences:
+; llvm/optimized/CommandLine.cpp.ll
+; llvm/optimized/Driver.cpp.ll
+; llvm/optimized/InstructionCombining.cpp.ll
+; llvm/optimized/LiveDebugVariables.cpp.ll
+; llvm/optimized/Reassociate.cpp.ll
+; llvm/optimized/ScalarEvolution.cpp.ll
+; llvm/optimized/SemaDecl.cpp.ll
+; llvm/optimized/SemaDeclAttr.cpp.ll
+; llvm/optimized/X86EncodingOptimization.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000007c1(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw %"class.llvm::MachineOperand.3184385", ptr %0, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 32
+  %5 = getelementptr nusw %"class.llvm::MachineOperand.3184385", ptr %0, i64 %1
+  %6 = icmp eq ptr %5, %4
+  ret i1 %6
+}
+
+; 1 occurrences:
+; llvm/optimized/StructurizeCFG.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000761(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw ptr, ptr %0, i64 %2
+  %4 = getelementptr nusw i8, ptr %3, i64 -8
+  %5 = getelementptr nusw nuw ptr, ptr %0, i64 %1
+  %6 = icmp eq ptr %5, %4
+  ret i1 %6
+}
+
+; 8 occurrences:
+; cmake/optimized/fse_compress.c.ll
+; cmake/optimized/huf_compress.c.ll
+; cmake/optimized/zstd_compress_sequences.c.ll
+; cmake/optimized/zstd_fast.c.ll
+; zstd/optimized/fse_compress.c.ll
+; zstd/optimized/huf_compress.c.ll
+; zstd/optimized/zstd_compress_sequences.c.ll
+; zstd/optimized/zstd_fast.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000568(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %0, i64 %2
+  %4 = getelementptr nusw i8, ptr %3, i64 -8
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %6 = icmp ugt ptr %5, %4
+  ret i1 %6
+}
+
+; 1 occurrences:
+; lz4/optimized/lz4.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000748(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
+  %4 = getelementptr nusw i8, ptr %3, i64 -32
   %5 = getelementptr nusw i8, ptr %0, i64 %1
   %6 = icmp ugt ptr %5, %4
   ret i1 %6

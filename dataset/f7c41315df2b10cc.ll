@@ -11,7 +11,7 @@ entry:
   ret i32 %5
 }
 
-; 62 occurrences:
+; 59 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/blocksort.c.ll
 ; clamav/optimized/Ppmd7.c.ll
@@ -23,7 +23,6 @@ entry:
 ; cvc5/optimized/soi_simplex.cpp.ll
 ; darktable/optimized/introspection_blurs.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
-; gromacs/optimized/slasq5.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hdf5/optimized/H5Tinit_float.c.ll
 ; icu/optimized/decNumber.ll
@@ -38,7 +37,6 @@ entry:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/pickpointsDialog.cpp.ll
 ; meshlab/optimized/qualitymapperdialog.cpp.ll
-; oiio/optimized/imagecache.cpp.ll
 ; openblas/optimized/dorgql.c.ll
 ; openblas/optimized/dpbtrf.c.ll
 ; openblas/optimized/dsbgst.c.ll
@@ -66,7 +64,6 @@ entry:
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wireshark/optimized/packet-ssh.c.ll
 ; wireshark/optimized/packet-wccp.c.ll
-; wireshark/optimized/packet-ymsg.c.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; wolfssl/optimized/pkcs12.c.ll
 ; wolfssl/optimized/sp_int.c.ll
@@ -94,11 +91,11 @@ entry:
 ; gromacs/optimized/slasda.cpp.ll
 ; icu/optimized/double-conversion-bignum.ll
 ; libquic/optimized/url_parse.cc.ll
+; lvgl/optimized/lv_slider.ll
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
 ; oiio/optimized/exrinput.cpp.ll
 ; oiio/optimized/exroutput.cpp.ll
-; oiio/optimized/imagecache.cpp.ll
 ; oiio/optimized/tiffinput.cpp.ll
 ; oiio/optimized/tiffoutput.cpp.ll
 ; openblas/optimized/dgbbrd.c.ll
@@ -131,9 +128,7 @@ entry:
   ret i32 %5
 }
 
-; 9 occurrences:
-; gromacs/optimized/dlasd0.cpp.ll
-; gromacs/optimized/slasd0.cpp.ll
+; 7 occurrences:
 ; llvm/optimized/SampleProfileMatcher.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; openblas/optimized/dlasd0.c.ll
@@ -398,6 +393,26 @@ entry:
   ret i32 %5
 }
 
+; 10 occurrences:
+; linux/optimized/skbuff.ll
+; lvgl/optimized/lv_draw_label.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
+; meshlab/optimized/glarea.cpp.ll
+; openblas/optimized/dlaqr0.c.ll
+; openblas/optimized/dlaqr4.c.ll
+; openblas/optimized/dorbdb.c.ll
+; openblas/optimized/dsptri.c.ll
+; wireshark/optimized/packet-icmpv6.c.ll
+; wireshark/optimized/packet-rtcp.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub i32 %1, %2
+  %4 = add nsw i32 %0, -1
+  %5 = add i32 %4, %3
+  ret i32 %5
+}
+
 ; 1 occurrences:
 ; llvm/optimized/SampleProfileMatcher.cpp.ll
 ; Function Attrs: nounwind
@@ -431,24 +446,6 @@ define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = add nuw nsw i32 %0, 1
-  %5 = add i32 %4, %3
-  ret i32 %5
-}
-
-; 8 occurrences:
-; linux/optimized/skbuff.ll
-; meshlab/optimized/glarea.cpp.ll
-; openblas/optimized/dlaqr0.c.ll
-; openblas/optimized/dlaqr4.c.ll
-; openblas/optimized/dorbdb.c.ll
-; openblas/optimized/dsptri.c.ll
-; wireshark/optimized/packet-icmpv6.c.ll
-; wireshark/optimized/packet-rtcp.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add i32 %2, 6
-  %4 = sub nsw i32 %0, %1
   %5 = add i32 %4, %3
   ret i32 %5
 }

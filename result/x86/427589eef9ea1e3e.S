@@ -1,8 +1,8 @@
-func0000000000000020:                   # @func0000000000000020
+func0000000000000030:                   # @func0000000000000030
 	andl	$7, %edi
 	leaq	12(%rsi,%rdi,4), %rax
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000003f:                   # @func000000000000003f
 	andl	$31, %edi
 	leaq	(%rdi,%rdi,4), %rax
 	leaq	40(%rsi,%rax,8), %rax

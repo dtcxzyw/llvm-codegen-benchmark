@@ -4,7 +4,7 @@
 ; hyperscan/optimized/repeat.c.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp uge i32 %0, %1
   %4 = icmp eq i32 %2, %0

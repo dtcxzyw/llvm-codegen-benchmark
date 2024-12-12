@@ -16,11 +16,11 @@
 ; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
 ; duckdb/optimized/ub_duckdb_value_operations.cpp.ll
+; lvgl/optimized/lv_area.ll
 ; ncnn/optimized/lstm_x86_avx512.cpp.ll
 ; ncnn/optimized/lstm_x86_avx512vnni.cpp.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; openjdk/optimized/os.ll
-; php/optimized/engine_combinedlcg.ll
 ; postgres/optimized/formatting.ll
 ; postgres/optimized/interval.ll
 ; wireshark/optimized/k12text.c.ll

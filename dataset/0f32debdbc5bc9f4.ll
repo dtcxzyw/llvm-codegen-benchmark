@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; assimp/optimized/clipper.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 29
   %4 = ashr i64 %3, 32
@@ -18,7 +18,7 @@ entry:
 ; openspiel/optimized/oh_hell.cc.ll
 ; openusd/optimized/patchTree.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
@@ -32,7 +32,7 @@ entry:
 ; gromacs/optimized/coordstate.cpp.ll
 ; openspiel/optimized/trajectories_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 26
   %4 = ashr i64 %3, 32
@@ -46,7 +46,7 @@ entry:
 ; gromacs/optimized/params.cpp.ll
 ; postgres/optimized/tsrank.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000066(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
@@ -63,7 +63,7 @@ entry:
 ; openspiel/optimized/efcce.cc.ll
 ; openspiel/optimized/oh_hell.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
@@ -76,7 +76,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/feature2d.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
@@ -89,7 +89,7 @@ entry:
 ; 1 occurrences:
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003b(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000006b(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32

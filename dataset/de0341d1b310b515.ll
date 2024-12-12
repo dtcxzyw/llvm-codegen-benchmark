@@ -1,17 +1,13 @@
 
-; 12 occurrences:
-; abseil-cpp/optimized/charconv_parse.cc.ll
+; 8 occurrences:
 ; cmake/optimized/archive_string.c.ll
 ; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
 ; llvm/optimized/NamedStreamMap.cpp.ll
 ; llvm/optimized/PDBFileBuilder.cpp.ll
-; llvm/optimized/X86InterleavedAccess.cpp.ll
 ; opencv/optimized/scansegment.cpp.ll
 ; opencv/optimized/slice_layer.cpp.ll
 ; opencv/optimized/tree.cpp.ll
 ; openssl/optimized/openssl-bin-engine.ll
-; protobuf/optimized/generated_message_tctable_lite.cc.ll
-; slurm/optimized/hostlist.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000a(i32 %0, i64 %1) #0 {
 entry:
@@ -36,7 +32,7 @@ entry:
 ; openjdk/optimized/IntRgbx.ll
 ; openjdk/optimized/ThreeByteBgr.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000002a(i32 %0, i64 %1) #0 {
+define i32 @func000000000000004a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = icmp sgt i32 %2, 0
@@ -44,14 +40,12 @@ entry:
   ret i32 %4
 }
 
-; 8 occurrences:
+; 6 occurrences:
 ; linux/optimized/intel_display_power.ll
 ; linux/optimized/tcp_timer.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; llvm/optimized/CGOpenMPRuntime.cpp.ll
 ; openjdk/optimized/lcm.ll
-; postgres/optimized/oracle_compat.ll
-; spike/optimized/interactive.ll
 ; wireshark/optimized/packet-nvme.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i64 %1) #0 {
@@ -76,18 +70,16 @@ entry:
   ret i32 %3
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
-; git/optimized/packfile.ll
 ; llvm/optimized/SemaDeclAttr.cpp.ll
-; openmpi/optimized/tm_tree.ll
 ; postgres/optimized/xid.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp ugt i32 %2, 25
-  %4 = select i1 %3, i32 %0, i32 1
+  %3 = icmp ugt i32 %2, 8
+  %4 = select i1 %3, i32 %0, i32 0
   ret i32 %4
 }
 

@@ -37,7 +37,7 @@
 ; z3/optimized/sat_solver.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000004c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
   %4 = icmp slt i64 %3, %1
@@ -45,15 +45,14 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; assimp/optimized/FBXConverter.cpp.ll
 ; cvc5/optimized/sygus_process_conj.cpp.ll
 ; meshlab/optimized/ofbx.cpp.ll
 ; minetest/optimized/CSkinnedMesh.cpp.ll
-; soc-simulator/optimized/verilated.ll
 ; yosys/optimized/extract_counter.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000004a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
   %4 = icmp ule i64 %3, %1
@@ -61,8 +60,7 @@ entry:
   ret i1 %5
 }
 
-; 63 occurrences:
-; annoy/optimized/annoymodule.ll
+; 62 occurrences:
 ; arrow/optimized/caching.cc.ll
 ; arrow/optimized/interfaces.cc.ll
 ; glslang/optimized/linkValidate.cpp.ll
@@ -126,11 +124,11 @@ entry:
 ; taskflow/optimized/visualization.cpp.ll
 ; taskflow/optimized/while_loop.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000032(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000052(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = icmp uge i64 %3, %1
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -153,11 +151,11 @@ entry:
 ; xgboost/optimized/ranking_utils.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000042(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = icmp eq i64 %3, %1
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -170,11 +168,11 @@ entry:
 ; zxing/optimized/DMDetector.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000048(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 5
   %4 = icmp ult i64 %3, %1
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -198,7 +196,7 @@ define i1 @func0000000000000002(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr i64 %2, 62
   %4 = icmp eq i64 %3, %1
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -206,22 +204,21 @@ entry:
 ; cvc5/optimized/quant_conflict_find.cpp.ll
 ; duckdb/optimized/ub_duckdb_optimizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000058(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = icmp ne i64 %3, %1
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; oiio/optimized/sysutil.cpp.ll
 ; opencv/optimized/padding_layer.cpp.ll
 ; openexr/optimized/ImfIDManifest.cpp.ll
 ; openusd/optimized/resolverContext.cpp.ll
-; proj/optimized/factory.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000030(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000050(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = icmp ugt i64 %3, %1
@@ -232,7 +229,7 @@ entry:
 ; 1 occurrences:
 ; recastnavigation/optimized/RecastRegion.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000054(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
   %4 = icmp sgt i64 %3, %1
@@ -243,11 +240,11 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/gmx_bar.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002e(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000004e(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
   %4 = icmp sle i64 %3, %1
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

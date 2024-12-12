@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; llama.cpp/optimized/ggml.c.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
@@ -9,7 +9,6 @@
 ; openblas/optimized/dbdsvdx.c.ll
 ; openblas/optimized/dlagge.c.ll
 ; openblas/optimized/dlahr2.c.ll
-; openblas/optimized/dlaqp2rk.c.ll
 ; openblas/optimized/dorm22.c.ll
 ; openblas/optimized/dsbtrd.c.ll
 ; Function Attrs: nounwind

@@ -115,3 +115,12 @@ func0000000000000004:                   # @func0000000000000004
 	vinserti128	$1, %xmm1, %ymm0, %ymm0
 	vpsrlq	$2, %ymm0, %ymm0
 	retq
+.LCPI6_0:
+	.quad	-144                            # 0xffffffffffffff70
+.LCPI6_1:
+	.quad	-8198552921648689607            # 0x8e38e38e38e38e39
+func0000000000000001:                   # @func0000000000000001
+	vpaddq	.LCPI6_0(%rip){1to4}, %ymm0, %ymm0
+	vpsrlq	$4, %ymm0, %ymm0
+	vpmullq	.LCPI6_1(%rip){1to4}, %ymm0, %ymm0
+	retq

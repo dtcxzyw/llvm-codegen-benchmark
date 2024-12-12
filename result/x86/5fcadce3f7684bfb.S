@@ -21,6 +21,11 @@ func0000000000000008:                   # @func0000000000000008
 func000000000000000c:                   # @func000000000000000c
 	movq	%rdi, %rax
 	retq
+func0000000000000014:                   # @func0000000000000014
+	xorl	%eax, %eax
+	cmpq	$2, %rsi
+	cmovbq	%rdi, %rax
+	retq
 func0000000000000006:                   # @func0000000000000006
 	xorl	%eax, %eax
 	cmpq	$31, %rsi

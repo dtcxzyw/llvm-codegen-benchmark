@@ -60,8 +60,20 @@ entry:
   ret double %4
 }
 
-; 40 occurrences:
+; 52 occurrences:
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; darktable/optimized/introspection_temperature.c.ll
@@ -92,7 +104,6 @@ entry:
 ; openjdk/optimized/cmspcs.ll
 ; openjdk/optimized/cmssamp.ll
 ; openjdk/optimized/freetypeScaler.ll
-; osqp/optimized/scaling.c.ll
 ; postgres/optimized/nodeAgg.ll
 ; quantlib/optimized/gaussianlhplossmodel.ll
 ; stat-rs/optimized/4d9pj14shc9lbmph.ll
@@ -101,6 +112,7 @@ entry:
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; wireshark/optimized/percent_bar_delegate.cpp.ll
 ; wireshark/optimized/wireless_timeline.cpp.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; Function Attrs: nounwind
 define double @func0000000000000002(i1 %0, double %1) #0 {
 entry:

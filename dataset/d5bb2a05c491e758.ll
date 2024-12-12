@@ -1,11 +1,10 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; cpython/optimized/dtoa.ll
 ; freetype/optimized/pshinter.c.ll
 ; linux/optimized/vsprintf.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/RegionStore.cpp.ll
-; llvm/optimized/SemaInit.cpp.ll
 ; redis/optimized/networking.ll
 ; ruby/optimized/util.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll

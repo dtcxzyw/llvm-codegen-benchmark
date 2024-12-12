@@ -79,10 +79,11 @@ func0000000000000003:                   # @func0000000000000003
 	fld	fa0, 0(a0)
 	ret
 .LCPI6_0:
-	.quad	0xbfe0000000000000              # double -0.5
-	.quad	0x3fe0000000000000              # double 0.5
-func000000000000000e:                   # @func000000000000000e
-	feq.d	a0, fa0, fa0
+	.quad	0xc066800000000000              # double -180
+	.quad	0x4066800000000000              # double 180
+func000000000000000a:                   # @func000000000000000a
+	fmv.d.x	fa5, zero
+	fle.d	a0, fa0, fa5
 	slli	a0, a0, 3
 	lui	a1, %hi(.LCPI6_0)
 	addi	a1, a1, %lo(.LCPI6_0)
@@ -90,17 +91,13 @@ func000000000000000e:                   # @func000000000000000e
 	fld	fa0, 0(a0)
 	ret
 .LCPI7_0:
-	.quad	0x3ff0000000000000              # double 1
-.LCPI7_1:
-	.quad	0x3ff0000000000000              # double 1
-	.quad	0x406fe00000000000              # double 255
-func000000000000000a:                   # @func000000000000000a
-	lui	a0, %hi(.LCPI7_0)
-	fld	fa5, %lo(.LCPI7_0)(a0)
-	fle.d	a0, fa0, fa5
+	.quad	0xbfe0000000000000              # double -0.5
+	.quad	0x3fe0000000000000              # double 0.5
+func000000000000000e:                   # @func000000000000000e
+	feq.d	a0, fa0, fa0
 	slli	a0, a0, 3
-	lui	a1, %hi(.LCPI7_1)
-	addi	a1, a1, %lo(.LCPI7_1)
+	lui	a1, %hi(.LCPI7_0)
+	addi	a1, a1, %lo(.LCPI7_0)
 	add	a0, a0, a1
 	fld	fa0, 0(a0)
 	ret

@@ -8,5 +8,5 @@ func0000000000000025:                   # @func0000000000000025
 	movb	$9, %al
 	subb	%dl, %al
 	shrxl	%eax, %esi, %eax
-	leal	128(%rax,%rdi), %eax
+	leal	128(%rdi,%rax), %eax
 	retq

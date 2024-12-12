@@ -12,7 +12,7 @@ entry:
   ret ptr %6
 }
 
-; 26 occurrences:
+; 32 occurrences:
 ; coreutils-rs/optimized/1487bf2zeluccyme.ll
 ; coreutils-rs/optimized/1pz43lsbr7l0inxv.ll
 ; delta-rs/optimized/3e84m8xk6w9g4bb2.ll
@@ -39,6 +39,12 @@ entry:
 ; rust-analyzer-rs/optimized/2z79z3pj3t0p2c2c.ll
 ; rust-analyzer-rs/optimized/4mw28hhoa59adomg.ll
 ; rust-analyzer-rs/optimized/yr8bg0giq9ukis7.ll
+; zed-rs/optimized/064fq8xy3p8h2lnsibc72udr1.ll
+; zed-rs/optimized/2dbu45lers7mkstxlrhw3mc97.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/5jgfm3klpby9utjhkan94f3dk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/dpj3mwjfm2c61mxrpoi279us4.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000004a(ptr %0, i64 %1, i64 %2) #0 {
 entry:

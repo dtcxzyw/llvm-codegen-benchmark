@@ -172,7 +172,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %notmask = shl nsw i64 -1, %3
   %4 = xor i64 %notmask, -1
-  %5 = and i64 %4, %1
+  %5 = and i64 %1, %4
   %6 = sub nuw i64 %5, %0
   ret i64 %6
 }

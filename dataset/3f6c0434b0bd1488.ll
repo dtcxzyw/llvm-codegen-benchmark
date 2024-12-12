@@ -20,7 +20,7 @@ entry:
 ; libwebp/optimized/rescaler.c.ll
 ; libwebp/optimized/rescaler_sse2.c.ll
 ; Function Attrs: nounwind
-define i8 @func000000000000002a(i8 %0, i64 %1) #0 {
+define i8 @func000000000000004a(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = icmp sgt i32 %2, 255

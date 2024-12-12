@@ -1,7 +1,9 @@
 
-; 42 occurrences:
+; 44 occurrences:
 ; linux/optimized/hid-input.ll
 ; linux/optimized/mballoc.ll
+; lvgl/optimized/lv_draw_sw_line.ll
+; lvgl/optimized/lv_roller.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
 ; ncnn/optimized/convolution_x86_avx2.cpp.ll
@@ -50,13 +52,16 @@ entry:
   ret i32 %3
 }
 
-; 20 occurrences:
+; 23 occurrences:
 ; abc/optimized/bmcFault.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; abc/optimized/giaPack.c.ll
 ; darktable/optimized/RawImageDataU16.cpp.ll
 ; libjpeg-turbo/optimized/tjunittest.c.ll
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
+; lvgl/optimized/lv_image.ll
 ; ncnn/optimized/quantize_x86.cpp.ll
 ; ncnn/optimized/quantize_x86_avx.cpp.ll
 ; ncnn/optimized/quantize_x86_avx512.cpp.ll
@@ -79,23 +84,24 @@ entry:
   ret i32 %3
 }
 
+; 3 occurrences:
+; linux/optimized/drm_dsc_helper.ll
+; linux/optimized/intel_vdsc.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl nuw nsw i32 %1, 6
+  %3 = sdiv i32 %2, %0
+  ret i32 %3
+}
+
 ; 1 occurrences:
 ; linux/optimized/intel_overlay.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 16
-  %3 = sdiv i32 %2, %0
-  ret i32 %3
-}
-
-; 2 occurrences:
-; linux/optimized/drm_dsc_helper.ll
-; linux/optimized/intel_vdsc.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl nuw nsw i32 %1, 3
   %3 = sdiv i32 %2, %0
   ret i32 %3
 }

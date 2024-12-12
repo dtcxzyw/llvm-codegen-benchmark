@@ -4,9 +4,9 @@
 ; git/optimized/convert.ll
 ; git/optimized/show-branch.ll
 ; icu/optimized/pkg_gencmn.ll
-; libquic/optimized/hexdump.c.ll
 ; libquic/optimized/quic_utils.cc.ll
 ; lief/optimized/x509.c.ll
+; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/NullabilityChecker.cpp.ll
 ; openjdk/optimized/compilationPolicy.ll
 ; postgres/optimized/cash.ll

@@ -1,6 +1,7 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; abc/optimized/abc.c.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; casadi/optimized/idas.c.ll
 ; icu/optimized/unisetspan.ll
 ; libquic/optimized/buffer.c.ll
@@ -14,7 +15,7 @@
 ; sundials/optimized/ida.c.ll
 ; sundials/optimized/idas.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, %2
   %4 = select i1 %0, i1 true, i1 %3
@@ -24,7 +25,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/net_checksum.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = icmp ult i32 %3, 8
@@ -32,7 +33,7 @@ entry:
   ret i1 %5
 }
 
-; 34 occurrences:
+; 35 occurrences:
 ; abc/optimized/darLib.c.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; ceres/optimized/coordinate_descent_minimizer.cc.ll
@@ -40,6 +41,7 @@ entry:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; icu/optimized/dictbe.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
+; lvgl/optimized/lv_span.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshoptimizer/optimized/overdrawanalyzer.cpp.ll
 ; meshoptimizer/optimized/simplifier.cpp.ll
@@ -68,7 +70,7 @@ entry:
 ; pocketpy/optimized/array2d.cpp.ll
 ; tev/optimized/ImageCanvas.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sle i32 %1, %2
   %4 = select i1 %0, i1 true, i1 %3
@@ -97,7 +99,8 @@ entry:
   ret i1 %5
 }
 
-; 15 occurrences:
+; 16 occurrences:
+; boost/optimized/area.ll
 ; cmake/optimized/divsufsort.c.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; git/optimized/xmerge.ll
@@ -114,7 +117,7 @@ entry:
 ; wireshark/optimized/tap-rtp-analysis.c.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = icmp sgt i32 %3, 65535
@@ -125,7 +128,7 @@ entry:
 ; 1 occurrences:
 ; flac/optimized/picture.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, %2
   %4 = select i1 %0, i1 true, i1 %3
@@ -136,14 +139,14 @@ entry:
 ; git/optimized/dir.ll
 ; zxing/optimized/DMHighLevelEncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %1, %2
   %4 = select i1 %0, i1 true, i1 %3
   ret i1 %4
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; kcp/optimized/ikcp.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/hid-input.ll
@@ -154,7 +157,6 @@ entry:
 ; openusd/optimized/AVIFImage.cpp.ll
 ; openusd/optimized/OpenEXRImage.cpp.ll
 ; pocketpy/optimized/array2d.cpp.ll
-; postgres/optimized/geqo_pool.ll
 ; postgres/optimized/multixact.ll
 ; quickjs/optimized/quickjs.ll
 ; wolfssl/optimized/internal.c.ll
@@ -171,7 +173,7 @@ entry:
 ; llvm/optimized/TokenLexer.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = icmp ugt i32 %3, 50
@@ -194,11 +196,10 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; brotli/optimized/compound_dictionary.c.ll
+; 1 occurrences:
 ; llvm/optimized/LinePrinter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000048(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw i32 %1, %2
   %4 = icmp ugt i32 %3, 1
@@ -210,7 +211,7 @@ entry:
 ; wireshark/optimized/netscaler.c.ll
 ; wireshark/optimized/packet-kerberos.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000044(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw i32 %1, %2
   %4 = icmp ult i32 %3, 16
@@ -218,15 +219,14 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; hyperscan/optimized/rose_build_add_mask.cpp.ll
 ; linux/optimized/tcp_input.ll
-; wireshark/optimized/packet-ipsec-tcp.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
-  %4 = icmp ugt i32 %3, 3
+  %4 = icmp ugt i32 %3, 3775
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }

@@ -1,6 +1,6 @@
 
-%"struct.std::atomic.29.2510618" = type { %"struct.std::__atomic_base.30.2510619" }
-%"struct.std::__atomic_base.30.2510619" = type { ptr }
+%"struct.std::atomic.29.2625758" = type { %"struct.std::__atomic_base.30.2625759" }
+%"struct.std::__atomic_base.30.2625759" = type { ptr }
 
 ; 4 occurrences:
 ; qemu/optimized/accel_tcg_cpu-exec.c.ll
@@ -64,7 +64,18 @@ define ptr @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %1
   %3 = inttoptr i64 %0 to ptr
-  %4 = getelementptr nusw %"struct.std::atomic.29.2510618", ptr %3, i64 %2
+  %4 = getelementptr nusw %"struct.std::atomic.29.2625758", ptr %3, i64 %2
+  ret ptr %4
+}
+
+; 1 occurrences:
+; rocksdb/optimized/skiplistrep.cc.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub nsw i64 1, %1
+  %3 = inttoptr i64 %0 to ptr
+  %4 = getelementptr nusw nuw %"struct.std::atomic.29.2625758", ptr %3, i64 %2
   ret ptr %4
 }
 

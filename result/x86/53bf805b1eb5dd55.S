@@ -13,6 +13,12 @@ func000000000000000b:                   # @func000000000000000b
 	movzbl	%sil, %eax
 	leal	(%rdi,%rax,2), %eax
 	retq
+func0000000000000000:                   # @func0000000000000000
+	shlb	$5, %sil
+	andb	$-128, %sil
+	movzbl	%sil, %eax
+	orl	%edi, %eax
+	retq
 func0000000000000002:                   # @func0000000000000002
 	shlb	$3, %sil
 	andb	$8, %sil

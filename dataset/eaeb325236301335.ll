@@ -1,5 +1,5 @@
 
-; 1892 occurrences:
+; 1881 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
@@ -58,17 +58,17 @@
 ; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; brotli/optimized/decode.c.ll
 ; brotli/optimized/static_dict.c.ll
 ; c3c/optimized/sema_expr.c.ll
 ; c3c/optimized/sema_initializers.c.ll
 ; chibicc/optimized/type.ll
 ; clamav/optimized/7zCrc.c.ll
-; clamav/optimized/XzCrc64.c.ll
 ; clamav/optimized/arc4.c.ll
 ; clamav/optimized/autoit.c.ll
 ; clamav/optimized/bytecode_vm.c.ll
-; clamav/optimized/crc.cpp.ll
 ; clamav/optimized/crypt.cpp.ll
 ; clamav/optimized/dsig.c.ll
 ; clamav/optimized/ishield.c.ll
@@ -105,7 +105,6 @@
 ; cmake/optimized/noproxy.c.ll
 ; cmake/optimized/strcase.c.ll
 ; cmake/optimized/vtls.c.ll
-; coremark/optimized/core_util.c.ll
 ; coreutils-rs/optimized/yeky3kbm8zdu7bp.ll
 ; cpython/optimized/_operator.ll
 ; cpython/optimized/bytearrayobject.ll
@@ -192,7 +191,6 @@
 ; graphviz/optimized/ortho.c.ll
 ; graphviz/optimized/position.c.ll
 ; gromacs/optimized/crc32.c.ll
-; gromacs/optimized/densityfittingparameters.cpp.ll
 ; gromacs/optimized/gmx_wham.cpp.ll
 ; gromacs/optimized/hardwaretopology.cpp.ll
 ; gromacs/optimized/index.cpp.ll
@@ -252,9 +250,11 @@
 ; icu/optimized/decNumber.ll
 ; icu/optimized/number_decimfmtprops.ll
 ; icu/optimized/number_modifiers.ll
+; icu/optimized/parse.ll
 ; icu/optimized/plurrule.ll
 ; icu/optimized/rbbi.ll
 ; icu/optimized/rematch.ll
+; icu/optimized/smpdtfmt.ll
 ; icu/optimized/ubidi.ll
 ; icu/optimized/wrtxml.ll
 ; imgui/optimized/imgui.cpp.ll
@@ -283,12 +283,10 @@
 ; libquic/optimized/ip_address.cc.ll
 ; libquic/optimized/mem.c.ll
 ; libquic/optimized/padding.c.ll
-; libquic/optimized/pbkdf.c.ll
 ; libquic/optimized/quic_protocol.cc.ll
 ; libquic/optimized/quic_received_packet_manager.cc.ll
 ; libquic/optimized/quic_sent_entropy_manager.cc.ll
 ; libquic/optimized/rand.c.ll
-; libquic/optimized/reliable_quic_stream.cc.ll
 ; libquic/optimized/spake25519_test.cc.ll
 ; libquic/optimized/spdy_framer_decoder_adapter.cc.ll
 ; libquic/optimized/ssl_aead_ctx.c.ll
@@ -299,12 +297,8 @@
 ; libquic/optimized/x25519-x86_64.c.ll
 ; libsodium/optimized/libavx2_la-chacha20_dolbeau-avx2.ll
 ; libsodium/optimized/libavx2_la-salsa20_xmm6int-avx2.ll
-; libsodium/optimized/librdrand_la-randombytes_internal_random.ll
 ; libsodium/optimized/libsodium_la-core_h2c.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
-; libsodium/optimized/libsodium_la-secretstream_xchacha20poly1305.ll
-; libsodium/optimized/libsodium_la-stream_salsa2012_ref.ll
-; libsodium/optimized/libsodium_la-stream_salsa208_ref.ll
 ; libsodium/optimized/libsodium_la-utils.ll
 ; libsodium/optimized/libsodium_la-x25519_ref10.ll
 ; libsodium/optimized/libssse3_la-chacha20_dolbeau-ssse3.ll
@@ -351,7 +345,6 @@
 ; linux/optimized/crc-ccitt.ll
 ; linux/optimized/crc16.ll
 ; linux/optimized/fib_semantics.ll
-; linux/optimized/ghash-generic.ll
 ; linux/optimized/gro.ll
 ; linux/optimized/i2c-algo-bit.ll
 ; linux/optimized/i2c-core-smbus.ll
@@ -716,7 +709,6 @@
 ; llvm/optimized/RISCVAsmBackend.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertReadWriteCSR.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstPrinter.cpp.ll
@@ -978,6 +970,7 @@
 ; luau/optimized/Variant.test.cpp.ll
 ; luau/optimized/VecDeque.test.cpp.ll
 ; luau/optimized/lstring.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; memcached/optimized/crc32c.ll
 ; memcached/optimized/memcached-crc32c.ll
@@ -1256,9 +1249,7 @@
 ; openssl/optimized/libcrypto-lib-a_int.ll
 ; openssl/optimized/libcrypto-lib-aes_ige.ll
 ; openssl/optimized/libcrypto-lib-bf_cfb64.ll
-; openssl/optimized/libcrypto-lib-bf_ofb64.ll
 ; openssl/optimized/libcrypto-lib-c_cfb64.ll
-; openssl/optimized/libcrypto-lib-c_ofb64.ll
 ; openssl/optimized/libcrypto-lib-cbc128.ll
 ; openssl/optimized/libcrypto-lib-ccm128.ll
 ; openssl/optimized/libcrypto-lib-cfb128.ll
@@ -1276,8 +1267,6 @@
 ; openssl/optimized/libcrypto-lib-gcm128.ll
 ; openssl/optimized/libcrypto-lib-hpke.ll
 ; openssl/optimized/libcrypto-lib-ocb128.ll
-; openssl/optimized/libcrypto-lib-ofb64ede.ll
-; openssl/optimized/libcrypto-lib-ofb64enc.ll
 ; openssl/optimized/libcrypto-lib-params.ll
 ; openssl/optimized/libcrypto-lib-rc2_skey.ll
 ; openssl/optimized/libcrypto-lib-rsa_oaep.ll
@@ -1292,9 +1281,7 @@
 ; openssl/optimized/libcrypto-shlib-a_int.ll
 ; openssl/optimized/libcrypto-shlib-aes_ige.ll
 ; openssl/optimized/libcrypto-shlib-bf_cfb64.ll
-; openssl/optimized/libcrypto-shlib-bf_ofb64.ll
 ; openssl/optimized/libcrypto-shlib-c_cfb64.ll
-; openssl/optimized/libcrypto-shlib-c_ofb64.ll
 ; openssl/optimized/libcrypto-shlib-cbc128.ll
 ; openssl/optimized/libcrypto-shlib-ccm128.ll
 ; openssl/optimized/libcrypto-shlib-cfb128.ll
@@ -1312,8 +1299,6 @@
 ; openssl/optimized/libcrypto-shlib-gcm128.ll
 ; openssl/optimized/libcrypto-shlib-hpke.ll
 ; openssl/optimized/libcrypto-shlib-ocb128.ll
-; openssl/optimized/libcrypto-shlib-ofb64ede.ll
-; openssl/optimized/libcrypto-shlib-ofb64enc.ll
 ; openssl/optimized/libcrypto-shlib-params.ll
 ; openssl/optimized/libcrypto-shlib-rc2_skey.ll
 ; openssl/optimized/libcrypto-shlib-rsa_oaep.ll
@@ -1334,7 +1319,6 @@
 ; openssl/optimized/libdefault-lib-cipher_cts.ll
 ; openssl/optimized/libdefault-lib-drbg_ctr.ll
 ; openssl/optimized/libdefault-lib-pbkdf2.ll
-; openssl/optimized/libdefault-lib-seed_src.ll
 ; openssl/optimized/libdefault-lib-tls1_prf.ll
 ; openssl/optimized/libssl-lib-quic_record_rx.ll
 ; openssl/optimized/libssl-lib-quic_record_tx.ll
@@ -1482,12 +1466,10 @@
 ; php/optimized/KeccakSponge.ll
 ; php/optimized/crc32.ll
 ; php/optimized/crypt_freesec.ll
-; php/optimized/hash_crc32.ll
 ; php/optimized/hash_md.ll
 ; php/optimized/ir.ll
 ; php/optimized/ir_emit.ll
 ; php/optimized/pcre2_jit_compile.ll
-; php/optimized/safe_bcmp.ll
 ; php/optimized/softmagic.ll
 ; php/optimized/zend_inference.ll
 ; php/optimized/zend_operators.ll
@@ -1556,7 +1538,6 @@
 ; postgres/optimized/xlog.ll
 ; proj/optimized/common.cpp.ll
 ; proj/optimized/datum.cpp.ll
-; proj/optimized/io.cpp.ll
 ; proj/optimized/metadata.cpp.ll
 ; proj/optimized/singleoperation.cpp.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
@@ -1596,14 +1577,11 @@
 ; qemu/optimized/hw_ide_ahci.c.ll
 ; qemu/optimized/hw_net_can_can_sja1000.c.ll
 ; qemu/optimized/hw_net_pcnet.c.ll
-; qemu/optimized/hw_net_tulip.c.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; qemu/optimized/hw_pci_msix.c.ll
 ; qemu/optimized/hw_scsi_lsi53c895a.c.ll
 ; qemu/optimized/hw_scsi_scsi-disk.c.ll
 ; qemu/optimized/hw_vfio_container.c.ll
-; qemu/optimized/hw_virtio_vhost-user-device.c.ll
-; qemu/optimized/hw_virtio_vhost-user-vsock.c.ll
 ; qemu/optimized/hw_virtio_vhost.c.ll
 ; qemu/optimized/hw_virtio_virtio-qmp.c.ll
 ; qemu/optimized/hw_virtio_virtio.c.ll
@@ -1757,7 +1735,6 @@
 ; wireshark/optimized/crc5.c.ll
 ; wireshark/optimized/crc6.c.ll
 ; wireshark/optimized/crc7.c.ll
-; wireshark/optimized/crc8-tvb.c.ll
 ; wireshark/optimized/crc8.c.ll
 ; wireshark/optimized/dot11decrypt.c.ll
 ; wireshark/optimized/dot11decrypt_wep.c.ll
@@ -1790,7 +1767,6 @@
 ; wireshark/optimized/packet-rf4ce-secur.c.ll
 ; wireshark/optimized/packet-snmp.c.ll
 ; wireshark/optimized/packet-solaredge.c.ll
-; wireshark/optimized/packet-stcsig.c.ll
 ; wireshark/optimized/packet-sysex_digitech.c.ll
 ; wireshark/optimized/packet-tacacs.c.ll
 ; wireshark/optimized/packet-tls-utils.c.ll
@@ -1887,6 +1863,19 @@
 ; z3/optimized/smt_quick_checker.cpp.ll
 ; z3/optimized/theory_arith.cpp.ll
 ; z3/optimized/theory_diff_logic.cpp.ll
+; zed-rs/optimized/1jbe4zqf10fi4dnkcvibaggjj.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/5kbsfw3jcmbcslmu1o5kx13w3.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/8x58xp4s22l8izlb56sviitm3.ll
+; zed-rs/optimized/bkz8gk2grsqnr2xbkvtnqlfhe.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
+; zed-rs/optimized/d7h2r6mystjn2jzwcl5ofeoiz.ll
+; zed-rs/optimized/di6vqkr45z5qfxmwsnoq97jcv.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; zlib/optimized/crc32.c.ll
 ; zxing/optimized/BitArray.cpp.ll
 ; zxing/optimized/DMECEncoder.cpp.ll

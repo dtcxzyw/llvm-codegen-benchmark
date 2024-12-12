@@ -1,5 +1,5 @@
 
-; 50 occurrences:
+; 49 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcBm.c.ll
 ; abc/optimized/abcVerify.c.ll
@@ -42,7 +42,6 @@
 ; abc/optimized/sswConstr.c.ll
 ; abc/optimized/sswFilter.c.ll
 ; abc/optimized/sswRarity.c.ll
-; abc/optimized/sswSimSat.c.ll
 ; abc/optimized/wlcAbs.c.ll
 ; abc/optimized/wlcMem.c.ll
 ; hermes/optimized/HiddenClass.cpp.ll

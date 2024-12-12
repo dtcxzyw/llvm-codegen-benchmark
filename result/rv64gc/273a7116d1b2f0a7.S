@@ -40,6 +40,24 @@ func000000000000000d:                   # @func000000000000000d
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
+func000000000000002c:                   # @func000000000000002c
+	andi	a2, a2, 1
+	slli	a2, a2, 1
+	add	a0, a0, a1
+	add	a0, a0, a2
+	ret
+func000000000000002f:                   # @func000000000000002f
+	andi	a2, a2, 1
+	bnez	a2, .LBB6_2
+	li	a2, 2
+	add	a0, a0, a1
+	add	a0, a0, a2
+	ret
+.LBB6_2:
+	li	a2, 4
+	add	a0, a0, a1
+	add	a0, a0, a2
+	ret
 func0000000000000025:                   # @func0000000000000025
 	andi	a2, a2, 1
 	add	a0, a0, a1

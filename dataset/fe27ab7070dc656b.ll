@@ -3,13 +3,13 @@
 ; qemu/optimized/migration_ram.c.ll
 ; ruby/optimized/hash.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000074(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 16
   %3 = and i64 %2, 15
   %4 = lshr i64 %0, 1
   %5 = add nuw nsw i64 %3, %4
-  %6 = icmp ult i64 %5, 9
+  %6 = icmp samesign ult i64 %5, 9
   ret i1 %6
 }
 
@@ -21,13 +21,13 @@ entry:
 ; redis/optimized/hpdata.ll
 ; redis/optimized/hpdata.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000078(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 12
   %3 = and i64 %2, 4294967295
   %4 = lshr i64 %0, 12
   %5 = add nuw nsw i64 %3, %4
-  %6 = icmp ugt i64 %5, 4294967295
+  %6 = icmp samesign ugt i64 %5, 4294967295
   ret i1 %6
 }
 

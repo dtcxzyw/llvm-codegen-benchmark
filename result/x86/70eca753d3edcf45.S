@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	addq	%rdx, %rdi
 	subq	%rdi, %rsi
 	andq	$-4, %rsi
@@ -11,48 +11,41 @@ func000000000000000c:                   # @func000000000000000c
 	subl	%edx, %eax
 	andb	$1, %al
 	retq
-func000000000000007c:                   # @func000000000000007c
+func00000000000000ec:                   # @func00000000000000ec
 	movq	%rsi, %rax
 	addl	%edi, %edx
 	subl	%edx, %eax
 	andb	$1, %al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	addl	%edi, %edx
 	subl	%edx, %esi
 	testb	$1, %sil
 	sete	%al
 	retq
-func000000000000005c:                   # @func000000000000005c
+func00000000000000ac:                   # @func00000000000000ac
 	movq	%rsi, %rax
 	addl	%edi, %edx
 	subl	%edx, %eax
 	andb	$1, %al
+	retq
+func0000000000000101:                   # @func0000000000000101
+	addl	%edi, %edx
+	subl	%edx, %esi
+	testb	$1, %sil
+	sete	%al
 	retq
 func0000000000000081:                   # @func0000000000000081
 	addl	%edi, %edx
 	subl	%edx, %esi
-	testb	$1, %sil
-	sete	%al
-	retq
-func0000000000000041:                   # @func0000000000000041
-	addl	%edi, %edx
-	subl	%edx, %esi
 	testl	$2147483647, %esi               # imm = 0x7FFFFFFF
 	sete	%al
 	retq
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	addl	%edi, %edx
 	subl	%edx, %esi
 	testl	$2147483647, %esi               # imm = 0x7FFFFFFF
 	setne	%al
-	retq
-func0000000000000088:                   # @func0000000000000088
-	movq	%rsi, %rax
-	addl	%edi, %edx
-	subl	%edx, %eax
-	andl	$4, %eax
-	shrl	$2, %eax
 	retq
 func0000000000000001:                   # @func0000000000000001
 	addl	%edi, %edx

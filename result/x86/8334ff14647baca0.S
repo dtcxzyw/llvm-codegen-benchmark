@@ -10,8 +10,3 @@ func0000000000000000:                   # @func0000000000000000
 	shll	$16, %eax
 	andl	%edi, %eax
 	retq
-func0000000000000001:                   # @func0000000000000001
-	orl	%edx, %esi
-	leal	(,%rsi,4), %eax
-	andl	%edi, %eax
-	retq

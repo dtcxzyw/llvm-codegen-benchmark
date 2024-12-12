@@ -1,12 +1,12 @@
 
-%struct.page.3357843 = type { i64, %union.anon.20.3357844, %union.anon.28.3357845, %struct.atomic_t.3357791, [8 x i8] }
-%union.anon.20.3357844 = type { %struct.anon.21.3357846 }
-%struct.anon.21.3357846 = type { %union.anon.22.3357847, ptr, %union.anon.24.3357848, i64 }
-%union.anon.22.3357847 = type { %struct.list_head.3357798 }
-%struct.list_head.3357798 = type { ptr, ptr }
-%union.anon.24.3357848 = type { i64 }
-%union.anon.28.3357845 = type { %struct.atomic_t.3357791 }
-%struct.atomic_t.3357791 = type { i32 }
+%struct.page.3544976 = type { i64, %union.anon.20.3544977, %union.anon.28.3544978, %struct.atomic_t.3544924, [8 x i8] }
+%union.anon.20.3544977 = type { %struct.anon.21.3544979 }
+%struct.anon.21.3544979 = type { %union.anon.22.3544980, ptr, %union.anon.24.3544981, i64 }
+%union.anon.22.3544980 = type { %struct.list_head.3544931 }
+%struct.list_head.3544931 = type { ptr, ptr }
+%union.anon.24.3544981 = type { i64 }
+%union.anon.28.3544978 = type { %struct.atomic_t.3544924 }
+%struct.atomic_t.3544924 = type { i32 }
 
 ; 44 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
@@ -54,7 +54,7 @@
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c1(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = getelementptr nusw double, ptr %0, i64 %3
@@ -67,10 +67,10 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/rmap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
-  %4 = getelementptr %struct.page.3357843, ptr %0, i64 %3
+  %4 = getelementptr %struct.page.3544976, ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = and i64 %5, 4095
   %7 = icmp eq i64 %6, 0
@@ -84,7 +84,7 @@ entry:
 ; hyperscan/optimized/lbr.c.ll
 ; hyperscan/optimized/runtime.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = getelementptr nusw i8, ptr %0, i64 %3

@@ -1,5 +1,5 @@
 
-; 119 occurrences:
+; 120 occurrences:
 ; abc/optimized/wlcBlast.c.ll
 ; c3c/optimized/sema_stmts.c.ll
 ; clamav/optimized/mbox.c.ll
@@ -18,14 +18,13 @@
 ; libpng/optimized/png.c.ll
 ; linux/optimized/8250_core.ll
 ; linux/optimized/aspm.ll
-; linux/optimized/attr.ll
 ; linux/optimized/avtab.ll
-; linux/optimized/dswload.ll
 ; linux/optimized/icl_dsi.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/net.ll
 ; linux/optimized/pci-quirks.ll
 ; linux/optimized/tg3.ll
+; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/Builtins.cpp.ll
 ; llvm/optimized/CommandLine.cpp.ll
@@ -34,8 +33,8 @@
 ; llvm/optimized/InstCombineAtomicRMW.cpp.ll
 ; llvm/optimized/LazyValueInfo.cpp.ll
 ; llvm/optimized/LoadStoreOpt.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ScheduleDAGRRList.cpp.ll
+; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/ValueLattice.cpp.ll
 ; llvm/optimized/X86CallingConv.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -119,6 +118,8 @@
 ; wireshark/optimized/packet-ip.c.ll
 ; wireshark/optimized/packet-ipv6.c.ll
 ; wireshark/optimized/packet-ptp.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i16 %1) #0 {
 entry:
@@ -241,10 +242,25 @@ entry:
   ret i1 %4
 }
 
-; 1 occurrences:
-; llvm/optimized/ValueLattice.cpp.ll
+; 3 occurrences:
+; linux/optimized/libata-scsi.ll
+; llvm/optimized/AArch64FastISel.cpp.ll
+; lvgl/optimized/lv_image.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i16 %1) #0 {
+define i1 @func0000000000000018(i1 %0, i16 %1) #0 {
+entry:
+  %2 = and i16 %1, 3840
+  %3 = icmp samesign ugt i16 %2, 2560
+  %4 = select i1 %0, i1 true, i1 %3
+  ret i1 %4
+}
+
+; 3 occurrences:
+; icu/optimized/normalizer2impl.ll
+; llvm/optimized/ValueLattice.cpp.ll
+; llvm/optimized/Verifier.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 254
   %3 = icmp eq i16 %2, 0

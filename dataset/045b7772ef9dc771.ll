@@ -1,5 +1,5 @@
 
-; 65 occurrences:
+; 64 occurrences:
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
 ; assimp/optimized/clipper.cpp.ll
 ; ceres/optimized/loss_function.cc.ll
@@ -55,7 +55,6 @@
 ; postgres/optimized/planagg.ll
 ; proj/optimized/datum.cpp.ll
 ; proj/optimized/ell_set.cpp.ll
-; proj/optimized/io.cpp.ll
 ; quantlib/optimized/analytichestonengine.ll
 ; quantlib/optimized/exponentialfittinghestonengine.ll
 ; quantlib/optimized/noarbsabr.ll

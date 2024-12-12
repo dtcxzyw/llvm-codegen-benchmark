@@ -50,3 +50,8 @@ func000000000000005d:                   # @func000000000000005d
 	add	a0, a0, a2
 	slli	a0, a0, 4
 	ret
+func000000000000003f:                   # @func000000000000003f
+	mul	a0, a0, a1
+	add.uw	a0, a2, a0
+	slli	a0, a0, 2
+	ret

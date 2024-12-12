@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 24 occurrences:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; influxdb-rs/optimized/4xdswox27ronf9w0.ll
 ; just-rs/optimized/15cobjmzhaiu6jpj.ll
@@ -23,8 +23,9 @@
 ; wasmtime-rs/optimized/3flv1664rwe55t82.ll
 ; wasmtime-rs/optimized/48myxw210mngc99c.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000003fa(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func00000000000003ff(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %0, i64 -16
   %4 = getelementptr { [3 x i64] }, ptr %3, i64 %2

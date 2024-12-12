@@ -1,7 +1,8 @@
 
-; 52 occurrences:
+; 55 occurrences:
 ; arrow/optimized/key_map.cc.ll
 ; arrow/optimized/key_map_avx2.cc.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/archive_write_set_format_7zip.c.ll
 ; cmake/optimized/cmSetPropertyCommand.cxx.ll
 ; darktable/optimized/introspection_lens.cc.ll
@@ -52,6 +53,8 @@
 ; yosys/optimized/shregmap.ll
 ; yosys/optimized/simplify.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
+; zed-rs/optimized/bktyyhuk5fekatq647qx0ox8v.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:

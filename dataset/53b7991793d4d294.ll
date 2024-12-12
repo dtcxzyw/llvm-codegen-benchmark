@@ -3,7 +3,7 @@
 ; llvm/optimized/SimplifyLibCalls.cpp.ll
 ; openjdk/optimized/metaspace.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %1, %2
   %4 = select i1 %3, i64 -16777216, i64 %1
@@ -11,7 +11,9 @@ entry:
   ret i1 %5
 }
 
-; 12 occurrences:
+; 14 occurrences:
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; git/optimized/add-patch.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; openjdk/optimized/g1CollectedHeap.ll
@@ -25,7 +27,7 @@ entry:
 ; wireshark/optimized/rtp_analysis_dialog.cpp.ll
 ; wireshark/optimized/rtp_player_dialog.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %1, %2
   %4 = select i1 %3, i64 0, i64 %1

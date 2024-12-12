@@ -1,5 +1,5 @@
 
-; 48 occurrences:
+; 47 occurrences:
 ; annoy/optimized/annoymodule.ll
 ; bdwgc/optimized/gc.c.ll
 ; bullet3/optimized/b3PgsJacobiSolver.ll
@@ -29,7 +29,6 @@
 ; mold/optimized/passes.cc.SH4.cc.ll
 ; mold/optimized/passes.cc.SPARC64.cc.ll
 ; mold/optimized/passes.cc.X86_64.cc.ll
-; openmpi/optimized/tm_mt.ll
 ; qdrant-rs/optimized/pgs97hhgng8x0qz.ll
 ; rust-analyzer-rs/optimized/12c5ozyvkyoo7zj1.ll
 ; rust-analyzer-rs/optimized/1r9ygi4s2x06bwuz.ll

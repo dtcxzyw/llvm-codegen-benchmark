@@ -1,8 +1,9 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; abc/optimized/extraUtilCanon.c.ll
 ; abc/optimized/giaGlitch.c.ll
 ; lief/optimized/aes.c.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; oiio/optimized/Codec.cpp.ll
 ; raylib/optimized/rcore.c.ll
@@ -12,21 +13,9 @@
 define i32 @func000000000000003f(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 16
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = shl nuw nsw i32 %1, 8
   %5 = or disjoint i32 %3, %4
-  ret i32 %5
-}
-
-; 1 occurrences:
-; qemu/optimized/target_riscv_cpu_helper.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000003c(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl nuw nsw i32 %1, 16
-  %3 = or i32 %2, %0
-  %4 = shl nuw nsw i32 %1, 26
-  %5 = or i32 %3, %4
   ret i32 %5
 }
 
@@ -37,22 +26,9 @@ entry:
 define i32 @func0000000000000033(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 18
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = shl i32 %1, 26
   %5 = or disjoint i32 %3, %4
-  ret i32 %5
-}
-
-; 2 occurrences:
-; abc/optimized/mfsSat.c.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl i32 %1, 4
-  %3 = or i32 %2, %0
-  %4 = shl i32 %1, 12
-  %5 = or i32 %3, %4
   ret i32 %5
 }
 
@@ -64,9 +40,21 @@ entry:
 define i32 @func000000000000002f(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 24
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = shl nuw nsw i32 %1, 8
   %5 = or disjoint i32 %3, %4
+  ret i32 %5
+}
+
+; 1 occurrences:
+; llvm/optimized/X86ISelLowering.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 6
+  %3 = or i32 %0, %2
+  %4 = shl i32 %1, 2
+  %5 = or i32 %3, %4
   ret i32 %5
 }
 
@@ -76,7 +64,7 @@ entry:
 define i32 @func000000000000003b(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 16
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = shl nuw i32 %1, 24
   %5 = or disjoint i32 %3, %4
   ret i32 %5

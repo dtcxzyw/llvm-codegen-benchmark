@@ -8,7 +8,7 @@
 define i64 @func0000000000000004(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i16
-  %3 = icmp ugt i16 %2, %0
+  %3 = icmp ult i16 %0, %2
   %4 = select i1 %3, i64 24, i64 16
   ret i64 %4
 }
@@ -21,7 +21,7 @@ entry:
 define i64 @func0000000000000008(i16 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i16
-  %3 = icmp ult i16 %2, %0
+  %3 = icmp ugt i16 %0, %2
   %4 = select i1 %3, i64 16, i64 24
   ret i64 %4
 }

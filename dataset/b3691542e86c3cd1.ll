@@ -8,7 +8,7 @@
 ; minetest/optimized/serverenvironment.cpp.ll
 ; openusd/optimized/bignum.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = sext i16 %2 to i32
   %4 = sext i16 %1 to i32
@@ -29,7 +29,7 @@ entry:
 ; openjdk/optimized/X11FontScaler_md.ll
 ; openusd/optimized/bignum.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i16 %1, i16 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = sext i16 %2 to i32
   %4 = sext i16 %1 to i32
@@ -44,7 +44,7 @@ entry:
 ; icu/optimized/double-conversion-bignum.ll
 ; openusd/optimized/bignum.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i32 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000027(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = sext i16 %2 to i32
   %4 = sext i16 %1 to i32
@@ -57,7 +57,7 @@ entry:
 ; opencv/optimized/finder_pattern_finder.cpp.ll
 ; openusd/optimized/surfaceFactory.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000028(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = sext i16 %2 to i32
   %4 = sext i16 %1 to i32
@@ -70,7 +70,7 @@ entry:
 ; freetype/optimized/bdf.c.ll
 ; opencv/optimized/finder_pattern_finder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = sext i16 %2 to i32
   %4 = sext i16 %1 to i32

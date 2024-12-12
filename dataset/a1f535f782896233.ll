@@ -1,9 +1,10 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
 ; ipopt/optimized/IpIpoptAlg.ll
 ; jq/optimized/jv_aux.ll
+; lightgbm/optimized/metric.cpp.ll
 ; openjdk/optimized/cmsgamma.ll
 ; quantlib/optimized/convolvedstudentt.ll
 ; quantlib/optimized/svd.ll
@@ -16,11 +17,13 @@ entry:
   ret double %3
 }
 
-; 72 occurrences:
+; 74 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/giaSweeper.c.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/constant_mx.cpp.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/fast_newton.cpp.ll
@@ -31,6 +34,7 @@ entry:
 ; casadi/optimized/sx_elem.cpp.ll
 ; casadi/optimized/sx_function.cpp.ll
 ; casadi/optimized/unary_mx.cpp.ll
+; cmake/optimized/cmCTest.cxx.ll
 ; cmake/optimized/cmCTestCoverageHandler.cxx.ll
 ; graphviz/optimized/smart_ini_x.c.ll
 ; gromacs/optimized/colvarcomp_distances.cpp.ll
@@ -82,7 +86,6 @@ entry:
 ; proj/optimized/datum.cpp.ll
 ; proj/optimized/ell_set.cpp.ll
 ; proj/optimized/geodesic.c.ll
-; proj/optimized/io.cpp.ll
 ; proj/optimized/transformation.cpp.ll
 ; quantlib/optimized/integralcdsengine.ll
 ; quantlib/optimized/isdacdsengine.ll
@@ -97,26 +100,7 @@ entry:
   ret double %3
 }
 
-; 10 occurrences:
-; openjdk/optimized/cmspcs.ll
-; postgres/optimized/costsize.ll
-; rocksdb/optimized/block_builder.cc.ll
-; stat-rs/optimized/3koi1gt1wwkf7v6z.ll
-; stat-rs/optimized/n94tvlll45kxl7r.ll
-; sundials/optimized/kinsol.c.ll
-; sundials/optimized/sundials_iterative.c.ll
-; sundials/optimized/sunlinsol_sptfqmr.c.ll
-; sundials/optimized/sunnonlinsol_fixedpoint.c.ll
-; xgboost/optimized/auc.cc.ll
-; Function Attrs: nounwind
-define double @func0000000000000005(double %0, double %1) #0 {
-entry:
-  %2 = fcmp ugt double %1, 0.000000e+00
-  %3 = select i1 %2, double %0, double 0x3FF5555555555555
-  ret double %3
-}
-
-; 51 occurrences:
+; 55 occurrences:
 ; assimp/optimized/clipper.cpp.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; g2o/optimized/odometry_measurement.cpp.ll
@@ -125,6 +109,7 @@ entry:
 ; graphviz/optimized/colxlate.c.ll
 ; graphviz/optimized/route.c.ll
 ; gromacs/optimized/biasparams.cpp.ll
+; gromacs/optimized/biasstate.cpp.ll
 ; gromacs/optimized/colvar.cpp.ll
 ; gromacs/optimized/colvarcomp_angles.cpp.ll
 ; gromacs/optimized/colvarcomp_distances.cpp.ll
@@ -132,8 +117,10 @@ entry:
 ; gromacs/optimized/pull.cpp.ll
 ; gromacs/optimized/wallcycle.cpp.ll
 ; grpc/optimized/bdp_estimator.cc.ll
+; ipopt/optimized/IpFilterLSAcceptor.ll
 ; libwebp/optimized/picture_psnr_enc.c.ll
 ; lightgbm/optimized/metric.cpp.ll
+; lightgbm/optimized/objective_function.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; opencv/optimized/benchmark.cpp.ll
 ; opencv/optimized/boost.cpp.ll
@@ -145,6 +132,7 @@ entry:
 ; opencv/optimized/lsd.cpp.ll
 ; opencv/optimized/matrix_sparse.cpp.ll
 ; opencv/optimized/moments.cpp.ll
+; opencv/optimized/nbayes.cpp.ll
 ; opencv/optimized/norm.cpp.ll
 ; opencv/optimized/odometry.cpp.ll
 ; opencv/optimized/ppf_helpers.cpp.ll
@@ -171,8 +159,27 @@ entry:
 ; Function Attrs: nounwind
 define double @func0000000000000004(double %0, double %1) #0 {
 entry:
-  %2 = fcmp ogt double %1, 0.000000e+00
-  %3 = select i1 %2, double %0, double 0.000000e+00
+  %2 = fcmp ogt double %1, 1.000000e+01
+  %3 = select i1 %2, double %0, double 1.000000e+00
+  ret double %3
+}
+
+; 10 occurrences:
+; openjdk/optimized/cmspcs.ll
+; postgres/optimized/costsize.ll
+; rocksdb/optimized/block_builder.cc.ll
+; stat-rs/optimized/3koi1gt1wwkf7v6z.ll
+; stat-rs/optimized/n94tvlll45kxl7r.ll
+; sundials/optimized/kinsol.c.ll
+; sundials/optimized/sundials_iterative.c.ll
+; sundials/optimized/sunlinsol_sptfqmr.c.ll
+; sundials/optimized/sunnonlinsol_fixedpoint.c.ll
+; xgboost/optimized/auc.cc.ll
+; Function Attrs: nounwind
+define double @func0000000000000005(double %0, double %1) #0 {
+entry:
+  %2 = fcmp ugt double %1, 0.000000e+00
+  %3 = select i1 %2, double %0, double 0x3FF5555555555555
   ret double %3
 }
 
@@ -188,11 +195,12 @@ entry:
   ret double %3
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; abc/optimized/cuddTable.c.ll
 ; graphviz/optimized/actions.c.ll
 ; graphviz/optimized/colxlate.c.ll
 ; gromacs/optimized/lmmin.cpp.ll
+; proj/optimized/healpix.cpp.ll
 ; quantlib/optimized/lmdif.ll
 ; Function Attrs: nounwind
 define double @func0000000000000003(double %0, double %1) #0 {

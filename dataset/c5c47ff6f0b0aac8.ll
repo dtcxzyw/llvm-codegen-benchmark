@@ -63,7 +63,7 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/noodle_engine.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000204(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub i64 %2, %1
   %3 = add i64 %0, 2
@@ -75,7 +75,7 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/noodle_engine.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000201(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub i64 %2, %1
   %3 = add i64 %0, 2

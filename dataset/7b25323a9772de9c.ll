@@ -7,10 +7,10 @@
 ; opencv/optimized/trackerSamplerAlgorithm.cpp.ll
 ; openjdk/optimized/OGLTextRenderer.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, float %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, float %2) #0 {
 entry:
   %3 = fptosi float %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = icmp sgt i32 %4, %0
   ret i1 %5
 }
@@ -35,10 +35,10 @@ entry:
 ; stb/optimized/stb_truetype.c.ll
 ; zxing/optimized/PDFBoundingBox.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, float %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, float %2) #0 {
 entry:
   %3 = fptosi float %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = icmp slt i32 %4, %0
   ret i1 %5
 }
@@ -46,10 +46,10 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_sharpen.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1, float %2) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1, float %2) #0 {
 entry:
   %3 = fptosi float %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = icmp ult i32 %4, %0
   ret i1 %5
 }
@@ -60,7 +60,7 @@ entry:
 define i1 @func0000000000000001(i32 %0, i32 %1, float %2) #0 {
 entry:
   %3 = fptosi float %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
@@ -68,10 +68,10 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/maedn.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, float %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, float %2) #0 {
 entry:
   %3 = fptosi float %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
@@ -79,10 +79,10 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/hough.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1, float %2) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1, float %2) #0 {
 entry:
   %3 = fptosi float %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = icmp ne i32 %4, %0
   ret i1 %5
 }
@@ -92,10 +92,10 @@ entry:
 ; opencv/optimized/scansegment.cpp.ll
 ; opencv/optimized/tracking_feature.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i32 %0, i32 %1, float %2) #0 {
+define i1 @func000000000000002b(i32 %0, i32 %1, float %2) #0 {
 entry:
   %3 = fptosi float %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = icmp sge i32 %4, %0
   ret i1 %5
 }

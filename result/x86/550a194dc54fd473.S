@@ -10,6 +10,5 @@ func0000000000000002:                   # @func0000000000000002
 	shlxl	%esi, %edi, %eax
 	retq
 func0000000000000001:                   # @func0000000000000001
-	andb	$15, %sil
 	shlxl	%esi, %edi, %eax
 	retq

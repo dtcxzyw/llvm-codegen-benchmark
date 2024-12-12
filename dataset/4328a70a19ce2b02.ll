@@ -1,10 +1,10 @@
 
-%struct.PhysPageEntry.2596346 = type { i32 }
+%struct.PhysPageEntry.2709868 = type { i32 }
 
-; 15 occurrences:
+; 13 occurrences:
 ; abc/optimized/utilSort.c.ll
+; boost/optimized/alloc_lib.ll
 ; clamav/optimized/lzwdec.c.ll
-; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; hdf5/optimized/H5HGcache.c.ll
 ; hermes/optimized/BytecodeDisassembler.cpp.ll
@@ -14,45 +14,27 @@
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
 ; openjdk/optimized/codeBuffer.ll
-; php/optimized/ZendAccelerator.ll
-; protobuf/optimized/arena.cc.ll
 ; ruby/optimized/generator.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000064(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 65535
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = icmp ult ptr %4, %0
   ret i1 %5
 }
 
-; 24 occurrences:
-; assimp/optimized/3DSLoader.cpp.ll
-; assimp/optimized/SIBImporter.cpp.ll
+; 8 occurrences:
 ; cmake/optimized/zstd_compress.c.ll
-; cmake/optimized/zstd_lazy.c.ll
 ; folly/optimized/AsyncFdSocket.cpp.ll
 ; folly/optimized/AsyncSocket.cpp.ll
 ; folly/optimized/AsyncUDPSocket.cpp.ll
 ; folly/optimized/NetOps.cpp.ll
-; grpc/optimized/channel_stack.cc.ll
-; hdf5/optimized/H5HGcache.c.ll
-; hermes/optimized/HadesGC.cpp.ll
 ; llvm/optimized/InstrProfReader.cpp.ll
-; llvm/optimized/MCPseudoProbe.cpp.ll
-; llvm/optimized/MachOObjectFile.cpp.ll
-; llvm/optimized/SampleProfReader.cpp.ll
-; llvm/optimized/WasmObjectFile.cpp.ll
-; openexr/optimized/ImfHuf.cpp.ll
-; openexr/optimized/internal_huf.c.ll
 ; openjdk/optimized/arena.ll
-; openusd/optimized/openexr-c.c.ll
-; yosys/optimized/lz4.ll
-; z3/optimized/sat_clause.cpp.ll
 ; zstd/optimized/zstd_compress.c.ll
-; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000048(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -8
   %4 = getelementptr nusw i8, ptr %1, i64 %3
@@ -123,6 +105,7 @@ entry:
 
 ; 31 occurrences:
 ; assimp/optimized/NFFLoader.cpp.ll
+; boost/optimized/alloc_lib.ll
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; entt/optimized/registry.cpp.ll
 ; entt/optimized/storage.cpp.ll
@@ -131,7 +114,6 @@ entry:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hermes/optimized/TraceInterpreter.cpp.ll
 ; libwebp/optimized/muxread.c.ll
-; llvm/optimized/Archive.cpp.ll
 ; llvm/optimized/BalancedPartitioning.cpp.ll
 ; llvm/optimized/CodeGenSchedule.cpp.ll
 ; llvm/optimized/CodeGenTarget.cpp.ll
@@ -154,10 +136,10 @@ entry:
 ; wasmedge/optimized/formchecker.cpp.ll
 ; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000061(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4611686018427387903
-  %4 = getelementptr nusw ptr, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw ptr, ptr %1, i64 %3
   %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
@@ -176,15 +158,59 @@ entry:
 define i1 @func0000000000000004(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 511
-  %4 = getelementptr %struct.PhysPageEntry.2596346, ptr %1, i64 %3
+  %4 = getelementptr %struct.PhysPageEntry.2709868, ptr %1, i64 %3
   %5 = icmp ult ptr %4, %0
   ret i1 %5
 }
 
-; 8 occurrences:
+; 5 occurrences:
+; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
+; luajit/optimized/lj_alloc.ll
+; luajit/optimized/lj_alloc_dyn.ll
+; php/optimized/ZendAccelerator.ll
+; protobuf/optimized/arena.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000044(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -8
+  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %5 = icmp ult ptr %4, %0
+  ret i1 %5
+}
+
+; 18 occurrences:
+; assimp/optimized/3DSLoader.cpp.ll
+; assimp/optimized/SIBImporter.cpp.ll
+; cmake/optimized/zstd_compress.c.ll
+; cmake/optimized/zstd_lazy.c.ll
+; grpc/optimized/channel_stack.cc.ll
+; hdf5/optimized/H5HGcache.c.ll
+; hermes/optimized/HadesGC.cpp.ll
+; llvm/optimized/MCPseudoProbe.cpp.ll
+; llvm/optimized/MachOObjectFile.cpp.ll
+; llvm/optimized/SampleProfReader.cpp.ll
+; llvm/optimized/WasmObjectFile.cpp.ll
+; openexr/optimized/ImfHuf.cpp.ll
+; openexr/optimized/internal_huf.c.ll
+; openusd/optimized/openexr-c.c.ll
+; yosys/optimized/lz4.ll
+; z3/optimized/sat_clause.cpp.ll
+; zstd/optimized/zstd_compress.c.ll
+; zstd/optimized/zstd_lazy.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000068(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 4294967295
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = icmp ugt ptr %4, %0
+  ret i1 %5
+}
+
+; 9 occurrences:
 ; cmake/optimized/zstd_lazy.c.ll
 ; darktable/optimized/introspection_basecurve.c.ll
 ; darktable/optimized/introspection_monochrome.c.ll
+; hyperscan/optimized/rose_build_program.cpp.ll
 ; linux/optimized/buildid.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/set_memory.ll
@@ -199,10 +225,24 @@ entry:
   ret i1 %5
 }
 
+; 4 occurrences:
+; boost/optimized/alloc_lib.ll
+; llvm/optimized/Archive.cpp.ll
+; luajit/optimized/lj_alloc.ll
+; luajit/optimized/lj_alloc_dyn.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000041(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -8
+  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %5 = icmp eq ptr %4, %0
+  ret i1 %5
+}
+
 ; 1 occurrences:
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000004c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -2
   %4 = getelementptr nusw i8, ptr %1, i64 %3

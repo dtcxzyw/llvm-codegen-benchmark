@@ -41,7 +41,7 @@ entry:
   %3 = and i8 %2, 1
   %4 = zext nneg i8 %3 to i16
   %5 = shl nuw nsw i16 %4, 13
-  %6 = or i16 %5, %0
+  %6 = or i16 %0, %5
   ret i16 %6
 }
 

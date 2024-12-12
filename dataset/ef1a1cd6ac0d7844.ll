@@ -209,7 +209,7 @@
 ; portaudio/optimized/pa_converters.c.ll
 ; ruby/optimized/parse.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %0, %1
   %3 = icmp eq i64 %2, 0
@@ -222,24 +222,11 @@ entry:
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; llvm/optimized/X86InstructionSelector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, %0
   %3 = icmp eq i64 %2, 0
   %4 = icmp ugt i64 %0, 4294967295
-  %5 = and i1 %4, %3
-  ret i1 %5
-}
-
-; 2 occurrences:
-; cpython/optimized/obmalloc.ll
-; mimalloc/optimized/alloc-aligned.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, %0
-  %3 = icmp eq i64 %2, 0
-  %4 = icmp ult i64 %0, 129
   %5 = and i1 %4, %3
   ret i1 %5
 }

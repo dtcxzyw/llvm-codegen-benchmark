@@ -8,15 +8,12 @@ func0000000000000024:                   # @func0000000000000024
 	vucomisd	.LCPI0_0(%rip), %xmm1
 	seta	%al
 	retq
-.LCPI1_0:
-	.quad	0x3e70000000000000              # double 5.9604644775390625E-8
 func0000000000000022:                   # @func0000000000000022
 	vsubsd	%xmm2, %xmm1, %xmm1
 	vxorpd	%xmm2, %xmm2, %xmm2
 	vcmpltsd	%xmm2, %xmm1, %k1
 	vmovsd	%xmm0, %xmm1, %xmm1 {%k1}
-	vmovsd	.LCPI1_0(%rip), %xmm0           # xmm0 = [5.9604644775390625E-8,0.0E+0]
-	vucomisd	%xmm1, %xmm0
+	vucomisd	%xmm1, %xmm2
 	seta	%al
 	retq
 func0000000000000023:                   # @func0000000000000023

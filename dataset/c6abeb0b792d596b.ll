@@ -1,8 +1,9 @@
 
-; 93 occurrences:
+; 96 occurrences:
 ; assimp/optimized/SGSpatialSort.cpp.ll
 ; assimp/optimized/SpatialSort.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/get_clusters.ll
 ; box2d/optimized/b2_collide_edge.cpp.ll
 ; box2d/optimized/b2_distance.cpp.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
@@ -37,6 +38,7 @@
 ; imgui/optimized/imgui_tables.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; llvm/optimized/RegAllocGreedy.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; meshlab/optimized/edit_paint.cpp.ll
@@ -93,6 +95,7 @@
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; yoga/optimized/AbsoluteLayout.cpp.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(float %0, float %1, float %2) #0 {
 entry:
@@ -117,7 +120,7 @@ entry:
   ret i1 %4
 }
 
-; 99 occurrences:
+; 100 occurrences:
 ; actix-rs/optimized/1v3445utu4y7ica.ll
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
 ; assimp/optimized/FixNormalsStep.cpp.ll
@@ -169,6 +172,7 @@ entry:
 ; imgui/optimized/imgui_tables.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libwebp/optimized/histogram_enc.c.ll
+; lvgl/optimized/lv_arc.ll
 ; meshlab/optimized/balltree.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/decorate_base.cpp.ll
@@ -182,7 +186,6 @@ entry:
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
@@ -217,6 +220,7 @@ entry:
 ; xgboost/optimized/adaptive.cc.ll
 ; yoga/optimized/AbsoluteLayout.cpp.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(float %0, float %1, float %2) #0 {
 entry:
@@ -241,7 +245,7 @@ entry:
   ret i1 %4
 }
 
-; 25 occurrences:
+; 26 occurrences:
 ; box2d/optimized/b2_collide_polygon.cpp.ll
 ; box2d/optimized/b2_revolute_joint.cpp.ll
 ; bullet3/optimized/btConvexConcaveCollisionAlgorithm.ll
@@ -267,6 +271,7 @@ entry:
 ; opencv/optimized/circlesgrid.cpp.ll
 ; opencv/optimized/color_lab.cpp.ll
 ; raylib/optimized/raudio.c.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000005(float %0, float %1, float %2) #0 {
 entry:
@@ -365,8 +370,9 @@ entry:
   ret i1 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; meshlab/optimized/meshfilter.cpp.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000007(float %0, float %1, float %2) #0 {
 entry:

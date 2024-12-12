@@ -98,7 +98,7 @@ entry:
   ret i64 %3
 }
 
-; 206 occurrences:
+; 194 occurrences:
 ; abc/optimized/giaGen.c.ll
 ; abc/optimized/giaMinLut.c.ll
 ; abc/optimized/giaResub6.c.ll
@@ -111,13 +111,11 @@ entry:
 ; abc/optimized/wlcNdr.c.ll
 ; abc/optimized/wlnNdr.c.ll
 ; arrow/optimized/align_util.cc.ll
-; arrow/optimized/cached-powers.cc.ll
 ; arrow/optimized/key_map.cc.ll
 ; clamav/optimized/crtmgr.c.ll
 ; cmake/optimized/divsufsort.c.ll
 ; cmake/optimized/fse_compress.c.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
-; double_conversion/optimized/cached-powers.cc.ll
 ; faiss/optimized/IndexIVFSpectralHash.cpp.ll
 ; faiss/optimized/IndexLSH.cpp.ll
 ; faiss/optimized/IndexLattice.cpp.ll
@@ -129,12 +127,10 @@ entry:
 ; graphviz/optimized/fPQ.c.ll
 ; graphviz/optimized/flat.c.ll
 ; graphviz/optimized/multispline.c.ll
-; gromacs/optimized/dlasd0.cpp.ll
 ; gromacs/optimized/dlasda.cpp.ll
 ; gromacs/optimized/expfit.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; gromacs/optimized/pme_solve.cpp.ll
-; gromacs/optimized/slasd0.cpp.ll
 ; gromacs/optimized/slasda.cpp.ll
 ; gromacs/optimized/updategroups.cpp.ll
 ; hermes/optimized/DateUtil.cpp.ll
@@ -142,9 +138,7 @@ entry:
 ; hwloc/optimized/bitmap.ll
 ; icu/optimized/collationiterator.ll
 ; icu/optimized/decNumber.ll
-; icu/optimized/double-conversion-cached-powers.ll
 ; icu/optimized/gregocal.ll
-; libquic/optimized/random.c.ll
 ; libwebp/optimized/buffer_dec.c.ll
 ; libwebp/optimized/cwebp.c.ll
 ; libwebp/optimized/image_enc.c.ll
@@ -156,8 +150,6 @@ entry:
 ; nix/optimized/build-remote.ll
 ; nix/optimized/dotgraph.ll
 ; nix/optimized/graphml.ll
-; nix/optimized/nix-env.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/registry.ll
 ; nix/optimized/why-depends.ll
 ; node/optimized/libnode.crypto_ec.ll
@@ -193,11 +185,9 @@ entry:
 ; openssl/optimized/libcrypto-lib-bn_lib.ll
 ; openssl/optimized/libcrypto-lib-ctrl_params_translate.ll
 ; openssl/optimized/libcrypto-lib-der_writer.ll
-; openssl/optimized/libcrypto-lib-deterministic_nonce.ll
 ; openssl/optimized/libcrypto-lib-dh_key.ll
 ; openssl/optimized/libcrypto-lib-ec2_oct.ll
 ; openssl/optimized/libcrypto-lib-ec_key.ll
-; openssl/optimized/libcrypto-lib-ec_pmeth.ll
 ; openssl/optimized/libcrypto-lib-ecdh_ossl.ll
 ; openssl/optimized/libcrypto-lib-ecp_oct.ll
 ; openssl/optimized/libcrypto-lib-p_lib.ll
@@ -213,11 +203,9 @@ entry:
 ; openssl/optimized/libcrypto-shlib-bn_lib.ll
 ; openssl/optimized/libcrypto-shlib-ctrl_params_translate.ll
 ; openssl/optimized/libcrypto-shlib-der_writer.ll
-; openssl/optimized/libcrypto-shlib-deterministic_nonce.ll
 ; openssl/optimized/libcrypto-shlib-dh_key.ll
 ; openssl/optimized/libcrypto-shlib-ec2_oct.ll
 ; openssl/optimized/libcrypto-shlib-ec_key.ll
-; openssl/optimized/libcrypto-shlib-ec_pmeth.ll
 ; openssl/optimized/libcrypto-shlib-ecdh_ossl.ll
 ; openssl/optimized/libcrypto-shlib-ecp_oct.ll
 ; openssl/optimized/libcrypto-shlib-p_lib.ll

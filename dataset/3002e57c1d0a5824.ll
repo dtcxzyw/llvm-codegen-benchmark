@@ -1,17 +1,15 @@
 
-; 24 occurrences:
+; 22 occurrences:
 ; assimp/optimized/zip.c.ll
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; folly/optimized/Conv.cpp.ll
 ; hdf5/optimized/H5B2int.c.ll
 ; hermes/optimized/zip.c.ll
-; jq/optimized/unicode_fold1_key.ll
 ; libwebp/optimized/picture_csp_enc.c.ll
 ; libwebp/optimized/ssim_sse2.c.ll
 ; linux/optimized/i9xx_wm.ll
 ; meshlab/optimized/miniz.c.ll
 ; minetest/optimized/test_voxelalgorithms.cpp.ll
-; oniguruma/optimized/unicode_fold1_key.ll
 ; opencv/optimized/box_filter.dispatch.cpp.ll
 ; opencv/optimized/demosaicing.cpp.ll
 ; opencv/optimized/gfluidimgproc_func.dispatch.cpp.ll

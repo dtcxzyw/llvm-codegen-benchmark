@@ -6,7 +6,7 @@
 	.long	3067833783                      # 0xb6db6db7
 .LCPI0_3:
 	.long	613566756                       # 0x24924924
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000141:                   # @func0000000000000141
 	vpcmpgtd	.LCPI0_0(%rip){1to8}, %ymm0, %k1
 	vpaddd	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	vpmulld	.LCPI0_2(%rip){1to8}, %ymm0, %ymm0
@@ -22,7 +22,7 @@ func00000000000000a1:                   # @func00000000000000a1
 	.long	1757569337                      # 0x68c26139
 .LCPI1_3:
 	.long	4294                            # 0x10c6
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	vpcmpnleud	.LCPI1_0(%rip){1to8}, %ymm0, %k1
 	vpaddd	.LCPI1_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	vpmulld	.LCPI1_2(%rip){1to8}, %ymm0, %ymm0
@@ -39,7 +39,7 @@ func0000000000000081:                   # @func0000000000000081
 	.long	613566757                       # 0x24924925
 .LCPI2_3:
 	.long	1                               # 0x1
-func00000000000001a8:                   # @func00000000000001a8
+func0000000000000558:                   # @func0000000000000558
 	vpcmpgtd	.LCPI2_0(%rip){1to8}, %ymm0, %k1
 	vpaddd	.LCPI2_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	vpshufd	$245, %ymm0, %ymm1              # ymm1 = ymm0[1,1,3,3,5,5,7,7]
@@ -67,7 +67,7 @@ func00000000000001a8:                   # @func00000000000001a8
 	.long	3067833783                      # 0xb6db6db7
 .LCPI3_3:
 	.long	613566756                       # 0x24924924
-func00000000000001a1:                   # @func00000000000001a1
+func0000000000000541:                   # @func0000000000000541
 	vpcmpgtd	.LCPI3_0(%rip){1to8}, %ymm0, %k1
 	vpaddd	.LCPI3_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	vpmulld	.LCPI3_2(%rip){1to8}, %ymm0, %ymm0

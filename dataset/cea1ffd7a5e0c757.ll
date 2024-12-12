@@ -1,7 +1,8 @@
 
-; 81 occurrences:
+; 82 occurrences:
 ; abc/optimized/abcIfMux.c.ll
 ; abseil-cpp/optimized/numbers.cc.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/pe_icons.c.ll
 ; darktable/optimized/Rw2Decoder.cpp.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
@@ -17,7 +18,6 @@
 ; libpng/optimized/pngwrite.c.ll
 ; libquic/optimized/error_correction.c.ll
 ; libquic/optimized/modp_b64.cc.ll
-; libquic/optimized/reduce.c.ll
 ; libwebp/optimized/lossless_enc.c.ll
 ; libwebp/optimized/quant_dec.c.ll
 ; libwebp/optimized/upsampling.c.ll
@@ -31,7 +31,6 @@
 ; linux/optimized/drm_framebuffer.ll
 ; linux/optimized/i915_hwmon.ll
 ; linux/optimized/intel_crtc_state_dump.ll
-; linux/optimized/intel_display_debugfs.ll
 ; linux/optimized/intel_display_trace.ll
 ; linux/optimized/intel_dpll.ll
 ; linux/optimized/nf_conntrack_core.ll
@@ -49,6 +48,8 @@
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; luajit/optimized/lj_strscan.ll
 ; luajit/optimized/lj_strscan_dyn.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; nanosvg/optimized/nanosvg.ll
 ; oiio/optimized/ddsinput.cpp.ll
 ; oiio/optimized/strutil.cpp.ll
@@ -122,7 +123,7 @@ entry:
   ret i32 %2
 }
 
-; 320 occurrences:
+; 322 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/bmcBmc3.c.ll
 ; abc/optimized/extraUtilCube.c.ll
@@ -140,6 +141,8 @@ entry:
 ; arrow/optimized/key_hash_avx2.cc.ll
 ; assimp/optimized/o3dgcArithmeticCodec.cpp.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/encode.c.ll
@@ -215,7 +218,6 @@ entry:
 ; linux/optimized/dcache.ll
 ; linux/optimized/devinet.ll
 ; linux/optimized/fib_semantics.ll
-; linux/optimized/i915_cmd_parser.ll
 ; linux/optimized/igmp.ll
 ; linux/optimized/intel_pstate.ll
 ; linux/optimized/ip_tunnel.ll
@@ -244,6 +246,7 @@ entry:
 ; luau/optimized/IrBuilder.cpp.ll
 ; luau/optimized/OptimizeConstProp.cpp.ll
 ; luau/optimized/ltable.cpp.ll
+; lvgl/optimized/lv_lru.ll
 ; lz4/optimized/lz4.c.ll
 ; lz4/optimized/lz4hc.c.ll
 ; lz4/optimized/xxhash.c.ll
@@ -469,8 +472,12 @@ entry:
   ret i32 %2
 }
 
-; 3 occurrences:
+; 7 occurrences:
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
+; lvgl/optimized/lv_color_op.ll
+; lvgl/optimized/lv_draw_sw_gradient.ll
 ; quantlib/optimized/date.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind

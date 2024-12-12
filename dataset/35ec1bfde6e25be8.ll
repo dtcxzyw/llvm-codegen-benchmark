@@ -1,5 +1,5 @@
 
-; 458 occurrences:
+; 473 occurrences:
 ; abc/optimized/satSolver2.c.ll
 ; arrow/optimized/base64.cpp.ll
 ; arrow/optimized/diff.cc.ll
@@ -147,14 +147,12 @@
 ; linux/optimized/fib_semantics.ll
 ; linux/optimized/fib_trie.ll
 ; linux/optimized/fork.ll
-; linux/optimized/fs-writeback.ll
 ; linux/optimized/gc.ll
 ; linux/optimized/hdmi.ll
 ; linux/optimized/hid-ntrig.ll
 ; linux/optimized/hooks.ll
 ; linux/optimized/host.ll
 ; linux/optimized/hosts.ll
-; linux/optimized/hwesleep.ll
 ; linux/optimized/intel_bios.ll
 ; linux/optimized/intel_dp_hdcp.ll
 ; linux/optimized/intel_hdcp.ll
@@ -170,13 +168,11 @@
 ; linux/optimized/keyboard.ll
 ; linux/optimized/ldt.ll
 ; linux/optimized/libata-scsi.ll
-; linux/optimized/logips2pp.ll
 ; linux/optimized/n_tty.ll
 ; linux/optimized/ndisc.ll
 ; linux/optimized/net_failover.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/nf_conntrack_core.ll
-; linux/optimized/nf_conntrack_proto.ll
 ; linux/optimized/nf_log_syslog.ll
 ; linux/optimized/nf_nat_proto.ll
 ; linux/optimized/nf_reject_ipv4.ll
@@ -247,7 +243,6 @@
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; llvm/optimized/ParseDeclCXX.cpp.ll
 ; llvm/optimized/PreprocessingRecord.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RawCommentList.cpp.ll
 ; llvm/optimized/RecordLayoutBuilder.cpp.ll
 ; llvm/optimized/ScalarEvolutionExpander.cpp.ll
@@ -278,6 +273,17 @@
 ; luajit/optimized/lj_parse_dyn.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
 ; luau/optimized/UnwindBuilderWin.cpp.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_bar.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_draw_rect.ll
+; lvgl/optimized/lv_font.ll
+; lvgl/optimized/lv_group.ll
+; lvgl/optimized/lv_label.ll
+; lvgl/optimized/lv_menu.ll
+; lvgl/optimized/lv_obj_draw.ll
+; lvgl/optimized/lv_refr.ll
+; lvgl/optimized/lv_span.ll
 ; lz4/optimized/lz4frame.c.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/CSkinnedMesh.cpp.ll
@@ -350,6 +356,7 @@
 ; postgres/optimized/encode.ll
 ; postgres/optimized/formatting.ll
 ; postgres/optimized/heapam.ll
+; postgres/optimized/nodeAgg.ll
 ; postgres/optimized/regcomp.ll
 ; postgres/optimized/varlena.ll
 ; protobuf/optimized/csharp_helpers.cc.ll
@@ -364,6 +371,7 @@
 ; pybind11/optimized/test_opaque_types.cpp.ll
 ; pybind11/optimized/test_sequences_and_iterators.cpp.ll
 ; pybind11/optimized/test_stl_binders.cpp.ll
+; qemu/optimized/hw_9pfs_9p.c.ll
 ; qemu/optimized/hw_audio_hda-codec.c.ll
 ; qemu/optimized/hw_block_m25p80.c.ll
 ; qemu/optimized/hw_char_serial.c.ll
@@ -406,6 +414,8 @@
 ; spike/optimized/triggers.ll
 ; sqlite/optimized/sqlite3.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
+; turborepo-rs/optimized/7fw9xnh6zcxu0x094jeq6b04v.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; velox/optimized/DenseHll.cpp.ll
 ; velox/optimized/SubscriptUtil.cpp.ll
 ; verilator/optimized/V3String.cpp.ll
@@ -458,6 +468,11 @@
 ; z3/optimized/dep_intervals.cpp.ll
 ; z3/optimized/interval_mpq.cpp.ll
 ; z3/optimized/nla_intervals.cpp.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0) #0 {
 entry:
@@ -466,11 +481,10 @@ entry:
   ret i8 %2
 }
 
-; 29 occurrences:
+; 28 occurrences:
 ; c3c/optimized/parse_global.c.ll
 ; c3c/optimized/sema_stmts.c.ll
 ; cpython/optimized/textio.ll
-; duckdb/optimized/ub_duckdb_func_struct.cpp.ll
 ; git/optimized/refspec.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; libevent/optimized/bufferevent_ratelim.c.ll
@@ -482,6 +496,7 @@ entry:
 ; llvm/optimized/IfConversion.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
@@ -494,7 +509,6 @@ entry:
 ; qemu/optimized/tcg.c.ll
 ; rust-analyzer-rs/optimized/1cf75p1eybr0uy0c.ll
 ; yalantinglibs/optimized/benchmark.cpp.ll
-; yalantinglibs/optimized/serialize_config.cpp.ll
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i8 %0) #0 {

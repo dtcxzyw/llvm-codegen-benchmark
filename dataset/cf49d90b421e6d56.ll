@@ -25,34 +25,6 @@ entry:
   ret i32 %4
 }
 
-; 6 occurrences:
-; ncnn/optimized/convolution_x86.cpp.ll
-; ncnn/optimized/convolution_x86_avx.cpp.ll
-; ncnn/optimized/convolution_x86_avx2.cpp.ll
-; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
-; ncnn/optimized/convolution_x86_fma.cpp.ll
-; ncnn/optimized/convolution_x86_xop.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
-entry:
-  %2 = mul i32 %0, %1
-  %3 = shl nsw i32 %2, 1
-  %4 = add nsw i32 %3, 2
-  ret i32 %4
-}
-
-; 2 occurrences:
-; darktable/optimized/ArwDecoder.cpp.ll
-; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000003f(i32 %0, i32 %1) #0 {
-entry:
-  %2 = mul nuw nsw i32 %0, %1
-  %3 = shl nuw nsw i32 %2, 1
-  %4 = add nuw nsw i32 %3, 862144
-  ret i32 %4
-}
-
 ; 1 occurrences:
 ; recastnavigation/optimized/Sample_TempObstacles.cpp.ll
 ; Function Attrs: nounwind

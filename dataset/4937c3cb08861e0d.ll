@@ -1,5 +1,5 @@
 
-; 56 occurrences:
+; 57 occurrences:
 ; arrow/optimized/key_map.cc.ll
 ; c3c/optimized/bigint.c.ll
 ; clamav/optimized/hfsplus.c.ll
@@ -8,6 +8,7 @@
 ; darktable/optimized/LJpegDecompressor.cpp.ll
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
+; darktable/optimized/introspection_demosaic.c.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
@@ -60,7 +61,7 @@
 define i64 @func0000000000000007(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -207,11 +208,11 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
-; 132 occurrences:
+; 133 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; c3c/optimized/bigint.c.ll
@@ -247,8 +248,6 @@ entry:
 ; linux/optimized/compat_binfmt_elf.ll
 ; linux/optimized/consolemap.ll
 ; linux/optimized/generic.ll
-; linux/optimized/head64.ll
-; linux/optimized/machine_kexec_64.ll
 ; linux/optimized/mpih-div.ll
 ; linux/optimized/resize.ll
 ; linux/optimized/swiotlb.ll
@@ -344,6 +343,9 @@ entry:
 ; wireshark/optimized/packet-rtps.c.ll
 ; wireshark/optimized/packet-umts_rlc.c.ll
 ; yosys/optimized/fstapi.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -382,7 +384,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -426,7 +428,7 @@ entry:
 define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 

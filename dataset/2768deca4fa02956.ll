@@ -1,8 +1,7 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; duckdb/optimized/ub_duckdb_bind_expression.cpp.ll
 ; linux/optimized/n_tty.ll
-; linux/optimized/update.ll
 ; llvm/optimized/ELF.cpp.ll
 ; mitsuba3/optimized/sdfgrid.cpp.ll
 ; sqlite/optimized/sqlite3.ll

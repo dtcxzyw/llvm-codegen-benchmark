@@ -1,5 +1,5 @@
 
-; 36 occurrences:
+; 37 occurrences:
 ; bullet3/optimized/poly34.ll
 ; darktable/optimized/introspection_colorzones.c.ll
 ; darktable/optimized/introspection_equalizer.c.ll
@@ -34,6 +34,7 @@
 ; opencv/optimized/trackerCSRT.cpp.ll
 ; opencv/optimized/trackerCSRTScaleEstimation.cpp.ll
 ; opencv/optimized/tracking_online_mil.cpp.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; pbrt-v4/optimized/stats.cpp.ll
 ; Function Attrs: nounwind

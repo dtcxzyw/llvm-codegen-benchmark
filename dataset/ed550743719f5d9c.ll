@@ -169,7 +169,7 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -292
   %3 = sub nsw i32 2, %0
@@ -180,7 +180,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000e8(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = sub nuw nsw i32 256, %0
@@ -189,20 +189,9 @@ entry:
 }
 
 ; 1 occurrences:
-; abc/optimized/abcSop.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000f8(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add nuw nsw i32 %1, 1
-  %3 = sub nuw nsw i32 32, %0
-  %4 = icmp ugt i32 %3, %2
-  ret i1 %4
-}
-
-; 1 occurrences:
 ; yosys/optimized/BigUnsignedInABase.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000068(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 31
   %3 = sub nuw nsw i32 32, %0
@@ -214,7 +203,7 @@ entry:
 ; llvm/optimized/InstCombineCasts.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 64
   %3 = sub nsw i32 64, %0
@@ -227,7 +216,7 @@ entry:
 ; gromacs/optimized/slasq2.cpp.ll
 ; openblas/optimized/dlasq2.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007a(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000ea(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -2
   %3 = sub nuw nsw i32 6, %0
@@ -238,7 +227,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/wmem_allocator_block_fast.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000186(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 16
   %3 = sub i32 2097152, %0
@@ -261,7 +250,7 @@ entry:
 ; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
 ; cvc5/optimized/fp_word_blaster.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000064(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = sub nuw nsw i32 32, %0

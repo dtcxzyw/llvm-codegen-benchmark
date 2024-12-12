@@ -48,11 +48,6 @@ func000000000000003d:                   # @func000000000000003d
 	addq	%rsi, %rax
 	leaq	1(%rdi,%rax), %rax
 	retq
-func0000000000000050:                   # @func0000000000000050
-	movl	%edx, %eax
-	addq	%rsi, %rax
-	leaq	-1(%rdi,%rax), %rax
-	retq
 func000000000000003e:                   # @func000000000000003e
 	movl	%edx, %ecx
 	addq	%rdi, %rcx

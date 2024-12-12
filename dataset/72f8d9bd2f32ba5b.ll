@@ -3,7 +3,7 @@
 ; llvm/optimized/PassBuilderPipelines.cpp.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000190(i64 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000310(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 65536
   %4 = select i1 %1, i1 true, i1 %3
@@ -16,7 +16,7 @@ entry:
 ; clap-rs/optimized/28kpmq8k0hu4re4f.ll
 ; slurm/optimized/common_as.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i64 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000302(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 1114112
   %4 = select i1 %1, i1 true, i1 %3
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/minmax.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000042(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %0, i1 true, i1 %3

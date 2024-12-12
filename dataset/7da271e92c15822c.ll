@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000032(ptr %0, i16 %1) #0 {
+define ptr @func0000000000000033(ptr %0, i16 %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %0, i64 19288
   %3 = zext i16 %1 to i64

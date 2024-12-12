@@ -16,7 +16,7 @@ func0000000000000003:                   # @func0000000000000003
 	li	a0, 3
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmul.vx	v8, v8, a0
-	vmerge.vim	v8, v8, 4, v0
+	vmerge.vim	v8, v8, 3, v0
 	ret
 func0000000000000002:                   # @func0000000000000002
 	li	a0, 3

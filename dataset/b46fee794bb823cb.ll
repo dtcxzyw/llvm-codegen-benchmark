@@ -1,8 +1,7 @@
 
-; 113 occurrences:
+; 107 occurrences:
 ; flac/optimized/util.c.ll
 ; freetype/optimized/truetype.c.ll
-; linux/optimized/8250_dma.ll
 ; linux/optimized/af_packet.ll
 ; linux/optimized/ah6.ll
 ; linux/optimized/alternative.ll
@@ -31,8 +30,6 @@
 ; linux/optimized/gcm.ll
 ; linux/optimized/gro.ll
 ; linux/optimized/hcd.ll
-; linux/optimized/head64.ll
-; linux/optimized/hibernate_64.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/hugetlb_vmemmap.ll
 ; linux/optimized/i915_gpu_error.ll
@@ -49,8 +46,6 @@
 ; linux/optimized/kexec_core.ll
 ; linux/optimized/kfifo.ll
 ; linux/optimized/ldt.ll
-; linux/optimized/list_lru.ll
-; linux/optimized/machine_kexec_64.ll
 ; linux/optimized/main.ll
 ; linux/optimized/memalloc.ll
 ; linux/optimized/memblock.ll
@@ -61,7 +56,6 @@
 ; linux/optimized/mon_bin.ll
 ; linux/optimized/mremap.ll
 ; linux/optimized/netdev.ll
-; linux/optimized/ops_helpers.ll
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/page_vma_mapped.ll
 ; linux/optimized/pasid.ll
@@ -121,7 +115,25 @@ entry:
   ret i64 %4
 }
 
-; 52 occurrences:
+; 9 occurrences:
+; freetype/optimized/autofit.c.ll
+; linux/optimized/gen8_ppgtt.ll
+; linux/optimized/ring_buffer.ll
+; nuklear/optimized/unity.c.ll
+; openjdk/optimized/chunklevel.ll
+; openjdk/optimized/g1CardSet.ll
+; openjdk/optimized/g1CodeRootSet.ll
+; openjdk/optimized/xGlobals_x86.ll
+; openjdk/optimized/zAddress_x86.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub nuw nsw i64 64, %2
+  %4 = select i1 %0, i64 %1, i64 %3
+  ret i64 %4
+}
+
+; 50 occurrences:
 ; abc/optimized/infback.c.ll
 ; abseil-cpp/optimized/duration.cc.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -138,7 +150,6 @@ entry:
 ; eastl/optimized/TestAlgorithm.cpp.ll
 ; eastl/optimized/TestAny.cpp.ll
 ; eastl/optimized/TestBitVector.cpp.ll
-; eastl/optimized/TestCharTraits.cpp.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestExtra.cpp.ll
 ; eastl/optimized/TestFixedString.cpp.ll
@@ -151,7 +162,6 @@ entry:
 ; eastl/optimized/TestRingBuffer.cpp.ll
 ; eastl/optimized/TestString.cpp.ll
 ; eastl/optimized/TestStringView.cpp.ll
-; eastl/optimized/TestUtility.cpp.ll
 ; eastl/optimized/TestVariant.cpp.ll
 ; eastl/optimized/TestVector.cpp.ll
 ; eastl/optimized/TestVectorMap.cpp.ll
@@ -178,19 +188,6 @@ entry:
 define i64 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = select i1 %0, i64 %1, i64 %3
-  ret i64 %4
-}
-
-; 4 occurrences:
-; freetype/optimized/autofit.c.ll
-; linux/optimized/gen8_ppgtt.ll
-; linux/optimized/ring_buffer.ll
-; nuklear/optimized/unity.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000003(i1 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sub nuw nsw i64 4, %2
   %4 = select i1 %0, i64 %1, i64 %3
   ret i64 %4
 }

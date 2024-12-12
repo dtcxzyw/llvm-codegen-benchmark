@@ -1,4 +1,4 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	incb	%sil
 	movzbl	%sil, %eax
 	movzbl	%dil, %ecx
@@ -6,7 +6,7 @@ func0000000000000031:                   # @func0000000000000031
 	cmpl	%eax, %ecx
 	sete	%al
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	incb	%sil
 	movzbl	%sil, %eax
 	movzbl	%dil, %ecx
@@ -14,7 +14,7 @@ func0000000000000034:                   # @func0000000000000034
 	cmpl	%eax, %ecx
 	setb	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	incb	%sil
 	movzbl	%sil, %eax
 	movzbl	%dil, %ecx

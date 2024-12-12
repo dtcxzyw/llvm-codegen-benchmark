@@ -86,7 +86,7 @@ define i1 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 8
   %3 = sext i32 %2 to i64
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   ret i1 %4
 }
 
@@ -110,7 +110,7 @@ define i1 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 8
   %3 = sext i32 %2 to i64
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
@@ -134,11 +134,11 @@ define i1 @func000000000000000a(i64 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 64
   %3 = sext i32 %2 to i64
-  %4 = icmp slt i64 %3, %0
+  %4 = icmp sgt i64 %0, %3
   ret i1 %4
 }
 
-; 135 occurrences:
+; 134 occurrences:
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/acbFunc.c.ll
@@ -166,7 +166,6 @@ entry:
 ; abc/optimized/giaMini.c.ll
 ; abc/optimized/giaResub2.c.ll
 ; abc/optimized/giaSimBase.c.ll
-; abc/optimized/giaSupMin.c.ll
 ; abc/optimized/giaSweep.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/ioReadBlifAig.c.ll
@@ -279,7 +278,7 @@ define i1 @func0000000000000006(i64 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 2
   %3 = sext i32 %2 to i64
-  %4 = icmp sgt i64 %3, %0
+  %4 = icmp slt i64 %0, %3
   ret i1 %4
 }
 
@@ -344,7 +343,7 @@ define i1 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 3
   %3 = sext i32 %2 to i64
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   ret i1 %4
 }
 
@@ -355,7 +354,7 @@ define i1 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 64
   %3 = sext i32 %2 to i64
-  %4 = icmp ne i64 %3, %0
+  %4 = icmp ne i64 %0, %3
   ret i1 %4
 }
 
@@ -366,7 +365,7 @@ define i1 @func0000000000000005(i64 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 64
   %3 = sext i32 %2 to i64
-  %4 = icmp uge i64 %3, %0
+  %4 = icmp ule i64 %0, %3
   ret i1 %4
 }
 

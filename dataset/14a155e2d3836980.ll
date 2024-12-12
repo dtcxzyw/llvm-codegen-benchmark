@@ -1,10 +1,9 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; hdf5/optimized/H5Fsuper.c.ll
 ; linux/optimized/fsopen.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; php/optimized/zend_inference.ll
 ; postgres/optimized/jsonpath_gram.ll
 ; regex-rs/optimized/1x04d8372kemp7hd.ll

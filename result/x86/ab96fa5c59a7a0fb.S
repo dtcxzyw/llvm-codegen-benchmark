@@ -1,15 +1,15 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	movl	%edi, %eax
 	negl	%eax
 	cmovsl	%edi, %eax
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	movl	%edi, %eax
 	negl	%eax
 	cmpl	$-2147483647, %edi              # imm = 0x80000001
 	cmovbl	%edi, %eax
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	movl	$512, %eax                      # imm = 0x200
 	subl	%edi, %eax
 	cmpl	$256, %edi                      # imm = 0x100

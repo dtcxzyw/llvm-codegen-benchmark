@@ -1,12 +1,11 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; clamav/optimized/bytecode.c.ll
 ; hermes/optimized/Operations.cpp.ll
-; linux/optimized/8250_exar.ll
 ; linux/optimized/intel_cdclk.ll
 ; llvm/optimized/JSONNodeDumper.cpp.ll
 ; llvm/optimized/TextNodeDumper.cpp.ll
-; llvm/optimized/TypePrinter.cpp.ll
+; lvgl/optimized/lv_obj_style.ll
 ; wireshark/optimized/packet-ieee80211-radio.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i16 %0) #0 {

@@ -4,10 +4,10 @@
 ; llvm/optimized/X86RegisterInfo.cpp.ll
 ; openjdk/optimized/superword.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002c1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000981(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = icmp ne i32 %4, 0
   %6 = icmp eq i32 %0, 1
   %7 = and i1 %6, %5
@@ -18,10 +18,10 @@ entry:
 ; abc/optimized/acecPolyn.c.ll
 ; abc/optimized/mvcUtils.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002cc(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000098c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = icmp ne i32 %4, 0
   %6 = icmp ne i32 %0, 0
   %7 = and i1 %6, %5
@@ -35,10 +35,10 @@ entry:
 ; arrow/optimized/vector_selection_take_internal.cc.ll
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003cc(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000d8c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 1, %2
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = icmp ne i32 %4, 0
   %6 = icmp ne i32 %0, 0
   %7 = and i1 %6, %5
@@ -48,10 +48,10 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaMuxes.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000241(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000881(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = icmp eq i32 %4, 0
   %6 = icmp ult i32 %0, 2
   %7 = and i1 %5, %6
@@ -65,7 +65,7 @@ entry:
 ; llvm/optimized/InstructionCombining.cpp.ll
 ; llvm/optimized/PartiallyInlineLibCalls.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003c1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000d81(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 1, %2
   %4 = and i32 %3, %1
@@ -78,7 +78,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003c4(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000d84(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 1, %2
   %4 = and i32 %3, %1

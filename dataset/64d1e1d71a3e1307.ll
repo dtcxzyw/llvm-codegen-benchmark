@@ -1,5 +1,5 @@
 
-; 37 occurrences:
+; 39 occurrences:
 ; clamav/optimized/jpeg.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/zstdmt_compress.c.ll
@@ -36,6 +36,8 @@
 ; tls-rs/optimized/4klah4jfox7oqufu.ll
 ; tls-rs/optimized/4vg8hiu39ndz9uqe.ll
 ; wasmtime-rs/optimized/2ta8crc4qgl9bp8t.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; zstd/optimized/zstdmt_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i8 %1) #0 {
@@ -60,11 +62,13 @@ entry:
   ret i64 %4
 }
 
-; 29 occurrences:
+; 32 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; cmake/optimized/cmDocumentationFormatter.cxx.ll
 ; cmake/optimized/nghttp2_http.c.ll
-; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_scalar.cpp.ll
 ; lief/optimized/ecp.c.ll
@@ -77,6 +81,7 @@ entry:
 ; php/optimized/zend_operators.ll
 ; proj/optimized/internal.cpp.ll
 ; qemu/optimized/nbd_client.c.ll
+; spdlog/optimized/spdlog.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; velox/optimized/DateTimeFormatter.cpp.ll
 ; wireshark/optimized/oids.c.ll
@@ -99,11 +104,12 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; clamav/optimized/gif.c.ll
 ; folly/optimized/SSLContext.cpp.ll
 ; node/optimized/libnode.crypto_clienthello.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i8 %1) #0 {
 entry:
@@ -113,7 +119,7 @@ entry:
   ret i64 %4
 }
 
-; 116 occurrences:
+; 117 occurrences:
 ; arrow/optimized/utf8.cc.ll
 ; delta-rs/optimized/3qvofkyb7k5flefa.ll
 ; hdf5/optimized/H5B2cache.c.ll
@@ -129,7 +135,6 @@ entry:
 ; hdf5/optimized/H5FSstat.c.ll
 ; hdf5/optimized/H5Gstab.c.ll
 ; hdf5/optimized/H5HL.c.ll
-; hdf5/optimized/H5HLdblk.c.ll
 ; hdf5/optimized/H5Oalloc.c.ll
 ; hdf5/optimized/H5Ocache_image.c.ll
 ; hdf5/optimized/H5Ofsinfo.c.ll
@@ -164,8 +169,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -230,6 +233,10 @@ entry:
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; tokenizers-rs/optimized/27irl7jx21l1e8zq.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i8 %1) #0 {
 entry:
@@ -261,13 +268,14 @@ entry:
   ret i64 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; hermes/optimized/raw_ostream.cpp.ll
 ; linux/optimized/drm_displayid.ll
 ; linux/optimized/exfldio.ll
 ; llvm/optimized/ABIInfo.cpp.ll
 ; protobuf/optimized/coded_stream.cc.ll
 ; sentencepiece/optimized/coded_stream.cc.ll
+; zed-rs/optimized/4hdn1csvepxizqbxhztzuw0uw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i8 %1) #0 {
 entry:

@@ -1,10 +1,3 @@
-func0000000000000008:                   # @func0000000000000008
-	testb	$1, %dil
-	movl	$2, %eax
-	cmovel	%esi, %eax
-	cmpl	$2, %eax
-	setae	%al
-	retq
 func000000000000000a:                   # @func000000000000000a
 	testb	$1, %dil
 	movl	$30, %eax

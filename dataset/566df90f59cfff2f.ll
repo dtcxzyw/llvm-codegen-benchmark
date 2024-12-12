@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; abc/optimized/absOldSim.c.ll
 ; abc/optimized/aigJust.c.ll
 ; abc/optimized/aigTsim.c.ll
@@ -11,14 +11,13 @@
 ; grpc/optimized/compression_filter.cc.ll
 ; grpc/optimized/legacy_compression_filter.cc.ll
 ; linux/optimized/transport.ll
-; ruby/optimized/ractor.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, -5
+  %3 = and i64 %2, 1
   %4 = icmp eq i64 %3, 0
   %5 = select i1 %4, i32 %0, i32 %1
-  %6 = icmp eq i32 %5, 0
+  %6 = icmp eq i32 %5, 1
   ret i1 %6
 }
 
@@ -26,7 +25,7 @@ entry:
 ; abc/optimized/extraUtilDsd.c.ll
 ; abc/optimized/mpmDsd.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000181(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1
   %.not = icmp eq i64 %3, 0
@@ -38,7 +37,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/extraUtilDsd.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000018c(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1
   %.not = icmp eq i64 %3, 0
@@ -50,7 +49,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/extraUtilDsd.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000186(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1
   %.not = icmp eq i64 %3, 0
@@ -62,7 +61,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaType.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 512
   %4 = icmp eq i64 %3, 0
@@ -78,7 +77,7 @@ entry:
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967296
   %4 = icmp eq i64 %3, 0
@@ -92,7 +91,7 @@ entry:
 ; grpc/optimized/chttp2_transport.cc.ll
 ; opencv/optimized/copy.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1
   %4 = icmp eq i64 %3, 0
@@ -104,7 +103,7 @@ entry:
 ; 1 occurrences:
 ; grpc/optimized/chttp2_transport.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967296
   %4 = icmp eq i64 %3, 0
@@ -116,7 +115,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/softfloat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000284(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 8323072
   %4 = icmp eq i64 %3, 0

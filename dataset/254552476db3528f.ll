@@ -1,5 +1,5 @@
 
-; 122 occurrences:
+; 123 occurrences:
 ; lief/optimized/poly1305.c.ll
 ; linux/optimized/skcipher.ll
 ; luajit/optimized/lj_parse.ll
@@ -68,6 +68,7 @@
 ; oiio/optimized/tiffoutput.cpp.ll
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
+; php/optimized/fastcgi.ll
 ; ruby/optimized/bignum.ll
 ; spike/optimized/vmadc_vi.ll
 ; spike/optimized/vmadc_vim.ll
@@ -126,26 +127,9 @@
 define i64 @func000000000000000f(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = zext i32 %1 to i64
   %6 = add nuw nsw i64 %4, %5
-  ret i64 %6
-}
-
-; 6 occurrences:
-; hyperscan/optimized/repeat.c.ll
-; linux/optimized/memalloc.ll
-; llvm/optimized/AArch64MCTargetDesc.cpp.ll
-; llvm/optimized/DWARFAcceleratorTable.cpp.ll
-; php/optimized/fastcgi.ll
-; postgres/optimized/xlog.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(i64 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = and i64 %2, 4294967295
-  %4 = add i64 %3, %0
-  %5 = zext i32 %1 to i64
-  %6 = add i64 %4, %5
   ret i64 %6
 }
 
@@ -157,8 +141,24 @@ entry:
 define i64 @func0000000000000010(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 9223372036854775800
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = zext nneg i32 %1 to i64
+  %6 = add i64 %4, %5
+  ret i64 %6
+}
+
+; 5 occurrences:
+; hyperscan/optimized/repeat.c.ll
+; linux/optimized/memalloc.ll
+; llvm/optimized/AArch64MCTargetDesc.cpp.ll
+; llvm/optimized/DWARFAcceleratorTable.cpp.ll
+; postgres/optimized/xlog.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -4096
+  %4 = add i64 %3, %0
+  %5 = zext i32 %1 to i64
   %6 = add i64 %4, %5
   ret i64 %6
 }
@@ -169,7 +169,7 @@ entry:
 define i64 @func0000000000000015(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 36028797018963960
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = zext nneg i32 %1 to i64
   %6 = add nsw i64 %4, %5
   ret i64 %6

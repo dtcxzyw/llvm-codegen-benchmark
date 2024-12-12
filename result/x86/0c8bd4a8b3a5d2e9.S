@@ -18,8 +18,3 @@ func0000000000000011:                   # @func0000000000000011
 	andl	$-4, %eax
 	subl	%edi, %eax
 	retq
-func0000000000000010:                   # @func0000000000000010
-	leal	3(%rsi), %eax
-	andl	$-4, %eax
-	subl	%edi, %eax
-	retq

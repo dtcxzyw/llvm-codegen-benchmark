@@ -1,17 +1,12 @@
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	mvni	v4.4s, #1, msl #16
-	bic	v3.8h, #1
-	mov	w8, #65534                      // =0xfffe
-	bic	v2.8h, #1
-	add	v3.4s, v3.4s, v4.4s
-	add	v2.4s, v2.4s, v4.4s
-	dup	v4.4s, w8
-	cmhi	v3.4s, v4.4s, v3.4s
-	cmhi	v2.4s, v4.4s, v2.4s
-	uzp1	v2.8h, v2.8h, v3.8h
-	xtn	v2.8b, v2.8h
-	and	v1.8b, v1.8b, v2.8b
-	orr	v0.8b, v1.8b, v0.8b
+	and	w8, w2, #0xfffefffe
+	mov	w9, #65534                      // =0xfffe
+	sub	w8, w8, #32, lsl #12            // =131072
+	cmp	w8, w9
+	cset	w8, lo
+	and	w8, w1, w8
+	orr	w8, w8, w0
+	and	w0, w8, #0x1
 	ret
                                         // -- End function

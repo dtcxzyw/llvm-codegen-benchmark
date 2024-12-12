@@ -1,5 +1,5 @@
 
-; 36 occurrences:
+; 37 occurrences:
 ; bullet3/optimized/btHeightfieldTerrainShape.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; gromacs/optimized/gmx_nmeig.cpp.ll
@@ -23,6 +23,7 @@
 ; opencv/optimized/kinfu_frame.cpp.ll
 ; opencv/optimized/normal.cpp.ll
 ; opencv/optimized/perf_tsdf.cpp.ll
+; opencv/optimized/sift.dispatch.cpp.ll
 ; opencv/optimized/slic.cpp.ll
 ; opencv/optimized/text_detector_swt.cpp.ll
 ; opencv/optimized/trackerCSRTScaleEstimation.cpp.ll
@@ -44,7 +45,7 @@ entry:
   ret float %3
 }
 
-; 10 occurrences:
+; 15 occurrences:
 ; darktable/optimized/introspection_colorzones.c.ll
 ; darktable/optimized/introspection_rgbcurve.c.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
@@ -55,6 +56,11 @@ entry:
 ; openjdk/optimized/PLATFORM_API_LinuxOS_ALSA_PCM.ll
 ; openusd/optimized/reformat.c.ll
 ; raylib/optimized/raudio.c.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, i32 %1) #0 {
 entry:

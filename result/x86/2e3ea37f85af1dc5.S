@@ -16,3 +16,12 @@ func0000000000000006:                   # @func0000000000000006
 	orq	%rsi, %rax
 	orq	%rdi, %rax
 	retq
+func0000000000000004:                   # @func0000000000000004
+	xorl	%ecx, %ecx
+	cmpl	$16, %edx
+	movl	$6, %eax
+	cmovneq	%rcx, %rax
+	andq	$-256, %rsi
+	orq	%rsi, %rax
+	orq	%rdi, %rax
+	retq

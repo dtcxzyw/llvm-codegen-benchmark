@@ -15,8 +15,7 @@ entry:
   ret i64 %6
 }
 
-; 20 occurrences:
-; cmake/optimized/archive_pack_dev.c.ll
+; 19 occurrences:
 ; linux/optimized/rmap.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll

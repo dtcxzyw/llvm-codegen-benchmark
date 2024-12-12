@@ -13,7 +13,6 @@
 ; abc/optimized/rwrDec.c.ll
 ; abc/optimized/rwrLib.c.ll
 ; abc/optimized/rwtDec.c.ll
-; abc/optimized/rwtUtil.c.ll
 ; c3c/optimized/types.c.ll
 ; glslang/optimized/Intermediate.cpp.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
@@ -52,6 +51,7 @@
 ; llvm/optimized/ProgramPoint.cpp.ll
 ; llvm/optimized/RISCVMCCodeEmitter.cpp.ll
 ; llvm/optimized/RetainCountDiagnostics.cpp.ll
+; lvgl/optimized/lv_svg_parser.ll
 ; lz4/optimized/lz4frame.c.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; minetest/optimized/clouds.cpp.ll
@@ -115,9 +115,9 @@ entry:
 ; linux/optimized/intel_color.ll
 ; linux/optimized/intel_guc_ads.ll
 ; linux/optimized/intel_psr.ll
-; linux/optimized/intel_snps_phy.ll
 ; linux/optimized/intel_vdsc.ll
 ; linux/optimized/intel_workarounds.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; node/optimized/simdutf.ll
 ; oiio/optimized/formatspec.cpp.ll
 ; openjdk/optimized/ByteBinary1Bit.ll
@@ -172,23 +172,41 @@ entry:
   ret i32 %6
 }
 
-; 19 occurrences:
+; 15 occurrences:
+; openvdb/optimized/Diagnostics.cc.ll
+; openvdb/optimized/FastSweeping.cc.ll
+; openvdb/optimized/Filter.cc.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
+; openvdb/optimized/LevelSetRebuild.cc.ll
+; openvdb/optimized/LevelSetSphere.cc.ll
+; openvdb/optimized/LevelSetTracker.cc.ll
+; openvdb/optimized/Mask.cc.ll
+; openvdb/optimized/Merge.cc.ll
+; openvdb/optimized/MultiResGrid.cc.ll
+; openvdb/optimized/PoissonSolver.cc.ll
+; openvdb/optimized/TopologyToLevelSet.cc.ll
+; openvdb/optimized/VolumeAdvect.cc.ll
+; openvdb/optimized/VolumeToMesh.cc.ll
+; openvdb/optimized/points.cc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 5
+  %3 = and i32 %2, 3840
+  %4 = shl i32 %0, 1
+  %5 = and i32 %4, 240
+  %6 = or disjoint i32 %5, %3
+  ret i32 %6
+}
+
+; 10 occurrences:
 ; cpython/optimized/unicodeobject.ll
-; hermes/optimized/AST2JS.cpp.ll
-; hermes/optimized/BytecodeGenerator.cpp.ll
-; hermes/optimized/ConsecutiveStringStorage.cpp.ll
-; hermes/optimized/HBC.cpp.ll
-; hermes/optimized/JSLexer.cpp.ll
-; hermes/optimized/JSONEmitter.cpp.ll
-; hermes/optimized/RegexSerialization.cpp.ll
-; hermes/optimized/Runtime.cpp.ll
-; hermes/optimized/SourceErrorManager.cpp.ll
-; hermes/optimized/UTF8.cpp.ll
 ; jsonnet/optimized/desugarer.cpp.ll
 ; jsonnet/optimized/parser.cpp.ll
 ; jsonnet/optimized/string_utils.cpp.ll
 ; jsonnet/optimized/vm.cpp.ll
 ; llvm/optimized/YAMLParser.cpp.ll
+; lvgl/optimized/lv_text.ll
 ; openjdk/optimized/ByteIndexed.ll
 ; openjdk/optimized/UshortIndexed.ll
 ; raylib/optimized/rtext.c.ll

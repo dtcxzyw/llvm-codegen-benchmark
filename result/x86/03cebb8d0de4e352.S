@@ -1,11 +1,11 @@
-func00000000000000da:                   # @func00000000000000da
+func00000000000001aa:                   # @func00000000000001aa
 	movl	$32, %eax
 	subl	%esi, %eax
 	imull	%edi, %eax
 	cmpl	$3556, %eax                     # imm = 0xDE4
 	setge	%al
 	retq
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	movl	$1, %eax
 	subl	%esi, %eax
 	imull	%edi, %eax

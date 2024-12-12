@@ -4,6 +4,7 @@
 ; abc/optimized/abcResub.c.ll
 ; abc/optimized/bdcDec.c.ll
 ; abc/optimized/cutPre22.c.ll
+; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/dauNpn2.c.ll
 ; abc/optimized/fraClaus.c.ll
 ; abc/optimized/giaEra2.c.ll
@@ -19,7 +20,6 @@
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; darktable/optimized/PentaxDecompressor.cpp.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
-; hyperscan/optimized/limex_compile.cpp.ll
 ; hyperscan/optimized/program_runtime.c.ll
 ; libsodium/optimized/libsodium_la-codecs.ll
 ; lief/optimized/constant_time.c.ll
@@ -77,8 +77,8 @@
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = and i32 %3, %1
-  %5 = and i32 %4, %0
+  %4 = and i32 %1, %3
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 

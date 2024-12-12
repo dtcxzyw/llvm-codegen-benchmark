@@ -17,19 +17,12 @@ func0000000000000006:                   # @func0000000000000006
 	vmovdqa	%ymm1, %ymm0
 	retq
 .LCPI2_0:
-	.quad	4096                            # 0x1000
-func0000000000000010:                   # @func0000000000000010
-	vpmaxuq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0
-	vpxor	%xmm1, %xmm1, %xmm1
-	vpsubq	%ymm0, %ymm1, %ymm0
-	retq
-.LCPI3_0:
 	.quad	10                              # 0xa
-.LCPI3_1:
+.LCPI2_1:
 	.quad	9                               # 0x9
 func0000000000000005:                   # @func0000000000000005
-	vpcmpeqq	.LCPI3_0(%rip){1to4}, %ymm0, %k1
-	vpbroadcastq	.LCPI3_1(%rip), %ymm0 {%k1} # ymm0 {%k1} = [9,9,9,9]
+	vpcmpeqq	.LCPI2_0(%rip){1to4}, %ymm0, %k1
+	vpbroadcastq	.LCPI2_1(%rip), %ymm0 {%k1} # ymm0 {%k1} = [9,9,9,9]
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpsubq	%ymm0, %ymm1, %ymm0
 	retq

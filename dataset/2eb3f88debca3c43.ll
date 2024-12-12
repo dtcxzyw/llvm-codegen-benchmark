@@ -1,6 +1,7 @@
 
-; 177 occurrences:
+; 178 occurrences:
 ; abc/optimized/giaClp.c.ll
+; boost/optimized/to_chars.ll
 ; darktable/optimized/RafDecoder.cpp.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll

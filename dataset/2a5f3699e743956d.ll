@@ -1,6 +1,5 @@
 
-; 6 occurrences:
-; freetype/optimized/truetype.c.ll
+; 5 occurrences:
 ; linux/optimized/intel_sseu.ll
 ; linux/optimized/maple_tree.ll
 ; protobuf/optimized/map.cc.ll

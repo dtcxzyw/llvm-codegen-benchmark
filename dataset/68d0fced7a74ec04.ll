@@ -1,18 +1,8 @@
 
-%"struct.facebook::velox::Timestamp.2700926" = type { i64, i64 }
-%struct.BT_QUANTIZED_BVH_NODE.2705430 = type { [3 x i16], [3 x i16], i32 }
-%"class.absl::debian2::optional.3290525" = type { %"class.absl::debian2::optional_internal::optional_data.3290526" }
-%"class.absl::debian2::optional_internal::optional_data.3290526" = type { %"class.absl::debian2::optional_internal::optional_data_base.3290527" }
-%"class.absl::debian2::optional_internal::optional_data_base.3290527" = type { %"class.absl::debian2::optional_internal::optional_data_dtor_base.3290528" }
-%"class.absl::debian2::optional_internal::optional_data_dtor_base.3290528" = type { i8, %union.anon.20.3290529 }
-%union.anon.20.3290529 = type { i32 }
-%struct.FmgrInfo.3468934 = type { ptr, i32, i16, i8, i8, i8, ptr, ptr, ptr }
-%struct.Color.3609433 = type { i8, i8, i8, i8 }
-%"struct.g2o::BaseVariableSizedEdge<3, g2o::Plane3D>::HessianHelper.3610358" = type { %"class.Eigen::Map.864.3610354", i8, [7 x i8] }
-%"class.Eigen::Map.864.3610354" = type <{ %"class.Eigen::MapBase.865.3610355", [8 x i8] }>
-%"class.Eigen::MapBase.865.3610355" = type { %"class.Eigen::MapBase.866.3610356" }
-%"class.Eigen::MapBase.866.3610356" = type { ptr, %"class.Eigen::internal::variable_if_dynamic.3610357", %"class.Eigen::internal::variable_if_dynamic.3610357" }
-%"class.Eigen::internal::variable_if_dynamic.3610357" = type { i64 }
+%"struct.facebook::velox::Timestamp.2813643" = type { i64, i64 }
+%struct.BT_QUANTIZED_BVH_NODE.2818145 = type { [3 x i16], [3 x i16], i32 }
+%struct.FmgrInfo.3653068 = type { ptr, i32, i16, i8, i8, i8, ptr, ptr, ptr }
+%struct.Color.3789981 = type { i8, i8, i8, i8 }
 
 ; 5 occurrences:
 ; gromacs/optimized/dlar1vx.cpp.ll
@@ -24,7 +14,7 @@
 define ptr @func0000000000000048(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw i64, ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 -8
@@ -48,15 +38,14 @@ entry:
 define ptr @func0000000000000010(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 -1
   ret ptr %7
 }
 
-; 4 occurrences:
-; clamav/optimized/manager.c.ll
+; 3 occurrences:
 ; nuttx/optimized/lib_fmemopen.c.ll
 ; openjdk/optimized/ostream.ll
 ; sqlite/optimized/sqlite3.ll
@@ -64,14 +53,14 @@ entry:
 define ptr @func0000000000000000(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 -2
   ret ptr %7
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; bullet3/optimized/b3CpuNarrowPhase.ll
 ; bullet3/optimized/b3GpuNarrowPhase.ll
 ; bullet3/optimized/btMultiBody.ll
@@ -84,17 +73,18 @@ entry:
 ; nori/optimized/screen.cpp.ll
 ; opencv/optimized/hfs_core.cpp.ll
 ; openexr/optimized/ImfTileOffsets.cpp.ll
+; openspiel/optimized/oh_hell.cc.ll
 ; php/optimized/zend_ssa.ll
 ; yosys/optimized/opt_mem_feedback.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000da(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func00000000000000db(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw i32, ptr %0, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 4
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 4
   ret ptr %7
 }
 
@@ -111,12 +101,12 @@ entry:
 ; velox/optimized/ArraySort.cpp.ll
 ; yosys/optimized/booth.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000ca(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func00000000000000cb(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %"struct.facebook::velox::Timestamp.2700926", ptr %0, i64 %5, i32 1
+  %6 = getelementptr %"struct.facebook::velox::Timestamp.2813643", ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 
@@ -125,12 +115,12 @@ entry:
 ; bullet3/optimized/btGImpactQuantizedBvh.ll
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000004a(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func000000000000004b(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %struct.BT_QUANTIZED_BVH_NODE.2705430, ptr %0, i64 %5, i32 0, i64 1
+  %6 = getelementptr %struct.BT_QUANTIZED_BVH_NODE.2818145, ptr %0, i64 %5, i32 0, i64 1
   ret ptr %6
 }
 
@@ -140,13 +130,13 @@ entry:
 ; openblas/optimized/lapacke_ztp_trans.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw float, ptr %0, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 32
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 32
   ret ptr %7
 }
 
@@ -158,39 +148,61 @@ entry:
 define ptr @func00000000000000d0(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr ptr, ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 8
   ret ptr %7
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; abc/optimized/extraUtilFile.c.ll
+; opencv/optimized/lkpyramid.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000018(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw i8, ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 1
   ret ptr %7
 }
 
-; 4 occurrences:
+; 10 occurrences:
 ; faiss/optimized/NSG.cpp.ll
+; g2o/optimized/edge_se2_lotsofxy.cpp.ll
+; g2o/optimized/edge_se2_pointxy_calib.cpp.ll
+; g2o/optimized/edge_se2_twopointsxy.cpp.ll
+; g2o/optimized/edge_se3_calib.cpp.ll
+; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
+; g2o/optimized/edge_se3_plane_calib.cpp.ll
 ; git/optimized/apply.ll
 ; gromacs/optimized/mshift.cpp.ll
 ; pbrt-v4/optimized/media.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func000000000000001b(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw i8, ptr %0, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 17
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 17
+  ret ptr %7
+}
+
+; 3 occurrences:
+; clamav/optimized/manager.c.ll
+; openblas/optimized/dlar1v.c.ll
+; redis/optimized/hiredis.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000008(ptr %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %2 to i32
+  %4 = add i32 %1, %3
+  %5 = sext i32 %4 to i64
+  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 1
   ret ptr %7
 }
 
@@ -201,7 +213,7 @@ entry:
 define ptr @func00000000000000c8(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw i8, ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 91
@@ -209,56 +221,16 @@ entry:
 }
 
 ; 2 occurrences:
-; gromacs/optimized/dgebd2.cpp.ll
-; gromacs/optimized/sgebd2.cpp.ll
-; Function Attrs: nounwind
-define ptr @func00000000000000d8(ptr %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add nsw i32 %3, %1
-  %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw double, ptr %0, i64 %5
-  %7 = getelementptr i8, ptr %6, i64 8
-  ret ptr %7
-}
-
-; 1 occurrences:
-; openspiel/optimized/oh_hell.cc.ll
-; Function Attrs: nounwind
-define ptr @func00000000000000db(ptr %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add nsw i32 %3, %1
-  %5 = sext i32 %4 to i64
-  %6 = getelementptr %"class.absl::debian2::optional.3290525", ptr %0, i64 %5, i32 0, i32 0, i32 0, i32 1
-  ret ptr %6
-}
-
-; 2 occurrences:
 ; cpython/optimized/instrumentation.ll
 ; postgres/optimized/partprune.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000c2(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func00000000000000c3(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %struct.FmgrInfo.3468934, ptr %0, i64 %5, i32 1
+  %6 = getelementptr %struct.FmgrInfo.3653068, ptr %0, i64 %5, i32 1
   ret ptr %6
-}
-
-; 2 occurrences:
-; openblas/optimized/dlar1v.c.ll
-; redis/optimized/hiredis.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc i64 %2 to i32
-  %4 = add i32 %3, %1
-  %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
-  %7 = getelementptr i8, ptr %6, i64 1
-  ret ptr %7
 }
 
 ; 1 occurrences:
@@ -267,7 +239,7 @@ entry:
 define ptr @func00000000000000c0(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr double, ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 16
@@ -277,29 +249,12 @@ entry:
 ; 1 occurrences:
 ; raylib/optimized/rtext.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000009a(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func000000000000009b(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %struct.Color.3609433, ptr %0, i64 %5, i32 1
-  ret ptr %6
-}
-
-; 6 occurrences:
-; g2o/optimized/edge_se2_lotsofxy.cpp.ll
-; g2o/optimized/edge_se2_pointxy_calib.cpp.ll
-; g2o/optimized/edge_se2_twopointsxy.cpp.ll
-; g2o/optimized/edge_se3_calib.cpp.ll
-; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
-; g2o/optimized/edge_se3_plane_calib.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001b(ptr %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc i64 %2 to i32
-  %4 = add nsw i32 %3, %1
-  %5 = sext i32 %4 to i64
-  %6 = getelementptr %"struct.g2o::BaseVariableSizedEdge<3, g2o::Plane3D>::HessianHelper.3610358", ptr %0, i64 %5, i32 1
+  %6 = getelementptr %struct.Color.3789981, ptr %0, i64 %5, i32 1
   ret ptr %6
 }
 

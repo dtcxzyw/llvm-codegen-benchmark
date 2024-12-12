@@ -11,8 +11,9 @@ entry:
   ret i16 %2
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; spike/optimized/clrs16.ll
+; spike/optimized/clz16.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000009(i16 %0) #0 {
 entry:

@@ -3,17 +3,17 @@ func0000000000000004:                   # @func0000000000000004
 	sub	a0, a2, a1
 .LBB0_2:                                # %entry
 	ret
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	bgeu	a2, a1, .LBB1_2
 	sub	a0, a1, a2
 .LBB1_2:                                # %entry
 	ret
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	bgeu	a1, a2, .LBB2_2
 	sub	a0, a2, a1
 .LBB2_2:                                # %entry
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	bge	a2, a1, .LBB3_2
 	sub	a0, a1, a2
 .LBB3_2:                                # %entry
@@ -28,18 +28,13 @@ func0000000000000008:                   # @func0000000000000008
 	sub	a0, a1, a2
 .LBB5_2:                                # %entry
 	ret
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	bgeu	a2, a1, .LBB6_2
 	sub	a0, a1, a2
 .LBB6_2:                                # %entry
 	ret
-func0000000000000014:                   # @func0000000000000014
-	bgeu	a1, a2, .LBB7_2
-	sub	a0, a2, a1
-.LBB7_2:                                # %entry
-	ret
-func0000000000000038:                   # @func0000000000000038
-	bgeu	a2, a1, .LBB8_2
+func0000000000000068:                   # @func0000000000000068
+	bgeu	a2, a1, .LBB7_2
 	sub	a0, a1, a2
-.LBB8_2:                                # %entry
+.LBB7_2:                                # %entry
 	ret

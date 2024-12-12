@@ -1,5 +1,5 @@
 
-; 61 occurrences:
+; 60 occurrences:
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/ifDec10.c.ll
 ; cmake/optimized/cover.c.ll
@@ -11,7 +11,6 @@
 ; linux/optimized/ahci.ll
 ; linux/optimized/exfldio.ll
 ; linux/optimized/hda_intel.ll
-; linux/optimized/i915_driver.ll
 ; linux/optimized/intel-gtt.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
@@ -107,10 +106,10 @@ entry:
 ; redis/optimized/base.ll
 ; redis/optimized/base.sym.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000004(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000014(i32 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
-  %3 = icmp ult i32 %0, 2
+  %3 = icmp samesign ult i32 %0, 2
   %4 = select i1 %3, i64 0, i64 %2
   ret i64 %4
 }

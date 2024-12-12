@@ -6,8 +6,9 @@ func0000000000000004:                   # @func0000000000000004
 	subw	a0, a0, a1
 	ret
 func0000000000000010:                   # @func0000000000000010
-	sltiu	a2, a2, 8
-	negw	a2, a2
-	and	a1, a1, a2
+	srli	a2, a2, 32
+	beqz	a2, .LBB1_2
+	li	a1, 31
+.LBB1_2:                                # %entry
 	subw	a0, a0, a1
 	ret

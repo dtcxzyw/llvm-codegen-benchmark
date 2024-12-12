@@ -5,5 +5,5 @@ func0000000000000009:                   # @func0000000000000009
 	vrsub.vi	v12, v12, 9
 	vand.vx	v10, v10, a0
 	vsrl.vv	v10, v10, v12
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret

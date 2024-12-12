@@ -1,9 +1,10 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; eastl/optimized/TestAlgorithm.cpp.ll
 ; hyperscan/optimized/ng.cpp.ll
 ; llvm/optimized/AnalysisConsumer.cpp.ll
+; llvm/optimized/Expr.cpp.ll
 ; minetest/optimized/server.cpp.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; rocksdb/optimized/version_set.cc.ll
@@ -71,9 +72,10 @@ entry:
   ret i64 %7
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; llvm/optimized/CallEvent.cpp.ll
 ; llvm/optimized/CoreEngine.cpp.ll
+; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/ExprEngineCXX.cpp.ll
 ; llvm/optimized/ExprEngineCallAndReturn.cpp.ll
 ; llvm/optimized/PathDiagnostic.cpp.ll
@@ -83,7 +85,7 @@ define i64 @func0000000000000005(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
-  %5 = lshr exact i64 %4, 4
+  %5 = lshr exact i64 %4, 3
   %6 = add nsw i64 %5, %0
   %7 = and i64 %6, 4294967295
   ret i64 %7

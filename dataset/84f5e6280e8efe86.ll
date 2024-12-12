@@ -17,4 +17,16 @@ entry:
   ret i1 %5
 }
 
+; 1 occurrences:
+; imgui/optimized/imgui.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000002c(i1 %0, float %1) #0 {
+entry:
+  %2 = fcmp olt float %1, 7.500000e-01
+  %3 = fcmp oge float %1, 0.000000e+00
+  %4 = and i1 %3, %2
+  %5 = select i1 %4, i1 %0, i1 false
+  ret i1 %5
+}
+
 attributes #0 = { nounwind }

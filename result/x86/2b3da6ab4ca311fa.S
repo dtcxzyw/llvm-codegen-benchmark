@@ -8,7 +8,7 @@ func0000000000000030:                   # @func0000000000000030
 	addq	%rdi, %rax
 	leaq	(%rax,%rsi,8), %rax
 	retq
-func00000000000000ba:                   # @func00000000000000ba
+func00000000000000ff:                   # @func00000000000000ff
 	shlq	$7, %rsi
 	leaq	(%rdi,%rdx), %rax
 	addq	%rsi, %rax

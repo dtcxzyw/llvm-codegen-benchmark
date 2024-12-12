@@ -20,7 +20,7 @@ func0000000000000000:                   # @func0000000000000000
 	retq
 func0000000000000006:                   # @func0000000000000006
 	vpmovqd	%ymm0, %xmm0
-	vpsrad	$6, %xmm0, %xmm0
+	vpsrad	$3, %xmm0, %xmm0
 	vpmovsxdq	%xmm0, %ymm0
 	retq
 func0000000000000003:                   # @func0000000000000003

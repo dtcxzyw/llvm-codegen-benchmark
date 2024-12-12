@@ -1,6 +1,12 @@
-func00000000000000a1:                   # @func00000000000000a1
+func00000000000001e1:                   # @func00000000000001e1
 	imulq	$120, %rdx, %rax
 	leaq	80(%rsi,%rax), %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
+	sete	%al
+	retq
+func0000000000000161:                   # @func0000000000000161
+	shlq	$6, %rdx
+	leaq	56(%rsi,%rdx), %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq

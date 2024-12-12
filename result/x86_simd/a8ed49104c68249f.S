@@ -21,7 +21,7 @@ func0000000000000000:                   # @func0000000000000000
 	vpbroadcastd	.LCPI1_0(%rip), %xmm2   # xmm2 = [2,2,2,2]
 	vpbroadcastd	.LCPI1_1(%rip), %xmm2 {%k1} # xmm2 {%k1} = [1,1,1,1]
 	vpaddd	%xmm0, %xmm1, %xmm0
-	vpaddd	%xmm0, %xmm2, %xmm0
+	vpaddd	%xmm2, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
 .LCPI2_0:
@@ -34,7 +34,7 @@ func000000000000000a:                   # @func000000000000000a
 	vpbroadcastd	.LCPI2_0(%rip), %xmm2   # xmm2 = [4294946945,4294946945,4294946945,4294946945]
 	vpbroadcastd	.LCPI2_1(%rip), %xmm2 {%k1} # xmm2 {%k1} = [4294947043,4294947043,4294947043,4294947043]
 	vpaddd	%xmm0, %xmm1, %xmm0
-	vpaddd	%xmm0, %xmm2, %xmm0
+	vpaddd	%xmm2, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
 .LCPI3_0:
@@ -47,7 +47,7 @@ func0000000000000018:                   # @func0000000000000018
 	vpbroadcastd	.LCPI3_0(%rip), %xmm2   # xmm2 = [16,16,16,16]
 	vpbroadcastd	.LCPI3_1(%rip), %xmm2 {%k1} # xmm2 {%k1} = [40,40,40,40]
 	vpaddd	%xmm0, %xmm1, %xmm0
-	vpaddd	%xmm0, %xmm2, %xmm0
+	vpaddd	%xmm2, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
 .LCPI4_0:
@@ -59,8 +59,8 @@ func0000000000000015:                   # @func0000000000000015
 	vpmovd2m	%xmm2, %k1
 	vpbroadcastd	.LCPI4_0(%rip), %xmm2   # xmm2 = [3,3,3,3]
 	vpbroadcastd	.LCPI4_1(%rip), %xmm2 {%k1} # xmm2 {%k1} = [4,4,4,4]
-	vpaddd	%xmm0, %xmm1, %xmm0
-	vpaddd	%xmm0, %xmm2, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
+	vpaddd	%xmm2, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
 .LCPI5_0:
@@ -73,7 +73,7 @@ func0000000000000009:                   # @func0000000000000009
 	vpbroadcastd	.LCPI5_0(%rip), %xmm2   # xmm2 = [32,32,32,32]
 	vpbroadcastd	.LCPI5_1(%rip), %xmm2 {%k1} # xmm2 {%k1} = [64,64,64,64]
 	vpaddd	%xmm0, %xmm1, %xmm0
-	vpaddd	%xmm0, %xmm2, %xmm0
+	vpaddd	%xmm2, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
 .LCPI6_0:
@@ -82,6 +82,6 @@ func000000000000000b:                   # @func000000000000000b
 	vpslld	$31, %xmm2, %xmm2
 	vpmovd2m	%xmm2, %k1
 	vpaddd	.LCPI6_0(%rip){1to4}, %xmm1, %xmm1 {%k1}
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq

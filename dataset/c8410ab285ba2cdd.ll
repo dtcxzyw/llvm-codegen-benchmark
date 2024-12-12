@@ -18,7 +18,7 @@
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; mitsuba3/optimized/zonevector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %0, %1
   %3 = and i64 %2, 15
@@ -26,7 +26,7 @@ entry:
   ret i1 %4
 }
 
-; 22 occurrences:
+; 23 occurrences:
 ; darktable/optimized/RawImage.cpp.ll
 ; darktable/optimized/camera.c.ll
 ; darktable/optimized/introspection_censorize.c.ll
@@ -34,6 +34,7 @@ entry:
 ; duckdb/optimized/comparison_operators.cpp.ll
 ; duckdb/optimized/is_distinct_from.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_arrow.cpp.ll
+; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; duckdb/optimized/ub_duckdb_expression_executor.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_ops.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll
@@ -82,7 +83,7 @@ entry:
 ; entt/optimized/storage.cpp.ll
 ; folly/optimized/String.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw i64 %0, %1
   %3 = and i64 %2, 31
@@ -94,7 +95,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; minetest/optimized/CImageLoaderTGA.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 %0, %1
   %3 = and i64 %2, -505

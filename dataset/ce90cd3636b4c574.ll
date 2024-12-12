@@ -1,5 +1,14 @@
 
-; 57 occurrences:
+; 66 occurrences:
+; boost/optimized/approximately_equals.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_2.cc.ll
@@ -133,7 +142,7 @@ define double @func0000000000000008(double %0, double %1) #0 {
 entry:
   %2 = fcmp oeq double %1, 0.000000e+00
   %3 = select i1 %2, double 1.000000e+00, double %1
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   ret double %4
 }
 
@@ -188,7 +197,7 @@ define double @func000000000000000c(double %0, double %1) #0 {
 entry:
   %2 = fcmp oge double %1, 1.000000e+00
   %3 = select i1 %2, double 1.000000e+00, double %1
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   ret double %4
 }
 

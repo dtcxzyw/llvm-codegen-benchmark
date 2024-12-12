@@ -12,8 +12,9 @@ entry:
   ret i32 %5
 }
 
-; 102 occurrences:
+; 103 occurrences:
 ; abc/optimized/cuddTable.c.ll
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -141,6 +142,18 @@ entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
   %4 = mul nsw i32 %0, -30
+  %5 = add i32 %4, %3
+  ret i32 %5
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 1
+  %3 = trunc i64 %2 to i32
+  %4 = mul i32 %0, -10000000
   %5 = add i32 %4, %3
   ret i32 %5
 }

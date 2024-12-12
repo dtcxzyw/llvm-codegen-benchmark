@@ -7,7 +7,7 @@
 ; quickjs/optimized/quickjs.ll
 ; z3/optimized/nlqsat.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000041(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = icmp eq i32 %0, 0
@@ -15,7 +15,9 @@ entry:
   ret i32 %4
 }
 
-; 45 occurrences:
+; 47 occurrences:
+; boost/optimized/formatter.ll
+; boost/optimized/topology.ll
 ; clamav/optimized/system.c.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; cvc5/optimized/fc_simplex.cpp.ll
@@ -42,6 +44,7 @@ entry:
 ; llvm/optimized/TargetLoweringBase.cpp.ll
 ; llvm/optimized/X86AsmParser.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
+; lvgl/optimized/lv_span.ll
 ; mitsuba3/optimized/hdrfilm.cpp.ll
 ; mitsuba3/optimized/specfilm.cpp.ll
 ; oniguruma/optimized/regexec.ll
@@ -53,7 +56,6 @@ entry:
 ; openmpi/optimized/pmix_mca_base_var.ll
 ; openssl/optimized/libcrypto-lib-evp_lib.ll
 ; openssl/optimized/libcrypto-shlib-evp_lib.ll
-; php/optimized/engine_combinedlcg.ll
 ; portaudio/optimized/pa_process.c.ll
 ; postgres/optimized/datetime.ll
 ; quickjs/optimized/quickjs.ll
@@ -70,13 +72,14 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; lvgl/optimized/lv_dropdown.ll
 ; openssl/optimized/libcrypto-lib-e_des3.ll
 ; openssl/optimized/libcrypto-shlib-e_des3.ll
 ; openssl/optimized/libdefault-lib-cipher_tdes_wrap.ll
 ; rocksdb/optimized/port_posix.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000061(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = icmp eq i32 %0, 0
@@ -114,7 +117,7 @@ entry:
 ; 1 occurrences:
 ; jq/optimized/jv.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000026(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000046(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = icmp slt i32 %0, 0
@@ -140,7 +143,7 @@ entry:
 ; git/optimized/column.ll
 ; hermes/optimized/CharacterProperties.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = icmp eq i32 %0, 0
@@ -166,7 +169,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SymbolizableObjectFile.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000024(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000044(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = icmp ult i32 %0, 4
@@ -178,22 +181,11 @@ entry:
 ; libwebp/optimized/filters_utils.c.ll
 ; libzmq/optimized/zmq.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000003a(i32 %0, i64 %1) #0 {
+define i32 @func000000000000006a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = icmp sgt i32 %0, -1
   %4 = select i1 %3, i32 %2, i32 -1
-  ret i32 %4
-}
-
-; 1 occurrences:
-; linux/optimized/timeout.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = icmp ugt i32 %0, 63
-  %4 = select i1 %3, i32 %2, i32 0
   ret i32 %4
 }
 

@@ -9,14 +9,15 @@ define i32 @func0000000000000018(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 0
   %3 = zext i1 %2 to i32
-  %4 = xor i32 %3, %0
+  %4 = xor i32 %0, %3
   ret i32 %4
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/acbUtil.c.ll
 ; abc/optimized/cbaBlast.c.ll
+; abc/optimized/cmdUtils.c.ll
 ; abc/optimized/giaDup.c.ll
 ; abc/optimized/mpmPre.c.ll
 ; php/optimized/ir_emit.ll
@@ -28,7 +29,7 @@ define i32 @func0000000000000002(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 86
   %3 = zext i1 %2 to i32
-  %4 = xor i32 %3, %0
+  %4 = xor i32 %0, %3
   ret i32 %4
 }
 

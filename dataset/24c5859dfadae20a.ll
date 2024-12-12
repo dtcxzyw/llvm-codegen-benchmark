@@ -1,5 +1,5 @@
 
-; 234 occurrences:
+; 242 occurrences:
 ; abc/optimized/abcCascade.c.ll
 ; abc/optimized/rsbDec6.c.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
@@ -16,6 +16,7 @@
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/ipv4_address.ll
 ; brotli/optimized/encode.c.ll
 ; clamav/optimized/Lzma2Dec.c.ll
 ; clamav/optimized/LzmaDec.c.ll
@@ -32,7 +33,6 @@
 ; coreutils-rs/optimized/3fp1x41wzh4l1rh9.ll
 ; coreutils-rs/optimized/4akyoq84dmd3ywue.ll
 ; coreutils-rs/optimized/4mlyvoaplnk0x351.ll
-; cpython/optimized/Hacl_Hash_SHA3.ll
 ; cpython/optimized/fuzzer.ll
 ; cpython/optimized/test_lock.ll
 ; curl/optimized/libcurl_la-http.ll
@@ -91,12 +91,10 @@
 ; linux/optimized/rtc-mc146818-lib.ll
 ; linux/optimized/shmem.ll
 ; linux/optimized/skl_scaler.ll
-; linux/optimized/socket_sysfs.ll
 ; linux/optimized/swap_state.ll
 ; linux/optimized/uncore_nhmex.ll
 ; linux/optimized/vt.ll
 ; linux/optimized/xt_conntrack.ll
-; linux/optimized/xt_state.ll
 ; linux/optimized/xz_dec_lzma2.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; meilisearch-rs/optimized/2g3cn5cmegynvtue.ll
@@ -123,8 +121,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -216,6 +212,8 @@
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; tokio-rs/optimized/2zetnb9vrfbe3smf.ll
 ; tomlplusplus/optimized/toml.cpp.ll
+; turborepo-rs/optimized/0d11a6ei085iwkkzrqqfde2g8.ll
+; turborepo-rs/optimized/3wg34qzs64td8o5fq33fcg5rk.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; velox/optimized/DateTimeFormatter.cpp.ll
@@ -234,6 +232,16 @@
 ; wolfssl/optimized/api.c.ll
 ; yosys/optimized/fstdata.ll
 ; z3/optimized/api_log.cpp.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0) #0 {
 entry:

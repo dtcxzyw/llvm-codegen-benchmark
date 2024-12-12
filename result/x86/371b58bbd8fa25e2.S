@@ -12,6 +12,16 @@ func000000000000003a:                   # @func000000000000003a
 	addl	%edx, %eax
 	shrl	$4, %eax
 	retq
+func0000000000000010:                   # @func0000000000000010
+	movzbl	%dil, %eax
+	movl	%eax, %ecx
+	shll	$8, %ecx
+	subl	%eax, %ecx
+	movzwl	%cx, %eax
+	shrl	$2, %eax
+	imull	$5243, %eax, %eax               # imm = 0x147B
+	shrl	$17, %eax
+	retq
 func000000000000001a:                   # @func000000000000001a
 	movzbl	%dil, %eax
 	imull	$100, %eax, %eax

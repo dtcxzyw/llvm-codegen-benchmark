@@ -33,8 +33,7 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
-; libquic/optimized/custom_extensions.c.ll
+; 3 occurrences:
 ; linux/optimized/hub.ll
 ; linux/optimized/mprotect.ll
 ; spike/optimized/vclz_v.ll

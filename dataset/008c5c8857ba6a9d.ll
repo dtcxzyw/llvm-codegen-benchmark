@@ -1,21 +1,7 @@
 
-%struct.bio_vec.3352829 = type { ptr, i32, i32 }
+%struct.bio_vec.3540561 = type { ptr, i32, i32 }
 
-; 3 occurrences:
-; imgui/optimized/imgui_tables.cpp.ll
-; re2/optimized/dfa.cc.ll
-; sqlite/optimized/sqlite3.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i16 %1) #0 {
-entry:
-  %2 = zext nneg i16 %1 to i64
-  %3 = add nuw nsw i64 %2, 4294967295
-  %4 = and i64 %3, 4294967295
-  %5 = getelementptr nusw i32, ptr %0, i64 %4
-  ret ptr %5
-}
-
-; 73 occurrences:
+; 75 occurrences:
 ; c3c/optimized/llvm_codegen.c.ll
 ; c3c/optimized/llvm_codegen_function.c.ll
 ; clamav/optimized/bytecode.c.ll
@@ -58,7 +44,6 @@ entry:
 ; llvm/optimized/InstrEmitter.cpp.ll
 ; llvm/optimized/OptTable.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/ResourcePriorityQueue.cpp.ll
 ; llvm/optimized/ScheduleDAGFast.cpp.ll
@@ -74,10 +59,13 @@ entry:
 ; llvm/optimized/X86ISelLoweringCall.cpp.ll
 ; luajit/optimized/lj_opt_loop.ll
 ; luajit/optimized/lj_opt_loop_dyn.ll
+; lvgl/optimized/lv_file_explorer.ll
+; lvgl/optimized/lv_obj_tree.ll
 ; openjdk/optimized/ciEnv.ll
 ; openjdk/optimized/ciObjArrayKlass.ll
 ; openjdk/optimized/classFileParser.ll
 ; openjdk/optimized/jvmciCompilerToVM.ll
+; openjdk/optimized/symbolTable.ll
 ; openjdk/optimized/systemDictionary.ll
 ; php/optimized/der.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
@@ -90,22 +78,36 @@ entry:
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i16 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = add nuw nsw i64 %2, 4294967295
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 8 occurrences:
+; 2 occurrences:
+; imgui/optimized/imgui_tables.cpp.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001f(ptr %0, i16 %1) #0 {
+entry:
+  %2 = zext nneg i16 %1 to i64
+  %3 = add nuw nsw i64 %2, 4294967295
+  %4 = and i64 %3, 4294967295
+  %5 = getelementptr nusw nuw i16, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 9 occurrences:
 ; linux/optimized/af_packet.ll
 ; linux/optimized/bio.ll
 ; linux/optimized/gen_stats.ll
 ; linux/optimized/rtnetlink.ll
 ; linux/optimized/services.ll
 ; postgres/optimized/gindatapage.ll
+; postgres/optimized/ginxlog.ll
 ; postgres/optimized/twophase.ll
 ; postgres/optimized/xactdesc.ll
 ; Function Attrs: nounwind
@@ -114,7 +116,7 @@ entry:
   %2 = zext i16 %1 to i64
   %3 = add nuw nsw i64 %2, 4294967295
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr %struct.bio_vec.3352829, ptr %0, i64 %4
+  %5 = getelementptr %struct.bio_vec.3540561, ptr %0, i64 %4
   ret ptr %5
 }
 

@@ -1,5 +1,5 @@
 
-; 115 occurrences:
+; 114 occurrences:
 ; arrow/optimized/api_scalar.cc.ll
 ; arrow/optimized/api_vector.cc.ll
 ; arrow/optimized/data.cc.ll
@@ -74,7 +74,6 @@
 ; llvm/optimized/PassBuilder.cpp.ll
 ; llvm/optimized/PredicateInfo.cpp.ll
 ; llvm/optimized/PromoteMemoryToRegister.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RegionInfo.cpp.ll
 ; llvm/optimized/RegionPass.cpp.ll
 ; llvm/optimized/RegionPrinter.cpp.ll

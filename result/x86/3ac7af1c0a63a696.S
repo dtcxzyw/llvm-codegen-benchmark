@@ -96,10 +96,3 @@ func0000000000000020:                   # @func0000000000000020
 	movzbl	%al, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000040:                   # @func0000000000000040
-	cmpl	$100, %edx
-	setae	%al
-	andb	%sil, %al
-	movzbl	%al, %eax
-	addl	%edi, %eax
-	retq

@@ -41,11 +41,25 @@ func0000000000000009:                   # @func0000000000000009
 .LBB5_2:                                # %entry
 	mv	a0, a1
 	ret
+func0000000000000014:                   # @func0000000000000014
+	sext.w	a2, a2
+	sext.w	a3, a1
+	bltu	a3, a2, .LBB6_2
+	mv	a0, a1
+.LBB6_2:                                # %entry
+	ret
+func0000000000000018:                   # @func0000000000000018
+	sext.w	a3, a1
+	sext.w	a2, a2
+	bltu	a2, a3, .LBB7_2
+	mv	a0, a1
+.LBB7_2:                                # %entry
+	ret
 func000000000000000c:                   # @func000000000000000c
 	sext.w	a2, a2
 	sext.w	a3, a1
-	beq	a3, a2, .LBB6_2
+	beq	a3, a2, .LBB8_2
 	mv	a1, a0
-.LBB6_2:                                # %entry
+.LBB8_2:                                # %entry
 	mv	a0, a1
 	ret

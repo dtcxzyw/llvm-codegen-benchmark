@@ -1,7 +1,8 @@
 
-; 138 occurrences:
+; 133 occurrences:
 ; abc/optimized/bmcCexCut.c.ll
 ; abc/optimized/cuddCache.c.ll
+; boost/optimized/to_chars.ll
 ; cjson/optimized/cJSON.c.ll
 ; cpython/optimized/longobject.ll
 ; cpython/optimized/pyhash.ll
@@ -77,7 +78,6 @@
 ; openexr/optimized/ImfHuf.cpp.ll
 ; openexr/optimized/internal_huf.c.ll
 ; openjdk/optimized/zMark.ll
-; openspiel/optimized/2048.cc.ll
 ; openssl/optimized/libcrypto-lib-rsaz_exp_x2.ll
 ; openssl/optimized/libcrypto-shlib-rsaz_exp_x2.ll
 ; openusd/optimized/openexr-c.c.ll
@@ -99,14 +99,9 @@
 ; simdjson/optimized/simdjson.cpp.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; spike/optimized/csrs.ll
-; spike/optimized/f128_to_f16.ll
-; spike/optimized/f128_to_f32.ll
 ; spike/optimized/f16_mul.ll
 ; spike/optimized/f32_mul.ll
 ; spike/optimized/f32_to_bf16.ll
-; spike/optimized/f32_to_f16.ll
-; spike/optimized/f64_to_f16.ll
-; spike/optimized/f64_to_f32.ll
 ; spike/optimized/s_mulAddF16.ll
 ; spike/optimized/s_mulAddF32.ll
 ; stockfish/optimized/movegen.ll
@@ -142,7 +137,7 @@
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   ret i64 %3
 }
 
@@ -229,13 +224,12 @@ entry:
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; llvm/optimized/X86InstructionSelector.cpp.ll
 ; lua/optimized/lmathlib.ll
-; luajit/optimized/lj_prng.ll
-; luajit/optimized/lj_prng_dyn.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; node/optimized/libnode.node_serdes.ll
 ; oiio/optimized/ddsinput.cpp.ll
 ; oiio/optimized/xxhash.cpp.ll
 ; openexr/optimized/ImfIDManifest.cpp.ll
+; openspiel/optimized/2048.cc.ll
 ; openssl/optimized/libcrypto-lib-bn_nist.ll
 ; openssl/optimized/libcrypto-lib-curve25519.ll
 ; openssl/optimized/libcrypto-shlib-bn_nist.ll
@@ -281,6 +275,7 @@ entry:
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wireshark/optimized/packet-xra.c.ll
 ; wolfssl/optimized/aes.c.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
@@ -289,8 +284,7 @@ entry:
   ret i64 %3
 }
 
-; 20 occurrences:
-; cmake/optimized/archive_pack_dev.c.ll
+; 19 occurrences:
 ; jemalloc/optimized/emap.ll
 ; jemalloc/optimized/emap.pic.ll
 ; jemalloc/optimized/emap.sym.ll

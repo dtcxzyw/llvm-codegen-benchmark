@@ -7,7 +7,7 @@
 ; stb/optimized/stb_image_write.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000022(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000042(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = icmp eq i32 %0, 0
@@ -20,7 +20,7 @@ entry:
 ; darktable/optimized/introspection_colorzones.c.ll
 ; stb/optimized/stb_image_write.c.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000002d(i32 %0, i32 %1) #0 {
+define i64 @func000000000000004d(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = icmp slt i32 %0, 65535
@@ -37,7 +37,7 @@ entry:
 ; llvm/optimized/ASTWriterStmt.cpp.ll
 ; llvm/optimized/TemplateName.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000030(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000050(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -99
   %3 = icmp ugt i32 %0, 199
@@ -46,23 +46,11 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
-; lief/optimized/aria.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000069(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add nuw nsw i32 %1, 1
-  %3 = icmp ult i32 %0, 128
-  %4 = select i1 %3, i32 %2, i32 0
-  %5 = zext nneg i32 %4 to i64
-  ret i64 %5
-}
-
 ; 2 occurrences:
 ; llvm/optimized/NamedStreamMap.cpp.ll
 ; llvm/optimized/PDBFileBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000054(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000094(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 2
   %3 = icmp sgt i32 %0, -1
@@ -80,7 +68,7 @@ entry:
 ; raylib/optimized/rtextures.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000023(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000043(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = icmp eq i32 %0, 0
@@ -119,7 +107,7 @@ entry:
 ; opencv/optimized/lkpyramid.cpp.ll
 ; opencv/optimized/rlof_localflow.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000075(i32 %0, i32 %1) #0 {
+define i64 @func00000000000000d5(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = icmp sgt i32 %0, 1
@@ -131,7 +119,7 @@ entry:
 ; 1 occurrences:
 ; graphviz/optimized/exparse.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000048(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -258
   %3 = icmp ult i32 %0, 5

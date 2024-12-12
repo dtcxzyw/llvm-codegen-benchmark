@@ -1,5 +1,5 @@
 
-; 418 occurrences:
+; 422 occurrences:
 ; abc/optimized/cuddTable.c.ll
 ; abc/optimized/epd.c.ll
 ; abc/optimized/solver.c.ll
@@ -14,6 +14,8 @@
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; casadi/optimized/sx_function.cpp.ll
 ; coreutils-rs/optimized/56596qkor8w4ma8l.ll
 ; coreutils-rs/optimized/yeky3kbm8zdu7bp.ll
@@ -136,6 +138,7 @@
 ; luau/optimized/IrLoweringA64.cpp.ll
 ; luau/optimized/lnumprint.cpp.ll
 ; luau/optimized/ltable.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nix/optimized/attrs.ll
 ; nix/optimized/binary-cache-store.ll
@@ -155,8 +158,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -216,7 +217,6 @@
 ; nuttx/optimized/lib_dtoa_engine.c.ll
 ; nuttx/optimized/lib_gamma.c.ll
 ; nuttx/optimized/lib_lgamma.c.ll
-; nuttx/optimized/lib_trunc.c.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -418,6 +418,10 @@
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; wasmtime-rs/optimized/4u85yh8sn1llpfha.ll
 ; z3/optimized/mpf.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(double %0) #0 {
 entry:
@@ -426,7 +430,8 @@ entry:
   ret i64 %2
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/approximately_equals.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; luau/optimized/IrLoweringA64.cpp.ll
 ; ruby/optimized/util.ll

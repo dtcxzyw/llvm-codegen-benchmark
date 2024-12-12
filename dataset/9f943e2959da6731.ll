@@ -1,5 +1,6 @@
 
-; 15 occurrences:
+; 16 occurrences:
+; boost/optimized/normalize.ll
 ; clamav/optimized/fmap.c.ll
 ; clamav/optimized/ishield.c.ll
 ; duckdb/optimized/ub_duckdb_execution_index.cpp.ll
@@ -8,10 +9,10 @@
 ; hermes/optimized/APInt.cpp.ll
 ; linux/optimized/init_64.ll
 ; linux/optimized/mremap.ll
-; linux/optimized/pagewalk.ll
 ; linux/optimized/vmalloc.ll
 ; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/ScaledNumber.cpp.ll
+; lvgl/optimized/lv_text.ll
 ; postgres/optimized/xlogutils.ll
 ; qemu/optimized/linux-user_elfload.c.ll
 ; qemu/optimized/linux-user_mmap.c.ll
@@ -24,7 +25,8 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/approximately_equals.ll
 ; ring-rs/optimized/4gu90fp46fobkewp.ll
 ; spike/optimized/vector_unit.ll
 ; tls-rs/optimized/z2cy5bf5cayilz9.ll

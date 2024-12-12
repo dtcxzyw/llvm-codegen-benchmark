@@ -1,8 +1,12 @@
 
-; 38 occurrences:
+; 42 occurrences:
 ; abc/optimized/bmcBmc2.c.ll
 ; abc/optimized/fraSat.c.ll
 ; abc/optimized/ivyFraig.c.ll
+; boost/optimized/area.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/within.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_atrous.c.ll
 ; darktable/optimized/introspection_denoiseprofile.c.ll
@@ -43,7 +47,7 @@ define double @func0000000000000001(double %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = sitofp i32 %3 to double
-  %5 = fmul double %4, %0
+  %5 = fmul double %0, %4
   ret double %5
 }
 
@@ -74,7 +78,7 @@ define double @func0000000000000000(double %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = sitofp i32 %3 to double
-  %5 = fmul double %4, %0
+  %5 = fmul double %0, %4
   ret double %5
 }
 

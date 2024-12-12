@@ -12,9 +12,10 @@ entry:
   ret i32 %3
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; icu/optimized/punycode.ll
 ; linux/optimized/hda_codec.ll
+; lvgl/optimized/lv_bar.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:

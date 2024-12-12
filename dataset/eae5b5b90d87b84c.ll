@@ -1,5 +1,5 @@
 
-; 719 occurrences:
+; 760 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_crc_test.cc.ll
@@ -21,6 +21,50 @@
 ; assimp/optimized/COBLoader.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/attribute_name.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/env.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/extensions.ll
+; boost/optimized/filter_parser.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/run_exe.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/shared_work.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/sub_launcher.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/topology.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
 ; casadi/optimized/bspline.cpp.ll
 ; casadi/optimized/casadi_c.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
@@ -423,7 +467,6 @@
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -494,7 +537,6 @@
 ; opencv/optimized/checker_detector.cpp.ll
 ; opencv/optimized/container_avi.cpp.ll
 ; opencv/optimized/contours_common.cpp.ll
-; opencv/optimized/core_detect.cpp.ll
 ; opencv/optimized/erfilter.cpp.ll
 ; opencv/optimized/gasync.cpp.ll
 ; opencv/optimized/gfluidbackend.cpp.ll
@@ -711,7 +753,6 @@
 ; yosys/optimized/dft_tag.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/preproc.ll
 ; yosys/optimized/qbfsat.ll
 ; yosys/optimized/verilog_parser.tab.ll
@@ -729,9 +770,11 @@ entry:
   ret i64 %6
 }
 
-; 54 occurrences:
+; 55 occurrences:
 ; assimp/optimized/SIBImporter.cpp.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; casadi/optimized/polynomial.cpp.ll
 ; cmake/optimized/cmQtAutoMocUic.cxx.ll
 ; eastl/optimized/BenchmarkDeque.cpp.ll
@@ -771,7 +814,6 @@ entry:
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
 ; opencv/optimized/cap_mjpeg_decoder.cpp.ll
 ; opencv/optimized/chessboard.cpp.ll
-; opencv/optimized/core_detect.cpp.ll
 ; opencv/optimized/large_kinfu.cpp.ll
 ; openusd/optimized/adapterManager.cpp.ll
 ; openusd/optimized/pathExpression.cpp.ll

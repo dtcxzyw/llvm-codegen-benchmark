@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; folly/optimized/JsonTestUtil.cpp.ll
 ; folly/optimized/LogConfigParser.cpp.ll
@@ -8,6 +8,7 @@
 ; hdf5/optimized/H5Tconv_float.c.ll
 ; openssl/optimized/libcrypto-lib-params.ll
 ; openssl/optimized/libcrypto-shlib-params.ll
+; php/optimized/zend_API.ll
 ; protobuf/optimized/parser.cc.ll
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/time.ll
@@ -17,7 +18,7 @@ define i1 @func0000000000000007(double %0) #0 {
 entry:
   %1 = fptosi double %0 to i64
   %2 = sitofp i64 %1 to double
-  %3 = fcmp une double %2, %0
+  %3 = fcmp une double %0, %2
   ret i1 %3
 }
 
@@ -61,7 +62,7 @@ define i1 @func0000000000000008(double %0) #0 {
 entry:
   %1 = fptosi double %0 to i64
   %2 = sitofp i64 %1 to double
-  %3 = fcmp oeq double %2, %0
+  %3 = fcmp oeq double %0, %2
   ret i1 %3
 }
 
@@ -72,7 +73,7 @@ define i1 @func0000000000000004(double %0) #0 {
 entry:
   %1 = fptosi double %0 to i64
   %2 = sitofp i64 %1 to double
-  %3 = fcmp olt double %2, %0
+  %3 = fcmp ogt double %0, %2
   ret i1 %3
 }
 

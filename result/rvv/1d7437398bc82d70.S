@@ -8,7 +8,7 @@ func0000000000000001:                   # @func0000000000000001
 	vsll.vi	v10, v10, 5
 	li	a0, -1024
 	vand.vx	v10, v10, a0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 .LCPI1_0:
 	.quad	7905747460161236408             # 0x6db6db6db6db6db8
@@ -35,7 +35,7 @@ func0000000000000004:                   # @func0000000000000004
 	vsrl.vx	v12, v12, a0
 	vadd.vv	v10, v10, v12
 	vand.vi	v10, v10, -4
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 .LCPI4_0:
 	.quad	6148914691236517208             # 0x5555555555555558
@@ -59,5 +59,5 @@ func0000000000000000:                   # @func0000000000000000
 	vadd.vv	v10, v10, v12
 	li	a0, 32
 	vsll.vx	v10, v10, a0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret

@@ -3,11 +3,11 @@
 ; icu/optimized/plurrule.ll
 ; re2/optimized/onepass.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000a8(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, 1
-  %5 = icmp ult i32 %4, %1
+  %5 = icmp ugt i32 %1, %4
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }
@@ -15,11 +15,11 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/arguments.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000086(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, 1
-  %5 = icmp sgt i32 %4, %1
+  %5 = icmp slt i32 %1, %4
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }
@@ -27,11 +27,11 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/url_canon_ip.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000a1(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, 1
-  %5 = icmp eq i32 %4, %1
+  %5 = icmp eq i32 %1, %4
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }
@@ -39,11 +39,11 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/Instructions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000008c(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, 1
-  %5 = icmp ne i32 %4, %1
+  %5 = icmp ne i32 %1, %4
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }
@@ -53,11 +53,11 @@ entry:
 ; z3/optimized/mpfx.cpp.ll
 ; z3/optimized/seq_rewriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000018c(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, 1
-  %5 = icmp ne i32 %4, %1
+  %5 = icmp ne i32 %1, %4
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }
@@ -67,11 +67,11 @@ entry:
 ; gromacs/optimized/xtc3.c.ll
 ; xgboost/optimized/comm.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ea(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000001ca(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, 3
-  %5 = icmp slt i32 %4, %1
+  %5 = icmp sgt i32 %1, %4
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }
@@ -83,7 +83,7 @@ define i1 @func000000000000000a(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, 2
-  %5 = icmp slt i32 %4, %1
+  %5 = icmp sgt i32 %1, %4
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }
@@ -91,11 +91,11 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/featureselect.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000101(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, 1
-  %5 = icmp eq i32 %4, %1
+  %5 = icmp eq i32 %1, %4
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }
@@ -103,11 +103,11 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d8(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000001a8(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, 2
-  %5 = icmp ult i32 %4, %1
+  %5 = icmp ugt i32 %1, %4
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }

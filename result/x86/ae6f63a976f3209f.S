@@ -16,6 +16,12 @@ func0000000000000008:                   # @func0000000000000008
 	cmovbq	%rsi, %rax
 	andq	$-2049, %rax                    # imm = 0xF7FF
 	retq
+func0000000000000014:                   # @func0000000000000014
+	shrq	$32, %rdx
+	cmovneq	%rsi, %rdi
+	movabsq	$-15393162788865, %rax          # imm = 0xFFFFF1FFFFFFFFFF
+	andq	%rdi, %rax
+	retq
 func000000000000000c:                   # @func000000000000000c
 	testq	%rdx, %rdx
 	cmoveq	%rsi, %rdi

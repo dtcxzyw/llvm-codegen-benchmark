@@ -1,5 +1,5 @@
 
-; 100 occurrences:
+; 97 occurrences:
 ; abc/optimized/giaDup.c.ll
 ; abc/optimized/giaHash.c.ll
 ; abc/optimized/giaIso.c.ll
@@ -39,7 +39,6 @@
 ; llvm/optimized/CGPointerAuth.cpp.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
 ; llvm/optimized/RISCVDisassembler.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVMCCodeEmitter.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
@@ -80,7 +79,6 @@
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; openvdb/optimized/points.cc.ll
 ; php/optimized/spl_dllist.ll
-; postgres/optimized/rangetypes_gist.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; qemu/optimized/hw_scsi_megasas.c.ll
 ; qemu/optimized/hw_usb_dev-serial.c.ll
@@ -95,7 +93,6 @@
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wasmtime-rs/optimized/504voril3a5lulnh.ll
 ; wireshark/optimized/packet-autosar-ipdu-multiplexer.c.ll
-; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-signal-pdu.c.ll
 ; z3/optimized/sat_aig_cuts.cpp.ll
 ; z3/optimized/sat_bcd.cpp.ll

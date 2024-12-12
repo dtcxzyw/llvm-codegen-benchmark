@@ -3,7 +3,7 @@
 ; linux/optimized/ohci-hcd.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 240
   %4 = icmp eq i32 %3, 48
@@ -17,7 +17,7 @@ entry:
 ; icu/optimized/uchriter.ll
 ; icu/optimized/ustrcase.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000042a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 64512
   %4 = icmp eq i32 %3, 56320
@@ -30,7 +30,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/rand.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000311(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000c21(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 4095
   %4 = icmp eq i32 %3, 6

@@ -1,9 +1,8 @@
 
-%"class.tbb::detail::d1::blocked_range.2521460" = type { i64, i64, i64 }
-%"class.tbb::detail::d1::blocked_range.2523063" = type { i64, i64, i64 }
-%"class.tbb::detail::d1::blocked_range.3188756" = type { i64, i64, i64 }
+%"class.tbb::detail::d1::blocked_range.2635870" = type { i64, i64, i64 }
+%"class.tbb::detail::d1::blocked_range.2637472" = type { i64, i64, i64 }
 
-; 187 occurrences:
+; 214 occurrences:
 ; mold/optimized/arch-arm32.cc.ll
 ; mold/optimized/arch-ppc64v1.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
@@ -164,6 +163,33 @@
 ; mold/optimized/thunks.cc.PPC64V2.cc.ll
 ; nori/optimized/main.cpp.ll
 ; oiio/optimized/thread.cpp.ll
+; openusd/optimized/authoring.cpp.ll
+; openusd/optimized/bakeSkinning.cpp.ll
+; openusd/optimized/blendShapeQuery.cpp.ll
+; openusd/optimized/crateData.cpp.ll
+; openusd/optimized/delegate.cpp.ll
+; openusd/optimized/flatNormals.cpp.ll
+; openusd/optimized/generativeProceduralResolvingSceneIndex.cpp.ll
+; openusd/optimized/materialBindingAPI.cpp.ll
+; openusd/optimized/pathTable.cpp.ll
+; openusd/optimized/piPrototypeSceneIndex.cpp.ll
+; openusd/optimized/pointBased.cpp.ll
+; openusd/optimized/pointInstancer.cpp.ll
+; openusd/optimized/prim.cpp.ll
+; openusd/optimized/primGather.cpp.ll
+; openusd/optimized/primTypeIndex.cpp.ll
+; openusd/optimized/renderIndex.cpp.ll
+; openusd/optimized/resolvedAttributeCache.cpp.ll
+; openusd/optimized/schemaRegistry.cpp.ll
+; openusd/optimized/simplify.cpp.ll
+; openusd/optimized/skeletonAdapter.cpp.ll
+; openusd/optimized/smoothNormals.cpp.ll
+; openusd/optimized/stitchClips.cpp.ll
+; openusd/optimized/tbbKernel.cpp.ll
+; openusd/optimized/testWorkLoops.cpp.ll
+; openusd/optimized/testWorkReduce.cpp.ll
+; openusd/optimized/testWorkThreadLimits.cpp.ll
+; openusd/optimized/utils.cpp.ll
 ; openvdb/optimized/Activate.cc.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/AttributeArrayString.cc.ll
@@ -192,17 +218,17 @@
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; openvdb/optimized/points.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i8 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, 1
   %3 = and i8 %2, 7
   %4 = zext nneg i8 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 16
-  %6 = getelementptr nusw %"class.tbb::detail::d1::blocked_range.2521460", ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 16
+  %6 = getelementptr nusw nuw %"class.tbb::detail::d1::blocked_range.2635870", ptr %5, i64 %4
   ret ptr %6
 }
 
-; 55 occurrences:
+; 57 occurrences:
 ; lief/optimized/aria.c.ll
 ; mold/optimized/gc-sections.cc.ALPHA.cc.ll
 ; mold/optimized/gc-sections.cc.ARM32.cc.ll
@@ -258,67 +284,16 @@ entry:
 ; mold/optimized/passes.cc.SH4.cc.ll
 ; mold/optimized/passes.cc.SPARC64.cc.ll
 ; mold/optimized/passes.cc.X86_64.cc.ll
-; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i8 %1) #0 {
-entry:
-  %2 = add nuw nsw i8 %1, 1
-  %3 = and i8 %2, 7
-  %4 = zext nneg i8 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 16
-  %6 = getelementptr nusw %"class.tbb::detail::d1::blocked_range.2523063", ptr %5, i64 %4
-  ret ptr %6
-}
-
-; 27 occurrences:
-; openusd/optimized/authoring.cpp.ll
-; openusd/optimized/bakeSkinning.cpp.ll
-; openusd/optimized/blendShapeQuery.cpp.ll
-; openusd/optimized/crateData.cpp.ll
-; openusd/optimized/delegate.cpp.ll
-; openusd/optimized/flatNormals.cpp.ll
-; openusd/optimized/generativeProceduralResolvingSceneIndex.cpp.ll
-; openusd/optimized/materialBindingAPI.cpp.ll
-; openusd/optimized/pathTable.cpp.ll
-; openusd/optimized/piPrototypeSceneIndex.cpp.ll
-; openusd/optimized/pointBased.cpp.ll
-; openusd/optimized/pointInstancer.cpp.ll
-; openusd/optimized/prim.cpp.ll
-; openusd/optimized/primGather.cpp.ll
-; openusd/optimized/primTypeIndex.cpp.ll
-; openusd/optimized/renderIndex.cpp.ll
-; openusd/optimized/resolvedAttributeCache.cpp.ll
-; openusd/optimized/schemaRegistry.cpp.ll
-; openusd/optimized/simplify.cpp.ll
-; openusd/optimized/skeletonAdapter.cpp.ll
-; openusd/optimized/smoothNormals.cpp.ll
-; openusd/optimized/stitchClips.cpp.ll
-; openusd/optimized/tbbKernel.cpp.ll
-; openusd/optimized/testWorkLoops.cpp.ll
-; openusd/optimized/testWorkReduce.cpp.ll
-; openusd/optimized/testWorkThreadLimits.cpp.ll
-; openusd/optimized/utils.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i8 %1) #0 {
-entry:
-  %2 = add i8 %1, 1
-  %3 = and i8 %2, 7
-  %4 = zext nneg i8 %3 to i64
-  %5 = getelementptr nusw nuw i8, ptr %0, i64 16
-  %6 = getelementptr nusw %"class.tbb::detail::d1::blocked_range.3188756", ptr %5, i64 %4
-  ret ptr %6
-}
-
-; 2 occurrences:
 ; openusd/optimized/crateData.cpp.ll
 ; openusd/optimized/piPrototypeSceneIndex.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007e(ptr %0, i8 %1) #0 {
+define ptr @func000000000000007f(ptr %0, i8 %1) #0 {
 entry:
   %2 = add nuw nsw i8 %1, 1
   %3 = and i8 %2, 7
   %4 = zext nneg i8 %3 to i64
   %5 = getelementptr nusw nuw i8, ptr %0, i64 16
-  %6 = getelementptr nusw %"class.tbb::detail::d1::blocked_range.3188756", ptr %5, i64 %4
+  %6 = getelementptr nusw nuw %"class.tbb::detail::d1::blocked_range.2637472", ptr %5, i64 %4
   ret ptr %6
 }
 

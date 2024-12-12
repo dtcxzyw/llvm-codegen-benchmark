@@ -9,16 +9,12 @@ entry:
   ret i64 %3
 }
 
-; 12 occurrences:
+; 8 occurrences:
 ; opencv/optimized/softfloat.cpp.ll
 ; qemu/optimized/source_s_addMagsF16.c.ll
 ; qemu/optimized/source_s_mulAddF16.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; ruby/optimized/bignum.ll
-; spike/optimized/f16_to_i32_r_minMag.ll
-; spike/optimized/f16_to_i64_r_minMag.ll
-; spike/optimized/f16_to_ui32_r_minMag.ll
-; spike/optimized/f16_to_ui64_r_minMag.ll
 ; spike/optimized/s_addMagsF16.ll
 ; spike/optimized/s_mulAddF16.ll
 ; spike/optimized/s_mulAddF32.ll
@@ -30,7 +26,7 @@ entry:
   ret i64 %3
 }
 
-; 167 occurrences:
+; 166 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/examples_test.cc.ll
@@ -81,7 +77,6 @@ entry:
 ; linux/optimized/intel_cx0_phy.ll
 ; linux/optimized/mpih-div.ll
 ; linux/optimized/sd.ll
-; linux/optimized/vclock_gettime.ll
 ; linux/optimized/zstd_decompress_block.ll
 ; llvm/optimized/RISCVMergeBaseOffset.cpp.ll
 ; llvm/optimized/ScaledNumber.cpp.ll

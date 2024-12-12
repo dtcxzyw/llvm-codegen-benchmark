@@ -15,7 +15,7 @@ entry:
 ; cmake/optimized/nghttp2_hd.c.ll
 ; nghttp2/optimized/nghttp2_hd.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000128(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000248(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = add i64 %0, 1
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a4(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = add nsw i64 %0, -2
@@ -39,7 +39,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000154(i64 %0, i32 %1) #0 {
+define i1 @func00000000000002a4(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = add nsw i64 %0, -5
@@ -51,7 +51,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000158(i64 %0, i32 %1) #0 {
+define i1 @func00000000000002a8(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = add nsw i64 %0, -5
@@ -63,7 +63,7 @@ entry:
 ; 1 occurrences:
 ; kcp/optimized/ikcp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a6(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = add nsw i64 %0, -24
@@ -75,7 +75,7 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000151(i64 %0, i32 %1) #0 {
+define i1 @func00000000000002a1(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = add nsw i64 %0, 4
@@ -87,7 +87,7 @@ entry:
 ; 1 occurrences:
 ; libjpeg-turbo/optimized/jdmarker.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000aa(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = add nsw i64 %0, -17
@@ -99,7 +99,7 @@ entry:
 ; 1 occurrences:
 ; brotli/optimized/backward_references.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000204(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = add i64 %0, 1920
@@ -111,7 +111,7 @@ entry:
 ; 1 occurrences:
 ; brotli/optimized/backward_references.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000201(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = add i64 %0, 1920

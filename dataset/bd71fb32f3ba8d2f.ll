@@ -1,7 +1,5 @@
 
-; 10 occurrences:
-; abseil-cpp/optimized/raw_hash_set_test.cc.ll
-; openjdk/optimized/rootChunkArea.ll
+; 8 occurrences:
 ; openspiel/optimized/stones_and_gems.cc.ll
 ; protobuf/optimized/command_line_interface.cc.ll
 ; protobuf/optimized/csharp_helpers.cc.ll
@@ -13,8 +11,8 @@
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 2097152, %1
-  %3 = getelementptr nusw ptr, ptr %0, i64 %2
+  %2 = lshr i64 -1, %1
+  %3 = getelementptr nusw i8, ptr %0, i64 %2
   ret ptr %3
 }
 

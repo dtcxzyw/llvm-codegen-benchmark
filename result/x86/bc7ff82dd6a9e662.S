@@ -1,23 +1,23 @@
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	leal	-48(%rdx,%rdi), %eax
 	movl	$308, %ecx                      # imm = 0x134
 	subl	%esi, %ecx
 	cmpl	%ecx, %eax
 	setg	%al
 	retq
-func0000000000000156:                   # @func0000000000000156
+func00000000000002a6:                   # @func00000000000002a6
 	leal	49(%rdx,%rdi), %eax
 	negl	%esi
 	cmpl	%esi, %eax
 	setl	%al
 	retq
-func000000000000015a:                   # @func000000000000015a
+func00000000000002aa:                   # @func00000000000002aa
 	leal	181(%rdx,%rdi), %eax
 	negl	%esi
 	cmpl	%esi, %eax
 	setg	%al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	leal	1(%rdx,%rdi), %eax
 	negl	%esi
 	cmpl	%esi, %eax

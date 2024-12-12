@@ -1,8 +1,8 @@
 
-%"class.rocksdb::Slice.2510475" = type { ptr, i64 }
-%struct.orc_entry.3362196 = type { i16, i16, i16 }
+%"class.rocksdb::Slice.2625615" = type { ptr, i64 }
+%struct.orc_entry.3548730 = type { i16, i16, i16 }
 
-; 29 occurrences:
+; 28 occurrences:
 ; hyperscan/optimized/arg_checks.cpp.ll
 ; hyperscan/optimized/bad_patterns.cpp.ll
 ; hyperscan/optimized/behaviour.cpp.ll
@@ -23,7 +23,6 @@
 ; hyperscan/optimized/test_util.cpp.ll
 ; llvm/optimized/CoroFrame.cpp.ll
 ; llvm/optimized/DwarfDebug.cpp.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; opencv/optimized/age_gender_emotion_recognition.cpp.ll
 ; opencv/optimized/infer_ie_onnx_hybrid.cpp.ll
@@ -39,7 +38,7 @@ entry:
   %4 = ptrtoint ptr %1 to i64
   %5 = sub i64 %4, %3
   %6 = ashr exact i64 %5, 3
-  %7 = getelementptr nusw %"class.rocksdb::Slice.2510475", ptr %0, i64 %6, i32 1
+  %7 = getelementptr nusw %"class.rocksdb::Slice.2625615", ptr %0, i64 %6, i32 1
   ret ptr %7
 }
 
@@ -53,7 +52,7 @@ entry:
   %4 = ptrtoint ptr %1 to i64
   %5 = sub i64 %4, %3
   %6 = ashr exact i64 %5, 2
-  %7 = getelementptr %struct.orc_entry.3362196, ptr %0, i64 %6, i32 2
+  %7 = getelementptr %struct.orc_entry.3548730, ptr %0, i64 %6, i32 2
   ret ptr %7
 }
 

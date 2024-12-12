@@ -4,7 +4,7 @@
 ; wasmedge/optimized/compiler.cpp.ll
 ; wasmedge/optimized/formchecker.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = trunc i8 %2 to i1
   %4 = zext i32 %1 to i64
@@ -20,7 +20,7 @@ entry:
 ; oiio/optimized/tiffinput.cpp.ll
 ; yosys/optimized/verilog_backend.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000000e1(i64 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = trunc i8 %2 to i1
   %4 = zext nneg i32 %1 to i64

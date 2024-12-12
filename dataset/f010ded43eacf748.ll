@@ -66,8 +66,9 @@ entry:
   ret i32 %7
 }
 
-; 30 occurrences:
+; 31 occurrences:
 ; assimp/optimized/zip.c.ll
+; boost/optimized/console_buffer.ll
 ; cmake/optimized/frm_driver.c.ll
 ; git/optimized/ident.ll
 ; hermes/optimized/dtoa.c.ll

@@ -73,7 +73,7 @@ entry:
   ret i1 %3
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; bullet3/optimized/poly34.ll
 ; g2o/optimized/vertex_ellipse.cpp.ll
 ; gromacs/optimized/gmx_arpack.cpp.ll
@@ -90,7 +90,6 @@ entry:
 ; meshlab/optimized/meshselect.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
 ; meshlab/optimized/orthogonal_procrustes.cpp.ll
-; openblas/optimized/ieeeck.c.ll
 ; opencv/optimized/trackerSamplerAlgorithm.cpp.ll
 ; opencv/optimized/tracker_sampler_algorithm.cpp.ll
 ; Function Attrs: nounwind

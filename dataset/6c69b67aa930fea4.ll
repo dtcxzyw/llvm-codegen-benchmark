@@ -1,5 +1,5 @@
 
-; 49 occurrences:
+; 51 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/giaExist.c.ll
 ; abc/optimized/giaResub6.c.ll
@@ -35,6 +35,7 @@
 ; opencv/optimized/lapack.cpp.ll
 ; openjdk/optimized/javaClasses.ll
 ; openspiel/optimized/solitaire.cc.ll
+; openssl/optimized/asn1_internal_test-bin-asn1_internal_test.ll
 ; openssl/optimized/libcrypto-lib-v3_addr.ll
 ; openssl/optimized/libcrypto-shlib-v3_addr.ll
 ; openvdb/optimized/Diagnostics.cc.ll
@@ -49,6 +50,7 @@
 ; wireshark/optimized/related_packet_delegate.cpp.ll
 ; wireshark/optimized/sparkline_delegate.cpp.ll
 ; wireshark/optimized/timeline_delegate.cpp.ll
+; zed-rs/optimized/bktyyhuk5fekatq647qx0ox8v.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -58,7 +60,7 @@ entry:
   ret i32 %5
 }
 
-; 42 occurrences:
+; 28 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcSymm.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -81,25 +83,11 @@ entry:
 ; abc/optimized/sbdLut.c.ll
 ; abc/optimized/sfmSat.c.ll
 ; abc/optimized/wlcBlast.c.ll
-; arrow/optimized/key_map.cc.ll
-; arrow/optimized/key_map_avx2.cc.ll
-; arrow/optimized/strtod.cc.ll
 ; cmake/optimized/archive_read_support_format_warc.c.ll
-; double_conversion/optimized/strtod.cc.ll
-; icu/optimized/double-conversion-strtod.ll
 ; icu/optimized/uprops.ll
-; icu/optimized/ustrtrns.ll
-; linux/optimized/sbitmap.ll
-; linux/optimized/tcp_cubic.ll
-; llvm/optimized/ASTContext.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
-; meshoptimizer/optimized/quantization.cpp.ll
-; openjdk/optimized/abstractDisassembler.ll
 ; openjdk/optimized/deoptimization.ll
 ; openjdk/optimized/type.ll
-; openusd/optimized/json.cpp.ll
-; openusd/optimized/strtod.cc.ll
-; php/optimized/strtod.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
@@ -110,13 +98,30 @@ entry:
   ret i32 %5
 }
 
+; 7 occurrences:
+; abc/optimized/ifTune.c.ll
+; arrow/optimized/key_map.cc.ll
+; arrow/optimized/key_map_avx2.cc.ll
+; icu/optimized/ustrtrns.ll
+; meshoptimizer/optimized/quantization.cpp.ll
+; openjdk/optimized/abstractDisassembler.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 65536
+  %4 = select i1 %3, i32 4, i32 %1
+  %5 = select i1 %0, i32 2, i32 %4
+  ret i32 %5
+}
+
 ; 11 occurrences:
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/mpmMan.c.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; gromacs/optimized/gmx_arpack.cpp.ll
 ; linux/optimized/intel_dp_mst.ll
-; nuttx/optimized/lib_libvsprintf.c.ll
 ; openblas/optimized/cblas_dgemm.c.ll
 ; openblas/optimized/cblas_dgemmt.c.ll
 ; openblas/optimized/dgemmt.c.ll
@@ -142,12 +147,8 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 1 occurrences:
 ; libpng/optimized/pngwrite.c.ll
-; meshoptimizer/optimized/quantization.cpp.ll
-; oiio/optimized/strutil.cpp.ll
-; openusd/optimized/reconintra.c.ll
-; stb/optimized/stb_sprintf.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -157,7 +158,21 @@ entry:
   ret i32 %5
 }
 
-; 9 occurrences:
+; 4 occurrences:
+; meshoptimizer/optimized/quantization.cpp.ll
+; oiio/optimized/strutil.cpp.ll
+; openusd/optimized/reconintra.c.ll
+; stb/optimized/stb_sprintf.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i32 %2, 1199570943
+  %4 = select i1 %3, i32 31744, i32 %1
+  %5 = select i1 %0, i32 32256, i32 %4
+  ret i32 %5
+}
+
+; 8 occurrences:
 ; hermes/optimized/APFloat.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; libwebp/optimized/vp8l_dec.c.ll
@@ -165,7 +180,6 @@ entry:
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/X86FastISel.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; openblas/optimized/iparmq.c.ll
 ; postgres/optimized/worker.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000a(i1 %0, i32 %1, i32 %2) #0 {

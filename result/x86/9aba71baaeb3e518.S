@@ -1,4 +1,4 @@
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	movq	%rdi, %rax
 	negq	%rax
 	cmovsq	%rdi, %rax
@@ -12,7 +12,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	$10, %rax
 	setae	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	movq	%rdi, %rax
 	negq	%rax
 	cmovsq	%rdi, %rax
@@ -26,14 +26,14 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	$10, %rax
 	setb	%al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	movq	%rdi, %rax
 	negq	%rax
 	cmovsq	%rdi, %rax
-	cmpq	$33, %rax
+	cmpq	$1073741824, %rax               # imm = 0x40000000
 	setae	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	incq	%rdi
 	testq	$-3, %rdi
 	sete	%al
@@ -45,7 +45,7 @@ func000000000000000a:                   # @func000000000000000a
 	cmpq	$4097, %rax                     # imm = 0x1001
 	setge	%al
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	movq	%rdi, %rax
 	negq	%rax
 	cmovsq	%rdi, %rax
@@ -60,17 +60,25 @@ func0000000000000006:                   # @func0000000000000006
 	cmpq	%rcx, %rax
 	setl	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000014:                   # @func0000000000000014
+	movq	%rdi, %rax
+	negq	%rax
+	cmovsq	%rdi, %rax
+	shrq	$12, %rax
+	cmpq	$1220703125, %rax               # imm = 0x48C27395
+	setb	%al
+	retq
+func0000000000000061:                   # @func0000000000000061
 	incq	%rdi
 	testq	$-3, %rdi
 	sete	%al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	incq	%rdi
 	testq	$-3, %rdi
 	setne	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	movq	%rdi, %rax
 	negq	%rax
 	cmovsq	%rdi, %rax

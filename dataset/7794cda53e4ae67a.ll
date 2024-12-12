@@ -6,7 +6,7 @@
 ; oniguruma/optimized/unicode.ll
 ; ruby/optimized/date_parse.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func000000000000002c(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %1, %2
   %4 = icmp ne i8 %0, 0
@@ -241,7 +241,7 @@ entry:
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; openvdb/optimized/points.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func000000000000008c(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %1, %2
   %4 = icmp ne i8 %0, 8
@@ -327,7 +327,7 @@ entry:
 ; openusd/optimized/prim.cpp.ll
 ; openusd/optimized/resolvedAttributeCache.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000084(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %1, %2
   %4 = icmp ult i8 %0, 8
@@ -338,7 +338,7 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/content_mapblock.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000101(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ugt i8 %1, %2
   %4 = icmp eq i8 %0, 5
@@ -354,7 +354,7 @@ entry:
 ; rust-analyzer-rs/optimized/150tm5mq81nfdpak.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000021(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %1, %2
   %4 = icmp eq i8 %0, 3
@@ -365,7 +365,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/RISCVInsertWriteVXRM.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000181(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %1, %2
   %4 = icmp eq i8 %0, 1
@@ -377,7 +377,7 @@ entry:
 ; wasmtime-rs/optimized/1f1skdqjemonth3f.ll
 ; wasmtime-rs/optimized/21g2sj3ridcu2juk.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000024(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %1, %2
   %4 = icmp ult i8 %0, -3
@@ -390,7 +390,7 @@ entry:
 ; mini-lsm-rs/optimized/haynj55bb7tm6r1.ll
 ; openspiel/optimized/chess_board.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func000000000000018c(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %1, %2
   %4 = icmp ne i8 %0, 0

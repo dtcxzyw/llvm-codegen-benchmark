@@ -1,5 +1,5 @@
 
-; 163 occurrences:
+; 167 occurrences:
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; abseil-cpp/optimized/parser_test.cc.ll
 ; assimp/optimized/IFCCurve.cpp.ll
@@ -7,6 +7,12 @@
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/dple.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; casadi/optimized/optistack_internal.cpp.ll
@@ -106,7 +112,6 @@
 ; nix/optimized/local-store.ll
 ; nix/optimized/misc.ll
 ; nix/optimized/mounted-input-accessor.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/shared.ll
 ; nix/optimized/store-api.ll
 ; node/optimized/libnode.crypto_util.ll
@@ -132,7 +137,6 @@
 ; pocketpy/optimized/pocketpy.cpp.ll
 ; pocketpy/optimized/str.cpp.ll
 ; proj/optimized/concatenatedoperation.cpp.ll
-; proj/optimized/io.cpp.ll
 ; protobuf/optimized/message_lite.cc.ll
 ; protobuf/optimized/relative_path.cc.ll
 ; quantlib/optimized/schedule.ll
@@ -164,10 +168,10 @@
 ; zxing/optimized/ODReader.cpp.ll
 ; zxing/optimized/PDFDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000024c(ptr %0, ptr %1) #0 {
+define i1 @func000000000000088c(ptr %0, ptr %1) #0 {
 entry:
   %2 = getelementptr nusw i8, ptr %1, i64 -40
-  %3 = icmp ugt ptr %2, %0
+  %3 = icmp ult ptr %0, %2
   %4 = icmp ne ptr %0, %1
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
@@ -177,10 +181,10 @@ entry:
 ; clamav/optimized/lzwdec.c.ll
 ; openjdk/optimized/oopStorage.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000245(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000c85(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %0, i64 512
-  %3 = icmp ugt ptr %2, %1
+  %2 = getelementptr nusw nuw i8, ptr %0, i64 512
+  %3 = icmp ult ptr %1, %2
   %4 = icmp ule ptr %0, %1
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
@@ -190,10 +194,10 @@ entry:
 ; luau/optimized/Fixture.cpp.ll
 ; php/optimized/zend_alloc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000249(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000c89(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 2097152
-  %3 = icmp ugt ptr %2, %0
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 2097152
+  %3 = icmp ult ptr %0, %2
   %4 = icmp uge ptr %0, %1
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
@@ -402,10 +406,10 @@ entry:
 ; llvm/optimized/cc1as_main.cpp.ll
 ; llvm/optimized/driver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000259(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000ca9(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 14848
-  %3 = icmp uge ptr %2, %0
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 14848
+  %3 = icmp ule ptr %0, %2
   %4 = icmp uge ptr %0, %1
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5

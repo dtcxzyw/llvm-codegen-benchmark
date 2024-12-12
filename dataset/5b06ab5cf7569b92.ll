@@ -1,6 +1,8 @@
 
-; 82 occurrences:
+; 84 occurrences:
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; brotli/optimized/block_splitter.c.ll
 ; ceres/optimized/fake_bundle_adjustment_jacobian.cc.ll
 ; clamav/optimized/pe_icons.c.ll
@@ -19,6 +21,7 @@
 ; libjpeg-turbo/optimized/wrppm.c.ll
 ; libpng/optimized/png.c.ll
 ; libwebp/optimized/quant_enc.c.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/glarea.cpp.ll
@@ -52,7 +55,6 @@
 ; postgres/optimized/uuid.ll
 ; proj/optimized/bertin1953.cpp.ll
 ; proj/optimized/calcofi.cpp.ll
-; proj/optimized/collg.cpp.ll
 ; proj/optimized/datum_set.cpp.ll
 ; proj/optimized/healpix.cpp.ll
 ; proj/optimized/networkfilemanager.cpp.ll

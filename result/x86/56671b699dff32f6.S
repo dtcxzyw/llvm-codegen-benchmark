@@ -3,6 +3,10 @@ func000000000000000f:                   # @func000000000000000f
 	addl	%edi, %edi
 	leal	(%rdi,%rdi,2), %eax
 	retq
+func000000000000000c:                   # @func000000000000000c
+	addl	%esi, %edi
+	imull	$360, %edi, %eax                # imm = 0x168
+	retq
 func0000000000000000:                   # @func0000000000000000
 	leal	(%rdi,%rsi), %eax
 	addl	%eax, %eax

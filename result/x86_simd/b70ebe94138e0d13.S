@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	3                               # 0x3
-func0000000000000416:                   # @func0000000000000416
+func0000000000000826:                   # @func0000000000000826
 	vpcmpnleuq	%ymm2, %ymm1, %k0
 	vpmovm2d	%k0, %xmm1
 	vpmovzxbd	%xmm0, %xmm0            # xmm0 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero
@@ -9,7 +9,7 @@ func0000000000000416:                   # @func0000000000000416
 	vpcmpgtd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
-func0000000000000411:                   # @func0000000000000411
+func0000000000000821:                   # @func0000000000000821
 	vpcmpnleuq	%ymm2, %ymm1, %k0
 	vpmovm2d	%k0, %xmm1
 	vpmovzxbd	%xmm0, %xmm0            # xmm0 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero
@@ -18,7 +18,7 @@ func0000000000000411:                   # @func0000000000000411
 	vpcmpeqd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
-func0000000000000211:                   # @func0000000000000211
+func0000000000000421:                   # @func0000000000000421
 	vpcmpltuq	%ymm2, %ymm1, %k0
 	vpmovm2d	%k0, %xmm1
 	vpmovzxbd	%xmm0, %xmm0            # xmm0 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero
@@ -27,7 +27,7 @@ func0000000000000211:                   # @func0000000000000211
 	vpcmpeqd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
-func000000000000021c:                   # @func000000000000021c
+func000000000000042c:                   # @func000000000000042c
 	vpcmpltuq	%ymm2, %ymm1, %k0
 	vpmovm2d	%k0, %xmm1
 	vpmovzxbd	%xmm0, %xmm0            # xmm0 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero
@@ -39,7 +39,7 @@ func000000000000021c:                   # @func000000000000021c
 	retq
 .LCPI4_0:
 	.long	9                               # 0x9
-func0000000000000216:                   # @func0000000000000216
+func0000000000000426:                   # @func0000000000000426
 	vpcmpltuq	%ymm2, %ymm1, %k0
 	vpmovm2d	%k0, %xmm1
 	vpmovzxbd	%xmm0, %xmm0            # xmm0 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero
@@ -48,7 +48,7 @@ func0000000000000216:                   # @func0000000000000216
 	vpcmpgtd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
-func000000000000021a:                   # @func000000000000021a
+func000000000000042a:                   # @func000000000000042a
 	vpcmpltuq	%ymm2, %ymm1, %k0
 	vpmovm2d	%k0, %xmm1
 	vpmovzxbd	%xmm0, %xmm0            # xmm0 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero

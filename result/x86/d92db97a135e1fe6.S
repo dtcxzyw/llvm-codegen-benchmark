@@ -5,14 +5,14 @@ func0000000000000001:                   # @func0000000000000001
 	cmoveq	%rdx, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	negq	%rdx
 	xorl	%eax, %eax
 	testl	%esi, %esi
 	cmoveq	%rdx, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000066:                   # @func0000000000000066
+func00000000000000c6:                   # @func00000000000000c6
 	negq	%rdx
 	xorl	%eax, %eax
 	testl	%esi, %esi
@@ -26,7 +26,7 @@ func0000000000000006:                   # @func0000000000000006
 	cmovsq	%rdx, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	negq	%rdx
 	xorl	%eax, %eax
 	testl	%esi, %esi

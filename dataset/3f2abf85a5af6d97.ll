@@ -5,7 +5,7 @@
 ; linux/optimized/vt.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000221(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000841(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, -1
   %4 = icmp eq i32 %1, -1

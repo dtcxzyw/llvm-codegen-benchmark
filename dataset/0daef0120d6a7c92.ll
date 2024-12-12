@@ -15,7 +15,7 @@
 define { double, double } @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %1, %2
-  %4 = fadd double %3, %0
+  %4 = fadd double %0, %3
   %5 = insertvalue { double, double } poison, double %4, 0
   ret { double, double } %5
 }

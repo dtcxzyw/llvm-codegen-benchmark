@@ -20,7 +20,7 @@ entry:
 ; openusd/optimized/nurbsPatchAdapter.cpp.ll
 ; stb/optimized/stb_tilemap_editor.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000015a(i32 %0, i32 %1) #0 {
+define i1 @func00000000000002aa(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = add nsw i32 %0, -1
@@ -32,7 +32,7 @@ entry:
 ; 1 occurrences:
 ; oiio/optimized/iffinput.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000281(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = add nsw i32 %0, 1
@@ -46,7 +46,7 @@ entry:
 ; openexr/optimized/ImfDeepTiledOutputFile.cpp.ll
 ; openexr/optimized/ImfTiledOutputFile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000028a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = add nsw i32 %0, 1
@@ -62,7 +62,7 @@ entry:
 ; opencv/optimized/imagecut.cpp.ll
 ; opencv/optimized/sparse_matching_gpc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000156(i32 %0, i32 %1) #0 {
+define i1 @func00000000000002a6(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = add nsw i32 %0, 1
@@ -79,7 +79,7 @@ entry:
 ; opencv/optimized/seam_finders.cpp.ll
 ; opencv/optimized/trackerSamplerAlgorithm.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000151(i32 %0, i32 %1) #0 {
+define i1 @func00000000000002a1(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = add nsw i32 %0, 1
@@ -92,7 +92,7 @@ entry:
 ; opencv/optimized/cuda_test.cpp.ll
 ; opencv/optimized/linemod.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = add i32 %0, 1
@@ -105,7 +105,7 @@ entry:
 ; opencv/optimized/cuda_test.cpp.ll
 ; opencv/optimized/linemod.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = add i32 %0, 1
@@ -117,7 +117,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/find_ellipses.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000208(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 2
   %3 = add i32 %0, 5
@@ -129,7 +129,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/find_ellipses.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000106(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000206(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 2
   %3 = add i32 %0, 5
@@ -141,7 +141,7 @@ entry:
 ; 1 occurrences:
 ; raylib/optimized/rmodels.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000022a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = add i32 %0, 1

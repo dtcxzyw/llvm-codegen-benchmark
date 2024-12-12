@@ -12,11 +12,23 @@ func0000000000000040:                   # @func0000000000000040
 	addq	%rax, %rdi
 	imulq	$86400, %rdi, %rax              # imm = 0x15180
 	retq
+func0000000000000054:                   # @func0000000000000054
+	imulq	$60, %rdx, %rax
+	addq	%rsi, %rdi
+	addq	%rax, %rdi
+	imulq	$60000000, %rdi, %rax           # imm = 0x3938700
+	retq
+func000000000000007d:                   # @func000000000000007d
+	imulq	$3600, %rdx, %rax               # imm = 0xE10
+	addq	%rsi, %rdi
+	addq	%rax, %rdi
+	imulq	$1000000, %rdi, %rax            # imm = 0xF4240
+	retq
 func0000000000000055:                   # @func0000000000000055
 	imulq	$86400, %rdx, %rax              # imm = 0x15180
 	addq	%rsi, %rdi
 	addq	%rax, %rdi
-	imulq	$1000000, %rdi, %rax            # imm = 0xF4240
+	imulq	$1000, %rdi, %rax               # imm = 0x3E8
 	retq
 func0000000000000041:                   # @func0000000000000041
 	imulq	$60, %rdx, %rax

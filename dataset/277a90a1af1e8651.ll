@@ -15,6 +15,7 @@ entry:
 ; abc/optimized/cecSolve.c.ll
 ; abc/optimized/cecSolveG.c.ll
 ; arrow/optimized/encode_internal.cc.ll
+; boost/optimized/src.ll
 ; cvc5/optimized/SimpSolver.cc.ll
 ; cvc5/optimized/Solver.cc.ll
 ; cvc5/optimized/timeout_core_manager.cpp.ll
@@ -45,7 +46,6 @@ entry:
 ; linux/optimized/core.ll
 ; linux/optimized/dmar.ll
 ; linux/optimized/ds.ll
-; linux/optimized/reciprocal_div.ll
 ; linux/optimized/sd.ll
 ; linux/optimized/slub.ll
 ; linux/optimized/swap.ll
@@ -79,7 +79,6 @@ entry:
 ; llvm/optimized/X86AsmParser.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
@@ -113,27 +112,30 @@ entry:
 ; redis/optimized/extent_dss.sym.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; spike/optimized/csrs.ll
-; spike/optimized/f128_classify.ll
-; spike/optimized/f16_classify.ll
-; spike/optimized/f32_classify.ll
-; spike/optimized/f64_classify.ll
 ; spike/optimized/mret.ll
 ; spike/optimized/processor.ll
 ; verilator/optimized/V3Config.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; wireshark/optimized/tvbuff.c.ll
 ; z3/optimized/sat_cutset.cpp.ll
+; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
+; zed-rs/optimized/6i9q21vg747q3orsxnutiwubi.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
 ; zxing/optimized/QRFormatInformation.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 0, i64 1152921504606846976
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = or disjoint i64 %4, %0
   ret i64 %5
 }
 
-; 46 occurrences:
+; 45 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; hermes/optimized/APInt.cpp.ll
 ; jemalloc/optimized/extent.ll
 ; jemalloc/optimized/extent.pic.ll
@@ -148,6 +150,7 @@ entry:
 ; linux/optimized/ibs.ll
 ; linux/optimized/intel-gtt.ll
 ; linux/optimized/intel_ggtt.ll
+; linux/optimized/maple_tree.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/set_memory.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -175,22 +178,17 @@ entry:
 ; regex-rs/optimized/33whcn8n29l9c6ys.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; spike/optimized/csrs.ll
-; spike/optimized/f128_classify.ll
-; spike/optimized/f16_classify.ll
-; spike/optimized/f32_classify.ll
-; spike/optimized/f64_classify.ll
 ; z3/optimized/sat_cutset.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 12, i64 76
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = or i64 %4, %0
   ret i64 %5
 }
 
-; 21 occurrences:
-; abseil-cpp/optimized/mutex.cc.ll
+; 16 occurrences:
 ; linux/optimized/lbr.ll
 ; linux/optimized/maple_tree.ll
 ; linux/optimized/pt.ll
@@ -206,16 +204,12 @@ entry:
 ; openjdk/optimized/vm_version_x86.ll
 ; ozz-animation/optimized/jsoncpp.cpp.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
-; spike/optimized/f128_classify.ll
-; spike/optimized/f16_classify.ll
-; spike/optimized/f32_classify.ll
-; spike/optimized/f64_classify.ll
 ; z3/optimized/hwf.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 0, i64 144115188075855872
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = or i64 %4, %0
   ret i64 %5
 }

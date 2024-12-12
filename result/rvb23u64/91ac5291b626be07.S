@@ -3,13 +3,6 @@ func0000000000000014:                   # @func0000000000000014
 	sub	a0, a1, a0
 	addi	a0, a0, 1
 	ret
-func000000000000001d:                   # @func000000000000001d
-	add	a1, a1, a2
-	lui	a2, 17
-	sub	a0, a1, a0
-	addiw	a1, a2, -1063
-	add	a0, a0, a1
-	ret
 func0000000000000000:                   # @func0000000000000000
 	add	a1, a1, a2
 	sub	a1, a1, a0
@@ -38,8 +31,15 @@ func0000000000000015:                   # @func0000000000000015
 	ret
 func000000000000003f:                   # @func000000000000003f
 	add	a1, a1, a2
-	sub	a1, a1, a0
-	addi	a0, a1, 258
+	sub	a0, a1, a0
+	addi	a0, a0, 7
+	ret
+func000000000000001d:                   # @func000000000000001d
+	add	a1, a1, a2
+	lui	a2, 17
+	sub	a0, a1, a0
+	addiw	a1, a2, -1063
+	add	a0, a0, a1
 	ret
 func0000000000000002:                   # @func0000000000000002
 	add	a1, a1, a2

@@ -1,8 +1,7 @@
 
-; 25 occurrences:
+; 23 occurrences:
 ; duckdb/optimized/ub_duckdb_execution_index.cpp.ll
 ; folly/optimized/SplitStringSimd.cpp.ll
-; hermes/optimized/APFloat.cpp.ll
 ; linux/optimized/af_netlink.ll
 ; linux/optimized/inet_fragment.ll
 ; linux/optimized/ioam6.ll
@@ -20,7 +19,6 @@
 ; openssl/optimized/libcrypto-lib-bio_print.ll
 ; openssl/optimized/libcrypto-shlib-bio_print.ll
 ; postgres/optimized/xlog.ll
-; proxygen/optimized/HTTPSession.cpp.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; ruby/optimized/io.ll
 ; ruby/optimized/iseq.ll
@@ -34,9 +32,10 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; ruby/optimized/objspace_dump.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
@@ -64,9 +63,9 @@ entry:
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ult i64 %1, 4294967296
+  %2 = icmp samesign ult i64 %1, 4294967296
   %3 = select i1 %2, i64 %0, i64 %1
   %4 = and i64 %3, 4294967295
   ret i64 %4

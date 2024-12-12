@@ -22,7 +22,7 @@ func0000000000000006:                   # @func0000000000000006
 	.long	16369                           # 0x3ff1
 .LCPI2_2:
 	.long	1000                            # 0x3e8
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpaddd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm1
 	vpcmpltud	.LCPI2_1(%rip){1to8}, %ymm1, %k1
 	vpbroadcastd	.LCPI2_2(%rip), %ymm1   # ymm1 = [1000,1000,1000,1000,1000,1000,1000,1000]

@@ -74,6 +74,18 @@ func0000000000000004:                   # @func0000000000000004
 	shlq	$32, %rsi
 	addq	%rsi, %rax
 	retq
+func0000000000000038:                   # @func0000000000000038
+	movl	%edx, %eax
+	addq	%rsi, %rax
+	shlq	$56, %rdi
+	addq	%rdi, %rax
+	retq
+func000000000000003e:                   # @func000000000000003e
+	movl	%edx, %eax
+	addq	%rsi, %rax
+	shlq	$56, %rdi
+	addq	%rdi, %rax
+	retq
 func000000000000006c:                   # @func000000000000006c
 	movl	%edx, %eax
 	addq	%rdi, %rax

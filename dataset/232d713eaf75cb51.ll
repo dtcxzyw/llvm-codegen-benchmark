@@ -4,8 +4,6 @@
 ; arrow/optimized/basic_decimal.cc.ll
 ; arrow/optimized/bignum.cc.ll
 ; assimp/optimized/OgreStructs.cpp.ll
-; assimp/optimized/glTF2Exporter.cpp.ll
-; assimp/optimized/glTFExporter.cpp.ll
 ; cpython/optimized/dtoa.ll
 ; double_conversion/optimized/bignum.cc.ll
 ; git/optimized/packfile.ll
@@ -127,11 +125,13 @@
 ; xgboost/optimized/charconv.cc.ll
 ; z3/optimized/mpn.cpp.ll
 ; z3/optimized/sat_lookahead.cpp.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw i64 %3, %1
+  %4 = mul nuw i64 %1, %3
   %5 = add nuw i64 %4, %0
   ret i64 %5
 }
@@ -144,8 +144,8 @@ entry:
 define i64 @func000000000000001a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nuw i64 %3, %1
-  %5 = add nuw i64 %4, %0
+  %4 = mul nuw i64 %1, %3
+  %5 = add nuw i64 %0, %4
   ret i64 %5
 }
 
@@ -175,7 +175,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = add nsw i64 %4, %0
   ret i64 %5
 }
@@ -186,7 +186,6 @@ entry:
 ; double_conversion/optimized/bignum.cc.ll
 ; faiss/optimized/PolysemousTraining.cpp.ll
 ; graphviz/optimized/post_process.c.ll
-; gromacs/optimized/bwlzh.c.ll
 ; gromacs/optimized/dispersioncorrection.cpp.ll
 ; gromacs/optimized/gmx_densorder.cpp.ll
 ; gromacs/optimized/gmx_hydorder.cpp.ll
@@ -217,10 +216,8 @@ entry:
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/moments.cpp.ll
 ; opencv/optimized/sift.dispatch.cpp.ll
-; opencv/optimized/smooth.dispatch.cpp.ll
 ; openjdk/optimized/jmemmgr.ll
 ; openspiel/optimized/CalcTables.cpp.ll
-; openusd/optimized/avif.c.ll
 ; openusd/optimized/bignum.cc.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; ruby/optimized/pm_integer.ll
@@ -230,16 +227,19 @@ entry:
 ; yosys/optimized/coolrunner2_sop.ll
 ; yosys/optimized/satgen.ll
 ; z3/optimized/pb_solver.cpp.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; zstd/optimized/zstd_decompress_block.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = add nuw nsw i64 %4, %0
   ret i64 %5
 }
 
-; 152 occurrences:
+; 149 occurrences:
 ; abc/optimized/abcNpn.c.ll
 ; abc/optimized/fraSim.c.ll
 ; abc/optimized/giaCex.c.ll
@@ -250,7 +250,6 @@ entry:
 ; abseil-cpp/optimized/seed_sequences_test.cc.ll
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; arrow/optimized/bignum.cc.ll
-; assimp/optimized/IFCGeometry.cpp.ll
 ; assimp/optimized/LWOAnimation.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -335,9 +334,8 @@ entry:
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/integrator.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
-; ncnn/optimized/pooling3d.cpp.ll
 ; node/optimized/libnode.node_trace_buffer.ll
+; ocio/optimized/MatrixOpData.cpp.ll
 ; oiio/optimized/exif.cpp.ll
 ; opencv/optimized/convolution_layer.cpp.ll
 ; opencv/optimized/flow_warp_layer.cpp.ll
@@ -359,7 +357,6 @@ entry:
 ; openusd/optimized/bignum.cc.ll
 ; openusd/optimized/json.cpp.ll
 ; openusd/optimized/pointInstancerAdapter.cpp.ll
-; ozz-animation/optimized/skinning_job.cc.ll
 ; pbrt-v4/optimized/camera.cpp.ll
 ; pbrt-v4/optimized/cameras.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
@@ -396,12 +393,12 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul i64 %3, %1
-  %5 = add i64 %4, %0
+  %4 = mul i64 %1, %3
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
-; 169 occurrences:
+; 157 occurrences:
 ; abc/optimized/abcMiter.c.ll
 ; abc/optimized/cuddAPI.c.ll
 ; abc/optimized/extraUtilPath.c.ll
@@ -412,9 +409,9 @@ entry:
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; clamav/optimized/pe_icons.c.ll
 ; cmake/optimized/zstd_decompress.c.ll
+; cmake/optimized/zstd_decompress_block.c.ll
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; darktable/optimized/CrwDecompressor.cpp.ll
-; darktable/optimized/JpegDecompressor.cpp.ll
 ; darktable/optimized/SamsungV0Decompressor.cpp.ll
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
@@ -437,7 +434,6 @@ entry:
 ; gromacs/optimized/distribute.cpp.ll
 ; gromacs/optimized/forcerec.cpp.ll
 ; gromacs/optimized/grompp.cpp.ll
-; gromacs/optimized/kernel_common.cpp.ll
 ; gromacs/optimized/pme_grid.cpp.ll
 ; gromacs/optimized/pme_spread.cpp.ll
 ; gromacs/optimized/tng_compress.c.ll
@@ -457,15 +453,14 @@ entry:
 ; libwebp/optimized/picture_psnr_enc.c.ll
 ; libwebp/optimized/predictor_enc.c.ll
 ; linux/optimized/intel_dpll_mgr.ll
-; linux/optimized/intel_snps_phy.ll
 ; linux/optimized/intel_sseu.ll
 ; linux/optimized/zstd_decompress.ll
+; linux/optimized/zstd_decompress_block.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -492,23 +487,17 @@ entry:
 ; ncnn/optimized/deformableconv2d_x86_avx.cpp.ll
 ; ncnn/optimized/deformableconv2d_x86_avx512.cpp.ll
 ; ncnn/optimized/deformableconv2d_x86_fma.cpp.ll
-; ncnn/optimized/gemm.cpp.ll
 ; ncnn/optimized/packing.cpp.ll
 ; ncnn/optimized/proposal.cpp.ll
-; ncnn/optimized/reshape.cpp.ll
 ; ncnn/optimized/shufflechannel.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; oiio/optimized/ddsinput.cpp.ll
 ; oiio/optimized/tiffinput.cpp.ll
 ; oiio/optimized/tiffoutput.cpp.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
-; opencv/optimized/bgfg_gaussmix2.cpp.ll
 ; opencv/optimized/chessboard.cpp.ll
-; opencv/optimized/convolution.cpp.ll
 ; opencv/optimized/convolution_layer.cpp.ll
-; opencv/optimized/copy.cpp.ll
 ; opencv/optimized/correlation_layer.cpp.ll
-; opencv/optimized/detection_output_layer.cpp.ll
 ; opencv/optimized/edge_drawing.cpp.ll
 ; opencv/optimized/einsum_layer.cpp.ll
 ; opencv/optimized/find_ellipses.cpp.ll
@@ -517,7 +506,6 @@ entry:
 ; opencv/optimized/gfluidcore.cpp.ll
 ; opencv/optimized/graphsegmentation.cpp.ll
 ; opencv/optimized/histogramphaseunwrapping.cpp.ll
-; opencv/optimized/hough.cpp.ll
 ; opencv/optimized/hybrid_binarizer.cpp.ll
 ; opencv/optimized/imgwarp.cpp.ll
 ; opencv/optimized/knearest.cpp.ll
@@ -528,7 +516,6 @@ entry:
 ; opencv/optimized/pooling_layer.cpp.ll
 ; opencv/optimized/ppf_match_3d.cpp.ll
 ; opencv/optimized/pyramids.cpp.ll
-; opencv/optimized/samplers.cpp.ll
 ; opencv/optimized/seam_finders.cpp.ll
 ; opencv/optimized/sift.dispatch.cpp.ll
 ; opencv/optimized/stereo_binary_bm.cpp.ll
@@ -553,7 +540,6 @@ entry:
 ; postgres/optimized/f2s_srv.ll
 ; postgres/optimized/mcv.ll
 ; qemu/optimized/hw_display_bochs-display.c.ll
-; qemu/optimized/hw_display_ramfb.c.ll
 ; quest/optimized/QuEST.c.ll
 ; raylib/optimized/rmodels.c.ll
 ; raylib/optimized/rtextures.c.ll
@@ -566,21 +552,23 @@ entry:
 ; sundials/optimized/arkode_mri_tables.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wasmedge/optimized/refInstr.cpp.ll
-; yosys/optimized/qwp.ll
 ; z3/optimized/pb_solver.cpp.ll
 ; zstd/optimized/zstd_decompress.c.ll
-; zxing/optimized/MCBitMatrixParser.cpp.ll
+; zstd/optimized/zstd_decompress_block.c.ll
 ; zxing/optimized/WhiteRectDetector.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
-  %5 = add nuw nsw i64 %4, %0
+  %4 = mul nuw nsw i64 %1, %3
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
-; 56 occurrences:
+; 65 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/numeric.ll
+; boost/optimized/src.ll
 ; clamav/optimized/pe_icons.c.ll
 ; cmake/optimized/cmELF.cxx.ll
 ; cpython/optimized/unicodeobject.ll
@@ -616,7 +604,6 @@ entry:
 ; oiio/optimized/imageinput.cpp.ll
 ; oiio/optimized/imageoutput.cpp.ll
 ; oiio/optimized/rlaoutput.cpp.ll
-; oiio/optimized/tiffinput.cpp.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; opencv/optimized/convolution_layer.cpp.ll
 ; opencv/optimized/correlation_layer.cpp.ll
@@ -631,24 +618,32 @@ entry:
 ; openssl/optimized/libcrypto-lib-cpuid.ll
 ; openssl/optimized/libcrypto-shlib-cpuid.ll
 ; openusd/optimized/nurbsApproximatingSceneIndex.cpp.ll
+; ozz-animation/optimized/skinning_job.cc.ll
 ; protobuf/optimized/tokenizer.cc.ll
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/raudio.c.ll
 ; redis/optimized/malloc_io.ll
 ; redis/optimized/malloc_io.sym.ll
 ; tomlplusplus/optimized/toml.cpp.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/4wlt97p2na7yq96c9gq3wlrfc.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/ad3qos5opie5ae39m3c4ahrzq.ll
+; zed-rs/optimized/diggdkpukg0xn23g7ivuh3jfw.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }
 
-; 37 occurrences:
+; 38 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; arrow/optimized/bignum.cc.ll
+; boost/optimized/area.ll
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/zstd_compress_sequences.c.ll
 ; cpython/optimized/longobject.ll
@@ -662,7 +657,6 @@ entry:
 ; libwebp/optimized/rescaler_sse2.c.ll
 ; lief/optimized/poly1305.c.ll
 ; linux/optimized/blk-iocost.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_dpll.ll
 ; linux/optimized/intel_sprite.ll
 ; linux/optimized/keyring.ll
@@ -683,17 +677,18 @@ entry:
 ; soc-simulator/optimized/sim_mycpu.ll
 ; spike/optimized/vwmaccu_vv.ll
 ; spike/optimized/vwmaccu_vx.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; zstd/optimized/zstd_compress_sequences.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw i64 %3, %1
+  %4 = mul nuw i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; image-rs/optimized/249ukonr3l56u09i.ll
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
 ; libwebp/optimized/pnmdec.c.ll
@@ -702,14 +697,15 @@ entry:
 ; linux/optimized/keyring.ll
 ; linux/optimized/tsc_sync.ll
 ; llvm/optimized/XCOFFObjectFile.cpp.ll
-; openjdk/optimized/metaspaceStatistics.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }
@@ -729,7 +725,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }
@@ -749,8 +745,8 @@ entry:
 define i64 @func000000000000001d(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
-  %5 = add nsw i64 %4, %0
+  %4 = mul nuw nsw i64 %1, %3
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -766,12 +762,12 @@ entry:
 define i64 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }
 
-; 16 occurrences:
+; 18 occurrences:
 ; cmake/optimized/huf_compress.c.ll
 ; cmake/optimized/trees.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -785,23 +781,24 @@ entry:
 ; llvm/optimized/MachObjectWriter.cpp.ll
 ; openjdk/optimized/jmemmgr.ll
 ; postgres/optimized/mcv.ll
-; stockfish/optimized/tbprobe.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/bijypxqg3gfu3lugp8zf7c61q.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zlib/optimized/trees.c.ll
 ; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
-  %5 = add i64 %4, %0
+  %4 = mul nuw nsw i64 %1, %3
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
-; 40 occurrences:
+; 35 occurrences:
 ; abc/optimized/bmcFault.c.ll
 ; arrow/optimized/vector_selection_internal.cc.ll
 ; casadi/optimized/idas.c.ll
-; darktable/optimized/DeflateDecompressor.cpp.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; darktable/optimized/introspection_diffuse.c.ll
 ; darktable/optimized/introspection_equalizer.c.ll
@@ -813,15 +810,11 @@ entry:
 ; oiio/optimized/Codec.cpp.ll
 ; oiio/optimized/imagecache.cpp.ll
 ; oiio/optimized/strutil.cpp.ll
-; oiio/optimized/tiffoutput.cpp.ll
-; opencv/optimized/bgfg_gaussmix2.cpp.ll
 ; opencv/optimized/convolution.cpp.ll
-; opencv/optimized/copy.cpp.ll
 ; opencv/optimized/dxt.cpp.ll
 ; opencv/optimized/grfmt_exr.cpp.ll
 ; opencv/optimized/hybrid_binarizer.cpp.ll
 ; opencv/optimized/matmul.dispatch.cpp.ll
-; opencv/optimized/samplers.cpp.ll
 ; opencv/optimized/stereo_binary_bm.cpp.ll
 ; openexr/optimized/ImfTileOffsets.cpp.ll
 ; openexr/optimized/chunk.c.ll
@@ -842,7 +835,7 @@ entry:
 define i64 @func0000000000000015(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = add nsw i64 %4, %0
   ret i64 %5
 }
@@ -857,8 +850,8 @@ entry:
 define i64 @func000000000000000d(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
-  %5 = add nsw i64 %4, %0
+  %4 = mul nuw nsw i64 %1, %3
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -870,8 +863,8 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul i64 %3, %1
-  %5 = add nsw i64 %4, %0
+  %4 = mul i64 %1, %3
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -884,7 +877,7 @@ entry:
 define i64 @func000000000000000e(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = add nuw i64 %4, %0
   ret i64 %5
 }
@@ -895,19 +888,8 @@ entry:
 define i64 @func0000000000000017(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = add nuw nsw i64 %4, %0
-  ret i64 %5
-}
-
-; 1 occurrences:
-; oiio/optimized/tiffinput.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext nneg i32 %2 to i64
-  %4 = mul nuw i64 %3, %1
-  %5 = add i64 %4, %0
   ret i64 %5
 }
 
@@ -917,7 +899,7 @@ entry:
 define i64 @func000000000000001e(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = add nuw i64 %4, %0
   ret i64 %5
 }

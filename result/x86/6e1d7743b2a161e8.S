@@ -8,7 +8,16 @@ func000000000000001a:                   # @func000000000000001a
 	leaq	(%rdi,%rax,8), %rax
 	addq	%rcx, %rax
 	retq
-func0000000000000012:                   # @func0000000000000012
+func000000000000001b:                   # @func000000000000001b
+	xorl	%eax, %eax
+	testl	%edx, %edx
+	setne	%al
+	movslq	%esi, %rcx
+	shlq	$4, %rcx
+	addq	%rdi, %rcx
+	leaq	4(%rcx,%rax,4), %rax
+	retq
+func0000000000000013:                   # @func0000000000000013
 	xorl	%eax, %eax
 	cmpl	$1, %edx
 	sete	%al

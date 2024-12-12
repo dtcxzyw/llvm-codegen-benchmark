@@ -28,7 +28,7 @@
 ; wireshark/optimized/packet-gsmtap.c.ll
 ; z3/optimized/fixed_bit_vector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 63
   %3 = lshr i32 %2, 6
@@ -55,7 +55,7 @@ entry:
 ; wireshark/optimized/packet-ldp.c.ll
 ; wireshark/optimized/packet-sndcp-xid.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000371(i64 %0, i32 %1) #0 {
+define i1 @func00000000000006e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 7
   %3 = lshr i32 %2, 3
@@ -65,41 +65,41 @@ entry:
   ret i1 %6
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; hermes/optimized/IdentifierTable.cpp.ll
 ; linux/optimized/af_netlink.ll
 ; linux/optimized/bitmap.ll
-; linux/optimized/intel_mocs.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; opencc/optimized/bit-vector.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000f4(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 511
   %3 = lshr i32 %2, 9
   %4 = zext nneg i32 %3 to i64
   %5 = add nuw nsw i64 %0, 10
-  %6 = icmp ult i64 %5, %4
+  %6 = icmp samesign ult i64 %5, %4
   ret i1 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; soc-simulator/optimized/verilated.ll
 ; verilator/optimized/V3Number.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000374(i64 %0, i32 %1) #0 {
+define i1 @func00000000000006f4(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 31
   %3 = lshr i32 %2, 5
   %4 = zext nneg i32 %3 to i64
   %5 = add nuw nsw i64 %0, 1
-  %6 = icmp ult i64 %5, %4
+  %6 = icmp samesign ult i64 %5, %4
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; php/optimized/zend_jit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000351(i64 %0, i32 %1) #0 {
+define i1 @func00000000000006a1(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = lshr i32 %2, 2
@@ -113,7 +113,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; yosys/optimized/SimpSolver.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -32
   %3 = lshr exact i32 %2, 5
@@ -127,7 +127,7 @@ entry:
 ; llvm/optimized/SemaLookup.cpp.ll
 ; llvm/optimized/UDTLayout.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = lshr i32 %2, 6
@@ -140,7 +140,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaLookup.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000151(i64 %0, i32 %1) #0 {
+define i1 @func00000000000002a1(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = lshr i32 %2, 6
@@ -150,8 +150,7 @@ entry:
   ret i1 %6
 }
 
-; 8 occurrences:
-; linux/optimized/sd.ll
+; 7 occurrences:
 ; opencv/optimized/dxt.cpp.ll
 ; opencv/optimized/smooth.dispatch.cpp.ll
 ; openexr/optimized/ImfDwaCompressor.cpp.ll
@@ -160,7 +159,7 @@ entry:
 ; wireshark/optimized/packet-cigi.c.ll
 ; wireshark/optimized/pcapng.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000171(i64 %0, i32 %1) #0 {
+define i1 @func00000000000002e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -8
   %3 = lshr i32 %2, 4
@@ -171,9 +170,22 @@ entry:
 }
 
 ; 1 occurrences:
+; linux/optimized/sd.ll
+; Function Attrs: nounwind
+define i1 @func00000000000003e1(i64 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, -60
+  %3 = lshr exact i32 %2, 5
+  %4 = zext nneg i32 %3 to i64
+  %5 = add nuw nsw i64 %0, 1
+  %6 = icmp eq i64 %5, %4
+  ret i1 %6
+}
+
+; 1 occurrences:
 ; arrow/optimized/util_avx2.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000271(i64 %0, i32 %1) #0 {
+define i1 @func00000000000004e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 15
   %3 = lshr i32 %2, 4
@@ -186,7 +198,7 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/stream_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000344(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000684(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 7
   %3 = lshr i32 %2, 3

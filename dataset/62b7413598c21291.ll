@@ -1,5 +1,5 @@
 
-; 127 occurrences:
+; 126 occurrences:
 ; abc/optimized/acbPush.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/cuddEssent.c.ll
@@ -30,7 +30,6 @@
 ; linux/optimized/io_pgtable.ll
 ; linux/optimized/mprotect.ll
 ; linux/optimized/mremap.ll
-; linux/optimized/msr.ll
 ; linux/optimized/select.ll
 ; linux/optimized/tick-broadcast.ll
 ; llvm/optimized/ASTContext.cpp.ll

@@ -15,7 +15,7 @@ entry:
   %2 = freeze i8 %1
   %3 = add i8 %2, -58
   %4 = icmp ult i8 %3, -10
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

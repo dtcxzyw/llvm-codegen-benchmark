@@ -23,9 +23,9 @@
 ; minetest/optimized/s_env.cpp.ll
 ; minetest/optimized/subgames.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000438(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000001858(ptr %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 8
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 8
   %4 = icmp eq ptr %3, %1
   %5 = icmp ne ptr %0, null
   %6 = or i1 %5, %4
@@ -35,7 +35,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/hw_display_edid-generate.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000032(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000052(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 36
   %4 = icmp uge ptr %3, %0
@@ -44,12 +44,13 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; llvm/optimized/LoopAccessAnalysis.cpp.ll
 ; protobuf/optimized/field_mask_util.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000422(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000001842(ptr %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 16
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 48
   %4 = icmp eq ptr %3, %0
   %5 = icmp eq ptr %1, null
   %6 = or i1 %4, %5
@@ -59,7 +60,7 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/rose_build_lookaround.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000058(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 -40
   %4 = icmp eq ptr %3, %1

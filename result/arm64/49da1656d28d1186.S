@@ -7,24 +7,6 @@ func000000000000006a:                   // @func000000000000006a
 	add	x0, x8, #16
 	ret
                                         // -- End function
-func0000000000000040:                   // @func0000000000000040
-// %bb.0:                               // %entry
-	lsl	x8, x0, #2
-	add	x9, x1, x8
-	add	x8, x9, x8
-	add	x8, x8, w2, sxtw #2
-	add	x0, x8, #24
-	ret
-                                        // -- End function
-func000000000000002a:                   // @func000000000000002a
-// %bb.0:                               // %entry
-	lsl	x8, x0, #2
-	add	w10, w2, #4
-	add	x9, x1, x8
-	add	x8, x9, x8
-	add	x0, x8, w10, sxtw #2
-	ret
-                                        // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
 	add	x8, x1, x0

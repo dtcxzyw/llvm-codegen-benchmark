@@ -50,7 +50,8 @@ entry:
   ret i64 %2
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; cpython/optimized/multibytecodec.ll
 ; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/stream.c.ll
 ; Function Attrs: nounwind

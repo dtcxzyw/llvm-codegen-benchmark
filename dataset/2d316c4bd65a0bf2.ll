@@ -1,5 +1,5 @@
 
-; 1319 occurrences:
+; 1317 occurrences:
 ; abc/optimized/bmcFx.c.ll
 ; abc/optimized/extraUtilMisc.c.ll
 ; abc/optimized/extraUtilPerm.c.ll
@@ -876,7 +876,6 @@
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
@@ -1255,7 +1254,6 @@
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; qemu/optimized/linux-user_thunk.c.ll
 ; qemu/optimized/target_riscv_vcrypto_helper.c.ll
-; qemu/optimized/virtio-mmio.c.ll
 ; recastnavigation/optimized/DetourNavMesh.cpp.ll
 ; recastnavigation/optimized/DetourTileCache.cpp.ll
 ; redis/optimized/sha1.ll
@@ -1323,11 +1321,11 @@
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   ret i32 %4
 }
 
-; 62 occurrences:
+; 63 occurrences:
 ; abc/optimized/extraUtilMacc.c.ll
 ; abc/optimized/extraUtilMult.c.ll
 ; abc/optimized/extraUtilPerm.c.ll
@@ -1349,6 +1347,7 @@ entry:
 ; luajit/optimized/buildvm.ll
 ; luajit/optimized/lj_ccall.ll
 ; luajit/optimized/lj_ccall_dyn.ll
+; lvgl/optimized/lv_canvas.ll
 ; mitsuba3/optimized/func.cpp.ll
 ; oiio/optimized/ddsinput.cpp.ll
 ; openjdk/optimized/ByteGray.ll

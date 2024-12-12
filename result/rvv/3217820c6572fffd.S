@@ -13,7 +13,7 @@ func0000000000000017:                   # @func0000000000000017
 	vsra.vi	v10, v10, 27
 	li	a0, 50
 	vadd.vx	v10, v10, a0
-	vmul.vv	v8, v10, v8
+	vmul.vv	v8, v8, v10
 	ret
 func0000000000000007:                   # @func0000000000000007
 	vsetivli	zero, 8, e32, m2, ta, ma

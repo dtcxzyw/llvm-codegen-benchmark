@@ -3,7 +3,7 @@
 ; openssl/optimized/libcrypto-lib-ffc_params_generate.ll
 ; openssl/optimized/libcrypto-shlib-ffc_params_generate.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = select i1 %0, i64 %3, i64 %1
@@ -11,11 +11,12 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; openssl/optimized/libcrypto-lib-ffc_params_generate.ll
 ; openssl/optimized/libcrypto-shlib-ffc_params_generate.ll
+; php/optimized/math.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = select i1 %0, i64 %3, i64 %1
@@ -39,11 +40,11 @@ entry:
 ; 1 occurrences:
 ; proxygen/optimized/HTTPSession.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000018(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = select i1 %0, i64 %3, i64 %1
-  %5 = icmp ugt i64 %4, 1
+  %5 = icmp samesign ugt i64 %4, 1
   ret i1 %5
 }
 
@@ -52,11 +53,11 @@ entry:
 ; hwloc/optimized/topology-x86.ll
 ; proxygen/optimized/HTTPSession.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000014(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = select i1 %0, i64 %3, i64 %1
-  %5 = icmp ult i64 %4, 2
+  %5 = icmp samesign ult i64 %4, 2
   ret i1 %5
 }
 
@@ -64,11 +65,11 @@ entry:
 ; hwloc/optimized/bitmap.ll
 ; lief/optimized/bignum.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000034(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = select i1 %0, i64 %3, i64 %1
-  %5 = icmp ult i64 %4, 16
+  %5 = icmp samesign ult i64 %4, 16
   ret i1 %5
 }
 
@@ -93,6 +94,17 @@ entry:
   %3 = icmp sgt i64 %1, -1
   %4 = select i1 %0, i1 true, i1 %3
   ret i1 %4
+}
+
+; 1 occurrences:
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i1 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = select i1 %0, i64 %3, i64 %1
+  %5 = icmp samesign ugt i64 %4, 2147483646
+  ret i1 %5
 }
 
 attributes #0 = { nounwind }

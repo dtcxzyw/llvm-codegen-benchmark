@@ -1,8 +1,7 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; delta-rs/optimized/47qjbhol909h8zu7.ll
 ; diesel-rs/optimized/3btvyztn2iiarpvf.ll
-; flatbuffers/optimized/flatc.cpp.ll
 ; minetest/optimized/content_mapblock.cpp.ll
 ; nuttx/optimized/uart_16550.c.ll
 ; ockam-rs/optimized/2kn3t03vxm4q238t.ll

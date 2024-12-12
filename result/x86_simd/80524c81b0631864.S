@@ -42,3 +42,10 @@ func0000000000000003:                   # @func0000000000000003
 	vpxor	%ymm1, %ymm0, %ymm0
 	vpshufb	.LCPI1_0(%rip), %ymm0, %ymm0    # ymm0 = zero,zero,ymm0[0],zero,zero,zero,ymm0[4],zero,zero,zero,ymm0[8],zero,zero,zero,ymm0[12],zero,zero,zero,ymm0[16],zero,zero,zero,ymm0[20],zero,zero,zero,ymm0[24],zero,zero,zero,ymm0[28],zero
 	retq
+.LCPI2_0:
+	.long	268435440                       # 0xffffff0
+func0000000000000002:                   # @func0000000000000002
+	vpxor	%ymm1, %ymm0, %ymm0
+	vpslld	$4, %ymm0, %ymm0
+	vpandd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
+	retq

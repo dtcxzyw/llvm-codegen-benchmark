@@ -1,6 +1,8 @@
 
-%"struct.V3NumberData::ValueAndX.2640850" = type { i32, i32 }
-%struct.drm_color_lut.3341904 = type { i16, i16, i16, i16 }
+%class.SwitchRange.2747980 = type { i32, i32, i32, float }
+%"struct.V3NumberData::ValueAndX.2754159" = type { i32, i32 }
+%struct.drm_color_lut.3531009 = type { i16, i16, i16, i16 }
+%"class.cv::Complex.13.3754032" = type { float, float }
 
 ; 7 occurrences:
 ; gromacs/optimized/gmx_arpack.cpp.ll
@@ -55,20 +57,31 @@ entry:
 ; verilator/optimized/V3Table.cpp.ll
 ; zxing/optimized/ConcentricFinder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 8
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 20
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 20
   ret ptr %5
 }
 
-; 8 occurrences:
+; 1 occurrences:
+; openjdk/optimized/parse2.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
+entry:
+  %2 = sdiv i32 %1, 2
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw %class.SwitchRange.2747980, ptr %0, i64 %3
+  %5 = getelementptr nusw i8, ptr %4, i64 -16
+  ret ptr %5
+}
+
+; 7 occurrences:
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/giaSim.c.ll
 ; gromacs/optimized/gmx_hbond.cpp.ll
-; libquic/optimized/random.c.ll
 ; opencv/optimized/normal.cpp.ll
 ; soc-simulator/optimized/verilated.ll
 ; velox/optimized/DenseHll.cpp.ll
@@ -78,7 +91,7 @@ define ptr @func0000000000000000(ptr %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 32
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %"struct.V3NumberData::ValueAndX.2640850", ptr %0, i64 %3
+  %4 = getelementptr %"struct.V3NumberData::ValueAndX.2754159", ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -8
   ret ptr %5
 }
@@ -86,11 +99,22 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_color.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 511
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.drm_color_lut.3341904, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %struct.drm_color_lut.3531009, ptr %0, i64 %3, i32 1
+  ret ptr %4
+}
+
+; 1 occurrences:
+; opencv/optimized/dxt.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
+entry:
+  %2 = sdiv i32 %1, 2
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nuw %"class.cv::Complex.13.3754032", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 

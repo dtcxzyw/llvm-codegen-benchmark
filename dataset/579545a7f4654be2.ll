@@ -1,19 +1,14 @@
 
-; 110 occurrences:
+; 103 occurrences:
 ; gromacs/optimized/fixpoint.c.ll
 ; gromacs/optimized/register.cpp.ll
 ; grpc/optimized/frame_goaway.cc.ll
 ; grpc/optimized/message_compress.cc.ll
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; linux/optimized/core.ll
-; linux/optimized/fork.ll
 ; linux/optimized/gre_offload.ll
-; linux/optimized/gso.ll
-; linux/optimized/hwvalid.ll
 ; linux/optimized/ibs.ll
-; linux/optimized/memory.ll
 ; linux/optimized/ptrace.ll
-; linux/optimized/pty.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/uhci-hcd.ll
 ; linux/optimized/vmalloc.ll
@@ -37,7 +32,6 @@
 ; llvm/optimized/CodeGenFunction.cpp.ll
 ; llvm/optimized/CombinerHelper.cpp.ll
 ; llvm/optimized/CombinerHelperCasts.cpp.ll
-; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/DFAPacketizer.cpp.ll
 ; llvm/optimized/DeclCXX.cpp.ll
 ; llvm/optimized/GISelKnownBits.cpp.ll
@@ -66,7 +60,6 @@
 ; llvm/optimized/MicrosoftMangle.cpp.ll
 ; llvm/optimized/ModuloSchedule.cpp.ll
 ; llvm/optimized/RISCVCallLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RISCVLegalizerInfo.cpp.ll
@@ -89,6 +82,7 @@
 ; llvm/optimized/X86InstructionSelector.cpp.ll
 ; llvm/optimized/X86LegalizerInfo.cpp.ll
 ; llvm/optimized/X86RegisterBankInfo.cpp.ll
+; openjdk/optimized/continuationFreezeThaw.ll
 ; openjdk/optimized/jvmtiEventController.ll
 ; openssl/optimized/legacy-dso-cpuid.ll
 ; openssl/optimized/libcrypto-lib-a_mbstr.ll
@@ -105,7 +99,6 @@
 ; qemu/optimized/hw_net_virtio-net.c.ll
 ; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
 ; qemu/optimized/target_riscv_translate.c.ll
-; redis/optimized/networking.ll
 ; ruby/optimized/array.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; spike/optimized/mret.ll

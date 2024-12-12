@@ -1,8 +1,8 @@
-func0000000000000181:                   # @func0000000000000181
+func0000000000000301:                   # @func0000000000000301
 	testl	%edx, %edx
 	setne	%al
 	andb	%sil, %al
 	movzbl	%al, %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq

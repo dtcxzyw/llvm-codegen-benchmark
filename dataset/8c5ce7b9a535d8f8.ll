@@ -26,4 +26,16 @@ entry:
   ret i32 %4
 }
 
+; 2 occurrences:
+; eastl/optimized/TestBitset.cpp.ll
+; z3/optimized/util.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000028(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %0, 256
+  %3 = select i1 %2, i32 %0, i32 %1
+  %4 = lshr i32 %3, 4
+  ret i32 %4
+}
+
 attributes #0 = { nounwind }

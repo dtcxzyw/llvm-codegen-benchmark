@@ -7,6 +7,12 @@ func000000000000001e:                   # @func000000000000001e
 	shlq	$5, %rax
 	addq	%rcx, %rax
 	retq
+func000000000000001f:                   # @func000000000000001f
+	movslq	%esi, %rax
+	subq	%rdx, %rdi
+	leaq	(%rax,%rax,2), %rax
+	leaq	(%rdi,%rax,4), %rax
+	retq
 func000000000000001c:                   # @func000000000000001c
 	movslq	%esi, %rax
 	subq	%rdx, %rdi

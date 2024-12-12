@@ -1,59 +1,56 @@
-func000000000000003c:                   # @func000000000000003c
+func000000000000006c:                   # @func000000000000006c
 	shll	$2, %esi
 	btl	%esi, %edi
 	setb	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	shll	$2, %esi
 	btl	%esi, %edi
 	setae	%al
 	retq
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000141:                   # @func0000000000000141
 	addl	%esi, %esi
 	shrxl	%esi, %edi, %eax
 	testb	$3, %al
 	sete	%al
 	retq
-func00000000000000b1:                   # @func00000000000000b1
+func0000000000000161:                   # @func0000000000000161
 	addl	%esi, %esi
 	btl	%esi, %edi
 	setae	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	addl	%esi, %esi
 	shrxl	%esi, %edi, %eax
 	testb	$2, %al
 	sete	%al
 	retq
-func00000000000000f1:                   # @func00000000000000f1
-	addl	%esi, %esi
-	btl	%esi, %edi
-	setae	%al
-	retq
-func00000000000000e1:                   # @func00000000000000e1
-	addl	%esi, %esi
+func00000000000001c1:                   # @func00000000000001c1
+	shll	$2, %esi
 	shrxl	%esi, %edi, %eax
-	testb	$2, %al
+	testb	$15, %al
 	sete	%al
 	retq
-func00000000000000ec:                   # @func00000000000000ec
+func00000000000001cc:                   # @func00000000000001cc
 	shll	$2, %esi
 	shrxl	%esi, %edi, %eax
 	testb	$15, %al
 	setne	%al
 	retq
-func0000000000000061:                   # @func0000000000000061
+func00000000000001e1:                   # @func00000000000001e1
 	addl	%esi, %esi
-	btl	%esi, %edi
-	setae	%al
+	andb	$6, %sil
+	shrxl	%esi, %edi, %eax
+	testb	$3, %al
+	sete	%al
 	retq
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	addl	%esi, %esi
 	shrxl	%esi, %edi, %eax
 	andl	$2, %eax
 	shrl	%eax
 	retq
-func00000000000000ac:                   # @func00000000000000ac
+func000000000000014c:                   # @func000000000000014c
 	addl	%esi, %esi
 	shrxl	%esi, %edi, %eax
 	andl	$2, %eax

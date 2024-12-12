@@ -1,7 +1,6 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; cmake/optimized/xxhash.c.ll
-; libwebp/optimized/alpha_enc.c.ll
 ; linux/optimized/xxhash.ll
 ; lz4/optimized/xxhash.c.ll
 ; php/optimized/hash_xxhash.ll
@@ -11,9 +10,9 @@
 define i32 @func0000000000000040(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %2, 15
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = zext i1 %4 to i32
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   ret i32 %6
 }
 
@@ -40,7 +39,7 @@ entry:
   %3 = icmp ne i32 %2, 0
   %4 = or i1 %3, %1
   %5 = zext i1 %4 to i32
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   ret i32 %6
 }
 

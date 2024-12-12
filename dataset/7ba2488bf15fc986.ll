@@ -1,5 +1,5 @@
 
-; 41 occurrences:
+; 40 occurrences:
 ; clamav/optimized/file.cpp.ll
 ; gromacs/optimized/minimize.cpp.ll
 ; gromacs/optimized/trjconv.cpp.ll
@@ -31,7 +31,6 @@
 ; openjdk/optimized/jvmtiEnvBase.ll
 ; openjdk/optimized/metaspaceDCmd.ll
 ; openjdk/optimized/sharedRuntime_x86_64.ll
-; openusd/optimized/dependency.cpp.ll
 ; postgres/optimized/explain.ll
 ; postgres/optimized/nodeSamplescan.ll
 ; postgres/optimized/nodeSort.ll
@@ -96,15 +95,17 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
+; 6 occurrences:
 ; coreutils-rs/optimized/3wh0yla9idangd55.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
+; openusd/optimized/dependency.cpp.ll
+; zed-rs/optimized/7xoulo9o2q4wd1npp9yutbl3x.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i8 %1) #0 {
 entry:
-  %2 = or disjoint i32 %0, 65536
+  %2 = or disjoint i32 %0, 8
   %3 = trunc nuw i8 %1 to i1
   %4 = select i1 %3, i32 %2, i32 %0
   ret i32 %4

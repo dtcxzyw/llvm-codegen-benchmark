@@ -168,7 +168,7 @@ entry:
   %3 = trunc nuw i128 %2 to i64
   %4 = lshr i64 %1, 63
   %5 = add nuw i64 %4, %3
-  %6 = and i64 %5, %0
+  %6 = and i64 %0, %5
   ret i64 %6
 }
 

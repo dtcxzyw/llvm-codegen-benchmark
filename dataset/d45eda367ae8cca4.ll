@@ -1,5 +1,5 @@
 
-; 47 occurrences:
+; 46 occurrences:
 ; assimp/optimized/SMDLoader.cpp.ll
 ; clamav/optimized/gpt.c.ll
 ; clamav/optimized/message.c.ll
@@ -14,7 +14,6 @@
 ; linux/optimized/ialloc.ll
 ; linux/optimized/journal.ll
 ; linux/optimized/kfifo.ll
-; linux/optimized/pcm_timer.ll
 ; linux/optimized/regmap.ll
 ; linux/optimized/resize.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -26,7 +25,6 @@
 ; llvm/optimized/Legalizer.cpp.ll
 ; llvm/optimized/LoadStoreOpt.cpp.ll
 ; llvm/optimized/PGOInstrumentation.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/VectorCombine.cpp.ll
@@ -46,6 +44,7 @@
 ; slurm/optimized/data_parser_v0_0_40_la-parsers.ll
 ; slurm/optimized/data_parser_v0_0_41_la-parsers.ll
 ; slurm/optimized/sdiag.ll
+; zed-rs/optimized/0431hruu0kb4k1yxxvcap38im.ll
 ; zstd/optimized/zstd_compress_sequences.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
@@ -55,10 +54,9 @@ entry:
   ret i64 %3
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; fmt/optimized/chrono-test.cc.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind

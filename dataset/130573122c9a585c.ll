@@ -13,21 +13,20 @@ entry:
   ret i1 %6
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; assimp/optimized/LWOMaterial.cpp.ll
 ; cmake/optimized/fse_compress.c.ll
 ; cmake/optimized/huf_compress.c.ll
 ; cmake/optimized/zstd_ldm.c.ll
-; yyjson/optimized/yyjson.c.ll
 ; zstd/optimized/fse_compress.c.ll
 ; zstd/optimized/huf_compress.c.ll
 ; zstd/optimized/zstd_ldm.c.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000168(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = getelementptr nusw i8, ptr %1, i64 -12
   %6 = icmp ugt ptr %4, %5
   ret i1 %6
@@ -50,10 +49,10 @@ entry:
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000164(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
-  %4 = getelementptr nusw ptr, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw ptr, ptr %0, i64 %3
   %5 = getelementptr nusw i8, ptr %1, i64 -8
   %6 = icmp ult ptr %4, %5
   ret i1 %6
@@ -63,12 +62,24 @@ entry:
 ; opencv/optimized/facemarkAAM.cpp.ll
 ; opencv/optimized/learning_based_color_balance.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000001e1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
-  %4 = getelementptr nusw float, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %1, i64 4
+  %4 = getelementptr nusw nuw float, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 4
   %6 = icmp eq ptr %4, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001e8(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = lshr i64 %2, 8
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 1
+  %6 = icmp ugt ptr %4, %5
   ret i1 %6
 }
 

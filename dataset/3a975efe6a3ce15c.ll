@@ -1,8 +1,10 @@
 
-%"class.testing::ThrowingValue.3270416" = type { i32 }
+%"class.testing::ThrowingValue.3460894" = type { i32 }
 
-; 62 occurrences:
+; 63 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
@@ -56,7 +58,6 @@
 ; mold/optimized/input-files.cc.SH4.cc.ll
 ; mold/optimized/input-files.cc.SPARC64.cc.ll
 ; mold/optimized/input-files.cc.X86_64.cc.ll
-; openjdk/optimized/cardTable.ll
 ; openusd/optimized/meshUtil.cpp.ll
 ; openusd/optimized/sdfdump.cpp.ll
 ; openusd/optimized/sdffilter.cpp.ll
@@ -65,11 +66,23 @@
 ; spike/optimized/socketif.ll
 ; velox/optimized/URLFunctions.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000000a(ptr %0, i64 %1) #0 {
+define i64 @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
-  %3 = getelementptr nusw ptr, ptr %0, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 8
+  %3 = getelementptr nusw nuw ptr, ptr %0, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 8
+  %5 = ptrtoint ptr %4 to i64
+  ret i64 %5
+}
+
+; 1 occurrences:
+; openjdk/optimized/cardTable.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000e(ptr %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 3
+  %3 = getelementptr nusw nuw ptr, ptr %0, i64 %2
+  %4 = getelementptr nusw i8, ptr %3, i64 -8
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }
@@ -80,7 +93,7 @@ entry:
 define i64 @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
-  %3 = getelementptr %"class.testing::ThrowingValue.3270416", ptr %0, i64 %2
+  %3 = getelementptr %"class.testing::ThrowingValue.3460894", ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 -4
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5

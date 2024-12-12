@@ -6,7 +6,7 @@ func000000000000003c:                   // @func000000000000003c
 	add	x0, x8, #4
 	ret
                                         // -- End function
-func000000000000003e:                   // @func000000000000003e
+func000000000000003f:                   // @func000000000000003f
 // %bb.0:                               // %entry
 	cmp	w1, #0
 	cneg	w8, w1, mi
@@ -14,7 +14,7 @@ func000000000000003e:                   // @func000000000000003e
 	add	x0, x8, #4
 	ret
                                         // -- End function
-func000000000000002e:                   // @func000000000000002e
+func000000000000002f:                   // @func000000000000002f
 // %bb.0:                               // %entry
 	cmp	w1, #0
 	cneg	w8, w1, mi
@@ -22,7 +22,7 @@ func000000000000002e:                   // @func000000000000002e
 	sub	x0, x8, #4
 	ret
                                         // -- End function
-func000000000000002a:                   // @func000000000000002a
+func000000000000002b:                   // @func000000000000002b
 // %bb.0:                               // %entry
 	cmp	w1, #0
 	cneg	w8, w1, mi
@@ -38,7 +38,7 @@ func0000000000000004:                   // @func0000000000000004
 	add	x0, x0, w8, uxtw #3
 	ret
                                         // -- End function
-func0000000000000016:                   // @func0000000000000016
+func0000000000000017:                   // @func0000000000000017
 // %bb.0:                               // %entry
 	cmp	w1, #0
 	cneg	w8, w1, mi

@@ -13,24 +13,18 @@ func000000000000000a:                   # @func000000000000000a
 	setns	%al
 	andb	%dil, %al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	cmpq	$17, %rsi
 	setae	%al
 	andb	%dil, %al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	cmpq	$3200000, %rsi                  # imm = 0x30D400
 	setb	%al
 	andb	%dil, %al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	testq	%rsi, %rsi
 	setns	%al
-	andb	%dil, %al
-	retq
-func0000000000000004:                   # @func0000000000000004
-	shrq	$47, %rsi
-	cmpl	$131059, %esi                   # imm = 0x1FFF3
-	setb	%al
 	andb	%dil, %al
 	retq

@@ -2,7 +2,7 @@
 	.long	0x47c35000                      # float 1.0E+5
 func0000000000000008:                   # @func0000000000000008
 	vdivss	.LCPI0_0(%rip), %xmm1, %xmm1
-	vcmpeqss	%xmm0, %xmm1, %k0
+	vcmpeqss	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 .LCPI1_0:

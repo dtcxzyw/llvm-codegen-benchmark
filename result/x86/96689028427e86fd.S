@@ -70,7 +70,7 @@ func0000000000000042:                   # @func0000000000000042
 	retq
 func0000000000000028:                   # @func0000000000000028
 	vmaxss	%xmm2, %xmm1, %xmm1
-	vcmpeqss	%xmm0, %xmm1, %k0
+	vcmpeqss	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 func0000000000000043:                   # @func0000000000000043
@@ -80,8 +80,13 @@ func0000000000000043:                   # @func0000000000000043
 	retq
 func0000000000000048:                   # @func0000000000000048
 	vmaxss	%xmm2, %xmm1, %xmm1
-	vcmpeqss	%xmm0, %xmm1, %k0
+	vcmpeqss	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
+	retq
+func000000000000004d:                   # @func000000000000004d
+	vminss	%xmm2, %xmm1, %xmm1
+	vucomiss	%xmm0, %xmm1
+	setbe	%al
 	retq
 func000000000000004b:                   # @func000000000000004b
 	vmaxss	%xmm2, %xmm1, %xmm1
@@ -95,7 +100,7 @@ func000000000000002d:                   # @func000000000000002d
 	retq
 func0000000000000027:                   # @func0000000000000027
 	vmaxss	%xmm2, %xmm1, %xmm1
-	vcmpneqss	%xmm0, %xmm1, %k0
+	vcmpneqss	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 func000000000000002c:                   # @func000000000000002c
@@ -109,6 +114,11 @@ func00000000000000c2:                   # @func00000000000000c2
 	vucomiss	%xmm0, %xmm2
 	seta	%al
 	retq
+func0000000000000047:                   # @func0000000000000047
+	vminss	%xmm2, %xmm1, %xmm1
+	vcmpneqss	%xmm1, %xmm0, %k0
+	kmovd	%k0, %eax
+	retq
 func0000000000000025:                   # @func0000000000000025
 	vmaxss	%xmm2, %xmm1, %xmm1
 	vucomiss	%xmm0, %xmm1
@@ -117,10 +127,5 @@ func0000000000000025:                   # @func0000000000000025
 func000000000000002b:                   # @func000000000000002b
 	vminss	%xmm2, %xmm1, %xmm1
 	vucomiss	%xmm1, %xmm0
-	setbe	%al
-	retq
-func000000000000004d:                   # @func000000000000004d
-	vminss	%xmm2, %xmm1, %xmm1
-	vucomiss	%xmm0, %xmm1
 	setbe	%al
 	retq

@@ -21,8 +21,8 @@ entry:
   %3 = shl i64 %2, 8
   %4 = and i64 %3, 4222124651642880
   %.masked = and i64 %1, -1148435428713435121
-  %5 = or i64 %4, %.masked
-  %6 = or disjoint i64 %5, %0
+  %5 = or i64 %.masked, %4
+  %6 = or disjoint i64 %0, %5
   ret i64 %6
 }
 
@@ -34,7 +34,7 @@ entry:
   %3 = shl nuw i64 %2, 32
   %4 = and i64 %3, 4294967296
   %.masked = and i64 %1, -8589934593
-  %5 = or i64 %4, %.masked
+  %5 = or i64 %.masked, %4
   %6 = or disjoint i64 %5, %0
   ret i64 %6
 }
@@ -49,7 +49,7 @@ entry:
   %4 = and i64 %3, 4222124651642880
   %.masked = and i64 %1, 4222189076152335
   %5 = or i64 %4, %.masked
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   ret i64 %6
 }
 

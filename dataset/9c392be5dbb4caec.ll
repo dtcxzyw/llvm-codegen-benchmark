@@ -30,11 +30,11 @@
 ; z3/optimized/subpaving_mpfx.cpp.ll
 ; z3/optimized/subpaving_mpq.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000012(ptr %0, i32 %1, i32 %2) #0 {
+define i64 @func0000000000000013(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %1, %2
   %4 = select i1 %3, i64 8, i64 0
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }
@@ -49,11 +49,11 @@ entry:
 ; verilator/optimized/V3Param.cpp.ll
 ; xgboost/optimized/adaptive.cc.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(ptr %0, i32 %1, i32 %2) #0 {
+define i64 @func000000000000001b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %1, %2
   %4 = select i1 %3, i64 0, i64 8
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }
@@ -61,11 +61,11 @@ entry:
 ; 1 occurrences:
 ; verilator/optimized/V3GraphAcyc.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000002a(ptr %0, i32 %1, i32 %2) #0 {
+define i64 @func000000000000002b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %1, %2
   %4 = select i1 %3, i64 0, i64 8
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }
@@ -88,11 +88,11 @@ entry:
 ; z3/optimized/sat_solver.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000022(ptr %0, i32 %1, i32 %2) #0 {
+define i64 @func0000000000000023(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %1, %2
   %4 = select i1 %3, i64 0, i64 8
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }

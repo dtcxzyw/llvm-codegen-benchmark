@@ -10,17 +10,15 @@ func0000000000000615:                   # @func0000000000000615
 	sbbl	$-1, %edi
 	leal	8(,%rdi,4), %eax
 	retq
-func000000000000063f:                   # @func000000000000063f
-	xorl	%eax, %eax
-	cmpl	$-2, %esi
-	setne	%al
-	addl	%edi, %eax
-	leal	8(,%rax,8), %eax
-	retq
 func000000000000043f:                   # @func000000000000043f
 	cmpl	$16777216, %esi                 # imm = 0x1000000
 	sbbl	$-1, %edi
 	leal	3(%rdi,%rdi), %eax
+	retq
+func000000000000063f:                   # @func000000000000063f
+	cmpl	$1, %esi
+	sbbl	$-1, %edi
+	leal	7(,%rdi,4), %eax
 	retq
 func0000000000000210:                   # @func0000000000000210
 	cmpl	$3, %esi

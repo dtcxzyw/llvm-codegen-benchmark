@@ -1,8 +1,11 @@
 
-; 14 occurrences:
+; 18 occurrences:
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/syslog_backend.ll
 ; llvm/optimized/SanitizerBinaryMetadata.cpp.ll
 ; llvm/optimized/SemaAttr.cpp.ll
 ; mitsuba3/optimized/string.cpp.ll
@@ -11,6 +14,7 @@
 ; ncnn/optimized/multiheadattention_x86_avx.cpp.ll
 ; ncnn/optimized/multiheadattention_x86_avx512.cpp.ll
 ; ncnn/optimized/multiheadattention_x86_fma.cpp.ll
+; opencv/optimized/erfilter.cpp.ll
 ; openusd/optimized/av1_loopfilter.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; tomlplusplus/optimized/toml.cpp.ll

@@ -3,7 +3,7 @@
 ; luau/optimized/main.cpp.ll
 ; nlohmann_json/optimized/unit.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000ac1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000002981(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
   %4 = icmp ne i32 %1, 0
@@ -17,7 +17,7 @@ entry:
 ; openblas/optimized/dgesvd.c.ll
 ; openblas/optimized/dtrsen.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000ccc(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000318c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp ne i32 %1, 0

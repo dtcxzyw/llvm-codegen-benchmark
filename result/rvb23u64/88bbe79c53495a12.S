@@ -46,18 +46,17 @@ func0000000000000013:                   # @func0000000000000013
 	sh1add	a0, a0, a0
 	slli	a0, a0, 3
 	ret
-.LCPI4_0:
-	.quad	-92118572153356063              # 0xfeb8baa58d9540e1
 func0000000000000014:                   # @func0000000000000014
-	lui	a3, %hi(.LCPI4_0)
-	ld	a3, %lo(.LCPI4_0)(a3)
 	sub	a1, a1, a2
+	lui	a2, 349525
 	srli	a1, a1, 3
-	mul	a1, a1, a3
-	lui	a2, 2
+	addiw	a2, a2, 1365
+	slli	a3, a2, 32
+	add	a2, a2, a3
+	mul	a1, a1, a2
 	add	a0, a0, a1
-	addiw	a1, a2, -1784
-	mul	a0, a0, a1
+	sh1add	a0, a0, a0
+	slli	a0, a0, 3
 	ret
 func0000000000000010:                   # @func0000000000000010
 	sub	a1, a1, a2

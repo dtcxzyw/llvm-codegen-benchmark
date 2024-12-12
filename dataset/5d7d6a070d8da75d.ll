@@ -14,14 +14,8 @@ entry:
   ret i64 %4
 }
 
-; 40 occurrences:
+; 24 occurrences:
 ; abc/optimized/acecPolyn.c.ll
-; abc/optimized/bmcMaj.c.ll
-; abc/optimized/bmcMaj2.c.ll
-; abc/optimized/bmcMaj3.c.ll
-; abc/optimized/dauDsd.c.ll
-; abc/optimized/dauGia.c.ll
-; abc/optimized/giaGig.c.ll
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/implicit_schur_complement.cc.ll
@@ -41,20 +35,10 @@ entry:
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
-; ncnn/optimized/deconvolution_x86.cpp.ll
-; ncnn/optimized/deconvolution_x86_avx.cpp.ll
-; ncnn/optimized/deconvolution_x86_avx512.cpp.ll
-; ncnn/optimized/deconvolution_x86_fma.cpp.ll
-; ncnn/optimized/deconvolutiondepthwise_x86.cpp.ll
-; ncnn/optimized/deconvolutiondepthwise_x86_avx.cpp.ll
-; ncnn/optimized/deconvolutiondepthwise_x86_avx512.cpp.ll
-; ncnn/optimized/deconvolutiondepthwise_x86_fma.cpp.ll
 ; opencv/optimized/aruco_detector.cpp.ll
 ; opencv/optimized/dxt.cpp.ll
-; opencv/optimized/matrix_operations.cpp.ll
 ; openjdk/optimized/X11Renderer.ll
 ; qemu/optimized/tcg.c.ll
-; zxing/optimized/DMECEncoder.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:

@@ -4,13 +4,24 @@ func000000000000001a:                   # @func000000000000001a
 	add	a0, a0, a1
 	addi	a0, a0, 64
 	ret
-func000000000000003a:                   # @func000000000000003a
+func000000000000001e:                   # @func000000000000001e
 	sub	a0, a0, a2
 	andi	a1, a1, -64
 	add	a0, a0, a1
 	addi	a0, a0, 64
 	ret
-func000000000000002a:                   # @func000000000000002a
+func000000000000003e:                   # @func000000000000003e
+	sub	a0, a0, a2
+	andi	a1, a1, -64
+	add	a0, a0, a1
+	addi	a0, a0, 64
+	ret
+func000000000000001b:                   # @func000000000000001b
+	sub	a0, a0, a2
+	zext.h	a1, a1
+	add	a0, a0, a1
+	ret
+func000000000000002b:                   # @func000000000000002b
 	sub	a0, a0, a2
 	add.uw	a0, a1, a0
 	addi	a0, a0, -8

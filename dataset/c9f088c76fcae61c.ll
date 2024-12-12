@@ -6,7 +6,7 @@
 ; tree-sitter-rs/optimized/4sxnw2peombwi3hz.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000034(i32 %0) #0 {
+define i64 @func0000000000000064(i32 %0) #0 {
 entry:
   %1 = zext i32 %0 to i64
   %2 = add nuw nsw i64 %1, 1
@@ -18,11 +18,11 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/ftbase.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i32 %0) #0 {
+define i64 @func0000000000000038(i32 %0) #0 {
 entry:
   %1 = zext i32 %0 to i64
   %2 = add nsw i64 %1, -2
-  %3 = icmp ugt i32 %0, 2
+  %3 = icmp samesign ugt i32 %0, 2
   %4 = select i1 %3, i64 %2, i64 0
   ret i64 %4
 }

@@ -4,25 +4,13 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	$1, %esi
 	cmovneq	%rdi, %rax
 	retq
-func000000000000000c:                   # @func000000000000000c
-	movq	%rdi, %rax
-	negq	%rax
-	testl	%esi, %esi
-	cmoveq	%rdi, %rax
-	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	movq	%rdi, %rax
 	negq	%rax
 	testl	%esi, %esi
 	cmovnsq	%rdi, %rax
 	retq
-func000000000000001a:                   # @func000000000000001a
-	movq	%rdi, %rax
-	negq	%rax
-	testl	%esi, %esi
-	cmovleq	%rdi, %rax
-	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movq	%rdi, %rax
 	negq	%rax
 	testl	%esi, %esi

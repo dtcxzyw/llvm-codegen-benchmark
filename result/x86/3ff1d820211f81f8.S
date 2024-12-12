@@ -1,30 +1,26 @@
-func000000000000007a:                   # @func000000000000007a
+func000000000000007f:                   # @func000000000000007f
 	movl	%esi, %eax
 	leaq	41(%rax,%rdi), %rax
 	retq
-func000000000000003a:                   # @func000000000000003a
+func000000000000003f:                   # @func000000000000003f
 	decl	%esi
 	leaq	32(%rdi,%rsi,4), %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+func000000000000000f:                   # @func000000000000000f
 	decl	%esi
 	leaq	8(%rdi,%rsi,8), %rax
 	retq
-func0000000000000032:                   # @func0000000000000032
-	decl	%esi
-	leaq	1542(%rdi,%rsi), %rax
-	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000002b:                   # @func000000000000002b
 	decl	%esi
 	leaq	-32(%rdi,%rsi,8), %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func000000000000000c:                   # @func000000000000000c
 	decl	%esi
 	leaq	(%rsi,%rsi,4), %rax
 	shlq	$4, %rax
 	leaq	5888(%rdi,%rax), %rax
 	retq
-func0000000000000078:                   # @func0000000000000078
+func000000000000007c:                   # @func000000000000007c
 	movl	%esi, %eax
 	leaq	3876(%rdi,%rax,4), %rax
 	retq
@@ -33,48 +29,27 @@ func0000000000000030:                   # @func0000000000000030
 	imulq	$272, %rsi, %rax                # imm = 0x110
 	leaq	12336(%rdi,%rax), %rax
 	retq
-func0000000000000038:                   # @func0000000000000038
+func000000000000003c:                   # @func000000000000003c
 	decl	%esi
 	leaq	24(%rdi,%rsi,8), %rax
 	retq
-func0000000000000018:                   # @func0000000000000018
+func000000000000001c:                   # @func000000000000001c
 	incl	%esi
 	leaq	16744(%rdi,%rsi,8), %rax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000001f:                   # @func000000000000001f
 	decl	%esi
 	leaq	1040(%rdi,%rsi,8), %rax
 	retq
-func000000000000004a:                   # @func000000000000004a
+func000000000000004f:                   # @func000000000000004f
 	movl	%esi, %eax
 	leaq	8(%rdi,%rax,4), %rax
 	retq
-func000000000000000e:                   # @func000000000000000e
+func000000000000002f:                   # @func000000000000002f
 	decl	%esi
-	leaq	14848(%rdi,%rsi,8), %rax
+	leaq	12(%rdi,%rsi,4), %rax
 	retq
-func000000000000003e:                   # @func000000000000003e
-	addl	$-52, %esi
-	leaq	(%rsi,%rsi,4), %rax
-	leaq	33192(%rdi,%rax,8), %rax
-	retq
-func000000000000001e:                   # @func000000000000001e
-	incl	%esi
-	leaq	8(%rdi,%rsi,4), %rax
-	retq
-func000000000000002e:                   # @func000000000000002e
-	decl	%esi
-	leaq	8(%rdi,%rsi,8), %rax
-	retq
-func000000000000004e:                   # @func000000000000004e
-	movl	%esi, %eax
-	leaq	144(%rdi,%rax,8), %rax
-	retq
-func000000000000007e:                   # @func000000000000007e
-	movl	%esi, %eax
-	leaq	136(%rdi,%rax,8), %rax
-	retq
-func0000000000000028:                   # @func0000000000000028
+func000000000000002c:                   # @func000000000000002c
 	decl	%esi
 	leaq	(%rsi,%rsi,8), %rax
 	shlq	$4, %rax
@@ -91,4 +66,8 @@ func0000000000000010:                   # @func0000000000000010
 func0000000000000000:                   # @func0000000000000000
 	decl	%esi
 	leaq	76(%rdi,%rsi,4), %rax
+	retq
+func0000000000000033:                   # @func0000000000000033
+	addl	$-259, %esi                     # imm = 0xFEFD
+	leaq	880(%rdi,%rsi,4), %rax
 	retq

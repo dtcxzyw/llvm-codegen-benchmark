@@ -1,5 +1,5 @@
 
-; 96 occurrences:
+; 97 occurrences:
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; clamav/optimized/readdb.c.ll
 ; cmake/optimized/process.c.ll
@@ -17,7 +17,6 @@
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libquic/optimized/gzwrite.c.ll
 ; libuv/optimized/process.c.ll
-; linux/optimized/attr.ll
 ; linux/optimized/blk-merge.ll
 ; linux/optimized/compaction.ll
 ; linux/optimized/dm-ioctl.ll
@@ -52,6 +51,7 @@
 ; luajit/optimized/lj_ctype.ll
 ; luajit/optimized/lj_ctype_dyn.ll
 ; luau/optimized/BytecodeBuilder.cpp.ll
+; lvgl/optimized/lv_dropdown.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/client.cpp.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
@@ -96,6 +96,7 @@
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; wireshark/optimized/packet-c1222.c.ll
 ; wireshark/optimized/packet-msgpack.c.ll
+; wireshark/optimized/packet-opensafety.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
@@ -126,19 +127,14 @@ entry:
   ret i32 %4
 }
 
-; 7 occurrences:
-; icu/optimized/utrie2.ll
-; llvm/optimized/DataFlowSanitizer.cpp.ll
-; llvm/optimized/SemaDeclCXX.cpp.ll
-; luau/optimized/isocline.c.ll
+; 2 occurrences:
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; qemu/optimized/accel_tcg_user-exec.c.ll
-; stb/optimized/stb_easy_font.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
-  %3 = icmp ult i32 %0, 17
+  %3 = icmp samesign ult i32 %0, 17
   %4 = select i1 %3, i32 %2, i32 0
   ret i32 %4
 }
@@ -178,13 +174,29 @@ entry:
   ret i32 %3
 }
 
+; 6 occurrences:
+; icu/optimized/utrie2.ll
+; linux/optimized/nfs4proc.ll
+; llvm/optimized/DataFlowSanitizer.cpp.ll
+; llvm/optimized/SemaDeclCXX.cpp.ll
+; luau/optimized/isocline.c.ll
+; stb/optimized/stb_easy_font.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 268435455
+  %3 = icmp ult i32 %0, 95
+  %4 = select i1 %3, i32 %2, i32 32
+  ret i32 %4
+}
+
 ; 1 occurrences:
 ; stb/optimized/stb_easy_font.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
-  %3 = icmp ugt i32 %0, 1
+  %3 = icmp samesign ugt i32 %0, 1
   %4 = select i1 %3, i32 %2, i32 0
   ret i32 %4
 }

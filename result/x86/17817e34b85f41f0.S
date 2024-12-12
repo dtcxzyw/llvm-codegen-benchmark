@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	0x3f7fbe77                      # float 0.999000012
-func00000000000003cb:                   # @func00000000000003cb
+func00000000000006cb:                   # @func00000000000006cb
 	incq	%rsi
 	cmpq	%rdi, %rsi
 	setne	%cl
@@ -8,7 +8,7 @@ func00000000000003cb:                   # @func00000000000003cb
 	setbe	%al
 	andb	%cl, %al
 	retq
-func00000000000003cd:                   # @func00000000000003cd
+func00000000000006cd:                   # @func00000000000006cd
 	incq	%rsi
 	cmpq	%rdi, %rsi
 	setne	%cl
@@ -17,7 +17,7 @@ func00000000000003cd:                   # @func00000000000003cd
 	setbe	%al
 	andb	%cl, %al
 	retq
-func00000000000002c8:                   # @func00000000000002c8
+func00000000000004c8:                   # @func00000000000004c8
 	incq	%rsi
 	cmpq	%rdi, %rsi
 	setne	%cl

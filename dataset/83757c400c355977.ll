@@ -16,11 +16,11 @@
 ; wireshark/optimized/packet-camel.c.ll
 ; wireshark/optimized/packet-isup.c.ll
 ; Function Attrs: nounwind
-define i8 @func00000000000000f4(i8 %0, i32 %1) #0 {
+define i8 @func00000000000001f4(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i32 %1 to i8
   %3 = add nuw nsw i8 %2, 55
-  %4 = icmp ult i32 %1, 10
+  %4 = icmp samesign ult i32 %1, 10
   %5 = select i1 %4, i8 %0, i8 %3
   ret i8 %5
 }

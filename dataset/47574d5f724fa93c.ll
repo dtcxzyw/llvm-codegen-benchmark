@@ -64,9 +64,8 @@ entry:
   ret i16 %2
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; linux/optimized/ata_piix.ll
-; linux/optimized/hbm.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000010(i8 %0) #0 {
 entry:

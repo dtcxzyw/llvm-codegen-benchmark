@@ -5,7 +5,7 @@ func000000000000003c:                   # @func000000000000003c
 	addi	a0, a0, -64
 	vand.vx	v10, v10, a0
 	vor.vv	v10, v10, v12
-	vor.vv	v10, v10, v8
+	vor.vv	v10, v8, v10
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vnsrl.wi	v8, v10, 0
 	ret

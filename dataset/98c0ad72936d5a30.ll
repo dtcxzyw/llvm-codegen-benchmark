@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 22 occurrences:
 ; libphonenumber/optimized/phonemetadata.pb.cc.ll
 ; opencv/optimized/attr_value.pb.cc.ll
 ; opencv/optimized/function.pb.cc.ll
@@ -15,18 +15,26 @@
 ; sentencepiece/optimized/extension_set.cc.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/b1bc3rbs9s229gjbf718xcm8w.ll
+; zed-rs/optimized/boyei0qs0y80q8snoztbi8jt7.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
+; zed-rs/optimized/f10ffiihtazjqkmwr0jihceey.ll
 ; Function Attrs: nounwind
 define i64 @func00000000000000d0(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 73
   %4 = lshr i32 %3, 6
   %5 = zext nneg i32 %4 to i64
-  %6 = add i64 %5, %1
+  %6 = add i64 %1, %5
   %7 = add i64 %6, %0
   ret i64 %7
 }
 
-; 97 occurrences:
+; 98 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
 ; fmt/optimized/header-only-test.cc.ll
@@ -130,8 +138,35 @@ entry:
   %3 = add i32 %2, 32800
   %4 = lshr i32 %3, 16
   %5 = zext nneg i32 %4 to i64
-  %6 = add nsw i64 %5, %1
+  %6 = add nsw i64 %1, %5
   %7 = add nsw i64 %6, %0
+  ret i64 %7
+}
+
+; 1 occurrences:
+; lodepng/optimized/lodepng.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001f(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %2, 7
+  %4 = lshr i32 %3, 3
+  %5 = zext nneg i32 %4 to i64
+  %6 = add nuw nsw i64 %1, %5
+  %7 = add nuw nsw i64 %0, %6
+  ret i64 %7
+}
+
+; 2 occurrences:
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
+; Function Attrs: nounwind
+define i64 @func00000000000000df(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw nsw i32 %2, 73
+  %4 = lshr i32 %3, 6
+  %5 = zext nneg i32 %4 to i64
+  %6 = add nuw nsw i64 %1, %5
+  %7 = add nuw nsw i64 %6, %0
   ret i64 %7
 }
 

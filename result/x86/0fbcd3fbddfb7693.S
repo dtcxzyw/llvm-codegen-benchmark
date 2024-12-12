@@ -58,12 +58,12 @@ func000000000000001f:                   # @func000000000000001f
 	imulq	%rdi, %rax
 	shlq	$5, %rax
 	retq
-func0000000000000010:                   # @func0000000000000010
+func000000000000000f:                   # @func000000000000000f
 	movl	%esi, %eax
 	imulq	%rdi, %rax
-	shlq	$3, %rax
+	shlq	$4, %rax
 	retq
-func000000000000000f:                   # @func000000000000000f
+func0000000000000010:                   # @func0000000000000010
 	movl	%esi, %eax
 	imulq	%rdi, %rax
 	shlq	$3, %rax

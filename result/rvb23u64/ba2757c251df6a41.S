@@ -51,7 +51,7 @@ func0000000000000007:                   # @func0000000000000007
 	lui	a1, %hi(.LCPI6_0)
 	fld	fa5, %lo(.LCPI6_0)(a1)
 	fmul.d	fa5, fa1, fa5
-	feq.d	a1, fa5, fa0
+	feq.d	a1, fa0, fa5
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
@@ -61,6 +61,6 @@ func0000000000000008:                   # @func0000000000000008
 	lui	a1, %hi(.LCPI7_0)
 	fld	fa5, %lo(.LCPI7_0)(a1)
 	fmul.d	fa5, fa1, fa5
-	feq.d	a1, fa5, fa0
+	feq.d	a1, fa0, fa5
 	and	a0, a0, a1
 	ret

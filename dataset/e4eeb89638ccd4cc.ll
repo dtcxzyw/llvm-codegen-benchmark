@@ -38,7 +38,7 @@ entry:
 ; hdf5/optimized/H5DO.c.ll
 ; opencv/optimized/core_detect.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 1
   %3 = urem i64 %2, %0

@@ -50,15 +50,11 @@ entry:
   ret i32 %4
 }
 
-; 67 occurrences:
+; 58 occurrences:
 ; gromacs/optimized/dlarft.cpp.ll
-; gromacs/optimized/dorg2r.cpp.ll
 ; gromacs/optimized/dorgl2.cpp.ll
-; gromacs/optimized/dtrtri.cpp.ll
 ; gromacs/optimized/slarft.cpp.ll
-; gromacs/optimized/sorg2r.cpp.ll
 ; gromacs/optimized/sorgl2.cpp.ll
-; gromacs/optimized/strtri.cpp.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; linux/optimized/fair.ll
 ; linux/optimized/indirect.ll
@@ -69,11 +65,11 @@ entry:
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; lvgl/optimized/lv_chart.ll
 ; minetest/optimized/profiler.cpp.ll
 ; openblas/optimized/dgejsv.c.ll
-; openblas/optimized/dgesc2.c.ll
 ; openblas/optimized/dgesvdq.c.ll
-; openblas/optimized/dgetsqrhrt.c.ll
 ; openblas/optimized/dgges.c.ll
 ; openblas/optimized/dgges3.c.ll
 ; openblas/optimized/dggesx.c.ll
@@ -86,21 +82,17 @@ entry:
 ; openblas/optimized/dlaqr0.c.ll
 ; openblas/optimized/dlaqr4.c.ll
 ; openblas/optimized/dlasyf.c.ll
-; openblas/optimized/dlasyf_aa.c.ll
 ; openblas/optimized/dlasyf_rk.c.ll
 ; openblas/optimized/dlasyf_rook.c.ll
-; openblas/optimized/dlatdf.c.ll
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
 ; openblas/optimized/dlatrs.c.ll
 ; openblas/optimized/dorbdb.c.ll
 ; openblas/optimized/dorbdb2.c.ll
-; openblas/optimized/dorgl2.c.ll
 ; openblas/optimized/dporfs.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; openblas/optimized/dsyequb.c.ll
 ; openblas/optimized/dsyrfs.c.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
 ; openblas/optimized/dsytrf_aa.c.ll
 ; openblas/optimized/dsytri2x.c.ll
 ; openblas/optimized/dsytri_3x.c.ll
@@ -109,7 +101,6 @@ entry:
 ; openblas/optimized/dtgevc.c.ll
 ; openblas/optimized/dtgsen.c.ll
 ; openblas/optimized/dtrsen.c.ll
-; openblas/optimized/dtrsna.c.ll
 ; opencv/optimized/fr_lfw_benchmark.cpp.ll
 ; openspiel/optimized/battleship.cc.ll
 ; openspiel/optimized/bridge_scoring.cc.ll
@@ -139,36 +130,23 @@ entry:
   ret i32 %4
 }
 
-; 33 occurrences:
+; 20 occurrences:
 ; arrow/optimized/align_util.cc.ll
 ; bullet3/optimized/btMLCPSolver.ll
 ; bullet3/optimized/btMultiBodyMLCPConstraintSolver.ll
 ; gromacs/optimized/atomdata.cpp.ll
-; gromacs/optimized/dgebd2.cpp.ll
-; gromacs/optimized/dgeqr2.cpp.ll
-; gromacs/optimized/dgetf2.cpp.ll
 ; gromacs/optimized/dlansy.cpp.ll
 ; gromacs/optimized/dorgl2.cpp.ll
 ; gromacs/optimized/dsymv.cpp.ll
 ; gromacs/optimized/dtrmm.cpp.ll
 ; gromacs/optimized/dtrmv.cpp.ll
 ; gromacs/optimized/dtrsm.cpp.ll
-; gromacs/optimized/dtrti2.cpp.ll
-; gromacs/optimized/dtrtri.cpp.ll
-; gromacs/optimized/sgebd2.cpp.ll
-; gromacs/optimized/sgeqr2.cpp.ll
-; gromacs/optimized/sgetf2.cpp.ll
 ; gromacs/optimized/slansy.cpp.ll
 ; gromacs/optimized/sorgl2.cpp.ll
 ; gromacs/optimized/ssymv.cpp.ll
 ; gromacs/optimized/strmm.cpp.ll
 ; gromacs/optimized/strmv.cpp.ll
 ; gromacs/optimized/strsm.cpp.ll
-; gromacs/optimized/strti2.cpp.ll
-; gromacs/optimized/strtri.cpp.ll
-; openblas/optimized/dorghr.c.ll
-; openblas/optimized/dorgl2.c.ll
-; openblas/optimized/dsygst.c.ll
 ; quantlib/optimized/lmdif.ll
 ; sundials/optimized/sunnonlinsol_fixedpoint.c.ll
 ; xgboost/optimized/quantile.cc.ll
@@ -282,7 +260,7 @@ entry:
   ret i32 %4
 }
 
-; 18 occurrences:
+; 16 occurrences:
 ; gromacs/optimized/dgebrd.cpp.ll
 ; gromacs/optimized/dlarft.cpp.ll
 ; gromacs/optimized/dorm2r.cpp.ll
@@ -290,7 +268,6 @@ entry:
 ; gromacs/optimized/dormlq.cpp.ll
 ; gromacs/optimized/dormqr.cpp.ll
 ; gromacs/optimized/dtrmm.cpp.ll
-; gromacs/optimized/dtrti2.cpp.ll
 ; gromacs/optimized/sgebrd.cpp.ll
 ; gromacs/optimized/slarft.cpp.ll
 ; gromacs/optimized/sorm2r.cpp.ll
@@ -298,7 +275,6 @@ entry:
 ; gromacs/optimized/sormlq.cpp.ll
 ; gromacs/optimized/sormqr.cpp.ll
 ; gromacs/optimized/strmm.cpp.ll
-; gromacs/optimized/strti2.cpp.ll
 ; openblas/optimized/dhgeqz.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; Function Attrs: nounwind

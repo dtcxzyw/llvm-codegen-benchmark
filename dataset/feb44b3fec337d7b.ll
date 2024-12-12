@@ -1,5 +1,5 @@
 
-; 274 occurrences:
+; 272 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/lpkMulti.c.ll
@@ -83,7 +83,6 @@
 ; llvm/optimized/Lint.cpp.ll
 ; llvm/optimized/ODRDiagsEmitter.cpp.ll
 ; llvm/optimized/RDFGraph.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RetainCountChecker.cpp.ll
 ; llvm/optimized/RetainCountDiagnostics.cpp.ll
 ; llvm/optimized/SCCPSolver.cpp.ll
@@ -258,7 +257,6 @@
 ; wireshark/optimized/crc10.c.ll
 ; wireshark/optimized/crc11.c.ll
 ; wireshark/optimized/crc16-plain.c.ll
-; wireshark/optimized/dot11decrypt_tkip.c.ll
 ; wireshark/optimized/packet-btbredr_rf.c.ll
 ; wireshark/optimized/packet-classicstun.c.ll
 ; wireshark/optimized/packet-dnp.c.ll

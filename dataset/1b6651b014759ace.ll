@@ -13,8 +13,7 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
-; abseil-cpp/optimized/memutil.cc.ll
+; 2 occurrences:
 ; wireshark/optimized/packet-telnet.c.ll
 ; wireshark/optimized/packet-v52.c.ll
 ; Function Attrs: nounwind

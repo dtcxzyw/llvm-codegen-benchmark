@@ -1,6 +1,7 @@
 
-; 193 occurrences:
+; 194 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
 ; darktable/optimized/histogram.c.ll
 ; darktable/optimized/introspection_bilateral.cc.ll
 ; darktable/optimized/introspection_blurs.c.ll
@@ -96,7 +97,6 @@
 ; mitsuba3/optimized/merge.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/progress.cpp.ll
 ; mitsuba3/optimized/roughplastic.cpp.ll
 ; mitsuba3/optimized/sdfgrid.cpp.ll
@@ -156,7 +156,6 @@
 ; proxygen/optimized/PersistentQuicPskCache.cpp.ll
 ; proxygen/optimized/PersistentQuicTokenCache.cpp.ll
 ; sentencepiece/optimized/unigram_model.cc.ll
-; sentencepiece/optimized/unigram_model_trainer.cc.ll
 ; spike/optimized/vaesdf_vs.ll
 ; spike/optimized/vaesdf_vv.ll
 ; spike/optimized/vaesdm_vs.ll
@@ -193,17 +192,20 @@
 ; xgboost/optimized/random.cc.ll
 ; z3/optimized/dl_mk_magic_sets.cpp.ll
 ; z3/optimized/dl_mk_simple_joins.cpp.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, i64 %1) #0 {
 entry:
   %2 = uitofp i64 %1 to float
-  %3 = fmul float %2, %0
+  %3 = fmul float %0, %2
   ret float %3
 }
 
-; 73 occurrences:
+; 74 occurrences:
 ; actix-rs/optimized/1v3445utu4y7ica.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
 ; darktable/optimized/introspection_colorbalancergb.c.ll
 ; darktable/optimized/introspection_liquify.c.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
@@ -279,7 +281,7 @@ entry:
 define float @func0000000000000001(float %0, i64 %1) #0 {
 entry:
   %2 = uitofp nneg i64 %1 to float
-  %3 = fmul float %2, %0
+  %3 = fmul float %0, %2
   ret float %3
 }
 

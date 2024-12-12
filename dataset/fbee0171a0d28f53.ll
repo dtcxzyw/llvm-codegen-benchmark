@@ -13,7 +13,7 @@ entry:
   ret { i64, i64 } %4
 }
 
-; 7 occurrences:
+; 9 occurrences:
 ; quickjs/optimized/quickjs.ll
 ; rust-analyzer-rs/optimized/34epm85550lugb2d.ll
 ; rust-analyzer-rs/optimized/5c13ae2xelsf4ggd.ll
@@ -21,6 +21,8 @@ entry:
 ; rust-analyzer-rs/optimized/hknx1qr3lu9291s.ll
 ; rust-analyzer-rs/optimized/kcxpblerbqo90m6.ll
 ; tree-sitter-rs/optimized/2ysit6xak1d4lr67.ll
+; zed-rs/optimized/0fv2ekz5cqmfp10c07ot56iad.ll
+; zed-rs/optimized/eldybx25av55fm0jlf5yq64qn.ll
 ; Function Attrs: nounwind
 define { i64, i64 } @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:

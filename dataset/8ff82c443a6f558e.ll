@@ -1,18 +1,18 @@
 
-%struct.CPpmd_State.3698913 = type { i8, i8, i16, i16 }
+%struct.CPpmd_State.3878271 = type { i8, i8, i16, i16 }
 
 ; 3 occurrences:
 ; hyperscan/optimized/mcclellan.c.ll
 ; hyperscan/optimized/mcsheng.c.ll
 ; php/optimized/pcre2_dfa_match.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000aa(ptr %0, i8 %1, i32 %2) #0 {
+define ptr @func00000000000000bf(ptr %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = zext i8 %1 to i64
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 1
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 1
   ret ptr %7
 }
 
@@ -45,13 +45,13 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/archive_ppmd8.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i8 %1, i32 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = zext i8 %1 to i64
-  %6 = getelementptr nusw %struct.CPpmd_State.3698913, ptr %4, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 6
+  %6 = getelementptr nusw nuw %struct.CPpmd_State.3878271, ptr %4, i64 %5
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 6
   ret ptr %7
 }
 

@@ -3,7 +3,7 @@
 ; memcached/optimized/memcached-items.ll
 ; memcached/optimized/memcached_debug-items.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000cc4(i64 %0, i64 %1) #0 {
+define i1 @func0000000000003184(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %0, 0
   %3 = icmp ne i64 %1, 0
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; hdf5/optimized/H5FDint.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000cc8(i64 %0, i64 %1) #0 {
+define i1 @func0000000000003188(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, -1
   %3 = icmp ne i64 %0, -1
@@ -30,7 +30,7 @@ entry:
 ; clamav/optimized/yara_exec.c.ll
 ; linux/optimized/dm-ioctl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000ccc(i64 %0, i64 %1) #0 {
+define i1 @func000000000000318c(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, -1483400188077313
   %3 = icmp ne i64 %0, -1483400188077313
@@ -43,7 +43,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/yara_exec.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000cc1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000003181(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, -1483400188077313
   %3 = icmp ne i64 %0, -1483400188077313
@@ -56,7 +56,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/yara_exec.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000ccb(i64 %0, i64 %1) #0 {
+define i1 @func000000000000318b(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, -1483400188077313
   %3 = icmp ne i64 %0, -1483400188077313
@@ -69,7 +69,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/yara_exec.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000cc7(i64 %0, i64 %1) #0 {
+define i1 @func0000000000003187(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, -1483400188077313
   %3 = icmp ne i64 %0, -1483400188077313
@@ -82,7 +82,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/yara_exec.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000cca(i64 %0, i64 %1) #0 {
+define i1 @func000000000000318a(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, -1483400188077313
   %3 = icmp ne i64 %0, -1483400188077313
@@ -95,7 +95,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/yara_exec.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000cc6(i64 %0, i64 %1) #0 {
+define i1 @func0000000000003186(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, -1483400188077313
   %3 = icmp ne i64 %0, -1483400188077313

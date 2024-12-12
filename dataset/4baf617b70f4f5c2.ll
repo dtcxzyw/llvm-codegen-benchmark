@@ -16,11 +16,11 @@ entry:
   %3 = and i32 %2, 63
   %4 = zext nneg i32 %3 to i64
   %5 = shl nuw i64 1, %4
-  %6 = and i64 %5, %0
+  %6 = and i64 %0, %5
   ret i64 %6
 }
 
-; 202 occurrences:
+; 201 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
@@ -127,7 +127,6 @@ entry:
 ; llvm/optimized/PDBFileBuilder.cpp.ll
 ; llvm/optimized/PPDirectives.cpp.ll
 ; llvm/optimized/PPExpressions.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVO0PreLegalizerCombiner.cpp.ll
 ; llvm/optimized/RISCVPostLegalizerCombiner.cpp.ll
 ; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
@@ -277,7 +276,7 @@ entry:
   %3 = and i32 %2, 63
   %4 = zext nneg i32 %3 to i64
   %5 = shl nsw i64 -1, %4
-  %6 = and i64 %5, %0
+  %6 = and i64 %0, %5
   ret i64 %6
 }
 
@@ -322,7 +321,7 @@ entry:
   %3 = and i32 %2, 63
   %4 = zext nneg i32 %3 to i64
   %5 = shl nuw i64 1, %4
-  %6 = and i64 %5, %0
+  %6 = and i64 %0, %5
   ret i64 %6
 }
 
@@ -335,7 +334,7 @@ entry:
   %3 = and i32 %2, 63
   %4 = zext nneg i32 %3 to i64
   %5 = shl i64 2, %4
-  %6 = and i64 %5, %0
+  %6 = and i64 %0, %5
   ret i64 %6
 }
 

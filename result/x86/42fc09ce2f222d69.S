@@ -1,10 +1,10 @@
-func00000000000000a8:                   # @func00000000000000a8
+func0000000000000148:                   # @func0000000000000148
 	movl	%esi, %eax
 	subl	%edi, %eax
 	subl	%esi, %edi
 	cmovael	%edi, %eax
 	retq
-func00000000000000a4:                   # @func00000000000000a4
+func0000000000000144:                   # @func0000000000000144
 	movl	%edi, %eax
 	subl	%esi, %eax
 	subl	%edi, %esi
@@ -22,13 +22,13 @@ func000000000000000a:                   # @func000000000000000a
 	subl	%edi, %esi
 	cmovll	%esi, %eax
 	retq
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000001f8:                   # @func00000000000001f8
 	movl	%esi, %eax
 	subl	%edi, %eax
 	subl	%esi, %edi
 	cmovael	%edi, %eax
 	retq
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	movl	%edi, %eax
 	subl	%esi, %eax
 	subl	%edi, %esi
@@ -40,7 +40,7 @@ func0000000000000008:                   # @func0000000000000008
 	subl	%esi, %edi
 	cmovael	%edi, %eax
 	retq
-func00000000000000b8:                   # @func00000000000000b8
+func0000000000000168:                   # @func0000000000000168
 	movl	%esi, %eax
 	subl	%edi, %eax
 	subl	%esi, %edi

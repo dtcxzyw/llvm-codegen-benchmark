@@ -1,5 +1,5 @@
 
-; 76 occurrences:
+; 75 occurrences:
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/ifMan.c.ll
 ; abc/optimized/ivyDsd.c.ll
@@ -19,7 +19,6 @@
 ; linux/optimized/g4x_hdmi.ll
 ; linux/optimized/i2c-i801.ll
 ; linux/optimized/i9xx_wm.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_dp_aux.ll
 ; linux/optimized/tg3.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
@@ -96,13 +95,13 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 3
   %4 = and i32 %3, 17825792
-  %5 = or i32 %4, %1
+  %5 = or i32 %1, %4
   %6 = or i32 %5, %0
   %7 = or i32 %6, 4194304
   ret i32 %7
 }
 
-; 45 occurrences:
+; 44 occurrences:
 ; actix-rs/optimized/5k5ycrtlwwxldg7.ll
 ; coreutils-rs/optimized/1nj6h5colnkxfn01.ll
 ; coreutils-rs/optimized/2vlueqjvzu597xlx.ll
@@ -114,7 +113,6 @@ entry:
 ; image-rs/optimized/5oy2v8fghrh79s8.ll
 ; just-rs/optimized/2sotx4bdu006z307.ll
 ; libevent/optimized/evutil_rand.c.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_vdsc.ll
 ; linux/optimized/rx.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
@@ -153,7 +151,7 @@ define i32 @func000000000000001f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 2
   %4 = and i32 %3, 16128
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or disjoint i32 %5, %0
   %7 = or disjoint i32 %6, 8421600
   ret i32 %7
@@ -176,7 +174,7 @@ entry:
   ret i32 %7
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; abc/optimized/ivyDsd.c.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/open.ll
@@ -186,7 +184,6 @@ entry:
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; meshlab/optimized/paintbox.cpp.ll
 ; meshlab/optimized/transferfunction.cpp.ll
@@ -200,7 +197,7 @@ entry:
   %3 = shl i32 %2, 8
   %4 = and i32 %3, 65280
   %5 = or disjoint i32 %4, %1
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = or i32 %6, -16777216
   ret i32 %7
 }
@@ -219,35 +216,6 @@ entry:
 }
 
 ; 3 occurrences:
-; linux/optimized/blktrace.ll
-; linux/optimized/xhci-hub.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = shl i32 %2, 14
-  %4 = and i32 %3, 1048576
-  %5 = or disjoint i32 %4, %1
-  %6 = or i32 %5, %0
-  %7 = or i32 %6, 120
-  ret i32 %7
-}
-
-; 2 occurrences:
-; postgres/optimized/utf8_and_gb18030.ll
-; qemu/optimized/hw_9pfs_9p.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = shl nsw i32 %2, 5
-  %4 = and i32 %3, 640
-  %5 = or disjoint i32 %4, %1
-  %6 = or disjoint i32 %5, %0
-  %7 = or disjoint i32 %6, 64
-  ret i32 %7
-}
-
-; 3 occurrences:
 ; image-rs/optimized/fyek6fuqg0ocunt.ll
 ; linux/optimized/intel_sseu.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
@@ -256,8 +224,8 @@ define i32 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = and i32 %3, 65280
-  %5 = or disjoint i32 %4, %1
-  %6 = or i32 %5, %0
+  %5 = or disjoint i32 %1, %4
+  %6 = or i32 %0, %5
   %7 = or i32 %6, -16777216
   ret i32 %7
 }
@@ -296,20 +264,19 @@ entry:
   %3 = shl i32 %2, 15
   %4 = and i32 %3, 4161536
   %5 = or i32 %4, %1
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = or i32 %6, -1073741824
   ret i32 %7
 }
 
-; 2 occurrences:
-; linux/optimized/statfs.ll
+; 1 occurrences:
 ; linux/optimized/xhci.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 4
   %4 = and i32 %3, 240
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or i32 %5, %0
   %7 = or disjoint i32 %6, 8
   ret i32 %7
@@ -328,6 +295,20 @@ entry:
   ret i32 %7
 }
 
+; 2 occurrences:
+; linux/optimized/blktrace.ll
+; linux/optimized/xhci-hub.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl i32 %2, 2
+  %4 = and i32 %3, 2097152
+  %5 = or disjoint i32 %4, %1
+  %6 = or i32 %5, %0
+  %7 = or i32 %6, 96
+  ret i32 %7
+}
+
 ; 1 occurrences:
 ; linux/optimized/intel_ddi.ll
 ; Function Attrs: nounwind
@@ -335,9 +316,22 @@ define i32 @func000000000000001d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 12
   %4 = and i32 %3, 1015808
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or i32 %5, %0
   %7 = or disjoint i32 %6, 152
+  ret i32 %7
+}
+
+; 1 occurrences:
+; postgres/optimized/utf8_and_gb18030.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl nsw i32 %2, 6
+  %4 = and i32 %3, 117440512
+  %5 = or disjoint i32 %1, %4
+  %6 = or disjoint i32 %5, %0
+  %7 = or disjoint i32 %6, -260013952
   ret i32 %7
 }
 
@@ -348,7 +342,7 @@ define i32 @func000000000000000e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 8
   %4 = and i32 %3, 65280
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or disjoint i32 %5, %0
   %7 = or i32 %6, -16777216
   ret i32 %7
@@ -361,7 +355,7 @@ define i32 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 8
   %4 = and i32 %3, 65280
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or disjoint i32 %5, %0
   %7 = or i32 %6, -16777216
   ret i32 %7

@@ -31,4 +31,19 @@ entry:
   ret i64 %7
 }
 
+; 1 occurrences:
+; linux/optimized/maple_tree.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = icmp eq i32 %2, 16
+  %4 = select i1 %3, i64 6, i64 0, !prof !0
+  %5 = and i64 %1, -256
+  %6 = or disjoint i64 %4, %5
+  %7 = or i64 %0, %6
+  ret i64 %7
+}
+
 attributes #0 = { nounwind }
+
+!0 = !{!"branch_weights", i32 8000000, i32 4000000}

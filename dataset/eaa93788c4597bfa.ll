@@ -27,17 +27,6 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
-; qemu/optimized/block_vvfat.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000013(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ult i32 %0, 10
-  %3 = select i1 %2, i32 1, i32 %1
-  %4 = add nuw nsw i32 %3, %0
-  ret i32 %4
-}
-
 ; 3 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; icu/optimized/utrie2_builder.ll
@@ -88,9 +77,8 @@ entry:
   ret i32 %4
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; abc/optimized/cnfCut.c.ll
-; abc/optimized/cswMan.c.ll
 ; linux/optimized/scsi_transport_spi.ll
 ; linux/optimized/uncore_nhmex.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll

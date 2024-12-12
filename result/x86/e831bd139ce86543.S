@@ -1,16 +1,18 @@
-func000000000000006a:                   # @func000000000000006a
+func000000000000007f:                   # @func000000000000007f
 	movl	%edx, %eax
-	xorl	%ecx, %ecx
+	leaq	(%rax,%rax,2), %rax
+	leaq	8(,%rax,4), %rax
 	testb	$1, %sil
+	movl	$8, %ecx
 	cmovneq	%rax, %rcx
-	shlq	$4, %rcx
-	leaq	3048(%rdi,%rcx), %rax
+	leaq	3040(%rdi,%rcx), %rax
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000033:                   # @func0000000000000033
 	movl	%edx, %eax
-	xorl	%ecx, %ecx
+	shlq	$5, %rax
+	orq	$24, %rax
 	testb	$1, %sil
+	movl	$24, %ecx
 	cmovneq	%rax, %rcx
-	shlq	$5, %rcx
-	leaq	80(%rdi,%rcx), %rax
+	leaq	56(%rdi,%rcx), %rax
 	retq

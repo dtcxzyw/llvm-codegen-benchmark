@@ -1,5 +1,5 @@
 
-; 84 occurrences:
+; 86 occurrences:
 ; abc/optimized/ifDelay.c.ll
 ; abc/optimized/lpkCore.c.ll
 ; abc/optimized/timMan.c.ll
@@ -23,6 +23,8 @@
 ; imgui/optimized/imgui_draw.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; lightgbm/optimized/objective_function.cpp.ll
+; lvgl/optimized/lv_draw_arc.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
@@ -88,7 +90,7 @@
 define i1 @func0000000000000001(i32 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   ret i1 %3
 }
 
@@ -208,7 +210,7 @@ entry:
 define i1 @func000000000000000a(i32 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
-  %3 = icmp slt i32 %2, %0
+  %3 = icmp sgt i32 %0, %2
   ret i1 %3
 }
 
@@ -277,7 +279,7 @@ entry:
 define i1 @func0000000000000006(i32 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
-  %3 = icmp sgt i32 %2, %0
+  %3 = icmp slt i32 %0, %2
   ret i1 %3
 }
 
@@ -290,7 +292,7 @@ entry:
 define i1 @func0000000000000008(i32 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
-  %3 = icmp ult i32 %2, %0
+  %3 = icmp ugt i32 %0, %2
   ret i1 %3
 }
 
@@ -305,7 +307,7 @@ entry:
 define i1 @func000000000000000c(i32 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
-  %3 = icmp ne i32 %2, %0
+  %3 = icmp ne i32 %0, %2
   ret i1 %3
 }
 
@@ -315,18 +317,17 @@ entry:
 define i1 @func0000000000000009(i32 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
-  %3 = icmp ule i32 %2, %0
+  %3 = icmp uge i32 %0, %2
   ret i1 %3
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; darktable/optimized/introspection_toneequal.c.ll
-; nori/optimized/imagepanel.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
-  %3 = icmp ugt i32 %2, %0
+  %3 = icmp ult i32 %0, %2
   ret i1 %3
 }
 
@@ -337,7 +338,7 @@ entry:
 define i1 @func000000000000000b(i32 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
-  %3 = icmp sle i32 %2, %0
+  %3 = icmp sge i32 %0, %2
   ret i1 %3
 }
 
@@ -351,7 +352,7 @@ entry:
 define i1 @func0000000000000007(i32 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
-  %3 = icmp sge i32 %2, %0
+  %3 = icmp sle i32 %0, %2
   ret i1 %3
 }
 

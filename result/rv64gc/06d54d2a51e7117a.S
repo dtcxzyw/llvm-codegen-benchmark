@@ -37,7 +37,7 @@ func000000000000000b:                   # @func000000000000000b
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
-func000000000000008a:                   # @func000000000000008a
+func000000000000010a:                   # @func000000000000010a
 	sext.w	a2, a2
 	sext.w	a1, a1
 	slt	a1, a2, a1

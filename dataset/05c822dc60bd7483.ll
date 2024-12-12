@@ -4,7 +4,7 @@
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000059(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000099(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %2
   %4 = icmp slt i32 %1, 0
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ucnvbocu.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000045(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000085(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %2
   %4 = icmp eq i32 %1, 0
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; ocio/optimized/MathUtils.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000099(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000119(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw i32 -2147483648, %2
   %4 = icmp slt i32 %1, 0
@@ -40,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; ocio/optimized/MathUtils.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000098(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000118(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw i32 -2147483648, %2
   %4 = icmp slt i32 %1, 0

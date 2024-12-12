@@ -40,12 +40,9 @@ func0000000000000007:                   # @func0000000000000007
 	and	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func0000000000000019:                   # @func0000000000000019
-	li	a3, 10
-	blt	a2, a3, .LBB7_2
-	lui	a1, 2441
-	addiw	a1, a1, 1664
-.LBB7_2:                                # %entry
+func000000000000002b:                   # @func000000000000002b
+	srai	a2, a2, 63
+	or	a1, a1, a2
 	add	a0, a0, a1
 	ret
 func0000000000000023:                   # @func0000000000000023
@@ -53,6 +50,11 @@ func0000000000000023:                   # @func0000000000000023
 	bltu	a3, a2, .LBB8_2
 	li	a1, 256
 .LBB8_2:                                # %entry
+	add	a0, a0, a1
+	ret
+func0000000000000019:                   # @func0000000000000019
+	srai	a2, a2, 63
+	and	a1, a1, a2
 	add	a0, a0, a1
 	ret
 func0000000000000005:                   # @func0000000000000005
@@ -69,11 +71,18 @@ func0000000000000012:                   # @func0000000000000012
 	and	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func0000000000000013:                   # @func0000000000000013
+func0000000000000053:                   # @func0000000000000053
 	li	a3, 96
-	bltu	a2, a3, .LBB11_2
+	bltu	a2, a3, .LBB12_2
 	li	a1, 48
-.LBB11_2:                               # %entry
+.LBB12_2:                               # %entry
+	add	a0, a0, a1
+	ret
+func0000000000000060:                   # @func0000000000000060
+	lui	a3, 2
+	bltu	a3, a2, .LBB13_2
+	lui	a1, 8
+.LBB13_2:                               # %entry
 	add	a0, a0, a1
 	ret
 func0000000000000030:                   # @func0000000000000030

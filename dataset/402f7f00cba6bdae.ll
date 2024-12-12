@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; abc/optimized/mvcLits.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; libwebp/optimized/backward_references_enc.c.ll
@@ -10,7 +10,6 @@
 ; openssl/optimized/libcrypto-shlib-x509_cmp.ll
 ; ruby/optimized/ruby.ll
 ; vcpkg/optimized/versions.cpp.ll
-; wireshark/optimized/packet-iso14443.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
@@ -24,7 +23,6 @@ entry:
 ; assimp/optimized/unzip.c.ll
 ; cpython/optimized/stgdict.ll
 ; flac/optimized/stream_encoder.c.ll
-; git/optimized/verify-commit.ll
 ; gromacs/optimized/topio.cpp.ll
 ; icu/optimized/flagparser.ll
 ; linux/optimized/ioctl.ll
@@ -68,6 +66,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
@@ -77,8 +76,9 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; assimp/optimized/ProcessHelper.cpp.ll
+; boost/optimized/options_description.ll
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
@@ -101,8 +101,7 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
-; graphviz/optimized/exparse.c.ll
+; 1 occurrences:
 ; llvm/optimized/COFFObjectFile.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {

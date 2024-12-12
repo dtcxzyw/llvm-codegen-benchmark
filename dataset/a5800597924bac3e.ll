@@ -1,5 +1,5 @@
 
-; 48 occurrences:
+; 52 occurrences:
 ; actix-rs/optimized/188iedib5veo0ne9.ll
 ; arrow/optimized/int_util.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
@@ -44,9 +44,13 @@
 ; stockfish/optimized/evaluate_nnue.ll
 ; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
 ; tree-sitter-rs/optimized/42mwgpotg9phq80h.ll
+; turborepo-rs/optimized/0d11a6ei085iwkkzrqqfde2g8.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; velox/optimized/DateTimeFormatter.cpp.ll
 ; wireshark/optimized/catapult_dct2000.c.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000005(i16 %0) #0 {
@@ -56,7 +60,7 @@ entry:
   ret i8 %2
 }
 
-; 48 occurrences:
+; 52 occurrences:
 ; actix-rs/optimized/2l54a10og4z99516.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
@@ -71,6 +75,10 @@ entry:
 ; assimp/optimized/OgreXmlSerializer.cpp.ll
 ; assimp/optimized/X3DImporter.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
+; boost/optimized/date_time_format_parser.ll
+; boost/optimized/named_scope_format_parser.ll
+; boost/optimized/object_name.ll
+; boost/optimized/url_base.ll
 ; clamav/optimized/entconv.c.ll
 ; clamav/optimized/str.c.ll
 ; cpython/optimized/_codecs_jp.ll
@@ -85,7 +93,6 @@ entry:
 ; icu/optimized/loclikelysubtags.ll
 ; icu/optimized/ustrtrns.ll
 ; imgui/optimized/imgui.cpp.ll
-; linux/optimized/dvo_ch7017.ll
 ; linux/optimized/ucs2_string.ll
 ; meilisearch-rs/optimized/3f4k2xees4fvt0r.ll
 ; node/optimized/simdutf.ll
@@ -105,6 +112,7 @@ entry:
 ; wasmtime-rs/optimized/xl3b912aq97wiv3.ll
 ; wireshark/optimized/catapult_dct2000.c.ll
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000007(i16 %0) #0 {
 entry:

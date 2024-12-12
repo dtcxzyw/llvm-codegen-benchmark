@@ -1,8 +1,7 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; cmake/optimized/setopt.c.ll
 ; curl/optimized/libcurl_la-setopt.ll
-; linux/optimized/8250_exar.ll
 ; linux/optimized/af_netlink.ll
 ; openssl/optimized/libcrypto-lib-bss_dgram_pair.ll
 ; openssl/optimized/libcrypto-shlib-bss_dgram_pair.ll

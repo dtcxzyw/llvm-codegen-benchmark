@@ -1,11 +1,10 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; cvc5/optimized/equality_engine.cpp.ll
 ; cvc5/optimized/metakind.cpp.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/tensor.cpp.ll
@@ -21,12 +20,13 @@
 define i64 @func0000000000000003(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = xor i64 %4, %0
   ret i64 %5
 }
 
-; 9 occurrences:
+; 10 occurrences:
+; boost/optimized/matches_relation_factory.ll
 ; hermes/optimized/HadesGC.cpp.ll
 ; linux/optimized/e1000_main.ll
 ; llvm/optimized/MemProfReader.cpp.ll
@@ -40,7 +40,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = xor i64 %4, %0
   ret i64 %5
 }
@@ -52,8 +52,8 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
-  %5 = xor i64 %4, %0
+  %4 = add nsw i64 %1, %3
+  %5 = xor i64 %0, %4
   ret i64 %5
 }
 
@@ -64,7 +64,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = xor i64 %4, %0
   ret i64 %5
 }
@@ -75,8 +75,8 @@ entry:
 define i64 @func0000000000000005(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nsw i64 %3, %1
-  %5 = xor i64 %4, %0
+  %4 = add nsw i64 %1, %3
+  %5 = xor i64 %0, %4
   ret i64 %5
 }
 

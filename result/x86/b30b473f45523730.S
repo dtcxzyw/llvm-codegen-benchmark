@@ -13,6 +13,11 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	%rdi, %rax
 	sete	%al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	shrxq	%rdx, %rsi, %rax
+	cmpq	%rdi, %rax
+	setb	%al
+	retq
 func000000000000000c:                   # @func000000000000000c
 	shrxq	%rdx, %rsi, %rax
 	cmpq	%rdi, %rax

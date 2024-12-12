@@ -2,11 +2,11 @@
 ; 1 occurrences:
 ; qemu/optimized/block_vvfat.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000008a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nsw i32 %2, 1
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = icmp sgt i32 %4, 4095
   ret i1 %5
 }
@@ -29,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; flac/optimized/bitreader.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003c8(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000788(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = add nuw nsw i32 %2, 1
@@ -47,7 +47,7 @@ entry:
 ; abc/optimized/wlcWriteVer.c.ll
 ; abc/optimized/wlnWriteVer.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
@@ -59,7 +59,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/log.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000020a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = add i32 %2, -1
@@ -71,7 +71,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/combine-diff.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -1
@@ -83,7 +83,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/combine-diff.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -1
@@ -111,11 +111,11 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000a6(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nsw i32 %2, 2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = icmp slt i32 %4, 65536
   ret i1 %5
 }
@@ -155,11 +155,11 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/RegisterBankEmitter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000201(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000401(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = add i32 %2, 1
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = icmp eq i32 %4, 32
   ret i1 %5
 }
@@ -167,7 +167,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003d1(i32 %0, i64 %1) #0 {
+define i1 @func00000000000007a1(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = add nuw nsw i32 %2, -64
@@ -191,7 +191,7 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/int128.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003d6(i32 %0, i64 %1) #0 {
+define i1 @func00000000000007a6(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = add nuw nsw i32 %2, -63
@@ -203,11 +203,11 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/maedn.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = icmp slt i32 %4, 40
   ret i1 %5
 }
@@ -215,7 +215,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/varlena.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000186(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nuw nsw i32 %2, 1
@@ -229,7 +229,7 @@ entry:
 ; opencv/optimized/persistence_xml.cpp.ll
 ; proj/optimized/pr_list.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000aa(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nsw i32 %2, 1

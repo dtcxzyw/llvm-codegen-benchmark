@@ -23,15 +23,29 @@ func0000000000000006:                   # @func0000000000000006
 	vzeroupper
 	retq
 .LCPI4_0:
+	.long	65535                           # 0xffff
+func0000000000000018:                   # @func0000000000000018
+	vpcmpnleud	.LCPI4_0(%rip){1to8}, %ymm2, %k1
+	vpblendmw	%xmm0, %xmm1, %xmm0 {%k1}
+	vzeroupper
+	retq
+.LCPI5_0:
 	.long	4294965295                      # 0xfffff82f
 func0000000000000004:                   # @func0000000000000004
-	vpcmpltud	.LCPI4_0(%rip){1to8}, %ymm2, %k1
+	vpcmpltud	.LCPI5_0(%rip){1to8}, %ymm2, %k1
 	vpblendmw	%xmm0, %xmm1, %xmm0 {%k1}
 	vzeroupper
 	retq
 func000000000000000a:                   # @func000000000000000a
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpgtd	%ymm3, %ymm2, %k1
+	vpblendmw	%xmm0, %xmm1, %xmm0 {%k1}
+	vzeroupper
+	retq
+.LCPI7_0:
+	.long	10                              # 0xa
+func0000000000000014:                   # @func0000000000000014
+	vpcmpltud	.LCPI7_0(%rip){1to8}, %ymm2, %k1
 	vpblendmw	%xmm0, %xmm1, %xmm0 {%k1}
 	vzeroupper
 	retq

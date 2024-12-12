@@ -1,7 +1,10 @@
 func0000000000000007:                   # @func0000000000000007
-	andl	$1, %edx
+	notb	%dl
+	movzbl	%dl, %eax
+	andl	$1, %eax
+	shll	$4, %eax
 	orl	%esi, %edi
-	leal	295(%rdi,%rdx,2), %eax
+	leal	8(%rax,%rdi), %eax
 	retq
 func0000000000000000:                   # @func0000000000000000
 	testb	$1, %dl

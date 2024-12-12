@@ -31,7 +31,7 @@
 ; velox/optimized/FromUtf8.cpp.ll
 ; z3/optimized/realclosure.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000006c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = add nuw nsw i64 %1, 1
@@ -55,11 +55,11 @@ entry:
 ; slurm/optimized/bitstring.ll
 ; slurm/optimized/gres_select_filter.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000074(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = add nuw nsw i64 %1, 1
-  %5 = icmp ult i64 %4, %3
+  %5 = icmp samesign ult i64 %4, %3
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }
@@ -68,7 +68,7 @@ entry:
 ; llvm/optimized/CGObjCGNU.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 2147483647
   %4 = add nsw i64 %1, 1
@@ -80,7 +80,7 @@ entry:
 ; 1 occurrences:
 ; ceres/optimized/parameter_block_ordering.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000066(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 2147483647
   %4 = add nuw nsw i64 %1, 1

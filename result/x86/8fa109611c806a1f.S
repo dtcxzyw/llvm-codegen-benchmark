@@ -30,7 +30,7 @@ func0000000000000043:                   # @func0000000000000043
 	adcl	$0, %esi
 	leaq	(%rsi,%rdi), %rax
 	retq
-func000000000000021e:                   # @func000000000000021e
+func000000000000061e:                   # @func000000000000061e
 	cmpl	$2, %edx
 	sbbl	$-1, %esi
 	leaq	(%rsi,%rdi), %rax

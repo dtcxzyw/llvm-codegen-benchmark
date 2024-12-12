@@ -1,7 +1,9 @@
 
-; 9 occurrences:
+; 11 occurrences:
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; hermes/optimized/HadesGC.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; opencv/optimized/quality.cpp.ll

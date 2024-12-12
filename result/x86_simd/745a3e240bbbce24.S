@@ -14,3 +14,11 @@ func000000000000000c:                   # @func000000000000000c
 	vpcmpgtd	%xmm2, %xmm3, %k1 {%k1}
 	vpblendmq	%ymm0, %ymm1, %ymm0 {%k1}
 	retq
+.LCPI2_0:
+	.quad	1                               # 0x1
+func0000000000000018:                   # @func0000000000000018
+	vpslld	$31, %xmm2, %xmm2
+	vpmovd2m	%xmm2, %k1
+	vpcmpnleuq	.LCPI2_0(%rip){1to4}, %ymm0, %k1 {%k1}
+	vpblendmq	%ymm0, %ymm1, %ymm0 {%k1}
+	retq

@@ -10,7 +10,7 @@
 ; openusd/optimized/obu_util.c.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000ccc(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000318c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = icmp ne ptr %1, null
@@ -23,7 +23,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/aom_integer.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c4c(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000308c(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp ult i64 %1, 4294967296
@@ -36,7 +36,7 @@ entry:
 ; 1 occurrences:
 ; casadi/optimized/idas_interface.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000acc(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000298c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %2, 0
   %4 = icmp ne ptr %1, null
@@ -57,7 +57,7 @@ entry:
 ; cpython/optimized/connection.ll
 ; cpython/optimized/posixmodule.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c1(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000581(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 1
   %4 = icmp ne ptr %1, null
@@ -100,7 +100,7 @@ entry:
 ; cpython/optimized/textio.ll
 ; cpython/optimized/zlibmodule.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011c(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000042c(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp eq i64 %1, 1
@@ -128,7 +128,7 @@ entry:
 ; cpython/optimized/posixmodule.ll
 ; cpython/optimized/zlibmodule.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000004c1(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000001181(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 2
   %4 = icmp ne ptr %1, null
@@ -146,7 +146,7 @@ entry:
 ; cpython/optimized/textio.ll
 ; cpython/optimized/zlibmodule.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014c(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000048c(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp ult i64 %1, 2
@@ -160,7 +160,7 @@ entry:
 ; cpython/optimized/iobase.ll
 ; cpython/optimized/pyexpat.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000041c(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000102c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 2
   %4 = icmp eq ptr %1, null

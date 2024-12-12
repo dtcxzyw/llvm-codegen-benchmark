@@ -6,7 +6,7 @@ func0000000000000020:                   // @func0000000000000020
 	add	x0, x8, #16
 	ret
                                         // -- End function
-func000000000000001a:                   // @func000000000000001a
+func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
 	sub	x8, x1, x2
 	mov	w9, #36                         // =0x24
@@ -15,15 +15,7 @@ func000000000000001a:                   // @func000000000000001a
 	add	x0, x8, #12
 	ret
                                         // -- End function
-func000000000000001b:                   // @func000000000000001b
-// %bb.0:                               // %entry
-	sub	x8, x1, x2
-	lsr	x8, x8, #3
-	add	x8, x0, w8, uxtw #4
-	add	x0, x8, #8
-	ret
-                                        // -- End function
-func000000000000000a:                   // @func000000000000000a
+func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
 	sub	x8, x1, x2
 	ubfx	x8, x8, #5, #31

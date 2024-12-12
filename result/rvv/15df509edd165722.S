@@ -6,5 +6,5 @@ func0000000000000004:                   # @func0000000000000004
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vmv.v.i	v9, 0
 	vmerge.vim	v9, v9, 1, v0
-	vor.vv	v8, v9, v8
+	vor.vv	v8, v8, v9
 	ret

@@ -27,7 +27,7 @@
 ; llvm/optimized/VectorCombine.cpp.ll
 ; llvm/optimized/X86LowerAMXIntrinsics.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = add nsw i32 %3, -29
@@ -39,7 +39,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/i9xx_wm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = add nsw i32 %3, -1

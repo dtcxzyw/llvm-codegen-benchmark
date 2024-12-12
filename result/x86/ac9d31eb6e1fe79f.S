@@ -5,8 +5,8 @@ func0000000000000008:                   # @func0000000000000008
 	retq
 func0000000000000000:                   # @func0000000000000000
 	leal	(%rdi,%rsi), %eax
-	shrl	$20, %eax
-	andb	$7, %al
+	shrl	$12, %eax
+	andb	$63, %al
 	retq
 func0000000000000002:                   # @func0000000000000002
 	leal	(%rdi,%rsi), %eax

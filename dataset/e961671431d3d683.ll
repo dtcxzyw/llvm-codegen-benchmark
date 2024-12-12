@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; jsonnet/optimized/desugarer.cpp.ll
 ; jsonnet/optimized/formatter.cpp.ll
 ; jsonnet/optimized/static_analysis.cpp.ll
@@ -10,7 +10,6 @@
 ; mitsuba3/optimized/class.cpp.ll
 ; mitsuba3/optimized/filesystem.cpp.ll
 ; mitsuba3/optimized/logger.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; tev/optimized/Image.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind

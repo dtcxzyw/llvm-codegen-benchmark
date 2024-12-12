@@ -1,7 +1,9 @@
 
-; 96 occurrences:
+; 97 occurrences:
 ; abc/optimized/kitDsd.c.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; faiss/optimized/AdditiveQuantizer.cpp.ll
 ; folly/optimized/HugePages.cpp.ll
@@ -14,7 +16,6 @@
 ; hyperscan/optimized/gough.c.ll
 ; icu/optimized/rbbi.ll
 ; libevent/optimized/evdns.c.ll
-; libevent/optimized/event.c.ll
 ; linux/optimized/80003es2lan.ll
 ; linux/optimized/aspm.ll
 ; linux/optimized/ehci-hcd.ll
@@ -68,7 +69,6 @@
 ; openusd/optimized/openexr-c.c.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -96,6 +96,7 @@
 ; wireshark/optimized/packet-qnet6.c.ll
 ; wireshark/optimized/packet-tls.c.ll
 ; wireshark/optimized/packet-wimaxasncp.c.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000003(i32 %0) #0 {
 entry:
@@ -124,11 +125,10 @@ entry:
   ret i16 %2
 }
 
-; 36 occurrences:
+; 32 occurrences:
 ; clamav/optimized/manager.c.ll
 ; clamav/optimized/others_common.c.ll
 ; cmake/optimized/archive_read_support_format_mtree.c.ll
-; cmake/optimized/archive_write_open_fd.c.ll
 ; cmake/optimized/archive_write_set_format_cpio_binary.c.ll
 ; git/optimized/apply.ll
 ; git/optimized/archive-zip.ll
@@ -148,7 +148,6 @@ entry:
 ; linux/optimized/ialloc.ll
 ; linux/optimized/mempolicy.ll
 ; linux/optimized/mmconfig-shared.ll
-; linux/optimized/readdir.ll
 ; linux/optimized/xhci-ring.ll
 ; luau/optimized/IrLoweringA64.cpp.ll
 ; nix/optimized/posix-source-accessor.ll
@@ -157,8 +156,6 @@ entry:
 ; postgres/optimized/ginentrypage.ll
 ; qemu/optimized/block_file-posix.c.ll
 ; qemu/optimized/hw_9pfs_9p.c.ll
-; rust-analyzer-rs/optimized/167b7teihhqsnnru.ll
-; rust-analyzer-rs/optimized/2peq86rugwl53bkc.ll
 ; wireshark/optimized/packet-dcm.c.ll
 ; wireshark/optimized/packet-reload.c.ll
 ; Function Attrs: nounwind

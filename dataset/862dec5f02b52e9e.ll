@@ -10,7 +10,7 @@
 define double @func0000000000000002(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = select i1 %1, double %2, double 0.000000e+00
-  %4 = fcmp ogt double %3, %0
+  %4 = fcmp olt double %0, %3
   %5 = select i1 %4, double %3, double %0
   ret double %5
 }

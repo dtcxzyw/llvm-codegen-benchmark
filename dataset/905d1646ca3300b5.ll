@@ -1,6 +1,5 @@
 
-; 10 occurrences:
-; flac/optimized/window.c.ll
+; 9 occurrences:
 ; gromacs/optimized/forcerec.cpp.ll
 ; gromacs/optimized/gmx_dos.cpp.ll
 ; gromacs/optimized/readir.cpp.ll
@@ -13,7 +12,7 @@
 ; Function Attrs: nounwind
 define double @func0000000000000000(double %0, double %1) #0 {
 entry:
-  %2 = fmul double %1, 8.000000e+00
+  %2 = fmul double %1, 5.000000e-01
   %3 = fmul double %2, %0
   %4 = fmul double %3, %3
   ret double %4

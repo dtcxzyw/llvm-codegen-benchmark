@@ -11,20 +11,6 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
-; spike/optimized/f16_to_i32.ll
-; spike/optimized/f16_to_i64.ll
-; spike/optimized/f16_to_ui32.ll
-; spike/optimized/f16_to_ui64.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000f(i64 %0, i8 %1) #0 {
-entry:
-  %2 = add nsw i8 %1, -25
-  %3 = zext nneg i8 %2 to i64
-  %4 = shl nuw nsw i64 %0, %3
-  ret i64 %4
-}
-
 ; 3 occurrences:
 ; opencv/optimized/softfloat.cpp.ll
 ; spike/optimized/s_mulAddF32.ll

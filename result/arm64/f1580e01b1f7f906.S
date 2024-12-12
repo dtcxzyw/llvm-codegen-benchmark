@@ -1,14 +1,14 @@
 func0000000000000024:                   // @func0000000000000024
 // %bb.0:                               // %entry
-	uzp2	v2.4s, v2.4s, v3.4s
-	add	v0.4s, v1.4s, v0.4s
-	sub	v0.4s, v2.4s, v0.4s
+	lsr	x8, x2, #32
+	add	w9, w1, w0
+	sub	w0, w8, w9
 	ret
                                         // -- End function
 func0000000000000020:                   // @func0000000000000020
 // %bb.0:                               // %entry
-	uzp2	v2.4s, v2.4s, v3.4s
-	add	v0.4s, v1.4s, v0.4s
-	sub	v0.4s, v2.4s, v0.4s
+	lsr	x8, x2, #32
+	add	w9, w1, w0
+	sub	w0, w8, w9
 	ret
                                         // -- End function

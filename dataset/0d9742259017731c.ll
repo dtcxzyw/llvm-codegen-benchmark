@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 18 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/luckyRead.c.ll
 ; git/optimized/apply.ll
@@ -17,10 +17,9 @@
 ; php/optimized/zend_virtual_cwd.ll
 ; redis/optimized/t_stream.ll
 ; slurm/optimized/file_functions.ll
-; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-http.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i32 %0, -2
   %3 = icmp eq i8 %1, 48
@@ -41,7 +40,7 @@ entry:
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wireshark/optimized/packet-bacapp.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000028(i32 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i32 %0, -32768
   %3 = icmp ugt i8 %1, -65
@@ -59,7 +58,7 @@ entry:
 ; wireshark/optimized/packet-homeplug-av.c.ll
 ; wireshark/optimized/packet-websocket.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000036(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000066(i32 %0, i8 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %0, 8
   %3 = icmp slt i8 %1, 0
@@ -72,7 +71,7 @@ entry:
 ; php/optimized/pcre2_jit_compile.ll
 ; wireshark/optimized/packet-ixveriwave.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000061(i32 %0, i8 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %0, 128
   %3 = icmp eq i8 %1, 6
@@ -80,9 +79,8 @@ entry:
   ret i32 %4
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; linux/optimized/eeprom.ll
 ; linux/optimized/i915_query.ll
 ; linux/optimized/rx.ll
 ; llvm/optimized/IntegerLiteralSeparatorFixer.cpp.ll
@@ -103,7 +101,7 @@ define i32 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 6
   %3 = sext i1 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -125,7 +123,7 @@ entry:
 ; php/optimized/decode.ll
 ; php/optimized/pcre2_compile.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000024(i32 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i32 %0, -64
   %3 = icmp ult i8 %1, 127
@@ -136,7 +134,7 @@ entry:
 ; 1 occurrences:
 ; libphonenumber/optimized/generate_geocoding_data.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000026(i32 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i32 %0, 256
   %3 = icmp slt i8 %1, 0
@@ -149,7 +147,7 @@ entry:
 ; wireshark/optimized/packet-ppp.c.ll
 ; wireshark/optimized/tvbuff.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000041(i32 %0, i8 %1) #0 {
 entry:
   %2 = add nuw i32 %0, 2
   %3 = icmp eq i8 %1, 77
@@ -160,7 +158,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/dlp.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i8 %1) #0 {
+define i32 @func000000000000002a(i32 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i32 %0, -9
   %3 = icmp sgt i8 %1, 52
@@ -168,11 +166,10 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; llvm/optimized/DJB.cpp.ll
-; wireshark/optimized/packet-iec104.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000064(i32 %0, i8 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %0, 32
   %3 = icmp ult i8 %1, 26
@@ -180,16 +177,37 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
-; eastl/optimized/EATextUtil.cpp.ll
+; 3 occurrences:
 ; luajit/optimized/lj_strscan.ll
 ; luajit/optimized/lj_strscan_dyn.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000068(i32 %0, i8 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %0, 19
   %3 = icmp ugt i8 %1, -75
+  %4 = select i1 %3, i32 %2, i32 %0
+  ret i32 %4
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-iec104.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000074(i32 %0, i8 %1) #0 {
+entry:
+  %2 = add nuw nsw i32 %0, 100
+  %3 = icmp samesign ult i8 %1, 70
+  %4 = select i1 %3, i32 %2, i32 %0
+  ret i32 %4
+}
+
+; 1 occurrences:
+; eastl/optimized/EATextUtil.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000078(i32 %0, i8 %1) #0 {
+entry:
+  %2 = add nuw nsw i32 %0, 7
+  %3 = icmp samesign ugt i8 %1, 57
   %4 = select i1 %3, i32 %2, i32 %0
   ret i32 %4
 }

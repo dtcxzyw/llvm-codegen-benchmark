@@ -16,5 +16,5 @@ func0000000000000007:                   # @func0000000000000007
 	fli.s	fa5, nan
 	vfmv.v.f	v20, fa5
 	vfdiv.vv	v20, v16, v12, v0.t
-	vfmul.vv	v8, v20, v8
+	vfmul.vv	v8, v8, v20
 	ret

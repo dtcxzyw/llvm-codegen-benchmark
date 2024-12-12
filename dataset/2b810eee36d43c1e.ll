@@ -14,10 +14,8 @@ entry:
   ret i16 %2
 }
 
-; 18 occurrences:
-; freetype/optimized/sfnt.c.ll
+; 15 occurrences:
 ; glslang/optimized/Initialize.cpp.ll
-; linux/optimized/intel_display_device.ll
 ; linux/optimized/libata-pmp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/AArch64O0PreLegalizerCombiner.cpp.ll
@@ -31,7 +29,6 @@ entry:
 ; llvm/optimized/X86InstructionSelector.cpp.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; slurm/optimized/xcpuinfo.ll
-; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-zbee-direct.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i32 %0) #0 {

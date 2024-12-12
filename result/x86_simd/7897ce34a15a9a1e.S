@@ -8,7 +8,7 @@ func0000000000000024:                   # @func0000000000000024
 	vpor	%xmm3, %xmm1, %xmm0
 	vzeroupper
 	retq
-func000000000000008c:                   # @func000000000000008c
+func000000000000010c:                   # @func000000000000010c
 	vpsrlq	$32, %ymm2, %ymm3
 	vpmovqd	%ymm3, %xmm3
 	vptestnmq	%ymm2, %ymm2, %k1

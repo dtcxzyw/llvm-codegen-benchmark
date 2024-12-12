@@ -1,5 +1,5 @@
 
-; 169 occurrences:
+; 197 occurrences:
 ; arrow/optimized/array_nested.cc.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/row_internal.cc.ll
@@ -7,6 +7,7 @@
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/format_args.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dense_qr.cc.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
@@ -67,7 +68,6 @@
 ; g2o/optimized/optimizable_graph.cpp.ll
 ; g2o/optimized/vertex_ellipse.cpp.ll
 ; git/optimized/qsort_s.ll
-; gromacs/optimized/merge_sort.c.ll
 ; hdf5/optimized/H5Shyper.c.ll
 ; hdf5/optimized/H5Tconv_reference.c.ll
 ; hdf5/optimized/H5Tconv_vlen.c.ll
@@ -163,11 +163,39 @@
 ; spike/optimized/f16_div.ll
 ; tokenizers-rs/optimized/10h1ju7dwsvagf79.ll
 ; tokenizers-rs/optimized/pctti7iv1zxrcsb.ll
+; turborepo-rs/optimized/ehv573y0pcjpsw1wgvk28541m.ll
 ; xgboost/optimized/hist_util.cc.ll
 ; xgboost/optimized/quantile_obj.cc.ll
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; yosys/optimized/calc.ll
+; zed-rs/optimized/05btlo7ldoepff8rc85nwkmca.ll
+; zed-rs/optimized/08rfmg7gqi4939tj99psx2cc1.ll
+; zed-rs/optimized/0o1pecj7sihe8j10tk83wbgu7.ll
+; zed-rs/optimized/25n0f77f67cr7ewl17g7eja8w.ll
+; zed-rs/optimized/2mbibkb4nlqbkrk4fshgkpe2t.ll
+; zed-rs/optimized/2stbxmle5qyblpbm85idqsgvv.ll
+; zed-rs/optimized/2tnb5q2nu282joegshdwbwmo4.ll
+; zed-rs/optimized/32ztje2vviv0ao8s7rdc7yqwm.ll
+; zed-rs/optimized/34wa3jua7n3vs803j44lzfk5b.ll
+; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
+; zed-rs/optimized/3x2e5qsisayoyul24y85pynrh.ll
+; zed-rs/optimized/3y76hj0efsluhdj732s0l4pjz.ll
+; zed-rs/optimized/468dd38yzqjsa1zmcu5rd6jgo.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/50na78mbd3ev0fg48iszd7iya.ll
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
+; zed-rs/optimized/5ta1fnasvc90k95zqql8ufc92.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/83f7cv59nhkcel85ism08ubeo.ll
+; zed-rs/optimized/8et4dphxwbm7ry4e21dik6h9d.ll
+; zed-rs/optimized/8uq0kpgi8jqekwanrrlvbr0h1.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
+; zed-rs/optimized/a48ncfl2mo4yu8srnhcxrs0e7.ll
+; zed-rs/optimized/b7n4ebe7bkw4hnagh8ndf0qla.ll
+; zed-rs/optimized/cgceu28znx3lfd8ddk7c9uglp.ll
+; zed-rs/optimized/ch3ywh4ed1oz4ae4c1dkspuyz.ll
 ; zfp/optimized/zfp.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
@@ -307,11 +335,12 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   ret i64 %4
 }
 
-; 30 occurrences:
+; 31 occurrences:
+; boost/optimized/format_args.ll
 ; cmake/optimized/bufq.c.ll
 ; coreutils-rs/optimized/3wh0yla9idangd55.ll
 ; cpython/optimized/arraymodule.ll
@@ -359,11 +388,11 @@ entry:
 define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 %1, %2
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   ret i64 %4
 }
 
-; 221 occurrences:
+; 220 occurrences:
 ; abc/optimized/darPrec.c.ll
 ; abc/optimized/extraUtilMisc.c.ll
 ; abc/optimized/trees.c.ll
@@ -447,7 +476,9 @@ entry:
 ; linux/optimized/deftree.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/MCDwarf.cpp.ll
+; llvm/optimized/ModuloSchedule.cpp.ll
 ; llvm/optimized/PaddingChecker.cpp.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
@@ -466,7 +497,6 @@ entry:
 ; minetest/optimized/mg_biome.cpp.ll
 ; minetest/optimized/test_content_mapblock.cpp.ll
 ; minetest/optimized/test_voxelalgorithms.cpp.ll
-; minetest/optimized/test_voxelmanipulator.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; ncnn/optimized/diag.cpp.ll
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll
@@ -477,8 +507,6 @@ entry:
 ; openblas/optimized/dgemv_thread_n.c.ll
 ; openblas/optimized/dgetrf_parallel.c.ll
 ; openblas/optimized/dgetrf_single.c.ll
-; openblas/optimized/dgetri.c.ll
-; openblas/optimized/dpotrf_U_single.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; openblas/optimized/dsyrk_thread_LN.c.ll
 ; openblas/optimized/dsyrk_thread_LT.c.ll
@@ -658,9 +686,8 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; fmt/optimized/compile-test.cc.ll
-; openblas/optimized/lapacke_dlaswp_work.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -676,19 +703,6 @@ define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = mul nuw i64 %3, %0
-  ret i64 %4
-}
-
-; 4 occurrences:
-; llvm/optimized/ModuloSchedule.cpp.ll
-; openblas/optimized/dgetrf_parallel.c.ll
-; openblas/optimized/dlauum_L_single.c.ll
-; openblas/optimized/dlauum_U_single.c.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000d(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sub nuw nsw i64 %1, %2
-  %4 = mul nsw i64 %3, %0
   ret i64 %4
 }
 
@@ -712,6 +726,16 @@ entry:
   ret i64 %4
 }
 
+; 1 occurrences:
+; openblas/optimized/dgetrf_parallel.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000d(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub nuw nsw i64 %1, %2
+  %4 = mul nsw i64 %3, %0
+  ret i64 %4
+}
+
 ; 3 occurrences:
 ; casadi/optimized/convexify.cpp.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
@@ -720,7 +744,7 @@ entry:
 define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = mul nuw nsw i64 %3, %0
+  %4 = mul nuw nsw i64 %0, %3
   ret i64 %4
 }
 

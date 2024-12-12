@@ -20,7 +20,8 @@ entry:
   ret i32 %6
 }
 
-; 13 occurrences:
+; 14 occurrences:
+; boost/optimized/ipc_reliable_message_queue.ll
 ; cpython/optimized/compile.ll
 ; cpython/optimized/dtoa.ll
 ; eastl/optimized/TestBitset.cpp.ll

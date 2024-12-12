@@ -5,6 +5,6 @@ func0000000000000000:                   # @func0000000000000000
 	addi	a0, a0, -459
 	vmul.vx	v10, v10, a0
 	vsrl.vi	v12, v10, 16
-	vxor.vv	v8, v12, v8
+	vxor.vv	v8, v8, v12
 	vxor.vv	v8, v8, v10
 	ret

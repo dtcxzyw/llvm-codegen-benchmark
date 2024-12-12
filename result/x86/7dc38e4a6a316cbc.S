@@ -15,17 +15,23 @@ func000000000000000a:                   # @func000000000000000a
 	movl	$77, %eax
 	cmovgl	%ecx, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	xorl	%eax, %eax
 	cmpl	$2, %edi
 	setb	%al
 	leal	-2(%rax,%rax,2), %eax
 	retq
 func0000000000000006:                   # @func0000000000000006
-	xorl	%ecx, %ecx
+	xorl	%eax, %eax
 	testl	%edi, %edi
-	movl	$63, %eax
-	cmovsl	%ecx, %eax
+	setg	%al
+	leal	-1(%rax,%rax), %eax
+	retq
+func0000000000000008:                   # @func0000000000000008
+	xorl	%eax, %eax
+	cmpl	$-16, %edi
+	setb	%al
+	leal	1(%rax,%rax,2), %eax
 	retq
 func000000000000000c:                   # @func000000000000000c
 	xorl	%eax, %eax

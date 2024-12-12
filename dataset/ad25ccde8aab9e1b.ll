@@ -42,18 +42,6 @@ entry:
 }
 
 ; 1 occurrences:
-; soc-simulator/optimized/verilated.ll
-; Function Attrs: nounwind
-define i32 @func000000000000003e(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl nsw i32 %1, 5
-  %3 = add nuw nsw i32 %2, 32
-  %4 = add nuw nsw i32 %3, %0
-  %5 = lshr i32 %4, 5
-  ret i32 %5
-}
-
-; 1 occurrences:
 ; hdf5/optimized/H5Tinit_float.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000068(i32 %0, i32 %1) #0 {
@@ -97,7 +85,7 @@ define i32 @func000000000000007e(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = add nuw nsw i32 %2, 4
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = lshr i32 %4, 3
   ret i32 %5
 }

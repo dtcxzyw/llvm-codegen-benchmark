@@ -7,7 +7,7 @@
 ; linux/optimized/fast_commit.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = add nsw i64 %2, -16
@@ -19,7 +19,7 @@ entry:
 ; 1 occurrences:
 ; verilator/optimized/V3PreProc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000025(i32 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = add nsw i64 %2, -1
@@ -35,7 +35,7 @@ entry:
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/filter_unsharp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = add nsw i64 %2, 4
@@ -44,17 +44,19 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
+; 10 occurrences:
 ; linux/optimized/drm_displayid.ll
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/tables.ll
 ; linux/optimized/trace_output.ll
+; pbrt-v4/optimized/integrators.cpp.ll
+; pbrt-v4/optimized/interaction.cpp.ll
 ; velox/optimized/CompactRowSerializer.cpp.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; velox/optimized/UnsafeRowSerializer.cpp.ll
 ; xgboost/optimized/comm.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = add nsw i64 %2, 4
@@ -63,8 +65,9 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; abc/optimized/bmcMaj3.c.ll
+; boost/optimized/approximately_equals.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; icu/optimized/plurrule.ll
 ; linux/optimized/tcp_output.ll
@@ -73,7 +76,7 @@ entry:
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = add nsw i64 %2, 1
@@ -82,19 +85,8 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; quickjs/optimized/quickjs.ll
-; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
-entry:
-  %2 = sext i32 %1 to i64
-  %3 = add nsw i64 %2, 17
-  %4 = sext i32 %0 to i64
-  %5 = icmp ne i64 %3, %4
-  ret i1 %5
-}
-
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/approximately_equals.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
@@ -102,12 +94,24 @@ entry:
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; openexr/optimized/ImfCheckFile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add nsw i64 %2, 1
+  %3 = add nsw i64 %2, 335
   %4 = sext i32 %0 to i64
   %5 = icmp eq i64 %3, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; quickjs/optimized/quickjs.ll
+; Function Attrs: nounwind
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = add nsw i64 %2, 17
+  %4 = sext i32 %0 to i64
+  %5 = icmp ne i64 %3, %4
   ret i1 %5
 }
 

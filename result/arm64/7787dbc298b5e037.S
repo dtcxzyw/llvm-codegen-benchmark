@@ -26,3 +26,10 @@ func0000000000000008:                   // @func0000000000000008
 	cset	w0, eq
 	ret
                                         // -- End function
+func0000000000000028:                   // @func0000000000000028
+// %bb.0:                               // %entry
+	cmp	x0, #4
+	sbcs	xzr, x1, xzr
+	cset	w0, lo
+	ret
+                                        // -- End function

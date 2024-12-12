@@ -1,9 +1,10 @@
 
-; 30 occurrences:
+; 32 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/giaCSat3.c.ll
 ; abc/optimized/satStore.c.ll
 ; abc/optimized/wlcBlast.c.ll
+; boost/optimized/numeric.ll
 ; faiss/optimized/index_factory.cpp.ll
 ; git/optimized/cache-tree.ll
 ; git/optimized/index-pack.ll
@@ -21,6 +22,7 @@
 ; opencv/optimized/kdtree.cpp.ll
 ; openjdk/optimized/png.ll
 ; openspiel/optimized/twixtboard.cc.ll
+; openusd/optimized/cdef_block.c.ll
 ; openusd/optimized/cfl.c.ll
 ; php/optimized/dfa_pass.ll
 ; php/optimized/pcre2_compile.ll

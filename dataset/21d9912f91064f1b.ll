@@ -15,7 +15,7 @@
 ; spike/optimized/kslra8.ll
 ; spike/optimized/kslra8_u.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 31
   %3 = shl nsw i64 %0, %2
@@ -39,7 +39,7 @@ entry:
 ; spike/optimized/kslra8.ll
 ; spike/optimized/kslra8_u.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 31
   %3 = shl nsw i64 %0, %2

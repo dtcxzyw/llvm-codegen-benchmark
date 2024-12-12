@@ -8,12 +8,12 @@
 ; verilator/optimized/V3VariableOrder.cpp.ll
 ; zxing/optimized/Content.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000000a(ptr %0, i1 %1, i1 %2) #0 {
+define i64 @func000000000000000f(ptr %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 8, i64 0
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = select i1 %1, i64 8, i64 0
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7
 }

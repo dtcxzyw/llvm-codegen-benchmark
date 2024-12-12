@@ -1,8 +1,7 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; glslang/optimized/Constant.cpp.ll
-; linux/optimized/hwsleep.ll
 ; linux/optimized/trace_eprobe.ll
 ; linux/optimized/trace_kprobe.ll
 ; linux/optimized/trace_uprobe.ll
@@ -21,11 +20,10 @@ entry:
   ret i32 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; cmake/optimized/lzma2_decoder.c.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; faiss/optimized/pq4_fast_scan_search_qbs.cpp.ll
-; linux/optimized/rsmisc.ll
 ; softposit-rs/optimized/4kf6wfleft5henpt.ll
 ; softposit-rs/optimized/8mae6k72v4zmmji.ll
 ; Function Attrs: nounwind
@@ -37,8 +35,7 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
-; linux/optimized/rsmisc.ll
+; 1 occurrences:
 ; softposit-rs/optimized/coljvwkn4d5o904.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000e(i8 %0, i8 %1) #0 {

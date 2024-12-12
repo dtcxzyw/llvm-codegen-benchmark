@@ -99,7 +99,7 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000e01(i64 %0, i64 %1) #0 {
+define i1 @func0000000000001c01(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = mul i32 %2, -100
@@ -110,10 +110,37 @@ entry:
 }
 
 ; 2 occurrences:
+; boost/optimized/src.ll
+; slurm/optimized/controller.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = mul i32 %2, -100
+  %4 = trunc i64 %0 to i32
+  %5 = add i32 %3, %4
+  %6 = icmp ugt i32 %5, 49
+  ret i1 %6
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = mul i32 %2, -100000000
+  %4 = trunc i64 %0 to i32
+  %5 = sub i32 0, %4
+  %6 = icmp eq i32 %3, %5
+  ret i1 %6
+}
+
+; 2 occurrences:
 ; draco/optimized/corner_table.cc.ll
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000b01(i64 %0, i64 %1) #0 {
+define i1 @func0000000000001601(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = mul i32 %2, 3
@@ -126,7 +153,7 @@ entry:
 ; 1 occurrences:
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c01(i64 %0, i64 %1) #0 {
+define i1 @func0000000000001801(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = mul i32 %2, -10000

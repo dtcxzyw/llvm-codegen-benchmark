@@ -2,7 +2,7 @@
 	.zero	16,3
 .LCPI0_1:
 	.byte	3                               # 0x3
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpbroadcastb	.LCPI0_1(%rip), %xmm2   # xmm2 = [3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3]
 	vpternlogq	$200, %xmm1, %xmm2, %xmm0 # xmm0 = xmm2 & (xmm0 | xmm1)
 	vpcmpeqb	%xmm2, %xmm0, %xmm0

@@ -22,7 +22,7 @@ entry:
 define i32 @func0000000000000050(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 3050
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = shl i32 %3, 20
   %5 = add i32 %4, 1047527424
   ret i32 %5
@@ -57,6 +57,20 @@ entry:
   %3 = add i32 %2, %0
   %4 = shl i32 %3, 1
   %5 = add i32 %4, 4
+  ret i32 %5
+}
+
+; 3 occurrences:
+; boost/optimized/parser_utils.ll
+; cpython/optimized/unicodeobject.ll
+; tev/optimized/Common.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000005d(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, -48
+  %3 = add nsw i32 %2, %0
+  %4 = shl nuw nsw i32 %3, 3
+  %5 = add nsw i32 %4, -48
   ret i32 %5
 }
 
@@ -98,19 +112,6 @@ entry:
   %3 = add i32 %2, %0
   %4 = shl nuw nsw i32 %3, 3
   %5 = add nsw i32 %4, -8
-  ret i32 %5
-}
-
-; 2 occurrences:
-; cpython/optimized/unicodeobject.ll
-; tev/optimized/Common.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000005d(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add nsw i32 %1, -48
-  %3 = add nsw i32 %2, %0
-  %4 = shl nuw nsw i32 %3, 3
-  %5 = add nsw i32 %4, -48
   ret i32 %5
 }
 

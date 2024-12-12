@@ -1,12 +1,11 @@
 .LCPI0_0:
-	.long	0x3dcccccd                      # float 0.100000001
+	.long	0x45800000                      # float 4096
 .LCPI0_1:
-	.long	0xbf000000                      # float -0.5
-.LCPI0_2:
-	.long	0x43800000                      # float 256
+	.long	0x45c00000                      # float 6144
 func0000000000000000:                   # @func0000000000000000
-	vmulss	.LCPI0_0(%rip), %xmm0, %xmm0
-	vaddss	.LCPI0_1(%rip), %xmm0, %xmm0
+	vmovss	.LCPI0_0(%rip), %xmm1           # xmm1 = [4.096E+3,0.0E+0,0.0E+0,0.0E+0]
+	vmulss	%xmm1, %xmm0, %xmm0
+	vaddss	%xmm1, %xmm0, %xmm0
 	kmovd	%edi, %k1
-	vmovss	.LCPI0_2(%rip), %xmm0 {%k1}     # xmm0 {%k1} = [2.56E+2,0.0E+0,0.0E+0,0.0E+0]
+	vmovss	.LCPI0_1(%rip), %xmm0 {%k1}     # xmm0 {%k1} = [6.144E+3,0.0E+0,0.0E+0,0.0E+0]
 	retq

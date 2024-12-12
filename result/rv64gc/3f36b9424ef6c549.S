@@ -1,9 +1,9 @@
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	addiw	a1, a1, -1
 	sgtz	a1, a1
 	and	a0, a0, a1
 	ret
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	sext.w	a1, a1
 	addi	a1, a1, -1
 	snez	a1, a1

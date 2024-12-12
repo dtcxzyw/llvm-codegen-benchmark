@@ -27,6 +27,7 @@ entry:
 ; curl/optimized/libcurl_la-parsedate.ll
 ; cvc5/optimized/quantifiers_rewriter.cpp.ll
 ; eastl/optimized/TestExtra.cpp.ll
+; freetype/optimized/sfnt.c.ll
 ; hyperscan/optimized/ng_region.cpp.ll
 ; luau/optimized/BuiltinDefinitions.cpp.ll
 ; mitsuba3/optimized/measured.cpp.ll
@@ -34,7 +35,6 @@ entry:
 ; ninja/optimized/graph.cc.ll
 ; opencv/optimized/tf_importer.cpp.ll
 ; proj/optimized/concatenatedoperation.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; wireshark/optimized/profile_dialog.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i64 %1, ptr %2) #0 {
@@ -55,8 +55,8 @@ entry:
 ; llvm/optimized/SampleProfile.cpp.ll
 ; luau/optimized/BuiltinDefinitions.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
+; opencv/optimized/calibinit.cpp.ll
 ; zstd/optimized/huf_decompress.c.ll
-; zxing/optimized/AZDecoder.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i64 %1, ptr %2) #0 {
 entry:
@@ -108,7 +108,7 @@ define i1 @func0000000000000006(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
-  %5 = icmp slt i64 %4, 1025
+  %5 = icmp slt i64 %4, 385
   %6 = select i1 %5, i1 %0, i1 false
   ret i1 %6
 }

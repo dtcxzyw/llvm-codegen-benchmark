@@ -14,7 +14,7 @@ entry:
   %.masked = and i32 %1, -131081
   %4 = or i32 %3, %.masked
   %.masked1 = and i32 %0, -131073
-  %5 = or i32 %4, %.masked1
+  %5 = or i32 %.masked1, %4
   ret i32 %5
 }
 

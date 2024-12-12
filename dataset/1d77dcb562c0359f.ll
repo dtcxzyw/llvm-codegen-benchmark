@@ -11,7 +11,9 @@ entry:
   ret i32 %6
 }
 
-; 6 occurrences:
+; 8 occurrences:
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; postgres/optimized/d2s.ll
 ; postgres/optimized/d2s_shlib.ll
 ; postgres/optimized/d2s_srv.ll
@@ -21,24 +23,11 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000015(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, -152
-  %4 = select i1 %1, i32 -151, i32 %3
+  %3 = add nsw i32 %2, -1077
+  %4 = select i1 %1, i32 -1076, i32 %3
   %5 = sub nsw i32 %0, %4
-  %6 = add nsw i32 %5, 27
+  %6 = add nsw i32 %5, 58
   ret i32 %6
-}
-
-; 2 occurrences:
-; openblas/optimized/dlatms.c.ll
-; openblas/optimized/dlatmt.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000010(i32 %0, i1 %1, i32 %2) #0 {
-entry:
-  %.neg = xor i32 %2, -1
-  %.neg1 = select i1 %1, i32 -1, i32 %.neg
-  %3 = add i32 %.neg1, %0
-  %4 = add i32 %3, 1
-  ret i32 %4
 }
 
 attributes #0 = { nounwind }

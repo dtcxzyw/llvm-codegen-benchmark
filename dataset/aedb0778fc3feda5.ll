@@ -8,7 +8,7 @@
 ; postgres/optimized/snprintf_srv.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000042a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %0
   %3 = icmp eq i32 %1, 0
@@ -21,7 +21,7 @@ entry:
 ; postgres/optimized/pg_backup_archiver.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 0, %0
   %3 = icmp eq i32 %1, 0
@@ -42,7 +42,7 @@ entry:
 ; z3/optimized/sat_smt_solver.cpp.ll
 ; z3/optimized/sat_solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000421(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %0
   %3 = icmp eq i32 %1, 0
@@ -59,7 +59,7 @@ entry:
 ; z3/optimized/polynomial.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000426(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %0
   %3 = icmp eq i32 %1, 0
@@ -71,7 +71,7 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/lar_solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a8(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000548(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %0
   %3 = icmp sgt i32 %1, 0
@@ -85,7 +85,7 @@ entry:
 ; z3/optimized/arith_solver.cpp.ll
 ; z3/optimized/theory_lra.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001aa(i32 %0, i32 %1) #0 {
+define i1 @func000000000000054a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %0
   %3 = icmp sgt i32 %1, 0
@@ -97,7 +97,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/pg_backup_archiver.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 0, %0
   %3 = icmp eq i32 %1, 0

@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 25 occurrences:
 ; bullet3/optimized/b3VoronoiSimplexSolver.ll
 ; bullet3/optimized/btVoronoiSimplexSolver.ll
 ; cpython/optimized/instrumentation.ll
@@ -21,6 +21,7 @@
 ; openjdk/optimized/hb-ot-shaper-use.ll
 ; openjdk/optimized/relocInfo.ll
 ; openjdk/optimized/vectorization.ll
+; openusd/optimized/value.cpp.ll
 ; qemu/optimized/hw_usb_dev-hub.c.ll
 ; qemu/optimized/hw_usb_dev-serial.c.ll
 ; redis/optimized/server.ll
@@ -46,7 +47,7 @@ entry:
 define i1 @func000000000000000c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 0, i32 %2
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = icmp ne i32 %4, 0
   ret i1 %5
 }
@@ -61,7 +62,7 @@ entry:
 define i1 @func000000000000000a(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 -2147483648, i32 %2
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = icmp sgt i32 %4, -1
   ret i1 %5
 }

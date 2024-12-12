@@ -1,5 +1,7 @@
 
 ; 216 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/topology.ll
 ; cmake/optimized/cmComputeLinkDepends.cxx.ll
 ; cmake/optimized/cmFindPackageCommand.cxx.ll
 ; cmake/optimized/cmFortranParserImpl.cxx.ll
@@ -134,7 +136,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -213,7 +214,6 @@
 ; yaml-cpp/optimized/simplekey.cpp.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/preproc.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
@@ -278,7 +278,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = ashr exact i64 %4, 3
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   %7 = mul i64 %6, 100
   ret i64 %7
 }
@@ -322,7 +322,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = ashr exact i64 %4, 4
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   %7 = mul nuw nsw i64 %6, 24
   ret i64 %7
 }

@@ -1,17 +1,18 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; abc/optimized/abcTiming.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; gromacs/optimized/cellsizes.cpp.ll
 ; gromacs/optimized/position_restraints.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000022(float %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp olt float %2, 0xBFF921FB60000000
   %4 = select i1 %3, float %1, float %2
-  %5 = fcmp ogt float %4, %0
+  %5 = fcmp olt float %0, %4
   ret i1 %5
 }
 
@@ -24,7 +25,7 @@ define i1 @func0000000000000024(float %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp olt float %2, 0.000000e+00
   %4 = select i1 %3, float %1, float %2
-  %5 = fcmp olt float %4, %0
+  %5 = fcmp ogt float %0, %4
   ret i1 %5
 }
 
@@ -35,7 +36,19 @@ define i1 @func0000000000000023(float %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp olt float %2, 0.000000e+00
   %4 = select i1 %3, float %1, float %2
-  %5 = fcmp ugt float %4, %0
+  %5 = fcmp ult float %0, %4
+  ret i1 %5
+}
+
+; 2 occurrences:
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; Function Attrs: nounwind
+define i1 @func000000000000002a(float %0, float %1, float %2) #0 {
+entry:
+  %3 = fcmp olt float %2, 0.000000e+00
+  %4 = select i1 %3, float %1, float %2
+  %5 = fcmp ole float %0, %4
   ret i1 %5
 }
 
@@ -47,7 +60,7 @@ define i1 @func0000000000000032(float %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp ult float %2, 0.000000e+00
   %4 = select i1 %3, float %1, float %2
-  %5 = fcmp ogt float %4, %0
+  %5 = fcmp olt float %0, %4
   ret i1 %5
 }
 
@@ -62,7 +75,7 @@ define i1 @func0000000000000027(float %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp olt float %2, 0.000000e+00
   %4 = select i1 %3, float %1, float %2
-  %5 = fcmp une float %4, %0
+  %5 = fcmp une float %0, %4
   ret i1 %5
 }
 
@@ -73,7 +86,7 @@ define i1 @func0000000000000025(float %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp olt float %2, 0.000000e+00
   %4 = select i1 %3, float %1, float %2
-  %5 = fcmp ult float %4, %0
+  %5 = fcmp ugt float %0, %4
   ret i1 %5
 }
 
@@ -84,7 +97,7 @@ define i1 @func000000000000002b(float %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp olt float %2, 0.000000e+00
   %4 = select i1 %3, float %1, float %2
-  %5 = fcmp uge float %4, %0
+  %5 = fcmp ule float %0, %4
   ret i1 %5
 }
 
@@ -108,7 +121,7 @@ define i1 @func0000000000000028(float %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp olt float %2, 0.000000e+00
   %4 = select i1 %3, float %1, float %2
-  %5 = fcmp oeq float %4, %0
+  %5 = fcmp oeq float %0, %4
   ret i1 %5
 }
 
@@ -119,7 +132,7 @@ define i1 @func0000000000000042(float %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp ogt float %2, 0x401921FB60000000
   %4 = select i1 %3, float %1, float %2
-  %5 = fcmp ogt float %4, %0
+  %5 = fcmp olt float %0, %4
   ret i1 %5
 }
 
@@ -132,7 +145,7 @@ define i1 @func0000000000000044(float %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp ogt float %2, 0x400921FB60000000
   %4 = select i1 %3, float %1, float %2
-  %5 = fcmp olt float %4, %0
+  %5 = fcmp ogt float %0, %4
   ret i1 %5
 }
 

@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 15 occurrences:
 ; image-rs/optimized/5oy2v8fghrh79s8.ll
 ; linux/optimized/ds.ll
 ; llvm/optimized/CGExpr.cpp.ll
@@ -13,6 +13,8 @@
 ; wasmtime-rs/optimized/2ugglko29ilmqwzu.ll
 ; wasmtime-rs/optimized/3tukmgwo6vemwvwz.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i8 %1) #0 {
 entry:
@@ -27,7 +29,7 @@ entry:
 ; glslang/optimized/Constant.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
 ; meshlab/optimized/save_project.cpp.ll
-; typst-rs/optimized/1ru1rhojhbz2vfey.ll
+; turborepo-rs/optimized/b9mxqsqxupsuldn67x7vgrl1g.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; typst-rs/optimized/3rk2ctuzbghb17s4.ll
 ; Function Attrs: nounwind

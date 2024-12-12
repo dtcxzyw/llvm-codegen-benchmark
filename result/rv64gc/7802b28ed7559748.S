@@ -1,13 +1,13 @@
-func000000000000000f:                   # @func000000000000000f
-	or	a1, a1, a2
-	add	a0, a0, a1
-	lui	a1, 16
-	addw	a0, a0, a1
-	ret
 func000000000000000e:                   # @func000000000000000e
 	addiw	a2, a2, 248
 	or	a0, a0, a1
 	or	a0, a0, a2
+	ret
+func000000000000000f:                   # @func000000000000000f
+	or	a0, a0, a1
+	add	a0, a0, a2
+	lui	a1, 32768
+	addw	a0, a0, a1
 	ret
 func0000000000000000:                   # @func0000000000000000
 	lui	a3, 6

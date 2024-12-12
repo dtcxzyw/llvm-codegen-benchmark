@@ -7,12 +7,12 @@
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000096(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000126(i32 %0, i1 %1) #0 {
 entry:
   %2 = icmp eq i32 %0, 4
-  %3 = or i1 %2, %1
+  %3 = or i1 %1, %2
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = icmp slt i32 %5, 2
   ret i1 %6
 }

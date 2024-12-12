@@ -1,4 +1,4 @@
-func00000000000001b2:                   # @func00000000000001b2
+func0000000000000332:                   # @func0000000000000332
 	imull	$400, %edx, %eax                # imm = 0x190
 	xorl	%ecx, %ecx
 	testl	%esi, %esi

@@ -6,8 +6,9 @@ func0000000000000006:                   # @func0000000000000006
 	vmsle.vi	v0, v8, 0
 	ret
 func0000000000000001:                   # @func0000000000000001
+	li	a0, 360
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmv.v.i	v10, 8
+	vmv.v.x	v10, a0
 	vdiv.vv	v8, v10, v8
 	vmseq.vi	v0, v8, 0
 	ret

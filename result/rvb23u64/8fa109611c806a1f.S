@@ -35,7 +35,7 @@ func0000000000000043:                   # @func0000000000000043
 	add	a1, a1, a2
 	add.uw	a0, a1, a0
 	ret
-func000000000000021e:                   # @func000000000000021e
+func000000000000061e:                   # @func000000000000061e
 	sext.w	a2, a2
 	sltiu	a2, a2, 2
 	xori	a2, a2, 1

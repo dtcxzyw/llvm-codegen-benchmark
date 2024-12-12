@@ -12,13 +12,9 @@ func0000000000000003:                   # @func0000000000000003
 	orl	%edi, %eax
 	retq
 func0000000000000002:                   # @func0000000000000002
-	notb	%dl
-	movzbl	%dl, %eax
-	andl	$1, %eax
-	shll	$24, %eax
-	orl	%esi, %edi
+	andl	$1, %edx
+	leal	(%rsi,%rdx,8), %eax
 	orl	%edi, %eax
-	orl	$100663296, %eax                # imm = 0x6000000
 	retq
 func0000000000000001:                   # @func0000000000000001
 	notb	%dl

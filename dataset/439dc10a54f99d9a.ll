@@ -207,64 +207,6 @@ entry:
   ret i64 %4
 }
 
-; 48 occurrences:
-; eastl/optimized/TestString.cpp.ll
-; hermes/optimized/StringPrimitive.cpp.ll
-; hyperscan/optimized/accel_dfa_build_strat.cpp.ll
-; hyperscan/optimized/asserts.cpp.ll
-; hyperscan/optimized/buildstate.cpp.ll
-; hyperscan/optimized/castlecompile.cpp.ll
-; hyperscan/optimized/dfa_min.cpp.ll
-; hyperscan/optimized/goughcompile.cpp.ll
-; hyperscan/optimized/goughcompile_reg.cpp.ll
-; hyperscan/optimized/limex_compile.cpp.ll
-; hyperscan/optimized/mcclellancompile.cpp.ll
-; hyperscan/optimized/mcclellancompile_util.cpp.ll
-; hyperscan/optimized/mcsheng_compile.cpp.ll
-; hyperscan/optimized/ng_asserts.cpp.ll
-; hyperscan/optimized/ng_builder.cpp.ll
-; hyperscan/optimized/ng_calc_components.cpp.ll
-; hyperscan/optimized/ng_cyclic_redundancy.cpp.ll
-; hyperscan/optimized/ng_edge_redundancy.cpp.ll
-; hyperscan/optimized/ng_equivalence.cpp.ll
-; hyperscan/optimized/ng_execute.cpp.ll
-; hyperscan/optimized/ng_extparam.cpp.ll
-; hyperscan/optimized/ng_fuzzy.cpp.ll
-; hyperscan/optimized/ng_haig.cpp.ll
-; hyperscan/optimized/ng_is_equal.cpp.ll
-; hyperscan/optimized/ng_limex.cpp.ll
-; hyperscan/optimized/ng_limex_accel.cpp.ll
-; hyperscan/optimized/ng_literal_decorated.cpp.ll
-; hyperscan/optimized/ng_mcclellan.cpp.ll
-; hyperscan/optimized/ng_misc_opt.cpp.ll
-; hyperscan/optimized/ng_prune.cpp.ll
-; hyperscan/optimized/ng_redundancy.cpp.ll
-; hyperscan/optimized/ng_region.cpp.ll
-; hyperscan/optimized/ng_region_redundancy.cpp.ll
-; hyperscan/optimized/ng_repeat.cpp.ll
-; hyperscan/optimized/ng_som.cpp.ll
-; hyperscan/optimized/ng_som_add_redundancy.cpp.ll
-; hyperscan/optimized/ng_som_util.cpp.ll
-; hyperscan/optimized/ng_uncalc_components.cpp.ll
-; hyperscan/optimized/ng_utf8.cpp.ll
-; hyperscan/optimized/ng_util.cpp.ll
-; hyperscan/optimized/rdfa_merge.cpp.ll
-; hyperscan/optimized/rose_build_add.cpp.ll
-; hyperscan/optimized/rose_build_add_mask.cpp.ll
-; hyperscan/optimized/rose_build_anchored.cpp.ll
-; hyperscan/optimized/shengcompile.cpp.ll
-; hyperscan/optimized/smallwrite_build.cpp.ll
-; hyperscan/optimized/teddy_compile.cpp.ll
-; pbrt-v4/optimized/string.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, i64 %1) #0 {
-entry:
-  %2 = shl i64 %0, 1
-  %3 = sub i64 %1, %2
-  %4 = and i64 %3, -2
-  ret i64 %4
-}
-
 ; 2 occurrences:
 ; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
 ; yosys/optimized/memory_bram.ll
@@ -331,6 +273,62 @@ entry:
   %2 = shl i64 %0, 3
   %3 = sub i64 %1, %2
   %4 = and i64 %3, -8
+  ret i64 %4
+}
+
+; 46 occurrences:
+; eastl/optimized/TestString.cpp.ll
+; hyperscan/optimized/accel_dfa_build_strat.cpp.ll
+; hyperscan/optimized/asserts.cpp.ll
+; hyperscan/optimized/buildstate.cpp.ll
+; hyperscan/optimized/castlecompile.cpp.ll
+; hyperscan/optimized/dfa_min.cpp.ll
+; hyperscan/optimized/goughcompile.cpp.ll
+; hyperscan/optimized/goughcompile_reg.cpp.ll
+; hyperscan/optimized/limex_compile.cpp.ll
+; hyperscan/optimized/mcclellancompile.cpp.ll
+; hyperscan/optimized/mcclellancompile_util.cpp.ll
+; hyperscan/optimized/mcsheng_compile.cpp.ll
+; hyperscan/optimized/ng_asserts.cpp.ll
+; hyperscan/optimized/ng_builder.cpp.ll
+; hyperscan/optimized/ng_calc_components.cpp.ll
+; hyperscan/optimized/ng_cyclic_redundancy.cpp.ll
+; hyperscan/optimized/ng_edge_redundancy.cpp.ll
+; hyperscan/optimized/ng_equivalence.cpp.ll
+; hyperscan/optimized/ng_execute.cpp.ll
+; hyperscan/optimized/ng_extparam.cpp.ll
+; hyperscan/optimized/ng_fuzzy.cpp.ll
+; hyperscan/optimized/ng_haig.cpp.ll
+; hyperscan/optimized/ng_is_equal.cpp.ll
+; hyperscan/optimized/ng_limex.cpp.ll
+; hyperscan/optimized/ng_limex_accel.cpp.ll
+; hyperscan/optimized/ng_literal_decorated.cpp.ll
+; hyperscan/optimized/ng_mcclellan.cpp.ll
+; hyperscan/optimized/ng_misc_opt.cpp.ll
+; hyperscan/optimized/ng_prune.cpp.ll
+; hyperscan/optimized/ng_redundancy.cpp.ll
+; hyperscan/optimized/ng_region.cpp.ll
+; hyperscan/optimized/ng_region_redundancy.cpp.ll
+; hyperscan/optimized/ng_repeat.cpp.ll
+; hyperscan/optimized/ng_som.cpp.ll
+; hyperscan/optimized/ng_som_add_redundancy.cpp.ll
+; hyperscan/optimized/ng_som_util.cpp.ll
+; hyperscan/optimized/ng_uncalc_components.cpp.ll
+; hyperscan/optimized/ng_utf8.cpp.ll
+; hyperscan/optimized/ng_util.cpp.ll
+; hyperscan/optimized/rdfa_merge.cpp.ll
+; hyperscan/optimized/rose_build_add.cpp.ll
+; hyperscan/optimized/rose_build_add_mask.cpp.ll
+; hyperscan/optimized/rose_build_anchored.cpp.ll
+; hyperscan/optimized/shengcompile.cpp.ll
+; hyperscan/optimized/smallwrite_build.cpp.ll
+; hyperscan/optimized/teddy_compile.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000018(i64 %0, i64 %1) #0 {
+entry:
+  %2 = shl i64 %0, 4
+  %3 = sub i64 %1, %2
+  %4 = and i64 %3, -16
   ret i64 %4
 }
 

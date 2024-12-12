@@ -17,20 +17,21 @@ entry:
 ; qemu/optimized/hw_usb_hcd-xhci.c.ll
 ; ruby/optimized/signal.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000018(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 12
-  %4 = icmp ugt i64 %3, %1
+  %4 = icmp samesign ugt i64 %3, %1
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; libquic/optimized/quic_stream_sequencer_buffer.cc.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = lshr i64 %2, 3
+  %3 = lshr i64 %2, 13
   %4 = icmp ne i64 %3, %1
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5

@@ -1,8 +1,8 @@
 func0000000000000000:                   # @func0000000000000000
 	xor	a1, a1, a2
-	lui	a2, 4080
-	srli	a1, a1, 8
+	lui	a2, 209715
+	srli	a1, a1, 2
 	xor	a0, a0, a1
-	addiw	a1, a2, 255
+	addiw	a1, a2, 819
 	and	a0, a0, a1
 	ret

@@ -1,8 +1,7 @@
 
-; 68 occurrences:
+; 66 occurrences:
 ; abc/optimized/giaJf.c.ll
 ; abc/optimized/giaMf.c.ll
-; abc/optimized/giaOf.c.ll
 ; abc/optimized/giaSatLE.c.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; clamav/optimized/mszipd.c.ll
@@ -19,7 +18,6 @@
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mixbox/optimized/mixbox.ll
 ; nori/optimized/nanovg.c.ll
-; openblas/optimized/dpttrf.c.ll
 ; opencv/optimized/arithm.cpp.ll
 ; opencv/optimized/bgfg_KNN.cpp.ll
 ; opencv/optimized/bgfg_gaussmix2.cpp.ll
@@ -69,7 +67,7 @@
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f1(i64 %0, i32 %1) #0 {
+define i1 @func00000000000003e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 127
   %3 = add nuw nsw i32 %2, 1
@@ -83,13 +81,13 @@ entry:
 ; qemu/optimized/net_checksum.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001f4(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 60
   %3 = add nsw i32 %2, -1
   %4 = zext nneg i32 %3 to i64
   %5 = add nuw nsw i64 %0, 2
-  %6 = icmp ult i64 %5, %4
+  %6 = icmp samesign ult i64 %5, %4
   ret i1 %6
 }
 
@@ -100,7 +98,7 @@ entry:
 ; quickjs/optimized/quickjs.ll
 ; wireshark/optimized/packet-dmp.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 31
   %3 = add nsw i32 %2, -1
@@ -142,7 +140,7 @@ entry:
 ; llvm/optimized/Verifier.cpp.ll
 ; llvm/optimized/X86TargetMachine.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000161(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 67108863
   %3 = add nsw i32 %2, -1
@@ -155,7 +153,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000101(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 67108863
   %3 = add nsw i32 %2, -1
@@ -169,13 +167,13 @@ entry:
 ; opencv/optimized/arithm.cpp.ll
 ; opencv/optimized/selectivesearchsegmentation.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f4(i64 %0, i32 %1) #0 {
+define i1 @func00000000000003f4(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 511
   %3 = add nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
   %5 = add nuw nsw i64 %0, 4
-  %6 = icmp ult i64 %5, %4
+  %6 = icmp samesign ult i64 %5, %4
   ret i1 %6
 }
 

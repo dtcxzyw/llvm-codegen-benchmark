@@ -1,10 +1,10 @@
-func0000000000000341:                   # @func0000000000000341
+func0000000000000c8c:                   # @func0000000000000c8c
 	movq	%rsi, %rax
 	sarq	$4, %rax
 	sarq	$3, %rsi
 	cmpq	%rax, %rsi
-	setae	%cl
+	setb	%cl
 	testq	%rdi, %rdi
-	sete	%al
-	andb	%cl, %al
+	setne	%al
+	orb	%cl, %al
 	retq

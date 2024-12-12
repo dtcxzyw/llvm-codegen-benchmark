@@ -6,8 +6,8 @@
 define i1 @func0000000000000001(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 1, i32 2
-  %4 = add i32 %3, %1
-  %5 = icmp eq i32 %4, %0
+  %4 = add i32 %1, %3
+  %5 = icmp eq i32 %0, %4
   ret i1 %5
 }
 
@@ -21,8 +21,8 @@ entry:
 define i1 @func0000000000000004(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 32, i32 64
-  %4 = add i32 %3, %1
-  %5 = icmp ugt i32 %4, %0
+  %4 = add i32 %1, %3
+  %5 = icmp ult i32 %0, %4
   ret i1 %5
 }
 
@@ -50,11 +50,11 @@ entry:
 ; openexr/optimized/ImfScanLineInputFile.cpp.ll
 ; verilator/optimized/V3LinkParse.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 -1, i32 1
   %4 = add nsw i32 %3, %1
-  %5 = icmp eq i32 %4, %0
+  %5 = icmp eq i32 %0, %4
   ret i1 %5
 }
 
@@ -64,11 +64,11 @@ entry:
 ; wireshark/optimized/packet-dcp-etsi.c.ll
 ; wireshark/optimized/packet-tls.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000064(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 2, i32 4
-  %4 = add nuw nsw i32 %3, %1
-  %5 = icmp ugt i32 %4, %0
+  %4 = add nuw nsw i32 %1, %3
+  %5 = icmp ult i32 %0, %4
   ret i1 %5
 }
 
@@ -80,11 +80,11 @@ entry:
 ; icu/optimized/numparse_impl.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 284, i32 4
-  %4 = add nuw nsw i32 %3, %1
-  %5 = icmp eq i32 %4, %0
+  %4 = add nuw nsw i32 %1, %3
+  %5 = icmp eq i32 %0, %4
   ret i1 %5
 }
 
@@ -99,35 +99,36 @@ entry:
 ; openspiel/optimized/dou_dizhu_utils.cc.ll
 ; stockfish/optimized/search.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 -7, i32 -9
-  %4 = add nsw i32 %3, %1
-  %5 = icmp sgt i32 %4, %0
+  %4 = add nsw i32 %1, %3
+  %5 = icmp slt i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; stockfish/optimized/search.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003b(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func000000000000006b(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 3, i32 4
   %4 = add nuw nsw i32 %3, %1
-  %5 = icmp sle i32 %4, %0
+  %5 = icmp sge i32 %0, %4
   ret i1 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/to_chars.ll
 ; git/optimized/name-rev.ll
 ; libquic/optimized/x509_vfy.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 65535, i32 0
   %4 = add nsw i32 %3, %1
-  %5 = icmp slt i32 %4, %0
+  %5 = icmp sgt i32 %0, %4
   ret i1 %5
 }
 
@@ -141,45 +142,44 @@ define i1 @func0000000000000007(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 -9, i32 0
   %4 = add i32 %3, %1
-  %5 = icmp sge i32 %4, %0
+  %5 = icmp sle i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; yosys/optimized/simplify.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 -1, i32 1
   %4 = add nsw i32 %3, %1
-  %5 = icmp ne i32 %4, %0
+  %5 = icmp ne i32 %0, %4
   ret i1 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; libjpeg-turbo/optimized/jdcoefct.c.ll
 ; linux/optimized/expire.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/recovery.ll
 ; llvm/optimized/ContinuationIndenter.cpp.ll
-; llvm/optimized/TypeBasedAliasAnalysis.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i32 %0, i32 %1, i1 %2) #0 {
 entry:
-  %3 = select i1 %2, i32 -3, i32 -1
+  %3 = select i1 %2, i32 -2, i32 0
   %4 = add i32 %3, %1
-  %5 = icmp ult i32 %4, %0
+  %5 = icmp ugt i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; wireshark/optimized/packet-rtitcp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000068(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 16, i32 8
   %4 = add nuw nsw i32 %3, %1
-  %5 = icmp ult i32 %4, %0
+  %5 = icmp ugt i32 %0, %4
   ret i1 %5
 }
 
@@ -187,11 +187,11 @@ entry:
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; wireshark/optimized/packet-rtps.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000066(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 44, i32 36
   %4 = add nuw nsw i32 %3, %1
-  %5 = icmp sgt i32 %4, %0
+  %5 = icmp slt i32 %0, %4
   ret i1 %5
 }
 
@@ -204,8 +204,8 @@ entry:
 define i1 @func0000000000000006(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 2, i32 1
-  %4 = add i32 %3, %1
-  %5 = icmp sgt i32 %4, %0
+  %4 = add i32 %1, %3
+  %5 = icmp slt i32 %0, %4
   ret i1 %5
 }
 

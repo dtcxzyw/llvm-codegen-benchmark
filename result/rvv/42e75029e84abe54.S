@@ -6,7 +6,7 @@ func0000000000000020:                   # @func0000000000000020
 	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0
 	vadd.vv	v8, v10, v8
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	ret
 func0000000000000180:                   # @func0000000000000180
 	vsetivli	zero, 8, e16, m1, ta, ma
@@ -15,7 +15,7 @@ func0000000000000180:                   # @func0000000000000180
 	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0
 	vadd.vv	v8, v10, v8
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	ret
 func000000000000018f:                   # @func000000000000018f
 	vsetivli	zero, 8, e16, m1, ta, ma
@@ -24,7 +24,7 @@ func000000000000018f:                   # @func000000000000018f
 	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0
 	vadd.vv	v8, v10, v8
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	ret
 func000000000000010f:                   # @func000000000000010f
 	li	a0, 99
@@ -34,7 +34,7 @@ func000000000000010f:                   # @func000000000000010f
 	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0
 	vadd.vv	v8, v10, v8
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	ret
 func0000000000000100:                   # @func0000000000000100
 	vsetivli	zero, 8, e16, m1, ta, ma
@@ -43,7 +43,7 @@ func0000000000000100:                   # @func0000000000000100
 	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0
 	vadd.vv	v8, v10, v8
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	ret
 func0000000000000025:                   # @func0000000000000025
 	li	a0, 22
@@ -53,7 +53,7 @@ func0000000000000025:                   # @func0000000000000025
 	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0
 	vadd.vv	v8, v10, v8
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	ret
 func000000000000002d:                   # @func000000000000002d
 	li	a0, 22
@@ -63,7 +63,7 @@ func000000000000002d:                   # @func000000000000002d
 	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0
 	vadd.vv	v8, v10, v8
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	ret
 func000000000000002f:                   # @func000000000000002f
 	vsetivli	zero, 8, e16, m1, ta, ma
@@ -72,5 +72,5 @@ func000000000000002f:                   # @func000000000000002f
 	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0
 	vadd.vv	v8, v10, v8
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	ret

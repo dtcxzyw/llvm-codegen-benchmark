@@ -1,5 +1,5 @@
 
-; 61 occurrences:
+; 60 occurrences:
 ; abc/optimized/giaMinLut.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/giaTtopt.cpp.ll
@@ -25,7 +25,6 @@
 ; gromacs/optimized/bench_system.cpp.ll
 ; gromacs/optimized/plot.cpp.ll
 ; icu/optimized/timezone.ll
-; linux/optimized/head64.ll
 ; llvm/optimized/ClangOpenCLBuiltinEmitter.cpp.ll
 ; llvm/optimized/CodeGenModule.cpp.ll
 ; llvm/optimized/LangOptions.cpp.ll
@@ -69,7 +68,7 @@ entry:
   ret i32 %2
 }
 
-; 35 occurrences:
+; 34 occurrences:
 ; faiss/optimized/IndexHNSW.cpp.ll
 ; gromacs/optimized/lincs.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
@@ -98,7 +97,6 @@ entry:
 ; openspiel/optimized/tiny_bridge.cc.ll
 ; php/optimized/cdf.ll
 ; php/optimized/cdf_time.ll
-; php/optimized/unixtime2tm.ll
 ; quickjs/optimized/quickjs.ll
 ; redis/optimized/localtime.ll
 ; rocksdb/optimized/offpeak_time_info.cc.ll

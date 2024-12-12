@@ -19,10 +19,10 @@
 ; openusd/optimized/crateData.cpp.ll
 ; openusd/optimized/type.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000020(i64 %0, ptr %1, i64 %2) #0 {
+define i64 @func0000000000000030(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 3
-  %4 = getelementptr nusw i8, ptr %1, i64 16624
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 16624
   %5 = getelementptr i64, ptr %4, i64 %3
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %0, %6
@@ -42,11 +42,24 @@ entry:
 ; llvm/optimized/WasmObjectFile.cpp.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(i64 %0, ptr %1, i64 %2) #0 {
+define i64 @func000000000000003c(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr nusw i8, ptr %1, i64 4
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 4
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
+  %6 = ptrtoint ptr %5 to i64
+  %7 = sub i64 %0, %6
+  ret i64 %7
+}
+
+; 1 occurrences:
+; boost/optimized/alloc_lib.ll
+; Function Attrs: nounwind
+define i64 @func000000000000002c(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -8
+  %4 = getelementptr nusw i8, ptr %1, i64 -16
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %0, %6
   ret i64 %7

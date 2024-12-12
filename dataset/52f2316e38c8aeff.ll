@@ -15,7 +15,9 @@ entry:
   ret i16 %6
 }
 
-; 2 occurrences:
+; 4 occurrences:
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; quantlib/optimized/date.ll
 ; wireshark/optimized/packet-reload.c.ll
 ; Function Attrs: nounwind
@@ -58,8 +60,8 @@ entry:
 define i16 @func0000000000000080(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
-  %4 = add i32 %3, %1
-  %5 = add i32 %4, %0
+  %4 = add i32 %1, %3
+  %5 = add i32 %0, %4
   %6 = trunc i32 %5 to i16
   ret i16 %6
 }

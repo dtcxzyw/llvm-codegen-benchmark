@@ -24,7 +24,7 @@ func0000000000000028:                   # @func0000000000000028
 	shll	$2, %ecx
 	subq	%rcx, %rax
 	retq
-func0000000000000012:                   # @func0000000000000012
+func0000000000000052:                   # @func0000000000000052
 	movq	%rdi, %rax
 	cmpl	$10, %esi
 	sbbq	$0, %rax

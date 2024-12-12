@@ -3,7 +3,7 @@
 ; cmake/optimized/ftp.c.ll
 ; curl/optimized/libcurl_la-ftp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000015a(i32 %0, i8 %1) #0 {
+define i1 @func00000000000002aa(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = mul nsw i32 %2, 10
@@ -18,7 +18,7 @@ entry:
 ; curl/optimized/libcurl_la-ftp.ll
 ; wireshark/optimized/packet-ucp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000156(i32 %0, i8 %1) #0 {
+define i1 @func00000000000002a6(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = mul nsw i32 %2, 10
@@ -31,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/PPCLinux.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000154(i32 %0, i8 %1) #0 {
+define i1 @func00000000000002a4(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
   %3 = mul nsw i32 %2, 10

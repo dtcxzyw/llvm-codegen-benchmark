@@ -1,5 +1,5 @@
 
-; 116 occurrences:
+; 117 occurrences:
 ; abc/optimized/cuddTable.c.ll
 ; actix-rs/optimized/1xpd5itwjglolvjs.ll
 ; arrow/optimized/basic_decimal.cc.ll
@@ -23,9 +23,7 @@
 ; freetype/optimized/cff.c.ll
 ; freetype/optimized/psaux.c.ll
 ; freetype/optimized/smooth.c.ll
-; gromacs/optimized/dorg2r.cpp.ll
 ; gromacs/optimized/localtopologychecker.cpp.ll
-; gromacs/optimized/sorg2r.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hdf5/optimized/H5HFiblock.c.ll
 ; hermes/optimized/APInt.cpp.ll
@@ -37,7 +35,6 @@
 ; libdeflate/optimized/deflate_compress.c.ll
 ; libjpeg-turbo/optimized/transupp.c.ll
 ; libwebp/optimized/image_enc.c.ll
-; linux/optimized/input-mt.ll
 ; linux/optimized/pcm_lib.ll
 ; linux/optimized/vgacon.ll
 ; linux/optimized/xz_dec_lzma2.ll
@@ -51,6 +48,9 @@
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/UnwrappedLineFormatter.cpp.ll
 ; llvm/optimized/WhitespaceManager.cpp.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_roller.ll
 ; minetest/optimized/CImage.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/codeholder.cpp.ll
@@ -94,6 +94,7 @@
 ; openusd/optimized/reformat.c.ll
 ; openusd/optimized/warped_motion.c.ll
 ; pbrt-v4/optimized/lights.cpp.ll
+; pbrt-v4/optimized/pspec.cpp.ll
 ; postgres/optimized/arrayutils.ll
 ; postgres/optimized/dynahash.ll
 ; qemu/optimized/block_parallels.c.ll
@@ -124,9 +125,10 @@ entry:
   ret i32 %4
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_area.ll
 ; minetest/optimized/CGUIStaticText.cpp.ll
 ; minetest/optimized/static_text.cpp.ll
 ; openblas/optimized/dsbgst.c.ll
@@ -169,13 +171,14 @@ entry:
   ret i32 %4
 }
 
-; 57 occurrences:
+; 58 occurrences:
 ; abc/optimized/cuddTable.c.ll
 ; abc/optimized/sclBuffer.c.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; draco/optimized/sequential_normal_attribute_decoder.cc.ll
 ; draco/optimized/sequential_normal_attribute_encoder.cc.ll
 ; libjpeg-turbo/optimized/jdapistd.c.ll
+; lvgl/optimized/lv_roller.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
@@ -254,7 +257,7 @@ entry:
   ret i32 %4
 }
 
-; 113 occurrences:
+; 115 occurrences:
 ; abc/optimized/abcPart.c.ll
 ; abc/optimized/aigPart.c.ll
 ; abc/optimized/cnfMan.c.ll
@@ -262,6 +265,8 @@ entry:
 ; abc/optimized/fraClaus.c.ll
 ; abc/optimized/kitSop.c.ll
 ; abc/optimized/saigMiter.c.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/rational.ll
 ; brotli/optimized/decode.c.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
@@ -282,7 +287,6 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hermes/optimized/g_fmt.c.ll
 ; icu/optimized/edits.ll
-; icu/optimized/gregoimp.ll
 ; jq/optimized/jv_dtoa.ll
 ; libjpeg-turbo/optimized/tjbench.c.ll
 ; lightgbm/optimized/gbdt_model_text.cpp.ll
@@ -290,6 +294,8 @@ entry:
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
@@ -314,7 +320,6 @@ entry:
 ; openblas/optimized/dsbgst.c.ll
 ; openblas/optimized/dsytrf_aa_2stage.c.ll
 ; openblas/optimized/dtgsen.c.ll
-; openblas/optimized/dtgsna.c.ll
 ; opencv/optimized/abs_decoder.cpp.ll
 ; opencv/optimized/ann_mlp.cpp.ll
 ; opencv/optimized/aruco_board.cpp.ll

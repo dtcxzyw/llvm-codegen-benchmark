@@ -11,7 +11,7 @@
 ; nlohmann_json/optimized/unit-ubjson.cpp.ll
 ; wireshark/optimized/packet-dmp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i8 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 63
   %3 = zext nneg i8 %2 to i64

@@ -10,7 +10,7 @@
 ; yalantinglibs/optimized/server.cpp.ll
 ; yosys/optimized/setundef.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000104(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = sub nuw i64 %2, %0
@@ -178,7 +178,7 @@ entry:
 ; yosys/optimized/yosys.ll
 ; yosys/optimized/zinit.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001a4(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = sub nuw nsw i64 %2, %0

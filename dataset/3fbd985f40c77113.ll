@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/wlcStdin.c.ll
 ; clamav/optimized/explode.c.ll
@@ -17,6 +17,7 @@
 ; softposit-rs/optimized/4x7uq85ym1obejw4.ll
 ; spike/optimized/s_mulAddF16.ll
 ; typst-rs/optimized/al9nyr8ju52xbc2.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0, i8 %1, i8 %2) #0 {
 entry:

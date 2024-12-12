@@ -1,11 +1,11 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	sext.w	a1, a1
 	seqz	a1, a1
 	addi	a1, a1, -1
 	andi	a1, a1, 6
 	addw	a0, a0, a1
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	sext.w	a1, a1
 	sltiu	a1, a1, -26
 	addi	a1, a1, -1
@@ -17,27 +17,27 @@ func0000000000000001:                   # @func0000000000000001
 	snez	a1, a1
 	addw	a0, a0, a1
 	ret
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	sext.w	a1, a1
 	seqz	a1, a1
 	addi	a1, a1, -1
 	andi	a1, a1, 63
 	addw	a0, a0, a1
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	sext.w	a1, a1
 	snez	a1, a1
 	slli	a1, a1, 1
 	addw	a0, a0, a1
 	ret
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	sext.w	a1, a1
 	sltiu	a1, a1, 640
 	addi	a1, a1, -1
 	andi	a1, a1, 246
 	addw	a0, a0, a1
 	ret
-func000000000000003c:                   # @func000000000000003c
+func000000000000006c:                   # @func000000000000006c
 	sext.w	a1, a1
 	seqz	a1, a1
 	slli	a1, a1, 3
@@ -50,7 +50,7 @@ func0000000000000006:                   # @func0000000000000006
 	andi	a1, a1, 38
 	addw	a0, a0, a1
 	ret
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	sext.w	a1, a1
 	li	a2, 7
 	sltiu	a1, a1, 3
@@ -59,7 +59,16 @@ func0000000000000038:                   # @func0000000000000038
 	and	a1, a1, a2
 	addw	a0, a0, a1
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000034:                   # @func0000000000000034
+	sext.w	a1, a1
+	lui	a2, 3503
+	addiw	a2, a2, 619
+	sltu	a1, a1, a2
+	addi	a1, a1, -1
+	andi	a1, a1, -729
+	addw	a0, a0, a1
+	ret
+func0000000000000026:                   # @func0000000000000026
 	not	a1, a1
 	srliw	a1, a1, 31
 	addw	a0, a0, a1

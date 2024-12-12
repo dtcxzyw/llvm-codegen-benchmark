@@ -1,8 +1,7 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; duckdb/optimized/ub_duckdb_bind_expression.cpp.ll
 ; linux/optimized/namei_vfat.ll
-; linux/optimized/update.ll
 ; mitsuba3/optimized/sdfgrid.cpp.ll
 ; stockfish/optimized/tbprobe.ll
 ; Function Attrs: nounwind
@@ -15,9 +14,10 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; actix-rs/optimized/14bh10sj718x2c7a.ll
 ; freetype/optimized/sfnt.c.ll
+; postgres/optimized/procarray.ll
 ; z3/optimized/lar_solver.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i1 %1, i8 %2) #0 {

@@ -1,39 +1,23 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	mov	w8, #2031616                    // =0x1f0000
-	ushll	v2.4s, v2.4h, #0
-	dup	v3.2d, x8
-	ushll2	v4.2d, v2.4s, #0
-	ushll	v2.2d, v2.2s, #0
-	and	v1.16b, v1.16b, v3.16b
-	and	v0.16b, v0.16b, v3.16b
-	orr	v0.16b, v0.16b, v2.16b
-	orr	v1.16b, v1.16b, v4.16b
+	and	x0, x0, #0x1f0000
+                                        // kill: def $w1 killed $w1 def $x1
+	bfxil	x0, x1, #0, #16
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	mov	w8, #15                         // =0xf
-	ushll	v2.4s, v2.4h, #0
-	dup	v3.2d, x8
-	ushll2	v4.2d, v2.4s, #0
-	ushll	v2.2d, v2.2s, #0
-	and	v1.16b, v1.16b, v3.16b
-	and	v0.16b, v0.16b, v3.16b
-	orr	v0.16b, v0.16b, v2.16b
-	orr	v1.16b, v1.16b, v4.16b
+                                        // kill: def $w1 killed $w1 def $x1
+	and	x8, x1, #0xffff
+	and	x9, x0, #0xf
+	orr	x0, x9, x8
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	mov	x8, #-4096                      // =0xfffffffffffff000
-	ushll	v2.4s, v2.4h, #0
-	dup	v3.2d, x8
-	ushll	v4.2d, v2.2s, #0
-	ushll2	v2.2d, v2.4s, #0
-	and	v0.16b, v0.16b, v3.16b
-	and	v1.16b, v1.16b, v3.16b
-	orr	v1.16b, v1.16b, v2.16b
-	orr	v0.16b, v0.16b, v4.16b
+                                        // kill: def $w1 killed $w1 def $x1
+	and	x8, x1, #0xffff
+	and	x9, x0, #0xfffffffffffff000
+	orr	x0, x9, x8
 	ret
                                         // -- End function

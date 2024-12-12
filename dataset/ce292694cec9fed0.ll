@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
@@ -16,6 +16,7 @@
 ; pbrt-v4/optimized/surfscatter.cpp.ll
 ; raylib/optimized/rcore.c.ll
 ; typst-rs/optimized/1ojadsqfk0rsifsx.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1) #0 {
 entry:

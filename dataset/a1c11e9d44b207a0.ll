@@ -23,7 +23,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw i64 %3, 32
   %5 = or disjoint i64 %4, %1
-  %6 = xor i64 %5, %0
+  %6 = xor i64 %0, %5
   %7 = xor i64 %6, -49064778989728563
   ret i64 %7
 }

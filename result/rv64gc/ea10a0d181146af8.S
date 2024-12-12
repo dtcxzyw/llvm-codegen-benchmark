@@ -193,6 +193,16 @@ func0000000000000047:                   # @func0000000000000047
 	not	a1, a1
 	and	a0, a0, a1
 	ret
+func0000000000000036:                   # @func0000000000000036
+	lui	a0, 389120
+	lui	a1, 522240
+	fmv.w.x	fa5, a0
+	fle.s	a0, fa5, fa0
+	fmv.w.x	fa5, a1
+	xori	a0, a0, 1
+	flt.s	a1, fa0, fa5
+	and	a0, a0, a1
+	ret
 func0000000000000074:                   # @func0000000000000074
 	lui	a0, 280480
 	fmv.w.x	fa5, a0

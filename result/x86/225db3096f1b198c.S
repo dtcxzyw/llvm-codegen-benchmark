@@ -11,6 +11,10 @@ func000000000000001f:                   # @func000000000000001f
 	decl	%edi
 	leaq	1(%rdi,%rdi), %rax
 	retq
+func0000000000000017:                   # @func0000000000000017
+	addl	$-5, %edi
+	leaq	4(,%rdi,8), %rax
+	retq
 func0000000000000005:                   # @func0000000000000005
 	leal	-1(%rdi), %eax
 	shlq	$32, %rax

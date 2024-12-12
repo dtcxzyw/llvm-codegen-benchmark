@@ -26,5 +26,5 @@ func0000000000000010:                   # @func0000000000000010
 	vmseq.vi	v0, v12, 0
 	vadd.vi	v10, v10, 4
 	vmerge.vim	v10, v10, 4, v0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret

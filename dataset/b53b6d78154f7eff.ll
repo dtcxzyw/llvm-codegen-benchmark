@@ -5,7 +5,7 @@
 ; git/optimized/ewah_bitmap.ll
 ; minetest/optimized/string.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 2
   %3 = and i64 %2, 4294967292
@@ -17,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_denoiseprofile.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 2
   %3 = and i64 %2, -32

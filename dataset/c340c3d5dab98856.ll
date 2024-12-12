@@ -78,7 +78,7 @@
 ; pbrt-v4/optimized/rgb2spec_opt.cpp.ll
 ; pocketpy/optimized/array2d.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0, i32 %1, i32 %2) #0 {
+define i64 @func0000000000000026(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = icmp slt i32 %3, 0

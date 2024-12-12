@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 14 occurrences:
 ; abc/optimized/absOldSim.c.ll
 ; abc/optimized/aigJust.c.ll
 ; abc/optimized/aigTsim.c.ll
@@ -9,6 +9,9 @@
 ; abc/optimized/ivyHaig.c.ll
 ; abc/optimized/pdrTsim.c.ll
 ; abc/optimized/saigPhase.c.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; lvgl/optimized/lv_switch.ll
+; lvgl/optimized/lv_tabview.ll
 ; wireshark/optimized/packet-lpp.c.ll
 ; z3/optimized/nlsat_explain.cpp.ll
 ; Function Attrs: nounwind

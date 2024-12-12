@@ -1,5 +1,5 @@
 
-; 384 occurrences:
+; 396 occurrences:
 ; abc/optimized/amapRead.c.ll
 ; abc/optimized/mioRead.c.ll
 ; abc/optimized/reoSift.c.ll
@@ -15,6 +15,26 @@
 ; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/sweep_context.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/partition.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/cs_norm.c.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/idas.c.ll
@@ -110,24 +130,16 @@
 ; gromacs/optimized/dbdsqr.cpp.ll
 ; gromacs/optimized/dlaebz.cpp.ll
 ; gromacs/optimized/dlaed6.cpp.ll
-; gromacs/optimized/dlagtf.cpp.ll
 ; gromacs/optimized/dlagts.cpp.ll
-; gromacs/optimized/dlange.cpp.ll
-; gromacs/optimized/dlanst.cpp.ll
 ; gromacs/optimized/dlansy.cpp.ll
-; gromacs/optimized/dlapy2.cpp.ll
 ; gromacs/optimized/dlarrbx.cpp.ll
 ; gromacs/optimized/dlarrex.cpp.ll
-; gromacs/optimized/dlarrfx.cpp.ll
 ; gromacs/optimized/dlarrvx.cpp.ll
 ; gromacs/optimized/dlartg.cpp.ll
 ; gromacs/optimized/dlas2.cpp.ll
-; gromacs/optimized/dlasd1.cpp.ll
 ; gromacs/optimized/dlasd2.cpp.ll
 ; gromacs/optimized/dlasd4.cpp.ll
-; gromacs/optimized/dlasd6.cpp.ll
 ; gromacs/optimized/dlasd7.cpp.ll
-; gromacs/optimized/dlasq1.cpp.ll
 ; gromacs/optimized/dlasq2.cpp.ll
 ; gromacs/optimized/dlasq3.cpp.ll
 ; gromacs/optimized/dlasq4.cpp.ll
@@ -171,7 +183,6 @@
 ; meshlab/optimized/edit_referencing.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_measure.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
@@ -287,7 +298,6 @@
 ; osqp/optimized/amd_2.c.ll
 ; osqp/optimized/auxil.c.ll
 ; osqp/optimized/csc_math.c.ll
-; osqp/optimized/scaling.c.ll
 ; osqp/optimized/vector.c.ll
 ; pbrt-v4/optimized/rgb2spec_opt.cpp.ll
 ; php/optimized/array.ll
@@ -383,6 +393,8 @@
 ; z3/optimized/sat_solver.cpp.ll
 ; z3/optimized/sls_engine.cpp.ll
 ; z3/optimized/tab_context.cpp.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; Function Attrs: nounwind
 define double @func0000000000000004(double %0, double %1) #0 {
@@ -392,7 +404,7 @@ entry:
   ret double %3
 }
 
-; 709 occurrences:
+; 748 occurrences:
 ; abc/optimized/cuddPriority.c.ll
 ; abc/optimized/sswRarity.c.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
@@ -420,6 +432,49 @@ entry:
 ; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/sweep_context.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/copy_segment_point.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/difference_pl_pl.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_ring.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/intersection_pl_pl.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/partition.ll
+; boost/optimized/rational.ll
+; boost/optimized/relative_order.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/union_pl_pl.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
 ; brotli/optimized/bit_cost.c.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; brotli/optimized/encode.c.ll
@@ -663,7 +718,6 @@ entry:
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_measure.cpp.ll
@@ -711,10 +765,7 @@ entry:
 ; openblas/optimized/dstedc.c.ll
 ; openblas/optimized/dstemr.c.ll
 ; openblas/optimized/dsteqr.c.ll
-; openblas/optimized/dsyevr.c.ll
-; openblas/optimized/dsyevr_2stage.c.ll
 ; openblas/optimized/dsyevx.c.ll
-; openblas/optimized/dsyevx_2stage.c.ll
 ; opencc/optimized/PhraseExtract.cpp.ll
 ; opencv/optimized/CmShow.cpp.ll
 ; opencv/optimized/adaptive_manifold_filter_n.cpp.ll
@@ -899,7 +950,6 @@ entry:
 ; proj/optimized/defmodel.cpp.ll
 ; proj/optimized/healpix.cpp.ll
 ; proj/optimized/metadata.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; protobuf/optimized/field_comparator.cc.ll
 ; qemu/optimized/util_qdist.c.ll
@@ -1090,6 +1140,7 @@ entry:
 ; z3/optimized/sat_local_search.cpp.ll
 ; z3/optimized/sat_lookahead.cpp.ll
 ; z3/optimized/sls_engine.cpp.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; zfp/optimized/encode1d.c.ll
 ; zfp/optimized/encode2d.c.ll
 ; zfp/optimized/encode3d.c.ll
@@ -1125,11 +1176,10 @@ entry:
   ret double %2
 }
 
-; 42 occurrences:
+; 36 occurrences:
 ; gromacs/optimized/lmmin.cpp.ll
 ; openblas/optimized/dbdsqr.c.ll
 ; openblas/optimized/dbdsvdx.c.ll
-; openblas/optimized/ddisna.c.ll
 ; openblas/optimized/dgejsv.c.ll
 ; openblas/optimized/dgesvj.c.ll
 ; openblas/optimized/dhgeqz.c.ll
@@ -1147,21 +1197,16 @@ entry:
 ; openblas/optimized/dlasd4.c.ll
 ; openblas/optimized/dlasq2.c.ll
 ; openblas/optimized/dlasq5.c.ll
-; openblas/optimized/dlasq6.c.ll
 ; openblas/optimized/dlatrs.c.ll
 ; openblas/optimized/dlatrs3.c.ll
 ; openblas/optimized/dspgvd.c.ll
 ; openblas/optimized/dstebz.c.ll
 ; openblas/optimized/dstemr.c.ll
 ; openblas/optimized/dsyequb.c.ll
-; openblas/optimized/dsyevr.c.ll
-; openblas/optimized/dsyevr_2stage.c.ll
 ; openblas/optimized/dsyevx.c.ll
-; openblas/optimized/dsyevx_2stage.c.ll
 ; openblas/optimized/dsygvd.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; openblas/optimized/dtgsja.c.ll
-; openblas/optimized/dtgsna.c.ll
 ; openblas/optimized/dtrsyl3.c.ll
 ; openjdk/optimized/mlib_ImageScanPoly.ll
 ; openspiel/optimized/policy_iteration.cc.ll
@@ -1176,7 +1221,7 @@ entry:
   ret double %3
 }
 
-; 75 occurrences:
+; 72 occurrences:
 ; darktable/optimized/introspection_clipping.c.ll
 ; darktable/optimized/introspection_crop.c.ll
 ; graphviz/optimized/arrows.c.ll
@@ -1185,7 +1230,6 @@ entry:
 ; openblas/optimized/dbbcsd.c.ll
 ; openblas/optimized/dbdsqr.c.ll
 ; openblas/optimized/dbdsvdx.c.ll
-; openblas/optimized/ddisna.c.ll
 ; openblas/optimized/dgegv.c.ll
 ; openblas/optimized/dgejsv.c.ll
 ; openblas/optimized/dgerfs.c.ll
@@ -1234,7 +1278,6 @@ entry:
 ; openblas/optimized/dsprfs.c.ll
 ; openblas/optimized/dsptrf.c.ll
 ; openblas/optimized/dstebz.c.ll
-; openblas/optimized/dstein.c.ll
 ; openblas/optimized/dstemr.c.ll
 ; openblas/optimized/dsyequb.c.ll
 ; openblas/optimized/dsygvd.c.ll
@@ -1248,7 +1291,6 @@ entry:
 ; openblas/optimized/dtrevc.c.ll
 ; openblas/optimized/dtrevc3.c.ll
 ; openblas/optimized/dtrrfs.c.ll
-; openblas/optimized/dtrsna.c.ll
 ; openblas/optimized/dtrsyl3.c.ll
 ; openjdk/optimized/mlib_ImageScanPoly.ll
 ; quantlib/optimized/lmdif.ll

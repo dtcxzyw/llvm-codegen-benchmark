@@ -14,7 +14,7 @@
 ; vcpkg/optimized/system.mac.cpp.ll
 ; verilator/optimized/V3ParseImp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i8 %0) #0 {
+define i1 @func0000000000000024(i8 %0) #0 {
 entry:
   %1 = freeze i8 %0
   %2 = sext i8 %1 to i32

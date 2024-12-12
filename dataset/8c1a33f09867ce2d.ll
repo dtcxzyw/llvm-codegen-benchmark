@@ -1,5 +1,5 @@
 
-; 83 occurrences:
+; 82 occurrences:
 ; abc/optimized/cecSeq.c.ll
 ; abc/optimized/epd.c.ll
 ; abc/optimized/giaSweep.c.ll
@@ -24,7 +24,6 @@
 ; llvm/optimized/AArch64RegisterBankInfo.cpp.ll
 ; llvm/optimized/CGExpr.cpp.ll
 ; llvm/optimized/CallLowering.cpp.ll
-; llvm/optimized/Clang.cpp.ll
 ; llvm/optimized/CodeGenCommonISel.cpp.ll
 ; llvm/optimized/CombinerHelper.cpp.ll
 ; llvm/optimized/DAGISelMatcherGen.cpp.ll
@@ -88,7 +87,7 @@ define i1 @func0000000000000018(i1 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 31
   %4 = icmp ne i64 %3, 27
-  %5 = and i1 %4, %1
+  %5 = and i1 %1, %4
   %6 = or i1 %5, %0
   ret i1 %6
 }
@@ -100,14 +99,15 @@ define i1 @func0000000000000008(i1 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -4096
   %4 = icmp ult i64 %3, 8193
-  %5 = and i1 %4, %1
-  %6 = or i1 %5, %0
+  %5 = and i1 %1, %4
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
 ; 73 occurrences:
 ; abc/optimized/cecSeq.c.ll
 ; abc/optimized/epd.c.ll
+; boost/optimized/src.ll
 ; cmake/optimized/formdata.c.ll
 ; curl/optimized/libcurl_la-formdata.ll
 ; cvc5/optimized/cardinality_class.cpp.ll
@@ -166,7 +166,6 @@ entry:
 ; pbrt-v4/optimized/render.cpp.ll
 ; php/optimized/zend_file_cache.ll
 ; qemu/optimized/fpu_softfloat.c.ll
-; qemu/optimized/target_riscv_csr.c.ll
 ; redis/optimized/networking.ll
 ; spike/optimized/f32_to_i32_r_minMag.ll
 ; spike/optimized/f32_to_i64_r_minMag.ll
@@ -182,22 +181,10 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, 3072
-  %4 = icmp eq i64 %3, 3072
+  %3 = and i64 %2, 9218868437227405312
+  %4 = icmp eq i64 %3, 0
   %5 = and i1 %4, %1
-  %6 = or i1 %5, %0
-  ret i1 %6
-}
-
-; 1 occurrences:
-; llvm/optimized/Clang.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000010(i1 %0, i1 %1, i64 %2) #0 {
-entry:
-  %3 = and i64 %2, 9223372019674906624
-  %4 = icmp ugt i64 %3, 425201762304
-  %5 = and i1 %4, %1
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

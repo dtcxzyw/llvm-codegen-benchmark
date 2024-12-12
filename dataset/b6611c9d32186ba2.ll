@@ -11,10 +11,9 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; cpython/optimized/memoryobject.ll
 ; linux/optimized/drm_mipi_dsi.ll
-; linux/optimized/drm_prime.ll
 ; llvm/optimized/Compiler.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
 ; Function Attrs: nounwind

@@ -1,34 +1,4 @@
 
-; 9 occurrences:
-; gromacs/optimized/pull.cpp.ll
-; opencv/optimized/hough.cpp.ll
-; openjdk/optimized/mlib_ImageAffine_BL_D64.ll
-; openjdk/optimized/mlib_ImageAffine_BL_F32.ll
-; openjdk/optimized/mlib_ImageAffine_BL_S32.ll
-; openjdk/optimized/mlib_c_ImageAffine_BL.ll
-; openjdk/optimized/mlib_c_ImageAffine_BL_S16.ll
-; openjdk/optimized/mlib_c_ImageAffine_BL_U16.ll
-; openjdk/optimized/mlib_c_ImageAffine_NN.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1) #0 {
-entry:
-  %2 = mul nsw i32 %1, 3
-  %3 = mul nsw i32 %0, 3
-  %4 = icmp slt i32 %3, %2
-  ret i1 %4
-}
-
-; 1 occurrences:
-; openjdk/optimized/mlib_ImageAffine_NN.ll
-; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1) #0 {
-entry:
-  %2 = mul nsw i32 %1, 3
-  %3 = mul nsw i32 %0, 3
-  %4 = icmp sgt i32 %3, %2
-  ret i1 %4
-}
-
 ; 33 occurrences:
 ; abc/optimized/cuddTable.c.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
@@ -87,22 +57,11 @@ entry:
 ; 1 occurrences:
 ; libwebp/optimized/anim_encode.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007a(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000f8(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 255
   %3 = mul nuw nsw i32 %0, 255
-  %4 = icmp sgt i32 %3, %2
-  ret i1 %4
-}
-
-; 1 occurrences:
-; libwebp/optimized/anim_encode.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000078(i32 %0, i32 %1) #0 {
-entry:
-  %2 = mul nsw i32 %1, 255
-  %3 = mul nuw nsw i32 %0, 255
-  %4 = icmp ugt i32 %3, %2
+  %4 = icmp samesign ugt i32 %3, %2
   ret i1 %4
 }
 

@@ -1,5 +1,70 @@
 
-; 175 occurrences:
+; 54 occurrences:
+; arrow/optimized/utf8.cc.ll
+; brotli/optimized/transform.c.ll
+; clamav/optimized/chmd.c.ll
+; cmake/optimized/json_writer.cpp.ll
+; eastl/optimized/string.cpp.ll
+; icu/optimized/normalizer2impl.ll
+; icu/optimized/ustrtrns.ll
+; icu/optimized/utf8collationiterator.ll
+; libphonenumber/optimized/rune.c.ll
+; libphonenumber/optimized/unicodetext.cc.ll
+; libquic/optimized/modp_b64.cc.ll
+; linux/optimized/intel_sseu.ll
+; linux/optimized/intel_vdsc.ll
+; linux/optimized/rx.ll
+; luau/optimized/AssemblyBuilderA64.cpp.ll
+; luau/optimized/isocline.c.ll
+; node/optimized/simdutf.ll
+; openexr/optimized/ImfB44Compressor.cpp.ll
+; openexr/optimized/internal_b44.c.ll
+; openusd/optimized/openexr-c.c.ll
+; php/optimized/html.ll
+; php/optimized/pcre2_auto_possess.ll
+; php/optimized/pcre2_compile.ll
+; php/optimized/pcre2_convert.ll
+; php/optimized/pcre2_dfa_match.ll
+; php/optimized/pcre2_extuni.ll
+; php/optimized/pcre2_jit_compile.ll
+; php/optimized/pcre2_match.ll
+; php/optimized/pcre2_newline.ll
+; php/optimized/pcre2_script_run.ll
+; php/optimized/pcre2_study.ll
+; php/optimized/pcre2_substitute.ll
+; php/optimized/pcre2_xclass.ll
+; php/optimized/uuencode.ll
+; postgres/optimized/utilities.ll
+; postgres/optimized/wchar.ll
+; postgres/optimized/wchar_shlib.ll
+; postgres/optimized/wchar_srv.ll
+; re2/optimized/rune.cc.ll
+; ruby/optimized/cesu_8.ll
+; ruby/optimized/utf_16_32.ll
+; snappy/optimized/snappy.cc.ll
+; sqlite/optimized/sqlite3.ll
+; tev/optimized/Common.cpp.ll
+; vcpkg/optimized/unicode.cpp.ll
+; wireshark/optimized/packet-ansi_637.c.ll
+; wireshark/optimized/packet-ansi_a.c.ll
+; wireshark/optimized/packet-elasticsearch.c.ll
+; wireshark/optimized/packet-fp_hint.c.ll
+; wireshark/optimized/packet-gsm_a_rr.c.ll
+; wireshark/optimized/packet-ipmi-se.c.ll
+; wireshark/optimized/packet-solaredge.c.ll
+; wireshark/optimized/packet-v120.c.ll
+; wireshark/optimized/packet-vnc.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000f(i8 %0, i32 %1) #0 {
+entry:
+  %2 = shl nuw nsw i32 %1, 2
+  %3 = and i32 %2, 28
+  %4 = zext nneg i8 %0 to i32
+  %5 = or disjoint i32 %3, %4
+  ret i32 %5
+}
+
+; 172 occurrences:
 ; clamav/optimized/lzssd.c.ll
 ; clamav/optimized/msexpand.c.ll
 ; cmake/optimized/doh.c.ll
@@ -102,7 +167,6 @@
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/hid-sony.ll
-; linux/optimized/scsicam.ll
 ; linux/optimized/tcp_output.ll
 ; llvm/optimized/NativeFunctionSymbol.cpp.ll
 ; llvm/optimized/NativeInlineSiteSymbol.cpp.ll
@@ -131,8 +195,6 @@
 ; re2/optimized/rune.cc.ll
 ; redis/optimized/hyperloglog.ll
 ; redis/optimized/listpack.ll
-; ruby/optimized/utf_16be.ll
-; ruby/optimized/utf_16le.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; tev/optimized/Channel.cpp.ll
@@ -178,74 +240,9 @@
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i8 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw nsw i32 %1, 8
-  %3 = and i32 %2, 768
+  %2 = shl nuw nsw i32 %1, 6
+  %3 = and i32 %2, 1984
   %4 = zext i8 %0 to i32
-  %5 = or disjoint i32 %3, %4
-  ret i32 %5
-}
-
-; 54 occurrences:
-; arrow/optimized/utf8.cc.ll
-; brotli/optimized/transform.c.ll
-; clamav/optimized/chmd.c.ll
-; cmake/optimized/json_writer.cpp.ll
-; eastl/optimized/string.cpp.ll
-; icu/optimized/normalizer2impl.ll
-; icu/optimized/ustrtrns.ll
-; icu/optimized/utf8collationiterator.ll
-; libphonenumber/optimized/rune.c.ll
-; libphonenumber/optimized/unicodetext.cc.ll
-; libquic/optimized/modp_b64.cc.ll
-; linux/optimized/intel_sseu.ll
-; linux/optimized/intel_vdsc.ll
-; linux/optimized/rx.ll
-; luau/optimized/AssemblyBuilderA64.cpp.ll
-; luau/optimized/isocline.c.ll
-; node/optimized/simdutf.ll
-; openexr/optimized/ImfB44Compressor.cpp.ll
-; openexr/optimized/internal_b44.c.ll
-; openusd/optimized/openexr-c.c.ll
-; php/optimized/html.ll
-; php/optimized/pcre2_auto_possess.ll
-; php/optimized/pcre2_compile.ll
-; php/optimized/pcre2_convert.ll
-; php/optimized/pcre2_dfa_match.ll
-; php/optimized/pcre2_extuni.ll
-; php/optimized/pcre2_jit_compile.ll
-; php/optimized/pcre2_match.ll
-; php/optimized/pcre2_newline.ll
-; php/optimized/pcre2_script_run.ll
-; php/optimized/pcre2_study.ll
-; php/optimized/pcre2_substitute.ll
-; php/optimized/pcre2_xclass.ll
-; php/optimized/uuencode.ll
-; postgres/optimized/utilities.ll
-; postgres/optimized/wchar.ll
-; postgres/optimized/wchar_shlib.ll
-; postgres/optimized/wchar_srv.ll
-; re2/optimized/rune.cc.ll
-; ruby/optimized/cesu_8.ll
-; ruby/optimized/utf_16_32.ll
-; snappy/optimized/snappy.cc.ll
-; sqlite/optimized/sqlite3.ll
-; tev/optimized/Common.cpp.ll
-; vcpkg/optimized/unicode.cpp.ll
-; wireshark/optimized/packet-ansi_637.c.ll
-; wireshark/optimized/packet-ansi_a.c.ll
-; wireshark/optimized/packet-elasticsearch.c.ll
-; wireshark/optimized/packet-fp_hint.c.ll
-; wireshark/optimized/packet-gsm_a_rr.c.ll
-; wireshark/optimized/packet-ipmi-se.c.ll
-; wireshark/optimized/packet-solaredge.c.ll
-; wireshark/optimized/packet-v120.c.ll
-; wireshark/optimized/packet-vnc.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000f(i8 %0, i32 %1) #0 {
-entry:
-  %2 = shl nuw nsw i32 %1, 2
-  %3 = and i32 %2, 28
-  %4 = zext nneg i8 %0 to i32
   %5 = or disjoint i32 %3, %4
   ret i32 %5
 }

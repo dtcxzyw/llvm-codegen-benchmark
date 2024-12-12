@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 26 occurrences:
 ; arrow/optimized/scalar_cast_numeric.cc.ll
 ; cmake/optimized/hex.c.ll
 ; duckdb/optimized/ub_duckdb_func_table.cpp.ll
@@ -11,7 +11,8 @@
 ; lightgbm/optimized/bin.cpp.ll
 ; linux/optimized/drm_dp_helper.ll
 ; linux/optimized/libps2.ll
-; linux/optimized/rsmisc.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; oiio/optimized/pnminput.cpp.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; openjdk/optimized/pngrtran.ll

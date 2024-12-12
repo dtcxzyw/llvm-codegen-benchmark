@@ -1,8 +1,12 @@
 
-; 5 occurrences:
+; 9 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; gromacs/optimized/expfit.cpp.ll
 ; opencv/optimized/edge_drawing.cpp.ll
-; proj/optimized/mbt_fps.cpp.ll
 ; proj/optimized/mbtfpq.cpp.ll
 ; quantlib/optimized/bjerksundstenslandengine.ll
 ; Function Attrs: nounwind

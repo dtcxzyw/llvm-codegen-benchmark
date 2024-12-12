@@ -23,7 +23,7 @@ entry:
   ret i64 %2
 }
 
-; 27 occurrences:
+; 33 occurrences:
 ; clamav/optimized/cabd.c.ll
 ; cmake/optimized/doh.c.ll
 ; curl/optimized/libcurl_la-doh.ll
@@ -41,6 +41,7 @@ entry:
 ; luajit/optimized/lj_opt_narrow.ll
 ; luajit/optimized/lj_opt_narrow_dyn.ll
 ; minetest/optimized/COpenGLDriver.cpp.ll
+; node/optimized/libnode.string_decoder.ll
 ; oiio/optimized/iffinput.cpp.ll
 ; oiio/optimized/paramlist.cpp.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
@@ -51,6 +52,11 @@ entry:
 ; wireshark/optimized/packet-ansi_637.c.ll
 ; wireshark/optimized/packet-isup.c.ll
 ; wireshark/optimized/packet-knxip.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/44h9cwz011g0eagyds8si48mi.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
+; zed-rs/optimized/5kbsfw3jcmbcslmu1o5kx13w3.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i8 %0) #0 {
 entry:

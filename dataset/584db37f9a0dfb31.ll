@@ -15,12 +15,12 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ucnvmbcs.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(i64 %0, ptr %1, i8 %2) #0 {
+define ptr @func000000000000003f(i64 %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, i64 64, i64 1088
-  %5 = getelementptr nusw i16, ptr %1, i64 %4
-  %6 = getelementptr nusw i32, ptr %5, i64 %0
+  %5 = getelementptr nusw nuw i16, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i32, ptr %5, i64 %0
   ret ptr %6
 }
 

@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 20 occurrences:
 ; clap-rs/optimized/4bajo035z6e1d4qz.ll
 ; cpython/optimized/transpose.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
@@ -15,7 +15,6 @@
 ; qemu/optimized/hw_vfio_common.c.ll
 ; qemu/optimized/hw_virtio_vhost-vdpa.c.ll
 ; rayon-rs/optimized/21gejo1m4tab0cb8.ll
-; rayon-rs/optimized/2389eek2c9skvu2t.ll
 ; rayon-rs/optimized/9qhkgr4qio1yp41.ll
 ; rust-analyzer-rs/optimized/58xaix613yc6ngmz.ll
 ; rust-analyzer-rs/optimized/8q1esjraj83sh5t.ll

@@ -1,6 +1,7 @@
 
-; 15 occurrences:
+; 16 occurrences:
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
+; lvgl/optimized/lv_svg_parser.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/decorate_base.cpp.ll
 ; meshlab/optimized/eigen_mesh_conversions.cpp.ll
@@ -21,7 +22,7 @@ entry:
   %2 = fptoui float %1 to i8
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 16
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
@@ -53,7 +54,7 @@ entry:
   %2 = fptoui float %1 to i8
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 6
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 

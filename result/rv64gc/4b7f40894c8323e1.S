@@ -1,8 +1,3 @@
-func000000000000000c:                   # @func000000000000000c
-	addi	a1, a1, 1
-	or	a0, a0, a1
-	ori	a0, a0, 192
-	ret
 func0000000000000000:                   # @func0000000000000000
 	lui	a2, 524288
 	addiw	a2, a2, -1
@@ -26,6 +21,14 @@ func000000000000000f:                   # @func000000000000000f
 	slli	a1, a1, 14
 	addi	a1, a1, 1
 	add	a0, a0, a1
+	ret
+func000000000000000c:                   # @func000000000000000c
+	addi	a1, a1, 2047
+	addi	a1, a1, 1
+	or	a0, a0, a1
+	li	a1, 1
+	slli	a1, a1, 38
+	or	a0, a0, a1
 	ret
 func0000000000000002:                   # @func0000000000000002
 	add	a0, a0, a1

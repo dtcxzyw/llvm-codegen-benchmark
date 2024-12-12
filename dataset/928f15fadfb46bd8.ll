@@ -14,7 +14,9 @@ entry:
   ret ptr %7
 }
 
-; 7 occurrences:
+; 9 occurrences:
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; jq/optimized/regexec.ll
 ; oniguruma/optimized/regexec.ll
 ; php/optimized/state.ll

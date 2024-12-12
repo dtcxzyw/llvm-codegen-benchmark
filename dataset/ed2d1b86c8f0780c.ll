@@ -1,5 +1,5 @@
 
-; 31 occurrences:
+; 28 occurrences:
 ; abc/optimized/giaGlitch.c.ll
 ; cpython/optimized/unicodeobject.ll
 ; draco/optimized/adaptive_rans_bit_decoder.cc.ll
@@ -9,9 +9,6 @@
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; hdf5/optimized/H5Oalloc.c.ll
 ; hdf5/optimized/H5Oint.c.ll
-; jemalloc/optimized/bin.ll
-; jemalloc/optimized/bin.pic.ll
-; jemalloc/optimized/bin.sym.ll
 ; jemalloc/optimized/sec.ll
 ; jemalloc/optimized/sec.pic.ll
 ; jemalloc/optimized/sec.sym.ll

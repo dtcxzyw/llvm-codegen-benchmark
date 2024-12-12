@@ -31,12 +31,13 @@ func000000000000001c:                   # @func000000000000001c
 	vand.vx	v8, v8, a0
 	ret
 func000000000000001e:                   # @func000000000000001e
-	li	a0, 88
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vmv.v.x	v10, a0
-	li	a0, 13
+	vmv.v.i	v10, 1
+	lui	a0, 105
+	addiw	a0, a0, -583
 	vmacc.vx	v10, a0, v8
-	vsrl.vi	v8, v10, 3
-	li	a0, 504
+	li	a0, -2
+	vsrl.vi	v8, v10, 31
+	zext.w	a0, a0
 	vand.vx	v8, v8, a0
 	ret

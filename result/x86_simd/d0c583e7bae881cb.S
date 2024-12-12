@@ -4,7 +4,7 @@ func0000000000000000:                   # @func0000000000000000
 	vpmovqd	%ymm2, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vmovdqa32	%xmm2, %xmm1 {%k1}
-	vpor	%xmm0, %xmm1, %xmm0
+	vpor	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 func0000000000000006:                   # @func0000000000000006

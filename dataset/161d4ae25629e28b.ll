@@ -10,7 +10,7 @@ entry:
   %3 = icmp eq ptr %2, null
   %4 = xor i1 %1, true
   %5 = select i1 %4, i1 true, i1 %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

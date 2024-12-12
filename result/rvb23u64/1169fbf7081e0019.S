@@ -1,9 +1,3 @@
-func0000000000000008:                   # @func0000000000000008
-	andi	a0, a0, 255
-	sltiu	a0, a0, 64
-	xori	a0, a0, 1
-	slli	a0, a0, 8
-	ret
 func0000000000000001:                   # @func0000000000000001
 	andi	a0, a0, 255
 	li	a1, 7
@@ -32,6 +26,15 @@ func0000000000000006:                   # @func0000000000000006
 	ret
 func000000000000000c:                   # @func000000000000000c
 	andi	a0, a0, 255
-	seqz	a0, a0
-	slli	a0, a0, 9
+	li	a1, -256
+	czero.eqz	a0, a1, a0
+	lui	a1, 4
+	addiw	a1, a1, -485
+	add	a0, a0, a1
+	ret
+func0000000000000008:                   # @func0000000000000008
+	andi	a0, a0, 255
+	sltiu	a0, a0, 9
+	xori	a0, a0, 1
+	slli	a0, a0, 1
 	ret

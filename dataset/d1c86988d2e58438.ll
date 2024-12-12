@@ -1,8 +1,9 @@
 
-; 98 occurrences:
+; 104 occurrences:
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/wlcNdr.c.ll
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
+; boost/optimized/area.ll
 ; eastl/optimized/EADateTime.cpp.ll
 ; freetype/optimized/psaux.c.ll
 ; git/optimized/tree-walk.ll
@@ -96,6 +97,11 @@
 ; wolfssl/optimized/tls.c.ll
 ; yosys/optimized/qbfsat.ll
 ; yosys/optimized/yw.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; zxing/optimized/BitMatrix.cpp.ll
 ; zxing/optimized/PDFHighLevelEncoder.cpp.ll
 ; Function Attrs: nounwind
@@ -230,6 +236,18 @@ entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = xor i32 %0, 1
   %4 = add nuw nsw i32 %3, %2
+  ret i32 %4
+}
+
+; 2 occurrences:
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000e(i64 %0, i32 %1) #0 {
+entry:
+  %2 = xor i32 %1, -1
+  %3 = trunc nuw nsw i64 %0 to i32
+  %4 = add nuw i32 %3, %2
   ret i32 %4
 }
 

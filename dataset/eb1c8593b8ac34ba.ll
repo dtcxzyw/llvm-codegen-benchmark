@@ -5,7 +5,7 @@
 ; rust-analyzer-rs/optimized/2i82iai7kwxbnc4v.ll
 ; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(i8 %0, i64 %1) #0 {
+define i64 @func0000000000000041(i8 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 2
   %3 = mul nuw i64 %2, 3

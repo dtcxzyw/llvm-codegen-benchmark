@@ -25,7 +25,7 @@
 ; sqlite/optimized/sqlite3.ll
 ; zstd/optimized/fse_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = add nsw i32 %2, -16
@@ -47,7 +47,7 @@ entry:
 ; stockfish/optimized/search.ll
 ; velox/optimized/DenseHll.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i16 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = add nsw i32 %2, 16
@@ -65,7 +65,7 @@ entry:
 ; postgres/optimized/refint.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = add nsw i32 %2, 1
@@ -77,7 +77,7 @@ entry:
 ; minetest/optimized/clouds.cpp.ll
 ; opencv/optimized/imgwarp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i32 %0, i16 %1) #0 {
+define i1 @func000000000000002b(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = add nsw i32 %2, 1
@@ -88,7 +88,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/vertexDescriptor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000028(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = add nsw i32 %2, 1
@@ -99,7 +99,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/imgwarp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = add nsw i32 %2, -1

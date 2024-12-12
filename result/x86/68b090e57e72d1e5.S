@@ -1,14 +1,14 @@
-func0000000000000074:                   # @func0000000000000074
+func00000000000000e4:                   # @func00000000000000e4
 	leal	256(%rdx), %eax
 	cmpl	$257, %esi                      # imm = 0x101
 	cmovbq	%rdi, %rax
 	retq
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	leal	1(%rdx), %eax
 	testl	%esi, %esi
 	cmoveq	%rdi, %rax
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	leal	-3(%rdx), %eax
 	cmpl	$-3, %esi
 	cmovbq	%rdi, %rax

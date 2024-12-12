@@ -12,9 +12,8 @@ entry:
   ret i64 %3
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; opencv/optimized/detection_output_layer.cpp.ll
-; openexr/optimized/ImfHuf.cpp.ll
 ; sentencepiece/optimized/bpe_model_trainer.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i32 %0) #0 {

@@ -7,12 +7,12 @@
 define i1 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = icmp sgt i64 %4, -1
   ret i1 %5
 }
 
-; 157 occurrences:
+; 156 occurrences:
 ; abc/optimized/acbPush.c.ll
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/giaMf.c.ll
@@ -23,7 +23,6 @@ entry:
 ; arrow/optimized/compare_internal.cc.ll
 ; casadi/optimized/casadi_misc.cpp.ll
 ; folly/optimized/json.cpp.ll
-; linux/optimized/netlabel_addrlist.ll
 ; linux/optimized/xt_conntrack.ll
 ; linux/optimized/xt_policy.ll
 ; llvm/optimized/RegAllocGreedy.cpp.ll
@@ -214,11 +213,23 @@ entry:
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; tokio-rs/optimized/5cdni0zdopovrkgi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = or disjoint i64 %3, %0
   %5 = icmp eq i64 %4, 0
+  ret i1 %5
+}
+
+; 2 occurrences:
+; linux/optimized/hugetlb.ll
+; linux/optimized/mprotect.ll
+; Function Attrs: nounwind
+define i1 @func000000000000002c(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %1, %2
+  %4 = or disjoint i64 %3, %0
+  %5 = icmp ne i64 %4, 0
   ret i1 %5
 }
 

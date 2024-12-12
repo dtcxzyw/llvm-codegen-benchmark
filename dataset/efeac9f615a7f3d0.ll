@@ -4,7 +4,7 @@
 ; linux/optimized/link_watch.ll
 ; nuttx/optimized/lib_lgamma.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = or i1 %3, %0
@@ -18,12 +18,12 @@ entry:
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000058(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4096
   %4 = icmp ne i64 %3, 0
   %5 = icmp eq i32 %1, 4
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   %7 = and i1 %6, %4
   ret i1 %7
 }

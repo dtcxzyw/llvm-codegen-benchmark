@@ -1,10 +1,3 @@
-func0000000000000007:                   # @func0000000000000007
-	xorl	%eax, %eax
-	testb	$1, %dl
-	sete	%al
-	orl	%esi, %edi
-	leal	39(%rdi,%rax,2), %eax
-	retq
 func0000000000000004:                   # @func0000000000000004
 	andb	$3, %dl
 	cmpb	$2, %dl
@@ -15,6 +8,15 @@ func0000000000000004:                   # @func0000000000000004
 	orl	%edi, %eax
 	retq
 func0000000000000006:                   # @func0000000000000006
+	andb	$7, %dl
+	xorl	%eax, %eax
+	cmpb	$2, %dl
+	sete	%al
+	shll	$31, %eax
+	orl	%esi, %edi
+	orl	%edi, %eax
+	retq
+func0000000000000007:                   # @func0000000000000007
 	andb	$7, %dl
 	xorl	%eax, %eax
 	cmpb	$2, %dl

@@ -5,7 +5,7 @@
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; quantlib/optimized/jointstochasticprocess.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000048(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = icmp ugt i64 %2, 1152921504606846975
@@ -17,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; assimp/optimized/ObjFileImporter.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000058(i64 %0, i64 %1) #0 {
+define i64 @func00000000000000a8(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %0, %1
   %3 = icmp ugt i64 %2, 4611686018427387903

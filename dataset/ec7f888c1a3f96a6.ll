@@ -1,10 +1,9 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; gromacs/optimized/calc_verletbuf.cpp.ll
 ; gromacs/optimized/energyoutput.cpp.ll
 ; gromacs/optimized/gmx_current.cpp.ll
 ; gromacs/optimized/replicaexchange.cpp.ll
-; gromacs/optimized/slasdt.cpp.ll
 ; meshlab/optimized/edit_point.cpp.ll
 ; meshlab/optimized/filter_ao.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll

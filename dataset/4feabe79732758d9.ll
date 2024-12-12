@@ -41,9 +41,8 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/io_tri.cpp.ll
 ; recastnavigation/optimized/RecastArea.cpp.ll
 ; Function Attrs: nounwind
@@ -117,8 +116,7 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
-; openblas/optimized/dgbtrf.c.ll
+; 2 occurrences:
 ; openblas/optimized/dpbtrf.c.ll
 ; opencv/optimized/rlof_localflow.cpp.ll
 ; Function Attrs: nounwind

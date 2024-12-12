@@ -62,10 +62,11 @@ entry:
   ret ptr %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; entt/optimized/meta_any.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; wireshark/optimized/packet-sdp.c.ll
+; zed-rs/optimized/89f8nno15240ug8tk8i1phh9j.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(ptr %0, i16 %1, i16 %2) #0 {
 entry:

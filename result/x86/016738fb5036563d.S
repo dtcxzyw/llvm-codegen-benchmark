@@ -13,12 +13,12 @@ func0000000000000007:                   # @func0000000000000007
 	cmpw	%di, %si
 	setle	%al
 	retq
-func00000000000000c6:                   # @func00000000000000c6
+func0000000000000186:                   # @func0000000000000186
 	addl	%edx, %esi
 	cmpw	%di, %si
 	setl	%al
 	retq
-func00000000000000ca:                   # @func00000000000000ca
+func000000000000018a:                   # @func000000000000018a
 	addl	%edx, %esi
 	cmpw	%di, %si
 	setg	%al
@@ -28,7 +28,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmpw	%di, %si
 	setb	%al
 	retq
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	addl	%edx, %esi
 	cmpw	%di, %si
 	setb	%al
@@ -38,7 +38,7 @@ func0000000000000006:                   # @func0000000000000006
 	cmpw	%di, %si
 	setl	%al
 	retq
-func0000000000000086:                   # @func0000000000000086
+func0000000000000106:                   # @func0000000000000106
 	addl	%edx, %esi
 	cmpw	%di, %si
 	setl	%al

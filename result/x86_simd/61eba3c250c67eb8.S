@@ -34,26 +34,20 @@ func0000000000000005:                   # @func0000000000000005
 	vmovdqa	%ymm1, %ymm0
 	retq
 .LCPI4_0:
-	.long	127                             # 0x7f
-func0000000000000020:                   # @func0000000000000020
-	vpcmpleud	.LCPI4_0(%rip){1to8}, %ymm0, %k1
-	vpslld	$5, %ymm0, %ymm0 {%k1} {z}
-	retq
-.LCPI5_0:
 	.long	256                             # 0x100
 func0000000000000018:                   # @func0000000000000018
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpgtd	%ymm1, %ymm0, %k1
-	vpbroadcastd	.LCPI5_0(%rip), %ymm1   # ymm1 = [256,256,256,256,256,256,256,256]
+	vpbroadcastd	.LCPI4_0(%rip), %ymm1   # ymm1 = [256,256,256,256,256,256,256,256]
 	vpslld	$6, %ymm0, %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0
 	retq
-.LCPI6_0:
+.LCPI5_0:
 	.long	24                              # 0x18
 func000000000000001b:                   # @func000000000000001b
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpgtd	%ymm1, %ymm0, %k1
-	vpbroadcastd	.LCPI6_0(%rip), %ymm1   # ymm1 = [24,24,24,24,24,24,24,24]
+	vpbroadcastd	.LCPI5_0(%rip), %ymm1   # ymm1 = [24,24,24,24,24,24,24,24]
 	vpslld	$3, %ymm0, %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0
 	retq

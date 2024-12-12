@@ -17,7 +17,7 @@ entry:
   ret float %3
 }
 
-; 21 occurrences:
+; 22 occurrences:
 ; assimp/optimized/X3DExporter.cpp.ll
 ; bullet3/optimized/btSoftBody.ll
 ; gromacs/optimized/gmx_xpm2ps.cpp.ll
@@ -39,6 +39,7 @@ entry:
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; recastnavigation/optimized/imgui.cpp.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
 ; Function Attrs: nounwind
 define float @func0000000000000004(float %0) #0 {
 entry:

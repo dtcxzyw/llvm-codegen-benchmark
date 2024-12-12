@@ -10,30 +10,31 @@
 ; openssl/optimized/libcrypto-lib-bio_dump.ll
 ; openssl/optimized/libcrypto-shlib-bio_dump.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1, i8 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %4 = mul nuw nsw i64 %1, %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/format-impl-test.cc.ll
+; miniaudio/optimized/unity.c.ll
 ; qemu/optimized/accel_tcg_perf.c.ll
 ; vcpkg/optimized/strings.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000c(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = getelementptr i64, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 16 occurrences:
+; 18 occurrences:
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
 ; flatbuffers/optimized/flatc.cpp.ll
@@ -50,11 +51,13 @@ entry:
 ; xgboost/optimized/gradient_index.cc.ll
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = getelementptr nusw { [3 x i8], i8 }, ptr %0, i64 %4
   ret ptr %5
 }
@@ -80,39 +83,34 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1, i8 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %4 = mul nuw nsw i64 %1, %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 7 occurrences:
+; 1 occurrences:
 ; darktable/optimized/ColorFilterArray.cpp.ll
-; meshlab/optimized/gltf_loader.cpp.ll
-; nori/optimized/nanovg.c.ll
-; openusd/optimized/stbImage.cpp.ll
-; pbrt-v4/optimized/stbimage.cpp.ll
-; stb/optimized/stb_image.c.ll
-; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001c(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = getelementptr i8, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; faiss/optimized/ProductQuantizer.cpp.ll
 ; proxygen/optimized/HTTPTransactionEgressSM.cpp.ll
 ; proxygen/optimized/HTTPTransactionIngressSM.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = getelementptr i8, ptr %0, i64 %4
   ret ptr %5
 }
@@ -125,7 +123,18 @@ entry:
 define ptr @func0000000000000006(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
+  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; duckdb/optimized/ub_duckdb_sort.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001e(ptr %0, i64 %1, i8 %2) #0 {
+entry:
+  %3 = zext nneg i8 %2 to i64
+  %4 = mul nuw nsw i64 %1, %3
   %5 = getelementptr nusw i8, ptr %0, i64 %4
   ret ptr %5
 }
@@ -138,7 +147,7 @@ entry:
 define ptr @func0000000000000014(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = getelementptr i64, ptr %0, i64 %4
   ret ptr %5
 }
@@ -149,8 +158,24 @@ entry:
 define ptr @func0000000000000010(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = getelementptr i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 6 occurrences:
+; meshlab/optimized/gltf_loader.cpp.ll
+; nori/optimized/nanovg.c.ll
+; openusd/optimized/stbImage.cpp.ll
+; pbrt-v4/optimized/stbimage.cpp.ll
+; stb/optimized/stb_image.c.ll
+; tinygltf/optimized/tiny_gltf.cc.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001d(ptr %0, i64 %1, i8 %2) #0 {
+entry:
+  %3 = zext nneg i8 %2 to i64
+  %4 = mul nuw nsw i64 %1, %3
+  %5 = getelementptr nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -161,7 +186,7 @@ entry:
 define ptr @func0000000000000012(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = getelementptr nusw i8, ptr %0, i64 %4
   ret ptr %5
 }

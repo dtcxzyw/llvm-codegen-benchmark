@@ -1,8 +1,10 @@
 
-; 203 occurrences:
+; 205 occurrences:
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/archive_read_support_format_tar.c.ll
 ; cpython/optimized/_datetimemodule.ll
 ; cpython/optimized/longobject.ll
@@ -313,7 +315,7 @@ entry:
   ret i64 %4
 }
 
-; 20 occurrences:
+; 21 occurrences:
 ; assimp/optimized/MD3Loader.cpp.ll
 ; assimp/optimized/MDCLoader.cpp.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -328,12 +330,13 @@ entry:
 ; llvm/optimized/RelocationResolver.cpp.ll
 ; nori/optimized/obj.cpp.ll
 ; opencv/optimized/matrix_sparse.cpp.ll
+; opencv/optimized/sqpnp.cpp.ll
 ; openspiel/optimized/phantom_go_board.cc.ll
 ; openssl/optimized/libcrypto-lib-curve25519.ll
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
 ; sqlite/optimized/sqlite3.ll
-; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wireshark/optimized/packet-locamation-im.c.ll
+; zed-rs/optimized/2i8hya6f2t9bndlbd6b6686oi.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i32 %1) #0 {
 entry:
@@ -343,13 +346,15 @@ entry:
   ret i64 %4
 }
 
-; 28 occurrences:
+; 31 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/init_from_settings.ll
+; boost/optimized/src.ll
 ; brotli/optimized/backward_references.c.ll
 ; clamav/optimized/pdfdecode.c.ll
 ; clamav/optimized/unicode.cpp.ll
 ; cmake/optimized/json_reader.cpp.ll
-; cpython/optimized/_struct.ll
 ; cpython/optimized/longobject.ll
 ; cpython/optimized/unicodeobject.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
@@ -372,6 +377,7 @@ entry:
 ; wasmtime-rs/optimized/504voril3a5lulnh.ll
 ; yyjson/optimized/yyjson.c.ll
 ; z3/optimized/z3_replayer.cpp.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i32 %1) #0 {
 entry:
@@ -381,7 +387,7 @@ entry:
   ret i64 %4
 }
 
-; 14 occurrences:
+; 16 occurrences:
 ; abc/optimized/extraBddCas.c.ll
 ; faiss/optimized/utils.cpp.ll
 ; linux/optimized/control.ll
@@ -396,6 +402,8 @@ entry:
 ; simdjson/optimized/simdjson.cpp.ll
 ; wasmtime-rs/optimized/47nrdncov7567v7m.ll
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
@@ -405,7 +413,7 @@ entry:
   ret i64 %4
 }
 
-; 15 occurrences:
+; 17 occurrences:
 ; coreutils-rs/optimized/21mzc6y6po60ra2.ll
 ; coreutils-rs/optimized/3a6umeboy1uh9t01.ll
 ; cvc5/optimized/simplex.cpp.ll
@@ -421,12 +429,30 @@ entry:
 ; linux/optimized/control.ll
 ; llvm/optimized/Path.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
+; turborepo-rs/optimized/4xosjxdd4tab2lzmgagh8c3os.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = mul nsw i64 %0, -100
   %4 = add nsw i64 %3, %2
+  ret i64 %4
+}
+
+; 6 occurrences:
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/init_from_settings.ll
+; cmake/optimized/archive_read_support_format_ar.c.ll
+; cpython/optimized/longobject.ll
+; eastl/optimized/EAString.cpp.ll
+; quickjs/optimized/quickjs.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000018(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = mul nuw i64 %0, 10
+  %4 = add i64 %3, %2
   ret i64 %4
 }
 
@@ -438,20 +464,6 @@ entry:
   %2 = zext nneg i32 %1 to i64
   %3 = mul nuw i64 %0, 3
   %4 = add nuw i64 %3, %2
-  ret i64 %4
-}
-
-; 4 occurrences:
-; cmake/optimized/archive_read_support_format_ar.c.ll
-; cpython/optimized/longobject.ll
-; eastl/optimized/EAString.cpp.ll
-; quickjs/optimized/quickjs.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, i32 %1) #0 {
-entry:
-  %2 = zext nneg i32 %1 to i64
-  %3 = mul nuw i64 %0, 10
-  %4 = add i64 %3, %2
   ret i64 %4
 }
 

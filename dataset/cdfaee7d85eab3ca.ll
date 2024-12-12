@@ -1,29 +1,4 @@
 
-; 2 occurrences:
-; faiss/optimized/IndexAdditiveQuantizerFastScan.cpp.ll
-; openssl/optimized/libdefault-lib-scrypt.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = mul i64 %2, %1
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %.idx = shl i64 %1, 7
-  %5 = getelementptr nusw i8, ptr %4, i64 %.idx
-  ret ptr %5
-}
-
-; 1 occurrences:
-; openssl/optimized/libdefault-lib-scrypt.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = mul i64 %2, %1
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = shl i64 %1, 7
-  %6 = getelementptr i8, ptr %4, i64 %5
-  ret ptr %6
-}
-
 ; 30 occurrences:
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
@@ -102,6 +77,18 @@ entry:
   %5 = shl i64 %1, 3
   %6 = getelementptr nusw i8, ptr %4, i64 %5
   ret ptr %6
+}
+
+; 1 occurrences:
+; faiss/optimized/IndexAdditiveQuantizerFastScan.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul i64 %1, %2
+  %4 = getelementptr nusw float, ptr %0, i64 %3
+  %.idx = shl i64 %1, 3
+  %5 = getelementptr nusw i8, ptr %4, i64 %.idx
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

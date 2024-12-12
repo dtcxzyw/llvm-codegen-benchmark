@@ -1,10 +1,10 @@
-func000000000000005a:                   # @func000000000000005a
+func000000000000005b:                   # @func000000000000005b
 	shrq	$4, %rdx
 	subq	%rsi, %rdx
 	shlq	$4, %rdx
 	leaq	8(%rdi,%rdx), %rax
 	retq
-func000000000000004a:                   # @func000000000000004a
+func000000000000004b:                   # @func000000000000004b
 	shrq	$4, %rdx
 	subq	%rsi, %rdx
 	shlq	$4, %rdx

@@ -28,3 +28,13 @@ func0000000000000008:                   # @func0000000000000008
 	setae	%al
 	andb	%dil, %al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpl	$2, %esi
+	setb	%al
+	andb	%dil, %al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	cmpl	$52, %esi
+	setae	%al
+	andb	%dil, %al
+	retq

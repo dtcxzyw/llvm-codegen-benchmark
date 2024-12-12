@@ -104,13 +104,13 @@
 ; pybind11/optimized/pybind11_cross_module_tests.cpp.ll
 ; qemu/optimized/hw_net_rocker_rocker.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000cc(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
   %5 = and i64 %4, %1
   %6 = icmp ne i64 %5, 0
-  %7 = xor i1 %6, %0
+  %7 = xor i1 %0, %6
   ret i1 %7
 }
 
@@ -130,11 +130,11 @@ entry:
 ; verilator/optimized/V3VariableOrder.cpp.ll
 ; zxing/optimized/Content.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000c1(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = and i64 %4, %1
+  %5 = and i64 %1, %4
   %6 = icmp eq i64 %5, 0
   %7 = xor i1 %6, %0
   ret i1 %7

@@ -1,7 +1,8 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; bullet3/optimized/btConeTwistConstraint.ll
 ; gromacs/optimized/cellsizes.cpp.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; pbrt-v4/optimized/lights.cpp.ll
 ; pbrt-v4/optimized/primitive.cpp.ll
 ; raylib/optimized/rcore.c.ll

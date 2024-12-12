@@ -1,9 +1,10 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; arrow/optimized/UriQuery.c.ll
 ; darktable/optimized/introspection_hotpixels.c.ll
 ; lightgbm/optimized/linker_topo.cpp.ll
 ; linux/optimized/vlv_dsi_pll.ll
+; lvgl/optimized/lv_theme_default.ll
 ; minetest/optimized/chat.cpp.ll
 ; nori/optimized/popup.cpp.ll
 ; opencv/optimized/grfmt_sunras.cpp.ll
@@ -81,11 +82,15 @@ entry:
   ret i32 %4
 }
 
-; 11 occurrences:
+; 15 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; linux/optimized/intel_bw.ll
 ; linux/optimized/intel_dpll.ll
 ; linux/optimized/vlv_dsi_pll.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; meshlab/optimized/texture_rendering.cpp.ll
 ; opencv/optimized/convolution.cpp.ll
 ; opencv/optimized/grfmt_sunras.cpp.ll
@@ -98,7 +103,18 @@ define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 9
   %3 = select i1 %2, i32 6, i32 2
-  %4 = mul nuw nsw i32 %3, %0
+  %4 = mul nuw nsw i32 %0, %3
+  ret i32 %4
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_transform.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000051(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 128
+  %3 = sub nsw i32 0, %0
+  %4 = select i1 %2, i32 %3, i32 %0
   ret i32 %4
 }
 
@@ -109,7 +125,7 @@ define i32 @func000000000000002b(i32 %0, i32 %1) #0 {
 entry:
   %.inv = icmp slt i32 %1, 3
   %2 = select i1 %.inv, i32 1, i32 3
-  %3 = mul nuw nsw i32 %2, %0
+  %3 = mul nuw nsw i32 %0, %2
   ret i32 %3
 }
 
@@ -155,7 +171,7 @@ define i32 @func0000000000000033(i32 %0, i32 %1) #0 {
 entry:
   %.not = icmp eq i32 %1, 0
   %2 = select i1 %.not, i32 1, i32 3
-  %3 = mul nuw nsw i32 %2, %0
+  %3 = mul nuw nsw i32 %0, %2
   ret i32 %3
 }
 

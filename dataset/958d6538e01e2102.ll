@@ -24,10 +24,10 @@
 ; taskflow/optimized/scalable_pipeline.cpp.ll
 ; taskflow/optimized/scalable_pipeline_with_deferred_tokens.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000128(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000248(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = icmp ugt i64 %3, 2305843009213693951
   %5 = shl nuw i64 %3, 3
   %6 = select i1 %4, i64 -1, i64 %5
@@ -42,10 +42,10 @@ entry:
 ; quantlib/optimized/pathwiseproductcallspecified.ll
 ; quantlib/optimized/swaptionvolmatrix.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000108(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000208(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = icmp ugt i64 %3, 2305843009213693951
   %5 = shl i64 %3, 3
   %6 = select i1 %4, i64 -1, i64 %5
@@ -55,10 +55,10 @@ entry:
 ; 1 occurrences:
 ; quantlib/optimized/levenbergmarquardt.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000168(i64 %0, i64 %1) #0 {
+define i64 @func00000000000002c8(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 32
-  %3 = mul nsw i64 %2, %0
+  %3 = mul nsw i64 %0, %2
   %4 = icmp ugt i64 %3, 2305843009213693951
   %5 = shl nuw i64 %3, 3
   %6 = select i1 %4, i64 -1, i64 %5
@@ -70,10 +70,10 @@ entry:
 ; faiss/optimized/MetaIndexes.cpp.ll
 ; quantlib/optimized/svd.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000148(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000288(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 32
-  %3 = mul nsw i64 %2, %0
+  %3 = mul nsw i64 %0, %2
   %4 = icmp ugt i64 %3, 2305843009213693951
   %5 = shl i64 %3, 3
   %6 = select i1 %4, i64 -1, i64 %5
@@ -83,7 +83,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/matrix_transform.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000178(i64 %0, i64 %1) #0 {
+define i64 @func00000000000002e8(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 32
   %3 = mul nsw i64 %2, %0

@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 10 occurrences:
 ; arrow/optimized/string.cc.ll
 ; qemu/optimized/hw_sd_sd.c.ll
 ; ruby/optimized/prism.ll
@@ -8,8 +8,6 @@
 ; softposit-rs/optimized/3x9ny7yhpewmwf1y.ll
 ; softposit-rs/optimized/4x7uq85ym1obejw4.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
-; spike/optimized/clrs8.ll
-; spike/optimized/clz8.ll
 ; wireshark/optimized/packet-catapult-dct2000.c.ll
 ; wolfssl/optimized/coding.c.ll
 ; Function Attrs: nounwind
@@ -20,15 +18,17 @@ entry:
   ret i8 %4
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; llvm/optimized/Instructions.cpp.ll
 ; opencv/optimized/orb.cpp.ll
 ; openusd/optimized/fvarLevel.cpp.ll
+; spike/optimized/clrs8.ll
+; spike/optimized/clz8.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = select i1 %0, i8 %1, i8 %2
-  %4 = shl nuw i8 %3, 1
+  %4 = shl nuw i8 %3, 2
   ret i8 %4
 }
 

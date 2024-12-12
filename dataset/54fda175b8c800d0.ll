@@ -178,25 +178,23 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i1 %0, i32 %1) #0 {
 entry:
-  %2 = add nuw nsw i32 %1, 1
-  %3 = and i32 %2, 31
-  %4 = icmp eq i32 %3, 0
-  %5 = select i1 %4, i1 true, i1 %0
-  ret i1 %5
+  %2 = and i32 %1, 31
+  %3 = icmp eq i32 %2, 31
+  %4 = select i1 %3, i1 true, i1 %0
+  ret i1 %4
 }
 
 ; 1 occurrences:
 ; tev/optimized/Common.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i1 %0, i32 %1) #0 {
+define i1 @func000000000000006c(i1 %0, i32 %1) #0 {
 entry:
-  %2 = add nuw nsw i32 %1, 1
-  %3 = and i32 %2, 4095
-  %4 = icmp ne i32 %3, 0
-  %5 = select i1 %4, i1 true, i1 %0
-  ret i1 %5
+  %2 = and i32 %1, 4095
+  %3 = icmp ne i32 %2, 4095
+  %4 = select i1 %3, i1 true, i1 %0
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openjdk/optimized/jcphuff.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i32 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000021(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
   %4 = icmp eq i32 %1, 1
@@ -11,7 +11,8 @@ entry:
   ret i64 %6
 }
 
-; 8 occurrences:
+; 10 occurrences:
+; freetype/optimized/truetype.c.ll
 ; llama.cpp/optimized/ggml-alloc.c.ll
 ; ncnn/optimized/gemm.cpp.ll
 ; ncnn/optimized/gemm_x86.cpp.ll
@@ -20,6 +21,7 @@ entry:
 ; ncnn/optimized/gemm_x86_fma.cpp.ll
 ; opencv/optimized/thresh.cpp.ll
 ; opencv/optimized/ts_func.cpp.ll
+; velox/optimized/Re2Functions.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0, i32 %1, i64 %2) #0 {
 entry:
@@ -34,7 +36,7 @@ entry:
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i32 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000061(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = icmp eq i32 %1, 1
@@ -47,7 +49,7 @@ entry:
 ; abc/optimized/abcFanOrder.c.ll
 ; abc/optimized/bblif.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000036(i32 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000066(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = icmp slt i32 %1, 0
@@ -60,7 +62,7 @@ entry:
 ; abc/optimized/llb2Image.c.ll
 ; openspiel/optimized/dou_dizhu_utils.cc.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000003c(i32 %0, i32 %1, i64 %2) #0 {
+define i64 @func000000000000006c(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %.not = icmp eq i32 %1, 0
@@ -88,7 +90,7 @@ entry:
 ; raylib/optimized/rtext.c.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000026(i32 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000046(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = icmp slt i32 %1, 1
@@ -100,7 +102,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/grid.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(i32 %0, i32 %1, i64 %2) #0 {
+define i64 @func000000000000002a(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
   %4 = icmp sgt i32 %1, 0

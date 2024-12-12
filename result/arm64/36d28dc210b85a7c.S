@@ -19,14 +19,14 @@ func0000000000000005:                   // @func0000000000000005
 	cset	w0, ls
 	ret
                                         // -- End function
-func0000000000000045:                   // @func0000000000000045
+func0000000000000085:                   // @func0000000000000085
 // %bb.0:                               // %entry
 	add	x8, x2, w1, uxtw
 	cmp	x8, x0
 	cset	w0, ls
 	ret
                                         // -- End function
-func0000000000000048:                   // @func0000000000000048
+func0000000000000088:                   // @func0000000000000088
 // %bb.0:                               // %entry
 	add	x8, x2, w1, uxtw
 	cmp	x8, x0

@@ -1,4 +1,4 @@
-func0000000000000054:                   # @func0000000000000054
+func00000000000000b4:                   # @func00000000000000b4
 	addl	%edx, %esi
 	movl	%esi, %eax
 	negl	%eax
@@ -6,7 +6,7 @@ func0000000000000054:                   # @func0000000000000054
 	cmpl	%edi, %eax
 	setb	%al
 	retq
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	addl	%edx, %esi
 	movl	%esi, %eax
 	negl	%eax
@@ -14,7 +14,31 @@ func000000000000005a:                   # @func000000000000005a
 	cmpl	%edi, %eax
 	setg	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func000000000000002a:                   # @func000000000000002a
+	addl	%edx, %esi
+	movl	%esi, %eax
+	negl	%eax
+	cmovsl	%esi, %eax
+	cmpl	%edi, %eax
+	setg	%al
+	retq
+func00000000000000b8:                   # @func00000000000000b8
+	addl	%edx, %esi
+	movl	%esi, %eax
+	negl	%eax
+	cmovsl	%esi, %eax
+	cmpl	%edi, %eax
+	seta	%al
+	retq
+func0000000000000034:                   # @func0000000000000034
+	addl	%edx, %esi
+	movl	%esi, %eax
+	negl	%eax
+	cmovsl	%esi, %eax
+	cmpl	%edi, %eax
+	setb	%al
+	retq
+func00000000000000a1:                   # @func00000000000000a1
 	addl	%edx, %esi
 	movl	%esi, %eax
 	negl	%eax
@@ -22,7 +46,7 @@ func0000000000000051:                   # @func0000000000000051
 	cmpl	%edi, %eax
 	sete	%al
 	retq
-func00000000000000d5:                   # @func00000000000000d5
+func00000000000001b5:                   # @func00000000000001b5
 	addl	%edx, %esi
 	movl	%esi, %eax
 	negl	%eax
@@ -30,7 +54,7 @@ func00000000000000d5:                   # @func00000000000000d5
 	cmpl	%edi, %eax
 	setbe	%al
 	retq
-func00000000000000da:                   # @func00000000000000da
+func00000000000001aa:                   # @func00000000000001aa
 	addl	%edx, %esi
 	movl	%esi, %eax
 	negl	%eax
@@ -38,7 +62,7 @@ func00000000000000da:                   # @func00000000000000da
 	cmpl	%edi, %eax
 	setg	%al
 	retq
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	addl	%edx, %esi
 	movl	%esi, %eax
 	negl	%eax

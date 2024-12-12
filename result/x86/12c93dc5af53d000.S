@@ -33,7 +33,7 @@ func000000000000000c:                   # @func000000000000000c
 	retq
 func0000000000000000:                   # @func0000000000000000
 	movzwl	%si, %eax
-	imull	$192000, %eax, %eax             # imm = 0x2EE00
+	imull	$8000000, %eax, %eax            # imm = 0x7A1200
 	leal	-1(%rdi,%rax), %eax
 	retq
 func000000000000007f:                   # @func000000000000007f

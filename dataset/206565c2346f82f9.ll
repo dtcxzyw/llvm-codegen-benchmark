@@ -1,5 +1,5 @@
 
-; 126 occurrences:
+; 119 occurrences:
 ; abc/optimized/wlcGraft.c.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/strtod.cc.ll
@@ -38,8 +38,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -104,8 +102,6 @@
 ; php/optimized/dtoa.ll
 ; php/optimized/strtod.ll
 ; qemu/optimized/fpu_softfloat.c.ll
-; qemu/optimized/source_s_approxRecip32_1.c.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; redis/optimized/fpconv_dtoa.ll
 ; rocksdb/optimized/blob_file_cache.cc.ll
 ; rocksdb/optimized/block_cache_tracer.cc.ll
@@ -121,9 +117,6 @@
 ; spike/optimized/f64_div.ll
 ; spike/optimized/mulhsu.ll
 ; spike/optimized/mulhu.ll
-; spike/optimized/s_approxRecip32_1.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
-; spike/optimized/s_mul64To128M.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind
@@ -156,13 +149,17 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
+; 5 occurrences:
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; meshoptimizer/optimized/simplifier.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 2
-  %3 = and i64 %0, 4294967295
+  %2 = lshr i64 %1, 1
+  %3 = and i64 %0, -8
   %4 = mul i64 %3, %2
   ret i64 %4
 }

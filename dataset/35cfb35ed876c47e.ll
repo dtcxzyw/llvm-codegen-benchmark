@@ -12,7 +12,8 @@ entry:
   ret i16 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; qemu/optimized/target_riscv_vcrypto_helper.c.ll
 ; spike/optimized/vbrev8_v.ll
 ; spike/optimized/vbrev_v.ll

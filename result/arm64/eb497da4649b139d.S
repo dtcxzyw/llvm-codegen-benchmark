@@ -34,6 +34,15 @@ func00000000000000f8:                   // @func00000000000000f8
 	add	x0, x9, x8
 	ret
                                         // -- End function
+func00000000000000fc:                   // @func00000000000000fc
+// %bb.0:                               // %entry
+	mov	x8, #8589934588                 // =0x1fffffffc
+	add	x9, x0, x1, lsl #3
+	add	x8, x8, x2, lsl #1
+	and	x8, x8, #0x1fffffffc
+	add	x0, x9, x8, lsl #3
+	ret
+                                        // -- End function
 func00000000000000f0:                   // @func00000000000000f0
 // %bb.0:                               // %entry
 	mov	x8, #17179803648                // =0x3ffff0000

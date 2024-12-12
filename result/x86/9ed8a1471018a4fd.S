@@ -8,8 +8,8 @@ func0000000000000002:                   # @func0000000000000002
 	testq	%rdi, %rdi
 	setne	%al
 	retq
-func0000000000000010:                   # @func0000000000000010
+func0000000000000014:                   # @func0000000000000014
 	xorl	%eax, %eax
-	cmpq	$3, %rdi
-	setb	%al
+	testq	%rdi, %rdi
+	setle	%al
 	retq

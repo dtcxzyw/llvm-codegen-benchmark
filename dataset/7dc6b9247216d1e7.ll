@@ -1,5 +1,5 @@
 
-; 73 occurrences:
+; 74 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absVta.c.ll
@@ -8,7 +8,6 @@
 ; faiss/optimized/MatrixStats.cpp.ll
 ; flac/optimized/fixed.c.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; git/optimized/diff.ll
 ; git/optimized/diffcore-break.ll
 ; git/optimized/diffcore-rename.ll
@@ -73,6 +72,8 @@
 ; wireshark/optimized/rtp_audio_stream.cpp.ll
 ; wireshark/optimized/tcp_stream_dialog.cpp.ll
 ; yalantinglibs/optimized/client.cpp.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(double %0, i64 %1) #0 {
 entry:

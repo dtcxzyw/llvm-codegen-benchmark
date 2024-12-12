@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; lief/optimized/BinaryParser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 65535
   %4 = icmp ult i64 %3, %0
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -5
   %4 = icmp eq i64 %3, %0
@@ -27,7 +27,7 @@ entry:
 ; linux/optimized/crash_core.ll
 ; xgboost/optimized/simple_dmatrix.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000049(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000089(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -134217728
   %4 = icmp uge i64 %3, %0

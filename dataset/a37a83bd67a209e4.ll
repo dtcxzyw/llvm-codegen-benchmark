@@ -1,5 +1,6 @@
 
-; 57 occurrences:
+; 53 occurrences:
+; boost/optimized/ipc_reliable_message_queue.ll
 ; casadi/optimized/integrator.cpp.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; cmake/optimized/connect.c.ll
@@ -20,14 +21,8 @@
 ; linux/optimized/kobject_uevent.ll
 ; linux/optimized/netlabel_unlabeled.ll
 ; linux/optimized/nl80211.ll
-; linux/optimized/pci.ll
-; linux/optimized/probe_roms.ll
 ; linux/optimized/property.ll
-; linux/optimized/scan.ll
-; linux/optimized/seccomp.ll
-; linux/optimized/swnode.ll
 ; linux/optimized/trace_kprobe.ll
-; linux/optimized/vc.ll
 ; linux/optimized/vmalloc.ll
 ; llvm/optimized/BugReporter.cpp.ll
 ; llvm/optimized/MachineSink.cpp.ll
@@ -57,8 +52,9 @@
 ; stb/optimized/stb_ds.c.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; verilator/optimized/V3Timing.cpp.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = icmp eq ptr %0, null
@@ -92,7 +88,7 @@ entry:
 ; wireshark/optimized/packet-tls-utils.c.ll
 ; wireshark/optimized/packet-wireguard.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, ptr %1) #0 {
+define i1 @func000000000000002c(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = icmp ne ptr %0, null

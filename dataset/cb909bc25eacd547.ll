@@ -1,6 +1,5 @@
 
-; 25 occurrences:
-; abseil-cpp/optimized/memutil.cc.ll
+; 24 occurrences:
 ; assimp/optimized/zip.c.ll
 ; hermes/optimized/zip.c.ll
 ; icu/optimized/cstring.ll

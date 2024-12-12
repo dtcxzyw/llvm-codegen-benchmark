@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 25 occurrences:
 ; cpython/optimized/mathmodule.ll
 ; hermes/optimized/JSTypedArray.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
@@ -15,6 +15,7 @@
 ; linux/optimized/skl_universal_plane.ll
 ; linux/optimized/tcp_output.ll
 ; llvm/optimized/raw_ostream.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; minetest/optimized/wieldmesh.cpp.ll
 ; openjdk/optimized/elfFile.ll

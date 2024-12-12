@@ -119,18 +119,4 @@ entry:
   ret i1 %3
 }
 
-; 4 occurrences:
-; delta-rs/optimized/2braxl0lj34anf5z.ll
-; delta-rs/optimized/3qkwqfk85qralejq.ll
-; delta-rs/optimized/43y2svfstmvqcl15.ll
-; delta-rs/optimized/4zvphat0q9a964bz.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0) #0 {
-entry:
-  %1 = trunc nsw i64 %0 to i32
-  %2 = mul nsw i32 %1, 1000000
-  %3 = icmp ugt i32 %2, 1999999999
-  ret i1 %3
-}
-
 attributes #0 = { nounwind }

@@ -11,12 +11,12 @@
 ; llvm/optimized/StmtOpenACC.cpp.ll
 ; llvm/optimized/StmtOpenMP.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003c8(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000788(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 6
   %5 = add nuw nsw i64 %4, 64
-  %6 = add i64 %5, %1
+  %6 = add i64 %1, %5
   %7 = icmp ugt i64 %6, %0
   ret i1 %7
 }

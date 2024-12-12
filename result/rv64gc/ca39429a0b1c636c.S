@@ -14,7 +14,7 @@ func000000000000007c:                   # @func000000000000007c
 	add	a0, a0, a1
 	sub	a0, a0, a2
 	ret
-func000000000000007e:                   # @func000000000000007e
+func000000000000007f:                   # @func000000000000007f
 	slliw	a2, a2, 4
 	add	a0, a0, a1
 	sub	a0, a0, a2

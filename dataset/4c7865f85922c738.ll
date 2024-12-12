@@ -1,5 +1,5 @@
 
-; 89 occurrences:
+; 92 occurrences:
 ; bullet3/optimized/btHingeConstraint.ll
 ; cxxopts/optimized/example.cpp.ll
 ; duckdb/optimized/ub_duckdb_optimizer_statistics_op.cpp.ll
@@ -89,21 +89,23 @@
 ; wireshark/optimized/packet-saphdb.c.ll
 ; wireshark/optimized/packet-thread.c.ll
 ; yosys/optimized/memlib.ll
+; zed-rs/optimized/1774ern7vmjezjfzajsdneavj.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
+; zed-rs/optimized/4q1bnadqr1o107uase7gmrd0k.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; graphviz/optimized/shapes.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; linux/optimized/nl80211.ll
-; llvm/optimized/LoopVectorizationLegality.cpp.ll
 ; openjdk/optimized/hb-ot-shaper-use.ll
 ; openusd/optimized/changeList.cpp.ll
 ; wireshark/optimized/packet-ncp2222.c.ll
@@ -116,13 +118,17 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 5 occurrences:
+; clamav/optimized/filtering.c.ll
 ; wireshark/optimized/packet-dmp.c.ll
+; zed-rs/optimized/1774ern7vmjezjfzajsdneavj.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
+; zed-rs/optimized/4q1bnadqr1o107uase7gmrd0k.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000010(i1 %0, i1 %1, i8 %2) #0 {
 entry:
-  %3 = icmp ugt i8 %2, 63
-  %4 = or i1 %3, %1
+  %3 = icmp ugt i8 %2, 7
+  %4 = or i1 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -133,7 +139,7 @@ entry:
 define i1 @func0000000000000008(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 3
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }

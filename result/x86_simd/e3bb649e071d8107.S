@@ -41,7 +41,7 @@ func0000000000000018:                   # @func0000000000000018
 	vpmovw2m	%xmm0, %k0
 	vpsrlvd	%ymm2, %ymm1, %ymm0
 	vptestmd	.LCPI0_1(%rip){1to8}, %ymm0, %k1
-	korb	%k0, %k1, %k0
+	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -54,7 +54,7 @@ func0000000000000002:                   # @func0000000000000002
 	vpbroadcastd	.LCPI1_0(%rip), %ymm1   # ymm1 = [3,3,3,3,3,3,3,3]
 	vpand	%ymm1, %ymm0, %ymm0
 	vpcmpeqd	%ymm1, %ymm0, %k1
-	korb	%k0, %k1, %k0
+	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

@@ -19,7 +19,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/hw_scsi_mptconfig.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(ptr %0, i32 %1) #0 {
+define i32 @func0000000000000061(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 9
   %3 = icmp eq ptr %0, null
@@ -35,7 +35,7 @@ entry:
 ; openjdk/optimized/frame.ll
 ; qemu/optimized/hw_scsi_mptconfig.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(ptr %0, i32 %1) #0 {
+define i32 @func0000000000000021(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 9
   %3 = icmp eq ptr %0, null

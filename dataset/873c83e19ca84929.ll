@@ -1,10 +1,11 @@
 
-; 25 occurrences:
+; 26 occurrences:
 ; darktable/optimized/introspection_spots.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-ot-cff1-table.cc.ll
 ; harfbuzz/optimized/hb-ot-cff2-table.cc.ll
 ; harfbuzz/optimized/hb-static.cc.ll
+; lvgl/optimized/lv_demo_widgets.ll
 ; meshlab/optimized/glarea.cpp.ll
 ; minetest/optimized/guiHyperText.cpp.ll
 ; ncnn/optimized/convolution_x86.cpp.ll

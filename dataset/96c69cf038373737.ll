@@ -22,11 +22,11 @@ entry:
   %3 = lshr i64 %1, %2
   %4 = trunc i64 %3 to i32
   %5 = and i32 %4, 1
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
-; 36 occurrences:
+; 33 occurrences:
 ; abc/optimized/extraBddThresh.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; abseil-cpp/optimized/charset_test.cc.ll
@@ -36,9 +36,6 @@ entry:
 ; assimp/optimized/DeboneProcess.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; gromacs/optimized/threaded_force_buffer.cpp.ll
-; jemalloc/optimized/bin.ll
-; jemalloc/optimized/bin.pic.ll
-; jemalloc/optimized/bin.sym.ll
 ; jemalloc/optimized/buf_writer.ll
 ; jemalloc/optimized/buf_writer.pic.ll
 ; jemalloc/optimized/buf_writer.sym.ll
@@ -86,7 +83,7 @@ entry:
   %3 = lshr i64 %1, %2
   %4 = trunc i64 %3 to i32
   %5 = and i32 %4, 3
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 

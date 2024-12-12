@@ -1,5 +1,5 @@
 
-; 49 occurrences:
+; 52 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; clamav/optimized/extract.cpp.ll
@@ -12,11 +12,12 @@
 ; jemalloc/optimized/malloc_io.pic.ll
 ; jemalloc/optimized/malloc_io.sym.ll
 ; libpng/optimized/pngread.c.ll
+; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTMatchFinder.cpp.ll
 ; llvm/optimized/Format.cpp.ll
+; lvgl/optimized/lv_indev_scroll.ll
 ; nlohmann_json/optimized/unit-comparison.cpp.ll
 ; nlohmann_json/optimized/unit-regression2.cpp.ll
-; opencv/optimized/cap_v4l.cpp.ll
 ; opencv/optimized/gfluidcore.cpp.ll
 ; openjdk/optimized/ciArray.ll
 ; openjdk/optimized/ciMethod.ll
@@ -49,6 +50,8 @@
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; wireshark/optimized/packet-tr.c.ll
 ; wireshark/optimized/packet-wsp.c.ll
+; zed-rs/optimized/11rrvqb0alhs5mh4wxxke3etr.ll
+; zed-rs/optimized/8uq0kpgi8jqekwanrrlvbr0h1.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, i1 %1, i8 %2) #0 {
 entry:

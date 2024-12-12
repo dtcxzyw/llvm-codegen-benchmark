@@ -1,4 +1,4 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrd	$1, %xmm2, %eax

@@ -39,7 +39,7 @@ func0000000000000008:                   # @func0000000000000008
 	beqz	a0, .LBB4_2
 	fmv.d.x	fa1, zero
 .LBB4_2:                                # %entry
-	feq.d	a0, fa1, fa0
+	feq.d	a0, fa0, fa1
 	ret
 .LCPI5_0:
 	.quad	0x7ff8000000000000              # double NaN
@@ -49,7 +49,7 @@ func0000000000000007:                   # @func0000000000000007
 	lui	a0, %hi(.LCPI5_0)
 	fld	fa1, %lo(.LCPI5_0)(a0)
 .LBB5_2:                                # %entry
-	feq.d	a0, fa1, fa0
+	feq.d	a0, fa0, fa1
 	xori	a0, a0, 1
 	ret
 func000000000000000e:                   # @func000000000000000e

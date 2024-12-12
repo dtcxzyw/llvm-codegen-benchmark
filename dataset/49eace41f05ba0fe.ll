@@ -37,7 +37,8 @@ entry:
   ret i32 %2
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; harfbuzz/optimized/hb-subset.cc.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
 ; openusd/optimized/matrix3d.cpp.ll

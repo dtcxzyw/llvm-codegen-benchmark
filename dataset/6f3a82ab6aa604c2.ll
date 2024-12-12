@@ -14,12 +14,35 @@ entry:
   ret i64 %4
 }
 
+; 2 occurrences:
+; rustfmt-rs/optimized/x2cb3fifm47d4t5.ll
+; turborepo-rs/optimized/7fw9xnh6zcxu0x094jeq6b04v.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000021(i64 %0, i8 %1) #0 {
+entry:
+  %2 = zext nneg i8 %1 to i64
+  %3 = icmp eq i8 %1, 3
+  %4 = select i1 %3, i64 %0, i64 %2
+  ret i64 %4
+}
+
 ; 1 occurrences:
 ; wireshark/optimized/packet-bacapp.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
+  %3 = icmp slt i8 %1, 0
+  %4 = select i1 %3, i64 %0, i64 %2
+  ret i64 %4
+}
+
+; 1 occurrences:
+; serde-rs-json/optimized/1z3u82elh7pk3w5r.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000026(i64 %0, i8 %1) #0 {
+entry:
+  %2 = zext nneg i8 %1 to i64
   %3 = icmp slt i8 %1, 0
   %4 = select i1 %3, i64 %0, i64 %2
   ret i64 %4

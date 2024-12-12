@@ -21,7 +21,7 @@ func0000000000000300:                   # @func0000000000000300
 	addl	%esi, %eax
 	retq
 func0000000000000040:                   # @func0000000000000040
-	movl	%edi, %eax
 	cmpl	$1, %edx
-	adcl	%esi, %eax
+	adcl	$0, %esi
+	leal	(%rsi,%rdi), %eax
 	retq

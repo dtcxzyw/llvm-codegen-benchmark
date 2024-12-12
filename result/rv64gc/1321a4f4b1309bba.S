@@ -24,3 +24,8 @@ func0000000000000009:                   # @func0000000000000009
 .LBB4_2:                                # %entry
 	mv	a0, a1
 	ret
+func0000000000000014:                   # @func0000000000000014
+	bltu	a2, a1, .LBB5_2
+	mv	a0, a1
+.LBB5_2:                                # %entry
+	ret

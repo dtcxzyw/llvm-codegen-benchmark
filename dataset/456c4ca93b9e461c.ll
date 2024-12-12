@@ -1,5 +1,5 @@
 
-; 37 occurrences:
+; 32 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; gromacs/optimized/kernel_ElecEwTwinCut_VdwLJCombGeom_F.cpp.ll
 ; gromacs/optimized/kernel_ElecEwTwinCut_VdwLJCombGeom_VF.cpp.ll
@@ -31,10 +31,21 @@
 ; gromacs/optimized/kernel_ElecRF_VdwLJCombLB_F.cpp.ll
 ; gromacs/optimized/kernel_ElecRF_VdwLJCombLB_VF.cpp.ll
 ; gromacs/optimized/kernel_ElecRF_VdwLJCombLB_VgrpF.cpp.ll
+; openusd/optimized/catmarkPatchBuilder.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001b(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = or disjoint i32 %2, 1
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw i64, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i64, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 5 occurrences:
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
-; openusd/optimized/catmarkPatchBuilder.cpp.ll
 ; openusd/optimized/restoration.c.ll
 ; stb/optimized/stb_hexwave.c.ll
 ; Function Attrs: nounwind
@@ -42,12 +53,12 @@ define ptr @func000000000000001a(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw i64, ptr %1, i64 %4
-  %6 = getelementptr nusw i64, ptr %5, i64 %0
+  %5 = getelementptr nusw float, ptr %1, i64 %4
+  %6 = getelementptr nusw float, ptr %5, i64 %0
   ret ptr %6
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; gromacs/optimized/dlar1vx.cpp.ll
 ; gromacs/optimized/dlarrvx.cpp.ll
 ; gromacs/optimized/slar1vx.cpp.ll
@@ -60,6 +71,7 @@ entry:
 ; openblas/optimized/dgelsy.c.ll
 ; openblas/optimized/dlaed0.c.ll
 ; openblas/optimized/dlar1v.c.ll
+; opencv/optimized/cornersubpix.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000010(i64 %0, ptr %1, i32 %2) #0 {
 entry:
@@ -67,6 +79,30 @@ entry:
   %4 = sext i32 %3 to i64
   %5 = getelementptr float, ptr %1, i64 %4
   %6 = getelementptr float, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 1 occurrences:
+; openusd/optimized/restoration.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001f(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = or disjoint i32 %2, 3
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw nuw i32, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i32, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 1 occurrences:
+; openusd/optimized/restoration.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001e(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = or disjoint i32 %2, 3
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw nuw i32, ptr %1, i64 %4
+  %6 = getelementptr nusw i32, ptr %5, i64 %0
   ret ptr %6
 }
 

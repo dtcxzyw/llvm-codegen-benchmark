@@ -16,7 +16,7 @@
 	.zero	2
 	.zero	2
 	.zero	2
-func0000000000000009:                   # @func0000000000000009
+func0000000000000029:                   # @func0000000000000029
 	vpmulhuw	.LCPI0_0(%rip), %xmm1, %xmm2    # [9363,9363,9363,9363,9363,9363,9363,9363]
 	vpsubw	%xmm2, %xmm1, %xmm3
 	vpsrlw	$1, %xmm3, %xmm3

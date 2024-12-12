@@ -1,15 +1,11 @@
 
-; 10 occurrences:
+; 6 occurrences:
 ; arrow/optimized/memory_pool.cc.ll
 ; flac/optimized/operations_shorthand_picture.c.ll
 ; linux/optimized/tcp_input.ll
 ; llvm/optimized/InstCombineCompares.cpp.ll
-; llvm/optimized/InstructionCombining.cpp.ll
-; llvm/optimized/InstructionSimplify.cpp.ll
 ; llvm/optimized/LoopInterchange.cpp.ll
-; llvm/optimized/PHITransAddr.cpp.ll
-; llvm/optimized/Reassociate.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
+; zed-rs/optimized/2i8hya6f2t9bndlbd6b6686oi.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(ptr %0, i1 %1, i1 %2) #0 {
 entry:
@@ -20,11 +16,10 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
 ; llvm/optimized/ASTWriterStmt.cpp.ll
-; llvm/optimized/InstCombineCompares.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(ptr %0, i1 %1, i1 %2) #0 {
 entry:

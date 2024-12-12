@@ -4,5 +4,5 @@ func000000000000000c:                   # @func000000000000000c
 	li	a0, 24
 	vmul.vx	v8, v8, a0
 	vmsne.vv	v12, v8, v10
-	vmand.mm	v0, v12, v0
+	vmand.mm	v0, v0, v12
 	ret

@@ -1,5 +1,6 @@
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/default_filter_factory.ll
 ; openjdk/optimized/mlib_ImageCopy_Bit.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
@@ -29,6 +30,17 @@ entry:
   %3 = add i32 %1, %2
   %.neg = sub nsw i32 %0, %3
   ret i32 %.neg
+}
+
+; 1 occurrences:
+; boost/optimized/default_filter_factory.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000013(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %1, %2
+  %.neg = sub i32 %0, %3
+  %4 = add i32 %.neg, -307
+  ret i32 %4
 }
 
 ; 1 occurrences:

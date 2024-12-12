@@ -1,5 +1,5 @@
 
-; 209 occurrences:
+; 210 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; abseil-cpp/optimized/parse.cc.ll
@@ -8,6 +8,8 @@
 ; arrow/optimized/key_value_metadata.cc.ll
 ; arrow/optimized/registry.cc.ll
 ; arrow/optimized/tz.cpp.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/test_system.ll
 ; casadi/optimized/mx_function.cpp.ll
 ; casadi/optimized/sx_function.cpp.ll
 ; cmake/optimized/cmAuxSourceDirectoryCommand.cxx.ll
@@ -141,7 +143,6 @@
 ; openusd/optimized/sdffilter.cpp.ll
 ; openusd/optimized/textFileFormat.tab.cpp.ll
 ; openusd/optimized/textParserHelpers.cpp.ll
-; proj/optimized/io.cpp.ll
 ; protobuf/optimized/helpers.cc.ll
 ; protobuf/optimized/message_field.cc.ll
 ; protobuf/optimized/struct.pb.cc.ll
@@ -210,7 +211,7 @@
 ; z3/optimized/smtlib_frontend.cpp.ll
 ; z3/optimized/statistics.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000166(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000004c6(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 2
   %4 = or disjoint i64 %2, 1
@@ -231,7 +232,7 @@ entry:
 ; rocksdb/optimized/range_tombstone_fragmenter.cc.ll
 ; velox/optimized/ArraySort.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a6(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000546(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 2
   %4 = or disjoint i64 %2, 1
@@ -241,7 +242,9 @@ entry:
   ret i1 %7
 }
 
-; 7 occurrences:
+; 9 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/test_system.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_main.cpp.ll
 ; gromacs/optimized/directoryenumerator.cpp.ll
@@ -250,7 +253,7 @@ entry:
 ; minetest/optimized/sound.cpp.ll
 ; minetest/optimized/test_authdatabase.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000161(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000004c1(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 2
   %4 = or disjoint i64 %2, 1

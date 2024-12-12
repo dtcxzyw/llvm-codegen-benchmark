@@ -14,12 +14,14 @@ entry:
   ret i32 %5
 }
 
-; 245 occurrences:
+; 244 occurrences:
 ; abc/optimized/cnf_reader.c.ll
 ; abc/optimized/xsatCnfReader.c.ll
 ; abseil-cpp/optimized/bind_test.cc.ll
 ; abseil-cpp/optimized/parser.cc.ll
 ; abseil-cpp/optimized/parser_test.cc.ll
+; boost/optimized/topology.ll
+; boost/optimized/xml_grammar.ll
 ; c3c/optimized/parse_expr.c.ll
 ; clamav/optimized/dlp.c.ll
 ; clamav/optimized/libfreshclam.c.ll
@@ -119,13 +121,10 @@ entry:
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -291,8 +290,7 @@ entry:
   ret i32 %5
 }
 
-; 24 occurrences:
-; assimp/optimized/XFileParser.cpp.ll
+; 23 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; cpython/optimized/_zoneinfo.ll
 ; cpython/optimized/dtoa.ll
@@ -339,7 +337,8 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/xml_grammar.ll
 ; git/optimized/base85.ll
 ; libquic/optimized/spdy_alt_svc_wire_format.cc.ll
 ; openusd/optimized/json.cpp.ll

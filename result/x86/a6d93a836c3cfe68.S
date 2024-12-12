@@ -20,6 +20,10 @@ func0000000000000005:                   # @func0000000000000005
 	orq	%rdi, %rax
 	orq	$2, %rax
 	retq
+func0000000000000003:                   # @func0000000000000003
+	orq	%rdx, %rsi
+	leaq	1048576(%rsi,%rdi), %rax
+	retq
 func0000000000000006:                   # @func0000000000000006
 	movq	%rsi, %rax
 	orq	%rdx, %rax
@@ -31,10 +35,4 @@ func0000000000000001:                   # @func0000000000000001
 	orq	%rdx, %rax
 	orq	%rdi, %rax
 	orq	$31744, %rax                    # imm = 0x7C00
-	retq
-func0000000000000003:                   # @func0000000000000003
-	orq	%rdx, %rsi
-	orq	%rdi, %rsi
-	movabsq	$4611686018427387904, %rax      # imm = 0x4000000000000000
-	orq	%rsi, %rax
 	retq

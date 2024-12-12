@@ -15,7 +15,7 @@ func0000000000000000:                   # @func0000000000000000
 	.long	2155905153                      # 0x80808081
 func000000000000001e:                   # @func000000000000001e
 	vpmulld	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpshufd	$245, %ymm0, %ymm1              # ymm1 = ymm0[1,1,3,3,5,5,7,7]
 	vpbroadcastd	.LCPI1_0(%rip), %ymm2   # ymm2 = [2155905153,2155905153,2155905153,2155905153,2155905153,2155905153,2155905153,2155905153]
 	vpmuludq	%ymm2, %ymm1, %ymm1
@@ -28,7 +28,7 @@ func000000000000001e:                   # @func000000000000001e
 	.long	2147516417                      # 0x80008001
 func0000000000000010:                   # @func0000000000000010
 	vpmulld	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpshufd	$245, %ymm0, %ymm1              # ymm1 = ymm0[1,1,3,3,5,5,7,7]
 	vpbroadcastd	.LCPI2_0(%rip), %ymm2   # ymm2 = [2147516417,2147516417,2147516417,2147516417,2147516417,2147516417,2147516417,2147516417]
 	vpmuludq	%ymm2, %ymm1, %ymm1

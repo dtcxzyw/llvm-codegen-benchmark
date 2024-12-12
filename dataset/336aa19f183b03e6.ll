@@ -35,6 +35,7 @@
 ; llvm/optimized/ItaniumDemangle.cpp.ll
 ; llvm/optimized/ItaniumManglingCanonicalizer.cpp.ll
 ; llvm/optimized/LLLexer.cpp.ll
+; lvgl/optimized/lv_draw_label.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/base64.cpp.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
@@ -43,7 +44,6 @@
 ; openusd/optimized/stringUtils.cpp.ll
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; php/optimized/quot_print.ll
-; postgres/optimized/char.ll
 ; postgres/optimized/fe-exec.ll
 ; postgres/optimized/mac8.ll
 ; protobuf/optimized/message_lite.cc.ll
@@ -88,7 +88,7 @@ entry:
 define i8 @func000000000000000b(i8 %0, i8 %1) #0 {
 entry:
   %2 = shl nuw i8 %1, 4
-  %3 = add nuw nsw i8 %2, %0
+  %3 = add nuw nsw i8 %0, %2
   ret i8 %3
 }
 
@@ -100,29 +100,32 @@ entry:
 define i8 @func0000000000000002(i8 %0, i8 %1) #0 {
 entry:
   %2 = shl i8 %1, 4
-  %3 = add nuw i8 %2, %0
-  ret i8 %3
-}
-
-; 1 occurrences:
-; image-rs/optimized/244uszkx0e8t5ie1.ll
-; Function Attrs: nounwind
-define i8 @func000000000000000e(i8 %0, i8 %1) #0 {
-entry:
-  %2 = shl nuw nsw i8 %1, 1
-  %3 = add nuw i8 %2, %0
+  %3 = add nuw i8 %0, %2
   ret i8 %3
 }
 
 ; 3 occurrences:
+; image-rs/optimized/244uszkx0e8t5ie1.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; Function Attrs: nounwind
+define i8 @func000000000000000e(i8 %0, i8 %1) #0 {
+entry:
+  %2 = shl nuw nsw i8 %1, 1
+  %3 = add nuw i8 %0, %2
+  ret i8 %3
+}
+
+; 4 occurrences:
 ; image-rs/optimized/249ukonr3l56u09i.ll
 ; php/optimized/zend_compile.ll
 ; typst-rs/optimized/al9nyr8ju52xbc2.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000000c(i8 %0, i8 %1) #0 {
 entry:
   %2 = shl nuw nsw i8 %1, 1
-  %3 = add i8 %2, %0
+  %3 = add i8 %0, %2
   ret i8 %3
 }
 
@@ -146,7 +149,7 @@ entry:
 define i8 @func000000000000000a(i8 %0, i8 %1) #0 {
 entry:
   %2 = shl nuw i8 %1, 4
-  %3 = add nuw i8 %2, %0
+  %3 = add nuw i8 %0, %2
   ret i8 %3
 }
 
@@ -158,7 +161,7 @@ entry:
 define i8 @func0000000000000003(i8 %0, i8 %1) #0 {
 entry:
   %2 = shl i8 %1, 4
-  %3 = add nuw nsw i8 %2, %0
+  %3 = add nuw nsw i8 %0, %2
   ret i8 %3
 }
 
@@ -171,7 +174,7 @@ entry:
 define i8 @func0000000000000008(i8 %0, i8 %1) #0 {
 entry:
   %2 = shl nuw i8 %1, 4
-  %3 = add i8 %2, %0
+  %3 = add i8 %0, %2
   ret i8 %3
 }
 
@@ -182,7 +185,7 @@ entry:
 define i8 @func000000000000000f(i8 %0, i8 %1) #0 {
 entry:
   %2 = shl nuw nsw i8 %1, 3
-  %3 = add nuw nsw i8 %2, %0
+  %3 = add nuw nsw i8 %0, %2
   ret i8 %3
 }
 
@@ -192,7 +195,7 @@ entry:
 define i8 @func000000000000000d(i8 %0, i8 %1) #0 {
 entry:
   %2 = shl nuw nsw i8 %1, 1
-  %3 = add nsw i8 %2, %0
+  %3 = add nsw i8 %0, %2
   ret i8 %3
 }
 

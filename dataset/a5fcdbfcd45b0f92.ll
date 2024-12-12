@@ -1,19 +1,19 @@
 
-%struct.inflate_huft_s.2869011 = type { %union.anon.2869012, i16 }
-%union.anon.2869012 = type { %struct.anon.2869013 }
-%struct.anon.2869013 = type { i8, i8 }
-%struct.i915_gem_proto_engine.3350743 = type { i32, ptr, i32, i32, ptr, %struct.intel_sseu.3350744 }
-%struct.intel_sseu.3350744 = type { i8, i8, i8, i8 }
+%struct.inflate_huft_s.3062597 = type { %union.anon.3062598, i16 }
+%union.anon.3062598 = type { %struct.anon.3062599 }
+%struct.anon.3062599 = type { i8, i8 }
+%struct.i915_gem_proto_engine.3538703 = type { i32, ptr, i32, i32, ptr, %struct.intel_sseu.3538704 }
+%struct.intel_sseu.3538704 = type { i8, i8, i8, i8 }
 
 ; 2 occurrences:
 ; clamav/optimized/infblock.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1, i16 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = and i64 %3, %1
-  %5 = getelementptr nusw %struct.inflate_huft_s.2869011, ptr %0, i64 %4
+  %4 = and i64 %1, %3
+  %5 = getelementptr nusw nuw %struct.inflate_huft_s.3062597, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -31,8 +31,8 @@ entry:
 define ptr @func0000000000000000(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = and i64 %3, %1
-  %5 = getelementptr %struct.i915_gem_proto_engine.3350743, ptr %0, i64 %4
+  %4 = and i64 %1, %3
+  %5 = getelementptr %struct.i915_gem_proto_engine.3538703, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -42,7 +42,7 @@ entry:
 define ptr @func0000000000000004(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = and i64 %3, %1
+  %4 = and i64 %1, %3
   %5 = getelementptr ptr, ptr %0, i64 %4
   ret ptr %5
 }

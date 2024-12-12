@@ -5,7 +5,7 @@
 define ptr @func0000000000000016(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = sext i32 %1 to i64
-  %4 = mul i64 %3, %2
+  %4 = mul i64 %2, %3
   %5 = sub i64 0, %4
   %6 = getelementptr nusw i8, ptr %0, i64 %5
   ret ptr %6
@@ -17,7 +17,7 @@ entry:
 define ptr @func0000000000000014(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = sext i32 %1 to i64
-  %4 = mul i64 %3, %2
+  %4 = mul i64 %2, %3
   %5 = sub i64 0, %4
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6

@@ -1,7 +1,7 @@
 func0000000000000019:                   # @func0000000000000019
 	vpaddd	%ymm2, %ymm1, %ymm1
-	vpsrld	$1, %ymm1, %ymm1
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpsrld	$3, %ymm1, %ymm1
+	vpmulld	%ymm1, %ymm0, %ymm0
 	retq
 func000000000000001a:                   # @func000000000000001a
 	vpaddd	%ymm2, %ymm1, %ymm1

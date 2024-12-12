@@ -27,12 +27,13 @@ entry:
   ret i1 %6
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/matching.cpp.ll
 ; meshlab/optimized/orthogonal_procrustes.cpp.ll
 ; meshlab/optimized/shell.cpp.ll
 ; qemu/optimized/fpu_softfloat.c.ll
+; turborepo-rs/optimized/8oe5vwmwwrst9p60jy1zusiyz.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i8 %1, i64 %2) #0 {
 entry:

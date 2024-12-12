@@ -1,9 +1,8 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; hermes/optimized/APInt.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
 ; qemu/optimized/crypto_block-luks.c.ll
-; z3/optimized/watch_list.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i32 %0) #0 {
 entry:

@@ -1,9 +1,10 @@
 
-; 19 occurrences:
+; 20 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_retouch.c.ll
 ; darktable/optimized/introspection_spots.c.ll
 ; darktable/optimized/introspection_toneequal.c.ll
+; lvgl/optimized/lv_sdl_window.ll
 ; meshlab/optimized/filter_ao.cpp.ll
 ; minetest/optimized/guiInventoryList.cpp.ll
 ; nori/optimized/imagepanel.cpp.ll

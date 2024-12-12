@@ -20,7 +20,7 @@ func0000000000000011:                   # @func0000000000000011
 	cltq
 	retq
 func0000000000000010:                   # @func0000000000000010
-	addl	%edx, %esi
-	leal	(%rdi,%rsi,2), %eax
+	leal	(%rdi,%rdx,2), %eax
+	leal	(%rax,%rsi,2), %eax
 	cltq
 	retq

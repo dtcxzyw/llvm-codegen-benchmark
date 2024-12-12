@@ -142,6 +142,18 @@ entry:
 }
 
 ; 1 occurrences:
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i1 %0, float %1) #0 {
+entry:
+  %2 = fcmp olt float %1, 0.000000e+00
+  %3 = select i1 %2, float 0.000000e+00, float %1
+  %4 = fcmp ogt float %3, 0.000000e+00
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; nori/optimized/nanovg.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000045(i1 %0, float %1) #0 {

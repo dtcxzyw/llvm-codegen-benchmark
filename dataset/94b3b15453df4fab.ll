@@ -2,7 +2,6 @@
 ; 11 occurrences:
 ; curl/optimized/libcurl_la-rtsp.ll
 ; git/optimized/remote-curl.ll
-; linux/optimized/initramfs.ll
 ; llvm/optimized/FrontendAction.cpp.ll
 ; llvm/optimized/TypePrinter.cpp.ll
 ; openmpi/optimized/libdatatype_reliable_la-opal_datatype_unpack.ll
@@ -11,8 +10,9 @@
 ; postgres/optimized/gistproc.ll
 ; postgres/optimized/varlena.ll
 ; ruby/optimized/gc.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i16 %1) #0 {
+define i1 @func000000000000018c(i64 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 3
   %3 = icmp ne i16 %2, 1
@@ -24,7 +24,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/fpu_softfloat.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000181(i64 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 32767
   %3 = icmp eq i16 %2, 32767
@@ -92,7 +92,7 @@ entry:
 ; pybind11/optimized/test_vector_unique_ptr_member.cpp.ll
 ; pybind11/optimized/test_virtual_functions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i16 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 1
   %3 = icmp ne i16 %2, 0
@@ -104,7 +104,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/matcher-byte-comp.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i64 %0, i16 %1) #0 {
+define i1 @func000000000000010c(i64 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 1
   %3 = icmp ne i16 %2, 0
@@ -119,23 +119,11 @@ entry:
 ; llvm/optimized/SemaInit.cpp.ll
 ; wireshark/optimized/packet-adb_service.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 4
   %3 = icmp eq i16 %2, 0
   %4 = icmp eq i64 %0, 1
-  %5 = select i1 %3, i1 %4, i1 false
-  ret i1 %5
-}
-
-; 1 occurrences:
-; postgres/optimized/guc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i16 %1) #0 {
-entry:
-  %2 = and i16 %1, 8192
-  %3 = icmp eq i16 %2, 0
-  %4 = icmp ult i64 %0, 3
   %5 = select i1 %3, i1 %4, i1 false
   ret i1 %5
 }

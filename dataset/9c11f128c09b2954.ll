@@ -43,12 +43,12 @@ entry:
 ; redis/optimized/rax.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = and i32 %2, 131070
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i16, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i16, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -84,29 +84,30 @@ entry:
 ; yalantinglibs/optimized/example.cpp.ll
 ; zxing/optimized/ODDataBarCommon.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = and i32 %2, 2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000016(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000017(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 1
   %3 = and i32 %2, 2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; clamav/optimized/kwajd.c.ll
+; gromacs/optimized/pairlist.cpp.ll
 ; linux/optimized/decompress_unlzma.ll
 ; linux/optimized/regset.ll
 ; linux/optimized/sky2.ll
@@ -116,6 +117,18 @@ entry:
   %2 = shl i32 %1, 1
   %3 = and i32 %2, 1022
   %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; gromacs/optimized/pairlist.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000010(ptr %0, i32 %1) #0 {
+entry:
+  %2 = shl nuw i32 %1, 1
+  %3 = and i32 %2, -8
+  %4 = zext i32 %3 to i64
   %5 = getelementptr i8, ptr %0, i64 %4
   ret ptr %5
 }

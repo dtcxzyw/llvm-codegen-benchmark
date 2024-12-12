@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; darktable/optimized/CrwDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000003210(i16 %0, i16 %1, i32 %2) #0 {
+define i1 @func000000000000c410(i16 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp ugt i16 %1, 4104
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/utrie_swap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000003310(i16 %0, i32 %1, i16 %2) #0 {
+define i1 @func000000000000c610(i16 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp ne i16 %2, 0
   %4 = icmp ne i32 %1, 1416784178

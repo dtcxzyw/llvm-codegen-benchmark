@@ -6,7 +6,7 @@
 define i1 @func0000000000000004(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = ptrtoint ptr %1 to i64
   %6 = icmp ult i64 %4, %5
   ret i1 %6
@@ -41,7 +41,7 @@ entry:
 define i1 @func0000000000000008(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = ptrtoint ptr %1 to i64
   %6 = icmp ugt i64 %4, %5
   ret i1 %6
@@ -56,7 +56,7 @@ entry:
 define i1 @func0000000000000005(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = ptrtoint ptr %1 to i64
   %6 = icmp ule i64 %4, %5
   ret i1 %6
@@ -69,10 +69,10 @@ entry:
 ; clamav/optimized/upx.c.ll
 ; llvm/optimized/MachineFunction.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000088(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = ptrtoint ptr %1 to i64
   %6 = icmp ugt i64 %4, %5
   ret i1 %6

@@ -26,7 +26,3 @@ func0000000000000017:                   # @func0000000000000017
 	orl	$1, %esi
 	leal	(%rsi,%rdi), %eax
 	retq
-func000000000000001d:                   # @func000000000000001d
-	orl	$1, %esi
-	leal	(%rsi,%rdi), %eax
-	retq

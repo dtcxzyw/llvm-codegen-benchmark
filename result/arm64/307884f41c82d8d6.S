@@ -6,6 +6,6 @@ func0000000000000002:                   // @func0000000000000002
 	movk	x9, #61167
 	mul	x8, x8, x9
 	ucvtf	d1, x8
-	fmul	d0, d1, d0
+	fmul	d0, d0, d1
 	ret
                                         // -- End function

@@ -1,18 +1,3 @@
-func0000000000000038:                   # @func0000000000000038
-	lui	a1, 244
-	lui	a2, 274878
-	addiw	a1, a1, 576
-	addiw	a2, a2, -381
-	mul	a1, a1, a0
-	slli	a2, a2, 13
-	addi	a2, a2, -1290
-	sltu	a0, a2, a0
-	li	a2, -1
-	srli	a2, a2, 1
-	czero.nez	a1, a1, a0
-	czero.eqz	a0, a2, a0
-	or	a0, a0, a1
-	ret
 func0000000000000001:                   # @func0000000000000001
 	lui	a1, 244141
 	lui	a2, 366211
@@ -24,7 +9,7 @@ func0000000000000001:                   # @func0000000000000001
 	czero.nez	a0, a2, a0
 	or	a0, a0, a1
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	lui	a1, 244
 	lui	a2, 274878
 	addiw	a1, a1, 576
@@ -39,7 +24,25 @@ func000000000000001a:                   # @func000000000000001a
 	czero.eqz	a0, a2, a0
 	or	a0, a0, a1
 	ret
-func0000000000000031:                   # @func0000000000000031
+func0000000000000068:                   # @func0000000000000068
+	lui	a1, 244
+	lui	a2, 5960
+	addiw	a1, a1, 576
+	addiw	a2, a2, 1903
+	mul	a1, a1, a0
+	slli	a2, a2, 12
+	addi	a2, a2, -1049
+	sltu	a0, a2, a0
+	lui	a2, 45475
+	addiw	a2, a2, -1085
+	slli	a2, a2, 12
+	addi	a2, a2, -315
+	slli	a2, a2, 17
+	czero.nez	a1, a1, a0
+	czero.eqz	a0, a2, a0
+	or	a0, a0, a1
+	ret
+func0000000000000061:                   # @func0000000000000061
 	sh1add	a1, a0, a0
 	slli	a1, a1, 1
 	addi	a0, a0, -6
@@ -47,7 +50,7 @@ func0000000000000031:                   # @func0000000000000031
 	ret
 .LCPI4_0:
 	.quad	1537228672809129301             # 0x1555555555555555
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	lui	a1, %hi(.LCPI4_0)
 	ld	a1, %lo(.LCPI4_0)(a1)
 	sh1add	a2, a0, a0
@@ -83,7 +86,7 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 .LCPI7_0:
 	.quad	9223372036854774                # 0x20c49ba5e353f6
-func000000000000003a:                   # @func000000000000003a
+func000000000000006a:                   # @func000000000000006a
 	lui	a1, %hi(.LCPI7_0)
 	ld	a1, %lo(.LCPI7_0)(a1)
 	li	a2, 1000

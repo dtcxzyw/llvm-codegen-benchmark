@@ -1,5 +1,5 @@
 
-; 232 occurrences:
+; 233 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/cecSatG3.c.ll
 ; abc/optimized/covMinSop.c.ll
@@ -14,7 +14,6 @@
 ; abseil-cpp/optimized/numbers.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/utf8.cc.ll
-; arrow/optimized/value_parsing.cc.ll
 ; clamav/optimized/bytecode.c.ll
 ; clamav/optimized/xlm_extract.c.ll
 ; clap-rs/optimized/48fdpr2dy8inq5cq.ll
@@ -158,11 +157,9 @@
 ; opencv/optimized/matrix_operations.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; opencv/optimized/ts_func.cpp.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; openexr/optimized/ImfDwaCompressor.cpp.ll
 ; openexr/optimized/internal_dwa.c.ll
 ; openjdk/optimized/GraphicsPrimitiveMgr.ll
-; openjdk/optimized/ad_x86.ll
 ; openjdk/optimized/c1_LinearScan.ll
 ; openjdk/optimized/compile.ll
 ; openjdk/optimized/generateOopMap.ll
@@ -231,6 +228,10 @@
 ; z3/optimized/matcher.cpp.ll
 ; z3/optimized/spacer_sem_matcher.cpp.ll
 ; z3/optimized/tbv.cpp.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/9ov4zhuctgxchiaoar4zqfrza.ll
 ; zxing/optimized/Barcode.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
@@ -241,7 +242,7 @@ entry:
   ret i1 %4
 }
 
-; 27 occurrences:
+; 26 occurrences:
 ; grpc/optimized/call.cc.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
@@ -249,7 +250,6 @@ entry:
 ; linux/optimized/build_utility.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/i915_gem_tiling.ll
-; linux/optimized/pty.ll
 ; linux/optimized/tcp_input.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/TargetLoweringObjectFileImpl.cpp.ll
@@ -278,7 +278,7 @@ entry:
   ret i1 %4
 }
 
-; 37 occurrences:
+; 43 occurrences:
 ; clamav/optimized/cabd.c.ll
 ; clamav/optimized/packlibs.c.ll
 ; cmake/optimized/archive_string.c.ll
@@ -311,13 +311,19 @@ entry:
 ; qemu/optimized/hw_scsi_scsi-disk.c.ll
 ; qemu/optimized/target_riscv_debug.c.ll
 ; sqlite/optimized/sqlite3.ll
-; velox/optimized/StringView.cpp.ll
 ; wireshark/optimized/packet-h223.c.ll
 ; wireshark/optimized/packet-mtp2.c.ll
 ; yaml-cpp/optimized/emitterutils.cpp.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, %1
   %3 = and i32 %2, 16712191
@@ -328,7 +334,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ValueTracking.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %0, %1
   %3 = and i32 %2, 832
@@ -339,7 +345,7 @@ entry:
 ; 1 occurrences:
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %0, %1
   %3 = and i32 %2, 63488

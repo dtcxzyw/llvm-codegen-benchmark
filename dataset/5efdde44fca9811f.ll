@@ -36,11 +36,10 @@ entry:
   ret double %3
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; abc/optimized/bmcBmc2.c.ll
 ; abc/optimized/bmcBmc3.c.ll
 ; abseil-cpp/optimized/bit_gen_ref_test.cc.ll
-; abseil-cpp/optimized/exponential_biased.cc.ll
 ; openjdk/optimized/threadHeapSampler.ll
 ; pcg-cpp/optimized/cppref-sample.cpp.ll
 ; Function Attrs: nounwind

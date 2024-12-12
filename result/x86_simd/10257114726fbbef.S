@@ -25,7 +25,7 @@ func0000000000000040:                   # @func0000000000000040
 	vzeroupper
 	retq
 func000000000000007c:                   # @func000000000000007c
-	vpaddd	%ymm1, %ymm2, %ymm1
+	vpaddd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpmovdb	%ymm0, %xmm0
 	vzeroupper

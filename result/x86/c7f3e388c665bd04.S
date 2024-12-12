@@ -1,11 +1,11 @@
-func000000000000000f:                   # @func000000000000000f
-	movzwl	%di, %eax
-	leal	24(%rax,%rax), %eax
-	retq
 func000000000000001f:                   # @func000000000000001f
 	movzwl	%di, %eax
 	shll	$10, %eax
 	addl	$65536, %eax                    # imm = 0x10000
+	retq
+func000000000000000f:                   # @func000000000000000f
+	movzwl	%di, %eax
+	leal	32(,%rax,8), %eax
 	retq
 func000000000000000d:                   # @func000000000000000d
 	movzwl	%di, %eax

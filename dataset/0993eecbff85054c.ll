@@ -17,7 +17,7 @@ entry:
 ; rocksdb/optimized/skiplistrep.cc.ll
 ; rocksdb/optimized/testutil.cc.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000004c(i32 %0, i64 %1) #0 {
+define i64 @func000000000000008c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = icmp slt i32 %2, 0

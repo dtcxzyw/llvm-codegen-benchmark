@@ -15,7 +15,7 @@ entry:
 ; luajit/optimized/lj_opt_mem.ll
 ; luajit/optimized/lj_opt_mem_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i16 %0, i64 %1) #0 {
+define i1 @func0000000000000101(i16 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = trunc i64 %2 to i32

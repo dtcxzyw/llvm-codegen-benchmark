@@ -9,7 +9,7 @@
 ; redis/optimized/lapi.ll
 ; velox/optimized/AsyncDataCache.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000aa(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 3
@@ -24,13 +24,13 @@ entry:
 ; opencv/optimized/erfilter.cpp.ll
 ; velox/optimized/AsyncDataCache.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000b4(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 3
   %5 = sext i32 %0 to i64
   %6 = add nsw i64 %4, %5
-  %7 = icmp ult i64 %6, 64
+  %7 = icmp samesign ult i64 %6, 64
   ret i1 %7
 }
 
@@ -40,7 +40,7 @@ entry:
 ; gromacs/optimized/colvaratoms.cpp.ll
 ; opencv/optimized/cascadedetect.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a8(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 3
@@ -55,7 +55,7 @@ entry:
 ; meshlab/optimized/mesh.cpp.ll
 ; openspiel/optimized/tarok.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a1(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 3

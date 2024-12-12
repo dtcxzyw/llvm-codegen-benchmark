@@ -1,10 +1,10 @@
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	sarq	$32, %rdx
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdi
 	cmovaq	%rdx, %rax
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	sarq	$32, %rdx
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdi

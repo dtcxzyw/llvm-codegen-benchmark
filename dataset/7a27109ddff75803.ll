@@ -22,18 +22,6 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
-; redis/optimized/arena.ll
-; redis/optimized/arena.sym.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000d(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl nuw nsw i32 %1, 2
-  %3 = sub nsw i32 %0, %2
-  %4 = freeze i32 %3
-  ret i32 %4
-}
-
 ; 1 occurrences:
 ; opencv/optimized/convolution.cpp.ll
 ; Function Attrs: nounwind

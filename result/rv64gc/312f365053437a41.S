@@ -30,3 +30,12 @@ func0000000000000003:                   # @func0000000000000003
 .LBB2_2:                                # %entry
 	ori	a0, a1, 8
 	ret
+func0000000000000029:                   # @func0000000000000029
+	andi	a0, a0, 1
+	bnez	a0, .LBB3_2
+	srli	a2, a2, 32
+	seqz	a1, a2
+	slli	a1, a1, 5
+.LBB3_2:                                # %entry
+	ori	a0, a1, 8
+	ret

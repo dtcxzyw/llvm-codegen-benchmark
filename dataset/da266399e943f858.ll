@@ -1,5 +1,5 @@
 
-; 358 occurrences:
+; 374 occurrences:
 ; abseil-cpp/optimized/bernoulli_distribution_test.cc.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
@@ -8,6 +8,23 @@
 ; assimp/optimized/IFCBoolean.cpp.ll
 ; assimp/optimized/IFCUtil.cpp.ll
 ; assimp/optimized/sweep.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; brotli/optimized/encode.c.ll
 ; casadi/optimized/bspline_interpolant.cpp.ll
 ; casadi/optimized/cvodes.c.ll
@@ -149,7 +166,6 @@
 ; meshlab/optimized/edit_referencing.cpp.ll
 ; meshlab/optimized/filter_camera.cpp.ll
 ; meshlab/optimized/filter_developability.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
@@ -250,7 +266,6 @@
 ; proj/optimized/gn_sinu.cpp.ll
 ; proj/optimized/gnom.cpp.ll
 ; proj/optimized/hatano.cpp.ll
-; proj/optimized/io.cpp.ll
 ; proj/optimized/isea.cpp.ll
 ; proj/optimized/labrd.cpp.ll
 ; proj/optimized/lcca.cpp.ll
@@ -300,6 +315,7 @@
 ; quantlib/optimized/fftvariancegammaengine.ll
 ; quantlib/optimized/garch.ll
 ; quantlib/optimized/gaussian1dcapfloorengine.ll
+; quantlib/optimized/gaussian1dmodel.ll
 ; quantlib/optimized/gaussian1dnonstandardswaptionengine.ll
 ; quantlib/optimized/gaussiannoncentralchisquaredpolynomial.ll
 ; quantlib/optimized/gausslobattointegral.ll

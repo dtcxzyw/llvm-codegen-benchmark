@@ -7,7 +7,7 @@ func0000000000000003:                   // @func0000000000000003
 	movk	x8, #62509, lsl #32
 	movk	x8, #22609, lsl #48
 	mul	x8, x9, x8
-	eor	x0, x8, x0
+	eor	x0, x0, x8
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
@@ -23,6 +23,6 @@ func0000000000000007:                   // @func0000000000000007
 	movk	x9, #22609, lsl #48
 	eor	x8, x2, x8
 	mul	x8, x8, x9
-	eor	x0, x8, x0
+	eor	x0, x0, x8
 	ret
                                         // -- End function

@@ -6,7 +6,7 @@
 define i32 @func000000000000006e(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = zext i8 %1 to i32
   %6 = or disjoint i32 %4, %5
   %7 = mul nuw i32 %6, 12
@@ -19,7 +19,7 @@ entry:
 define i32 @func000000000000006f(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 16
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = zext i8 %1 to i32
   %6 = or disjoint i32 %4, %5
   %7 = mul nuw nsw i32 %6, 37
@@ -36,7 +36,7 @@ entry:
 define i32 @func000000000000006c(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = zext i8 %1 to i32
   %6 = or disjoint i32 %4, %5
   %7 = mul i32 %6, 1000

@@ -2,17 +2,18 @@
 ; 1 occurrences:
 ; qemu/optimized/block_vhdx-log.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c68(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000018d8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %4, %1
+  %5 = add nuw nsw i32 %1, %4
   %6 = lshr i32 %0, 12
-  %7 = icmp ugt i32 %6, %5
+  %7 = icmp samesign ugt i32 %6, %5
   ret i1 %7
 }
 
-; 169 occurrences:
+; 170 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -183,11 +184,11 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c04(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000001804(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 2
   %4 = zext i1 %3 to i32
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = lshr i32 %0, 1
   %7 = icmp ult i32 %6, %5
   ret i1 %7
@@ -196,26 +197,26 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/fretTime.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000164(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002d4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 7
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %4, %1
+  %5 = add nuw nsw i32 %1, %4
   %6 = lshr i32 %0, 12
-  %7 = icmp ult i32 %6, %5
+  %7 = icmp samesign ult i32 %6, %5
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; abc/optimized/fretTime.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000168(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002d8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 7
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %4, %1
+  %5 = add nuw nsw i32 %1, %4
   %6 = lshr i32 %0, 12
-  %7 = icmp ugt i32 %6, %5
+  %7 = icmp samesign ugt i32 %6, %5
   ret i1 %7
 }
 
@@ -223,13 +224,13 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c64(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000018d4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %4, %1
+  %5 = add nuw nsw i32 %1, %4
   %6 = lshr i32 %0, 5
-  %7 = icmp ult i32 %6, %5
+  %7 = icmp samesign ult i32 %6, %5
   ret i1 %7
 }
 

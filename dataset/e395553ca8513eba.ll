@@ -1,5 +1,6 @@
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/xml_grammar.ll
 ; darktable/optimized/OlympusDecompressor.cpp.ll
 ; velox/optimized/CastExpr.cpp.ll
 ; Function Attrs: nounwind
@@ -19,7 +20,7 @@ define i32 @func000000000000000d(i32 %0, i8 %1) #0 {
 entry:
   %2 = xor i8 %1, -1
   %.neg = sext i8 %2 to i32
-  %3 = add i32 %.neg, %0
+  %3 = add i32 %0, %.neg
   ret i32 %3
 }
 

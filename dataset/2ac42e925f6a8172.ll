@@ -1,8 +1,7 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; linux/optimized/agg-rx.ll
 ; linux/optimized/ds.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/phy-c45.ll
 ; linux/optimized/phy_device.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
@@ -14,7 +13,7 @@ entry:
   %3 = lshr i64 %2, 16
   %4 = trunc i64 %3 to i16
   %5 = and i16 %4, 255
-  %6 = or disjoint i16 %5, %1
+  %6 = or disjoint i16 %1, %5
   %7 = or disjoint i16 %6, %0
   ret i16 %7
 }
@@ -51,7 +50,7 @@ entry:
   %3 = lshr i64 %2, 49
   %4 = trunc nuw nsw i64 %3 to i16
   %5 = and i16 %4, 1
-  %6 = or disjoint i16 %5, %1
+  %6 = or disjoint i16 %1, %5
   %7 = or disjoint i16 %6, %0
   ret i16 %7
 }

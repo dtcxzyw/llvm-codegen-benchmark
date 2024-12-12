@@ -1,6 +1,5 @@
 
-; 8 occurrences:
-; libquic/optimized/cmp.c.ll
+; 7 occurrences:
 ; openssl/optimized/libcrypto-lib-bn_lib.ll
 ; openssl/optimized/libcrypto-lib-decoder_pkey.ll
 ; openssl/optimized/libcrypto-shlib-bn_lib.ll

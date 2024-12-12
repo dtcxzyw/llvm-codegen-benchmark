@@ -1,5 +1,5 @@
 
-; 41 occurrences:
+; 57 occurrences:
 ; abseil-cpp/optimized/bernoulli_distribution_test.cc.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/charconv_test.cc.ll
@@ -31,6 +31,21 @@
 ; abseil-cpp/optimized/uniform_helper_test.cc.ll
 ; abseil-cpp/optimized/uniform_real_distribution_test.cc.ll
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/partition.ll
+; boost/optimized/rational.ll
 ; entt/optimized/any.cpp.ll
 ; entt/optimized/handle.cpp.ll
 ; entt/optimized/meta_any.cpp.ll
@@ -40,6 +55,7 @@
 ; entt/optimized/meta_prop.cpp.ll
 ; entt/optimized/meta_type.cpp.ll
 ; entt/optimized/registry.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; nuklear/optimized/unity.c.ll
 ; Function Attrs: nounwind
 define double @func0000000000000002(double %0, double %1) #0 {

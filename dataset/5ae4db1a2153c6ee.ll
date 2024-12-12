@@ -14,9 +14,13 @@ entry:
   ret i32 %2
 }
 
-; 4 occurrences:
+; 8 occurrences:
 ; llvm/optimized/AArch64LegalizerInfo.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; mitsuba3/optimized/roughplastic.cpp.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; Function Attrs: nounwind
@@ -27,7 +31,8 @@ entry:
   ret i32 %2
 }
 
-; 31 occurrences:
+; 32 occurrences:
+; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; cpython/optimized/dictobject.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; linux/optimized/xfrm_output.ll

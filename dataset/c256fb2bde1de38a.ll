@@ -1,6 +1,7 @@
 
-; 22 occurrences:
+; 23 occurrences:
 ; abc/optimized/cnfCut.c.ll
+; boost/optimized/test_codecvt.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; linux/optimized/i9xx_wm.ll
@@ -30,7 +31,8 @@ entry:
   ret i16 %3
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/test_codecvt.ll
 ; freetype/optimized/sfnt.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
@@ -44,7 +46,7 @@ entry:
   ret i16 %3
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; harfbuzz/optimized/gsubgpos-context.cc.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-static.cc.ll
@@ -57,6 +59,7 @@ entry:
 ; linux/optimized/hdac_device.ll
 ; luajit/optimized/lj_crecord.ll
 ; luajit/optimized/lj_crecord_dyn.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; wireshark/optimized/packet-ospf.c.ll
@@ -64,7 +67,7 @@ entry:
 define i16 @func0000000000000003(i1 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i32 %1 to i16
-  %3 = select i1 %0, i16 24, i16 %2
+  %3 = select i1 %0, i16 0, i16 %2
   ret i16 %3
 }
 

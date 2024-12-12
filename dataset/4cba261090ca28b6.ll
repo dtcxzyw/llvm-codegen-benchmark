@@ -1,5 +1,6 @@
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/copy_segment_point.ll
 ; lua/optimized/lvm.ll
 ; pbrt-v4/optimized/samplers.cpp.ll
 ; quickjs/optimized/libbf.ll

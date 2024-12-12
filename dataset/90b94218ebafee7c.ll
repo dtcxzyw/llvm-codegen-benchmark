@@ -1,19 +1,17 @@
 
-%"class.std::__cxx11::basic_string.2647001" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2647020", i64, %union.anon.2647021 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2647020" = type { ptr }
-%union.anon.2647021 = type { i64, [8 x i8] }
-%struct.page.3364053 = type { i64, %union.anon.3364054, %union.anon.6.3364055, %struct.atomic_t.3364041, [8 x i8] }
-%union.anon.3364054 = type { %struct.anon.3364056 }
-%struct.anon.3364056 = type { %union.anon.0.3364057, ptr, %union.anon.2.3364058, i64 }
-%union.anon.0.3364057 = type { %struct.list_head.3364035 }
-%struct.list_head.3364035 = type { ptr, ptr }
-%union.anon.2.3364058 = type { i64 }
-%union.anon.6.3364055 = type { %struct.atomic_t.3364041 }
-%struct.atomic_t.3364041 = type { i32 }
+%"class.std::__cxx11::basic_string.2760304" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2760323", i64, %union.anon.2760324 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2760323" = type { ptr }
+%union.anon.2760324 = type { i64, [8 x i8] }
+%struct.page.3550387 = type { i64, %union.anon.3550388, %union.anon.6.3550389, %struct.atomic_t.3550375, [8 x i8] }
+%union.anon.3550388 = type { %struct.anon.3550390 }
+%struct.anon.3550390 = type { %union.anon.0.3550391, ptr, %union.anon.2.3550392, i64 }
+%union.anon.0.3550391 = type { %struct.list_head.3550369 }
+%struct.list_head.3550369 = type { ptr, ptr }
+%union.anon.2.3550392 = type { i64 }
+%union.anon.6.3550389 = type { %struct.atomic_t.3550375 }
+%struct.atomic_t.3550375 = type { i32 }
 
-; 25 occurrences:
-; brotli/optimized/backward_references_hq.c.ll
-; cmake/optimized/zstd_compress.c.ll
+; 17 occurrences:
 ; eastl/optimized/BenchmarkString.cpp.ll
 ; eastl/optimized/TestFixedString.cpp.ll
 ; folly/optimized/EventBaseBackendBase.cpp.ll
@@ -21,9 +19,6 @@
 ; hyperscan/optimized/stream_compress.c.ll
 ; libquic/optimized/asn1_lib.c.ll
 ; lightgbm/optimized/metric.cpp.ll
-; llvm/optimized/VarLocBasedImpl.cpp.ll
-; llvm/optimized/WasmObjectFile.cpp.ll
-; lz4/optimized/lz4hc.c.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
 ; mitsuba3/optimized/zone.cpp.ll
@@ -32,11 +27,8 @@
 ; openjdk/optimized/os_posix.ll
 ; openjdk/optimized/perfData.ll
 ; openjdk/optimized/stackOverflow.ll
-; pybind11/optimized/test_stl_binders.cpp.ll
 ; redis/optimized/lua_struct.ll
-; sentencepiece/optimized/unigram_model.cc.ll
 ; wasmtime-rs/optimized/3r0osxvwe4cd326n.ll
-; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -46,8 +38,7 @@ entry:
   ret i64 %5
 }
 
-; 34 occurrences:
-; clamav/optimized/pdfng.c.ll
+; 33 occurrences:
 ; cmake/optimized/archive_write_set_format_pax.c.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestSort.cpp.ll
@@ -84,18 +75,50 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"class.std::__cxx11::basic_string.2647001", ptr %0, i64 %1
-  %4 = getelementptr %"class.std::__cxx11::basic_string.2647001", ptr %3, i64 %2
+  %3 = getelementptr %"class.std::__cxx11::basic_string.2760304", ptr %0, i64 %1
+  %4 = getelementptr %"class.std::__cxx11::basic_string.2760304", ptr %3, i64 %2
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }
 
-; 3 occurrences:
-; vcpkg/optimized/export.prefab.cpp.ll
+; 7 occurrences:
+; boost/optimized/url_base.ll
+; cmake/optimized/zstd_compress.c.ll
+; llvm/optimized/VarLocBasedImpl.cpp.ll
+; llvm/optimized/WasmObjectFile.cpp.ll
+; pybind11/optimized/test_stl_binders.cpp.ll
+; sentencepiece/optimized/unigram_model.cc.ll
+; zstd/optimized/zstd_compress.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr i8, ptr %0, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 %2
+  %5 = ptrtoint ptr %4 to i64
+  ret i64 %5
+}
+
+; 6 occurrences:
+; clamav/optimized/pdfng.c.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; hyperscan/optimized/limex_compile.cpp.ll
+; hyperscan/optimized/stream_compress.c.ll
+; luajit/optimized/lj_parse.ll
+; luajit/optimized/lj_parse_dyn.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr i8, ptr %0, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 %2
+  %5 = ptrtoint ptr %4 to i64
+  ret i64 %5
+}
+
+; 2 occurrences:
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
+define i64 @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %0, i64 %1
   %4 = getelementptr i8, ptr %3, i64 %2
@@ -108,23 +131,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.page.3364053, ptr %0, i64 %1
-  %4 = getelementptr %struct.page.3364053, ptr %3, i64 %2
-  %5 = ptrtoint ptr %4 to i64
-  ret i64 %5
-}
-
-; 5 occurrences:
-; harfbuzz/optimized/hb-subset.cc.ll
-; hyperscan/optimized/limex_compile.cpp.ll
-; hyperscan/optimized/stream_compress.c.ll
-; luajit/optimized/lj_parse.ll
-; luajit/optimized/lj_parse_dyn.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = getelementptr i8, ptr %0, i64 %1
-  %4 = getelementptr i8, ptr %3, i64 %2
+  %3 = getelementptr %struct.page.3550387, ptr %0, i64 %1
+  %4 = getelementptr %struct.page.3550387, ptr %3, i64 %2
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }

@@ -1,8 +1,9 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; gromacs/optimized/poscalc.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; linux/optimized/libata-eh.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; openjdk/optimized/hb-ot-shape.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {

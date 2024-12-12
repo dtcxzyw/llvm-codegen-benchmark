@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	cmpb	$-57, %dl
 	sete	%al
 	orb	%sil, %al
@@ -6,12 +6,12 @@ func000000000000000a:                   # @func000000000000000a
 	andl	$1, %eax
 	leaq	1(%rax,%rdi), %rax
 	retq
-func000000000000000b:                   # @func000000000000000b
-	andl	$1, %esi
-	shll	$6, %esi
-	leaq	88(%rsi), %rcx
-	cmpb	$17, %dl
-	movl	$152, %eax
+func0000000000000008:                   # @func0000000000000008
+	cmpb	$1, %dl
+	movl	$108, %ecx
+	movl	$88, %eax
+	cmoveq	%rcx, %rax
+	testb	$1, %sil
 	cmovneq	%rcx, %rax
 	addq	%rdi, %rax
 	retq

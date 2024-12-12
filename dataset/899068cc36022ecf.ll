@@ -1,6 +1,7 @@
 
-; 75 occurrences:
+; 72 occurrences:
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/options_description.ll
 ; csmith/optimized/FunctionInvocationUser.cpp.ll
 ; cvc5/optimized/query_generator_sample_sat.cpp.ll
 ; cvc5/optimized/regexp_elim.cpp.ll
@@ -25,8 +26,6 @@
 ; nix/optimized/lockfile.ll
 ; nix/optimized/nar-accessor.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-env.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/profile.ll
@@ -70,13 +69,11 @@
 ; ozz-animation/optimized/track_optimizer.cc.ll
 ; pocketpy/optimized/vm.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; pybind11/optimized/pybind11_cross_module_tests.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0) #0 {
+define i64 @func0000000000000028(i64 %0) #0 {
 entry:
   %1 = add nsw i64 %0, -1
   %2 = and i64 %1, -9223372036854775745
@@ -104,28 +101,27 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
-; abc/optimized/nmApi.c.ll
-; eastl/optimized/TestBitVector.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000001(i64 %0) #0 {
-entry:
-  %1 = add i64 %0, 4294967296
-  %2 = and i64 %1, 30064771072
-  %3 = icmp eq i64 %2, 0
-  %4 = select i1 %3, i64 0, i64 8
-  ret i64 %4
-}
-
 ; 1 occurrences:
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0) #0 {
+define i64 @func0000000000000021(i64 %0) #0 {
 entry:
   %1 = add nsw i64 %0, -4
   %2 = and i64 %1, -5
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 4, i64 3
+  ret i64 %4
+}
+
+; 1 occurrences:
+; eastl/optimized/TestBitVector.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i64 %0) #0 {
+entry:
+  %1 = sub i64 0, %0
+  %2 = and i64 %1, 63
+  %3 = icmp eq i64 %2, 0
+  %4 = select i1 %3, i64 -8, i64 0
   ret i64 %4
 }
 

@@ -4,7 +4,7 @@ func0000000000000002:                   # @func0000000000000002
 	sete	%al
 	orb	%dil, %al
 	retq
-func00000000000000b4:                   # @func00000000000000b4
+func0000000000000154:                   # @func0000000000000154
 	leal	-1(%rdx,%rsi), %eax
 	cmpl	$7, %eax
 	setge	%al
@@ -28,19 +28,19 @@ func000000000000000c:                   # @func000000000000000c
 	sets	%al
 	orb	%dil, %al
 	retq
-func00000000000000a8:                   # @func00000000000000a8
+func0000000000000148:                   # @func0000000000000148
 	leal	-64(%rdx,%rsi), %eax
 	cmpl	$8, %eax
 	setb	%al
 	orb	%dil, %al
 	retq
-func0000000000000082:                   # @func0000000000000082
+func0000000000000102:                   # @func0000000000000102
 	addl	%edx, %esi
 	cmpl	$16418, %esi                    # imm = 0x4022
 	sete	%al
 	orb	%dil, %al
 	retq
-func00000000000000b0:                   # @func00000000000000b0
+func0000000000000150:                   # @func0000000000000150
 	leal	-1(%rdx,%rsi), %eax
 	cmpl	$33, %eax
 	setae	%al

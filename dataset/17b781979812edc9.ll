@@ -70,13 +70,13 @@
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i64 %1, i8 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 8
   %5 = or disjoint i64 %4, %1
-  %6 = getelementptr nusw i8, ptr %0, i64 2
-  %7 = getelementptr nusw i8, ptr %6, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 2
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %5
   ret ptr %7
 }
 
@@ -88,25 +88,25 @@ entry:
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000072(ptr %0, i64 %1, i8 %2) #0 {
+define ptr @func0000000000000073(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 8
   %5 = or disjoint i64 %4, %1
   %6 = getelementptr i8, ptr %0, i64 2
-  %7 = getelementptr nusw i8, ptr %6, i64 %5
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %5
   ret ptr %7
 }
 
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000078(ptr %0, i64 %1, i8 %2) #0 {
+define ptr @func000000000000007c(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 8
   %5 = or disjoint i64 %4, %1
-  %6 = getelementptr nusw i8, ptr %0, i64 18
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 18
   %7 = getelementptr i8, ptr %6, i64 %5
   ret ptr %7
 }

@@ -1,6 +1,7 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; llvm/optimized/APINotesYAMLCompiler.cpp.ll
+; lvgl/optimized/lv_image.ll
 ; minetest/optimized/mapnode.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000007(i8 %0, i16 %1) #0 {
@@ -30,17 +31,6 @@ define i8 @func0000000000000006(i8 %0, i16 %1) #0 {
 entry:
   %2 = trunc nuw nsw i16 %1 to i8
   %3 = and i8 %0, 1
-  %4 = or i8 %3, %2
-  ret i8 %4
-}
-
-; 1 occurrences:
-; linux/optimized/isadma.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000000(i8 %0, i16 %1) #0 {
-entry:
-  %2 = trunc i16 %1 to i8
-  %3 = and i8 %0, 3
   %4 = or i8 %3, %2
   ret i8 %4
 }

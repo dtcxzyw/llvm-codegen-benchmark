@@ -1,8 +1,9 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; hermes/optimized/DataView.cpp.ll
 ; hermes/optimized/TypedArray.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; miniaudio/optimized/unity.c.ll
 ; openmpi/optimized/tm_tree.ll
 ; openspiel/optimized/tabular_q_learning_test.cc.ll

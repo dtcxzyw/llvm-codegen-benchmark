@@ -1,5 +1,5 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; llvm/optimized/RISCVTargetStreamer.cpp.ll
 ; llvm/optimized/SemaAPINotes.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
@@ -7,6 +7,7 @@
 ; re2/optimized/compile.cc.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
+; spike/optimized/triggers.ll
 ; yosys/optimized/eval.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, i64 %1) #0 {

@@ -1,4 +1,4 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	incq	%rdi
 	cmpq	%rsi, %rdi
 	sete	%al
@@ -8,7 +8,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	%rsi, %rdi
 	setb	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	incq	%rdi
 	cmpq	%rsi, %rdi
 	sete	%al
@@ -18,7 +18,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	%rsi, %rdi
 	seta	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	decq	%rdi
 	cmpq	%rsi, %rdi
 	setb	%al
@@ -33,12 +33,12 @@ func0000000000000009:                   # @func0000000000000009
 	cmpq	%rsi, %rdi
 	setae	%al
 	retq
-func0000000000000039:                   # @func0000000000000039
+func0000000000000069:                   # @func0000000000000069
 	addq	$4, %rdi
 	cmpq	%rsi, %rdi
 	setae	%al
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	incq	%rdi
 	cmpq	%rsi, %rdi
 	setb	%al
@@ -48,22 +48,22 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	incq	%rdi
 	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	incq	%rdi
 	cmpq	%rsi, %rdi
 	setl	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	addq	$16, %rdi
 	cmpq	%rsi, %rdi
 	setl	%al
 	retq
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	incq	%rdi
 	cmpq	%rsi, %rdi
 	setne	%al

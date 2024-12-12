@@ -13,7 +13,7 @@
 ; ruby/optimized/regexec.ll
 ; ruby/optimized/regparse.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000008c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65536
   %4 = icmp ne i32 %3, 0
@@ -36,7 +36,7 @@ entry:
 ; postgres/optimized/formatting.ll
 ; ruby/optimized/io.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1048576
   %4 = icmp eq i32 %3, 0
@@ -45,7 +45,8 @@ entry:
   ret i1 %6
 }
 
-; 9 occurrences:
+; 10 occurrences:
+; boost/optimized/matches_relation_factory.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
 ; folly/optimized/Uri.cpp.ll
@@ -56,7 +57,7 @@ entry:
 ; ruby/optimized/regexec.ll
 ; velox/optimized/URLFunctions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000002c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 32
   %4 = icmp ne i32 %3, 0
@@ -65,14 +66,15 @@ entry:
   ret i1 %6
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; php/optimized/pcre2_match.ll
 ; z3/optimized/nex_creator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000018c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 8192
   %4 = icmp ne i32 %3, 0
@@ -85,7 +87,7 @@ entry:
 ; php/optimized/pcre2_dfa_match.ll
 ; php/optimized/pcre2_match.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000010c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 128
   %4 = icmp ne i32 %3, 0
@@ -100,7 +102,7 @@ entry:
 ; linux/optimized/neighbour.ll
 ; tev/optimized/Common.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000181(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2
   %4 = icmp eq i32 %3, 0
@@ -112,7 +114,7 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/json_parser.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000a1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1024
   %4 = icmp eq i32 %3, 0
@@ -124,7 +126,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/lzwdec.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000101(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = icmp eq i32 %3, 0
@@ -140,7 +142,7 @@ entry:
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000081(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2
   %4 = icmp eq i32 %3, 0
@@ -152,7 +154,7 @@ entry:
 ; 1 occurrences:
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000ac(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 16
   %4 = icmp ne i32 %3, 0

@@ -1,5 +1,7 @@
 
-; 24 occurrences:
+; 25 occurrences:
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; faiss/optimized/IndexIVFSpectralHash.cpp.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/EDFThreadPoolExecutor.cpp.ll
@@ -19,13 +21,12 @@
 ; llvm/optimized/ParseOpenMP.cpp.ll
 ; llvm/optimized/PassBuilderPipelines.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/StandardInstrumentations.cpp.ll
 ; openjdk/optimized/JPLISAgent.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000044(i32 %0) #0 {
+define i8 @func0000000000000084(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 10
   %2 = icmp eq i32 %0, 7

@@ -13,9 +13,8 @@ entry:
   ret ptr %7
 }
 
-; 79 occurrences:
+; 78 occurrences:
 ; abc/optimized/kitCloud.c.ll
-; abc/optimized/lpkMan.c.ll
 ; abc/optimized/wlnRetime.c.ll
 ; bullet3/optimized/btMultiBody.ll
 ; faiss/optimized/pq4_fast_scan_search_qbs.cpp.ll
@@ -119,32 +118,13 @@ entry:
   ret ptr %7
 }
 
-; 3 occurrences:
-; ncnn/optimized/gemm_x86_avx.cpp.ll
-; ncnn/optimized/gemm_x86_avx512.cpp.ll
-; ncnn/optimized/gemm_x86_fma.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000010(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = shl nsw i32 %2, 3
-  %4 = sext i32 %3 to i64
-  %5 = sext i32 %1 to i64
-  %6 = getelementptr float, ptr %0, i64 %5
-  %7 = getelementptr float, ptr %6, i64 %4
-  ret ptr %7
-}
-
-; 13 occurrences:
+; 9 occurrences:
 ; gromacs/optimized/dlaebz.cpp.ll
 ; gromacs/optimized/gmx_arpack.cpp.ll
 ; gromacs/optimized/slaebz.cpp.ll
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
-; meshlab/optimized/solver.cpp.ll
 ; openblas/optimized/dlaebz.c.ll
 ; openblas/optimized/dlag2.c.ll
 ; openblas/optimized/dlaln2.c.ll
-; openblas/optimized/dorcsd.c.ll
 ; openblas/optimized/dorcsd2by1.c.ll
 ; openblas/optimized/dorgbr.c.ll
 ; opencv/optimized/stereosgbm.cpp.ll

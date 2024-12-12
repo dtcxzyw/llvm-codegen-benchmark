@@ -1,12 +1,11 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; abc/optimized/utilSort.c.ll
 ; gromacs/optimized/dispersioncorrection.cpp.ll
 ; ncnn/optimized/gemm_x86.cpp.ll
 ; ncnn/optimized/gemm_x86_avx.cpp.ll
 ; ncnn/optimized/gemm_x86_avx512.cpp.ll
 ; ncnn/optimized/gemm_x86_fma.cpp.ll
-; opencv/optimized/hough.cpp.ll
 ; recastnavigation/optimized/RecastContour.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i1 %0, i32 %1, i32 %2) #0 {

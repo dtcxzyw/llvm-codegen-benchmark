@@ -12,5 +12,5 @@ func0000000000000001:                   # @func0000000000000001
 	vmacc.vx	v10, a0, v12
 	li	a0, 31
 	vadd.vx	v10, v10, a0
-	vmseq.vv	v0, v10, v8
+	vmseq.vv	v0, v8, v10
 	ret

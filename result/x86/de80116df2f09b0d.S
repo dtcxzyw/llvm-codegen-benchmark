@@ -50,6 +50,10 @@ func0000000000000009:                   # @func0000000000000009
 	movq	%rdi, %rax
 	subl	%esi, %eax
 	retq
+func0000000000000005:                   # @func0000000000000005
+	movq	%rdi, %rax
+	subl	%esi, %eax
+	retq
 func0000000000000004:                   # @func0000000000000004
 	movq	%rdi, %rax
 	subl	%esi, %eax
@@ -59,10 +63,6 @@ func000000000000000c:                   # @func000000000000000c
 	subl	%esi, %eax
 	retq
 func0000000000000003:                   # @func0000000000000003
-	movq	%rdi, %rax
-	subl	%esi, %eax
-	retq
-func000000000000000b:                   # @func000000000000000b
 	movq	%rdi, %rax
 	subl	%esi, %eax
 	retq
@@ -83,10 +83,6 @@ func0000000000000035:                   # @func0000000000000035
 	subl	%esi, %eax
 	retq
 func0000000000000011:                   # @func0000000000000011
-	movq	%rdi, %rax
-	subl	%esi, %eax
-	retq
-func0000000000000005:                   # @func0000000000000005
 	movq	%rdi, %rax
 	subl	%esi, %eax
 	retq

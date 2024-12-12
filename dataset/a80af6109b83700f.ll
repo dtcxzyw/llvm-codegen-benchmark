@@ -17,11 +17,12 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 
-; 4 occurrences:
+; 5 occurrences:
 ; abseil-cpp/optimized/str_cat_test.cc.ll
 ; darktable/optimized/ColorFilterArray.cpp.ll
 ; darktable/optimized/DeflateDecompressor.cpp.ll
 ; darktable/optimized/RawDecoder.cpp.ll
+; zed-rs/optimized/avfqkgc3wosoc0eacq6zrtrq5.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0) #0 {
 entry:
@@ -31,10 +32,11 @@ entry:
   ret i64 %3
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; darktable/optimized/ColorFilterArray.cpp.ll
 ; darktable/optimized/DeflateDecompressor.cpp.ll
 ; darktable/optimized/RawDecoder.cpp.ll
+; zed-rs/optimized/avfqkgc3wosoc0eacq6zrtrq5.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0) #0 {
 entry:

@@ -1,31 +1,36 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	cmge	v0.16b, v0.16b, #0
+	ubfx	w8, w0, #7, #1
+	eor	w0, w8, #0x1
 	ret
                                         // -- End function
-func000000000000001a:                   // @func000000000000001a
+func000000000000002a:                   // @func000000000000002a
 // %bb.0:                               // %entry
-	cmgt	v0.16b, v0.16b, #0
+	sxtb	w8, w0
+	cmp	w8, #0
+	cset	w0, gt
 	ret
                                         // -- End function
-func0000000000000016:                   // @func0000000000000016
+func0000000000000026:                   // @func0000000000000026
 // %bb.0:                               // %entry
-	cmlt	v0.16b, v0.16b, #0
+	ubfx	w0, w0, #7, #1
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	cmlt	v0.16b, v0.16b, #0
+	ubfx	w0, w0, #7, #1
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	cmge	v0.16b, v0.16b, #0
+	ubfx	w8, w0, #7, #1
+	eor	w0, w8, #0x1
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	movi	v1.16b, #95
-	cmhi	v0.16b, v0.16b, v1.16b
+	and	w8, w0, #0xff
+	cmp	w8, #95
+	cset	w0, hi
 	ret
                                         // -- End function

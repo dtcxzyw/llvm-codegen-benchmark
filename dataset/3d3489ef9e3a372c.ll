@@ -11,9 +11,8 @@ entry:
   ret i64 %5
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; abc/optimized/cuddTable.c.ll
-; assimp/optimized/IFCGeometry.cpp.ll
 ; lz4/optimized/lz4frame.c.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
@@ -144,7 +143,7 @@ entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw nsw i64 %2, 3
   %4 = add nuw nsw i64 %3, 8
-  %5 = mul nuw nsw i64 %4, %0
+  %5 = mul nuw nsw i64 %0, %4
   ret i64 %5
 }
 

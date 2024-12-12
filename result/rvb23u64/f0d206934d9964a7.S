@@ -26,9 +26,11 @@ func000000000000001c:                   # @func000000000000001c
 	and	a0, a0, a1
 	ret
 func000000000000001e:                   # @func000000000000001e
-	sh1add	a1, a0, a0
-	sh2add	a0, a1, a0
-	addi	a0, a0, 88
-	srli	a0, a0, 3
-	andi	a0, a0, 504
+	lui	a1, 105
+	addiw	a1, a1, -583
+	mul	a0, a0, a1
+	addi	a0, a0, 1
+	srli	a0, a0, 31
+	srliw	a0, a0, 1
+	slli	a0, a0, 1
 	ret

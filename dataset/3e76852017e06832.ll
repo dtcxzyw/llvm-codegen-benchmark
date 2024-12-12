@@ -1,8 +1,6 @@
 
-; 11 occurrences:
-; gromacs/optimized/slasq5.cpp.ll
+; 9 occurrences:
 ; linux/optimized/coredump.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dlarrd.c.ll
 ; openblas/optimized/dorcsd2by1.c.ll
 ; openblas/optimized/dsbgst.c.ll
@@ -74,7 +72,7 @@ define i64 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = add nsw i32 %3, 4
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = sext i32 %5 to i64
   ret i64 %6
 }
@@ -91,13 +89,12 @@ entry:
   ret i64 %6
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; openblas/optimized/dlaror.c.ll
-; openblas/optimized/dlasq6.c.ll
 ; openblas/optimized/dpbtrf.c.ll
 ; redis/optimized/db.ll
 ; Function Attrs: nounwind

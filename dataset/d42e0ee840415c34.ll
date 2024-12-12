@@ -1,5 +1,7 @@
 
-%class.btRotationalLimitMotor2.2706150 = type { float, float, float, float, float, float, float, i8, float, float, i8, float, i8, float, i8, float, i8, float, float, float, float, i32 }
+%class.btRotationalLimitMotor2.2818864 = type { float, float, float, float, float, float, float, i8, float, float, i8, float, i8, float, i8, float, i8, float, float, float, float, i32 }
+%"class.vcg::TexCoord2.3838464" = type <{ [1 x %"class.vcg::Point2.126.3838465"], [1 x i16], [2 x i8] }>
+%"class.vcg::Point2.126.3838465" = type { [2 x float] }
 
 ; 55 occurrences:
 ; bullet3/optimized/btGeneric6DofSpring2Constraint.ll
@@ -7,7 +9,6 @@
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
@@ -18,6 +19,7 @@
 ; meshlab/optimized/mlsplugin.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
+; openusd/optimized/loopPatchBuilder.cpp.ll
 ; proj/optimized/chamb.cpp.ll
 ; taskflow/optimized/async.cpp.ll
 ; taskflow/optimized/attach_data.cpp.ll
@@ -58,11 +60,22 @@
 ; taskflow/optimized/visualization.cpp.ll
 ; taskflow/optimized/while_loop.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 2
   %4 = select i1 %3, i64 0, i64 %1
-  %5 = getelementptr [3 x %class.btRotationalLimitMotor2.2706150], ptr %0, i64 0, i64 %4, i32 21
+  %5 = getelementptr nuw [3 x %class.btRotationalLimitMotor2.2818864], ptr %0, i64 0, i64 %4, i32 21
+  ret ptr %5
+}
+
+; 1 occurrences:
+; meshlab/optimized/quadric_simp.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp eq i64 %2, 0
+  %4 = select i1 %3, i64 2, i64 %1
+  %5 = getelementptr [3 x %"class.vcg::TexCoord2.3838464"], ptr %0, i64 0, i64 %4, i32 0, i64 0, i32 0, i64 1
   ret ptr %5
 }
 

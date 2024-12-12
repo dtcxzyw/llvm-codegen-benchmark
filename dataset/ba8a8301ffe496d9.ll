@@ -1,6 +1,19 @@
 
-; 73 occurrences:
+; 2 occurrences:
 ; git/optimized/wildmatch.ll
+; php/optimized/zend_execute.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000c(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 24
+  %3 = ptrtoint ptr %2 to i64
+  %4 = xor i64 %3, -1
+  %5 = add i64 %0, %4
+  %6 = and i64 %5, -8
+  ret i64 %6
+}
+
+; 71 occurrences:
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -72,15 +85,14 @@
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
-; php/optimized/zend_execute.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 24
+  %2 = getelementptr nusw i8, ptr %1, i64 -1
   %3 = ptrtoint ptr %2 to i64
   %4 = xor i64 %3, -1
-  %5 = add i64 %4, %0
-  %6 = and i64 %5, -8
+  %5 = add i64 %0, %4
+  %6 = and i64 %5, 4294967295
   ret i64 %6
 }
 
@@ -92,7 +104,7 @@ entry:
   %2 = getelementptr i8, ptr %1, i64 8
   %3 = ptrtoint ptr %2 to i64
   %4 = xor i64 %3, -1
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = and i64 %5, -8
   ret i64 %6
 }

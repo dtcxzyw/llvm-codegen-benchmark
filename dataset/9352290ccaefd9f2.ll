@@ -13,7 +13,7 @@ entry:
   ret i64 %7
 }
 
-; 174 occurrences:
+; 173 occurrences:
 ; llvm/optimized/AArch64Arm64ECCallLowering.cpp.ll
 ; llvm/optimized/AArch64CallLowering.cpp.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
@@ -145,7 +145,6 @@ entry:
 ; llvm/optimized/OMPIRBuilder.cpp.ll
 ; llvm/optimized/Operator.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetObjectFile.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
@@ -195,7 +194,7 @@ entry:
   %4 = add nuw i64 %3, %1
   %5 = sub i64 0, %1
   %6 = and i64 %4, %5
-  %7 = mul i64 %6, %0
+  %7 = mul i64 %0, %6
   ret i64 %7
 }
 

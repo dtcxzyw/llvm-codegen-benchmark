@@ -1,9 +1,8 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; hdf5/optimized/H5Ztrans.c.ll
 ; libwebp/optimized/picture_psnr_enc.c.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; opencv/optimized/bgfg_gmg.cpp.ll
 ; opencv/optimized/box_filter.dispatch.cpp.ll
 ; opencv/optimized/deriche_filter.cpp.ll

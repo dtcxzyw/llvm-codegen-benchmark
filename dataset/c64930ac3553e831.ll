@@ -1,6 +1,7 @@
 
-; 35 occurrences:
+; 36 occurrences:
 ; darktable/optimized/introspection_clahe.c.ll
+; darktable/optimized/introspection_colorequal.c.ll
 ; darktable/optimized/introspection_graduatednd.c.ll
 ; darktable/optimized/introspection_retouch.c.ll
 ; darktable/optimized/introspection_tonecurve.c.ll
@@ -39,7 +40,7 @@
 define float @func0000000000000000(float %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to float
-  %3 = fmul float %2, %0
+  %3 = fmul float %0, %2
   %4 = fadd float %3, 5.000000e-01
   ret float %4
 }

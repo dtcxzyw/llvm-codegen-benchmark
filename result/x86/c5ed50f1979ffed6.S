@@ -29,7 +29,7 @@ func000000000000001b:                   # @func000000000000001b
 	addl	%edi, %eax
 	retq
 func0000000000000003:                   # @func0000000000000003
-	movl	$6, %eax
+	movl	$5, %eax
 	subl	%esi, %eax
 	shrl	%eax
 	addl	%edi, %eax

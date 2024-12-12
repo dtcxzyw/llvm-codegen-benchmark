@@ -7,7 +7,7 @@
 ; openssl/optimized/openssl-bin-asn1parse.ll
 ; wireshark/optimized/file.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, i1 %0, i1 false
@@ -53,7 +53,7 @@ entry:
 ; redis/optimized/server.ll
 ; slurm/optimized/info_job.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000181(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = select i1 %3, i1 %0, i1 false
@@ -67,7 +67,7 @@ entry:
 ; redis/optimized/db.ll
 ; wireshark/optimized/packet-ndmp.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, i1 %0, i1 false
@@ -76,7 +76,7 @@ entry:
   ret i1 %6
 }
 
-; 21 occurrences:
+; 20 occurrences:
 ; assimp/optimized/DeboneProcess.cpp.ll
 ; assimp/optimized/MakeVerboseFormat.cpp.ll
 ; assimp/optimized/PretransformVertices.cpp.ll
@@ -91,7 +91,6 @@ entry:
 ; wireshark/optimized/packet-flexray.c.ll
 ; wireshark/optimized/packet-http.c.ll
 ; wireshark/optimized/packet-ieee80211-prism.c.ll
-; wireshark/optimized/packet-lin.c.ll
 ; wireshark/optimized/packet-ndmp.c.ll
 ; wireshark/optimized/packet-signal-pdu.c.ll
 ; wireshark/optimized/packet-smb2.c.ll
@@ -99,7 +98,7 @@ entry:
 ; wireshark/optimized/packet-someip.c.ll
 ; wireshark/optimized/packet-tecmp.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func000000000000018c(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = select i1 %3, i1 %0, i1 false
@@ -108,10 +107,41 @@ entry:
   ret i1 %6
 }
 
+; 7 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; raylib/optimized/rtextures.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000018a(i1 %0, i32 %1, ptr %2) #0 {
+entry:
+  %3 = icmp ne ptr %2, null
+  %4 = select i1 %3, i1 %0, i1 false
+  %5 = icmp sgt i32 %1, 0
+  %6 = select i1 %4, i1 %5, i1 false
+  ret i1 %6
+}
+
+; 2 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; Function Attrs: nounwind
+define i1 @func000000000000002a(i1 %0, i32 %1, ptr %2) #0 {
+entry:
+  %3 = icmp eq ptr %2, null
+  %4 = select i1 %3, i1 %0, i1 false
+  %5 = icmp sgt i32 %1, 0
+  %6 = select i1 %4, i1 %5, i1 false
+  ret i1 %6
+}
+
 ; 1 occurrences:
 ; llvm/optimized/LiveRangeShrink.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000188(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = select i1 %3, i1 %0, i1 false
@@ -124,7 +154,7 @@ entry:
 ; llvm/optimized/AsmLexer.cpp.ll
 ; wireshark/optimized/packet-dcom-cba-acco.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000184(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = select i1 %3, i1 %0, i1 false
@@ -136,7 +166,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/UnwrappedLineFormatter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000028(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, i1 %0, i1 false

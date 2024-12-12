@@ -70,13 +70,7 @@ func000000000000000e:                   # @func000000000000000e
 	ret
 func0000000000000001:                   # @func0000000000000001
 	andi	a2, a2, 1
-	bnez	a2, .LBB8_2
-	li	a2, -34
 	add	a0, a0, a1
-	addw	a0, a0, a2
-	ret
-.LBB8_2:
-	li	a2, -38
-	add	a0, a0, a1
-	addw	a0, a0, a2
+	add	a0, a0, a2
+	addiw	a0, a0, 3
 	ret

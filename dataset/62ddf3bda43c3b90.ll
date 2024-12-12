@@ -21,7 +21,7 @@
 ; redis/optimized/cli_common.ll
 ; verilator/optimized/V3Param.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0) #0 {
+define i1 @func00000000000000a4(i32 %0) #0 {
 entry:
   %1 = ashr exact i32 %0, 16
   %2 = add nsw i32 %1, 128
@@ -29,7 +29,7 @@ entry:
   ret i1 %3
 }
 
-; 20 occurrences:
+; 21 occurrences:
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
 ; coreutils-rs/optimized/3fp1x41wzh4l1rh9.ll
@@ -50,8 +50,9 @@ entry:
 ; openjdk/optimized/relocInfo.ll
 ; php/optimized/ir_gdb.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0) #0 {
+define i1 @func0000000000000024(i32 %0) #0 {
 entry:
   %1 = ashr i32 %0, 16
   %2 = add nsw i32 %1, -1938
@@ -65,7 +66,7 @@ entry:
 ; clamav/optimized/mew.c.ll
 ; cpython/optimized/_datetimemodule.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0) #0 {
+define i1 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = icmp ugt i32 %0, -129
   ret i1 %1

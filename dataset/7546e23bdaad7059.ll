@@ -1,10 +1,17 @@
 
-; 9 occurrences:
+; 16 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; clamav/optimized/Ppmd7Dec.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
 ; jq/optimized/decNumber.ll
+; minetest/optimized/cavegen.cpp.ll
 ; postgres/optimized/gindatapage.ll
 ; quantlib/optimized/dataparsers.ll
 ; quantlib/optimized/date.ll
@@ -12,7 +19,7 @@
 ; Function Attrs: nounwind
 define i16 @func0000000000000034(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nuw nsw i32 %1, 999
+  %2 = add nuw nsw i32 %1, 1
   %3 = sub nsw i32 %2, %0
   %4 = trunc i32 %3 to i16
   ret i16 %4
@@ -29,14 +36,16 @@ entry:
   ret i16 %4
 }
 
-; 3 occurrences:
+; 5 occurrences:
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; wireshark/optimized/packet-bssgp.c.ll
 ; wireshark/optimized/packet-smb.c.ll
 ; wireshark/optimized/packet-umts_fp.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add i32 %1, 24
+  %2 = add i32 %1, 4800
   %3 = sub i32 %2, %0
   %4 = trunc i32 %3 to i16
   ret i16 %4
@@ -73,7 +82,7 @@ entry:
 define i16 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %0, -1
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   %4 = trunc i32 %3 to i16
   ret i16 %4
 }

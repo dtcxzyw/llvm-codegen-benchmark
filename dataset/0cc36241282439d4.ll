@@ -1,5 +1,5 @@
 
-; 136 occurrences:
+; 134 occurrences:
 ; assimp/optimized/SortByPTypeProcess.cpp.ll
 ; assimp/optimized/SplitLargeMeshes.cpp.ll
 ; assimp/optimized/StandardShapes.cpp.ll
@@ -40,7 +40,6 @@
 ; linux/optimized/af_packet.ll
 ; linux/optimized/blk-iocost.ll
 ; linux/optimized/intel_cx0_phy.ll
-; linux/optimized/intel_snps_phy.ll
 ; linux/optimized/regcache-rbtree.ll
 ; linux/optimized/regmap.ll
 ; linux/optimized/seq_timer.ll
@@ -78,7 +77,6 @@
 ; llvm/optimized/OMPIRBuilder.cpp.ll
 ; llvm/optimized/Pointer.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/RegAllocFast.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
@@ -98,6 +96,7 @@
 ; llvm/optimized/X86ShuffleDecodeConstantPool.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
+; lvgl/optimized/lv_refr.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/ofbx.cpp.ll
 ; minetest/optimized/texturesource.cpp.ll
@@ -135,7 +134,6 @@
 ; xgboost/optimized/quantile_obj.cc.ll
 ; yosys/optimized/BigUnsignedInABase.ll
 ; yosys/optimized/sta.ll
-; z3/optimized/pb2bv_rewriter.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
@@ -144,7 +142,7 @@ entry:
   ret i64 %3
 }
 
-; 67 occurrences:
+; 66 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; cmake/optimized/divsufsort.c.ll
 ; cpython/optimized/Hacl_Hash_SHA3.ll
@@ -161,14 +159,12 @@ entry:
 ; linux/optimized/amd.ll
 ; linux/optimized/build_policy.ll
 ; linux/optimized/drm_dsc_helper.ll
-; linux/optimized/scsicam.ll
 ; linux/optimized/seq_timer.ll
 ; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/Legalizer.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -187,6 +183,7 @@ entry:
 ; oiio/optimized/tiffinput.cpp.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/blend.cpp.ll
+; opencv/optimized/testset.cpp.ll
 ; openexr/optimized/decoding.c.ll
 ; openexr/optimized/pack.c.ll
 ; openexr/optimized/unpack.c.ll

@@ -22,7 +22,7 @@ entry:
 ; kcp/optimized/ikcp.ll
 ; openjdk/optimized/c1_CodeStubs_x86.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i32
@@ -98,7 +98,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000201(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000401(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
   %4 = trunc i64 %3 to i32
@@ -123,7 +123,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/balloc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000381(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000701(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 %1, %2
   %4 = trunc nuw i64 %3 to i32
@@ -135,7 +135,7 @@ entry:
 ; 1 occurrences:
 ; luajit/optimized/minilua.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000030a(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000060a(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 %1, %2
   %4 = trunc i64 %3 to i32
@@ -147,7 +147,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/persistence.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i32
@@ -159,7 +159,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/datablock.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i32
@@ -171,7 +171,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/floodfill.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000208(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = trunc i64 %3 to i32

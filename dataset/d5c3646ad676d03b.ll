@@ -1,9 +1,8 @@
 
-; 2 occurrences:
+; 1 occurrences:
 ; ruby/optimized/date_strftime.ll
-; ruby/optimized/strftime.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000086(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 -8, %2
   %4 = sext i32 %3 to i64
@@ -13,8 +12,8 @@ entry:
 }
 
 ; 2 occurrences:
+; boost/optimized/to_chars.ll
 ; ruby/optimized/date_strftime.ll
-; ruby/optimized/strftime.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i64 %0, i64 %1, i32 %2) #0 {
 entry:
@@ -29,7 +28,7 @@ entry:
 ; mitsuba3/optimized/grid.cpp.ll
 ; mitsuba3/optimized/imageblock.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 11, %2
   %4 = sext i32 %3 to i64
@@ -41,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/tm2unixtime.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000aa(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %2
   %4 = sext i32 %3 to i64
@@ -65,7 +64,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/pshinter.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %2
   %4 = sext i32 %3 to i64

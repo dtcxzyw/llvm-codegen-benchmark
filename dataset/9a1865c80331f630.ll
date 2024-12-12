@@ -21,15 +21,4 @@ entry:
   ret i8 %3
 }
 
-; 1 occurrences:
-; libjpeg-turbo/optimized/tjunittest.c.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000010(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ult i32 %1, 16
-  %3 = trunc i32 %0 to i8
-  %4 = select i1 %2, i8 %3, i8 0
-  ret i8 %4
-}
-
 attributes #0 = { nounwind }

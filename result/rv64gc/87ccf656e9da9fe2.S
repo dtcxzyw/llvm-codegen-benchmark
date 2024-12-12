@@ -47,24 +47,50 @@ func000000000000000c:                   # @func000000000000000c
 .LBB3_4:                                # %entry
 	mv	a0, a1
 	ret
-func0000000000000008:                   # @func0000000000000008
-	andi	a3, a0, 1
-	mv	a0, a1
-	bnez	a3, .LBB4_2
-	srliw	a0, a2, 16
-	snez	a0, a0
-	slli	a0, a0, 4
-.LBB4_2:                                # %entry
-	ret
 func0000000000000006:                   # @func0000000000000006
 	andi	a3, a0, 1
 	mv	a0, a1
-	bnez	a3, .LBB5_2
+	bnez	a3, .LBB4_2
 	sext.w	a2, a2
-	lui	a0, 131072
-	addiw	a0, a0, 1
-	slt	a0, a2, a0
-	addi	a0, a0, -1
-	andi	a0, a0, -22
+	slti	a0, a2, 1
+	neg	a0, a0
+	ori	a0, a0, 1
+.LBB4_2:                                # %entry
+	ret
+func0000000000000008:                   # @func0000000000000008
+	andi	a3, a0, 1
+	mv	a0, a1
+	bnez	a3, .LBB5_2
+	srliw	a0, a2, 16
+	snez	a0, a0
+	slli	a0, a0, 4
 .LBB5_2:                                # %entry
+	ret
+func0000000000000018:                   # @func0000000000000018
+	andi	a3, a0, 1
+	mv	a0, a1
+	bnez	a3, .LBB6_2
+	sext.w	a2, a2
+	sltiu	a0, a2, 301
+	addi	a0, a0, -1
+	andi	a0, a0, 165
+.LBB6_2:                                # %entry
+	ret
+func0000000000000014:                   # @func0000000000000014
+	srliw	a2, a2, 1
+	li	a3, 1571
+	andi	a0, a0, 1
+	bltu	a2, a3, .LBB7_2
+	lui	a2, 65857
+	addiw	a2, a2, 161
+	beqz	a0, .LBB7_3
+	j	.LBB7_4
+.LBB7_2:
+	lui	a2, 98625
+	addiw	a2, a2, 161
+	bnez	a0, .LBB7_4
+.LBB7_3:                                # %entry
+	mv	a1, a2
+.LBB7_4:                                # %entry
+	mv	a0, a1
 	ret

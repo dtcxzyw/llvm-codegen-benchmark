@@ -8,9 +8,9 @@
 define i64 @func0000000000000008(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = xor i64 %4, -1
-  %6 = icmp ult i64 %5, %0
+  %6 = icmp ugt i64 %0, %5
   %7 = zext i1 %6 to i64
   ret i64 %7
 }
@@ -18,12 +18,12 @@ entry:
 ; 1 occurrences:
 ; lief/optimized/ecp_curves.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000188(i64 %0, i64 %1, i1 %2) #0 {
+define i64 @func0000000000000308(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = xor i64 %4, -1
-  %6 = icmp ult i64 %5, %0
+  %6 = icmp ugt i64 %0, %5
   %7 = zext i1 %6 to i64
   ret i64 %7
 }

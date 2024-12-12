@@ -21,7 +21,7 @@ func0000000000000003:                   # @func0000000000000003
 	beqz	a2, .LBB2_2
 	lui	a1, 20480
 .LBB2_2:                                # %entry
-	lui	a2, 20496
+	lui	a2, 4112
 	addiw	a2, a2, -1
 	and	a0, a0, a2
 	or	a0, a0, a1

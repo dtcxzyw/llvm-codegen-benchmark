@@ -1,7 +1,7 @@
 
-%"struct.OT::IntType.0.2622262" = type { %struct.BEInt.1.2622266 }
-%struct.BEInt.1.2622266 = type { [2 x i8] }
-%class.symbol.3428956 = type { ptr }
+%"struct.OT::IntType.0.2735699" = type { %struct.BEInt.1.2735703 }
+%struct.BEInt.1.2735703 = type { [2 x i8] }
+%class.symbol.3613505 = type { ptr }
 
 ; 10 occurrences:
 ; darktable/optimized/introspection_dither.c.ll
@@ -15,13 +15,13 @@
 ; openssl/optimized/libcrypto-shlib-rsaz_exp_x2.ll
 ; openssl/optimized/loader_attic-dso-pvkfmt.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000da(i32 %0, ptr %1, i32 %2) #0 {
+define ptr @func00000000000000ff(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i64, ptr %1, i64 %3
-  %5 = getelementptr nusw i64, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i64, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i64, ptr %4, i64 %3
   %6 = zext nneg i32 %0 to i64
-  %7 = getelementptr nusw i64, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i64, ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -33,13 +33,13 @@ entry:
 ; openjdk/optimized/hb-face.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000ca(i32 %0, ptr %1, i32 %2) #0 {
+define ptr @func00000000000000ef(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw %"struct.OT::IntType.0.2622262", ptr %1, i64 %3
-  %5 = getelementptr nusw %"struct.OT::IntType.0.2622262", ptr %4, i64 %3
+  %4 = getelementptr nusw nuw %"struct.OT::IntType.0.2735699", ptr %1, i64 %3
+  %5 = getelementptr nusw nuw %"struct.OT::IntType.0.2735699", ptr %4, i64 %3
   %6 = zext i32 %0 to i64
-  %7 = getelementptr nusw i8, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -48,17 +48,17 @@ entry:
 ; freetype/optimized/sfnt.c.ll
 ; php/optimized/ir_emit.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(i32 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000007f(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i32, ptr %1, i64 %3
-  %5 = getelementptr nusw i32, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i32, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i32, ptr %4, i64 %3
   %6 = zext nneg i32 %0 to i64
-  %7 = getelementptr nusw i8, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %5, i64 %6
   ret ptr %7
 }
 
-; 109 occurrences:
+; 108 occurrences:
 ; git/optimized/index-pack.ll
 ; hyperscan/optimized/scratch.c.ll
 ; llvm/optimized/ASTWriter.cpp.ll
@@ -75,7 +75,6 @@ entry:
 ; z3/optimized/bvarray2uf_rewriter.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/check_logic.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/collect_statistics_tactic.cpp.ll
 ; z3/optimized/degree_shift_tactic.cpp.ll
 ; z3/optimized/demodulator_rewriter.cpp.ll
@@ -169,13 +168,13 @@ entry:
 ; z3/optimized/uses_theory.cpp.ll
 ; z3/optimized/well_sorted.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000004a(i32 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000006f(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i32, ptr %1, i64 %3
-  %5 = getelementptr nusw i32, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i32, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i32, ptr %4, i64 %3
   %6 = zext i32 %0 to i64
-  %7 = getelementptr nusw i32, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i32, ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -251,11 +250,11 @@ entry:
 ; z3/optimized/spacer_util.cpp.ll
 ; z3/optimized/th_rewriter.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000058(i32 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000007c(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw ptr, ptr %1, i64 %3
-  %5 = getelementptr nusw %class.symbol.3428956, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw ptr, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw %class.symbol.3613505, ptr %4, i64 %3
   %6 = zext nneg i32 %0 to i64
   %7 = getelementptr ptr, ptr %5, i64 %6
   ret ptr %7

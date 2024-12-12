@@ -72,38 +72,12 @@
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1
   %3 = icmp eq i64 %2, 0
   %4 = trunc i64 %0 to i32
   %5 = icmp ne i32 %4, 0
-  %6 = select i1 %5, i1 true, i1 %3
-  ret i1 %6
-}
-
-; 1 occurrences:
-; llvm/optimized/MetadataLoader.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 4294967295
-  %3 = icmp ne i64 %2, 0
-  %4 = and i64 %0, 4294901760
-  %5 = icmp ne i64 %4, 0
-  %6 = select i1 %5, i1 true, i1 %3
-  ret i1 %6
-}
-
-; 1 occurrences:
-; linux/optimized/openclose.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 32
-  %3 = icmp ne i64 %2, 0
-  %4 = trunc i64 %0 to i32
-  %5 = icmp ne i32 %4, -11
   %6 = select i1 %5, i1 true, i1 %3
   ret i1 %6
 }

@@ -1,14 +1,15 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
+; boost/optimized/to_chars.ll
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
 ; Function Attrs: nounwind
 define i128 @func0000000000000001(i128 %0, i128 %1) #0 {
 entry:
   %2 = shl nsw i128 -1, %1
   %3 = xor i128 %2, -1
-  %4 = and i128 %3, %0
+  %4 = and i128 %0, %3
   ret i128 %4
 }
 
@@ -21,7 +22,7 @@ define i128 @func0000000000000002(i128 %0, i128 %1) #0 {
 entry:
   %2 = shl nuw i128 1, %1
   %3 = xor i128 %2, -1
-  %4 = and i128 %3, %0
+  %4 = and i128 %0, %3
   ret i128 %4
 }
 
@@ -32,7 +33,7 @@ define i128 @func0000000000000003(i128 %0, i128 %1) #0 {
 entry:
   %2 = shl nuw nsw i128 1, %1
   %3 = xor i128 %2, -1
-  %4 = and i128 %3, %0
+  %4 = and i128 %0, %3
   ret i128 %4
 }
 

@@ -13,7 +13,7 @@ func000000000000000c:                   # @func000000000000000c
 	testb	$31, %al
 	setne	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	movslq	%edi, %rax
 	imulq	$715827883, %rax, %rax          # imm = 0x2AAAAAAB
 	movq	%rax, %rcx

@@ -1,5 +1,5 @@
 
-; 145 occurrences:
+; 149 occurrences:
 ; abc/optimized/mapperMatch.c.ll
 ; abc/optimized/mapperTime.c.ll
 ; abc/optimized/sclBufSize.c.ll
@@ -49,8 +49,6 @@
 ; gromacs/optimized/pairlist.cpp.ll
 ; gromacs/optimized/pdb2gmx.cpp.ll
 ; gromacs/optimized/pdb2top.cpp.ll
-; gromacs/optimized/slange.cpp.ll
-; gromacs/optimized/slanst.cpp.ll
 ; gromacs/optimized/slarrex.cpp.ll
 ; gromacs/optimized/slasq4.cpp.ll
 ; gromacs/optimized/sstebz.cpp.ll
@@ -145,6 +143,12 @@
 ; sentencepiece/optimized/unigram_model.cc.ll
 ; stb/optimized/stb_truetype.c.ll
 ; xgboost/optimized/quantile.cc.ll
+; zed-rs/optimized/1cn7xv4w6dvhmserny8iqmdc3.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(float %0, float %1, float %2) #0 {
 entry:
@@ -153,7 +157,7 @@ entry:
   ret i1 %4
 }
 
-; 185 occurrences:
+; 190 occurrences:
 ; abc/optimized/abcIfif.c.ll
 ; abc/optimized/ifDelay.c.ll
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
@@ -184,6 +188,7 @@ entry:
 ; bullet3/optimized/btDeformableContactConstraint.ll
 ; bullet3/optimized/btGImpactCollisionAlgorithm.ll
 ; bullet3/optimized/btGeneric6DofConstraint.ll
+; bullet3/optimized/btGjkPairDetector.ll
 ; bullet3/optimized/btHeightfieldTerrainShape.ll
 ; bullet3/optimized/btMultiBodyConstraintSolver.ll
 ; bullet3/optimized/btPolyhedralContactClipping.ll
@@ -227,6 +232,7 @@ entry:
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libwebp/optimized/frame_enc.c.ll
 ; llvm/optimized/RegAllocPBQP.cpp.ll
+; lvgl/optimized/lv_chart.ll
 ; meshlab/optimized/coordinateframe.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
 ; meshlab/optimized/decorate_base.cpp.ll
@@ -339,6 +345,9 @@ entry:
 ; stb/optimized/stb_hexwave.c.ll
 ; stb/optimized/stb_truetype.c.ll
 ; wireshark/optimized/wireless_timeline.cpp.ll
+; zed-rs/optimized/1cn7xv4w6dvhmserny8iqmdc3.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(float %0, float %1, float %2) #0 {
 entry:
@@ -347,7 +356,7 @@ entry:
   ret i1 %4
 }
 
-; 49 occurrences:
+; 54 occurrences:
 ; abseil-cpp/optimized/generate_real_test.cc.ll
 ; bullet3/optimized/btDeformableMultiBodyDynamicsWorld.ll
 ; bullet3/optimized/btDiscreteDynamicsWorld.ll
@@ -388,7 +397,6 @@ entry:
 ; openjdk/optimized/ShapeSpanIterator.ll
 ; openjdk/optimized/parse2.ll
 ; ozz-animation/optimized/track_triggering_job.cc.ll
-; pbrt-v4/optimized/mipmap.cpp.ll
 ; pbrt-v4/optimized/transform.cpp.ll
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rmodels.c.ll
@@ -396,6 +404,12 @@ entry:
 ; recastnavigation/optimized/DetourCrowd.cpp.ll
 ; recastnavigation/optimized/DetourNavMeshQuery.cpp.ll
 ; recastnavigation/optimized/RecastArea.cpp.ll
+; zed-rs/optimized/130afw1833d1gu50165ly3xmm.ll
+; zed-rs/optimized/1cn7xv4w6dvhmserny8iqmdc3.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; zxing/optimized/PDFCodewordDecoder.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000003(float %0, float %1, float %2) #0 {
@@ -405,12 +419,11 @@ entry:
   ret i1 %4
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/b3DynamicBvh.ll
 ; bullet3/optimized/btDbvt.ll
 ; bullet3/optimized/btDeformableBodySolver.ll
-; bullet3/optimized/btGjkPairDetector.ll
 ; bullet3/optimized/btSoftBody.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
@@ -426,7 +439,7 @@ entry:
   ret i1 %4
 }
 
-; 31 occurrences:
+; 37 occurrences:
 ; darktable/optimized/introspection_sigmoid.c.ll
 ; darktable/optimized/introspection_vignette.c.ll
 ; gromacs/optimized/gmx_vanhove.cpp.ll
@@ -458,6 +471,12 @@ entry:
 ; pbrt-v4/optimized/transform.cpp.ll
 ; recastnavigation/optimized/DetourCommon.cpp.ll
 ; recastnavigation/optimized/DetourCrowd.cpp.ll
+; zed-rs/optimized/130afw1833d1gu50165ly3xmm.ll
+; zed-rs/optimized/1cn7xv4w6dvhmserny8iqmdc3.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000005(float %0, float %1, float %2) #0 {
 entry:
@@ -466,7 +485,7 @@ entry:
   ret i1 %4
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; bullet3/optimized/b3GeometryUtil.ll
 ; bullet3/optimized/btGeometryUtil.ll
 ; gromacs/optimized/position_restraints.cpp.ll
@@ -477,6 +496,7 @@ entry:
 ; minetest/optimized/clientmap.cpp.ll
 ; opencv/optimized/bgfg_gaussmix2.cpp.ll
 ; yoga/optimized/FlexLine.cpp.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000b(float %0, float %1, float %2) #0 {
 entry:
@@ -553,12 +573,13 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; darktable/optimized/introspection_crop.c.ll
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; oiio/optimized/imageio.cpp.ll
 ; pbrt-v4/optimized/cameras.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(float %0, float %1, float %2) #0 {
 entry:

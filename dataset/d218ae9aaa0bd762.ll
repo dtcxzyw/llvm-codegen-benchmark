@@ -1,8 +1,7 @@
 
-; 37 occurrences:
+; 35 occurrences:
 ; assimp/optimized/Q3BSPFileImporter.cpp.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
-; ceres/optimized/parameter_block_ordering.cc.ll
 ; glslang/optimized/glslang_c_interface.cpp.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; gromacs/optimized/atomdata.cpp.ll
@@ -14,7 +13,6 @@
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
 ; opencv/optimized/dpm_feature.cpp.ll
-; opencv/optimized/slice_layer.cpp.ll
 ; opencv/optimized/svm.cpp.ll
 ; opencv/optimized/tree.cpp.ll
 ; openspiel/optimized/observer.cc.ll
@@ -38,7 +36,7 @@
 ; zxing/optimized/PDFDetectionResultColumn.cpp.ll
 ; zxing/optimized/ReedSolomonEncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000068(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = sext i32 %3 to i64
@@ -77,7 +75,7 @@ entry:
 ; openusd/optimized/triRefinement.cpp.ll
 ; zxing/optimized/PDFDetectionResultColumn.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000064(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = sext i32 %3 to i64
@@ -96,7 +94,7 @@ entry:
 ; yosys/optimized/verilog_backend.ll
 ; yosys/optimized/xilinx_srl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = sext i32 %3 to i64
@@ -108,7 +106,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/atomdata.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000066(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = sext i32 %3 to i64
@@ -121,7 +119,7 @@ entry:
 ; cpython/optimized/ceval.ll
 ; gromacs/optimized/massrepartitioning.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = sext i32 %3 to i64
@@ -135,7 +133,7 @@ entry:
 ; gromacs/optimized/domdec.cpp.ll
 ; opencv/optimized/reshape_layer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = sext i32 %3 to i64
@@ -147,7 +145,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/battleship.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = sext i32 %3 to i64
@@ -157,9 +155,21 @@ entry:
 }
 
 ; 1 occurrences:
+; postgres/optimized/tsvector_op.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %1, %2
+  %4 = sext i32 %3 to i64
+  %5 = ashr i64 %0, 32
+  %6 = icmp eq i64 %5, %4
+  ret i1 %6
+}
+
+; 1 occurrences:
 ; opencv/optimized/onnx_importer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = sext i32 %3 to i64
@@ -171,7 +181,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/lpsolver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000035(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000065(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = sext i32 %3 to i64

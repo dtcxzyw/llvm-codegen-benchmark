@@ -1,5 +1,5 @@
 
-; 145 occurrences:
+; 146 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/ifDelay.c.ll
 ; abc/optimized/satSolver2.c.ll
@@ -8,6 +8,9 @@
 ; abseil-cpp/optimized/exponential_biased_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; annoy/optimized/annoymodule.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/scpgen.cpp.ll
 ; cpython/optimized/mathmodule.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
@@ -98,7 +101,6 @@
 ; postgres/optimized/geo_ops.ll
 ; postgres/optimized/like_support.ll
 ; postgres/optimized/sampling.ll
-; proj/optimized/bacon.cpp.ll
 ; proj/optimized/bertin1953.cpp.ll
 ; proj/optimized/geodesic.c.ll
 ; proj/optimized/isea.cpp.ll
@@ -108,7 +110,6 @@
 ; proj/optimized/vandg.cpp.ll
 ; proj/optimized/vandg4.cpp.ll
 ; quantlib/optimized/analytichestonengine.ll
-; quantlib/optimized/analyticptdhestonengine.ll
 ; quantlib/optimized/andreasenhugevolatilityinterpl.ll
 ; quantlib/optimized/assetswap.ll
 ; quantlib/optimized/batesengine.ll

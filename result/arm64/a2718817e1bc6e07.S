@@ -1,13 +1,13 @@
-func000000000000003e:                   // @func000000000000003e
+func000000000000003f:                   // @func000000000000003f
 // %bb.0:                               // %entry
 	madd	x8, x1, x2, x1
 	add	x0, x0, x8
 	ret
                                         // -- End function
-func0000000000000002:                   // @func0000000000000002
+func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
 	add	x8, x2, #2
-	mul	x8, x8, x1
+	mul	x8, x1, x8
 	add	x0, x0, x8, lsl #3
 	ret
                                         // -- End function

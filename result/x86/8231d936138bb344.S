@@ -1,9 +1,9 @@
-func00000000000005a6:                   # @func00000000000005a6
+func0000000000001546:                   # @func0000000000001546
 	leal	5(%rsi), %eax
-	cmpl	%edi, %eax
-	setl	%cl
+	cmpl	%eax, %edi
+	setg	%cl
 	addl	$-5, %esi
-	cmpl	%edi, %esi
-	setg	%al
+	cmpl	%esi, %edi
+	setl	%al
 	orb	%cl, %al
 	retq

@@ -7,10 +7,37 @@
 define i64 @func00000000000000ff(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = mul nuw nsw i64 %4, 60
   %6 = zext nneg i32 %0 to i64
   %7 = add nuw nsw i64 %5, %6
+  ret i64 %7
+}
+
+; 2 occurrences:
+; boost/optimized/default_filter_factory.ll
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000090(i32 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = add i64 %1, %3
+  %5 = mul i64 %4, 10
+  %6 = zext nneg i32 %0 to i64
+  %7 = add i64 %5, %6
+  ret i64 %7
+}
+
+; 1 occurrences:
+; boost/optimized/default_filter_factory.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000098(i32 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = add i64 %1, %3
+  %5 = mul nuw i64 %4, 10
+  %6 = zext nneg i32 %0 to i64
+  %7 = add i64 %5, %6
   ret i64 %7
 }
 
@@ -20,7 +47,7 @@ entry:
 define i64 @func0000000000000025(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = mul nsw i64 %4, 37
   %6 = zext i32 %0 to i64
   %7 = add nsw i64 %5, %6
@@ -33,7 +60,7 @@ entry:
 define i64 @func000000000000006f(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = mul nuw nsw i64 %4, 37
   %6 = zext i32 %0 to i64
   %7 = add nuw nsw i64 %5, %6
@@ -46,7 +73,7 @@ entry:
 define i64 @func0000000000000060(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = mul i64 %4, 1540483477
   %6 = zext i32 %0 to i64
   %7 = add i64 %5, %6
@@ -60,7 +87,7 @@ entry:
 define i64 @func00000000000000b5(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = mul nsw i64 %4, 10
   %6 = zext nneg i32 %0 to i64
   %7 = add nsw i64 %5, %6
@@ -73,20 +100,7 @@ entry:
 define i64 @func00000000000000b0(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nsw i64 %3, %1
-  %5 = mul i64 %4, 10
-  %6 = zext nneg i32 %0 to i64
-  %7 = add i64 %5, %6
-  ret i64 %7
-}
-
-; 1 occurrences:
-; yyjson/optimized/yyjson.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000090(i32 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext nneg i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = mul i64 %4, 10
   %6 = zext nneg i32 %0 to i64
   %7 = add i64 %5, %6
@@ -100,7 +114,7 @@ entry:
 define i64 @func000000000000007f(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = mul nuw nsw i64 %4, 100000000
   %6 = zext nneg i32 %0 to i64
   %7 = add nuw nsw i64 %5, %6
@@ -117,7 +131,7 @@ entry:
 define i64 @func0000000000000035(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = mul nsw i64 %4, 1000
   %6 = zext nneg i32 %0 to i64
   %7 = add nsw i64 %5, %6

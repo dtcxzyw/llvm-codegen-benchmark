@@ -10,7 +10,7 @@ func0000000000000014:                   # @func0000000000000014
 	vmv.v.i	v14, 3
 	vmacc.vv	v14, v12, v10
 	vand.vi	v10, v14, -4
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func000000000000003d:                   # @func000000000000003d
 	lui	a0, 1

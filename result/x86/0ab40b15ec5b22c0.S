@@ -1,4 +1,4 @@
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000161:                   # @func0000000000000161
 	movabsq	$1152921504606846972, %rax      # imm = 0xFFFFFFFFFFFFFFC
 	andq	%rdx, %rax
 	shlq	$4, %rax
@@ -6,6 +6,6 @@ func00000000000000a1:                   # @func00000000000000a1
 	shll	$4, %edx
 	addq	%rsi, %rdx
 	addq	%rax, %rdx
-	cmpq	%rdi, %rdx
+	cmpq	%rdx, %rdi
 	sete	%al
 	retq

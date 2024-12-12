@@ -26,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/skl_watermark.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i8 %0, i64 %1) #0 {
+define i1 @func00000000000000e6(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nuw nsw i32 %2, 1
@@ -38,7 +38,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/skl_watermark.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000046(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nuw i32 %2, 1
@@ -48,21 +48,9 @@ entry:
 }
 
 ; 1 occurrences:
-; luajit/optimized/minilua.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i8 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, -10001
-  %4 = zext i8 %0 to i32
-  %5 = icmp ugt i32 %3, %4
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nsw i32 %2, -27

@@ -21,10 +21,9 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; hdf5/optimized/H5Znbit.c.ll
 ; linux/optimized/acpi_lpit.ll
-; linux/optimized/cppc.ll
 ; qemu/optimized/migration_ram.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000d(i64 %0, i64 %1) #0 {

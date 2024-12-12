@@ -1,4 +1,4 @@
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
 	vptestmd	%ymm2, %ymm2, %k1
@@ -7,7 +7,7 @@ func00000000000000c1:                   # @func00000000000000c1
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
 	vptestnmd	%ymm2, %ymm2, %k1
@@ -20,7 +20,7 @@ func000000000000001c:                   # @func000000000000001c
 	.long	73                              # 0x49
 .LCPI2_1:
 	.long	3                               # 0x3
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
 	vpcmpltud	.LCPI2_0(%rip){1to8}, %ymm2, %k1
@@ -31,7 +31,7 @@ func000000000000004c:                   # @func000000000000004c
 	retq
 .LCPI3_0:
 	.long	1                               # 0x1
-func000000000000006a:                   # @func000000000000006a
+func00000000000000ca:                   # @func00000000000000ca
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
 	vpcmpltd	.LCPI3_0(%rip){1to8}, %ymm2, %k1
@@ -41,7 +41,7 @@ func000000000000006a:                   # @func000000000000006a
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
 	vptestmd	%ymm2, %ymm2, %k1
@@ -54,7 +54,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	.long	4                               # 0x4
 .LCPI5_1:
 	.long	5                               # 0x5
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
 	vpcmpeqd	.LCPI5_0(%rip){1to8}, %ymm2, %k1

@@ -1,5 +1,5 @@
 
-; 55 occurrences:
+; 56 occurrences:
 ; annoy/optimized/annoymodule.ll
 ; darktable/optimized/introspection_colormapping.c.ll
 ; darktable/optimized/introspection_colortransfer.c.ll
@@ -30,6 +30,7 @@
 ; mold/optimized/passes.cc.SH4.cc.ll
 ; mold/optimized/passes.cc.SPARC64.cc.ll
 ; mold/optimized/passes.cc.X86_64.cc.ll
+; opencc/optimized/louds-trie.cc.ll
 ; opencv/optimized/rho.cpp.ll
 ; qdrant-rs/optimized/pgs97hhgng8x0qz.ll
 ; qemu/optimized/plugins_loader.c.ll

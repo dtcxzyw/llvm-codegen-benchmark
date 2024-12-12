@@ -10,7 +10,7 @@ func0000000000000028:                   # @func0000000000000028
 	li	a1, -87
 	add	a0, a0, a1
 	ret
-func0000000000000023:                   # @func0000000000000023
+func0000000000000063:                   # @func0000000000000063
 	andi	a1, a0, 255
 	li	a2, 9
 	bltu	a2, a1, .LBB1_2
@@ -44,25 +44,29 @@ func0000000000000018:                   # @func0000000000000018
 	li	a1, 48
 	add	a0, a0, a1
 	ret
-func0000000000000010:                   # @func0000000000000010
-	andi	a1, a0, 255
-	sltiu	a1, a1, 58
-	addi	a1, a1, -1
-	andi	a1, a1, 9
-	add	a0, a0, a1
-	ret
-func0000000000000013:                   # @func0000000000000013
+func0000000000000053:                   # @func0000000000000053
 	andi	a1, a0, 255
 	li	a2, 10
-	bltu	a1, a2, .LBB5_2
+	bltu	a1, a2, .LBB4_2
 	li	a1, 55
 	add	a0, a0, a1
 	ret
-.LBB5_2:
+.LBB4_2:
 	li	a1, 48
 	add	a0, a0, a1
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000010:                   # @func0000000000000010
+	andi	a1, a0, 255
+	li	a2, 145
+	bltu	a1, a2, .LBB5_2
+	li	a1, -67
+	add	a0, a0, a1
+	ret
+.LBB5_2:
+	li	a1, -49
+	add	a0, a0, a1
+	ret
+func0000000000000051:                   # @func0000000000000051
 	andi	a1, a0, 255
 	li	a2, 224
 	bltu	a1, a2, .LBB6_2

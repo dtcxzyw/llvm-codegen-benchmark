@@ -30,3 +30,19 @@ func000000000000001a:                   // @func000000000000001a
 	sub	x0, x8, #2
 	ret
                                         // -- End function
+func000000000000001b:                   // @func000000000000001b
+// %bb.0:                               // %entry
+	cmp	x2, #0
+	csel	x8, x1, x2, eq
+	add	x8, x0, x8
+	add	x0, x8, #15
+	ret
+                                        // -- End function
+func000000000000008b:                   // @func000000000000008b
+// %bb.0:                               // %entry
+	cmp	x2, #1024
+	csel	x8, x1, x2, hi
+	add	x8, x0, x8
+	add	x0, x8, #2
+	ret
+                                        // -- End function

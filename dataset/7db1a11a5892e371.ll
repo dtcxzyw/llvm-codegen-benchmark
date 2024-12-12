@@ -12,7 +12,8 @@ entry:
   ret i64 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/approximately_equals.ll
 ; hdf5/optimized/H5Oattr.c.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
 ; php/optimized/pcre2_jit_compile.ll
@@ -28,9 +29,8 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
-; linux/optimized/head64.ll
 ; llvm/optimized/CheckerContext.cpp.ll
 ; quantlib/optimized/qrdecomposition.ll
 ; Function Attrs: nounwind

@@ -14,13 +14,21 @@ func000000000000001f:                   # @func000000000000001f
 	add	a0, a0, a1
 	addi	a0, a0, 52
 	ret
-func000000000000004f:                   # @func000000000000004f
+func0000000000000140:                   # @func0000000000000140
+	sext.w	a1, a1
+	sltiu	a1, a1, 13
+	li	a2, 4
+	czero.nez	a1, a2, a1
+	add	a0, a0, a1
+	addi	a0, a0, 5
+	ret
+func000000000000014f:                   # @func000000000000014f
 	sext.w	a1, a1
 	sltiu	a1, a1, 126
 	sub	a0, a0, a1
 	addi	a0, a0, 4
 	ret
-func0000000000000047:                   # @func0000000000000047
+func0000000000000147:                   # @func0000000000000147
 	sext.w	a1, a1
 	sltiu	a1, a1, 513
 	li	a2, 56

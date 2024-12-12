@@ -30,15 +30,6 @@ func00000000000000fa:                   # @func00000000000000fa
 	vmacc.vx	v10, a0, v12
 	vmacc.vx	v8, a0, v10
 	ret
-func0000000000000044:                   # @func0000000000000044
-	lui	a0, 1048563
-	addi	a0, a0, -420
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmacc.vx	v10, a0, v12
-	lui	a0, 10
-	addi	a0, a0, -946
-	vmacc.vx	v8, a0, v10
-	ret
 func0000000000000050:                   # @func0000000000000050
 	li	a0, -400
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -59,12 +50,6 @@ func0000000000000054:                   # @func0000000000000054
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmacc.vx	v10, a0, v12
 	li	a0, 62
-	vmacc.vx	v8, a0, v10
-	ret
-func00000000000000f7:                   # @func00000000000000f7
-	li	a0, 85
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmacc.vx	v10, a0, v12
 	vmacc.vx	v8, a0, v10
 	ret
 func00000000000000fc:                   # @func00000000000000fc

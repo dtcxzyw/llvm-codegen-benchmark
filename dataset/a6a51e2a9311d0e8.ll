@@ -1,5 +1,5 @@
 
-; 51 occurrences:
+; 50 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcHieGia.c.ll
 ; abc/optimized/giaBound.c.ll
@@ -49,7 +49,6 @@
 ; ruby/optimized/numeric.ll
 ; ruby/optimized/vm.ll
 ; slurm/optimized/ping_nodes.ll
-; spike/optimized/f64_classify.ll
 ; z3/optimized/aig.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, i64 %2) #0 {
@@ -66,7 +65,7 @@ entry:
 ; darktable/optimized/Cr2Decompressor.cpp.ll
 ; darktable/optimized/CrwDecompressor.cpp.ll
 ; darktable/optimized/LJpegDecompressor.cpp.ll
-; linux/optimized/fault.ll
+; linux/optimized/intel_migrate.ll
 ; linux/optimized/xarray.ll
 ; llvm/optimized/AArch64LegalizerInfo.cpp.ll
 ; llvm/optimized/CGExpr.cpp.ll
@@ -85,18 +84,6 @@ entry:
   %4 = icmp ne i64 %3, 27
   %5 = and i1 %0, %1
   %6 = and i1 %5, %4
-  ret i1 %6
-}
-
-; 1 occurrences:
-; brotli/optimized/encode.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i1 %1, i64 %2) #0 {
-entry:
-  %3 = and i64 %2, 4294967295
-  %4 = icmp ult i64 %3, 2049
-  %5 = and i1 %0, %1
-  %6 = and i1 %4, %5
   ret i1 %6
 }
 

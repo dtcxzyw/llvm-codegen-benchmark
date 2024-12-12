@@ -1,11 +1,18 @@
-func000000000000006a:                   # @func000000000000006a
+func000000000000006f:                   # @func000000000000006f
 	movslq	%edx, %rax
 	shlq	$4, %rax
 	addq	%rsi, %rax
 	shlq	$5, %rdi
 	leaq	40(%rdi,%rax), %rax
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000006b:                   # @func000000000000006b
+	movslq	%edx, %rax
+	shlq	$4, %rax
+	addq	%rsi, %rax
+	shlq	$5, %rdi
+	leaq	36(%rdi,%rax), %rax
+	retq
+func000000000000002b:                   # @func000000000000002b
 	incl	%edx
 	movslq	%edx, %rax
 	addq	%rsi, %rax
@@ -17,19 +24,25 @@ func0000000000000000:                   # @func0000000000000000
 	addq	%rsi, %rax
 	leaq	68(%rdi,%rax), %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+func000000000000002f:                   # @func000000000000002f
+	addl	$-54, %edx
+	movslq	%edx, %rax
+	leaq	(%rsi,%rax,8), %rax
+	leaq	72(%rax,%rdi,8), %rax
+	retq
+func0000000000000020:                   # @func0000000000000020
+	addl	$5, %edx
+	movslq	%edx, %rax
+	leaq	(%rsi,%rax,8), %rax
+	leaq	-40(%rdi,%rax), %rax
+	retq
+func0000000000000028:                   # @func0000000000000028
 	addl	$5, %edx
 	movslq	%edx, %rax
 	leaq	(%rsi,%rax,8), %rax
 	leaq	8(%rdi,%rax), %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
-	addl	$5, %edx
-	movslq	%edx, %rax
-	leaq	(%rsi,%rax,8), %rax
-	leaq	8(%rdi,%rax), %rax
-	retq
-func0000000000000042:                   # @func0000000000000042
+func0000000000000043:                   # @func0000000000000043
 	movslq	%edx, %rax
 	shlq	$4, %rax
 	addq	%rsi, %rax

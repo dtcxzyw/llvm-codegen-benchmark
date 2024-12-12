@@ -26,7 +26,7 @@ entry:
   ret i64 %5
 }
 
-; 54 occurrences:
+; 53 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; hermes/optimized/APInt.cpp.ll
 ; hermes/optimized/StringRef.cpp.ll
@@ -61,7 +61,6 @@ entry:
 ; llvm/optimized/MicrosoftMangle.cpp.ll
 ; llvm/optimized/MveEmitter.cpp.ll
 ; llvm/optimized/PPExpressions.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RangeConstraintManager.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll

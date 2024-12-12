@@ -52,7 +52,7 @@
 ; openusd/optimized/lz4.cpp.ll
 ; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002a8(ptr %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000548(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw float, ptr %0, i64 %3
@@ -67,7 +67,7 @@ entry:
 ; openjdk/optimized/nmethod.ll
 ; openusd/optimized/lz4.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002a4(ptr %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000544(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw i8, ptr %0, i64 %3

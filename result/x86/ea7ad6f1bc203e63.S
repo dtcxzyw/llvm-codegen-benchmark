@@ -8,7 +8,7 @@ func0000000000000001:                   # @func0000000000000001
 	movslq	%edi, %rax
 	retq
 func0000000000000002:                   # @func0000000000000002
-	movl	$-2, %eax
+	movl	$-3, %eax
 	subl	%edi, %eax
 	cltq
 	retq

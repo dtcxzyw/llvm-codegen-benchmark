@@ -85,7 +85,8 @@ entry:
   ret i1 %5
 }
 
-; 66 occurrences:
+; 67 occurrences:
+; boost/optimized/formatter.ll
 ; icu/optimized/alphaindex.ll
 ; icu/optimized/caniter.ll
 ; icu/optimized/coll.ll
@@ -161,7 +162,7 @@ entry:
   ret i1 %5
 }
 
-; 14 occurrences:
+; 11 occurrences:
 ; icu/optimized/alphaindex.ll
 ; icu/optimized/collationbuilder.ll
 ; icu/optimized/collationruleparser.ll
@@ -172,9 +173,6 @@ entry:
 ; icu/optimized/regexcmp.ll
 ; icu/optimized/timezone.ll
 ; icu/optimized/uni2name.ll
-; icu/optimized/unisetspan.ll
-; icu/optimized/uts46.ll
-; icu/optimized/vtzone.ll
 ; libphonenumber/optimized/phonenumbermatcher_test.cc.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i32 %1, i16 %2) #0 {
@@ -236,6 +234,19 @@ entry:
   ret i1 %5
 }
 
+; 3 occurrences:
+; icu/optimized/unisetspan.ll
+; icu/optimized/uts46.ll
+; icu/optimized/vtzone.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i32 %1, i16 %2) #0 {
+entry:
+  %3 = sext i16 %2 to i32
+  %4 = select i1 %0, i32 %1, i32 %3
+  %5 = icmp samesign ugt i32 %4, 1
+  ret i1 %5
+}
+
 ; 4 occurrences:
 ; icu/optimized/decimfmt.ll
 ; icu/optimized/rulebasedcollator.ll
@@ -254,11 +265,11 @@ entry:
 ; icu/optimized/reslist.ll
 ; icu/optimized/unistr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000014(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = sext i16 %2 to i32
   %4 = select i1 %0, i32 %1, i32 %3
-  %5 = icmp ult i32 %4, 2147483638
+  %5 = icmp samesign ult i32 %4, 2147483638
   ret i1 %5
 }
 

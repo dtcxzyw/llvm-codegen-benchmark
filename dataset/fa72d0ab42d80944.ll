@@ -1,9 +1,8 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; bullet3/optimized/b3GjkEpa.ll
 ; bullet3/optimized/btGjkEpa2.ll
-; clamav/optimized/pe_icons.c.ll
 ; freetype/optimized/pfr.c.ll
 ; qemu/optimized/hw_char_cadence_uart.c.ll
 ; wireshark/optimized/packet-btsap.c.ll
@@ -22,8 +21,9 @@ entry:
   ret i32 %6
 }
 
-; 17 occurrences:
+; 19 occurrences:
 ; abc/optimized/acecFadds.c.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/optimizer.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; graphviz/optimized/gc.c.ll
@@ -38,6 +38,7 @@ entry:
 ; postgres/optimized/f2s_shlib.ll
 ; postgres/optimized/f2s_srv.ll
 ; raylib/optimized/raudio.c.ll
+; redis/optimized/fpconv_dtoa.ll
 ; wireshark/optimized/packet-packetbb.c.ll
 ; z3/optimized/sat_cut_simplifier.cpp.ll
 ; Function Attrs: nounwind
@@ -50,7 +51,7 @@ entry:
   ret i32 %6
 }
 
-; 27 occurrences:
+; 33 occurrences:
 ; clamav/optimized/cvd.c.ll
 ; hermes/optimized/APInt.cpp.ll
 ; hermes/optimized/ConsecutiveStringStorage.cpp.ll
@@ -60,6 +61,7 @@ entry:
 ; linux/optimized/slub.ll
 ; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/AutoUpgrade.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; oiio/optimized/iffoutput.cpp.ll
@@ -78,13 +80,18 @@ entry:
 ; wireshark/optimized/packet-rtmpt.c.ll
 ; wireshark/optimized/packet_diagram.cpp.ll
 ; wireshark/optimized/pcapng.c.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 32
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, i32 0, i32 %1
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -96,7 +103,7 @@ entry:
   %3 = and i32 %2, 2047
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, i32 0, i32 %1
-  %6 = add nuw i32 %5, %0
+  %6 = add nuw i32 %0, %5
   ret i32 %6
 }
 

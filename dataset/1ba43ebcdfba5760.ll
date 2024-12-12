@@ -1,5 +1,5 @@
 
-; 266 occurrences:
+; 259 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; assimp/optimized/zip.c.ll
@@ -28,9 +28,6 @@
 ; graphviz/optimized/pack.c.ll
 ; hdf5/optimized/H5Pfapl.c.ll
 ; hdf5/optimized/H5Pocpl.c.ll
-; jemalloc/optimized/fxp.ll
-; jemalloc/optimized/fxp.pic.ll
-; jemalloc/optimized/fxp.sym.ll
 ; libphonenumber/optimized/phonemetadata.pb.cc.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
@@ -115,8 +112,6 @@
 ; linux/optimized/virtio_blk.ll
 ; llvm/optimized/WinCOFFObjectWriter.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
-; luajit/optimized/lj_record.ll
-; luajit/optimized/lj_record_dyn.ll
 ; meshlab/optimized/miniz.c.ll
 ; miniaudio/optimized/unity.c.ll
 ; nuttx/optimized/lib_strtold.c.ll
@@ -227,8 +222,6 @@
 ; qemu/optimized/optimize.c.ll
 ; qemu/optimized/sdhci-cmd.c.ll
 ; qemu/optimized/virtio.c.ll
-; redis/optimized/fxp.ll
-; redis/optimized/fxp.sym.ll
 ; ruby/optimized/date_strptime.ll
 ; sentencepiece/optimized/sentencepiece_model.pb.cc.ll
 ; snappy/optimized/snappy.cc.ll
@@ -275,7 +268,7 @@ entry:
   ret i64 %4
 }
 
-; 235 occurrences:
+; 242 occurrences:
 ; assimp/optimized/B3DImporter.cpp.ll
 ; brotli/optimized/decode.c.ll
 ; clamav/optimized/hwp.c.ll
@@ -300,6 +293,9 @@ entry:
 ; hyperscan/optimized/noodle_engine.c.ll
 ; hyperscan/optimized/repeat.c.ll
 ; hyperscan/optimized/stream_compress.c.ll
+; jemalloc/optimized/fxp.ll
+; jemalloc/optimized/fxp.pic.ll
+; jemalloc/optimized/fxp.sym.ll
 ; libwebp/optimized/demux.c.ll
 ; libwebp/optimized/webpinfo.c.ll
 ; linux/optimized/blk-iocost.ll
@@ -320,7 +316,6 @@ entry:
 ; linux/optimized/libata-core.ll
 ; linux/optimized/libata-scsi.ll
 ; linux/optimized/lskcipher.ll
-; linux/optimized/map.ll
 ; linux/optimized/mballoc.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/pci.ll
@@ -330,7 +325,6 @@ entry:
 ; linux/optimized/rscalc.ll
 ; linux/optimized/skcipher.ll
 ; linux/optimized/tables.ll
-; linux/optimized/utaddress.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; llvm/optimized/BuildID.cpp.ll
 ; llvm/optimized/CGCleanup.cpp.ll
@@ -352,6 +346,7 @@ entry:
 ; luajit/optimized/lj_gc_dyn.ll
 ; luau/optimized/BytecodeAnalysis.cpp.ll
 ; luau/optimized/lvmload.cpp.ll
+; meilisearch-rs/optimized/4rynht2gwvphprvy.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/codeholder.cpp.ll
 ; mitsuba3/optimized/jitallocator.cpp.ll
@@ -493,6 +488,8 @@ entry:
 ; qemu/optimized/hw_virtio_vhost.c.ll
 ; qemu/optimized/virtio.c.ll
 ; raylib/optimized/raudio.c.ll
+; redis/optimized/fxp.ll
+; redis/optimized/fxp.sym.ll
 ; redis/optimized/ziplist.ll
 ; regex-rs/optimized/10eccrragw6uslmk.ll
 ; regex-rs/optimized/2o62ici9yci52qym.ll
@@ -505,11 +502,14 @@ entry:
 ; rocksdb/optimized/write_thread.cc.ll
 ; ruby/optimized/iseq.ll
 ; sqlite/optimized/sqlite3.ll
+; turborepo-rs/optimized/6jkgkc1600lrz2u0oa3gubskw.ll
 ; velox/optimized/CompactRowSerializer.cpp.ll
 ; velox/optimized/UnsafeRowSerializer.cpp.ll
 ; wasmedge/optimized/filemgr.cpp.ll
 ; wireshark/optimized/packet-tcp.c.ll
 ; xgboost/optimized/recordio.cc.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
 ; zfp/optimized/zfp.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
@@ -520,7 +520,7 @@ entry:
   ret i64 %4
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; clamav/optimized/mpool.c.ll
 ; linux/optimized/i915_perf.ll
 ; mitsuba3/optimized/jitallocator.cpp.ll
@@ -528,6 +528,7 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; qemu/optimized/hw_display_ati.c.ll
 ; regex-rs/optimized/32jw1oy2yofrhudk.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i32 %1) #0 {
 entry:
@@ -537,7 +538,7 @@ entry:
   ret i64 %4
 }
 
-; 152 occurrences:
+; 150 occurrences:
 ; brotli/optimized/encode.c.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -625,9 +626,7 @@ entry:
 ; lief/optimized/VectorStream.cpp.ll
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
-; lightgbm/optimized/boosting.cpp.ll
 ; lightgbm/optimized/dataset.cpp.ll
-; lightgbm/optimized/gbdt.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/compat_binfmt_elf.ll
 ; linux/optimized/percpu.ll
@@ -747,7 +746,7 @@ entry:
   ret i64 %4
 }
 
-; 59 occurrences:
+; 63 occurrences:
 ; abc/optimized/cuddApa.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; assimp/optimized/zip.c.ll
@@ -805,6 +804,10 @@ entry:
 ; tokenizers-rs/optimized/27irl7jx21l1e8zq.ll
 ; vcpkg/optimized/cofffilereader.cpp.ll
 ; wireshark/optimized/pcap-common.c.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
 ; zstd/optimized/fastcover.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
@@ -888,10 +891,9 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; linux/optimized/r8169_firmware.ll
 ; php/optimized/encoding.ll
-; tinyrenderer/optimized/tgaimage.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000018(i64 %0, i32 %1) #0 {
 entry:
@@ -923,8 +925,9 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; llvm/optimized/DwarfDebug.cpp.ll
+; llvm/optimized/PrologEpilogInserter.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:
@@ -945,18 +948,6 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
-; llvm/optimized/RISCVFrameLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000012(i64 %0, i32 %1) #0 {
-entry:
-  %2 = zext nneg i32 %1 to i64
-  %3 = add i64 %0, -1
-  %4 = add nuw i64 %3, %2
-  ret i64 %4
-}
-
 ; 1 occurrences:
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
 ; Function Attrs: nounwind
@@ -964,6 +955,17 @@ define i64 @func000000000000001a(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = add nuw i64 %0, 4294967295
+  %4 = add nuw i64 %3, %2
+  ret i64 %4
+}
+
+; 1 occurrences:
+; llvm/optimized/RISCVFrameLowering.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000012(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = add i64 %0, -1
   %4 = add nuw i64 %3, %2
   ret i64 %4
 }

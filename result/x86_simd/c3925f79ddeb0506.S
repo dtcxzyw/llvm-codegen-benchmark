@@ -7,6 +7,6 @@ func0000000000000018:                   # @func0000000000000018
 	vpmovb2m	%xmm0, %k0
 	vpternlogd	$248, .LCPI0_1(%rip){1to4}, %xmm2, %xmm1 # xmm1 = xmm1 | (xmm2 & mem)
 	vptestmb	%xmm1, %xmm1, %k1
-	korw	%k0, %k1, %k0
+	korw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0
 	retq

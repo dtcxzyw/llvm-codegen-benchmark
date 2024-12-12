@@ -1,18 +1,25 @@
-func000000000000000a:                   // @func000000000000000a
+func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
 	lsl	w8, w2, #1
 	add	x9, x1, x0
 	add	x0, x9, x8
 	ret
                                         // -- End function
-func000000000000007a:                   // @func000000000000007a
+func000000000000007f:                   // @func000000000000007f
 // %bb.0:                               // %entry
 	lsl	w8, w2, #6
 	add	x9, x1, x0
 	add	x0, x9, x8
 	ret
                                         // -- End function
-func0000000000000078:                   // @func0000000000000078
+func000000000000007c:                   // @func000000000000007c
+// %bb.0:                               // %entry
+	lsl	w8, w2, #6
+	add	x8, x1, w8, uxtw #3
+	add	x0, x8, x0, lsl #3
+	ret
+                                        // -- End function
+func000000000000007e:                   // @func000000000000007e
 // %bb.0:                               // %entry
 	lsl	w8, w2, #6
 	add	x8, x1, w8, uxtw #3
@@ -24,6 +31,13 @@ func0000000000000000:                   // @func0000000000000000
 	lsl	w8, w2, #9
 	add	x9, x1, x0
 	add	x0, x9, x8
+	ret
+                                        // -- End function
+func000000000000003f:                   // @func000000000000003f
+// %bb.0:                               // %entry
+	lsl	w8, w2, #2
+	add	x8, x1, w8, uxtw #3
+	add	x0, x8, x0, lsl #3
 	ret
                                         // -- End function
 func0000000000000070:                   // @func0000000000000070
@@ -40,42 +54,56 @@ func0000000000000030:                   // @func0000000000000030
 	add	x0, x9, x8
 	ret
                                         // -- End function
-func0000000000000032:                   // @func0000000000000032
+func0000000000000033:                   // @func0000000000000033
 // %bb.0:                               // %entry
 	lsl	w8, w2, #17
 	add	x8, x1, w8, uxtw #1
 	add	x0, x8, x0, lsl #1
 	ret
                                         // -- End function
-func0000000000000038:                   // @func0000000000000038
+func000000000000003c:                   // @func000000000000003c
 // %bb.0:                               // %entry
 	lsl	w8, w2, #4
 	add	x8, x1, w8, uxtw #1
 	add	x0, x8, x0, lsl #1
 	ret
                                         // -- End function
-func000000000000003a:                   // @func000000000000003a
-// %bb.0:                               // %entry
-	lsl	w8, w2, #3
-	add	x8, x1, w8, uxtw #1
-	add	x0, x8, x0, lsl #1
-	ret
-                                        // -- End function
-func000000000000001a:                   // @func000000000000001a
+func000000000000003e:                   // @func000000000000003e
 // %bb.0:                               // %entry
 	lsl	w8, w2, #2
 	add	x8, x1, w8, uxtw #2
 	add	x0, x8, x0, lsl #2
 	ret
                                         // -- End function
-func000000000000004a:                   // @func000000000000004a
+func000000000000001e:                   // @func000000000000001e
+// %bb.0:                               // %entry
+	lsl	w8, w2, #2
+	add	x8, x1, w8, uxtw #2
+	add	x0, x8, x0, lsl #2
+	ret
+                                        // -- End function
+func000000000000001f:                   // @func000000000000001f
+// %bb.0:                               // %entry
+	lsl	w8, w2, #2
+	add	x8, x1, w8, uxtw #2
+	add	x0, x8, x0, lsl #2
+	ret
+                                        // -- End function
+func000000000000000e:                   // @func000000000000000e
+// %bb.0:                               // %entry
+	lsl	w8, w2, #1
+	add	x9, x1, x0
+	add	x0, x9, x8
+	ret
+                                        // -- End function
+func000000000000004f:                   // @func000000000000004f
 // %bb.0:                               // %entry
 	lsl	w8, w2, #1
 	add	x8, x1, w8, uxtw #2
 	add	x0, x8, x0
 	ret
                                         // -- End function
-func000000000000002a:                   // @func000000000000002a
+func000000000000002f:                   // @func000000000000002f
 // %bb.0:                               // %entry
 	lsl	w8, w2, #1
 	add	x8, x1, w8, uxtw #2

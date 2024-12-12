@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/sat_simplifier.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000208(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000408(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = shl i32 %2, 1
@@ -26,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/md.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000308(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000608(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl i32 %2, 17
@@ -43,7 +43,7 @@ entry:
 ; hyperscan/optimized/stream.c.ll
 ; hyperscan/optimized/stream_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003f8(i32 %0, i64 %1) #0 {
+define i1 @func00000000000007e8(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nuw nsw i32 %2, 6

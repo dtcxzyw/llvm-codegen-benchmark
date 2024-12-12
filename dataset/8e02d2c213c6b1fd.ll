@@ -1,9 +1,8 @@
 
-; 55 occurrences:
+; 56 occurrences:
 ; abc/optimized/giaAiger.c.ll
 ; abc/optimized/giaDup.c.ll
 ; abc/optimized/giaSweep.c.ll
-; abc/optimized/ifSeq.c.ll
 ; abc/optimized/saigRetFwd.c.ll
 ; abc/optimized/timMan.c.ll
 ; arrow/optimized/decimal.cc.ll
@@ -30,7 +29,6 @@
 ; llvm/optimized/Instructions.cpp.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
-; openblas/optimized/dorgr2.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; opencv/optimized/datastructs.cpp.ll
 ; opencv/optimized/mser.cpp.ll
@@ -55,6 +53,9 @@
 ; rocksdb/optimized/compaction.cc.ll
 ; ruby/optimized/compile.ll
 ; wireshark/optimized/dot11decrypt_ccmp.c.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/2ehxywt5i46yjybqa8jmzydsx.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:

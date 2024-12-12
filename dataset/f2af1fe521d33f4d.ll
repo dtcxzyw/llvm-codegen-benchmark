@@ -36,7 +36,7 @@ entry:
 ; mold/optimized/icf.cc.X86_64.cc.ll
 ; redis/optimized/rax.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000036(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000066(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 1
   %3 = icmp slt i32 %0, 0
@@ -48,7 +48,7 @@ entry:
 ; rust-analyzer-rs/optimized/1cf75p1eybr0uy0c.ll
 ; rust-analyzer-rs/optimized/2ajuxklycdgazr2a.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000002c(i32 %0, i64 %1) #0 {
+define i64 @func000000000000004c(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 32
   %.not = icmp eq i32 %0, 0
@@ -86,11 +86,22 @@ entry:
 ; openmpi/optimized/coll_ftagree_earlyreturning.ll
 ; postgres/optimized/nodeAgg.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000003a(i32 %0, i64 %1) #0 {
+define i64 @func000000000000006a(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 2
   %3 = icmp sgt i32 %0, 0
   %4 = select i1 %3, i64 %2, i64 0
+  ret i64 %4
+}
+
+; 1 occurrences:
+; openmpi/optimized/topo_treematch_dist_graph_create.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000021(i32 %0, i64 %1) #0 {
+entry:
+  %2 = shl nsw i64 %1, 2
+  %3 = icmp eq i32 %0, 0
+  %4 = select i1 %3, i64 %2, i64 404
   ret i64 %4
 }
 
@@ -99,7 +110,7 @@ entry:
 ; protobuf/optimized/map_field.cc.ll
 ; redis/optimized/rax.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000061(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 2
   %3 = icmp eq i32 %0, 0
@@ -107,15 +118,14 @@ entry:
   ret i64 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; opencv/optimized/onnx_graph_simplifier.cpp.ll
 ; opencv/optimized/resize.cpp.ll
 ; opencv/optimized/smooth.dispatch.cpp.ll
 ; ozz-animation/optimized/skinning_job.cc.ll
 ; postgres/optimized/slru.ll
-; proj/optimized/filemanager.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(i32 %0, i64 %1) #0 {
+define i64 @func000000000000002a(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 3
   %3 = icmp sgt i32 %0, 0
@@ -126,7 +136,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/rax.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000034(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000064(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 3
   %3 = icmp ult i32 %0, 2

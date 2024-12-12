@@ -13,10 +13,9 @@ entry:
   ret i32 %4
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; cmake/optimized/parsedate.c.ll
 ; curl/optimized/libcurl_la-parsedate.ll
-; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; gromacs/optimized/dlarrvx.cpp.ll
 ; gromacs/optimized/slarrvx.cpp.ll
 ; linux/optimized/intel_vdsc.ll
@@ -33,7 +32,7 @@ entry:
   ret i32 %4
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; abc/optimized/cecSolve.c.ll
 ; abc/optimized/fraSat.c.ll
 ; abc/optimized/ivyFraig.c.ll
@@ -41,6 +40,7 @@ entry:
 ; abc/optimized/satSolver2.c.ll
 ; abc/optimized/satSolver3.c.ll
 ; abc/optimized/xsatSolverAPI.c.ll
+; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; libpng/optimized/pngwrite.c.ll
 ; linux/optimized/drbg.ll
 ; linux/optimized/extents.ll

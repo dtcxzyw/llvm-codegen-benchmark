@@ -1,5 +1,5 @@
 
-; 45 occurrences:
+; 44 occurrences:
 ; coremark/optimized/core_matrix.c.ll
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll
 ; graphviz/optimized/mincross.c.ll
@@ -18,7 +18,6 @@
 ; minetest/optimized/minimap.cpp.ll
 ; minetest/optimized/test_content_mapblock.cpp.ll
 ; minetest/optimized/test_voxelalgorithms.cpp.ll
-; minetest/optimized/test_voxelmanipulator.cpp.ll
 ; minetest/optimized/voxel.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; ncnn/optimized/convolution_x86.cpp.ll

@@ -17,7 +17,7 @@ func0000000000000008:                   # @func0000000000000008
 	.long	1075                            # 0x433
 .LCPI1_2:
 	.long	53                              # 0x35
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	vpxord	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpaddd	.LCPI1_1(%rip){1to8}, %ymm0, %ymm0

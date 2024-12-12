@@ -35,11 +35,11 @@
 define i64 @func0000000000000001(i64 %0) #0 {
 entry:
   %1 = sub nsw i64 0, %0
-  %2 = and i64 %1, %0
+  %2 = and i64 %0, %1
   ret i64 %2
 }
 
-; 81 occurrences:
+; 80 occurrences:
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; hwloc/optimized/bitmap.ll
 ; hyperscan/optimized/block.c.ll
@@ -77,7 +77,6 @@ entry:
 ; llvm/optimized/MemCpyOptimizer.cpp.ll
 ; llvm/optimized/Operator.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/ScalarizeMaskedMemIntrin.cpp.ll
 ; llvm/optimized/Scalarizer.cpp.ll
@@ -125,7 +124,7 @@ entry:
 define i64 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = sub i64 0, %0
-  %2 = and i64 %1, %0
+  %2 = and i64 %0, %1
   ret i64 %2
 }
 

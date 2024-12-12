@@ -5,25 +5,23 @@
 define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 8
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = and i64 %4, 1008
   %6 = or i64 %5, %0
   ret i64 %6
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; linux/optimized/generic.ll
-; linux/optimized/intel_epb.ll
 ; linux/optimized/lbr.ll
-; linux/optimized/mmconf-fam10h_64.ll
 ; qemu/optimized/hw_char_riscv_htif.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = and i64 %4, -281474976710656
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   ret i64 %6
 }
 
@@ -134,28 +132,26 @@ define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 58
   %.masked = and i64 %1, -288230376151711744
-  %4 = or i64 %3, %.masked
+  %4 = or i64 %.masked, %3
   %5 = or i64 %4, %0
   ret i64 %5
 }
 
-; 11 occurrences:
+; 9 occurrences:
 ; linux/optimized/acpi-cpufreq.ll
 ; linux/optimized/apic.ll
-; linux/optimized/centaur.ll
 ; linux/optimized/intel_pstate.ll
 ; linux/optimized/process.ll
 ; linux/optimized/therm_throt.ll
 ; linux/optimized/via-rng.ll
 ; linux/optimized/x86_pkg_temp_thermal.ll
-; linux/optimized/zhaoxin.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/SampleProfileProbe.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 62
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = and i64 %4, 9223372036854775807
   %6 = or disjoint i64 %5, %0
   ret i64 %6
@@ -173,9 +169,9 @@ entry:
 define i64 @func000000000000000d(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 10
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = and i64 %4, 1015808
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   ret i64 %6
 }
 
@@ -188,7 +184,7 @@ entry:
   %3 = shl i64 %2, 32
   %.masked = and i64 %1, -65536
   %4 = or i64 %3, %.masked
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   ret i64 %5
 }
 

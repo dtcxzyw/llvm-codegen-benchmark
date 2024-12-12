@@ -23,7 +23,8 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; lvgl/optimized/lv_circle_buf.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; raylib/optimized/rmodels.c.ll

@@ -2,7 +2,7 @@
 	.quad	-64                             # 0xffffffffffffffc0
 .LCPI0_1:
 	.quad	2305843009213693951             # 0x1fffffffffffffff
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	vpsllq	$3, %ymm2, %ymm2
 	vpaddq	%ymm0, %ymm1, %ymm0
 	vpaddq	%ymm0, %ymm2, %ymm0
@@ -28,7 +28,7 @@ func0000000000000004:                   # @func0000000000000004
 	.quad	-32                             # 0xffffffffffffffe0
 .LCPI2_1:
 	.quad	3                               # 0x3
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpsllq	$2, %ymm2, %ymm2
 	vpaddq	%ymm0, %ymm1, %ymm0
 	vpaddq	%ymm0, %ymm2, %ymm0
@@ -39,7 +39,7 @@ func0000000000000011:                   # @func0000000000000011
 	retq
 .LCPI3_0:
 	.quad	-64                             # 0xffffffffffffffc0
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	vpsllq	$3, %ymm2, %ymm2
 	vpaddq	%ymm0, %ymm1, %ymm0
 	vpaddq	%ymm0, %ymm2, %ymm0
@@ -53,7 +53,7 @@ func000000000000005a:                   # @func000000000000005a
 	.quad	-64                             # 0xffffffffffffffc0
 .LCPI4_1:
 	.quad	2                               # 0x2
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	vpsllq	$3, %ymm2, %ymm2
 	vpaddq	%ymm0, %ymm1, %ymm0
 	vpaddq	%ymm0, %ymm2, %ymm0
@@ -66,7 +66,7 @@ func0000000000000054:                   # @func0000000000000054
 	.quad	-64                             # 0xffffffffffffffc0
 .LCPI5_1:
 	.quad	64                              # 0x40
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	vpsllq	$3, %ymm2, %ymm2
 	vpaddq	%ymm0, %ymm1, %ymm0
 	vpaddq	%ymm0, %ymm2, %ymm0

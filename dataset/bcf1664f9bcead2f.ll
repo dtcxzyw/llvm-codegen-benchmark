@@ -11,7 +11,7 @@
 ; oiio/optimized/filesystem.cpp.ll
 ; xgboost/optimized/context.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000050(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000090(ptr %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 24
   %3 = icmp ult i64 %2, 4

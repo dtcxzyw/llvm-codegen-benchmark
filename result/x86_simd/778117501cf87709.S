@@ -7,5 +7,5 @@ func0000000000000001:                   # @func0000000000000001
 	vpmovb2m	%xmm1, %k1
 	vpandd	.LCPI0_1(%rip){1to4}, %xmm2, %xmm1
 	vmovdqu8	%xmm1, %xmm1 {%k1} {z}
-	vpcmpeqb	%xmm0, %xmm1, %xmm0
+	vpcmpeqb	%xmm1, %xmm0, %xmm0
 	retq

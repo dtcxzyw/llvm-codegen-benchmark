@@ -1,7 +1,7 @@
 .LCPI0_0:
-	.long	3741321087                      # 0xdf00077f
+	.long	4294967294                      # 0xfffffffe
 .LCPI0_1:
-	.long	1073740863                      # 0x3ffffc3f
+	.long	4294967293                      # 0xfffffffd
 func0000000000000001:                   # @func0000000000000001
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1

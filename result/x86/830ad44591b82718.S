@@ -1,7 +1,7 @@
-func000000000000006a:                   # @func000000000000006a
+func00000000000000ca:                   # @func00000000000000ca
 	shlq	$6, %rdx
-	cmpq	%rsi, %rdx
-	setg	%cl
+	cmpq	%rdx, %rsi
+	setl	%cl
 	testq	%rdi, %rdi
 	setg	%al
 	andb	%cl, %al

@@ -40,7 +40,7 @@ entry:
 define i8 @func0000000000000020(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 1
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = trunc i64 %3 to i8
   ret i8 %4
 }

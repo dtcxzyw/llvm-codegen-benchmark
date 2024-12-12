@@ -1,6 +1,7 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
+; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll

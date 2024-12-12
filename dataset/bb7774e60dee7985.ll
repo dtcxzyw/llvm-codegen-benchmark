@@ -18,4 +18,15 @@ entry:
   ret double %3
 }
 
+; 2 occurrences:
+; node/optimized/libnode.node_report.ll
+; xgboost/optimized/rank_metric.cc.ll
+; Function Attrs: nounwind
+define double @func0000000000000001(i1 %0, i64 %1) #0 {
+entry:
+  %2 = uitofp nneg i64 %1 to double
+  %3 = select i1 %0, double 1.000000e+00, double %2
+  ret double %3
+}
+
 attributes #0 = { nounwind }

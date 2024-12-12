@@ -30,13 +30,14 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; abc/optimized/wlcNtk.c.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 11
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = lshr i32 %3, 3
   ret i32 %4
 }
@@ -53,13 +54,25 @@ entry:
 }
 
 ; 2 occurrences:
+; libwebp/optimized/dwebp.c.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, 134217473
+  %3 = mul i32 %0, %2
+  %4 = lshr i32 %3, 10
+  ret i32 %4
+}
+
+; 2 occurrences:
 ; openblas/optimized/dsptrf.c.ll
 ; openusd/optimized/tessellation.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -2
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = lshr i32 %3, 1
   ret i32 %4
 }
@@ -84,19 +97,8 @@ entry:
 define i32 @func0000000000000010(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 1
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = lshr i32 %3, 2
-  ret i32 %4
-}
-
-; 1 occurrences:
-; libwebp/optimized/dwebp.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add nsw i32 %1, 1
-  %3 = mul i32 %2, %0
-  %4 = lshr i32 %3, 1
   ret i32 %4
 }
 

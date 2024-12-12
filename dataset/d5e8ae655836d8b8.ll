@@ -1,9 +1,8 @@
 
-%"class.hermes::vm::GCHermesValueBase.2880473" = type { %"class.hermes::vm::HermesValue.2880474" }
-%"class.hermes::vm::HermesValue.2880474" = type { i64 }
+%"class.hermes::vm::GCHermesValueBase.3074997" = type { %"class.hermes::vm::HermesValue.3074998" }
+%"class.hermes::vm::HermesValue.3074998" = type { i64 }
 
-; 8 occurrences:
-; libwebp/optimized/vp8l_dec.c.ll
+; 7 occurrences:
 ; linux/optimized/blk-merge.ll
 ; linux/optimized/tcp_sigpool.ll
 ; postgres/optimized/multixact.ll
@@ -21,7 +20,7 @@ entry:
   ret i64 %5
 }
 
-; 20 occurrences:
+; 21 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/cecCorr.c.ll
 ; abc/optimized/darLib.c.ll
@@ -38,15 +37,16 @@ entry:
 ; hermes/optimized/RuntimeJSONUtils.cpp.ll
 ; hermes/optimized/SegmentedArray.cpp.ll
 ; libpng/optimized/pngrutil.c.ll
+; libwebp/optimized/vp8l_dec.c.ll
 ; llvm/optimized/ThreadSafetyCommon.cpp.ll
 ; openjdk/optimized/mlib_c_ImageCopy.ll
 ; openjdk/optimized/pngrutil.ll
 ; wolfssl/optimized/rsa.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000006(ptr %0, i32 %1) #0 {
+define i64 @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = and i64 %4, 1
   ret i64 %5
@@ -70,10 +70,10 @@ entry:
 ; hyperscan/optimized/runtime.c.ll
 ; llvm/optimized/CGCall.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000002(ptr %0, i32 %1) #0 {
+define i64 @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = getelementptr nusw %"class.hermes::vm::GCHermesValueBase.2880473", ptr %0, i64 %2
+  %3 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3074997", ptr %0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = and i64 %4, 1125899902648320
   ret i64 %5

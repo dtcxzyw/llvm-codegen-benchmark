@@ -1,104 +1,66 @@
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	movi	v5.2d, #0xffffffffffffffff
-	cmeq	v4.8b, v4.8b, v5.8b
-	sshll	v4.8h, v4.8b, #0
-	sshll2	v5.4s, v4.8h, #0
-	sshll	v4.4s, v4.4h, #0
-	and	v2.16b, v2.16b, v4.16b
-	and	v3.16b, v3.16b, v5.16b
-	add	v1.4s, v3.4s, v1.4s
-	add	v0.4s, v2.4s, v0.4s
+	mov	w8, #255                        // =0xff
+	bics	wzr, w8, w2
+	csel	w8, w1, wzr, eq
+	add	w0, w0, w8
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	movi	v5.2d, #0xffffffffffffffff
-	cmeq	v4.8b, v4.8b, v5.8b
-	sshll	v4.8h, v4.8b, #0
-	sshll2	v5.4s, v4.8h, #0
-	sshll	v4.4s, v4.4h, #0
-	and	v2.16b, v2.16b, v4.16b
-	and	v3.16b, v3.16b, v5.16b
-	add	v1.4s, v3.4s, v1.4s
-	add	v0.4s, v2.4s, v0.4s
+	mov	w8, #255                        // =0xff
+	bics	wzr, w8, w2
+	csel	w8, w1, wzr, eq
+	add	w0, w0, w8
 	ret
                                         // -- End function
 func000000000000002b:                   // @func000000000000002b
 // %bb.0:                               // %entry
-	movi	v5.8b, #64
-	cmgt	v4.8b, v4.8b, v5.8b
-	movi	v5.4s, #18
-	sshll	v4.8h, v4.8b, #0
-	sshll2	v6.4s, v4.8h, #0
-	sshll	v4.4s, v4.4h, #0
-	bif	v2.16b, v5.16b, v4.16b
-	bif	v3.16b, v5.16b, v6.16b
-	add	v1.4s, v3.4s, v1.4s
-	add	v0.4s, v2.4s, v0.4s
+	sxtb	w8, w2
+	cmp	w8, #64
+	mov	w8, #18                         // =0x12
+	csel	w8, w1, w8, gt
+	add	w0, w8, w0
 	ret
                                         // -- End function
 func0000000000000023:                   // @func0000000000000023
 // %bb.0:                               // %entry
-	movi	v5.8b, #13
-	cmhi	v4.8b, v4.8b, v5.8b
-	sshll	v4.8h, v4.8b, #0
-	sshll2	v5.4s, v4.8h, #0
-	sshll	v4.4s, v4.4h, #0
-	and	v2.16b, v2.16b, v4.16b
-	and	v3.16b, v3.16b, v5.16b
-	add	v1.4s, v3.4s, v1.4s
-	add	v0.4s, v2.4s, v0.4s
+	and	w8, w2, #0xff
+	cmp	w8, #13
+	csel	w8, w1, wzr, hi
+	add	w0, w0, w8
 	ret
                                         // -- End function
 func0000000000000020:                   // @func0000000000000020
 // %bb.0:                               // %entry
-	movi	v5.8b, #2
-	cmhi	v4.8b, v4.8b, v5.8b
-	sshll	v4.8h, v4.8b, #0
-	sshll2	v5.4s, v4.8h, #0
-	sshll	v4.4s, v4.4h, #0
-	and	v2.16b, v2.16b, v4.16b
-	and	v3.16b, v3.16b, v5.16b
-	add	v1.4s, v3.4s, v1.4s
-	add	v0.4s, v2.4s, v0.4s
+	and	w8, w2, #0xff
+	cmp	w8, #2
+	csel	w8, w1, wzr, hi
+	add	w0, w8, w0
 	ret
                                         // -- End function
 func0000000000000028:                   // @func0000000000000028
 // %bb.0:                               // %entry
-	cmge	v4.8b, v4.8b, #0
-	movi	v5.4s, #4
-	sshll	v4.8h, v4.8b, #0
-	sshll2	v6.4s, v4.8h, #0
-	sshll	v4.4s, v4.4h, #0
-	bif	v2.16b, v5.16b, v4.16b
-	bif	v3.16b, v5.16b, v6.16b
-	add	v1.4s, v3.4s, v1.4s
-	add	v0.4s, v2.4s, v0.4s
+	sxtb	w8, w2
+	cmp	w8, #0
+	mov	w8, #4                          // =0x4
+	csel	w8, w1, w8, ge
+	add	w0, w0, w8
 	ret
                                         // -- End function
 func000000000000002a:                   // @func000000000000002a
 // %bb.0:                               // %entry
-	cmge	v4.8b, v4.8b, #0
-	movi	v5.4s, #4
-	sshll	v4.8h, v4.8b, #0
-	sshll2	v6.4s, v4.8h, #0
-	sshll	v4.4s, v4.4h, #0
-	bif	v2.16b, v5.16b, v4.16b
-	bif	v3.16b, v5.16b, v6.16b
-	add	v1.4s, v3.4s, v1.4s
-	add	v0.4s, v2.4s, v0.4s
+	sxtb	w8, w2
+	cmp	w8, #0
+	mov	w8, #4                          // =0x4
+	csel	w8, w1, w8, ge
+	add	w0, w8, w0
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	cmeq	v4.8b, v4.8b, #0
-	sshll	v4.8h, v4.8b, #0
-	sshll2	v5.4s, v4.8h, #0
-	sshll	v4.4s, v4.4h, #0
-	and	v2.16b, v2.16b, v4.16b
-	and	v3.16b, v3.16b, v5.16b
-	add	v1.4s, v3.4s, v1.4s
-	add	v0.4s, v2.4s, v0.4s
+	tst	w2, #0xff
+	csel	w8, w1, wzr, eq
+	add	w0, w0, w8
 	ret
                                         // -- End function

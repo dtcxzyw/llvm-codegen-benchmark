@@ -1,10 +1,10 @@
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	subl	%esi, %edi
 	subl	%edx, %esi
 	cmpl	%esi, %edi
 	setg	%al
 	retq
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	subl	%esi, %edi
 	subl	%edx, %esi
 	cmpl	%esi, %edi

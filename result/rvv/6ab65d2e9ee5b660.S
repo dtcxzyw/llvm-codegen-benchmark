@@ -6,5 +6,5 @@ func0000000000000002:                   # @func0000000000000002
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vnsrl.wi	v8, v8, 0
 	vmseq.vi	v8, v8, 0
-	vmor.mm	v0, v8, v0
+	vmor.mm	v0, v0, v8
 	ret

@@ -11,7 +11,7 @@
 ; spike/optimized/f64_to_ui32_r_minMag.ll
 ; wasmtime-rs/optimized/4u85yh8sn1llpfha.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000302(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2139095040
   %3 = icmp ne i64 %2, 2139095040

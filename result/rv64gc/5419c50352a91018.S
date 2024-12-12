@@ -1,10 +1,10 @@
-func00000000000001aa:                   # @func00000000000001aa
+func00000000000001ff:                   # @func00000000000001ff
 	sext.w	a2, a2
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 48
 	ret
-func00000000000000aa:                   # @func00000000000000aa
+func00000000000000ff:                   # @func00000000000000ff
 	slli	a2, a2, 32
 	slli	a0, a0, 2
 	srli	a2, a2, 30
@@ -12,19 +12,29 @@ func00000000000000aa:                   # @func00000000000000aa
 	add	a0, a0, a2
 	addi	a0, a0, 8
 	ret
-func000000000000012a:                   # @func000000000000012a
-	sext.w	a2, a2
-	slli	a0, a0, 2
-	lui	a3, 2
+func00000000000000fb:                   # @func00000000000000fb
+	slli	a2, a2, 32
+	slli	a0, a0, 4
+	srli	a2, a2, 32
 	add	a0, a0, a1
-	slli	a1, a2, 5
-	slli	a2, a2, 7
-	addiw	a3, a3, 328
-	sub	a2, a2, a1
-	add	a0, a0, a3
 	add	a0, a0, a2
+	addi	a0, a0, 192
 	ret
-func0000000000000180:                   # @func0000000000000180
+func00000000000000fa:                   # @func00000000000000fa
+	slli	a2, a2, 32
+	srli	a2, a2, 32
+	add	a0, a0, a1
+	add	a0, a0, a2
+	addi	a0, a0, 2
+	ret
+func00000000000000fe:                   # @func00000000000000fe
+	slli	a2, a2, 32
+	srli	a2, a2, 32
+	add	a0, a0, a1
+	add	a0, a0, a2
+	addi	a0, a0, 12
+	ret
+func00000000000001c0:                   # @func00000000000001c0
 	sext.w	a2, a2
 	slli	a0, a0, 2
 	slli	a2, a2, 2
@@ -50,10 +60,24 @@ func0000000000000000:                   # @func0000000000000000
 	add	a0, a0, a2
 	addi	a0, a0, 248
 	ret
-func00000000000000a0:                   # @func00000000000000a0
+func00000000000001fe:                   # @func00000000000001fe
+	sext.w	a2, a2
+	add	a0, a0, a1
+	add	a0, a0, a2
+	addi	a0, a0, 13
+	ret
+func00000000000000f0:                   # @func00000000000000f0
 	slli	a2, a2, 32
 	srli	a2, a2, 32
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 12
+	ret
+func00000000000000bf:                   # @func00000000000000bf
+	slli	a2, a2, 32
+	slli	a0, a0, 2
+	srli	a2, a2, 32
+	add	a0, a0, a1
+	add	a0, a0, a2
+	addi	a0, a0, -48
 	ret

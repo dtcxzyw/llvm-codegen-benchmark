@@ -1,5 +1,5 @@
 
-; 92 occurrences:
+; 94 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Glucose.cpp.ll
@@ -53,6 +53,8 @@
 ; linux/optimized/percpu.ll
 ; linux/optimized/skl_universal_plane.ll
 ; llvm/optimized/ReachingDefAnalysis.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; minetest/optimized/areastore.cpp.ll
 ; minetest/optimized/cavegen.cpp.ll
@@ -100,7 +102,7 @@ entry:
   ret i1 %3
 }
 
-; 71 occurrences:
+; 72 occurrences:
 ; abc/optimized/SimpSolver.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
 ; abc/optimized/abcDar.c.ll
@@ -142,7 +144,7 @@ entry:
 ; linux/optimized/jump_label.ll
 ; linux/optimized/percpu.ll
 ; llvm/optimized/APFixedPoint.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/MarchingCubes.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
@@ -172,6 +174,7 @@ entry:
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; wireshark/optimized/packet-per.c.ll
 ; yosys/optimized/SimpSolver.ll
+; zed-rs/optimized/4hdn1csvepxizqbxhztzuw0uw.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
@@ -180,10 +183,11 @@ entry:
   ret i1 %3
 }
 
-; 39 occurrences:
+; 40 occurrences:
 ; abc/optimized/ivyCut.c.ll
 ; abc/optimized/luckyFast16.c.ll
 ; assimp/optimized/IRRLoader.cpp.ll
+; boost/optimized/rational.ll
 ; clamav/optimized/regexec.c.ll
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; graphviz/optimized/gvgetfontlist_pango.c.ll
@@ -221,7 +225,7 @@ entry:
 ; z3/optimized/smt_context.cpp.ll
 ; z3/optimized/smt_enode.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 16
   %3 = icmp eq i32 %2, %0
@@ -271,20 +275,21 @@ entry:
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 16
   %3 = icmp slt i32 %2, %0
   ret i1 %3
 }
 
-; 33 occurrences:
+; 34 occurrences:
 ; abc/optimized/ivyFastMap.c.ll
 ; cmake/optimized/zstd_decompress_block.c.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; libwebp/optimized/sharpyuv.c.ll
 ; linux/optimized/trace_events_filter.ll
 ; linux/optimized/zstd_decompress_block.ll
+; lvgl/optimized/lv_chart.ll
 ; minetest/optimized/areastore.cpp.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
@@ -313,14 +318,14 @@ entry:
 ; spike/optimized/vmslt_vx.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 16
   %3 = icmp sgt i32 %2, %0
   ret i1 %3
 }
 
-; 44 occurrences:
+; 45 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/acbUtil.c.ll
@@ -348,6 +353,7 @@ entry:
 ; imgui/optimized/imgui_draw.cpp.ll
 ; libwebp/optimized/frame_dec.c.ll
 ; linux/optimized/skl_universal_plane.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; minetest/optimized/areastore.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/dungeongen.cpp.ll
@@ -412,7 +418,7 @@ entry:
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; spike/optimized/vmsle_vx.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002b(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 16
   %3 = icmp sge i32 %2, %0
@@ -426,7 +432,7 @@ entry:
 ; postgres/optimized/int.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000027(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 16
   %3 = icmp sle i32 %2, %0
@@ -445,12 +451,13 @@ entry:
   ret i1 %3
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; abc/optimized/bmcFx.c.ll
 ; abc/optimized/giaBalLut.c.ll
 ; abc/optimized/giaJf.c.ll
 ; linux/optimized/intel_atomic_plane.ll
 ; linux/optimized/percpu.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; php/optimized/ir_emit.ll
 ; raylib/optimized/raudio.c.ll
 ; spike/optimized/vmsne_vi.ll
@@ -462,9 +469,8 @@ entry:
   ret i1 %3
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; linux/optimized/mballoc.ll
-; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; opencv/optimized/hough.cpp.ll
 ; php/optimized/zend_jit.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
@@ -515,9 +521,19 @@ entry:
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; darktable/optimized/rawspeed-identify.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000009(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000019(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 1
+  %3 = icmp samesign uge i32 %2, %0
+  ret i1 %3
+}
+
+; 1 occurrences:
+; darktable/optimized/rawspeed-identify.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000009(i32 %0, i32 %1) #0 {
+entry:
+  %2 = ashr i32 %1, 2
   %3 = icmp uge i32 %2, %0
   ret i1 %3
 }
@@ -529,7 +545,7 @@ entry:
 ; postgres/optimized/int.ll
 ; spike/optimized/vmsne_vx.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 16
   %3 = icmp ne i32 %2, %0
@@ -539,7 +555,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/seq_buf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 1
   %3 = icmp ugt i32 %2, %0
@@ -562,10 +578,20 @@ entry:
 ; z3/optimized/euf_solver.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 24
   %3 = icmp ult i32 %2, %0
+  ret i1 %3
+}
+
+; 1 occurrences:
+; meshlab/optimized/filter_screened_poisson.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+entry:
+  %2 = ashr i32 %1, 1
+  %3 = icmp samesign ult i32 %2, %0
   ret i1 %3
 }
 

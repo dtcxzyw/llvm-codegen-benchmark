@@ -17,7 +17,7 @@ entry:
   ret ptr %5
 }
 
-; 55 occurrences:
+; 54 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; hermes/optimized/CFG.cpp.ll
 ; hermes/optimized/IR.cpp.ll
@@ -39,7 +39,6 @@ entry:
 ; postgres/optimized/predicate.ll
 ; z3/optimized/ast.cpp.ll
 ; z3/optimized/automaton.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/datatype_decl_plugin.cpp.ll
 ; z3/optimized/dl_mk_rule_inliner.cpp.ll
 ; z3/optimized/dyn_ack.cpp.ll

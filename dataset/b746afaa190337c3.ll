@@ -3,19 +3,20 @@
 ; image-rs/optimized/249ukonr3l56u09i.ll
 ; typst-rs/optimized/al9nyr8ju52xbc2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000d8(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 8, %1
   %3 = lshr i32 %0, 3
-  %4 = icmp ugt i32 %3, %2
+  %4 = icmp samesign ugt i32 %3, %2
   ret i1 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; image-rs/optimized/249ukonr3l56u09i.ll
 ; typst-rs/optimized/al9nyr8ju52xbc2.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000c1(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 8, %1
   %3 = lshr i32 %0, 3
@@ -48,11 +49,11 @@ entry:
 ; 1 occurrences:
 ; draco/optimized/mesh_sequential_decoder.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000058(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 2147483647, %1
   %3 = lshr i32 %0, 1
-  %4 = icmp ugt i32 %3, %2
+  %4 = icmp samesign ugt i32 %3, %2
   ret i1 %4
 }
 

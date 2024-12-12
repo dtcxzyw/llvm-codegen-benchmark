@@ -23,15 +23,3 @@ func0000000000000018:                   # @func0000000000000018
 .LBB1_2:
 	li	a0, 130
 	ret
-func0000000000000010:                   # @func0000000000000010
-	andi	a1, a1, 252
-	sltiu	a1, a1, 196
-	not	a1, a1
-	or	a0, a0, a1
-	andi	a0, a0, 1
-	bnez	a0, .LBB2_2
-	li	a0, 30
-	ret
-.LBB2_2:
-	li	a0, 90
-	ret

@@ -4,12 +4,12 @@
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1229782938247303441
   %3 = mul i64 %2, 1229782938247303441
   %4 = lshr i64 %3, 60
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -17,12 +17,12 @@ entry:
 ; eastl/optimized/TestRingBuffer.cpp.ll
 ; redis/optimized/hyperloglog.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001b(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 16383
   %3 = mul nuw nsw i64 %2, 6
   %4 = lshr i64 %3, 3
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 

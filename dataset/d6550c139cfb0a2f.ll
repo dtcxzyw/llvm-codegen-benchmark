@@ -8,10 +8,10 @@
 ; linux/optimized/md.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
+; lvgl/optimized/lv_theme_default.ll
 ; openexr/optimized/ImfRgbaFile.cpp.ll
 ; openspiel/optimized/simple_gin_rummy_bot_example.cc.ll
 ; qemu/optimized/hw_net_igb_core.c.ll
-; slurm/optimized/set_oomadj.ll
 ; sqlite/optimized/sqlite3.ll
 ; stockfish/optimized/tbprobe.ll
 ; Function Attrs: nounwind

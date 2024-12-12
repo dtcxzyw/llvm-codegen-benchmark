@@ -3,6 +3,12 @@ func0000000000000001:                   # @func0000000000000001
 	andl	$7, %eax
 	negq	%rax
 	retq
+func000000000000000d:                   # @func000000000000000d
+	shll	$4, %esi
+	leal	(%rsi,%rdi), %eax
+	andl	$1023, %eax                     # imm = 0x3FF
+	negq	%rax
+	retq
 func0000000000000009:                   # @func0000000000000009
 	shll	$4, %esi
 	leal	(%rsi,%rdi), %eax

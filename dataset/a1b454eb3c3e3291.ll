@@ -23,6 +23,18 @@ entry:
   ret i32 %6
 }
 
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000015(i32 %0, i32 %1, i16 %2) #0 {
+entry:
+  %3 = zext i16 %2 to i32
+  %4 = add nsw i32 %1, -785
+  %5 = add nsw i32 %4, %3
+  %6 = sub nsw i32 %5, %0
+  ret i32 %6
+}
+
 ; 2 occurrences:
 ; linux/optimized/udp.ll
 ; wireshark/optimized/packet-rfid-pn532-hci.c.ll

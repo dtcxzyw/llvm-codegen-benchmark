@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000041(i1 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = select i1 %0, i1 %3, i1 false

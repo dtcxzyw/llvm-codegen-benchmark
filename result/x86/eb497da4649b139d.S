@@ -23,6 +23,13 @@ func00000000000000f8:                   # @func00000000000000f8
 	leaq	(%rdi,%rsi,4), %rax
 	addq	%rcx, %rax
 	retq
+func00000000000000fc:                   # @func00000000000000fc
+	movabsq	$8589934588, %rax               # imm = 0x1FFFFFFFC
+	leaq	(%rax,%rdx,2), %rcx
+	andq	%rax, %rcx
+	leaq	(%rdi,%rsi,8), %rax
+	leaq	(%rax,%rcx,8), %rax
+	retq
 func00000000000000f0:                   # @func00000000000000f0
 	movabsq	$17179869172, %rax              # imm = 0x3FFFFFFF4
 	leaq	(%rax,%rdx,4), %rcx

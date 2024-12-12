@@ -1,5 +1,5 @@
 
-; 30 occurrences:
+; 31 occurrences:
 ; cmake/optimized/archive_read_support_format_mtree.c.ll
 ; cpython/optimized/xmltok.ll
 ; hermes/optimized/MicrosoftDemangle.cpp.ll
@@ -23,6 +23,7 @@
 ; php/optimized/iconv.ll
 ; postgres/optimized/postgres.ll
 ; qemu/optimized/hw_audio_virtio-snd.c.ll
+; verilator/optimized/V3AstNodes.cpp.ll
 ; verilator/optimized/V3VariableOrder.cpp.ll
 ; wasmtime-rs/optimized/3jqdez78s6gt3fnc.ll
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
@@ -40,7 +41,9 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
+; 8 occurrences:
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; llvm/optimized/SemaChecking.cpp.ll
 ; luau/optimized/isocline.c.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll

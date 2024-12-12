@@ -1,4 +1,4 @@
-func00000000000000c6:                   # @func00000000000000c6
+func0000000000000186:                   # @func0000000000000186
 	add	a1, a1, a2
 	addi	a1, a1, 1
 	and	a0, a0, a1
@@ -13,14 +13,14 @@ func000000000000000a:                   # @func000000000000000a
 	slti	a0, a0, 0
 	xori	a0, a0, 1
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	add	a1, a1, a2
 	addi	a1, a1, 1024
 	and	a0, a0, a1
 	sext.w	a0, a0
 	seqz	a0, a0
 	ret
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	add	a1, a1, a2
 	addi	a1, a1, -1
 	and	a0, a0, a1

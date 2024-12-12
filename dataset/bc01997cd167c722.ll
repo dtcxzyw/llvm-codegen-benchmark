@@ -5,7 +5,7 @@
 ; csmith/optimized/CVQualifiers.cpp.ll
 ; yosys/optimized/sat.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = add i64 %3, %0
@@ -21,7 +21,7 @@ entry:
 ; casadi/optimized/sx_function.cpp.ll
 ; pybind11/optimized/pybind11_cross_module_tests.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = add nsw i64 %3, %0

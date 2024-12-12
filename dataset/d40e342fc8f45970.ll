@@ -16,10 +16,10 @@ entry:
 ; libzmq/optimized/mtrie.cpp.ll
 ; libzmq/optimized/trie.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i8 %2) #0 {
+define ptr @func000000000000001e(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = getelementptr nusw ptr, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw ptr, ptr %0, i64 %3
   %5 = sub nsw i64 0, %1
   %6 = getelementptr nusw ptr, ptr %4, i64 %5
   ret ptr %6

@@ -1,6 +1,5 @@
 
-; 10 occurrences:
-; clamav/optimized/smallfn.cpp.ll
+; 9 occurrences:
 ; folly/optimized/Codel.cpp.ll
 ; icu/optimized/reslist.ll
 ; libjpeg-turbo/optimized/cdjpeg.c.ll

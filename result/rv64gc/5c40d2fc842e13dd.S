@@ -25,16 +25,6 @@ func00000000000000fd:                   # @func00000000000000fd
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func000000000000003f:                   # @func000000000000003f
-	li	a3, 9
-	slli	a2, a2, 32
-	slli	a1, a1, 32
-	slli	a3, a3, 33
-	srli	a1, a1, 32
-	mulhu	a2, a2, a3
-	add	a0, a0, a1
-	add	a0, a0, a2
-	ret
 func000000000000003c:                   # @func000000000000003c
 	slli	a2, a2, 32
 	lui	a3, 477

@@ -1,9 +1,10 @@
 
-; 21 occurrences:
+; 22 occurrences:
 ; arrow/optimized/UriParse.c.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; cpython/optimized/_datetimemodule.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
+; lvgl/optimized/lv_color.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; ncnn/optimized/mat_pixel.cpp.ll
 ; nori/optimized/nanovg.c.ll

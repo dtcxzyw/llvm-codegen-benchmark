@@ -18,8 +18,7 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; 3 occurrences:
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; php/optimized/crypt_sha256.ll

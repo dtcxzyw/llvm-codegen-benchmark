@@ -55,14 +55,21 @@ func0000000000000185:                   # @func0000000000000185
 	sbbq	$-1, %rsi
 	leaq	(%rsi,%rdi), %rax
 	retq
-func0000000000000085:                   # @func0000000000000085
+func0000000000000025:                   # @func0000000000000025
 	movq	%rdi, %rax
-	cmpl	$-2, %edx
+	cmpl	$1, %edx
 	adcq	%rsi, %rax
 	retq
 func000000000000018f:                   # @func000000000000018f
-	cmpl	$1, %edx
-	sbbq	$-1, %rsi
+	xorl	%eax, %eax
+	cmpl	$2, %edx
+	setne	%al
+	addq	%rdi, %rax
+	addq	%rsi, %rax
+	retq
+func0000000000000085:                   # @func0000000000000085
+	cmpl	$-2, %edx
+	adcq	$0, %rsi
 	leaq	(%rsi,%rdi), %rax
 	retq
 func000000000000008f:                   # @func000000000000008f
@@ -76,11 +83,6 @@ func0000000000000100:                   # @func0000000000000100
 	seta	%al
 	addq	%rdi, %rax
 	addq	%rsi, %rax
-	retq
-func0000000000000025:                   # @func0000000000000025
-	movq	%rdi, %rax
-	cmpl	$1, %edx
-	adcq	%rsi, %rax
 	retq
 func000000000000018c:                   # @func000000000000018c
 	cmpl	$1, %edx

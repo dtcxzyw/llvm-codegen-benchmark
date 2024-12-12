@@ -47,6 +47,12 @@ func0000000000000009:                   # @func0000000000000009
 	orl	%edi, %esi
 	leal	(%rsi,%rsi), %eax
 	retq
+func0000000000000006:                   # @func0000000000000006
+	movl	%esi, %eax
+	orl	%edx, %eax
+	orl	%edi, %eax
+	shll	$8, %eax
+	retq
 func000000000000000d:                   # @func000000000000000d
 	movl	%esi, %eax
 	orl	%edx, %eax

@@ -1,4 +1,4 @@
-func000000000000005b:                   # @func000000000000005b
+func000000000000009b:                   # @func000000000000009b
 	shlq	$32, %rdx
 	xorl	%eax, %eax
 	testb	$1, %dil

@@ -22,18 +22,6 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; openjdk/optimized/elfFile.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 192
-  %3 = icmp ne i32 %2, 0
-  %4 = xor i1 %0, true
-  %5 = select i1 %4, i1 true, i1 %3
-  ret i1 %5
-}
-
 ; 10 occurrences:
 ; arrow/optimized/string-to-double.cc.ll
 ; darktable/optimized/introspection_demosaic.c.ll

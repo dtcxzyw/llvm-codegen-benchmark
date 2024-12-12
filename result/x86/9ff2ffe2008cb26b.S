@@ -5,6 +5,12 @@ func000000000000001f:                   # @func000000000000001f
 	orl	%esi, %edi
 	orl	%edi, %eax
 	retq
+func000000000000001d:                   # @func000000000000001d
+	movl	%edi, %eax
+	shll	$14, %edx
+	orl	%esi, %eax
+	orl	%edx, %eax
+	retq
 func000000000000000f:                   # @func000000000000000f
 	andl	$128, %edx
 	leal	(,%rdx,8), %eax

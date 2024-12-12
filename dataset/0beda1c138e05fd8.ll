@@ -1,5 +1,7 @@
 
-; 12 occurrences:
+; 14 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; graphviz/optimized/post_process.c.ll
 ; gromacs/optimized/forcetable.cpp.ll
 ; openusd/optimized/patchBasis.cpp.ll

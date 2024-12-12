@@ -1,9 +1,9 @@
 
-%"struct.std::pair.3559081" = type <{ %"struct.cv::Ptr.25.3559071", float, [4 x i8] }>
-%"struct.cv::Ptr.25.3559071" = type { %"class.std::shared_ptr.26.3559072" }
-%"class.std::shared_ptr.26.3559072" = type { %"class.std::__shared_ptr.27.3559073" }
-%"class.std::__shared_ptr.27.3559073" = type { ptr, %"class.std::__shared_count.3559059" }
-%"class.std::__shared_count.3559059" = type { ptr }
+%"struct.std::pair.3739795" = type <{ %"struct.cv::Ptr.25.3739785", float, [4 x i8] }>
+%"struct.cv::Ptr.25.3739785" = type { %"class.std::shared_ptr.26.3739786" }
+%"class.std::shared_ptr.26.3739786" = type { %"class.std::__shared_ptr.27.3739787" }
+%"class.std::__shared_ptr.27.3739787" = type { ptr, %"class.std::__shared_count.3739773" }
+%"class.std::__shared_count.3739773" = type { ptr }
 
 ; 1 occurrences:
 ; php/optimized/zend_execute.ll
@@ -28,19 +28,6 @@ entry:
   %5 = shl i64 %4, 32
   %6 = ashr exact i64 %5, 32
   %7 = getelementptr i8, ptr %0, i64 %6
-  ret ptr %7
-}
-
-; 1 occurrences:
-; abc/optimized/extraUtilBitMatrix.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000066(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = lshr i64 %2, 5
-  %4 = add nuw nsw i64 %3, %1
-  %5 = shl i64 %4, 32
-  %6 = ashr exact i64 %5, 30
-  %7 = getelementptr nusw i8, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -90,7 +77,7 @@ entry:
   %4 = add nuw i64 %3, %1
   %5 = shl i64 %4, 32
   %6 = ashr exact i64 %5, 32
-  %7 = getelementptr nusw %"struct.std::pair.3559081", ptr %0, i64 %6
+  %7 = getelementptr nusw %"struct.std::pair.3739795", ptr %0, i64 %6
   ret ptr %7
 }
 

@@ -8,5 +8,5 @@ func0000000000000000:                   # @func0000000000000000
 	retq
 func0000000000000005:                   # @func0000000000000005
 	subl	%edi, %esi
-	leal	-5(%rsi), %eax
+	leal	1(%rsi), %eax
 	retq

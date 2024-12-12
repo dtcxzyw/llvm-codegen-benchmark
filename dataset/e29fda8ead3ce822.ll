@@ -3,7 +3,7 @@
 ; abc/optimized/bdcSpfd.c.ll
 ; assimp/optimized/BlenderDNA.cpp.ll
 ; assimp/optimized/BlenderScene.cpp.ll
-; cmake/optimized/archive_pack_dev.c.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
 ; gromacs/optimized/tng_io.c.ll
 ; linux/optimized/blk-core.ll
@@ -261,7 +261,7 @@ entry:
   %3 = shl i64 %2, 3
   %4 = and i64 %3, 32
   %5 = and i64 %1, 14
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   %7 = or i64 %6, %4
   ret i64 %7
 }
@@ -288,41 +288,13 @@ entry:
   %3 = shl nuw i64 %2, 24
   %4 = and i64 %3, 4278190080
   %5 = and i64 %1, 1095216660480
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   %7 = or disjoint i64 %6, %4
   ret i64 %7
 }
 
-; 2 occurrences:
-; llvm/optimized/AArch64MCCodeEmitter.cpp.ll
-; spike/optimized/triggers.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000e(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl nuw nsw i64 %2, 7
-  %4 = and i64 %3, 1920
-  %5 = and i64 %1, 2048
-  %6 = or disjoint i64 %5, %0
-  %7 = or i64 %6, %4
-  ret i64 %7
-}
-
-; 3 occurrences:
-; llvm/optimized/AArch64MCCodeEmitter.cpp.ll
-; llvm/optimized/RISCVMCCodeEmitter.cpp.ll
-; spike/optimized/triggers.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl nuw nsw i64 %2, 12
-  %4 = and i64 %3, 61440
-  %5 = and i64 %1, 1048576
-  %6 = or i64 %5, %0
-  %7 = or i64 %6, %4
-  ret i64 %7
-}
-
-; 41 occurrences:
+; 42 occurrences:
+; abc/optimized/bdcSpfd.c.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/page.ll
 ; llvm/optimized/AArch64FalkorHWPFFix.cpp.ll
@@ -367,25 +339,55 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = shl i64 %2, 4
-  %4 = and i64 %3, 4194304
-  %5 = and i64 %1, 131072
-  %6 = or i64 %5, %0
+  %3 = shl i64 %2, 8
+  %4 = and i64 %3, 1048320
+  %5 = and i64 %1, 255
+  %6 = or i64 %0, %5
   %7 = or i64 %6, %4
   ret i64 %7
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; abc/optimized/bdcSpfd.c.ll
 ; linux/optimized/init_64.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = shl i64 %2, 35
-  %4 = and i64 %3, 34359738368
-  %5 = and i64 %1, 17179869184
+  %3 = shl i64 %2, 40
+  %4 = and i64 %3, 4502500115742720
+  %5 = and i64 %1, -4503599627370496
   %6 = or i64 %5, %0
   %7 = or disjoint i64 %6, %4
+  ret i64 %7
+}
+
+; 2 occurrences:
+; llvm/optimized/AArch64MCCodeEmitter.cpp.ll
+; spike/optimized/triggers.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000e(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %2, 7
+  %4 = and i64 %3, 1920
+  %5 = and i64 %1, 2048
+  %6 = or disjoint i64 %0, %5
+  %7 = or i64 %6, %4
+  ret i64 %7
+}
+
+; 3 occurrences:
+; llvm/optimized/AArch64MCCodeEmitter.cpp.ll
+; llvm/optimized/RISCVMCCodeEmitter.cpp.ll
+; spike/optimized/triggers.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %2, 12
+  %4 = and i64 %3, 61440
+  %5 = and i64 %1, 1048576
+  %6 = or i64 %0, %5
+  %7 = or i64 %6, %4
   ret i64 %7
 }
 

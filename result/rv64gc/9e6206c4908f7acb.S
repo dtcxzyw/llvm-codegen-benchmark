@@ -1,4 +1,4 @@
-func00000000000000a1:                   # @func00000000000000a1
+func00000000000001e1:                   # @func00000000000001e1
 	andi	a1, a1, 8
 	seqz	a1, a1
 	add	a0, a0, a1
@@ -15,4 +15,11 @@ func0000000000000001:                   # @func0000000000000001
 .LBB1_2:
 	li	a1, -4
 	add	a0, a0, a1
+	ret
+func0000000000000141:                   # @func0000000000000141
+	andi	a1, a1, 255
+	addi	a1, a1, -48
+	seqz	a1, a1
+	add	a0, a0, a1
+	addi	a0, a0, -2
 	ret

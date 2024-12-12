@@ -1,5 +1,5 @@
 
-; 115 occurrences:
+; 116 occurrences:
 ; box2d/optimized/b2_collision.cpp.ll
 ; box2d/optimized/b2_contact_solver.cpp.ll
 ; box2d/optimized/b2_rope.cpp.ll
@@ -115,6 +115,7 @@
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:

@@ -51,7 +51,7 @@ func0000000000000002:                   # @func0000000000000002
 	.long	1                               # 0x1
 func0000000000000017:                   # @func0000000000000017
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1 # ymm1 = ~ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpbroadcastd	.LCPI5_0(%rip), %ymm1   # ymm1 = [1,1,1,1,1,1,1,1]
 	vpsllvd	%ymm0, %ymm1, %ymm0
 	retq
@@ -64,7 +64,7 @@ func0000000000000005:                   # @func0000000000000005
 func0000000000000015:                   # @func0000000000000015
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1 # ymm1 = ~ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpsllvd	%ymm0, %ymm2, %ymm0
 	retq
 .LCPI8_0:

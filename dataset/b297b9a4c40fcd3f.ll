@@ -1,5 +1,5 @@
 
-; 30 occurrences:
+; 31 occurrences:
 ; abc/optimized/verCore.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; fmt/optimized/chrono-test.cc.ll
@@ -23,6 +23,7 @@
 ; llvm/optimized/MCWin64EH.cpp.ll
 ; llvm/optimized/RegisterInfoEmitter.cpp.ll
 ; llvm/optimized/SemaAttr.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; qemu/optimized/hw_display_ati.c.ll
 ; qemu/optimized/system_ioport.c.ll
 ; qemu/optimized/tcg-op-ldst.c.ll
@@ -34,12 +35,13 @@
 define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 16
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; linux/optimized/huf_decompress.ll
 ; linux/optimized/uncore_snbep.ll
 ; linux/optimized/virtio_net.ll
 ; ruby/optimized/vm.ll
@@ -52,14 +54,13 @@ entry:
   ret i64 %4
 }
 
-; 203 occurrences:
+; 208 occurrences:
 ; abc/optimized/amapMerge.c.ll
 ; abc/optimized/blocksort.c.ll
 ; abc/optimized/ifDec07.c.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/cabd.c.ll
-; clamav/optimized/dns.c.ll
 ; clamav/optimized/kwajd.c.ll
 ; clamav/optimized/mszipd.c.ll
 ; clamav/optimized/textdet.c.ll
@@ -119,8 +120,6 @@ entry:
 ; linux/optimized/cdrom.ll
 ; linux/optimized/drm_hdcp_helper.ll
 ; linux/optimized/intel_sprite.ll
-; linux/optimized/intel_tcc.ll
-; linux/optimized/mmconfig_64.ll
 ; linux/optimized/timer.ll
 ; linux/optimized/virtio_scsi.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
@@ -134,7 +133,6 @@ entry:
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
-; nuttx/optimized/lib_wcwidth.c.ll
 ; opencv/optimized/attr_value.pb.cc.ll
 ; opencv/optimized/color_lab.cpp.ll
 ; opencv/optimized/op_def.pb.cc.ll
@@ -249,6 +247,15 @@ entry:
 ; yalantinglibs/optimized/data_def.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/3xn4w3qarvbzl2jkwavm0419t.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/4hgzf672qwd8x8ke1407yey6m.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; zstd/optimized/divsufsort.c.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; zstd/optimized/zstd_v02.c.ll
@@ -260,7 +267,7 @@ entry:
 define i64 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 3
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -281,12 +288,12 @@ entry:
 define i64 @func000000000000000e(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 8
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
 
-; 78 occurrences:
+; 89 occurrences:
 ; abc/optimized/darLib.c.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; assimp/optimized/zip.c.ll
@@ -365,6 +372,17 @@ entry:
 ; z3/optimized/smt_context.cpp.ll
 ; z3/optimized/spacer_context.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/3xn4w3qarvbzl2jkwavm0419t.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/4hgzf672qwd8x8ke1407yey6m.ll
+; zed-rs/optimized/4wlt97p2na7yq96c9gq3wlrfc.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
+; zed-rs/optimized/boyei0qs0y80q8snoztbi8jt7.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
@@ -418,12 +436,12 @@ entry:
 define i64 @func000000000000000b(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 24
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
 
-; 39 occurrences:
+; 41 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/cpio.c.ll
@@ -463,6 +481,8 @@ entry:
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; wireshark/optimized/addr_resolv.c.ll
 ; wireshark/optimized/packet-dcm.c.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
@@ -510,7 +530,7 @@ entry:
 define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 4
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -545,7 +565,7 @@ entry:
 define i64 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 3
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }

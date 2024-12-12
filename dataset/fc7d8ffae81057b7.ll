@@ -13,11 +13,11 @@
 ; z3/optimized/theory_str_mc.cpp.ll
 ; z3/optimized/theory_str_regex.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000582(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000001302(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
-  %5 = icmp eq i32 %4, %0
+  %5 = icmp eq i32 %0, %4
   %6 = icmp ne i32 %1, 0
   %7 = or i1 %5, %6
   ret i1 %7
@@ -27,11 +27,11 @@ entry:
 ; zxing/optimized/QRDetector.cpp.ll
 ; zxing/optimized/QRVersion.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000422(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000001042(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
-  %5 = icmp eq i32 %4, %0
+  %5 = icmp eq i32 %0, %4
   %6 = icmp eq i32 %1, 0
   %7 = or i1 %5, %6
   ret i1 %7

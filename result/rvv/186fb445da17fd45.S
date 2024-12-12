@@ -5,13 +5,6 @@ func0000000000000005:                   # @func0000000000000005
 	li	a0, 88
 	vwmul.vx	v8, v10, a0
 	ret
-func0000000000000019:                   # @func0000000000000019
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vmsle.vi	v0, v9, 5
-	vmerge.vim	v10, v8, 1, v0
-	li	a0, 12
-	vwmul.vx	v8, v10, a0
-	ret
 func0000000000000029:                   # @func0000000000000029
 	lui	a0, 32
 	addi	a0, a0, -5

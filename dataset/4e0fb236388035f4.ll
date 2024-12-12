@@ -10,7 +10,10 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
+; 15 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; cvc5/optimized/subs_minimize.cpp.ll
 ; grpc/optimized/xds_resolver.cc.ll
 ; llvm/optimized/DependenceGraphBuilder.cpp.ll
@@ -19,6 +22,10 @@ entry:
 ; rust-analyzer-rs/optimized/3o06gi7obg71ydg1.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; yosys/optimized/liberty.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; zed-rs/optimized/5tjk7umffytrthtuv35pacndm.ll
+; zed-rs/optimized/a9n822469hhbvmntwly5c3zys.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i8 %0, ptr %1, ptr %2) #0 {
 entry:

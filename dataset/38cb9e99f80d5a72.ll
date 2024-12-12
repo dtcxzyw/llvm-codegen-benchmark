@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 34 occurrences:
 ; freetype/optimized/truetype.c.ll
 ; llvm/optimized/APINotesReader.cpp.ll
 ; llvm/optimized/Attributes.cpp.ll
@@ -20,7 +20,6 @@
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; llvm/optimized/MSVC.cpp.ll
 ; llvm/optimized/PartialInlining.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RewriteStatepointsForGC.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll

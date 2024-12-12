@@ -1,14 +1,9 @@
 
-; 10 occurrences:
+; 5 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; linux/optimized/page-writeback.ll
-; llvm/optimized/SemaChecking.cpp.ll
 ; mold/optimized/compress.cc.ll
-; openblas/optimized/dlauum_L_single.c.ll
-; openblas/optimized/dlauum_U_single.c.ll
-; openblas/optimized/dpotrf_U_single.c.ll
-; postgres/optimized/guc.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
@@ -27,7 +22,7 @@ entry:
 ; tokenizers-rs/optimized/2d3ht47jz0iets91.ll
 ; wasmtime-rs/optimized/47hgs4eifsow3k34.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 2
   %3 = icmp eq i64 %0, -9223372036854775752

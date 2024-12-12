@@ -1,9 +1,9 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	xorq	%rsi, %rdi
 	btq	%rdx, %rdi
 	setae	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	xorq	%rsi, %rdi
 	shrxq	%rdx, %rdi, %rax
 	testq	%rax, %rax

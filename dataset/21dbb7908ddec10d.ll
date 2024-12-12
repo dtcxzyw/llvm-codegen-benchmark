@@ -1,5 +1,16 @@
 
-; 46 occurrences:
+; 57 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
+; darktable/optimized/introspection_cacorrect.c.ll
 ; duckdb/optimized/ub_duckdb_aggr_algebraic.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_regr.cpp.ll
 ; g2o/optimized/edge_project_stereo_xyz_onlypose.cpp.ll
@@ -50,8 +61,8 @@
 define double @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, %2
-  %4 = fmul double %3, %1
-  %5 = fmul double %4, %0
+  %4 = fmul double %1, %3
+  %5 = fmul double %0, %4
   ret double %5
 }
 

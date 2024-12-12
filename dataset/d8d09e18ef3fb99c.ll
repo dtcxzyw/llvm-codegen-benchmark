@@ -1,5 +1,5 @@
 
-; 593 occurrences:
+; 595 occurrences:
 ; abc/optimized/abcLutmin.c.ll
 ; abc/optimized/amapPerm.c.ll
 ; abc/optimized/bblif.c.ll
@@ -23,7 +23,6 @@
 ; abc/optimized/sscCore.c.ll
 ; abc/optimized/sscSim.c.ll
 ; abc/optimized/timMan.c.ll
-; abseil-cpp/optimized/mutex.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; arrow/optimized/UriParse.c.ll
 ; arrow/optimized/decimal.cc.ll
@@ -35,6 +34,10 @@
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/test_filebuf.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
@@ -87,7 +90,6 @@
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; darktable/optimized/introspection_liquify.c.ll
-; darktable/optimized/print_settings.c.ll
 ; draco/optimized/sequential_integer_attribute_decoder.cc.ll
 ; draco/optimized/sequential_integer_attribute_encoder.cc.ll
 ; draco/optimized/sequential_normal_attribute_decoder.cc.ll
@@ -181,8 +183,6 @@
 ; linux/optimized/esp6.ll
 ; linux/optimized/extents.ll
 ; linux/optimized/filter.ll
-; linux/optimized/generic_mpih-add1.ll
-; linux/optimized/generic_mpih-sub1.ll
 ; linux/optimized/i915_gpu_error.ll
 ; linux/optimized/i915_mitigations.ll
 ; linux/optimized/icmp.ll
@@ -200,11 +200,9 @@
 ; linux/optimized/pci_root.ll
 ; linux/optimized/percpu.ll
 ; linux/optimized/printk.ll
-; linux/optimized/readdir.ll
 ; linux/optimized/scsi_logging.ll
 ; linux/optimized/slub.ll
 ; linux/optimized/socket.ll
-; linux/optimized/support.ll
 ; linux/optimized/swiotlb.ll
 ; linux/optimized/sys.ll
 ; linux/optimized/trace_events_filter.ll
@@ -222,6 +220,7 @@
 ; llvm/optimized/CloneFunction.cpp.ll
 ; llvm/optimized/CodeGenModule.cpp.ll
 ; llvm/optimized/Core.cpp.ll
+; llvm/optimized/CoroSplit.cpp.ll
 ; llvm/optimized/CycleAnalysis.cpp.ll
 ; llvm/optimized/CycleInfo.cpp.ll
 ; llvm/optimized/DeadArgumentElimination.cpp.ll
@@ -236,6 +235,7 @@
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/SourceMgr.cpp.ll
 ; llvm/optimized/VarLenCodeEmitterGen.cpp.ll
+; llvm/optimized/WholeProgramDevirt.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; llvm/optimized/X86WinEHState.cpp.ll
 ; lua/optimized/lapi.ll
@@ -258,6 +258,10 @@
 ; luau/optimized/lutf8lib.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
 ; luau/optimized/lvmutils.cpp.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_draw_sw_fill.ll
+; lvgl/optimized/lv_draw_sw_triangle.ll
 ; lz4/optimized/lz4.c.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
@@ -410,7 +414,6 @@
 ; openssl/optimized/libcrypto-lib-evp_enc.ll
 ; openssl/optimized/libcrypto-lib-ffc_params_generate.ll
 ; openssl/optimized/libcrypto-lib-property_parse.ll
-; openssl/optimized/libcrypto-lib-rsa_none.ll
 ; openssl/optimized/libcrypto-lib-rsa_oaep.ll
 ; openssl/optimized/libcrypto-lib-v3_utl.ll
 ; openssl/optimized/libcrypto-shlib-cms_pwri.ll
@@ -422,7 +425,6 @@
 ; openssl/optimized/libcrypto-shlib-evp_enc.ll
 ; openssl/optimized/libcrypto-shlib-ffc_params_generate.ll
 ; openssl/optimized/libcrypto-shlib-property_parse.ll
-; openssl/optimized/libcrypto-shlib-rsa_none.ll
 ; openssl/optimized/libcrypto-shlib-rsa_oaep.ll
 ; openssl/optimized/libcrypto-shlib-v3_utl.ll
 ; openusd/optimized/convolve.c.ll

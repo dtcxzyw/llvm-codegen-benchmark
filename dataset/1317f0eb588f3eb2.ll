@@ -1,7 +1,6 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; darktable/optimized/Cr2sRawInterpolator.cpp.ll
-; linux/optimized/scsicam.ll
 ; rocksdb/optimized/testutil.cc.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i64 %0, i32 %1) #0 {
@@ -51,7 +50,7 @@ define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = add nsw i64 %2, -1
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   ret i64 %4
 }
 
@@ -157,7 +156,7 @@ define i64 @func0000000000000014(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = add nsw i64 %2, -1
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   ret i64 %4
 }
 

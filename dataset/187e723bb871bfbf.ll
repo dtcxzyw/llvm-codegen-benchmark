@@ -12,14 +12,13 @@ entry:
   ret i32 %7
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; glslang/optimized/ParseHelper.cpp.ll
 ; linux/optimized/hub.ll
 ; linux/optimized/ldt.ll
 ; linux/optimized/ohci-hcd.ll
 ; llvm/optimized/AArch64Disassembler.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
-; wireshark/optimized/mpeg-audio.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -41,19 +40,6 @@ entry:
   %5 = shl i32 %1, 2
   %6 = or disjoint i32 %4, %5
   %7 = or i32 %6, %0
-  ret i32 %7
-}
-
-; 1 occurrences:
-; hdf5/optimized/H5Zfletcher32.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000b(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = lshr i32 %2, 8
-  %4 = and i32 %3, 16711680
-  %5 = shl nuw i32 %1, 24
-  %6 = or disjoint i32 %5, %4
-  %7 = or disjoint i32 %6, %0
   ret i32 %7
 }
 

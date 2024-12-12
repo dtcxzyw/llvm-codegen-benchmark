@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; linux/optimized/addrconf.ll
 ; linux/optimized/fork.ll
 ; linux/optimized/journal.ll
@@ -10,10 +10,9 @@
 ; openssl/optimized/libssl-shlib-quic_txp.ll
 ; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
 ; redis/optimized/memtest.ll
-; redis/optimized/networking.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %0, 536870912
   %3 = icmp eq i64 %2, 0
@@ -29,7 +28,7 @@ entry:
 ; llvm/optimized/SanitizerArgs.cpp.ll
 ; llvm/optimized/SanitizerMetadata.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %0, 9
   %3 = icmp eq i64 %2, 0

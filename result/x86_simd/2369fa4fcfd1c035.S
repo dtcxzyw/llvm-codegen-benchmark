@@ -42,20 +42,20 @@ func0000000000000001:                   # @func0000000000000001
 	vpord	.LCPI4_1(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI5_0:
-	.long	65536                           # 0x10000
+	.long	1                               # 0x1
 .LCPI5_1:
-	.long	268435456                       # 0x10000000
-func0000000000000000:                   # @func0000000000000000
-	vpbroadcastd	.LCPI5_0(%rip), %ymm1   # ymm1 = [65536,65536,65536,65536,65536,65536,65536,65536]
+	.long	32                              # 0x20
+func0000000000000006:                   # @func0000000000000006
+	vpbroadcastd	.LCPI5_0(%rip), %ymm1   # ymm1 = [1,1,1,1,1,1,1,1]
 	vpsllvd	%ymm0, %ymm1, %ymm0
 	vpord	.LCPI5_1(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI6_0:
-	.long	2                               # 0x2
+	.long	65536                           # 0x10000
 .LCPI6_1:
-	.long	512                             # 0x200
-func0000000000000006:                   # @func0000000000000006
-	vpbroadcastd	.LCPI6_0(%rip), %ymm1   # ymm1 = [2,2,2,2,2,2,2,2]
+	.long	268435456                       # 0x10000000
+func0000000000000000:                   # @func0000000000000000
+	vpbroadcastd	.LCPI6_0(%rip), %ymm1   # ymm1 = [65536,65536,65536,65536,65536,65536,65536,65536]
 	vpsllvd	%ymm0, %ymm1, %ymm0
 	vpord	.LCPI6_1(%rip){1to8}, %ymm0, %ymm0
 	retq

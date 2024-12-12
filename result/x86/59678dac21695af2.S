@@ -1,30 +1,29 @@
-func00000000000001ba:                   # @func00000000000001ba
+func000000000000036a:                   # @func000000000000036a
 	shlq	$3, %rsi
-	cmpq	%rdi, %rsi
-	setl	%al
+	cmpq	%rsi, %rdi
+	setg	%al
 	retq
-func00000000000001b6:                   # @func00000000000001b6
+func0000000000000366:                   # @func0000000000000366
 	shlq	$3, %rsi
 	subq	%rsi, %rdi
 	cmpq	$8, %rdi
 	setl	%al
 	retq
-func00000000000000aa:                   # @func00000000000000aa
+func0000000000000168:                   # @func0000000000000168
+	shlq	$2, %rsi
+	subq	%rsi, %rdi
+	cmpq	$61, %rdi
+	setae	%al
+	retq
+func000000000000014a:                   # @func000000000000014a
 	addq	%rsi, %rsi
 	subq	%rsi, %rdi
 	cmpq	$8, %rdi
 	setge	%al
 	retq
-func00000000000001aa:                   # @func00000000000001aa
+func000000000000034a:                   # @func000000000000034a
 	shlq	$4, %rsi
 	subq	%rsi, %rdi
 	cmpq	$64, %rdi
 	setge	%al
-	retq
-func00000000000000b8:                   # @func00000000000000b8
-	shlq	$3, %rsi
-	subq	%rsi, %rdi
-	movabsq	$9223372036854775800, %rax      # imm = 0x7FFFFFFFFFFFFFF8
-	cmpq	%rax, %rdi
-	seta	%al
 	retq

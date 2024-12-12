@@ -26,9 +26,10 @@ entry:
   ret i32 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; abc/optimized/bmcUnroll.c.ll
 ; linux/optimized/intel_rps.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {

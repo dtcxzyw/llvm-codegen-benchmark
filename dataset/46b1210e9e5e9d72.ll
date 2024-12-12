@@ -1,7 +1,9 @@
 
-; 31 occurrences:
+; 34 occurrences:
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/giaSimBase.c.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; cmake/optimized/archive_getdate.c.ll
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
@@ -31,6 +33,7 @@
 ; wireshark/optimized/related_packet_delegate.cpp.ll
 ; wireshark/optimized/rtp_player_dialog.cpp.ll
 ; wireshark/optimized/syntax_line_edit.cpp.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
@@ -39,10 +42,9 @@ entry:
   ret i32 %2
 }
 
-; 81 occurrences:
+; 92 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/blocksort.c.ll
-; abc/optimized/dchMan.c.ll
 ; abc/optimized/fraClaus.c.ll
 ; abc/optimized/giaGen.c.ll
 ; abc/optimized/giaResub.c.ll
@@ -51,6 +53,12 @@ entry:
 ; arrow/optimized/decimal.cc.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; cmake/optimized/blocksort.c.ll
 ; coreutils-rs/optimized/21mzc6y6po60ra2.ll
 ; coreutils-rs/optimized/3a6umeboy1uh9t01.ll
@@ -74,6 +82,9 @@ entry:
 ; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/VectorUtils.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; lvgl/optimized/lv_chart.ll
 ; minetest/optimized/guiEngine.cpp.ll
 ; minetest/optimized/renderingengine.cpp.ll
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll
@@ -117,9 +128,12 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_herringbone_wang_tile.c.ll
 ; stb/optimized/stb_tilemap_editor.c.ll
+; turborepo-rs/optimized/4xosjxdd4tab2lzmgagh8c3os.ll
 ; velox/optimized/DateTimeFormatter.cpp.ll
 ; wireshark/optimized/packet-oran.c.ll
 ; wireshark/optimized/related_packet_delegate.cpp.ll
+; zed-rs/optimized/2nwrl7qhv6ci6obqg1itckcv6.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
 ; zxing/optimized/WhiteRectDetector.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {

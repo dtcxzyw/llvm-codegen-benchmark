@@ -36,7 +36,7 @@
 	.long	3                               # 0x3
 .LCPI0_3:
 	.zero	4,7
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpandd	.LCPI0_3(%rip){1to4}, %xmm2, %xmm2
 	vpcmpeqb	.LCPI0_1(%rip), %xmm2, %k1
 	vpaddd	.LCPI0_2(%rip){1to8}, %ymm1, %ymm0 {%k1}
@@ -85,14 +85,14 @@ func0000000000000001:                   # @func0000000000000001
 	vpaddd	.LCPI1_2(%rip){1to8}, %ymm1, %ymm0 {%k1}
 	retq
 .LCPI2_0:
-	.byte	2                               # 0x2
-	.byte	2                               # 0x2
-	.byte	2                               # 0x2
-	.byte	2                               # 0x2
-	.byte	2                               # 0x2
-	.byte	2                               # 0x2
-	.byte	2                               # 0x2
-	.byte	2                               # 0x2
+	.byte	64                              # 0x40
+	.byte	64                              # 0x40
+	.byte	64                              # 0x40
+	.byte	64                              # 0x40
+	.byte	64                              # 0x40
+	.byte	64                              # 0x40
+	.byte	64                              # 0x40
+	.byte	64                              # 0x40
 	.zero	1
 	.zero	1
 	.zero	1
@@ -101,9 +101,31 @@ func0000000000000001:                   # @func0000000000000001
 	.zero	1
 	.zero	1
 	.zero	1
-.LCPI2_1:
-	.long	4294967209                      # 0xffffffa9
-func0000000000000011:                   # @func0000000000000011
+func0000000000000041:                   # @func0000000000000041
 	vptestnmb	.LCPI2_0(%rip), %xmm2, %k1
-	vpaddd	.LCPI2_1(%rip){1to8}, %ymm1, %ymm0 {%k1}
+	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpsubd	%ymm2, %ymm1, %ymm0 {%k1}
+	retq
+.LCPI3_0:
+	.byte	2                               # 0x2
+	.byte	2                               # 0x2
+	.byte	2                               # 0x2
+	.byte	2                               # 0x2
+	.byte	2                               # 0x2
+	.byte	2                               # 0x2
+	.byte	2                               # 0x2
+	.byte	2                               # 0x2
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+.LCPI3_1:
+	.long	4294967209                      # 0xffffffa9
+func0000000000000021:                   # @func0000000000000021
+	vptestnmb	.LCPI3_0(%rip), %xmm2, %k1
+	vpaddd	.LCPI3_1(%rip){1to8}, %ymm1, %ymm0 {%k1}
 	retq

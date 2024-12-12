@@ -13,7 +13,7 @@ func0000000000000070:                   # @func0000000000000070
 	lui	a0, 247535
 	vwsll.vi	v14, v13, 8
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vor.vv	v10, v14, v10
+	vor.vv	v10, v10, v14
 	vsub.vv	v8, v8, v10
 	addi	a0, a0, 883
 	vadd.vx	v8, v8, a0

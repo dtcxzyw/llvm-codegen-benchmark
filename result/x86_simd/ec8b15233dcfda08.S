@@ -46,19 +46,26 @@ func0000000000000060:                   # @func0000000000000060
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI3_0:
-	.long	33                              # 0x21
-.LCPI3_1:
-	.long	32                              # 0x20
-func0000000000000008:                   # @func0000000000000008
-	vpandd	.LCPI3_0(%rip){1to4}, %xmm1, %xmm1
-	vpcmpeqd	.LCPI3_1(%rip){1to4}, %xmm1, %k0
+	.long	3                               # 0x3
+func0000000000000009:                   # @func0000000000000009
+	vptestnmd	.LCPI3_0(%rip){1to4}, %xmm1, %k0
 	vpmovm2q	%k0, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI4_0:
-	.long	268435840                       # 0x10000180
+	.long	7                               # 0x7
 func0000000000000061:                   # @func0000000000000061
 	vptestmd	.LCPI4_0(%rip){1to4}, %xmm1, %k0
+	vpmovm2q	%k0, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm0
+	retq
+.LCPI5_0:
+	.long	33                              # 0x21
+.LCPI5_1:
+	.long	32                              # 0x20
+func0000000000000008:                   # @func0000000000000008
+	vpandd	.LCPI5_0(%rip){1to4}, %xmm1, %xmm1
+	vpcmpeqd	.LCPI5_1(%rip){1to4}, %xmm1, %k0
 	vpmovm2q	%k0, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq

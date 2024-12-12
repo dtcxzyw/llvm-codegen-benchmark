@@ -1,5 +1,5 @@
 
-; 55 occurrences:
+; 58 occurrences:
 ; abc/optimized/abcTiming.c.ll
 ; assimp/optimized/SIBImporter.cpp.ll
 ; box2d/optimized/b2_dynamic_tree.cpp.ll
@@ -23,6 +23,9 @@
 ; imgui/optimized/imgui_tables.cpp.ll
 ; lightgbm/optimized/metric.cpp.ll
 ; lightgbm/optimized/objective_function.cpp.ll
+; lvgl/optimized/lv_draw_sw_triangle.ll
+; lvgl/optimized/lv_draw_triangle.ll
+; lvgl/optimized/lv_matrix.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/coordinateframe.cpp.ll
@@ -65,7 +68,7 @@ entry:
   ret float %6
 }
 
-; 31 occurrences:
+; 34 occurrences:
 ; box2d/optimized/b2_dynamic_tree.cpp.ll
 ; bullet3/optimized/btPersistentManifold.ll
 ; bullet3/optimized/btPolarDecomposition.ll
@@ -84,6 +87,9 @@ entry:
 ; gromacs/optimized/slagts.cpp.ll
 ; gromacs/optimized/slas2.cpp.ll
 ; gromacs/optimized/slasq3.cpp.ll
+; lvgl/optimized/lv_draw_sw_triangle.ll
+; lvgl/optimized/lv_draw_triangle.ll
+; lvgl/optimized/lv_matrix.ll
 ; minetest/optimized/player_sao.cpp.ll
 ; opencv/optimized/linefit.cpp.ll
 ; opencv/optimized/quasi_dense_stereo.cpp.ll
@@ -205,6 +211,18 @@ entry:
   %3 = fcmp olt float %1, %2
   %4 = select i1 %3, float %1, float %2
   %5 = fcmp oge float %4, %0
+  %6 = select i1 %5, float %4, float %0
+  ret float %6
+}
+
+; 1 occurrences:
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; Function Attrs: nounwind
+define float @func000000000000004a(float %0, float %1, float %2) #0 {
+entry:
+  %3 = fcmp ogt float %1, %2
+  %4 = select i1 %3, float %1, float %2
+  %5 = fcmp ole float %4, %0
   %6 = select i1 %5, float %4, float %0
   ret float %6
 }

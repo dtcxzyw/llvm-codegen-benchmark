@@ -21,7 +21,7 @@ func000000000000000c:                   # @func000000000000000c
 func0000000000000007:                   # @func0000000000000007
 	vcvtdq2pd	%ymm2, %zmm2
 	vdivpd	%zmm1, %zmm2, %zmm1
-	vmulpd	%zmm0, %zmm1, %zmm0
+	vmulpd	%zmm1, %zmm0, %zmm0
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vcmpneqpd	%zmm1, %zmm0, %k0
 	vpmovm2w	%k0, %xmm0

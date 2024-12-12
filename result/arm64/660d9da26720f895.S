@@ -6,7 +6,7 @@ func0000000000000048:                   // @func0000000000000048
 	movk	x8, #49842, lsl #48
 	umulh	x9, x2, x8
 	madd	x8, x3, x8, x9
-	add	x8, x8, x1
-	eor	x0, x8, x0
+	add	x8, x1, x8
+	eor	x0, x0, x8
 	ret
                                         // -- End function

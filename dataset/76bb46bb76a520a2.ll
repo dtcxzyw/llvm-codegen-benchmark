@@ -16,7 +16,7 @@ entry:
   ret i64 %7
 }
 
-; 27 occurrences:
+; 30 occurrences:
 ; hermes/optimized/Analysis.cpp.ll
 ; image-rs/optimized/1clnprdgqfw2q9lq.ll
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
@@ -44,12 +44,15 @@ entry:
 ; velox/optimized/ComplexVector.cpp.ll
 ; verilator/optimized/V3Config.cpp.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001b(i64 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 32
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   %6 = zext i32 %1 to i64
   %7 = or disjoint i64 %5, %6
   ret i64 %7
@@ -67,7 +70,7 @@ define i64 @func000000000000003b(i64 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 32
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   %6 = zext i32 %1 to i64
   %7 = or disjoint i64 %5, %6
   ret i64 %7
@@ -82,7 +85,7 @@ define i64 @func000000000000001f(i64 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 32
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   %6 = zext nneg i32 %1 to i64
   %7 = or disjoint i64 %5, %6
   ret i64 %7
@@ -95,7 +98,7 @@ define i64 @func0000000000000014(i64 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw i64 %3, 56
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   %6 = zext nneg i32 %1 to i64
   %7 = or i64 %5, %6
   ret i64 %7

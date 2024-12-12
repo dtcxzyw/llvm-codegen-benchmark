@@ -52,6 +52,20 @@ func0000000000000010:                   # @func0000000000000010
 	vpsrld	$31, %ymm0, %ymm0
 	retq
 .LCPI5_0:
+	.short	1                               # 0x1
+	.short	1                               # 0x1
+	.short	1                               # 0x1
+	.short	1                               # 0x1
+	.short	1                               # 0x1
+	.short	1                               # 0x1
+	.short	1                               # 0x1
+	.short	1                               # 0x1
+func0000000000000030:                   # @func0000000000000030
+	vpcmpnleuw	.LCPI5_0(%rip), %xmm0, %k0
+	vpmovm2d	%k0, %ymm0
+	vpsrld	$31, %ymm0, %ymm0
+	retq
+.LCPI6_0:
 	.short	16384                           # 0x4000
 	.short	16384                           # 0x4000
 	.short	16384                           # 0x4000
@@ -61,7 +75,21 @@ func0000000000000010:                   # @func0000000000000010
 	.short	16384                           # 0x4000
 	.short	16384                           # 0x4000
 func000000000000000c:                   # @func000000000000000c
-	vpcmpltw	.LCPI5_0(%rip), %xmm0, %k0
+	vpcmpltw	.LCPI6_0(%rip), %xmm0, %k0
+	vpmovm2d	%k0, %ymm0
+	vpsrld	$31, %ymm0, %ymm0
+	retq
+.LCPI7_0:
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+func0000000000000028:                   # @func0000000000000028
+	vpcmpltuw	.LCPI7_0(%rip), %xmm0, %k0
 	vpmovm2d	%k0, %ymm0
 	vpsrld	$31, %ymm0, %ymm0
 	retq

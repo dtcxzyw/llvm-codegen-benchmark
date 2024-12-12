@@ -1,4 +1,4 @@
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000014a:                   # @func000000000000014a
 	subq	%rdi, %rsi
 	testq	%rsi, %rsi
 	setg	%cl
@@ -6,14 +6,14 @@ func00000000000000aa:                   # @func00000000000000aa
 	setg	%al
 	andb	%cl, %al
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	cmpq	%rdi, %rsi
 	setne	%cl
 	testq	%rdi, %rdi
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	subq	%rdi, %rsi
 	movl	$4294967295, %eax               # imm = 0xFFFFFFFF
 	cmpq	%rax, %rsi
@@ -22,14 +22,14 @@ func000000000000004c:                   # @func000000000000004c
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000001aa:                   # @func00000000000001aa
+func000000000000054a:                   # @func000000000000054a
 	cmpq	%rdi, %rsi
 	setg	%cl
 	testq	%rdi, %rdi
 	setg	%al
 	andb	%cl, %al
 	retq
-func000000000000008c:                   # @func000000000000008c
+func000000000000010c:                   # @func000000000000010c
 	subq	%rdi, %rsi
 	cmpq	$10, %rsi
 	setae	%cl
@@ -37,7 +37,7 @@ func000000000000008c:                   # @func000000000000008c
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000018a:                   # @func000000000000018a
+func000000000000070a:                   # @func000000000000070a
 	subq	%rdi, %rsi
 	cmpq	$4, %rsi
 	setae	%cl
@@ -45,7 +45,7 @@ func000000000000018a:                   # @func000000000000018a
 	setg	%al
 	andb	%cl, %al
 	retq
-func0000000000000066:                   # @func0000000000000066
+func00000000000000c6:                   # @func00000000000000c6
 	subq	%rdi, %rsi
 	testq	%rsi, %rsi
 	setle	%cl
@@ -53,14 +53,14 @@ func0000000000000066:                   # @func0000000000000066
 	sets	%al
 	andb	%cl, %al
 	retq
-func00000000000000ca:                   # @func00000000000000ca
+func000000000000018a:                   # @func000000000000018a
 	cmpq	%rdi, %rsi
 	setne	%cl
 	testq	%rdi, %rdi
 	setns	%al
 	andb	%cl, %al
 	retq
-func00000000000000ac:                   # @func00000000000000ac
+func000000000000014c:                   # @func000000000000014c
 	cmpq	%rdi, %rsi
 	setne	%cl
 	testq	%rdi, %rdi

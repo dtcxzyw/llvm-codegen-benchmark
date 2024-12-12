@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.zero	16,1
-func00000000000000e2:                   # @func00000000000000e2
+func00000000000001c2:                   # @func00000000000001c2
 	vpslld	$8, %ymm1, %ymm1
 	vpor	%ymm0, %ymm1, %ymm0
 	vptestnmd	%ymm0, %ymm0, %k1
@@ -9,7 +9,7 @@ func00000000000000e2:                   # @func00000000000000e2
 	retq
 .LCPI1_0:
 	.zero	16,1
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000001d8:                   # @func00000000000001d8
 	vpslld	$8, %ymm1, %ymm1
 	vpor	%ymm0, %ymm1, %ymm0
 	vptestmd	%ymm0, %ymm0, %k1
@@ -18,7 +18,7 @@ func00000000000000f8:                   # @func00000000000000f8
 	retq
 .LCPI2_0:
 	.zero	16,1
-func00000000000000b8:                   # @func00000000000000b8
+func0000000000000158:                   # @func0000000000000158
 	vpslld	$24, %ymm1, %ymm1
 	vpor	%ymm0, %ymm1, %ymm0
 	vptestmd	%ymm0, %ymm0, %k1
@@ -27,7 +27,7 @@ func00000000000000b8:                   # @func00000000000000b8
 	retq
 .LCPI3_0:
 	.zero	16,1
-func0000000000000038:                   # @func0000000000000038
+func0000000000000058:                   # @func0000000000000058
 	vpslld	$6, %ymm1, %ymm1
 	vpor	%ymm0, %ymm1, %ymm0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1

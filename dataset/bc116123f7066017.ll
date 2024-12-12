@@ -21,7 +21,7 @@ entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = lshr i32 %2, 3
   %4 = and i32 %3, 3968
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = and i32 %5, -128
   ret i32 %6
 }

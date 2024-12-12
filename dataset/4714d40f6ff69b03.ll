@@ -1,10 +1,9 @@
 
-; 21 occurrences:
+; 20 occurrences:
 ; git/optimized/diff.ll
 ; git/optimized/dir.ll
 ; icu/optimized/locid.ll
 ; linux/optimized/cpuidle.ll
-; linux/optimized/md-autodetect.ll
 ; php/optimized/php_spl.ll
 ; postgres/optimized/elog.ll
 ; postgres/optimized/parse_cte.ll

@@ -1,9 +1,10 @@
 
-; 52 occurrences:
+; 54 occurrences:
 ; cmake/optimized/ia64.c.ll
 ; cpython/optimized/_datetimemodule.ll
 ; draco/optimized/attribute_octahedron_transform.cc.ll
 ; freetype/optimized/psaux.c.ll
+; git/optimized/apply.ll
 ; graphviz/optimized/ns.c.ll
 ; gromacs/optimized/reduce.cpp.ll
 ; icu/optimized/ucase.ll
@@ -23,6 +24,7 @@
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luajit/optimized/lj_strscan.ll
 ; luajit/optimized/lj_strscan_dyn.ll
+; lvgl/optimized/lv_math.ll
 ; nuttx/optimized/lib_b16sin.c.ll
 ; openexr/optimized/ImfDeepScanLineInputFile.cpp.ll
 ; openexr/optimized/ImfScanLineInputFile.cpp.ll
@@ -78,7 +80,7 @@ entry:
   ret i32 %3
 }
 
-; 159 occurrences:
+; 161 occurrences:
 ; abc/optimized/acecPo.c.ll
 ; abc/optimized/acecPolyn.c.ll
 ; abc/optimized/bacWriteVer.c.ll
@@ -96,6 +98,7 @@ entry:
 ; arrow/optimized/strptime.c.ll
 ; assimp/optimized/SGSpatialSort.cpp.ll
 ; assimp/optimized/SpatialSort.cpp.ll
+; boost/optimized/area.ll
 ; bullet3/optimized/btLemkeAlgorithm.ll
 ; cpython/optimized/codeobject.ll
 ; cpython/optimized/dtoa.ll
@@ -109,7 +112,6 @@ entry:
 ; gromacs/optimized/xtc2.c.ll
 ; hermes/optimized/dtoa.c.ll
 ; icu/optimized/calendar.ll
-; icu/optimized/coptccal.ll
 ; icu/optimized/gregocal.ll
 ; icu/optimized/smpdtfmt.ll
 ; icu/optimized/ucnv_ext.ll
@@ -137,6 +139,8 @@ entry:
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; luajit/optimized/lj_strscan.ll
 ; luajit/optimized/lj_strscan_dyn.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_indev.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/CGUIListBox.cpp.ll
 ; minetest/optimized/game.cpp.ll

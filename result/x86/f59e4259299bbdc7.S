@@ -1,4 +1,4 @@
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	xorl	$42, %edx
 	shrxl	%esi, %edx, %eax
 	testl	%eax, %eax
@@ -7,7 +7,7 @@ func0000000000000014:                   # @func0000000000000014
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	xorl	$42, %edx
 	shrxl	%esi, %edx, %eax
 	testl	%eax, %eax
@@ -16,7 +16,7 @@ func0000000000000018:                   # @func0000000000000018
 	setae	%al
 	orb	%cl, %al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	xorl	$42, %edx
 	shrxl	%esi, %edx, %eax
 	xorl	$12351, %edi                    # imm = 0x303F

@@ -15,7 +15,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000331:                   # @func0000000000000331
+func0000000000000631:                   # @func0000000000000631
 	vptestmd	%ymm0, %ymm0, %k0
 	vpcmpneqb	.LCPI0_0(%rip), %xmm1, %k1
 	korb	%k0, %k1, %k1

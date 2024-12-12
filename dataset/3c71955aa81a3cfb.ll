@@ -1,9 +1,11 @@
 
-; 48 occurrences:
+; 49 occurrences:
 ; abc/optimized/extraUtilMisc.c.ll
 ; abseil-cpp/optimized/fastmath_test.cc.ll
 ; arrow/optimized/compare.cc.ll
 ; arrow/optimized/fixed-dtoa.cc.ll
+; boost/optimized/process_id.ll
+; boost/optimized/thread_id.ll
 ; c3c/optimized/bigint.c.ll
 ; clamav/optimized/lzwdec.c.ll
 ; double_conversion/optimized/fixed-dtoa.cc.ll
@@ -12,7 +14,6 @@
 ; hyperscan/optimized/block.c.ll
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/catchup.c.ll
-; hyperscan/optimized/init.c.ll
 ; hyperscan/optimized/mpv.c.ll
 ; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/repeat.c.ll
@@ -56,12 +57,14 @@ entry:
   ret i64 %3
 }
 
-; 33 occurrences:
+; 35 occurrences:
 ; abc/optimized/giaIf.c.ll
 ; abc/optimized/ifDec07.c.ll
 ; abseil-cpp/optimized/charconv.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
@@ -98,8 +101,7 @@ entry:
   ret i64 %3
 }
 
-; 6 occurrences:
-; brotli/optimized/bit_reader.c.ll
+; 5 occurrences:
 ; libquic/optimized/wnaf.c.ll
 ; linux/optimized/ntp.ll
 ; luau/optimized/LValue.cpp.ll

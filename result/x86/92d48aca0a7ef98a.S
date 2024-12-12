@@ -12,9 +12,14 @@ func000000000000000a:                   # @func000000000000000a
 	retq
 func0000000000000008:                   # @func0000000000000008
 	vmovq	%xmm0, %rax
+	shrq	$53, %rax
+	setne	%al
+	andb	%dil, %al
+	retq
+func0000000000000004:                   # @func0000000000000004
+	vmovq	%xmm0, %rax
 	shrq	$52, %rax
-	cmpl	$4095, %eax                     # imm = 0xFFF
-	setae	%al
+	sete	%al
 	andb	%dil, %al
 	retq
 func000000000000000c:                   # @func000000000000000c

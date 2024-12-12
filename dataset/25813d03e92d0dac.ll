@@ -1,6 +1,6 @@
 
-%struct.TCGTemp.2593549 = type { i48, i64, ptr, i64, ptr, i64, ptr }
-%"struct.llvm::reassociate::ValueEntry.3156707" = type { i32, ptr }
+%struct.TCGTemp.2707225 = type { i48, i64, ptr, i64, ptr, i64, ptr }
+%"struct.llvm::reassociate::ValueEntry.3349344" = type { i32, ptr }
 
 ; 8 occurrences:
 ; linux/optimized/dmar.ll
@@ -16,7 +16,7 @@ define i64 @func0000000000000004(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 3
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.TCGTemp.2593549, ptr %0, i64 %3
+  %4 = getelementptr %struct.TCGTemp.2707225, ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }
@@ -202,11 +202,11 @@ entry:
 ; z3/optimized/smt_context.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000006(ptr %0, i32 %1) #0 {
+define i64 @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 8
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }
@@ -216,11 +216,11 @@ entry:
 ; luajit/optimized/lj_bcread.ll
 ; luajit/optimized/lj_bcread_dyn.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000002(ptr %0, i32 %1) #0 {
+define i64 @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -2
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw %"struct.llvm::reassociate::ValueEntry.3156707", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"struct.llvm::reassociate::ValueEntry.3349344", ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }

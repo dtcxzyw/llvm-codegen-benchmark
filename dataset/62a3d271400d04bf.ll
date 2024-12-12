@@ -8,11 +8,11 @@
 ; wireshark/optimized/netscaler.c.ll
 ; wireshark/optimized/packet-q933.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 63
   %3 = zext nneg i8 %2 to i32
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = icmp eq i32 %4, 0
   ret i1 %5
 }
@@ -24,12 +24,12 @@ entry:
 ; openusd/optimized/pathParser.cpp.ll
 ; openusd/optimized/predicateExpression.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000038(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 63
   %3 = zext nneg i8 %2 to i32
-  %4 = or disjoint i32 %3, %0
-  %5 = icmp ugt i32 %4, 65536
+  %4 = or disjoint i32 %0, %3
+  %5 = icmp samesign ugt i32 %4, 65536
   ret i1 %5
 }
 
@@ -40,7 +40,7 @@ define i1 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 4
   %3 = zext nneg i8 %2 to i32
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = icmp eq i32 %4, 0
   ret i1 %5
 }
@@ -51,11 +51,11 @@ entry:
 ; meshlab/optimized/miniz.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i8 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 15
   %3 = zext nneg i8 %2 to i32
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = icmp ne i32 %4, 0
   ret i1 %5
 }
@@ -70,7 +70,7 @@ define i1 @func000000000000000c(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 3
   %3 = zext nneg i8 %2 to i32
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = icmp ne i32 %4, 0
   ret i1 %5
 }
@@ -78,12 +78,12 @@ entry:
 ; 1 occurrences:
 ; node/optimized/libnode.Protocol.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000034(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 63
   %3 = zext nneg i8 %2 to i32
-  %4 = or disjoint i32 %3, %0
-  %5 = icmp ult i32 %4, 65535
+  %4 = or disjoint i32 %0, %3
+  %5 = icmp samesign ult i32 %4, 65535
   ret i1 %5
 }
 

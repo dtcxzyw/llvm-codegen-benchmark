@@ -48,6 +48,16 @@ func00000000000000f0:                   # @func00000000000000f0
 	imull	%esi, %eax
 	addl	%edi, %eax
 	retq
+func00000000000000fd:                   # @func00000000000000fd
+	leal	1(%rdx), %eax
+	imull	%esi, %eax
+	addl	%edi, %eax
+	retq
+func00000000000000ed:                   # @func00000000000000ed
+	leal	1(%rdx), %eax
+	imull	%esi, %eax
+	addl	%edi, %eax
+	retq
 func00000000000000e5:                   # @func00000000000000e5
 	leal	1(%rdx), %eax
 	imull	%esi, %eax

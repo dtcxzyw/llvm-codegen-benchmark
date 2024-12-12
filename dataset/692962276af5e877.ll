@@ -22,7 +22,7 @@ entry:
   %2 = shl i64 %1, 8
   %3 = and i64 %2, 4222124651642880
   %.masked = and i64 %0, -1148435428713435121
-  %4 = or i64 %3, %.masked
+  %4 = or i64 %.masked, %3
   ret i64 %4
 }
 

@@ -10,5 +10,5 @@ func0000000000000010:                   # @func0000000000000010
 	vmsgtu.vi	v0, v10, 15
 	vsetvli	zero, zero, e8, m1, ta, ma
 	vmerge.vim	v9, v9, 15, v0
-	vor.vv	v8, v9, v8
+	vor.vv	v8, v8, v9
 	ret

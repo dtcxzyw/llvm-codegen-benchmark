@@ -18,7 +18,7 @@
 ; typst-rs/optimized/3rk2ctuzbghb17s4.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000481(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -3
   %4 = icmp ult i64 %3, 2
@@ -31,7 +31,7 @@ entry:
 ; just-rs/optimized/15cobjmzhaiu6jpj.ll
 ; just-rs/optimized/3fhxcueg488gjpka.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000086(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 9223372036854775807
   %4 = icmp ult i64 %3, 8
@@ -46,7 +46,7 @@ entry:
 ; wasmtime-rs/optimized/377rrvl9zeztt32x.ll
 ; wasmtime-rs/optimized/3xduz4g7ko7uj0pm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 9223372036854775807
   %4 = icmp ult i64 %3, 8
@@ -158,12 +158,12 @@ entry:
 ; wasmtime-rs/optimized/3gnma2m1zwm5wpa3.ll
 ; wasmtime-rs/optimized/4aijogcjfl814gfb.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000148(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000498(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = icmp ult i64 %3, 4
   %5 = select i1 %4, i64 %1, i64 5
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp samesign ugt i64 %5, %0
   ret i1 %6
 }
 

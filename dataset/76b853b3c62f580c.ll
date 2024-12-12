@@ -66,8 +66,8 @@ entry:
 ; nori/optimized/obj.cpp.ll
 ; opencv/optimized/matrix_sparse.cpp.ll
 ; openspiel/optimized/phantom_go_board.cc.ll
-; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wireshark/optimized/packet-locamation-im.c.ll
+; zed-rs/optimized/2i8hya6f2t9bndlbd6b6686oi.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:

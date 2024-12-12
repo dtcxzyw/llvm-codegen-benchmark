@@ -9,7 +9,7 @@ entry:
   %4 = shl i32 %3, 3
   %5 = add i32 %4, %1
   %6 = sext i32 %5 to i64
-  %7 = icmp sgt i64 %6, %0
+  %7 = icmp slt i64 %0, %6
   ret i1 %7
 }
 

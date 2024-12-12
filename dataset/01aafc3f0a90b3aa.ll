@@ -7,7 +7,7 @@
 ; openjdk/optimized/type.ll
 ; openjdk/optimized/typeArrayKlass.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 3
   %3 = udiv i64 %2, %0
@@ -30,7 +30,7 @@ entry:
 ; 1 occurrences:
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 3
   %3 = udiv i64 %2, %0

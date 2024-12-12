@@ -1,9 +1,10 @@
 
-; 42 occurrences:
+; 43 occurrences:
 ; darktable/optimized/introspection_cacorrectrgb.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; darktable/optimized/introspection_sigmoid.c.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; meshlab/optimized/VisibleSet.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; minetest/optimized/content_cao.cpp.ll

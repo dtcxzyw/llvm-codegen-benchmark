@@ -204,7 +204,7 @@ define ptr @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 32
   %3 = and i64 %2, 4294967288
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = inttoptr i64 %4 to ptr
   ret ptr %5
 }

@@ -4,9 +4,9 @@
 ; linux/optimized/alps.ll
 ; linux/optimized/devio.ll
 ; linux/optimized/drm_edid.ll
-; linux/optimized/logips2pp.ll
 ; linux/optimized/synaptics.ll
 ; llvm/optimized/CGCUDANV.cpp.ll
+; lvgl/optimized/lv_label.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; qemu/optimized/hw_input_hid.c.ll
 ; qemu/optimized/hw_pci_pcie_doe.c.ll

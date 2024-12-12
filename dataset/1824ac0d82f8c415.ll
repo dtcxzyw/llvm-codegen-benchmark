@@ -5,13 +5,13 @@
 define ptr @func0000000000000054(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = mul nsw i64 %4, 7
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
 }
 
-; 30 occurrences:
+; 38 occurrences:
 ; coreutils-rs/optimized/29nuy7845ur4qr3s.ll
 ; coreutils-rs/optimized/3stdugogn8b6evb1.ll
 ; coreutils-rs/optimized/592w9u2os9g8yndg.ll
@@ -40,13 +40,21 @@ entry:
 ; rust-analyzer-rs/optimized/635ry91nhs2ocdh.ll
 ; rust-analyzer-rs/optimized/v2z6ecwiine657n.ll
 ; tree-sitter-rs/optimized/4x741xowia4bwziy.ll
+; turborepo-rs/optimized/3l7xg3ikfppult5o2lclnyys7.ll
 ; typst-rs/optimized/31vebs4z0lpwpjgn.ll
 ; typst-rs/optimized/3gfld5k3k43fgjtj.ll
+; zed-rs/optimized/2gu8aea2dmgqxbormk5tspsrx.ll
+; zed-rs/optimized/2jcakdf65g6ofzlv4sxvfz01e.ll
+; zed-rs/optimized/39agu11sr34f1pihhhnx3cpe2.ll
+; zed-rs/optimized/6vfs8ti0m45cvpqthx5jydp5p.ll
+; zed-rs/optimized/84i9jtf3ksrb37ur8uqpg2f86.ll
+; zed-rs/optimized/8v0fi0zpujn3n5viw54gladc4.ll
+; zed-rs/optimized/9zapxybzyqo7as5l1oow5wvsl.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000040(ptr %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = mul i64 %4, -24
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6

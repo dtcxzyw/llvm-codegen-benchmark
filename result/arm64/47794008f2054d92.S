@@ -1,14 +1,8 @@
-func000000000000036c:                   // @func000000000000036c
+func0000000000000acc:                   // @func0000000000000acc
 // %bb.0:                               // %entry
-	saddw2	v5.4s, v3.4s, v4.8h
-	saddw	v4.4s, v2.4s, v4.4h
-	cmge	v5.4s, v1.4s, v5.4s
-	cmge	v4.4s, v0.4s, v4.4s
-	cmgt	v1.4s, v3.4s, v1.4s
-	cmgt	v0.4s, v2.4s, v0.4s
-	uzp1	v2.8h, v4.8h, v5.8h
-	uzp1	v0.8h, v0.8h, v1.8h
-	orr	v0.16b, v0.16b, v2.16b
-	xtn	v0.8b, v0.8h
+	add	w8, w1, w2, sxth
+	cmp	w0, w1
+	ccmp	w0, w8, #0, ge
+	cset	w0, ge
 	ret
                                         // -- End function

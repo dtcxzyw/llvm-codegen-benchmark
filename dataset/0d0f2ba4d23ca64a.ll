@@ -1,23 +1,24 @@
 
-%"struct.rocksdb::HashTable<rocksdb::BlockCacheFile *, rocksdb::BlockCacheTierMetadata::BlockCacheFileHash, rocksdb::BlockCacheTierMetadata::BlockCacheFileEqual>::Bucket.2500871" = type { %"class.std::__cxx11::list.51.2500872" }
-%"class.std::__cxx11::list.51.2500872" = type { %"class.std::__cxx11::_List_base.52.2500873" }
-%"class.std::__cxx11::_List_base.52.2500873" = type { %"struct.std::__cxx11::_List_base<rocksdb::BlockCacheFile *, std::allocator<rocksdb::BlockCacheFile *>>::_List_impl.2500874" }
-%"struct.std::__cxx11::_List_base<rocksdb::BlockCacheFile *, std::allocator<rocksdb::BlockCacheFile *>>::_List_impl.2500874" = type { %"struct.std::__detail::_List_node_header.2500875" }
-%"struct.std::__detail::_List_node_header.2500875" = type { %"struct.std::__detail::_List_node_base.2500876", i64 }
-%"struct.std::__detail::_List_node_base.2500876" = type { ptr, ptr }
-%"struct.GUIFormSpecMenu::ListRingSpec.2580444" = type { %struct.InventoryLocation.2580367, %"class.std::__cxx11::basic_string.2580329" }
-%struct.InventoryLocation.2580367 = type <{ i32, [4 x i8], %"class.std::__cxx11::basic_string.2580329", %"class.irr::core::vector3d.2580368", [2 x i8] }>
-%"class.irr::core::vector3d.2580368" = type { i16, i16, i16 }
-%"class.std::__cxx11::basic_string.2580329" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2580330", i64, %union.anon.2580331 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2580330" = type { ptr }
-%union.anon.2580331 = type { i64, [8 x i8] }
-%"class.llvm::APInt.2956779" = type <{ %union.anon.360.2956780, i32, [4 x i8] }>
-%union.anon.360.2956780 = type { i64 }
-%"class.cv::Point_.3597461" = type { float, float }
+%"struct.rocksdb::HashTable<rocksdb::BlockCacheFile *, rocksdb::BlockCacheTierMetadata::BlockCacheFileHash, rocksdb::BlockCacheTierMetadata::BlockCacheFileEqual>::Bucket.2616079" = type { %"class.std::__cxx11::list.51.2616080" }
+%"class.std::__cxx11::list.51.2616080" = type { %"class.std::__cxx11::_List_base.52.2616081" }
+%"class.std::__cxx11::_List_base.52.2616081" = type { %"struct.std::__cxx11::_List_base<rocksdb::BlockCacheFile *, std::allocator<rocksdb::BlockCacheFile *>>::_List_impl.2616082" }
+%"struct.std::__cxx11::_List_base<rocksdb::BlockCacheFile *, std::allocator<rocksdb::BlockCacheFile *>>::_List_impl.2616082" = type { %"struct.std::__detail::_List_node_header.2616083" }
+%"struct.std::__detail::_List_node_header.2616083" = type { %"struct.std::__detail::_List_node_base.2616084", i64 }
+%"struct.std::__detail::_List_node_base.2616084" = type { ptr, ptr }
+%"struct.GUIFormSpecMenu::ListRingSpec.2694584" = type { %struct.InventoryLocation.2694507, %"class.std::__cxx11::basic_string.2694469" }
+%struct.InventoryLocation.2694507 = type <{ i32, [4 x i8], %"class.std::__cxx11::basic_string.2694469", %"class.irr::core::vector3d.2694508", [2 x i8] }>
+%"class.irr::core::vector3d.2694508" = type { i16, i16, i16 }
+%"class.std::__cxx11::basic_string.2694469" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2694470", i64, %union.anon.2694471 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2694470" = type { ptr }
+%union.anon.2694471 = type { i64, [8 x i8] }
+%"class.cv::Point_.3778048" = type { float, float }
 
-; 14 occurrences:
+; 17 occurrences:
 ; clamav/optimized/connpool.c.ll
 ; grpc/optimized/hpack_parser_table.cc.ll
+; llvm/optimized/AccelTable.cpp.ll
+; llvm/optimized/TpiStream.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
 ; meshlab/optimized/trackmode.cpp.ll
 ; opencv/optimized/min_enclosing_triangle.cpp.ll
 ; openssl/optimized/libcrypto-lib-punycode.ll
@@ -31,15 +32,15 @@
 ; z3/optimized/nla_divisions.cpp.ll
 ; z3/optimized/q_eval.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = urem i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr %"struct.rocksdb::HashTable<rocksdb::BlockCacheFile *, rocksdb::BlockCacheTierMetadata::BlockCacheFileHash, rocksdb::BlockCacheTierMetadata::BlockCacheFileEqual>::Bucket.2500871", ptr %0, i64 %4, i32 0, i32 0, i32 0, i32 0, i32 1
+  %5 = getelementptr nuw %"struct.rocksdb::HashTable<rocksdb::BlockCacheFile *, rocksdb::BlockCacheTierMetadata::BlockCacheFileHash, rocksdb::BlockCacheTierMetadata::BlockCacheFileEqual>::Bucket.2616079", ptr %0, i64 %4, i32 0, i32 0, i32 0, i32 0, i32 1
   ret ptr %5
 }
 
-; 27 occurrences:
+; 28 occurrences:
 ; clamav/optimized/cache.c.ll
 ; harfbuzz/optimized/gsubgpos-context.cc.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -50,6 +51,7 @@ entry:
 ; harfbuzz/optimized/hb-subset-input.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
 ; luajit/optimized/buildvm_fold.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
@@ -68,46 +70,22 @@ entry:
 ; z3/optimized/sat_aig_cuts.cpp.ll
 ; z3/optimized/sat_ddfw.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = urem i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %"struct.GUIFormSpecMenu::ListRingSpec.2580444", ptr %0, i64 %4, i32 1
-  ret ptr %5
-}
-
-; 1 occurrences:
-; llvm/optimized/X86ISelLowering.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001b(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = urem i32 %1, %2
-  %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %"class.llvm::APInt.2956779", ptr %0, i64 %4, i32 1
-  ret ptr %5
-}
-
-; 3 occurrences:
-; llvm/optimized/AccelTable.cpp.ll
-; llvm/optimized/TpiStream.cpp.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000b(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = urem i32 %1, %2
-  %4 = zext i32 %3 to i64
-  %5 = getelementptr %"class.llvm::APInt.2956779", ptr %0, i64 %4, i32 1
+  %5 = getelementptr nuw %"struct.GUIFormSpecMenu::ListRingSpec.2694584", ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; opencv/optimized/min_enclosing_triangle.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = urem i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr %"class.cv::Point_.3597461", ptr %0, i64 %4, i32 1
+  %5 = getelementptr %"class.cv::Point_.3778048", ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 

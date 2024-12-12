@@ -2,8 +2,8 @@ func0000000000000002:                   # @func0000000000000002
 	vcvtps2pd	%ymm2, %zmm3
 	vextractf64x4	$1, %zmm2, %ymm2
 	vcvtps2pd	%ymm2, %zmm2
-	vaddpd	%zmm1, %zmm2, %zmm1
-	vaddpd	%zmm0, %zmm3, %zmm0
+	vaddpd	%zmm2, %zmm1, %zmm1
+	vaddpd	%zmm3, %zmm0, %zmm0
 	vcvtpd2ps	%zmm0, %ymm0
 	vcvtpd2ps	%zmm1, %ymm1
 	vinsertf64x4	$1, %ymm1, %zmm0, %zmm0
@@ -18,8 +18,8 @@ func0000000000000004:                   # @func0000000000000004
 	vcvtps2pd	%ymm2, %zmm3
 	vextractf64x4	$1, %zmm2, %ymm2
 	vcvtps2pd	%ymm2, %zmm2
-	vaddpd	%zmm1, %zmm2, %zmm1
-	vaddpd	%zmm0, %zmm3, %zmm0
+	vaddpd	%zmm2, %zmm1, %zmm1
+	vaddpd	%zmm3, %zmm0, %zmm0
 	vcvtpd2ps	%zmm0, %ymm0
 	vcvtpd2ps	%zmm1, %ymm1
 	vinsertf64x4	$1, %ymm1, %zmm0, %zmm0
@@ -31,8 +31,8 @@ func0000000000000003:                   # @func0000000000000003
 	vcvtps2pd	%ymm2, %zmm3
 	vextractf64x4	$1, %zmm2, %ymm2
 	vcvtps2pd	%ymm2, %zmm2
-	vaddpd	%zmm1, %zmm2, %zmm1
-	vaddpd	%zmm0, %zmm3, %zmm0
+	vaddpd	%zmm2, %zmm1, %zmm1
+	vaddpd	%zmm3, %zmm0, %zmm0
 	vcvtpd2ps	%zmm0, %ymm0
 	vcvtpd2ps	%zmm1, %ymm1
 	vinsertf64x4	$1, %ymm1, %zmm0, %zmm0
@@ -47,8 +47,8 @@ func0000000000000005:                   # @func0000000000000005
 	vcvtps2pd	%ymm2, %zmm3
 	vextractf64x4	$1, %zmm2, %ymm2
 	vcvtps2pd	%ymm2, %zmm2
-	vaddpd	%zmm1, %zmm2, %zmm1
-	vaddpd	%zmm0, %zmm3, %zmm0
+	vaddpd	%zmm2, %zmm1, %zmm1
+	vaddpd	%zmm3, %zmm0, %zmm0
 	vcvtpd2ps	%zmm0, %ymm0
 	vcvtpd2ps	%zmm1, %ymm1
 	vinsertf64x4	$1, %ymm1, %zmm0, %zmm0

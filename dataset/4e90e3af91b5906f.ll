@@ -1,5 +1,6 @@
 
-; 20 occurrences:
+; 22 occurrences:
+; git/optimized/diff.ll
 ; git/optimized/dir.ll
 ; gromacs/optimized/forcetable.cpp.ll
 ; hyperscan/optimized/program_runtime.c.ll
@@ -20,6 +21,7 @@
 ; pbrt-v4/optimized/integrator.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; stb/optimized/stb_sprintf.c.ll
+; velox/optimized/Re2Functions.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i1 %0, i64 %1, i32 %2) #0 {
 entry:
@@ -45,28 +47,6 @@ define i32 @func0000000000000000(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = trunc i64 %1 to i32
-  %5 = select i1 %0, i32 %4, i32 %3
-  ret i32 %5
-}
-
-; 12 occurrences:
-; openjdk/optimized/FourByteAbgr.ll
-; openjdk/optimized/FourByteAbgrPre.ll
-; openjdk/optimized/IntArgb.ll
-; openjdk/optimized/IntArgbBm.ll
-; openjdk/optimized/IntArgbPre.ll
-; openjdk/optimized/IntBgr.ll
-; openjdk/optimized/IntRgb.ll
-; openjdk/optimized/IntRgbx.ll
-; openjdk/optimized/ThreeByteBgr.ll
-; openjdk/optimized/Ushort555Rgb.ll
-; openjdk/optimized/Ushort555Rgbx.ll
-; openjdk/optimized/Ushort565Rgb.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000f(i1 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = add nuw nsw i32 %2, 2
-  %4 = trunc nuw nsw i64 %1 to i32
   %5 = select i1 %0, i32 %4, i32 %3
   ret i32 %5
 }
@@ -107,7 +87,8 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; opencv/optimized/lkpyramid.cpp.ll
 ; opencv/optimized/resize.cpp.ll
 ; opencv/optimized/staticSaliencyFineGrained.cpp.ll
 ; opencv/optimized/stereo_binary_bm.cpp.ll
@@ -117,17 +98,6 @@ define i32 @func0000000000000005(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = trunc nsw i64 %1 to i32
-  %5 = select i1 %0, i32 %4, i32 %3
-  ret i32 %5
-}
-
-; 1 occurrences:
-; opencv/optimized/ts_func.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000c(i1 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = add nuw nsw i32 %2, 1
-  %4 = trunc i64 %1 to i32
   %5 = select i1 %0, i32 %4, i32 %3
   ret i32 %5
 }

@@ -1,4 +1,4 @@
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vminu.vv	v12, v10, v11
 	vmaxu.vv	v10, v10, v11
@@ -7,7 +7,7 @@ func000000000000005a:                   # @func000000000000005a
 	vzext.vf4	v12, v10
 	vmslt.vv	v0, v8, v12
 	ret
-func0000000000000054:                   # @func0000000000000054
+func00000000000000b4:                   # @func00000000000000b4
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vminu.vv	v12, v10, v11
 	vmaxu.vv	v10, v10, v11
@@ -16,7 +16,7 @@ func0000000000000054:                   # @func0000000000000054
 	vzext.vf4	v12, v10
 	vmsltu.vv	v0, v12, v8
 	ret
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vminu.vv	v12, v10, v11
 	vmaxu.vv	v10, v10, v11
@@ -25,7 +25,7 @@ func0000000000000056:                   # @func0000000000000056
 	vzext.vf4	v12, v10
 	vmslt.vv	v0, v12, v8
 	ret
-func0000000000000058:                   # @func0000000000000058
+func00000000000000b8:                   # @func00000000000000b8
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vminu.vv	v12, v10, v11
 	vmaxu.vv	v10, v10, v11
@@ -34,7 +34,7 @@ func0000000000000058:                   # @func0000000000000058
 	vzext.vf4	v12, v10
 	vmsltu.vv	v0, v8, v12
 	ret
-func000000000000007a:                   # @func000000000000007a
+func00000000000000ea:                   # @func00000000000000ea
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vminu.vv	v12, v10, v11
 	vmaxu.vv	v10, v10, v11
@@ -43,7 +43,7 @@ func000000000000007a:                   # @func000000000000007a
 	vzext.vf4	v12, v10
 	vmslt.vv	v0, v8, v12
 	ret
-func0000000000000055:                   # @func0000000000000055
+func00000000000000b5:                   # @func00000000000000b5
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vminu.vv	v12, v10, v11
 	vmaxu.vv	v10, v10, v11

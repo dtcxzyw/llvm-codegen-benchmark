@@ -1,22 +1,4 @@
 
-; 9 occurrences:
-; clamav/optimized/cpio.c.ll
-; linux/optimized/libata-scsi.ll
-; openexr/optimized/ImfCRgbaFile.cpp.ll
-; openexr/optimized/ImfRgbaYca.cpp.ll
-; openjdk/optimized/barrierSetC2.ll
-; ruby/optimized/japanese.ll
-; wireshark/optimized/packet-afp.c.ll
-; wireshark/optimized/packet-cip.c.ll
-; wireshark/optimized/packet-fcfzs.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000003(i32 %0) #0 {
-entry:
-  %1 = and i32 %0, 1
-  %2 = add nuw nsw i32 %1, %0
-  ret i32 %2
-}
-
 ; 34 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; clamav/optimized/jpeg.c.ll
@@ -57,6 +39,23 @@ define i32 @func0000000000000000(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 1
   %2 = add i32 %1, %0
+  ret i32 %2
+}
+
+; 8 occurrences:
+; clamav/optimized/cpio.c.ll
+; linux/optimized/libata-scsi.ll
+; openexr/optimized/ImfCRgbaFile.cpp.ll
+; openexr/optimized/ImfRgbaYca.cpp.ll
+; openjdk/optimized/barrierSetC2.ll
+; wireshark/optimized/packet-afp.c.ll
+; wireshark/optimized/packet-cip.c.ll
+; wireshark/optimized/packet-fcfzs.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000003(i32 %0) #0 {
+entry:
+  %1 = and i32 %0, 4
+  %2 = add nuw nsw i32 %0, %1
   ret i32 %2
 }
 

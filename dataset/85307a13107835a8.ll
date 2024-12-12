@@ -1,9 +1,10 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; coremark/optimized/core_list_join.c.ll
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; linux/optimized/nf_reject_ipv4.ll
 ; linux/optimized/tcp_ipv6.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; postgres/optimized/nbtree.ll
 ; postgres/optimized/tsrank.ll
 ; recastnavigation/optimized/RecastRegion.cpp.ll
@@ -73,7 +74,6 @@ entry:
 ; linux/optimized/hda_jack.ll
 ; linux/optimized/i915_vma.ll
 ; linux/optimized/igmp.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_bios.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_hdmi.ll
@@ -90,7 +90,6 @@ entry:
 ; linux/optimized/ip_output.ll
 ; linux/optimized/kbuf.ll
 ; linux/optimized/mcast.ll
-; linux/optimized/mcast_snoop.ll
 ; linux/optimized/nf_conntrack_reasm.ll
 ; linux/optimized/nf_nat_core.ll
 ; linux/optimized/policydb.ll
@@ -110,6 +109,8 @@ entry:
 ; llvm/optimized/MachineScheduler.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
 ; minetest/optimized/connectionthreads.cpp.ll
 ; minetest/optimized/content_cao.cpp.ll
 ; minetest/optimized/inventory.cpp.ll
@@ -197,13 +198,13 @@ entry:
 ; wireshark/optimized/packet-rf4ce-secur.c.ll
 ; wireshark/optimized/packet-selfm.c.ll
 ; wireshark/optimized/packet-teamspeak2.c.ll
-; wireshark/optimized/packet-teap.c.ll
 ; wireshark/optimized/packet-umts_rlc.c.ll
 ; wireshark/optimized/packet-x11.c.ll
 ; wireshark/optimized/pci-ids.c.ll
-; wireshark/optimized/services.c.ll
 ; wireshark/optimized/tap-rtp-analysis.c.ll
 ; wolfssl/optimized/internal.c.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; zstd/optimized/huf_compress.c.ll
 ; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
 ; Function Attrs: nounwind

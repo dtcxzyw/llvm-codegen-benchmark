@@ -1,13 +1,8 @@
 
-; 8 occurrences:
+; 3 occurrences:
 ; image-rs/optimized/254ue5dpb10tdnze.ll
-; proxygen/optimized/HPACKDecoder.cpp.ll
-; proxygen/optimized/HPACKDecoderBase.cpp.ll
-; proxygen/optimized/HPACKEncoder.cpp.ll
-; proxygen/optimized/HeaderTable.cpp.ll
-; proxygen/optimized/QPACKEncoder.cpp.ll
-; proxygen/optimized/QPACKHeaderTable.cpp.ll
-; proxygen/optimized/StaticHeaderTable.cpp.ll
+; wasmtime-rs/optimized/3gnma2m1zwm5wpa3.ll
+; wasmtime-rs/optimized/4aijogcjfl814gfb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
@@ -17,7 +12,7 @@ entry:
   ret i64 %4
 }
 
-; 23 occurrences:
+; 25 occurrences:
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
@@ -41,6 +36,8 @@ entry:
 ; rust-analyzer-rs/optimized/2jyyuxshs9vnz9u0.ll
 ; rust-analyzer-rs/optimized/5ac99zaxn7b9r9xv.ll
 ; z3/optimized/mpz.cpp.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/d7h2r6mystjn2jzwcl5ofeoiz.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
@@ -61,13 +58,14 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/alloc_lib.ll
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000009(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000029(i64 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ult i64 %1, 23
+  %2 = icmp samesign ult i64 %1, 23
   %3 = lshr exact i64 %0, 3
   %4 = select i1 %2, i64 4, i64 %3
   ret i64 %4

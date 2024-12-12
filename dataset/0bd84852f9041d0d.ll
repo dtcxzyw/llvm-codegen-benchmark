@@ -40,7 +40,7 @@ entry:
   ret i1 %3
 }
 
-; 20 occurrences:
+; 24 occurrences:
 ; cmake/optimized/archive_write_add_filter_b64encode.c.ll
 ; cmake/optimized/archive_write_add_filter_uuencode.c.ll
 ; cmake/optimized/sha3.c.ll
@@ -61,6 +61,10 @@ entry:
 ; slurm/optimized/KeccakP-1600-opt64.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/5dm7ofzf1e4v8vd2k597txwqa.ll
+; zed-rs/optimized/8xt07qbd2rpea3wzwrnuigpes.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
@@ -69,7 +73,7 @@ entry:
   ret i1 %3
 }
 
-; 17 occurrences:
+; 20 occurrences:
 ; actix-rs/optimized/520p8qtoxfmkvgyc.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; brotli/optimized/entropy_encode.c.ll
@@ -87,8 +91,11 @@ entry:
 ; slurm/optimized/KeccakSponge.ll
 ; tree-sitter-rs/optimized/1o0ocmb45sbun3ez.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw i64 %1, %0
   %3 = icmp ult i64 %2, %0
@@ -109,7 +116,7 @@ entry:
 ; php/optimized/KeccakSponge.ll
 ; slurm/optimized/KeccakSponge.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw i64 %1, %0
   %3 = icmp ugt i64 %2, %0
@@ -119,24 +126,22 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_bilateral.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %1, %0
   %3 = icmp ugt i64 %2, %0
   ret i1 %3
 }
 
-; 8 occurrences:
+; 6 occurrences:
 ; faiss/optimized/ScalarQuantizer.cpp.ll
 ; gromacs/optimized/tng_io.c.ll
 ; libjpeg-turbo/optimized/jcarith.c.ll
 ; libjpeg-turbo/optimized/jdarith.c.ll
 ; llama.cpp/optimized/ggml.c.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; redis/optimized/hdr_histogram.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %1, %0
   %3 = icmp slt i64 %2, %0

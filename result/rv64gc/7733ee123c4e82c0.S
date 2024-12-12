@@ -19,9 +19,8 @@ func0000000000000004:                   # @func0000000000000004
 	bnez	a0, .LBB2_2
 	mv	a1, a2
 .LBB2_2:                                # %entry
-	srliw	a0, a1, 6
-	slli	a0, a0, 6
-	seqz	a0, a0
+	sext.w	a1, a1
+	sltiu	a0, a1, 19
 	ret
 func000000000000000c:                   # @func000000000000000c
 	andi	a0, a0, 1

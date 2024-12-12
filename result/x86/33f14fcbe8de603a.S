@@ -2,7 +2,7 @@ func0000000000000015:                   # @func0000000000000015
 	movslq	%esi, %rax
 	leaq	(%rax,%rax,4), %rax
 	shlq	$5, %rax
-	leaq	-4(%rax,%rdi), %rax
+	leaq	-4(%rdi,%rax), %rax
 	retq
 func0000000000000010:                   # @func0000000000000010
 	movslq	%esi, %rax

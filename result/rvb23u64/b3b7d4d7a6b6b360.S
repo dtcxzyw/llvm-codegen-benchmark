@@ -1,4 +1,4 @@
-func00000000000001ea:                   # @func00000000000001ea
+func00000000000001ff:                   # @func00000000000001ff
 	slliw	a2, a2, 1
 	add	a0, a0, a1
 	add	a0, a0, a2
@@ -10,7 +10,7 @@ func00000000000000c0:                   # @func00000000000000c0
 	sh1add	a0, a0, a1
 	addi	a0, a0, -2
 	ret
-func000000000000006a:                   # @func000000000000006a
+func000000000000007f:                   # @func000000000000007f
 	slliw	a2, a2, 1
 	add	a0, a0, a1
 	add	a0, a0, a2

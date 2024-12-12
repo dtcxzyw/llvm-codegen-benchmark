@@ -51,3 +51,15 @@ func0000000000000063:                   # @func0000000000000063
 	shrq	$44, %rax
 	addq	%rdi, %rax
 	retq
+func0000000000000020:                   # @func0000000000000020
+	leaq	(%rdx,%rdx,8), %rax
+	subq	%rax, %rsi
+	shrq	$2, %rsi
+	leaq	(%rsi,%rdi), %rax
+	retq
+func0000000000000023:                   # @func0000000000000023
+	leaq	(%rdx,%rdx,8), %rax
+	subq	%rax, %rsi
+	shrq	$2, %rsi
+	leaq	(%rsi,%rdi), %rax
+	retq

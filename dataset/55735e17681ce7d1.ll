@@ -1,73 +1,13 @@
 
-; 1 occurrences:
-; ruby/optimized/enum.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000154(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add i64 %2, %0
-  %4 = icmp slt i64 %3, %1
-  %5 = icmp sgt i64 %0, %1
-  %6 = or i1 %5, %4
-  ret i1 %6
-}
-
-; 1 occurrences:
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000d2(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add i64 %2, %1
-  %4 = icmp sgt i64 %3, %0
-  %5 = icmp uge i64 %0, %1
-  %6 = or i1 %5, %4
-  ret i1 %6
-}
-
-; 1 occurrences:
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000d6(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add i64 %2, %1
-  %4 = icmp sgt i64 %3, %0
-  %5 = icmp sge i64 %0, %1
-  %6 = or i1 %5, %4
-  ret i1 %6
-}
-
-; 1 occurrences:
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000014a(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add i64 %2, %1
-  %4 = icmp slt i64 %3, %0
-  %5 = icmp ule i64 %0, %1
-  %6 = or i1 %5, %4
-  ret i1 %6
-}
-
-; 1 occurrences:
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000014e(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add i64 %2, %1
-  %4 = icmp slt i64 %3, %0
-  %5 = icmp sle i64 %0, %1
-  %6 = or i1 %5, %4
-  ret i1 %6
-}
-
 ; 3 occurrences:
 ; linux/optimized/set_memory.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; soc-simulator/optimized/verilated.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000128(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000248(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
-  %4 = icmp ule i64 %3, %0
+  %4 = icmp uge i64 %0, %3
   %5 = icmp ult i64 %0, %1
   %6 = or i1 %5, %4
   ret i1 %6
@@ -76,10 +16,10 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/hw_core_loader.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000090(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000110(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, %1
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   %5 = icmp ult i64 %0, %1
   %6 = or i1 %4, %5
   ret i1 %6
@@ -88,10 +28,10 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/elfFuncDescTable.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000110(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000210(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %0, %2
-  %4 = icmp ult i64 %3, %1
+  %4 = icmp ugt i64 %1, %3
   %5 = icmp ugt i64 %0, %1
   %6 = or i1 %5, %4
   ret i1 %6
@@ -115,10 +55,10 @@ entry:
 ; velox/optimized/UnsafeRowSerializer.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000012a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000024a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, %1
-  %4 = icmp ule i64 %3, %0
+  %4 = icmp uge i64 %0, %3
   %5 = icmp ule i64 %0, %1
   %6 = or i1 %5, %4
   ret i1 %6
@@ -129,10 +69,10 @@ entry:
 ; clamav/optimized/petite.c.ll
 ; clamav/optimized/upack.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b0(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000150(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, %1
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   %5 = icmp ule i64 %0, %1
   %6 = or i1 %4, %5
   ret i1 %6
@@ -141,10 +81,10 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/fmap.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000208(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   %5 = icmp ult i64 %0, %1
   %6 = or i1 %5, %4
   ret i1 %6
@@ -153,10 +93,10 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/7zIn.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000108(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   %5 = icmp ult i64 %0, %1
   %6 = or i1 %5, %4
   ret i1 %6
@@ -165,10 +105,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ArgList.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000118(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, %1
-  %4 = icmp ne i64 %3, %0
+  %4 = icmp ne i64 %0, %3
   %5 = icmp ult i64 %0, %1
   %6 = or i1 %4, %5
   ret i1 %6
@@ -177,10 +117,10 @@ entry:
 ; 1 occurrences:
 ; grpc/optimized/alts_frame_protector.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000042(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, %1
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   %5 = icmp eq i64 %0, %1
   %6 = or i1 %5, %4
   ret i1 %6
@@ -189,10 +129,10 @@ entry:
 ; 1 occurrences:
 ; typst-rs/optimized/ef603zin5qw49hb.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000112(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000212(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, %0
-  %4 = icmp ult i64 %3, %1
+  %4 = icmp ugt i64 %1, %3
   %5 = icmp uge i64 %0, %1
   %6 = or i1 %5, %4
   ret i1 %6

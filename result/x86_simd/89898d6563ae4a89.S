@@ -106,6 +106,20 @@ func0000000000000018:                   # @func0000000000000018
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+.LCPI8_0:
+	.quad	0x7ff0000000000000              # double +Inf
+func0000000000000024:                   # @func0000000000000024
+	vbroadcastsd	.LCPI8_0(%rip), %zmm4   # zmm4 = [+Inf,+Inf,+Inf,+Inf,+Inf,+Inf,+Inf,+Inf]
+	vcmpeq_uqpd	%zmm4, %zmm2, %k0
+	vcmpeq_uqpd	%zmm4, %zmm3, %k1
+	kunpckbw	%k0, %k1, %k0
+	vpor	%xmm1, %xmm0, %xmm0
+	vpsllw	$7, %xmm0, %xmm0
+	vpmovb2m	%xmm0, %k1
+	korw	%k0, %k1, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
 func0000000000000002:                   # @func0000000000000002
 	vpor	%xmm3, %xmm2, %xmm2
 	vpsllw	$7, %xmm2, %xmm2
@@ -114,20 +128,6 @@ func0000000000000002:                   # @func0000000000000002
 	vcmpunordpd	%zmm2, %zmm0, %k1
 	vcmpunordpd	%zmm2, %zmm1, %k2
 	kunpckbw	%k1, %k2, %k1
-	korw	%k0, %k1, %k0
-	vpmovm2b	%k0, %xmm0
-	vzeroupper
-	retq
-.LCPI9_0:
-	.quad	0x7ff0000000000000              # double +Inf
-func0000000000000024:                   # @func0000000000000024
-	vbroadcastsd	.LCPI9_0(%rip), %zmm4   # zmm4 = [+Inf,+Inf,+Inf,+Inf,+Inf,+Inf,+Inf,+Inf]
-	vcmpeq_uqpd	%zmm4, %zmm2, %k0
-	vcmpeq_uqpd	%zmm4, %zmm3, %k1
-	kunpckbw	%k0, %k1, %k0
-	vpor	%xmm1, %xmm0, %xmm0
-	vpsllw	$7, %xmm0, %xmm0
-	vpmovb2m	%xmm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
@@ -144,22 +144,10 @@ func000000000000000c:                   # @func000000000000000c
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000006:                   # @func0000000000000006
-	vpor	%xmm3, %xmm2, %xmm2
-	vpsllw	$7, %xmm2, %xmm2
-	vpmovb2m	%xmm2, %k0
-	vpxor	%xmm2, %xmm2, %xmm2
-	vcmpnlepd	%zmm0, %zmm2, %k1
-	vcmpnlepd	%zmm1, %zmm2, %k2
-	kunpckbw	%k1, %k2, %k1
-	korw	%k0, %k1, %k0
-	vpmovm2b	%k0, %xmm0
-	vzeroupper
-	retq
-.LCPI12_0:
+.LCPI11_0:
 	.quad	0x3ff0000000000000              # double 1
 func0000000000000020:                   # @func0000000000000020
-	vbroadcastsd	.LCPI12_0(%rip), %zmm4  # zmm4 = [1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0]
+	vbroadcastsd	.LCPI11_0(%rip), %zmm4  # zmm4 = [1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0]
 	vcmpeqpd	%zmm4, %zmm2, %k0
 	vcmpeqpd	%zmm4, %zmm3, %k1
 	kunpckbw	%k0, %k1, %k0

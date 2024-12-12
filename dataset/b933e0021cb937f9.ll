@@ -6,7 +6,7 @@
 ; recastnavigation/optimized/RecastContour.cpp.ll
 ; stb/optimized/stb_voxel_render.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000141(i8 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw i32 1, %2
@@ -35,7 +35,7 @@ entry:
 ; linux/optimized/fsopen.ll
 ; node/optimized/libnode.traced_value.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000161(i8 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw nsw i32 1, %2
@@ -49,7 +49,7 @@ entry:
 ; clamav/optimized/filtering.c.ll
 ; recastnavigation/optimized/RecastContour.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000041(i8 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw i32 1, %2
@@ -63,7 +63,7 @@ entry:
 ; imgui/optimized/imgui_tables.cpp.ll
 ; llvm/optimized/X86InstCombineIntrinsic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i8 %0, i8 %1) #0 {
+define i1 @func00000000000001e1(i8 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw nsw i32 1, %2
@@ -76,7 +76,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/yenta_socket.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000061(i8 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw nsw i32 64, %2

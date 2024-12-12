@@ -1,5 +1,6 @@
 
-; 18 occurrences:
+; 19 occurrences:
+; boost/optimized/area_geo.ll
 ; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
 ; gromacs/optimized/functions.cpp.ll
 ; gromacs/optimized/gmx_analyze.cpp.ll
@@ -22,7 +23,7 @@
 define double @func0000000000000000(double %0) #0 {
 entry:
   %1 = fadd double %0, -1.000000e+00
-  %2 = fmul double %1, %0
+  %2 = fmul double %0, %1
   ret double %2
 }
 

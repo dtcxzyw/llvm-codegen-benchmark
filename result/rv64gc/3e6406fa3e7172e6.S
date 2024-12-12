@@ -18,19 +18,6 @@ func0000000000000000:                   # @func0000000000000000
 	andi	a1, a1, -16
 	add	a0, a0, a1
 	ret
-.LCPI2_0:
-	.quad	2951479051793528259             # 0x28f5c28f5c28f5c3
-func000000000000000e:                   # @func000000000000000e
-	lui	a2, %hi(.LCPI2_0)
-	ld	a2, %lo(.LCPI2_0)(a2)
-	srli	a1, a1, 2
-	mulhu	a1, a1, a2
-	srli	a1, a1, 2
-	slli	a2, a1, 3
-	slli	a1, a1, 5
-	sub	a1, a1, a2
-	add	a0, a0, a1
-	ret
 func0000000000000002:                   # @func0000000000000002
 	lui	a2, 838861
 	addiw	a2, a2, -819

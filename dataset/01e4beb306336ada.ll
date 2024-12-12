@@ -1,21 +1,18 @@
 
-; 9 occurrences:
-; cmake/optimized/archive_read_support_format_rar.c.ll
-; freetype/optimized/sfnt.c.ll
+; 6 occurrences:
 ; libquic/optimized/d1_both.c.ll
 ; openssl/optimized/libssl-lib-statem_dtls.ll
 ; openssl/optimized/libssl-shlib-statem_dtls.ll
 ; sqlite/optimized/sqlite3.ll
-; wireshark/optimized/packet-ppi.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wireshark/optimized/vwr.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i32 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000154(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw i16 %2, 8
   %4 = or disjoint i16 %3, %1
   %5 = zext i16 %4 to i32
-  %6 = icmp ugt i32 %5, %0
+  %6 = icmp samesign ult i32 %0, %5
   ret i1 %6
 }
 
@@ -30,12 +27,12 @@ entry:
 ; wolfssl/optimized/tls.c.ll
 ; wolfssl/optimized/tls13.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i32 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000141(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw i16 %2, 8
   %4 = or disjoint i16 %3, %1
   %5 = zext i16 %4 to i32
-  %6 = icmp eq i32 %5, %0
+  %6 = icmp eq i32 %0, %5
   ret i1 %6
 }
 
@@ -43,12 +40,12 @@ entry:
 ; php/optimized/dns.ll
 ; wolfssl/optimized/tls.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i32 %0, i16 %1, i16 %2) #0 {
+define i1 @func000000000000014c(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw i16 %2, 8
   %4 = or disjoint i16 %3, %1
   %5 = zext i16 %4 to i32
-  %6 = icmp ne i32 %5, %0
+  %6 = icmp ne i32 %0, %5
   ret i1 %6
 }
 
@@ -59,51 +56,82 @@ entry:
 ; wireshark/optimized/vwr.c.ll
 ; wolfssl/optimized/tls.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a6(i32 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000146(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw i16 %2, 8
   %4 = or disjoint i16 %3, %1
   %5 = zext i16 %4 to i32
-  %6 = icmp sgt i32 %5, %0
+  %6 = icmp slt i32 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; clamav/optimized/xlm_extract.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i32 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000106(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw i16 %2, 8
   %4 = or i16 %3, %1
   %5 = zext i16 %4 to i32
-  %6 = icmp sgt i32 %5, %0
+  %6 = icmp slt i32 %0, %5
+  ret i1 %6
+}
+
+; 6 occurrences:
+; cmake/optimized/archive_read_support_format_rar.c.ll
+; freetype/optimized/sfnt.c.ll
+; sqlite/optimized/sqlite3.ll
+; wireshark/optimized/packet-ppi.c.ll
+; wireshark/optimized/packet-sigcomp.c.ll
+; wireshark/optimized/vwr.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000144(i32 %0, i16 %1, i16 %2) #0 {
+entry:
+  %3 = shl nuw i16 %2, 8
+  %4 = or disjoint i16 %3, %1
+  %5 = zext i16 %4 to i32
+  %6 = icmp ult i32 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; wireshark/optimized/netscaler.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a9(i32 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000149(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw i16 %2, 8
   %4 = or disjoint i16 %3, %1
   %5 = zext i16 %4 to i32
-  %6 = icmp ule i32 %5, %0
+  %6 = icmp uge i32 %0, %5
+  ret i1 %6
+}
+
+; 3 occurrences:
+; cmake/optimized/archive_read_support_format_zip.c.ll
+; sqlite/optimized/sqlite3.ll
+; wireshark/optimized/packet-sigcomp.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000158(i32 %0, i16 %1, i16 %2) #0 {
+entry:
+  %3 = shl nuw i16 %2, 8
+  %4 = or disjoint i16 %3, %1
+  %5 = zext i16 %4 to i32
+  %6 = icmp samesign ugt i32 %0, %5
   ret i1 %6
 }
 
 ; 4 occurrences:
-; cmake/optimized/archive_read_support_format_zip.c.ll
 ; freetype/optimized/sfnt.c.ll
-; sqlite/optimized/sqlite3.ll
-; wireshark/optimized/packet-sigcomp.c.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(i32 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000148(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw i16 %2, 8
   %4 = or disjoint i16 %3, %1
   %5 = zext i16 %4 to i32
-  %6 = icmp ult i32 %5, %0
+  %6 = icmp ugt i32 %0, %5
   ret i1 %6
 }
 

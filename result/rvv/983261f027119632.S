@@ -1,11 +1,13 @@
-func000000000000001c:                   # @func000000000000001c
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vzext.vf4	v12, v10
-	vrsub.vi	v8, v8, 0
-	vmsne.vv	v10, v12, v8
+func000000000000002c:                   # @func000000000000002c
+	vsetivli	zero, 8, e16, m1, ta, ma
+	vzext.vf2	v11, v10
+	vmv.v.i	v10, 0
+	vwsubu.vv	v12, v10, v11
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vmsne.vv	v10, v8, v12
 	vmor.mm	v0, v0, v10
 	ret
-func0000000000000074:                   # @func0000000000000074
+func00000000000000f4:                   # @func00000000000000f4
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v11, v10
 	vwaddu.wv	v8, v8, v11
@@ -13,7 +15,7 @@ func0000000000000074:                   # @func0000000000000074
 	vmsleu.vi	v10, v8, 5
 	vmor.mm	v0, v0, v10
 	ret
-func000000000000003c:                   # @func000000000000003c
+func000000000000006c:                   # @func000000000000006c
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v11, v10
 	vwaddu.wv	v8, v8, v11
@@ -21,14 +23,16 @@ func000000000000003c:                   # @func000000000000003c
 	vmsne.vi	v10, v8, 4
 	vmor.mm	v0, v0, v10
 	ret
-func000000000000004c:                   # @func000000000000004c
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vzext.vf4	v12, v10
-	vrsub.vi	v8, v8, 0
-	vmsne.vv	v10, v12, v8
+func000000000000008c:                   # @func000000000000008c
+	vsetivli	zero, 8, e16, m1, ta, ma
+	vzext.vf2	v11, v10
+	vmv.v.i	v10, 0
+	vwsubu.vv	v12, v10, v11
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vmsne.vv	v10, v8, v12
 	vmor.mm	v0, v0, v10
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v11, v10
 	vwaddu.wv	v8, v8, v11
@@ -37,7 +41,7 @@ func0000000000000016:                   # @func0000000000000016
 	vmslt.vx	v10, v8, a0
 	vmor.mm	v0, v0, v10
 	ret
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v11, v10
 	vwaddu.wv	v8, v8, v11

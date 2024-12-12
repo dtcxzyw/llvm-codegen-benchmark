@@ -7,7 +7,7 @@
 define i8 @func000000000000000e(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = trunc nuw i64 %3 to i8
   ret i8 %4
 }
@@ -22,7 +22,7 @@ entry:
 define i8 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = trunc i64 %3 to i8
   ret i8 %4
 }
@@ -33,7 +33,7 @@ entry:
 define i8 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = trunc i64 %3 to i8
   ret i8 %4
 }
@@ -45,7 +45,7 @@ entry:
 define i8 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = trunc i64 %3 to i8
   ret i8 %4
 }
@@ -56,7 +56,7 @@ entry:
 define i8 @func000000000000000a(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = trunc nuw i64 %3 to i8
   ret i8 %4
 }

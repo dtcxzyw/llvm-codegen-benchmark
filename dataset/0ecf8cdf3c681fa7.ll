@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 29 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/cecPat.c.ll
@@ -14,7 +14,6 @@
 ; llvm/optimized/AccelTable.cpp.ll
 ; llvm/optimized/IRTranslator.cpp.ll
 ; llvm/optimized/LowLevelTypeUtils.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; mitsuba3/optimized/spiral.cpp.ll
 ; opencv/optimized/essential_mat_reconstr.cpp.ll
 ; opencv/optimized/falsecolor.cpp.ll
@@ -28,6 +27,8 @@
 ; re2/optimized/compile.cc.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; sqlite/optimized/sqlite3.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i32 %1) #0 {
 entry:
@@ -65,10 +66,12 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; linux/optimized/dmar.ll
 ; llvm/optimized/Decl.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
+; wasmtime-rs/optimized/1f1skdqjemonth3f.ll
+; wasmtime-rs/optimized/21g2sj3ridcu2juk.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000d(i64 %0, i32 %1) #0 {
 entry:
@@ -87,7 +90,7 @@ entry:
   %2 = lshr i32 %1, 16
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 %3, 48
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 

@@ -1,8 +1,9 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; libjpeg-turbo/optimized/transupp.c.ll
+; libwebp/optimized/huffman_encode_utils.c.ll
 ; llvm/optimized/IROutliner.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/CFileSystem.cpp.ll
@@ -17,12 +18,12 @@
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = or disjoint i64 %1, 1
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -47,12 +48,12 @@ entry:
 ; darktable/optimized/TableLookUp.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000032(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000033(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr i16, ptr %0, i64 %3
   %5 = or disjoint i64 %1, 1
-  %6 = getelementptr nusw i16, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i16, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -64,12 +65,48 @@ entry:
 ; llvm/optimized/ComputeDependence.cpp.ll
 ; opencv/optimized/conv_depthwise.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i16, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i16, ptr %0, i64 %3
+  %5 = or disjoint i64 %1, 2
+  %6 = getelementptr nusw nuw i16, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; darktable/optimized/SamsungV0Decompressor.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003e(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = getelementptr nusw nuw i16, ptr %0, i64 %3
   %5 = or disjoint i64 %1, 2
   %6 = getelementptr nusw i16, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; libjpeg-turbo/optimized/transupp.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001c(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = getelementptr nusw nuw [64 x i16], ptr %0, i64 %3
+  %5 = or disjoint i64 %1, 1
+  %6 = getelementptr i16, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; hyperscan/optimized/mcsheng.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000013(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = or disjoint i64 %1, 12
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6
 }
 

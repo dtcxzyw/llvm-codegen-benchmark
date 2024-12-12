@@ -7,6 +7,11 @@ func0000000000000000:                   # @func0000000000000000
 	addl	%edi, %edi
 	leal	2(%rdi,%rsi,8), %eax
 	retq
+func000000000000005d:                   # @func000000000000005d
+	shll	$22, %esi
+	shll	$10, %edi
+	leal	-56613888(%rsi,%rdi), %eax
+	retq
 func000000000000000d:                   # @func000000000000000d
 	shll	$14, %esi
 	shll	$10, %edi

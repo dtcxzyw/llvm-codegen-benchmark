@@ -23,8 +23,7 @@ entry:
   ret i64 %5
 }
 
-; 6 occurrences:
-; linux/optimized/i915_cmd_parser.ll
+; 5 occurrences:
 ; postgres/optimized/integerset.ll
 ; postgres/optimized/nbtsearch.ll
 ; postgres/optimized/regcomp.ll

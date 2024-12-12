@@ -1,5 +1,5 @@
 
-; 69 occurrences:
+; 70 occurrences:
 ; assimp/optimized/MD5Loader.cpp.ll
 ; assimp/optimized/SpatialSort.cpp.ll
 ; entt/optimized/adjacency_matrix.cpp.ll
@@ -69,6 +69,7 @@
 ; ozz-animation/optimized/import2ozz_track.cc.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; sentencepiece/optimized/bpe_model_trainer.cc.ll
+; sentencepiece/optimized/unigram_model_trainer.cc.ll
 ; Function Attrs: nounwind
 define float @func0000000000000002(ptr %0, ptr %1) #0 {
 entry:

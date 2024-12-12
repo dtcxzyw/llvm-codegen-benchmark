@@ -2,21 +2,21 @@ func000000000000000a:                   # @func000000000000000a
 	xorl	%eax, %eax
 	testb	$1, %sil
 	cmovneq	%rdx, %rax
-	cmpq	%rdi, %rax
-	setl	%al
+	cmpq	%rax, %rdi
+	setg	%al
 	retq
 func0000000000000008:                   # @func0000000000000008
 	xorl	%eax, %eax
 	testb	$1, %sil
 	cmovneq	%rdx, %rax
-	cmpq	%rdi, %rax
-	setb	%al
+	cmpq	%rax, %rdi
+	seta	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
 	xorl	%eax, %eax
 	testb	$1, %sil
 	cmovneq	%rdx, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
 func0000000000000004:                   # @func0000000000000004
@@ -30,27 +30,54 @@ func0000000000000009:                   # @func0000000000000009
 	cmpb	$1, %sil
 	sbbq	%rax, %rax
 	orq	%rdx, %rax
-	cmpq	%rdi, %rax
-	setbe	%al
+	cmpq	%rax, %rdi
+	setae	%al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	xorl	%eax, %eax
+	testb	$1, %sil
+	cmovneq	%rdx, %rax
+	cmpq	%rax, %rdi
+	seta	%al
 	retq
 func000000000000000b:                   # @func000000000000000b
 	testb	$1, %sil
 	movabsq	$9223372036854775807, %rax      # imm = 0x7FFFFFFFFFFFFFFF
 	cmovneq	%rdx, %rax
-	cmpq	%rdi, %rax
-	setle	%al
+	cmpq	%rax, %rdi
+	setge	%al
 	retq
 func0000000000000006:                   # @func0000000000000006
 	testb	$1, %sil
 	movabsq	$9223372036854775807, %rax      # imm = 0x7FFFFFFFFFFFFFFF
 	cmovneq	%rdx, %rax
-	cmpq	%rdi, %rax
-	setg	%al
+	cmpq	%rax, %rdi
+	setl	%al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	testb	$1, %sil
+	movl	$536870912, %eax                # imm = 0x20000000
+	cmovneq	%rdx, %rax
+	cmpq	%rax, %rdi
+	setb	%al
 	retq
 func000000000000000c:                   # @func000000000000000c
 	xorl	%eax, %eax
 	testb	$1, %sil
 	cmovneq	%rdx, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	setne	%al
+	retq
+func0000000000000011:                   # @func0000000000000011
+	testb	$1, %sil
+	movl	$8, %eax
+	cmovneq	%rdx, %rax
+	cmpq	%rax, %rdi
+	sete	%al
+	retq
+func0000000000000005:                   # @func0000000000000005
+	cmpq	%rdi, %rdx
+	setae	%al
+	xorb	$1, %sil
+	orb	%sil, %al
 	retq

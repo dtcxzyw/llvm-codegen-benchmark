@@ -1,5 +1,6 @@
 
-; 53 occurrences:
+; 77 occurrences:
+; arrow/optimized/value_parsing.cc.ll
 ; assimp/optimized/ACLoader.cpp.ll
 ; assimp/optimized/ASEParser.cpp.ll
 ; assimp/optimized/BVHLoader.cpp.ll
@@ -28,6 +29,7 @@
 ; folly/optimized/Conv.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; llama.cpp/optimized/common.cpp.ll
+; lvgl/optimized/lv_line.ll
 ; meshlab/optimized/edit_manipulators.cpp.ll
 ; minetest/optimized/COBJMeshFileLoader.cpp.ll
 ; minetest/optimized/COpenGLExtensionHandler.cpp.ll
@@ -37,6 +39,7 @@
 ; minetest/optimized/playing_sound.cpp.ll
 ; minetest/optimized/serverenvironment.cpp.ll
 ; minetest/optimized/wieldmesh.cpp.ll
+; mitsuba3/optimized/string.cpp.ll
 ; nanosvg/optimized/nanosvg.ll
 ; ncnn/optimized/paramdict.cpp.ll
 ; openjdk/optimized/ShapeSpanIterator.ll
@@ -53,6 +56,27 @@
 ; xgboost/optimized/tree_model.cc.ll
 ; xgboost/optimized/updater_colmaker.cc.ll
 ; yoga/optimized/AbsoluteLayout.cpp.ll
+; zed-rs/optimized/130afw1833d1gu50165ly3xmm.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; zed-rs/optimized/2dbu45lers7mkstxlrhw3mc97.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/4kidsk70o8yfs5e4frb89ok7e.ll
+; zed-rs/optimized/5t11v1wc3a9lo225k1xr00pdg.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8mv6d566jv1jdve4gk2kn2bhk.ll
+; zed-rs/optimized/8ong401nghjuvw1pdqaahwms7.ll
+; zed-rs/optimized/8uq0kpgi8jqekwanrrlvbr0h1.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
+; zed-rs/optimized/9fdv7qxvc9ek9liffc7407f9x.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
+; zed-rs/optimized/a5zoltfqgma86dzb1rp0ilkm9.ll
+; zed-rs/optimized/ahd9e352ekh05680xrqpqafs1.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
+; zed-rs/optimized/dk3mu4s97ymh6nwez7kj5espe.ll
 ; Function Attrs: nounwind
 define float @func0000000000000001(float %0, float %1, i8 %2) #0 {
 entry:
@@ -64,9 +88,38 @@ entry:
 ; 1 occurrences:
 ; yoga/optimized/CalculateLayout.cpp.ll
 ; Function Attrs: nounwind
-define float @func0000000000000008(float %0, float %1, i8 %2) #0 {
+define float @func0000000000000018(float %0, float %1, i8 %2) #0 {
 entry:
-  %3 = icmp ugt i8 %2, 1
+  %3 = icmp samesign ugt i8 %2, 1
+  %4 = select i1 %3, float %0, float %1
+  ret float %4
+}
+
+; 9 occurrences:
+; zed-rs/optimized/130afw1833d1gu50165ly3xmm.ll
+; zed-rs/optimized/1cn7xv4w6dvhmserny8iqmdc3.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
+; Function Attrs: nounwind
+define float @func0000000000000014(float %0, float %1, i8 %2) #0 {
+entry:
+  %3 = icmp samesign ult i8 %2, -2
+  %4 = select i1 %3, float %0, float %1
+  ret float %4
+}
+
+; 2 occurrences:
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; Function Attrs: nounwind
+define float @func0000000000000004(float %0, float %1, i8 %2) #0 {
+entry:
+  %3 = icmp ult i8 %2, 2
   %4 = select i1 %3, float %0, float %1
   ret float %4
 }

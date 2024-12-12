@@ -1,6 +1,7 @@
 
-; 18 occurrences:
+; 19 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
+; boost/optimized/src.ll
 ; cpython/optimized/Hacl_Hash_MD5.ll
 ; cpython/optimized/Hacl_Hash_SHA1.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll

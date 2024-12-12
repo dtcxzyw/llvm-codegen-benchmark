@@ -9,7 +9,7 @@ func000000000000000c:                   # @func000000000000000c
 	leal	(%rdi,%rsi), %eax
 	andb	$1, %al
 	retq
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000141:                   # @func0000000000000141
 	imull	%edx, %esi
 	addl	%esi, %edi
 	sete	%al

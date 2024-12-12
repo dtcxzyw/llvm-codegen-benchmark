@@ -1,4 +1,4 @@
-func0000000000000050:                   # @func0000000000000050
+func0000000000000090:                   # @func0000000000000090
 	addq	$-3, %rsi
 	cmpq	$3, %rsi
 	setb	%al
@@ -16,7 +16,7 @@ func0000000000000020:                   # @func0000000000000020
 	setb	%al
 	andb	%dil, %al
 	retq
-func00000000000000f0:                   # @func00000000000000f0
+func00000000000001b0:                   # @func00000000000001b0
 	cmpq	$80, %rsi
 	setne	%al
 	andb	%dil, %al

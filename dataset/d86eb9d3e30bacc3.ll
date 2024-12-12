@@ -9,7 +9,7 @@
 ; openusd/optimized/bignum-dtoa.cc.ll
 ; openusd/optimized/fast-dtoa.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, float %1) #0 {
+define i1 @func0000000000000181(i32 %0, float %1) #0 {
 entry:
   %2 = bitcast float %1 to i32
   %3 = and i32 %2, 2130706432
@@ -128,7 +128,7 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, float %1) #0 {
+define i1 @func0000000000000301(i32 %0, float %1) #0 {
 entry:
   %2 = bitcast float %1 to i32
   %3 = and i32 %2, 2130706432
@@ -142,7 +142,7 @@ entry:
 ; arrow/optimized/float16.cc.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, float %1) #0 {
+define i1 @func0000000000000021(i32 %0, float %1) #0 {
 entry:
   %2 = bitcast float %1 to i32
   %3 = and i32 %2, 8388607

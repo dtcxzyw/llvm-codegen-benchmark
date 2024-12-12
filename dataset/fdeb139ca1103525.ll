@@ -13,13 +13,12 @@ entry:
   ret i32 %4
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; clamav/optimized/bcrun.c.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; libwebp/optimized/alpha_processing.c.ll
 ; linux/optimized/cacheinfo.ll
 ; linux/optimized/i2c-algo-bit.ll
-; linux/optimized/rpl.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; qemu/optimized/hw_usb_dev-smartcard-reader.c.ll
 ; sqlite/optimized/sqlite3.ll

@@ -6,7 +6,7 @@ func000000000000000a:                   # @func000000000000000a
 	orb	%dil, %al
 	retq
 func0000000000000001:                   # @func0000000000000001
-	cmpl	%esi, %edx
+	cmpl	%edx, %esi
 	sete	%al
 	xorb	$1, %dil
 	orb	%dil, %al

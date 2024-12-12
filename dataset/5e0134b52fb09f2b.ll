@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj3.c.ll
@@ -12,7 +12,6 @@
 ; openmpi/optimized/nbc_ireduce.ll
 ; openssl/optimized/libssl-lib-quic_stream_map.ll
 ; openssl/optimized/libssl-shlib-quic_stream_map.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
 ; raylib/optimized/rcore.c.ll
 ; redis/optimized/rax.ll
 ; verilator/optimized/V3OrderParallel.cpp.ll

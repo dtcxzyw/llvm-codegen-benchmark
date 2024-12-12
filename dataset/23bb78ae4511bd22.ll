@@ -4,7 +4,7 @@
 ; openvdb/optimized/Archive.cc.ll
 ; stb/optimized/stb_ds.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000041(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
   %4 = getelementptr nusw i8, ptr %1, i64 %3
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; casadi/optimized/integrator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000004c(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
   %4 = getelementptr nusw double, ptr %1, i64 %3

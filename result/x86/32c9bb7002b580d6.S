@@ -11,7 +11,7 @@ func0000000000000008:                   # @func0000000000000008
 	setae	%al
 	andb	%dil, %al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	imulq	%rdx, %rsi
 	testq	%rsi, %rsi
 	setg	%al

@@ -1,10 +1,11 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; cmake/optimized/cover.c.ll
 ; cmake/optimized/fastcover.c.ll
 ; linux/optimized/skl_universal_plane.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; opencv/optimized/norm.cpp.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
 ; zstd/optimized/cover.c.ll
 ; zstd/optimized/fastcover.c.ll
 ; Function Attrs: nounwind

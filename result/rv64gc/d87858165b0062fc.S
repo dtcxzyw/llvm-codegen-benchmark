@@ -22,8 +22,22 @@ func0000000000000004:                   # @func0000000000000004
 func0000000000000008:                   # @func0000000000000008
 	slli	a1, a1, 48
 	srli	a1, a1, 48
-	li	a2, 2
+	li	a2, 1
 	bltu	a2, a1, .LBB4_2
-	li	a0, 16
+	li	a0, 5
 .LBB4_2:                                # %entry
+	ret
+func0000000000000014:                   # @func0000000000000014
+	slli	a1, a1, 48
+	srli	a1, a1, 48
+	sltiu	a1, a1, 17
+	neg	a1, a1
+	and	a0, a0, a1
+	ret
+func0000000000000018:                   # @func0000000000000018
+	slli	a1, a1, 48
+	srli	a1, a1, 48
+	sltiu	a1, a1, 65
+	addi	a1, a1, -1
+	and	a0, a0, a1
 	ret

@@ -19,10 +19,10 @@
 ; folly/optimized/NestedCommandLineApp.cpp.ll
 ; minetest/optimized/client.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b0(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000150(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 15, i64 %2
-  %4 = icmp uge i64 %3, %0
+  %4 = icmp ule i64 %0, %3
   %5 = icmp ugt i64 %0, 15
   %6 = or i1 %5, %4
   ret i1 %6

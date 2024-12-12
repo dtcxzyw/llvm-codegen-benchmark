@@ -1,5 +1,7 @@
 
-; 20 occurrences:
+; 22 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; graphviz/optimized/imageviewer.cpp.ll
 ; graphviz/optimized/neatosplines.c.ll
 ; graphviz/optimized/tlayout.c.ll
@@ -24,7 +26,7 @@
 define double @func0000000000000000(double %0, double %1) #0 {
 entry:
   %2 = fadd double %1, -1.000000e+00
-  %3 = fmul double %2, %0
+  %3 = fmul double %0, %2
   %4 = fmul double %3, 0x3CB0000000000000
   ret double %4
 }

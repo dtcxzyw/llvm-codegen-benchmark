@@ -1,5 +1,5 @@
 
-; 70 occurrences:
+; 67 occurrences:
 ; abc/optimized/giaSim.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; bullet3/optimized/btHeightfieldTerrainShape.ll
@@ -32,13 +32,10 @@
 ; openblas/optimized/dlansf.c.ll
 ; openblas/optimized/dlaqr5.c.ll
 ; openblas/optimized/dlarfb.c.ll
-; openblas/optimized/dlasyf_aa.c.ll
 ; openblas/optimized/dorgql.c.ll
 ; openblas/optimized/dorgtsqr_row.c.ll
 ; openblas/optimized/dpbtrf.c.ll
 ; openblas/optimized/dsbgst.c.ll
-; openblas/optimized/dsygst.c.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; openblas/optimized/dtgsja.c.ll
 ; opencv/optimized/brisk.cpp.ll
@@ -79,7 +76,7 @@ entry:
   ret i64 %5
 }
 
-; 133 occurrences:
+; 125 occurrences:
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/abcPart.c.ll
 ; abc/optimized/absDup.c.ll
@@ -103,8 +100,6 @@ entry:
 ; gromacs/optimized/compute_io.cpp.ll
 ; gromacs/optimized/dgetri.cpp.ll
 ; gromacs/optimized/dlasd2.cpp.ll
-; gromacs/optimized/dlasd3.cpp.ll
-; gromacs/optimized/dlatrd.cpp.ll
 ; gromacs/optimized/genconf.cpp.ll
 ; gromacs/optimized/genion.cpp.ll
 ; gromacs/optimized/grid.cpp.ll
@@ -113,8 +108,7 @@ entry:
 ; gromacs/optimized/pme_spread.cpp.ll
 ; gromacs/optimized/sgetri.cpp.ll
 ; gromacs/optimized/slasd2.cpp.ll
-; gromacs/optimized/slasd3.cpp.ll
-; gromacs/optimized/slatrd.cpp.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/qhull_tools.cpp.ll
@@ -134,23 +128,18 @@ entry:
 ; oiio/optimized/Codec.cpp.ll
 ; openblas/optimized/dbdsvdx.c.ll
 ; openblas/optimized/dgbbrd.c.ll
-; openblas/optimized/dgetri.c.ll
 ; openblas/optimized/dlaed3.c.ll
 ; openblas/optimized/dlagge.c.ll
 ; openblas/optimized/dlansf.c.ll
-; openblas/optimized/dlaorhr_col_getrfnp.c.ll
 ; openblas/optimized/dlaqps.c.ll
 ; openblas/optimized/dlaqr5.c.ll
 ; openblas/optimized/dlasd2.c.ll
 ; openblas/optimized/dlasd3.c.ll
-; openblas/optimized/dlasyf_aa.c.ll
 ; openblas/optimized/dlatrd.c.ll
 ; openblas/optimized/dorgql.c.ll
 ; openblas/optimized/dpbtrf.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; openblas/optimized/dsbtrd.c.ll
-; openblas/optimized/dsygst.c.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
 ; openblas/optimized/dsytrf_aa.c.ll
 ; openblas/optimized/dsytrf_aa_2stage.c.ll
 ; openblas/optimized/dtgevc.c.ll
@@ -222,7 +211,7 @@ entry:
   ret i64 %5
 }
 
-; 44 occurrences:
+; 43 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; gromacs/optimized/dgebrd.cpp.ll
 ; gromacs/optimized/dsytrd.cpp.ll
@@ -246,7 +235,6 @@ entry:
 ; oiio/optimized/iffinput.cpp.ll
 ; oiio/optimized/iffoutput.cpp.ll
 ; openblas/optimized/dlagsy.c.ll
-; openblas/optimized/dsygst.c.ll
 ; opencv/optimized/contrast_preserve.cpp.ll
 ; opencv/optimized/convolution_layer.cpp.ll
 ; opencv/optimized/denoising.cpp.ll
@@ -276,12 +264,9 @@ entry:
   ret i64 %5
 }
 
-; 10 occurrences:
+; 7 occurrences:
 ; gromacs/optimized/atomdata.cpp.ll
-; gromacs/optimized/dtrtri.cpp.ll
 ; gromacs/optimized/pme_spread.cpp.ll
-; gromacs/optimized/strtri.cpp.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
 ; openblas/optimized/dsytrf_aa_2stage.c.ll
 ; openblas/optimized/dtgex2.c.ll
 ; opencv/optimized/convolution.cpp.ll
@@ -296,13 +281,11 @@ entry:
   ret i64 %5
 }
 
-; 12 occurrences:
+; 10 occurrences:
 ; abc/optimized/abcSop.c.ll
 ; icu/optimized/propsvec.ll
 ; openblas/optimized/dsytri2x.c.ll
 ; openblas/optimized/dsytri_3x.c.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtpttf.c.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; openjdk/optimized/imageioJPEG.ll
 ; openusd/optimized/detokenize.c.ll
@@ -313,7 +296,7 @@ entry:
 define i64 @func000000000000000d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }

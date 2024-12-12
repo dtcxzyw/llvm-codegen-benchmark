@@ -1,8 +1,9 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; abc/optimized/dauNpn2.c.ll
 ; abc/optimized/dauTree.c.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
+; lvgl/optimized/lv_color.ll
 ; openjdk/optimized/UshortGray.ll
 ; ruby/optimized/time.ll
 ; wireshark/optimized/packet-gmr1_bcch.c.ll

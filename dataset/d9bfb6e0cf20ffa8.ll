@@ -3,7 +3,7 @@
 ; abc/optimized/cnf_reader.c.ll
 ; abc/optimized/xsatCnfReader.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = sub nsw i32 0, %3
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/msatRead.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a1(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = sub nsw i32 0, %3
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/msatRead.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a6(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = sub nsw i32 0, %3
@@ -39,7 +39,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/date.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000da(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001aa(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = sub nsw i32 0, %3
@@ -51,7 +51,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000008a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = sub i32 1, %3

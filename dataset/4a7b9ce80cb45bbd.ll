@@ -1,5 +1,5 @@
 
-; 37 occurrences:
+; 36 occurrences:
 ; casadi/optimized/dae_builder_internal.cpp.ll
 ; cmake/optimized/cmCTestTestHandler.cxx.ll
 ; cmake/optimized/cmCursesOptionsWidget.cxx.ll
@@ -22,7 +22,6 @@
 ; llvm/optimized/InstrProfWriter.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SymbolizableObjectFile.cpp.ll
 ; meshlab/optimized/ofbx.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll

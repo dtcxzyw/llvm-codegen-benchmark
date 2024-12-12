@@ -3,7 +3,7 @@ func000000000000007c:                   # @func000000000000007c
 	movzbl	%dl, %eax
 	leaq	1(%rax,%rdi), %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	addb	%sil, %dl
 	decb	%dl
 	movzbl	%dl, %eax

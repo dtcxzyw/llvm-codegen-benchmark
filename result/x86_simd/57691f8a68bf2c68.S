@@ -16,7 +16,7 @@ func0000000000000006:                   # @func0000000000000006
 	.quad	9007199254740991                # 0x1fffffffffffff
 .LCPI2_1:
 	.quad	4503599627370496                # 0x10000000000000
-func0000000000000023:                   # @func0000000000000023
+func0000000000000063:                   # @func0000000000000063
 	vpcmpnleuq	.LCPI2_0(%rip){1to4}, %ymm2, %k1
 	vorpd	%ymm1, %ymm0, %ymm0
 	vorpd	.LCPI2_1(%rip){1to4}, %ymm0, %ymm0 {%k1}

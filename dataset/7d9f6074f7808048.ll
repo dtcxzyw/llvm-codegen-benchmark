@@ -1,6 +1,8 @@
 
-; 16 occurrences:
+; 18 occurrences:
 ; abc/optimized/ivyHaig.c.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
@@ -26,7 +28,8 @@ entry:
   ret i32 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; openusd/optimized/value.cpp.ll
 ; php/optimized/zend_inference.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i1 %1, i1 %2) #0 {

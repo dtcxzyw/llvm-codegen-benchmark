@@ -1,10 +1,18 @@
 
-; 9 occurrences:
+; 17 occurrences:
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; graphviz/optimized/general.c.ll
 ; graphviz/optimized/layout.c.ll
 ; graphviz/optimized/legal.c.ll
 ; graphviz/optimized/neatosplines.c.ll
 ; graphviz/optimized/ortho.c.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; qemu/optimized/util_qdist.c.ll
 ; raylib/optimized/rmodels.c.ll
 ; sqlite/optimized/sqlite3.ll

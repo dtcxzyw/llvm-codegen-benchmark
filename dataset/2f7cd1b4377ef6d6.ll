@@ -1,7 +1,6 @@
 
-; 63 occurrences:
+; 62 occurrences:
 ; cmake/optimized/json_value.cpp.ll
-; coreutils-rs/optimized/4rjs632i9cta2yqf.ll
 ; diesel-rs/optimized/6cb7zukciz78xvw.ll
 ; graphviz/optimized/dotsplines.c.ll
 ; imgui/optimized/imgui_draw.cpp.ll
@@ -49,20 +48,20 @@
 ; postgres/optimized/regexec.ll
 ; raylib/optimized/rtext.c.ll
 ; redis/optimized/module.ll
-; ring-rs/optimized/4krjvpwhiya9iudo.ll
 ; rocksdb/optimized/block_based_table_iterator.cc.ll
 ; rocksdb/optimized/block_based_table_reader.cc.ll
 ; rocksdb/optimized/partitioned_index_iterator.cc.ll
 ; rust-analyzer-rs/optimized/4jgoi87ys7cbhj0l.ll
 ; rust-analyzer-rs/optimized/58xaix613yc6ngmz.ll
 ; rust-analyzer-rs/optimized/k5mtltw7nxmadpl.ll
+; slurm/optimized/update_job.ll
 ; stb/optimized/stb_truetype.c.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
-; wasmtime-rs/optimized/1aegspwwbjc82p4w.ll
-; wasmtime-rs/optimized/1d0hmxdweaxxi3oz.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wireshark/optimized/packet-dbus.c.ll
+; zed-rs/optimized/boi9y0usg3zgxloz4mhfx1f5f.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i1 %1, i1 %2) #0 {
 entry:

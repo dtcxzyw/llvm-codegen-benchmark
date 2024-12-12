@@ -18,7 +18,7 @@ entry:
   %3 = trunc nsw i32 %2 to i8
   %4 = sdiv i8 %3, 4
   %5 = sext i8 %4 to i32
-  %6 = add nsw i32 %5, %1
+  %6 = add nsw i32 %1, %5
   %7 = add nsw i32 %6, %0
   ret i32 %7
 }

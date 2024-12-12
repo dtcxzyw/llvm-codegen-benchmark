@@ -14,5 +14,5 @@ func000000000000000a:                   # @func000000000000000a
 func0000000000000006:                   # @func0000000000000006
 	vmovmskpd	%xmm0, %eax
 	andl	$1, %eax
-	incl	%eax
+	addl	$3, %eax
 	retq

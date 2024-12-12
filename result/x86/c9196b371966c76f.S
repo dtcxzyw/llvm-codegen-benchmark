@@ -4,5 +4,5 @@ func000000000000005d:                   # @func000000000000005d
 	shrq	$47, %rax
 	imull	$65521, %eax, %eax              # imm = 0xFFF1
 	subl	%eax, %esi
-	leaq	-131042(%rsi,%rdi), %rax
+	leaq	-131042(%rdi,%rsi), %rax
 	retq

@@ -23,5 +23,5 @@ func000000000000000d:                   # @func000000000000000d
 func0000000000000008:                   # @func0000000000000008
 	fcvt.d.lu	fa5, a0
 	fdiv.d	fa5, fa1, fa5
-	feq.d	a0, fa5, fa0
+	feq.d	a0, fa0, fa5
 	ret

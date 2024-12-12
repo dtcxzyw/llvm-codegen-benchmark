@@ -10,3 +10,9 @@ func0000000000000028:                   # @func0000000000000028
 	subq	%rdi, %rax
 	addq	$-16, %rax
 	retq
+func000000000000002c:                   # @func000000000000002c
+	movslq	%edx, %rax
+	leaq	(%rsi,%rax,8), %rax
+	subq	%rdi, %rax
+	addq	$16, %rax
+	retq

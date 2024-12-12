@@ -12,8 +12,8 @@
 define ptr @func0000000000000002(ptr %0, i64 %1, i1 %2) #0 {
 entry:
   %.neg = sext i1 %2 to i64
-  %3 = getelementptr i8, ptr %0, i64 %.neg
-  %4 = getelementptr i8, ptr %3, i64 %1
+  %3 = getelementptr i8, ptr %0, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 %.neg
   ret ptr %4
 }
 
@@ -24,8 +24,8 @@ entry:
 define ptr @func0000000000000000(ptr %0, i64 %1, i1 %2) #0 {
 entry:
   %.neg = sext i1 %2 to i64
-  %3 = getelementptr i8, ptr %0, i64 %.neg
-  %4 = getelementptr i8, ptr %3, i64 %1
+  %3 = getelementptr i8, ptr %0, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 %.neg
   ret ptr %4
 }
 

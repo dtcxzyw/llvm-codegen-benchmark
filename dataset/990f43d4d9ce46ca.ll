@@ -1,5 +1,5 @@
 
-; 61 occurrences:
+; 60 occurrences:
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/abcSymm.c.ll
@@ -56,7 +56,6 @@
 ; yosys/optimized/verilog_backend.ll
 ; zxing/optimized/AZDecoder.cpp.ll
 ; zxing/optimized/AZEncoder.cpp.ll
-; zxing/optimized/AZToken.cpp.ll
 ; zxing/optimized/ODDXFilmEdgeReader.cpp.ll
 ; zxing/optimized/ODDataBarExpandedReader.cpp.ll
 ; zxing/optimized/QREncoder.cpp.ll
@@ -70,7 +69,7 @@ entry:
   ret i8 %4
 }
 
-; 28 occurrences:
+; 29 occurrences:
 ; arrow/optimized/scalar_cast_numeric.cc.ll
 ; cmake/optimized/hex.c.ll
 ; duckdb/optimized/ub_duckdb_func_table.cpp.ll
@@ -82,8 +81,9 @@ entry:
 ; lightgbm/optimized/bin.cpp.ll
 ; linux/optimized/drm_dp_helper.ll
 ; linux/optimized/libps2.ll
-; linux/optimized/rsmisc.ll
 ; llvm/optimized/AttributorAttributes.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; oiio/optimized/pnminput.cpp.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; openjdk/optimized/pngrtran.ll
@@ -108,15 +108,16 @@ entry:
   ret i8 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; llvm/optimized/AliasAnalysis.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; zxing/optimized/QREncoder.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %0, %1
   %3 = trunc nuw nsw i32 %2 to i8
-  %4 = and i8 %3, 3
+  %4 = and i8 %3, 1
   ret i8 %4
 }
 

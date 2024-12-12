@@ -48,10 +48,12 @@ entry:
   ret ptr %5
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; eastl/optimized/TestAlgorithm.cpp.ll
 ; lief/optimized/bignum.c.ll
+; opencv/optimized/audio_spectrogram.cpp.ll
 ; opencv/optimized/daisy.cpp.ll
+; opencv/optimized/speech_recognition.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000036(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -94,9 +96,7 @@ entry:
   ret ptr %5
 }
 
-; 20 occurrences:
-; casadi/optimized/bspline.cpp.ll
-; casadi/optimized/bspline_interpolant.cpp.ll
+; 16 occurrences:
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
 ; eastl/optimized/TestTupleVector.cpp.ll
 ; eastl/optimized/TestVector.cpp.ll
@@ -113,14 +113,27 @@ entry:
 ; openblas/optimized/dtrmm_kernel_RN.c.ll
 ; openblas/optimized/dtrmm_kernel_RT.c.ll
 ; openblas/optimized/sgemm_kernel.c.ll
-; sentencepiece/optimized/builder.cc.ll
-; sentencepiece/optimized/unigram_model_trainer.cc.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000016(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 4
   %4 = sub nsw i64 %3, %1
   %5 = getelementptr nusw i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 5 occurrences:
+; casadi/optimized/bspline.cpp.ll
+; casadi/optimized/bspline_interpolant.cpp.ll
+; cvc5/optimized/core_solver.cpp.ll
+; sentencepiece/optimized/builder.cc.ll
+; sentencepiece/optimized/unigram_model_trainer.cc.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000017(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nsw i64 %2, 2
+  %4 = sub nsw i64 %3, %1
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 

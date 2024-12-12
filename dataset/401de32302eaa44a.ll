@@ -307,12 +307,12 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001f8(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 10
   %4 = and i64 %1, 4294967294
   %5 = add nuw nsw i64 %4, %3
-  %6 = icmp ugt i64 %5, 2147483647
+  %6 = icmp samesign ugt i64 %5, 2147483647
   %7 = select i1 %6, i1 true, i1 %0
   ret i1 %7
 }

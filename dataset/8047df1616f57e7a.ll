@@ -1,5 +1,22 @@
 
-; 64 occurrences:
+; 7 occurrences:
+; llvm/optimized/MachineInstr.cpp.ll
+; llvm/optimized/SimplifyCFG.cpp.ll
+; llvm/optimized/TargetInstrInfo.cpp.ll
+; php/optimized/pcre2_dfa_match.ll
+; php/optimized/pcre2_match.ll
+; qemu/optimized/block_qcow2-refcount.c.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000006(i1 %0, i1 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 12
+  %4 = or i1 %0, %1
+  %5 = select i1 %4, ptr null, ptr %3
+  ret ptr %5
+}
+
+; 59 occurrences:
 ; git/optimized/kwset.ll
 ; llvm/optimized/AArch64StackTagging.cpp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
@@ -36,7 +53,6 @@
 ; llvm/optimized/LTOBackend.cpp.ll
 ; llvm/optimized/LoopConstrainer.cpp.ll
 ; llvm/optimized/LowerTypeTests.cpp.ll
-; llvm/optimized/MachineInstr.cpp.ll
 ; llvm/optimized/MemorySanitizer.cpp.ll
 ; llvm/optimized/MergedLoadStoreMotion.cpp.ll
 ; llvm/optimized/ModuleSymbolTable.cpp.ll
@@ -53,7 +69,6 @@
 ; llvm/optimized/SafeStack.cpp.ll
 ; llvm/optimized/SampleProfileProbe.cpp.ll
 ; llvm/optimized/SimplifyCFG.cpp.ll
-; llvm/optimized/TargetInstrInfo.cpp.ll
 ; llvm/optimized/TargetLoweringObjectFileImpl.cpp.ll
 ; llvm/optimized/ThinLTOBitcodeWriter.cpp.ll
 ; llvm/optimized/Verifier.cpp.ll
@@ -61,13 +76,10 @@
 ; llvm/optimized/WholeProgramDevirt.cpp.ll
 ; llvm/optimized/WinEHPrepare.cpp.ll
 ; llvm/optimized/X86WinEHState.cpp.ll
-; php/optimized/pcre2_dfa_match.ll
-; php/optimized/pcre2_match.ll
-; qemu/optimized/block_qcow2-refcount.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(i1 %0, i1 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 12
+  %3 = getelementptr nusw i8, ptr %2, i64 -1
   %4 = or i1 %0, %1
   %5 = select i1 %4, ptr null, ptr %3
   ret ptr %5

@@ -1,5 +1,5 @@
 
-; 205 occurrences:
+; 207 occurrences:
 ; assimp/optimized/LWOLoader.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
@@ -11,7 +11,6 @@
 ; cmake/optimized/archive_write_set_format_shar.c.ll
 ; cmake/optimized/mime.c.ll
 ; cpython/optimized/_datetimemodule.ll
-; cpython/optimized/datetime.ll
 ; cpython/optimized/floatobject.ll
 ; curl/optimized/libcurl_la-mime.ll
 ; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
@@ -67,6 +66,8 @@
 ; llvm/optimized/TargetLoweringObjectFileImpl.cpp.ll
 ; llvm/optimized/UnicodeNameToCodepoint.cpp.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
+; lvgl/optimized/lv_svg_parser.ll
 ; meshlab/optimized/TexturePainter.cpp.ll
 ; meshlab/optimized/decorate_base.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
@@ -177,7 +178,6 @@
 ; stb/optimized/stb_truetype.c.ll
 ; tree-sitter-rs/optimized/3pra6a7meoswj3tu.ll
 ; velox/optimized/Base64.cpp.ll
-; wireshark/optimized/dpa400.c.ll
 ; wireshark/optimized/eyesdn.c.ll
 ; wireshark/optimized/packet-atm.c.ll
 ; wireshark/optimized/packet-atn-ulcs.c.ll
@@ -205,6 +205,8 @@
 ; wolfssl/optimized/tls13.c.ll
 ; yalantinglibs/optimized/chat_room.cpp.ll
 ; yalantinglibs/optimized/example.cpp.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001f(i8 %0, i8 %1) #0 {
 entry:
@@ -216,18 +218,18 @@ entry:
   ret i32 %6
 }
 
-; 252 occurrences:
+; 247 occurrences:
 ; assimp/optimized/STEPFileEncoding.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; assimp/optimized/o3dgcArithmeticCodec.cpp.ll
 ; assimp/optimized/o3dgcDynamicVectorDecoder.cpp.ll
+; boost/optimized/ipv4_address.ll
 ; clamav/optimized/Bcj2.c.ll
 ; clamav/optimized/Bra86.c.ll
 ; clamav/optimized/LzmaDec.c.ll
 ; clamav/optimized/binhex.c.ll
 ; clamav/optimized/chmd.c.ll
-; clamav/optimized/dns.c.ll
 ; clamav/optimized/rijndael.c.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
@@ -309,6 +311,8 @@ entry:
 ; lodepng/optimized/lodepng.cpp.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_text.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
@@ -359,25 +363,17 @@ entry:
 ; openmpi/optimized/sha256.ll
 ; openssl/optimized/libcrypto-lib-aria.ll
 ; openssl/optimized/libcrypto-lib-bf_cfb64.ll
-; openssl/optimized/libcrypto-lib-bf_ecb.ll
 ; openssl/optimized/libcrypto-lib-bf_enc.ll
-; openssl/optimized/libcrypto-lib-bf_ofb64.ll
 ; openssl/optimized/libcrypto-lib-c_cfb64.ll
-; openssl/optimized/libcrypto-lib-c_ecb.ll
 ; openssl/optimized/libcrypto-lib-c_enc.ll
-; openssl/optimized/libcrypto-lib-c_ofb64.ll
 ; openssl/optimized/libcrypto-lib-seed.ll
 ; openssl/optimized/libcrypto-lib-sm3.ll
 ; openssl/optimized/libcrypto-lib-sm4.ll
 ; openssl/optimized/libcrypto-shlib-aria.ll
 ; openssl/optimized/libcrypto-shlib-bf_cfb64.ll
-; openssl/optimized/libcrypto-shlib-bf_ecb.ll
 ; openssl/optimized/libcrypto-shlib-bf_enc.ll
-; openssl/optimized/libcrypto-shlib-bf_ofb64.ll
 ; openssl/optimized/libcrypto-shlib-c_cfb64.ll
-; openssl/optimized/libcrypto-shlib-c_ecb.ll
 ; openssl/optimized/libcrypto-shlib-c_enc.ll
-; openssl/optimized/libcrypto-shlib-c_ofb64.ll
 ; openssl/optimized/libcrypto-shlib-seed.ll
 ; openssl/optimized/libcrypto-shlib-sm3.ll
 ; openssl/optimized/libcrypto-shlib-sm4.ll
@@ -431,7 +427,6 @@ entry:
 ; wireshark/optimized/address_types.c.ll
 ; wireshark/optimized/autosar_dlt.c.ll
 ; wireshark/optimized/charsets.c.ll
-; wireshark/optimized/csids.c.ll
 ; wireshark/optimized/erf.c.ll
 ; wireshark/optimized/iptrace.c.ll
 ; wireshark/optimized/k12.c.ll
@@ -443,7 +438,6 @@ entry:
 ; wireshark/optimized/packet-gtp.c.ll
 ; wireshark/optimized/packet-icmp.c.ll
 ; wireshark/optimized/packet-ieee80211-prism.c.ll
-; wireshark/optimized/packet-ieee80211-wlancap.c.ll
 ; wireshark/optimized/packet-k12.c.ll
 ; wireshark/optimized/packet-lbmr.c.ll
 ; wireshark/optimized/packet-lbmsrs.c.ll
@@ -467,6 +461,9 @@ entry:
 ; wireshark/optimized/vwr.c.ll
 ; wolfssl/optimized/aes.c.ll
 ; wolfssl/optimized/ssl.c.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
@@ -480,7 +477,7 @@ entry:
   ret i32 %6
 }
 
-; 40 occurrences:
+; 48 occurrences:
 ; clap-rs/optimized/4r6y4qxwk52m92uh.ll
 ; cmake/optimized/archive_read_support_filter_uu.c.ll
 ; coreutils-rs/optimized/1487bf2zeluccyme.ll
@@ -521,6 +518,14 @@ entry:
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; velox/optimized/Base64.cpp.ll
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000007f(i8 %0, i8 %1) #0 {
 entry:
@@ -532,32 +537,7 @@ entry:
   ret i32 %6
 }
 
-; 13 occurrences:
-; clamav/optimized/Bra.c.ll
-; cmake/optimized/sparc.c.ll
-; coreutils-rs/optimized/2l6nxvvz97tcra6u.ll
-; freetype/optimized/ftbase.c.ll
-; icu/optimized/bmpset.ll
-; icu/optimized/normalizer2impl.ll
-; linux/optimized/libahci.ll
-; linux/optimized/synaptics.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
-; openjdk/optimized/imageDecompressor.ll
-; php/optimized/image.ll
-; qemu/optimized/hw_net_can_can_sja1000.c.ll
-; wireshark/optimized/ngsniffer.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000005f(i8 %0, i8 %1) #0 {
-entry:
-  %2 = zext nneg i8 %1 to i32
-  %3 = shl nuw nsw i32 %2, 24
-  %4 = zext i8 %0 to i32
-  %5 = shl nuw nsw i32 %4, 16
-  %6 = or disjoint i32 %5, %3
-  ret i32 %6
-}
-
-; 61 occurrences:
+; 65 occurrences:
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; eastl/optimized/EAMemory.cpp.ll
 ; folly/optimized/IPAddressV4.cpp.ll
@@ -577,9 +557,10 @@ entry:
 ; llvm/optimized/xxhash.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
 ; logos-rs/optimized/5f38ll801i7djw99.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/eigen_mesh_conversions.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -615,10 +596,13 @@ entry:
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; wasmtime-rs/optimized/33slbp9da8waph2q.ll
 ; wasmtime-rs/optimized/3flv1664rwe55t82.ll
-; wasmtime-rs/optimized/4z02b278nscq7j1a.ll
 ; wasmtime-rs/optimized/v5prf101dn49s3v.ll
 ; wireshark/optimized/autosar_dlt.c.ll
 ; wireshark/optimized/packet-lbmr.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001d(i8 %0, i8 %1) #0 {
 entry:
@@ -626,6 +610,30 @@ entry:
   %3 = shl nuw nsw i32 %2, 16
   %4 = zext i8 %0 to i32
   %5 = shl nuw i32 %4, 24
+  %6 = or disjoint i32 %5, %3
+  ret i32 %6
+}
+
+; 12 occurrences:
+; clamav/optimized/Bra.c.ll
+; cmake/optimized/sparc.c.ll
+; coreutils-rs/optimized/2l6nxvvz97tcra6u.ll
+; freetype/optimized/ftbase.c.ll
+; icu/optimized/bmpset.ll
+; icu/optimized/normalizer2impl.ll
+; linux/optimized/libahci.ll
+; linux/optimized/synaptics.ll
+; openjdk/optimized/imageDecompressor.ll
+; php/optimized/image.ll
+; qemu/optimized/hw_net_can_can_sja1000.c.ll
+; wireshark/optimized/ngsniffer.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000005f(i8 %0, i8 %1) #0 {
+entry:
+  %2 = zext nneg i8 %1 to i32
+  %3 = shl nuw nsw i32 %2, 24
+  %4 = zext i8 %0 to i32
+  %5 = shl nuw nsw i32 %4, 3
   %6 = or disjoint i32 %5, %3
   ret i32 %6
 }
@@ -643,18 +651,14 @@ entry:
   ret i32 %6
 }
 
-; 14 occurrences:
+; 10 occurrences:
 ; cmake/optimized/archive_read_support_filter_uu.c.ll
 ; icu/optimized/ustrtrns.ll
-; jq/optimized/utf32_be.ll
-; jq/optimized/utf32_le.ll
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/synaptics.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; node/optimized/simdutf.ll
-; oniguruma/optimized/utf32_be.ll
-; oniguruma/optimized/utf32_le.ll
 ; openjdk/optimized/utf8.ll
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
 ; wireshark/optimized/packet-fp_hint.c.ll
@@ -682,10 +686,9 @@ entry:
   ret i32 %6
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; clamav/optimized/readdb.c.ll
 ; grpc/optimized/b64.cc.ll
-; linux/optimized/early.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_vdsc.ll
 ; linux/optimized/mpparse.ll
@@ -767,6 +770,19 @@ entry:
   %4 = zext nneg i8 %0 to i32
   %5 = shl nuw i32 %4, 25
   %6 = or disjoint i32 %5, %3
+  ret i32 %6
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-ieee80211.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000007e(i8 %0, i8 %1) #0 {
+entry:
+  %2 = zext nneg i8 %1 to i32
+  %3 = shl nuw nsw i32 %2, 11
+  %4 = zext nneg i8 %0 to i32
+  %5 = shl nuw nsw i32 %4, 6
+  %6 = or i32 %5, %3
   ret i32 %6
 }
 

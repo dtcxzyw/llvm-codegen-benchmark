@@ -2,7 +2,7 @@
 	.long	1                               # 0x1
 .LCPI0_1:
 	.long	7                               # 0x7
-func0000000000000021:                   # @func0000000000000021
+func0000000000000061:                   # @func0000000000000061
 	vpcmpnleud	.LCPI0_0(%rip){1to8}, %ymm1, %k1
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpsllvd	%ymm0, %ymm1, %ymm2

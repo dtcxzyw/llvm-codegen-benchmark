@@ -16,7 +16,7 @@ define i32 @func000000000000001b(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 12
   %4 = and i32 %3, 61440
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = zext i8 %1 to i32
   %7 = or disjoint i32 %5, %6
   ret i32 %7
@@ -78,7 +78,7 @@ define i32 @func000000000000001f(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 12
   %4 = and i32 %3, 61440
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = zext nneg i8 %1 to i32
   %7 = or disjoint i32 %5, %6
   ret i32 %7
@@ -105,7 +105,7 @@ define i32 @func000000000000000b(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 8
   %4 = and i32 %3, 65280
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = zext i8 %1 to i32
   %7 = or disjoint i32 %5, %6
   ret i32 %7
@@ -118,7 +118,7 @@ define i32 @func000000000000001c(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 12
   %4 = and i32 %3, 61440
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   %6 = zext nneg i8 %1 to i32
   %7 = or i32 %5, %6
   ret i32 %7
@@ -131,7 +131,7 @@ define i32 @func0000000000000004(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 5
   %4 = and i32 %3, 4064
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   %6 = zext nneg i8 %1 to i32
   %7 = or i32 %5, %6
   ret i32 %7
@@ -145,20 +145,29 @@ define i32 @func0000000000000018(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 16
   %4 = and i32 %3, 65536
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   %6 = zext i8 %1 to i32
   %7 = or i32 %5, %6
   ret i32 %7
 }
 
-; 1 occurrences:
+; 10 occurrences:
+; hermes/optimized/AST2JS.cpp.ll
+; hermes/optimized/ConsecutiveStringStorage.cpp.ll
+; hermes/optimized/HBC.cpp.ll
+; hermes/optimized/JSLexer.cpp.ll
+; hermes/optimized/JSONEmitter.cpp.ll
+; hermes/optimized/RegexSerialization.cpp.ll
+; hermes/optimized/Runtime.cpp.ll
+; hermes/optimized/SourceErrorManager.cpp.ll
+; hermes/optimized/UTF8.cpp.ll
 ; sentencepiece/optimized/util.cc.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 12
   %4 = and i32 %3, 61440
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = zext nneg i8 %1 to i32
   %7 = or disjoint i32 %5, %6
   ret i32 %7

@@ -20,7 +20,7 @@ func0000000000000006:                   # @func0000000000000006
 	retq
 .LCPI2_0:
 	.quad	128                             # 0x80
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vptestmq	.LCPI2_0(%rip){1to4}, %ymm1, %k1
@@ -32,7 +32,7 @@ func0000000000000026:                   # @func0000000000000026
 	.quad	4611686018427387903             # 0x3fffffffffffffff
 .LCPI3_1:
 	.quad	20                              # 0x14
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vpandq	.LCPI3_0(%rip){1to4}, %ymm1, %ymm0
@@ -65,7 +65,7 @@ func0000000000000001:                   # @func0000000000000001
 	.quad	9223372036854775807             # 0x7fffffffffffffff
 .LCPI6_1:
 	.quad	126                             # 0x7e
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vpandq	.LCPI6_0(%rip){1to4}, %ymm1, %ymm0

@@ -1,6 +1,7 @@
 
-; 25 occurrences:
+; 29 occurrences:
 ; abseil-cpp/optimized/time_zone_format.cc.ll
+; boost/optimized/test_iostream.ll
 ; cmake/optimized/archive_string.c.ll
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
@@ -25,6 +26,9 @@
 ; quickjs/optimized/libunicode.ll
 ; tokenizers-rs/optimized/1ve5rid4048y19bt.ll
 ; z3/optimized/theory_arith.cpp.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000003(i16 %0) #0 {
 entry:
@@ -33,9 +37,10 @@ entry:
   ret i16 %2
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; minetest/optimized/dungeongen.cpp.ll
 ; minetest/optimized/treegen.cpp.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000001(i16 %0) #0 {
 entry:

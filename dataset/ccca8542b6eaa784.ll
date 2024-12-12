@@ -1,5 +1,5 @@
 
-; 32 occurrences:
+; 24 occurrences:
 ; abc/optimized/ifDec07.c.ll
 ; cmake/optimized/ntlm.c.ll
 ; curl/optimized/libcurl_la-ntlm.ll
@@ -9,10 +9,8 @@
 ; hermes/optimized/JSObject.cpp.ll
 ; hermes/optimized/OrderedHashMap.cpp.ll
 ; linux/optimized/addrconf.ll
-; linux/optimized/blk-sysfs.ll
 ; linux/optimized/drm_atomic_helper.ll
 ; linux/optimized/drm_vblank.ll
-; linux/optimized/fadvise.ll
 ; linux/optimized/igmp.ll
 ; linux/optimized/route.ll
 ; linux/optimized/virtgpu_ioctl.ll
@@ -22,16 +20,10 @@
 ; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/parserHelpers.cpp.ll
 ; openusd/optimized/value.cpp.ll
-; proxygen/optimized/HPACKDecoder.cpp.ll
-; proxygen/optimized/HPACKDecoderBase.cpp.ll
-; proxygen/optimized/HPACKEncoder.cpp.ll
-; proxygen/optimized/HeaderTable.cpp.ll
-; proxygen/optimized/QPACKEncoder.cpp.ll
-; proxygen/optimized/QPACKHeaderTable.cpp.ll
-; proxygen/optimized/StaticHeaderTable.cpp.ll
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/enumerator.ll
 ; ruby/optimized/iseq.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
@@ -42,8 +34,10 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
+; 8 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; openjdk/optimized/jvmtiEventController.ll
 ; ruby/optimized/compile.ll
@@ -62,10 +56,10 @@ entry:
 ; eastl/optimized/TestHeap.cpp.ll
 ; eastl/optimized/TestRingBuffer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000014(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967294
-  %3 = icmp ult i64 %2, 429496730
+  %3 = icmp samesign ult i64 %2, 429496730
   %not. = xor i1 %0, true
   %4 = select i1 %not., i1 %3, i1 false
   ret i1 %4

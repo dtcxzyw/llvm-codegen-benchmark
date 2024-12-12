@@ -1,9 +1,10 @@
 
-; 44 occurrences:
+; 42 occurrences:
 ; arrow/optimized/utf8.cc.ll
 ; assimp/optimized/MMDPmxParser.cpp.ll
 ; assimp/optimized/SIBImporter.cpp.ll
 ; assimp/optimized/STEPFileEncoding.cpp.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/huffman.c.ll
 ; hdf5/optimized/H5B2int.c.ll
 ; hermes/optimized/ConvertUTF.cpp.ll
@@ -16,10 +17,8 @@
 ; libzmq/optimized/trie.cpp.ll
 ; libzmq/optimized/xpub.cpp.ll
 ; linux/optimized/evgpeblk.ll
-; linux/optimized/mcast_snoop.ll
 ; linux/optimized/ohci-hcd.ll
 ; llvm/optimized/ConvertUTF.cpp.ll
-; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/clouds.cpp.ll
 ; opencv/optimized/color_lab.cpp.ll
 ; openjdk/optimized/classFileParser.ll
@@ -36,7 +35,6 @@
 ; wireshark/optimized/netmon.c.ll
 ; wireshark/optimized/packet-bgp.c.ll
 ; wireshark/optimized/packet-dcerpc.c.ll
-; wireshark/optimized/packet-dhcp-failover.c.ll
 ; wireshark/optimized/packet-json.c.ll
 ; wireshark/optimized/packet-lbmc.c.ll
 ; wireshark/optimized/packet-pnrp.c.ll
@@ -94,7 +92,7 @@ entry:
   ret i32 %4
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; icu/optimized/normalizer2impl.ll
 ; linux/optimized/flow_dissector.ll
 ; postgres/optimized/hashutil.ll
@@ -104,7 +102,6 @@ entry:
 ; wireshark/optimized/packet-opensafety.c.ll
 ; wireshark/optimized/packet-reload.c.ll
 ; wireshark/optimized/packet-s5066dts.c.ll
-; wireshark/optimized/packet-sdh.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wireshark/optimized/packet-uftp4.c.ll
 ; wireshark/optimized/packet-uftp5.c.ll
@@ -117,7 +114,7 @@ entry:
   ret i32 %4
 }
 
-; 188 occurrences:
+; 185 occurrences:
 ; clamav/optimized/unzip.c.ll
 ; cmake/optimized/archive_read_support_format_zip.c.ll
 ; cmake/optimized/doh.c.ll
@@ -141,7 +138,6 @@ entry:
 ; linux/optimized/filter.ll
 ; linux/optimized/intel_dp.ll
 ; linux/optimized/lib.ll
-; linux/optimized/mcast_snoop.ll
 ; linux/optimized/move_extent.ll
 ; linux/optimized/nfs4namespace.ll
 ; linux/optimized/printk.ll
@@ -151,7 +147,6 @@ entry:
 ; linux/optimized/tcp_offload.ll
 ; linux/optimized/vpd.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; memcached/optimized/memcached-proto_bin.ll
 ; memcached/optimized/memcached_debug-proto_bin.ll
 ; openjdk/optimized/constantPool.ll
@@ -285,7 +280,6 @@ entry:
 ; wireshark/optimized/packet-tapa.c.ll
 ; wireshark/optimized/packet-tcpcl.c.ll
 ; wireshark/optimized/packet-tds.c.ll
-; wireshark/optimized/packet-teap.c.ll
 ; wireshark/optimized/packet-tecmp.c.ll
 ; wireshark/optimized/packet-tls-utils.c.ll
 ; wireshark/optimized/packet-tls.c.ll
@@ -447,7 +441,7 @@ entry:
   ret i32 %4
 }
 
-; 72 occurrences:
+; 73 occurrences:
 ; cmake/optimized/archive_string.c.ll
 ; freetype/optimized/truetype.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -520,6 +514,7 @@ entry:
 ; wireshark/optimized/packet-dcerpc-pn-io.c.ll
 ; wireshark/optimized/packet-nordic_ble.c.ll
 ; wireshark/optimized/packet-s7comm.c.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i16 %1) #0 {
 entry:

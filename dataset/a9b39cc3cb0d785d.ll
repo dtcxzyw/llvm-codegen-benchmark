@@ -32,8 +32,7 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
-; gromacs/optimized/slagtf.cpp.ll
+; 2 occurrences:
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; stb/optimized/stb_dxt.c.ll
 ; Function Attrs: nounwind

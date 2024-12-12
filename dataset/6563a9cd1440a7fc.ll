@@ -31,18 +31,4 @@ entry:
   ret i1 %3
 }
 
-; 4 occurrences:
-; linux/optimized/cpuset.ll
-; linux/optimized/page_alloc.ll
-; linux/optimized/pt.ll
-; linux/optimized/read_write.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0) #0 {
-entry:
-  %1 = inttoptr i64 %0 to ptr
-  %2 = getelementptr nusw i8, ptr %1, i64 2248
-  %3 = icmp eq ptr %2, null
-  ret i1 %3
-}
-
 attributes #0 = { nounwind }

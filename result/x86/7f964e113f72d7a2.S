@@ -1,4 +1,4 @@
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	andb	$127, %dil
 	addb	$-33, %dil
 	cmpb	$63, %dil
@@ -15,17 +15,17 @@ func0000000000000008:                   # @func0000000000000008
 	cmpb	$-64, %dil
 	setb	%al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	andb	$63, %dil
 	cmpb	$1, %dil
 	setne	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	notb	%dil
 	testb	$15, %dil
 	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	andb	$31, %dil
 	cmpb	$1, %dil
 	sete	%al

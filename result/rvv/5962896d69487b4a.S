@@ -19,18 +19,18 @@ func0000000000000001:                   # @func0000000000000001
 	addi	a0, a0, 1365
 	vmsleu.vx	v0, v8, a0
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v8, v8, v10
-	lui	a0, 159384
-	addi	a0, a0, -1835
+	lui	a0, 796918
+	addi	a0, a0, -983
 	vmul.vx	v8, v8, a0
-	lui	a0, 1049
-	vror.vi	v8, v8, 3
-	addi	a0, a0, -1737
+	lui	a0, 10486
+	vror.vi	v8, v8, 2
+	addi	a0, a0, -984
 	vmsleu.vx	v0, v8, a0
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v8, v8, v10
 	lui	a0, 149797

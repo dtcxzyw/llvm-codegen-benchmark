@@ -6,7 +6,7 @@
 	.zero	16,63
 .LCPI0_3:
 	.zero	4,127
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpandd	.LCPI0_3(%rip){1to4}, %xmm0, %xmm0
 	vpaddb	.LCPI0_1(%rip), %xmm0, %xmm0
 	vpcmpltub	.LCPI0_2(%rip), %xmm0, %k0
@@ -41,7 +41,7 @@ func0000000000000008:                   # @func0000000000000008
 	.zero	16,1
 .LCPI3_2:
 	.zero	4,63
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vpandd	.LCPI3_2(%rip){1to4}, %xmm0, %xmm0
 	vpcmpeqb	.LCPI3_1(%rip), %xmm0, %xmm0
 	vpternlogq	$15, %xmm0, %xmm0, %xmm0 # xmm0 = ~xmm0
@@ -50,7 +50,7 @@ func000000000000001c:                   # @func000000000000001c
 	.zero	16,15
 .LCPI4_1:
 	.byte	15                              # 0xf
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpbroadcastb	.LCPI4_1(%rip), %xmm1   # xmm1 = [15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15]
 	vpand	%xmm1, %xmm0, %xmm0
 	vpcmpeqb	%xmm1, %xmm0, %xmm0
@@ -61,7 +61,7 @@ func0000000000000031:                   # @func0000000000000031
 	.zero	16,1
 .LCPI5_2:
 	.zero	4,31
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpandd	.LCPI5_2(%rip){1to4}, %xmm0, %xmm0
 	vpcmpeqb	.LCPI5_1(%rip), %xmm0, %xmm0
 	retq

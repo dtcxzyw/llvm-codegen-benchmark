@@ -49,7 +49,6 @@ entry:
 ; lightgbm/optimized/dataset_loader.cpp.ll
 ; lightgbm/optimized/gbdt.cpp.ll
 ; linux/optimized/bitmap.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
@@ -93,6 +92,7 @@ entry:
 ; openusd/optimized/level.cpp.ll
 ; postgres/optimized/geo_ops.ll
 ; postgres/optimized/nodeHash.ll
+; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; redis/optimized/networking.ll
 ; slurm/optimized/xcpuinfo.ll

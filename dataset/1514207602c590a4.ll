@@ -1,7 +1,6 @@
 
-; 477 occurrences:
+; 480 occurrences:
 ; abc/optimized/abcExact.c.ll
-; abc/optimized/fxuPair.c.ll
 ; abc/optimized/ivyDsd.c.ll
 ; abc/optimized/resSim.c.ll
 ; arrow/optimized/light_array.cc.ll
@@ -198,9 +197,10 @@
 ; llvm/optimized/X86InstructionSelector.cpp.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
 ; lz4/optimized/lz4frame.c.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/merge.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; nanobind/optimized/nb_type.cpp.ll
@@ -470,12 +470,15 @@
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; wireshark/optimized/packet-flexray.c.ll
 ; wireshark/optimized/packet-rlc-lte.c.ll
+; wolfssl/optimized/internal.c.ll
 ; yosys/optimized/SimpSolver.ll
 ; yosys/optimized/Solver.ll
 ; z3/optimized/goal.cpp.ll
 ; z3/optimized/mpf.cpp.ll
 ; z3/optimized/nnf.cpp.ll
 ; z3/optimized/smt_clause.cpp.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/a80esttvizzblelz7vl2fpyaz.ll
 ; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1, i1 %2) #0 {
@@ -535,11 +538,10 @@ entry:
   ret i32 %5
 }
 
-; 24 occurrences:
+; 23 occurrences:
 ; arrow/optimized/light_array.cc.ll
 ; coreutils-rs/optimized/56596qkor8w4ma8l.ll
 ; darktable/optimized/export_metadata.c.ll
-; glslang/optimized/Initialize.cpp.ll
 ; gromacs/optimized/forceelement.cpp.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/yenta_socket.ll

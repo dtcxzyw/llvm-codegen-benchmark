@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; hermes/optimized/Executor.cpp.ll
 ; hermes/optimized/RegexParser.cpp.ll
 ; linux/optimized/ip_sockglue.ll
@@ -7,6 +7,7 @@
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; luajit/optimized/lj_cparse.ll
 ; luajit/optimized/lj_cparse_dyn.ll
+; lvgl/optimized/lv_canvas.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; wireshark/optimized/netscaler.c.ll
 ; Function Attrs: nounwind

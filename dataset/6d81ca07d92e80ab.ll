@@ -4,6 +4,8 @@
 ; actix-rs/optimized/2pgtlhl4qd060m9c.ll
 ; assimp/optimized/RawLoader.cpp.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/target.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/encode.c.ll
 ; cmake/optimized/nghttp2_session.c.ll
 ; coreutils-rs/optimized/yiho3rob7ld9k5q.ll
@@ -94,7 +96,6 @@
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/af_inet.ll
 ; linux/optimized/blk-iocost.ll
-; linux/optimized/exdebug.ll
 ; linux/optimized/i915_pmu.ll
 ; linux/optimized/intel_rps.ll
 ; linux/optimized/lib.ll
@@ -234,7 +235,6 @@
 ; velox/optimized/tz.cpp.ll
 ; wireshark/optimized/netscaler.c.ll
 ; wireshark/optimized/packet-asterix.c.ll
-; wireshark/optimized/packet-ouch.c.ll
 ; xgboost/optimized/charconv.cc.ll
 ; yosys/optimized/lz4.ll
 ; yosys/optimized/qwp.ll
@@ -247,7 +247,7 @@ entry:
   ret i32 %2
 }
 
-; 47 occurrences:
+; 43 occurrences:
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/giaCof.c.ll
 ; abc/optimized/giaEmbed.c.ll
@@ -263,10 +263,8 @@ entry:
 ; darktable/optimized/introspection_lut3d.c.ll
 ; git/optimized/hashmap.ll
 ; gromacs/optimized/gmx_bundle.cpp.ll
-; linux/optimized/nmi.ll
 ; linux/optimized/printk.ll
 ; linux/optimized/tcp_minisocks.ll
-; linux/optimized/uptime.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; meshlab/optimized/io_u3d.cpp.ll
 ; mimalloc/optimized/stats.c.ll
@@ -275,10 +273,8 @@ entry:
 ; openspiel/optimized/catch_test.cc.ll
 ; openspiel/optimized/oh_hell_test.cc.ll
 ; openssl/optimized/libcrypto-lib-bss_dgram.ll
-; openssl/optimized/libcrypto-lib-ct_prn.ll
 ; openssl/optimized/libcrypto-lib-ts_rsp_sign.ll
 ; openssl/optimized/libcrypto-shlib-bss_dgram.ll
-; openssl/optimized/libcrypto-shlib-ct_prn.ll
 ; openssl/optimized/libcrypto-shlib-ts_rsp_sign.ll
 ; openssl/optimized/libssl-lib-d1_lib.ll
 ; openssl/optimized/libssl-lib-quic_impl.ll
@@ -303,7 +299,7 @@ entry:
   ret i32 %2
 }
 
-; 33 occurrences:
+; 31 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
@@ -321,7 +317,6 @@ entry:
 ; hwloc/optimized/traversal.ll
 ; linux/optimized/inotify_user.ll
 ; linux/optimized/mmap.ll
-; linux/optimized/scsicam.ll
 ; linux/optimized/xhci.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/OSTargets.cpp.ll
@@ -331,7 +326,6 @@ entry:
 ; memcached/optimized/memcached_debug-itoa_ljust.ll
 ; openusd/optimized/path.cpp.ll
 ; openusd/optimized/pathNode.cpp.ll
-; qemu/optimized/system_cpu-throttle.c.ll
 ; rocksdb/optimized/string_util.cc.ll
 ; ruby/optimized/time.ll
 ; wireshark/optimized/packet-netmon.c.ll
@@ -345,9 +339,10 @@ entry:
   ret i32 %2
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; linux/optimized/lib.ll
 ; oiio/optimized/Codec.cpp.ll
+; php/optimized/unixtime2tm.ll
 ; velox/optimized/Timestamp.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i64 %0) #0 {

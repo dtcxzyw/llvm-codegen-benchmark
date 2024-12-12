@@ -1,5 +1,5 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; darktable/optimized/RawImageDataFloat.cpp.ll
 ; grpc/optimized/ev_epoll1_linux.cc.ll
 ; hyperscan/optimized/rose_build_width.cpp.ll
@@ -8,13 +8,14 @@
 ; llvm/optimized/InitHeaderSearch.cpp.ll
 ; openssl/optimized/libssl-lib-quic_wire_pkt.ll
 ; openssl/optimized/libssl-shlib-quic_wire_pkt.ll
+; qemu/optimized/target_riscv_csr.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000302(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = icmp eq i32 %1, 0
   %5 = and i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -24,12 +25,12 @@ entry:
 ; opencv/optimized/convolution_layer.cpp.ll
 ; openusd/optimized/collectionExpressionEvaluator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000102(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 8193
   %4 = icmp eq i32 %1, 0
   %5 = and i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -39,7 +40,7 @@ entry:
 ; openvdb/optimized/StreamCompression.cc.ll
 ; quantlib/optimized/southkorea.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000048(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 128
   %4 = icmp ult i64 %1, 129
@@ -61,28 +62,30 @@ entry:
 ; postgres/optimized/pgstat_io.ll
 ; redis/optimized/cluster_legacy.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000042(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 2
   %4 = icmp eq i32 %1, 0
   %5 = and i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
-; 5 occurrences:
+; 7 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; darktable/optimized/introspection_rawprepare.c.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; redis/optimized/cluster_legacy.ll
 ; spike/optimized/socketif.ll
 ; velox/optimized/URLFunctions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000058(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 95
   %4 = icmp ne i32 %1, 0
   %5 = and i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -90,12 +93,12 @@ entry:
 ; lief/optimized/pk.c.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000102(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000202(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, 4294967295
   %4 = icmp eq i32 %1, 0
   %5 = and i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -107,37 +110,36 @@ entry:
 ; llvm/optimized/WarnMissedTransforms.cpp.ll
 ; openusd/optimized/reconinter.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000318(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = icmp ne i32 %1, 0
   %5 = and i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; llvm/optimized/RISCVDisassembler.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000190(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000310(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = icmp ugt i32 %1, 15
   %5 = and i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; cmake/optimized/cmake.cxx.ll
-; linux/optimized/seccomp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000030(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000050(i1 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = icmp eq i64 %2, 0
-  %4 = icmp ugt i32 %1, 31
+  %3 = icmp eq i32 %2, 0
+  %4 = icmp ugt i64 %1, 5
   %5 = and i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

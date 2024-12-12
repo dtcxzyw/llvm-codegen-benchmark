@@ -1,5 +1,5 @@
 
-; 50 occurrences:
+; 58 occurrences:
 ; cmake/optimized/ftp.c.ll
 ; coreutils-rs/optimized/yiho3rob7ld9k5q.ll
 ; curl/optimized/libcurl_la-ftp.ll
@@ -49,6 +49,14 @@
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/0oeh7hwbxnw4zu37xj5psd1f6.ll
+; zed-rs/optimized/11rrvqb0alhs5mh4wxxke3etr.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/2mg8miuznyzfai103s6r336mx.ll
+; zed-rs/optimized/2rng14wd6tcwuthhb5s7ekmqe.ll
+; zed-rs/optimized/7z2xfgroq6luy23s4a62wgt90.ll
+; zed-rs/optimized/8aib3kswyxtai67bpawu71ihu.ll
 ; zxing/optimized/ODMultiUPCEANReader.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i32 %0) #0 {

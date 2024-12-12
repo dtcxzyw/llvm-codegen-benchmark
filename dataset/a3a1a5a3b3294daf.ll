@@ -79,7 +79,8 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; abc/optimized/giaMinLut.c.ll
 ; openjdk/optimized/shenandoahMark.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000014(i32 %0, i32 %1) #0 {

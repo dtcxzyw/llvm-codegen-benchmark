@@ -1,6 +1,7 @@
 
-; 21 occurrences:
+; 22 occurrences:
 ; icu/optimized/rulebasedcollator.ll
+; linux/optimized/drbg.ll
 ; linux/optimized/early-quirks.ll
 ; linux/optimized/hda_auto_parser.ll
 ; linux/optimized/mlock.ll

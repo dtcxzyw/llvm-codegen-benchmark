@@ -1,5 +1,5 @@
 
-; 497 occurrences:
+; 499 occurrences:
 ; annoy/optimized/annoymodule.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/BlenderTessellator.cpp.ll
@@ -19,6 +19,8 @@
 ; assimp/optimized/StepExporter.cpp.ll
 ; assimp/optimized/TargetAnimation.cpp.ll
 ; assimp/optimized/TriangulateProcess.cpp.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; box2d/optimized/b2_circle_shape.cpp.ll
 ; box2d/optimized/b2_collide_circle.cpp.ll
 ; box2d/optimized/b2_collide_edge.cpp.ll
@@ -218,7 +220,6 @@
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_dirt.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
@@ -497,6 +498,7 @@
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; xgboost/optimized/elementwise_metric.cc.ll
 ; xgboost/optimized/regression_obj.cc.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1) #0 {
 entry:

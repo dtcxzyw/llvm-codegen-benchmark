@@ -1,5 +1,5 @@
 
-; 555 occurrences:
+; 575 occurrences:
 ; abc/optimized/abcAuto.c.ll
 ; abc/optimized/abcBm.c.ll
 ; abc/optimized/abcMap.c.ll
@@ -62,6 +62,9 @@
 ; assimp/optimized/XmlSerializer.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; box2d/optimized/b2_time_of_impact.cpp.ll
 ; bullet3/optimized/b3GpuNarrowPhase.ll
 ; bullet3/optimized/b3PgsJacobiSolver.ll
@@ -171,6 +174,9 @@
 ; llvm/optimized/ProfileSummary.cpp.ll
 ; llvm/optimized/PseudoProbe.cpp.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
+; lvgl/optimized/lv_draw_vector.ll
+; lvgl/optimized/lv_matrix.ll
+; lvgl/optimized/lv_svg_parser.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; meshlab/optimized/TexturePainter.cpp.ll
 ; meshlab/optimized/VisibleSet.cpp.ll
@@ -195,7 +201,6 @@
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
@@ -222,7 +227,6 @@
 ; meshlab/optimized/io_x3d.cpp.ll
 ; meshlab/optimized/layerDialog.cpp.ll
 ; meshlab/optimized/levmarmethods.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/mainwindow_RunTime.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
@@ -242,7 +246,6 @@
 ; meshoptimizer/optimized/spatialorder.cpp.ll
 ; minetest/optimized/CGUITTFont.cpp.ll
 ; minetest/optimized/CImageLoaderJPG.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/c_converter.cpp.ll
 ; minetest/optimized/camera.cpp.ll
 ; minetest/optimized/cavegen.cpp.ll
@@ -289,7 +292,6 @@
 ; minetest/optimized/staticobject.cpp.ll
 ; minetest/optimized/terminal_chat_console.cpp.ll
 ; minetest/optimized/test_random.cpp.ll
-; minetest/optimized/test_serialization.cpp.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; minetest/optimized/touchscreengui.cpp.ll
 ; miniaudio/optimized/unity.c.ll
@@ -521,7 +523,6 @@
 ; wireshark/optimized/packet-gmr1_rach.c.ll
 ; wireshark/optimized/packet-gmr1_rr.c.ll
 ; wireshark/optimized/packet-gryphon.c.ll
-; wireshark/optimized/packet-gsm_r_uus1.c.ll
 ; wireshark/optimized/packet-gtpv2.c.ll
 ; wireshark/optimized/packet-homeplug.c.ll
 ; wireshark/optimized/packet-isis-lsp.c.ll
@@ -538,7 +539,6 @@
 ; wireshark/optimized/packet-oran.c.ll
 ; wireshark/optimized/packet-s1ap.c.ll
 ; wireshark/optimized/packet-umts_fp.c.ll
-; wireshark/optimized/packet-x2ap.c.ll
 ; wireshark/optimized/packet-xnap.c.ll
 ; wireshark/optimized/packet-z21.c.ll
 ; wireshark/optimized/packet-zbee-zcl-misc.c.ll
@@ -548,6 +548,26 @@
 ; wireshark/optimized/tap-rlcltestat.c.ll
 ; yosys/optimized/qbfsat.ll
 ; yosys/optimized/sta.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/1i7qzw3x0brpuvmm674e62mm0.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/1mwyngh2duuoqbqyg0d7k37yf.ll
+; zed-rs/optimized/1qb020ndphzxmvf33d06yonm0.ll
+; zed-rs/optimized/1uum3gw9a30ezdy8xtn1px0l6.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/70oxjc4k9uv7kvad3t5u6bzag.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
+; zed-rs/optimized/9jrz8x0nc5lkiswz6iqpo0zcg.ll
+; zed-rs/optimized/b8qhlvoy2nskqwvkt99c6cu9u.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
+; zed-rs/optimized/ca5hx4nwyb2mnunexsl1xqea9.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; zxing/optimized/GTIN.cpp.ll
 ; zxing/optimized/ODDataBarExpandedReader.cpp.ll
 ; zxing/optimized/ODDataBarReader.cpp.ll

@@ -1,11 +1,4 @@
-func000000000000004a:                   # @func000000000000004a
-	shll	$5, %edx
-	subl	%esi, %edi
-	addl	%edx, %edi
-	testl	%edi, %edi
-	setg	%al
-	retq
-func000000000000015a:                   # @func000000000000015a
+func00000000000002aa:                   # @func00000000000002aa
 	subl	%edx, %esi
 	shll	$5, %edi
 	addl	%esi, %edi

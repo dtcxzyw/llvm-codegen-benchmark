@@ -1,5 +1,5 @@
 
-; 209 occurrences:
+; 205 occurrences:
 ; arrow/optimized/double-to-string.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -15,7 +15,6 @@
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; flac/optimized/metadata.cpp.ll
 ; freetype/optimized/sfnt.c.ll
-; hermes/optimized/Conversions.cpp.ll
 ; hermes/optimized/JSError.cpp.ll
 ; hermes/optimized/MemoryBuffer.cpp.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
@@ -47,6 +46,7 @@
 ; luajit/optimized/lj_strfmt_dyn.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
 ; memcached/optimized/memcached-memcached.ll
 ; memcached/optimized/memcached_debug-memcached.ll
 ; mitsuba3/optimized/measured.cpp.ll
@@ -144,9 +144,6 @@
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-accessor.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/outputs-spec.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/path-info.ll
@@ -174,7 +171,6 @@
 ; pbrt-v4/optimized/progressreporter.cpp.ll
 ; php/optimized/block_pass.ll
 ; php/optimized/compact_vars.ll
-; php/optimized/snprintf.ll
 ; php/optimized/zend_jit.ll
 ; php/optimized/zend_language_scanner.ll
 ; postgres/optimized/arrayfuncs.ll
@@ -281,19 +277,6 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
-; hyperscan/optimized/rose_build_add.cpp.ll
-; libdeflate/optimized/deflate_compress.c.ll
-; openusd/optimized/openexr-c.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000005(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add i32 %0, %1
-  %3 = zext nneg i32 %2 to i64
-  %4 = add nsw i64 %3, -8
-  ret i64 %4
-}
-
 ; 23 occurrences:
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; cvc5/optimized/bool_to_bv.cpp.ll
@@ -389,13 +372,23 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; arrow/optimized/grouper.cc.ll
-; cmake/optimized/cmExprParser.cxx.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000d(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
+  %3 = zext nneg i32 %2 to i64
+  %4 = add nsw i64 %3, -1
+  ret i64 %4
+}
+
+; 1 occurrences:
+; hyperscan/optimized/rose_build_add.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000005(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add i32 %0, %1
   %3 = zext nneg i32 %2 to i64
   %4 = add nsw i64 %3, -1
   ret i64 %4

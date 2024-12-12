@@ -66,7 +66,7 @@ func0000000000000006:                   # @func0000000000000006
 .LCPI2_1:
 	.zero	4,1
 func0000000000000007:                   # @func0000000000000007
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	vpmovdb	%ymm0, %xmm0
 	vpandd	.LCPI2_1(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper

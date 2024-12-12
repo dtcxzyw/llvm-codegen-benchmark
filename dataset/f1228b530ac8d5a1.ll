@@ -109,7 +109,7 @@ entry:
   %2 = trunc i64 %1 to i8
   %3 = icmp ne i8 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   %6 = and i64 %5, 4294967295
   ret i64 %6
 }

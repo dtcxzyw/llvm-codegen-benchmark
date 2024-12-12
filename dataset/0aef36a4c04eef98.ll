@@ -1,12 +1,11 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; abc/optimized/amapMerge.c.ll
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/unicodeobject.ll
 ; cpython/optimized/xmltok.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; llvm/optimized/AArch64Disassembler.cpp.ll
-; nuttx/optimized/lib_wcwidth.c.ll
 ; openjdk/optimized/hb-ot-shaper-use.ll
 ; openjdk/optimized/hb-ucd.ll
 ; Function Attrs: nounwind

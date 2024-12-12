@@ -13,14 +13,15 @@
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 8
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = xor i32 %3, 142405730
   ret i32 %4
 }
 
-; 32 occurrences:
+; 33 occurrences:
 ; abc/optimized/giaGen.c.ll
 ; abc/optimized/sfmDec.c.ll
+; boost/optimized/alloc_lib.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -98,7 +99,7 @@ entry:
 define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 3
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = xor i32 %3, 2047
   ret i32 %4
 }
@@ -110,12 +111,12 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 2
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = xor i32 %3, 1431655765
   ret i32 %4
 }
 
-; 58 occurrences:
+; 57 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcDar.c.ll
@@ -128,7 +129,6 @@ entry:
 ; abc/optimized/aigPartSat.c.ll
 ; abc/optimized/bmcBCore.c.ll
 ; abc/optimized/bmcFx.c.ll
-; abc/optimized/bmcLoad.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/bmcMaj3.c.ll

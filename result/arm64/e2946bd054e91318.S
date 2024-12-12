@@ -19,12 +19,6 @@ func000000000000015a:                   // @func000000000000015a
 	sub	x0, x8, x1
 	ret
                                         // -- End function
-func0000000000000150:                   // @func0000000000000150
-// %bb.0:                               // %entry
-	sub	x8, x0, w2, uxtw
-	sub	x0, x8, x1
-	ret
-                                        // -- End function
 func0000000000000050:                   // @func0000000000000050
 // %bb.0:                               // %entry
 	sub	x8, x0, w2, uxtw #1

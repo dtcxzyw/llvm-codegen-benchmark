@@ -26,5 +26,5 @@ func0000000000000000:                   # @func0000000000000000
 	subl	%edx, %esi
 	movslq	%esi, %rax
 	addq	%rdi, %rax
-	shlq	$4, %rax
+	shlq	$10, %rax
 	retq

@@ -1,12 +1,9 @@
 .LCPI0_0:
-	.long	39                              # 0x27
-.LCPI0_1:
-	.long	41                              # 0x29
+	.long	8                               # 0x8
 func0000000000000007:                   # @func0000000000000007
-	vptestnmb	%xmm2, %xmm2, %k1
-	vpbroadcastd	.LCPI0_0(%rip), %ymm2   # ymm2 = [39,39,39,39,39,39,39,39]
-	vpbroadcastd	.LCPI0_1(%rip), %ymm2 {%k1} # ymm2 {%k1} = [41,41,41,41,41,41,41,41]
-	vpternlogd	$254, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | ymm1
+	vptestmb	%xmm2, %xmm2, %k1
+	vorps	%ymm1, %ymm0, %ymm0
+	vorps	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	retq
 .LCPI1_0:
 	.byte	2                               # 0x2

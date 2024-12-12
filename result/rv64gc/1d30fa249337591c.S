@@ -21,10 +21,10 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000008:                   # @func0000000000000008
 	andi	a0, a0, 1
 	bnez	a0, .LBB3_2
-	li	a0, 31
+	li	a0, -2
 	ret
 .LBB3_2:
-	addiw	a0, a1, 32
+	addiw	a0, a1, -1
 	ret
 func000000000000000d:                   # @func000000000000000d
 	addiw	a1, a1, -1

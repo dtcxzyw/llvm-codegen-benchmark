@@ -16,11 +16,11 @@
 ; libpng/optimized/pngrtran.c.ll
 ; linux/optimized/drm_format_helper.ll
 ; linux/optimized/intel_atomic_plane.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_dp.ll
 ; linux/optimized/skl_watermark.ll
 ; llvm/optimized/DWARFUnit.cpp.ll
 ; llvm/optimized/DXContainer.cpp.ll
+; lvgl/optimized/lv_sdl_window.ll
 ; miniaudio/optimized/unity.c.ll
 ; openjdk/optimized/dwarf.ll
 ; openjdk/optimized/pngrtran.ll
@@ -29,13 +29,14 @@
 define i64 @func0000000000000000(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
 
-; 32 occurrences:
+; 33 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-static.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; linux/optimized/hwregs.ll
@@ -59,11 +60,11 @@ entry:
 ; ncnn/optimized/convolutiondepthwise_x86_fma.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; oiio/optimized/targainput.cpp.ll
+; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/hb-ot-var.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
-; qemu/optimized/hw_block_hd-geometry.c.ll
 ; quickjs/optimized/libbf.ll
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
@@ -71,12 +72,12 @@ entry:
 define i64 @func000000000000000f(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = mul nuw nsw i32 %2, %0
+  %3 = mul nuw nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
 
-; 22 occurrences:
+; 23 occurrences:
 ; darktable/optimized/introspection_lut3d.c.ll
 ; freetype/optimized/pfr.c.ll
 ; hdf5/optimized/H5Olayout.c.ll
@@ -89,6 +90,7 @@ entry:
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/intel_rps.ll
 ; linux/optimized/intel_sseu.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; minetest/optimized/CImageLoaderTGA.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; oiio/optimized/paramlist.cpp.ll
@@ -103,7 +105,7 @@ entry:
 define i64 @func0000000000000007(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = mul nuw nsw i32 %2, %0
+  %3 = mul nuw nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -119,7 +121,7 @@ entry:
 define i64 @func0000000000000009(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -144,8 +146,20 @@ entry:
 define i64 @func0000000000000008(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = zext i32 %3 to i64
+  ret i64 %4
+}
+
+; 2 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; oiio/optimized/paramlist.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i32 %0, i8 %1) #0 {
+entry:
+  %2 = zext i8 %1 to i32
+  %3 = mul i32 %0, %2
+  %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
 
@@ -155,18 +169,7 @@ entry:
 define i64 @func0000000000000003(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = mul nsw i32 %2, %0
-  %4 = zext nneg i32 %3 to i64
-  ret i64 %4
-}
-
-; 1 occurrences:
-; oiio/optimized/paramlist.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000001(i32 %0, i8 %1) #0 {
-entry:
-  %2 = zext i8 %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }

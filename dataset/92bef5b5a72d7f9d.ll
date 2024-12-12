@@ -1,5 +1,7 @@
 
-; 7 occurrences:
+; 9 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
@@ -11,7 +13,7 @@
 define i1 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %0, %1
-  %4 = xor i64 %3, %2
+  %4 = xor i64 %2, %3
   %5 = icmp eq i64 %4, -1
   ret i1 %5
 }
@@ -19,7 +21,7 @@ entry:
 ; 1 occurrences:
 ; folly/optimized/TimeUtil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000201(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000401(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
   %4 = sub i64 %0, %1
@@ -45,7 +47,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/unarj.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000301(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000601(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %0, %1
   %4 = sub i64 -2, %2
@@ -57,7 +59,7 @@ entry:
 ; oiio/optimized/formatspec.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000304(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000604(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 4
   %4 = sub i64 %0, %1
@@ -70,7 +72,7 @@ entry:
 ; zstd/optimized/zstd_v04.c.ll
 ; zstd/optimized/zstd_v05.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000184(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = add nuw nsw i64 %0, 4

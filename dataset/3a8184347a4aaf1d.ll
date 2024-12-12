@@ -9,7 +9,7 @@
 define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 60
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = tail call i64 @llvm.abs.i64(i64 %3, i1 true)
   ret i64 %4
 }
@@ -17,15 +17,14 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i64 @llvm.abs.i64(i64, i1 immarg) #1
 
-; 3 occurrences:
+; 2 occurrences:
 ; flac/optimized/fixed.c.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 3
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = tail call i64 @llvm.abs.i64(i64 %3, i1 true)
   ret i64 %4
 }
@@ -38,7 +37,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 3
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = tail call i64 @llvm.abs.i64(i64 %3, i1 true)
   ret i64 %4
 }
@@ -68,7 +67,7 @@ entry:
 define i64 @func0000000000000013(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 1000000000
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = call noundef i64 @llvm.abs.i64(i64 %3, i1 true)
   ret i64 %4
 }
@@ -80,7 +79,7 @@ entry:
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 1000000000
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = call noundef i64 @llvm.abs.i64(i64 %3, i1 true)
   ret i64 %4
 }

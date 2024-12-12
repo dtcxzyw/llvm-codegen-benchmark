@@ -7,7 +7,7 @@
 ; openssl/optimized/libssl-shlib-quic_impl.ll
 ; php/optimized/phpdbg_io.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000181(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 2
   %4 = icmp eq i64 %3, 0
@@ -23,7 +23,7 @@ entry:
 ; openssl/optimized/libssl-lib-quic_impl.ll
 ; openssl/optimized/libssl-shlib-quic_impl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 2
   %4 = icmp eq i64 %3, 0
@@ -36,7 +36,7 @@ entry:
 ; qemu/optimized/tcg.c.ll
 ; z3/optimized/factor_equivs.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000018c(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 65280
   %4 = icmp ne i64 %3, 256
@@ -48,7 +48,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/darLib.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 34359738368
   %4 = icmp ne i64 %3, 0
@@ -61,7 +61,7 @@ entry:
 ; hermes/optimized/JSArray.cpp.ll
 ; llvm/optimized/ExprEngineCallAndReturn.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000101(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967296
   %4 = icmp eq i64 %3, 0
@@ -73,7 +73,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/TargetInstrInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967296
   %4 = icmp eq i64 %3, 0
@@ -85,7 +85,7 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000141(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = icmp eq i64 %3, 0
@@ -97,7 +97,7 @@ entry:
 ; 1 occurrences:
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000014c(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -9223372034707292160
   %4 = icmp ne i64 %3, 0

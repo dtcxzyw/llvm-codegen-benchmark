@@ -1,5 +1,6 @@
 
-; 43 occurrences:
+; 42 occurrences:
+; boost/optimized/src.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; crow/optimized/example.cpp.ll
 ; icu/optimized/normalizer2impl.ll
@@ -37,8 +38,6 @@
 ; nlohmann_json/optimized/unit-wstring.cpp.ll
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; raylib/optimized/rmodels.c.ll
 ; redis/optimized/lua_cjson.ll
@@ -47,6 +46,30 @@
 define i8 @func0000000000000009(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
+  %3 = trunc i32 %2 to i8
+  %4 = and i8 %3, 63
+  %5 = or disjoint i8 %4, -128
+  ret i8 %5
+}
+
+; 1 occurrences:
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000019(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nuw nsw i32 %0, %1
+  %3 = trunc i32 %2 to i8
+  %4 = and i8 %3, 63
+  %5 = or disjoint i8 %4, -128
+  ret i8 %5
+}
+
+; 1 occurrences:
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000001(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add i32 %0, %1
   %3 = trunc i32 %2 to i8
   %4 = and i8 %3, 63
   %5 = or disjoint i8 %4, -128

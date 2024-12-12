@@ -1,10 +1,8 @@
 
-; 6 occurrences:
+; 4 occurrences:
 ; libwebp/optimized/webp_enc.c.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; openjdk/optimized/Any4Byte.ll
-; openjdk/optimized/FourByteAbgr.ll
-; openjdk/optimized/FourByteAbgrPre.ll
 ; openjdk/optimized/zGeneration.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(i64 %0, i64 %1) #0 {
@@ -15,7 +13,7 @@ entry:
   ret ptr %4
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; hermes/optimized/ArrayStorage.cpp.ll
 ; hermes/optimized/BytecodeDataProvider.cpp.ll
 ; hyperscan/optimized/fdr_confirm_compile.cpp.ll
@@ -31,12 +29,26 @@ entry:
 ; z3/optimized/dl_rule.cpp.ll
 ; z3/optimized/rule_properties.cpp.ll
 ; z3/optimized/smt_consequences.cpp.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(i64 %0, i64 %1) #0 {
+define ptr @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 6
   %3 = inttoptr i64 %0 to ptr
-  %4 = getelementptr nusw i8, ptr %3, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %2
+  ret ptr %4
+}
+
+; 3 occurrences:
+; openjdk/optimized/Any4Byte.ll
+; openjdk/optimized/FourByteAbgr.ll
+; openjdk/optimized/FourByteAbgrPre.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(i64 %0, i64 %1) #0 {
+entry:
+  %2 = shl nsw i64 %1, 2
+  %3 = inttoptr i64 %0 to ptr
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %2
   ret ptr %4
 }
 
@@ -54,11 +66,10 @@ entry:
   ret ptr %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; linux/optimized/e1000_hw.ll
 ; linux/optimized/i915_gem_execbuffer.ll
-; linux/optimized/irq_64.ll
 ; protobuf/optimized/arena.cc.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000c(i64 %0, i64 %1) #0 {

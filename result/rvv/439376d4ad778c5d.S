@@ -19,21 +19,35 @@ func0000000000000001:                   # @func0000000000000001
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmseq.vv	v0, v10, v8
 	ret
-func0000000000000038:                   # @func0000000000000038
+func0000000000000018:                   # @func0000000000000018
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf2	v13, v12
 	vwaddu.wv	v10, v10, v13
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vv	v0, v8, v10
 	ret
-func0000000000000044:                   # @func0000000000000044
+func0000000000000068:                   # @func0000000000000068
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vzext.vf2	v13, v12
+	vwaddu.wv	v10, v10, v13
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vmsltu.vv	v0, v8, v10
+	ret
+func0000000000000078:                   # @func0000000000000078
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vzext.vf2	v13, v12
+	vwaddu.wv	v10, v10, v13
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vmsltu.vv	v0, v8, v10
+	ret
+func0000000000000084:                   # @func0000000000000084
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf2	v13, v12
 	vwaddu.wv	v10, v10, v13
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vv	v0, v10, v8
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf2	v13, v12
 	vwaddu.wv	v10, v10, v13
@@ -47,7 +61,7 @@ func000000000000000a:                   # @func000000000000000a
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmslt.vv	v0, v8, v10
 	ret
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf2	v13, v12
 	vwaddu.wv	v10, v10, v13
@@ -61,21 +75,28 @@ func0000000000000005:                   # @func0000000000000005
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsleu.vv	v0, v10, v8
 	ret
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf2	v13, v12
 	vwaddu.wv	v10, v10, v13
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vv	v0, v10, v8
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf2	v13, v12
 	vwaddu.wv	v10, v10, v13
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmslt.vv	v0, v10, v8
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000074:                   # @func0000000000000074
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vzext.vf2	v13, v12
+	vwaddu.wv	v10, v10, v13
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vmsltu.vv	v0, v10, v8
+	ret
+func0000000000000024:                   # @func0000000000000024
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf2	v13, v12
 	vwaddu.wv	v10, v10, v13
@@ -89,28 +110,28 @@ func0000000000000006:                   # @func0000000000000006
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmslt.vv	v0, v10, v8
 	ret
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf2	v13, v12
 	vwaddu.wv	v10, v10, v13
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmseq.vv	v0, v10, v8
 	ret
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf2	v13, v12
 	vwaddu.wv	v10, v10, v13
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmseq.vv	v0, v10, v8
 	ret
-func0000000000000078:                   # @func0000000000000078
+func00000000000000e8:                   # @func00000000000000e8
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf2	v13, v12
 	vwaddu.wv	v10, v10, v13
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsltu.vv	v0, v8, v10
 	ret
-func000000000000003a:                   # @func000000000000003a
+func000000000000006a:                   # @func000000000000006a
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vzext.vf2	v13, v12
 	vwaddu.wv	v10, v10, v13

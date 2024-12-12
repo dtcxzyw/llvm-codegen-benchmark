@@ -1,5 +1,6 @@
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/to_chars.ll
 ; linux/optimized/io-wq.ll
 ; llvm/optimized/ELFObjectFile.cpp.ll
 ; mold/optimized/arch-arm64.cc.ll
@@ -14,7 +15,7 @@ entry:
   ret i32 %5
 }
 
-; 249 occurrences:
+; 248 occurrences:
 ; abc/optimized/darRefact.c.ll
 ; abc/optimized/ifDec07.c.ll
 ; abc/optimized/saigIsoSlow.c.ll
@@ -110,7 +111,6 @@ entry:
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
-; linux/optimized/feat_ctl.ll
 ; linux/optimized/insn-eval.ll
 ; llvm/optimized/CGBlocks.cpp.ll
 ; mold/optimized/arch-loongarch.cc.LOONGARCH32.cc.ll
@@ -274,14 +274,13 @@ entry:
   ret i32 %5
 }
 
-; 78 occurrences:
+; 77 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/acecPo.c.ll
 ; abc/optimized/bmcBCore.c.ll
 ; abc/optimized/bmcFault.c.ll
-; abc/optimized/bmcLoad.c.ll
 ; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/cecPat.c.ll
 ; abc/optimized/cecSatG2.c.ll
@@ -363,7 +362,7 @@ entry:
   ret i32 %5
 }
 
-; 64 occurrences:
+; 63 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/cecPat.c.ll
@@ -383,7 +382,6 @@ entry:
 ; lightgbm/optimized/dataset.cpp.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
-; linux/optimized/feat_ctl.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/tg3.ll
@@ -450,7 +448,7 @@ entry:
   %2 = lshr i64 %1, 27
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, 2097120
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -497,7 +495,7 @@ entry:
   %2 = lshr exact i64 %1, 48
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = and i32 %3, 127
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 

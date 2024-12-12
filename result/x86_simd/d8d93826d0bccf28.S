@@ -46,7 +46,7 @@ func0000000000000001:                   # @func0000000000000001
 	idivl	%ebp
 	vpinsrd	$3, %edx, %xmm4, %xmm0
 	vinserti128	$1, %xmm3, %ymm0, %ymm0
-	vpaddd	%ymm1, %ymm0, %ymm0
+	vpaddd	%ymm0, %ymm1, %ymm0
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrd	$1, %xmm1, %eax
 	cltd

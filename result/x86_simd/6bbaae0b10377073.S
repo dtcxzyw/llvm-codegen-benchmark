@@ -18,6 +18,10 @@ func000000000000000a:                   # @func000000000000000a
 	vpcmpgtd	%ymm0, %ymm1, %k1
 	vpbroadcastd	.LCPI3_0(%rip), %ymm0 {%k1} # ymm0 {%k1} = [2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647,2147483647]
 	retq
+func0000000000000014:                   # @func0000000000000014
+	vpcmpnltud	%ymm0, %ymm1, %k1
+	vmovdqa32	%ymm0, %ymm0 {%k1} {z}
+	retq
 func0000000000000008:                   # @func0000000000000008
 	vpcmpleud	%ymm0, %ymm1, %k1
 	vmovdqa32	%ymm0, %ymm0 {%k1} {z}

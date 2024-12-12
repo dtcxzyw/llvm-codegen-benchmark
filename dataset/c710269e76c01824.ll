@@ -88,7 +88,8 @@ entry:
   ret i64 %4
 }
 
-; 46 occurrences:
+; 47 occurrences:
+; boost/optimized/date_time_format_parser.ll
 ; git/optimized/tree-walk.ll
 ; graphviz/optimized/DotIO.c.ll
 ; graphviz/optimized/actions.c.ll

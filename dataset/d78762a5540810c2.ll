@@ -1,4 +1,6 @@
 
+%union.TValue.3680757 = type { i64 }
+
 ; 1 occurrences:
 ; qemu/optimized/accel_tcg_user-exec.c.ll
 ; Function Attrs: nounwind
@@ -22,19 +24,18 @@ entry:
 ; z3/optimized/smt_clause.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(i64 %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000001f(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = inttoptr i64 %1 to ptr
-  %5 = getelementptr nusw i64, ptr %4, i64 %3
-  %6 = getelementptr nusw i64, ptr %5, i64 %0
+  %5 = getelementptr nusw nuw i64, ptr %4, i64 %3
+  %6 = getelementptr nusw nuw i64, ptr %5, i64 %0
   ret ptr %6
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; hermes/optimized/DataView.cpp.ll
 ; hermes/optimized/HadesGC.cpp.ll
-; hermes/optimized/Interpreter.cpp.ll
 ; hermes/optimized/JSTypedArray.cpp.ll
 ; hermes/optimized/TypedArray.cpp.ll
 ; jemalloc/optimized/ctl.ll
@@ -47,12 +48,25 @@ entry:
 ; jemalloc/optimized/tcache.pic.ll
 ; jemalloc/optimized/tcache.sym.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(i64 %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000000f(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = inttoptr i64 %1 to ptr
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
-  %6 = getelementptr nusw i8, ptr %5, i64 %0
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 2 occurrences:
+; hermes/optimized/Interpreter.cpp.ll
+; hermes/optimized/TypedArray.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000e(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = inttoptr i64 %1 to ptr
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
+  %6 = getelementptr nusw i64, ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -73,6 +87,19 @@ entry:
   %4 = inttoptr i64 %1 to ptr
   %5 = getelementptr i8, ptr %4, i64 %3
   %6 = getelementptr i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 2 occurrences:
+; luajit/optimized/lj_debug.ll
+; luajit/optimized/lj_debug_dyn.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001e(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = inttoptr i64 %1 to ptr
+  %5 = getelementptr nusw nuw %union.TValue.3680757, ptr %4, i64 %3
+  %6 = getelementptr nusw i8, ptr %5, i64 %0
   ret ptr %6
 }
 

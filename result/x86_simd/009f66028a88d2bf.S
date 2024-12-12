@@ -18,14 +18,14 @@ func000000000000000c:                   # @func000000000000000c
 	.long	248                             # 0xf8
 .LCPI2_1:
 	.long	8                               # 0x8
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1
 	vpcmpgtd	.LCPI2_1(%rip){1to8}, %ymm1, %k1
 	vmovdqa32	%ymm0, %ymm0 {%k1} {z}
 	retq
 .LCPI3_0:
 	.long	28                              # 0x1c
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	vpbroadcastd	.LCPI3_0(%rip), %ymm2   # ymm2 = [28,28,28,28,28,28,28,28]
 	vpand	%ymm2, %ymm1, %ymm1
 	vpcmpneqd	%ymm2, %ymm1, %k1

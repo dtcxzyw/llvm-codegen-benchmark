@@ -1,5 +1,5 @@
 
-; 46 occurrences:
+; 44 occurrences:
 ; abc/optimized/wlcWriteVer.c.ll
 ; clamav/optimized/dlp.c.ll
 ; darktable/optimized/CrwDecoder.cpp.ll
@@ -10,6 +10,7 @@
 ; hwloc/optimized/topology-xml.ll
 ; hwloc/optimized/topology.ll
 ; hyperscan/optimized/repeat.c.ll
+; icu/optimized/ubidiln.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libquic/optimized/url_parse.cc.ll
 ; lief/optimized/psa_crypto.c.ll
@@ -39,19 +40,16 @@
 ; slurm/optimized/job_mgr.ll
 ; softposit-rs/optimized/3yl6353p3hwrtv6y.ll
 ; softposit-rs/optimized/oveg98n4r9tnk39.ll
-; spike/optimized/f16_classify.ll
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_connected_components.c.ll
-; stockfish/optimized/movepick.ll
-; stockfish/optimized/search.ll
 ; wireshark/optimized/packet-dnp.c.ll
 ; wireshark/optimized/packet-pn-rt.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 0
-  %4 = or i1 %3, %1
-  %5 = or i1 %4, %0
+  %4 = or i1 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -79,17 +77,17 @@ entry:
 ; oiio/optimized/psdinput.cpp.ll
 ; quickjs/optimized/quickjs.ll
 ; slurm/optimized/gres_filter.ll
-; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wireshark/optimized/packet-9p.c.ll
 ; wireshark/optimized/packet-at.c.ll
 ; wireshark/optimized/packet-bthfp.c.ll
 ; wireshark/optimized/packet-ocp1.c.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000030(i1 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = icmp ne i16 %2, 0
-  %4 = or i1 %3, %1
-  %5 = or i1 %4, %0
+  %4 = or i1 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -103,19 +101,42 @@ define i1 @func0000000000000020(i1 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = icmp ugt i16 %2, 4104
   %4 = or i1 %3, %1
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 49 occurrences:
+; 2 occurrences:
 ; darktable/optimized/FujiDecompressor.cpp.ll
+; linux/optimized/access.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000050(i1 %0, i1 %1, i16 %2) #0 {
+entry:
+  %3 = icmp samesign ult i16 %2, 768
+  %4 = or i1 %3, %1
+  %5 = or i1 %0, %4
+  ret i1 %5
+}
+
+; 2 occurrences:
+; stockfish/optimized/movepick.ll
+; stockfish/optimized/search.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i1 %1, i16 %2) #0 {
+entry:
+  %3 = icmp slt i16 %2, -16384
+  %4 = or i1 %3, %1
+  %5 = or i1 %0, %4
+  ret i1 %5
+}
+
+; 48 occurrences:
+; hermes/optimized/Executor.cpp.ll
 ; hwloc/optimized/topology-linux.ll
-; hwloc/optimized/topology-xml.ll
 ; hwloc/optimized/topology.ll
 ; icu/optimized/collationdatabuilder.ll
+; icu/optimized/ubidiln.ll
 ; icu/optimized/usearch.ll
 ; icu/optimized/utrie_swap.ll
-; linux/optimized/access.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/irq.ll
 ; linux/optimized/mlme.ll
@@ -128,6 +149,7 @@ entry:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/DAGISelEmitter.cpp.ll
 ; llvm/optimized/DIEHash.cpp.ll
+; llvm/optimized/DWARFVerifier.cpp.ll
 ; llvm/optimized/GlobalISelEmitter.cpp.ll
 ; llvm/optimized/GlobalISelMatchTable.cpp.ll
 ; llvm/optimized/LLVMTargetMachine.cpp.ll
@@ -139,7 +161,6 @@ entry:
 ; llvm/optimized/LegalizeVectorOps.cpp.ll
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
@@ -160,9 +181,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000010(i1 %0, i1 %1, i16 %2) #0 {
 entry:
-  %3 = icmp ult i16 %2, 768
-  %4 = or i1 %3, %1
-  %5 = or i1 %4, %0
+  %3 = icmp ult i16 %2, 26
+  %4 = or i1 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

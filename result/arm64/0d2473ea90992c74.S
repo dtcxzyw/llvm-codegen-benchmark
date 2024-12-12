@@ -1,31 +1,20 @@
-func0000000000000011:                   // @func0000000000000011
+func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
 	mov	w8, #21846                      // =0x5556
-	uzp1	v2.4s, v2.4s, v3.4s
 	movk	w8, #21845, lsl #16
-	dup	v3.4s, w8
-	smull2	v4.2d, v2.4s, v3.4s
-	smull	v2.2d, v2.2s, v3.2s
-	uzp2	v2.4s, v2.4s, v4.4s
-	usra	v2.4s, v2.4s, #31
-	ushll	v3.2d, v2.2s, #0
-	ushll2	v2.2d, v2.4s, #0
-	cmeq	v1.2d, v2.2d, v1.2d
-	cmeq	v0.2d, v3.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	smull	x8, w1, w8
+	lsr	x9, x8, #63
+	lsr	x8, x8, #32
+	add	w8, w8, w9
+	cmp	x0, x8
+	cset	w0, eq
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	uzp1	v2.4s, v2.4s, v3.4s
-	usra	v2.4s, v2.4s, #31
-	sshr	v2.4s, v2.4s, #1
-	ushll	v3.2d, v2.2s, #0
-	ushll2	v2.2d, v2.4s, #0
-	cmeq	v1.2d, v2.2d, v1.2d
-	cmeq	v0.2d, v3.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	add	w8, w1, w1, lsr #31
+	asr	w8, w8, #1
+	cmp	x0, x8
+	cset	w0, eq
 	ret
                                         // -- End function

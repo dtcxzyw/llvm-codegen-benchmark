@@ -10,8 +10,8 @@ func0000000000000041:                   # @func0000000000000041
 	retq
 func0000000000000040:                   # @func0000000000000040
 	subq	%rdx, %rsi
-	shrq	$2, %rsi
-	leal	-1(%rsi,%rdi), %eax
+	shrq	$3, %rsi
+	leal	1(%rsi,%rdi), %eax
 	retq
 func0000000000000045:                   # @func0000000000000045
 	subq	%rdx, %rsi

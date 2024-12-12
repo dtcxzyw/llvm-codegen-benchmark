@@ -6,7 +6,6 @@
 ; brotli/optimized/block_splitter.c.ll
 ; clamav/optimized/others.c.ll
 ; clamav/optimized/regex_suffix.c.ll
-; cmake/optimized/nghttp2_option.c.ll
 ; curl/optimized/libcurl_la-rtsp.ll
 ; duckdb/optimized/ub_duckdb_common_types_row.cpp.ll
 ; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
@@ -77,7 +76,6 @@
 ; openssl/optimized/libssl-shlib-statem_dtls.ll
 ; php/optimized/pcre2_compile.ll
 ; php/optimized/pcre2_jit_compile.ll
-; php/optimized/pcre2_maketables.ll
 ; php/optimized/pcre2_study.ll
 ; postgres/optimized/varlena.ll
 ; qemu/optimized/dump_dump.c.ll
@@ -113,6 +111,8 @@
 ; wasmtime-rs/optimized/456j0x8j3xyjpk7h.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wolfssl/optimized/tls.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i8 %0) #0 {
 entry:
@@ -173,8 +173,9 @@ entry:
   ret i8 %2
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0) #0 {
 entry:

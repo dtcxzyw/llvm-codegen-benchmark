@@ -1,11 +1,12 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; darktable/optimized/colorpicker.c.ll
 ; darktable/optimized/introspection_basecurve.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; darktable/optimized/introspection_gamma.c.ll
 ; darktable/optimized/introspection_sigmoid.c.ll
 ; darktable/optimized/introspection_velvia.c.ll
+; lvgl/optimized/lv_arc.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; minetest/optimized/mapgen_valleys.cpp.ll
 ; ocio/optimized/GradingBSplineCurve.cpp.ll

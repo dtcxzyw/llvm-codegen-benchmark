@@ -3,6 +3,7 @@
 ; actix-rs/optimized/2pgtlhl4qd060m9c.ll
 ; assimp/optimized/ACLoader.cpp.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/filefn.cpp.ll
 ; cmake/optimized/nghttp2_session.c.ll
 ; coreutils-rs/optimized/yiho3rob7ld9k5q.ll
@@ -75,7 +76,6 @@
 ; stb/optimized/stb_sprintf.c.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; velox/optimized/VectorFuzzer.cpp.ll
-; wireshark/optimized/packet-ouch.c.ll
 ; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0) #0 {
@@ -85,15 +85,17 @@ entry:
   ret i32 %2
 }
 
-; 8 occurrences:
+; 10 occurrences:
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; delta-rs/optimized/43y2svfstmvqcl15.ll
 ; delta-rs/optimized/4zvphat0q9a964bz.ll
 ; diesel-rs/optimized/2phdoksmzkii6al2.ll
 ; influxdb-rs/optimized/3x4ltxca4agvimmq.ll
 ; oiio/optimized/Codec.cpp.ll
+; php/optimized/unixtime2tm.ll
 ; ruby/optimized/time.ll
 ; velox/optimized/Timestamp.cpp.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i64 %0) #0 {
 entry:
@@ -102,7 +104,7 @@ entry:
   ret i32 %2
 }
 
-; 23 occurrences:
+; 22 occurrences:
 ; abc/optimized/adler32.c.ll
 ; abseil-cpp/optimized/numbers.cc.ll
 ; assimp/optimized/AssxmlFileWriter.cpp.ll
@@ -114,7 +116,6 @@ entry:
 ; gromacs/optimized/adler32.c.ll
 ; gromacs/optimized/gmx_dyecoupl.cpp.ll
 ; libquic/optimized/adler32.c.ll
-; linux/optimized/scsicam.ll
 ; llvm/optimized/AsmWriterEmitter.cpp.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
@@ -134,7 +135,7 @@ entry:
   ret i32 %2
 }
 
-; 117 occurrences:
+; 111 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/abcDetect.c.ll
@@ -177,9 +178,6 @@ entry:
 ; bullet3/optimized/btMultiBodySphericalJointLimit.ll
 ; coreutils-rs/optimized/ymrsitga6ypzvcp.ll
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
-; delta-rs/optimized/3qkwqfk85qralejq.ll
-; delta-rs/optimized/43y2svfstmvqcl15.ll
-; delta-rs/optimized/4zvphat0q9a964bz.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
@@ -205,7 +203,6 @@ entry:
 ; libquic/optimized/f_int.c.ll
 ; libquic/optimized/f_string.c.ll
 ; libquic/optimized/print.c.ll
-; libquic/optimized/x509.c.ll
 ; libzmq/optimized/benchmark_radix_tree.cpp.ll
 ; linux/optimized/intel_gt_clock_utils.ll
 ; memcached/optimized/memcached-memcached.ll
@@ -232,12 +229,10 @@ entry:
 ; openssl/optimized/libcrypto-lib-bn_conv.ll
 ; openssl/optimized/libcrypto-lib-f_int.ll
 ; openssl/optimized/libcrypto-lib-f_string.ll
-; openssl/optimized/libcrypto-lib-t_spki.ll
 ; openssl/optimized/libcrypto-lib-t_x509.ll
 ; openssl/optimized/libcrypto-shlib-bn_conv.ll
 ; openssl/optimized/libcrypto-shlib-f_int.ll
 ; openssl/optimized/libcrypto-shlib-f_string.ll
-; openssl/optimized/libcrypto-shlib-t_spki.ll
 ; openssl/optimized/libcrypto-shlib-t_x509.ll
 ; openusd/optimized/json.cpp.ll
 ; pbrt-v4/optimized/image.cpp.ll

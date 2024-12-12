@@ -1,9 +1,11 @@
 
-; 8 occurrences:
+; 10 occurrences:
 ; abc/optimized/abcCheck.c.ll
 ; abc/optimized/ioWriteVerilog.c.ll
 ; darktable/optimized/collect.c.ll
 ; llvm/optimized/ParsePragma.cpp.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_grid.ll
 ; openjdk/optimized/disassembler.ll
 ; qemu/optimized/target_riscv_pmu.c.ll
 ; wireshark/optimized/packet-pgsql.c.ll

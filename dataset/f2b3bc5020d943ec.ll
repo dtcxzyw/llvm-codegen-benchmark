@@ -21,7 +21,7 @@ entry:
   ret i8 %4
 }
 
-; 26 occurrences:
+; 27 occurrences:
 ; actix-rs/optimized/2d9c72efneckaqzp.ll
 ; cmake/optimized/xmlparse.c.ll
 ; coreutils-rs/optimized/yiho3rob7ld9k5q.ll
@@ -44,6 +44,7 @@ entry:
 ; openjdk/optimized/check_classname.ll
 ; recastnavigation/optimized/imgui.cpp.ll
 ; sqlite/optimized/sqlite3.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
 ; z3/optimized/dep_intervals.cpp.ll
 ; z3/optimized/interval_mpq.cpp.ll
@@ -52,20 +53,19 @@ entry:
 define i8 @func0000000000000018(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 0
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = zext i1 %3 to i8
   ret i8 %4
 }
 
-; 4 occurrences:
-; actix-rs/optimized/2d9c72efneckaqzp.ll
+; 3 occurrences:
 ; cmake/optimized/archive_ppmd8.c.ll
 ; typst-rs/optimized/1u1bncyzo9yu1omp.ll
 ; typst-rs/optimized/2hy987uth4sp8yoc.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000008(i1 %0, i8 %1) #0 {
 entry:
-  %2 = icmp ult i8 %1, 6
+  %2 = icmp ult i8 %1, -6
   %3 = and i1 %2, %0
   %4 = zext i1 %3 to i8
   ret i8 %4

@@ -44,7 +44,7 @@ func0000000000000001:                   # @func0000000000000001
 	.quad	16                              # 0x10
 .LCPI1_2:
 	.zero	4,15
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	vpandd	.LCPI1_2(%rip){1to4}, %xmm2, %xmm2
 	vpcmpltuq	.LCPI1_1(%rip){1to4}, %ymm1, %k1
 	vmovdqu8	%xmm2, %xmm0 {%k1}

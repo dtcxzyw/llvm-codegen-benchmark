@@ -1,9 +1,9 @@
 func0000000000000002:                   # @func0000000000000002
 	slli	a3, a2, 4
-	subw	a2, a2, a1
-	subw	a3, a3, a2
-	addiw	a3, a3, -1
-	sh2add	a0, a3, a0
+	subw	a1, a1, a2
+	add	a1, a1, a3
+	addiw	a1, a1, -1
+	sh2add	a0, a1, a0
 	ret
 func00000000000000c2:                   # @func00000000000000c2
 	sh1add	a2, a2, a2

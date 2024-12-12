@@ -6,6 +6,10 @@ func0000000000000018:                   # @func0000000000000018
 	movl	$2, %eax
 	cmovnel	%ecx, %eax
 	retq
+func0000000000000002:                   # @func0000000000000002
+	cmpl	$14, %esi
+	sete	%al
+	retq
 func0000000000000008:                   # @func0000000000000008
 	xorl	%ecx, %ecx
 	cmpl	$2, %esi

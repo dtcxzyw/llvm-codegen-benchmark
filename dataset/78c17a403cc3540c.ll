@@ -1,25 +1,24 @@
 
-; 14 occurrences:
-; darktable/optimized/introspection_toneequal.c.ll
+; 13 occurrences:
 ; git/optimized/pack-revindex.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/Constants.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
-; meshoptimizer/optimized/vertexfilter.cpp.ll
 ; minetest/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/measured.cpp.ll
 ; mitsuba3/optimized/measured_polarized.cpp.ll
 ; node/optimized/libnode.node_i18n.ll
 ; opencv/optimized/basicretinafilter.cpp.ll
+; opencv/optimized/convolution_layer.cpp.ll
 ; opencv/optimized/tree.cpp.ll
 ; openjdk/optimized/splashscreen_png.ll
 ; php/optimized/zend_ssa.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %1, %2
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr nusw float, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw float, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -42,22 +41,34 @@ entry:
 ; openjdk/optimized/hb-ot-font.ll
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %1, %2
   %4 = and i64 %3, 4294967288
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 2 occurrences:
+; darktable/optimized/introspection_toneequal.c.ll
+; meshoptimizer/optimized/vertexfilter.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul i64 %1, %2
+  %4 = and i64 %3, -2
+  %5 = getelementptr nusw float, ptr %0, i64 %4
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; gromacs/optimized/pme_spread.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr nusw float, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw float, ptr %0, i64 %4
   ret ptr %5
 }
 

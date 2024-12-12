@@ -10,7 +10,7 @@ func0000000000000001:                   # @func0000000000000001
 	cmpw	%si, %di
 	sete	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	andl	$7, %esi
 	incl	%edi
 	cmpw	%si, %di

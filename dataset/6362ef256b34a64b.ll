@@ -1,6 +1,8 @@
 
-; 8 occurrences:
+; 10 occurrences:
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; ceres/optimized/polynomial.cc.ll
 ; darktable/optimized/introspection_monochrome.c.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
@@ -38,7 +40,7 @@ entry:
 define i1 @func0000000000000003(double %0, double %1) #0 {
 entry:
   %2 = fmul double %1, 0x404CA5DC1A63C1F8
-  %3 = fadd double %2, %0
+  %3 = fadd double %0, %2
   %4 = fcmp ult double %3, 3.600000e+02
   ret i1 %4
 }
@@ -57,7 +59,7 @@ entry:
 define i1 @func0000000000000001(double %0, double %1) #0 {
 entry:
   %2 = fmul double %1, 0.000000e+00
-  %3 = fadd double %2, %0
+  %3 = fadd double %0, %2
   %4 = fcmp uno double %3, 0.000000e+00
   ret i1 %4
 }

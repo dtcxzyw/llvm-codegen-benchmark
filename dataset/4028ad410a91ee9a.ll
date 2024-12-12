@@ -7,7 +7,7 @@
 ; openusd/optimized/openexr-c.c.ll
 ; ruby/optimized/string.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000014a(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -20,7 +20,7 @@ entry:
 ; 1 occurrences:
 ; ruby/optimized/time.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000014c(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -34,7 +34,7 @@ entry:
 ; gromacs/optimized/filenm.cpp.ll
 ; rocksdb/optimized/version_set.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000010c(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -44,13 +44,12 @@ entry:
   ret i1 %7
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
-; ocio/optimized/LogOpData.cpp.ll
 ; opencv/optimized/matmul_layer.cpp.ll
 ; proj/optimized/transformation.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -61,9 +60,22 @@ entry:
 }
 
 ; 1 occurrences:
+; boost/optimized/value_semantic.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %1
+  %5 = icmp eq i64 %4, 32
+  %6 = icmp ugt i64 %0, 32
+  %7 = and i1 %6, %5
+  ret i1 %7
+}
+
+; 1 occurrences:
 ; protobuf/optimized/arena.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000ca(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -76,7 +88,7 @@ entry:
 ; 1 occurrences:
 ; protobuf/optimized/arena.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a6(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000146(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -89,7 +101,7 @@ entry:
 ; 1 occurrences:
 ; xgboost/optimized/gbtree.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000181(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1

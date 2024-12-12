@@ -28,6 +28,12 @@ func000000000000000a:                   # @func000000000000000a
 	andb	%dil, %sil
 	andb	%sil, %al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpl	$50, %edx
+	setb	%al
+	andb	%dil, %sil
+	andb	%sil, %al
+	retq
 func0000000000000008:                   # @func0000000000000008
 	cmpl	$65536, %edx                    # imm = 0x10000
 	setae	%al

@@ -6,10 +6,10 @@
 ; openssl/optimized/openssl-bin-s_client.ll
 ; openssl/optimized/openssl-bin-s_server.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i1 %0, i32 %1, i1 %2) #0 {
+define i1 @func000000000000006c(i1 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = icmp ne i32 %4, 0
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
@@ -21,11 +21,11 @@ entry:
 ; jq/optimized/regparse.ll
 ; oniguruma/optimized/regparse.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000074(i1 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
-  %5 = icmp ult i32 %4, 4
+  %4 = add nuw nsw i32 %1, %3
+  %5 = icmp samesign ult i32 %4, 4
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }
@@ -38,7 +38,7 @@ entry:
 define i1 @func0000000000000001(i1 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = icmp eq i32 %4, 1
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
@@ -55,20 +55,19 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i32 %1, i1 %2) #0 {
 entry:
-  %3 = zext i1 %2 to i32
-  %4 = sub i32 0, %1
-  %5 = icmp ne i32 %3, %4
-  %6 = select i1 %0, i1 %5, i1 false
-  ret i1 %6
+  %.neg = sext i1 %2 to i32
+  %3 = icmp ne i32 %1, %.neg
+  %4 = select i1 %0, i1 %3, i1 false
+  ret i1 %4
 }
 
 ; 1 occurrences:
 ; darktable/optimized/geotagging.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = icmp slt i32 %4, 2
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
@@ -79,24 +78,22 @@ entry:
 ; csmith/optimized/StatementArrayOp.cpp.ll
 ; opencv/optimized/daisy.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1, i1 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = icmp sgt i32 %4, 0
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }
 
-; 3 occurrences:
-; icu/optimized/prscmnts.ll
+; 1 occurrences:
 ; oiio/optimized/exroutput.cpp.ll
-; openusd/optimized/read.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000068(i1 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = icmp ugt i32 %4, 3
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
@@ -107,11 +104,24 @@ entry:
 ; icu/optimized/csrucode.ll
 ; llvm/optimized/LoopAccessAnalysis.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000061(i1 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = icmp eq i32 %4, 0
+  %6 = select i1 %0, i1 %5, i1 false
+  ret i1 %6
+}
+
+; 2 occurrences:
+; icu/optimized/prscmnts.ll
+; openusd/optimized/read.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000078(i1 %0, i32 %1, i1 %2) #0 {
+entry:
+  %3 = zext i1 %2 to i32
+  %4 = add nuw nsw i32 %1, %3
+  %5 = icmp samesign ugt i32 %4, 1
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }
@@ -119,13 +129,12 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/2048.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i1 %2) #0 {
 entry:
-  %3 = zext i1 %2 to i32
-  %4 = sub i32 0, %1
-  %5 = icmp eq i32 %3, %4
-  %6 = select i1 %0, i1 %5, i1 false
-  ret i1 %6
+  %.neg = sext i1 %2 to i32
+  %3 = icmp eq i32 %1, %.neg
+  %4 = select i1 %0, i1 %3, i1 false
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

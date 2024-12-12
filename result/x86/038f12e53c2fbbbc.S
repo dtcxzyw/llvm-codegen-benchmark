@@ -1,16 +1,18 @@
 func000000000000001f:                   # @func000000000000001f
-	shll	$24, %edx
-	orl	%edi, %edx
+	movzbl	%dl, %eax
+	shll	$16, %eax
+	orl	%edi, %eax
 	andl	$1, %esi
-	leal	39(%rsi,%rsi), %eax
-	orl	%edx, %eax
+	shll	$8, %esi
+	orl	%esi, %eax
 	retq
 func000000000000000f:                   # @func000000000000000f
 	movzbl	%dl, %eax
 	shll	$16, %eax
 	orl	%edi, %eax
 	andl	$1, %esi
-	leal	39(%rax,%rsi,2), %eax
+	shll	$30, %esi
+	leal	-1073741824(%rsi,%rax), %eax
 	retq
 func000000000000000a:                   # @func000000000000000a
 	movl	%esi, %eax
@@ -38,10 +40,11 @@ func000000000000001e:                   # @func000000000000001e
 	orl	$1308886016, %eax               # imm = 0x4E040400
 	retq
 func000000000000000b:                   # @func000000000000000b
-	movl	%esi, %eax
 	shll	$24, %edx
 	orl	%edi, %edx
-	andl	$1, %eax
-	shll	$8, %eax
+	xorl	%ecx, %ecx
+	testb	$1, %sil
+	movl	$255, %eax
+	cmovnel	%ecx, %eax
 	orl	%edx, %eax
 	retq

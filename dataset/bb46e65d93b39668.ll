@@ -1,5 +1,5 @@
 
-%"struct.Node_Stack::INode.2627681" = type { ptr, i32 }
+%"struct.Node_Stack::INode.2741095" = type { ptr, i32 }
 
 ; 47 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -50,13 +50,13 @@
 ; redis/optimized/ldebug.ll
 ; wasmedge/optimized/global.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 3
   %5 = add nuw nsw i64 %4, 4294967295
   %6 = and i64 %5, 4294967295
-  %7 = getelementptr nusw ptr, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw ptr, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -64,13 +64,13 @@ entry:
 ; openvdb/optimized/Filter.cc.ll
 ; openvdb/optimized/LevelSetFilter.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000016(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000017(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 1
   %5 = add nsw i64 %4, -2
   %6 = and i64 %5, -4
-  %7 = getelementptr nusw i8, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -81,13 +81,13 @@ entry:
 ; openjdk/optimized/replacednodes.ll
 ; openjdk/optimized/shenandoahSupport.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr i64 %3, 4
   %5 = add nuw nsw i64 %4, 4294967294
   %6 = and i64 %5, 4294967295
-  %7 = getelementptr nusw %"struct.Node_Stack::INode.2627681", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"struct.Node_Stack::INode.2741095", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -95,13 +95,13 @@ entry:
 ; icu/optimized/normalizer2impl.ll
 ; icu/optimized/ucnv2022.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 1
   %5 = add nuw i64 %4, 4294967294
   %6 = and i64 %5, 4294967295
-  %7 = getelementptr nusw i16, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i16, ptr %0, i64 %6
   ret ptr %7
 }
 

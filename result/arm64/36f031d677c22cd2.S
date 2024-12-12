@@ -16,7 +16,7 @@ func000000000000001c:                   // @func000000000000001c
 // %bb.0:                               // %entry
 	sub	x8, x1, x2
 	lsr	x8, x8, #3
-	add	w0, w8, w0
+	add	w0, w0, w8
 	ret
                                         // -- End function
 func0000000000000014:                   // @func0000000000000014
@@ -30,7 +30,7 @@ func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
 	sub	x8, x1, x2
 	lsr	x8, x8, #2
-	add	w0, w8, w0
+	add	w0, w0, w8
 	ret
                                         // -- End function
 func000000000000005c:                   // @func000000000000005c
@@ -44,6 +44,6 @@ func0000000000000050:                   // @func0000000000000050
 // %bb.0:                               // %entry
 	sub	x8, x1, x2
 	lsr	x8, x8, #5
-	add	w0, w8, w0
+	add	w0, w0, w8
 	ret
                                         // -- End function

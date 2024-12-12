@@ -8,7 +8,7 @@ func0000000000000005:                   # @func0000000000000005
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsleu.vv	v0, v10, v8
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsrl.vi	v13, v12, 31
 	vadd.vv	v12, v12, v13
@@ -17,7 +17,7 @@ func0000000000000016:                   # @func0000000000000016
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmslt.vv	v0, v10, v8
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	lui	a0, 559241
 	addi	a0, a0, -1911
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -30,7 +30,7 @@ func000000000000001a:                   # @func000000000000001a
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmslt.vv	v0, v8, v10
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	lui	a0, 559241
 	addi	a0, a0, -1911
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -55,7 +55,7 @@ func000000000000000a:                   # @func000000000000000a
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmslt.vv	v0, v8, v10
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	lui	a0, 67109
 	addi	a0, a0, -557
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -101,7 +101,7 @@ func0000000000000006:                   # @func0000000000000006
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmslt.vv	v0, v10, v8
 	ret
-func000000000000001b:                   # @func000000000000001b
+func000000000000002b:                   # @func000000000000002b
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsrl.vi	v13, v12, 31
 	vadd.vv	v12, v12, v13
@@ -110,7 +110,7 @@ func000000000000001b:                   # @func000000000000001b
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmsle.vv	v0, v8, v10
 	ret
-func0000000000000015:                   # @func0000000000000015
+func0000000000000025:                   # @func0000000000000025
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsrl.vi	v13, v12, 31
 	vadd.vv	v12, v12, v13

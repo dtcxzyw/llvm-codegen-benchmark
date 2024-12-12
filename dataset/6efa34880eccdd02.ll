@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; duckdb/optimized/ub_duckdb_parallel.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_buffer.cpp.ll
 ; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
@@ -16,6 +16,7 @@
 ; yalantinglibs/optimized/file_server.cpp.ll
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
+; zed-rs/optimized/8x58xp4s22l8izlb56sviitm3.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000018(i1 %0, i64 %1) #0 {
 entry:

@@ -40,9 +40,16 @@ func0000000000000004:                   # @func0000000000000004
 	vmsltu.vx	v8, v10, a0
 	vmor.mm	v0, v0, v8
 	ret
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
 	vmsle.vi	v8, v10, 0
+	vmor.mm	v0, v0, v8
+	ret
+func0000000000000018:                   # @func0000000000000018
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vnsrl.wi	v10, v8, 0
+	lui	a0, 8192
+	vmsgtu.vx	v8, v10, a0
 	vmor.mm	v0, v0, v8
 	ret

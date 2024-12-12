@@ -6,10 +6,10 @@ func0000000000000004:                   # @func0000000000000004
 	addw	a0, a0, a1
 	ret
 func0000000000000014:                   # @func0000000000000014
-	li	a2, 64
+	li	a2, 100
 	subw	a2, a2, a1
 	mul	a0, a0, a2
-	addiw	a0, a0, 32
+	addiw	a0, a0, 99
 	ret
 func000000000000003f:                   # @func000000000000003f
 	li	a2, 32

@@ -14,7 +14,6 @@
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/intel_guc_submission.ll
 ; linux/optimized/mlock.ll
-; linux/optimized/ttm_bo_vm.ll
 ; mold/optimized/mapfile.cc.ALPHA.cc.ll
 ; mold/optimized/mapfile.cc.ARM32.cc.ll
 ; mold/optimized/mapfile.cc.ARM64.cc.ll
@@ -38,6 +37,7 @@
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
 ; openusd/optimized/fast-dtoa.cc.ll
 ; openusd/optimized/fixed-dtoa.cc.ll
+; php/optimized/dow.ll
 ; php/optimized/dtoa.ll
 ; re2/optimized/onepass.cc.ll
 ; redis/optimized/fpconv_dtoa.ll
@@ -90,7 +90,7 @@ entry:
 define i64 @func000000000000000d(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 21
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = sub nsw i64 %4, %0
   ret i64 %5
 }
@@ -104,7 +104,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 21
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub nsw i64 %4, %0
   ret i64 %5
 }
@@ -122,7 +122,7 @@ entry:
   ret i64 %5
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; delta-rs/optimized/47qjbhol909h8zu7.ll
 ; delta-rs/optimized/4zvphat0q9a964bz.ll
 ; delta-rs/optimized/s2xrj2sh770tx8d.ll
@@ -133,12 +133,13 @@ entry:
 ; hyperscan/optimized/ue2string.cpp.ll
 ; influxdb-rs/optimized/1zobaqtttt01ywwe.ll
 ; influxdb-rs/optimized/54bldmpi534adbqh.ll
+; php/optimized/dow.ll
 ; regex-rs/optimized/3bb5ih3626n2er1d.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = lshr i64 %2, 6
-  %4 = add nuw nsw i64 %3, %1
+  %3 = lshr i64 %2, 2
+  %4 = add nuw nsw i64 %1, %3
   %5 = sub nuw nsw i64 %4, %0
   ret i64 %5
 }
@@ -149,7 +150,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub nuw i64 %4, %0
   ret i64 %5
 }
@@ -160,7 +161,7 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
-  %4 = add nuw i64 %3, %1
+  %4 = add nuw i64 %1, %3
   %5 = sub i64 %4, %0
   ret i64 %5
 }

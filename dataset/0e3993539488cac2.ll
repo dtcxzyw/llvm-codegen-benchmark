@@ -10,7 +10,7 @@
 ; spike/optimized/clrs32.ll
 ; spike/optimized/clz32.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000029(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000049(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, 8
   %3 = icmp ult i32 %1, 16777216
@@ -19,7 +19,8 @@ entry:
   ret i32 %5
 }
 
-; 22 occurrences:
+; 23 occurrences:
+; boost/optimized/ipc_reliable_message_queue.ll
 ; casadi/optimized/tinyxml2.cpp.ll
 ; cpython/optimized/dtoa.ll
 ; eastl/optimized/TestBitset.cpp.ll
@@ -43,7 +44,7 @@ entry:
 ; wasmedge/optimized/inode-linux.cpp.ll
 ; z3/optimized/mpz.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000023(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000043(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, 8
   %3 = icmp eq i32 %1, 0
@@ -110,24 +111,23 @@ entry:
 ; openssl/optimized/libcrypto-lib-x_crl.ll
 ; openssl/optimized/libcrypto-shlib-x_crl.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000010(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000030(i32 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %0, 2
-  %3 = icmp ugt i32 %1, 1
+  %3 = icmp samesign ugt i32 %1, 1
   %4 = select i1 %3, i32 %2, i32 %0
   %5 = or i32 %4, 32
   ret i32 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; darktable/optimized/masks.c.ll
-; hdf5/optimized/H5VLnative_file.c.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; linux/optimized/vfs_inode.ll
 ; llvm/optimized/ModuleMap.cpp.ll
 ; qemu/optimized/hw_9pfs_9p.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000042(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, 1048576
   %3 = icmp eq i32 %1, 49152
@@ -140,7 +140,7 @@ entry:
 ; openjdk/optimized/OGLPaints.ll
 ; wireshark/optimized/ipaddr.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000035(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000055(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, 4
   %3 = icmp sgt i32 %1, 4
@@ -149,20 +149,19 @@ entry:
   ret i32 %5
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
 ; postgres/optimized/array_selfuncs.ll
-; sentencepiece/optimized/int128.cc.ll
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000071(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, 8
-  %3 = icmp ugt i32 %1, 255
+  %3 = icmp samesign ugt i32 %1, 255
   %4 = select i1 %3, i32 %2, i32 %0
   %5 = or disjoint i32 %4, 4
   ret i32 %5
@@ -173,7 +172,7 @@ entry:
 ; llvm/optimized/MCWin64EH.cpp.ll
 ; wireshark/optimized/ipaddr.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000054(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, 2097152
   %3 = icmp slt i32 %1, 0
@@ -183,9 +182,21 @@ entry:
 }
 
 ; 1 occurrences:
+; sentencepiece/optimized/int128.cc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000051(i32 %0, i32 %1) #0 {
+entry:
+  %2 = or disjoint i32 %0, 8
+  %3 = icmp ugt i32 %1, 255
+  %4 = select i1 %3, i32 %2, i32 %0
+  %5 = or disjoint i32 %4, 4
+  ret i32 %5
+}
+
+; 1 occurrences:
 ; linux/optimized/intel_display.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000028(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000048(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, 2048
   %3 = icmp ult i32 %1, 2

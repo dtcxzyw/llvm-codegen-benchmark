@@ -5,7 +5,7 @@
 ; openjdk/optimized/zObjectAllocator.ll
 ; openjdk/optimized/zReferenceProcessor.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 63
   %3 = and i64 %2, -64
@@ -22,7 +22,7 @@ entry:
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 4294967288
   %3 = and i64 %2, 4294967294

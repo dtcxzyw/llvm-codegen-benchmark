@@ -12,7 +12,7 @@
 ; z3/optimized/subpaving_mpfx.cpp.ll
 ; z3/optimized/subpaving_mpq.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i8 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000184(i8 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = icmp eq i64 %3, %1
@@ -29,7 +29,7 @@ entry:
 ; sentencepiece/optimized/normalizer.cc.ll
 ; sentencepiece/optimized/unigram_model.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i8 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000104(i8 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
   %4 = icmp eq i64 %3, %1
@@ -59,10 +59,10 @@ entry:
 ; z3/optimized/sat_parallel.cpp.ll
 ; z3/optimized/sat_solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e4(i8 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001e4(i8 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
-  %4 = icmp uge i64 %3, %1
+  %4 = icmp samesign uge i64 %3, %1
   %5 = trunc i8 %0 to i1
   %6 = select i1 %5, i1 true, i1 %4
   ret i1 %6
@@ -84,10 +84,10 @@ entry:
 ; opencv/optimized/has_non_zero.dispatch.cpp.ll
 ; z3/optimized/sat_asymm_branch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e6(i8 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001e6(i8 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
-  %4 = icmp uge i64 %3, %1
+  %4 = icmp samesign uge i64 %3, %1
   %5 = trunc nuw i8 %0 to i1
   %6 = select i1 %5, i1 true, i1 %4
   ret i1 %6

@@ -11,7 +11,8 @@ entry:
   ret i64 %4
 }
 
-; 9 occurrences:
+; 10 occurrences:
+; boost/optimized/alloc_lib.ll
 ; faiss/optimized/AutoTune.cpp.ll
 ; faiss/optimized/LocalSearchQuantizer.cpp.ll
 ; hdf5/optimized/H5Shyper.c.ll

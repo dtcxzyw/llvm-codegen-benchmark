@@ -17,7 +17,7 @@ entry:
 ; rocksdb/optimized/db_filesnapshot.cc.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000042(i64 %0, i64 %1) #0 {
+define i8 @func0000000000000082(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 1
   %3 = icmp eq i64 %2, %0
@@ -25,7 +25,14 @@ entry:
   ret i8 %4
 }
 
-; 24 occurrences:
+; 29 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/expand.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/sparring_partner.ll
+; boost/optimized/within.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/write_dsv.ll
 ; nix/optimized/attr-path.ll
 ; nix/optimized/cgroup.ll
 ; nix/optimized/get-drvs.ll
@@ -35,8 +42,6 @@ entry:
 ; nix/optimized/local-store.ll
 ; nix/optimized/names.ll
 ; nix/optimized/nix-collect-garbage.ll
-; nix/optimized/nix-env.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/profile.ll
 ; nix/optimized/profiles.ll
 ; nix/optimized/shared.ll
@@ -70,10 +75,11 @@ entry:
   ret i8 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/ext.ll
 ; velox/optimized/Filter.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000022(i64 %0, i64 %1) #0 {
+define i8 @func0000000000000042(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = icmp eq i64 %2, %0
@@ -82,9 +88,20 @@ entry:
 }
 
 ; 1 occurrences:
+; boost/optimized/limit_fd.ll
+; Function Attrs: nounwind
+define i8 @func000000000000004a(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nsw i64 %1, 2
+  %3 = icmp ule i64 %2, %0
+  %4 = zext i1 %3 to i8
+  ret i8 %4
+}
+
+; 1 occurrences:
 ; ms-gsl/optimized/at_tests.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000062(i64 %0, i64 %1) #0 {
+define i8 @func00000000000000c2(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
   %3 = icmp eq i64 %2, %0
@@ -107,7 +124,7 @@ entry:
 ; mini-lsm-rs/optimized/2vbarw74mreksmkr.ll
 ; mini-lsm-rs/optimized/4wwk8tlxvknqh1t8.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000052(i64 %0, i64 %1) #0 {
+define i8 @func0000000000000092(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 2
   %3 = icmp uge i64 %2, %0

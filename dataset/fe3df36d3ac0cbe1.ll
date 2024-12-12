@@ -1,5 +1,5 @@
 
-; 52 occurrences:
+; 54 occurrences:
 ; assimp/optimized/IRRMeshLoader.cpp.ll
 ; assimp/optimized/IRRShared.cpp.ll
 ; assimp/optimized/NFFLoader.cpp.ll
@@ -51,6 +51,8 @@
 ; wireshark/optimized/packet-lte-rrc.c.ll
 ; wireshark/optimized/packet-mpeg-descriptor.c.ll
 ; wireshark/optimized/packet-nas_eps.c.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
 ; zxing/optimized/ODMultiUPCEANReader.cpp.ll
 ; Function Attrs: nounwind
 define float @func0000000000000001(i32 %0) #0 {
@@ -60,7 +62,7 @@ entry:
   ret float %2
 }
 
-; 38 occurrences:
+; 45 occurrences:
 ; actix-rs/optimized/34zqw30jnodxf0r6.ll
 ; assimp/optimized/MS3DLoader.cpp.ll
 ; assimp/optimized/PlyLoader.cpp.ll
@@ -88,7 +90,6 @@ entry:
 ; wireshark/optimized/packet-f1ap.c.ll
 ; wireshark/optimized/packet-geonw.c.ll
 ; wireshark/optimized/packet-gryphon.c.ll
-; wireshark/optimized/packet-gsm_r_uus1.c.ll
 ; wireshark/optimized/packet-gtpv2.c.ll
 ; wireshark/optimized/packet-homeplug.c.ll
 ; wireshark/optimized/packet-lte-rrc.c.ll
@@ -97,8 +98,16 @@ entry:
 ; wireshark/optimized/packet-ngap.c.ll
 ; wireshark/optimized/packet-nr-rrc.c.ll
 ; wireshark/optimized/packet-s1ap.c.ll
-; wireshark/optimized/packet-x2ap.c.ll
 ; wireshark/optimized/packet-xnap.c.ll
+; zed-rs/optimized/1qb020ndphzxmvf33d06yonm0.ll
+; zed-rs/optimized/1uum3gw9a30ezdy8xtn1px0l6.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/70oxjc4k9uv7kvad3t5u6bzag.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
+; zed-rs/optimized/9jrz8x0nc5lkiswz6iqpo0zcg.ll
+; zed-rs/optimized/b8qhlvoy2nskqwvkt99c6cu9u.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i32 %0) #0 {
 entry:

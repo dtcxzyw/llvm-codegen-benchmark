@@ -72,20 +72,31 @@ entry:
   ret i64 %5
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; cmake/optimized/entropy_common.c.ll
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; linux/optimized/entropy_common.ll
 ; postgres/optimized/hashutil.ll
-; soc-simulator/optimized/verilated.ll
 ; wireshark/optimized/packet-dect.c.ll
 ; zstd/optimized/entropy_common.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003d(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nuw nsw i32 %1, 32
+  %2 = add nuw nsw i32 %1, 48
   %3 = add nuw nsw i32 %2, %0
-  %4 = lshr i32 %3, 5
+  %4 = lshr i32 %3, 3
+  %5 = zext nneg i32 %4 to i64
+  ret i64 %5
+}
+
+; 1 occurrences:
+; faiss/optimized/AutoTune.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000021(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nuw i32 %1, 1
+  %3 = add i32 %2, %0
+  %4 = lshr i32 %3, 1
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }

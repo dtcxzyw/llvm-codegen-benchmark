@@ -1,7 +1,6 @@
 
-%"struct.mold::elf::ElfPhdr.2551678" = type { %"class.mold::LittleEndian.2551663", %"class.mold::LittleEndian.2551663", %"class.mold::LittleEndian.2551663", %"class.mold::LittleEndian.2551663", %"class.mold::LittleEndian.2551663", %"class.mold::LittleEndian.2551663", %"class.mold::LittleEndian.2551663", %"class.mold::LittleEndian.2551663" }
-%"class.mold::LittleEndian.2551663" = type { [4 x i8] }
-%"struct.WasmEdge::RefVariant.2653995" = type { <2 x i64> }
+%"struct.WasmEdge::RefVariant.2767208" = type { <2 x i64> }
+%"class.testing::ThrowingValue.3460894" = type { i32 }
 
 ; 8 occurrences:
 ; rocksdb/optimized/compaction_merging_iterator.cc.ll
@@ -17,38 +16,8 @@ define ptr @func0000000000000010(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %2, %3
-  %5 = getelementptr i8, ptr %0, i64 %4
-  %6 = getelementptr ptr, ptr %5, i64 %1
-  ret ptr %6
-}
-
-; 19 occurrences:
-; abseil-cpp/optimized/inlined_vector_exception_safety_test.cc.ll
-; arrow/optimized/row_encoder.cc.ll
-; cvc5/optimized/lfsc_post_processor.cpp.ll
-; faiss/optimized/BlockInvertedLists.cpp.ll
-; faiss/optimized/InvertedLists.cpp.ll
-; meshlab/optimized/filter_texture.cpp.ll
-; meshlab/optimized/io_collada.cpp.ll
-; mold/optimized/output-chunks.cc.ARM32.cc.ll
-; mold/optimized/output-chunks.cc.I386.cc.ll
-; mold/optimized/output-chunks.cc.LOONGARCH32.cc.ll
-; mold/optimized/output-chunks.cc.M68K.cc.ll
-; mold/optimized/output-chunks.cc.PPC32.cc.ll
-; mold/optimized/output-chunks.cc.RV32BE.cc.ll
-; mold/optimized/output-chunks.cc.RV32LE.cc.ll
-; mold/optimized/output-chunks.cc.SH4.cc.ll
-; protobuf/optimized/generated_message_tctable_gen.cc.ll
-; xgboost/optimized/data.cc.ll
-; xgboost/optimized/input_split_base.cc.ll
-; xgboost/optimized/tree_model.cc.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = ptrtoint ptr %0 to i64
-  %4 = sub i64 %2, %3
-  %5 = getelementptr i8, ptr %0, i64 %4
-  %6 = getelementptr %"struct.mold::elf::ElfPhdr.2551678", ptr %5, i64 %1
+  %5 = getelementptr ptr, ptr %0, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -85,7 +54,7 @@ entry:
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %2, %3
   %5 = getelementptr i8, ptr %0, i64 %4
-  %6 = getelementptr %"struct.WasmEdge::RefVariant.2653995", ptr %5, i64 %1
+  %6 = getelementptr %"struct.WasmEdge::RefVariant.2767208", ptr %5, i64 %1
   ret ptr %6
 }
 
@@ -98,6 +67,28 @@ entry:
   %4 = sub i64 %2, %3
   %5 = getelementptr i8, ptr %0, i64 %4
   %6 = getelementptr double, ptr %5, i64 %1
+  ret ptr %6
+}
+
+; 11 occurrences:
+; abseil-cpp/optimized/inlined_vector_exception_safety_test.cc.ll
+; arrow/optimized/row_encoder.cc.ll
+; cvc5/optimized/lfsc_post_processor.cpp.ll
+; faiss/optimized/BlockInvertedLists.cpp.ll
+; faiss/optimized/InvertedLists.cpp.ll
+; meshlab/optimized/filter_texture.cpp.ll
+; meshlab/optimized/io_collada.cpp.ll
+; protobuf/optimized/generated_message_tctable_gen.cc.ll
+; xgboost/optimized/data.cc.ll
+; xgboost/optimized/input_split_base.cc.ll
+; xgboost/optimized/tree_model.cc.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000012(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = ptrtoint ptr %0 to i64
+  %4 = sub i64 %2, %3
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr %"class.testing::ThrowingValue.3460894", ptr %5, i64 %1
   ret ptr %6
 }
 

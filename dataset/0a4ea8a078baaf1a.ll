@@ -1,5 +1,6 @@
 
 ; 49 occurrences:
+; boost/optimized/within_pointlike_geometry.ll
 ; bullet3/optimized/b3VoronoiSimplexSolver.ll
 ; cmake/optimized/zstdmt_compress.c.ll
 ; cvc5/optimized/theory_arrays_rewriter.cpp.ll
@@ -7,7 +8,6 @@
 ; imgui/optimized/imgui_tables.cpp.ll
 ; llvm/optimized/CGExprConstant.cpp.ll
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/VirtualCallChecker.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luau/optimized/ConstraintSolver.cpp.ll

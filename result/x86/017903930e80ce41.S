@@ -30,8 +30,8 @@ func0000000000000010:                   # @func0000000000000010
 	addl	$3, %eax
 	retq
 func0000000000000000:                   # @func0000000000000000
-	addl	%esi, %esi
-	leal	(%rsi,%rsi,4), %eax
-	addl	%edi, %eax
-	negl	%eax
+	leal	(%rsi,%rsi,2), %ecx
+	addl	%edi, %ecx
+	movl	$1024, %eax                     # imm = 0x400
+	subl	%ecx, %eax
 	retq

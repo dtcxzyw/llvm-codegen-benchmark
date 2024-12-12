@@ -1,7 +1,8 @@
 
-; 42 occurrences:
+; 45 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
+; brotli/optimized/backward_references.c.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -42,6 +43,8 @@
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; yalantinglibs/optimized/chat_room.cpp.ll
 ; yosys/optimized/lz4.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0) #0 {
 entry:
@@ -51,10 +54,11 @@ entry:
   ret i64 %3
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
+; boost/optimized/to_chars.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
@@ -68,21 +72,6 @@ entry:
   %1 = mul nuw nsw i64 %0, 205
   %2 = lshr i64 %1, 11
   %3 = and i64 %2, 4222124902318095
-  ret i64 %3
-}
-
-; 5 occurrences:
-; llvm/optimized/APINotesWriter.cpp.ll
-; llvm/optimized/LoadStoreVectorizer.cpp.ll
-; llvm/optimized/MCContext.cpp.ll
-; llvm/optimized/MIRFSDiscriminator.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000001(i64 %0) #0 {
-entry:
-  %1 = mul i64 %0, 3248559593059516416
-  %2 = lshr exact i64 %1, 31
-  %3 = and i64 %2, 4294967294
   ret i64 %3
 }
 

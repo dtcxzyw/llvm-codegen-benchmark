@@ -4,7 +4,16 @@ func000000000000000c:                   # @func000000000000000c
 	vmsne.vi	v10, v8, 3
 	vmand.mm	v0, v0, v10
 	ret
-func0000000000000021:                   # @func0000000000000021
+func0000000000000054:                   # @func0000000000000054
+	lui	a0, 524032
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vand.vx	v8, v8, a0
+	lui	a0, 27136
+	addiw	a0, a0, 1
+	vmsltu.vx	v10, v8, a0
+	vmand.mm	v0, v0, v10
+	ret
+func0000000000000041:                   # @func0000000000000041
 	lui	a0, 256
 	addiw	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -21,26 +30,43 @@ func0000000000000001:                   # @func0000000000000001
 	vmseq.vx	v10, v8, a0
 	vmand.mm	v0, v0, v10
 	ret
-func0000000000000024:                   # @func0000000000000024
-	lui	a0, 524288
-	addiw	a0, a0, -2
+func000000000000006c:                   # @func000000000000006c
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vand.vx	v8, v8, a0
-	vmsleu.vi	v10, v8, 5
+	vand.vi	v8, v8, 1
+	vmsne.vi	v10, v8, 0
 	vmand.mm	v0, v0, v10
 	ret
-func000000000000002c:                   # @func000000000000002c
-	li	a0, 128
+func0000000000000074:                   # @func0000000000000074
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vand.vi	v8, v8, 4
+	vmseq.vi	v10, v8, 0
+	vmand.mm	v0, v0, v10
+	ret
+func0000000000000018:                   # @func0000000000000018
+	lui	a0, 61440
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v8, v8, a0
 	vmsne.vi	v10, v8, 0
 	vmand.mm	v0, v0, v10
 	ret
-func0000000000000008:                   # @func0000000000000008
-	lui	a0, 262144
-	addiw	a0, a0, -1
+func0000000000000058:                   # @func0000000000000058
+	lui	a0, 61440
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v8, v8, a0
-	vmsgtu.vi	v10, v8, 4
+	vmsne.vi	v10, v8, 0
+	vmand.mm	v0, v0, v10
+	ret
+func0000000000000078:                   # @func0000000000000078
+	li	a0, 2046
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vand.vx	v8, v8, a0
+	vmsne.vi	v10, v8, 0
+	vmand.mm	v0, v0, v10
+	ret
+func0000000000000014:                   # @func0000000000000014
+	li	a0, 60
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vand.vx	v8, v8, a0
+	vmseq.vi	v10, v8, 0
 	vmand.mm	v0, v0, v10
 	ret

@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; freetype/optimized/ftbase.c.ll
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
@@ -9,10 +9,9 @@
 ; meshlab/optimized/io_x3d.cpp.ll
 ; php/optimized/zend_inference.ll
 ; php/optimized/zend_jit.ll
-; qemu/optimized/accel_tcg_user-exec.c.ll
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, 0
   %4 = select i1 %3, i32 %0, i32 %2
@@ -21,7 +20,7 @@ entry:
 }
 
 ; 10 occurrences:
-; darktable/optimized/introspection_flip.c.ll
+; freetype/optimized/cff.c.ll
 ; git/optimized/unpack-trees.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; linux/optimized/xhci-hub.ll

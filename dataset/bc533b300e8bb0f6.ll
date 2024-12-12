@@ -124,11 +124,11 @@
 define double @func0000000000000000(double %0, i32 %1) #0 {
 entry:
   %2 = uitofp i32 %1 to double
-  %3 = fmul double %2, %0
+  %3 = fmul double %0, %2
   ret double %3
 }
 
-; 179 occurrences:
+; 178 occurrences:
 ; abc/optimized/fraSat.c.ll
 ; abc/optimized/giaBalMap.c.ll
 ; abc/optimized/giaShrink7.c.ll
@@ -214,7 +214,6 @@ entry:
 ; openblas/optimized/dtbrfs.c.ll
 ; openblas/optimized/dtprfs.c.ll
 ; openblas/optimized/dtrrfs.c.ll
-; openblas/optimized/parameter.c.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; opencv/optimized/aruco_detector.cpp.ll
 ; opencv/optimized/bif.cpp.ll
@@ -312,7 +311,7 @@ entry:
 define double @func0000000000000001(double %0, i32 %1) #0 {
 entry:
   %2 = uitofp nneg i32 %1 to double
-  %3 = fmul double %2, %0
+  %3 = fmul double %0, %2
   ret double %3
 }
 

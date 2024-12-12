@@ -26,4 +26,14 @@ entry:
   ret i1 %4
 }
 
+; 1 occurrences:
+; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000104(i8 %0, i8 %1) #0 {
+entry:
+  %2 = sub i8 %1, %0
+  %3 = icmp ugt i8 %2, -4
+  ret i1 %3
+}
+
 attributes #0 = { nounwind }

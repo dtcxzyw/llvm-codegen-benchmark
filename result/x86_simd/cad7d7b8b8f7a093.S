@@ -2,7 +2,7 @@
 	.quad	-5                              # 0xfffffffffffffffb
 .LCPI0_1:
 	.long	4096                            # 0x1000
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vptestmq	.LCPI0_0(%rip){1to4}, %ymm1, %k1
 	vorps	.LCPI0_1(%rip){1to4}, %xmm0, %xmm0 {%k1}
 	vzeroupper
@@ -62,7 +62,7 @@ func0000000000000001:                   # @func0000000000000001
 	.byte	0                               # 0x0
 .LCPI2_2:
 	.long	4                               # 0x4
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vpandq	.LCPI2_3(%rip){1to4}, %ymm1, %ymm1
 	vpcmpeqq	.LCPI2_1(%rip){1to4}, %ymm1, %k1
 	vorps	.LCPI2_2(%rip){1to4}, %xmm0, %xmm0 {%k1}

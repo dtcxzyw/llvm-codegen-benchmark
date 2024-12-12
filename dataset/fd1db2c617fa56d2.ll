@@ -15,7 +15,7 @@ define i32 @func0000000000000000(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 17, i32 255
   %4 = select i1 %1, i32 85, i32 %3
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 

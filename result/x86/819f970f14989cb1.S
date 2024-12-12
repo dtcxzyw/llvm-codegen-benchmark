@@ -1,4 +1,4 @@
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	xorl	%eax, %eax
 	cmpw	$38, %si
 	sete	%al
@@ -6,7 +6,7 @@ func0000000000000041:                   # @func0000000000000041
 	addl	%edi, %eax
 	sete	%al
 	retq
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	xorl	%eax, %eax
 	cmpw	$3, %si
 	sete	%al
@@ -14,7 +14,7 @@ func000000000000005a:                   # @func000000000000005a
 	testl	%eax, %eax
 	setg	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	leal	-16(%rdi), %eax
 	addl	$-4, %edi
 	cmpw	$1, %si

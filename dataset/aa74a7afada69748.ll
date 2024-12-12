@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 20 occurrences:
 ; cpython/optimized/Hacl_Hash_SHA3.ll
 ; hdf5/optimized/H5HFdtable.c.ll
 ; hdf5/optimized/H5HFsection.c.ll
@@ -14,18 +14,19 @@
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
+; lvgl/optimized/lv_refr.ll
 ; qemu/optimized/block_parallels.c.ll
 ; qemu/optimized/block_qcow2-cluster.c.ll
 ; qemu/optimized/block_qcow2-refcount.c.ll
 ; raylib/optimized/rmodels.c.ll
 ; slurm/optimized/slurm_step_layout.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000074(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = udiv i32 %1, %2
   %4 = zext i32 %3 to i64
   %5 = add nuw nsw i64 %0, 64
-  %6 = icmp ult i64 %5, %4
+  %6 = icmp samesign ult i64 %5, %4
   ret i1 %6
 }
 
@@ -46,12 +47,12 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000f4(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = udiv i32 %1, %2
   %4 = zext nneg i32 %3 to i64
   %5 = add nuw nsw i64 %0, 1
-  %6 = icmp ult i64 %5, %4
+  %6 = icmp samesign ult i64 %5, %4
   ret i1 %6
 }
 
@@ -63,7 +64,7 @@ entry:
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/Scalarizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = udiv i32 %1, %2
   %4 = zext i32 %3 to i64
@@ -78,7 +79,7 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000e1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = udiv i32 %1, %2
   %4 = zext nneg i32 %3 to i64

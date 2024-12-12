@@ -79,12 +79,11 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; box2d/optimized/b2_body.cpp.ll
 ; bullet3/optimized/btDantzigLCP.ll
 ; clamav/optimized/recvol.cpp.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; tev/optimized/ImageViewer.cpp.ll
 ; z3/optimized/pb_solver.cpp.ll
 ; z3/optimized/sat_simplifier.cpp.ll
@@ -132,17 +131,6 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; gromacs/optimized/gmx_covar.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000010(i8 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ult i32 %1, %2
-  %4 = trunc i8 %0 to i1
-  %5 = select i1 %4, i1 true, i1 %3
-  ret i1 %5
-}
-
 ; 4 occurrences:
 ; gromacs/optimized/pairlist.cpp.ll
 ; gromacs/optimized/pairlist_simd_kernel.cpp.ll
@@ -177,6 +165,17 @@ entry:
 define i1 @func000000000000002e(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sge i32 %1, %2
+  %4 = trunc nuw i8 %0 to i1
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000022(i8 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ugt i32 %1, %2
   %4 = trunc nuw i8 %0 to i1
   %5 = select i1 %4, i1 true, i1 %3
   ret i1 %5

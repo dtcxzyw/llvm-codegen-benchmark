@@ -16,12 +16,3 @@ func0000000000000001:                   # @func0000000000000001
 	kmovd	%eax, %k1
 	vmovss	%xmm1, %xmm0, %xmm0 {%k1}
 	retq
-.LCPI2_0:
-	.long	0x80000000                      # float -0
-func0000000000000004:                   # @func0000000000000004
-	vxorps	.LCPI2_0(%rip){1to4}, %xmm0, %xmm1
-	cmpl	$4, %edi
-	setb	%al
-	kmovd	%eax, %k1
-	vmovss	%xmm1, %xmm0, %xmm0 {%k1}
-	retq

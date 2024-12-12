@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 21 occurrences:
 ; abc/optimized/cnfMap.c.ll
 ; clamav/optimized/htmlnorm.c.ll
 ; clamav/optimized/sis.c.ll
@@ -12,6 +12,7 @@
 ; linux/optimized/ds.ll
 ; linux/optimized/errseq.ll
 ; linux/optimized/mballoc.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; oiio/optimized/strutil.cpp.ll
 ; openjdk/optimized/barrierSetAssembler_x86.ll
 ; openjdk/optimized/xBarrierSetAssembler_x86.ll
@@ -25,7 +26,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 2
   %3 = and i32 %2, 48
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -64,11 +65,11 @@ define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 3
   %3 = and i32 %2, 56
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; assimp/optimized/B3DImporter.cpp.ll
 ; bullet3/optimized/b3GjkEpa.ll
 ; bullet3/optimized/btGjkEpa2.ll
@@ -76,7 +77,6 @@ entry:
 ; gromacs/optimized/pairlist.cpp.ll
 ; icu/optimized/genmbcs.ll
 ; libwebp/optimized/yuv.c.ll
-; linux/optimized/nfs3xdr.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; opencv/optimized/opencv-caffe.pb.cc.ll
@@ -90,7 +90,7 @@ define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 4
   %3 = and i32 %2, 1048560
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -104,7 +104,7 @@ define i32 @func000000000000000d(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 2
   %3 = and i32 %2, 252
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -164,7 +164,7 @@ define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 2
   %3 = and i32 %2, 3968
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -175,7 +175,7 @@ define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 12
   %3 = and i32 %2, 196608
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -187,7 +187,7 @@ define i32 @func0000000000000009(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 1
   %3 = and i32 %2, 2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -214,7 +214,7 @@ define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 2
   %3 = and i32 %2, 8
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -226,7 +226,7 @@ define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 16
   %3 = and i32 %2, 16711680
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -237,7 +237,7 @@ define i32 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 16
   %3 = and i32 %2, 2147418112
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   ret i32 %4
 }
 

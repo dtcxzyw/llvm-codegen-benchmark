@@ -98,17 +98,16 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
-; draco/optimized/symbol_encoding.cc.ll
+; 3 occurrences:
 ; gromacs/optimized/forcetable.cpp.ll
 ; gromacs/optimized/redistribute.cpp.ll
 ; opencv/optimized/ts_func.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i32 %1) #0 {
 entry:
-  %2 = add i32 %1, 1
+  %2 = add i32 %1, 2
   %3 = sext i32 %2 to i64
-  %4 = ashr exact i64 %0, 3
+  %4 = ashr exact i64 %0, 2
   %5 = sub nuw nsw i64 %3, %4
   ret i64 %5
 }

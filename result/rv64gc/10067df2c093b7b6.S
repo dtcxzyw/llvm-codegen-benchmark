@@ -1,11 +1,20 @@
 func0000000000000003:                   # @func0000000000000003
 	slli	a2, a1, 48
 	beqz	a2, .LBB0_2
-	addi	a2, a1, -1
-	not	a1, a1
+	srli	a2, a2, 49
 	lui	a3, 5
-	and	a1, a1, a2
+	or	a1, a1, a2
 	addiw	a2, a3, 1365
+	slli	a3, a1, 48
+	srli	a3, a3, 50
+	or	a1, a1, a3
+	slli	a3, a1, 48
+	srli	a3, a3, 52
+	or	a1, a1, a3
+	slli	a3, a1, 48
+	srli	a3, a3, 56
+	or	a1, a1, a3
+	not	a1, a1
 	srli	a3, a1, 1
 	and	a2, a2, a3
 	lui	a3, 3

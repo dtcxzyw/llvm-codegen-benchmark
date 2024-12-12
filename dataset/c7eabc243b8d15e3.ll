@@ -308,13 +308,13 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i8 %1) #0 {
+define i1 @func00000000000000f8(i64 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i64
   %3 = add nsw i64 %2, 4294967248
   %4 = and i64 %3, 4294967294
   %5 = add nuw nsw i64 %4, %0
-  %6 = icmp ugt i64 %5, 2147483647
+  %6 = icmp samesign ugt i64 %5, 2147483647
   ret i1 %6
 }
 
@@ -632,20 +632,20 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i8 %1) #0 {
+define i1 @func00000000000000f4(i64 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i64
   %3 = add nsw i64 %2, 4294967248
   %4 = and i64 %3, 4294967294
   %5 = add nuw nsw i64 %4, %0
-  %6 = icmp ult i64 %5, 2147483648
+  %6 = icmp samesign ult i64 %5, 2147483648
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; openusd/optimized/json.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007c(i64 %0, i8 %1) #0 {
+define i1 @func00000000000000ec(i64 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i64
   %3 = add nsw i64 %2, 4294967248
@@ -658,7 +658,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/json.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000088(i64 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i64
   %3 = add nsw i64 %2, 4294967248

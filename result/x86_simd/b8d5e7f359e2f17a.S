@@ -23,7 +23,7 @@ func0000000000000011:                   # @func0000000000000011
 	vcmpeqps	.LCPI2_0(%rip){1to8}, %ymm1, %k1
 	vpbroadcastd	.LCPI2_1(%rip), %ymm1   # ymm1 = [3,3,3,3,3,3,3,3]
 	vpbroadcastd	.LCPI2_2(%rip), %ymm1 {%k1} # ymm1 {%k1} = [2,2,2,2,2,2,2,2]
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI3_0:
 	.long	5                               # 0x5

@@ -20,10 +20,9 @@ func0000000000000030:                   # @func0000000000000030
 	retq
 func0000000000000028:                   # @func0000000000000028
 	vpsllw	$15, %xmm0, %xmm0
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpxor	%xmm4, %xmm4, %xmm4
-	vpcmpgtd	%ymm4, %ymm2, %k1
-	vpcmpgtw	%xmm0, %xmm3, %k0 {%k1}
+	vpmovw2m	%xmm0, %k1
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpcmpgtd	%ymm0, %ymm2, %k0 {%k1}
 	vpsllw	$7, %xmm1, %xmm0
 	vpmovb2m	%xmm0, %k1
 	kandb	%k1, %k0, %k0

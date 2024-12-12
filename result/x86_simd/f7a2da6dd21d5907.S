@@ -21,7 +21,7 @@ func0000000000000008:                   # @func0000000000000008
 	vpandd	.LCPI0_1(%rip){1to4}, %xmm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
 	vpmovzxbd	%xmm1, %xmm1            # xmm1 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero
-	vpor	%xmm0, %xmm1, %xmm0
+	vpor	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI1_0:
@@ -47,7 +47,7 @@ func000000000000000c:                   # @func000000000000000c
 	vpandd	.LCPI1_1(%rip){1to4}, %xmm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
 	vpmovzxbd	%xmm1, %xmm1            # xmm1 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero
-	vpor	%xmm0, %xmm1, %xmm0
+	vpor	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI2_0:
@@ -73,6 +73,6 @@ func000000000000000e:                   # @func000000000000000e
 	vpandd	.LCPI2_1(%rip){1to4}, %xmm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
 	vpmovzxbd	%xmm1, %xmm1            # xmm1 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero
-	vpor	%xmm0, %xmm1, %xmm0
+	vpor	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq

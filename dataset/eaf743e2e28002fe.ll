@@ -3,7 +3,7 @@
 ; llvm/optimized/MIRPrinter.cpp.ll
 ; llvm/optimized/MachineInstr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000181(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000501(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 18
   %4 = icmp ugt i32 %1, 1
@@ -20,7 +20,7 @@ entry:
 ; wireshark/optimized/packet-bthfp.c.ll
 ; wireshark/optimized/packet-bthsp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000421(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 2
   %4 = icmp eq i32 %1, 215
@@ -34,7 +34,7 @@ entry:
 ; wireshark/optimized/packet-at.c.ll
 ; wireshark/optimized/packet-bthfp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000114(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000424(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 58
   %4 = icmp eq i32 %1, 1
@@ -47,7 +47,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/hdac_device.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000444(i32 %0, i16 %1, i32 %2) #0 {
+define i1 @func0000000000001084(i32 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 4096
   %4 = icmp ult i16 %1, 128

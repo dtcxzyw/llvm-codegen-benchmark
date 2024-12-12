@@ -1,4 +1,4 @@
-func000000000000006a:                   # @func000000000000006a
+func00000000000000ca:                   # @func00000000000000ca
 	addi	a2, a2, -1
 	and	a0, a0, a1
 	bset	a1, zero, a2
@@ -6,7 +6,7 @@ func000000000000006a:                   # @func000000000000006a
 	sext.w	a0, a0
 	slt	a0, a1, a0
 	ret
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	addi	a2, a2, -1
 	and	a0, a0, a1
 	bset	a1, zero, a2

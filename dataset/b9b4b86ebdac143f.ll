@@ -16,7 +16,7 @@ define i1 @func0000000000000002(i1 %0, i16 %1) #0 {
 entry:
   %.mask = and i16 %1, -8192
   %2 = icmp eq i16 %.mask, 8192
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   ret i1 %3
 }
 

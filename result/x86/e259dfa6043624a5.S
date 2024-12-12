@@ -32,3 +32,14 @@ func0000000000000008:                   # @func0000000000000008
 	movb	$1, %al
 	sbbb	$-1, %al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpb	$2, %dil
+	setb	%al
+	addb	%al, %al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	cmpb	$10, %dil
+	movl	$55, %ecx
+	movl	$48, %eax
+	cmovael	%ecx, %eax
+	retq

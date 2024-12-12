@@ -28,4 +28,15 @@ entry:
   ret float %4
 }
 
+; 1 occurrences:
+; darktable/optimized/introspection_tonemap.cc.ll
+; Function Attrs: nounwind
+define float @func0000000000000005(float %0, float %1) #0 {
+entry:
+  %2 = fcmp ugt float %1, 0.000000e+00
+  %3 = fmul float %0, 2.500000e+00
+  %4 = select i1 %2, float %3, float 0xC04144F6A0000000
+  ret float %4
+}
+
 attributes #0 = { nounwind }

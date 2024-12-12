@@ -1,5 +1,10 @@
 
-; 15 occurrences:
+; 19 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; c3c/optimized/bigint.c.ll
 ; cmake/optimized/zstd_opt.c.ll
 ; freetype/optimized/autofit.c.ll
@@ -7,7 +12,6 @@
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; linux/optimized/dquot.ll
 ; linux/optimized/vmstat.ll
-; llvm/optimized/NetBSD.cpp.ll
 ; llvm/optimized/ToolChain.cpp.ll
 ; luau/optimized/Unifier.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
@@ -24,16 +28,15 @@ entry:
   ret i64 %5
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/dauNonDsd.c.ll
 ; hwloc/optimized/topology-x86.ll
 ; llvm/optimized/ArchiveWriter.cpp.ll
-; llvm/optimized/IRMover.cpp.ll
 ; luau/optimized/Linter.cpp.ll
 ; openjdk/optimized/deoptimization.ll
 ; qemu/optimized/block_qcow2-cluster.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
+define i64 @func0000000000000024(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -2
   %4 = icmp ult i32 %3, 3

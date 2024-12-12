@@ -47,10 +47,10 @@ func0000000000000001:                   # @func0000000000000001
 	cltd
 	idivl	%ecx
 	vpinsrd	$3, %eax, %xmm2, %xmm1
-	vpcmpeqd	%xmm0, %xmm1, %xmm0
+	vpcmpeqd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-func0000000000000066:                   # @func0000000000000066
+func00000000000000c6:                   # @func00000000000000c6
 	vpmovqd	%ymm2, %xmm3
 	vpextrd	$1, %xmm1, %ecx
 	vpextrd	$1, %xmm3, %eax
@@ -76,7 +76,7 @@ func0000000000000066:                   # @func0000000000000066
 	vpcmpgtd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	vpmovqd	%ymm2, %xmm3
 	vpextrd	$1, %xmm1, %ecx
 	vpextrd	$1, %xmm3, %eax
@@ -99,6 +99,6 @@ func0000000000000061:                   # @func0000000000000061
 	cltd
 	idivl	%ecx
 	vpinsrd	$3, %eax, %xmm2, %xmm1
-	vpcmpeqd	%xmm0, %xmm1, %xmm0
+	vpcmpeqd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq

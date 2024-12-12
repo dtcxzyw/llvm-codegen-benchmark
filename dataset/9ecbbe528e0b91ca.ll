@@ -27,7 +27,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-curve448.ll
 ; php/optimized/dns.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 1
   %4 = select i1 %3, i1 %1, i1 false
@@ -35,13 +35,12 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; graphviz/optimized/strmatch.c.ll
 ; llvm/optimized/ExprConstant.cpp.ll
-; quickjs/optimized/libregexp.ll
 ; regex-rs/optimized/1rguw48xrsv49k4z.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -58
   %4 = icmp ult i32 %3, -10

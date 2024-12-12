@@ -5,7 +5,7 @@
 ; pybind11/optimized/test_local_bindings.cpp.ll
 ; pybind11/optimized/test_stl_binders.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000018a(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000030a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %1, 0
   %4 = select i1 %3, i64 %2, i64 0

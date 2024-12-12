@@ -6,6 +6,14 @@ func0000000000000003:                   # @func0000000000000003
 	sete	%al
 	leal	3(%rsi,%rax,8), %eax
 	retq
+func0000000000000005:                   # @func0000000000000005
+	xorl	%eax, %eax
+	testl	%esi, %esi
+	setne	%al
+	shrl	$10, %edi
+	andl	$1, %edi
+	leal	2(%rdi,%rax,4), %eax
+	retq
 func0000000000000011:                   # @func0000000000000011
 	xorl	%eax, %eax
 	cmpl	$512, %esi                      # imm = 0x200
@@ -21,5 +29,23 @@ func0000000000000002:                   # @func0000000000000002
 	testl	%edi, %edi
 	setne	%al
 	leal	(%rax,%rax,2), %eax
+	orl	%esi, %eax
+	retq
+func0000000000000031:                   # @func0000000000000031
+	shrl	$16, %esi
+	andl	$32768, %esi                    # imm = 0x8000
+	xorl	%ecx, %ecx
+	cmpl	$144, %edi
+	movl	$32767, %eax                    # imm = 0x7FFF
+	cmovbl	%ecx, %eax
+	orl	%esi, %eax
+	retq
+func0000000000000014:                   # @func0000000000000014
+	shrl	%esi
+	andl	$127, %esi
+	xorl	%eax, %eax
+	testl	%edi, %edi
+	setg	%al
+	shll	$3, %eax
 	orl	%esi, %eax
 	retq

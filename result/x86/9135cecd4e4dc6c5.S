@@ -1,7 +1,7 @@
-func0000000000000053:                   # @func0000000000000053
+func0000000000000093:                   # @func0000000000000093
 	sarq	$3, %rdx
 	leaq	(,%rdi,8), %rcx
-	cmpq	%rsi, %rdx
+	cmpq	%rdx, %rsi
 	movabsq	$9223372036854775800, %rax      # imm = 0x7FFFFFFFFFFFFFF8
-	cmovbeq	%rcx, %rax
+	cmovaeq	%rcx, %rax
 	retq

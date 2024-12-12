@@ -14,10 +14,11 @@ func0000000000000000:                   # @func0000000000000000
 	movq	%rdi, %rax
 	negq	%rax
 	cmovsq	%rdi, %rax
-	movabsq	$4835703278458516699, %rcx      # imm = 0x431BDE82D7B634DB
 	movq	%rax, %rdx
+	shrq	$7, %rdx
+	movabsq	$153339145055128003, %rcx       # imm = 0x220C523D72C49C3
 	mulxq	%rcx, %rcx, %rcx
-	shrq	$18, %rcx
-	imulq	$1000000, %rcx, %rcx            # imm = 0xF4240
+	shrq	$11, %rcx
+	imulq	$31536000, %rcx, %rcx           # imm = 0x1E13380
 	subq	%rcx, %rax
 	retq

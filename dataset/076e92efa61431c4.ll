@@ -24,7 +24,7 @@ entry:
   %3 = fneg double %1
   %4 = fcmp olt double %2, 0.000000e+00
   %5 = select i1 %4, double %3, double %1
-  %6 = fmul double %5, %0
+  %6 = fmul double %0, %5
   ret double %6
 }
 
@@ -100,7 +100,7 @@ entry:
   %3 = fneg double %1
   %4 = fcmp ogt double %2, 0.000000e+00
   %5 = select i1 %4, double %3, double %1
-  %6 = fmul double %5, %0
+  %6 = fmul double %0, %5
   ret double %6
 }
 
@@ -113,7 +113,7 @@ entry:
   %3 = fneg double %1
   %4 = fcmp ult double %2, 5.000000e-01
   %5 = select i1 %4, double %3, double %1
-  %6 = fmul double %5, %0
+  %6 = fmul double %0, %5
   ret double %6
 }
 

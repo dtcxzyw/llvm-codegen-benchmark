@@ -8,6 +8,10 @@ func0000000000000001:                   # @func0000000000000001
 	shll	$13, %edi
 	leal	9216(%rdi), %eax
 	retq
+func000000000000001f:                   # @func000000000000001f
+	shll	$4, %edi
+	leal	24(%rdi), %eax
+	retq
 func0000000000000019:                   # @func0000000000000019
 	leal	12(,%rdi,8), %eax
 	retq
@@ -24,9 +28,6 @@ func000000000000000b:                   # @func000000000000000b
 	retq
 func0000000000000003:                   # @func0000000000000003
 	leal	7(%rdi,%rdi), %eax
-	retq
-func000000000000001f:                   # @func000000000000001f
-	leal	5(%rdi,%rdi), %eax
 	retq
 func000000000000000f:                   # @func000000000000000f
 	leal	3(%rdi,%rdi), %eax

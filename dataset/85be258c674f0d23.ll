@@ -38,7 +38,7 @@ entry:
 ; openjdk/optimized/zUncommitter.ll
 ; openjdk/optimized/zUnmapper.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000036(i64 %0, i64 %1, i64 %2) #0 {
+define i8 @func0000000000000056(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = icmp sge i64 %3, %0
@@ -49,7 +49,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/shenandoahFreeSet.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
+define i8 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = icmp sgt i64 %3, %0
@@ -60,7 +60,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SampleProfileInference.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000032(i64 %0, i64 %1, i64 %2) #0 {
+define i8 @func0000000000000052(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = icmp uge i64 %3, %0

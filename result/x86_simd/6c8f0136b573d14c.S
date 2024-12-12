@@ -2,7 +2,7 @@
 	.long	1995                            # 0x7cb
 .LCPI0_1:
 	.long	2020                            # 0x7e4
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	vpsllw	$15, %xmm0, %xmm0
 	vpsllw	$15, %xmm2, %xmm2
 	vpxor	%xmm3, %xmm3, %xmm3

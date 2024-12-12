@@ -5,7 +5,7 @@ func000000000000000a:                   # @func000000000000000a
 	neg	a1, a1
 	and	a0, a0, a1
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	not	a1, a1
 	addw	a0, a0, a1
 	sgtz	a1, a0

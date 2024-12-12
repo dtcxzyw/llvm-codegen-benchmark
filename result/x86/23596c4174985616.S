@@ -33,6 +33,11 @@ func0000000000000076:                   # @func0000000000000076
 	leal	(%rdi,%rdi,4), %ecx
 	leal	-48(%rax,%rcx,2), %eax
 	retq
+func0000000000000058:                   # @func0000000000000058
+	movzbl	%sil, %eax
+	leal	(%rdi,%rdi,4), %ecx
+	leal	-48(%rax,%rcx,2), %eax
+	retq
 func0000000000000004:                   # @func0000000000000004
 	movzbl	%sil, %eax
 	leal	(%rdi,%rdi,4), %ecx

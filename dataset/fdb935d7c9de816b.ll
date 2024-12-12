@@ -1,9 +1,10 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; draco/optimized/sequential_integer_attribute_decoder.cc.ll
 ; draco/optimized/sequential_integer_attribute_encoder.cc.ll
 ; draco/optimized/sequential_normal_attribute_decoder.cc.ll
 ; draco/optimized/sequential_normal_attribute_encoder.cc.ll
+; git/optimized/progress.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; qemu/optimized/block_qcow2.c.ll
 ; ruby/optimized/time.ll

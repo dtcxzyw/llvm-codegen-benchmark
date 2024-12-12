@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 19 occurrences:
 ; clamav/optimized/clamd.c.ll
 ; gromacs/optimized/dbdsqr.cpp.ll
 ; gromacs/optimized/sbdsqr.cpp.ll
@@ -9,7 +9,6 @@
 ; llvm/optimized/RegBankSelect.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; openspiel/optimized/QuickTricks.cpp.ll
-; openssl/optimized/dsatest-bin-dsatest.ll
 ; php/optimized/zend_strtod.ll
 ; ruby/optimized/sprintf.ll
 ; rust-analyzer-rs/optimized/ii5fl5y94ca5wd9.ll
@@ -29,12 +28,11 @@ entry:
   ret i1 %5
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; graphviz/optimized/arrows.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; libwebp/optimized/image_dec.c.ll
-; linux/optimized/scsicam.ll
 ; llvm/optimized/ExprEngineCallAndReturn.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
@@ -47,7 +45,7 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; wireshark/optimized/packet-mpls.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp eq i32 %3, 0
@@ -86,7 +84,7 @@ entry:
 ; redis/optimized/listpack.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp ne i32 %3, 0
@@ -132,18 +130,36 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
-; git/optimized/read-cache.ll
+; 24 occurrences:
+; cmake/optimized/idna.c.ll
+; cmake/optimized/json_writer.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
+; hermes/optimized/BytecodeGenerator.cpp.ll
+; hermes/optimized/HBC.cpp.ll
+; hermes/optimized/JSLexer.cpp.ll
+; html5ever-rs/optimized/38n20yzo26sy51uu.ll
+; libuv/optimized/idna.c.ll
+; node/optimized/idna.ll
+; node/optimized/simdutf.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
+; openusd/optimized/pathExpression.cpp.ll
+; openusd/optimized/pathParser.cpp.ll
+; openusd/optimized/predicateExpression.cpp.ll
+; php/optimized/html.ll
+; simdjson/optimized/simdjson.cpp.ll
+; velox/optimized/Utf8Utils.cpp.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000038(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = icmp ugt i32 %3, 1
+  %4 = icmp samesign ugt i32 %3, 1
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -168,14 +184,24 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; imgui/optimized/imgui_demo.cpp.ll
+; 1 occurrences:
+; git/optimized/read-cache.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or disjoint i32 %1, %2
+  %4 = icmp ugt i32 %3, 11
+  %5 = select i1 %4, i1 %0, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; zstd/optimized/zstd_v01.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
-  %4 = icmp ult i32 %3, 2
+  %4 = icmp samesign ult i32 %3, 2
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -184,10 +210,10 @@ entry:
 ; libjpeg-turbo/optimized/rdtarga.c.ll
 ; linux/optimized/intel_workarounds.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000034(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = icmp ult i32 %3, 3122
+  %4 = icmp samesign ult i32 %3, 3122
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -195,7 +221,7 @@ entry:
 ; 1 occurrences:
 ; libjpeg-turbo/optimized/rdbmp.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp sgt i32 %3, 0

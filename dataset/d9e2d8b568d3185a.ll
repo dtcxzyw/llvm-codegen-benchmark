@@ -18,7 +18,7 @@ entry:
 define i1 @func0000000000000004(float %0, i1 %1, float %2) #0 {
 entry:
   %3 = select i1 %1, float 0x3F747AE140000000, float %2
-  %4 = fcmp olt float %3, %0
+  %4 = fcmp ogt float %0, %3
   ret i1 %4
 }
 

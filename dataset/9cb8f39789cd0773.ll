@@ -75,7 +75,7 @@
 ; oiio/optimized/zfile.cpp.ll
 ; ruby/optimized/date_parse.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i8 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = sub nsw i32 0, %3
@@ -88,7 +88,7 @@ entry:
 ; icu/optimized/decNumber.ll
 ; jq/optimized/decNumber.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000096(i8 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000126(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %1, %2
   %4 = sub nsw i32 0, %3
@@ -103,7 +103,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; git/optimized/date.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000051(i8 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000a1(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = sub nsw i32 0, %3
@@ -115,7 +115,7 @@ entry:
 ; 1 occurrences:
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000086(i8 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000106(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %1, %2
   %4 = sub i32 0, %3
@@ -140,7 +140,7 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i8 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000026(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = sub nsw i32 0, %3
@@ -152,7 +152,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000d1(i8 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000001a1(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = sub nsw i32 0, %3

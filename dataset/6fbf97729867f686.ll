@@ -19,9 +19,10 @@ entry:
   ret i64 %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; flac/optimized/stream_encoder.c.ll
 ; llvm/optimized/ASTWriter.cpp.ll
+; lvgl/optimized/lv_buttonmatrix.ll
 ; miniaudio/optimized/unity.c.ll
 ; msgpack/optimized/class_intrusive_map.cpp.ll
 ; msgpack/optimized/map_based_versionup.cpp.ll

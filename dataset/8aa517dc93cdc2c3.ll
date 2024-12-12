@@ -18,9 +18,9 @@ entry:
 ; meshlab/optimized/filter_createiso.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
 ; Function Attrs: nounwind
-define double @func0000000000000004(double %0, double %1, i32 %2) #0 {
+define double @func0000000000000014(double %0, double %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 8
+  %3 = icmp samesign ult i32 %2, 8
   %4 = select i1 %3, double %0, double %1
   %5 = fneg double %4
   ret double %5

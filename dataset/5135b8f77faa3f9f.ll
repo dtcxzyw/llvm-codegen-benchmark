@@ -12,8 +12,9 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; abc/optimized/luckyFast6.c.ll
+; boost/optimized/rational.ll
 ; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; openusd/optimized/OpenEXRImage.cpp.ll
 ; qemu/optimized/hw_block_pflash_cfi01.c.ll
@@ -26,8 +27,10 @@ entry:
   ret i32 %4
 }
 
-; 7 occurrences:
+; 9 occurrences:
 ; abc/optimized/luckyFast6.c.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/rational.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; linux/optimized/ata_piix.ll
 ; linux/optimized/drm_modes.ll

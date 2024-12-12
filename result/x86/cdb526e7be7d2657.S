@@ -4,53 +4,53 @@ func000000000000000a:                   # @func000000000000000a
 	testq	%rdi, %rdi
 	setg	%al
 	retq
-func00000000000001e8:                   # @func00000000000001e8
+func00000000000003c8:                   # @func00000000000003c8
 	addl	$4, %esi
 	subq	%rsi, %rdi
 	cmpq	$2, %rdi
 	setae	%al
 	retq
-func00000000000000d8:                   # @func00000000000000d8
+func00000000000001a8:                   # @func00000000000001a8
 	addl	$2, %esi
 	subq	%rsi, %rdi
 	shrq	$60, %rdi
 	setne	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	incl	%esi
 	subq	%rsi, %rdi
 	cmpq	$-3, %rdi
 	setae	%al
 	retq
-func00000000000001c1:                   # @func00000000000001c1
+func0000000000000381:                   # @func0000000000000381
 	addl	$4, %esi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	addl	$2, %esi
 	subq	%rsi, %rdi
 	cmpq	$2, %rdi
 	setb	%al
 	retq
-func00000000000001c6:                   # @func00000000000001c6
+func0000000000000386:                   # @func0000000000000386
 	incl	%esi
 	subq	%rsi, %rdi
 	testq	%rdi, %rdi
 	setle	%al
 	retq
-func00000000000000da:                   # @func00000000000000da
+func00000000000001aa:                   # @func00000000000001aa
 	decl	%esi
-	cmpq	%rdi, %rsi
-	setl	%al
+	cmpq	%rsi, %rdi
+	setg	%al
 	retq
-func00000000000001d1:                   # @func00000000000001d1
+func00000000000003a1:                   # @func00000000000003a1
 	incl	%esi
 	subq	%rsi, %rdi
 	cmpq	$20, %rdi
 	sete	%al
 	retq
-func00000000000001d8:                   # @func00000000000001d8
+func00000000000003a8:                   # @func00000000000003a8
 	incl	%esi
 	subq	%rsi, %rdi
 	cmpq	$2, %rdi

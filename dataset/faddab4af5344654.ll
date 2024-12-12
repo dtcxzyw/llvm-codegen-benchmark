@@ -1,5 +1,5 @@
 
-; 56 occurrences:
+; 58 occurrences:
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/giaCof.c.ll
 ; abc/optimized/giaDeep.c.ll
@@ -21,6 +21,8 @@
 ; llvm/optimized/RegionPrinter.cpp.ll
 ; luajit/optimized/lj_opt_fold.ll
 ; luajit/optimized/lj_opt_fold_dyn.ll
+; lvgl/optimized/lv_calendar.ll
+; meshlab/optimized/meshfilter.cpp.ll
 ; minetest/optimized/inputhandler.cpp.ll
 ; minetest/optimized/sound.cpp.ll
 ; opencv/optimized/Drawing_2.cpp.ll
@@ -64,7 +66,7 @@ entry:
   ret i32 %2
 }
 
-; 29 occurrences:
+; 30 occurrences:
 ; gromacs/optimized/xtc2.c.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/BlockInCriticalSectionChecker.cpp.ll
@@ -80,6 +82,7 @@ entry:
 ; llvm/optimized/NullabilityChecker.cpp.ll
 ; llvm/optimized/StdLibraryFunctionsChecker.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_i18n.ll
 ; minetest/optimized/inputhandler.cpp.ll
 ; minetest/optimized/test_random.cpp.ll
 ; opencv/optimized/Drawing_2.cpp.ll

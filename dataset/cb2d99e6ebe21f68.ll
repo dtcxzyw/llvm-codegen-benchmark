@@ -2,11 +2,11 @@
 ; 1 occurrences:
 ; ruby/optimized/date_strftime.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000aa(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = xor i64 %3, -1
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = zext nneg i32 %0 to i64
   %7 = icmp sgt i64 %5, %6
   ret i1 %7
@@ -16,7 +16,7 @@ entry:
 ; jq/optimized/regexec.ll
 ; oniguruma/optimized/regexec.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000026(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
@@ -32,7 +32,7 @@ entry:
 ; libuv/optimized/inet.c.ll
 ; node/optimized/inet.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000088(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3

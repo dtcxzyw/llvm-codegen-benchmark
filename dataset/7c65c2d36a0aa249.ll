@@ -1,23 +1,4 @@
 
-; 8 occurrences:
-; icu/optimized/parse.ll
-; linux/optimized/fair.ll
-; llvm/optimized/Host.cpp.ll
-; openusd/optimized/changes.cpp.ll
-; php/optimized/zend_inference.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
-; redis/optimized/module.ll
-; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000000(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = or i32 %1, %2
-  %4 = or i32 %3, 262144
-  %5 = select i1 %0, i32 %3, i32 %4
-  %6 = or i32 %5, 524288
-  ret i32 %6
-}
-
 ; 5 occurrences:
 ; linux/optimized/fault.ll
 ; linux/optimized/hwgpe.ll
@@ -47,6 +28,24 @@ entry:
   %4 = or disjoint i32 %3, 8192
   %5 = select i1 %0, i32 %3, i32 %4
   %6 = or i32 %5, 49152
+  ret i32 %6
+}
+
+; 7 occurrences:
+; icu/optimized/parse.ll
+; linux/optimized/fair.ll
+; llvm/optimized/Host.cpp.ll
+; openusd/optimized/changes.cpp.ll
+; php/optimized/zend_inference.ll
+; redis/optimized/module.ll
+; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or i32 %1, %2
+  %4 = or i32 %3, 553646080
+  %5 = select i1 %0, i32 %3, i32 %4
+  %6 = or i32 %5, 256
   ret i32 %6
 }
 

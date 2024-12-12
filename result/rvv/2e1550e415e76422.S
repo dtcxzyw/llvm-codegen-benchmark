@@ -17,5 +17,5 @@ func000000000000000c:                   # @func000000000000000c
 	vmerge.vvm	v16, v24, v16, v0
 	fli.d	fa5, 1.0
 	vfrdiv.vf	v16, v16, fa5
-	vfmul.vv	v8, v16, v8
+	vfmul.vv	v8, v8, v16
 	ret

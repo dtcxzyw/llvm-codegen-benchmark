@@ -12,7 +12,7 @@ entry:
   ret i64 %2
 }
 
-; 459 occurrences:
+; 465 occurrences:
 ; abc/optimized/utilSort.c.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
@@ -25,6 +25,14 @@ entry:
 ; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/sweep_context.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/default_sink.ll
+; boost/optimized/formatter_parser.ll
+; boost/optimized/init_from_settings.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/dae_builder_internal.cpp.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/einstein.cpp.ll
@@ -363,7 +371,6 @@ entry:
 ; postgres/optimized/tsgistidx.ll
 ; postgres/optimized/tsrank.ll
 ; postgres/optimized/tsvector_op.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; protobuf/optimized/csharp_message.cc.ll
 ; protobuf/optimized/helpers.cc.ll
 ; protobuf/optimized/message_differencer.cc.ll
@@ -374,7 +381,6 @@ entry:
 ; quantlib/optimized/discretizedswap.ll
 ; quantlib/optimized/fdmblackscholesmesher.ll
 ; quantlib/optimized/fireflyalgorithm.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/generalstatistics.ll
 ; quantlib/optimized/hestonslvmcmodel.ll
 ; quantlib/optimized/markovfunctional.ll

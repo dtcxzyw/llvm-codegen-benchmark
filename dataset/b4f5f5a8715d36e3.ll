@@ -1,5 +1,5 @@
 
-; 39 occurrences:
+; 41 occurrences:
 ; abc/optimized/bmcFx.c.ll
 ; abc/optimized/dauNpn2.c.ll
 ; abc/optimized/dauTree.c.ll
@@ -14,6 +14,7 @@
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/SemaLookup.cpp.ll
+; lvgl/optimized/lv_color.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; ncnn/optimized/mat_pixel.cpp.ll
 ; nori/optimized/nanovg.c.ll
@@ -32,6 +33,7 @@
 ; rocksdb/optimized/string_util.cc.ll
 ; ruby/optimized/date_core.ll
 ; ruby/optimized/time.ll
+; stb/optimized/stb_connected_components.c.ll
 ; stb/optimized/stb_image.c.ll
 ; tev/optimized/QoiImageLoader.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
@@ -45,35 +47,6 @@ entry:
   %2 = mul nuw nsw i32 %1, 3600
   %3 = mul nuw nsw i32 %0, 60
   %4 = add nuw nsw i32 %3, %2
-  ret i32 %4
-}
-
-; 19 occurrences:
-; libquic/optimized/time_support.c.ll
-; minetest/optimized/mapgen_v6.cpp.ll
-; opencv/optimized/brisk.cpp.ll
-; openjdk/optimized/g1ConcurrentMark.ll
-; openjdk/optimized/g1FullGCMarker.ll
-; openjdk/optimized/g1ParScanThreadState.ll
-; openjdk/optimized/jidctint.ll
-; openjdk/optimized/jidctred.ll
-; openjdk/optimized/psParallelCompact.ll
-; openjdk/optimized/psScavenge.ll
-; openjdk/optimized/shenandoahHeap.ll
-; openjdk/optimized/shenandoahMark.ll
-; openjdk/optimized/xHeapIterator.ll
-; openjdk/optimized/zHeapIterator.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; php/optimized/engine_combinedlcg.ll
-; quantlib/optimized/thirty360.ll
-; stb/optimized/stb_image.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
-entry:
-  %2 = mul nsw i32 %1, 3600
-  %3 = mul nsw i32 %0, 60
-  %4 = add i32 %3, %2
   ret i32 %4
 }
 
@@ -143,7 +116,8 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; lvgl/optimized/lv_math.ll
 ; minetest/optimized/mapgen.cpp.ll
 ; minetest/optimized/noise.cpp.ll
 ; opencv/optimized/brisk.cpp.ll
@@ -156,7 +130,33 @@ entry:
   ret i32 %4
 }
 
-; 28 occurrences:
+; 16 occurrences:
+; libquic/optimized/time_support.c.ll
+; minetest/optimized/mapgen_v6.cpp.ll
+; opencv/optimized/brisk.cpp.ll
+; openjdk/optimized/g1ConcurrentMark.ll
+; openjdk/optimized/g1FullGCMarker.ll
+; openjdk/optimized/g1ParScanThreadState.ll
+; openjdk/optimized/jidctint.ll
+; openjdk/optimized/jidctred.ll
+; openjdk/optimized/psParallelCompact.ll
+; openjdk/optimized/psScavenge.ll
+; openjdk/optimized/shenandoahHeap.ll
+; openjdk/optimized/shenandoahMark.ll
+; openjdk/optimized/xHeapIterator.ll
+; openjdk/optimized/zHeapIterator.ll
+; quantlib/optimized/thirty360.ll
+; stb/optimized/stb_image.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
+entry:
+  %2 = mul nsw i32 %1, 38134234
+  %3 = mul nsw i32 %0, 42123
+  %4 = add i32 %3, %2
+  ret i32 %4
+}
+
+; 27 occurrences:
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/extraUtilMult.c.ll
 ; abc/optimized/extraUtilPerm.c.ll
@@ -165,7 +165,6 @@ entry:
 ; assimp/optimized/XFileParser.cpp.ll
 ; cpython/optimized/_datetimemodule.ll
 ; gromacs/optimized/nb_free_energy.cpp.ll
-; icu/optimized/gregoimp.ll
 ; icu/optimized/tzfmt.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; libjpeg-turbo/optimized/jdcoefct.c.ll

@@ -1,5 +1,5 @@
 
-; 159 occurrences:
+; 157 occurrences:
 ; abc/optimized/extraUtilEnum.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; assimp/optimized/3DSLoader.cpp.ll
@@ -87,7 +87,6 @@
 ; llvm/optimized/PartiallyInlineLibCalls.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/RISCVAsmPrinter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVRegisterInfo.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/SimplifyLibCalls.cpp.ll
@@ -145,7 +144,6 @@
 ; qemu/optimized/hw_vfio_pci.c.ll
 ; qemu/optimized/migration_savevm.c.ll
 ; qemu/optimized/plugins_core.c.ll
-; qemu/optimized/ui_kbd-state.c.ll
 ; redis/optimized/arena.ll
 ; redis/optimized/arena.sym.ll
 ; ruby/optimized/compile.ll
@@ -184,12 +182,13 @@ entry:
 
 ; 51 occurrences:
 ; arrow/optimized/reader.cc.ll
+; boost/optimized/pin_thread.ll
+; boost/optimized/xml_grammar.ll
 ; draco/optimized/sequential_attribute_encoders_controller.cc.ll
 ; eastl/optimized/eathread.cpp.ll
 ; eastl/optimized/eathread_thread.cpp.ll
 ; gromacs/optimized/coupling.cpp.ll
 ; gromacs/optimized/hardwaretopology.cpp.ll
-; gromacs/optimized/pthreads.cpp.ll
 ; hermes/optimized/HadesGC.cpp.ll
 ; hyperscan/optimized/goughcompile.cpp.ll
 ; libzmq/optimized/thread.cpp.ll
@@ -197,7 +196,6 @@ entry:
 ; lightgbm/optimized/dataset_loader.cpp.ll
 ; llvm/optimized/BuildLibCalls.cpp.ll
 ; llvm/optimized/ConstantFolding.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
 ; llvm/optimized/Threading.cpp.ll
 ; luajit/optimized/lj_snap.ll

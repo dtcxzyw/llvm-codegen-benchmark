@@ -3,7 +3,7 @@
 ; linux/optimized/indirect.ll
 ; mitsuba3/optimized/rastack.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000104(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %0, %1
   %.highbits = lshr i32 %3, %2
@@ -16,7 +16,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-bn_intern.ll
 ; openssl/optimized/libcrypto-shlib-bn_intern.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001a1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 2, %2
   %4 = sub nsw i32 %0, %1
@@ -29,7 +29,7 @@ entry:
 ; assimp/optimized/o3dgcDynamicVectorEncoder.cpp.ll
 ; assimp/optimized/o3dgcTriangleFans.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000144(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 2, %2
   %4 = sub nuw i32 %0, %1
@@ -44,7 +44,7 @@ entry:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; redis/optimized/ltable.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000096(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000126(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
   %4 = sub nsw i32 %0, %1
@@ -56,7 +56,7 @@ entry:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; yosys/optimized/memory_libmap.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000009a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000012a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
   %4 = sub nsw i32 %0, %1
@@ -74,7 +74,7 @@ entry:
 ; zstd/optimized/zstd_lazy.c.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000108(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
   %4 = sub i32 %0, %1
@@ -85,7 +85,7 @@ entry:
 ; 1 occurrences:
 ; lua/optimized/ltable.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a6(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000146(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
   %4 = sub nuw i32 %0, %1
@@ -96,18 +96,7 @@ entry:
 ; 1 occurrences:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sub nsw i32 %0, %1
-  %.highbits = lshr i32 %3, %2
-  %4 = icmp eq i32 %.highbits, 0
-  ret i1 %4
-}
-
-; 1 occurrences:
-; meshlab/optimized/filter_screened_poisson.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000009b(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000012b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
   %4 = sub nsw i32 %0, %1
@@ -118,7 +107,7 @@ entry:
 ; 1 occurrences:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000097(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000127(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
   %4 = sub nsw i32 %0, %1

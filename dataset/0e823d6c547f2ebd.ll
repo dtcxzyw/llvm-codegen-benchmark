@@ -8,12 +8,12 @@
 ; rust-analyzer-rs/optimized/4n4kpy0miblxvsjy.ll
 ; wasmtime-rs/optimized/3swlmlzz83rbbf1u.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, 31
   %4 = shl nuw nsw i32 1, %3
-  %5 = icmp eq i32 %4, %0
+  %5 = icmp eq i32 %0, %4
   ret i1 %5
 }
 

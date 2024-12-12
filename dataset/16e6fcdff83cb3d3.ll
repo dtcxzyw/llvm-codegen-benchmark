@@ -1,8 +1,7 @@
 
-; 219 occurrences:
-; abc/optimized/solver.c.ll
-; abc/optimized/xsatSolver.c.ll
+; 227 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/topology.ll
 ; c3c/optimized/semantic_analyser.c.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cpython/optimized/dtoa.ll
@@ -39,7 +38,6 @@
 ; libpng/optimized/png.c.ll
 ; libpng/optimized/pngread.c.ll
 ; libquic/optimized/dtoa.cc.ll
-; linux/optimized/8139too.ll
 ; linux/optimized/addrconf.ll
 ; linux/optimized/bio.ll
 ; linux/optimized/e1000_main.ll
@@ -49,7 +47,6 @@
 ; linux/optimized/fsopen.ll
 ; linux/optimized/iface.ll
 ; linux/optimized/inet_hashtables.ll
-; linux/optimized/inotify_fsnotify.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_fb_pin.ll
@@ -87,6 +84,7 @@
 ; luajit/optimized/lj_strfmt.ll
 ; luajit/optimized/lj_strfmt_dyn.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/x86emithelper.cpp.ll
@@ -147,7 +145,6 @@
 ; nix/optimized/lockfile.ll
 ; nix/optimized/mercurial.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -164,7 +161,6 @@
 ; oniguruma/optimized/regcomp.ll
 ; opencv/optimized/canny.cpp.ll
 ; opencv/optimized/grfmt_pxm.cpp.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; openjdk/optimized/c1_LIRGenerator.ll
 ; openjdk/optimized/hb-buffer-verify.ll
 ; openjdk/optimized/hb-ot-shape.ll
@@ -190,10 +186,8 @@
 ; qemu/optimized/block.c.ll
 ; qemu/optimized/block_io.c.ll
 ; qemu/optimized/hw_audio_es1370.c.ll
-; qemu/optimized/hw_sd_cadence_sdhci.c.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll
-; qemu/optimized/hw_usb_hcd-xhci.c.ll
 ; qemu/optimized/tcg-op-ldst.c.ll
 ; qemu/optimized/util_log.c.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
@@ -212,13 +206,27 @@
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; wireshark/optimized/packet-f5ethtrailer.c.ll
 ; wireshark/optimized/packet-ositp.c.ll
-; wireshark/optimized/packet-usb-i1d3.c.ll
 ; wolfssl/optimized/pwdbased.c.ll
 ; xgboost/optimized/context.cc.ll
 ; xgboost/optimized/input_split_base.cc.ll
 ; yosys/optimized/exec.ll
 ; yosys/optimized/log.ll
 ; yosys/optimized/qbfsat.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/14nzgp7qqjehsllc2nbkdaoyu.ll
+; zed-rs/optimized/1qoospyzgc86mrbrflush3m5b.ll
+; zed-rs/optimized/3quypyfrg8uizn5sealer8xsk.ll
+; zed-rs/optimized/3wc7tnd4g7jfnn81av5tll8e5.ll
+; zed-rs/optimized/44bj4n5407vag46bun63mwelh.ll
+; zed-rs/optimized/62p0ysciwr0duwav9qlwb71rc.ll
+; zed-rs/optimized/83f7cv59nhkcel85ism08ubeo.ll
+; zed-rs/optimized/8fnqr4x4dcnr22hiqkfhgttys.ll
+; zed-rs/optimized/8tscdb01zcabwdnjfgov818gm.ll
+; zed-rs/optimized/9tx3ef1bysuj1ynm6i6wgnanl.ll
+; zed-rs/optimized/c7xkpt7ryrhwv9v8woklewxya.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
+; zed-rs/optimized/f0amc3mihxn9sd1mhsostg4ox.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1) #0 {
 entry:

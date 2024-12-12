@@ -12,7 +12,7 @@ func0000000000000000:                   # @func0000000000000000
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func00000000000000ba:                   # @func00000000000000ba
+func00000000000000ff:                   # @func00000000000000ff
 	slli	a0, a0, 3
 	slli	a1, a1, 3
 	add	a2, a2, a0
@@ -20,12 +20,6 @@ func00000000000000ba:                   # @func00000000000000ba
 	add	a0, a0, a2
 	ret
 func0000000000000030:                   # @func0000000000000030
-	add	a2, a2, a0
-	add	a0, a0, a2
-	slli	a1, a1, 3
-	add	a0, a0, a1
-	ret
-func0000000000000032:                   # @func0000000000000032
 	add	a2, a2, a0
 	add	a0, a0, a2
 	slli	a1, a1, 3

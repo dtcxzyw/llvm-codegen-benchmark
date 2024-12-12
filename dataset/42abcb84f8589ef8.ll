@@ -4,7 +4,7 @@
 ; llvm/optimized/SROA.cpp.ll
 ; stockfish/optimized/search.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000015a(i64 %0, i64 %1) #0 {
+define i1 @func00000000000002aa(i64 %0, i64 %1) #0 {
 entry:
   %.neg = mul i64 %1, -56
   %2 = mul nsw i64 %0, 56

@@ -10,12 +10,11 @@ func000000000000000c:                   # @func000000000000000c
 	ret
 func000000000000000f:                   # @func000000000000000f
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vi	v8, v8, 13
+	vsrl.vi	v8, v8, 16
 	li	a0, -1
-	vadd.vi	v8, v8, -1
+	vadd.vi	v8, v8, 1
 	srli	a0, a0, 32
 	vand.vx	v8, v8, a0
-	lui	a0, 2
-	addiw	a0, a0, -24
+	li	a0, 100
 	vmul.vx	v8, v8, a0
 	ret

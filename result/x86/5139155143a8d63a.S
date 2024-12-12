@@ -1,4 +1,4 @@
-func000000000000016b:                   # @func000000000000016b
+func00000000000004cb:                   # @func00000000000004cb
 	imull	%edi, %edx
 	testl	%edx, %edx
 	sets	%cl
@@ -6,7 +6,7 @@ func000000000000016b:                   # @func000000000000016b
 	setge	%al
 	orb	%cl, %al
 	retq
-func000000000000018a:                   # @func000000000000018a
+func000000000000050a:                   # @func000000000000050a
 	imull	%edi, %edx
 	cmpl	$536870912, %edx                # imm = 0x20000000
 	setae	%cl
@@ -14,7 +14,7 @@ func000000000000018a:                   # @func000000000000018a
 	setg	%al
 	orb	%cl, %al
 	retq
-func0000000000000388:                   # @func0000000000000388
+func0000000000000f18:                   # @func0000000000000f18
 	imull	%edi, %edx
 	cmpl	$536870912, %edx                # imm = 0x20000000
 	setae	%cl

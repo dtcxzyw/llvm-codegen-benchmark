@@ -1,8 +1,13 @@
 
-; 6 occurrences:
+; 11 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
 ; clamav/optimized/XzDec.c.ll
 ; flac/optimized/encode.c.ll
 ; php/optimized/streams.ll
+; wireshark/optimized/scanner.c.ll
 ; yalantinglibs/optimized/channel.cpp.ll
 ; yalantinglibs/optimized/chat_room.cpp.ll
 ; yalantinglibs/optimized/example.cpp.ll

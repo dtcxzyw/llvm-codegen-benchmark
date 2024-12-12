@@ -1,10 +1,13 @@
+func0000000000000001:                   // @func0000000000000001
+// %bb.0:                               // %entry
+	mov	w8, #199                        // =0xc7
+	orr	x8, x0, x8
+	bic	x0, x8, x1
+	ret
+                                        // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	mov	w8, #2                          // =0x2
-	dup	v4.2d, x8
-	orr	v1.16b, v1.16b, v4.16b
-	orr	v0.16b, v0.16b, v4.16b
-	bic	v0.16b, v0.16b, v2.16b
-	bic	v1.16b, v1.16b, v3.16b
+	orr	x8, x0, #0x2
+	bic	x0, x8, x1
 	ret
                                         // -- End function

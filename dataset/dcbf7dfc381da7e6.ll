@@ -1,5 +1,5 @@
 
-; 72 occurrences:
+; 75 occurrences:
 ; clamav/optimized/hfsplus.c.ll
 ; duckdb/optimized/ub_duckdb_func_string_main.cpp.ll
 ; folly/optimized/TimeUtil.cpp.ll
@@ -72,6 +72,9 @@
 ; wasmedge/optimized/validator.cpp.ll
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/bijypxqg3gfu3lugp8zf7c61q.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -121,12 +124,12 @@ entry:
 }
 
 ; 6 occurrences:
-; abc/optimized/giaTtopt.cpp.ll
 ; linux/optimized/snapshot.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; openvdb/optimized/AttributeArrayString.cc.ll
 ; wolfssl/optimized/sp_int.c.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -151,7 +154,7 @@ entry:
   ret i64 %4
 }
 
-; 7 occurrences:
+; 11 occurrences:
 ; rayon-rs/optimized/9qhkgr4qio1yp41.ll
 ; rust-analyzer-rs/optimized/2ajuxklycdgazr2a.ll
 ; tokenizers-rs/optimized/40hmx6rev8evi2bx.ll
@@ -159,6 +162,10 @@ entry:
 ; wasmtime-rs/optimized/3ongwcslbj2wmgl9.ll
 ; wasmtime-rs/optimized/4y19gy3l28n56lab.ll
 ; wasmtime-rs/optimized/526qiozl2mm0d4p0.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/d7h2r6mystjn2jzwcl5ofeoiz.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -178,9 +185,8 @@ entry:
   ret i64 %3
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; cmake/optimized/zstd_ldm.c.ll
-; opencv/optimized/grfmt_tiff.cpp.ll
 ; zstd/optimized/zstd_ldm.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i32 %1, i32 %2) #0 {

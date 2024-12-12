@@ -1,11 +1,11 @@
-func0000000000000102:                   # @func0000000000000102
+func0000000000000202:                   # @func0000000000000202
 	sext.w	a1, a1
 	addiw	a2, a2, 4
 	sltu	a1, a1, a2
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000722:                   # @func0000000000000722
+func0000000000001e42:                   # @func0000000000001e42
 	sext.w	a1, a1
 	addiw	a2, a2, 1
 	sltu	a1, a2, a1
@@ -13,7 +13,7 @@ func0000000000000722:                   # @func0000000000000722
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func00000000000000a2:                   # @func00000000000000a2
+func0000000000000142:                   # @func0000000000000142
 	sext.w	a1, a1
 	addiw	a2, a2, 1
 	sltu	a1, a1, a2

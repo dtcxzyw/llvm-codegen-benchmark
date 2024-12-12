@@ -75,15 +75,17 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
+; 6 occurrences:
 ; libwebp/optimized/syntax_enc.c.ll
 ; linux/optimized/binfmt_elf.ll
 ; linux/optimized/compat_binfmt_elf.ll
 ; linux/optimized/mmconfig-shared.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
-  %2 = add i32 %1, 1048576
+  %2 = add i32 %1, 1
   %3 = sext i32 %2 to i64
   %4 = add i64 %0, -1
   %5 = add i64 %4, %3

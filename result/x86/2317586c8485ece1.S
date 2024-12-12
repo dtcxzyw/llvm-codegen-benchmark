@@ -1,21 +1,21 @@
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	shrq	$3, %rdi
 	imull	$-1227133513, %edi, %eax        # imm = 0xB6DB6DB7
 	testl	%eax, %eax
 	setg	%al
 	retq
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	shrq	$3, %rdi
 	imull	$-1227133513, %edi, %eax        # imm = 0xB6DB6DB7
 	shrl	$31, %eax
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	shrq	$3, %rdi
 	imull	$-858993459, %edi, %eax         # imm = 0xCCCCCCCD
 	cmpl	$-1, %eax
 	sete	%al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	shrq	$3, %rdi
 	imull	$-858993459, %edi, %eax         # imm = 0xCCCCCCCD
 	cmpl	$5, %eax
@@ -29,7 +29,7 @@ func0000000000000006:                   # @func0000000000000006
 	testl	%eax, %eax
 	setle	%al
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	shrq	$2, %rdi
 	imull	$-858993459, %edi, %eax         # imm = 0xCCCCCCCD
 	testl	$-2, %eax
@@ -46,7 +46,7 @@ func000000000000000a:                   # @func000000000000000a
 	testl	%edx, %edx
 	setg	%al
 	retq
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	shrq	$4, %rdi
 	imull	$-1431655765, %edi, %eax        # imm = 0xAAAAAAAB
 	testl	%eax, %eax

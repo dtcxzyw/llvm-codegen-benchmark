@@ -28,7 +28,16 @@ func0000000000000011:                   # @func0000000000000011
 	srli	a0, a0, 32
 	vand.vx	v8, v10, a0, v0.t
 	ret
-func0000000000000048:                   # @func0000000000000048
+func0000000000000030:                   # @func0000000000000030
+	lui	a0, 1
+	li	a1, -1
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmsgtu.vx	v0, v8, a0
+	srli	a1, a1, 32
+	vand.vx	v8, v10, a1
+	vmerge.vxm	v8, v8, a0, v0
+	ret
+func00000000000000a8:                   # @func00000000000000a8
 	lui	a0, 209715
 	addiw	a0, a0, 820
 	vsetivli	zero, 4, e64, m2, ta, ma

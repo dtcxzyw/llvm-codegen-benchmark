@@ -28,6 +28,11 @@ func0000000000000014:                   # @func0000000000000014
 	vmovdqa32	%xmm0, %xmm0 {%k1} {z}
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
+func0000000000000015:                   # @func0000000000000015
+	vpcmpgtd	%xmm2, %xmm1, %k1
+	vmovdqa32	%xmm0, %xmm0 {%k1} {z}
+	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	retq
 func0000000000000010:                   # @func0000000000000010
 	vpcmpnleud	%xmm2, %xmm1, %k1
 	vmovdqa32	%xmm0, %xmm0 {%k1} {z}

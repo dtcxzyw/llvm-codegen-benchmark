@@ -19,27 +19,22 @@ func0000000000000000:                   # @func0000000000000000
 .LBB2_2:                                # %entry
 	addw	a0, a0, a1
 	ret
+func000000000000000f:                   # @func000000000000000f
+	andi	a2, a2, 1
+	addi	a2, a2, -1
+	andi	a2, a2, 255
+	mul	a1, a2, a1
+	addw	a0, a0, a1
+	ret
 func000000000000000c:                   # @func000000000000000c
 	andi	a2, a2, 1
-	bnez	a2, .LBB3_2
+	bnez	a2, .LBB4_2
 	li	a2, 12
 	mul	a1, a2, a1
 	addw	a0, a0, a1
 	ret
-.LBB3_2:
-	li	a2, 16
-	mul	a1, a2, a1
-	addw	a0, a0, a1
-	ret
-func000000000000000f:                   # @func000000000000000f
-	andi	a2, a2, 1
-	bnez	a2, .LBB4_2
-	li	a2, 100
-	mul	a1, a2, a1
-	addw	a0, a0, a1
-	ret
 .LBB4_2:
-	li	a2, 1000
+	li	a2, 16
 	mul	a1, a2, a1
 	addw	a0, a0, a1
 	ret

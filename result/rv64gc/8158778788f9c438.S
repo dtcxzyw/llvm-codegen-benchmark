@@ -13,7 +13,7 @@ func000000000000002a:                   # @func000000000000002a
 	ret
 func0000000000000020:                   # @func0000000000000020
 	sub	a1, a1, a2
-	mul	a0, a1, a0
+	mul	a0, a0, a1
 	addi	a0, a0, 2
 	srli	a0, a0, 1
 	ret

@@ -1,10 +1,10 @@
-func000000000000004a:                   # @func000000000000004a
+func000000000000006b:                   # @func000000000000006b
 	movzwl	%dx, %ecx
 	leaq	(%rdi,%rsi), %rax
 	subq	%rcx, %rax
 	addq	$8, %rax
 	retq
-func000000000000006a:                   # @func000000000000006a
+func000000000000007b:                   # @func000000000000007b
 	movzwl	%dx, %ecx
 	leaq	(%rdi,%rsi), %rax
 	subq	%rcx, %rax

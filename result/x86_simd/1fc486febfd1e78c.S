@@ -14,7 +14,7 @@ func0000000000000010:                   # @func0000000000000010
 	vpmovqd	%ymm2, %xmm0
 	vpmovqd	%ymm1, %xmm1
 	vpcmpnleud	%xmm0, %xmm1, %k1
-	korw	%k0, %k1, %k0
+	korw	%k1, %k0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
@@ -24,7 +24,7 @@ func0000000000000002:                   # @func0000000000000002
 	vpmovqd	%ymm2, %xmm0
 	vpmovqd	%ymm1, %xmm1
 	vpcmpeqd	%xmm0, %xmm1, %k1
-	korw	%k0, %k1, %k0
+	korw	%k1, %k0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
@@ -34,7 +34,7 @@ func0000000000000012:                   # @func0000000000000012
 	vpmovqd	%ymm2, %xmm0
 	vpmovqd	%ymm1, %xmm1
 	vpcmpnltud	%xmm0, %xmm1, %k1
-	korw	%k0, %k1, %k0
+	korw	%k1, %k0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
@@ -44,11 +44,11 @@ func000000000000000a:                   # @func000000000000000a
 	vpmovqd	%ymm2, %xmm0
 	vpmovqd	%ymm1, %xmm1
 	vpcmpleud	%xmm0, %xmm1, %k1
-	korw	%k0, %k1, %k0
+	korw	%k1, %k0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000108:                   # @func0000000000000108
+func0000000000000208:                   # @func0000000000000208
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vpmovqd	%ymm2, %xmm0
@@ -58,13 +58,13 @@ func0000000000000108:                   # @func0000000000000108
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vpmovqd	%ymm2, %xmm0
 	vpmovqd	%ymm1, %xmm1
 	vpcmpeqd	%xmm0, %xmm1, %k1
-	korw	%k0, %k1, %k0
+	korw	%k1, %k0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
@@ -94,21 +94,21 @@ func000000000000000c:                   # @func000000000000000c
 	vpmovqd	%ymm2, %xmm0
 	vpmovqd	%ymm1, %xmm1
 	vpcmpgtd	%xmm1, %xmm0, %k1
-	korw	%k0, %k1, %k0
+	korw	%k1, %k0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000042:                   # @func0000000000000042
+func0000000000000082:                   # @func0000000000000082
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vpmovqd	%ymm2, %xmm0
 	vpmovqd	%ymm1, %xmm1
 	vpcmpeqd	%xmm0, %xmm1, %k1
-	korw	%k0, %k1, %k0
+	korw	%k1, %k0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000058:                   # @func0000000000000058
+func0000000000000098:                   # @func0000000000000098
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vpmovqd	%ymm2, %xmm0
@@ -124,21 +124,21 @@ func0000000000000008:                   # @func0000000000000008
 	vpmovqd	%ymm2, %xmm0
 	vpmovqd	%ymm1, %xmm1
 	vpcmpltud	%xmm0, %xmm1, %k1
-	korw	%k0, %k1, %k0
+	korw	%k1, %k0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000110:                   # @func0000000000000110
+func0000000000000210:                   # @func0000000000000210
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vpmovqd	%ymm2, %xmm0
 	vpmovqd	%ymm1, %xmm1
 	vpcmpnleud	%xmm0, %xmm1, %k1
-	korw	%k0, %k1, %k0
+	korw	%k1, %k0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000102:                   # @func0000000000000102
+func0000000000000202:                   # @func0000000000000202
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vpmovqd	%ymm2, %xmm0
@@ -148,17 +148,17 @@ func0000000000000102:                   # @func0000000000000102
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vpmovqd	%ymm2, %xmm0
 	vpmovqd	%ymm1, %xmm1
 	vpcmpltud	%xmm0, %xmm1, %k1
-	korw	%k0, %k1, %k0
+	korw	%k1, %k0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vpmovqd	%ymm2, %xmm0

@@ -1,7 +1,6 @@
 
-; 30 occurrences:
+; 29 occurrences:
 ; abc/optimized/giaEmbed.c.ll
-; darktable/optimized/introspection_tonemap.cc.ll
 ; gromacs/optimized/expanded.cpp.ll
 ; gromacs/optimized/forcetable.cpp.ll
 ; gromacs/optimized/gmx_anaeig.cpp.ll

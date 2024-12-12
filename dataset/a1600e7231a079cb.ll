@@ -36,9 +36,10 @@ entry:
   ret i32 %3
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; abc/optimized/giaFalse.c.ll
 ; abc/optimized/ifSat.c.ll
+; boost/optimized/core.ll
 ; clamav/optimized/pe_icons.c.ll
 ; hermes/optimized/APInt.cpp.ll
 ; hyperscan/optimized/limex_compile.cpp.ll

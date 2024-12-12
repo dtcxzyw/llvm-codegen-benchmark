@@ -5,3 +5,9 @@ func0000000000000000:                   # @func0000000000000000
 	movl	$48, %eax
 	cmovel	%ecx, %eax
 	retq
+func0000000000000001:                   # @func0000000000000001
+	imull	$3600, %esi, %ecx               # imm = 0xE10
+	xorl	%eax, %eax
+	testb	$1, %dil
+	cmovel	%ecx, %eax
+	retq

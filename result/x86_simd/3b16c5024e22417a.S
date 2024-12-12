@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	10                              # 0xa
-func000000000000003a:                   # @func000000000000003a
+func000000000000006a:                   # @func000000000000006a
 	vpord	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
 	vpor	%ymm1, %ymm0, %ymm0
 	vpcmpgtd	%ymm2, %ymm0, %k0
@@ -18,7 +18,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 .LCPI2_0:
 	.long	536870912                       # 0x20000000
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpord	.LCPI2_0(%rip){1to8}, %ymm2, %ymm2
 	vpor	%ymm1, %ymm0, %ymm0
 	vpcmpeqd	%ymm2, %ymm0, %k0

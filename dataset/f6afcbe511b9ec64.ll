@@ -17,7 +17,7 @@ entry:
 define i64 @func0000000000000015(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %0, 1
-  %3 = add i64 %2, %1
+  %3 = add i64 %1, %2
   %4 = and i64 %3, -2
   ret i64 %4
 }
@@ -28,12 +28,12 @@ entry:
 define i64 @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %0, 3
-  %3 = add i64 %2, %1
+  %3 = add i64 %1, %2
   %4 = and i64 %3, -8
   ret i64 %4
 }
 
-; 30 occurrences:
+; 32 occurrences:
 ; abseil-cpp/optimized/inlined_vector_exception_safety_test.cc.ll
 ; darktable/optimized/introspection_basecurve.c.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
@@ -64,11 +64,13 @@ entry:
 ; postgres/optimized/freepage.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; re2/optimized/onepass.cc.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %0, 1
-  %3 = add i64 %2, %1
+  %3 = add i64 %1, %2
   %4 = and i64 %3, -2
   ret i64 %4
 }
@@ -111,7 +113,7 @@ entry:
   ret i64 %4
 }
 
-; 29 occurrences:
+; 57 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; llvm/optimized/BranchProbability.cpp.ll
 ; opencv/optimized/ann_mlp.cpp.ll
@@ -141,16 +143,44 @@ entry:
 ; pbrt-v4/optimized/mesh.cpp.ll
 ; qemu/optimized/target_riscv_vcrypto_helper.c.ll
 ; rocksdb/optimized/clock_cache.cc.ll
+; turborepo-rs/optimized/ehv573y0pcjpsw1wgvk28541m.ll
+; zed-rs/optimized/05btlo7ldoepff8rc85nwkmca.ll
+; zed-rs/optimized/08rfmg7gqi4939tj99psx2cc1.ll
+; zed-rs/optimized/0o1pecj7sihe8j10tk83wbgu7.ll
+; zed-rs/optimized/25n0f77f67cr7ewl17g7eja8w.ll
+; zed-rs/optimized/2mbibkb4nlqbkrk4fshgkpe2t.ll
+; zed-rs/optimized/2stbxmle5qyblpbm85idqsgvv.ll
+; zed-rs/optimized/2tnb5q2nu282joegshdwbwmo4.ll
+; zed-rs/optimized/32ztje2vviv0ao8s7rdc7yqwm.ll
+; zed-rs/optimized/34wa3jua7n3vs803j44lzfk5b.ll
+; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
+; zed-rs/optimized/3x2e5qsisayoyul24y85pynrh.ll
+; zed-rs/optimized/3y76hj0efsluhdj732s0l4pjz.ll
+; zed-rs/optimized/468dd38yzqjsa1zmcu5rd6jgo.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/50na78mbd3ev0fg48iszd7iya.ll
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
+; zed-rs/optimized/5ta1fnasvc90k95zqql8ufc92.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/83f7cv59nhkcel85ism08ubeo.ll
+; zed-rs/optimized/8et4dphxwbm7ry4e21dik6h9d.ll
+; zed-rs/optimized/8uq0kpgi8jqekwanrrlvbr0h1.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
+; zed-rs/optimized/a48ncfl2mo4yu8srnhcxrs0e7.ll
+; zed-rs/optimized/b7n4ebe7bkw4hnagh8ndf0qla.ll
+; zed-rs/optimized/cgceu28znx3lfd8ddk7c9uglp.ll
+; zed-rs/optimized/ch3ywh4ed1oz4ae4c1dkspuyz.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 8
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   %4 = shl i64 %3, 6
   ret i64 %4
 }
 
-; 25 occurrences:
+; 26 occurrences:
 ; cpython/optimized/longobject.ll
 ; hyperscan/optimized/dfa_min.cpp.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
@@ -176,11 +206,12 @@ entry:
 ; openusd/optimized/testHdExtComputationUtils.cpp.ll
 ; php/optimized/zend_alloc.ll
 ; qemu/optimized/block_bochs.c.ll
+; zed-rs/optimized/8y2n395sf7zaarcc3wfqoazez.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %0, 9
-  %3 = add i64 %2, %1
+  %3 = add i64 %1, %2
   %4 = and i64 %3, -512
   ret i64 %4
 }
@@ -207,7 +238,7 @@ entry:
 define i64 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 9
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = shl i64 %3, 10
   ret i64 %4
 }
@@ -232,7 +263,7 @@ entry:
 define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %0, 51
-  %3 = add i64 %2, %1
+  %3 = add i64 %1, %2
   %4 = and i64 %3, -2251799813685248
   ret i64 %4
 }
@@ -250,7 +281,7 @@ entry:
 define i64 @func000000000000000e(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %0, 48
-  %3 = add i64 %2, %1
+  %3 = add i64 %1, %2
   %4 = and i64 %3, -281474976710656
   ret i64 %4
 }
@@ -278,6 +309,17 @@ entry:
   ret i64 %4
 }
 
+; 1 occurrences:
+; zed-rs/optimized/2y3d15fhybcig6chysm503x7k.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 1
+  %3 = add i64 %2, %0
+  %4 = shl nsw i64 %3, 5
+  ret i64 %4
+}
+
 ; 2 occurrences:
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
@@ -296,7 +338,7 @@ entry:
 define i64 @func000000000000001e(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %0, 1
-  %3 = add i64 %2, %1
+  %3 = add i64 %1, %2
   %4 = and i64 %3, -2
   ret i64 %4
 }

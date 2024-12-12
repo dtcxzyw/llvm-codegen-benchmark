@@ -1,8 +1,8 @@
 
-%"struct.rapidjson::GenericMember.2635877" = type { %"class.rapidjson::GenericValue.2635866", %"class.rapidjson::GenericValue.2635866" }
-%"class.rapidjson::GenericValue.2635866" = type { %"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2635867" }
-%"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2635867" = type { %"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2635868" }
-%"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2635868" = type { i32, i32, ptr }
+%"struct.rapidjson::GenericMember.2749222" = type { %"class.rapidjson::GenericValue.2749211", %"class.rapidjson::GenericValue.2749211" }
+%"class.rapidjson::GenericValue.2749211" = type { %"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2749212" }
+%"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2749212" = type { %"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2749213" }
+%"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2749213" = type { i32, i32, ptr }
 
 ; 97 occurrences:
 ; llvm/optimized/COFFObjectFile.cpp.ll
@@ -103,12 +103,12 @@
 ; openjdk/optimized/zRelocationSet.ll
 ; openjdk/optimized/zVerify.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(ptr %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000001e4(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = inttoptr i64 %1 to ptr
-  %5 = getelementptr nusw i32, ptr %4, i64 %3
-  %6 = getelementptr nusw i8, ptr %0, i64 4
+  %5 = getelementptr nusw nuw i32, ptr %4, i64 %3
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 4
   %7 = icmp ult ptr %6, %5
   ret i1 %7
 }
@@ -122,12 +122,12 @@ entry:
 ; opencc/optimized/Config.cpp.ll
 ; openusd/optimized/json.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000001e1(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = inttoptr i64 %1 to ptr
-  %5 = getelementptr nusw %"struct.rapidjson::GenericMember.2635877", ptr %4, i64 %3
-  %6 = getelementptr nusw i8, ptr %0, i64 32
+  %5 = getelementptr nusw nuw %"struct.rapidjson::GenericMember.2749222", ptr %4, i64 %3
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 32
   %7 = icmp eq ptr %6, %5
   ret i1 %7
 }
@@ -135,12 +135,12 @@ entry:
 ; 1 occurrences:
 ; protobuf/optimized/arena.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000121(ptr %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000261(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = inttoptr i64 %1 to ptr
   %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = getelementptr nusw i8, ptr %0, i64 32
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 32
   %7 = icmp eq ptr %6, %5
   ret i1 %7
 }
@@ -149,11 +149,11 @@ entry:
 ; luajit/optimized/lj_err.ll
 ; luajit/optimized/lj_err_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a4(ptr %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000003c4(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = inttoptr i64 %1 to ptr
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   %6 = getelementptr nusw i8, ptr %0, i64 -8
   %7 = icmp ult ptr %6, %5
   ret i1 %7

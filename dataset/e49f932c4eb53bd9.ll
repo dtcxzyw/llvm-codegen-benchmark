@@ -28,17 +28,4 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
-; linux/optimized/dmar.ll
-; llvm/optimized/CGCall.cpp.ll
-; postgres/optimized/gistutil.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000007(i1 %0, i16 %1) #0 {
-entry:
-  %2 = zext nneg i16 %1 to i64
-  %3 = shl nuw nsw i64 %2, 32
-  %4 = select i1 %0, i64 0, i64 %3
-  ret i64 %4
-}
-
 attributes #0 = { nounwind }

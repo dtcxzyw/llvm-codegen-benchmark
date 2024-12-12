@@ -1,70 +1,40 @@
 func0000000000000009:                   // @func0000000000000009
 // %bb.0:                               // %entry
-	mov	w8, #-134283264                 // =0xf7ff0000
-	shl	v2.4s, v2.4s, #24
-	shl	v3.4s, v3.4s, #24
-	dup	v4.4s, w8
-	bic	v2.4s, #248, lsl #24
-	bic	v3.4s, #248, lsl #24
-	and	v0.16b, v0.16b, v4.16b
-	and	v1.16b, v1.16b, v4.16b
-	orr	v1.16b, v3.16b, v1.16b
-	orr	v0.16b, v2.16b, v0.16b
-	orr	v0.4s, #8, lsl #24
-	orr	v1.4s, #8, lsl #24
+	ubfiz	w8, w1, #24, #3
+	and	w9, w0, #0xffff0000
+	orr	w8, w8, w9
+	orr	w0, w8, #0x8000000
 	ret
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
 	mov	w8, #65280                      // =0xff00
-	movi	v4.4s, #64, lsl #16
-	shl	v2.4s, v2.4s, #22
+	ubfiz	w9, w1, #22, #1
 	movk	w8, #63599, lsl #16
-	shl	v3.4s, v3.4s, #22
-	dup	v5.4s, w8
-	and	v2.16b, v2.16b, v4.16b
-	and	v3.16b, v3.16b, v4.16b
-	and	v0.16b, v0.16b, v5.16b
-	and	v1.16b, v1.16b, v5.16b
-	orr	v1.16b, v3.16b, v1.16b
-	orr	v0.16b, v2.16b, v0.16b
-	orr	v0.4s, #18
-	orr	v1.4s, #18
+	and	w8, w0, w8
+	orr	w8, w8, w9
+	mov	w9, #18                         // =0x12
+	orr	w0, w8, w9
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	movi	v4.4s, #20, lsl #16
-	mov	w8, #-31981569                  // =0xfe17ffff
-	shl	v2.4s, v2.4s, #18
-	shl	v3.4s, v3.4s, #18
-	dup	v5.4s, w8
-	and	v2.16b, v2.16b, v4.16b
-	and	v3.16b, v3.16b, v4.16b
-	and	v0.16b, v0.16b, v5.16b
-	and	v1.16b, v1.16b, v5.16b
-	orr	v0.16b, v2.16b, v0.16b
-	orr	v1.16b, v3.16b, v1.16b
-	orr	v0.4s, #32, lsl #16
-	orr	v1.4s, #32, lsl #16
+	mov	w8, #1310720                    // =0x140000
+	mov	w9, #-31981569                  // =0xfe17ffff
+	and	w8, w8, w1, lsl #18
+	and	w9, w0, w9
+	orr	w8, w9, w8
+	orr	w0, w8, #0x200000
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	shl	v3.4s, v3.4s, #26
-	shl	v2.4s, v2.4s, #26
 	mov	w8, #65531                      // =0xfffb
+	ubfiz	w9, w1, #26, #1
 	movk	w8, #65020, lsl #16
-	dup	v4.4s, w8
-	mov	w8, #33685504                   // =0x2020000
-	bic	v2.4s, #248, lsl #24
-	bic	v3.4s, #248, lsl #24
-	dup	v5.4s, w8
-	and	v0.16b, v0.16b, v4.16b
-	and	v1.16b, v1.16b, v4.16b
-	orr	v2.16b, v2.16b, v5.16b
-	orr	v3.16b, v3.16b, v5.16b
-	orr	v0.16b, v2.16b, v0.16b
-	orr	v1.16b, v3.16b, v1.16b
+	and	w8, w0, w8
+	orr	w8, w8, w9
+	mov	w9, #33685504                   // =0x2020000
+	orr	w0, w8, w9
 	ret
                                         // -- End function

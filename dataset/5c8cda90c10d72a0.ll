@@ -1,11 +1,11 @@
 
 ; 57 occurrences:
-; abc/optimized/abcLog.c.ll
 ; abc/optimized/abcSymm.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; abc/optimized/giaMinLut.c.ll
 ; abc/optimized/lpkCut.c.ll
 ; abc/optimized/reoShuffle.c.ll
+; boost/optimized/gregorian.ll
 ; cmake/optimized/cmCursesMainForm.cxx.ll
 ; darktable/optimized/introspection_diffuse.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll

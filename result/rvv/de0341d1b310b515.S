@@ -5,7 +5,7 @@ func000000000000000a:                   # @func000000000000000a
 	vmv.v.i	v9, 0
 	vmerge.vvm	v8, v9, v8, v0
 	ret
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
 	vmsgt.vi	v0, v9, 0
@@ -33,9 +33,8 @@ func0000000000000006:                   # @func0000000000000006
 func0000000000000008:                   # @func0000000000000008
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
-	li	a0, 25
-	vmsgtu.vx	v0, v9, a0
-	vmv.v.i	v9, 1
+	vmsgtu.vi	v0, v9, 8
+	vmv.v.i	v9, 0
 	vmerge.vvm	v8, v9, v8, v0
 	ret
 func000000000000000c:                   # @func000000000000000c

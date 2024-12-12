@@ -10,7 +10,7 @@ func0000000000000002:                   # @func0000000000000002
 	movl	$256, %eax                      # imm = 0x100
 	cmovnel	%edi, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000031:                   # @func0000000000000031
 	movzbl	%dil, %ecx
 	xorl	%eax, %eax
 	cmpl	$15, %ecx

@@ -10,12 +10,6 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	andb	%sil, %al
 	retq
-func0000000000000006:                   # @func0000000000000006
-	xorb	$1, %sil
-	testq	%rdi, %rdi
-	sets	%al
-	andb	%sil, %al
-	retq
 func0000000000000004:                   # @func0000000000000004
 	xorb	$1, %sil
 	movabsq	$1999999999999999999, %rax      # imm = 0x1BC16D674EC7FFFF
@@ -33,5 +27,11 @@ func000000000000000a:                   # @func000000000000000a
 	xorb	$1, %sil
 	testq	%rdi, %rdi
 	setns	%al
+	andb	%sil, %al
+	retq
+func0000000000000006:                   # @func0000000000000006
+	xorb	$1, %sil
+	testq	%rdi, %rdi
+	sets	%al
 	andb	%sil, %al
 	retq

@@ -1,5 +1,5 @@
 
-; 104 occurrences:
+; 106 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -79,6 +79,7 @@
 ; llvm/optimized/InstrProfWriter.cpp.ll
 ; llvm/optimized/InstrRefBasedImpl.cpp.ll
 ; llvm/optimized/VarLocBasedImpl.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; mitsuba3/optimized/cpuinfo.cpp.ll
 ; mold/optimized/input-sections.cc.ARM32.cc.ll
@@ -104,6 +105,7 @@
 ; wireshark/optimized/packet-signal-pdu.c.ll
 ; wireshark/optimized/packet-someip.c.ll
 ; z3/optimized/sat_aig_cuts.cpp.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i64 %0, i64 %1, i32 %2) #0 {
 entry:
@@ -144,7 +146,7 @@ entry:
   ret i64 %6
 }
 
-; 18 occurrences:
+; 22 occurrences:
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; hermes/optimized/Operations.cpp.ll
 ; image-rs/optimized/1clnprdgqfw2q9lq.ll
@@ -163,6 +165,10 @@ entry:
 ; regex-rs/optimized/1x04d8372kemp7hd.ll
 ; wasmtime-rs/optimized/18flldcd4wnig7ks.ll
 ; wasmtime-rs/optimized/1uw8h1oeggq2kq40.ll
+; zed-rs/optimized/6t4g10gl152q55lxtcl2heeia.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000b(i64 %0, i64 %1, i32 %2) #0 {
 entry:
@@ -214,12 +220,17 @@ entry:
   ret i64 %6
 }
 
-; 5 occurrences:
+; 10 occurrences:
 ; llvm/optimized/NativeFunctionSymbol.cpp.ll
 ; ockam-rs/optimized/lcclztcuaxx9mqt.ll
 ; openjdk/optimized/jvmtiTagMap.ll
 ; rust-analyzer-rs/optimized/3yqkws4dawqbgt35.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/6t4g10gl152q55lxtcl2heeia.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000d(i64 %0, i64 %1, i32 %2) #0 {
 entry:
@@ -242,12 +253,14 @@ entry:
   ret i64 %6
 }
 
-; 5 occurrences:
+; 7 occurrences:
 ; abc/optimized/bmcFx.c.ll
 ; linux/optimized/io_apic.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/Expr.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; quickjs/optimized/quickjs.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001b(i64 %0, i64 %1, i32 %2) #0 {
 entry:
@@ -295,6 +308,18 @@ entry:
   %4 = shl nuw i64 %3, 63
   %5 = or i64 %0, %1
   %6 = or disjoint i64 %5, %4
+  ret i64 %6
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_image.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001d(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = shl nuw i64 %3, 48
+  %5 = or disjoint i64 %0, %1
+  %6 = or disjoint i64 %4, %5
   ret i64 %6
 }
 

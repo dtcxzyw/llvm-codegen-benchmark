@@ -1,6 +1,5 @@
 
-; 5 occurrences:
-; linux/optimized/fadvise.ll
+; 4 occurrences:
 ; linux/optimized/filemap.ll
 ; linux/optimized/shmem.ll
 ; soc-simulator/optimized/verilated.ll
@@ -14,11 +13,12 @@ entry:
   ret i64 %4
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/Q3BSPFileParser.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_join.cpp.ll
 ; eastl/optimized/TestBitVector.cpp.ll
+; eastl/optimized/TestSort.cpp.ll
 ; meshlab/optimized/ofbx.cpp.ll
 ; opencv/optimized/opencl-opencv-interop.cpp.ll
 ; protobuf/optimized/generated_enum_util.cc.ll

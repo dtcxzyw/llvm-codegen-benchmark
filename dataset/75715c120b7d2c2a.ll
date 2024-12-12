@@ -1,9 +1,10 @@
 
-; 2 occurrences:
+; 3 occurrences:
+; lvgl/optimized/lv_obj_tree.ll
 ; velox/optimized/ElementAt.cpp.ll
 ; velox/optimized/Slice.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func000000000000002b(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 %0, i32 0
   %4 = add nsw i32 %3, %1
@@ -17,7 +18,7 @@ entry:
 ; opencv/optimized/datastructs.cpp.ll
 ; opencv/optimized/onnx_importer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 %0, i32 0
   %4 = add nsw i32 %3, %1
@@ -28,10 +29,10 @@ entry:
 ; 1 occurrences:
 ; jq/optimized/jv.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 %0, i32 0
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = icmp ugt i32 %4, %0
   ret i1 %5
 }
@@ -56,7 +57,7 @@ entry:
 ; openusd/optimized/decodemv.c.ll
 ; pocketpy/optimized/pocketpy_c.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 %0, i32 0
   %4 = add nsw i32 %3, %1

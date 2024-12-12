@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 30 occurrences:
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; nuklear/optimized/unity.c.ll
@@ -27,6 +27,7 @@
 ; oiio/optimized/tiffinput.cpp.ll
 ; oiio/optimized/tiffoutput.cpp.ll
 ; openusd/optimized/stbImage.cpp.ll
+; pbrt-v4/optimized/lightsamplers.cpp.ll
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; Function Attrs: nounwind

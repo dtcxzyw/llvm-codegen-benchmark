@@ -1,6 +1,5 @@
 
-; 26 occurrences:
-; abseil-cpp/optimized/charconv_parse.cc.ll
+; 27 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; icu/optimized/decNumber.ll
 ; icu/optimized/formatted_string_builder.ll
@@ -15,6 +14,8 @@
 ; linux/optimized/gen6_ppgtt.ll
 ; linux/optimized/gen8_ppgtt.ll
 ; linux/optimized/hda_codec.ll
+; lvgl/optimized/lv_anim.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; mitsuba3/optimized/zonevector.cpp.ll
 ; node/optimized/libnode.node_errors.ll
@@ -44,7 +45,7 @@ entry:
   ret i32 %4
 }
 
-; 20 occurrences:
+; 19 occurrences:
 ; cpython/optimized/dtoa.ll
 ; icu/optimized/formatted_string_builder.ll
 ; icu/optimized/wrtjava.ll
@@ -61,10 +62,9 @@ entry:
 ; openjdk/optimized/png.ll
 ; openusd/optimized/json.cpp.ll
 ; postgres/optimized/pg_walsummary.ll
-; slurm/optimized/priority_basic.ll
-; wireshark/optimized/packet-gprs-llc.c.ll
 ; wireshark/optimized/packet-ieee80211-radio.c.ll
 ; z3/optimized/sat_cutset.cpp.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i1 %1, i32 %2) #0 {
 entry:
@@ -73,10 +73,9 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; hdf5/optimized/H5Zscaleoffset.c.ll
 ; linux/optimized/cgroup.ll
-; wireshark/optimized/packet-gprs-llc.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i1 %1, i32 %2) #0 {
 entry:

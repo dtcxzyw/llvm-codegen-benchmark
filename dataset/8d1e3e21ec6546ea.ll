@@ -1,5 +1,5 @@
 
-; 41 occurrences:
+; 40 occurrences:
 ; clamav/optimized/recvol.cpp.ll
 ; clamav/optimized/str.c.ll
 ; git/optimized/repack.ll
@@ -33,7 +33,6 @@
 ; postgres/optimized/walsender.ll
 ; postgres/optimized/xlog.ll
 ; postgres/optimized/xlogarchive.ll
-; postgres/optimized/xlogbackup.ll
 ; postgres/optimized/xlogfuncs.ll
 ; postgres/optimized/xlogreader.ll
 ; postgres/optimized/xlogrecovery.ll

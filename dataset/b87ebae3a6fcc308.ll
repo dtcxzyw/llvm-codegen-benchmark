@@ -9,34 +9,25 @@
 ; z3/optimized/spacer_unsat_core_learner.cpp.ll
 ; z3/optimized/spacer_unsat_core_plugin.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = zext i32 %3 to i64
   %5 = shl nuw nsw i64 %4, 4
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
-; 2 occurrences:
-; darktable/optimized/introspection_colorchecker.c.ll
-; qemu/optimized/block_vhdx-log.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000007c(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nuw nsw i32 %1, %2
-  %4 = zext nneg i32 %3 to i64
-  %5 = shl nuw nsw i64 %4, 12
-  %6 = getelementptr i8, ptr %0, i64 %5
-  ret ptr %6
-}
-
-; 19 occurrences:
+; 23 occurrences:
 ; darktable/optimized/DngOpcodes.cpp.ll
 ; darktable/optimized/introspection_blurs.c.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; gromacs/optimized/autocorr.cpp.ll
 ; linux/optimized/dm-table.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/solver.cpp.ll
+; mitsuba3/optimized/bitmap.cpp.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
 ; ncnn/optimized/convolution_x86_avx2.cpp.ll
@@ -56,7 +47,21 @@ define ptr @func000000000000000c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = shl nuw nsw i64 %4, 3
+  %5 = shl nuw nsw i64 %4, 2
+  %6 = getelementptr i8, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 3 occurrences:
+; darktable/optimized/introspection_colorchecker.c.ll
+; openspiel/optimized/chess_board.cc.ll
+; qemu/optimized/block_vhdx-log.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000007c(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw nsw i32 %1, %2
+  %4 = zext nneg i32 %3 to i64
+  %5 = shl nuw nsw i64 %4, 12
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
 }
@@ -86,30 +91,42 @@ entry:
   ret ptr %6
 }
 
+; 1 occurrences:
+; cvc5/optimized/unsat_core_manager.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002f(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %1, %2
+  %4 = zext i32 %3 to i64
+  %5 = shl nuw nsw i64 %4, 3
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
+  ret ptr %6
+}
+
 ; 4 occurrences:
 ; opencv/optimized/bardetect.cpp.ll
 ; opencv/optimized/hfs_core.cpp.ll
 ; opencv/optimized/intelligent_scissors.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
   %5 = shl nuw nsw i64 %4, 3
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; opencv/optimized/graph_simplifier.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
   %5 = shl nuw nsw i64 %4, 2
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -122,6 +139,18 @@ entry:
   %4 = zext nneg i32 %3 to i64
   %5 = shl nuw nsw i64 %4, 3
   %6 = getelementptr i8, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; opencv/optimized/onnx_importer.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001f(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %1, %2
+  %4 = zext nneg i32 %3 to i64
+  %5 = shl nuw nsw i64 %4, 2
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 

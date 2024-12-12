@@ -1,8 +1,7 @@
 func0000000000000001:                   # @func0000000000000001
 	and	a1, a1, a2
-	lui	a2, 21
 	andi	a1, a1, 1
-	addi	a2, a2, 384
+	li	a2, -2
 	czero.eqz	a1, a2, a1
 	addw	a0, a0, a1
 	ret

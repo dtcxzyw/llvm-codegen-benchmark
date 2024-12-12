@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/JSArray.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000104(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = sub i32 %0, %2
@@ -38,7 +38,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-ftp.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000186(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = sub i32 %0, %2
@@ -50,7 +50,7 @@ entry:
 ; linux/optimized/bitmap.ll
 ; opencv/optimized/oilpainting.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000da(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001aa(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %0 to i32
   %3 = sub i32 %1, %2
@@ -62,7 +62,7 @@ entry:
 ; opencv/optimized/samplers.cpp.ll
 ; pbrt-v4/optimized/lights.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000106(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i64 %0 to i32
   %3 = sub i32 %1, %2
@@ -85,7 +85,7 @@ entry:
 ; 1 occurrences:
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i64 %0, i32 %1) #0 {
+define i1 @func000000000000018a(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %0 to i32
   %3 = sub i32 %1, %2

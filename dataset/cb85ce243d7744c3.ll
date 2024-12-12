@@ -79,6 +79,7 @@ entry:
 }
 
 ; 9 occurrences:
+; boost/optimized/to_chars.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; duckdb/optimized/ub_duckdb_main_capi.cpp.ll
 ; icu/optimized/collationfastlatinbuilder.ll
@@ -87,11 +88,10 @@ entry:
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; llvm/optimized/AArch64RedundantCopyElimination.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
-; qemu/optimized/hw_pci-host_gpex.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000d(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 2
+  %2 = and i32 %1, 2097151
   %3 = zext nneg i32 %2 to i64
   %4 = zext i32 %0 to i64
   %5 = shl nuw i64 %4, 32

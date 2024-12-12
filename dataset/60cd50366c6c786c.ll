@@ -13,11 +13,11 @@ entry:
 }
 
 ; 9 occurrences:
+; boost/optimized/gregorian.ll
 ; icu/optimized/calendar.ll
 ; icu/optimized/gregocal.ll
 ; icu/optimized/usc_impl.ll
 ; imgui/optimized/imgui.cpp.ll
-; nuttx/optimized/lib_strftime.c.ll
 ; openspiel/optimized/bridge.cc.ll
 ; openspiel/optimized/tiny_bridge.cc.ll
 ; postgres/optimized/strftime.ll
@@ -26,8 +26,8 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 %0, %1
-  %3 = add i32 %2, 64
-  %4 = srem i32 %3, 64
+  %3 = add i32 %2, 700
+  %4 = srem i32 %3, 7
   ret i32 %4
 }
 

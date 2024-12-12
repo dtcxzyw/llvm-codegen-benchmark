@@ -10,7 +10,8 @@ entry:
   ret i32 %3
 }
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/alloc_lib.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; libjpeg-turbo/optimized/jquant2.c.ll
 ; linux/optimized/gen6_ppgtt.ll
@@ -44,10 +45,8 @@ entry:
   ret i32 %5
 }
 
-; 18 occurrences:
-; linux/optimized/advise.ll
+; 13 occurrences:
 ; linux/optimized/cancel.ll
-; linux/optimized/epoll.ll
 ; linux/optimized/futex.ll
 ; linux/optimized/hw-me.ll
 ; linux/optimized/intel_dpio_phy.ll
@@ -55,13 +54,10 @@ entry:
 ; linux/optimized/kbuf.ll
 ; linux/optimized/msg_ring.ll
 ; linux/optimized/net.ll
-; linux/optimized/openclose.ll
 ; linux/optimized/poll.ll
 ; linux/optimized/rsrc.ll
 ; linux/optimized/rw.ll
-; linux/optimized/splice.ll
 ; linux/optimized/timeout.ll
-; linux/optimized/uring_cmd.ll
 ; linux/optimized/waitid.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i1 %0, i32 %1, i32 %2) #0 {

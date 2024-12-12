@@ -7,7 +7,7 @@ func000000000000000d:                   # @func000000000000000d
 	vpmovd2m	%xmm0, %k1
 	vpxor	%xmm0, %xmm0, %xmm0
 	vpblendw	$17, %ymm2, %ymm0, %ymm0        # ymm0 = ymm2[0],ymm0[1,2,3],ymm2[4],ymm0[5,6,7],ymm2[8],ymm0[9,10,11],ymm2[12],ymm0[13,14,15]
-	vpaddq	%ymm1, %ymm0, %ymm1
+	vpaddq	%ymm0, %ymm1, %ymm1
 	vpbroadcastq	.LCPI0_0(%rip), %ymm0   # ymm0 = [65520,65520,65520,65520]
 	vpaddq	.LCPI0_1(%rip){1to4}, %ymm1, %ymm0 {%k1}
 	retq

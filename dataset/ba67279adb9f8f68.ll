@@ -1,11 +1,7 @@
 
-; 8 occurrences:
+; 4 occurrences:
 ; cvc5/optimized/equality_engine.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
-; freetype/optimized/cff.c.ll
-; freetype/optimized/ftbase.c.ll
-; freetype/optimized/type1.c.ll
-; freetype/optimized/type1cid.c.ll
 ; linux/optimized/cfg.ll
 ; wasmtime-rs/optimized/45190zkycf5izngt.ll
 ; Function Attrs: nounwind

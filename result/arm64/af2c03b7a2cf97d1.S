@@ -1,16 +1,9 @@
-func0000000000000156:                   // @func0000000000000156
+func00000000000002a6:                   // @func00000000000002a6
 // %bb.0:                               // %entry
-	movi	v4.2d, #0xffffffffffffffff
-	add	v0.4s, v0.4s, v2.4s
-	movi	v2.4s, #1
-	add	v1.4s, v1.4s, v3.4s
-	cmle	v6.4s, v0.4s, #0
-	add	v3.4s, v1.4s, v4.4s
-	add	v4.4s, v0.4s, v4.4s
-	cmle	v5.4s, v1.4s, #0
-	sub	v1.4s, v2.4s, v1.4s
-	sub	v0.4s, v2.4s, v0.4s
-	bif	v0.16b, v4.16b, v6.16b
-	bif	v1.16b, v3.16b, v5.16b
+	mov	w8, #1                          // =0x1
+	add	w9, w0, w1
+	sub	w8, w8, w9
+	subs	w9, w9, #1
+	csel	w0, w8, w9, lt
 	ret
                                         // -- End function

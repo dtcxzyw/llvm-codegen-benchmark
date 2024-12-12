@@ -25,7 +25,7 @@
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; openvdb/optimized/points.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = and i32 %3, -4096
@@ -58,7 +58,7 @@ entry:
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; openvdb/optimized/points.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = and i32 %3, -4096
@@ -70,7 +70,7 @@ entry:
 ; darktable/optimized/RawImage.cpp.ll
 ; openjdk/optimized/klass.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = and i32 %3, 63
@@ -78,24 +78,36 @@ entry:
   ret i1 %5
 }
 
-; 18 occurrences:
+; 11 occurrences:
 ; hdf5/optimized/H5B2int.c.ll
-; linux/optimized/i915_perf.ll
 ; openjdk/optimized/g1ConcurrentMark.ll
 ; openjdk/optimized/g1FullGCMarker.ll
-; openjdk/optimized/g1OopClosures.ll
 ; openjdk/optimized/g1ParScanThreadState.ll
-; openjdk/optimized/g1RemSet.ll
-; openjdk/optimized/g1RootClosures.ll
-; openjdk/optimized/psCardTable.ll
 ; openjdk/optimized/psParallelCompact.ll
-; openjdk/optimized/psPromotionManager.ll
 ; openjdk/optimized/psScavenge.ll
 ; openjdk/optimized/shenandoahHeap.ll
 ; openjdk/optimized/shenandoahMark.ll
 ; openjdk/optimized/xHeapIterator.ll
 ; openjdk/optimized/zHeapIterator.ll
 ; velox/optimized/Sequence.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub i32 %1, %2
+  %4 = and i32 %3, 131071
+  %5 = icmp samesign ugt i32 %4, %0
+  ret i1 %5
+}
+
+; 9 occurrences:
+; linux/optimized/i915_perf.ll
+; openjdk/optimized/g1ConcurrentMark.ll
+; openjdk/optimized/g1OopClosures.ll
+; openjdk/optimized/g1ParScanThreadState.ll
+; openjdk/optimized/g1RemSet.ll
+; openjdk/optimized/g1RootClosures.ll
+; openjdk/optimized/psCardTable.ll
+; openjdk/optimized/psPromotionManager.ll
 ; wireshark/optimized/packet-vnc.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
@@ -119,11 +131,10 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; linux/optimized/hw-me.ll
+; 1 occurrences:
 ; velox/optimized/Comparisons.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = and i32 %3, -4
@@ -153,8 +164,19 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 2 occurrences:
 ; hdf5/optimized/H5B2int.c.ll
+; linux/optimized/i915_perf.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub i32 %1, %2
+  %4 = and i32 %3, 65535
+  %5 = icmp samesign ult i32 %4, %0
+  ret i1 %5
+}
+
+; 3 occurrences:
 ; hyperscan/optimized/repeat.c.ll
 ; linux/optimized/i915_perf.ll
 ; llvm/optimized/ASTWriter.cpp.ll
@@ -162,16 +184,15 @@ entry:
 define i1 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
-  %4 = and i32 %3, 65535
+  %4 = and i32 %3, 2147483647
   %5 = icmp ult i32 %4, %0
   ret i1 %5
 }
 
-; 2 occurrences:
-; libwebp/optimized/predictor_enc.c.ll
+; 1 occurrences:
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = and i32 %3, 31
@@ -191,24 +212,46 @@ entry:
 }
 
 ; 1 occurrences:
-; libwebp/optimized/predictor_enc.c.ll
+; linux/optimized/hw-me.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = and i32 %3, 255
-  %5 = icmp ule i32 %4, %0
+  %5 = icmp samesign ugt i32 %4, %0
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; libwebp/optimized/predictor_enc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000035(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub nsw i32 %1, %2
+  %4 = and i32 %3, 255
+  %5 = icmp samesign ule i32 %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; libwebp/optimized/predictor_enc.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub nsw i32 %1, %2
+  %4 = and i32 %3, 255
+  %5 = icmp samesign ult i32 %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; libwebp/optimized/predictor_enc.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = and i32 %3, 255
-  %5 = icmp ule i32 %4, %0
+  %5 = icmp samesign ule i32 %4, %0
   ret i1 %5
 }
 

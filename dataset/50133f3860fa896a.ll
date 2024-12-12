@@ -1,5 +1,6 @@
 
-; 98 occurrences:
+; 99 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -104,7 +105,7 @@ entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw i64 %2, 32
   %4 = zext i64 %3 to i128
-  %5 = mul nuw i128 %4, %0
+  %5 = mul nuw i128 %0, %4
   ret i128 %5
 }
 
@@ -116,7 +117,7 @@ entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw i64 %2, 32
   %4 = zext i64 %3 to i128
-  %5 = mul nuw nsw i128 %4, %0
+  %5 = mul nuw nsw i128 %0, %4
   ret i128 %5
 }
 

@@ -14,14 +14,13 @@ define i1 @func00000000000000c2(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp oge double %1, 0.000000e+00
   %4 = select i1 %3, double %1, double %2
-  %5 = fcmp ogt double %4, %0
+  %5 = fcmp olt double %0, %4
   ret i1 %5
 }
 
-; 50 occurrences:
+; 48 occurrences:
 ; openblas/optimized/dbdsqr.c.ll
 ; openblas/optimized/dbdsvdx.c.ll
-; openblas/optimized/ddisna.c.ll
 ; openblas/optimized/dgegv.c.ll
 ; openblas/optimized/dgerfs.c.ll
 ; openblas/optimized/dgesvj.c.ll
@@ -59,7 +58,6 @@ entry:
 ; openblas/optimized/dsprfs.c.ll
 ; openblas/optimized/dsptrf.c.ll
 ; openblas/optimized/dstebz.c.ll
-; openblas/optimized/dstein.c.ll
 ; openblas/optimized/dsyequb.c.ll
 ; openblas/optimized/dsyrfs.c.ll
 ; openblas/optimized/dtbrfs.c.ll
@@ -74,12 +72,11 @@ define i1 @func00000000000000cc(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp oge double %1, 0.000000e+00
   %4 = select i1 %3, double %1, double %2
-  %5 = fcmp ole double %4, %0
+  %5 = fcmp oge double %0, %4
   ret i1 %5
 }
 
-; 7 occurrences:
-; openblas/optimized/dgesc2.c.ll
+; 6 occurrences:
 ; openblas/optimized/dhgeqz.c.ll
 ; openblas/optimized/dlaln2.c.ll
 ; openblas/optimized/dlaqr0.c.ll
@@ -91,7 +88,7 @@ define i1 @func00000000000000c4(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp oge double %1, 0.000000e+00
   %4 = select i1 %3, double %1, double %2
-  %5 = fcmp olt double %4, %0
+  %5 = fcmp ogt double %0, %4
   ret i1 %5
 }
 
@@ -108,12 +105,11 @@ define i1 @func00000000000000c5(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp oge double %1, 0.000000e+00
   %4 = select i1 %3, double %1, double %2
-  %5 = fcmp ult double %4, %0
+  %5 = fcmp ugt double %0, %4
   ret i1 %5
 }
 
-; 6 occurrences:
-; openblas/optimized/ddisna.c.ll
+; 5 occurrences:
 ; openblas/optimized/dgejsv.c.ll
 ; openblas/optimized/dhgeqz.c.ll
 ; openblas/optimized/dlaed6.c.ll
@@ -124,14 +120,13 @@ define i1 @func00000000000000ca(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp oge double %1, 0.000000e+00
   %4 = select i1 %3, double %1, double %2
-  %5 = fcmp oge double %4, %0
+  %5 = fcmp ole double %0, %4
   ret i1 %5
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; openblas/optimized/dbdsqr.c.ll
 ; openblas/optimized/dgtsv.c.ll
-; openblas/optimized/dgttrf.c.ll
 ; openblas/optimized/dlags2.c.ll
 ; openblas/optimized/dtgex2.c.ll
 ; openblas/optimized/dtrevc.c.ll
@@ -141,7 +136,7 @@ define i1 @func00000000000000c3(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp oge double %1, 0.000000e+00
   %4 = select i1 %3, double %1, double %2
-  %5 = fcmp ugt double %4, %0
+  %5 = fcmp ult double %0, %4
   ret i1 %5
 }
 
@@ -152,19 +147,7 @@ define i1 @func00000000000000cb(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp oge double %1, 0.000000e+00
   %4 = select i1 %3, double %1, double %2
-  %5 = fcmp uge double %4, %0
-  ret i1 %5
-}
-
-; 2 occurrences:
-; openblas/optimized/dlacn2.c.ll
-; openblas/optimized/dlacon.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000c7(double %0, double %1, double %2) #0 {
-entry:
-  %3 = fcmp oge double %1, 0.000000e+00
-  %4 = select i1 %3, double %1, double %2
-  %5 = fcmp une double %4, %0
+  %5 = fcmp ule double %0, %4
   ret i1 %5
 }
 

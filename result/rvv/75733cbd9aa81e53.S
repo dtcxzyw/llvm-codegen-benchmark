@@ -11,5 +11,5 @@ func0000000000000003:                   # @func0000000000000003
 	vmseq.vx	v0, v12, a0
 	vsetvli	zero, zero, e16, m2, ta, ma
 	vmerge.vim	v10, v10, 1, v0
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret

@@ -44,9 +44,26 @@ func0000000000000004:                   # @func0000000000000004
 	vmovdqu16	%ymm0, %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0
 	retq
+.LCPI2_0:
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
 func0000000000000006:                   # @func0000000000000006
-	vpsraw	$15, %ymm1, %ymm1
-	vpand	%ymm0, %ymm1, %ymm0
+	vpcmpltw	.LCPI2_0(%rip), %ymm1, %k1
+	vmovdqu16	%ymm0, %ymm0 {%k1} {z}
 	retq
 .LCPI3_0:
 	.short	255                             # 0xff
@@ -65,9 +82,30 @@ func0000000000000006:                   # @func0000000000000006
 	.short	255                             # 0xff
 	.short	255                             # 0xff
 	.short	255                             # 0xff
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vpcmpnleuw	.LCPI3_0(%rip), %ymm1, %k1
 	vmovdqu16	%ymm0, %ymm0 {%k1} {z}
 	retq
 func000000000000000c:                   # @func000000000000000c
+	retq
+.LCPI5_0:
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+func0000000000000014:                   # @func0000000000000014
+	vpcmpltuw	.LCPI5_0(%rip), %ymm1, %k1
+	vmovdqu16	%ymm0, %ymm0 {%k1} {z}
 	retq

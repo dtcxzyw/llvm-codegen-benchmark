@@ -1,29 +1,30 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; assimp/optimized/HL1MDLLoader.cpp.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
+; opencv/optimized/optflowgf.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000ea(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func00000000000000ef(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = mul nuw nsw i64 %1, 3
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 1
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 1
   ret ptr %7
 }
 
 ; 1 occurrences:
 ; recastnavigation/optimized/DetourNavMeshBuilder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func00000000000000af(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw float, ptr %0, i64 %3
-  %5 = mul i64 %1, 12
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 4
+  %5 = mul nuw i64 %1, 12
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 4
   ret ptr %7
 }
 
@@ -40,9 +41,8 @@ entry:
   ret ptr %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; gromacs/optimized/xtc3.c.ll
-; opencv/optimized/optflowgf.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1, i32 %2) #0 {
 entry:
@@ -85,23 +85,10 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/optflowgf.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000ca(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000068(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr float, ptr %0, i64 %3
-  %5 = mul nuw nsw i64 %1, 12
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 8
-  ret ptr %7
-}
-
-; 1 occurrences:
-; opencv/optimized/optflowgf.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000048(ptr %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr float, ptr %0, i64 %3
+  %4 = getelementptr nusw float, ptr %0, i64 %3
   %5 = mul nsw i64 %1, 12
   %6 = getelementptr nusw i8, ptr %4, i64 %5
   %7 = getelementptr i8, ptr %6, i64 4
@@ -111,10 +98,23 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/optflowgf.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000020(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr double, ptr %0, i64 %3
+  %4 = getelementptr nusw double, ptr %0, i64 %3
+  %5 = mul i64 %1, 40
+  %6 = getelementptr i8, ptr %4, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 -40
+  ret ptr %7
+}
+
+; 1 occurrences:
+; opencv/optimized/optflowgf.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000028(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw double, ptr %0, i64 %3
   %5 = mul i64 %1, 40
   %6 = getelementptr nusw i8, ptr %4, i64 %5
   %7 = getelementptr i8, ptr %6, i64 8

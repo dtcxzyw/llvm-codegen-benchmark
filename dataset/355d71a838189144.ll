@@ -13,11 +13,11 @@
 ; rocksdb/optimized/version_set.cc.ll
 ; wireshark/optimized/packet-umts_fp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -2
   %4 = sext i32 %3 to i64
-  %5 = icmp sgt i64 %4, %1
+  %5 = icmp slt i64 %1, %4
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }
@@ -30,7 +30,7 @@ define i1 @func0000000000000006(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 13
   %4 = sext i32 %3 to i64
-  %5 = icmp sgt i64 %4, %1
+  %5 = icmp slt i64 %1, %4
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }
@@ -41,11 +41,11 @@ entry:
 ; openspiel/optimized/game_parameters.cc.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -97
   %4 = sext i32 %3 to i64
-  %5 = icmp slt i64 %4, %1
+  %5 = icmp sgt i64 %1, %4
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }
@@ -53,11 +53,11 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/DateUtil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 4
   %4 = sext i32 %3 to i64
-  %5 = icmp ne i64 %4, %1
+  %5 = icmp ne i64 %1, %4
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }
@@ -70,7 +70,7 @@ define i1 @func000000000000000a(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -8
   %4 = sext i32 %3 to i64
-  %5 = icmp slt i64 %4, %1
+  %5 = icmp sgt i64 %1, %4
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }
@@ -79,11 +79,11 @@ entry:
 ; openspiel/optimized/hex.cc.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = sext i32 %3 to i64
-  %5 = icmp eq i64 %4, %1
+  %5 = icmp eq i64 %1, %4
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }
@@ -95,7 +95,7 @@ define i1 @func000000000000000c(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = icmp ne i64 %4, %1
+  %5 = icmp ne i64 %1, %4
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }
@@ -103,11 +103,11 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/t_set.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -2
   %4 = sext i32 %3 to i64
-  %5 = icmp ugt i64 %4, %1
+  %5 = icmp ult i64 %1, %4
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }

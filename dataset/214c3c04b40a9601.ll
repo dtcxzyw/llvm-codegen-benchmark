@@ -29,11 +29,11 @@
 define i1 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = udiv i32 %1, %2
-  %4 = icmp ult i32 %3, %0
+  %4 = icmp ugt i32 %0, %3
   ret i1 %4
 }
 
-; 45 occurrences:
+; 44 occurrences:
 ; assimp/optimized/SplitLargeMeshes.cpp.ll
 ; darktable/optimized/Cr2Decompressor.cpp.ll
 ; hdf5/optimized/H5HFdtable.c.ll
@@ -58,7 +58,6 @@ entry:
 ; llvm/optimized/Legalizer.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/MveEmitter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
@@ -83,11 +82,11 @@ entry:
 define i1 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = udiv i32 %1, %2
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
-; 34 occurrences:
+; 33 occurrences:
 ; cvc5/optimized/iand_utils.cpp.ll
 ; glslang/optimized/SPVRemapper.cpp.ll
 ; hdf5/optimized/H5HFdtable.c.ll
@@ -106,7 +105,6 @@ entry:
 ; llvm/optimized/LoadStoreVectorizer.cpp.ll
 ; llvm/optimized/MemorySanitizer.cpp.ll
 ; llvm/optimized/NeonEmitter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/Scalarizer.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
@@ -115,18 +113,18 @@ entry:
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; llvm/optimized/X86InterleavedAccess.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
+; lvgl/optimized/lv_roller.ll
 ; meshlab/optimized/filter_ao.cpp.ll
 ; openjdk/optimized/jccoefct.ll
 ; openusd/optimized/aom_scale.c.ll
 ; qemu/optimized/hw_intc_riscv_imsic.c.ll
 ; wireshark/optimized/packet-ieee1722.c.ll
 ; wireshark/optimized/packet-oran.c.ll
-; wireshark/optimized/packet-thread.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = udiv i32 %1, %2
-  %4 = icmp ugt i32 %3, %0
+  %4 = icmp ult i32 %0, %3
   ret i1 %4
 }
 
@@ -138,7 +136,7 @@ entry:
 define i1 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = udiv i32 %1, %2
-  %4 = icmp slt i32 %3, %0
+  %4 = icmp sgt i32 %0, %3
   ret i1 %4
 }
 
@@ -148,7 +146,7 @@ entry:
 define i1 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = udiv i32 %1, %2
-  %4 = icmp sge i32 %3, %0
+  %4 = icmp sle i32 %0, %3
   ret i1 %4
 }
 
@@ -166,7 +164,7 @@ entry:
 define i1 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = udiv i32 %1, %2
-  %4 = icmp sgt i32 %3, %0
+  %4 = icmp slt i32 %0, %3
   ret i1 %4
 }
 
@@ -177,7 +175,7 @@ entry:
 define i1 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = udiv i32 %1, %2
-  %4 = icmp ne i32 %3, %0
+  %4 = icmp ne i32 %0, %3
   ret i1 %4
 }
 
@@ -187,17 +185,7 @@ entry:
 define i1 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = udiv i32 %1, %2
-  %4 = icmp uge i32 %3, %0
-  ret i1 %4
-}
-
-; 1 occurrences:
-; libwebp/optimized/histogram_enc.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = udiv i32 %1, %2
-  %4 = icmp ule i32 %3, %0
+  %4 = icmp ule i32 %0, %3
   ret i1 %4
 }
 

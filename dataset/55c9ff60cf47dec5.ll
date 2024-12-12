@@ -1,5 +1,7 @@
 
 ; 137 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/topology.ll
 ; cmake/optimized/cmComputeLinkDepends.cxx.ll
 ; cmake/optimized/cmFortranParserImpl.cxx.ll
 ; cmake/optimized/cmMakefile.cxx.ll
@@ -66,7 +68,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -134,7 +135,6 @@
 ; yaml-cpp/optimized/scanner.cpp.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/preproc.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
@@ -142,7 +142,7 @@ define i64 @func000000000000000d(i64 %0, i64 %1) #0 {
 entry:
   %2 = udiv i64 %1, 7
   %.neg = xor i64 %2, -1
-  %3 = add i64 %.neg, %0
+  %3 = add i64 %0, %.neg
   ret i64 %3
 }
 
@@ -325,7 +325,23 @@ define i64 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = udiv i64 %1, 21
   %.neg = xor i64 %2, -1
-  %3 = add i64 %.neg, %0
+  %3 = add i64 %0, %.neg
+  ret i64 %3
+}
+
+; 6 occurrences:
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
+; zed-rs/optimized/5syv1375c7i7870jctt3co1ip.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/arqdovuoq7gqav26d45ahunbs.ll
+; zed-rs/optimized/ayy5pqcx1yuz6kdx9ooq2ruee.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001e(i64 %0, i64 %1) #0 {
+entry:
+  %2 = udiv exact i64 %1, 176
+  %.neg = xor i64 %2, -1
+  %3 = add i64 %0, %.neg
   ret i64 %3
 }
 

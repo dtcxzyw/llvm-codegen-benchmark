@@ -1,4 +1,4 @@
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	cmpb	$16, %dil
 	setae	%cl
 	andb	$-16, %dil
@@ -6,7 +6,7 @@ func0000000000000088:                   # @func0000000000000088
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	leal	-100(%rdi), %eax
 	cmpb	$100, %dil
 	movzbl	%al, %eax
@@ -14,7 +14,7 @@ func0000000000000081:                   # @func0000000000000081
 	cmpb	$11, %al
 	sete	%al
 	retq
-func00000000000001ac:                   # @func00000000000001ac
+func000000000000054c:                   # @func000000000000054c
 	leal	-32(%rdi), %eax
 	cmpb	$97, %dil
 	movzbl	%al, %eax
@@ -22,7 +22,7 @@ func00000000000001ac:                   # @func00000000000001ac
 	cmpb	$78, %al
 	setne	%al
 	retq
-func00000000000001a1:                   # @func00000000000001a1
+func0000000000000541:                   # @func0000000000000541
 	leal	-32(%rdi), %eax
 	cmpb	$97, %dil
 	movzbl	%al, %eax

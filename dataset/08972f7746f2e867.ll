@@ -1,5 +1,5 @@
 
-; 93 occurrences:
+; 105 occurrences:
 ; abseil-cpp/optimized/log_severity_test.cc.ll
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
 ; abseil-cpp/optimized/mutex_test.cc.ll
@@ -13,6 +13,7 @@
 ; assimp/optimized/X3DGeoHelper.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; base64-rs/optimized/3i18zkzed1c7jyoe.ll
+; boost/optimized/default_filter_factory.ll
 ; coreutils-rs/optimized/2g9ijtjos2xwh9zs.ll
 ; coreutils-rs/optimized/356ademi3o5g91h6.ll
 ; delta-rs/optimized/3qkwqfk85qralejq.ll
@@ -77,6 +78,7 @@
 ; protobuf/optimized/message_differencer.cc.ll
 ; proxygen/optimized/HTTPTransactionEgressSM.cpp.ll
 ; proxygen/optimized/HTTPTransactionIngressSM.cpp.ll
+; quantlib/optimized/hestonslvfdmmodel.ll
 ; ripgrep-rs/optimized/17szqs4crgj36yow.ll
 ; ruby/optimized/gc.ll
 ; rust-analyzer-rs/optimized/1ritseoble5k1o6v.ll
@@ -93,6 +95,16 @@
 ; wasmedge/optimized/function.cpp.ll
 ; wasmtime-rs/optimized/4op38pthexwwd97b.ll
 ; yalantinglibs/optimized/benchmark.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/01a9u2e0i8wru57e54nrmyia7.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/6rnwmhc4ug1ovqxxgp9ysf06c.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/bxm2tfnh5mvxjpr839l8em8o3.ll
+; zed-rs/optimized/coobscod1tjvofpoi7fi6r7gk.ll
+; zed-rs/optimized/cu6jannw5ajqip9tl6sqjzagm.ll
+; zed-rs/optimized/en4jszg1hvtl62im6poo4zhnt.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0) #0 {
 entry:

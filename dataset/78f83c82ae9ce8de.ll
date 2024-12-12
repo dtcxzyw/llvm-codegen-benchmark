@@ -7,7 +7,7 @@ define i1 @func0000000000000018(double %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = sitofp i32 %2 to double
-  %4 = fcmp oeq double %3, %0
+  %4 = fcmp oeq double %0, %3
   ret i1 %4
 }
 
@@ -18,7 +18,7 @@ define i1 @func0000000000000002(double %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = sitofp i32 %2 to double
-  %4 = fcmp ogt double %3, %0
+  %4 = fcmp olt double %0, %3
   ret i1 %4
 }
 
@@ -29,7 +29,7 @@ define i1 @func0000000000000022(double %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = sitofp i32 %2 to double
-  %4 = fcmp ogt double %3, %0
+  %4 = fcmp olt double %0, %3
   ret i1 %4
 }
 
@@ -41,7 +41,7 @@ define i1 @func0000000000000024(double %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = sitofp i32 %2 to double
-  %4 = fcmp olt double %3, %0
+  %4 = fcmp ogt double %0, %3
   ret i1 %4
 }
 
@@ -55,7 +55,7 @@ define i1 @func0000000000000008(double %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = sitofp i32 %2 to double
-  %4 = fcmp oeq double %3, %0
+  %4 = fcmp oeq double %0, %3
   ret i1 %4
 }
 
@@ -67,7 +67,7 @@ define i1 @func0000000000000028(double %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = sitofp i32 %2 to double
-  %4 = fcmp oeq double %3, %0
+  %4 = fcmp oeq double %0, %3
   ret i1 %4
 }
 
@@ -79,7 +79,7 @@ define i1 @func000000000000000c(double %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = sitofp i32 %2 to double
-  %4 = fcmp ole double %3, %0
+  %4 = fcmp oge double %0, %3
   ret i1 %4
 }
 
@@ -91,7 +91,7 @@ define i1 @func000000000000002c(double %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = sitofp i32 %2 to double
-  %4 = fcmp ole double %3, %0
+  %4 = fcmp oge double %0, %3
   ret i1 %4
 }
 
@@ -102,7 +102,7 @@ define i1 @func0000000000000004(double %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = sitofp i32 %2 to double
-  %4 = fcmp olt double %3, %0
+  %4 = fcmp ogt double %0, %3
   ret i1 %4
 }
 
@@ -113,7 +113,7 @@ define i1 @func0000000000000025(double %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = sitofp i32 %2 to double
-  %4 = fcmp ult double %3, %0
+  %4 = fcmp ugt double %0, %3
   ret i1 %4
 }
 
@@ -124,7 +124,7 @@ define i1 @func0000000000000003(double %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = sitofp i32 %2 to double
-  %4 = fcmp ugt double %3, %0
+  %4 = fcmp ult double %0, %3
   ret i1 %4
 }
 

@@ -31,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/dictbe.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %.neg = sub i32 %1, %3

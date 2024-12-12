@@ -5,8 +5,8 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 func0000000000000006:                   # @func0000000000000006
 	movq	%rdi, %rax
-	cmpl	$82, %edx
-	cmovgeq	%rsi, %rax
+	testl	%edx, %edx
+	cmovnsq	%rsi, %rax
 	retq
 func0000000000000004:                   # @func0000000000000004
 	movq	%rdi, %rax

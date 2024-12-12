@@ -7,7 +7,7 @@
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha1_hw.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha256_hw.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f1(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000003e1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = add nuw nsw i32 %3, 20
@@ -24,7 +24,7 @@ entry:
 ; openjdk/optimized/hb-font.ll
 ; openjdk/optimized/hb-ot-var.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002f1(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000005e1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = add nsw i32 %3, -1
@@ -38,7 +38,7 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002b1(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000561(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = add nsw i32 %3, -1
@@ -57,7 +57,7 @@ entry:
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003f1(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000007e1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = add nuw nsw i32 %3, 1
@@ -70,7 +70,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/huffman.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000131(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000261(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = add nuw i32 %3, 1

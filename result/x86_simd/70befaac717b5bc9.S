@@ -1,51 +1,4 @@
 .LCPI0_0:
-	.quad	2                               # 0x2
-func0000000000000004:                   # @func0000000000000004
-	vextracti128	$1, %ymm1, %xmm2
-	vpextrq	$1, %xmm2, %rcx
-	movabsq	$-3007867137478590557, %rsi     # imm = 0xD641E8C65B047FA3
-	movq	%rcx, %rax
-	imulq	%rsi
-	addq	%rcx, %rdx
-	movq	%rdx, %rax
-	shrq	$63, %rax
-	sarq	$11, %rdx
-	addq	%rax, %rdx
-	vmovq	%rdx, %xmm3
-	vmovq	%xmm2, %rcx
-	movq	%rcx, %rax
-	imulq	%rsi
-	addq	%rcx, %rdx
-	movq	%rdx, %rax
-	shrq	$63, %rax
-	sarq	$11, %rdx
-	addq	%rax, %rdx
-	vmovq	%rdx, %xmm2
-	vpunpcklqdq	%xmm3, %xmm2, %xmm2     # xmm2 = xmm2[0],xmm3[0]
-	vpextrq	$1, %xmm1, %rcx
-	movq	%rcx, %rax
-	imulq	%rsi
-	addq	%rcx, %rdx
-	movq	%rdx, %rax
-	shrq	$63, %rax
-	sarq	$11, %rdx
-	addq	%rax, %rdx
-	vmovq	%rdx, %xmm3
-	vmovq	%xmm1, %rcx
-	movq	%rcx, %rax
-	imulq	%rsi
-	addq	%rcx, %rdx
-	movq	%rdx, %rax
-	shrq	$63, %rax
-	sarq	$11, %rdx
-	addq	%rax, %rdx
-	vmovq	%rdx, %xmm1
-	vpunpcklqdq	%xmm3, %xmm1, %xmm1     # xmm1 = xmm1[0],xmm3[0]
-	vinserti128	$1, %xmm2, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
-	vpaddq	.LCPI0_0(%rip){1to4}, %ymm0, %ymm0
-	retq
-.LCPI1_0:
 	.quad	4294967295                      # 0xffffffff
 func0000000000000005:                   # @func0000000000000005
 	vextracti128	$1, %ymm1, %xmm2
@@ -82,25 +35,64 @@ func0000000000000005:                   # @func0000000000000005
 	vpunpcklqdq	%xmm3, %xmm1, %xmm1     # xmm1 = xmm1[0],xmm3[0]
 	vinserti128	$1, %xmm2, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
-	vpaddq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
+	vpaddq	.LCPI0_0(%rip){1to4}, %ymm0, %ymm0
 	retq
-.LCPI2_0:
+.LCPI1_0:
 	.quad	-6148914691236517205            # 0xaaaaaaaaaaaaaaab
 func0000000000000015:                   # @func0000000000000015
 	vpsraq	$4, %ymm1, %ymm1
-	vpmullq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm1
+	vpmullq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
-.LCPI3_0:
+.LCPI2_0:
 	.quad	-3689348814741910323            # 0xcccccccccccccccd
 func0000000000000014:                   # @func0000000000000014
 	vpsraq	$3, %ymm1, %ymm1
-	vpmullq	.LCPI3_0(%rip){1to4}, %ymm1, %ymm1
+	vpmullq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm0, %ymm0
 	vpaddq	%ymm0, %ymm1, %ymm0
+	retq
+.LCPI3_0:
+	.quad	719050                          # 0xaf8ca
+func0000000000000004:                   # @func0000000000000004
+	vextracti128	$1, %ymm1, %xmm2
+	vpextrq	$1, %xmm2, %rax
+	movabsq	$7164004856975580295, %rcx      # imm = 0x636BA875FD33DC87
+	imulq	%rcx
+	movq	%rdx, %rax
+	shrq	$63, %rax
+	sarq	$25, %rdx
+	addq	%rax, %rdx
+	vmovq	%rdx, %xmm3
+	vmovq	%xmm2, %rax
+	imulq	%rcx
+	movq	%rdx, %rax
+	shrq	$63, %rax
+	sarq	$25, %rdx
+	addq	%rax, %rdx
+	vmovq	%rdx, %xmm2
+	vpunpcklqdq	%xmm3, %xmm2, %xmm2     # xmm2 = xmm2[0],xmm3[0]
+	vpextrq	$1, %xmm1, %rax
+	imulq	%rcx
+	movq	%rdx, %rax
+	shrq	$63, %rax
+	sarq	$25, %rdx
+	addq	%rax, %rdx
+	vmovq	%rdx, %xmm3
+	vmovq	%xmm1, %rax
+	imulq	%rcx
+	movq	%rdx, %rax
+	shrq	$63, %rax
+	sarq	$25, %rdx
+	addq	%rax, %rdx
+	vmovq	%rdx, %xmm1
+	vpunpcklqdq	%xmm3, %xmm1, %xmm1     # xmm1 = xmm1[0],xmm3[0]
+	vinserti128	$1, %xmm2, %ymm1, %ymm1
+	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	.LCPI3_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 .LCPI4_0:
 	.quad	-6148914691236517205            # 0xaaaaaaaaaaaaaaab

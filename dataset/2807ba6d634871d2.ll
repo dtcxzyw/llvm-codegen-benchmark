@@ -1,5 +1,5 @@
 
-; 52 occurrences:
+; 51 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
@@ -17,6 +17,7 @@
 ; abc/optimized/sbdSat.c.ll
 ; abc/optimized/sscSim.c.ll
 ; abc/optimized/utilIsop.c.ll
+; base64-rs/optimized/3i18zkzed1c7jyoe.ll
 ; coreutils-rs/optimized/p2ic31m8j7cwnae.ll
 ; cpython/optimized/difradix2.ll
 ; duckdb/optimized/ub_duckdb_storage_buffer.cpp.ll
@@ -30,7 +31,6 @@
 ; linux/optimized/set_memory.ll
 ; linux/optimized/vmalloc.ll
 ; linux/optimized/vsprintf.ll
-; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/AArch64LegalizerInfo.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; llvm/optimized/RegionStore.cpp.ll
@@ -46,14 +46,13 @@
 ; qemu/optimized/hw_char_serial.c.ll
 ; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
 ; redis/optimized/memtest.ll
-; redis/optimized/networking.ll
 ; rocksdb/optimized/clock_cache.cc.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; spike/optimized/csrs.ll
 ; spike/optimized/mmu.ll
 ; spike/optimized/processor.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, -1
   %4 = select i1 %3, i64 %0, i64 %1
@@ -71,7 +70,7 @@ entry:
 ; llvm/optimized/SanitizerMetadata.cpp.ll
 ; postgres/optimized/regexp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 %0, i64 %1
@@ -83,12 +82,12 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/pshinter.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000294(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ult i64 %2, 40
+  %3 = icmp samesign ult i64 %2, 40
   %4 = select i1 %3, i64 %0, i64 %1
   %5 = and i64 %4, 62
-  %6 = icmp ult i64 %5, 10
+  %6 = icmp samesign ult i64 %5, 10
   ret i1 %6
 }
 

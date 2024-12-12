@@ -1,5 +1,5 @@
 
-; 75 occurrences:
+; 76 occurrences:
 ; abc/optimized/cuddLCache.c.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
@@ -75,6 +75,7 @@
 ; ruby/optimized/bignum.ll
 ; spike/optimized/srl32_u.ll
 ; spike/optimized/srli32_u.ll
+; z3/optimized/pb2bv_rewriter.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
@@ -84,7 +85,8 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/to_chars.ll
 ; libwebp/optimized/sharpyuv_gamma.c.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
 ; proxygen/optimized/Huffman.cpp.ll
@@ -108,17 +110,6 @@ entry:
   %2 = add i32 %1, -1
   %3 = lshr i32 %0, %2
   %4 = zext nneg i32 %3 to i64
-  ret i64 %4
-}
-
-; 1 occurrences:
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add i32 %1, 3
-  %3 = lshr i32 %0, %2
-  %4 = zext i32 %3 to i64
   ret i64 %4
 }
 

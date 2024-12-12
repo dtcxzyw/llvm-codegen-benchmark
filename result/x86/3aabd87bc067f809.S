@@ -27,9 +27,9 @@ func0000000000000000:                   # @func0000000000000000
 	retq
 func0000000000000030:                   # @func0000000000000030
 	movl	%edx, %eax
-	imulq	$274877907, %rax, %rax          # imm = 0x10624DD3
-	shrq	$36, %rax
+	imulq	$963315389, %rax, %rax          # imm = 0x396B06BD
+	shrq	$47, %rax
 	leal	(%rax,%rax,2), %eax
 	addl	%esi, %edi
-	leal	4(%rdi,%rax,2), %eax
+	leal	32105(%rdi,%rax), %eax
 	retq

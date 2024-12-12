@@ -15,13 +15,25 @@ entry:
   ret i128 %3
 }
 
+; 3 occurrences:
+; boost/optimized/to_chars.ll
+; libquic/optimized/p256-64.c.ll
+; libsodium/optimized/libsodium_la-ed25519_ref10.ll
+; Function Attrs: nounwind
+define i128 @func0000000000000000(i128 %0, i128 %1) #0 {
+entry:
+  %2 = shl i128 %1, 64
+  %3 = add i128 %2, %0
+  ret i128 %3
+}
+
 ; 1 occurrences:
 ; libquic/optimized/p256-64.c.ll
 ; Function Attrs: nounwind
 define i128 @func000000000000000d(i128 %0, i128 %1) #0 {
 entry:
   %2 = shl nuw nsw i128 %1, 32
-  %3 = add nsw i128 %2, %0
+  %3 = add nsw i128 %0, %2
   ret i128 %3
 }
 
@@ -36,24 +48,13 @@ entry:
   ret i128 %3
 }
 
-; 2 occurrences:
-; libquic/optimized/p256-64.c.ll
-; libsodium/optimized/libsodium_la-ed25519_ref10.ll
-; Function Attrs: nounwind
-define i128 @func0000000000000000(i128 %0, i128 %1) #0 {
-entry:
-  %2 = shl i128 %1, 32
-  %3 = add i128 %2, %0
-  ret i128 %3
-}
-
 ; 1 occurrences:
 ; libquic/optimized/p256-64.c.ll
 ; Function Attrs: nounwind
 define i128 @func000000000000000c(i128 %0, i128 %1) #0 {
 entry:
   %2 = shl nuw nsw i128 %1, 32
-  %3 = add i128 %2, %0
+  %3 = add i128 %0, %2
   ret i128 %3
 }
 

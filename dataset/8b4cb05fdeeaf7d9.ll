@@ -113,12 +113,10 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; cpython/optimized/compile.ll
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
-; graphviz/optimized/generate-constraints.cpp.ll
 ; gromacs/optimized/make_ndx.cpp.ll
-; opencv/optimized/linemod.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
@@ -151,7 +149,7 @@ entry:
 ; ceres/optimized/schur_complement_solver.cc.ll
 ; gromacs/optimized/selectioncollection.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %0, %1
   %.mask = and i64 %2, 4294967295
@@ -174,7 +172,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/trans_virtio.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000086(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %0, %1
   %.mask = and i64 %2, 2147483648

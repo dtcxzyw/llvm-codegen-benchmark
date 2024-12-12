@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 35 occurrences:
 ; delta-rs/optimized/9v8xvedf69luuxb.ll
 ; gromacs/optimized/kerneldispatch.cpp.ll
 ; hdf5/optimized/H5Oalloc.c.ll
@@ -9,7 +9,6 @@
 ; hdf5/optimized/H5Oint.c.ll
 ; hdf5/optimized/H5Omessage.c.ll
 ; hdf5/optimized/H5Otest.c.ll
-; linux/optimized/hwesleep.ll
 ; linux/optimized/ip_input.ll
 ; llvm/optimized/AArch64AsmPrinter.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
@@ -22,10 +21,13 @@
 ; memcached/optimized/memcached-items.ll
 ; memcached/optimized/memcached_debug-items.ll
 ; openjdk/optimized/library_call.ll
+; postgres/optimized/nodeAgg.ll
 ; qemu/optimized/hw_net_can_can_sja1000.c.ll
+; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
 ; recastnavigation/optimized/DetourDebugDraw.cpp.ll
 ; rustfmt-rs/optimized/2iek5i6kf8wd1vt9.ll
 ; sqlite/optimized/sqlite3.ll
+; turborepo-rs/optimized/3wg34qzs64td8o5fq33fcg5rk.ll
 ; typst-rs/optimized/1ojadsqfk0rsifsx.ll
 ; typst-rs/optimized/3dimj4rf5dyrieyi.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
@@ -41,7 +43,7 @@ entry:
   ret i64 %2
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; arrow/optimized/int_util.cc.ll
 ; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
@@ -56,6 +58,7 @@ entry:
 ; openspiel/optimized/dynamic_routing.cc.ll
 ; protobuf/optimized/descriptor_database.cc.ll
 ; protobuf/optimized/extension_set.cc.ll
+; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
 ; qemu/optimized/hw_usb_desc.c.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; wireshark/optimized/packet-sigcomp.c.ll

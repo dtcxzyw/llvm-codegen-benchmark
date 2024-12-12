@@ -6,7 +6,7 @@
 	.long	4278190080                      # 0xff000000
 func0000000000000078:                   # @func0000000000000078
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
-	vpor	%ymm0, %ymm2, %ymm2
+	vpor	%ymm2, %ymm0, %ymm2
 	vpaddd	.LCPI0_1(%rip){1to8}, %ymm1, %ymm0
 	vpternlogd	$254, .LCPI0_2(%rip){1to8}, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | mem
 	retq
@@ -30,7 +30,7 @@ func0000000000000010:                   # @func0000000000000010
 	.long	4261412864                      # 0xfe000000
 func0000000000000028:                   # @func0000000000000028
 	vpaddd	.LCPI2_0(%rip){1to8}, %ymm2, %ymm2
-	vpor	%ymm0, %ymm2, %ymm2
+	vpor	%ymm2, %ymm0, %ymm2
 	vpaddd	.LCPI2_1(%rip){1to8}, %ymm1, %ymm0
 	vpternlogd	$254, .LCPI2_2(%rip){1to8}, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | mem
 	retq

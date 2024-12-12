@@ -1,18 +1,6 @@
 
-; 2 occurrences:
+; 17 occurrences:
 ; mitsuba3/optimized/x86assembler.cpp.ll
-; qemu/optimized/hw_display_vga.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = or i32 %1, %2
-  %4 = or i32 %3, %0
-  %5 = lshr i32 %4, 28
-  %6 = zext nneg i32 %5 to i64
-  ret i64 %6
-}
-
-; 16 occurrences:
 ; openvdb/optimized/Diagnostics.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Filter.cc.ll
@@ -28,13 +16,13 @@ entry:
 ; openvdb/optimized/VolumeAdvect.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; openvdb/optimized/points.cc.ll
-; sqlite/optimized/sqlite3.ll
+; qemu/optimized/hw_display_vga.c.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000000d(i32 %0, i32 %1, i32 %2) #0 {
+define i64 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = or disjoint i32 %1, %2
-  %4 = or disjoint i32 %3, %0
-  %5 = lshr i32 %4, 6
+  %3 = or i32 %1, %2
+  %4 = or i32 %3, %0
+  %5 = lshr i32 %4, 28
   %6 = zext nneg i32 %5 to i64
   ret i64 %6
 }

@@ -1,15 +1,12 @@
 
-; 50 occurrences:
-; casadi/optimized/kinsol_spils.c.ll
+; 47 occurrences:
 ; icu/optimized/plurrule.ll
 ; msdfgen/optimized/import-svg.cpp.ll
 ; ocio/optimized/MathUtils.cpp.ll
 ; openblas/optimized/dbdsqr.c.ll
 ; openblas/optimized/dbdsvdx.c.ll
-; openblas/optimized/dgbcon.c.ll
 ; openblas/optimized/dgegv.c.ll
 ; openblas/optimized/dgejsv.c.ll
-; openblas/optimized/dgesc2.c.ll
 ; openblas/optimized/dgesvdq.c.ll
 ; openblas/optimized/dgges.c.ll
 ; openblas/optimized/dgges3.c.ll

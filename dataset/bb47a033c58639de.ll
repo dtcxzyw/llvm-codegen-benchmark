@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; darktable/optimized/TiffEntry.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libquic/optimized/url_parse.cc.ll
@@ -7,10 +7,9 @@
 ; llvm/optimized/WinCOFFObjectWriter.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; rust-analyzer-rs/optimized/4vbxd64hrlz3u0mk.ll
-; spike/optimized/f16_classify.ll
 ; wireshark/optimized/packet-pn-rt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000042(i16 %0, i1 %1) #0 {
+define i1 @func0000000000000082(i16 %0, i1 %1) #0 {
 entry:
   %2 = icmp eq i16 %0, 124
   %3 = or i1 %2, %1

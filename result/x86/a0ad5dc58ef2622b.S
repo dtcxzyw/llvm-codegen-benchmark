@@ -1,4 +1,4 @@
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	cmpq	$256, %rdi                      # imm = 0x100
 	movl	$255, %eax
 	cmovbl	%edi, %eax

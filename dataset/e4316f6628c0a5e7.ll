@@ -1,5 +1,5 @@
 
-; 320 occurrences:
+; 318 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/str_cat_test.cc.ll
 ; arrow/optimized/align_util.cc.ll
@@ -17,6 +17,7 @@
 ; assimp/optimized/MDLLoader.cpp.ll
 ; assimp/optimized/ValidateDataStructure.cpp.ll
 ; assimp/optimized/X3DXmlHelper.cpp.ll
+; boost/optimized/options_description.ll
 ; casadi/optimized/conic.cpp.ll
 ; casadi/optimized/fmu2.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
@@ -184,9 +185,6 @@
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; pocketpy/optimized/vm.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
@@ -373,7 +371,7 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; rust-analyzer-rs/optimized/2n800w7wl0k2x7go.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000063(i32 %0) #0 {
+define i64 @func00000000000000c3(i32 %0) #0 {
 entry:
   %1 = add nuw nsw i32 %0, 1
   %2 = icmp eq i32 %0, 2
@@ -383,80 +381,53 @@ entry:
 }
 
 ; 1 occurrences:
-; abc/optimized/wlcSim.c.ll
+; abc/optimized/abcDec.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000049(i32 %0) #0 {
+define i64 @func0000000000000068(i32 %0) #0 {
 entry:
-  %1 = add nuw i32 %0, 1
-  %2 = icmp ult i32 %0, 7
-  %3 = select i1 %2, i32 8, i32 %1
-  %4 = zext nneg i32 %3 to i64
-  ret i64 %4
+  %1 = call i32 @llvm.usub.sat.i32(i32 %0, i32 6)
+  %2 = zext i32 %1 to i64
+  ret i64 %2
 }
 
 ; 1 occurrences:
-; abc/optimized/abcDec.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000028(i32 %0) #0 {
-entry:
-  %1 = add nsw i32 %0, -6
-  %2 = icmp ult i32 %0, 7
-  %3 = select i1 %2, i32 0, i32 %1
-  %4 = zext i32 %3 to i64
-  ret i64 %4
-}
-
-; 3 occurrences:
 ; abc/optimized/abcRpo.c.ll
-; abc/optimized/lpkAbcUtil.c.ll
-; nuttx/optimized/lib_trunc.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000029(i32 %0) #0 {
-entry:
-  %1 = add nsw i32 %0, -6
-  %2 = icmp ult i32 %0, 7
-  %3 = select i1 %2, i32 0, i32 %1
-  %4 = zext nneg i32 %3 to i64
-  ret i64 %4
-}
-
-; 6 occurrences:
-; abc/optimized/acbMfs.c.ll
-; cpython/optimized/obmalloc.ll
-; icu/optimized/usprep.ll
-; icu/optimized/utext.ll
-; icu/optimized/vtzone.ll
-; mimalloc/optimized/arena.c.ll
-; Function Attrs: nounwind
-define i64 @func000000000000002d(i32 %0) #0 {
-entry:
-  %1 = add nsw i32 %0, -64
-  %2 = icmp slt i32 %0, 64
-  %3 = select i1 %2, i32 0, i32 %1
-  %4 = zext nneg i32 %3 to i64
-  ret i64 %4
-}
-
-; 5 occurrences:
-; abc/optimized/abcDfs.c.ll
-; abc/optimized/acecPo.c.ll
-; abc/optimized/acecTree.c.ll
-; abc/optimized/cnfUtil.c.ll
-; abc/optimized/timMan.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000069(i32 %0) #0 {
 entry:
-  %1 = add nuw nsw i32 %0, 1
-  %2 = icmp ult i32 %0, 7
-  %3 = select i1 %2, i32 8, i32 %1
-  %4 = zext nneg i32 %3 to i64
-  ret i64 %4
+  %1 = call i32 @llvm.usub.sat.i32(i32 %0, i32 6)
+  %2 = zext nneg i32 %1 to i64
+  ret i64 %2
+}
+
+; 2 occurrences:
+; abc/optimized/abcDfs.c.ll
+; abc/optimized/acecPo.c.ll
+; Function Attrs: nounwind
+define i64 @func00000000000000e9(i32 %0) #0 {
+entry:
+  %1 = call i32 @llvm.umax.i32(i32 %0, i32 7)
+  %2 = add i32 %1, 1
+  %3 = zext nneg i32 %2 to i64
+  ret i64 %3
+}
+
+; 2 occurrences:
+; abc/optimized/acecTree.c.ll
+; abc/optimized/timMan.c.ll
+; Function Attrs: nounwind
+define i64 @func00000000000000c9(i32 %0) #0 {
+entry:
+  %1 = call i32 @llvm.umax.i32(i32 %0, i32 15)
+  %2 = add i32 %1, 1
+  %3 = zext nneg i32 %2 to i64
+  ret i64 %3
 }
 
 ; 1 occurrences:
 ; abc/optimized/fretFlow.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000075(i32 %0) #0 {
+define i64 @func00000000000000d5(i32 %0) #0 {
 entry:
   %1 = add nuw nsw i32 %0, 1
   %2 = icmp sgt i32 %0, 29998
@@ -465,44 +436,8 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
-; hermes/optimized/String.cpp.ll
-; wolfssl/optimized/sp_int.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000008(i32 %0) #0 {
-entry:
-  %1 = add i32 %0, -1
-  %2 = icmp ult i32 %0, 2
-  %3 = select i1 %2, i32 0, i32 %1
-  %4 = zext i32 %3 to i64
-  ret i64 %4
-}
-
-; 13 occurrences:
-; linux/optimized/ah6.ll
-; llvm/optimized/ASTContext.cpp.ll
-; llvm/optimized/ASTImporter.cpp.ll
-; llvm/optimized/ASTWriter.cpp.ll
-; llvm/optimized/SemaConcept.cpp.ll
-; llvm/optimized/SemaExprCXX.cpp.ll
-; llvm/optimized/SemaTemplate.cpp.ll
-; llvm/optimized/SemaTemplateDeduction.cpp.ll
-; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
-; llvm/optimized/SemaTemplateInstantiate.cpp.ll
-; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
-; redis/optimized/sort.ll
-; xgboost/optimized/charconv.cc.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000022(i32 %0) #0 {
-entry:
-  %1 = add nsw i32 %0, -1
-  %2 = icmp eq i32 %0, 0
-  %3 = select i1 %2, i32 undef, i32 %1
-  %4 = zext i32 %3 to i64
-  ret i64 %4
-}
-
-; 17 occurrences:
+; 18 occurrences:
+; boost/optimized/to_chars.ll
 ; linux/optimized/rx.ll
 ; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
@@ -521,19 +456,43 @@ entry:
 ; meshlab/optimized/filter_trioptimize.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000023(i32 %0) #0 {
+define i64 @func0000000000000043(i32 %0) #0 {
+entry:
+  %1 = add nsw i32 %0, -16448
+  %2 = icmp eq i32 %0, 0
+  %3 = select i1 %2, i32 -16447, i32 %1
+  %4 = zext nneg i32 %3 to i64
+  ret i64 %4
+}
+
+; 13 occurrences:
+; linux/optimized/ah6.ll
+; llvm/optimized/ASTContext.cpp.ll
+; llvm/optimized/ASTImporter.cpp.ll
+; llvm/optimized/ASTWriter.cpp.ll
+; llvm/optimized/SemaConcept.cpp.ll
+; llvm/optimized/SemaExprCXX.cpp.ll
+; llvm/optimized/SemaTemplate.cpp.ll
+; llvm/optimized/SemaTemplateDeduction.cpp.ll
+; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
+; llvm/optimized/SemaTemplateInstantiate.cpp.ll
+; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
+; redis/optimized/sort.ll
+; xgboost/optimized/charconv.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000042(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -1
-  %2 = icmp eq i32 %0, 1
-  %3 = select i1 %2, i32 1, i32 %1
-  %4 = zext nneg i32 %3 to i64
+  %2 = icmp eq i32 %0, 0
+  %3 = select i1 %2, i32 undef, i32 %1
+  %4 = zext i32 %3 to i64
   ret i64 %4
 }
 
 ; 1 occurrences:
 ; linux/optimized/nl80211.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000071(i32 %0) #0 {
+define i64 @func00000000000000d1(i32 %0) #0 {
 entry:
   %1 = add nuw nsw i32 %0, 1
   %2 = icmp ugt i32 %0, 5
@@ -542,54 +501,25 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
-; postgres/optimized/bufpage.ll
-; Function Attrs: nounwind
-define i64 @func000000000000002c(i32 %0) #0 {
-entry:
-  %1 = add nsw i32 %0, -4
-  %2 = icmp slt i32 %0, 4
-  %3 = select i1 %2, i32 0, i32 %1
-  %4 = zext i32 %3 to i64
-  ret i64 %4
-}
-
-; 1 occurrences:
-; icu/optimized/number_decimalquantity.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000d(i32 %0) #0 {
-entry:
-  %1 = add i32 %0, -2
-  %2 = icmp slt i32 %0, -2147483646
-  %3 = select i1 %2, i32 -2147483648, i32 %1
-  %4 = zext nneg i32 %3 to i64
-  ret i64 %4
-}
-
 ; 3 occurrences:
-; openblas/optimized/lapacke_dgbcon_work.c.ll
-; openblas/optimized/lapacke_dgbtrf_work.c.ll
-; opencv/optimized/slice_layer.cpp.ll
+; cpython/optimized/obmalloc.ll
+; icu/optimized/vtzone.ll
+; mimalloc/optimized/arena.c.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000006d(i32 %0) #0 {
+define i64 @func000000000000004d(i32 %0) #0 {
 entry:
-  %1 = add nuw nsw i32 %0, 1
+  %1 = add nsw i32 %0, -1
   %2 = icmp slt i32 %0, 1
-  %3 = select i1 %2, i32 1, i32 %1
+  %3 = select i1 %2, i32 11, i32 %1
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
 
-; 1 occurrences:
-; graphviz/optimized/sfcvt.c.ll
-; Function Attrs: nounwind
-define i64 @func000000000000006c(i32 %0) #0 {
-entry:
-  %1 = add nuw nsw i32 %0, 1
-  %2 = icmp slt i32 %0, 1
-  %3 = select i1 %2, i32 1, i32 %1
-  %4 = zext i32 %3 to i64
-  ret i64 %4
-}
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i32 @llvm.umax.i32(i32, i32) #1
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i32 @llvm.usub.sat.i32(i32, i32) #1
 
 attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

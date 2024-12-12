@@ -46,19 +46,6 @@ entry:
   ret i32 %6
 }
 
-; 1 occurrences:
-; quickjs/optimized/libunicode.ll
-; Function Attrs: nounwind
-define i32 @func00000000000000e7(i8 %0, i8 %1) #0 {
-entry:
-  %2 = zext nneg i8 %1 to i32
-  %3 = shl nuw nsw i32 %2, 16
-  %4 = add nsw i32 %3, -7335840
-  %5 = zext i8 %0 to i32
-  %6 = add nuw nsw i32 %4, %5
-  ret i32 %6
-}
-
 ; 3 occurrences:
 ; freetype/optimized/cff.c.ll
 ; icu/optimized/collationfastlatin.ll
@@ -71,19 +58,6 @@ entry:
   %4 = add nsw i32 %3, -12566400
   %5 = zext i8 %0 to i32
   %6 = add nuw nsw i32 %4, %5
-  ret i32 %6
-}
-
-; 1 occurrences:
-; linux/optimized/evgpeinit.ll
-; Function Attrs: nounwind
-define i32 @func00000000000000e5(i8 %0, i8 %1) #0 {
-entry:
-  %2 = zext nneg i8 %1 to i32
-  %3 = shl nuw nsw i32 %2, 3
-  %4 = add nsw i32 %3, -1
-  %5 = zext i8 %0 to i32
-  %6 = add nsw i32 %4, %5
   ret i32 %6
 }
 

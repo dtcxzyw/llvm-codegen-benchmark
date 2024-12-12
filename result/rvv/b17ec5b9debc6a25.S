@@ -4,5 +4,5 @@ func0000000000000007:                   # @func0000000000000007
 	vwaddu.vv	v12, v11, v10
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vzext.vf2	v10, v12
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret

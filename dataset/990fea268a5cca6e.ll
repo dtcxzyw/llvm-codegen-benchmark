@@ -6,13 +6,13 @@
 ; opencv/optimized/erfilter.cpp.ll
 ; openjdk/optimized/pngrutil.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000554(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000ab4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %2, %1
   %4 = tail call i32 @llvm.abs.i32(i32 %3, i1 true)
   %5 = sub nsw i32 %0, %1
   %6 = tail call i32 @llvm.abs.i32(i32 %5, i1 true)
-  %7 = icmp ult i32 %6, %4
+  %7 = icmp samesign ult i32 %6, %4
   ret i1 %7
 }
 
@@ -25,26 +25,26 @@ declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 ; libpng/optimized/pngwutil.c.ll
 ; openusd/optimized/intrapred.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000558(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000ab8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %2, %1
   %4 = tail call i32 @llvm.abs.i32(i32 %3, i1 true)
   %5 = sub nsw i32 %0, %1
   %6 = tail call i32 @llvm.abs.i32(i32 %5, i1 true)
-  %7 = icmp ugt i32 %6, %4
+  %7 = icmp samesign ugt i32 %6, %4
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000005f4(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000bf4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %2, %1
   %4 = tail call noundef i32 @llvm.abs.i32(i32 %3, i1 true)
   %5 = sub nsw i32 %0, %1
   %6 = tail call noundef i32 @llvm.abs.i32(i32 %5, i1 true)
-  %7 = icmp ult i32 %6, %4
+  %7 = icmp samesign ult i32 %6, %4
   ret i1 %7
 }
 

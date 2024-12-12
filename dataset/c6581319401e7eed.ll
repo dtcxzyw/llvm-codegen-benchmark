@@ -1,5 +1,5 @@
 
-; 318 occurrences:
+; 315 occurrences:
 ; abc/optimized/giaJf.c.ll
 ; arrow/optimized/UriNormalize.c.ll
 ; arrow/optimized/array_base.cc.ll
@@ -122,7 +122,6 @@
 ; libzmq/optimized/ctx.cpp.ll
 ; lightgbm/optimized/dataset.cpp.ll
 ; lightgbm/optimized/metadata.cpp.ll
-; linux/optimized/input-mt.ll
 ; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
 ; llvm/optimized/SimplifyLibCalls.cpp.ll
@@ -177,7 +176,6 @@
 ; ocio/optimized/Context.cpp.ll
 ; ocio/optimized/FileFormatCCC.cpp.ll
 ; ocio/optimized/FileFormatCDL.cpp.ll
-; ocio/optimized/FileTransform.cpp.ll
 ; ocio/optimized/GroupTransform.cpp.ll
 ; ocio/optimized/NamedTransform.cpp.ll
 ; ocio/optimized/NoOps.cpp.ll
@@ -226,7 +224,6 @@
 ; opencv/optimized/pattern_result.cpp.ll
 ; opencv/optimized/perf_qrcode_pipeline.cpp.ll
 ; opencv/optimized/persistence_xml.cpp.ll
-; opencv/optimized/person_reid.cpp.ll
 ; opencv/optimized/quantization_utils.cpp.ll
 ; opencv/optimized/reduce_layer.cpp.ll
 ; opencv/optimized/reshape_layer.cpp.ll
@@ -319,17 +316,17 @@
 ; zxing/optimized/ReedSolomonDecoder.cpp.ll
 ; zxing/optimized/ReedSolomonEncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000086(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = lshr exact i64 %4, 3
   %6 = trunc i64 %5 to i32
-  %7 = icmp sgt i32 %6, %0
+  %7 = icmp slt i32 %0, %6
   ret i1 %7
 }
 
-; 246 occurrences:
+; 248 occurrences:
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/abcSaucy.c.ll
 ; abc/optimized/giaNf.c.ll
@@ -349,6 +346,7 @@ entry:
 ; assimp/optimized/XGLLoader.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/mesh_splitter.cpp.ll
+; boost/optimized/range.ll
 ; bullet3/optimized/b3OverlappingPairCache.ll
 ; bullet3/optimized/btOverlappingPairCache.ll
 ; bullet3/optimized/btSoftBody.ll
@@ -375,6 +373,8 @@ entry:
 ; darktable/optimized/Cr2Decompressor.cpp.ll
 ; draco/optimized/kd_tree_attributes_encoder.cc.ll
 ; draco/optimized/mesh_are_equivalent.cc.ll
+; eastl/optimized/BenchmarkSort.cpp.ll
+; eastl/optimized/TestSort.cpp.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; glslang/optimized/Initialize.cpp.ll
 ; glslang/optimized/Intermediate.cpp.ll
@@ -414,7 +414,6 @@ entry:
 ; lightgbm/optimized/parser.cpp.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
-; linux/optimized/input-mt.ll
 ; linux/optimized/sched.ll
 ; llvm/optimized/AArch64AsmPrinter.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
@@ -577,13 +576,13 @@ entry:
 ; zstd/optimized/zstd_compress_superblock.c.ll
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000081(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = lshr exact i64 %4, 3
   %6 = trunc i64 %5 to i32
-  %7 = icmp eq i32 %6, %0
+  %7 = icmp eq i32 %0, %6
   ret i1 %7
 }
 
@@ -708,13 +707,13 @@ entry:
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
 ; zxing/optimized/ReedSolomonDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000008a(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = lshr exact i64 %4, 3
   %6 = trunc i64 %5 to i32
-  %7 = icmp slt i32 %6, %0
+  %7 = icmp sgt i32 %0, %6
   ret i1 %7
 }
 
@@ -740,20 +739,21 @@ entry:
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; yosys/optimized/shregmap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000047(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000087(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = lshr exact i64 %4, 3
   %6 = trunc i64 %5 to i32
-  %7 = icmp sge i32 %6, %0
+  %7 = icmp sle i32 %0, %6
   ret i1 %7
 }
 
-; 111 occurrences:
+; 106 occurrences:
 ; assimp/optimized/B3DImporter.cpp.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
 ; assimp/optimized/LWOLoader.cpp.ll
+; boost/optimized/basic_iarchive.ll
 ; cvc5/optimized/ceg_instantiator.cpp.ll
 ; cvc5/optimized/cegis.cpp.ll
 ; cvc5/optimized/cegis_core_connective.cpp.ll
@@ -844,13 +844,7 @@ entry:
 ; minetest/optimized/pipeline.cpp.ll
 ; ocio/optimized/GpuShaderDesc.cpp.ll
 ; opencv/optimized/brisk.cpp.ll
-; opencv/optimized/fast_gemm.cpp.ll
-; opencv/optimized/fast_norm.cpp.ll
 ; opencv/optimized/lpsolver.cpp.ll
-; opencv/optimized/matmul_layer.cpp.ll
-; opencv/optimized/scale_layer.cpp.ll
-; opencv/optimized/seam_finders.cpp.ll
-; openexr/optimized/ImfIDManifest.cpp.ll
 ; openusd/optimized/patchTableFactory.cpp.ll
 ; php/optimized/phpdbg_utils.ll
 ; php/optimized/zend_execute.ll
@@ -863,13 +857,13 @@ entry:
 ; z3/optimized/dl_mk_similarity_compressor.cpp.ll
 ; z3/optimized/z3_replayer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000084(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = lshr exact i64 %4, 3
   %6 = trunc i64 %5 to i32
-  %7 = icmp ugt i32 %6, %0
+  %7 = icmp ult i32 %0, %6
   ret i1 %7
 }
 
@@ -886,13 +880,13 @@ entry:
 ; yosys/optimized/log.ll
 ; yosys/optimized/xilinx_dffopt.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004b(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000008b(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = lshr exact i64 %4, 3
   %6 = trunc i64 %5 to i32
-  %7 = icmp sle i32 %6, %0
+  %7 = icmp sge i32 %0, %6
   ret i1 %7
 }
 
@@ -905,7 +899,7 @@ entry:
   %4 = sub i64 %1, %3
   %5 = lshr i64 %4, 2
   %6 = trunc i64 %5 to i32
-  %7 = icmp sge i32 %6, %0
+  %7 = icmp sle i32 %0, %6
   ret i1 %7
 }
 
@@ -945,13 +939,13 @@ entry:
 ; php/optimized/zend_jit.ll
 ; php/optimized/zend_opcode.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000088(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = lshr exact i64 %4, 2
   %6 = trunc i64 %5 to i32
-  %7 = icmp ult i32 %6, %0
+  %7 = icmp ugt i32 %0, %6
   ret i1 %7
 }
 
@@ -1005,7 +999,7 @@ entry:
   %4 = sub i64 %1, %3
   %5 = lshr i64 %4, 4
   %6 = trunc i64 %5 to i32
-  %7 = icmp eq i32 %6, %0
+  %7 = icmp eq i32 %0, %6
   ret i1 %7
 }
 
@@ -1019,7 +1013,7 @@ entry:
   %4 = sub i64 %1, %3
   %5 = lshr i64 %4, 5
   %6 = trunc i64 %5 to i32
-  %7 = icmp ult i32 %6, %0
+  %7 = icmp ugt i32 %0, %6
   ret i1 %7
 }
 
@@ -1032,7 +1026,7 @@ entry:
   %4 = sub i64 %1, %3
   %5 = lshr i64 %4, 3
   %6 = trunc i64 %5 to i32
-  %7 = icmp sle i32 %6, %0
+  %7 = icmp sge i32 %0, %6
   ret i1 %7
 }
 
@@ -1055,13 +1049,27 @@ entry:
 ; openspiel/optimized/infostate_tree_test.cc.ll
 ; yosys/optimized/opt_expr.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000008c(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = lshr exact i64 %4, 2
   %6 = trunc i64 %5 to i32
-  %7 = icmp ne i32 %6, %0
+  %7 = icmp ne i32 %0, %6
+  ret i1 %7
+}
+
+; 2 occurrences:
+; boost/optimized/basic_iarchive.ll
+; llvm/optimized/UninitializedValues.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000089(i32 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %1, %3
+  %5 = lshr exact i64 %4, 4
+  %6 = trunc i64 %5 to i32
+  %7 = icmp uge i32 %0, %6
   ret i1 %7
 }
 
@@ -1101,7 +1109,7 @@ entry:
   %4 = sub i64 %1, %3
   %5 = lshr i64 %4, 3
   %6 = trunc i64 %5 to i32
-  %7 = icmp sgt i32 %6, %0
+  %7 = icmp slt i32 %0, %6
   ret i1 %7
 }
 
@@ -1120,20 +1128,7 @@ entry:
   %4 = sub i64 %1, %3
   %5 = lshr i64 %4, 3
   %6 = trunc i64 %5 to i32
-  %7 = icmp ugt i32 %6, %0
-  ret i1 %7
-}
-
-; 1 occurrences:
-; llvm/optimized/UninitializedValues.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000049(i32 %0, i64 %1, ptr %2) #0 {
-entry:
-  %3 = ptrtoint ptr %2 to i64
-  %4 = sub i64 %1, %3
-  %5 = lshr exact i64 %4, 4
-  %6 = trunc i64 %5 to i32
-  %7 = icmp ule i32 %6, %0
+  %7 = icmp ult i32 %0, %6
   ret i1 %7
 }
 
@@ -1147,7 +1142,25 @@ entry:
   %4 = sub i64 %1, %3
   %5 = lshr i64 %4, 2
   %6 = trunc i64 %5 to i32
-  %7 = icmp slt i32 %6, %0
+  %7 = icmp sgt i32 %0, %6
+  ret i1 %7
+}
+
+; 6 occurrences:
+; opencv/optimized/fast_gemm.cpp.ll
+; opencv/optimized/fast_norm.cpp.ll
+; opencv/optimized/matmul_layer.cpp.ll
+; opencv/optimized/scale_layer.cpp.ll
+; opencv/optimized/seam_finders.cpp.ll
+; openexr/optimized/ImfIDManifest.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000094(i32 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %1, %3
+  %5 = lshr exact i64 %4, 5
+  %6 = trunc i64 %5 to i32
+  %7 = icmp samesign ult i32 %0, %6
   ret i1 %7
 }
 

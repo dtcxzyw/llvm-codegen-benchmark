@@ -3,7 +3,7 @@
 ; ruby/optimized/regcomp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000026(i32 %0) #0 {
+define i32 @func0000000000000046(i32 %0) #0 {
 entry:
   %1 = shl nuw i32 1, %0
   %2 = icmp slt i32 %0, 32
@@ -17,10 +17,10 @@ entry:
 ; php/optimized/pcre2_compile.ll
 ; qemu/optimized/hw_vfio_pci.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000024(i32 %0) #0 {
+define i32 @func0000000000000054(i32 %0) #0 {
 entry:
   %1 = shl nuw i32 16, %0
-  %2 = icmp ult i32 %0, 28
+  %2 = icmp samesign ult i32 %0, 28
   %3 = select i1 %2, i32 %1, i32 0
   ret i32 %3
 }
@@ -36,11 +36,22 @@ entry:
   ret i32 %3
 }
 
+; 1 occurrences:
+; php/optimized/pcre2_compile.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000044(i32 %0) #0 {
+entry:
+  %1 = shl nuw i32 1, %0
+  %2 = icmp ult i32 %0, 32
+  %3 = select i1 %2, i32 %1, i32 1
+  ret i32 %3
+}
+
 ; 2 occurrences:
 ; abc/optimized/ifDec75.c.ll
 ; opencv/optimized/tree.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000002a(i32 %0) #0 {
+define i32 @func000000000000004a(i32 %0) #0 {
 entry:
   %1 = shl nuw i32 1, %0
   %2 = icmp sgt i32 %0, 1
@@ -52,7 +63,7 @@ entry:
 ; hwloc/optimized/lstopo-lstopo-fig.ll
 ; hwloc/optimized/lstopo_no_graphics-lstopo-fig.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000002c(i32 %0) #0 {
+define i32 @func000000000000004c(i32 %0) #0 {
 entry:
   %1 = shl nuw i32 1, %0
   %.not = icmp eq i32 %0, 0

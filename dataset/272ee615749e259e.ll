@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/hw_net_rocker_rocker_of_dpa.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i16 %0, i8 %1) #0 {
+define i1 @func000000000000004c(i16 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp ne i16 %0, 40
@@ -68,11 +68,10 @@ entry:
   ret i1 %4
 }
 
-; 9 occurrences:
-; llvm/optimized/AArch64FastISel.cpp.ll
+; 8 occurrences:
+; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/X86FastISel.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -90,7 +89,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/DefinitionBlockSeparator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i16 %0, i8 %1) #0 {
+define i1 @func0000000000000041(i16 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp eq i16 %0, 24
@@ -102,7 +101,7 @@ entry:
 ; llvm/optimized/PPMacroExpansion.cpp.ll
 ; postgres/optimized/print.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i16 %0, i8 %1) #0 {
+define i1 @func0000000000000044(i16 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp ult i16 %0, 2

@@ -56,34 +56,17 @@ entry:
   ret i64 %6
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; gromacs/optimized/dgebrd.cpp.ll
 ; gromacs/optimized/dsytrd.cpp.ll
 ; gromacs/optimized/sgebrd.cpp.ll
 ; gromacs/optimized/ssytrd.cpp.ll
 ; openblas/optimized/dlagsy.c.ll
-; openblas/optimized/dsygst.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = add i32 %0, %1
-  %5 = mul i32 %4, %3
-  %6 = sext i32 %5 to i64
-  ret i64 %6
-}
-
-; 5 occurrences:
-; gromacs/optimized/dtrtri.cpp.ll
-; gromacs/optimized/strtri.cpp.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
-; openblas/optimized/dsytrf_aa_2stage.c.ll
-; openblas/optimized/dtgex2.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add i32 %2, 1
-  %4 = add nsw i32 %0, %1
   %5 = mul i32 %4, %3
   %6 = sext i32 %5 to i64
   ret i64 %6
@@ -123,6 +106,19 @@ entry:
   %3 = add nsw i32 %2, 1
   %4 = add i32 %0, %1
   %5 = mul nsw i32 %4, %3
+  %6 = sext i32 %5 to i64
+  ret i64 %6
+}
+
+; 2 occurrences:
+; openblas/optimized/dsytrf_aa_2stage.c.ll
+; openblas/optimized/dtgex2.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %2, 1
+  %4 = add nsw i32 %0, %1
+  %5 = mul i32 %4, %3
   %6 = sext i32 %5 to i64
   ret i64 %6
 }

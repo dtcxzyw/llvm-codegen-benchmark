@@ -21,7 +21,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = and i64 %1, -16
   %5 = mul i64 %4, %3
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 

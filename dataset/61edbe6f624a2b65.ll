@@ -4,7 +4,7 @@
 ; opencv/optimized/norm.cpp.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 128
   %3 = icmp ult i64 %2, 256
@@ -20,7 +20,7 @@ entry:
 ; mold/optimized/arch-riscv.cc.RV64BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV64LE.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 3968
   %3 = icmp eq i32 %2, 0
@@ -35,7 +35,7 @@ entry:
 ; mold/optimized/arch-riscv.cc.RV64BE.cc.ll
 ; qemu/optimized/tcg.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i64 %1) #0 {
+define i1 @func000000000000008c(i32 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 32
   %3 = icmp ult i64 %2, 64
@@ -48,7 +48,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/hw_pci_pci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000101(i32 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -4294967296
   %3 = icmp ult i64 %2, -4294967295
@@ -61,7 +61,7 @@ entry:
 ; 1 occurrences:
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000184(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 4
   %3 = icmp ne i32 %2, 0

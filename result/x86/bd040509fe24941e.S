@@ -30,19 +30,19 @@ func0000000000000042:                   # @func0000000000000042
 	vucomiss	%xmm1, %xmm0
 	seta	%al
 	retq
-.LCPI5_0:
+func000000000000002a:                   # @func000000000000002a
+	vmaxss	%xmm2, %xmm1, %xmm1
+	vsubss	%xmm0, %xmm1, %xmm0
+	vxorps	%xmm1, %xmm1, %xmm1
+	vucomiss	%xmm0, %xmm1
+	setae	%al
+	retq
+.LCPI6_0:
 	.long	0xff800000                      # float -Inf
 func0000000000000028:                   # @func0000000000000028
 	vminss	%xmm2, %xmm1, %xmm1
 	vsubss	%xmm0, %xmm1, %xmm0
-	vmovss	.LCPI5_0(%rip), %xmm1           # xmm1 = [-Inf,0.0E+0,0.0E+0,0.0E+0]
-	vucomiss	%xmm0, %xmm1
-	setae	%al
-	retq
-func000000000000002a:                   # @func000000000000002a
-	vminss	%xmm2, %xmm1, %xmm1
-	vsubss	%xmm0, %xmm1, %xmm0
-	vxorps	%xmm1, %xmm1, %xmm1
+	vmovss	.LCPI6_0(%rip), %xmm1           # xmm1 = [-Inf,0.0E+0,0.0E+0,0.0E+0]
 	vucomiss	%xmm0, %xmm1
 	setae	%al
 	retq

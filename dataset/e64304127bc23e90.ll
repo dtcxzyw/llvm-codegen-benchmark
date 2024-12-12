@@ -11,7 +11,7 @@
 ; ruby/optimized/stringio.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = call i64 @llvm.smin.i64(i64 %0, i64 %1)
   ret i64 %2

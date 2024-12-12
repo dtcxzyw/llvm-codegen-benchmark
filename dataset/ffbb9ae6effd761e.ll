@@ -1,5 +1,6 @@
 
-; 469 occurrences:
+; 470 occurrences:
+; boost/optimized/approximately_equals.ll
 ; cmake/optimized/xmlparse.c.ll
 ; cpython/optimized/xmlparse.ll
 ; fmt/optimized/chrono-test.cc.ll
@@ -478,17 +479,16 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; folly/optimized/File.cpp.ll
 ; folly/optimized/Singleton.cpp.ll
 ; linux/optimized/fib_trie.ll
-; redis/optimized/dict.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
   %3 = lshr i64 %0, %2
-  %4 = icmp ult i64 %3, 4
+  %4 = icmp samesign ult i64 %3, 4
   ret i1 %4
 }
 
@@ -505,6 +505,17 @@ entry:
 }
 
 ; 1 occurrences:
+; regex-rs/optimized/33whcn8n29l9c6ys.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 63
+  %3 = lshr i64 %0, %2
+  %4 = icmp samesign ugt i64 %3, 2097152
+  ret i1 %4
+}
+
+; 1 occurrences:
 ; linux/optimized/vmscan.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i64 %0, i64 %1) #0 {
@@ -512,6 +523,17 @@ entry:
   %2 = and i64 %1, 4294967295
   %3 = lshr i64 %0, %2
   %4 = icmp ne i64 %3, 0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; redis/optimized/dict.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 4294967295
+  %3 = lshr i64 %0, %2
+  %4 = icmp ult i64 %3, 5
   ret i1 %4
 }
 

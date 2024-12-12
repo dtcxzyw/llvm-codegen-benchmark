@@ -1,62 +1,37 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	movi	v4.4s, #2, lsl #8
-	shl	v3.4s, v3.4s, #9
-	shl	v2.4s, v2.4s, #9
-	movi	v5.4s, #30, lsl #8
-	movi	v6.4s, #224, lsl #24
-	add	v3.4s, v3.4s, v4.4s
-	add	v2.4s, v2.4s, v4.4s
-	and	v1.16b, v1.16b, v6.16b
-	and	v0.16b, v0.16b, v6.16b
-	and	v3.16b, v3.16b, v5.16b
-	and	v2.16b, v2.16b, v5.16b
-	orr	v0.16b, v2.16b, v0.16b
-	orr	v1.16b, v3.16b, v1.16b
+	lsl	w8, w1, #9
+	and	w9, w0, #0xe0000000
+	add	w8, w8, #512
+	and	w8, w8, #0x1e00
+	orr	w0, w8, w9
 	ret
                                         // -- End function
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
-	movi	v4.4s, #253, lsl #16
-	shl	v3.4s, v3.4s, #16
-	shl	v2.4s, v2.4s, #16
-	movi	v5.2d, #0x00ffff0000ffff
-	add	v3.4s, v3.4s, v4.4s
-	add	v2.4s, v2.4s, v4.4s
-	and	v1.16b, v1.16b, v5.16b
-	and	v0.16b, v0.16b, v5.16b
-	bic	v3.4s, #127, lsl #24
-	bic	v2.4s, #127, lsl #24
-	orr	v0.16b, v2.16b, v0.16b
-	orr	v1.16b, v3.16b, v1.16b
+	lsl	w8, w1, #16
+	add	w8, w8, #4048, lsl #12          // =16580608
+	and	w8, w8, #0xff0000
+	bfxil	w8, w0, #0, #16
+	mov	x0, x8
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	mvni	v4.4s, #1
-	add	v3.4s, v3.4s, v3.4s
+	lsl	w9, w1, #1
 	mov	w8, #-28687                     // =0xffff8ff1
-	add	v2.4s, v2.4s, v2.4s
-	add	v3.4s, v3.4s, v4.4s
-	add	v2.4s, v2.4s, v4.4s
-	dup	v4.4s, w8
-	bic	v3.4s, #112, lsl #8
-	bic	v2.4s, #112, lsl #8
-	and	v1.16b, v1.16b, v4.16b
-	and	v0.16b, v0.16b, v4.16b
-	orr	v0.16b, v2.16b, v0.16b
-	orr	v1.16b, v3.16b, v1.16b
+	and	w8, w0, w8
+	sub	w9, w9, #2
+	and	w9, w9, #0xffff8fff
+	orr	w0, w9, w8
 	ret
                                         // -- End function
 func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
-	movi	v4.4s, #127, lsl #16
-	shl	v2.4s, v2.4s, #16
-	shl	v3.4s, v3.4s, #16
-	movi	v5.2d, #0xff00ffffff00ffff
-	add	v3.4s, v3.4s, v4.4s
-	add	v2.4s, v2.4s, v4.4s
-	bif	v0.16b, v2.16b, v5.16b
-	bif	v1.16b, v3.16b, v5.16b
+	lsl	w8, w1, #8
+	add	w8, w8, #3, lsl #12             // =12288
+	and	w8, w8, #0xff00
+	bfxil	w8, w0, #0, #8
+	mov	x0, x8
 	ret
                                         // -- End function

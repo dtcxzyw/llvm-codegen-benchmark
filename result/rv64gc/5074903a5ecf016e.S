@@ -10,7 +10,7 @@ func0000000000000007:                   # @func0000000000000007
 	bnez	a2, .LBB1_2
 	li	a1, 256
 .LBB1_2:                                # %entry
-	mulw	a0, a1, a0
+	mulw	a0, a0, a1
 	ret
 func0000000000000013:                   # @func0000000000000013
 	andi	a2, a2, 255

@@ -1,5 +1,5 @@
 
-; 105 occurrences:
+; 106 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; abc/optimized/ivyBalance.c.ll
@@ -20,6 +20,7 @@
 ; gromacs/optimized/gmxcpp.cpp.ll
 ; gromacs/optimized/pdb2top.cpp.ll
 ; gromacs/optimized/qmmmoptions.cpp.ll
+; lvgl/optimized/lv_flex.ll
 ; mold/optimized/cmdline.cc.ALPHA.cc.ll
 ; mold/optimized/cmdline.cc.ARM32.cc.ll
 ; mold/optimized/cmdline.cc.ARM64.cc.ll

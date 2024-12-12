@@ -2,12 +2,12 @@
 ; 1 occurrences:
 ; ruby/optimized/rmd160.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000000f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sub i32 64, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -27,18 +27,29 @@ entry:
   ret ptr %6
 }
 
-; 5 occurrences:
-; luau/optimized/lnumprint.cpp.ll
-; php/optimized/dtoa.ll
+; 3 occurrences:
 ; php/optimized/ir_ra.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000003f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw [4 x i8], ptr %1, i64 %4
+  %5 = getelementptr nusw nuw [4 x i8], ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 2 occurrences:
+; luau/optimized/lnumprint.cpp.ll
+; php/optimized/dtoa.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003e(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = sub nsw i32 2, %2
+  %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
   %6 = getelementptr nusw i8, ptr %5, i64 %0
   ret ptr %6
 }
@@ -46,11 +57,23 @@ entry:
 ; 1 occurrences:
 ; git/optimized/record.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000001f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sub i32 9, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 1 occurrences:
+; git/optimized/record.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001e(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = sub i32 9, %2
+  %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
   %6 = getelementptr nusw i8, ptr %5, i64 %0
   ret ptr %6
 }
@@ -58,11 +81,11 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/stereobm.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000038(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000003c(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
   %6 = getelementptr i8, ptr %5, i64 %0
   ret ptr %6
 }

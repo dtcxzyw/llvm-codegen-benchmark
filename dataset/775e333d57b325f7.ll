@@ -1,5 +1,5 @@
 
-; 382 occurrences:
+; 377 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; clamav/optimized/vba_extract.c.ll
@@ -113,7 +113,6 @@
 ; linux/optimized/esp6.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/intel_pps.ll
-; linux/optimized/ip6_checksum.ll
 ; linux/optimized/keyboard.ll
 ; linux/optimized/netpoll.ll
 ; linux/optimized/pci.ll
@@ -165,17 +164,10 @@
 ; mold/optimized/output-chunks.cc.I386.cc.ll
 ; mold/optimized/output-chunks.cc.LOONGARCH32.cc.ll
 ; mold/optimized/output-chunks.cc.LOONGARCH64.cc.ll
-; mold/optimized/output-chunks.cc.M68K.cc.ll
-; mold/optimized/output-chunks.cc.PPC32.cc.ll
-; mold/optimized/output-chunks.cc.PPC64V1.cc.ll
 ; mold/optimized/output-chunks.cc.PPC64V2.cc.ll
-; mold/optimized/output-chunks.cc.RV32BE.cc.ll
 ; mold/optimized/output-chunks.cc.RV32LE.cc.ll
-; mold/optimized/output-chunks.cc.RV64BE.cc.ll
 ; mold/optimized/output-chunks.cc.RV64LE.cc.ll
-; mold/optimized/output-chunks.cc.S390X.cc.ll
 ; mold/optimized/output-chunks.cc.SH4.cc.ll
-; mold/optimized/output-chunks.cc.SPARC64.cc.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
 ; mold/optimized/passes.cc.ALPHA.cc.ll
 ; mold/optimized/passes.cc.ARM32.cc.ll
@@ -279,10 +271,7 @@
 ; postgres/optimized/opclasscmds.ll
 ; postgres/optimized/pgc.ll
 ; postgres/optimized/repl_scanner.ll
-; qemu/optimized/hw_net_e1000.c.ll
 ; qemu/optimized/hw_net_net_rx_pkt.c.ll
-; qemu/optimized/hw_net_net_tx_pkt.c.ll
-; qemu/optimized/hw_net_vmxnet3.c.ll
 ; qemu/optimized/virtio-9p-client.c.ll
 ; raylib/optimized/raudio.c.ll
 ; ruby/optimized/strftime.ll
@@ -381,6 +370,12 @@
 ; wireshark/optimized/tap-rtp-analysis.c.ll
 ; wireshark/optimized/wimax_pdu_decoder.c.ll
 ; wolfssl/optimized/tls.c.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
+; zed-rs/optimized/d1la7tbj4bxfzuf7lklrygwfp.ll
+; zed-rs/optimized/diggdkpukg0xn23g7ivuh3jfw.ll
 ; zstd/optimized/zstd_compress_sequences.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000001(i16 %0) #0 {
@@ -390,8 +385,19 @@ entry:
   ret i16 %2
 }
 
-; 4 occurrences:
-; linux/optimized/dmar.ll
+; 3 occurrences:
+; boost/optimized/cpu_timer.ll
+; imgui/optimized/imgui_tables.cpp.ll
+; postgres/optimized/gistbuild.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000006(i16 %0) #0 {
+entry:
+  %1 = icmp slt i16 %0, 0
+  %2 = select i1 %1, i16 6, i16 %0
+  ret i16 %2
+}
+
+; 3 occurrences:
 ; linux/optimized/i915_vma.ll
 ; linux/optimized/keyboard.ll
 ; slurm/optimized/job_test.ll

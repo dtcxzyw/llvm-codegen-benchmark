@@ -2,11 +2,11 @@
 ; 1 occurrences:
 ; wireshark/optimized/packet-dof.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000078(ptr %0, i8 %1, i8 %2) #0 {
+define ptr @func000000000000007c(ptr %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add nuw nsw i8 %1, %2
   %4 = zext nneg i8 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 6
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 6
   %6 = getelementptr i8, ptr %5, i64 %4
   ret ptr %6
 }
@@ -26,12 +26,12 @@ entry:
 ; protobuf/optimized/message_builder.cc.ll
 ; protobuf/optimized/message_builder_lite.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i8 %1, i8 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add i8 %1, %2
   %4 = zext i8 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 256
-  %6 = getelementptr nusw ptr, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 256
+  %6 = getelementptr nusw nuw ptr, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -50,12 +50,12 @@ entry:
 ; 1 occurrences:
 ; ozz-animation/optimized/animation_builder.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i8 %1, i8 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add nuw nsw i8 %1, %2
   %4 = zext nneg i8 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 1
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   ret ptr %6
 }
 

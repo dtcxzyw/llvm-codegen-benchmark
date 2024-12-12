@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/date_core.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000194(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000324(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 0
   %3 = select i1 %2, i32 %0, i32 %1
@@ -11,17 +11,16 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; c3c/optimized/diagnostics.c.ll
 ; hyperscan/optimized/ng_find_matches.cpp.ll
-; qemu/optimized/hw_net_can_ctucan_core.c.ll
 ; wireshark/optimized/file.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i32 %0, i32 %1
-  %4 = icmp eq i32 %3, 4
+  %4 = icmp eq i32 %3, 1
   ret i1 %4
 }
 
@@ -31,7 +30,7 @@ entry:
 ; rust-analyzer-rs/optimized/3hcpc53socutnyz5.ll
 ; rust-analyzer-rs/optimized/3nofq7oo06gx5fjm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a4(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i32 %0, i32 %1
@@ -50,7 +49,7 @@ entry:
 ; postgres/optimized/output.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000084(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, -1
   %3 = select i1 %2, i32 %0, i32 %1
@@ -62,23 +61,11 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/varsup.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000204(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 3
   %3 = select i1 %2, i32 %0, i32 %1
   %4 = add i32 %3, -3000000
-  %5 = icmp ult i32 %4, 3
-  ret i1 %5
-}
-
-; 1 occurrences:
-; icu/optimized/hebrwcal.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000284(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp sgt i32 %1, 380
-  %3 = select i1 %2, i32 %0, i32 %1
-  %4 = add i32 %3, -353
   %5 = icmp ult i32 %4, 3
   ret i1 %5
 }

@@ -18,10 +18,12 @@ func000000000000000a:                   # @func000000000000000a
 	vbroadcastss	.LCPI2_1(%rip), %ymm0 {%k1} # ymm0 {%k1} = [-3.0E+0,-3.0E+0,-3.0E+0,-3.0E+0,-3.0E+0,-3.0E+0,-3.0E+0,-3.0E+0]
 	retq
 .LCPI3_0:
-	.long	4194272                         # 0x3fffe0
+	.long	1                               # 0x1
 .LCPI3_1:
-	.long	0xc2000000                      # float -32
-func0000000000000004:                   # @func0000000000000004
-	vpcmpltud	.LCPI3_0(%rip){1to8}, %ymm1, %k1
-	vbroadcastss	.LCPI3_1(%rip), %ymm0 {%k1} # ymm0 {%k1} = [-3.2E+1,-3.2E+1,-3.2E+1,-3.2E+1,-3.2E+1,-3.2E+1,-3.2E+1,-3.2E+1]
+	.long	0xbf000000                      # float -0.5
+func000000000000000c:                   # @func000000000000000c
+	vpcmpeqd	.LCPI3_0(%rip){1to8}, %ymm1, %k1
+	vbroadcastss	.LCPI3_1(%rip), %ymm1   # ymm1 = [-5.0E-1,-5.0E-1,-5.0E-1,-5.0E-1,-5.0E-1,-5.0E-1,-5.0E-1,-5.0E-1]
+	vmovaps	%ymm0, %ymm1 {%k1}
+	vmovaps	%ymm1, %ymm0
 	retq

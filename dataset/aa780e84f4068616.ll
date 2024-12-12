@@ -16,9 +16,8 @@ entry:
   ret i64 %3
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; arrow/optimized/scalar_cast_temporal.cc.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; opencv/optimized/pipeline_modeling_tool.cpp.ll
 ; openmpi/optimized/ad_nfs_read.ll
 ; openmpi/optimized/ad_nfs_write.ll

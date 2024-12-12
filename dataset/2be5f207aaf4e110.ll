@@ -15,16 +15,15 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
-; minetest/optimized/texturesource.cpp.ll
+; 2 occurrences:
 ; php/optimized/crypt_freesec.ll
 ; wireshark/optimized/packet-vnc.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 %2, i32 1
+  %3 = select i1 %1, i32 %2, i32 18
   %4 = add nuw nsw i32 %3, %0
-  %5 = and i32 %4, 65535
+  %5 = and i32 %4, 63
   ret i32 %5
 }
 
@@ -35,7 +34,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 %2, i32 0
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = and i32 %4, 268435455
   ret i32 %5
 }

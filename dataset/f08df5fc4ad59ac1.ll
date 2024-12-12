@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 26 occurrences:
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/xmltok.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
@@ -12,7 +12,6 @@
 ; libwebp/optimized/webpinfo.c.ll
 ; linux/optimized/cistpl.ll
 ; linux/optimized/intel-gtt.ll
-; linux/optimized/intel_step.ll
 ; miniaudio/optimized/unity.c.ll
 ; opencv/optimized/persistence.cpp.ll
 ; openjdk/optimized/hb-aat-layout.ll
@@ -23,7 +22,6 @@
 ; raylib/optimized/raudio.c.ll
 ; redis/optimized/hyperloglog.ll
 ; ruby/optimized/bubblebabble.ll
-; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; wireshark/optimized/packet-ansi_637.c.ll
 ; wireshark/optimized/packet-gsm_a_dtap.c.ll
 ; wireshark/optimized/packet-usb-hid.c.ll

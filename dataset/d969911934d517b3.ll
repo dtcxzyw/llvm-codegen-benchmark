@@ -1,6 +1,7 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/value_semantic.ll
 ; cvc5/optimized/conjecture_generator.cpp.ll
 ; cvc5/optimized/core_solver.cpp.ll
 ; cvc5/optimized/theory_sets_rels.cpp.ll
@@ -14,7 +15,7 @@
 ; opencv/optimized/planar_tracking.cpp.ll
 ; xgboost/optimized/column_matrix.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000128(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = zext i32 %2 to i64
@@ -31,7 +32,7 @@ entry:
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; darktable/optimized/PentaxDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000124(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = zext i32 %2 to i64

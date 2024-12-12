@@ -13,6 +13,18 @@ entry:
   ret i32 %5
 }
 
+; 1 occurrences:
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 10
+  %3 = add nuw nsw i32 %0, -56613888
+  %4 = add i32 %3, %2
+  %5 = lshr i32 %4, 18
+  ret i32 %5
+}
+
 ; 3 occurrences:
 ; linux/optimized/vlv_dsi.ll
 ; openusd/optimized/gen_scalers.c.ll

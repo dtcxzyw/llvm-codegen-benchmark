@@ -5,14 +5,14 @@
 ; linux/optimized/filter.ll
 ; oiio/optimized/icooutput.cpp.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; qemu/optimized/util_filemonitor-inotify.c.ll
 ; wireshark/optimized/proto.c.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 %0, %1
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, -16
+  %4 = add nsw i64 %3, -24
   ret i64 %4
 }
 

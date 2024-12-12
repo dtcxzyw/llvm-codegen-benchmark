@@ -1,5 +1,5 @@
 
-; 93 occurrences:
+; 92 occurrences:
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; arrow/optimized/concatenate.cc.ll
@@ -24,7 +24,6 @@
 ; linux/optimized/pkcs7_parser.ll
 ; linux/optimized/pt.ll
 ; linux/optimized/tx.ll
-; linux/optimized/utaddress.ll
 ; llvm/optimized/APINotesWriter.cpp.ll
 ; llvm/optimized/COFFImportFile.cpp.ll
 ; llvm/optimized/DbiModuleDescriptor.cpp.ll
@@ -97,24 +96,7 @@
 define i32 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 4294967243
-  %3 = add i64 %2, %0
-  %4 = trunc i64 %3 to i32
-  ret i32 %4
-}
-
-; 7 occurrences:
-; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
-; cvc5/optimized/quant_conflict_find.cpp.ll
-; git/optimized/xprepare.ll
-; linux/optimized/kobject.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; velox/optimized/NthValue.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000010(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add nsw i64 %1, 2
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }
@@ -275,7 +257,22 @@ entry:
 define i32 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 719468
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
+  %4 = trunc i64 %3 to i32
+  ret i32 %4
+}
+
+; 5 occurrences:
+; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
+; cvc5/optimized/quant_conflict_find.cpp.ll
+; git/optimized/xprepare.ll
+; linux/optimized/kobject.ll
+; velox/optimized/NthValue.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000010(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %1, 4294967295
+  %3 = add i64 %2, %0
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }
@@ -293,16 +290,17 @@ entry:
 define i32 @func000000000000003e(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 3
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = trunc nuw i64 %3 to i32
   ret i32 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; rust-analyzer-rs/optimized/5ac99zaxn7b9r9xv.ll
 ; rust-analyzer-rs/optimized/hf9vzunhg9aziex.ll
 ; rust-analyzer-rs/optimized/hknx1qr3lu9291s.ll
+; wasmtime-rs/optimized/4aijogcjfl814gfb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
@@ -312,10 +310,9 @@ entry:
   ret i32 %4
 }
 
-; 30 occurrences:
+; 29 occurrences:
 ; darktable/optimized/DeflateDecompressor.cpp.ll
 ; darktable/optimized/introspection_hotpixels.c.ll
-; linux/optimized/gcm.ll
 ; linux/optimized/ndisc.ll
 ; openusd/optimized/connectableAPI.cpp.ll
 ; openusd/optimized/dataSourceLocator.cpp.ll
@@ -347,7 +344,7 @@ entry:
 define i32 @func000000000000003c(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 600
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }
@@ -359,7 +356,7 @@ entry:
 define i32 @func0000000000000013(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 1
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = trunc nuw nsw i64 %3 to i32
   ret i32 %4
 }
@@ -398,7 +395,7 @@ entry:
 define i32 @func0000000000000033(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 16
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = trunc nuw nsw i64 %3 to i32
   ret i32 %4
 }
@@ -420,7 +417,7 @@ entry:
 define i32 @func0000000000000039(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   %4 = trunc nsw i64 %3 to i32
   ret i32 %4
 }
@@ -468,17 +465,6 @@ entry:
   %2 = add nuw i64 %1, 4294967294
   %3 = add i64 %2, %0
   %4 = trunc i64 %3 to i32
-  ret i32 %4
-}
-
-; 1 occurrences:
-; sentencepiece/optimized/unigram_model_trainer.cc.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000021(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add nuw i64 %1, 1
-  %3 = add i64 %2, %0
-  %4 = trunc nsw i64 %3 to i32
   ret i32 %4
 }
 

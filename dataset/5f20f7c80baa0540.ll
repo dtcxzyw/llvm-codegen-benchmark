@@ -18,7 +18,7 @@ entry:
   ret i64 %5
 }
 
-; 17 occurrences:
+; 19 occurrences:
 ; darktable/optimized/OrfDecoder.cpp.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hyperscan/optimized/ComponentRepeat.cpp.ll
@@ -26,6 +26,8 @@ entry:
 ; linux/optimized/drm_format_helper.ll
 ; linux/optimized/vt.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
+; lvgl/optimized/lv_array.ll
+; lvgl/optimized/lv_table.ll
 ; mitsuba3/optimized/jitallocator.cpp.ll
 ; oiio/optimized/Reader.cpp.ll
 ; oiio/optimized/iffoutput.cpp.ll
@@ -69,7 +71,7 @@ entry:
 define i64 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw i32 %1, %2
-  %4 = mul nuw i32 %3, %0
+  %4 = mul nuw i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }
@@ -82,13 +84,14 @@ entry:
 define i64 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; freetype/optimized/sfnt.c.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
 ; php/optimized/pcre2_compile.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
@@ -110,18 +113,8 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
-; oiio/optimized/DPXColorConverter.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sub i32 %1, %2
-  %4 = mul nsw i32 %3, %0
-  %5 = zext nneg i32 %4 to i64
-  ret i64 %5
-}
-
-; 11 occurrences:
+; 13 occurrences:
+; abc/optimized/bmcBmcAnd.c.ll
 ; gromacs/optimized/atomdata.cpp.ll
 ; opencv/optimized/datastructs.cpp.ll
 ; opencv/optimized/dct_image_denoising.cpp.ll
@@ -133,11 +126,34 @@ entry:
 ; pbrt-v4/optimized/lights.cpp.ll
 ; pbrt-v4/optimized/shapes.cpp.ll
 ; pocketpy/optimized/array2d.cpp.ll
+; zxing/optimized/PDFDetectionResultColumn.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = mul nsw i32 %3, %0
+  %5 = zext nneg i32 %4 to i64
+  ret i64 %5
+}
+
+; 1 occurrences:
+; abc/optimized/bmcBmcAnd.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub nsw i32 %1, %2
+  %4 = mul nuw nsw i32 %3, %0
+  %5 = zext nneg i32 %4 to i64
+  ret i64 %5
+}
+
+; 1 occurrences:
+; oiio/optimized/DPXColorConverter.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub i32 %1, %2
+  %4 = mul nsw i32 %0, %3
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }

@@ -1,6 +1,7 @@
-func000000000000001f:                   # @func000000000000001f
+func000000000000002f:                   # @func000000000000002f
 	movzbl	%dil, %eax
-	leal	8(,%rax,8), %eax
+	addl	$-49, %eax
+	shlq	$4, %rax
 	retq
 func000000000000000f:                   # @func000000000000000f
 	movzbl	%dil, %eax

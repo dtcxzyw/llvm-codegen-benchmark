@@ -1,3 +1,7 @@
+func0000000000000000:                   # @func0000000000000000
+	andl	$-256, %esi
+	leal	(%rdi,%rsi,8), %eax
+	retq
 func000000000000000a:                   # @func000000000000000a
 	andl	$-256, %esi
 	leal	(%rdi,%rsi,8), %eax

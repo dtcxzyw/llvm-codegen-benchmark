@@ -96,3 +96,11 @@ func0000000000000009:                   # @func0000000000000009
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+.LCPI13_0:
+	.long	0x7f800000                      # float +Inf
+func0000000000000006:                   # @func0000000000000006
+	vaddps	%zmm1, %zmm0, %zmm0
+	vcmpneq_oqps	.LCPI13_0(%rip){1to16}, %zmm0, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq

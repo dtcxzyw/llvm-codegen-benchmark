@@ -5,7 +5,7 @@
 ; libquic/optimized/dtoa.cc.ll
 ; php/optimized/zend_strtod.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000006b(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000ab(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %0, 31
   %3 = call i32 @llvm.smin.i32(i32 %1, i32 0)
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/pcapng.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c7(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000187(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 4, %1
   %3 = icmp eq i32 %1, 0

@@ -1,4 +1,28 @@
 
+; 1 occurrences:
+; lvgl/optimized/lv_arc.ll
+; Function Attrs: nounwind
+define i1 @func000000000000004b(float %0) #0 {
+entry:
+  %1 = fneg float %0
+  %2 = fcmp ogt float %0, 0.000000e+00
+  %3 = select i1 %2, float %0, float %1
+  %4 = fcmp ule float %3, 2.800000e+02
+  ret i1 %4
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_arc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000044(float %0) #0 {
+entry:
+  %1 = fneg float %0
+  %2 = fcmp ogt float %0, 0.000000e+00
+  %3 = select i1 %2, float %0, float %1
+  %4 = fcmp ogt float %3, 1.800000e+02
+  ret i1 %4
+}
+
 ; 3 occurrences:
 ; oiio/optimized/imagebufalgo_xform.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll

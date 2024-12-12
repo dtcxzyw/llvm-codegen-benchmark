@@ -135,7 +135,7 @@ func000000000000001f:                   # @func000000000000001f
 	.long	4294967167                      # 0xffffff7f
 .LCPI4_2:
 	.long	4294967103                      # 0xffffff3f
-func0000000000000085:                   # @func0000000000000085
+func0000000000000185:                   # @func0000000000000185
 	vpcmpnleub	.LCPI4_0(%rip), %xmm1, %k1
 	vpaddd	.LCPI4_1(%rip){1to8}, %ymm0, %ymm1
 	vpaddd	.LCPI4_2(%rip){1to8}, %ymm0, %ymm1 {%k1}

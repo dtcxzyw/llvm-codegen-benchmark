@@ -69,9 +69,8 @@ entry:
   ret i64 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; assimp/optimized/ASELoader.cpp.ll
-; darktable/optimized/introspection_liquify.c.ll
 ; draco/optimized/point_cloud_encoder.cc.ll
 ; hyperscan/optimized/ng_netflow.cpp.ll
 ; minetest/optimized/CGUITTFont.cpp.ll

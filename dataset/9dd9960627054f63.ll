@@ -12,7 +12,7 @@ entry:
   ret i1 %5
 }
 
-; 60 occurrences:
+; 59 occurrences:
 ; abc/optimized/acecRe.c.ll
 ; abc/optimized/inflate.c.ll
 ; clamav/optimized/inflate64.c.ll
@@ -43,7 +43,6 @@ entry:
 ; llvm/optimized/HWAddressSanitizer.cpp.ll
 ; llvm/optimized/LoopUnrollPass.cpp.ll
 ; llvm/optimized/ParseExprCXX.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SemaCUDA.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; oiio/optimized/xmp.cpp.ll
@@ -141,15 +140,38 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
-; linux/optimized/nl80211.ll
+; 2 occurrences:
 ; llvm/optimized/IndexingContext.cpp.ll
-; llvm/optimized/LoopVectorizationLegality.cpp.ll
 ; php/optimized/pcre2_compile.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, -2
+  %4 = or i1 %0, %1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
+; lief/optimized/psa_crypto_aead.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000030(i1 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i32 %2, 16
+  %4 = or i1 %0, %1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
+; 4 occurrences:
+; brotli/optimized/brotli_bit_stream.c.ll
+; brotli/optimized/histogram.c.ll
+; linux/optimized/nl80211.ll
+; meshlab/optimized/filter_sketchfab.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i1 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, -3
   %4 = or i1 %0, %1
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5

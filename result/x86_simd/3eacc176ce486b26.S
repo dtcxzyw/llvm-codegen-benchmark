@@ -52,6 +52,47 @@ func0000000000000028:                   # @func0000000000000028
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
+.LCPI6_0:
+	.long	1                               # 0x1
+func000000000000001e:                   # @func000000000000001e
+	vpmovqd	%ymm1, %xmm1
+	vpbroadcastd	.LCPI6_0(%rip), %xmm2   # xmm2 = [1,1,1,1]
+	vpsllvd	%xmm0, %xmm2, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
+	vzeroupper
+	retq
+func0000000000000004:                   # @func0000000000000004
+	vpmovqd	%ymm1, %xmm1
+	vpcmpeqd	%xmm2, %xmm2, %xmm2
+	vpsllvd	%xmm0, %xmm2, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
+	vzeroupper
+	retq
+func0000000000000035:                   # @func0000000000000035
+	vpmovqd	%ymm1, %xmm1
+	vpcmpeqd	%xmm2, %xmm2, %xmm2
+	vpsllvd	%xmm0, %xmm2, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
+	vzeroupper
+	retq
+.LCPI9_0:
+	.long	1                               # 0x1
+func000000000000003a:                   # @func000000000000003a
+	vpmovqd	%ymm1, %xmm1
+	vpbroadcastd	.LCPI9_0(%rip), %xmm2   # xmm2 = [1,1,1,1]
+	vpsllvd	%xmm0, %xmm2, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
+	vzeroupper
+	retq
+.LCPI10_0:
+	.long	2                               # 0x2
+func000000000000000d:                   # @func000000000000000d
+	vpmovqd	%ymm1, %xmm1
+	vpbroadcastd	.LCPI10_0(%rip), %xmm2  # xmm2 = [2,2,2,2]
+	vpsllvd	%xmm0, %xmm2, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
+	vzeroupper
+	retq
 func0000000000000014:                   # @func0000000000000014
 	vpmovqd	%ymm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2

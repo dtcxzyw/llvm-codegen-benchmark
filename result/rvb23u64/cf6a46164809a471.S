@@ -1,7 +1,7 @@
-func00000000000000ca:                   # @func00000000000000ca
+func00000000000000ce:                   # @func00000000000000ce
 	mul	a1, a1, a2
 	sh2add	a0, a1, a0
-	addi	a0, a0, 8
+	addi	a0, a0, 36
 	ret
 func0000000000000000:                   # @func0000000000000000
 	mul	a1, a1, a2

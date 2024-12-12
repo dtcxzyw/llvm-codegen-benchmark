@@ -1,5 +1,6 @@
 
-; 169 occurrences:
+; 170 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -179,7 +180,8 @@ entry:
   ret i1 %6
 }
 
-; 169 occurrences:
+; 170 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -362,7 +364,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000031a(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000062a(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 160
   %4 = add nsw i32 %3, %0
@@ -374,10 +376,10 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000030a(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000060a(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 160
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = trunc i64 %1 to i32
   %6 = icmp sgt i32 %4, %5
   ret i1 %6
@@ -386,7 +388,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/quoridor.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000096(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000126(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 3
   %4 = add nsw i32 %3, %0
@@ -400,7 +402,7 @@ entry:
 ; opencv/optimized/tracking_feature.cpp.ll
 ; openspiel/optimized/quoridor.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000196(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000326(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 3
   %4 = add nsw i32 %3, %0
@@ -413,7 +415,7 @@ entry:
 ; opencv/optimized/feature.cpp.ll
 ; opencv/optimized/tracking_feature.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011b(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000022b(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 3
   %4 = add nsw i32 %3, %0
@@ -428,7 +430,7 @@ entry:
 define i1 @func0000000000000001(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 365
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = trunc i64 %1 to i32
   %6 = icmp eq i32 %4, %5
   ret i1 %6

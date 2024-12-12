@@ -1,11 +1,10 @@
 
-; 14 occurrences:
+; 13 occurrences:
 ; bullet3/optimized/b3PgsJacobiSolver.ll
 ; bullet3/optimized/btConeTwistConstraint.ll
 ; bullet3/optimized/btConvexConvexAlgorithm.ll
 ; bullet3/optimized/btSliderConstraint.ll
 ; bullet3/optimized/btSoftBody.ll
-; darktable/optimized/introspection_denoiseprofile.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; gromacs/optimized/bonded.cpp.ll
 ; gromacs/optimized/coupling.cpp.ll

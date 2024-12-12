@@ -1,12 +1,11 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/cuddDecomp.c.ll
 ; abc/optimized/cuddSubsetHB.c.ll
 ; gromacs/optimized/pull.cpp.ll
 ; ipopt/optimized/IpPiecewisePenalty.ll
 ; openjdk/optimized/archiveUtils.ll
 ; proj/optimized/cct.cpp.ll
-; proj/optimized/cs2cs.cpp.ll
 ; Function Attrs: nounwind
 define double @func0000000000000001(double %0, ptr %1, ptr %2) #0 {
 entry:

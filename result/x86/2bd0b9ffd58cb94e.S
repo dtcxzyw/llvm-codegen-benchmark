@@ -1,12 +1,12 @@
-func0000000000000021:                   # @func0000000000000021
-	testb	%dil, %sil
+func0000000000000041:                   # @func0000000000000041
+	testb	%sil, %dil
 	sete	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
-	testb	%dil, %sil
+	testb	%sil, %dil
 	sete	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
-	testb	%dil, %sil
+func0000000000000061:                   # @func0000000000000061
+	testb	%sil, %dil
 	sete	%al
 	retq

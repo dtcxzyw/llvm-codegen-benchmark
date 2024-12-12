@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 26 occurrences:
 ; llvm/optimized/AArch64LegalizerInfo.cpp.ll
 ; llvm/optimized/ASTImporter.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
@@ -10,7 +10,6 @@
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/LowerMemIntrinsics.cpp.ll
 ; llvm/optimized/MasmParser.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/SemaConcept.cpp.ll
 ; llvm/optimized/SemaDeclAttr.cpp.ll
@@ -60,21 +59,6 @@ entry:
   ret i64 %3
 }
 
-; 5 occurrences:
-; llvm/optimized/AArch64LegalizerInfo.cpp.ll
-; llvm/optimized/LegalizerHelper.cpp.ll
-; llvm/optimized/RegisterScavenging.cpp.ll
-; opencv/optimized/softfloat.cpp.ll
-; spike/optimized/i64_to_f32.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000d(i8 %0) #0 {
-entry:
-  %1 = sub nsw i8 33, %0
-  %2 = zext nneg i8 %1 to i64
-  %3 = shl nsw i64 -1, %2
-  ret i64 %3
-}
-
 ; 2 occurrences:
 ; cpython/optimized/dictobject.ll
 ; llvm/optimized/MachineInstr.cpp.ll
@@ -84,6 +68,20 @@ entry:
   %1 = sub nuw nsw i8 64, %0
   %2 = zext nneg i8 %1 to i64
   %3 = shl nuw nsw i64 32, %2
+  ret i64 %3
+}
+
+; 4 occurrences:
+; llvm/optimized/AArch64LegalizerInfo.cpp.ll
+; llvm/optimized/LegalizerHelper.cpp.ll
+; llvm/optimized/RegisterScavenging.cpp.ll
+; opencv/optimized/softfloat.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000d(i8 %0) #0 {
+entry:
+  %1 = sub nsw i8 63, %0
+  %2 = zext nneg i8 %1 to i64
+  %3 = shl nsw i64 -1, %2
   ret i64 %3
 }
 

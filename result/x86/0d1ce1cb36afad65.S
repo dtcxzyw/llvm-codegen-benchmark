@@ -8,3 +8,8 @@ func0000000000000000:                   # @func0000000000000000
 	testb	$1, %sil
 	cmovnel	%edi, %eax
 	retq
+func0000000000000006:                   # @func0000000000000006
+	movzbl	%dl, %eax
+	testb	$1, %sil
+	cmovnel	%edi, %eax
+	retq

@@ -72,7 +72,7 @@ define i32 @func000000000000003f(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 16
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or disjoint i32 %5, %0
   %7 = add nuw nsw i32 %6, 8
   ret i32 %7
@@ -102,20 +102,21 @@ define i32 @func000000000000003d(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 16
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or disjoint i32 %5, %0
   %7 = add nsw i32 %6, -1
   ret i32 %7
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; hermes/optimized/HBC.cpp.ll
 ; luau/optimized/isocline.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000007d(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 6
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or disjoint i32 %5, %0
   %7 = add nsw i32 %6, -127
   ret i32 %7
@@ -129,7 +130,7 @@ define i32 @func000000000000003e(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 8
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or disjoint i32 %5, %0
   %7 = add nuw i32 %6, 12
   ret i32 %7

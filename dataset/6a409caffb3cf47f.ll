@@ -3,7 +3,7 @@
 ; libwebp/optimized/palette.c.ll
 ; minetest/optimized/terminal_chat_console.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000004(i1 %0, i32 %1) #0 {
+define i8 @func0000000000000014(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 240
   %.not = icmp eq i32 %2, 240

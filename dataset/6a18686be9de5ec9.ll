@@ -1,7 +1,10 @@
 
-; 217 occurrences:
+; 215 occurrences:
 ; arrow/optimized/pretty_print.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; casadi/optimized/integrator.cpp.ll
 ; clamav/optimized/pdf.c.ll
 ; clamav/optimized/upx.c.ll
@@ -50,7 +53,6 @@
 ; hermes/optimized/SemanticValidator.cpp.ll
 ; hyperscan/optimized/noodle_engine.c.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll
-; linux/optimized/8250_dma.ll
 ; linux/optimized/af_packet.ll
 ; linux/optimized/ah6.ll
 ; linux/optimized/alternative.ll
@@ -76,8 +78,6 @@
 ; linux/optimized/gcm.ll
 ; linux/optimized/gro.ll
 ; linux/optimized/hcd.ll
-; linux/optimized/head64.ll
-; linux/optimized/hibernate_64.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/hugetlb_vmemmap.ll
 ; linux/optimized/i915_gpu_error.ll
@@ -90,16 +90,13 @@
 ; linux/optimized/journal.ll
 ; linux/optimized/kfifo.ll
 ; linux/optimized/ldt.ll
-; linux/optimized/list_lru.ll
 ; linux/optimized/lskcipher.ll
-; linux/optimized/machine_kexec_64.ll
 ; linux/optimized/memalloc.ll
 ; linux/optimized/memblock.ll
 ; linux/optimized/mempolicy.ll
 ; linux/optimized/memtype.ll
 ; linux/optimized/mmap.ll
 ; linux/optimized/netdev.ll
-; linux/optimized/ops_helpers.ll
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/pasid.ll
 ; linux/optimized/pcm_native.ll
@@ -147,6 +144,8 @@
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/Signals.cpp.ll
 ; luau/optimized/Lexer.cpp.ll
+; lvgl/optimized/lv_grid.ll
+; lvgl/optimized/lv_tlsf.ll
 ; meilisearch-rs/optimized/4rynht2gwvphprvy.ll
 ; mimalloc/optimized/os.c.ll
 ; minetest/optimized/enriched_string.cpp.ll
@@ -204,7 +203,6 @@
 ; redis/optimized/zmalloc.ll
 ; wasmtime-rs/optimized/4sy2q5i3qnvymrev.ll
 ; wireshark/optimized/follow_stream_dialog.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/ddnf.cpp.ll
 ; z3/optimized/mam.cpp.ll
 ; z3/optimized/opt_cores.cpp.ll

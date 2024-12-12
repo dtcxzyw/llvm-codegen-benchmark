@@ -2,7 +2,7 @@
 	.quad	-2146764485                     # 0xffffffff800af93b
 .LCPI0_1:
 	.quad	-4294967296                     # 0xffffffff00000000
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rax
 	movabsq	$1749024623285053783, %rcx      # imm = 0x1845C8A0CE512957

@@ -1,20 +1,9 @@
-func00000000000001f4:                   // @func00000000000001f4
+func00000000000003f4:                   // @func00000000000003f4
 // %bb.0:                               // %entry
-	mov	w8, #1                          // =0x1
-	mvni	v3.4s, #5
-	dup	v4.2d, x8
-	mov	w8, #2                          // =0x2
-	add	v2.4s, v2.4s, v3.4s
-	dup	v3.2d, x8
-	orr	v1.16b, v1.16b, v4.16b
-	orr	v0.16b, v0.16b, v4.16b
-	ushll	v4.2d, v2.2s, #0
-	ushll2	v2.2d, v2.4s, #0
-	add	v0.2d, v0.2d, v3.2d
-	add	v1.2d, v1.2d, v3.2d
-	cmhi	v1.2d, v2.2d, v1.2d
-	cmhi	v0.2d, v4.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	orr	x8, x0, #0x1
+	sub	w9, w1, #6
+	add	x8, x8, #2
+	cmp	x8, x9
+	cset	w0, lo
 	ret
                                         // -- End function

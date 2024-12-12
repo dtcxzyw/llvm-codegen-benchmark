@@ -24,6 +24,18 @@ entry:
 ; hwloc/optimized/topology-x86.ll
 ; z3/optimized/util.cpp.ll
 ; Function Attrs: nounwind
+define i32 @func0000000000000029(i32 %0, i64 %1, i1 %2) #0 {
+entry:
+  %3 = select i1 %2, i32 0, i32 32
+  %4 = icmp samesign ult i64 %1, 65536
+  %5 = select i1 %4, i32 %3, i32 %0
+  %6 = or disjoint i32 %5, 8
+  ret i32 %6
+}
+
+; 1 occurrences:
+; duckdb/optimized/ub_duckdb_execution_index.cpp.ll
+; Function Attrs: nounwind
 define i32 @func0000000000000009(i32 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 0, i32 32

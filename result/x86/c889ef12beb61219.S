@@ -2,13 +2,13 @@ func0000000000000008:                   # @func0000000000000008
 	andl	$1, %edx
 	addl	%esi, %edx
 	xorl	%eax, %eax
-	cmpl	%edi, %edx
-	seta	%al
+	cmpl	%edx, %edi
+	setb	%al
 	retq
-func0000000000000078:                   # @func0000000000000078
+func00000000000000d8:                   # @func00000000000000d8
 	andl	$1, %edx
 	addl	%esi, %edx
 	xorl	%eax, %eax
-	cmpl	%edi, %edx
+	cmpl	%edx, %edi
 	setne	%al
 	retq

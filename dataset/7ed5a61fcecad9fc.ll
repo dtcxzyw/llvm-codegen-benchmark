@@ -16,22 +16,4 @@ entry:
   ret i1 %6
 }
 
-; 7 occurrences:
-; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/AttributorAttributes.cpp.ll
-; llvm/optimized/InstructionSimplify.cpp.ll
-; llvm/optimized/LazyValueInfo.cpp.ll
-; llvm/optimized/ValueTracking.cpp.ll
-; openjdk/optimized/verifier.ll
-; wireshark/optimized/filter_dialog.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %2, -251
-  %4 = icmp ult i32 %3, 4
-  %5 = select i1 %1, i1 %4, i1 false
-  %6 = or i1 %5, %0
-  ret i1 %6
-}
-
 attributes #0 = { nounwind }

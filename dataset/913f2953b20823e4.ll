@@ -1,5 +1,5 @@
 
-; 39 occurrences:
+; 38 occurrences:
 ; annoy/optimized/annoymodule.ll
 ; darktable/optimized/introspection_colorequal.c.ll
 ; darktable/optimized/introspection_toneequal.c.ll
@@ -25,7 +25,6 @@
 ; mitsuba3/optimized/roughplastic.cpp.ll
 ; mitsuba3/optimized/thindielectric.cpp.ll
 ; nori/optimized/perspective.cpp.ll
-; openblas/optimized/ieeeck.c.ll
 ; pbrt-v4/optimized/bssrdf.cpp.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll
 ; pbrt-v4/optimized/cameras.cpp.ll
@@ -44,7 +43,7 @@ define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:
   %3 = fdiv float %1, %2
   %4 = fmul float %3, %3
-  %5 = fadd float %4, %0
+  %5 = fadd float %0, %4
   ret float %5
 }
 

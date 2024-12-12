@@ -9,13 +9,9 @@ func000000000000000c:                   # @func000000000000000c
 	and	a0, a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004
-	andi	a1, a1, 48
-	seqz	a1, a1
-	and	a0, a0, a1
-	ret
-func0000000000000008:                   # @func0000000000000008
-	andi	a1, a1, 255
-	sltiu	a1, a1, 33
-	xori	a1, a1, 1
+	lui	a2, 16
+	addiw	a2, a2, -256
+	and	a1, a1, a2
+	sltiu	a1, a1, 1025
 	and	a0, a0, a1
 	ret

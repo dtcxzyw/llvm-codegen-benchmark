@@ -57,7 +57,7 @@ func0000000000000004:                   # @func0000000000000004
 	.short	256                             # 0x100
 	.short	256                             # 0x100
 	.short	256                             # 0x100
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	vpaddw	%ymm1, %ymm0, %ymm0
 	vpaddw	.LCPI1_0(%rip), %ymm0, %ymm0
 	vpcmpltuw	.LCPI1_1(%rip), %ymm0, %k0

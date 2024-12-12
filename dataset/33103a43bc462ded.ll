@@ -1,7 +1,26 @@
 
-; 41 occurrences:
+; 60 occurrences:
 ; abc/optimized/cuddUtil.c.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/channel.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/main.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/process.ll
+; boost/optimized/spawn.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/target.ll
+; boost/optimized/wait.ll
 ; cmake/optimized/lzma2_encoder.c.ll
 ; hdf5/optimized/H5Oattr.c.ll
 ; hdf5/optimized/H5Tref.c.ll
@@ -50,7 +69,7 @@ entry:
   ret i8 %3
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; cmake/optimized/archive_write_add_filter_xz.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; cmake/optimized/block_buffer_encoder.c.ll
@@ -59,7 +78,6 @@ entry:
 ; lief/optimized/ssl_tls.c.ll
 ; linux/optimized/libata-core.ll
 ; linux/optimized/lzo1x_compress.ll
-; linux/optimized/rpl.ll
 ; openssl/optimized/libcrypto-lib-ct_oct.ll
 ; openssl/optimized/libcrypto-shlib-ct_oct.ll
 ; openssl/optimized/openssl-bin-speed.ll
@@ -92,7 +110,8 @@ entry:
   ret i8 %3
 }
 
-; 19 occurrences:
+; 25 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -112,6 +131,11 @@ entry:
 ; lightgbm/optimized/tree.cpp.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/4hgzf672qwd8x8ke1407yey6m.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000001b(i64 %0) #0 {
 entry:
@@ -121,12 +145,14 @@ entry:
   ret i8 %3
 }
 
-; 5 occurrences:
+; 7 occurrences:
+; boost/optimized/to_chars.ll
 ; git/optimized/archive.ll
 ; linux/optimized/ah6.ll
 ; meshlab/optimized/VisibilityCheck.cpp.ll
 ; postgres/optimized/freespace.ll
 ; wireshark/optimized/ngsniffer.c.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000018(i64 %0) #0 {
 entry:

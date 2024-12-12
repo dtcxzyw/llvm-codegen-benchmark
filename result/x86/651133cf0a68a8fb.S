@@ -1,9 +1,3 @@
-func0000000000000004:                   # @func0000000000000004
-	movl	$16, %ecx
-	shlxl	%esi, %ecx, %eax
-	testb	$1, %dil
-	cmovnel	%ecx, %eax
-	retq
 func0000000000000000:                   # @func0000000000000000
 	movl	$128, %eax
 	shlxl	%esi, %eax, %ecx

@@ -26,4 +26,16 @@ entry:
   ret i1 %4
 }
 
+; 3 occurrences:
+; minetest/optimized/mapblock_mesh.cpp.ll
+; minetest/optimized/serverpackethandler.cpp.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i16 %0, i1 %1, i16 %2) #0 {
+entry:
+  %3 = select i1 %1, i16 %2, i16 255
+  %4 = icmp ugt i16 %3, %0
+  ret i1 %4
+}
+
 attributes #0 = { nounwind }

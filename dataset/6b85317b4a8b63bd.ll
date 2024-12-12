@@ -1,5 +1,5 @@
 
-%class.aiVector3t.2710569 = type { double, double, double }
+%class.aiVector3t.2823159 = type { double, double, double }
 
 ; 29 occurrences:
 ; arrow/optimized/key_map.cc.ll
@@ -32,12 +32,12 @@
 ; stb/optimized/stb_image_write.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 1
+  %4 = mul nuw nsw i64 %1, %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 1
   ret ptr %6
 }
 
@@ -45,28 +45,29 @@ entry:
 ; darktable/optimized/introspection_retouch.c.ll
 ; openjdk/optimized/gtk3_interface.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000005b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = getelementptr nusw i8, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 1
   ret ptr %6
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; ncnn/optimized/lstm_x86_avx2.cpp.ll
 ; ncnn/optimized/lstm_x86_avx512.cpp.ll
 ; ncnn/optimized/lstm_x86_avx512vnni.cpp.ll
 ; ncnn/optimized/lstm_x86_avxvnni.cpp.ll
 ; opencv/optimized/denoise_tvl1.cpp.ll
+; opencv/optimized/shapedescr.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000004a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000004b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = getelementptr nusw i8, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 4
   ret ptr %6
 }
 
@@ -75,28 +76,23 @@ entry:
 ; php/optimized/php_pcre.ll
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 8
+  %4 = mul nuw nsw i64 %1, %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 8
   ret ptr %6
 }
 
-; 6 occurrences:
+; 1 occurrences:
 ; assimp/optimized/IFCGeometry.cpp.ll
-; clamav/optimized/matcher-hash.c.ll
-; meshoptimizer/optimized/clusterizer.cpp.ll
-; meshoptimizer/optimized/overdrawanalyzer.cpp.ll
-; meshoptimizer/optimized/overdrawoptimizer.cpp.ll
-; meshoptimizer/optimized/spatialorder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul i64 %3, %1
-  %5 = getelementptr %class.aiVector3t.2710569, ptr %0, i64 %4, i32 1
+  %4 = mul i64 %1, %3
+  %5 = getelementptr %class.aiVector3t.2823159, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -108,11 +104,11 @@ entry:
 ; opencv/optimized/hough.cpp.ll
 ; sundials/optimized/sunnonlinsol_fixedpoint.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000078(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000007c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
-  %5 = getelementptr nusw i16, ptr %0, i64 %4
+  %4 = mul nuw nsw i64 %1, %3
+  %5 = getelementptr nusw nuw i16, ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 2
   ret ptr %6
 }
@@ -134,9 +130,22 @@ entry:
 define ptr @func0000000000000070(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = getelementptr i16, ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 8
+  ret ptr %6
+}
+
+; 2 occurrences:
+; darktable/optimized/DeflateDecompressor.cpp.ll
+; tev/optimized/QoiImageLoader.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000040(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = mul i64 %1, %3
+  %5 = getelementptr i8, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 1
   ret ptr %6
 }
 
@@ -146,7 +155,7 @@ entry:
 define ptr @func0000000000000050(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = getelementptr float, ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 32
   ret ptr %6
@@ -155,12 +164,12 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_dither.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000006b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nuw i64 %3, %1
+  %4 = mul nuw i64 %1, %3
   %5 = getelementptr nusw float, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 4
   ret ptr %6
 }
 
@@ -171,7 +180,7 @@ entry:
 define ptr @func0000000000000020(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw i64 %3, %1
+  %4 = mul nuw i64 %1, %3
   %5 = getelementptr i8, ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 8
   ret ptr %6
@@ -184,9 +193,37 @@ entry:
 define ptr @func0000000000000000(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = getelementptr i32, ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 1032
+  ret ptr %6
+}
+
+; 1 occurrences:
+; boost/optimized/ipc_reliable_message_queue.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002f(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = mul nuw i64 %1, %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 32
+  ret ptr %6
+}
+
+; 5 occurrences:
+; clamav/optimized/matcher-hash.c.ll
+; meshoptimizer/optimized/clusterizer.cpp.ll
+; meshoptimizer/optimized/overdrawanalyzer.cpp.ll
+; meshoptimizer/optimized/overdrawoptimizer.cpp.ll
+; meshoptimizer/optimized/spatialorder.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = mul i64 %1, %3
+  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 4
   ret ptr %6
 }
 
@@ -194,12 +231,12 @@ entry:
 ; clamav/optimized/matcher-hash.c.ll
 ; llvm/optimized/PDBFileBuilder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000002b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw i64 %3, %1
+  %4 = mul nuw i64 %1, %3
   %5 = getelementptr nusw i8, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 4
   ret ptr %6
 }
 
@@ -207,23 +244,11 @@ entry:
 ; draco/optimized/mesh_are_equivalent.cc.ll
 ; draco/optimized/point_attribute.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000013(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = getelementptr i8, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 8
-  ret ptr %6
-}
-
-; 1 occurrences:
-; llvm/optimized/PDBFileBuilder.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000002b(ptr %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext i32 %2 to i64
-  %4 = mul nuw i64 %3, %1
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
   %6 = getelementptr nusw nuw i8, ptr %5, i64 8
   ret ptr %6
 }
@@ -231,11 +256,11 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/grompp.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000038(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000003c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
-  %5 = getelementptr nusw double, ptr %0, i64 %4
+  %4 = mul nuw nsw i64 %1, %3
+  %5 = getelementptr nusw nuw double, ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 -8
   ret ptr %6
 }
@@ -247,7 +272,7 @@ entry:
 define ptr @func0000000000000018(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = getelementptr nusw float, ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 4
   ret ptr %6
@@ -259,7 +284,7 @@ entry:
 define ptr @func0000000000000030(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = getelementptr float, ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 4
   ret ptr %6
@@ -271,7 +296,7 @@ entry:
 define ptr @func0000000000000048(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = getelementptr nusw i8, ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 1
   ret ptr %6
@@ -283,21 +308,9 @@ entry:
 define ptr @func0000000000000010(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = getelementptr i8, ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 64
-  ret ptr %6
-}
-
-; 1 occurrences:
-; tev/optimized/QoiImageLoader.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000040(ptr %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext nneg i32 %2 to i64
-  %4 = mul i64 %3, %1
-  %5 = getelementptr i8, ptr %0, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 3
   ret ptr %6
 }
 

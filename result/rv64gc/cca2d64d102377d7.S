@@ -6,10 +6,9 @@ func000000000000000a:                   # @func000000000000000a
 .LBB0_2:                                # %entry
 	ret
 func0000000000000004:                   # @func0000000000000004
-	lui	a3, 32
-	add	a2, a2, a3
-	srli	a2, a2, 18
-	beqz	a2, .LBB1_2
+	addi	a2, a2, -8
+	li	a3, -7
+	bltu	a2, a3, .LBB1_2
 	mv	a0, a1
 .LBB1_2:                                # %entry
 	ret
@@ -19,7 +18,7 @@ func0000000000000001:                   # @func0000000000000001
 	mv	a0, a1
 .LBB2_2:                                # %entry
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	li	a3, 20
 	beq	a2, a3, .LBB3_2
 	mv	a0, a1
@@ -33,7 +32,7 @@ func0000000000000006:                   # @func0000000000000006
 	mv	a0, a1
 .LBB4_2:                                # %entry
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	sext.w	a3, a2
 	beq	a3, a2, .LBB5_2
 	mv	a0, a1

@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 20 occurrences:
 ; cmake/optimized/zstd_compress.c.ll
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
 ; image-rs/optimized/2mngkegtim1o10y3.ll
@@ -14,6 +14,11 @@
 ; rust-analyzer-rs/optimized/2i82iai7kwxbnc4v.ll
 ; rust-analyzer-rs/optimized/46lti8aa4smufhcb.ll
 ; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
+; zed-rs/optimized/28x1e2vfzxi98zqprbft2w8hu.ll
+; zed-rs/optimized/3hsn9nyfo1lk9hjlnx6o7tl2d.ll
+; zed-rs/optimized/4jjx0s36b1sfrqbb0zz907syp.ll
+; zed-rs/optimized/9fz5l76t5byggb8exxkeuxjql.ll
+; zed-rs/optimized/a50lo7f303ucwqc37yc15xnyr.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i1 %0, i1 %1, i1 %2) #0 {

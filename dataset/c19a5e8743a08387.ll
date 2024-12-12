@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; abseil-cpp/optimized/pcg_engine_test.cc.ll
 ; bdwgc/optimized/gc.c.ll
 ; luau/optimized/lmathlib.cpp.ll
@@ -10,13 +10,12 @@
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; protobuf/optimized/lexer.cc.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
-; rand-rs/optimized/3wentbx1vl0iwznb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 7
   %3 = lshr i64 %2, 24
-  %4 = xor i64 %3, %0
+  %4 = xor i64 %0, %3
   ret i64 %4
 }
 

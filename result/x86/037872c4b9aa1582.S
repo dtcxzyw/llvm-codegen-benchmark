@@ -1,4 +1,4 @@
-func0000000000000038:                   # @func0000000000000038
+func0000000000000058:                   # @func0000000000000058
 	shrl	$14, %edx
 	andl	$3, %edx
 	orl	%esi, %edx
@@ -12,7 +12,7 @@ func0000000000000018:                   # @func0000000000000018
 	setne	%al
 	orb	%dil, %al
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	shrl	$30, %edx
 	andl	$1, %edx
 	orl	%esi, %edx

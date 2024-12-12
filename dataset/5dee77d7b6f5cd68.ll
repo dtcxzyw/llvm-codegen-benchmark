@@ -11,11 +11,10 @@ entry:
   ret i64 %5
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; bdwgc/optimized/cordxtra.c.ll
 ; hdf5/optimized/H5FDonion_index.c.ll
 ; hermes/optimized/APInt.cpp.ll
-; linux/optimized/umh.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
 ; nuttx/optimized/lib_strstr.c.ll
@@ -30,15 +29,12 @@ entry:
   ret i64 %5
 }
 
-; 13 occurrences:
+; 10 occurrences:
 ; clamav/optimized/regexec.c.ll
-; graphviz/optimized/randomkit.c.ll
 ; hermes/optimized/regexec.c.ll
 ; linux/optimized/acpi-cpufreq.ll
 ; linux/optimized/acpi_lpit.ll
 ; linux/optimized/ibs.ll
-; linux/optimized/msr.ll
-; linux/optimized/probe.ll
 ; linux/optimized/uncore_nhmex.ll
 ; llvm/optimized/regexec.c.ll
 ; qemu/optimized/block_qcow2-cluster.c.ll
@@ -48,8 +44,8 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
-  %4 = or i64 %3, %1
-  %5 = and i64 %4, %0
+  %4 = or i64 %1, %3
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 
@@ -65,8 +61,8 @@ entry:
 define i64 @func0000000000000007(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 16
-  %4 = or disjoint i64 %3, %1
-  %5 = and i64 %4, %0
+  %4 = or disjoint i64 %1, %3
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 
@@ -82,7 +78,7 @@ define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 32
   %4 = or disjoint i64 %3, %1
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 

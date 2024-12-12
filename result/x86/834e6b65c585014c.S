@@ -26,8 +26,3 @@ func0000000000000030:                   # @func0000000000000030
 	movabsq	$38654705664, %rax              # imm = 0x900000000
 	addq	%rcx, %rax
 	retq
-func000000000000003d:                   # @func000000000000003d
-	movq	%rdi, %rax
-	shlq	$6, %rax
-	addq	%rdi, %rax
-	retq

@@ -1,34 +1,16 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	ushll	v3.8h, v0.8b, #0
-	ushll2	v0.8h, v0.16b, #0
-	movi	v2.8h, #1, lsl #8
-	ushll	v4.8h, v1.8b, #0
-	ushll2	v1.8h, v1.16b, #0
-	shl	v3.8h, v3.8h, #15
-	shl	v0.8h, v0.8h, #15
-	cmlt	v3.8h, v3.8h, #0
-	cmlt	v0.8h, v0.8h, #0
-	and	v3.16b, v3.16b, v2.16b
-	and	v0.16b, v0.16b, v2.16b
-	orr	v1.16b, v0.16b, v1.16b
-	orr	v0.16b, v3.16b, v4.16b
+	mov	w8, #256                        // =0x100
+	tst	w0, #0x1
+	csel	w0, w8, wzr, ne
+	bfxil	w0, w1, #0, #8
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	ushll	v3.8h, v0.8b, #0
-	ushll2	v0.8h, v0.16b, #0
-	movi	v2.8h, #1, lsl #8
-	ushll	v4.8h, v1.8b, #0
-	ushll2	v1.8h, v1.16b, #0
-	shl	v3.8h, v3.8h, #15
-	shl	v0.8h, v0.8h, #15
-	cmge	v3.8h, v3.8h, #0
-	cmge	v0.8h, v0.8h, #0
-	and	v3.16b, v3.16b, v2.16b
-	and	v0.16b, v0.16b, v2.16b
-	orr	v1.16b, v0.16b, v1.16b
-	orr	v0.16b, v3.16b, v4.16b
+	mov	w8, #256                        // =0x100
+	tst	w0, #0x1
+	csel	w0, wzr, w8, ne
+	bfxil	w0, w1, #0, #8
 	ret
                                         // -- End function

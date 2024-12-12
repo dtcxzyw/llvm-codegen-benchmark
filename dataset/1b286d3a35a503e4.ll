@@ -1,5 +1,5 @@
 
-; 453 occurrences:
+; 451 occurrences:
 ; cmake/optimized/archive_write_set_format_7zip.c.ll
 ; cmake/optimized/cmTestGenerator.cxx.ll
 ; coreutils-rs/optimized/1hfndwarkzjc08wu.ll
@@ -170,7 +170,6 @@
 ; lief/optimized/asn1write.c.ll
 ; linux/optimized/blk-iocost.ll
 ; linux/optimized/i915_gem_ttm.ll
-; linux/optimized/intel_guc_log_debugfs.ll
 ; linux/optimized/md-bitmap.ll
 ; linux/optimized/mincore.ll
 ; linux/optimized/swiotlb.ll
@@ -312,7 +311,6 @@
 ; llvm/optimized/OMPIRBuilder.cpp.ll
 ; llvm/optimized/Operator.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetObjectFile.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
@@ -462,7 +460,8 @@ entry:
   ret i64 %3
 }
 
-; 149 occurrences:
+; 151 occurrences:
+; boost/optimized/to_chars.ll
 ; coreutils-rs/optimized/4o7j3eorsq1l9mcp.ll
 ; cpython/optimized/obmalloc.ll
 ; duckdb/optimized/null_operations.cpp.ll
@@ -576,7 +575,6 @@ entry:
 ; llvm/optimized/OMPIRBuilder.cpp.ll
 ; llvm/optimized/Operator.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetObjectFile.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
@@ -612,6 +610,8 @@ entry:
 ; openjdk/optimized/bitMap.ll
 ; ruby/optimized/bignum.ll
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
+; zed-rs/optimized/e7lqw1ynol01cwrgb8ri1wedr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0) #0 {
 entry:
@@ -645,7 +645,7 @@ entry:
   ret i64 %3
 }
 
-; 93 occurrences:
+; 106 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; hermes/optimized/APInt.cpp.ll
 ; hermes/optimized/StringRef.cpp.ll
@@ -690,7 +690,6 @@ entry:
 ; llvm/optimized/MicrosoftMangle.cpp.ll
 ; llvm/optimized/MveEmitter.cpp.ll
 ; llvm/optimized/PPExpressions.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RangeConstraintManager.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
@@ -739,6 +738,20 @@ entry:
 ; qemu/optimized/migration_ram.c.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
+; zed-rs/optimized/b1bc3rbs9s229gjbf718xcm8w.ll
+; zed-rs/optimized/boyei0qs0y80q8snoztbi8jt7.ll
+; zed-rs/optimized/d8k4gi60mp0onf0c8t6rhs7ks.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
+; zed-rs/optimized/f10ffiihtazjqkmwr0jihceey.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001b(i64 %0) #0 {
 entry:
@@ -959,10 +972,9 @@ entry:
   ret i64 %3
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; cpython/optimized/mpdecimal.ll
-; hyperscan/optimized/dfa_min.cpp.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; hyperscan/optimized/ng_execute.cpp.ll
 ; hyperscan/optimized/ng_find_matches.cpp.ll

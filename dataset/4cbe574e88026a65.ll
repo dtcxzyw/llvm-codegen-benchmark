@@ -1,5 +1,5 @@
 
-; 36 occurrences:
+; 38 occurrences:
 ; c3c/optimized/sema_asm.c.ll
 ; gromacs/optimized/hbond.cpp.ll
 ; grpc/optimized/compression_filter.cc.ll
@@ -36,15 +36,17 @@
 ; velox/optimized/ToUtf8.cpp.ll
 ; velox/optimized/UnsafeRowSerializer.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i1
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   ret i1 %3
 }
 
-; 7 occurrences:
+; 13 occurrences:
 ; just-rs/optimized/2sblcsgax6v4zfcc.ll
 ; llvm/optimized/BranchProbabilityInfo.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
@@ -52,11 +54,17 @@ entry:
 ; rust-analyzer-rs/optimized/15tfqr3l9t81r1af.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
+; zed-rs/optimized/6a257z75npqxppetnyj7rxh76.ll
+; zed-rs/optimized/96hln4y97mhftmlht5x1xhnh1.ll
+; zed-rs/optimized/bx05yi7k15cz36qdtwh95aj38.ll
+; zed-rs/optimized/c3nozc4nsp9d7jgiddflq9oh8.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i1
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   ret i1 %3
 }
 

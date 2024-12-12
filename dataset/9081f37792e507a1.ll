@@ -1,6 +1,6 @@
 
-%struct.TCGTemp.2593549 = type { i48, i64, ptr, i64, ptr, i64, ptr }
-%"class.facebook::velox::CompactDoubleList.2686653" = type { i32, i32, i16, i16 }
+%struct.TCGTemp.2707225 = type { i48, i64, ptr, i64, ptr, i64, ptr }
+%"class.facebook::velox::CompactDoubleList.2799404" = type { i32, i32, i16, i16 }
 
 ; 6 occurrences:
 ; cpython/optimized/frame.ll
@@ -13,7 +13,7 @@
 define i64 @func0000000000000000(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr [512 x %struct.TCGTemp.2593549], ptr %0, i64 0, i64 %2
+  %3 = getelementptr [512 x %struct.TCGTemp.2707225], ptr %0, i64 0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   ret i64 %4
 }
@@ -34,7 +34,7 @@ entry:
 define i64 @func0000000000000002(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr nusw [3058 x %"class.facebook::velox::CompactDoubleList.2686653"], ptr %0, i64 0, i64 %2
+  %3 = getelementptr nusw [3058 x %"class.facebook::velox::CompactDoubleList.2799404"], ptr %0, i64 0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   ret i64 %4
 }

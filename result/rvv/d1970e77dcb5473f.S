@@ -1,9 +1,9 @@
 func000000000000000f:                   # @func000000000000000f
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v10, v10, 3
-	vsra.vi	v8, v8, 5
-	lui	a0, 209715
-	addiw	a0, a0, 819
+	vsra.vi	v8, v8, 4
+	lui	a0, 349525
+	addiw	a0, a0, 1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmacc.vx	v8, a0, v10

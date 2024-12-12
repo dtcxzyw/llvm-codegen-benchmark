@@ -1,4 +1,4 @@
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	sext.w	a2, a2
 	addi	a0, a0, 1
 	xor	a0, a0, a2
@@ -6,7 +6,7 @@ func0000000000000071:                   # @func0000000000000071
 	not	a1, a1
 	and	a0, a0, a1
 	ret
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	slli	a2, a2, 32
 	addi	a0, a0, 1
 	srli	a2, a2, 32
@@ -15,34 +15,21 @@ func0000000000000031:                   # @func0000000000000031
 	not	a1, a1
 	and	a0, a0, a1
 	ret
-func0000000000000074:                   # @func0000000000000074
+func00000000000000f4:                   # @func00000000000000f4
 	sext.w	a2, a2
 	addi	a0, a0, 2
 	sltu	a0, a0, a2
 	not	a1, a1
 	and	a0, a0, a1
 	ret
-func0000000000000034:                   # @func0000000000000034
+func0000000000000084:                   # @func0000000000000084
 	andi	a1, a1, 1
 	bnez	a1, .LBB3_2
-	slli	a1, a2, 32
-	srli	a1, a1, 32
-	addi	a0, a0, 2
-	sltu	a0, a0, a1
-	ret
-.LBB3_2:
-	li	a1, 20
-	addi	a0, a0, 2
-	sltu	a0, a0, a1
-	ret
-func0000000000000044:                   # @func0000000000000044
-	andi	a1, a1, 1
-	bnez	a1, .LBB4_2
 	sext.w	a2, a2
 	addi	a0, a0, 1
 	sltu	a0, a0, a2
 	ret
-.LBB4_2:
+.LBB3_2:
 	li	a2, 10
 	addi	a0, a0, 1
 	sltu	a0, a0, a2

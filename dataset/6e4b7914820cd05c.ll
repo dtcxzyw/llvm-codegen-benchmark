@@ -1,5 +1,5 @@
 
-; 154 occurrences:
+; 157 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -125,6 +125,7 @@
 ; abc/optimized/wlcBlast.c.ll
 ; abc/optimized/wlnRead.c.ll
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
+; c3c/optimized/lexer.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
 ; duckdb/optimized/ub_duckdb_main_capi.cpp.ll
@@ -138,6 +139,7 @@
 ; llvm/optimized/DeclSpec.cpp.ll
 ; llvm/optimized/InstrRefBasedImpl.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; mitsuba3/optimized/cpuinfo.cpp.ll
 ; openjdk/optimized/vm_version_x86.ll
 ; openmpi/optimized/coll_ftagree_earlyreturning.ll
@@ -154,17 +156,18 @@
 ; ruby/optimized/time.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; wireshark/optimized/packet-flexray.c.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 992
   %4 = zext nneg i32 %3 to i64
-  %5 = or disjoint i64 %4, %1
+  %5 = or disjoint i64 %1, %4
   %6 = or disjoint i64 %5, %0
   ret i64 %6
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; llvm/optimized/RISCVMCCodeEmitter.cpp.ll
 ; mitsuba3/optimized/cpuinfo.cpp.ll
@@ -172,12 +175,13 @@ entry:
 ; openssl/optimized/libssl-shlib-ssl_lib.ll
 ; ruby/optimized/time.ll
 ; spike/optimized/triggers.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 31
   %4 = zext nneg i32 %3 to i64
-  %5 = or disjoint i64 %4, %1
+  %5 = or disjoint i64 %1, %4
   %6 = or i64 %5, %0
   ret i64 %6
 }
@@ -194,7 +198,7 @@ define i64 @func0000000000000002(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -67108864
   %4 = zext i32 %3 to i64
-  %5 = or disjoint i64 %4, %1
+  %5 = or disjoint i64 %1, %4
   %6 = or i64 %5, %0
   ret i64 %6
 }
@@ -212,7 +216,7 @@ define i64 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 7936
   %4 = zext nneg i32 %3 to i64
-  %5 = or i64 %4, %1
+  %5 = or i64 %1, %4
   %6 = or i64 %5, %0
   ret i64 %6
 }
@@ -239,7 +243,7 @@ define i64 @func0000000000000003(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -16777216
   %4 = zext i32 %3 to i64
-  %5 = or disjoint i64 %4, %1
+  %5 = or disjoint i64 %1, %4
   %6 = or disjoint i64 %5, %0
   ret i64 %6
 }
@@ -255,8 +259,8 @@ define i64 @func0000000000000001(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -268431361
   %4 = zext i32 %3 to i64
-  %5 = or i64 %4, %1
-  %6 = or disjoint i64 %5, %0
+  %5 = or i64 %1, %4
+  %6 = or disjoint i64 %0, %5
   ret i64 %6
 }
 

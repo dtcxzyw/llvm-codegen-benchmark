@@ -1,12 +1,10 @@
 
-; 7 occurrences:
+; 5 occurrences:
 ; libevent/optimized/bufferevent.c.ll
 ; openssl/optimized/asn1_time_test-bin-a_time.ll
 ; openssl/optimized/ca_internals_test-bin-a_time.ll
 ; openssl/optimized/libcrypto-lib-a_time.ll
-; openssl/optimized/libcrypto-lib-a_utctm.ll
 ; openssl/optimized/libcrypto-shlib-a_time.ll
-; openssl/optimized/libcrypto-shlib-a_utctm.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i1 %0, i32 %1) #0 {
 entry:
@@ -27,9 +25,11 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; git/optimized/transport.ll
-; slurm/optimized/jobacct_gather_cgroup.ll
+; postgres/optimized/f2s.ll
+; postgres/optimized/f2s_shlib.ll
+; postgres/optimized/f2s_srv.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i1 %0, i32 %1) #0 {
 entry:

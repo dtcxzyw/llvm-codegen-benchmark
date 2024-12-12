@@ -1,54 +1,14 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	uaddw2	v3.2d, v3.2d, v4.4s
-	mov	x8, v1.d[1]
-	fmov	x12, d1
-	uaddw	v1.2d, v2.2d, v4.2s
-	fmov	x15, d0
-	mov	x18, v0.d[1]
-	mov	x9, v3.d[1]
-	fmov	x11, d3
-	fmov	x14, d1
-	mov	x17, v1.d[1]
-	udiv	x13, x11, x12
-	udiv	x10, x9, x8
-	udiv	x16, x14, x15
-	msub	w8, w10, w8, w9
-	msub	w9, w13, w12, w11
-	fmov	d0, x9
-	mov	v0.d[1], x8
-	udiv	x0, x17, x18
-	msub	w10, w16, w15, w14
-	fmov	d1, x10
-	msub	w11, w0, w18, w17
-	mov	v1.d[1], x11
-	uzp1	v0.4s, v1.4s, v0.4s
+	add	x8, x1, w2, uxtw
+	udiv	x9, x8, x0
+	msub	w0, w9, w0, w8
 	ret
                                         // -- End function
 func000000000000000e:                   // @func000000000000000e
 // %bb.0:                               // %entry
-	uaddw2	v3.2d, v3.2d, v4.4s
-	mov	x8, v1.d[1]
-	fmov	x12, d1
-	uaddw	v1.2d, v2.2d, v4.2s
-	fmov	x15, d0
-	mov	x18, v0.d[1]
-	mov	x9, v3.d[1]
-	fmov	x11, d3
-	fmov	x14, d1
-	mov	x17, v1.d[1]
-	udiv	x13, x11, x12
-	udiv	x10, x9, x8
-	udiv	x16, x14, x15
-	msub	w8, w10, w8, w9
-	msub	w9, w13, w12, w11
-	fmov	d0, x9
-	mov	v0.d[1], x8
-	udiv	x0, x17, x18
-	msub	w10, w16, w15, w14
-	fmov	d1, x10
-	msub	w11, w0, w18, w17
-	mov	v1.d[1], x11
-	uzp1	v0.4s, v1.4s, v0.4s
+	add	x8, x1, w2, uxtw
+	udiv	x9, x8, x0
+	msub	w0, w9, w0, w8
 	ret
                                         // -- End function

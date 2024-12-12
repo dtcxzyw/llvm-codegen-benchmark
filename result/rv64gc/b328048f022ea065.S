@@ -7,7 +7,7 @@ func0000000000000040:                   # @func0000000000000040
 	add	a0, a0, a2
 	addi	a0, a0, 24
 	ret
-func00000000000001aa:                   # @func00000000000001aa
+func00000000000001bf:                   # @func00000000000001bf
 	li	a3, 20
 	slli	a1, a1, 32
 	mul	a2, a2, a3
@@ -16,7 +16,7 @@ func00000000000001aa:                   # @func00000000000001aa
 	add	a0, a0, a1
 	addi	a0, a0, 1
 	ret
-func00000000000001e8:                   # @func00000000000001e8
+func00000000000001fc:                   # @func00000000000001fc
 	li	a3, 544
 	sext.w	a1, a1
 	mul	a2, a2, a3

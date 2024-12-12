@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; cpython/optimized/_testinternalcapi.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
@@ -10,6 +10,7 @@
 ; wireshark/optimized/packet-dbus.c.ll
 ; wireshark/optimized/packet-dcerpc-spoolss.c.ll
 ; wireshark/optimized/packet-umts_rlc.c.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(ptr %0) #0 {
 entry:

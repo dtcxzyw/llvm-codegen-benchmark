@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	2                               # 0x2
-func00000000000000e1:                   # @func00000000000000e1
+func00000000000001c1:                   # @func00000000000001c1
 	vpmovqd	%ymm1, %xmm1
 	vpbroadcastd	.LCPI0_0(%rip), %xmm2   # xmm2 = [2,2,2,2]
 	vptestmd	%xmm0, %xmm0, %k1
@@ -9,7 +9,7 @@ func00000000000000e1:                   # @func00000000000000e1
 	retq
 .LCPI1_0:
 	.long	1                               # 0x1
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	vpmovqd	%ymm1, %xmm1
 	vpbroadcastd	.LCPI1_0(%rip), %xmm2   # xmm2 = [1,1,1,1]
 	vptestmd	%xmm0, %xmm0, %k1
@@ -30,14 +30,14 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 .LCPI3_0:
 	.long	3                               # 0x3
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	vpmovqd	%ymm1, %xmm1
 	vpbroadcastd	.LCPI3_0(%rip), %xmm2   # xmm2 = [3,3,3,3]
 	vptestmd	%xmm0, %xmm0, %k1
 	vpsllvd	%xmm1, %xmm2, %xmm0 {%k1} {z}
 	vzeroupper
 	retq
-func00000000000000d1:                   # @func00000000000000d1
+func00000000000001a1:                   # @func00000000000001a1
 	vpmovqd	%ymm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vptestmd	%xmm0, %xmm0, %k1
@@ -46,7 +46,7 @@ func00000000000000d1:                   # @func00000000000000d1
 	retq
 .LCPI5_0:
 	.long	1                               # 0x1
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpmovqd	%ymm1, %xmm1
 	vpbroadcastd	.LCPI5_0(%rip), %xmm2   # xmm2 = [1,1,1,1]
 	vptestmd	%xmm0, %xmm0, %k1
@@ -57,7 +57,7 @@ func0000000000000021:                   # @func0000000000000021
 	.long	1                               # 0x1
 .LCPI6_1:
 	.long	2                               # 0x2
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000141:                   # @func0000000000000141
 	vpmovqd	%ymm1, %xmm1
 	vpbroadcastd	.LCPI6_0(%rip), %xmm2   # xmm2 = [1,1,1,1]
 	vpcmpneqd	.LCPI6_1(%rip){1to4}, %xmm0, %k1

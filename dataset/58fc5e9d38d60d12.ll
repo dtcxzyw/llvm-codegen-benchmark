@@ -1,6 +1,5 @@
 
-; 3 occurrences:
-; oiio/optimized/imagecache.cpp.ll
+; 2 occurrences:
 ; qemu/optimized/block_mirror.c.ll
 ; ruby/optimized/regexec.ll
 ; Function Attrs: nounwind
@@ -8,16 +7,15 @@ define i64 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = sext i32 %3 to i64
-  %5 = mul i64 %4, %1
-  %6 = add i64 %5, %0
+  %5 = mul i64 %1, %4
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; casadi/optimized/cvodes_spils.c.ll
 ; casadi/optimized/idas.c.ll
 ; casadi/optimized/idas_spils.c.ll
-; casadi/optimized/kinsol_spils.c.ll
 ; cmake/optimized/cmCMakePath.cxx.ll
 ; faiss/optimized/sorting.cpp.ll
 ; minetest/optimized/CGUIEditBox.cpp.ll
@@ -34,13 +32,12 @@ define i64 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = mul nsw i64 %4, %1
+  %5 = mul nsw i64 %1, %4
   %6 = add i64 %5, %0
   ret i64 %6
 }
 
-; 19 occurrences:
-; abc/optimized/ivyMan.c.ll
+; 17 occurrences:
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/idas.c.ll
 ; gromacs/optimized/gmx_energy.cpp.ll
@@ -58,25 +55,23 @@ entry:
 ; sundials/optimized/cvode.c.ll
 ; sundials/optimized/cvodes.c.ll
 ; sundials/optimized/idas.c.ll
-; yosys/optimized/qwp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = sext i32 %3 to i64
-  %5 = mul nsw i64 %4, %1
+  %5 = mul nsw i64 %1, %4
   %6 = add nsw i64 %5, %0
   ret i64 %6
 }
 
-; 16 occurrences:
+; 15 occurrences:
+; boost/optimized/sparring_partner.ll
 ; nix/optimized/cgroup.ll
 ; nix/optimized/get-drvs.ll
 ; nix/optimized/globals.ll
 ; nix/optimized/lexer-tab.ll
 ; nix/optimized/nix-collect-garbage.ll
-; nix/optimized/nix-env.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/profile.ll
 ; nix/optimized/shared.ll
 ; nix/optimized/store-api.ll
@@ -91,8 +86,8 @@ define i64 @func0000000000000010(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -48
   %4 = sext i32 %3 to i64
-  %5 = mul i64 %4, %1
-  %6 = add i64 %5, %0
+  %5 = mul i64 %1, %4
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -104,8 +99,8 @@ define i64 @func0000000000000005(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = mul nsw i64 %4, %1
-  %6 = add nsw i64 %5, %0
+  %5 = mul nsw i64 %1, %4
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 

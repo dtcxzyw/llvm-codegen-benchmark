@@ -1,8 +1,8 @@
 func0000000000000002:                   # @func0000000000000002
-	imull	$5243, %edi, %eax               # imm = 0x147B
+	imull	$26215, %edi, %eax              # imm = 0x6667
 	movl	%eax, %ecx
 	shrl	$31, %ecx
-	sarl	$19, %eax
+	sarl	$18, %eax
 	addl	%ecx, %eax
 	cltq
 	retq

@@ -1,5 +1,9 @@
 
-; 33 occurrences:
+; 36 occurrences:
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; cmake/optimized/fastcover.c.ll
 ; eastl/optimized/BenchmarkHash.cpp.ll
 ; eastl/optimized/TestFixedHash.cpp.ll
@@ -20,7 +24,6 @@
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/LowerMemIntrinsics.cpp.ll
 ; llvm/optimized/PDBStringTable.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; mini-lsm-rs/optimized/3l74wehtlfae5jz1.ll

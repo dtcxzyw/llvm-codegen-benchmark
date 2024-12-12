@@ -29,16 +29,15 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; libquic/optimized/v3_purp.c.ll
-; libquic/optimized/x509_trs.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
-  %2 = add i32 %1, 8
+  %2 = add i32 %1, 9
   %3 = zext nneg i32 %2 to i64
-  %4 = add nsw i64 %3, -8
+  %4 = add nsw i64 %3, -9
   ret i64 %4
 }
 

@@ -10,10 +10,3 @@ func000000000000000c:                   # @func000000000000000c
 	sete	%al
 	leaq	32(,%rax,8), %rax
 	retq
-func0000000000000004:                   # @func0000000000000004
-	notb	%dil
-	andb	$124, %dil
-	xorl	%eax, %eax
-	cmpb	$1, %dil
-	adcq	$3, %rax
-	retq

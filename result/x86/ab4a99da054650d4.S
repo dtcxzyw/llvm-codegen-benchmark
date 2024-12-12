@@ -15,6 +15,6 @@ func0000000000000008:                   # @func0000000000000008
 	retq
 func0000000000000000:                   # @func0000000000000000
 	imull	%esi, %edi
-	leal	128(%rdi), %eax
-	sarl	$4, %eax
+	leal	32768(%rdi), %eax
+	sarl	$16, %eax
 	retq

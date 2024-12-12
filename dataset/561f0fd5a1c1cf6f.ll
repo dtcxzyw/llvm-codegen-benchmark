@@ -41,12 +41,10 @@ entry:
   ret ptr %6
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; faiss/optimized/IndexAdditiveQuantizer.cpp.ll
 ; faiss/optimized/IndexIVF.cpp.ll
 ; faiss/optimized/distances.cpp.ll
-; opencv/optimized/dpm_feature.cpp.ll
-; opencv/optimized/trackerCSRTUtils.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000002a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
@@ -54,6 +52,19 @@ entry:
   %4 = getelementptr nusw float, ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -4
   %6 = getelementptr nusw float, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 2 occurrences:
+; opencv/optimized/dpm_feature.cpp.ll
+; opencv/optimized/trackerCSRTUtils.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002e(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = mul i64 %0, %2
+  %4 = getelementptr nusw double, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 8
+  %6 = getelementptr nusw double, ptr %5, i64 %0
   ret ptr %6
 }
 

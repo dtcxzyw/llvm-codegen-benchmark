@@ -21,17 +21,6 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
-; abc/optimized/ifMan.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000004(i32 %0, i64 %1) #0 {
-entry:
-  %2 = icmp ult i64 %1, 7
-  %3 = sext i32 %0 to i64
-  %4 = select i1 %2, i64 1, i64 %3
-  ret i64 %4
-}
-
 ; 3 occurrences:
 ; icu/optimized/utext.ll
 ; opencv/optimized/resize.cpp.ll

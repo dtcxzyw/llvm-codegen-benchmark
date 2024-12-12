@@ -5,11 +5,11 @@
 ; openssl/optimized/libssl-shlib-statem_clnt.ll
 ; openssl/optimized/libssl-shlib-statem_srvr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = xor i64 %3, -1
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
@@ -20,7 +20,7 @@ entry:
 ; openssl/optimized/libssl-shlib-statem_clnt.ll
 ; openssl/optimized/libssl-shlib-statem_srvr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000101(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = sub nuw i64 %1, %3
@@ -32,7 +32,7 @@ entry:
 ; 1 occurrences:
 ; openssl/optimized/bad_dtls_test-bin-bad_dtls_test.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func00000000000001a1(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = sub nuw nsw i64 %1, %3
@@ -42,21 +42,9 @@ entry:
 }
 
 ; 1 occurrences:
-; openssl/optimized/asynciotest-bin-asynciotest.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000d4(i64 %0, i64 %1, i8 %2) #0 {
-entry:
-  %3 = zext i8 %2 to i64
-  %4 = sub nuw nsw i64 %1, %3
-  %5 = add nsw i64 %4, -5
-  %6 = icmp ult i64 %5, %0
-  ret i1 %6
-}
-
-; 1 occurrences:
 ; stockfish/optimized/tbprobe.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = sub nsw i64 %1, %3

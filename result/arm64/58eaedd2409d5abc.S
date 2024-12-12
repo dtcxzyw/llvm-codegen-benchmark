@@ -1,28 +1,16 @@
-func00000000000000c8:                   // @func00000000000000c8
+func0000000000000188:                   // @func0000000000000188
 // %bb.0:                               // %entry
-	mvni	v4.4s, #1, msl #8
-	orr	v3.16b, v3.16b, v4.16b
-	orr	v2.16b, v2.16b, v4.16b
-	movi	v4.4s, #1, msl #8
-	add	v0.4s, v2.4s, v0.4s
-	add	v1.4s, v3.4s, v1.4s
-	cmhi	v1.4s, v1.4s, v4.4s
-	cmhi	v0.4s, v0.4s, v4.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	orr	w8, w1, #0xfffffe00
+	add	w8, w8, w0
+	cmp	w8, #511
+	cset	w0, hi
 	ret
                                         // -- End function
-func00000000000000da:                   // @func00000000000000da
+func00000000000001aa:                   // @func00000000000001aa
 // %bb.0:                               // %entry
-	mvni	v4.4s, #7
-	orr	v3.16b, v3.16b, v4.16b
-	orr	v2.16b, v2.16b, v4.16b
-	movi	v4.4s, #8
-	add	v0.4s, v2.4s, v0.4s
-	add	v1.4s, v3.4s, v1.4s
-	cmgt	v1.4s, v1.4s, v4.4s
-	cmgt	v0.4s, v0.4s, v4.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	orr	w8, w1, #0xfffffff8
+	add	w8, w8, w0
+	cmp	w8, #8
+	cset	w0, gt
 	ret
                                         // -- End function

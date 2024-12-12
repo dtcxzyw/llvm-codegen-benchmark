@@ -21,6 +21,13 @@ func0000000000000002:                   # @func0000000000000002
 	addi	a1, a1, -1
 	and	a0, a0, a1
 	ret
+func000000000000000d:                   # @func000000000000000d
+	slli	a1, a0, 56
+	bgez	a1, .LBB3_2
+	li	a0, 122
+.LBB3_2:                                # %entry
+	andi	a0, a0, 255
+	ret
 func0000000000000011:                   # @func0000000000000011
 	andi	a0, a0, 255
 	sltiu	a1, a0, 14

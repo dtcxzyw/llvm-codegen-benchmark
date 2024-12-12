@@ -1,7 +1,7 @@
 func000000000000000f:                   # @func000000000000000f
 	shrl	$2, %esi
 	andl	$2097151, %esi                  # imm = 0x1FFFFF
-	leaq	1048576(%rsi,%rdi), %rax
+	leaq	1048576(%rdi,%rsi), %rax
 	retq
 func0000000000000000:                   # @func0000000000000000
 	shrq	$10, %rsi

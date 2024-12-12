@@ -60,28 +60,6 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/vc_screen.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000020(i32 %0, i64 %1) #0 {
-entry:
-  %2 = icmp ugt i64 %1, 4096
-  %3 = add i32 %0, -1
-  %4 = select i1 %2, i32 4095, i32 %3
-  ret i32 %4
-}
-
-; 1 occurrences:
-; linux/optimized/vc_screen.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000023(i32 %0, i64 %1) #0 {
-entry:
-  %2 = icmp ugt i64 %1, 4096
-  %3 = add nuw nsw i32 %0, 1
-  %4 = select i1 %2, i32 4097, i32 %3
-  ret i32 %4
-}
-
-; 1 occurrences:
 ; icu/optimized/utext.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000018(i32 %0, i64 %1) #0 {

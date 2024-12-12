@@ -1,5 +1,6 @@
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/to_chars.ll
 ; cpython/optimized/dtoa.ll
 ; darktable/optimized/OlympusDecompressor.cpp.ll
 ; darktable/optimized/UncompressedDecompressor.cpp.ll

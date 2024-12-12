@@ -7,6 +7,11 @@ func0000000000000004:                   # @func0000000000000004
 	vmovdqa32	%xmm2, %xmm0 {%k1}
 	vzeroupper
 	retq
+func0000000000000005:                   # @func0000000000000005
+	vptestmd	%xmm1, %xmm1, %k1
+	vpmovqd	%ymm0, %xmm0 {%k1} {z}
+	vzeroupper
+	retq
 func0000000000000006:                   # @func0000000000000006
 	vptestmd	%xmm1, %xmm1, %k1
 	vpmovqd	%ymm0, %xmm0 {%k1} {z}

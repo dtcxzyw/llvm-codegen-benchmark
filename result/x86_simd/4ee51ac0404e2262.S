@@ -2,7 +2,7 @@
 	.long	4                               # 0x4
 .LCPI0_1:
 	.long	8                               # 0x8
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
 	vorps	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2 {%k1}
@@ -14,7 +14,7 @@ func0000000000000031:                   # @func0000000000000031
 	.long	201326592                       # 0xc000000
 .LCPI1_1:
 	.long	512                             # 0x200
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
 	vorps	.LCPI1_0(%rip){1to8}, %ymm2, %ymm2 {%k1}

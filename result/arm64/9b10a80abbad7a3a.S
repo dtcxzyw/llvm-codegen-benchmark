@@ -1,39 +1,22 @@
-func00000000000003cb:                   // @func00000000000003cb
+.LCPI0_0:
+	.xword	0x3e45798ee2308c3a              // double 1.0E-8
+func00000000000006cb:                   // @func00000000000006cb
 // %bb.0:                               // %entry
-	mov	x8, #35898                      // =0x8c3a
-	movk	x8, #57904, lsl #16
-	movk	x8, #31118, lsl #32
-	movk	x8, #15941, lsl #48
-	dup	v4.2d, x8
-	mov	w8, #15                         // =0xf
-	fcmgt	v1.2d, v1.2d, v4.2d
-	fcmgt	v0.2d, v0.2d, v4.2d
-	dup	v4.2d, x8
-	cmeq	v3.2d, v3.2d, v4.2d
-	cmeq	v2.2d, v2.2d, v4.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	uzp1	v1.4s, v2.4s, v3.4s
-	mvn	v0.16b, v0.16b
-	bic	v0.16b, v0.16b, v1.16b
-	xtn	v0.4h, v0.4s
+	adrp	x8, .LCPI0_0
+	ldr	d1, [x8, :lo12:.LCPI0_0]
+	fcmp	d0, d1
+	ccmp	x0, #15, #4, le
+	cset	w0, ne
 	ret
                                         // -- End function
-func00000000000003c2:                   // @func00000000000003c2
+.LCPI1_0:
+	.xword	0x3d719799812dea11              // double 9.9999999999999998E-13
+func00000000000006c2:                   // @func00000000000006c2
 // %bb.0:                               // %entry
-	mov	x8, #59921                      // =0xea11
-	movk	x8, #33069, lsl #16
-	movk	x8, #38809, lsl #32
-	movk	x8, #15729, lsl #48
-	dup	v4.2d, x8
-	mov	w8, #2                          // =0x2
-	dup	v5.2d, x8
-	fcmgt	v1.2d, v4.2d, v1.2d
-	fcmgt	v0.2d, v4.2d, v0.2d
-	cmeq	v3.2d, v3.2d, v5.2d
-	cmeq	v2.2d, v2.2d, v5.2d
-	uzp1	v2.4s, v2.4s, v3.4s
-	uzp1	v0.4s, v0.4s, v1.4s
-	bic	v0.16b, v0.16b, v2.16b
-	xtn	v0.4h, v0.4s
+	adrp	x8, .LCPI1_0
+	ldr	d1, [x8, :lo12:.LCPI1_0]
+	fcmp	d0, d1
+	ccmp	x0, #2, #4, mi
+	cset	w0, ne
 	ret
                                         // -- End function

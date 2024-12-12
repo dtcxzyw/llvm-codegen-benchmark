@@ -31,7 +31,7 @@ define i8 @func0000000000000000(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i8
   %.neg = xor i8 %2, -1
-  %3 = add i8 %.neg, %0
+  %3 = add i8 %0, %.neg
   ret i8 %3
 }
 

@@ -28,9 +28,3 @@ func000000000000000b:                   # @func000000000000000b
 	vsll.vv	v10, v11, v10
 	vwadd.wv	v8, v8, v10
 	ret
-func0000000000000003:                   # @func0000000000000003
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vmv.v.i	v11, 2
-	vsll.vv	v10, v11, v10
-	vwadd.wv	v8, v8, v10
-	ret

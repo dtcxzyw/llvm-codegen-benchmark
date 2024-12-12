@@ -1,8 +1,8 @@
-func0000000000000304:                   # @func0000000000000304
+func0000000000000604:                   # @func0000000000000604
 	xorl	%eax, %eax
 	cmpl	%edx, %esi
 	setne	%al
 	subl	%eax, %esi
-	cmpl	%edi, %esi
-	seta	%al
+	cmpl	%esi, %edi
+	setb	%al
 	retq

@@ -1,38 +1,28 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	sub	v2.4s, v2.4s, v4.4s
-	sub	v3.4s, v3.4s, v5.4s
-	add	v1.4s, v3.4s, v1.4s
-	add	v0.4s, v2.4s, v0.4s
-	sshr	v0.4s, v0.4s, #3
-	sshr	v1.4s, v1.4s, #3
+	sub	w8, w1, w2
+	add	w8, w0, w8
+	asr	w0, w8, #3
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	sub	v3.4s, v3.4s, v5.4s
-	sub	v2.4s, v2.4s, v4.4s
-	shadd	v0.4s, v2.4s, v0.4s
-	shadd	v1.4s, v3.4s, v1.4s
+	sub	w8, w1, w2
+	add	w8, w8, w0
+	asr	w0, w8, #1
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	sub	v2.4s, v2.4s, v4.4s
-	sub	v3.4s, v3.4s, v5.4s
-	add	v1.4s, v3.4s, v1.4s
-	add	v0.4s, v2.4s, v0.4s
-	sshr	v0.4s, v0.4s, #3
-	sshr	v1.4s, v1.4s, #3
+	sub	w8, w1, w2
+	add	w8, w8, w0
+	asr	w0, w8, #3
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	sub	v2.4s, v2.4s, v4.4s
-	sub	v3.4s, v3.4s, v5.4s
-	add	v1.4s, v3.4s, v1.4s
-	add	v0.4s, v2.4s, v0.4s
-	cmlt	v0.4s, v0.4s, #0
-	cmlt	v1.4s, v1.4s, #0
+	sub	w8, w1, w2
+	add	w8, w0, w8
+	asr	w0, w8, #31
 	ret
                                         // -- End function

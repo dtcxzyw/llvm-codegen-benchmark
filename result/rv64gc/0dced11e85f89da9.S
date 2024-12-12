@@ -32,16 +32,19 @@ func0000000000000002:                   # @func0000000000000002
 	fld	fa5, %lo(.LCPI2_0)(a0)
 	flt.d	a0, fa0, fa5
 	ret
+.LCPI3_0:
+	.quad	0xc059000000000000              # double -100
 func0000000000000004:                   # @func0000000000000004
 	andi	a0, a0, 1
 	beqz	a0, .LBB3_2
 	fneg.d	fa0, fa0
 .LBB3_2:                                # %entry
-	fmv.d.x	fa5, zero
+	lui	a0, %hi(.LCPI3_0)
+	fld	fa5, %lo(.LCPI3_0)(a0)
 	flt.d	a0, fa5, fa0
 	ret
 .LCPI4_0:
-	.quad	0x3d719799812dea11              # double 9.9999999999999998E-13
+	.quad	0x0010000000000000              # double 2.2250738585072014E-308
 func0000000000000005:                   # @func0000000000000005
 	andi	a0, a0, 1
 	beqz	a0, .LBB4_2

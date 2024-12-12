@@ -1,12 +1,13 @@
+.LCPI0_0:
+	.quad	755578637259143235              # 0xa7c5ac471b47843
 func0000000000000000:                   # @func0000000000000000
 	andi	a0, a0, 1
+	lui	a3, %hi(.LCPI0_0)
 	czero.nez	a2, a2, a0
+	ld	a3, %lo(.LCPI0_0)(a3)
 	czero.eqz	a0, a1, a0
-	lui	a1, 699051
-	addiw	a1, a1, -1365
 	or	a0, a0, a2
-	slli	a2, a1, 32
-	add	a1, a1, a2
-	mulhu	a0, a0, a1
-	srli	a0, a0, 4
+	srli	a0, a0, 5
+	mulhu	a0, a0, a3
+	srli	a0, a0, 7
 	ret

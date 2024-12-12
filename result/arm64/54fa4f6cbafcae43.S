@@ -1,4 +1,4 @@
-func000000000000002c:                   // @func000000000000002c
+func000000000000004c:                   // @func000000000000004c
 // %bb.0:                               // %entry
 	tst	x3, #0xffffffff
 	cset	w8, ne

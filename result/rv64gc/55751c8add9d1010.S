@@ -21,18 +21,20 @@ func0000000000000008:                   # @func0000000000000008
 	and	a0, a0, a2
 .LBB2_2:                                # %entry
 	ret
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	sltiu	a1, a1, 2
 	addi	a1, a1, -1
 	and	a0, a0, a1
 	andi	a0, a0, 12
 	ret
-func000000000000000a:                   # @func000000000000000a
-	li	a2, 1
-	slli	a2, a2, 11
-	bge	a1, a2, .LBB4_2
-	srliw	a2, a0, 3
-	slli	a2, a2, 3
-.LBB4_2:                                # %entry
-	mv	a0, a2
+func0000000000000018:                   # @func0000000000000018
+	srli	a1, a1, 11
+	beqz	a1, .LBB4_2
+	li	a0, 1
+	slli	a0, a0, 11
+	ret
+.LBB4_2:
+	lui	a1, 1
+	addiw	a1, a1, -8
+	and	a0, a0, a1
 	ret

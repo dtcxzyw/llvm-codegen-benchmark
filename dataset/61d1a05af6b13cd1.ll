@@ -17,18 +17,6 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/bcd.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000020(i32 %0) #0 {
-entry:
-  %1 = udiv i32 %0, 10
-  %2 = mul nuw i32 %1, 6
-  %3 = add i32 %2, %0
-  %4 = trunc i32 %3 to i8
-  ret i8 %4
-}
-
-; 1 occurrences:
 ; opencv/optimized/persistence.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000003c(i32 %0) #0 {

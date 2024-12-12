@@ -1,5 +1,22 @@
 
-; 96 occurrences:
+%"struct.clang::FunctionType::FunctionTypeExtraBitfields.3137949" = type { i16, [6 x i8] }
+
+; 3 occurrences:
+; opencv/optimized/bilateral_filter.dispatch.cpp.ll
+; openjdk/optimized/archiveUtils.ll
+; openjdk/optimized/zMark.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000002(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %1, 4095
+  %3 = and i64 %2, -4096
+  %4 = inttoptr i64 %3 to ptr
+  %5 = and i64 %0, -512
+  %6 = getelementptr nusw i64, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 93 occurrences:
 ; hyperscan/optimized/repeat.c.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
@@ -93,17 +110,14 @@
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/VTableBuilder.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
-; opencv/optimized/bilateral_filter.dispatch.cpp.ll
-; openjdk/optimized/archiveUtils.ll
-; openjdk/optimized/zMark.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(i64 %0, i64 %1) #0 {
+define ptr @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, 4095
-  %3 = and i64 %2, -4096
+  %2 = add i64 %1, 7
+  %3 = and i64 %2, -8
   %4 = inttoptr i64 %3 to ptr
-  %5 = and i64 %0, -512
-  %6 = getelementptr nusw i64, ptr %4, i64 %5
+  %5 = and i64 %0, 1
+  %6 = getelementptr nusw nuw %"struct.clang::FunctionType::FunctionTypeExtraBitfields.3137949", ptr %4, i64 %5
   ret ptr %6
 }
 

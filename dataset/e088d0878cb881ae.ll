@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/block_qcow2-refcount.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 72057594037927424
   %4 = add nsw i64 %1, -1
@@ -26,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/block_qcow2-refcount.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -512
   %4 = add nsw i64 %1, -1
@@ -38,7 +38,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/DeflateDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f5(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001e5(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 2147483647
   %4 = add nuw nsw i64 %1, 1
@@ -218,7 +218,7 @@ entry:
 ; llvm/optimized/StmtOpenMP.cpp.ll
 ; luau/optimized/Lexer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000188(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = and i64 %1, -8
@@ -232,7 +232,7 @@ entry:
 ; hermes/optimized/regexec.c.ll
 ; llvm/optimized/regexec.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000086(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 1
   %4 = and i64 %1, 134217727
@@ -245,7 +245,7 @@ entry:
 ; linux/optimized/badblocks.ll
 ; openexr/optimized/ImfHuf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001e4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 18014398509481983
   %4 = add nuw nsw i64 %1, 1
@@ -257,7 +257,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/badblocks.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001e1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = and i64 %1, 18014398509481983
@@ -266,11 +266,10 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
-; linux/optimized/af_packet.ll
+; 1 occurrences:
 ; linux/optimized/badblocks.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001e8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 18014398509481983
   %4 = add nuw nsw i64 %1, 1

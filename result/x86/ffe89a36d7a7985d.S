@@ -3,11 +3,17 @@ func0000000000000006:                   # @func0000000000000006
 	sarq	$63, %rdi
 	andl	%edi, %eax
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	leal	1(%rdi), %ecx
 	xorl	%eax, %eax
 	cmpq	$11, %rdi
 	cmovbl	%ecx, %eax
+	retq
+func0000000000000004:                   # @func0000000000000004
+	leal	32(%rdi), %ecx
+	shrq	$32, %rdi
+	movl	$31, %eax
+	cmovel	%ecx, %eax
 	retq
 func0000000000000008:                   # @func0000000000000008
 	leal	-1(%rdi), %ecx
@@ -15,31 +21,19 @@ func0000000000000008:                   # @func0000000000000008
 	movl	$1, %eax
 	cmovael	%ecx, %eax
 	retq
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	leal	-1(%rdi), %ecx
 	shrq	$32, %rdi
 	movl	$-2, %eax
 	cmovel	%ecx, %eax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	leal	-1(%rdi), %ecx
 	xorl	%eax, %eax
 	testq	%rdi, %rdi
 	cmovgl	%ecx, %eax
 	retq
-func000000000000000a:                   # @func000000000000000a
-	leal	-1(%rdi), %ecx
-	cmpq	$2, %rdi
-	movl	$1, %eax
-	cmovgel	%ecx, %eax
-	retq
-func00000000000000d4:                   # @func00000000000000d4
-	leal	7(%rdi), %ecx
-	cmpq	$3, %rdi
-	movl	$2, %eax
-	cmovbl	%ecx, %eax
-	retq
-func00000000000000da:                   # @func00000000000000da
+func00000000000001aa:                   # @func00000000000001aa
 	leal	-1(%rdi), %ecx
 	xorl	%eax, %eax
 	testq	%rdi, %rdi

@@ -1,5 +1,8 @@
 
-; 100 occurrences:
+; 101 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/topology.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cvc5/optimized/options_handler.cpp.ll
 ; cxxopts/optimized/example.cpp.ll
@@ -70,7 +73,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -98,10 +100,9 @@
 ; xgboost/optimized/input_split_base.cc.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i16 %0, i8 %1) #0 {
+define i1 @func0000000000000184(i16 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -58
   %3 = icmp ult i8 %2, -2
@@ -114,7 +115,7 @@ entry:
 ; verilator/optimized/V3Width.cpp.ll
 ; wireshark/optimized/packet-epl.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i16 %0, i8 %1) #0 {
+define i1 @func0000000000000081(i16 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -1
   %3 = icmp ult i8 %2, 2
@@ -123,11 +124,13 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 4 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; spike/optimized/socketif.ll
 ; velox/optimized/URLFunctions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i16 %0, i8 %1) #0 {
+define i1 @func000000000000008c(i16 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -14
   %3 = icmp ult i8 %2, -4
@@ -139,7 +142,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i16 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 48
   %3 = icmp eq i16 %0, 0
@@ -151,7 +154,7 @@ entry:
 ; linux/optimized/namei_msdos.ll
 ; wireshark/optimized/packet-epl.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i16 %0, i8 %1) #0 {
+define i1 @func0000000000000024(i16 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -1
   %3 = icmp ult i8 %2, -2

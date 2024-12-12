@@ -11,7 +11,7 @@ define i32 @func0000000000000011(i32 %0, i64 %1) #0 {
 entry:
   %.neg = sdiv exact i64 %1, -112
   %.neg1 = trunc i64 %.neg to i32
-  %2 = add i32 %.neg1, %0
+  %2 = add i32 %0, %.neg1
   ret i32 %2
 }
 
@@ -27,7 +27,7 @@ define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %.neg = sdiv i64 %1, -26
   %.neg1 = trunc i64 %.neg to i32
-  %2 = add i32 %.neg1, %0
+  %2 = add i32 %0, %.neg1
   ret i32 %2
 }
 
@@ -38,7 +38,7 @@ define i32 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %.neg = sdiv i64 %1, -3600000000
   %.neg1 = trunc i64 %.neg to i32
-  %2 = add i32 %.neg1, %0
+  %2 = add i32 %0, %.neg1
   ret i32 %2
 }
 
@@ -55,7 +55,7 @@ define i32 @func0000000000000010(i32 %0, i64 %1) #0 {
 entry:
   %.neg = sdiv exact i64 %1, -12
   %.neg1 = trunc i64 %.neg to i32
-  %2 = add i32 %.neg1, %0
+  %2 = add i32 %0, %.neg1
   ret i32 %2
 }
 

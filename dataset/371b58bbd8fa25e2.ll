@@ -14,6 +14,18 @@ entry:
 }
 
 ; 1 occurrences:
+; lvgl/optimized/lv_color.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000010(i8 %0) #0 {
+entry:
+  %1 = zext i8 %0 to i16
+  %2 = mul nuw i16 %1, 255
+  %3 = udiv i16 %2, 100
+  %4 = trunc i16 %3 to i8
+  ret i8 %4
+}
+
+; 1 occurrences:
 ; wireshark/optimized/netxray.c.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000001a(i8 %0) #0 {

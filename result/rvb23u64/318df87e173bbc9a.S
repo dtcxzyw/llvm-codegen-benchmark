@@ -15,11 +15,11 @@ func0000000000000018:                   # @func0000000000000018
 	srai	a0, a0, 63
 	or	a0, a0, a1
 	ret
-func0000000000000010:                   # @func0000000000000010
+func0000000000000030:                   # @func0000000000000030
 	andi	a0, a0, 1
 	sext.w	a1, a1
 	li	a2, 2
-	sltiu	a1, a1, 15
+	sltiu	a1, a1, 5
 	xori	a1, a1, 1
 	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0

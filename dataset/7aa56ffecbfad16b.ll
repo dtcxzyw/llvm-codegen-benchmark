@@ -1,10 +1,9 @@
 
-; 14 occurrences:
+; 13 occurrences:
 ; hermes/optimized/APInt.cpp.ll
 ; linux/optimized/blk-map.ll
 ; linux/optimized/i915_gem_pages.ll
 ; linux/optimized/intel_ggtt.ll
-; linux/optimized/machine_kexec_64.ll
 ; linux/optimized/mlock.ll
 ; linux/optimized/trans_virtio.ll
 ; llvm/optimized/APInt.cpp.ll
@@ -44,9 +43,7 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
-; libquic/optimized/time_support.c.ll
-; nuttx/optimized/lib_gmtimer.c.ll
+; 1 occurrences:
 ; quantlib/optimized/convolvedstudentt.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i64 %0, i64 %1) #0 {

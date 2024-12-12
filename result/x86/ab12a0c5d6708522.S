@@ -1,7 +1,8 @@
 func0000000000000005:                   # @func0000000000000005
-	movl	$6, %eax
+	movl	$3, %eax
 	subl	%edi, %eax
-	imull	$86400, %eax, %eax              # imm = 0x15180
+	shll	$3, %eax
+	leal	(%rax,%rax,4), %eax
 	cltq
 	retq
 func0000000000000000:                   # @func0000000000000000

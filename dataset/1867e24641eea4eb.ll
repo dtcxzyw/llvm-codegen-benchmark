@@ -170,7 +170,7 @@
 define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %0, -1
-  %4 = and i64 %3, %2
+  %4 = and i64 %2, %3
   %.neg = sub i64 %1, %4
   %5 = add i64 %.neg, %0
   ret i64 %5

@@ -99,6 +99,28 @@ func0000000000000002:                   # @func0000000000000002
 	vpmovzxbq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,zero,zero,zero,zero,xmm0[1],zero,zero,zero,zero,zero,zero,zero,xmm0[2],zero,zero,zero,zero,zero,zero,zero,xmm0[3],zero,zero,zero,zero,zero,zero,zero
 	retq
 .LCPI3_0:
+	.byte	122                             # 0x7a
+	.byte	122                             # 0x7a
+	.byte	122                             # 0x7a
+	.byte	122                             # 0x7a
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+func000000000000000d:                   # @func000000000000000d
+	vpmovb2m	%xmm0, %k1
+	vmovdqu8	.LCPI3_0(%rip), %xmm0 {%k1}     # xmm0 {%k1} = [122,122,122,122,u,u,u,u,u,u,u,u,u,u,u,u]
+	vpmovzxbq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,zero,zero,zero,zero,xmm0[1],zero,zero,zero,zero,zero,zero,zero,xmm0[2],zero,zero,zero,zero,zero,zero,zero,xmm0[3],zero,zero,zero,zero,zero,zero,zero
+	retq
+.LCPI4_0:
 	.byte	13                              # 0xd
 	.byte	13                              # 0xd
 	.byte	13                              # 0xd
@@ -116,7 +138,7 @@ func0000000000000002:                   # @func0000000000000002
 	.zero	1
 	.zero	1
 func0000000000000011:                   # @func0000000000000011
-	vpcmpleub	.LCPI3_0(%rip), %xmm0, %k1
+	vpcmpleub	.LCPI4_0(%rip), %xmm0, %k1
 	vmovdqu8	%xmm0, %xmm0 {%k1} {z}
 	vpmovzxbq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,zero,zero,zero,zero,xmm0[1],zero,zero,zero,zero,zero,zero,zero,xmm0[2],zero,zero,zero,zero,zero,zero,zero,xmm0[3],zero,zero,zero,zero,zero,zero,zero
 	retq

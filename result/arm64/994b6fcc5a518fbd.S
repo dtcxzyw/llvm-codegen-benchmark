@@ -1,10 +1,10 @@
-func000000000000001a:                   // @func000000000000001a
+func000000000000001e:                   // @func000000000000001e
 // %bb.0:                               // %entry
 	add	x8, x0, w2, uxtw
 	sub	x0, x8, x1
 	ret
                                         // -- End function
-func000000000000005a:                   // @func000000000000005a
+func000000000000005e:                   // @func000000000000005e
 // %bb.0:                               // %entry
 	add	x8, x0, w2, uxtw
 	sub	x0, x8, x1
@@ -22,19 +22,19 @@ func0000000000000010:                   // @func0000000000000010
 	sub	x0, x8, x1
 	ret
                                         // -- End function
-func000000000000000a:                   // @func000000000000000a
+func000000000000000e:                   // @func000000000000000e
 // %bb.0:                               // %entry
 	add	x8, x0, w2, uxtw
 	sub	x0, x8, x1
 	ret
                                         // -- End function
-func0000000000000058:                   // @func0000000000000058
+func000000000000005c:                   // @func000000000000005c
 // %bb.0:                               // %entry
 	add	x8, x0, w2, uxtw
 	sub	x0, x8, x1
 	ret
                                         // -- End function
-func000000000000003a:                   // @func000000000000003a
+func000000000000003f:                   // @func000000000000003f
 // %bb.0:                               // %entry
 	add	x8, x0, w2, uxtw
 	sub	x8, x8, x1

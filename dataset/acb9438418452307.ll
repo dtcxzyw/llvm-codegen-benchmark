@@ -10,7 +10,7 @@
 define float @func000000000000001f(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = zext i8 %1 to i32
   %6 = add nuw nsw i32 %4, %5
   %7 = uitofp nneg i32 %6 to float

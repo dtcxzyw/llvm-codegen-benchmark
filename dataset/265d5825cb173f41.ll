@@ -30,7 +30,7 @@ entry:
 ; rust-analyzer-rs/optimized/55rapmz9wj276hro.ll
 ; wireshark/optimized/packet-pw-satop.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000023(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000043(i32 %0, i8 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, 8
   %3 = icmp eq i8 %1, 0
@@ -42,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-pw-satop.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000029(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000049(i32 %0, i8 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, 16
   %3 = icmp ult i8 %1, 64
@@ -68,7 +68,7 @@ entry:
 ; linux/optimized/af_unix.ll
 ; linux/optimized/intel_backlight.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000042(i32 %0, i8 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, 268435456
   %3 = icmp eq i8 %1, 0

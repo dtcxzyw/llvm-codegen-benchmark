@@ -1,5 +1,5 @@
 
-; 65 occurrences:
+; 66 occurrences:
 ; arrow/optimized/bridge.cc.ll
 ; arrow/optimized/grouper.cc.ll
 ; arrow/optimized/row_encoder.cc.ll
@@ -31,6 +31,7 @@
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/ofbx.cpp.ll
 ; minetest/optimized/guiTable.cpp.ll
+; mitsuba3/optimized/obj.cpp.ll
 ; mold/optimized/compress.cc.ll
 ; opencv/optimized/aruco_detector.cpp.ll
 ; opencv/optimized/bagofwords_classification.cpp.ll
@@ -69,8 +70,8 @@
 define i64 @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = ashr exact i64 %3, 5
-  %.neg = sdiv exact i64 %0, -40
+  %4 = ashr exact i64 %3, 4
+  %.neg = sdiv exact i64 %0, -24
   %5 = add nsw i64 %.neg, %4
   ret i64 %5
 }

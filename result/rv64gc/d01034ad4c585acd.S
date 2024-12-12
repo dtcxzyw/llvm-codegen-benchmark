@@ -22,9 +22,3 @@ func0000000000000006:                   # @func0000000000000006
 	and	a0, a0, a1
 	neg	a0, a0
 	ret
-func0000000000000004:                   # @func0000000000000004
-	sext.w	a1, a1
-	sltiu	a1, a1, -4
-	and	a0, a0, a1
-	neg	a0, a0
-	ret

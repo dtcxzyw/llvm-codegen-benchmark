@@ -8,14 +8,15 @@ define i32 @func0000000000000000(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 17
   %4 = and i32 %3, 4
-  %5 = or i32 %4, %1
+  %5 = or i32 %1, %4
   %6 = or i32 %5, 3
   %7 = select i1 %0, i32 %5, i32 %6
   ret i32 %7
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; imgui/optimized/imgui_widgets.cpp.ll
+; openjdk/optimized/gtk3_interface.ll
 ; openusd/optimized/openexr-c.c.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; qemu/optimized/hw_9pfs_9p.c.ll
@@ -37,7 +38,7 @@ define i32 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
   %4 = and i32 %3, 1
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or i32 %5, -520094722
   %7 = select i1 %0, i32 %5, i32 %6
   ret i32 %7

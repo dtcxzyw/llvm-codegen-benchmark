@@ -19,7 +19,8 @@ entry:
   ret i32 %4
 }
 
-; 23 occurrences:
+; 25 occurrences:
+; boost/optimized/to_chars.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; darktable/optimized/introspection_lens.cc.ll
 ; gromacs/optimized/dorml2.cpp.ll
@@ -40,6 +41,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-v3_purp.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll
 ; php/optimized/zend_compile.ll
+; qemu/optimized/tcg-op-ldst.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/text_import.c.ll
 ; zstd/optimized/zstd_compress.c.ll
@@ -66,7 +68,7 @@ entry:
   ret i32 %4
 }
 
-; 41 occurrences:
+; 42 occurrences:
 ; cmake/optimized/archive_read_support_filter_xz.c.ll
 ; darktable/optimized/introspection_clipping.c.ll
 ; freetype/optimized/sfnt.c.ll
@@ -95,6 +97,7 @@ entry:
 ; llvm/optimized/TargetInfo.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; ncnn/optimized/reshape_x86.cpp.ll
 ; oiio/optimized/fitsoutput.cpp.ll
 ; openexr/optimized/compression.c.ll

@@ -10,7 +10,7 @@ entry:
   ret i32 %3
 }
 
-; 64 occurrences:
+; 66 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/duration_test.cc.ll
 ; abseil-cpp/optimized/examples_test.cc.ll
@@ -24,6 +24,7 @@ entry:
 ; assimp/optimized/ColladaLoader.cpp.ll
 ; assimp/optimized/MDLLoader.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
+; boost/optimized/partition.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cvc5/optimized/equality_engine.cpp.ll
 ; cvc5/optimized/node_bitblaster.cpp.ll
@@ -34,6 +35,7 @@ entry:
 ; folly/optimized/Random.cpp.ll
 ; gromacs/optimized/gmx_bar.cpp.ll
 ; gromacs/optimized/mtop_util.cpp.ll
+; grpc/optimized/priority.cc.ll
 ; grpc/optimized/tcp_server_posix.cc.ll
 ; hyperscan/optimized/ng_corpus_generator.cpp.ll
 ; icu/optimized/icuexportdata.ll
@@ -44,6 +46,7 @@ entry:
 ; llvm/optimized/RandomNumberGenerator.cpp.ll
 ; llvm/optimized/Randstruct.cpp.ll
 ; llvm/optimized/SymbolSize.cpp.ll
+; luau/optimized/IrAnalysis.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
@@ -54,7 +57,6 @@ entry:
 ; opencv/optimized/large_kinfu.cpp.ll
 ; opencv/optimized/matmul_layer.cpp.ll
 ; opencv/optimized/perf_layer.cpp.ll
-; opencv/optimized/tf_importer.cpp.ll
 ; openexr/optimized/ImfMisc.cpp.ll
 ; openspiel/optimized/deep_sea.cc.ll
 ; openspiel/optimized/kuhn_poker.cc.ll
@@ -109,7 +111,7 @@ entry:
   ret i32 %3
 }
 
-; 24 occurrences:
+; 23 occurrences:
 ; abseil-cpp/optimized/exponential_distribution_test.cc.ll
 ; abseil-cpp/optimized/gaussian_distribution_test.cc.ll
 ; abseil-cpp/optimized/poisson_distribution_test.cc.ll
@@ -132,7 +134,6 @@ entry:
 ; opencv/optimized/dpm_nms.cpp.ll
 ; opencv/optimized/einsum_layer.cpp.ll
 ; opencv/optimized/kdtree.cpp.ll
-; opencv/optimized/reduce_layer.cpp.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000011(i64 %0) #0 {
@@ -154,7 +155,7 @@ entry:
   ret i32 %3
 }
 
-; 14 occurrences:
+; 12 occurrences:
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; linux/optimized/vsprintf.ll
 ; luajit/optimized/lib_table.ll
@@ -165,8 +166,6 @@ entry:
 ; luajit/optimized/lj_crecord_dyn.ll
 ; luajit/optimized/lj_gc.ll
 ; luajit/optimized/lj_gc_dyn.ll
-; luajit/optimized/lj_obj.ll
-; luajit/optimized/lj_obj_dyn.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
 ; Function Attrs: nounwind

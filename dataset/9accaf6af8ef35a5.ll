@@ -1,14 +1,17 @@
 
-; 4 occurrences:
+; 7 occurrences:
 ; abc/optimized/sbdCut.c.ll
 ; cmake/optimized/json_value.cpp.ll
+; llvm/optimized/MachineCopyPropagation.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
+; ozz-animation/optimized/jsoncpp.cpp.ll
+; z3/optimized/realclosure.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 24
-  %4 = icmp ult i32 %3, %1
+  %4 = icmp samesign ult i32 %3, %1
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -24,7 +27,7 @@ entry:
   ret i1 %5
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; abc/optimized/abcUtil.c.ll
 ; abc/optimized/acec2Mult.c.ll
 ; abc/optimized/cnfFast.c.ll
@@ -37,6 +40,7 @@ entry:
 ; freetype/optimized/sfnt.c.ll
 ; icu/optimized/collationkeys.ll
 ; icu/optimized/ucmstate.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; postgres/optimized/bitmapset.ll
 ; slurm/optimized/fed_mgr.ll
 ; wasmtime-rs/optimized/1f1skdqjemonth3f.ll
@@ -76,10 +80,10 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-iwarp-mpa.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000009(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000019(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 9
-  %4 = icmp uge i32 %3, %1
+  %4 = icmp samesign uge i32 %3, %1
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }

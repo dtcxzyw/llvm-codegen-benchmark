@@ -144,6 +144,20 @@ entry:
   ret i64 %6
 }
 
+; 3 occurrences:
+; linux/optimized/decompress_unlzma.ll
+; openjdk/optimized/graphKit.ll
+; openusd/optimized/avif.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003f(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = shl nuw nsw i64 %0, %3
+  %5 = zext nneg i32 %1 to i64
+  %6 = add nuw nsw i64 %4, %5
+  ret i64 %6
+}
+
 ; 1 occurrences:
 ; openjdk/optimized/macroArrayCopy.ll
 ; Function Attrs: nounwind

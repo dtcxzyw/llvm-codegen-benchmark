@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 19 occurrences:
 ; clamav/optimized/bytecode_vm.c.ll
 ; clamav/optimized/filtering.c.ll
 ; duckdb/optimized/ub_duckdb_func_cast.cpp.ll
@@ -10,6 +10,7 @@
 ; linux/optimized/intel_overlay.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
+; lvgl/optimized/lv_refr.ll
 ; minetest/optimized/servermap.cpp.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; spike/optimized/vdiv_vv.ll

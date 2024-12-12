@@ -1,14 +1,13 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; lief/optimized/constant_time.c.ll
 ; ruby/optimized/re.ll
-; ruby/optimized/utf_16be.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = icmp sgt i64 %2, 1
-  %4 = select i1 %3, i32 2, i32 -2
+  %3 = icmp sgt i64 %2, 0
+  %4 = select i1 %3, i32 1, i32 -1
   ret i32 %4
 }
 
@@ -24,7 +23,7 @@ entry:
   ret i32 %4
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; assimp/optimized/zip.c.ll
 ; cmake/optimized/cmExportBuildFileGenerator.cxx.ll
 ; cmake/optimized/cmExportInstallFileGenerator.cxx.ll
@@ -38,7 +37,6 @@ entry:
 ; luau/optimized/Autocomplete.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; proj/optimized/c_api.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; velox/optimized/Scanner.cpp.ll
 ; verilator/optimized/V3ParseLex.cpp.ll
 ; wireshark/optimized/ascend_scanner.c.ll
@@ -68,7 +66,7 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/mpz.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp slt i64 %0, %1
   %3 = select i1 %2, i32 -1, i32 1
@@ -78,7 +76,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/pshinter.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i64 %0, i64 %1) #0 {
+define i32 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %.not = icmp slt i64 %0, %1
   %2 = select i1 %.not, i32 2, i32 1

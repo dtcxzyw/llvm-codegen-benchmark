@@ -16,15 +16,3 @@ func0000000000000065:                   # @func0000000000000065
 	sub	a0, a0, a1
 	slli	a0, a0, 3
 	ret
-func0000000000000038:                   # @func0000000000000038
-	addi	a1, a1, 8
-	srli	a1, a1, 3
-	sub	a0, a0, a1
-	slli	a0, a0, 3
-	ret
-func000000000000003b:                   # @func000000000000003b
-	addi	a1, a1, 8
-	srli	a1, a1, 3
-	sub	a0, a0, a1
-	slli	a0, a0, 3
-	ret

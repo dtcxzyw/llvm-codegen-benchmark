@@ -1,5 +1,5 @@
 
-; 37 occurrences:
+; 36 occurrences:
 ; assimp/optimized/IRRLoader.cpp.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cpython/optimized/_ctypes_test.ll
@@ -22,7 +22,6 @@
 ; minetest/optimized/minimap.cpp.ll
 ; minetest/optimized/rollback.cpp.ll
 ; minetest/optimized/servermap.cpp.ll
-; minetest/optimized/test_voxelmanipulator.cpp.ll
 ; minetest/optimized/treegen.cpp.ll
 ; minetest/optimized/voxel.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll

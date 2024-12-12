@@ -1,5 +1,5 @@
 
-; 101 occurrences:
+; 105 occurrences:
 ; assimp/optimized/unzip.c.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; glslang/optimized/ParseHelper.cpp.ll
@@ -60,6 +60,10 @@
 ; llvm/optimized/Visitor.cpp.ll
 ; llvm/optimized/WinCOFFObjectWriter.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_canvas.ll
+; lvgl/optimized/lv_draw_buf.ll
+; lvgl/optimized/lv_image_decoder.ll
 ; openjdk/optimized/barrierSetC1.ll
 ; openjdk/optimized/c1_FrameMap.ll
 ; openjdk/optimized/c1_LIRAssembler.ll
@@ -111,7 +115,7 @@ entry:
   ret i32 %4
 }
 
-; 45 occurrences:
+; 43 occurrences:
 ; abc/optimized/bmcBmcAnd.c.ll
 ; abc/optimized/cecPat.c.ll
 ; abc/optimized/giaIso2.c.ll
@@ -137,7 +141,6 @@ entry:
 ; llvm/optimized/Decl.cpp.ll
 ; llvm/optimized/DeclCXX.cpp.ll
 ; llvm/optimized/ELFObjectWriter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SelectionDAGISel.cpp.ll
 ; llvm/optimized/SemaTemplate.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
@@ -148,7 +151,6 @@ entry:
 ; postgres/optimized/sha2.ll
 ; postgres/optimized/sha2_shlib.ll
 ; postgres/optimized/sha2_srv.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; raylib/optimized/rcore.c.ll
 ; ruby/optimized/sha2.ll

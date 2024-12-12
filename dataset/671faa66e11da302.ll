@@ -33,7 +33,7 @@ entry:
   ret float %5
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; box2d/optimized/b2_collision.cpp.ll
 ; box2d/optimized/b2_distance_joint.cpp.ll
 ; box2d/optimized/b2_gear_joint.cpp.ll
@@ -42,6 +42,7 @@ entry:
 ; box2d/optimized/b2_time_of_impact.cpp.ll
 ; box2d/optimized/b2_weld_joint.cpp.ll
 ; box2d/optimized/b2_wheel_joint.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; Function Attrs: nounwind
 define float @func0000000000000004(float %0, float %1, float %2) #0 {
 entry:

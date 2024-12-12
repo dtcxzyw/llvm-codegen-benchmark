@@ -7,26 +7,26 @@
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i32 %1, i8 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = lshr i8 %2, 4
   %4 = zext nneg i8 %3 to i32
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw i8, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %0, i64 %6
   ret ptr %7
 }
 
 ; 1 occurrences:
 ; llama.cpp/optimized/ggml.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1, i8 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = lshr i8 %2, 5
   %4 = zext nneg i8 %3 to i32
-  %5 = or i32 %4, %1
+  %5 = or i32 %1, %4
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw i64, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i64, ptr %0, i64 %6
   ret ptr %7
 }
 

@@ -1,7 +1,8 @@
 
-%struct.ext4_extent.3370440 = type { i32, i16, i16, i32 }
+%struct.ext4_extent.3555770 = type { i32, i16, i16, i32 }
 
-; 45 occurrences:
+; 47 occurrences:
+; boost/optimized/static_string.ll
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; diesel-rs/optimized/re13hpgqfsvf2ck.ll
 ; html5ever-rs/optimized/427f68nqtcfpg289.ll
@@ -47,27 +48,29 @@
 ; wasmtime-rs/optimized/4fstrj457bwkmu8y.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
 ; wasmtime-rs/optimized/jcy3ulzaiykp2rl.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func00000000000001e1(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 712
-  %5 = getelementptr nusw { i64, [2 x i64] }, ptr %4, i64 %3
-  %6 = icmp eq ptr %5, %0
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 712
+  %5 = getelementptr nusw nuw { i64, [2 x i64] }, ptr %4, i64 %3
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/static_string.ll
 ; openjdk/optimized/classFileParser.ll
 ; openjdk/optimized/method.ll
 ; php/optimized/dns.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func00000000000001e4(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 6
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
-  %6 = icmp ugt ptr %5, %0
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 6
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
@@ -75,12 +78,12 @@ entry:
 ; cmake/optimized/huf_decompress.c.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func0000000000000181(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 6
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 6
   %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = icmp eq ptr %5, %0
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
@@ -90,12 +93,12 @@ entry:
 ; postgres/optimized/tsvector_op.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func0000000000000184(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 6
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 6
   %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = icmp ugt ptr %5, %0
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
@@ -103,12 +106,12 @@ entry:
 ; cmake/optimized/huf_decompress.c.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func000000000000018c(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 6
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 6
   %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = icmp ne ptr %5, %0
+  %6 = icmp ne ptr %0, %5
   ret i1 %6
 }
 
@@ -119,20 +122,20 @@ define i1 @func0000000000000001(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 12
-  %5 = getelementptr %struct.ext4_extent.3370440, ptr %4, i64 %3
-  %6 = icmp eq ptr %5, %0
+  %5 = getelementptr %struct.ext4_extent.3555770, ptr %4, i64 %3
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; cmake/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000089(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func0000000000000189(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 6
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 6
   %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = icmp ule ptr %5, %0
+  %6 = icmp uge ptr %0, %5
   ret i1 %6
 }
 

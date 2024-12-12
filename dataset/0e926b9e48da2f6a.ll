@@ -1,5 +1,5 @@
 
-; 842 occurrences:
+; 846 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/giaTransduction.cpp.ll
@@ -43,8 +43,11 @@
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; assimp/optimized/mesh_splitter.cpp.ll
+; boost/optimized/cmdline.ll
+; boost/optimized/matches_relation_factory.ll
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_jacobian_writer.cc.ll
+; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/block_random_access_sparse_matrix.cc.ll
 ; ceres/optimized/compressed_row_jacobian_writer.cc.ll
 ; ceres/optimized/coordinate_descent_minimizer.cc.ll
@@ -172,6 +175,7 @@
 ; draco/optimized/attributes_encoder.cc.ll
 ; draco/optimized/corner_table.cc.ll
 ; draco/optimized/mesh_attribute_corner_table.cc.ll
+; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
 ; draco/optimized/mesh_edgebreaker_encoder.cc.ll
 ; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
 ; draco/optimized/point_attribute.cc.ll
@@ -191,6 +195,7 @@
 ; faiss/optimized/AuxIndexStructures.cpp.ll
 ; faiss/optimized/IndexReplicas.cpp.ll
 ; faiss/optimized/IndexShards.cpp.ll
+; flatbuffers/optimized/idl_parser.cpp.ll
 ; freetype/optimized/psaux.c.ll
 ; freetype/optimized/psnames.c.ll
 ; git/optimized/pack-revindex.ll
@@ -360,7 +365,6 @@
 ; llvm/optimized/DirectiveEmitter.cpp.ll
 ; llvm/optimized/DisassemblerEmitter.cpp.ll
 ; llvm/optimized/Dominators.cpp.ll
-; llvm/optimized/DwarfExpression.cpp.ll
 ; llvm/optimized/DynamicExtent.cpp.ll
 ; llvm/optimized/DynamicType.cpp.ll
 ; llvm/optimized/DynamicTypePropagation.cpp.ll
@@ -852,7 +856,7 @@ entry:
   ret i64 %5
 }
 
-; 401 occurrences:
+; 402 occurrences:
 ; abc/optimized/cecCorr.c.ll
 ; abc/optimized/cecSeq.c.ll
 ; abc/optimized/dchSim.c.ll
@@ -882,6 +886,7 @@ entry:
 ; cvc5/optimized/extf_solver.cpp.ll
 ; cvc5/optimized/node_bitblaster.cpp.ll
 ; cvc5/optimized/quant_conflict_find.cpp.ll
+; cvc5/optimized/regexp_elim.cpp.ll
 ; cvc5/optimized/string.cpp.ll
 ; cvc5/optimized/sygus_unif_io.cpp.ll
 ; draco/optimized/keyframe_animation.cc.ll
@@ -960,7 +965,6 @@ entry:
 ; ocio/optimized/FileFormat3DL.cpp.ll
 ; oiio/optimized/fitsinput.cpp.ll
 ; oiio/optimized/fitsoutput.cpp.ll
-; opencv/optimized/aff_trans.cpp.ll
 ; opencv/optimized/ann_mlp.cpp.ll
 ; opencv/optimized/audio_spectrogram.cpp.ll
 ; opencv/optimized/boost.cpp.ll
@@ -978,6 +982,7 @@ entry:
 ; opencv/optimized/filter.dispatch.cpp.ll
 ; opencv/optimized/find_ellipses.cpp.ll
 ; opencv/optimized/genericgfpoly.cpp.ll
+; opencv/optimized/graph_cluster.cpp.ll
 ; opencv/optimized/histogramphaseunwrapping.cpp.ll
 ; opencv/optimized/matrix_transform.cpp.ll
 ; opencv/optimized/morph.dispatch.cpp.ll

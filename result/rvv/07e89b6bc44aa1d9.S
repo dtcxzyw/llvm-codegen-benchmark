@@ -12,13 +12,6 @@ func000000000000000f:                   # @func000000000000000f
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vv	v8, v10, v8
 	ret
-func0000000000000005:                   # @func0000000000000005
-	vsetivli	zero, 8, e16, m1, ta, ma
-	vzext.vf2	v13, v12
-	vwaddu.wv	v10, v10, v13
-	vsetvli	zero, zero, e32, m2, ta, ma
-	vadd.vv	v8, v10, v8
-	ret
 func0000000000000010:                   # @func0000000000000010
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v13, v12
@@ -47,6 +40,13 @@ func000000000000000d:                   # @func000000000000000d
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vv	v8, v10, v8
 	ret
+func0000000000000005:                   # @func0000000000000005
+	vsetivli	zero, 8, e16, m1, ta, ma
+	vzext.vf2	v13, v12
+	vwaddu.wv	v10, v10, v13
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vadd.vv	v8, v10, v8
+	ret
 func0000000000000004:                   # @func0000000000000004
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v13, v12
@@ -60,6 +60,20 @@ func0000000000000007:                   # @func0000000000000007
 	vwaddu.wv	v10, v10, v13
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vv	v8, v10, v8
+	ret
+func0000000000000017:                   # @func0000000000000017
+	vsetivli	zero, 8, e16, m1, ta, ma
+	vzext.vf2	v13, v12
+	vwaddu.wv	v10, v10, v13
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vadd.vv	v8, v10, v8
+	ret
+func0000000000000014:                   # @func0000000000000014
+	vsetivli	zero, 8, e16, m1, ta, ma
+	vzext.vf2	v13, v12
+	vwaddu.wv	v10, v10, v13
+	vsetvli	zero, zero, e32, m2, ta, ma
+	vadd.vv	v8, v8, v10
 	ret
 func000000000000001c:                   # @func000000000000001c
 	vsetivli	zero, 8, e16, m1, ta, ma
@@ -90,13 +104,6 @@ func0000000000000011:                   # @func0000000000000011
 	vadd.vv	v8, v10, v8
 	ret
 func0000000000000015:                   # @func0000000000000015
-	vsetivli	zero, 8, e16, m1, ta, ma
-	vzext.vf2	v13, v12
-	vwaddu.wv	v10, v10, v13
-	vsetvli	zero, zero, e32, m2, ta, ma
-	vadd.vv	v8, v10, v8
-	ret
-func0000000000000014:                   # @func0000000000000014
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v13, v12
 	vwaddu.wv	v10, v10, v13

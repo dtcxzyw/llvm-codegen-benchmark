@@ -1,7 +1,7 @@
 func000000000000000c:                   # @func000000000000000c
 	testb	$1, %sil
-	movl	$18, %ecx
-	movl	$12, %eax
+	movl	$100, %ecx
+	movl	$10, %eax
 	cmovnel	%ecx, %eax
 	imull	%edi, %eax
 	retq

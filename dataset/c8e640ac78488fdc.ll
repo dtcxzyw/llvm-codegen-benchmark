@@ -1,6 +1,7 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; luau/optimized/lvmexecute.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; minetest/optimized/camera.cpp.ll
 ; opencv/optimized/facemarkAAM.cpp.ll
 ; openmpi/optimized/common_ompio_file_read.ll

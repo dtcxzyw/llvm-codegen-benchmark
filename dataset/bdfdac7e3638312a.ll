@@ -1,6 +1,7 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; arrow/optimized/key_hash.cc.ll
+; boost/optimized/src.ll
 ; folly/optimized/farmhash.cpp.ll
 ; hermes/optimized/BytecodeGenerator.cpp.ll
 ; hermes/optimized/CFG.cpp.ll
@@ -16,8 +17,8 @@ define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 47
   %4 = xor i64 %3, %2
-  %5 = add i64 %4, %1
-  %6 = xor i64 %5, %0
+  %5 = add i64 %1, %4
+  %6 = xor i64 %0, %5
   ret i64 %6
 }
 

@@ -12,7 +12,7 @@ entry:
   ret ptr %6
 }
 
-; 40 occurrences:
+; 39 occurrences:
 ; llvm/optimized/AArch64CallLowering.cpp.ll
 ; llvm/optimized/AArch64ExpandPseudoInsts.cpp.ll
 ; llvm/optimized/AArch64GlobalISelUtils.cpp.ll
@@ -37,7 +37,6 @@ entry:
 ; llvm/optimized/MachineFunction.cpp.ll
 ; llvm/optimized/MachineInstr.cpp.ll
 ; llvm/optimized/ModuloSchedule.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RISCVLegalizerInfo.cpp.ll
@@ -54,12 +53,12 @@ entry:
 ; llvm/optimized/X86InstructionSelector.cpp.ll
 ; openusd/optimized/refinement.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i8 %1, i32 %2) #0 {
+define ptr @func000000000000001b(ptr %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw ptr, ptr %0, i64 %3
   %5 = zext nneg i8 %1 to i64
-  %6 = getelementptr nusw ptr, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw ptr, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -72,12 +71,12 @@ entry:
 ; pbrt-v4/optimized/stbimage.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i8 %1, i32 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw i16, ptr %0, i64 %3
   %5 = zext i8 %1 to i64
-  %6 = getelementptr nusw i16, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i16, ptr %4, i64 %5
   ret ptr %6
 }
 

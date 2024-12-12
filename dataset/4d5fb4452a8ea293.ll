@@ -1,5 +1,5 @@
 
-; 50 occurrences:
+; 51 occurrences:
 ; abseil-cpp/optimized/convert_test.cc.ll
 ; arrow/optimized/light_array.cc.ll
 ; darktable/optimized/export_metadata.c.ll
@@ -7,6 +7,7 @@
 ; hdf5/optimized/H5Z.c.ll
 ; icu/optimized/collationdatawriter.ll
 ; linux/optimized/drm_edid.ll
+; linux/optimized/hda_codec.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/inotify_user.ll
 ; linux/optimized/intel_bios.ll
@@ -54,15 +55,14 @@
 define i32 @func0000000000000000(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 9, i32 64
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = or i32 %4, %0
   ret i32 %5
 }
 
-; 524 occurrences:
+; 526 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/bblif.c.ll
-; abc/optimized/fxuPair.c.ll
 ; abc/optimized/giaNf.c.ll
 ; abc/optimized/giaPf.c.ll
 ; abc/optimized/ivyDsd.c.ll
@@ -568,6 +568,7 @@ entry:
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; wireshark/optimized/packet-bthci_cmd.c.ll
 ; wireshark/optimized/packet-caneth.c.ll
+; wolfssl/optimized/internal.c.ll
 ; yosys/optimized/SimpSolver.ll
 ; yosys/optimized/Solver.ll
 ; z3/optimized/algebraic_numbers.cpp.ll
@@ -581,6 +582,8 @@ entry:
 ; z3/optimized/subpaving_mpff.cpp.ll
 ; z3/optimized/subpaving_mpfx.cpp.ll
 ; z3/optimized/subpaving_mpq.cpp.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/a80esttvizzblelz7vl2fpyaz.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_compress_literals.c.ll
 ; zxing/optimized/QRBitMatrixParser.cpp.ll
@@ -593,7 +596,7 @@ entry:
   ret i32 %5
 }
 
-; 52 occurrences:
+; 50 occurrences:
 ; abc/optimized/dauTree.c.ll
 ; arrow/optimized/light_array.cc.ll
 ; assimp/optimized/XGLLoader.cpp.ll
@@ -601,7 +604,6 @@ entry:
 ; git/optimized/rebase.ll
 ; gromacs/optimized/forceelement.cpp.ll
 ; imgui/optimized/imgui.cpp.ll
-; linux/optimized/dw.ll
 ; linux/optimized/g4x_hdmi.ll
 ; linux/optimized/hda_codec.ll
 ; linux/optimized/i915_perf.ll
@@ -628,7 +630,6 @@ entry:
 ; luajit/optimized/lj_strfmt.ll
 ; luajit/optimized/lj_strfmt_dyn.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
-; mitsuba3/optimized/x86func.cpp.ll
 ; opencv/optimized/cascadedetect.cpp.ll
 ; openexr/optimized/ImfTimeCode.cpp.ll
 ; openjdk/optimized/assembler_x86.ll
@@ -649,13 +650,14 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1, i1 %2) #0 {
 entry:
-  %3 = select i1 %2, i32 100663296, i32 117440512
-  %4 = or disjoint i32 %3, %1
-  %5 = or i32 %4, %0
+  %3 = select i1 %2, i32 8, i32 0
+  %4 = or disjoint i32 %1, %3
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
-; 10 occurrences:
+; 11 occurrences:
+; glslang/optimized/Initialize.cpp.ll
 ; gromacs/optimized/forceelement.cpp.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/intel_fbc.ll

@@ -7,8 +7,8 @@ func000000000000000d:                   # @func000000000000000d
 	vpandnd	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI1_0:
-	.long	63                              # 0x3f
-func0000000000000003:                   # @func0000000000000003
+	.long	31                              # 0x1f
+func000000000000000f:                   # @func000000000000000f
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -16,15 +16,15 @@ func0000000000000003:                   # @func0000000000000003
 	retq
 .LCPI2_0:
 	.long	63                              # 0x3f
-func0000000000000007:                   # @func0000000000000007
+func0000000000000003:                   # @func0000000000000003
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpandnd	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI3_0:
-	.long	3                               # 0x3
-func000000000000000f:                   # @func000000000000000f
+	.long	63                              # 0x3f
+func0000000000000007:                   # @func0000000000000007
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0

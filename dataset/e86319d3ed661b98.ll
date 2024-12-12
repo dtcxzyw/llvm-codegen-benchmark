@@ -10,7 +10,7 @@ define i8 @func0000000000000000(i8 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = trunc i32 %2 to i8
   %4 = and i8 %3, 12
-  %5 = or i8 %4, %1
+  %5 = or i8 %1, %4
   %6 = or i8 %5, %0
   ret i8 %6
 }
@@ -23,7 +23,6 @@ entry:
 ; linux/optimized/io_apic.ll
 ; linux/optimized/nfs4proc.ll
 ; linux/optimized/pcm_native.ll
-; linux/optimized/percpu-refcount.ll
 ; linux/optimized/tls.ll
 ; linux/optimized/vgacon.ll
 ; llvm/optimized/DeclObjC.cpp.ll
@@ -36,12 +35,13 @@ entry:
 ; wireshark/optimized/packet-ieee80211-prism.c.ll
 ; wolfssl/optimized/ssl.c.ll
 ; z3/optimized/theory_arith.cpp.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i8 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = trunc i32 %2 to i8
   %4 = and i8 %3, 32
-  %5 = or disjoint i8 %4, %1
+  %5 = or disjoint i8 %1, %4
   %6 = or disjoint i8 %5, %0
   ret i8 %6
 }

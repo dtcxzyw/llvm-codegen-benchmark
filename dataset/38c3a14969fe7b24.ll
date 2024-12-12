@@ -1,16 +1,14 @@
 
-; 32 occurrences:
+; 30 occurrences:
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/area.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/idas.c.ll
 ; graphviz/optimized/gvdevice_xlib.c.ll
 ; msdfgen/optimized/Contour.cpp.ll
 ; openblas/optimized/dstemr.c.ll
 ; openblas/optimized/dsyequb.c.ll
-; openblas/optimized/dsyevr.c.ll
-; openblas/optimized/dsyevr_2stage.c.ll
 ; openblas/optimized/dsyevx.c.ll
-; openblas/optimized/dsyevx_2stage.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; openblas/optimized/dtrsyl3.c.ll
 ; opencv/optimized/dense_optical_flow.cpp.ll

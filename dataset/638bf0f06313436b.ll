@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; lief/optimized/ccm.c.ll
 ; lief/optimized/chachapoly.c.ll
 ; lief/optimized/gcm.c.ll
@@ -10,7 +10,6 @@
 ; memcached/optimized/memcached_debug-util.ll
 ; memcached/optimized/util.ll
 ; nuttx/optimized/lib_timingsafe_bcmp.c.ll
-; php/optimized/safe_bcmp.ll
 ; wolfssl/optimized/aes.c.ll
 ; wolfssl/optimized/chacha20_poly1305.c.ll
 ; wolfssl/optimized/internal.c.ll
@@ -22,7 +21,7 @@ define i32 @func0000000000000000(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = xor i8 %1, %2
   %4 = zext i8 %3 to i32
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -34,7 +33,7 @@ define i32 @func0000000000000001(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = xor i8 %1, %2
   %4 = zext i8 %3 to i32
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 

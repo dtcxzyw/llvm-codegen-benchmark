@@ -1,13 +1,10 @@
 .LCPI0_0:
-	.quad	6442450944                      # 0x180000000
+	.quad	16                              # 0x10
 .LCPI0_1:
-	.quad	4294967296                      # 0x100000000
-.LCPI0_2:
-	.quad	1                               # 0x1
-func0000000000000011:                   # @func0000000000000011
-	vpandq	.LCPI0_0(%rip){1to4}, %ymm2, %ymm2
-	vpcmpneqq	.LCPI0_1(%rip){1to4}, %ymm2, %k1
-	vorpd	.LCPI0_2(%rip){1to4}, %ymm1, %ymm0 {%k1}
+	.quad	2                               # 0x2
+func0000000000000021:                   # @func0000000000000021
+	vptestmq	.LCPI0_0(%rip){1to4}, %ymm2, %k1
+	vorpd	.LCPI0_1(%rip){1to4}, %ymm1, %ymm0 {%k1}
 	retq
 .LCPI1_0:
 	.quad	2048                            # 0x800

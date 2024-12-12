@@ -79,16 +79,17 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; libquic/optimized/p224-64.c.ll
 ; linux/optimized/intel_cx0_phy.ll
+; llvm/optimized/OMP.cpp.ll
 ; php/optimized/scdf.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 5
   %3 = and i64 %2, 576460752303423486
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -101,17 +102,6 @@ entry:
   %2 = shl i64 %1, 2
   %3 = and i64 %2, -8
   %4 = add i64 %3, %0
-  ret i64 %4
-}
-
-; 1 occurrences:
-; llvm/optimized/OMP.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
-entry:
-  %2 = shl nuw nsw i64 %1, 4
-  %3 = and i64 %2, 9223372036854775776
-  %4 = add nsw i64 %3, %0
   ret i64 %4
 }
 

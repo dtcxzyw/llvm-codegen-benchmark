@@ -133,8 +133,8 @@ func000000000000000e:                   # @func000000000000000e
 func0000000000000006:                   # @func0000000000000006
 	vmulpd	%zmm5, %zmm3, %zmm3
 	vmulpd	%zmm4, %zmm2, %zmm2
-	vcmpneq_oqpd	%zmm0, %zmm2, %k0
-	vcmpneq_oqpd	%zmm1, %zmm3, %k1
+	vcmpneq_oqpd	%zmm2, %zmm0, %k0
+	vcmpneq_oqpd	%zmm3, %zmm1, %k1
 	kunpckbw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

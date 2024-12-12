@@ -8,9 +8,14 @@ func0000000000000018:                   # @func0000000000000018
 	setne	%al
 	orb	%dil, %al
 	retq
+func0000000000000008:                   # @func0000000000000008
+	cmpq	$9, %rsi
+	setb	%al
+	orb	%dil, %al
+	retq
 func0000000000000010:                   # @func0000000000000010
-	cmpq	$129, %rsi
-	setae	%al
+	shrq	$32, %rsi
+	setne	%al
 	orb	%dil, %al
 	retq
 func000000000000000c:                   # @func000000000000000c

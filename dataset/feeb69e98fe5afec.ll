@@ -1,5 +1,5 @@
 
-; 49 occurrences:
+; 46 occurrences:
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/absVta.c.ll
@@ -24,16 +24,13 @@
 ; abc/optimized/satSolver2.c.ll
 ; abc/optimized/satSolver3.c.ll
 ; abseil-cpp/optimized/cord_analysis.cc.ll
-; abseil-cpp/optimized/cordz_info.cc.ll
 ; abseil-cpp/optimized/cordz_info_statistics_test.cc.ll
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; libwebp/optimized/frame_enc.c.ll
 ; libwebp/optimized/quant_levels_utils.c.ll
-; libzmq/optimized/local_thr.cpp.ll
 ; lightgbm/optimized/dataset_loader.cpp.ll
-; minetest/optimized/mt_opengl_loader.cpp.ll
 ; node/optimized/libnode.crypto_dsa.ll
 ; node/optimized/libnode.crypto_rsa.ll
 ; opencv/optimized/ippe.cpp.ll

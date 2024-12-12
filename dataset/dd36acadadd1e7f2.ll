@@ -3,6 +3,7 @@
 ; abc/optimized/sswCnf.c.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
+; boost/optimized/gregorian.ll
 ; cpython/optimized/_datetimemodule.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/timeline.c.ll
@@ -14,7 +15,6 @@
 ; icu/optimized/smpdtfmt.ll
 ; linux/optimized/drm_modes.ll
 ; linux/optimized/uncore_snbep.ll
-; nuttx/optimized/lib_strftime.c.ll
 ; opencv/optimized/resize.cpp.ll
 ; openexr/optimized/internal_b44.c.ll
 ; openspiel/optimized/PlayAnalyser.cpp.ll

@@ -1,26 +1,23 @@
 
-; 26 occurrences:
+; 23 occurrences:
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; clamav/optimized/bytecode.c.ll
 ; clamav/optimized/kwajd.c.ll
 ; clamav/optimized/str.c.ll
-; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; eastl/optimized/EADateTime.cpp.ll
 ; eastl/optimized/EAScanfCore.cpp.ll
 ; libwebp/optimized/sharpyuv.c.ll
 ; linux/optimized/extents.ll
-; linux/optimized/nfsacl.ll
-; linux/optimized/sg_pool.ll
-; llvm/optimized/CodeGenDAGPatterns.cpp.ll
 ; minetest/optimized/voxel.cpp.ll
 ; qemu/optimized/migration_savevm.c.ll
 ; quantlib/optimized/date.ll
 ; re2/optimized/regexp.cc.ll
 ; re2/optimized/simplify.cc.ll
-; rust-analyzer-rs/optimized/2jv2sqtzbp0mun3n.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
 ; wireshark/optimized/packet-idn.c.ll
 ; wireshark/optimized/packet-zbee-direct.c.ll
@@ -34,11 +31,18 @@ entry:
   ret i1 %2
 }
 
-; 106 occurrences:
+; 113 occurrences:
 ; abc/optimized/dsdTree.c.ll
 ; abc/optimized/kitDsd.c.ll
 ; arrow/optimized/bignum.cc.ll
 ; assimp/optimized/BaseImporter.cpp.ll
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/default_sink.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; clamav/optimized/str.c.ll
 ; clamav/optimized/tnef.c.ll
 ; cmake/optimized/cf-socket.c.ll
@@ -80,6 +84,7 @@ entry:
 ; llvm/optimized/WinCOFFObjectWriter.cpp.ll
 ; luajit/optimized/lj_opt_narrow.ll
 ; luajit/optimized/lj_opt_narrow_dyn.ll
+; lvgl/optimized/lv_obj_style.ll
 ; minetest/optimized/content_mapblock.cpp.ll
 ; minetest/optimized/l_env.cpp.ll
 ; minetest/optimized/map.cpp.ll
@@ -112,7 +117,6 @@ entry:
 ; postgres/optimized/spgscan.ll
 ; postgres/optimized/spgvacuum.ll
 ; postgres/optimized/vacuumlazy.ll
-; postgres/optimized/wait_event.ll
 ; qemu/optimized/hw_net_virtio-net.c.ll
 ; qemu/optimized/hw_usb_dev-network.c.ll
 ; qemu/optimized/hw_virtio_virtio-pci.c.ll
@@ -196,20 +200,21 @@ entry:
 ; minetest/optimized/CImage.cpp.ll
 ; openusd/optimized/decodemv.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0) #0 {
+define i1 @func0000000000000046(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 32768
   %2 = icmp ne i32 %1, 0
   ret i1 %2
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; abc/optimized/ifMan.c.ll
-; arrow/optimized/vector_selection_internal.cc.ll
+; boost/optimized/rational.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; eastl/optimized/EAScanfCore.cpp.ll
 ; glslang/optimized/SpvBuilder.cpp.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
+; libwebp/optimized/sharpyuv.c.ll
 ; minetest/optimized/l_mapgen.cpp.ll
 ; minetest/optimized/treegen.cpp.ll
 ; openusd/optimized/decodemv.c.ll
@@ -224,8 +229,14 @@ entry:
   ret i1 %2
 }
 
-; 12 occurrences:
-; linux/optimized/sg_pool.ll
+; 16 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/default_sink.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; linux/optimized/xfrm_policy.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
@@ -235,13 +246,23 @@ entry:
 ; qemu/optimized/hw_virtio_virtio.c.ll
 ; qemu/optimized/ui_cursor.c.ll
 ; quantlib/optimized/date.ll
-; z3/optimized/mam.cpp.ll
-; z3/optimized/q_mam.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i32 %0) #0 {
 entry:
   %1 = trunc i32 %0 to i16
   %2 = icmp ugt i16 %1, 512
+  ret i1 %2
+}
+
+; 3 occurrences:
+; cmake/optimized/archive_read_support_format_rar5.c.ll
+; llvm/optimized/CodeGenDAGPatterns.cpp.ll
+; rust-analyzer-rs/optimized/2jv2sqtzbp0mun3n.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0) #0 {
+entry:
+  %1 = trunc i32 %0 to i16
+  %2 = icmp samesign ult i16 %1, 273
   ret i1 %2
 }
 

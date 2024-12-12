@@ -1,7 +1,8 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; libpng/optimized/pngread.c.ll
 ; llvm/optimized/SemaLookup.cpp.ll
+; lvgl/optimized/lv_math.ll
 ; openjdk/optimized/pngread.ll
 ; openjdk/optimized/superword.ll
 ; pocketpy/optimized/pocketpy.cpp.ll

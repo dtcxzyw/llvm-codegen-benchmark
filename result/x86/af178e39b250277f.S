@@ -1,10 +1,10 @@
-func0000000000000038:                   # @func0000000000000038
+func0000000000000058:                   # @func0000000000000058
 	andl	$2, %esi
 	xorl	%eax, %eax
 	orl	%edi, %esi
 	setne	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000028:                   # @func0000000000000028
 	andl	$32768, %esi                    # imm = 0x8000
 	orl	%edi, %esi
 	xorl	%eax, %eax

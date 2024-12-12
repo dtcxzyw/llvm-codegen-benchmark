@@ -17,7 +17,7 @@ func0000000000000004:                   # @func0000000000000004
 	kmovd	%edi, %k1
 	vxorpd	%xmm2, %xmm2, %xmm2
 	vmovsd	%xmm2, %xmm1, %xmm1 {%k1}
-	vmulsd	%xmm0, %xmm1, %xmm0
+	vmulsd	%xmm1, %xmm0, %xmm0
 	retq
 .LCPI2_0:
 	.quad	0x4059000000000000              # double 100
@@ -28,5 +28,5 @@ func000000000000000c:                   # @func000000000000000c
 	vminsd	%xmm1, %xmm2, %xmm1
 	kmovd	%edi, %k1
 	vmovsd	.LCPI2_1(%rip), %xmm1 {%k1}     # xmm1 {%k1} = [1.0E+1,0.0E+0]
-	vmulsd	%xmm0, %xmm1, %xmm0
+	vmulsd	%xmm1, %xmm0, %xmm0
 	retq

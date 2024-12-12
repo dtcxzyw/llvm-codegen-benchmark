@@ -1,9 +1,8 @@
 
-; 28 occurrences:
+; 27 occurrences:
 ; hwloc/optimized/topology-x86.ll
 ; lightgbm/optimized/config.cpp.ll
 ; linux/optimized/drm_dp_mst_topology.ll
-; linux/optimized/intel_tcc.ll
 ; llvm/optimized/ASTImporter.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/CGExprComplex.cpp.ll

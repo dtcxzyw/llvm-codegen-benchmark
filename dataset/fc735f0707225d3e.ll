@@ -1,5 +1,5 @@
 
-; 199 occurrences:
+; 206 occurrences:
 ; abc/optimized/giaMinLut.c.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; abc/optimized/wlcBlast.c.ll
@@ -10,6 +10,7 @@
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
+; boost/optimized/area.ll
 ; bullet3/optimized/b3GpuPgsContactSolver.ll
 ; ceres/optimized/cgnr_solver.cc.ll
 ; ceres/optimized/dense_sparse_matrix.cc.ll
@@ -79,6 +80,12 @@
 ; llvm/optimized/LangOptions.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86InterleavedAccess.cpp.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_dropdown.ll
+; lvgl/optimized/lv_obj_draw.ll
+; lvgl/optimized/lv_scale.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
@@ -253,9 +260,10 @@ entry:
   ret i32 %2
 }
 
-; 206 occurrences:
+; 203 occurrences:
 ; abc/optimized/abcLut.c.ll
 ; arrow/optimized/align_util.cc.ll
+; boost/optimized/topology.ll
 ; draco/optimized/mesh_attribute_corner_table.cc.ll
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
 ; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
@@ -379,13 +387,10 @@ entry:
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -445,7 +450,6 @@ entry:
 ; opencv/optimized/lsc.cpp.ll
 ; opencv/optimized/slic.cpp.ll
 ; openjdk/optimized/sharedRuntime_x86_64.ll
-; php/optimized/unixtime2tm.ll
 ; pybind11/optimized/test_chrono.cpp.ll
 ; qemu/optimized/block_vpc.c.ll
 ; quickjs/optimized/quickjs.ll

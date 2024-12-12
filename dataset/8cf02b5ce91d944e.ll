@@ -1,5 +1,6 @@
 
-; 4 occurrences:
+; 5 occurrences:
+; lvgl/optimized/lv_arc.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; minetest/optimized/content_cao.cpp.ll
 ; minetest/optimized/luaentity_sao.cpp.ll

@@ -3,8 +3,8 @@ func00000000000000e2:                   // @func00000000000000e2
 	mov	w8, #1                          // =0x1
 	orr	x8, x8, x3, lsl #1
 	lsl	x8, x8, x2
-	umulh	x9, x8, x0
-	mul	x0, x8, x0
-	madd	x1, x8, x1, x9
+	umulh	x9, x0, x8
+	mul	x0, x0, x8
+	madd	x1, x1, x8, x9
 	ret
                                         // -- End function

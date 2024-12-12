@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openjdk/optimized/compile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000208(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 346
   %4 = sext i1 %3 to i32
@@ -16,7 +16,7 @@ entry:
 ; lightgbm/optimized/bin.cpp.ll
 ; postgres/optimized/jsonfuncs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000201(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %.neg = zext i1 %3 to i32
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000a0c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000140c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, -1
   %4 = sext i1 %3 to i32

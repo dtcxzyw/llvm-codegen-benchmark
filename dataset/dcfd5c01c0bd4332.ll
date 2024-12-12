@@ -16,7 +16,7 @@ entry:
   ret i1 %6
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; casadi/optimized/fmu_function.cpp.ll
 ; cmake/optimized/cmProjectCommand.cxx.ll
 ; coreutils-rs/optimized/4tt85gim3dxp9l65.ll
@@ -25,6 +25,7 @@ entry:
 ; wireshark/optimized/rtp_player_dialog.cpp.ll
 ; yosys/optimized/select.ll
 ; z3/optimized/bv_rewriter.cpp.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i1 %0, i8 %1, i8 %2) #0 {
 entry:

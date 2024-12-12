@@ -1,8 +1,9 @@
 
-; 94 occurrences:
+; 96 occurrences:
 ; abc/optimized/solver_api.c.ll
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
+; boost/optimized/options_description.ll
 ; c3c/optimized/parse_expr.c.ll
 ; c3c/optimized/parse_global.c.ll
 ; c3c/optimized/parse_stmt.c.ll
@@ -57,6 +58,7 @@
 ; llvm/optimized/SourceMgrAdapter.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
+; lvgl/optimized/lv_calendar.ll
 ; meshlab/optimized/glarea.cpp.ll
 ; minetest/optimized/mg_ore.cpp.ll
 ; mitsuba3/optimized/hdrfilm.cpp.ll
@@ -103,7 +105,7 @@ entry:
   ret i64 %5
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; assimp/optimized/CSMLoader.cpp.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; freetype/optimized/pcf.c.ll
@@ -112,6 +114,7 @@ entry:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hyperscan/optimized/repeat.c.ll
 ; llvm/optimized/SemaOverload.cpp.ll
+; lvgl/optimized/lv_calendar.ll
 ; minetest/optimized/CGUIComboBox.cpp.ll
 ; openjdk/optimized/hb-face.ll
 ; openjdk/optimized/hb-ot-font.ll
@@ -345,17 +348,18 @@ entry:
 define i64 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; darktable/optimized/introspection_liquify.c.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; graphviz/optimized/osageinit.c.ll
 ; icu/optimized/decNumber.ll
 ; icu/optimized/ubidiln.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; minetest/optimized/mg_decoration.cpp.ll
 ; minetest/optimized/mg_ore.cpp.ll
 ; nori/optimized/nanovg.c.ll
@@ -389,7 +393,7 @@ entry:
 define i64 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw i32 %1, %2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }
@@ -405,7 +409,7 @@ entry:
   ret i64 %5
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; abc/optimized/aigPart.c.ll
 ; abc/optimized/aigScl.c.ll
 ; clamav/optimized/arcread.cpp.ll
@@ -413,6 +417,7 @@ entry:
 ; icu/optimized/number_patternstring.ll
 ; linux/optimized/gro.ll
 ; llvm/optimized/CGExprConstant.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; opencv/optimized/matrix_transform.cpp.ll
 ; opencv/optimized/nary_eltwise_layers.cpp.ll
@@ -433,7 +438,7 @@ entry:
 define i64 @func000000000000001f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 %1, %2
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }
@@ -461,7 +466,7 @@ entry:
 define i64 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }
@@ -485,7 +490,7 @@ entry:
 define i64 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }

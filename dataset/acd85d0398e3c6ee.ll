@@ -82,15 +82,14 @@ define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -254464
   %.masked = and i32 %1, -512
-  %4 = or i32 %3, %.masked
+  %4 = or i32 %.masked, %3
   %5 = and i32 %0, 511
   %6 = or disjoint i32 %4, %5
   ret i32 %6
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; imgui/optimized/imgui_widgets.cpp.ll
-; linux/optimized/intel_audio.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/AliasSetTracker.cpp.ll
 ; qemu/optimized/hw_sd_sd.c.ll

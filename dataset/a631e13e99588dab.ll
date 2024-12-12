@@ -34,7 +34,8 @@ entry:
   ret i1 %5
 }
 
-; 32 occurrences:
+; 33 occurrences:
+; boost/optimized/to_chars.ll
 ; cmake/optimized/archive_entry.c.ll
 ; cpython/optimized/compile.ll
 ; hyperscan/optimized/limex_64.c.ll

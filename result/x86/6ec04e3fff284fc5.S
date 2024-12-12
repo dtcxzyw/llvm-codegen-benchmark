@@ -1,4 +1,4 @@
-func0000000000000058:                   # @func0000000000000058
+func00000000000000b8:                   # @func00000000000000b8
 	movl	%esi, %eax
 	negl	%eax
 	cmovsl	%esi, %eax
@@ -8,7 +8,7 @@ func0000000000000058:                   # @func0000000000000058
 	cmpl	%eax, %ecx
 	seta	%al
 	retq
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000001f8:                   # @func00000000000001f8
 	movl	%esi, %eax
 	negl	%eax
 	cmovsl	%esi, %eax
@@ -18,7 +18,7 @@ func00000000000000f8:                   # @func00000000000000f8
 	cmpl	%eax, %ecx
 	seta	%al
 	retq
-func0000000000000054:                   # @func0000000000000054
+func00000000000000b4:                   # @func00000000000000b4
 	movl	%esi, %eax
 	negl	%eax
 	cmovsl	%esi, %eax
@@ -28,7 +28,7 @@ func0000000000000054:                   # @func0000000000000054
 	cmpl	%eax, %ecx
 	setb	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	movl	%esi, %eax
 	negl	%eax
 	cmovsl	%esi, %eax
@@ -38,7 +38,7 @@ func0000000000000051:                   # @func0000000000000051
 	cmpl	%eax, %ecx
 	sete	%al
 	retq
-func00000000000000f4:                   # @func00000000000000f4
+func00000000000001f4:                   # @func00000000000001f4
 	movl	%esi, %eax
 	negl	%eax
 	cmovsl	%esi, %eax
@@ -48,7 +48,17 @@ func00000000000000f4:                   # @func00000000000000f4
 	cmpl	%eax, %ecx
 	setb	%al
 	retq
-func0000000000000055:                   # @func0000000000000055
+func00000000000001f9:                   # @func00000000000001f9
+	movl	%esi, %eax
+	negl	%eax
+	cmovsl	%esi, %eax
+	movl	%edi, %ecx
+	negl	%ecx
+	cmovsl	%edi, %ecx
+	cmpl	%eax, %ecx
+	setae	%al
+	retq
+func00000000000000b5:                   # @func00000000000000b5
 	movl	%esi, %eax
 	negl	%eax
 	cmovsl	%esi, %eax
@@ -78,7 +88,7 @@ func000000000000000a:                   # @func000000000000000a
 	cmpl	%eax, %ecx
 	setg	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	movl	%esi, %eax
 	negl	%eax
 	cmovsl	%esi, %eax

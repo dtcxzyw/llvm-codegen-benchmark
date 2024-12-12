@@ -3,7 +3,7 @@
 ; openjdk/optimized/check_code.ll
 ; slurm/optimized/node_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000481(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 31
   %3 = add nsw i32 %2, -13
@@ -19,7 +19,7 @@ entry:
 ; llvm/optimized/SMEABIPass.cpp.ll
 ; llvm/optimized/Type.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000484(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
   %3 = add nsw i32 %2, -5
@@ -32,7 +32,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000048c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
   %3 = add nsw i32 %2, -5
@@ -45,7 +45,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/eeepc-laptop.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000048a(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
   %3 = add nsw i32 %2, -1

@@ -1,12 +1,11 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; abc/optimized/bmcBmc3.c.ll
 ; abc/optimized/bmcBmcG.c.ll
 ; abc/optimized/bmcBmcS.c.ll
 ; abc/optimized/giaDeep.c.ll
 ; abc/optimized/giaIso.c.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_trioptimize.cpp.ll
 ; redis/optimized/aof.ll
 ; redis/optimized/redis-cli.ll

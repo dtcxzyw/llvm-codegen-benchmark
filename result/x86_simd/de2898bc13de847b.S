@@ -2,7 +2,7 @@
 	.quad	-3689348814741910323            # 0xcccccccccccccccd
 .LCPI0_1:
 	.quad	230584300921369395              # 0x333333333333333
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpsraq	$3, %ymm0, %ymm0
 	vpmullq	.LCPI0_0(%rip){1to4}, %ymm0, %ymm0
@@ -14,7 +14,7 @@ func0000000000000018:                   # @func0000000000000018
 	.quad	7905747460161236407             # 0x6db6db6db6db6db7
 .LCPI1_1:
 	.quad	164703072086692426              # 0x24924924924924a
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpsraq	$3, %ymm0, %ymm0
 	vpmullq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
@@ -23,6 +23,30 @@ func0000000000000014:                   # @func0000000000000014
 	vzeroupper
 	retq
 .LCPI2_0:
+	.quad	-6148914691236517205            # 0xaaaaaaaaaaaaaaab
+.LCPI2_1:
+	.quad	1                               # 0x1
+func0000000000000038:                   # @func0000000000000038
+	vpsubq	%ymm1, %ymm0, %ymm0
+	vpsraq	$3, %ymm0, %ymm0
+	vpmullq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0
+	vpcmpnleuq	.LCPI2_1(%rip){1to4}, %ymm0, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI3_0:
+	.quad	-6148914691236517205            # 0xaaaaaaaaaaaaaaab
+.LCPI3_1:
+	.quad	4                               # 0x4
+func0000000000000034:                   # @func0000000000000034
+	vpsubq	%ymm1, %ymm0, %ymm0
+	vpsraq	$3, %ymm0, %ymm0
+	vpmullq	.LCPI3_0(%rip){1to4}, %ymm0, %ymm0
+	vpcmpltuq	.LCPI3_1(%rip){1to4}, %ymm0, %k0
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI4_0:
 	.quad	50                              # 0x32
 func0000000000000008:                   # @func0000000000000008
 	vpsubq	%ymm1, %ymm0, %ymm0
@@ -59,7 +83,7 @@ func0000000000000008:                   # @func0000000000000008
 	vmovq	%rdx, %xmm0
 	vpunpcklqdq	%xmm2, %xmm0, %xmm0     # xmm0 = xmm0[0],xmm2[0]
 	vinserti128	$1, %xmm1, %ymm0, %ymm0
-	vpcmpnleuq	.LCPI2_0(%rip){1to4}, %ymm0, %k0
+	vpcmpnleuq	.LCPI4_0(%rip){1to4}, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

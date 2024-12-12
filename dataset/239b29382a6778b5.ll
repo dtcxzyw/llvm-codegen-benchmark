@@ -6,16 +6,23 @@
 ; icu/optimized/double-conversion-string-to-double.ll
 ; openusd/optimized/string-to-double.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000048(i1 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -58
   %3 = icmp ult i32 %2, -10
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = xor i1 %4, true
   ret i1 %5
 }
 
-; 99 occurrences:
+; 106 occurrences:
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll

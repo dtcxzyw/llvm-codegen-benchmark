@@ -1,5 +1,5 @@
 
-; 436 occurrences:
+; 435 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcReconv.c.ll
 ; abc/optimized/abcResub.c.ll
@@ -41,8 +41,6 @@
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; glslang/optimized/linkValidate.cpp.ll
 ; graphviz/optimized/parse.c.ll
-; hermes/optimized/Executor.cpp.ll
-; influxdb-rs/optimized/380gcqze52ow6205.ll
 ; just-rs/optimized/53slus9exfz9w045.ll
 ; libquic/optimized/e_aes.c.ll
 ; linux/optimized/hid-sony.ll
@@ -294,7 +292,6 @@
 ; llvm/optimized/QualTypeNames.cpp.ll
 ; llvm/optimized/RISCVCodeGenPrepare.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/ReachableCode.cpp.ll
@@ -420,7 +417,6 @@
 ; regex-rs/optimized/1rguw48xrsv49k4z.ll
 ; ruby/optimized/parse.ll
 ; ruby/optimized/ripper.ll
-; ruby/optimized/symbol.ll
 ; rust-analyzer-rs/optimized/2pjtxeptskgmq0yj.ll
 ; sentencepiece/optimized/util.cc.ll
 ; slurm/optimized/job_mgr.ll
@@ -434,19 +430,22 @@
 ; vcpkg/optimized/sourceparagraph.cpp.ll
 ; vcpkg/optimized/spdx.cpp.ll
 ; vcpkg/optimized/versions.cpp.ll
-; wireshark/optimized/packet-pn-ptcp.c.ll
 ; z3/optimized/api_array.cpp.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000048(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 95
   %3 = add nsw i32 %2, -65
   %4 = icmp ult i32 %3, 26
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 326 occurrences:
+; 325 occurrences:
 ; coreutils-rs/optimized/rs4z052ww3s256h.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; fmt/optimized/chrono-test.cc.ll
@@ -546,8 +545,6 @@ entry:
 ; linux/optimized/ip_fragment.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; nuklear/optimized/unity.c.ll
-; nuttx/optimized/lib_iswctype.c.ll
-; nuttx/optimized/lib_isxdigit.c.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -773,13 +770,14 @@ entry:
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; yosys/optimized/filterlib.ll
 ; yosys/optimized/libparse.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -129
   %3 = add i32 %2, -3655
   %4 = icmp ult i32 %3, 8
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

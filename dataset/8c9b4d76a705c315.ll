@@ -1,5 +1,5 @@
 
-; 65 occurrences:
+; 66 occurrences:
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_chat.cpp.ll
 ; crow/optimized/example_json_map.cpp.ll
@@ -23,6 +23,7 @@
 ; lief/optimized/pem.c.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; openusd/optimized/textFileFormat.lex.cpp.ll
+; php/optimized/dow.ll
 ; proxygen/optimized/HTTP2PriorityQueue.cpp.ll
 ; proxygen/optimized/HTTPSession.cpp.ll
 ; proxygen/optimized/HeaderTable.cpp.ll

@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; cmake/optimized/json_value.cpp.ll
 ; cvc5/optimized/alf_printer.cpp.ll
 ; cvc5/optimized/inference.cpp.ll
@@ -15,10 +15,9 @@
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaLookup.cpp.ll
 ; ozz-animation/optimized/jsoncpp.cpp.ll
-; spike/optimized/f16_classify.ll
 ; stb/optimized/stb_connected_components.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i16 %0) #0 {
+define i1 @func0000000000000042(i16 %0) #0 {
 entry:
   %1 = and i16 %0, 28672
   %2 = icmp eq i16 %1, 4096
@@ -30,10 +29,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i16 %0) #0 {
+define i1 @func0000000000000068(i16 %0) #0 {
 entry:
   %1 = and i16 %0, 3
-  %2 = icmp ult i16 %1, 2
+  %2 = icmp samesign ult i16 %1, 2
   %3 = icmp eq i16 %1, 3
   %4 = or i1 %2, %3
   ret i1 %4

@@ -16,7 +16,7 @@ entry:
   ret i64 %4
 }
 
-; 12 occurrences:
+; 10 occurrences:
 ; darktable/optimized/introspection_diffuse.c.ll
 ; lightgbm/optimized/bin.cpp.ll
 ; lightgbm/optimized/data_parallel_tree_learner.cpp.ll
@@ -26,15 +26,13 @@ entry:
 ; lightgbm/optimized/objective_function.cpp.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
-; linux/optimized/reciprocal_div.ll
 ; openexr/optimized/ImfScanLineInputFile.cpp.ll
-; velox/optimized/MmapAllocator.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = udiv i64 %0, %1
-  %3 = add nuw i64 %2, 4095
-  %4 = and i64 %3, -4096
+  %3 = add nuw i64 %2, 3
+  %4 = and i64 %3, 4294967295
   ret i64 %4
 }
 

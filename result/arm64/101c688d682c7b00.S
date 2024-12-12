@@ -1,61 +1,27 @@
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	ushll	v0.4s, v0.4h, #0
-	ushr	v4.2d, v4.2d, #1
-	ushr	v3.2d, v3.2d, #1
-	ushll	v5.2d, v0.2s, #0
-	ushll2	v0.2d, v0.4s, #0
-	shl	v5.2d, v5.2d, #63
-	shl	v0.2d, v0.2d, #63
-	cmlt	v5.2d, v5.2d, #0
-	cmlt	v0.2d, v0.2d, #0
-	bit	v1.16b, v3.16b, v5.16b
-	bsl	v0.16b, v4.16b, v2.16b
-	cmgt	v0.2d, v0.2d, #0
-	cmgt	v1.2d, v1.2d, #0
-	uzp1	v0.4s, v1.4s, v0.4s
-	xtn	v0.4h, v0.4s
+	lsr	x8, x2, #1
+	tst	w0, #0x1
+	csel	x8, x8, x1, ne
+	cmp	x8, #0
+	cset	w0, gt
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	ushll	v0.4s, v0.4h, #0
-	ushr	v4.2d, v4.2d, #4
-	mov	w8, #1                          // =0x1
-	ushr	v3.2d, v3.2d, #4
-	ushll	v5.2d, v0.2s, #0
-	ushll2	v0.2d, v0.4s, #0
-	shl	v5.2d, v5.2d, #63
-	shl	v0.2d, v0.2d, #63
-	cmlt	v5.2d, v5.2d, #0
-	cmlt	v0.2d, v0.2d, #0
-	bit	v1.16b, v3.16b, v5.16b
-	bsl	v0.16b, v4.16b, v2.16b
-	dup	v2.2d, x8
-	cmeq	v0.2d, v0.2d, v2.2d
-	cmeq	v1.2d, v1.2d, v2.2d
-	uzp1	v0.4s, v1.4s, v0.4s
-	xtn	v0.4h, v0.4s
+	lsr	x8, x2, #4
+	tst	w0, #0x1
+	csel	x8, x8, x1, ne
+	cmp	x8, #1
+	cset	w0, eq
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	ushll	v0.4s, v0.4h, #0
-	ushr	v4.2d, v4.2d, #4
-	mov	w8, #2                          // =0x2
-	ushr	v3.2d, v3.2d, #4
-	ushll	v5.2d, v0.2s, #0
-	ushll2	v0.2d, v0.4s, #0
-	shl	v5.2d, v5.2d, #63
-	shl	v0.2d, v0.2d, #63
-	cmlt	v5.2d, v5.2d, #0
-	cmlt	v0.2d, v0.2d, #0
-	bit	v1.16b, v3.16b, v5.16b
-	bsl	v0.16b, v4.16b, v2.16b
-	dup	v2.2d, x8
-	cmhi	v0.2d, v0.2d, v2.2d
-	cmhi	v1.2d, v1.2d, v2.2d
-	uzp1	v0.4s, v1.4s, v0.4s
-	xtn	v0.4h, v0.4s
+	lsr	x8, x2, #1
+	tst	w0, #0x1
+	csel	x8, x8, x1, ne
+	cmp	x8, #1
+	cset	w0, hi
 	ret
                                         // -- End function

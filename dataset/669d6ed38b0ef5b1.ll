@@ -13,7 +13,7 @@ entry:
   ret { i64, i64 } %6
 }
 
-; 10 occurrences:
+; 14 occurrences:
 ; rayon-rs/optimized/9qhkgr4qio1yp41.ll
 ; regex-rs/optimized/3q3ceyp25m3d5uar.ll
 ; regex-rs/optimized/rrg5bgs95wzff0u.ll
@@ -24,6 +24,10 @@ entry:
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; wasmtime-rs/optimized/4y19gy3l28n56lab.ll
 ; wasmtime-rs/optimized/526qiozl2mm0d4p0.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/d7h2r6mystjn2jzwcl5ofeoiz.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
 ; Function Attrs: nounwind
 define { i64, i64 } @func0000000000000000(i64 %0, i1 %1, i32 %2) #0 {
 entry:

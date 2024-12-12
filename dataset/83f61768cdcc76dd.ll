@@ -72,7 +72,7 @@
 ; yosys/optimized/memory_bram.ll
 ; yosys/optimized/verilog_backend.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %1, %2
   %4 = add nuw nsw i32 %0, 1
@@ -87,7 +87,7 @@ entry:
 ; openjdk/optimized/macroAssembler_x86.ll
 ; yosys/optimized/fsm_extract.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000066(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %1, %2
   %4 = add nuw nsw i32 %0, 1
@@ -101,7 +101,7 @@ entry:
 ; pbrt-v4/optimized/plytool.cpp.ll
 ; slurm/optimized/eval_nodes_block.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %1, %2
   %4 = add nsw i32 %0, 1
@@ -129,7 +129,7 @@ entry:
 ; ncnn/optimized/pooling3d.cpp.ll
 ; stb/optimized/stb_tilemap_editor.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %1, %2
   %4 = add nsw i32 %0, 1
@@ -140,7 +140,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/saigInd.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000046(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %1, %2
   %4 = add nuw i32 %0, 1
@@ -151,7 +151,7 @@ entry:
 ; 1 occurrences:
 ; slurm/optimized/gres_filter.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %1, %2
   %4 = add nsw i32 %0, -1

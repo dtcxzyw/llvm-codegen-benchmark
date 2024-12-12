@@ -1,4 +1,4 @@
-func0000000000000366:                   # @func0000000000000366
+func0000000000000cc6:                   # @func0000000000000cc6
 	movslq	%edx, %rax
 	incq	%rsi
 	cmpq	%rax, %rsi
@@ -7,7 +7,7 @@ func0000000000000366:                   # @func0000000000000366
 	setl	%al
 	andb	%cl, %al
 	retq
-func00000000000003a6:                   # @func00000000000003a6
+func0000000000000d46:                   # @func0000000000000d46
 	movslq	%edx, %rax
 	incq	%rsi
 	cmpq	%rax, %rsi
@@ -16,7 +16,7 @@ func00000000000003a6:                   # @func00000000000003a6
 	setg	%al
 	andb	%cl, %al
 	retq
-func00000000000003c6:                   # @func00000000000003c6
+func0000000000000d86:                   # @func0000000000000d86
 	movslq	%edx, %rax
 	incq	%rsi
 	cmpq	%rax, %rsi
@@ -25,7 +25,7 @@ func00000000000003c6:                   # @func00000000000003c6
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000316:                   # @func0000000000000316
+func0000000000000c26:                   # @func0000000000000c26
 	movslq	%edx, %rax
 	incq	%rsi
 	cmpq	%rax, %rsi
@@ -34,7 +34,7 @@ func0000000000000316:                   # @func0000000000000316
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000166:                   # @func0000000000000166
+func00000000000004c6:                   # @func00000000000004c6
 	movslq	%edx, %rax
 	incq	%rsi
 	cmpq	%rax, %rsi
@@ -43,16 +43,7 @@ func0000000000000166:                   # @func0000000000000166
 	setle	%al
 	andb	%cl, %al
 	retq
-func0000000000000146:                   # @func0000000000000146
-	movslq	%edx, %rax
-	incq	%rsi
-	cmpq	%rax, %rsi
-	setl	%cl
-	cmpl	$260, %edi                      # imm = 0x104
-	setb	%al
-	andb	%cl, %al
-	retq
-func00000000000001c6:                   # @func00000000000001c6
+func0000000000000586:                   # @func0000000000000586
 	movslq	%edx, %rax
 	incq	%rsi
 	cmpq	%rax, %rsi

@@ -1,9 +1,10 @@
 
-; 23 occurrences:
+; 24 occurrences:
 ; arrow/optimized/encode_internal.cc.ll
 ; arrow/optimized/grouper.cc.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/matches_relation_factory.ll
 ; cvc5/optimized/monomial_check.cpp.ll
 ; draco/optimized/point_cloud_encoder.cc.ll
 ; llvm/optimized/BranchRelaxation.cpp.ll
@@ -24,7 +25,7 @@
 ; llvm/optimized/X86VZeroUpper.cpp.ll
 ; minetest/optimized/CGUITTFont.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 2
@@ -52,7 +53,7 @@ entry:
 ; llvm/optimized/ThreadSafetyCommon.cpp.ll
 ; velox/optimized/CompactRow.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 2
@@ -61,7 +62,8 @@ entry:
   ret i1 %6
 }
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/matches_relation_factory.ll
 ; cvc5/optimized/sygus_grammar_norm.cpp.ll
 ; darktable/optimized/TableLookUp.cpp.ll
 ; llvm/optimized/BranchRelaxation.cpp.ll
@@ -71,7 +73,7 @@ entry:
 ; llvm/optimized/MachineVerifier.cpp.ll
 ; llvm/optimized/X86VZeroUpper.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 1

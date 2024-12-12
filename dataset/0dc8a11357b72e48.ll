@@ -7,20 +7,22 @@
 ; openusd/optimized/testHioAvif.cpp.ll
 ; openusd/optimized/testHioImage.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = mul nuw nsw i64 %3, 10
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 5 occurrences:
+; 7 occurrences:
+; lvgl/optimized/lv_draw_sw.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
 ; minetest/optimized/treegen.cpp.ll
 ; ocio/optimized/Lut3DOpData.cpp.ll
 ; oiio/optimized/targaoutput.cpp.ll
+; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000014(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -30,16 +32,15 @@ entry:
   ret ptr %5
 }
 
-; 3 occurrences:
-; abc/optimized/extraUtilMisc.c.ll
-; hyperscan/optimized/rose_build_bytecode.cpp.ll
+; 2 occurrences:
 ; minetest/optimized/treegen.cpp.ll
+; stb/optimized/stb_herringbone_wang_tile.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001c(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = mul nuw nsw i64 %3, 5
-  %5 = getelementptr i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -109,12 +110,11 @@ entry:
   ret ptr %5
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; g2o/optimized/line3d.cpp.ll
 ; g2o/optimized/structure_only.cpp.ll
-; meshlab/optimized/orthogonal_procrustes.cpp.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
 ; ncnn/optimized/convolution_x86_avx512.cpp.ll
@@ -129,8 +129,7 @@ entry:
   ret ptr %5
 }
 
-; 16 occurrences:
-; gromacs/optimized/dispersioncorrection.cpp.ll
+; 15 occurrences:
 ; gromacs/optimized/kernel_ref_prune.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; meshlab/optimized/edit_point.cpp.ll
@@ -141,11 +140,11 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/meshselect.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
+; meshlab/optimized/orthogonal_procrustes.cpp.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
 ; ncnn/optimized/convolution_x86_avx512.cpp.ll
 ; ncnn/optimized/convolution_x86_fma.cpp.ll
-; openusd/optimized/stbImage.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000032(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -155,7 +154,8 @@ entry:
   ret ptr %5
 }
 
-; 38 occurrences:
+; 46 occurrences:
+; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; coreutils-rs/optimized/29nuy7845ur4qr3s.ll
 ; coreutils-rs/optimized/3stdugogn8b6evb1.ll
 ; coreutils-rs/optimized/592w9u2os9g8yndg.ll
@@ -191,14 +191,44 @@ entry:
 ; rust-analyzer-rs/optimized/635ry91nhs2ocdh.ll
 ; rust-analyzer-rs/optimized/v2z6ecwiine657n.ll
 ; tree-sitter-rs/optimized/4x741xowia4bwziy.ll
+; turborepo-rs/optimized/3l7xg3ikfppult5o2lclnyys7.ll
 ; typst-rs/optimized/31vebs4z0lpwpjgn.ll
 ; typst-rs/optimized/3gfld5k3k43fgjtj.ll
-; wireshark/optimized/qcustomplot.cpp.ll
+; zed-rs/optimized/2gu8aea2dmgqxbormk5tspsrx.ll
+; zed-rs/optimized/2jcakdf65g6ofzlv4sxvfz01e.ll
+; zed-rs/optimized/39agu11sr34f1pihhhnx3cpe2.ll
+; zed-rs/optimized/6vfs8ti0m45cvpqthx5jydp5p.ll
+; zed-rs/optimized/84i9jtf3ksrb37ur8uqpg2f86.ll
+; zed-rs/optimized/8v0fi0zpujn3n5viw54gladc4.ll
+; zed-rs/optimized/9zapxybzyqo7as5l1oow5wvsl.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = mul i64 %3, -24
+  %5 = getelementptr i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; quantlib/optimized/cmsmarket.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %1, %2
+  %4 = mul i64 %3, 112
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 2 occurrences:
+; abc/optimized/extraUtilMisc.c.ll
+; hyperscan/optimized/rose_build_bytecode.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001c(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %1, %2
+  %4 = mul nuw nsw i64 %3, 1600
   %5 = getelementptr i8, ptr %0, i64 %4
   ret ptr %5
 }
@@ -256,17 +286,6 @@ entry:
   ret ptr %5
 }
 
-; 1 occurrences:
-; stb/optimized/stb_herringbone_wang_tile.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nsw i64 %1, %2
-  %4 = mul nuw nsw i64 %3, 3
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
-  ret ptr %5
-}
-
 ; 4 occurrences:
 ; gromacs/optimized/checkpoint.cpp.ll
 ; gromacs/optimized/kernel_ref.cpp.ll
@@ -292,8 +311,21 @@ entry:
   ret ptr %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
+; gromacs/optimized/dispersioncorrection.cpp.ll
+; openusd/optimized/stbImage.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003b(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %1, %2
+  %4 = mul nuw i64 %3, 12
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 4 occurrences:
 ; gromacs/optimized/forcerec.cpp.ll
+; openspiel/optimized/CalcTables.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
 ; pybind11/optimized/test_eigen_tensor.cpp.ll
 ; Function Attrs: nounwind
@@ -305,14 +337,26 @@ entry:
   ret ptr %4
 }
 
+; 2 occurrences:
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000004(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %1, %2
+  %4 = mul nsw i64 %3, 120
+  %5 = getelementptr i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
 ; 1 occurrences:
 ; pybind11/optimized/test_stl_binders.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = mul nuw nsw i64 %3, 24
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 

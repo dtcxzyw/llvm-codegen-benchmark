@@ -22,7 +22,7 @@ func0000000000000002:                   # @func0000000000000002
 	vmovdqa	%ymm1, %ymm0
 	retq
 .LCPI3_0:
-	.quad	1000                            # 0x3e8
+	.quad	10                              # 0xa
 func0000000000000000:                   # @func0000000000000000
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1

@@ -1,17 +1,17 @@
-func00000000000000d6:                   # @func00000000000000d6
+func00000000000001a6:                   # @func00000000000001a6
 	andl	$2040, %esi                     # imm = 0x7F8
 	cmpl	$1096, %esi                     # imm = 0x448
 	setb	%al
 	orb	%dil, %al
 	retq
-func00000000000000da:                   # @func00000000000000da
+func00000000000001aa:                   # @func00000000000001aa
 	andl	$2047, %esi                     # imm = 0x7FF
 	cmpl	$1087, %esi                     # imm = 0x43F
 	setae	%al
 	notb	%dil
 	andb	%dil, %al
 	retq
-func00000000000000d8:                   # @func00000000000000d8
+func00000000000001b8:                   # @func00000000000001b8
 	andl	$2047, %esi                     # imm = 0x7FF
 	addl	$-1023, %esi                    # imm = 0xFC01
 	cmpl	$52, %esi
@@ -19,7 +19,7 @@ func00000000000000d8:                   # @func00000000000000d8
 	notb	%dil
 	andb	%dil, %al
 	retq
-func00000000000000d4:                   # @func00000000000000d4
+func00000000000001b4:                   # @func00000000000001b4
 	andl	$2047, %esi                     # imm = 0x7FF
 	addl	$-1075, %esi                    # imm = 0xFBCD
 	cmpl	$-128, %esi
@@ -31,7 +31,7 @@ func000000000000000a:                   # @func000000000000000a
 	setns	%al
 	orb	%dil, %al
 	retq
-func00000000000000dc:                   # @func00000000000000dc
+func00000000000001ac:                   # @func00000000000001ac
 	andl	$2047, %esi                     # imm = 0x7FF
 	cmpl	$1, %esi
 	setne	%al

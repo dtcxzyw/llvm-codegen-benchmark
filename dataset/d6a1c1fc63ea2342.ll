@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 34 occurrences:
 ; cpython/optimized/dtoa.ll
 ; graphviz/optimized/mainwindow.cpp.ll
 ; hermes/optimized/RegExp.cpp.ll
@@ -33,6 +33,7 @@
 ; wireshark/optimized/rtp_player_dialog.cpp.ll
 ; z3/optimized/dl_costs.cpp.ll
 ; z3/optimized/polynomial.cpp.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:

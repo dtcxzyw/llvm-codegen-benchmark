@@ -55,7 +55,6 @@
 ; linux/optimized/ip_options.ll
 ; linux/optimized/irq.ll
 ; linux/optimized/kallsyms.ll
-; linux/optimized/logips2pp.ll
 ; linux/optimized/setup.ll
 ; linux/optimized/vt.ll
 ; llama.cpp/optimized/ggml-quants.c.ll
@@ -67,6 +66,7 @@
 ; luajit/optimized/lj_asm_dyn.ll
 ; luau/optimized/lutf8lib.cpp.ll
 ; luau/optimized/main.cpp.ll
+; lvgl/optimized/lv_text.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; miniaudio/optimized/unity.c.ll
@@ -124,7 +124,7 @@ define i32 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 63
   %3 = zext nneg i8 %2 to i32
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
@@ -149,7 +149,7 @@ define i32 @func0000000000000000(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -32
   %3 = zext i8 %2 to i32
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 

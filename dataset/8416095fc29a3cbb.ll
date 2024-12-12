@@ -22,13 +22,14 @@ entry:
   ret i16 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; lvgl/optimized/lv_math.ll
 ; zxing/optimized/AZDetector.cpp.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i16 %0, i16 %1) #0 {
 entry:
   %2 = add i16 %0, %1
-  %3 = udiv i16 %2, 14
+  %3 = udiv i16 %2, 360
   ret i16 %3
 }
 

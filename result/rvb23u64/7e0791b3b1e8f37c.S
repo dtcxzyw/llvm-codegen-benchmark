@@ -6,11 +6,10 @@ func0000000000000007:                   # @func0000000000000007
 	ori	a0, a0, 256
 	ret
 func0000000000000006:                   # @func0000000000000006
-	lui	a3, 2
-	andi	a1, a1, 1
-	and	a2, a2, a3
-	or	a0, a0, a1
+	andi	a2, a2, -195
 	or	a0, a0, a2
+	andi	a1, a1, 64
+	or	a0, a0, a1
 	ori	a0, a0, 2
 	ret
 func0000000000000000:                   # @func0000000000000000

@@ -10,5 +10,5 @@ func0000000000000007:                   # @func0000000000000007
 func0000000000000005:                   # @func0000000000000005
 	vcvtsi2sd	%edi, %xmm1, %xmm1
 	vmulsd	.LCPI1_0(%rip), %xmm1, %xmm1
-	vmulsd	%xmm0, %xmm1, %xmm0
+	vmulsd	%xmm1, %xmm0, %xmm0
 	retq

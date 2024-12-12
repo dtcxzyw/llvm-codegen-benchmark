@@ -1,4 +1,4 @@
-func00000000000003c8:                   # @func00000000000003c8
+func00000000000006c8:                   # @func00000000000006c8
 	cmpq	$8, %rdi
 	setne	%cl
 	vucomiss	%xmm1, %xmm0
@@ -7,7 +7,7 @@ func00000000000003c8:                   # @func00000000000003c8
 	andb	%dl, %al
 	andb	%cl, %al
 	retq
-func00000000000003c3:                   # @func00000000000003c3
+func00000000000006c3:                   # @func00000000000006c3
 	cmpq	$2, %rdi
 	setne	%cl
 	vucomiss	%xmm1, %xmm0

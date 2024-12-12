@@ -1,5 +1,7 @@
 
-; 596 occurrences:
+; 594 occurrences:
+; boost/optimized/channel.ll
+; boost/optimized/main.ll
 ; darktable/optimized/Camera.cpp.ll
 ; darktable/optimized/ChecksumFile.cpp.ll
 ; darktable/optimized/Cr2Decoder.cpp.ll
@@ -436,13 +438,10 @@
 ; nix/optimized/nar-accessor.ll
 ; nix/optimized/nar-info-disk-cache.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/outputs-spec.ll
 ; nix/optimized/parsed-derivations.ll
@@ -582,7 +581,6 @@
 ; yalantinglibs/optimized/data_gen.cpp.ll
 ; yalantinglibs/optimized/descriptor.struct_pb.cc.ll
 ; yalantinglibs/optimized/example.cpp.ll
-; yalantinglibs/optimized/field_mask.struct_pb.cc.ll
 ; yalantinglibs/optimized/file_client.cpp.ll
 ; yalantinglibs/optimized/file_server.cpp.ll
 ; yalantinglibs/optimized/rpc_service.cpp.ll
@@ -605,16 +603,15 @@ entry:
   ret i64 %5
 }
 
-; 30 occurrences:
-; arrow/optimized/utf8.cc.ll
+; 28 occurrences:
+; boost/optimized/code_conversion.ll
+; boost/optimized/test_codecvt.ll
 ; eastl/optimized/BenchmarkString.cpp.ll
-; fmt/optimized/xchar-test.cc.ll
 ; hermes/optimized/BCP47Parser.cpp.ll
 ; hermes/optimized/SourceErrorManager.cpp.ll
 ; hermes/optimized/StringPrimitive.cpp.ll
 ; jsonnet/optimized/desugarer.cpp.ll
 ; jsonnet/optimized/formatter.cpp.ll
-; jsonnet/optimized/parser.cpp.ll
 ; jsonnet/optimized/string_utils.cpp.ll
 ; jsonnet/optimized/vm.cpp.ll
 ; libquic/optimized/string16.cc.ll
@@ -630,7 +627,6 @@ entry:
 ; nlohmann_json/optimized/unit-bson.cpp.ll
 ; nlohmann_json/optimized/unit-cbor.cpp.ll
 ; nlohmann_json/optimized/unit-msgpack.cpp.ll
-; pbrt-v4/optimized/string.cpp.ll
 ; quantlib/optimized/timehomogeneousforwardcorrelation.ll
 ; spike/optimized/sim.ll
 ; tev/optimized/Common.cpp.ll
@@ -645,7 +641,8 @@ entry:
   ret i64 %5
 }
 
-; 28 occurrences:
+; 29 occurrences:
+; boost/optimized/src.ll
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; eastl/optimized/BenchmarkVector.cpp.ll

@@ -1,39 +1,46 @@
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	subq	%rsi, %rdx
 	sarq	$5, %rdx
 	decq	%rdx
 	cmpq	%rdi, %rdx
 	seta	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	subq	%rsi, %rdx
 	sarq	$5, %rdx
 	incq	%rdx
 	cmpq	%rdi, %rdx
 	sete	%al
 	retq
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	subq	%rsi, %rdx
 	sarq	$3, %rdx
 	addq	$-4, %rdx
 	cmpq	%rdi, %rdx
 	setb	%al
 	retq
-func0000000000000059:                   # @func0000000000000059
+func00000000000000a9:                   # @func00000000000000a9
 	subq	%rsi, %rdx
 	sarq	$3, %rdx
 	incq	%rdx
 	cmpq	%rdi, %rdx
 	setae	%al
 	retq
-func000000000000005a:                   # @func000000000000005a
+func00000000000000a5:                   # @func00000000000000a5
+	subq	%rsi, %rdx
+	sarq	$2, %rdx
+	addq	$2, %rdx
+	cmpq	%rdi, %rdx
+	setbe	%al
+	retq
+func00000000000000aa:                   # @func00000000000000aa
 	subq	%rsi, %rdx
 	sarq	$3, %rdx
 	addq	$5, %rdx
 	cmpq	%rdi, %rdx
 	setg	%al
 	retq
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	subq	%rsi, %rdx
 	sarq	$4, %rdx
 	incq	%rdx

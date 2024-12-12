@@ -17,7 +17,7 @@
 ; nghttp2/optimized/url_parser.c.ll
 ; proxygen/optimized/http_parser_cpp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000108(i8 %0, i8 %1) #0 {
 entry:
   %2 = or i8 %1, 32
   %3 = add i8 %2, -97

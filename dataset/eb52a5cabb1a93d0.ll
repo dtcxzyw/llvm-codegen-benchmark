@@ -12,8 +12,9 @@ entry:
   ret i64 %5
 }
 
-; 232 occurrences:
+; 233 occurrences:
 ; assimp/optimized/TerragenLoader.cpp.ll
+; boost/optimized/to_chars.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
 ; fmt/optimized/format-test.cc.ll
@@ -246,11 +247,11 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001e(ptr %0, i32 %1) #0 {
+define i64 @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 32, %1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }
@@ -258,11 +259,11 @@ entry:
 ; 1 occurrences:
 ; zxing/optimized/ODReader.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000000e(ptr %0, i32 %1) #0 {
+define i64 @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 2, %1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i16, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i16, ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }

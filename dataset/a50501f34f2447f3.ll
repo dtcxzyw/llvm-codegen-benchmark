@@ -1,5 +1,5 @@
 
-; 552 occurrences:
+; 597 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_crc_test.cc.ll
@@ -21,6 +21,53 @@
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; assimp/optimized/COBLoader.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/attribute_name.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/env.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/extensions.ll
+; boost/optimized/filter_parser.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/run_exe.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/shared_work.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/sub_launcher.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/topology.ll
+; boost/optimized/visit.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
 ; casadi/optimized/casadi_c.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; casadi/optimized/mx_function.cpp.ll
@@ -284,7 +331,6 @@
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -542,7 +588,6 @@
 ; yosys/optimized/dft_tag.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/preproc.ll
 ; yosys/optimized/qbfsat.ll
 ; yosys/optimized/sta.ll
@@ -556,15 +601,16 @@
 define i64 @func000000000000001a(i64 %0, i64 %1) #0 {
 entry:
   %.neg = xor i64 %1, -1
-  %2 = add i64 %.neg, %0
+  %2 = add i64 %0, %.neg
   %3 = lshr i64 %2, 1
   ret i64 %3
 }
 
-; 111 occurrences:
+; 112 occurrences:
 ; arrow/optimized/thread_pool.cc.ll
 ; assimp/optimized/COBLoader.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/sort_by_side.ll
 ; casadi/optimized/mx_function.cpp.ll
 ; casadi/optimized/sx_function.cpp.ll
 ; cmake/optimized/cmCTestMultiProcessHandler.cxx.ll
@@ -777,7 +823,8 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/format_args.ll
 ; openssl/optimized/quic_multistream_test-bin-quictestlib.ll
 ; openssl/optimized/quic_newcid_test-bin-quictestlib.ll
 ; openssl/optimized/quic_srt_gen_test-bin-quictestlib.ll
@@ -829,21 +876,22 @@ entry:
 define i64 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %.neg = xor i64 %1, -1
-  %2 = add i64 %.neg, %0
+  %2 = add i64 %0, %.neg
   %3 = lshr i64 %2, 1
   ret i64 %3
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
+; boost/optimized/area.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, 2
-  %3 = sub i64 %0, %2
-  %4 = lshr i64 %3, 2
-  ret i64 %4
+  %.neg = xor i64 %1, -1
+  %2 = add i64 %0, %.neg
+  %3 = lshr i64 %2, 3
+  ret i64 %3
 }
 
 ; 1 occurrences:
@@ -852,7 +900,7 @@ entry:
 define i64 @func000000000000001e(i64 %0, i64 %1) #0 {
 entry:
   %.neg = xor i64 %1, -1
-  %2 = add i64 %.neg, %0
+  %2 = add i64 %0, %.neg
   %3 = lshr i64 %2, 1
   ret i64 %3
 }

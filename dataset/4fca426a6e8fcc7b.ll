@@ -1,5 +1,5 @@
 
-; 534 occurrences:
+; 531 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcDress3.c.ll
 ; abc/optimized/abcOdc.c.ll
@@ -86,12 +86,13 @@
 ; assimp/optimized/MaterialSystem.cpp.ll
 ; assimp/optimized/PostStepRegistry.cpp.ll
 ; assimp/optimized/SceneCombiner.cpp.ll
+; boost/optimized/core.ll
+; boost/optimized/partition.ll
 ; bullet3/optimized/btDeformableBodySolver.ll
 ; bullet3/optimized/btSoftBody.ll
 ; clamav/optimized/autoit.c.ll
 ; clamav/optimized/blake2s.cpp.ll
 ; clamav/optimized/cabd.c.ll
-; clamav/optimized/crc.cpp.ll
 ; clamav/optimized/crypt.cpp.ll
 ; clamav/optimized/rijndael.c.ll
 ; clamav/optimized/rijndael.cpp.ll
@@ -227,6 +228,7 @@
 ; luau/optimized/IrBuilder.cpp.ll
 ; luau/optimized/OptimizeConstProp.cpp.ll
 ; luau/optimized/ltable.cpp.ll
+; lvgl/optimized/lv_math.ll
 ; memcached/optimized/crc32c.ll
 ; memcached/optimized/memcached-crc32c.ll
 ; memcached/optimized/memcached-murmur3_hash.ll
@@ -294,7 +296,6 @@
 ; openssl/optimized/libcrypto-lib-bf_enc.ll
 ; openssl/optimized/libcrypto-lib-c_enc.ll
 ; openssl/optimized/libcrypto-lib-des_enc.ll
-; openssl/optimized/libcrypto-lib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-lib-md4_dgst.ll
 ; openssl/optimized/libcrypto-lib-pcbc_enc.ll
 ; openssl/optimized/libcrypto-lib-property.ll
@@ -308,7 +309,6 @@
 ; openssl/optimized/libcrypto-shlib-bf_enc.ll
 ; openssl/optimized/libcrypto-shlib-c_enc.ll
 ; openssl/optimized/libcrypto-shlib-des_enc.ll
-; openssl/optimized/libcrypto-shlib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-shlib-md4_dgst.ll
 ; openssl/optimized/libcrypto-shlib-pcbc_enc.ll
 ; openssl/optimized/libcrypto-shlib-property.ll
@@ -322,7 +322,6 @@
 ; openssl/optimized/libdefault-lib-scrypt.ll
 ; openssl/optimized/libdefault-lib-test_rng.ll
 ; openssl/optimized/liblegacy-lib-des_enc.ll
-; openssl/optimized/liblegacy-lib-fcrypt_b.ll
 ; openssl/optimized/padlock-dso-e_padlock.ll
 ; openusd/optimized/grain_synthesis.c.ll
 ; openvdb/optimized/Merge.cc.ll
@@ -349,7 +348,6 @@
 ; php/optimized/md5.ll
 ; php/optimized/sha1.ll
 ; pocketpy/optimized/random.cpp.ll
-; postgres/optimized/checksum.ll
 ; postgres/optimized/file.ll
 ; postgres/optimized/md5.ll
 ; postgres/optimized/md5_shlib.ll
@@ -432,7 +430,6 @@
 ; verilator/optimized/V3String.cpp.ll
 ; wireshark/optimized/ftype-ipv6.c.ll
 ; wireshark/optimized/ftype-protocol.c.ll
-; wireshark/optimized/golay.c.ll
 ; wireshark/optimized/packet-9p.c.ll
 ; wireshark/optimized/packet-bpv7.c.ll
 ; wireshark/optimized/packet-ip.c.ll

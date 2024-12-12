@@ -19,20 +19,6 @@ entry:
   ret i64 %6
 }
 
-; 3 occurrences:
-; libquic/optimized/time_support.c.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; Function Attrs: nounwind
-define i64 @func00000000000000f5(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = mul nuw nsw i64 %2, 100
-  %4 = add nuw nsw i64 %3, 4294962396
-  %5 = add nsw i64 %4, %1
-  %6 = add nsw i64 %5, %0
-  ret i64 %6
-}
-
 ; 8 occurrences:
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; libjpeg-turbo/optimized/jfdctint.c.ll
@@ -76,7 +62,7 @@ define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, 86400
   %4 = add i64 %3, -41212800
-  %5 = add nsw i64 %4, %1
+  %5 = add nsw i64 %1, %4
   %6 = add nsw i64 %5, %0
   ret i64 %6
 }
@@ -88,8 +74,20 @@ define i64 @func00000000000000fe(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 544
   %4 = add nuw nsw i64 %3, 544
-  %5 = add nuw nsw i64 %4, %1
+  %5 = add nuw nsw i64 %1, %4
   %6 = add nuw i64 %5, %0
+  ret i64 %6
+}
+
+; 1 occurrences:
+; libquic/optimized/time_support.c.ll
+; Function Attrs: nounwind
+define i64 @func00000000000000f5(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul nuw nsw i64 %2, 100
+  %4 = add nuw nsw i64 %3, 4294962396
+  %5 = add nsw i64 %4, %1
+  %6 = add nsw i64 %5, %0
   ret i64 %6
 }
 
@@ -101,8 +99,8 @@ define i64 @func00000000000000fc(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 17
   %4 = add nuw nsw i64 %3, 1
-  %5 = add nuw nsw i64 %4, %1
-  %6 = add i64 %5, %0
+  %5 = add nuw nsw i64 %1, %4
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -140,7 +138,7 @@ entry:
   %3 = mul nuw nsw i64 %2, 8168
   %4 = add nuw nsw i64 %3, 8152
   %5 = add i64 %4, %1
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 

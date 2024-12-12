@@ -1,5 +1,5 @@
 
-; 52 occurrences:
+; 55 occurrences:
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; cpython/optimized/assemble.ll
@@ -22,12 +22,14 @@
 ; llvm/optimized/CodeViewDebug.cpp.ll
 ; llvm/optimized/ComputeDependence.cpp.ll
 ; llvm/optimized/DependenceAnalysis.cpp.ll
+; llvm/optimized/Descriptor.cpp.ll
 ; llvm/optimized/DwarfDebug.cpp.ll
 ; llvm/optimized/ELFObjectWriter.cpp.ll
 ; llvm/optimized/MCAssembler.cpp.ll
 ; llvm/optimized/MCStreamer.cpp.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
 ; llvm/optimized/RISCVAsmBackend.cpp.ll
+; llvm/optimized/SemaCodeComplete.cpp.ll
 ; llvm/optimized/WasmObjectWriter.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; minetest/optimized/guiButton.cpp.ll
@@ -52,6 +54,7 @@
 ; spike/optimized/s_subMagsF32.ll
 ; wireshark/optimized/ngsniffer.c.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/4q1bnadqr1o107uase7gmrd0k.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i1 %0) #0 {
 entry:

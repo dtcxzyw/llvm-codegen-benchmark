@@ -19,7 +19,7 @@ func0000000000000001:                   # @func0000000000000001
 	.quad	14                              # 0xe
 .LCPI1_2:
 	.quad	2                               # 0x2
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vpbroadcastq	.LCPI1_0(%rip), %ymm2   # ymm2 = [6,6,6,6]

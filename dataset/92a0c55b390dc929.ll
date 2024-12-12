@@ -18,10 +18,10 @@
 ; spike/optimized/processor.ll
 ; velox/optimized/BitUtil.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000002c(i64 %0, i64 %1) #0 {
+define i64 @func000000000000004c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   %4 = icmp ne i64 %3, 0
   %5 = sext i1 %4 to i64
   ret i64 %5

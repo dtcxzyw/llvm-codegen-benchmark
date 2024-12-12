@@ -42,19 +42,6 @@ entry:
 }
 
 ; 2 occurrences:
-; clamav/optimized/lzxd.c.ll
-; lua/optimized/ldebug.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000015(i32 %0) #0 {
-entry:
-  %1 = add nsw i32 %0, -256
-  %2 = lshr i32 %1, 3
-  %3 = zext nneg i32 %2 to i64
-  %4 = add nsw i64 %3, -8
-  ret i64 %4
-}
-
-; 2 occurrences:
 ; lodepng/optimized/lodepng.cpp.ll
 ; redis/optimized/rax.ll
 ; Function Attrs: nounwind
@@ -78,6 +65,18 @@ entry:
   %2 = lshr i32 %1, 6
   %3 = zext nneg i32 %2 to i64
   %4 = add nuw nsw i64 %3, 4294967295
+  ret i64 %4
+}
+
+; 1 occurrences:
+; lua/optimized/ldebug.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000015(i32 %0) #0 {
+entry:
+  %1 = add nsw i32 %0, -1
+  %2 = lshr i32 %1, 7
+  %3 = zext nneg i32 %2 to i64
+  %4 = add nsw i64 %3, -1
   ret i64 %4
 }
 

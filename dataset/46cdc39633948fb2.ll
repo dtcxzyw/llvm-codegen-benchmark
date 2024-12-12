@@ -1,5 +1,6 @@
 
-; 20 occurrences:
+; 21 occurrences:
+; boost/optimized/src.ll
 ; grpc/optimized/call.cc.ll
 ; grpc/optimized/channel_init.cc.ll
 ; grpc/optimized/chttp2_transport.cc.ll

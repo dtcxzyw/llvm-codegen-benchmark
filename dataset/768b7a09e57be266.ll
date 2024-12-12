@@ -10,8 +10,7 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
-; linux/optimized/vclock_gettime.ll
+; 4 occurrences:
 ; llvm/optimized/RISCVMergeBaseOffset.cpp.ll
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/bignum.ll

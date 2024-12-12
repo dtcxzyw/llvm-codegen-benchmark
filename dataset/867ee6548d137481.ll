@@ -49,95 +49,6 @@ entry:
   ret ptr %5
 }
 
-; 79 occurrences:
-; g2o/optimized/slam2d_linear.cpp.ll
-; g2o/optimized/solver_cholmod.cpp.ll
-; g2o/optimized/solver_csparse.cpp.ll
-; g2o/optimized/solver_dense.cpp.ll
-; g2o/optimized/solver_eigen.cpp.ll
-; g2o/optimized/solver_pcg.cpp.ll
-; gromacs/optimized/kernel_ref_prune.cpp.ll
-; gromacs/optimized/pme.cpp.ll
-; gromacs/optimized/pme_redistribute.cpp.ll
-; gromacs/optimized/pme_spread.cpp.ll
-; gromacs/optimized/simd_prune_kernel.cpp.ll
-; linux/optimized/ttm_resource.ll
-; llama.cpp/optimized/llama.cpp.ll
-; meshlab/optimized/baseio.cpp.ll
-; meshlab/optimized/cleanfilter.cpp.ll
-; meshlab/optimized/cmesh.cpp.ll
-; meshlab/optimized/decorate_base.cpp.ll
-; meshlab/optimized/dirt_utils.cpp.ll
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/edit_point.cpp.ll
-; meshlab/optimized/edit_referencing.cpp.ll
-; meshlab/optimized/eigen_mesh_conversions.cpp.ll
-; meshlab/optimized/filter_ao.cpp.ll
-; meshlab/optimized/filter_colorproc.cpp.ll
-; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_cubization.cpp.ll
-; meshlab/optimized/filter_developability.cpp.ll
-; meshlab/optimized/filter_dirt.cpp.ll
-; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
-; meshlab/optimized/filter_geodesic.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
-; meshlab/optimized/filter_img_patch_param.cpp.ll
-; meshlab/optimized/filter_isoparametrization.cpp.ll
-; meshlab/optimized/filter_layer.cpp.ll
-; meshlab/optimized/filter_measure.cpp.ll
-; meshlab/optimized/filter_plymc.cpp.ll
-; meshlab/optimized/filter_qhull.cpp.ll
-; meshlab/optimized/filter_sampling.cpp.ll
-; meshlab/optimized/filter_screened_poisson.cpp.ll
-; meshlab/optimized/filter_sdfgpu.cpp.ll
-; meshlab/optimized/filter_ssynth.cpp.ll
-; meshlab/optimized/filter_texture.cpp.ll
-; meshlab/optimized/filter_texture_defragmentation.cpp.ll
-; meshlab/optimized/filter_trioptimize.cpp.ll
-; meshlab/optimized/filter_unsharp.cpp.ll
-; meshlab/optimized/filter_voronoi.cpp.ll
-; meshlab/optimized/function_set.cpp.ll
-; meshlab/optimized/gltf_loader.cpp.ll
-; meshlab/optimized/io_bre.cpp.ll
-; meshlab/optimized/io_collada.cpp.ll
-; meshlab/optimized/io_ctm.cpp.ll
-; meshlab/optimized/io_e57.cpp.ll
-; meshlab/optimized/io_expe.cpp.ll
-; meshlab/optimized/io_json.cpp.ll
-; meshlab/optimized/io_pdb.cpp.ll
-; meshlab/optimized/io_tri.cpp.ll
-; meshlab/optimized/io_txt.cpp.ll
-; meshlab/optimized/io_u3d.cpp.ll
-; meshlab/optimized/io_x3d.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
-; meshlab/optimized/load_save.cpp.ll
-; meshlab/optimized/mainwindow_RunTime.cpp.ll
-; meshlab/optimized/mesh_model.cpp.ll
-; meshlab/optimized/mesh_model_state.cpp.ll
-; meshlab/optimized/meshfilter.cpp.ll
-; meshlab/optimized/meshio.cpp.ll
-; meshlab/optimized/ml_scene_gl_shared_data_context.cpp.ll
-; meshlab/optimized/mlsplugin.cpp.ll
-; meshlab/optimized/qhull_tools.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
-; openspiel/optimized/havannah.cc.ll
-; openspiel/optimized/y.cc.ll
-; openusd/optimized/level.cpp.ll
-; openusd/optimized/refinement.cpp.ll
-; openusd/optimized/refinerFactory.cpp.ll
-; openusd/optimized/topologyDescriptor.cpp.ll
-; regex-rs/optimized/183h9dropc9vohym.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000020(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sub nuw i64 %1, %2
-  %4 = shl i64 %3, 2
-  %5 = getelementptr i8, ptr %0, i64 %4
-  ret ptr %5
-}
-
 ; 177 occurrences:
 ; arrow/optimized/grouper.cc.ll
 ; arrow/optimized/table_builder.cc.ll
@@ -151,6 +62,7 @@ entry:
 ; assimp/optimized/MS3DLoader.cpp.ll
 ; assimp/optimized/XFileParser.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/range.ll
 ; ceres/optimized/block_jacobian_writer.cc.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/compressed_row_jacobian_writer.cc.ll
@@ -206,7 +118,6 @@ entry:
 ; luau/optimized/IrValueLocationTracking.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mold/optimized/input-files.cc.ALPHA.cc.ll
 ; mold/optimized/input-files.cc.ARM32.cc.ll
 ; mold/optimized/input-files.cc.ARM64.cc.ll
@@ -320,20 +231,21 @@ entry:
 define ptr @func0000000000000028(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
-  %4 = shl nuw i64 %3, 2
+  %4 = shl nuw i64 %3, 4
   %5 = getelementptr i8, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; llvm/optimized/RegionStore.cpp.ll
 ; php/optimized/hash_xxhash.ll
 ; rocksdb/optimized/xxhash.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = shl nuw nsw i64 %3, 6
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -366,11 +278,11 @@ entry:
 ; openssl/optimized/libcrypto-shlib-e_chacha20_poly1305.ll
 ; openssl/optimized/libdefault-lib-cipher_chacha20_hw.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 %1, %2
   %4 = shl nuw nsw i64 %3, 4
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -413,7 +325,7 @@ entry:
   ret ptr %5
 }
 
-; 34 occurrences:
+; 33 occurrences:
 ; ceres/optimized/schur_eliminator_2_2_2.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_3.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_4.cc.ll
@@ -430,7 +342,6 @@ entry:
 ; ceres/optimized/schur_eliminator_4_4_d.cc.ll
 ; folly/optimized/dynamic.cpp.ll
 ; g2o/optimized/vertex_ellipse.cpp.ll
-; llvm/optimized/MSFBuilder.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_referencing.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
@@ -500,10 +411,9 @@ entry:
   ret ptr %5
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; assimp/optimized/ASELoader.cpp.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
-; darktable/optimized/introspection_liquify.c.ll
 ; duckdb/optimized/ub_duckdb_main.cpp.ll
 ; gromacs/optimized/atomdata.cpp.ll
 ; hyperscan/optimized/ng_netflow.cpp.ll
@@ -638,10 +548,19 @@ entry:
   ret ptr %5
 }
 
-; 3 occurrences:
-; icu/optimized/uniset.ll
+; 1 occurrences:
+; quantlib/optimized/onestepcoterminalswaps.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000023(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub nuw i64 %1, %2
+  %.idx = shl i64 %3, 5
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %.idx
+  ret ptr %4
+}
+
+; 1 occurrences:
 ; libquic/optimized/string16.cc.ll
-; openblas/optimized/dgemm_itcopy.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000036(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -651,10 +570,107 @@ entry:
   ret ptr %5
 }
 
+; 76 occurrences:
+; g2o/optimized/slam2d_linear.cpp.ll
+; g2o/optimized/solver_cholmod.cpp.ll
+; g2o/optimized/solver_csparse.cpp.ll
+; g2o/optimized/solver_dense.cpp.ll
+; g2o/optimized/solver_eigen.cpp.ll
+; g2o/optimized/solver_pcg.cpp.ll
+; gromacs/optimized/kernel_ref_prune.cpp.ll
+; gromacs/optimized/pme.cpp.ll
+; gromacs/optimized/pme_redistribute.cpp.ll
+; gromacs/optimized/pme_spread.cpp.ll
+; gromacs/optimized/simd_prune_kernel.cpp.ll
+; linux/optimized/ttm_resource.ll
+; llama.cpp/optimized/llama.cpp.ll
+; meshlab/optimized/baseio.cpp.ll
+; meshlab/optimized/cleanfilter.cpp.ll
+; meshlab/optimized/cmesh.cpp.ll
+; meshlab/optimized/decorate_base.cpp.ll
+; meshlab/optimized/dirt_utils.cpp.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/edit_point.cpp.ll
+; meshlab/optimized/edit_referencing.cpp.ll
+; meshlab/optimized/eigen_mesh_conversions.cpp.ll
+; meshlab/optimized/filter_ao.cpp.ll
+; meshlab/optimized/filter_colorproc.cpp.ll
+; meshlab/optimized/filter_create.cpp.ll
+; meshlab/optimized/filter_createiso.cpp.ll
+; meshlab/optimized/filter_cubization.cpp.ll
+; meshlab/optimized/filter_developability.cpp.ll
+; meshlab/optimized/filter_dirt.cpp.ll
+; meshlab/optimized/filter_fractal.cpp.ll
+; meshlab/optimized/filter_geodesic.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/filter_img_patch_param.cpp.ll
+; meshlab/optimized/filter_isoparametrization.cpp.ll
+; meshlab/optimized/filter_layer.cpp.ll
+; meshlab/optimized/filter_measure.cpp.ll
+; meshlab/optimized/filter_plymc.cpp.ll
+; meshlab/optimized/filter_qhull.cpp.ll
+; meshlab/optimized/filter_sampling.cpp.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
+; meshlab/optimized/filter_sdfgpu.cpp.ll
+; meshlab/optimized/filter_ssynth.cpp.ll
+; meshlab/optimized/filter_texture.cpp.ll
+; meshlab/optimized/filter_texture_defragmentation.cpp.ll
+; meshlab/optimized/filter_trioptimize.cpp.ll
+; meshlab/optimized/filter_unsharp.cpp.ll
+; meshlab/optimized/filter_voronoi.cpp.ll
+; meshlab/optimized/function_set.cpp.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; meshlab/optimized/io_bre.cpp.ll
+; meshlab/optimized/io_collada.cpp.ll
+; meshlab/optimized/io_ctm.cpp.ll
+; meshlab/optimized/io_e57.cpp.ll
+; meshlab/optimized/io_expe.cpp.ll
+; meshlab/optimized/io_json.cpp.ll
+; meshlab/optimized/io_pdb.cpp.ll
+; meshlab/optimized/io_tri.cpp.ll
+; meshlab/optimized/io_txt.cpp.ll
+; meshlab/optimized/io_u3d.cpp.ll
+; meshlab/optimized/io_x3d.cpp.ll
+; meshlab/optimized/load_save.cpp.ll
+; meshlab/optimized/mainwindow_RunTime.cpp.ll
+; meshlab/optimized/mesh_model.cpp.ll
+; meshlab/optimized/mesh_model_state.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/meshio.cpp.ll
+; meshlab/optimized/ml_scene_gl_shared_data_context.cpp.ll
+; meshlab/optimized/mlsplugin.cpp.ll
+; meshlab/optimized/qhull_tools.cpp.ll
+; openspiel/optimized/havannah.cc.ll
+; openspiel/optimized/y.cc.ll
+; openusd/optimized/level.cpp.ll
+; openusd/optimized/refinement.cpp.ll
+; openusd/optimized/refinerFactory.cpp.ll
+; openusd/optimized/topologyDescriptor.cpp.ll
+; regex-rs/optimized/183h9dropc9vohym.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000020(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub nuw i64 %1, %2
+  %4 = shl i64 %3, 1
+  %5 = getelementptr i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; llvm/optimized/MSFBuilder.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000017(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub nsw i64 %1, %2
+  %4 = shl nsw i64 %3, 2
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
 ; 3 occurrences:
-; llvm/optimized/RegionStore.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; openblas/optimized/dtrsm_kernel_RT.c.ll
+; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -664,14 +680,15 @@ entry:
   ret ptr %5
 }
 
-; 1 occurrences:
-; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
+; 2 occurrences:
+; icu/optimized/uniset.ll
+; openblas/optimized/dgemm_itcopy.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000004(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000037(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sub i64 %1, %2
+  %3 = sub nuw nsw i64 %1, %2
   %4 = shl nsw i64 %3, 2
-  %5 = getelementptr i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 

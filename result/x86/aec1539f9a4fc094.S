@@ -1,10 +1,10 @@
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	addl	%esi, %edi
 	subl	%edi, %edx
 	cmpl	$-1, %edx
 	setge	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	addl	%esi, %edi
 	subl	%edi, %edx
 	cmpl	$-4097, %edx                    # imm = 0xEFFF

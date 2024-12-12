@@ -9,7 +9,7 @@ func00000000000000d8:                   # @func00000000000000d8
 func0000000000000058:                   # @func0000000000000058
 	vpmulld	%ymm2, %ymm1, %ymm1
 	vpsrld	$16, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpsrld	$2, %ymm0, %ymm0
 	vpmovdb	%ymm0, %xmm0
 	vzeroupper
@@ -17,7 +17,7 @@ func0000000000000058:                   # @func0000000000000058
 func0000000000000018:                   # @func0000000000000018
 	vpmulld	%ymm2, %ymm1, %ymm1
 	vpsrld	$16, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpsrld	$2, %ymm0, %ymm0
 	vpmovdb	%ymm0, %xmm0
 	vzeroupper

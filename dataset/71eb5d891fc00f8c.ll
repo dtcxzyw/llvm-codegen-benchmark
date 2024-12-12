@@ -1,5 +1,7 @@
 
-; 4 occurrences:
+; 6 occurrences:
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; ruby/optimized/compile.ll
 ; soc-simulator/optimized/verilated.ll
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
@@ -44,7 +46,7 @@ define i1 @func0000000000000000(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = trunc i8 %2 to i1
   %4 = select i1 %3, i1 %1, i1 false
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

@@ -18,7 +18,7 @@
 ; openmpi/optimized/opal_pointer_array.ll
 ; openmpi/optimized/pmix_pointer_array.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c4(i32 %0, i32 %1, i64 %2) #0 {
+define i32 @func0000000000000184(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 3
   %4 = icmp eq i64 %3, 0
@@ -35,26 +35,26 @@ entry:
 ; abc/optimized/rsbDec6.c.ll
 ; spike/optimized/processor.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c7(i32 %0, i32 %1, i64 %2) #0 {
+define i32 @func0000000000000187(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 3
   %4 = icmp eq i64 %3, 0
   %5 = add nuw nsw i32 %1, 2
   %6 = select i1 %4, i32 %5, i32 %1
-  %7 = add nuw nsw i32 %6, %0
+  %7 = add nuw nsw i32 %0, %6
   ret i32 %7
 }
 
 ; 1 occurrences:
 ; linux/optimized/r8169_main.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000044(i32 %0, i32 %1, i64 %2) #0 {
+define i32 @func0000000000000084(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 8796093022208
   %4 = icmp eq i64 %3, 0
   %5 = add nsw i32 %1, -4
   %6 = select i1 %4, i32 %5, i32 %1, !prof !0
-  %7 = add i32 %6, %0
+  %7 = add i32 %0, %6
   ret i32 %7
 }
 

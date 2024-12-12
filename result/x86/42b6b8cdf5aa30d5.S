@@ -1,12 +1,3 @@
-func0000000000000012:                   # @func0000000000000012
-	xorl	%eax, %eax
-	cmpb	$40, %dl
-	setae	%al
-	shll	$24, %eax
-	orl	%esi, %edi
-	orl	%edi, %eax
-	orl	$100663296, %eax                # imm = 0x6000000
-	retq
 func0000000000000005:                   # @func0000000000000005
 	xorl	%eax, %eax
 	cmpb	$11, %dl

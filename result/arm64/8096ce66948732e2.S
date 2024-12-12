@@ -20,10 +20,16 @@ func0000000000000008:                   // @func0000000000000008
 	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000081:                   // @func0000000000000081
+func0000000000000101:                   // @func0000000000000101
 // %bb.0:                               // %entry
 	sub	x8, x1, #2
-	cmp	x8, x0
+	cmp	x0, x8
+	cset	w0, eq
+	ret
+                                        // -- End function
+func0000000000000181:                   // @func0000000000000181
+// %bb.0:                               // %entry
+	cmp	x0, x1
 	cset	w0, eq
 	ret
                                         // -- End function

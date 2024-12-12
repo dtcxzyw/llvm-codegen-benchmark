@@ -22,10 +22,12 @@ func0000000000000008:                   # @func0000000000000008
 	vcmpeqps	%zmm1, %zmm0, %k1
 	vbroadcastss	.LCPI3_0(%rip), %zmm0 {%k1} # zmm0 {%k1} = [1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0]
 	retq
+.LCPI4_0:
+	.long	0x41400000                      # float 12
 func000000000000000a:                   # @func000000000000000a
 	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpnleps	%zmm1, %zmm0, %k1
-	vmovaps	%zmm0, %zmm0 {%k1} {z}
+	vcmpleps	%zmm1, %zmm0, %k1
+	vbroadcastss	.LCPI4_0(%rip), %zmm0 {%k1} # zmm0 {%k1} = [1.2E+1,1.2E+1,1.2E+1,1.2E+1,1.2E+1,1.2E+1,1.2E+1,1.2E+1,1.2E+1,1.2E+1,1.2E+1,1.2E+1,1.2E+1,1.2E+1,1.2E+1,1.2E+1]
 	retq
 .LCPI5_0:
 	.long	0xdd5e0b6b                      # float -9.99999984E+17

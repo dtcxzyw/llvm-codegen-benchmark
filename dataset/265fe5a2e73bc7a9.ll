@@ -43,7 +43,7 @@ define i1 @func0000000000000003(i1 %0, double %1) #0 {
 entry:
   %2 = fadd double %1, 0xBFF921FB54442D18
   %3 = fcmp ult double %2, 0x401921FB54442D18
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
@@ -66,7 +66,7 @@ define i1 @func0000000000000005(i1 %0, double %1) #0 {
 entry:
   %2 = fadd double %1, 1.000000e+00
   %3 = fcmp ugt double %2, 1.000000e+00
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 

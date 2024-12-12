@@ -14,10 +14,8 @@ entry:
   ret i32 %7
 }
 
-; 13 occurrences:
+; 11 occurrences:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
-; linux/optimized/attr.ll
-; linux/optimized/hdac_regmap.ll
 ; llvm/optimized/SemaConcept.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/SemaTemplate.cpp.ll

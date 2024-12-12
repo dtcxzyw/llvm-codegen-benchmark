@@ -10,7 +10,7 @@ func0000000000000001:                   # @func0000000000000001
 	.long	2047                            # 0x7ff
 .LCPI1_1:
 	.quad	4503599627370496                # 0x10000000000000
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vptestmd	.LCPI1_0(%rip){1to4}, %xmm1, %k1
 	vorpd	.LCPI1_1(%rip){1to4}, %ymm0, %ymm0 {%k1}
 	retq
@@ -18,7 +18,7 @@ func0000000000000011:                   # @func0000000000000011
 	.long	64                              # 0x40
 .LCPI2_1:
 	.quad	-128                            # 0xffffffffffffff80
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	vptestmd	.LCPI2_0(%rip){1to4}, %xmm1, %k1
 	vorpd	.LCPI2_1(%rip){1to4}, %ymm0, %ymm0 {%k1}
 	retq

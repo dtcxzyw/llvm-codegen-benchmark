@@ -1,5 +1,6 @@
 
-; 7 occurrences:
+; 8 occurrences:
+; boost/optimized/area.ll
 ; clamav/optimized/filtering.c.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; postgres/optimized/autovacuum.ll
@@ -16,7 +17,18 @@ entry:
   ret i32 %5
 }
 
-; 16 occurrences:
+; 1 occurrences:
+; folly/optimized/DeterministicSchedule.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub nsw i32 %1, %2
+  %4 = add i32 %3, 2147483563
+  %5 = select i1 %0, i32 %4, i32 %3
+  ret i32 %5
+}
+
+; 13 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; clamav/optimized/lzxd.c.ll
@@ -27,9 +39,6 @@ entry:
 ; icu/optimized/calendar.ll
 ; icu/optimized/gregocal.ll
 ; libquic/optimized/time_support.c.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; php/optimized/engine_combinedlcg.ll
 ; php/optimized/parse_posix.ll
 ; postgres/optimized/strftime.ll
 ; sqlite/optimized/sqlite3.ll
@@ -37,18 +46,7 @@ entry:
 define i32 @func0000000000000005(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
-  %4 = add nsw i32 %3, 86400
-  %5 = select i1 %0, i32 %4, i32 %3
-  ret i32 %5
-}
-
-; 1 occurrences:
-; folly/optimized/DeterministicSchedule.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sub nsw i32 %1, %2
-  %4 = add i32 %3, 2147483563
+  %4 = add nsw i32 %3, 7
   %5 = select i1 %0, i32 %4, i32 %3
   ret i32 %5
 }

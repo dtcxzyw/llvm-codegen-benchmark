@@ -41,7 +41,7 @@ entry:
 ; rocksdb/optimized/write_batch_with_index.cc.ll
 ; rocksdb/optimized/write_thread.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000026(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000046(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = icmp slt i32 %2, 0
@@ -112,13 +112,13 @@ entry:
 }
 
 ; 2 occurrences:
-; libquic/optimized/file.c.ll
+; boost/optimized/numeric.ll
 ; lz4/optimized/lz4hc.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp sgt i32 %2, 0
+  %3 = icmp sgt i32 %2, 15
   %4 = select i1 %3, i32 %0, i32 %2
   ret i32 %4
 }

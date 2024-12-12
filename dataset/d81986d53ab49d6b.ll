@@ -109,4 +109,17 @@ entry:
   ret i128 %6
 }
 
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i128 @func0000000000000004(i32 %0, i32 %1) #0 {
+entry:
+  %2 = or i32 %1, 1
+  %3 = shl i32 %2, %0
+  %4 = zext i32 %3 to i64
+  %5 = shl nuw i64 %4, 32
+  %6 = zext i64 %5 to i128
+  ret i128 %6
+}
+
 attributes #0 = { nounwind }

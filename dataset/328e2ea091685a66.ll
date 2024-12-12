@@ -1,6 +1,8 @@
 
-; 48 occurrences:
+; 50 occurrences:
 ; abseil-cpp/optimized/exponential_biased_test.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/cvodes.c.ll
 ; darktable/optimized/introspection_basecurve.c.ll
 ; darktable/optimized/introspection_channelmixer.c.ll

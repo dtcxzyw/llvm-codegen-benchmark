@@ -17,13 +17,13 @@
 ; openusd/optimized/matrix4f.cpp.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000fa(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func00000000000000ff(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 6
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   %6 = zext nneg i32 %1 to i64
-  %7 = getelementptr nusw i8, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -36,13 +36,13 @@ entry:
 ; rocksdb/optimized/plain_table_reader.cc.ll
 ; slurm/optimized/KeccakP-1600-opt64.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 6
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   %6 = zext nneg i32 %1 to i64
-  %7 = getelementptr nusw i8, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -51,11 +51,11 @@ entry:
 ; openssl/optimized/libcrypto-lib-rsaz_exp_x2.ll
 ; openssl/optimized/libcrypto-shlib-rsaz_exp_x2.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000f8(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func00000000000000fc(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 6
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i64, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i64, ptr %0, i64 %4
   %6 = zext nneg i32 %1 to i64
   %7 = getelementptr i64, ptr %5, i64 %6
   ret ptr %7
@@ -79,13 +79,13 @@ entry:
 ; recastnavigation/optimized/RecastDump.cpp.ll
 ; slurm/optimized/KeccakP-1600-opt64.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw double, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw double, ptr %0, i64 %4
   %6 = zext i32 %1 to i64
-  %7 = getelementptr nusw double, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw double, ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -93,37 +93,37 @@ entry:
 ; clamav/optimized/mew.c.ll
 ; flatbuffers/optimized/reflection.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000ea(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func00000000000000ef(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   %6 = zext i32 %1 to i64
-  %7 = getelementptr nusw i8, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %5, i64 %6
   ret ptr %7
 }
 
 ; 1 occurrences:
 ; darktable/optimized/TableLookUp.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000072(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000073(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 17
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr i16, ptr %0, i64 %4
   %6 = zext nneg i32 %1 to i64
-  %7 = getelementptr nusw i16, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i16, ptr %5, i64 %6
   ret ptr %7
 }
 
 ; 1 occurrences:
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000078(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000007c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 4
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i16, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i16, ptr %0, i64 %4
   %6 = zext nneg i32 %1 to i64
   %7 = getelementptr i16, ptr %5, i64 %6
   ret ptr %7
@@ -134,26 +134,26 @@ entry:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_dither.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 3
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i16, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i16, ptr %0, i64 %4
   %6 = zext nneg i32 %1 to i64
-  %7 = getelementptr nusw i16, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i16, ptr %5, i64 %6
   ret ptr %7
 }
 
 ; 1 occurrences:
 ; darktable/optimized/introspection_dither.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw float, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw float, ptr %0, i64 %4
   %6 = zext nneg i32 %1 to i64
-  %7 = getelementptr nusw float, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw float, ptr %5, i64 %6
   ret ptr %7
 }
 

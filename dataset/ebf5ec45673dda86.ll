@@ -1,5 +1,6 @@
 
-; 3 occurrences:
+; 4 occurrences:
+; freetype/optimized/psaux.c.ll
 ; libwebp/optimized/vp8l_enc.c.ll
 ; linux/optimized/netdev.ll
 ; soc-simulator/optimized/sim_mycpu.ll

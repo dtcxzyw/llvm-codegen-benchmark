@@ -19,27 +19,27 @@ func0000000000000005:                   # @func0000000000000005
 	sltu	a0, a2, a0
 	xori	a0, a0, 1
 	ret
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	sub	a2, a2, a1
 	sub	a0, a0, a1
 	sltu	a0, a0, a2
 	ret
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	sub	a2, a2, a1
 	sub	a0, a0, a1
 	sltu	a0, a2, a0
 	ret
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	sub	a2, a2, a1
 	sub	a0, a0, a1
 	sltu	a0, a0, a2
 	ret
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	sub	a2, a2, a1
 	sub	a0, a0, a1
 	sltu	a0, a0, a2
 	ret
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	sub	a2, a2, a1
 	sub	a0, a0, a1
 	sltu	a0, a2, a0
@@ -49,22 +49,27 @@ func000000000000000a:                   # @func000000000000000a
 	sub	a0, a0, a1
 	slt	a0, a2, a0
 	ret
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	sub	a2, a2, a1
 	sub	a0, a0, a1
 	sltu	a0, a2, a0
 	ret
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	sub	a2, a2, a1
 	sub	a0, a0, a1
 	slt	a0, a0, a2
 	ret
-func0000000000000078:                   # @func0000000000000078
+func0000000000000064:                   # @func0000000000000064
+	sub	a2, a2, a1
+	sub	a0, a0, a1
+	sltu	a0, a0, a2
+	ret
+func00000000000000e8:                   # @func00000000000000e8
 	sub	a2, a2, a1
 	sub	a0, a0, a1
 	sltu	a0, a2, a0
 	ret
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	sub	a2, a2, a1
 	sub	a0, a0, a1
 	sltu	a0, a2, a0
@@ -75,7 +80,7 @@ func0000000000000009:                   # @func0000000000000009
 	sltu	a0, a0, a2
 	xori	a0, a0, 1
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	sub	a2, a2, a1
 	sub	a0, a0, a1
 	slt	a0, a0, a2

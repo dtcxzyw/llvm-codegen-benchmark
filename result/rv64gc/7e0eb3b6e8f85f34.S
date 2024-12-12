@@ -5,7 +5,7 @@ func0000000000000001:                   # @func0000000000000001
 	addi	a1, a1, -1
 	or	a0, a0, a1
 	ret
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	li	a2, 31
 	slli	a2, a2, 10
 	and	a1, a1, a2
@@ -13,15 +13,19 @@ func0000000000000004:                   # @func0000000000000004
 	addi	a1, a1, -1
 	and	a0, a0, a1
 	ret
+func0000000000000018:                   # @func0000000000000018
+	li	a2, 15
+	slli	a2, a2, 8
+	and	a1, a1, a2
+	li	a2, 5
+	slli	a2, a2, 9
+	sltu	a1, a2, a1
+	addi	a1, a1, -1
+	and	a0, a0, a1
+	ret
 func000000000000000c:                   # @func000000000000000c
 	andi	a1, a1, 1
-	beqz	a1, .LBB2_2
+	beqz	a1, .LBB3_2
 	lui	a0, 128
-.LBB2_2:                                # %entry
-	ret
-func0000000000000008:                   # @func0000000000000008
-	andi	a1, a1, 14
-	sltiu	a1, a1, 10
-	neg	a1, a1
-	and	a0, a0, a1
+.LBB3_2:                                # %entry
 	ret

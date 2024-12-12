@@ -1,10 +1,3 @@
-func0000000000000047:                   # @func0000000000000047
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsgtu.vi	v0, v12, 9
-	vmerge.vim	v10, v10, 9, v0
-	vsll.vi	v8, v8, 8
-	vor.vv	v8, v8, v10
-	ret
 func000000000000000f:                   # @func000000000000000f
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v0, v12, 0

@@ -33,6 +33,7 @@ func0000000000000009:                   # @func0000000000000009
 	ret
 func000000000000000a:                   # @func000000000000000a
 	andi	a1, a1, 511
+	addi	a1, a1, -511
 	seqz	a1, a1
 	addw	a0, a0, a1
 	ret
@@ -51,17 +52,17 @@ func0000000000000051:                   # @func0000000000000051
 	sgtz	a1, a1
 	addw	a0, a0, a1
 	ret
-func0000000000000023:                   # @func0000000000000023
+func00000000000000a3:                   # @func00000000000000a3
 	andi	a1, a1, 255
 	sltiu	a1, a1, 127
 	addw	a0, a0, a1
 	ret
-func0000000000000021:                   # @func0000000000000021
+func00000000000000a1:                   # @func00000000000000a1
 	andi	a1, a1, 255
 	sltiu	a1, a1, 127
 	addw	a0, a0, a1
 	ret
-func0000000000000041:                   # @func0000000000000041
+func00000000000000c1:                   # @func00000000000000c1
 	slli	a1, a1, 41
 	lui	a2, 848
 	srli	a1, a1, 41
@@ -69,7 +70,7 @@ func0000000000000041:                   # @func0000000000000041
 	sltu	a1, a2, a1
 	addw	a0, a0, a1
 	ret
-func0000000000000043:                   # @func0000000000000043
+func00000000000000c3:                   # @func00000000000000c3
 	andi	a1, a1, 255
 	sltiu	a1, a1, 63
 	xori	a1, a1, 1

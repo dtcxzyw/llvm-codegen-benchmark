@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/bmcMaj3.c.ll
 ; abc/optimized/dauNonDsd.c.ll
@@ -8,7 +8,6 @@
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/ifDec16.c.ll
 ; abc/optimized/kitGraph.c.ll
-; abc/optimized/lpkMan.c.ll
 ; arrow/optimized/key_map.cc.ll
 ; faiss/optimized/lattice_Zn.cpp.ll
 ; libwebp/optimized/predictor_enc.c.ll

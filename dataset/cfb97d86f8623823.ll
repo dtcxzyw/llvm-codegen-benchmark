@@ -11,8 +11,7 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
-; linux/optimized/attr.ll
+; 2 occurrences:
 ; linux/optimized/intel_display_power.ll
 ; wireshark/optimized/packet-ipmi.c.ll
 ; Function Attrs: nounwind
@@ -32,6 +31,17 @@ entry:
   %2 = icmp slt i32 %1, 2
   %3 = or disjoint i32 %0, 4
   %4 = select i1 %2, i32 %3, i32 49156
+  ret i32 %4
+}
+
+; 1 occurrences:
+; linux/optimized/nfs4proc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000009(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp ult i32 %1, 3
+  %3 = or disjoint i32 %0, 1024
+  %4 = select i1 %2, i32 %3, i32 1024
   ret i32 %4
 }
 

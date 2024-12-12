@@ -3,24 +3,32 @@ func0000000000000001:                   # @func0000000000000001
 	testb	$1, %sil
 	movl	$16, %eax
 	cmoveq	%rdx, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
+	retq
+func0000000000000004:                   # @func0000000000000004
+	andq	$-16, %rdx
+	testb	$1, %sil
+	movl	$32, %eax
+	cmoveq	%rdx, %rax
+	cmpq	%rax, %rdi
+	setb	%al
 	retq
 func0000000000000008:                   # @func0000000000000008
 	movzbl	%dl, %eax
 	xorl	%ecx, %ecx
 	testb	$1, %sil
 	cmoveq	%rax, %rcx
-	cmpq	%rdi, %rcx
-	setb	%al
-	retq
-func0000000000000004:                   # @func0000000000000004
-	andq	$-1048576, %rdx                 # imm = 0xFFF00000
-	testb	$1, %sil
-	movabsq	$1082331758592, %rax            # imm = 0xFC00000000
-	cmoveq	%rdx, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rcx, %rdi
 	seta	%al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	andl	$2044, %edx                     # imm = 0x7FC
+	testb	$1, %sil
+	movl	$2048, %eax                     # imm = 0x800
+	cmoveq	%rdx, %rax
+	cmpq	%rax, %rdi
+	setb	%al
 	retq
 func0000000000000009:                   # @func0000000000000009
 	movb	$63, %al
@@ -28,6 +36,6 @@ func0000000000000009:                   # @func0000000000000009
 	testb	$1, %sil
 	movl	$23, %ecx
 	cmoveq	%rax, %rcx
-	cmpq	%rdi, %rcx
-	setbe	%al
+	cmpq	%rcx, %rdi
+	setae	%al
 	retq

@@ -1,19 +1,18 @@
 
-%"class.openvdb::v11_0::tree::LeafBuffer.2597180" = type <{ %union.anon.187.2597181, %"struct.std::atomic.188.2597045", %"class.tbb::detail::d1::spin_mutex.2597182", [3 x i8] }>
-%union.anon.187.2597181 = type { ptr }
-%"struct.std::atomic.188.2597045" = type { %"struct.std::__atomic_base.189.2597052" }
-%"struct.std::__atomic_base.189.2597052" = type { i32 }
-%"class.tbb::detail::d1::spin_mutex.2597182" = type { %"struct.std::atomic.190.2597183" }
-%"struct.std::atomic.190.2597183" = type { %"struct.std::__atomic_base.191.2597184" }
-%"struct.std::__atomic_base.191.2597184" = type { i8 }
+%"class.openvdb::v11_0::tree::LeafBuffer.2710611" = type <{ %union.anon.187.2710612, %"struct.std::atomic.188.2710476", %"class.tbb::detail::d1::spin_mutex.2710613", [3 x i8] }>
+%union.anon.187.2710612 = type { ptr }
+%"struct.std::atomic.188.2710476" = type { %"struct.std::__atomic_base.189.2710483" }
+%"struct.std::__atomic_base.189.2710483" = type { i32 }
+%"class.tbb::detail::d1::spin_mutex.2710613" = type { %"struct.std::atomic.190.2710614" }
+%"struct.std::atomic.190.2710614" = type { %"struct.std::__atomic_base.191.2710615" }
+%"struct.std::__atomic_base.191.2710615" = type { i8 }
 
-; 39 occurrences:
+; 42 occurrences:
 ; annoy/optimized/annoymodule.ll
 ; casadi/optimized/convexify.cpp.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; casadi/optimized/sqpmethod.cpp.ll
 ; cpython/optimized/obmalloc.ll
-; cpython/optimized/tupleobject.ll
 ; darktable/optimized/avif.c.ll
 ; darktable/optimized/introspection_basecurve.c.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
@@ -23,6 +22,9 @@
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; darktable/optimized/introspection_toneequal.c.ll
 ; llama.cpp/optimized/ggml.c.ll
+; luau/optimized/StringUtils.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; lvgl/optimized/lv_roller.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
@@ -45,6 +47,7 @@
 ; quantlib/optimized/lmmnormaldriftcalculator.ll
 ; quantlib/optimized/pathwiseaccountingengine.ll
 ; quantlib/optimized/qrdecomposition.ll
+; quantlib/optimized/tapcorrelations.ll
 ; redis/optimized/module.ll
 ; stat-rs/optimized/11haqsqxcf11j877.ll
 ; Function Attrs: nounwind
@@ -56,7 +59,7 @@ entry:
   ret ptr %5
 }
 
-; 25 occurrences:
+; 24 occurrences:
 ; ceres/optimized/schur_eliminator_2_2_2.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_3.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_4.cc.ll
@@ -79,24 +82,22 @@ entry:
 ; ceres/optimized/schur_eliminator_4_4_d.cc.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; fmt/optimized/compile-test.cc.ll
-; openblas/optimized/dlatrs3.c.ll
 ; openusd/optimized/restoration.c.ll
 ; qemu/optimized/target_riscv_cpu.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000038(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000003c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %1, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 10688
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 10688
   %5 = getelementptr i8, ptr %4, i64 %3
   ret ptr %5
 }
 
-; 28 occurrences:
+; 26 occurrences:
 ; assimp/optimized/HMPLoader.cpp.ll
 ; flatbuffers/optimized/idl_gen_text.cpp.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; opencv/optimized/dxt.cpp.ll
 ; opencv/optimized/floodfill.cpp.ll
 ; openmpi/optimized/coll_ftagree_earlyreturning.ll
 ; openvdb/optimized/Archive.cc.ll
@@ -119,23 +120,23 @@ entry:
 ; php/optimized/string.ll
 ; raylib/optimized/raudio.c.ll
 ; stb/optimized/stb_truetype.c.ll
-; yalantinglibs/optimized/user_defined_serialization.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %1, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 8
-  %5 = getelementptr nusw %"class.openvdb::v11_0::tree::LeafBuffer.2597180", ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 8
+  %5 = getelementptr nusw %"class.openvdb::v11_0::tree::LeafBuffer.2710611", ptr %4, i64 %3
   ret ptr %5
 }
 
-; 19 occurrences:
+; 20 occurrences:
 ; abc/optimized/timMan.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-ot-cff1-table.cc.ll
 ; harfbuzz/optimized/hb-subset-cff1.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
+; oiio/optimized/targaoutput.cpp.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; openjdk/optimized/hb-ot-cff1-table.ll
 ; openjdk/optimized/hb-ot-font.ll
@@ -150,15 +151,15 @@ entry:
 ; php/optimized/pcre2_study.ll
 ; stb/optimized/stb_herringbone_wang_tile.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %1, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 12
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 12
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   ret ptr %5
 }
 
-; 194 occurrences:
+; 173 occurrences:
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -226,35 +227,25 @@ entry:
 ; gromacs/optimized/dbdsdc.cpp.ll
 ; gromacs/optimized/dgetri.cpp.ll
 ; gromacs/optimized/dlansy.cpp.ll
-; gromacs/optimized/dlarfb.cpp.ll
 ; gromacs/optimized/dlarft.cpp.ll
 ; gromacs/optimized/dlasd2.cpp.ll
-; gromacs/optimized/dlasd3.cpp.ll
 ; gromacs/optimized/dlasdq.cpp.ll
 ; gromacs/optimized/dlasr.cpp.ll
-; gromacs/optimized/dorm2l.cpp.ll
 ; gromacs/optimized/dormql.cpp.ll
 ; gromacs/optimized/dstegr.cpp.ll
 ; gromacs/optimized/dsteqr.cpp.ll
-; gromacs/optimized/dtrti2.cpp.ll
-; gromacs/optimized/dtrtri.cpp.ll
 ; gromacs/optimized/kernel_gpu_ref.cpp.ll
 ; gromacs/optimized/sbdsdc.cpp.ll
 ; gromacs/optimized/settle.cpp.ll
 ; gromacs/optimized/sgetri.cpp.ll
 ; gromacs/optimized/slansy.cpp.ll
-; gromacs/optimized/slarfb.cpp.ll
 ; gromacs/optimized/slarft.cpp.ll
 ; gromacs/optimized/slasd2.cpp.ll
-; gromacs/optimized/slasd3.cpp.ll
 ; gromacs/optimized/slasdq.cpp.ll
 ; gromacs/optimized/slasr.cpp.ll
-; gromacs/optimized/sorm2l.cpp.ll
 ; gromacs/optimized/sormql.cpp.ll
 ; gromacs/optimized/sstegr.cpp.ll
 ; gromacs/optimized/ssteqr.cpp.ll
-; gromacs/optimized/strti2.cpp.ll
-; gromacs/optimized/strtri.cpp.ll
 ; libjpeg-turbo/optimized/tjunittest.c.ll
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
 ; meshlab/optimized/arap.cpp.ll
@@ -273,17 +264,12 @@ entry:
 ; openblas/optimized/dbdsdc.c.ll
 ; openblas/optimized/dbdsvdx.c.ll
 ; openblas/optimized/dgbbrd.c.ll
-; openblas/optimized/dgbcon.c.ll
-; openblas/optimized/dgbtf2.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dgedmd.c.ll
 ; openblas/optimized/dgees.c.ll
 ; openblas/optimized/dgeesx.c.ll
 ; openblas/optimized/dgelsy.c.ll
-; openblas/optimized/dgeqp3.c.ll
 ; openblas/optimized/dgerfs.c.ll
 ; openblas/optimized/dgesvj.c.ll
-; openblas/optimized/dgetri.c.ll
 ; openblas/optimized/dgsvj0.c.ll
 ; openblas/optimized/dgsvj1.c.ll
 ; openblas/optimized/dgtrfs.c.ll
@@ -294,7 +280,6 @@ entry:
 ; openblas/optimized/dlaed8.c.ll
 ; openblas/optimized/dlaein.c.ll
 ; openblas/optimized/dlahr2.c.ll
-; openblas/optimized/dlaqp2rk.c.ll
 ; openblas/optimized/dlaqtr.c.ll
 ; openblas/optimized/dlarfb.c.ll
 ; openblas/optimized/dlarge.c.ll
@@ -304,10 +289,8 @@ entry:
 ; openblas/optimized/dlasdq.c.ll
 ; openblas/optimized/dlasr.c.ll
 ; openblas/optimized/dlaswlq.c.ll
-; openblas/optimized/dlasyf_aa.c.ll
 ; openblas/optimized/dlatrs.c.ll
 ; openblas/optimized/dlatrs3.c.ll
-; openblas/optimized/dorcsd.c.ll
 ; openblas/optimized/dorcsd2by1.c.ll
 ; openblas/optimized/dorgbr.c.ll
 ; openblas/optimized/dorgtsqr.c.ll
@@ -322,9 +305,7 @@ entry:
 ; openblas/optimized/dstedc.c.ll
 ; openblas/optimized/dstemr.c.ll
 ; openblas/optimized/dsteqr.c.ll
-; openblas/optimized/dsygst.c.ll
 ; openblas/optimized/dsyrfs.c.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
 ; openblas/optimized/dsytrf_aa.c.ll
 ; openblas/optimized/dtbrfs.c.ll
 ; openblas/optimized/dtgevc.c.ll
@@ -336,7 +317,6 @@ entry:
 ; openblas/optimized/dtrevc.c.ll
 ; openblas/optimized/dtrevc3.c.ll
 ; openblas/optimized/dtrrfs.c.ll
-; openblas/optimized/dtrsna.c.ll
 ; opencv/optimized/bitmatrixparser.cpp.ll
 ; opencv/optimized/calibinit.cpp.ll
 ; opencv/optimized/demosaicing.cpp.ll
@@ -362,14 +342,25 @@ entry:
   ret ptr %5
 }
 
+; 1 occurrences:
+; yalantinglibs/optimized/user_defined_serialization.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul i64 %1, %2
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 8
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
+  ret ptr %5
+}
+
 ; 2 occurrences:
 ; assimp/optimized/TerragenLoader.cpp.ll
 ; git/optimized/packfile.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000028(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000002c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %1, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 8
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 8
   %5 = getelementptr i16, ptr %4, i64 %3
   ret ptr %5
 }
@@ -436,13 +427,11 @@ entry:
   ret ptr %5
 }
 
-; 43 occurrences:
+; 39 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/darRefact.c.ll
-; abc/optimized/giaSupMin.c.ll
 ; abc/optimized/ifTune.c.ll
 ; abc/optimized/kitDsd.c.ll
-; abc/optimized/lpkMan.c.ll
 ; abc/optimized/resSim.c.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
@@ -478,13 +467,11 @@ entry:
 ; openblas/optimized/dsymm_outcopy.c.ll
 ; opencv/optimized/canny.cpp.ll
 ; opencv/optimized/find_ellipses.cpp.ll
-; openusd/optimized/reconintra.c.ll
-; openusd/optimized/resize.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 8192
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 262144
   %5 = getelementptr nusw i32, ptr %4, i64 %3
   ret ptr %5
 }
@@ -493,15 +480,50 @@ entry:
 ; git/optimized/pack-revindex.ll
 ; git/optimized/packfile.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000002e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %1, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 1032
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 1032
   %5 = getelementptr nusw i8, ptr %4, i64 %3
   ret ptr %5
 }
 
-; 24 occurrences:
+; 1 occurrences:
+; boost/optimized/ipc_reliable_message_queue.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002f(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul nuw i64 %1, %2
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 256
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 2 occurrences:
+; gromacs/optimized/dgetri.cpp.ll
+; gromacs/optimized/sgetri.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000018(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul nsw i64 %1, %2
+  %4 = getelementptr nusw i8, ptr %0, i64 -8
+  %5 = getelementptr double, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 2 occurrences:
+; openusd/optimized/reconintra.c.ll
+; openusd/optimized/resize.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul nsw i64 %1, %2
+  %4 = getelementptr nusw i8, ptr %0, i64 -2
+  %5 = getelementptr nusw i16, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 21 occurrences:
 ; ceres/optimized/schur_eliminator_2_2_2.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_3.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_4.cc.ll
@@ -522,16 +544,43 @@ entry:
 ; ceres/optimized/schur_eliminator_4_4_3.cc.ll
 ; ceres/optimized/schur_eliminator_4_4_4.cc.ll
 ; ceres/optimized/schur_eliminator_4_4_d.cc.ll
-; gromacs/optimized/dgetri.cpp.ll
-; gromacs/optimized/sgetri.cpp.ll
-; openblas/optimized/dgetri.c.ll
 ; openusd/optimized/restoration.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 -8
-  %5 = getelementptr double, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 12
+  %5 = getelementptr i32, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 20 occurrences:
+; ceres/optimized/schur_eliminator_2_2_2.cc.ll
+; ceres/optimized/schur_eliminator_2_2_3.cc.ll
+; ceres/optimized/schur_eliminator_2_2_4.cc.ll
+; ceres/optimized/schur_eliminator_2_2_d.cc.ll
+; ceres/optimized/schur_eliminator_2_3_3.cc.ll
+; ceres/optimized/schur_eliminator_2_3_4.cc.ll
+; ceres/optimized/schur_eliminator_2_3_6.cc.ll
+; ceres/optimized/schur_eliminator_2_3_9.cc.ll
+; ceres/optimized/schur_eliminator_2_3_d.cc.ll
+; ceres/optimized/schur_eliminator_2_4_3.cc.ll
+; ceres/optimized/schur_eliminator_2_4_4.cc.ll
+; ceres/optimized/schur_eliminator_2_4_6.cc.ll
+; ceres/optimized/schur_eliminator_2_4_8.cc.ll
+; ceres/optimized/schur_eliminator_2_4_9.cc.ll
+; ceres/optimized/schur_eliminator_2_4_d.cc.ll
+; ceres/optimized/schur_eliminator_3_3_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_2.cc.ll
+; ceres/optimized/schur_eliminator_4_4_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_4.cc.ll
+; ceres/optimized/schur_eliminator_4_4_d.cc.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul nsw i64 %1, %2
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 272
+  %5 = getelementptr nusw nuw double, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -547,14 +596,37 @@ entry:
   ret ptr %5
 }
 
-; 2 occurrences:
-; cpython/optimized/arraymodule.ll
-; cpython/optimized/difradix2.ll
+; 1 occurrences:
+; opencv/optimized/dxt.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %1, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 32
+  %4 = getelementptr nusw i8, ptr %0, i64 -8
+  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 1 occurrences:
+; openblas/optimized/dlatrs3.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000038(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul nuw nsw i64 %1, %2
+  %4 = getelementptr nusw i8, ptr %0, i64 -8
+  %5 = getelementptr double, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 3 occurrences:
+; cpython/optimized/arraymodule.ll
+; cpython/optimized/difradix2.ll
+; cpython/optimized/tupleobject.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000c(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul i64 %1, %2
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 32
   %5 = getelementptr i8, ptr %4, i64 %3
   ret ptr %5
 }

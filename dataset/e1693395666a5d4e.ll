@@ -109,7 +109,7 @@
 ; slurm/optimized/gres.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000e1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %1, %2
   %4 = zext nneg i32 %3 to i64
@@ -126,7 +126,7 @@ entry:
 ; ncnn/optimized/multiheadattention.cpp.ll
 ; opencv/optimized/bardetect.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %1, %2
   %4 = zext i32 %3 to i64

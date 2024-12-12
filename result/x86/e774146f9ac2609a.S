@@ -1,10 +1,3 @@
-func0000000000000180:                   # @func0000000000000180
-	xorl	%eax, %eax
-	negb	%dl
-	setno	%al
-	addq	%rdi, %rax
-	addq	%rsi, %rax
-	retq
 func000000000000018f:                   # @func000000000000018f
 	xorl	%eax, %eax
 	cmpb	$3, %dl
@@ -32,6 +25,11 @@ func0000000000000020:                   # @func0000000000000020
 	sete	%al
 	addq	%rdi, %rax
 	addq	%rsi, %rax
+	retq
+func0000000000000180:                   # @func0000000000000180
+	leaq	(%rdi,%rsi), %rax
+	cmpb	$1, %dl
+	sbbq	$-1, %rax
 	retq
 func0000000000000100:                   # @func0000000000000100
 	leaq	(%rdi,%rsi), %rax

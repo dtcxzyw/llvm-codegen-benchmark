@@ -1,6 +1,7 @@
 
-; 20 occurrences:
+; 21 occurrences:
 ; abc/optimized/cnfCut.c.ll
+; boost/optimized/rational.ll
 ; clamav/optimized/bytecode_vm.c.ll
 ; cmake/optimized/frm_driver.c.ll
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll

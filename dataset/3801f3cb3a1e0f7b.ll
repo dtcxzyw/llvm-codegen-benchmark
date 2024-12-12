@@ -1,6 +1,13 @@
 
-; 4 occurrences:
+%"class.std::__cxx11::basic_string.2825972" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2825975", i64, %union.anon.32.2825976 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2825975" = type { ptr }
+%union.anon.32.2825976 = type { i64, [8 x i8] }
+
+; 7 occurrences:
 ; cpython/optimized/codeobject.ll
+; gromacs/optimized/dlasq2.cpp.ll
+; gromacs/optimized/slasq2.cpp.ll
+; openblas/optimized/dlasq2.c.ll
 ; postgres/optimized/clog.ll
 ; postgres/optimized/regexp.ll
 ; qemu/optimized/hw_ide_core.c.ll
@@ -8,7 +15,7 @@
 define ptr @func0000000000000004(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 25
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
@@ -26,10 +33,9 @@ entry:
   ret ptr %6
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; abc/optimized/plaMan.c.ll
 ; abc/optimized/plaSimple.c.ll
-; assimp/optimized/BlenderDNA.cpp.ll
 ; icu/optimized/unames.ll
 ; miniaudio/optimized/unity.c.ll
 ; openjdk/optimized/bootstrapInfo.ll
@@ -89,7 +95,7 @@ entry:
   ret ptr %6
 }
 
-; 82 occurrences:
+; 83 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/abcStrash.c.ll
@@ -102,6 +108,7 @@ entry:
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; openexr/optimized/ImfDwaCompressor.cpp.ll
 ; openexr/optimized/internal_dwa.c.ll
+; openspiel/optimized/2048.cc.ll
 ; openspiel/optimized/oware.cc.ll
 ; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/patchTableFactory.cpp.ll
@@ -179,6 +186,18 @@ entry:
   %4 = or disjoint i32 %3, %1
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw i32, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; assimp/optimized/BlenderDNA.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000017(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl nuw i32 %2, 24
+  %4 = or disjoint i32 %1, %3
+  %5 = sext i32 %4 to i64
+  %6 = getelementptr nusw nuw %"class.std::__cxx11::basic_string.2825972", ptr %0, i64 %5
   ret ptr %6
 }
 

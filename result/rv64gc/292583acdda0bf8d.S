@@ -5,7 +5,7 @@ func0000000000000004:                   # @func0000000000000004
 	lui	a1, %hi(.LCPI0_0)
 	fld	fa0, %lo(.LCPI0_0)(a1)
 	fcvt.d.w	fa4, a0
-	fmul.d	fa5, fa4, fa5
+	fmul.d	fa5, fa5, fa4
 	flt.d	a0, fa0, fa5
 	bnez	a0, .LBB0_2
 	fmv.d	fa0, fa5
@@ -13,7 +13,7 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func0000000000000002:                   # @func0000000000000002
 	fcvt.d.w	fa5, a0
-	fmul.d	fa5, fa5, fa0
+	fmul.d	fa5, fa0, fa5
 	fmv.d.x	fa0, zero
 	flt.d	a0, fa5, fa0
 	bnez	a0, .LBB1_2
@@ -22,7 +22,7 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func0000000000000008:                   # @func0000000000000008
 	fcvt.d.w	fa5, a0
-	fmul.d	fa5, fa5, fa0
+	fmul.d	fa5, fa0, fa5
 	fmv.d.x	fa0, zero
 	feq.d	a0, fa5, fa0
 	bnez	a0, .LBB2_2

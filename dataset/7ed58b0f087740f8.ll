@@ -47,7 +47,7 @@
 ; yosys/optimized/torder.ll
 ; zxing/optimized/PDFWriter.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0) #0 {
+define i64 @func0000000000000028(i64 %0) #0 {
 entry:
   %1 = sdiv exact i64 %0, 176
   %2 = and i64 %1, -9223372036854775745

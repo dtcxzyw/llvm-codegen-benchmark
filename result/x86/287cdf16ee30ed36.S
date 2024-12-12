@@ -17,9 +17,9 @@ func0000000000000007:                   # @func0000000000000007
 	jnp	.LBB1_1
 .LBB1_2:                                # %select.true.sink
 	vdivss	%xmm1, %xmm2, %xmm1
-	vmulss	%xmm0, %xmm1, %xmm0
+	vmulss	%xmm1, %xmm0, %xmm0
 	retq
 .LBB1_1:
 	vmovss	.LCPI1_0(%rip), %xmm1           # xmm1 = [NaN,0.0E+0,0.0E+0,0.0E+0]
-	vmulss	%xmm0, %xmm1, %xmm0
+	vmulss	%xmm1, %xmm0, %xmm0
 	retq

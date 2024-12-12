@@ -1,5 +1,5 @@
 
-; 39 occurrences:
+; 40 occurrences:
 ; clamav/optimized/hfsplus.c.ll
 ; clamav/optimized/ishield.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
@@ -39,16 +39,18 @@
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/tls.c.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i16
-  %3 = or disjoint i16 %2, %0
+  %3 = or disjoint i16 %0, %2
   %4 = zext i16 %3 to i64
   ret i64 %4
 }
 
-; 9 occurrences:
+; 10 occurrences:
+; boost/optimized/ipv6_address.ll
 ; libquic/optimized/url_canon_host.cc.ll
 ; stockfish/optimized/tbprobe.ll
 ; wasmtime-rs/optimized/2k8uokn0kx6wa0pk.ll
@@ -62,7 +64,7 @@ entry:
 define i64 @func0000000000000003(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i16
-  %3 = or disjoint i16 %2, %0
+  %3 = or disjoint i16 %0, %2
   %4 = zext nneg i16 %3 to i64
   ret i64 %4
 }

@@ -10,8 +10,10 @@ entry:
   ret i32 %4
 }
 
-; 83 occurrences:
+; 85 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; linux/optimized/tcp_output.ll
 ; minetest/optimized/areastore.cpp.ll

@@ -9,27 +9,17 @@ func00000000000000c3:                   # @func00000000000000c3
 	fle.s	a1, fa1, fa0
 	andn	a0, a0, a1
 	ret
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	flt.s	a1, fa1, fa0
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	flt.s	a1, fa1, fa0
 	sgtz	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000024:                   # @func0000000000000024
-	flt.s	a1, fa0, fa1
-	sltiu	a0, a0, 5
-	and	a0, a0, a1
-	ret
-func0000000000000044:                   # @func0000000000000044
-	flt.s	a1, fa1, fa0
-	sltiu	a0, a0, 16
-	and	a0, a0, a1
-	ret
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	flt.s	a1, fa0, fa1
 	seqz	a0, a0
 	and	a0, a0, a1

@@ -1,5 +1,5 @@
 
-; 70 occurrences:
+; 68 occurrences:
 ; git/optimized/archive-tar.ll
 ; git/optimized/archive.ll
 ; git/optimized/attr.ll
@@ -60,8 +60,6 @@
 ; minetest/optimized/test_random.cpp.ll
 ; minetest/optimized/treegen.cpp.ll
 ; nuttx/optimized/lib_dayofweek.c.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; openusd/optimized/reformat.c.ll
 ; postgres/optimized/ts_typanalyze.ll
 ; protobuf/optimized/unparser.cc.ll
@@ -73,17 +71,19 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0) #0 {
 entry:
-  %1 = mul i32 %0, 1461
-  %2 = add i32 %1, 7012800
-  %3 = sdiv i32 %2, 4
+  %1 = mul i32 %0, 1103515245
+  %2 = add i32 %1, 12345
+  %3 = sdiv i32 %2, 65536
   ret i32 %3
 }
 
-; 9 occurrences:
+; 11 occurrences:
 ; clamav/optimized/rebuildpe.c.ll
 ; icu/optimized/gregocal.ll
-; icu/optimized/gregoimp.ll
 ; libpng/optimized/pngread.c.ll
+; lvgl/optimized/lv_demo_widgets.ll
+; lvgl/optimized/lv_obj_scroll.ll
+; lvgl/optimized/lv_theme_default.ll
 ; openjdk/optimized/pngread.ll
 ; openmpi/optimized/test_overhead.ll
 ; openusd/optimized/reformat.c.ll

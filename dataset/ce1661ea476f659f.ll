@@ -1,9 +1,10 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; linux/optimized/intel_crt.ll
 ; linux/optimized/intel_lvds.ll
 ; linux/optimized/md.ll
 ; llvm/optimized/ASTReader.cpp.ll
+; llvm/optimized/MCWin64EH.cpp.ll
 ; luajit/optimized/lj_debug.ll
 ; luajit/optimized/lj_debug_dyn.ll
 ; qemu/optimized/tcg.c.ll

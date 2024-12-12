@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 19 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; cpython/optimized/pyhash.ll
@@ -19,7 +19,6 @@
 ; ruby/optimized/date_core.ll
 ; ruby/optimized/time.ll
 ; velox/optimized/TimestampConversion.cpp.ll
-; zxing/optimized/MCBitMatrixParser.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0) #0 {
 entry:

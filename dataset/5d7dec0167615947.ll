@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/ui_vnc.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000008a(i64 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 15
   %3 = sdiv i32 %2, 16
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/gmx_energy.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000186(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = sdiv i32 %2, 4
@@ -39,7 +39,7 @@ entry:
 ; opencv/optimized/lkpyramid.cpp.ll
 ; zxing/optimized/ODDataBarExpandedReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000010a(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 5
   %3 = sdiv i32 %2, 2
@@ -51,7 +51,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/calibinit.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000106(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = sdiv i32 %2, 2
@@ -63,7 +63,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/lkpyramid.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i64 %0, i32 %1) #0 {
+define i1 @func000000000000018a(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = sdiv i32 %2, 2

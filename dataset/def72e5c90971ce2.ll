@@ -1,5 +1,5 @@
 
-; 68 occurrences:
+; 69 occurrences:
 ; abc/optimized/superGate.c.ll
 ; box2d/optimized/b2_polygon_shape.cpp.ll
 ; bullet3/optimized/b3PgsJacobiSolver.ll
@@ -26,6 +26,7 @@
 ; gromacs/optimized/trjcat.cpp.ll
 ; gromacs/optimized/update.cpp.ll
 ; gromacs/optimized/velocityscalingtemperaturecoupling.cpp.ll
+; lvgl/optimized/lv_svg_render.ll
 ; meshlab/optimized/decorate_base.cpp.ll
 ; meshlab/optimized/filter_camera.cpp.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
@@ -76,7 +77,7 @@ entry:
   ret i1 %3
 }
 
-; 43 occurrences:
+; 44 occurrences:
 ; bullet3/optimized/btContactProcessing.ll
 ; bullet3/optimized/btGeneric6DofSpring2Constraint.ll
 ; bullet3/optimized/btKinematicCharacterController.ll
@@ -107,6 +108,7 @@ entry:
 ; opencv/optimized/evaluation.cpp.ll
 ; opencv/optimized/rlof_localflow.cpp.ll
 ; opencv/optimized/sift.dispatch.cpp.ll
+; opencv/optimized/simpleflow_demo.cpp.ll
 ; opencv/optimized/subdivision2d.cpp.ll
 ; opencv/optimized/tvl1flow.cpp.ll
 ; openjdk/optimized/ProcessPath.ll
@@ -249,12 +251,15 @@ entry:
   ret i1 %3
 }
 
-; 5 occurrences:
+; 8 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; assimp/optimized/CalcTangentsProcess.cpp.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; gromacs/optimized/setup.cpp.ll
 ; mitsuba3/optimized/imageblock.cpp.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i1 %0, float %1) #0 {
 entry:
@@ -263,7 +268,7 @@ entry:
   ret i1 %3
 }
 
-; 101 occurrences:
+; 105 occurrences:
 ; abc/optimized/sclLibUtil.c.ll
 ; assimp/optimized/AMFImporter_Postprocess.cpp.ll
 ; assimp/optimized/BlenderLoader.cpp.ll
@@ -271,6 +276,7 @@ entry:
 ; assimp/optimized/PbrtExporter.cpp.ll
 ; assimp/optimized/TextureTransform.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
+; boost/optimized/from_chars.ll
 ; bullet3/optimized/b3PgsJacobiSolver.ll
 ; bullet3/optimized/btBatchedConstraints.ll
 ; bullet3/optimized/btConvexHull.ll
@@ -290,6 +296,8 @@ entry:
 ; harfbuzz/optimized/hb-subset-instancer-solver.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; imgui/optimized/imgui.cpp.ll
+; lvgl/optimized/lv_draw_vector.ll
+; lvgl/optimized/lv_matrix.ll
 ; meshlab/optimized/VisibleSet.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
@@ -365,6 +373,7 @@ entry:
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_colmaker.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, float %1) #0 {
 entry:
@@ -388,7 +397,7 @@ entry:
   ret i1 %3
 }
 
-; 11 occurrences:
+; 13 occurrences:
 ; opencv/optimized/bilateral_filter.dispatch.cpp.ll
 ; opencv/optimized/fast_icp.cpp.ll
 ; opencv/optimized/kinfu_frame.cpp.ll
@@ -400,6 +409,8 @@ entry:
 ; xgboost/optimized/quantile.cc.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
 ; yoga/optimized/LayoutResults.cpp.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000e(i1 %0, float %1) #0 {
 entry:

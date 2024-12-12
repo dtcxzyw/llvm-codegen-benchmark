@@ -4,12 +4,12 @@
 ; openjdk/optimized/Any3Byte.ll
 ; openjdk/optimized/ThreeByteBgr.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(i64 %0, i64 %1) #0 {
+define ptr @func000000000000003f(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 3
   %3 = inttoptr i64 %0 to ptr
-  %4 = getelementptr nusw i8, ptr %3, i64 %2
-  %5 = getelementptr nusw i8, ptr %4, i64 1
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %2
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 1
   ret ptr %5
 }
 
@@ -40,12 +40,12 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/optflowgf.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(i64 %0, i64 %1) #0 {
+define ptr @func000000000000002f(i64 %0, i64 %1) #0 {
 entry:
-  %2 = mul i64 %1, 20
+  %2 = mul nuw i64 %1, 20
   %3 = inttoptr i64 %0 to ptr
-  %4 = getelementptr nusw i8, ptr %3, i64 %2
-  %5 = getelementptr nusw i8, ptr %4, i64 4
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %2
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 4
   ret ptr %5
 }
 

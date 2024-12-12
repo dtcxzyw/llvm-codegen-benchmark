@@ -44,6 +44,12 @@ func0000000000000004:                   # @func0000000000000004
 	slli	a1, a1, 52
 	or	a0, a0, a1
 	ret
+func0000000000000037:                   # @func0000000000000037
+	slli	a2, a2, 48
+	or	a0, a0, a1
+	or	a0, a0, a2
+	ori	a0, a0, 25
+	ret
 func0000000000000018:                   # @func0000000000000018
 	slli.uw	a2, a2, 24
 	or	a0, a0, a1
@@ -57,12 +63,6 @@ func0000000000000019:                   # @func0000000000000019
 	or	a0, a0, a2
 	bseti	a0, a0, 62
 	bseti	a0, a0, 63
-	ret
-func0000000000000037:                   # @func0000000000000037
-	slli	a2, a2, 52
-	or	a0, a0, a1
-	or	a0, a0, a2
-	ori	a0, a0, 3
 	ret
 func0000000000000015:                   # @func0000000000000015
 	slli	a2, a2, 32

@@ -21,12 +21,12 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000018(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, %2
   %4 = trunc i64 %3 to i32
   %5 = and i32 %4, 15
-  %6 = icmp ugt i32 %5, %0
+  %6 = icmp samesign ugt i32 %5, %0
   ret i1 %6
 }
 

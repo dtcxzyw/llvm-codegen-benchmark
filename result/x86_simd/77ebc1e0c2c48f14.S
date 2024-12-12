@@ -8,9 +8,9 @@ func0000000000000001:                   # @func0000000000000001
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
-	.long	6                               # 0x6
-.LCPI1_1:
 	.long	4294967294                      # 0xfffffffe
+.LCPI1_1:
+	.long	1                               # 0x1
 func0000000000000000:                   # @func0000000000000000
 	vpandd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm1
 	vpandd	.LCPI1_1(%rip){1to8}, %ymm0, %ymm0

@@ -8,6 +8,15 @@ func0000000000000003:                   # @func0000000000000003
 	andl	$2072, %esi                     # imm = 0x818
 	orl	%esi, %eax
 	retq
+func0000000000000009:                   # @func0000000000000009
+	cmpl	$2, %edx
+	movl	$-832, %ecx                     # imm = 0xFCC0
+	movl	$-16, %eax
+	cmovbl	%ecx, %eax
+	andl	%edi, %eax
+	andl	$15, %esi
+	orl	%esi, %eax
+	retq
 func0000000000000002:                   # @func0000000000000002
 	xorl	%eax, %eax
 	cmpl	$2, %edx

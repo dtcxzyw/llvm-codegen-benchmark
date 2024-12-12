@@ -1,4 +1,4 @@
-func0000000000000058:                   # @func0000000000000058
+func00000000000000b8:                   # @func00000000000000b8
 	addl	$308, %edi                      # imm = 0x134
 	movl	%edi, %eax
 	negl	%eax
@@ -6,7 +6,7 @@ func0000000000000058:                   # @func0000000000000058
 	cmpl	$309, %eax                      # imm = 0x135
 	setae	%al
 	retq
-func0000000000000054:                   # @func0000000000000054
+func00000000000000b4:                   # @func00000000000000b4
 	incl	%edi
 	movl	%edi, %eax
 	negl	%eax

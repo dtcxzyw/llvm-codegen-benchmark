@@ -11,7 +11,7 @@ func0000000000000004:                   # @func0000000000000004
 	orb	%sil, %al
 	retq
 func0000000000000030:                   # @func0000000000000030
-	cmpb	$20, %dl
+	cmpb	$22, %dl
 	setne	%al
 	orb	%dil, %sil
 	orb	%sil, %al
@@ -31,6 +31,12 @@ func0000000000000028:                   # @func0000000000000028
 func0000000000000018:                   # @func0000000000000018
 	testb	%dl, %dl
 	sets	%al
+	orb	%dil, %sil
+	orb	%sil, %al
+	retq
+func0000000000000050:                   # @func0000000000000050
+	cmpb	$3, %dl
+	setb	%al
 	orb	%dil, %sil
 	orb	%sil, %al
 	retq

@@ -1,5 +1,5 @@
 
-; 41 occurrences:
+; 40 occurrences:
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/array_nested.cc.ll
 ; arrow/optimized/array_run_end.cc.ll
@@ -26,7 +26,6 @@
 ; arrow/optimized/hashing.cc.ll
 ; arrow/optimized/int_util.cc.ll
 ; arrow/optimized/kernel.cc.ll
-; arrow/optimized/light_array.cc.ll
 ; arrow/optimized/list_util.cc.ll
 ; arrow/optimized/row_encoder.cc.ll
 ; arrow/optimized/scalar_cast_nested.cc.ll

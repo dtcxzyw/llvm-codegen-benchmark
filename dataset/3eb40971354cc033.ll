@@ -89,7 +89,7 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
 ; opencv/optimized/colored_kinfu.cpp.ll
 ; opencv/optimized/dynafu.cpp.ll
@@ -97,6 +97,7 @@ entry:
 ; opencv/optimized/kinfu.cpp.ll
 ; opencv/optimized/large_kinfu.cpp.ll
 ; opencv/optimized/omnidir.cpp.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000024(i1 %0, double %1) #0 {
 entry:

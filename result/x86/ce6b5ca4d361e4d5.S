@@ -19,6 +19,13 @@ func000000000000000e:                   # @func000000000000000e
 	addl	%eax, %eax
 	andl	$-16, %eax
 	retq
+func0000000000000003:                   # @func0000000000000003
+	movabsq	$-6067343680855748867, %rax     # imm = 0xABCC77118461CEFD
+	movq	%rdi, %rdx
+	mulxq	%rax, %rax, %rax
+	shrq	$26, %rax
+	addl	%eax, %eax
+	retq
 func0000000000000001:                   # @func0000000000000001
 	movabsq	$-6148914691236517205, %rax     # imm = 0xAAAAAAAAAAAAAAAB
 	movq	%rdi, %rdx

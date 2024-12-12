@@ -1,4 +1,4 @@
-func0000000000000094:                   # @func0000000000000094
+func0000000000000124:                   # @func0000000000000124
 	cmpl	$65536, %esi                    # imm = 0x10000
 	setb	%al
 	shlb	$4, %al
@@ -8,7 +8,7 @@ func0000000000000094:                   # @func0000000000000094
 	movzbl	%cl, %eax
 	cmovael	%edx, %eax
 	retq
-func0000000000000118:                   # @func0000000000000118
+func0000000000000638:                   # @func0000000000000638
 	cmpl	$65536, %esi                    # imm = 0x10000
 	setae	%al
 	shlb	$4, %al
@@ -17,4 +17,14 @@ func0000000000000118:                   # @func0000000000000118
 	movzbl	%al, %edx
 	movzbl	%cl, %eax
 	cmovbl	%edx, %eax
+	retq
+func0000000000000524:                   # @func0000000000000524
+	cmpl	$65536, %esi                    # imm = 0x10000
+	setb	%al
+	shlb	$4, %al
+	leal	8(%rax), %ecx
+	cmpl	$16777216, %edi                 # imm = 0x1000000
+	movzbl	%al, %edx
+	movzbl	%cl, %eax
+	cmovael	%edx, %eax
 	retq

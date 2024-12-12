@@ -31,7 +31,7 @@
 define i64 @func0000000000000001(float %0, i64 %1) #0 {
 entry:
   %2 = uitofp nneg i64 %1 to float
-  %3 = fmul float %2, %0
+  %3 = fmul float %0, %2
   %4 = fptoui float %3 to i64
   ret i64 %4
 }
@@ -52,7 +52,7 @@ entry:
 define i64 @func0000000000000000(float %0, i64 %1) #0 {
 entry:
   %2 = uitofp i64 %1 to float
-  %3 = fmul float %2, %0
+  %3 = fmul float %0, %2
   %4 = fptoui float %3 to i64
   ret i64 %4
 }

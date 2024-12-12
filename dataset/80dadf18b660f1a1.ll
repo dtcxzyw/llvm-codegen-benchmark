@@ -3,7 +3,7 @@
 ; spike/optimized/clrs32.ll
 ; spike/optimized/clz32.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000094(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000114(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 1073741824
   %3 = select i1 %2, i32 %0, i32 %1
@@ -21,11 +21,11 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000110(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000630(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %1, 3
+  %2 = icmp samesign ugt i32 %1, 3
   %3 = select i1 %2, i32 %0, i32 %1
-  %4 = icmp ugt i32 %3, 1
+  %4 = icmp samesign ugt i32 %3, 1
   %5 = zext i1 %4 to i32
   ret i32 %5
 }

@@ -3,7 +3,7 @@
 ; openssl/optimized/libcrypto-lib-bn_lib.ll
 ; openssl/optimized/libcrypto-shlib-bn_lib.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 8
   %3 = sext i32 %2 to i64
@@ -20,7 +20,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-bn_gf2m.ll
 ; openssl/optimized/libcrypto-shlib-bn_gf2m.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 64
   %3 = sext i32 %2 to i64
@@ -29,7 +29,7 @@ entry:
   ret i1 %5
 }
 
-; 106 occurrences:
+; 105 occurrences:
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/acbFunc.c.ll
@@ -56,7 +56,6 @@ entry:
 ; abc/optimized/giaMinLut.c.ll
 ; abc/optimized/giaMini.c.ll
 ; abc/optimized/giaSimBase.c.ll
-; abc/optimized/giaSupMin.c.ll
 ; abc/optimized/giaSweep.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/ioReadBlifAig.c.ll
@@ -137,7 +136,7 @@ entry:
 ; verilator/optimized/V3WidthCommit.cpp.ll
 ; verilator/optimized/V3WidthSel.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000066(i64 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 2
   %3 = sext i32 %2 to i64
@@ -161,7 +160,7 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 64
   %3 = sext i32 %2 to i64
@@ -182,7 +181,7 @@ entry:
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 64
   %3 = sext i32 %2 to i64
@@ -196,7 +195,7 @@ entry:
 ; abc/optimized/giaResub2.c.ll
 ; gromacs/optimized/pme_solve.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 2
   %3 = sext i32 %2 to i64

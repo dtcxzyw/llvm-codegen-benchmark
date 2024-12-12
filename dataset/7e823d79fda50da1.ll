@@ -44,7 +44,7 @@ define i32 @func0000000000000002(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
-  %4 = xor i32 %3, %0
+  %4 = xor i32 %0, %3
   ret i32 %4
 }
 
@@ -69,11 +69,11 @@ define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 26
   %3 = trunc i64 %2 to i32
-  %4 = xor i32 %3, %0
+  %4 = xor i32 %0, %3
   ret i32 %4
 }
 
-; 47 occurrences:
+; 48 occurrences:
 ; abc/optimized/abcDress3.c.ll
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absRef.c.ll
@@ -116,6 +116,7 @@ entry:
 ; abc/optimized/pdrTsim2.c.ll
 ; abc/optimized/sbdCore.c.ll
 ; abc/optimized/sbdCut.c.ll
+; abc/optimized/sbdWin.c.ll
 ; abc/optimized/sscClass.c.ll
 ; abc/optimized/sscCore.c.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
@@ -126,7 +127,7 @@ define i32 @func0000000000000003(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 62
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = xor i32 %3, %0
+  %4 = xor i32 %0, %3
   ret i32 %4
 }
 

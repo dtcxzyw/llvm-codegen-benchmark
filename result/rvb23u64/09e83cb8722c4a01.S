@@ -4,12 +4,12 @@ func000000000000000c:                   # @func000000000000000c
 	sub	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	slli.uw	a1, a1, 2
 	sh1add	a1, a1, a1
 	add	a0, a0, a1
 	ret
-func000000000000001e:                   # @func000000000000001e
+func000000000000001f:                   # @func000000000000001f
 	sext.w	a1, a1
 	sh1add	a1, a1, a1
 	sh2add	a0, a1, a0
@@ -36,4 +36,9 @@ func0000000000000014:                   # @func0000000000000014
 func0000000000000004:                   # @func0000000000000004
 	slli.uw	a1, a1, 17
 	sub	a0, a0, a1
+	ret
+func000000000000000e:                   # @func000000000000000e
+	slli.uw	a1, a1, 3
+	sh1add	a1, a1, a1
+	add	a0, a0, a1
 	ret

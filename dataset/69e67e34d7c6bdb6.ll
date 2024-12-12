@@ -9,7 +9,7 @@ entry:
   %3 = sub i8 %1, %2
   %4 = shl nsw i8 %3, 2
   %5 = add nsw i8 %4, 8
-  %6 = or i8 %5, %0
+  %6 = or i8 %0, %5
   ret i8 %6
 }
 
@@ -21,7 +21,7 @@ entry:
   %3 = sub i8 %1, %2
   %4 = shl i8 %3, 2
   %5 = add i8 %4, 8
-  %6 = or i8 %5, %0
+  %6 = or i8 %0, %5
   ret i8 %6
 }
 

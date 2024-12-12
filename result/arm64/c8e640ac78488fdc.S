@@ -1,44 +1,24 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	fcvtzs	v1.2d, v1.2d
-	fcvtzs	v0.2d, v0.2d
-	mvni	v2.4s, #1
-	uzp1	v0.4s, v0.4s, v1.4s
-	add	v0.4s, v0.4s, v2.4s
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
+	fcvtzs	w8, d0
+	sub	w0, w8, #2
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	fcvtzs	v1.2d, v1.2d
-	fcvtzs	v0.2d, v0.2d
-	movi	v2.2d, #0xffffffffffffffff
-	uzp1	v0.4s, v0.4s, v1.4s
-	add	v0.4s, v0.4s, v2.4s
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
+	fcvtzs	w8, d0
+	sub	w0, w8, #1
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	fcvtzs	v1.2d, v1.2d
-	fcvtzs	v0.2d, v0.2d
-	movi	v2.4s, #1
-	uzp1	v0.4s, v0.4s, v1.4s
-	add	v0.4s, v0.4s, v2.4s
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
+	fcvtzs	w8, d0
+	add	w0, w8, #1
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	fcvtzs	v1.2d, v1.2d
-	fcvtzs	v0.2d, v0.2d
-	movi	v2.2d, #0xffffffffffffffff
-	uzp1	v0.4s, v0.4s, v1.4s
-	add	v0.4s, v0.4s, v2.4s
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
+	fcvtzs	w8, d0
+	sub	w0, w8, #1
 	ret
                                         // -- End function

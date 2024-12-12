@@ -17,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; ruby/optimized/function.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nsw i32 %2, -1
@@ -26,7 +26,7 @@ entry:
   ret i1 %5
 }
 
-; 57 occurrences:
+; 90 occurrences:
 ; assimp/optimized/FBXParser.cpp.ll
 ; delta-rs/optimized/2yom0llikg21u9sa.ll
 ; delta-rs/optimized/4say4x9grcidoih4.ll
@@ -84,6 +84,39 @@ entry:
 ; tree-sitter-rs/optimized/4cdqbvjes2p52ply.ll
 ; typst-rs/optimized/49m3cs7hus53ztof.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1qb020ndphzxmvf33d06yonm0.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/2oaoo1au0mgurs9kk2rwi55od.ll
+; zed-rs/optimized/2tseelemdefm2fo39q21ogou2.ll
+; zed-rs/optimized/35jcvzd99rtsbpw1ntju6vgpx.ll
+; zed-rs/optimized/3tqegt9m5oad3ocos87azd3mb.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/4i7kbhd18au0o53jm2t49fldp.ll
+; zed-rs/optimized/4l6caaucwla3801rwx69seh61.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/5e9omh398ijohtd01awo2ssl8.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/5p9dc47ccf9r9dua6dccyemun.ll
+; zed-rs/optimized/5u1fvsvawpjspuq123qb03vz8.ll
+; zed-rs/optimized/5wqsqgdmsa85llhvjdoyyxdbt.ll
+; zed-rs/optimized/7diapbiz116z58qz43ov3nwc9.ll
+; zed-rs/optimized/7for60ncc55q4u0jy3fqr6omg.ll
+; zed-rs/optimized/8yk2p2sb65wc4uirlpwonhoj2.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/9r3tgj00e2sbbyanbvf1oqgns.ll
+; zed-rs/optimized/a1202jdosca6jpmc3o2s7syhq.ll
+; zed-rs/optimized/a3hrzugt78pdexsn4h7d7fddk.ll
+; zed-rs/optimized/ad3qos5opie5ae39m3c4ahrzq.ll
+; zed-rs/optimized/apge5vvp9hwixphamezb75yuv.ll
+; zed-rs/optimized/b0ehx4vbxawrtril1zkysl0b6.ll
+; zed-rs/optimized/bhm2bjcgbdwnubkgels8aniip.ll
+; zed-rs/optimized/bofvfc19lueo6mgf4butzdvgk.ll
+; zed-rs/optimized/bz6p16t2qoqszqvs08hoy0zu5.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
+; zed-rs/optimized/cmxsagf2j897pis1fg8tnwnp3.ll
+; zed-rs/optimized/cp92gkg5707l1e819dflws6md.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
@@ -101,7 +134,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-pem_lib.ll
 ; slurm/optimized/job_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nsw i32 %2, 1
@@ -153,24 +186,12 @@ entry:
 ; llvm/optimized/Verifier.cpp.ll
 ; qemu/optimized/hw_misc_ivshmem.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nuw nsw i32 %2, 1
   %4 = trunc i64 %0 to i32
   %5 = icmp eq i32 %3, %4
-  ret i1 %5
-}
-
-; 1 occurrences:
-; qemu/optimized/system_physmem.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, -1
-  %4 = trunc nuw nsw i64 %0 to i32
-  %5 = icmp ult i32 %3, %4
   ret i1 %5
 }
 
@@ -182,7 +203,7 @@ entry:
 ; openjdk/optimized/c1_CodeStubs_x86.ll
 ; zxing/optimized/ReedSolomonDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nsw i32 %2, 5
@@ -195,7 +216,7 @@ entry:
 ; openjdk/optimized/xBarrierSetC2.ll
 ; openjdk/optimized/zBarrierSetC2.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002a4(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000544(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = add nuw i32 %2, 1
@@ -217,7 +238,7 @@ entry:
 ; pybind11/optimized/test_type_caster_pyobject_ptr.cpp.ll
 ; zxing/optimized/ReedSolomonDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nsw i32 %2, -2
@@ -231,7 +252,7 @@ entry:
 ; wasmtime-rs/optimized/4d0kq0wivbp8j3p.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000281(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000501(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = add i32 %2, 1
@@ -244,7 +265,7 @@ entry:
 ; gromacs/optimized/forcetable.cpp.ll
 ; verilator/optimized/V3String.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nsw i32 %2, -64
@@ -257,7 +278,7 @@ entry:
 ; rust-analyzer-rs/optimized/178ko0g73oimi4oy.ll
 ; rust-analyzer-rs/optimized/m5y7tkywgbwlx2e.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000288(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000508(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = add i32 %2, 1
@@ -269,7 +290,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/ioReadBlifMv.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000376(i64 %0, i64 %1) #0 {
+define i1 @func00000000000006e6(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = add nuw nsw i32 %2, 1
@@ -281,7 +302,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/extraUtilEnum.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
@@ -293,7 +314,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/cgtCore.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000201(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = add i32 %2, 1
@@ -305,7 +326,7 @@ entry:
 ; 1 occurrences:
 ; slurm/optimized/gres.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000106(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -1
@@ -317,7 +338,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/udf.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000201(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000401(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = add i32 %2, -1
@@ -329,7 +350,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/RegAllocPBQP.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
@@ -341,7 +362,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000010a(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -1
@@ -353,7 +374,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nuw nsw i32 %2, 1
@@ -362,10 +383,11 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; cvc5/optimized/regexp_elim.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000204(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000404(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = add i32 %2, 1
@@ -379,7 +401,7 @@ entry:
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; zxing/optimized/QREncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000009a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000012a(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nsw i32 %2, -2
@@ -405,7 +427,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/specbond.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000066(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nuw nsw i32 %2, 1
@@ -421,7 +443,7 @@ entry:
 ; openspiel/optimized/outcome_sampling_mccfr.cc.ll
 ; openspiel/optimized/spiel_bots.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000208(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000408(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = add i32 %2, 1
@@ -434,7 +456,7 @@ entry:
 ; openmpi/optimized/ess_base_bootstrap.ll
 ; openmpi/optimized/preg_native.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000236(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000466(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = add nuw nsw i32 %2, 1
@@ -443,12 +465,24 @@ entry:
   ret i1 %5
 }
 
+; 1 occurrences:
+; cvc5/optimized/regexp_elim.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000441(i64 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw i64 %1 to i32
+  %3 = add nuw i32 %2, 1
+  %4 = trunc i64 %0 to i32
+  %5 = icmp eq i32 %3, %4
+  ret i1 %5
+}
+
 ; 3 occurrences:
 ; proj/optimized/cct.cpp.ll
 ; proj/optimized/gie.cpp.ll
 ; redis/optimized/cluster_legacy.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000331(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000661(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = add nuw nsw i32 %2, 1
@@ -460,7 +494,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/persistence.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000096(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000126(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nsw i32 %2, -4
@@ -472,7 +506,7 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/cmMakefile.cxx.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000181(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -1
@@ -484,7 +518,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/_testinternalcapi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000311(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000621(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = add nsw i32 %2, -96

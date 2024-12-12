@@ -44,10 +44,10 @@
 ; velox/optimized/Slice.cpp.ll
 ; velox/optimized/Subscript.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i1 %1) #0 {
 entry:
   %2 = sext i1 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = icmp slt i32 %3, 2
   ret i1 %4
 }
@@ -88,7 +88,7 @@ entry:
 define i1 @func000000000000000a(i32 %0, i1 %1) #0 {
 entry:
   %2 = sext i1 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = icmp sgt i32 %3, 0
   ret i1 %4
 }
@@ -103,17 +103,20 @@ entry:
 define i1 @func0000000000000008(i32 %0, i1 %1) #0 {
 entry:
   %2 = sext i1 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = icmp ugt i32 %3, 22
   ret i1 %4
 }
 
-; 403 occurrences:
+; 406 occurrences:
 ; abc/optimized/amapLiberty.c.ll
 ; abc/optimized/cbaReadVer.c.ll
 ; abc/optimized/extraUtilEnum.c.ll
 ; abc/optimized/ifTune.c.ll
 ; abc/optimized/wlcReadVer.c.ll
+; boost/optimized/authority_view.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/url_view_base.ll
 ; cmake/optimized/cmIfCommand.cxx.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; cvc5/optimized/ackermann.cpp.ll
@@ -513,16 +516,16 @@ entry:
 ; zxing/optimized/PDFReader.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i1 %1) #0 {
 entry:
-  %2 = sext i1 %1 to i32
-  %3 = sub i32 0, %0
-  %4 = icmp eq i32 %2, %3
-  ret i1 %4
+  %.neg = zext i1 %1 to i32
+  %2 = icmp eq i32 %0, %.neg
+  ret i1 %2
 }
 
-; 42 occurrences:
+; 43 occurrences:
 ; arrow/optimized/tz.cpp.ll
+; boost/optimized/buffer_piece_border.ll
 ; cmake/optimized/mprintf.c.ll
 ; cmake/optimized/xmlparse.c.ll
 ; curl/optimized/libcurl_la-mprintf.ll
@@ -565,10 +568,10 @@ entry:
 ; velox/optimized/tz.cpp.ll
 ; wireshark/optimized/packet-6lowpan.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i1 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i1 %1) #0 {
 entry:
   %2 = sext i1 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = icmp sgt i32 %3, -1
   ret i1 %4
 }
@@ -621,10 +624,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0, i1 %1) #0 {
 entry:
-  %2 = sext i1 %1 to i32
-  %3 = sub i32 0, %0
-  %4 = icmp eq i32 %2, %3
-  ret i1 %4
+  %.neg = zext i1 %1 to i32
+  %2 = icmp eq i32 %0, %.neg
+  ret i1 %2
 }
 
 ; 63 occurrences:
@@ -692,12 +694,11 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i1 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i1 %1) #0 {
 entry:
-  %2 = sext i1 %1 to i32
-  %3 = sub i32 0, %0
-  %4 = icmp ne i32 %2, %3
-  ret i1 %4
+  %.neg = zext i1 %1 to i32
+  %2 = icmp ne i32 %0, %.neg
+  ret i1 %2
 }
 
 ; 30 occurrences:
@@ -732,10 +733,10 @@ entry:
 ; libquic/optimized/dtoa.cc.ll
 ; php/optimized/zend_strtod.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000028(i32 %0, i1 %1) #0 {
 entry:
   %2 = sext i1 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = icmp ugt i32 %3, 22
   ret i1 %4
 }
@@ -753,8 +754,28 @@ entry:
 define i1 @func0000000000000006(i32 %0, i1 %1) #0 {
 entry:
   %2 = sext i1 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = icmp slt i32 %3, 7
+  ret i1 %4
+}
+
+; 10 occurrences:
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
+; cvc5/optimized/bv_inverter.cpp.ll
+; cvc5/optimized/sequences_rewriter.cpp.ll
+; cvc5/optimized/template_infer.cpp.ll
+; cvc5/optimized/term_pools.cpp.ll
+; cvc5/optimized/theory_bv_rewriter.cpp.ll
+; postgres/optimized/d2s.ll
+; postgres/optimized/d2s_shlib.ll
+; postgres/optimized/d2s_srv.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i32 %0, i1 %1) #0 {
+entry:
+  %2 = sext i1 %1 to i32
+  %3 = add nsw i32 %0, %2
+  %4 = icmp ult i32 %3, 2
   ret i1 %4
 }
 
@@ -769,7 +790,7 @@ entry:
 define i1 @func0000000000000004(i32 %0, i1 %1) #0 {
 entry:
   %2 = sext i1 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = icmp ult i32 %3, 2
   ret i1 %4
 }
@@ -782,27 +803,8 @@ entry:
 define i1 @func000000000000000c(i32 %0, i1 %1) #0 {
 entry:
   %2 = sext i1 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = icmp ne i32 %3, 4
-  ret i1 %4
-}
-
-; 9 occurrences:
-; cvc5/optimized/bv_inverter.cpp.ll
-; cvc5/optimized/sequences_rewriter.cpp.ll
-; cvc5/optimized/template_infer.cpp.ll
-; cvc5/optimized/term_pools.cpp.ll
-; cvc5/optimized/theory_bv_rewriter.cpp.ll
-; openusd/optimized/rotation.cpp.ll
-; postgres/optimized/d2s.ll
-; postgres/optimized/d2s_shlib.ll
-; postgres/optimized/d2s_srv.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i1 %1) #0 {
-entry:
-  %2 = sext i1 %1 to i32
-  %3 = add nsw i32 %2, %0
-  %4 = icmp ult i32 %3, 3
   ret i1 %4
 }
 

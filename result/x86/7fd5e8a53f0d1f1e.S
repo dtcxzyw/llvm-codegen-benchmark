@@ -10,9 +10,15 @@ func0000000000000001:                   # @func0000000000000001
 	orb	%dil, %sil
 	orb	%sil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
-	notl	%edx
-	testb	$60, %dl
+func0000000000000018:                   # @func0000000000000018
+	andl	$16515072, %edx                 # imm = 0xFC0000
+	cmpl	$12779521, %edx                 # imm = 0xC30001
+	setae	%al
+	orb	%dil, %sil
+	orb	%sil, %al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	testl	$65520, %edx                    # imm = 0xFFF0
 	sete	%al
 	orb	%dil, %sil
 	orb	%sil, %al

@@ -18,13 +18,12 @@ entry:
   ret i64 %4
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; libquic/optimized/curve25519.c.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; llvm/optimized/DLangDemangle.cpp.ll
-; luau/optimized/loslib.cpp.ll
 ; openssl/optimized/libcrypto-lib-curve25519.ll
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
 ; readerwriterqueue/optimized/bench.cpp.ll
@@ -33,12 +32,12 @@ entry:
 define i64 @func0000000000000035(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 470296
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = add nsw i64 %3, 1048576
   ret i64 %4
 }
 
-; 189 occurrences:
+; 190 occurrences:
 ; abseil-cpp/optimized/civil_time.cc.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time.cc.ll
@@ -46,6 +45,7 @@ entry:
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; abseil-cpp/optimized/time_zone_libc.cc.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/stream_encoder_mt.c.ll
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_rgbcurve.c.ll
@@ -232,7 +232,7 @@ entry:
 define i64 @func0000000000000015(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, -997805
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = add nsw i64 %3, 1048576
   ret i64 %4
 }
@@ -247,7 +247,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, -683901
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = add nsw i64 %3, 1048576
   ret i64 %4
 }
@@ -263,7 +263,7 @@ entry:
 define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 470296
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = add nsw i64 %3, 1048576
   ret i64 %4
 }
@@ -298,7 +298,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 1000
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = add i64 %3, 50
   ret i64 %4
 }
@@ -337,7 +337,7 @@ entry:
 define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 3
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = add i64 %3, 10
   ret i64 %4
 }
@@ -351,7 +351,7 @@ entry:
 define i64 @func0000000000000030(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 40
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = add i64 %3, 2
   ret i64 %4
 }

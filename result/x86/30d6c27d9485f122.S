@@ -9,7 +9,7 @@ func0000000000000005:                   # @func0000000000000005
 	cmpq	%rdi, %rsi
 	setbe	%al
 	retq
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	addq	%rdx, %rsi
 	addq	%rdi, %rsi
 	setb	%al

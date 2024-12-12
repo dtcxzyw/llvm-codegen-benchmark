@@ -1,22 +1,9 @@
 
-; 3 occurrences:
-; linux/optimized/intel_snps_phy.ll
-; openssl/optimized/libssl-lib-statem_clnt.ll
-; openssl/optimized/libssl-shlib-statem_clnt.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000198(i32 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 456
-  %3 = or i32 %2, %0
-  %4 = icmp ne i32 %3, 0
-  ret i1 %4
-}
-
 ; 2 occurrences:
 ; linux/optimized/hid-input.ll
 ; qemu/optimized/hw_net_tulip.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000102(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 262144
   %3 = icmp eq i32 %2, 0
@@ -31,7 +18,7 @@ entry:
 ; slurm/optimized/fed_mgr.ll
 ; slurm/optimized/slurm_protocol_defs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000302(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = icmp ne i32 %2, 0
@@ -49,7 +36,7 @@ entry:
 ; slurm/optimized/node_mgr.ll
 ; wireshark/optimized/pcapng.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000042(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 8388608
   %3 = icmp eq i32 %2, 0
@@ -61,7 +48,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_dp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000048(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 16777216
   %3 = icmp eq i32 %2, 0

@@ -12,6 +12,13 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	%rdi, %rax
 	setb	%al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	testb	$1, %sil
+	movl	$4294967237, %eax               # imm = 0xFFFFFFC5
+	cmoveq	%rdx, %rax
+	cmpq	%rdi, %rax
+	setb	%al
+	retq
 func0000000000000001:                   # @func0000000000000001
 	xorl	%eax, %eax
 	testb	$1, %sil
@@ -38,6 +45,20 @@ func000000000000000c:                   # @func000000000000000c
 	cmoveq	%rdx, %rax
 	cmpq	%rdi, %rax
 	setne	%al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	testb	$1, %sil
+	movl	$1, %eax
+	cmoveq	%rdx, %rax
+	cmpq	%rdi, %rax
+	seta	%al
+	retq
+func0000000000000009:                   # @func0000000000000009
+	xorl	%eax, %eax
+	testb	$1, %sil
+	cmoveq	%rdx, %rax
+	cmpq	%rdi, %rax
+	setae	%al
 	retq
 func0000000000000005:                   # @func0000000000000005
 	cmpq	%rdi, %rdx

@@ -10,6 +10,12 @@ func000000000000000b:                   # @func000000000000000b
 	or	a0, a0, a1
 	zext.h	a0, a0
 	ret
+func000000000000000a:                   # @func000000000000000a
+	srli	a1, a1, 3
+	slli	a1, a1, 11
+	or	a0, a0, a1
+	zext.h	a0, a0
+	ret
 func0000000000000000:                   # @func0000000000000000
 	srli	a1, a1, 4
 	slli	a1, a1, 6

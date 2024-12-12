@@ -1,11 +1,8 @@
 func000000000000001c:                   // @func000000000000001c
 // %bb.0:                               // %entry
-	movi	v4.2d, #0x000000000000ff
-	shl	v2.2d, v2.2d, #3
-	shl	v3.2d, v3.2d, #3
-	ushl	v3.2d, v4.2d, v3.2d
-	ushl	v2.2d, v4.2d, v2.2d
-	orr	v0.16b, v2.16b, v0.16b
-	orr	v1.16b, v3.16b, v1.16b
+	lsl	x8, x1, #3
+	mov	w9, #255                        // =0xff
+	lsl	x8, x9, x8
+	orr	x0, x8, x0
 	ret
                                         // -- End function

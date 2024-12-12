@@ -40,7 +40,9 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 6 occurrences:
+; cmake/optimized/lzma_encoder_optimum_normal.c.ll
+; linux/optimized/control.ll
 ; linux/optimized/mmconfig-shared.ll
 ; llvm/optimized/APINotesReader.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll

@@ -1,5 +1,5 @@
 
-; 178 occurrences:
+; 177 occurrences:
 ; abc/optimized/aigCuts.c.ll
 ; abc/optimized/cnfCut.c.ll
 ; abc/optimized/cswCut.c.ll
@@ -27,7 +27,6 @@
 ; folly/optimized/IPAddressV4.cpp.ll
 ; folly/optimized/IPAddressV6.cpp.ll
 ; folly/optimized/Singleton.cpp.ll
-; icu/optimized/ucnv_lmb.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
 ; lief/optimized/BinaryParser.cpp.ll
@@ -179,6 +178,41 @@
 ; vcpkg/optimized/versiondeserializers.cpp.ll
 ; vcpkg/optimized/versions.cpp.ll
 ; Function Attrs: nounwind
+define ptr @func000000000000000b(i64 %0, ptr %1, i8 %2) #0 {
+entry:
+  %3 = sext i8 %2 to i64
+  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %0
+  ret ptr %5
+}
+
+; 1 occurrences:
+; fmt/optimized/format-impl-test.cc.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000f(i64 %0, ptr %1, i8 %2) #0 {
+entry:
+  %3 = sext i8 %2 to i64
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %0
+  ret ptr %5
+}
+
+; 2 occurrences:
+; abc/optimized/abcExact.c.ll
+; arrow/optimized/builder.cc.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000000(i64 %0, ptr %1, i8 %2) #0 {
+entry:
+  %3 = sext i8 %2 to i64
+  %4 = getelementptr ptr, ptr %1, i64 %3
+  %5 = getelementptr ptr, ptr %4, i64 %0
+  ret ptr %5
+}
+
+; 2 occurrences:
+; abc/optimized/dauCanon.c.ll
+; openusd/optimized/mvref_common.c.ll
+; Function Attrs: nounwind
 define ptr @func000000000000000a(i64 %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i64
@@ -187,27 +221,25 @@ entry:
   ret ptr %5
 }
 
-; 3 occurrences:
-; abc/optimized/aigCuts.c.ll
-; abc/optimized/cswCut.c.ll
+; 1 occurrences:
 ; openusd/optimized/decodetxb.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(i64 %0, ptr %1, i8 %2) #0 {
+define ptr @func0000000000000003(i64 %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i64
-  %4 = getelementptr i32, ptr %1, i64 %3
-  %5 = getelementptr nusw i32, ptr %4, i64 %0
+  %4 = getelementptr [5 x i16], ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i16, ptr %4, i64 %0
   ret ptr %5
 }
 
 ; 1 occurrences:
-; arrow/optimized/builder.cc.ll
+; icu/optimized/ucnv_lmb.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000000(i64 %0, ptr %1, i8 %2) #0 {
+define ptr @func000000000000000e(i64 %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i64
-  %4 = getelementptr i32, ptr %1, i64 %3
-  %5 = getelementptr i32, ptr %4, i64 %0
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw i8, ptr %4, i64 %0
   ret ptr %5
 }
 

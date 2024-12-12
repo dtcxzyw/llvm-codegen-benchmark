@@ -1,5 +1,5 @@
 
-; 44 occurrences:
+; 45 occurrences:
 ; assimp/optimized/MDLMaterialLoader.cpp.ll
 ; clamav/optimized/phishcheck.c.ll
 ; clamav/optimized/rtf.c.ll
@@ -22,6 +22,7 @@
 ; llvm/optimized/MasmParser.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
+; lvgl/optimized/lv_refr.ll
 ; meshlab/optimized/io_bre.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; opencv/optimized/color_rgb.dispatch.cpp.ll

@@ -11,6 +11,18 @@ func0000000000000000:                   # @func0000000000000000
 	addi	a0, a0, 3
 	vnmsub.vx	v8, a0, v10
 	ret
+func0000000000000005:                   # @func0000000000000005
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vv	v8, v8, v10
+	lui	a0, 559241
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vnsrl.wi	v10, v8, 0
+	addi	a0, a0, -1911
+	vmulhu.vx	v8, v10, a0
+	vsrl.vi	v8, v8, 5
+	li	a0, 60
+	vnmsub.vx	v8, a0, v10
+	ret
 func000000000000000c:                   # @func000000000000000c
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v8, v10
@@ -47,18 +59,6 @@ func0000000000000002:                   # @func0000000000000002
 	li	a0, 3
 	vnmsub.vx	v8, a0, v10
 	ret
-func0000000000000005:                   # @func0000000000000005
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vv	v8, v8, v10
-	lui	a0, 559241
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vnsrl.wi	v10, v8, 0
-	addi	a0, a0, -1911
-	vmulhu.vx	v8, v10, a0
-	vsrl.vi	v8, v8, 5
-	li	a0, 60
-	vnmsub.vx	v8, a0, v10
-	ret
 func000000000000000e:                   # @func000000000000000e
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v8, v10
@@ -93,17 +93,5 @@ func000000000000000f:                   # @func000000000000000f
 	vmulhu.vx	v8, v10, a0
 	vsrl.vi	v8, v8, 1
 	li	a0, 3
-	vnmsub.vx	v8, a0, v10
-	ret
-func0000000000000007:                   # @func0000000000000007
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vv	v8, v8, v10
-	lui	a0, 559241
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vnsrl.wi	v10, v8, 0
-	addi	a0, a0, -1911
-	vmulhu.vx	v8, v10, a0
-	vsrl.vi	v8, v8, 5
-	li	a0, 60
 	vnmsub.vx	v8, a0, v10
 	ret

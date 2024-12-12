@@ -1,11 +1,10 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; cvc5/optimized/justification_strategy.cpp.ll
 ; cvc5/optimized/transition_inference.cpp.ll
 ; folly/optimized/SocketOptionMap.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/SelectionDAGISel.cpp.ll
@@ -20,11 +19,12 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; box2d/optimized/b2_world.cpp.ll
 ; llvm/optimized/PPMacroExpansion.cpp.ll
 ; openusd/optimized/refinement.cpp.ll
 ; slurm/optimized/node_features_knl_generic.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i1 %1, i16 %2) #0 {
 entry:

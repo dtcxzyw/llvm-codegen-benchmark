@@ -12,7 +12,7 @@ func0000000000000030:                   # @func0000000000000030
 	orb	%dil, %sil
 	orb	%sil, %al
 	retq
-func00000000000000b0:                   # @func00000000000000b0
+func0000000000000130:                   # @func0000000000000130
 	movl	%edi, %eax
 	shrl	$19, %edx
 	andl	$1, %edx

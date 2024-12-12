@@ -1,5 +1,5 @@
 
-; 212 occurrences:
+; 217 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcGen.c.ll
@@ -10,6 +10,14 @@
 ; abc/optimized/ivyHaig.c.ll
 ; abc/optimized/mfsResub.c.ll
 ; abc/optimized/pdrTsim.c.ll
+; boost/optimized/area.ll
+; boost/optimized/console_buffer.ll
+; boost/optimized/cstdio.ll
+; boost/optimized/test_codecvt.ll
+; boost/optimized/test_convert.ll
+; boost/optimized/test_fs.ll
+; boost/optimized/test_fstream.ll
+; boost/optimized/test_stackstring.ll
 ; c3c/optimized/diagnostics.c.ll
 ; casadi/optimized/idas.c.ll
 ; clamav/optimized/pathfn.cpp.ll
@@ -53,13 +61,11 @@
 ; linux/optimized/intel_migrate.ll
 ; linux/optimized/ip6_output.ll
 ; linux/optimized/ip_output.ll
-; linux/optimized/isadma.ll
 ; linux/optimized/kobject_uevent.ll
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/pcm_misc.ll
 ; linux/optimized/sysctl_net_ipv4.ll
 ; linux/optimized/vt.ll
-; linux/optimized/xattr.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64TargetMachine.cpp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
@@ -84,7 +90,6 @@
 ; llvm/optimized/MsgPackDocumentYAML.cpp.ll
 ; llvm/optimized/Multilib.cpp.ll
 ; llvm/optimized/ParseTentative.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/RecordLayoutBuilder.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
@@ -100,6 +105,7 @@
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_textarea.ll
 ; minetest/optimized/chat.cpp.ll
 ; minetest/optimized/mapgen_v5.cpp.ll
 ; node/optimized/core.ll
@@ -120,10 +126,8 @@
 ; openjdk/optimized/compilationPolicy.ll
 ; openjdk/optimized/type.ll
 ; openjdk/optimized/vectorIntrinsics.ll
-; openmpi/optimized/libmpi_c_profile_la-testall.ll
 ; openmpi/optimized/libmpi_c_profile_la-testany.ll
 ; openmpi/optimized/libmpi_c_profile_la-waitany.ll
-; openmpi/optimized/libmpi_c_profile_la-waitsome.ll
 ; openmpi/optimized/pmix_server_ops.ll
 ; openmpi/optimized/sharedfp_individual.ll
 ; openspiel/optimized/pathfinding.cc.ll
@@ -146,7 +150,6 @@
 ; postgres/optimized/json.ll
 ; postgres/optimized/jsonb.ll
 ; postgres/optimized/jsonb_gin.ll
-; postgres/optimized/jsonb_op.ll
 ; postgres/optimized/jsonb_util.ll
 ; postgres/optimized/jsonfuncs.ll
 ; postgres/optimized/jsonpath_exec.ll
@@ -170,7 +173,6 @@
 ; postgres/optimized/tsvector_op.ll
 ; postgres/optimized/varchar.ll
 ; postgres/optimized/varlena.ll
-; proxygen/optimized/HQUtils.cpp.ll
 ; qemu/optimized/block_block-copy.c.ll
 ; qemu/optimized/block_file-posix.c.ll
 ; qemu/optimized/fdt.c.ll
@@ -182,7 +184,6 @@
 ; ruby/optimized/util.ll
 ; ruby/optimized/vm.ll
 ; sentencepiece/optimized/trainer_interface.cc.ll
-; simdjson/optimized/simdjson.cpp.ll
 ; slurm/optimized/job_test.ll
 ; slurm/optimized/slurmscriptd.ll
 ; spike/optimized/fdt.ll
@@ -211,6 +212,10 @@
 ; z3/optimized/pb_solver.cpp.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
 ; z3/optimized/theory_str_regex.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/7od02cvs02zg2t1jcuk4h4evv.ll
+; zed-rs/optimized/89f8nno15240ug8tk8i1phh9j.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
 ; zxing/optimized/ODReader.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i1 %1, i1 %2) #0 {

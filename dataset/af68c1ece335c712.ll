@@ -24,7 +24,7 @@ entry:
   ret i32 %1
 }
 
-; 29 occurrences:
+; 24 occurrences:
 ; gromacs/optimized/dgesdd.cpp.ll
 ; gromacs/optimized/dlasd8.cpp.ll
 ; gromacs/optimized/dlasda.cpp.ll
@@ -38,7 +38,6 @@ entry:
 ; openblas/optimized/dgeesx.c.ll
 ; openblas/optimized/dgegs.c.ll
 ; openblas/optimized/dgegv.c.ll
-; openblas/optimized/dgesdd.c.ll
 ; openblas/optimized/dgesvd.c.ll
 ; openblas/optimized/dgges.c.ll
 ; openblas/optimized/dgges3.c.ll
@@ -47,11 +46,7 @@ entry:
 ; openblas/optimized/dggev3.c.ll
 ; openblas/optimized/dggevx.c.ll
 ; openblas/optimized/dlasd8.c.ll
-; openblas/optimized/dsyevd.c.ll
-; openblas/optimized/dsyevr.c.ll
-; openblas/optimized/dsyevr_2stage.c.ll
 ; openblas/optimized/dsyevx.c.ll
-; openblas/optimized/dsyevx_2stage.c.ll
 ; openusd/optimized/tessellation.cpp.ll
 ; yosys/optimized/subcircuit.ll
 ; Function Attrs: nounwind
@@ -62,12 +57,9 @@ entry:
   ret i32 %1
 }
 
-; 12 occurrences:
-; gromacs/optimized/dlasd0.cpp.ll
-; gromacs/optimized/slasd0.cpp.ll
+; 9 occurrences:
 ; llvm/optimized/COFFImportFile.cpp.ll
 ; openblas/optimized/dbbcsd.c.ll
-; openblas/optimized/dgesdd.c.ll
 ; openblas/optimized/dlaed1.c.ll
 ; openblas/optimized/dlaed7.c.ll
 ; openblas/optimized/dlalsa.c.ll
@@ -83,9 +75,8 @@ entry:
   ret i32 %1
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; imgui/optimized/imgui_draw.cpp.ll
-; linux/optimized/mpih-mul.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0) #0 {
 entry:

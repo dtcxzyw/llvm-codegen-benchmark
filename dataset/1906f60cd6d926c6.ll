@@ -1,5 +1,5 @@
 
-; 118 occurrences:
+; 108 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/cecCorr.c.ll
 ; abc/optimized/cecSeq.c.ll
@@ -15,21 +15,13 @@
 ; faiss/optimized/lattice_Zn.cpp.ll
 ; graphviz/optimized/graph_generator.c.ll
 ; gromacs/optimized/dbdsdc.cpp.ll
-; gromacs/optimized/dgetrf.cpp.ll
-; gromacs/optimized/dlasd3.cpp.ll
 ; gromacs/optimized/dlasda.cpp.ll
-; gromacs/optimized/dlatrd.cpp.ll
 ; gromacs/optimized/dorgbr.cpp.ll
-; gromacs/optimized/dsytd2.cpp.ll
 ; gromacs/optimized/gmx_arpack.cpp.ll
 ; gromacs/optimized/gmx_sham.cpp.ll
 ; gromacs/optimized/sbdsdc.cpp.ll
-; gromacs/optimized/sgetrf.cpp.ll
-; gromacs/optimized/slasd3.cpp.ll
 ; gromacs/optimized/slasda.cpp.ll
-; gromacs/optimized/slatrd.cpp.ll
 ; gromacs/optimized/sorgbr.cpp.ll
-; gromacs/optimized/ssytd2.cpp.ll
 ; libwebp/optimized/anim_encode.c.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
@@ -45,7 +37,6 @@
 ; openblas/optimized/dbdsdc.c.ll
 ; openblas/optimized/dgbbrd.c.ll
 ; openblas/optimized/dgesvj.c.ll
-; openblas/optimized/dgetsqrhrt.c.ll
 ; openblas/optimized/dgghd3.c.ll
 ; openblas/optimized/dhgeqz.c.ll
 ; openblas/optimized/dlahqr.c.ll
@@ -65,7 +56,6 @@
 ; openblas/optimized/dlasyf_rook.c.ll
 ; openblas/optimized/dlatrd.c.ll
 ; openblas/optimized/dorbdb.c.ll
-; openblas/optimized/dorcsd.c.ll
 ; openblas/optimized/dorm22.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; openblas/optimized/dsbtrd.c.ll
@@ -122,21 +112,18 @@
 define i64 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   %6 = sext i32 %5 to i64
   ret i64 %6
 }
 
-; 21 occurrences:
+; 18 occurrences:
 ; abc/optimized/saigConstr2.c.ll
 ; gromacs/optimized/dlarft.cpp.ll
 ; gromacs/optimized/slarft.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
-; openblas/optimized/dgbtf2.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dgejsv.c.ll
-; openblas/optimized/dgetsqrhrt.c.ll
 ; openblas/optimized/dggsvp3.c.ll
 ; openblas/optimized/dlagsy.c.ll
 ; openblas/optimized/dlahr2.c.ll
@@ -191,7 +178,7 @@ entry:
 define i64 @func0000000000000035(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   %6 = sext i32 %5 to i64
   ret i64 %6
@@ -212,17 +199,15 @@ define i64 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = mul nsw i32 %3, %1
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   %6 = sext i32 %5 to i64
   ret i64 %6
 }
 
-; 18 occurrences:
+; 16 occurrences:
 ; faiss/optimized/lattice_Zn.cpp.ll
 ; gromacs/optimized/dlarrvx.cpp.ll
-; gromacs/optimized/dlasd3.cpp.ll
 ; gromacs/optimized/slarrvx.cpp.ll
-; gromacs/optimized/slasd3.cpp.ll
 ; openblas/optimized/dggsvp3.c.ll
 ; openblas/optimized/dhgeqz.c.ll
 ; openblas/optimized/dlahqr.c.ll
@@ -255,7 +240,7 @@ define i64 @func0000000000000030(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = mul i32 %3, %1
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   %6 = sext i32 %5 to i64
   ret i64 %6
 }
@@ -270,8 +255,8 @@ entry:
 define i64 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 3
-  %4 = mul nsw i32 %3, %1
-  %5 = add i32 %4, %0
+  %4 = mul nsw i32 %1, %3
+  %5 = add i32 %0, %4
   %6 = sext i32 %5 to i64
   ret i64 %6
 }
@@ -310,7 +295,7 @@ entry:
 define i64 @func000000000000003c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 32
-  %4 = mul nuw nsw i32 %3, %1
+  %4 = mul nuw nsw i32 %1, %3
   %5 = add i32 %4, %0
   %6 = sext i32 %5 to i64
   ret i64 %6
@@ -323,34 +308,20 @@ entry:
 define i64 @func000000000000003d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = mul nuw nsw i32 %3, %1
-  %5 = add nsw i32 %4, %0
+  %4 = mul nuw nsw i32 %1, %3
+  %5 = add nsw i32 %0, %4
   %6 = sext i32 %5 to i64
   ret i64 %6
 }
 
-; 2 occurrences:
-; openblas/optimized/dtgsna.c.ll
+; 1 occurrences:
 ; opencv/optimized/sift.dispatch.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 2
-  %4 = mul i32 %3, %1
-  %5 = add nsw i32 %4, %0
-  %6 = sext i32 %5 to i64
-  ret i64 %6
-}
-
-; 2 occurrences:
-; openblas/optimized/dgetsqrhrt.c.ll
-; openblas/optimized/dsbgst.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add i32 %2, -1
-  %4 = mul nsw i32 %3, %1
-  %5 = add i32 %4, %0
+  %4 = mul i32 %1, %3
+  %5 = add nsw i32 %0, %4
   %6 = sext i32 %5 to i64
   ret i64 %6
 }
@@ -363,6 +334,31 @@ entry:
   %3 = add nsw i32 %2, -1
   %4 = mul i32 %3, %1
   %5 = add nsw i32 %4, %0
+  %6 = sext i32 %5 to i64
+  ret i64 %6
+}
+
+; 1 occurrences:
+; openblas/optimized/dsbgst.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %2, -1
+  %4 = mul nsw i32 %3, %1
+  %5 = add i32 %0, %4
+  %6 = sext i32 %5 to i64
+  ret i64 %6
+}
+
+; 2 occurrences:
+; openblas/optimized/dlatms.c.ll
+; openblas/optimized/dlatmt.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000020(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw i32 %2, 1
+  %4 = mul i32 %3, %1
+  %5 = add i32 %0, %4
   %6 = sext i32 %5 to i64
   ret i64 %6
 }

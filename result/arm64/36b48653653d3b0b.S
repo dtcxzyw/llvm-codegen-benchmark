@@ -1,61 +1,48 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	scvtf	v5.4s, v5.4s
-	scvtf	v4.4s, v4.4s
-	fadd	v2.4s, v4.4s, v2.4s
-	fadd	v3.4s, v5.4s, v3.4s
-	fcmgt	v1.4s, v1.4s, v3.4s
-	fcmgt	v0.4s, v0.4s, v2.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	scvtf	s2, w0
+	fadd	s1, s1, s2
+	fcmp	s0, s1
+	cset	w0, gt
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	scvtf	v5.4s, v5.4s
-	scvtf	v4.4s, v4.4s
-	fadd	v2.4s, v4.4s, v2.4s
-	fadd	v3.4s, v5.4s, v3.4s
-	fcmgt	v1.4s, v3.4s, v1.4s
-	fcmgt	v0.4s, v2.4s, v0.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	scvtf	s2, w0
+	fadd	s1, s1, s2
+	fcmp	s0, s1
+	cset	w0, mi
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	scvtf	v5.4s, v5.4s
-	scvtf	v4.4s, v4.4s
-	fadd	v2.4s, v4.4s, v2.4s
-	fadd	v3.4s, v5.4s, v3.4s
-	fcmge	v1.4s, v3.4s, v1.4s
-	fcmge	v0.4s, v2.4s, v0.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	scvtf	s2, w0
+	fadd	s1, s1, s2
+	fcmp	s0, s1
+	cset	w0, ls
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	scvtf	v5.4s, v5.4s
-	scvtf	v4.4s, v4.4s
-	fadd	v2.4s, v4.4s, v2.4s
-	fadd	v3.4s, v5.4s, v3.4s
-	fcmeq	v1.4s, v3.4s, v1.4s
-	fcmeq	v0.4s, v2.4s, v0.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	scvtf	s2, w0
+	fadd	s1, s1, s2
+	fcmp	s0, s1
+	cset	w0, eq
+	ret
+                                        // -- End function
+func0000000000000007:                   // @func0000000000000007
+// %bb.0:                               // %entry
+	scvtf	s2, w0
+	fadd	s1, s1, s2
+	fcmp	s0, s1
+	cset	w0, ne
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	scvtf	v5.4s, v5.4s
-	scvtf	v4.4s, v4.4s
-	fadd	v2.4s, v4.4s, v2.4s
-	fadd	v3.4s, v5.4s, v3.4s
-	fcmge	v1.4s, v3.4s, v1.4s
-	fcmge	v0.4s, v2.4s, v0.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	mvn	v0.16b, v0.16b
-	xtn	v0.8b, v0.8h
+	scvtf	s2, w0
+	fadd	s1, s1, s2
+	fcmp	s0, s1
+	cset	w0, hi
 	ret
                                         // -- End function

@@ -28,12 +28,12 @@ func0000000000000002:                   # @func0000000000000002
 	cmpl	%edi, %esi
 	sete	%al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000058:                   # @func0000000000000058
 	addl	%edx, %esi
 	cmpl	%edi, %esi
 	setne	%al
 	retq
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	addl	%edx, %esi
 	cmpl	%edi, %esi
 	setl	%al

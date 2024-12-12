@@ -7,7 +7,7 @@ entry:
   %2 = sitofp i32 %1 to float
   %3 = fmul float %2, 2.500000e+00
   %4 = fptosi float %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -21,7 +21,7 @@ entry:
   %2 = sitofp i32 %1 to float
   %3 = fmul float %2, 0x3F999999A0000000
   %4 = fptosi float %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 

@@ -1,13 +1,12 @@
 
-; 8 occurrences:
-; linux/optimized/e1000_hw.ll
-; linux/optimized/hdac_regmap.ll
+; 7 occurrences:
 ; linux/optimized/quota.ll
 ; linux/optimized/uhci-hcd.ll
 ; llvm/optimized/COFFAsmParser.cpp.ll
 ; nix/optimized/posix-fs-canonicalise.ll
 ; openjdk/optimized/methodHandles.ll
 ; qemu/optimized/system_physmem.c.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:

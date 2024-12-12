@@ -11,5 +11,5 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000008:                   # @func0000000000000008
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpsrad	$16, %ymm1, %ymm1
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
 	retq

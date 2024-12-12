@@ -1,4 +1,4 @@
-func000000000000006b:                   # @func000000000000006b
+func00000000000000cb:                   # @func00000000000000cb
 	vextracti128	$1, %ymm2, %xmm3
 	vpextrd	$1, %xmm3, %ecx
 	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
@@ -43,7 +43,7 @@ func000000000000006b:                   # @func000000000000006b
 	divl	%ecx
 	vpinsrd	$3, %eax, %xmm4, %xmm2
 	vinserti128	$1, %xmm3, %ymm2, %ymm2
-	vpcmpled	%ymm0, %ymm2, %k0
+	vpcmpnltd	%ymm2, %ymm0, %k0
 	vpmovd2m	%ymm1, %k1
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
@@ -51,7 +51,7 @@ func000000000000006b:                   # @func000000000000006b
 	retq
 .LCPI1_0:
 	.long	536870911                       # 0x1fffffff
-func000000000000008a:                   # @func000000000000008a
+func000000000000010a:                   # @func000000000000010a
 	vextracti128	$1, %ymm2, %xmm3
 	vpextrd	$1, %xmm3, %ecx
 	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
@@ -104,7 +104,7 @@ func000000000000008a:                   # @func000000000000008a
 	retq
 .LCPI2_0:
 	.long	536870911                       # 0x1fffffff
-func0000000000000088:                   # @func0000000000000088
+func0000000000000318:                   # @func0000000000000318
 	vextracti128	$1, %ymm2, %xmm3
 	vpextrd	$1, %xmm3, %ecx
 	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
@@ -149,7 +149,7 @@ func0000000000000088:                   # @func0000000000000088
 	divl	%ecx
 	vpinsrd	$3, %eax, %xmm4, %xmm2
 	vinserti128	$1, %xmm3, %ymm2, %ymm2
-	vpcmpltud	%ymm0, %ymm2, %k0
+	vpcmpnleud	%ymm2, %ymm0, %k0
 	vpcmpnleud	.LCPI2_0(%rip){1to8}, %ymm1, %k1
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0

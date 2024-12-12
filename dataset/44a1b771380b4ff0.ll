@@ -4,6 +4,7 @@
 ; assimp/optimized/zip.c.ll
 ; base64-rs/optimized/1a04td3ag2jefly3.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/default_formatter_factory.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; ceres/optimized/schur_eliminator_2_2_2.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_3.cc.ll
@@ -44,7 +45,6 @@
 ; linux/optimized/memblock.ll
 ; linux/optimized/runtime.ll
 ; linux/optimized/skbuff.ll
-; linux/optimized/sync.ll
 ; linux/optimized/tick-sched.ll
 ; linux/optimized/xfrm_policy.ll
 ; linux/optimized/xprtsock.ll
@@ -93,13 +93,17 @@ entry:
   ret i64 %4
 }
 
-; 6 occurrences:
+; 10 occurrences:
 ; clap-rs/optimized/3n9sdy3q5n8p0ad5.ll
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; osqp/optimized/amd_2.c.ll
 ; rust-analyzer-rs/optimized/233tpdwe8f7eoneo.ll
+; rust-analyzer-rs/optimized/3aojx6tzw7bx942t.ll
 ; rust-analyzer-rs/optimized/46lti8aa4smufhcb.ll
+; tree-sitter-rs/optimized/2jber9b3bsvatks5.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/c3nozc4nsp9d7jgiddflq9oh8.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i1 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -108,7 +112,13 @@ entry:
   ret i64 %4
 }
 
-; 11 occurrences:
+; 17 occurrences:
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
+; boost/optimized/instantiate_predef_macros.ll
+; boost/optimized/xml_grammar.ll
+; boost/optimized/xml_wgrammar.ll
 ; casadi/optimized/sqpmethod.cpp.ll
 ; clamav/optimized/clamd_others.c.ll
 ; cmake/optimized/archive_read_support_format_tar.c.ll

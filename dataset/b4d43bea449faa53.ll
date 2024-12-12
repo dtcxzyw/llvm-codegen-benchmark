@@ -5,7 +5,7 @@
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 6
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = lshr i32 %3, 5
   %5 = and i32 %4, 126
   ret i32 %5
@@ -40,7 +40,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 3
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = lshr i32 %3, 24
   %5 = and i32 %4, 15
   ret i32 %5
@@ -103,7 +103,9 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 4 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; spike/optimized/aes64esm.ll
 ; wireshark/optimized/packet-gsm_a_gm.c.ll
 ; Function Attrs: nounwind
@@ -115,7 +117,9 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
+; 3 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; spike/optimized/aes64esm.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000b(i32 %0, i32 %1) #0 {
@@ -125,16 +129,16 @@ entry:
   ret i32 %3
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; linux/optimized/aes.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl nuw i32 %1, 24
-  %3 = or disjoint i32 %2, %0
-  %4 = lshr i32 %3, 7
-  %5 = and i32 %4, 16843009
-  ret i32 %5
+  %2 = lshr i32 %0, 16
+  %3 = and i32 %2, 255
+  ret i32 %3
 }
 
 ; 1 occurrences:
@@ -143,7 +147,7 @@ entry:
 define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 16
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = lshr exact i32 %3, 12
   %5 = and i32 %4, 63
   ret i32 %5

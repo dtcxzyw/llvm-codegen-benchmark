@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	0x3fd2000000000000              # double 0.28125
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	andl	$2147483647, %edi               # imm = 0x7FFFFFFF
 	cmpl	$1072234497, %edi               # imm = 0x3FE90001
 	setae	%al

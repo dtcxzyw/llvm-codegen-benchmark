@@ -1,46 +1,46 @@
-func00000000000008c2:                   # @func00000000000008c2
+func0000000000002182:                   # @func0000000000002182
 	shrq	$5, %rsi
-	cmpl	%edi, %esi
-	setg	%cl
+	cmpl	%esi, %edi
+	setl	%cl
 	testl	%edi, %edi
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000882:                   # @func0000000000000882
+func0000000000002102:                   # @func0000000000002102
 	shrq	$5, %rsi
-	cmpl	%edi, %esi
-	seta	%cl
+	cmpl	%esi, %edi
+	setb	%cl
 	cmpl	$-1, %edi
 	sete	%al
 	orb	%cl, %al
 	retq
-func000000000000018c:                   # @func000000000000018c
+func000000000000030c:                   # @func000000000000030c
 	shrq	$3, %rsi
-	cmpl	%edi, %esi
+	cmpl	%esi, %edi
 	setne	%cl
 	testl	%edi, %edi
 	sets	%al
 	orb	%cl, %al
 	retq
-func0000000000000942:                   # @func0000000000000942
+func0000000000002282:                   # @func0000000000002282
 	shrq	$4, %rsi
-	cmpl	%edi, %esi
-	setl	%cl
+	cmpl	%esi, %edi
+	setg	%cl
 	cmpl	$-1, %edi
 	sete	%al
 	orb	%cl, %al
 	retq
-func000000000000096c:                   # @func000000000000096c
+func00000000000022cc:                   # @func00000000000022cc
 	shrq	$3, %rsi
-	cmpl	%edi, %esi
-	setle	%cl
+	cmpl	%esi, %edi
+	setge	%cl
 	testl	%edi, %edi
 	sets	%al
 	orb	%cl, %al
 	retq
-func0000000000000822:                   # @func0000000000000822
+func0000000000002042:                   # @func0000000000002042
 	shrq	$3, %rsi
-	cmpl	%edi, %esi
+	cmpl	%esi, %edi
 	sete	%cl
 	cmpl	$-1, %edi
 	sete	%al

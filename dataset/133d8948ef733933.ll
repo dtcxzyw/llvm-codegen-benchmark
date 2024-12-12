@@ -1,6 +1,5 @@
 
-; 5 occurrences:
-; arrow/optimized/int_util.cc.ll
+; 4 occurrences:
 ; cmake/optimized/mime.c.ll
 ; curl/optimized/libcurl_la-mime.ll
 ; openssl/optimized/libdefault-lib-ssl3_cbc.ll

@@ -3,10 +3,10 @@
 ; folly/optimized/IPAddressV6.cpp.ll
 ; hermes/optimized/escape.cpp.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000034(i16 %0, i16 %1) #0 {
+define i16 @func0000000000000074(i16 %0, i16 %1) #0 {
 entry:
   %2 = add nuw nsw i16 %1, 87
-  %3 = icmp ult i16 %1, 10
+  %3 = icmp samesign ult i16 %1, 10
   %4 = select i1 %3, i16 %0, i16 %2
   ret i16 %4
 }

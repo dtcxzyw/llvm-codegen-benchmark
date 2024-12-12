@@ -1,5 +1,6 @@
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/approximately_equals.ll
 ; cpython/optimized/floatobject.ll
 ; libpng/optimized/png.c.ll
 ; opencv/optimized/corner.cpp.ll

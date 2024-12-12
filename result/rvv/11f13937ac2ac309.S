@@ -75,10 +75,13 @@ func000000000000000d:                   # @func000000000000000d
 	vmflt.vf	v16, v8, fa5
 	vmnot.m	v0, v16
 	ret
+.LCPI11_0:
+	.quad	0x3ddb7cdfd9d7bdbb              # double 1.0E-10
 func000000000000000a:                   # @func000000000000000a
+	lui	a0, %hi(.LCPI11_0)
+	fld	fa5, %lo(.LCPI11_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmerge.vvm	v8, v16, v8, v0
-	fmv.d.x	fa5, zero
 	vmfle.vf	v0, v8, fa5
 	ret
 func0000000000000009:                   # @func0000000000000009

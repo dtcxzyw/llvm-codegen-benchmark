@@ -14,3 +14,11 @@ func000000000000000c:                   # @func000000000000000c
 	testb	$1, %sil
 	cmovnel	%ecx, %eax
 	retq
+func000000000000000f:                   # @func000000000000000f
+	andl	$1, %esi
+	leal	(%rdi,%rsi,2), %eax
+	retq
+func000000000000000e:                   # @func000000000000000e
+	andl	$1, %esi
+	leal	(%rdi,%rsi,2), %eax
+	retq

@@ -2,7 +2,7 @@ func0000000000000073:                   # @func0000000000000073
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vfcvt.f.x.v	v10, v10
 	fmv.w.x	fa5, zero
-	vmfne.vv	v12, v10, v8
+	vmfne.vv	v12, v8, v10
 	vmfge.vf	v10, v8, fa5
 	vmandn.mm	v0, v12, v10
 	ret

@@ -1,4 +1,4 @@
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	andi	a1, a1, 1
 	li	a2, 360
 	czero.eqz	a1, a2, a1
@@ -24,7 +24,7 @@ func0000000000000006:                   # @func0000000000000006
 	czero.nez	a0, a1, a0
 	addi	a0, a0, 1040
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	slli	a1, a1, 63
 	srai	a1, a1, 63
 	ori	a1, a1, -13
@@ -32,15 +32,4 @@ func000000000000001a:                   # @func000000000000001a
 	slti	a0, a0, 3
 	li	a1, -1179
 	sh2add	a0, a1, a0
-	ret
-func0000000000000014:                   # @func0000000000000014
-	andi	a1, a1, 1
-	li	a2, -3
-	czero.nez	a1, a2, a1
-	add	a0, a0, a1
-	addiw	a0, a0, -3
-	sltiu	a0, a0, 7
-	li	a1, 3
-	czero.nez	a0, a1, a0
-	addi	a0, a0, 8
 	ret

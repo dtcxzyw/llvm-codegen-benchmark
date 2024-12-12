@@ -7,7 +7,7 @@ func0000000000000009:                   # @func0000000000000009
 	vmnor.mm	v0, v21, v20
 	vfrdiv.vf	v12, v16, fa5
 	vmerge.vim	v12, v12, 0, v0
-	vfmul.vv	v8, v12, v8
+	vfmul.vv	v8, v8, v12
 	ret
 .LCPI1_0:
 	.word	0x322bcc77                      # float 9.99999993E-9
@@ -20,7 +20,7 @@ func000000000000000b:                   # @func000000000000000b
 	vmnot.m	v0, v20
 	vfrdiv.vf	v12, v16, fa5
 	vmerge.vim	v12, v12, 0, v0
-	vfmul.vv	v8, v12, v8
+	vfmul.vv	v8, v8, v12
 	ret
 func0000000000000008:                   # @func0000000000000008
 	fmv.w.x	fa5, zero
@@ -29,7 +29,7 @@ func0000000000000008:                   # @func0000000000000008
 	fli.s	fa5, 1.0
 	vfrdiv.vf	v12, v16, fa5
 	vmerge.vim	v12, v12, 0, v0
-	vfmul.vv	v8, v12, v8
+	vfmul.vv	v8, v8, v12
 	ret
 .LCPI3_0:
 	.word	0x322bcc77                      # float 9.99999993E-9
@@ -41,5 +41,5 @@ func0000000000000002:                   # @func0000000000000002
 	fli.s	fa5, 1.0
 	vfrdiv.vf	v12, v16, fa5
 	vmerge.vim	v12, v12, 0, v0
-	vfmul.vv	v8, v12, v8
+	vfmul.vv	v8, v8, v12
 	ret

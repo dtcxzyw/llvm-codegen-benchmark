@@ -5,7 +5,7 @@
 ; minetest/optimized/mapgen.cpp.ll
 ; minetest/optimized/servermap.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000004c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr exact i32 %2, 16
   %4 = icmp slt i32 %3, %1
@@ -18,11 +18,11 @@ entry:
 ; minetest/optimized/mapgen.cpp.ll
 ; minetest/optimized/servermap.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000054(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr exact i32 %2, 16
   %4 = icmp sgt i32 %3, %1
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -36,7 +36,7 @@ define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr i32 %2, 16
   %4 = icmp sgt i32 %3, %1
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -57,7 +57,7 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/mapgen.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002e(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000004e(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr exact i32 %2, 16
   %4 = icmp sle i32 %3, %1
@@ -72,7 +72,7 @@ define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr i32 %2, 16
   %4 = icmp ult i32 %3, %1
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -83,7 +83,7 @@ define i1 @func0000000000000002(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr i32 %2, 1
   %4 = icmp eq i32 %3, %1
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -94,6 +94,18 @@ define i1 @func000000000000000e(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr i32 %2, 3
   %4 = icmp sle i32 %3, %1
+  %5 = or i1 %0, %4
+  ret i1 %5
+}
+
+; 2 occurrences:
+; linux/optimized/percpu.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = ashr i32 %2, 8
+  %4 = icmp ne i32 %3, %1
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -102,7 +114,7 @@ entry:
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000058(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr exact i32 %2, 24
   %4 = icmp ne i32 %3, %1
@@ -111,24 +123,13 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/percpu.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = ashr i32 %2, 10
-  %4 = icmp ne i32 %3, %1
-  %5 = or i1 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; linux/optimized/seq_buf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000030(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000050(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr exact i32 %2, 1
   %4 = icmp ugt i32 %3, %1
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

@@ -8,5 +8,5 @@ func000000000000001c:                   # @func000000000000001c
 	retq
 func000000000000003f:                   # @func000000000000003f
 	movl	%esi, %eax
-	leaq	4(%rdi,%rax,8), %rax
+	leaq	8(%rdi,%rax,4), %rax
 	retq

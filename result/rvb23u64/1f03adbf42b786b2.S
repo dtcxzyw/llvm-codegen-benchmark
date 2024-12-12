@@ -11,5 +11,5 @@ func000000000000002c:                   # @func000000000000002c
 func000000000000002d:                   # @func000000000000002d
 	bset	a1, zero, a1
 	addi	a1, a1, 4
-	mulw	a0, a1, a0
+	mulw	a0, a0, a1
 	ret

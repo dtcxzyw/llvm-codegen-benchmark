@@ -26,7 +26,7 @@ define i64 @func0000000000000018(i1 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 7
   %3 = icmp ne i8 %2, 3
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = zext i1 %4 to i64
   ret i64 %5
 }

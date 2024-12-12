@@ -1,5 +1,5 @@
 
-; 32 occurrences:
+; 33 occurrences:
 ; clamav/optimized/pe_icons.c.ll
 ; faiss/optimized/AdditiveQuantizer.cpp.ll
 ; faiss/optimized/IVFlib.cpp.ll
@@ -28,6 +28,7 @@
 ; llvm/optimized/PGOCtxProfWriter.cpp.ll
 ; llvm/optimized/SerializedDiagnosticPrinter.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; oiio/optimized/tiffinput.cpp.ll
 ; openjdk/optimized/pngrtran.ll
 ; openusd/optimized/stream.c.ll

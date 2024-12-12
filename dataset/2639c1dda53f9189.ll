@@ -15,6 +15,7 @@
 ; arrow/optimized/row_internal.cc.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/zip.c.ll
+; brotli/optimized/metablock.c.ll
 ; bullet3/optimized/b3GpuPgsContactSolver.ll
 ; clamav/optimized/LzmaDec.c.ll
 ; clamav/optimized/Ppmd7Dec.c.ll
@@ -327,7 +328,6 @@
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
 ; qemu/optimized/linux-user_thunk.c.ll
 ; qemu/optimized/target_riscv_vcrypto_helper.c.ll
-; qemu/optimized/virtio-mmio.c.ll
 ; raylib/optimized/rmodels.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; ring-rs/optimized/4prppzcttbsz5zvc.ll
@@ -362,7 +362,7 @@ entry:
   ret i32 %4
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; brotli/optimized/encode.c.ll
 ; brotli/optimized/metablock.c.ll
 ; cmake/optimized/zstd_compress.c.ll
@@ -370,7 +370,6 @@ entry:
 ; libwebp/optimized/predictor_enc.c.ll
 ; linux/optimized/balloc.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
 ; mitsuba3/optimized/x86formatter.cpp.ll
 ; openjdk/optimized/jdphuff.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
@@ -383,7 +382,8 @@ entry:
   ret i32 %4
 }
 
-; 54 occurrences:
+; 55 occurrences:
+; boost/optimized/src.ll
 ; brotli/optimized/decode.c.ll
 ; clamav/optimized/crtmgr.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
@@ -442,16 +442,17 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
-; 33 occurrences:
+; 35 occurrences:
 ; abc/optimized/inffast.c.ll
 ; abc/optimized/saigSynch.c.ll
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/infblock.c.ll
 ; clamav/optimized/mszipd.c.ll
 ; clamav/optimized/unpack.cpp.ll
@@ -466,6 +467,7 @@ entry:
 ; icu/optimized/ucptrie.ll
 ; libquic/optimized/e_rc2.c.ll
 ; linux/optimized/inffast.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
 ; luajit/optimized/lj_cparse.ll
 ; luajit/optimized/lj_cparse_dyn.ll
 ; luajit/optimized/lj_opt_fold.ll
@@ -484,7 +486,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 

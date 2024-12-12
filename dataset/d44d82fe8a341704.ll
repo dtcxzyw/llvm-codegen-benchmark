@@ -41,12 +41,11 @@ entry:
   ret double %3
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; abc/optimized/giaLf.c.ll
 ; abc/optimized/giaMf.c.ll
 ; abc/optimized/giaNf.c.ll
 ; openmpi/optimized/reachable_netlink_module.ll
-; openmpi/optimized/reachable_weighted.ll
 ; Function Attrs: nounwind
 define double @func0000000000000004(i32 %0) #0 {
 entry:

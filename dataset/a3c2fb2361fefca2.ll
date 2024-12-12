@@ -80,7 +80,7 @@ entry:
 ; 1 occurrences:
 ; mitsuba3/optimized/qmc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000e1(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = lshr exact i32 %2, 1
@@ -92,47 +92,42 @@ entry:
 ; 1 occurrences:
 ; mitsuba3/optimized/qmc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000f4(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = lshr exact i32 %2, 1
   %4 = and i32 %3, 65535
-  %5 = icmp ult i32 %4, %0
+  %5 = icmp samesign ult i32 %4, %0
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; mitsuba3/optimized/qmc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000075(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000f5(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = lshr exact i32 %2, 1
   %4 = and i32 %3, 65535
-  %5 = icmp ule i32 %4, %0
+  %5 = icmp samesign ule i32 %4, %0
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; mitsuba3/optimized/qmc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000f8(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = lshr exact i32 %2, 1
   %4 = and i32 %3, 65535
-  %5 = icmp ugt i32 %4, %0
+  %5 = icmp samesign ugt i32 %4, %0
   ret i1 %5
 }
 
-; 19 occurrences:
-; abc/optimized/ifCut.c.ll
-; icu/optimized/collationbuilder.ll
+; 13 occurrences:
 ; linux/optimized/uncore.ll
-; llvm/optimized/CallLowering.cpp.ll
-; llvm/optimized/GlobalISelMatchTable.cpp.ll
 ; openjdk/optimized/defNewGeneration.ll
-; openjdk/optimized/g1CardSet.ll
 ; openjdk/optimized/g1ParScanThreadState.ll
 ; openjdk/optimized/g1StringDedup.ll
 ; openjdk/optimized/parMarkBitMap.ll
@@ -143,7 +138,6 @@ entry:
 ; openjdk/optimized/serialStringDedup.ll
 ; openjdk/optimized/shenandoahMark.ll
 ; qemu/optimized/hw_intc_riscv_imsic.c.ll
-; sqlite/optimized/sqlite3.ll
 ; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0, i64 %1) #0 {
@@ -158,12 +152,12 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/tcg-op-vec.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000009(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000019(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 16
   %4 = and i32 %3, 255
-  %5 = icmp uge i32 %4, %0
+  %5 = icmp samesign uge i32 %4, %0
   ret i1 %5
 }
 
@@ -180,22 +174,36 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
+; 6 occurrences:
+; abc/optimized/ifCut.c.ll
+; icu/optimized/collationbuilder.ll
+; llvm/optimized/CallLowering.cpp.ll
+; llvm/optimized/GlobalISelMatchTable.cpp.ll
+; openjdk/optimized/g1CardSet.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = lshr i32 %2, 2
+  %4 = and i32 %3, 7
+  %5 = icmp samesign ult i32 %4, %0
+  ret i1 %5
+}
+
+; 5 occurrences:
 ; abc/optimized/ifCut.c.ll
 ; abc/optimized/mpmPre.c.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; glslang/optimized/Intermediate.cpp.ll
 ; linux/optimized/cpuset.ll
-; linux/optimized/eeepc-laptop.ll
-; llvm/optimized/CombinerHelper.cpp.ll
-; llvm/optimized/LegalizerHelper.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000018(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 3
   %4 = and i32 %3, 65535
-  %5 = icmp ugt i32 %4, %0
+  %5 = icmp samesign ugt i32 %4, %0
   ret i1 %5
 }
 
@@ -259,6 +267,20 @@ entry:
   %3 = lshr i32 %2, 18
   %4 = and i32 %3, 8191
   %5 = icmp sle i32 %4, %0
+  ret i1 %5
+}
+
+; 3 occurrences:
+; linux/optimized/eeepc-laptop.ll
+; llvm/optimized/CombinerHelper.cpp.ll
+; llvm/optimized/LegalizerHelper.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = lshr i32 %2, 3
+  %4 = and i32 %3, 65535
+  %5 = icmp ugt i32 %4, %0
   ret i1 %5
 }
 

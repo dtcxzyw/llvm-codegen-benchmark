@@ -1,6 +1,5 @@
 
-; 5 occurrences:
-; abc/optimized/ifDsd.c.ll
+; 4 occurrences:
 ; coreutils-rs/optimized/3t9yvjig6ylv2f7b.ll
 ; cpython/optimized/sysmodule.ll
 ; mold/optimized/arch-ppc64v2.cc.ll

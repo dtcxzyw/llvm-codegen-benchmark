@@ -1,8 +1,7 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/abcRenode.c.ll
-; abc/optimized/extraUtilMaj.c.ll
 ; abc/optimized/giaIf.c.ll
 ; abc/optimized/ifMap.c.ll
 ; abc/optimized/ifTruth.c.ll

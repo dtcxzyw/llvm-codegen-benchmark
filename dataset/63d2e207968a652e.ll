@@ -34,28 +34,15 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; cpython/optimized/longobject.ll
-; opencv/optimized/distransform.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 2
+  %2 = lshr i64 %1, 3
   %3 = sub nsw i64 %0, %2
-  %4 = shl i64 %3, 32
-  %5 = add i64 %4, -8589934592
-  ret i64 %5
-}
-
-; 1 occurrences:
-; casadi/optimized/sparsity_internal.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000060(i64 %0, i64 %1) #0 {
-entry:
-  %2 = lshr exact i64 %1, 3
-  %3 = sub nuw i64 %0, %2
-  %4 = shl i64 %3, 3
-  %5 = add i64 %4, -8
+  %4 = shl i64 %3, 2
+  %5 = add i64 %4, 24
   ret i64 %5
 }
 

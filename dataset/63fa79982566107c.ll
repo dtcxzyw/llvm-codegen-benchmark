@@ -1,7 +1,8 @@
 
-; 72 occurrences:
+; 79 occurrences:
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/pdrTsim2.c.ll
+; boost/optimized/approximately_equals.ll
 ; bullet3/optimized/b3PgsJacobiSolver.ll
 ; bullet3/optimized/btMultiBodyJointLimitConstraint.ll
 ; clamav/optimized/filestr.cpp.ll
@@ -72,6 +73,12 @@
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
 ; wasmtime-rs/optimized/4ay297qasj36tbqo.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
+; zed-rs/optimized/14nzgp7qqjehsllc2nbkdaoyu.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/3wk2sbofyuh9r9t3rhig8ynyg.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i1 %1) #0 {
 entry:

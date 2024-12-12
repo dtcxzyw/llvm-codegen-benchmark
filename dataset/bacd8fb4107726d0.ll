@@ -1,5 +1,7 @@
 
-; 11 occurrences:
+; 13 occurrences:
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
 ; darktable/optimized/introspection_bilateral.cc.ll
 ; draco/optimized/ply_decoder.cc.ll
 ; git/optimized/pack-bitmap.ll

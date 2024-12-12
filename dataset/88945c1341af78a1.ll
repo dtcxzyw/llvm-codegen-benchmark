@@ -4,7 +4,7 @@
 ; hermes/optimized/APInt.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000161(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65535
   %4 = sub nsw i32 %3, %1
@@ -18,7 +18,7 @@ entry:
 ; hdf5/optimized/H5B2int.c.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f1(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000003e1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65535
   %4 = sub nuw nsw i32 %3, %1
@@ -31,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000171(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002e1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2147483647
   %4 = sub nuw i32 %3, %1
@@ -44,7 +44,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/jsonb_util.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000e1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -4
   %4 = sub i32 %3, %1

@@ -1,5 +1,44 @@
 
-; 215 occurrences:
+; 254 occurrences:
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/copy_segment_point.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/difference_pl_pl.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/file_descriptor.ll
+; boost/optimized/filebuf.ll
+; boost/optimized/get_ring.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/intersection_pl_pl.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/partition.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/topology.ll
+; boost/optimized/union_pl_pl.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
+; boost/optimized/write_dsv.ll
 ; clap-rs/optimized/4bajo035z6e1d4qz.ll
 ; coreutils-rs/optimized/1y438ox107i37q6b.ll
 ; coreutils-rs/optimized/25226ex8la0o251x.ll
@@ -10,13 +49,12 @@
 ; coreutils-rs/optimized/4i0caq1otrc216b8.ll
 ; coreutils-rs/optimized/4kgtcn9evb3aj2za.ll
 ; coreutils-rs/optimized/56r5nsoetjtsydeq.ll
-; coreutils-rs/optimized/58jaio282z1afdwu.ll
-; coreutils-rs/optimized/6ww4r750j9xeu5p.ll
 ; coreutils-rs/optimized/mw884w9advpx9w7.ll
 ; coreutils-rs/optimized/revig3jnm6g53sq.ll
 ; coreutils-rs/optimized/x49kkq2eezb15aj.ll
 ; duckdb/optimized/ub_duckdb_func_date.cpp.ll
 ; eastl/optimized/TestBitset.cpp.ll
+; fmt/optimized/format-test.cc.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
@@ -121,13 +159,10 @@
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -187,7 +222,6 @@
 ; nlohmann_json/optimized/unit-cbor.cpp.ll
 ; nlohmann_json/optimized/unit-msgpack.cpp.ll
 ; openvdb/optimized/Archive.cc.ll
-; php/optimized/engine_combinedlcg.ll
 ; php/optimized/engine_mt19937.ll
 ; php/optimized/engine_pcgoneseq128xslrr64.ll
 ; php/optimized/engine_xoshiro256starstar.ll
@@ -205,6 +239,7 @@
 ; spike/optimized/socketif.ll
 ; stat-rs/optimized/1dt2wsqttaly1xii.ll
 ; tokenizers-rs/optimized/40hmx6rev8evi2bx.ll
+; turborepo-rs/optimized/avd1ga9yb4qq5g7sdqftppd4q.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; velox/optimized/ByteStream.cpp.ll
 ; velox/optimized/Expr.cpp.ll
@@ -215,6 +250,10 @@
 ; wasmtime-rs/optimized/4z02b278nscq7j1a.ll
 ; wasmtime-rs/optimized/cxg2cx8gn6v5trt.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/1b5ll0cnnio0vvxmolgooij5i.ll
+; zed-rs/optimized/553y3uma3m7pxzk4dar8hjwb6.ll
+; zed-rs/optimized/bkz8gk2grsqnr2xbkvtnqlfhe.ll
 ; Function Attrs: nounwind
 define { i64, i64 } @func0000000000000000(i64 %0) #0 {
 entry:

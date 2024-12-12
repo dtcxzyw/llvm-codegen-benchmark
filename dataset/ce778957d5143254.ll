@@ -17,15 +17,14 @@
 ; quantlib/optimized/overnightindexedcouponpricer.ll
 ; ruby/optimized/load.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i1 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i1 %1) #0 {
 entry:
-  %2 = sext i1 %1 to i64
-  %3 = sub i64 0, %0
-  %4 = icmp eq i64 %2, %3
-  ret i1 %4
+  %.neg = zext i1 %1 to i64
+  %2 = icmp eq i64 %0, %.neg
+  ret i1 %2
 }
 
-; 15 occurrences:
+; 13 occurrences:
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
@@ -38,24 +37,24 @@ entry:
 ; duckdb/optimized/ub_duckdb_func_list_nested.cpp.ll
 ; git/optimized/xutils.ll
 ; libquic/optimized/time_support.c.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; ruby/optimized/numeric.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i1 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i1 %1) #0 {
 entry:
   %2 = sext i1 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = icmp slt i64 %3, 0
   ret i1 %4
 }
 
-; 34 occurrences:
+; 35 occurrences:
 ; assimp/optimized/FBXUtil.cpp.ll
 ; cmake/optimized/cmFileCommand.cxx.ll
+; cmake/optimized/noproxy.c.ll
 ; coreutils-rs/optimized/22bojphyikqmi872.ll
 ; coreutils-rs/optimized/h500puk7vtt6aeh.ll
 ; cpython/optimized/formatter_unicode.ll
+; curl/optimized/libcurl_la-noproxy.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_join.cpp.ll
 ; eastl/optimized/EATextUtil.cpp.ll
@@ -67,7 +66,6 @@ entry:
 ; hermes/optimized/Triple.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/AsmPrinter.cpp.ll
-; llvm/optimized/COFFImportFile.cpp.ll
 ; llvm/optimized/Hexagon.cpp.ll
 ; llvm/optimized/LiteralSupport.cpp.ll
 ; llvm/optimized/MCAsmStreamer.cpp.ll
@@ -88,10 +86,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i1 %1) #0 {
 entry:
-  %2 = sext i1 %1 to i64
-  %3 = sub i64 0, %0
-  %4 = icmp eq i64 %2, %3
-  ret i1 %4
+  %.neg = zext i1 %1 to i64
+  %2 = icmp eq i64 %0, %.neg
+  ret i1 %2
 }
 
 ; 9 occurrences:
@@ -108,7 +105,7 @@ entry:
 define i1 @func0000000000000008(i64 %0, i1 %1) #0 {
 entry:
   %2 = sext i1 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = icmp ugt i64 %3, 2
   ret i1 %4
 }
@@ -120,7 +117,7 @@ entry:
 define i1 @func0000000000000006(i64 %0, i1 %1) #0 {
 entry:
   %2 = sext i1 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = icmp slt i64 %3, 0
   ret i1 %4
 }
@@ -138,7 +135,7 @@ entry:
 define i1 @func0000000000000004(i64 %0, i1 %1) #0 {
 entry:
   %2 = sext i1 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = icmp ult i64 %3, 65535
   ret i1 %4
 }
@@ -151,10 +148,10 @@ entry:
 ; php/optimized/pack.ll
 ; redis/optimized/bitops.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i1 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i1 %1) #0 {
 entry:
   %2 = sext i1 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = icmp sgt i64 %3, 0
   ret i1 %4
 }
@@ -164,22 +161,21 @@ entry:
 ; node/optimized/idna.ll
 ; wireshark/optimized/addr_resolv.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i1 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i1 %1) #0 {
 entry:
-  %2 = sext i1 %1 to i64
-  %3 = sub i64 0, %0
-  %4 = icmp ne i64 %2, %3
-  ret i1 %4
+  %.neg = zext i1 %1 to i64
+  %2 = icmp ne i64 %0, %.neg
+  ret i1 %2
 }
 
 ; 2 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; quantlib/optimized/cmsmarketcalibration.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i1 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i1 %1) #0 {
 entry:
   %2 = sext i1 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = icmp ugt i64 %3, 1152921504606846975
   ret i1 %4
 }
@@ -193,12 +189,13 @@ entry:
 define i1 @func000000000000000a(i64 %0, i1 %1) #0 {
 entry:
   %2 = sext i1 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = icmp sgt i64 %3, -1
   ret i1 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/test_codecvt.ll
 ; hermes/optimized/gtest-all.cc.ll
 ; ockam-rs/optimized/scbbgml6cvr1nwt.ll
 ; opencv/optimized/ts_gtest.cpp.ll
@@ -206,20 +203,19 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i64 %0, i1 %1) #0 {
 entry:
-  %2 = sext i1 %1 to i64
-  %3 = sub i64 0, %0
-  %4 = icmp ne i64 %2, %3
-  ret i1 %4
+  %.neg = zext i1 %1 to i64
+  %2 = icmp ne i64 %0, %.neg
+  ret i1 %2
 }
 
 ; 2 occurrences:
 ; linux/optimized/alternative.ll
 ; oiio/optimized/sysutil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i1 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i1 %1) #0 {
 entry:
   %2 = sext i1 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = icmp ult i64 %3, 128
   ret i1 %4
 }

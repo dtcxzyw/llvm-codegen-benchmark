@@ -1,7 +1,9 @@
 
-; 4 occurrences:
+; 6 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; Function Attrs: nounwind
@@ -26,7 +28,7 @@ entry:
   %2 = lshr i64 %1, 1
   %3 = and i64 %2, 2097151
   %4 = mul nsw i64 %3, -683901
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -61,7 +63,7 @@ entry:
   %2 = lshr i64 %1, 2
   %3 = and i64 %2, 2097151
   %4 = mul nuw nsw i64 %3, 136657
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 

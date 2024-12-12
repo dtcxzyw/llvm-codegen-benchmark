@@ -1,5 +1,5 @@
 
-; 95 occurrences:
+; 100 occurrences:
 ; abc/optimized/fraigNode.c.ll
 ; graphviz/optimized/compile.c.ll
 ; grpc/optimized/outlier_detection.cc.ll
@@ -11,10 +11,15 @@
 ; linux/optimized/tick-sched.ll
 ; llvm/optimized/CalledOnceCheck.cpp.ll
 ; llvm/optimized/CoreEngine.cpp.ll
+; llvm/optimized/Evaluator.cpp.ll
+; llvm/optimized/PGOInstrumentation.cpp.ll
+; llvm/optimized/ScheduleDAG.cpp.ll
 ; llvm/optimized/SemaAvailability.cpp.ll
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
+; llvm/optimized/SemaExprObjC.cpp.ll
 ; llvm/optimized/SemaTemplateVariadic.cpp.ll
+; llvm/optimized/XCOFFObjectFile.cpp.ll
 ; openjdk/optimized/awt_InputMethod.ll
 ; openjdk/optimized/g1AllocRegion.ll
 ; openjdk/optimized/g1Allocator.ll
@@ -89,46 +94,43 @@
 ; openjdk/optimized/zRelocate.ll
 ; openjdk/optimized/zRemembered.ll
 ; openjdk/optimized/zRememberedSet.ll
-; postgres/optimized/jsonb_op.ll
 ; postgres/optimized/mcv.ll
 ; regex-rs/optimized/1wjkhjqt3xgxgj7z.ll
 ; ruby/optimized/array.ll
 ; ruby/optimized/enum.ll
 ; ruby/optimized/iseq.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000002(i64 %0, i1 %1) #0 {
-entry:
-  %2 = select i1 %1, i64 24, i64 16
-  %3 = inttoptr i64 %0 to ptr
-  %4 = getelementptr nusw i8, ptr %3, i64 %2
-  ret ptr %4
-}
-
-; 5 occurrences:
-; llvm/optimized/Evaluator.cpp.ll
-; llvm/optimized/PGOInstrumentation.cpp.ll
-; llvm/optimized/ScheduleDAG.cpp.ll
-; llvm/optimized/SemaExprObjC.cpp.ll
-; llvm/optimized/XCOFFObjectFile.cpp.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(i64 %0, i1 %1) #0 {
 entry:
-  %2 = select i1 %1, i64 56, i64 80
+  %2 = select i1 %1, i64 24, i64 16
   %3 = inttoptr i64 %0 to ptr
   %4 = getelementptr nusw nuw i8, ptr %3, i64 %2
   ret ptr %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; linux/optimized/build_policy.ll
+; linux/optimized/nf_nat_core.ll
 ; linux/optimized/seccomp.ll
 ; linux/optimized/syscall.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i64 %0, i1 %1) #0 {
 entry:
-  %2 = select i1 %1, i64 -56, i64 -128
+  %2 = select i1 %1, i64 108, i64 88
   %3 = inttoptr i64 %0 to ptr
   %4 = getelementptr i8, ptr %3, i64 %2
+  ret ptr %4
+}
+
+; 1 occurrences:
+; graphviz/optimized/compile.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000002(i64 %0, i1 %1) #0 {
+entry:
+  %2 = select i1 %1, i64 0, i64 -64
+  %3 = inttoptr i64 %0 to ptr
+  %4 = getelementptr nusw i8, ptr %3, i64 %2
   ret ptr %4
 }
 

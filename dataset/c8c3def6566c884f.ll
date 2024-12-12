@@ -1,10 +1,12 @@
 
-; 291 occurrences:
+; 296 occurrences:
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
 ; assimp/optimized/ColladaParser.cpp.ll
 ; assimp/optimized/ObjFileImporter.cpp.ll
 ; assimp/optimized/PlyLoader.cpp.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
 ; brotli/optimized/block_splitter.c.ll
 ; bullet3/optimized/btGenericPoolAllocator.ll
 ; clamav/optimized/fmap.c.ll
@@ -123,7 +125,6 @@
 ; llvm/optimized/PDBFile.cpp.ll
 ; llvm/optimized/PaddingChecker.cpp.ll
 ; llvm/optimized/ParentMapContext.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/ReachableCode.cpp.ll
 ; llvm/optimized/RecordLayoutBuilder.cpp.ll
@@ -212,7 +213,6 @@
 ; qemu/optimized/block_qcow2.c.ll
 ; qemu/optimized/crypto_afsplit.c.ll
 ; qemu/optimized/hw_scsi_scsi-disk.c.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
 ; qemu/optimized/migration_block-dirty-bitmap.c.ll
 ; qemu/optimized/util_oslib-posix.c.ll
 ; quantlib/optimized/hestonslvmcmodel.ll
@@ -291,15 +291,20 @@
 ; xgboost/optimized/simple_dmatrix.cc.ll
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
+; zed-rs/optimized/8y2n395sf7zaarcc3wfqoazez.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/bijypxqg3gfu3lugp8zf7c61q.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %1, %2
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; clamav/optimized/mpool.c.ll
 ; cpython/optimized/longobject.ll
 ; image-rs/optimized/fyek6fuqg0ocunt.ll
@@ -309,7 +314,6 @@ entry:
 ; openjdk/optimized/java_md.ll
 ; openssl/optimized/libssl-lib-rec_layer_s3.ll
 ; openssl/optimized/libssl-shlib-rec_layer_s3.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -334,7 +338,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %1, %2
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   ret i64 %4
 }
 
@@ -349,7 +353,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %1, %2
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 

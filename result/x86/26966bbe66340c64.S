@@ -11,10 +11,3 @@ func0000000000000018:                   # @func0000000000000018
 	orl	%esi, %eax
 	andl	%edi, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
-	andl	$15, %edx
-	cmpl	$3, %edx
-	setb	%al
-	orb	%sil, %al
-	andb	%dil, %al
-	retq

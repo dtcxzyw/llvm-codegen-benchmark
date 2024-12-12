@@ -3,7 +3,7 @@
 ; cpython/optimized/basearith.ll
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1) #0 {
 entry:
   %2 = udiv i64 %1, 3
   %3 = add nuw nsw i64 %2, 1
@@ -17,7 +17,7 @@ entry:
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; mitsuba3/optimized/rapass.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = udiv i64 %1, 12
   %3 = add nuw nsw i64 %2, 1
@@ -190,7 +190,7 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = udiv i64 %1, 10
   %3 = add nsw i64 %2, -10

@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 13 occurrences:
 ; abc/optimized/sclLibScl.c.ll
 ; abc/optimized/sclLiberty.c.ll
 ; abc/optimized/timDump.c.ll
@@ -11,6 +11,8 @@
 ; openjdk/optimized/inStream.ll
 ; openjdk/optimized/jni_util.ll
 ; wasmtime-rs/optimized/3vdx8w41hjyzioqv.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(float %0) #0 {
 entry:

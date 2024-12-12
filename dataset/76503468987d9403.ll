@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; clamav/optimized/hfsplus.c.ll
 ; darktable/optimized/timeline.c.ll
 ; git/optimized/branch.ll
@@ -14,7 +14,6 @@
 ; openssl/optimized/ca_internals_test-bin-ca.ll
 ; openssl/optimized/openssl-bin-ca.ll
 ; postgres/optimized/pg_publication.ll
-; proj/optimized/crs.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i1 %1, ptr %2) #0 {
 entry:

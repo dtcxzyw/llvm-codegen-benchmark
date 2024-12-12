@@ -1,10 +1,10 @@
-func0000000000000024:                   # @func0000000000000024
+func0000000000000054:                   # @func0000000000000054
 	andl	$1, %esi
 	addl	%edi, %esi
 	cmpl	$9, %esi
 	setb	%al
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	andl	$15, %esi
 	addl	%edi, %esi
 	cmpl	$10, %esi

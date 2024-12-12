@@ -26,7 +26,7 @@
 ; zxing/optimized/QRDetector.cpp.ll
 ; zxing/optimized/QRVersion.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0) #0 {
+define i1 @func0000000000000101(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 32
   %2 = trunc nuw i64 %1 to i32
@@ -51,7 +51,7 @@ entry:
 ; stb/optimized/stb_truetype.c.ll
 ; xgboost/optimized/gbtree.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i64 %0) #0 {
+define i1 @func0000000000000106(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 32
   %2 = trunc nuw i64 %1 to i32
@@ -64,7 +64,7 @@ entry:
 ; opencv/optimized/cuda_gpu_mat.cpp.ll
 ; openusd/optimized/meshUtil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i64 %0) #0 {
+define i1 @func000000000000010a(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 32
   %2 = trunc nuw i64 %1 to i32
@@ -77,7 +77,7 @@ entry:
 ; linux/optimized/fib_rules.ll
 ; z3/optimized/sat_anf_simplifier.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0) #0 {
+define i1 @func0000000000000108(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 32
   %2 = trunc nuw i64 %1 to i32
@@ -89,7 +89,7 @@ entry:
 ; 1 occurrences:
 ; cvc5/optimized/equality_engine.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0) #0 {
+define i1 @func0000000000000104(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 32
   %2 = trunc nuw i64 %1 to i32

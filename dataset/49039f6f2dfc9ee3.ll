@@ -9,7 +9,8 @@ entry:
   ret double %2
 }
 
-; 137 occurrences:
+; 141 occurrences:
+; abseil-cpp/optimized/exponential_biased_test.cc.ll
 ; abseil-cpp/optimized/exponential_distribution_test.cc.ll
 ; abseil-cpp/optimized/gaussian_distribution_test.cc.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
@@ -30,6 +31,7 @@ entry:
 ; faiss/optimized/index_read.cpp.ll
 ; folly/optimized/TDigest.cpp.ll
 ; gromacs/optimized/biaswriter.cpp.ll
+; gromacs/optimized/colvarcomp_gpath.cpp.ll
 ; gromacs/optimized/colvarcomp_protein.cpp.ll
 ; gromacs/optimized/colvarproxy_volmaps.cpp.ll
 ; gromacs/optimized/cubicsplinetable.cpp.ll
@@ -53,6 +55,7 @@ entry:
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_measure.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
+; meshlab/optimized/filter_texture_defragmentation.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/matching.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
@@ -67,6 +70,7 @@ entry:
 ; opencv/optimized/checker_detector.cpp.ll
 ; opencv/optimized/chessboard.cpp.ll
 ; opencv/optimized/circlesgrid.cpp.ll
+; opencv/optimized/contrast_preserve.cpp.ll
 ; opencv/optimized/digits_svm.cpp.ll
 ; opencv/optimized/dump_dot.cpp.ll
 ; opencv/optimized/exec.cpp.ll
@@ -155,10 +159,11 @@ entry:
   ret double %2
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; abseil-cpp/optimized/discrete_distribution.cc.ll
 ; hyperscan/optimized/ng_equivalence.cpp.ll
 ; meshlab/optimized/matching.cpp.ll
+; opencv/optimized/ar_hmdb_benchmark.cpp.ll
 ; zxing/optimized/ConcentricFinder.cpp.ll
 ; Function Attrs: nounwind
 define double @func0000000000000003(i64 %0) #0 {

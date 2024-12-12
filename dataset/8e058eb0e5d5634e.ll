@@ -7,12 +7,12 @@
 define i64 @func0000000000000000(i32 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
 
-; 21 occurrences:
+; 20 occurrences:
 ; darktable/optimized/introspection_bilateral.cc.ll
 ; darktable/optimized/introspection_colorequal.c.ll
 ; gromacs/optimized/gmx_hydorder.cpp.ll
@@ -21,7 +21,6 @@ entry:
 ; meshlab/optimized/edit_sample.cpp.ll
 ; meshlab/optimized/edit_select.cpp.ll
 ; meshlab/optimized/editpickpoints.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll
 ; opencv/optimized/brisk.cpp.ll
 ; opencv/optimized/dis_flow.cpp.ll
@@ -38,7 +37,7 @@ entry:
 define i64 @func0000000000000001(i32 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }

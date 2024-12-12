@@ -37,7 +37,7 @@
 ; z3/optimized/sat_solver.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000062c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000184c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %0, 1
   %3 = ashr exact i64 %1, 4

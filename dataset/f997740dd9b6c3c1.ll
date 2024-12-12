@@ -1,5 +1,6 @@
 
-; 106 occurrences:
+; 107 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -142,6 +143,19 @@ entry:
   %3 = lshr i128 %2, 96
   %4 = trunc nuw nsw i128 %3 to i64
   %5 = mul nuw nsw i64 %4, 720575941
+  ret i64 %5
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i64 @func00000000000000ef(i64 %0) #0 {
+entry:
+  %1 = zext nneg i64 %0 to i128
+  %2 = mul nuw nsw i128 %1, 1844674407371
+  %3 = lshr i128 %2, 64
+  %4 = trunc nuw nsw i128 %3 to i64
+  %5 = mul nuw nsw i64 %4, 687195
   ret i64 %5
 }
 

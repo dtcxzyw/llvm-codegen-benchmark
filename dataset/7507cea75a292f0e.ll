@@ -76,7 +76,7 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
-  %2 = tail call range(i32 0, -2147483648) i32 @llvm.abs.i32(i32 %1, i1 true)
+  %2 = tail call range(i32 0, -2147483648) i32 @llvm.abs.i32(i32 range(i32 -2147483647, -2147483648) %1, i1 true)
   %3 = add nsw i32 %0, -98312
   %4 = add i32 %3, %2
   ret i32 %4

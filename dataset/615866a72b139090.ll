@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; icu/optimized/collationsets.ll
 ; icu/optimized/rbbi_cache.ll
 ; linux/optimized/intel_lvds.ll
@@ -13,6 +13,7 @@
 ; postgres/optimized/heaptoast.ll
 ; postgres/optimized/varbit.ll
 ; qemu/optimized/block_vpc.c.ll
+; soc-simulator/optimized/verilated.ll
 ; verilator/optimized/V3Number.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0) #0 {

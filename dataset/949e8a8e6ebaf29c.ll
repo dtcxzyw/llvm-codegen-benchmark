@@ -1,5 +1,5 @@
 
-; 75 occurrences:
+; 76 occurrences:
 ; clamav/optimized/explode.c.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; cmake/optimized/nghttp2_hd.c.ll
@@ -41,6 +41,7 @@
 ; llvm/optimized/Interp.cpp.ll
 ; luajit/optimized/lj_cconv.ll
 ; luajit/optimized/lj_cconv_dyn.ll
+; lvgl/optimized/lv_canvas.ll
 ; minetest/optimized/CImageLoaderBMP.cpp.ll
 ; nghttp2/optimized/nghttp2_hd.c.ll
 ; oiio/optimized/tiffinput.cpp.ll

@@ -1,4 +1,15 @@
-func0000000000000008:                   # @func0000000000000008
+func0000000000000014:                   # @func0000000000000014
+	movl	%esi, %eax
+	movl	$2155905153, %ecx               # imm = 0x80808081
+	imulq	%rcx, %rax
+	shrq	$39, %rax
+	movl	%edi, %edx
+	imulq	%rcx, %rdx
+	shrq	$39, %rdx
+	cmpl	%eax, %edx
+	setb	%al
+	retq
+func0000000000000018:                   # @func0000000000000018
 	movl	%esi, %eax
 	movl	$2863311531, %ecx               # imm = 0xAAAAAAAB
 	imulq	%rcx, %rax

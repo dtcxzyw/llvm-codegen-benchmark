@@ -1,11 +1,11 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	xorl	$197, %edx
 	xorl	$103, %esi
 	orl	%edx, %esi
 	sete	%al
 	orb	%dil, %al
 	retq
-func00000000000000a6:                   # @func00000000000000a6
+func0000000000000146:                   # @func0000000000000146
 	testl	%edx, %edx
 	setns	%cl
 	testl	%esi, %esi
@@ -13,7 +13,7 @@ func00000000000000a6:                   # @func00000000000000a6
 	andb	%cl, %al
 	orb	%dil, %al
 	retq
-func00000000000000ac:                   # @func00000000000000ac
+func000000000000014c:                   # @func000000000000014c
 	testl	%edx, %edx
 	setg	%cl
 	testl	%esi, %esi
@@ -21,7 +21,7 @@ func00000000000000ac:                   # @func00000000000000ac
 	andb	%cl, %al
 	orb	%dil, %al
 	retq
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	cmpl	$-3, %edx
 	setb	%cl
 	cmpl	$2, %esi
@@ -29,7 +29,7 @@ func000000000000004c:                   # @func000000000000004c
 	andb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	cmpl	$-2, %edx
 	setb	%cl
 	cmpl	$2, %esi
@@ -37,7 +37,7 @@ func0000000000000048:                   # @func0000000000000048
 	andb	%cl, %al
 	orb	%dil, %al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	testl	%edx, %edx
 	setne	%cl
 	cmpl	$6, %esi
@@ -45,7 +45,7 @@ func00000000000000c1:                   # @func00000000000000c1
 	andb	%cl, %al
 	orb	%dil, %al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	testl	%edx, %edx
 	sete	%cl
 	testl	%esi, %esi
@@ -53,7 +53,7 @@ func000000000000001c:                   # @func000000000000001c
 	andb	%cl, %al
 	orb	%dil, %al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	testl	%edx, %edx
 	sete	%cl
 	testl	%esi, %esi
@@ -61,7 +61,7 @@ func000000000000001a:                   # @func000000000000001a
 	andb	%cl, %al
 	orb	%dil, %al
 	retq
-func00000000000000ca:                   # @func00000000000000ca
+func000000000000018a:                   # @func000000000000018a
 	testl	%edx, %edx
 	setne	%cl
 	testl	%esi, %esi

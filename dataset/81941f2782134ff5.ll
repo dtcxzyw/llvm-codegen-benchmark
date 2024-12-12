@@ -1,8 +1,7 @@
 
-; 39 occurrences:
+; 38 occurrences:
 ; flatbuffers/optimized/binary_annotator.cpp.ll
 ; postgres/optimized/brin_pageops.ll
-; postgres/optimized/brin_revmap.ll
 ; postgres/optimized/bufpage.ll
 ; postgres/optimized/dbcommands.ll
 ; postgres/optimized/ginentrypage.ll

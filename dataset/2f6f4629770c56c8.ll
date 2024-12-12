@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 22 occurrences:
 ; clamav/optimized/iso9660.c.ll
 ; hyperscan/optimized/repeat.c.ll
 ; libjpeg-turbo/optimized/transupp.c.ll
@@ -9,10 +9,11 @@
 ; llvm/optimized/AutoUpgrade.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/InstCombineCasts.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/SveEmitter.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_draw_sw_img.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/CGUITTFont.cpp.ll
 ; minetest/optimized/guiAnimatedImage.cpp.ll
@@ -58,7 +59,7 @@ entry:
 define i64 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = udiv i32 %1, %2
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }

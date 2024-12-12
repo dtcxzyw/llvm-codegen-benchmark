@@ -1,29 +1,12 @@
 
-; 6 occurrences:
-; jq/optimized/utf16_be.ll
-; jq/optimized/utf16_le.ll
-; oniguruma/optimized/utf16_be.ll
-; oniguruma/optimized/utf16_le.ll
-; ruby/optimized/utf_16be.ll
-; ruby/optimized/utf_16le.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000281(i8 %0, ptr %1, ptr %2) #0 {
-entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
-  %4 = icmp ult ptr %3, %1
-  %5 = icmp eq i8 %0, -36
-  %6 = select i1 %5, i1 %4, i1 false
-  ret i1 %6
-}
-
 ; 2 occurrences:
 ; redis/optimized/util.ll
 ; ruby/optimized/date_strftime.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000024c(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000088c(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -1
-  %4 = icmp ugt ptr %3, %1
+  %4 = icmp ult ptr %1, %3
   %5 = icmp ne i8 %0, 0
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -33,16 +16,31 @@ entry:
 ; qemu/optimized/util_cutils.c.ll
 ; quickjs/optimized/cutils.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000008c(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 -1
-  %4 = icmp ugt ptr %3, %1
+  %4 = icmp ult ptr %1, %3
   %5 = icmp ne i8 %0, 0
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
 }
 
-; 47 occurrences:
+; 4 occurrences:
+; jq/optimized/utf16_be.ll
+; jq/optimized/utf16_le.ll
+; oniguruma/optimized/utf16_be.ll
+; oniguruma/optimized/utf16_le.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000d01(i8 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
+  %4 = icmp ugt ptr %1, %3
+  %5 = icmp eq i8 %0, -36
+  %6 = select i1 %5, i1 %4, i1 false
+  ret i1 %6
+}
+
+; 46 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; llvm/optimized/Lexer.cpp.ll
 ; openjdk/optimized/c1_Runtime1.ll
@@ -89,12 +87,11 @@ entry:
 ; openjdk/optimized/whitebox.ll
 ; openjdk/optimized/xVerify.ll
 ; openjdk/optimized/zBarrierSet.ll
-; pocketpy/optimized/lexer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000211(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000c21(i8 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 5
-  %4 = icmp eq ptr %3, %1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 5
+  %4 = icmp eq ptr %1, %3
   %5 = icmp eq i8 %0, 3
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -103,23 +100,22 @@ entry:
 ; 1 occurrences:
 ; php/optimized/pcre2_substitute.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000241(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000881(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -1
-  %4 = icmp ugt ptr %3, %1
+  %4 = icmp ult ptr %1, %3
   %5 = icmp eq i8 %0, 92
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; llvm/optimized/CGRecordLayoutBuilder.cpp.ll
-; z3/optimized/sat_simplifier.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002cc(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000098c(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -32
-  %4 = icmp ne ptr %3, %1
+  %4 = icmp ne ptr %1, %3
   %5 = icmp ne i8 %0, 0
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -128,11 +124,23 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/fault.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000081(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 15
-  %4 = icmp ugt ptr %3, %1
+  %4 = icmp ult ptr %1, %3
   %5 = icmp eq i8 %0, 4
+  %6 = select i1 %5, i1 %4, i1 false
+  ret i1 %6
+}
+
+; 1 occurrences:
+; z3/optimized/sat_simplifier.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000d8c(i8 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 20
+  %4 = icmp ne ptr %1, %3
+  %5 = icmp ne i8 %0, 0
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
 }
@@ -140,11 +148,23 @@ entry:
 ; 1 occurrences:
 ; graphviz/optimized/ortho.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000002c(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 64
-  %4 = icmp eq ptr %3, %1
+  %4 = icmp eq ptr %1, %3
   %5 = icmp ne i8 %0, 0
+  %6 = select i1 %5, i1 %4, i1 false
+  ret i1 %6
+}
+
+; 1 occurrences:
+; pocketpy/optimized/lexer.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000821(i8 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -1
+  %4 = icmp eq ptr %1, %3
+  %5 = icmp eq i8 %0, 106
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
 }

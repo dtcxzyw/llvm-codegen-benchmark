@@ -1,11 +1,15 @@
 
-; 7 occurrences:
+; 11 occurrences:
 ; cmake/optimized/zstd_compress.c.ll
 ; linux/optimized/callchain.ll
 ; meilisearch-rs/optimized/2eqafq69fd46y14a.ll
 ; rust-analyzer-rs/optimized/10elsj6wik4dx3zk.ll
 ; rust-analyzer-rs/optimized/1yf6pyfk8ihkfv63.ll
 ; rust-analyzer-rs/optimized/46lti8aa4smufhcb.ll
+; zed-rs/optimized/28x1e2vfzxi98zqprbft2w8hu.ll
+; zed-rs/optimized/4jjx0s36b1sfrqbb0zz907syp.ll
+; zed-rs/optimized/9fz5l76t5byggb8exxkeuxjql.ll
+; zed-rs/optimized/a50lo7f303ucwqc37yc15xnyr.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000030f(i64 %0, i1 %1, i64 %2) #0 {

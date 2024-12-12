@@ -10,10 +10,6 @@ func000000000000000f:                   # @func000000000000000f
 	leal	(%rdi,%rdx), %eax
 	andl	%esi, %eax
 	retq
-func0000000000000003:                   # @func0000000000000003
-	leal	(%rdi,%rdx), %eax
-	andl	%esi, %eax
-	retq
 func0000000000000007:                   # @func0000000000000007
 	leal	(%rdi,%rdx), %eax
 	andl	%esi, %eax

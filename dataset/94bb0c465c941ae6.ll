@@ -35,16 +35,17 @@
 define i1 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
-  %4 = icmp ugt i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp ult i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 24 occurrences:
+; 25 occurrences:
 ; abseil-cpp/optimized/extension_test.cc.ll
 ; abseil-cpp/optimized/hashtablez_sampler_test.cc.ll
 ; abseil-cpp/optimized/mutex_test.cc.ll
 ; abseil-cpp/optimized/sample_recorder_test.cc.ll
+; boost/optimized/benchmark_fstream.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
@@ -66,11 +67,11 @@ entry:
 ; openusd/optimized/testHdSortedIdsPerf.cpp.ll
 ; velox/optimized/Utils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000048(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 1
-  %4 = icmp ugt i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp ult i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -112,10 +113,10 @@ entry:
 ; z3/optimized/sat_solver.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000004c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 1
-  %4 = icmp sgt i64 %3, %1
+  %4 = icmp slt i64 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -126,7 +127,7 @@ entry:
 define i1 @func0000000000000014(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 9
-  %4 = icmp slt i64 %3, %1
+  %4 = icmp sgt i64 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -144,7 +145,7 @@ entry:
 define i1 @func0000000000000012(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 3
-  %4 = icmp ule i64 %3, %1
+  %4 = icmp uge i64 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -152,10 +153,10 @@ entry:
 ; 1 occurrences:
 ; wasmedge/optimized/wasifunc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000ea(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 16
-  %4 = icmp uge i64 %3, %1
+  %4 = icmp samesign ule i64 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -164,10 +165,10 @@ entry:
 ; proxygen/optimized/QPACKDecoder.cpp.ll
 ; velox/optimized/VectorFuzzer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c8(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 32
-  %4 = icmp ugt i64 %3, %1
+  %4 = icmp ult i64 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -177,10 +178,10 @@ entry:
 ; openusd/optimized/testUsdStageThreading.cpp.ll
 ; velox/optimized/VectorFuzzer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000088(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 32
-  %4 = icmp ugt i64 %3, %1
+  %4 = icmp ult i64 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -188,10 +189,10 @@ entry:
 ; 1 occurrences:
 ; proxygen/optimized/QPACKDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000070(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000d0(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 1
-  %4 = icmp ult i64 %3, %1
+  %4 = icmp ugt i64 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -199,11 +200,11 @@ entry:
 ; 1 occurrences:
 ; lief/optimized/base64.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000008a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 2
-  %4 = icmp uge i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp ule i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -216,7 +217,7 @@ entry:
 define i1 @func0000000000000002(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 9
-  %4 = icmp eq i64 %3, %1
+  %4 = icmp eq i64 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -227,8 +228,8 @@ entry:
 define i1 @func0000000000000010(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 3
-  %4 = icmp ult i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp ugt i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -236,11 +237,11 @@ entry:
 ; llvm/optimized/StackColoring.cpp.ll
 ; pbrt-v4/optimized/aggregates.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000042(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 3
-  %4 = icmp eq i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp eq i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -251,8 +252,8 @@ entry:
 define i1 @func000000000000000a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 1
-  %4 = icmp uge i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp ule i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -262,19 +263,19 @@ entry:
 define i1 @func0000000000000016(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 12
-  %4 = icmp sle i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp sge i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; linux/optimized/dm-stats.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000d8(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 3
-  %4 = icmp ne i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp ne i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -283,10 +284,10 @@ entry:
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002e(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000004e(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 1
-  %4 = icmp sge i64 %3, %1
+  %4 = icmp sle i64 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -294,11 +295,11 @@ entry:
 ; 1 occurrences:
 ; mimalloc/optimized/os.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000d4(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 1
-  %4 = icmp slt i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp sgt i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

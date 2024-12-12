@@ -22,7 +22,7 @@ func0000000000000008:                   # @func0000000000000008
 	setae	%al
 	orb	%dil, %al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	testq	%rdx, %rdx
 	sete	%cl
 	testq	%rsi, %rsi
@@ -30,27 +30,21 @@ func0000000000000031:                   # @func0000000000000031
 	orb	%cl, %al
 	orb	%dil, %al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	imulq	%rdx, %rsi
 	cmpq	$2147483647, %rsi               # imm = 0x7FFFFFFF
 	seta	%al
 	orb	%dil, %al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	imulq	%rdx, %rsi
 	cmpq	$2147483647, %rsi               # imm = 0x7FFFFFFF
 	seta	%al
 	orb	%dil, %al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	imulq	%rdx, %rsi
 	testq	%rsi, %rsi
 	sets	%al
-	orb	%dil, %al
-	retq
-func0000000000000014:                   # @func0000000000000014
-	imulq	%rdx, %rsi
-	cmpq	$358401, %rsi                   # imm = 0x57801
-	setb	%al
 	orb	%dil, %al
 	retq

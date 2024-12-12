@@ -1,7 +1,8 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; cpython/optimized/mpdecimal.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i8 %0, i32 %1) #0 {
 entry:
@@ -11,7 +12,7 @@ entry:
   ret i32 %4
 }
 
-; 11 occurrences:
+; 13 occurrences:
 ; hyperscan/optimized/accelcompile.cpp.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
@@ -19,6 +20,8 @@ entry:
 ; linux/optimized/intel_rps.ll
 ; linux/optimized/maple_tree.ll
 ; linux/optimized/psmouse-base.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; protobuf/optimized/descriptor.cc.ll
 ; protobuf/optimized/extension_set.cc.ll
 ; protobuf/optimized/field_mask_util.cc.ll

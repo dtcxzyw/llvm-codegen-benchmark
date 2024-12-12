@@ -1,5 +1,5 @@
 
-; 314 occurrences:
+; 328 occurrences:
 ; abseil-cpp/optimized/examples_test.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; abseil-cpp/optimized/randen_engine_test.cc.ll
@@ -30,6 +30,27 @@
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/channel.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/main.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/process.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/spawn.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/target.ll
+; boost/optimized/wait.ll
 ; cmake/optimized/archive_read_disk_posix.c.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; cmake/optimized/cmDocumentationFormatter.cxx.ll
@@ -64,7 +85,6 @@
 ; git/optimized/apply.ll
 ; git/optimized/dir.ll
 ; git/optimized/kwset.ll
-; git/optimized/tr2_tls.ll
 ; git/optimized/trace2.ll
 ; git/optimized/xmerge.ll
 ; graphviz/optimized/gvdevice_kitty.c.ll
@@ -72,10 +92,8 @@
 ; hdf5/optimized/H5FDcore.c.ll
 ; hdf5/optimized/H5FSsection.c.ll
 ; hdf5/optimized/H5MF.c.ll
-; hdf5/optimized/H5MFsection.c.ll
 ; hdf5/optimized/H5PB.c.ll
 ; hermes/optimized/HadesGC.cpp.ll
-; hermes/optimized/IR.cpp.ll
 ; hermes/optimized/Path.cpp.ll
 ; hermes/optimized/StringRef.cpp.ll
 ; hyperscan/optimized/Parser.cpp.ll
@@ -116,11 +134,9 @@
 ; llvm/optimized/DIPrinter.cpp.ll
 ; llvm/optimized/Disassembler.cpp.ll
 ; llvm/optimized/DwarfDebug.cpp.ll
-; llvm/optimized/FormatVariadic.cpp.ll
 ; llvm/optimized/GlobalOpt.cpp.ll
 ; llvm/optimized/LoadStoreOpt.cpp.ll
 ; llvm/optimized/MatchFilePath.cpp.ll
-; llvm/optimized/RISCVISAInfo.cpp.ll
 ; llvm/optimized/RISCVVIntrinsicUtils.cpp.ll
 ; llvm/optimized/Regex.cpp.ll
 ; llvm/optimized/SPIR.cpp.ll
@@ -148,12 +164,8 @@
 ; mold/optimized/passes.cc.ALPHA.cc.ll
 ; mold/optimized/passes.cc.ARM64.cc.ll
 ; mold/optimized/passes.cc.LOONGARCH64.cc.ll
-; mold/optimized/passes.cc.PPC64V1.cc.ll
 ; mold/optimized/passes.cc.PPC64V2.cc.ll
-; mold/optimized/passes.cc.RV64BE.cc.ll
 ; mold/optimized/passes.cc.RV64LE.cc.ll
-; mold/optimized/passes.cc.S390X.cc.ll
-; mold/optimized/passes.cc.SPARC64.cc.ll
 ; mold/optimized/passes.cc.X86_64.cc.ll
 ; nghttp2/optimized/client.c.ll
 ; nix/optimized/canon-path.ll
@@ -211,14 +223,12 @@
 ; openusd/optimized/fileSystem.cpp.ll
 ; openvdb/optimized/AttributeSet.cc.ll
 ; php/optimized/formatted_print.ll
-; php/optimized/math.ll
 ; php/optimized/url_scanner_ex.ll
 ; portaudio/optimized/pa_linux_alsa.c.ll
 ; postgres/optimized/freepage.ll
 ; postgres/optimized/nodeSetOp.ll
 ; postgres/optimized/pg_shmem.ll
 ; postgres/optimized/walsummarizer.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; proxygen/optimized/ParseURL.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; pybind11/optimized/test_stl.cpp.ll
@@ -288,7 +298,6 @@
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; typst-rs/optimized/3z60jkym58xbhjyi.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
-; wasmedge/optimized/vinode.cpp.ll
 ; wireshark/optimized/atap_data_model.cpp.ll
 ; wireshark/optimized/decode_as_delegate.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
@@ -306,6 +315,11 @@
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
 ; z3/optimized/arith_sls.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/7xoulo9o2q4wd1npp9yutbl3x.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/eldybx25av55fm0jlf5yq64qn.ll
 ; zstd/optimized/zstd_decompress.c.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; zstd/optimized/zstd_v02.c.ll
@@ -322,8 +336,9 @@ entry:
   ret i64 %4
 }
 
-; 38 occurrences:
+; 37 occurrences:
 ; arrow/optimized/diff.cc.ll
+; boost/optimized/numeric.ll
 ; casadi/optimized/slice.cpp.ll
 ; clamav/optimized/cvd.c.ll
 ; clamav/optimized/filefn.cpp.ll
@@ -345,8 +360,6 @@ entry:
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
 ; luau/optimized/isocline.c.ll
-; openblas/optimized/dgemv_n.c.ll
-; openblas/optimized/dgemv_t.c.ll
 ; openjdk/optimized/g1ConcurrentRefineStats.ll
 ; openjdk/optimized/jfrCheckpointManager.ll
 ; openjdk/optimized/jfrDeprecationEventWriter.ll
@@ -369,11 +382,10 @@ entry:
   ret i64 %4
 }
 
-; 30 occurrences:
+; 34 occurrences:
 ; clamav/optimized/libmspack.c.ll
 ; cmake/optimized/nghttp2_session.c.ll
 ; coreutils-rs/optimized/4il3dwdvn9kvvj4p.ll
-; coreutils-rs/optimized/4rjs632i9cta2yqf.ll
 ; coreutils-rs/optimized/594a9u59es5pyenu.ll
 ; coreutils-rs/optimized/czge978gjagq0cc.ll
 ; coreutils-rs/optimized/jzu2v52gceikjdv.ll
@@ -398,8 +410,13 @@ entry:
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
-; wasmtime-rs/optimized/1aegspwwbjc82p4w.ll
-; wasmtime-rs/optimized/1d0hmxdweaxxi3oz.ll
+; zed-rs/optimized/4kidsk70o8yfs5e4frb89ok7e.ll
+; zed-rs/optimized/5jgfm3klpby9utjhkan94f3dk.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/b0ehx4vbxawrtril1zkysl0b6.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i1 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -408,8 +425,10 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; wireshark/optimized/vwr.c.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i1 %0, i64 %1, i64 %2) #0 {
 entry:

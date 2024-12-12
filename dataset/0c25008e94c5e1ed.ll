@@ -1,5 +1,5 @@
 
-; 58 occurrences:
+; 57 occurrences:
 ; csmith/optimized/StringUtils.cpp.ll
 ; faiss/optimized/LocalSearchQuantizer.cpp.ll
 ; git/optimized/abspath.ll
@@ -8,7 +8,6 @@
 ; git/optimized/apply.ll
 ; git/optimized/bugreport.ll
 ; git/optimized/clean.ll
-; git/optimized/commit-tree.ll
 ; git/optimized/commit.ll
 ; git/optimized/daemon.ll
 ; git/optimized/delta-islands.ll
@@ -59,10 +58,10 @@
 ; mold/optimized/cmdline.cc.SPARC64.cc.ll
 ; mold/optimized/cmdline.cc.X86_64.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000042(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -1
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   %4 = icmp eq i64 %0, -1
   %5 = or i1 %4, %3
   ret i1 %5
@@ -74,46 +73,22 @@ entry:
 ; openmpi/optimized/opal_init_core.ll
 ; zxing/optimized/QRVersion.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000222(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000842(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   %4 = icmp eq i64 %0, 0
   %5 = or i1 %4, %3
   ret i1 %5
 }
 
 ; 1 occurrences:
-; lief/optimized/psa_crypto_storage.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000110(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add i64 %1, -36
-  %3 = icmp ult i64 %2, %0
-  %4 = icmp ugt i64 %0, 8191
-  %5 = or i1 %3, %4
-  ret i1 %5
-}
-
-; 1 occurrences:
-; lief/optimized/psa_crypto_storage.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000310(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add nsw i64 %1, -36
-  %3 = icmp ult i64 %2, %0
-  %4 = icmp ugt i64 %0, 8191
-  %5 = or i1 %3, %4
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_table.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -1
-  %3 = icmp ugt i64 %2, %0
+  %3 = icmp ult i64 %0, %2
   %4 = icmp eq i64 %0, -1
   %5 = or i1 %3, %4
   ret i1 %5
@@ -122,10 +97,10 @@ entry:
 ; 1 occurrences:
 ; oiio/optimized/printinfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000228(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000848(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   %4 = icmp ult i64 %0, 8
   %5 = or i1 %4, %3
   ret i1 %5

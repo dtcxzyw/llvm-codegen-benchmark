@@ -1,5 +1,5 @@
 
-; 53 occurrences:
+; 56 occurrences:
 ; abc/optimized/acbFunc.c.ll
 ; draco/optimized/float_points_tree_decoder.cc.ll
 ; draco/optimized/kd_tree_attributes_decoder.cc.ll
@@ -16,6 +16,9 @@
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/KnownBits.cpp.ll
 ; luau/optimized/ltable.cpp.ll
+; lvgl/optimized/lv_obj_scroll.ll
+; lvgl/optimized/lv_scale.ll
+; lvgl/optimized/lv_table.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; ncnn/optimized/convolution.cpp.ll
 ; ncnn/optimized/convolution1d.cpp.ll
@@ -61,13 +64,15 @@ entry:
   ret i32 %4
 }
 
-; 177 occurrences:
+; 182 occurrences:
 ; abc/optimized/giaAiger.c.ll
 ; abc/optimized/inflate.c.ll
 ; abc/optimized/ioReadAiger.c.ll
 ; abc/optimized/ioWriteBook.c.ll
 ; abc/optimized/ioaReadAig.c.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; clamav/optimized/inflate64.c.ll
 ; clamav/optimized/pe.c.ll
 ; clamav/optimized/yc.c.ll
@@ -153,6 +158,9 @@ entry:
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_obj_pos.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
@@ -162,7 +170,6 @@ entry:
 ; minetest/optimized/mapgen_v6.cpp.ll
 ; minetest/optimized/mg_decoration.cpp.ll
 ; mitsuba3/optimized/sdfgrid.cpp.ll
-; oiio/optimized/imagecache.cpp.ll
 ; oiio/optimized/imageinput.cpp.ll
 ; openblas/optimized/dsbgst.c.ll
 ; openjdk/optimized/hb-aat-layout.ll
@@ -229,6 +236,7 @@ entry:
 ; z3/optimized/sat_cut_simplifier.cpp.ll
 ; z3/optimized/sat_npn3_finder.cpp.ll
 ; z3/optimized/symmetry_reduce_tactic.cpp.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; zlib/optimized/gzread.c.ll
 ; zlib/optimized/inflate.c.ll
 ; zstd/optimized/zstd_compress.c.ll
@@ -247,7 +255,7 @@ entry:
   ret i32 %4
 }
 
-; 37 occurrences:
+; 41 occurrences:
 ; abc/optimized/giaDup.c.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
@@ -264,6 +272,10 @@ entry:
 ; llvm/optimized/Lexer.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luau/optimized/BytecodeBuilder.cpp.ll
+; lvgl/optimized/lv_checkbox.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_obj_scroll.ll
+; lvgl/optimized/lv_switch.ll
 ; minetest/optimized/CGUIEditBox.cpp.ll
 ; minetest/optimized/CGUIFileOpenDialog.cpp.ll
 ; minetest/optimized/guiEditBoxWithScrollbar.cpp.ll
@@ -342,7 +354,7 @@ entry:
   ret i32 %4
 }
 
-; 303 occurrences:
+; 308 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcDar.c.ll
@@ -358,6 +370,7 @@ entry:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; assimp/optimized/Assimp.cpp.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/decode.c.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_2.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_3.cc.ll
@@ -436,6 +449,13 @@ entry:
 ; llvm/optimized/SelectOptimize.cpp.ll
 ; llvm/optimized/SyntheticCountsPropagation.cpp.ll
 ; llvm/optimized/SyntheticCountsUtils.cpp.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_checkbox.ll
+; lvgl/optimized/lv_draw_sw_fill.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_obj_scroll.ll
+; lvgl/optimized/lv_scale.ll
+; lvgl/optimized/lv_switch.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
@@ -468,14 +488,11 @@ entry:
 ; nuklear/optimized/unity.c.ll
 ; oiio/optimized/imagebufalgo_xform.cpp.ll
 ; oiio/optimized/imagecache.cpp.ll
-; openblas/optimized/dgbtrf.c.ll
-; openblas/optimized/dgeqp3.c.ll
 ; openblas/optimized/dgghd3.c.ll
 ; openblas/optimized/dlaeda.c.ll
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
 ; openblas/optimized/dorbdb.c.ll
-; openblas/optimized/dorcsd.c.ll
 ; openblas/optimized/dsptrs.c.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; opencv/optimized/blenders.cpp.ll

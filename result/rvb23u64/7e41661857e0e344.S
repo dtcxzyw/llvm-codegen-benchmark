@@ -13,5 +13,6 @@ func000000000000000c:                   # @func000000000000000c
 	andi	a1, a1, 6
 	srl	a0, a0, a1
 	andi	a0, a0, 3
+	addi	a0, a0, -3
 	snez	a0, a0
 	ret

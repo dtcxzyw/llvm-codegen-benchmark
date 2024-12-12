@@ -75,7 +75,7 @@ func0000000000000008:                   # @func0000000000000008
 	idivl	%ecx
 	vpinsrd	$3, %edx, %xmm3, %xmm1
 	vpmovsxdq	%xmm1, %ymm1
-	vpcmpltuq	%ymm0, %ymm1, %k0
+	vpcmpnleuq	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

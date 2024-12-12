@@ -5,9 +5,16 @@ func000000000000001c:                   // @func000000000000001c
 	smaddl	x0, w9, w8, x0
 	ret
                                         // -- End function
+func0000000000000004:                   // @func0000000000000004
+// %bb.0:                               // %entry
+	mov	w8, #272                        // =0x110
+	sub	w9, w1, #1
+	smaddl	x0, w9, w8, x0
+	ret
+                                        // -- End function
 func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
-	mov	w8, #10                         // =0xa
+	mov	w8, #88                         // =0x58
 	sub	w9, w1, #1
 	smaddl	x0, w9, w8, x0
 	ret

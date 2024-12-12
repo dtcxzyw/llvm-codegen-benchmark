@@ -1,10 +1,10 @@
 
 ; 27 occurrences:
-; abc/optimized/giaEra.c.ll
+; boost/optimized/test_codecvt.ll
+; boost/optimized/test_fs.ll
 ; clamav/optimized/matcher-pcre.c.ll
 ; cvc5/optimized/inst_strategy_e_matching.cpp.ll
 ; gromacs/optimized/update.cpp.ll
-; harfbuzz/optimized/hb-subset.cc.ll
 ; hwloc/optimized/lstopo-lstopo-draw.ll
 ; hwloc/optimized/lstopo_no_graphics-lstopo-draw.ll
 ; kcp/optimized/ikcp.ll
@@ -36,14 +36,13 @@ entry:
   ret i32 %5
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; freetype/optimized/psaux.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-ot-cff1-table.cc.ll
 ; icu/optimized/collationdatabuilder.ll
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
 ; libquic/optimized/tasn_enc.c.ll
-; linux/optimized/utbuffer.ll
 ; mitsuba3/optimized/func.cpp.ll
 ; openjdk/optimized/hb-ot-cff1-table.ll
 ; openmpi/optimized/common_ompio_file_open.ll
@@ -63,28 +62,37 @@ entry:
   ret i32 %5
 }
 
-; 9 occurrences:
+; 4 occurrences:
 ; abc/optimized/cnfPost.c.ll
-; harfbuzz/optimized/harfbuzz.cc.ll
-; harfbuzz/optimized/hb-ot-cff1-table.cc.ll
-; linux/optimized/nfs3xdr.ll
 ; llvm/optimized/DWARFUnitIndex.cpp.ll
-; llvm/optimized/PseudoProbe.cpp.ll
-; openjdk/optimized/hb-ot-cff1-table.ll
 ; openssl/optimized/libcrypto-lib-evp_fetch.ll
 ; openssl/optimized/libcrypto-shlib-evp_fetch.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 8388608
+  %4 = and i1 %1, %3
+  %5 = select i1 %4, i32 %0, i32 0
+  ret i32 %5
+}
+
+; 6 occurrences:
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-ot-cff1-table.cc.ll
+; llvm/optimized/PseudoProbe.cpp.ll
+; openjdk/optimized/hb-ot-cff1-table.ll
+; openssl/optimized/libcrypto-lib-evp_fetch.ll
+; openssl/optimized/libcrypto-shlib-evp_fetch.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 256
   %4 = and i1 %3, %1
   %5 = select i1 %4, i32 %0, i32 0
   ret i32 %5
 }
 
-; 8 occurrences:
-; harfbuzz/optimized/hb-subset.cc.ll
-; linux/optimized/utbuffer.ll
+; 6 occurrences:
 ; llvm/optimized/PPMacroExpansion.cpp.ll
 ; llvm/optimized/SemaARM.cpp.ll
 ; llvm/optimized/SemaDeclAttr.cpp.ll
@@ -92,10 +100,10 @@ entry:
 ; openssl/optimized/libcrypto-lib-bn_exp.ll
 ; openssl/optimized/libcrypto-shlib-bn_exp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i1 %1, i32 %2) #0 {
+define i32 @func0000000000000018(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, 4
-  %4 = and i1 %3, %1
+  %3 = icmp samesign ugt i32 %2, 4
+  %4 = and i1 %1, %3
   %5 = select i1 %4, i32 %0, i32 0
   ret i32 %5
 }
@@ -117,7 +125,9 @@ entry:
   ret i32 %5
 }
 
-; 23 occurrences:
+; 25 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
@@ -147,6 +157,17 @@ entry:
   %3 = icmp sgt i32 %2, -1
   %4 = and i1 %3, %1
   %5 = select i1 %4, i32 %0, i32 -1
+  ret i32 %5
+}
+
+; 1 occurrences:
+; ocio/optimized/GammaOpData.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ugt i32 %2, 1
+  %4 = and i1 %3, %1
+  %5 = select i1 %4, i32 %0, i32 0
   ret i32 %5
 }
 

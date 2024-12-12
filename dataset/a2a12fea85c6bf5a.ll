@@ -8,10 +8,10 @@
 define i64 @func000000000000006c(i64 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = add nuw nsw i128 %3, %1
+  %4 = add nuw nsw i128 %1, %3
   %5 = lshr i128 %4, 56
   %6 = trunc nuw nsw i128 %5 to i64
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 
@@ -22,10 +22,10 @@ entry:
 define i64 @func00000000000000ef(i64 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext nneg i64 %2 to i128
-  %4 = add nuw nsw i128 %3, %1
+  %4 = add nuw nsw i128 %1, %3
   %5 = lshr i128 %4, 56
   %6 = trunc nuw nsw i128 %5 to i64
-  %7 = add nuw nsw i64 %6, %0
+  %7 = add nuw nsw i64 %0, %6
   ret i64 %7
 }
 
@@ -38,10 +38,10 @@ entry:
 define i64 @func000000000000006d(i64 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = add nuw nsw i128 %3, %1
+  %4 = add nuw nsw i128 %1, %3
   %5 = lshr i128 %4, 64
   %6 = trunc nuw nsw i128 %5 to i64
-  %7 = add nsw i64 %6, %0
+  %7 = add nsw i64 %0, %6
   ret i64 %7
 }
 
@@ -56,10 +56,10 @@ entry:
 define i64 @func0000000000000008(i64 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = add i128 %3, %1
+  %4 = add i128 %1, %3
   %5 = lshr i128 %4, 64
   %6 = trunc nuw i128 %5 to i64
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 
@@ -70,10 +70,10 @@ entry:
 define i64 @func0000000000000048(i64 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = add nuw i128 %3, %1
+  %4 = add nuw i128 %1, %3
   %5 = lshr i128 %4, 64
   %6 = trunc nuw i128 %5 to i64
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 
@@ -83,10 +83,10 @@ entry:
 define i64 @func0000000000000088(i64 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext nneg i64 %2 to i128
-  %4 = add i128 %3, %1
+  %4 = add i128 %1, %3
   %5 = lshr i128 %4, 64
   %6 = trunc nuw i128 %5 to i64
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 
@@ -96,10 +96,10 @@ entry:
 define i64 @func0000000000000028(i64 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = add nsw i128 %3, %1
+  %4 = add nsw i128 %1, %3
   %5 = lshr i128 %4, 64
   %6 = trunc nuw i128 %5 to i64
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 

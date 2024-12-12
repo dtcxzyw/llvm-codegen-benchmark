@@ -5,7 +5,7 @@
 ; php/optimized/zend_constants.ll
 ; postgres/optimized/pgtz.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 8589934592
   %3 = ashr exact i64 %2, 32
@@ -19,7 +19,7 @@ entry:
 ; eastl/optimized/TestExtra.cpp.ll
 ; eastl/optimized/TestSort.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000124(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = ashr i64 %2, 1

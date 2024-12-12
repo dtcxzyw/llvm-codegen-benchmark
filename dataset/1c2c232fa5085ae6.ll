@@ -10,7 +10,7 @@
 ; openjdk/optimized/bitMap.ll
 ; redis/optimized/bitops.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0) #0 {
+define i64 @func0000000000000021(i64 %0) #0 {
 entry:
   %1 = shl nsw i64 -1, %0
   %2 = xor i64 %1, -1
@@ -23,7 +23,7 @@ entry:
 ; cpython/optimized/obmalloc.ll
 ; mimalloc/optimized/bitmap.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0) #0 {
+define i64 @func0000000000000028(i64 %0) #0 {
 entry:
   %1 = shl nsw i64 -1, %0
   %2 = xor i64 %1, -1

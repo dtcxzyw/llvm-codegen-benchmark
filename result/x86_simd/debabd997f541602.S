@@ -49,7 +49,7 @@
 	.short	35                              # 0x23
 	.short	35                              # 0x23
 	.short	35                              # 0x23
-func0000000000000442:                   # @func0000000000000442
+func0000000000001082:                   # @func0000000000001082
 	vpcmpeqw	.LCPI0_0(%rip), %ymm1, %k0
 	vpcmpeqw	.LCPI0_1(%rip), %ymm0, %k1
 	korw	%k0, %k1, %k0
@@ -109,7 +109,7 @@ func0000000000000442:                   # @func0000000000000442
 	.short	31                              # 0x1f
 	.short	31                              # 0x1f
 	.short	31                              # 0x1f
-func0000000000001042:                   # @func0000000000001042
+func0000000000004082:                   # @func0000000000004082
 	vpcmpltuw	.LCPI1_0(%rip), %ymm1, %k0
 	vpcmpeqw	.LCPI1_1(%rip), %ymm0, %k1
 	vpcmpeqw	.LCPI1_2(%rip), %ymm0, %k2

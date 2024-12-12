@@ -33,7 +33,7 @@ entry:
   %2 = lshr i64 %1, 11
   %3 = and i64 %2, 8
   %4 = xor i64 %3, 8
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 
@@ -46,7 +46,7 @@ entry:
   %2 = add i64 %1, 18014398408810496
   %3 = lshr i64 %2, 42
   %4 = and i64 %3, 8128
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   ret i64 %5
 }
 

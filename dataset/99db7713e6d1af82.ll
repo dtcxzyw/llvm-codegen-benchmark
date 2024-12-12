@@ -35,8 +35,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -115,6 +113,8 @@
 ; spike/optimized/f64_div.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; z3/optimized/polynomial.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
@@ -188,7 +188,8 @@ entry:
   ret i64 %3
 }
 
-; 91 occurrences:
+; 92 occurrences:
+; boost/optimized/to_chars.ll
 ; clamav/optimized/clamsubmit.c.ll
 ; clamav/optimized/iso9660.c.ll
 ; cmake/optimized/fastcover.c.ll

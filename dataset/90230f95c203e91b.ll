@@ -1,5 +1,5 @@
 
-; 381 occurrences:
+; 379 occurrences:
 ; abc/optimized/abcDsd.c.ll
 ; abc/optimized/abcMerge.c.ll
 ; abc/optimized/abcOrchestration.c.ll
@@ -29,6 +29,8 @@
 ; abc/optimized/nwkUtil.c.ll
 ; abc/optimized/plaSimple.c.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/sparring_partner.ll
+; boost/optimized/target.ll
 ; bullet3/optimized/btBox2dShape.ll
 ; bullet3/optimized/btBoxShape.ll
 ; clamav/optimized/matcher-ac.c.ll
@@ -72,7 +74,6 @@
 ; imgui/optimized/imgui_demo.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
-; libevent/optimized/event.c.ll
 ; libjpeg-turbo/optimized/md5.c.ll
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
 ; libpng/optimized/pngwrite.c.ll
@@ -180,7 +181,6 @@
 ; llvm/optimized/ParentMapContext.cpp.ll
 ; llvm/optimized/RISCVExpandAtomicPseudoInsts.cpp.ll
 ; llvm/optimized/RISCVExpandPseudoInsts.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVRegisterInfo.cpp.ll
 ; llvm/optimized/ReachableCode.cpp.ll
@@ -246,6 +246,7 @@
 ; luajit/optimized/lj_debug_dyn.ll
 ; luajit/optimized/lj_strfmt.ll
 ; luajit/optimized/lj_strfmt_dyn.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/edit_point.cpp.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; miniaudio/optimized/unity.c.ll
@@ -281,7 +282,6 @@
 ; openjdk/optimized/oopMapCache.ll
 ; openjdk/optimized/parse1.ll
 ; openjdk/optimized/vector.ll
-; openssl/optimized/ctype_internal_test-bin-ctype_internal_test.ll
 ; openssl/optimized/libcrypto-lib-bss_mem.ll
 ; openssl/optimized/libcrypto-lib-ec_key.ll
 ; openssl/optimized/libcrypto-lib-v3_purp.ll
@@ -335,8 +335,6 @@
 ; qemu/optimized/hw_net_e1000.c.ll
 ; qemu/optimized/hw_net_e1000e_core.c.ll
 ; qemu/optimized/hw_net_igb_core.c.ll
-; qemu/optimized/hw_net_pcnet.c.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
 ; qemu/optimized/hw_watchdog_wdt_i6300esb.c.ll
 ; qemu/optimized/linux-user_mmap.c.ll
 ; qemu/optimized/system_physmem.c.ll

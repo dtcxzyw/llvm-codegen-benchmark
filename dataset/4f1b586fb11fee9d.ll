@@ -48,7 +48,7 @@ define i32 @func0000000000000005(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = sub nsw i32 %1, %3
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -72,7 +72,7 @@ define i32 @func0000000000000004(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = sub nsw i32 %1, %3
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -83,7 +83,7 @@ define i32 @func0000000000000001(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = sub i32 %1, %3
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -118,6 +118,19 @@ entry:
   ret i32 %5
 }
 
+; 3 occurrences:
+; lvgl/optimized/lv_draw_sw_arc.ll
+; openspiel/optimized/ultimate_tic_tac_toe.cc.ll
+; wireshark/optimized/packet-vnc.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000015(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext nneg i8 %2 to i32
+  %4 = sub nsw i32 %1, %3
+  %5 = add nsw i32 %4, %0
+  ret i32 %5
+}
+
 ; 7 occurrences:
 ; icu/optimized/genrb.ll
 ; linux/optimized/af_inet.ll
@@ -132,18 +145,6 @@ entry:
   %3 = zext nneg i8 %2 to i32
   %4 = sub i32 %1, %3
   %5 = add i32 %4, %0
-  ret i32 %5
-}
-
-; 2 occurrences:
-; openspiel/optimized/ultimate_tic_tac_toe.cc.ll
-; wireshark/optimized/packet-vnc.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000015(i32 %0, i32 %1, i8 %2) #0 {
-entry:
-  %3 = zext nneg i8 %2 to i32
-  %4 = sub nsw i32 %1, %3
-  %5 = add nsw i32 %4, %0
   ret i32 %5
 }
 

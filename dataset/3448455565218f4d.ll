@@ -1,8 +1,10 @@
 
-; 16 occurrences:
+; 18 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/src.ll
 ; postgres/optimized/d2s.ll
 ; postgres/optimized/d2s_shlib.ll
 ; postgres/optimized/d2s_srv.ll
@@ -66,7 +68,8 @@ entry:
   ret i64 %2
 }
 
-; 169 occurrences:
+; 170 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -251,6 +254,16 @@ define i64 @func0000000000000004(i128 %0) #0 {
 entry:
   %1 = trunc nsw i128 %0 to i64
   %2 = add i64 %1, -971890876800001
+  ret i64 %2
+}
+
+; 1 occurrences:
+; boost/optimized/approximately_equals.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(i128 %0) #0 {
+entry:
+  %1 = trunc i128 %0 to i64
+  %2 = add nuw i64 %1, 1
   ret i64 %2
 }
 

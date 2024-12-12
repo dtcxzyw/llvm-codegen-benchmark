@@ -17,7 +17,7 @@ define i32 @func000000000000001e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 15, %1
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %2
+  %5 = and i32 %2, %4
   %6 = shl nuw nsw i32 %0, %1
   %7 = or i32 %6, %5
   ret i32 %7
@@ -39,15 +39,14 @@ define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 255, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   %6 = shl nuw i32 %1, %2
   %7 = or i32 %5, %6
   ret i32 %7
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; cpython/optimized/frameobject.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_display_power_well.ll
 ; linux/optimized/intel_tc.ll
@@ -67,7 +66,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 16777215, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   %6 = shl i32 %1, %2
   %7 = or i32 %5, %6
   ret i32 %7
@@ -84,7 +83,7 @@ define i32 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 1, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   %6 = shl i32 %1, %2
   %7 = or i32 %5, %6
   ret i32 %7
@@ -101,7 +100,24 @@ define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 3, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
+  %6 = shl i32 %1, %2
+  %7 = or i32 %5, %6
+  ret i32 %7
+}
+
+; 5 occurrences:
+; boost/optimized/basic_text_iprimitive.ll
+; boost/optimized/basic_text_oprimitive.ll
+; boost/optimized/basic_text_wiprimitive.ll
+; boost/optimized/basic_text_woprimitive.ll
+; draco/optimized/rans_bit_encoder.cc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl nsw i32 -1, %2
+  %4 = xor i32 %3, -1
+  %5 = and i32 %0, %4
   %6 = shl i32 %1, %2
   %7 = or i32 %5, %6
   ret i32 %7
@@ -114,21 +130,8 @@ define i32 @func000000000000000e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 -1, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   %6 = shl nuw nsw i32 %1, %2
-  %7 = or i32 %5, %6
-  ret i32 %7
-}
-
-; 1 occurrences:
-; draco/optimized/rans_bit_encoder.cc.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = shl nsw i32 -1, %2
-  %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
-  %6 = shl i32 %1, %2
   %7 = or i32 %5, %6
   ret i32 %7
 }
@@ -141,7 +144,7 @@ define i32 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 255, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   %6 = shl nuw nsw i32 %1, %2
   %7 = or i32 %5, %6
   ret i32 %7
@@ -154,7 +157,7 @@ define i32 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 3, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   %6 = shl nsw i32 %1, %2
   %7 = or i32 %5, %6
   ret i32 %7
@@ -167,7 +170,7 @@ define i32 @func0000000000000012(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 255, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   %6 = shl nsw i32 %1, %2
   %7 = or i32 %5, %6
   ret i32 %7

@@ -24,7 +24,7 @@ func0000000000000008:                   # @func0000000000000008
 	retq
 func0000000000000000:                   # @func0000000000000000
 	movl	%edi, %eax
-	shrl	%edx
+	shrl	$3, %edx
 	addl	%esi, %edx
 	subl	%edx, %eax
 	retq

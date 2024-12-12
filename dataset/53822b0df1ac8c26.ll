@@ -15,7 +15,7 @@ entry:
   ret i8 %4
 }
 
-; 22 occurrences:
+; 20 occurrences:
 ; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
 ; draco/optimized/symbol_encoding.cc.ll
 ; hyperscan/optimized/block.c.ll
@@ -28,8 +28,6 @@ entry:
 ; hyperscan/optimized/stream.c.ll
 ; hyperscan/optimized/teddy_compile.cpp.ll
 ; llvm/optimized/TargetLibraryInfo.cpp.ll
-; luajit/optimized/lj_vmevent.ll
-; luajit/optimized/lj_vmevent_dyn.ll
 ; postgres/optimized/arrayfuncs.ll
 ; postgres/optimized/clog.ll
 ; qemu/optimized/hw_pci_msix.c.ll

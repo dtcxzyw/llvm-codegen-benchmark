@@ -9,7 +9,7 @@ func0000000000000004:                   # @func0000000000000004
 	vpaddq	.LCPI0_1(%rip){1to4}, %ymm2, %ymm0 {%k1}
 	vpaddq	.LCPI0_2(%rip){1to4}, %ymm0, %ymm0
 	retq
-func00000000000000c7:                   # @func00000000000000c7
+func0000000000000187:                   # @func0000000000000187
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vptestnmq	%ymm1, %ymm1, %k1
 	vpsubq	%ymm3, %ymm2, %ymm0 {%k1}

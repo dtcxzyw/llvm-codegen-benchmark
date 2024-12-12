@@ -1,5 +1,5 @@
 
-; 62 occurrences:
+; 63 occurrences:
 ; abc/optimized/ioReadPla.c.ll
 ; abc/optimized/sbdCut.c.ll
 ; annoy/optimized/annoymodule.ll
@@ -27,6 +27,7 @@
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; llvm/optimized/MachineLoopInfo.cpp.ll
 ; llvm/optimized/Verifier.cpp.ll
+; lvgl/optimized/lv_obj_style.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
 ; ncnn/optimized/convolution_x86_avx512.cpp.ll
@@ -63,7 +64,7 @@
 ; z3/optimized/smt_context.cpp.ll
 ; zxing/optimized/PDFReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, %0
   %3 = icmp eq i32 %0, -1
@@ -88,7 +89,7 @@ entry:
 ; wireshark/optimized/packet-q931.c.ll
 ; wireshark/optimized/packet-q933.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, %0
   %3 = icmp slt i32 %0, 1
@@ -132,7 +133,7 @@ entry:
 ; yosys/optimized/mutate.ll
 ; z3/optimized/theory_arith.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000c1(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, %0
   %3 = icmp eq i32 %0, -1
@@ -140,7 +141,7 @@ entry:
   ret i1 %4
 }
 
-; 50 occurrences:
+; 49 occurrences:
 ; cmake/optimized/cmFileCommand.cxx.ll
 ; cvc5/optimized/Solver.cc.ll
 ; faiss/optimized/NSG.cpp.ll
@@ -164,7 +165,6 @@ entry:
 ; opencv/optimized/calibrate.cpp.ll
 ; opencv/optimized/trace.cpp.ll
 ; opencv/optimized/ts.cpp.ll
-; opencv/optimized/version.cpp.ll
 ; openjdk/optimized/unsigned5.ll
 ; openspiel/optimized/mcts.cc.ll
 ; openspiel/optimized/spiel.cc.ll
@@ -192,7 +192,7 @@ entry:
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; yosys/optimized/Solver.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000066(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000c6(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, %0
   %3 = icmp slt i32 %0, 0
@@ -203,7 +203,7 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/CNullDriver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, %0
   %3 = icmp eq i32 %0, -1
@@ -215,7 +215,7 @@ entry:
 ; git/optimized/pack-bitmap-write.ll
 ; qemu/optimized/fdt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000086(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, %0
   %3 = icmp slt i32 %0, 0
@@ -229,7 +229,7 @@ entry:
 ; curl/optimized/libcurl_la-mprintf.ll
 ; wireshark/optimized/packet-ieee1722.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a6(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000146(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, %0
   %3 = icmp slt i32 %0, 1
@@ -241,7 +241,7 @@ entry:
 ; php/optimized/ir_emit.ll
 ; postgres/optimized/varbit.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000141(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, %0
   %3 = icmp eq i32 %0, 0
@@ -253,7 +253,7 @@ entry:
 ; php/optimized/zend_jit.ll
 ; wireshark/optimized/packet-tipc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000106(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, %0
   %3 = icmp slt i32 %0, 0
@@ -267,7 +267,7 @@ entry:
 ; opencv/optimized/ts_gtest.cpp.ll
 ; rust-analyzer-rs/optimized/13a8uuxp2yipqyp9.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000186(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, %0
   %3 = icmp slt i32 %0, 0
@@ -278,7 +278,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i32 %0, i32 %1) #0 {
+define i1 @func000000000000014a(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, %0
   %3 = icmp sgt i32 %0, 256
@@ -289,7 +289,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/dauCanon.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000ca(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, %0
   %3 = icmp sgt i32 %0, 84
@@ -297,10 +297,24 @@ entry:
   ret i1 %4
 }
 
+; 4 occurrences:
+; git/optimized/shortlog.ll
+; zstd/optimized/zstd_v02.c.ll
+; zstd/optimized/zstd_v03.c.ll
+; zstd/optimized/zstd_v04.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000301(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i32 %1, %0
+  %3 = icmp eq i32 %0, 0
+  %4 = select i1 %3, i1 true, i1 %2
+  ret i1 %4
+}
+
 ; 1 occurrences:
 ; libquic/optimized/deflate.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000104(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, %0
   %3 = icmp ult i32 %0, 3
@@ -315,7 +329,7 @@ entry:
 ; clamav/optimized/upx.c.ll
 ; linux/optimized/acpi-cpufreq.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000121(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp uge i32 %1, %0
   %3 = icmp eq i32 %0, 0
@@ -323,18 +337,15 @@ entry:
   ret i1 %4
 }
 
-; 9 occurrences:
+; 6 occurrences:
 ; clamav/optimized/matcher-ac.c.ll
 ; linux/optimized/addrconf.ll
 ; llvm/optimized/CodeGenFunction.cpp.ll
 ; llvm/optimized/SimpleLoopUnswitch.cpp.ll
 ; wireshark/optimized/packet-ncp2222.c.ll
 ; z3/optimized/sat_solver.cpp.ll
-; zstd/optimized/zstd_v02.c.ll
-; zstd/optimized/zstd_v03.c.ll
-; zstd/optimized/zstd_v04.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000101(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, %0
   %3 = icmp eq i32 %0, -2
@@ -345,7 +356,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-tls.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a4(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ule i32 %1, %0
   %3 = icmp ult i32 %0, 20
@@ -391,7 +402,7 @@ entry:
 ; openmpi/optimized/pmix_tool.ll
 ; openmpi/optimized/win.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000e6(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sle i32 %1, %0
   %3 = icmp slt i32 %0, 0
@@ -402,7 +413,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_dp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000e1(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sle i32 %1, %0
   %3 = icmp eq i32 %0, 0
@@ -413,7 +424,7 @@ entry:
 ; 1 occurrences:
 ; pbrt-v4/optimized/pspec.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000181(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, %0
   %3 = icmp eq i32 %0, 0
@@ -422,9 +433,20 @@ entry:
 }
 
 ; 1 occurrences:
+; postgres/optimized/arrayfuncs.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000286(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, %0
+  %3 = icmp slt i32 %0, 1
+  %4 = select i1 %3, i1 true, i1 %2
+  ret i1 %4
+}
+
+; 1 occurrences:
 ; postgres/optimized/vacuum.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, %0
   %3 = icmp ult i32 %0, 3
@@ -433,9 +455,20 @@ entry:
 }
 
 ; 1 occurrences:
+; protobuf/optimized/message_differencer.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000306(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i32 %1, %0
+  %3 = icmp slt i32 %0, 0
+  %4 = select i1 %3, i1 true, i1 %2
+  ret i1 %4
+}
+
+; 1 occurrences:
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000108(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, %0
   %3 = icmp ugt i32 %0, 122880

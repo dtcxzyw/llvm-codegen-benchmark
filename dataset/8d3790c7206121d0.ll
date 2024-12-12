@@ -1,5 +1,5 @@
 
-; 34 occurrences:
+; 40 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/shufticompile.cpp.ll
@@ -30,10 +30,16 @@
 ; spike/optimized/ukcrsa16.ll
 ; spike/optimized/ukstas16.ll
 ; spike/optimized/ukstsa16.ll
+; turborepo-rs/optimized/3wg34qzs64td8o5fq33fcg5rk.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; wasmtime-rs/optimized/4op38pthexwwd97b.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/6pnl53dvchkj2615muwn1tztk.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001d(i16 %0, i16 %1) #0 {
 entry:
@@ -65,7 +71,7 @@ entry:
   ret i64 %6
 }
 
-; 16 occurrences:
+; 18 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
@@ -82,6 +88,8 @@ entry:
 ; spike/optimized/sunpkd810.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000017(i16 %0, i16 %1) #0 {
 entry:

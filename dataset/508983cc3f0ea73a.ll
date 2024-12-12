@@ -5,7 +5,7 @@
 define i8 @func000000000000000e(i1 %0, float %1) #0 {
 entry:
   %2 = fcmp une float %1, 0.000000e+00
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = zext i1 %3 to i8
   ret i8 %4
 }
@@ -17,7 +17,7 @@ entry:
 define i8 @func0000000000000004(i1 %0, float %1) #0 {
 entry:
   %2 = fcmp olt float %1, 2.560000e+02
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = zext i1 %3 to i8
   ret i8 %4
 }
@@ -43,7 +43,7 @@ entry:
 define i8 @func0000000000000018(i1 %0, float %1) #0 {
 entry:
   %2 = fcmp oge float %1, 0.000000e+00
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = zext i1 %3 to i8
   ret i8 %4
 }
@@ -54,17 +54,6 @@ entry:
 define i8 @func000000000000001a(i1 %0, float %1) #0 {
 entry:
   %2 = fcmp uge float %1, 0.000000e+00
-  %3 = and i1 %2, %0
-  %4 = zext i1 %3 to i8
-  ret i8 %4
-}
-
-; 1 occurrences:
-; qdrant-rs/optimized/i0sjm53t1vzpf3k.ll
-; Function Attrs: nounwind
-define i8 @func000000000000001c(i1 %0, float %1) #0 {
-entry:
-  %2 = fcmp ord float %1, 0.000000e+00
   %3 = and i1 %2, %0
   %4 = zext i1 %3 to i8
   ret i8 %4

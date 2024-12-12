@@ -23,15 +23,16 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; llvm/optimized/TypeStreamMerger.cpp.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000e(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = add nuw nsw i64 %2, 2
-  %4 = sub nuw i64 %0, %3
-  ret i64 %4
+  %.neg = xor i64 %2, -1
+  %3 = add i64 %0, %.neg
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

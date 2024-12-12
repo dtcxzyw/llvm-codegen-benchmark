@@ -12,12 +12,14 @@ entry:
   ret i1 %7
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000d56(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000001aa6(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = add nsw i32 %1, 190
@@ -31,7 +33,7 @@ entry:
 ; cmake/optimized/huf_decompress.c.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000f0a(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000001e0a(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = add nuw nsw i32 %1, 1
@@ -44,7 +46,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/huf_decompress.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000030a(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000060a(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add nuw nsw i32 %1, 1

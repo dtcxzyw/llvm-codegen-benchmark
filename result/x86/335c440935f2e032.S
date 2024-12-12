@@ -1,11 +1,11 @@
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	movq	%rsi, %rax
 	negq	%rax
 	testb	$1, %dil
 	cmoveq	%rsi, %rax
 	shrq	$63, %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movq	%rsi, %rax
 	negq	%rax
 	testb	$1, %dil
@@ -13,7 +13,7 @@ func0000000000000011:                   # @func0000000000000011
 	testq	%rax, %rax
 	sete	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	movq	%rsi, %rax
 	negq	%rax
 	testb	$1, %dil
@@ -29,7 +29,7 @@ func000000000000000a:                   # @func000000000000000a
 	testq	%rax, %rax
 	setns	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	movl	$65536, %eax                    # imm = 0x10000
 	subq	%rsi, %rax
 	testb	$1, %dil
@@ -37,7 +37,7 @@ func0000000000000031:                   # @func0000000000000031
 	testq	%rax, %rax
 	sete	%al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	movl	$65536, %eax                    # imm = 0x10000
 	subq	%rsi, %rax
 	testb	$1, %dil
@@ -45,7 +45,7 @@ func0000000000000038:                   # @func0000000000000038
 	cmpq	$31744, %rax                    # imm = 0x7C00
 	setae	%al
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	movl	$65536, %eax                    # imm = 0x10000
 	subq	%rsi, %rax
 	testb	$1, %dil
@@ -53,7 +53,7 @@ func0000000000000034:                   # @func0000000000000034
 	cmpq	$16384, %rax                    # imm = 0x4000
 	setb	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	movq	%rsi, %rax
 	negq	%rax
 	testb	$1, %dil
@@ -61,7 +61,7 @@ func0000000000000014:                   # @func0000000000000014
 	cmpq	$256, %rax                      # imm = 0x100
 	setb	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	movl	$65536, %eax                    # imm = 0x10000
 	subq	%rsi, %rax
 	testb	$1, %dil

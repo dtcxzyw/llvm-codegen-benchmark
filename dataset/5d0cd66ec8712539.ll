@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; minetest/optimized/cavegen.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a6(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000546(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 16
   %4 = icmp sgt i32 %3, %1
@@ -15,7 +15,7 @@ entry:
 ; linux/optimized/request.ll
 ; linux/optimized/xfrm_policy.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000128(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = icmp uge i32 %3, %1
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ubidiln.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000016c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000004cc(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 2
   %4 = icmp slt i32 %3, %1

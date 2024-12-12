@@ -25,6 +25,18 @@ func000000000000000a:                   # @func000000000000000a
 	vmovaps	%zmm0, %zmm0 {%k1} {z}
 	retq
 .LCPI2_0:
+	.long	0x43b40000                      # float 360
+.LCPI2_1:
+	.long	0x34000000                      # float 1.1920929E-7
+func0000000000000004:                   # @func0000000000000004
+	vpsllw	$7, %xmm0, %xmm0
+	vpmovb2m	%xmm0, %k1
+	vmaxps	.LCPI2_0(%rip){1to16}, %zmm1, %zmm0
+	vbroadcastss	.LCPI2_1(%rip), %zmm1   # zmm1 = [1.1920929E-7,1.1920929E-7,1.1920929E-7,1.1920929E-7,1.1920929E-7,1.1920929E-7,1.1920929E-7,1.1920929E-7,1.1920929E-7,1.1920929E-7,1.1920929E-7,1.1920929E-7,1.1920929E-7,1.1920929E-7,1.1920929E-7,1.1920929E-7]
+	vmulps	%zmm1, %zmm0, %zmm0
+	vmovaps	%zmm1, %zmm0 {%k1}
+	retq
+.LCPI3_0:
 	.long	0x42fe0000                      # float 127
 func000000000000000c:                   # @func000000000000000c
 	vpsllw	$7, %xmm0, %xmm0
@@ -32,18 +44,7 @@ func000000000000000c:                   # @func000000000000000c
 	vpxor	%xmm0, %xmm0, %xmm0
 	vcmpleps	%zmm1, %zmm0, %k2
 	vmovaps	%zmm1, %zmm0 {%k2} {z}
-	vbroadcastss	.LCPI2_0(%rip), %zmm1   # zmm1 = [1.27E+2,1.27E+2,1.27E+2,1.27E+2,1.27E+2,1.27E+2,1.27E+2,1.27E+2,1.27E+2,1.27E+2,1.27E+2,1.27E+2,1.27E+2,1.27E+2,1.27E+2,1.27E+2]
-	vmulps	%zmm1, %zmm0, %zmm0
-	vmovaps	%zmm1, %zmm0 {%k1}
-	retq
-.LCPI3_0:
-	.long	0x3e59b3d0                      # float 0.212599993
-func0000000000000004:                   # @func0000000000000004
-	vpsllw	$7, %xmm0, %xmm0
-	vpmovb2m	%xmm0, %k1
-	vpxor	%xmm0, %xmm0, %xmm0
-	vmaxps	%zmm0, %zmm1, %zmm0
-	vbroadcastss	.LCPI3_0(%rip), %zmm1   # zmm1 = [2.12599993E-1,2.12599993E-1,2.12599993E-1,2.12599993E-1,2.12599993E-1,2.12599993E-1,2.12599993E-1,2.12599993E-1,2.12599993E-1,2.12599993E-1,2.12599993E-1,2.12599993E-1,2.12599993E-1,2.12599993E-1,2.12599993E-1,2.12599993E-1]
+	vbroadcastss	.LCPI3_0(%rip), %zmm1   # zmm1 = [1.27E+2,1.27E+2,1.27E+2,1.27E+2,1.27E+2,1.27E+2,1.27E+2,1.27E+2,1.27E+2,1.27E+2,1.27E+2,1.27E+2,1.27E+2,1.27E+2,1.27E+2,1.27E+2]
 	vmulps	%zmm1, %zmm0, %zmm0
 	vmovaps	%zmm1, %zmm0 {%k1}
 	retq

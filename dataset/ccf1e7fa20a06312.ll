@@ -1,9 +1,8 @@
 
-; 34 occurrences:
+; 33 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; icu/optimized/gregocal.ll
-; icu/optimized/gregoimp.ll
 ; llama.cpp/optimized/llama.cpp.ll
 ; velox/optimized/ArrayContains.cpp.ll
 ; velox/optimized/ArrayDistinct.cpp.ll

@@ -1,5 +1,5 @@
 
-; 90 occurrences:
+; 84 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcVerify.c.ll
 ; abc/optimized/bmcCexCare.c.ll
@@ -30,18 +30,12 @@
 ; graphviz/optimized/stuff.c.ll
 ; gromacs/optimized/average.cpp.ll
 ; gromacs/optimized/comm.cpp.ll
-; gromacs/optimized/dgebd2.cpp.ll
-; gromacs/optimized/dgeqr2.cpp.ll
-; gromacs/optimized/dlange.cpp.ll
 ; gromacs/optimized/gmx_hydorder.cpp.ll
 ; gromacs/optimized/gmx_nmeig.cpp.ll
 ; gromacs/optimized/gmx_sham.cpp.ll
 ; gromacs/optimized/gmx_trjorder.cpp.ll
 ; gromacs/optimized/histogram.cpp.ll
 ; gromacs/optimized/pairdist.cpp.ll
-; gromacs/optimized/sgebd2.cpp.ll
-; gromacs/optimized/sgeqr2.cpp.ll
-; gromacs/optimized/slange.cpp.ll
 ; gromacs/optimized/vcm.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; ipopt/optimized/IpDenseGenMatrix.ll

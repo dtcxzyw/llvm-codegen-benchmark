@@ -1,3 +1,10 @@
+func0000000000000001:                   # @func0000000000000001
+	testq	%rdx, %rdx
+	movl	$1024, %eax                     # imm = 0x400
+	cmovneq	%rdx, %rax
+	testb	$1, %dil
+	cmovneq	%rsi, %rax
+	retq
 func0000000000000006:                   # @func0000000000000006
 	testq	%rdx, %rdx
 	movq	$-34, %rax

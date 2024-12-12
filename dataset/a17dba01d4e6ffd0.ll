@@ -33,7 +33,7 @@ define double @func0000000000000001(double %0, i64 %1) #0 {
 entry:
   %2 = uitofp nneg i64 %1 to double
   %3 = fmul double %2, 0x3E00000000000000
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   ret double %4
 }
 

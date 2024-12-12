@@ -35,3 +35,9 @@ func000000000000001b:                   # @func000000000000001b
 	orq	%rdi, %rax
 	orq	%rdx, %rax
 	retq
+func000000000000002b:                   # @func000000000000002b
+	shlq	$48, %rdx
+	movl	%esi, %eax
+	orq	%rdi, %rax
+	orq	%rdx, %rax
+	retq

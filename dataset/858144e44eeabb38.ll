@@ -4,10 +4,10 @@
 ; openjdk/optimized/mlib_ImageConv_8ext.ll
 ; openjdk/optimized/mlib_ImageConv_u16ext.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000aa(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = icmp sgt i32 %4, 0
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
@@ -17,7 +17,7 @@ entry:
 ; cmake/optimized/ftp.c.ll
 ; curl/optimized/libcurl_la-ftp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a6(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -528
   %4 = add nsw i32 %3, %1
@@ -40,9 +40,21 @@ entry:
 }
 
 ; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000086(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %2, -3
+  %4 = add i32 %3, %1
+  %5 = icmp slt i32 %4, 0
+  %6 = select i1 %0, i1 %5, i1 false
+  ret i1 %6
+}
+
+; 1 occurrences:
 ; postgres/optimized/mbprint.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a4(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = add nsw i32 %3, %1

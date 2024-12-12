@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i16 %1) #0 {
+define i1 @func000000000000008c(i32 %0, i16 %1) #0 {
 entry:
   %2 = add i16 %1, -17
   %3 = icmp ult i16 %2, 173
@@ -12,14 +12,27 @@ entry:
 }
 
 ; 2 occurrences:
+; llvm/optimized/CGExpr.cpp.ll
+; llvm/optimized/FunctionImport.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000484(i32 %0, i16 %1) #0 {
+entry:
+  %2 = add nsw i16 %1, -59
+  %3 = icmp ult i16 %2, -4
+  %4 = icmp ult i32 %0, -3
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
+}
+
+; 2 occurrences:
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000148(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000498(i32 %0, i16 %1) #0 {
 entry:
   %2 = add nsw i16 %1, -123
   %3 = icmp ult i16 %2, 2
-  %4 = icmp ugt i32 %0, 64
+  %4 = icmp samesign ugt i32 %0, 64
   %5 = select i1 %4, i1 true, i1 %3
   ret i1 %5
 }
@@ -27,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/xhci-hub.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014c(i32 %0, i16 %1) #0 {
+define i1 @func000000000000048c(i32 %0, i16 %1) #0 {
 entry:
   %2 = add nsw i16 %1, -6
   %3 = icmp ult i16 %2, -5
@@ -40,7 +53,7 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000084(i32 %0, i16 %1) #0 {
 entry:
   %2 = add i16 %1, -257
   %3 = icmp ult i16 %2, -256

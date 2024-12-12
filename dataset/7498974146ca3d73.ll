@@ -1,5 +1,6 @@
 
-; 33 occurrences:
+; 38 occurrences:
+; boost/optimized/within_pointlike_geometry.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; clamav/optimized/extract.cpp.ll
 ; cmake/optimized/cookie.c.ll
@@ -18,6 +19,7 @@
 ; llvm/optimized/CStringChecker.cpp.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
+; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; meshlab/optimized/ml_shared_data_context.cpp.ll
 ; minetest/optimized/mapblock.cpp.ll
@@ -27,12 +29,15 @@
 ; openjdk/optimized/ciTypeFlow.ll
 ; openjdk/optimized/graphKit.ll
 ; php/optimized/string.ll
+; rust-analyzer-rs/optimized/4ij72b67lj8l3d8u.ll
 ; rust-analyzer-rs/optimized/lvm5mow7j40zynh.ll
 ; sqlite/optimized/sqlite3.ll
 ; verilator/optimized/V3Const__gen.cpp.ll
 ; verilator/optimized/V3Number.cpp.ll
 ; wireshark/optimized/packet-dnp.c.ll
 ; wireshark/optimized/proto.c.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0, i1 %1, i1 %2) #0 {
 entry:

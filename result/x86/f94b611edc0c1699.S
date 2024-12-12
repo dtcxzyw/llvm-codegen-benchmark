@@ -12,3 +12,7 @@ func0000000000000002:                   # @func0000000000000002
 	shlq	$3, %rsi
 	subq	%rsi, %rax
 	retq
+func0000000000000003:                   # @func0000000000000003
+	subq	%rsi, %rdi
+	leaq	-2(%rdi), %rax
+	retq

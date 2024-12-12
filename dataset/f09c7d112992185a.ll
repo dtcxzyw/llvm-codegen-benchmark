@@ -1,5 +1,5 @@
 
-; 101 occurrences:
+; 100 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; cmake/optimized/archive_write_set_format_mtree.c.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
@@ -35,7 +35,6 @@
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
 ; node/optimized/libnode.node_snapshotable.ll
 ; php/optimized/funcs.ll
-; postgres/optimized/char.ll
 ; postgres/optimized/encode.ll
 ; postgres/optimized/fe-exec.ll
 ; postgres/optimized/varlena.ll

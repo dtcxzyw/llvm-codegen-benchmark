@@ -14,6 +14,16 @@ func0000000000000006:                   # @func0000000000000006
 	zext.h	a0, a0
 	slt	a0, a1, a0
 	ret
+func0000000000000086:                   # @func0000000000000086
+	sub	a1, a1, a2
+	zext.h	a0, a0
+	slt	a0, a1, a0
+	ret
+func0000000000000084:                   # @func0000000000000084
+	sub	a1, a1, a2
+	zext.h	a0, a0
+	sltu	a0, a1, a0
+	ret
 func000000000000000a:                   # @func000000000000000a
 	sub	a1, a1, a2
 	zext.h	a0, a0

@@ -6,7 +6,7 @@
 ; proj/optimized/xyzgridshift.cpp.ll
 ; quantlib/optimized/lmdif.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000312(double %0, i32 %1) #0 {
+define i1 @func0000000000000612(double %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 9
   %3 = fcmp olt double %0, 0.000000e+00
@@ -14,16 +14,15 @@ entry:
   ret i1 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; proj/optimized/boggs.cpp.ll
 ; proj/optimized/hatano.cpp.ll
 ; proj/optimized/labrd.cpp.ll
-; proj/optimized/mbt_fps.cpp.ll
 ; proj/optimized/mbtfpq.cpp.ll
 ; proj/optimized/nell.cpp.ll
 ; proj/optimized/putp2.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000112(double %0, i32 %1) #0 {
+define i1 @func0000000000000212(double %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1
   %3 = fcmp olt double %0, 1.000000e-10
@@ -34,7 +33,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/fourier_descriptors.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000318(double %0, i32 %1) #0 {
+define i1 @func0000000000000618(double %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 4
   %3 = fcmp oeq double %0, 0.000000e+00
@@ -45,7 +44,7 @@ entry:
 ; 1 occurrences:
 ; libwebp/optimized/frame_enc.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(double %0, i32 %1) #0 {
+define i1 @func000000000000021a(double %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1
   %3 = fcmp ole double %0, 4.000000e-01

@@ -10,12 +10,6 @@ func0000000000000015:                   # @func0000000000000015
 	imulq	%rdi, %rax
 	addq	%rax, %rax
 	retq
-func0000000000000014:                   # @func0000000000000014
-	incl	%esi
-	movslq	%esi, %rax
-	imulq	%rdi, %rax
-	addq	%rax, %rax
-	retq
 func0000000000000013:                   # @func0000000000000013
 	incl	%esi
 	movslq	%esi, %rax

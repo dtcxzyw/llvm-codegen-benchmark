@@ -1,6 +1,5 @@
 
-; 23 occurrences:
-; abc/optimized/fxuPair.c.ll
+; 22 occurrences:
 ; cmake/optimized/archive_entry.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; cmake/optimized/url.c.ll
@@ -28,7 +27,7 @@ define i32 @func0000000000000003(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = select i1 %2, i32 0, i32 16
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
@@ -57,7 +56,7 @@ define i32 @func0000000000000019(i32 %0, ptr %1) #0 {
 entry:
   %.not = icmp eq ptr %1, null
   %2 = select i1 %.not, i32 0, i32 4194304
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   ret i32 %3
 }
 
@@ -68,7 +67,7 @@ define i32 @func0000000000000018(i32 %0, ptr %1) #0 {
 entry:
   %.not = icmp eq ptr %1, null
   %2 = select i1 %.not, i32 0, i32 16384
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   ret i32 %3
 }
 

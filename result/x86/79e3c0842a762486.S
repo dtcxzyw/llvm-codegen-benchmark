@@ -3,25 +3,25 @@ func0000000000000006:                   # @func0000000000000006
 	movzwl	%di, %eax
 	shrl	$15, %eax
 	retq
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	subl	%esi, %edi
 	cmpw	$20, %di
 	setb	%al
 	retq
 func000000000000000c:                   # @func000000000000000c
-	cmpw	%di, %si
+	cmpw	%si, %di
 	setne	%al
 	retq
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	subl	%esi, %edi
 	cmpw	$2, %di
 	setae	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
-	cmpw	%di, %si
+	cmpw	%si, %di
 	sete	%al
 	retq
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	subl	%esi, %edi
 	movzwl	%di, %eax
 	shrl	$15, %eax
@@ -36,7 +36,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpw	$8, %di
 	setae	%al
 	retq
-func00000000000000c8:                   # @func00000000000000c8
+func0000000000000188:                   # @func0000000000000188
 	subl	%esi, %edi
 	cmpw	$13, %di
 	setae	%al

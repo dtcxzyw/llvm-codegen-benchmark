@@ -93,10 +93,10 @@ func000000000000000f:                   # @func000000000000000f
 	vzeroupper
 	retq
 .LCPI5_0:
-	.byte	33                              # 0x21
-	.byte	33                              # 0x21
-	.byte	33                              # 0x21
-	.byte	33                              # 0x21
+	.byte	65                              # 0x41
+	.byte	65                              # 0x41
+	.byte	65                              # 0x41
+	.byte	65                              # 0x41
 	.zero	1
 	.zero	1
 	.zero	1

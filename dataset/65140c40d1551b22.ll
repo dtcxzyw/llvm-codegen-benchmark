@@ -9,19 +9,7 @@
 define i1 @func0000000000000002(i1 %0, i16 %1) #0 {
 entry:
   %2 = icmp ne i16 %1, 0
-  %3 = or i1 %2, %0
-  ret i1 %3
-}
-
-; 3 occurrences:
-; spike/optimized/f16_to_ui32_r_minMag.ll
-; spike/optimized/f16_to_ui64.ll
-; spike/optimized/f16_to_ui64_r_minMag.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000c(i1 %0, i16 %1) #0 {
-entry:
-  %2 = icmp sgt i16 %1, -1
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   ret i1 %3
 }
 
@@ -33,7 +21,7 @@ entry:
 define i1 @func0000000000000018(i1 %0, i16 %1) #0 {
 entry:
   %.not = icmp eq i16 %1, 0
-  %2 = or i1 %.not, %0
+  %2 = or i1 %0, %.not
   ret i1 %2
 }
 

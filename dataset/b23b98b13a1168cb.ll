@@ -1,7 +1,9 @@
 
-; 5 occurrences:
+; 7 occurrences:
 ; libwebp/optimized/token_enc.c.ll
 ; linux/optimized/mpparse.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; raylib/optimized/rtext.c.ll
 ; wireshark/optimized/byte_view_text.cpp.ll

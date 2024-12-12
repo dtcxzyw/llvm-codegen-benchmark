@@ -12,5 +12,5 @@ func0000000000000006:                   # @func0000000000000006
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpbroadcastq	.LCPI0_1(%rip), %ymm3   # ymm3 = [9223372036854775807,9223372036854775807,9223372036854775807,9223372036854775807]
 	vpxorq	%ymm2, %ymm1, %ymm3 {%k1}
-	vpand	%ymm0, %ymm3, %ymm0
+	vpand	%ymm3, %ymm0, %ymm0
 	retq

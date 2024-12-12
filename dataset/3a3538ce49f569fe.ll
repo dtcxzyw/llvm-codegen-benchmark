@@ -14,10 +14,11 @@ entry:
   ret i1 %3
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; cjson/optimized/cJSON_Utils.c.ll
 ; linux/optimized/drm_modes.ll
 ; php/optimized/zend_jit.ll
+; slurm/optimized/update_job.ll
 ; verilator/optimized/V3Assert.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, ptr %1) #0 {

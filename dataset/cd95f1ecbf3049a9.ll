@@ -29,13 +29,12 @@ entry:
   ret i1 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; linux/optimized/extents.ll
 ; linux/optimized/intel_overlay.ll
 ; llvm/optimized/XCOFFObjectFile.cpp.ll
 ; minetest/optimized/clouds.cpp.ll
 ; minetest/optimized/face_position_cache.cpp.ll
-; minetest/optimized/minimap.cpp.ll
 ; minetest/optimized/treegen.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i16 %0, i16 %1) #0 {
@@ -43,6 +42,17 @@ entry:
   %2 = zext i16 %1 to i32
   %3 = sext i16 %0 to i32
   %4 = icmp sgt i32 %3, %2
+  ret i1 %4
+}
+
+; 1 occurrences:
+; minetest/optimized/minimap.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i16 %0, i16 %1) #0 {
+entry:
+  %2 = zext i16 %1 to i32
+  %3 = sext i16 %0 to i32
+  %4 = icmp ugt i32 %3, %2
   ret i1 %4
 }
 

@@ -1,4 +1,4 @@
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	mv	a3, a0
 	srli	a0, a2, 1
 	bgeu	a3, a1, .LBB0_2
@@ -6,7 +6,7 @@ func0000000000000014:                   # @func0000000000000014
 	add	a0, a0, a2
 .LBB0_2:                                # %entry
 	ret
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	mv	a3, a0
 	srli	a0, a2, 1
 	bgeu	a1, a3, .LBB1_2
@@ -14,7 +14,7 @@ func0000000000000018:                   # @func0000000000000018
 	add	a0, a0, a2
 .LBB1_2:                                # %entry
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	mv	a3, a0
 	srli	a0, a2, 1
 	bge	a3, a1, .LBB2_2
@@ -22,19 +22,35 @@ func0000000000000016:                   # @func0000000000000016
 	add	a0, a0, a2
 .LBB2_2:                                # %entry
 	ret
-func0000000000000004:                   # @func0000000000000004
+func0000000000000038:                   # @func0000000000000038
 	mv	a3, a0
 	srli	a0, a2, 1
-	bgeu	a3, a1, .LBB3_2
+	bgeu	a1, a3, .LBB3_2
 	not	a0, a0
 	add	a0, a0, a2
 .LBB3_2:                                # %entry
 	ret
-func000000000000001a:                   # @func000000000000001a
+func0000000000000004:                   # @func0000000000000004
 	mv	a3, a0
 	srli	a0, a2, 1
-	bge	a1, a3, .LBB4_2
+	bgeu	a3, a1, .LBB4_2
 	not	a0, a0
 	add	a0, a0, a2
 .LBB4_2:                                # %entry
+	ret
+func000000000000002a:                   # @func000000000000002a
+	mv	a3, a0
+	srli	a0, a2, 1
+	bge	a1, a3, .LBB5_2
+	not	a0, a0
+	add	a0, a0, a2
+.LBB5_2:                                # %entry
+	ret
+func0000000000000034:                   # @func0000000000000034
+	mv	a3, a0
+	srli	a0, a2, 1
+	bgeu	a3, a1, .LBB6_2
+	not	a0, a0
+	add	a0, a0, a2
+.LBB6_2:                                # %entry
 	ret

@@ -32,3 +32,19 @@ func0000000000000004:                   # @func0000000000000004
 	vpbroadcastb	.LCPI3_2(%rip), %xmm0   # xmm0 = [2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]
 	vmovdqu8	.LCPI3_1(%rip), %xmm0 {%k1}     # xmm0 {%k1} = [3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3]
 	retq
+.LCPI4_0:
+	.zero	16,3
+func0000000000000018:                   # @func0000000000000018
+	vpcmpnleub	%xmm1, %xmm0, %k1
+	vmovdqu8	.LCPI4_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3]
+	retq
+.LCPI5_0:
+	.zero	16,1
+.LCPI5_1:
+	.byte	1                               # 0x1
+func0000000000000014:                   # @func0000000000000014
+	vpcmpltub	%xmm1, %xmm0, %k1
+	vpcmpeqd	%xmm1, %xmm1, %xmm1
+	vpbroadcastb	.LCPI5_1(%rip), %xmm0   # xmm0 = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+	vmovdqu8	%xmm1, %xmm0 {%k1}
+	retq

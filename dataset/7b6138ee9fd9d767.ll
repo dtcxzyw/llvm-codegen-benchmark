@@ -1,9 +1,12 @@
 
-; 4 occurrences:
+; 7 occurrences:
+; brotli/optimized/brotli_bit_stream.c.ll
+; brotli/optimized/histogram.c.ll
 ; linux/optimized/trace_eprobe.ll
 ; linux/optimized/trace_kprobe.ll
 ; linux/optimized/trace_uprobe.ll
 ; php/optimized/pack.ll
+; qemu/optimized/ui_vnc-enc-zrle.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i1 %1, i32 %2) #0 {
 entry:

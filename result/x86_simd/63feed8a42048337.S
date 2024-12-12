@@ -68,3 +68,46 @@ func0000000000000031:                   # @func0000000000000031
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpsubw	%ymm1, %ymm0, %ymm0
 	retq
+.LCPI2_0:
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+.LCPI2_1:
+	.short	2046                            # 0x7fe
+	.short	2046                            # 0x7fe
+	.short	2046                            # 0x7fe
+	.short	2046                            # 0x7fe
+	.short	2046                            # 0x7fe
+	.short	2046                            # 0x7fe
+	.short	2046                            # 0x7fe
+	.short	2046                            # 0x7fe
+	.short	2046                            # 0x7fe
+	.short	2046                            # 0x7fe
+	.short	2046                            # 0x7fe
+	.short	2046                            # 0x7fe
+	.short	2046                            # 0x7fe
+	.short	2046                            # 0x7fe
+	.short	2046                            # 0x7fe
+	.short	2046                            # 0x7fe
+.LCPI2_2:
+	.short	2046                            # 0x7fe
+	.short	2046                            # 0x7fe
+func0000000000000011:                   # @func0000000000000011
+	vpcmpltuw	.LCPI2_0(%rip), %ymm1, %k0
+	vpmovm2w	%k0, %ymm1
+	vpsrlw	$15, %ymm1, %ymm1
+	vpternlogd	$236, .LCPI2_2(%rip){1to8}, %ymm1, %ymm0 # ymm0 = (ymm0 & mem) | ymm1
+	retq

@@ -12,18 +12,6 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
-; openssl/optimized/ca_internals_test-bin-ca.ll
-; openssl/optimized/openssl-bin-ca.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i1 %0, i32 %1) #0 {
-entry:
-  %2 = shl nsw i32 %1, 1
-  %3 = add i32 %2, 5
-  %4 = select i1 %0, i32 %3, i32 7
-  ret i32 %4
-}
-
 ; 3 occurrences:
 ; hdf5/optimized/H5Fsuper_cache.c.ll
 ; linux/optimized/intel_display_power.ll
@@ -37,14 +25,13 @@ entry:
   ret i32 %4
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; linux/optimized/8250_pci.ll
 ; linux/optimized/drm_dp_helper.ll
 ; linux/optimized/intel_color.ll
 ; linux/optimized/intel_dpll_mgr.ll
-; linux/optimized/intel_snps_phy.ll
 ; linux/optimized/update.ll
 ; llvm/optimized/AutoUpgrade.cpp.ll
 ; llvm/optimized/CGBuiltin.cpp.ll

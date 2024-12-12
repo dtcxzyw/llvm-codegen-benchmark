@@ -1,6 +1,5 @@
 
-; 3 occurrences:
-; arrow/optimized/value_parsing.cc.ll
+; 2 occurrences:
 ; clamav/optimized/xlm_extract.c.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; Function Attrs: nounwind

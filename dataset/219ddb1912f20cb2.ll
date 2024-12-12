@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 19 occurrences:
 ; cmake/optimized/fs.c.ll
 ; libuv/optimized/fs.c.ll
 ; node/optimized/fs.ll
@@ -10,7 +10,6 @@
 ; wireshark/optimized/catapult_dct2000.c.ll
 ; wireshark/optimized/commview.c.ll
 ; wireshark/optimized/cosine.c.ll
-; wireshark/optimized/daintree-sna.c.ll
 ; wireshark/optimized/dbs-etherwatch.c.ll
 ; wireshark/optimized/dct3trace.c.ll
 ; wireshark/optimized/eri_enb_log.c.ll
@@ -21,7 +20,7 @@
 ; wireshark/optimized/toshiba.c.ll
 ; wireshark/optimized/vms.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000cc(i32 %0) #0 {
+define i32 @func000000000000018c(i32 %0) #0 {
 entry:
   %1 = icmp ne i32 %0, 11
   %2 = icmp ne i32 %0, 90

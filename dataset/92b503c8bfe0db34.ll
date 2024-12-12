@@ -5,7 +5,7 @@
 ; llvm/optimized/SemaLookup.cpp.ll
 ; llvm/optimized/StringRef.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000a88(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000002908(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %2, %1
   %4 = sub nuw i64 %1, %2
@@ -19,7 +19,7 @@ entry:
 ; libquic/optimized/quic_framer.cc.ll
 ; wireshark/optimized/packet-quic.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000a44(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000002884(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
   %4 = sub nuw i64 %2, %1
@@ -32,7 +32,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/PGOInstrumentation.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000a48(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000002888(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
   %4 = sub nuw i64 %2, %1
@@ -47,7 +47,7 @@ entry:
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000e88(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000003908(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 %2, %1
   %4 = sub nuw i64 %1, %2

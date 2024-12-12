@@ -1,5 +1,5 @@
 
-; 295 occurrences:
+; 294 occurrences:
 ; abc/optimized/aigJust.c.ll
 ; abc/optimized/giaLf.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
@@ -16,6 +16,8 @@
 ; assimp/optimized/MDLLoader.cpp.ll
 ; assimp/optimized/TerragenLoader.cpp.ll
 ; assimp/optimized/ValidateDataStructure.cpp.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; casadi/optimized/fmu2.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; casadi/optimized/mx.cpp.ll
@@ -104,7 +106,6 @@
 ; linux/optimized/libata-sff.ll
 ; linux/optimized/md5.ll
 ; linux/optimized/n_tty.ll
-; linux/optimized/rpl.ll
 ; linux/optimized/sha512_generic.ll
 ; linux/optimized/string.ll
 ; llvm/optimized/AArch64CallLowering.cpp.ll
@@ -198,8 +199,6 @@
 ; postgres/optimized/sha2.ll
 ; postgres/optimized/sha2_shlib.ll
 ; postgres/optimized/sha2_srv.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll

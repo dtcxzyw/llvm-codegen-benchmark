@@ -12,7 +12,14 @@ func0000000000000006:                   # @func0000000000000006
 	setl	%al
 	orl	$4, %eax
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000027:                   # @func0000000000000027
+	subl	%edx, %esi
+	xorl	%eax, %eax
+	cmpl	%edi, %esi
+	setle	%al
+	addl	%eax, %eax
+	retq
+func0000000000000026:                   # @func0000000000000026
 	subl	%edx, %esi
 	xorl	%ecx, %ecx
 	cmpl	%edi, %esi

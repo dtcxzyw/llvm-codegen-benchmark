@@ -32,7 +32,7 @@ entry:
   ret i64 %6
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; linux/optimized/extents_status.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTMatchFinder.cpp.ll
@@ -48,7 +48,6 @@ entry:
 ; llvm/optimized/SemaStmtAttr.cpp.ll
 ; llvm/optimized/USRGeneration.cpp.ll
 ; postgres/optimized/acl.ll
-; quickjs/optimized/quickjs.ll
 ; spike/optimized/triggers.ll
 ; tokio-rs/optimized/46apu3hqx0w07xoc.ll
 ; Function Attrs: nounwind
@@ -61,7 +60,8 @@ entry:
   ret i64 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/alloc_lib.ll
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
 ; Function Attrs: nounwind

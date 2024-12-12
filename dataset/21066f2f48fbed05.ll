@@ -20,10 +20,9 @@ entry:
   ret i8 %3
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; faiss/optimized/utils.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll

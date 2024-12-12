@@ -1,5 +1,5 @@
 
-; 66 occurrences:
+; 64 occurrences:
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/LWOAnimation.cpp.ll
 ; assimp/optimized/TargetAnimation.cpp.ll
@@ -16,7 +16,6 @@
 ; lightgbm/optimized/objective_function.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; msdfgen/optimized/edge-segments.cpp.ll
 ; ocio/optimized/GradingTone.cpp.ll
@@ -59,7 +58,6 @@
 ; quantlib/optimized/zabr.ll
 ; redis/optimized/geohash.ll
 ; rocksdb/optimized/filter_policy.cc.ll
-; rocksdb/optimized/ribbon_config.cc.ll
 ; stat-rs/optimized/rkxxfn3f5mhspne.ll
 ; sundials/optimized/arkode_interp.c.ll
 ; sundials/optimized/cvodea.c.ll

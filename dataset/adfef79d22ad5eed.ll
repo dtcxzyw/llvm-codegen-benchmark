@@ -8,7 +8,7 @@
 ; mitsuba3/optimized/mesh.cpp.ll
 ; rust-analyzer-rs/optimized/58xaix613yc6ngmz.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000421(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp eq i64 %1, 0

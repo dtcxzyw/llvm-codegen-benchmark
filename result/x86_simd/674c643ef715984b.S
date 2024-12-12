@@ -135,6 +135,6 @@ func000000000000000b:                   # @func000000000000000b
 func0000000000000008:                   # @func0000000000000008
 	vpmulld	%ymm2, %ymm1, %ymm1
 	vpsrld	$5, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpandd	.LCPI3_1(%rip){1to8}, %ymm0, %ymm0
 	retq

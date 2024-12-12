@@ -1,5 +1,5 @@
 
-; 44 occurrences:
+; 43 occurrences:
 ; cpython/optimized/ceval.ll
 ; cpython/optimized/unicodeobject.ll
 ; linux/optimized/agg-rx.ll
@@ -10,7 +10,6 @@
 ; linux/optimized/evdev.ll
 ; linux/optimized/intel_guc_submission.ll
 ; linux/optimized/ip6_input.ll
-; linux/optimized/map.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/nfnetlink_log.ll
 ; linux/optimized/nl80211.ll
@@ -52,7 +51,7 @@ entry:
   ret ptr %3
 }
 
-; 65 occurrences:
+; 64 occurrences:
 ; cpython/optimized/ceval.ll
 ; cpython/optimized/tracemalloc.ll
 ; linux/optimized/agg-rx.ll
@@ -66,7 +65,6 @@ entry:
 ; linux/optimized/i915_gem_context.ll
 ; linux/optimized/inflate.ll
 ; linux/optimized/inftrees.ll
-; linux/optimized/intel_engine_user.ll
 ; linux/optimized/ipmr.ll
 ; linux/optimized/ipmr_base.ll
 ; linux/optimized/kbuf.ll
@@ -126,7 +124,7 @@ entry:
   ret ptr %3
 }
 
-; 177 occurrences:
+; 197 occurrences:
 ; abc/optimized/compress.c.ll
 ; abc/optimized/infback.c.ll
 ; abc/optimized/inflate.c.ll
@@ -142,6 +140,9 @@ entry:
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; arrow/optimized/value_parsing.cc.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/static_string.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/block_splitter.c.ll
@@ -209,7 +210,6 @@ entry:
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; llvm/optimized/LoadStoreOpt.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
@@ -231,6 +231,8 @@ entry:
 ; luajit/optimized/lj_opt_fold_dyn.ll
 ; luajit/optimized/lj_opt_mem.ll
 ; luajit/optimized/lj_opt_mem_dyn.ll
+; lvgl/optimized/lv_ime_pinyin.ll
+; lvgl/optimized/lv_refr.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -287,6 +289,7 @@ entry:
 ; stb/optimized/stb_connected_components.c.ll
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
+; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
 ; typst-rs/optimized/1aflftgqyuracvze.ll
 ; typst-rs/optimized/57e1zo682pgyyw8m.ll
 ; typst-rs/optimized/5bbfp39e2yjrl2ey.ll
@@ -300,19 +303,34 @@ entry:
 ; z3/optimized/mam.cpp.ll
 ; z3/optimized/q_mam.cpp.ll
 ; z3/optimized/theory_array_full.cpp.ll
+; zed-rs/optimized/0zv49ldtv6tf31uz4olgw7861.ll
+; zed-rs/optimized/101enz14pylx453ld99plp60b.ll
+; zed-rs/optimized/1b5ll0cnnio0vvxmolgooij5i.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/1wbwq1jcywou5oe0v0ig8uk8s.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/6ynx0w9sgeecr389qqgspp29k.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7m8fd3drcujrn3b7m72kwodjc.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8ps09f0y8mibhh9t1qb96p5es.ll
+; zed-rs/optimized/9pzx6flqzrwt1xqpmg7mx7dne.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
+; zed-rs/optimized/d6xu5i45b643l7z0mo8lfmzx0.ll
 ; zlib/optimized/infback.c.ll
 ; zlib/optimized/inflate.c.ll
 ; zlib/optimized/inftrees.c.ll
 ; zlib/optimized/trees.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i16 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = getelementptr nusw [62 x i64], ptr %0, i64 0, i64 %2
+  %3 = getelementptr nusw nuw [62 x i64], ptr %0, i64 0, i64 %2
   ret ptr %3
 }
 
-; 161 occurrences:
+; 163 occurrences:
 ; abc/optimized/bmcUnroll.c.ll
 ; abc/optimized/decompress.c.ll
 ; abc/optimized/wlcBlast.c.ll
@@ -323,6 +341,7 @@ entry:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; arrow/optimized/bignum.cc.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/static_string.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
@@ -379,7 +398,6 @@ entry:
 ; llvm/optimized/GSIStreamBuilder.cpp.ll
 ; llvm/optimized/LLVMTargetMachine.cpp.ll
 ; llvm/optimized/LegalizeIntegerTypes.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
@@ -412,6 +430,7 @@ entry:
 ; openusd/optimized/decodemv.c.ll
 ; openusd/optimized/decodetxb.c.ll
 ; openusd/optimized/idct.c.ll
+; openusd/optimized/patchTableFactory.cpp.ll
 ; openvdb/optimized/LevelSetRebuild.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; php/optimized/cdf.ll
@@ -429,6 +448,7 @@ entry:
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; spike/optimized/disasm.ll
 ; sqlite/optimized/sqlite3.ll
+; stb/optimized/stb_connected_components.c.ll
 ; stockfish/optimized/movepick.ll
 ; stockfish/optimized/position.ll
 ; stockfish/optimized/search.ll
@@ -475,10 +495,10 @@ entry:
 ; yosys/optimized/fastlz.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i16 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
-  %3 = getelementptr nusw [14 x i8], ptr %0, i64 0, i64 %2
+  %3 = getelementptr nusw nuw [14 x i8], ptr %0, i64 0, i64 %2
   ret ptr %3
 }
 

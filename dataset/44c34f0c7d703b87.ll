@@ -1,5 +1,6 @@
 
-; 9 occurrences:
+; 10 occurrences:
+; boost/optimized/alloc_lib.ll
 ; libquic/optimized/padding.c.ll
 ; libquic/optimized/tls_cbc.c.ll
 ; linux/optimized/fib_trie.ll

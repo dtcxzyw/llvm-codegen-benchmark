@@ -1,5 +1,6 @@
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/directory.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; flac/optimized/foreign_metadata.c.ll
 ; folly/optimized/IOBuf.cpp.ll

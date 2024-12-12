@@ -7,7 +7,7 @@ func0000000000000004:                   # @func0000000000000004
 	zext.h	a0, a0
 	sltiu	a0, a0, 18
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	andi	a0, a0, 1
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0

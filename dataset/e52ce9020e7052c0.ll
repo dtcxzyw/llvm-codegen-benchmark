@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
@@ -10,7 +10,6 @@
 ; openssl/optimized/openssl-bin-fipsinstall.ll
 ; postgres/optimized/parse_func.ll
 ; proj/optimized/concatenatedoperation.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; wireshark/optimized/lemon.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i1 %1, ptr %2) #0 {
@@ -22,11 +21,12 @@ entry:
   ret i1 %6
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; openjdk/optimized/whitebox.ll
 ; openusd/optimized/primIndex.cpp.ll
 ; protobuf/optimized/message_differencer.cc.ll
 ; typst-rs/optimized/5antv5sfgwt5l2ke.ll
+; zed-rs/optimized/2i8hya6f2t9bndlbd6b6686oi.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, ptr %2) #0 {
 entry:

@@ -22,7 +22,7 @@
 ; openjdk/optimized/IntRgbx.ll
 ; openjdk/optimized/ThreeByteBgr.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000002a(i64 %0) #0 {
+define i32 @func000000000000004a(i64 %0) #0 {
 entry:
   %1 = trunc nuw i64 %0 to i32
   %2 = icmp sgt i32 %1, 0

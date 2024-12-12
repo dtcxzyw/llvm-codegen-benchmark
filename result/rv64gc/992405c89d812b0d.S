@@ -1,4 +1,4 @@
-func0000000000000121:                   # @func0000000000000121
+func0000000000000a61:                   # @func0000000000000a61
 	li	a2, 255
 	bgeu	a2, a1, .LBB0_2
 	li	a1, 7
@@ -10,7 +10,7 @@ func0000000000000121:                   # @func0000000000000121
 	sub	a1, a2, a1
 	add	a0, a0, a1
 	ret
-func0000000000000110:                   # @func0000000000000110
+func0000000000000210:                   # @func0000000000000210
 	srli	a2, a1, 32
 	beqz	a2, .LBB1_2
 	li	a2, 16
@@ -26,7 +26,7 @@ func0000000000000110:                   # @func0000000000000110
 .LBB1_4:                                # %entry
 	add	a0, a0, a2
 	ret
-func0000000000000113:                   # @func0000000000000113
+func0000000000000213:                   # @func0000000000000213
 	lui	a2, 2
 	addiw	a2, a2, 1
 	bltu	a1, a2, .LBB2_2
@@ -43,7 +43,7 @@ func0000000000000113:                   # @func0000000000000113
 .LBB2_4:                                # %entry
 	add	a0, a0, a2
 	ret
-func0000000000000111:                   # @func0000000000000111
+func0000000000000a51:                   # @func0000000000000a51
 	lui	a2, 2
 	addiw	a2, a2, 1
 	bltu	a1, a2, .LBB3_2
@@ -60,20 +60,37 @@ func0000000000000111:                   # @func0000000000000111
 .LBB3_4:                                # %entry
 	add	a0, a0, a2
 	ret
-func0000000000000120:                   # @func0000000000000120
-	srli	a3, a1, 21
+func0000000000000a53:                   # @func0000000000000a53
+	lui	a2, 2
+	addiw	a2, a2, 1
+	bltu	a1, a2, .LBB4_2
 	lui	a2, 1
-	bnez	a3, .LBB4_3
-	srli	a1, a1, 30
-	bnez	a1, .LBB4_4
-.LBB4_2:                                # %entry
+	li	a3, 513
+	bltu	a1, a3, .LBB4_3
+	j	.LBB4_4
+.LBB4_2:
+	li	a2, 64
+	li	a3, 513
+	bgeu	a1, a3, .LBB4_4
+.LBB4_3:                                # %entry
+	li	a2, 8
+.LBB4_4:                                # %entry
 	add	a0, a0, a2
 	ret
-.LBB4_3:                                # %entry
+func0000000000000a20:                   # @func0000000000000a20
+	srli	a3, a1, 21
+	lui	a2, 1
+	bnez	a3, .LBB5_3
+	srli	a1, a1, 30
+	bnez	a1, .LBB5_4
+.LBB5_2:                                # %entry
+	add	a0, a0, a2
+	ret
+.LBB5_3:                                # %entry
 	lui	a2, 512
 	srli	a1, a1, 30
-	beqz	a1, .LBB4_2
-.LBB4_4:                                # %entry
+	beqz	a1, .LBB5_2
+.LBB5_4:                                # %entry
 	lui	a2, 262144
 	add	a0, a0, a2
 	ret

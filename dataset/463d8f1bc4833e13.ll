@@ -59,7 +59,7 @@ entry:
   ret i32 %4
 }
 
-; 254 occurrences:
+; 255 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/FxchSCHashTable.c.ll
@@ -107,6 +107,7 @@ entry:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; arrow/optimized/float16.cc.ll
 ; assimp/optimized/SortByPTypeProcess.cpp.ll
+; boost/optimized/dump.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
@@ -141,7 +142,6 @@ entry:
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_engine_cs.ll
 ; linux/optimized/interrupt.ll
-; linux/optimized/nfs3xdr.ll
 ; linux/optimized/skl_scaler.ll
 ; linux/optimized/xprtsock.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
@@ -277,7 +277,6 @@ entry:
 ; pbrt-v4/optimized/stbimage.cpp.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; php/optimized/zend_jit.ll
-; postgres/optimized/trigger.ll
 ; protobuf/optimized/descriptor.pb.cc.ll
 ; qemu/optimized/tcg.c.ll
 ; qemu/optimized/ui_vnc-enc-zrle.c.ll
@@ -313,6 +312,8 @@ entry:
 ; z3/optimized/fpa_rewriter.cpp.ll
 ; z3/optimized/qe_lite_tactic.cpp.ll
 ; z3/optimized/smt_clause.cpp.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {

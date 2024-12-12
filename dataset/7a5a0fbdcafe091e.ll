@@ -1,5 +1,5 @@
 
-; 90 occurrences:
+; 93 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; abseil-cpp/optimized/substitute.cc.ll
 ; cpython/optimized/_pickle.ll
@@ -90,6 +90,9 @@
 ; rust-analyzer-rs/optimized/55rapmz9wj276hro.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; wireshark/optimized/packet-erf.c.ll
+; zed-rs/optimized/6t4g10gl152q55lxtcl2heeia.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0) #0 {
 entry:
@@ -339,10 +342,19 @@ entry:
   ret i1 %3
 }
 
-; 4 occurrences:
-; luau/optimized/AssemblyBuilderX64.cpp.ll
-; softposit-rs/optimized/kf9u47qfx5x7qom.ll
+; 2 occurrences:
+; flatbuffers/optimized/flatc.cpp.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i64 %0) #0 {
+entry:
+  %1 = and i64 %0, 64512
+  %2 = icmp eq i64 %1, 0
+  ret i1 %2
+}
+
+; 2 occurrences:
+; luau/optimized/AssemblyBuilderX64.cpp.ll
 ; wireshark/optimized/packet-erf.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0) #0 {
@@ -352,10 +364,23 @@ entry:
   ret i1 %2
 }
 
+; 3 occurrences:
+; softposit-rs/optimized/kf9u47qfx5x7qom.ll
+; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; wireshark/optimized/packet-erf.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i64 %0) #0 {
+entry:
+  %1 = lshr i64 %0, 2
+  %2 = trunc i64 %1 to i8
+  %3 = icmp samesign ugt i8 %2, 29
+  ret i1 %3
+}
+
 ; 1 occurrences:
 ; arrow/optimized/type.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0) #0 {
+define i1 @func0000000000000086(i64 %0) #0 {
 entry:
   %1 = lshr exact i64 %0, 4
   %2 = trunc i64 %1 to i8

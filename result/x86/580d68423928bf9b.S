@@ -1,6 +1,6 @@
 func0000000000000004:                   # @func0000000000000004
 	movslq	%esi, %rcx
-	cmpw	$7, %di
+	cmpw	$6, %di
 	movl	$1, %eax
 	cmovaeq	%rcx, %rax
 	retq

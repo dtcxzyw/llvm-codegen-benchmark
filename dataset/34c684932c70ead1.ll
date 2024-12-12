@@ -1,5 +1,5 @@
 
-; 528 occurrences:
+; 520 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcFanOrder.c.ll
 ; abc/optimized/abcOdc.c.ll
@@ -15,7 +15,6 @@
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/bmcMaj3.c.ll
 ; abc/optimized/cecCorr.c.ll
-; abc/optimized/cecMan.c.ll
 ; abc/optimized/cecPat.c.ll
 ; abc/optimized/cecSeq.c.ll
 ; abc/optimized/cecSolve.c.ll
@@ -35,7 +34,6 @@
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/giaResub6.c.ll
 ; abc/optimized/giaSimBase.c.ll
-; abc/optimized/giaSupMin.c.ll
 ; abc/optimized/giaSupps.c.ll
 ; abc/optimized/giaSwitch.c.ll
 ; abc/optimized/giaTruth.c.ll
@@ -49,7 +47,6 @@
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/llb4Cex.c.ll
 ; abc/optimized/llb4Nonlin.c.ll
-; abc/optimized/lpkMan.c.ll
 ; abc/optimized/mfsMan.c.ll
 ; abc/optimized/plaCom.c.ll
 ; abc/optimized/plaMan.c.ll
@@ -239,7 +236,6 @@
 ; libwebp/optimized/lossless_enc_sse2.c.ll
 ; libwebp/optimized/lossless_enc_sse41.c.ll
 ; libwebp/optimized/near_lossless_enc.c.ll
-; libwebp/optimized/picture_enc.c.ll
 ; libwebp/optimized/picture_psnr_enc.c.ll
 ; libwebp/optimized/sharpyuv.c.ll
 ; libwebp/optimized/vp8l_dec.c.ll
@@ -345,7 +341,6 @@
 ; opencv/optimized/adaptive_threshold_mean_binarizer.cpp.ll
 ; opencv/optimized/ann_mlp.cpp.ll
 ; opencv/optimized/array.cpp.ll
-; opencv/optimized/aruco_board.cpp.ll
 ; opencv/optimized/bardetect.cpp.ll
 ; opencv/optimized/bgfg_gaussmix2.cpp.ll
 ; opencv/optimized/binary_descriptor_matcher.cpp.ll
@@ -377,7 +372,6 @@
 ; opencv/optimized/grfmt_exr.cpp.ll
 ; opencv/optimized/hough.cpp.ll
 ; opencv/optimized/imgsource.cpp.ll
-; opencv/optimized/imgwarp.cpp.ll
 ; opencv/optimized/knearest.cpp.ll
 ; opencv/optimized/lapack.cpp.ll
 ; opencv/optimized/learning_based_color_balance.cpp.ll
@@ -476,8 +470,6 @@
 ; openmpi/optimized/nbc_iscatterv.ll
 ; openmpi/optimized/onesided_aggregation.ll
 ; openmpi/optimized/osc_sm_component.ll
-; openssl/optimized/libcrypto-lib-bsearch.ll
-; openssl/optimized/libcrypto-shlib-bsearch.ll
 ; openusd/optimized/aom_convolve.c.ll
 ; openusd/optimized/aom_scale.c.ll
 ; openusd/optimized/av1_loopfilter.c.ll
@@ -532,14 +524,13 @@
 define ptr @func0000000000000006(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = getelementptr nusw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 128 occurrences:
+; 123 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
-; abc/optimized/ifDec16.c.ll
 ; annoy/optimized/annoymodule.ll
 ; ceres/optimized/block_random_access_dense_matrix.cc.ll
 ; clamav/optimized/recvol.cpp.ll
@@ -566,6 +557,7 @@ entry:
 ; darktable/optimized/xcf.c.ll
 ; faiss/optimized/IndexAdditiveQuantizer.cpp.ll
 ; faiss/optimized/IndexIVFSpectralHash.cpp.ll
+; faiss/optimized/LocalSearchQuantizer.cpp.ll
 ; faiss/optimized/ResidualQuantizer.cpp.ll
 ; faiss/optimized/VectorTransform.cpp.ll
 ; faiss/optimized/index_read.cpp.ll
@@ -578,6 +570,7 @@ entry:
 ; linux/optimized/regmap.ll
 ; linux/optimized/trace_output.ll
 ; llama.cpp/optimized/ggml.c.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; ncnn/optimized/concat_x86.cpp.ll
 ; ncnn/optimized/concat_x86_avx.cpp.ll
 ; ncnn/optimized/concat_x86_fma.cpp.ll
@@ -626,31 +619,25 @@ entry:
 ; oiio/optimized/imagecache.cpp.ll
 ; openblas/optimized/dgghd3.c.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
+; opencv/optimized/audio_spectrogram.cpp.ll
 ; opencv/optimized/calibinit.cpp.ll
 ; opencv/optimized/convolution.cpp.ll
 ; opencv/optimized/cuda_gpu_mat.cpp.ll
-; opencv/optimized/demosaicing.cpp.ll
 ; opencv/optimized/denoising.cpp.ll
 ; opencv/optimized/eltwise_layer.cpp.ll
 ; opencv/optimized/fgs_filter.cpp.ll
 ; opencv/optimized/gather_elements_layer.cpp.ll
 ; opencv/optimized/imgwarp.cpp.ll
-; opencv/optimized/knearest.cpp.ll
 ; opencv/optimized/lapack.cpp.ll
 ; opencv/optimized/matmul_layer.cpp.ll
 ; opencv/optimized/matrix_decomp.cpp.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/miniflann.cpp.ll
 ; opencv/optimized/minmax.cpp.ll
-; opencv/optimized/plane.cpp.ll
 ; opencv/optimized/ppf_helpers.cpp.ll
 ; opencv/optimized/ppf_match_3d.cpp.ll
-; opencv/optimized/pyramids.cpp.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
-; opencv/optimized/resize.cpp.ll
 ; opencv/optimized/rtrees.cpp.ll
-; opencv/optimized/seamless_cloning_impl.cpp.ll
-; opencv/optimized/ts_func.cpp.ll
 ; opencv/optimized/warpfield.cpp.ll
 ; pbrt-v4/optimized/aggregates.cpp.ll
 ; postgres/optimized/bsearch_arg.ll
@@ -670,12 +657,12 @@ entry:
 define ptr @func0000000000000000(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = getelementptr i8, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 565 occurrences:
+; 560 occurrences:
 ; abc/optimized/ifDec16.c.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -723,11 +710,8 @@ entry:
 ; faiss/optimized/residual_quantizer_encode_steps.cpp.ll
 ; faiss/optimized/utils.cpp.ll
 ; graphviz/optimized/SparseMatrix.c.ll
-; gromacs/optimized/alltoall.cpp.ll
-; gromacs/optimized/gather.cpp.ll
 ; gromacs/optimized/gmx_nmeig.cpp.ll
 ; gromacs/optimized/muParserBase.cpp.ll
-; gromacs/optimized/scatter.cpp.ll
 ; libwebp/optimized/frame_dec.c.ll
 ; lightgbm/optimized/dataset.cpp.ll
 ; lightgbm/optimized/train_share_states.cpp.ll
@@ -743,7 +727,6 @@ entry:
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_qhull.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
@@ -751,7 +734,6 @@ entry:
 ; meshlab/optimized/filter_unsharp.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; meshlab/optimized/mesh_attribute.cpp.ll
 ; meshlab/optimized/mesh_graph.cpp.ll
@@ -1124,8 +1106,8 @@ entry:
 ; opencv/optimized/samplers.cpp.ll
 ; opencv/optimized/sc_dis.cpp.ll
 ; opencv/optimized/seam_finders.cpp.ll
+; opencv/optimized/seamless_cloning_impl.cpp.ll
 ; opencv/optimized/selectivesearchsegmentation.cpp.ll
-; opencv/optimized/shapedescr.cpp.ll
 ; opencv/optimized/sift.dispatch.cpp.ll
 ; opencv/optimized/signal_resample.cpp.ll
 ; opencv/optimized/simple_color_balance.cpp.ll
@@ -1245,23 +1227,21 @@ entry:
 define ptr @func0000000000000002(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = getelementptr nusw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 496 occurrences:
+; 450 occurrences:
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/bmcFault.c.ll
 ; abc/optimized/cuddGenetic.c.ll
 ; abc/optimized/cuddLinear.c.ll
 ; abc/optimized/giaGen.c.ll
 ; abc/optimized/giaMinLut.c.ll
-; abc/optimized/giaResub.c.ll
 ; abc/optimized/giaSimBase.c.ll
-; abc/optimized/giaSupps.c.ll
-; abc/optimized/giaSwitch.c.ll
 ; abc/optimized/intCheck.c.ll
+; abc/optimized/ivyMan.c.ll
 ; abc/optimized/kitPla.c.ll
 ; arrow/optimized/coo_converter.cc.ll
 ; arrow/optimized/row_encoder.cc.ll
@@ -1358,22 +1338,16 @@ entry:
 ; gromacs/optimized/constraint_gpu_helpers.cpp.ll
 ; gromacs/optimized/dbdsdc.cpp.ll
 ; gromacs/optimized/dgebrd.cpp.ll
-; gromacs/optimized/dgelq2.cpp.ll
 ; gromacs/optimized/dgemm.cpp.ll
 ; gromacs/optimized/dger.cpp.ll
 ; gromacs/optimized/dgetri.cpp.ll
-; gromacs/optimized/dlange.cpp.ll
 ; gromacs/optimized/dlansy.cpp.ll
-; gromacs/optimized/dlarfb.cpp.ll
 ; gromacs/optimized/dlarft.cpp.ll
 ; gromacs/optimized/dlarrvx.cpp.ll
 ; gromacs/optimized/dlasd2.cpp.ll
-; gromacs/optimized/dlasd3.cpp.ll
 ; gromacs/optimized/dlasdq.cpp.ll
 ; gromacs/optimized/dlasr.cpp.ll
-; gromacs/optimized/dorg2r.cpp.ll
 ; gromacs/optimized/dorgl2.cpp.ll
-; gromacs/optimized/dorm2l.cpp.ll
 ; gromacs/optimized/dorm2r.cpp.ll
 ; gromacs/optimized/dormlq.cpp.ll
 ; gromacs/optimized/dormql.cpp.ll
@@ -1387,8 +1361,6 @@ entry:
 ; gromacs/optimized/dtrmm.cpp.ll
 ; gromacs/optimized/dtrmv.cpp.ll
 ; gromacs/optimized/dtrsm.cpp.ll
-; gromacs/optimized/dtrti2.cpp.ll
-; gromacs/optimized/dtrtri.cpp.ll
 ; gromacs/optimized/gmx_arpack.cpp.ll
 ; gromacs/optimized/gmx_bar.cpp.ll
 ; gromacs/optimized/gmx_covar.cpp.ll
@@ -1404,22 +1376,16 @@ entry:
 ; gromacs/optimized/sbdsdc.cpp.ll
 ; gromacs/optimized/settle.cpp.ll
 ; gromacs/optimized/sgebrd.cpp.ll
-; gromacs/optimized/sgelq2.cpp.ll
 ; gromacs/optimized/sgemm.cpp.ll
 ; gromacs/optimized/sger.cpp.ll
 ; gromacs/optimized/sgetri.cpp.ll
-; gromacs/optimized/slange.cpp.ll
 ; gromacs/optimized/slansy.cpp.ll
-; gromacs/optimized/slarfb.cpp.ll
 ; gromacs/optimized/slarft.cpp.ll
 ; gromacs/optimized/slarrvx.cpp.ll
 ; gromacs/optimized/slasd2.cpp.ll
-; gromacs/optimized/slasd3.cpp.ll
 ; gromacs/optimized/slasdq.cpp.ll
 ; gromacs/optimized/slasr.cpp.ll
-; gromacs/optimized/sorg2r.cpp.ll
 ; gromacs/optimized/sorgl2.cpp.ll
-; gromacs/optimized/sorm2l.cpp.ll
 ; gromacs/optimized/sorm2r.cpp.ll
 ; gromacs/optimized/sormlq.cpp.ll
 ; gromacs/optimized/sormql.cpp.ll
@@ -1433,8 +1399,6 @@ entry:
 ; gromacs/optimized/strmm.cpp.ll
 ; gromacs/optimized/strmv.cpp.ll
 ; gromacs/optimized/strsm.cpp.ll
-; gromacs/optimized/strti2.cpp.ll
-; gromacs/optimized/strtri.cpp.ll
 ; gromacs/optimized/xvgr.cpp.ll
 ; ipopt/optimized/IpGenAugSystemSolver.ll
 ; ipopt/optimized/IpLimMemQuasiNewtonUpdater.ll
@@ -1456,14 +1420,22 @@ entry:
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/LegalizeVectorOps.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_draw_sw.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
+; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/fit_rotations_l1.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
@@ -1481,25 +1453,16 @@ entry:
 ; ncnn/optimized/convolution1d_x86_fma.cpp.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
-; ncnn/optimized/convolution_x86_avx2.cpp.ll
 ; ncnn/optimized/convolution_x86_avx512.cpp.ll
 ; ncnn/optimized/convolution_x86_fma.cpp.ll
 ; ncnn/optimized/convolutiondepthwise.cpp.ll
 ; ncnn/optimized/convolutiondepthwise1d.cpp.ll
-; ncnn/optimized/flatten_x86_avx512.cpp.ll
 ; ncnn/optimized/gemm.cpp.ll
-; ncnn/optimized/gemm_x86.cpp.ll
-; ncnn/optimized/gemm_x86_avx.cpp.ll
-; ncnn/optimized/gemm_x86_avx512.cpp.ll
-; ncnn/optimized/gemm_x86_fma.cpp.ll
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll
 ; ncnn/optimized/mat_pixel_rotate.cpp.ll
 ; ncnn/optimized/padding.cpp.ll
 ; ncnn/optimized/pooling.cpp.ll
 ; ncnn/optimized/psroipooling.cpp.ll
-; ncnn/optimized/reshape_x86_avx.cpp.ll
-; ncnn/optimized/reshape_x86_avx512.cpp.ll
-; ncnn/optimized/reshape_x86_fma.cpp.ll
 ; ncnn/optimized/roipooling.cpp.ll
 ; nori/optimized/bitmap.cpp.ll
 ; nori/optimized/block.cpp.ll
@@ -1516,9 +1479,6 @@ entry:
 ; openblas/optimized/dbdsdc.c.ll
 ; openblas/optimized/dbdsvdx.c.ll
 ; openblas/optimized/dgbbrd.c.ll
-; openblas/optimized/dgbcon.c.ll
-; openblas/optimized/dgbtf2.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dgedmd.c.ll
 ; openblas/optimized/dgees.c.ll
 ; openblas/optimized/dgeesx.c.ll
@@ -1526,13 +1486,9 @@ entry:
 ; openblas/optimized/dgejsv.c.ll
 ; openblas/optimized/dgelsx.c.ll
 ; openblas/optimized/dgelsy.c.ll
-; openblas/optimized/dgeqp3.c.ll
 ; openblas/optimized/dgerfs.c.ll
-; openblas/optimized/dgesc2.c.ll
 ; openblas/optimized/dgesvdq.c.ll
 ; openblas/optimized/dgesvj.c.ll
-; openblas/optimized/dgetri.c.ll
-; openblas/optimized/dgetsqrhrt.c.ll
 ; openblas/optimized/dggev.c.ll
 ; openblas/optimized/dggev3.c.ll
 ; openblas/optimized/dggevx.c.ll
@@ -1556,10 +1512,8 @@ entry:
 ; openblas/optimized/dlalsa.c.ll
 ; openblas/optimized/dlalsd.c.ll
 ; openblas/optimized/dlansf.c.ll
-; openblas/optimized/dlaorhr_col_getrfnp.c.ll
 ; openblas/optimized/dlapmr.c.ll
 ; openblas/optimized/dlapmt.c.ll
-; openblas/optimized/dlaqp2rk.c.ll
 ; openblas/optimized/dlaqp3rk.c.ll
 ; openblas/optimized/dlaqps.c.ll
 ; openblas/optimized/dlaqr0.c.ll
@@ -1579,10 +1533,8 @@ entry:
 ; openblas/optimized/dlasr.c.ll
 ; openblas/optimized/dlaswlq.c.ll
 ; openblas/optimized/dlasyf.c.ll
-; openblas/optimized/dlasyf_aa.c.ll
 ; openblas/optimized/dlasyf_rk.c.ll
 ; openblas/optimized/dlasyf_rook.c.ll
-; openblas/optimized/dlatdf.c.ll
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
 ; openblas/optimized/dlatrs.c.ll
@@ -1590,13 +1542,9 @@ entry:
 ; openblas/optimized/dorbdb.c.ll
 ; openblas/optimized/dorbdb1.c.ll
 ; openblas/optimized/dorbdb2.c.ll
-; openblas/optimized/dorcsd.c.ll
 ; openblas/optimized/dorcsd2by1.c.ll
 ; openblas/optimized/dorg2r.c.ll
 ; openblas/optimized/dorgbr.c.ll
-; openblas/optimized/dorghr.c.ll
-; openblas/optimized/dorgl2.c.ll
-; openblas/optimized/dorgr2.c.ll
 ; openblas/optimized/dorgtsqr.c.ll
 ; openblas/optimized/dorm22.c.ll
 ; openblas/optimized/dormql.c.ll
@@ -1608,52 +1556,35 @@ entry:
 ; openblas/optimized/dsprfs.c.ll
 ; openblas/optimized/dsptrs.c.ll
 ; openblas/optimized/dstedc.c.ll
-; openblas/optimized/dstein.c.ll
 ; openblas/optimized/dstemr.c.ll
 ; openblas/optimized/dsteqr.c.ll
 ; openblas/optimized/dsyequb.c.ll
-; openblas/optimized/dsygst.c.ll
 ; openblas/optimized/dsyrfs.c.ll
 ; openblas/optimized/dsytf2_rk.c.ll
 ; openblas/optimized/dsytrd_sb2st.c.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
 ; openblas/optimized/dsytrf_aa.c.ll
 ; openblas/optimized/dsytri2x.c.ll
 ; openblas/optimized/dsytri_3x.c.ll
 ; openblas/optimized/dsytrs.c.ll
 ; openblas/optimized/dsytrs_rook.c.ll
 ; openblas/optimized/dtbrfs.c.ll
-; openblas/optimized/dtfttr.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; openblas/optimized/dtgsen.c.ll
 ; openblas/optimized/dtgsja.c.ll
-; openblas/optimized/dtgsna.c.ll
 ; openblas/optimized/dtgsy2.c.ll
 ; openblas/optimized/dtgsyl.c.ll
 ; openblas/optimized/dtprfs.c.ll
-; openblas/optimized/dtpttr.c.ll
 ; openblas/optimized/dtrevc.c.ll
 ; openblas/optimized/dtrevc3.c.ll
 ; openblas/optimized/dtrrfs.c.ll
 ; openblas/optimized/dtrsen.c.ll
-; openblas/optimized/dtrsna.c.ll
 ; openblas/optimized/dtrsyl3.c.ll
-; openblas/optimized/dtrttf.c.ll
-; openblas/optimized/dtrttp.c.ll
-; openblas/optimized/lapacke_cgb_nancheck.c.ll
-; openblas/optimized/lapacke_cge_nancheck.c.ll
 ; openblas/optimized/lapacke_ctr_nancheck.c.ll
 ; openblas/optimized/lapacke_ctr_trans.c.ll
-; openblas/optimized/lapacke_dgb_nancheck.c.ll
-; openblas/optimized/lapacke_dge_nancheck.c.ll
 ; openblas/optimized/lapacke_dtr_nancheck.c.ll
 ; openblas/optimized/lapacke_dtr_trans.c.ll
-; openblas/optimized/lapacke_sgb_nancheck.c.ll
-; openblas/optimized/lapacke_sge_nancheck.c.ll
 ; openblas/optimized/lapacke_str_nancheck.c.ll
 ; openblas/optimized/lapacke_str_trans.c.ll
-; openblas/optimized/lapacke_zgb_nancheck.c.ll
-; openblas/optimized/lapacke_zge_nancheck.c.ll
 ; openblas/optimized/lapacke_ztr_nancheck.c.ll
 ; openblas/optimized/lapacke_ztr_trans.c.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
@@ -1662,9 +1593,11 @@ entry:
 ; opencv/optimized/bardetect.cpp.ll
 ; opencv/optimized/bitmatrixparser.cpp.ll
 ; opencv/optimized/calibinit.cpp.ll
+; opencv/optimized/checker_detector.cpp.ll
 ; opencv/optimized/concat_layer.cpp.ll
 ; opencv/optimized/contours.cpp.ll
 ; opencv/optimized/convolution.cpp.ll
+; opencv/optimized/convolution_layer.cpp.ll
 ; opencv/optimized/cuda_gpu_mat.cpp.ll
 ; opencv/optimized/demosaicing.cpp.ll
 ; opencv/optimized/denoising.cpp.ll
@@ -1737,6 +1670,7 @@ entry:
 ; recastnavigation/optimized/RecastLayers.cpp.ll
 ; recastnavigation/optimized/RecastRegion.cpp.ll
 ; stb/optimized/stb_herringbone_wang_tile.c.ll
+; stb/optimized/stb_hexwave.c.ll
 ; stb/optimized/stb_image_write.c.ll
 ; sundials/optimized/sundials_iterative.c.ll
 ; sundials/optimized/sunnonlinsol_fixedpoint.c.ll
@@ -1744,20 +1678,21 @@ entry:
 ; tev/optimized/Image.cpp.ll
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
+; yosys/optimized/qwp.ll
 ; zxing/optimized/DMECEncoder.cpp.ll
 ; zxing/optimized/HybridBinarizer.cpp.ll
+; zxing/optimized/PDFReader.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = getelementptr double, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 80 occurrences:
-; abc/optimized/giaSwitch.c.ll
+; 79 occurrences:
 ; abc/optimized/giaTim.c.ll
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
@@ -1800,7 +1735,6 @@ entry:
 ; darktable/optimized/introspection_rawprepare.c.ll
 ; faiss/optimized/IndexLSH.cpp.ll
 ; faiss/optimized/VectorTransform.cpp.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; g2o/optimized/optimizable_graph.cpp.ll
 ; graphviz/optimized/solve.c.ll
 ; gromacs/optimized/dlasr.cpp.ll
@@ -1826,6 +1760,7 @@ entry:
 ; openblas/optimized/dsytrs.c.ll
 ; openblas/optimized/dsytrs_rook.c.ll
 ; openblas/optimized/dtgevc.c.ll
+; opencv/optimized/correlation_layer.cpp.ll
 ; opencv/optimized/find_ellipses.cpp.ll
 ; opencv/optimized/ptsetreg.cpp.ll
 ; opencv/optimized/stereo_binary_bm.cpp.ll
@@ -1841,17 +1776,20 @@ entry:
 define ptr @func000000000000000c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = getelementptr double, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 29 occurrences:
+; 30 occurrences:
 ; abc/optimized/giaSwitch.c.ll
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/gradient_checker.cc.ll
 ; ceres/optimized/implicit_schur_complement.cc.ll
+; ceres/optimized/residual_block.cc.ll
+; ceres/optimized/schur_eliminator_2_d_d.cc.ll
+; ceres/optimized/schur_eliminator_d_d_d.cc.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; darktable/optimized/introspection_clahe.c.ll
 ; darktable/optimized/introspection_colorin.c.ll
@@ -1871,30 +1809,35 @@ entry:
 ; opencv/optimized/agast.cpp.ll
 ; opencv/optimized/contours.cpp.ll
 ; opencv/optimized/qrcode_reader.cpp.ll
-; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; openexr/optimized/ImfCheckFile.cpp.ll
 ; openjdk/optimized/mlib_ImageConvMxN_Fp.ll
 ; openjdk/optimized/mlib_ImageConvMxN_ext.ll
-; openusd/optimized/restoration.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
-  %5 = getelementptr nusw float, ptr %0, i64 %4
+  %4 = mul nuw nsw i64 %1, %3
+  %5 = getelementptr nusw nuw float, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 4 occurrences:
+; 11 occurrences:
+; faiss/optimized/IndexIVFPQ.cpp.ll
+; nori/optimized/texture_gl.cpp.ll
+; opencv/optimized/tree.cpp.ll
 ; quantlib/optimized/lognormalfwdrateiballand.ll
 ; quantlib/optimized/lognormalfwdrateipc.ll
 ; quantlib/optimized/pathwiseaccountingengine.ll
 ; quantlib/optimized/svd.ll
+; xgboost/optimized/allreduce.cc.ll
+; xgboost/optimized/quantile.cc.ll
+; xgboost/optimized/updater_approx.cc.ll
+; xgboost/optimized/updater_quantile_hist.cc.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = getelementptr nusw nuw double, ptr %0, i64 %4
   ret ptr %5
 }
@@ -1906,8 +1849,38 @@ entry:
 define ptr @func000000000000000a(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul nuw i64 %3, %1
+  %4 = mul nuw i64 %1, %3
   %5 = getelementptr nusw float, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 8 occurrences:
+; darktable/optimized/introspection_highlights.c.ll
+; faiss/optimized/IndexNSG.cpp.ll
+; gromacs/optimized/pme_spread.cpp.ll
+; libwebp/optimized/picture_enc.c.ll
+; lightgbm/optimized/boosting.cpp.ll
+; opencv/optimized/aruco_board.cpp.ll
+; opencv/optimized/fast_gemm.cpp.ll
+; opencv/optimized/imgwarp.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = mul nsw i64 %1, %3
+  %5 = getelementptr nusw nuw float, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 2 occurrences:
+; opencv/optimized/stereo_binary_sgbm.cpp.ll
+; openusd/optimized/restoration.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000e(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = mul nuw nsw i64 %1, %3
+  %5 = getelementptr nusw i8, ptr %0, i64 %4
   ret ptr %5
 }
 

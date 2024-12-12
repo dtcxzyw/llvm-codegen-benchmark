@@ -15,7 +15,7 @@
 	.short	8194                            # 0x2002
 	.short	8194                            # 0x2002
 	.short	8194                            # 0x2002
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	vpor	%ymm2, %ymm1, %ymm0
@@ -23,7 +23,7 @@ func0000000000000011:                   # @func0000000000000011
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	vpor	%ymm2, %ymm1, %ymm0
@@ -31,13 +31,12 @@ func000000000000001c:                   # @func000000000000001c
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	vpsllw	$7, %xmm0, %xmm0
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpor	%ymm2, %ymm1, %ymm1
-	vpxor	%xmm2, %xmm2, %xmm2
-	vpcmpgtw	%ymm2, %ymm1, %k1
-	vpcmpgtb	%xmm0, %xmm3, %k0 {%k1}
+	vpmovb2m	%xmm0, %k1
+	vpor	%ymm2, %ymm1, %ymm0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpgtw	%ymm1, %ymm0, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
@@ -58,7 +57,7 @@ func000000000000001a:                   # @func000000000000001a
 	.short	3                               # 0x3
 	.short	3                               # 0x3
 	.short	3                               # 0x3
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	vpor	%ymm2, %ymm1, %ymm0
@@ -76,11 +75,10 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 func000000000000000a:                   # @func000000000000000a
 	vpsllw	$7, %xmm0, %xmm0
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpor	%ymm2, %ymm1, %ymm1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtw	%ymm2, %ymm1, %k1
-	vpcmpgtb	%xmm0, %xmm3, %k0 {%k1}
+	vpmovb2m	%xmm0, %k1
+	vpor	%ymm2, %ymm1, %ymm0
+	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpcmpgtw	%ymm1, %ymm0, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

@@ -103,12 +103,12 @@
 define ptr @func0000000000000005(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = inttoptr i64 %3 to ptr
   ret ptr %4
 }
 
-; 76 occurrences:
+; 75 occurrences:
 ; hermes/optimized/Array.cpp.ll
 ; hermes/optimized/Callable.cpp.ll
 ; hermes/optimized/CodeCoverageProfiler.cpp.ll
@@ -151,7 +151,6 @@ entry:
 ; linux/optimized/compat_binfmt_elf.ll
 ; linux/optimized/dumpstack_64.ll
 ; linux/optimized/pci_irq.ll
-; linux/optimized/sleep.ll
 ; linux/optimized/slub.ll
 ; linux/optimized/vgacon.ll
 ; linux/optimized/vt.ll
@@ -189,12 +188,12 @@ entry:
 define ptr @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = inttoptr i64 %3 to ptr
   ret ptr %4
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; linux/optimized/fault.ll
 ; linux/optimized/i915_query.ll
 ; linux/optimized/insn-eval.ll
@@ -206,11 +205,12 @@ entry:
 ; linux/optimized/vt.ll
 ; llvm/optimized/MachineFunction.cpp.ll
 ; snappy/optimized/snappy.cc.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = inttoptr i64 %3 to ptr
   ret ptr %4
 }
@@ -221,7 +221,7 @@ entry:
 define ptr @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = inttoptr i64 %3 to ptr
   ret ptr %4
 }

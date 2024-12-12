@@ -11,3 +11,16 @@ func0000000000000008:                   # @func0000000000000008
 	sub	a1, a1, a2
 	sltu	a0, a1, a0
 	ret
+.LCPI1_0:
+	.quad	-6640827866535438581            # 0xa3d70a3d70a3d70b
+func0000000000000018:                   # @func0000000000000018
+	lui	a2, %hi(.LCPI1_0)
+	ld	a2, %lo(.LCPI1_0)(a2)
+	srli	a3, a1, 1
+	mulhu	a2, a3, a2
+	srli	a2, a2, 4
+	li	a3, 50
+	mul	a2, a2, a3
+	sub	a1, a1, a2
+	sltu	a0, a1, a0
+	ret

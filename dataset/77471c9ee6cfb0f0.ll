@@ -19,8 +19,9 @@ entry:
   ret i64 %.neg
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; hyperscan/optimized/limex_compile.cpp.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; openspiel/optimized/bridge.cc.ll
 ; openspiel/optimized/dou_dizhu.cc.ll

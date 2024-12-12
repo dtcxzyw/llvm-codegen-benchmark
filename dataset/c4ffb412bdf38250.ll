@@ -37,8 +37,7 @@ entry:
   ret i64 %3
 }
 
-; 682 occurrences:
-; eastl/optimized/EAFixedPoint.cpp.ll
+; 681 occurrences:
 ; lua/optimized/ltable.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; spike/optimized/add.ll
@@ -728,8 +727,7 @@ entry:
   ret i64 %3
 }
 
-; 2 occurrences:
-; eastl/optimized/EAFixedPoint.cpp.ll
+; 1 occurrences:
 ; oiio/optimized/Codec.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {

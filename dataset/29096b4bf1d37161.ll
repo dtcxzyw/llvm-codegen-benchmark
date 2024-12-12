@@ -1,5 +1,5 @@
 
-; 36 occurrences:
+; 35 occurrences:
 ; abc/optimized/inflate.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; cmake/optimized/inflate.c.ll
@@ -21,7 +21,6 @@
 ; llvm/optimized/DwarfExpression.cpp.ll
 ; luajit/optimized/minilua.ll
 ; miniaudio/optimized/unity.c.ll
-; mitsuba3/optimized/x86func.cpp.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; node/optimized/simdutf.ll
 ; openjdk/optimized/c1_GraphBuilder.ll
@@ -44,7 +43,7 @@ entry:
   ret i32 %2
 }
 
-; 144 occurrences:
+; 136 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; brotli/optimized/encode.c.ll
@@ -52,12 +51,10 @@ entry:
 ; flac/optimized/bitreader.c.ll
 ; folly/optimized/Checksum.cpp.ll
 ; folly/optimized/SharedMutex.cpp.ll
-; hdf5/optimized/H5FAdbg.c.ll
 ; hyperscan/optimized/engine_hyperscan.cpp.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; icu/optimized/collationweights.ll
 ; icu/optimized/ubidi.ll
-; linux/optimized/8250_exar.ll
 ; linux/optimized/avtab.ll
 ; linux/optimized/coalesce.ll
 ; linux/optimized/drm_atomic_helper.ll
@@ -68,7 +65,6 @@ entry:
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/evdev.ll
 ; linux/optimized/fib_trie.ll
-; linux/optimized/hashtab.ll
 ; linux/optimized/hid-lg4ff.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/hwmon.ll
@@ -83,9 +79,7 @@ entry:
 ; linux/optimized/ibss.ll
 ; linux/optimized/inet_hashtables.ll
 ; linux/optimized/intel-nhlt.ll
-; linux/optimized/intel-sdw-acpi.ll
 ; linux/optimized/intel_atomic_plane.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_context.ll
 ; linux/optimized/intel_cursor.ll
 ; linux/optimized/intel_ddi.ll
@@ -94,7 +88,6 @@ entry:
 ; linux/optimized/intel_dp.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/intel_engine_cs.ll
-; linux/optimized/intel_engine_user.ll
 ; linux/optimized/intel_fb.ll
 ; linux/optimized/intel_gt.ll
 ; linux/optimized/intel_gt_irq.ll
@@ -102,7 +95,6 @@ entry:
 ; linux/optimized/intel_guc_ads.ll
 ; linux/optimized/intel_guc_submission.ll
 ; linux/optimized/intel_hotplug.ll
-; linux/optimized/intel_hti.ll
 ; linux/optimized/intel_overlay.ll
 ; linux/optimized/intel_reset.ll
 ; linux/optimized/intel_sprite.ll
@@ -165,7 +157,6 @@ entry:
 ; llvm/optimized/MachineFunction.cpp.ll
 ; llvm/optimized/MetadataLoader.cpp.ll
 ; llvm/optimized/PGOCtxProfReader.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/SerializedDiagnosticReader.cpp.ll
@@ -225,7 +216,7 @@ entry:
   ret i32 %2
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; linux/optimized/i915_syncmap.ll
 ; linux/optimized/intel_cx0_phy.ll
 ; linux/optimized/intel_ddi.ll
@@ -235,6 +226,7 @@ entry:
 ; openjdk/optimized/g1CardSet.ll
 ; quickjs/optimized/libunicode.ll
 ; regex-rs/optimized/11vfjke4utuj478u.ll
+; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i64 %0) #0 {
 entry:
@@ -243,14 +235,39 @@ entry:
   ret i32 %2
 }
 
-; 2 occurrences:
-; regex-rs/optimized/11vfjke4utuj478u.ll
-; regex-rs/optimized/1x04d8372kemp7hd.ll
+; 27 occurrences:
+; hyperscan/optimized/match.c.ll
+; hyperscan/optimized/program_runtime.c.ll
+; hyperscan/optimized/runtime.c.ll
+; linux/optimized/apic_common.ll
+; linux/optimized/buffer.ll
+; linux/optimized/buffered-io.ll
+; linux/optimized/buffered_read.ll
+; linux/optimized/buffered_write.ll
+; linux/optimized/fib_trie.ll
+; linux/optimized/hsu.ll
+; linux/optimized/hugetlb.ll
+; linux/optimized/i915_gem_internal.ll
+; linux/optimized/libfs.ll
+; linux/optimized/mlme.ll
+; linux/optimized/mpage.ll
+; linux/optimized/page-io.ll
+; linux/optimized/page_io.ll
+; linux/optimized/read.ll
+; linux/optimized/readpage.ll
+; linux/optimized/shmem.ll
+; linux/optimized/skbuff.ll
+; linux/optimized/slub.ll
+; linux/optimized/truncate.ll
+; llvm/optimized/AddressSanitizer.cpp.ll
+; velox/optimized/LazyVector.cpp.ll
+; velox/optimized/PrestoSerializer.cpp.ll
+; velox/optimized/RawVector.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000000b(i64 %0) #0 {
+define i32 @func0000000000000000(i64 %0) #0 {
 entry:
-  %1 = shl nuw i64 1, %0
-  %2 = trunc nuw nsw i64 %1 to i32
+  %1 = shl i64 2, %0
+  %2 = trunc i64 %1 to i32
   ret i32 %2
 }
 
@@ -277,51 +294,28 @@ entry:
 ; llvm/optimized/InferAddressSpaces.cpp.ll
 ; llvm/optimized/Instruction.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/ToolChain.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; postgres/optimized/ifaddr.ll
+; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i64 %0) #0 {
 entry:
-  %1 = shl nuw nsw i64 1, %0
+  %1 = shl nuw nsw i64 2, %0
   %2 = trunc i64 %1 to i32
   ret i32 %2
 }
 
-; 25 occurrences:
-; hyperscan/optimized/match.c.ll
-; hyperscan/optimized/program_runtime.c.ll
-; hyperscan/optimized/runtime.c.ll
-; linux/optimized/apic_common.ll
-; linux/optimized/buffer.ll
-; linux/optimized/buffered-io.ll
-; linux/optimized/buffered_read.ll
-; linux/optimized/buffered_write.ll
-; linux/optimized/fib_trie.ll
-; linux/optimized/hsu.ll
-; linux/optimized/hugetlb.ll
-; linux/optimized/i915_gem_internal.ll
-; linux/optimized/intel_rc6.ll
-; linux/optimized/libfs.ll
-; linux/optimized/mlme.ll
-; linux/optimized/mpage.ll
-; linux/optimized/page-io.ll
-; linux/optimized/page_io.ll
-; linux/optimized/read.ll
-; linux/optimized/readpage.ll
-; linux/optimized/shmem.ll
-; linux/optimized/skbuff.ll
-; linux/optimized/slub.ll
-; linux/optimized/truncate.ll
-; llvm/optimized/AddressSanitizer.cpp.ll
+; 2 occurrences:
+; regex-rs/optimized/11vfjke4utuj478u.ll
+; regex-rs/optimized/1x04d8372kemp7hd.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000000(i64 %0) #0 {
+define i32 @func000000000000000b(i64 %0) #0 {
 entry:
-  %1 = shl i64 64, %0
-  %2 = trunc i64 %1 to i32
+  %1 = shl nuw i64 1, %0
+  %2 = trunc nuw nsw i64 %1 to i32
   ret i32 %2
 }
 

@@ -1,8 +1,7 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; image-rs/optimized/fyek6fuqg0ocunt.ll
 ; linux/optimized/blk-iocost.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_cx0_phy.ll
 ; linux/optimized/intel_vblank.ll
 ; Function Attrs: nounwind

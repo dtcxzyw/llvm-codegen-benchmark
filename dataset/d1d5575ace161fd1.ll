@@ -1,11 +1,16 @@
 
-; 174 occurrences:
+; 179 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/graphcycles.cc.ll
 ; annoy/optimized/annoymodule.ll
 ; arrow/optimized/reader.cc.ll
 ; arrow/optimized/type.cc.ll
 ; assimp/optimized/IFCLoader.cpp.ll
+; boost/optimized/ext.ll
+; boost/optimized/pid.ll
+; boost/optimized/process.ll
+; boost/optimized/shell.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; ceres/optimized/array_utils.cc.ll
 ; ceres/optimized/block_jacobian_writer.cc.ll
@@ -175,7 +180,7 @@
 ; z3/optimized/theory_wmaxsat.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i32 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000026(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 1
   %4 = add i64 %3, 2
@@ -185,7 +190,7 @@ entry:
   ret i64 %7
 }
 
-; 127 occurrences:
+; 125 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
 ; cvc5/optimized/ceg_bv_instantiator.cpp.ll
@@ -231,7 +236,6 @@ entry:
 ; llvm/optimized/GVNSink.cpp.ll
 ; llvm/optimized/GlobalISelMatchTable.cpp.ll
 ; llvm/optimized/InstrRefBasedImpl.cpp.ll
-; llvm/optimized/LLParser.cpp.ll
 ; llvm/optimized/LowerTypeTests.cpp.ll
 ; llvm/optimized/MCPseudoProbe.cpp.ll
 ; llvm/optimized/MLRegAllocEvictAdvisor.cpp.ll
@@ -263,7 +267,6 @@ entry:
 ; luau/optimized/SharedCodeAllocator.cpp.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; nix/optimized/attr-set.ll
-; opencv/optimized/seam_finders.cpp.ll
 ; openusd/optimized/textFileFormat.tab.cpp.ll
 ; openusd/optimized/textParserHelpers.cpp.ll
 ; openvdb/optimized/AttributeArrayString.cc.ll
@@ -314,7 +317,7 @@ entry:
 ; z3/optimized/symmetry_reduce_tactic.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i32 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000024(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 1
   %4 = add i64 %3, 2
@@ -324,7 +327,7 @@ entry:
   ret i64 %7
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; entt/optimized/group.cpp.ll
 ; entt/optimized/registry.cpp.ll
@@ -334,14 +337,13 @@ entry:
 ; opencv/optimized/generalized_hough.cpp.ll
 ; opencv/optimized/graph_simplifier.cpp.ll
 ; opencv/optimized/scansegment.cpp.ll
-; proj/optimized/factory.cpp.ll
 ; vcpkg/optimized/commands.depend-info.cpp.ll
 ; velox/optimized/ArraySort.cpp.ll
 ; yosys/optimized/cxxrtl_backend.ll
 ; yosys/optimized/setundef.ll
 ; yosys/optimized/verilog_backend.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(i32 %0, i32 %1, i64 %2) #0 {
+define i64 @func000000000000002a(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 1
   %4 = add i64 %3, 2
@@ -351,11 +353,10 @@ entry:
   ret i64 %7
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; hermes/optimized/CFG.cpp.ll
 ; llvm/optimized/ABIInfo.cpp.ll
 ; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
-; llvm/optimized/FixupStatepointCallerSaved.cpp.ll
 ; llvm/optimized/InstrRefBasedImpl.cpp.ll
 ; llvm/optimized/MachinePipeliner.cpp.ll
 ; llvm/optimized/MachineUniformityAnalysis.cpp.ll
@@ -366,7 +367,7 @@ entry:
 ; z3/optimized/pb_solver.cpp.ll
 ; z3/optimized/solve_eqs.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i32 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000028(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 1
   %4 = add i64 %3, 2
@@ -377,10 +378,37 @@ entry:
 }
 
 ; 2 occurrences:
+; llvm/optimized/LLParser.cpp.ll
+; opencv/optimized/seam_finders.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000034(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 1
+  %4 = add i64 %3, 2
+  %5 = or disjoint i64 %3, 1
+  %6 = icmp samesign ult i32 %0, %1
+  %7 = select i1 %6, i64 %5, i64 %4
+  ret i64 %7
+}
+
+; 1 occurrences:
+; llvm/optimized/FixupStatepointCallerSaved.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000038(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 1
+  %4 = add i64 %3, 2
+  %5 = or disjoint i64 %3, 1
+  %6 = icmp samesign ugt i32 %0, %1
+  %7 = select i1 %6, i64 %5, i64 %4
+  ret i64 %7
+}
+
+; 2 occurrences:
 ; cvc5/optimized/fc_simplex.cpp.ll
 ; cvc5/optimized/soi_simplex.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i32 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000021(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 1
   %4 = add i64 %3, 2
@@ -393,7 +421,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestHeap.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000b6(i32 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000166(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 1
   %4 = add nsw i64 %3, 2

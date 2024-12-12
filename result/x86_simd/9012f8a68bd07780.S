@@ -34,13 +34,13 @@ func0000000000000001:                   # @func0000000000000001
 .LCPI3_0:
 	.quad	8                               # 0x8
 .LCPI3_1:
-	.long	0x3f800000                      # float 1
+	.long	0x3f000000                      # float 0.5
 .LCPI3_2:
-	.long	0xbf800000                      # float -1
+	.long	0x3f800000                      # float 1
 func0000000000000004:                   # @func0000000000000004
 	vpcmpltuq	.LCPI3_0(%rip){1to4}, %ymm0, %k1
-	vbroadcastss	.LCPI3_1(%rip), %xmm0   # xmm0 = [1.0E+0,1.0E+0,1.0E+0,1.0E+0]
-	vbroadcastss	.LCPI3_2(%rip), %xmm0 {%k1} # xmm0 {%k1} = [-1.0E+0,-1.0E+0,-1.0E+0,-1.0E+0]
+	vbroadcastss	.LCPI3_1(%rip), %xmm0   # xmm0 = [5.0E-1,5.0E-1,5.0E-1,5.0E-1]
+	vbroadcastss	.LCPI3_2(%rip), %xmm0 {%k1} # xmm0 {%k1} = [1.0E+0,1.0E+0,1.0E+0,1.0E+0]
 	vzeroupper
 	retq
 .LCPI4_0:

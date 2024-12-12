@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; git/optimized/wt-status.ll
 ; linux/optimized/hbm.ll
 ; linux/optimized/hda_intel.ll
@@ -9,6 +9,7 @@
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/TemplateBase.cpp.ll
+; lvgl/optimized/lv_image.ll
 ; openusd/optimized/patchBuilder.cpp.ll
 ; openusd/optimized/surfaceFactory.cpp.ll
 ; php/optimized/util.ll
@@ -23,7 +24,7 @@ entry:
   %2 = trunc i16 %1 to i8
   %3 = lshr i8 %2, 5
   %4 = and i8 %3, 4
-  %5 = or disjoint i8 %4, %0
+  %5 = or disjoint i8 %0, %4
   ret i8 %5
 }
 
@@ -36,7 +37,7 @@ entry:
   %2 = trunc i16 %1 to i8
   %3 = lshr i8 %2, 1
   %4 = and i8 %3, 8
-  %5 = or i8 %4, %0
+  %5 = or i8 %0, %4
   ret i8 %5
 }
 

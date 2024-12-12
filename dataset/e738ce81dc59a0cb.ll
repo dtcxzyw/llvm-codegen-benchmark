@@ -1,14 +1,14 @@
 
-%struct.GlobalTransactionData.3470160 = type { ptr, i32, i64, i64, i64, i32, i32, i32, i8, i8, i8, [200 x i8] }
-%struct.mstate_aux.3672335 = type { i32, i32, i16, i32 }
+%struct.GlobalTransactionData.3654260 = type { ptr, i32, i64, i64, i64, i32, i32, i32, i8, i8, i8, [200 x i8] }
+%struct.mstate_aux.3851939 = type { i32, i32, i16, i32 }
 
-; 67 occurrences:
+; 65 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
 ; folly/optimized/Uri.cpp.ll
-; folly/optimized/farmhash.cpp.ll
-; hyperscan/optimized/mcclellancompile.cpp.ll
 ; lightgbm/optimized/dataset_loader.cpp.ll
 ; memcached/optimized/memcached-hash.ll
 ; memcached/optimized/memcached_debug-hash.ll
@@ -67,17 +67,30 @@
 ; mold/optimized/passes.cc.SPARC64.cc.ll
 ; mold/optimized/passes.cc.X86_64.cc.ll
 ; ocio/optimized/HashUtils.cpp.ll
-; oiio/optimized/farmhash.cpp.ll
-; oiio/optimized/ustring.cpp.ll
 ; rocksdb/optimized/xxhash.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000002b(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -1
   %4 = and i64 %3, -1024
   %5 = getelementptr nusw i8, ptr %1, i64 %4
   %6 = getelementptr nusw i8, ptr %5, i64 %0
-  %7 = getelementptr nusw i8, ptr %6, i64 320
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 320
+  ret ptr %7
+}
+
+; 3 occurrences:
+; folly/optimized/farmhash.cpp.ll
+; oiio/optimized/farmhash.cpp.ll
+; oiio/optimized/ustring.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002e(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %2, -1
+  %4 = and i64 %3, -64
+  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
+  %7 = getelementptr nusw i8, ptr %6, i64 -63
   ret ptr %7
 }
 
@@ -89,13 +102,13 @@ entry:
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000007f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 10
   %4 = and i64 %3, 4294967294
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 %0
-  %7 = getelementptr nusw i8, ptr %6, i64 2
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 2
   ret ptr %7
 }
 
@@ -145,24 +158,36 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/twophase.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000042(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000043(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 23
   %4 = and i64 %3, -8
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = getelementptr %struct.GlobalTransactionData.3470160, ptr %5, i64 %0, i32 1
+  %6 = getelementptr %struct.GlobalTransactionData.3654260, ptr %5, i64 %0, i32 1
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; hyperscan/optimized/mcclellancompile.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000ea(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func00000000000000ff(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 387
   %4 = and i64 %3, 562949953421296
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = getelementptr nuw %struct.mstate_aux.3851939, ptr %5, i64 %0, i32 1
+  ret ptr %6
+}
+
+; 1 occurrences:
+; hyperscan/optimized/mcclellancompile.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002f(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %2, 387
+  %4 = and i64 %3, -16
   %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = getelementptr %struct.mstate_aux.3672335, ptr %5, i64 %0, i32 1
+  %6 = getelementptr nuw %struct.mstate_aux.3851939, ptr %5, i64 %0, i32 1
   ret ptr %6
 }
 

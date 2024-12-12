@@ -1,13 +1,15 @@
 
-; 6 occurrences:
+; 8 occurrences:
 ; icu/optimized/ubidiln.ll
 ; icu/optimized/ucase.ll
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; openjdk/optimized/SDE.ll
 ; openjdk/optimized/eventFilter.ll
 ; openusd/optimized/decodemv.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i8 %0, i32 %1) #0 {
+define i64 @func0000000000000021(i8 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = icmp eq i8 %0, 0
@@ -34,7 +36,7 @@ entry:
 ; lief/optimized/bignum.c.ll
 ; wireshark/optimized/packet-zebra.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i8 %0, i32 %1) #0 {
+define i64 @func0000000000000024(i8 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = icmp ult i8 %0, 10

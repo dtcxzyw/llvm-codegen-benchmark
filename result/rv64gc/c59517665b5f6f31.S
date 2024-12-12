@@ -6,6 +6,13 @@ func000000000000001f:                   # @func000000000000001f
 	slli	a1, a1, 36
 	or	a0, a0, a1
 	ret
+func0000000000000015:                   # @func0000000000000015
+	or	a0, a0, a1
+	lui	a1, 4000
+	slli	a0, a0, 32
+	addiw	a1, a1, 1
+	or	a0, a0, a1
+	ret
 func0000000000000017:                   # @func0000000000000017
 	or	a0, a0, a1
 	slli	a0, a0, 32

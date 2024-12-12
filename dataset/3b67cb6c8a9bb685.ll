@@ -53,7 +53,7 @@ entry:
   ret i64 %4
 }
 
-; 82 occurrences:
+; 93 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree_navigator_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_reader_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
@@ -63,6 +63,18 @@ entry:
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; abseil-cpp/optimized/spinlock_test_common.cc.ll
 ; arrow/optimized/io_util.cc.ll
+; boost/optimized/barrier.ll
+; boost/optimized/condition_variable.ll
+; boost/optimized/context.ll
+; boost/optimized/file_test_helpers.ll
+; boost/optimized/mutex.ll
+; boost/optimized/partition.ll
+; boost/optimized/recursive_mutex.ll
+; boost/optimized/recursive_timed_mutex.ll
+; boost/optimized/scheduler.ll
+; boost/optimized/test_filebuf.ll
+; boost/optimized/timed_mutex.ll
+; boost/optimized/work_stealing.ll
 ; bullet3/optimized/btBatchedConstraints.ll
 ; clamav/optimized/pe_icons.c.ll
 ; darktable/optimized/Cr2sRawInterpolator.cpp.ll
@@ -77,7 +89,6 @@ entry:
 ; libwebp/optimized/predictor_enc.c.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/io_tri.cpp.ll
@@ -145,7 +156,7 @@ entry:
   ret i64 %4
 }
 
-; 37 occurrences:
+; 42 occurrences:
 ; clamav/optimized/matcher-hash.c.ll
 ; cmake/optimized/zstd_decompress.c.ll
 ; darktable/optimized/PanasonicV5Decompressor.cpp.ll
@@ -174,6 +185,7 @@ entry:
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
+; lvgl/optimized/lv_roller.ll
 ; miniaudio/optimized/unity.c.ll
 ; openjdk/optimized/output.ll
 ; postgres/optimized/pg_resetwal.ll
@@ -182,6 +194,10 @@ entry:
 ; tokenizers-rs/optimized/1k9vblvd5jyd3qmf.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
 ; typst-rs/optimized/4p46tkw2iv8zjgza.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zstd/optimized/zstd_decompress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {

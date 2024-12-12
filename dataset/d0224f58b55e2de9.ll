@@ -12,7 +12,7 @@
 ; openvdb/optimized/points.cc.ll
 ; pbrt-v4/optimized/spectrum.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003c8(float %0, float %1, i64 %2) #0 {
+define i1 @func00000000000006c8(float %0, float %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 8
   %4 = fcmp oeq float %0, %1
@@ -23,7 +23,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/alignment_pattern_finder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003c3(float %0, float %1, i64 %2) #0 {
+define i1 @func00000000000006c3(float %0, float %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 2
   %4 = fcmp ult float %0, %1

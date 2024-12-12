@@ -3,7 +3,7 @@
 ; openexr/optimized/ImfCheckFile.cpp.ll
 ; qemu/optimized/hw_display_edid-generate.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000108(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = zext i32 %1 to i64
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; image-rs/optimized/ptscn4jakoj4p9m.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000101(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = zext i32 %1 to i64
@@ -30,7 +30,7 @@ entry:
 ; image-rs/optimized/ptscn4jakoj4p9m.ll
 ; openexr/optimized/ImfCheckFile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000104(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = zext i32 %1 to i64

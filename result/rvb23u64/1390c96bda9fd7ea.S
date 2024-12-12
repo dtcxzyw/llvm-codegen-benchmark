@@ -76,3 +76,8 @@ func0000000000000009:                   # @func0000000000000009
 	or	a0, a0, a1
 	xori	a0, a0, 1
 	ret
+func0000000000000006:                   # @func0000000000000006
+	fadd.s	fa5, fa0, fa1
+	fli.s	fa4, inf
+	flt.s	a0, fa5, fa4
+	ret

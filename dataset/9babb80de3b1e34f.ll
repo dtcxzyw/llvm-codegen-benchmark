@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 22 occurrences:
 ; abc/optimized/plaMan.c.ll
 ; git/optimized/delta-islands.ll
 ; git/optimized/fast-import.ll
@@ -11,7 +11,6 @@
 ; git/optimized/replay.ll
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; hyperscan/optimized/stream.c.ll
-; linux/optimized/blk-settings.ll
 ; linux/optimized/filetable.ll
 ; linux/optimized/rsrc.ll
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha1.ll

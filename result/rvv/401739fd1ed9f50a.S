@@ -7,20 +7,6 @@ func000000000000000d:                   # @func000000000000000d
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vwaddu.wv	v8, v8, v10
 	ret
-func0000000000000023:                   # @func0000000000000023
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vmsleu.vi	v0, v9, 6
-	vmerge.vim	v10, v8, 0, v0
-	li	a0, 3
-	vwaddu.vx	v8, v10, a0
-	ret
-func0000000000000027:                   # @func0000000000000027
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vmsleu.vi	v0, v9, 6
-	vmerge.vim	v10, v8, 0, v0
-	li	a0, 3
-	vwaddu.vx	v8, v10, a0
-	ret
 func0000000000000025:                   # @func0000000000000025
 	li	a0, 20
 	vsetivli	zero, 4, e32, m1, ta, ma

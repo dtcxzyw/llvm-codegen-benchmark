@@ -14,12 +14,12 @@
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 8585216
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = xor i32 %3, 142405730
   ret i32 %4
 }
 
-; 144 occurrences:
+; 143 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
@@ -34,7 +34,6 @@ entry:
 ; abc/optimized/aigPartSat.c.ll
 ; abc/optimized/bmcBCore.c.ll
 ; abc/optimized/bmcFx.c.ll
-; abc/optimized/bmcLoad.c.ll
 ; abc/optimized/bmcMaj3.c.ll
 ; abc/optimized/bmcMaxi.c.ll
 ; abc/optimized/cbaNtk.c.ll
@@ -79,6 +78,7 @@ entry:
 ; abc/optimized/sswSat.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
+; boost/optimized/alloc_lib.ll
 ; brotli/optimized/encode.c.ll
 ; cmake/optimized/easy.c.ll
 ; curl/optimized/libcurl_la-easy.ll
@@ -141,7 +141,6 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; mold/optimized/arch-arm64.cc.ll
 ; opencv/optimized/matrix_expressions.cpp.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; openjdk/optimized/assembler_x86.ll
 ; openjdk/optimized/c1_IR.ll
 ; openjdk/optimized/pngread.ll

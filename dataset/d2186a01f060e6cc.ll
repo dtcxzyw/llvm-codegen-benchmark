@@ -1,5 +1,5 @@
 
-; 251 occurrences:
+; 256 occurrences:
 ; abseil-cpp/optimized/chi_square_test.cc.ll
 ; abseil-cpp/optimized/poisson_distribution_test.cc.ll
 ; arrow/optimized/slow.cc.ll
@@ -8,6 +8,12 @@
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/math_normalize_spheroidal.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/idas.c.ll
 ; casadi/optimized/kinsol.c.ll
@@ -53,7 +59,6 @@
 ; graphviz/optimized/shapes.c.ll
 ; graphviz/optimized/spring_electrical.c.ll
 ; gromacs/optimized/colvarbias_restraint.cpp.ll
-; gromacs/optimized/dlagtf.cpp.ll
 ; gromacs/optimized/dlarrvx.cpp.ll
 ; gromacs/optimized/expfit.cpp.ll
 ; gromacs/optimized/gmx_bar.cpp.ll
@@ -259,10 +264,12 @@ entry:
   ret double %2
 }
 
-; 100 occurrences:
+; 102 occurrences:
 ; abseil-cpp/optimized/poisson_distribution_test.cc.ll
 ; assimp/optimized/IFCBoolean.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/kinsol.c.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
@@ -433,7 +440,7 @@ entry:
   ret double %2
 }
 
-; 24 occurrences:
+; 23 occurrences:
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; flac/optimized/lpc.c.ll
 ; gromacs/optimized/lmmin.cpp.ll
@@ -453,7 +460,6 @@ entry:
 ; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
 ; oiio/optimized/imagebufalgo_xform.cpp.ll
 ; oiio/optimized/imageio.cpp.ll
-; openblas/optimized/dlaqp2rk.c.ll
 ; openblas/optimized/dlatrs.c.ll
 ; postgres/optimized/rangetypes_gist.ll
 ; typst-rs/optimized/3rk2ctuzbghb17s4.ll
@@ -491,9 +497,8 @@ entry:
   ret double %2
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; opencv/optimized/edge_drawing.cpp.ll
-; proj/optimized/healpix.cpp.ll
 ; wireshark/optimized/tap-icmpstat.c.ll
 ; wireshark/optimized/tap-icmpv6stat.c.ll
 ; Function Attrs: nounwind

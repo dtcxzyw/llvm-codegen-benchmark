@@ -1,8 +1,7 @@
 
-; 73 occurrences:
+; 71 occurrences:
 ; abc/optimized/pdrUtil.c.ll
 ; clamav/optimized/communication.c.ll
-; clamav/optimized/fanotif.c.ll
 ; clamav/optimized/inotif.c.ll
 ; clamav/optimized/netcode.c.ll
 ; clamav/optimized/output.c.ll
@@ -70,7 +69,6 @@
 ; ruby/optimized/thread.ll
 ; slurm/optimized/common.ll
 ; wireshark/optimized/androiddump.c.ll
-; wireshark/optimized/ws_pipe.c.ll
 ; wolfssl/optimized/client.c.ll
 ; wolfssl/optimized/server.c.ll
 ; Function Attrs: nounwind
@@ -79,7 +77,7 @@ entry:
   %2 = srem i32 %1, 64
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 

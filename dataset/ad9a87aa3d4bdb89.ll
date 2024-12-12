@@ -1,10 +1,9 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
 ; rocksdb/optimized/range_del_aggregator.cc.ll
-; rust-analyzer-rs/optimized/k57ct4r8b4mvzu9.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 72057594037927935
   %3 = select i1 %0, i1 %2, i1 false

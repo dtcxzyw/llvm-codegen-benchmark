@@ -9,6 +9,12 @@ func0000000000000007:                   # @func0000000000000007
 	orq	%rdi, %rax
 	imulq	$1000000, %rax, %rax            # imm = 0xF4240
 	retq
+func0000000000000006:                   # @func0000000000000006
+	movzbl	%sil, %eax
+	orq	%rdi, %rax
+	shlq	$3, %rax
+	leaq	(%rax,%rax,2), %rax
+	retq
 func0000000000000005:                   # @func0000000000000005
 	movzbl	%sil, %eax
 	orq	%rdi, %rax

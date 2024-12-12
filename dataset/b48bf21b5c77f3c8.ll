@@ -1,5 +1,5 @@
 
-; 149 occurrences:
+; 150 occurrences:
 ; assimp/optimized/Compression.cpp.ll
 ; clamav/optimized/egg.c.ll
 ; clamav/optimized/entconv.c.ll
@@ -149,8 +149,9 @@
 ; wireshark/optimized/wireshark_preference.cpp.ll
 ; wireshark/optimized/wireshark_zip_helper.cpp.ll
 ; wireshark/optimized/wlan_statistics_dialog.cpp.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000084(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = icmp eq ptr %1, null
@@ -164,19 +165,19 @@ entry:
 ; openssl/optimized/libcrypto-lib-cmac.ll
 ; openssl/optimized/libcrypto-shlib-cmac.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000330(i1 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000630(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp ne i64 %1, 0
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; luau/optimized/isocline.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000184(i1 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000304(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %2, 0
   %4 = icmp eq ptr %1, null
@@ -185,28 +186,27 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
-; linux/optimized/acpi_cmos_rtc.ll
+; 1 occurrences:
 ; linux/optimized/wmi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000060(i1 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000a0(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp ugt i64 %1, 255
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; portaudio/optimized/pa_front.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000070(i1 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000b0(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp ne i64 %1, 0
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -214,12 +214,12 @@ entry:
 ; cmake/optimized/index.c.ll
 ; libwebp/optimized/tiffdec.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i1 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000204(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, -9223372036854775800
   %4 = icmp eq ptr %1, null
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

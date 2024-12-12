@@ -1,9 +1,8 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/InterleavedLoadCombinePass.cpp.ll
 ; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; minetest/optimized/texturesource.cpp.ll
@@ -20,7 +19,7 @@ entry:
   ret i32 %5
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/InstCombineVectorOps.cpp.ll
@@ -29,6 +28,7 @@ entry:
 ; llvm/optimized/VectorUtils.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86InstCombineIntrinsic.cpp.ll
+; lvgl/optimized/lv_refr.ll
 ; openvdb/optimized/PoissonSolver.cc.ll
 ; wireshark/optimized/packet-oran.c.ll
 ; Function Attrs: nounwind
@@ -40,8 +40,9 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; llvm/optimized/AutoUpgrade.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; openjdk/optimized/os.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000018(i32 %0, i32 %1, i64 %2) #0 {

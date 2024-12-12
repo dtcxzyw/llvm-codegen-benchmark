@@ -22,7 +22,7 @@ define i1 @func0000000000000002(i1 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
   %3 = icmp eq i32 %2, 0
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 

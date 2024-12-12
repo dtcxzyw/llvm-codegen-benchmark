@@ -1,8 +1,21 @@
 
-; 161 occurrences:
+; 174 occurrences:
 ; abc/optimized/cuddPriority.c.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/LWOAnimation.cpp.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/partition.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/cvodes.c.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
@@ -166,7 +179,7 @@ define i1 @func0000000000000022(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %1, %2
   %4 = select i1 %3, double %1, double %2
-  %5 = fcmp ogt double %4, %0
+  %5 = fcmp olt double %0, %4
   ret i1 %5
 }
 
@@ -192,7 +205,7 @@ define i1 @func0000000000000025(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %1, %2
   %4 = select i1 %3, double %1, double %2
-  %5 = fcmp ult double %4, %0
+  %5 = fcmp ugt double %0, %4
   ret i1 %5
 }
 
@@ -209,12 +222,21 @@ define i1 @func0000000000000023(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %1, %2
   %4 = select i1 %3, double %1, double %2
-  %5 = fcmp ugt double %4, %0
+  %5 = fcmp ult double %0, %4
   ret i1 %5
 }
 
-; 7 occurrences:
+; 16 occurrences:
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; ipopt/optimized/IpMonotoneMuUpdate.ll
 ; msdfgen/optimized/contour-combiners.cpp.ll
 ; quantlib/optimized/piecewiseintegral.ll
@@ -226,7 +248,7 @@ define i1 @func0000000000000028(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %2, %1
   %4 = select i1 %3, double %1, double %2
-  %5 = fcmp oeq double %4, %0
+  %5 = fcmp oeq double %0, %4
   ret i1 %5
 }
 
@@ -239,7 +261,7 @@ define i1 @func000000000000002b(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %2, %1
   %4 = select i1 %3, double %1, double %2
-  %5 = fcmp uge double %4, %0
+  %5 = fcmp ule double %0, %4
   ret i1 %5
 }
 
@@ -256,12 +278,19 @@ define i1 @func0000000000000042(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ogt double %1, %2
   %4 = select i1 %3, double %1, double %2
-  %5 = fcmp ogt double %4, %0
+  %5 = fcmp olt double %0, %4
   ret i1 %5
 }
 
-; 16 occurrences:
+; 23 occurrences:
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; casadi/optimized/sqpmethod.cpp.ll
 ; hermes/optimized/Operations.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
@@ -282,18 +311,30 @@ define i1 @func0000000000000024(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %2, %1
   %4 = select i1 %3, double %1, double %2
-  %5 = fcmp olt double %4, %0
+  %5 = fcmp ogt double %0, %4
   ret i1 %5
 }
 
-; 26 occurrences:
+; 38 occurrences:
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/partition.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/kinsol.c.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; graphviz/optimized/arrows.c.ll
 ; graphviz/optimized/blockpath.c.ll
 ; graphviz/optimized/compute_hierarchy.c.ll
-; gromacs/optimized/dlanst.cpp.ll
 ; gromacs/optimized/dlasd2.cpp.ll
 ; gromacs/optimized/dlasd7.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
@@ -318,7 +359,7 @@ define i1 @func0000000000000044(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ogt double %1, %2
   %4 = select i1 %3, double %1, double %2
-  %5 = fcmp olt double %4, %0
+  %5 = fcmp ogt double %0, %4
   ret i1 %5
 }
 
@@ -332,7 +373,39 @@ define i1 @func0000000000000045(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ogt double %2, %1
   %4 = select i1 %3, double %1, double %2
-  %5 = fcmp ult double %4, %0
+  %5 = fcmp ugt double %0, %4
+  ret i1 %5
+}
+
+; 7 occurrences:
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; Function Attrs: nounwind
+define i1 @func000000000000004d(double %0, double %1, double %2) #0 {
+entry:
+  %3 = fcmp ogt double %2, %1
+  %4 = select i1 %3, double %1, double %2
+  %5 = fcmp uge double %0, %4
+  ret i1 %5
+}
+
+; 5 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000043(double %0, double %1, double %2) #0 {
+entry:
+  %3 = fcmp ogt double %2, %1
+  %4 = select i1 %3, double %1, double %2
+  %5 = fcmp ult double %0, %4
   ret i1 %5
 }
 
@@ -344,7 +417,7 @@ define i1 @func000000000000002c(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %1, %2
   %4 = select i1 %3, double %1, double %2
-  %5 = fcmp ole double %4, %0
+  %5 = fcmp oge double %0, %4
   ret i1 %5
 }
 
@@ -355,7 +428,7 @@ define i1 @func000000000000004a(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ogt double %1, %2
   %4 = select i1 %3, double %1, double %2
-  %5 = fcmp oge double %4, %0
+  %5 = fcmp ole double %0, %4
   ret i1 %5
 }
 
@@ -366,7 +439,7 @@ define i1 @func000000000000002a(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %2, %1
   %4 = select i1 %3, double %1, double %2
-  %5 = fcmp oge double %4, %0
+  %5 = fcmp ole double %0, %4
   ret i1 %5
 }
 
@@ -377,22 +450,19 @@ define i1 @func000000000000002d(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %1, %2
   %4 = select i1 %3, double %1, double %2
-  %5 = fcmp ule double %4, %0
+  %5 = fcmp uge double %0, %4
   ret i1 %5
 }
 
-; 5 occurrences:
+; 2 occurrences:
 ; openblas/optimized/dstemr.c.ll
-; openblas/optimized/dsyevr.c.ll
-; openblas/optimized/dsyevr_2stage.c.ll
 ; openblas/optimized/dsyevx.c.ll
-; openblas/optimized/dsyevx_2stage.c.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000a4(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ole double %1, %2
   %4 = select i1 %3, double %1, double %2
-  %5 = fcmp olt double %4, %0
+  %5 = fcmp ogt double %0, %4
   ret i1 %5
 }
 
@@ -403,7 +473,7 @@ define i1 @func00000000000000c4(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp oge double %1, %2
   %4 = select i1 %3, double %1, double %2
-  %5 = fcmp olt double %4, %0
+  %5 = fcmp ogt double %0, %4
   ret i1 %5
 }
 
@@ -414,7 +484,7 @@ define i1 @func00000000000000ac(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ole double %1, %2
   %4 = select i1 %3, double %1, double %2
-  %5 = fcmp ole double %4, %0
+  %5 = fcmp oge double %0, %4
   ret i1 %5
 }
 
@@ -425,7 +495,7 @@ define i1 @func00000000000000ca(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp oge double %1, %2
   %4 = select i1 %3, double %1, double %2
-  %5 = fcmp oge double %4, %0
+  %5 = fcmp ole double %0, %4
   ret i1 %5
 }
 
@@ -440,7 +510,7 @@ define i1 @func00000000000000cc(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp oge double %1, %2
   %4 = select i1 %3, double %1, double %2
-  %5 = fcmp ole double %4, %0
+  %5 = fcmp oge double %0, %4
   ret i1 %5
 }
 
@@ -458,7 +528,7 @@ define i1 @func00000000000000c5(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp oge double %1, %2
   %4 = select i1 %3, double %1, double %2
-  %5 = fcmp ult double %4, %0
+  %5 = fcmp ugt double %0, %4
   ret i1 %5
 }
 
@@ -469,7 +539,7 @@ define i1 @func00000000000000a5(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ole double %1, %2
   %4 = select i1 %3, double %1, double %2
-  %5 = fcmp ult double %4, %0
+  %5 = fcmp ugt double %0, %4
   ret i1 %5
 }
 
@@ -483,7 +553,7 @@ define i1 @func00000000000000c2(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp oge double %1, %2
   %4 = select i1 %3, double %1, double %2
-  %5 = fcmp ogt double %4, %0
+  %5 = fcmp olt double %0, %4
   ret i1 %5
 }
 
@@ -496,7 +566,7 @@ define i1 @func00000000000000c3(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp oge double %1, %2
   %4 = select i1 %3, double %1, double %2
-  %5 = fcmp ugt double %4, %0
+  %5 = fcmp ult double %0, %4
   ret i1 %5
 }
 
@@ -508,7 +578,7 @@ define i1 @func00000000000000a3(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ole double %1, %2
   %4 = select i1 %3, double %1, double %2
-  %5 = fcmp ugt double %4, %0
+  %5 = fcmp ult double %0, %4
   ret i1 %5
 }
 

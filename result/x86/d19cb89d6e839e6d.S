@@ -1,4 +1,4 @@
-func0000000000000185:                   # @func0000000000000185
+func0000000000000385:                   # @func0000000000000385
 	movq	%rdi, %rax
 	shlq	$16, %rax
 	movabsq	$-8587968512, %rcx              # imm = 0xFFFFFFFE001E0000

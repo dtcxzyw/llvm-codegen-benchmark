@@ -86,7 +86,7 @@ func000000000000004f:                   # @func000000000000004f
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vsll.vi	v10, v10, 18
 	vor.vv	v10, v14, v10
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret
 func000000000000007b:                   # @func000000000000007b
 	vsetivli	zero, 8, e16, m1, ta, ma
@@ -178,23 +178,14 @@ func000000000000002c:                   # @func000000000000002c
 	vor.vv	v10, v10, v14
 	vor.vv	v8, v10, v8
 	ret
-func000000000000004c:                   # @func000000000000004c
-	vsetivli	zero, 8, e16, m1, ta, ma
-	vzext.vf2	v13, v12
-	vwsll.vi	v14, v13, 6
-	vsetvli	zero, zero, e32, m2, ta, ma
-	vsll.vi	v10, v10, 3
-	vor.vv	v10, v14, v10
-	vor.vv	v8, v10, v8
-	ret
 func000000000000007c:                   # @func000000000000007c
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v13, v12
-	vwsll.vi	v14, v13, 6
+	vwsll.vi	v14, v13, 11
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vsll.vi	v10, v10, 3
-	vor.vv	v10, v14, v10
-	vor.vv	v8, v10, v8
+	vsll.vi	v10, v10, 6
+	vor.vv	v10, v10, v14
+	vor.vv	v8, v8, v10
 	ret
 func0000000000000072:                   # @func0000000000000072
 	vsetivli	zero, 8, e16, m1, ta, ma

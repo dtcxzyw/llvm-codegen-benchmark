@@ -1,5 +1,6 @@
 
-; 1 occurrences:
+; 2 occurrences:
+; lvgl/optimized/lv_tlsf.ll
 ; mitsuba3/optimized/jitallocator.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001a(i64 %0, i64 %1, i64 %2) #0 {
@@ -12,6 +13,7 @@ entry:
 
 ; 182 occurrences:
 ; actix-rs/optimized/comsm606o4zjj7a.ll
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -96,7 +98,6 @@ entry:
 ; linux/optimized/gen8_ppgtt.ll
 ; linux/optimized/genalloc.ll
 ; linux/optimized/mballoc.ll
-; linux/optimized/vclock_gettime.ll
 ; mitsuba3/optimized/jitallocator.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll

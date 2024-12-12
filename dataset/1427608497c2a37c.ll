@@ -1,10 +1,12 @@
 
-; 5 occurrences:
+; 7 occurrences:
 ; actix-rs/optimized/5dylu5g0crehei80.ll
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; openmpi/optimized/instance.ll
 ; ruby/optimized/compile.ll
 ; ruby/optimized/vm.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:

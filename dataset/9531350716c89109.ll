@@ -22,7 +22,9 @@ entry:
   ret i32 %6
 }
 
-; 18 occurrences:
+; 20 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
@@ -47,7 +49,7 @@ entry:
   %3 = select i1 %2, i32 64, i32 2
   %4 = icmp eq i32 %1, 16
   %5 = select i1 %4, i32 8, i32 %3
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   ret i32 %6
 }
 

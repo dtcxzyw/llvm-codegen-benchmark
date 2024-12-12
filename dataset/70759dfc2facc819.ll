@@ -67,7 +67,7 @@ entry:
   ret i32 %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; abc/optimized/ifDec08.c.ll
 ; abc/optimized/ifDec10.c.ll
 ; jq/optimized/builtin.ll
@@ -76,6 +76,7 @@ entry:
 ; llama.cpp/optimized/ggml-quants.c.ll
 ; llvm/optimized/ASTReaderStmt.cpp.ll
 ; openspiel/optimized/TransTableL.cpp.ll
+; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:

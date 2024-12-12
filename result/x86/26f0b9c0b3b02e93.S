@@ -1,3 +1,8 @@
+func0000000000000062:                   # @func0000000000000062
+	cmpl	%edx, %esi
+	seta	%al
+	orb	%dil, %al
+	retq
 func0000000000000022:                   # @func0000000000000022
 	cmpl	%edx, %esi
 	seta	%al

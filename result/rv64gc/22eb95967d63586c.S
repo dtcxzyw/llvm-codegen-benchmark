@@ -1,6 +1,11 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	subw	a1, a1, a2
 	sltiu	a1, a1, 16
+	and	a0, a0, a1
+	ret
+func0000000000000004:                   # @func0000000000000004
+	subw	a1, a1, a2
+	sltiu	a1, a1, 9
 	and	a0, a0, a1
 	ret
 func000000000000000c:                   # @func000000000000000c
@@ -16,19 +21,19 @@ func000000000000000a:                   # @func000000000000000a
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	subw	a1, a1, a2
 	sltiu	a1, a1, 32
 	and	a0, a0, a1
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	sext.w	a2, a2
 	sext.w	a1, a1
 	slt	a1, a1, a2
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	subw	a1, a1, a2
 	slti	a1, a1, 6
 	and	a0, a0, a1

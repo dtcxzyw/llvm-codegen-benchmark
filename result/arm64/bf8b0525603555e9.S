@@ -1,34 +1,45 @@
-func0000000000000014:                   // @func0000000000000014
+func0000000000000024:                   // @func0000000000000024
 // %bb.0:                               // %entry
-	movi	v3.16b, #48
-	movi	v4.16b, #160
-	orr	v2.16b, v2.16b, v3.16b
-	cmhi	v1.16b, v4.16b, v1.16b
-	bit	v0.16b, v2.16b, v1.16b
+	and	w8, w1, #0xff
+	orr	w9, w2, #0x30
+	cmp	w8, #160
+	csel	w0, w9, w0, lo
+	ret
+                                        // -- End function
+func0000000000000034:                   // @func0000000000000034
+// %bb.0:                               // %entry
+	and	w8, w1, #0xff
+	orr	w9, w2, #0x38
+	cmp	w8, #10
+	csel	w0, w9, w0, lo
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	movi	v3.16b, #1
-	cmeq	v1.16b, v1.16b, #0
-	orr	v2.16b, v2.16b, v3.16b
-	bit	v0.16b, v2.16b, v1.16b
+	orr	w8, w2, #0x1
+	tst	w1, #0xff
+	csel	w0, w8, w0, eq
+	ret
+                                        // -- End function
+func0000000000000014:                   // @func0000000000000014
+// %bb.0:                               // %entry
+	and	w8, w1, #0xff
+	orr	w9, w2, #0x30
+	cmp	w8, #10
+	csel	w0, w9, w0, lo
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	movi	v3.16b, #48
-	movi	v4.16b, #10
-	orr	v2.16b, v2.16b, v3.16b
-	cmhi	v1.16b, v4.16b, v1.16b
-	bit	v0.16b, v2.16b, v1.16b
+	orr	w8, w2, #0x8
+	tst	w1, #0xf8
+	csel	w0, w8, w0, eq
 	ret
                                         // -- End function
-func0000000000000011:                   // @func0000000000000011
+func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
-	movi	v3.16b, #1
-	cmeq	v1.16b, v1.16b, #0
-	orr	v2.16b, v2.16b, v3.16b
-	bit	v0.16b, v2.16b, v1.16b
+	orr	w8, w2, #0x1
+	tst	w1, #0xff
+	csel	w0, w8, w0, eq
 	ret
                                         // -- End function

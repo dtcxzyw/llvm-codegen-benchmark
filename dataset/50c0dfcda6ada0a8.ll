@@ -8,7 +8,7 @@ entry:
   %3 = sub nsw i32 %1, %2
   %4 = tail call i32 @llvm.abs.i32(i32 %3, i1 true)
   %5 = shl i32 %4, 2
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -23,7 +23,7 @@ entry:
   %3 = sub nsw i32 %1, %2
   %4 = tail call i32 @llvm.abs.i32(i32 %3, i1 true)
   %5 = shl nuw nsw i32 %4, 2
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -36,7 +36,7 @@ entry:
   %3 = sub nsw i32 %1, %2
   %4 = tail call i32 @llvm.abs.i32(i32 %3, i1 true)
   %5 = shl nuw nsw i32 %4, 1
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -48,7 +48,7 @@ entry:
   %3 = sub nsw i32 %1, %2
   %4 = tail call i32 @llvm.abs.i32(i32 %3, i1 true)
   %5 = shl nuw i32 %4, 1
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 

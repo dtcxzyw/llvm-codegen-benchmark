@@ -36,9 +36,10 @@ entry:
   ret i64 %4
 }
 
-; 31 occurrences:
+; 32 occurrences:
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/mfsInter.c.ll
+; boost/optimized/area.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; ncnn/optimized/mat_pixel.cpp.ll
 ; ncnn/optimized/mat_pixel_affine.cpp.ll
@@ -77,8 +78,9 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; abc/optimized/wlcBlast.c.ll
+; boost/optimized/ipv6_address_rule.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
@@ -125,6 +127,17 @@ define i64 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 3
   %3 = sub i32 %0, %2
+  %4 = sext i32 %3 to i64
+  ret i64 %4
+}
+
+; 1 occurrences:
+; graphviz/optimized/quad_prog_vpsc.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000009(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl nuw i32 %1, 1
+  %3 = sub nsw i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }

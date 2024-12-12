@@ -1,5 +1,5 @@
 
-; 296 occurrences:
+; 299 occurrences:
 ; abseil-cpp/optimized/fast_uniform_bits_test.cc.ll
 ; arrow/optimized/byte_size.cc.ll
 ; casadi/optimized/function_internal.cpp.ll
@@ -57,6 +57,7 @@
 ; llvm/optimized/AArch64StackTagging.cpp.ll
 ; llvm/optimized/AMDGPU.cpp.ll
 ; llvm/optimized/APINotesReader.cpp.ll
+; llvm/optimized/APINotesYAMLCompiler.cpp.ll
 ; llvm/optimized/APValue.cpp.ll
 ; llvm/optimized/ARC.cpp.ll
 ; llvm/optimized/ARM.cpp.ll
@@ -238,6 +239,8 @@
 ; msgpack/optimized/reuse_zone.cpp.ll
 ; msgpack/optimized/simple.cpp.ll
 ; msgpack/optimized/stream.cpp.ll
+; nix/optimized/build-remote.ll
+; nix/optimized/fetchers.ll
 ; nix/optimized/flake.ll
 ; nix/optimized/json-utils.ll
 ; nix/optimized/ls.ll
@@ -304,7 +307,8 @@ entry:
   ret i64 %3
 }
 
-; 33 occurrences:
+; 38 occurrences:
+; boost/optimized/approximately_equals.ll
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
 ; coreutils-rs/optimized/3hxvjlp3c9mnf678.ll
 ; coreutils-rs/optimized/4gs2z359bfnc1tys.ll
@@ -333,11 +337,15 @@ entry:
 ; rustfmt-rs/optimized/4ext43viwbyeinhu.ll
 ; tinyrenderer/optimized/tgaimage.cpp.ll
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
-; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; wasmtime-rs/optimized/3tukmgwo6vemwvwz.ll
 ; wasmtime-rs/optimized/4qgt4edt0wnnlcua.ll
 ; wasmtime-rs/optimized/4u85yh8sn1llpfha.ll
 ; wasmtime-rs/optimized/5dheicv8h8x61a9w.ll
+; zed-rs/optimized/01hs87ka34wj50pyvose4nrzw.ll
+; zed-rs/optimized/54arwywyn44uhdmfvofjwixkx.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dbhzlm53ys8w4y2p8y2woz44v.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i8 %1) #0 {
 entry:

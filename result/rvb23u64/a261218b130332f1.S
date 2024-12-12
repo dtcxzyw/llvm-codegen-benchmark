@@ -20,21 +20,26 @@ func000000000000000a:                   # @func000000000000000a
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func0000000000000008:                   # @func0000000000000008
+func000000000000000c:                   # @func000000000000000c
 	addiw	a2, a2, 1
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func0000000000000012:                   # @func0000000000000012
+func000000000000000e:                   # @func000000000000000e
+	addiw	a2, a2, 4
+	sh2add	a0, a1, a0
+	sh2add	a0, a2, a0
+	ret
+func0000000000000008:                   # @func0000000000000008
+	addiw	a2, a2, 4
+	sh2add	a0, a1, a0
+	sh2add	a0, a2, a0
+	ret
+func000000000000001e:                   # @func000000000000001e
 	add	a0, a0, a1
 	sext.w	a2, a2
-	sh2add	a0, a2, a0
-	addi	a0, a0, -4
-	ret
-func0000000000000002:                   # @func0000000000000002
-	addiw	a2, a2, -1
-	sh3add	a0, a1, a0
-	sh3add	a0, a2, a0
+	add	a0, a0, a2
+	addi	a0, a0, 1
 	ret
 func0000000000000018:                   # @func0000000000000018
 	sh1add	a0, a1, a0

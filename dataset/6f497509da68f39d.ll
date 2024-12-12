@@ -1,12 +1,24 @@
 
-; 7 occurrences:
-; git/optimized/apply.ll
-; icu/optimized/package.ll
+; 5 occurrences:
 ; jq/optimized/euc_jp.ll
 ; jq/optimized/sjis.ll
 ; oniguruma/optimized/euc_jp.ll
 ; oniguruma/optimized/sjis.ll
 ; redis/optimized/redis-cli.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %1, %3
+  %5 = shl i64 %4, 32
+  %6 = ashr exact i64 %5, 32
+  %7 = getelementptr nusw nuw [32 x i8], ptr %0, i64 0, i64 %6
+  ret ptr %7
+}
+
+; 2 occurrences:
+; git/optimized/apply.ll
+; icu/optimized/package.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i64 %1, ptr %2) #0 {
 entry:
@@ -14,7 +26,7 @@ entry:
   %4 = sub i64 %1, %3
   %5 = shl i64 %4, 32
   %6 = ashr exact i64 %5, 32
-  %7 = getelementptr nusw [32 x i8], ptr %0, i64 0, i64 %6
+  %7 = getelementptr nusw [65 x i8], ptr %0, i64 0, i64 %6
   ret ptr %7
 }
 

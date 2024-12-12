@@ -1,7 +1,8 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; llvm/optimized/PassBuilderPipelines.cpp.ll
+; lvgl/optimized/lv_roller.ll
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
 ; wireshark/optimized/packet-s7comm.c.ll

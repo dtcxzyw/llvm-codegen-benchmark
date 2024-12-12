@@ -19,3 +19,16 @@ func0000000000000010:                   # @func0000000000000010
 	vmerge.vvm	v8, v10, v8, v0
 	vsrl.vi	v8, v8, 8
 	ret
+func0000000000000030:                   # @func0000000000000030
+	li	a0, 255
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmsgtu.vx	v0, v10, a0
+	vmerge.vvm	v8, v10, v8, v0
+	vsrl.vi	v8, v8, 4
+	ret
+func0000000000000028:                   # @func0000000000000028
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmsleu.vi	v0, v10, 15
+	vmerge.vvm	v8, v10, v8, v0
+	vsrl.vi	v8, v8, 1
+	ret

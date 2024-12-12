@@ -10,8 +10,7 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
-; freetype/optimized/ftbase.c.ll
+; 2 occurrences:
 ; qemu/optimized/block_qcow2.c.ll
 ; qemu/optimized/target_riscv_vcrypto_helper.c.ll
 ; Function Attrs: nounwind

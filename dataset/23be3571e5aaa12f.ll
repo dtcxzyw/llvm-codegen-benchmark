@@ -1,6 +1,8 @@
 
-; 22 occurrences:
+; 24 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; hermes/optimized/APInt.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll

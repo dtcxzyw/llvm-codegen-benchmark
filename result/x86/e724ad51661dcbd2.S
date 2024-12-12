@@ -3,7 +3,7 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	$2147483647, %esi               # imm = 0x7FFFFFFF
 	cmovnel	%edi, %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	cmpl	$7, %esi
 	movl	$1, %eax
 	cmovael	%edi, %eax
@@ -12,4 +12,9 @@ func0000000000000006:                   # @func0000000000000006
 	cmpl	$7, %esi
 	movl	$1, %eax
 	cmovgel	%edi, %eax
+	retq
+func0000000000000004:                   # @func0000000000000004
+	cmpl	$100663296, %esi                # imm = 0x6000000
+	movl	$1, %eax
+	cmovael	%edi, %eax
 	retq

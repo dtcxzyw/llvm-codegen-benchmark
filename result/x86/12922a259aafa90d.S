@@ -10,15 +10,14 @@ func000000000000000c:                   # @func000000000000000c
 	setne	%al
 	andb	%dil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
-	andl	$4128768, %esi                  # imm = 0x3F0000
-	cmpl	$1048577, %esi                  # imm = 0x100001
+func0000000000000018:                   # @func0000000000000018
+	andl	$33552384, %esi                 # imm = 0x1FFF800
+	cmpl	$17921, %esi                    # imm = 0x4601
 	setae	%al
 	andb	%dil, %al
 	retq
-func0000000000000004:                   # @func0000000000000004
-	andl	$224, %esi
-	cmpl	$96, %esi
-	setb	%al
+func0000000000000014:                   # @func0000000000000014
+	testl	$4064, %esi                     # imm = 0xFE0
+	sete	%al
 	andb	%dil, %al
 	retq

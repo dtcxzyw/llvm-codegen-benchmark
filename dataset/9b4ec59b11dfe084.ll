@@ -5,7 +5,7 @@
 ; quickjs/optimized/libbf.ll
 ; rocksdb/optimized/lru_cache.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a1(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000341(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 1, %2
@@ -18,7 +18,7 @@ entry:
 ; memcached/optimized/memcached-assoc.ll
 ; memcached/optimized/memcached_debug-assoc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000181(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000301(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 1, %2
@@ -33,7 +33,7 @@ entry:
 ; zstd/optimized/zstd_double_fast.c.ll
 ; zstd/optimized/zstd_fast.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000204(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl i64 4, %2
@@ -45,7 +45,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/aset.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000201(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl i64 8, %2

@@ -1,5 +1,6 @@
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/default_filter_factory.ll
 ; llvm/optimized/LegalizeFloatTypes.cpp.ll
 ; openjdk/optimized/mlib_ImageCopy_Bit.ll
 ; ruby/optimized/util.ll
@@ -11,7 +12,9 @@ entry:
   ret i64 %2
 }
 
-; 197 occurrences:
+; 199 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -95,7 +98,7 @@ entry:
 ; lightgbm/optimized/tree.cpp.ll
 ; llvm/optimized/CodeEmitterGen.cpp.ll
 ; llvm/optimized/LegalizeDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; openexr/optimized/ImfFastHuf.cpp.ll
 ; openexr/optimized/internal_huf.c.ll
 ; openjdk/optimized/mlib_ImageCopy_Bit.ll
@@ -432,11 +435,40 @@ entry:
   ret i64 %3
 }
 
-; 5 occurrences:
+; 34 occurrences:
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; darktable/optimized/SamsungV0Decompressor.cpp.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; llvm/optimized/KnownBits.cpp.ll
+; velox/optimized/ArrayContains.cpp.ll
+; velox/optimized/ArrayDistinct.cpp.ll
+; velox/optimized/ArrayDuplicates.cpp.ll
+; velox/optimized/ArrayPosition.cpp.ll
+; velox/optimized/ArraySort.cpp.ll
+; velox/optimized/BaseVector.cpp.ll
+; velox/optimized/Bridge.cpp.ll
+; velox/optimized/CastExpr.cpp.ll
+; velox/optimized/CoalesceExpr.cpp.ll
+; velox/optimized/ConstantExpr.cpp.ll
+; velox/optimized/EvalCtx.cpp.ll
+; velox/optimized/Expr.cpp.ll
+; velox/optimized/FlatVector.cpp.ll
+; velox/optimized/FromUtf8.cpp.ll
+; velox/optimized/GenericWriter.cpp.ll
+; velox/optimized/JsonFunctions.cpp.ll
+; velox/optimized/JsonType.cpp.ll
+; velox/optimized/LazyVector.cpp.ll
+; velox/optimized/MapEntries.cpp.ll
+; velox/optimized/MapFromEntries.cpp.ll
+; velox/optimized/MapKeysAndValues.cpp.ll
+; velox/optimized/Re2Functions.cpp.ll
+; velox/optimized/Reverse.cpp.ll
+; velox/optimized/Split.cpp.ll
+; velox/optimized/SubscriptUtil.cpp.ll
+; velox/optimized/ToUtf8.cpp.ll
+; velox/optimized/TryExpr.cpp.ll
+; velox/optimized/VectorFuzzer.cpp.ll
+; velox/optimized/VectorSaver.cpp.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i32 %0, i32 %1) #0 {
@@ -506,7 +538,8 @@ entry:
   ret i64 %3
 }
 
-; 9 occurrences:
+; 10 occurrences:
+; boost/optimized/default_filter_factory.ll
 ; llvm/optimized/DemandedBits.cpp.ll
 ; llvm/optimized/DivisionByConstantInfo.cpp.ll
 ; llvm/optimized/InstCombineCasts.cpp.ll
@@ -520,7 +553,7 @@ entry:
 define i64 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %.neg = sub i32 %1, %0
-  %2 = add i32 %.neg, 64
+  %2 = add i32 %.neg, -307
   %3 = zext nneg i32 %2 to i64
   ret i64 %3
 }

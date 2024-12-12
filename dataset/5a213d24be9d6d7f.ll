@@ -4,7 +4,7 @@
 ; openssl/optimized/ca_internals_test-bin-ca.ll
 ; openssl/optimized/openssl-bin-ca.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c1c(ptr %0, i32 %1, ptr %2) #0 {
+define i1 @func000000000000302c(ptr %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp eq i32 %1, 0
@@ -20,7 +20,7 @@ entry:
 ; libwebp/optimized/get_disto.c.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c1(ptr %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000581(ptr %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp ne i32 %1, 0
@@ -33,7 +33,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/output.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(ptr %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000421(ptr %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp eq i32 %1, 0
@@ -47,7 +47,7 @@ entry:
 ; git/optimized/daemon.ll
 ; llvm/optimized/CodeGenTBAA.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000ccc(ptr %0, i32 %1, ptr %2) #0 {
+define i1 @func000000000000318c(ptr %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp ne i32 %1, 0

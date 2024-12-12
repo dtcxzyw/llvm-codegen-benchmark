@@ -20,7 +20,7 @@ func0000000000000003:                   # @func0000000000000003
 	vpsllq	$3, %ymm1, %ymm1
 	vpbroadcastq	.LCPI2_0(%rip), %ymm2   # ymm2 = [1,1,1,1]
 	vpsllvq	%ymm1, %ymm2, %ymm1
-	vpand	%ymm0, %ymm1, %ymm0
+	vpand	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI3_0:
 	.quad	3                               # 0x3
@@ -34,5 +34,5 @@ func000000000000000d:                   # @func000000000000000d
 	vpsllq	$3, %ymm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsllvq	%ymm1, %ymm2, %ymm1
-	vpand	%ymm0, %ymm1, %ymm0
+	vpand	%ymm1, %ymm0, %ymm0
 	retq

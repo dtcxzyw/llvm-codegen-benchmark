@@ -1,19 +1,17 @@
 
-%struct.ImGuiKeyRoutingData.3263747 = type { i16, i16, i8, i32, i32 }
-%struct.be128.3373718 = type { i64, i64 }
+%struct.ImGuiKeyRoutingData.3454290 = type { i16, i16, i8, i32, i32 }
+%struct.be128.3558475 = type { i64, i64 }
 
-; 4 occurrences:
+; 2 occurrences:
 ; imgui/optimized/imgui.cpp.ll
-; luajit/optimized/lj_asm.ll
-; luajit/optimized/lj_asm_dyn.ll
 ; opencv/optimized/stereosgbm.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001b(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 16
   %3 = ashr exact i32 %2, 16
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %struct.ImGuiKeyRoutingData.3263747, ptr %0, i64 %4, i32 1
+  %5 = getelementptr %struct.ImGuiKeyRoutingData.3454290, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -25,8 +23,23 @@ entry:
   %2 = shl i32 %1, 25
   %3 = ashr i32 %2, 31
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %struct.be128.3373718, ptr %0, i64 %4
+  %5 = getelementptr %struct.be128.3558475, ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 48
+  ret ptr %6
+}
+
+; 3 occurrences:
+; luajit/optimized/lj_asm.ll
+; luajit/optimized/lj_asm_dyn.ll
+; opencv/optimized/stereosgbm.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001a(ptr %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 24
+  %3 = ashr exact i32 %2, 24
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %6 = getelementptr nusw i8, ptr %5, i64 -1
   ret ptr %6
 }
 

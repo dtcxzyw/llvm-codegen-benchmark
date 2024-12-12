@@ -24,7 +24,7 @@ entry:
   ret i16 %2
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/CGBlocks.cpp.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
@@ -36,10 +36,11 @@ entry:
 ; llvm/optimized/LowerMemIntrinsics.cpp.ll
 ; llvm/optimized/MemorySanitizer.cpp.ll
 ; llvm/optimized/ScalarizeMaskedMemIntrin.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000002(i8 %0) #0 {
 entry:
-  %1 = sub nsw i8 7, %0
+  %1 = sub nsw i8 0, %0
   %2 = zext i8 %1 to i16
   ret i16 %2
 }

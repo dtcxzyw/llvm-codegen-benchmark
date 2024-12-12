@@ -14,7 +14,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	%edi, %eax
 	setb	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	andl	$127, %edx
 	testb	$1, %sil
 	movl	$127, %eax
@@ -22,7 +22,15 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	%edi, %eax
 	seta	%al
 	retq
-func0000000000000005:                   # @func0000000000000005
+func0000000000000014:                   # @func0000000000000014
+	movzwl	%dx, %eax
+	xorl	%ecx, %ecx
+	testb	$1, %sil
+	cmovnel	%eax, %ecx
+	cmpl	%edi, %ecx
+	setb	%al
+	retq
+func0000000000000015:                   # @func0000000000000015
 	movzwl	%dx, %eax
 	cmpl	%edi, %eax
 	setbe	%al

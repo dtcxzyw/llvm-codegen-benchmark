@@ -16,6 +16,10 @@ func000000000000000c:                   # @func000000000000000c
 	movabsq	$72340172838076673, %rax        # imm = 0x101010101010101
 	imulq	%rcx, %rax
 	retq
+func000000000000000f:                   # @func000000000000000f
+	addl	%esi, %edi
+	imulq	$140737489, %rdi, %rax          # imm = 0x8637BD1
+	retq
 func0000000000000003:                   # @func0000000000000003
 	addl	%esi, %edi
 	imulq	$152, %rdi, %rax
@@ -24,8 +28,4 @@ func000000000000000a:                   # @func000000000000000a
 	leal	(%rdi,%rsi), %ecx
 	movl	$4164903690, %eax               # imm = 0xF83F630A
 	imulq	%rcx, %rax
-	retq
-func000000000000000f:                   # @func000000000000000f
-	addl	%esi, %edi
-	imulq	$109951163, %rdi, %rax          # imm = 0x68DB8BB
 	retq

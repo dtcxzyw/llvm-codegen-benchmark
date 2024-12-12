@@ -19,6 +19,18 @@ entry:
   ret i1 %5
 }
 
+; 2 occurrences:
+; opencv/optimized/fast_icp.cpp.ll
+; yoga/optimized/CalculateLayout.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000e(i1 %0, float %1, float %2) #0 {
+entry:
+  %3 = fadd float %1, %2
+  %4 = fcmp ord float %3, 0.000000e+00
+  %5 = select i1 %4, i1 %0, i1 false
+  ret i1 %5
+}
+
 ; 7 occurrences:
 ; imgui/optimized/imgui.cpp.ll
 ; typst-rs/optimized/18i60ist7isq7y2m.ll
@@ -32,6 +44,17 @@ define i1 @func0000000000000008(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fadd float %1, %2
   %4 = fcmp oeq float %3, 0.000000e+00
+  %5 = select i1 %4, i1 %0, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000006(i1 %0, float %1, float %2) #0 {
+entry:
+  %3 = fadd float %1, %2
+  %4 = fcmp one float %3, 0x7FF0000000000000
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -56,17 +79,6 @@ define i1 @func000000000000000c(i1 %0, float %1, float %2) #0 {
 entry:
   %3 = fadd float %1, %2
   %4 = fcmp oge float %3, 0.000000e+00
-  %5 = select i1 %4, i1 %0, i1 false
-  ret i1 %5
-}
-
-; 1 occurrences:
-; opencv/optimized/fast_icp.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000e(i1 %0, float %1, float %2) #0 {
-entry:
-  %3 = fadd float %1, %2
-  %4 = fcmp ord float %3, 0.000000e+00
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }

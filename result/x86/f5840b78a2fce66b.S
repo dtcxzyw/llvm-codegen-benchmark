@@ -8,3 +8,13 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	%rax, %rdi
 	setl	%al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	xorq	$56, %rdi
+	cmpq	$8, %rdi
+	setb	%al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	xorq	$62, %rdi
+	cmpq	$22, %rdi
+	setae	%al
+	retq

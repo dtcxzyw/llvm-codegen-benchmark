@@ -48,15 +48,30 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 5 occurrences:
 ; rust-analyzer-rs/optimized/3jiy4rg0squ6unio.ll
 ; rust-analyzer-rs/optimized/hajha7nvyoiczny.ll
+; zed-rs/optimized/1b5ll0cnnio0vvxmolgooij5i.ll
+; zed-rs/optimized/3quypyfrg8uizn5sealer8xsk.ll
+; zed-rs/optimized/ca5us8h013in59yvcsgdq94h9.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i64 %0, i8 %1) #0 {
+define i1 @func000000000000004c(i64 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = xor i1 %2, true
   %4 = icmp ne i64 %0, 0
+  %5 = select i1 %3, i1 true, i1 %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000041(i64 %0, i8 %1) #0 {
+entry:
+  %2 = trunc nuw i8 %1 to i1
+  %3 = xor i1 %2, true
+  %4 = icmp eq i64 %0, 2
   %5 = select i1 %3, i1 true, i1 %4
   ret i1 %5
 }

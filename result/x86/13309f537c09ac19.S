@@ -1,18 +1,18 @@
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	shrq	$33, %rsi
 	andl	$1, %esi
 	movzbl	%dil, %eax
 	cmpl	%eax, %esi
 	sete	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	shrq	$32, %rsi
 	andl	$1, %esi
 	movzbl	%dil, %eax
 	cmpl	%eax, %esi
 	sete	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	shrq	$32, %rsi
 	andl	$1, %esi
 	movzbl	%dil, %eax

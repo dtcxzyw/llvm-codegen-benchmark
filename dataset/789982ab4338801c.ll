@@ -29,7 +29,7 @@ entry:
   ret i64 %4
 }
 
-; 76 occurrences:
+; 74 occurrences:
 ; abc/optimized/cuddUtil.c.ll
 ; assimp/optimized/clipper.cpp.ll
 ; casadi/optimized/im_instantiator.cpp.ll
@@ -40,7 +40,6 @@ entry:
 ; eastl/optimized/TestFixedString.cpp.ll
 ; eastl/optimized/TestHash.cpp.ll
 ; eastl/optimized/TestString.cpp.ll
-; eastl/optimized/TestUtility.cpp.ll
 ; folly/optimized/AsyncFileWriter.cpp.ll
 ; folly/optimized/AsyncSSLSocket.cpp.ll
 ; folly/optimized/AsyncServerSocket.cpp.ll
@@ -54,7 +53,6 @@ entry:
 ; folly/optimized/IPAddressV4.cpp.ll
 ; folly/optimized/IPAddressV6.cpp.ll
 ; folly/optimized/LogCategory.cpp.ll
-; folly/optimized/LoggerDB.cpp.ll
 ; folly/optimized/ObjectToString.cpp.ll
 ; folly/optimized/ObserverManager.cpp.ll
 ; folly/optimized/SSLOptions.cpp.ll

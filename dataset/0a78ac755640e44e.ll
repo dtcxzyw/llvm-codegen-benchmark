@@ -57,7 +57,7 @@ entry:
   ret i32 %4
 }
 
-; 163 occurrences:
+; 165 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/FxchSCHashTable.c.ll
@@ -220,6 +220,8 @@ entry:
 ; wireshark/optimized/packet-vrt.c.ll
 ; yosys/optimized/ezsat.ll
 ; z3/optimized/fpa_rewriter.cpp.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0) #0 {

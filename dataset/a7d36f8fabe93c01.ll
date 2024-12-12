@@ -10,11 +10,13 @@ entry:
   ret i64 %3
 }
 
-; 4 occurrences:
+; 6 occurrences:
 ; clamav/optimized/sis.c.ll
 ; typst-rs/optimized/49m3cs7hus53ztof.ll
 ; wireshark/optimized/packet-rlc-lte.c.ll
 ; wireshark/optimized/tap-rlc-graph.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i16 %0) #0 {
 entry:

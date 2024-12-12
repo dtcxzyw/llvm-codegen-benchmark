@@ -1,5 +1,5 @@
 
-; 1555 occurrences:
+; 1571 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/FxchMan.c.ll
@@ -24,7 +24,6 @@
 ; abc/optimized/cmdAuto.c.ll
 ; abc/optimized/compress.c.ll
 ; abc/optimized/cutMan.c.ll
-; abc/optimized/darMan.c.ll
 ; abc/optimized/giaBalAig.c.ll
 ; abc/optimized/giaEdge.c.ll
 ; abc/optimized/giaEmbed.c.ll
@@ -51,7 +50,6 @@
 ; abc/optimized/ifDelay.c.ll
 ; abc/optimized/ifLibLut.c.ll
 ; abc/optimized/ifMap.c.ll
-; abc/optimized/ifSeq.c.ll
 ; abc/optimized/ifTime.c.ll
 ; abc/optimized/ifUtil.c.ll
 ; abc/optimized/llb1Cluster.c.ll
@@ -65,7 +63,6 @@
 ; abc/optimized/nwkMan.c.ll
 ; abc/optimized/nwkSpeedup.c.ll
 ; abc/optimized/nwkTiming.c.ll
-; abc/optimized/reoProfile.c.ll
 ; abc/optimized/saigConstr2.c.ll
 ; abc/optimized/saigSimFast.c.ll
 ; abc/optimized/saigSwitch.c.ll
@@ -232,7 +229,6 @@
 ; darktable/optimized/introspection_vignette.c.ll
 ; darktable/optimized/introspection_watermark.c.ll
 ; darktable/optimized/introspection_zonesystem.c.ll
-; darktable/optimized/jpeg.c.ll
 ; darktable/optimized/lighttable.c.ll
 ; darktable/optimized/live_view.c.ll
 ; darktable/optimized/masks.c.ll
@@ -243,7 +239,6 @@
 ; darktable/optimized/snapshots.c.ll
 ; darktable/optimized/tethering.c.ll
 ; darktable/optimized/tiff.c.ll
-; darktable/optimized/webp.c.ll
 ; diesel-rs/optimized/3btvyztn2iiarpvf.ll
 ; draco/optimized/attribute_octahedron_transform.cc.ll
 ; draco/optimized/attribute_quantization_transform.cc.ll
@@ -421,16 +416,12 @@
 ; gromacs/optimized/setup.cpp.ll
 ; gromacs/optimized/sfactor.cpp.ll
 ; gromacs/optimized/sgebrd.cpp.ll
-; gromacs/optimized/sgelqf.cpp.ll
-; gromacs/optimized/sgeqrf.cpp.ll
 ; gromacs/optimized/sgetri.cpp.ll
 ; gromacs/optimized/shake.cpp.ll
 ; gromacs/optimized/shellfc.cpp.ll
 ; gromacs/optimized/sim_util.cpp.ll
 ; gromacs/optimized/slarrex.cpp.ll
 ; gromacs/optimized/slarrvx.cpp.ll
-; gromacs/optimized/slaruv.cpp.ll
-; gromacs/optimized/slasdt.cpp.ll
 ; gromacs/optimized/slasq2.cpp.ll
 ; gromacs/optimized/sm_compare.cpp.ll
 ; gromacs/optimized/smalloc.cpp.ll
@@ -510,6 +501,20 @@
 ; llvm/optimized/MLInlineAdvisor.cpp.ll
 ; llvm/optimized/RISCVInstPrinter.cpp.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_demo_render.ll
+; lvgl/optimized/lv_demo_widgets.ll
+; lvgl/optimized/lv_draw_vector.ll
+; lvgl/optimized/lv_line.ll
+; lvgl/optimized/lv_matrix.ll
+; lvgl/optimized/lv_scale.ll
+; lvgl/optimized/lv_sdl_mouse.ll
+; lvgl/optimized/lv_sdl_window.ll
+; lvgl/optimized/lv_span.ll
+; lvgl/optimized/lv_svg_parser.ll
+; lvgl/optimized/lv_svg_render.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; meshlab/optimized/TexturePainter.cpp.ll
 ; meshlab/optimized/VisibilityCheck.cpp.ll
@@ -541,7 +546,6 @@
 ; meshlab/optimized/filter_dirt.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
@@ -566,7 +570,6 @@
 ; meshlab/optimized/io_tri.cpp.ll
 ; meshlab/optimized/layerDialog.cpp.ll
 ; meshlab/optimized/levmarmethods.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/load_save.cpp.ll
 ; meshlab/optimized/mainwindow_Init.cpp.ll
 ; meshlab/optimized/mainwindow_RunTime.cpp.ll
@@ -681,7 +684,6 @@
 ; minetest/optimized/staticobject.cpp.ll
 ; minetest/optimized/test_collision.cpp.ll
 ; minetest/optimized/test_random.cpp.ll
-; minetest/optimized/test_serialization.cpp.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; minetest/optimized/tileanimation.cpp.ll
 ; minetest/optimized/tool.cpp.ll
@@ -1532,6 +1534,21 @@
 ; yosys/optimized/xaiger.ll
 ; z3/optimized/q_queue.cpp.ll
 ; z3/optimized/qi_queue.cpp.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/49ldufv0nkpmlikvem3q45q0g.ll
+; zed-rs/optimized/5wz01y896jxljxzjbwo9cjiak.ll
+; zed-rs/optimized/6pzok54tcf7jgyfxt7910tckc.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8uq0kpgi8jqekwanrrlvbr0h1.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/diex23lur9mz31ml2mnxprojh.ll
 ; zfp/optimized/decode1f.c.ll
 ; zfp/optimized/decode2f.c.ll
 ; zfp/optimized/decode3f.c.ll
@@ -1553,7 +1570,6 @@
 ; zxing/optimized/PDFEncoder.cpp.ll
 ; zxing/optimized/PDFReader.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll
-; zxing/optimized/ResultPoint.cpp.ll
 ; zxing/optimized/WhiteRectDetector.cpp.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i32 %0) #0 {

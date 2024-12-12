@@ -1,5 +1,8 @@
 
-; 5 occurrences:
+; 8 occurrences:
+; boost/optimized/copy_segment_point.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; pbrt-v4/optimized/samplers.cpp.ll
 ; quickjs/optimized/libbf.ll
 ; raylib/optimized/rmodels.c.ll

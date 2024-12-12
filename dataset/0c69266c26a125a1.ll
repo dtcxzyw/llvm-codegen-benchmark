@@ -1,10 +1,10 @@
 
-%struct._ir_insn.2676964 = type { %struct.anon.2676965, %union.anon.5.2676966 }
-%struct.anon.2676965 = type { %union.anon.2676967, %union.anon.4.2676968 }
-%union.anon.2676967 = type { i32 }
-%union.anon.4.2676968 = type { i32 }
-%union.anon.5.2676966 = type { %union._ir_val.2676969 }
-%union._ir_val.2676969 = type { double }
+%struct._ir_insn.2790007 = type { %struct.anon.2790008, %union.anon.5.2790009 }
+%struct.anon.2790008 = type { %union.anon.2790010, %union.anon.4.2790011 }
+%union.anon.2790010 = type { i32 }
+%union.anon.4.2790011 = type { i32 }
+%union.anon.5.2790009 = type { %union._ir_val.2790012 }
+%union._ir_val.2790012 = type { double }
 
 ; 3 occurrences:
 ; oiio/optimized/tiffinput.cpp.ll
@@ -75,12 +75,12 @@ entry:
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i16 %1, i32 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = zext i16 %1 to i64
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -90,12 +90,12 @@ entry:
 ; php/optimized/ir_ra.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i16 %1, i32 %2) #0 {
+define ptr @func000000000000001b(ptr %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw %struct._ir_insn.2676964, ptr %0, i64 %3
+  %4 = getelementptr nusw %struct._ir_insn.2790007, ptr %0, i64 %3
   %5 = zext nneg i16 %1 to i64
-  %6 = getelementptr nusw %struct._ir_insn.2676964, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw %struct._ir_insn.2790007, ptr %4, i64 %5
   ret ptr %6
 }
 

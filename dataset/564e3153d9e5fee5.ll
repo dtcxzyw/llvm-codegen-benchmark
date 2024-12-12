@@ -2,10 +2,10 @@
 ; 1 occurrences:
 ; php/optimized/array.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000038(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp ult i64 %3, %1
+  %4 = icmp samesign ugt i64 %1, %3
   %5 = xor i1 %4, %0
   ret i1 %5
 }
@@ -15,21 +15,21 @@ entry:
 ; abc/optimized/giaDup.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp eq i64 %3, %1
-  %5 = xor i1 %4, %0
+  %4 = icmp eq i64 %1, %3
+  %5 = xor i1 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; abc/optimized/wlcBlast.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp ne i64 %3, %1
+  %4 = icmp ne i64 %1, %3
   %5 = xor i1 %4, %0
   ret i1 %5
 }
@@ -41,7 +41,7 @@ entry:
 define i1 @func0000000000000001(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = icmp eq i64 %3, %1
+  %4 = icmp eq i64 %1, %3
   %5 = xor i1 %4, %0
   ret i1 %5
 }
@@ -49,11 +49,11 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/IRSimilarityIdentifier.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000000c(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000001c(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = icmp ne i64 %3, %1
-  %5 = xor i1 %4, %0
+  %4 = icmp samesign ne i64 %1, %3
+  %5 = xor i1 %0, %4
   ret i1 %5
 }
 
@@ -63,19 +63,19 @@ entry:
 define i1 @func0000000000000005(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = icmp uge i64 %3, %1
-  %5 = xor i1 %4, %0
+  %4 = icmp ule i64 %1, %3
+  %5 = xor i1 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; z3/optimized/pb_solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000009(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000019(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = icmp ule i64 %3, %1
-  %5 = xor i1 %4, %0
+  %4 = icmp samesign uge i64 %1, %3
+  %5 = xor i1 %0, %4
   ret i1 %5
 }
 

@@ -4,7 +4,7 @@
 ; openjdk/optimized/hb-aat-layout.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003a4(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000744(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = mul nuw i32 %3, %1
@@ -17,7 +17,7 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000304(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000604(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = mul i32 %3, %1
@@ -29,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/mlib_ImageAffineEdge.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000156(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = mul nsw i32 %3, %1
@@ -41,10 +41,10 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/rand.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003d6(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000007a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = mul nuw nsw i32 %3, %0
+  %4 = mul nuw nsw i32 %0, %3
   %5 = mul nsw i32 %0, %1
   %6 = icmp slt i32 %5, %4
   ret i1 %6
@@ -53,7 +53,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/smooth.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = mul nsw i32 %3, %1

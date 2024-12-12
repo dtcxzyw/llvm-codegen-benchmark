@@ -1,11 +1,7 @@
 
-; 35 occurrences:
+; 31 occurrences:
 ; lief/optimized/ResourcesParser.cpp.ll
 ; oiio/optimized/imagecache.cpp.ll
-; openusd/optimized/range2d.cpp.ll
-; openusd/optimized/range2f.cpp.ll
-; openusd/optimized/range3d.cpp.ll
-; openusd/optimized/range3f.cpp.ll
 ; rocksdb/optimized/blob_file_reader.cc.ll
 ; rocksdb/optimized/blob_source.cc.ll
 ; rocksdb/optimized/block_based_table_reader.cc.ll
@@ -36,15 +32,15 @@
 ; rocksdb/optimized/write_unprepared_txn.cc.ll
 ; velox/optimized/DateTimeFormatter.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000013(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 8
   %4 = select i1 %3, ptr %0, ptr %1
-  %5 = getelementptr nusw i8, ptr %4, i64 8
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 8
   ret ptr %5
 }
 
-; 276 occurrences:
+; 322 occurrences:
 ; abc/optimized/cgtAig.c.ll
 ; abc/optimized/cuddBddCorr.c.ll
 ; abc/optimized/cuddBddIte.c.ll
@@ -92,8 +88,20 @@ entry:
 ; linux/optimized/ds.ll
 ; linux/optimized/i915_gpu_error.ll
 ; linux/optimized/nfs4client.ll
+; llvm/optimized/AArch64ConditionalCompares.cpp.ll
+; llvm/optimized/AArch64FastISel.cpp.ll
+; llvm/optimized/AArch64FrameLowering.cpp.ll
+; llvm/optimized/AArch64InstPrinter.cpp.ll
+; llvm/optimized/CGObjCMac.cpp.ll
+; llvm/optimized/DWARFDebugFrame.cpp.ll
+; llvm/optimized/EarlyIfConversion.cpp.ll
+; llvm/optimized/IndexBody.cpp.ll
 ; llvm/optimized/LegalizeTypesGeneric.cpp.ll
+; llvm/optimized/LoopAccessAnalysis.cpp.ll
+; llvm/optimized/LoopVectorize.cpp.ll
+; llvm/optimized/PPLexerChange.cpp.ll
 ; llvm/optimized/Replacement.cpp.ll
+; llvm/optimized/X86FastISel.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; meilisearch-rs/optimized/48hhebymxr5ff2nk.ll
 ; nix/optimized/add-to-store.ll
@@ -183,13 +191,10 @@ entry:
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -254,6 +259,7 @@ entry:
 ; openjdk/optimized/shenandoahVerifier.ll
 ; openusd/optimized/range3d.cpp.ll
 ; openusd/optimized/range3f.cpp.ll
+; openusd/optimized/value.cpp.ll
 ; postgres/optimized/generation.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
@@ -321,12 +327,63 @@ entry:
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
 ; wasmtime-rs/optimized/5poarlxbfmu9lbg.ll
+; zed-rs/optimized/01a9u2e0i8wru57e54nrmyia7.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/101enz14pylx453ld99plp60b.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/1b5ll0cnnio0vvxmolgooij5i.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1qoospyzgc86mrbrflush3m5b.ll
+; zed-rs/optimized/2rng14wd6tcwuthhb5s7ekmqe.ll
+; zed-rs/optimized/3quypyfrg8uizn5sealer8xsk.ll
+; zed-rs/optimized/44bj4n5407vag46bun63mwelh.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/55fm2nmy36xzz9o0ck5kapatu.ll
+; zed-rs/optimized/5c6qu0nt7rwrjz6em8cry1wl2.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/62p0ysciwr0duwav9qlwb71rc.ll
+; zed-rs/optimized/83f7cv59nhkcel85ism08ubeo.ll
+; zed-rs/optimized/89f8nno15240ug8tk8i1phh9j.ll
+; zed-rs/optimized/8fnqr4x4dcnr22hiqkfhgttys.ll
+; zed-rs/optimized/8h2d4a3i3ysegc1cht5hd5uc2.ll
+; zed-rs/optimized/8tscdb01zcabwdnjfgov818gm.ll
+; zed-rs/optimized/9442bztux3sevpf574oh1aseo.ll
+; zed-rs/optimized/9lyxlodfxr6ds1lof2oq9jgs7.ll
+; zed-rs/optimized/9tx3ef1bysuj1ynm6i6wgnanl.ll
+; zed-rs/optimized/9wd9ok5kgn8j922db1jwm4yni.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/a9o648rm8h3erlto15zyd64wi.ll
+; zed-rs/optimized/bwvht24uf41c89mbhdihda1iu.ll
+; zed-rs/optimized/ca5us8h013in59yvcsgdq94h9.ll
+; zed-rs/optimized/cu6jannw5ajqip9tl6sqjzagm.ll
+; zed-rs/optimized/d3d8em3dqdchyj1r4knj7yk2s.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
+; zed-rs/optimized/en4jszg1hvtl62im6poo4zhnt.ll
+; zed-rs/optimized/f0amc3mihxn9sd1mhsostg4ox.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000007(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, ptr %0, ptr %1
-  %5 = getelementptr nusw i8, ptr %4, i64 8
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 8
+  ret ptr %5
+}
+
+; 5 occurrences:
+; openusd/optimized/range2d.cpp.ll
+; openusd/optimized/range2f.cpp.ll
+; openusd/optimized/range3d.cpp.ll
+; openusd/optimized/range3f.cpp.ll
+; rocksdb/optimized/db_impl_compaction_flush.cc.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000053(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ult i64 %2, 8
+  %4 = select i1 %3, ptr %0, ptr %1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 8
   ret ptr %5
 }
 
@@ -341,7 +398,7 @@ entry:
   ret ptr %5
 }
 
-; 12 occurrences:
+; 16 occurrences:
 ; abc/optimized/sswSat.c.ll
 ; cpython/optimized/errors.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
@@ -353,7 +410,11 @@ entry:
 ; llvm/optimized/SemaModule.cpp.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; qemu/optimized/region.c.ll
+; rust-analyzer-rs/optimized/lyex85fppj8jw50.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/9lyxlodfxr6ds1lof2oq9jgs7.ll
+; zed-rs/optimized/diggdkpukg0xn23g7ivuh3jfw.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(ptr %0, ptr %1, i64 %2) #0 {
 entry:
@@ -363,7 +424,7 @@ entry:
   ret ptr %5
 }
 
-; 17 occurrences:
+; 20 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; rust-analyzer-rs/optimized/1lnhy2v45voxjwry.ll
 ; rust-analyzer-rs/optimized/32bq2465pah9s0xr.ll
@@ -381,46 +442,84 @@ entry:
 ; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/dtqpsl4w47n2m18dddhdjmklr.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000022(ptr %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000023(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, 95
   %4 = select i1 %3, ptr %0, ptr %1
-  %5 = getelementptr nusw i8, ptr %4, i64 8
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 8
   ret ptr %5
 }
 
-; 13 occurrences:
-; llvm/optimized/AArch64ConditionalCompares.cpp.ll
-; llvm/optimized/AArch64FastISel.cpp.ll
-; llvm/optimized/AArch64FrameLowering.cpp.ll
-; llvm/optimized/AArch64InstPrinter.cpp.ll
-; llvm/optimized/CGObjCMac.cpp.ll
-; llvm/optimized/DWARFDebugFrame.cpp.ll
-; llvm/optimized/EarlyIfConversion.cpp.ll
-; llvm/optimized/IndexBody.cpp.ll
-; llvm/optimized/LoopAccessAnalysis.cpp.ll
-; llvm/optimized/LoopVectorize.cpp.ll
-; llvm/optimized/PPLexerChange.cpp.ll
-; llvm/optimized/X86FastISel.cpp.ll
-; openusd/optimized/value.cpp.ll
+; 10 occurrences:
+; boost/optimized/get_ring.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; eastl/optimized/TestIterator.cpp.ll
+; eastl/optimized/TestString.cpp.ll
+; zed-rs/optimized/18cjjdq897fwjf59btw7ls4h5.ll
+; zed-rs/optimized/336xmb53s74x7fvnwv8sppb05.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000007(ptr %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000001b(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = icmp eq i64 %2, 0
+  %3 = icmp slt i64 %2, 0
   %4 = select i1 %3, ptr %0, ptr %1
   %5 = getelementptr nusw nuw i8, ptr %4, i64 8
+  ret ptr %5
+}
+
+; 5 occurrences:
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
+; zed-rs/optimized/5dm7ofzf1e4v8vd2k597txwqa.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/8ittejm142jp6pw24sbau2b8f.ll
+; zed-rs/optimized/dqryhdkxpzkfeay9pjzpwnhia.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000018(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = icmp slt i64 %2, 0
+  %4 = select i1 %3, ptr %0, ptr %1
+  %5 = getelementptr i8, ptr %4, i64 8
+  ret ptr %5
+}
+
+; 2 occurrences:
+; eastl/optimized/TestRingBuffer.cpp.ll
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000028(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = icmp sgt i64 %2, 0
+  %4 = select i1 %3, ptr %0, ptr %1
+  %5 = getelementptr i8, ptr %4, i64 8
+  ret ptr %5
+}
+
+; 1 occurrences:
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000020(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = icmp ugt i64 %2, 2
+  %4 = select i1 %3, ptr %0, ptr %1
+  %5 = getelementptr i8, ptr %4, i64 8
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; grpc/optimized/work_serializer.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000032(ptr %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000033(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %.not = icmp eq i64 %2, 0
   %3 = select i1 %.not, ptr %1, ptr %0
-  %4 = getelementptr nusw i8, ptr %3, i64 16
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 16
   ret ptr %4
 }
 
@@ -428,34 +527,22 @@ entry:
 ; eastl/optimized/TestRingBuffer.cpp.ll
 ; icu/optimized/ucnv_u8.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000002b(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %2, 3
   %4 = select i1 %3, ptr %0, ptr %1
-  %5 = getelementptr nusw i8, ptr %4, i64 1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 1
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; eastl/optimized/TestRingBuffer.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000028(ptr %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000002a(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = icmp sgt i64 %2, 24
+  %3 = icmp sgt i64 %2, -2
   %4 = select i1 %3, ptr %0, ptr %1
-  %5 = getelementptr i8, ptr %4, i64 47
-  ret ptr %5
-}
-
-; 2 occurrences:
-; eastl/optimized/TestIterator.cpp.ll
-; eastl/optimized/TestString.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = icmp slt i64 %2, 0
-  %4 = select i1 %3, ptr %0, ptr %1
-  %5 = getelementptr nusw i8, ptr %4, i64 1
+  %5 = getelementptr nusw i8, ptr %4, i64 -12
   ret ptr %5
 }
 

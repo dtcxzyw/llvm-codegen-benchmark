@@ -1,14 +1,14 @@
 
-%struct._zend_jit_trace_stack.2681823 = type { %union.anon.14.2681824, i32 }
-%union.anon.14.2681824 = type { i32 }
+%struct._zend_jit_trace_stack.2794582 = type { %union.anon.14.2794583, i32 }
+%union.anon.14.2794583 = type { i32 }
 
 ; 1 occurrences:
 ; snappy/optimized/snappy.cc.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000fa(ptr %0, i32 %1) #0 {
+define ptr @func00000000000000ff(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 2
-  %3 = getelementptr nusw i8, ptr %0, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 1
   %4 = zext nneg i32 %2 to i64
   %5 = getelementptr i8, ptr %3, i64 %4
   %6 = getelementptr i8, ptr %5, i64 1
@@ -20,13 +20,13 @@ entry:
 ; hermes/optimized/HiddenClass.cpp.ll
 ; php/optimized/zend_jit.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000002f(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 4
   %3 = add nsw i32 %2, -5
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 60
-  %6 = getelementptr nusw %struct._zend_jit_trace_stack.2681823, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 60
+  %6 = getelementptr nusw nuw %struct._zend_jit_trace_stack.2794582, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -34,10 +34,10 @@ entry:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; icu/optimized/utrie2_builder.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000007f(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
-  %3 = getelementptr nusw i8, ptr %0, i64 229376
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 229376
   %4 = zext nneg i32 %2 to i64
   %5 = getelementptr float, ptr %3, i64 %4
   %6 = getelementptr i8, ptr %5, i64 4
@@ -47,7 +47,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000072(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000073(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
   %3 = getelementptr i8, ptr %0, i64 196608
@@ -60,10 +60,10 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/addr_resolv.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000078(ptr %0, i32 %1) #0 {
+define ptr @func000000000000007c(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 3
-  %3 = getelementptr nusw i8, ptr %0, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 1
   %4 = zext nneg i32 %2 to i64
   %5 = getelementptr i8, ptr %3, i64 %4
   %6 = getelementptr i8, ptr %5, i64 1

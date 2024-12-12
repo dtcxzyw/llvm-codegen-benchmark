@@ -7,7 +7,7 @@
 define i8 @func0000000000000000(i1 %0, i8 %1) #0 {
 entry:
   %2 = trunc i8 %1 to i1
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = select i1 %3, i8 2, i8 1
   ret i8 %4
 }
@@ -19,7 +19,7 @@ entry:
 define i8 @func0000000000000002(i1 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = select i1 %3, i8 0, i8 2
   ret i8 %4
 }

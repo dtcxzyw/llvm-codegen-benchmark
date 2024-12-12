@@ -23,7 +23,7 @@ func0000000000000002:                   # @func0000000000000002
 	vpmovqd	%ymm2, %xmm2
 	vpslld	$11, %xmm2, %xmm2
 	vpmovqd	%ymm1, %xmm1
-	vpternlogd	$254, %xmm1, %xmm2, %xmm0 # xmm0 = xmm0 | xmm2 | xmm1
+	vpternlogd	$254, %xmm2, %xmm1, %xmm0 # xmm0 = xmm0 | xmm1 | xmm2
 	vzeroupper
 	retq
 func0000000000000032:                   # @func0000000000000032
@@ -44,14 +44,14 @@ func00000000000000f3:                   # @func00000000000000f3
 	vpmovqd	%ymm2, %xmm2
 	vpslld	$22, %xmm2, %xmm2
 	vpmovqd	%ymm1, %xmm1
-	vpternlogd	$254, %xmm1, %xmm2, %xmm0 # xmm0 = xmm0 | xmm2 | xmm1
+	vpternlogd	$254, %xmm2, %xmm1, %xmm0 # xmm0 = xmm0 | xmm1 | xmm2
 	vzeroupper
 	retq
 func0000000000000033:                   # @func0000000000000033
 	vpmovqd	%ymm2, %xmm2
 	vpslld	$22, %xmm2, %xmm2
 	vpmovqd	%ymm1, %xmm1
-	vpternlogd	$254, %xmm1, %xmm2, %xmm0 # xmm0 = xmm0 | xmm2 | xmm1
+	vpternlogd	$254, %xmm2, %xmm1, %xmm0 # xmm0 = xmm0 | xmm1 | xmm2
 	vzeroupper
 	retq
 func000000000000000b:                   # @func000000000000000b

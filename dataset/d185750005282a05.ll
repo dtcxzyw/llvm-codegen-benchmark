@@ -1,5 +1,5 @@
 
-; 78 occurrences:
+; 77 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcFx.c.ll
 ; abc/optimized/abcGen.c.ll
@@ -67,7 +67,6 @@
 ; meshlab/optimized/solver.cpp.ll
 ; openblas/optimized/dgesvj.c.ll
 ; openblas/optimized/dgsvj0.c.ll
-; openblas/optimized/dspevd.c.ll
 ; openblas/optimized/dsptrf.c.ll
 ; openblas/optimized/dsptri.c.ll
 ; opencv/optimized/edge_drawing.cpp.ll

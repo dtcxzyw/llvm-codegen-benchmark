@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movq	%rdi, %rcx
 	orq	$16, %rcx
 	testq	%rdi, %rdi
@@ -12,7 +12,7 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	$-2, %rdi
 	cmoveq	%rcx, %rax
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	movabsq	$-9223372036854775808, %rcx     # imm = 0x8000000000000000
 	orq	%rdi, %rcx
 	movabsq	$4611686018427387899, %rax      # imm = 0x3FFFFFFFFFFFFFFB

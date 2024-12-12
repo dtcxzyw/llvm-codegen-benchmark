@@ -58,8 +58,3 @@ func0000000000000028:                   # @func0000000000000028
 	andl	$-4, %esi
 	leal	4(%rdi,%rsi), %eax
 	retq
-func000000000000000f:                   # @func000000000000000f
-	incl	%esi
-	andl	$7, %esi
-	leal	12(%rdi,%rsi), %eax
-	retq

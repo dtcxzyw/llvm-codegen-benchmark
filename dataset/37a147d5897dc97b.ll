@@ -5,7 +5,7 @@
 define i1 @func0000000000000007(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp une double %1, %2
-  %4 = xor i1 %3, %0
+  %4 = xor i1 %0, %3
   ret i1 %4
 }
 
@@ -18,7 +18,7 @@ entry:
 define i1 @func0000000000000002(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %1, %2
-  %4 = xor i1 %3, %0
+  %4 = xor i1 %0, %3
   ret i1 %4
 }
 
@@ -31,7 +31,7 @@ entry:
 define i1 @func0000000000000004(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ogt double %1, %2
-  %4 = xor i1 %3, %0
+  %4 = xor i1 %0, %3
   ret i1 %4
 }
 
@@ -64,6 +64,28 @@ entry:
   ret i1 %4
 }
 
+; 2 occurrences:
+; boost/optimized/within_pointlike_geometry.ll
+; graphviz/optimized/geom.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000003(i1 %0, double %1, double %2) #0 {
+entry:
+  %3 = fcmp ult double %1, %2
+  %4 = xor i1 %0, %3
+  ret i1 %4
+}
+
+; 2 occurrences:
+; boost/optimized/within_pointlike_geometry.ll
+; graphviz/optimized/geom.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000c(i1 %0, double %1, double %2) #0 {
+entry:
+  %3 = fcmp oge double %1, %2
+  %4 = xor i1 %3, %0
+  ret i1 %4
+}
+
 ; 1 occurrences:
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
@@ -80,26 +102,6 @@ entry:
 define i1 @func0000000000000005(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ugt double %1, %2
-  %4 = xor i1 %3, %0
-  ret i1 %4
-}
-
-; 1 occurrences:
-; graphviz/optimized/geom.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000003(i1 %0, double %1, double %2) #0 {
-entry:
-  %3 = fcmp ult double %1, %2
-  %4 = xor i1 %3, %0
-  ret i1 %4
-}
-
-; 1 occurrences:
-; graphviz/optimized/geom.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000c(i1 %0, double %1, double %2) #0 {
-entry:
-  %3 = fcmp oge double %1, %2
   %4 = xor i1 %3, %0
   ret i1 %4
 }

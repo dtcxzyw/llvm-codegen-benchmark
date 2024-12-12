@@ -1,11 +1,11 @@
-func0000000000000031:                   # @func0000000000000031
-	incl	%esi
+func0000000000000061:                   # @func0000000000000061
+	notl	%esi
 	testb	$31, %sil
 	sete	%al
 	orb	%dil, %al
 	retq
-func000000000000003c:                   # @func000000000000003c
-	incl	%esi
+func000000000000006c:                   # @func000000000000006c
+	notl	%esi
 	testl	$4095, %esi                     # imm = 0xFFF
 	setne	%al
 	orb	%dil, %al

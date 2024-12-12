@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; abc/optimized/abcIf.c.ll
 ; abc/optimized/ac_wrapper.cpp.ll
 ; darktable/optimized/AbstractLJpegDecoder.cpp.ll
@@ -10,6 +10,7 @@
 ; linux/optimized/compress.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/mballoc.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; mitsuba3/optimized/grid.cpp.ll
 ; mitsuba3/optimized/sdfgrid.cpp.ll
 ; sqlite/optimized/sqlite3.ll

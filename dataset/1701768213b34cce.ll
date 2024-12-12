@@ -5,15 +5,15 @@
 ; openssl/optimized/libcrypto-lib-ecp_nistz256.ll
 ; openssl/optimized/libcrypto-shlib-ecp_nistz256.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000048(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 255
   %3 = zext i1 %2 to i64
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   ret i1 %4
 }
 
-; 16 occurrences:
+; 19 occurrences:
 ; llvm/optimized/CallAndMessageChecker.cpp.ll
 ; llvm/optimized/CompilerInstance.cpp.ll
 ; llvm/optimized/SubtargetEmitter.cpp.ll
@@ -30,8 +30,11 @@ entry:
 ; rustfmt-rs/optimized/4arc02n7xt9gqo2v.ll
 ; wasmtime-rs/optimized/18flldcd4wnig7ks.ll
 ; wasmtime-rs/optimized/2ta8crc4qgl9bp8t.ll
+; zed-rs/optimized/4j81zvwpo3may7k9k6shk9eiu.ll
+; zed-rs/optimized/6a257z75npqxppetnyj7rxh76.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000184(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000304(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = icmp eq i64 %0, 0
@@ -43,11 +46,11 @@ entry:
 ; nori/optimized/shader_gl.cpp.ll
 ; quantlib/optimized/smilesectionutils.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000308(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 1
   %3 = zext i1 %2 to i64
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   ret i1 %4
 }
 
@@ -55,11 +58,11 @@ entry:
 ; darktable/optimized/introspection_rawdenoise.c.ll
 ; redis/optimized/bitops.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000181(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000301(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 1
   %3 = zext i1 %2 to i64
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
@@ -67,7 +70,7 @@ entry:
 ; hermes/optimized/CommandLine.cpp.ll
 ; llvm/optimized/CommandLine.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000204(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 1
   %3 = icmp eq i64 %0, 0
@@ -79,18 +82,18 @@ entry:
 ; llvm/optimized/CombinerHelper.cpp.ll
 ; yosys/optimized/simplify.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 10
   %3 = zext i1 %2 to i64
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; llvm/optimized/Mangler.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000044(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 2
   %3 = icmp eq i64 %0, 0
@@ -101,11 +104,11 @@ entry:
 ; 1 occurrences:
 ; nuttx/optimized/lib_hexdumpstream.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000101(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, -3
   %3 = zext i1 %2 to i64
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 

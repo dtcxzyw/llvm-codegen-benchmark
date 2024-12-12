@@ -1,5 +1,6 @@
 
-; 34 occurrences:
+; 36 occurrences:
+; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; graphviz/optimized/actions.c.ll
 ; graphviz/optimized/poly.c.ll
 ; hermes/optimized/Dumper.cpp.ll
@@ -32,6 +33,7 @@
 ; quantlib/optimized/gaussiannoncentralchisquaredpolynomial.ll
 ; quantlib/optimized/hestonprocess.ll
 ; quantlib/optimized/squarerootprocessrndcalculator.ll
+; quickjs/optimized/quickjs.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind

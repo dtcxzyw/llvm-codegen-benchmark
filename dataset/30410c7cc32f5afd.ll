@@ -25,10 +25,11 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; abc/optimized/abcIf.c.ll
 ; postgres/optimized/float.ll
 ; xgboost/optimized/rank_metric.cc.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0, i64 %1) #0 {
 entry:
@@ -54,6 +55,18 @@ entry:
   %3 = bitcast i32 %2 to float
   %4 = bitcast i32 %0 to float
   %5 = fcmp olt float %3, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw i64 %1 to i32
+  %3 = bitcast i32 %2 to float
+  %4 = bitcast i32 %0 to float
+  %5 = fcmp ogt float %3, %4
   ret i1 %5
 }
 

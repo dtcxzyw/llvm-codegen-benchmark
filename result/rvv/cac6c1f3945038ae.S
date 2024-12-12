@@ -19,5 +19,5 @@ func0000000000000015:                   # @func0000000000000015
 	lui	a0, 1048575
 	addi	a0, a0, 496
 	vmacc.vx	v12, a0, v10
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	ret

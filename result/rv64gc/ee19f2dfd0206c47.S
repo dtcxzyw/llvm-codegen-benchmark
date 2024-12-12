@@ -1,10 +1,3 @@
-func00000000000000a5:                   # @func00000000000000a5
-	addw	a0, a0, a1
-	slti	a1, a0, 130
-	xori	a1, a1, 1
-	add	a0, a0, a1
-	addiw	a0, a0, 253
-	ret
 func0000000000000064:                   # @func0000000000000064
 	addw	a0, a0, a1
 	slti	a1, a0, 360
@@ -15,15 +8,26 @@ func0000000000000064:                   # @func0000000000000064
 func0000000000000065:                   # @func0000000000000065
 	addw	a0, a0, a1
 	li	a1, 16
-	blt	a0, a1, .LBB2_2
+	blt	a0, a1, .LBB1_2
 	li	a1, 81
 	addw	a0, a0, a1
 	ret
-.LBB2_2:
+.LBB1_2:
 	li	a1, 42
 	addw	a0, a0, a1
 	ret
-func000000000000008f:                   # @func000000000000008f
+func0000000000000080:                   # @func0000000000000080
+	addw	a0, a0, a1
+	lui	a1, 24414
+	lui	a2, 1024162
+	addiw	a1, a1, 255
+	sltu	a1, a1, a0
+	negw	a1, a1
+	addi	a2, a2, -256
+	and	a1, a1, a2
+	addw	a0, a0, a1
+	ret
+func000000000000018f:                   # @func000000000000018f
 	addw	a0, a0, a1
 	li	a1, 49
 	bltu	a1, a0, .LBB3_2

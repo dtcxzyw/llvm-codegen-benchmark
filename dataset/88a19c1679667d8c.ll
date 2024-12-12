@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; abc/optimized/cuddApa.c.ll
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
@@ -15,7 +15,6 @@
 ; wireshark/optimized/lanalyzer.c.ll
 ; wireshark/optimized/packet-dnp.c.ll
 ; wireshark/optimized/packet-mpeg-pes.c.ll
-; wireshark/optimized/packet-stcsig.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:

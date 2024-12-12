@@ -1,71 +1,79 @@
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	movzwl	%dx, %eax
-	cmpl	%esi, %eax
-	seta	%cl
+	cmpl	%eax, %esi
+	setb	%cl
 	testl	%edi, %edi
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000014c:                   # @func000000000000014c
+func000000000000068c:                   # @func000000000000068c
 	movzwl	%dx, %eax
-	cmpl	%esi, %eax
-	seta	%cl
+	cmpl	%eax, %esi
+	setb	%cl
 	testl	%edi, %edi
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000011c:                   # @func000000000000011c
+func000000000000042c:                   # @func000000000000042c
 	movzwl	%dx, %eax
-	cmpl	%esi, %eax
+	cmpl	%eax, %esi
 	sete	%cl
 	testl	%edi, %edi
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000084:                   # @func0000000000000084
-	movzwl	%dx, %eax
-	cmpl	%esi, %eax
-	setb	%cl
-	cmpl	$10, %edi
-	setb	%al
-	andb	%cl, %al
-	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movzwl	%dx, %eax
 	xorl	%esi, %eax
 	xorl	$3, %edi
 	orl	%eax, %edi
 	sete	%al
 	retq
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	movzwl	%dx, %eax
-	cmpl	%esi, %eax
-	setb	%cl
+	cmpl	%eax, %esi
+	seta	%cl
 	testl	%edi, %edi
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000048:                   # @func0000000000000048
+func000000000000028c:                   # @func000000000000028c
 	movzwl	%dx, %eax
-	cmpl	%esi, %eax
-	seta	%cl
+	cmpl	%eax, %esi
+	setb	%cl
+	testl	%edi, %edi
+	setne	%al
+	andb	%cl, %al
+	retq
+func0000000000000288:                   # @func0000000000000288
+	movzwl	%dx, %eax
+	cmpl	%eax, %esi
+	setb	%cl
 	cmpl	$5, %edi
 	setae	%al
 	andb	%cl, %al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	movzwl	%dx, %eax
-	cmpl	%esi, %eax
+	cmpl	%eax, %esi
 	setne	%cl
 	testl	%edi, %edi
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000281:                   # @func0000000000000281
 	movzwl	%dx, %eax
-	cmpl	%esi, %eax
-	seta	%cl
+	cmpl	%eax, %esi
+	setb	%cl
 	testl	%edi, %edi
+	sete	%al
+	andb	%cl, %al
+	retq
+func0000000000000301:                   # @func0000000000000301
+	movzwl	%dx, %eax
+	cmpl	%eax, %esi
+	seta	%cl
+	cmpl	$256, %edi                      # imm = 0x100
 	sete	%al
 	andb	%cl, %al
 	retq

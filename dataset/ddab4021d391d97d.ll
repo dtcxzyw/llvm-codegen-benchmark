@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/unicode.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -102
   %4 = icmp ult i32 %3, 868
@@ -18,7 +18,7 @@ entry:
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = icmp ult i32 %3, 2
@@ -28,29 +28,44 @@ entry:
   ret i1 %7
 }
 
-; 3 occurrences:
-; graphviz/optimized/strmatch.c.ll
-; quickjs/optimized/libregexp.ll
-; regex-rs/optimized/1rguw48xrsv49k4z.ll
+; 17 occurrences:
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/env.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/wait.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000008cc(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, -91
-  %4 = icmp ult i32 %3, -26
-  %5 = icmp ult i32 %1, -10
+  %3 = add nuw i32 %2, 16777216
+  %4 = icmp slt i32 %3, 33554432
+  %5 = icmp ne i32 %1, 0
   %6 = select i1 %5, i1 %4, i1 false
   %7 = select i1 %6, i1 %0, i1 false
   ret i1 %7
 }
 
-; 1 occurrences:
-; icu/optimized/ubidiwrt.ll
+; 2 occurrences:
+; graphviz/optimized/strmatch.c.ll
+; regex-rs/optimized/1rguw48xrsv49k4z.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000484(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, -8239
-  %4 = icmp ult i32 %3, -5
-  %5 = icmp ne i32 %1, 8204
+  %3 = add nsw i32 %2, -91
+  %4 = icmp ult i32 %3, -26
+  %5 = icmp ult i32 %1, -10
   %6 = select i1 %5, i1 %4, i1 false
   %7 = select i1 %6, i1 %0, i1 false
   ret i1 %7

@@ -10,7 +10,7 @@
 func000000000000003a:                   # @func000000000000003a
 	vpaddw	.LCPI0_0(%rip), %xmm1, %xmm1
 	vpmovzxwd	%xmm1, %xmm1            # xmm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
 .LCPI1_0:
@@ -25,14 +25,14 @@ func000000000000003a:                   # @func000000000000003a
 func0000000000000000:                   # @func0000000000000000
 	vpaddw	.LCPI1_0(%rip), %xmm1, %xmm1
 	vpmovzxwd	%xmm1, %xmm1            # xmm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
 func0000000000000020:                   # @func0000000000000020
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpsubw	%xmm2, %xmm1, %xmm1
 	vpmovzxwd	%xmm1, %xmm1            # xmm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
 .LCPI3_0:
@@ -47,7 +47,7 @@ func0000000000000020:                   # @func0000000000000020
 func000000000000003f:                   # @func000000000000003f
 	vpaddw	.LCPI3_0(%rip), %xmm1, %xmm1
 	vpmovzxwd	%xmm1, %xmm1            # xmm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
 .LCPI4_0:
@@ -62,6 +62,6 @@ func000000000000003f:                   # @func000000000000003f
 func0000000000000007:                   # @func0000000000000007
 	vpaddw	.LCPI4_0(%rip), %xmm1, %xmm1
 	vpmovzxwd	%xmm1, %xmm1            # xmm1 = xmm1[0],zero,xmm1[1],zero,xmm1[2],zero,xmm1[3],zero
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq

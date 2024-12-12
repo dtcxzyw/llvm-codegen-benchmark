@@ -30,7 +30,7 @@ entry:
   ret i64 %4
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; abseil-cpp/optimized/pcg_engine_test.cc.ll
 ; abseil-cpp/optimized/pool_urbg_test.cc.ll
 ; abseil-cpp/optimized/randen_engine_test.cc.ll
@@ -48,7 +48,6 @@ entry:
 ; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha256.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha1_hw.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha256_hw.ll
-; php/optimized/math.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i32 %1) #0 {
 entry:
@@ -58,7 +57,7 @@ entry:
   ret i64 %4
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; brotli/optimized/backward_references.c.ll
 ; cmake/optimized/nghttp2_hd.c.ll
 ; linux/optimized/avtab.ll
@@ -70,7 +69,6 @@ entry:
 ; openssl/optimized/libssl-shlib-extensions_srvr.ll
 ; openssl/optimized/libssl-shlib-statem_srvr.ll
 ; openssl/optimized/libssl-shlib-t1_trce.ll
-; php/optimized/type.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000012(i64 %0, i32 %1) #0 {
 entry:
@@ -80,7 +78,7 @@ entry:
   ret i64 %4
 }
 
-; 9 occurrences:
+; 13 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; hdf5/optimized/H5Oalloc.c.ll
 ; libquic/optimized/cbs.c.ll
@@ -90,6 +88,10 @@ entry:
 ; tokenizers-rs/optimized/27irl7jx21l1e8zq.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:
@@ -99,11 +101,15 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 8 occurrences:
 ; meilisearch-rs/optimized/4rtt9oltj0ubuf08.ll
 ; regex-rs/optimized/10eccrragw6uslmk.ll
 ; ripgrep-rs/optimized/5baox15rvywa81ar.ll
 ; tokenizers-rs/optimized/27irl7jx21l1e8zq.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i64 %0, i32 %1) #0 {
 entry:
@@ -127,7 +133,7 @@ entry:
   ret i64 %4
 }
 
-; 17 occurrences:
+; 15 occurrences:
 ; abc/optimized/giaUtil.c.ll
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; arrow/optimized/basic_decimal.cc.ll
@@ -142,8 +148,6 @@ entry:
 ; linux/optimized/igmp.ll
 ; lua/optimized/lstrlib.ll
 ; luau/optimized/lstrlib.cpp.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; openusd/optimized/restoration.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0, i32 %1) #0 {

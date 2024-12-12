@@ -1,9 +1,8 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
 ; ncnn/optimized/convolution_x86_avx2.cpp.ll
-; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
 ; ncnn/optimized/convolution_x86_fma.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000030(i64 %0, i64 %1, i32 %2) #0 {

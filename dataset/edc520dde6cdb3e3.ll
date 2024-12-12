@@ -1,19 +1,9 @@
 
-; 131 occurrences:
+; 120 occurrences:
 ; abc/optimized/bmcFault.c.ll
-; abc/optimized/dauCanon.c.ll
-; abc/optimized/dauDsd.c.ll
-; abc/optimized/dauNonDsd.c.ll
-; abc/optimized/dauNpn.c.ll
-; abc/optimized/giaIf.c.ll
-; abc/optimized/giaJf.c.ll
-; abc/optimized/giaLf.c.ll
-; abc/optimized/giaMfs.c.ll
-; abc/optimized/giaMinLut2.c.ll
-; abc/optimized/ifDec16.c.ll
-; abc/optimized/ifTruth.c.ll
-; abc/optimized/sfmDec.c.ll
+; arrow/optimized/light_array.cc.ll
 ; arrow/optimized/message.cc.ll
+; boost/optimized/gregorian.ll
 ; casadi/optimized/cvodes.c.ll
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
@@ -36,7 +26,6 @@
 ; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
 ; flac/optimized/fixed.c.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; freetype/optimized/sdf.c.ll
 ; freetype/optimized/smooth.c.ll
 ; freetype/optimized/truetype.c.ll
@@ -65,6 +54,7 @@
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; luau/optimized/lgc.cpp.ll
 ; luau/optimized/lgcdebug.cpp.ll
+; lvgl/optimized/lv_text.ll
 ; memcached/optimized/memcached-items.ll
 ; memcached/optimized/memcached-storage.ll
 ; memcached/optimized/memcached_debug-items.ll
@@ -73,7 +63,6 @@
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/layerDialog.cpp.ll
 ; mold/optimized/arch-loongarch.cc.LOONGARCH32.cc.ll
-; nuttx/optimized/lib_calendar2utc.c.ll
 ; oiio/optimized/Codec.cpp.ll
 ; oiio/optimized/icooutput.cpp.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
@@ -135,12 +124,12 @@
 define i64 @func0000000000000005(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = add nsw i64 %4, %0
   ret i64 %5
 }
 
-; 275 occurrences:
+; 274 occurrences:
 ; csmith/optimized/CVQualifiers.cpp.ll
 ; darktable/optimized/introspection_colorreconstruction.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
@@ -305,7 +294,6 @@ entry:
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
 ; openblas/optimized/dhgeqz.c.ll
-; opencv/optimized/samplers.cpp.ll
 ; openjdk/optimized/ByteGray.ll
 ; openjdk/optimized/ByteIndexed.ll
 ; openjdk/optimized/FourByteAbgr.ll
@@ -420,12 +408,12 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
-  %5 = add i64 %4, %0
+  %4 = add nsw i64 %1, %3
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
-; 101 occurrences:
+; 99 occurrences:
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; clamav/optimized/upack.c.ll
 ; darktable/optimized/export.c.ll
@@ -460,6 +448,7 @@ entry:
 ; linux/optimized/mballoc.ll
 ; linux/optimized/percpu.ll
 ; linux/optimized/percpu_counter.ll
+; linux/optimized/printk.ll
 ; linux/optimized/tree.ll
 ; linux/optimized/virtio.ll
 ; linux/optimized/xprtsock.ll
@@ -479,7 +468,6 @@ entry:
 ; opencv/optimized/graph.pb.cc.ll
 ; opencv/optimized/layers_common.cpp.ll
 ; opencv/optimized/pooling_layer.cpp.ll
-; opencv/optimized/samplers.cpp.ll
 ; openjdk/optimized/AnyByte.ll
 ; openjdk/optimized/continuationFreezeThaw.ll
 ; openjdk/optimized/mlib_ImageAffineEdge.ll
@@ -487,7 +475,6 @@ entry:
 ; openjdk/optimized/mlib_c_ImageAffine_BC_U16.ll
 ; openmpi/optimized/libompi_dbg_msgq_la-ompi_msgq_dll.ll
 ; openmpi/optimized/onesided_aggregation.ll
-; openmpi/optimized/tm_mt.ll
 ; openssl/optimized/libssl-lib-extensions_clnt.ll
 ; openssl/optimized/libssl-lib-t1_enc.ll
 ; openssl/optimized/libssl-shlib-extensions_clnt.ll
@@ -512,7 +499,6 @@ entry:
 ; qemu/optimized/block_vvfat.c.ll
 ; qemu/optimized/linux-user_elfload.c.ll
 ; qemu/optimized/linux-user_mmap.c.ll
-; quest/optimized/mt19937ar.c.ll
 ; quickjs/optimized/quickjs.ll
 ; redis/optimized/hiredis.ll
 ; ruby/optimized/array.ll
@@ -531,8 +517,8 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add i64 %3, %1
-  %5 = add i64 %4, %0
+  %4 = add i64 %1, %3
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -542,8 +528,19 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add nsw i64 %4, %0
+  ret i64 %5
+}
+
+; 1 occurrences:
+; raylib/optimized/rmodels.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000007(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = add nsw i64 %1, %3
+  %5 = add nuw nsw i64 %4, %0
   ret i64 %5
 }
 

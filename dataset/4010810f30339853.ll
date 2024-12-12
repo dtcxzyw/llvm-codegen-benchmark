@@ -1,5 +1,5 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; bullet3/optimized/btSoftBody.ll
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -8,11 +8,12 @@
 ; opencv/optimized/boostdesc.cpp.ll
 ; opencv/optimized/slic.cpp.ll
 ; openjdk/optimized/hb-font.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to float
-  %4 = fmul float %3, %1
+  %4 = fmul float %1, %3
   %5 = fmul float %4, 5.000000e-01
   %6 = fadd float %5, %0
   ret float %6

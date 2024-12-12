@@ -3,7 +3,7 @@
 ; cpython/optimized/_datetimemodule.ll
 ; yosys/optimized/verilog_backend.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000056(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = add nsw i32 %3, %0
@@ -16,7 +16,7 @@ entry:
 ; gromacs/optimized/colvarparse.cpp.ll
 ; wireshark/optimized/packet-smtp.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000051(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000a1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = sub i32 0, %0
@@ -49,7 +49,7 @@ entry:
 define i32 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = icmp slt i32 %4, 0
   %6 = select i1 %5, i32 1000000, i32 0
   ret i32 %6

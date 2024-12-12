@@ -1,7 +1,23 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000f:                   # @func000000000000000f
 	leaq	(%rsi,%rdx), %rcx
 	testb	$1, %dil
 	leaq	640(%rsi,%rdx), %rax
+	cmovneq	%rcx, %rax
+	retq
+func000000000000000a:                   # @func000000000000000a
+	leaq	(%rsi,%rdx), %rax
+	notb	%dil
+	movzbl	%dil, %ecx
+	andl	$1, %ecx
+	subq	%rcx, %rax
+	retq
+func000000000000000e:                   # @func000000000000000e
+	leaq	(%rdx,%rdx,8), %rax
+	leaq	(%rax,%rax,2), %rax
+	addq	%rdx, %rax
+	leaq	(%rsi,%rax), %rcx
+	testb	$1, %dil
+	leaq	12(%rsi,%rax), %rax
 	cmovneq	%rcx, %rax
 	retq
 func0000000000000008:                   # @func0000000000000008

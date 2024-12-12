@@ -27,7 +27,7 @@ entry:
   ret i32 %3
 }
 
-; 332 occurrences:
+; 336 occurrences:
 ; clamav/optimized/ishield.c.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
@@ -64,7 +64,6 @@ entry:
 ; llvm/optimized/PDBFileBuilder.cpp.ll
 ; llvm/optimized/PDBStringTable.cpp.ll
 ; llvm/optimized/ParseStmt.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/Scalarizer.cpp.ll
@@ -88,6 +87,7 @@ entry:
 ; opencv/optimized/regtree.cpp.ll
 ; opencv/optimized/retinacolor.cpp.ll
 ; opencv/optimized/rtrees.cpp.ll
+; opencv/optimized/tf_importer.cpp.ll
 ; opencv/optimized/tldModel.cpp.ll
 ; opencv/optimized/travelsalesman.cpp.ll
 ; opencv/optimized/ts_perf.cpp.ll
@@ -236,7 +236,6 @@ entry:
 ; yosys/optimized/lattice_gsr.ll
 ; yosys/optimized/liberty.ll
 ; yosys/optimized/log.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/ltp.ll
 ; yosys/optimized/lut2mux.ll
 ; yosys/optimized/maccmap.ll
@@ -360,6 +359,11 @@ entry:
 ; yosys/optimized/yw.ll
 ; yosys/optimized/zinit.ll
 ; z3/optimized/pb_solver.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
+; zed-rs/optimized/8mr81aw0ctvqdrbyiysor7awe.ll
+; zed-rs/optimized/ddwqyvi7204z7yxly1a7n0b57.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
@@ -368,7 +372,7 @@ entry:
   ret i32 %3
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; darktable/optimized/DngDecoder.cpp.ll
 ; eastl/optimized/BenchmarkHash.cpp.ll
 ; eastl/optimized/TestFixedHash.cpp.ll
@@ -376,7 +380,6 @@ entry:
 ; llvm/optimized/CheckPlacementNew.cpp.ll
 ; llvm/optimized/CodeGenFunction.cpp.ll
 ; llvm/optimized/CodeGenModule.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; opencv/optimized/min_enclosing_triangle.cpp.ll
 ; openjdk/optimized/os.ll
 ; openmpi/optimized/coll_base_bcast.ll

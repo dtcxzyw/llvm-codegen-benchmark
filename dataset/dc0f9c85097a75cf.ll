@@ -4,7 +4,7 @@
 ; hdf5/optimized/H5Tconv_array.c.ll
 ; oiio/optimized/imagebuf.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000041(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %1, %2
   %4 = getelementptr nusw i8, ptr %0, i64 %3
@@ -22,7 +22,7 @@ entry:
 ; tinympc/optimized/admm.cpp.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000061(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func00000000000000c1(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
   %4 = getelementptr nusw i8, ptr %0, i64 %3
@@ -34,7 +34,7 @@ entry:
 ; 1 occurrences:
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000041(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000081(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
   %4 = getelementptr double, ptr %0, i64 %3

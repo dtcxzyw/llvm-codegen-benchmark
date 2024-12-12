@@ -1,5 +1,5 @@
 
-; 49 occurrences:
+; 51 occurrences:
 ; assimp/optimized/TextureTransform.cpp.ll
 ; darktable/optimized/colorpicker.c.ll
 ; darktable/optimized/histogram.c.ll
@@ -9,6 +9,7 @@
 ; gromacs/optimized/gmx_densmap.cpp.ll
 ; gromacs/optimized/hxprops.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/trackmode.cpp.ll
 ; minetest/optimized/content_cao.cpp.ll
@@ -49,6 +50,7 @@
 ; raylib/optimized/rcore.c.ll
 ; typst-rs/optimized/1ojadsqfk0rsifsx.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
 ; Function Attrs: nounwind
 define float @func0000000000000002(float %0) #0 {
 entry:
@@ -58,13 +60,14 @@ entry:
   ret float %3
 }
 
-; 29 occurrences:
+; 30 occurrences:
 ; bullet3/optimized/btBoxBoxDetector.ll
 ; bullet3/optimized/btGeneric6DofSpring2Constraint.ll
 ; darktable/optimized/colorpicker.c.ll
 ; darktable/optimized/histogram.c.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_clipping.c.ll
+; lvgl/optimized/lv_arc.ll
 ; minetest/optimized/client.cpp.ll
 ; minetest/optimized/environment.cpp.ll
 ; minetest/optimized/texturesource.cpp.ll

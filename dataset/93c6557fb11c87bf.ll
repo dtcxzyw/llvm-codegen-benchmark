@@ -1,9 +1,11 @@
 
-; 286 occurrences:
+; 288 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; abseil-cpp/optimized/cord.cc.ll
 ; arrow/optimized/builder_nested.cc.ll
+; boost/optimized/ipc_reliable_message_queue.ll
+; boost/optimized/numeric.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btContactConstraint.ll
 ; bullet3/optimized/btConvexHullComputer.ll
@@ -30,7 +32,6 @@
 ; cpython/optimized/listobject.ll
 ; cpython/optimized/obmalloc.ll
 ; cpython/optimized/typeobject.ll
-; cpython/optimized/unicode.ll
 ; curl/optimized/libcurl_la-connect.ll
 ; darktable/optimized/introspection_liquify.c.ll
 ; faiss/optimized/Index2Layer.cpp.ll
@@ -97,27 +98,19 @@
 ; linux/optimized/ip_output.ll
 ; linux/optimized/keyring.ll
 ; linux/optimized/kobject_uevent.ll
-; linux/optimized/libata-eh.ll
 ; linux/optimized/mcast.ll
 ; linux/optimized/netlabel_unlabeled.ll
 ; linux/optimized/nl80211.ll
-; linux/optimized/pci.ll
-; linux/optimized/probe_roms.ll
 ; linux/optimized/property.ll
 ; linux/optimized/reg.ll
 ; linux/optimized/rx.ll
-; linux/optimized/scan.ll
-; linux/optimized/seccomp.ll
 ; linux/optimized/skbuff.ll
 ; linux/optimized/slub.ll
-; linux/optimized/swnode.ll
 ; linux/optimized/tcp.ll
 ; linux/optimized/tcp_input.ll
 ; linux/optimized/tcp_metrics.ll
 ; linux/optimized/trace_kprobe.ll
 ; linux/optimized/tx.ll
-; linux/optimized/vc.ll
-; linux/optimized/virtio_scsi.ll
 ; linux/optimized/vmalloc.ll
 ; llvm/optimized/ASTImporter.cpp.ll
 ; llvm/optimized/ASTStructuralEquivalence.cpp.ll
@@ -251,6 +244,8 @@
 ; ruby/optimized/variable.ll
 ; ruby/optimized/vm.ll
 ; rust-analyzer-rs/optimized/1egtj7ksojphluke.ll
+; rust-analyzer-rs/optimized/1opoiu8yzxku2bb7.ll
+; rust-analyzer-rs/optimized/1rhf3pjhhflazor1.ll
 ; rust-analyzer-rs/optimized/2deyu58ajds9ccnn.ll
 ; rust-analyzer-rs/optimized/2n800w7wl0k2x7go.ll
 ; rust-analyzer-rs/optimized/2opy4detkbqdwmaz.ll
@@ -264,10 +259,13 @@
 ; rust-analyzer-rs/optimized/4vbxd64hrlz3u0mk.ll
 ; rust-analyzer-rs/optimized/4wjr9n8d5oomu43d.ll
 ; rust-analyzer-rs/optimized/4z0mti9ae01vbv1s.ll
+; rust-analyzer-rs/optimized/58xaix613yc6ngmz.ll
 ; rust-analyzer-rs/optimized/ii5fl5y94ca5wd9.ll
 ; rust-analyzer-rs/optimized/k57ct4r8b4mvzu9.ll
 ; rust-analyzer-rs/optimized/kcxpblerbqo90m6.ll
+; rust-analyzer-rs/optimized/lvm5mow7j40zynh.ll
 ; rust-analyzer-rs/optimized/rilullg9p294yp1.ll
+; rust-analyzer-rs/optimized/wcknfmhk1hydgx3.ll
 ; rustfmt-rs/optimized/2vbyym84o66crvo9.ll
 ; rustfmt-rs/optimized/3xcdaapyewyrfogi.ll
 ; rustfmt-rs/optimized/4ext43viwbyeinhu.ll
@@ -282,10 +280,14 @@
 ; tinympc/optimized/tiny_api.cpp.ll
 ; tree-sitter-rs/optimized/1o0ocmb45sbun3ez.ll
 ; tree-sitter-rs/optimized/2ysit6xak1d4lr67.ll
+; turborepo-rs/optimized/2nugbu58bpckifsmteww668r2.ll
+; turborepo-rs/optimized/avd1ga9yb4qq5g7sdqftppd4q.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; verilator/optimized/V3Timing.cpp.ll
 ; wasmtime-rs/optimized/1qo0tg1ju819b23h.ll
 ; wireshark/optimized/packet-umts_rlc.c.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, ptr %1) #0 {
 entry:
@@ -294,7 +296,7 @@ entry:
   ret i1 %3
 }
 
-; 134 occurrences:
+; 158 occurrences:
 ; abc/optimized/abcRestruct.c.ll
 ; abseil-cpp/optimized/cord.cc.ll
 ; bdwgc/optimized/gc.c.ll
@@ -318,7 +320,6 @@ entry:
 ; linux/optimized/device_pm.ll
 ; linux/optimized/drm_atomic_uapi.ll
 ; linux/optimized/intel_ggtt_fencing.ll
-; linux/optimized/libata-acpi.ll
 ; linux/optimized/netlabel_unlabeled.ll
 ; linux/optimized/nfs4proc.ll
 ; linux/optimized/nl80211.ll
@@ -407,21 +408,34 @@ entry:
 ; redis/optimized/anet.ll
 ; rust-analyzer-rs/optimized/150tm5mq81nfdpak.ll
 ; rust-analyzer-rs/optimized/1g0h5ha3lba2bol5.ll
+; rust-analyzer-rs/optimized/1opoiu8yzxku2bb7.ll
+; rust-analyzer-rs/optimized/1r9ygi4s2x06bwuz.ll
+; rust-analyzer-rs/optimized/1rhf3pjhhflazor1.ll
 ; rust-analyzer-rs/optimized/202uzsghjvp73kcw.ll
 ; rust-analyzer-rs/optimized/206pid2yjlj5ool2.ll
 ; rust-analyzer-rs/optimized/24v97gdgi5w62z7s.ll
 ; rust-analyzer-rs/optimized/357j944nkpwuonjr.ll
+; rust-analyzer-rs/optimized/39qzrxn3p3f1jz7v.ll
+; rust-analyzer-rs/optimized/3o06gi7obg71ydg1.ll
 ; rust-analyzer-rs/optimized/3o2zsvb0ik8z2nqt.ll
+; rust-analyzer-rs/optimized/46lti8aa4smufhcb.ll
+; rust-analyzer-rs/optimized/4li1jw3llk76lkpw.ll
 ; rust-analyzer-rs/optimized/4vbxd64hrlz3u0mk.ll
 ; rust-analyzer-rs/optimized/4z0mti9ae01vbv1s.ll
 ; rust-analyzer-rs/optimized/547gv31sq3clwal6.ll
 ; rust-analyzer-rs/optimized/55rapmz9wj276hro.ll
+; rust-analyzer-rs/optimized/58xaix613yc6ngmz.ll
 ; rust-analyzer-rs/optimized/5cuaio8coq8lvmol.ll
+; rust-analyzer-rs/optimized/5fgtm3ees9sdsrsg.ll
 ; rust-analyzer-rs/optimized/7lpeywhc9n6h2ze.ll
 ; rust-analyzer-rs/optimized/9xkc74kd1bsgldb.ll
 ; rust-analyzer-rs/optimized/egul20e4uygvok2.ll
+; rust-analyzer-rs/optimized/jp4yq85z7wea9l3.ll
 ; rust-analyzer-rs/optimized/k57ct4r8b4mvzu9.ll
+; rust-analyzer-rs/optimized/lvm5mow7j40zynh.ll
+; rust-analyzer-rs/optimized/ri7xfiosbc1bsgh.ll
 ; rust-analyzer-rs/optimized/rilullg9p294yp1.ll
+; rust-analyzer-rs/optimized/wcknfmhk1hydgx3.ll
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; wasmedge/optimized/engine.cpp.ll
@@ -429,6 +443,18 @@ entry:
 ; wireshark/optimized/packet-ssh.c.ll
 ; wireshark/optimized/packet-tls-utils.c.ll
 ; wireshark/optimized/packet-wireguard.c.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/2dbu45lers7mkstxlrhw3mc97.ll
+; zed-rs/optimized/49ldufv0nkpmlikvem3q45q0g.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/4q1bnadqr1o107uase7gmrd0k.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/7ukwrxq2hh2vqucbwedxkpvcs.ll
+; zed-rs/optimized/8epszlr2612bvdrsn7g83nprl.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
+; zed-rs/optimized/diex23lur9mz31ml2mnxprojh.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, ptr %1) #0 {
 entry:

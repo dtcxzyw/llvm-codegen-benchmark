@@ -29,7 +29,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 4
   %5 = trunc i64 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   %7 = shl i32 %6, 3
   ret i32 %7
 }
@@ -44,7 +44,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 4
   %5 = trunc i64 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   %7 = shl nsw i32 %6, 4
   ret i32 %7
 }

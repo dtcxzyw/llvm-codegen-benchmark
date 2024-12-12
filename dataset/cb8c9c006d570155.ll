@@ -1,9 +1,10 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; diesel-rs/optimized/6cb7zukciz78xvw.ll
 ; rust-analyzer-rs/optimized/202uzsghjvp73kcw.ll
 ; wasmtime-rs/optimized/4fstrj457bwkmu8y.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define { i32, i32 } @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:

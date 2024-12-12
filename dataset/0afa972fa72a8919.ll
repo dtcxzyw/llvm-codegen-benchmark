@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; recastnavigation/optimized/RecastContour.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010a(i64 %0) #0 {
+define i1 @func000000000000020a(i64 %0) #0 {
 entry:
   %1 = trunc nsw i64 %0 to i32
   %2 = shl i32 %1, 2

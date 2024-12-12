@@ -1,36 +1,36 @@
 
-%struct.ItemStack.2582526 = type { %"class.std::__cxx11::basic_string.2582522", i16, i16, %class.ItemStackMetadata.2582527 }
-%"class.std::__cxx11::basic_string.2582522" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2582523", i64, %union.anon.2582524 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2582523" = type { ptr }
-%union.anon.2582524 = type { i64, [8 x i8] }
-%class.ItemStackMetadata.2582527 = type { %class.SimpleMetadata.2582528, i8, [7 x i8], %struct.ToolCapabilities.2582529, %"class.std::optional.2582530" }
-%class.SimpleMetadata.2582528 = type { %class.IMetadata.2582531, i8, %"class.std::unordered_map.13.2582532" }
-%class.IMetadata.2582531 = type { ptr }
-%"class.std::unordered_map.13.2582532" = type { %"class.std::_Hashtable.14.2582533" }
-%"class.std::_Hashtable.14.2582533" = type { ptr, i64, %"struct.std::__detail::_Hash_node_base.2582534", i64, %"struct.std::__detail::_Prime_rehash_policy.2582535", ptr }
-%"struct.std::__detail::_Hash_node_base.2582534" = type { ptr }
-%"struct.std::__detail::_Prime_rehash_policy.2582535" = type { float, i64 }
-%struct.ToolCapabilities.2582529 = type <{ float, i32, %"class.std::unordered_map.27.2582536", %"class.std::unordered_map.41.2582537", i32, [4 x i8] }>
-%"class.std::unordered_map.27.2582536" = type { %"class.std::_Hashtable.28.2582538" }
-%"class.std::_Hashtable.28.2582538" = type { ptr, i64, %"struct.std::__detail::_Hash_node_base.2582534", i64, %"struct.std::__detail::_Prime_rehash_policy.2582535", ptr }
-%"class.std::unordered_map.41.2582537" = type { %"class.std::_Hashtable.42.2582539" }
-%"class.std::_Hashtable.42.2582539" = type { ptr, i64, %"struct.std::__detail::_Hash_node_base.2582534", i64, %"struct.std::__detail::_Prime_rehash_policy.2582535", ptr }
-%"class.std::optional.2582530" = type { %"struct.std::_Optional_base.2582540" }
-%"struct.std::_Optional_base.2582540" = type { %"struct.std::_Optional_payload.2582541" }
-%"struct.std::_Optional_payload.2582541" = type { %"struct.std::_Optional_payload.base.2582542", [7 x i8] }
-%"struct.std::_Optional_payload.base.2582542" = type { %"struct.std::_Optional_payload_base.base.2582543" }
-%"struct.std::_Optional_payload_base.base.2582543" = type { %"union.std::_Optional_payload_base<WearBarParams>::_Storage.2582544", i8 }
-%"union.std::_Optional_payload_base<WearBarParams>::_Storage.2582544" = type { %struct.WearBarParams.2582545 }
-%struct.WearBarParams.2582545 = type <{ %"class.std::map.2582546", i8, [7 x i8] }>
-%"class.std::map.2582546" = type { %"class.std::_Rb_tree.2582547" }
-%"class.std::_Rb_tree.2582547" = type { %"struct.std::_Rb_tree<float, std::pair<const float, irr::video::SColor>, std::_Select1st<std::pair<const float, irr::video::SColor>>, std::less<float>>::_Rb_tree_impl.2582548" }
-%"struct.std::_Rb_tree<float, std::pair<const float, irr::video::SColor>, std::_Select1st<std::pair<const float, irr::video::SColor>>, std::less<float>>::_Rb_tree_impl.2582548" = type { %"struct.std::_Rb_tree_key_compare.2582549", %"struct.std::_Rb_tree_header.2582550" }
-%"struct.std::_Rb_tree_key_compare.2582549" = type { %"struct.std::less.2582551" }
-%"struct.std::less.2582551" = type { i8 }
-%"struct.std::_Rb_tree_header.2582550" = type { %"struct.std::_Rb_tree_node_base.2582552", i64 }
-%"struct.std::_Rb_tree_node_base.2582552" = type { i32, ptr, ptr, ptr }
+%struct.ItemStack.2696622 = type { %"class.std::__cxx11::basic_string.2696618", i16, i16, %class.ItemStackMetadata.2696623 }
+%"class.std::__cxx11::basic_string.2696618" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2696619", i64, %union.anon.2696620 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2696619" = type { ptr }
+%union.anon.2696620 = type { i64, [8 x i8] }
+%class.ItemStackMetadata.2696623 = type { %class.SimpleMetadata.2696624, i8, [7 x i8], %struct.ToolCapabilities.2696625, %"class.std::optional.2696626" }
+%class.SimpleMetadata.2696624 = type { %class.IMetadata.2696627, i8, %"class.std::unordered_map.13.2696628" }
+%class.IMetadata.2696627 = type { ptr }
+%"class.std::unordered_map.13.2696628" = type { %"class.std::_Hashtable.14.2696629" }
+%"class.std::_Hashtable.14.2696629" = type { ptr, i64, %"struct.std::__detail::_Hash_node_base.2696630", i64, %"struct.std::__detail::_Prime_rehash_policy.2696631", ptr }
+%"struct.std::__detail::_Hash_node_base.2696630" = type { ptr }
+%"struct.std::__detail::_Prime_rehash_policy.2696631" = type { float, i64 }
+%struct.ToolCapabilities.2696625 = type <{ float, i32, %"class.std::unordered_map.27.2696632", %"class.std::unordered_map.41.2696633", i32, [4 x i8] }>
+%"class.std::unordered_map.27.2696632" = type { %"class.std::_Hashtable.28.2696634" }
+%"class.std::_Hashtable.28.2696634" = type { ptr, i64, %"struct.std::__detail::_Hash_node_base.2696630", i64, %"struct.std::__detail::_Prime_rehash_policy.2696631", ptr }
+%"class.std::unordered_map.41.2696633" = type { %"class.std::_Hashtable.42.2696635" }
+%"class.std::_Hashtable.42.2696635" = type { ptr, i64, %"struct.std::__detail::_Hash_node_base.2696630", i64, %"struct.std::__detail::_Prime_rehash_policy.2696631", ptr }
+%"class.std::optional.2696626" = type { %"struct.std::_Optional_base.2696636" }
+%"struct.std::_Optional_base.2696636" = type { %"struct.std::_Optional_payload.2696637" }
+%"struct.std::_Optional_payload.2696637" = type { %"struct.std::_Optional_payload.base.2696638", [7 x i8] }
+%"struct.std::_Optional_payload.base.2696638" = type { %"struct.std::_Optional_payload_base.base.2696639" }
+%"struct.std::_Optional_payload_base.base.2696639" = type { %"union.std::_Optional_payload_base<WearBarParams>::_Storage.2696640", i8 }
+%"union.std::_Optional_payload_base<WearBarParams>::_Storage.2696640" = type { %struct.WearBarParams.2696641 }
+%struct.WearBarParams.2696641 = type <{ %"class.std::map.2696642", i8, [7 x i8] }>
+%"class.std::map.2696642" = type { %"class.std::_Rb_tree.2696643" }
+%"class.std::_Rb_tree.2696643" = type { %"struct.std::_Rb_tree<float, std::pair<const float, irr::video::SColor>, std::_Select1st<std::pair<const float, irr::video::SColor>>, std::less<float>>::_Rb_tree_impl.2696644" }
+%"struct.std::_Rb_tree<float, std::pair<const float, irr::video::SColor>, std::_Select1st<std::pair<const float, irr::video::SColor>>, std::less<float>>::_Rb_tree_impl.2696644" = type { %"struct.std::_Rb_tree_key_compare.2696645", %"struct.std::_Rb_tree_header.2696646" }
+%"struct.std::_Rb_tree_key_compare.2696645" = type { %"struct.std::less.2696647" }
+%"struct.std::less.2696647" = type { i8 }
+%"struct.std::_Rb_tree_header.2696646" = type { %"struct.std::_Rb_tree_node_base.2696648", i64 }
+%"struct.std::_Rb_tree_node_base.2696648" = type { i32, ptr, ptr, ptr }
 
-; 25 occurrences:
+; 24 occurrences:
 ; gromacs/optimized/anadih.cpp.ll
 ; gromacs/optimized/gmx_spatial.cpp.ll
 ; gromacs/optimized/gmx_wham.cpp.ll
@@ -39,7 +39,6 @@
 ; luau/optimized/BuiltinDefinitions.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; minetest/optimized/l_inventory.cpp.ll
 ; opencv/optimized/data.cpp.ll
 ; openspiel/optimized/bargaining.cc.ll
@@ -57,11 +56,11 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, double %1) #0 {
+define ptr @func0000000000000007(ptr %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw %struct.ItemStack.2582526, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %struct.ItemStack.2696622, ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -82,11 +81,11 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/lbuiltins.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, double %1) #0 {
+define ptr @func0000000000000003(ptr %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 

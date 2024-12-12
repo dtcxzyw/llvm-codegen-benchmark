@@ -1,5 +1,6 @@
 
 ; 191 occurrences:
+; boost/optimized/alloc_lib.ll
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
 ; mitsuba3/optimized/jitallocator.cpp.ll
@@ -154,7 +155,6 @@
 ; openjdk/optimized/shenandoahCodeRoots.ll
 ; openjdk/optimized/shenandoahConcurrentGC.ll
 ; openjdk/optimized/shenandoahFullGC.ll
-; openjdk/optimized/shenandoahGC.ll
 ; openjdk/optimized/shenandoahHeap.ll
 ; openjdk/optimized/shenandoahHeapRegion.ll
 ; openjdk/optimized/shenandoahMark.ll

@@ -5,35 +5,35 @@ func0000000000000008:                   # @func0000000000000008
 	setb	%al
 	orb	%dil, %al
 	retq
-func0000000000000052:                   # @func0000000000000052
+func0000000000000092:                   # @func0000000000000092
 	movslq	%edx, %rax
 	incq	%rsi
 	cmpq	%rax, %rsi
 	setae	%al
 	orb	%dil, %al
 	retq
-func0000000000000076:                   # @func0000000000000076
+func00000000000000d6:                   # @func00000000000000d6
 	movslq	%edx, %rax
 	incq	%rsi
 	cmpq	%rax, %rsi
 	setge	%al
 	orb	%dil, %al
 	retq
-func0000000000000036:                   # @func0000000000000036
+func0000000000000056:                   # @func0000000000000056
 	movslq	%edx, %rax
 	incq	%rsi
 	cmpq	%rax, %rsi
 	setge	%al
 	orb	%dil, %al
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	movslq	%edx, %rax
 	addq	$-15, %rsi
 	cmpq	%rax, %rsi
 	sete	%al
 	orb	%dil, %al
 	retq
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	movslq	%edx, %rax
 	addq	$-4, %rsi
 	cmpq	%rax, %rsi
@@ -47,7 +47,7 @@ func0000000000000002:                   # @func0000000000000002
 	sete	%al
 	orb	%dil, %al
 	retq
-func000000000000006c:                   # @func000000000000006c
+func00000000000000cc:                   # @func00000000000000cc
 	movslq	%edx, %rax
 	incq	%rsi
 	cmpq	%rax, %rsi

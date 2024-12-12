@@ -6,7 +6,7 @@
 ; openusd/optimized/blendShapeQuery.cpp.ll
 ; openvdb/optimized/Prune.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000146(i64 %0) #0 {
+define i1 @func0000000000000286(i64 %0) #0 {
 entry:
   %1 = add nsw i64 %0, -1
   %2 = sdiv i64 %1, 2

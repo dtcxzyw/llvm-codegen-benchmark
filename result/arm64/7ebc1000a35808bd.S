@@ -1,30 +1,17 @@
-func00000000000000c4:                   // @func00000000000000c4
+func0000000000000184:                   // @func0000000000000184
 // %bb.0:                               // %entry
-	movi	v5.4h, #1
-	and	v4.8b, v4.8b, v5.8b
-	ushll	v4.4s, v4.4h, #0
-	uaddw2	v3.2d, v3.2d, v4.4s
-	uaddw	v2.2d, v2.2d, v4.2s
-	shl	v2.2d, v2.2d, #2
-	shl	v3.2d, v3.2d, #2
-	cmhi	v1.2d, v3.2d, v1.2d
-	cmhi	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+                                        // kill: def $w2 killed $w2 def $x2
+	and	x8, x2, #0x1
+	add	x8, x1, x8
+	cmp	x0, x8, lsl #2
+	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000044:                   // @func0000000000000044
+func0000000000000084:                   // @func0000000000000084
 // %bb.0:                               // %entry
-	movi	v5.4h, #1
-	and	v4.8b, v4.8b, v5.8b
-	ushll	v4.4s, v4.4h, #0
-	uaddw2	v3.2d, v3.2d, v4.4s
-	uaddw	v2.2d, v2.2d, v4.2s
-	shl	v2.2d, v2.2d, #34
-	shl	v3.2d, v3.2d, #34
-	cmhi	v1.2d, v3.2d, v1.2d
-	cmhi	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	and	w8, w2, #0x1
+	add	w8, w1, w8
+	cmp	x0, x8, lsl #34
+	cset	w0, lo
 	ret
                                         // -- End function

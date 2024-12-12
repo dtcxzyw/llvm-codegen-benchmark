@@ -3,7 +3,7 @@
 ; libwebp/optimized/backward_references_enc.c.ll
 ; openjdk/optimized/compilationPolicy.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000048a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -4
   %4 = icmp ult i32 %3, -3
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/xmerge.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000008a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = icmp ult i32 %3, 2
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/xmerge.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = icmp ult i32 %3, 2
@@ -40,7 +40,7 @@ entry:
 ; llvm/optimized/MCWin64EH.cpp.ll
 ; slurm/optimized/job_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000481(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = icmp ult i32 %3, 2

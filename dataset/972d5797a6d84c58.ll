@@ -1,5 +1,9 @@
 
-; 24 occurrences:
+; 29 occurrences:
+; boost/optimized/any_params_iter.ll
+; boost/optimized/any_segments_iter.ll
+; boost/optimized/format_args.ll
+; boost/optimized/url_base.ll
 ; coreutils-rs/optimized/3hxvjlp3c9mnf678.ll
 ; coreutils-rs/optimized/4gs2z359bfnc1tys.ll
 ; icu/optimized/ufmt_cmn.ll
@@ -24,12 +28,13 @@
 ; spike/optimized/s_roundPackToUI32.ll
 ; spike/optimized/s_roundToI32.ll
 ; spike/optimized/s_roundToUI32.ll
+; wasmtime-rs/optimized/xwe1luu7ota7lol.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 3, i64 1
   %4 = select i1 %1, i64 %3, i64 2
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -269,18 +274,7 @@ define i64 @func0000000000000003(i64 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 4, i64 3
   %4 = select i1 %1, i64 %3, i64 2
-  %5 = add nuw nsw i64 %4, %0
-  ret i64 %5
-}
-
-; 1 occurrences:
-; git/optimized/pack-redundant.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000002(i64 %0, i1 %1, i1 %2) #0 {
-entry:
-  %3 = select i1 %2, i64 36, i64 32
-  %4 = select i1 %1, i64 %3, i64 0
-  %5 = add nuw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 

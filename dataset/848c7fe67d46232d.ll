@@ -20,10 +20,10 @@ entry:
 ; openssl/optimized/servername_test-bin-servername_test.ll
 ; openssl/optimized/sslapitest-bin-sslapitest.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000038(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -5
-  %3 = icmp ugt i64 %2, 3
+  %3 = icmp samesign ugt i64 %2, 3
   %4 = select i1 %3, i64 %0, i64 %2
   ret i64 %4
 }
@@ -43,21 +43,10 @@ entry:
 ; jsonnet/optimized/rapidyaml.cpp.ll
 ; jsonnet/optimized/vm.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 1
   %3 = icmp eq i64 %2, -1
-  %4 = select i1 %3, i64 %0, i64 %2
-  ret i64 %4
-}
-
-; 1 occurrences:
-; hermes/optimized/APFloat.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add nsw i64 %1, 16383
-  %3 = icmp eq i64 %2, 1
   %4 = select i1 %3, i64 %0, i64 %2
   ret i64 %4
 }

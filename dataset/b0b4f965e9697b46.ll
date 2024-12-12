@@ -8,7 +8,7 @@ entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = add i32 %1, 8
   %5 = add i32 %4, %3
-  %6 = and i32 %5, %0
+  %6 = and i32 %0, %5
   ret i32 %6
 }
 

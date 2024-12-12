@@ -1,5 +1,5 @@
 
-; 50 occurrences:
+; 51 occurrences:
 ; assimp/optimized/IFCCurve.cpp.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
 ; assimp/optimized/IFCProfile.cpp.ll
@@ -26,7 +26,6 @@
 ; mitsuba3/optimized/moment.cpp.ll
 ; mitsuba3/optimized/obj.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/properties.cpp.ll
 ; mitsuba3/optimized/specfilm.cpp.ll
 ; mitsuba3/optimized/stokes.cpp.ll
@@ -34,6 +33,8 @@
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/xml.cpp.ll
 ; opencv/optimized/run_length_morphology.cpp.ll
+; openexr/optimized/ImfDwaCompressor.cpp.ll
+; openusd/optimized/simplify.cpp.ll
 ; openusd/optimized/testTs_HardToReach.cpp.ll
 ; quantlib/optimized/pascaltriangle.ll
 ; rocksdb/optimized/compaction_job.cc.ll
@@ -51,7 +52,7 @@
 ; wasmedge/optimized/serial_module.cpp.ll
 ; xgboost/optimized/quantile.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, ptr %1) #0 {
+define i1 @func00000000000000a8(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %0, %2
@@ -61,7 +62,7 @@ entry:
   ret i1 %6
 }
 
-; 37 occurrences:
+; 38 occurrences:
 ; abseil-cpp/optimized/str_replace_test.cc.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
 ; assimp/optimized/LWOLoader.cpp.ll
@@ -89,6 +90,7 @@ entry:
 ; opencv/optimized/contours_approx.cpp.ll
 ; opencv/optimized/oilpainting.cpp.ll
 ; opencv/optimized/run_length_morphology.cpp.ll
+; openusd/optimized/simplify.cpp.ll
 ; quantlib/optimized/differentialevolution.ll
 ; quantlib/optimized/genericlsregression.ll
 ; quantlib/optimized/parametricexercise.ll
@@ -100,7 +102,7 @@ entry:
 ; wasmedge/optimized/serial_module.cpp.ll
 ; xgboost/optimized/quantile.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, ptr %1) #0 {
+define i1 @func00000000000000a1(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %0, %2
@@ -108,7 +110,8 @@ entry:
   ret i1 %4
 }
 
-; 104 occurrences:
+; 103 occurrences:
+; boost/optimized/topology.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cvc5/optimized/smt2_state.cpp.ll
 ; cxxopts/optimized/example.cpp.ll
@@ -190,7 +193,6 @@ entry:
 ; nix/optimized/diff-closures.ll
 ; nix/optimized/filetransfer.ll
 ; nix/optimized/gc.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/store-api.ll
 ; ocio/optimized/BuiltinConfigRegistry.cpp.ll
@@ -206,7 +208,6 @@ entry:
 ; openusd/optimized/evalUtils.cpp.ll
 ; openusd/optimized/mallocTag.cpp.ll
 ; openusd/optimized/reporter.cpp.ll
-; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Prune.cc.ll
 ; spike/optimized/spike-log-parser.ll
 ; vcpkg/optimized/tools.cpp.ll
@@ -214,7 +215,7 @@ entry:
 ; xgboost/optimized/input_split_base.cc.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, ptr %1) #0 {
+define i1 @func00000000000000a4(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %0, %2
@@ -224,11 +225,24 @@ entry:
   ret i1 %6
 }
 
+; 1 occurrences:
+; openvdb/optimized/FastSweeping.cc.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000b4(i64 %0, ptr %1) #0 {
+entry:
+  %2 = ptrtoint ptr %1 to i64
+  %3 = sub i64 %0, %2
+  %4 = sdiv exact i64 %3, 80
+  %5 = add nsw i64 %4, 1
+  %6 = icmp samesign ult i64 %5, 6
+  ret i1 %6
+}
+
 ; 2 occurrences:
 ; opencv/optimized/graphsegmentation.cpp.ll
 ; openusd/optimized/blendShapeQuery.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000021(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %0, %2
@@ -240,7 +254,7 @@ entry:
 ; 1 occurrences:
 ; casadi/optimized/sx_function.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(i64 %0, ptr %1) #0 {
+define i1 @func00000000000000ac(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %0, %2

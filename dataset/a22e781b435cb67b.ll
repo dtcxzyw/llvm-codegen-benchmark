@@ -1,7 +1,5 @@
 
-; 3 occurrences:
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtpttf.c.ll
+; 1 occurrences:
 ; openjdk/optimized/archiveHeapWriter.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000035(i64 %0, i32 %1) #0 {
@@ -9,42 +7,31 @@ entry:
   %2 = add nuw nsw i32 %1, 7
   %3 = lshr i32 %2, 3
   %4 = zext nneg i32 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
-; 1 occurrences:
-; openjdk/optimized/mlib_ImageConvCopyEdge_Bit.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000025(i64 %0, i32 %1) #0 {
-entry:
-  %2 = add nuw i32 %1, 7
-  %3 = lshr i32 %2, 3
-  %4 = zext nneg i32 %3 to i64
-  %5 = add nsw i64 %4, %0
-  ret i64 %5
-}
-
-; 8 occurrences:
+; 9 occurrences:
 ; hermes/optimized/CommandLine.cpp.ll
 ; linux/optimized/synaptics.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtpttf.c.ll
 ; opencv/optimized/opencv-caffe.pb.cc.ll
 ; protobuf/optimized/extension_set.cc.ll
 ; sentencepiece/optimized/extension_set.cc.ll
+; soc-simulator/optimized/verilated.ll
 ; verilator/optimized/V3Number.cpp.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000037(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 31
   %3 = lshr i32 %2, 5
   %4 = zext nneg i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
-; 35 occurrences:
+; 42 occurrences:
 ; abc/optimized/satProof.c.ll
 ; libphonenumber/optimized/phonemetadata.pb.cc.ll
 ; libphonenumber/optimized/phonenumber.pb.cc.ll
@@ -80,17 +67,25 @@ entry:
 ; yalantinglibs/optimized/data_def.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/b1bc3rbs9s229gjbf718xcm8w.ll
+; zed-rs/optimized/boyei0qs0y80q8snoztbi8jt7.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
+; zed-rs/optimized/f10ffiihtazjqkmwr0jihceey.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000034(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 73
   %3 = lshr i32 %2, 6
   %4 = zext nneg i32 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
-; 98 occurrences:
+; 99 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
 ; fmt/optimized/header-only-test.cc.ll
@@ -195,7 +190,7 @@ entry:
   %2 = add i32 %1, 32800
   %3 = lshr i32 %2, 16
   %4 = zext nneg i32 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -208,7 +203,7 @@ entry:
   %2 = add i32 %1, 7
   %3 = lshr i32 %2, 3
   %4 = zext nneg i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -220,7 +215,7 @@ entry:
   %2 = add i32 %1, 7
   %3 = lshr i32 %2, 3
   %4 = zext nneg i32 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -233,7 +228,7 @@ entry:
   %2 = add nsw i32 %1, -1
   %3 = lshr i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 

@@ -1,4 +1,15 @@
 
+; 1 occurrences:
+; lief/optimized/Builder.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000c(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = and i32 %2, 7
+  %4 = sub i32 %0, %3
+  ret i32 %4
+}
+
 ; 63 occurrences:
 ; openexr/optimized/ImfHuf.cpp.ll
 ; openexr/optimized/internal_huf.c.ll
@@ -69,18 +80,6 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, 31
   %4 = sub nsw i32 %0, %3
-  ret i32 %4
-}
-
-; 2 occurrences:
-; pbrt-v4/optimized/integrators.cpp.ll
-; pbrt-v4/optimized/interaction.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000c(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = and i32 %2, 3
-  %4 = sub i32 %0, %3
   ret i32 %4
 }
 

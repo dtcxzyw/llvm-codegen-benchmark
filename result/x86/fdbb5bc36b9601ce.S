@@ -1,4 +1,4 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	movzbl	%dl, %eax
 	orl	%esi, %edi
 	orl	%eax, %edi
@@ -7,7 +7,7 @@ func0000000000000031:                   # @func0000000000000031
 	sete	%al
 	leal	-9(%rax,%rax,8), %eax
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	movzbl	%dl, %eax
 	orl	%esi, %edi
 	orl	%eax, %edi

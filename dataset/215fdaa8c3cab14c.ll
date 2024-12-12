@@ -1,5 +1,5 @@
 
-; 1132 occurrences:
+; 1130 occurrences:
 ; arrow/optimized/codegen_internal.cc.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_parallel.cpp.ll
@@ -47,7 +47,6 @@
 ; faiss/optimized/IndexPQ.cpp.ll
 ; faiss/optimized/hamming.cpp.ll
 ; git/optimized/cbtree.ll
-; graphviz/optimized/randomkit.c.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; hermes/optimized/Analysis.cpp.ll
 ; hermes/optimized/BCOpt.cpp.ll
@@ -815,7 +814,6 @@
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll

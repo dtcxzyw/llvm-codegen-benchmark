@@ -67,29 +67,14 @@ entry:
   ret i32 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; abc/optimized/fraClau.c.ll
-; openusd/optimized/patchTableFactory.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func00000000000000c3(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %1, %2
   %4 = zext i1 %3 to i32
   %5 = shl nsw i32 %0, 1
-  %6 = or disjoint i32 %5, %4
-  ret i32 %6
-}
-
-; 3 occurrences:
-; draco/optimized/adaptive_rans_bit_decoder.cc.ll
-; draco/optimized/rans_bit_decoder.cc.ll
-; libwebp/optimized/vp8_dec.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ult i32 %1, %2
-  %4 = zext i1 %3 to i32
-  %5 = shl i32 %0, 1
   %6 = or disjoint i32 %5, %4
   ret i32 %6
 }
@@ -141,6 +126,18 @@ entry:
   %3 = icmp ult i32 %1, %2
   %4 = zext i1 %3 to i32
   %5 = shl nuw nsw i32 %0, 1
+  %6 = or disjoint i32 %5, %4
+  ret i32 %6
+}
+
+; 1 occurrences:
+; libwebp/optimized/vp8_dec.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ult i32 %1, %2
+  %4 = zext i1 %3 to i32
+  %5 = shl i32 %0, 1
   %6 = or disjoint i32 %5, %4
   ret i32 %6
 }

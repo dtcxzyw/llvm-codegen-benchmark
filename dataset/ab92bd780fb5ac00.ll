@@ -1,5 +1,5 @@
 
-; 105 occurrences:
+; 106 occurrences:
 ; abc/optimized/bblif.c.ll
 ; bullet3/optimized/btDiscreteDynamicsWorld.ll
 ; cmake/optimized/divsufsort.c.ll
@@ -88,6 +88,7 @@
 ; llvm/optimized/SemaChecking.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
 ; meshlab/optimized/edit_point.cpp.ll
 ; nanobind/optimized/nb_type.cpp.ll
 ; nuklear/optimized/unity.c.ll

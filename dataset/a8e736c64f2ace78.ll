@@ -17,10 +17,10 @@
 ; postgres/optimized/regexp.ll
 ; ruby/optimized/date_strftime.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 4
-  %3 = icmp slt i32 %2, %0
+  %3 = icmp sgt i32 %0, %2
   ret i1 %3
 }
 
@@ -31,14 +31,14 @@ entry:
 ; sentencepiece/optimized/parse_context.cc.ll
 ; stb/optimized/stb_tilemap_editor.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 1
-  %3 = icmp ne i32 %2, %0
+  %3 = icmp ne i32 %0, %2
   ret i1 %3
 }
 
-; 52 occurrences:
+; 51 occurrences:
 ; abc/optimized/cnfUtil.c.ll
 ; abc/optimized/pdrTsim3.c.ll
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
@@ -79,7 +79,6 @@ entry:
 ; sentencepiece/optimized/generated_message_table_driven_lite.cc.ll
 ; sentencepiece/optimized/wire_format_lite.cc.ll
 ; stb/optimized/stb_tilemap_editor.c.ll
-; stockfish/optimized/half_ka_v2_hm.ll
 ; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
 ; wasmtime-rs/optimized/4op38pthexwwd97b.ll
 ; wireshark/optimized/packet-ansi_a.c.ll
@@ -92,16 +91,18 @@ entry:
 ; z3/optimized/theory_seq.cpp.ll
 ; z3/optimized/theory_utvpi.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 65024
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   ret i1 %3
 }
 
-; 17 occurrences:
+; 19 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
+; boost/optimized/src.ll
+; boost/optimized/xml_wgrammar.ll
 ; openvdb/optimized/Diagnostics.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Filter.cc.ll
@@ -121,7 +122,7 @@ entry:
 define i1 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %1, 4095
-  %3 = icmp sgt i32 %2, %0
+  %3 = icmp slt i32 %0, %2
   ret i1 %3
 }
 
@@ -132,11 +133,13 @@ entry:
 define i1 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %1, 1
-  %3 = icmp slt i32 %2, %0
+  %3 = icmp sgt i32 %0, %2
   ret i1 %3
 }
 
-; 11 occurrences:
+; 13 occurrences:
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/xml_grammar.ll
 ; bullet3/optimized/btMultiBody.ll
 ; glslang/optimized/iomapper.cpp.ll
 ; icu/optimized/package.ll
@@ -149,14 +152,14 @@ entry:
 ; stb/optimized/stb_divide.c.ll
 ; wireshark/optimized/packet-mq.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 2
-  %3 = icmp sgt i32 %2, %0
+  %3 = icmp slt i32 %0, %2
   ret i1 %3
 }
 
-; 29 occurrences:
+; 30 occurrences:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver2.c.ll
 ; abc/optimized/satSolver3.c.ll
@@ -186,19 +189,30 @@ entry:
 ; regex-rs/optimized/11vfjke4utuj478u.ll
 ; stockfish/optimized/tbprobe.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %1, -2146959360
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   ret i1 %3
 }
 
-; 10 occurrences:
-; darktable/optimized/FujiDecompressor.cpp.ll
+; 3 occurrences:
 ; darktable/optimized/RawImageDataU16.cpp.ll
 ; darktable/optimized/SonyArw2Decompressor.cpp.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
+entry:
+  %2 = or disjoint i32 %1, 1
+  %3 = icmp samesign ugt i32 %0, %2
+  ret i1 %3
+}
+
+; 8 occurrences:
+; darktable/optimized/FujiDecompressor.cpp.ll
+; darktable/optimized/SonyArw2Decompressor.cpp.ll
 ; linux/optimized/slab_common.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-macsec.c.ll
@@ -206,10 +220,20 @@ entry:
 ; wireshark/optimized/packet-vssmonitoring.c.ll
 ; z3/optimized/nlsat_evaluator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 1
-  %3 = icmp ult i32 %2, %0
+  %3 = icmp ugt i32 %0, %2
+  ret i1 %3
+}
+
+; 1 occurrences:
+; boost/optimized/numeric.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
+entry:
+  %2 = or disjoint i32 %1, 48
+  %3 = icmp samesign ult i32 %0, %2
   ret i1 %3
 }
 
@@ -232,7 +256,7 @@ entry:
 define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %1, 3
-  %3 = icmp ult i32 %2, %0
+  %3 = icmp ugt i32 %0, %2
   ret i1 %3
 }
 
@@ -243,7 +267,7 @@ entry:
 define i1 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %1, 1
-  %3 = icmp ne i32 %2, %0
+  %3 = icmp ne i32 %0, %2
   ret i1 %3
 }
 
@@ -261,7 +285,7 @@ entry:
 define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = or i32 %1, 2
-  %3 = icmp ugt i32 %2, %0
+  %3 = icmp ult i32 %0, %2
   ret i1 %3
 }
 
@@ -273,20 +297,20 @@ entry:
 ; wireshark/optimized/packet-exablaze.c.ll
 ; wireshark/optimized/packet-rpcrdma.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, 256
-  %3 = icmp ugt i32 %2, %0
+  %3 = icmp ult i32 %0, %2
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; wireshark/optimized/packet-ipsec.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000029(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %1, -32768
-  %3 = icmp ule i32 %2, %0
+  %3 = icmp uge i32 %0, %2
   ret i1 %3
 }
 

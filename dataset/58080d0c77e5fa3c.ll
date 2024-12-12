@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
@@ -14,7 +14,6 @@
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; abseil-cpp/optimized/reflection.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
-; linux/optimized/i915_gem_gtt.ll
 ; linux/optimized/vmalloc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {

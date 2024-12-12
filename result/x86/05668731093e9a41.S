@@ -16,7 +16,14 @@ func0000000000000002:                   # @func0000000000000002
 	retq
 func0000000000000003:                   # @func0000000000000003
 	testb	$1, %sil
-	movabsq	$1152921504606846975, %rax      # imm = 0xFFFFFFFFFFFFFFF
+	movabsq	$384307168202282325, %rax       # imm = 0x555555555555555
 	cmoveq	%rdx, %rax
+	leaq	(%rax,%rax,2), %rax
 	leaq	(%rdi,%rax,8), %rax
+	retq
+func0000000000000001:                   # @func0000000000000001
+	testb	$1, %sil
+	movl	$32, %eax
+	cmoveq	%rdx, %rax
+	addq	%rdi, %rax
 	retq

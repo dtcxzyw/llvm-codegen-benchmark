@@ -1,21 +1,14 @@
 
-; 104 occurrences:
-; abc/optimized/amapPerm.c.ll
+; 84 occurrences:
 ; arrow/optimized/float16.cc.ll
 ; assimp/optimized/zip.c.ll
-; clamav/optimized/pe_icons.c.ll
 ; darktable/optimized/DeflateDecompressor.cpp.ll
 ; faiss/optimized/IndexRowwiseMinMax.cpp.ll
 ; faiss/optimized/ScalarQuantizer.cpp.ll
-; git/optimized/ipc-unix-socket.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hermes/optimized/zip.c.ll
 ; imgui/optimized/imgui_tables.cpp.ll
-; libevent/optimized/evdns.c.ll
 ; libevent/optimized/evmap.c.ll
-; libevent/optimized/poll.c.ll
-; libzmq/optimized/zmq.cpp.ll
-; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/CoverageMapping.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -45,7 +38,6 @@
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openmpi/optimized/keyval_lex.ll
 ; openmpi/optimized/show_help_lex.ll
-; openssl/optimized/rpktest-bin-rpktest.ll
 ; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; openvdb/optimized/Activate.cc.ll
@@ -55,7 +47,6 @@
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Filter.cc.ll
 ; openvdb/optimized/FindActiveValues.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFilter.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetMeasure.cc.ll
@@ -88,27 +79,16 @@
 ; pbrt-v4/optimized/stbimage.cpp.ll
 ; pbrt-v4/optimized/subsurface.cpp.ll
 ; pbrt-v4/optimized/surfscatter.cpp.ll
-; postgres/optimized/autoinc.ll
-; postgres/optimized/refint.ll
-; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rtextures.c.ll
-; ruby/optimized/parse.ll
-; slurm/optimized/conmgr.ll
-; slurm/optimized/env.ll
-; slurm/optimized/fd.ll
-; slurm/optimized/slurm_persist_conn.ll
-; slurm/optimized/slurm_protocol_socket.ll
 ; stb/optimized/stb_image.c.ll
-; stb/optimized/stb_vorbis.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wireshark/optimized/packet-mbim.c.ll
-; wireshark/optimized/packet-rtps.c.ll
 ; yosys/optimized/verilog_lexer.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i16 %0) #0 {
 entry:
-  %1 = and i16 %0, 1
-  %2 = zext nneg i16 %1 to i32
+  %1 = sext i16 %0 to i32
+  %2 = and i32 %1, -16777216
   ret i32 %2
 }
 

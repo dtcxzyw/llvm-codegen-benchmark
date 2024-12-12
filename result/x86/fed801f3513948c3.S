@@ -1,4 +1,4 @@
-func0000000000000418:                   # @func0000000000000418
+func0000000000001038:                   # @func0000000000001038
 	addl	%edx, %esi
 	cmpl	$47, %esi
 	sete	%cl
@@ -6,7 +6,7 @@ func0000000000000418:                   # @func0000000000000418
 	seta	%al
 	orb	%cl, %al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	addl	%edx, %esi
 	cmpl	$47, %esi
 	sete	%cl

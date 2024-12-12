@@ -19,12 +19,12 @@ entry:
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; ozz-animation/optimized/jsoncpp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000014(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, 255
   %4 = lshr i32 %0, 8
-  %5 = icmp ult i32 %3, %4
+  %5 = icmp samesign ult i32 %3, %4
   ret i1 %5
 }
 

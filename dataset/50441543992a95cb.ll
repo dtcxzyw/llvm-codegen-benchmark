@@ -1,9 +1,8 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; clamav/optimized/regcomp.c.ll
 ; cvc5/optimized/justification_strategy.cpp.ll
 ; hermes/optimized/regcomp.c.ll
-; linux/optimized/drm_scdc_helper.ll
 ; linux/optimized/power_supply_core.ll
 ; llvm/optimized/FrontendAction.cpp.ll
 ; llvm/optimized/InlineOrder.cpp.ll

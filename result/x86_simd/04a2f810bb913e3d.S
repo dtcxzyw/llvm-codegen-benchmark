@@ -36,15 +36,3 @@ func0000000000000002:                   # @func0000000000000002
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-.LCPI2_0:
-	.long	4294966784                      # 0xfffffe00
-func0000000000000000:                   # @func0000000000000000
-	vpsrlq	$30, %ymm0, %ymm0
-	vpmovqd	%ymm0, %xmm0
-	vpsrad	$31, %xmm0, %xmm1
-	vpsrld	$23, %xmm1, %xmm1
-	vpaddd	%xmm1, %xmm0, %xmm1
-	vpandd	.LCPI2_0(%rip){1to4}, %xmm1, %xmm1
-	vpsubd	%xmm1, %xmm0, %xmm0
-	vzeroupper
-	retq

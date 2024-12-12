@@ -1,10 +1,9 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; abc/optimized/giaHash.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; bdwgc/optimized/gc.c.ll
 ; folly/optimized/ExecutorWithPriority.cpp.ll
-; hyperscan/optimized/fdr_confirm_compile.cpp.ll
 ; libwebp/optimized/vp8l_enc.c.ll
 ; llvm/optimized/GVN.cpp.ll
 ; opencv/optimized/arithm.cpp.ll

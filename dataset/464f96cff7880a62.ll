@@ -4,7 +4,7 @@
 ; libquic/optimized/quic_framer.cc.ll
 ; rust-analyzer-rs/optimized/hf9vzunhg9aziex.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -1
   %4 = icmp ult i64 %3, -2
@@ -17,7 +17,7 @@ entry:
 ; clamav/optimized/msxml.c.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000008c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 1
   %4 = icmp ult i64 %0, %1
@@ -34,7 +34,7 @@ entry:
 ; entt/optimized/storage_entity.cpp.ll
 ; entt/optimized/storage_no_instance.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001cc(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000058c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 1
   %4 = icmp ne i64 %0, %1
@@ -45,7 +45,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/Symbolize.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 3
   %4 = icmp ult i64 %3, -4
@@ -57,7 +57,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/basearith.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, -8446744073709551617
   %4 = icmp ult i64 %0, %1

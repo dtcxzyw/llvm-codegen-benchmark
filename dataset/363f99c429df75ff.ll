@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 13 occurrences:
 ; darktable/optimized/introspection_bloom.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; darktable/optimized/introspection_highpass.c.ll
@@ -10,7 +10,6 @@
 ; meshlab/optimized/filter_layer.cpp.ll
 ; meshlab/optimized/filter_mutualglobal.cpp.ll
 ; meshlab/optimized/filter_mutualinfo.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; minetest/optimized/minimap.cpp.ll
 ; opencv/optimized/perf_warp.cpp.ll
 ; opencv/optimized/selectivesearchsegmentation.cpp.ll

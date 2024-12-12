@@ -5,7 +5,7 @@ func0000000000000000:                   # @func0000000000000000
 	andl	$-2147483648, %eax              # imm = 0x80000000
 	retq
 func0000000000000002:                   # @func0000000000000002
-	shll	$2, %esi
+	shll	$4, %esi
 	xorl	%edi, %esi
 	movzwl	%si, %eax
 	retq

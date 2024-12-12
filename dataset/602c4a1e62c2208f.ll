@@ -12,6 +12,19 @@ entry:
   ret i64 %5
 }
 
+; 2 occurrences:
+; duckdb/optimized/ub_duckdb_func_string.cpp.ll
+; php/optimized/decode.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003f(i64 %0, i64 %1) #0 {
+entry:
+  %2 = mul nuw nsw i64 %1, 94
+  %3 = add nuw nsw i64 %0, 4294964161
+  %4 = add nuw nsw i64 %3, %2
+  %5 = and i64 %4, 4294967295
+  ret i64 %5
+}
+
 ; 4 occurrences:
 ; cmake/optimized/block_buffer_encoder.c.ll
 ; crow/optimized/example_session.cpp.ll
@@ -24,18 +37,6 @@ entry:
   %3 = mul nuw nsw i64 %0, 1812433253
   %4 = add nuw i64 %3, %2
   %5 = and i64 %4, 4294967295
-  ret i64 %5
-}
-
-; 1 occurrences:
-; duckdb/optimized/ub_duckdb_func_string.cpp.ll
-; Function Attrs: nounwind
-define i64 @func000000000000003f(i64 %0, i64 %1) #0 {
-entry:
-  %2 = mul nuw nsw i64 %1, 5
-  %3 = add nuw nsw i64 %0, 1
-  %4 = add nuw nsw i64 %3, %2
-  %5 = and i64 %4, 127
   ret i64 %5
 }
 

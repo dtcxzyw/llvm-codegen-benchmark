@@ -1,9 +1,11 @@
 
-; 249 occurrences:
+; 250 occurrences:
 ; arrow/optimized/key_hash.cc.ll
 ; arrow/optimized/message.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
 ; arrow/optimized/reader.cc.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/attribute_name.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; cmake/optimized/cmDependsC.cxx.ll
 ; cmake/optimized/json_reader.cpp.ll
@@ -203,7 +205,6 @@
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; z3/optimized/arith_eq_solver.cpp.ll
 ; z3/optimized/automaton.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/dl_mk_rule_inliner.cpp.ll
 ; z3/optimized/emonics.cpp.ll
 ; z3/optimized/factor_rewriter.cpp.ll
@@ -258,8 +259,9 @@ entry:
   ret i64 %5
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; arrow/optimized/concatenate.cc.ll
+; boost/optimized/static_string.ll
 ; libquic/optimized/curve25519.c.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; lodepng/optimized/lodepng.cpp.ll
@@ -270,9 +272,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
 ; postgres/optimized/dbsize.ll
 ; qemu/optimized/fdt_sw.c.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; spike/optimized/f16_sqrt.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:

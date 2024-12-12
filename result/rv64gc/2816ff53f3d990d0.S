@@ -1,48 +1,48 @@
 func000000000000001c:                   # @func000000000000001c
 	andi	a2, a2, 255
-	mulw	a1, a2, a1
+	mulw	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func0000000000000022:                   # @func0000000000000022
+func000000000000003f:                   # @func000000000000003f
 	andi	a2, a2, 255
-	mul	a1, a2, a1
+	mulw	a1, a1, a2
+	add	a0, a0, a1
+	ret
+func0000000000000023:                   # @func0000000000000023
+	andi	a2, a2, 255
+	mul	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	add	a0, a0, a1
 	ret
-func000000000000003e:                   # @func000000000000003e
+func000000000000001f:                   # @func000000000000001f
 	andi	a2, a2, 255
-	mulw	a1, a2, a1
-	add	a0, a0, a1
-	ret
-func000000000000001e:                   # @func000000000000001e
-	andi	a2, a2, 255
-	mulw	a1, a2, a1
+	mulw	a1, a1, a2
 	slli	a1, a1, 3
 	add	a0, a0, a1
 	ret
 func0000000000000020:                   # @func0000000000000020
 	andi	a2, a2, 255
-	mul	a1, a2, a1
+	mul	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	add	a0, a0, a1
 	ret
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	andi	a2, a2, 255
-	mul	a1, a2, a1
+	mul	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	add	a0, a0, a1
 	ret
-func0000000000000026:                   # @func0000000000000026
+func0000000000000027:                   # @func0000000000000027
 	andi	a2, a2, 255
-	mulw	a1, a2, a1
+	mulw	a1, a1, a2
 	add	a0, a0, a1
 	ret
 func0000000000000000:                   # @func0000000000000000
 	andi	a2, a2, 255
-	mul	a1, a2, a1
+	mul	a1, a1, a2
 	slli	a1, a1, 32
 	srli	a1, a1, 32
 	add	a0, a0, a1

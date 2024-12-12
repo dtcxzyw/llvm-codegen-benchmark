@@ -7,7 +7,7 @@ define i32 @func0000000000000045(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 12884901888
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = zext i1 %1 to i32
   %7 = add nsw i32 %5, %6
   ret i32 %7
@@ -22,7 +22,7 @@ define i32 @func000000000000030f(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   %6 = zext i1 %1 to i32
   %7 = add nuw nsw i32 %5, %6
   ret i32 %7
@@ -35,23 +35,20 @@ define i32 @func0000000000000305(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = zext i1 %1 to i32
   %7 = add nsw i32 %5, %6
   ret i32 %7
 }
 
-; 4 occurrences:
+; 1 occurrences:
 ; abc/optimized/giaSatLut.c.ll
-; cmake/optimized/zstd_compress.c.ll
-; redis/optimized/object.ll
-; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000020f(i32 %0, i1 %1, i64 %2) #0 {
+define i32 @func000000000000060f(i32 %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ugt i64 %2, 1
+  %3 = icmp samesign ugt i64 %2, 1
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   %6 = zext i1 %1 to i32
   %7 = add nuw nsw i32 %5, %6
   ret i32 %7
@@ -65,7 +62,7 @@ define i32 @func000000000000004f(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 8
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   %6 = zext i1 %1 to i32
   %7 = add nuw nsw i32 %5, %6
   ret i32 %7
@@ -79,9 +76,24 @@ define i32 @func0000000000000205(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, 999999999999999999
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = zext i1 %1 to i32
   %7 = add nsw i32 %5, %6
+  ret i32 %7
+}
+
+; 3 occurrences:
+; cmake/optimized/zstd_compress.c.ll
+; redis/optimized/object.ll
+; zstd/optimized/zstd_compress.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000020f(i32 %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ugt i64 %2, 65791
+  %4 = zext i1 %3 to i32
+  %5 = add nuw nsw i32 %0, %4
+  %6 = zext i1 %1 to i32
+  %7 = add nuw nsw i32 %5, %6
   ret i32 %7
 }
 

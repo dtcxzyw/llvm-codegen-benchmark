@@ -25,7 +25,7 @@ func0000000000000008:                   # @func0000000000000008
 	.long	15                              # 0xf
 .LCPI2_1:
 	.long	16                              # 0x10
-func0000000000000029:                   # @func0000000000000029
+func0000000000000049:                   # @func0000000000000049
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm1
 	vpcmpltud	.LCPI2_0(%rip){1to4}, %xmm1, %k1

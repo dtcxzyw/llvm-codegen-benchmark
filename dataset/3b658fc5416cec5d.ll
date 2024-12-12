@@ -1,15 +1,14 @@
 
-; 8 occurrences:
+; 7 occurrences:
+; boost/optimized/ipc_reliable_message_queue.ll
 ; casadi/optimized/integrator.cpp.ll
 ; linux/optimized/nl80211.ll
-; linux/optimized/scan.ll
-; linux/optimized/swnode.ll
 ; llvm/optimized/MachineSink.cpp.ll
 ; oiio/optimized/environment.cpp.ll
 ; openvdb/optimized/Archive.cc.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000042(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp eq ptr %1, null

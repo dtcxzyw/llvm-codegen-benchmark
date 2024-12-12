@@ -24,7 +24,7 @@ func000000000000000c:                   # @func000000000000000c
 	add	a0, a0, a2
 	ret
 func000000000000000f:                   # @func000000000000000f
-	srli	a2, a2, 6
+	srli	a2, a2, 2
 	sub	a0, a1, a0
 	add	a0, a0, a2
 	ret

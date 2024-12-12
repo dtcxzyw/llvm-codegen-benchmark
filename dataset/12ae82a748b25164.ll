@@ -1,13 +1,13 @@
 
-%"class.std::basic_string_view.3279778" = type { i64, ptr }
-%struct.page.3344488 = type { i64, %union.anon.0.3344489, %union.anon.7.3344490, %struct.atomic_t.3344467, [8 x i8] }
-%union.anon.0.3344489 = type { %struct.anon.3344491 }
-%struct.anon.3344491 = type { %union.anon.1.3344492, ptr, %union.anon.3.3344493, i64 }
-%union.anon.1.3344492 = type { %struct.list_head.3344464 }
-%struct.list_head.3344464 = type { ptr, ptr }
-%union.anon.3.3344493 = type { i64 }
-%union.anon.7.3344490 = type { %struct.atomic_t.3344467 }
-%struct.atomic_t.3344467 = type { i32 }
+%"class.std::basic_string_view.3470250" = type { i64, ptr }
+%struct.page.3533312 = type { i64, %union.anon.0.3533313, %union.anon.7.3533314, %struct.atomic_t.3533291, [8 x i8] }
+%union.anon.0.3533313 = type { %struct.anon.3533315 }
+%struct.anon.3533315 = type { %union.anon.1.3533316, ptr, %union.anon.3.3533317, i64 }
+%union.anon.1.3533316 = type { %struct.list_head.3533288 }
+%struct.list_head.3533288 = type { ptr, ptr }
+%union.anon.3.3533317 = type { i64 }
+%union.anon.7.3533314 = type { %struct.atomic_t.3533291 }
+%struct.atomic_t.3533291 = type { i32 }
 
 ; 21 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
@@ -66,11 +66,11 @@ entry:
 ; zfp/optimized/decode4i.c.ll
 ; zfp/optimized/decode4l.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = lshr i64 %3, 1
-  %5 = getelementptr %"class.std::basic_string_view.3279778", ptr %0, i64 %4, i32 1
+  %5 = getelementptr nuw %"class.std::basic_string_view.3470250", ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -101,11 +101,11 @@ entry:
 ; linux/optimized/workingset.ll
 ; linux/optimized/xdp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = lshr i64 %3, 12
-  %5 = getelementptr %struct.page.3344488, ptr %0, i64 %4, i32 1
+  %5 = getelementptr %struct.page.3533312, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 

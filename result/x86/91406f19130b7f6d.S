@@ -8,3 +8,7 @@ func000000000000002a:                   # @func000000000000002a
 	addq	%rdi, %rdi
 	leaq	(%rdi,%rdi,4), %rax
 	retq
+func000000000000003f:                   # @func000000000000003f
+	addq	%rdx, %rdi
+	imulq	$1441151881, %rdi, %rax         # imm = 0x55E63B89
+	retq

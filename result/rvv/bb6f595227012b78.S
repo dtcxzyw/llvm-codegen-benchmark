@@ -33,7 +33,7 @@ func0000000000000028:                   # @func0000000000000028
 	vzext.vf2	v10, v9
 	vwsll.vi	v9, v10, 24
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vor.vv	v8, v9, v8
+	vor.vv	v8, v8, v9
 	vadd.vi	v10, v8, -1
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
@@ -54,7 +54,7 @@ func000000000000002c:                   # @func000000000000002c
 	vzext.vf2	v10, v9
 	vwsll.vi	v9, v10, 24
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vor.vv	v8, v9, v8
+	vor.vv	v8, v8, v9
 	vadd.vi	v10, v8, 12
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10

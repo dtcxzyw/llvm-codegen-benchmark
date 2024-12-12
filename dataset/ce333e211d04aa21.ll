@@ -5,7 +5,7 @@
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; php/optimized/ir_emit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000284(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw i64 %0, 32

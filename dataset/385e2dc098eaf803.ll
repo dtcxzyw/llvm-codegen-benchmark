@@ -1,15 +1,13 @@
 
-; 91 occurrences:
+; 89 occurrences:
 ; abc/optimized/abcHaig.c.ll
 ; abc/optimized/abcSpeedup.c.ll
 ; abc/optimized/cecSolve.c.ll
 ; abc/optimized/cgtDecide.c.ll
 ; abc/optimized/cutMan.c.ll
-; abc/optimized/darMan.c.ll
 ; abc/optimized/giaIf.c.ll
 ; abc/optimized/giaMinLut.c.ll
 ; abc/optimized/mapperCut.c.ll
-; abc/optimized/reoProfile.c.ll
 ; abc/optimized/saigConstr2.c.ll
 ; abc/optimized/sclSize.c.ll
 ; assimp/optimized/IRRLoader.cpp.ll

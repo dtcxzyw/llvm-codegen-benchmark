@@ -8,13 +8,53 @@
 define i64 @func000000000000001b(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = lshr i64 %4, 32
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 
-; 220 occurrences:
+; 5 occurrences:
+; openjdk/optimized/archiveHeapWriter.ll
+; openjdk/optimized/arrayKlass.ll
+; openjdk/optimized/instanceKlass.ll
+; openjdk/optimized/objArrayKlass.ll
+; openjdk/optimized/stringTable.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000029(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = add nsw i64 %1, %3
+  %5 = lshr i64 %4, 3
+  %6 = add nsw i64 %5, %0
+  ret i64 %6
+}
+
+; 1 occurrences:
+; openjdk/optimized/typeArrayKlass.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000021(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = add i64 %1, %3
+  %5 = lshr i64 %4, 3
+  %6 = add nsw i64 %5, %0
+  ret i64 %6
+}
+
+; 1 occurrences:
+; openjdk/optimized/stringTable.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000039(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = add nuw nsw i64 %1, %3
+  %5 = lshr i64 %4, 3
+  %6 = add nsw i64 %5, %0
+  ret i64 %6
+}
+
+; 219 occurrences:
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
 ; fmt/optimized/format-impl-test.cc.ll
@@ -162,7 +202,6 @@ entry:
 ; oiio/optimized/tiffoutput.cpp.ll
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
 ; tev/optimized/Channel.cpp.ll
@@ -239,49 +278,9 @@ entry:
 define i64 @func0000000000000003(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %3, %1
-  %5 = lshr i64 %4, 63
+  %4 = add i64 %1, %3
+  %5 = lshr i64 %4, 32
   %6 = add nuw nsw i64 %5, %0
-  ret i64 %6
-}
-
-; 5 occurrences:
-; openjdk/optimized/archiveHeapWriter.ll
-; openjdk/optimized/arrayKlass.ll
-; openjdk/optimized/instanceKlass.ll
-; openjdk/optimized/objArrayKlass.ll
-; openjdk/optimized/stringTable.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000029(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext nneg i32 %2 to i64
-  %4 = add nsw i64 %3, %1
-  %5 = lshr i64 %4, 3
-  %6 = add nsw i64 %5, %0
-  ret i64 %6
-}
-
-; 1 occurrences:
-; openjdk/optimized/typeArrayKlass.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000021(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext nneg i32 %2 to i64
-  %4 = add i64 %3, %1
-  %5 = lshr i64 %4, 3
-  %6 = add nsw i64 %5, %0
-  ret i64 %6
-}
-
-; 1 occurrences:
-; openjdk/optimized/stringTable.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000039(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext nneg i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
-  %5 = lshr i64 %4, 3
-  %6 = add nsw i64 %5, %0
   ret i64 %6
 }
 
@@ -299,9 +298,9 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = lshr i64 %4, 1
-  %6 = add nuw i64 %5, %0
+  %6 = add nuw i64 %0, %5
   ret i64 %6
 }
 
@@ -311,9 +310,9 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = lshr i64 %4, 32
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 

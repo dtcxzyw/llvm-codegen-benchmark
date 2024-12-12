@@ -20,7 +20,7 @@ func0000000000000007:                   # @func0000000000000007
 	xorl	%eax, %eax
 	testq	%rsi, %rsi
 	setne	%al
-	shll	$5, %eax
+	shll	$4, %eax
 	addq	%rdi, %rax
 	retq
 func0000000000000033:                   # @func0000000000000033

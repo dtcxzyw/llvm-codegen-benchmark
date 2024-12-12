@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 26 occurrences:
 ; actix-rs/optimized/2pgtlhl4qd060m9c.ll
 ; darktable/optimized/NefDecoder.cpp.ll
 ; graphviz/optimized/lab.c.ll
@@ -14,7 +14,6 @@
 ; postgres/optimized/date.ll
 ; postgres/optimized/vacuumlazy.ll
 ; proj/optimized/hgridshift.cpp.ll
-; proj/optimized/io.cpp.ll
 ; proj/optimized/vgridshift.cpp.ll
 ; quantlib/optimized/actualactual.ll
 ; quantlib/optimized/simpledaycounter.ll

@@ -53,6 +53,11 @@ func0000000000000033:                   # @func0000000000000033
 	shrl	$6, %eax
 	decl	%eax
 	retq
+func0000000000000027:                   # @func0000000000000027
+	leal	16(%rdi), %eax
+	shrl	$4, %eax
+	incl	%eax
+	retq
 func0000000000000012:                   # @func0000000000000012
 	leal	-8(%rdi), %eax
 	shrl	$3, %eax

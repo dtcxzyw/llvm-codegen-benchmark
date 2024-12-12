@@ -20,6 +20,6 @@ func0000000000000000:                   # @func0000000000000000
 	vpcmpnltw	%xmm3, %xmm0, %k1
 	vpslld	$9, %ymm2, %ymm0
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
-	vpor	%ymm1, %ymm0, %ymm0
+	vpor	%ymm0, %ymm1, %ymm0
 	vpord	.LCPI1_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	retq

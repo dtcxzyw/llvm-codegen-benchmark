@@ -13,7 +13,7 @@ func0000000000000005:                   # @func0000000000000005
 	lui	a0, 385088
 	addi	a0, a0, 1024
 	vmerge.vxm	v12, v12, a0, v0
-	vor.vv	v8, v12, v8
+	vor.vv	v8, v8, v12
 	vzext.vf4	v12, v10
 	vor.vv	v8, v8, v12
 	ret

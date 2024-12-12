@@ -16,6 +16,5 @@ func0000000000000001:                   # @func0000000000000001
 	li	a0, 3
 	slli	a0, a0, 32
 	vmacc.vx	v10, a0, v8
-	li	a0, 32
-	vsra.vx	v8, v10, a0
+	vsra.vi	v8, v10, 30
 	ret

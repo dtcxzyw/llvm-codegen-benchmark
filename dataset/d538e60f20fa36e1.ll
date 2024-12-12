@@ -38,39 +38,16 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
-; abc/optimized/abcOrchestration.c.ll
-; abc/optimized/abcResub.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000001b(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp slt i32 %1, 33
-  %3 = mul nuw nsw i32 %0, 151
-  %4 = select i1 %2, i32 151, i32 %3
-  ret i32 %4
-}
-
-; 2 occurrences:
-; abc/optimized/giaFanout.c.ll
-; opencv/optimized/synthetic_seq.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000019(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp slt i32 %1, 2048
-  %3 = mul nsw i32 %0, 5
-  %4 = select i1 %2, i32 20480, i32 %3
-  ret i32 %4
-}
-
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/src.ll
 ; icu/optimized/indiancal.ll
 ; linux/optimized/cdrom.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp eq i32 %1, 1
-  %3 = mul i32 %0, 2352
-  %4 = select i1 %2, i32 2352, i32 %3
+  %2 = icmp eq i32 %1, 0
+  %3 = mul i32 %0, -732923
+  %4 = select i1 %2, i32 788625148, i32 %3
   ret i32 %4
 }
 

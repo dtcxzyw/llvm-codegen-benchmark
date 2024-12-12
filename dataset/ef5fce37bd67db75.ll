@@ -1,5 +1,5 @@
 
-; 51 occurrences:
+; 50 occurrences:
 ; assimp/optimized/SpatialSort.cpp.ll
 ; darktable/optimized/introspection_cacorrectrgb.c.ll
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
@@ -50,7 +50,6 @@
 ; taskflow/optimized/dependent_async_algorithm.cpp.ll
 ; taskflow/optimized/parallel_for.cpp.ll
 ; taskflow/optimized/reduce.cpp.ll
-; tev/optimized/ImageCanvas.cpp.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, i64 %1) #0 {
 entry:

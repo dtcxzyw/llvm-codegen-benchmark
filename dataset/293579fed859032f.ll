@@ -16,7 +16,7 @@ entry:
   ret i32 %7
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; cmake/optimized/archive_read_support_format_warc.c.ll
 ; cmake/optimized/ftp.c.ll
 ; curl/optimized/libcurl_la-ftp.ll
@@ -24,6 +24,7 @@ entry:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; libquic/optimized/prtime.cc.ll
 ; libquic/optimized/t_x509.c.ll
+; lvgl/optimized/lv_calendar_header_dropdown.ll
 ; wireshark/optimized/catapult_dct2000.c.ll
 ; wireshark/optimized/log3gpp.c.ll
 ; wireshark/optimized/packet-catapult-dct2000.c.ll
@@ -80,9 +81,10 @@ entry:
   ret i32 %7
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; abc/optimized/cnfWrite.c.ll
 ; arrow/optimized/tz.cpp.ll
+; lvgl/optimized/lv_calendar_header_dropdown.ll
 ; velox/optimized/tz.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000110(i32 %0, i32 %1, i32 %2) #0 {
@@ -171,19 +173,6 @@ entry:
   %5 = add nuw nsw i32 %4, %3
   %6 = mul nuw nsw i32 %0, 1260
   %7 = add nsw i32 %5, %6
-  ret i32 %7
-}
-
-; 1 occurrences:
-; icu/optimized/gregoimp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000140(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %2, 719162
-  %4 = mul nsw i32 %1, -146097
-  %5 = add i32 %4, %3
-  %6 = mul i32 %0, -36524
-  %7 = add i32 %6, %5
   ret i32 %7
 }
 

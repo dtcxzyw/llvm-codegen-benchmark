@@ -37,13 +37,12 @@ entry:
   ret i64 %3
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; brotli/optimized/static_dict.c.ll
 ; cpython/optimized/_codecs_kr.ll
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/focaltech.ll
-; linux/optimized/nf_conntrack_proto_icmpv6.ll
 ; redis/optimized/ziplist.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i8 %0) #0 {

@@ -1,4 +1,4 @@
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	andi	a0, a0, 1
 	sext.w	a3, a2
 	sext.w	a4, a1
@@ -9,7 +9,7 @@ func0000000000000016:                   # @func0000000000000016
 	or	a1, a1, a2
 	czero.nez	a0, a1, a0
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	andi	a0, a0, 1
 	sext.w	a3, a2
 	sext.w	a4, a1

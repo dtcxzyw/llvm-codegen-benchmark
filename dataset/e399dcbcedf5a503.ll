@@ -13,9 +13,8 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; meshoptimizer/optimized/indexcodec.cpp.ll
-; nuttx/optimized/lib_libvsprintf.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1, i1 %2) #0 {
 entry:
@@ -34,6 +33,17 @@ entry:
   %3 = zext i1 %2 to i32
   %4 = select i1 %0, i32 2, i32 %1
   %5 = add nuw nsw i32 %4, %3
+  ret i32 %5
+}
+
+; 1 occurrences:
+; nuttx/optimized/lib_libvsprintf.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000002(i1 %0, i32 %1, i1 %2) #0 {
+entry:
+  %3 = zext i1 %2 to i32
+  %4 = select i1 %0, i32 5, i32 %1
+  %5 = add nuw i32 %4, %3
   ret i32 %5
 }
 

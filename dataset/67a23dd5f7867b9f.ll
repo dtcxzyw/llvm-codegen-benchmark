@@ -4,7 +4,7 @@
 ; llvm/optimized/APFixedPoint.cpp.ll
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 64, %1
   %3 = and i32 %0, 63
@@ -12,13 +12,11 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
+; 2 occurrences:
 ; hermes/optimized/APFloat.cpp.ll
-; linux/optimized/intel_guc_submission.ll
 ; llvm/optimized/APFloat.cpp.ll
-; postgres/optimized/jsonfuncs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = and i32 %0, -64
@@ -29,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/APFixedPoint.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002b(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = and i32 %0, 65535
@@ -52,22 +50,34 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = and i32 %0, 255
-  %4 = icmp ugt i32 %3, %2
+  %4 = icmp samesign ugt i32 %3, %2
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = and i32 %0, 255
   %4 = icmp eq i32 %3, %2
+  ret i1 %4
+}
+
+; 2 occurrences:
+; linux/optimized/intel_guc_submission.ll
+; postgres/optimized/jsonfuncs.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
+entry:
+  %2 = sub nsw i32 2048, %1
+  %3 = and i32 %0, 2047
+  %4 = icmp samesign ult i32 %3, %2
   ret i1 %4
 }
 

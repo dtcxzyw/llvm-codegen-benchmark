@@ -6,7 +6,7 @@
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-set.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000391(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000721(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = shl i32 %2, 6
@@ -21,7 +21,7 @@ entry:
 ; llvm/optimized/CoverageMapping.cpp.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000007dc(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000fac(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nuw i32 %2, 6
@@ -59,7 +59,7 @@ entry:
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; llvm/optimized/X86LowerTileCopy.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000007d1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000fa1(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nuw i32 %2, 6

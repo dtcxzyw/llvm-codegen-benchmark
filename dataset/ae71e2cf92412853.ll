@@ -6,7 +6,7 @@
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000048c(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1028
   %3 = icmp ult i64 %2, -8
@@ -19,7 +19,7 @@ entry:
 ; 1 occurrences:
 ; brotli/optimized/backward_references.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000008c(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -1
   %3 = icmp ult i64 %2, 32

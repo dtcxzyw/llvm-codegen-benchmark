@@ -12,7 +12,7 @@ entry:
   ret i64 %3
 }
 
-; 17 occurrences:
+; 19 occurrences:
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
@@ -26,7 +26,9 @@ entry:
 ; linux/optimized/addrconf.ll
 ; linux/optimized/hcd.ll
 ; llama.cpp/optimized/ggml.c.ll
-; php/optimized/unixtime2tm.ll
+; openspiel/optimized/bridge.cc.ll
+; openspiel/optimized/hearts.cc.ll
+; openspiel/optimized/spades.cc.ll
 ; postgres/optimized/deadlock.ll
 ; postgres/optimized/walsender.ll
 ; postgres/optimized/worker.ll

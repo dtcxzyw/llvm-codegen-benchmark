@@ -1,5 +1,5 @@
 
-; 344 occurrences:
+; 341 occurrences:
 ; abc/optimized/acbTest.c.ll
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/dauDsd.c.ll
@@ -15,6 +15,8 @@
 ; abc/optimized/sfmDec.c.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; abseil-cpp/optimized/mutex.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/src.ll
 ; cpython/optimized/_ssl.ll
 ; cpython/optimized/obmalloc.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
@@ -65,7 +67,6 @@
 ; linux/optimized/kyber-iosched.ll
 ; linux/optimized/libahci.ll
 ; linux/optimized/libata-sata.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/manage.ll
 ; linux/optimized/mempolicy.ll
 ; linux/optimized/move_extent.ll
@@ -133,13 +134,11 @@
 ; llvm/optimized/MCAssembler.cpp.ll
 ; llvm/optimized/MachOUniversal.cpp.ll
 ; llvm/optimized/MachineBasicBlock.cpp.ll
-; llvm/optimized/MachineDominators.cpp.ll
 ; llvm/optimized/MachineVerifier.cpp.ll
 ; llvm/optimized/OMPIRBuilder.cpp.ll
 ; llvm/optimized/OptimizedStructLayout.cpp.ll
 ; llvm/optimized/ParseOpenMP.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RISCVMakeCompressible.cpp.ll
 ; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
@@ -176,7 +175,6 @@
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86InstCombineIntrinsic.cpp.ll
-; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; luau/optimized/lnumprint.cpp.ll
 ; mimalloc/optimized/bitmap.c.ll
 ; mitsuba3/optimized/rapass.cpp.ll
@@ -339,7 +337,6 @@
 ; velox/optimized/Zip.cpp.ll
 ; velox/optimized/ZipWith.cpp.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
-; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; yalantinglibs/optimized/chat_room.cpp.ll
 ; z3/optimized/hwf.cpp.ll
 ; z3/optimized/sat_cut_simplifier.cpp.ll
@@ -348,12 +345,12 @@
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   %4 = icmp eq i64 %3, 0
   ret i1 %4
 }
 
-; 35 occurrences:
+; 34 occurrences:
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/rsbDec6.c.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
@@ -382,7 +379,6 @@ entry:
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; softposit-rs/optimized/kf9u47qfx5x7qom.ll
 ; spike/optimized/csrs.ll
-; spike/optimized/i64_to_f32.ll
 ; spike/optimized/s_mulAddF32.ll
 ; spike/optimized/s_mulAddF64.ll
 ; spike/optimized/s_roundPackToUI32.ll
@@ -393,7 +389,7 @@ entry:
 define i1 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   %4 = icmp ne i64 %3, 0
   ret i1 %4
 }
@@ -408,7 +404,7 @@ entry:
 define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   %4 = icmp ult i64 %3, 32768
   ret i1 %4
 }
@@ -419,7 +415,7 @@ entry:
 define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   %4 = icmp ugt i64 %3, -2147483649
   ret i1 %4
 }

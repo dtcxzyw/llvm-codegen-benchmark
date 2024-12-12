@@ -1,18 +1,18 @@
 func0000000000000008:                   # @func0000000000000008
 	movzbl	%dl, %eax
-	cmpl	%esi, %eax
+	cmpl	%eax, %esi
 	movl	$15, %eax
-	cmovbl	%edi, %eax
+	cmoval	%edi, %eax
 	retq
 func0000000000000001:                   # @func0000000000000001
 	movzbl	%dl, %ecx
 	xorl	%eax, %eax
-	cmpl	%esi, %ecx
+	cmpl	%ecx, %esi
 	cmovel	%edi, %eax
 	retq
 func000000000000000a:                   # @func000000000000000a
 	movzbl	%dl, %ecx
 	xorl	%eax, %eax
-	cmpl	%esi, %ecx
-	cmovll	%edi, %eax
+	cmpl	%ecx, %esi
+	cmovgl	%edi, %eax
 	retq

@@ -1,19 +1,24 @@
-func0000000000000044:                   // @func0000000000000044
+func0000000000000084:                   // @func0000000000000084
 // %bb.0:                               // %entry
-	movi	v4.4s, #2
-	movi	v5.4s, #36
-	movi	v6.4s, #60
-	movi	v16.4s, #1
-	cmeq	v7.4s, v3.4s, v4.4s
-	cmeq	v4.4s, v2.4s, v4.4s
-	cmeq	v2.4s, v2.4s, v16.4s
-	cmeq	v3.4s, v3.4s, v16.4s
-	bsl	v4.16b, v6.16b, v5.16b
-	bit	v5.16b, v6.16b, v7.16b
-	movi	v6.4s, #44
-	bsl	v3.16b, v6.16b, v5.16b
-	bsl	v2.16b, v6.16b, v4.16b
-	mul	v0.4s, v2.4s, v0.4s
-	mul	v1.4s, v3.4s, v1.4s
+	mov	w8, #36                         // =0x24
+	cmp	w1, #2
+	mov	w9, #60                         // =0x3c
+	csel	w8, w9, w8, eq
+	cmp	w1, #1
+	mov	w9, #44                         // =0x2c
+	csel	w8, w9, w8, eq
+	mul	w0, w8, w0
+	ret
+                                        // -- End function
+func0000000000000085:                   // @func0000000000000085
+// %bb.0:                               // %entry
+	mov	w8, #10                         // =0xa
+	cmp	w1, #2
+	mov	w9, #12                         // =0xc
+	csel	w8, w9, w8, eq
+	cmp	w1, #1
+	mov	w9, #14                         // =0xe
+	csel	w8, w9, w8, eq
+	mul	w0, w8, w0
 	ret
                                         // -- End function

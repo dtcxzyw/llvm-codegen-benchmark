@@ -69,7 +69,7 @@ entry:
 ; yalantinglibs/optimized/data_gen.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000184(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
@@ -90,7 +90,7 @@ entry:
 ; openjdk/optimized/methodLiveness.ll
 ; openusd/optimized/cpuPatchTable.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
@@ -105,7 +105,7 @@ entry:
 ; yalantinglibs/optimized/data_gen.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
@@ -121,7 +121,7 @@ entry:
 ; hermes/optimized/escape.cpp.ll
 ; opencv/optimized/brisk.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000181(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
@@ -130,25 +130,10 @@ entry:
   ret i1 %6
 }
 
-; 4 occurrences:
-; eastl/optimized/TestVector.cpp.ll
-; hyperscan/optimized/rose_build_role_aliasing.cpp.ll
-; oiio/optimized/exrinput.cpp.ll
-; opencv/optimized/digits_svm.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, ptr %2) #0 {
-entry:
-  %3 = ptrtoint ptr %2 to i64
-  %4 = sub i64 %0, %3
-  %5 = shl nsw i64 %1, 2
-  %6 = icmp eq i64 %4, %5
-  ret i1 %6
-}
-
 ; 1 occurrences:
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000086(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
@@ -166,7 +151,7 @@ entry:
 ; luajit/optimized/lj_dispatch.ll
 ; luajit/optimized/lj_dispatch_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000018a(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
@@ -176,11 +161,25 @@ entry:
 }
 
 ; 3 occurrences:
+; eastl/optimized/TestVector.cpp.ll
+; hyperscan/optimized/rose_build_role_aliasing.cpp.ll
+; opencv/optimized/digits_svm.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000081(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %0, %3
+  %5 = shl nsw i64 %1, 2
+  %6 = icmp eq i64 %4, %5
+  ret i1 %6
+}
+
+; 3 occurrences:
 ; tev/optimized/Common.cpp.ll
 ; tev/optimized/Image.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000101(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3

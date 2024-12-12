@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	100                             # 0x64
-func00000000000000da:                   # @func00000000000000da
+func00000000000001aa:                   # @func00000000000001aa
 	vpaddd	%ymm1, %ymm1, %ymm1
 	vpcmpled	%ymm0, %ymm1, %k1
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm0, %ymm1 {%k1}
@@ -8,7 +8,7 @@ func00000000000000da:                   # @func00000000000000da
 	retq
 .LCPI1_0:
 	.long	10                              # 0xa
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	vpaddd	%ymm1, %ymm1, %ymm1
 	vpcmpled	%ymm0, %ymm1, %k1
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm1 {%k1}

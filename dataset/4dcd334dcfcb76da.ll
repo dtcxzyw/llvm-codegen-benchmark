@@ -197,7 +197,7 @@ define i32 @func000000000000007a(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = mul nuw nsw i64 %2, 4732
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = lshr i64 %4, 16
   %6 = trunc nuw i64 %5 to i32
   ret i32 %6

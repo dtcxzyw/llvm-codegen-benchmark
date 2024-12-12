@@ -37,7 +37,7 @@
 ; mitsuba3/optimized/rapass.cpp.ll
 ; mitsuba3/optimized/zonevector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0) #0 {
+define i1 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 2080374799
   %2 = icmp eq i32 %1, 0

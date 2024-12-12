@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 16 occurrences:
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; curl/optimized/libcurl_la-curl_sasl.ll
 ; folly/optimized/Checksum.cpp.ll
@@ -8,15 +8,12 @@
 ; linux/optimized/cgroup.ll
 ; linux/optimized/driver-ops.ll
 ; linux/optimized/link.ll
-; linux/optimized/mii.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/posix_acl.ll
-; linux/optimized/swphy.ll
 ; linux/optimized/vht.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; qemu/optimized/accel_tcg_user-exec.c.ll
-; qemu/optimized/libvhost-user-glib.c.ll
 ; qemu/optimized/util_aio-posix.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; Function Attrs: nounwind

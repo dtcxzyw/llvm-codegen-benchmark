@@ -1,5 +1,6 @@
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/to_chars.ll
 ; icu/optimized/bocsu.ll
 ; icu/optimized/calendar.ll
 ; qemu/optimized/util_cutils.c.ll
@@ -12,8 +13,7 @@ entry:
   ret i32 %3
 }
 
-; 10 occurrences:
-; cpython/optimized/Hacl_Hash_SHA3.ll
+; 11 occurrences:
 ; git/optimized/pack-bitmap.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
@@ -23,6 +23,8 @@ entry:
 ; wireshark/optimized/packet-gsm_a_dtap.c.ll
 ; wireshark/optimized/packet-netflow.c.ll
 ; yosys/optimized/fastlz.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:

@@ -5,7 +5,7 @@ func0000000000000000:                   # @func0000000000000000
 	vnsrl.wi	v9, v9, 0
 	vsetvli	zero, zero, e8, mf4, ta, ma
 	vnsrl.wi	v9, v9, 0
-	vadd.vv	v9, v9, v8
+	vadd.vv	v9, v8, v9
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vzext.vf4	v8, v9
 	ret

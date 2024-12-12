@@ -1,9 +1,7 @@
 
-; 10 occurrences:
+; 8 occurrences:
 ; hermes/optimized/zip.c.ll
 ; libwebp/optimized/sharpyuv.c.ll
-; llvm/optimized/SelectionDAG.cpp.ll
-; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; minetest/optimized/clientenvironment.cpp.ll
@@ -28,7 +26,6 @@ entry:
 ; grpc/optimized/chttp2_transport.cc.ll
 ; grpc/optimized/promise_based_filter.cc.ll
 ; grpc/optimized/retry_filter_legacy_call_data.cc.ll
-; icu/optimized/smpdtfmt.ll
 ; icu/optimized/ucnv_lmb.ll
 ; libzmq/optimized/xpub.cpp.ll
 ; linux/optimized/xfrm_policy.ll
@@ -50,6 +47,7 @@ entry:
 ; llvm/optimized/IdentifierTable.cpp.ll
 ; llvm/optimized/InstrProfiling.cpp.ll
 ; llvm/optimized/LLVMTargetMachine.cpp.ll
+; llvm/optimized/MemCpyOptimizer.cpp.ll
 ; llvm/optimized/ModuleDependencyCollector.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/SafeStack.cpp.ll
@@ -109,6 +107,17 @@ entry:
 define i8 @func000000000000000a(i8 %0, i8 %1, i16 %2) #0 {
 entry:
   %3 = icmp sgt i16 %2, 7
+  %4 = select i1 %3, i8 %0, i8 %1
+  ret i8 %4
+}
+
+; 2 occurrences:
+; llvm/optimized/SelectionDAG.cpp.ll
+; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000014(i8 %0, i8 %1, i16 %2) #0 {
+entry:
+  %3 = icmp samesign ult i16 %2, 256
   %4 = select i1 %3, i8 %0, i8 %1
   ret i8 %4
 }

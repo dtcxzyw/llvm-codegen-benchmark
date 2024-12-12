@@ -1,4 +1,4 @@
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	li	a0, 2047
 	slli	a0, a0, 52
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -7,7 +7,7 @@ func0000000000000034:                   # @func0000000000000034
 	slli	a0, a0, 52
 	vmsltu.vx	v0, v8, a0
 	ret
-func0000000000000028:                   # @func0000000000000028
+func0000000000000058:                   # @func0000000000000058
 	li	a0, 2047
 	slli	a0, a0, 52
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -16,7 +16,7 @@ func0000000000000028:                   # @func0000000000000028
 	slli	a0, a0, 53
 	vmsgtu.vx	v0, v8, a0
 	ret
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	li	a0, 2047
 	slli	a0, a0, 52
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -25,7 +25,7 @@ func0000000000000021:                   # @func0000000000000021
 	slli	a0, a0, 53
 	vmseq.vx	v0, v8, a0
 	ret
-func0000000000000024:                   # @func0000000000000024
+func0000000000000054:                   # @func0000000000000054
 	li	a0, 2047
 	slli	a0, a0, 52
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -35,14 +35,14 @@ func0000000000000024:                   # @func0000000000000024
 	slli	a0, a0, 32
 	vmsltu.vx	v0, v8, a0
 	ret
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	li	a0, 2047
 	slli	a0, a0, 52
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v8, v8, a0
 	vmseq.vi	v0, v8, 0
 	ret
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	li	a0, 2047
 	slli	a0, a0, 52
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -51,7 +51,7 @@ func0000000000000038:                   # @func0000000000000038
 	slli	a0, a0, 53
 	vmsgtu.vx	v0, v8, a0
 	ret
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	bseti	a0, zero, 41
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v8, v8, a0

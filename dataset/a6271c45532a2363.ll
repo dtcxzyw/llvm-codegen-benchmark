@@ -14,7 +14,7 @@
 define i1 @func0000000000000001(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i32
-  %4 = icmp eq i32 %3, %1
+  %4 = icmp eq i32 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -26,7 +26,7 @@ entry:
 define i1 @func000000000000000a(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i32
-  %4 = icmp slt i32 %3, %1
+  %4 = icmp sgt i32 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -40,7 +40,18 @@ entry:
 define i1 @func000000000000000c(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i32
-  %4 = icmp ne i32 %3, %1
+  %4 = icmp ne i32 %1, %3
+  %5 = select i1 %4, i1 %0, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
+; boost/optimized/xml_grammar.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000007(i1 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = sext i8 %2 to i32
+  %4 = icmp sle i32 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }

@@ -4,6 +4,12 @@ func0000000000000010:                   # @func0000000000000010
 	cmovneq	%rsi, %rax
 	leaq	64(%rdi,%rax), %rax
 	retq
+func0000000000000011:                   # @func0000000000000011
+	xorl	%eax, %eax
+	testl	%edx, %edx
+	cmovneq	%rdi, %rax
+	leaq	1(%rsi,%rax), %rax
+	retq
 func0000000000000040:                   # @func0000000000000040
 	cmpl	$5, %edx
 	movl	$4, %eax

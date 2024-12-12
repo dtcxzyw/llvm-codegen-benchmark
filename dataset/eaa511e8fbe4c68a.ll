@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 28 occurrences:
 ; arrow/optimized/bignum.cc.ll
 ; clamav/optimized/matcher-ac.c.ll
 ; darktable/optimized/IiqDecoder.cpp.ll
@@ -12,6 +12,9 @@
 ; linux/optimized/intel_dp.ll
 ; linux/optimized/intel_pmdemand.ll
 ; linux/optimized/intel_sdvo.ll
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
+; lvgl/optimized/lv_font.ll
 ; minetest/optimized/reflowscan.cpp.ll
 ; openjdk/optimized/jvmtiClassFileReconstituter.ll
 ; openssl/optimized/padlock-dso-e_padlock.ll
@@ -23,6 +26,8 @@
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-lldp.c.ll
 ; wireshark/optimized/packet-vrt.c.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i32 %0) #0 {
 entry:
@@ -31,14 +36,19 @@ entry:
   ret i16 %2
 }
 
-; 35 occurrences:
+; 40 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; freetype/optimized/bdf.c.ll
 ; freetype/optimized/pcf.c.ll
 ; icu/optimized/calendar.ll
 ; icu/optimized/normalizer2impl.ll
 ; icu/optimized/ucnvisci.ll
 ; linux/optimized/icl_dsi.ll
-; linux/optimized/intel_dkl_phy.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/client.cpp.ll
 ; minetest/optimized/clientiface.cpp.ll

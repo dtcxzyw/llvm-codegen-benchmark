@@ -1,12 +1,11 @@
 
-; 19 occurrences:
+; 18 occurrences:
 ; clap-rs/optimized/48fdpr2dy8inq5cq.ll
 ; cmake/optimized/cmFileCopier.cxx.ll
 ; freetype/optimized/ftbase.c.ll
 ; freetype/optimized/type1.c.ll
 ; freetype/optimized/type1cid.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; libevent/optimized/poll.c.ll
 ; llvm/optimized/InstCombineSimplifyDemanded.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
 ; openjdk/optimized/classPrinter.ll

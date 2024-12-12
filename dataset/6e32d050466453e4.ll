@@ -1,5 +1,5 @@
 
-; 308 occurrences:
+; 307 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcDsd.c.ll
@@ -185,6 +185,7 @@
 ; luau/optimized/Transpiler.cpp.ll
 ; luau/optimized/ltable.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_manipulators.cpp.ll
@@ -258,7 +259,6 @@
 ; openvdb/optimized/RayTracer.cc.ll
 ; openvdb/optimized/VolumeAdvect.cc.ll
 ; pbrt-v4/optimized/ArHosekSkyModel.c.ll
-; pbrt-v4/optimized/cameras.cpp.ll
 ; php/optimized/php_date.ll
 ; php/optimized/timelib.ll
 ; php/optimized/zend_strtod.ll
@@ -267,7 +267,6 @@
 ; postgres/optimized/interval.ll
 ; postgres/optimized/planner.ll
 ; proj/optimized/grids.cpp.ll
-; proj/optimized/io.cpp.ll
 ; proj/optimized/proj_json_streaming_writer.cpp.ll
 ; quantlib/optimized/cashflows.ll
 ; quantlib/optimized/knuthuniformrng.ll

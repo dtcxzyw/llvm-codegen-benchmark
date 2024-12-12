@@ -1,4 +1,4 @@
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	movabsq	$-7817130112363805961, %rax     # imm = 0x9383F994698BC2F7
 	xorq	%rdx, %rax
 	movabsq	$4644845956201273805, %rcx      # imm = 0x4075CEC9A7C959CD
@@ -9,7 +9,7 @@ func0000000000000022:                   # @func0000000000000022
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000182:                   # @func0000000000000182
+func0000000000000302:                   # @func0000000000000302
 	movabsq	$-7817130112363805961, %rax     # imm = 0x9383F994698BC2F7
 	xorq	%rdx, %rax
 	movabsq	$4644845956201273805, %rcx      # imm = 0x4075CEC9A7C959CD
@@ -20,7 +20,7 @@ func0000000000000182:                   # @func0000000000000182
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000058:                   # @func0000000000000058
 	testq	%rdx, %rdx
 	sete	%cl
 	movabsq	$402707733310306022, %rax       # imm = 0x596B48CC04376E6

@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 18 occurrences:
 ; diesel-rs/optimized/ivb4nc5xs1gnmkx.ll
 ; image-rs/optimized/5oy2v8fghrh79s8.ll
 ; logos-rs/optimized/3ih0g5a6fbccjl2z.ll
@@ -14,11 +14,15 @@
 ; typst-rs/optimized/42n69x09j7wzwnay.ll
 ; typst-rs/optimized/4p30esqzpn2o5olu.ll
 ; wasmtime-rs/optimized/1y39e8j6qsvzx17r.ll
+; zed-rs/optimized/3bwpnkngp0v942xuk5tod4bfe.ll
+; zed-rs/optimized/8429boafm438obcc9d542xswj.ll
+; zed-rs/optimized/dbzdlmbe9tm616os1ebjr005g.ll
+; zed-rs/optimized/el2ujbjp7xo4qjt47dh50oqat.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %1
-  %4 = and i64 %3, %2
+  %4 = and i64 %2, %3
   %5 = add i64 %4, %0
   %6 = and i64 %5, %3
   %7 = icmp eq i64 %6, 0

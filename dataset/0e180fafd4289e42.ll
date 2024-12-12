@@ -15,8 +15,7 @@ entry:
   ret i32 %6
 }
 
-; 2 occurrences:
-; linux/optimized/gso.ll
+; 1 occurrences:
 ; openjdk/optimized/method.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000015(i32 %0, i32 %1, i16 %2) #0 {

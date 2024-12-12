@@ -20,9 +20,9 @@
 	.short	6                               # 0x6
 .LCPI0_3:
 	.short	6                               # 0x6
-func00000000000000f4:                   # @func00000000000000f4
+func00000000000001f4:                   # @func00000000000001f4
 	vpandd	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0
 	vpmulhuw	.LCPI0_1(%rip), %xmm0, %xmm1    # [9363,9363,9363,9363,9363,9363,9363,9363]
 	vpsubw	%xmm1, %xmm0, %xmm2

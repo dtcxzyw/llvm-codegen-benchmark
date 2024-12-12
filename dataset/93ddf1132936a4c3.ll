@@ -1,11 +1,10 @@
 
-; 55 occurrences:
+; 54 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
+; boost/optimized/static_string.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; hermes/optimized/IR.cpp.ll
 ; hermes/optimized/Instrs.cpp.ll
-; hermes/optimized/Number.cpp.ll
-; hermes/optimized/Operations.cpp.ll
 ; hermes/optimized/Process.cpp.ll
 ; hermes/optimized/Runtime.cpp.ll
 ; hyperscan/optimized/rose_build_lookaround.cpp.ll
@@ -59,6 +58,19 @@
 define i64 @func00000000000000a0(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %4 = getelementptr nusw i8, ptr %3, i64 -1
+  %5 = ptrtoint ptr %4 to i64
+  %.neg = sub i64 %0, %5
+  ret i64 %.neg
+}
+
+; 2 occurrences:
+; hermes/optimized/Number.cpp.ll
+; hermes/optimized/Operations.cpp.ll
+; Function Attrs: nounwind
+define i64 @func00000000000000e0(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -1
   %5 = ptrtoint ptr %4 to i64
   %.neg = sub i64 %0, %5

@@ -58,7 +58,7 @@ entry:
   ret i32 %3
 }
 
-; 33 occurrences:
+; 36 occurrences:
 ; darktable/optimized/introspection_temperature.c.ll
 ; flac/optimized/decode.c.ll
 ; freetype/optimized/sdf.c.ll
@@ -71,6 +71,9 @@ entry:
 ; libwebp/optimized/rescaler.c.ll
 ; libwebp/optimized/rescaler_sse2.c.ll
 ; llvm/optimized/CGVTT.cpp.ll
+; lvgl/optimized/lv_bar.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_tabview.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/KAZEFeatures.cpp.ll
 ; opencv/optimized/datastructs.cpp.ll

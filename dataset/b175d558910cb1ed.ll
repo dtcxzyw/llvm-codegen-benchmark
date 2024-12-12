@@ -1,5 +1,5 @@
 
-; 136 occurrences:
+; 135 occurrences:
 ; abc/optimized/cuddInteract.c.ll
 ; abc/optimized/cuddTable.c.ll
 ; abc/optimized/fraigNode.c.ll
@@ -78,7 +78,6 @@
 ; llvm/optimized/VPlanTransforms.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; oniguruma/optimized/regparse.ll
-; openblas/optimized/dlasq6.c.ll
 ; opencv/optimized/brisk.cpp.ll
 ; opencv/optimized/convolution.cpp.ll
 ; opencv/optimized/dpm_cascade.cpp.ll
@@ -162,7 +161,7 @@ entry:
   ret i32 %3
 }
 
-; 72 occurrences:
+; 73 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/FxchMan.c.ll
@@ -194,7 +193,6 @@ entry:
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/ifTruth.c.ll
 ; abc/optimized/mioUtils.c.ll
-; abc/optimized/sbdCnf.c.ll
 ; abc/optimized/sbdCut.c.ll
 ; abc/optimized/sfmCnf.c.ll
 ; abc/optimized/sfmDec.c.ll
@@ -202,6 +200,8 @@ entry:
 ; abc/optimized/wlcMem.c.ll
 ; abc/optimized/wlcReadSmt.c.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; freetype/optimized/sfnt.c.ll
 ; icu/optimized/uset.ll
@@ -274,58 +274,7 @@ entry:
   ret i32 %3
 }
 
-; 42 occurrences:
-; abc/optimized/giaSimBase.c.ll
-; abc/optimized/inftrees.c.ll
-; abc/optimized/ioaWriteAig.c.ll
-; abc/optimized/saigSwitch.c.ll
-; c3c/optimized/llvm_codegen_expr.c.ll
-; clamav/optimized/inflate64.c.ll
-; cmake/optimized/inftrees.c.ll
-; gromacs/optimized/dlasq2.cpp.ll
-; gromacs/optimized/dlasq3.cpp.ll
-; gromacs/optimized/dlasq5.cpp.ll
-; gromacs/optimized/dlasq6.cpp.ll
-; gromacs/optimized/inftrees.c.ll
-; gromacs/optimized/slasq2.cpp.ll
-; gromacs/optimized/slasq3.cpp.ll
-; gromacs/optimized/slasq5.cpp.ll
-; gromacs/optimized/slasq6.cpp.ll
-; libquic/optimized/inftrees.c.ll
-; libwebp/optimized/frame_dec.c.ll
-; libwebp/optimized/huffman_utils.c.ll
-; libwebp/optimized/quant_levels_dec_utils.c.ll
-; llvm/optimized/X86FrameLowering.cpp.ll
-; openblas/optimized/dlasq2.c.ll
-; openblas/optimized/dlasq5.c.ll
-; openblas/optimized/dsptrf.c.ll
-; opencv/optimized/abs_decoder.cpp.ll
-; opencv/optimized/kalman_filter_no_opencv.cpp.ll
-; openjdk/optimized/ProcessPath.ll
-; openjdk/optimized/jidctint.ll
-; openjdk/optimized/jidctred.ll
-; openmpi/optimized/coll_base_allgather.ll
-; openmpi/optimized/coll_base_allgatherv.ll
-; openssl/optimized/libcrypto-lib-deterministic_nonce.ll
-; openssl/optimized/libcrypto-shlib-deterministic_nonce.ll
-; zfp/optimized/decode1f.c.ll
-; zfp/optimized/decode1i.c.ll
-; zfp/optimized/decode2f.c.ll
-; zfp/optimized/decode2i.c.ll
-; zfp/optimized/decode3f.c.ll
-; zfp/optimized/decode3i.c.ll
-; zfp/optimized/decode4f.c.ll
-; zfp/optimized/decode4i.c.ll
-; zlib/optimized/inftrees.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl i32 %1, 3
-  %3 = sub nsw i32 %2, %0
-  ret i32 %3
-}
-
-; 54 occurrences:
+; 52 occurrences:
 ; abc/optimized/aigRepr.c.ll
 ; abc/optimized/cecSim.c.ll
 ; abc/optimized/dauCanon.c.ll
@@ -372,10 +321,8 @@ entry:
 ; openjdk/optimized/vectornode.ll
 ; openssl/optimized/libcrypto-lib-bn_exp.ll
 ; openssl/optimized/libcrypto-lib-bn_mul.ll
-; openssl/optimized/libcrypto-lib-deterministic_nonce.ll
 ; openssl/optimized/libcrypto-shlib-bn_exp.ll
 ; openssl/optimized/libcrypto-shlib-bn_mul.ll
-; openssl/optimized/libcrypto-shlib-deterministic_nonce.ll
 ; redis/optimized/lolwut5.ll
 ; stb/optimized/stb_image.c.ll
 ; wolfssl/optimized/sp_int.c.ll
@@ -383,7 +330,55 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl nsw i32 %1, 3
+  %2 = shl nsw i32 %1, 1
+  %3 = sub nsw i32 %2, %0
+  ret i32 %3
+}
+
+; 39 occurrences:
+; abc/optimized/giaSimBase.c.ll
+; abc/optimized/inftrees.c.ll
+; abc/optimized/ioaWriteAig.c.ll
+; abc/optimized/saigSwitch.c.ll
+; c3c/optimized/llvm_codegen_expr.c.ll
+; clamav/optimized/inflate64.c.ll
+; cmake/optimized/inftrees.c.ll
+; gromacs/optimized/dlasq2.cpp.ll
+; gromacs/optimized/dlasq3.cpp.ll
+; gromacs/optimized/dlasq5.cpp.ll
+; gromacs/optimized/dlasq6.cpp.ll
+; gromacs/optimized/inftrees.c.ll
+; gromacs/optimized/slasq2.cpp.ll
+; gromacs/optimized/slasq3.cpp.ll
+; gromacs/optimized/slasq6.cpp.ll
+; libquic/optimized/inftrees.c.ll
+; libwebp/optimized/frame_dec.c.ll
+; libwebp/optimized/huffman_utils.c.ll
+; libwebp/optimized/quant_levels_dec_utils.c.ll
+; llvm/optimized/X86FrameLowering.cpp.ll
+; openblas/optimized/dlasq2.c.ll
+; openblas/optimized/dlasq5.c.ll
+; openblas/optimized/dsptrf.c.ll
+; opencv/optimized/abs_decoder.cpp.ll
+; opencv/optimized/kalman_filter_no_opencv.cpp.ll
+; openjdk/optimized/ProcessPath.ll
+; openjdk/optimized/jidctint.ll
+; openjdk/optimized/jidctred.ll
+; openmpi/optimized/coll_base_allgather.ll
+; openmpi/optimized/coll_base_allgatherv.ll
+; zfp/optimized/decode1f.c.ll
+; zfp/optimized/decode1i.c.ll
+; zfp/optimized/decode2f.c.ll
+; zfp/optimized/decode2i.c.ll
+; zfp/optimized/decode3f.c.ll
+; zfp/optimized/decode3i.c.ll
+; zfp/optimized/decode4f.c.ll
+; zfp/optimized/decode4i.c.ll
+; zlib/optimized/inftrees.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 13
   %3 = sub nsw i32 %2, %0
   ret i32 %3
 }

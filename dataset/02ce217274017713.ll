@@ -17,7 +17,7 @@ entry:
   ret i64 %3
 }
 
-; 42 occurrences:
+; 43 occurrences:
 ; casadi/optimized/cs_amd.c.ll
 ; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
 ; ceres/optimized/eigensparse.cc.ll
@@ -55,6 +55,7 @@ entry:
 ; openmpi/optimized/fbtl_posix_pwritev.ll
 ; openmpi/optimized/io_ompio.ll
 ; openusd/optimized/restoration.c.ll
+; postgres/optimized/execExpr.ll
 ; raylib/optimized/raudio.c.ll
 ; recastnavigation/optimized/CrowdTool.cpp.ll
 ; recastnavigation/optimized/DetourCrowd.cpp.ll

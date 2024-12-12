@@ -1,16 +1,16 @@
-func00000000000001a1:                   # @func00000000000001a1
+func0000000000000361:                   # @func0000000000000361
 	testl	%edx, %edx
 	sets	%cl
 	addq	$24, %rsi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	sete	%al
 	orb	%cl, %al
 	retq
-func00000000000001ac:                   # @func00000000000001ac
+func000000000000036c:                   # @func000000000000036c
 	testl	%edx, %edx
 	setns	%cl
 	addq	$8, %rsi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	setne	%al
 	andb	%cl, %al
 	retq

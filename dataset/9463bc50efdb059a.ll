@@ -1,5 +1,5 @@
 
-; 42 occurrences:
+; 76 occurrences:
 ; abseil-cpp/optimized/marshalling.cc.ll
 ; assimp/optimized/AMFImporter_Material.cpp.ll
 ; assimp/optimized/ColladaParser.cpp.ll
@@ -11,6 +11,40 @@
 ; assimp/optimized/X3DImporter_Group.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
 ; assimp/optimized/XmlSerializer.cpp.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/copy_segment_point.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/difference_pl_pl.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/get_ring.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/intersection_pl_pl.ll
+; boost/optimized/partition.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/union_pl_pl.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
+; boost/optimized/write_dsv.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; hermes/optimized/APInt.cpp.ll
 ; jsonnet/optimized/vm.cpp.ll
@@ -43,13 +77,13 @@
 ; xgboost/optimized/tree_model.cc.ll
 ; xgboost/optimized/updater_colmaker.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000112(ptr %0, i8 %1) #0 {
+define ptr @func0000000000000213(ptr %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 43
   %3 = icmp eq i8 %1, 45
   %4 = or i1 %3, %2
   %5 = zext i1 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -69,7 +103,7 @@ entry:
 ; xgboost/optimized/tree_model.cc.ll
 ; xgboost/optimized/updater_colmaker.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000110(ptr %0, i8 %1) #0 {
+define ptr @func0000000000000210(ptr %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 45
   %3 = icmp eq i8 %1, 43

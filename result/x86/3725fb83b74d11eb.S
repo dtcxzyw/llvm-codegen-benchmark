@@ -1,11 +1,11 @@
-func00000000000000e0:                   # @func00000000000000e0
+func00000000000001a0:                   # @func00000000000001a0
 	leaq	(%rdi,%rsi), %rcx
 	xorl	%eax, %eax
 	cmpq	$65, %rcx
 	leaq	-64(%rdi,%rsi), %rcx
 	cmovaeq	%rcx, %rax
 	retq
-func00000000000003e1:                   # @func00000000000003e1
+func00000000000007e1:                   # @func00000000000007e1
 	leaq	(%rdi,%rsi), %rcx
 	xorl	%eax, %eax
 	cmpq	$65, %rcx

@@ -11,7 +11,7 @@
 ; luajit/optimized/lj_cparse_dyn.ll
 ; ruby/optimized/file.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 4
   %3 = icmp eq i32 %2, 0
@@ -20,15 +20,16 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; linux/optimized/pt.ll
+; wireshark/optimized/packet-giop.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 2
-  %3 = icmp eq i32 %2, 0
-  %4 = or i32 %0, 48
-  %5 = select i1 %3, i32 52, i32 %4
+  %2 = and i32 %1, 3
+  %3 = icmp eq i32 %2, 3
+  %4 = or i32 %0, -4
+  %5 = select i1 %3, i32 0, i32 %4
   ret i32 %5
 }
 

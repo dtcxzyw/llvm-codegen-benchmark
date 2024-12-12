@@ -1,4 +1,4 @@
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	testb	$1, %dil
 	cmovel	%edx, %esi
 	shll	$4, %edi
@@ -7,7 +7,7 @@ func0000000000000014:                   # @func0000000000000014
 	cmpl	$16777216, %esi                 # imm = 0x1000000
 	cmovael	%edi, %eax
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	testb	$1, %dil
 	cmovel	%edx, %esi
 	shll	$4, %edi

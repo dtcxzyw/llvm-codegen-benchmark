@@ -1,5 +1,7 @@
 
-; 79 occurrences:
+; 81 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/intersection_box.ll
 ; bullet3/optimized/btDeformableMultiBodyDynamicsWorld.ll
 ; darktable/optimized/introspection_clipping.c.ll
 ; darktable/optimized/introspection_grain.c.ll
@@ -84,7 +86,7 @@ define double @func0000000000000000(double %0, float %1, float %2) #0 {
 entry:
   %3 = fsub float %1, %2
   %4 = fpext float %3 to double
-  %5 = fmul double %4, %0
+  %5 = fmul double %0, %4
   ret double %5
 }
 

@@ -1,11 +1,6 @@
 
-; 10 occurrences:
-; duckdb/optimized/ub_duckdb_bind_expression.cpp.ll
-; duckdb/optimized/ub_duckdb_operator_csv_sniffer.cpp.ll
+; 5 occurrences:
 ; linux/optimized/locks.ll
-; linux/optimized/nexthop.ll
-; linux/optimized/sta_info.ll
-; openjdk/optimized/attachListener.ll
 ; openjdk/optimized/c1_LIRAssembler_x86.ll
 ; openmpi/optimized/opal_info_support.ll
 ; openssl/optimized/libcrypto-lib-set_key.ll

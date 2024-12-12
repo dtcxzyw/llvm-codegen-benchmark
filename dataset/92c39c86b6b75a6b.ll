@@ -1,5 +1,5 @@
 
-; 70 occurrences:
+; 68 occurrences:
 ; abc/optimized/acecPo.c.ll
 ; abc/optimized/acecPolyn.c.ll
 ; abc/optimized/ivyDsd.c.ll
@@ -15,7 +15,6 @@
 ; icu/optimized/uarrsort.ll
 ; imgui/optimized/imgui.cpp.ll
 ; jq/optimized/decNumber.ll
-; libwebp/optimized/sharpyuv.c.ll
 ; linux/optimized/cls_api.ll
 ; linux/optimized/esp6.ll
 ; linux/optimized/filter.ll
@@ -52,7 +51,6 @@
 ; openusd/optimized/stbImage.cpp.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
 ; postgres/optimized/gistproc.ll
-; qemu/optimized/hw_net_pcnet.c.ll
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; redis/optimized/print.ll

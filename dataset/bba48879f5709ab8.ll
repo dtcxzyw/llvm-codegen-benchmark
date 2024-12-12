@@ -1,5 +1,5 @@
 
-; 170 occurrences:
+; 176 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/absRef.c.ll
@@ -10,14 +10,10 @@
 ; abc/optimized/cecChoice.c.ll
 ; abc/optimized/cecCore.c.ll
 ; abc/optimized/cecCorr.c.ll
-; abc/optimized/cecMan.c.ll
 ; abc/optimized/cecSat.c.ll
 ; abc/optimized/cecSatG.c.ll
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
-; abc/optimized/cswMan.c.ll
-; abc/optimized/darMan.c.ll
-; abc/optimized/dchMan.c.ll
 ; abc/optimized/giaCSat.c.ll
 ; abc/optimized/giaCSat2.c.ll
 ; abc/optimized/giaCSat3.c.ll
@@ -52,6 +48,18 @@
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
 ; arrow/optimized/tdigest.cc.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; casadi/optimized/fmu2.cpp.ll
 ; casadi/optimized/qrsqp.cpp.ll
@@ -72,7 +80,6 @@
 ; gromacs/optimized/colvarbias_abf.cpp.ll
 ; gromacs/optimized/colvarcomp_coordnums.cpp.ll
 ; gromacs/optimized/dispersioncorrection.cpp.ll
-; gromacs/optimized/dlagtf.cpp.ll
 ; gromacs/optimized/gmx_sham.cpp.ll
 ; gromacs/optimized/readir.cpp.ll
 ; grpc/optimized/periodic_update.cc.ll
@@ -83,7 +90,6 @@
 ; image-rs/optimized/1clnprdgqfw2q9lq.ll
 ; ipopt/optimized/IpLoqoMuOracle.ll
 ; ipopt/optimized/IpPiecewisePenalty.ll
-; libjpeg-turbo/optimized/rdppm.c.ll
 ; lightgbm/optimized/objective_function.cpp.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; llvm/optimized/ImportedFunctionsInliningStatistics.cpp.ll

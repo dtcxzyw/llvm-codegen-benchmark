@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 19 occurrences:
 ; abseil-cpp/optimized/int128_test.cc.ll
 ; abseil-cpp/optimized/marshalling_test.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
@@ -16,6 +16,7 @@
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/range.ll
 ; ruby/optimized/util.ll
+; sqlite/optimized/sqlite3.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
 ; wasmedge/optimized/engine.cpp.ll
 ; Function Attrs: nounwind

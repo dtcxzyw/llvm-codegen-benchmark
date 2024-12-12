@@ -1,5 +1,5 @@
 
-; 66 occurrences:
+; 68 occurrences:
 ; abc/optimized/exorList.c.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; clamav/optimized/dlp.c.ll
@@ -17,6 +17,8 @@
 ; linux/optimized/intel_bios.ll
 ; linux/optimized/intel_sdvo.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nanosvg/optimized/nanosvg.ll
 ; nori/optimized/bitmap.cpp.ll
@@ -70,11 +72,12 @@
 define i16 @func0000000000000003(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i16
-  %3 = add nuw nsw i16 %2, %0
+  %3 = add nuw nsw i16 %0, %2
   ret i16 %3
 }
 
-; 14 occurrences:
+; 15 occurrences:
+; boost/optimized/port_rule.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; hyperscan/optimized/shengcompile.cpp.ll
 ; icu/optimized/unames.ll
@@ -93,16 +96,15 @@ entry:
 define i16 @func0000000000000004(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i16
-  %3 = add i16 %2, %0
+  %3 = add i16 %0, %2
   ret i16 %3
 }
 
-; 57 occurrences:
+; 55 occurrences:
 ; abc/optimized/compress.c.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_numeric.cc.ll
 ; arrow/optimized/uri.cc.ll
-; clamav/optimized/crc.cpp.ll
 ; cmake/optimized/archive_ppmd8.c.ll
 ; coremark/optimized/core_main.c.ll
 ; coreutils-rs/optimized/4o7j3eorsq1l9mcp.ll
@@ -119,10 +121,8 @@ entry:
 ; linux/optimized/intel_tv.ll
 ; linux/optimized/ip_sockglue.ll
 ; linux/optimized/nf_conntrack_ftp.ll
-; linux/optimized/nvram.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
 ; linux/optimized/rscalc.ll
-; linux/optimized/rsmisc.ll
 ; linux/optimized/virtio_net.ll
 ; linux/optimized/vsprintf.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
@@ -133,7 +133,6 @@ entry:
 ; openusd/optimized/scale_common.c.ll
 ; postgres/optimized/auth.ll
 ; qemu/optimized/hw_net_pcnet.c.ll
-; qemu/optimized/monitor_hmp-cmds.c.ll
 ; qemu/optimized/net_colo-compare.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; raylib/optimized/raudio.c.ll
@@ -155,15 +154,17 @@ entry:
 ; wireshark/optimized/packet-rdm.c.ll
 ; wireshark/optimized/packet-wsmp.c.ll
 ; wolfssl/optimized/tls.c.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i16
-  %3 = add i16 %2, %0
+  %3 = add i16 %0, %2
   ret i16 %3
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_numeric.cc.ll
 ; arrow/optimized/scalar_cast_temporal.cc.ll
@@ -171,6 +172,7 @@ entry:
 ; arrow/optimized/value_parsing.cc.ll
 ; icu/optimized/unames.ll
 ; linux/optimized/intel_sdvo.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; proxygen/optimized/HTTP2Framer.cpp.ll
 ; qemu/optimized/hw_net_virtio-net.c.ll
 ; wireshark/optimized/packet-e212.c.ll
@@ -180,18 +182,19 @@ entry:
 define i16 @func0000000000000007(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i16
-  %3 = add nuw nsw i16 %2, %0
+  %3 = add nuw nsw i16 %0, %2
   ret i16 %3
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/init_from_settings.ll
 ; softposit-rs/optimized/3yl6353p3hwrtv6y.ll
 ; yosys/optimized/BigUnsignedInABase.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000005(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i16
-  %3 = add nsw i16 %2, %0
+  %3 = add nsw i16 %0, %2
   ret i16 %3
 }
 
@@ -202,7 +205,7 @@ entry:
 define i16 @func0000000000000002(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i16
-  %3 = add nuw i16 %2, %0
+  %3 = add nuw i16 %0, %2
   ret i16 %3
 }
 
@@ -215,7 +218,7 @@ entry:
 define i16 @func0000000000000001(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i16
-  %3 = add nsw i16 %2, %0
+  %3 = add nsw i16 %0, %2
   ret i16 %3
 }
 
@@ -226,7 +229,7 @@ entry:
 define i16 @func0000000000000006(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i16
-  %3 = add nuw i16 %2, %0
+  %3 = add nuw i16 %0, %2
   ret i16 %3
 }
 

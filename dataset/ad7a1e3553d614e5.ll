@@ -5,7 +5,7 @@
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000071(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000e1(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1
   %3 = sub nuw nsw i32 32, %0
@@ -35,7 +35,7 @@ entry:
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, -8
   %3 = sub nuw nsw i32 32, %0
@@ -46,7 +46,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/stbImage.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000054(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000a4(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 3
   %3 = icmp ult i32 %2, 7
@@ -59,7 +59,7 @@ entry:
 ; hyperscan/optimized/repeatcompile.cpp.ll
 ; postgres/optimized/hashutil.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000064(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = icmp ult i32 %2, 2

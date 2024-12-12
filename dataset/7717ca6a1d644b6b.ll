@@ -1,5 +1,5 @@
 
-; 405 occurrences:
+; 406 occurrences:
 ; abc/optimized/acecPool.c.ll
 ; abc/optimized/giaBalAig.c.ll
 ; abc/optimized/giaFx.c.ll
@@ -21,6 +21,10 @@
 ; arrow/optimized/concatenate.cc.ll
 ; arrow/optimized/io_util.cc.ll
 ; arrow/optimized/list_util.cc.ll
+; boost/optimized/benchmark_fstream.ll
+; boost/optimized/file_test_helpers.ll
+; boost/optimized/partition.ll
+; boost/optimized/topology.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_2.cc.ll
@@ -77,7 +81,6 @@
 ; faiss/optimized/index_factory.cpp.ll
 ; flac/optimized/fixed.c.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; flac/optimized/stream_encoder.c.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -235,9 +238,7 @@
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/names.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
@@ -400,10 +401,10 @@
 ; yalantinglibs/optimized/client_pools.cpp.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/opt_share.ll
 ; yosys/optimized/qbfsat.ll
 ; z3/optimized/mpz.cpp.ll
+; zed-rs/optimized/2nwrl7qhv6ci6obqg1itckcv6.ll
 ; zxing/optimized/Content.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0, i32 %1) #0 {

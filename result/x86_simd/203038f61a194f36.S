@@ -4,7 +4,7 @@
 	.quad	-9223372036854775808            # 0x8000000000000000
 .LCPI0_2:
 	.quad	-8                              # 0xfffffffffffffff8
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0

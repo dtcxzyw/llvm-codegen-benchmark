@@ -17,7 +17,7 @@
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
 ; wasmtime-rs/optimized/pc3lkwoxfkbj2dl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0) #0 {
+define i1 @func0000000000000104(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 2
   %2 = mul nuw i64 %1, 3
@@ -44,7 +44,7 @@ entry:
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
 ; wasmtime-rs/optimized/pc3lkwoxfkbj2dl.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i64 %0) #0 {
+define i1 @func0000000000000144(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 2
   %2 = mul nuw i64 %1, 3

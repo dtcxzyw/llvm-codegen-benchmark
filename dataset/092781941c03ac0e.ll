@@ -14,13 +14,13 @@
 ; verilator/optimized/V3CCtors.cpp.ll
 ; zstd/optimized/cover.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000021(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 -1, %2
   %4 = xor i64 %3, -1
   %5 = icmp eq i32 %1, 63
   %6 = select i1 %5, i64 -1, i64 %4
-  %7 = and i64 %6, %0
+  %7 = and i64 %0, %6
   ret i64 %7
 }
 
@@ -28,13 +28,13 @@ entry:
 ; openjdk/optimized/ad_x86.ll
 ; openjdk/optimized/os.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(i64 %0, i32 %1, i64 %2) #0 {
+define i64 @func000000000000002a(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 -1, %2
   %4 = xor i64 %3, -1
   %5 = icmp sgt i32 %1, 7
   %6 = select i1 %5, i64 -1, i64 %4
-  %7 = and i64 %6, %0
+  %7 = and i64 %0, %6
   ret i64 %7
 }
 
@@ -42,7 +42,7 @@ entry:
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000028(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 -1, %2
   %4 = xor i64 %3, -1

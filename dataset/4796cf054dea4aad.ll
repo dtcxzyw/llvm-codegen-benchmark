@@ -8,16 +8,15 @@
 define i16 @func000000000000000b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 56
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = and i32 %1, 4
   %6 = or i32 %4, %5
   %7 = trunc nuw nsw i32 %6 to i16
   ret i16 %7
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; libevent/optimized/poll.c.ll
-; libzmq/optimized/zmq.cpp.ll
 ; linux/optimized/drm_format_helper.ll
 ; linux/optimized/phy-c45.ll
 ; linux/optimized/phy_device.ll
@@ -35,7 +34,7 @@ entry:
 define i16 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 24
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = and i32 %1, 4
   %6 = or disjoint i32 %4, %5
   %7 = trunc nuw nsw i32 %6 to i16
@@ -55,7 +54,7 @@ entry:
 define i16 @func000000000000000e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2016
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = and i32 %1, 31
   %6 = or disjoint i32 %4, %5
   %7 = trunc nuw i32 %6 to i16

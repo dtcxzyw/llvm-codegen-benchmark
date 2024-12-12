@@ -1,10 +1,10 @@
 
 ; 3 occurrences:
 ; hermes/optimized/APFloat.cpp.ll
-; minetest/optimized/cavegen.cpp.ll
+; lvgl/optimized/lv_calendar.ll
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 1
   %3 = add nsw i32 %2, %0
@@ -12,8 +12,10 @@ entry:
   ret i1 %4
 }
 
-; 17 occurrences:
+; 19 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; cpython/optimized/_datetimemodule.ll
 ; delta-rs/optimized/1rw3q64nilk4jthd.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
@@ -31,10 +33,10 @@ entry:
 ; openusd/optimized/av1_inv_txfm2d.c.ll
 ; openusd/optimized/grain_synthesis.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 16
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = icmp slt i32 %3, 32618
   ret i1 %4
 }
@@ -42,15 +44,15 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/mapgen_v6.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000008a(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 16
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = icmp sgt i32 %3, -1
   ret i1 %4
 }
 
-; 32 occurrences:
+; 33 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/acbFunc.c.ll
@@ -76,6 +78,7 @@ entry:
 ; abc/optimized/wlcReadVer.c.ll
 ; luajit/optimized/lj_strscan.ll
 ; luajit/optimized/lj_strscan_dyn.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; openblas/optimized/dlasyf.c.ll
 ; opencv/optimized/fast_line_detector.cpp.ll
 ; opencv/optimized/rlof_localflow.cpp.ll
@@ -84,10 +87,10 @@ entry:
 ; openusd/optimized/convolve.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 15
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = icmp sgt i32 %3, 32767
   ret i1 %4
 }
@@ -98,7 +101,7 @@ entry:
 define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 31
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = icmp ugt i32 %3, 1
   ret i1 %4
 }
@@ -106,10 +109,10 @@ entry:
 ; 1 occurrences:
 ; fmt/optimized/xchar-test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 24
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = icmp eq i32 %3, -1
   ret i1 %4
 }
@@ -120,7 +123,7 @@ entry:
 define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 1
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = icmp ult i32 %3, 7
   ret i1 %4
 }
@@ -172,7 +175,7 @@ entry:
 ; luajit/optimized/lj_ir.ll
 ; luajit/optimized/lj_ir_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 5
   %3 = sub i32 0, %0
@@ -184,10 +187,10 @@ entry:
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; soc-simulator/optimized/sim_mycpu.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 16
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = icmp eq i32 %3, -1078992896
   ret i1 %4
 }
@@ -196,18 +199,18 @@ entry:
 ; cpython/optimized/_datetimemodule.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 31
   %3 = add nsw i32 %2, %0
-  %4 = icmp ugt i32 %3, 51
+  %4 = icmp samesign ugt i32 %3, 51
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a8(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 24
   %3 = add nsw i32 %2, %0
@@ -219,11 +222,33 @@ entry:
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a4(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 24
   %3 = add nsw i32 %2, %0
   %4 = icmp ult i32 %3, 25
+  ret i1 %4
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_transform.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
+entry:
+  %2 = ashr i32 %1, 8
+  %3 = add nsw i32 %2, %0
+  %4 = icmp samesign ult i32 %3, 256
+  ret i1 %4
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_mask.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000a(i32 %0, i32 %1) #0 {
+entry:
+  %2 = ashr i32 %1, 18
+  %3 = add i32 %2, %0
+  %4 = icmp sgt i32 %3, 0
   ret i1 %4
 }
 
@@ -232,10 +257,10 @@ entry:
 ; arrow/optimized/value_parsing.cc.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 16
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = icmp slt i32 %3, -51082
   ret i1 %4
 }

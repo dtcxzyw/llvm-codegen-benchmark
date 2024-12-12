@@ -1,14 +1,24 @@
 
-; 7 occurrences:
+; 1 occurrences:
+; ruby/optimized/stringio.ll
+; Function Attrs: nounwind
+define i1 @func000000000000010c(ptr %0, ptr %1, i8 %2) #0 {
+entry:
+  %3 = and i8 %2, 1
+  %4 = icmp ne i8 %3, 0
+  %5 = icmp ugt ptr %0, %1
+  %6 = select i1 %4, i1 %5, i1 false
+  ret i1 %6
+}
+
+; 5 occurrences:
 ; jq/optimized/utf16_be.ll
 ; jq/optimized/utf16_le.ll
 ; oniguruma/optimized/utf16_be.ll
 ; oniguruma/optimized/utf16_le.ll
 ; quickjs/optimized/quickjs.ll
-; ruby/optimized/utf_16be.ll
-; ruby/optimized/utf_16le.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000101(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, -4
   %4 = icmp eq i8 %3, -36
@@ -18,21 +28,9 @@ entry:
 }
 
 ; 1 occurrences:
-; ruby/optimized/stringio.ll
-; Function Attrs: nounwind
-define i1 @func000000000000008c(ptr %0, ptr %1, i8 %2) #0 {
-entry:
-  %3 = and i8 %2, 1
-  %4 = icmp ne i8 %3, 0
-  %5 = icmp ugt ptr %0, %1
-  %6 = select i1 %4, i1 %5, i1 false
-  ret i1 %6
-}
-
-; 1 occurrences:
 ; php/optimized/zend_optimizer.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func000000000000008c(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 2
   %4 = icmp ne i8 %3, 0
@@ -52,7 +50,7 @@ entry:
 ; yosys/optimized/rtlil.ll
 ; yosys/optimized/xilinx_dsp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000181(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, -2
   %4 = icmp eq i8 %3, 2
@@ -67,7 +65,7 @@ entry:
 ; llvm/optimized/DivRemPairs.cpp.ll
 ; llvm/optimized/LTO.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 1
   %4 = icmp eq i8 %3, 0
@@ -82,7 +80,7 @@ entry:
 ; llvm/optimized/ModuleMap.cpp.ll
 ; msgpack/optimized/asio_send_recv_zlib.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func000000000000002c(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 2
   %4 = icmp ne i8 %3, 0
@@ -94,7 +92,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CGRecordLayoutBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func000000000000018c(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 2
   %4 = icmp ne i8 %3, 0
@@ -107,7 +105,7 @@ entry:
 ; linux/optimized/fault.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000081(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 12
   %4 = icmp eq i8 %3, 4

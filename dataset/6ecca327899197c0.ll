@@ -1,5 +1,6 @@
 
-; 34 occurrences:
+; 35 occurrences:
+; boost/optimized/context.ll
 ; cmake/optimized/index.c.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; folly/optimized/NetOps.cpp.ll
@@ -74,7 +75,8 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; lvgl/optimized/lv_draw_sw_gradient.ll
 ; openjdk/optimized/dumpTimeClassInfo.ll
 ; postgres/optimized/slru.ll
 ; qemu/optimized/fdt_sw.c.ll
@@ -98,7 +100,7 @@ entry:
   %2 = add nuw i64 %1, 7
   %3 = and i64 %2, -8
   %4 = add nuw i64 %3, 24
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -118,8 +120,9 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; libquic/optimized/pickle.cc.ll
+; lvgl/optimized/lv_tlsf.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
@@ -162,7 +165,7 @@ entry:
   %2 = add i64 %1, 7
   %3 = and i64 %2, -8
   %4 = add nuw i64 %3, 64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 

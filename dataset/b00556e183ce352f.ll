@@ -4,7 +4,7 @@
 ; minetest/optimized/png.cpp.ll
 ; redis/optimized/listpack.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i1 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = add nsw i64 %2, -1073741825
@@ -21,7 +21,7 @@ entry:
 ; darktable/optimized/introspection_tonecurve.c.ll
 ; llvm/optimized/TransEmptyStatementsAndDealloc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i1 %0, i32 %1) #0 {
+define i1 @func00000000000000a4(i1 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = add nsw i64 %2, -257

@@ -1,5 +1,5 @@
 
-; 40 occurrences:
+; 39 occurrences:
 ; cvc5/optimized/sequences_rewriter.cpp.ll
 ; cvc5/optimized/unsat_core_manager.cpp.ll
 ; icu/optimized/ustring.ll
@@ -22,7 +22,6 @@
 ; llvm/optimized/PPMacroExpansion.cpp.ll
 ; llvm/optimized/ParseExpr.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/RemoveRedundantDebugValues.cpp.ll
@@ -41,7 +40,7 @@
 ; verilator/optimized/V3EmitCModel.cpp.ll
 ; verilator/optimized/V3Width.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i16 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000002c(i16 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
   %4 = icmp ne i16 %0, 0
@@ -63,7 +62,7 @@ entry:
 ; tls-rs/optimized/4klah4jfox7oqufu.ll
 ; tls-rs/optimized/4vvnrvl2eceao62c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000021(i16 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
   %4 = icmp eq i16 %0, 0
@@ -74,7 +73,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/pcre2_match.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i16 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000008c(i16 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ult ptr %1, %2
   %4 = icmp ne i16 %0, 0
@@ -82,12 +81,11 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
-; cmake/optimized/cmForEachCommand.cxx.ll
+; 2 occurrences:
 ; hermes/optimized/RegexParser.cpp.ll
 ; icu/optimized/utf16collationiterator.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i16 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000028(i16 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
   %4 = icmp ugt i16 %0, 51
@@ -98,7 +96,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/RegisterScavenging.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i16 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000181(i16 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %1, %2
   %4 = icmp eq i16 %0, 0
@@ -109,7 +107,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ucbuf.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i16 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000010c(i16 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ugt ptr %1, %2
   %4 = icmp ne i16 %0, 13

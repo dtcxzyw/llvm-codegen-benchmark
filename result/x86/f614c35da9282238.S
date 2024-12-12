@@ -1,14 +1,4 @@
-func0000000000000146:                   # @func0000000000000146
-	sarq	$3, %rdx
-	movabsq	$-6148914691236517205, %rax     # imm = 0xAAAAAAAAAAAAAAAB
-	imulq	%rdx, %rax
-	cmpq	%rsi, %rax
-	setb	%cl
-	testl	%edi, %edi
-	setle	%al
-	orb	%cl, %al
-	retq
-func0000000000000066:                   # @func0000000000000066
+func00000000000000c6:                   # @func00000000000000c6
 	leaq	1023(%rdx), %rax
 	testq	%rdx, %rdx
 	cmovnsq	%rdx, %rax

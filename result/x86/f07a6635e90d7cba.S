@@ -4,8 +4,8 @@ func000000000000000a:                   # @func000000000000000a
 	cltd
 	idivl	%ecx
 	movslq	%edx, %rax
-	cmpq	%rdi, %rax
-	setl	%al
+	cmpq	%rax, %rdi
+	setg	%al
 	retq
 func0000000000000006:                   # @func0000000000000006
 	movl	%edx, %ecx
@@ -13,8 +13,8 @@ func0000000000000006:                   # @func0000000000000006
 	cltd
 	idivl	%ecx
 	movslq	%edx, %rax
-	cmpq	%rdi, %rax
-	setg	%al
+	cmpq	%rax, %rdi
+	setl	%al
 	retq
 func0000000000000008:                   # @func0000000000000008
 	movl	%edx, %ecx
@@ -22,6 +22,6 @@ func0000000000000008:                   # @func0000000000000008
 	cltd
 	idivl	%ecx
 	movslq	%edx, %rax
-	cmpq	%rdi, %rax
-	setb	%al
+	cmpq	%rax, %rdi
+	seta	%al
 	retq

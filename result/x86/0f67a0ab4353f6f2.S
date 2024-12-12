@@ -23,7 +23,7 @@ func000000000000000c:                   # @func000000000000000c
 	addq	%rdi, %rax
 	setne	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	movq	%rdx, %rcx
 	movq	%rsi, %rax
 	xorl	%edx, %edx
@@ -32,7 +32,7 @@ func0000000000000028:                   # @func0000000000000028
 	cmpq	$456, %rax                      # imm = 0x1C8
 	setae	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	movq	%rdx, %rcx
 	movq	%rsi, %rax
 	xorl	%edx, %edx

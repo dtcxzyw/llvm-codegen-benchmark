@@ -64,9 +64,3 @@ func0000000000000018:                   # @func0000000000000018
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-func0000000000000020:                   # @func0000000000000020
-	vpaddd	%xmm1, %xmm1, %xmm1
-	vpmovqd	%ymm0, %xmm0
-	vpsubd	%xmm1, %xmm0, %xmm0
-	vzeroupper
-	retq

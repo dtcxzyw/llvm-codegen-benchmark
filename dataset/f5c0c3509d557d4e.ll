@@ -15,7 +15,7 @@ entry:
   ret i32 %5
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; bdwgc/optimized/cordprnt.c.ll
 ; cpython/optimized/formatter_unicode.ll
 ; git/optimized/clone.ll
@@ -26,6 +26,7 @@ entry:
 ; proj/optimized/geodesic.c.ll
 ; qemu/optimized/system_physmem.c.ll
 ; slurm/optimized/acct_policy.ll
+; wireshark/optimized/rtp_audio_routing.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:

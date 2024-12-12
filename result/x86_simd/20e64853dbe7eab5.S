@@ -31,10 +31,10 @@ func0000000000000003:                   # @func0000000000000003
 	vpmovsxdq	%xmm0, %ymm0
 	retq
 .LCPI5_0:
-	.long	8                               # 0x8
+	.long	16                              # 0x10
 func0000000000000005:                   # @func0000000000000005
-	vpslld	$3, %xmm0, %xmm0
-	vpbroadcastd	.LCPI5_0(%rip), %xmm1   # xmm1 = [8,8,8,8]
+	vpaddd	%xmm0, %xmm0, %xmm0
+	vpbroadcastd	.LCPI5_0(%rip), %xmm1   # xmm1 = [16,16,16,16]
 	vpsubd	%xmm0, %xmm1, %xmm0
 	vpmovsxdq	%xmm0, %ymm0
 	retq

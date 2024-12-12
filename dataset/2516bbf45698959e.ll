@@ -1,5 +1,5 @@
 
-; 40 occurrences:
+; 41 occurrences:
 ; icu/optimized/edits.ll
 ; linux/optimized/amd.ll
 ; linux/optimized/ehci-hcd.ll
@@ -13,7 +13,6 @@
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; ncnn/optimized/mat.cpp.ll
-; nuttx/optimized/sched_getscheduler.c.ll
 ; php/optimized/print.ll
 ; postgres/optimized/tuplesortvariants.ll
 ; stockfish/optimized/position.ll
@@ -40,6 +39,8 @@
 ; wireshark/optimized/packet-vcdu.c.ll
 ; wireshark/optimized/packet-wisun.c.ll
 ; wireshark/optimized/tvbuff_lznt1.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i16 %0) #0 {
 entry:

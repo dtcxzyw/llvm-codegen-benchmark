@@ -1,5 +1,5 @@
 
-; 45 occurrences:
+; 49 occurrences:
 ; c3c/optimized/llvm_codegen.c.ll
 ; c3c/optimized/parse_expr.c.ll
 ; clamav/optimized/htmlnorm.c.ll
@@ -42,9 +42,13 @@
 ; rocksdb/optimized/version_set.cc.ll
 ; sentencepiece/optimized/unigram_model.cc.ll
 ; slurm/optimized/select_linear.ll
+; tokenizers-rs/optimized/1w676x6x6lprwvn5.ll
 ; wireshark/optimized/blf.c.ll
 ; yosys/optimized/fmt.ll
 ; yosys/optimized/share.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0, i1 %1, i1 %2) #0 {
 entry:

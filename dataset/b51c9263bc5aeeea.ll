@@ -1,5 +1,5 @@
 
-%struct.aiFace.2711158 = type { i32, ptr }
+%struct.aiFace.2823748 = type { i32, ptr }
 
 ; 6 occurrences:
 ; assimp/optimized/B3DImporter.cpp.ll
@@ -9,11 +9,11 @@
 ; openusd/optimized/lz4.cpp.ll
 ; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = udiv i64 %1, 12
-  %3 = getelementptr nusw i8, ptr %0, i64 8
-  %4 = getelementptr nusw %struct.aiFace.2711158, ptr %3, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 8
+  %4 = getelementptr nusw nuw %struct.aiFace.2823748, ptr %3, i64 %2
   ret ptr %4
 }
 
@@ -21,11 +21,11 @@ entry:
 ; lz4/optimized/lz4hc.c.ll
 ; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = udiv i64 %1, 255
   %3 = getelementptr i8, ptr %0, i64 2
-  %4 = getelementptr nusw i8, ptr %3, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %2
   ret ptr %4
 }
 
@@ -45,10 +45,10 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/longobject.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000c(ptr %0, i64 %1) #0 {
 entry:
   %2 = udiv i64 %1, 30
-  %3 = getelementptr nusw i8, ptr %0, i64 24
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 24
   %4 = getelementptr i32, ptr %3, i64 %2
   ret ptr %4
 }

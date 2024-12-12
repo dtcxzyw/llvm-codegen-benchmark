@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; cmake/optimized/connect.c.ll
 ; cmake/optimized/urlapi.c.ll
@@ -10,6 +10,7 @@
 ; libevent/optimized/buffer.c.ll
 ; openjdk/optimized/c1_LIRGenerator.ll
 ; openjdk/optimized/reg_split.ll
+; postgres/optimized/dumputils.ll
 ; ruby/optimized/prism.ll
 ; wireshark/optimized/packet-communityid.c.ll
 ; Function Attrs: nounwind

@@ -5,11 +5,11 @@
 ; ockam-rs/optimized/1145kugil9dl94a2.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000198(i8 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i8
   %3 = add i8 %2, 1
-  %4 = icmp ult i8 %3, %0
+  %4 = icmp samesign ugt i8 %0, %3
   ret i1 %4
 }
 

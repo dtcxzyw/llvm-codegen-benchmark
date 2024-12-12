@@ -26,17 +26,4 @@ entry:
   ret i64 %6
 }
 
-; 1 occurrences:
-; lz4/optimized/lz4hc.c.ll
-; Function Attrs: nounwind
-define i64 @func00000000000000b0(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add nsw i64 %1, -529
-  %3 = udiv i64 %2, 510
-  %4 = shl nuw nsw i64 %3, 1
-  %5 = add i64 %0, 4
-  %6 = add i64 %5, %4
-  ret i64 %6
-}
-
 attributes #0 = { nounwind }

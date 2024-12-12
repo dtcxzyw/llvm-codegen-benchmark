@@ -5,10 +5,10 @@
 ; openssl/optimized/libssl-shlib-extensions_clnt.ll
 ; openssl/optimized/packettest-bin-packettest.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000034(i64 %0) #0 {
+define i64 @func0000000000000074(i64 %0) #0 {
 entry:
   %1 = sub nuw nsw i64 508, %0
-  %2 = icmp ult i64 %0, 508
+  %2 = icmp samesign ult i64 %0, 508
   %3 = select i1 %2, i64 %1, i64 1
   ret i64 %3
 }
@@ -25,12 +25,11 @@ entry:
   ret i64 %3
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; bullet3/optimized/btConvexHullComputer.ll
-; cpython/optimized/pystrtod.ll
 ; llvm/optimized/ConstantFolding.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0) #0 {
+define i64 @func0000000000000026(i64 %0) #0 {
 entry:
   %1 = sub nsw i64 0, %0
   %2 = icmp slt i64 %0, 0

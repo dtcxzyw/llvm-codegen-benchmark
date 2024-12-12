@@ -3,7 +3,7 @@
 ; hermes/optimized/APInt.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001ca(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000038a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 64, %2
   %4 = zext nneg i32 %3 to i64
@@ -16,7 +16,7 @@ entry:
 ; linux/optimized/mpage.ll
 ; linux/optimized/readpage.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000188(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 12, %2
   %4 = zext nneg i32 %3 to i64
@@ -29,7 +29,7 @@ entry:
 ; linux/optimized/mpage.ll
 ; linux/optimized/readpage.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000184(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 12, %2
   %4 = zext nneg i32 %3 to i64

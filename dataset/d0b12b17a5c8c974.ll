@@ -11,7 +11,7 @@ entry:
   %3 = sitofp i32 %2 to double
   %4 = fsub double %1, %3
   %5 = fcmp ogt double %4, 0x3FE0000035AFE535
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -42,7 +42,7 @@ entry:
 define i1 @func0000000000000010(i1 %0, double %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to double
-  %4 = fcmp oeq double %3, %1
+  %4 = fcmp oeq double %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }

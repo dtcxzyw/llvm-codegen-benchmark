@@ -9,7 +9,7 @@
 ; openusd/optimized/lz4.cpp.ll
 ; php/optimized/ftp_fopen_wrapper.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000024(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -3
   %4 = icmp ult i32 %3, 10
@@ -24,7 +24,7 @@ entry:
 ; llvm/optimized/InstrProf.cpp.ll
 ; llvm/optimized/RISCVAsmPrinter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
   %4 = icmp eq ptr %0, %1
@@ -32,14 +32,13 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; llvm/optimized/LoopNestAnalysis.cpp.ll
+; 1 occurrences:
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000114(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000424(ptr %0, ptr %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, -60
-  %4 = icmp ult i32 %3, -18
+  %3 = add nsw i32 %2, -3
+  %4 = icmp ult i32 %3, -2
   %5 = icmp eq ptr %0, %1
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -48,7 +47,7 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011c(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000042c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 1
   %4 = icmp eq ptr %0, %1

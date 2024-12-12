@@ -10,7 +10,7 @@ func0000000000000006:                   # @func0000000000000006
 func000000000000000a:                   # @func000000000000000a
 	fli.s	fa5, 16.0
 	fdiv.s	fa5, fa5, fa1
-	fmul.s	fa5, fa5, fa0
+	fmul.s	fa5, fa0, fa5
 	fli.s	fa4, 8.0
 	fle.s	a1, fa5, fa4
 	xori	a1, a1, 1

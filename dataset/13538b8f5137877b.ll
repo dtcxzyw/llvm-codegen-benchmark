@@ -1,9 +1,10 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; g2o/optimized/edge_project_stereo_xyz.cpp.ll
 ; g2o/optimized/edge_project_xyz.cpp.ll
 ; g2o/optimized/edge_project_xyz2uv.cpp.ll
 ; gromacs/optimized/colvarcomp_rotations.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; quantlib/optimized/bivariatestudenttdistribution.ll
 ; quantlib/optimized/creditriskplus.ll
 ; quantlib/optimized/garch.ll

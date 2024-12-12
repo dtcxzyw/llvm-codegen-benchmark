@@ -353,18 +353,6 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; openjdk/optimized/deoptimization.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ult i32 %2, 30
-  %not. = xor i1 %1, true
-  %4 = select i1 %not., i1 true, i1 %3
-  %5 = and i1 %4, %0
-  ret i1 %5
-}
-
 ; 5 occurrences:
 ; cpython/optimized/_posixsubprocess.ll
 ; oiio/optimized/tiffinput.cpp.ll
@@ -418,7 +406,7 @@ define i1 @func0000000000000008(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %2, 64
   %4 = select i1 %1, i1 %3, i1 false
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -430,7 +418,7 @@ entry:
   %3 = icmp slt i32 %2, 1024
   %not. = xor i1 %1, true
   %4 = select i1 %not., i1 true, i1 %3
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

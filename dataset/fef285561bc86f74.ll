@@ -1,5 +1,5 @@
 
-; 62 occurrences:
+; 63 occurrences:
 ; abc/optimized/acbFunc.c.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; coreutils-rs/optimized/162a9hv49p91yl4q.ll
@@ -33,8 +33,6 @@
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; openjdk/optimized/gtk2_interface.ll
 ; openssl/optimized/evp_libctx_test-bin-evp_libctx_test.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; openssl/optimized/priority_queue_test-bin-priority_queue_test.ll
 ; openssl/optimized/quic_multistream_test-bin-quic_multistream_test.ll
 ; openssl/optimized/quic_record_test-bin-quic_record_test.ll
@@ -61,6 +59,9 @@
 ; wireshark/optimized/packet-dmp.c.ll
 ; wireshark/optimized/packet-elasticsearch.c.ll
 ; wireshark/optimized/ws_strptime.c.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; zxing/optimized/ODDataBarExpandedBitDecoder.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0) #0 {

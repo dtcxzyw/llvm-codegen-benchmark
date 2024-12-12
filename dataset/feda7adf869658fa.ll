@@ -1,5 +1,5 @@
 
-; 63 occurrences:
+; 64 occurrences:
 ; cpython/optimized/exceptions.ll
 ; cpython/optimized/textio.ll
 ; cpython/optimized/unicodeobject.ll
@@ -21,7 +21,6 @@
 ; llvm/optimized/BreakableToken.cpp.ll
 ; llvm/optimized/ProfileSummaryBuilder.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/TpiHashing.cpp.ll
@@ -63,6 +62,8 @@
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; wasmedge/optimized/vinode.cpp.ll
 ; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1, i16 %2) #0 {
 entry:
@@ -71,13 +72,12 @@ entry:
   ret i64 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; llvm/optimized/DWARFDebugLine.cpp.ll
 ; openusd/optimized/decodemv.c.ll
 ; qemu/optimized/hw_block_virtio-blk.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
-; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1, i16 %2) #0 {
 entry:
@@ -86,14 +86,13 @@ entry:
   ret i64 %4
 }
 
-; 8 occurrences:
+; 7 occurrences:
+; grpc/optimized/chttp2_transport.cc.ll
 ; grpc/optimized/legacy_inproc_transport.cc.ll
 ; hwloc/optimized/topology-linux.ll
 ; linux/optimized/quota.ll
 ; serde-rs-json/optimized/1z3u82elh7pk3w5r.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
-; spike/optimized/f16_to_i32.ll
-; spike/optimized/f16_to_i64.ll
 ; spike/optimized/kabs16.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i64 %1, i16 %2) #0 {
@@ -103,10 +102,8 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 2 occurrences:
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
-; spike/optimized/f16_to_i32_r_minMag.ll
-; spike/optimized/f16_to_i64_r_minMag.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i64 %0, i64 %1, i16 %2) #0 {

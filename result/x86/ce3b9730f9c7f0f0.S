@@ -13,7 +13,7 @@ func0000000000000005:                   # @func0000000000000005
 	movabsq	$7905747460161236408, %rax      # imm = 0x6DB6DB6DB6DB6DB8
 	imulq	%rcx, %rax
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000064:                   # @func0000000000000064
 	subl	%esi, %edi
 	leal	-16(%rdi), %ecx
 	shrl	$3, %ecx

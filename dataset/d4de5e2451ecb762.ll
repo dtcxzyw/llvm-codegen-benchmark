@@ -1,7 +1,6 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; abc/optimized/abcUtil.c.ll
-; abc/optimized/exor.c.ll
 ; abc/optimized/hopBalance.c.ll
 ; abc/optimized/ivyBalance.c.ll
 ; darktable/optimized/SamsungV2Decompressor.cpp.ll
@@ -16,7 +15,7 @@
 ; wireshark/optimized/packet-asterix.c.ll
 ; wireshark/optimized/packet-isis-lsp.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 6
   %3 = sub nsw i32 %0, %2
@@ -52,7 +51,7 @@ entry:
 ; openjdk/optimized/hb-ot-shape-fallback.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 4
   %3 = sub nsw i32 %0, %2
@@ -63,7 +62,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/zend_alloc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 12
   %3 = sub nsw i32 %0, %2
@@ -101,10 +100,10 @@ entry:
 ; linux/optimized/auth_gss.ll
 ; raylib/optimized/rcore.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 12
-  %3 = icmp sgt i32 %2, %0
+  %3 = icmp slt i32 %0, %2
   ret i1 %3
 }
 
@@ -112,10 +111,10 @@ entry:
 ; freetype/optimized/raster.c.ll
 ; libquic/optimized/shift.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 6
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   ret i1 %3
 }
 
@@ -134,7 +133,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/TargetLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000084(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 1
   %3 = sub i32 %0, %2
@@ -142,7 +141,8 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; harfbuzz/optimized/hb-subset.cc.ll
 ; linux/optimized/i915_vma.ll
 ; quickjs/optimized/libunicode.ll
 ; z3/optimized/value_generator.cpp.ll
@@ -158,10 +158,10 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ucnv_u16.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000008c(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 1
-  %3 = icmp ne i32 %2, %0
+  %3 = icmp ne i32 %0, %2
   ret i1 %3
 }
 

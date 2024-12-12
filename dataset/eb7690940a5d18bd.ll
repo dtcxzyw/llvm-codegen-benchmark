@@ -1,5 +1,5 @@
 
-; 96 occurrences:
+; 94 occurrences:
 ; abc/optimized/acbTest.c.ll
 ; abc/optimized/cbaNtk.c.ll
 ; libuv/optimized/core.c.ll
@@ -25,8 +25,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -101,22 +99,20 @@ define i32 @func0000000000000009(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 3
   %3 = sdiv i32 %2, 1000
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
-; 6 occurrences:
+; 4 occurrences:
 ; libquic/optimized/time_support.c.ll
 ; opencv/optimized/sinusoidalpattern.cpp.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; protobuf/optimized/unparser.cc.ll
 ; stockfish/optimized/evaluate_nnue.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
-  %2 = mul nsw i32 %1, 367
-  %3 = sdiv i32 %2, 12
+  %2 = mul nsw i32 %1, 9600
+  %3 = sdiv i32 %2, 8128
   %4 = add i32 %3, %0
   ret i32 %4
 }
@@ -130,7 +126,7 @@ define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 3
   %3 = sdiv i32 %2, 1000
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 

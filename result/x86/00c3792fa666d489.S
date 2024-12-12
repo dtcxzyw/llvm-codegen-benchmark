@@ -1,4 +1,4 @@
-func000000000000006c:                   # @func000000000000006c
+func00000000000000cc:                   # @func00000000000000cc
 	addq	%rdx, %rdx
 	orq	%rsi, %rdx
 	testq	%rdi, %rdx
@@ -7,7 +7,7 @@ func000000000000006c:                   # @func000000000000006c
 func000000000000000c:                   # @func000000000000000c
 	shlq	$32, %rdx
 	orq	%rsi, %rdx
-	testq	%rdi, %rdx
+	testq	%rdx, %rdi
 	setne	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
@@ -16,22 +16,15 @@ func0000000000000001:                   # @func0000000000000001
 	testq	%rdi, %rdx
 	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	shlq	$8, %rdx
 	orq	%rsi, %rdx
 	testq	%rdi, %rdx
 	sete	%al
 	retq
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	shlq	$9, %rdx
 	orq	%rsi, %rdx
 	testq	%rdi, %rdx
 	sete	%al
-	retq
-func0000000000000074:                   # @func0000000000000074
-	shlq	$8, %rdx
-	orq	%rsi, %rdx
-	andq	%rdi, %rdx
-	cmpq	$4, %rdx
-	setb	%al
 	retq

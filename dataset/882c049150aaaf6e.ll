@@ -1,8 +1,9 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; linux/optimized/mac.ll
 ; linux/optimized/page_alloc.ll
+; lvgl/optimized/lv_ime_pinyin.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openssl/optimized/openssl-bin-cmp.ll
 ; php/optimized/zend_jit.ll
@@ -16,11 +17,14 @@ entry:
   ret i1 %6
 }
 
-; 10 occurrences:
+; 13 occurrences:
 ; grpc/optimized/ev_poll_posix.cc.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; llvm/optimized/FunctionImport.cpp.ll
 ; llvm/optimized/SemaObjCProperty.cpp.ll
+; lvgl/optimized/lv_indev.ll
+; lvgl/optimized/lv_indev_scroll.ll
+; lvgl/optimized/lv_obj.ll
 ; minetest/optimized/clientpackethandler.cpp.ll
 ; php/optimized/zend_func_info.ll
 ; qemu/optimized/hw_net_pcnet.c.ll
@@ -37,13 +41,15 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
+; 3 occurrences:
+; clamav/optimized/upx.c.ll
+; luau/optimized/isocline.c.ll
 ; wireshark/optimized/packet-smb.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000018(i1 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 60
-  %4 = icmp eq i32 %3, 60
+  %3 = and i32 %2, 64512
+  %4 = icmp samesign ugt i32 %3, 49920
   %5 = select i1 %1, i1 true, i1 %4
   %6 = select i1 %5, i1 true, i1 %0
   ret i1 %6

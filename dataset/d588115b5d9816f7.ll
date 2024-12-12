@@ -10,7 +10,7 @@ entry:
   ret i32 %3
 }
 
-; 15 occurrences:
+; 20 occurrences:
 ; arrow/optimized/UriRecompose.c.ll
 ; clap-rs/optimized/gk6w3l154s6ch7z.ll
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
@@ -26,6 +26,11 @@ entry:
 ; rust-analyzer-rs/optimized/45p2airz10aj25pm.ll
 ; serde-rs-json/optimized/2bynnyw1do6foacb.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i8 %0) #0 {
 entry:

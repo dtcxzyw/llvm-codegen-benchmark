@@ -1,5 +1,7 @@
 
-; 38 occurrences:
+; 40 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; gromacs/optimized/colvaratoms.cpp.ll
 ; gromacs/optimized/colvarcomp_rotations.cpp.ll
 ; gromacs/optimized/dispersioncorrection.cpp.ll

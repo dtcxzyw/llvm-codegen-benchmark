@@ -1,7 +1,7 @@
 
-%struct.GroupNumRemap.2485241 = type { i32 }
+%struct.GroupNumRemap.2600730 = type { i32 }
 
-; 34 occurrences:
+; 33 occurrences:
 ; gromacs/optimized/pbc.cpp.ll
 ; linux/optimized/af_inet.ll
 ; linux/optimized/binfmt_misc.ll
@@ -22,7 +22,6 @@
 ; linux/optimized/qspinlock.ll
 ; linux/optimized/tcp.ll
 ; linux/optimized/trace_eprobe.ll
-; linux/optimized/trace_event_perf.ll
 ; linux/optimized/trace_kprobe.ll
 ; linux/optimized/trace_uprobe.ll
 ; linux/optimized/virtio_net.ll
@@ -41,11 +40,11 @@ define ptr @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = inttoptr i64 %0 to ptr
-  %4 = getelementptr %struct.GroupNumRemap.2485241, ptr %3, i64 %2
+  %4 = getelementptr %struct.GroupNumRemap.2600730, ptr %3, i64 %2
   ret ptr %4
 }
 
-; 251 occurrences:
+; 249 occurrences:
 ; gromacs/optimized/bonded.cpp.ll
 ; gromacs/optimized/calcmu.cpp.ll
 ; gromacs/optimized/calculator.cpp.ll
@@ -114,8 +113,6 @@ entry:
 ; luajit/optimized/lj_record_dyn.ll
 ; luajit/optimized/lj_tab.ll
 ; luajit/optimized/lj_tab_dyn.ll
-; luajit/optimized/lj_vmevent.ll
-; luajit/optimized/lj_vmevent_dyn.ll
 ; mitsuba3/optimized/blender.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; opencv/optimized/convolution.cpp.ll
@@ -303,6 +300,19 @@ entry:
   %2 = sext i32 %1 to i64
   %3 = inttoptr i64 %0 to ptr
   %4 = getelementptr nusw i8, ptr %3, i64 %2
+  ret ptr %4
+}
+
+; 3 occurrences:
+; luajit/optimized/lib_jit.ll
+; luajit/optimized/lib_jit_dyn.ll
+; openjdk/optimized/zMark.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(i64 %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = inttoptr i64 %0 to ptr
+  %4 = getelementptr nusw nuw i64, ptr %3, i64 %2
   ret ptr %4
 }
 

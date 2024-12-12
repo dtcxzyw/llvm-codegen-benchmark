@@ -17,12 +17,12 @@
 define i64 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
 
-; 31 occurrences:
+; 30 occurrences:
 ; hyperscan/optimized/block.c.ll
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/match.c.ll
@@ -32,7 +32,6 @@ entry:
 ; jemalloc/optimized/arena.ll
 ; jemalloc/optimized/arena.pic.ll
 ; jemalloc/optimized/arena.sym.ll
-; linux/optimized/utbuffer.ll
 ; llvm/optimized/CodeGenRegisters.cpp.ll
 ; llvm/optimized/NewGVN.cpp.ll
 ; openvdb/optimized/Diagnostics.cc.ll
@@ -58,7 +57,7 @@ entry:
 define i64 @func000000000000000e(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
@@ -74,7 +73,7 @@ entry:
 define i64 @func000000000000000f(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -86,7 +85,7 @@ entry:
 define i64 @func0000000000000008(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
@@ -97,20 +96,7 @@ entry:
 define i64 @func000000000000000c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = or i32 %2, %0
-  %4 = zext i32 %3 to i64
-  ret i64 %4
-}
-
-; 3 occurrences:
-; linux/optimized/ehci-hcd.ll
-; linux/optimized/timer.ll
-; linux/optimized/utbuffer.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000002(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
@@ -122,8 +108,20 @@ entry:
 define i64 @func0000000000000003(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = zext nneg i32 %3 to i64
+  ret i64 %4
+}
+
+; 2 occurrences:
+; linux/optimized/ehci-hcd.ll
+; linux/optimized/timer.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = or disjoint i32 %0, %2
+  %4 = zext i32 %3 to i64
   ret i64 %4
 }
 
@@ -134,7 +132,7 @@ entry:
 define i64 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }

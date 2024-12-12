@@ -17,7 +17,7 @@ entry:
   %3 = zext nneg i8 %2 to i16
   %.masked = and i16 %1, -513
   %4 = or i16 %.masked, %3
-  %5 = or disjoint i16 %4, %0
+  %5 = or disjoint i16 %0, %4
   ret i16 %5
 }
 
@@ -41,9 +41,9 @@ entry:
 define i16 @func0000000000000005(i16 %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i16
-  %4 = or i16 %3, %1
+  %4 = or i16 %1, %3
   %5 = and i16 %4, 1
-  %6 = or disjoint i16 %5, %0
+  %6 = or disjoint i16 %0, %5
   ret i16 %6
 }
 

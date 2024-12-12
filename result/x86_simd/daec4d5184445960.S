@@ -11,9 +11,3 @@ func000000000000000f:                   # @func000000000000000f
 	vpsubd	%ymm2, %ymm0, %ymm0
 	vpmulld	%ymm1, %ymm0, %ymm0
 	retq
-func0000000000000018:                   # @func0000000000000018
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpsubd	%ymm2, %ymm1, %ymm1
-	vpsrld	$1, %ymm0, %ymm0
-	vpmulld	%ymm1, %ymm0, %ymm0
-	retq

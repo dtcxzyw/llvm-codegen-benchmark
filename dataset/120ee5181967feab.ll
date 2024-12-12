@@ -18,7 +18,7 @@
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
 ; wasmtime-rs/optimized/pc3lkwoxfkbj2dl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw i64 %1, 3
   %3 = add i64 %2, -1
@@ -44,7 +44,7 @@ entry:
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
 ; wasmtime-rs/optimized/pc3lkwoxfkbj2dl.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000144(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw i64 %1, 3
   %3 = add nuw i64 %2, 1
@@ -52,7 +52,7 @@ entry:
   ret i1 %4
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
 ; cmake/optimized/cmCursesMainForm.cxx.ll
 ; graphviz/optimized/ortho.c.ll
@@ -60,7 +60,6 @@ entry:
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; image-rs/optimized/fyek6fuqg0ocunt.ll
-; linux/optimized/drm_debugfs_crc.ll
 ; typst-rs/optimized/4p46tkw2iv8zjgza.ll
 ; typst-rs/optimized/53ug9lwflkq7ucu8.ll
 ; Function Attrs: nounwind
@@ -75,7 +74,7 @@ entry:
 ; 1 occurrences:
 ; tinyobjloader/optimized/tiny_obj_loader.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 3
   %3 = add nsw i64 %2, 2
@@ -86,7 +85,7 @@ entry:
 ; 1 occurrences:
 ; base64-rs/optimized/3i18zkzed1c7jyoe.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000148(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw i64 %1, 24
   %3 = add nuw i64 %2, 24
@@ -94,32 +93,30 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; darktable/optimized/Cr2sRawInterpolator.cpp.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; darktable/optimized/PanasonicV7Decompressor.cpp.ll
-; postgres/optimized/dsm.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f5(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001f5(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 9
   %3 = add nuw nsw i64 %2, 9
-  %4 = icmp ule i64 %3, %0
+  %4 = icmp samesign ule i64 %3, %0
   ret i1 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; clamav/optimized/regcomp.c.ll
 ; darktable/optimized/Cr2sRawInterpolator.cpp.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
-; freetype/optimized/sfnt.c.ll
 ; llvm/optimized/Minidump.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001f4(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 6
   %3 = add nuw nsw i64 %2, 3
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp samesign ult i64 %3, %0
   ret i1 %4
 }
 
@@ -139,7 +136,7 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/isocline.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f6(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001e6(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 3
   %3 = add nuw nsw i64 %2, 4
@@ -161,9 +158,8 @@ entry:
   ret i1 %4
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; freetype/optimized/sfnt.c.ll
-; linux/optimized/intel_gsc_fw.ll
 ; linux/optimized/mcast.ll
 ; postgres/optimized/dsm.ll
 ; typst-rs/optimized/18i60ist7isq7y2m.ll
@@ -173,11 +169,33 @@ entry:
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001e8(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 20
   %3 = add nuw nsw i64 %2, 16
   %4 = icmp ugt i64 %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; linux/optimized/intel_gsc_fw.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001f8(i64 %0, i64 %1) #0 {
+entry:
+  %2 = mul nuw nsw i64 %1, 12
+  %3 = add nuw nsw i64 %2, 24
+  %4 = icmp samesign ugt i64 %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; postgres/optimized/dsm.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001e5(i64 %0, i64 %1) #0 {
+entry:
+  %2 = mul nuw nsw i64 %1, 40
+  %3 = add nuw nsw i64 %2, 16
+  %4 = icmp ule i64 %3, %0
   ret i1 %4
 }
 
@@ -198,11 +216,22 @@ entry:
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 3
   %3 = add nsw i64 %2, 2
   %4 = icmp slt i64 %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; freetype/optimized/sfnt.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001e4(i64 %0, i64 %1) #0 {
+entry:
+  %2 = mul nuw nsw i64 %1, 20
+  %3 = add nuw nsw i64 %2, 48
+  %4 = icmp ult i64 %3, %0
   ret i1 %4
 }
 

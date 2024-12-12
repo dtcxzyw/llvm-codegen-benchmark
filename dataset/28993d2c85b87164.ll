@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/date_core.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000005b(i32 %0) #0 {
+define i32 @func000000000000009b(i32 %0) #0 {
 entry:
   %1 = icmp slt i32 %0, 0
   %2 = shl i32 %0, 6
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; ruby/optimized/time.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000058(i32 %0) #0 {
+define i32 @func0000000000000098(i32 %0) #0 {
 entry:
   %1 = icmp slt i32 %0, 0
   %2 = shl i32 %0, 23
@@ -29,7 +29,7 @@ entry:
 define i32 @func0000000000000018(i32 %0) #0 {
 entry:
   %1 = lshr i32 %0, 31
-  %2 = add i32 %1, %0
+  %2 = add i32 %0, %1
   %3 = shl i32 %2, 1
   ret i32 %3
 }

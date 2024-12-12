@@ -24,8 +24,8 @@ func0000000000000007:                   # @func0000000000000007
 	cmovlel	%edi, %eax
 	retq
 func000000000000000a:                   # @func000000000000000a
-	xorl	%eax, %eax
 	cmpl	%edx, %esi
+	movl	$3, %eax
 	cmovgl	%edi, %eax
 	retq
 func0000000000000005:                   # @func0000000000000005

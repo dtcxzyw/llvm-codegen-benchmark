@@ -1,5 +1,5 @@
 
-; 261 occurrences:
+; 258 occurrences:
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
 ; fmt/optimized/format-impl-test.cc.ll
@@ -14,8 +14,6 @@
 ; fmt/optimized/unicode-test.cc.ll
 ; fmt/optimized/util.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
-; harfbuzz/optimized/harfbuzz.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
 ; lief/optimized/BinaryParser.cpp.ll
@@ -89,6 +87,7 @@
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/ats.ll
 ; linux/optimized/ehci-hcd.ll
+; linux/optimized/ff-memless.ll
 ; linux/optimized/pci.ll
 ; linux/optimized/tx.ll
 ; llvm/optimized/AtomicExpandPass.cpp.ll
@@ -172,14 +171,12 @@
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
-; openjdk/optimized/hb-face-builder.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; postgres/optimized/execReplication.ll
 ; postgres/optimized/gistutil.ll
 ; postgres/optimized/gistvacuum.ll
 ; raylib/optimized/rtextures.c.ll
 ; ruby/optimized/strftime.ll
-; slurm/optimized/slurmd.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
 ; stb/optimized/stb_image_write.c.ll

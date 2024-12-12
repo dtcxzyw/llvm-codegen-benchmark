@@ -1,6 +1,6 @@
 
-%struct.HdrEntry.2530241 = type { %"class.mold::BigEndian.467.2530242", %"class.mold::BigEndian.467.2530242" }
-%"class.mold::BigEndian.467.2530242" = type { [4 x i8] }
+%struct.HdrEntry.2644644 = type { %"class.mold::BigEndian.467.2644645", %"class.mold::BigEndian.467.2644645" }
+%"class.mold::BigEndian.467.2644645" = type { [4 x i8] }
 
 ; 4 occurrences:
 ; faiss/optimized/NSG.cpp.ll
@@ -8,11 +8,11 @@
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; openusd/optimized/level.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, %2
   %4 = zext i1 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -42,11 +42,11 @@ entry:
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
 ; z3/optimized/sat_asymm_branch.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000005b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sge i32 %1, %2
   %4 = zext i1 %3 to i64
-  %5 = getelementptr nusw %struct.HdrEntry.2530241, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %struct.HdrEntry.2644644, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -75,18 +75,17 @@ entry:
 ; z3/optimized/spacer_context.cpp.ll
 ; z3/optimized/symmetry_reduce_tactic.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000004a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000004b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp uge i32 %1, %2
   %4 = zext i1 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 22 occurrences:
+; 26 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
 ; cmake/optimized/archive_ppmd7.c.ll
-; cmake/optimized/archive_ppmd8.c.ll
 ; image-rs/optimized/2mngkegtim1o10y3.ll
 ; influxdb-rs/optimized/1s5ibqekmzia6ibu.ll
 ; libwebp/optimized/vp8_dec.c.ll
@@ -106,36 +105,55 @@ entry:
 ; wasmtime-rs/optimized/1bmc0pjvdnh09g73.ll
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
+; zed-rs/optimized/34wa3jua7n3vs803j44lzfk5b.ll
+; zed-rs/optimized/4pyl8821jbmubnjyx7hxe0q2i.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/cu6jannw5ajqip9tl6sqjzagm.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000022(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000023(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %1, %2
   %4 = zext i1 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; openjdk/optimized/splashscreen_gfx_impl.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000052(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000053(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %1, %2
   %4 = zext i1 %3 to i64
-  %5 = getelementptr nusw i32, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i32, ptr %0, i64 %4
   ret ptr %5
 }
 
 ; 3 occurrences:
+; cmake/optimized/archive_ppmd8.c.ll
+; rust-analyzer-rs/optimized/1r9ygi4s2x06bwuz.ll
+; tokenizers-rs/optimized/2w5yihn8z6xjncvn.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000a3(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %1, %2
+  %4 = zext i1 %3 to i64
+  %5 = getelementptr nusw nuw ptr, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 4 occurrences:
 ; clamav/optimized/unpack.cpp.ll
 ; rust-analyzer-rs/optimized/1r9ygi4s2x06bwuz.ll
 ; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000032(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000033(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %1, %2
   %4 = zext i1 %3 to i64
-  %5 = getelementptr nusw { { { i8, [7 x i8] }, { i64, { [3 x i64] } } }, { i32, [4 x i32] }, { i32, [4 x i32] } }, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw { { { i8, [7 x i8] }, { i64, { [3 x i64] } } }, { i32, [4 x i32] }, { i32, [4 x i32] } }, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -144,11 +162,11 @@ entry:
 ; llvm/optimized/UniformityAnalysis.cpp.ll
 ; z3/optimized/dl_rule_transformer.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000002b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ule i32 %1, %2
   %4 = zext i1 %3 to i64
-  %5 = getelementptr nusw ptr, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw ptr, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -166,22 +184,33 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000003b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sle i32 %1, %2
   %4 = zext i1 %3 to i64
-  %5 = getelementptr nusw i32, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i32, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; tokenizers-rs/optimized/2w5yihn8z6xjncvn.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000cb(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign uge i32 %1, %2
+  %4 = zext i1 %3 to i64
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; redis/optimized/redis-cli.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000062(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000063(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %1, %2
   %4 = zext i1 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 

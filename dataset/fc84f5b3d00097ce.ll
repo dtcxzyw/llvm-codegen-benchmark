@@ -1,5 +1,5 @@
 
-; 179 occurrences:
+; 178 occurrences:
 ; abc/optimized/cecSat.c.ll
 ; abc/optimized/cecSatG.c.ll
 ; abc/optimized/cecSatG2.c.ll
@@ -10,6 +10,7 @@
 ; abc/optimized/giaHash.c.ll
 ; abc/optimized/giaSupp.c.ll
 ; abc/optimized/giaUtil.c.ll
+; boost/optimized/attribute_name.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/MuxIOThreadPoolExecutor.cpp.ll
 ; folly/optimized/ObserverManager.cpp.ll
@@ -29,7 +30,6 @@
 ; linux/optimized/intel-gtt.ll
 ; linux/optimized/kfifo.ll
 ; linux/optimized/mapping.ll
-; linux/optimized/ops_helpers.ll
 ; linux/optimized/scatterlist.ll
 ; linux/optimized/skbuff.ll
 ; linux/optimized/sparse.ll
@@ -106,7 +106,6 @@
 ; llvm/optimized/RISCVExpandAtomicPseudoInsts.cpp.ll
 ; llvm/optimized/RISCVExpandPseudoInsts.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVIndirectBranchTracking.cpp.ll
 ; llvm/optimized/RISCVInsertReadWriteCSR.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
@@ -188,13 +187,16 @@ entry:
   ret i64 %4
 }
 
-; 139 occurrences:
+; 142 occurrences:
 ; abc/optimized/cuddCache.c.ll
 ; abseil-cpp/optimized/mutex.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/attribute_name.ll
+; boost/optimized/graphml.ll
+; boost/optimized/settings_parser.ll
 ; cmake/optimized/archive_rb.c.ll
 ; cpython/optimized/object.ll
 ; cpython/optimized/obmalloc.ll

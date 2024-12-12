@@ -1,5 +1,5 @@
 
-; 46 occurrences:
+; 45 occurrences:
 ; abc/optimized/abcProve.c.ll
 ; arrow/optimized/vector_selection_filter_internal.cc.ll
 ; arrow/optimized/vector_selection_internal.cc.ll
@@ -38,7 +38,6 @@
 ; slurm/optimized/acct_policy.ll
 ; stockfish/optimized/timeman.ll
 ; velox/optimized/DateTimeFormatter.cpp.ll
-; wireshark/optimized/ftype-time.c.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; wireshark/optimized/rtp_audio_stream.cpp.ll
 ; wireshark/optimized/rtp_player_dialog.cpp.ll

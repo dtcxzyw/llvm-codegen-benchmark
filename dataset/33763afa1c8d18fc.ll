@@ -1,32 +1,32 @@
 
-%struct.redblack_node.2485824 = type { i64, ptr, i32, i32 }
-%"struct.rocksdb::DbPath.2506688" = type { %"class.std::__cxx11::basic_string.2506668", i64 }
-%"class.std::__cxx11::basic_string.2506668" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2506669", i64, %union.anon.2506670 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2506669" = type { ptr }
-%union.anon.2506670 = type { i64, [8 x i8] }
-%struct.tls_sigalg_info_st.2518879 = type { ptr, i16, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, i32, i32, i32 }
-%"struct.boost::sub_match.2571621" = type <{ %"struct.std::pair.2571625", i8, [7 x i8] }>
-%"struct.std::pair.2571625" = type { %"class.__gnu_cxx::__normal_iterator.25.2571620", %"class.__gnu_cxx::__normal_iterator.25.2571620" }
-%"class.__gnu_cxx::__normal_iterator.25.2571620" = type { ptr }
-%struct.hb_glyph_info_t.2617223 = type { i32, i32, i32, %union._hb_var_int_t.2617224, %union._hb_var_int_t.2617224 }
-%union._hb_var_int_t.2617224 = type { i32 }
-%class.BasicBlock.2618403 = type { i8, i32, i32, i32, i32, ptr, i32, i32 }
-%struct._zend_jit_trace_stack.2681823 = type { %union.anon.14.2681824, i32 }
-%union.anon.14.2681824 = type { i32 }
-%"class.rapidjson::GenericMember.2713002" = type { %"class.rapidjson::GenericValue.2712777", %"class.rapidjson::GenericValue.2712777" }
-%"class.rapidjson::GenericValue.2712777" = type { %"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2712778" }
-%"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2712778" = type { %"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2712779" }
-%"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2712779" = type { i32, i32, ptr }
-%struct.H5G_entry_t.2861553 = type { i32, %union.H5G_cache_t.2861554, i64, i64 }
-%union.H5G_cache_t.2861554 = type { %struct.anon.2861555 }
-%struct.anon.2861555 = type { i64, i64 }
-%"class.llvm::MachineOperand.3096175" = type { i32, %union.anon.233.3096176, ptr, %"union.llvm::MachineOperand::ContentsUnion.3096177" }
-%union.anon.233.3096176 = type { i32 }
-%"union.llvm::MachineOperand::ContentsUnion.3096177" = type { %"class.llvm::ArrayRef.234.3096178" }
-%"class.llvm::ArrayRef.234.3096178" = type { ptr, i64 }
-%struct.JSClass.3243654 = type { i32, i32, ptr, ptr, ptr, ptr }
-%struct.JSVarDef.3243668 = type { i32, i32, i32, i32 }
-%struct.bio_vec.3359657 = type { ptr, i32, i32 }
+%struct.redblack_node.2601295 = type { i64, ptr, i32, i32 }
+%"struct.rocksdb::DbPath.2621850" = type { %"class.std::__cxx11::basic_string.2621830", i64 }
+%"class.std::__cxx11::basic_string.2621830" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2621831", i64, %union.anon.2621832 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2621831" = type { ptr }
+%union.anon.2621832 = type { i64, [8 x i8] }
+%struct.tls_sigalg_info_st.2633831 = type { ptr, i16, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, i32, i32, i32 }
+%"struct.boost::sub_match.2685972" = type <{ %"struct.std::pair.2685976", i8, [7 x i8] }>
+%"struct.std::pair.2685976" = type { %"class.__gnu_cxx::__normal_iterator.25.2685971", %"class.__gnu_cxx::__normal_iterator.25.2685971" }
+%"class.__gnu_cxx::__normal_iterator.25.2685971" = type { ptr }
+%struct.hb_glyph_info_t.2730675 = type { i32, i32, i32, %union._hb_var_int_t.2730676, %union._hb_var_int_t.2730676 }
+%union._hb_var_int_t.2730676 = type { i32 }
+%class.BasicBlock.2731852 = type { i8, i32, i32, i32, i32, ptr, i32, i32 }
+%struct._zend_jit_trace_stack.2794582 = type { %union.anon.14.2794583, i32 }
+%union.anon.14.2794583 = type { i32 }
+%"class.rapidjson::GenericMember.2825536" = type { %"class.rapidjson::GenericValue.2825311", %"class.rapidjson::GenericValue.2825311" }
+%"class.rapidjson::GenericValue.2825311" = type { %"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2825312" }
+%"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2825312" = type { %"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2825313" }
+%"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2825313" = type { i32, i32, ptr }
+%struct.H5G_entry_t.3055460 = type { i32, %union.H5G_cache_t.3055461, i64, i64 }
+%union.H5G_cache_t.3055461 = type { %struct.anon.3055462 }
+%struct.anon.3055462 = type { i64, i64 }
+%"class.llvm::MachineOperand.3288929" = type { i32, %union.anon.233.3288930, ptr, %"union.llvm::MachineOperand::ContentsUnion.3288931" }
+%union.anon.233.3288930 = type { i32 }
+%"union.llvm::MachineOperand::ContentsUnion.3288931" = type { %"class.llvm::ArrayRef.234.3288932" }
+%"class.llvm::ArrayRef.234.3288932" = type { ptr, i64 }
+%struct.JSClass.3435083 = type { i32, i32, ptr, ptr, ptr, ptr }
+%struct.JSVarDef.3435097 = type { i32, i32, i32, i32 }
+%struct.bio_vec.3546550 = type { ptr, i32, i32 }
 
 ; 21 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -55,20 +55,20 @@ define ptr @func0000000000000000(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %struct.redblack_node.2485824, ptr %0, i64 %3, i32 2
+  %4 = getelementptr %struct.redblack_node.2601295, ptr %0, i64 %3, i32 2
   ret ptr %4
 }
 
 ; 250 occurrences:
 ; arrow/optimized/tdigest.cc.ll
-; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; bullet3/optimized/btAxisSweep3.ll
 ; clamav/optimized/dmg.c.ll
 ; clamav/optimized/others.c.ll
 ; clamav/optimized/pe.c.ll
 ; cmake/optimized/archive_read.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
-; cmake/optimized/huf_compress.c.ll
 ; cmake/optimized/zstd_opt.c.ll
 ; flac/optimized/cuesheet.c.ll
 ; flac/optimized/format.c.ll
@@ -106,7 +106,6 @@ entry:
 ; llvm/optimized/AsmParser.cpp.ll
 ; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
 ; llvm/optimized/Builtins.cpp.ll
-; llvm/optimized/CGDecl.cpp.ll
 ; llvm/optimized/CalcSpillWeights.cpp.ll
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
 ; llvm/optimized/CombinerHelper.cpp.ll
@@ -186,6 +185,8 @@ entry:
 ; luajit/optimized/lj_parse.ll
 ; luajit/optimized/lj_parse_dyn.ll
 ; luajit/optimized/minilua.ll
+; lvgl/optimized/lv_anim_timeline.ll
+; lvgl/optimized/lv_flex.ll
 ; minetest/optimized/CGUITTFont.cpp.ll
 ; minetest/optimized/chat.cpp.ll
 ; minetest/optimized/mapgen.cpp.ll
@@ -308,26 +309,22 @@ entry:
 ; z3/optimized/theory_lra.cpp.ll
 ; z3/optimized/theory_utvpi.cpp.ll
 ; z3/optimized/upolynomial.cpp.ll
-; zstd/optimized/huf_compress.c.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw %"struct.rocksdb::DbPath.2506688", ptr %0, i64 %3, i32 1
+  %4 = getelementptr nusw nuw %"struct.rocksdb::DbPath.2621850", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
-; 33 occurrences:
+; 30 occurrences:
 ; casadi/optimized/sx_function.cpp.ll
 ; freetype/optimized/sdf.c.ll
 ; git/optimized/sequencer.ll
 ; gromacs/optimized/mempool.cpp.ll
-; gromacs/optimized/scan.cpp.ll
 ; hdf5/optimized/H5B2internal.c.ll
-; hdf5/optimized/H5Shyper.c.ll
-; hermes/optimized/DictPropertyMap.cpp.ll
 ; icu/optimized/reldtfmt.ll
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
@@ -335,8 +332,8 @@ entry:
 ; llvm/optimized/OptTable.cpp.ll
 ; luau/optimized/ltable.cpp.ll
 ; nori/optimized/nanovg.c.ll
+; nori/optimized/textbox.cpp.ll
 ; nuklear/optimized/unity.c.ll
-; opencv/optimized/slice_layer.cpp.ll
 ; openssl/optimized/libssl-lib-t1_lib.ll
 ; openssl/optimized/libssl-shlib-t1_lib.ll
 ; pbrt-v4/optimized/aggregates.cpp.ll
@@ -354,15 +351,16 @@ entry:
 ; yosys/optimized/opt_lut.ll
 ; yosys/optimized/ql_bram_merge.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -9
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw %struct.tls_sigalg_info_st.2518879, ptr %0, i64 %3, i32 10
+  %4 = getelementptr nusw nuw %struct.tls_sigalg_info_st.2633831, ptr %0, i64 %3, i32 10
   ret ptr %4
 }
 
-; 13 occurrences:
+; 14 occurrences:
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; gromacs/optimized/sm_insolidangle.cpp.ll
@@ -377,11 +375,11 @@ entry:
 ; velox/optimized/URLFunctions.cpp.ll
 ; z3/optimized/sat_lookahead.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000013(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 2
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw %"struct.boost::sub_match.2571621", ptr %0, i64 %3, i32 1
+  %4 = getelementptr nusw nuw %"struct.boost::sub_match.2685972", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -392,7 +390,7 @@ define ptr @func0000000000000010(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %struct.hb_glyph_info_t.2617223, ptr %0, i64 %3, i32 4
+  %4 = getelementptr %struct.hb_glyph_info_t.2730675, ptr %0, i64 %3, i32 4
   ret ptr %4
 }
 
@@ -409,19 +407,16 @@ entry:
 ; php/optimized/zend_jit.ll
 ; raylib/optimized/rmodels.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw %class.BasicBlock.2618403, ptr %0, i64 %3, i32 1
+  %4 = getelementptr nusw nuw %class.BasicBlock.2731852, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
-; 28 occurrences:
+; 25 occurrences:
 ; hdf5/optimized/H5B2internal.c.ll
-; hermes/optimized/HiddenClass.cpp.ll
-; hermes/optimized/Interpreter.cpp.ll
-; hermes/optimized/Runtime.cpp.ll
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/CombinerHelper.cpp.ll
@@ -447,11 +442,11 @@ entry:
 ; recastnavigation/optimized/DetourNavMeshQuery.cpp.ll
 ; redis/optimized/ltable.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -5
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw %struct._zend_jit_trace_stack.2681823, ptr %0, i64 %3, i32 1
+  %4 = getelementptr nusw nuw %struct._zend_jit_trace_stack.2794582, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -462,11 +457,11 @@ entry:
 ; llvm/optimized/X86InsertPrefetch.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001b(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw %"class.rapidjson::GenericMember.2713002", ptr %0, i64 %3, i32 1
+  %4 = getelementptr nusw nuw %"class.rapidjson::GenericMember.2825536", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -474,11 +469,11 @@ entry:
 ; hdf5/optimized/H5Gnode.c.ll
 ; opencv/optimized/hough.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -2
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw %struct.H5G_entry_t.2861553, ptr %0, i64 %3, i32 2
+  %4 = getelementptr nusw nuw %struct.H5G_entry_t.3055460, ptr %0, i64 %3, i32 2
   ret ptr %4
 }
 
@@ -489,7 +484,7 @@ define ptr @func0000000000000008(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -2
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %"class.llvm::MachineOperand.3096175", ptr %0, i64 %3, i32 1
+  %4 = getelementptr %"class.llvm::MachineOperand.3288929", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
@@ -502,12 +497,11 @@ define ptr @func000000000000001c(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 38
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.JSClass.3243654, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %struct.JSClass.3435083, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
-; 4 occurrences:
-; cpython/optimized/listobject.ll
+; 3 occurrences:
 ; linux/optimized/security.ll
 ; postgres/optimized/pg_rewind.ll
 ; quickjs/optimized/quickjs.ll
@@ -516,7 +510,7 @@ define ptr @func000000000000000c(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -536870912
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.JSVarDef.3243668, ptr %0, i64 %3, i32 3
+  %4 = getelementptr %struct.JSVarDef.3435097, ptr %0, i64 %3, i32 3
   ret ptr %4
 }
 
@@ -528,7 +522,7 @@ define ptr @func0000000000000004(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.bio_vec.3359657, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %struct.bio_vec.3546550, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 

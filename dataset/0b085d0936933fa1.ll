@@ -1,6 +1,5 @@
 
-; 11 occurrences:
-; linux/optimized/dswexec.ll
+; 10 occurrences:
 ; linux/optimized/hda_codec.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
@@ -19,9 +18,8 @@ entry:
   ret i16 %2
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
-; wireshark/optimized/packet-homeplug-av.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000008(i64 %0) #0 {
 entry:
@@ -30,7 +28,7 @@ entry:
   ret i16 %2
 }
 
-; 92 occurrences:
+; 93 occurrences:
 ; c3c/optimized/parse_global.c.ll
 ; grpc/optimized/google_c2p_resolver.cc.ll
 ; lief/optimized/rsa_alt_helpers.c.ll
@@ -50,6 +48,7 @@ entry:
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; llvm/optimized/SemaDeclObjC.cpp.ll
+; lvgl/optimized/lv_chart.ll
 ; openmpi/optimized/osc_rdma_accumulate.ll
 ; sqlite/optimized/sqlite3.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll

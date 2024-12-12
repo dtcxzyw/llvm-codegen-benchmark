@@ -2,7 +2,7 @@ func000000000000011a:                   // @func000000000000011a
 // %bb.0:                               // %entry
 	ret
                                         // -- End function
-func000000000000013a:                   // @func000000000000013a
+func000000000000013b:                   // @func000000000000013b
 // %bb.0:                               // %entry
 	sub	x8, x1, x2
 	mov	w9, #8                          // =0x8

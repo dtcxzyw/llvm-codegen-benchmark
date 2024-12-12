@@ -12,6 +12,12 @@ func0000000000000004:                   # @func0000000000000004
 	orq	%rdx, %rax
 	leaq	1(%rdi,%rax), %rax
 	retq
+func0000000000000001:                   # @func0000000000000001
+	xorl	%eax, %eax
+	testb	$1, %dil
+	cmoveq	%rsi, %rax
+	leaq	1(%rdx,%rax), %rax
+	retq
 func000000000000000c:                   # @func000000000000000c
 	xorl	%ecx, %ecx
 	testb	$1, %sil

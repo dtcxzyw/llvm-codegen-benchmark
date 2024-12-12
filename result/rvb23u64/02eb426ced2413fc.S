@@ -1,7 +1,7 @@
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	sext.h	a2, a2
-	subw	a1, a1, a0
-	subw	a2, a2, a1
-	slti	a0, a2, 0
+	subw	a0, a0, a1
+	addw	a0, a0, a2
+	slti	a0, a0, 0
 	xori	a0, a0, 1
 	ret

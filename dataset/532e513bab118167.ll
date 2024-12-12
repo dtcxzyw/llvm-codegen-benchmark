@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; darktable/optimized/introspection_lut3d.c.ll
 ; hermes/optimized/ProfileAnalyzer.cpp.ll
 ; hwloc/optimized/hwloc-distrib.ll
@@ -9,6 +9,7 @@
 ; linux/optimized/xhci-ring.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/X86InterleavedAccess.cpp.ll
+; lvgl/optimized/lv_chart.ll
 ; qemu/optimized/block_vvfat.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
@@ -18,10 +19,11 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; darktable/optimized/Cr2Decompressor.cpp.ll
 ; linux/optimized/vlv_dsi_pll.ll
 ; llvm/optimized/X86InterleavedAccess.cpp.ll
+; lvgl/optimized/lv_chart.ll
 ; opencv/optimized/norm.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {

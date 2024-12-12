@@ -24,3 +24,13 @@ func0000000000000002:                   # @func0000000000000002
 	cmovel	%ecx, %eax
 	addl	%edi, %eax
 	retq
+func0000000000000000:                   # @func0000000000000000
+	notb	%dl
+	movzbl	%dl, %eax
+	andl	$1, %eax
+	leal	8(,%rax,4), %ecx
+	testb	$1, %sil
+	movl	$4, %eax
+	cmovel	%ecx, %eax
+	addl	%edi, %eax
+	retq

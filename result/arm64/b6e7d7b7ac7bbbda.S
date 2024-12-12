@@ -1,4 +1,4 @@
-func0000000000000508:                   // @func0000000000000508
+func0000000000000a08:                   // @func0000000000000a08
 // %bb.0:                               // %entry
 	sub	x8, x1, x2, asr #32
 	add	x9, x0, #1
@@ -6,7 +6,7 @@ func0000000000000508:                   // @func0000000000000508
 	cset	w0, hi
 	ret
                                         // -- End function
-func00000000000005a8:                   // @func00000000000005a8
+func0000000000000b68:                   // @func0000000000000b68
 // %bb.0:                               // %entry
 	sub	x8, x1, x2, asr #32
 	add	x9, x0, #1
@@ -14,7 +14,7 @@ func00000000000005a8:                   // @func00000000000005a8
 	cset	w0, hi
 	ret
                                         // -- End function
-func00000000000005a1:                   // @func00000000000005a1
+func0000000000000b41:                   // @func0000000000000b41
 // %bb.0:                               // %entry
 	sub	x8, x1, x2
 	sub	x9, x0, #32

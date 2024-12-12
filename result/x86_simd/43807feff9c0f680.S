@@ -69,15 +69,6 @@ func0000000000000183:                   # @func0000000000000183
 	vpsubd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-.LCPI9_0:
-	.quad	33554431                        # 0x1ffffff
-func0000000000000107:                   # @func0000000000000107
-	vpcmpnleuq	.LCPI9_0(%rip){1to4}, %ymm1, %k0
-	vpmovqd	%ymm0, %xmm0
-	vpmovm2d	%k0, %xmm1
-	vpsubd	%xmm1, %xmm0, %xmm0
-	vzeroupper
-	retq
 func0000000000000185:                   # @func0000000000000185
 	vptestmq	%ymm1, %ymm1, %k0
 	vpmovqd	%ymm0, %xmm0

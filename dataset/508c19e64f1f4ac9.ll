@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 30 occurrences:
 ; abc/optimized/cuddLCache.c.ll
 ; arrow/optimized/key_map.cc.ll
 ; assimp/optimized/o3dgcArithmeticCodec.cpp.ll
@@ -29,6 +29,7 @@
 ; spike/optimized/f32_rem.ll
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
+; z3/optimized/pb2bv_rewriter.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -47,13 +48,15 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; linux/optimized/intel_backlight.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %1, %2
-  %4 = mul nuw nsw i32 %3, %0
+  %4 = mul nuw nsw i32 %0, %3
   ret i32 %4
 }
 

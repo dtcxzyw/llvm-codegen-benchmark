@@ -5,7 +5,7 @@
 ; llvm/optimized/BlockFrequencyInfo.cpp.ll
 ; llvm/optimized/MachineBlockFrequencyInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0, i16 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i16 %0, i16 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 13
   %4 = icmp eq i16 %0, %1
@@ -17,7 +17,7 @@ entry:
 ; clamav/optimized/entconv.c.ll
 ; hyperscan/optimized/shufticompile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i16 %0, i16 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i16 %0, i16 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 152
   %4 = icmp ult i16 %0, %1

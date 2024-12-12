@@ -13,6 +13,29 @@ entry:
 }
 
 ; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_transform.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000046(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %1, %2
+  %4 = ashr i32 %3, 8
+  %5 = icmp slt i32 %4, %0
+  ret i1 %5
+}
+
+; 2 occurrences:
+; lvgl/optimized/lv_draw_sw_transform.ll
+; raylib/optimized/raudio.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000004c(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %1, %2
+  %4 = ashr i32 %3, 8
+  %5 = icmp ne i32 %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; openusd/optimized/grain_synthesis.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
@@ -37,22 +60,11 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/hough.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = ashr i32 %3, 10
   %5 = icmp ult i32 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; raylib/optimized/raudio.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %1, %2
-  %4 = ashr i32 %3, 13
-  %5 = icmp ne i32 %4, %0
   ret i1 %5
 }
 

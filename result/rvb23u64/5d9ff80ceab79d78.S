@@ -1,17 +1,17 @@
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	sext.b	a2, a2
 	addw	a0, a0, a2
 	addiw	a1, a1, -1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	sext.b	a2, a2
 	addw	a0, a0, a2
 	addiw	a1, a1, -1
 	slt	a0, a0, a1
 	ret
-func0000000000000015:                   # @func0000000000000015
+func0000000000000025:                   # @func0000000000000025
 	sext.b	a2, a2
 	addw	a0, a0, a2
 	addiw	a1, a1, -8

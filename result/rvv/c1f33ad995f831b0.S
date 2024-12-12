@@ -11,3 +11,10 @@ func0000000000000004:                   # @func0000000000000004
 	vmsleu.vi	v0, v10, 9
 	vand.vi	v8, v12, 15, v0.t
 	ret
+func0000000000000014:                   # @func0000000000000014
+	lui	a0, 32768
+	vsetivli	zero, 4, e64, m2, ta, mu
+	vmsltu.vx	v0, v10, a0
+	lui	a0, 8
+	vand.vx	v8, v12, a0, v0.t
+	ret

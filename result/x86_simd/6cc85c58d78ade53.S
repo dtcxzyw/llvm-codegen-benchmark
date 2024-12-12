@@ -1,5 +1,5 @@
 .LCPI0_0:
-	.quad	24                              # 0x18
+	.quad	104                             # 0x68
 func0000000000000003:                   # @func0000000000000003
 	vpextrd	$1, %xmm0, %eax
 	vpextrd	$1, %xmm1, %ecx

@@ -1,13 +1,11 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/kitSop.c.ll
 ; abc/optimized/llb3Nonlin.c.ll
-; abc/optimized/lpkMux.c.ll
 ; abc/optimized/mvcLits.c.ll
 ; abc/optimized/rpo.c.ll
 ; libquic/optimized/url_canon_ip.cc.ll
-; linux/optimized/thermal_trip.ll
 ; minetest/optimized/mg_ore.cpp.ll
 ; opencv/optimized/accum_layer.cpp.ll
 ; opencv/optimized/minmax.cpp.ll
@@ -17,6 +15,7 @@
 ; redis/optimized/redis-cli.ll
 ; tree-sitter-rs/optimized/2840d04zhlx99x1w.ll
 ; tree-sitter-rs/optimized/2qhtbpqvpvignqt5.ll
+; zed-rs/optimized/5ta1fnasvc90k95zqql8ufc92.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000a(i32 %0, i32 %1, i1 %2) #0 {
 entry:
@@ -52,14 +51,13 @@ entry:
   ret i32 %4
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; abc/optimized/kitSop.c.ll
 ; abc/optimized/llb1Cluster.c.ll
 ; abc/optimized/llb1Sched.c.ll
 ; gromacs/optimized/tng_compress.c.ll
 ; icu/optimized/calendar.ll
 ; linux/optimized/intel_panel.ll
-; linux/optimized/thermal_trip.ll
 ; opencv/optimized/minmax.cpp.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; postgres/optimized/inet_cidr_ntop.ll

@@ -1,5 +1,5 @@
 
-; 244 occurrences:
+; 250 occurrences:
 ; abc/optimized/giaTtopt.cpp.ll
 ; abc/optimized/saigInd.c.ll
 ; assimp/optimized/AssbinFileWriter.cpp.ll
@@ -194,6 +194,7 @@
 ; redis/optimized/sentinel.ll
 ; redis/optimized/t_stream.ll
 ; ruby/optimized/coverage.ll
+; ruby/optimized/ractor.ll
 ; ruby/optimized/strftime.ll
 ; ruby/optimized/thread.ll
 ; slurm/optimized/job_mgr.ll
@@ -244,6 +245,11 @@
 ; z3/optimized/subpaving_mpff.cpp.ll
 ; z3/optimized/subpaving_mpfx.cpp.ll
 ; z3/optimized/subpaving_mpq.cpp.ll
+; zed-rs/optimized/0bnc87yviwo8pzd5mdfzedrf9.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0) #0 {
 entry:

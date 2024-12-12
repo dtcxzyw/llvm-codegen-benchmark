@@ -8,7 +8,7 @@ define i32 @func0000000000000004(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -16773121
   %4 = icmp eq i32 %3, 134217785
-  %5 = or i1 %4, %1
+  %5 = or i1 %1, %4
   %6 = select i1 %5, i32 134217728, i32 0
   %7 = or i32 %6, %0
   ret i32 %7
@@ -25,9 +25,9 @@ define i32 @func0000000000000005(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 61440
   %4 = icmp eq i32 %3, 8192
-  %5 = or i1 %4, %1
+  %5 = or i1 %1, %4
   %6 = select i1 %5, i32 0, i32 32
-  %7 = or disjoint i32 %6, %0
+  %7 = or disjoint i32 %0, %6
   ret i32 %7
 }
 

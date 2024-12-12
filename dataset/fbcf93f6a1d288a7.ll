@@ -1,9 +1,8 @@
 
-; 249 occurrences:
+; 248 occurrences:
 ; c3c/optimized/asm_target.c.ll
 ; cpython/optimized/obmalloc.ll
 ; folly/optimized/CacheLocality.cpp.ll
-; folly/optimized/F14Table.cpp.ll
 ; hermes/optimized/ES6Class.cpp.ll
 ; llvm/optimized/AArch64ExpandImm.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
@@ -253,7 +252,7 @@
 define i32 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 1055579395
-  %3 = xor i64 %2, %0
+  %3 = xor i64 %0, %2
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }

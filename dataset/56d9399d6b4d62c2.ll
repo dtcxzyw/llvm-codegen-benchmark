@@ -95,11 +95,11 @@ entry:
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/kitTruth.c.ll
 ; abc/optimized/mpmPre.c.ll
-; abc/optimized/sbdCnf.c.ll
 ; abc/optimized/sfmCnf.c.ll
 ; abc/optimized/sswSat.c.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/core.ll
 ; clamav/optimized/crypt.cpp.ll
 ; clamav/optimized/mszipd.c.ll
 ; clamav/optimized/rijndael.c.ll

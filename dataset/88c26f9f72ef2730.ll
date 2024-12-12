@@ -48,8 +48,9 @@ entry:
   ret i32 %3
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; linux/optimized/selinuxfs.ll
+; protobuf/optimized/map.cc.ll
 ; recastnavigation/optimized/RecastRegion.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0) #0 {
@@ -60,8 +61,9 @@ entry:
   ret i32 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; openusd/optimized/catmarkPatchBuilder.cpp.ll
+; protobuf/optimized/map.cc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0) #0 {
 entry:

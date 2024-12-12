@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 29 occurrences:
 ; bullet3/optimized/b3Generic6DofConstraint.ll
 ; bullet3/optimized/b3GpuNarrowPhase.ll
 ; bullet3/optimized/btMiniSDF.ll
@@ -28,6 +28,7 @@
 ; pbrt-v4/optimized/vecmath.cpp.ll
 ; raylib/optimized/rtextures.c.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:

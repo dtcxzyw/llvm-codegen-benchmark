@@ -9,7 +9,7 @@
 ; openjdk/optimized/mlib_ImageConv_u16nw.ll
 ; openmpi/optimized/coll_base_topo.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = freeze i32 %2
   %4 = add nsw i32 %3, %1
@@ -24,19 +24,18 @@ entry:
 define i1 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = freeze i32 %2
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = icmp sgt i32 %4, %0
   ret i1 %5
 }
 
-; 2 occurrences:
-; darktable/optimized/CrwDecompressor.cpp.ll
+; 1 occurrences:
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000035(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000065(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = freeze i32 %2
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = icmp ule i32 %4, %0
   ret i1 %5
 }
@@ -47,7 +46,7 @@ entry:
 define i1 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = freeze i32 %2
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = icmp uge i32 %4, %0
   ret i1 %5
 }
@@ -58,7 +57,7 @@ entry:
 define i1 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = freeze i32 %2
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = icmp ule i32 %4, %0
   ret i1 %5
 }
@@ -70,7 +69,7 @@ entry:
 define i1 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = freeze i32 %2
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = icmp ugt i32 %4, %0
   ret i1 %5
 }
@@ -79,10 +78,10 @@ entry:
 ; icu/optimized/package.ll
 ; zxing/optimized/BitMatrix.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = freeze i32 %2
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = icmp sgt i32 %4, %0
   ret i1 %5
 }
@@ -90,10 +89,10 @@ entry:
 ; 1 occurrences:
 ; wolfssl/optimized/pwdbased.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = freeze i32 %2
-  %4 = add nuw i32 %3, %1
+  %4 = add nuw i32 %1, %3
   %5 = icmp eq i32 %4, %0
   ret i1 %5
 }
@@ -104,7 +103,7 @@ entry:
 define i1 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = freeze i32 %2
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = icmp ult i32 %4, %0
   ret i1 %5
 }
@@ -124,7 +123,7 @@ entry:
 ; openexr/optimized/ImfDeepTiledInputFile.cpp.ll
 ; openexr/optimized/ImfTiledInputFile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = freeze i32 %2
   %4 = add nsw i32 %3, %1

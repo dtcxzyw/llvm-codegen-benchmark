@@ -1,5 +1,5 @@
 
-; 71 occurrences:
+; 70 occurrences:
 ; cmake/optimized/cmGeneratorTarget.cxx.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_chat.cpp.ll
@@ -62,8 +62,6 @@
 ; openusd/optimized/stagePopulationMask.cpp.ll
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; rust-analyzer-rs/optimized/10elsj6wik4dx3zk.ll
 ; rust-analyzer-rs/optimized/5djmpgt9ghwflvfq.ll
@@ -71,6 +69,7 @@
 ; rust-analyzer-rs/optimized/hajha7nvyoiczny.ll
 ; rustfmt-rs/optimized/3sx1t619hmuq0zz7.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
+; turborepo-rs/optimized/667fw7b0fgqo2a1672jmft41u.ll
 ; Function Attrs: nounwind
 define { i8, ptr } @func0000000000000000(ptr %0, i8 %1) #0 {
 entry:

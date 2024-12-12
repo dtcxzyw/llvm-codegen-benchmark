@@ -1,7 +1,6 @@
 
-; 48 occurrences:
+; 47 occurrences:
 ; abc/optimized/abc.c.ll
-; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/llb2Flow.c.ll
 ; abc/optimized/sclUpsize.c.ll
 ; cmake/optimized/archive_entry.c.ll
@@ -35,7 +34,6 @@
 ; openssl/optimized/quic_multistream_test-bin-quic_multistream_test.ll
 ; openssl/optimized/sslapitest-bin-filterprov.ll
 ; php/optimized/ir_emit.ll
-; php/optimized/mmap.ll
 ; postgres/optimized/mvdistinct.ll
 ; qemu/optimized/migration_block.c.ll
 ; qemu/optimized/system_runstate.c.ll
@@ -48,6 +46,7 @@
 ; z3/optimized/goal2sat.cpp.ll
 ; z3/optimized/recfun_decl_plugin.cpp.ll
 ; z3/optimized/sls_engine.cpp.ll
+; zed-rs/optimized/exy3mxytk4j1w94j908qbhdez.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i1 %0, i32 %1) #0 {
 entry:
@@ -57,7 +56,7 @@ entry:
   ret i32 %4
 }
 
-; 55 occurrences:
+; 52 occurrences:
 ; abc/optimized/bmcCexCare.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/sbdCut2.c.ll
@@ -84,24 +83,21 @@ entry:
 ; llvm/optimized/ReachingDefAnalysis.cpp.ll
 ; luajit/optimized/lj_cparse.ll
 ; luajit/optimized/lj_cparse_dyn.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; openblas/optimized/dbdsdc.c.ll
 ; openjdk/optimized/DefaultProxySelector.ll
 ; openjdk/optimized/superword.ll
-; openssl/optimized/asn1_internal_test-bin-asn1_internal_test.ll
 ; openssl/optimized/bftest-bin-bftest.ll
 ; openssl/optimized/ca_internals_test-bin-apps.ll
 ; openssl/optimized/cmp_ctx_test-bin-cmp_ctx_test.ll
 ; openssl/optimized/ectest-bin-ectest.ll
 ; openssl/optimized/exptest-bin-exptest.ll
 ; openssl/optimized/hpke_test-bin-hpke_test.ll
-; openssl/optimized/igetest-bin-igetest.ll
 ; openssl/optimized/libapps-lib-apps.ll
 ; openssl/optimized/libdefault-lib-dsa_kmgmt.ll
 ; openssl/optimized/libdefault-lib-ec_kmgmt.ll
 ; openssl/optimized/libssl-lib-dtls_meth.ll
 ; openssl/optimized/libssl-shlib-dtls_meth.ll
-; openssl/optimized/rc2test-bin-rc2test.ll
-; openssl/optimized/x509_time_test-bin-x509_time_test.ll
 ; postgres/optimized/gistxlog.ll
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; redis/optimized/eval.ll
@@ -123,24 +119,8 @@ entry:
 }
 
 ; 4 occurrences:
-; openssl/optimized/libcrypto-lib-x_int64.ll
-; openssl/optimized/libcrypto-shlib-x_int64.ll
-; openusd/optimized/decodeframe.c.ll
-; yosys/optimized/test_pmgen.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000c(i1 %0, i32 %1) #0 {
-entry:
-  %2 = icmp slt i32 %1, 0
-  %3 = select i1 %0, i1 %2, i1 false
-  %4 = zext i1 %3 to i32
-  ret i32 %4
-}
-
-; 6 occurrences:
 ; graphviz/optimized/strmatch.c.ll
-; icu/optimized/ubidiwrt.ll
 ; node/optimized/libnode.node_messaging.ll
-; opencv/optimized/edge_drawing.cpp.ll
 ; openjdk/optimized/cmsnamed.ll
 ; wireshark/optimized/packet-dcom-cba-acco.c.ll
 ; Function Attrs: nounwind
@@ -152,12 +132,13 @@ entry:
   ret i32 %4
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; cmake/optimized/cmParseCacheCoverage.cxx.ll
 ; darktable/optimized/tagging.c.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; graphviz/optimized/scan.c.ll
 ; gromacs/optimized/domdec_constraints.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; opencv/optimized/benchmark.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; velox/optimized/BaseVector.cpp.ll
@@ -172,15 +153,48 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; quantlib/optimized/cevrndcalculator.ll
 ; quantlib/optimized/squarerootclvmodel.ll
 ; quantlib/optimized/squarerootprocessrndcalculator.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000030(i1 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i32 %1, 1
+  %3 = select i1 %0, i1 %2, i1 false
+  %4 = zext i1 %3 to i32
+  ret i32 %4
+}
+
+; 2 occurrences:
+; openusd/optimized/decodeframe.c.ll
+; yosys/optimized/test_pmgen.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000c(i1 %0, i32 %1) #0 {
+entry:
+  %2 = icmp slt i32 %1, 65536
+  %3 = select i1 %0, i1 %2, i1 false
+  %4 = zext i1 %3 to i32
+  ret i32 %4
+}
+
+; 1 occurrences:
 ; wireshark/optimized/packet-mswsp.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i1 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %1, 1
+  %2 = icmp ugt i32 %1, 65535
+  %3 = select i1 %0, i1 %2, i1 false
+  %4 = zext i1 %3 to i32
+  ret i32 %4
+}
+
+; 1 occurrences:
+; opencv/optimized/edge_drawing.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000028(i1 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 2
   %3 = select i1 %0, i1 %2, i1 false
   %4 = zext i1 %3 to i32
   ret i32 %4

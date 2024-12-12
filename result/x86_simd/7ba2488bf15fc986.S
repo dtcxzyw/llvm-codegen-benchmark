@@ -20,7 +20,7 @@ func0000000000000002:                   # @func0000000000000002
 	vorps	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	retq
 .LCPI3_0:
-	.long	65536                           # 0x10000
+	.long	8                               # 0x8
 func0000000000000006:                   # @func0000000000000006
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k1

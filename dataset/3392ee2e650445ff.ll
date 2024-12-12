@@ -1,10 +1,11 @@
 
-; 18 occurrences:
+; 19 occurrences:
 ; darktable/optimized/introspection_colorchecker.c.ll
 ; git/optimized/notes-merge.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; minetest/optimized/CFileSystem.cpp.ll
 ; nuklear/optimized/unity.c.ll
@@ -19,7 +20,7 @@
 ; verilator/optimized/V3Number.cpp.ll
 ; zxing/optimized/PDFDetectionResult.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000016a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000004ca(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp sgt i32 %3, -1
@@ -28,14 +29,15 @@ entry:
   ret i1 %6
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/to_chars.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; openusd/optimized/AVIFImage.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
 ; rocksdb/optimized/compaction.cc.ll
 ; wireshark/optimized/lemon.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000ca(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = icmp sgt i32 %3, -1
@@ -276,7 +278,7 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000016c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000004cc(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp ne i32 %3, 0
@@ -286,13 +288,13 @@ entry:
 }
 
 ; 1 occurrences:
-; assimp/optimized/B3DImporter.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000147(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %1, %2
-  %4 = icmp sgt i32 %3, -1
-  %5 = icmp ult i32 %3, %0
+  %3 = add i32 %1, %2
+  %4 = icmp sle i32 %3, %0
+  %5 = icmp sgt i32 %3, 0
   %6 = and i1 %4, %5
   ret i1 %6
 }
@@ -302,7 +304,7 @@ entry:
 ; draco/optimized/mesh_attribute_corner_table.cc.ll
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000018c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = icmp ne i32 %3, %0
@@ -314,7 +316,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-reload.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000008a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = icmp sgt i32 %3, -1
@@ -326,7 +328,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-reload.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000024a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000088a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %1, %2
   %4 = icmp sgt i32 %3, -1
@@ -339,7 +341,7 @@ entry:
 ; icu/optimized/ufmt_cmn.ll
 ; openspiel/optimized/chess_board.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a6(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000546(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp slt i32 %3, %0
@@ -351,7 +353,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/infostate_tree_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003cc(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000d8c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = icmp ne i32 %3, 0
@@ -363,7 +365,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/imagelogpolprojection.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000184(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = icmp ult i32 %3, %0
@@ -375,7 +377,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/imagelogpolprojection.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000008c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = icmp ult i32 %3, %0
@@ -387,7 +389,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/contrast_preserve.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003c7(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000d87(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = icmp sle i32 %3, %0

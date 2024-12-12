@@ -1,5 +1,5 @@
 
-; 324 occurrences:
+; 326 occurrences:
 ; abseil-cpp/optimized/charconv_parse.cc.ll
 ; cmake/optimized/archive_read_support_format_tar.c.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
@@ -102,6 +102,8 @@
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/cistpl.ll
 ; llama.cpp/optimized/grammar-parser.cpp.ll
+; llvm/optimized/AttributorAttributes.cpp.ll
+; llvm/optimized/CoroFrame.cpp.ll
 ; luau/optimized/Transpiler.cpp.ll
 ; luau/optimized/isocline.c.ll
 ; oiio/optimized/argparse.cpp.ll
@@ -325,39 +327,44 @@
 ; wireshark/optimized/packet-dis.c.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i8 %0, i1 %1, i8 %2) #0 {
+define i1 @func0000000000000208(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = add i8 %2, 59
   %4 = icmp ult i8 %3, 5
-  %5 = or i1 %4, %1
+  %5 = or i1 %1, %4
   %6 = icmp ult i8 %0, 17
   %7 = or i1 %6, %5
   ret i1 %7
 }
 
-; 16 occurrences:
+; 21 occurrences:
 ; git/optimized/sh-i18n--envsubst.ll
 ; hermes/optimized/Executor.cpp.ll
 ; hyperscan/optimized/ng_find_matches.cpp.ll
 ; llvm/optimized/AsmWriterEmitter.cpp.ll
 ; llvm/optimized/AsmWriterInst.cpp.ll
+; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/BitcodeWriter.cpp.ll
+; llvm/optimized/CoroFrame.cpp.ll
+; llvm/optimized/EarlyCSE.cpp.ll
 ; llvm/optimized/MCAsmInfoXCOFF.cpp.ll
-; llvm/optimized/SemaChecking.cpp.ll
+; llvm/optimized/ScalarEvolution.cpp.ll
 ; opencv/optimized/persistence_yml.cpp.ll
 ; openmpi/optimized/mpl_argstr.ll
 ; protobuf/optimized/tokenizer.cc.ll
 ; re2/optimized/dfa.cc.ll
 ; re2/optimized/prog.cc.ll
 ; regex-rs/optimized/6c2onrqlphpgxx0.ll
+; ruby/optimized/regexec.ll
+; ruby/optimized/symbol.ll
 ; velox/optimized/Sequence.cpp.ll
 ; wireshark/optimized/packet-dis.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000102(i8 %0, i1 %1, i8 %2) #0 {
+define i1 @func0000000000000202(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = add i8 %2, -65
   %4 = icmp ult i8 %3, 26
-  %5 = or i1 %4, %1
+  %5 = or i1 %1, %4
   %6 = icmp eq i8 %0, 95
   %7 = or i1 %6, %5
   ret i1 %7
@@ -368,11 +375,11 @@ entry:
 ; php/optimized/zend_ast.ll
 ; wireshark/optimized/packet-memcache.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000110(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000210(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add i8 %2, -48
   %4 = icmp ult i8 %3, 10
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   %6 = icmp ult i8 %1, 26
   %7 = or i1 %5, %6
   ret i1 %7
@@ -381,11 +388,11 @@ entry:
 ; 1 occurrences:
 ; stb/optimized/stb_c_lexer.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000118(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000218(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add i8 %2, -65
   %4 = icmp ult i8 %3, 26
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   %6 = icmp slt i8 %1, 0
   %7 = or i1 %5, %6
   ret i1 %7

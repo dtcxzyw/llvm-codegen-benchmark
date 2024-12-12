@@ -1,5 +1,5 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; llvm/optimized/LiveRangeEdit.cpp.ll
 ; llvm/optimized/LocalStackSlotAllocation.cpp.ll
 ; llvm/optimized/PrologEpilogInserter.cpp.ll
@@ -7,8 +7,9 @@
 ; llvm/optimized/StackColoring.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; ruby/optimized/compile.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub i32 %3, %1
@@ -25,7 +26,7 @@ entry:
 ; nuklear/optimized/unity.c.ll
 ; rocksdb/optimized/backup_engine.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub i32 %3, %1
@@ -38,7 +39,7 @@ entry:
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
 ; llvm/optimized/StackFrameLayoutAnalysisPass.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub i32 %3, %1
@@ -64,7 +65,7 @@ entry:
 ; llvm/optimized/Metadata.cpp.ll
 ; pbrt-v4/optimized/image.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000e1(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nsw i32 %3, %1

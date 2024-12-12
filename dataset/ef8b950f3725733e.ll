@@ -16,7 +16,7 @@ define i64 @func0000000000000001(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = xor i64 %3, -1
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = select i1 %0, i64 -1, i64 %5
   ret i64 %6
 }

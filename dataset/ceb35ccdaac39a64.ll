@@ -8,7 +8,7 @@ entry:
   %.masked = and i32 %1, -134086657
   %4 = or i32 %3, %.masked
   %.masked1 = and i32 %0, -130023425
-  %5 = or i32 %4, %.masked1
+  %5 = or i32 %.masked1, %4
   ret i32 %5
 }
 
@@ -38,7 +38,7 @@ define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 3
   %.masked = and i32 %1, -6
-  %4 = or i32 %3, %.masked
+  %4 = or i32 %.masked, %3
   %.masked1 = and i32 %0, -2
   %5 = or i32 %4, %.masked1
   ret i32 %5
@@ -51,7 +51,7 @@ define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 24
   %.masked = and i32 %1, -8355585
-  %4 = or i32 %3, %.masked
+  %4 = or i32 %.masked, %3
   %.masked1 = and i32 %0, -32513
   %5 = or i32 %4, %.masked1
   ret i32 %5

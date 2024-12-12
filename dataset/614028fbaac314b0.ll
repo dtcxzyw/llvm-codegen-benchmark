@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; abc/optimized/absRef.c.ll
 ; abc/optimized/cecChoice.c.ll
 ; abc/optimized/cecCorr.c.ll
@@ -13,7 +13,6 @@
 ; abc/optimized/wlcAbs.c.ll
 ; cpython/optimized/mpdecimal.ll
 ; graphviz/optimized/actions.c.ll
-; graphviz/optimized/timing.c.ll
 ; nix/optimized/gc.ll
 ; openblas/optimized/dgetrf_parallel.c.ll
 ; pbrt-v4/optimized/log.cpp.ll

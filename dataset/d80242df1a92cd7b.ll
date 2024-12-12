@@ -1,5 +1,7 @@
 
-; 60 occurrences:
+; 61 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/cvodes.c.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
@@ -34,7 +36,6 @@
 ; openblas/optimized/dgesvj.c.ll
 ; openblas/optimized/dgsvj0.c.ll
 ; openblas/optimized/dgsvj1.c.ll
-; openblas/optimized/dstein.c.ll
 ; openblas/optimized/dsyequb.c.ll
 ; opencv/optimized/arithm.dispatch.cpp.ll
 ; opencv/optimized/edge_drawing.cpp.ll
@@ -64,7 +65,7 @@
 define double @func0000000000000000(double %0, double %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to double
-  %4 = fmul double %3, %1
+  %4 = fmul double %1, %3
   %5 = fmul double %4, %0
   ret double %5
 }

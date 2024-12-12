@@ -24,7 +24,6 @@
 ; linux/optimized/xprtsock.ll
 ; llvm/optimized/IndirectCallPromotion.cpp.ll
 ; llvm/optimized/RDFRegisters.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
@@ -56,6 +55,7 @@
 ; ruby/optimized/euc_jp.ll
 ; ruby/optimized/regenc.ll
 ; wireshark/optimized/packet-rlc-lte.c.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -64,7 +64,7 @@ entry:
   ret i32 %4
 }
 
-; 39 occurrences:
+; 33 occurrences:
 ; abc/optimized/giaMf.c.ll
 ; clamav/optimized/clamdtop.c.ll
 ; clamav/optimized/pe.c.ll
@@ -75,25 +75,19 @@ entry:
 ; image-rs/optimized/fyek6fuqg0ocunt.ll
 ; linux/optimized/sbitmap.ll
 ; linux/optimized/seq_file.ll
-; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/ErlangGCPrinter.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; minetest/optimized/game.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; openjdk/optimized/freetypeScaler.ll
-; openjdk/optimized/jvm.ll
 ; postgres/optimized/basebackup_incremental.ll
 ; postgres/optimized/blkreftable.ll
 ; postgres/optimized/blkreftable_shlib.ll
 ; postgres/optimized/blkreftable_srv.ll
-; postgres/optimized/bufmgr.ll
 ; postgres/optimized/execExprInterp.ll
 ; postgres/optimized/execGrouping.ll
 ; postgres/optimized/filemap.ll
-; postgres/optimized/gistvacuum.ll
 ; postgres/optimized/load_manifest.ll
 ; postgres/optimized/namespace.ll
-; postgres/optimized/nbtree.ll
 ; postgres/optimized/nodeMemoize.ll
 ; postgres/optimized/pg_dumpall.ll
 ; postgres/optimized/pg_verifybackup.ll
@@ -132,17 +126,14 @@ entry:
   ret i32 %4
 }
 
-; 33 occurrences:
+; 24 occurrences:
 ; abc/optimized/dauCanon.c.ll
+; boost/optimized/options_description.ll
 ; cmake/optimized/zstd_opt.c.ll
-; darktable/optimized/introspection_ashift.c.ll
 ; faiss/optimized/hamming.cpp.ll
 ; git/optimized/progress.ll
 ; hyperscan/optimized/stream.c.ll
-; linux/optimized/addrconf.ll
-; linux/optimized/blk-merge.ll
 ; linux/optimized/compaction.ll
-; linux/optimized/devinet.ll
 ; linux/optimized/memmap.ll
 ; linux/optimized/rsrc_nonstatic.ll
 ; linux/optimized/sys.ll
@@ -151,20 +142,14 @@ entry:
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; minetest/optimized/connectionthreads.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; openjdk/optimized/logTagSet.ll
-; openjdk/optimized/output.ll
 ; openusd/optimized/tessellation.cpp.ll
 ; php/optimized/streams.ll
-; qemu/optimized/hw_net_e1000.c.ll
 ; quickjs/optimized/libbf.ll
-; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
-; recastnavigation/optimized/RecastContour.cpp.ll
-; recastnavigation/optimized/RecastMesh.cpp.ll
+; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; spike/optimized/vslidedown_vi.ll
 ; tev/optimized/ImageViewer.cpp.ll
 ; velox/optimized/MmapAllocator.cpp.ll
-; z3/optimized/sat_local_search.cpp.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i64 %1, i64 %2) #0 {
@@ -174,7 +159,45 @@ entry:
   ret i32 %4
 }
 
-; 16 occurrences:
+; 13 occurrences:
+; darktable/optimized/introspection_ashift.c.ll
+; linux/optimized/addrconf.ll
+; linux/optimized/blk-merge.ll
+; linux/optimized/devinet.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; opencv/optimized/apriltag_quad_thresh.cpp.ll
+; openjdk/optimized/output.ll
+; openusd/optimized/tessellation.cpp.ll
+; qemu/optimized/hw_net_e1000.c.ll
+; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
+; recastnavigation/optimized/RecastContour.cpp.ll
+; recastnavigation/optimized/RecastMesh.cpp.ll
+; z3/optimized/sat_local_search.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ult i64 %1, %2
+  %4 = select i1 %3, i32 %0, i32 0
+  ret i32 %4
+}
+
+; 7 occurrences:
+; clamav/optimized/pe.c.ll
+; llvm/optimized/CGBuiltin.cpp.ll
+; openjdk/optimized/freetypeScaler.ll
+; openjdk/optimized/jvm.ll
+; postgres/optimized/bufmgr.ll
+; postgres/optimized/gistvacuum.ll
+; postgres/optimized/nbtree.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000018(i32 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i64 %1, %2
+  %4 = select i1 %3, i32 %0, i32 1024
+  ret i32 %4
+}
+
+; 13 occurrences:
 ; abc/optimized/ifTune.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; glslang/optimized/linkValidate.cpp.ll
@@ -185,12 +208,9 @@ entry:
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/smooth.dispatch.cpp.ll
 ; openusd/optimized/quadRefinement.cpp.ll
-; openusd/optimized/tessellation.cpp.ll
 ; postgres/optimized/pg_amcheck.ll
 ; proxygen/optimized/AsyncTimeoutSet.cpp.ll
-; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
-; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i64 %1, i64 %2) #0 {
 entry:

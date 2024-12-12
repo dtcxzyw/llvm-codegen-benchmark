@@ -24,7 +24,7 @@ entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = uitofp nneg i32 %2 to double
   %4 = fmul double %3, 0x402921FB54442D18
-  %5 = fmul double %4, %0
+  %5 = fmul double %0, %4
   ret double %5
 }
 

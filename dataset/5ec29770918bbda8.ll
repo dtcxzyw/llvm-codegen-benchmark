@@ -14,7 +14,7 @@
 ; oiio/optimized/formatspec.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ptrtoint ptr %1 to i64
   %4 = sub i64 %3, %2
@@ -28,7 +28,7 @@ entry:
 ; nix/optimized/error.ll
 ; proxygen/optimized/ParseURL.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000024(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ptrtoint ptr %1 to i64
   %4 = sub i64 %3, %2
@@ -44,7 +44,7 @@ entry:
 ; llvm/optimized/Regex.cpp.ll
 ; proxygen/optimized/ParseURL.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000028(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ptrtoint ptr %1 to i64
   %4 = sub i64 %3, %2

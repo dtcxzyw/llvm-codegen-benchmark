@@ -3,7 +3,7 @@ func0000000000000001:                   # @func0000000000000001
 	testl	%eax, %eax
 	sete	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	shrxl	%esi, %edi, %eax
 	cmpl	$1114112, %eax                  # imm = 0x110000
 	setae	%al
@@ -13,9 +13,19 @@ func000000000000000c:                   # @func000000000000000c
 	cmpl	$1, %eax
 	setne	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	shrxl	%esi, %edi, %eax
 	cmpl	$16, %eax
+	setb	%al
+	retq
+func0000000000000008:                   # @func0000000000000008
+	shrxl	%esi, %edi, %eax
+	cmpl	$65536, %eax                    # imm = 0x10000
+	setae	%al
+	retq
+func0000000000000004:                   # @func0000000000000004
+	shrxl	%esi, %edi, %eax
+	cmpl	$16777216, %eax                 # imm = 0x1000000
 	setb	%al
 	retq
 func000000000000000a:                   # @func000000000000000a

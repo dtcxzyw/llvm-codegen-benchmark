@@ -11,11 +11,11 @@ define i16 @func0000000000000005(i16 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = zext i1 %2 to i16
-  %4 = or disjoint i16 %3, %0
+  %4 = or disjoint i16 %0, %3
   ret i16 %4
 }
 
-; 29 occurrences:
+; 28 occurrences:
 ; ocio/optimized/CPUProcessor.cpp.ll
 ; ocio/optimized/CTFTransform.cpp.ll
 ; ocio/optimized/Lut1DOpCPU.cpp.ll
@@ -37,7 +37,6 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -50,7 +49,7 @@ define i16 @func0000000000000004(i16 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = zext i1 %2 to i16
-  %4 = or i16 %3, %0
+  %4 = or i16 %0, %3
   ret i16 %4
 }
 
@@ -71,7 +70,7 @@ define i16 @func0000000000000031(i16 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = zext i1 %2 to i16
-  %4 = or disjoint i16 %3, %0
+  %4 = or disjoint i16 %0, %3
   ret i16 %4
 }
 
@@ -313,18 +312,18 @@ define i16 @func0000000000000030(i16 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = zext i1 %2 to i16
-  %4 = or i16 %3, %0
+  %4 = or i16 %0, %3
   ret i16 %4
 }
 
 ; 1 occurrences:
-; llvm/optimized/BitcodeWriter.cpp.ll
+; lvgl/optimized/lv_imagebutton.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000011(i16 %0, i32 %1) #0 {
+define i16 @func0000000000000010(i16 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 2
+  %2 = icmp ult i32 %1, 3
   %3 = zext i1 %2 to i16
-  %4 = or disjoint i16 %3, %0
+  %4 = or i16 %0, %3
   ret i16 %4
 }
 

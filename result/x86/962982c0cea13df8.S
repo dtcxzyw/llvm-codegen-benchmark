@@ -3,13 +3,6 @@ func0000000000000040:                   # @func0000000000000040
 	imulq	$152, %rsi, %rax
 	leaq	-152(%rax,%rdi), %rax
 	retq
-func0000000000000042:                   # @func0000000000000042
-	sarq	$2, %rdx
-	movabsq	$-3689348814741910323, %rax     # imm = 0xCCCCCCCCCCCCCCCD
-	imulq	%rdx, %rax
-	addq	%rdi, %rax
-	leaq	-256(%rax,%rsi,8), %rax
-	retq
 func0000000000000004:                   # @func0000000000000004
 	movq	%rdx, %rax
 	shrq	$63, %rax
@@ -27,14 +20,19 @@ func0000000000000006:                   # @func0000000000000006
 	leaq	8(%rax,%rsi,8), %rax
 	retq
 func0000000000000052:                   # @func0000000000000052
-	addq	%rdx, %rdi
 	leaq	(%rsi,%rsi,4), %rax
-	leaq	-80(%rdi,%rax,8), %rax
+	leaq	(%rdi,%rax,8), %rax
+	leaq	-80(%rdx,%rax), %rax
+	retq
+func0000000000000042:                   # @func0000000000000042
+	leaq	(%rsi,%rsi,2), %rax
+	leaq	(%rdi,%rax,8), %rax
+	leaq	-24(%rdx,%rax), %rax
 	retq
 func0000000000000056:                   # @func0000000000000056
-	addq	%rdx, %rdi
 	leaq	(%rsi,%rsi,2), %rax
-	leaq	-24(%rdi,%rax,8), %rax
+	leaq	(%rdi,%rax,8), %rax
+	leaq	-24(%rdx,%rax), %rax
 	retq
 func0000000000000014:                   # @func0000000000000014
 	movq	%rdx, %rax

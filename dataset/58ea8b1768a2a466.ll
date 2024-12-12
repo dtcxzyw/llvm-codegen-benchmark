@@ -1,6 +1,5 @@
 
-; 10 occurrences:
-; clamav/optimized/upack.c.ll
+; 9 occurrences:
 ; cpython/optimized/unicodedata.ll
 ; linux/optimized/alternative.ll
 ; linux/optimized/mempolicy.ll
@@ -20,7 +19,28 @@ entry:
   ret i64 %6
 }
 
-; 101 occurrences:
+; 10 occurrences:
+; gromacs/optimized/matio.cpp.ll
+; libquic/optimized/s3_srvr.c.ll
+; openjdk/optimized/barrierSetNMethod_x86.ll
+; openjdk/optimized/ciMethod.ll
+; openjdk/optimized/codeBlob.ll
+; openjdk/optimized/jvmciCompilerToVM.ll
+; openjdk/optimized/jvmciEnv.ll
+; openjdk/optimized/klassVtable.ll
+; openjdk/optimized/nmethod.ll
+; openjdk/optimized/whitebox.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000b(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %0
+  %6 = ptrtoint ptr %5 to i64
+  ret i64 %6
+}
+
+; 91 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/absGlaOld.c.ll
@@ -64,7 +84,6 @@ entry:
 ; abc/optimized/giaSim.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/giaSpeedup.c.ll
-; abc/optimized/giaSupMin.c.ll
 ; abc/optimized/giaSweep.c.ll
 ; abc/optimized/giaSweeper.c.ll
 ; abc/optimized/giaSwitch.c.ll
@@ -79,7 +98,6 @@ entry:
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; cmake/optimized/frm_driver.c.ll
 ; g2o/optimized/solver_dense.cpp.ll
-; gromacs/optimized/matio.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -93,21 +111,14 @@ entry:
 ; meshlab/optimized/ml_render_gui.cpp.ll
 ; opencv/optimized/datastructs.cpp.ll
 ; openexr/optimized/ImfSampleCountChannel.cpp.ll
-; openjdk/optimized/barrierSetNMethod_x86.ll
-; openjdk/optimized/ciMethod.ll
-; openjdk/optimized/codeBlob.ll
 ; openjdk/optimized/codeBuffer.ll
 ; openjdk/optimized/continuationFreezeThaw.ll
 ; openjdk/optimized/generateOopMap.ll
-; openjdk/optimized/jvmciCompilerToVM.ll
-; openjdk/optimized/jvmciEnv.ll
-; openjdk/optimized/klassVtable.ll
 ; openjdk/optimized/method.ll
 ; openjdk/optimized/methodData.ll
 ; openjdk/optimized/mlib_ImageAffine_NN.ll
 ; openjdk/optimized/nmethod.ll
 ; openjdk/optimized/sadis.ll
-; openjdk/optimized/whitebox.ll
 ; openspiel/optimized/battleship.cc.ll
 ; openspiel/optimized/first_sealed_auction.cc.ll
 ; openusd/optimized/decodeframe.c.ll
@@ -118,7 +129,6 @@ entry:
 ; openusd/optimized/yv12extend.c.ll
 ; php/optimized/zend_jit.ll
 ; php/optimized/zend_optimizer.ll
-; verilator/optimized/V3PreProc.cpp.ll
 ; yosys/optimized/fsm_opt.ll
 ; yosys/optimized/rtlil.ll
 ; zxing/optimized/Content.cpp.ll

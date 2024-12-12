@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; rust-analyzer-rs/optimized/54f0pj1u367tkav7.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = icmp slt i32 %0, 0
@@ -25,7 +25,7 @@ entry:
 ; 1 occurrences:
 ; libpng/optimized/pngwrite.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = icmp eq i32 %0, 0
@@ -44,11 +44,12 @@ entry:
   ret i64 %3
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; regex-rs/optimized/3q3ceyp25m3d5uar.ll
 ; regex-rs/optimized/rrg5bgs95wzff0u.ll
 ; wasmtime-rs/optimized/3r0osxvwe4cd326n.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
@@ -61,7 +62,7 @@ entry:
 ; 1 occurrences:
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = icmp ult i32 %0, 385875968
@@ -83,7 +84,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ucoleitr.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i64 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %0, 2
   %narrow = select i1 %2, i32 %1, i32 0

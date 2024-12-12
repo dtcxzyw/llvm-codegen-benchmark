@@ -60,7 +60,7 @@ func0000000000000001:                   # @func0000000000000001
 	.zero	1
 .LCPI1_3:
 	.byte	4                               # 0x4
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	vptestnmq	.LCPI1_0(%rip){1to4}, %ymm0, %k1
 	vpbroadcastb	.LCPI1_3(%rip), %xmm0   # xmm0 = [4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4]
 	vmovdqu8	.LCPI1_2(%rip), %xmm0 {%k1}     # xmm0 {%k1} = [5,5,5,5,u,u,u,u,u,u,u,u,u,u,u,u]

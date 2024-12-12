@@ -16,7 +16,7 @@ define i64 @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = and i64 %2, 2
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = or disjoint i64 %4, 4
   ret i64 %5
 }
@@ -45,7 +45,7 @@ define i64 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 18
   %3 = and i64 %2, 35184372088832
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = or i64 %4, 2097152
   ret i64 %5
 }

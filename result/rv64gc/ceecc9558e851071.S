@@ -20,6 +20,15 @@ func00000000000000f8:                   # @func00000000000000f8
 	lui	a1, 16
 	add	a0, a0, a1
 	ret
+func00000000000000ec:                   # @func00000000000000ec
+	slli	a2, a2, 8
+	slli	a1, a1, 32
+	or	a1, a1, a2
+	li	a2, -19
+	or	a0, a0, a1
+	srli	a2, a2, 1
+	add	a0, a0, a2
+	ret
 func00000000000000fb:                   # @func00000000000000fb
 	slli	a2, a2, 16
 	slli	a1, a1, 24

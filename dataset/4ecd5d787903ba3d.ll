@@ -8,30 +8,8 @@ define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 299
   %4 = sdiv i32 %3, 400
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = add nsw i32 %5, %0
-  ret i32 %6
-}
-
-; 11 occurrences:
-; cpython/optimized/_datetimemodule.ll
-; cpython/optimized/_zoneinfo.ll
-; libquic/optimized/time_support.c.ll
-; linux/optimized/intel_panel.ll
-; luau/optimized/loslib.cpp.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; postgres/optimized/dt_common.ll
-; sqlite/optimized/sqlite3.ll
-; velox/optimized/PrestoSerializer.cpp.ll
-; wireshark/optimized/packet-smb.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add i32 %2, 7012800
-  %4 = sdiv i32 %3, 4
-  %5 = add i32 %4, %1
-  %6 = add i32 %5, %0
   ret i32 %6
 }
 
@@ -48,12 +26,33 @@ define i32 @func0000000000000025(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 16
   %4 = sdiv i32 %3, 16
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 
-; 5 occurrences:
+; 9 occurrences:
+; cpython/optimized/_datetimemodule.ll
+; cpython/optimized/_zoneinfo.ll
+; libquic/optimized/time_support.c.ll
+; linux/optimized/intel_panel.ll
+; luau/optimized/loslib.cpp.ll
+; postgres/optimized/dt_common.ll
+; sqlite/optimized/sqlite3.ll
+; velox/optimized/PrestoSerializer.cpp.ll
+; wireshark/optimized/packet-smb.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %2, 7
+  %4 = sdiv i32 %3, 8
+  %5 = add i32 %1, %4
+  %6 = add i32 %5, %0
+  ret i32 %6
+}
+
+; 6 occurrences:
+; boost/optimized/gregorian.ll
 ; cmake/optimized/archive_getdate.c.ll
 ; cpython/optimized/_datetimemodule.ll
 ; libwebp/optimized/cwebp.c.ll
@@ -62,9 +61,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000020(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, 7
-  %4 = sdiv i32 %3, 8
-  %5 = add i32 %4, %1
+  %3 = add nsw i32 %2, -1
+  %4 = sdiv i32 %3, 400
+  %5 = add i32 %1, %4
   %6 = add i32 %5, %0
   ret i32 %6
 }
@@ -90,7 +89,7 @@ define i32 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = sdiv i32 %3, 400
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = add i32 %5, %0
   ret i32 %6
 }

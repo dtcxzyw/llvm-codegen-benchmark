@@ -4,7 +4,7 @@
 	.long	1                               # 0x1
 .LCPI0_2:
 	.long	2                               # 0x2
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vptestmq	.LCPI0_0(%rip){1to4}, %ymm1, %k1
 	vandps	.LCPI0_1(%rip){1to4}, %xmm0, %xmm0
 	vorps	.LCPI0_2(%rip){1to4}, %xmm0, %xmm0 {%k1}
@@ -58,7 +58,7 @@ func0000000000000021:                   # @func0000000000000021
 	.long	1                               # 0x1
 .LCPI1_3:
 	.long	4                               # 0x4
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	vpandq	.LCPI1_4(%rip){1to4}, %ymm1, %ymm1
 	vpcmpeqq	.LCPI1_1(%rip){1to4}, %ymm1, %k1
 	vandps	.LCPI1_2(%rip){1to4}, %xmm0, %xmm0

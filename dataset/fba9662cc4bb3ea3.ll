@@ -7,14 +7,13 @@ define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 2147483647
   %3 = and i32 %2, 1431655765
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   ret i32 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; gromacs/optimized/gmx_nmens.cpp.ll
 ; minetest/optimized/c_converter.cpp.ll
-; redis/optimized/rax.ll
 ; wireshark/optimized/msg_ulmap.c.ll
 ; wireshark/optimized/packet-reload.c.ll
 ; Function Attrs: nounwind
@@ -22,12 +21,11 @@ define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 65535
   %3 = and i32 %2, 65535
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
-; 20 occurrences:
-; abc/optimized/satUtil.c.ll
+; 19 occurrences:
 ; arrow/optimized/float16.cc.ll
 ; libsodium/optimized/libsodium_la-codecs.ll
 ; linux/optimized/drm_modes.ll
@@ -78,11 +76,11 @@ define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = and i32 %2, 3
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
-; 79 occurrences:
+; 77 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; clamav/optimized/bytecode_vm.c.ll
 ; clamav/optimized/cpio.c.ll
@@ -107,8 +105,6 @@ entry:
 ; linux/optimized/intel_guc_ads.ll
 ; linux/optimized/mon_bin.ll
 ; linux/optimized/nfs4xdr.ll
-; linux/optimized/readdir.ll
-; linux/optimized/rss.ll
 ; linux/optimized/rx.ll
 ; linux/optimized/security.ll
 ; linux/optimized/slab_common.ll
@@ -167,7 +163,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 2
   %3 = and i32 %2, -4
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -237,11 +233,11 @@ define i32 @func000000000000000d(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 7
   %3 = and i32 %2, 24
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; hermes/optimized/dtoa.c.ll
 ; icu/optimized/rbbirb.ll
 ; imgui/optimized/imgui_tables.cpp.ll
@@ -249,6 +245,7 @@ entry:
 ; libquic/optimized/dtoa.cc.ll
 ; libquic/optimized/error_correction.c.ll
 ; libwebp/optimized/sharpyuv.c.ll
+; lvgl/optimized/lv_draw_sw_line.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; openusd/optimized/yv12config.c.ll
 ; php/optimized/ir_emit.ll
@@ -261,7 +258,7 @@ define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 15
   %3 = and i32 %2, -16
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -296,7 +293,7 @@ define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = xor i32 %2, 1
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   ret i32 %4
 }
 
@@ -320,7 +317,7 @@ define i32 @func0000000000000009(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 1
   %3 = and i32 %2, 2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -356,7 +353,7 @@ define i32 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 3
   %3 = and i32 %2, -4
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   ret i32 %4
 }
 

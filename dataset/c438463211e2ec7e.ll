@@ -11,18 +11,6 @@ entry:
   ret i32 %3
 }
 
-; 3 occurrences:
-; darktable/optimized/introspection_basicadj.c.ll
-; meshlab/optimized/filter_texture.cpp.ll
-; minetest/optimized/c_content.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000007(i32 %0, float %1) #0 {
-entry:
-  %2 = fcmp une float %1, 0.000000e+00
-  %3 = select i1 %2, i32 %0, i32 0
-  ret i32 %3
-}
-
 ; 1 occurrences:
 ; openjdk/optimized/cmsintrp.ll
 ; Function Attrs: nounwind
@@ -68,6 +56,17 @@ entry:
   ret i32 %3
 }
 
+; 2 occurrences:
+; darktable/optimized/introspection_basicadj.c.ll
+; meshlab/optimized/filter_texture.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000007(i32 %0, float %1) #0 {
+entry:
+  %2 = fcmp une float %1, 0.000000e+00
+  %3 = select i1 %2, i32 %0, i32 0
+  ret i32 %3
+}
+
 ; 1 occurrences:
 ; nuklear/optimized/unity.c.ll
 ; Function Attrs: nounwind
@@ -84,19 +83,6 @@ entry:
 define i32 @func0000000000000008(i32 %0, float %1) #0 {
 entry:
   %2 = fcmp oeq float %1, 0.000000e+00
-  %3 = select i1 %2, i32 %0, i32 0
-  ret i32 %3
-}
-
-; 4 occurrences:
-; meshlab/optimized/cube_style_single_iteration.cpp.ll
-; meshlab/optimized/filter_cubization.cpp.ll
-; meshlab/optimized/fit_rotations_l1.cpp.ll
-; meshlab/optimized/orthogonal_procrustes.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000c(i32 %0, float %1) #0 {
-entry:
-  %2 = fcmp oge float %1, 0x3D71979980000000
   %3 = select i1 %2, i32 %0, i32 0
   ret i32 %3
 }

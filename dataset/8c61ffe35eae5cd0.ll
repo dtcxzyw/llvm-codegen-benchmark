@@ -1,5 +1,6 @@
 
-; 39 occurrences:
+; 40 occurrences:
+; boost/optimized/rational.ll
 ; clamav/optimized/bytecode_vm.c.ll
 ; duckdb/optimized/ub_duckdb_func_cast.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_math.cpp.ll
@@ -47,10 +48,11 @@ entry:
   ret i16 %3
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
 ; openspiel/optimized/rbc.cc.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000001(i32 %0, i32 %1) #0 {

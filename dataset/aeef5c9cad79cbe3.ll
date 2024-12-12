@@ -6,8 +6,8 @@
 define i1 @func0000000000000006(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, 6.250000e-02
-  %4 = fcmp ugt double %3, %1
-  %5 = or i1 %4, %0
+  %4 = fcmp ult double %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -17,12 +17,24 @@ entry:
 define i1 @func000000000000001a(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, 0x3FF00068E0000000
-  %4 = fcmp ule double %3, %1
-  %5 = or i1 %4, %0
+  %4 = fcmp uge double %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 41 occurrences:
+; 53 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
 ; gromacs/optimized/lmmin.cpp.ll
 ; quantlib/optimized/analyticptdhestonengine.ll
 ; quantlib/optimized/blackformula.ll
@@ -68,8 +80,8 @@ entry:
 define i1 @func0000000000000014(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, 0x3D05000000000000
-  %4 = fcmp oge double %3, %1
-  %5 = or i1 %4, %0
+  %4 = fcmp ole double %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -82,8 +94,8 @@ entry:
 define i1 @func0000000000000008(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, 0x3FE6666666666666
-  %4 = fcmp olt double %3, %1
-  %5 = or i1 %4, %0
+  %4 = fcmp ogt double %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -98,12 +110,14 @@ entry:
 define i1 @func0000000000000004(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, 2.000000e+00
-  %4 = fcmp ogt double %3, %1
-  %5 = or i1 %4, %0
+  %4 = fcmp olt double %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 4 occurrences:
+; 6 occurrences:
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; graphviz/optimized/shapes.c.ll
 ; gromacs/optimized/read_params.cpp.ll
 ; z3/optimized/smt_lookahead.cpp.ll
@@ -111,8 +125,8 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i1 %0, double %1, double %2) #0 {
 entry:
-  %3 = fmul double %2, 5.000000e-01
-  %4 = fcmp ult double %3, %1
+  %3 = fmul double %2, 0x3CB0000000000000
+  %4 = fcmp ugt double %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -124,8 +138,8 @@ entry:
 define i1 @func0000000000000016(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, 1.010000e+00
-  %4 = fcmp uge double %3, %1
-  %5 = or i1 %4, %0
+  %4 = fcmp ule double %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -135,7 +149,7 @@ entry:
 define i1 @func0000000000000010(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, 0x400921FB54442D18
-  %4 = fcmp oeq double %3, %1
+  %4 = fcmp oeq double %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -146,7 +160,7 @@ entry:
 define i1 @func000000000000000e(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, 1.000000e+03
-  %4 = fcmp une double %3, %1
+  %4 = fcmp une double %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }

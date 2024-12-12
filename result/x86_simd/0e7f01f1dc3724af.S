@@ -1,8 +1,8 @@
 .LCPI0_0:
-	.long	1431655765                      # 0x55555555
+	.long	252645135                       # 0xf0f0f0f
 func0000000000000002:                   # @func0000000000000002
 	vpandd	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
-	vpslld	$8, %ymm0, %ymm0
+	vpslld	$16, %ymm0, %ymm0
 	vpternlogd	$150, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 ^ ymm2 ^ ymm1
 	retq
 func0000000000000000:                   # @func0000000000000000

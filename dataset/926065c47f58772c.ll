@@ -6,7 +6,7 @@
 ; assimp/optimized/glTFImporter.cpp.ll
 ; opencc/optimized/Config.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000041(i64 %0, i64 %1, i32 %2) #0 {
+define i32 @func0000000000000081(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 13, %2
   %4 = trunc i64 %1 to i32
@@ -19,7 +19,7 @@ entry:
 ; hdf5/optimized/H5Tbit.c.ll
 ; linux/optimized/gen8_ppgtt.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c4(i64 %0, i64 %1, i32 %2) #0 {
+define i32 @func0000000000000184(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 8, %2
   %4 = trunc i64 %1 to i32

@@ -1,8 +1,6 @@
 
-; 26 occurrences:
-; gromacs/optimized/dlaruv.cpp.ll
+; 24 occurrences:
 ; gromacs/optimized/pairlist.cpp.ll
-; gromacs/optimized/slaruv.cpp.ll
 ; ncnn/optimized/convolution1d_x86.cpp.ll
 ; ncnn/optimized/convolution1d_x86_avx.cpp.ll
 ; ncnn/optimized/convolution1d_x86_avx512.cpp.ll

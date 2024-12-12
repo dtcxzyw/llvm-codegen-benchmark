@@ -5,14 +5,14 @@ func00000000000000c1:                   # @func00000000000000c1
 	setp	%al
 	andb	%cl, %al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vucomisd	%xmm0, %xmm0
 	setp	%cl
 	cmpb	$3, %dil
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vucomisd	%xmm0, %xmm0
 	setp	%cl
 	cmpb	$7, %dil

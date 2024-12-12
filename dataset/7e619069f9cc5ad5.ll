@@ -5,7 +5,7 @@
 ; minetest/optimized/content_mapblock.cpp.ll
 ; wireshark/optimized/packet-tcp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000061(i8 %0, i8 %1) #0 {
 entry:
   %2 = or disjoint i8 %0, %1
   %3 = and i8 %2, 3

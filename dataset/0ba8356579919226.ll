@@ -23,7 +23,6 @@ entry:
 ; brotli/optimized/encode.c.ll
 ; clamav/optimized/regex_suffix.c.ll
 ; cmake/optimized/base64.c.ll
-; cmake/optimized/nghttp2_option.c.ll
 ; curl/optimized/libcurl_la-base64.ll
 ; git/optimized/notes.ll
 ; grpc/optimized/b64.cc.ll
@@ -32,6 +31,7 @@ entry:
 ; libquic/optimized/wnaf.c.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/SemaOverload.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meilisearch-rs/optimized/54ajasddlqavlxt2.ll
 ; minetest/optimized/base64.cpp.ll
@@ -49,11 +49,11 @@ entry:
 ; rust-analyzer-rs/optimized/4ij72b67lj8l3d8u.ll
 ; rust-analyzer-rs/optimized/558lcqqd41cqw6uz.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i8 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %1, 1
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr nusw ptr, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw ptr, ptr %0, i64 %3
   ret ptr %4
 }
 

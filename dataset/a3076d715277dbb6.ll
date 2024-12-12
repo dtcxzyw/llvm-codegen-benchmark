@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 26 occurrences:
 ; assimp/optimized/AMFImporter_Postprocess.cpp.ll
 ; hyperscan/optimized/rose_build_convert.cpp.ll
 ; just-rs/optimized/uwydcyn8qeoqoev.ll
@@ -22,6 +22,10 @@
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
 ; tev/optimized/Common.cpp.ll
 ; yaml-cpp/optimized/binary.cpp.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/3syn8d61makvd8ra76uhpcrmo.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -49,6 +53,7 @@ entry:
 ; 62 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree_reader_test.cc.ll
 ; actix-rs/optimized/4jlfyqkak9x9x2yv.ll
+; boost/optimized/static_string.ll
 ; cmake/optimized/cmMakefile.cxx.ll
 ; cmake/optimized/vtls.c.ll
 ; curl/optimized/libcurl_la-vtls.ll
@@ -107,7 +112,6 @@ entry:
 ; openmpi/optimized/ptl_base_connection_hdlr.ll
 ; php/optimized/state.ll
 ; qemu/optimized/linux-user_linuxload.c.ll
-; rust-analyzer-rs/optimized/55rapmz9wj276hro.ll
 ; zxing/optimized/HRI.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
@@ -127,7 +131,7 @@ define i64 @func0000000000000009(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, %0
   %4 = xor i64 %3, -1
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   ret i64 %5
 }
 

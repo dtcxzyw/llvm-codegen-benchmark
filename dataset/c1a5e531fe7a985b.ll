@@ -1,5 +1,6 @@
 
-; 1 occurrences:
+; 2 occurrences:
+; pbrt-v4/optimized/integrators.cpp.ll
 ; wireshark/optimized/tap-iostat.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, i64 %1, i32 %2) #0 {

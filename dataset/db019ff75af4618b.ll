@@ -10,7 +10,7 @@
 ; spike/optimized/clrs32.ll
 ; spike/optimized/clz32.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000029(i32 %0, i1 %1) #0 {
+define i32 @func0000000000000049(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 16, i32 0
   %3 = or disjoint i32 %2, 8
@@ -20,7 +20,8 @@ entry:
   ret i32 %6
 }
 
-; 12 occurrences:
+; 13 occurrences:
+; boost/optimized/ipc_reliable_message_queue.ll
 ; casadi/optimized/tinyxml2.cpp.ll
 ; cpython/optimized/dtoa.ll
 ; eastl/optimized/TestBitset.cpp.ll
@@ -34,7 +35,7 @@ entry:
 ; ruby/optimized/util.ll
 ; z3/optimized/mpz.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000023(i32 %0, i1 %1) #0 {
+define i32 @func0000000000000043(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 16, i32 0
   %3 = or disjoint i32 %2, 8
@@ -53,11 +54,11 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i1 %1) #0 {
+define i32 @func0000000000000071(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 16, i32 0
   %3 = or disjoint i32 %2, 8
-  %4 = icmp ugt i32 %0, 255
+  %4 = icmp samesign ugt i32 %0, 255
   %5 = select i1 %4, i32 %3, i32 %2
   %6 = or disjoint i32 %5, 4
   ret i32 %6
@@ -66,7 +67,7 @@ entry:
 ; 1 occurrences:
 ; imgui/optimized/imgui_tables.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i32 %0, i1 %1) #0 {
+define i32 @func0000000000000042(i32 %0, i1 %1) #0 {
 entry:
   %2 = icmp eq i32 %0, 32768
   %3 = select i1 %2, i32 6, i32 2

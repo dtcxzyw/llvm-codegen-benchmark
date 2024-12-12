@@ -1,15 +1,14 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; darktable/optimized/common.c.ll
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
-; darktable/optimized/print_settings.c.ll
 ; darktable/optimized/snapshots.c.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; minetest/optimized/mod_configuration.cpp.ll
 ; qemu/optimized/source_s_shiftRightJam256M.c.ll
 ; spike/optimized/s_shiftRightJam256M.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %1
   %3 = and i64 %2, 7
@@ -23,7 +22,7 @@ entry:
 ; entt/optimized/meta_container.cpp.ll
 ; libdeflate/optimized/crc32.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 0, %1
   %3 = and i64 %2, 15
@@ -39,7 +38,7 @@ entry:
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; flatbuffers/optimized/reflection.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 0, %1
   %3 = and i64 %2, 3
@@ -52,7 +51,7 @@ entry:
 ; darktable/optimized/introspection_clahe.c.ll
 ; darktable/optimized/introspection_liquify.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000c1(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 99, %1
   %3 = and i64 %2, -32
@@ -65,7 +64,7 @@ entry:
 ; darktable/optimized/DngOpcodes.cpp.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 65536, %1
   %3 = and i64 %2, 131008
@@ -78,7 +77,7 @@ entry:
 ; darktable/optimized/DngOpcodes.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e1(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001c1(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 65536, %1
   %3 = and i64 %2, 131064

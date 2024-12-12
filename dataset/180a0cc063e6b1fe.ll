@@ -19,7 +19,7 @@ entry:
   %3 = fsub float %1, %2
   %4 = fpext float %3 to double
   %5 = fneg double %4
-  %6 = fmul double %5, %0
+  %6 = fmul double %0, %5
   ret double %6
 }
 

@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 25 occurrences:
 ; abc/optimized/giaLf.c.ll
 ; abc/optimized/giaMf.c.ll
 ; abc/optimized/giaNf.c.ll
@@ -22,7 +22,6 @@
 ; opencv/optimized/imagelogpolprojection.cpp.ll
 ; openjdk/optimized/g1Policy.ll
 ; openmpi/optimized/reachable_netlink_module.ll
-; openmpi/optimized/reachable_weighted.ll
 ; raylib/optimized/raudio.c.ll
 ; rocksdb/optimized/clock_cache.cc.ll
 ; slurm/optimized/priority_multifactor.ll
@@ -34,7 +33,7 @@ entry:
   ret double %2
 }
 
-; 100 occurrences:
+; 98 occurrences:
 ; abc/optimized/sswRarity.c.ll
 ; abseil-cpp/optimized/chi_square.cc.ll
 ; abseil-cpp/optimized/exponential_biased_test.cc.ll
@@ -78,8 +77,6 @@ entry:
 ; ncnn/optimized/interp_x86_avx512.cpp.ll
 ; ncnn/optimized/interp_x86_fma.cpp.ll
 ; ncnn/optimized/mat_pixel_resize.cpp.ll
-; openblas/optimized/dlacn2.c.ll
-; openblas/optimized/dlacon.c.ll
 ; openblas/optimized/dlatm1.c.ll
 ; openblas/optimized/dlatm7.c.ll
 ; opencv/optimized/ann_mlp.cpp.ll

@@ -1,4 +1,4 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	andl	$15, %esi
 	cmpl	%edi, %esi
 	movl	$-86400, %ecx                   # imm = 0xFFFEAE80
@@ -25,4 +25,18 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	%edi, %esi
 	seta	%al
 	leal	189(%rax,%rax), %eax
+	retq
+func0000000000000018:                   # @func0000000000000018
+	movzbl	%sil, %eax
+	xorl	%ecx, %ecx
+	cmpl	%edi, %eax
+	movl	$-22, %eax
+	cmovbel	%ecx, %eax
+	retq
+func0000000000000004:                   # @func0000000000000004
+	andl	$1073741823, %esi               # imm = 0x3FFFFFFF
+	xorl	%eax, %eax
+	cmpl	%edi, %esi
+	setb	%al
+	leal	16(%rax,%rax), %eax
 	retq

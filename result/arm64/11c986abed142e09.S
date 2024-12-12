@@ -9,9 +9,9 @@ func0000000000000002:                   // @func0000000000000002
 func000000000000003c:                   // @func000000000000003c
 // %bb.0:                               // %entry
 	sub	w8, w2, #15, lsl #12            // =61440
+	add	x9, x0, x1, lsl #2
 	and	x8, x8, #0xffffffe0
-	add	x8, x0, x8, lsl #2
-	add	x0, x8, x1, lsl #2
+	add	x0, x9, x8, lsl #2
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
@@ -54,7 +54,7 @@ func000000000000002a:                   // @func000000000000002a
 	add	x0, x9, x8
 	ret
                                         // -- End function
-func000000000000003e:                   // @func000000000000003e
+func000000000000003f:                   // @func000000000000003f
 // %bb.0:                               // %entry
 	add	w8, w2, #2
 	add	x9, x0, x1

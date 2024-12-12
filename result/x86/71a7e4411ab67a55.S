@@ -1,4 +1,4 @@
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	movl	%esi, %eax
 	subl	%edx, %eax
 	addl	%edi, %edx
@@ -19,40 +19,26 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	%esi, %edx
 	cmovbel	%edi, %eax
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	leal	(%rdi,%rdx), %ecx
 	movl	%esi, %eax
 	subl	%edx, %eax
 	cmpl	%esi, %ecx
 	cmovbel	%edi, %eax
 	retq
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	leal	(%rdi,%rdx), %ecx
 	movl	%esi, %eax
 	subl	%edx, %eax
 	cmpl	%esi, %ecx
 	cmovlel	%edi, %eax
 	retq
-func00000000000000da:                   # @func00000000000000da
+func00000000000001aa:                   # @func00000000000001aa
 	leal	(%rdi,%rdx), %ecx
 	movl	%esi, %eax
 	subl	%edx, %eax
 	cmpl	%esi, %ecx
 	cmovlel	%edi, %eax
-	retq
-func0000000000000018:                   # @func0000000000000018
-	movl	%esi, %eax
-	subl	%edx, %eax
-	addl	%edi, %edx
-	cmpl	%esi, %edx
-	cmovbel	%edi, %eax
-	retq
-func0000000000000048:                   # @func0000000000000048
-	leal	(%rdi,%rdx), %ecx
-	movl	%esi, %eax
-	subl	%edx, %eax
-	cmpl	%esi, %ecx
-	cmovbel	%edi, %eax
 	retq
 func0000000000000028:                   # @func0000000000000028
 	movl	%esi, %eax
@@ -61,17 +47,24 @@ func0000000000000028:                   # @func0000000000000028
 	cmpl	%esi, %edx
 	cmovbel	%edi, %eax
 	retq
-func0000000000000056:                   # @func0000000000000056
-	leal	(%rdi,%rdx), %ecx
-	movl	%esi, %eax
-	subl	%edx, %eax
-	cmpl	%esi, %ecx
-	cmovgel	%edi, %eax
-	retq
-func0000000000000058:                   # @func0000000000000058
+func0000000000000088:                   # @func0000000000000088
 	leal	(%rdi,%rdx), %ecx
 	movl	%esi, %eax
 	subl	%edx, %eax
 	cmpl	%esi, %ecx
 	cmovbel	%edi, %eax
+	retq
+func0000000000000048:                   # @func0000000000000048
+	movl	%esi, %eax
+	subl	%edx, %eax
+	addl	%edi, %edx
+	cmpl	%esi, %edx
+	cmovbel	%edi, %eax
+	retq
+func00000000000000a6:                   # @func00000000000000a6
+	movl	%esi, %eax
+	subl	%edx, %eax
+	addl	%edi, %edx
+	cmpl	%esi, %edx
+	cmovgel	%edi, %eax
 	retq

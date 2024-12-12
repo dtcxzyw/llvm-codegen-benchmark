@@ -1,12 +1,5 @@
 
-; 71 occurrences:
-; llvm/optimized/IROutliner.cpp.ll
-; llvm/optimized/LoopPredication.cpp.ll
-; llvm/optimized/LoopStrengthReduce.cpp.ll
-; llvm/optimized/OpenMPOpt.cpp.ll
-; llvm/optimized/PlaceSafepoints.cpp.ll
-; llvm/optimized/SSAContext.cpp.ll
-; llvm/optimized/SemaDecl.cpp.ll
+; 65 occurrences:
 ; mold/optimized/main.cc.ALPHA.cc.ll
 ; mold/optimized/main.cc.ARM32.cc.ll
 ; mold/optimized/main.cc.ARM64.cc.ll
@@ -71,10 +64,28 @@
 ; openvdb/optimized/VolumeAdvect.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; openvdb/optimized/points.cc.ll
+; turborepo-rs/optimized/avd1ga9yb4qq5g7sdqftppd4q.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(i1 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 1456
+  %3 = ptrtoint ptr %2 to i64
+  %4 = select i1 %0, i64 %3, i64 0
+  ret i64 %4
+}
+
+; 7 occurrences:
+; llvm/optimized/IROutliner.cpp.ll
+; llvm/optimized/LoopPredication.cpp.ll
+; llvm/optimized/LoopStrengthReduce.cpp.ll
+; llvm/optimized/OpenMPOpt.cpp.ll
+; llvm/optimized/PlaceSafepoints.cpp.ll
+; llvm/optimized/SSAContext.cpp.ll
+; llvm/optimized/SemaDecl.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i1 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 1456
+  %2 = getelementptr nusw i8, ptr %1, i64 -24
   %3 = ptrtoint ptr %2 to i64
   %4 = select i1 %0, i64 %3, i64 0
   ret i64 %4

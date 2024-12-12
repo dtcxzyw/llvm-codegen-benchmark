@@ -1,4 +1,4 @@
-func000000000000003c:                   # @func000000000000003c
+func000000000000006c:                   # @func000000000000006c
 	li	a0, -1
 	srli	a0, a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -7,7 +7,7 @@ func000000000000003c:                   # @func000000000000003c
 	vmsne.vv	v12, v8, v10
 	vmand.mm	v0, v0, v12
 	ret
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	li	a0, -1
 	srli	a0, a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -16,7 +16,7 @@ func0000000000000034:                   # @func0000000000000034
 	vmsltu.vv	v12, v8, v10
 	vmand.mm	v0, v0, v12
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	lui	a0, 524288
 	addiw	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -25,7 +25,7 @@ func0000000000000016:                   # @func0000000000000016
 	vmslt.vv	v12, v8, v10
 	vmand.mm	v0, v0, v12
 	ret
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	lui	a0, 524288
 	addiw	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma

@@ -1,5 +1,5 @@
 
-; 32 occurrences:
+; 33 occurrences:
 ; bullet3/optimized/btSoftBody.ll
 ; freetype/optimized/sfnt.c.ll
 ; git/optimized/ls-tree.ll
@@ -32,22 +32,13 @@
 ; wireshark/optimized/packet-alljoyn.c.ll
 ; wireshark/optimized/packet-osmo_trx.c.ll
 ; wolfssl/optimized/ecc.c.ll
+; zed-rs/optimized/bktyyhuk5fekatq647qx0ox8v.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %0, i1 true, i1 %1
   %3 = xor i1 %2, true
   ret i1 %3
-}
-
-; 1 occurrences:
-; qemu/optimized/block_vhdx.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i1 %1) #0 {
-entry:
-  %not. = xor i1 %1, true
-  %2 = select i1 %0, i1 true, i1 %not.
-  ret i1 %2
 }
 
 attributes #0 = { nounwind }

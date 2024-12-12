@@ -5,7 +5,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 func000000000000000a:                   # @func000000000000000a
 	xorl	%edx, %esi
-	testl	%edi, %esi
+	testl	%esi, %edi
 	setns	%al
 	retq
 func0000000000000006:                   # @func0000000000000006
@@ -16,6 +16,6 @@ func0000000000000006:                   # @func0000000000000006
 	retq
 func000000000000000c:                   # @func000000000000000c
 	xorl	%edx, %esi
-	testl	%edi, %esi
+	testl	%esi, %edi
 	setne	%al
 	retq

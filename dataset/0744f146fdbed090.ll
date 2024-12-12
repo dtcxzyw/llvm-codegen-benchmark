@@ -1,5 +1,7 @@
 
-; 4 occurrences:
+; 6 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
+; lvgl/optimized/lv_obj_pos.ll
 ; minetest/optimized/CGUIButton.cpp.ll
 ; minetest/optimized/guiButton.cpp.ll
 ; minetest/optimized/guiEngine.cpp.ll
@@ -10,7 +12,7 @@ entry:
   %3 = sdiv i32 %2, 2
   %4 = sdiv i32 %1, -2
   %5 = add nsw i32 %4, %3
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 

@@ -26,16 +26,6 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/i915_gem_gtt.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000010(i64 %0) #0 {
-entry:
-  %1 = call i64 @llvm.umax.i64(i64 %0, i64 4096)
-  %2 = sub i64 0, %1
-  ret i64 %2
-}
-
-; 1 occurrences:
 ; freetype/optimized/cff.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0) #0 {
@@ -46,8 +36,4 @@ entry:
   ret i64 %3
 }
 
-; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
-declare i64 @llvm.umax.i64(i64, i64) #1
-
 attributes #0 = { nounwind }
-attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

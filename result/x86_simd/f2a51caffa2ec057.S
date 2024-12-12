@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	32768                           # 0x8000
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vcvttps2dq	%ymm2, %ymm0

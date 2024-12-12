@@ -1,5 +1,6 @@
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/expand_on_spheroid.ll
 ; openusd/optimized/simplify.cpp.ll
 ; proj/optimized/4D_api.cpp.ll
 ; quantlib/optimized/gausslobattointegral.ll
@@ -24,19 +25,22 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; stat-rs/optimized/rkxxfn3f5mhspne.ll
+; 3 occurrences:
+; boost/optimized/within.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(double %0, double %1, double %2) #0 {
+define i1 @func00000000000000a2(double %0, double %1, double %2) #0 {
 entry:
-  %3 = fcmp olt double %2, %0
-  %4 = fcmp ole double %0, %1
+  %3 = fcmp ole double %1, %2
+  %4 = fcmp olt double %0, %1
   %5 = and i1 %4, %3
   ret i1 %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; abseil-cpp/optimized/sysinfo.cc.ll
+; boost/optimized/expand_on_spheroid.ll
 ; graphviz/optimized/ortho.c.ll
 ; graphviz/optimized/visibility.c.ll
 ; opencv/optimized/min_enclosing_triangle.cpp.ll
@@ -48,6 +52,18 @@ define i1 @func0000000000000022(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %1, %2
   %4 = fcmp olt double %0, %1
+  %5 = and i1 %4, %3
+  ret i1 %5
+}
+
+; 2 occurrences:
+; boost/optimized/within_pointlike_geometry.ll
+; stat-rs/optimized/rkxxfn3f5mhspne.ll
+; Function Attrs: nounwind
+define i1 @func000000000000002a(double %0, double %1, double %2) #0 {
+entry:
+  %3 = fcmp olt double %1, %2
+  %4 = fcmp ole double %0, %1
   %5 = and i1 %4, %3
   ret i1 %5
 }

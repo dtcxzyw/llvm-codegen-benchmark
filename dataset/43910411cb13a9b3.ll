@@ -1,8 +1,9 @@
 
-; 27 occurrences:
+; 28 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/numeric.ll
 ; cpython/optimized/socketmodule.ll
 ; hyperscan/optimized/mcsheng_compile.cpp.ll
 ; icu/optimized/number_grouping.ll

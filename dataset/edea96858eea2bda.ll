@@ -1,12 +1,11 @@
 
-; 116 occurrences:
+; 115 occurrences:
 ; abc/optimized/aigJust.c.ll
 ; abc/optimized/giaEquiv.c.ll
 ; arrow/optimized/bignum-dtoa.cc.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/float16.cc.ll
 ; arrow/optimized/strtod.cc.ll
-; darktable/optimized/introspection_flip.c.ll
 ; double_conversion/optimized/bignum-dtoa.cc.ll
 ; double_conversion/optimized/fast-dtoa.cc.ll
 ; double_conversion/optimized/strtod.cc.ll
@@ -21,7 +20,6 @@
 ; icu/optimized/double-conversion-fast-dtoa.ll
 ; icu/optimized/double-conversion-strtod.ll
 ; libquic/optimized/err.c.ll
-; libquic/optimized/socket_helper.c.ll
 ; linux/optimized/dir.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/evdev.ll
@@ -76,8 +74,8 @@
 ; luajit/optimized/lj_opt_mem.ll
 ; luajit/optimized/lj_opt_mem_dyn.ll
 ; luajit/optimized/minilua.ll
+; lvgl/optimized/lv_text.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_qhull.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
@@ -99,6 +97,7 @@
 ; php/optimized/zend_inference.ll
 ; php/optimized/zend_jit.ll
 ; qemu/optimized/accel_tcg_tcg-runtime-gvec.c.ll
+; qemu/optimized/accel_tcg_user-exec.c.ll
 ; qemu/optimized/block_io.c.ll
 ; qemu/optimized/dump_dump.c.ll
 ; qemu/optimized/hw_net_can_ctucan_core.c.ll
@@ -125,13 +124,10 @@ entry:
   ret i32 %5
 }
 
-; 7 occurrences:
-; abc/optimized/giaUtil.c.ll
-; hermes/optimized/dtoa.c.ll
-; jq/optimized/jv_dtoa.ll
-; libquic/optimized/dtoa.cc.ll
-; linux/optimized/fhandle.ll
-; php/optimized/zend_strtod.ll
+; 4 occurrences:
+; libwebp/optimized/upsampling.c.ll
+; libwebp/optimized/upsampling_sse2.c.ll
+; libwebp/optimized/yuv.c.ll
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
@@ -172,6 +168,22 @@ entry:
   ret i32 %5
 }
 
+; 6 occurrences:
+; abc/optimized/giaUtil.c.ll
+; hermes/optimized/dtoa.c.ll
+; jq/optimized/jv_dtoa.ll
+; libquic/optimized/dtoa.cc.ll
+; linux/optimized/fhandle.ll
+; php/optimized/zend_strtod.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 1048575
+  %4 = icmp samesign ult i32 %1, 1048576
+  %5 = select i1 %4, i32 %3, i32 %0
+  ret i32 %5
+}
+
 ; 2 occurrences:
 ; cpython/optimized/fileutils.ll
 ; wireshark/optimized/packet-pvfs2.c.ll
@@ -184,9 +196,8 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; icu/optimized/utf8collationiterator.ll
-; linux/optimized/intel_execlists_submission.ll
 ; openmpi/optimized/btl_sm_component.ll
 ; openmpi/optimized/btl_sm_send.ll
 ; openmpi/optimized/btl_sm_sendi.ll
@@ -195,6 +206,17 @@ define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2147483647
   %4 = icmp ugt i32 %1, 32
+  %5 = select i1 %4, i32 %3, i32 %0
+  ret i32 %5
+}
+
+; 1 occurrences:
+; linux/optimized/intel_execlists_submission.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 65535
+  %4 = icmp samesign ugt i32 %1, 3121
   %5 = select i1 %4, i32 %3, i32 %0
   ret i32 %5
 }

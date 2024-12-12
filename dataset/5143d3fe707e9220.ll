@@ -10,11 +10,10 @@ entry:
   ret i64 %4
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; gromacs/optimized/gmx_spatial.cpp.ll
 ; linux/optimized/d_path.ll
 ; linux/optimized/keyctl.ll
-; linux/optimized/keyctl_pkey.ll
 ; linux/optimized/raw.ll
 ; linux/optimized/seccomp.ll
 ; linux/optimized/seq_file.ll

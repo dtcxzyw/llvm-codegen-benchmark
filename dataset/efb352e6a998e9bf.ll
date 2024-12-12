@@ -30,7 +30,7 @@ entry:
   ret i1 %5
 }
 
-; 50 occurrences:
+; 52 occurrences:
 ; assimp/optimized/3DSConverter.cpp.ll
 ; assimp/optimized/ACLoader.cpp.ll
 ; assimp/optimized/FBXExporter.cpp.ll
@@ -81,6 +81,8 @@ entry:
 ; pbrt-v4/optimized/shapes.cpp.ll
 ; pbrt-v4/optimized/subsurface.cpp.ll
 ; pbrt-v4/optimized/surfscatter.cpp.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000007(i1 %0, i1 %1, float %2) #0 {
 entry:
@@ -90,7 +92,7 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; assimp/optimized/PbrtExporter.cpp.ll
 ; minetest/optimized/content_mapblock.cpp.ll
 ; minetest/optimized/serverenvironment.cpp.ll
@@ -98,6 +100,7 @@ entry:
 ; pbrt-v4/optimized/paramdict.cpp.ll
 ; pbrt-v4/optimized/shapes.cpp.ll
 ; xgboost/optimized/quantile.cc.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i1 %1, float %2) #0 {
 entry:
@@ -135,11 +138,12 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; gromacs/optimized/domdec.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll
 ; raylib/optimized/rshapes.c.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i1 %1, float %2) #0 {
 entry:

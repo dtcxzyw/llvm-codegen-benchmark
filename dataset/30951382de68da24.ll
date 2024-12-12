@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 12 occurrences:
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; qemu/optimized/accel_tcg_user-exec.c.ll
@@ -10,6 +10,8 @@
 ; spike/optimized/vssrl_vv.ll
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
 ; velox/optimized/CastExpr.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i128 @func0000000000000001(i16 %0) #0 {
 entry:

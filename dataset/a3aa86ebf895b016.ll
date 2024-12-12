@@ -71,13 +71,13 @@
 define i64 @func0000000000000030(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, %0
   %6 = sext i32 %5 to i64
   ret i64 %6
 }
 
-; 55 occurrences:
+; 51 occurrences:
 ; clamav/optimized/pdf.c.ll
 ; cpython/optimized/codeobject.ll
 ; eastl/optimized/EATextUtil.cpp.ll
@@ -86,15 +86,11 @@ entry:
 ; icu/optimized/genrb.ll
 ; linux/optimized/netconsole.ll
 ; linux/optimized/sched.ll
-; openblas/optimized/dgbtf2.c.ll
-; openblas/optimized/dgbtrf.c.ll
-; openblas/optimized/dgetsqrhrt.c.ll
 ; openblas/optimized/dgghd3.c.ll
 ; openblas/optimized/dlagge.c.ll
 ; openblas/optimized/dlagsy.c.ll
 ; openblas/optimized/dlahr2.c.ll
 ; openblas/optimized/dlarfb.c.ll
-; openblas/optimized/dlasyf_aa.c.ll
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
 ; openblas/optimized/dsbgst.c.ll
@@ -137,13 +133,13 @@ entry:
 define i64 @func0000000000000000(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, %0
   %6 = sext i32 %5 to i64
   ret i64 %6
 }
 
-; 33 occurrences:
+; 30 occurrences:
 ; clamav/optimized/yara_lexer.c.ll
 ; cmake/optimized/cmCTestResourceGroupsLexer.cxx.ll
 ; cmake/optimized/cmCommandArgumentLexer.cxx.ll
@@ -161,9 +157,6 @@ entry:
 ; llvm/optimized/SampleProfileMatcher.cpp.ll
 ; nix/optimized/lexer-tab.ll
 ; openblas/optimized/dlagsy.c.ll
-; openblas/optimized/dlasyf_aa.c.ll
-; openblas/optimized/dorgr2.c.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
 ; openblas/optimized/dtgsja.c.ll
 ; opencv/optimized/rand.cpp.ll
 ; openmpi/optimized/keyval_lex.ll
@@ -181,7 +174,7 @@ entry:
 define i64 @func0000000000000005(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   %6 = sext i32 %5 to i64
   ret i64 %6
@@ -207,7 +200,7 @@ entry:
 define i64 @func0000000000000020(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, %0
   %6 = sext i32 %5 to i64
   ret i64 %6
@@ -219,7 +212,7 @@ entry:
 define i64 @func000000000000002d(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   %6 = sext i32 %5 to i64
   ret i64 %6
@@ -242,7 +235,7 @@ entry:
 define i64 @func0000000000000010(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, %0
   %6 = sext i32 %5 to i64
   ret i64 %6
@@ -252,42 +245,39 @@ entry:
 ; abc/optimized/giaLf.c.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
+; llvm/optimized/CGStmt.cpp.ll
 ; llvm/optimized/Core.cpp.ll
 ; llvm/optimized/InstCombineCalls.cpp.ll
 ; llvm/optimized/Instructions.cpp.ll
 ; llvm/optimized/LLParser.cpp.ll
 ; openblas/optimized/dlagsy.c.ll
 ; openblas/optimized/dlahr2.c.ll
-; openblas/optimized/dlasyf_aa.c.ll
 ; openusd/optimized/quadRefinement.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add nsw i32 %4, %0
   %6 = sext i32 %5 to i64
   ret i64 %6
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; git/optimized/log-tree.ll
-; openblas/optimized/dlaqp2rk.c.ll
-; openblas/optimized/dlasyf_aa.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add i32 %4, %0
   %6 = sext i32 %5 to i64
   ret i64 %6
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; freetype/optimized/sdf.c.ll
 ; miniaudio/optimized/unity.c.ll
-; openblas/optimized/dlaorhr_col_getrfnp.c.ll
 ; openblas/optimized/dsytri2x.c.ll
 ; openblas/optimized/dsytri_3x.c.ll
 ; opencv/optimized/denoising.cpp.ll
@@ -303,14 +293,13 @@ entry:
 define i64 @func0000000000000035(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   %6 = sext i32 %5 to i64
   ret i64 %6
 }
 
-; 5 occurrences:
-; openblas/optimized/dsygst.c.ll
+; 4 occurrences:
 ; opencv/optimized/estimated_covariance.cpp.ll
 ; opencv/optimized/hough.cpp.ll
 ; openusd/optimized/mvref_common.c.ll
@@ -319,8 +308,8 @@ entry:
 define i64 @func0000000000000031(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add i32 %3, %1
-  %5 = add nsw i32 %4, %0
+  %4 = add i32 %1, %3
+  %5 = add nsw i32 %0, %4
   %6 = sext i32 %5 to i64
   ret i64 %6
 }
@@ -332,14 +321,13 @@ entry:
 define i64 @func0000000000000011(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
-  %4 = add i32 %3, %1
-  %5 = add nsw i32 %4, %0
+  %4 = add i32 %1, %3
+  %5 = add nsw i32 %0, %4
   %6 = sext i32 %5 to i64
   ret i64 %6
 }
 
-; 5 occurrences:
-; openspiel/optimized/2048.cc.ll
+; 4 occurrences:
 ; openspiel/optimized/checkers.cc.ll
 ; openspiel/optimized/coin_game.cc.ll
 ; openspiel/optimized/coop_box_pushing.cc.ll
@@ -348,8 +336,8 @@ entry:
 define i64 @func0000000000000025(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = add nsw i32 %3, %1
-  %5 = add nsw i32 %4, %0
+  %4 = add nsw i32 %1, %3
+  %5 = add nsw i32 %0, %4
   %6 = sext i32 %5 to i64
   ret i64 %6
 }
@@ -360,8 +348,8 @@ entry:
 define i64 @func000000000000000d(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
-  %5 = add nsw i32 %4, %0
+  %4 = add nuw nsw i32 %1, %3
+  %5 = add nsw i32 %0, %4
   %6 = sext i32 %5 to i64
   ret i64 %6
 }
@@ -373,7 +361,7 @@ entry:
 define i64 @func0000000000000015(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   %6 = sext i32 %5 to i64
   ret i64 %6
@@ -385,7 +373,7 @@ entry:
 define i64 @func0000000000000014(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add i32 %4, %0
   %6 = sext i32 %5 to i64
   ret i64 %6
@@ -397,7 +385,7 @@ entry:
 define i64 @func0000000000000034(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add i32 %4, %0
   %6 = sext i32 %5 to i64
   ret i64 %6

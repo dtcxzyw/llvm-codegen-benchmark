@@ -1,5 +1,5 @@
 
-; 169 occurrences:
+; 167 occurrences:
 ; abc/optimized/acecMult.c.ll
 ; abc/optimized/extraUtilMacc.c.ll
 ; abc/optimized/extraUtilMisc.c.ll
@@ -64,8 +64,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -173,7 +171,7 @@
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 -1, %1
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   ret i32 %3
 }
 

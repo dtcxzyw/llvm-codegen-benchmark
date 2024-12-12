@@ -5,7 +5,7 @@
 ; ruby/optimized/date_core.ll
 ; yosys/optimized/simplify.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000ca(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 %2
@@ -25,7 +25,7 @@ entry:
 ; yosys/optimized/rtlil_backend.ll
 ; yosys/optimized/verilog_backend.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000c1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 %2
@@ -33,15 +33,14 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; linux/optimized/printk.ll
 ; llvm/optimized/LLParser.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RegAllocEvictionAdvisor.cpp.ll
 ; rocksdb/optimized/backup_engine.cc.ll
 ; verilator/optimized/V3OrderParallel.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, -2
   %4 = select i1 %3, i32 %1, i32 %2
@@ -56,7 +55,7 @@ entry:
 ; rocksdb/optimized/skiplistrep.cc.ll
 ; rocksdb/optimized/write_batch_with_index.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000c4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 %2
@@ -64,17 +63,18 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; assimp/optimized/SpatialSort.cpp.ll
 ; bullet3/optimized/btDeformableMultiBodyDynamicsWorld.ll
 ; bullet3/optimized/btMultiBodyDynamicsWorld.ll
 ; icu/optimized/calendar.ll
 ; icu/optimized/reldtfmt.ll
 ; minetest/optimized/CGUITabControl.cpp.ll
+; oiio/optimized/argparse.cpp.ll
 ; postgres/optimized/pl_gram.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000066(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000c6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 %2
@@ -96,7 +96,6 @@ entry:
 ; llvm/optimized/ParsePragma.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVRegisterInfo.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
@@ -113,8 +112,9 @@ entry:
 ; postgres/optimized/spgvalidate.ll
 ; wireshark/optimized/packet-sip.c.ll
 ; wireshark/optimized/packet-tibia.c.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 %2
@@ -146,7 +146,7 @@ entry:
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; xgboost/optimized/gbtree.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 %2
@@ -164,7 +164,7 @@ entry:
 ; postgres/optimized/varlena.ll
 ; verilator/optimized/V3Width.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 %2
@@ -172,15 +172,25 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; 1 occurrences:
 ; verilator/optimized/V3Width.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 %2
   %5 = icmp ne i32 %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_draw_arc.ll
+; Function Attrs: nounwind
+define i1 @func000000000000014a(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp sgt i32 %2, 360
+  %4 = select i1 %3, i32 %1, i32 %2
+  %5 = icmp sgt i32 %4, %0
   ret i1 %5
 }
 
@@ -189,7 +199,7 @@ entry:
 ; llvm/optimized/KnownBits.cpp.ll
 ; llvm/optimized/MLRegAllocEvictAdvisor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 %2
@@ -200,7 +210,7 @@ entry:
 ; 1 occurrences:
 ; openmpi/optimized/nbc_ibcast.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 %2
@@ -208,10 +218,38 @@ entry:
   ret i1 %5
 }
 
+; 7 occurrences:
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000027(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp eq i32 %2, 0
+  %4 = select i1 %3, i32 %1, i32 %2
+  %5 = icmp sle i32 %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; linux/optimized/filter.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000101(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ugt i32 %2, 17
+  %4 = select i1 %3, i32 %1, i32 %2
+  %5 = icmp eq i32 %4, %0
+  ret i1 %5
+}
+
 ; 1 occurrences:
 ; grpc/optimized/chttp2_transport.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 2
   %4 = select i1 %3, i32 %1, i32 %2
@@ -222,7 +260,7 @@ entry:
 ; 1 occurrences:
 ; grpc/optimized/chttp2_transport.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000086(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 1717986918
   %4 = select i1 %3, i32 %1, i32 %2

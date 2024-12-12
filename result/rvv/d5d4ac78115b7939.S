@@ -16,7 +16,7 @@ func0000000000000018:                   # @func0000000000000018
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmsne.vi	v8, v8, 0
 	vmand.mm	v8, v8, v9
-	vmand.mm	v0, v8, v0
+	vmand.mm	v0, v0, v8
 	ret
 func0000000000000010:                   # @func0000000000000010
 	li	a0, 128
@@ -27,5 +27,5 @@ func0000000000000010:                   # @func0000000000000010
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmsne.vi	v8, v8, 0
 	vmand.mm	v8, v8, v9
-	vmand.mm	v0, v8, v0
+	vmand.mm	v0, v0, v8
 	ret

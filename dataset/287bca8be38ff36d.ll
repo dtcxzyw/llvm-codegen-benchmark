@@ -9,7 +9,7 @@
 define i1 @func0000000000000001(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = and i64 %3, 1152921504606846976
   %5 = icmp eq i64 %4, 0
   ret i1 %5
@@ -26,10 +26,10 @@ entry:
 ; abc/optimized/giaSupp.c.ll
 ; llvm/optimized/X86FixupBWInsts.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000021(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = and i64 %3, 1
   %5 = icmp eq i64 %4, 0
   ret i1 %5

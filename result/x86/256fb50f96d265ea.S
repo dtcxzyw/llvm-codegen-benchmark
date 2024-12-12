@@ -4,3 +4,9 @@ func0000000000000055:                   # @func0000000000000055
 	leal	(%rsi,%rax,2), %eax
 	leal	-528(%rdi,%rax), %eax
 	retq
+func0000000000000040:                   # @func0000000000000040
+	movsbl	%dl, %eax
+	imull	$100, %eax, %eax
+	addl	%esi, %eax
+	leal	12208(%rdi,%rax), %eax
+	retq

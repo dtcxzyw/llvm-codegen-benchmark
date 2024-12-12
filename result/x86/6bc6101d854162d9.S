@@ -1,4 +1,4 @@
-func0000000000001982:                   # @func0000000000001982
+func0000000000006302:                   # @func0000000000006302
 	testl	%edx, %edx
 	setne	%al
 	testq	%rsi, %rsi
@@ -8,7 +8,7 @@ func0000000000001982:                   # @func0000000000001982
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000001838:                   # @func0000000000001838
+func0000000000006058:                   # @func0000000000006058
 	testq	%rdx, %rdx
 	setne	%cl
 	cmpl	$1, %esi
@@ -18,7 +18,7 @@ func0000000000001838:                   # @func0000000000001838
 	orb	%cl, %al
 	orb	%dl, %al
 	retq
-func0000000000001998:                   # @func0000000000001998
+func0000000000006318:                   # @func0000000000006318
 	cmpl	$1, %edx
 	setne	%al
 	testq	%rsi, %rsi
@@ -28,7 +28,7 @@ func0000000000001998:                   # @func0000000000001998
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000001988:                   # @func0000000000001988
+func0000000000006308:                   # @func0000000000006308
 	cmpl	$1, %edx
 	setne	%al
 	testq	%rsi, %rsi
@@ -38,7 +38,7 @@ func0000000000001988:                   # @func0000000000001988
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000822:                   # @func0000000000000822
+func0000000000002042:                   # @func0000000000002042
 	cmpl	$-6, %edx
 	setb	%cl
 	testq	%rsi, %rsi
@@ -48,7 +48,7 @@ func0000000000000822:                   # @func0000000000000822
 	orb	%dl, %al
 	orb	%cl, %al
 	retq
-func0000000000000828:                   # @func0000000000000828
+func0000000000002048:                   # @func0000000000002048
 	cmpl	$-3, %edx
 	setb	%cl
 	testq	%rsi, %rsi

@@ -1,58 +1,29 @@
 func000000000000001b:                   // @func000000000000001b
 // %bb.0:                               // %entry
-	uzp1	v3.4s, v3.4s, v4.4s
-	mov	w8, #16                         // =0x10
-	dup	v4.2d, x8
-	cmgt	v2.4s, v3.4s, v2.4s
-	sshll2	v3.2d, v2.4s, #0
-	sshll	v2.2d, v2.2s, #0
-	and	v2.16b, v2.16b, v4.16b
-	and	v3.16b, v3.16b, v4.16b
-	add	v1.2d, v3.2d, v1.2d
-	add	v0.2d, v2.2d, v0.2d
+	cmp	w1, w2
+	cset	w8, lt
+	add	x0, x0, w8, uxtw #4
 	ret
                                         // -- End function
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	uzp1	v3.4s, v3.4s, v4.4s
-	mov	w8, #1                          // =0x1
-	dup	v4.2d, x8
-	cmhi	v2.4s, v3.4s, v2.4s
-	sshll2	v3.2d, v2.4s, #0
-	sshll	v2.2d, v2.2s, #0
-	orr	v2.16b, v2.16b, v4.16b
-	orr	v3.16b, v3.16b, v4.16b
-	add	v1.2d, v3.2d, v1.2d
-	add	v0.2d, v2.2d, v0.2d
+	sub	x8, x0, #1
+	cmp	w1, w2
+	csinc	x0, x8, x0, lo
 	ret
                                         // -- End function
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
-	uzp1	v3.4s, v3.4s, v4.4s
-	mov	x8, #4294967296                 // =0x100000000
-	dup	v4.2d, x8
-	cmhi	v2.4s, v3.4s, v2.4s
-	sshll2	v3.2d, v2.4s, #0
-	sshll	v2.2d, v2.2s, #0
-	and	v2.16b, v2.16b, v4.16b
-	and	v3.16b, v3.16b, v4.16b
-	add	v1.2d, v3.2d, v1.2d
-	add	v0.2d, v2.2d, v0.2d
+	cmp	w1, w2
+	cset	w8, lo
+	add	x0, x0, x8, lsl #32
 	ret
                                         // -- End function
 func000000000000002a:                   // @func000000000000002a
 // %bb.0:                               // %entry
-	uzp1	v3.4s, v3.4s, v4.4s
-	mov	w8, #2                          // =0x2
-	dup	v5.2d, x8
-	cmgt	v2.4s, v2.4s, v3.4s
-	sshll2	v3.2d, v2.4s, #0
-	sshll	v4.2d, v2.2s, #0
-	bic	v4.16b, v5.16b, v4.16b
-	bic	v3.16b, v5.16b, v3.16b
-	ssubw	v4.2d, v4.2d, v2.2s
-	ssubw2	v2.2d, v3.2d, v2.4s
-	add	v1.2d, v2.2d, v1.2d
-	add	v0.2d, v4.2d, v0.2d
+	cmp	w1, w2
+	mov	w8, #1                          // =0x1
+	cinc	x8, x8, le
+	add	x0, x8, x0
 	ret
                                         // -- End function

@@ -1,5 +1,5 @@
 
-; 31 occurrences:
+; 30 occurrences:
 ; abc/optimized/cecCorr.c.ll
 ; duckdb/optimized/ub_duckdb_storage_statistics.cpp.ll
 ; hdf5/optimized/H5C.c.ll
@@ -11,7 +11,6 @@
 ; linux/optimized/sock.ll
 ; llvm/optimized/CodeViewDebug.cpp.ll
 ; llvm/optimized/NumericalStabilitySanitizer.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; mold/optimized/arch-loongarch.cc.LOONGARCH32.cc.ll
 ; mold/optimized/arch-loongarch.cc.LOONGARCH64.cc.ll
@@ -88,11 +87,10 @@ entry:
   ret i32 %1
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; abc/optimized/satSolver2.c.ll
 ; cpython/optimized/instrumentation.ll
 ; cvc5/optimized/fc_simplex.cpp.ll
-; gromacs/optimized/domdec_network.cpp.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; jq/optimized/regexec.ll
 ; llvm/optimized/CGExprConstant.cpp.ll
@@ -164,9 +162,10 @@ entry:
   ret i32 %1
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; jq/optimized/jv.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; opencv/optimized/quadsubpix.cpp.ll
 ; openspiel/optimized/quoridor.cc.ll
 ; pbrt-v4/optimized/cameras.cpp.ll

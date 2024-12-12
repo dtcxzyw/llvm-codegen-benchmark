@@ -1,8 +1,5 @@
 
-; 13 occurrences:
-; abc/optimized/ivyRwr.c.ll
-; abc/optimized/ivySeq.c.ll
-; abc/optimized/rwrEva.c.ll
+; 10 occurrences:
 ; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_ops.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll

@@ -53,6 +53,16 @@ func0000000000000005:                   # @func0000000000000005
 	addq	%rdi, %rax
 	addq	%rsi, %rax
 	retq
+func000000000000002e:                   # @func000000000000002e
+	leal	-268435456(%rdx), %eax
+	addq	%rdi, %rax
+	addq	%rsi, %rax
+	retq
+func000000000000007f:                   # @func000000000000007f
+	movl	%edx, %eax
+	addq	%rsi, %rax
+	leaq	1(%rdi,%rax), %rax
+	retq
 func000000000000000f:                   # @func000000000000000f
 	leal	459328(%rdx), %eax
 	addq	%rdi, %rax

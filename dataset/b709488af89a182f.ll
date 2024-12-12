@@ -1,6 +1,8 @@
 
-; 18 occurrences:
+; 21 occurrences:
 ; abc/optimized/giaSimBase.c.ll
+; bullet3/optimized/b3Generic6DofConstraint.ll
+; bullet3/optimized/btGeneric6DofConstraint.ll
 ; cmake/optimized/ProcessUNIX.c.ll
 ; darktable/optimized/collect.c.ll
 ; folly/optimized/SignalHandler.cpp.ll
@@ -18,6 +20,7 @@
 ; ruby/optimized/compile.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wireshark/optimized/layout_preferences_frame.cpp.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i32 %0) #0 {
 entry:
@@ -27,7 +30,7 @@ entry:
   ret i64 %3
 }
 
-; 28 occurrences:
+; 29 occurrences:
 ; flac/optimized/metadata_iterators.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; g2o/optimized/edge_se2_lotsofxy.cpp.ll
@@ -42,6 +45,7 @@ entry:
 ; luajit/optimized/lj_bcwrite_dyn.ll
 ; luajit/optimized/lj_state.ll
 ; luajit/optimized/lj_state_dyn.ll
+; lvgl/optimized/lv_tree.ll
 ; node/optimized/libnode.env.ll
 ; nuklear/optimized/unity.c.ll
 ; openjdk/optimized/dict.ll
@@ -77,7 +81,7 @@ entry:
   ret i64 %3
 }
 
-; 78 occurrences:
+; 79 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcDfs.c.ll
 ; abc/optimized/abcReconv.c.ll
@@ -126,6 +130,7 @@ entry:
 ; openjdk/optimized/bytecodeUtils.ll
 ; openjdk/optimized/cmsgamma.ll
 ; openjdk/optimized/jvmciCompilerToVM.ll
+; openmpi/optimized/ad_read_coll.ll
 ; openvdb/optimized/Diagnostics.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Filter.cc.ll
@@ -165,7 +170,7 @@ entry:
   ret i64 %3
 }
 
-; 31 occurrences:
+; 26 occurrences:
 ; abc/optimized/abcDfs.c.ll
 ; abc/optimized/abcFraig.c.ll
 ; abc/optimized/abcSweep.c.ll
@@ -182,21 +187,16 @@ entry:
 ; abc/optimized/verFormula.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
-; arrow/optimized/decimal.cc.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; graphviz/optimized/exeval.c.ll
 ; gromacs/optimized/dbdsqr.cpp.ll
-; gromacs/optimized/dlarnv.cpp.ll
 ; gromacs/optimized/sbdsqr.cpp.ll
-; gromacs/optimized/slarnv.cpp.ll
 ; hdf5/optimized/H5HFhuge.c.ll
 ; icu/optimized/number_decimalquantity.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; luajit/optimized/minilua.ll
 ; openjdk/optimized/sharedRuntimeTrig.ll
 ; qemu/optimized/hw_pci_shpc.c.ll
-; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
-; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i32 %0) #0 {
 entry:
@@ -328,7 +328,7 @@ entry:
   ret i64 %3
 }
 
-; 14 occurrences:
+; 12 occurrences:
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/catchup.c.ll
 ; hyperscan/optimized/match.c.ll
@@ -341,8 +341,6 @@ entry:
 ; icu/optimized/numparse_affixes.ll
 ; icu/optimized/rematch.ll
 ; icu/optimized/sprintf.ll
-; icu/optimized/sscanf.ll
-; icu/optimized/uscanf.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i32 %0) #0 {
 entry:

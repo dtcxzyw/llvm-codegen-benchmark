@@ -2,15 +2,15 @@ func0000000000000000:                   # @func0000000000000000
 	movzbl	%sil, %eax
 	leaq	1(%rdi,%rax), %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func000000000000000c:                   # @func000000000000000c
 	movzbl	%sil, %eax
 	leaq	152(%rdi,%rax), %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+func000000000000000f:                   # @func000000000000000f
 	movzbl	%sil, %eax
 	leaq	1(%rdi,%rax), %rax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000001f:                   # @func000000000000001f
 	movzbl	%sil, %eax
 	leaq	25(%rdi,%rax), %rax
 	retq
@@ -18,24 +18,27 @@ func0000000000000010:                   # @func0000000000000010
 	movzbl	%sil, %eax
 	leaq	14(%rdi,%rax), %rax
 	retq
-func0000000000000018:                   # @func0000000000000018
+func000000000000001c:                   # @func000000000000001c
 	movzbl	%sil, %eax
 	leaq	5612(%rdi,%rax), %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+func000000000000001a:                   # @func000000000000001a
 	movzbl	%sil, %eax
-	leaq	12(%rdi,%rax,4), %rax
+	leaq	38(%rdi,%rax), %rax
 	retq
-func000000000000000e:                   # @func000000000000000e
+func000000000000000b:                   # @func000000000000000b
 	movzbl	%sil, %eax
-	leaq	72(%rdi,%rax), %rax
+	leaq	-1(%rdi,%rax), %rax
 	retq
-func000000000000001e:                   # @func000000000000001e
+func0000000000000003:                   # @func0000000000000003
 	movzbl	%sil, %eax
-	leaq	(%rax,%rax,2), %rax
-	leaq	16(%rdi,%rax,8), %rax
+	leaq	264(%rdi,%rax,8), %rax
 	retq
-func0000000000000012:                   # @func0000000000000012
+func000000000000001b:                   # @func000000000000001b
+	movzbl	%sil, %eax
+	leaq	-4(%rdi,%rax), %rax
+	retq
+func0000000000000013:                   # @func0000000000000013
 	movzbl	%sil, %eax
 	leaq	12(%rdi,%rax,4), %rax
 	retq

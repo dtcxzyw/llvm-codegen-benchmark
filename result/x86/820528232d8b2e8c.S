@@ -10,7 +10,7 @@ func0000000000000008:                   # @func0000000000000008
 	movl	$16, %eax
 	cmovael	%edi, %eax
 	retq
-func0000000000000029:                   # @func0000000000000029
+func0000000000000049:                   # @func0000000000000049
 	leal	-1(%rdi), %eax
 	cmpl	$15, %eax
 	movl	$16, %eax

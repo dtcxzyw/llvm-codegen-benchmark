@@ -1,5 +1,5 @@
 
-; 45 occurrences:
+; 44 occurrences:
 ; clamav/optimized/pdf.c.ll
 ; clamav/optimized/upx.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -32,7 +32,6 @@
 ; postgres/optimized/tsquery.ll
 ; redis/optimized/ziplist.ll
 ; wireshark/optimized/follow_stream_dialog.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/ddnf.cpp.ll
 ; z3/optimized/mam.cpp.ll
 ; z3/optimized/opt_cores.cpp.ll

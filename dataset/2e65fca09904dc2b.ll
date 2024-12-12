@@ -8,12 +8,12 @@ entry:
   %2 = shl i8 %1, 1
   %3 = and i8 %2, -32
   %4 = and i8 %1, 15
-  %5 = or disjoint i8 %4, %0
+  %5 = or disjoint i8 %0, %4
   %6 = or i8 %5, %3
   ret i8 %6
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; bullet3/optimized/b3VoronoiSimplexSolver.ll
 ; bullet3/optimized/btVoronoiSimplexSolver.ll
 ; linux/optimized/8139too.ll
@@ -25,6 +25,7 @@ entry:
 ; openusd/optimized/changes.cpp.ll
 ; wasmtime-rs/optimized/320v7ko74ke0k4k4.ll
 ; wolfssl/optimized/ssl.c.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i8 %0, i8 %1) #0 {
 entry:

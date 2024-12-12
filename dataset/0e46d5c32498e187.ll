@@ -4,7 +4,7 @@
 ; typst-rs/optimized/22a0ijn9jg8ilzgs.ll
 ; velox/optimized/CastExpr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i64 %0) #0 {
+define i1 @func000000000000004a(i64 %0) #0 {
 entry:
   %1 = icmp sgt i64 %0, -1
   ret i1 %1
@@ -17,7 +17,7 @@ entry:
 ; velox/optimized/DecimalVectorFunctions.cpp.ll
 ; velox/optimized/HugeInt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i64 %0) #0 {
+define i1 @func0000000000000046(i64 %0) #0 {
 entry:
   %1 = icmp slt i64 %0, 0
   ret i1 %1

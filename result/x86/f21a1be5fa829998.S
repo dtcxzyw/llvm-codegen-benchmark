@@ -25,15 +25,12 @@ func0000000000000050:                   # @func0000000000000050
 	imulq	%rdi, %rdx
 	leaq	-1(%rsi,%rdx), %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
-	addq	$2, %rdx
-	imulq	%rsi, %rdx
-	leaq	1(%rdi,%rdx), %rax
-	retq
-func0000000000000080:                   # @func0000000000000080
-	incq	%rdx
-	imulq	%rsi, %rdx
-	leaq	1(%rdi,%rdx), %rax
+func00000000000000ff:                   # @func00000000000000ff
+	movl	$4294967295, %eax               # imm = 0xFFFFFFFF
+	leaq	(%rdx,%rax), %rcx
+	imulq	%rsi, %rcx
+	addq	%rdi, %rax
+	addq	%rcx, %rax
 	retq
 func0000000000000055:                   # @func0000000000000055
 	decq	%rdx
@@ -56,11 +53,6 @@ func000000000000007f:                   # @func000000000000007f
 	imulq	%rsi, %rcx
 	addq	%rdi, %rax
 	addq	%rcx, %rax
-	retq
-func00000000000000ff:                   # @func00000000000000ff
-	incq	%rdx
-	imulq	%rsi, %rdx
-	leaq	1(%rdi,%rdx), %rax
 	retq
 func0000000000000054:                   # @func0000000000000054
 	incq	%rdx

@@ -1,4 +1,4 @@
-func0000000000000188:                   # @func0000000000000188
+func0000000000000308:                   # @func0000000000000308
 	addl	$256, %esi                      # imm = 0x100
 	decl	%edi
 	movzwl	%di, %eax

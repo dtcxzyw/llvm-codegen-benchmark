@@ -1,7 +1,9 @@
 
-; 21 occurrences:
+; 23 occurrences:
 ; abc/optimized/acecPo.c.ll
 ; assimp/optimized/ASEParser.cpp.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; duckdb/optimized/ub_duckdb_operator_csv_sniffer.cpp.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
@@ -22,12 +24,12 @@
 ; wireshark/optimized/packet-memcache.c.ll
 ; wireshark/optimized/packet-sna.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, i8 %1) #0 {
+define i1 @func0000000000000084(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 35
   %3 = icmp eq i8 %1, 92
   %4 = or i1 %3, %2
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

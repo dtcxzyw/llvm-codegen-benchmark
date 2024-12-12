@@ -38,7 +38,7 @@
 ; protobuf/optimized/zero_copy_stream_impl_lite.cc.ll
 ; verilator/optimized/V3LinkParse.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i8 %1) #0 {
+define i1 @func0000000000000021(ptr %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = icmp eq i8 %2, 0
@@ -47,17 +47,18 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; git/optimized/writer.ll
 ; llvm/optimized/SemaAvailability.cpp.ll
 ; llvm/optimized/SimpleSValBuilder.cpp.ll
 ; llvm/optimized/SimplifyLibCalls.cpp.ll
+; lvgl/optimized/lv_group.ll
 ; openjdk/optimized/loopnode.ll
 ; protobuf/optimized/descriptor.cc.ll
 ; verilator/optimized/V3Tristate.cpp.ll
 ; wireshark/optimized/packet-scsi.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i8 %1) #0 {
+define i1 @func000000000000002c(ptr %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 4
   %3 = icmp ne i8 %2, 0
@@ -72,7 +73,7 @@ entry:
 ; wireshark/optimized/packet-sna.c.ll
 ; wireshark/optimized/packet-wireguard.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, i8 %1) #0 {
+define i1 @func000000000000018c(ptr %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = icmp ne i8 %2, 0
@@ -85,7 +86,7 @@ entry:
 ; llvm/optimized/ELF.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, i8 %1) #0 {
+define i1 @func0000000000000181(ptr %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 6
   %3 = icmp eq i8 %2, 0

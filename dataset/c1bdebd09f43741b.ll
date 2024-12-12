@@ -237,7 +237,7 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000056(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = add nsw i32 %3, -48
@@ -249,11 +249,11 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/a_utctm.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000d4(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000001b4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = add nsw i32 %3, -48
-  %5 = icmp ult i32 %3, 98
+  %5 = icmp samesign ult i32 %3, 98
   %6 = select i1 %5, i32 %0, i32 %4
   ret i32 %6
 }
@@ -261,11 +261,11 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/prtime.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000054(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000b4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = add nsw i32 %3, -528
-  %5 = icmp ult i32 %3, 628
+  %5 = icmp samesign ult i32 %3, 628
   %6 = select i1 %5, i32 %0, i32 %4
   ret i32 %6
 }
@@ -273,7 +273,7 @@ entry:
 ; 1 occurrences:
 ; arrow/optimized/tz.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000005a(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp sgt i32 %3, -719469

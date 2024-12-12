@@ -1,5 +1,6 @@
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/buffer_piece_border.ll
 ; rocksdb/optimized/db_impl_compaction_flush.cc.ll
 ; wolfssl/optimized/client.c.ll
 ; Function Attrs: nounwind
@@ -35,7 +36,7 @@ entry:
 define i1 @func000000000000000c(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = xor i1 %3, true
   ret i1 %4
 }
@@ -88,7 +89,7 @@ entry:
 define i1 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = xor i1 %3, true
   ret i1 %4
 }
@@ -101,7 +102,18 @@ entry:
 define i1 @func0000000000000004(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 9
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
+  %4 = xor i1 %3, true
+  ret i1 %4
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_transform.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 128
+  %3 = and i1 %0, %2
   %4 = xor i1 %3, true
   ret i1 %4
 }

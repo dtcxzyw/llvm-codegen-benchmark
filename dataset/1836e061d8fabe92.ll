@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 23 occurrences:
 ; cmake/optimized/nghttp2_http.c.ll
 ; cpython/optimized/suggestions.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
@@ -21,13 +21,10 @@
 ; openssl/optimized/libcrypto-shlib-v3_ncons.ll
 ; openssl/optimized/libcrypto-shlib-v3_utl.ll
 ; postgres/optimized/guc.ll
-; postgres/optimized/kwlookup.ll
-; postgres/optimized/kwlookup_shlib.ll
-; postgres/optimized/kwlookup_srv.ll
 ; ruby/optimized/parser_st.ll
 ; ruby/optimized/st.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000481(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = or disjoint i8 %1, 32
   %4 = icmp ult i8 %2, 26
@@ -40,7 +37,7 @@ entry:
 ; ruby/optimized/parser_st.ll
 ; ruby/optimized/st.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014a(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func000000000000048a(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = or disjoint i8 %1, 32
   %4 = icmp ult i8 %2, 26
@@ -54,7 +51,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-v3_ncons.ll
 ; openssl/optimized/libcrypto-shlib-v3_ncons.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000484(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = or disjoint i8 %1, 32
   %4 = icmp ult i8 %2, 26
@@ -68,7 +65,7 @@ entry:
 ; hyperscan/optimized/teddy_compile.cpp.ll
 ; nghttp2/optimized/llhttp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000081(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = or i8 %1, 32
   %4 = icmp ult i8 %2, 26
@@ -80,7 +77,7 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/flood_compile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014c(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func000000000000048c(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = or disjoint i8 %1, 32
   %4 = icmp ult i8 %2, 26

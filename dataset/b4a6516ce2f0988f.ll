@@ -17,15 +17,13 @@ entry:
   ret ptr %5
 }
 
-; 8 occurrences:
+; 6 occurrences:
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/cutPre22.c.ll
-; bullet3/optimized/btBoxBoxDetector.ll
 ; icu/optimized/number_compact.ll
 ; nori/optimized/nanovg.c.ll
 ; openvdb/optimized/Maps.cc.ll
 ; openvdb/optimized/Transform.cc.ll
-; recastnavigation/optimized/DetourObstacleAvoidance.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000e(ptr %0, i32 %1) #0 {
 entry:

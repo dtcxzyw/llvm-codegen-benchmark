@@ -23,6 +23,6 @@ func0000000000000013:                   # @func0000000000000013
 	.long	8192                            # 0x2000
 func0000000000000003:                   # @func0000000000000003
 	vpsrad	$16, %ymm1, %ymm1
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
 	vpaddd	.LCPI3_0(%rip){1to8}, %ymm0, %ymm0
 	retq

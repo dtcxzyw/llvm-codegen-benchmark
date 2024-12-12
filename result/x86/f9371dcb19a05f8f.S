@@ -16,9 +16,3 @@ func0000000000000003:                   # @func0000000000000003
 	orq	%rdi, %rax
 	andq	$-65281, %rax                   # imm = 0xFFFF00FF
 	retq
-func0000000000000001:                   # @func0000000000000001
-	orq	%rdx, %rsi
-	orq	%rdi, %rsi
-	movabsq	$-1152921504606846977, %rax     # imm = 0xEFFFFFFFFFFFFFFF
-	andq	%rsi, %rax
-	retq

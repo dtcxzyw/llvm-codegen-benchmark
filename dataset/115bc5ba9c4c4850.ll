@@ -1,21 +1,21 @@
 
-%struct.OHCIPort.2592826 = type { %struct.USBPort.2592827, i32 }
-%struct.USBPort.2592827 = type { ptr, i32, i32, [16 x i8], ptr, ptr, i32, %union.anon.5.2592828 }
-%union.anon.5.2592828 = type { %struct.QTailQLink.2592824 }
-%struct.QTailQLink.2592824 = type { ptr, ptr }
-%struct.zone.3352968 = type { [4 x i64], i64, i64, [4 x i64], i32, ptr, ptr, ptr, i32, i32, i32, i64, %struct.atomic64_t.3352960, i64, i64, ptr, i32, [20 x i8], %struct.cacheline_padding.3352969, [11 x %struct.free_area.3352970], i64, %struct.spinlock.3352971, [28 x i8], %struct.cacheline_padding.3352969, i64, i64, [2 x i64], i64, i64, i32, i32, i32, i8, i8, [2 x i8], %struct.cacheline_padding.3352969, [10 x %struct.atomic64_t.3352960], [6 x %struct.atomic64_t.3352960] }
-%struct.atomic64_t.3352960 = type { i64 }
-%struct.free_area.3352970 = type { [4 x %struct.list_head.3352943], i64 }
-%struct.list_head.3352943 = type { ptr, ptr }
-%struct.spinlock.3352971 = type { %union.anon.23.3352972 }
-%union.anon.23.3352972 = type { %struct.raw_spinlock.3352961 }
-%struct.raw_spinlock.3352961 = type { %struct.qspinlock.3352963 }
-%struct.qspinlock.3352963 = type { %union.anon.24.3352964 }
-%union.anon.24.3352964 = type { %struct.atomic_t.3352937 }
-%struct.atomic_t.3352937 = type { i32 }
-%struct.cacheline_padding.3352969 = type { [0 x i8] }
+%struct.OHCIPort.2706560 = type { %struct.USBPort.2706561, i32 }
+%struct.USBPort.2706561 = type { ptr, i32, i32, [16 x i8], ptr, ptr, i32, %union.anon.5.2706562 }
+%union.anon.5.2706562 = type { %struct.QTailQLink.2706558 }
+%struct.QTailQLink.2706558 = type { ptr, ptr }
+%struct.zone.3540695 = type { [4 x i64], i64, i64, [4 x i64], i32, ptr, ptr, ptr, i32, i32, i32, i64, %struct.atomic64_t.3540687, i64, i64, ptr, i32, [20 x i8], %struct.cacheline_padding.3540696, [11 x %struct.free_area.3540697], i64, %struct.spinlock.3540698, [28 x i8], %struct.cacheline_padding.3540696, i64, i64, [2 x i64], i64, i64, i32, i32, i32, i8, i8, [2 x i8], %struct.cacheline_padding.3540696, [10 x %struct.atomic64_t.3540687], [6 x %struct.atomic64_t.3540687] }
+%struct.atomic64_t.3540687 = type { i64 }
+%struct.free_area.3540697 = type { [4 x %struct.list_head.3540670], i64 }
+%struct.list_head.3540670 = type { ptr, ptr }
+%struct.spinlock.3540698 = type { %union.anon.23.3540699 }
+%union.anon.23.3540699 = type { %struct.raw_spinlock.3540688 }
+%struct.raw_spinlock.3540688 = type { %struct.qspinlock.3540690 }
+%struct.qspinlock.3540690 = type { %union.anon.24.3540691 }
+%union.anon.24.3540691 = type { %struct.atomic_t.3540664 }
+%struct.atomic_t.3540664 = type { i32 }
+%struct.cacheline_padding.3540696 = type { [0 x i8] }
 
-; 25 occurrences:
+; 24 occurrences:
 ; cpython/optimized/optimizer.ll
 ; libsodium/optimized/libsodium_la-softaes.ll
 ; linux/optimized/buffered_write.ll
@@ -38,20 +38,19 @@
 ; qemu/optimized/hw_net_vmxnet3.c.ll
 ; qemu/optimized/hw_scsi_esp-pci.c.ll
 ; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
-; qemu/optimized/hw_usb_imx-usb-phy.c.ll
 ; qemu/optimized/tcg.c.ll
 ; ruby/optimized/regcomp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000c(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 5
   %3 = and i64 %2, 134217727
-  %4 = getelementptr nusw i8, ptr %0, i64 8
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 8
   %5 = getelementptr [8 x i32], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
-; 1014 occurrences:
+; 1027 occurrences:
 ; abc/optimized/abcIf.c.ll
 ; abc/optimized/abcIfMux.c.ll
 ; abc/optimized/abcRec3.c.ll
@@ -93,7 +92,6 @@ entry:
 ; hyperscan/optimized/ng_haig.cpp.ll
 ; hyperscan/optimized/ng_literal_analysis.cpp.ll
 ; hyperscan/optimized/ng_mcclellan.cpp.ll
-; hyperscan/optimized/rose_build_add_mask.cpp.ll
 ; icu/optimized/umutablecptrie.ll
 ; jemalloc/optimized/jemalloc.ll
 ; jemalloc/optimized/jemalloc.pic.ll
@@ -104,6 +102,14 @@ entry:
 ; jemalloc/optimized/tcache.pic.ll
 ; jemalloc/optimized/tcache.sym.ll
 ; jq/optimized/regcomp.ll
+; llvm/optimized/AArch64O0PreLegalizerCombiner.cpp.ll
+; llvm/optimized/AArch64PostLegalizerCombiner.cpp.ll
+; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
+; llvm/optimized/AArch64PreLegalizerCombiner.cpp.ll
+; llvm/optimized/MCSubtargetInfo.cpp.ll
+; llvm/optimized/RISCVO0PreLegalizerCombiner.cpp.ll
+; llvm/optimized/RISCVPostLegalizerCombiner.cpp.ll
+; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
 ; luajit/optimized/lj_trace.ll
@@ -111,6 +117,12 @@ entry:
 ; mitsuba3/optimized/zone.cpp.ll
 ; oniguruma/optimized/regcomp.ll
 ; openjdk/optimized/defNewGeneration.ll
+; openspiel/optimized/bridge.cc.ll
+; openusd/optimized/coalescingDiagnosticDelegate.cpp.ll
+; openusd/optimized/mergingSceneIndex.cpp.ll
+; openusd/optimized/namespaceEditor.cpp.ll
+; openusd/optimized/pathNode.cpp.ll
+; openusd/optimized/sortedIds.cpp.ll
 ; openvdb/optimized/Diagnostics.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Filter.cc.ll
@@ -1067,17 +1079,18 @@ entry:
 ; spike/optimized/zunpkd831.ll
 ; spike/optimized/zunpkd832.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 5
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr nusw i8, ptr %0, i64 8
-  %5 = getelementptr nusw [10 x ptr], ptr %4, i64 0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 8
+  %5 = getelementptr nusw nuw [10 x ptr], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
-; 91 occurrences:
+; 96 occurrences:
 ; abc/optimized/satSolver2.c.ll
+; boost/optimized/topology.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cvc5/optimized/options_handler.cpp.ll
 ; cxxopts/optimized/example.cpp.ll
@@ -1145,7 +1158,6 @@ entry:
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -1159,6 +1171,12 @@ entry:
 ; oiio/optimized/formatspec.cpp.ll
 ; oiio/optimized/imagecache.cpp.ll
 ; openjdk/optimized/jvmciCompilerToVM.ll
+; openusd/optimized/env.cpp.ll
+; openusd/optimized/info.cpp.ll
+; openusd/optimized/instanceAdapter.cpp.ll
+; openusd/optimized/mallocTag.cpp.ll
+; openusd/optimized/pointInstancerAdapter.cpp.ll
+; openusd/optimized/reporter.cpp.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; spike/optimized/spike-log-parser.ll
 ; vcpkg/optimized/tools.cpp.ll
@@ -1166,15 +1184,14 @@ entry:
 ; xgboost/optimized/input_split_base.cc.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = and i64 %2, 255
-  %4 = getelementptr nusw i8, ptr %0, i64 57
-  %5 = getelementptr nusw [256 x i8], ptr %4, i64 0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 57
+  %5 = getelementptr nusw nuw [256 x i8], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
@@ -1182,78 +1199,36 @@ entry:
 ; qemu/optimized/hw_ipack_tpci200.c.ll
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001c(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 2
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr nusw i8, ptr %0, i64 600
-  %5 = getelementptr [15 x %struct.OHCIPort.2592826], ptr %4, i64 0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 600
+  %5 = getelementptr [15 x %struct.OHCIPort.2706560], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
   %3 = and i64 %2, 2147483647
   %4 = getelementptr i8, ptr %0, i64 615168
-  %5 = getelementptr nusw [12800 x float], ptr %4, i64 0, i64 %3
+  %5 = getelementptr nusw nuw [12800 x float], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000013(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 1
   %3 = and i64 %2, 2147483647
   %4 = getelementptr i8, ptr %0, i64 615168
-  %5 = getelementptr nusw [12800 x float], ptr %4, i64 0, i64 %3
-  ret ptr %5
-}
-
-; 14 occurrences:
-; llvm/optimized/AArch64O0PreLegalizerCombiner.cpp.ll
-; llvm/optimized/AArch64PostLegalizerCombiner.cpp.ll
-; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
-; llvm/optimized/AArch64PreLegalizerCombiner.cpp.ll
-; llvm/optimized/MCSubtargetInfo.cpp.ll
-; llvm/optimized/RISCVO0PreLegalizerCombiner.cpp.ll
-; llvm/optimized/RISCVPostLegalizerCombiner.cpp.ll
-; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
-; openspiel/optimized/bridge.cc.ll
-; openusd/optimized/coalescingDiagnosticDelegate.cpp.ll
-; openusd/optimized/mergingSceneIndex.cpp.ll
-; openusd/optimized/namespaceEditor.cpp.ll
-; openusd/optimized/pathNode.cpp.ll
-; openusd/optimized/sortedIds.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
-entry:
-  %2 = lshr i64 %1, 6
-  %3 = and i64 %2, 1
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 24
-  %5 = getelementptr nusw [2 x i64], ptr %4, i64 0, i64 %3
-  ret ptr %5
-}
-
-; 6 occurrences:
-; openusd/optimized/env.cpp.ll
-; openusd/optimized/info.cpp.ll
-; openusd/optimized/instanceAdapter.cpp.ll
-; openusd/optimized/mallocTag.cpp.ll
-; openusd/optimized/pointInstancerAdapter.cpp.ll
-; openusd/optimized/reporter.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1) #0 {
-entry:
-  %2 = lshr exact i64 %1, 3
-  %3 = and i64 %2, 255
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 57
-  %5 = getelementptr nusw [256 x i8], ptr %4, i64 0, i64 %3
+  %5 = getelementptr nusw nuw [12800 x float], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
@@ -1267,7 +1242,19 @@ entry:
   %2 = lshr i64 %1, 56
   %3 = and i64 %2, 3
   %4 = getelementptr i8, ptr %0, i64 -13440
-  %5 = getelementptr [4 x %struct.zone.3352968], ptr %4, i64 0, i64 %3
+  %5 = getelementptr [4 x %struct.zone.3540695], ptr %4, i64 0, i64 %3
+  ret ptr %5
+}
+
+; 1 occurrences:
+; hyperscan/optimized/rose_build_add_mask.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 6
+  %3 = and i64 %2, 3
+  %4 = getelementptr nusw i8, ptr %0, i64 -32
+  %5 = getelementptr nusw nuw [4 x i64], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 

@@ -1,5 +1,6 @@
 
-; 94 occurrences:
+; 93 occurrences:
+; boost/optimized/topology.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cvc5/optimized/options_handler.cpp.ll
 ; cxxopts/optimized/example.cpp.ll
@@ -67,7 +68,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -92,10 +92,9 @@
 ; xgboost/optimized/context.cc.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000154(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000294(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp sgt i8 %1, %2
   %4 = icmp sgt i8 %0, %1
@@ -108,7 +107,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_operator_join.cpp.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000110(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000210(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ugt i8 %1, %2
   %4 = icmp ugt i8 %0, %1
@@ -119,7 +118,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_expression_executor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ee(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func00000000000001ce(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp sle i8 %2, %0
   %4 = icmp sle i8 %0, %1
@@ -130,7 +129,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_expression_executor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func000000000000014a(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ule i8 %2, %0
   %4 = icmp ule i8 %0, %1

@@ -25,13 +25,3 @@ func0000000000000030:                   # @func0000000000000030
 	vand.vi	v8, v8, 1
 	vor.vv	v8, v8, v9
 	ret
-func0000000000000011:                   # @func0000000000000011
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsleu.vi	v0, v10, 1
-	vsetvli	zero, zero, e16, m1, ta, ma
-	vmv.v.i	v9, 0
-	li	a0, 2046
-	vmerge.vim	v9, v9, 1, v0
-	vand.vx	v8, v8, a0
-	vor.vv	v8, v8, v9
-	ret

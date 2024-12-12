@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; bullet3/optimized/btGjkPairDetector.ll
 ; hdf5/optimized/H5Tconv_vlen.c.ll
 ; linux/optimized/irq.ll
@@ -10,6 +10,7 @@
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; llvm/optimized/SemaModule.cpp.ll
 ; wireshark/optimized/packet-dmp.c.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, ptr %2) #0 {
 entry:

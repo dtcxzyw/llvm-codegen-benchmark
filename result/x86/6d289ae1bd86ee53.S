@@ -1,5 +1,5 @@
-func0000000000000022:                   # @func0000000000000022
-	cmpq	%rsi, %rdi
+func0000000000000042:                   # @func0000000000000042
+	cmpq	%rdi, %rsi
 	sete	%cl
 	testq	%rdi, %rdi
 	sete	%al

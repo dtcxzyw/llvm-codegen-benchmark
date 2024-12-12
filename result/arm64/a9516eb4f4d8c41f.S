@@ -1,4 +1,4 @@
-func0000000000000011:                   // @func0000000000000011
+func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
 	sub	x8, x1, x0
 	mov	w9, #52429                      // =0xcccd
@@ -9,7 +9,7 @@ func0000000000000011:                   // @func0000000000000011
 	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000014:                   // @func0000000000000014
+func0000000000000034:                   // @func0000000000000034
 // %bb.0:                               // %entry
 	sub	x8, x1, x0
 	mov	w9, #52429                      // =0xcccd
@@ -20,7 +20,7 @@ func0000000000000014:                   // @func0000000000000014
 	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000018:                   // @func0000000000000018
+func0000000000000028:                   // @func0000000000000028
 // %bb.0:                               // %entry
 	mov	x9, #35747                      // =0x8ba3
 	sub	x8, x1, x0
@@ -35,7 +35,7 @@ func0000000000000018:                   // @func0000000000000018
 	cset	w0, hi
 	ret
                                         // -- End function
-func000000000000001c:                   // @func000000000000001c
+func000000000000002c:                   // @func000000000000002c
 // %bb.0:                               // %entry
 	sub	x8, x1, x0
 	mov	w9, #43691                      // =0xaaab
@@ -56,5 +56,16 @@ func0000000000000001:                   // @func0000000000000001
 	add	w8, w9, w8, lsr #1
 	tst	x8, #0x1
 	cset	w0, eq
+	ret
+                                        // -- End function
+func0000000000000038:                   // @func0000000000000038
+// %bb.0:                               // %entry
+	sub	x8, x1, x0
+	mov	w9, #35747                      // =0x8ba3
+	lsr	x8, x8, #3
+	movk	w9, #47662, lsl #16
+	mul	w8, w8, w9
+	tst	x8, #0x7ffffffe
+	cset	w0, ne
 	ret
                                         // -- End function

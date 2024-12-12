@@ -1,43 +1,36 @@
-func00000000000000c6:                   # @func00000000000000c6
+func0000000000000186:                   # @func0000000000000186
 	sext.w	a0, a0
 	srli	a2, a2, 2
 	addw	a1, a1, a2
 	slt	a0, a1, a0
 	ret
-func00000000000003f1:                   # @func00000000000003f1
+func00000000000007e1:                   # @func00000000000007e1
 	sext.w	a0, a0
 	srli	a2, a2, 32
 	addw	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000002d1:                   # @func00000000000002d1
+func00000000000005a1:                   # @func00000000000005a1
 	sext.w	a0, a0
 	srli	a2, a2, 32
 	addw	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000002b5:                   # @func00000000000002b5
-	sext.w	a0, a0
-	srli	a2, a2, 32
-	addw	a1, a1, a2
-	sltu	a0, a0, a1
-	xori	a0, a0, 1
-	ret
-func000000000000041a:                   # @func000000000000041a
+func000000000000082a:                   # @func000000000000082a
 	sext.w	a0, a0
 	srli	a2, a2, 3
 	addw	a1, a1, a2
 	slt	a0, a0, a1
 	ret
-func0000000000000416:                   # @func0000000000000416
+func0000000000000826:                   # @func0000000000000826
 	sext.w	a0, a0
 	srli	a2, a2, 3
 	addw	a1, a1, a2
 	slt	a0, a1, a0
 	ret
-func0000000000000296:                   # @func0000000000000296
+func0000000000000526:                   # @func0000000000000526
 	sext.w	a0, a0
 	srli	a2, a2, 32
 	addw	a1, a1, a2
@@ -49,20 +42,20 @@ func0000000000000006:                   # @func0000000000000006
 	addw	a1, a1, a2
 	slt	a0, a1, a0
 	ret
-func0000000000000291:                   # @func0000000000000291
+func0000000000000521:                   # @func0000000000000521
 	sext.w	a0, a0
 	srli	a2, a2, 32
 	addw	a1, a1, a2
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000002ba:                   # @func00000000000002ba
+func000000000000056a:                   # @func000000000000056a
 	sext.w	a0, a0
 	srli	a2, a2, 32
 	addw	a1, a1, a2
 	slt	a0, a0, a1
 	ret
-func000000000000029a:                   # @func000000000000029a
+func000000000000052a:                   # @func000000000000052a
 	sext.w	a0, a0
 	srli	a2, a2, 32
 	addw	a1, a1, a2

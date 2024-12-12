@@ -5,5 +5,5 @@ func0000000000000006:                   # @func0000000000000006
 	bseti	a0, zero, 63
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmerge.vxm	v10, v12, a0, v0
-	vand.vv	v8, v10, v8
+	vand.vv	v8, v8, v10
 	ret

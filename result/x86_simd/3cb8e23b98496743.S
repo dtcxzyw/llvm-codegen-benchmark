@@ -1,4 +1,4 @@
-func000000000000008a:                   # @func000000000000008a
+func000000000000010a:                   # @func000000000000010a
 	vpaddq	%ymm0, %ymm2, %ymm3
 	vpcmpgtq	%ymm1, %ymm3, %k1
 	vpsubq	%ymm2, %ymm1, %ymm0 {%k1}
@@ -8,7 +8,7 @@ func000000000000000a:                   # @func000000000000000a
 	vpcmpgtq	%ymm1, %ymm3, %k1
 	vpsubq	%ymm2, %ymm1, %ymm0 {%k1}
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	vpaddq	%ymm2, %ymm0, %ymm3
 	vpcmpnleuq	%ymm1, %ymm3, %k1
 	vpsubq	%ymm2, %ymm1, %ymm0 {%k1}
@@ -18,42 +18,37 @@ func0000000000000008:                   # @func0000000000000008
 	vpcmpnleuq	%ymm1, %ymm3, %k1
 	vpsubq	%ymm2, %ymm1, %ymm0 {%k1}
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	vpaddq	%ymm2, %ymm0, %ymm3
 	vpcmpnleuq	%ymm1, %ymm3, %k1
 	vpsubq	%ymm2, %ymm1, %ymm0 {%k1}
 	retq
-func00000000000000e8:                   # @func00000000000000e8
+func0000000000000188:                   # @func0000000000000188
 	vpaddq	%ymm2, %ymm0, %ymm3
 	vpcmpnleuq	%ymm1, %ymm3, %k1
 	vpsubq	%ymm2, %ymm1, %ymm0 {%k1}
 	retq
-func00000000000000c8:                   # @func00000000000000c8
-	vpaddq	%ymm2, %ymm0, %ymm3
-	vpcmpnleuq	%ymm1, %ymm3, %k1
-	vpsubq	%ymm2, %ymm1, %ymm0 {%k1}
-	retq
-func00000000000000ca:                   # @func00000000000000ca
+func000000000000018a:                   # @func000000000000018a
 	vpaddq	%ymm2, %ymm0, %ymm3
 	vpcmpgtq	%ymm1, %ymm3, %k1
 	vpsubq	%ymm2, %ymm1, %ymm0 {%k1}
 	retq
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	vpaddq	%ymm2, %ymm0, %ymm3
 	vpcmpnleuq	%ymm1, %ymm3, %k1
 	vpsubq	%ymm2, %ymm1, %ymm0 {%k1}
 	retq
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	vpaddq	%ymm2, %ymm0, %ymm3
 	vpcmpgtq	%ymm1, %ymm3, %k1
 	vpsubq	%ymm2, %ymm1, %ymm0 {%k1}
 	retq
-func00000000000000d8:                   # @func00000000000000d8
+func00000000000001b8:                   # @func00000000000001b8
 	vpaddq	%ymm2, %ymm0, %ymm3
 	vpcmpnleuq	%ymm1, %ymm3, %k1
 	vpsubq	%ymm2, %ymm1, %ymm0 {%k1}
 	retq
-func000000000000003a:                   # @func000000000000003a
+func000000000000006a:                   # @func000000000000006a
 	vpaddq	%ymm2, %ymm0, %ymm3
 	vpcmpgtq	%ymm1, %ymm3, %k1
 	vpsubq	%ymm2, %ymm1, %ymm0 {%k1}

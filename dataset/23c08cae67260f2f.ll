@@ -12,7 +12,7 @@ entry:
   ret i64 %7
 }
 
-; 47 occurrences:
+; 48 occurrences:
 ; assimp/optimized/Q3DLoader.cpp.ll
 ; assimp/optimized/SIBImporter.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_csv_sniffer.cpp.ll
@@ -55,6 +55,7 @@ entry:
 ; minetest/optimized/wieldmesh.cpp.ll
 ; msgpack/optimized/speed_test_nested_array.cpp.ll
 ; opencv/optimized/fast_hough_transform.cpp.ll
+; opencv/optimized/hough.cpp.ll
 ; opencv/optimized/learning_based_color_balance.cpp.ll
 ; opencv/optimized/scansegment.cpp.ll
 ; opencv/optimized/select3dobj.cpp.ll
@@ -66,7 +67,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = sdiv exact i64 %4, 12
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   %7 = mul nuw nsw i64 %6, 12
   ret i64 %7
 }
@@ -104,21 +105,22 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = sdiv exact i64 %4, 24
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   %7 = mul nuw nsw i64 %6, 24
   ret i64 %7
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/src.ll
 ; hermes/optimized/HadesGC.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000014(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
-  %5 = sdiv exact i64 %4, 6408
+  %5 = sdiv exact i64 %4, -24
   %6 = add nsw i64 %5, %0
-  %7 = mul i64 %6, 6408
+  %7 = mul i64 %6, 24
   ret i64 %7
 }
 
@@ -130,7 +132,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = sdiv exact i64 %4, -24
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   %7 = mul i64 %6, 24
   ret i64 %7
 }
@@ -143,7 +145,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = sdiv exact i64 %4, 24
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   %7 = mul i64 %6, 24
   ret i64 %7
 }

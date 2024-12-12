@@ -10,7 +10,7 @@
 ; openjdk/optimized/mlib_ImageConv_u16ext.ll
 ; openjdk/optimized/mlib_ImageConv_u16nw.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i64 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = icmp sgt i32 %3, 14
@@ -26,7 +26,7 @@ entry:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; opencv/optimized/beblid.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i64 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = icmp slt i32 %3, 7

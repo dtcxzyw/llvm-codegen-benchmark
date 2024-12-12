@@ -4,11 +4,11 @@
 ; abc/optimized/covMinSop.c.ll
 ; stockfish/optimized/tbprobe.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0) #0 {
+define i1 @func0000000000000014(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 1023
   %2 = lshr i32 %0, 22
-  %3 = icmp ult i32 %2, %1
+  %3 = icmp samesign ult i32 %2, %1
   ret i1 %3
 }
 
@@ -40,11 +40,11 @@ entry:
 ; 1 occurrences:
 ; stockfish/optimized/tbprobe.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0) #0 {
+define i1 @func0000000000000018(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 7
   %2 = lshr i32 %0, 3
-  %3 = icmp ugt i32 %2, %1
+  %3 = icmp samesign ugt i32 %2, %1
   ret i1 %3
 }
 

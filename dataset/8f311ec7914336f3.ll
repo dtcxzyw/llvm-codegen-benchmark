@@ -4,9 +4,9 @@
 ; openexr/optimized/internal_huf.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000204(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000604(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 2
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %0, %4
   %6 = add i64 %1, 1
@@ -20,9 +20,9 @@ entry:
 ; llvm/optimized/DWARFVerifier.cpp.ll
 ; openspiel/optimized/json.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000208(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000608(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %0, %4
   %6 = add i64 %1, -1

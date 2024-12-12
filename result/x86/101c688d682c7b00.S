@@ -13,9 +13,9 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	retq
 func0000000000000008:                   # @func0000000000000008
-	shrq	$4, %rdx
+	shrq	%rdx
 	testb	$1, %dil
 	cmoveq	%rsi, %rdx
-	cmpq	$3, %rdx
+	cmpq	$2, %rdx
 	setae	%al
 	retq

@@ -88,8 +88,32 @@ entry:
   ret i64 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; gromacs/optimized/lmmin.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001a(i1 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc nuw nsw i64 %2 to i32
+  %4 = select i1 %0, i32 %3, i32 %1
+  %5 = add nsw i32 %4, -1
+  %6 = zext i32 %5 to i64
+  ret i64 %6
+}
+
+; 2 occurrences:
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000019(i1 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc nuw nsw i64 %2 to i32
+  %4 = select i1 %0, i32 %3, i32 %1
+  %5 = add i32 %4, -1
+  %6 = zext nneg i32 %5 to i64
+  ret i64 %6
+}
+
+; 1 occurrences:
 ; opencv/optimized/model.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001b(i1 %0, i32 %1, i64 %2) #0 {

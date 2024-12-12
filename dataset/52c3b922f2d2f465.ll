@@ -1,9 +1,8 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/tensor.cpp.ll
@@ -14,7 +13,7 @@
 define i64 @func000000000000000c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = xor i64 %4, %0
   %6 = mul i64 %5, -7070675565921424023
   ret i64 %6
@@ -27,8 +26,8 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %3, %1
-  %5 = xor i64 %4, %0
+  %4 = add i64 %1, %3
+  %5 = xor i64 %0, %4
   %6 = mul i64 %5, -4417276706812531889
   ret i64 %6
 }

@@ -14,14 +14,12 @@ entry:
   ret i16 %3
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; llvm/optimized/CodeViewDebug.cpp.ll
-; llvm/optimized/CombinerHelper.cpp.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
-; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000014(i32 %0) #0 {
+define i16 @func0000000000000024(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -7
   %2 = icmp ult i32 %1, 2

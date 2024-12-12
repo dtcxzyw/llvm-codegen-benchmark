@@ -11,7 +11,7 @@ func0000000000000023:                   # @func0000000000000023
 func000000000000002b:                   # @func000000000000002b
 	subw	a1, a1, a0
 	addi	a1, a1, -2
-	slli.uw	a0, a1, 3
+	slli.uw	a0, a1, 2
 	ret
 func0000000000000013:                   # @func0000000000000013
 	not	a0, a0

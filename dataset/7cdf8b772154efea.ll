@@ -1,5 +1,5 @@
 
-; 34 occurrences:
+; 35 occurrences:
 ; abc/optimized/epd.c.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
@@ -18,6 +18,7 @@
 ; hermes/optimized/dtoa.c.ll
 ; jq/optimized/jv_dtoa.ll
 ; libquic/optimized/dtoa.cc.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; mitsuba3/optimized/sensor.cpp.ll
 ; opencv/optimized/mathfuncs_core.dispatch.cpp.ll
 ; openjdk/optimized/sharedRuntimeTrans.ll
@@ -38,7 +39,7 @@
 define double @func0000000000000000(double %0, i64 %1) #0 {
 entry:
   %2 = bitcast i64 %1 to double
-  %3 = fmul double %2, %0
+  %3 = fmul double %0, %2
   ret double %3
 }
 

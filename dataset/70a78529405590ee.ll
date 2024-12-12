@@ -10,7 +10,7 @@
 define float @func0000000000000000(float %0, float %1, double %2) #0 {
 entry:
   %3 = fptrunc double %2 to float
-  %4 = fadd float %3, %1
+  %4 = fadd float %1, %3
   %5 = fdiv float %0, %4
   ret float %5
 }

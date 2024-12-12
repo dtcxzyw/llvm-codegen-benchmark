@@ -33,11 +33,11 @@
 define i64 @func000000000000000d(i64 %0, i64 %1) #0 {
 entry:
   %.neg = shl nsw i64 -1, %1
-  %2 = and i64 %.neg, %0
+  %2 = and i64 %0, %.neg
   ret i64 %2
 }
 
-; 410 occurrences:
+; 408 occurrences:
 ; cmake/optimized/xmlparse.c.ll
 ; cpython/optimized/xmlparse.ll
 ; linux/optimized/generic-radix-tree.ll
@@ -46,7 +46,6 @@ entry:
 ; linux/optimized/memory.ll
 ; linux/optimized/mprotect.ll
 ; linux/optimized/page_vma_mapped.ll
-; linux/optimized/pagewalk.ll
 ; linux/optimized/vmalloc.ll
 ; llvm/optimized/AArch64Arm64ECCallLowering.cpp.ll
 ; llvm/optimized/AArch64CallLowering.cpp.ll
@@ -315,7 +314,6 @@ entry:
 ; llvm/optimized/RDFGraph.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetObjectFile.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
@@ -452,7 +450,7 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %.neg = shl nsw i64 -1, %1
-  %2 = and i64 %.neg, %0
+  %2 = and i64 %0, %.neg
   ret i64 %2
 }
 
@@ -464,7 +462,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %.neg = shl i64 -2, %1
-  %2 = and i64 %.neg, %0
+  %2 = and i64 %0, %.neg
   ret i64 %2
 }
 
@@ -474,7 +472,7 @@ entry:
 define i64 @func0000000000000009(i64 %0, i64 %1) #0 {
 entry:
   %.neg = shl nsw i64 -1, %1
-  %2 = and i64 %.neg, %0
+  %2 = and i64 %0, %.neg
   ret i64 %2
 }
 

@@ -1,8 +1,7 @@
 
-; 41 occurrences:
+; 39 occurrences:
 ; icu/optimized/ucnv2022.ll
 ; icu/optimized/utf16collationiterator.ll
-; linux/optimized/utownerid.ll
 ; llvm/optimized/AArch64AdvSIMDScalarPass.cpp.ll
 ; llvm/optimized/AArch64CallLowering.cpp.ll
 ; llvm/optimized/AArch64CallingConvention.cpp.ll
@@ -20,7 +19,6 @@
 ; llvm/optimized/MachineSink.cpp.ll
 ; llvm/optimized/MachineVerifier.cpp.ll
 ; llvm/optimized/RISCVCallLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVRegisterInfo.cpp.ll
 ; llvm/optimized/RegAllocFast.cpp.ll
@@ -61,7 +59,7 @@ entry:
   %2 = and i16 %1, 31
   %3 = zext nneg i16 %2 to i32
   %4 = shl nuw i32 1, %3
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 

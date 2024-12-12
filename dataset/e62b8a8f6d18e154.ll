@@ -1,13 +1,11 @@
 
-; 16 occurrences:
-; clamav/optimized/conv.c.ll
+; 14 occurrences:
 ; hermes/optimized/APInt.cpp.ll
 ; linux/optimized/badblocks.ll
 ; linux/optimized/blk-map.ll
 ; linux/optimized/compress.ll
 ; linux/optimized/i915_gem_mman.ll
 ; linux/optimized/intel_ggtt.ll
-; linux/optimized/machine_kexec_64.ll
 ; linux/optimized/swap_state.ll
 ; linux/optimized/trans_virtio.ll
 ; llvm/optimized/APInt.cpp.ll

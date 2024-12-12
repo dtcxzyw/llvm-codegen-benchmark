@@ -6,7 +6,7 @@
 define i64 @func0000000000000001(ptr %0, ptr %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %1, i64 48
-  %3 = icmp eq ptr %2, %0
+  %3 = icmp eq ptr %0, %2
   %4 = select i1 %3, i64 72, i64 40
   ret i64 %4
 }
@@ -16,10 +16,10 @@ entry:
 ; llvm/optimized/RISCVISAInfo.cpp.ll
 ; verilator/optimized/V3Trace.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(ptr %0, ptr %1) #0 {
+define i64 @func0000000000000061(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 40
-  %3 = icmp eq ptr %2, %0
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 40
+  %3 = icmp eq ptr %0, %2
   %4 = select i1 %3, i64 24, i64 16
   ret i64 %4
 }
@@ -33,10 +33,10 @@ entry:
 ; verilator/optimized/V3Param.cpp.ll
 ; wireshark/optimized/packet-wcp.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000024(ptr %0, ptr %1) #0 {
+define i64 @func0000000000000064(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 64
-  %3 = icmp ugt ptr %2, %0
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 64
+  %3 = icmp ult ptr %0, %2
   %4 = select i1 %3, i64 24, i64 16
   ret i64 %4
 }
@@ -62,10 +62,10 @@ entry:
 ; yosys/optimized/techmap.ll
 ; yosys/optimized/torder.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000002c(ptr %0, ptr %1) #0 {
+define i64 @func000000000000006c(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 40
-  %.not = icmp eq ptr %2, %0
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 40
+  %.not = icmp eq ptr %0, %2
   %3 = select i1 %.not, i64 24, i64 16
   ret i64 %3
 }

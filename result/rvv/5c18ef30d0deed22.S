@@ -1,4 +1,4 @@
-func0000000000000220:                   # @func0000000000000220
+func0000000000000420:                   # @func0000000000000420
 	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vmsgtu.vi	v14, v10, 1

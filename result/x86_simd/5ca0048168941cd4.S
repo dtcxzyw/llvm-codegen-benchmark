@@ -1,0 +1,18 @@
+.LCPI0_0:
+	.long	67                              # 0x43
+func000000000000003d:                   # @func000000000000003d
+	vpmovqd	%ymm0, %xmm0
+	vpbroadcastd	.LCPI0_0(%rip), %xmm1   # xmm1 = [67,67,67,67]
+	vpsubd	%xmm0, %xmm1, %xmm0
+	vpsrld	$2, %xmm0, %xmm0
+	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	retq
+.LCPI1_0:
+	.long	5                               # 0x5
+func0000000000000001:                   # @func0000000000000001
+	vpmovqd	%ymm0, %xmm0
+	vpbroadcastd	.LCPI1_0(%rip), %xmm1   # xmm1 = [5,5,5,5]
+	vpsubd	%xmm0, %xmm1, %xmm0
+	vpsrld	$1, %xmm0, %xmm0
+	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	retq

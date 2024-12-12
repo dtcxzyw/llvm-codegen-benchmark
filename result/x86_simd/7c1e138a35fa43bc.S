@@ -24,7 +24,7 @@ func0000000000000018:                   # @func0000000000000018
 	vpmovd2m	%xmm0, %k0
 	vpandd	.LCPI1_0(%rip){1to4}, %xmm1, %xmm0
 	vpcmpneqd	.LCPI1_1(%rip){1to4}, %xmm0, %k1
-	korw	%k0, %k1, %k1
+	korw	%k1, %k0, %k1
 	vpbroadcastq	.LCPI1_2(%rip), %ymm0   # ymm0 = [96,96,96,96]
 	vpbroadcastq	.LCPI1_3(%rip), %ymm0 {%k1} # ymm0 {%k1} = [72,72,72,72]
 	retq

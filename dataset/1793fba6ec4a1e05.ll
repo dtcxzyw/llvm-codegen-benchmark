@@ -1,6 +1,5 @@
 
-; 2 occurrences:
-; git/optimized/convert.ll
+; 1 occurrences:
 ; php/optimized/zend_API.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000080(i64 %0, i64 %1, ptr %2) #0 {
@@ -13,13 +12,26 @@ entry:
   ret i64 %6
 }
 
+; 1 occurrences:
+; git/optimized/convert.ll
+; Function Attrs: nounwind
+define i64 @func00000000000000c0(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
+  %4 = ptrtoint ptr %3 to i64
+  %.neg = sub i64 %1, %4
+  %5 = add i64 %.neg, %0
+  %6 = add i64 %5, -3
+  ret i64 %6
+}
+
 ; 2 occurrences:
 ; clamav/optimized/pdf.c.ll
 ; hermes/optimized/BytecodeDisassembler.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000088(i64 %0, i64 %1, ptr %2) #0 {
+define i64 @func00000000000000c8(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 6
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 6
   %4 = ptrtoint ptr %3 to i64
   %.neg = sub i64 %1, %4
   %5 = add i64 %.neg, %0

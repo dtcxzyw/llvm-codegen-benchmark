@@ -1,5 +1,5 @@
-func0000000000000028:                   # @func0000000000000028
+func0000000000000068:                   # @func0000000000000068
 	leaq	8(%rdx), %rax
-	cmpq	$2, %rsi
+	cmpq	$4, %rsi
 	cmovaeq	%rdi, %rax
 	retq

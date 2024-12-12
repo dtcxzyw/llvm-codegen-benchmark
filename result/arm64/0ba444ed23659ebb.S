@@ -1,19 +1,14 @@
-func00000000000001f4:                   // @func00000000000001f4
+func00000000000003d4:                   // @func00000000000003d4
 // %bb.0:                               // %entry
-	movi	v3.4s, #1
-	uzp1	v1.4s, v1.4s, v2.4s
-	add	v1.4s, v1.4s, v3.4s
-	cmgt	v0.4s, v0.4s, v1.4s
-	and	v0.16b, v0.16b, v3.16b
+	add	w8, w1, #1
+	cmp	w0, w8
+	cset	w0, gt
 	ret
                                         // -- End function
 func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
-	uzp1	v1.4s, v1.4s, v2.4s
-	movi	v2.2d, #0xffffffffffffffff
-	add	v1.4s, v1.4s, v2.4s
-	movi	v2.4s, #1
-	cmgt	v0.4s, v0.4s, v1.4s
-	and	v0.16b, v0.16b, v2.16b
+	sub	w8, w1, #1
+	cmp	w0, w8
+	cset	w0, gt
 	ret
                                         // -- End function

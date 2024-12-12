@@ -39,5 +39,5 @@ func0000000000000001:                   # @func0000000000000001
 	vmv.v.i	v12, 4
 	vsll.vv	v10, v12, v10
 	vmerge.vim	v10, v10, 4, v0
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret

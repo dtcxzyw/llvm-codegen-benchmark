@@ -10,7 +10,7 @@ func0000000000000035:                   # @func0000000000000035
 	vpbroadcastd	.LCPI0_0(%rip), %ymm1   # ymm1 = [32,32,32,32,32,32,32,32]
 	vpbroadcastd	.LCPI0_1(%rip), %ymm3   # ymm3 = [1,1,1,1,1,1,1,1]
 	vpsubd	%ymm2, %ymm1, %ymm3 {%k1}
-	vpaddd	%ymm0, %ymm3, %ymm0
+	vpaddd	%ymm3, %ymm0, %ymm0
 	vpbroadcastd	.LCPI0_2(%rip), %ymm1   # ymm1 = [24,24,24,24,24,24,24,24]
 	vpsubd	%ymm0, %ymm1, %ymm0
 	retq

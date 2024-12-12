@@ -1,7 +1,7 @@
 
 ; 8 occurrences:
 ; llvm/optimized/OMPContext.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; lvgl/optimized/lv_chart.ll
 ; regex-rs/optimized/6c2onrqlphpgxx0.ll
 ; regex-rs/optimized/gbxkn0az9l87aop.ll
 ; ripgrep-rs/optimized/4m87zogkrnv5oa3v.ll

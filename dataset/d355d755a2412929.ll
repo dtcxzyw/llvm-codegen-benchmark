@@ -19,7 +19,7 @@
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4611686018427387903
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = shl nsw i64 %3, 1
   ret i64 %4
 }
@@ -43,7 +43,7 @@ entry:
 define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = shl nuw nsw i64 %3, 1
   ret i64 %4
 }
@@ -61,7 +61,7 @@ entry:
   ret i64 %4
 }
 
-; 26 occurrences:
+; 27 occurrences:
 ; llvm/optimized/BranchProbability.cpp.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; postgres/optimized/inval.ll
@@ -88,11 +88,12 @@ entry:
 ; z3/optimized/bv_internalize.cpp.ll
 ; z3/optimized/sat_cutset.cpp.ll
 ; z3/optimized/theory_bv.cpp.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1792
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = shl nuw i64 %3, 48
   ret i64 %4
 }
@@ -112,7 +113,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1537228672809129301
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = shl i64 %3, 2
   ret i64 %4
 }
@@ -135,7 +136,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4611686018427387904
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = shl nuw i64 %3, 1
   ret i64 %4
 }

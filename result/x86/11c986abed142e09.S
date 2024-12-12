@@ -7,8 +7,8 @@ func0000000000000002:                   # @func0000000000000002
 func000000000000003c:                   # @func000000000000003c
 	addl	$-61440, %edx                   # imm = 0xFFFF1000
 	andl	$-32, %edx
-	leaq	(%rdi,%rdx,4), %rax
-	leaq	(%rax,%rsi,4), %rax
+	leaq	(%rdi,%rsi,4), %rax
+	leaq	(%rax,%rdx,4), %rax
 	retq
 func0000000000000000:                   # @func0000000000000000
 	leaq	7(%rdx), %rax
@@ -40,7 +40,7 @@ func000000000000002a:                   # @func000000000000002a
 	addq	%rdi, %rax
 	addq	%rsi, %rax
 	retq
-func000000000000003e:                   # @func000000000000003e
+func000000000000003f:                   # @func000000000000003f
 	leal	2(%rdx), %eax
 	andl	$1020, %eax                     # imm = 0x3FC
 	addq	%rdi, %rax

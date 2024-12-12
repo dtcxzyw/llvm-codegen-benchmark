@@ -30,4 +30,15 @@ entry:
   ret float %3
 }
 
+; 1 occurrences:
+; oiio/optimized/environment.cpp.ll
+; Function Attrs: nounwind
+define float @func000000000000000e(float %0) #0 {
+entry:
+  %1 = fsub float 5.000000e-01, %0
+  %2 = fcmp ord float %1, 0.000000e+00
+  %3 = select i1 %2, float %1, float 0.000000e+00
+  ret float %3
+}
+
 attributes #0 = { nounwind }

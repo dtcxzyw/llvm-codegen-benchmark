@@ -10,6 +10,12 @@ func0000000000000001:                   # @func0000000000000001
 	li	a1, 1
 	sub	a0, a1, a0
 	ret
+func0000000000000007:                   # @func0000000000000007
+	slli	a0, a0, 3
+	andi	a0, a0, 8
+	li	a1, 16
+	sub	a0, a1, a0
+	ret
 func000000000000000f:                   # @func000000000000000f
 	slli	a0, a0, 56
 	srli	a0, a0, 55

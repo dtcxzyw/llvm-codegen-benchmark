@@ -28,7 +28,7 @@ func0000000000000014:                   # @func0000000000000014
 	.quad	68719476736                     # 0x1000000000
 func0000000000000009:                   # @func0000000000000009
 	vpsllq	$30, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	vpbroadcastq	.LCPI4_0(%rip), %ymm1   # ymm1 = [68719476736,68719476736,68719476736,68719476736]
 	vpsubq	%ymm0, %ymm1, %ymm0
 	retq

@@ -4,7 +4,7 @@ func0000000000000004:                   # @func0000000000000004
 	movl	$4, %eax
 	sbbl	$0, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	decl	%esi
 	xorl	%eax, %eax
 	cmpl	%edi, %esi
@@ -12,14 +12,14 @@ func0000000000000011:                   # @func0000000000000011
 	negl	%eax
 	orl	$64, %eax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	decl	%esi
 	xorl	%eax, %eax
 	cmpl	%edi, %esi
 	setg	%al
 	incl	%eax
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	incl	%esi
 	cmpl	%edi, %esi
 	movl	$97, %ecx
@@ -32,13 +32,6 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	%edi, %esi
 	setne	%al
 	leal	13(%rax,%rax), %eax
-	retq
-func0000000000000034:                   # @func0000000000000034
-	incl	%esi
-	cmpl	%edi, %esi
-	movl	$72, %ecx
-	movl	$66, %eax
-	cmovbl	%ecx, %eax
 	retq
 func000000000000000a:                   # @func000000000000000a
 	decl	%esi
@@ -54,28 +47,21 @@ func0000000000000008:                   # @func0000000000000008
 	movl	$-36, %eax
 	cmovbel	%ecx, %eax
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	incl	%esi
 	xorl	%eax, %eax
 	cmpl	%edi, %esi
 	sete	%al
 	orl	$2, %eax
 	retq
-func000000000000003a:                   # @func000000000000003a
-	addl	$7, %esi
-	xorl	%eax, %eax
-	cmpl	%edi, %esi
-	setle	%al
-	leal	-1(%rax,%rax,4), %eax
-	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	incl	%esi
 	cmpl	%edi, %esi
 	movl	$10, %ecx
 	movl	$4, %eax
 	cmovll	%ecx, %eax
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	incl	%esi
 	xorl	%eax, %eax
 	cmpl	%edi, %esi

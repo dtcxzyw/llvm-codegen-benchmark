@@ -1,8 +1,19 @@
 
-; 286 occurrences:
+; 294 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; assimp/optimized/Assimp.cpp.ll
+; boost/optimized/async.ll
+; boost/optimized/date_time_format_parser.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/named_scope_format_parser.ll
+; boost/optimized/object_name.ll
+; boost/optimized/src.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/to_chars.ll
+; boost/optimized/wait.ll
 ; clamav/optimized/pe_icons.c.ll
 ; cmake/optimized/archive_read_support_format_warc.c.ll
 ; cpython/optimized/_datetimemodule.ll
@@ -101,7 +112,6 @@
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/intel_dpll_mgr.ll
-; linux/optimized/intel_guc_slpc.ll
 ; linux/optimized/intel_rps.ll
 ; linux/optimized/rtc-mc146818-lib.ll
 ; linux/optimized/sr.ll
@@ -110,6 +120,7 @@
 ; llvm/optimized/X86InterleavedAccess.cpp.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
+; lvgl/optimized/lv_anim.ll
 ; memcached/optimized/memcached-itoa_ljust.ll
 ; memcached/optimized/memcached_debug-itoa_ljust.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -267,12 +278,10 @@
 ; wireshark/optimized/packet-iec104.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-isakmp.c.ll
-; wireshark/optimized/packet-its.c.ll
 ; wireshark/optimized/packet-mrp-msrp.c.ll
 ; wireshark/optimized/packet-nasdaq-itch.c.ll
 ; wireshark/optimized/packet-opa-mad.c.ll
 ; wireshark/optimized/packet-openflow_v1.c.ll
-; wireshark/optimized/packet-ouch.c.ll
 ; wireshark/optimized/packet-pn-ptcp.c.ll
 ; wireshark/optimized/packet-pvfs2.c.ll
 ; wireshark/optimized/packet-rtcp.c.ll
@@ -282,7 +291,6 @@
 ; wireshark/optimized/packet-zbee-zcl-meas-sensing.c.ll
 ; wireshark/optimized/packet-zbee-zcl.c.ll
 ; wireshark/optimized/prefs.c.ll
-; wireshark/optimized/radcom.c.ll
 ; xgboost/optimized/charconv.cc.ll
 ; zxing/optimized/AZDetector.cpp.ll
 ; zxing/optimized/zueci.c.ll

@@ -12,11 +12,12 @@ entry:
   ret i32 %6
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; abc/optimized/bmcInse.c.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
 ; mold/optimized/rust-demangle.c.ll
 ; qemu/optimized/disas_riscv.c.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:

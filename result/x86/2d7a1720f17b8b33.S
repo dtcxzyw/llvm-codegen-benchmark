@@ -3,7 +3,7 @@ func000000000000000c:                   # @func000000000000000c
 	sete	%al
 	andb	%dil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	cmpb	$2, %sil
 	setb	%al
 	andb	%dil, %al
@@ -13,7 +13,7 @@ func0000000000000001:                   # @func0000000000000001
 	setne	%al
 	andb	%dil, %al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	cmpb	$3, %sil
 	setae	%al
 	andb	%dil, %al

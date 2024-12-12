@@ -1,7 +1,5 @@
 
-; 4 occurrences:
-; linux/optimized/hdac_regmap.ll
-; linux/optimized/ht.ll
+; 2 occurrences:
 ; linux/optimized/ldt.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; Function Attrs: nounwind

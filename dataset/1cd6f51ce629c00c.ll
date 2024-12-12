@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 20 occurrences:
 ; abc/optimized/solver.c.ll
 ; flac/optimized/fixed.c.ll
 ; flac/optimized/fixed_intrin_sse2.c.ll
@@ -11,7 +11,6 @@
 ; llvm/optimized/GlobalModuleIndex.cpp.ll
 ; opencv/optimized/proposal_layer.cpp.ll
 ; openjdk/optimized/cmsgmt.ll
-; openjdk/optimized/cmslut.ll
 ; openjdk/optimized/deoptimization.ll
 ; postgres/optimized/vacuumlazy.ll
 ; rocksdb/optimized/filter_policy.cc.ll
@@ -73,8 +72,9 @@ entry:
   ret double %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; openjdk/optimized/cmsgamma.ll
+; openjdk/optimized/cmslut.ll
 ; Function Attrs: nounwind
 define double @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:

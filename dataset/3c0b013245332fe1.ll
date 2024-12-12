@@ -1,5 +1,6 @@
 
-; 9 occurrences:
+; 10 occurrences:
+; bdwgc/optimized/gc.c.ll
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
 ; eastl/optimized/BenchmarkHeap.cpp.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
@@ -18,7 +19,8 @@ entry:
   ret i64 %5
 }
 
-; 17 occurrences:
+; 20 occurrences:
+; boost/optimized/src.ll
 ; cpython/optimized/compile.ll
 ; eastl/optimized/BenchmarkTupleVector.cpp.ll
 ; ruby/optimized/array.ll
@@ -36,6 +38,8 @@ entry:
 ; tev/optimized/StbiImageLoader.cpp.ll
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
+; zed-rs/optimized/4360dz3iad2ygf5m8hd0cmm88.ll
+; zed-rs/optimized/e7lqw1ynol01cwrgb8ri1wedr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
 entry:

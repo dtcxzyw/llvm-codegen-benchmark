@@ -1,9 +1,7 @@
 
-; 17 occurrences:
-; linux/optimized/ptp_kvm_x86.ll
+; 15 occurrences:
 ; linux/optimized/pvclock.ll
 ; linux/optimized/resize.ll
-; linux/optimized/vclock_gettime.ll
 ; openjdk/optimized/cardTable.ll
 ; openjdk/optimized/cardTableRS.ll
 ; openjdk/optimized/g1CollectedHeap.ll
@@ -26,6 +24,19 @@ entry:
   ret i64 %5
 }
 
+; 3 occurrences:
+; boost/optimized/rational.ll
+; freetype/optimized/ftbbox.c.ll
+; libjpeg-turbo/optimized/jdarith.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = sub nsw i64 %0, %1
+  %5 = shl i64 %4, %3
+  ret i64 %5
+}
+
 ; 2 occurrences:
 ; freetype/optimized/smooth.c.ll
 ; redis/optimized/fpconv_dtoa.ll
@@ -34,18 +45,6 @@ define i64 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub i64 %0, %1
-  %5 = shl i64 %4, %3
-  ret i64 %5
-}
-
-; 2 occurrences:
-; freetype/optimized/ftbbox.c.ll
-; libjpeg-turbo/optimized/jdarith.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext nneg i32 %2 to i64
-  %4 = sub nsw i64 %0, %1
   %5 = shl i64 %4, %3
   ret i64 %5
 }

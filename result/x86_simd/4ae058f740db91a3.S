@@ -4,6 +4,13 @@ func0000000000000002:                   # @func0000000000000002
 	vmovaps	%zmm1, %zmm2 {%k1}
 	vsubps	%zmm2, %zmm0, %zmm0
 	retq
+.LCPI1_0:
+	.long	0x40490fdb                      # float 3.14159274
+func0000000000000004:                   # @func0000000000000004
+	vcmpgtps	.LCPI1_0(%rip){1to16}, %zmm2, %k1
+	vmovaps	%zmm1, %zmm2 {%k1}
+	vsubps	%zmm2, %zmm0, %zmm0
+	retq
 func0000000000000008:                   # @func0000000000000008
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpeqps	%zmm3, %zmm2, %k1

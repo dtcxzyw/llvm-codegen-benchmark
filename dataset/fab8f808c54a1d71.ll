@@ -1,5 +1,5 @@
 
-; 97 occurrences:
+; 86 occurrences:
 ; actix-rs/optimized/36qa1hw006t0trtl.ll
 ; actix-rs/optimized/5dylu5g0crehei80.ll
 ; coreutils-rs/optimized/1hfndwarkzjc08wu.ll
@@ -16,12 +16,9 @@
 ; delta-rs/optimized/s2xrj2sh770tx8d.ll
 ; delta-rs/optimized/v2ww4w96jtc8bk1.ll
 ; delta-rs/optimized/wrhqeq9ewpf5gr8.ll
-; hermes/optimized/ESTreeIRGen-expr.cpp.ll
-; hermes/optimized/ESTreeIRGen.cpp.ll
 ; image-rs/optimized/1clnprdgqfw2q9lq.ll
 ; influxdb-rs/optimized/17ptp6pnu4b90vr6.ll
 ; influxdb-rs/optimized/3x4ltxca4agvimmq.ll
-; llvm/optimized/MachOObjectFile.cpp.ll
 ; meilisearch-rs/optimized/2zqq886j9ovgawmv.ll
 ; meilisearch-rs/optimized/5788mfqwwp628q0b.ll
 ; mini-lsm-rs/optimized/1mavrvqu7b39yar1.ll
@@ -38,7 +35,6 @@
 ; ripgrep-rs/optimized/1tu4ff7k1l20r9ex.ll
 ; rust-analyzer-rs/optimized/10elsj6wik4dx3zk.ll
 ; rust-analyzer-rs/optimized/13a8uuxp2yipqyp9.ll
-; rust-analyzer-rs/optimized/1jnytxsf9ijspdxz.ll
 ; rust-analyzer-rs/optimized/1n2nbybgay5hs9t3.ll
 ; rust-analyzer-rs/optimized/24c6enrnc2qfqvzp.ll
 ; rust-analyzer-rs/optimized/29a31q43npmnb7t6.ll
@@ -50,9 +46,7 @@
 ; rust-analyzer-rs/optimized/36cskjvhktchzlnh.ll
 ; rust-analyzer-rs/optimized/3bcyxdd3fm70gs30.ll
 ; rust-analyzer-rs/optimized/3g8gmheh3yshr0h0.ll
-; rust-analyzer-rs/optimized/3j0nbdwupb3iwt86.ll
 ; rust-analyzer-rs/optimized/3qct5warpemjfrik.ll
-; rust-analyzer-rs/optimized/43ziu3sspt3bixjk.ll
 ; rust-analyzer-rs/optimized/44ayynfm08lnhjsw.ll
 ; rust-analyzer-rs/optimized/45p2airz10aj25pm.ll
 ; rust-analyzer-rs/optimized/49gbmpy0w6vw8qx1.ll
@@ -72,8 +66,6 @@
 ; rust-analyzer-rs/optimized/7zmg1hi276ncg5y.ll
 ; rust-analyzer-rs/optimized/c249cixj978zg74.ll
 ; rust-analyzer-rs/optimized/jp4yq85z7wea9l3.ll
-; rust-analyzer-rs/optimized/leba1wmgxgrzxkl.ll
-; rust-analyzer-rs/optimized/z27qhj0ivx434rk.ll
 ; rustfmt-rs/optimized/2iek5i6kf8wd1vt9.ll
 ; rustfmt-rs/optimized/llbxf4pclolbp5s.ll
 ; tokenizers-rs/optimized/2mot01sr7ebui81b.ll
@@ -93,18 +85,36 @@
 ; wasmtime-rs/optimized/3ongwcslbj2wmgl9.ll
 ; wasmtime-rs/optimized/3r0osxvwe4cd326n.ll
 ; wasmtime-rs/optimized/3xoiqyy2a9jbg7ae.ll
-; wasmtime-rs/optimized/3yr40www2jy0a6jn.ll
-; wasmtime-rs/optimized/49putx1a0760eu8s.ll
 ; wasmtime-rs/optimized/joyny9bexuq72mb.ll
-; wasmtime-rs/optimized/o2h6j06mg3v3bs7.ll
 ; Function Attrs: nounwind
-define { ptr, ptr } @func0000000000000021(ptr %0) #0 {
+define { ptr, ptr } @func0000000000000041(ptr %0) #0 {
 entry:
   %1 = getelementptr nusw i8, ptr %0, i64 -48
   %2 = icmp eq ptr %0, null
   %3 = select i1 %2, ptr null, ptr %1
   %4 = insertvalue { ptr, ptr } poison, ptr %3, 0
   ret { ptr, ptr } %4
+}
+
+; 10 occurrences:
+; hermes/optimized/ESTreeIRGen-expr.cpp.ll
+; hermes/optimized/ESTreeIRGen.cpp.ll
+; llvm/optimized/MachOObjectFile.cpp.ll
+; rust-analyzer-rs/optimized/1jnytxsf9ijspdxz.ll
+; rust-analyzer-rs/optimized/3j0nbdwupb3iwt86.ll
+; rust-analyzer-rs/optimized/43ziu3sspt3bixjk.ll
+; rust-analyzer-rs/optimized/55szrkbrq7kolv5z.ll
+; rust-analyzer-rs/optimized/leba1wmgxgrzxkl.ll
+; rust-analyzer-rs/optimized/z27qhj0ivx434rk.ll
+; zed-rs/optimized/5uhbvltlizm569jusm7kamf9x.ll
+; Function Attrs: nounwind
+define { ptr, i64 } @func0000000000000061(ptr %0) #0 {
+entry:
+  %1 = getelementptr nusw nuw i8, ptr %0, i64 8
+  %2 = icmp eq ptr %0, null
+  %3 = select i1 %2, ptr null, ptr %1
+  %4 = insertvalue { ptr, i64 } poison, ptr %3, 0
+  ret { ptr, i64 } %4
 }
 
 attributes #0 = { nounwind }

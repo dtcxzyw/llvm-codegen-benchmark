@@ -6,7 +6,7 @@ define i64 @func000000000000000e(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = shl nuw nsw i64 %2, 8
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = and i64 %4, 1008
   ret i64 %5
 }
@@ -36,7 +36,7 @@ entry:
   %2 = zext i8 %1 to i64
   %3 = shl nuw nsw i64 %2, 8
   %.masked = and i64 %0, 281474976710655
-  %4 = or i64 %3, %.masked
+  %4 = or i64 %.masked, %3
   ret i64 %4
 }
 
@@ -49,7 +49,7 @@ entry:
   %2 = zext nneg i8 %1 to i64
   %3 = shl nuw nsw i64 %2, 15
   %.masked = and i64 %0, -8193
-  %4 = or i64 %3, %.masked
+  %4 = or i64 %.masked, %3
   ret i64 %4
 }
 

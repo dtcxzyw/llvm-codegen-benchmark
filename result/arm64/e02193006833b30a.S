@@ -1,53 +1,38 @@
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	ushll	v0.4s, v0.4h, #0
-	mov	w8, #999                        // =0x3e7
-	shl	v0.4s, v0.4s, #31
-	cmlt	v0.4s, v0.4s, #0
-	bsl	v0.16b, v1.16b, v2.16b
-	dup	v1.4s, w8
+	tst	w0, #0x1
+	csel	w8, w1, w2, ne
+	cmp	w8, #999
 	mov	w8, #3                          // =0x3
-	dup	v2.2d, x8
-	mov	w8, #4                          // =0x4
-	dup	v4.2d, x8
-	cmgt	v0.4s, v0.4s, v1.4s
-	sshll	v3.2d, v0.2s, #0
-	sshll2	v0.2d, v0.4s, #0
-	mov	v1.16b, v0.16b
-	mov	v0.16b, v3.16b
-	bsl	v1.16b, v4.16b, v2.16b
-	bsl	v0.16b, v4.16b, v2.16b
+	cinc	x0, x8, gt
 	ret
                                         // -- End function
-func0000000000000001:                   // @func0000000000000001
+func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	ushll	v0.4s, v0.4h, #0
-	mov	w8, #4                          // =0x4
-	dup	v3.2d, x8
-	shl	v0.4s, v0.4s, #31
-	cmlt	v0.4s, v0.4s, #0
-	bsl	v0.16b, v1.16b, v2.16b
-	movi	v1.4s, #4
-	cmeq	v0.4s, v0.4s, v1.4s
-	sshll	v2.2d, v0.2s, #0
-	sshll2	v0.2d, v0.4s, #0
-	bic	v1.16b, v3.16b, v0.16b
-	bic	v0.16b, v3.16b, v2.16b
+	tst	w0, #0x1
+	csel	w8, w1, w2, ne
+	cmp	w8, #9
+	mov	w8, #1                          // =0x1
+	cinc	x0, x8, hi
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	ushll	v0.4s, v0.4h, #0
-	mov	x8, #4294967296                 // =0x100000000
-	dup	v3.2d, x8
-	shl	v0.4s, v0.4s, #31
-	cmlt	v0.4s, v0.4s, #0
-	bsl	v0.16b, v1.16b, v2.16b
-	movi	v1.4s, #63
-	cmhi	v0.4s, v0.4s, v1.4s
-	sshll	v2.2d, v0.2s, #0
-	sshll2	v0.2d, v0.4s, #0
-	and	v1.16b, v0.16b, v3.16b
-	and	v0.16b, v2.16b, v3.16b
+	tst	w0, #0x1
+	mov	w9, #51711                      // =0xc9ff
+	csel	w8, w1, w2, ne
+	movk	w9, #15258, lsl #16
+	cmp	w8, w9
+	mov	w8, #9                          // =0x9
+	cinc	x0, x8, hi
+	ret
+                                        // -- End function
+func0000000000000001:                   // @func0000000000000001
+// %bb.0:                               // %entry
+	tst	w0, #0x1
+	csel	w8, w1, w2, ne
+	cmp	w8, #4
+	cset	w8, ne
+	ubfiz	x0, x8, #2, #32
 	ret
                                         // -- End function

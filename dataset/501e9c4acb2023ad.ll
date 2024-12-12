@@ -10,6 +10,17 @@ entry:
   ret i32 %5
 }
 
+; 1 occurrences:
+; boost/optimized/message.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw nsw i32 %2, 1
+  %4 = add i32 %3, %1
+  %5 = urem i32 %4, %0
+  ret i32 %5
+}
+
 ; 7 occurrences:
 ; grpc/optimized/hpack_encoder_table.cc.ll
 ; hdf5/optimized/H5HFsection.c.ll
@@ -33,7 +44,7 @@ entry:
 define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = urem i32 %4, %0
   ret i32 %5
 }
@@ -58,7 +69,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = urem i32 %4, %0
   ret i32 %5
 }

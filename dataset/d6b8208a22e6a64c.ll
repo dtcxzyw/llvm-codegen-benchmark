@@ -16,9 +16,7 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
-; llvm/optimized/CombinerHelper.cpp.ll
-; llvm/optimized/TargetLowering.cpp.ll
+; 1 occurrences:
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
@@ -46,12 +44,11 @@ entry:
   ret i64 %5
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; g2o/optimized/slam2d_linear.cpp.ll
 ; g2o/optimized/solver_cholmod.cpp.ll
 ; g2o/optimized/solver_csparse.cpp.ll
 ; g2o/optimized/solver_eigen.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; openjdk/optimized/cmspack.ll
 ; verilator/optimized/V3Reloop.cpp.ll
 ; Function Attrs: nounwind
@@ -86,6 +83,17 @@ entry:
   %3 = icmp sgt i32 %1, %2
   %4 = select i1 %3, i32 %0, i32 0
   %5 = zext i32 %4 to i64
+  ret i64 %5
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp sgt i32 %1, %2
+  %4 = select i1 %3, i32 %0, i32 0
+  %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }
 

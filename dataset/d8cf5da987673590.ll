@@ -4,7 +4,7 @@
 ; ruby/optimized/symbol.ll
 ; wireshark/optimized/tap-sctp-analysis.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i8 %0, i1 %1) #0 {
+define i1 @func000000000000008c(i8 %0, i1 %1) #0 {
 entry:
   %2 = icmp eq i8 %0, 95
   %3 = or i1 %2, %1
@@ -13,9 +13,11 @@ entry:
   ret i1 %5
 }
 
-; 38 occurrences:
+; 42 occurrences:
 ; abc/optimized/acecPo.c.ll
 ; assimp/optimized/ASEParser.cpp.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; cmake/optimized/cmCTestBZR.cxx.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_csv_sniffer.cpp.ll
@@ -30,7 +32,9 @@ entry:
 ; llvm/optimized/BitcodeWriter.cpp.ll
 ; llvm/optimized/ControlHeightReduction.cpp.ll
 ; llvm/optimized/EarlyCSE.cpp.ll
+; llvm/optimized/InstCombineLoadStoreAlloca.cpp.ll
 ; llvm/optimized/LICM.cpp.ll
+; llvm/optimized/Loads.cpp.ll
 ; llvm/optimized/MCAsmInfoXCOFF.cpp.ll
 ; llvm/optimized/SValBuilder.cpp.ll
 ; llvm/optimized/TokenConcatenation.cpp.ll
@@ -53,21 +57,19 @@ entry:
 ; wireshark/optimized/packet-sapdiag.c.ll
 ; wireshark/optimized/packet-sna.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000042(i8 %0, i1 %1) #0 {
+define i1 @func0000000000000082(i8 %0, i1 %1) #0 {
 entry:
   %2 = icmp eq i8 %0, 35
-  %3 = or i1 %2, %1
+  %3 = or i1 %1, %2
   %4 = icmp eq i8 %0, 58
   %5 = or i1 %4, %3
   ret i1 %5
 }
 
-; 3 occurrences:
-; opencv/optimized/persistence_xml.cpp.ll
+; 1 occurrences:
 ; wireshark/optimized/tap-sctp-analysis.c.ll
-; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000102(i8 %0, i1 %1) #0 {
+define i1 @func0000000000000202(i8 %0, i1 %1) #0 {
 entry:
   %2 = icmp ult i8 %0, 17
   %3 = or i1 %2, %1
@@ -77,23 +79,10 @@ entry:
 }
 
 ; 2 occurrences:
-; freetype/optimized/psaux.c.ll
-; zxing/optimized/zueci.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000050(i8 %0, i1 %1) #0 {
-entry:
-  %2 = icmp eq i8 %0, -56
-  %3 = or i1 %2, %1
-  %4 = icmp ugt i8 %0, -7
-  %5 = or i1 %4, %3
-  ret i1 %5
-}
-
-; 2 occurrences:
 ; graphviz/optimized/write.c.ll
 ; postgres/optimized/execute.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i8 %0, i1 %1) #0 {
+define i1 @func0000000000000302(i8 %0, i1 %1) #0 {
 entry:
   %2 = icmp slt i8 %0, 0
   %3 = or i1 %2, %1
@@ -105,12 +94,24 @@ entry:
 ; 1 occurrences:
 ; typst-rs/optimized/3rk2ctuzbghb17s4.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, i8 %1) #0 {
+define i1 @func0000000000000084(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 22
   %3 = or i1 %2, %0
   %4 = icmp eq i8 %1, 16
   %5 = or i1 %3, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; freetype/optimized/psaux.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000090(i8 %0, i1 %1) #0 {
+entry:
+  %2 = icmp eq i8 %0, 14
+  %3 = or i1 %1, %2
+  %4 = icmp ugt i8 %0, 31
+  %5 = or i1 %4, %3
   ret i1 %5
 }
 

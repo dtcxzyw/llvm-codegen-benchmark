@@ -1,5 +1,5 @@
 
-; 46 occurrences:
+; 44 occurrences:
 ; bullet3/optimized/btDeformableBodySolver.ll
 ; bullet3/optimized/btDeformableMultiBodyDynamicsWorld.ll
 ; darktable/optimized/introspection_denoiseprofile.c.ll
@@ -31,8 +31,6 @@
 ; gromacs/optimized/pme_solve.cpp.ll
 ; gromacs/optimized/position_restraints.cpp.ll
 ; gromacs/optimized/pull_rotation.cpp.ll
-; gromacs/optimized/slatrd.cpp.ll
-; gromacs/optimized/ssytd2.cpp.ll
 ; gromacs/optimized/update.cpp.ll
 ; gromacs/optimized/vcm.cpp.ll
 ; meshlab/optimized/apss.cpp.ll

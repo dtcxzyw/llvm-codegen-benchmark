@@ -29,13 +29,14 @@ entry:
   ret float %3
 }
 
-; 20 occurrences:
+; 21 occurrences:
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; minetest/optimized/mapgen_v6.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; oiio/optimized/color_ocio.cpp.ll
 ; oiio/optimized/imagebuf.cpp.ll
 ; oiio/optimized/imagebufalgo_channels.cpp.ll
+; oiio/optimized/imagebufalgo_minmaxchan.cpp.ll
 ; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
 ; oiio/optimized/imagebufalgo_xform.cpp.ll
 ; oiio/optimized/psdinput.cpp.ll

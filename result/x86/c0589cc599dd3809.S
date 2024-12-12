@@ -18,3 +18,7 @@ func0000000000000000:                   # @func0000000000000000
 	andl	$-16, %edi
 	leal	69(%rdi), %eax
 	retq
+func0000000000000001:                   # @func0000000000000001
+	andl	$-2147221505, %edi              # imm = 0x8003FFFF
+	leal	-256(%rdi), %eax
+	retq

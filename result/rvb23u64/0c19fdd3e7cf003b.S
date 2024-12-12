@@ -21,3 +21,14 @@ func0000000000000000:                   # @func0000000000000000
 	srli	a1, a1, 37
 	add	a0, a0, a1
 	ret
+.LCPI2_0:
+	.quad	-5853766786057164379            # 0xaec33e1f671529a5
+func0000000000000018:                   # @func0000000000000018
+	lui	a3, %hi(.LCPI2_0)
+	ld	a3, %lo(.LCPI2_0)(a3)
+	zext.w	a2, a2
+	mul	a1, a1, a2
+	mulhu	a1, a1, a3
+	srli	a1, a1, 9
+	add	a0, a0, a1
+	ret

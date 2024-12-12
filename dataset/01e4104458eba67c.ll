@@ -13,15 +13,14 @@ entry:
   ret i64 %5
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; abc/optimized/bdcSpfd.c.ll
 ; linux/optimized/fork.ll
 ; linux/optimized/set_memory.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
+; llvm/optimized/Metadata.cpp.ll
 ; llvm/optimized/VarLocBasedImpl.cpp.ll
-; luajit/optimized/lj_prng.ll
-; luajit/optimized/lj_prng_dyn.ll
 ; mold/optimized/arch-loongarch.cc.LOONGARCH32.cc.ll
 ; mold/optimized/arch-loongarch.cc.LOONGARCH64.cc.ll
 ; oiio/optimized/tiffinput.cpp.ll

@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; linux/optimized/buffer.ll
 ; linux/optimized/hugetlb.ll
 ; llvm/optimized/MachineVerifier.cpp.ll
@@ -11,7 +11,6 @@
 ; rust-analyzer-rs/optimized/k5mtltw7nxmadpl.ll
 ; slurm/optimized/filetxt_jobcomp_process.ll
 ; slurm/optimized/opt.ll
-; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i64 %0, i1 %1, i1 %2) #0 {
 entry:
@@ -21,7 +20,7 @@ entry:
   ret i1 %5
 }
 
-; 16 occurrences:
+; 10 occurrences:
 ; linux/optimized/deflate.ll
 ; linux/optimized/tree.ll
 ; llvm/optimized/ASTMatchFinder.cpp.ll
@@ -30,12 +29,6 @@ entry:
 ; openusd/optimized/bigRWMutex.cpp.ll
 ; quickjs/optimized/quickjs.ll
 ; rustfmt-rs/optimized/4arc02n7xt9gqo2v.ll
-; spike/optimized/fmax_s.ll
-; spike/optimized/fmaxm_h.ll
-; spike/optimized/fmaxm_s.ll
-; spike/optimized/fmin_s.ll
-; spike/optimized/fminm_h.ll
-; spike/optimized/fminm_s.ll
 ; verilator/optimized/V3Number.cpp.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind

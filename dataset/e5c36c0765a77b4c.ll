@@ -1,9 +1,23 @@
 
-; 245 occurrences:
+; 4 occurrences:
+; folly/optimized/dynamic.cpp.ll
+; hyperscan/optimized/teddy.c.ll
+; hyperscan/optimized/teddy_avx2.c.ll
+; velox/optimized/Filter.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000a(i64 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, -8
+  %3 = inttoptr i64 %2 to ptr
+  %4 = getelementptr nusw i8, ptr %3, i64 -16
+  %5 = getelementptr nusw i8, ptr %4, i64 %0
+  ret ptr %5
+}
+
+; 194 occurrences:
 ; abc/optimized/mapperTime.c.ll
 ; abc/optimized/mapperUtils.c.ll
 ; darktable/optimized/amaze.cc.ll
-; folly/optimized/dynamic.cpp.ll
 ; hermes/optimized/Array.cpp.ll
 ; hermes/optimized/ArrayStorage.cpp.ll
 ; hermes/optimized/BytecodeDataProvider.cpp.ll
@@ -40,22 +54,7 @@
 ; html5ever-rs/optimized/nl96z7gxt9bz3gf.ll
 ; hyperscan/optimized/mcclellancompile.cpp.ll
 ; hyperscan/optimized/scratch.c.ll
-; hyperscan/optimized/teddy.c.ll
-; hyperscan/optimized/teddy_avx2.c.ll
 ; libquic/optimized/poly1305_vec.c.ll
-; libwebp/optimized/frame_dec.c.ll
-; llvm/optimized/AArch64CallLowering.cpp.ll
-; llvm/optimized/AArch64ExpandPseudoInsts.cpp.ll
-; llvm/optimized/AArch64FrameLowering.cpp.ll
-; llvm/optimized/AArch64GlobalISelUtils.cpp.ll
-; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/AArch64InstrInfo.cpp.ll
-; llvm/optimized/AArch64InstructionSelector.cpp.ll
-; llvm/optimized/AArch64LegalizerInfo.cpp.ll
-; llvm/optimized/AArch64O0PreLegalizerCombiner.cpp.ll
-; llvm/optimized/AArch64PostLegalizerCombiner.cpp.ll
-; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
-; llvm/optimized/AArch64PreLegalizerCombiner.cpp.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTDiagnostic.cpp.ll
@@ -70,8 +69,6 @@
 ; llvm/optimized/ASTWriterStmt.cpp.ll
 ; llvm/optimized/AnalysisBasedWarnings.cpp.ll
 ; llvm/optimized/AnalysisConsumer.cpp.ll
-; llvm/optimized/AsmPrinter.cpp.ll
-; llvm/optimized/BasicBlockPathCloning.cpp.ll
 ; llvm/optimized/BugReporterVisitors.cpp.ll
 ; llvm/optimized/BugSuppression.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
@@ -88,12 +85,9 @@
 ; llvm/optimized/CodeGenFunction.cpp.ll
 ; llvm/optimized/CodeGenModule.cpp.ll
 ; llvm/optimized/CodeGenPGO.cpp.ll
-; llvm/optimized/CodeViewDebug.cpp.ll
-; llvm/optimized/CombinerHelper.cpp.ll
 ; llvm/optimized/Compiler.cpp.ll
 ; llvm/optimized/Consumed.cpp.ll
 ; llvm/optimized/CoreEngine.cpp.ll
-; llvm/optimized/DFAPacketizer.cpp.ll
 ; llvm/optimized/DXContainer.cpp.ll
 ; llvm/optimized/DeadStoresChecker.cpp.ll
 ; llvm/optimized/DebugCheckers.cpp.ll
@@ -104,8 +98,6 @@
 ; llvm/optimized/ExtractAPIConsumer.cpp.ll
 ; llvm/optimized/IdenticalExprChecker.cpp.ll
 ; llvm/optimized/IdentifierTable.cpp.ll
-; llvm/optimized/IfConversion.cpp.ll
-; llvm/optimized/ImplicitNullChecks.cpp.ll
 ; llvm/optimized/IndexBody.cpp.ll
 ; llvm/optimized/IndexDecl.cpp.ll
 ; llvm/optimized/IndexTypeSourceInfo.cpp.ll
@@ -114,24 +106,11 @@
 ; llvm/optimized/JSONNodeDumper.cpp.ll
 ; llvm/optimized/JumpDiagnostics.cpp.ll
 ; llvm/optimized/LLVMConventionsChecker.cpp.ll
-; llvm/optimized/Legalizer.cpp.ll
-; llvm/optimized/LegalizerHelper.cpp.ll
-; llvm/optimized/LegalizerInfo.cpp.ll
-; llvm/optimized/LoadStoreOpt.cpp.ll
 ; llvm/optimized/LocalizationChecker.cpp.ll
 ; llvm/optimized/LoopUnrolling.cpp.ll
-; llvm/optimized/MIRPrinter.cpp.ll
-; llvm/optimized/MIRVRegNamerUtils.cpp.ll
-; llvm/optimized/MachineCSE.cpp.ll
-; llvm/optimized/MachineInstr.cpp.ll
-; llvm/optimized/MachineLICM.cpp.ll
-; llvm/optimized/MachineModuleSlotTracker.cpp.ll
-; llvm/optimized/MachineSink.cpp.ll
-; llvm/optimized/MachineVerifier.cpp.ll
 ; llvm/optimized/MallocSizeofChecker.cpp.ll
 ; llvm/optimized/ModelConsumer.cpp.ll
 ; llvm/optimized/ModuleBuilder.cpp.ll
-; llvm/optimized/ModuloSchedule.cpp.ll
 ; llvm/optimized/NoUncountedMembersChecker.cpp.ll
 ; llvm/optimized/ObjCMT.cpp.ll
 ; llvm/optimized/ObjCMissingSuperCallChecker.cpp.ll
@@ -144,18 +123,10 @@
 ; llvm/optimized/ParsePragma.cpp.ll
 ; llvm/optimized/ParseStmtAsm.cpp.ll
 ; llvm/optimized/ParseTemplate.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; llvm/optimized/RISCVInstrInfo.cpp.ll
-; llvm/optimized/RISCVInstructionSelector.cpp.ll
-; llvm/optimized/RISCVLegalizerInfo.cpp.ll
-; llvm/optimized/RISCVO0PreLegalizerCombiner.cpp.ll
-; llvm/optimized/RISCVPostLegalizerCombiner.cpp.ll
-; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
 ; llvm/optimized/ReachableCode.cpp.ll
 ; llvm/optimized/RefCntblBaseVirtualDtorChecker.cpp.ll
 ; llvm/optimized/RewriteModernObjC.cpp.ll
 ; llvm/optimized/RewriteObjC.cpp.ll
-; llvm/optimized/ScheduleDAGInstrs.cpp.ll
 ; llvm/optimized/Sema.cpp.ll
 ; llvm/optimized/SemaAPINotes.cpp.ll
 ; llvm/optimized/SemaAvailability.cpp.ll
@@ -180,16 +151,10 @@
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; llvm/optimized/SemaTemplateVariadic.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
-; llvm/optimized/ShrinkWrap.cpp.ll
-; llvm/optimized/StackColoring.cpp.ll
-; llvm/optimized/StackFrameLayoutAnalysisPass.cpp.ll
-; llvm/optimized/StackSlotColoring.cpp.ll
 ; llvm/optimized/Stmt.cpp.ll
 ; llvm/optimized/StmtOpenACC.cpp.ll
 ; llvm/optimized/StmtPrinter.cpp.ll
 ; llvm/optimized/StmtProfile.cpp.ll
-; llvm/optimized/TailDuplicator.cpp.ll
-; llvm/optimized/TargetInstrInfo.cpp.ll
 ; llvm/optimized/TextNodeDumper.cpp.ll
 ; llvm/optimized/ThreadSafety.cpp.ll
 ; llvm/optimized/ThreadSafetyCommon.cpp.ll
@@ -215,12 +180,6 @@
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/VarBypassDetector.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
-; llvm/optimized/X86CallLowering.cpp.ll
-; llvm/optimized/X86ExpandPseudo.cpp.ll
-; llvm/optimized/X86FixupBWInsts.cpp.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
-; llvm/optimized/X86InstrInfo.cpp.ll
-; llvm/optimized/X86InstructionSelector.cpp.ll
 ; luajit/optimized/lib_string.ll
 ; luajit/optimized/lib_string_dyn.ll
 ; luajit/optimized/lj_ffrecord.ll
@@ -228,34 +187,111 @@
 ; mimalloc/optimized/segment.c.ll
 ; openjdk/optimized/g1CardSet.ll
 ; openjdk/optimized/g1RemSet.ll
-; openjdk/optimized/psParallelCompact.ll
-; openusd/optimized/stbImage.cpp.ll
 ; php/optimized/zend_alloc.ll
-; raylib/optimized/rtextures.c.ll
-; stb/optimized/stb_image_resize2.c.ll
 ; tree-sitter-rs/optimized/18kt1xijwoc4jebp.ll
 ; tree-sitter-rs/optimized/1o0ocmb45sbun3ez.ll
 ; tree-sitter-rs/optimized/43qizak8uz8ar6lc.ll
 ; tree-sitter-rs/optimized/55e7aotywrgrb7st.ll
 ; tree-sitter-rs/optimized/5e4w8uibwrcl4d4a.ll
 ; tree-sitter-rs/optimized/76by25jz7vi08g1.ll
-; velox/optimized/Filter.cpp.ll
 ; z3/optimized/dl_mk_rule_inliner.cpp.ll
 ; z3/optimized/nlsat_solver.cpp.ll
 ; z3/optimized/smt_conflict_resolution.cpp.ll
 ; z3/optimized/smt_context_pp.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
+; zed-rs/optimized/clfnbm8q68pj6tyseqadz86ib.ll
+; zed-rs/optimized/e80b5h5uaylvf0myf6av6e6rx.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(i64 %0, i64 %1) #0 {
+define ptr @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, -8
+  %2 = and i64 %1, -4
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw i8, ptr %3, i64 -16
-  %5 = getelementptr nusw i8, ptr %4, i64 %0
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 16
+  %5 = getelementptr nusw nuw ptr, ptr %4, i64 %0
   ret ptr %5
 }
 
-; 8 occurrences:
+; 59 occurrences:
+; darktable/optimized/amaze.cc.ll
+; libquic/optimized/poly1305_vec.c.ll
+; libwebp/optimized/frame_dec.c.ll
+; llvm/optimized/AArch64CallLowering.cpp.ll
+; llvm/optimized/AArch64ExpandPseudoInsts.cpp.ll
+; llvm/optimized/AArch64FrameLowering.cpp.ll
+; llvm/optimized/AArch64GlobalISelUtils.cpp.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; llvm/optimized/AArch64InstrInfo.cpp.ll
+; llvm/optimized/AArch64InstructionSelector.cpp.ll
+; llvm/optimized/AArch64LegalizerInfo.cpp.ll
+; llvm/optimized/AArch64O0PreLegalizerCombiner.cpp.ll
+; llvm/optimized/AArch64PostLegalizerCombiner.cpp.ll
+; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
+; llvm/optimized/AArch64PreLegalizerCombiner.cpp.ll
+; llvm/optimized/AsmPrinter.cpp.ll
+; llvm/optimized/BasicBlockPathCloning.cpp.ll
+; llvm/optimized/CodeViewDebug.cpp.ll
+; llvm/optimized/CombinerHelper.cpp.ll
+; llvm/optimized/DFAPacketizer.cpp.ll
+; llvm/optimized/IfConversion.cpp.ll
+; llvm/optimized/ImplicitNullChecks.cpp.ll
+; llvm/optimized/Legalizer.cpp.ll
+; llvm/optimized/LegalizerHelper.cpp.ll
+; llvm/optimized/LegalizerInfo.cpp.ll
+; llvm/optimized/LoadStoreOpt.cpp.ll
+; llvm/optimized/MIRPrinter.cpp.ll
+; llvm/optimized/MIRVRegNamerUtils.cpp.ll
+; llvm/optimized/MachineCSE.cpp.ll
+; llvm/optimized/MachineInstr.cpp.ll
+; llvm/optimized/MachineLICM.cpp.ll
+; llvm/optimized/MachineModuleSlotTracker.cpp.ll
+; llvm/optimized/MachineSink.cpp.ll
+; llvm/optimized/MachineVerifier.cpp.ll
+; llvm/optimized/ModuloSchedule.cpp.ll
+; llvm/optimized/RISCVInstrInfo.cpp.ll
+; llvm/optimized/RISCVInstructionSelector.cpp.ll
+; llvm/optimized/RISCVLegalizerInfo.cpp.ll
+; llvm/optimized/RISCVO0PreLegalizerCombiner.cpp.ll
+; llvm/optimized/RISCVPostLegalizerCombiner.cpp.ll
+; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
+; llvm/optimized/ScheduleDAGInstrs.cpp.ll
+; llvm/optimized/ShrinkWrap.cpp.ll
+; llvm/optimized/StackColoring.cpp.ll
+; llvm/optimized/StackFrameLayoutAnalysisPass.cpp.ll
+; llvm/optimized/StackSlotColoring.cpp.ll
+; llvm/optimized/TailDuplicator.cpp.ll
+; llvm/optimized/TargetInstrInfo.cpp.ll
+; llvm/optimized/X86CallLowering.cpp.ll
+; llvm/optimized/X86ExpandPseudo.cpp.ll
+; llvm/optimized/X86FixupBWInsts.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; llvm/optimized/X86InstrInfo.cpp.ll
+; llvm/optimized/X86InstructionSelector.cpp.ll
+; mimalloc/optimized/segment.c.ll
+; openjdk/optimized/psParallelCompact.ll
+; openusd/optimized/stbImage.cpp.ll
+; raylib/optimized/rtextures.c.ll
+; stb/optimized/stb_image_resize2.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000e(i64 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, -524288
+  %3 = inttoptr i64 %2 to ptr
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 524288
+  %5 = getelementptr nusw ptr, ptr %4, i64 %0
+  ret ptr %5
+}
+
+; 10 occurrences:
+; abc/optimized/mapperTime.c.ll
+; abc/optimized/mapperUtils.c.ll
 ; darktable/optimized/amaze.cc.ll
 ; hermes/optimized/DictPropertyMap.cpp.ll
 ; hyperscan/optimized/teddy.c.ll
@@ -286,19 +322,36 @@ entry:
   ret ptr %5
 }
 
-; 6 occurrences:
+; 1 occurrences:
+; darktable/optimized/amaze.cc.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(i64 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, -64
+  %3 = inttoptr i64 %2 to ptr
+  %4 = getelementptr i8, ptr %3, i64 1281920
+  %5 = getelementptr nusw nuw float, ptr %4, i64 %0
+  ret ptr %5
+}
+
+; 11 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; hermes/optimized/RegExp.cpp.ll
 ; linux/optimized/maple_tree.ll
+; linux/optimized/nf_conntrack_core.ll
+; linux/optimized/nf_conntrack_sip.ll
+; linux/optimized/nf_nat_core.ll
+; linux/optimized/nf_nat_proto.ll
+; linux/optimized/nf_nat_sip.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; llvm/optimized/ImplicitNullChecks.cpp.ll
 ; llvm/optimized/MachineInstr.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(i64 %0, i64 %1) #0 {
+define ptr @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -64
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw i8, ptr %3, i64 410112
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 410112
   %5 = getelementptr float, ptr %4, i64 %0
   ret ptr %5
 }

@@ -1,8 +1,8 @@
 func0000000000000006:                   # @func0000000000000006
 	andl	$511, %edx                      # imm = 0x1FF
-	leal	8192(%rdx,%rsi), %eax
-	movl	%edx, %ecx
-	orl	%esi, %ecx
+	leal	8192(%rsi,%rdx), %eax
+	movl	%esi, %ecx
+	orl	%edx, %ecx
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	orl	$49152, %eax                    # imm = 0xC000
@@ -26,9 +26,9 @@ func0000000000000002:                   # @func0000000000000002
 	retq
 func0000000000000007:                   # @func0000000000000007
 	andl	$2, %edx
-	leal	4(%rdx,%rsi), %eax
-	movl	%edx, %ecx
-	orl	%esi, %ecx
+	leal	4(%rsi,%rdx), %eax
+	movl	%esi, %ecx
+	orl	%edx, %ecx
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	orl	$8, %eax

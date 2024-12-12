@@ -1,5 +1,5 @@
 
-; 229 occurrences:
+; 231 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/cecSolve.c.ll
@@ -7,6 +7,8 @@
 ; abc/optimized/saigSimFast.c.ll
 ; abc/optimized/saigSwitch.c.ll
 ; assimp/optimized/PbrtExporter.cpp.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/btBatchedConstraints.ll
 ; bullet3/optimized/btConeTwistConstraint.ll
 ; bullet3/optimized/btDeformableMultiBodyDynamicsWorld.ll
@@ -69,7 +71,6 @@
 ; gromacs/optimized/readir.cpp.ll
 ; gromacs/optimized/setup.cpp.ll
 ; gromacs/optimized/slaed6.cpp.ll
-; gromacs/optimized/slartg.cpp.ll
 ; gromacs/optimized/slasd4.cpp.ll
 ; gromacs/optimized/vcm.cpp.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
@@ -80,6 +81,7 @@
 ; llama.cpp/optimized/ggml.c.ll
 ; llama.cpp/optimized/train.cpp.ll
 ; llvm/optimized/SampleProfileMatcher.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; meshlab/optimized/VisibilityCheck.cpp.ll
 ; meshlab/optimized/VisibleSet.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll

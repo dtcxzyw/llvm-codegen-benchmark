@@ -30,6 +30,14 @@ func000000000000000a:                   # @func000000000000000a
 	czero.eqz	a0, a0, a1
 	or	a0, a0, a2
 	ret
+func0000000000000014:                   # @func0000000000000014
+	slli	a2, a2, 44
+	srliw	a1, a1, 20
+	srli	a2, a2, 44
+	czero.eqz	a0, a0, a1
+	czero.nez	a1, a2, a1
+	or	a0, a0, a1
+	ret
 func000000000000000c:                   # @func000000000000000c
 	sext.w	a1, a1
 	andi	a2, a2, -8
@@ -42,6 +50,14 @@ func0000000000000008:                   # @func0000000000000008
 	slli	a2, a2, 33
 	srli	a2, a2, 33
 	sltiu	a1, a1, 33
+	czero.eqz	a0, a0, a1
+	czero.nez	a1, a2, a1
+	or	a0, a0, a1
+	ret
+func0000000000000018:                   # @func0000000000000018
+	zext.h	a2, a2
+	srliw	a1, a1, 1
+	sltiu	a1, a1, 1561
 	czero.eqz	a0, a0, a1
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1

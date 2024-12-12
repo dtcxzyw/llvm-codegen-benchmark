@@ -22,27 +22,4 @@ entry:
   ret i1 %3
 }
 
-; 2 occurrences:
-; oiio/optimized/imagebufalgo_yee.cpp.ll
-; openblas/optimized/iparmq.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000003(double %0) #0 {
-entry:
-  %1 = fdiv double %0, 0x400921FB54442D18
-  %2 = fptrunc double %1 to float
-  %3 = fcmp ult float %2, 1.000000e+00
-  ret i1 %3
-}
-
-; 1 occurrences:
-; gromacs/optimized/gmx_nmeig.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000005(double %0) #0 {
-entry:
-  %1 = fdiv double %0, 0x401921FB54442D18
-  %2 = fptrunc double %1 to float
-  %3 = fcmp ugt float %2, 0.000000e+00
-  ret i1 %3
-}
-
 attributes #0 = { nounwind }

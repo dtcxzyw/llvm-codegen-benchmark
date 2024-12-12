@@ -1,6 +1,5 @@
 
-; 6 occurrences:
-; freetype/optimized/autofit.c.ll
+; 5 occurrences:
 ; freetype/optimized/psaux.c.ll
 ; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/MSFBuilder.cpp.ll
@@ -15,9 +14,8 @@ entry:
   ret i1 %5
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; cpython/optimized/gcmodule.ll
-; hermes/optimized/CharacterProperties.cpp.ll
 ; linux/optimized/devio.ll
 ; linux/optimized/transaction.ll
 ; llvm/optimized/ASTReader.cpp.ll
@@ -46,7 +44,7 @@ entry:
 ; linux/optimized/xprtsock.ll
 ; openjdk/optimized/memnode.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = and i64 %3, -4
@@ -76,11 +74,22 @@ entry:
 ; hdf5/optimized/H5Tconv_integer.c.ll
 ; llvm/optimized/SetTheory.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = and i64 %3, 4294967295
   %5 = icmp ult i64 %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; hermes/optimized/CharacterProperties.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %1, %2
+  %4 = and i64 %3, 4294967295
+  %5 = icmp samesign ugt i64 %4, %0
   ret i1 %5
 }
 
@@ -98,7 +107,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/DiagnosticRenderer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = and i64 %3, 4294967295
@@ -119,11 +128,11 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = and i64 %3, 9223372036854775806
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp samesign ugt i64 %4, %0
   ret i1 %5
 }
 
@@ -131,11 +140,11 @@ entry:
 ; freetype/optimized/autofit.c.ll
 ; linux/optimized/intel_guc_submission.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = and i64 %3, 2047
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp samesign ult i64 %4, %0
   ret i1 %5
 }
 
@@ -147,6 +156,17 @@ entry:
   %3 = add i64 %1, %2
   %4 = and i64 %3, -8
   %5 = icmp ule i64 %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; freetype/optimized/autofit.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %1, %2
+  %4 = and i64 %3, 63
+  %5 = icmp samesign ult i64 %4, %0
   ret i1 %5
 }
 

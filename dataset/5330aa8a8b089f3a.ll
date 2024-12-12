@@ -1,6 +1,8 @@
 
-; 3 occurrences:
+; 5 occurrences:
 ; luau/optimized/Parser.test.cpp.ll
+; lvgl/optimized/lv_msgbox.ll
+; lvgl/optimized/lv_obj_draw.ll
 ; z3/optimized/nlsat_explain.cpp.ll
 ; z3/optimized/nlsat_solver.cpp.ll
 ; Function Attrs: nounwind

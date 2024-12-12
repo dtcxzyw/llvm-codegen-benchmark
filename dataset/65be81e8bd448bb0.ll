@@ -8,7 +8,7 @@ entry:
   %3 = shl nsw i32 %2, 1
   %4 = sub nsw i32 6, %3
   %5 = shl i32 %1, %4
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   ret i32 %6
 }
 

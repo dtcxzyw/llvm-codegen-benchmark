@@ -1,14 +1,14 @@
-func0000000000000085:                   # @func0000000000000085
-	cmpq	%rdi, %rdx
-	setae	%cl
-	cmpq	%rsi, %rdx
-	setb	%al
+func0000000000000105:                   # @func0000000000000105
+	cmpq	%rdx, %rdi
+	setbe	%cl
+	cmpq	%rdx, %rsi
+	seta	%al
 	andb	%cl, %al
 	retq
-func00000000000000a7:                   # @func00000000000000a7
-	cmpq	%rdi, %rdx
-	setge	%cl
-	cmpq	%rsi, %rdx
-	setl	%al
+func0000000000000147:                   # @func0000000000000147
+	cmpq	%rdx, %rdi
+	setle	%cl
+	cmpq	%rdx, %rsi
+	setg	%al
 	andb	%cl, %al
 	retq

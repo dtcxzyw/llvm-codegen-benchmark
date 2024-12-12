@@ -7,7 +7,7 @@
 ; qemu/optimized/hw_usb_hcd-uhci.c.ll
 ; redis/optimized/cluster_legacy.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i16 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 7
   %3 = icmp eq i8 %2, 0
@@ -20,7 +20,7 @@ entry:
 ; clamav/optimized/matcher-ac.c.ll
 ; wireshark/optimized/packet-cp2179.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i16 %0, i8 %1) #0 {
+define i1 @func0000000000000081(i16 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = icmp eq i8 %2, 0
@@ -35,7 +35,7 @@ entry:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i16 %0, i8 %1) #0 {
+define i1 @func000000000000002c(i16 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -5
   %3 = icmp ne i8 %2, 0

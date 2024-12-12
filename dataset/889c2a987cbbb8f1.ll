@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 36 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; duckdb/optimized/ub_duckdb_operator_csv_sniffer.cpp.ll
 ; git/optimized/merge-ort.ll
@@ -9,6 +9,7 @@
 ; icu/optimized/number_decimalquantity.ll
 ; linux/optimized/params.ll
 ; linux/optimized/trace_events_filter.ll
+; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/MemProfContextDisambiguation.cpp.ll
 ; llvm/optimized/ODRDiagsEmitter.cpp.ll
 ; openjdk/optimized/ciArray.ll
@@ -26,11 +27,20 @@
 ; rust-analyzer-rs/optimized/3j0nbdwupb3iwt86.ll
 ; rust-analyzer-rs/optimized/563918kfdqef84tz.ll
 ; sqlite/optimized/sqlite3.ll
+; yosys/optimized/opt_dff.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1szjr41vjnxcxgyq70q0xb6lv.ll
+; zed-rs/optimized/3hyavwlupfwy674k0u5ll7gv6.ll
+; zed-rs/optimized/6pzok54tcf7jgyfxt7910tckc.ll
+; zed-rs/optimized/8ong401nghjuvw1pdqaahwms7.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
+; zed-rs/optimized/f4g1cwrteaiub5fsoifj5amxy.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = select i1 %1, i8 0, i8 %2
-  %4 = icmp eq i8 %3, %0
+  %4 = icmp eq i8 %0, %3
   ret i1 %4
 }
 
@@ -56,7 +66,7 @@ entry:
 define i1 @func000000000000000a(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = select i1 %1, i8 1, i8 %2
-  %4 = icmp slt i8 %3, %0
+  %4 = icmp sgt i8 %0, %3
   ret i1 %4
 }
 
@@ -68,18 +78,17 @@ entry:
 define i1 @func000000000000000c(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = select i1 %1, i8 12, i8 %2
-  %4 = icmp ne i8 %3, %0
+  %4 = icmp ne i8 %0, %3
   ret i1 %4
 }
 
-; 2 occurrences:
-; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
+; 1 occurrences:
 ; llvm/optimized/CoroFrame.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000005(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = select i1 %1, i8 0, i8 %2
-  %4 = icmp uge i8 %3, %0
+  %4 = icmp ule i8 %0, %3
   ret i1 %4
 }
 
@@ -91,7 +100,7 @@ entry:
 define i1 @func0000000000000008(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = select i1 %1, i8 0, i8 %2
-  %4 = icmp ult i8 %3, %0
+  %4 = icmp ugt i8 %0, %3
   ret i1 %4
 }
 
@@ -105,7 +114,7 @@ entry:
 define i1 @func0000000000000006(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = select i1 %1, i8 0, i8 %2
-  %4 = icmp sgt i8 %3, %0
+  %4 = icmp slt i8 %0, %3
   ret i1 %4
 }
 
@@ -115,7 +124,7 @@ entry:
 define i1 @func0000000000000009(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = select i1 %1, i8 8, i8 %2
-  %4 = icmp ule i8 %3, %0
+  %4 = icmp uge i8 %0, %3
   ret i1 %4
 }
 

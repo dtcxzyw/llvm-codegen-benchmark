@@ -19,19 +19,19 @@ func0000000000000001:                   # @func0000000000000001
 	addiw	a1, a1, 1366
 	sltu	a0, a0, a1
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	add	a0, a0, a1
-	lui	a1, 159384
-	addi	a1, a1, -1835
+	lui	a1, 796918
+	addi	a1, a1, -983
 	mul	a0, a0, a1
-	slliw	a1, a0, 29
-	srliw	a0, a0, 3
+	slliw	a1, a0, 30
+	srliw	a0, a0, 2
 	or	a0, a0, a1
-	lui	a1, 1049
-	addiw	a1, a1, -1736
+	lui	a1, 10486
+	addiw	a1, a1, -983
 	sltu	a0, a0, a1
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	add	a0, a0, a1
 	lui	a1, 149797
 	slli	a2, a0, 32

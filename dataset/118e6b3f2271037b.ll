@@ -13,9 +13,9 @@ entry:
 
 ; 8 occurrences:
 ; abc/optimized/abcDetect.c.ll
-; linux/optimized/attr.ll
 ; linux/optimized/intel_color.ll
 ; linux/optimized/intel_display_power.ll
+; linux/optimized/nfs4proc.ll
 ; php/optimized/zend_inference.ll
 ; qemu/optimized/blockdev.c.ll
 ; wireshark/optimized/packet-btle.c.ll

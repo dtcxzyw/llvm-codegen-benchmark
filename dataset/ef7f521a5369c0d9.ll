@@ -5,7 +5,7 @@
 ; ruby/optimized/object.ll
 ; ruby/optimized/prism.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(ptr %0, i8 %1, ptr %2) #0 {
+define i1 @func0000000000000024(ptr %0, i8 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 3
   %4 = icmp ult ptr %3, %0
@@ -14,25 +14,11 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
-; clamav/optimized/pdf.c.ll
-; icu/optimized/decNumber.ll
-; ruby/optimized/cesu_8.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000218(ptr %0, i8 %1, ptr %2) #0 {
-entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 -1
-  %4 = icmp ugt ptr %3, %0
-  %5 = icmp eq i8 %1, -128
-  %6 = and i1 %4, %5
-  ret i1 %6
-}
-
 ; 2 occurrences:
 ; postgres/optimized/dt_common.ll
 ; qemu/optimized/util_uri.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000021(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 1
   %4 = icmp eq ptr %3, %1
@@ -41,11 +27,22 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
-; curl/optimized/libcurl_la-ftp.ll
-; php/optimized/pcre2_jit_compile.ll
+; 1 occurrences:
+; openjdk/optimized/ProcessHandleImpl_linux.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000248(ptr %0, i8 %1, ptr %2) #0 {
+define i1 @func0000000000000184(ptr %0, i8 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr i8, ptr %2, i64 1
+  %4 = icmp ult ptr %3, %0
+  %5 = icmp ne i8 %1, 0
+  %6 = and i1 %4, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; curl/optimized/libcurl_la-ftp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000888(ptr %0, i8 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -1
   %4 = icmp ugt ptr %3, %0
@@ -54,11 +51,10 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
-; meshlab/optimized/ofbx.cpp.ll
+; 1 occurrences:
 ; php/optimized/fopen_wrappers.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000211(ptr %0, i8 %1, ptr %2) #0 {
+define i1 @func0000000000000821(ptr %0, i8 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -2
   %4 = icmp eq ptr %3, %0
@@ -70,7 +66,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/pcre2_match.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000281(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000901(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -1
   %4 = icmp ugt ptr %3, %1
@@ -82,11 +78,24 @@ entry:
 ; 1 occurrences:
 ; assimp/optimized/OpenDDLParser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002cc(ptr %0, i8 %1, ptr %2) #0 {
+define i1 @func0000000000000d8c(ptr %0, i8 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = icmp ne ptr %3, %0
   %5 = icmp ne i8 %1, 41
+  %6 = and i1 %4, %5
+  ret i1 %6
+}
+
+; 2 occurrences:
+; boost/optimized/src.ll
+; tev/optimized/Common.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000c2c(ptr %0, i8 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
+  %4 = icmp ne ptr %3, %0
+  %5 = icmp eq i8 %1, 48
   %6 = and i1 %4, %5
   ret i1 %6
 }
@@ -95,7 +104,7 @@ entry:
 ; clamav/optimized/phishcheck.c.ll
 ; slurm/optimized/xstring.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000028c(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000090c(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -1
   %4 = icmp ugt ptr %3, %1
@@ -105,14 +114,40 @@ entry:
 }
 
 ; 2 occurrences:
+; clamav/optimized/pdf.c.ll
+; icu/optimized/decNumber.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000828(ptr %0, i8 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -1
+  %4 = icmp ugt ptr %3, %0
+  %5 = icmp eq i8 %1, 60
+  %6 = and i1 %4, %5
+  ret i1 %6
+}
+
+; 2 occurrences:
 ; hermes/optimized/regcomp.c.ll
 ; llvm/optimized/FormatTokenLexer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000214(ptr %0, i8 %1, ptr %2) #0 {
+define i1 @func0000000000000c24(ptr %0, i8 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = icmp ult ptr %3, %0
   %5 = icmp eq i8 %1, 92
+  %6 = and i1 %4, %5
+  ret i1 %6
+}
+
+; 2 occurrences:
+; llvm/optimized/CodeMoverUtils.cpp.ll
+; llvm/optimized/Verifier.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000881(ptr %0, i8 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -24
+  %4 = icmp eq ptr %3, %0
+  %5 = icmp ult i8 %1, 11
   %6 = and i1 %4, %5
   ret i1 %6
 }
@@ -120,7 +155,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CommentLexer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000219(ptr %0, i8 %1, ptr %2) #0 {
+define i1 @func0000000000000829(ptr %0, i8 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -3
   %4 = icmp uge ptr %3, %0
@@ -132,9 +167,9 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000024c(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000c8c(i8 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = icmp ult ptr %3, %1
   %5 = icmp ne i8 %0, 0
   %6 = and i1 %5, %4
@@ -148,7 +183,7 @@ entry:
 ; postgres/optimized/path_shlib.ll
 ; postgres/optimized/path_srv.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000101(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 -1
   %4 = icmp ugt ptr %3, %1
@@ -158,13 +193,13 @@ entry:
 }
 
 ; 1 occurrences:
-; tev/optimized/Common.cpp.ll
+; meshlab/optimized/ofbx.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000021c(ptr %0, i8 %1, ptr %2) #0 {
+define i1 @func0000000000000c21(ptr %0, i8 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
-  %4 = icmp ne ptr %3, %0
-  %5 = icmp eq i8 %1, 91
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
+  %4 = icmp eq ptr %3, %0
+  %5 = icmp eq i8 %1, 0
   %6 = and i1 %4, %5
   ret i1 %6
 }
@@ -172,9 +207,9 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/gough.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002c4(ptr %0, i8 %1, ptr %2) #0 {
+define i1 @func0000000000000d84(ptr %0, i8 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = icmp ult ptr %3, %0
   %5 = icmp ne i8 %1, 0
   %6 = and i1 %4, %5
@@ -184,9 +219,9 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/xmltok.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002c1(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000d81(i8 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = icmp ne ptr %3, %1
   %5 = icmp eq i8 %0, 32
   %6 = and i1 %5, %4
@@ -196,7 +231,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/xmltok.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000181(i8 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 1
   %4 = icmp ne ptr %3, %1

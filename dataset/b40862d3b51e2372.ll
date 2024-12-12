@@ -1,8 +1,12 @@
 
-%"struct.mold::elf::ElfRel.2531395" = type { %"class.mold::LittleEndian.251.2531368", %"class.mold::LittleEndian.250.2531367", %"class.mold::LittleEndian.250.2531367", %"class.mold::LittleEndian.374.2531396" }
-%"class.mold::LittleEndian.251.2531368" = type { [8 x i8] }
-%"class.mold::LittleEndian.250.2531367" = type { [4 x i8] }
-%"class.mold::LittleEndian.374.2531396" = type { [8 x i8] }
+%"struct.mold::elf::ElfRel.2645797" = type { %"class.mold::LittleEndian.251.2645770", %"class.mold::LittleEndian.250.2645769", %"class.mold::LittleEndian.250.2645769", %"class.mold::LittleEndian.374.2645798" }
+%"class.mold::LittleEndian.251.2645770" = type { [8 x i8] }
+%"class.mold::LittleEndian.250.2645769" = type { [4 x i8] }
+%"class.mold::LittleEndian.374.2645798" = type { [8 x i8] }
+%"struct.pbrt::ImageChannelValues.3646709" = type { %"class.pbrt::InlinedVector.81.3646710" }
+%"class.pbrt::InlinedVector.81.3646710" = type { %"class.pstd::pmr::polymorphic_allocator.14.3646654", ptr, %union.anon.82.3646711, i64, i64 }
+%"class.pstd::pmr::polymorphic_allocator.14.3646654" = type { ptr }
+%union.anon.82.3646711 = type { [4 x float] }
 
 ; 4 occurrences:
 ; gromacs/optimized/tng_io.c.ll
@@ -20,13 +24,12 @@ entry:
   ret i64 %7
 }
 
-; 39 occurrences:
+; 35 occurrences:
 ; hyperscan/optimized/goughcompile.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64StackTagging.cpp.ll
 ; llvm/optimized/ASanStackFrameLayout.cpp.ll
 ; llvm/optimized/AsmMatcherEmitter.cpp.ll
-; llvm/optimized/BalancedPartitioning.cpp.ll
 ; llvm/optimized/CGCXXABI.cpp.ll
 ; llvm/optimized/DylibVerifier.cpp.ll
 ; llvm/optimized/InterfaceFile.cpp.ll
@@ -55,19 +58,30 @@ entry:
 ; mold/optimized/input-files.cc.RV32LE.cc.ll
 ; mold/optimized/input-files.cc.RV64BE.cc.ll
 ; mold/optimized/input-files.cc.RV64LE.cc.ll
-; opencv/optimized/chessboard.cpp.ll
 ; opencv/optimized/erfilter.cpp.ll
-; opencv/optimized/sparse_matching_gpc.cpp.ll
-; pbrt-v4/optimized/imgtool.cpp.ll
 ; php/optimized/zend_opcode.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000051(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.mold::elf::ElfRel.2531395", ptr %1, i64 %2
+  %3 = getelementptr nusw %"struct.mold::elf::ElfRel.2645797", ptr %1, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -24
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = sdiv exact i64 %6, -24
+  ret i64 %7
+}
+
+; 2 occurrences:
+; opencv/optimized/sparse_matching_gpc.cpp.ll
+; pbrt-v4/optimized/imgtool.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000059(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw %"struct.pbrt::ImageChannelValues.3646709", ptr %1, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 48
+  %5 = ptrtoint ptr %4 to i64
+  %6 = sub i64 %5, %0
+  %7 = sdiv exact i64 %6, 48
   ret i64 %7
 }
 

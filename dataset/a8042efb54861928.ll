@@ -1,5 +1,5 @@
 
-; 163 occurrences:
+; 162 occurrences:
 ; abc/optimized/bzlib.c.ll
 ; abc/optimized/cuddUtil.c.ll
 ; abc/optimized/ioWriteBook.c.ll
@@ -42,7 +42,6 @@
 ; hdf5/optimized/H5TB.c.ll
 ; hdf5/optimized/h5stat.c.ll
 ; hwloc/optimized/topology-linux.ll
-; icu/optimized/cmemory.ll
 ; icu/optimized/locdspnm.ll
 ; icu/optimized/translit.ll
 ; icu/optimized/ucbuf.ll
@@ -62,9 +61,9 @@
 ; libwebp/optimized/webp_dec.c.ll
 ; libzmq/optimized/proxy.cpp.ll
 ; lief/optimized/cmac.c.ll
-; linux/optimized/device.ll
 ; linux/optimized/maple_tree.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_obj_style.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; node/optimized/core.ll
@@ -164,7 +163,7 @@
 ; yyjson/optimized/yyjson.c.ll
 ; zstd/optimized/zstdmt_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000444(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000001084(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp eq ptr %1, null
@@ -174,7 +173,7 @@ entry:
   ret i1 %7
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; git/optimized/unpack-trees.ll
 ; linux/optimized/asymmetric_type.ll
 ; llvm/optimized/CGLoopInfo.cpp.ll
@@ -182,11 +181,10 @@ entry:
 ; llvm/optimized/InlineFunction.cpp.ll
 ; llvm/optimized/OpenBSD.cpp.ll
 ; openssl/optimized/libdefault-lib-drbg_ctr.ll
-; proj/optimized/crs.cpp.ll
 ; proj/optimized/topocentric.cpp.ll
 ; ruby/optimized/thread.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000003318(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000c618(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp ne ptr %1, null
@@ -225,7 +223,7 @@ entry:
 ; slurm/optimized/data_parser_v0_0_41_la-parsers.ll
 ; slurm/optimized/gres.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000003330(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000c630(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp ne ptr %1, null
@@ -235,7 +233,7 @@ entry:
   ret i1 %7
 }
 
-; 53 occurrences:
+; 50 occurrences:
 ; cjson/optimized/cJSON.c.ll
 ; clamav/optimized/freshclam.c.ll
 ; cmake/optimized/headers.c.ll
@@ -259,12 +257,10 @@ entry:
 ; openmpi/optimized/libmpi_c_profile_la-alltoallv_init.ll
 ; openmpi/optimized/libmpi_c_profile_la-ialltoallv.ll
 ; openssl/optimized/cmp_client_test-bin-cmp_mock_srv.ll
-; openssl/optimized/libcrypto-lib-crmf_pbm.ll
 ; openssl/optimized/libcrypto-lib-e_aes.ll
 ; openssl/optimized/libcrypto-lib-ec_key.ll
 ; openssl/optimized/libcrypto-lib-p_lib.ll
 ; openssl/optimized/libcrypto-lib-srp_lib.ll
-; openssl/optimized/libcrypto-shlib-crmf_pbm.ll
 ; openssl/optimized/libcrypto-shlib-e_aes.ll
 ; openssl/optimized/libcrypto-shlib-ec_key.ll
 ; openssl/optimized/libcrypto-shlib-p_lib.ll
@@ -284,13 +280,12 @@ entry:
 ; sundials/optimized/arkode_user_controller.c.ll
 ; tev/optimized/QoiImageLoader.cpp.ll
 ; wireshark/optimized/packet-someip.c.ll
-; wireshark/optimized/plugin_if.c.ll
 ; wolfssl/optimized/asn.c.ll
 ; wolfssl/optimized/chacha.c.ll
 ; wolfssl/optimized/ecc.c.ll
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000442(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000001082(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp eq ptr %1, null
@@ -304,7 +299,7 @@ entry:
 ; cpython/optimized/pegen.ll
 ; qemu/optimized/net_socket.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000718(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000001618(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp ne ptr %1, null
@@ -317,7 +312,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_catalog_entries.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000003058(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000c098(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp eq ptr %1, null
@@ -327,10 +322,24 @@ entry:
   ret i1 %7
 }
 
+; 2 occurrences:
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
+; Function Attrs: nounwind
+define i1 @func0000000000001604(ptr %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = icmp eq ptr %2, null
+  %4 = icmp ne ptr %1, null
+  %5 = or i1 %4, %3
+  %6 = icmp eq ptr %0, null
+  %7 = or i1 %5, %6
+  ret i1 %7
+}
+
 ; 1 occurrences:
 ; grpc/optimized/composite_credentials.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000470(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func00000000000010b0(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp eq ptr %1, null

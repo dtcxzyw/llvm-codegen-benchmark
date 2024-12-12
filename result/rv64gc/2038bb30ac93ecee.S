@@ -31,3 +31,15 @@ func000000000000000a:                   # @func000000000000000a
 	addiw	a0, a0, 1792
 .LBB4_2:                                # %entry
 	ret
+func0000000000000018:                   # @func0000000000000018
+	li	a1, 6
+	bgeu	a1, a0, .LBB5_2
+	li	a0, 5
+.LBB5_2:                                # %entry
+	ret
+func0000000000000014:                   # @func0000000000000014
+	li	a1, 80
+	bgeu	a0, a1, .LBB6_2
+	li	a0, 64
+.LBB6_2:                                # %entry
+	ret

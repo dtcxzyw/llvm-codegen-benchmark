@@ -17,7 +17,7 @@ entry:
   ret i32 %4
 }
 
-; 15 occurrences:
+; 18 occurrences:
 ; icu/optimized/numparse_impl.ll
 ; imgui/optimized/imgui_demo.cpp.ll
 ; llvm/optimized/CodeViewDebug.cpp.ll
@@ -25,14 +25,17 @@ entry:
 ; llvm/optimized/InlineAsmLowering.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/WasmObjectWriter.cpp.ll
+; lvgl/optimized/lv_label.ll
 ; opencv/optimized/dxt.cpp.ll
 ; openjdk/optimized/jfrMemorySizer.ll
 ; openjdk/optimized/metaspaceDCmd.ll
 ; postgres/optimized/explain.ll
 ; postgres/optimized/nodeSort.ll
+; postgres/optimized/rangetypes_gist.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; yosys/optimized/extract_fa.ll
 ; yosys/optimized/firrtl.ll
+; zed-rs/optimized/7xoulo9o2q4wd1npp9yutbl3x.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i1 %0, i8 %1) #0 {
 entry:

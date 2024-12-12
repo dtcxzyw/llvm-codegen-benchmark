@@ -13,8 +13,9 @@ entry:
   ret i32 %7
 }
 
-; 28 occurrences:
+; 27 occurrences:
 ; abc/optimized/giaGen.c.ll
+; boost/optimized/alloc_lib.ll
 ; jemalloc/optimized/base.ll
 ; jemalloc/optimized/base.pic.ll
 ; jemalloc/optimized/base.sym.ll
@@ -32,8 +33,6 @@ entry:
 ; jemalloc/optimized/sz.sym.ll
 ; redis/optimized/base.ll
 ; redis/optimized/base.sym.ll
-; redis/optimized/bin.ll
-; redis/optimized/bin.sym.ll
 ; redis/optimized/eset.ll
 ; redis/optimized/eset.sym.ll
 ; redis/optimized/psset.ll

@@ -1,10 +1,11 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; hermes/optimized/JSONLexer.cpp.ll
+; icu/optimized/ubidiln.ll
 ; linux/optimized/irq.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i16 %0) #0 {
+define i1 @func0000000000000102(i16 %0) #0 {
 entry:
   %1 = add i16 %0, -48
   %2 = icmp ult i16 %1, 10

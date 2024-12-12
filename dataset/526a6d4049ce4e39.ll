@@ -1,5 +1,5 @@
 
-; 96 occurrences:
+; 100 occurrences:
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; abc/optimized/extraUtilPerm.c.ll
@@ -52,6 +52,10 @@
 ; linux/optimized/intel_atomic_plane.ll
 ; linux/optimized/intel_cursor.ll
 ; linux/optimized/intel_sprite.ll
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_draw_sw.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; minetest/optimized/CImage.cpp.ll
 ; minetest/optimized/mapgen.cpp.ll
 ; minetest/optimized/pathfinder.cpp.ll
@@ -100,11 +104,11 @@
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 16
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   ret i32 %3
 }
 
-; 56 occurrences:
+; 58 occurrences:
 ; clamav/optimized/chmd.c.ll
 ; cmake/optimized/huf_decompress.c.ll
 ; icu/optimized/measunit_extra.ll
@@ -112,6 +116,8 @@ entry:
 ; libwebp/optimized/lossless.c.ll
 ; libwebp/optimized/lossless_enc.c.ll
 ; libwebp/optimized/quant_enc.c.ll
+; lvgl/optimized/lv_indev.ll
+; lvgl/optimized/lv_indev_scroll.ll
 ; minetest/optimized/mapgen.cpp.ll
 ; minetest/optimized/pathfinder.cpp.ll
 ; minetest/optimized/voxel.cpp.ll
@@ -188,11 +194,11 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 16
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   ret i32 %3
 }
 
-; 26 occurrences:
+; 28 occurrences:
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; darktable/optimized/Cr2Decoder.cpp.ll
 ; darktable/optimized/DeflateDecompressor.cpp.ll
@@ -200,6 +206,8 @@ entry:
 ; darktable/optimized/RawImage.cpp.ll
 ; darktable/optimized/rawspeed-identify.cpp.ll
 ; linux/optimized/ff-memless.ll
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_draw_sw.ll
 ; miniaudio/optimized/unity.c.ll
 ; openjdk/optimized/buildOopMap.ll
 ; openjdk/optimized/cmsintrp.ll
@@ -227,7 +235,7 @@ entry:
   ret i32 %3
 }
 
-; 36 occurrences:
+; 37 occurrences:
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; darktable/optimized/Cr2Decoder.cpp.ll
 ; darktable/optimized/Cr2Decompressor.cpp.ll
@@ -263,6 +271,7 @@ entry:
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; darktable/optimized/rawspeed-identify.cpp.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; opencv/optimized/grfmt_bmp.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {

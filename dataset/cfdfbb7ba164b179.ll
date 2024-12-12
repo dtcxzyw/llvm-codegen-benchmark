@@ -1,5 +1,5 @@
 
-; 74 occurrences:
+; 76 occurrences:
 ; arrow/optimized/UriNormalize.c.ll
 ; arrow/optimized/feather.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
@@ -50,10 +50,12 @@
 ; luajit/optimized/lj_parse_dyn.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
 ; luau/optimized/lnumprint.cpp.ll
+; lvgl/optimized/lv_svg_parser.ll
 ; lz4/optimized/lz4.c.ll
 ; msgpack/optimized/msgpack_variant_mapbased.cpp.ll
 ; oniguruma/optimized/regparse.ll
 ; opencv/optimized/persistence.cpp.ll
+; opencv/optimized/tflite_importer.cpp.ll
 ; openjdk/optimized/hb-buffer-serialize.ll
 ; openjdk/optimized/hb-face-builder.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
@@ -75,17 +77,17 @@
 ; zstd/optimized/zstd_fast.c.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, ptr %1, ptr %2) #0 {
+define ptr @func0000000000000003(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
   %5 = sub i64 %4, %3
   %6 = and i64 %5, 4294967295
-  %7 = getelementptr nusw i8, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %0, i64 %6
   ret ptr %7
 }
 
-; 110 occurrences:
+; 109 occurrences:
 ; abseil-cpp/optimized/bernoulli_distribution_test.cc.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
@@ -118,7 +120,6 @@ entry:
 ; lightgbm/optimized/bin.cpp.ll
 ; linux/optimized/binfmt_elf.ll
 ; linux/optimized/compat_binfmt_elf.ll
-; linux/optimized/input-mt.ll
 ; linux/optimized/ip6_input.ll
 ; linux/optimized/ip6_output.ll
 ; linux/optimized/namei.ll
@@ -133,7 +134,6 @@ entry:
 ; opencc/optimized/PhraseExtract.cpp.ll
 ; opencv/optimized/fourier_descriptors_demo.cpp.ll
 ; opencv/optimized/perf_common.cpp.ll
-; opencv/optimized/tflite_importer.cpp.ll
 ; openusd/optimized/stringUtils.cpp.ll
 ; openusd/optimized/textFileFormat.tab.cpp.ll
 ; postgres/optimized/freepage.ll
@@ -193,6 +193,7 @@ entry:
 ; quantlib/optimized/subperiodcoupon.ll
 ; quickjs/optimized/quickjs.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
+; vcpkg/optimized/export.prefab.cpp.ll
 ; velox/optimized/Expr.cpp.ll
 ; xgboost/optimized/adaptive.cc.ll
 ; yosys/optimized/freduce.ll

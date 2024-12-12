@@ -1,5 +1,5 @@
 
-; 108 occurrences:
+; 111 occurrences:
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -107,6 +107,9 @@
 ; velox/optimized/UnsafeRowSerializer.cpp.ll
 ; velox/optimized/VectorEncoding.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/bijypxqg3gfu3lugp8zf7c61q.ll
 ; zstd/optimized/fse_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
@@ -116,7 +119,7 @@ entry:
   ret i64 %4
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; libpng/optimized/pngrutil.c.ll
 ; libquic/optimized/curve25519.c.ll
@@ -129,6 +132,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-curve25519.ll
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
 ; ruby/optimized/bignum.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000d(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -169,7 +173,6 @@ entry:
 ; llvm/optimized/BinaryStreamWriter.cpp.ll
 ; llvm/optimized/RecordLayoutBuilder.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; ocio/optimized/Lut3DOpCPU.cpp.ll
 ; ockam-rs/optimized/2px2is5654ttwkil.ll
 ; opencv/optimized/attention_layer.cpp.ll
@@ -191,6 +194,7 @@ entry:
 ; xgboost/optimized/quantile.cc.ll
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
 ; zxing/optimized/PDFWriter.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
@@ -222,6 +226,8 @@ entry:
 
 ; 70 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/rational.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; casadi/optimized/function.cpp.ll
@@ -246,14 +252,12 @@ entry:
 ; libjpeg-turbo/optimized/jidctint.c.ll
 ; libjpeg-turbo/optimized/jidctred.c.ll
 ; linux/optimized/intel_dpll_mgr.ll
-; linux/optimized/rpl.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; llvm/optimized/AArch64MachineScheduler.cpp.ll
 ; minetest/optimized/dungeongen.cpp.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; minetest/optimized/test_content_mapblock.cpp.ll
-; minetest/optimized/test_voxelmanipulator.cpp.ll
 ; openblas/optimized/dgemm_thread_nn.c.ll
 ; openblas/optimized/dgemm_thread_nt.c.ll
 ; openblas/optimized/dgemm_thread_tn.c.ll
@@ -420,6 +424,17 @@ define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %1, %2
   %4 = sub nuw nsw i64 %3, %0
+  ret i64 %4
+}
+
+; 2 occurrences:
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul nuw nsw i64 %1, %2
+  %4 = sub i64 %3, %0
   ret i64 %4
 }
 

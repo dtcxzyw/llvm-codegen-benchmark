@@ -6,7 +6,7 @@
 ; proxygen/optimized/RendezvousHash.cpp.ll
 ; xgboost/optimized/c_api.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 4
   %3 = urem i64 %0, %2
@@ -17,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; proxygen/optimized/RendezvousHash.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 4
   %3 = urem i64 %0, %2
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/fmap.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 32
   %3 = urem i64 %0, %2

@@ -1,5 +1,5 @@
 
-; 52 occurrences:
+; 53 occurrences:
 ; coremark/optimized/core_list_join.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; freetype/optimized/truetype.c.ll
@@ -14,6 +14,7 @@
 ; linux/optimized/intel_tv.ll
 ; linux/optimized/skbuff.ll
 ; linux/optimized/xfrm_output.ll
+; lvgl/optimized/lv_math.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; minetest/optimized/minimap.cpp.ll

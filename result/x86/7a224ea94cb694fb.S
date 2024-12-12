@@ -1,4 +1,4 @@
 func0000000000000001:                   # @func0000000000000001
-	andq	$-4, %rdi
-	leaq	1(%rdi), %rax
+	andq	$-65536, %rdi                   # imm = 0xFFFF0000
+	leaq	1024(%rdi), %rax
 	retq

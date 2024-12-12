@@ -84,6 +84,19 @@ entry:
   ret i32 %4
 }
 
+; 3 occurrences:
+; libwebp/optimized/lossless_enc.c.ll
+; lief/optimized/constant_time.c.ll
+; yosys/optimized/memory_map.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000003(i64 %0, i32 %1) #0 {
+entry:
+  %2 = xor i32 %1, -1
+  %3 = trunc nuw nsw i64 %0 to i32
+  %4 = and i32 %3, %2
+  ret i32 %4
+}
+
 ; 7 occurrences:
 ; cmake/optimized/zstd_lazy.c.ll
 ; hyperscan/optimized/limex_compile.cpp.ll

@@ -7,7 +7,7 @@
 ; llvm/optimized/DAGDeltaAlgorithm.cpp.ll
 ; llvm/optimized/DeltaAlgorithm.cpp.ll
 ; llvm/optimized/InstrInfoEmitter.cpp.ll
-; llvm/optimized/MachineInstr.cpp.ll
+; openusd/optimized/primGather.cpp.ll
 ; verilator/optimized/V3Trace.cpp.ll
 ; yosys/optimized/abc9_ops.ll
 ; yosys/optimized/cxxrtl_backend.ll
@@ -20,16 +20,15 @@
 ; yosys/optimized/techmap.ll
 ; yosys/optimized/torder.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(ptr %0, ptr %1) #0 {
+define i1 @func000000000000006c(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 40
-  %3 = icmp ne ptr %2, %0
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 40
+  %3 = icmp ne ptr %0, %2
   %4 = freeze i1 %3
   ret i1 %4
 }
 
-; 20 occurrences:
-; cmake/optimized/zstd_compress_superblock.c.ll
+; 18 occurrences:
 ; cvc5/optimized/symmetry_breaker.cpp.ll
 ; darktable/optimized/Cr2Decoder.cpp.ll
 ; hyperscan/optimized/rose_build_merge.cpp.ll
@@ -48,12 +47,22 @@ entry:
 ; yosys/optimized/simplec.ll
 ; yosys/optimized/techmap.ll
 ; yosys/optimized/torder.ll
-; zstd/optimized/zstd_compress_superblock.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000061(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 40
-  %3 = icmp eq ptr %2, %0
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 40
+  %3 = icmp eq ptr %0, %2
+  %4 = freeze i1 %3
+  ret i1 %4
+}
+
+; 1 occurrences:
+; llvm/optimized/MachineInstr.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000004c(ptr %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw i8, ptr %1, i64 -2
+  %3 = icmp ne ptr %0, %2
   %4 = freeze i1 %3
   ret i1 %4
 }
@@ -64,7 +73,19 @@ entry:
 define i1 @func000000000000000c(ptr %0, ptr %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %1, i64 8
-  %3 = icmp ne ptr %2, %0
+  %3 = icmp ne ptr %0, %2
+  %4 = freeze i1 %3
+  ret i1 %4
+}
+
+; 2 occurrences:
+; cmake/optimized/zstd_compress_superblock.c.ll
+; zstd/optimized/zstd_compress_superblock.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000041(ptr %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw i8, ptr %1, i64 -8
+  %3 = icmp eq ptr %0, %2
   %4 = freeze i1 %3
   ret i1 %4
 }

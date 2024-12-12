@@ -1,7 +1,6 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; arrow/optimized/key_map.cc.ll
-; linux/optimized/i915_cmd_parser.ll
 ; linux/optimized/intel_sprite.ll
 ; php/optimized/PMurHash.ll
 ; php/optimized/PMurHash128.ll

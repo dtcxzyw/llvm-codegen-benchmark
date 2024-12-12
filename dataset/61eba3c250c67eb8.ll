@@ -13,7 +13,9 @@ entry:
   ret i32 %3
 }
 
-; 5 occurrences:
+; 7 occurrences:
+; boost/optimized/to_chars.ll
+; darktable/optimized/introspection_flip.c.ll
 ; freetype/optimized/psaux.c.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
@@ -54,17 +56,6 @@ entry:
   %1 = icmp eq i32 %0, -1
   %2 = shl nsw i32 %0, 2
   %3 = select i1 %1, i32 24, i32 %2
-  ret i32 %3
-}
-
-; 1 occurrences:
-; linux/optimized/utownerid.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000020(i32 %0) #0 {
-entry:
-  %1 = icmp ugt i32 %0, 127
-  %2 = shl i32 %0, 5
-  %3 = select i1 %1, i32 0, i32 %2
   ret i32 %3
 }
 

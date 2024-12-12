@@ -1,8 +1,8 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	cmpb	%sil, %dil
 	sete	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	movsbl	%sil, %eax
 	movsbl	%dil, %ecx
 	subl	%eax, %ecx

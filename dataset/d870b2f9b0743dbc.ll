@@ -5,7 +5,7 @@
 define i32 @func0000000000000074(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = shl nsw i64 %1, 2
   %6 = add nsw i64 %4, %5
   %7 = trunc i64 %6 to i32
@@ -20,7 +20,7 @@ entry:
 define i32 @func0000000000000040(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = shl nsw i64 %1, 2
   %6 = add i64 %4, %5
   %7 = trunc i64 %6 to i32
@@ -33,7 +33,7 @@ entry:
 define i32 @func0000000000000030(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = shl nuw nsw i64 %0, 9
   %6 = add i64 %5, %4
   %7 = trunc i64 %6 to i32
@@ -47,7 +47,7 @@ entry:
 define i32 @func00000000000000ec(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   %5 = shl nuw nsw i64 %1, 7
   %6 = add nuw nsw i64 %4, %5
   %7 = trunc i64 %6 to i32
@@ -60,7 +60,7 @@ entry:
 define i32 @func00000000000000fc(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = shl nuw nsw i64 %1, 2
   %6 = add nuw nsw i64 %4, %5
   %7 = trunc i64 %6 to i32

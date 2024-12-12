@@ -6,7 +6,7 @@
 ; llvm/optimized/CheckerContext.cpp.ll
 ; qemu/optimized/block_vmdk.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000022(i64 %0, i32 %1, i32 %2) #0 {
+define i64 @func0000000000000042(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
   %4 = icmp eq i32 %1, 2
@@ -18,7 +18,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/LiveIntervals.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000182(i64 %0, i32 %1, i32 %2) #0 {
+define i64 @func0000000000000302(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp eq i32 %1, 0
@@ -31,7 +31,7 @@ entry:
 ; cmake/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000188(i64 %0, i32 %1, i32 %2) #0 {
+define i64 @func0000000000000308(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 1
   %4 = icmp ult i32 %1, -3

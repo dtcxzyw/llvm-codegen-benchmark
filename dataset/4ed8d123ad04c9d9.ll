@@ -11,7 +11,7 @@ define i16 @func000000000000000f(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i16
   %3 = shl nuw nsw i16 %2, 1
-  %4 = add nuw nsw i16 %3, %0
+  %4 = add nuw nsw i16 %0, %3
   ret i16 %4
 }
 
@@ -38,7 +38,18 @@ define i16 @func000000000000000c(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i16
   %3 = shl nuw nsw i16 %2, 7
-  %4 = add i16 %3, %0
+  %4 = add i16 %0, %3
+  ret i16 %4
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; Function Attrs: nounwind
+define i16 @func000000000000000b(i16 %0, i8 %1) #0 {
+entry:
+  %2 = zext i8 %1 to i16
+  %3 = shl nuw i16 %2, 8
+  %4 = add nuw nsw i16 %0, %3
   ret i16 %4
 }
 
@@ -53,7 +64,7 @@ define i16 @func000000000000001f(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i16
   %3 = shl nuw nsw i16 %2, 10
-  %4 = add nuw nsw i16 %3, %0
+  %4 = add nuw nsw i16 %0, %3
   ret i16 %4
 }
 
@@ -75,7 +86,7 @@ define i16 @func000000000000000d(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i16
   %3 = shl nuw nsw i16 %2, 2
-  %4 = add nsw i16 %3, %0
+  %4 = add nsw i16 %0, %3
   ret i16 %4
 }
 

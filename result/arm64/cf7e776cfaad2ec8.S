@@ -1,4 +1,4 @@
-func000000000000000a:                   // @func000000000000000a
+func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
 	lsr	x8, x1, #1
 	and	x8, x8, #0x7ffffffffffffffc

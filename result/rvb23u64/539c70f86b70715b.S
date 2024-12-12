@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	lui	a2, 768
 	and	a1, a1, a2
 	binvi	a1, a1, 20
@@ -7,9 +7,8 @@ func0000000000000011:                   # @func0000000000000011
 	or	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001
-	andi	a1, a1, 192
-	addi	a1, a1, -128
-	seqz	a1, a1
-	slli	a1, a1, 7
+	not	a1, a1
+	srli	a1, a1, 4
+	andi	a1, a1, 2
 	or	a0, a0, a1
 	ret

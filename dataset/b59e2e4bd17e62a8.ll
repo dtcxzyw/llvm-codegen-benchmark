@@ -1,7 +1,9 @@
 
-; 55 occurrences:
+; 57 occurrences:
 ; arrow/optimized/kernel.cc.ll
 ; arrow/optimized/key_hash.cc.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; casadi/optimized/code_generator.cpp.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll

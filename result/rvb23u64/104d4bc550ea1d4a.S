@@ -1,9 +1,9 @@
-func00000000000003da:                   # @func00000000000003da
+func00000000000007aa:                   # @func00000000000007aa
 	sh1add	a1, a2, a1
 	subw	a0, a0, a1
 	sgtz	a0, a0
 	ret
-func000000000000031a:                   # @func000000000000031a
+func000000000000062a:                   # @func000000000000062a
 	sh3add	a1, a2, a1
 	subw	a0, a0, a1
 	sgtz	a0, a0

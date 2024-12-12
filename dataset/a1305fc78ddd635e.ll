@@ -11,10 +11,9 @@ entry:
   ret i64 %6
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; spike/optimized/f128_mul.ll
-; spike/optimized/s_mul64To128M.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i1 %2) #0 {
 entry:

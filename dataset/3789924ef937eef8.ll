@@ -3,13 +3,13 @@
 ; linux/optimized/vlv_dsi_pll.ll
 ; ruby/optimized/time.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 31
   %3 = icmp eq i32 %2, 24
   %4 = select i1 %3, i32 0, i32 59
   %5 = and i32 %0, 63
-  %6 = icmp ugt i32 %5, %4
+  %6 = icmp samesign ugt i32 %5, %4
   ret i1 %6
 }
 
@@ -18,7 +18,7 @@ entry:
 ; llvm/optimized/CGExprAgg.cpp.ll
 ; opencv/optimized/matmul.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 536870912
   %3 = icmp eq i32 %2, 0
@@ -31,20 +31,20 @@ entry:
 ; 1 occurrences:
 ; meshoptimizer/optimized/indexcodec.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 15
   %3 = icmp eq i32 %2, 1
   %4 = select i1 %3, i32 13, i32 15
   %5 = and i32 %0, 15
-  %6 = icmp ult i32 %5, %4
+  %6 = icmp samesign ult i32 %5, %4
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; opencv/optimized/rand.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
   %3 = icmp eq i32 %2, 6

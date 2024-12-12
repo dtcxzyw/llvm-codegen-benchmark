@@ -1,6 +1,5 @@
 
-; 2 occurrences:
-; linux/optimized/intel_audio.ll
+; 1 occurrences:
 ; velox/optimized/SubscriptUtil.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i16 %1) #0 {

@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 34 occurrences:
 ; arrow/optimized/UriFile.c.ll
 ; cmake/optimized/json_value.cpp.ll
 ; eastl/optimized/TestFunctional.cpp.ll
@@ -33,6 +33,7 @@
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; z3/optimized/bv_rewriter.cpp.ll
 ; z3/optimized/pb_preprocess_tactic.cpp.ll
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0) #0 {
 entry:

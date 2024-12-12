@@ -21,11 +21,11 @@ entry:
   %2 = shl nuw nsw i32 %1, 9
   %3 = add nuw nsw i32 %2, 512
   %4 = and i32 %3, 7680
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
-; 26 occurrences:
+; 27 occurrences:
 ; abc/optimized/ifTune.c.ll
 ; c3c/optimized/types.c.ll
 ; cmake/optimized/archive_write_set_format_zip.c.ll
@@ -42,6 +42,7 @@ entry:
 ; linux/optimized/xhci-ring.ll
 ; llvm/optimized/AArch64AsmPrinter.cpp.ll
 ; llvm/optimized/AArch64MCCodeEmitter.cpp.ll
+; lua/optimized/lcode.ll
 ; luajit/optimized/minilua.ll
 ; nix/optimized/fromTOML.ll
 ; openssl/optimized/libcrypto-lib-ccm128.ll
@@ -71,7 +72,7 @@ entry:
   %2 = shl nuw nsw i32 %1, 15
   %3 = add nuw nsw i32 %2, 32768
   %4 = and i32 %3, 16711680
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -83,7 +84,7 @@ entry:
   %2 = shl nsw i32 %1, 8
   %3 = add nsw i32 %2, 256
   %4 = and i32 %3, 16128
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -110,19 +111,18 @@ entry:
   %2 = shl i32 %1, 25
   %3 = add i32 %2, 33554432
   %4 = and i32 %3, 234881024
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
-; 2 occurrences:
-; lua/optimized/lcode.ll
+; 1 occurrences:
 ; opencv/optimized/container_avi.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000b(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl nsw i32 %1, 16
-  %3 = add nsw i32 %2, 8323072
-  %4 = and i32 %3, 16711680
+  %2 = shl nsw i32 %1, 8
+  %3 = add nsw i32 %2, 12288
+  %4 = and i32 %3, 65280
   %5 = or disjoint i32 %4, %0
   ret i32 %5
 }

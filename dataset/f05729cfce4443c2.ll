@@ -1,5 +1,7 @@
 
-; 12 occurrences:
+; 14 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; minetest/optimized/CAnimatedMeshSceneNode.cpp.ll
 ; minetest/optimized/CSkinnedMesh.cpp.ll
 ; minetest/optimized/clientenvironment.cpp.ll
@@ -45,7 +47,9 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 3 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; quantlib/optimized/concentrating1dmesher.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, double %1, double %2) #0 {

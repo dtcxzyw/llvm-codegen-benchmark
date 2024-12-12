@@ -4,7 +4,7 @@
 ; opencv/optimized/matmul.dispatch.cpp.ll
 ; openjdk/optimized/hb-ot-metrics.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007c(ptr %0, float %1) #0 {
+define i1 @func00000000000000ec(ptr %0, float %1) #0 {
 entry:
   %2 = fcmp une float %1, 0.000000e+00
   %3 = icmp ne ptr %0, null
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; recastnavigation/optimized/DetourNavMeshQuery.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(ptr %0, float %1) #0 {
+define i1 @func00000000000000cc(ptr %0, float %1) #0 {
 entry:
   %2 = fcmp one float %1, 0x7FF0000000000000
   %3 = icmp ne ptr %0, null
@@ -38,7 +38,7 @@ entry:
 ; gromacs/optimized/vcm.cpp.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(ptr %0, float %1) #0 {
+define i1 @func000000000000008c(ptr %0, float %1) #0 {
 entry:
   %2 = fcmp ogt float %1, 1.000000e+00
   %3 = icmp ne ptr %0, null
@@ -50,7 +50,7 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(ptr %0, float %1) #0 {
+define i1 @func00000000000000ac(ptr %0, float %1) #0 {
 entry:
   %2 = fcmp ugt float %1, 0.000000e+00
   %3 = icmp ne ptr %0, null

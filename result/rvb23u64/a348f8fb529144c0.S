@@ -19,10 +19,16 @@ func0000000000000006:                   # @func0000000000000006
 	sext.w	a0, a0
 	slti	a0, a0, 32
 	ret
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	xori	a1, a1, 960
 	and	a0, a0, a1
 	sext.w	a0, a0
 	sltiu	a0, a0, 64
 	xori	a0, a0, 1
+	ret
+func0000000000000014:                   # @func0000000000000014
+	xori	a1, a1, 960
+	and	a0, a0, a1
+	sext.w	a0, a0
+	sltiu	a0, a0, 64
 	ret

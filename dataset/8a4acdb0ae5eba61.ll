@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; clamav/optimized/infblock.c.ll
 ; cmake/optimized/fse_compress.c.ll
 ; cpython/optimized/longobject.ll
@@ -9,7 +9,6 @@
 ; jemalloc/optimized/eset.sym.ll
 ; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/LowerTypeTests.cpp.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
 ; redis/optimized/eset.ll
 ; redis/optimized/eset.sym.ll
 ; ruby/optimized/compile.ll

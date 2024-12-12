@@ -40,7 +40,7 @@ entry:
 ; postgres/optimized/geo_ops.ll
 ; wireshark/optimized/packet-btmesh.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 1
   %3 = icmp eq i32 %0, 0
@@ -51,7 +51,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/dependencies.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i32 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 16
   %3 = icmp sgt i32 %0, 0
@@ -62,7 +62,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/number_patternstring.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i32 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 16
   %.not = icmp eq i32 %0, -1

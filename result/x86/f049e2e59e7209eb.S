@@ -10,6 +10,10 @@ func0000000000000005:                   # @func0000000000000005
 	vucomisd	%xmm0, %xmm1
 	setb	%al
 	retq
+func000000000000000a:                   # @func000000000000000a
+	vucomisd	%xmm0, %xmm1
+	setae	%al
+	retq
 func0000000000000008:                   # @func0000000000000008
 	vcmpeqsd	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
@@ -17,10 +21,6 @@ func0000000000000008:                   # @func0000000000000008
 func0000000000000003:                   # @func0000000000000003
 	vucomisd	%xmm1, %xmm0
 	setb	%al
-	retq
-func000000000000000a:                   # @func000000000000000a
-	vucomisd	%xmm0, %xmm1
-	setae	%al
 	retq
 func0000000000000007:                   # @func0000000000000007
 	vcmpneqsd	%xmm1, %xmm0, %k0

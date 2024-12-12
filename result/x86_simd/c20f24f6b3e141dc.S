@@ -6,7 +6,7 @@ func0000000000000002:                   # @func0000000000000002
 func0000000000000003:                   # @func0000000000000003
 	vpsubw	%xmm1, %xmm0, %xmm0
 	vpmovzxwq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero
-	vpsllq	$16, %ymm0, %ymm0
+	vpsllq	$32, %ymm0, %ymm0
 	retq
 func0000000000000008:                   # @func0000000000000008
 	vpsubw	%xmm1, %xmm0, %xmm0

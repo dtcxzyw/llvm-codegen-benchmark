@@ -4,7 +4,7 @@
 	.zero	16,34
 .LCPI0_2:
 	.byte	39                              # 0x27
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vptestnmb	%xmm1, %xmm1, %k1
 	vpbroadcastb	.LCPI0_2(%rip), %xmm2   # xmm2 = [39,39,39,39,39,39,39,39,39,39,39,39,39,39,39,39]
 	vpblendmb	%xmm2, %xmm1, %xmm1 {%k1}

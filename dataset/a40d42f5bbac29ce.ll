@@ -1,5 +1,6 @@
 
-; 42 occurrences:
+; 44 occurrences:
+; arrow/optimized/value_parsing.cc.ll
 ; assimp/optimized/ACLoader.cpp.ll
 ; assimp/optimized/ASEParser.cpp.ll
 ; assimp/optimized/BVHLoader.cpp.ll
@@ -31,6 +32,7 @@
 ; minetest/optimized/COBJMeshFileLoader.cpp.ll
 ; minetest/optimized/COpenGLExtensionHandler.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
+; mitsuba3/optimized/string.cpp.ll
 ; ncnn/optimized/paramdict.cpp.ll
 ; xgboost/optimized/data.cc.ll
 ; xgboost/optimized/gblinear.cc.ll

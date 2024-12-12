@@ -23,7 +23,7 @@ entry:
   %4 = zext nneg i8 %3 to i32
   %5 = trunc nuw nsw i64 %1 to i32
   %6 = shl nuw nsw i32 %4, %5
-  %7 = add nuw nsw i32 %6, %0
+  %7 = add nuw nsw i32 %0, %6
   ret i32 %7
 }
 
@@ -36,7 +36,7 @@ entry:
   %4 = zext nneg i8 %3 to i32
   %5 = trunc i64 %1 to i32
   %6 = shl nuw nsw i32 %4, %5
-  %7 = add nuw nsw i32 %6, %0
+  %7 = add nuw nsw i32 %0, %6
   ret i32 %7
 }
 

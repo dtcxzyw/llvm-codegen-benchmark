@@ -1,68 +1,18 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
 	mov	x8, #4636737291354636288        // =0x4059000000000000
-	ldp	q18, q17, [sp, #64]
-	dup	v16.2d, x8
-	ldp	q20, q19, [sp]
-	ldp	q22, q21, [sp, #32]
-	ldp	q24, q23, [sp, #96]
-	fminnm	v20.2d, v20.2d, v16.2d
-	fminnm	v19.2d, v19.2d, v16.2d
-	fminnm	v18.2d, v18.2d, v16.2d
-	fminnm	v22.2d, v22.2d, v16.2d
-	fminnm	v21.2d, v21.2d, v16.2d
-	fminnm	v17.2d, v17.2d, v16.2d
-	fminnm	v24.2d, v24.2d, v16.2d
-	fminnm	v23.2d, v23.2d, v16.2d
-	fsub	v19.2d, v16.2d, v19.2d
-	fsub	v20.2d, v16.2d, v20.2d
-	fsub	v18.2d, v16.2d, v18.2d
-	fsub	v21.2d, v16.2d, v21.2d
-	fsub	v22.2d, v16.2d, v22.2d
-	fsub	v23.2d, v16.2d, v23.2d
-	fsub	v24.2d, v16.2d, v24.2d
-	fsub	v16.2d, v16.2d, v17.2d
-	fmul	v0.2d, v20.2d, v0.2d
-	fmul	v1.2d, v19.2d, v1.2d
-	fmul	v4.2d, v18.2d, v4.2d
-	fmul	v2.2d, v22.2d, v2.2d
-	fmul	v3.2d, v21.2d, v3.2d
-	fmul	v5.2d, v16.2d, v5.2d
-	fmul	v6.2d, v24.2d, v6.2d
-	fmul	v7.2d, v23.2d, v7.2d
+	fmov	d2, x8
+	fminnm	d1, d1, d2
+	fsub	d1, d2, d1
+	fmul	d0, d1, d0
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	movi	v16.2d, #0000000000000000
-	ldp	q18, q17, [sp, #96]
-	ldp	q20, q19, [sp]
-	fmov	v25.2d, #1.00000000
-	ldp	q22, q21, [sp, #64]
-	ldp	q24, q23, [sp, #32]
-	fmaxnm	v20.2d, v20.2d, v16.2d
-	fmaxnm	v19.2d, v19.2d, v16.2d
-	fmaxnm	v18.2d, v18.2d, v16.2d
-	fmaxnm	v22.2d, v22.2d, v16.2d
-	fmaxnm	v21.2d, v21.2d, v16.2d
-	fmaxnm	v24.2d, v24.2d, v16.2d
-	fmaxnm	v23.2d, v23.2d, v16.2d
-	fmaxnm	v16.2d, v17.2d, v16.2d
-	fsub	v17.2d, v25.2d, v19.2d
-	fsub	v19.2d, v25.2d, v20.2d
-	fsub	v18.2d, v25.2d, v18.2d
-	fsub	v20.2d, v25.2d, v22.2d
-	fsub	v21.2d, v25.2d, v21.2d
-	fsub	v22.2d, v25.2d, v23.2d
-	fsub	v23.2d, v25.2d, v24.2d
-	fsub	v16.2d, v25.2d, v16.2d
-	fmul	v0.2d, v19.2d, v0.2d
-	fmul	v1.2d, v17.2d, v1.2d
-	fmul	v6.2d, v18.2d, v6.2d
-	fmul	v4.2d, v20.2d, v4.2d
-	fmul	v5.2d, v21.2d, v5.2d
-	fmul	v2.2d, v23.2d, v2.2d
-	fmul	v3.2d, v22.2d, v3.2d
-	fmul	v7.2d, v16.2d, v7.2d
+	movi	d2, #0000000000000000
+	fmaxnm	d1, d1, d2
+	fmov	d2, #1.00000000
+	fsub	d1, d2, d1
+	fmul	d0, d1, d0
 	ret
                                         // -- End function

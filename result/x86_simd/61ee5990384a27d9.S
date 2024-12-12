@@ -4,7 +4,7 @@
 	.zero	16,48
 .LCPI0_2:
 	.byte	48                              # 0x30
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	vpaddb	.LCPI0_0(%rip), %xmm1, %xmm1 {%k1}
@@ -15,7 +15,7 @@ func0000000000000016:                   # @func0000000000000016
 	.zero	16,224
 .LCPI1_1:
 	.zero	16,57
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	vpaddb	.LCPI1_0(%rip), %xmm1, %xmm1 {%k1}
@@ -26,7 +26,7 @@ func0000000000000018:                   # @func0000000000000018
 	.zero	16,224
 .LCPI2_1:
 	.zero	16,58
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	vpaddb	.LCPI2_0(%rip), %xmm1, %xmm1 {%k1}
@@ -37,7 +37,7 @@ func0000000000000014:                   # @func0000000000000014
 	.zero	16,32
 .LCPI3_1:
 	.zero	16,111
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	vpaddb	.LCPI3_0(%rip), %xmm1, %xmm1 {%k1}
@@ -45,7 +45,7 @@ func0000000000000031:                   # @func0000000000000031
 	retq
 .LCPI4_0:
 	.zero	16,224
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	vpaddb	.LCPI4_0(%rip), %xmm1, %xmm1 {%k1}
@@ -54,7 +54,7 @@ func0000000000000011:                   # @func0000000000000011
 	retq
 .LCPI5_0:
 	.zero	16,224
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k1
 	vpaddb	.LCPI5_0(%rip), %xmm1, %xmm1 {%k1}

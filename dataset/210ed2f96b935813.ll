@@ -4,7 +4,7 @@
 ; opencv/optimized/imgwarp.cpp.ll
 ; postgres/optimized/strftime.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = sext i16 %2 to i32
   %4 = add nsw i32 %0, %1
@@ -32,7 +32,7 @@ entry:
 ; postgres/optimized/strftime.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1, i16 %2) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = sext i16 %2 to i32
   %4 = add nsw i32 %0, %1

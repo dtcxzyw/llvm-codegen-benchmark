@@ -1,7 +1,6 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; clamav/optimized/pdf.c.ll
-; postgres/optimized/char.ll
 ; postgres/optimized/fe-exec.ll
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind

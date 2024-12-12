@@ -33,16 +33,16 @@
 	.byte	128                             # 0x80
 .LCPI0_1:
 	.long	16777216                        # 0x1000000
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	vpshufb	.LCPI0_0(%rip), %ymm1, %ymm1    # ymm1 = zero,ymm1[3],zero,zero,zero,ymm1[7],zero,zero,zero,ymm1[11],zero,zero,zero,ymm1[15],zero,zero,zero,ymm1[19],zero,zero,zero,ymm1[23],zero,zero,zero,ymm1[27],zero,zero,zero,ymm1[31],zero,zero
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
 	vpcmpltud	.LCPI0_1(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 .LCPI1_0:
 	.long	7                               # 0x7
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpsrld	$8, %ymm1, %ymm1
 	vptestnmd	%ymm0, %ymm0, %k0
 	vptestnmd	.LCPI1_0(%rip){1to8}, %ymm1, %k1
@@ -51,40 +51,28 @@ func0000000000000011:                   # @func0000000000000011
 	vzeroupper
 	retq
 .LCPI2_0:
-	.long	15                              # 0xf
+	.long	7                               # 0x7
 .LCPI2_1:
-	.long	4                               # 0x4
-func0000000000000038:                   # @func0000000000000038
-	vpsrld	$16, %ymm1, %ymm1
+	.long	65                              # 0x41
+func0000000000000004:                   # @func0000000000000004
+	vpsrld	$21, %ymm1, %ymm1
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1
 	vpmulld	%ymm0, %ymm1, %ymm0
-	vpcmpnleud	.LCPI2_1(%rip){1to8}, %ymm0, %k0
+	vpcmpltud	.LCPI2_1(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
 .LCPI3_0:
 	.long	7                               # 0x7
-.LCPI3_1:
-	.long	65                              # 0x41
-func0000000000000004:                   # @func0000000000000004
-	vpsrld	$21, %ymm1, %ymm1
-	vpandd	.LCPI3_0(%rip){1to8}, %ymm1, %ymm1
-	vpmulld	%ymm0, %ymm1, %ymm0
-	vpcmpltud	.LCPI3_1(%rip){1to8}, %ymm0, %k0
-	vpmovm2w	%k0, %xmm0
-	vzeroupper
-	retq
-.LCPI4_0:
-	.long	7                               # 0x7
 func0000000000000001:                   # @func0000000000000001
 	vpsrld	$21, %ymm1, %ymm1
-	vpandd	.LCPI4_0(%rip){1to8}, %ymm1, %ymm1
+	vpandd	.LCPI3_0(%rip){1to8}, %ymm1, %ymm1
 	vpmulld	%ymm0, %ymm1, %ymm0
 	vptestnmd	%ymm0, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-.LCPI5_0:
+.LCPI4_0:
 	.byte	1                               # 0x1
 	.byte	128                             # 0x80
 	.byte	128                             # 0x80
@@ -117,8 +105,8 @@ func0000000000000001:                   # @func0000000000000001
 	.byte	128                             # 0x80
 	.byte	128                             # 0x80
 	.byte	128                             # 0x80
-func0000000000000031:                   # @func0000000000000031
-	vpshufb	.LCPI5_0(%rip), %ymm1, %ymm1    # ymm1 = ymm1[1],zero,zero,zero,ymm1[5],zero,zero,zero,ymm1[9],zero,zero,zero,ymm1[13],zero,zero,zero,ymm1[17],zero,zero,zero,ymm1[21],zero,zero,zero,ymm1[25],zero,zero,zero,ymm1[29],zero,zero,zero
+func0000000000000061:                   # @func0000000000000061
+	vpshufb	.LCPI4_0(%rip), %ymm1, %ymm1    # ymm1 = ymm1[1],zero,zero,zero,ymm1[5],zero,zero,zero,ymm1[9],zero,zero,zero,ymm1[13],zero,zero,zero,ymm1[17],zero,zero,zero,ymm1[21],zero,zero,zero,ymm1[25],zero,zero,zero,ymm1[29],zero,zero,zero
 	vptestnmd	%ymm0, %ymm0, %k0
 	vptestnmd	%ymm1, %ymm1, %k1
 	korb	%k0, %k1, %k0

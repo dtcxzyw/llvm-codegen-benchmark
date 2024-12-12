@@ -1,7 +1,8 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; rust-analyzer-rs/optimized/7lpeywhc9n6h2ze.ll
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
+; zed-rs/optimized/8aib3kswyxtai67bpawu71ihu.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000002f(i32 %0, i64 %1, i64 %2) #0 {
 entry:

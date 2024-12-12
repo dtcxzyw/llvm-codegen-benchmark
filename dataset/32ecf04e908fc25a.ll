@@ -1,5 +1,6 @@
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/envelope_multi.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; opencv/optimized/boostdesc.cpp.ll
 ; openusd/optimized/quatf.cpp.ll

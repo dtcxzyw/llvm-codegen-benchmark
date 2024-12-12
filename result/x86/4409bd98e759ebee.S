@@ -1,4 +1,4 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	movq	%rdi, %rax
 	negq	%rax
 	testq	%rsi, %rsi
@@ -10,13 +10,13 @@ func000000000000000a:                   # @func000000000000000a
 	testq	%rsi, %rsi
 	cmovnsq	%rdi, %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movq	%rdi, %rax
 	negq	%rax
 	testq	%rsi, %rsi
 	cmoveq	%rdi, %rax
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	movl	$134217728, %eax                # imm = 0x8000000
 	subq	%rdi, %rax
 	testq	%rsi, %rsi
@@ -40,7 +40,7 @@ func0000000000000006:                   # @func0000000000000006
 	testq	%rsi, %rsi
 	cmovsq	%rdi, %rax
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	movq	%rdi, %rax
 	negq	%rax
 	testq	%rsi, %rsi

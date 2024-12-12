@@ -8,12 +8,12 @@ func0000000000000018:                   # @func0000000000000018
 	testb	$7, %dil
 	setne	%al
 	retq
-func0000000000000010:                   # @func0000000000000010
+func0000000000000030:                   # @func0000000000000030
 	xorl	%eax, %eax
 	testl	$2031616, %edi                  # imm = 0x1F0000
 	setne	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000028:                   # @func0000000000000028
 	movzbl	%dil, %ecx
 	xorl	%eax, %eax
 	cmpl	$127, %ecx

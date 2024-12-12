@@ -1,5 +1,5 @@
 
-; 134 occurrences:
+; 132 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; abc/optimized/abcSweep.c.ll
@@ -36,7 +36,6 @@
 ; jemalloc/optimized/tcache.sym.ll
 ; lief/optimized/BinaryStream.cpp.ll
 ; linux/optimized/e1000_main.ll
-; linux/optimized/feat_ctl.ll
 ; linux/optimized/i915_hwmon.ll
 ; linux/optimized/iface.ll
 ; linux/optimized/intel_dpio_phy.ll
@@ -67,7 +66,6 @@
 ; llvm/optimized/CoreEngine.cpp.ll
 ; llvm/optimized/DivZeroChecker.cpp.ll
 ; llvm/optimized/ExplodedGraph.cpp.ll
-; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/ExprEngine.cpp.ll
 ; llvm/optimized/ExprEngineC.cpp.ll
 ; llvm/optimized/ExprEngineCXX.cpp.ll
@@ -80,7 +78,6 @@
 ; llvm/optimized/NoOwnershipChangeVisitor.cpp.ll
 ; llvm/optimized/PathDiagnostic.cpp.ll
 ; llvm/optimized/ProgramPoint.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RetainCountDiagnostics.cpp.ll
 ; llvm/optimized/ThreadSafety.cpp.ll
 ; llvm/optimized/ThreadSafetyCommon.cpp.ll
@@ -118,6 +115,7 @@
 ; php/optimized/dfa_pass.ll
 ; php/optimized/pdo_dbh.ll
 ; php/optimized/streamsfuncs.ll
+; postgres/optimized/spgutils.ll
 ; re2/optimized/prog.cc.ll
 ; redis/optimized/buf_writer.ll
 ; redis/optimized/buf_writer.sym.ll

@@ -1,3 +1,8 @@
+func000000000000001d:                   # @func000000000000001d
+	sext.w	a1, a1
+	srli	a0, a0, 52
+	or	a0, a0, a1
+	ret
 func000000000000000a:                   # @func000000000000000a
 	slli	a1, a1, 32
 	or	a0, a0, a1

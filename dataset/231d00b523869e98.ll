@@ -47,13 +47,13 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000005b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %1, 4
   %4 = mul nsw i64 %1, %2
   %5 = getelementptr nusw double, ptr %0, i64 %4
   %.idx = shl nsw i64 %3, 5
-  %6 = getelementptr nusw i8, ptr %5, i64 %.idx
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %.idx
   ret ptr %6
 }
 
@@ -63,26 +63,13 @@ entry:
 ; ceres/optimized/schur_eliminator_2_2_4.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_d.cc.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000da(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func00000000000000db(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %1, 4
   %4 = mul nuw nsw i64 %1, %2
   %5 = getelementptr nusw double, ptr %0, i64 %4
   %.idx = shl nsw i64 %3, 5
-  %6 = getelementptr nusw i8, ptr %5, i64 %.idx
-  ret ptr %6
-}
-
-; 1 occurrences:
-; ceres/optimized/gradient_checker.cc.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000052(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sdiv i64 %1, 4
-  %4 = mul nsw i64 %1, %2
-  %5 = getelementptr double, ptr %0, i64 %4
-  %.idx = shl nsw i64 %3, 5
-  %6 = getelementptr nusw i8, ptr %5, i64 %.idx
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %.idx
   ret ptr %6
 }
 

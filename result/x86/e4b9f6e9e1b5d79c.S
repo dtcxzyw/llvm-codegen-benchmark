@@ -16,6 +16,12 @@ func0000000000000002:                   # @func0000000000000002
 	cmovnel	%edi, %eax
 	movzbl	%al, %eax
 	retq
+func000000000000000d:                   # @func000000000000000d
+	testb	%dil, %dil
+	movl	$122, %eax
+	cmovnsl	%edi, %eax
+	movzbl	%al, %eax
+	retq
 func0000000000000011:                   # @func0000000000000011
 	xorl	%eax, %eax
 	cmpb	$14, %dil

@@ -1,5 +1,5 @@
 
-; 7 occurrences:
+; 11 occurrences:
 ; icu/optimized/scrptrun.ll
 ; meshlab/optimized/MarchingCubes.cpp.ll
 ; minetest/optimized/collision.cpp.ll
@@ -7,6 +7,10 @@
 ; openvdb/optimized/LevelSetRebuild.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; recastnavigation/optimized/CrowdTool.cpp.ll
+; zed-rs/optimized/1jbe4zqf10fi4dnkcvibaggjj.ll
+; zed-rs/optimized/2bjv2ryetyqaw0uwjf53eylb3.ll
+; zed-rs/optimized/5kbsfw3jcmbcslmu1o5kx13w3.ll
+; zed-rs/optimized/di6vqkr45z5qfxmwsnoq97jcv.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000007(i1 %0, i1 %1, i8 %2) #0 {
 entry:

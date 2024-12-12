@@ -27,6 +27,33 @@ entry:
   ret i1 %5
 }
 
+; 3 occurrences:
+; image-rs/optimized/5ez7udly19o3uj1p.ll
+; typst-rs/optimized/26ex1w19ixz6ifuk.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000060(i8 %0, i8 %1) #0 {
+entry:
+  %2 = and i8 %1, 14
+  %3 = icmp ne i8 %2, 0
+  %4 = trunc i8 %0 to i1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
+; 2 occurrences:
+; image-rs/optimized/5ez7udly19o3uj1p.ll
+; typst-rs/optimized/26ex1w19ixz6ifuk.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000062(i8 %0, i8 %1) #0 {
+entry:
+  %2 = and i8 %1, 14
+  %3 = icmp ne i8 %2, 0
+  %4 = trunc nuw i8 %0 to i1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
 ; 54 occurrences:
 ; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/ContinuationIndenter.cpp.ll

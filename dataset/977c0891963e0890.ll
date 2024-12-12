@@ -34,11 +34,10 @@ entry:
   ret i32 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; abc/optimized/covBuild.c.ll
 ; llvm/optimized/ODRDiagsEmitter.cpp.ll
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
-; wireshark/optimized/golay.c.ll
 ; yosys/optimized/setundef.ll
 ; z3/optimized/tbv.cpp.ll
 ; Function Attrs: nounwind

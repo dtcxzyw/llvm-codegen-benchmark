@@ -7,8 +7,6 @@ func0000000000000001:                   # @func0000000000000001
 	orq	%rdi, %rax
 	retq
 func0000000000000003:                   # @func0000000000000003
-	movq	%rsi, %rax
-	shll	$8, %eax
-	negl	%eax
+	imull	$1512728442, %esi, %eax         # imm = 0x5A2A677A
 	orq	%rdi, %rax
 	retq

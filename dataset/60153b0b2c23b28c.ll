@@ -1,10 +1,9 @@
 
-; 3 occurrences:
-; libquic/optimized/quic_time.cc.ll
+; 2 occurrences:
 ; libzmq/optimized/zmq_utils.cpp.ll
 ; minetest/optimized/clientmedia.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0) #0 {
+define i1 @func0000000000000028(i64 %0) #0 {
 entry:
   %1 = urem i64 %0, 20
   %2 = icmp eq i64 %1, 6
@@ -13,11 +12,10 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; llvm/optimized/AArch64AsmParser.cpp.ll
-; openmpi/optimized/name_fns.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0) #0 {
+define i1 @func0000000000000024(i64 %0) #0 {
 entry:
   %1 = urem i64 %0, 180
   %2 = icmp eq i64 %1, 90
@@ -29,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/cmCTestTestHandler.cxx.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0) #0 {
+define i1 @func000000000000002c(i64 %0) #0 {
 entry:
   %1 = urem i64 %0, 60
   %2 = icmp eq i64 %1, 0

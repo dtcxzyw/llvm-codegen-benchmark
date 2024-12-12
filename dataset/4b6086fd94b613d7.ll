@@ -8,7 +8,7 @@ define i1 @func0000000000000010(i1 %0, double %1) #0 {
 entry:
   %2 = fmul double %1, -5.000000e-01
   %3 = fcmp oeq double %2, 0.000000e+00
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
@@ -26,7 +26,7 @@ define i1 @func0000000000000004(i1 %0, double %1) #0 {
 entry:
   %2 = fmul double %1, 1.000000e+06
   %3 = fcmp olt double %2, 0xC3E0000000000000
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
@@ -48,7 +48,7 @@ define i1 @func000000000000000a(i1 %0, double %1) #0 {
 entry:
   %2 = fmul double %1, 5.000000e-01
   %3 = fcmp ugt double %2, 1.000000e+00
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
@@ -66,7 +66,7 @@ define i1 @func0000000000000008(i1 %0, double %1) #0 {
 entry:
   %2 = fmul double %1, 5.000000e-01
   %3 = fcmp ogt double %2, 1.000000e+00
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
@@ -88,7 +88,7 @@ define i1 @func0000000000000002(i1 %0, double %1) #0 {
 entry:
   %2 = fmul double %1, 1.000000e+02
   %3 = fcmp uno double %2, 0.000000e+00
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
@@ -100,7 +100,7 @@ define i1 @func000000000000000e(i1 %0, double %1) #0 {
 entry:
   %2 = fmul double %1, 5.000000e-01
   %3 = fcmp une double %2, 0.000000e+00
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 

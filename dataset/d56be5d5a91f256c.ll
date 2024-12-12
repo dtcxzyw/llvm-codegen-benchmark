@@ -1,7 +1,9 @@
 
-; 10 occurrences:
+; 12 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; libsodium/optimized/libsodium_la-x25519_ref10.ll
@@ -27,7 +29,7 @@ entry:
 define i128 @func0000000000000014(i128 %0, i128 %1) #0 {
 entry:
   %2 = mul nuw i128 %1, 10779635027931437427
-  %3 = add nuw i128 %2, %0
+  %3 = add nuw i128 %0, %2
   %4 = lshr i128 %3, 64
   ret i128 %4
 }

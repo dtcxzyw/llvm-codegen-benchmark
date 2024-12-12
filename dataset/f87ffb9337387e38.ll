@@ -15,20 +15,22 @@ define i64 @func000000000000001f(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2097151
   %4 = zext nneg i32 %3 to i64
-  %5 = mul nuw nsw i64 %4, %1
-  %6 = add nuw nsw i64 %5, %0
+  %5 = mul nuw nsw i64 %1, %4
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; image-rs/optimized/249ukonr3l56u09i.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 15
   %4 = zext nneg i32 %3 to i64
-  %5 = mul nuw nsw i64 %4, %1
+  %5 = mul nuw nsw i64 %1, %4
   %6 = add i64 %5, %0
   ret i64 %6
 }
@@ -40,7 +42,7 @@ define i64 @func0000000000000015(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 536870908
   %4 = zext nneg i32 %3 to i64
-  %5 = mul nsw i64 %4, %1
+  %5 = mul nsw i64 %1, %4
   %6 = add nsw i64 %5, %0
   ret i64 %6
 }
@@ -52,8 +54,8 @@ define i64 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 14
   %4 = zext nneg i32 %3 to i64
-  %5 = mul nsw i64 %4, %1
-  %6 = add i64 %5, %0
+  %5 = mul nsw i64 %1, %4
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -64,7 +66,7 @@ define i64 @func0000000000000010(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 7
   %4 = zext nneg i32 %3 to i64
-  %5 = mul i64 %4, %1
+  %5 = mul i64 %1, %4
   %6 = add i64 %5, %0
   ret i64 %6
 }

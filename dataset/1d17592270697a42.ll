@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 26 occurrences:
 ; cmake/optimized/cover.c.ll
 ; hwloc/optimized/distances.ll
 ; hwloc/optimized/hwloc-annotate.ll
@@ -16,6 +16,7 @@
 ; llvm/optimized/X86ShuffleDecode.cpp.ll
 ; llvm/optimized/X86ShuffleDecodeConstantPool.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_table.ll
 ; minetest/optimized/guiAnimatedImage.cpp.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; oiio/optimized/targainput.cpp.ll
@@ -29,27 +30,19 @@
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   ret i32 %3
 }
 
-; 79 occurrences:
+; 67 occurrences:
 ; gromacs/optimized/calculator.cpp.ll
-; gromacs/optimized/dgebd2.cpp.ll
 ; gromacs/optimized/dgebrd.cpp.ll
-; gromacs/optimized/dgelqf.cpp.ll
-; gromacs/optimized/dgeqr2.cpp.ll
-; gromacs/optimized/dgetrf.cpp.ll
 ; gromacs/optimized/dlabrd.cpp.ll
 ; gromacs/optimized/dlasd2.cpp.ll
 ; gromacs/optimized/dorglq.cpp.ll
 ; gromacs/optimized/dsytrd.cpp.ll
 ; gromacs/optimized/pme_error.cpp.ll
-; gromacs/optimized/sgebd2.cpp.ll
 ; gromacs/optimized/sgebrd.cpp.ll
-; gromacs/optimized/sgelqf.cpp.ll
-; gromacs/optimized/sgeqr2.cpp.ll
-; gromacs/optimized/sgetrf.cpp.ll
 ; gromacs/optimized/slabrd.cpp.ll
 ; gromacs/optimized/slasd2.cpp.ll
 ; gromacs/optimized/sorglq.cpp.ll
@@ -66,12 +59,10 @@ entry:
 ; openblas/optimized/dgelqf.c.ll
 ; openblas/optimized/dgelsx.c.ll
 ; openblas/optimized/dgelsy.c.ll
-; openblas/optimized/dgetrf2.c.ll
 ; openblas/optimized/dhgeqz.c.ll
 ; openblas/optimized/dlabrd.c.ll
 ; openblas/optimized/dlaein.c.ll
 ; openblas/optimized/dlahqr.c.ll
-; openblas/optimized/dlaorhr_col_getrfnp.c.ll
 ; openblas/optimized/dlaorhr_col_getrfnp2.c.ll
 ; openblas/optimized/dlaqr2.c.ll
 ; openblas/optimized/dlaqr3.c.ll
@@ -82,9 +73,7 @@ entry:
 ; openblas/optimized/dlasyf_rk.c.ll
 ; openblas/optimized/dlasyf_rook.c.ll
 ; openblas/optimized/dorgtsqr_row.c.ll
-; openblas/optimized/dsygst.c.ll
 ; openblas/optimized/dsytf2_rk.c.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
 ; openblas/optimized/dsytrf_aa_2stage.c.ll
 ; openblas/optimized/dsytri_rook.c.ll
 ; openblas/optimized/dsytrs.c.ll
@@ -117,16 +106,15 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   ret i32 %3
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; abc/optimized/cecClass.c.ll
 ; minetest/optimized/guiTable.cpp.ll
 ; openblas/optimized/dlagge.c.ll
 ; openblas/optimized/dlagsy.c.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
 ; opencv/optimized/datastructs.cpp.ll
 ; openexr/optimized/chunk.c.ll
 ; openusd/optimized/openexr-c.c.ll
@@ -134,11 +122,11 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   ret i32 %3
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; bullet3/optimized/btSequentialImpulseConstraintSolverMt.ll
 ; lightgbm/optimized/bin.cpp.ll
 ; lightgbm/optimized/gradient_discretizer.cpp.ll
@@ -146,7 +134,6 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; ncnn/optimized/convolution_x86_avx2.cpp.ll
 ; ncnn/optimized/convolution_x86_avx512.cpp.ll
-; openblas/optimized/dgetsqrhrt.c.ll
 ; opencv/optimized/convolution_layer.cpp.ll
 ; openspiel/optimized/tarok.cc.ll
 ; stb/optimized/stb_herringbone_wang_tile.c.ll
@@ -165,7 +152,7 @@ entry:
 define i32 @func000000000000000e(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
-  %3 = mul nuw i32 %2, %0
+  %3 = mul nuw i32 %0, %2
   ret i32 %3
 }
 
@@ -180,7 +167,7 @@ entry:
 define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   ret i32 %3
 }
 
@@ -191,7 +178,7 @@ entry:
 define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
-  %3 = mul nuw i32 %2, %0
+  %3 = mul nuw i32 %0, %2
   ret i32 %3
 }
 

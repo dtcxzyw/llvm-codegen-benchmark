@@ -3,7 +3,7 @@
 ; freetype/optimized/pcf.c.ll
 ; minetest/optimized/servermap.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i16 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = sext i16 %0 to i32
@@ -18,7 +18,7 @@ entry:
 ; minetest/optimized/clouds.cpp.ll
 ; zstd/optimized/fse_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i16 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i16 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = sext i16 %0 to i32
@@ -29,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/clouds.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i16 %0, i32 %1) #0 {
+define i1 @func000000000000002b(i16 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = sext i16 %0 to i32
@@ -40,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/clouds.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000027(i16 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = sext i16 %0 to i32
@@ -53,7 +53,7 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i16 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = sext i16 %0 to i32

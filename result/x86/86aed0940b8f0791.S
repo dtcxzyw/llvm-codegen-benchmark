@@ -13,6 +13,16 @@ func000000000000002f:                   # @func000000000000002f
 	leaq	(%rdi,%rdi,4), %rax
 	leaq	(%rsi,%rax,2), %rax
 	retq
+func0000000000000018:                   # @func0000000000000018
+	addl	$-48, %esi
+	leaq	(%rdi,%rdi,4), %rax
+	leaq	(%rsi,%rax,2), %rax
+	retq
+func0000000000000010:                   # @func0000000000000010
+	addl	$-48, %esi
+	leaq	(%rdi,%rdi,4), %rax
+	leaq	(%rsi,%rax,2), %rax
+	retq
 func0000000000000030:                   # @func0000000000000030
 	addl	$-48, %esi
 	leaq	(%rdi,%rdi,4), %rax

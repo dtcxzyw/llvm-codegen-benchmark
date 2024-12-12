@@ -1,7 +1,8 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; git/optimized/bloom.ll
 ; libquic/optimized/superfasthash.c.ll
+; lvgl/optimized/lv_lru.ll
 ; postgres/optimized/pg_lzcompress.ll
 ; postgres/optimized/pg_lzcompress_shlib.ll
 ; postgres/optimized/pg_lzcompress_srv.ll

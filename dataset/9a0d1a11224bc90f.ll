@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 23 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/covBuild.c.ll
 ; abc/optimized/covMinSop.c.ll
@@ -19,9 +19,6 @@
 ; linux/optimized/sch_api.ll
 ; linux/optimized/xfrm_policy.ll
 ; linux/optimized/xfrm_state.ll
-; openssl/optimized/libcrypto-lib-fcrypt_b.ll
-; openssl/optimized/libcrypto-shlib-fcrypt_b.ll
-; openssl/optimized/liblegacy-lib-fcrypt_b.ll
 ; postgres/optimized/tidbitmap.ll
 ; quantlib/optimized/sobolrsg.ll
 ; recastnavigation/optimized/DetourNode.cpp.ll

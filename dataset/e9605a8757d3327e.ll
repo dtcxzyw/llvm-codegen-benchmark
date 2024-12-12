@@ -2,12 +2,12 @@
 ; 1 occurrences:
 ; ruby/optimized/compile.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000001d8(ptr %0, i32 %1) #0 {
+define ptr @func00000000000001dc(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw i8, ptr %0, i64 9
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 9
   %6 = getelementptr i8, ptr %5, i64 %4
   ret ptr %6
 }
@@ -15,25 +15,37 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/upack.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001e(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -2
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw i8, ptr %0, i64 4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 4
   %6 = getelementptr nusw i8, ptr %5, i64 %4
   ret ptr %6
 }
 
-; 9 occurrences:
+; 2 occurrences:
+; nuklear/optimized/unity.c.ll
+; opencv/optimized/imgwarp.cpp.ll
+; Function Attrs: nounwind
+define ptr @func00000000000001de(ptr %0, i32 %1) #0 {
+entry:
+  %2 = add nuw nsw i32 %1, 1
+  %3 = zext nneg i32 %2 to i64
+  %4 = sub nsw i64 0, %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 1
+  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 7 occurrences:
 ; luajit/optimized/lj_dispatch.ll
 ; luajit/optimized/lj_dispatch_dyn.ll
 ; luajit/optimized/lj_err.ll
 ; luajit/optimized/lj_err_dyn.ll
 ; luajit/optimized/lj_ffrecord.ll
 ; luajit/optimized/lj_ffrecord_dyn.ll
-; nuklear/optimized/unity.c.ll
-; opencv/optimized/imgwarp.cpp.ll
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
 define ptr @func00000000000001da(ptr %0, i32 %1) #0 {
@@ -41,7 +53,7 @@ entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw i8, ptr %0, i64 1
+  %5 = getelementptr nusw i8, ptr %0, i64 -1
   %6 = getelementptr nusw i8, ptr %5, i64 %4
   ret ptr %6
 }
@@ -74,27 +86,14 @@ entry:
 }
 
 ; 1 occurrences:
-; arrow/optimized/decimal.cc.ll
-; Function Attrs: nounwind
-define ptr @func00000000000000da(ptr %0, i32 %1) #0 {
-entry:
-  %2 = add nsw i32 %1, -8
-  %3 = zext nneg i32 %2 to i64
-  %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw i8, ptr %0, i64 8
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
-  ret ptr %6
-}
-
-; 1 occurrences:
 ; cmake/optimized/archive_write_set_format_ar.c.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000d8(ptr %0, i32 %1) #0 {
+define ptr @func00000000000000dc(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw i8, ptr %0, i64 28
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 28
   %6 = getelementptr i8, ptr %5, i64 %4
   ret ptr %6
 }

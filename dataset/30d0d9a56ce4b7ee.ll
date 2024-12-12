@@ -1,5 +1,5 @@
 
-; 77 occurrences:
+; 74 occurrences:
 ; arrow/optimized/vector_selection_internal.cc.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; casadi/optimized/cvodes.c.ll
@@ -17,8 +17,6 @@
 ; libwebp/optimized/buffer_dec.c.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/InlineCost.cpp.ll
-; meshlab/optimized/filter_img_patch_param.cpp.ll
-; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/outline2_rasterizer.cpp.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
@@ -35,7 +33,6 @@
 ; openblas/optimized/dlalsa.c.ll
 ; openblas/optimized/dlasda.c.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
-; opencv/optimized/convolution.cpp.ll
 ; opencv/optimized/grfmt_exr.cpp.ll
 ; opencv/optimized/matrix_iterator.cpp.ll
 ; opencv/optimized/reduce_layer.cpp.ll
@@ -81,20 +78,19 @@
 define i64 @func0000000000000005(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul nsw i64 %3, %0
+  %4 = mul nsw i64 %0, %3
   %5 = sext i32 %1 to i64
   %6 = add nsw i64 %4, %5
   ret i64 %6
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; clamav/optimized/str.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; darktable/optimized/introspection_toneequal.c.ll
-; faiss/optimized/LocalSearchQuantizer.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; oiio/optimized/imagebuf.cpp.ll
@@ -107,7 +103,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   %5 = sext i32 %1 to i64
   %6 = add i64 %4, %5
   ret i64 %6
@@ -125,7 +121,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul nsw i64 %3, %0
+  %4 = mul nsw i64 %0, %3
   %5 = sext i32 %1 to i64
   %6 = add i64 %4, %5
   ret i64 %6
@@ -138,7 +134,7 @@ entry:
 define i64 @func000000000000000d(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %0
+  %4 = mul nuw nsw i64 %0, %3
   %5 = sext i32 %1 to i64
   %6 = add nsw i64 %4, %5
   ret i64 %6
@@ -150,7 +146,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   %5 = sext i32 %1 to i64
   %6 = add nsw i64 %4, %5
   ret i64 %6

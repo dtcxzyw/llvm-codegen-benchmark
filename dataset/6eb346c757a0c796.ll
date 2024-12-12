@@ -1,10 +1,11 @@
 
-; 19 occurrences:
+; 20 occurrences:
 ; linux/optimized/intel_bw.ll
 ; linux/optimized/intel_hdmi.ll
 ; linux/optimized/tree.ll
 ; linux/optimized/xhci.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_indev.ll
 ; minetest/optimized/CImage.cpp.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
@@ -44,7 +45,7 @@ entry:
   ret i32 %5
 }
 
-; 22 occurrences:
+; 21 occurrences:
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
@@ -60,7 +61,6 @@ entry:
 ; meshlab/optimized/meshselect.cpp.ll
 ; meshlab/optimized/pickpointsDialog.cpp.ll
 ; nori/optimized/nanovg.c.ll
-; openblas/optimized/dgeqr.c.ll
 ; opencv/optimized/emdL1.cpp.ll
 ; openjdk/optimized/TransformHelper.ll
 ; openjdk/optimized/mlib_c_ImageCopy.ll
@@ -71,7 +71,7 @@ entry:
 define i32 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   %5 = add nsw i32 %4, -8
   ret i32 %5
 }

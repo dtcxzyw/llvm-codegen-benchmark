@@ -101,9 +101,22 @@
 define ptr @func0000000000000016(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = inttoptr i64 %4 to ptr
   %6 = getelementptr nusw i32, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 2 occurrences:
+; openjdk/optimized/xMark.ll
+; openjdk/optimized/zMark.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000017(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = add nsw i64 %1, %3
+  %5 = inttoptr i64 %4 to ptr
+  %6 = getelementptr nusw nuw ptr, ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -122,12 +135,12 @@ entry:
 ; redis/optimized/tcache.ll
 ; redis/optimized/tcache.sym.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(i64 %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000003(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = inttoptr i64 %4 to ptr
-  %6 = getelementptr nusw i8, ptr %5, i64 %0
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -137,7 +150,7 @@ entry:
 define ptr @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = inttoptr i64 %4 to ptr
   %6 = getelementptr i16, ptr %5, i64 %0
   ret ptr %6

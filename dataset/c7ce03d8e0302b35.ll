@@ -13,7 +13,8 @@ entry:
   ret ptr %5
 }
 
-; 18 occurrences:
+; 20 occurrences:
+; boost/optimized/basic_iarchive.ll
 ; linux/optimized/vgacon.ll
 ; llvm/optimized/COFFImportFile.cpp.ll
 ; llvm/optimized/ItaniumManglingCanonicalizer.cpp.ll
@@ -32,6 +33,7 @@ entry:
 ; openmpi/optimized/common_ompio_file_write.ll
 ; openmpi/optimized/osc_rdma_comm.ll
 ; wasmtime-rs/optimized/joyny9bexuq72mb.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -50,7 +52,7 @@ entry:
 define ptr @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = inttoptr i64 %4 to ptr
   ret ptr %5
 }

@@ -1,4 +1,4 @@
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000014a:                   # @func000000000000014a
 	subq	%rsi, %rdx
 	cmpq	$17, %rdx
 	setge	%cl
@@ -6,7 +6,7 @@ func00000000000000aa:                   # @func00000000000000aa
 	setge	%al
 	andb	%cl, %al
 	retq
-func00000000000000ac:                   # @func00000000000000ac
+func000000000000014c:                   # @func000000000000014c
 	subq	%rsi, %rdx
 	testq	%rdx, %rdx
 	setg	%cl
@@ -14,7 +14,7 @@ func00000000000000ac:                   # @func00000000000000ac
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000008c:                   # @func000000000000008c
+func000000000000010c:                   # @func000000000000010c
 	subq	%rsi, %rdx
 	cmpq	$17, %rdx
 	setae	%cl
@@ -22,14 +22,22 @@ func000000000000008c:                   # @func000000000000008c
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	subq	%rsi, %rdx
 	xorq	$1, %rdx
 	xorq	$1, %rdi
 	orq	%rdx, %rdi
 	sete	%al
 	retq
-func000000000000006a:                   # @func000000000000006a
+func0000000000000028:                   # @func0000000000000028
+	subq	%rsi, %rdx
+	cmpq	$32, %rdx
+	sete	%cl
+	cmpq	$33, %rdi
+	setae	%al
+	andb	%cl, %al
+	retq
+func00000000000000ca:                   # @func00000000000000ca
 	subq	%rsi, %rdx
 	cmpq	$1025, %rdx                     # imm = 0x401
 	setl	%cl
@@ -37,7 +45,7 @@ func000000000000006a:                   # @func000000000000006a
 	setge	%al
 	andb	%cl, %al
 	retq
-func00000000000000a6:                   # @func00000000000000a6
+func0000000000000146:                   # @func0000000000000146
 	subq	%rsi, %rdx
 	cmpq	$1025, %rdx                     # imm = 0x401
 	setl	%cl
@@ -45,7 +53,7 @@ func00000000000000a6:                   # @func00000000000000a6
 	setge	%al
 	andb	%cl, %al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	subq	%rsi, %rdx
 	cmpq	$8, %rdx
 	sete	%cl

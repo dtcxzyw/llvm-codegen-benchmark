@@ -40,12 +40,13 @@ entry:
   ret i32 %4
 }
 
-; 24 occurrences:
+; 25 occurrences:
 ; abseil-cpp/optimized/extension_test.cc.ll
 ; abseil-cpp/optimized/hashtablez_sampler_test.cc.ll
 ; abseil-cpp/optimized/mutex_test.cc.ll
 ; abseil-cpp/optimized/nonsecure_base_test.cc.ll
 ; abseil-cpp/optimized/sample_recorder_test.cc.ll
+; boost/optimized/benchmark_fstream.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
@@ -74,8 +75,9 @@ entry:
   ret i32 %4
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
+; boost/optimized/area.ll
 ; flac/optimized/metadata.cpp.ll
 ; git/optimized/dir.ll
 ; harfbuzz/optimized/hb-subset.cc.ll

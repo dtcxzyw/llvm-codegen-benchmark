@@ -6,8 +6,27 @@ func0000000000000008:                   # @func0000000000000008
 	xorl	%ecx, %ecx
 	testb	$1, %sil
 	cmoveq	%rax, %rcx
-	cmpq	%rdi, %rcx
+	cmpq	%rcx, %rdi
+	seta	%al
+	retq
+func0000000000000004:                   # @func0000000000000004
+	andl	$1, %edx
+	leaq	14(,%rdx,8), %rax
+	testb	$1, %sil
+	movl	$18, %ecx
+	cmoveq	%rax, %rcx
+	cmpq	%rcx, %rdi
 	setb	%al
+	retq
+func0000000000000006:                   # @func0000000000000006
+	andl	$1, %edx
+	movl	$4, %eax
+	subq	%rdx, %rax
+	testb	$1, %sil
+	movl	$2, %ecx
+	cmoveq	%rax, %rcx
+	cmpq	%rcx, %rdi
+	setl	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
 	andl	$1, %edx
@@ -15,7 +34,7 @@ func0000000000000001:                   # @func0000000000000001
 	testb	$1, %sil
 	movl	$20, %eax
 	cmoveq	%rdx, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
 func000000000000000b:                   # @func000000000000000b
@@ -24,6 +43,6 @@ func000000000000000b:                   # @func000000000000000b
 	testb	$1, %sil
 	movl	$1, %eax
 	cmoveq	%rdx, %rax
-	cmpq	%rdi, %rax
-	setle	%al
+	cmpq	%rax, %rdi
+	setge	%al
 	retq

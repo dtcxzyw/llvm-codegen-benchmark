@@ -65,27 +65,22 @@ func000000000000006d:                   # @func000000000000006d
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-.LCPI6_0:
-	.long	0x7f7fffff                      # float 3.40282347E+38
-.LCPI6_1:
-	.long	0xff7fffff                      # float -3.40282347E+38
-func00000000000000ca:                   # @func00000000000000ca
+func0000000000000078:                   # @func0000000000000078
 	vpsllw	$7, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
-	vcmpleps	.LCPI6_0(%rip){1to16}, %zmm1, %k1
-	vcmpgeps	.LCPI6_1(%rip){1to16}, %zmm2, %k1 {%k1}
+	vxorps	%xmm4, %xmm4, %xmm4
+	vcmpeqps	%zmm4, %zmm1, %k1
+	vcmpneqps	%zmm4, %zmm2, %k1 {%k1}
 	vpcmpgtb	%xmm0, %xmm3, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-.LCPI7_0:
-	.long	0x3f800000                      # float 1
-func0000000000000024:                   # @func0000000000000024
+func0000000000000074:                   # @func0000000000000074
 	vpsllw	$7, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vxorps	%xmm4, %xmm4, %xmm4
 	vcmpltps	%zmm1, %zmm4, %k1
-	vcmpltps	.LCPI7_0(%rip){1to16}, %zmm2, %k1 {%k1}
+	vcmpneqps	%zmm4, %zmm2, %k1 {%k1}
 	vpcmpgtb	%xmm0, %xmm3, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
@@ -115,24 +110,22 @@ func000000000000002c:                   # @func000000000000002c
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+func0000000000000024:                   # @func0000000000000024
+	vpsllw	$7, %xmm0, %xmm0
+	vpxor	%xmm3, %xmm3, %xmm3
+	vxorps	%xmm4, %xmm4, %xmm4
+	vcmpltps	%zmm1, %zmm4, %k1
+	vcmpltps	%zmm4, %zmm2, %k1 {%k1}
+	vpcmpgtb	%xmm0, %xmm3, %k0 {%k1}
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
 func0000000000000087:                   # @func0000000000000087
 	vpsllw	$7, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vxorps	%xmm4, %xmm4, %xmm4
 	vcmpneqps	%zmm4, %zmm1, %k1
 	vcmpeqps	%zmm4, %zmm2, %k1 {%k1}
-	vpcmpgtb	%xmm0, %xmm3, %k0 {%k1}
-	vpmovm2b	%k0, %xmm0
-	vzeroupper
-	retq
-.LCPI11_0:
-	.long	0x4e6e6b28                      # float 1.0E+9
-func000000000000002e:                   # @func000000000000002e
-	vpsllw	$7, %xmm0, %xmm0
-	vpxor	%xmm3, %xmm3, %xmm3
-	vxorps	%xmm4, %xmm4, %xmm4
-	vcmpordps	%zmm4, %zmm1, %k1
-	vcmpltps	.LCPI11_0(%rip){1to16}, %zmm2, %k1 {%k1}
 	vpcmpgtb	%xmm0, %xmm3, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

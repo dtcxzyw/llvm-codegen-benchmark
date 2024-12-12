@@ -1,10 +1,6 @@
 
-; 104 occurrences:
-; ceres/optimized/covariance_impl.cc.ll
-; ceres/optimized/dense_qr.cc.ll
+; 94 occurrences:
 ; eastl/optimized/BenchmarkSort.cpp.ll
-; g2o/optimized/optimizable_graph.cpp.ll
-; g2o/optimized/vertex_ellipse.cpp.ll
 ; lightgbm/optimized/feature_histogram.cpp.ll
 ; lightgbm/optimized/objective_function.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
@@ -34,12 +30,6 @@
 ; llvm/optimized/SemaType.cpp.ll
 ; llvm/optimized/SimpleLoopUnswitch.cpp.ll
 ; llvm/optimized/VectorCombine.cpp.ll
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/edit_referencing.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
-; meshlab/optimized/matching.cpp.ll
-; meshlab/optimized/meshfilter.cpp.ll
-; meshlab/optimized/quadric_simp.cpp.ll
 ; mold/optimized/arch-alpha.cc.ll
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
@@ -139,15 +129,36 @@ entry:
   ret ptr %5
 }
 
+; 10 occurrences:
+; ceres/optimized/covariance_impl.cc.ll
+; ceres/optimized/dense_qr.cc.ll
+; g2o/optimized/optimizable_graph.cpp.ll
+; g2o/optimized/vertex_ellipse.cpp.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/edit_referencing.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/matching.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/quadric_simp.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000027(ptr %0, i64 %1) #0 {
+entry:
+  %2 = add nsw i64 %1, -1
+  %3 = sdiv i64 %2, 4
+  %.idx = shl nsw i64 %3, 5
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %.idx
+  ret ptr %4
+}
+
 ; 1 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
   %3 = sdiv i64 %2, 4
   %.idx = shl nsw i64 %3, 5
-  %4 = getelementptr nusw i8, ptr %0, i64 %.idx
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %.idx
   ret ptr %4
 }
 

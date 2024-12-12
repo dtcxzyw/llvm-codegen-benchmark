@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; wireshark/optimized/packet-netlink.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000a84(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000002904(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw i32 %2, %1
   %4 = sub nuw i32 %1, %2

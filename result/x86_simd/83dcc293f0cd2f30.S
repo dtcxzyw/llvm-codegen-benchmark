@@ -82,7 +82,7 @@ func0000000000000028:                   # @func0000000000000028
 	vpcmpgtb	%xmm3, %xmm2, %k1
 	vpbroadcastd	.LCPI5_0(%rip), %ymm2   # ymm2 = [4,4,4,4,4,4,4,4]
 	vmovdqa32	%ymm1, %ymm2 {%k1}
-	vpaddd	%ymm0, %ymm2, %ymm0
+	vpaddd	%ymm2, %ymm0, %ymm0
 	retq
 .LCPI6_0:
 	.long	4                               # 0x4

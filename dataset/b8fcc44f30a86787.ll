@@ -1,11 +1,12 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; llvm/optimized/MCDwarf.cpp.ll
 ; llvm/optimized/MsgPackWriter.cpp.ll
 ; minetest/optimized/map.cpp.ll
 ; postgres/optimized/tsgistidx.ll
 ; postgres/optimized/tsquery_gist.ll
+; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000002(i1 %0, i16 %1, i64 %2) #0 {
 entry:

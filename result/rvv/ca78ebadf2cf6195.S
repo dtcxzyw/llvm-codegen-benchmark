@@ -33,9 +33,9 @@ func0000000000000000:                   # @func0000000000000000
 	vadd.vx	v12, v12, a0
 	vmacc.vv	v8, v10, v12
 	ret
-func00000000000000fc:                   # @func00000000000000fc
+func0000000000000010:                   # @func0000000000000010
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vv	v12, v12, v12
-	vadd.vi	v12, v12, 2
+	vsll.vi	v12, v12, 3
+	vadd.vi	v12, v12, -1
 	vmacc.vv	v8, v10, v12
 	ret

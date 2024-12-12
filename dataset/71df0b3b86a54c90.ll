@@ -1,64 +1,55 @@
 
-%"struct.rocksdb::BufferInfo.2511959" = type { %"class.rocksdb::AlignedBuffer.2511960", i64, i64, i8, ptr, %"class.std::function.2.2511961", i32, i64 }
-%"class.rocksdb::AlignedBuffer.2511960" = type { i64, %"class.std::unique_ptr.2511962", i64, i64, ptr }
-%"class.std::unique_ptr.2511962" = type { %"struct.std::__uniq_ptr_data.2511963" }
-%"struct.std::__uniq_ptr_data.2511963" = type { %"class.std::__uniq_ptr_impl.2511964" }
-%"class.std::__uniq_ptr_impl.2511964" = type { %"class.std::tuple.2511965" }
-%"class.std::tuple.2511965" = type { %"struct.std::_Tuple_impl.2511966" }
-%"struct.std::_Tuple_impl.2511966" = type { %"struct.std::_Head_base.1.2511967" }
-%"struct.std::_Head_base.1.2511967" = type { ptr }
-%"class.std::function.2.2511961" = type { %"class.std::_Function_base.2511968", ptr }
-%"class.std::_Function_base.2511968" = type { %"union.std::_Any_data.2511969", ptr }
-%"union.std::_Any_data.2511969" = type { %"union.std::_Nocopy_types.2511970" }
-%"union.std::_Nocopy_types.2511970" = type { { i64, i64 } }
-%"struct.folly::threadlocal_detail::ElementWrapper.2576810" = type { ptr, %union.anon.2576811, i8, %"struct.folly::threadlocal_detail::ThreadEntryNode.2576812" }
-%union.anon.2576811 = type { ptr }
-%"struct.folly::threadlocal_detail::ThreadEntryNode.2576812" = type { i32, ptr, ptr, ptr }
-%struct.FlatRange.2594763 = type { ptr, i64, %struct.AddrRange.2594764, i8, i8, i8, i8, i8 }
-%struct.AddrRange.2594764 = type { i128, i128 }
-%"struct.llvm::LiveVariables::VarInfo.2949487" = type { %"class.llvm::SparseBitVector.2949492", %"class.std::vector.2949483" }
-%"class.llvm::SparseBitVector.2949492" = type { %"class.std::__cxx11::list.2949493", %"struct.std::_List_iterator.2949494" }
-%"class.std::__cxx11::list.2949493" = type { %"class.std::__cxx11::_List_base.2949495" }
-%"class.std::__cxx11::_List_base.2949495" = type { %"struct.std::__cxx11::_List_base<llvm::SparseBitVectorElement<>, std::allocator<llvm::SparseBitVectorElement<>>>::_List_impl.2949496" }
-%"struct.std::__cxx11::_List_base<llvm::SparseBitVectorElement<>, std::allocator<llvm::SparseBitVectorElement<>>>::_List_impl.2949496" = type { %"struct.std::__detail::_List_node_header.2949497" }
-%"struct.std::__detail::_List_node_header.2949497" = type { %"struct.std::__detail::_List_node_base.2949498", i64 }
-%"struct.std::__detail::_List_node_base.2949498" = type { ptr, ptr }
-%"struct.std::_List_iterator.2949494" = type { ptr }
-%"class.std::vector.2949483" = type { %"struct.std::_Vector_base.2949499" }
-%"struct.std::_Vector_base.2949499" = type { %"struct.std::_Vector_base<llvm::MachineInstr *, std::allocator<llvm::MachineInstr *>>::_Vector_impl.2949500" }
-%"struct.std::_Vector_base<llvm::MachineInstr *, std::allocator<llvm::MachineInstr *>>::_Vector_impl.2949500" = type { %"struct.std::_Vector_base<llvm::MachineInstr *, std::allocator<llvm::MachineInstr *>>::_Vector_impl_data.2949501" }
-%"struct.std::_Vector_base<llvm::MachineInstr *, std::allocator<llvm::MachineInstr *>>::_Vector_impl_data.2949501" = type { ptr, ptr, ptr }
-%"struct.std::pair.400.2950847" = type { %"class.clang::SourceLocation.2950815", [4 x i8], %"class.clang::PartialDiagnostic.2950848" }
-%"class.clang::SourceLocation.2950815" = type { i32 }
-%"class.clang::PartialDiagnostic.2950848" = type <{ %"class.clang::StreamingDiagnostic.2950825", i32, [4 x i8] }>
-%"class.clang::StreamingDiagnostic.2950825" = type { ptr, ptr }
-%struct.drm_vblank_crtc.3343458 = type { ptr, %struct.wait_queue_head.3343459, %struct.timer_list.3343460, %struct.seqlock_t.3343461, %struct.atomic64_t.3343462, i64, %struct.atomic_t.3343450, i32, i32, i32, i32, i32, i32, %struct.drm_display_mode.3343463, i8, ptr, %struct.list_head.3343464, %struct.wait_queue_head.3343459 }
-%struct.timer_list.3343460 = type { %struct.hlist_node.3343465, i64, ptr, i32 }
-%struct.hlist_node.3343465 = type { ptr, ptr }
-%struct.seqlock_t.3343461 = type { %struct.seqcount_spinlock.3343466, %struct.spinlock.3343467 }
-%struct.seqcount_spinlock.3343466 = type { %struct.seqcount.3343468 }
-%struct.seqcount.3343468 = type { i32 }
-%struct.spinlock.3343467 = type { %union.anon.1.3343469 }
-%union.anon.1.3343469 = type { %struct.raw_spinlock.3343470 }
-%struct.raw_spinlock.3343470 = type { %struct.qspinlock.3343471 }
-%struct.qspinlock.3343471 = type { %union.anon.3343472 }
-%union.anon.3343472 = type { %struct.atomic_t.3343450 }
-%struct.atomic64_t.3343462 = type { i64 }
-%struct.atomic_t.3343450 = type { i32 }
-%struct.drm_display_mode.3343463 = type { i32, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i32, i32, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i8, i8, %struct.list_head.3343464, [32 x i8], i32, i32 }
-%struct.list_head.3343464 = type { ptr, ptr }
-%struct.wait_queue_head.3343459 = type { %struct.spinlock.3343467, %struct.list_head.3343464 }
-%struct.list_lru_node.3366836 = type { %struct.spinlock.3366837, %struct.list_lru_one.3366838, i64, [24 x i8] }
-%struct.spinlock.3366837 = type { %union.anon.3366839 }
-%union.anon.3366839 = type { %struct.raw_spinlock.3366840 }
-%struct.raw_spinlock.3366840 = type { %struct.qspinlock.3366841 }
-%struct.qspinlock.3366841 = type { %union.anon.0.3366842 }
-%union.anon.0.3366842 = type { %struct.atomic_t.3366843 }
-%struct.atomic_t.3366843 = type { i32 }
-%struct.list_lru_one.3366838 = type { %struct.list_head.3366844, i64 }
-%struct.list_head.3366844 = type { ptr, ptr }
+%"struct.rocksdb::BufferInfo.2627093" = type { %"class.rocksdb::AlignedBuffer.2627094", i64, i64, i8, ptr, %"class.std::function.2.2627095", i32, i64 }
+%"class.rocksdb::AlignedBuffer.2627094" = type { i64, %"class.std::unique_ptr.2627096", i64, i64, ptr }
+%"class.std::unique_ptr.2627096" = type { %"struct.std::__uniq_ptr_data.2627097" }
+%"struct.std::__uniq_ptr_data.2627097" = type { %"class.std::__uniq_ptr_impl.2627098" }
+%"class.std::__uniq_ptr_impl.2627098" = type { %"class.std::tuple.2627099" }
+%"class.std::tuple.2627099" = type { %"struct.std::_Tuple_impl.2627100" }
+%"struct.std::_Tuple_impl.2627100" = type { %"struct.std::_Head_base.1.2627101" }
+%"struct.std::_Head_base.1.2627101" = type { ptr }
+%"class.std::function.2.2627095" = type { %"class.std::_Function_base.2627102", ptr }
+%"class.std::_Function_base.2627102" = type { %"union.std::_Any_data.2627103", ptr }
+%"union.std::_Any_data.2627103" = type { %"union.std::_Nocopy_types.2627104" }
+%"union.std::_Nocopy_types.2627104" = type { { i64, i64 } }
+%"struct.folly::threadlocal_detail::ElementWrapper.2690986" = type { ptr, %union.anon.2690987, i8, %"struct.folly::threadlocal_detail::ThreadEntryNode.2690988" }
+%union.anon.2690987 = type { ptr }
+%"struct.folly::threadlocal_detail::ThreadEntryNode.2690988" = type { i32, ptr, ptr, ptr }
+%struct.FlatRange.2708358 = type { ptr, i64, %struct.AddrRange.2708359, i8, i8, i8, i8, i8 }
+%struct.AddrRange.2708359 = type { i128, i128 }
+%struct.drm_vblank_crtc.3532377 = type { ptr, %struct.wait_queue_head.3532378, %struct.timer_list.3532379, %struct.seqlock_t.3532380, %struct.atomic64_t.3532381, i64, %struct.atomic_t.3532369, i32, i32, i32, i32, i32, i32, %struct.drm_display_mode.3532382, i8, ptr, %struct.list_head.3532383, %struct.wait_queue_head.3532378 }
+%struct.timer_list.3532379 = type { %struct.hlist_node.3532384, i64, ptr, i32 }
+%struct.hlist_node.3532384 = type { ptr, ptr }
+%struct.seqlock_t.3532380 = type { %struct.seqcount_spinlock.3532385, %struct.spinlock.3532386 }
+%struct.seqcount_spinlock.3532385 = type { %struct.seqcount.3532387 }
+%struct.seqcount.3532387 = type { i32 }
+%struct.spinlock.3532386 = type { %union.anon.1.3532388 }
+%union.anon.1.3532388 = type { %struct.raw_spinlock.3532389 }
+%struct.raw_spinlock.3532389 = type { %struct.qspinlock.3532390 }
+%struct.qspinlock.3532390 = type { %union.anon.3532391 }
+%union.anon.3532391 = type { %struct.atomic_t.3532369 }
+%struct.atomic64_t.3532381 = type { i64 }
+%struct.atomic_t.3532369 = type { i32 }
+%struct.drm_display_mode.3532382 = type { i32, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i32, i32, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i16, i8, i8, %struct.list_head.3532383, [32 x i8], i32, i32 }
+%struct.list_head.3532383 = type { ptr, ptr }
+%struct.wait_queue_head.3532378 = type { %struct.spinlock.3532386, %struct.list_head.3532383 }
+%struct.send_queue.3557093 = type { ptr, [19 x %struct.scatterlist.3557082], [16 x i8], %struct.virtnet_sq_stats.3557094, %struct.virtnet_interrupt_coalesce.3557079, %struct.napi_struct.3557055, i8 }
+%struct.scatterlist.3557082 = type { i64, i32, i32, i64, i32, i32 }
+%struct.virtnet_sq_stats.3557094 = type { %struct.u64_stats_sync.3557084, %struct.u64_stats_t.3557085, %struct.u64_stats_t.3557085, %struct.u64_stats_t.3557085, %struct.u64_stats_t.3557085, %struct.u64_stats_t.3557085, %struct.u64_stats_t.3557085 }
+%struct.u64_stats_sync.3557084 = type {}
+%struct.u64_stats_t.3557085 = type { %struct.local64_t.3557086 }
+%struct.local64_t.3557086 = type { %struct.local_t.3557087 }
+%struct.local_t.3557087 = type { %struct.atomic64_t.3557088 }
+%struct.atomic64_t.3557088 = type { i64 }
+%struct.virtnet_interrupt_coalesce.3557079 = type { i32, i32 }
+%struct.napi_struct.3557055 = type { %struct.list_head.3557051, i64, i32, i32, i64, ptr, i32, i32, ptr, [8 x %struct.gro_list.3557059], ptr, %struct.list_head.3557051, i32, i32, %struct.hrtimer.3557060, ptr, %struct.list_head.3557051, %struct.hlist_node.3557061, i32 }
+%struct.gro_list.3557059 = type { %struct.list_head.3557051, i32 }
+%struct.hrtimer.3557060 = type { %struct.timerqueue_node.3557062, i64, ptr, ptr, i8, i8, i8, i8 }
+%struct.timerqueue_node.3557062 = type { %struct.rb_node.3557063, i64 }
+%struct.rb_node.3557063 = type { i64, ptr, ptr }
+%struct.list_head.3557051 = type { ptr, ptr }
+%struct.hlist_node.3557061 = type { ptr, ptr }
 
-; 104 occurrences:
+; 182 occurrences:
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; assimp/optimized/SMDLoader.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
@@ -85,19 +76,96 @@
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
 ; llama.cpp/optimized/llama.cpp.ll
+; llvm/optimized/AArch64PBQPRegAlloc.cpp.ll
+; llvm/optimized/AnalysisBasedWarnings.cpp.ll
 ; llvm/optimized/AsmPrinter.cpp.ll
-; llvm/optimized/CGDecl.cpp.ll
+; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/CGOpenMPRuntime.cpp.ll
+; llvm/optimized/CheckExprLifetime.cpp.ll
+; llvm/optimized/ClangAttrEmitter.cpp.ll
+; llvm/optimized/ClangOpenCLBuiltinEmitter.cpp.ll
+; llvm/optimized/CodeGenRegisters.cpp.ll
+; llvm/optimized/CodeGenSchedule.cpp.ll
+; llvm/optimized/ComparisonCategories.cpp.ll
+; llvm/optimized/DFAJumpThreading.cpp.ll
 ; llvm/optimized/DbgEntityHistoryCalculator.cpp.ll
+; llvm/optimized/DeclSpec.cpp.ll
 ; llvm/optimized/DwarfCompileUnit.cpp.ll
+; llvm/optimized/DwarfDebug.cpp.ll
 ; llvm/optimized/ELFObjectWriter.cpp.ll
+; llvm/optimized/Format.cpp.ll
 ; llvm/optimized/FunctionSpecialization.cpp.ll
+; llvm/optimized/InitHeaderSearch.cpp.ll
+; llvm/optimized/JumpDiagnostics.cpp.ll
+; llvm/optimized/LoadStoreVectorizer.cpp.ll
+; llvm/optimized/LoopStrengthReduce.cpp.ll
+; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; llvm/optimized/MIRPrinter.cpp.ll
+; llvm/optimized/MSFBuilder.cpp.ll
 ; llvm/optimized/OffloadBinary.cpp.ll
+; llvm/optimized/ParsedAttr.cpp.ll
+; llvm/optimized/RegAllocPBQP.cpp.ll
+; llvm/optimized/RewriteStatepointsForGC.cpp.ll
 ; llvm/optimized/SSAUpdaterBulk.cpp.ll
+; llvm/optimized/Sema.cpp.ll
+; llvm/optimized/SemaAMDGPU.cpp.ll
+; llvm/optimized/SemaAPINotes.cpp.ll
+; llvm/optimized/SemaARM.cpp.ll
+; llvm/optimized/SemaAVR.cpp.ll
+; llvm/optimized/SemaAccess.cpp.ll
+; llvm/optimized/SemaAttr.cpp.ll
+; llvm/optimized/SemaAvailability.cpp.ll
+; llvm/optimized/SemaBPF.cpp.ll
+; llvm/optimized/SemaBase.cpp.ll
+; llvm/optimized/SemaBoundsSafety.cpp.ll
+; llvm/optimized/SemaCUDA.cpp.ll
+; llvm/optimized/SemaCXXScopeSpec.cpp.ll
+; llvm/optimized/SemaCast.cpp.ll
+; llvm/optimized/SemaChecking.cpp.ll
+; llvm/optimized/SemaConcept.cpp.ll
+; llvm/optimized/SemaCoroutine.cpp.ll
+; llvm/optimized/SemaDecl.cpp.ll
+; llvm/optimized/SemaDeclAttr.cpp.ll
+; llvm/optimized/SemaDeclCXX.cpp.ll
+; llvm/optimized/SemaDeclObjC.cpp.ll
+; llvm/optimized/SemaExceptionSpec.cpp.ll
+; llvm/optimized/SemaExprCXX.cpp.ll
+; llvm/optimized/SemaExprMember.cpp.ll
+; llvm/optimized/SemaExprObjC.cpp.ll
+; llvm/optimized/SemaHLSL.cpp.ll
+; llvm/optimized/SemaInit.cpp.ll
+; llvm/optimized/SemaLambda.cpp.ll
+; llvm/optimized/SemaLookup.cpp.ll
+; llvm/optimized/SemaM68k.cpp.ll
+; llvm/optimized/SemaMIPS.cpp.ll
+; llvm/optimized/SemaMSP430.cpp.ll
+; llvm/optimized/SemaModule.cpp.ll
+; llvm/optimized/SemaObjC.cpp.ll
+; llvm/optimized/SemaObjCProperty.cpp.ll
+; llvm/optimized/SemaOpenACC.cpp.ll
+; llvm/optimized/SemaOpenCL.cpp.ll
+; llvm/optimized/SemaOverload.cpp.ll
+; llvm/optimized/SemaPPC.cpp.ll
+; llvm/optimized/SemaPseudoObject.cpp.ll
+; llvm/optimized/SemaRISCV.cpp.ll
+; llvm/optimized/SemaSYCL.cpp.ll
+; llvm/optimized/SemaStmt.cpp.ll
+; llvm/optimized/SemaStmtAsm.cpp.ll
+; llvm/optimized/SemaStmtAttr.cpp.ll
+; llvm/optimized/SemaSwift.cpp.ll
+; llvm/optimized/SemaTemplate.cpp.ll
+; llvm/optimized/SemaTemplateDeduction.cpp.ll
+; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
+; llvm/optimized/SemaTemplateInstantiate.cpp.ll
+; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
+; llvm/optimized/SemaTemplateVariadic.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
+; llvm/optimized/SemaWasm.cpp.ll
+; llvm/optimized/SemaX86.cpp.ll
+; llvm/optimized/SourceManager.cpp.ll
 ; llvm/optimized/VectorUtils.cpp.ll
 ; llvm/optimized/WasmObjectFile.cpp.ll
+; llvm/optimized/WinEHPrepare.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; minetest/optimized/mod_configuration.cpp.ll
@@ -162,12 +230,13 @@
 ; z3/optimized/theory_lra.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; z3/optimized/theory_utvpi.cpp.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
 ; zstd/optimized/zstdmt_compress.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = getelementptr %"struct.rocksdb::BufferInfo.2511959", ptr %0, i64 %2, i32 5, i32 0, i32 1
+  %3 = getelementptr nuw %"struct.rocksdb::BufferInfo.2627093", ptr %0, i64 %2, i32 5, i32 0, i32 1
   ret ptr %3
 }
 
@@ -188,9 +257,9 @@ entry:
 ; gromacs/optimized/make_ndx.cpp.ll
 ; gromacs/optimized/readpull.cpp.ll
 ; llvm/optimized/CalcSpillWeights.cpp.ll
+; llvm/optimized/LiveVariables.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
-; minetest/optimized/guiTable.cpp.ll
 ; oiio/optimized/imagecache.cpp.ll
 ; opencv/optimized/subdivision2d.cpp.ll
 ; php/optimized/html.ll
@@ -204,10 +273,10 @@ entry:
 ; yosys/optimized/memory_bram.ll
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = getelementptr %"struct.folly::threadlocal_detail::ElementWrapper.2576810", ptr %0, i64 %2, i32 3, i32 2
+  %3 = getelementptr nuw %"struct.folly::threadlocal_detail::ElementWrapper.2690986", ptr %0, i64 %2, i32 3, i32 2
   ret ptr %3
 }
 
@@ -217,108 +286,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = getelementptr %struct.FlatRange.2594763, ptr %0, i64 %2, i32 2, i32 1
-  ret ptr %3
-}
-
-; 2 occurrences:
-; llvm/optimized/CalcSpillWeights.cpp.ll
-; llvm/optimized/LiveVariables.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001b(ptr %0, i32 %1) #0 {
-entry:
-  %2 = zext nneg i32 %1 to i64
-  %3 = getelementptr %"struct.llvm::LiveVariables::VarInfo.2949487", ptr %0, i64 %2, i32 1, i32 0, i32 0, i32 0, i32 1
-  ret ptr %3
-}
-
-; 81 occurrences:
-; llvm/optimized/AArch64PBQPRegAlloc.cpp.ll
-; llvm/optimized/AnalysisBasedWarnings.cpp.ll
-; llvm/optimized/AttributorAttributes.cpp.ll
-; llvm/optimized/CGOpenMPRuntime.cpp.ll
-; llvm/optimized/CheckExprLifetime.cpp.ll
-; llvm/optimized/ClangAttrEmitter.cpp.ll
-; llvm/optimized/ClangOpenCLBuiltinEmitter.cpp.ll
-; llvm/optimized/CodeGenRegisters.cpp.ll
-; llvm/optimized/CodeGenSchedule.cpp.ll
-; llvm/optimized/ComparisonCategories.cpp.ll
-; llvm/optimized/DFAJumpThreading.cpp.ll
-; llvm/optimized/DeclSpec.cpp.ll
-; llvm/optimized/DwarfDebug.cpp.ll
-; llvm/optimized/Format.cpp.ll
-; llvm/optimized/InitHeaderSearch.cpp.ll
-; llvm/optimized/JumpDiagnostics.cpp.ll
-; llvm/optimized/LoadStoreVectorizer.cpp.ll
-; llvm/optimized/LoopStrengthReduce.cpp.ll
-; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
-; llvm/optimized/MSFBuilder.cpp.ll
-; llvm/optimized/ParsedAttr.cpp.ll
-; llvm/optimized/RegAllocPBQP.cpp.ll
-; llvm/optimized/RewriteStatepointsForGC.cpp.ll
-; llvm/optimized/Sema.cpp.ll
-; llvm/optimized/SemaAMDGPU.cpp.ll
-; llvm/optimized/SemaAPINotes.cpp.ll
-; llvm/optimized/SemaARM.cpp.ll
-; llvm/optimized/SemaAVR.cpp.ll
-; llvm/optimized/SemaAccess.cpp.ll
-; llvm/optimized/SemaAttr.cpp.ll
-; llvm/optimized/SemaAvailability.cpp.ll
-; llvm/optimized/SemaBPF.cpp.ll
-; llvm/optimized/SemaBase.cpp.ll
-; llvm/optimized/SemaBoundsSafety.cpp.ll
-; llvm/optimized/SemaCUDA.cpp.ll
-; llvm/optimized/SemaCXXScopeSpec.cpp.ll
-; llvm/optimized/SemaCast.cpp.ll
-; llvm/optimized/SemaChecking.cpp.ll
-; llvm/optimized/SemaConcept.cpp.ll
-; llvm/optimized/SemaCoroutine.cpp.ll
-; llvm/optimized/SemaDecl.cpp.ll
-; llvm/optimized/SemaDeclAttr.cpp.ll
-; llvm/optimized/SemaDeclCXX.cpp.ll
-; llvm/optimized/SemaDeclObjC.cpp.ll
-; llvm/optimized/SemaExceptionSpec.cpp.ll
-; llvm/optimized/SemaExprCXX.cpp.ll
-; llvm/optimized/SemaExprMember.cpp.ll
-; llvm/optimized/SemaExprObjC.cpp.ll
-; llvm/optimized/SemaHLSL.cpp.ll
-; llvm/optimized/SemaInit.cpp.ll
-; llvm/optimized/SemaLambda.cpp.ll
-; llvm/optimized/SemaLookup.cpp.ll
-; llvm/optimized/SemaM68k.cpp.ll
-; llvm/optimized/SemaMIPS.cpp.ll
-; llvm/optimized/SemaMSP430.cpp.ll
-; llvm/optimized/SemaModule.cpp.ll
-; llvm/optimized/SemaObjC.cpp.ll
-; llvm/optimized/SemaObjCProperty.cpp.ll
-; llvm/optimized/SemaOpenACC.cpp.ll
-; llvm/optimized/SemaOpenCL.cpp.ll
-; llvm/optimized/SemaOverload.cpp.ll
-; llvm/optimized/SemaPPC.cpp.ll
-; llvm/optimized/SemaPseudoObject.cpp.ll
-; llvm/optimized/SemaRISCV.cpp.ll
-; llvm/optimized/SemaSYCL.cpp.ll
-; llvm/optimized/SemaStmt.cpp.ll
-; llvm/optimized/SemaStmtAsm.cpp.ll
-; llvm/optimized/SemaStmtAttr.cpp.ll
-; llvm/optimized/SemaSwift.cpp.ll
-; llvm/optimized/SemaTemplate.cpp.ll
-; llvm/optimized/SemaTemplateDeduction.cpp.ll
-; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
-; llvm/optimized/SemaTemplateInstantiate.cpp.ll
-; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
-; llvm/optimized/SemaTemplateVariadic.cpp.ll
-; llvm/optimized/SemaType.cpp.ll
-; llvm/optimized/SemaWasm.cpp.ll
-; llvm/optimized/SemaX86.cpp.ll
-; llvm/optimized/SourceManager.cpp.ll
-; llvm/optimized/WasmObjectFile.cpp.ll
-; llvm/optimized/WinEHPrepare.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
-entry:
-  %2 = zext i32 %1 to i64
-  %3 = getelementptr %"struct.std::pair.400.2950847", ptr %0, i64 %2, i32 2, i32 0, i32 1
+  %3 = getelementptr %struct.FlatRange.2708358, ptr %0, i64 %2, i32 2, i32 1
   ret ptr %3
 }
 
@@ -326,21 +294,20 @@ entry:
 ; linux/optimized/intel_vblank.ll
 ; linux/optimized/tg3.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = getelementptr %struct.drm_vblank_crtc.3343458, ptr %0, i64 %2, i32 13, i32 25
+  %3 = getelementptr %struct.drm_vblank_crtc.3532377, ptr %0, i64 %2, i32 13, i32 25
   ret ptr %3
 }
 
-; 2 occurrences:
-; linux/optimized/list_lru.ll
+; 1 occurrences:
 ; linux/optimized/virtio_net.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000013(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = getelementptr %struct.list_lru_node.3366836, ptr %0, i64 %2, i32 1, i32 0, i32 1
+  %3 = getelementptr %struct.send_queue.3557093, ptr %0, i64 %2, i32 5, i32 2
   ret ptr %3
 }
 

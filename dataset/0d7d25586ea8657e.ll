@@ -1,5 +1,5 @@
 
-; 151 occurrences:
+; 150 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
@@ -42,7 +42,6 @@
 ; linux/optimized/ndisc.ll
 ; linux/optimized/netpoll.ll
 ; linux/optimized/nfs4xdr.ll
-; linux/optimized/rss.ll
 ; linux/optimized/sit.ll
 ; linux/optimized/slab_common.ll
 ; linux/optimized/slub.ll
@@ -66,6 +65,7 @@
 ; llvm/optimized/X86FloatingPoint.cpp.ll
 ; luajit/optimized/lj_dispatch.ll
 ; luajit/optimized/lj_dispatch_dyn.ll
+; lvgl/optimized/lv_imagebutton.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; ncnn/optimized/convolution1d_x86_avx.cpp.ll
 ; ncnn/optimized/convolution1d_x86_avx512.cpp.ll
@@ -137,7 +137,6 @@
 ; wireshark/optimized/packet-rtp-ed137.c.ll
 ; wireshark/optimized/packet-rtps.c.ll
 ; wireshark/optimized/packet-s101.c.ll
-; wireshark/optimized/packet-sapenqueue.c.ll
 ; wireshark/optimized/packet-sbus.c.ll
 ; wireshark/optimized/packet-sml.c.ll
 ; wireshark/optimized/packet-tecmp.c.ll
@@ -204,7 +203,7 @@ entry:
   ret i32 %4
 }
 
-; 223 occurrences:
+; 221 occurrences:
 ; abc/optimized/bblif.c.ll
 ; abc/optimized/dauNpn2.c.ll
 ; abc/optimized/giaGlitch.c.ll
@@ -212,7 +211,6 @@ entry:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver2.c.ll
 ; abc/optimized/satSolver3.c.ll
-; abc/optimized/satUtil.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; brotli/optimized/backward_references_hq.c.ll
@@ -386,7 +384,6 @@ entry:
 ; openusd/optimized/vec3h.cpp.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -437,12 +434,13 @@ entry:
   ret i32 %4
 }
 
-; 52 occurrences:
+; 54 occurrences:
 ; abc/optimized/aigTsim.c.ll
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/saigPhase.c.ll
 ; arrow/optimized/tz.cpp.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/compile.ll
 ; hdf5/optimized/H5Iint.c.ll
 ; hdf5/optimized/H5Ocache.c.ll
@@ -468,6 +466,7 @@ entry:
 ; luajit/optimized/lj_record_dyn.ll
 ; luajit/optimized/lj_snap.ll
 ; luajit/optimized/lj_snap_dyn.ll
+; lvgl/optimized/lv_buttonmatrix.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; node/optimized/simdutf.ll
 ; oniguruma/optimized/utf16_be.ll

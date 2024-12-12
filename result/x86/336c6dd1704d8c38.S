@@ -18,15 +18,23 @@ func0000000000000006:                   # @func0000000000000006
 	cmpb	$26, %dil
 	setl	%al
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	cmpb	$-59, %dil
 	setge	%al
 	retq
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	cmpb	$60, %dil
 	setl	%al
 	retq
 func000000000000000c:                   # @func000000000000000c
 	testb	%dil, %dil
 	setne	%al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpb	$58, %dil
+	setb	%al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	cmpb	$97, %dil
+	setae	%al
 	retq

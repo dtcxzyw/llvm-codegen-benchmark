@@ -1,5 +1,5 @@
 
-; 146 occurrences:
+; 143 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/fretMain.c.ll
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
@@ -23,7 +23,6 @@
 ; linux/optimized/drm_ioctl.ll
 ; linux/optimized/intel_dpll.ll
 ; linux/optimized/intel_dpll_mgr.ll
-; linux/optimized/intel_hti.ll
 ; linux/optimized/namei.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/pci.ll
@@ -54,7 +53,6 @@
 ; llvm/optimized/MachineOperand.cpp.ll
 ; llvm/optimized/MachineStableHash.cpp.ll
 ; llvm/optimized/RISCVAsmPrinter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVMergeBaseOffset.cpp.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
 ; llvm/optimized/SemaDeclObjC.cpp.ll
@@ -88,7 +86,6 @@
 ; slurm/optimized/common_as.ll
 ; soc-simulator/optimized/sim_mycpu.ll
 ; sqlite/optimized/sqlite3.ll
-; wireshark/optimized/golay.c.ll
 ; wireshark/optimized/packet-ntlmssp.c.ll
 ; wireshark/optimized/proto.c.ll
 ; z3/optimized/asserted_formulas.cpp.ll
@@ -172,19 +169,15 @@ entry:
   ret i32 %4
 }
 
-; 7 occurrences:
-; c3c/optimized/lexer.c.ll
-; linux/optimized/pid_list.ll
+; 3 occurrences:
 ; openjdk/optimized/cmsio0.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; raylib/optimized/raudio.c.ll
-; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
-; wasmtime-rs/optimized/v5prf101dn49s3v.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 240
-  %3 = icmp ugt i32 %0, 36864
+  %3 = icmp samesign ugt i32 %0, 36864
   %4 = select i1 %3, i32 144, i32 %2
   ret i32 %4
 }
@@ -198,10 +191,10 @@ entry:
 ; git/optimized/pack-bitmap-write.ll
 ; git/optimized/pack-bitmap.ll
 ; git/optimized/replay.ll
-; llvm/optimized/X86AsmBackend.cpp.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
 ; luau/optimized/BytecodeBuilder.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; openjdk/optimized/deoptimization.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
@@ -224,7 +217,10 @@ entry:
   ret i32 %3
 }
 
-; 4 occurrences:
+; 7 occurrences:
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
 ; linux/optimized/hid-input.ll
 ; linux/optimized/i9xx_wm.ll
 ; luau/optimized/BytecodeBuilder.cpp.ll
@@ -235,6 +231,20 @@ entry:
   %2 = and i32 %1, 1023
   %3 = icmp sgt i32 %0, -1
   %4 = select i1 %3, i32 -1, i32 %2
+  ret i32 %4
+}
+
+; 4 occurrences:
+; linux/optimized/pid_list.ll
+; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
+; wasmtime-rs/optimized/v5prf101dn49s3v.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 65280
+  %3 = icmp ugt i32 %0, 255
+  %4 = select i1 %3, i32 -6225919, i32 %2
   ret i32 %4
 }
 

@@ -1,0 +1,30 @@
+func0000000000000000:                   # @func0000000000000000
+	sext.w	a1, a1
+	li	a2, 128
+	min	a1, a1, a2
+	add	a0, a0, a1
+	addi	a0, a0, -1
+	ret
+func000000000000000b:                   # @func000000000000000b
+	sext.w	a1, a1
+	lui	a2, 8
+	addiw	a2, a2, -1
+	min	a1, a1, a2
+	add	a0, a0, a1
+	addi	a0, a0, 1
+	ret
+func000000000000000f:                   # @func000000000000000f
+	sext.w	a1, a1
+	li	a2, 5
+	min	a1, a1, a2
+	sh1add	a1, a1, a1
+	sh2add	a0, a1, a0
+	addi	a0, a0, 8
+	ret
+func000000000000000a:                   # @func000000000000000a
+	sext.w	a1, a1
+	lui	a2, 16
+	min	a1, a1, a2
+	add	a0, a0, a1
+	addi	a0, a0, -3
+	ret

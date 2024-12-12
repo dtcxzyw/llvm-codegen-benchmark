@@ -3,7 +3,7 @@
 ; folly/optimized/IOBuf.cpp.ll
 ; php/optimized/zend_compile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000021(i32 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %1, i1 %3, i1 false
@@ -17,7 +17,7 @@ entry:
 ; meshlab/optimized/ml_default_decorators.cpp.ll
 ; php/optimized/zend_jit.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000181(i32 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = select i1 %1, i1 %3, i1 false
@@ -29,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; flac/optimized/main.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i32 %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000188(i32 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = select i1 %1, i1 %3, i1 false
@@ -47,7 +47,7 @@ entry:
 ; llvm/optimized/DWARFDie.cpp.ll
 ; wireshark/optimized/io_graph_dialog.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i1 %1, ptr %2) #0 {
+define i1 @func000000000000018c(i32 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = select i1 %1, i1 %3, i1 false
@@ -59,7 +59,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/wireshark_main_window.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i32 %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000184(i32 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = select i1 %1, i1 %3, i1 false
@@ -71,7 +71,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/pg_dumpall.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i1 %1, ptr %2) #0 {
+define i1 @func000000000000002c(i32 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %1, i1 %3, i1 false

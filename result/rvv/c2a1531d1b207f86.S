@@ -1,4 +1,4 @@
-func0000000000000ccc:                   # @func0000000000000ccc
+func000000000000318c:                   # @func000000000000318c
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsne.vi	v12, v10, 0
 	vmsne.vv	v13, v10, v8
@@ -6,7 +6,7 @@ func0000000000000ccc:                   # @func0000000000000ccc
 	vmsne.vi	v11, v8, 0
 	vmand.mm	v0, v11, v10
 	ret
-func000000000000044c:                   # @func000000000000044c
+func000000000000108c:                   # @func000000000000108c
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vv	v12, v8, v10
 	li	a0, 17
@@ -15,7 +15,7 @@ func000000000000044c:                   # @func000000000000044c
 	vmsne.vi	v11, v8, 0
 	vmand.mm	v0, v11, v10
 	ret
-func000000000000084c:                   # @func000000000000084c
+func000000000000208c:                   # @func000000000000208c
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsltu.vv	v12, v8, v10
 	li	a0, 17

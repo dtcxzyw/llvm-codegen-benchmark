@@ -7,7 +7,7 @@ func0000000000000000:                   # @func0000000000000000
 	xorl	%edx, %edx
 	retq
 func0000000000000007:                   # @func0000000000000007
-	leal	(%rdx,%rdi), %eax
+	leal	(%rdi,%rdx), %eax
 	andl	$3, %eax
 	xorl	%edx, %edx
 	retq

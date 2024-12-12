@@ -1,6 +1,5 @@
 
-; 39 occurrences:
-; c3c/optimized/decltable.c.ll
+; 38 occurrences:
 ; c3c/optimized/symtab.c.ll
 ; duckdb/optimized/ub_duckdb_storage_buffer.cpp.ll
 ; linux/optimized/af_unix.ll

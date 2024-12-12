@@ -16,7 +16,7 @@ func0000000000000031:                   # @func0000000000000031
 	retq
 func0000000000000030:                   # @func0000000000000030
 	movq	%rdi, %rax
-	cmpq	$-1, %rdx
+	testq	%rdx, %rdx
 	setne	%cl
 	andb	%sil, %cl
 	movzbl	%cl, %ecx

@@ -11,7 +11,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nuw i32 1, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
@@ -23,11 +23,12 @@ entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = shl nuw i32 1, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
+; boost/optimized/alloc_lib.ll
 ; eastl/optimized/TestBitVector.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; luajit/optimized/lj_alloc.ll
@@ -41,11 +42,11 @@ entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nuw i32 1, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
-; 28 occurrences:
+; 27 occurrences:
 ; bullet3/optimized/btBatchedConstraints.ll
 ; linux/optimized/dquot.ll
 ; linux/optimized/radix-tree.ll
@@ -56,7 +57,6 @@ entry:
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_measure.cpp.ll
@@ -80,7 +80,7 @@ entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nuw nsw i32 1, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
@@ -103,7 +103,7 @@ entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nsw i32 -1, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
@@ -115,7 +115,7 @@ entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = shl nsw i32 -1, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
@@ -138,7 +138,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nsw i32 -1, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
@@ -150,7 +150,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nuw nsw i32 1, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
@@ -162,7 +162,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = shl i32 67108864, %2
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 

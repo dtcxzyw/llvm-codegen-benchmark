@@ -1,5 +1,5 @@
 
-; 57 occurrences:
+; 61 occurrences:
 ; arrow/optimized/compare.cc.ll
 ; arrow/optimized/int_util.cc.ll
 ; arrow/optimized/list_util.cc.ll
@@ -57,27 +57,32 @@
 ; ripgrep-rs/optimized/5baox15rvywa81ar.ll
 ; tokenizers-rs/optimized/1w676x6x6lprwvn5.ll
 ; tokenizers-rs/optimized/27irl7jx21l1e8zq.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000018e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000018f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = getelementptr ptr, ptr %0, i64 %4
-  %6 = getelementptr ptr, ptr %5, i64 %1
+  %5 = getelementptr ptr, ptr %0, i64 %1
+  %6 = getelementptr ptr, ptr %5, i64 %4
   ret ptr %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; proxygen/optimized/HTTP2Codec.cpp.ll
 ; rust-analyzer-rs/optimized/57yy3hfi5uyj25tj.ll
+; zed-rs/optimized/5rpya7la6h7ws9z99n4ku3sd5.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000182(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 2
   %4 = zext i1 %3 to i64
-  %5 = getelementptr { { { i64, [1 x i64] }, { i32, { i8, [1 x i8] }, [2 x i8] }, { i32, i32 } }, { { i64, ptr, {} }, i64 } }, ptr %0, i64 %4
-  %6 = getelementptr { { { i64, [1 x i64] }, { i32, { i8, [1 x i8] }, [2 x i8] }, { i32, i32 } }, { { i64, ptr, {} }, i64 } }, ptr %5, i64 %1
+  %5 = getelementptr { { { i64, [1 x i64] }, { i32, { i8, [1 x i8] }, [2 x i8] }, { i32, i32 } }, { { i64, ptr, {} }, i64 } }, ptr %0, i64 %1
+  %6 = getelementptr { { { i64, [1 x i64] }, { i32, { i8, [1 x i8] }, [2 x i8] }, { i32, i32 } }, { { i64, ptr, {} }, i64 } }, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -90,8 +95,8 @@ define ptr @func000000000000018c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = getelementptr i64, ptr %0, i64 %4
-  %6 = getelementptr i64, ptr %5, i64 %1
+  %5 = getelementptr i64, ptr %0, i64 %1
+  %6 = getelementptr i64, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -102,26 +107,20 @@ define ptr @func0000000000000022(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = getelementptr i32, ptr %0, i64 %4
-  %6 = getelementptr i32, ptr %5, i64 %1
+  %5 = getelementptr i32, ptr %0, i64 %1
+  %6 = getelementptr i32, ptr %5, i64 %4
   ret ptr %6
 }
 
-; 7 occurrences:
-; arrow/optimized/compare.cc.ll
-; arrow/optimized/int_util.cc.ll
-; arrow/optimized/list_util.cc.ll
-; arrow/optimized/vector_selection_filter_internal.cc.ll
-; arrow/optimized/vector_selection_take_internal.cc.ll
-; cmake/optimized/cmList.cxx.ll
+; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000186(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000187(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = getelementptr i64, ptr %0, i64 %4
-  %6 = getelementptr i64, ptr %5, i64 %1
+  %5 = getelementptr i64, ptr %0, i64 %1
+  %6 = getelementptr i64, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -129,12 +128,38 @@ entry:
 ; cmake/optimized/zstd_compress_literals.c.ll
 ; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000010e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000010f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, 16383
   %4 = zext i1 %3 to i64
-  %5 = getelementptr i8, ptr %0, i64 %4
-  %6 = getelementptr i8, ptr %5, i64 %1
+  %5 = getelementptr i8, ptr %0, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 2 occurrences:
+; zed-rs/optimized/6hbnfszf6gkk4nniq4f5ts2z6.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000142(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp sgt i64 %2, -1
+  %4 = zext i1 %3 to i64
+  %5 = getelementptr { { { { ptr, i64 } }, {}, {} } }, ptr %0, i64 %1
+  %6 = getelementptr { { { { ptr, i64 } }, {}, {} } }, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 2 occurrences:
+; arrow/optimized/compare.cc.ll
+; cmake/optimized/cmList.cxx.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000186(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ne i64 %2, 0
+  %4 = zext i1 %3 to i64
+  %5 = getelementptr i8, ptr %0, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -146,8 +171,8 @@ define ptr @func0000000000000184(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = getelementptr i64, ptr %0, i64 %4
-  %6 = getelementptr i64, ptr %5, i64 %1
+  %5 = getelementptr i64, ptr %0, i64 %1
+  %6 = getelementptr i64, ptr %5, i64 %4
   ret ptr %6
 }
 

@@ -53,12 +53,16 @@ func000000000000000f:                   # @func000000000000000f
 	leaq	(%rdi,%rdi,2), %rcx
 	leaq	(%rax,%rcx,4), %rax
 	retq
+func0000000000000017:                   # @func0000000000000017
+	imulq	$3600, %rsi, %rcx               # imm = 0xE10
+	imulq	$60, %rdi, %rax
+	addq	%rcx, %rax
+	retq
 func000000000000001d:                   # @func000000000000001d
-	shlq	$3, %rsi
-	leaq	(%rsi,%rsi,4), %rcx
-	shlq	$3, %rdi
-	leaq	(%rdi,%rdi,4), %rax
-	subq	%rcx, %rax
+	imulq	$1000000, %rsi, %rcx            # imm = 0xF4240
+	movabsq	$86400000000, %rax              # imm = 0x141DD76000
+	imulq	%rdi, %rax
+	addq	%rcx, %rax
 	retq
 func0000000000000038:                   # @func0000000000000038
 	imulq	$1734723475, %rsi, %rcx         # imm = 0x6765C793

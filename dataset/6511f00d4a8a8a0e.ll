@@ -78,7 +78,7 @@ entry:
   ret float %3
 }
 
-; 20 occurrences:
+; 24 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; darktable/optimized/introspection_dither.c.ll
 ; darktable/optimized/introspection_vignette.c.ll
@@ -87,6 +87,7 @@ entry:
 ; hwloc/optimized/lstopo_no_graphics-lstopo-draw.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; libwebp/optimized/predictor_enc.c.ll
+; lvgl/optimized/lv_demo_widgets.ll
 ; meshlab/optimized/meshio.cpp.ll
 ; meshoptimizer/optimized/clusterizer.cpp.ll
 ; meshoptimizer/optimized/overdrawoptimizer.cpp.ll
@@ -99,6 +100,9 @@ entry:
 ; opencv/optimized/basicretinafilter.cpp.ll
 ; wireshark/optimized/packet-ansi_map.c.ll
 ; wireshark/optimized/packet-gsm_map.c.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:

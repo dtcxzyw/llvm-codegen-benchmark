@@ -12,3 +12,9 @@ func0000000000000005:                   # @func0000000000000005
 	srai	a0, a1, 3
 	addi	a0, a0, -1
 	ret
+func0000000000000065:                   # @func0000000000000065
+	add	a1, a1, a2
+	sub	a1, a1, a0
+	srai	a0, a1, 1
+	addi	a0, a0, 1
+	ret

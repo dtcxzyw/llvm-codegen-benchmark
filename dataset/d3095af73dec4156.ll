@@ -19,9 +19,9 @@ entry:
 ; opencv/optimized/posit.cpp.ll
 ; opencv/optimized/tree.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(i32 %0, ptr %1) #0 {
+define ptr @func000000000000003a(i32 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 80
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 80
   %3 = sext i32 %0 to i64
   %4 = getelementptr nusw ptr, ptr %2, i64 %3
   %5 = getelementptr nusw ptr, ptr %4, i64 %3

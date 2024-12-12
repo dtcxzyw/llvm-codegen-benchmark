@@ -1,5 +1,5 @@
 
-; 140 occurrences:
+; 138 occurrences:
 ; abc/optimized/amapMerge.c.ll
 ; abc/optimized/blocksort.c.ll
 ; abc/optimized/bzlib.c.ll
@@ -9,7 +9,6 @@
 ; bullet3/optimized/b3Solver.ll
 ; clamav/optimized/bzlib.c.ll
 ; clamav/optimized/cabd.c.ll
-; clamav/optimized/dns.c.ll
 ; clamav/optimized/kwajd.c.ll
 ; clamav/optimized/lzxd.c.ll
 ; clamav/optimized/mszipd.c.ll
@@ -127,7 +126,6 @@
 ; php/optimized/ir_emit.ll
 ; php/optimized/ir_ra.ll
 ; php/optimized/ir_sccp.ll
-; php/optimized/pcre2_compile.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; php/optimized/pcre2_study.ll
 ; raylib/optimized/rmodels.c.ll
@@ -141,16 +139,15 @@
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 3 occurrences:
-; linux/optimized/utbuffer.ll
+; 2 occurrences:
 ; qemu/optimized/fdt_rw.c.ll
 ; qemu/optimized/fdt_sw.c.ll
 ; Function Attrs: nounwind
@@ -227,11 +224,11 @@ entry:
 ; z3/optimized/smt_context.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i32, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i32, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -244,20 +241,19 @@ entry:
 ; node/optimized/core.ll
 ; snappy/optimized/snappy.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; cpython/optimized/unicodeobject.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; libjpeg-turbo/optimized/transupp.c.ll
 ; linux/optimized/alps.ll
-; linux/optimized/mmconfig_64.ll
 ; linux/optimized/timer.ll
 ; linux/optimized/virtio_net.ll
 ; meshlab/optimized/VisibilityCheck.cpp.ll
@@ -282,11 +278,11 @@ entry:
 ; llama.cpp/optimized/ggml.c.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i32, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i32, ptr %0, i64 %4
   ret ptr %5
 }
 

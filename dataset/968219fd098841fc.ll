@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 21 occurrences:
 ; clamav/optimized/sigtool.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
@@ -12,8 +12,6 @@
 ; jemalloc/optimized/jemalloc.ll
 ; jemalloc/optimized/jemalloc.pic.ll
 ; jemalloc/optimized/jemalloc.sym.ll
-; linux/optimized/clntxdr.ll
-; linux/optimized/fils_aead.ll
 ; linux/optimized/mballoc.ll
 ; linux/optimized/trace_probe.ll
 ; llvm/optimized/ByteCodeEmitter.cpp.ll
@@ -90,8 +88,9 @@ entry:
   ret i32 %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; arrow/optimized/concatenate.cc.ll
+; boost/optimized/approximately_equals.ll
 ; linux/optimized/svcauth_gss.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
@@ -108,12 +107,15 @@ entry:
   ret i32 %4
 }
 
-; 11 occurrences:
+; 14 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cordz_handle_test.cc.ll
 ; abseil-cpp/optimized/cordz_info_statistics_test.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; arrow/optimized/io_util.cc.ll
+; boost/optimized/file_test_helpers.ll
+; boost/optimized/partition.ll
+; boost/optimized/work_stealing.ll
 ; readerwriterqueue/optimized/bench.cpp.ll
 ; taskflow/optimized/parallel_sort.cpp.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
@@ -129,13 +131,24 @@ entry:
   ret i32 %4
 }
 
-; 46 occurrences:
+; 57 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree_navigator_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_reader_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/int128_test.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; abseil-cpp/optimized/spinlock_test_common.cc.ll
+; boost/optimized/barrier.ll
+; boost/optimized/condition_variable.ll
+; boost/optimized/context.ll
+; boost/optimized/file_test_helpers.ll
+; boost/optimized/mutex.ll
+; boost/optimized/recursive_mutex.ll
+; boost/optimized/recursive_timed_mutex.ll
+; boost/optimized/scheduler.ll
+; boost/optimized/test_filebuf.ll
+; boost/optimized/timed_mutex.ll
+; boost/optimized/work_stealing.ll
 ; taskflow/optimized/async.cpp.ll
 ; taskflow/optimized/attach_data.cpp.ll
 ; taskflow/optimized/cancel.cpp.ll
@@ -194,7 +207,7 @@ entry:
 define i32 @func0000000000000015(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = trunc nsw i64 %3 to i32
   ret i32 %4
 }

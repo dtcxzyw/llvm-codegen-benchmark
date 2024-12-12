@@ -1,7 +1,8 @@
 
-; 19 occurrences:
+; 20 occurrences:
 ; cmake/optimized/cmCMakePresetsGraph.cxx.ll
 ; hyperscan/optimized/shengcompile.cpp.ll
+; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; linux/optimized/aspm.ll
 ; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
 ; llvm/optimized/Driver.cpp.ll
@@ -15,8 +16,8 @@
 ; openusd/optimized/faceVertex.cpp.ll
 ; php/optimized/phar.ll
 ; qemu/optimized/hw_nvram_fw_cfg.c.ll
-; rayon-rs/optimized/4h6yllo6psxznznq.ll
 ; typst-rs/optimized/2lj01bfl72moc27l.ll
+; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; z3/optimized/dep_intervals.cpp.ll
 ; z3/optimized/interval_mpq.cpp.ll
 ; Function Attrs: nounwind
@@ -27,10 +28,14 @@ entry:
   ret i16 %2
 }
 
-; 7 occurrences:
+; 11 occurrences:
 ; image-rs/optimized/fyek6fuqg0ocunt.ll
 ; libpng/optimized/pngrtran.c.ll
 ; linux/optimized/e100.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; openjdk/optimized/cmspack.ll
 ; openjdk/optimized/pngrtran.ll
 ; protobuf/optimized/lexer.cc.ll

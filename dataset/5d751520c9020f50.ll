@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; abc/optimized/abcSop.c.ll
 ; arrow/optimized/key_map.cc.ll
 ; cmake/optimized/fse_compress.c.ll
@@ -7,6 +7,7 @@
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; openjdk/optimized/logFileOutput.ll
 ; openjdk/optimized/png.ll
+; postgres/optimized/oracle_compat.ll
 ; postgres/optimized/spgdoinsert.ll
 ; wireshark/optimized/packet-usb-hid.c.ll
 ; zstd/optimized/fse_compress.c.ll
@@ -23,9 +24,9 @@ entry:
 ; arrow/optimized/fixed-dtoa.cc.ll
 ; darktable/optimized/introspection_lens.cc.ll
 ; double_conversion/optimized/fixed-dtoa.cc.ll
+; icu/optimized/number_decimalquantity.ll
 ; lz4/optimized/lz4frame.c.ll
 ; meshlab/optimized/Scanner.cpp.ll
-; opencv/optimized/slice_layer.cpp.ll
 ; openjdk/optimized/DrawGlyphList.ll
 ; openjdk/optimized/disassembler.ll
 ; openusd/optimized/decodeframe.c.ll

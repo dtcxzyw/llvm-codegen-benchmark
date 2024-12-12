@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/time.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000011(i16 %0, i16 %1) #0 {
+define i16 @func0000000000000021(i16 %0, i16 %1) #0 {
 entry:
   %2 = add nsw i16 %1, -64
   %3 = icmp eq i16 %0, 0
@@ -26,7 +26,7 @@ entry:
 ; llvm/optimized/Globals.cpp.ll
 ; wireshark/optimized/packet-ieee80211-radio.c.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000031(i16 %0, i16 %1) #0 {
+define i16 @func0000000000000061(i16 %0, i16 %1) #0 {
 entry:
   %2 = add nuw nsw i16 %1, 1
   %3 = icmp eq i16 %0, 0
@@ -41,7 +41,7 @@ entry:
 ; postgres/optimized/hashutil.ll
 ; postgres/optimized/nbtdedup.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000034(i16 %0, i16 %1) #0 {
+define i16 @func0000000000000064(i16 %0, i16 %1) #0 {
 entry:
   %2 = add nuw nsw i16 %1, 1
   %3 = icmp ult i16 %0, 25
@@ -52,7 +52,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/hashinsert.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000014(i16 %0, i16 %1) #0 {
+define i16 @func0000000000000024(i16 %0, i16 %1) #0 {
 entry:
   %2 = add nsw i16 %1, 1
   %3 = icmp ult i16 %0, 25

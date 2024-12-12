@@ -1,7 +1,8 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; openjdk/optimized/cmsgamma.ll
 ; openjdk/optimized/cmspack.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000005(i1 %0, double %1, double %2) #0 {
 entry:
@@ -36,14 +37,15 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; proj/optimized/fwd.cpp.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = select i1 %0, double %1, double %2
-  %4 = fadd double %3, 0xBFF921FB54442D18
-  %5 = fcmp ogt double %4, 0x3D719799812DEA11
+  %4 = fadd double %3, 5.000000e-03
+  %5 = fcmp ogt double %4, 1.000000e+00
   ret i1 %5
 }
 

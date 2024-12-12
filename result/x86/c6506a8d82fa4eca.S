@@ -9,7 +9,7 @@ func0000000000000001:                   # @func0000000000000001
 	xorl	%edx, %edx
 	retq
 func0000000000000003:                   # @func0000000000000003
-	movl	$64, %eax
+	movl	$256, %eax                      # imm = 0x100
 	subl	%edi, %eax
 	xorl	%edx, %edx
 	retq

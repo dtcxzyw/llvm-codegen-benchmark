@@ -1,14 +1,15 @@
 
-; 21 occurrences:
+; 22 occurrences:
 ; abseil-cpp/optimized/chi_square.cc.ll
 ; abseil-cpp/optimized/poisson_distribution_test.cc.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/within_sph_geo.ll
 ; ceres/optimized/levenberg_marquardt_strategy.cc.ll
 ; darktable/optimized/introspection_colorbalance.c.ll
 ; darktable/optimized/introspection_crop.c.ll
 ; darktable/optimized/introspection_equalizer.c.ll
 ; gromacs/optimized/expfit.cpp.ll
 ; gromacs/optimized/gmx_nmr.cpp.ll
-; gromacs/optimized/tabulatednormaldistribution.cpp.ll
 ; lightgbm/optimized/metric.cpp.ll
 ; meshlab/optimized/Factor.cpp.ll
 ; meshlab/optimized/meshselect.cpp.ll
@@ -45,7 +46,10 @@ entry:
   ret i1 %2
 }
 
-; 19 occurrences:
+; 22 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/within_sph_geo.ll
 ; darktable/optimized/introspection_colorbalance.c.ll
 ; darktable/optimized/introspection_crop.c.ll
 ; darktable/optimized/introspection_denoiseprofile.c.ll
@@ -72,10 +76,18 @@ entry:
   ret i1 %1
 }
 
-; 8 occurrences:
+; 16 occurrences:
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
 ; gromacs/optimized/expfit.cpp.ll
 ; libjpeg-turbo/optimized/rdppm.c.ll
 ; meshlab/optimized/Factor.cpp.ll
@@ -98,9 +110,8 @@ entry:
   ret i1 %2
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; gromacs/optimized/expfit.cpp.ll
-; proj/optimized/io.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000007(double %0) #0 {
 entry:
@@ -108,13 +119,12 @@ entry:
   ret i1 %1
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; abseil-cpp/optimized/chi_square.cc.ll
 ; ocio/optimized/GradingTone.cpp.ll
 ; opencv/optimized/boost.cpp.ll
 ; opencv/optimized/rho.cpp.ll
 ; proj/optimized/bonne.cpp.ll
-; proj/optimized/collg.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000005(double %0) #0 {
 entry:

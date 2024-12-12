@@ -1,5 +1,9 @@
 
-; 70 occurrences:
+; 73 occurrences:
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/get_distance_measure.ll
 ; casadi/optimized/constant_mx.cpp.ll
 ; cpython/optimized/cmathmodule.ll
 ; cpython/optimized/complexobject.ll
@@ -54,7 +58,6 @@
 ; proj/optimized/common.cpp.ll
 ; proj/optimized/geodesic.c.ll
 ; proj/optimized/helmert.cpp.ll
-; proj/optimized/io.cpp.ll
 ; proj/optimized/metadata.cpp.ll
 ; proj/optimized/stere.cpp.ll
 ; quantlib/optimized/americanpayoffathit.ll
@@ -81,6 +84,8 @@ entry:
 ; 94 occurrences:
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/IFCUtil.cpp.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; brotli/optimized/encode.c.ll
 ; casadi/optimized/cvodes_spbcgs.c.ll
 ; casadi/optimized/cvodes_spgmr.c.ll
@@ -123,13 +128,11 @@ entry:
 ; proj/optimized/airy.cpp.ll
 ; proj/optimized/aitoff.cpp.ll
 ; proj/optimized/conversion.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
 ; proj/optimized/geodesic.c.ll
 ; proj/optimized/grids.cpp.ll
 ; proj/optimized/gridshift.cpp.ll
 ; proj/optimized/ortho.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; quantlib/optimized/analyticcompoundoptionengine.ll
 ; quantlib/optimized/analytichestonengine.ll
 ; quantlib/optimized/blackdeltacalculator.ll
@@ -193,7 +196,7 @@ entry:
   ret i1 %3
 }
 
-; 32 occurrences:
+; 31 occurrences:
 ; casadi/optimized/idas_interface.cpp.ll
 ; ceres/optimized/array_utils.cc.ll
 ; eastl/optimized/EAString.cpp.ll
@@ -216,7 +219,6 @@ entry:
 ; node/optimized/libnode.node_task_queue.ll
 ; openblas/optimized/dlaqr2.c.ll
 ; openblas/optimized/dlaqr3.c.ll
-; openblas/optimized/dlasyf_aa.c.ll
 ; opencv/optimized/classification.cpp.ll
 ; opencv/optimized/matrix_expressions.cpp.ll
 ; opencv/optimized/sinusoidalpattern.cpp.ll
@@ -234,11 +236,19 @@ entry:
   ret i1 %3
 }
 
-; 118 occurrences:
+; 125 occurrences:
 ; abseil-cpp/optimized/poisson_distribution_test.cc.ll
 ; arrow/optimized/tdigest.cc.ll
 ; assimp/optimized/TriangulateProcess.cpp.ll
 ; assimp/optimized/sweep.cc.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_sph_geo.ll
 ; cmake/optimized/cmCTestTestHandler.cxx.ll
 ; cpython/optimized/cmathmodule.ll
 ; eastl/optimized/EASTLBenchmark.cpp.ll
@@ -298,7 +308,6 @@ entry:
 ; proj/optimized/geodesic.c.ll
 ; proj/optimized/grids.cpp.ll
 ; proj/optimized/gridshift.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/vandg.cpp.ll
 ; qemu/optimized/util_cutils.c.ll
 ; quantlib/optimized/analyticcompoundoptionengine.ll
@@ -361,7 +370,7 @@ entry:
   ret i1 %3
 }
 
-; 25 occurrences:
+; 24 occurrences:
 ; cmake/optimized/cmcmd.cxx.ll
 ; graphviz/optimized/emit.c.ll
 ; graphviz/optimized/position.c.ll
@@ -374,7 +383,6 @@ entry:
 ; opencv/optimized/gdal-image.cpp.ll
 ; opencv/optimized/generalized_hough.cpp.ll
 ; openjdk/optimized/TransformHelper.ll
-; osqp/optimized/amd_info.c.ll
 ; postgres/optimized/planner.ll
 ; proj/optimized/adams.cpp.ll
 ; proj/optimized/geodesic.c.ll
@@ -420,7 +428,8 @@ entry:
   ret i1 %3
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/within_sph_geo.ll
 ; openjdk/optimized/TransformHelper.ll
 ; openjdk/optimized/loopnode.ll
 ; postgres/optimized/planner.ll

@@ -22,3 +22,9 @@ func0000000000000009:                   # @func0000000000000009
 	shrl	$2, %eax
 	decl	%eax
 	retq
+func0000000000000029:                   # @func0000000000000029
+	movzwl	%di, %eax
+	addl	$-256, %eax
+	shrl	$3, %eax
+	addl	$-8, %eax
+	retq

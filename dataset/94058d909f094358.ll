@@ -102,49 +102,10 @@ entry:
   ret i32 %4
 }
 
-; 31 occurrences:
-; abc/optimized/ivyCut.c.ll
-; abc/optimized/ivyFraig.c.ll
-; abc/optimized/lpkAbcMux.c.ll
-; abc/optimized/saigIsoFast.c.ll
-; cmake/optimized/zstd_compress.c.ll
-; cpython/optimized/unicodeobject.ll
-; darktable/optimized/amaze.cc.ll
-; glslang/optimized/Initialize.cpp.ll
-; gromacs/optimized/dump.cpp.ll
-; image-rs/optimized/244uszkx0e8t5ie1.ll
-; linux/optimized/libata-scsi.ll
-; llvm/optimized/DXILResource.cpp.ll
-; meshlab/optimized/gltf_loader.cpp.ll
-; meshoptimizer/optimized/quantization.cpp.ll
-; mitsuba3/optimized/x86func.cpp.ll
-; node/optimized/simdutf.ll
-; nori/optimized/nanovg.c.ll
-; oiio/optimized/formatspec.cpp.ll
-; openexr/optimized/ImfTimeCode.cpp.ll
-; openjdk/optimized/indexSet.ll
-; openspiel/optimized/Scheduler.cpp.ll
-; openusd/optimized/stbImage.cpp.ll
-; pbrt-v4/optimized/stbimage.cpp.ll
-; postgres/optimized/jsonb_util.ll
-; pugixml/optimized/pugixml.cpp.ll
-; sqlite/optimized/sqlite3.ll
-; stb/optimized/stb_image.c.ll
-; tinygltf/optimized/tiny_gltf.cc.ll
-; typst-rs/optimized/m09o5qr68f5khss.ll
-; wireshark/optimized/packet-afp.c.ll
-; zstd/optimized/zstd_compress.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nuw nsw i32 %1, %2
-  %4 = or disjoint i32 %3, %0
-  ret i32 %4
-}
-
 ; 43 occurrences:
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/ifDsd.c.ll
+; boost/optimized/src.ll
 ; chibicc/optimized/tokenize.ll
 ; cpython/optimized/_json.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
@@ -172,7 +133,6 @@ entry:
 ; openjdk/optimized/TransformHelper.ll
 ; openjdk/optimized/UshortIndexed.ll
 ; openjdk/optimized/constantPool.ll
-; openspiel/optimized/2048.cc.ll
 ; openspiel/optimized/havannah.cc.ll
 ; openspiel/optimized/laser_tag.cc.ll
 ; openspiel/optimized/markov_soccer.cc.ll
@@ -194,7 +154,46 @@ entry:
   ret i32 %4
 }
 
-; 26 occurrences:
+; 30 occurrences:
+; abc/optimized/ivyCut.c.ll
+; abc/optimized/ivyFraig.c.ll
+; abc/optimized/lpkAbcMux.c.ll
+; abc/optimized/saigIsoFast.c.ll
+; cmake/optimized/zstd_compress.c.ll
+; cpython/optimized/unicodeobject.ll
+; darktable/optimized/amaze.cc.ll
+; glslang/optimized/Initialize.cpp.ll
+; gromacs/optimized/dump.cpp.ll
+; image-rs/optimized/244uszkx0e8t5ie1.ll
+; linux/optimized/libata-scsi.ll
+; llvm/optimized/DXILResource.cpp.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; meshoptimizer/optimized/quantization.cpp.ll
+; node/optimized/simdutf.ll
+; nori/optimized/nanovg.c.ll
+; oiio/optimized/formatspec.cpp.ll
+; openexr/optimized/ImfTimeCode.cpp.ll
+; openjdk/optimized/indexSet.ll
+; openspiel/optimized/Scheduler.cpp.ll
+; openusd/optimized/stbImage.cpp.ll
+; pbrt-v4/optimized/stbimage.cpp.ll
+; postgres/optimized/jsonb_util.ll
+; pugixml/optimized/pugixml.cpp.ll
+; sqlite/optimized/sqlite3.ll
+; stb/optimized/stb_image.c.ll
+; tinygltf/optimized/tiny_gltf.cc.ll
+; typst-rs/optimized/m09o5qr68f5khss.ll
+; wireshark/optimized/packet-afp.c.ll
+; zstd/optimized/zstd_compress.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw nsw i32 %1, %2
+  %4 = or disjoint i32 %3, %0
+  ret i32 %4
+}
+
+; 27 occurrences:
 ; abc/optimized/ivyCut.c.ll
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/lucky.c.ll
@@ -203,6 +202,7 @@ entry:
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; clamav/optimized/pe_icons.c.ll
 ; clamav/optimized/xar.c.ll
+; glslang/optimized/Initialize.cpp.ll
 ; hdf5/optimized/H5checksum.c.ll
 ; linux/optimized/intel_color.ll
 ; llama.cpp/optimized/ggml-quants.c.ll
@@ -225,7 +225,7 @@ entry:
 define i32 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -251,7 +251,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
@@ -273,7 +273,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %1, %2
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
@@ -285,7 +285,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 

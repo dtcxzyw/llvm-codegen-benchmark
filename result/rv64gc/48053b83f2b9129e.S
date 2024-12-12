@@ -15,7 +15,7 @@ func0000000000000000:                   # @func0000000000000000
 	ret
 func000000000000000d:                   # @func000000000000000d
 	mul	a1, a1, a2
-	mul	a0, a1, a0
+	mul	a0, a0, a1
 	fcvt.d.w	fa0, a0
 	ret
 func000000000000000f:                   # @func000000000000000f

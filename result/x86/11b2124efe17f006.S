@@ -10,12 +10,12 @@ func0000000000000006:                   # @func0000000000000006
 	andl	$1, %eax
 	orl	%edi, %eax
 	retq
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	testb	%sil, %sil
 	sets	%al
 	orb	%dil, %al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	movb	$62, %al
 	bzhiq	%rax, %rsi, %rax
 	cmpq	$20, %rax
@@ -33,7 +33,7 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	movb	$63, %al
 	bzhiq	%rax, %rsi, %rax
 	cmpq	$127, %rax

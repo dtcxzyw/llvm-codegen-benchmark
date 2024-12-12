@@ -1,5 +1,5 @@
 
-; 313 occurrences:
+; 310 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/graphcycles.cc.ll
@@ -173,7 +173,6 @@
 ; opencv/optimized/chessboard.cpp.ll
 ; opencv/optimized/convhull.cpp.ll
 ; opencv/optimized/data.cpp.ll
-; opencv/optimized/detection_output_layer.cpp.ll
 ; opencv/optimized/evaluation.cpp.ll
 ; opencv/optimized/facemarkAAM.cpp.ll
 ; opencv/optimized/featureselect.cpp.ll
@@ -204,7 +203,6 @@
 ; opencv/optimized/tracking_online_mil.cpp.ll
 ; opencv/optimized/tree.cpp.ll
 ; opencv/optimized/warpfield.cpp.ll
-; openexr/optimized/ImfHuf.cpp.ll
 ; openspiel/optimized/gin_rummy_utils.cc.ll
 ; openspiel/optimized/simple_gin_rummy_bot.cc.ll
 ; openusd/optimized/blendShapeQuery.cpp.ll
@@ -227,7 +225,6 @@
 ; readerwriterqueue/optimized/bench.cpp.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; rocksdb/optimized/version_set.cc.ll
-; sentencepiece/optimized/bpe_model_trainer.cc.ll
 ; spike/optimized/spike.ll
 ; vcpkg/optimized/commands.export.cpp.ll
 ; vcpkg/optimized/commands.remove.cpp.ll
@@ -314,11 +311,11 @@
 ; z3/optimized/theory_pb.cpp.ll
 ; z3/optimized/theory_wmaxsat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000311(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000c21(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -2
   %4 = ashr exact i64 %3, 1
-  %5 = icmp eq i64 %4, %1
+  %5 = icmp eq i64 %1, %4
   %6 = icmp eq i64 %0, 0
   %7 = select i1 %6, i1 %5, i1 false
   ret i1 %7
@@ -328,11 +325,11 @@ entry:
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; redis/optimized/sort.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000421(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -2
   %4 = ashr exact i64 %3, 1
-  %5 = icmp eq i64 %4, %1
+  %5 = icmp eq i64 %1, %4
   %6 = icmp eq i64 %0, 0
   %7 = select i1 %6, i1 %5, i1 false
   ret i1 %7

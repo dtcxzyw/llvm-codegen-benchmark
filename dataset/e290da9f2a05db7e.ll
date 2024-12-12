@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 18 occurrences:
 ; folly/optimized/IPAddressV4.cpp.ll
 ; folly/optimized/IPAddressV6.cpp.ll
 ; hermes/optimized/Interpreter.cpp.ll
@@ -11,6 +11,13 @@
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; wireshark/optimized/packet-cpfi.c.ll
 ; wireshark/optimized/packet-sbus.c.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/4boerhlvhy0t7lexovmn31ni1.ll
+; zed-rs/optimized/6t4g10gl152q55lxtcl2heeia.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/97q4mieihk6fgi9ya31e3gth7.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i8 %0) #0 {
 entry:
@@ -91,8 +98,12 @@ entry:
   ret i32 %3
 }
 
-; 1 occurrences:
+; 5 occurrences:
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/6t4g10gl152q55lxtcl2heeia.ll
+; zed-rs/optimized/97q4mieihk6fgi9ya31e3gth7.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i8 %0) #0 {
 entry:
@@ -102,14 +113,21 @@ entry:
   ret i32 %3
 }
 
-; 1 occurrences:
+; 8 occurrences:
 ; opencv/optimized/softfloat.cpp.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/4boerhlvhy0t7lexovmn31ni1.ll
+; zed-rs/optimized/6t4g10gl152q55lxtcl2heeia.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/97q4mieihk6fgi9ya31e3gth7.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i8 %0) #0 {
 entry:
-  %1 = add i8 %0, -40
+  %1 = add i8 %0, 1
   %2 = zext nneg i8 %1 to i32
-  %3 = shl nuw nsw i32 %2, 23
+  %3 = shl nuw nsw i32 %2, 8
   ret i32 %3
 }
 

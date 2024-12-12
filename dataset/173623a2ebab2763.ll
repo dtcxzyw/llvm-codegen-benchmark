@@ -1,6 +1,7 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; assimp/optimized/ColladaExporter.cpp.ll
+; boost/optimized/benchmark_fstream.ll
 ; meshlab/optimized/parameters.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; opencv/optimized/bif.cpp.ll

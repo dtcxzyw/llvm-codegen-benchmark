@@ -1,14 +1,14 @@
 
-%struct.WorldSpec.2588968 = type { %"class.std::__cxx11::basic_string.2588910", %"class.std::__cxx11::basic_string.2588910", %"class.std::__cxx11::basic_string.2588910" }
-%"class.std::__cxx11::basic_string.2588910" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2588911", i64, %union.anon.2588912 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2588911" = type { ptr }
-%union.anon.2588912 = type { i64, [8 x i8] }
-%struct.hb_glyph_info_t.2621672 = type { i32, i32, i32, %union._hb_var_int_t.2621673, %union._hb_var_int_t.2621673 }
-%union._hb_var_int_t.2621673 = type { i32 }
-%struct.hb_glyph_info_t.2624719 = type { i32, i32, i32, %union._hb_var_int_t.2624720, %union._hb_var_int_t.2624720 }
-%union._hb_var_int_t.2624720 = type { i32 }
-%"struct.llvh::detail::DenseMapPair.2886406" = type { %"struct.std::pair.102.2886407" }
-%"struct.std::pair.102.2886407" = type { i32, i32 }
+%struct.WorldSpec.2702813 = type { %"class.std::__cxx11::basic_string.2702755", %"class.std::__cxx11::basic_string.2702755", %"class.std::__cxx11::basic_string.2702755" }
+%"class.std::__cxx11::basic_string.2702755" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2702756", i64, %union.anon.2702757 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2702756" = type { ptr }
+%union.anon.2702757 = type { i64, [8 x i8] }
+%struct.hb_glyph_info_t.2735113 = type { i32, i32, i32, %union._hb_var_int_t.2735114, %union._hb_var_int_t.2735114 }
+%union._hb_var_int_t.2735114 = type { i32 }
+%struct.hb_glyph_info_t.2738145 = type { i32, i32, i32, %union._hb_var_int_t.2738146, %union._hb_var_int_t.2738146 }
+%union._hb_var_int_t.2738146 = type { i32 }
+%"struct.llvh::detail::DenseMapPair.3080927" = type { %"struct.std::pair.102.3080928" }
+%"struct.std::pair.102.3080928" = type { i32, i32 }
 
 ; 7 occurrences:
 ; linux/optimized/virtio_net.ll
@@ -28,9 +28,10 @@ entry:
   ret ptr %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; linux/optimized/exec.ll
 ; postgres/optimized/pg_backup_tar.ll
+; qemu/optimized/util_uri.c.ll
 ; ruby/optimized/vm.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(ptr %0, i64 %1) #0 {
@@ -60,7 +61,7 @@ entry:
 ; slurm/optimized/file_functions.ll
 ; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000007f(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 29
@@ -69,7 +70,7 @@ entry:
   ret ptr %5
 }
 
-; 63 occurrences:
+; 65 occurrences:
 ; assimp/optimized/FBXConverter.cpp.ll
 ; cmake/optimized/zstd_double_fast.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
@@ -84,6 +85,7 @@ entry:
 ; cvc5/optimized/tableau.cpp.ll
 ; cvc5/optimized/theory_arith_private.cpp.ll
 ; darktable/optimized/metadata.c.ll
+; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
 ; duckdb/optimized/ub_duckdb_common_types_row.cpp.ll
 ; flatbuffers/optimized/reflection.cpp.ll
 ; gromacs/optimized/colvarbias_meta.cpp.ll
@@ -93,6 +95,7 @@ entry:
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
+; llvm/optimized/Attributes.cpp.ll
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
 ; llvm/optimized/CodeGenPrepare.cpp.ll
 ; llvm/optimized/CodeGenSchedule.cpp.ll
@@ -134,12 +137,12 @@ entry:
 ; zstd/optimized/zstd_double_fast.c.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -5
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -165,7 +168,7 @@ entry:
 ; yosys/optimized/opt_lut.ll
 ; yosys/optimized/ql_bram_merge.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
@@ -190,7 +193,7 @@ entry:
 ; openjdk/optimized/imageDecompressor.ll
 ; php/optimized/dce.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
@@ -215,12 +218,12 @@ entry:
 ; pocketpy/optimized/expr.cpp.ll
 ; slurm/optimized/update_node.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw %struct.WorldSpec.2588968, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %struct.WorldSpec.2702813, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -242,12 +245,12 @@ entry:
 ; z3/optimized/theory_diff_logic.cpp.ll
 ; z3/optimized/theory_utvpi.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000052(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000053(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = add nuw i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw %struct.hb_glyph_info_t.2621672, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %struct.hb_glyph_info_t.2735113, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -267,12 +270,12 @@ entry:
 ; z3/optimized/sat_cut_simplifier.cpp.ll
 ; z3/optimized/upolynomial.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000042(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000043(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = add i32 %2, -1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw %struct.hb_glyph_info_t.2624719, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %struct.hb_glyph_info_t.2738145, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -280,7 +283,7 @@ entry:
 ; gromacs/optimized/forcetable.cpp.ll
 ; openjdk/optimized/c1_LinearScan.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000004e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000004f(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 29
@@ -292,12 +295,12 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/MosDecoder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000016(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000017(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nuw i32 %2, 44
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -316,12 +319,12 @@ entry:
 ; llvm/optimized/ThinLTOCodeGenerator.cpp.ll
 ; llvm/optimized/X86CmovConversion.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000072(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000073(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = add nuw i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw %"struct.llvh::detail::DenseMapPair.2886406", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.llvh::detail::DenseMapPair.3080927", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -329,12 +332,12 @@ entry:
 ; cvc5/optimized/quant_conflict_find.cpp.ll
 ; yosys/optimized/simplify.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000046(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000047(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = add i32 %2, -1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw ptr, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw ptr, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -342,7 +345,7 @@ entry:
 ; openexr/optimized/chunk.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000006f(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 29
@@ -382,7 +385,7 @@ entry:
 ; openmpi/optimized/ess_base_bootstrap.ll
 ; openmpi/optimized/preg_native.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000005f(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
@@ -391,8 +394,7 @@ entry:
   ret ptr %5
 }
 
-; 4 occurrences:
-; linux/optimized/dns_key.ll
+; 3 occurrences:
 ; luajit/optimized/minilua.ll
 ; postgres/optimized/like_support.ll
 ; postgres/optimized/syslogger.ll
@@ -402,7 +404,7 @@ entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
   %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 -1
+  %5 = getelementptr i8, ptr %4, i64 -4
   ret ptr %5
 }
 

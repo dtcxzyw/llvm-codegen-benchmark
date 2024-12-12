@@ -4,7 +4,7 @@
 	.quad	4294967294                      # 0xfffffffe
 func0000000000000079:                   # @func0000000000000079
 	vpmullq	.LCPI0_0(%rip){1to4}, %ymm2, %ymm2
-	vpaddq	%ymm1, %ymm2, %ymm1
+	vpaddq	%ymm2, %ymm1, %ymm1
 	vpsllq	$32, %ymm1, %ymm1
 	vpternlogq	$236, .LCPI0_1(%rip){1to4}, %ymm1, %ymm0 # ymm0 = (ymm0 & mem) | ymm1
 	retq

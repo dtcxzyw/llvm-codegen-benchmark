@@ -14,7 +14,7 @@ func0000000000000050:                   # @func0000000000000050
 	slli	a0, a0, 1
 	addi	a0, a0, -1024
 	vmadd.vx	v12, a0, v10
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	ret
 func0000000000000055:                   # @func0000000000000055
 	li	a0, 32

@@ -1,49 +1,49 @@
-func000000000000001b:                   # @func000000000000001b
+func000000000000002b:                   # @func000000000000002b
 	decl	%edx
 	movslq	%edx, %rax
-	cmpq	%rsi, %rax
-	setle	%al
+	cmpq	%rax, %rsi
+	setge	%al
 	orb	%dil, %al
 	retq
 func0000000000000004:                   # @func0000000000000004
 	addl	$4, %edx
 	movslq	%edx, %rax
-	cmpq	%rsi, %rax
-	seta	%al
+	cmpq	%rax, %rsi
+	setb	%al
 	orb	%dil, %al
 	retq
 func0000000000000008:                   # @func0000000000000008
 	addl	$-14, %edx
 	movslq	%edx, %rax
-	cmpq	%rsi, %rax
-	setb	%al
+	cmpq	%rax, %rsi
+	seta	%al
 	orb	%dil, %al
 	retq
 func0000000000000001:                   # @func0000000000000001
 	incl	%edx
 	movslq	%edx, %rax
-	cmpq	%rsi, %rax
+	cmpq	%rax, %rsi
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	addl	$-2, %edx
 	movslq	%edx, %rax
-	cmpq	%rsi, %rax
-	seta	%al
+	cmpq	%rax, %rsi
+	setb	%al
 	orb	%dil, %al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	addl	$2, %edx
 	movslq	%edx, %rax
-	cmpq	%rsi, %rax
-	setg	%al
+	cmpq	%rax, %rsi
+	setl	%al
 	orb	%dil, %al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	incl	%edx
 	movslq	%edx, %rax
-	cmpq	%rsi, %rax
-	setl	%al
+	cmpq	%rax, %rsi
+	setg	%al
 	orb	%dil, %al
 	retq

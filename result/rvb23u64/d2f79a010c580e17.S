@@ -4,6 +4,16 @@ func0000000000000044:                   # @func0000000000000044
 	sh1add	a0, a0, a1
 	addi	a0, a0, -48
 	ret
+func000000000000003f:                   # @func000000000000003f
+	andi	a1, a1, 255
+	li	a2, 94
+	mul	a0, a0, a2
+	lui	a2, 1045441
+	slli	a2, a2, 20
+	add	a0, a0, a1
+	srli	a2, a2, 32
+	add	a0, a0, a2
+	ret
 func0000000000000024:                   # @func0000000000000024
 	andi	a1, a1, 255
 	sh2add	a0, a0, a0
@@ -28,11 +38,11 @@ func0000000000000077:                   # @func0000000000000077
 	sh1add	a0, a0, a1
 	addi	a0, a0, -48
 	ret
-.LCPI5_0:
+.LCPI6_0:
 	.quad	-3523014627327384477            # 0xcf1bbcdcb7a56463
 func000000000000000c:                   # @func000000000000000c
-	lui	a2, %hi(.LCPI5_0)
-	ld	a2, %lo(.LCPI5_0)(a2)
+	lui	a2, %hi(.LCPI6_0)
+	ld	a2, %lo(.LCPI6_0)(a2)
 	andi	a1, a1, 255
 	mul	a0, a0, a2
 	add	a0, a0, a1

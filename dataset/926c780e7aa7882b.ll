@@ -2,6 +2,7 @@
 ; 28 occurrences:
 ; abc/optimized/bacWriteVer.c.ll
 ; abc/optimized/covMinEsop.c.ll
+; boost/optimized/text_file_backend.ll
 ; cmake/optimized/inflate.c.ll
 ; cpython/optimized/_datetimemodule.ll
 ; git/optimized/name-rev.ll
@@ -17,7 +18,6 @@
 ; php/optimized/decode.ll
 ; postgres/optimized/big5.ll
 ; raylib/optimized/rtext.c.ll
-; ruby/optimized/japanese.ll
 ; ruby/optimized/time.ll
 ; stb/optimized/stb_truetype.c.ll
 ; stockfish/optimized/movepick.ll
@@ -32,12 +32,12 @@
 define i32 @func0000000000000005(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
-  %4 = select i1 %0, i32 254, i32 253
+  %4 = select i1 %0, i32 -86400, i32 86400
   %5 = add nsw i32 %4, %3
   ret i32 %5
 }
 
-; 81 occurrences:
+; 83 occurrences:
 ; abc/optimized/covMinEsop.c.ll
 ; abc/optimized/giaHash.c.ll
 ; abc/optimized/inflate.c.ll
@@ -45,6 +45,8 @@ entry:
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; arrow/optimized/key_hash.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/gregorian.ll
 ; clamav/optimized/inflate64.c.ll
 ; cpython/optimized/assemble.ll
 ; darktable/optimized/amaze.cc.ll
@@ -130,6 +132,7 @@ entry:
 
 ; 25 occurrences:
 ; abc/optimized/lpkAbcMux.c.ll
+; boost/optimized/gregorian.ll
 ; clamav/optimized/asn1.c.ll
 ; cpython/optimized/_codecs_jp.ll
 ; cpython/optimized/_codecs_kr.ll
@@ -139,7 +142,6 @@ entry:
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; icu/optimized/mlbe.ll
-; linux/optimized/nfs3xdr.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/texture_rendering.cpp.ll

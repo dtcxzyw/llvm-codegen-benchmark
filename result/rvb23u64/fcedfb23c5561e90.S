@@ -8,7 +8,7 @@ func000000000000000c:                   # @func000000000000000c
 	sub	a2, a2, a1
 	sh2add	a0, a2, a0
 	ret
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	andi	a2, a2, 255
 	sub	a2, a2, a1
 	sh2add	a0, a2, a0

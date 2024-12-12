@@ -4,7 +4,7 @@
 ; linux/optimized/tcp_ipv6.ll
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000041(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = or i1 %3, %1
@@ -18,10 +18,10 @@ entry:
 ; openssl/optimized/libcrypto-shlib-pmeth_lib.ll
 ; slurm/optimized/update_job.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(ptr %0, i1 %1, ptr %2) #0 {
+define i1 @func000000000000004c(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = icmp ne ptr %0, null
   %6 = and i1 %5, %4
   ret i1 %6
@@ -36,7 +36,7 @@ entry:
 ; meshlab/optimized/miniz.c.ll
 ; wolfssl/optimized/chacha20_poly1305.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000318(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = or i1 %3, %0
@@ -53,7 +53,7 @@ entry:
 ; meshlab/optimized/miniz.c.ll
 ; slurm/optimized/slurm_step_layout.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000018c(ptr %0, i1 %1, ptr %2) #0 {
+define i1 @func000000000000030c(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = or i1 %3, %1

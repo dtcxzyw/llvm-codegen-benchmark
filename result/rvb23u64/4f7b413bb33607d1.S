@@ -27,10 +27,8 @@ func0000000000000010:                   # @func0000000000000010
 	sh2add	a0, a1, a0
 	sh2add	a0, a2, a0
 	ret
-func00000000000000da:                   # @func00000000000000da
+func000000000000005b:                   # @func000000000000005b
 	sext.w	a2, a2
-	slli	a1, a1, 4
-	slli	a2, a2, 4
-	add	a0, a0, a1
-	add	a0, a0, a2
+	sh2add	a1, a1, a2
+	sh3add	a0, a1, a0
 	ret

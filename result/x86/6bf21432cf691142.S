@@ -78,11 +78,11 @@ func0000000000000014:                   # @func0000000000000014
 	leal	(%rdx,%rsi), %eax
 	addl	%edi, %eax
 	retq
-func0000000000000015:                   # @func0000000000000015
+func0000000000000035:                   # @func0000000000000035
 	leal	(%rdx,%rsi), %eax
 	addl	%edi, %eax
 	retq
-func0000000000000035:                   # @func0000000000000035
+func0000000000000015:                   # @func0000000000000015
 	leal	(%rdx,%rsi), %eax
 	addl	%edi, %eax
 	retq

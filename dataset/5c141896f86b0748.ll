@@ -1,38 +1,20 @@
 
-; 109 occurrences:
+%class.symbol.3613505 = type { ptr }
+
+; 74 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcQuant.c.ll
 ; abc/optimized/acbFunc.c.ll
-; abc/optimized/aigPack.c.ll
 ; abc/optimized/aigRet.c.ll
-; abc/optimized/bmcGen.c.ll
 ; abc/optimized/bmcMaj.c.ll
-; abc/optimized/bmcMaj2.c.ll
-; abc/optimized/bmcMaj3.c.ll
-; abc/optimized/cecSim.c.ll
-; abc/optimized/extraUtilMaj.c.ll
-; abc/optimized/fraSim.c.ll
-; abc/optimized/giaEra.c.ll
 ; abc/optimized/giaGen.c.ll
-; abc/optimized/giaIf.c.ll
 ; abc/optimized/giaResub.c.ll
-; abc/optimized/giaSim.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/giaSupps.c.ll
-; abc/optimized/ioReadPlaMo.c.ll
 ; abc/optimized/kitDsd.c.ll
-; abc/optimized/plaCom.c.ll
-; abc/optimized/plaMan.c.ll
-; abc/optimized/plaRead.c.ll
-; abc/optimized/plaWrite.c.ll
-; abc/optimized/satSolver2.c.ll
-; abc/optimized/sbdCore.c.ll
 ; abc/optimized/sfmDec.c.ll
-; abc/optimized/sswRarity.c.ll
-; cmake/optimized/divsufsort.c.ll
 ; darktable/optimized/RawImageDataFloat.cpp.ll
 ; darktable/optimized/RawImageDataU16.cpp.ll
-; faiss/optimized/lattice_Zn.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -40,7 +22,6 @@
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/catchup.c.ll
 ; hyperscan/optimized/fdr_compile.cpp.ll
-; hyperscan/optimized/init.c.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; hyperscan/optimized/match.c.ll
 ; hyperscan/optimized/mpv.c.ll
@@ -53,13 +34,9 @@
 ; icu/optimized/ucase.ll
 ; icu/optimized/ucnv_bld.ll
 ; imgui/optimized/imgui_draw.cpp.ll
-; imgui/optimized/imgui_tables.cpp.ll
 ; libevent/optimized/event_tagging.c.ll
 ; libquic/optimized/strike_register.cc.ll
-; libwebp/optimized/picture_rescale_enc.c.ll
 ; lief/optimized/ssl_tls.c.ll
-; lightgbm/optimized/gbdt_prediction.cpp.ll
-; lightgbm/optimized/tree.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTImporter.cpp.ll
 ; llvm/optimized/AutoUpgrade.cpp.ll
@@ -79,11 +56,10 @@
 ; luajit/optimized/lj_ir.ll
 ; luajit/optimized/lj_ir_dyn.ll
 ; luajit/optimized/minilua.ll
-; luau/optimized/BytecodeAnalysis.cpp.ll
-; ncnn/optimized/mat_pixel_drawing.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; opencv/optimized/cap_v4l.cpp.ll
 ; opencv/optimized/guided_filter.cpp.ll
-; opencv/optimized/tree.cpp.ll
+; openjdk/optimized/buildOopMap.ll
 ; openjdk/optimized/hb-face.ll
 ; openjdk/optimized/hb-ot-color.ll
 ; openjdk/optimized/hb-ot-font.ll
@@ -92,30 +68,21 @@
 ; openssl/optimized/libcrypto-shlib-pvkfmt.ll
 ; openssl/optimized/libcrypto-shlib-rsaz_exp_x2.ll
 ; openssl/optimized/loader_attic-dso-pvkfmt.ll
-; openusd/optimized/decodeframe.c.ll
 ; openusd/optimized/obu.c.ll
 ; php/optimized/ir_cfg.ll
-; php/optimized/pcre2_auto_possess.ll
 ; php/optimized/pcre2_substitute.ll
-; php/optimized/zend_cfg.ll
-; php/optimized/zend_dfg.ll
 ; php/optimized/zend_jit.ll
 ; php/optimized/zend_ssa.ll
 ; protobuf/optimized/generated_message_reflection.cc.ll
 ; redis/optimized/lvm.ll
 ; rocksdb/optimized/filter_policy.cc.ll
-; sentencepiece/optimized/generated_message_table_driven_lite.cc.ll
-; velox/optimized/CompactRow.cpp.ll
-; velox/optimized/PrestoSerializer.cpp.ll
-; yosys/optimized/fstapi.ll
-; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 26
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %1
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -155,21 +122,100 @@ entry:
 }
 
 ; 2 occurrences:
-; imgui/optimized/imgui_draw.cpp.ll
-; openjdk/optimized/buildOopMap.ll
+; icu/optimized/collationdatareader.ll
+; openjdk/optimized/mlib_ImageConvCopyEdge_Bit.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000018(ptr %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = lshr i32 %2, 5
+  %3 = lshr i32 %2, 3
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr i32, ptr %0, i64 %1
-  %6 = getelementptr nusw i32, ptr %5, i64 %4
+  %5 = getelementptr nusw i8, ptr %0, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 %4
   ret ptr %6
 }
 
-; 46 occurrences:
-; icu/optimized/collationdatareader.ll
-; openjdk/optimized/mlib_ImageConvCopyEdge_Bit.ll
+; 42 occurrences:
+; abc/optimized/abc.c.ll
+; abc/optimized/aigPack.c.ll
+; abc/optimized/bmcGen.c.ll
+; abc/optimized/bmcMaj.c.ll
+; abc/optimized/bmcMaj2.c.ll
+; abc/optimized/bmcMaj3.c.ll
+; abc/optimized/cecSim.c.ll
+; abc/optimized/extraUtilMaj.c.ll
+; abc/optimized/fraSim.c.ll
+; abc/optimized/giaEra.c.ll
+; abc/optimized/giaGen.c.ll
+; abc/optimized/giaIf.c.ll
+; abc/optimized/giaSim.c.ll
+; abc/optimized/giaSimBase.c.ll
+; abc/optimized/ioReadPlaMo.c.ll
+; abc/optimized/plaCom.c.ll
+; abc/optimized/plaMan.c.ll
+; abc/optimized/plaRead.c.ll
+; abc/optimized/plaWrite.c.ll
+; abc/optimized/satSolver2.c.ll
+; abc/optimized/sbdCore.c.ll
+; abc/optimized/sswRarity.c.ll
+; cmake/optimized/divsufsort.c.ll
+; faiss/optimized/lattice_Zn.cpp.ll
+; imgui/optimized/imgui_tables.cpp.ll
+; libwebp/optimized/picture_rescale_enc.c.ll
+; lightgbm/optimized/gbdt_prediction.cpp.ll
+; lightgbm/optimized/tree.cpp.ll
+; luau/optimized/BytecodeAnalysis.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend.ll
+; ncnn/optimized/mat_pixel_drawing.cpp.ll
+; opencv/optimized/tree.cpp.ll
+; openusd/optimized/decodeframe.c.ll
+; php/optimized/pcre2_auto_possess.ll
+; php/optimized/zend_cfg.ll
+; php/optimized/zend_dfg.ll
+; php/optimized/zend_jit.ll
+; sentencepiece/optimized/generated_message_table_driven_lite.cc.ll
+; velox/optimized/CompactRow.cpp.ll
+; velox/optimized/PrestoSerializer.cpp.ll
+; yosys/optimized/fstapi.ll
+; zstd/optimized/divsufsort.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001b(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 1
+  %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr nusw i8, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 5 occurrences:
+; darktable/optimized/CrwDecompressor.cpp.ll
+; hyperscan/optimized/catchup.c.ll
+; hyperscan/optimized/mpv.c.ll
+; llvm/optimized/Expr.cpp.ll
+; opencv/optimized/grfmt_tiff.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003f(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = lshr exact i32 %2, 2
+  %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 1 occurrences:
+; imgui/optimized/imgui_draw.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000013(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 1
+  %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr i8, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 44 occurrences:
 ; z3/optimized/asserted_formulas.cpp.ll
 ; z3/optimized/bit_blaster_rewriter.cpp.ll
 ; z3/optimized/bound_simplifier.cpp.ll
@@ -215,28 +261,12 @@ entry:
 ; z3/optimized/spacer_util.cpp.ll
 ; z3/optimized/th_rewriter.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000001c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = lshr i32 %2, 3
+  %3 = lshr i32 %2, 6
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %1
-  %6 = getelementptr i8, ptr %5, i64 %4
-  ret ptr %6
-}
-
-; 5 occurrences:
-; darktable/optimized/CrwDecompressor.cpp.ll
-; hyperscan/optimized/catchup.c.ll
-; hyperscan/optimized/mpv.c.ll
-; llvm/optimized/Expr.cpp.ll
-; opencv/optimized/grfmt_tiff.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = lshr exact i32 %2, 2
-  %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %1
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw %class.symbol.3613505, ptr %0, i64 %1
+  %6 = getelementptr ptr, ptr %5, i64 %4
   ret ptr %6
 }
 

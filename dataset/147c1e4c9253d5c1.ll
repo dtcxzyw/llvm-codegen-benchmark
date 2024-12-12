@@ -4,7 +4,7 @@
 ; php/optimized/pcre2_jit_compile.ll
 ; postgres/optimized/dsa.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 63
   %4 = add nuw nsw i64 %3, 1
@@ -35,23 +35,11 @@ entry:
 ; llvm/optimized/User.cpp.ll
 ; llvm/optimized/ValueMapper.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -8
   %4 = add nuw i64 %3, 136
   %5 = icmp eq i64 %1, 0
-  %6 = select i1 %5, i64 %4, i64 %0
-  ret i64 %6
-}
-
-; 1 occurrences:
-; postgres/optimized/generation.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = and i64 %2, -8
-  %4 = add nuw nsw i64 %3, 64
-  %5 = icmp ult i64 %1, 2
   %6 = select i1 %5, i64 %4, i64 %0
   ret i64 %6
 }

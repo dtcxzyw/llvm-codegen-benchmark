@@ -13,6 +13,18 @@ entry:
   ret double %5
 }
 
+; 2 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; Function Attrs: nounwind
+define double @func0000000000000004(double %0, double %1, double %2) #0 {
+entry:
+  %3 = fadd double %1, %2
+  %4 = fcmp ogt double %3, 0x400921FB54442D18
+  %5 = select i1 %4, double %0, double %3
+  ret double %5
+}
+
 ; 3 occurrences:
 ; openblas/optimized/dlar1v.c.ll
 ; opencv/optimized/dls.cpp.ll

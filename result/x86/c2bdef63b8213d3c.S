@@ -16,11 +16,10 @@ func0000000000000001:                   # @func0000000000000001
 	imulq	$-997805, %rdi, %rax            # imm = 0xFFF0C653
 	retq
 func0000000000000007:                   # @func0000000000000007
-	shrq	$3, %rdi
-	movl	%edi, %eax
-	movq	%rax, %rcx
-	shlq	$10, %rcx
-	leaq	(%rcx,%rax,4), %rax
+	shlq	$2, %rdi
+	movabsq	$68719476720, %rax              # imm = 0xFFFFFFFF0
+	andq	%rdi, %rax
+	leaq	(%rax,%rax,4), %rax
 	retq
 func0000000000000002:                   # @func0000000000000002
 	shrq	$32, %rdi

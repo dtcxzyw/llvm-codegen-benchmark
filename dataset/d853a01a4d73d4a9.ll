@@ -45,7 +45,8 @@ entry:
   ret ptr %7
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; opencv/optimized/convolution_layer.cpp.ll
 ; opencv/optimized/demosaicing.cpp.ll
 ; opencv/optimized/distransform.cpp.ll
 ; Function Attrs: nounwind
@@ -54,8 +55,8 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = shl nsw i32 %3, 1
   %5 = sext i32 %4 to i64
-  %6 = getelementptr i32, ptr %1, i64 %5
-  %7 = getelementptr i32, ptr %6, i64 %0
+  %6 = getelementptr i8, ptr %1, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 %0
   ret ptr %7
 }
 

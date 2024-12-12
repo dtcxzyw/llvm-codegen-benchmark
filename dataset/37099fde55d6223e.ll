@@ -10,13 +10,12 @@
 define i8 @func0000000000000003(i8 %0, i16 %1) #0 {
 entry:
   %2 = trunc nuw nsw i16 %1 to i8
-  %3 = xor i8 %2, %0
+  %3 = xor i8 %0, %2
   ret i8 %3
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; cmake/optimized/archive_read_support_format_lha.c.ll
-; coremark/optimized/core_util.c.ll
 ; linux/optimized/crc-ccitt.ll
 ; linux/optimized/crc16.ll
 ; nix/optimized/worker-protocol.ll
@@ -30,7 +29,7 @@ entry:
 define i8 @func0000000000000000(i8 %0, i16 %1) #0 {
 entry:
   %2 = trunc i16 %1 to i8
-  %3 = xor i8 %2, %0
+  %3 = xor i8 %0, %2
   ret i8 %3
 }
 
@@ -43,7 +42,7 @@ entry:
 define i8 @func0000000000000002(i8 %0, i16 %1) #0 {
 entry:
   %2 = trunc nuw i16 %1 to i8
-  %3 = xor i8 %2, %0
+  %3 = xor i8 %0, %2
   ret i8 %3
 }
 
@@ -53,7 +52,7 @@ entry:
 define i8 @func0000000000000001(i8 %0, i16 %1) #0 {
 entry:
   %2 = trunc nsw i16 %1 to i8
-  %3 = xor i8 %2, %0
+  %3 = xor i8 %0, %2
   ret i8 %3
 }
 

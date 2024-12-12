@@ -18,7 +18,7 @@ func0000000000000056:                   // @func0000000000000056
 // %bb.0:                               // %entry
 	lsl	w8, w2, #3
 	add	w8, w8, #128
-	mul	w8, w8, w1
+	mul	w8, w1, w8
 	add	x0, x0, w8, sxtw #1
 	ret
                                         // -- End function

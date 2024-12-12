@@ -1,7 +1,6 @@
 
 ; 20 occurrences:
 ; abseil-cpp/optimized/graphcycles.cc.ll
-; c3c/optimized/decltable.c.ll
 ; c3c/optimized/symtab.c.ll
 ; c3c/optimized/types.c.ll
 ; git/optimized/pack-objects.ll
@@ -14,6 +13,7 @@
 ; linux/optimized/sky2.ll
 ; llvm/optimized/HeaderMap.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
 ; postgres/optimized/nodeHash.ll
 ; postgres/optimized/resowner.ll
 ; postgres/optimized/xlog.ll
@@ -29,8 +29,7 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
-; c3c/optimized/decltable.c.ll
+; 4 occurrences:
 ; c3c/optimized/symtab.c.ll
 ; libwebp/optimized/lossless.c.ll
 ; wireshark/optimized/packet-pdcp-lte.c.ll
@@ -51,6 +50,20 @@ define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = add nuw nsw i32 %0, 1
+  %4 = and i32 %3, %2
+  ret i32 %4
+}
+
+; 4 occurrences:
+; icu/optimized/ucptrie.ll
+; libwebp/optimized/iterator_enc.c.ll
+; llvm/optimized/Instructions.cpp.ll
+; redis/optimized/hdr_histogram.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, -19
+  %3 = add nsw i32 %0, -19
   %4 = and i32 %3, %2
   ret i32 %4
 }
@@ -85,19 +98,6 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
-  %3 = add nsw i32 %0, -1
-  %4 = and i32 %3, %2
-  ret i32 %4
-}
-
-; 3 occurrences:
-; icu/optimized/ucptrie.ll
-; libwebp/optimized/iterator_enc.c.ll
-; redis/optimized/hdr_histogram.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add nsw i32 %1, 1
   %3 = add nsw i32 %0, -1
   %4 = and i32 %3, %2
   ret i32 %4

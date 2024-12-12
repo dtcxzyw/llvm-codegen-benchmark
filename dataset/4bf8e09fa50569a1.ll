@@ -4,34 +4,33 @@
 ; opencv/optimized/brisk.cpp.ll
 ; php/optimized/pcre2_substring.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000005e(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = mul nsw i32 %3, %1
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 136
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 136
   %7 = getelementptr nusw i8, ptr %6, i64 %5
   ret ptr %7
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; abc/optimized/ivyFraig.c.ll
 ; openblas/optimized/dbdsvdx.c.ll
 ; openblas/optimized/dlaror.c.ll
 ; openblas/optimized/dsbgst.c.ll
-; openblas/optimized/dtrsna.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000010(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 32
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 8
   %7 = getelementptr i8, ptr %6, i64 %5
   ret ptr %7
 }
 
-; 39 occurrences:
+; 37 occurrences:
 ; abc/optimized/ivyFraig.c.ll
 ; gromacs/optimized/dbdsqr.cpp.ll
 ; gromacs/optimized/dlabrd.cpp.ll
@@ -65,11 +64,9 @@ entry:
 ; openblas/optimized/dsytri_rook.c.ll
 ; openblas/optimized/dsytrs.c.ll
 ; openblas/optimized/dsytrs_rook.c.ll
-; openblas/optimized/dtgsna.c.ll
 ; openblas/optimized/dtgsy2.c.ll
 ; openblas/optimized/dtrevc.c.ll
 ; openblas/optimized/dtrevc3.c.ll
-; openblas/optimized/dtrsna.c.ll
 ; opencv/optimized/stardetector.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000050(ptr %0, i32 %1, i32 %2) #0 {
@@ -83,27 +80,13 @@ entry:
 }
 
 ; 2 occurrences:
-; gromacs/optimized/dgebd2.cpp.ll
-; gromacs/optimized/sgebd2.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add i32 %2, 1
-  %4 = mul i32 %3, %1
-  %5 = sext i32 %4 to i64
-  %6 = getelementptr i8, ptr %0, i64 8
-  %7 = getelementptr double, ptr %6, i64 %5
-  ret ptr %7
-}
-
-; 2 occurrences:
 ; openblas/optimized/dsytrs_rook.c.ll
 ; opencv/optimized/hybrid_binarizer.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func00000000000000d0(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 4
   %7 = getelementptr i32, ptr %6, i64 %5

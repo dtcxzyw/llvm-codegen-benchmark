@@ -14,8 +14,7 @@ func000000000000000c:                   # @func000000000000000c
 	andb	%dil, %al
 	retq
 func0000000000000004:                   # @func0000000000000004
-	movzwl	%si, %eax
-	cmpl	$137, %eax
+	cmpw	$51, %si
 	setb	%al
 	andb	%dil, %al
 	retq

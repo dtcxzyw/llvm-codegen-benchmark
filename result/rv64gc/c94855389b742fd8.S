@@ -42,16 +42,6 @@ func00000000000000cc:                   # @func00000000000000cc
 	add	a0, a0, a2
 	addw	a0, a0, a1
 	ret
-func0000000000000014:                   # @func0000000000000014
-	add	a1, a1, a2
-	lui	a2, 10
-	addi	a2, a2, -946
-	mul	a1, a1, a2
-	lui	a2, 1048573
-	addi	a2, a2, 77
-	mul	a0, a0, a2
-	addw	a0, a0, a1
-	ret
 func00000000000000ff:                   # @func00000000000000ff
 	add	a1, a1, a2
 	li	a2, 11

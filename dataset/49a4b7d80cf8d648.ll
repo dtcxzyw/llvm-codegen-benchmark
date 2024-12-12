@@ -1,10 +1,11 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; darktable/optimized/RawImageDataU16.cpp.ll
 ; folly/optimized/json.cpp.ll
 ; linux/optimized/core.ll
 ; linux/optimized/cypress_ps2.ll
 ; llvm/optimized/ExprEngineC.cpp.ll
+; lvgl/optimized/lv_group.ll
 ; minetest/optimized/localplayer.cpp.ll
 ; openjdk/optimized/ad_x86.ll
 ; openjdk/optimized/loopTransform.ll
@@ -25,12 +26,13 @@ entry:
   ret i1 %5
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; entt/optimized/version.cpp.ll
 ; folly/optimized/AsyncUDPSocket.cpp.ll
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
 ; linux/optimized/api.ll
 ; linux/optimized/intel_dsi_vbt.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
 ; openusd/optimized/surfaceFactory.cpp.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-tr.c.ll

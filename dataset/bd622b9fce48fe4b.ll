@@ -49,7 +49,7 @@ entry:
   ret i64 %3
 }
 
-; 72 occurrences:
+; 65 occurrences:
 ; abc/optimized/deflate.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
@@ -87,15 +87,8 @@ entry:
 ; luajit/optimized/lj_str_dyn.ll
 ; luajit/optimized/lj_strfmt.ll
 ; luajit/optimized/lj_strfmt_dyn.ll
+; lvgl/optimized/lv_style.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
-; ncnn/optimized/convolution_x86.cpp.ll
-; ncnn/optimized/convolution_x86_avx.cpp.ll
-; ncnn/optimized/convolution_x86_avx2.cpp.ll
-; ncnn/optimized/convolution_x86_avx512.cpp.ll
-; ncnn/optimized/convolution_x86_avx512vnni.cpp.ll
-; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
-; ncnn/optimized/convolution_x86_fma.cpp.ll
-; ncnn/optimized/convolution_x86_xop.cpp.ll
 ; ncnn/optimized/lstm_x86_avx512vnni.cpp.ll
 ; ncnn/optimized/lstm_x86_avxvnni.cpp.ll
 ; oiio/optimized/icc.cpp.ll
@@ -218,11 +211,10 @@ entry:
   ret i64 %2
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; abc/optimized/giaBalAig.c.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
-; darktable/optimized/introspection_ashift.c.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; mixbox/optimized/mixbox.ll
@@ -281,9 +273,9 @@ entry:
 ; 5 occurrences:
 ; darktable/optimized/introspection_colorzones.c.ll
 ; libquic/optimized/v3_purp.c.ll
-; libquic/optimized/x509_trs.c.ll
 ; lua/optimized/lstrlib.ll
 ; luau/optimized/lstrlib.cpp.ll
+; openexr/optimized/ImfHuf.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i32 %0) #0 {
 entry:
@@ -317,6 +309,32 @@ entry:
   %1 = sext i32 %0 to i64
   %2 = add nsw i64 %1, 32
   ret i64 %2
+}
+
+; 5 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(i32 %0) #0 {
+entry:
+  %1 = add i32 %0, 2
+  %2 = zext i32 %1 to i64
+  %3 = add nuw i64 %2, 9223372036854775806
+  ret i64 %3
+}
+
+; 1 occurrences:
+; boost/optimized/text_file_backend.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000006(i32 %0) #0 {
+entry:
+  %1 = add i32 %0, 2
+  %2 = zext nneg i32 %1 to i64
+  %3 = add nuw i64 %2, 9223372036854775806
+  ret i64 %3
 }
 
 ; 1 occurrences:

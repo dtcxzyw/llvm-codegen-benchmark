@@ -1,5 +1,7 @@
 
-; 14 occurrences:
+; 16 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; cmake/optimized/sendf.c.ll
 ; curl/optimized/libcurl_la-sendf.ll
 ; folly/optimized/HugePages.cpp.ll

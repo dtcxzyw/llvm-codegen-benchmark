@@ -17,7 +17,7 @@ func0000000000000010:                   # @func0000000000000010
 	orb	%dil, %sil
 	orb	%sil, %al
 	retq
-func0000000000000098:                   # @func0000000000000098
+func0000000000000118:                   # @func0000000000000118
 	testl	%edx, %edx
 	setle	%al
 	orb	%dil, %sil

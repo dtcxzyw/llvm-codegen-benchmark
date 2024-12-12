@@ -34,3 +34,9 @@ func000000000000007d:                   # @func000000000000007d
 	sub	a1, a1, a0
 	addi	a0, a1, 1280
 	ret
+func000000000000007c:                   # @func000000000000007c
+	sext.w	a1, a1
+	slli	a1, a1, 2
+	sub	a0, a1, a0
+	addi	a0, a0, 4
+	ret

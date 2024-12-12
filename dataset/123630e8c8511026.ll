@@ -1,5 +1,7 @@
 
-; 7 occurrences:
+; 9 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; gromacs/optimized/sfactor.cpp.ll
 ; meshlab/optimized/Factor.cpp.ll
 ; proj/optimized/rouss.cpp.ll

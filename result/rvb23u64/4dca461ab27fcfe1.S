@@ -1,65 +1,65 @@
-func0000000000000104:                   # @func0000000000000104
+func0000000000000204:                   # @func0000000000000204
 	sub	a1, a1, a2
 	srli	a1, a1, 7
 	addw	a0, a0, a1
 	sltiu	a0, a0, 7
 	ret
-func000000000000010a:                   # @func000000000000010a
+func000000000000020a:                   # @func000000000000020a
 	sub	a1, a1, a2
 	srli	a1, a1, 4
 	addw	a0, a0, a1
 	sgtz	a0, a0
 	ret
-func0000000000000108:                   # @func0000000000000108
+func0000000000000208:                   # @func0000000000000208
 	sub	a1, a1, a2
 	srli	a1, a1, 3
 	addw	a0, a0, a1
 	sltiu	a0, a0, 256
 	xori	a0, a0, 1
 	ret
-func000000000000011a:                   # @func000000000000011a
+func000000000000022a:                   # @func000000000000022a
 	sub	a1, a1, a2
 	srli	a1, a1, 5
 	addw	a0, a0, a1
 	sgtz	a0, a0
 	ret
-func0000000000000101:                   # @func0000000000000101
+func0000000000000201:                   # @func0000000000000201
 	sub	a1, a1, a2
 	srli	a1, a1, 5
 	addw	a0, a0, a1
 	addi	a0, a0, -2
 	seqz	a0, a0
 	ret
-func0000000000000116:                   # @func0000000000000116
+func0000000000000226:                   # @func0000000000000226
 	sub	a1, a1, a2
 	srli	a1, a1, 3
 	addw	a0, a0, a1
 	slti	a0, a0, 0
 	ret
-func0000000000000106:                   # @func0000000000000106
+func0000000000000206:                   # @func0000000000000206
 	sub	a1, a1, a2
 	srli	a1, a1, 4
 	addw	a0, a0, a1
 	slti	a0, a0, 1
 	ret
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	sub	a1, a1, a2
 	srli	a1, a1, 2
 	addw	a0, a0, a1
 	sltiu	a0, a0, 137
 	xori	a0, a0, 1
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	sub	a1, a1, a2
 	srli	a1, a1, 2
 	addw	a0, a0, a1
 	slti	a0, a0, 0
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
+	sext.w	a0, a0
 	sub	a1, a1, a2
 	srli	a1, a1, 2
-	sext.w	a1, a1
-	negw	a0, a0
+	negw	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

@@ -36,7 +36,7 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000006:                   # @func0000000000000006
 	movl	%edi, %eax
 	andl	$1, %esi
-	shll	$15, %esi
-	shll	$10, %eax
+	shll	$12, %esi
+	shll	$9, %eax
 	orl	%esi, %eax
 	retq

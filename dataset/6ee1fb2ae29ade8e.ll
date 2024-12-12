@@ -1,11 +1,10 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; jemalloc/optimized/extent.ll
 ; jemalloc/optimized/extent.pic.ll
 ; jemalloc/optimized/extent.sym.ll
 ; llvm/optimized/X86InstructionSelector.cpp.ll
 ; openjdk/optimized/c1_LIRGenerator.ll
-; postgres/optimized/ginentrypage.ll
 ; qemu/optimized/linux-user_syscall.c.ll
 ; redis/optimized/extent.ll
 ; redis/optimized/extent.sym.ll

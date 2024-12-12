@@ -55,6 +55,9 @@ entry:
 ; 155 occurrences:
 ; abc/optimized/giaGen.c.ll
 ; abc/optimized/ifTune.c.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/topology.ll
 ; cmake/optimized/zdict.c.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cpython/optimized/memoryobject.ll
@@ -146,7 +149,6 @@ entry:
 ; nix/optimized/lockfile.ll
 ; nix/optimized/mercurial.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -159,7 +161,6 @@ entry:
 ; oiio/optimized/filesystem.cpp.ll
 ; oiio/optimized/formatspec.cpp.ll
 ; oiio/optimized/imagecache.cpp.ll
-; openblas/optimized/lsame.c.ll
 ; opencv/optimized/decoder.cpp.ll
 ; opencv/optimized/webcam_demo.cpp.ll
 ; openjdk/optimized/cdsConfig.ll
@@ -177,7 +178,6 @@ entry:
 ; php/optimized/phpdbg_help.ll
 ; postgres/optimized/wparser_def.ll
 ; qemu/optimized/accel_tcg_tcg-runtime-gvec.c.ll
-; qemu/optimized/meson-generated_.._dbus-display1.c.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; recastnavigation/optimized/RecastRegion.cpp.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
@@ -240,11 +240,9 @@ entry:
   ret i32 %3
 }
 
-; 7 occurrences:
+; 5 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_statistics.cpp.ll
 ; hdf5/optimized/H5EAtest.c.ll
-; linux/optimized/hid-sony.ll
-; linux/optimized/intel_engine_user.ll
 ; opencv/optimized/descriptor.cpp.ll
 ; opencv/optimized/fast_hough_transform.cpp.ll
 ; wireshark/optimized/packet-bpv7.c.ll

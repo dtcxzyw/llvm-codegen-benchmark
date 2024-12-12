@@ -36,3 +36,19 @@ func000000000000000a:                   # @func000000000000000a
 	vpcmpgtq	.LCPI4_0(%rip){1to4}, %ymm0, %k1
 	vpbroadcastq	.LCPI4_1(%rip), %ymm0 {%k1} # ymm0 {%k1} = [60000000,60000000,60000000,60000000]
 	retq
+.LCPI5_0:
+	.quad	6                               # 0x6
+.LCPI5_1:
+	.quad	5                               # 0x5
+func0000000000000018:                   # @func0000000000000018
+	vpcmpnleuq	.LCPI5_0(%rip){1to4}, %ymm0, %k1
+	vpbroadcastq	.LCPI5_1(%rip), %ymm0 {%k1} # ymm0 {%k1} = [5,5,5,5]
+	retq
+.LCPI6_0:
+	.quad	80                              # 0x50
+.LCPI6_1:
+	.quad	64                              # 0x40
+func0000000000000014:                   # @func0000000000000014
+	vpcmpltuq	.LCPI6_0(%rip){1to4}, %ymm0, %k1
+	vpbroadcastq	.LCPI6_1(%rip), %ymm0 {%k1} # ymm0 {%k1} = [64,64,64,64]
+	retq

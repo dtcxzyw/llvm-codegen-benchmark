@@ -3,7 +3,7 @@
 ; openssl/optimized/openssl-bin-pkey.ll
 ; wireshark/optimized/tap-sctp-analysis.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000018c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp ne i32 %0, 0
@@ -16,7 +16,7 @@ entry:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; openssl/optimized/libapps-lib-s_socket.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %not. = xor i1 %1, true
@@ -33,7 +33,7 @@ entry:
 ; abc/optimized/giaCTas.c.ll
 ; llvm/optimized/ObjCMT.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %not. = xor i1 %1, true
@@ -47,7 +47,7 @@ entry:
 ; abc/optimized/ifDec16.c.ll
 ; abc/optimized/kitTruth.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func00000000000000c1(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 1
   %not. = xor i1 %1, true
@@ -62,7 +62,7 @@ entry:
 ; abc/optimized/giaSimBase.c.ll
 ; git/optimized/shortlog.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000066(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func00000000000000c6(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 1
   %not. = xor i1 %1, true
@@ -77,7 +77,7 @@ entry:
 ; abc/optimized/ifDec10.c.ll
 ; linux/optimized/addrconf.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func00000000000000cc(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 1
   %not. = xor i1 %1, true
@@ -91,7 +91,7 @@ entry:
 ; quest/optimized/QuEST_validation.c.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp ne i32 %0, 0
@@ -103,7 +103,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000014a(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 1
   %not. = xor i1 %1, true
@@ -116,7 +116,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_dp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %not. = xor i1 %1, true

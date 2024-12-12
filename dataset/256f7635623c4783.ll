@@ -47,13 +47,14 @@ entry:
   ret i64 %5
 }
 
-; 29 occurrences:
+; 30 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_crc_test.cc.ll
 ; abseil-cpp/optimized/crc_cord_state.cc.ll
 ; abseil-cpp/optimized/crc_cord_state_test.cc.ll
 ; casadi/optimized/function.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
+; casadi/optimized/sparsity_internal.cpp.ll
 ; casadi/optimized/symbolic_qr.cpp.ll
 ; entt/optimized/meta_container.cpp.ll
 ; faiss/optimized/DirectMap.cpp.ll
@@ -118,9 +119,10 @@ entry:
   ret i64 %5
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; assimp/optimized/MDLLoader.cpp.ll
 ; assimp/optimized/SIBImporter.cpp.ll
+; boost/optimized/positional_options.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; gromacs/optimized/colvarvalue.cpp.ll

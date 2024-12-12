@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 28 occurrences:
 ; abc/optimized/giaEmbed.c.ll
 ; darktable/optimized/introspection_toneequal.c.ll
 ; draco/optimized/sequential_integer_attribute_decoder.cc.ll
@@ -7,6 +7,7 @@
 ; gromacs/optimized/swapcoords.cpp.ll
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
+; lvgl/optimized/lv_chart.ll
 ; meshlab/optimized/glarea.cpp.ll
 ; meshoptimizer/optimized/simplifier.cpp.ll
 ; minetest/optimized/guiScrollBar.cpp.ll

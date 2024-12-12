@@ -25,7 +25,7 @@ entry:
 ; darktable/optimized/introspection_tonecurve.c.ll
 ; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
 ; Function Attrs: nounwind
-define float @func0000000000000011(i32 %0, float %1) #0 {
+define float @func0000000000000021(i32 %0, float %1) #0 {
 entry:
   %2 = uitofp nneg i32 %0 to float
   %3 = fdiv float %1, %2

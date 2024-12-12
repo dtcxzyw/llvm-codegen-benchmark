@@ -24,7 +24,7 @@
 ; quantlib/optimized/pathwiseproductcallspecified.ll
 ; wasmedge/optimized/codegen.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
   %3 = sub nuw i64 %2, %0
@@ -41,7 +41,7 @@ entry:
 ; tinyobjloader/optimized/tiny_obj_loader.cc.ll
 ; velox/optimized/DenseHll.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000e4(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 1
   %3 = sub nuw nsw i64 %2, %0
@@ -56,7 +56,7 @@ entry:
 ; casadi/optimized/sparsity.cpp.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000c4(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 1
   %3 = sub nuw i64 %2, %0

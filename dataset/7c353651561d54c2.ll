@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/nf_conntrack_core.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000141(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %0, %1
   %3 = and i64 %2, 1023

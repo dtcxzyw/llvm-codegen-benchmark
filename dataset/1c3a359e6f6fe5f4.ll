@@ -1,5 +1,5 @@
 
-; 37 occurrences:
+; 35 occurrences:
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/fmu2.cpp.ll
 ; casadi/optimized/idas.c.ll
@@ -12,7 +12,6 @@
 ; openblas/optimized/dlagtf.c.ll
 ; openblas/optimized/dlaic1.c.ll
 ; openblas/optimized/dlanv2.c.ll
-; openblas/optimized/dlaqp2rk.c.ll
 ; openblas/optimized/dlaqp3rk.c.ll
 ; openblas/optimized/dlaqps.c.ll
 ; openblas/optimized/dlasv2.c.ll
@@ -24,7 +23,6 @@
 ; openblas/optimized/dtbrfs.c.ll
 ; openblas/optimized/dtprfs.c.ll
 ; openblas/optimized/dtrrfs.c.ll
-; openblas/optimized/dtrsna.c.ll
 ; opencv/optimized/ap3p.cpp.ll
 ; openvdb/optimized/FastSweeping.cc.ll
 ; quantlib/optimized/gaussian1dswaptionengine.ll

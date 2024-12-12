@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/time.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000008a(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 1
   %3 = sub nsw i64 %0, %2
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000158(i64 %0, i64 %1) #0 {
+define i1 @func00000000000002a8(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
   %3 = sub nsw i64 %0, %2
@@ -23,33 +23,11 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000151(i64 %0, i64 %1) #0 {
-entry:
-  %2 = ashr exact i64 %1, 3
-  %3 = sub nsw i64 %0, %2
-  %4 = icmp eq i64 %3, -1
-  ret i1 %4
-}
-
-; 1 occurrences:
-; libquic/optimized/string16.cc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000181(i64 %0, i64 %1) #0 {
-entry:
-  %2 = ashr exact i64 %1, 1
-  %3 = sub nuw i64 %0, %2
-  %4 = icmp eq i64 %3, -1
-  ret i1 %4
-}
-
 ; 2 occurrences:
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; llvm/optimized/RISCVMatInt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000204(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 52
   %3 = sub i64 %0, %2
@@ -62,7 +40,7 @@ entry:
 ; openusd/optimized/utils.c.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000154(i64 %0, i64 %1) #0 {
+define i1 @func00000000000002a4(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 32
   %3 = sub nsw i64 %0, %2
@@ -72,20 +50,9 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/fadvise.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1) #0 {
-entry:
-  %2 = ashr i64 %1, 12
-  %3 = sub nsw i64 %0, %2
-  %4 = icmp eq i64 %3, -1
-  ret i1 %4
-}
-
-; 1 occurrences:
 ; eastl/optimized/TestString.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000018a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000030a(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 2
   %3 = sub i64 %2, %0

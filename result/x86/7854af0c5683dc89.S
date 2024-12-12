@@ -15,9 +15,10 @@ func0000000000000010:                   # @func0000000000000010
 	addl	%edi, %eax
 	retq
 func00000000000000c7:                   # @func00000000000000c7
-	movl	%edi, %eax
-	cmpw	$1, %si
-	sbbl	$-1, %eax
+	xorl	%eax, %eax
+	cmpw	$-1, %si
+	setne	%al
+	addl	%edi, %eax
 	retq
 func0000000000000012:                   # @func0000000000000012
 	movl	%edi, %eax

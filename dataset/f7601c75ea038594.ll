@@ -35,7 +35,7 @@ entry:
   ret i1 %4
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; annoy/optimized/annoymodule.ll
 ; gromacs/optimized/dgemm.cpp.ll
 ; gromacs/optimized/dsyr2.cpp.ll
@@ -47,7 +47,6 @@ entry:
 ; proj/optimized/boggs.cpp.ll
 ; proj/optimized/hatano.cpp.ll
 ; proj/optimized/labrd.cpp.ll
-; proj/optimized/mbt_fps.cpp.ll
 ; proj/optimized/mbtfpq.cpp.ll
 ; proj/optimized/nell.cpp.ll
 ; proj/optimized/putp2.cpp.ll
@@ -62,8 +61,10 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; arrow/optimized/double-to-string.cc.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
 ; double_conversion/optimized/double-to-string.cc.ll
 ; openusd/optimized/double-to-string.cc.ll
 ; Function Attrs: nounwind

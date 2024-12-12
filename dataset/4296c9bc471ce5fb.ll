@@ -38,6 +38,8 @@ entry:
 }
 
 ; 125 occurrences:
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; brotli/optimized/encode.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; gromacs/optimized/kernel_ElecEwTwinCut_VdwLJCombGeom_F.cpp.ll
@@ -137,13 +139,11 @@ entry:
 ; libwebp/optimized/yuv_sse41.c.ll
 ; linux/optimized/generic-radix-tree.ll
 ; linux/optimized/hda_codec.ll
-; linux/optimized/he.ll
 ; linux/optimized/intel_bw.ll
 ; linux/optimized/intel_color.ll
 ; linux/optimized/intel_dpll.ll
 ; linux/optimized/intel_gt_pm_debugfs.ll
 ; linux/optimized/intel_opregion.ll
-; linux/optimized/intel_rc6.ll
 ; linux/optimized/maple_tree.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/nl80211.ll

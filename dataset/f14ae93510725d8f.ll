@@ -1,12 +1,11 @@
 
-; 19 occurrences:
+; 18 occurrences:
+; boost/optimized/ipc_reliable_message_queue.ll
 ; casadi/optimized/integrator.cpp.ll
 ; coreutils-rs/optimized/1e5pt7vtfxa4ahz7.ll
 ; linux/optimized/kobject_uevent.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/reg.ll
-; linux/optimized/scan.ll
-; linux/optimized/swnode.ll
 ; linux/optimized/tcp_input.ll
 ; linux/optimized/tx.ll
 ; llvm/optimized/Decl.cpp.ll
@@ -41,7 +40,7 @@ entry:
   %3 = icmp ne ptr %2, null
   %not. = xor i1 %1, true
   %4 = select i1 %not., i1 %3, i1 false
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

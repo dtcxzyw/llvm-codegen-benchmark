@@ -1,15 +1,12 @@
 
-; 31 occurrences:
+; 28 occurrences:
 ; linux/optimized/g4x_dp.ll
 ; linux/optimized/i915_gpu_error.ll
 ; linux/optimized/i9xx_wm.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_bw.ll
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_display.ll
-; linux/optimized/intel_display_debugfs.ll
-; linux/optimized/intel_display_device.ll
 ; linux/optimized/intel_display_irq.ll
 ; linux/optimized/intel_display_power.ll
 ; linux/optimized/intel_display_power_well.ll
@@ -40,9 +37,8 @@ entry:
   ret i64 %4
 }
 
-; 21 occurrences:
+; 20 occurrences:
 ; linux/optimized/cfg.ll
-; linux/optimized/drm_hdmi_helper.ll
 ; linux/optimized/i915_gpu_error.ll
 ; linux/optimized/intel_atomic_plane.ll
 ; linux/optimized/intel_color.ll

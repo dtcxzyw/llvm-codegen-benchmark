@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000286(i64 %0) #0 {
+define i1 @func0000000000000906(i64 %0) #0 {
 entry:
   %1 = icmp ugt i64 %0, 1152921504606846975
   ret i1 %1
@@ -44,7 +44,7 @@ entry:
 ; graphviz/optimized/taper.c.ll
 ; opencc/optimized/keyset.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0) #0 {
+define i1 @func0000000000000028(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 8070450532247928832
   %2 = icmp ne i64 %1, 0
@@ -113,7 +113,7 @@ entry:
 ; luau/optimized/ValueTracking.cpp.ll
 ; opencc/optimized/keyset.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0) #0 {
+define i1 @func0000000000000021(i64 %0) #0 {
 entry:
   %1 = icmp eq i64 %0, -9223372036854775808
   ret i1 %1
@@ -122,7 +122,7 @@ entry:
 ; 1 occurrences:
 ; jsonnet/optimized/rapidyaml.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0) #0 {
+define i1 @func0000000000000024(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i63
   %2 = icmp ult i63 %1, 9
@@ -132,7 +132,7 @@ entry:
 ; 1 occurrences:
 ; graphviz/optimized/closest.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000218(i64 %0) #0 {
+define i1 @func0000000000000828(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 8070450532247928832
   %2 = icmp ne i64 %1, 0

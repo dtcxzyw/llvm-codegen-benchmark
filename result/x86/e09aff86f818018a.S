@@ -20,9 +20,8 @@ func000000000000001a:                   # @func000000000000001a
 	retq
 func000000000000001b:                   # @func000000000000001b
 	movzwl	%si, %eax
-	shll	$5, %eax
 	subq	%rax, %rdi
-	leaq	4(%rdi), %rax
+	leaq	6(%rdi), %rax
 	retq
 func0000000000000018:                   # @func0000000000000018
 	movzwl	%si, %eax
@@ -36,7 +35,7 @@ func0000000000000010:                   # @func0000000000000010
 	subq	%rax, %rdi
 	leaq	-16(%rdi), %rax
 	retq
-func0000000000000012:                   # @func0000000000000012
+func0000000000000013:                   # @func0000000000000013
 	movzwl	%si, %eax
 	shll	$4, %eax
 	subq	%rax, %rdi

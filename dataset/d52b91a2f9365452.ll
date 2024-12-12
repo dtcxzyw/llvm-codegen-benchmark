@@ -6,7 +6,7 @@
 ; cpython/optimized/_codecs_kr.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000061(i16 %0, i16 %1) #0 {
 entry:
   %2 = add nuw nsw i16 %0, %1
   %3 = and i16 %2, 3

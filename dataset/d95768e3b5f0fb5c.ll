@@ -1,5 +1,6 @@
 
-; 26 occurrences:
+; 28 occurrences:
+; cmake/optimized/huf_compress.c.ll
 ; git/optimized/read-cache.ll
 ; graphviz/optimized/gxl2gv.c.ll
 ; minetest/optimized/reflowscan.cpp.ll
@@ -26,6 +27,7 @@
 ; ruby/optimized/string.ll
 ; ruby/optimized/vm_backtrace.ll
 ; ruby/optimized/zlib.ll
+; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0) #0 {
 entry:

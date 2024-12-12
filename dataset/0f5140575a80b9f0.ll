@@ -1,5 +1,17 @@
 
-; 170 occurrences:
+; 1 occurrences:
+; verilator/optimized/V3PreProc.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000d(i32 %0) #0 {
+entry:
+  %1 = add nsw i32 %0, -1
+  %2 = ashr exact i32 %1, 2
+  %3 = mul nsw i32 %2, -3
+  ret i32 %3
+}
+
+; 171 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -176,6 +188,39 @@ entry:
   %1 = add nsw i32 %0, -261663
   %2 = ashr i32 %1, 21
   %3 = mul nsw i32 %2, -1741647
+  ret i32 %3
+}
+
+; 1 occurrences:
+; postgres/optimized/heapam.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000007(i32 %0) #0 {
+entry:
+  %1 = add i32 %0, -458752
+  %2 = ashr exact i32 %1, 16
+  %3 = mul nuw nsw i32 %2, 104
+  ret i32 %3
+}
+
+; 1 occurrences:
+; postgres/optimized/parse_utilcmd.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000005(i32 %0) #0 {
+entry:
+  %1 = add i32 %0, -458752
+  %2 = ashr exact i32 %1, 16
+  %3 = mul nsw i32 %2, 104
+  ret i32 %3
+}
+
+; 1 occurrences:
+; freetype/optimized/ftbitmap.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000003(i32 %0) #0 {
+entry:
+  %1 = add i32 %0, 32
+  %2 = ashr i32 %1, 6
+  %3 = mul nuw nsw i32 %2, 3
   ret i32 %3
 }
 

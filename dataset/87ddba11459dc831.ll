@@ -17,12 +17,9 @@ entry:
   ret i32 %4
 }
 
-; 56 occurrences:
+; 52 occurrences:
 ; clamav/optimized/pe_icons.c.ll
 ; clamav/optimized/unpack.cpp.ll
-; libwebp/optimized/upsampling.c.ll
-; libwebp/optimized/upsampling_sse2.c.ll
-; libwebp/optimized/yuv.c.ll
 ; linux/optimized/intel_overlay.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/ParseDecl.cpp.ll
@@ -64,7 +61,6 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -83,7 +79,7 @@ entry:
   ret i32 %4
 }
 
-; 124 occurrences:
+; 125 occurrences:
 ; abc/optimized/extraUtilTruth.c.ll
 ; abc/optimized/giaMf.c.ll
 ; abc/optimized/giaNf.c.ll
@@ -94,6 +90,7 @@ entry:
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; arrow/optimized/bpacking.cc.ll
 ; arrow/optimized/float16.cc.ll
+; boost/optimized/core.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; clamav/optimized/lzxd.c.ll
 ; clamav/optimized/pe_icons.c.ll
@@ -128,7 +125,6 @@ entry:
 ; linux/optimized/insn-eval.ll
 ; linux/optimized/intel_sseu.ll
 ; linux/optimized/io_apic.ll
-; linux/optimized/logips2pp.ll
 ; linux/optimized/random32.ll
 ; linux/optimized/serial_core.ll
 ; linux/optimized/xhci-debugfs.ll
@@ -142,6 +138,7 @@ entry:
 ; lua/optimized/lvm.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; lvgl/optimized/lv_draw_sw_img.ll
 ; minetest/optimized/CImage.cpp.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; node/optimized/libnode.string_bytes.ll

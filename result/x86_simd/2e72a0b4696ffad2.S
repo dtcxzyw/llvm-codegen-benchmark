@@ -4,7 +4,7 @@
 	.quad	-48                             # 0xffffffffffffffd0
 .LCPI0_2:
 	.quad	1844674407370955161             # 0x1999999999999999
-func0000000000000204:                   # @func0000000000000204
+func0000000000000404:                   # @func0000000000000404
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vpmullq	.LCPI0_0(%rip){1to4}, %ymm2, %ymm0

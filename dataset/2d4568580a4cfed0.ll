@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 28 occurrences:
 ; git/optimized/ewah_bitmap.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll
@@ -16,16 +16,11 @@
 ; spike/optimized/cbo_zero.ll
 ; spike/optimized/f128_div.ll
 ; spike/optimized/f128_sqrt.ll
-; spike/optimized/f128_to_f16.ll
-; spike/optimized/f128_to_f32.ll
 ; spike/optimized/f32_div.ll
 ; spike/optimized/f32_sqrt.ll
 ; spike/optimized/f32_to_bf16.ll
-; spike/optimized/f32_to_f16.ll
 ; spike/optimized/f64_div.ll
 ; spike/optimized/f64_sqrt.ll
-; spike/optimized/f64_to_f16.ll
-; spike/optimized/f64_to_f32.ll
 ; spike/optimized/s_addMagsF16.ll
 ; spike/optimized/s_mulAddF128.ll
 ; spike/optimized/s_mulAddF16.ll
@@ -157,19 +152,18 @@ entry:
 ; spike/optimized/vzext_vf8.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 2
   %3 = and i64 %2, 31
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = icmp eq i64 %4, 0
   ret i1 %5
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; opencv/optimized/softfloat.cpp.ll
 ; spike/optimized/f128_to_i32_r_minMag.ll
-; spike/optimized/f128_to_ui32_r_minMag.ll
 ; spike/optimized/f32_to_i32_r_minMag.ll
 ; spike/optimized/f32_to_i64_r_minMag.ll
 ; spike/optimized/f32_to_ui32_r_minMag.ll
@@ -195,7 +189,7 @@ define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
   %3 = and i64 %2, 4294967292
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = icmp ult i64 %4, 4
   ret i1 %5
 }
@@ -203,36 +197,12 @@ entry:
 ; 1 occurrences:
 ; coreutils-rs/optimized/tq1d77uuiq535i2.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = and i64 %2, 4294963200
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = icmp ne i64 %4, 1
-  ret i1 %5
-}
-
-; 1 occurrences:
-; linux/optimized/synaptics.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
-entry:
-  %2 = lshr i64 %1, 16
-  %3 = and i64 %2, 255
-  %4 = or disjoint i64 %3, %0
-  %5 = icmp ult i64 %4, 1797
-  ret i1 %5
-}
-
-; 1 occurrences:
-; linux/optimized/synaptics.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
-entry:
-  %2 = lshr i64 %1, 16
-  %3 = and i64 %2, 255
-  %4 = or disjoint i64 %3, %0
-  %5 = icmp ugt i64 %4, 1796
   ret i1 %5
 }
 

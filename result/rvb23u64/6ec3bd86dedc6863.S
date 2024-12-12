@@ -5,7 +5,7 @@ func000000000000000a:                   # @func000000000000000a
 	slti	a0, a0, 616
 	xori	a0, a0, 1
 	ret
-func000000000000005c:                   # @func000000000000005c
+func00000000000000ac:                   # @func00000000000000ac
 	zext.h	a1, a1
 	subw	a0, a0, a1
 	sltiu	a0, a0, -1
@@ -22,7 +22,7 @@ func0000000000000006:                   # @func0000000000000006
 	addiw	a0, a0, -8
 	slti	a0, a0, 48
 	ret
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	zext.h	a1, a1
 	subw	a0, a0, a1
 	addiw	a0, a0, -257

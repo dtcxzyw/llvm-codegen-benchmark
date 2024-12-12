@@ -50,9 +50,10 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; libwebp/optimized/lossless_enc.c.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; opencv/optimized/gapi_core_perf_tests.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000030(i32 %0, i32 %1, i64 %2) #0 {

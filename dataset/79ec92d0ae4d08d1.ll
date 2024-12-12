@@ -1,6 +1,6 @@
 
-%struct.aiFace.2712966 = type { i32, ptr }
-%"class.cvc5::internal::NodeTemplate.3376546" = type { ptr }
+%struct.aiFace.2825500 = type { i32, ptr }
+%"class.cvc5::internal::NodeTemplate.3561273" = type { ptr }
 
 ; 3 occurrences:
 ; hdf5/optimized/H5Znbit.c.ll
@@ -9,9 +9,9 @@
 ; Function Attrs: nounwind
 define ptr @func000000000000002c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp eq i32 %2, 0
+  %3 = icmp eq i32 %2, 1
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = zext nneg i32 %5 to i64
   %7 = getelementptr i8, ptr %0, i64 %6
   ret ptr %7
@@ -22,13 +22,13 @@ entry:
 ; assimp/optimized/glTFImporter.cpp.ll
 ; wolfssl/optimized/rsa.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000022(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000023(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 3
   %4 = sext i1 %3 to i32
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw %struct.aiFace.2712966, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %struct.aiFace.2825500, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -42,13 +42,13 @@ entry:
 ; cvc5/optimized/theory_sep.cpp.ll
 ; cvc5/optimized/unsat_core_manager.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000002b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 2
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw %"class.cvc5::internal::NodeTemplate.3376546", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"class.cvc5::internal::NodeTemplate.3561273", ptr %0, i64 %6
   ret ptr %7
 }
 

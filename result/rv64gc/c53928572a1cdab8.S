@@ -1,6 +1,7 @@
-func0000000000000011:                   # @func0000000000000011
-	addw	a1, a1, a2
-	negw	a0, a0
+func0000000000000021:                   # @func0000000000000021
+	sext.w	a0, a0
+	add	a1, a1, a2
+	negw	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
@@ -17,17 +18,18 @@ func0000000000000001:                   # @func0000000000000001
 	seqz	a0, a0
 	ret
 func000000000000000c:                   # @func000000000000000c
-	addw	a1, a1, a2
-	negw	a0, a0
+	sext.w	a0, a0
+	add	a1, a1, a2
+	negw	a1, a1
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
-func0000000000000116:                   # @func0000000000000116
+func0000000000000226:                   # @func0000000000000226
 	add	a1, a1, a2
 	addw	a0, a0, a1
 	slti	a0, a0, 0
 	ret
-func0000000000000111:                   # @func0000000000000111
+func0000000000000221:                   # @func0000000000000221
 	add	a1, a1, a2
 	addw	a0, a0, a1
 	addi	a0, a0, 1
@@ -39,18 +41,19 @@ func000000000000000a:                   # @func000000000000000a
 	slti	a0, a0, 19
 	xori	a0, a0, 1
 	ret
-func000000000000020c:                   # @func000000000000020c
-	addw	a1, a1, a2
-	negw	a0, a0
+func0000000000000006:                   # @func0000000000000006
+	add	a1, a1, a2
+	addw	a0, a0, a1
+	slti	a0, a0, 1
+	ret
+func000000000000040c:                   # @func000000000000040c
+	sext.w	a0, a0
+	add	a1, a1, a2
+	negw	a1, a1
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
-func0000000000000016:                   # @func0000000000000016
-	add	a1, a1, a2
-	addw	a0, a0, a1
-	slti	a0, a0, 0
-	ret
-func0000000000000006:                   # @func0000000000000006
+func0000000000000026:                   # @func0000000000000026
 	add	a1, a1, a2
 	addw	a0, a0, a1
 	slti	a0, a0, 0

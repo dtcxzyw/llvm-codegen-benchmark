@@ -3,15 +3,15 @@
 ; hdf5/optimized/H5Tconv_vlen.c.ll
 ; libpng/optimized/pngget.c.ll
 ; libquic/optimized/persistent_histogram_allocator.cc.ll
-; linux/optimized/nssearch.ll
 ; linux/optimized/nsutils.ll
 ; nuklear/optimized/unity.c.ll
 ; openjdk/optimized/pngget.ll
 ; openjdk/optimized/reflection.ll
+; slurm/optimized/gpu_nvml.ll
 ; wireshark/optimized/packet-dcerpc-nt.c.ll
 ; wolfssl/optimized/ssl.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000ccc(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000318c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 3
   %4 = icmp ne ptr %1, null
@@ -37,7 +37,7 @@ entry:
 ; slurm/optimized/select_linear.ll
 ; wireshark/optimized/packet-nvme.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001cc(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000058c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 3
   %4 = icmp ne ptr %1, null
@@ -55,7 +55,7 @@ entry:
 ; wireshark/optimized/addr_resolv.c.ll
 ; wireshark/optimized/packet-protobuf.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c1c(ptr %0, i32 %1, ptr %2) #0 {
+define i1 @func000000000000302c(ptr %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp eq i32 %1, 0
@@ -68,7 +68,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/matcher-hash.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000004cc(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000118c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, -2
   %4 = icmp ne ptr %1, null
@@ -82,7 +82,7 @@ entry:
 ; linux/optimized/ndisc.ll
 ; nuklear/optimized/unity.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000acc(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000298c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
   %4 = icmp ne ptr %1, null
@@ -95,7 +95,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ucurr.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000006cc(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000198c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 1
   %4 = icmp ne ptr %1, null
@@ -108,7 +108,7 @@ entry:
 ; 1 occurrences:
 ; hwloc/optimized/distances.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c8c(ptr %0, i32 %1, ptr %2) #0 {
+define i1 @func000000000000310c(ptr %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp ugt i32 %1, 1

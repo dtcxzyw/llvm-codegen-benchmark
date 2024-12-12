@@ -6,7 +6,7 @@ func000000000000000a:                   # @func000000000000000a
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfadd.vf	v16, v16, fa5
 	vmfle.vv	v24, v8, v16
-	vmand.mm	v0, v24, v0
+	vmand.mm	v0, v0, v24
 	ret
 func000000000000000c:                   # @func000000000000000c
 	fli.d	fa5, -1.0
@@ -23,7 +23,7 @@ func0000000000000002:                   # @func0000000000000002
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfadd.vf	v16, v16, fa5
 	vmflt.vv	v24, v8, v16
-	vmand.mm	v0, v24, v0
+	vmand.mm	v0, v0, v24
 	ret
 .LCPI3_0:
 	.quad	0xbee4f8b588e368f1              # double -1.0000000000000001E-5

@@ -1,5 +1,5 @@
 
-; 37 occurrences:
+; 36 occurrences:
 ; cmake/optimized/cmCTestCurl.cxx.ll
 ; cmake/optimized/cmCTestSubmitHandler.cxx.ll
 ; cmake/optimized/cmFileCommand.cxx.ll
@@ -32,7 +32,6 @@
 ; opencv/optimized/tldEnsembleClassifier.cpp.ll
 ; opencv/optimized/transientareassegmentationmodule.cpp.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
-; quantlib/optimized/levenbergmarquardt.ll
 ; ruby/optimized/thread.ll
 ; spike/optimized/c_mul.ll
 ; spike/optimized/mul.ll

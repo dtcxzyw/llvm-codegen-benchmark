@@ -1,27 +1,5 @@
 
-; 12 occurrences:
-; libquic/optimized/random.c.ll
-; lief/optimized/ssl_msg.c.ll
-; linux/optimized/ehci-hcd.ll
-; linux/optimized/flow_dissector.ll
-; linux/optimized/hid-lg4ff.ll
-; linux/optimized/show_mem.ll
-; minetest/optimized/content_mapblock.cpp.ll
-; minetest/optimized/log.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
-; openssl/optimized/libcrypto-lib-bn_rand.ll
-; openssl/optimized/libcrypto-shlib-bn_rand.ll
-; wireshark/optimized/packet-dnp.c.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000018(i8 %0, i32 %1) #0 {
-entry:
-  %2 = shl nuw nsw i32 1, %1
-  %3 = trunc i32 %2 to i8
-  %4 = or i8 %3, %0
-  ret i8 %4
-}
-
-; 148 occurrences:
+; 145 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; cmake/optimized/mprintf.c.ll
 ; cpython/optimized/codeobject.ll
@@ -34,7 +12,6 @@ entry:
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/catchup.c.ll
 ; hyperscan/optimized/fdr_compile.cpp.ll
-; hyperscan/optimized/init.c.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; hyperscan/optimized/mpv.c.ll
 ; hyperscan/optimized/ng_stop.cpp.ll
@@ -54,7 +31,6 @@ entry:
 ; linux/optimized/yenta_socket.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/Attributes.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/TargetLibraryInfo.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; minetest/optimized/imagefilters.cpp.ll
@@ -91,7 +67,6 @@ entry:
 ; postgres/optimized/bloomfilter.ll
 ; postgres/optimized/brin_bloom.ll
 ; postgres/optimized/clog.ll
-; postgres/optimized/datapagemap.ll
 ; postgres/optimized/tsgistidx.ll
 ; postgres/optimized/varbit.ll
 ; qemu/optimized/hw_net_eepro100.c.ll
@@ -175,7 +150,28 @@ define i8 @func000000000000001c(i8 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 1, %1
   %3 = trunc nuw i32 %2 to i8
-  %4 = or i8 %3, %0
+  %4 = or i8 %0, %3
+  ret i8 %4
+}
+
+; 11 occurrences:
+; lief/optimized/ssl_msg.c.ll
+; linux/optimized/ehci-hcd.ll
+; linux/optimized/flow_dissector.ll
+; linux/optimized/hid-lg4ff.ll
+; linux/optimized/show_mem.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; minetest/optimized/content_mapblock.cpp.ll
+; minetest/optimized/log.cpp.ll
+; openssl/optimized/libcrypto-lib-bn_rand.ll
+; openssl/optimized/libcrypto-shlib-bn_rand.ll
+; wireshark/optimized/packet-dnp.c.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000018(i8 %0, i32 %1) #0 {
+entry:
+  %2 = shl nuw nsw i32 3, %1
+  %3 = trunc i32 %2 to i8
+  %4 = or i8 %0, %3
   ret i8 %4
 }
 
@@ -208,22 +204,21 @@ define i8 @func0000000000000010(i8 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = trunc i32 %2 to i8
-  %4 = or i8 %3, %0
+  %4 = or i8 %0, %3
   ret i8 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; linux/optimized/yenta_socket.ll
 ; llvm/optimized/TargetLibraryInfo.cpp.ll
 ; php/optimized/pcre2_study.ll
 ; postgres/optimized/clog.ll
-; zxing/optimized/MCBitMatrixParser.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000001e(i8 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 1, %1
   %3 = trunc nuw nsw i32 %2 to i8
-  %4 = or i8 %3, %0
+  %4 = or i8 %0, %3
   ret i8 %4
 }
 
@@ -235,7 +230,7 @@ define i8 @func0000000000000000(i8 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 3, %1
   %3 = trunc i32 %2 to i8
-  %4 = or i8 %3, %0
+  %4 = or i8 %0, %3
   ret i8 %4
 }
 
@@ -246,7 +241,7 @@ define i8 @func0000000000000008(i8 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 -1, %1
   %3 = trunc i32 %2 to i8
-  %4 = or i8 %3, %0
+  %4 = or i8 %0, %3
   ret i8 %4
 }
 

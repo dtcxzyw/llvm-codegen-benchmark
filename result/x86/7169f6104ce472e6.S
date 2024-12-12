@@ -13,7 +13,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	$13, %edx
 	cmovaeq	%rsi, %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	movq	%rdi, %rax
 	cmpl	$65537, %edx                    # imm = 0x10001
 	cmovbq	%rsi, %rax

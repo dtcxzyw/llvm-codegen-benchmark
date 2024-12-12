@@ -11,13 +11,6 @@ func0000000000000006:                   # @func0000000000000006
 	xorb	$1, %sil
 	orb	%sil, %al
 	retq
-func0000000000000004:                   # @func0000000000000004
-	andl	%edx, %esi
-	cmpq	$128, %rdi
-	setb	%al
-	xorb	$1, %sil
-	orb	%sil, %al
-	retq
 func0000000000000008:                   # @func0000000000000008
 	andl	%edx, %esi
 	cmpq	$2, %rdi
@@ -28,5 +21,11 @@ func0000000000000001:                   # @func0000000000000001
 	andl	%edx, %esi
 	testq	%rdi, %rdi
 	sete	%al
+	andb	%sil, %al
+	retq
+func0000000000000004:                   # @func0000000000000004
+	andl	%edx, %esi
+	cmpq	$16385, %rdi                    # imm = 0x4001
+	setb	%al
 	andb	%sil, %al
 	retq

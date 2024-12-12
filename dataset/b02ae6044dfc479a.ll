@@ -1,5 +1,5 @@
 
-; 44 occurrences:
+; 43 occurrences:
 ; bullet3/optimized/b3DNA.ll
 ; ceres/optimized/context_impl.cc.ll
 ; cpython/optimized/_datetimemodule.ll
@@ -16,7 +16,6 @@
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/mapgen_v6.cpp.ll
 ; minetest/optimized/mg_ore.cpp.ll
-; nuttx/optimized/lib_strftime.c.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; opencv/optimized/finder_pattern_finder.cpp.ll
 ; opencv/optimized/mathfuncs.cpp.ll

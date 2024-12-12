@@ -1,8 +1,9 @@
 
-; 263 occurrences:
+; 261 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/encode.c.ll
@@ -86,7 +87,7 @@
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
-; linux/optimized/vclock_gettime.ll
+; lvgl/optimized/lv_tlsf.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nix/optimized/attrs.ll
 ; nix/optimized/binary-cache-store.ll
@@ -106,8 +107,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -241,7 +240,6 @@
 ; ruby/optimized/bignum.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
-; spike/optimized/s_shortShiftLeft64To96M.ll
 ; tev/optimized/Channel.cpp.ll
 ; tev/optimized/ClipboardImageLoader.cpp.ll
 ; tev/optimized/Common.cpp.ll
@@ -472,7 +470,8 @@ entry:
   ret i32 %5
 }
 
-; 97 occurrences:
+; 98 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
 ; fmt/optimized/header-only-test.cc.ll
@@ -592,7 +591,8 @@ entry:
   ret i32 %5
 }
 
-; 9 occurrences:
+; 10 occurrences:
+; boost/optimized/alloc_lib.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/encode.c.ll
@@ -631,11 +631,12 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; cmake/optimized/fse_compress.c.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; darktable/optimized/HasselbladDecompressor.cpp.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
+; lvgl/optimized/lv_tlsf.ll
 ; zstd/optimized/fse_compress.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000003a(i64 %0, i32 %1) #0 {

@@ -37,11 +37,10 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; clamav/optimized/clamdtop.c.ll
 ; linux/optimized/intel_backlight.ll
 ; linux/optimized/intel_rps.ll
-; linux/optimized/tsc_msr.ll
 ; openjdk/optimized/imageioJPEG.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
@@ -52,7 +51,8 @@ entry:
   ret i32 %4
 }
 
-; 169 occurrences:
+; 170 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll

@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 17 occurrences:
 ; box2d/optimized/b2_rope.cpp.ll
 ; bullet3/optimized/b3VoronoiSimplexSolver.ll
 ; bullet3/optimized/btSoftBody.ll
@@ -7,14 +7,12 @@
 ; gromacs/optimized/sbdsqr.cpp.ll
 ; gromacs/optimized/slasq2.cpp.ll
 ; gromacs/optimized/slasq3.cpp.ll
-; gromacs/optimized/slasq5.cpp.ll
 ; gromacs/optimized/slasq6.cpp.ll
 ; gromacs/optimized/ssterf.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; minetest/optimized/CSkinnedMesh.cpp.ll
-; openblas/optimized/ieeeck.c.ll
 ; pbrt-v4/optimized/bssrdf.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; pbrt-v4/optimized/surfscatter.cpp.ll

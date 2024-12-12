@@ -4,7 +4,7 @@ func000000000000000f:                   # @func000000000000000f
 	lui	a0, 16
 	vwsll.vi	v12, v11, 8
 	vsetvli	zero, zero, e32, m2, ta, ma
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	addi	a0, a0, -256
 	vand.vx	v8, v8, a0
 	ret

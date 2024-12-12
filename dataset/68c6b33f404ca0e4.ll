@@ -40,7 +40,7 @@ entry:
   ret i32 %4
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; eastl/optimized/EAString.cpp.ll
 ; grpc/optimized/bin_encoder.cc.ll
@@ -56,6 +56,7 @@ entry:
 ; llvm/optimized/PGOCtxProfWriter.cpp.ll
 ; llvm/optimized/SerializedDiagnosticPrinter.cpp.ll
 ; llvm/optimized/TestModuleFileExtension.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; php/optimized/crypt_freesec.ll
 ; z3/optimized/sat_binspr.cpp.ll
 ; Function Attrs: nounwind

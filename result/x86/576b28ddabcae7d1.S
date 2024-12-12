@@ -14,3 +14,11 @@ func0000000000000035:                   # @func0000000000000035
 	leal	(%rsi,%rdi), %eax
 	decb	%al
 	retq
+func0000000000000003:                   # @func0000000000000003
+	leal	(%rsi,%rdi), %eax
+	incb	%al
+	retq
+func0000000000000020:                   # @func0000000000000020
+	leal	(%rsi,%rdi), %eax
+	incb	%al
+	retq

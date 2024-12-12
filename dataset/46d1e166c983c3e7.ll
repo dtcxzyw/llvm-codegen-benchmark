@@ -1,9 +1,8 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; spike/optimized/fsr.ll
 ; spike/optimized/fsrw.ll
-; sqlite/optimized/sqlite3.ll
 ; stockfish/optimized/position.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i32 %1, i64 %2) #0 {

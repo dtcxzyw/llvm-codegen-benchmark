@@ -1,7 +1,6 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; hyperscan/optimized/limex_simd256.c.ll
-; luajit/optimized/minilua.ll
 ; php/optimized/zend_gc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i32 %0, i32 %1) #0 {
@@ -47,6 +46,28 @@ entry:
   %2 = icmp slt i32 %0, 2
   %3 = select i1 %2, i32 %0, i32 %1
   %4 = shl nsw i32 %3, 3
+  ret i32 %4
+}
+
+; 1 occurrences:
+; hermes/optimized/SegmentedArray.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000053(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %0, 4097
+  %3 = select i1 %2, i32 %0, i32 %1
+  %4 = shl nuw nsw i32 %3, 3
+  ret i32 %4
+}
+
+; 1 occurrences:
+; luajit/optimized/minilua.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000050(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %0, 8
+  %3 = select i1 %2, i32 %0, i32 %1
+  %4 = shl i32 %3, 23
   ret i32 %4
 }
 

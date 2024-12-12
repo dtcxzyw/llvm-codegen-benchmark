@@ -26,11 +26,25 @@ func00000000000000c3:                   # @func00000000000000c3
 	shrq	$35, %rax
 	addl	%edi, %eax
 	retq
-func000000000000008b:                   # @func000000000000008b
+func000000000000028b:                   # @func000000000000028b
 	cmpl	$-146097, %edx                  # imm = 0xFFFDC54F
 	sbbl	$0, %esi
 	imulq	$963315389, %rsi, %rax          # imm = 0x396B06BD
 	shrq	$47, %rax
+	addl	%edi, %eax
+	retq
+func0000000000000089:                   # @func0000000000000089
+	cmpl	$3, %edx
+	sbbl	$0, %esi
+	imulq	$1374389535, %rsi, %rax         # imm = 0x51EB851F
+	shrq	$39, %rax
+	addl	%edi, %eax
+	retq
+func000000000000008b:                   # @func000000000000008b
+	cmpl	$3, %edx
+	sbbl	$0, %esi
+	imulq	$1374389535, %rsi, %rax         # imm = 0x51EB851F
+	shrq	$39, %rax
 	addl	%edi, %eax
 	retq
 func0000000000000081:                   # @func0000000000000081

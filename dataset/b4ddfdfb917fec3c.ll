@@ -12,8 +12,7 @@ entry:
   ret i32 %2
 }
 
-; 2 occurrences:
-; linux/optimized/net-procfs.ll
+; 1 occurrences:
 ; llvm/optimized/SymbolCache.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0) #0 {

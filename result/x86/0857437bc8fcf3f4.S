@@ -29,15 +29,15 @@ func0000000000000005:                   # @func0000000000000005
 	imulq	$-100, %rdi, %rax
 	addq	%rcx, %rax
 	retq
-func000000000000001a:                   # @func000000000000001a
-	movl	%esi, %ecx
-	leaq	(%rdi,%rdi,2), %rax
-	addq	%rcx, %rax
-	retq
 func0000000000000018:                   # @func0000000000000018
 	movl	%esi, %eax
 	leaq	(%rdi,%rdi,4), %rcx
 	leaq	(%rax,%rcx,2), %rax
+	retq
+func000000000000001a:                   # @func000000000000001a
+	movl	%esi, %ecx
+	leaq	(%rdi,%rdi,2), %rax
+	addq	%rcx, %rax
 	retq
 func000000000000000a:                   # @func000000000000000a
 	movl	%esi, %ecx

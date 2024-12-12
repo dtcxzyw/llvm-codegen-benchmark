@@ -1,5 +1,5 @@
 
-; 151 occurrences:
+; 149 occurrences:
 ; abc/optimized/pdrUtil.c.ll
 ; abc/optimized/saigSimFast.c.ll
 ; abc/optimized/sbdCore.c.ll
@@ -60,11 +60,9 @@
 ; openblas/optimized/dggsvp3.c.ll
 ; openblas/optimized/dhsein.c.ll
 ; openblas/optimized/dlaeda.c.ll
-; openblas/optimized/dlaqp2rk.c.ll
 ; openblas/optimized/dlarrv.c.ll
 ; openblas/optimized/dlatm7.c.ll
 ; openblas/optimized/dlatrs3.c.ll
-; openblas/optimized/dorghr.c.ll
 ; openblas/optimized/dtrevc.c.ll
 ; openblas/optimized/dtrevc3.c.ll
 ; opencv/optimized/box_filter.dispatch.cpp.ll
@@ -155,21 +153,19 @@
 define i64 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext i32 %3 to i64
   %5 = shl nuw nsw i64 %4, 2
   ret i64 %5
 }
 
-; 13 occurrences:
+; 11 occurrences:
 ; abc/optimized/wlcBlast.c.ll
 ; darktable/optimized/RawImage.cpp.ll
 ; linux/optimized/huf_decompress.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; mitsuba3/optimized/builder.cpp.ll
 ; openblas/optimized/dlansf.c.ll
-; openblas/optimized/dorgl2.c.ll
-; openblas/optimized/dorgr2.c.ll
 ; openjdk/optimized/escape.ll
 ; openjdk/optimized/jexec.ll
 ; openjdk/optimized/nmethod.ll
@@ -179,7 +175,7 @@ entry:
 define i64 @func000000000000000b(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = zext i32 %3 to i64
   %5 = shl nuw nsw i64 %4, 4
   ret i64 %5
@@ -195,7 +191,7 @@ entry:
 define i64 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext i32 %3 to i64
   %5 = shl nuw i64 %4, 32
   ret i64 %5
@@ -207,7 +203,7 @@ entry:
 define i64 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = zext i32 %3 to i64
   %5 = shl nuw i64 %4, 32
   ret i64 %5

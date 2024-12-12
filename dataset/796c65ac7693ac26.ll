@@ -10,7 +10,7 @@ entry:
   ret i64 %4
 }
 
-; 29 occurrences:
+; 28 occurrences:
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestExtra.cpp.ll
 ; eastl/optimized/TestIterator.cpp.ll
@@ -33,7 +33,6 @@ entry:
 ; mold/optimized/output-chunks.cc.SH4.cc.ll
 ; mold/optimized/output-chunks.cc.SPARC64.cc.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
-; opencv/optimized/distransform.cpp.ll
 ; opencv/optimized/stardetector.cpp.ll
 ; openspiel/optimized/combinatorics.cc.ll
 ; openusd/optimized/utils.c.ll
@@ -45,7 +44,7 @@ define i64 @func0000000000000015(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
   %3 = xor i64 %2, -1
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -58,12 +57,11 @@ define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 32
   %3 = xor i64 %2, -1
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
-; 2 occurrences:
-; linux/optimized/fadvise.ll
+; 1 occurrences:
 ; quantlib/optimized/gaussian1dswaptionengine.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {

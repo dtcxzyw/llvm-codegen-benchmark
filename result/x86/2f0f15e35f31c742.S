@@ -1,26 +1,26 @@
-func0000000000000022:                   # @func0000000000000022
-	cmpl	%esi, %edx
+func0000000000000042:                   # @func0000000000000042
+	cmpl	%edx, %esi
 	sete	%cl
 	testq	%rdi, %rdi
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000582:                   # @func0000000000000582
-	cmpl	%esi, %edx
+func0000000000001302:                   # @func0000000000001302
+	cmpl	%edx, %esi
 	setne	%cl
 	testq	%rdi, %rdi
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000722:                   # @func0000000000000722
-	cmpl	%esi, %edx
-	setbe	%cl
+func0000000000001e42:                   # @func0000000000001e42
+	cmpl	%edx, %esi
+	setae	%cl
 	testq	%rdi, %rdi
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000182:                   # @func0000000000000182
-	cmpl	%esi, %edx
+func0000000000000302:                   # @func0000000000000302
+	cmpl	%edx, %esi
 	setne	%cl
 	testq	%rdi, %rdi
 	sete	%al

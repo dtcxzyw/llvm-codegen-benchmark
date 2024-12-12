@@ -1,5 +1,6 @@
 
-; 11 occurrences:
+; 12 occurrences:
+; boost/optimized/rational.ll
 ; clamav/optimized/bytecode_vm.c.ll
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll
 ; glslang/optimized/Constant.cpp.ll

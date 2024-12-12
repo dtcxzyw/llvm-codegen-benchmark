@@ -1,7 +1,5 @@
 
-; 8 occurrences:
-; arrow/optimized/scalar_cast_string.cc.ll
-; arrow/optimized/utf8.cc.ll
+; 6 occurrences:
 ; gromacs/optimized/scanner.cpp.ll
 ; llvm/optimized/MachineInstr.cpp.ll
 ; llvm/optimized/RISCVPushPopOptimizer.cpp.ll

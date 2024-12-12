@@ -26,12 +26,12 @@ entry:
 ; ncnn/optimized/flatten_x86_avx512.cpp.ll
 ; ncnn/optimized/flatten_x86_fma.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = or disjoint i64 %1, 7
   %5 = mul nuw nsw i64 %4, %3
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 

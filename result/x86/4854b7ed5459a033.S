@@ -24,6 +24,13 @@ func000000000000001f:                   # @func000000000000001f
 	subq	%rax, %rsi
 	leaq	2(%rsi,%rdi), %rax
 	retq
+func00000000000000a0:                   # @func00000000000000a0
+	xorl	%eax, %eax
+	testb	%dl, %dl
+	setns	%al
+	subq	%rax, %rsi
+	leaq	2(%rsi,%rdi), %rax
+	retq
 func0000000000000015:                   # @func0000000000000015
 	xorl	%eax, %eax
 	testb	%dl, %dl

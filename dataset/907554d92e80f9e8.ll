@@ -9,13 +9,13 @@
 ; linux/optimized/i2c-i801.ll
 ; linux/optimized/intel_dpt.ll
 ; llvm/optimized/APFloat.cpp.ll
-; minetest/optimized/mapblock_mesh.cpp.ll
-; minetest/optimized/voxel.cpp.ll
-; minetest/optimized/voxelalgorithms.cpp.ll
+; opencv/optimized/contours_new.cpp.ll
+; openjdk/optimized/codeCache.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; rocksdb/optimized/error_handler.cc.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; spike/optimized/ns16550.ll
+; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; wireshark/optimized/packet-iec104.c.ll
 ; wireshark/optimized/packet-smc.c.ll

@@ -5,12 +5,12 @@
 define i64 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul nuw i64 %3, %1
+  %4 = mul nuw i64 %1, %3
   %5 = lshr i64 %4, %0
   ret i64 %5
 }
 
-; 98 occurrences:
+; 99 occurrences:
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
 ; fmt/optimized/header-only-test.cc.ll
@@ -88,6 +88,7 @@ entry:
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
+; openusd/optimized/aom_image.c.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; tev/optimized/Channel.cpp.ll
@@ -113,26 +114,26 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = lshr i64 %4, %0
   ret i64 %5
 }
 
 ; 9 occurrences:
+; boost/optimized/to_chars.ll
 ; cmake/optimized/fse_compress.c.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; linux/optimized/clockevents.ll
 ; linux/optimized/clocksource.ll
 ; linux/optimized/dm-region-hash.ll
 ; linux/optimized/tcp_cubic.ll
-; openusd/optimized/aom_image.c.ll
 ; spike/optimized/f32_sqrt.ll
 ; zstd/optimized/fse_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = lshr i64 %4, %0
   ret i64 %5
 }

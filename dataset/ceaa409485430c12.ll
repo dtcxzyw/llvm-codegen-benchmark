@@ -1,7 +1,9 @@
 
-; 36 occurrences:
+; 38 occurrences:
 ; abc/optimized/amapLiberty.c.ll
 ; abc/optimized/sclLiberty.c.ll
+; boost/optimized/formatter_parser.ll
+; boost/optimized/pct_format.ll
 ; cmake/optimized/Glob.cxx.ll
 ; delta-rs/optimized/3qvofkyb7k5flefa.ll
 ; eastl/optimized/EAMain.cpp.ll

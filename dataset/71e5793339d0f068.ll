@@ -1,11 +1,13 @@
 
-; 6 occurrences:
+; 8 occurrences:
 ; abc/optimized/ifDec07.c.ll
+; boost/optimized/approximately_equals.ll
 ; libquic/optimized/quic_packet_creator.cc.ll
 ; llvm/optimized/SelectionDAGISel.cpp.ll
 ; tokenizers-rs/optimized/1gbi58t02rey1ahs.ll
 ; tokenizers-rs/optimized/1k9vblvd5jyd3qmf.ll
 ; wireshark/optimized/erf.c.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -31,7 +33,7 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; faiss/optimized/AutoTune.cpp.ll
 ; llvm/optimized/ASTMatchFinder.cpp.ll
 ; llvm/optimized/AnalysisBasedWarnings.cpp.ll
@@ -39,6 +41,7 @@ entry:
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
 ; redis/optimized/cluster.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
 entry:

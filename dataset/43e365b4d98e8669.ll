@@ -44,9 +44,7 @@ entry:
   ret i32 %5
 }
 
-; 10 occurrences:
-; gromacs/optimized/dlaruv.cpp.ll
-; gromacs/optimized/slaruv.cpp.ll
+; 8 occurrences:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
@@ -75,11 +73,14 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
+; 8 occurrences:
 ; abc/optimized/ioWriteBook.c.ll
 ; opencv/optimized/max_unpooling_layer.cpp.ll
 ; opencv/optimized/stereobm.cpp.ll
 ; sentencepiece/optimized/unigram_model_trainer.cc.ll
+; zstd/optimized/zstd_v01.c.ll
+; zstd/optimized/zstd_v02.c.ll
+; zstd/optimized/zstd_v03.c.ll
 ; zstd/optimized/zstd_v04.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
@@ -114,29 +115,28 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
-; gromacs/optimized/dlaruv.cpp.ll
+; 1 occurrences:
 ; gromacs/optimized/pairlist.cpp.ll
-; gromacs/optimized/slaruv.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = shl nsw i32 %2, 12
+  %3 = shl nsw i32 %2, 3
   %4 = add i32 %0, %1
   %5 = sub nsw i32 %4, %3
   ret i32 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; zstd/optimized/zstd_v01.c.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; zstd/optimized/zstd_v03.c.ll
+; zstd/optimized/zstd_v04.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000001d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 3
   %4 = add nuw nsw i32 %0, %1
-  %5 = sub i32 %4, %3
+  %5 = sub nsw i32 %4, %3
   ret i32 %5
 }
 
@@ -159,24 +159,13 @@ entry:
 }
 
 ; 1 occurrences:
-; zstd/optimized/zstd_v04.c.ll
+; graphviz/optimized/quad_prog_vpsc.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001d(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000025(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = shl nsw i32 %2, 3
-  %4 = add nuw nsw i32 %0, %1
+  %3 = shl nuw i32 %2, 1
+  %4 = add nsw i32 %0, %1
   %5 = sub nsw i32 %4, %3
-  ret i32 %5
-}
-
-; 1 occurrences:
-; linux/optimized/blk-settings.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000020(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = shl nuw i32 %2, 9
-  %4 = add i32 %0, %1
-  %5 = sub i32 %4, %3
   ret i32 %5
 }
 

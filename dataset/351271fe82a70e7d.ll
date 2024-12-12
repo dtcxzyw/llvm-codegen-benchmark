@@ -6,7 +6,7 @@
 ; pocketpy/optimized/collections.cpp.ll
 ; verilator/optimized/V3FileLine.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000da(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001aa(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 5
@@ -16,24 +16,24 @@ entry:
   ret i1 %7
 }
 
-; 5 occurrences:
-; eastl/optimized/TestExtra.cpp.ll
+; 4 occurrences:
 ; gromacs/optimized/lifetime.cpp.ll
 ; hermes/optimized/SourceErrorManager.cpp.ll
 ; pocketpy/optimized/collections.cpp.ll
 ; verilator/optimized/V3FileLine.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001b4(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 5
   %5 = zext nneg i32 %0 to i64
   %6 = add nsw i64 %4, %5
-  %7 = icmp ult i64 %6, 16
+  %7 = icmp samesign ult i64 %6, 16
   ret i1 %7
 }
 
-; 17 occurrences:
+; 18 occurrences:
+; boost/optimized/attribute_name.ll
 ; hermes/optimized/BytecodeGenerator.cpp.ll
 ; hyperscan/optimized/rose_build_add.cpp.ll
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
@@ -52,7 +52,7 @@ entry:
 ; llvm/optimized/MachinePipeliner.cpp.ll
 ; verilator/optimized/V3Delayed.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000aa(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 3
@@ -63,7 +63,7 @@ entry:
 }
 
 ; 18 occurrences:
-; eastl/optimized/TestDeque.cpp.ll
+; boost/optimized/attribute_name.ll
 ; hermes/optimized/BytecodeGenerator.cpp.ll
 ; hyperscan/optimized/rose_build_add.cpp.ll
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
@@ -82,13 +82,13 @@ entry:
 ; llvm/optimized/MachinePipeliner.cpp.ll
 ; verilator/optimized/V3Delayed.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000b4(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 3
   %5 = zext i32 %0 to i64
   %6 = add nsw i64 %4, %5
-  %7 = icmp ult i64 %6, 64
+  %7 = icmp samesign ult i64 %6, 64
   ret i1 %7
 }
 
@@ -99,7 +99,7 @@ entry:
 ; assimp/optimized/XFileImporter.cpp.ll
 ; velox/optimized/Filter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a8(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 5
@@ -112,13 +112,39 @@ entry:
 ; 1 occurrences:
 ; zxing/optimized/PDFModulusPoly.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d8(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001a8(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = ashr exact i64 %3, 2
   %5 = zext nneg i32 %0 to i64
   %6 = add nsw i64 %4, %5
   %7 = icmp ugt i64 %6, 2305843009213693951
+  ret i1 %7
+}
+
+; 1 occurrences:
+; eastl/optimized/TestExtra.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001a4(i32 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = ashr exact i64 %3, 6
+  %5 = zext nneg i32 %0 to i64
+  %6 = add nsw i64 %4, %5
+  %7 = icmp ult i64 %6, 4
+  ret i1 %7
+}
+
+; 1 occurrences:
+; eastl/optimized/TestDeque.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000a4(i32 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = ashr exact i64 %3, 2
+  %5 = zext i32 %0 to i64
+  %6 = add nsw i64 %4, %5
+  %7 = icmp ult i64 %6, 64
   ret i1 %7
 }
 

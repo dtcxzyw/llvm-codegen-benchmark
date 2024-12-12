@@ -5,7 +5,7 @@
 ; qemu/optimized/fdt_sw.c.ll
 ; spike/optimized/fdt_sw.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, %1
   %3 = icmp eq i32 %2, -804389139
@@ -21,7 +21,7 @@ entry:
 ; raylib/optimized/rtext.c.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000015a(i32 %0, i32 %1) #0 {
+define i32 @func00000000000002aa(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, %1
   %3 = icmp sgt i32 %2, 33899

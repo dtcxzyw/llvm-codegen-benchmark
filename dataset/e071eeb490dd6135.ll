@@ -50,7 +50,7 @@ entry:
   ret i64 %3
 }
 
-; 22 occurrences:
+; 25 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; brotli/optimized/encode.c.ll
 ; git/optimized/cbtree.ll
@@ -73,6 +73,9 @@ entry:
 ; soc-simulator/optimized/sim_mycpu.ll
 ; wireshark/optimized/packet-6lowpan.c.ll
 ; wireshark/optimized/packet-nbap.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i8 %0) #0 {
 entry:

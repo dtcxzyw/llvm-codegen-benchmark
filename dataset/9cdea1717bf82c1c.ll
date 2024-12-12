@@ -70,10 +70,10 @@ entry:
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/implicit_schur_complement.cc.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001d(ptr %0, i64 %1, i64 %2) #0 {
+define i64 @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %1, %2
-  %4 = getelementptr nusw double, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw double, ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = lshr exact i64 %5, 3
   %7 = and i64 %6, 1

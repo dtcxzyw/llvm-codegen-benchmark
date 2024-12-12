@@ -109,7 +109,7 @@ entry:
   ret i32 %5
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; abc/optimized/giaSwitch.c.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
@@ -119,6 +119,7 @@ entry:
 ; libwebp/optimized/upsampling.c.ll
 ; linux/optimized/drm_dsc_helper.ll
 ; linux/optimized/vlv_dsi.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; opencv/optimized/brisk.cpp.ll
 ; opencv/optimized/pyramids.cpp.ll
 ; opencv/optimized/smooth.dispatch.cpp.ll
@@ -136,12 +137,14 @@ entry:
   ret i32 %5
 }
 
-; 34 occurrences:
+; 35 occurrences:
 ; abc/optimized/bmcICheck.c.ll
 ; abc/optimized/bmcMaj3.c.ll
 ; abc/optimized/covMinEsop.c.ll
 ; abc/optimized/saigSimFast.c.ll
 ; abseil-cpp/optimized/numbers.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/src.ll
 ; bullet3/optimized/btSimulationIslandManagerMt.ll
 ; crow/optimized/example.cpp.ll
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -161,7 +164,6 @@ entry:
 ; oniguruma/optimized/utf16_le.ll
 ; opencv/optimized/pyramids.cpp.ll
 ; openjdk/optimized/freetypeScaler.ll
-; openspiel/optimized/2048.cc.ll
 ; openspiel/optimized/bridge_scoring.cc.ll
 ; openspiel/optimized/coop_box_pushing.cc.ll
 ; openusd/optimized/restoration.c.ll
@@ -176,7 +178,7 @@ define i32 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = shl nsw i32 %3, 8
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -206,7 +208,7 @@ define i32 @func000000000000003d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = shl nuw nsw i32 %3, 4
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -231,7 +233,7 @@ define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = shl nsw i32 %3, 2
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -243,7 +245,7 @@ define i32 @func000000000000003e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = shl nuw nsw i32 %3, 2
-  %5 = add nuw i32 %4, %0
+  %5 = add nuw i32 %0, %4
   ret i32 %5
 }
 
@@ -261,17 +263,6 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
-; abc/optimized/bmcMaj2.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add i32 %1, %2
-  %4 = shl nsw i32 %3, 1
-  %5 = add nuw nsw i32 %4, %0
-  ret i32 %5
-}
-
 ; 4 occurrences:
 ; abc/optimized/aigUtil.c.ll
 ; abc/optimized/giaUtil.c.ll
@@ -282,7 +273,7 @@ define i32 @func0000000000000020(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %1, %2
   %4 = shl i32 %3, 16
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -293,7 +284,7 @@ define i32 @func0000000000000017(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = shl nsw i32 %3, 2
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -309,7 +300,7 @@ define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = shl nsw i32 %3, 1
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -320,7 +311,32 @@ define i32 @func000000000000001d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = shl nuw nsw i32 %3, 1
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
+  ret i32 %5
+}
+
+; 4 occurrences:
+; boost/optimized/src.ll
+; cpython/optimized/bytesobject.ll
+; libwebp/optimized/filter_enc.c.ll
+; redis/optimized/lua_cjson.ll
+; Function Attrs: nounwind
+define i32 @func000000000000001f(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %1, %2
+  %4 = shl nuw nsw i32 %3, 12
+  %5 = add nuw nsw i32 %0, %4
+  ret i32 %5
+}
+
+; 1 occurrences:
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i32 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %1, %2
+  %4 = shl nuw nsw i32 %3, 8
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -344,7 +360,7 @@ define i32 @func0000000000000033(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = shl i32 %3, 27
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -356,7 +372,7 @@ define i32 @func000000000000003b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = shl nuw i32 %3, 28
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -367,7 +383,7 @@ define i32 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = shl nsw i32 %3, 3
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -378,7 +394,7 @@ define i32 @func0000000000000023(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %1, %2
   %4 = shl i32 %3, 3
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -391,7 +407,7 @@ define i32 @func0000000000000030(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = shl i32 %3, 24
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -402,7 +418,7 @@ define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = shl nuw i32 %3, 25
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -414,19 +430,6 @@ entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = shl nuw i32 %3, 8
   %5 = add nuw i32 %4, %0
-  ret i32 %5
-}
-
-; 3 occurrences:
-; cpython/optimized/bytesobject.ll
-; libwebp/optimized/filter_enc.c.ll
-; redis/optimized/lua_cjson.ll
-; Function Attrs: nounwind
-define i32 @func000000000000001f(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %1, %2
-  %4 = shl nuw nsw i32 %3, 12
-  %5 = add nuw nsw i32 %4, %0
   ret i32 %5
 }
 

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/enumerator.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000004a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = ashr i64 %0, 1
@@ -14,7 +14,7 @@ entry:
 ; ruby/optimized/enumerator.ll
 ; ruby/optimized/range.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000046(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = ashr i64 %0, 1
@@ -115,7 +115,7 @@ entry:
 ; yosys/optimized/ezsat.ll
 ; yosys/optimized/mem.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = ashr exact i64 %0, 3
@@ -173,7 +173,7 @@ entry:
 ; rocksdb/optimized/version_set.cc.ll
 ; tev/optimized/ThreadPool.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = ashr exact i64 %0, 3
@@ -189,7 +189,7 @@ entry:
 ; rocksdb/optimized/external_sst_file_ingestion_job.cc.ll
 ; vcpkg/optimized/downloads.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = ashr exact i64 %0, 5
@@ -200,7 +200,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/jpegdecoder.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = ashr exact i64 %0, 32
@@ -227,7 +227,7 @@ entry:
 ; yosys/optimized/simplemap.ll
 ; yosys/optimized/simplify.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = ashr exact i64 %0, 3
@@ -235,30 +235,11 @@ entry:
   ret i1 %5
 }
 
-; 9 occurrences:
-; casadi/optimized/casadi_misc.cpp.ll
-; casadi/optimized/idas_interface.cpp.ll
-; casadi/optimized/sparsity.cpp.ll
-; eastl/optimized/TestDeque.cpp.ll
-; eastl/optimized/TestExtra.cpp.ll
-; openspiel/optimized/sheriff.cc.ll
-; pocketpy/optimized/collections.cpp.ll
-; quantlib/optimized/floatfloatswap.ll
-; yosys/optimized/rtlil.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nsw i64 %1, %2
-  %4 = ashr exact i64 %0, 3
-  %5 = icmp eq i64 %4, %3
-  ret i1 %5
-}
-
 ; 2 occurrences:
 ; git/optimized/xmerge.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000006a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = ashr exact i64 %0, 32
@@ -271,7 +252,7 @@ entry:
 ; llvm/optimized/WasmObjectFile.cpp.ll
 ; opencv/optimized/scatterND_layer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = ashr exact i64 %0, 2
@@ -284,7 +265,7 @@ entry:
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
 ; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = ashr i64 %0, 32
@@ -316,7 +297,7 @@ entry:
 ; yosys/optimized/wreduce.ll
 ; zxing/optimized/ReedSolomonDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = ashr exact i64 %0, 32
@@ -324,11 +305,29 @@ entry:
   ret i1 %5
 }
 
+; 8 occurrences:
+; casadi/optimized/casadi_misc.cpp.ll
+; casadi/optimized/idas_interface.cpp.ll
+; casadi/optimized/sparsity.cpp.ll
+; eastl/optimized/TestDeque.cpp.ll
+; eastl/optimized/TestExtra.cpp.ll
+; openspiel/optimized/sheriff.cc.ll
+; pocketpy/optimized/collections.cpp.ll
+; yosys/optimized/rtlil.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %1, %2
+  %4 = ashr exact i64 %0, 3
+  %5 = icmp eq i64 %4, %3
+  ret i1 %5
+}
+
 ; 2 occurrences:
 ; yosys/optimized/mem.ll
 ; yosys/optimized/opt_muxtree.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = ashr i64 %0, 32
@@ -339,7 +338,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/BitcodeWriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = ashr exact i64 %0, 3
@@ -362,7 +361,7 @@ entry:
 ; cvc5/optimized/method_id.cpp.ll
 ; linux/optimized/compress.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
   %4 = ashr exact i64 %0, 32
@@ -375,7 +374,7 @@ entry:
 ; hyperscan/optimized/ng_violet.cpp.ll
 ; hyperscan/optimized/ue2string.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = ashr exact i64 %0, 3
@@ -387,7 +386,7 @@ entry:
 ; freetype/optimized/bdf.c.ll
 ; freetype/optimized/pcf.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = ashr i64 %0, 6

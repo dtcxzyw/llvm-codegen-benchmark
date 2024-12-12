@@ -2,14 +2,14 @@
 ; 1 occurrences:
 ; openjdk/optimized/cmsnamed.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0) #0 {
+define i1 @func0000000000000028(i32 %0) #0 {
 entry:
   %1 = shl i32 %0, 1
   %2 = icmp ugt i32 %1, 102400
   ret i1 %2
 }
 
-; 97 occurrences:
+; 96 occurrences:
 ; bullet3/optimized/b3BoundSearchCL.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
@@ -100,7 +100,6 @@ entry:
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; bullet3/optimized/btSoftMultiBodyDynamicsWorld.ll
 ; bullet3/optimized/btSoftRigidDynamicsWorld.ll
-; bullet3/optimized/btSoftSoftCollisionAlgorithm.ll
 ; bullet3/optimized/btSphereBoxCollisionAlgorithm.ll
 ; bullet3/optimized/btSphereSphereCollisionAlgorithm.ll
 ; bullet3/optimized/btSphereTriangleCollisionAlgorithm.ll
@@ -108,7 +107,7 @@ entry:
 ; bullet3/optimized/btTriangleMesh.ll
 ; xgboost/optimized/comm.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0) #0 {
+define i1 @func0000000000000421(i32 %0) #0 {
 entry:
   ret i1 false
 }
@@ -116,7 +115,7 @@ entry:
 ; 1 occurrences:
 ; bullet3/optimized/btConvexConcaveCollisionAlgorithm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0) #0 {
+define i1 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, -2147483648
   ret i1 %1
@@ -131,7 +130,7 @@ entry:
 ; recastnavigation/optimized/MeshLoaderObj.cpp.ll
 ; xgboost/optimized/comm.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i32 %0) #0 {
+define i1 @func0000000000000426(i32 %0) #0 {
 entry:
   %.mask = and i32 %0, 1073741824
   %1 = icmp ne i32 %.mask, 0
@@ -153,7 +152,7 @@ entry:
 ; icu/optimized/units_router.ll
 ; slurm/optimized/slurm_protocol_api.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i32 %0) #0 {
+define i1 @func000000000000042a(i32 %0) #0 {
 entry:
   %1 = icmp sgt i32 %0, -1
   ret i1 %1
@@ -162,7 +161,7 @@ entry:
 ; 1 occurrences:
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0) #0 {
+define i1 @func000000000000002c(i32 %0) #0 {
 entry:
   %.mask = and i32 %0, 2147483647
   %1 = icmp ne i32 %.mask, 0

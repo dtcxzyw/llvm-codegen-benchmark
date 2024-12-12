@@ -1,5 +1,17 @@
 
-; 24 occurrences:
+; 2 occurrences:
+; mitsuba3/optimized/qmc.cpp.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i64 %0, i16 %1) #0 {
+entry:
+  %2 = add i16 %1, 1
+  %3 = zext i16 %2 to i64
+  %4 = icmp samesign ugt i64 %0, %3
+  ret i1 %4
+}
+
+; 29 occurrences:
 ; abseil-cpp/optimized/discrete_distribution_test.cc.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
@@ -20,16 +32,21 @@
 ; hyperscan/optimized/shengcompile.cpp.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; libquic/optimized/hpack_huffman_table.cc.ll
+; lvgl/optimized/lv_ime_pinyin.ll
 ; minetest/optimized/database-sqlite3.cpp.ll
 ; minetest/optimized/networkpacket.cpp.ll
-; mitsuba3/optimized/qmc.cpp.ll
 ; opencv/optimized/find_ellipses.cpp.ll
+; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, i16 %1) #0 {
 entry:
   %2 = add i16 %1, 1
   %3 = zext i16 %2 to i64
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   ret i1 %4
 }
 
@@ -42,11 +59,11 @@ entry:
 ; meilisearch-rs/optimized/4p6euf9p6jz4j36m.ll
 ; meilisearch-rs/optimized/gdis3hvl48q1qu4.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000088(i64 %0, i16 %1) #0 {
 entry:
   %2 = add nuw i16 %1, 1
   %3 = zext i16 %2 to i64
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   ret i1 %4
 }
 
@@ -64,28 +81,28 @@ entry:
 ; postgres/optimized/preptlist.ll
 ; postgres/optimized/spgutils.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i16 %1) #0 {
 entry:
   %2 = add nuw i16 %1, 1
   %3 = zext i16 %2 to i64
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; meilisearch-rs/optimized/55beptyn1v6yeqaz.ll
 ; stat-rs/optimized/2ao4u4y4ndqxwz8u.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i16 %1) #0 {
 entry:
   %2 = add i16 %1, -1
   %3 = zext nneg i16 %2 to i64
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   ret i1 %4
 }
 
-; 19 occurrences:
-; clamav/optimized/hfsplus.c.ll
+; 15 occurrences:
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -100,16 +117,13 @@ entry:
 ; crow/optimized/example_ws.cpp.ll
 ; crow/optimized/helloworld.cpp.ll
 ; ockam-rs/optimized/37wpz1tx0oad4jej.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
 ; qemu/optimized/net_eth.c.ll
-; slurm/optimized/partition_mgr.ll
-; slurm/optimized/xcpuinfo.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i16 %1) #0 {
 entry:
   %2 = add i16 %1, 18
   %3 = zext i16 %2 to i64
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   ret i1 %4
 }
 
@@ -133,7 +147,7 @@ define i1 @func0000000000000001(i64 %0, i16 %1) #0 {
 entry:
   %2 = add i16 %1, -3
   %3 = zext i16 %2 to i64
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
@@ -142,11 +156,11 @@ entry:
 ; openusd/optimized/stencilTableFactory.cpp.ll
 ; php/optimized/ir_emit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i16 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i16 %1) #0 {
 entry:
   %2 = add nuw nsw i16 %1, 1
   %3 = zext nneg i16 %2 to i64
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
@@ -155,44 +169,58 @@ entry:
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; postgres/optimized/gistbuild.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i16 %1) #0 {
+define i1 @func00000000000000e4(i64 %0, i16 %1) #0 {
 entry:
   %2 = add nuw nsw i16 %1, 1
   %3 = zext nneg i16 %2 to i64
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i16 %1) #0 {
+define i1 @func00000000000000e8(i64 %0, i16 %1) #0 {
 entry:
   %2 = add nuw nsw i16 %1, 1
   %3 = zext nneg i16 %2 to i64
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
+  ret i1 %4
+}
+
+; 4 occurrences:
+; clamav/optimized/hfsplus.c.ll
+; opencv/optimized/median_blur.dispatch.cpp.ll
+; slurm/optimized/partition_mgr.ll
+; slurm/optimized/xcpuinfo.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i64 %0, i16 %1) #0 {
+entry:
+  %2 = add i16 %1, -1
+  %3 = zext i16 %2 to i64
+  %4 = icmp samesign ult i64 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; hyperscan/optimized/rose_build_compile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000009(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000019(i64 %0, i16 %1) #0 {
 entry:
   %2 = add i16 %1, -1
   %3 = zext i16 %2 to i64
-  %4 = icmp ule i64 %3, %0
+  %4 = icmp samesign uge i64 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; cmake/optimized/cmCursesMainForm.cxx.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000064(i64 %0, i16 %1) #0 {
 entry:
   %2 = add nsw i16 %1, -9
   %3 = zext nneg i16 %2 to i64
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   ret i1 %4
 }
 

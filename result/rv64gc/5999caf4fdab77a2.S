@@ -1,11 +1,11 @@
-func000000000000006a:                   # @func000000000000006a
+func00000000000000ca:                   # @func00000000000000ca
 	addi	a0, a0, -1
 	li	a1, 1
 	sllw	a0, a1, a0
 	slli	a1, a1, 11
 	slt	a0, a1, a0
 	ret
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	addi	a0, a0, -6
 	li	a1, 2
 	sllw	a0, a1, a0

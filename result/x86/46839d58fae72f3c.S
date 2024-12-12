@@ -16,8 +16,8 @@ func0000000000000009:                   # @func0000000000000009
 	retq
 func0000000000000029:                   # @func0000000000000029
 	notq	%rsi
-	leaq	3(%rsi,%rdi), %rax
-	addq	%rdi, %rsi
-	cmovnsq	%rsi, %rax
+	leaq	3(%rdi,%rsi), %rax
+	addq	%rsi, %rdi
+	cmovnsq	%rdi, %rax
 	andq	$-4, %rax
 	retq

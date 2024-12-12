@@ -1,12 +1,4 @@
-func0000000000000344:                   # @func0000000000000344
-	sext.w	a2, a0
-	sext.w	a1, a1
-	addiw	a0, a0, 1
-	sltu	a0, a0, a1
-	sltiu	a1, a2, 31
-	and	a0, a0, a1
-	ret
-func000000000000036a:                   # @func000000000000036a
+func0000000000000cca:                   # @func0000000000000cca
 	sext.w	a2, a0
 	sext.w	a1, a1
 	addiw	a0, a0, 2
@@ -14,7 +6,7 @@ func000000000000036a:                   # @func000000000000036a
 	slti	a1, a2, -2
 	andn	a0, a0, a1
 	ret
-func000000000000016a:                   # @func000000000000016a
+func00000000000004ca:                   # @func00000000000004ca
 	sext.w	a2, a0
 	sext.w	a1, a1
 	addiw	a0, a0, 2
@@ -22,15 +14,7 @@ func000000000000016a:                   # @func000000000000016a
 	slti	a1, a2, -2
 	andn	a0, a0, a1
 	ret
-func0000000000000364:                   # @func0000000000000364
-	sext.w	a2, a0
-	sext.w	a1, a1
-	addiw	a0, a0, 1
-	slt	a0, a0, a1
-	sltiu	a1, a2, 9
-	and	a0, a0, a1
-	ret
-func0000000000000118:                   # @func0000000000000118
+func0000000000000428:                   # @func0000000000000428
 	sext.w	a2, a0
 	sext.w	a1, a1
 	addiw	a0, a0, -32
@@ -39,7 +23,7 @@ func0000000000000118:                   # @func0000000000000118
 	sltiu	a1, a2, 33
 	andn	a0, a0, a1
 	ret
-func0000000000000098:                   # @func0000000000000098
+func0000000000000128:                   # @func0000000000000128
 	sext.w	a2, a0
 	sext.w	a1, a1
 	lui	a3, 8
@@ -51,7 +35,7 @@ func0000000000000098:                   # @func0000000000000098
 	sltu	a1, a3, a2
 	and	a0, a0, a1
 	ret
-func00000000000001aa:                   # @func00000000000001aa
+func000000000000054a:                   # @func000000000000054a
 	sext.w	a2, a1
 	sext.w	a0, a0
 	addiw	a1, a1, -1
@@ -59,7 +43,7 @@ func00000000000001aa:                   # @func00000000000001aa
 	sgtz	a1, a2
 	and	a0, a0, a1
 	ret
-func000000000000008c:                   # @func000000000000008c
+func000000000000010c:                   # @func000000000000010c
 	sext.w	a2, a0
 	sext.w	a1, a1
 	addiw	a0, a0, 1

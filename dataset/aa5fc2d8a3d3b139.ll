@@ -1,8 +1,7 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; libpng/optimized/png.c.ll
-; linux/optimized/fiemap.ll
 ; linux/optimized/osl.ll
 ; openjdk/optimized/png.ll
 ; openjdk/optimized/socket_md.ll

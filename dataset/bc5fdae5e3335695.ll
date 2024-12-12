@@ -18,7 +18,7 @@ entry:
   ret ptr %5
 }
 
-; 35 occurrences:
+; 34 occurrences:
 ; hermes/optimized/APInt.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/APFixedPoint.cpp.ll
@@ -35,7 +35,6 @@ entry:
 ; llvm/optimized/KnownBits.cpp.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
 ; llvm/optimized/MicrosoftMangle.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ReachableCode.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/SemaAMDGPU.cpp.ll
@@ -55,12 +54,12 @@ entry:
 ; luajit/optimized/lj_serialize.ll
 ; luajit/optimized/lj_serialize_dyn.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(i64 %0, i32 %1) #0 {
+define ptr @func0000000000000007(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 6
   %3 = zext nneg i32 %2 to i64
   %4 = inttoptr i64 %0 to ptr
-  %5 = getelementptr nusw i64, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw i64, ptr %4, i64 %3
   ret ptr %5
 }
 

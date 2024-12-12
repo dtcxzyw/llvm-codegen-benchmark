@@ -5,7 +5,11 @@ func0000000000000001:                   # @func0000000000000001
 	and	a0, a0, a1
 	ret
 func0000000000000002:                   # @func0000000000000002
+	andi	a1, a1, -32
 	li	a2, 1
+	slli	a2, a2, 32
+	addi	a2, a2, -32
+	addi	a2, a2, 31
 	sll	a1, a2, a1
 	not	a0, a0
 	and	a0, a0, a1

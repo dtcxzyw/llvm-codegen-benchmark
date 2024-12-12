@@ -1,5 +1,5 @@
 
-; 66 occurrences:
+; 67 occurrences:
 ; assimp/optimized/MD3Loader.cpp.ll
 ; assimp/optimized/MDCLoader.cpp.ll
 ; assimp/optimized/TerragenLoader.cpp.ll
@@ -66,6 +66,7 @@
 ; wireshark/optimized/packet-locamation-im.c.ll
 ; wireshark/optimized/packet-rsvp.c.ll
 ; wireshark/optimized/packet-umts_fp.c.ll
+; zed-rs/optimized/055l6m6wb4e4jq2j59cjsdkaz.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i16 %0) #0 {
 entry:

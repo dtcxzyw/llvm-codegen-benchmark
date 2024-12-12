@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 19 occurrences:
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; yosys/optimized/cxxrtl_backend.ll
@@ -9,7 +9,6 @@
 ; yosys/optimized/formalff.ll
 ; yosys/optimized/ice40_dsp.ll
 ; yosys/optimized/ice40_wrapcarry.ll
-; yosys/optimized/memory_libmap.ll
 ; yosys/optimized/mutate.ll
 ; yosys/optimized/muxcover.ll
 ; yosys/optimized/opt_lut.ll

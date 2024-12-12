@@ -1,7 +1,9 @@
 
-; 6 occurrences:
+; 8 occurrences:
 ; arrow/optimized/decimal.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; quickjs/optimized/libbf.ll
 ; wolfssl/optimized/sp_int.c.ll
@@ -10,7 +12,7 @@
 define i64 @func0000000000000028(i128 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc i128 %0 to i64
-  %4 = mul i64 %3, %2
+  %4 = mul i64 %2, %3
   %5 = add i64 %4, %1
   ret i64 %5
 }

@@ -1,4 +1,4 @@
-func0000000000000023:                   # @func0000000000000023
+func0000000000000043:                   # @func0000000000000043
 	xorl	%ecx, %ecx
 	cmpb	$45, %dil
 	setne	%cl
@@ -8,7 +8,7 @@ func0000000000000023:                   # @func0000000000000023
 	movl	$384, %eax                      # imm = 0x180
 	cmovnel	%ecx, %eax
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	xorl	%eax, %eax
 	cmpb	$114, %dil
 	sete	%al

@@ -1,5 +1,5 @@
 
-; 108 occurrences:
+; 107 occurrences:
 ; abc/optimized/utilSort.c.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; crow/optimized/example_cookies.cpp.ll
@@ -100,7 +100,6 @@
 ; rocksdb/optimized/compaction_picker_universal.cc.ll
 ; rocksdb/optimized/sortlist.cc.ll
 ; simdjson/optimized/simdjson.cpp.ll
-; velox/optimized/PrestoSerializer.cpp.ll
 ; wasmedge/optimized/global.cpp.ll
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasimodule.cpp.ll
@@ -136,7 +135,7 @@ entry:
   ret i64 %6
 }
 
-; 162 occurrences:
+; 161 occurrences:
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -270,7 +269,6 @@ entry:
 ; minetest/optimized/COBJMeshFileLoader.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; minetest/optimized/anaglyph.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/enriched_string.cpp.ll
 ; minetest/optimized/factory.cpp.ll

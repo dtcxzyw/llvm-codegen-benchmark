@@ -1,12 +1,11 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; mitsuba3/optimized/bsplinecurve.cpp.ll
 ; mitsuba3/optimized/integrator.cpp.ll
 ; mitsuba3/optimized/linearcurve.cpp.ll
 ; mitsuba3/optimized/merge.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/obj.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/progress.cpp.ll
 ; mitsuba3/optimized/qmc.cpp.ll
 ; mitsuba3/optimized/scene.cpp.ll
@@ -21,7 +20,7 @@ entry:
   ret float %4
 }
 
-; 69 occurrences:
+; 70 occurrences:
 ; assimp/optimized/MD5Loader.cpp.ll
 ; assimp/optimized/SpatialSort.cpp.ll
 ; entt/optimized/adjacency_matrix.cpp.ll
@@ -91,6 +90,7 @@ entry:
 ; ozz-animation/optimized/import2ozz_track.cc.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; sentencepiece/optimized/bpe_model_trainer.cc.ll
+; sentencepiece/optimized/unigram_model_trainer.cc.ll
 ; Function Attrs: nounwind
 define float @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:

@@ -6,7 +6,7 @@ func0000000000000000:                   # @func0000000000000000
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	lui	a1, 16
-	vmul.vv	v10, v12, v8
+	vmul.vv	v10, v8, v12
 	vmulhu.vx	v8, v10, a0
 	vsrl.vi	v8, v8, 15
 	addiw	a1, a1, -1
@@ -19,7 +19,7 @@ func0000000000000007:                   # @func0000000000000007
 	ld	a0, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vzext.vf2	v12, v10
-	vmul.vv	v10, v12, v8
+	vmul.vv	v10, v8, v12
 	vsrl.vi	v8, v10, 1
 	vmulhu.vx	v8, v8, a0
 	vsrl.vi	v8, v8, 1

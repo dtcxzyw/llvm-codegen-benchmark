@@ -3,7 +3,7 @@
 ; mitsuba3/optimized/xml.cpp.ll
 ; nori/optimized/parser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -9
   %3 = icmp ult i32 %2, 5
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/method.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000184(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -398
   %3 = icmp ult i32 %2, 5
@@ -24,14 +24,12 @@ entry:
   ret i1 %5
 }
 
-; 13 occurrences:
-; eastl/optimized/EAString.cpp.ll
+; 11 occurrences:
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/InstCombineAndOrXor.cpp.ll
 ; llvm/optimized/InstCombineCasts.cpp.ll
 ; llvm/optimized/InstCombineCompares.cpp.ll
 ; llvm/optimized/InstCombineSelect.cpp.ll
-; llvm/optimized/Instruction.cpp.ll
 ; llvm/optimized/InstructionSimplify.cpp.ll
 ; llvm/optimized/Instructions.cpp.ll
 ; llvm/optimized/MergeFunctions.cpp.ll
@@ -39,7 +37,7 @@ entry:
 ; llvm/optimized/ValueTracking.cpp.ll
 ; llvm/optimized/Verifier.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000484(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -17
   %3 = icmp ult i32 %2, 2
@@ -51,7 +49,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaLookup.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000481(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -55
   %3 = icmp ult i32 %2, 5
@@ -63,7 +61,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CalcSpillWeights.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000084(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = icmp ult i32 %2, 1073741823
@@ -75,7 +73,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/InstCombineCalls.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c1(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000581(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 68
   %3 = icmp eq i32 %0, 383
@@ -87,7 +85,7 @@ entry:
 ; llvm/optimized/ReplaceWithVeclib.cpp.ll
 ; llvm/optimized/Verifier.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000048c(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -17
   %3 = icmp ult i32 %2, 2
@@ -100,7 +98,7 @@ entry:
 ; linux/optimized/build_utility.ll
 ; linux/optimized/intel_dpll.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000ca(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = icmp slt i32 %2, 2
@@ -112,7 +110,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_dpll.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a6(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000146(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 2
   %3 = icmp slt i32 %2, 1

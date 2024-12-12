@@ -1,6 +1,7 @@
 
-; 29 occurrences:
+; 30 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
+; boost/optimized/from_chars.ll
 ; libquic/optimized/p256-64.c.ll
 ; libquic/optimized/quic_utils.cc.ll
 ; openssl/optimized/libcrypto-lib-f_generic.ll

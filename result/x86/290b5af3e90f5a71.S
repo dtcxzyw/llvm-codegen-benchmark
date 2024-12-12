@@ -1,6 +1,6 @@
 func0000000000000001:                   # @func0000000000000001
 	decq	%rsi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	sete	%al
 	retq
 func000000000000000c:                   # @func000000000000000c
@@ -19,7 +19,12 @@ func0000000000000006:                   # @func0000000000000006
 	setge	%al
 	retq
 func0000000000000004:                   # @func0000000000000004
-	subq	%rdi, %rsi
-	cmpq	$-9, %rsi
+	subq	%rsi, %rdi
+	cmpq	$-7, %rdi
 	setae	%al
+	retq
+func0000000000000011:                   # @func0000000000000011
+	decq	%rsi
+	cmpq	%rsi, %rdi
+	sete	%al
 	retq

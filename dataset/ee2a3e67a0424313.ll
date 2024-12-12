@@ -55,7 +55,7 @@ entry:
   ret i32 %4
 }
 
-; 284 occurrences:
+; 282 occurrences:
 ; abc/optimized/wlcReadVer.c.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
@@ -88,7 +88,6 @@ entry:
 ; hermes/optimized/dtoa.c.ll
 ; icu/optimized/collationkeys.ll
 ; icu/optimized/decNumber.ll
-; icu/optimized/taiwncal.ll
 ; jq/optimized/decNumber.ll
 ; jq/optimized/jv_dtoa.ll
 ; libquic/optimized/dtoa.cc.ll
@@ -242,7 +241,6 @@ entry:
 ; oiio/optimized/zfile.cpp.ll
 ; opencc/optimized/Config.cpp.ll
 ; opencv/optimized/alignment_pattern_finder.cpp.ll
-; opencv/optimized/calibinit.cpp.ll
 ; opencv/optimized/resize.cpp.ll
 ; opencv/optimized/upcean_decoder.cpp.ll
 ; openjdk/optimized/linkResolver.ll

@@ -91,11 +91,13 @@ entry:
   ret i32 %4
 }
 
-; 9 occurrences:
+; 11 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
+; boost/optimized/src.ll
 ; flac/optimized/bitwriter.c.ll
 ; libdeflate/optimized/deflate_compress.c.ll
 ; linux/optimized/gss_krb5_wrap.ll
+; lvgl/optimized/lv_math.ll
 ; openusd/optimized/openexr-c.c.ll
 ; pcg-cpp/optimized/make-partytrick.cpp.ll
 ; pcg-cpp/optimized/use-partytrick.cpp.ll
@@ -110,7 +112,7 @@ entry:
   ret i32 %4
 }
 
-; 234 occurrences:
+; 233 occurrences:
 ; cmake/optimized/entropy_common.c.ll
 ; cpython/optimized/Hacl_Hash_MD5.ll
 ; cpython/optimized/Hacl_Hash_SHA1.ll
@@ -215,6 +217,7 @@ entry:
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/entropy_common.ll
 ; linux/optimized/vlv_dsi.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll
 ; ncnn/optimized/mat_pixel_resize.cpp.ll
@@ -290,7 +293,6 @@ entry:
 ; openusd/optimized/vec3h.cpp.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -309,7 +311,6 @@ entry:
 ; pbrt-v4/optimized/stbimage.cpp.ll
 ; postgres/optimized/hashutil.ll
 ; raylib/optimized/rtextures.c.ll
-; soc-simulator/optimized/verilated.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
 ; stb/optimized/stb_image.c.ll
@@ -373,7 +374,8 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; faiss/optimized/AutoTune.cpp.ll
 ; freetype/optimized/ftbase.c.ll
 ; libpng/optimized/pngrtran.c.ll
 ; libwebp/optimized/dec_sse2.c.ll
@@ -387,9 +389,10 @@ entry:
   ret i32 %4
 }
 
-; 22 occurrences:
+; 23 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/cmHexFileConverter.cxx.ll
 ; cmake/optimized/zstd_compress_sequences.c.ll

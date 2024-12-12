@@ -12,7 +12,7 @@ entry:
   ret i32 %4
 }
 
-; 37 occurrences:
+; 34 occurrences:
 ; abc/optimized/abcMini.c.ll
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/acecFadds.c.ll
@@ -39,13 +39,10 @@ entry:
 ; abc/optimized/wlcReadVer.c.ll
 ; csmith/optimized/ArrayVariable.cpp.ll
 ; eastl/optimized/EADateTime.cpp.ll
-; icu/optimized/gregoimp.ll
 ; memcached/optimized/memcached-memcached.ll
 ; memcached/optimized/memcached_debug-memcached.ll
 ; openssl/optimized/libcrypto-lib-a_int.ll
-; openssl/optimized/libcrypto-lib-ec_deprecated.ll
 ; openssl/optimized/libcrypto-shlib-a_int.ll
-; openssl/optimized/libcrypto-shlib-ec_deprecated.ll
 ; raylib/optimized/rtextures.c.ll
 ; redis/optimized/anet.ll
 ; redis/optimized/net.ll

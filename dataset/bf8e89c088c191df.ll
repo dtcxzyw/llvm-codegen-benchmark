@@ -1,8 +1,9 @@
 
-; 79 occurrences:
+; 82 occurrences:
 ; abc/optimized/ifTune.c.ll
 ; abc/optimized/inftrees.c.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/ipc_reliable_message_queue.ll
 ; clamav/optimized/LzmaDec.c.ll
 ; clamav/optimized/aspack.c.ll
 ; clamav/optimized/inflate64.c.ll
@@ -77,6 +78,8 @@
 ; xgboost/optimized/charconv.cc.ll
 ; yosys/optimized/fstapi.ll
 ; z3/optimized/mpz.cpp.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; zlib/optimized/inftrees.c.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
@@ -150,7 +153,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %1, %2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 

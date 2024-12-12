@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 37 occurrences:
 ; darktable/optimized/histogram.c.ll
 ; darktable/optimized/introspection_grain.c.ll
 ; gromacs/optimized/calc_verletbuf.cpp.ll
@@ -19,7 +19,6 @@
 ; lightgbm/optimized/objective_function.cpp.ll
 ; meshlab/optimized/decorate_base.cpp.ll
 ; meshlab/optimized/edit_mutualcorrs.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/ml_default_decorators.cpp.ll
 ; mitsuba3/optimized/rgb2spec_opt.cpp.ll

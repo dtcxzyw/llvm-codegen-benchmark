@@ -1,5 +1,5 @@
 
-; 62 occurrences:
+; 61 occurrences:
 ; abseil-cpp/optimized/pool_urbg_test.cc.ll
 ; abseil-cpp/optimized/randen_engine_test.cc.ll
 ; arrow/optimized/scalar.cc.ll
@@ -12,7 +12,6 @@
 ; libquic/optimized/quic_framer.cc.ll
 ; linux/optimized/callchain.ll
 ; linux/optimized/drm_edid.ll
-; linux/optimized/he.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/tdls.ll
@@ -37,7 +36,6 @@
 ; llvm/optimized/MIRPrinter.cpp.ll
 ; llvm/optimized/MachineFunction.cpp.ll
 ; llvm/optimized/MachineInstr.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RISCVLegalizerInfo.cpp.ll
@@ -62,6 +60,7 @@
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; wireshark/optimized/packet-dof.c.ll
 ; yalantinglibs/optimized/data_gen.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i8 %0, i8 %1) #0 {
 entry:
@@ -83,17 +82,22 @@ entry:
   ret i64 %3
 }
 
-; 89 occurrences:
+; 98 occurrences:
 ; abseil-cpp/optimized/damerau_levenshtein_distance.cc.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; assimp/optimized/STEPFileEncoding.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/expand.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/sparring_partner.ll
+; boost/optimized/static_string.ll
+; boost/optimized/within.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/write_dsv.ll
 ; clamav/optimized/arc4.c.ll
 ; clamav/optimized/crypt.cpp.ll
-; cmake/optimized/archive_random.c.ll
-; cmake/optimized/delta_decoder.c.ll
-; cmake/optimized/delta_encoder.c.ll
 ; coreutils-rs/optimized/aci7fhqxjjsavmn.ll
 ; coreutils-rs/optimized/jiqj5u7teuhb0o0.ll
 ; cpython/optimized/_codecs_jp.ll
@@ -112,7 +116,6 @@ entry:
 ; llvm/optimized/IdentifierTable.cpp.ll
 ; luau/optimized/lmathlib.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
@@ -130,8 +133,6 @@ entry:
 ; nix/optimized/local-store.ll
 ; nix/optimized/names.ll
 ; nix/optimized/nix-collect-garbage.ll
-; nix/optimized/nix-env.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/profile.ll
 ; nix/optimized/profiles.ll
 ; nix/optimized/shared.ll
@@ -173,6 +174,13 @@ entry:
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; wireshark/optimized/dot11decrypt_wep.c.ll
 ; wireshark/optimized/packet-oscore.c.ll
+; zed-rs/optimized/0alphtuk5g34mh3kiiec4rpgf.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i8 %0, i8 %1) #0 {
 entry:
@@ -198,16 +206,6 @@ define i64 @func0000000000000006(i8 %0, i8 %1) #0 {
 entry:
   %2 = add nuw nsw i8 %0, %1
   %3 = zext i8 %2 to i64
-  ret i64 %3
-}
-
-; 1 occurrences:
-; wireshark/optimized/packet-mpeg-sect.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000005(i8 %0, i8 %1) #0 {
-entry:
-  %2 = add nuw i8 %0, %1
-  %3 = zext nneg i8 %2 to i64
   ret i64 %3
 }
 

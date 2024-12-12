@@ -1,6 +1,6 @@
 
-%"struct.OT::IntType.167.2617260" = type { %struct.BEInt.168.2617261 }
-%struct.BEInt.168.2617261 = type { i8 }
+%"struct.OT::IntType.167.2730712" = type { %struct.BEInt.168.2730713 }
+%struct.BEInt.168.2730713 = type { i8 }
 
 ; 5 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -9,13 +9,13 @@
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000fa(ptr %0, i8 %1) #0 {
+define ptr @func00000000000000ff(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 1
-  %6 = getelementptr nusw %"struct.OT::IntType.167.2617260", ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 1
+  %6 = getelementptr nusw nuw %"struct.OT::IntType.167.2730712", ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -33,13 +33,13 @@ entry:
 ; openjdk/optimized/hb-ot-font.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i8 %1) #0 {
+define ptr @func000000000000007f(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 1
-  %6 = getelementptr nusw %"struct.OT::IntType.167.2617260", ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 1
+  %6 = getelementptr nusw nuw %"struct.OT::IntType.167.2730712", ptr %5, i64 %4
   ret ptr %6
 }
 

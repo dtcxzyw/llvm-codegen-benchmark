@@ -18,18 +18,4 @@ entry:
   ret i32 %7
 }
 
-; 2 occurrences:
-; linux/optimized/ldt.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000001f(i32 %0, i32 %1, i8 %2) #0 {
-entry:
-  %3 = xor i8 %2, 7
-  %4 = zext nneg i8 %3 to i32
-  %5 = shl nuw nsw i32 %4, 24
-  %6 = or disjoint i32 %5, %1
-  %7 = or disjoint i32 %6, %0
-  ret i32 %7
-}
-
 attributes #0 = { nounwind }

@@ -21,6 +21,13 @@ func000000000000000f:                   # @func000000000000000f
 	andq	%rcx, %rax
 	orq	%rdi, %rax
 	retq
+func0000000000000008:                   # @func0000000000000008
+	shlq	$32, %rsi
+	movabsq	$1095216660480, %rcx            # imm = 0xFF00000000
+	leaq	(%rsi,%rcx), %rax
+	andq	%rcx, %rax
+	orq	%rdi, %rax
+	retq
 func000000000000000b:                   # @func000000000000000b
 	leal	28(,%rsi,4), %eax
 	andl	$28, %eax

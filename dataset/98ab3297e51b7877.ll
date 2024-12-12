@@ -1,9 +1,10 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; abseil-cpp/optimized/int128.cc.ll
 ; abseil-cpp/optimized/int128_test.cc.ll
+; boost/optimized/approximately_equals.ll
 ; libquic/optimized/poly1305_vec.c.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; qemu/optimized/accel_tcg_user-exec.c.ll
@@ -14,6 +15,18 @@ entry:
   %2 = shl nuw i128 %1, 64
   %3 = or disjoint i128 %2, %0
   %4 = lshr i128 %3, 56
+  ret i128 %4
+}
+
+; 2 occurrences:
+; boost/optimized/approximately_equals.ll
+; libquic/optimized/poly1305_vec.c.ll
+; Function Attrs: nounwind
+define i128 @func000000000000000b(i128 %0, i128 %1) #0 {
+entry:
+  %2 = shl nuw i128 %1, 64
+  %3 = or disjoint i128 %2, %0
+  %4 = lshr exact i128 %3, 3
   ret i128 %4
 }
 
@@ -39,7 +52,7 @@ entry:
 define i128 @func0000000000000002(i128 %0, i128 %1) #0 {
 entry:
   %2 = shl i128 %1, 65
-  %3 = or disjoint i128 %2, %0
+  %3 = or disjoint i128 %0, %2
   %4 = lshr i128 %3, 64
   ret i128 %4
 }

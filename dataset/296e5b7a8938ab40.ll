@@ -1,5 +1,5 @@
 
-%"class.cv::Point_.3597461" = type { float, float }
+%"class.cv::Point_.3778048" = type { float, float }
 
 ; 16 occurrences:
 ; eastl/optimized/BenchmarkHash.cpp.ll
@@ -19,12 +19,12 @@
 ; proxygen/optimized/HeaderTable.cpp.ll
 ; velox/optimized/VectorFuzzer.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = urem i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw i32, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i32, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -41,12 +41,12 @@ entry:
 ; opencv/optimized/tldModel.cpp.ll
 ; recastnavigation/optimized/RecastRegion.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = urem i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw ptr, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw ptr, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -56,12 +56,12 @@ entry:
 ; eastl/optimized/TestHash.cpp.ll
 ; openjdk/optimized/os.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000013(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = urem i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw i32, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i32, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -79,24 +79,24 @@ entry:
 ; z3/optimized/spacer_pdr.cpp.ll
 ; z3/optimized/spacer_prop_solver.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = urem i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i32, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i32, ptr %0, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; opencv/optimized/min_enclosing_triangle.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000016(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000017(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = urem i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw %"class.cv::Point_.3597461", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.cv::Point_.3778048", ptr %0, i64 %5
   ret ptr %6
 }
 

@@ -8,21 +8,21 @@ func0000000000000004:                   # @func0000000000000004
 	orl	%edi, %eax
 	retq
 func0000000000000005:                   # @func0000000000000005
-	notb	%sil
-	movzbl	%sil, %ecx
-	andl	$1, %ecx
+	xorl	%ecx, %ecx
+	cmpl	$8192, %edx                     # imm = 0x2000
+	setne	%cl
 	shll	$5, %ecx
 	xorl	%eax, %eax
-	cmpl	$8192, %edx                     # imm = 0x2000
-	cmovnel	%ecx, %eax
+	testb	$1, %sil
+	cmovel	%ecx, %eax
 	orl	%edi, %eax
 	retq
 func0000000000000030:                   # @func0000000000000030
-	testb	$1, %sil
+	cmpl	$7, %edx
 	movl	$1073741824, %ecx               # imm = 0x40000000
 	movl	$-1073741824, %eax              # imm = 0xC0000000
 	cmovnel	%ecx, %eax
-	cmpl	$7, %edx
+	testb	$1, %sil
 	cmovnel	%ecx, %eax
 	orl	%edi, %eax
 	retq

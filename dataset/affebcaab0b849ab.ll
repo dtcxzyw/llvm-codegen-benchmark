@@ -1,7 +1,6 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; cmake/optimized/nghttp2_session.c.ll
-; linux/optimized/scsicam.ll
 ; lz4/optimized/lz4.c.ll
 ; nghttp2/optimized/nghttp2_session.c.ll
 ; recastnavigation/optimized/fastlz.c.ll

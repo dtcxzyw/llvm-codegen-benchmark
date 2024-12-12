@@ -1,4 +1,21 @@
 
+; 6 occurrences:
+; cvc5/optimized/term_context.cpp.ll
+; eastl/optimized/TestBitset.cpp.ll
+; linux/optimized/hooks.ll
+; llvm/optimized/ExprEngine.cpp.ll
+; openvdb/optimized/LevelSetRebuild.cc.ll
+; openvdb/optimized/VolumeToMesh.cc.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000c(i1 %0, i1 %1, i16 %2) #0 {
+entry:
+  %3 = and i16 %2, 4096
+  %4 = icmp ne i16 %3, 0
+  %5 = and i1 %0, %1
+  %6 = and i1 %4, %5
+  ret i1 %6
+}
+
 ; 13 occurrences:
 ; c3c/optimized/sema_types.c.ll
 ; llvm/optimized/ValueLattice.cpp.ll
@@ -18,22 +35,6 @@ define i1 @func0000000000000001(i1 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 512
   %4 = icmp eq i16 %3, 0
-  %5 = and i1 %0, %1
-  %6 = and i1 %4, %5
-  ret i1 %6
-}
-
-; 5 occurrences:
-; cvc5/optimized/term_context.cpp.ll
-; eastl/optimized/TestBitset.cpp.ll
-; linux/optimized/hooks.ll
-; llvm/optimized/ExprEngine.cpp.ll
-; wireshark/optimized/packet-ieee80211-radio.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000c(i1 %0, i1 %1, i16 %2) #0 {
-entry:
-  %3 = and i16 %2, 1024
-  %4 = icmp ne i16 %3, 0
   %5 = and i1 %0, %1
   %6 = and i1 %4, %5
   ret i1 %6

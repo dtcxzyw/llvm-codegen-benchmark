@@ -1,5 +1,5 @@
 
-; 54 occurrences:
+; 52 occurrences:
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/absDup.c.ll
 ; abc/optimized/absGla.c.ll
@@ -18,7 +18,6 @@
 ; abc/optimized/kitPla.c.ll
 ; abc/optimized/mpmDsd.c.ll
 ; abc/optimized/mpmPre.c.ll
-; abc/optimized/sbdCnf.c.ll
 ; abc/optimized/sfmArea.c.ll
 ; abc/optimized/sfmCnf.c.ll
 ; abc/optimized/utilIsop.c.ll
@@ -30,7 +29,6 @@
 ; gromacs/optimized/grid.cpp.ll
 ; hdf5/optimized/H5Tconv_integer.c.ll
 ; libwebp/optimized/bit_writer_utils.c.ll
-; libwebp/optimized/sharpyuv.c.ll
 ; linux/optimized/mballoc.ll
 ; linux/optimized/snapshot.ll
 ; linux/optimized/uncore_nhmex.ll

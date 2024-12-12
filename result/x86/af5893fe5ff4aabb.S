@@ -20,13 +20,13 @@ func0000000000000010:                   # @func0000000000000010
 	retq
 func0000000000000005:                   # @func0000000000000005
 	sarq	$21, %rsi
-	leaq	1048576(%rsi,%rdi), %rax
+	leaq	1048576(%rdi,%rsi), %rax
 	retq
 func0000000000000001:                   # @func0000000000000001
 	sarq	$21, %rsi
-	leaq	1048576(%rsi,%rdi), %rax
+	leaq	1048576(%rdi,%rsi), %rax
 	retq
 func0000000000000011:                   # @func0000000000000011
 	sarq	$3, %rsi
-	leaq	-2(%rsi,%rdi), %rax
+	leaq	-2(%rdi,%rsi), %rax
 	retq

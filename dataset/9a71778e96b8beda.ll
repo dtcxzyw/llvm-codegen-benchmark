@@ -1,17 +1,4 @@
 
-; 2 occurrences:
-; abc/optimized/mvcUtils.c.ll
-; postgres/optimized/arrayfuncs.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000065(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add nuw nsw i64 %0, %1
-  %3 = shl i64 %2, 32
-  %4 = ashr exact i64 %3, 32
-  %5 = add nsw i64 %4, 16
-  ret i64 %5
-}
-
 ; 4 occurrences:
 ; ceres/optimized/cgnr_solver.cc.ll
 ; ceres/optimized/iterative_schur_complement_solver.cc.ll
@@ -40,6 +27,18 @@ entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
   %5 = add nsw i64 %4, 32
+  ret i64 %5
+}
+
+; 1 occurrences:
+; postgres/optimized/arrayfuncs.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000065(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nuw nsw i64 %0, %1
+  %3 = shl i64 %2, 32
+  %4 = ashr exact i64 %3, 32
+  %5 = add nsw i64 %4, 7
   ret i64 %5
 }
 

@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; linux/optimized/dm-table.ll
 ; qemu/optimized/block.c.ll
 ; tree-sitter-rs/optimized/2jber9b3bsvatks5.ll
@@ -9,6 +9,7 @@
 ; z3/optimized/seq_rewriter.cpp.ll
 ; z3/optimized/spacer_generalizers.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
+; zed-rs/optimized/8l6j9aar0oaoyhr62czfg3g36.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, ptr %1) #0 {
 entry:

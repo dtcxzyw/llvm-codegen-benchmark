@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 16 occurrences:
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; diesel-rs/optimized/6cb7zukciz78xvw.ll
 ; influxdb-rs/optimized/2rfehyqstyicagph.ll
@@ -13,6 +13,9 @@
 ; tree-sitter-rs/optimized/42mwgpotg9phq80h.ll
 ; wasmtime-rs/optimized/3csojcpnl2jjo8sc.ll
 ; wasmtime-rs/optimized/3vdx8w41hjyzioqv.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8wa0knulc7q0w36j1a9to646h.ll
+; zed-rs/optimized/diggdkpukg0xn23g7ivuh3jfw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i1 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -22,8 +25,7 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
-; eastl/optimized/BenchmarkDeque.cpp.ll
+; 3 occurrences:
 ; linux/optimized/i915_gem_shrinker.ll
 ; linux/optimized/mlock.ll
 ; openjdk/optimized/memRegion.ll

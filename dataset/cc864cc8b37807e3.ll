@@ -1,5 +1,6 @@
 
-; 21 occurrences:
+; 24 occurrences:
+; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; icu/optimized/number_patternstring.ll
 ; mold/optimized/passes.cc.ALPHA.cc.ll
 ; mold/optimized/passes.cc.ARM32.cc.ll
@@ -21,8 +22,10 @@
 ; mold/optimized/passes.cc.X86_64.cc.ll
 ; raylib/optimized/raudio.c.ll
 ; wireshark/optimized/packet-eigrp.c.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/diggdkpukg0xn23g7ivuh3jfw.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0) #0 {
+define i1 @func0000000000000021(i16 %0) #0 {
 entry:
   %1 = icmp eq i16 %0, 0
   ret i1 %1
@@ -33,7 +36,7 @@ entry:
 ; nlohmann_json/optimized/unit-deserialization.cpp.ll
 ; nlohmann_json/optimized/unit-wstring.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i16 %0) #0 {
+define i1 @func0000000000000024(i16 %0) #0 {
 entry:
   %1 = icmp ult i16 %0, -258
   ret i1 %1
@@ -42,7 +45,7 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/ssl_lib.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i16 %0) #0 {
+define i1 @func0000000000000028(i16 %0) #0 {
 entry:
   %1 = add i16 %0, -771
   %2 = icmp ult i16 %1, -770

@@ -4,15 +4,15 @@ func0000000000000008:                   # @func0000000000000008
 	orb	%dil, %sil
 	orb	%sil, %al
 	retq
-func0000000000000018:                   # @func0000000000000018
-	cmpq	$256, %rdx                      # imm = 0x100
-	setne	%al
-	orb	%dil, %sil
-	orb	%sil, %al
-	retq
 func0000000000000002:                   # @func0000000000000002
 	testq	%rdx, %rdx
 	sete	%al
+	orb	%dil, %sil
+	orb	%sil, %al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	testq	%rdx, %rdx
+	setne	%al
 	orb	%dil, %sil
 	orb	%sil, %al
 	retq

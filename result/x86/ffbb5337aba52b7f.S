@@ -1,10 +1,3 @@
-func0000000000000001:                   # @func0000000000000001
-	testb	$1, %sil
-	movl	$1, %eax
-	cmovel	%edi, %eax
-	testb	%dil, %dil
-	cmovnel	%edi, %eax
-	retq
 func000000000000000c:                   # @func000000000000000c
 	xorl	%eax, %eax
 	testb	$1, %sil

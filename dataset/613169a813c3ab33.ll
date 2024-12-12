@@ -1,7 +1,15 @@
 
-; 7 occurrences:
+; 15 occurrences:
 ; abc/optimized/ifReduce.c.ll
 ; abc/optimized/ivyFastMap.c.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; darktable/optimized/introspection_bilateral.cc.ll
 ; linux/optimized/cmdline.ll
 ; linux/optimized/hooks.ll

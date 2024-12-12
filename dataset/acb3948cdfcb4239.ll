@@ -39,9 +39,12 @@ entry:
   ret i64 %6
 }
 
-; 113 occurrences:
+; 116 occurrences:
 ; arrow/optimized/kernel.cc.ll
 ; arrow/optimized/key_hash.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; casadi/optimized/code_generator.cpp.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dense_qr.cc.ll

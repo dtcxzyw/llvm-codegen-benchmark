@@ -10,9 +10,19 @@ func0000000000000001:                   # @func0000000000000001
 	.quad	0x3f50000000000000              # double 9.765625E-4
 .LCPI1_1:
 	.quad	102400                          # 0x19000
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	vmulpd	.LCPI1_0(%rip){1to4}, %ymm0, %ymm2
 	vpcmpltuq	.LCPI1_1(%rip){1to4}, %ymm1, %k1
+	vmovapd	%ymm0, %ymm2 {%k1}
+	vmovapd	%ymm2, %ymm0
+	retq
+.LCPI2_0:
+	.quad	0x3f50000000000000              # double 9.765625E-4
+.LCPI2_1:
+	.quad	1073741824                      # 0x40000000
+func0000000000000004:                   # @func0000000000000004
+	vmulpd	.LCPI2_0(%rip){1to4}, %ymm0, %ymm2
+	vpcmpltuq	.LCPI2_1(%rip){1to4}, %ymm1, %k1
 	vmovapd	%ymm0, %ymm2 {%k1}
 	vmovapd	%ymm2, %ymm0
 	retq

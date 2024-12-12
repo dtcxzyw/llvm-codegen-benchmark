@@ -3,7 +3,7 @@
 ; llvm/optimized/GSIStreamBuilder.cpp.ll
 ; qemu/optimized/hw_ide_ahci.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c8(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000388(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 4194303
   %4 = add nuw nsw i32 %3, 1
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/cistpl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000108(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 3
   %4 = add nsw i32 %3, -1

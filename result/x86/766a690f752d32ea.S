@@ -13,5 +13,5 @@ func000000000000000f:                   # @func000000000000000f
 func0000000000000003:                   # @func0000000000000003
 	andl	$-268431361, %edx               # imm = 0xF0000FFF
 	orq	%rsi, %rdx
-	leaq	246415360(%rdx,%rdi), %rax
+	leaq	246415360(%rdi,%rdx), %rax
 	retq

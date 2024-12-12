@@ -1,10 +1,9 @@
 
-; 36 occurrences:
+; 33 occurrences:
 ; cmake/optimized/huf_decompress.c.ll
 ; cpython/optimized/_codecs_jp.ll
 ; linux/optimized/huf_decompress.ll
 ; linux/optimized/intel_rps.ll
-; linux/optimized/uthex.ll
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; minetest/optimized/terminal_chat_console.cpp.ll
 ; mold/optimized/cmdline.cc.ALPHA.cc.ll
@@ -25,14 +24,12 @@
 ; mold/optimized/cmdline.cc.SH4.cc.ll
 ; mold/optimized/cmdline.cc.SPARC64.cc.ll
 ; mold/optimized/cmdline.cc.X86_64.cc.ll
-; openmpi/optimized/hb_tree.ll
 ; openspiel/optimized/dark_chess.cc.ll
 ; openusd/optimized/stringUtils.cpp.ll
 ; postgres/optimized/euc_jp_and_sjis.ll
 ; proxygen/optimized/HTTP2Framer.cpp.ll
 ; qemu/optimized/target_riscv_translate.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
-; qemu/optimized/util_qtree.c.ll
 ; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
 ; wireshark/optimized/packet-sip.c.ll
 ; zstd/optimized/huf_decompress.c.ll

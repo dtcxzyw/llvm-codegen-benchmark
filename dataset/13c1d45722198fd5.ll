@@ -1,7 +1,7 @@
 
-%class.CellTypeState.2618392 = type { i32 }
+%class.CellTypeState.2731841 = type { i32 }
 
-; 198 occurrences:
+; 202 occurrences:
 ; abc/optimized/aigPack.c.ll
 ; abc/optimized/bmcGen.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -19,6 +19,7 @@
 ; abc/optimized/ioReadBlifMv.c.ll
 ; abc/optimized/ioReadPlaMo.c.ll
 ; abc/optimized/kitCloud.c.ll
+; abc/optimized/mpmTruth.c.ll
 ; abc/optimized/plaMan.c.ll
 ; abc/optimized/plaRead.c.ll
 ; abc/optimized/plaWrite.c.ll
@@ -66,7 +67,6 @@
 ; cmake/optimized/divsufsort.c.ll
 ; darktable/optimized/introspection_retouch.c.ll
 ; faiss/optimized/lattice_Zn.cpp.ll
-; fmt/optimized/format-impl-test.cc.ll
 ; freetype/optimized/sdf.c.ll
 ; g2o/optimized/slam2d_linear.cpp.ll
 ; g2o/optimized/solver_eigen.cpp.ll
@@ -78,7 +78,6 @@
 ; gromacs/optimized/matio.cpp.ll
 ; hyperscan/optimized/mcclellancompile.cpp.ll
 ; hyperscan/optimized/mcsheng_compile.cpp.ll
-; hyperscan/optimized/program_runtime.c.ll
 ; icu/optimized/formatted_string_builder.ll
 ; icu/optimized/package.ll
 ; icu/optimized/pkgitems.ll
@@ -100,6 +99,9 @@
 ; luajit/optimized/buildvm_asm.ll
 ; luau/optimized/BytecodeAnalysis.cpp.ll
 ; luau/optimized/lutf8lib.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; meshlab/optimized/additionalgui.cpp.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
@@ -121,8 +123,10 @@
 ; opencv/optimized/lapack.cpp.ll
 ; opencv/optimized/lkpyramid.cpp.ll
 ; opencv/optimized/matrix_transform.cpp.ll
+; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/pyramids.cpp.ll
 ; opencv/optimized/resize.cpp.ll
+; opencv/optimized/rtrees.cpp.ll
 ; opencv/optimized/samplers.cpp.ll
 ; opencv/optimized/stereo_binary_bm.cpp.ll
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
@@ -157,7 +161,6 @@
 ; openjdk/optimized/reflection.ll
 ; openjdk/optimized/scopedMemoryAccess.ll
 ; openjdk/optimized/sharedRuntime.ll
-; openjdk/optimized/sharedRuntime_x86_64.ll
 ; openjdk/optimized/stackwalk.ll
 ; openjdk/optimized/vframe.ll
 ; openmpi/optimized/keyval_lex.ll
@@ -195,25 +198,27 @@
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_truetype.c.ll
 ; sundials/optimized/sundials_iterative.c.ll
+; velox/optimized/HashStringAllocator.cpp.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; yosys/optimized/fstapi.ll
 ; zstd/optimized/divsufsort.c.ll
 ; zxing/optimized/BinaryBitmap.cpp.ll
 ; zxing/optimized/ReadBarcode.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000001b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6
 }
 
-; 25 occurrences:
+; 26 occurrences:
 ; cpython/optimized/ceval.ll
 ; cpython/optimized/unicodeobject.ll
 ; icu/optimized/bytestriebuilder.ll
+; icu/optimized/decNumber.ll
 ; linux/optimized/alternative.ll
 ; linux/optimized/decompress_unlzma.ll
 ; linux/optimized/trace_eprobe.ll
@@ -246,7 +251,7 @@ entry:
   ret ptr %6
 }
 
-; 134 occurrences:
+; 135 occurrences:
 ; abc/optimized/absRef.c.ll
 ; abc/optimized/utilNam.c.ll
 ; bullet3/optimized/btMultiBodyGearConstraint.ll
@@ -254,6 +259,7 @@ entry:
 ; bullet3/optimized/btMultiBodyJointMotor.ll
 ; bullet3/optimized/btMultiBodySphericalJointLimit.ll
 ; bullet3/optimized/btMultiBodySphericalJointMotor.ll
+; casadi/optimized/cs_amd.c.ll
 ; clamav/optimized/upack.c.ll
 ; cmake/optimized/huf_decompress.c.ll
 ; gromacs/optimized/atomdata.cpp.ll
@@ -382,21 +388,22 @@ entry:
 ; stb/optimized/stb_truetype.c.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; cmake/optimized/zdict.c.ll
 ; linux/optimized/alternative.ll
 ; linux/optimized/huf_decompress.ll
 ; linux/optimized/trans_virtio.ll
 ; qemu/optimized/block_vvfat.c.ll
+; quickjs/optimized/quickjs.ll
 ; wireshark/optimized/lemon.c.ll
 ; zstd/optimized/zdict.c.ll
 ; Function Attrs: nounwind
@@ -409,11 +416,9 @@ entry:
   ret ptr %6
 }
 
-; 43 occurrences:
+; 41 occurrences:
 ; abc/optimized/wlcBlast.c.ll
 ; freetype/optimized/sdf.c.ll
-; gromacs/optimized/dlasd3.cpp.ll
-; gromacs/optimized/slasd3.cpp.ll
 ; icu/optimized/collationdatareader.ll
 ; icu/optimized/formatted_string_builder.ll
 ; icu/optimized/uts46.ll
@@ -457,35 +462,35 @@ entry:
 define ptr @func0000000000000018(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw %class.CellTypeState.2618392, ptr %0, i64 %3
+  %4 = getelementptr nusw %class.CellTypeState.2731841, ptr %0, i64 %3
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr %class.CellTypeState.2618392, ptr %4, i64 %5
+  %6 = getelementptr %class.CellTypeState.2731841, ptr %4, i64 %5
   ret ptr %6
 }
 
 ; 3 occurrences:
-; abc/optimized/mpmTruth.c.ll
-; casadi/optimized/cs_maxtrans.c.ll
-; velox/optimized/HashStringAllocator.cpp.ll
+; fmt/optimized/format-impl-test.cc.ll
+; hyperscan/optimized/program_runtime.c.ll
+; openjdk/optimized/sharedRuntime_x86_64.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i64, ptr %0, i64 %3
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i64, ptr %4, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
-; casadi/optimized/cs_amd.c.ll
+; casadi/optimized/cs_maxtrans.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000013(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i32, ptr %0, i64 %3
-  %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw i32, ptr %4, i64 %5
+  %5 = zext nneg i32 %1 to i64
+  %6 = getelementptr nusw nuw i32, ptr %4, i64 %5
   ret ptr %6
 }
 

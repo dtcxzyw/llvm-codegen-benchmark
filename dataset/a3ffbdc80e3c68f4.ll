@@ -6,7 +6,7 @@ define i1 @func0000000000000003(double %0, double %1, double %2) #0 {
 entry:
   %3 = fneg double %2
   %4 = fdiv double %3, %1
-  %5 = fcmp ugt double %4, %0
+  %5 = fcmp ult double %0, %4
   ret i1 %5
 }
 
@@ -20,7 +20,7 @@ define i1 @func0000000000000002(double %0, double %1, double %2) #0 {
 entry:
   %3 = fneg double %2
   %4 = fdiv double %3, %1
-  %5 = fcmp ogt double %4, %0
+  %5 = fcmp olt double %0, %4
   ret i1 %5
 }
 
@@ -31,7 +31,7 @@ define i1 @func000000000000000d(double %0, double %1, double %2) #0 {
 entry:
   %3 = fneg double %2
   %4 = fdiv double %3, %1
-  %5 = fcmp ule double %4, %0
+  %5 = fcmp uge double %0, %4
   ret i1 %5
 }
 

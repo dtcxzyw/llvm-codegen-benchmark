@@ -13,13 +13,13 @@ func000000000000001b:                   # @func000000000000001b
 	movl	%edi, %eax
 	shlxq	%rsi, %rax, %rax
 	retq
-func000000000000001e:                   # @func000000000000001e
-	shll	$3, %esi
+func0000000000000018:                   # @func0000000000000018
+	shll	$2, %esi
 	movl	%edi, %eax
 	shlxq	%rsi, %rax, %rax
 	retq
-func0000000000000018:                   # @func0000000000000018
-	shll	$2, %esi
+func000000000000001e:                   # @func000000000000001e
+	shll	$3, %esi
 	movl	%edi, %eax
 	shlxq	%rsi, %rax, %rax
 	retq

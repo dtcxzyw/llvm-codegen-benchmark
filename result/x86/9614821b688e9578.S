@@ -4,7 +4,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	%edi, %esi
 	seta	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	orl	%edx, %esi
 	andl	$48, %esi
 	cmpl	%edi, %esi
@@ -27,10 +27,4 @@ func0000000000000006:                   # @func0000000000000006
 	movzbl	%sil, %eax
 	cmpl	%edi, %eax
 	setl	%al
-	retq
-func0000000000000019:                   # @func0000000000000019
-	orl	%edx, %esi
-	andl	$65534, %esi                    # imm = 0xFFFE
-	cmpl	%edi, %esi
-	setae	%al
 	retq

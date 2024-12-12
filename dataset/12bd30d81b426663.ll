@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/EDFThreadPoolExecutor.cpp.ll
@@ -11,17 +11,16 @@
 ; qemu/optimized/util_oslib-posix.c.ll
 ; quest/optimized/QuEST_cpu.c.ll
 ; redis/optimized/lua_struct.ll
-; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
-  %4 = and i64 %3, %1
+  %4 = and i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }
 
-; 364 occurrences:
+; 385 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -202,8 +201,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -337,7 +334,6 @@ entry:
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
 ; openjdk/optimized/codeCache.ll
-; openmpi/optimized/osc_rdma_component.ll
 ; openmpi/optimized/pmix_shmem.ll
 ; openusd/optimized/fast-dtoa.cc.ll
 ; ozz-animation/optimized/gltf2ozz.cc.ll
@@ -386,12 +382,36 @@ entry:
 ; typst-rs/optimized/22a0ijn9jg8ilzgs.ll
 ; typst-rs/optimized/42n69x09j7wzwnay.ll
 ; typst-rs/optimized/4p30esqzpn2o5olu.ll
+; zed-rs/optimized/0b2hqzlwilt32lfvaqs2arfgd.ll
+; zed-rs/optimized/1wjst2j1bd1xnipyz033svz8u.ll
+; zed-rs/optimized/3bwpnkngp0v942xuk5tod4bfe.ll
+; zed-rs/optimized/3xkvahxsem1hdyf3ef4aq8akj.ll
+; zed-rs/optimized/4m25zm6spqfgpymm9gqw6hgqq.ll
+; zed-rs/optimized/4ovnxxb7zmwxieofqxkhvk2er.ll
+; zed-rs/optimized/5qba05g0dyedoh8rydwnrszty.ll
+; zed-rs/optimized/7435o5as5af1nwuofltvv4x7w.ll
+; zed-rs/optimized/7nj8apu4jlzv057e0kkcpojil.ll
+; zed-rs/optimized/7v45b7y7t6bpxkoxn6aktlghb.ll
+; zed-rs/optimized/8429boafm438obcc9d542xswj.ll
+; zed-rs/optimized/8l6j9aar0oaoyhr62czfg3g36.ll
+; zed-rs/optimized/9halndrg3dxenpyuljfpbk2q0.ll
+; zed-rs/optimized/asge4ovzpoi4j0hgzjom7idmo.ll
+; zed-rs/optimized/bmmi5kkbn5ov6774do5bqdg37.ll
+; zed-rs/optimized/bvs73film05xborh0f0ab3jqk.ll
+; zed-rs/optimized/bxihi250edldcndb2a4vmykoa.ll
+; zed-rs/optimized/cwm1jtpn2hj5f4ljdx4klnhqs.ll
+; zed-rs/optimized/daazuwy5q4pkhw5qv9dy4nfnq.ll
+; zed-rs/optimized/dbzdlmbe9tm616os1ebjr005g.ll
+; zed-rs/optimized/eh70uus3omn48t7itznx7bc3r.ll
+; zed-rs/optimized/el2ujbjp7xo4qjt47dh50oqat.ll
+; zed-rs/optimized/enfie1bj6h9p5lyhzskn3992o.ll
+; zed-rs/optimized/ewfky7337ygatenw8mnh0raxz.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -1
-  %4 = and i64 %3, %1
-  %5 = add i64 %4, %0
+  %4 = and i64 %1, %3
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -402,8 +422,8 @@ entry:
 define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 4294967295
-  %4 = and i64 %3, %1
-  %5 = add i64 %4, %0
+  %4 = and i64 %1, %3
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -414,30 +434,7 @@ define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 9223372036854775807
   %4 = and i64 %3, %1
-  %5 = add i64 %4, %0
-  ret i64 %5
-}
-
-; 1 occurrences:
-; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000007(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nsw i64 %2, -1
-  %4 = and i64 %3, %1
-  %5 = add nuw nsw i64 %4, %0
-  ret i64 %5
-}
-
-; 2 occurrences:
-; linux/optimized/compress.ll
-; linux/optimized/dma-iommu.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add i64 %2, 4294967295
-  %4 = and i64 %3, %1
-  %5 = add nsw i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 

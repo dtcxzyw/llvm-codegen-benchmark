@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 25 occurrences:
 ; abc/optimized/ivyDsd.c.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
@@ -18,7 +18,6 @@
 ; linux/optimized/intel_vdsc.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; openjdk/optimized/cdsConfig.ll
 ; openusd/optimized/patchBuilder.cpp.ll
 ; rust-analyzer-rs/optimized/k5mtltw7nxmadpl.ll
@@ -30,7 +29,7 @@
 define i32 @func0000000000000007(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
-  %4 = select i1 %3, i32 41, i32 39
+  %4 = select i1 %3, i32 0, i32 8
   %5 = or disjoint i32 %0, %1
   %6 = or disjoint i32 %5, %4
   ret i32 %6

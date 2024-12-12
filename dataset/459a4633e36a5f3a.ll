@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; darktable/optimized/introspection_colorbalancergb.c.ll
 ; darktable/optimized/introspection_hazeremoval.c.ll
 ; darktable/optimized/introspection_liquify.c.ll
@@ -8,12 +8,11 @@
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; opencv/optimized/finder_pattern_finder.cpp.ll
 ; opencv/optimized/security_barrier_camera.cpp.ll
-; openvdb/optimized/DelayedLoadMetadata.cc.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, float %1) #0 {
 entry:
   %2 = fptoui float %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 %2
+  %3 = getelementptr nusw float, ptr %0, i64 %2
   ret ptr %3
 }
 

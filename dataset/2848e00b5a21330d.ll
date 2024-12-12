@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
 ; coreutils-rs/optimized/3fp1x41wzh4l1rh9.ll
@@ -16,6 +16,7 @@
 ; php/optimized/parse_posix.ll
 ; postgres/optimized/localtime.ll
 ; slurm/optimized/assoc_mgr.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:

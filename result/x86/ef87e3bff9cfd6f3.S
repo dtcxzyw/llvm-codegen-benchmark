@@ -1,4 +1,4 @@
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	subl	%edx, %esi
 	addl	$348, %esi                      # imm = 0x15C
 	testl	%esi, %esi

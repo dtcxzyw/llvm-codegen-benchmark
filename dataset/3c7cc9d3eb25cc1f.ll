@@ -1,8 +1,9 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; clamav/optimized/filtering.c.ll
 ; icu/optimized/gencnvex.ll
 ; linux/optimized/intel_overlay.ll
+; lvgl/optimized/lv_refr.ll
 ; wireshark/optimized/packet-icmpv6.c.ll
 ; wireshark/optimized/packet-ipv6.c.ll
 ; wireshark/optimized/packet-usb-audio.c.ll

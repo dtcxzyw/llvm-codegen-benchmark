@@ -1,6 +1,5 @@
 
-; 6 occurrences:
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; 5 occurrences:
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; ncnn/optimized/convolutiondepthwise_x86.cpp.ll
 ; ncnn/optimized/convolutiondepthwise_x86_avx.cpp.ll

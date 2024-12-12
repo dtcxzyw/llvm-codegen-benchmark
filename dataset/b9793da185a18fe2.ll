@@ -1,10 +1,11 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; darktable/optimized/timeline.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; git/optimized/date.ll
 ; linux/optimized/kapi.ll
-; nuttx/optimized/lib_timegm.c.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_image.ll
 ; quantlib/optimized/date.ll
 ; velox/optimized/TimestampConversion.cpp.ll
 ; wireshark/optimized/netmon.c.ll
@@ -14,7 +15,7 @@ entry:
   %3 = udiv i32 %2, 400
   %4 = add nuw nsw i32 %3, %1
   %5 = mul i32 %4, 400
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 

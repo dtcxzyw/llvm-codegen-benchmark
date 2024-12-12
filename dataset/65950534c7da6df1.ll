@@ -1,15 +1,12 @@
 
-; 13 occurrences:
+; 10 occurrences:
 ; gromacs/optimized/dgetri.cpp.ll
 ; gromacs/optimized/dlarft.cpp.ll
 ; gromacs/optimized/sgetri.cpp.ll
 ; gromacs/optimized/slarft.cpp.ll
 ; openblas/optimized/dgbbrd.c.ll
-; openblas/optimized/dgetri.c.ll
-; openblas/optimized/dlasyf_aa.c.ll
 ; openblas/optimized/dlatrs3.c.ll
 ; openblas/optimized/dtgevc.c.ll
-; openblas/optimized/dtrsna.c.ll
 ; opencv/optimized/calibinit.cpp.ll
 ; opencv/optimized/hough.cpp.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll
@@ -24,7 +21,7 @@ entry:
   ret ptr %7
 }
 
-; 22 occurrences:
+; 19 occurrences:
 ; gromacs/optimized/dbdsdc.cpp.ll
 ; gromacs/optimized/dgetri.cpp.ll
 ; gromacs/optimized/dsteqr.cpp.ll
@@ -32,18 +29,15 @@ entry:
 ; gromacs/optimized/sgetri.cpp.ll
 ; gromacs/optimized/ssteqr.cpp.ll
 ; openblas/optimized/dbdsdc.c.ll
-; openblas/optimized/dgbcon.c.ll
 ; openblas/optimized/dgees.c.ll
 ; openblas/optimized/dgeesx.c.ll
 ; openblas/optimized/dgesvj.c.ll
-; openblas/optimized/dgetri.c.ll
 ; openblas/optimized/dgsvj0.c.ll
 ; openblas/optimized/dgsvj1.c.ll
 ; openblas/optimized/dhgeqz.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; openblas/optimized/dstedc.c.ll
 ; openblas/optimized/dsteqr.c.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
 ; openblas/optimized/dtrevc.c.ll
 ; openblas/optimized/dtrevc3.c.ll
 ; opencv/optimized/bitmatrixparser.cpp.ll

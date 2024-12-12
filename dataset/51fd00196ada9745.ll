@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; cvc5/optimized/query_generator_sample_sat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
   %4 = sub i32 %0, %1

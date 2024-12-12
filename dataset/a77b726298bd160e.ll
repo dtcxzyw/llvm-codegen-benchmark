@@ -1,11 +1,10 @@
 
-; 19 occurrences:
+; 18 occurrences:
 ; cmake/optimized/zstd_compress.c.ll
 ; cmake/optimized/zstd_compress_literals.c.ll
 ; hdf5/optimized/H5Faccum.c.ll
 ; linux/optimized/build_policy.ll
 ; linux/optimized/clocksource.ll
-; linux/optimized/gen_estimator.ll
 ; linux/optimized/mballoc.ll
 ; linux/optimized/mempolicy.ll
 ; linux/optimized/resize.ll

@@ -1,5 +1,5 @@
 
-; 44 occurrences:
+; 43 occurrences:
 ; abc/optimized/bmcClp.c.ll
 ; abc/optimized/giaResub2.c.ll
 ; abc/optimized/giaRex.c.ll
@@ -17,7 +17,6 @@
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; influxdb-rs/optimized/k4rb82tj7t3tvne.ll
 ; influxdb-rs/optimized/u7z03ejdn0bs7a8.ll
-; libquic/optimized/x_long.c.ll
 ; lief/optimized/iostream.cpp.ll
 ; llvm/optimized/LEB128.cpp.ll
 ; openjdk/optimized/synchronizer.ll
@@ -48,7 +47,7 @@
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 63
-  %3 = xor i64 %2, %0
+  %3 = xor i64 %0, %2
   ret i64 %3
 }
 
@@ -68,7 +67,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 56
-  %3 = xor i64 %2, %0
+  %3 = xor i64 %0, %2
   ret i64 %3
 }
 

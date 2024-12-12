@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	63                              # 0x3f
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vptestmd	.LCPI0_0(%rip){1to8}, %ymm1, %k1
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpaddb	%xmm1, %xmm0, %xmm0 {%k1} {z}
@@ -68,7 +68,7 @@ func0000000000000001:                   # @func0000000000000001
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vptestnmd	.LCPI2_0(%rip){1to8}, %ymm1, %k1
 	vpaddb	.LCPI2_1(%rip), %xmm0, %xmm0
 	vmovdqu8	.LCPI2_2(%rip), %xmm0 {%k1}     # xmm0 {%k1} = [96,96,96,96,96,96,96,96,u,u,u,u,u,u,u,u]

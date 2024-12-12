@@ -17,7 +17,6 @@
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_sseu.ll
 ; linux/optimized/md.ll
-; linux/optimized/mii.ll
 ; linux/optimized/nexthop.ll
 ; linux/optimized/pcm_lib.ll
 ; linux/optimized/pmsr.ll
@@ -50,6 +49,7 @@
 ; llvm/optimized/Targets.cpp.ll
 ; llvm/optimized/TokenLexer.cpp.ll
 ; llvm/optimized/VPlanRecipes.cpp.ll
+; lvgl/optimized/lv_refr.ll
 ; openjdk/optimized/hb-ot-map.ll
 ; openjdk/optimized/hb-ot-shape.ll
 ; openssl/optimized/libssl-lib-quic_channel.ll
@@ -166,7 +166,7 @@ define i8 @func0000000000000003(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 1
   %.masked = and i8 %1, -3
-  %4 = or i8 %3, %.masked
+  %4 = or i8 %.masked, %3
   %5 = or disjoint i8 %4, %0
   ret i8 %5
 }
@@ -179,7 +179,7 @@ define i8 @func0000000000000001(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, -16
   %.masked = and i8 %1, -2
-  %4 = or i8 %3, %.masked
+  %4 = or i8 %.masked, %3
   %5 = or disjoint i8 %4, %0
   ret i8 %5
 }
@@ -189,9 +189,9 @@ entry:
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0, i8 %1, i8 %2) #0 {
 entry:
-  %3 = or i8 %2, %1
+  %3 = or i8 %1, %2
   %4 = and i8 %3, 127
-  %5 = or i8 %4, %0
+  %5 = or i8 %0, %4
   ret i8 %5
 }
 

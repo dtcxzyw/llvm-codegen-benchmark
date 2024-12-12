@@ -4,6 +4,6 @@ func0000000000000001:                   # @func0000000000000001
 	shrq	$42, %rax
 	imull	$107927, %eax, %eax             # imm = 0x1A597
 	subl	%eax, %esi
-	cmpl	%edi, %esi
+	cmpl	%esi, %edi
 	sete	%al
 	retq

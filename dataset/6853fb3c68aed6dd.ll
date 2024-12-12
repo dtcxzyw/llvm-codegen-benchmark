@@ -1,5 +1,7 @@
 
-; 4 occurrences:
+; 6 occurrences:
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
 ; oiio/optimized/strutil.cpp.ll
 ; opencv/optimized/mathfuncs.cpp.ll
 ; openjdk/optimized/sharedRuntimeTrans.ll

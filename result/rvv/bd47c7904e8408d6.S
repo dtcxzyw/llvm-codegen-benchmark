@@ -3,7 +3,7 @@ func000000000000001d:                   # @func000000000000001d
 	vsrl.vi	v12, v12, 7
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v14, v12
-	vmul.vv	v10, v14, v10
+	vmul.vv	v10, v10, v14
 	vsub.vv	v8, v10, v8
 	ret
 func0000000000000010:                   # @func0000000000000010
@@ -11,6 +11,6 @@ func0000000000000010:                   # @func0000000000000010
 	vsrl.vi	v12, v12, 2
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v14, v12
-	vmul.vv	v10, v14, v10
+	vmul.vv	v10, v10, v14
 	vsub.vv	v8, v10, v8
 	ret

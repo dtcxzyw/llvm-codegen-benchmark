@@ -4,7 +4,7 @@
 	.long	32                              # 0x20
 .LCPI0_2:
 	.long	48                              # 0x30
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vptestnmq	%ymm1, %ymm1, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %xmm1   # xmm1 = [49,49,49,49]
 	vpbroadcastd	.LCPI0_1(%rip), %xmm1 {%k1} # xmm1 {%k1} = [32,32,32,32]

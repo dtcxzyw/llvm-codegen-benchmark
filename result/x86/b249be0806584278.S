@@ -1,4 +1,4 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	imull	%edx, %esi
 	incl	%edi
 	cmpl	%esi, %edi
@@ -10,7 +10,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	%esi, %edi
 	setb	%al
 	retq
-func0000000000000076:                   # @func0000000000000076
+func00000000000000e6:                   # @func00000000000000e6
 	imull	%edx, %esi
 	incl	%edi
 	cmpl	%esi, %edi
@@ -22,47 +22,71 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	%esi, %edi
 	sete	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	imull	%edx, %esi
 	incl	%edi
 	cmpl	%esi, %edi
 	setl	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	imull	%edx, %esi
 	incl	%edi
 	cmpl	%esi, %edi
 	sete	%al
 	retq
-func00000000000000b6:                   # @func00000000000000b6
+func0000000000000166:                   # @func0000000000000166
 	imull	%edx, %esi
 	incl	%edi
 	cmpl	%esi, %edi
 	setl	%al
 	retq
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	imull	%edx, %esi
 	incl	%edi
 	cmpl	%esi, %edi
 	sete	%al
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	imull	%edx, %esi
 	incl	%edi
 	cmpl	%esi, %edi
 	setb	%al
 	retq
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	imull	%edx, %esi
 	incl	%edi
 	cmpl	%esi, %edi
 	sete	%al
 	retq
-func00000000000000d1:                   # @func00000000000000d1
+func00000000000001a1:                   # @func00000000000001a1
 	imull	%edx, %esi
 	addl	$-14, %edi
 	cmpl	%esi, %edi
 	sete	%al
+	retq
+func0000000000000141:                   # @func0000000000000141
+	imull	%edx, %esi
+	incl	%edi
+	cmpl	%esi, %edi
+	sete	%al
+	retq
+func000000000000014c:                   # @func000000000000014c
+	imull	%edx, %esi
+	incl	%edi
+	cmpl	%esi, %edi
+	setne	%al
+	retq
+func0000000000000066:                   # @func0000000000000066
+	imull	%edx, %esi
+	addl	$2, %edi
+	cmpl	%esi, %edi
+	setl	%al
+	retq
+func00000000000000a6:                   # @func00000000000000a6
+	imull	%edx, %esi
+	addl	$7, %edi
+	cmpl	%esi, %edi
+	setl	%al
 	retq
 func00000000000000a1:                   # @func00000000000000a1
 	imull	%edx, %esi
@@ -70,61 +94,43 @@ func00000000000000a1:                   # @func00000000000000a1
 	cmpl	%esi, %edi
 	sete	%al
 	retq
-func00000000000000ac:                   # @func00000000000000ac
-	imull	%edx, %esi
-	incl	%edi
-	cmpl	%esi, %edi
-	setne	%al
-	retq
-func0000000000000036:                   # @func0000000000000036
-	imull	%edx, %esi
-	addl	$2, %edi
-	cmpl	%esi, %edi
-	setl	%al
-	retq
-func0000000000000056:                   # @func0000000000000056
-	imull	%edx, %esi
-	addl	$7, %edi
-	cmpl	%esi, %edi
-	setl	%al
-	retq
-func0000000000000051:                   # @func0000000000000051
-	imull	%edx, %esi
-	incl	%edi
-	cmpl	%esi, %edi
-	sete	%al
-	retq
-func000000000000003a:                   # @func000000000000003a
+func000000000000006a:                   # @func000000000000006a
 	imull	%edx, %esi
 	addl	$16, %edi
 	cmpl	%esi, %edi
 	setg	%al
 	retq
-func000000000000007a:                   # @func000000000000007a
+func00000000000000ea:                   # @func00000000000000ea
 	imull	%edx, %esi
 	addl	$16, %edi
 	cmpl	%esi, %edi
 	setg	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	imull	%edx, %esi
 	incl	%edi
 	cmpl	%esi, %edi
 	sete	%al
 	retq
-func0000000000000075:                   # @func0000000000000075
+func00000000000000f5:                   # @func00000000000000f5
 	imull	%edx, %esi
 	addl	$6, %edi
 	cmpl	%esi, %edi
 	setbe	%al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	imull	%edx, %esi
 	addl	$4, %edi
 	cmpl	%esi, %edi
 	seta	%al
 	retq
-func0000000000000078:                   # @func0000000000000078
+func00000000000000e8:                   # @func00000000000000e8
+	imull	%edx, %esi
+	addl	$4, %edi
+	cmpl	%esi, %edi
+	seta	%al
+	retq
+func00000000000000f8:                   # @func00000000000000f8
 	imull	%edx, %esi
 	addl	$4, %edi
 	cmpl	%esi, %edi
@@ -142,19 +148,19 @@ func0000000000000005:                   # @func0000000000000005
 	cmpl	%esi, %edi
 	setbe	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	imull	%edx, %esi
 	incl	%edi
 	cmpl	%esi, %edi
 	sete	%al
 	retq
-func00000000000000f6:                   # @func00000000000000f6
+func00000000000001e6:                   # @func00000000000001e6
 	imull	%edx, %esi
 	addl	$2, %edi
 	cmpl	%esi, %edi
 	setl	%al
 	retq
-func00000000000000c6:                   # @func00000000000000c6
+func0000000000000186:                   # @func0000000000000186
 	imull	%edx, %esi
 	decl	%edi
 	cmpl	%esi, %edi

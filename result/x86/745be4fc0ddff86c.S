@@ -1,4 +1,4 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	shrq	$8, %rsi
 	andl	$65280, %edi                    # imm = 0xFF00
 	addq	%rsi, %rdi

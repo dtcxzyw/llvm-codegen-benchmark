@@ -41,9 +41,8 @@ entry:
   ret i64 %2
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; linux/optimized/generic-radix-tree.ll
-; openblas/optimized/dgbtrf.c.ll
 ; php/optimized/tm2unixtime.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0) #0 {
@@ -96,15 +95,6 @@ entry:
   %1 = mul i64 %0, 42949672960
   %2 = add i64 %1, 38654705664
   ret i64 %2
-}
-
-; 1 occurrences:
-; openblas/optimized/dgbtrf.c.ll
-; Function Attrs: nounwind
-define i64 @func000000000000003d(i64 %0) #0 {
-entry:
-  %1 = mul nuw i64 %0, 65
-  ret i64 %1
 }
 
 attributes #0 = { nounwind }

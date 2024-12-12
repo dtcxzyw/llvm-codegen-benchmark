@@ -22,11 +22,11 @@
 ; z3/optimized/sat_drat.cpp.ll
 ; z3/optimized/seq_rewriter.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = freeze ptr %0
-  %4 = getelementptr nusw i64, ptr %3, i64 %2
+  %4 = getelementptr nusw nuw i64, ptr %3, i64 %2
   ret ptr %4
 }
 
@@ -54,11 +54,11 @@ entry:
 ; z3/optimized/theory_pb.cpp.ll
 ; z3/optimized/theory_str.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = freeze ptr %0
-  %4 = getelementptr nusw i32, ptr %3, i64 %2
+  %4 = getelementptr nusw nuw i32, ptr %3, i64 %2
   ret ptr %4
 }
 

@@ -5,7 +5,7 @@
 ; postgres/optimized/f2s_shlib.ll
 ; postgres/optimized/f2s_srv.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(float %0) #0 {
+define i1 @func0000000000000024(float %0) #0 {
 entry:
   %1 = bitcast float %0 to i32
   %2 = lshr i32 %1, 4
@@ -115,7 +115,7 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(float %0) #0 {
+define i1 @func0000000000000021(float %0) #0 {
 entry:
   %1 = bitcast float %0 to i32
   %2 = and i32 %1, 2139095040
@@ -127,7 +127,7 @@ entry:
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(float %0) #0 {
+define i1 @func0000000000000028(float %0) #0 {
 entry:
   %1 = bitcast float %0 to i32
   %2 = lshr i32 %1, 23
@@ -140,7 +140,7 @@ entry:
 ; 1 occurrences:
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(float %0) #0 {
+define i1 @func000000000000002c(float %0) #0 {
 entry:
   %1 = bitcast float %0 to i32
   %2 = and i32 %1, 2139095040

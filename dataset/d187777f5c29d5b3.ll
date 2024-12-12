@@ -1,5 +1,5 @@
 
-; 350 occurrences:
+; 372 occurrences:
 ; abc/optimized/cuddSat.c.ll
 ; abc/optimized/cuddTable.c.ll
 ; abseil-cpp/optimized/bernoulli_distribution_test.cc.ll
@@ -35,10 +35,35 @@
 ; abseil-cpp/optimized/uniform_real_distribution_test.cc.ll
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
 ; arrow/optimized/string-to-double.cc.ll
+; arrow/optimized/value_parsing.cc.ll
 ; assimp/optimized/PlyParser.cpp.ll
 ; assimp/optimized/STEPFileReader.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/partition.ll
+; boost/optimized/rational.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/src.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/idas.c.ll
 ; casadi/optimized/idas_bbdpre.c.ll
@@ -130,6 +155,7 @@
 ; llvm/optimized/SimplifyLibCalls.cpp.ll
 ; luajit/optimized/lib_base.ll
 ; luajit/optimized/lib_base_dyn.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_paint.cpp.ll
@@ -146,19 +172,17 @@
 ; meshlab/optimized/solver.cpp.ll
 ; meshlab/optimized/texture_optimization.cpp.ll
 ; mitsuba3/optimized/sensor.cpp.ll
+; mitsuba3/optimized/string.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; nuttx/optimized/lib_exp.c.ll
 ; ocio/optimized/MatrixOpData.cpp.ll
 ; openblas/optimized/dbdsdc.c.ll
 ; openblas/optimized/dbdsqr.c.ll
 ; openblas/optimized/dbdsvdx.c.ll
-; openblas/optimized/ddisna.c.ll
 ; openblas/optimized/dgejsv.c.ll
 ; openblas/optimized/dgesvj.c.ll
 ; openblas/optimized/dgsvj0.c.ll
 ; openblas/optimized/dgsvj1.c.ll
-; openblas/optimized/dlacn2.c.ll
-; openblas/optimized/dlacon.c.ll
 ; openblas/optimized/dlaed4.c.ll
 ; openblas/optimized/dlaed6.c.ll
 ; openblas/optimized/dlag2.c.ll
@@ -242,11 +266,8 @@
 ; proj/optimized/aeqd.cpp.ll
 ; proj/optimized/bipc.cpp.ll
 ; proj/optimized/chamb.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
-; proj/optimized/dmstor.cpp.ll
 ; proj/optimized/eck2.cpp.ll
 ; proj/optimized/factors.cpp.ll
-; proj/optimized/factory.cpp.ll
 ; proj/optimized/fwd.cpp.ll
 ; proj/optimized/geodesic.c.ll
 ; proj/optimized/imw_p.cpp.ll
@@ -301,6 +322,7 @@
 ; quantlib/optimized/normaldistribution.ll
 ; quantlib/optimized/onefactormodel.ll
 ; quantlib/optimized/optionletstripper2.ll
+; quantlib/optimized/perturbativebarrieroptionengine.ll
 ; quantlib/optimized/qdfpamericanengine.ll
 ; quantlib/optimized/qdplusamericanengine.ll
 ; quantlib/optimized/randomdefaultmodel.ll

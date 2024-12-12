@@ -29,7 +29,7 @@ define i64 @func0000000000000018(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 127
   %3 = icmp ne i32 %2, 15
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = select i1 %4, i64 72, i64 96
   ret i64 %5
 }

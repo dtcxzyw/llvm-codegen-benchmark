@@ -99,7 +99,7 @@ define i64 @func0000000000000007(i16 %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 12
   %3 = and i16 %2, 1
-  %4 = add nuw nsw i16 %3, %0
+  %4 = add nuw nsw i16 %0, %3
   %5 = zext nneg i16 %4 to i64
   ret i64 %5
 }

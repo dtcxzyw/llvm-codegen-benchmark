@@ -18,7 +18,7 @@ entry:
   ret i32 %5
 }
 
-; 28 occurrences:
+; 29 occurrences:
 ; clamav/optimized/server-th.c.ll
 ; cmake/optimized/zstd_fast.c.ll
 ; cvc5/optimized/quant_conflict_find.cpp.ll
@@ -46,6 +46,7 @@ entry:
 ; wireshark/optimized/ascend_scanner.c.ll
 ; wireshark/optimized/candump_scanner.c.ll
 ; wireshark/optimized/k12text.c.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
 ; zstd/optimized/zstd_fast.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i64 %1, i64 %2) #0 {

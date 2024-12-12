@@ -11,9 +11,10 @@ func0000000000000000:                   # @func0000000000000000
 	orl	%edi, %eax
 	retq
 func0000000000000003:                   # @func0000000000000003
-	leal	63(%rsi), %eax
+	leal	15(%rsi), %eax
 	testl	%esi, %esi
 	cmovnsl	%esi, %eax
-	andl	$-64, %eax
+	andl	$-16, %eax
+	shll	$12, %eax
 	orl	%edi, %eax
 	retq

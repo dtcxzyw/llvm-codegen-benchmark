@@ -1,4 +1,29 @@
 
+; 2 occurrences:
+; libquic/optimized/t_x509.c.ll
+; lvgl/optimized/lv_calendar.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000065(i32 %0) #0 {
+entry:
+  %1 = icmp slt i32 %0, 578
+  %2 = select i1 %1, i32 -428, i32 -528
+  %3 = add nsw i32 %0, 1900
+  %4 = add nsw i32 %3, %2
+  ret i32 %4
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_calendar.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000045(i32 %0) #0 {
+entry:
+  %1 = icmp ult i32 %0, 3
+  %2 = select i1 %1, i32 12, i32 0
+  %3 = add nsw i32 %0, -2
+  %4 = add nsw i32 %3, %2
+  ret i32 %4
+}
+
 ; 1 occurrences:
 ; openusd/optimized/patchBuilder.cpp.ll
 ; Function Attrs: nounwind

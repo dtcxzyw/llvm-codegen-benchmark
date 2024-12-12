@@ -15,3 +15,14 @@ func0000000000000004:                   # @func0000000000000004
 	vmulps	%zmm1, %zmm0, %zmm1 {%k1}
 	vmovaps	%zmm1, %zmm0
 	retq
+.LCPI2_0:
+	.long	0xc20a27b5                      # float -34.5387764
+.LCPI2_1:
+	.long	0x40200000                      # float 2.5
+func0000000000000005:                   # @func0000000000000005
+	vxorps	%xmm2, %xmm2, %xmm2
+	vcmpnleps	%zmm2, %zmm1, %k1
+	vbroadcastss	.LCPI2_0(%rip), %zmm1   # zmm1 = [-3.45387764E+1,-3.45387764E+1,-3.45387764E+1,-3.45387764E+1,-3.45387764E+1,-3.45387764E+1,-3.45387764E+1,-3.45387764E+1,-3.45387764E+1,-3.45387764E+1,-3.45387764E+1,-3.45387764E+1,-3.45387764E+1,-3.45387764E+1,-3.45387764E+1,-3.45387764E+1]
+	vmulps	.LCPI2_1(%rip){1to16}, %zmm0, %zmm1 {%k1}
+	vmovaps	%zmm1, %zmm0
+	retq

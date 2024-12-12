@@ -29,7 +29,7 @@ func000000000000000b:                   # @func000000000000000b
 	setne	%al
 	shll	$14, %eax
 	orl	%esi, %eax
-	leal	2048(%rax,%rdi), %eax
+	leal	2048(%rdi,%rax), %eax
 	retq
 func000000000000000e:                   # @func000000000000000e
 	testl	%edx, %edx

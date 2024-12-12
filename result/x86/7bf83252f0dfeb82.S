@@ -8,7 +8,7 @@ func000000000000001b:                   # @func000000000000001b
 	cmovnsl	%esi, %edi
 	leal	12(%rdi), %eax
 	retq
-func0000000000000013:                   # @func0000000000000013
+func0000000000000053:                   # @func0000000000000053
 	cmpl	$3, %esi
 	cmovael	%esi, %edi
 	leal	1(%rdi), %eax
@@ -47,6 +47,11 @@ func0000000000000006:                   # @func0000000000000006
 	cmpl	$-1, %esi
 	cmovnel	%esi, %edi
 	leal	1(%rdi), %eax
+	retq
+func0000000000000013:                   # @func0000000000000013
+	cmpl	$8, %esi
+	cmovael	%esi, %edi
+	leal	8(%rdi), %eax
 	retq
 func0000000000000010:                   # @func0000000000000010
 	cmpl	$3, %esi

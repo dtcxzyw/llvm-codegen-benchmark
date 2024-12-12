@@ -1,7 +1,10 @@
 
-; 46 occurrences:
+; 49 occurrences:
 ; assimp/optimized/unzip.c.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/ci_string.ll
+; boost/optimized/params_base.ll
+; boost/optimized/params_encoded_base.ll
 ; cmake/optimized/nghttp2_http.c.ll
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/obmalloc.ll
@@ -47,12 +50,12 @@
 ; sentencepiece/optimized/strutil.cc.ll
 ; yosys/optimized/attrmap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000081(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add i8 %2, -65
   %4 = icmp ult i8 %3, 26
   %5 = select i1 %4, i8 %1, i8 %2
-  %6 = icmp eq i8 %5, %0
+  %6 = icmp eq i8 %0, %5
   ret i1 %6
 }
 
@@ -63,12 +66,12 @@ entry:
 ; ruby/optimized/parser_st.ll
 ; ruby/optimized/st.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func000000000000008a(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add i8 %2, -65
   %4 = icmp ult i8 %3, 26
   %5 = select i1 %4, i8 %1, i8 %2
-  %6 = icmp slt i8 %5, %0
+  %6 = icmp sgt i8 %0, %5
   ret i1 %6
 }
 
@@ -78,26 +81,28 @@ entry:
 ; openssl/optimized/libcrypto-lib-v3_ncons.ll
 ; openssl/optimized/libcrypto-shlib-v3_ncons.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000084(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add i8 %2, -65
   %4 = icmp ult i8 %3, 26
   %5 = select i1 %4, i8 %1, i8 %2
-  %6 = icmp ugt i8 %5, %0
+  %6 = icmp ult i8 %0, %5
   ret i1 %6
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; assimp/optimized/unzip.c.ll
+; boost/optimized/ci_string.ll
+; boost/optimized/normalize.ll
 ; libquic/optimized/string_util.cc.ll
 ; luau/optimized/isocline.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000086(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add i8 %2, -97
   %4 = icmp ult i8 %3, 26
   %5 = select i1 %4, i8 %1, i8 %2
-  %6 = icmp sgt i8 %5, %0
+  %6 = icmp slt i8 %0, %5
   ret i1 %6
 }
 
@@ -106,12 +111,12 @@ entry:
 ; imgui/optimized/imgui.cpp.ll
 ; llvm/optimized/StringRef.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func000000000000008c(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add i8 %2, -65
   %4 = icmp ult i8 %3, 26
   %5 = select i1 %4, i8 %1, i8 %2
-  %6 = icmp ne i8 %5, %0
+  %6 = icmp ne i8 %0, %5
   ret i1 %6
 }
 

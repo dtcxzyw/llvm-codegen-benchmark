@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -16,8 +16,9 @@
 ; fmt/optimized/util.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
 ; lightgbm/optimized/tree.cpp.ll
+; lvgl/optimized/lv_calendar.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i1 %1) #0 {
+define i1 @func00000000000000aa(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 19, i32 18
   %3 = add nsw i32 %0, -2

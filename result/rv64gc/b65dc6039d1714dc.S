@@ -122,8 +122,8 @@ func00000000000000a8:                   # @func00000000000000a8
 	feq.d	a0, fa0, fa5
 	ret
 .LCPI12_0:
-	.quad	0x21a0000000000000              # double 1.0010415475915505E-146
-func0000000000000045:                   # @func0000000000000045
+	.quad	0x3ddb7cdfd9d7bdbb              # double 1.0E-10
+func000000000000002a:                   # @func000000000000002a
 	flt.d	a0, fa1, fa0
 	bnez	a0, .LBB12_2
 	fmv.d	fa0, fa1
@@ -131,69 +131,72 @@ func0000000000000045:                   # @func0000000000000045
 	lui	a0, %hi(.LCPI12_0)
 	fld	fa5, %lo(.LCPI12_0)(a0)
 	fle.d	a0, fa0, fa5
-	xori	a0, a0, 1
 	ret
-func0000000000000027:                   # @func0000000000000027
-	flt.d	a0, fa0, fa1
+.LCPI13_0:
+	.quad	0x21a0000000000000              # double 1.0010415475915505E-146
+func0000000000000045:                   # @func0000000000000045
+	flt.d	a0, fa1, fa0
 	bnez	a0, .LBB13_2
 	fmv.d	fa0, fa1
 .LBB13_2:                               # %entry
-	fmv.d.x	fa5, zero
-	feq.d	a0, fa0, fa5
+	lui	a0, %hi(.LCPI13_0)
+	fld	fa5, %lo(.LCPI13_0)(a0)
+	fle.d	a0, fa0, fa5
 	xori	a0, a0, 1
 	ret
-func0000000000000048:                   # @func0000000000000048
+func0000000000000027:                   # @func0000000000000027
 	flt.d	a0, fa0, fa1
 	bnez	a0, .LBB14_2
 	fmv.d	fa0, fa1
 .LBB14_2:                               # %entry
 	fmv.d.x	fa5, zero
 	feq.d	a0, fa0, fa5
+	xori	a0, a0, 1
 	ret
-func0000000000000047:                   # @func0000000000000047
-	flt.d	a0, fa1, fa0
+func0000000000000048:                   # @func0000000000000048
+	flt.d	a0, fa0, fa1
 	bnez	a0, .LBB15_2
 	fmv.d	fa0, fa1
 .LBB15_2:                               # %entry
+	fmv.d.x	fa5, zero
+	feq.d	a0, fa0, fa5
+	ret
+func0000000000000047:                   # @func0000000000000047
+	flt.d	a0, fa1, fa0
+	bnez	a0, .LBB16_2
+	fmv.d	fa0, fa1
+.LBB16_2:                               # %entry
 	fmv.d.x	fa5, zero
 	feq.d	a0, fa0, fa5
 	xori	a0, a0, 1
 	ret
 func0000000000000044:                   # @func0000000000000044
 	flt.d	a0, fa1, fa0
-	bnez	a0, .LBB16_2
+	bnez	a0, .LBB17_2
 	fmv.d	fa0, fa1
-.LBB16_2:                               # %entry
+.LBB17_2:                               # %entry
 	fmv.d.x	fa5, zero
 	flt.d	a0, fa5, fa0
 	ret
 func000000000000004a:                   # @func000000000000004a
 	flt.d	a0, fa0, fa1
-	bnez	a0, .LBB17_2
-	fmv.d	fa0, fa1
-.LBB17_2:                               # %entry
-	fmv.d.x	fa5, zero
-	fle.d	a0, fa0, fa5
-	ret
-.LCPI18_0:
-	.quad	0x3ff0000000000000              # double 1
-func000000000000002d:                   # @func000000000000002d
-	flt.d	a0, fa1, fa0
 	bnez	a0, .LBB18_2
 	fmv.d	fa0, fa1
 .LBB18_2:                               # %entry
-	lui	a0, %hi(.LCPI18_0)
-	fld	fa5, %lo(.LCPI18_0)(a0)
-	flt.d	a0, fa0, fa5
-	xori	a0, a0, 1
+	fmv.d.x	fa5, zero
+	fle.d	a0, fa0, fa5
 	ret
-func000000000000002a:                   # @func000000000000002a
-	flt.d	a0, fa0, fa1
+.LCPI19_0:
+	.quad	0x3ff0000000000000              # double 1
+func000000000000002d:                   # @func000000000000002d
+	flt.d	a0, fa1, fa0
 	bnez	a0, .LBB19_2
 	fmv.d	fa0, fa1
 .LBB19_2:                               # %entry
-	fmv.d.x	fa5, zero
-	fle.d	a0, fa0, fa5
+	lui	a0, %hi(.LCPI19_0)
+	fld	fa5, %lo(.LCPI19_0)(a0)
+	flt.d	a0, fa0, fa5
+	xori	a0, a0, 1
 	ret
 .LCPI20_0:
 	.quad	0x3ff8000000000000              # double 1.5

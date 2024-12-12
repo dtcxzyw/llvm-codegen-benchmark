@@ -1,5 +1,5 @@
 
-%struct.pgd_t.3341222 = type { i64 }
+%struct.pgd_t.3530390 = type { i64 }
 
 ; 7 occurrences:
 ; hermes/optimized/Interpreter.cpp.ll
@@ -10,10 +10,10 @@
 ; llvm/optimized/CGCall.cpp.ll
 ; openjdk/optimized/jfrEventClassTransformer.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000002(ptr %0, i64 %1) #0 {
+define i64 @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
-  %3 = getelementptr nusw i8, ptr %0, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = and i64 %4, 1
   ret i64 %5
@@ -29,7 +29,7 @@ entry:
 define i64 @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 511
-  %3 = getelementptr %struct.pgd_t.3341222, ptr %0, i64 %2
+  %3 = getelementptr %struct.pgd_t.3530390, ptr %0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = and i64 %4, 2048
   ret i64 %5

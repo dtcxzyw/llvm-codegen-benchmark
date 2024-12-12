@@ -10,9 +10,10 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; darktable/optimized/introspection_dither.c.ll
 ; llvm/optimized/ARMTargetParser.cpp.ll
+; lvgl/optimized/lv_obj.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i32 %0, i1 %1, i1 %2) #0 {
 entry:

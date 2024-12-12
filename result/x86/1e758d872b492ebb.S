@@ -1,4 +1,4 @@
-func0000000000000019:                   # @func0000000000000019
+func0000000000000029:                   # @func0000000000000029
 	testq	%rsi, %rsi
 	sete	%cl
 	orb	%dil, %cl
@@ -6,11 +6,19 @@ func0000000000000019:                   # @func0000000000000019
 	setae	%al
 	orb	%cl, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	testq	%rsi, %rsi
 	sete	%cl
 	orb	%dil, %cl
 	cmpq	%rdx, %rsi
 	sete	%al
+	orb	%cl, %al
+	retq
+func000000000000028b:                   # @func000000000000028b
+	cmpq	$3, %rsi
+	setb	%cl
+	orb	%dil, %cl
+	cmpq	%rdx, %rsi
+	setge	%al
 	orb	%cl, %al
 	retq

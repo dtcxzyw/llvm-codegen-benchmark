@@ -6,7 +6,7 @@ func0000000000000088:                   # @func0000000000000088
 	vmerge.vvm	v8, v12, v8, v0
 	fmv.w.x	fa5, a0
 	vmfgt.vf	v12, v8, fa5
-	vmor.mm	v0, v12, v16
+	vmor.mm	v0, v16, v12
 	ret
 func0000000000000044:                   # @func0000000000000044
 	vsetivli	zero, 16, e32, m4, ta, ma
@@ -16,7 +16,7 @@ func0000000000000044:                   # @func0000000000000044
 	vmerge.vvm	v8, v12, v8, v0
 	fmv.w.x	fa5, a0
 	vmflt.vf	v12, v8, fa5
-	vmor.mm	v0, v12, v16
+	vmor.mm	v0, v16, v12
 	ret
 func000000000000005c:                   # @func000000000000005c
 	vsetivli	zero, 16, e32, m4, ta, ma

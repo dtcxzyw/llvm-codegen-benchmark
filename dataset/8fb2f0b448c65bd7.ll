@@ -1,6 +1,8 @@
 
-; 42 occurrences:
+; 53 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; git/optimized/diff-merges.ll
 ; grpc/optimized/bin_decoder.cc.ll
@@ -22,7 +24,6 @@
 ; llvm/optimized/CGOpenMPRuntime.cpp.ll
 ; llvm/optimized/CGStmt.cpp.ll
 ; llvm/optimized/CGStmtOpenMP.cpp.ll
-; llvm/optimized/MachOObjectFile.cpp.ll
 ; llvm/optimized/SanitizerArgs.cpp.ll
 ; llvm/optimized/SanitizerBinaryMetadata.cpp.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
@@ -36,6 +37,16 @@
 ; openjdk/optimized/jvmtiEventController.ll
 ; openssl/optimized/libcrypto-lib-a_mbstr.ll
 ; openssl/optimized/libcrypto-shlib-a_mbstr.ll
+; openusd/optimized/aggregateNode.cpp.ll
+; openusd/optimized/aggregateTreeBuilder.cpp.ll
+; openusd/optimized/basisCurves.cpp.ll
+; openusd/optimized/collectionAPIAdapter.cpp.ll
+; openusd/optimized/eventTree.cpp.ll
+; openusd/optimized/mesh.cpp.ll
+; openusd/optimized/renderIndex.cpp.ll
+; openusd/optimized/rprim.cpp.ll
+; openusd/optimized/typeRegistry.cpp.ll
+; openusd/optimized/unitTestNullRenderDelegate.cpp.ll
 ; redis/optimized/networking.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; spike/optimized/csrs.ll

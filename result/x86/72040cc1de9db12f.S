@@ -1,78 +1,54 @@
-func00000000000000c6:                   # @func00000000000000c6
-	testb	$30, %sil
-	setne	%cl
-	testw	%di, %di
-	sets	%al
-	andb	%cl, %al
-	retq
-func000000000000001c:                   # @func000000000000001c
-	andl	$64512, %esi                    # imm = 0xFC00
-	negw	%si
-	seto	%cl
-	testw	%di, %di
-	setne	%al
-	andb	%cl, %al
-	retq
-func00000000000000c1:                   # @func00000000000000c1
-	testl	$1023, %esi                     # imm = 0x3FF
+func0000000000000181:                   # @func0000000000000181
+	testb	$127, %sil
 	setne	%cl
 	testw	%di, %di
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	testl	$1024, %esi                     # imm = 0x400
 	sete	%cl
 	cmpw	$2, %di
 	setae	%al
 	andb	%cl, %al
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	testl	$15360, %esi                    # imm = 0x3C00
 	setne	%cl
 	cmpw	$8, %di
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func000000000000002c:                   # @func000000000000002c
+	cmpb	$34, %sil
+	sete	%cl
+	movzwl	%di, %eax
+	cmpl	$512, %eax                      # imm = 0x200
+	setne	%al
+	andb	%cl, %al
+	retq
+func0000000000000021:                   # @func0000000000000021
 	movzbl	%sil, %eax
 	xorl	$10, %eax
 	xorl	$6, %edi
 	orw	%ax, %di
 	sete	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
-	notl	%esi
-	testb	$31, %sil
-	sete	%cl
-	testw	%di, %di
-	sets	%al
-	andb	%cl, %al
-	retq
-func00000000000000c8:                   # @func00000000000000c8
+func0000000000000188:                   # @func0000000000000188
 	testl	$32767, %esi                    # imm = 0x7FFF
 	setne	%cl
 	cmpw	$2, %di
 	setae	%al
 	andb	%cl, %al
 	retq
-func0000000000000041:                   # @func0000000000000041
-	testl	$1023, %esi                     # imm = 0x3FF
+func0000000000000081:                   # @func0000000000000081
+	testb	$127, %sil
 	sete	%cl
-	cmpw	$8, %di
+	cmpw	$6, %di
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000044:                   # @func0000000000000044
-	andl	$252, %esi
-	cmpw	$100, %si
-	setb	%cl
-	movzwl	%di, %eax
-	cmpl	$1536, %eax                     # imm = 0x600
-	setb	%al
-	andb	%cl, %al
-	retq
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000194:                   # @func0000000000000194
 	notl	%esi
 	testb	$3, %sil
 	setne	%cl
@@ -80,26 +56,25 @@ func00000000000000c4:                   # @func00000000000000c4
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000184:                   # @func0000000000000184
+	shrl	$9, %esi
+	andl	$1, %esi
+	cmpw	$-2, %di
+	setb	%al
+	andb	%sil, %al
+	retq
+func0000000000000034:                   # @func0000000000000034
 	testb	$32, %sil
 	sete	%cl
 	cmpw	$63, %di
 	setb	%al
 	andb	%cl, %al
 	retq
-func0000000000000084:                   # @func0000000000000084
-	movzbl	%sil, %eax
-	cmpw	$33, %ax
-	setae	%cl
-	movzwl	%di, %eax
-	cmpl	$13312, %eax                    # imm = 0x3400
-	setb	%al
-	andb	%cl, %al
-	retq
-func00000000000000ca:                   # @func00000000000000ca
-	testb	$3, %sil
+func000000000000008c:                   # @func000000000000008c
+	andl	$65532, %esi                    # imm = 0xFFFC
+	cmpl	$8204, %esi                     # imm = 0x200C
 	setne	%cl
-	testw	%di, %di
-	setg	%al
+	cmpw	$-5, %di
+	setb	%al
 	andb	%cl, %al
 	retq

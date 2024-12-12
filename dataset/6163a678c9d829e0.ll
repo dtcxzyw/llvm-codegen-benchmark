@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openjdk/optimized/cmstypes.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = add nsw i32 %3, -4
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/libxdrf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011b(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000022b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = add nsw i32 %3, 1

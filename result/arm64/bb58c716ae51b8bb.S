@@ -1,4 +1,4 @@
-func0000000000000152:                   // @func0000000000000152
+func0000000000000292:                   // @func0000000000000292
 // %bb.0:                               // %entry
 	sub	x8, x0, x2
 	cmp	x0, x1
@@ -6,7 +6,7 @@ func0000000000000152:                   // @func0000000000000152
 	cset	w0, gt
 	ret
                                         // -- End function
-func000000000000008a:                   // @func000000000000008a
+func000000000000010a:                   // @func000000000000010a
 // %bb.0:                               // %entry
 	sub	x8, x0, x2
 	cmp	x0, x1
@@ -14,7 +14,7 @@ func000000000000008a:                   // @func000000000000008a
 	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000088:                   // @func0000000000000088
+func0000000000000108:                   // @func0000000000000108
 // %bb.0:                               // %entry
 	sub	x8, x0, x2
 	cmp	x0, x1
@@ -22,7 +22,7 @@ func0000000000000088:                   // @func0000000000000088
 	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000182:                   // @func0000000000000182
+func0000000000000302:                   // @func0000000000000302
 // %bb.0:                               // %entry
 	sub	x8, x0, x2
 	cmp	x0, x1
@@ -30,7 +30,7 @@ func0000000000000182:                   // @func0000000000000182
 	cset	w0, ne
 	ret
                                         // -- End function
-func0000000000000148:                   // @func0000000000000148
+func0000000000000288:                   // @func0000000000000288
 // %bb.0:                               // %entry
 	sub	x8, x0, x2
 	cmp	x0, x1
@@ -39,7 +39,7 @@ func0000000000000148:                   // @func0000000000000148
 	cset	w0, gt
 	ret
                                         // -- End function
-func0000000000000102:                   // @func0000000000000102
+func0000000000000202:                   // @func0000000000000202
 // %bb.0:                               // %entry
 	sub	x8, x0, x2
 	cmp	x0, x1
@@ -48,7 +48,7 @@ func0000000000000102:                   // @func0000000000000102
 	cset	w0, hi
 	ret
                                         // -- End function
-func00000000000000c8:                   // @func00000000000000c8
+func0000000000000188:                   // @func0000000000000188
 // %bb.0:                               // %entry
 	sub	x8, x0, x2
 	cmp	x0, x1
@@ -56,7 +56,15 @@ func00000000000000c8:                   // @func00000000000000c8
 	cset	w0, lt
 	ret
                                         // -- End function
-func0000000000000030:                   // @func0000000000000030
+func0000000000000042:                   // @func0000000000000042
+// %bb.0:                               // %entry
+	sub	x8, x0, x2
+	cmp	x0, x1
+	ccmn	x8, #16, #4, ne
+	cset	w0, eq
+	ret
+                                        // -- End function
+func0000000000000050:                   // @func0000000000000050
 // %bb.0:                               // %entry
 	sub	x8, x0, x2
 	cmp	x8, #3
@@ -64,15 +72,7 @@ func0000000000000030:                   // @func0000000000000030
 	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000022:                   // @func0000000000000022
-// %bb.0:                               // %entry
-	sub	x8, x0, x2
-	cmn	x8, #1
-	ccmp	x0, x1, #4, ne
-	cset	w0, eq
-	ret
-                                        // -- End function
-func0000000000000142:                   // @func0000000000000142
+func0000000000000282:                   // @func0000000000000282
 // %bb.0:                               // %entry
 	sub	x8, x0, x2
 	cmp	x0, x1

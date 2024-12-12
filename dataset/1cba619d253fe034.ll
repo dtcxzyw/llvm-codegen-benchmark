@@ -41,8 +41,10 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i16 %1) #0 {
 entry:
@@ -84,10 +86,9 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; clamav/optimized/qtmd.c.ll
 ; linux/optimized/i915_vma.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; postgres/optimized/indexam.ll
 ; slurm/optimized/job_info.ll
 ; Function Attrs: nounwind

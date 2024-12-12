@@ -1,15 +1,13 @@
 
-; 10 occurrences:
+; 8 occurrences:
 ; assimp/optimized/zip.c.ll
 ; hermes/optimized/zip.c.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; postgres/optimized/spell.ll
 ; postgres/optimized/tsvector_op.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; ruby/optimized/vm_trace.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
@@ -29,7 +27,7 @@ define i64 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 5
   %3 = and i32 %2, 1
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }
@@ -53,7 +51,7 @@ define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 3
   %3 = and i32 %2, 7
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }

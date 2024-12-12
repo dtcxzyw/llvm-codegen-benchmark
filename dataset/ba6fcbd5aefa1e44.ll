@@ -1,5 +1,5 @@
 
-; 152 occurrences:
+; 148 occurrences:
 ; abc/optimized/pdrUtil.c.ll
 ; abc/optimized/saigSimFast.c.ll
 ; abc/optimized/sbdCore.c.ll
@@ -53,8 +53,6 @@
 ; oiio/optimized/imagebufalgo_draw.cpp.ll
 ; oiio/optimized/imageio.cpp.ll
 ; openblas/optimized/dbdsvdx.c.ll
-; openblas/optimized/dgbtf2.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dgels.c.ll
 ; openblas/optimized/dgelst.c.ll
 ; openblas/optimized/dgelsy.c.ll
@@ -62,11 +60,9 @@
 ; openblas/optimized/dggsvp3.c.ll
 ; openblas/optimized/dhsein.c.ll
 ; openblas/optimized/dlaeda.c.ll
-; openblas/optimized/dlaqp2rk.c.ll
 ; openblas/optimized/dlarrv.c.ll
 ; openblas/optimized/dlatm7.c.ll
 ; openblas/optimized/dlatrs3.c.ll
-; openblas/optimized/dorghr.c.ll
 ; openblas/optimized/dorgql.c.ll
 ; openblas/optimized/dtrevc.c.ll
 ; openblas/optimized/dtrevc3.c.ll
@@ -157,20 +153,18 @@ define i64 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %0, %1
   %3 = zext i32 %2 to i64
-  %4 = shl nuw nsw i64 %3, 2
-  %5 = add nuw nsw i64 %4, 4
+  %4 = shl nuw nsw i64 %3, 1
+  %5 = add nuw nsw i64 %4, 2
   ret i64 %5
 }
 
-; 13 occurrences:
+; 11 occurrences:
 ; abc/optimized/wlcBlast.c.ll
 ; darktable/optimized/RawImage.cpp.ll
 ; linux/optimized/huf_decompress.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; mitsuba3/optimized/builder.cpp.ll
 ; openblas/optimized/dlansf.c.ll
-; openblas/optimized/dorgl2.c.ll
-; openblas/optimized/dorgr2.c.ll
 ; openjdk/optimized/escape.ll
 ; openjdk/optimized/jexec.ll
 ; openjdk/optimized/nmethod.ll

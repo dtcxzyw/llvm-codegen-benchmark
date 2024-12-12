@@ -30,7 +30,7 @@ entry:
   ret i64 %7
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; hyperscan/optimized/shufticompile.cpp.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; lief/optimized/Builder.cpp.ll
@@ -42,6 +42,7 @@ entry:
 ; openjdk/optimized/multiVis.ll
 ; qemu/optimized/util_uuid.c.ll
 ; velox/optimized/ComplexVector.cpp.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000073(i32 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -53,7 +54,7 @@ entry:
   ret i64 %7
 }
 
-; 10 occurrences:
+; 15 occurrences:
 ; image-rs/optimized/1clnprdgqfw2q9lq.ll
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; llvm/optimized/CallingConvLower.cpp.ll
@@ -63,7 +64,12 @@ entry:
 ; rust-analyzer-rs/optimized/3yqkws4dawqbgt35.ll
 ; rust-analyzer-rs/optimized/4nk4vk785ylcn5k7.ll
 ; rust-analyzer-rs/optimized/4xl67loow1v11x6s.ll
+; rust-analyzer-rs/optimized/55rapmz9wj276hro.ll
 ; rust-analyzer-rs/optimized/58xaix613yc6ngmz.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000005b(i32 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -108,6 +114,20 @@ entry:
   %4 = shl nuw nsw i64 %1, 40
   %5 = or disjoint i64 %4, %3
   %6 = zext i32 %0 to i64
+  %7 = or disjoint i64 %5, %6
+  ret i64 %7
+}
+
+; 2 occurrences:
+; lvgl/optimized/lv_draw_buf.ll
+; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
+; Function Attrs: nounwind
+define i64 @func000000000000005f(i32 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw i64 %2, 48
+  %4 = shl nuw nsw i64 %1, 32
+  %5 = or disjoint i64 %4, %3
+  %6 = zext nneg i32 %0 to i64
   %7 = or disjoint i64 %5, %6
   ret i64 %7
 }
@@ -163,19 +183,6 @@ entry:
   %5 = or disjoint i64 %4, %3
   %6 = zext i32 %0 to i64
   %7 = or i64 %5, %6
-  ret i64 %7
-}
-
-; 1 occurrences:
-; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
-; Function Attrs: nounwind
-define i64 @func000000000000005f(i32 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl nuw i64 %2, 32
-  %4 = shl nuw nsw i64 %1, 16
-  %5 = or disjoint i64 %4, %3
-  %6 = zext nneg i32 %0 to i64
-  %7 = or disjoint i64 %5, %6
   ret i64 %7
 }
 

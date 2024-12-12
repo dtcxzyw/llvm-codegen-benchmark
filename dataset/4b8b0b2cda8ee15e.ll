@@ -1,9 +1,17 @@
 
-; 55 occurrences:
+; 63 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/parse.cc.ll
 ; abseil-cpp/optimized/reflection.cc.ll
 ; arrow/optimized/tz.cpp.ll
+; boost/optimized/codecvt_converter.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/default_sink.ll
+; boost/optimized/formatter_parser.ll
+; boost/optimized/gregorian.ll
+; boost/optimized/init_from_settings.ll
+; boost/optimized/matches_relation_factory.ll
 ; cmake/optimized/cmArgumentParser.cxx.ll
 ; cmake/optimized/cmGeneratorTarget.cxx.ll
 ; cmake/optimized/cmList.cxx.ll
@@ -56,7 +64,7 @@
 ; verilator/optimized/V3GraphAlg.cpp.ll
 ; verilator/optimized/V3TraceDecl.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i32 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000026(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, 1
   %4 = add nsw i64 %1, %2
@@ -70,7 +78,7 @@ entry:
 ; rocksdb/optimized/range_tombstone_fragmenter.cc.ll
 ; rocksdb/optimized/version_set.cc.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(i32 %0, i64 %1, i64 %2) #0 {
+define i64 @func000000000000002a(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, 1
   %4 = add nsw i64 %1, %2
@@ -97,7 +105,7 @@ entry:
 ; llvm/optimized/DeclCXX.cpp.ll
 ; pbrt-v4/optimized/aggregates.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i32 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000021(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, 1
   %4 = add nsw i64 %1, %2

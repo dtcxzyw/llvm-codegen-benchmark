@@ -1,5 +1,6 @@
 
-; 17 occurrences:
+; 18 occurrences:
+; assimp/optimized/BlenderDNA.cpp.ll
 ; freetype/optimized/cff.c.ll
 ; freetype/optimized/ftbase.c.ll
 ; freetype/optimized/pfr.c.ll
@@ -21,17 +22,6 @@
 define i64 @func0000000000000005(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl nuw i16 %1, 8
-  %3 = or disjoint i16 %2, %0
-  %4 = sext i16 %3 to i64
-  ret i64 %4
-}
-
-; 1 occurrences:
-; assimp/optimized/BlenderDNA.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000001(i16 %0, i16 %1) #0 {
-entry:
-  %2 = shl i16 %1, 8
   %3 = or disjoint i16 %2, %0
   %4 = sext i16 %3 to i64
   ret i64 %4

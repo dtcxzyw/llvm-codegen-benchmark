@@ -118,7 +118,6 @@ entry:
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
-; linux/optimized/hub.ll
 ; linux/optimized/intel_dp_aux.ll
 ; linux/optimized/intel_dsb.ll
 ; linux/optimized/intel_dvo.ll
@@ -136,6 +135,7 @@ entry:
 ; llvm/optimized/AArch64SIMDInstrOpt.cpp.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
 ; llvm/optimized/CodeGenFunction.cpp.ll
+; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RISCVO0PreLegalizerCombiner.cpp.ll

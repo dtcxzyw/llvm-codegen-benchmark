@@ -26,7 +26,7 @@ entry:
 ; abseil-cpp/optimized/discrete_distribution_test.cc.ll
 ; openspiel/optimized/is_mcts.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %1
   %3 = urem i64 %2, %1

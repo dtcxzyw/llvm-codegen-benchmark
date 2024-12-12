@@ -1,3 +1,13 @@
+func0000000000000015:                   # @func0000000000000015
+	movzwl	%dx, %eax
+	addl	%esi, %eax
+	leal	-977(%rdi,%rax), %eax
+	retq
+func0000000000000017:                   # @func0000000000000017
+	movzwl	%dx, %eax
+	addl	%esi, %eax
+	leal	1(%rdi,%rax), %eax
+	retq
 func0000000000000000:                   # @func0000000000000000
 	movzwl	%dx, %eax
 	addl	%esi, %eax
@@ -7,9 +17,4 @@ func000000000000003f:                   # @func000000000000003f
 	movzwl	%dx, %eax
 	addl	%esi, %eax
 	leal	1(%rdi,%rax), %eax
-	retq
-func0000000000000014:                   # @func0000000000000014
-	movzwl	%dx, %eax
-	addl	%esi, %eax
-	leal	-65535(%rdi,%rax), %eax
 	retq

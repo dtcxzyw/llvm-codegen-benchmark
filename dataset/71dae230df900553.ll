@@ -1,5 +1,5 @@
 
-; 30 occurrences:
+; 29 occurrences:
 ; bullet3/optimized/btConeTwistConstraint.ll
 ; bullet3/optimized/btConvexConvexAlgorithm.ll
 ; bullet3/optimized/btConvexPlaneCollisionAlgorithm.ll
@@ -12,7 +12,6 @@
 ; meshlab/optimized/edit_point.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/meshselect.cpp.ll
@@ -33,9 +32,9 @@
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:
-  %3 = fneg float %1
-  %4 = fdiv float %3, %2
-  %5 = fmul float %4, %0
+  %3 = fdiv float %1, %2
+  %4 = fneg float %0
+  %5 = fmul float %3, %4
   ret float %5
 }
 

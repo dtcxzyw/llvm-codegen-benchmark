@@ -107,4 +107,16 @@ entry:
   ret i64 %6
 }
 
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000010(i64 %0, i128 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %2, -1
+  %4 = trunc i128 %1 to i64
+  %5 = mul i64 %3, %4
+  %6 = lshr i64 %5, %0
+  ret i64 %6
+}
+
 attributes #0 = { nounwind }

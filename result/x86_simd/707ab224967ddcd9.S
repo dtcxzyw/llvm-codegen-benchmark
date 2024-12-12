@@ -37,8 +37,10 @@ func0000000000000305:                   # @func0000000000000305
 	vpmovm2q	%k0, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
+.LCPI4_0:
+	.long	2                               # 0x2
 func000000000000030f:                   # @func000000000000030f
-	vptestmd	%xmm2, %xmm2, %k0
+	vpcmpneqd	.LCPI4_0(%rip){1to4}, %xmm2, %k0
 	vpslld	$31, %xmm1, %xmm1
 	vpsrad	$31, %xmm1, %xmm1
 	vpmovsxdq	%xmm1, %ymm1

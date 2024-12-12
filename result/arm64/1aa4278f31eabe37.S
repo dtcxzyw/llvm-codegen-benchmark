@@ -1,12 +1,7 @@
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	shll2	v2.8h, v1.16b, #8
-	shll	v1.8h, v1.8b, #8
-	ushll2	v3.8h, v0.16b, #0
-	ushll	v0.8h, v0.8b, #0
-	orr	v0.16b, v1.16b, v0.16b
-	orr	v1.16b, v2.16b, v3.16b
-	ushr	v1.8h, v1.8h, #5
-	ushr	v0.8h, v0.8h, #5
+	and	w8, w0, #0xe0
+	orr	w8, w8, w1, lsl #8
+	ubfx	w0, w8, #5, #11
 	ret
                                         // -- End function

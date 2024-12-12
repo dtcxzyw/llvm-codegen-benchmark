@@ -13,14 +13,6 @@ func0000000000000062:                   # @func0000000000000062
 	vpsubd	.LCPI1_0(%rip){1to4}, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
-.LCPI2_0:
-	.long	16                              # 0x10
-func0000000000000000:                   # @func0000000000000000
-	vpmovqd	%ymm0, %xmm0
-	vpsubd	%xmm1, %xmm0, %xmm0
-	vpsubd	.LCPI2_0(%rip){1to4}, %xmm0, %xmm0
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
-	retq
 func0000000000000063:                   # @func0000000000000063
 	vpternlogq	$15, %xmm1, %xmm1, %xmm1 # xmm1 = ~xmm1
 	vpmovqd	%ymm0, %xmm0

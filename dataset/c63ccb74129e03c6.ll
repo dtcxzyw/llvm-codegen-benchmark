@@ -13,11 +13,10 @@ entry:
   ret i64 %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; duckdb/optimized/ub_duckdb_adbc_nanoarrow.cpp.ll
 ; gromacs/optimized/coordstate.cpp.ll
 ; linux/optimized/kexec_core.ll
-; opencv/optimized/samplers.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i64 %1, i32 %2) #0 {
 entry:

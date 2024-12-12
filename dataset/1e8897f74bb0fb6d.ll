@@ -45,7 +45,7 @@ entry:
   ret i32 %4
 }
 
-; 63 occurrences:
+; 64 occurrences:
 ; arrow/optimized/UriParse.c.ll
 ; arrow/optimized/bridge.cc.ll
 ; arrow/optimized/decimal.cc.ll
@@ -73,6 +73,7 @@ entry:
 ; linux/optimized/hid-lg-g15.ll
 ; linux/optimized/iommu.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
+; lvgl/optimized/lv_color.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; mixbox/optimized/mixbox.ll
 ; ncnn/optimized/mat_pixel.cpp.ll
@@ -114,7 +115,7 @@ define i32 @func000000000000000f(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = mul nuw nsw i32 %2, 100
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -125,7 +126,7 @@ define i32 @func000000000000001c(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = mul nuw nsw i32 %2, 3
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -152,7 +153,7 @@ define i32 @func000000000000000c(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = mul nuw nsw i32 %2, 5
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -167,7 +168,7 @@ define i32 @func000000000000001d(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = mul nuw nsw i32 %2, 10
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 

@@ -1,5 +1,14 @@
 
-; 65 occurrences:
+; 73 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dense_qr.cc.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
@@ -31,7 +40,6 @@
 ; graphviz/optimized/actions.c.ll
 ; graphviz/optimized/colxlate.c.ll
 ; gromacs/optimized/colvarcomp.cpp.ll
-; gromacs/optimized/dlarfg.cpp.ll
 ; gromacs/optimized/dlas2.cpp.ll
 ; gromacs/optimized/dlasv2.cpp.ll
 ; grpc/optimized/memory_quota.cc.ll

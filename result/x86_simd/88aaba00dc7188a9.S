@@ -20,7 +20,7 @@
 func0000000000000004:                   # @func0000000000000004
 	vpcmpeqb	.LCPI0_0(%rip), %xmm2, %k1
 	vorpd	.LCPI0_1(%rip){1to4}, %ymm1, %ymm1 {%k1}
-	vorpd	%ymm0, %ymm1, %ymm0
+	vorpd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.byte	12                              # 0xc

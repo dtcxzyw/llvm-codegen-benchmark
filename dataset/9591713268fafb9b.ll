@@ -1,11 +1,12 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/idas.c.ll
 ; casadi/optimized/idas_bbdpre.c.ll
 ; opencv/optimized/lapack.cpp.ll
 ; proj/optimized/tpeqd.cpp.ll
 ; quantlib/optimized/bivariatenormaldistribution.ll
+; quantlib/optimized/perturbativebarrieroptionengine.ll
 ; quantlib/optimized/qdfpamericanengine.ll
 ; sundials/optimized/arkode.c.ll
 ; sundials/optimized/cvode.c.ll

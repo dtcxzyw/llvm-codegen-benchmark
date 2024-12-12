@@ -1,13 +1,12 @@
 
-; 2 occurrences:
-; openjdk/optimized/DrawLine.ll
+; 1 occurrences:
 ; qemu/optimized/hw_net_e1000.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %0, %2
   %4 = select i1 %3, i32 %1, i32 0
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -50,7 +49,7 @@ define i32 @func0000000000000019(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %0, %2
   %4 = select i1 %3, i32 %1, i32 0
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -61,7 +60,7 @@ define i32 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %0, %2
   %4 = select i1 %3, i32 %1, i32 0
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -77,13 +76,12 @@ entry:
   ret i32 %5
 }
 
-; 69 occurrences:
+; 68 occurrences:
 ; z3/optimized/add_bounds_tactic.cpp.ll
 ; z3/optimized/atom2bool_var.cpp.ll
 ; z3/optimized/bv2real_rewriter.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/check_logic.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/collect_statistics_tactic.cpp.ll
 ; z3/optimized/demodulator_rewriter.cpp.ll
 ; z3/optimized/demodulator_simplifier.cpp.ll
@@ -152,7 +150,7 @@ define i32 @func0000000000000020(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %0, %2
   %4 = select i1 %3, i32 %1, i32 -1
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -163,7 +161,7 @@ define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %.not = icmp ugt i32 %0, %2
   %3 = select i1 %.not, i32 0, i32 %1
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 

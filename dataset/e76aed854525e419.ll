@@ -37,10 +37,9 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; linux/optimized/blk-iocost.ll
 ; linux/optimized/ialloc.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_pstate.ll
 ; linux/optimized/skl_watermark.ll
 ; Function Attrs: nounwind

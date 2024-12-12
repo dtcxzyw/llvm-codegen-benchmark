@@ -294,10 +294,9 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; libquic/optimized/cipher.c.ll
 ; linux/optimized/cipso_ipv4.ll
-; linux/optimized/reciprocal_div.ll
 ; redis/optimized/ldo.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0, i8 %1) #0 {

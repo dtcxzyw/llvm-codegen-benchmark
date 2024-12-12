@@ -42,7 +42,7 @@ entry:
   ret i1 %5
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; assimp/optimized/TextureTransform.cpp.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; minetest/optimized/game.cpp.ll
@@ -50,6 +50,7 @@ entry:
 ; opencv/optimized/chessboard.cpp.ll
 ; opencv/optimized/find_ellipses.cpp.ll
 ; opencv/optimized/sift.dispatch.cpp.ll
+; opencv/optimized/simpleflow_demo.cpp.ll
 ; openjdk/optimized/ProcessPath.ll
 ; openusd/optimized/nanocolor.c.ll
 ; Function Attrs: nounwind
@@ -61,7 +62,7 @@ entry:
   ret i1 %5
 }
 
-; 43 occurrences:
+; 44 occurrences:
 ; assimp/optimized/AMFImporter_Postprocess.cpp.ll
 ; assimp/optimized/TextureTransform.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
@@ -72,6 +73,7 @@ entry:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; imgui/optimized/imgui_demo.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
+; lvgl/optimized/lv_matrix.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll

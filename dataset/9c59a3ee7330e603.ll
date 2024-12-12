@@ -1,5 +1,6 @@
 
-; 7 occurrences:
+; 8 occurrences:
+; boost/optimized/rational.ll
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll
 ; glslang/optimized/Constant.cpp.ll
 ; libjpeg-turbo/optimized/transupp.c.ll

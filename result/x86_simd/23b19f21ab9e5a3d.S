@@ -32,17 +32,17 @@ func0000000000000008:                   # @func0000000000000008
 	vpaddb	.LCPI4_0(%rip), %xmm0, %xmm0
 	vzeroupper
 	retq
+.LCPI5_0:
+	.zero	16,254
+func0000000000000001:                   # @func0000000000000001
+	vpmovwb	%ymm0, %xmm0
+	vpaddb	.LCPI5_0(%rip), %xmm0, %xmm0
+	vzeroupper
+	retq
 func000000000000000d:                   # @func000000000000000d
 	vpmovwb	%ymm0, %xmm0
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpaddb	%xmm1, %xmm0, %xmm0
-	vzeroupper
-	retq
-.LCPI6_0:
-	.zero	16,254
-func0000000000000001:                   # @func0000000000000001
-	vpmovwb	%ymm0, %xmm0
-	vpaddb	.LCPI6_0(%rip), %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI7_0:

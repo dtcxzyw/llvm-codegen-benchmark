@@ -1,144 +1,88 @@
-func000000000000008a:                   // @func000000000000008a
+func000000000000010a:                   // @func000000000000010a
 // %bb.0:                               // %entry
-	add	v6.2d, v5.2d, v1.2d
-	add	v7.2d, v4.2d, v0.2d
-	cmgt	v6.2d, v6.2d, v3.2d
-	cmgt	v7.2d, v7.2d, v2.2d
-	sub	v3.2d, v3.2d, v5.2d
-	sub	v2.2d, v2.2d, v4.2d
-	bit	v1.16b, v3.16b, v6.16b
-	bit	v0.16b, v2.16b, v7.16b
+	add	x8, x2, x0
+	sub	x9, x1, x2
+	cmp	x8, x1
+	csel	x0, x9, x0, gt
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	add	v6.2d, v5.2d, v1.2d
-	add	v7.2d, v4.2d, v0.2d
-	cmgt	v6.2d, v6.2d, v3.2d
-	cmgt	v7.2d, v7.2d, v2.2d
-	sub	v3.2d, v3.2d, v5.2d
-	sub	v2.2d, v2.2d, v4.2d
-	bit	v1.16b, v3.16b, v6.16b
-	bit	v0.16b, v2.16b, v7.16b
+	add	x8, x2, x0
+	sub	x9, x1, x2
+	cmp	x8, x1
+	csel	x0, x9, x0, gt
 	ret
                                         // -- End function
-func0000000000000028:                   // @func0000000000000028
+func0000000000000048:                   // @func0000000000000048
 // %bb.0:                               // %entry
-	add	v6.2d, v1.2d, v5.2d
-	add	v7.2d, v0.2d, v4.2d
-	cmhi	v6.2d, v6.2d, v3.2d
-	cmhi	v7.2d, v7.2d, v2.2d
-	sub	v3.2d, v3.2d, v5.2d
-	sub	v2.2d, v2.2d, v4.2d
-	bit	v1.16b, v3.16b, v6.16b
-	bit	v0.16b, v2.16b, v7.16b
+	add	x8, x0, x2
+	sub	x9, x1, x2
+	cmp	x8, x1
+	csel	x0, x9, x0, hi
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	add	v6.2d, v5.2d, v1.2d
-	add	v7.2d, v4.2d, v0.2d
-	cmhi	v6.2d, v6.2d, v3.2d
-	cmhi	v7.2d, v7.2d, v2.2d
-	sub	v3.2d, v3.2d, v5.2d
-	sub	v2.2d, v2.2d, v4.2d
-	bit	v1.16b, v3.16b, v6.16b
-	bit	v0.16b, v2.16b, v7.16b
+	add	x8, x2, x0
+	sub	x9, x1, x2
+	cmp	x8, x1
+	csel	x0, x9, x0, hi
 	ret
                                         // -- End function
-func0000000000000038:                   // @func0000000000000038
+func0000000000000068:                   // @func0000000000000068
 // %bb.0:                               // %entry
-	add	v6.2d, v1.2d, v5.2d
-	add	v7.2d, v0.2d, v4.2d
-	cmhi	v6.2d, v6.2d, v3.2d
-	cmhi	v7.2d, v7.2d, v2.2d
-	sub	v3.2d, v3.2d, v5.2d
-	sub	v2.2d, v2.2d, v4.2d
-	bit	v1.16b, v3.16b, v6.16b
-	bit	v0.16b, v2.16b, v7.16b
+	add	x8, x0, x2
+	sub	x9, x1, x2
+	cmp	x8, x1
+	csel	x0, x9, x0, hi
 	ret
                                         // -- End function
-func00000000000000e8:                   // @func00000000000000e8
+func0000000000000188:                   // @func0000000000000188
 // %bb.0:                               // %entry
-	add	v6.2d, v1.2d, v5.2d
-	add	v7.2d, v0.2d, v4.2d
-	cmhi	v6.2d, v6.2d, v3.2d
-	cmhi	v7.2d, v7.2d, v2.2d
-	sub	v3.2d, v3.2d, v5.2d
-	sub	v2.2d, v2.2d, v4.2d
-	bit	v1.16b, v3.16b, v6.16b
-	bit	v0.16b, v2.16b, v7.16b
+	add	x8, x0, x2
+	sub	x9, x1, x2
+	cmp	x8, x1
+	csel	x0, x9, x0, hi
 	ret
                                         // -- End function
-func00000000000000c8:                   // @func00000000000000c8
+func000000000000018a:                   // @func000000000000018a
 // %bb.0:                               // %entry
-	add	v6.2d, v1.2d, v5.2d
-	add	v7.2d, v0.2d, v4.2d
-	cmhi	v6.2d, v6.2d, v3.2d
-	cmhi	v7.2d, v7.2d, v2.2d
-	sub	v3.2d, v3.2d, v5.2d
-	sub	v2.2d, v2.2d, v4.2d
-	bit	v1.16b, v3.16b, v6.16b
-	bit	v0.16b, v2.16b, v7.16b
+	add	x8, x0, x2
+	sub	x9, x1, x2
+	cmp	x8, x1
+	csel	x0, x9, x0, gt
 	ret
                                         // -- End function
-func00000000000000ca:                   // @func00000000000000ca
+func0000000000000108:                   // @func0000000000000108
 // %bb.0:                               // %entry
-	add	v6.2d, v1.2d, v5.2d
-	add	v7.2d, v0.2d, v4.2d
-	cmgt	v6.2d, v6.2d, v3.2d
-	cmgt	v7.2d, v7.2d, v2.2d
-	sub	v3.2d, v3.2d, v5.2d
-	sub	v2.2d, v2.2d, v4.2d
-	bit	v1.16b, v3.16b, v6.16b
-	bit	v0.16b, v2.16b, v7.16b
+	add	x8, x0, x2
+	sub	x9, x1, x2
+	cmp	x8, x1
+	csel	x0, x9, x0, hi
 	ret
                                         // -- End function
-func0000000000000088:                   // @func0000000000000088
+func00000000000000aa:                   // @func00000000000000aa
 // %bb.0:                               // %entry
-	add	v6.2d, v1.2d, v5.2d
-	add	v7.2d, v0.2d, v4.2d
-	cmhi	v6.2d, v6.2d, v3.2d
-	cmhi	v7.2d, v7.2d, v2.2d
-	sub	v3.2d, v3.2d, v5.2d
-	sub	v2.2d, v2.2d, v4.2d
-	bit	v1.16b, v3.16b, v6.16b
-	bit	v0.16b, v2.16b, v7.16b
+	add	x8, x0, x2
+	sub	x9, x1, x2
+	cmp	x8, x1
+	csel	x0, x9, x0, gt
 	ret
                                         // -- End function
-func000000000000005a:                   // @func000000000000005a
+func00000000000001b8:                   // @func00000000000001b8
 // %bb.0:                               // %entry
-	add	v6.2d, v1.2d, v5.2d
-	add	v7.2d, v0.2d, v4.2d
-	cmgt	v6.2d, v6.2d, v3.2d
-	cmgt	v7.2d, v7.2d, v2.2d
-	sub	v3.2d, v3.2d, v5.2d
-	sub	v2.2d, v2.2d, v4.2d
-	bit	v1.16b, v3.16b, v6.16b
-	bit	v0.16b, v2.16b, v7.16b
+	add	x8, x0, x2
+	sub	x9, x1, x2
+	cmp	x8, x1
+	csel	x0, x9, x0, hi
 	ret
                                         // -- End function
-func00000000000000d8:                   // @func00000000000000d8
+func000000000000006a:                   // @func000000000000006a
 // %bb.0:                               // %entry
-	add	v6.2d, v1.2d, v5.2d
-	add	v7.2d, v0.2d, v4.2d
-	cmhi	v6.2d, v6.2d, v3.2d
-	cmhi	v7.2d, v7.2d, v2.2d
-	sub	v3.2d, v3.2d, v5.2d
-	sub	v2.2d, v2.2d, v4.2d
-	bit	v1.16b, v3.16b, v6.16b
-	bit	v0.16b, v2.16b, v7.16b
-	ret
-                                        // -- End function
-func000000000000003a:                   // @func000000000000003a
-// %bb.0:                               // %entry
-	add	v6.2d, v1.2d, v5.2d
-	add	v7.2d, v0.2d, v4.2d
-	cmgt	v6.2d, v6.2d, v3.2d
-	cmgt	v7.2d, v7.2d, v2.2d
-	sub	v3.2d, v3.2d, v5.2d
-	sub	v2.2d, v2.2d, v4.2d
-	bit	v1.16b, v3.16b, v6.16b
-	bit	v0.16b, v2.16b, v7.16b
+	add	x8, x0, x2
+	sub	x9, x1, x2
+	cmp	x8, x1
+	csel	x0, x9, x0, gt
 	ret
                                         // -- End function

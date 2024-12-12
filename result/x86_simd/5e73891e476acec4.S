@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	224                             # 0xe0
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpsrld	$4, %ymm1, %ymm1
 	vpord	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
 	vpcmpeqd	%ymm0, %ymm1, %k0

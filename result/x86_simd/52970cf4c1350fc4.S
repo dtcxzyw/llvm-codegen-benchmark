@@ -1,7 +1,7 @@
 func0000000000000020:                   # @func0000000000000020
 	vpor	%ymm2, %ymm1, %ymm1
 	vpslld	$12, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpsrld	$19, %ymm0, %ymm0
 	retq
 .LCPI1_0:

@@ -1,11 +1,12 @@
 
-%"struct.tbb::detail::d1::ets_base<tbb::detail::d1::ets_no_key>::slot.2521645" = type { %"struct.std::atomic.742.2521646", ptr }
-%"struct.std::atomic.742.2521646" = type { %"class.std::thread::id.2521644" }
-%"class.std::thread::id.2521644" = type { i64 }
-%struct.FSE_decode_t.3306249 = type { i16, i8, i8 }
-%struct.FSE_decode_t.3344680 = type { i16, i8, i8 }
+%"struct.tbb::detail::d1::ets_base<tbb::detail::d1::ets_no_key>::slot.2636054" = type { %"struct.std::atomic.742.2636055", ptr }
+%"struct.std::atomic.742.2636055" = type { %"class.std::thread::id.2636053" }
+%"class.std::thread::id.2636053" = type { i64 }
+%struct.FSE_decode_t.3496612 = type { i16, i8, i8 }
+%struct.HUF_DElt.3496613 = type { i8, i8 }
+%struct.FSE_decode_t.3533503 = type { i16, i8, i8 }
 
-; 159 occurrences:
+; 158 occurrences:
 ; cmake/optimized/huf_decompress.c.ll
 ; mold/optimized/gc-sections.cc.ALPHA.cc.ll
 ; mold/optimized/gc-sections.cc.ARM32.cc.ll
@@ -158,7 +159,6 @@
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
 ; zstd/optimized/huf_decompress.c.ll
-; zstd/optimized/zstd_v01.c.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; zstd/optimized/zstd_v03.c.ll
 ; zstd/optimized/zstd_v04.c.ll
@@ -166,11 +166,11 @@
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 16
-  %5 = getelementptr nusw %"struct.tbb::detail::d1::ets_base<tbb::detail::d1::ets_no_key>::slot.2521645", ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 16
+  %5 = getelementptr nusw %"struct.tbb::detail::d1::ets_base<tbb::detail::d1::ets_no_key>::slot.2636054", ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -187,11 +187,22 @@ entry:
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 4
-  %5 = getelementptr %struct.FSE_decode_t.3306249, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 4
+  %5 = getelementptr %struct.FSE_decode_t.3496612, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 1 occurrences:
+; zstd/optimized/zstd_v01.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = lshr i64 %1, %2
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 2
+  %5 = getelementptr nusw nuw %struct.HUF_DElt.3496613, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -203,7 +214,7 @@ define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, %2
   %4 = getelementptr i8, ptr %0, i64 4
-  %5 = getelementptr %struct.FSE_decode_t.3344680, ptr %4, i64 %3
+  %5 = getelementptr %struct.FSE_decode_t.3533503, ptr %4, i64 %3
   ret ptr %5
 }
 

@@ -17,10 +17,8 @@ entry:
   ret float %4
 }
 
-; 14 occurrences:
+; 12 occurrences:
 ; darktable/optimized/introspection_colorequal.c.ll
-; darktable/optimized/introspection_exposure.c.ll
-; darktable/optimized/introspection_primaries.c.ll
 ; darktable/optimized/introspection_toneequal.c.ll
 ; flac/optimized/window.c.ll
 ; minetest/optimized/clouds.cpp.ll

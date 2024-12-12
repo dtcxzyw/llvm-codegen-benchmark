@@ -3,12 +3,12 @@
 ; cmake/optimized/xmlparse.c.ll
 ; hdf5/optimized/H5FDonion_index.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000022(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000023(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %notmask = shl nsw i64 -1, %2
   %3 = xor i64 %notmask, -1
-  %4 = and i64 %3, %1
-  %5 = getelementptr nusw ptr, ptr %0, i64 %4
+  %4 = and i64 %1, %3
+  %5 = getelementptr nusw nuw ptr, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -34,7 +34,7 @@ define ptr @func0000000000000020(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %notmask = shl nsw i64 -1, %2
   %3 = xor i64 %notmask, -1
-  %4 = and i64 %3, %1
+  %4 = and i64 %1, %3
   %5 = getelementptr ptr, ptr %0, i64 %4
   ret ptr %5
 }

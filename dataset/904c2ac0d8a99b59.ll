@@ -1,8 +1,9 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; duckdb/optimized/ub_duckdb_transformer_statement.cpp.ll
 ; libevent/optimized/epoll.c.ll
 ; libzmq/optimized/socket_poller.cpp.ll
+; libzmq/optimized/zmq.cpp.ll
 ; linux/optimized/cistpl.ll
 ; linux/optimized/vt.ll
 ; llvm/optimized/BitcodeReader.cpp.ll

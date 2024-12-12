@@ -1,6 +1,7 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; fmt/optimized/core-test.cc.ll
+; lvgl/optimized/lv_math.ll
 ; minetest/optimized/game.cpp.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; Function Attrs: nounwind
@@ -12,8 +13,9 @@ entry:
   ret i8 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; openjdk/optimized/hb-ot-tag.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; Function Attrs: nounwind

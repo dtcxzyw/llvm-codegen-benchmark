@@ -22,7 +22,7 @@ entry:
   %2 = sdiv i64 %1, 86400
   %3 = trunc i64 %2 to i32
   %4 = add nsw i32 %3, 1789995
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -48,7 +48,7 @@ entry:
   %2 = sdiv i64 %1, 86400000
   %3 = trunc i64 %2 to i32
   %4 = add nsw i32 %3, 719468
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -61,7 +61,7 @@ entry:
   %2 = sdiv i64 %1, 86400000000000
   %3 = trunc nsw i64 %2 to i32
   %4 = add nsw i32 %3, 719468
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 

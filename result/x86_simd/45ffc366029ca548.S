@@ -35,5 +35,5 @@ func0000000000000002:                   # @func0000000000000002
 	korb	%k1, %k0, %k1
 	vpbroadcastd	.LCPI2_1(%rip), %ymm1   # ymm1 = [128,128,128,128,128,128,128,128]
 	vpbroadcastd	.LCPI2_2(%rip), %ymm1 {%k1} # ymm1 {%k1} = [33548,33548,33548,33548,33548,33548,33548,33548]
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	retq

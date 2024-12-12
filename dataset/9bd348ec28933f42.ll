@@ -2,51 +2,38 @@
 ; 1 occurrences:
 ; qemu/optimized/ui_vnc-enc-zrle.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000188(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = icmp ult i64 %5, %0
+  %6 = icmp ugt i64 %0, %5
   ret i1 %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; bullet3/optimized/btMultiBodyConstraint.ll
 ; opencv/optimized/camera_calibration.cpp.ll
 ; openusd/optimized/stbImage.cpp.ll
-; yosys/optimized/formalff.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 2
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; abc/optimized/bmcBmcAnd.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000096(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000126(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = icmp sgt i64 %5, %0
-  ret i1 %6
-}
-
-; 1 occurrences:
-; abc/optimized/bmcBmcAnd.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000091(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nuw i32 %2, 1
-  %4 = mul nsw i32 %3, %1
-  %5 = sext i32 %4 to i64
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp slt i64 %0, %5
   ret i1 %6
 }
 
@@ -59,64 +46,52 @@ entry:
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/pyramids.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d6(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001a6(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = icmp sgt i64 %5, %0
+  %6 = icmp slt i64 %0, %5
   ret i1 %6
 }
 
-; 2 occurrences:
-; abc/optimized/bmcBmcAnd.c.ll
-; opencv/optimized/serialization.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000d1(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nuw nsw i32 %2, 1
-  %4 = mul nsw i32 %3, %1
-  %5 = sext i32 %4 to i64
-  %6 = icmp eq i64 %5, %0
-  ret i1 %6
-}
-
-; 4 occurrences:
+; 5 occurrences:
 ; abc/optimized/sclBuffer.c.ll
 ; opencv/optimized/mat_mask_operations.cpp.ll
 ; openmpi/optimized/coll_sm_bcast.ll
 ; openmpi/optimized/coll_sm_reduce.ll
+; yosys/optimized/formalff.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a6(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = mul nsw i32 %3, %1
   %5 = sext i32 %4 to i64
-  %6 = icmp sgt i64 %5, %0
+  %6 = icmp slt i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; soc-simulator/optimized/sim_mycpu.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000dc(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001ac(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = mul nsw i32 %3, %1
   %5 = sext i32 %4 to i64
-  %6 = icmp ne i64 %5, %0
+  %6 = icmp ne i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; gromacs/optimized/redistribute.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001a4(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 
@@ -129,12 +104,12 @@ entry:
 ; openusd/optimized/primvar.cpp.ll
 ; openusd/optimized/skinningQuery.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a4(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = mul nsw i32 %3, %1
   %5 = sext i32 %4 to i64
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 
@@ -144,24 +119,24 @@ entry:
 ; opencv/optimized/sparse_matching_gpc.cpp.ll
 ; openusd/optimized/level.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a8(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = icmp ult i64 %5, %0
+  %6 = icmp ugt i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; openspiel/optimized/dots_and_boxes.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005b(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000ab(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = mul nsw i32 %3, %1
   %5 = sext i32 %4 to i64
-  %6 = icmp sle i64 %5, %0
+  %6 = icmp sge i64 %0, %5
   ret i1 %6
 }
 
@@ -173,7 +148,19 @@ entry:
   %3 = add i32 %2, 1
   %4 = mul i32 %3, %1
   %5 = sext i32 %4 to i64
-  %6 = icmp ult i64 %5, %0
+  %6 = icmp ugt i64 %0, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; opencv/optimized/serialization.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001a1(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw nsw i32 %2, 1
+  %4 = mul nsw i32 %3, %1
+  %5 = sext i32 %4 to i64
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
@@ -185,19 +172,19 @@ entry:
   %3 = add i32 %2, -1
   %4 = mul i32 %3, %1
   %5 = sext i32 %4 to i64
-  %6 = icmp sgt i64 %5, %0
+  %6 = icmp slt i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; opencv/optimized/resize.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = mul i32 %3, %1
   %5 = sext i32 %4 to i64
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
@@ -209,7 +196,7 @@ entry:
   %3 = add i32 %2, 4
   %4 = mul i32 %3, %1
   %5 = sext i32 %4 to i64
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 

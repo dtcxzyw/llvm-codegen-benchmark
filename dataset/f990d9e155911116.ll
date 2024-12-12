@@ -1,7 +1,6 @@
 
-; 212 occurrences:
+; 222 occurrences:
 ; abc/optimized/adler32.c.ll
-; abc/optimized/bmcUnroll.c.ll
 ; abc/optimized/cuddEssent.c.ll
 ; abc/optimized/giaIso2.c.ll
 ; brotli/optimized/decode.c.ll
@@ -19,12 +18,10 @@
 ; influxdb-rs/optimized/3jexax7r6nng0tve.ll
 ; libquic/optimized/adler32.c.ll
 ; linux/optimized/buffered-io.ll
-; linux/optimized/cap_audit.ll
 ; linux/optimized/dm-log.ll
 ; linux/optimized/dmar.ll
 ; linux/optimized/genalloc.ll
 ; linux/optimized/intel_color.ll
-; linux/optimized/jiffies.ll
 ; linux/optimized/percpu.ll
 ; linux/optimized/synaptics.ll
 ; linux/optimized/uncore_discovery.ll
@@ -210,6 +207,19 @@
 ; wasmtime-rs/optimized/172871zsy4nrpcmu.ll
 ; wireshark/optimized/packet-erf.c.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/05lrpc5icj3w7c2jbbww9rt02.ll
+; zed-rs/optimized/22ahis4uxapmr5sot3uwhf47g.ll
+; zed-rs/optimized/5jgfm3klpby9utjhkan94f3dk.ll
+; zed-rs/optimized/5uhbvltlizm569jusm7kamf9x.ll
+; zed-rs/optimized/6hxn0twt3h5sh337x4zo515i3.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8wa0knulc7q0w36j1a9to646h.ll
+; zed-rs/optimized/bx60353v5ms1nsmjqyoxenjec.ll
+; zed-rs/optimized/d5przcl3nwvj7ddp1j7ydu4aq.ll
+; zed-rs/optimized/ept7l7id9yl52ab8m2qhombt7.ll
+; zed-rs/optimized/f1suy9miqr5txm7nzzcuw0lf4.ll
 ; zfp/optimized/zfp.c.ll
 ; zlib/optimized/adler32.c.ll
 ; Function Attrs: nounwind
@@ -237,7 +247,7 @@ entry:
   ret i64 %3
 }
 
-; 132 occurrences:
+; 123 occurrences:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver3.c.ll
 ; abc/optimized/solver.c.ll
@@ -281,17 +291,8 @@ entry:
 ; spike/optimized/add64.ll
 ; spike/optimized/amocas_d.ll
 ; spike/optimized/amocas_q.ll
-; spike/optimized/cm_pop.ll
-; spike/optimized/cm_popret.ll
-; spike/optimized/cm_popretz.ll
-; spike/optimized/cm_push.ll
 ; spike/optimized/disasm.ll
-; spike/optimized/f128_to_f16.ll
-; spike/optimized/f128_to_f32.ll
-; spike/optimized/f32_to_f16.ll
 ; spike/optimized/f64_rem.ll
-; spike/optimized/f64_to_f16.ll
-; spike/optimized/f64_to_f32.ll
 ; spike/optimized/f64_to_i64_r_minMag.ll
 ; spike/optimized/f64_to_ui64_r_minMag.ll
 ; spike/optimized/fadd_d.ll

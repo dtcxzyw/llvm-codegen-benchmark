@@ -28,3 +28,9 @@ func0000000000000054:                   # @func0000000000000054
 	vpmulld	.LCPI2_1(%rip){1to8}, %ymm0, %ymm0
 	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
+func0000000000000004:                   # @func0000000000000004
+	vpsubd	%ymm2, %ymm1, %ymm1
+	vpaddd	%ymm1, %ymm0, %ymm0
+	vpaddd	%ymm0, %ymm0, %ymm1
+	vpaddd	%ymm1, %ymm0, %ymm0
+	retq

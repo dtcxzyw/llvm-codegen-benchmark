@@ -5,7 +5,7 @@
 ; opencv/optimized/softfloat.cpp.ll
 ; rust-analyzer-rs/optimized/357j944nkpwuonjr.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 2
   %3 = icmp eq i64 %0, 1
@@ -25,7 +25,6 @@ entry:
 ; llvm/optimized/Expr.cpp.ll
 ; meshoptimizer/optimized/overdrawoptimizer.cpp.ll
 ; opencv/optimized/approx.cpp.ll
-; quantlib/optimized/nthorderderivativeop.ll
 ; quantlib/optimized/pseudosqrt.ll
 ; taskflow/optimized/async.cpp.ll
 ; taskflow/optimized/attach_data.cpp.ll
@@ -65,6 +64,7 @@ entry:
 ; taskflow/optimized/text_pipeline.cpp.ll
 ; taskflow/optimized/visualization.cpp.ll
 ; taskflow/optimized/while_loop.cpp.ll
+; wasmtime-rs/optimized/4aijogcjfl814gfb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
@@ -83,11 +83,24 @@ entry:
 ; quantlib/optimized/pseudosqrt.ll
 ; quantlib/optimized/tapcorrelations.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000048(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 3
   %3 = icmp ugt i64 %0, 2305843009213693951
   %4 = select i1 %3, i64 -1, i64 %2
+  ret i64 %4
+}
+
+; 3 occurrences:
+; turborepo-rs/optimized/25oh6shdavuruchclucpqksw7.ll
+; turborepo-rs/optimized/397adzofsg1m4vpnoty9f4olk.ll
+; turborepo-rs/optimized/9by3g1opovplsencotx7u8qhp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000068(i64 %0, i64 %1) #0 {
+entry:
+  %2 = shl nuw nsw i64 %1, 3
+  %3 = icmp ugt i64 %0, 1152921504606846975
+  %4 = select i1 %3, i64 undef, i64 %2
   ret i64 %4
 }
 
@@ -134,11 +147,10 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
-; openblas/optimized/parameter.c.ll
+; 1 occurrences:
 ; opencv/optimized/softfloat.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 23
   %3 = icmp eq i64 %0, 0

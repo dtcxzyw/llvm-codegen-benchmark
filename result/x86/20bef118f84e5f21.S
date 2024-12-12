@@ -3,13 +3,13 @@ func0000000000000030:                   # @func0000000000000030
 	imulq	%rsi, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000000:                   # @func0000000000000000
-	leaq	(%rsi,%rsi,4), %rax
+func000000000000003f:                   # @func000000000000003f
+	movl	$4194967296, %eax               # imm = 0xFA0A1F00
+	imulq	%rsi, %rax
 	addq	%rdi, %rax
 	retq
-func000000000000003f:                   # @func000000000000003f
-	leaq	(%rsi,%rsi,8), %rax
-	leaq	(%rsi,%rax,2), %rax
+func0000000000000000:                   # @func0000000000000000
+	leaq	(%rsi,%rsi,4), %rax
 	addq	%rdi, %rax
 	retq
 func0000000000000020:                   # @func0000000000000020

@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 15 occurrences:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/o3dgcDynamicVectorEncoder.cpp.ll
 ; assimp/optimized/o3dgcTriangleFans.cpp.ll
@@ -12,7 +12,9 @@
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/RawCommentList.cpp.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
+; lvgl/optimized/lv_obj_draw.ll
 ; wasmtime-rs/optimized/320v7ko74ke0k4k4.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i8 %0, i64 %1) #0 {
 entry:

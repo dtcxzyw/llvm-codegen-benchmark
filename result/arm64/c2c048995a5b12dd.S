@@ -1,48 +1,37 @@
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	ushr	v3.2d, v3.2d, #32
-	ushr	v2.2d, v2.2d, #32
-	uzp1	v0.4s, v0.4s, v1.4s
-	uzp1	v2.4s, v2.4s, v3.4s
-	xtn	v0.4h, v0.4s
-	xtn	v1.4h, v2.4s
-	cmeq	v0.4h, v0.4h, v1.4h
-	mvn	v0.8b, v0.8b
+	lsr	x8, x1, #32
+	and	w9, w0, #0xffff
+	cmp	w9, w8, uxth
+	cset	w0, ne
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	xtn	v3.2s, v3.2d
-	xtn	v2.2s, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	ushr	v1.2s, v3.2s, #16
-	ushr	v2.2s, v2.2s, #16
-	xtn	v0.4h, v0.4s
-	uzp1	v1.4h, v2.4h, v1.4h
-	cmeq	v0.4h, v0.4h, v1.4h
+	and	w8, w0, #0xffff
+	cmp	w8, w1, lsr #16
+	cset	w0, eq
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	xtn	v3.2s, v3.2d
-	xtn	v2.2s, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	ushr	v1.2s, v3.2s, #16
-	ushr	v2.2s, v2.2s, #16
-	xtn	v0.4h, v0.4s
-	uzp1	v1.4h, v2.4h, v1.4h
-	cmhi	v0.4h, v0.4h, v1.4h
+	and	w8, w0, #0xffff
+	cmp	w8, w1, lsr #16
+	cset	w0, hi
+	ret
+                                        // -- End function
+func0000000000000101:                   // @func0000000000000101
+// %bb.0:                               // %entry
+	lsr	x8, x1, #48
+	cmp	w8, w0, uxth
+	cset	w0, eq
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	xtn	v3.2s, v3.2d
-	xtn	v2.2s, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	ushr	v1.2s, v3.2s, #3
-	ushr	v2.2s, v2.2s, #3
-	xtn	v0.4h, v0.4s
-	uzp1	v1.4h, v2.4h, v1.4h
-	cmhi	v0.4h, v1.4h, v0.4h
+	lsr	w8, w1, #3
+	and	w9, w0, #0xffff
+	cmp	w9, w8, uxth
+	cset	w0, lo
 	ret
                                         // -- End function

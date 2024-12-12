@@ -19,7 +19,7 @@
 ; verilator/optimized/V3GraphAlg.cpp.ll
 ; verilator/optimized/V3TraceDecl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000ca(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = icmp slt i32 %1, 0
@@ -33,7 +33,7 @@ entry:
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000014a(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = icmp sgt i32 %1, 2

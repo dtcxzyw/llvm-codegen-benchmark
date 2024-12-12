@@ -54,7 +54,7 @@ define i64 @func0000000000000002(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = xor i64 %2, -1
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -72,7 +72,7 @@ define i64 @func0000000000000000(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = xor i64 %2, -1
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -87,7 +87,7 @@ define i64 @func0000000000000007(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = xor i64 %2, -1
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -131,6 +131,20 @@ entry:
   ret i64 %4
 }
 
+; 4 occurrences:
+; abseil-cpp/optimized/pool_urbg_test.cc.ll
+; abseil-cpp/optimized/randen_engine_test.cc.ll
+; boost/optimized/default_filter_factory.ll
+; node/optimized/libnode.crypto_keys.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000010(i64 %0, i8 %1) #0 {
+entry:
+  %2 = zext nneg i8 %1 to i64
+  %3 = add i64 %0, 48
+  %4 = sub i64 %3, %2
+  ret i64 %4
+}
+
 ; 2 occurrences:
 ; opencv/optimized/thresh.cpp.ll
 ; openusd/optimized/warped_motion.c.ll
@@ -140,19 +154,6 @@ entry:
   %2 = zext i8 %1 to i64
   %3 = add nuw nsw i64 %0, 255
   %4 = sub nuw nsw i64 %3, %2
-  ret i64 %4
-}
-
-; 3 occurrences:
-; abseil-cpp/optimized/pool_urbg_test.cc.ll
-; abseil-cpp/optimized/randen_engine_test.cc.ll
-; node/optimized/libnode.crypto_keys.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000010(i64 %0, i8 %1) #0 {
-entry:
-  %2 = zext nneg i8 %1 to i64
-  %3 = add i64 %0, 8
-  %4 = sub i64 %3, %2
   ret i64 %4
 }
 

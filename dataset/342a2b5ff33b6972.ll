@@ -1,6 +1,7 @@
 
-; 115 occurrences:
+; 116 occurrences:
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/metablock.c.ll
@@ -125,6 +126,7 @@ entry:
 }
 
 ; 193 occurrences:
+; boost/optimized/to_chars.ll
 ; cmake/optimized/fse_compress.c.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; fmt/optimized/format-impl-test.cc.ll
@@ -213,7 +215,6 @@ entry:
 ; linux/optimized/resize.ll
 ; linux/optimized/set_memory.ll
 ; linux/optimized/timekeeping.ll
-; linux/optimized/vclock_gettime.ll
 ; llvm/optimized/ScaledNumber.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
@@ -562,9 +563,10 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; cpython/optimized/unicodeobject.ll
 ; linux/optimized/gen8_ppgtt.ll
+; lvgl/optimized/lv_tlsf.ll
 ; postgres/optimized/f2s.ll
 ; postgres/optimized/f2s_shlib.ll
 ; postgres/optimized/f2s_srv.ll

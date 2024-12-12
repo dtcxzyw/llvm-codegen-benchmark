@@ -1,5 +1,5 @@
 
-; 49 occurrences:
+; 62 occurrences:
 ; coreutils-rs/optimized/1hfndwarkzjc08wu.ll
 ; cvc5/optimized/sygus_explain.cpp.ll
 ; delta-rs/optimized/s2xrj2sh770tx8d.ll
@@ -49,6 +49,19 @@
 ; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
 ; wasmtime-rs/optimized/4cnvf14b3xea7eab.ll
 ; wasmtime-rs/optimized/joyny9bexuq72mb.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/5eo3r6xqgcl9c03ocnkjc70d3.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/7d83zatnfw8jz3f790h28195t.ll
+; zed-rs/optimized/8aib3kswyxtai67bpawu71ihu.ll
+; zed-rs/optimized/b2ktka7yg7i1nuhew6e88xzwi.ll
+; zed-rs/optimized/c2psz5rm4tia23zti1npejtse.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
+; zed-rs/optimized/d5przcl3nwvj7ddp1j7ydu4aq.ll
+; zed-rs/optimized/d7h2r6mystjn2jzwcl5ofeoiz.ll
+; zed-rs/optimized/dpj3mwjfm2c61mxrpoi279us4.ll
+; zed-rs/optimized/f1xl8k103at60m3wnvb71vdir.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000e(i64 %0) #0 {
 entry:
@@ -58,9 +71,13 @@ entry:
   ret i64 %3
 }
 
-; 63 occurrences:
+; 67 occurrences:
 ; abseil-cpp/optimized/convert_test.cc.ll
 ; arrow/optimized/interfaces.cc.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/graphml.ll
+; boost/optimized/settings_parser.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; cmake/optimized/cmList.cxx.ll
 ; cpython/optimized/longobject.ll
@@ -131,7 +148,8 @@ entry:
   ret i64 %3
 }
 
-; 47 occurrences:
+; 48 occurrences:
+; boost/optimized/to_chars.ll
 ; c3c/optimized/bigint.c.ll
 ; coreutils-rs/optimized/1hfndwarkzjc08wu.ll
 ; coreutils-rs/optimized/2u6e9ztkbsxyrm4k.ll
@@ -188,8 +206,14 @@ entry:
   ret i64 %3
 }
 
-; 133 occurrences:
+; 139 occurrences:
 ; abseil-cpp/optimized/graphcycles.cc.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/default_sink.ll
+; boost/optimized/formatter_parser.ll
+; boost/optimized/init_from_settings.ll
+; boost/optimized/matches_relation_factory.ll
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; faiss/optimized/lattice_Zn.cpp.ll

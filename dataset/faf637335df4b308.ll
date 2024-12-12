@@ -1,5 +1,5 @@
 
-; 176 occurrences:
+; 173 occurrences:
 ; abc/optimized/amapRule.c.ll
 ; abc/optimized/mpmDsd.c.ll
 ; actix-rs/optimized/5k5ycrtlwwxldg7.ll
@@ -26,8 +26,6 @@
 ; linux/optimized/drm_format_helper.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/fcntl.ll
-; linux/optimized/feat_ctl.ll
-; linux/optimized/file_table.ll
 ; linux/optimized/fops.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/hooks.ll
@@ -38,14 +36,12 @@
 ; linux/optimized/ioctl.ll
 ; linux/optimized/lbr.ll
 ; linux/optimized/libata-eh.ll
-; linux/optimized/mii.ll
 ; linux/optimized/neighbour.ll
 ; linux/optimized/open.ll
 ; linux/optimized/phy-c45.ll
 ; linux/optimized/quota.ll
 ; linux/optimized/shmem.ll
 ; linux/optimized/slub.ll
-; linux/optimized/statfs.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/vfs_inode.ll
 ; linux/optimized/yenta_socket.ll
@@ -120,7 +116,6 @@
 ; openvdb/optimized/LevelSetRebuild.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/LevelSetTracker.cc.ll
-; openvdb/optimized/Mask.cc.ll
 ; openvdb/optimized/Merge.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
 ; openvdb/optimized/PoissonSolver.cc.ll
@@ -176,6 +171,8 @@
 ; wireshark/optimized/packet-rlc-lte.c.ll
 ; wireshark/optimized/packet-uavcan-can.c.ll
 ; yosys/optimized/dfflegalize.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -187,8 +184,7 @@ entry:
   ret i32 %7
 }
 
-; 5 occurrences:
-; linux/optimized/mii.ll
+; 4 occurrences:
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/CGClass.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
@@ -225,6 +221,33 @@ entry:
   %5 = and i32 %1, 1
   %6 = or disjoint i32 %5, %4
   %7 = or i32 %6, %0
+  ret i32 %7
+}
+
+; 15 occurrences:
+; openvdb/optimized/Diagnostics.cc.ll
+; openvdb/optimized/FastSweeping.cc.ll
+; openvdb/optimized/Filter.cc.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
+; openvdb/optimized/LevelSetRebuild.cc.ll
+; openvdb/optimized/LevelSetSphere.cc.ll
+; openvdb/optimized/LevelSetTracker.cc.ll
+; openvdb/optimized/Mask.cc.ll
+; openvdb/optimized/Merge.cc.ll
+; openvdb/optimized/MultiResGrid.cc.ll
+; openvdb/optimized/PoissonSolver.cc.ll
+; openvdb/optimized/TopologyToLevelSet.cc.ll
+; openvdb/optimized/VolumeAdvect.cc.ll
+; openvdb/optimized/VolumeToMesh.cc.ll
+; openvdb/optimized/points.cc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 2
+  %4 = and i32 %3, 992
+  %5 = and i32 %1, 31744
+  %6 = or disjoint i32 %4, %5
+  %7 = or i32 %0, %6
   ret i32 %7
 }
 

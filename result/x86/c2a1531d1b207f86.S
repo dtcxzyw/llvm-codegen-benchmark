@@ -1,4 +1,4 @@
-func0000000000000ccc:                   # @func0000000000000ccc
+func000000000000318c:                   # @func000000000000318c
 	testq	%rsi, %rsi
 	setne	%al
 	cmpq	%rdi, %rsi
@@ -8,7 +8,7 @@ func0000000000000ccc:                   # @func0000000000000ccc
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000044c:                   # @func000000000000044c
+func000000000000108c:                   # @func000000000000108c
 	cmpq	%rsi, %rdi
 	setb	%al
 	cmpq	$17, %rsi
@@ -18,7 +18,7 @@ func000000000000044c:                   # @func000000000000044c
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000084c:                   # @func000000000000084c
+func000000000000208c:                   # @func000000000000208c
 	cmpq	%rdi, %rsi
 	seta	%al
 	cmpq	$17, %rsi

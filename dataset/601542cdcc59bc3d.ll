@@ -1,8 +1,9 @@
 
-; 73 occurrences:
+; 74 occurrences:
 ; abseil-cpp/optimized/string_view_test.cc.ll
 ; abseil-cpp/optimized/time_zone_posix.cc.ll
 ; arrow/optimized/type.cc.ll
+; boost/optimized/static_string.ll
 ; chibicc/optimized/tokenize.ll
 ; clamav/optimized/freshclam.c.ll
 ; clamav/optimized/str.c.ll
@@ -74,7 +75,7 @@
 ; slurm/optimized/hostlist.ll
 ; wireshark/optimized/packet-websocket.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i1 %0, i8 %1) #0 {
+define i1 @func00000000000000c1(i1 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = shl nuw i64 1, %2
@@ -90,7 +91,7 @@ entry:
 ; postgres/optimized/filter.ll
 ; wireshark/optimized/packet-osc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, i8 %1) #0 {
+define i1 @func0000000000000041(i1 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = shl nuw i64 1, %2

@@ -1,19 +1,4 @@
 
-%struct.recurse_cache.2678294 = type { ptr, i32 }
-
-; 2 occurrences:
-; icu/optimized/ucnvscsu.ll
-; php/optimized/pcre2_compile.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp slt i32 %2, 1
-  %4 = select i1 %3, i32 7, i32 %1
-  %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw [8 x %struct.recurse_cache.2678294], ptr %0, i64 0, i64 %5
-  ret ptr %6
-}
-
 ; 2 occurrences:
 ; linux/optimized/libata-acpi.ll
 ; wireshark/optimized/idl2wrs.c.ll
@@ -24,6 +9,18 @@ entry:
   %4 = select i1 %3, i32 0, i32 %1
   %5 = sext i32 %4 to i64
   %6 = getelementptr [1024 x i8], ptr %0, i64 0, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; icu/optimized/ucnvscsu.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001a(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp slt i32 %2, 1
+  %4 = select i1 %3, i32 7, i32 %1
+  %5 = sext i32 %4 to i64
+  %6 = getelementptr nusw [8 x i8], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 

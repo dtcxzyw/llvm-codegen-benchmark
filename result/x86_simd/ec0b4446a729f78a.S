@@ -36,7 +36,7 @@
 	.zero	4,2
 .LCPI0_3:
 	.zero	4,16
-func0000000000000023:                   # @func0000000000000023
+func0000000000000043:                   # @func0000000000000043
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpord	.LCPI0_2(%rip){1to4}, %xmm1, %xmm3
@@ -84,7 +84,7 @@ func0000000000000023:                   # @func0000000000000023
 	.zero	4,8
 .LCPI1_3:
 	.zero	4,16
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpord	.LCPI1_2(%rip){1to4}, %xmm1, %xmm3

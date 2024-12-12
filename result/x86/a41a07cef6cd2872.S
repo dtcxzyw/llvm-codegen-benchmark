@@ -15,9 +15,3 @@ func000000000000006e:                   # @func000000000000006e
 	movl	$15, %eax
 	shlxq	%rdi, %rax, %rax
 	retq
-func0000000000000006:                   # @func0000000000000006
-	shll	$2, %edi
-	addb	$-4, %dil
-	movl	$1, %eax
-	shlxq	%rdi, %rax, %rax
-	retq

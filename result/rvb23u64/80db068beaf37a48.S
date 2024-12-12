@@ -1,4 +1,4 @@
-func0000000000000211:                   # @func0000000000000211
+func0000000000000821:                   # @func0000000000000821
 	sext.w	a0, a0
 	bset	a2, zero, a2
 	and	a1, a1, a2
@@ -7,21 +7,21 @@ func0000000000000211:                   # @func0000000000000211
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func00000000000002cc:                   # @func00000000000002cc
+func000000000000098c:                   # @func000000000000098c
 	bset	a2, zero, a2
 	and	a1, a1, a2
 	or	a0, a0, a1
 	sext.w	a0, a0
 	snez	a0, a0
 	ret
-func00000000000003cc:                   # @func00000000000003cc
+func0000000000000d8c:                   # @func0000000000000d8c
 	bset	a2, zero, a2
 	and	a1, a1, a2
 	or	a0, a0, a1
 	sext.w	a0, a0
 	snez	a0, a0
 	ret
-func0000000000000311:                   # @func0000000000000311
+func0000000000000c21:                   # @func0000000000000c21
 	sext.w	a0, a0
 	bset	a2, zero, a2
 	and	a1, a1, a2
@@ -30,7 +30,7 @@ func0000000000000311:                   # @func0000000000000311
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func00000000000003c1:                   # @func00000000000003c1
+func0000000000000d81:                   # @func0000000000000d81
 	sext.w	a0, a0
 	bset	a2, zero, a2
 	and	a1, a1, a2

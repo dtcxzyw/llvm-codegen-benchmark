@@ -1,18 +1,14 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	add	v1.8b, v1.8b, v2.8b
-	add	v0.8b, v1.8b, v0.8b
-	ushll	v0.8h, v0.8b, #0
-	ushll2	v1.4s, v0.8h, #0
-	ushll	v0.4s, v0.4h, #0
+	add	w8, w1, w2
+	add	w8, w8, w0
+	and	w0, w8, #0xff
 	ret
                                         // -- End function
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
-	add	v1.8b, v1.8b, v2.8b
-	add	v0.8b, v1.8b, v0.8b
-	ushll	v0.8h, v0.8b, #0
-	ushll2	v1.4s, v0.8h, #0
-	ushll	v0.4s, v0.4h, #0
+	add	w8, w1, w2
+	add	w8, w8, w0
+	and	w0, w8, #0xff
 	ret
                                         // -- End function

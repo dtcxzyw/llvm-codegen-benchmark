@@ -11,7 +11,8 @@ entry:
   ret i1 %4
 }
 
-; 30 occurrences:
+; 31 occurrences:
+; boost/optimized/algorithm.ll
 ; graphviz/optimized/adjust.c.ll
 ; graphviz/optimized/arrows.c.ll
 ; graphviz/optimized/postproc.c.ll
@@ -51,7 +52,9 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 4 occurrences:
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
 ; ipopt/optimized/IpPiecewisePenalty.ll
 ; quantlib/optimized/exponentialintegrals.ll
 ; Function Attrs: nounwind
@@ -227,7 +230,10 @@ entry:
   ret i1 %4
 }
 
-; 14 occurrences:
+; 17 occurrences:
+; boost/optimized/algorithm.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; cpython/optimized/cmathmodule.ll
 ; cvc5/optimized/sygus_unif_rl.cpp.ll
 ; meshlab/optimized/Factor.cpp.ll
@@ -297,6 +303,64 @@ entry:
   ret i1 %4
 }
 
+; 12 occurrences:
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/difference_pl_pl.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/intersection_pl_pl.ll
+; boost/optimized/union_pl_pl.ll
+; boost/optimized/within_pointlike_geometry.ll
+; cpython/optimized/cmathmodule.ll
+; cpython/optimized/complexobject.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000099(double %0, double %1) #0 {
+entry:
+  %2 = fcmp ueq double %1, 0x7FF0000000000000
+  %3 = fcmp ueq double %0, 0x7FF0000000000000
+  %4 = select i1 %3, i1 true, i1 %2
+  ret i1 %4
+}
+
+; 3 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; opencv/optimized/magnitude.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000c4(double %0, double %1) #0 {
+entry:
+  %2 = fcmp oge double %1, 0.000000e+00
+  %3 = fcmp ogt double %0, 1.000000e-01
+  %4 = select i1 %3, i1 true, i1 %2
+  ret i1 %4
+}
+
+; 1 occurrences:
+; boost/optimized/within_sph_geo.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000bd(double %0, double %1) #0 {
+entry:
+  %2 = fcmp ule double %1, 1.000000e+01
+  %3 = fcmp uge double %0, 1.000000e+01
+  %4 = select i1 %3, i1 true, i1 %2
+  ret i1 %4
+}
+
+; 2 occurrences:
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
+; Function Attrs: nounwind
+define i1 @func000000000000005b(double %0, double %1) #0 {
+entry:
+  %2 = fcmp ugt double %1, 0.000000e+00
+  %3 = fcmp ule double %0, 0.000000e+00
+  %4 = select i1 %3, i1 true, i1 %2
+  ret i1 %4
+}
+
 ; 1 occurrences:
 ; gromacs/optimized/lmmin.cpp.ll
 ; Function Attrs: nounwind
@@ -359,31 +423,6 @@ define i1 @func00000000000000c2(double %0, double %1) #0 {
 entry:
   %2 = fcmp oge double %1, 0.000000e+00
   %3 = fcmp olt double %0, 1.000000e+00
-  %4 = select i1 %3, i1 true, i1 %2
-  ret i1 %4
-}
-
-; 1 occurrences:
-; opencv/optimized/magnitude.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000c4(double %0, double %1) #0 {
-entry:
-  %2 = fcmp oge double %1, 0.000000e+00
-  %3 = fcmp ogt double %0, 0.000000e+00
-  %4 = select i1 %3, i1 true, i1 %2
-  ret i1 %4
-}
-
-; 4 occurrences:
-; cpython/optimized/cmathmodule.ll
-; cpython/optimized/complexobject.ll
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000099(double %0, double %1) #0 {
-entry:
-  %2 = fcmp ueq double %1, 0x7FF0000000000000
-  %3 = fcmp ueq double %0, 0x7FF0000000000000
   %4 = select i1 %3, i1 true, i1 %2
   ret i1 %4
 }

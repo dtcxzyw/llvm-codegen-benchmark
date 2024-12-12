@@ -36,7 +36,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
-func000000000000016c:                   # @func000000000000016c
+func00000000000004cc:                   # @func00000000000004cc
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
 	vpandd	.LCPI0_3(%rip){1to4}, %xmm1, %xmm1
 	vpcmpneqb	.LCPI0_2(%rip), %xmm1, %k1

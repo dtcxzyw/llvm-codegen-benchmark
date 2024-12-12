@@ -22,7 +22,7 @@ func0000000000000010:                   # @func0000000000000010
 	shll	$4, %eax
 	orl	%edi, %eax
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000071:                   # @func0000000000000071
 	addl	$-40, %esi
 	xorl	%eax, %eax
 	cmpl	$-6, %esi
@@ -30,7 +30,7 @@ func0000000000000031:                   # @func0000000000000031
 	shll	$5, %eax
 	orl	%edi, %eax
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000068:                   # @func0000000000000068
 	addl	$-65, %esi
 	xorl	%eax, %eax
 	cmpl	$32, %esi
@@ -38,7 +38,7 @@ func0000000000000028:                   # @func0000000000000028
 	shll	$13, %eax
 	orl	%edi, %eax
 	retq
-func0000000000000029:                   # @func0000000000000029
+func0000000000000069:                   # @func0000000000000069
 	addl	$-65, %esi
 	xorl	%eax, %eax
 	cmpl	$32, %esi

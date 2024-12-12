@@ -4,14 +4,14 @@ func0000000000000001:                   # @func0000000000000001
 	movl	$2, %eax
 	cmoveq	%rsi, %rax
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	shrl	%esi
 	andl	$127, %esi
 	cmpq	$96, %rdi
 	movl	$48, %eax
 	cmovbq	%rsi, %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	shrl	$3, %esi
 	andl	$1, %esi
 	testq	%rdi, %rdi

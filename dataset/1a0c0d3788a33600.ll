@@ -25,6 +25,18 @@ entry:
 }
 
 ; 1 occurrences:
+; lvgl/optimized/lv_area.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %2, 3600
+  %4 = select i1 %1, i32 %3, i32 %2
+  %5 = mul nsw i32 %0, -10
+  %6 = add i32 %5, %4
+  ret i32 %6
+}
+
+; 1 occurrences:
 ; llvm/optimized/WinCOFFObjectWriter.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i1 %1, i32 %2) #0 {

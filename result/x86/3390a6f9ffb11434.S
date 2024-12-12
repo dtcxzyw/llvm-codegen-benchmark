@@ -1,4 +1,4 @@
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	testb	$1, %dil
 	cmovnel	%esi, %edx
 	movl	%edx, %eax
@@ -6,7 +6,7 @@ func0000000000000024:                   # @func0000000000000024
 	cmpl	$16777216, %edx                 # imm = 0x1000000
 	cmovael	%edx, %eax
 	retq
-func00000000000000a4:                   # @func00000000000000a4
+func0000000000000144:                   # @func0000000000000144
 	testb	$1, %dil
 	cmovnel	%esi, %edx
 	movl	%edx, %eax
@@ -14,7 +14,7 @@ func00000000000000a4:                   # @func00000000000000a4
 	cmpl	$16777216, %edx                 # imm = 0x1000000
 	cmovael	%edx, %eax
 	retq
-func00000000000000e4:                   # @func00000000000000e4
+func00000000000001c4:                   # @func00000000000001c4
 	testb	$1, %dil
 	cmovnel	%esi, %edx
 	movl	%edx, %eax

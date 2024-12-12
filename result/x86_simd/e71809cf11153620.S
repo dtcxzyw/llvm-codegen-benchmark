@@ -1,12 +1,11 @@
-func000000000000001c:                   # @func000000000000001c
+.LCPI0_0:
+	.long	1                               # 0x1
+func000000000000002c:                   # @func000000000000002c
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
-	vpslld	$31, %xmm2, %xmm0
-	vpsrad	$31, %xmm0, %xmm0
-	vpmovsxdq	%xmm0, %ymm0
-	vpxor	%xmm2, %xmm2, %xmm2
-	vpsubq	%ymm1, %ymm2, %ymm1
-	vpcmpneqq	%ymm1, %ymm0, %k0 {%k1}
+	vpandd	.LCPI0_0(%rip){1to4}, %xmm2, %xmm0
+	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	vpcmpneqq	%ymm0, %ymm1, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

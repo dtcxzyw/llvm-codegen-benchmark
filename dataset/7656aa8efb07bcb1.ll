@@ -1,7 +1,6 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; linux/optimized/e1000_hw.ll
-; linux/optimized/he.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/mac.ll
 ; linux/optimized/vht.ll

@@ -1,11 +1,10 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; brotli/optimized/backward_references_hq.c.ll
 ; cpython/optimized/Hacl_Hash_MD5.ll
 ; cpython/optimized/Hacl_Hash_SHA1.ll
 ; cpython/optimized/Hacl_Hash_SHA2.ll
 ; linux/optimized/drm_edid.ll
-; linux/optimized/sch_mq.ll
 ; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
 ; llvm/optimized/BitcodeWriter.cpp.ll

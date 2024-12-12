@@ -3,14 +3,14 @@
 ; icu/optimized/reslist.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; linux/optimized/drm_modes.ll
-; linux/optimized/ff-memless.ll
 ; linux/optimized/intel_tv.ll
+; lvgl/optimized/lv_draw_arc.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %0, i32 %1, i32 %2
   %4 = trunc i32 %3 to i16
-  %5 = add i16 %4, 1
+  %5 = add i16 %4, 90
   ret i16 %5
 }
 

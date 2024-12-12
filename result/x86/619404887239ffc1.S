@@ -16,3 +16,9 @@ func0000000000000026:                   # @func0000000000000026
 	movzbl	%sil, %eax
 	orl	%edx, %eax
 	retq
+func000000000000003f:                   # @func000000000000003f
+	shll	$6, %edx
+	orl	%edi, %edx
+	movzbl	%sil, %eax
+	orl	%edx, %eax
+	retq

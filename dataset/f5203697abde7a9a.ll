@@ -4,7 +4,7 @@
 ; openblas/optimized/cblas_dgemm.c.ll
 ; openblas/optimized/cblas_dgemmt.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i1 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %0, 0
   %4 = select i1 %3, i32 0, i32 %2

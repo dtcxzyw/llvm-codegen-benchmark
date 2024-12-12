@@ -1,5 +1,5 @@
 
-; 277 occurrences:
+; 287 occurrences:
 ; abc/optimized/cuddApprox.c.ll
 ; abc/optimized/cuddSplit.c.ll
 ; abseil-cpp/optimized/bernoulli_distribution_test.cc.ll
@@ -9,6 +9,19 @@
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
 ; assimp/optimized/sweep_context.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/scpgen.cpp.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; cmake/optimized/cmCTestRunTest.cxx.ll
@@ -174,7 +187,6 @@
 ; postgres/optimized/float.ll
 ; postgres/optimized/geo_ops.ll
 ; proj/optimized/4D_api.cpp.ll
-; proj/optimized/bacon.cpp.ll
 ; proj/optimized/boggs.cpp.ll
 ; proj/optimized/calcofi.cpp.ll
 ; proj/optimized/eck4.cpp.ll
@@ -184,13 +196,10 @@
 ; proj/optimized/gridshift.cpp.ll
 ; proj/optimized/isea.cpp.ll
 ; proj/optimized/krovak.cpp.ll
-; proj/optimized/mbt_fps.cpp.ll
 ; proj/optimized/mbtfpq.cpp.ll
 ; proj/optimized/nell.cpp.ll
-; proj/optimized/nell_h.cpp.ll
 ; proj/optimized/putp2.cpp.ll
 ; proj/optimized/vandg2.cpp.ll
-; proj/optimized/wink2.cpp.ll
 ; pybind11/optimized/test_numpy_vectorize.cpp.ll
 ; quantlib/optimized/analytic_cont_geom_av_price_heston.ll
 ; quantlib/optimized/analytic_discr_geom_av_price_heston.ll
@@ -218,6 +227,7 @@
 ; quantlib/optimized/fdminnervaluecalculator.ll
 ; quantlib/optimized/fftvanillaengine.ll
 ; quantlib/optimized/fftvariancegammaengine.ll
+; quantlib/optimized/gaussian1dmodel.ll
 ; quantlib/optimized/hestonrndcalculator.ll
 ; quantlib/optimized/integralengine.ll
 ; quantlib/optimized/integralhestonvarianceoptionengine.ll

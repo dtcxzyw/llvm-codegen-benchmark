@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; cpython/optimized/floatobject.ll
 ; faiss/optimized/AutoTune.cpp.ll
 ; flac/optimized/replaygain.c.ll
@@ -10,7 +10,6 @@
 ; openjdk/optimized/mlib_ImageConvKernelConvert.ll
 ; openjdk/optimized/mlib_ImageConvMxN_ext.ll
 ; openusd/optimized/patchBasis.cpp.ll
-; rocksdb/optimized/ribbon_config.cc.ll
 ; spike/optimized/vector_unit.ll
 ; wireshark/optimized/packet-oran.c.ll
 ; Function Attrs: nounwind

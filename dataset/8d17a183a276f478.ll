@@ -1,5 +1,6 @@
 
-; 25 occurrences:
+; 26 occurrences:
+; boost/optimized/alloc_lib.ll
 ; folly/optimized/EventBaseLocal.cpp.ll
 ; folly/optimized/FunctionScheduler.cpp.ll
 ; folly/optimized/Request.cpp.ll

@@ -1,14 +1,25 @@
 
-; 2 occurrences:
-; abc/optimized/acecCl.c.ll
+; 1 occurrences:
 ; php/optimized/pcre2_compile.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000001b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = getelementptr nusw i8, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 1
+  ret ptr %6
+}
+
+; 1 occurrences:
+; darktable/optimized/introspection_demosaic.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003a(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = or disjoint i64 %1, %3
+  %5 = getelementptr nusw float, ptr %0, i64 %4
+  %6 = getelementptr nusw i8, ptr %5, i64 -8
   ret ptr %6
 }
 
@@ -20,12 +31,12 @@ entry:
 ; redis/optimized/ckh.ll
 ; redis/optimized/ckh.sym.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000003b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = getelementptr nusw float, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 -8
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 8
   ret ptr %6
 }
 
@@ -35,7 +46,7 @@ entry:
 define ptr @func0000000000000038(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = getelementptr nusw float, ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 4
   ret ptr %6

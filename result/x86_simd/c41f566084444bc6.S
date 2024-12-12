@@ -1,4 +1,4 @@
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vextracti128	$1, %ymm2, %xmm3
 	vpextrq	$1, %xmm3, %rax
 	movabsq	$-4835703278458516699, %rcx     # imm = 0xBCE4217D2849CB25
@@ -39,7 +39,7 @@ func0000000000000016:                   # @func0000000000000016
 	retq
 .LCPI1_0:
 	.quad	3689348814741910323             # 0x3333333333333333
-func0000000000000074:                   # @func0000000000000074
+func00000000000000e4:                   # @func00000000000000e4
 	vpsraq	$3, %ymm2, %ymm2
 	vpmullq	.LCPI1_0(%rip){1to4}, %ymm2, %ymm2
 	vpaddq	%ymm1, %ymm2, %ymm1
@@ -49,7 +49,7 @@ func0000000000000074:                   # @func0000000000000074
 	retq
 .LCPI2_0:
 	.quad	6148914691236517205             # 0x5555555555555555
-func0000000000000076:                   # @func0000000000000076
+func00000000000000e6:                   # @func00000000000000e6
 	vpsraq	$3, %ymm2, %ymm2
 	vpmullq	.LCPI2_0(%rip){1to4}, %ymm2, %ymm2
 	vpaddq	%ymm1, %ymm2, %ymm1
@@ -59,7 +59,7 @@ func0000000000000076:                   # @func0000000000000076
 	retq
 .LCPI3_0:
 	.quad	6148914691236517205             # 0x5555555555555555
-func000000000000007a:                   # @func000000000000007a
+func00000000000000ea:                   # @func00000000000000ea
 	vpsraq	$3, %ymm2, %ymm2
 	vpmullq	.LCPI3_0(%rip){1to4}, %ymm2, %ymm2
 	vpaddq	%ymm1, %ymm2, %ymm1
@@ -69,7 +69,7 @@ func000000000000007a:                   # @func000000000000007a
 	retq
 .LCPI4_0:
 	.quad	6148914691236517205             # 0x5555555555555555
-func0000000000000066:                   # @func0000000000000066
+func00000000000000c6:                   # @func00000000000000c6
 	vpsraq	$3, %ymm2, %ymm2
 	vpmullq	.LCPI4_0(%rip){1to4}, %ymm2, %ymm2
 	vpaddq	%ymm1, %ymm2, %ymm1
@@ -79,7 +79,7 @@ func0000000000000066:                   # @func0000000000000066
 	retq
 .LCPI5_0:
 	.quad	6148914691236517205             # 0x5555555555555555
-func000000000000006a:                   # @func000000000000006a
+func00000000000000ca:                   # @func00000000000000ca
 	vpsraq	$3, %ymm2, %ymm2
 	vpmullq	.LCPI5_0(%rip){1to4}, %ymm2, %ymm2
 	vpaddq	%ymm1, %ymm2, %ymm1

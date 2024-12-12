@@ -1,6 +1,7 @@
 
-; 1 occurrences:
+; 2 occurrences:
 ; assimp/optimized/IFCOpenings.cpp.ll
+; opencv/optimized/trackerKCF.cpp.ll
 ; Function Attrs: nounwind
 define double @func0000000000000002(double %0, double %1) #0 {
 entry:

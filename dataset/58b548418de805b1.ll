@@ -1,6 +1,5 @@
 
-; 43 occurrences:
-; eastl/optimized/EAScanfCore.cpp.ll
+; 50 occurrences:
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; glslang/optimized/SPVRemapper.cpp.ll
 ; hwloc/optimized/topology-x86.ll
@@ -10,20 +9,28 @@
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/AsmPrinter.cpp.ll
 ; llvm/optimized/AttributorAttributes.cpp.ll
+; llvm/optimized/CGCUDANV.cpp.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; llvm/optimized/CaptureTracking.cpp.ll
+; llvm/optimized/CoroSplit.cpp.ll
 ; llvm/optimized/Debugify.cpp.ll
 ; llvm/optimized/Decl.cpp.ll
 ; llvm/optimized/ELFObjectFile.cpp.ll
+; llvm/optimized/ExpandVariadics.cpp.ll
 ; llvm/optimized/ExprClassification.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
+; llvm/optimized/FunctionImport.cpp.ll
 ; llvm/optimized/GlobalOpt.cpp.ll
 ; llvm/optimized/HWAddressSanitizer.cpp.ll
+; llvm/optimized/IRMover.cpp.ll
+; llvm/optimized/InstrProfiling.cpp.ll
 ; llvm/optimized/Instructions.cpp.ll
 ; llvm/optimized/LLVMTargetMachine.cpp.ll
+; llvm/optimized/LowerEmuTLS.cpp.ll
 ; llvm/optimized/MemorySanitizer.cpp.ll
 ; llvm/optimized/ModuleSymbolTable.cpp.ll
 ; llvm/optimized/ParseDeclCXX.cpp.ll
+; llvm/optimized/PreISelIntrinsicLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaObjC.cpp.ll
@@ -44,7 +51,7 @@
 ; ruby/optimized/ripper.ll
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0) #0 {
+define i32 @func0000000000000024(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 95
   %2 = add nsw i32 %1, -91
@@ -56,7 +63,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/tcg.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0) #0 {
+define i32 @func0000000000000028(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 2032
   %2 = add nsw i32 %1, -176
@@ -70,7 +77,7 @@ entry:
 ; qemu/optimized/tcg.c.ll
 ; wireshark/optimized/packet-tetra.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0) #0 {
+define i32 @func0000000000000061(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 255
   %2 = icmp eq i32 %1, 2

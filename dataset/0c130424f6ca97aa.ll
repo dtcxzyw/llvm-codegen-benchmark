@@ -98,7 +98,6 @@
 ; postgres/optimized/varlena.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; qemu/optimized/accel_tcg_tcg-runtime-gvec.c.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; ruby/optimized/gc.ll
 ; spike/optimized/kdmabb16.ll
@@ -183,6 +182,7 @@
 ; wireshark/optimized/packet-thrift.c.ll
 ; wireshark/optimized/packet-umts_rlc.c.ll
 ; yalantinglibs/optimized/basic_usage.cpp.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i64 %0) #0 {
 entry:
@@ -192,7 +192,7 @@ entry:
   ret i32 %3
 }
 
-; 23 occurrences:
+; 24 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/acecFadds.c.ll
 ; abc/optimized/acecRe.c.ll
@@ -214,6 +214,7 @@ entry:
 ; arrow/optimized/metadata_internal.cc.ll
 ; duckdb/optimized/ub_duckdb_main_capi.cpp.ll
 ; linux/optimized/sys_x86_64.ll
+; lvgl/optimized/lv_freetype.ll
 ; qemu/optimized/disas_riscv.c.ll
 ; zxing/optimized/ODDXFilmEdgeReader.cpp.ll
 ; Function Attrs: nounwind

@@ -1,32 +1,24 @@
-func0000000000000028:                   // @func0000000000000028
+func0000000000000048:                   // @func0000000000000048
 // %bb.0:                               // %entry
-	uzp1	v2.4s, v2.4s, v3.4s
-	cmhi	v3.4s, v1.4s, v2.4s
-	sub	v1.4s, v1.4s, v2.4s
-	bit	v0.16b, v1.16b, v3.16b
+	subs	w8, w1, w2
+	csel	w0, w8, w0, hi
 	ret
                                         // -- End function
-func0000000000000088:                   // @func0000000000000088
+func0000000000000108:                   // @func0000000000000108
 // %bb.0:                               // %entry
-	uzp1	v2.4s, v2.4s, v3.4s
-	cmhi	v3.4s, v1.4s, v2.4s
-	sub	v1.4s, v1.4s, v2.4s
-	bit	v0.16b, v1.16b, v3.16b
+	subs	w8, w1, w2
+	csel	w0, w8, w0, hi
 	ret
                                         // -- End function
-func00000000000000b8:                   // @func00000000000000b8
+func0000000000000168:                   // @func0000000000000168
 // %bb.0:                               // %entry
-	uzp1	v2.4s, v2.4s, v3.4s
-	cmhi	v3.4s, v1.4s, v2.4s
-	sub	v1.4s, v1.4s, v2.4s
-	bit	v0.16b, v1.16b, v3.16b
+	subs	w8, w1, w2
+	csel	w0, w8, w0, hi
 	ret
                                         // -- End function
-func0000000000000038:                   // @func0000000000000038
+func0000000000000068:                   // @func0000000000000068
 // %bb.0:                               // %entry
-	uzp1	v2.4s, v2.4s, v3.4s
-	cmhi	v3.4s, v1.4s, v2.4s
-	sub	v1.4s, v1.4s, v2.4s
-	bit	v0.16b, v1.16b, v3.16b
+	subs	w8, w1, w2
+	csel	w0, w8, w0, hi
 	ret
                                         // -- End function

@@ -33,3 +33,11 @@ func0000000000000014:                   # @func0000000000000014
 	vpsrlw	$15, %xmm0, %xmm0
 	vzeroupper
 	retq
+.LCPI5_0:
+	.long	256                             # 0x100
+func0000000000000028:                   # @func0000000000000028
+	vpcmpltud	.LCPI5_0(%rip){1to8}, %ymm0, %k0
+	vpmovm2w	%k0, %xmm0
+	vpsrlw	$15, %xmm0, %xmm0
+	vzeroupper
+	retq

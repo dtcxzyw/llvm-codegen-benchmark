@@ -1,5 +1,7 @@
 
-; 8 occurrences:
+; 10 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
@@ -120,9 +122,8 @@ entry:
   ret ptr %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; llvm/optimized/APValue.cpp.ll
-; protobuf/optimized/message_lite.cc.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000008(ptr %0, ptr %1, i64 %2) #0 {
 entry:

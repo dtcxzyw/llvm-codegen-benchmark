@@ -1,4 +1,4 @@
-func0000000000001042:                   # @func0000000000001042
+func0000000000004082:                   # @func0000000000004082
 	cmpb	$-12, %dl
 	setb	%cl
 	cmpl	$-32768, %esi                   # imm = 0x8000
@@ -8,7 +8,7 @@ func0000000000001042:                   # @func0000000000001042
 	orb	%dl, %al
 	orb	%cl, %al
 	retq
-func0000000000000442:                   # @func0000000000000442
+func0000000000001082:                   # @func0000000000001082
 	negl	%edx
 	seto	%al
 	negb	%sil
@@ -18,17 +18,17 @@ func0000000000000442:                   # @func0000000000000442
 	seto	%al
 	orb	%cl, %al
 	retq
-func0000000000001102:                   # @func0000000000001102
-	cmpl	$5, %edx
-	setb	%al
-	cmpb	$2, %sil
+func0000000000004088:                   # @func0000000000004088
+	cmpb	$10, %dl
 	setb	%cl
-	orb	%al, %cl
-	cmpb	$4, %dil
-	sete	%al
+	cmpl	$95, %esi
+	sete	%dl
+	cmpb	$26, %dil
+	setb	%al
 	orb	%cl, %al
+	orb	%dl, %al
 	retq
-func0000000000000514:                   # @func0000000000000514
+func0000000000001214:                   # @func0000000000001214
 	cmpl	$128, %edx
 	sete	%al
 	cmpb	$4, %sil

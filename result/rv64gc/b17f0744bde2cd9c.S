@@ -16,7 +16,7 @@ func0000000000000007:                   # @func0000000000000007
 	lui	a0, 262144
 	fmv.w.x	fa1, a0
 .LBB1_2:                                # %entry
-	fmul.s	fa0, fa1, fa0
+	fmul.s	fa0, fa0, fa1
 	ret
 func0000000000000002:                   # @func0000000000000002
 	fmv.w.x	fa5, zero
@@ -34,25 +34,25 @@ func000000000000000c:                   # @func000000000000000c
 .LBB3_2:                                # %entry
 	fmul.s	fa0, fa1, fa0
 	ret
+.LCPI4_0:
+	.word	0xc15d0c55                      # float -13.8155107
+func0000000000000005:                   # @func0000000000000005
+	fmv.w.x	fa5, zero
+	fle.s	a0, fa2, fa5
+	beqz	a0, .LBB4_2
+	lui	a0, %hi(.LCPI4_0)
+	flw	fa1, %lo(.LCPI4_0)(a0)
+.LBB4_2:                                # %entry
+	fmul.s	fa0, fa1, fa0
+	ret
 func0000000000000006:                   # @func0000000000000006
 	lui	a0, 522240
 	fmv.w.x	fa5, a0
 	flt.s	a0, fa2, fa5
-	bnez	a0, .LBB4_2
+	bnez	a0, .LBB5_2
 	fmv.w.x	fa1, zero
-.LBB4_2:                                # %entry
-	fmul.s	fa0, fa1, fa0
-	ret
-.LCPI5_0:
-	.word	0xba83126f                      # float -0.00100000005
-func0000000000000005:                   # @func0000000000000005
-	fmv.w.x	fa5, zero
-	fle.s	a0, fa2, fa5
-	beqz	a0, .LBB5_2
-	lui	a0, %hi(.LCPI5_0)
-	flw	fa1, %lo(.LCPI5_0)(a0)
 .LBB5_2:                                # %entry
-	fmul.s	fa0, fa1, fa0
+	fmul.s	fa0, fa0, fa1
 	ret
 func0000000000000008:                   # @func0000000000000008
 	lui	a0, 260096
@@ -61,5 +61,5 @@ func0000000000000008:                   # @func0000000000000008
 	bnez	a0, .LBB6_2
 	fmv.s	fa1, fa5
 .LBB6_2:                                # %entry
-	fmul.s	fa0, fa1, fa0
+	fmul.s	fa0, fa0, fa1
 	ret

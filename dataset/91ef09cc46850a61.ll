@@ -1,5 +1,8 @@
 
-; 7 occurrences:
+; 11 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; cvc5/optimized/subs_minimize.cpp.ll
 ; grpc/optimized/xds_resolver.cc.ll
 ; llvm/optimized/DependenceGraphBuilder.cpp.ll
@@ -7,10 +10,11 @@
 ; mitsuba3/optimized/argparser.cpp.ll
 ; rust-analyzer-rs/optimized/3o06gi7obg71ydg1.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000186(i8 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 8
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 8
   %4 = icmp eq ptr %3, %1
   %5 = trunc nuw i8 %0 to i1
   %6 = select i1 %5, i1 true, i1 %4
@@ -44,9 +48,9 @@ entry:
 ; z3/optimized/sat_anf_simplifier.cpp.ll
 ; z3/optimized/sat_simplifier.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i8 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000184(i8 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 8
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 8
   %4 = icmp eq ptr %3, %1
   %5 = trunc i8 %0 to i1
   %6 = select i1 %5, i1 true, i1 %4

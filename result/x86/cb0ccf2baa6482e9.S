@@ -13,3 +13,8 @@ func0000000000000008:                   # @func0000000000000008
 	setae	%al
 	andb	%dil, %al
 	retq
+func000000000000000a:                   # @func000000000000000a
+	testq	%rsi, %rsi
+	setg	%al
+	andb	%dil, %al
+	retq

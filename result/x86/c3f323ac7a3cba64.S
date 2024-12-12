@@ -4,7 +4,7 @@
 	.long	0x42b0c0a5                      # float 88.3762589
 func0000000000000004:                   # @func0000000000000004
 	vaddss	.LCPI0_0(%rip), %xmm1, %xmm1
-	vaddss	%xmm0, %xmm1, %xmm0
+	vaddss	%xmm1, %xmm0, %xmm0
 	vucomiss	.LCPI0_1(%rip), %xmm0
 	seta	%al
 	retq
@@ -14,7 +14,7 @@ func0000000000000004:                   # @func0000000000000004
 	.long	0xc2b0c0a5                      # float -88.3762589
 func0000000000000002:                   # @func0000000000000002
 	vaddss	.LCPI1_0(%rip), %xmm1, %xmm1
-	vaddss	%xmm0, %xmm1, %xmm0
+	vaddss	%xmm1, %xmm0, %xmm0
 	vmovss	.LCPI1_1(%rip), %xmm1           # xmm1 = [-8.83762589E+1,0.0E+0,0.0E+0,0.0E+0]
 	vucomiss	%xmm0, %xmm1
 	seta	%al

@@ -1,4 +1,4 @@
-func0000000000000006:                   // @func0000000000000006
+func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
                                         // kill: def $w2 killed $w2 def $x2
 	mov	w8, #15                         // =0xf
@@ -9,7 +9,7 @@ func0000000000000006:                   // @func0000000000000006
 	umaddl	x0, w8, w9, x0
 	ret
                                         // -- End function
-func0000000000000002:                   // @func0000000000000002
+func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
                                         // kill: def $w2 killed $w2 def $x2
 	and	x9, x2, #0xff

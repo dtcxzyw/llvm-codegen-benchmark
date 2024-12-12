@@ -32,10 +32,10 @@
 ; openusd/optimized/regularPatchBuilder.cpp.ll
 ; qemu/optimized/target_riscv_translate.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 7
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = and i32 %1, 448
   %6 = or disjoint i32 %4, %5
   %7 = icmp eq i32 %6, 73
@@ -46,11 +46,11 @@ entry:
 ; icu/optimized/utf_impl.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000078(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, 448
-  %4 = or i32 %3, %0
-  %5 = icmp ugt i32 %4, 7
+  %4 = or i32 %0, %3
+  %5 = icmp samesign ugt i32 %4, 7
   ret i1 %5
 }
 
@@ -59,10 +59,10 @@ entry:
 ; llvm/optimized/MallocChecker.cpp.ll
 ; llvm/optimized/RetainCountDiagnostics.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000006c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 3
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = and i32 %1, 48
   %6 = or disjoint i32 %4, %5
   %7 = icmp ne i32 %6, 10
@@ -85,13 +85,13 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/utf_impl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000074(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 4032
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = and i32 %1, 48
   %6 = or i32 %4, %5
-  %7 = icmp ult i32 %6, 65008
+  %7 = icmp samesign ult i32 %6, 65008
   ret i1 %7
 }
 

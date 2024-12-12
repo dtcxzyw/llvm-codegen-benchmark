@@ -28,3 +28,15 @@ func0000000000000006:                   # @func0000000000000006
 	sets	%al
 	andb	%dil, %al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	movzwl	%si, %eax
+	cmpl	$56320, %eax                    # imm = 0xDC00
+	setb	%al
+	andb	%dil, %al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	movzwl	%si, %eax
+	cmpl	$256, %eax                      # imm = 0x100
+	setae	%al
+	andb	%dil, %al
+	retq

@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 22 occurrences:
 ; hdf5/optimized/H5Cimage.c.ll
 ; meilisearch-rs/optimized/55beptyn1v6yeqaz.ll
 ; ockam-rs/optimized/16eth4dr0rzwo5zh.ll
@@ -21,8 +21,9 @@
 ; ruby/optimized/bignum.ll
 ; stat-rs/optimized/2ao4u4y4ndqxwz8u.ll
 ; tokenizers-rs/optimized/5e69nv5s2wu1vtyr.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000181(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = sub i64 %0, %1
@@ -30,8 +31,11 @@ entry:
   ret i1 %5
 }
 
-; 48 occurrences:
+; 51 occurrences:
 ; assimp/optimized/BaseImporter.cpp.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; clamav/optimized/pdfng.c.ll
 ; clamav/optimized/stats_json.c.ll
 ; clamav/optimized/unpack.cpp.ll
@@ -93,7 +97,7 @@ entry:
 ; mitsuba3/optimized/constpool.cpp.ll
 ; postgres/optimized/aset.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 24
   %4 = sub i64 %0, %1
@@ -101,9 +105,8 @@ entry:
   ret i1 %5
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; folly/optimized/EventBaseBackendBase.cpp.ll
-; harfbuzz/optimized/hb-subset.cc.ll
 ; lief/optimized/ssl_tls12_server.c.ll
 ; linux/optimized/lzo1x_decompress_safe.ll
 ; llvm/optimized/HeaderMap.cpp.ll
@@ -114,7 +117,7 @@ entry:
 ; postgres/optimized/generation.ll
 ; rust-analyzer-rs/optimized/3v26vzwqvuu0pyc9.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000184(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 32
   %4 = sub i64 %0, %1
@@ -143,12 +146,13 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; openssl/optimized/libcrypto-lib-cms_pwri.ll
 ; openssl/optimized/libcrypto-shlib-cms_pwri.ll
 ; ring-rs/optimized/2r3wc2wo4j1ozk7e.ll
+; zed-rs/optimized/e41v0ag91t21no9hshe9jx8u4.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 4
   %4 = sub nuw i64 %0, %1
@@ -165,7 +169,7 @@ entry:
 ; rustfmt-rs/optimized/3xcdaapyewyrfogi.ll
 ; rustfmt-rs/optimized/5genfix4t5066ss.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 2
   %4 = sub nuw i64 %0, %1
@@ -173,7 +177,8 @@ entry:
   ret i1 %5
 }
 
-; 31 occurrences:
+; 32 occurrences:
+; boost/optimized/static_string.ll
 ; cmake/optimized/archive_entry.c.ll
 ; grpc/optimized/ssl_transport_security.cc.ll
 ; hyperscan/optimized/noodle_engine.c.ll
@@ -214,7 +219,9 @@ entry:
   ret i1 %5
 }
 
-; 17 occurrences:
+; 19 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; cmake/optimized/huf_compress.c.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
@@ -233,7 +240,7 @@ entry:
 ; velox/optimized/URLFunctions.cpp.ll
 ; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 1
   %4 = sub i64 %0, %1
@@ -241,7 +248,9 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
+; 8 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
@@ -249,7 +258,7 @@ entry:
 ; spike/optimized/socketif.ll
 ; velox/optimized/URLFunctions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000047(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000087(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 10
   %4 = sub i64 %0, %1
@@ -260,7 +269,7 @@ entry:
 ; 1 occurrences:
 ; folly/optimized/TimeUtil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002b(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -1000000
   %4 = sub nsw i64 %0, %1
@@ -299,7 +308,7 @@ entry:
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
 ; wasmtime-rs/optimized/jcy3ulzaiykp2rl.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001e1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = sub nuw nsw i64 %0, %1
@@ -307,7 +316,7 @@ entry:
   ret i1 %5
 }
 
-; 25 occurrences:
+; 26 occurrences:
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; influxdb-rs/optimized/4xdswox27ronf9w0.ll
@@ -333,8 +342,9 @@ entry:
 ; wasmtime-rs/optimized/3wy7qx4e8fg0rwt0.ll
 ; wasmtime-rs/optimized/48myxw210mngc99c.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = sub nuw nsw i64 %0, %1
@@ -381,7 +391,7 @@ entry:
 ; openjdk/optimized/type.ll
 ; redis/optimized/networking.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000108(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 6
   %4 = sub i64 %0, %1
@@ -392,7 +402,7 @@ entry:
 ; 1 occurrences:
 ; jsonnet/optimized/rapidyaml.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000101(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
   %4 = sub i64 %0, %1
@@ -403,7 +413,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/pcre2_jit_compile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 4
   %4 = sub i64 %0, %1
@@ -416,7 +426,7 @@ entry:
 ; redis/optimized/cluster_legacy.ll
 ; velox/optimized/tz.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 86400
   %4 = sub nsw i64 %0, %1
@@ -430,7 +440,7 @@ entry:
 ; velox/optimized/DenseHll.cpp.ll
 ; yosys/optimized/simplify.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000188(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = sub i64 %0, %1
@@ -449,7 +459,7 @@ entry:
 ; yosys/optimized/smv.ll
 ; yosys/optimized/wreduce.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -2
   %4 = sub i64 %0, %1
@@ -465,7 +475,7 @@ entry:
 ; openspiel/optimized/dou_dizhu.cc.ll
 ; openspiel/optimized/spades.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001a8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = sub nsw i64 %0, %1
@@ -476,7 +486,7 @@ entry:
 ; 1 occurrences:
 ; lief/optimized/ssl_tls12_server.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 3
   %4 = sub nsw i64 %0, %1
@@ -490,7 +500,7 @@ entry:
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000da(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001aa(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = sub nsw i64 %0, %1
@@ -513,7 +523,7 @@ entry:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; llvm/optimized/HeaderMap.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c9(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000189(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 24
   %4 = sub i64 %0, %1
@@ -524,7 +534,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SwitchLoweringUtils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005b(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000ab(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = sub nsw i64 %0, %1
@@ -535,7 +545,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/pcm_lib.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000010a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
   %4 = sub i64 %0, %1
@@ -546,7 +556,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/lzo1x_decompress_safe.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000089(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000109(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 15
   %4 = sub i64 %0, %1
@@ -560,7 +570,7 @@ entry:
 ; linux/optimized/decompress_unlzo.ll
 ; linux/optimized/mlme.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000186(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 4
   %4 = sub i64 %0, %1
@@ -572,7 +582,7 @@ entry:
 ; cmake/optimized/json_reader.cpp.ll
 ; ozz-animation/optimized/jsoncpp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = sub nuw i64 %0, %1
@@ -595,7 +605,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/uloc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000018a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = sub i64 %0, %1
@@ -617,18 +627,40 @@ entry:
 ; 1 occurrences:
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f9(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001f9(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 40
   %4 = sub nuw nsw i64 %0, %1
-  %5 = icmp uge i64 %4, %3
+  %5 = icmp samesign uge i64 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; harfbuzz/optimized/hb-subset.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000199(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %2, 10
+  %4 = sub i64 %0, %1
+  %5 = icmp samesign uge i64 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; harfbuzz/optimized/hb-subset.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000194(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %2, 4
+  %4 = sub i64 %0, %1
+  %5 = icmp samesign ult i64 %4, %3
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; cpython/optimized/floatobject.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000086(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -53
   %4 = sub i64 %0, %1

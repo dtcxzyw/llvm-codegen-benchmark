@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	addw	a0, a0, a1
 	lui	a1, 262144
 	addi	a2, a0, 2
@@ -22,7 +22,7 @@ func0000000000000008:                   # @func0000000000000008
 	sltu	a1, a1, a0
 	czero.nez	a0, a0, a1
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	addw	a0, a0, a1
 	li	a1, 101
 	slti	a2, a0, 24
@@ -30,20 +30,20 @@ func000000000000001a:                   # @func000000000000001a
 	czero.nez	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func000000000000000a:                   # @func000000000000000a
-	addw	a0, a0, a1
-	slti	a1, a0, 128
-	addi	a1, a1, -1
-	or	a0, a0, a1
-	ret
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	addw	a0, a0, a1
 	lui	a1, 244141
 	addiw	a1, a1, -1536
 	xor	a1, a1, a0
 	czero.eqz	a0, a0, a1
 	ret
-func0000000000000018:                   # @func0000000000000018
+func000000000000000a:                   # @func000000000000000a
+	addw	a0, a0, a1
+	slti	a1, a0, 128
+	addi	a1, a1, -1
+	or	a0, a0, a1
+	ret
+func0000000000000038:                   # @func0000000000000038
 	addw	a0, a0, a1
 	li	a1, 1
 	sltiu	a2, a0, 8
@@ -51,7 +51,7 @@ func0000000000000018:                   # @func0000000000000018
 	czero.nez	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	addw	a0, a0, a1
 	lui	a1, 524288
 	slti	a2, a0, 1

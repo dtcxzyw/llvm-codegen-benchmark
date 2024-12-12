@@ -33,6 +33,13 @@ func0000000000000011:                   # @func0000000000000011
 	andl	$1048575, %edi                  # imm = 0xFFFFF
 	orl	%edi, %eax
 	retq
+func000000000000000c:                   # @func000000000000000c
+	xorl	%eax, %eax
+	testl	%edx, %edx
+	cmovnsl	%edi, %eax
+	andl	$65536, %esi                    # imm = 0x10000
+	orl	%esi, %eax
+	retq
 func0000000000000015:                   # @func0000000000000015
 	cmpl	$32128, %edx                    # imm = 0x7D80
 	movl	$528482304, %eax                # imm = 0x1F800000

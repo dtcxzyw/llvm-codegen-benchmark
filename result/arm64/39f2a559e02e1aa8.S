@@ -16,7 +16,13 @@ func0000000000000006:                   // @func0000000000000006
 	madd	x0, x1, x8, x0
 	ret
                                         // -- End function
-func000000000000000e:                   // @func000000000000000e
+func0000000000000007:                   // @func0000000000000007
+// %bb.0:                               // %entry
+	mov	w8, #24                         // =0x18
+	madd	x0, x1, x8, x0
+	ret
+                                        // -- End function
+func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
 	mov	w8, #20                         // =0x14
 	madd	x0, x1, x8, x0

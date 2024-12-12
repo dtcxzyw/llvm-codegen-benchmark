@@ -24,6 +24,18 @@ entry:
   ret i32 %5
 }
 
+; 1 occurrences:
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i32 @func000000000000005d(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 22
+  %3 = shl i32 %0, 10
+  %4 = add i32 %2, %3
+  %5 = add nsw i32 %4, -56613888
+  ret i32 %5
+}
+
 ; 2 occurrences:
 ; hermes/optimized/RegexParser.cpp.ll
 ; protobuf/optimized/tokenizer.cc.ll

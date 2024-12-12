@@ -1,132 +1,81 @@
 func0000000000000055:                   // @func0000000000000055
 // %bb.0:                               // %entry
-	add	v0.2d, v0.2d, v2.2d
-	add	v1.2d, v1.2d, v3.2d
-	mov	x8, #-2                         // =0xfffffffffffffffe
-	dup	v2.2d, x8
-	ssra	v1.2d, v5.2d, #4
-	ssra	v0.2d, v4.2d, #4
-	add	v0.2d, v0.2d, v2.2d
-	add	v1.2d, v1.2d, v2.2d
+	add	x8, x0, x1
+	add	x8, x8, x2, asr #4
+	sub	x0, x8, #2
 	ret
                                         // -- End function
 func0000000000000015:                   // @func0000000000000015
 // %bb.0:                               // %entry
-	add	v0.2d, v0.2d, v2.2d
-	add	v1.2d, v1.2d, v3.2d
-	mov	w8, #1048576                    // =0x100000
-	dup	v2.2d, x8
-	ssra	v1.2d, v5.2d, #21
-	ssra	v0.2d, v4.2d, #21
-	add	v0.2d, v0.2d, v2.2d
-	add	v1.2d, v1.2d, v2.2d
+	add	x8, x0, x1
+	add	x8, x8, x2, asr #21
+	add	x0, x8, #256, lsl #12           // =1048576
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	add	v0.2d, v0.2d, v2.2d
-	add	v1.2d, v1.2d, v3.2d
-	mov	w8, #1048576                    // =0x100000
-	dup	v2.2d, x8
-	ssra	v1.2d, v5.2d, #21
-	ssra	v0.2d, v4.2d, #21
-	add	v0.2d, v0.2d, v2.2d
-	add	v1.2d, v1.2d, v2.2d
+	add	x8, x0, x1
+	add	x8, x8, x2, asr #21
+	add	x0, x8, #256, lsl #12           // =1048576
 	ret
                                         // -- End function
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	add	v0.2d, v0.2d, v2.2d
-	add	v1.2d, v1.2d, v3.2d
-	mov	w8, #10239                      // =0x27ff
-	movk	w8, #61035, lsl #16
-	dup	v2.2d, x8
-	ssra	v1.2d, v5.2d, #63
-	ssra	v0.2d, v4.2d, #63
-	add	v0.2d, v0.2d, v2.2d
-	add	v1.2d, v1.2d, v2.2d
+	add	x8, x0, x1
+	mov	w9, #10239                      // =0x27ff
+	add	x8, x8, x2, asr #63
+	movk	w9, #61035, lsl #16
+	add	x0, x8, x9
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	add	v0.2d, v0.2d, v2.2d
-	add	v1.2d, v1.2d, v3.2d
-	mov	w8, #1048576                    // =0x100000
-	dup	v2.2d, x8
-	ssra	v1.2d, v5.2d, #21
-	ssra	v0.2d, v4.2d, #21
-	add	v0.2d, v0.2d, v2.2d
-	add	v1.2d, v1.2d, v2.2d
+	add	x8, x0, x1
+	add	x8, x8, x2, asr #21
+	add	x0, x8, #256, lsl #12           // =1048576
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	add	v0.2d, v0.2d, v2.2d
-	add	v1.2d, v1.2d, v3.2d
-	mov	w8, #1                          // =0x1
-	dup	v2.2d, x8
-	ssra	v1.2d, v5.2d, #63
-	ssra	v0.2d, v4.2d, #63
-	add	v0.2d, v0.2d, v2.2d
-	add	v1.2d, v1.2d, v2.2d
+	add	x8, x0, x1
+	add	x8, x8, x2, asr #63
+	add	x0, x8, #1
 	ret
                                         // -- End function
 func0000000000000025:                   // @func0000000000000025
 // %bb.0:                               // %entry
-	add	v2.2d, v2.2d, v4.2d
-	add	v3.2d, v3.2d, v5.2d
-	mov	w8, #32                         // =0x20
-	ssra	v3.2d, v1.2d, #1
-	ssra	v2.2d, v0.2d, #1
-	dup	v1.2d, x8
-	add	v0.2d, v2.2d, v1.2d
-	add	v1.2d, v3.2d, v1.2d
+	add	x8, x1, x2
+	add	x8, x8, x0, asr #1
+	add	x0, x8, #32
 	ret
                                         // -- End function
 func0000000000000035:                   // @func0000000000000035
 // %bb.0:                               // %entry
-	add	v2.2d, v2.2d, v4.2d
-	add	v3.2d, v3.2d, v5.2d
-	mov	w8, #16777216                   // =0x1000000
-	ssra	v3.2d, v1.2d, #3
-	ssra	v2.2d, v0.2d, #3
-	dup	v1.2d, x8
-	add	v0.2d, v2.2d, v1.2d
-	add	v1.2d, v3.2d, v1.2d
+	add	x8, x1, x2
+	mov	w9, #16777216                   // =0x1000000
+	add	x8, x8, x0, asr #3
+	add	x0, x8, x9
 	ret
                                         // -- End function
 func0000000000000045:                   // @func0000000000000045
 // %bb.0:                               // %entry
-	add	v0.2d, v0.2d, v2.2d
-	add	v1.2d, v1.2d, v3.2d
-	mov	w8, #16777216                   // =0x1000000
-	dup	v2.2d, x8
-	ssra	v1.2d, v5.2d, #2
-	ssra	v0.2d, v4.2d, #2
-	add	v0.2d, v0.2d, v2.2d
-	add	v1.2d, v1.2d, v2.2d
+	add	x8, x0, x1
+	mov	w9, #16777216                   // =0x1000000
+	add	x8, x8, x2, asr #2
+	add	x0, x8, x9
 	ret
                                         // -- End function
 func0000000000000040:                   // @func0000000000000040
 // %bb.0:                               // %entry
-	add	v0.2d, v0.2d, v2.2d
-	add	v1.2d, v1.2d, v3.2d
-	movi	v2.2d, #0xffffffffffffffff
-	ssra	v1.2d, v5.2d, #2
-	ssra	v0.2d, v4.2d, #2
-	add	v0.2d, v0.2d, v2.2d
-	add	v1.2d, v1.2d, v2.2d
+	add	x8, x0, x1
+	add	x8, x8, x2, asr #2
+	sub	x0, x8, #1
 	ret
                                         // -- End function
 func0000000000000041:                   // @func0000000000000041
 // %bb.0:                               // %entry
-	add	v0.2d, v0.2d, v2.2d
-	add	v1.2d, v1.2d, v3.2d
-	mov	x8, #-2                         // =0xfffffffffffffffe
-	dup	v2.2d, x8
-	ssra	v1.2d, v5.2d, #3
-	ssra	v0.2d, v4.2d, #3
-	add	v0.2d, v0.2d, v2.2d
-	add	v1.2d, v1.2d, v2.2d
+	add	x8, x0, x1
+	add	x8, x8, x2, asr #3
+	sub	x0, x8, #2
 	ret
                                         // -- End function

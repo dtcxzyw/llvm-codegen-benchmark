@@ -37,15 +37,25 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; linux/optimized/open.ll
 ; linux/optimized/utimes.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = xor i32 %2, 1
+  %4 = icmp samesign ult i32 %1, 4096
+  %5 = select i1 %4, i32 %3, i32 %0
+  ret i32 %5
+}
+
+; 1 occurrences:
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = xor i32 %2, 1
-  %4 = icmp ult i32 %1, 4096
+  %3 = xor i32 %2, 32
+  %4 = icmp ult i32 %1, 26
   %5 = select i1 %4, i32 %3, i32 %0
   ret i32 %5
 }

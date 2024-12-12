@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 27 occurrences:
 ; assimp/optimized/HMPLoader.cpp.ll
 ; bullet3/optimized/btMLCPSolver.ll
 ; flac/optimized/stream_encoder.c.ll
@@ -14,7 +14,6 @@
 ; openblas/optimized/dgesvdq.c.ll
 ; openblas/optimized/dlahr2.c.ll
 ; openblas/optimized/dorg2r.c.ll
-; openblas/optimized/dorghr.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; opencv/optimized/sift.dispatch.cpp.ll
@@ -151,13 +150,9 @@ entry:
   ret i32 %4
 }
 
-; 10 occurrences:
+; 6 occurrences:
 ; abc/optimized/ifMan.c.ll
 ; bullet3/optimized/MultiBodyTreeImpl.ll
-; gromacs/optimized/dgetrf.cpp.ll
-; gromacs/optimized/dlatrd.cpp.ll
-; gromacs/optimized/sgetrf.cpp.ll
-; gromacs/optimized/slatrd.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; opencv/optimized/emd.cpp.ll
 ; opencv/optimized/find_ellipses.cpp.ll
@@ -327,22 +322,18 @@ entry:
   ret i32 %4
 }
 
-; 43 occurrences:
+; 37 occurrences:
 ; gromacs/optimized/dgesdd.cpp.ll
 ; gromacs/optimized/dlabrd.cpp.ll
-; gromacs/optimized/dlasd0.cpp.ll
 ; gromacs/optimized/dorglq.cpp.ll
 ; gromacs/optimized/dorgqr.cpp.ll
 ; gromacs/optimized/sgesdd.cpp.ll
 ; gromacs/optimized/slabrd.cpp.ll
-; gromacs/optimized/slasd0.cpp.ll
 ; gromacs/optimized/sorglq.cpp.ll
 ; gromacs/optimized/sorgqr.cpp.ll
 ; openblas/optimized/dgejsv.c.ll
-; openblas/optimized/dgesdd.c.ll
 ; openblas/optimized/dgesvdq.c.ll
 ; openblas/optimized/dgesvj.c.ll
-; openblas/optimized/dgetrf2.c.ll
 ; openblas/optimized/dhgeqz.c.ll
 ; openblas/optimized/dlabrd.c.ll
 ; openblas/optimized/dlaed1.c.ll
@@ -358,9 +349,7 @@ entry:
 ; openblas/optimized/dlasyf_rook.c.ll
 ; openblas/optimized/dlatrd.c.ll
 ; openblas/optimized/dlatrs3.c.ll
-; openblas/optimized/dorcsd.c.ll
 ; openblas/optimized/dorcsd2by1.c.ll
-; openblas/optimized/dorghr.c.ll
 ; openblas/optimized/dsytf2_rk.c.ll
 ; openblas/optimized/dsytrf_aa.c.ll
 ; openblas/optimized/dsytrf_aa_2stage.c.ll

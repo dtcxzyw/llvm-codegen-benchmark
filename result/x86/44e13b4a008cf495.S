@@ -9,7 +9,7 @@ func0000000000000018:                   # @func0000000000000018
 	xorl	%edx, %eax
 	orl	%edi, %eax
 	retq
-func0000000000000010:                   # @func0000000000000010
+func0000000000000030:                   # @func0000000000000030
 	andb	$15, %dl
 	andb	$15, %sil
 	cmpb	%dl, %sil

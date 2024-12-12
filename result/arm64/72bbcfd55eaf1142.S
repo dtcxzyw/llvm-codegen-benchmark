@@ -6,7 +6,7 @@ func000000000000001c:                   // @func000000000000001c
 	madd	x0, x8, x9, x0
 	ret
                                         // -- End function
-func0000000000000016:                   // @func0000000000000016
+func0000000000000017:                   // @func0000000000000017
 // %bb.0:                               // %entry
 	sub	x8, x1, x2
 	mov	w9, #36                         // =0x24
@@ -19,14 +19,6 @@ func0000000000000010:                   // @func0000000000000010
 	sub	x8, x1, x2
 	mov	w9, #36                         // =0x24
 	asr	x8, x8, #4
-	madd	x0, x8, x9, x0
-	ret
-                                        // -- End function
-func0000000000000017:                   // @func0000000000000017
-// %bb.0:                               // %entry
-	sub	x8, x1, x2
-	mov	w9, #24                         // =0x18
-	lsr	x8, x8, #3
 	madd	x0, x8, x9, x0
 	ret
                                         // -- End function

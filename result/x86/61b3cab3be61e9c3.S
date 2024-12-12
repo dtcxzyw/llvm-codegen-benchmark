@@ -12,10 +12,3 @@ func0000000000000006:                   # @func0000000000000006
 	cmovnsq	%rcx, %rax
 	xorq	%rdi, %rax
 	retq
-func0000000000000004:                   # @func0000000000000004
-	cmpl	$18, %esi
-	movabsq	$-5875614291206327203, %rcx     # imm = 0xAE759FEEB770345D
-	movabsq	$-4650441984963589867, %rax     # imm = 0xBF764FA75DAEC915
-	cmovbq	%rcx, %rax
-	xorq	%rdi, %rax
-	retq

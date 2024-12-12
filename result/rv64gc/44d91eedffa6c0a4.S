@@ -29,13 +29,6 @@ func00000000000000ff:                   # @func00000000000000ff
 	add	a0, a0, a1
 	mulw	a0, a0, a2
 	ret
-func00000000000000fd:                   # @func00000000000000fd
-	add	a1, a1, a2
-	li	a2, 85
-	mul	a1, a1, a2
-	add	a0, a0, a1
-	mulw	a0, a0, a2
-	ret
 func00000000000000c1:                   # @func00000000000000c1
 	add	a1, a1, a2
 	lui	a2, 1048573

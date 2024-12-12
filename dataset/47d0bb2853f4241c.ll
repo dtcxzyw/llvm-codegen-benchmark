@@ -1,5 +1,5 @@
 
-; 55 occurrences:
+; 56 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; bullet3/optimized/btPolarDecomposition.ll
 ; gromacs/optimized/gen_vsite.cpp.ll
@@ -18,7 +18,6 @@
 ; meshlab/optimized/glarea.cpp.ll
 ; meshlab/optimized/io_e57.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
 ; meshlab/optimized/orthogonal_procrustes.cpp.ll
 ; meshlab/optimized/shadow_mapping.cpp.ll
@@ -55,6 +54,8 @@
 ; recastnavigation/optimized/Tests_Recast.cpp.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/9fdv7qxvc9ek9liffc7407f9x.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0) #0 {
 entry:

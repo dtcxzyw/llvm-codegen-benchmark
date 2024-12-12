@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; folly/optimized/IOBuf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
   %4 = icmp ult i64 %1, 1025
@@ -13,7 +13,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/log.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 2
   %4 = icmp sgt i64 %1, 1
@@ -26,7 +26,7 @@ entry:
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; libquic/optimized/quic_session.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
   %4 = icmp eq i64 %1, 1152921504606846976
@@ -57,7 +57,7 @@ entry:
 ; llvm/optimized/VectorCombine.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000014a(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
   %4 = icmp sgt i64 %1, 1
@@ -82,7 +82,7 @@ entry:
 ; llvm/optimized/VectorCombine.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000066(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000c6(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 1
   %4 = icmp slt i64 %1, 1
@@ -96,7 +96,7 @@ entry:
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000018a(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp sgt i64 %1, 1
@@ -107,7 +107,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000014c(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
   %4 = icmp ne i64 %1, 1
@@ -118,7 +118,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/collationbuilder.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp ugt i64 %1, 72057594037927935

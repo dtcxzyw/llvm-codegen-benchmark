@@ -4,10 +4,10 @@
 ; ruby/optimized/cstr.ll
 ; ruby/optimized/string.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000061(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw i8, ptr %3, i64 24
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 24
   %5 = icmp eq i64 %1, 0
   %6 = select i1 %5, ptr %4, ptr %0
   ret ptr %6
@@ -19,7 +19,7 @@ entry:
 ; llvm/optimized/RewriteModernObjC.cpp.ll
 ; llvm/optimized/RewriteObjC.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000038(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000068(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr nusw nuw i8, ptr %3, i64 80

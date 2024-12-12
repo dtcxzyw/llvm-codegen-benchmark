@@ -21,8 +21,3 @@ func000000000000006d:                   # @func000000000000006d
 	srli	a1, a1, 6
 	subw	a0, a1, a0
 	ret
-func0000000000000020:                   # @func0000000000000020
-	addi	a1, a1, 31
-	srli	a1, a1, 5
-	subw	a0, a1, a0
-	ret

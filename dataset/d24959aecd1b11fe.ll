@@ -28,7 +28,7 @@
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; tinyrenderer/optimized/tgaimage.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 16
   %3 = add nuw nsw i32 %0, 1
@@ -42,7 +42,7 @@ entry:
 ; openmpi/optimized/coll_base_allgather.ll
 ; openmpi/optimized/coll_base_allgatherv.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000e1(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 16
   %3 = add nuw nsw i32 %0, 1
@@ -53,7 +53,7 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/mapgen_carpathian.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 16
   %3 = add nsw i32 %0, 32
@@ -65,7 +65,7 @@ entry:
 ; minetest/optimized/mapgen.cpp.ll
 ; openjdk/optimized/X11SurfaceData.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 16
   %3 = add nsw i32 %0, 3
@@ -77,7 +77,7 @@ entry:
 ; minetest/optimized/mapgen_v6.cpp.ll
 ; opencv/optimized/gfluidimgproc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000057(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a7(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 16
   %3 = add nsw i32 %0, 16
@@ -88,7 +88,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/mlib_c_ImageCopy.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000066(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 3
   %3 = add nuw nsw i32 %0, 1
@@ -99,7 +99,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/macroAssembler_x86.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 3
   %3 = add nuw i32 %0, 1
@@ -111,7 +111,7 @@ entry:
 ; icu/optimized/bmpset.ll
 ; php/optimized/zend_alloc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 6
   %3 = add nsw i32 %0, 1
@@ -126,7 +126,7 @@ entry:
 ; abc/optimized/giaBound.c.ll
 ; linux/optimized/intel_dp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 5
   %3 = add nsw i32 %0, 1
@@ -137,7 +137,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaFalse.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 1
   %3 = add nsw i32 %0, -1
@@ -148,7 +148,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/decodeframe.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000008a(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 16
   %3 = add i32 %0, -64
@@ -159,7 +159,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-idn.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000e6(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 16
   %3 = add nuw nsw i32 %0, 1
@@ -181,7 +181,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/stereosgbm.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 16
   %3 = add nsw i32 %0, -1

@@ -1,6 +1,7 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; arrow/optimized/compare.cc.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; eastl/optimized/TestBitVector.cpp.ll
 ; linux/optimized/tcp_input.ll
 ; llvm/optimized/AArch64AsmBackend.cpp.ll
@@ -21,7 +22,8 @@ entry:
   ret i64 %2
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/approximately_equals.ll
 ; git/optimized/cbtree.ll
 ; libquic/optimized/heap_profiler_allocation_context_tracker.cc.ll
 ; linux/optimized/ioremap.ll
@@ -64,10 +66,11 @@ entry:
   ret i64 %2
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; abc/optimized/cuddCache.c.ll
 ; abc/optimized/cuddReorder.c.ll
 ; abc/optimized/cuddTable.c.ll
+; boost/optimized/approximately_equals.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; folly/optimized/SignalHandler.cpp.ll

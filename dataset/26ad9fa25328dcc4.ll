@@ -1,5 +1,7 @@
 
-; 23 occurrences:
+; 25 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; graphviz/optimized/gvrender.c.ll
 ; graphviz/optimized/htmltable.c.ll
 ; graphviz/optimized/osageinit.c.ll

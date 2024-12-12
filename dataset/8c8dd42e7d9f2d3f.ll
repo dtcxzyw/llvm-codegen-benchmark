@@ -1,14 +1,11 @@
 
-%"struct.rocksdb::TableReader::Anchor.2504818" = type { %"class.std::__cxx11::basic_string.2504531", i64 }
-%"class.std::__cxx11::basic_string.2504531" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2504532", i64, %union.anon.2504533 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2504532" = type { ptr }
-%union.anon.2504533 = type { i64, [8 x i8] }
-%"class.std::vector.0.2721086" = type { %"struct.std::_Vector_base.1.2721087" }
-%"struct.std::_Vector_base.1.2721087" = type { %"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl.2721088" }
-%"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl.2721088" = type { %"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl_data.2721089" }
-%"struct.std::_Vector_base<double, std::allocator<double>>::_Vector_impl_data.2721089" = type { ptr, ptr, ptr }
+%"struct.rocksdb::TableReader::Anchor.2619995" = type { %"class.std::__cxx11::basic_string.2619708", i64 }
+%"class.std::__cxx11::basic_string.2619708" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2619709", i64, %union.anon.2619710 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2619709" = type { ptr }
+%union.anon.2619710 = type { i64, [8 x i8] }
+%"struct.(anonymous namespace)::OperandMatchEntry.3141187" = type { i16, i8, i8, i8 }
 
-; 344 occurrences:
+; 380 occurrences:
 ; arrow/optimized/api_scalar.cc.ll
 ; arrow/optimized/type.cc.ll
 ; assimp/optimized/ASEParser.cpp.ll
@@ -16,10 +13,14 @@
 ; assimp/optimized/NFFLoader.cpp.ll
 ; assimp/optimized/SIBImporter.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/topology.ll
 ; casadi/optimized/options.cpp.ll
 ; casadi/optimized/sx_instantiator.cpp.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; cmake/optimized/ccmake.cxx.ll
+; cmake/optimized/cmCustomCommand.cxx.ll
 ; cmake/optimized/cmDocumentation.cxx.ll
 ; cmake/optimized/cmFileAPICodemodel.cxx.ll
 ; cmake/optimized/cmFileSet.cxx.ll
@@ -30,8 +31,16 @@
 ; cmake/optimized/cmakemain.cxx.ll
 ; cmake/optimized/cpack.cxx.ll
 ; cmake/optimized/ctest.cxx.ll
+; cvc5/optimized/eq_proof.cpp.ll
 ; cvc5/optimized/lfsc_printer.cpp.ll
 ; cvc5/optimized/normal_form.cpp.ll
+; cvc5/optimized/sygus_invariance.cpp.ll
+; cvc5/optimized/theory_datatypes.cpp.ll
+; draco/optimized/mesh_cleanup.cc.ll
+; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
+; draco/optimized/obj_decoder.cc.ll
+; draco/optimized/ply_decoder.cc.ll
+; draco/optimized/triangle_soup_mesh_builder.cc.ll
 ; duckdb/optimized/ub_duckdb_bind_tableref.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
@@ -51,15 +60,20 @@
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
 ; folly/optimized/Uri.cpp.ll
+; gromacs/optimized/colvar.cpp.ll
+; gromacs/optimized/colvarbias_abf.cpp.ll
+; gromacs/optimized/colvarcomp_apath.cpp.ll
 ; gromacs/optimized/colvarcomp_gpath.cpp.ll
+; gromacs/optimized/correlationgrid.cpp.ll
 ; gromacs/optimized/make_ndx.cpp.ll
-; gromacs/optimized/topology.cpp.ll
+; hyperscan/optimized/ng_literal_decorated.cpp.ll
 ; hyperscan/optimized/ng_repeat.cpp.ll
 ; hyperscan/optimized/rose_build_matchers.cpp.ll
 ; hyperscan/optimized/smallwrite_build.cpp.ll
 ; jsonnet/optimized/formatter.cpp.ll
+; lightgbm/optimized/application.cpp.ll
+; lightgbm/optimized/c_api.cpp.ll
 ; lightgbm/optimized/gbdt_model_text.cpp.ll
-; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/AArch64CallLowering.cpp.ll
 ; llvm/optimized/ASTMatchersInternal.cpp.ll
 ; llvm/optimized/ASTUnit.cpp.ll
@@ -97,7 +111,6 @@
 ; llvm/optimized/IRSimilarityIdentifier.cpp.ll
 ; llvm/optimized/InstrProfReader.cpp.ll
 ; llvm/optimized/InstrProfWriter.cpp.ll
-; llvm/optimized/InstrRefBasedImpl.cpp.ll
 ; llvm/optimized/LiveInterval.cpp.ll
 ; llvm/optimized/LoopUnrolling.cpp.ll
 ; llvm/optimized/MCAsmParser.cpp.ll
@@ -114,8 +127,6 @@
 ; llvm/optimized/OptTable.cpp.ll
 ; llvm/optimized/OptimizedStructLayout.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
-; llvm/optimized/RISCVBaseInfo.cpp.ll
-; llvm/optimized/RISCVISAInfo.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/Record.cpp.ll
 ; llvm/optimized/RewriteStatepointsForGC.cpp.ll
@@ -238,13 +249,10 @@
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -301,28 +309,48 @@
 ; nix/optimized/worker.ll
 ; nlohmann_json/optimized/unit.cpp.ll
 ; oiio/optimized/dpxoutput.cpp.ll
+; opencv/optimized/3calibration.cpp.ll
 ; opencv/optimized/aruco_detector.cpp.ll
+; opencv/optimized/calibration.cpp.ll
+; opencv/optimized/camera_calibration.cpp.ll
+; opencv/optimized/checker_model.cpp.ll
 ; opencv/optimized/circlesgrid.cpp.ll
+; opencv/optimized/concat_layer.cpp.ll
+; opencv/optimized/convolution_layer.cpp.ll
+; opencv/optimized/crop_and_resize_layer.cpp.ll
+; opencv/optimized/detection_output_layer.cpp.ll
 ; opencv/optimized/dynamic_graph_snippets.cpp.ll
 ; opencv/optimized/erfilter.cpp.ll
+; opencv/optimized/face_beautification.cpp.ll
 ; opencv/optimized/face_detection_mtcnn.cpp.ll
+; opencv/optimized/flatten_layer.cpp.ll
+; opencv/optimized/fully_connected_layer.cpp.ll
 ; opencv/optimized/gmodel.cpp.ll
 ; opencv/optimized/matchers.cpp.ll
+; opencv/optimized/net_impl.cpp.ll
+; opencv/optimized/normalize_bbox_layer.cpp.ll
 ; opencv/optimized/onevpl_infer_with_advanced_device_selection.cpp.ll
 ; opencv/optimized/onnx_importer.cpp.ll
 ; opencv/optimized/operations.cpp.ll
+; opencv/optimized/padding_layer.cpp.ll
 ; opencv/optimized/perf_layer.cpp.ll
 ; opencv/optimized/pipeline_modeling_tool.cpp.ll
+; opencv/optimized/prior_box_layer.cpp.ll
 ; opencv/optimized/recurrent_layers.cpp.ll
+; opencv/optimized/resize_layer.cpp.ll
+; opencv/optimized/slice_layer.cpp.ll
 ; opencv/optimized/solvepnp.cpp.ll
 ; opencv/optimized/tbmr.cpp.ll
 ; opencv/optimized/text_detector_swt.cpp.ll
 ; opencv/optimized/tf_importer.cpp.ll
 ; opencv/optimized/tflite_importer.cpp.ll
 ; opencv/optimized/trackerCSRT.cpp.ll
+; openspiel/optimized/combinatorics.cc.ll
 ; openspiel/optimized/efg_game.cc.ll
-; openusd/optimized/changeList.cpp.ll
-; openusd/optimized/dataSourceLocator.cpp.ll
+; openspiel/optimized/gin_rummy_utils.cc.ll
+; openspiel/optimized/tarok.cc.ll
+; openspiel/optimized/trajectories.cc.ll
+; openspiel/optimized/twixtboard.cc.ll
 ; openusd/optimized/dependencies.cpp.ll
 ; openusd/optimized/discoveryPlugin.cpp.ll
 ; openusd/optimized/eventTree.cpp.ll
@@ -331,7 +359,6 @@
 ; openusd/optimized/lightAdapter.cpp.ll
 ; openusd/optimized/listOp.cpp.ll
 ; openusd/optimized/mallocTag.cpp.ll
-; openusd/optimized/meshUtil.cpp.ll
 ; openusd/optimized/pathExpression.cpp.ll
 ; openusd/optimized/pointInstancerAdapter.cpp.ll
 ; openusd/optimized/primIndex.cpp.ll
@@ -339,7 +366,10 @@
 ; openusd/optimized/sceneIndexPluginRegistry.cpp.ll
 ; openusd/optimized/selection.cpp.ll
 ; openusd/optimized/selectionSceneIndex.cpp.ll
+; proxygen/optimized/HTTPMessage.cpp.ll
 ; pybind11/optimized/test_stl_binders.cpp.ll
+; quantlib/optimized/gaussiannoncentralchisquaredpolynomial.ll
+; quantlib/optimized/squarerootclvmodel.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; rocksdb/optimized/compaction_job.cc.ll
 ; spike/optimized/socketif.ll
@@ -353,10 +383,13 @@
 ; velox/optimized/URLFunctions.cpp.ll
 ; verilator/optimized/V3Config.cpp.ll
 ; xgboost/optimized/updater_colmaker.cc.ll
+; xgboost/optimized/updater_refresh.cc.ll
+; yosys/optimized/ezsat.ll
+; yosys/optimized/memory_bram.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000011(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.rocksdb::TableReader::Anchor.2504818", ptr %1, i64 %2
+  %3 = getelementptr nusw %"struct.rocksdb::TableReader::Anchor.2619995", ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = ptrtoint ptr %0 to i64
   %6 = sub i64 %4, %5
@@ -364,7 +397,7 @@ entry:
   ret i64 %7
 }
 
-; 17 occurrences:
+; 26 occurrences:
 ; coreutils-rs/optimized/2tikf1yvlgbemzkv.ll
 ; coreutils-rs/optimized/4xxa0w30rbcuabi4.ll
 ; coreutils-rs/optimized/yiho3rob7ld9k5q.ll
@@ -377,11 +410,20 @@ entry:
 ; rustfmt-rs/optimized/s8gyre8ye3tvwam.ll
 ; rustfmt-rs/optimized/x2cb3fifm47d4t5.ll
 ; tree-sitter-rs/optimized/18kt1xijwoc4jebp.ll
+; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; wasmtime-rs/optimized/3vdx8w41hjyzioqv.ll
 ; wasmtime-rs/optimized/cxg2cx8gn6v5trt.ll
+; zed-rs/optimized/1774ern7vmjezjfzajsdneavj.ll
+; zed-rs/optimized/5rpya7la6h7ws9z99n4ku3sd5.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/bwvht24uf41c89mbhdihda1iu.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/el2ujbjp7xo4qjt47dh50oqat.ll
+; zed-rs/optimized/eldybx25av55fm0jlf5yq64qn.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(ptr %0, ptr %1, i64 %2) #0 {
 entry:
@@ -408,61 +450,35 @@ entry:
   ret i64 %7
 }
 
-; 50 occurrences:
-; cmake/optimized/cmCustomCommand.cxx.ll
-; cvc5/optimized/eq_proof.cpp.ll
-; cvc5/optimized/sygus_invariance.cpp.ll
-; cvc5/optimized/theory_datatypes.cpp.ll
-; draco/optimized/mesh_cleanup.cc.ll
-; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
-; draco/optimized/obj_decoder.cc.ll
-; draco/optimized/ply_decoder.cc.ll
-; draco/optimized/triangle_soup_mesh_builder.cc.ll
-; gromacs/optimized/colvar.cpp.ll
-; gromacs/optimized/colvarbias_abf.cpp.ll
-; gromacs/optimized/colvarcomp_apath.cpp.ll
-; gromacs/optimized/correlationgrid.cpp.ll
+; 9 occurrences:
 ; gromacs/optimized/topology.cpp.ll
-; hyperscan/optimized/ng_literal_decorated.cpp.ll
-; hyperscan/optimized/ng_repeat.cpp.ll
+; llvm/optimized/AArch64AsmParser.cpp.ll
+; llvm/optimized/InstrRefBasedImpl.cpp.ll
+; llvm/optimized/RISCVAsmParser.cpp.ll
+; llvm/optimized/RISCVBaseInfo.cpp.ll
+; llvm/optimized/RISCVISAInfo.cpp.ll
+; openusd/optimized/changeList.cpp.ll
+; openusd/optimized/dataSourceLocator.cpp.ll
+; openusd/optimized/meshUtil.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000019(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw %"struct.(anonymous namespace)::OperandMatchEntry.3141187", ptr %1, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = ptrtoint ptr %0 to i64
+  %6 = sub i64 %4, %5
+  %7 = udiv exact i64 %6, 6
+  ret i64 %7
+}
+
+; 3 occurrences:
+; gromacs/optimized/topology.cpp.ll
 ; hyperscan/optimized/rose_build_role_aliasing.cpp.ll
-; lightgbm/optimized/application.cpp.ll
-; lightgbm/optimized/c_api.cpp.ll
-; opencv/optimized/3calibration.cpp.ll
-; opencv/optimized/calibration.cpp.ll
-; opencv/optimized/camera_calibration.cpp.ll
-; opencv/optimized/checker_model.cpp.ll
-; opencv/optimized/concat_layer.cpp.ll
-; opencv/optimized/convolution_layer.cpp.ll
-; opencv/optimized/crop_and_resize_layer.cpp.ll
-; opencv/optimized/detection_output_layer.cpp.ll
-; opencv/optimized/face_beautification.cpp.ll
-; opencv/optimized/flatten_layer.cpp.ll
-; opencv/optimized/fully_connected_layer.cpp.ll
-; opencv/optimized/net_impl.cpp.ll
-; opencv/optimized/normalize_bbox_layer.cpp.ll
-; opencv/optimized/padding_layer.cpp.ll
-; opencv/optimized/prior_box_layer.cpp.ll
-; opencv/optimized/resize_layer.cpp.ll
-; opencv/optimized/slice_layer.cpp.ll
-; openspiel/optimized/combinatorics.cc.ll
-; openspiel/optimized/gin_rummy_utils.cc.ll
-; openspiel/optimized/tarok.cc.ll
-; openspiel/optimized/trajectories.cc.ll
-; openspiel/optimized/twixtboard.cc.ll
-; proxygen/optimized/HTTPMessage.cpp.ll
-; pybind11/optimized/test_stl_binders.cpp.ll
-; quantlib/optimized/gaussiannoncentralchisquaredpolynomial.ll
-; quantlib/optimized/squarerootclvmodel.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
-; xgboost/optimized/updater_colmaker.cc.ll
-; xgboost/optimized/updater_refresh.cc.ll
-; yosys/optimized/ezsat.ll
-; yosys/optimized/memory_bram.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"class.std::vector.0.2721086", ptr %1, i64 %2
+  %3 = getelementptr i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = ptrtoint ptr %0 to i64
   %6 = sub i64 %4, %5

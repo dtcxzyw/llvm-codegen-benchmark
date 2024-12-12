@@ -11,7 +11,7 @@ entry:
   ret i1 %2
 }
 
-; 34 occurrences:
+; 29 occurrences:
 ; cvc5/optimized/entailment_check.cpp.ll
 ; cvc5/optimized/lfsc_node_converter.cpp.ll
 ; cvc5/optimized/proof_checker.cpp.ll
@@ -29,14 +29,9 @@ entry:
 ; llvm/optimized/InstCombineSelect.cpp.ll
 ; llvm/optimized/InstructionSimplify.cpp.ll
 ; llvm/optimized/LICM.cpp.ll
-; llvm/optimized/LTO.cpp.ll
 ; llvm/optimized/LoopIdiomRecognize.cpp.ll
-; llvm/optimized/MachineVerifier.cpp.ll
 ; llvm/optimized/RDFGraph.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
-; llvm/optimized/SemaDecl.cpp.ll
-; llvm/optimized/SemaPseudoObject.cpp.ll
-; llvm/optimized/StackSafetyAnalysis.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
 ; postgres/optimized/heaptuple.ll
 ; slurm/optimized/ping_nodes.ll
@@ -47,7 +42,7 @@ entry:
 ; wireshark/optimized/packet-mka.c.ll
 ; wireshark/optimized/packet-ospf.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0) #0 {
+define i1 @func0000000000000021(i16 %0) #0 {
 entry:
   %1 = and i16 %0, 56
   %2 = icmp eq i16 %1, 0

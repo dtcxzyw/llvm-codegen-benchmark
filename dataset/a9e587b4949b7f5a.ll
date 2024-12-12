@@ -29,7 +29,7 @@
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = icmp eq i32 %2, %0
@@ -62,7 +62,7 @@ entry:
 ; rocksdb/optimized/statistics.cc.ll
 ; yosys/optimized/simplify.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000046(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = icmp slt i32 %2, %0
@@ -73,32 +73,30 @@ entry:
 ; linux/optimized/reg.ll
 ; qemu/optimized/tcg.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 -1, %1
-  %3 = icmp ugt i32 %2, %0
+  %3 = icmp samesign ugt i32 %2, %0
   ret i1 %3
 }
 
-; 6 occurrences:
+; 4 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; clamav/optimized/mszipd.c.ll
-; libpng/optimized/pngread.c.ll
 ; lief/optimized/ecp.c.ll
-; openjdk/optimized/pngread.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000078(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 8, %1
-  %3 = icmp ugt i32 %2, %0
+  %3 = icmp samesign ugt i32 %2, %0
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; openjdk/optimized/mulnode.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 -1, %1
   %3 = icmp sgt i32 %2, %0
@@ -108,21 +106,19 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/loopTransform.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000006c(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 1, %1
   %3 = icmp ne i32 %2, %0
   ret i1 %3
 }
 
-; 32 occurrences:
+; 30 occurrences:
 ; abc/optimized/cuddPriority.c.ll
 ; abc/optimized/utilIsop.c.ll
 ; flac/optimized/lpc.c.ll
 ; git/optimized/diffcore-delta.ll
-; gromacs/optimized/dlasd0.cpp.ll
 ; gromacs/optimized/dlasda.cpp.ll
-; gromacs/optimized/slasd0.cpp.ll
 ; gromacs/optimized/slasda.cpp.ll
 ; libjpeg-turbo/optimized/jdcoefct.c.ll
 ; libpng/optimized/pngwutil.c.ll
@@ -149,7 +145,7 @@ entry:
 ; yosys/optimized/test_cell.ll
 ; zxing/optimized/QREncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000004a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = icmp sgt i32 %2, %0
@@ -160,29 +156,23 @@ entry:
 ; darktable/optimized/introspection_highlights.c.ll
 ; openjdk/optimized/gifalloc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000066(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 1, %1
   %3 = icmp slt i32 %2, %0
   ret i1 %3
 }
 
-; 10 occurrences:
+; 4 occurrences:
 ; abc/optimized/giaTtopt.cpp.ll
-; clamav/optimized/oabd.c.ll
-; linux/optimized/aspm.ll
-; linux/optimized/ccm.ll
-; linux/optimized/xhci.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
-; luajit/optimized/lj_tab.ll
-; luajit/optimized/lj_tab_dyn.ll
 ; opencv/optimized/simple_adaptive_binarizer.cpp.ll
 ; openjdk/optimized/gifalloc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000074(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 1, %1
-  %3 = icmp ult i32 %2, %0
+  %3 = icmp samesign ult i32 %2, %0
   ret i1 %3
 }
 
@@ -197,11 +187,22 @@ entry:
 ; yosys/optimized/proc_rom.ll
 ; z3/optimized/dl_mk_subsumption_checker.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 1, %1
   %3 = icmp eq i32 %2, %0
   ret i1 %3
+}
+
+; 2 occurrences:
+; libpng/optimized/pngread.c.ll
+; openjdk/optimized/pngread.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000068(i32 %0, i32 %1) #0 {
+entry:
+  %.highbits = lshr i32 %0, %1
+  %2 = icmp eq i32 %.highbits, 0
+  ret i1 %2
 }
 
 ; 3 occurrences:
@@ -209,7 +210,7 @@ entry:
 ; libpng/optimized/pngtrans.c.ll
 ; openjdk/optimized/pngtrans.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000027(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000047(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = icmp sle i32 %2, %0
@@ -239,7 +240,7 @@ entry:
 ; z3/optimized/theory_pb.cpp.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000044(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = icmp ult i32 %2, %0
@@ -251,7 +252,7 @@ entry:
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; php/optimized/zend_jit.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000004c(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = icmp ne i32 %2, %0
@@ -291,7 +292,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_func_ops.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000006a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 1, %1
   %3 = icmp sgt i32 %2, %0
@@ -305,17 +306,30 @@ entry:
 ; z3/optimized/dl_table.cpp.ll
 ; z3/optimized/recover_01_tactic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000048(i32 %0, i32 %1) #0 {
 entry:
   %.highbits = lshr i32 %0, %1
   %2 = icmp eq i32 %.highbits, 0
   ret i1 %2
 }
 
-; 5 occurrences:
-; gromacs/optimized/dlasd0.cpp.ll
+; 6 occurrences:
+; clamav/optimized/oabd.c.ll
+; linux/optimized/aspm.ll
+; linux/optimized/ccm.ll
+; linux/optimized/xhci.ll
+; luajit/optimized/lj_tab.ll
+; luajit/optimized/lj_tab_dyn.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000064(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl nuw nsw i32 1, %1
+  %3 = icmp ult i32 %2, %0
+  ret i1 %3
+}
+
+; 3 occurrences:
 ; gromacs/optimized/dlasda.cpp.ll
-; gromacs/optimized/slasd0.cpp.ll
 ; gromacs/optimized/slasda.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
@@ -329,7 +343,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/avif_obu.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 -1, %1
   %3 = icmp eq i32 %2, %0
@@ -361,7 +375,7 @@ entry:
 ; 1 occurrences:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000025(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000055(i32 %0, i32 %1) #0 {
 entry:
   %.highbits = lshr i32 %0, %1
   %2 = icmp ne i32 %.highbits, 0

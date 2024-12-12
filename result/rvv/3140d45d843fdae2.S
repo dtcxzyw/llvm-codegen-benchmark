@@ -6,7 +6,7 @@ func000000000000001c:                   # @func000000000000001c
 	vzext.vf2	v12, v10
 	vmv.v.i	v10, -1
 	vsrl.vv	v10, v10, v12
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret
 func0000000000000004:                   # @func0000000000000004
 	li	a0, 64
@@ -20,7 +20,7 @@ func0000000000000004:                   # @func0000000000000004
 	add.uw	a0, a0, a1
 	vmv.v.x	v10, a0
 	vsrl.vv	v10, v10, v12
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret
 func000000000000000c:                   # @func000000000000000c
 	li	a0, 63
@@ -30,5 +30,5 @@ func000000000000000c:                   # @func000000000000000c
 	vzext.vf2	v12, v10
 	vmv.v.i	v10, -1
 	vsrl.vv	v10, v10, v12
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret

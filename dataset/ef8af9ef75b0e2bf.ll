@@ -1,38 +1,41 @@
 
-%"struct.folly::f14::detail::F14Chunk.2568933" = type { %"struct.std::array.2568934", i8, i8, %"struct.std::array.53.2568935" }
-%"struct.std::array.2568934" = type { [14 x i8] }
-%"struct.std::array.53.2568935" = type { [14 x %"union.std::aligned_storage<8, 8>::type.2568893"] }
-%"union.std::aligned_storage<8, 8>::type.2568893" = type { [8 x i8] }
-%"class.gmx::analysismodules::(anonymous namespace)::SecondaryStructuresData.3185440" = type { [2 x ptr], %"class.std::vector.39.3185441", %"class.std::vector.39.3185441", i64, i8, %"struct.gmx::EnumerationArray.3185442" }
-%"class.std::vector.39.3185441" = type { %"struct.std::_Vector_base.40.3185443" }
-%"struct.std::_Vector_base.40.3185443" = type { %"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl.3185444" }
-%"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl.3185444" = type { %"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl_data.3185445" }
-%"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl_data.3185445" = type { ptr, ptr, ptr }
-%"struct.gmx::EnumerationArray.3185442" = type { [4 x i64] }
-%struct.PGPROC.3467663 = type { %struct.dlist_node.3467664, ptr, ptr, i32, %struct.Latch.3467665, i32, i32, i32, i32, %struct.anon.3467666, i32, i32, i32, i8, i8, i8, i8, %struct.proclist_node.3467667, %struct.proclist_node.3467667, ptr, ptr, i32, i32, %struct.pg_atomic_uint64.3467668, i32, i8, i64, i32, %struct.dlist_node.3467664, [16 x %struct.dlist_head.3467669], %struct.XidCacheStatus.3467662, %struct.XidCache.3467670, i8, %struct.pg_atomic_uint32.3467671, i32, i32, i8, %struct.pg_atomic_uint32.3467671, i32, i32, i64, i64, %struct.LWLock.3467672, i64, [16 x i32], i8, i32, ptr, %struct.dlist_head.3467669, %struct.dlist_node.3467664 }
-%struct.Latch.3467665 = type { i32, i32, i8, i32 }
-%struct.anon.3467666 = type { i32, i32 }
-%struct.proclist_node.3467667 = type { i32, i32 }
-%struct.pg_atomic_uint64.3467668 = type { i64 }
-%struct.XidCacheStatus.3467662 = type { i8, i8 }
-%struct.XidCache.3467670 = type { [64 x i32] }
-%struct.pg_atomic_uint32.3467671 = type { i32 }
-%struct.LWLock.3467672 = type { i16, %struct.pg_atomic_uint32.3467671, %struct.proclist_head.3467673 }
-%struct.proclist_head.3467673 = type { i32, i32 }
-%struct.dlist_head.3467669 = type { %struct.dlist_node.3467664 }
-%struct.dlist_node.3467664 = type { ptr, ptr }
+%"struct.folly::f14::detail::F14Chunk.2683307" = type { %"struct.std::array.2683308", i8, i8, %"struct.std::array.53.2683309" }
+%"struct.std::array.2683308" = type { [14 x i8] }
+%"struct.std::array.53.2683309" = type { [14 x %"union.std::aligned_storage<8, 8>::type.2683267"] }
+%"union.std::aligned_storage<8, 8>::type.2683267" = type { [8 x i8] }
+%"struct.folly::f14::detail::F14Chunk.2688563" = type { %"struct.std::array.2688564", i8, i8, %"struct.std::array.17.2688565" }
+%"struct.std::array.2688564" = type { [14 x i8] }
+%"struct.std::array.17.2688565" = type { [12 x %"union.std::aligned_storage<4, 4>::type.2688566"] }
+%"union.std::aligned_storage<4, 4>::type.2688566" = type { [4 x i8] }
+%"struct.folly::f14::detail::F14Chunk.2797843" = type { %"struct.std::array.2797844", i8, i8, %"struct.std::array.206.2797845", [2 x i8] }
+%"struct.std::array.2797844" = type { [14 x i8] }
+%"struct.std::array.206.2797845" = type { [14 x %"union.std::aligned_storage<1, 1>::type.2797846"] }
+%"union.std::aligned_storage<1, 1>::type.2797846" = type { [1 x i8] }
+%"class.gmx::analysismodules::(anonymous namespace)::SecondaryStructuresData.3377697" = type { [2 x ptr], %"class.std::vector.39.3377698", %"class.std::vector.39.3377698", i64, i8, %"struct.gmx::EnumerationArray.3377699" }
+%"class.std::vector.39.3377698" = type { %"struct.std::_Vector_base.40.3377700" }
+%"struct.std::_Vector_base.40.3377700" = type { %"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl.3377701" }
+%"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl.3377701" = type { %"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl_data.3377702" }
+%"struct.std::_Vector_base<unsigned long, std::allocator<unsigned long>>::_Vector_impl_data.3377702" = type { ptr, ptr, ptr }
+%"struct.gmx::EnumerationArray.3377699" = type { [4 x i64] }
+%struct.PGPROC.3651854 = type { %struct.dlist_node.3651855, ptr, ptr, i32, %struct.Latch.3651856, i32, i32, i32, i32, %struct.anon.3651857, i32, i32, i32, i8, i8, i8, i8, %struct.proclist_node.3651858, %struct.proclist_node.3651858, ptr, ptr, i32, i32, %struct.pg_atomic_uint64.3651859, i32, i8, i64, i32, %struct.dlist_node.3651855, [16 x %struct.dlist_head.3651860], %struct.XidCacheStatus.3651853, %struct.XidCache.3651861, i8, %struct.pg_atomic_uint32.3651862, i32, i32, i8, %struct.pg_atomic_uint32.3651862, i32, i32, i64, i64, %struct.LWLock.3651863, i64, [16 x i32], i8, i32, ptr, %struct.dlist_head.3651860, %struct.dlist_node.3651855 }
+%struct.Latch.3651856 = type { i32, i32, i8, i32 }
+%struct.anon.3651857 = type { i32, i32 }
+%struct.proclist_node.3651858 = type { i32, i32 }
+%struct.pg_atomic_uint64.3651859 = type { i64 }
+%struct.XidCacheStatus.3651853 = type { i8, i8 }
+%struct.XidCache.3651861 = type { [64 x i32] }
+%struct.pg_atomic_uint32.3651862 = type { i32 }
+%struct.LWLock.3651863 = type { i16, %struct.pg_atomic_uint32.3651862, %struct.proclist_head.3651864 }
+%struct.proclist_head.3651864 = type { i32, i32 }
+%struct.dlist_head.3651860 = type { %struct.dlist_node.3651855 }
+%struct.dlist_node.3651855 = type { ptr, ptr }
 
-; 126 occurrences:
+; 99 occurrences:
 ; abc/optimized/wlnNdr.c.ll
 ; abc/optimized/wlnNtk.c.ll
 ; abc/optimized/wlnObj.c.ll
 ; abc/optimized/wlnRetime.c.ll
 ; abc/optimized/wlnWriteVer.c.ll
-; bullet3/optimized/b3GpuNarrowPhase.ll
-; bullet3/optimized/b3QuantizedBvh.ll
-; bullet3/optimized/btMultiBody.ll
-; bullet3/optimized/btMultiBodyDynamicsWorld.ll
-; bullet3/optimized/btQuantizedBvh.ll
 ; bullet3/optimized/btSoftBody.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/DynamicParser.cpp.ll
@@ -48,38 +51,16 @@
 ; folly/optimized/dynamic.cpp.ll
 ; folly/optimized/json.cpp.ll
 ; folly/optimized/json_patch.cpp.ll
-; gromacs/optimized/checkpoint.cpp.ll
 ; gromacs/optimized/convparm.cpp.ll
-; gromacs/optimized/dssp.cpp.ll
 ; gromacs/optimized/gmx_hbond.cpp.ll
-; gromacs/optimized/inputrec.cpp.ll
 ; gromacs/optimized/membed.cpp.ll
 ; gromacs/optimized/qmmmtopologypreprocessor.cpp.ll
-; gromacs/optimized/readir.cpp.ll
-; gromacs/optimized/swapcoords.cpp.ll
 ; gromacs/optimized/vsite.cpp.ll
-; harfbuzz/optimized/harfbuzz.cc.ll
-; harfbuzz/optimized/hb-subset-cff-common.cc.ll
-; harfbuzz/optimized/hb-subset-cff1.cc.ll
-; harfbuzz/optimized/hb-subset-cff2.cc.ll
-; harfbuzz/optimized/hb-subset-plan.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
-; hdf5/optimized/h5repack.c.ll
-; hdf5/optimized/h5repack_filters.c.ll
-; hdf5/optimized/h5repack_opttable.c.ll
-; llvm/optimized/CoverageMapping.cpp.ll
 ; meshlab/optimized/eigen_mesh_conversions.cpp.ll
-; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
 ; opencv/optimized/erfilter.cpp.ll
 ; opencv/optimized/face_detection_mtcnn.cpp.ll
-; openjdk/optimized/chaitin.ll
-; openjdk/optimized/coalesce.ll
-; openjdk/optimized/hb-ot-layout.ll
-; openjdk/optimized/hb-set.ll
-; openjdk/optimized/ifg.ll
-; openjdk/optimized/postaloc.ll
 ; proxygen/optimized/HTTP2PriorityQueue.cpp.ll
 ; proxygen/optimized/HTTPSession.cpp.ll
 ; proxygen/optimized/Service.cpp.ll
@@ -150,10 +131,64 @@
 ; velox/optimized/UnsafeRowSerializer.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
 ; Function Attrs: nounwind
+define ptr @func000000000000000b(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw %"struct.folly::f14::detail::F14Chunk.2683307", ptr %1, i64 %2, i32 3
+  %4 = getelementptr nusw nuw [14 x %"union.std::aligned_storage<8, 8>::type.2683267"], ptr %3, i64 0, i64 %0
+  ret ptr %4
+}
+
+; 33 occurrences:
+; abc/optimized/wlnNdr.c.ll
+; abc/optimized/wlnNtk.c.ll
+; abc/optimized/wlnRetime.c.ll
+; abc/optimized/wlnWriteVer.c.ll
+; bullet3/optimized/b3GpuNarrowPhase.ll
+; bullet3/optimized/b3QuantizedBvh.ll
+; bullet3/optimized/btMultiBody.ll
+; bullet3/optimized/btMultiBodyDynamicsWorld.ll
+; bullet3/optimized/btQuantizedBvh.ll
+; bullet3/optimized/btSoftBody.ll
+; folly/optimized/Request.cpp.ll
+; gromacs/optimized/checkpoint.cpp.ll
+; gromacs/optimized/gmx_hbond.cpp.ll
+; gromacs/optimized/inputrec.cpp.ll
+; gromacs/optimized/readir.cpp.ll
+; gromacs/optimized/swapcoords.cpp.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-subset-cff-common.cc.ll
+; harfbuzz/optimized/hb-subset-cff1.cc.ll
+; harfbuzz/optimized/hb-subset-cff2.cc.ll
+; harfbuzz/optimized/hb-subset-plan.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; hdf5/optimized/h5repack.c.ll
+; hdf5/optimized/h5repack_filters.c.ll
+; hdf5/optimized/h5repack_opttable.c.ll
+; llvm/optimized/CoverageMapping.cpp.ll
+; meshlab/optimized/filter_sampling.cpp.ll
+; openjdk/optimized/chaitin.ll
+; openjdk/optimized/coalesce.ll
+; openjdk/optimized/hb-ot-layout.ll
+; openjdk/optimized/hb-set.ll
+; openjdk/optimized/ifg.ll
+; openjdk/optimized/postaloc.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000f(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw %"struct.folly::f14::detail::F14Chunk.2688563", ptr %1, i64 %2, i32 3
+  %4 = getelementptr nusw nuw [12 x %"union.std::aligned_storage<4, 4>::type.2688566"], ptr %3, i64 0, i64 %0
+  ret ptr %4
+}
+
+; 3 occurrences:
+; gromacs/optimized/dssp.cpp.ll
+; velox/optimized/ArrayDistinct.cpp.ll
+; velox/optimized/ArrayIntersectExcept.cpp.ll
+; Function Attrs: nounwind
 define ptr @func000000000000000a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.folly::f14::detail::F14Chunk.2568933", ptr %1, i64 %2, i32 3
-  %4 = getelementptr nusw [14 x %"union.std::aligned_storage<8, 8>::type.2568893"], ptr %3, i64 0, i64 %0
+  %3 = getelementptr nusw %"struct.folly::f14::detail::F14Chunk.2797843", ptr %1, i64 %2, i32 3
+  %4 = getelementptr nusw [14 x %"union.std::aligned_storage<1, 1>::type.2797846"], ptr %3, i64 0, i64 %0
   ret ptr %4
 }
 
@@ -162,7 +197,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %"class.gmx::analysismodules::(anonymous namespace)::SecondaryStructuresData.3185440", ptr %1, i64 %2, i32 5
+  %3 = getelementptr %"class.gmx::analysismodules::(anonymous namespace)::SecondaryStructuresData.3377697", ptr %1, i64 %2, i32 5
   %4 = getelementptr nusw [4 x i64], ptr %3, i64 0, i64 %0
   ret ptr %4
 }
@@ -172,7 +207,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %struct.PGPROC.3467663, ptr %1, i64 %2, i32 31
+  %3 = getelementptr %struct.PGPROC.3651854, ptr %1, i64 %2, i32 31
   %4 = getelementptr [64 x i32], ptr %3, i64 0, i64 %0
   ret ptr %4
 }

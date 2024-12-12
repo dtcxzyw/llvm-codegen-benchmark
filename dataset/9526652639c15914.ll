@@ -1,10 +1,10 @@
 
-%"class.folly::hazptr_tc_entry.2568962" = type { ptr }
-%"class.std::vector.2585868" = type { %"struct.std::_Vector_base.2585869" }
-%"struct.std::_Vector_base.2585869" = type { %"struct.std::_Vector_base<voxalgo::ChangingLight, std::allocator<voxalgo::ChangingLight>>::_Vector_impl.2585870" }
-%"struct.std::_Vector_base<voxalgo::ChangingLight, std::allocator<voxalgo::ChangingLight>>::_Vector_impl.2585870" = type { %"struct.std::_Vector_base<voxalgo::ChangingLight, std::allocator<voxalgo::ChangingLight>>::_Vector_impl_data.2585871" }
-%"struct.std::_Vector_base<voxalgo::ChangingLight, std::allocator<voxalgo::ChangingLight>>::_Vector_impl_data.2585871" = type { ptr, ptr, ptr }
-%struct.crumb_spec_t.3248051 = type { i32, i8 }
+%"class.folly::hazptr_tc_entry.2683336" = type { ptr }
+%"class.std::vector.2699885" = type { %"struct.std::_Vector_base.2699886" }
+%"struct.std::_Vector_base.2699886" = type { %"struct.std::_Vector_base<voxalgo::ChangingLight, std::allocator<voxalgo::ChangingLight>>::_Vector_impl.2699887" }
+%"struct.std::_Vector_base<voxalgo::ChangingLight, std::allocator<voxalgo::ChangingLight>>::_Vector_impl.2699887" = type { %"struct.std::_Vector_base<voxalgo::ChangingLight, std::allocator<voxalgo::ChangingLight>>::_Vector_impl_data.2699888" }
+%"struct.std::_Vector_base<voxalgo::ChangingLight, std::allocator<voxalgo::ChangingLight>>::_Vector_impl_data.2699888" = type { ptr, ptr, ptr }
+%struct.crumb_spec_t.3439320 = type { i32, i8 }
 
 ; 2 occurrences:
 ; ruby/optimized/regexp.ll
@@ -18,7 +18,7 @@ entry:
   ret ptr %4
 }
 
-; 67 occurrences:
+; 68 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; clamav/optimized/disasm.c.ll
 ; darktable/optimized/introspection_basecurve.c.ll
@@ -77,6 +77,7 @@ entry:
 ; llvm/optimized/cc1as_main.cpp.ll
 ; llvm/optimized/driver.cpp.ll
 ; luajit/optimized/minilua.ll
+; lvgl/optimized/lv_ime_pinyin.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; nuttx/optimized/lib_libfread_unlocked.c.ll
 ; openusd/optimized/reconintra.c.ll
@@ -87,11 +88,11 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i8 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -1
   %3 = zext i8 %2 to i64
-  %4 = getelementptr nusw [9 x %"class.folly::hazptr_tc_entry.2568962"], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [9 x %"class.folly::hazptr_tc_entry.2683336"], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
@@ -99,11 +100,11 @@ entry:
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i8 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i8 %1) #0 {
 entry:
   %2 = add nsw i8 %1, -1
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr nusw [16 x %"class.std::vector.2585868"], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [16 x %"class.std::vector.2699885"], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
@@ -133,11 +134,11 @@ entry:
 ; abc/optimized/ifTune.c.ll
 ; llvm/optimized/NumericalStabilitySanitizer.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i8 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -97
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr nusw [32 x i32], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [32 x i32], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
@@ -150,22 +151,22 @@ entry:
 ; opencv/optimized/mathfuncs.cpp.ll
 ; stb/optimized/stb_sprintf.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i8 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i8 %1) #0 {
 entry:
   %2 = add nuw nsw i8 %1, 1
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr nusw [8 x i8], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [8 x i8], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
 ; 1 occurrences:
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i8 %1) #0 {
+define ptr @func0000000000000013(ptr %0, i8 %1) #0 {
 entry:
   %2 = add nuw i8 %1, 1
   %3 = zext i8 %2 to i64
-  %4 = getelementptr nusw [0 x i32], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [0 x i32], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
@@ -176,7 +177,7 @@ define ptr @func000000000000001c(ptr %0, i8 %1) #0 {
 entry:
   %2 = add nuw nsw i8 %1, 1
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr [3 x %struct.crumb_spec_t.3248051], ptr %0, i64 0, i64 %3
+  %4 = getelementptr [3 x %struct.crumb_spec_t.3439320], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; diesel-rs/optimized/1epek8hq4oxhh3ri.ll
 ; diesel-rs/optimized/309lo11gmt11hfmy.ll
 ; diesel-rs/optimized/3k6gak4fsx54o1kk.ll
@@ -13,6 +13,7 @@
 ; openssl/optimized/libcrypto-lib-bn_mont.ll
 ; openssl/optimized/libcrypto-shlib-bn_mont.ll
 ; wasmtime-rs/optimized/3tukmgwo6vemwvwz.ll
+; zed-rs/optimized/bflorbpxbjb42ccmeziz8dqw7.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -22,7 +23,8 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/url_base.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; Function Attrs: nounwind

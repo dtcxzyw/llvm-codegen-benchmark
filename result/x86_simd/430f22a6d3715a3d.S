@@ -9,7 +9,7 @@
 	.short	9                               # 0x9
 	.short	9                               # 0x9
 	.short	9                               # 0x9
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqd	.LCPI0_0(%rip){1to8}, %ymm2, %k1
@@ -29,7 +29,7 @@ func0000000000000011:                   # @func0000000000000011
 	.short	69                              # 0x45
 	.short	69                              # 0x45
 	.short	69                              # 0x45
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpcmpltud	.LCPI1_0(%rip){1to8}, %ymm2, %k1 {%k1}
@@ -46,7 +46,7 @@ func0000000000000041:                   # @func0000000000000041
 	.short	120                             # 0x78
 	.short	120                             # 0x78
 	.short	120                             # 0x78
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vptestnmd	%ymm2, %ymm2, %k1 {%k1}
@@ -63,7 +63,7 @@ func0000000000000014:                   # @func0000000000000014
 	.short	25                              # 0x19
 	.short	25                              # 0x19
 	.short	25                              # 0x19
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vptestmd	%ymm2, %ymm2, %k1 {%k1}
@@ -71,7 +71,7 @@ func00000000000000c1:                   # @func00000000000000c1
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	vpsllw	$15, %xmm0, %xmm0
 	vptestmw	%xmm1, %xmm1, %k1
 	vptestmd	%ymm2, %ymm2, %k1 {%k1}

@@ -37,7 +37,7 @@ entry:
 define i32 @func000000000000005c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 4294967295
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub i64 %4, %0
   %6 = trunc i64 %5 to i32
   ret i32 %6

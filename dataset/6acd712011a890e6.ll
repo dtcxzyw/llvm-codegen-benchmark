@@ -1,7 +1,9 @@
 
-%"struct.llvh::detail::DenseMapPair.2882484" = type { %"struct.std::pair.225.2882485" }
-%"struct.std::pair.225.2882485" = type { %"class.hermes::vm::SymbolID.2882479", i32 }
-%"class.hermes::vm::SymbolID.2882479" = type { i32 }
+%"struct.llvh::detail::DenseMapPair.3077008" = type { %"struct.std::pair.225.3077009" }
+%"struct.std::pair.225.3077009" = type { %"class.hermes::vm::SymbolID.3077003", i32 }
+%"class.hermes::vm::SymbolID.3077003" = type { i32 }
+%"class.llvm::ElementCount.3140325" = type { %"class.llvm::details::FixedOrScalableQuantity.base.3140326", [3 x i8] }
+%"class.llvm::details::FixedOrScalableQuantity.base.3140326" = type <{ i32, i8 }>
 
 ; 1 occurrences:
 ; ruby/optimized/pack.ll
@@ -9,27 +11,21 @@
 define i64 @func0000000000000008(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
-  %4 = icmp ugt ptr %3, %0
+  %4 = icmp ult ptr %0, %3
   %5 = zext i1 %4 to i64
   ret i64 %5
 }
 
-; 10 occurrences:
-; coreutils-rs/optimized/1rgvgulc49uxow1y.ll
-; hyperscan/optimized/goughcompile_reg.cpp.ll
+; 4 occurrences:
+; boost/optimized/src.ll
 ; libpng/optimized/pngrutil.c.ll
 ; llvm/optimized/LoopInfo.cpp.ll
-; llvm/optimized/LoopVectorize.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
-; llvm/optimized/VPlan.cpp.ll
-; llvm/optimized/VPlanTransforms.cpp.ll
 ; openjdk/optimized/pngrutil.ll
-; rustfmt-rs/optimized/s8gyre8ye3tvwam.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000058(ptr %0, ptr %1, i64 %2) #0 {
+define i64 @func00000000000000d8(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw { { i64, [2 x i64] }, { i64, [2 x i64] }, { i64, [2 x i64] }, i8, i8, [6 x i8] }, ptr %1, i64 %2
-  %4 = icmp ne ptr %3, %0
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = icmp ne ptr %0, %3
   %5 = zext i1 %4 to i64
   ret i64 %5
 }
@@ -38,31 +34,56 @@ entry:
 ; git/optimized/urlmatch.ll
 ; slurm/optimized/parse.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000048(ptr %0, ptr %1, i64 %2) #0 {
+define i64 @func0000000000000088(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
-  %4 = icmp ugt ptr %3, %0
+  %4 = icmp ult ptr %0, %3
   %5 = zext i1 %4 to i64
   ret i64 %5
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; cmake/optimized/zstd_double_fast.c.ll
 ; cmake/optimized/zstd_fast.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
 ; cmake/optimized/zstd_opt.c.ll
 ; hermes/optimized/Domain.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
-; opencv/optimized/datastructs.cpp.ll
 ; zstd/optimized/zstd_double_fast.c.ll
 ; zstd/optimized/zstd_fast.c.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000042(ptr %0, ptr %1, i64 %2) #0 {
+define i64 @func00000000000000c2(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.llvh::detail::DenseMapPair.2882484", ptr %1, i64 %2
-  %4 = icmp eq ptr %3, %0
+  %3 = getelementptr nusw nuw %"struct.llvh::detail::DenseMapPair.3077008", ptr %1, i64 %2
+  %4 = icmp eq ptr %0, %3
+  %5 = zext i1 %4 to i64
+  ret i64 %5
+}
+
+; 5 occurrences:
+; hyperscan/optimized/goughcompile_reg.cpp.ll
+; llvm/optimized/LoopVectorize.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; llvm/optimized/VPlan.cpp.ll
+; llvm/optimized/VPlanTransforms.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000098(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw %"class.llvm::ElementCount.3140325", ptr %1, i64 %2
+  %4 = icmp ne ptr %0, %3
+  %5 = zext i1 %4 to i64
+  ret i64 %5
+}
+
+; 1 occurrences:
+; opencv/optimized/datastructs.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000082(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %4 = icmp eq ptr %0, %3
   %5 = zext i1 %4 to i64
   ret i64 %5
 }
@@ -73,7 +94,7 @@ entry:
 define i64 @func0000000000000018(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr { { i64, [1 x i64] }, ptr, { double, double }, i8, [7 x i8] }, ptr %1, i64 %2
-  %4 = icmp ne ptr %3, %0
+  %4 = icmp ne ptr %0, %3
   %5 = zext i1 %4 to i64
   ret i64 %5
 }

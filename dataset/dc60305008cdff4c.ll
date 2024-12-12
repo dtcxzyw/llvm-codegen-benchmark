@@ -1,6 +1,7 @@
 
-; 1 occurrences:
+; 2 occurrences:
 ; folly/optimized/HugePages.cpp.ll
+; gromacs/optimized/makebondedlinks.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1, ptr %2) #0 {
 entry:
@@ -12,14 +13,9 @@ entry:
   ret ptr %7
 }
 
-; 15 occurrences:
-; cmake/optimized/nghttp2_http.c.ll
-; llvm/optimized/HeaderAnalysis.cpp.ll
-; lodepng/optimized/lodepng.cpp.ll
-; nlohmann_json/optimized/unit-bjdata.cpp.ll
+; 10 occurrences:
+; boost/optimized/src.ll
 ; nlohmann_json/optimized/unit-cbor.cpp.ll
-; nlohmann_json/optimized/unit-msgpack.cpp.ll
-; nlohmann_json/optimized/unit-ubjson.cpp.ll
 ; openjdk/optimized/relocator.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; php/optimized/spl_directory.ll
@@ -29,42 +25,89 @@ entry:
 ; php/optimized/zend_compile.ll
 ; php/optimized/zend_operators.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i64 %1, ptr %2) #0 {
+define ptr @func000000000000003b(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
-  %5 = getelementptr nusw i8, ptr %0, i64 4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 4
   %6 = getelementptr nusw i8, ptr %5, i64 %4
-  %7 = getelementptr nusw i8, ptr %6, i64 1
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 1
   ret ptr %7
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/static_string.ll
 ; llvm/optimized/DWARFAcceleratorTable.cpp.ll
 ; nuttx/optimized/lib_realpath.c.ll
 ; php/optimized/var_unserializer.ll
 ; proxygen/optimized/RFC1867.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000020(ptr %0, i64 %1, ptr %2) #0 {
+define ptr @func0000000000000030(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
-  %5 = getelementptr nusw i8, ptr %0, i64 3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 3
   %6 = getelementptr i8, ptr %5, i64 %4
   %7 = getelementptr i8, ptr %6, i64 1
   ret ptr %7
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; duckdb/optimized/ub_duckdb_operator_csv_sniffer.cpp.ll
+; lz4/optimized/lz4hc.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1, ptr %2) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = getelementptr i8, ptr %0, i64 -48
   %6 = getelementptr i8, ptr %5, i64 %4
-  %7 = getelementptr nusw i8, ptr %6, i64 8
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 8
+  ret ptr %7
+}
+
+; 2 occurrences:
+; boost/optimized/alloc_lib.ll
+; lodepng/optimized/lodepng.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002f(ptr %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %1
+  %5 = getelementptr nusw i8, ptr %0, i64 -16
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 8
+  ret ptr %7
+}
+
+; 2 occurrences:
+; boost/optimized/src.ll
+; cmake/optimized/nghttp2_http.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003f(ptr %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %1
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 8
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 24
+  ret ptr %7
+}
+
+; 5 occurrences:
+; llvm/optimized/HeaderAnalysis.cpp.ll
+; nlohmann_json/optimized/unit-bjdata.cpp.ll
+; nlohmann_json/optimized/unit-cbor.cpp.ll
+; nlohmann_json/optimized/unit-msgpack.cpp.ll
+; nlohmann_json/optimized/unit-ubjson.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003a(ptr %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %1
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 16
+  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  %7 = getelementptr nusw i8, ptr %6, i64 -2
   ret ptr %7
 }
 

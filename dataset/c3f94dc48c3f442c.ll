@@ -3,7 +3,7 @@
 ; openmpi/optimized/coll_base_gather.ll
 ; quantlib/optimized/twofactormodel.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = sext i32 %3 to i64
@@ -17,7 +17,7 @@ entry:
 ; openexr/optimized/ImfDeepScanLineInputFile.cpp.ll
 ; quantlib/optimized/twofactormodel.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = sext i32 %3 to i64
@@ -32,7 +32,7 @@ entry:
 ; oiio/optimized/pngoutput.cpp.ll
 ; openmpi/optimized/coll_base_allgather.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = sext i32 %3 to i64
@@ -45,7 +45,7 @@ entry:
 ; 1 occurrences:
 ; oiio/optimized/exrinput.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = sext i32 %3 to i64

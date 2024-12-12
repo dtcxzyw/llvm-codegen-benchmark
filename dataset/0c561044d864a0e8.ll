@@ -1,5 +1,5 @@
 
-%"struct.gmx::t_sortblock.3174645" = type { [3 x i32], i32 }
+%"struct.gmx::t_sortblock.3367072" = type { [3 x i32], i32 }
 
 ; 57 occurrences:
 ; abc/optimized/giaTtopt.cpp.ll
@@ -60,12 +60,12 @@
 ; yosys/optimized/calc.ll
 ; zxing/optimized/ConcentricFinder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000041(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 8
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw i64, ptr %1, i64 %4
-  %6 = icmp eq ptr %5, %0
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
@@ -77,8 +77,8 @@ define i1 @func0000000000000001(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 3
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %"struct.gmx::t_sortblock.3174645", ptr %1, i64 %4
-  %6 = icmp eq ptr %5, %0
+  %5 = getelementptr %"struct.gmx::t_sortblock.3367072", ptr %1, i64 %4
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
@@ -90,19 +90,19 @@ entry:
   %3 = sdiv i32 %2, 8
   %4 = sext i32 %3 to i64
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = icmp ugt ptr %5, %0
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; openexr/optimized/ImfHuf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000044(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 8
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = icmp ugt ptr %5, %0
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 

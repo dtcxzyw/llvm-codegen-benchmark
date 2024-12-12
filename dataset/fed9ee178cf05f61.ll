@@ -13,7 +13,7 @@
 ; ruby/optimized/ruby.ll
 ; wireshark/optimized/packet-lte-rrc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, ptr %0, ptr %1
@@ -24,7 +24,7 @@ entry:
 ; 1 occurrences:
 ; folly/optimized/Singleton.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000081(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 64
   %4 = select i1 %3, ptr %0, ptr %1
@@ -36,7 +36,7 @@ entry:
 ; llvm/optimized/TGParser.cpp.ll
 ; rust-analyzer-rs/optimized/58xaix613yc6ngmz.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func000000000000002c(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 8
   %4 = select i1 %3, ptr %0, ptr %1
@@ -50,7 +50,7 @@ entry:
 ; luau/optimized/main.cpp.ll
 ; nlohmann_json/optimized/unit.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func00000000000000c1(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = icmp slt i8 %2, 0
   %4 = select i1 %3, ptr %0, ptr %1
@@ -61,7 +61,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CGStmtOpenMP.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000181(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %.not = icmp eq i8 %2, 0
   %3 = select i1 %.not, ptr %1, ptr %0
@@ -83,7 +83,7 @@ entry:
 ; eastl/optimized/TestString.cpp.ll
 ; eastl/optimized/TestVariant.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000141(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = icmp slt i8 %2, 0
   %4 = select i1 %3, ptr %1, ptr %0
@@ -94,7 +94,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestString.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func00000000000000cc(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = icmp slt i8 %2, 0
   %4 = select i1 %3, ptr %0, ptr %1

@@ -1,17 +1,4 @@
 
-; 3 occurrences:
-; llvm/optimized/ObjCMT.cpp.ll
-; openssl/optimized/libcrypto-lib-x_int64.ll
-; openssl/optimized/libcrypto-shlib-x_int64.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i1 %1, i64 %2) #0 {
-entry:
-  %3 = icmp ugt i64 %2, 4294967295
-  %4 = select i1 %1, i1 %3, i1 false
-  %5 = select i1 %0, i1 true, i1 %4
-  ret i1 %5
-}
-
 ; 12 occurrences:
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; hyperscan/optimized/ng_puff.cpp.ll
@@ -65,7 +52,8 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/area.ll
 ; llvm/optimized/MachineInstr.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; wireshark/optimized/import_text_dialog.cpp.ll
@@ -73,6 +61,29 @@ entry:
 define i1 @func000000000000000a(i1 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %2, 0
+  %4 = select i1 %1, i1 %3, i1 false
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; llvm/optimized/ObjCMT.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i1 %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ugt i64 %2, 2
+  %4 = select i1 %1, i1 %3, i1 false
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
+}
+
+; 2 occurrences:
+; gromacs/optimized/gmx_chi.cpp.ll
+; redis/optimized/bitops.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i64 %2, 2
   %4 = select i1 %1, i1 %3, i1 false
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5

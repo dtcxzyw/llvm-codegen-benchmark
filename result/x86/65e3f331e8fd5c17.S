@@ -4,7 +4,7 @@ func0000000000000010:                   # @func0000000000000010
 	andl	$2147483647, %esi               # imm = 0x7FFFFFFF
 	addq	%rsi, %rax
 	retq
-func0000000000000005:                   # @func0000000000000005
+func000000000000000f:                   # @func000000000000000f
 	movl	%edx, %ecx
 	addq	%rdi, %rcx
 	movl	%esi, %eax

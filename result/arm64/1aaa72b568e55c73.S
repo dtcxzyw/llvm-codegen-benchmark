@@ -1,29 +1,17 @@
-func0000000000000028:                   // @func0000000000000028
+func0000000000000048:                   // @func0000000000000048
 // %bb.0:                               // %entry
-	fmov	v4.2d, #2.00000000
-	sshr	v5.2d, v1.2d, #62
-	sshr	v6.2d, v0.2d, #62
-	cmeq	v3.2d, v5.2d, v3.2d
-	cmeq	v2.2d, v6.2d, v2.2d
-	cmhi	v1.2d, v4.2d, v1.2d
-	cmhi	v0.2d, v4.2d, v0.2d
-	uzp1	v2.4s, v2.4s, v3.4s
-	uzp1	v0.4s, v0.4s, v1.4s
-	orr	v0.16b, v0.16b, v2.16b
-	xtn	v0.4h, v0.4s
+	lsr	x8, x0, #62
+	asr	x9, x0, #62
+	cmp	x8, #0
+	ccmp	x1, x9, #4, ne
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000222:                   // @func0000000000000222
+func0000000000000842:                   // @func0000000000000842
 // %bb.0:                               // %entry
-	sshr	v4.2d, v1.2d, #29
-	sshr	v5.2d, v0.2d, #29
-	cmeq	v1.2d, v1.2d, #0
-	cmeq	v0.2d, v0.2d, #0
-	cmeq	v3.2d, v4.2d, v3.2d
-	cmeq	v2.2d, v5.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	uzp1	v2.4s, v2.4s, v3.4s
-	orr	v0.16b, v0.16b, v2.16b
-	xtn	v0.4h, v0.4s
+	asr	x8, x0, #29
+	cmp	x0, #0
+	ccmp	x1, x8, #4, ne
+	cset	w0, eq
 	ret
                                         // -- End function

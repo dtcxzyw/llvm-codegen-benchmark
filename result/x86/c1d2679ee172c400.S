@@ -16,3 +16,8 @@ func000000000000000e:                   # @func000000000000000e
 	andb	$62, %sil
 	shlxq	%rsi, %rax, %rax
 	retq
+func000000000000000b:                   # @func000000000000000b
+	movl	%edi, %eax
+	andb	$1, %sil
+	shlxq	%rsi, %rax, %rax
+	retq

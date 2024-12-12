@@ -1,9 +1,11 @@
 
-; 8 occurrences:
+; 10 occurrences:
 ; abc/optimized/cuddTable.c.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; gromacs/optimized/colvarbias_abf.cpp.ll
 ; gromacs/optimized/nrjac.cpp.ll
 ; openblas/optimized/dlasd4.c.ll

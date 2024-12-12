@@ -43,15 +43,16 @@
 ; git/optimized/transport.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hwloc/optimized/components.ll
+; hyperscan/optimized/limex_compile.cpp.ll
 ; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/truffle.c.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
+; lief/optimized/constant_time.c.ll
 ; linux/optimized/cdrom.ll
 ; linux/optimized/inotify_user.ll
 ; linux/optimized/intel_cx0_phy.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_dpll_mgr.ll
-; linux/optimized/intel_engine_user.ll
 ; linux/optimized/intel_execlists_submission.ll
 ; linux/optimized/intel_rps.ll
 ; linux/optimized/tg3.ll
@@ -63,7 +64,6 @@
 ; luajit/optimized/lj_opt_fold.ll
 ; luajit/optimized/lj_opt_fold_dyn.ll
 ; luau/optimized/IrRegAllocA64.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
@@ -111,7 +111,6 @@ entry:
 ; abc/optimized/aigPartSat.c.ll
 ; abc/optimized/bmcBCore.c.ll
 ; abc/optimized/bmcFx.c.ll
-; abc/optimized/bmcLoad.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/bmcMaj3.c.ll
@@ -162,6 +161,7 @@ entry:
 ; abc/optimized/sswSat.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
+; boost/optimized/alloc_lib.ll
 ; brotli/optimized/encode.c.ll
 ; clamav/optimized/petite.c.ll
 ; clamav/optimized/upx.c.ll
@@ -432,7 +432,6 @@ entry:
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
 ; opencv/optimized/matrix_expressions.cpp.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; openjdk/optimized/assembler_x86.ll
 ; openjdk/optimized/c1_IR.ll
 ; openjdk/optimized/chaitin.ll
@@ -633,6 +632,7 @@ entry:
 ; z3/optimized/sat_local_search.cpp.ll
 ; z3/optimized/sat_prob.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
 ; zstd/optimized/zstd_compress_literals.c.ll
 ; zxing/optimized/PDFCodewordDecoder.cpp.ll
 ; Function Attrs: nounwind

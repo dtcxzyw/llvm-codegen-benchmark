@@ -26,8 +26,7 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
-; abc/optimized/nmApi.c.ll
+; 3 occurrences:
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/Builtins.cpp.ll
 ; logos-rs/optimized/bt773r0511h3mpz.ll
@@ -35,9 +34,9 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, %1
-  %3 = shl i64 %2, 32
-  %4 = add i64 %3, 4294967296
-  %5 = and i64 %4, 30064771072
+  %3 = shl i64 %2, 8
+  %4 = add i64 %3, 65280
+  %5 = and i64 %4, 65280
   ret i64 %5
 }
 

@@ -1,5 +1,5 @@
 
-; 110 occurrences:
+; 105 occurrences:
 ; abc/optimized/bblif.c.ll
 ; abc/optimized/cuddApa.c.ll
 ; abc/optimized/extraUtilFile.c.ll
@@ -38,8 +38,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -96,13 +94,10 @@
 ; nlohmann_json/optimized/unit-unicode5.cpp.ll
 ; nlohmann_json/optimized/unit-user_defined_input.cpp.ll
 ; nlohmann_json/optimized/unit-wstring.cpp.ll
-; nuttx/optimized/lib_strftime.c.ll
 ; oiio/optimized/Writer.cpp.ll
 ; openmpi/optimized/group_bitmap.ll
 ; openssl/optimized/libcrypto-lib-bn_mpi.ll
-; openssl/optimized/libcrypto-lib-x_bignum.ll
 ; openssl/optimized/libcrypto-shlib-bn_mpi.ll
-; openssl/optimized/libcrypto-shlib-x_bignum.ll
 ; openssl/optimized/libtestutil-lib-format_output.ll
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; simdjson/optimized/simdjson.cpp.ll

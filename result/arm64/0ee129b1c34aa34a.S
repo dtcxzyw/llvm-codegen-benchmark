@@ -1,100 +1,59 @@
-func0000000000000016:                   // @func0000000000000016
+func0000000000000026:                   // @func0000000000000026
 // %bb.0:                               // %entry
 	mov	w8, #40000                      // =0x9c40
-	dup	v6.2d, x8
-	add	v4.2d, v4.2d, v6.2d
-	add	v5.2d, v5.2d, v6.2d
-	cmgt	v3.2d, v5.2d, v3.2d
-	cmgt	v2.2d, v4.2d, v2.2d
-	and	v0.16b, v0.16b, v2.16b
-	and	v1.16b, v1.16b, v3.16b
+	add	x8, x2, x8
+	cmp	x1, x8
+	csel	x0, x0, xzr, lt
 	ret
                                         // -- End function
-func0000000000000021:                   // @func0000000000000021
+func0000000000000041:                   // @func0000000000000041
 // %bb.0:                               // %entry
-	mov	w8, #1                          // =0x1
-	dup	v6.2d, x8
-	add	v4.2d, v4.2d, v6.2d
-	add	v5.2d, v5.2d, v6.2d
-	cmeq	v3.2d, v5.2d, v3.2d
-	cmeq	v2.2d, v4.2d, v2.2d
-	and	v0.16b, v0.16b, v2.16b
-	and	v1.16b, v1.16b, v3.16b
+	add	x8, x2, #1
+	cmp	x1, x8
+	csel	x0, x0, xzr, eq
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	mov	w8, #1                          // =0x1
-	dup	v6.2d, x8
-	add	v4.2d, v4.2d, v6.2d
-	add	v5.2d, v5.2d, v6.2d
-	cmhi	v3.2d, v3.2d, v5.2d
-	cmhi	v2.2d, v2.2d, v4.2d
-	and	v0.16b, v0.16b, v2.16b
-	and	v1.16b, v1.16b, v3.16b
+	add	x8, x2, #1
+	cmp	x1, x8
+	csel	x0, x0, xzr, hi
 	ret
                                         // -- End function
-func0000000000000014:                   // @func0000000000000014
+func0000000000000024:                   // @func0000000000000024
 // %bb.0:                               // %entry
-	mov	x8, #-41                        // =0xffffffffffffffd7
-	dup	v6.2d, x8
-	add	v4.2d, v4.2d, v6.2d
-	add	v5.2d, v5.2d, v6.2d
-	cmhi	v3.2d, v5.2d, v3.2d
-	cmhi	v2.2d, v4.2d, v2.2d
-	and	v0.16b, v0.16b, v2.16b
-	and	v1.16b, v1.16b, v3.16b
-	orn	v0.16b, v0.16b, v2.16b
-	orn	v1.16b, v1.16b, v3.16b
+	sub	x8, x2, #41
+	cmp	x1, x8
+	csinv	x0, x0, xzr, lo
 	ret
                                         // -- End function
-func000000000000003a:                   // @func000000000000003a
+func000000000000006a:                   // @func000000000000006a
 // %bb.0:                               // %entry
-	mov	w8, #5                          // =0x5
-	dup	v6.2d, x8
-	add	v4.2d, v4.2d, v6.2d
-	add	v5.2d, v5.2d, v6.2d
-	cmgt	v3.2d, v3.2d, v5.2d
-	cmgt	v2.2d, v2.2d, v4.2d
-	and	v0.16b, v0.16b, v2.16b
-	and	v1.16b, v1.16b, v3.16b
+	add	x8, x2, #5
+	cmp	x1, x8
+	csel	x0, x0, xzr, gt
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	movi	v6.2d, #0xffffffffffffffff
-	add	v4.2d, v4.2d, v6.2d
-	add	v5.2d, v5.2d, v6.2d
-	cmhi	v3.2d, v5.2d, v3.2d
-	cmhi	v2.2d, v4.2d, v2.2d
-	and	v0.16b, v0.16b, v2.16b
-	and	v1.16b, v1.16b, v3.16b
+	sub	x8, x2, #1
+	cmp	x1, x8
+	csel	x0, x0, xzr, lo
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	movi	v6.2d, #0xffffffffffffffff
+	sub	x8, x2, #1
+	cmp	x1, x8
 	mov	w8, #65536                      // =0x10000
-	add	v4.2d, v4.2d, v6.2d
-	add	v5.2d, v5.2d, v6.2d
-	cmeq	v3.2d, v5.2d, v3.2d
-	cmeq	v2.2d, v4.2d, v2.2d
-	dup	v4.2d, x8
-	bif	v0.16b, v4.16b, v2.16b
-	bif	v1.16b, v4.16b, v3.16b
+	csel	x0, x0, x8, eq
 	ret
                                         // -- End function
-func0000000000000038:                   // @func0000000000000038
+func0000000000000068:                   // @func0000000000000068
 // %bb.0:                               // %entry
-	mov	w8, #12                         // =0xc
-	dup	v6.2d, x8
+	add	x8, x2, #12
+	cmp	x1, x8
 	mov	w8, #10                         // =0xa
-	add	v4.2d, v4.2d, v6.2d
-	add	v5.2d, v5.2d, v6.2d
-	cmhi	v3.2d, v3.2d, v5.2d
-	cmhi	v2.2d, v2.2d, v4.2d
-	dup	v4.2d, x8
-	bif	v0.16b, v4.16b, v2.16b
-	bif	v1.16b, v4.16b, v3.16b
+	csel	x0, x0, x8, hi
 	ret
                                         // -- End function

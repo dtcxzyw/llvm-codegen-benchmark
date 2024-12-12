@@ -19,23 +19,11 @@
 ; darktable/optimized/introspection_toneequal.c.ll
 ; minetest/optimized/mg_schematic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000290(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000910(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -4611686018427387905
   %4 = icmp ult i64 %3, -4611686018427387904
   %5 = icmp ult ptr %0, %1
-  %6 = or i1 %4, %5
-  ret i1 %6
-}
-
-; 1 occurrences:
-; minetest/optimized/guiFormSpecMenu.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000310(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = add i64 %2, -2305843009213693953
-  %4 = icmp ult i64 %3, -2305843009213693952
-  %5 = icmp ugt ptr %0, %1
   %6 = or i1 %4, %5
   ret i1 %6
 }
@@ -46,7 +34,7 @@ entry:
 ; openjdk/optimized/xMemory.ll
 ; openjdk/optimized/zMemory.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000042(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 16
   %4 = icmp eq ptr %0, %1
@@ -58,7 +46,7 @@ entry:
 ; openjdk/optimized/objArrayKlass.ll
 ; openjdk/optimized/stubRoutines.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d2(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000192(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -1
   %4 = icmp slt i64 %3, 0
@@ -67,11 +55,13 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; smol-rs/optimized/28cdo1glt4bo5dm3.ll
 ; smol-rs/optimized/3jwiggzh2qey4o2f.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/eb0f70f7qg0lwhfftqxruwlu9.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000302(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 1
   %4 = icmp ne ptr %0, %1
@@ -111,7 +101,7 @@ entry:
 ; darktable/optimized/tethering.c.ll
 ; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000090(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000110(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -4611686018427387905
   %4 = icmp ult i64 %3, -4611686018427387904
@@ -123,7 +113,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/psaux.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000128(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000248(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -37
   %4 = icmp ult i64 %3, -35
@@ -135,7 +125,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestFixedString.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000318(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, -1
   %4 = icmp ne ptr %0, %1
@@ -146,7 +136,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestFixedString.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000190(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000310(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -127
   %4 = icmp ult i64 %3, -128

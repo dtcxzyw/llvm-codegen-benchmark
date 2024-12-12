@@ -17,3 +17,12 @@ func00000000000000c3:                   # @func00000000000000c3
 	shrq	$17, %rax
 	addq	%rcx, %rax
 	retq
+func0000000000000193:                   # @func0000000000000193
+	movq	%rdx, %rcx
+	movabsq	$-3689348814741910323, %rax     # imm = 0xCCCCCCCCCCCCCCCD
+	movq	%rdi, %rdx
+	mulxq	%rax, %rax, %rax
+	shrq	$5, %rax
+	cmpq	%rcx, %rsi
+	sbbq	$-1, %rax
+	retq

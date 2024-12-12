@@ -1,8 +1,10 @@
 
-; 21 occurrences:
+; 23 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; coreutils-rs/optimized/bay6adxmosnf2qi.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; image-rs/optimized/30755d6iao7ojcvl.ll

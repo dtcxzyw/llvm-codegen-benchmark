@@ -1,5 +1,5 @@
 
-; 222 occurrences:
+; 218 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcExact.c.ll
@@ -16,13 +16,10 @@
 ; abc/optimized/cecChoice.c.ll
 ; abc/optimized/cecCore.c.ll
 ; abc/optimized/cecCorr.c.ll
-; abc/optimized/cecMan.c.ll
 ; abc/optimized/cecSat.c.ll
 ; abc/optimized/cecSatG.c.ll
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
-; abc/optimized/cswMan.c.ll
-; abc/optimized/dchMan.c.ll
 ; abc/optimized/giaCSat.c.ll
 ; abc/optimized/giaCSat2.c.ll
 ; abc/optimized/giaCSat3.c.ll
@@ -164,7 +161,6 @@
 ; openssl/optimized/libapps-lib-apps.ll
 ; openusd/optimized/openexr-c.c.ll
 ; osqp/optimized/amd_aat.c.ll
-; osqp/optimized/scaling.c.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; pbrt-v4/optimized/log.cpp.ll
 ; pbrt-v4/optimized/stats.cpp.ll

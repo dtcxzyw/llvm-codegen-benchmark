@@ -1,5 +1,5 @@
 
-; 432 occurrences:
+; 431 occurrences:
 ; abc/optimized/dchSim.c.ll
 ; abc/optimized/giaJf.c.ll
 ; abc/optimized/giaMf.c.ll
@@ -32,12 +32,12 @@
 ; assimp/optimized/XmlSerializer.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/mesh_splitter.cpp.ll
+; boost/optimized/numeric.ll
 ; casadi/optimized/dae_builder_internal.cpp.ll
 ; casadi/optimized/fmu2.cpp.ll
 ; casadi/optimized/generic_type.cpp.ll
 ; casadi/optimized/mx.cpp.ll
 ; casadi/optimized/sx_instantiator.cpp.ll
-; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; cmake/optimized/cmCTestMemCheckHandler.cxx.ll
 ; cmake/optimized/cmSetTargetPropertiesCommand.cxx.ll
 ; cmake/optimized/cmSetTestsPropertiesCommand.cxx.ll
@@ -97,6 +97,7 @@
 ; gromacs/optimized/colvarbias_histogram_reweight_amd.cpp.ll
 ; gromacs/optimized/colvarbias_meta.cpp.ll
 ; gromacs/optimized/context.cpp.ll
+; gromacs/optimized/gmx_hbond.cpp.ll
 ; gromacs/optimized/index.cpp.ll
 ; gromacs/optimized/qmmminputgenerator.cpp.ll
 ; gromacs/optimized/specbond.cpp.ll
@@ -162,6 +163,7 @@
 ; llvm/optimized/CoverageMappingReader.cpp.ll
 ; llvm/optimized/DeadArgumentElimination.cpp.ll
 ; llvm/optimized/DirectiveEmitter.cpp.ll
+; llvm/optimized/DwarfExpression.cpp.ll
 ; llvm/optimized/FunctionImport.cpp.ll
 ; llvm/optimized/HeaderSearch.cpp.ll
 ; llvm/optimized/InstrInfoEmitter.cpp.ll
@@ -180,6 +182,7 @@
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luau/optimized/CodeGenA64.cpp.ll
 ; luau/optimized/Differ.cpp.ll
+; luau/optimized/IrAnalysis.cpp.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
@@ -205,7 +208,6 @@
 ; oiio/optimized/psdinput.cpp.ll
 ; oiio/optimized/rlainput.cpp.ll
 ; oniguruma/optimized/regexec.ll
-; openblas/optimized/dsum_k.c.ll
 ; opencv/optimized/3calibration.cpp.ll
 ; opencv/optimized/Model.cpp.ll
 ; opencv/optimized/aruco_board.cpp.ll
@@ -220,7 +222,6 @@
 ; opencv/optimized/camera_calibration.cpp.ll
 ; opencv/optimized/ccalib.cpp.ll
 ; opencv/optimized/charuco_detector.cpp.ll
-; opencv/optimized/checker_detector.cpp.ll
 ; opencv/optimized/chessboard.cpp.ll
 ; opencv/optimized/circlesgrid.cpp.ll
 ; opencv/optimized/colorspace.cpp.ll
@@ -267,7 +268,6 @@
 ; opencv/optimized/min_enclosing_triangle.cpp.ll
 ; opencv/optimized/msd.cpp.ll
 ; opencv/optimized/mser.cpp.ll
-; opencv/optimized/nonrigid_icp.cpp.ll
 ; opencv/optimized/objectnessBING.cpp.ll
 ; opencv/optimized/objects_associator.cpp.ll
 ; opencv/optimized/ocr_beamsearch_decoder.cpp.ll
@@ -356,7 +356,6 @@
 ; pocketpy/optimized/expr.cpp.ll
 ; pocketpy/optimized/lexer.cpp.ll
 ; postgres/optimized/postinit.ll
-; postgres/optimized/tsvector_op.ll
 ; proxygen/optimized/QPACKHeaderTable.cpp.ll
 ; qemu/optimized/block_qcow.c.ll
 ; qemu/optimized/block_qcow2-bitmap.c.ll
@@ -364,7 +363,6 @@
 ; quantlib/optimized/basket.ll
 ; quantlib/optimized/discretizedconvertible.ll
 ; quantlib/optimized/discretizedswap.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/gmres.ll
 ; quantlib/optimized/longstaffschwartzmultipathpricer.ll
 ; quantlib/optimized/markovfunctional.ll
@@ -372,6 +370,7 @@
 ; quantlib/optimized/nonstandardswap.ll
 ; quantlib/optimized/sensitivityanalysis.ll
 ; raylib/optimized/rmodels.c.ll
+; re2/optimized/prefilter_tree.cc.ll
 ; redis/optimized/arena.ll
 ; redis/optimized/arena.sym.ll
 ; redis/optimized/buf_writer.ll

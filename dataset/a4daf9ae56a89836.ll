@@ -14,17 +14,6 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/svm.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(double %0, double %1, double %2) #0 {
-entry:
-  %3 = fcmp ogt double %1, %2
-  %4 = fcmp olt double %0, 0.000000e+00
-  %5 = select i1 %3, i1 %4, i1 false
-  ret i1 %5
-}
-
-; 1 occurrences:
-; opencv/optimized/svm.cpp.ll
-; Function Attrs: nounwind
 define i1 @func000000000000002a(double %0, double %1, double %2) #0 {
 entry:
   %3 = fsub double %1, %2

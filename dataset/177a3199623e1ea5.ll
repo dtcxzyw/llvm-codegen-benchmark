@@ -20,7 +20,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/drm_edid.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000014(i8 %0, i8 %1) #0 {
+define i8 @func0000000000000024(i8 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i8 %0, -1
   %3 = icmp ult i8 %2, 64

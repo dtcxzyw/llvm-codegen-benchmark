@@ -4,7 +4,7 @@
 ; qemu/optimized/target_riscv_translate.c.ll
 ; velox/optimized/DenseHll.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i32
   %4 = sub nsw i32 %1, %3
@@ -16,7 +16,7 @@ entry:
 ; clamav/optimized/pe.c.ll
 ; qemu/optimized/target_riscv_translate.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i32
   %4 = sub nsw i32 %1, %3
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/target_riscv_translate.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000002b(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i32
   %4 = sub nsw i32 %1, %3
@@ -51,7 +51,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/chess_board.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i32
   %4 = sub nsw i32 %1, %3
@@ -62,7 +62,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/havannah.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i32
   %4 = sub nsw i32 %1, %3

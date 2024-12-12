@@ -11,7 +11,7 @@
 ; rocksdb/optimized/file_indexer.cc.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i1 %0, i64 %1) #0 {
+define i1 @func000000000000008a(i1 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = trunc i64 %2 to i32
@@ -37,7 +37,7 @@ entry:
 ; openspiel/optimized/twixtboard.cc.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i1 %0, i64 %1) #0 {
+define i1 @func000000000000004a(i1 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
@@ -68,7 +68,7 @@ entry:
 ; icu/optimized/ucnv.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i1 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 2
   %3 = trunc i64 %2 to i32
@@ -81,7 +81,7 @@ entry:
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i1 %0, i64 %1) #0 {
+define i1 @func000000000000008c(i1 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 2
   %3 = trunc i64 %2 to i32
@@ -96,7 +96,7 @@ entry:
 ; opencv/optimized/imgwarp.cpp.ll
 ; opencv/optimized/posit.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000046(i1 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32

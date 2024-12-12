@@ -63,16 +63,21 @@ func0000000000000028:                   # @func0000000000000028
 	cmpl	%esi, %edx
 	sbbq	$-1, %rax
 	retq
-func0000000000000058:                   # @func0000000000000058
-	xorl	%eax, %eax
-	cmpl	%edx, %esi
-	setge	%al
-	addq	%rdi, %rax
-	retq
 func000000000000000b:                   # @func000000000000000b
 	xorl	%eax, %eax
 	cmpl	%edx, %esi
 	sete	%al
+	addq	%rdi, %rax
+	retq
+func00000000000000a8:                   # @func00000000000000a8
+	movq	%rdi, %rax
+	cmpl	%esi, %edx
+	sbbq	$-1, %rax
+	retq
+func0000000000000058:                   # @func0000000000000058
+	xorl	%eax, %eax
+	cmpl	%edx, %esi
+	setge	%al
 	addq	%rdi, %rax
 	retq
 func000000000000005b:                   # @func000000000000005b
@@ -85,6 +90,17 @@ func0000000000000043:                   # @func0000000000000043
 	movq	%rdi, %rax
 	cmpl	%esi, %edx
 	adcq	$0, %rax
+	retq
+func00000000000000c3:                   # @func00000000000000c3
+	movq	%rdi, %rax
+	cmpl	%esi, %edx
+	adcq	$0, %rax
+	retq
+func0000000000000030:                   # @func0000000000000030
+	xorl	%eax, %eax
+	cmpl	%edx, %esi
+	setl	%al
+	addq	%rdi, %rax
 	retq
 func000000000000000a:                   # @func000000000000000a
 	xorl	%eax, %eax
@@ -108,6 +124,21 @@ func0000000000000032:                   # @func0000000000000032
 	cmpl	%edx, %esi
 	setl	%al
 	addq	%rdi, %rax
+	retq
+func00000000000000a3:                   # @func00000000000000a3
+	movq	%rdi, %rax
+	cmpl	%edx, %esi
+	adcq	$0, %rax
+	retq
+func00000000000000a2:                   # @func00000000000000a2
+	movq	%rdi, %rax
+	cmpl	%edx, %esi
+	adcq	$0, %rax
+	retq
+func00000000000000cb:                   # @func00000000000000cb
+	movq	%rdi, %rax
+	cmpl	%edx, %esi
+	sbbq	$-1, %rax
 	retq
 func0000000000000061:                   # @func0000000000000061
 	xorl	%eax, %eax

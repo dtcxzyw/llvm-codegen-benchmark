@@ -11,7 +11,7 @@ entry:
   ret i64 %3
 }
 
-; 129 occurrences:
+; 128 occurrences:
 ; arrow/optimized/bit_util.cc.ll
 ; arrow/optimized/byte_size.cc.ll
 ; arrow/optimized/feather.cc.ll
@@ -113,7 +113,6 @@ entry:
 ; openblas/optimized/dsyrk_thread_LT.c.ll
 ; openblas/optimized/dsyrk_thread_UN.c.ll
 ; openblas/optimized/dsyrk_thread_UT.c.ll
-; openblas/optimized/parameter.c.ll
 ; opencv/optimized/bardetect.cpp.ll
 ; opencv/optimized/detection_output_layer.cpp.ll
 ; opencv/optimized/nms.cpp.ll

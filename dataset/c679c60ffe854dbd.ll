@@ -18,7 +18,7 @@
 ; ipopt/optimized/IpProbingMuOracle.ll
 ; openjdk/optimized/memnode.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 3
   %3 = and i64 %2, 2147483647
@@ -32,7 +32,7 @@ entry:
 ; gromacs/optimized/specbond.cpp.ll
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000c1(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 2
   %3 = and i64 %2, 1152921504606846972
@@ -41,12 +41,11 @@ entry:
   ret i1 %5
 }
 
-; 95 occurrences:
+; 94 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; assimp/optimized/FBXConverter.cpp.ll
 ; assimp/optimized/MDLLoader.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
-; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_chat.cpp.ll
 ; crow/optimized/example_ws.cpp.ll
@@ -91,6 +90,7 @@ entry:
 ; llvm/optimized/CodeGenMapTable.cpp.ll
 ; llvm/optimized/CodeGenRegisters.cpp.ll
 ; llvm/optimized/DirectiveEmitter.cpp.ll
+; llvm/optimized/DwarfExpression.cpp.ll
 ; llvm/optimized/InstrInfoEmitter.cpp.ll
 ; llvm/optimized/MachineFunction.cpp.ll
 ; llvm/optimized/PathDiagnostic.cpp.ll
@@ -110,7 +110,6 @@ entry:
 ; oiio/optimized/psdinput.cpp.ll
 ; oiio/optimized/rlainput.cpp.ll
 ; opencv/optimized/boost.cpp.ll
-; opencv/optimized/checker_detector.cpp.ll
 ; opencv/optimized/edge_drawing.cpp.ll
 ; opencv/optimized/edgeboxes.cpp.ll
 ; opencv/optimized/einsum_layer.cpp.ll
@@ -118,13 +117,13 @@ entry:
 ; opencv/optimized/erfilter.cpp.ll
 ; opencv/optimized/exposure_compensate.cpp.ll
 ; opencv/optimized/facemarkLBF.cpp.ll
-; opencv/optimized/find_ellipses.cpp.ll
 ; opencv/optimized/flatten_layer.cpp.ll
 ; opencv/optimized/graph_cluster.cpp.ll
 ; opencv/optimized/graycodepattern.cpp.ll
 ; opencv/optimized/large_kinfu.cpp.ll
 ; opencv/optimized/linemod.cpp.ll
 ; opencv/optimized/msd.cpp.ll
+; opencv/optimized/onnx_importer.cpp.ll
 ; opencv/optimized/pct_signatures.cpp.ll
 ; opencv/optimized/rtrees.cpp.ll
 ; opencv/optimized/segmentation.cpp.ll
@@ -138,7 +137,7 @@ entry:
 ; ozz-animation/optimized/raw_animation_archive.cc.ll
 ; yosys/optimized/ezsat.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 6
   %3 = and i64 %2, 3
@@ -152,12 +151,12 @@ entry:
 ; gromacs/optimized/specbond.cpp.ll
 ; opencv/optimized/boost.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000f4(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 2
   %3 = and i64 %2, 4294967295
   %4 = add nuw nsw i64 %0, 1
-  %5 = icmp ult i64 %4, %3
+  %5 = icmp samesign ult i64 %4, %3
   ret i1 %5
 }
 

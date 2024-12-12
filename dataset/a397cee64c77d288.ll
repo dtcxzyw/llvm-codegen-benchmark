@@ -12,11 +12,11 @@
 ; spike/optimized/uksubh.ll
 ; spike/optimized/uksubw.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1023
   %3 = and i64 %0, 1023
-  %4 = icmp ult i64 %3, %2
+  %4 = icmp samesign ult i64 %3, %2
   ret i1 %4
 }
 
@@ -29,7 +29,7 @@ entry:
 ; spike/optimized/s_subMagsF32.ll
 ; spike/optimized/s_subMagsF64.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %0, %1
   %3 = and i64 %2, 255
@@ -43,13 +43,24 @@ entry:
 ; spike/optimized/s_addMagsF64.ll
 ; spike/optimized/s_subMagsF64.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2047
   %3 = and i64 %0, 2047
   %4 = sub nsw i64 %3, %2
-  %5 = icmp ult i64 %4, 63
+  %5 = icmp samesign ult i64 %4, 63
   ret i1 %5
+}
+
+; 1 occurrences:
+; boost/optimized/alloc_lib.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, -16
+  %3 = sub i64 %0, %2
+  %4 = icmp ult i64 %3, 32
+  ret i1 %4
 }
 
 ; 2 occurrences:

@@ -8,6 +8,7 @@
 ; abseil-cpp/optimized/randen_engine_test.cc.ll
 ; abseil-cpp/optimized/salted_seed_seq_test.cc.ll
 ; abseil-cpp/optimized/seed_sequences_test.cc.ll
+; boost/optimized/partition.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; folly/optimized/Random.cpp.ll
 ; grpc/optimized/tcp_server_posix.cc.ll
@@ -16,7 +17,6 @@
 ; llvm/optimized/Instructions.cpp.ll
 ; llvm/optimized/RandomNumberGenerator.cpp.ll
 ; llvm/optimized/Randstruct.cpp.ll
-; opencv/optimized/tf_importer.cpp.ll
 ; openspiel/optimized/deep_sea.cc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000040(i32 %0, i64 %1) #0 {
@@ -24,7 +24,7 @@ entry:
   %2 = lshr exact i64 %1, 2
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, 1371501266
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 

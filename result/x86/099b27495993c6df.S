@@ -12,7 +12,7 @@ func000000000000000a:                   # @func000000000000000a
 	vmovsd	%xmm0, %xmm1, %xmm1 {%k1}
 	vmovapd	%xmm1, %xmm0
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	cmpl	$4, %edi
 	setb	%al
 	kmovd	%eax, %k1
@@ -32,7 +32,14 @@ func0000000000000006:                   # @func0000000000000006
 	vmovsd	%xmm0, %xmm1, %xmm1 {%k1}
 	vmovapd	%xmm1, %xmm0
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000004:                   # @func0000000000000004
+	cmpl	$3, %edi
+	setb	%al
+	kmovd	%eax, %k1
+	vmovsd	%xmm0, %xmm1, %xmm1 {%k1}
+	vmovapd	%xmm1, %xmm0
+	retq
+func0000000000000018:                   # @func0000000000000018
 	cmpl	$5, %edi
 	setae	%al
 	kmovd	%eax, %k1

@@ -4,7 +4,7 @@ func0000000000000001:                   # @func0000000000000001
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	knotb	%k0, %k1
 	vpsllvd	%ymm2, %ymm1, %ymm1 {%k1} {z}
-	vpand	%ymm0, %ymm1, %ymm0
+	vpand	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.long	1                               # 0x1
@@ -24,7 +24,7 @@ func0000000000000002:                   # @func0000000000000002
 	vpbroadcastd	.LCPI2_0(%rip), %ymm1   # ymm1 = [1,1,1,1,1,1,1,1]
 	knotb	%k0, %k1
 	vpsllvd	%ymm2, %ymm1, %ymm1 {%k1} {z}
-	vpand	%ymm0, %ymm1, %ymm0
+	vpand	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI3_0:
 	.long	262144                          # 0x40000
@@ -37,5 +37,5 @@ func0000000000000000:                   # @func0000000000000000
 	vpbroadcastd	.LCPI3_0(%rip), %ymm1   # ymm1 = [262144,262144,262144,262144,262144,262144,262144,262144]
 	vpbroadcastd	.LCPI3_1(%rip), %ymm3   # ymm3 = [1048576,1048576,1048576,1048576,1048576,1048576,1048576,1048576]
 	vpsllvd	%ymm2, %ymm1, %ymm3 {%k1}
-	vpand	%ymm0, %ymm3, %ymm0
+	vpand	%ymm3, %ymm0, %ymm0
 	retq

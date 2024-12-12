@@ -21,7 +21,7 @@ entry:
   %3 = and i64 %2, 17179869176
   %4 = icmp slt i32 %1, 1
   %5 = select i1 %4, i64 0, i64 %3
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 

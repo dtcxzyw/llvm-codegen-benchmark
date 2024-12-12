@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; clamav/optimized/unarj.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000041(i16 %0, i32 %1) #0 {
+define i64 @func0000000000000081(i16 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = shl i32 2, %2
@@ -20,7 +20,7 @@ entry:
 ; zstd/optimized/zstd_compress_sequences.c.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000061(i16 %0, i32 %1) #0 {
+define i64 @func00000000000000c1(i16 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = shl nuw i32 1, %2

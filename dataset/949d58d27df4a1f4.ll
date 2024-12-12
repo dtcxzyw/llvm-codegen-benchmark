@@ -10,11 +10,11 @@
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000fac(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000003d4c(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = shl nuw nsw i32 1, %3
-  %5 = icmp slt i32 %4, %1
+  %5 = icmp sgt i32 %1, %4
   %6 = icmp ne i32 %0, 0
   %7 = select i1 %6, i1 %5, i1 false
   ret i1 %7

@@ -1,6 +1,7 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
+; boost/optimized/approximately_equals.ll
 ; cpython/optimized/basearith.ll
 ; cpython/optimized/crt.ll
 ; lief/optimized/bignum.c.ll

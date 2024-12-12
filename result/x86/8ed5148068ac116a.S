@@ -5,7 +5,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 func0000000000000004:                   # @func0000000000000004
 	xorl	%eax, %eax
-	cmpl	$2048, %edi                     # imm = 0x800
+	cmpl	$855638016, %edi                # imm = 0x33000000
 	cmovbq	%rsi, %rax
 	retq
 func000000000000000a:                   # @func000000000000000a

@@ -1,8 +1,9 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; linux/optimized/fs_context.ll
 ; linux/optimized/yenta_socket.ll
 ; llvm/optimized/AttributorAttributes.cpp.ll
+; llvm/optimized/CodeGenModule.cpp.ll
 ; openjdk/optimized/assembler_x86.ll
 ; wireshark/optimized/busmaster.c.ll
 ; Function Attrs: nounwind

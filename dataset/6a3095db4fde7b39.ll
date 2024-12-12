@@ -1,17 +1,17 @@
 
-%"class.std::map.2581322" = type { %"class.std::_Rb_tree.2581323" }
-%"class.std::_Rb_tree.2581323" = type { %"struct.std::_Rb_tree<unsigned int, std::pair<const unsigned int, irr::gui::IGUIFont *>, std::_Select1st<std::pair<const unsigned int, irr::gui::IGUIFont *>>, std::less<unsigned int>>::_Rb_tree_impl.2581324" }
-%"struct.std::_Rb_tree<unsigned int, std::pair<const unsigned int, irr::gui::IGUIFont *>, std::_Select1st<std::pair<const unsigned int, irr::gui::IGUIFont *>>, std::less<unsigned int>>::_Rb_tree_impl.2581324" = type { %"struct.std::_Rb_tree_key_compare.2581325", %"struct.std::_Rb_tree_header.2581326" }
-%"struct.std::_Rb_tree_key_compare.2581325" = type { %"struct.std::less.2581327" }
-%"struct.std::less.2581327" = type { i8 }
-%"struct.std::_Rb_tree_header.2581326" = type { %"struct.std::_Rb_tree_node_base.2581328", i64 }
-%"struct.std::_Rb_tree_node_base.2581328" = type { i32, ptr, ptr, ptr }
-%struct.jv.2709043 = type { i8, i8, i16, i32, %union.anon.2709044 }
-%union.anon.2709044 = type { ptr }
-%struct.FreePageBtreeInternalKey.3469830 = type { i64, %union.RelptrFreePageBtree.3469831 }
-%union.RelptrFreePageBtree.3469831 = type { ptr }
+%"class.std::map.2695442" = type { %"class.std::_Rb_tree.2695443" }
+%"class.std::_Rb_tree.2695443" = type { %"struct.std::_Rb_tree<unsigned int, std::pair<const unsigned int, irr::gui::IGUIFont *>, std::_Select1st<std::pair<const unsigned int, irr::gui::IGUIFont *>>, std::less<unsigned int>>::_Rb_tree_impl.2695444" }
+%"struct.std::_Rb_tree<unsigned int, std::pair<const unsigned int, irr::gui::IGUIFont *>, std::_Select1st<std::pair<const unsigned int, irr::gui::IGUIFont *>>, std::less<unsigned int>>::_Rb_tree_impl.2695444" = type { %"struct.std::_Rb_tree_key_compare.2695445", %"struct.std::_Rb_tree_header.2695446" }
+%"struct.std::_Rb_tree_key_compare.2695445" = type { %"struct.std::less.2695447" }
+%"struct.std::less.2695447" = type { i8 }
+%"struct.std::_Rb_tree_header.2695446" = type { %"struct.std::_Rb_tree_node_base.2695448", i64 }
+%"struct.std::_Rb_tree_node_base.2695448" = type { i32, ptr, ptr, ptr }
+%struct.jv.2821743 = type { i8, i8, i16, i32, %union.anon.2821744 }
+%union.anon.2821744 = type { ptr }
+%struct.FreePageBtreeInternalKey.3653936 = type { i64, %union.RelptrFreePageBtree.3653937 }
+%union.RelptrFreePageBtree.3653937 = type { ptr }
 
-; 46 occurrences:
+; 49 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/ifDec16.c.ll
 ; abc/optimized/ifTune.c.ll
@@ -33,13 +33,7 @@
 ; libjpeg-turbo/optimized/jccoefct.c.ll
 ; libjpeg-turbo/optimized/jdcoefct.c.ll
 ; luau/optimized/isocline.c.ll
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/eigen_mesh_conversions.cpp.ll
-; meshlab/optimized/filter_colorproc.cpp.ll
-; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
-; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; mimalloc/optimized/segment.c.ll
 ; miniaudio/optimized/unity.c.ll
@@ -51,6 +45,15 @@
 ; openjdk/optimized/jccoefct.ll
 ; openjdk/optimized/jdcoefct.ll
 ; openjdk/optimized/methodData.ll
+; openspiel/optimized/PlayAnalyser.cpp.ll
+; openspiel/optimized/amazons.cc.ll
+; openspiel/optimized/bridge.cc.ll
+; openspiel/optimized/connect_four.cc.ll
+; openspiel/optimized/euchre.cc.ll
+; openspiel/optimized/hearts.cc.ll
+; openspiel/optimized/spades.cc.ll
+; openusd/optimized/bignum.cc.ll
+; openusd/optimized/decodemv.c.ll
 ; php/optimized/json_scanner.ll
 ; php/optimized/zend_execute.ll
 ; php/optimized/zend_jit.ll
@@ -59,10 +62,10 @@
 ; sqlite/optimized/sqlite3.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 28
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 28
   %5 = getelementptr nusw [256 x i32], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
@@ -76,16 +79,15 @@ entry:
 ; postgres/optimized/shm_mq.ll
 ; ruby/optimized/addr2line.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 152
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 152
   %5 = getelementptr [256 x ptr], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
 ; 92 occurrences:
-; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; arrow/optimized/bignum.cc.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
@@ -102,9 +104,9 @@ entry:
 ; git/optimized/unpack-trees.ll
 ; icu/optimized/double-conversion-bignum.ll
 ; mimalloc/optimized/segment.c.ll
-; openexr/optimized/internal_huf.c.ll
 ; openssl/optimized/libcrypto-lib-bio_ok.ll
 ; openssl/optimized/libcrypto-shlib-bio_ok.ll
+; openusd/optimized/bignum.cc.ll
 ; php/optimized/block_pass.ll
 ; php/optimized/html.ll
 ; php/optimized/http_fopen_wrapper.ll
@@ -116,6 +118,7 @@ entry:
 ; php/optimized/phpdbg_frame.ll
 ; php/optimized/session.ll
 ; php/optimized/spl_directory.ll
+; php/optimized/stream.ll
 ; php/optimized/string.ll
 ; php/optimized/var_unserializer.ll
 ; php/optimized/xpath.ll
@@ -178,15 +181,15 @@ entry:
 ; spike/optimized/vector_unit.ll
 ; wolfssl/optimized/poly1305.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 56
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 56
   %5 = getelementptr nusw [4292 x i8], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
-; 98 occurrences:
+; 113 occurrences:
 ; abc/optimized/amapMerge.c.ll
 ; abc/optimized/compress.c.ll
 ; abc/optimized/giaEmbed.c.ll
@@ -272,8 +275,21 @@ entry:
 ; opencv/optimized/sqpnp.cpp.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/shenandoahPhaseTimings.ll
+; openspiel/optimized/CalcTables.cpp.ll
+; openspiel/optimized/SolverIF.cpp.ll
+; openspiel/optimized/amazons.cc.ll
+; openspiel/optimized/bridge.cc.ll
+; openspiel/optimized/chess_board.cc.ll
+; openspiel/optimized/connect_four.cc.ll
+; openspiel/optimized/morpion_solitaire.cc.ll
+; openspiel/optimized/othello.cc.ll
+; openspiel/optimized/spades.cc.ll
+; openspiel/optimized/tic_tac_toe.cc.ll
+; openusd/optimized/bignum.cc.ll
 ; openusd/optimized/cdef_block.c.ll
+; openusd/optimized/decodemv.c.ll
 ; openusd/optimized/drawModeStandin.cpp.ll
+; openusd/optimized/openexr-c.c.ll
 ; openvdb/optimized/Maps.cc.ll
 ; openvdb/optimized/Transform.cc.ll
 ; php/optimized/crypt_sha256.ll
@@ -284,13 +300,15 @@ entry:
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; z3/optimized/sat_clause.cpp.ll
 ; z3/optimized/small_object_allocator.cpp.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 48
-  %5 = getelementptr nusw [12 x %"class.std::map.2581322"], ptr %4, i64 0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 48
+  %5 = getelementptr nusw nuw [12 x %"class.std::map.2695442"], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
@@ -311,25 +329,40 @@ entry:
 ; wireshark/optimized/packet-oran.c.ll
 ; wireshark/optimized/packet-umts_fp.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000038(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000003c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 32
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 32
   %5 = getelementptr [2048 x [3 x i64]], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
-; 4 occurrences:
-; abseil-cpp/optimized/cord_rep_btree.cc.ll
+; 7 occurrences:
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/eigen_mesh_conversions.cpp.ll
+; meshlab/optimized/filter_colorproc.cpp.ll
+; meshlab/optimized/filter_fractal.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; php/optimized/zend_jit.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %1, %2
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 24
+  %5 = getelementptr nusw nuw [1 x i8], ptr %4, i64 0, i64 %3
+  ret ptr %5
+}
+
+; 2 occurrences:
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; jq/optimized/jv.ll
-; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000002f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 16
-  %5 = getelementptr nusw [0 x %struct.jv.2709043], ptr %4, i64 0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 16
+  %5 = getelementptr nusw nuw [0 x %struct.jv.2821743], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
@@ -345,59 +378,42 @@ entry:
   ret ptr %5
 }
 
-; 9 occurrences:
-; openspiel/optimized/PlayAnalyser.cpp.ll
-; openspiel/optimized/amazons.cc.ll
-; openspiel/optimized/bridge.cc.ll
-; openspiel/optimized/connect_four.cc.ll
-; openspiel/optimized/euchre.cc.ll
-; openspiel/optimized/hearts.cc.ll
-; openspiel/optimized/spades.cc.ll
-; openusd/optimized/bignum.cc.ll
-; openusd/optimized/decodemv.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nsw i64 %1, %2
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 11870
-  %5 = getelementptr nusw [3 x [3 x i16]], ptr %4, i64 0, i64 %3
-  ret ptr %5
-}
-
-; 15 occurrences:
-; openspiel/optimized/CalcTables.cpp.ll
-; openspiel/optimized/SolverIF.cpp.ll
-; openspiel/optimized/amazons.cc.ll
-; openspiel/optimized/bridge.cc.ll
-; openspiel/optimized/chess_board.cc.ll
-; openspiel/optimized/connect_four.cc.ll
-; openspiel/optimized/morpion_solitaire.cc.ll
-; openspiel/optimized/othello.cc.ll
-; openspiel/optimized/skat.cc.ll
-; openspiel/optimized/spades.cc.ll
-; openspiel/optimized/tic_tac_toe.cc.ll
-; openusd/optimized/bignum.cc.ll
-; openusd/optimized/decodemv.c.ll
-; openusd/optimized/drawModeStandin.cpp.ll
+; 5 occurrences:
+; actix-rs/optimized/1heyflno2zbhb99l.ll
+; boost/optimized/src.ll
+; openexr/optimized/internal_huf.c.ll
 ; openusd/optimized/openexr-c.c.ll
+; zed-rs/optimized/f3wmqxw6x607w7cbx1edvfc95.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nuw nsw i64 %1, %2
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 11852
-  %5 = getelementptr nusw [3 x [3 x i16]], ptr %4, i64 0, i64 %3
+  %3 = add i64 %1, %2
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 1
+  %5 = getelementptr nusw nuw [15 x i8], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
 ; 2 occurrences:
-; openusd/optimized/bignum.cc.ll
-; openusd/optimized/openexr-c.c.ll
+; openspiel/optimized/skat.cc.ll
+; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000003e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %1, %2
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 12
-  %5 = getelementptr nusw [65537 x i32], ptr %4, i64 0, i64 %3
+  %3 = add nuw nsw i64 %1, %2
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 4
+  %5 = getelementptr nusw [0 x i32], ptr %4, i64 0, i64 %3
+  ret ptr %5
+}
+
+; 2 occurrences:
+; abseil-cpp/optimized/cord_rep_btree.cc.ll
+; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002e(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw i64 %1, %2
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 4
+  %5 = getelementptr nusw [0 x i32], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 
@@ -406,10 +422,10 @@ entry:
 ; cpython/optimized/obmalloc.ll
 ; linux/optimized/sock_reuseport.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 48
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 48
   %5 = getelementptr [0 x ptr], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
@@ -422,7 +438,7 @@ define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = getelementptr i8, ptr %0, i64 23
-  %5 = getelementptr [254 x %struct.FreePageBtreeInternalKey.3469830], ptr %4, i64 0, i64 %3
+  %5 = getelementptr [254 x %struct.FreePageBtreeInternalKey.3653936], ptr %4, i64 0, i64 %3
   ret ptr %5
 }
 

@@ -6,7 +6,7 @@ func0000000000000019:                   # @func0000000000000019
 	vpcmpnltq	%ymm1, %ymm0, %k1
 	vpsubq	%ymm1, %ymm0, %ymm0 {%k1}
 	retq
-func0000000000000013:                   # @func0000000000000013
+func0000000000000022:                   # @func0000000000000022
 	vpcmpnltuq	%ymm1, %ymm0, %k1
 	vpsubq	%ymm1, %ymm0, %ymm0 {%k1}
 	retq
@@ -37,5 +37,9 @@ func0000000000000010:                   # @func0000000000000010
 	retq
 func0000000000000018:                   # @func0000000000000018
 	vpcmpnltq	%ymm1, %ymm0, %k1
+	vpsubq	%ymm1, %ymm0, %ymm0 {%k1}
+	retq
+func0000000000000024:                   # @func0000000000000024
+	vpcmpnleuq	%ymm1, %ymm0, %k1
 	vpsubq	%ymm1, %ymm0, %ymm0 {%k1}
 	retq

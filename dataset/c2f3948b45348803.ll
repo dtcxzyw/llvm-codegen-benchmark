@@ -1,12 +1,11 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; git/optimized/diff.ll
 ; git/optimized/dir.ll
 ; gromacs/optimized/gmx_mindist.cpp.ll
 ; gromacs/optimized/shellfc.cpp.ll
 ; icu/optimized/collationdatawriter.ll
 ; imgui/optimized/imgui.cpp.ll
-; linux/optimized/md-autodetect.ll
 ; linux/optimized/recovery.ll
 ; opencv/optimized/lapack.cpp.ll
 ; openjdk/optimized/macro.ll

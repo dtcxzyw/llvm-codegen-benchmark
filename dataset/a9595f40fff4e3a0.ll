@@ -5,7 +5,7 @@
 define i1 @func0000000000000003(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = select i1 %1, double %2, double 1.000000e+00
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   %5 = fcmp ult double %4, 0.000000e+00
   ret i1 %5
 }
@@ -65,7 +65,7 @@ entry:
 define i1 @func0000000000000002(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = select i1 %1, double %2, double 0.000000e+00
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   %5 = fcmp olt double %4, 0x41DFFFFFFFC00000
   ret i1 %5
 }

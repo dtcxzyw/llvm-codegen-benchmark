@@ -1,6 +1,6 @@
 func0000000000000001:                   # @func0000000000000001
 	vpaddq	%ymm2, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rcx
 	movabsq	$5037190915060954895, %rsi      # imm = 0x45E7B272F608770F
@@ -90,7 +90,7 @@ func0000000000000020:                   # @func0000000000000020
 	retq
 func0000000000000029:                   # @func0000000000000029
 	vpaddq	%ymm2, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rcx
 	movabsq	$4835703278458516699, %rsi      # imm = 0x431BDE82D7B634DB
@@ -142,7 +142,7 @@ func0000000000000029:                   # @func0000000000000029
 	.quad	4293967296                      # 0xfff0bdc0
 func0000000000000000:                   # @func0000000000000000
 	vpaddq	%ymm2, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rax
 	movabsq	$4835703278458516699, %rcx      # imm = 0x431BDE82D7B634DB

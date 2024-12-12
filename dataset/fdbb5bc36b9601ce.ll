@@ -6,7 +6,7 @@
 ; spike/optimized/fdt_sw.ll
 ; wireshark/optimized/k12.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1, i8 %2) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = or disjoint i32 %0, %1
@@ -22,7 +22,7 @@ entry:
 ; harfbuzz/optimized/hb-subset-cff2.cc.ll
 ; openjdk/optimized/hb-ot-cff2-table.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i32 %1, i8 %2) #0 {
+define i32 @func0000000000000064(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = or disjoint i32 %0, %1

@@ -6,7 +6,7 @@
 ; ocio/optimized/FileFormatResolveCube.cpp.ll
 ; ocio/optimized/Lut3DOp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, %1
   %3 = mul nsw i32 %2, %1

@@ -1,7 +1,7 @@
 func0000000000000029:                   # @func0000000000000029
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpaddd	%ymm3, %ymm2, %ymm2
-	vpmulld	%ymm1, %ymm2, %ymm1
+	vpmulld	%ymm2, %ymm1, %ymm1
 	vpsrad	$31, %ymm1, %ymm2
 	vpsrld	$30, %ymm2, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
@@ -30,7 +30,7 @@ func0000000000000021:                   # @func0000000000000021
 	.long	2                               # 0x2
 func0000000000000028:                   # @func0000000000000028
 	vpaddd	.LCPI2_0(%rip){1to8}, %ymm2, %ymm2
-	vpmulld	%ymm1, %ymm2, %ymm1
+	vpmulld	%ymm2, %ymm1, %ymm1
 	vpsrld	$31, %ymm1, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpsrad	$1, %ymm1, %ymm1

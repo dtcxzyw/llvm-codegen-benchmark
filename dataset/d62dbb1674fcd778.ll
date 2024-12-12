@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/regcomp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000c1(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %0, %1
   %3 = icmp slt i32 %2, 51
@@ -15,7 +15,7 @@ entry:
 ; openjdk/optimized/ad_x86.ll
 ; openjdk/optimized/mlib_c_ImageLookUp_f.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000166(i32 %0, i32 %1) #0 {
+define i1 @func00000000000004c6(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, %0
   %3 = icmp slt i32 %2, 250
@@ -30,7 +30,7 @@ entry:
 ; ncnn/optimized/layernorm_x86_avx512.cpp.ll
 ; ncnn/optimized/layernorm_x86_fma.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000cc(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 4
   %3 = icmp slt i32 %2, 16
@@ -42,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/matrix_wrap.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000421(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %0, %1
   %3 = icmp eq i32 %2, 0

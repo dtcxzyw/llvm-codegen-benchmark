@@ -1,8 +1,11 @@
 
-; 6 occurrences:
+; 9 occurrences:
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
+; jemalloc/optimized/tcache.ll
+; jemalloc/optimized/tcache.pic.ll
+; jemalloc/optimized/tcache.sym.ll
 ; libjpeg-turbo/optimized/jdhuff.c.ll
 ; openexr/optimized/ImfHuf.cpp.ll
 ; ruby/optimized/iseq.ll

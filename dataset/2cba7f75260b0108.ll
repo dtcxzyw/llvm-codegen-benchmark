@@ -5,7 +5,7 @@
 ; llvm/optimized/PlistReporter.cpp.ll
 ; typst-rs/optimized/3dimj4rf5dyrieyi.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000051(i32 %0, i64 %1, i64 %2) #0 {
+define i64 @func00000000000000a1(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 32
   %4 = or disjoint i64 %3, %1

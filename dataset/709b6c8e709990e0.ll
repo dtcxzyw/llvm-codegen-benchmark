@@ -1,8 +1,10 @@
 
-; 3 occurrences:
+; 5 occurrences:
+; cmake/optimized/crc32.c.ll
 ; ocio/optimized/Lut1DOpGPU.cpp.ll
 ; ruby/optimized/bignum.ll
 ; rust-analyzer-rs/optimized/2mbx5ptcpq6fo7sc.ll
+; zlib/optimized/crc32.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000008(ptr %0, i64 %1) #0 {
 entry:
@@ -13,18 +15,16 @@ entry:
   ret ptr %4
 }
 
-; 4 occurrences:
-; coreutils-rs/optimized/22bojphyikqmi872.ll
-; coreutils-rs/optimized/4o7j3eorsq1l9mcp.ll
+; 2 occurrences:
 ; folly/optimized/SpookyHashV1.cpp.ll
 ; folly/optimized/SpookyHashV2.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
   %.fr = freeze i64 %1
   %2 = urem i64 %.fr, 96
   %3 = sub nuw i64 %.fr, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -36,6 +36,19 @@ entry:
   %2 = udiv i64 %1, 3
   %3 = mul nsw i64 %2, -12
   %4 = getelementptr i8, ptr %0, i64 %3
+  ret ptr %4
+}
+
+; 2 occurrences:
+; coreutils-rs/optimized/22bojphyikqmi872.ll
+; coreutils-rs/optimized/4o7j3eorsq1l9mcp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
+entry:
+  %.fr = freeze i64 %1
+  %2 = urem i64 %.fr, 144
+  %3 = sub nuw i64 %.fr, %2
+  %4 = getelementptr nusw i8, ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -57,12 +70,12 @@ entry:
 ; arrow/optimized/type.cc.ll
 ; arrow/optimized/vector_hash.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %.fr = freeze i64 %1
   %2 = urem i64 %.fr, 576
   %3 = sub nuw i64 %.fr, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 

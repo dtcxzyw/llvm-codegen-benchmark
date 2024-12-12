@@ -1,5 +1,5 @@
 
-; 148 occurrences:
+; 147 occurrences:
 ; abc/optimized/wlcUif.c.ll
 ; abseil-cpp/optimized/match.cc.ll
 ; cmake/optimized/json_value.cpp.ll
@@ -30,7 +30,6 @@
 ; llvm/optimized/Lint.cpp.ll
 ; llvm/optimized/ODRDiagsEmitter.cpp.ll
 ; llvm/optimized/RDFGraph.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RetainCountChecker.cpp.ll
 ; llvm/optimized/RetainCountDiagnostics.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll

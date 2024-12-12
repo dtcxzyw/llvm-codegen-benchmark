@@ -12,7 +12,7 @@ func000000000000000c:                   // @func000000000000000c
 	and	w8, w2, #0xff
 	cmp	w8, #35
 	cset	w8, ne
-	tst	w8, w1
+	tst	w1, w8
 	csel	x0, xzr, x0, ne
 	ret
                                         // -- End function

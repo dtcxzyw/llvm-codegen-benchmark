@@ -11,6 +11,19 @@ entry:
   ret i16 %4
 }
 
+; 3 occurrences:
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
+; quantlib/optimized/date.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000007(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %0, %1
+  %3 = srem i32 %2, 7
+  %4 = trunc nuw nsw i32 %3 to i16
+  ret i16 %4
+}
+
 ; 1 occurrences:
 ; wireshark/optimized/packet-smb.c.ll
 ; Function Attrs: nounwind

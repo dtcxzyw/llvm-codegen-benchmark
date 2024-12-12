@@ -11,16 +11,12 @@ entry:
   ret ptr %6
 }
 
-; 9 occurrences:
-; casadi/optimized/bspline.cpp.ll
-; casadi/optimized/bspline_interpolant.cpp.ll
+; 5 occurrences:
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
 ; eastl/optimized/TestTupleVector.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/DomTreeUpdater.cpp.ll
 ; llvm/optimized/MachineDomTreeUpdater.cpp.ll
-; sentencepiece/optimized/builder.cc.ll
-; sentencepiece/optimized/unigram_model_trainer.cc.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000056(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -55,6 +51,21 @@ entry:
   ret ptr %5
 }
 
+; 5 occurrences:
+; casadi/optimized/bspline.cpp.ll
+; casadi/optimized/bspline_interpolant.cpp.ll
+; cvc5/optimized/core_solver.cpp.ll
+; sentencepiece/optimized/builder.cc.ll
+; sentencepiece/optimized/unigram_model_trainer.cc.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000057(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub nsw i64 %1, %2
+  %4 = shl nsw i64 %3, 2
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
 ; 1 occurrences:
 ; opencv/optimized/edge_drawing.cpp.ll
 ; Function Attrs: nounwind
@@ -80,7 +91,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestAlgorithm.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000076(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func00000000000000f6(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = shl nsw i64 %3, 2

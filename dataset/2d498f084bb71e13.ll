@@ -1,11 +1,12 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; linux/optimized/vgaarb.ll
 ; llvm/optimized/JumpDiagnostics.cpp.ll
 ; qemu/optimized/hw_net_cadence_gem.c.ll
 ; quickjs/optimized/quickjs-libc.ll
 ; quickjs/optimized/quickjs.ll
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i64 %1, i32 %2) #0 {
 entry:

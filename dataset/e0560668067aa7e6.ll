@@ -317,7 +317,7 @@ define i64 @func0000000000000019(i64 %0, i8 %1) #0 {
 entry:
   %.not = icmp eq i8 %1, 12
   %2 = select i1 %.not, i64 137438953472, i64 0
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   ret i64 %3
 }
 

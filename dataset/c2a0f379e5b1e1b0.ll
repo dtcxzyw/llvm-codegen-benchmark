@@ -18,10 +18,10 @@
 ; quantlib/optimized/equityindex.ll
 ; quantlib/optimized/interestrateindex.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1, i1 %2) #0 {
+define i1 @func0000000000000054(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = icmp eq i64 %0, %1
-  %4 = and i1 %3, %2
+  %4 = and i1 %2, %3
   %5 = icmp sgt i64 %0, %1
   %6 = or i1 %5, %4
   ret i1 %6
@@ -36,23 +36,11 @@ entry:
 ; grpc/optimized/timer.cc.ll
 ; grpc/optimized/timer_generic.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i64 %0, i64 %1, i1 %2) #0 {
+define i1 @func000000000000004c(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = icmp eq i64 %0, %1
-  %4 = and i1 %3, %2
+  %4 = and i1 %2, %3
   %5 = icmp slt i64 %0, %1
-  %6 = or i1 %5, %4
-  ret i1 %6
-}
-
-; 1 occurrences:
-; gromacs/optimized/gmx_xpm2ps.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1, i1 %2) #0 {
-entry:
-  %3 = icmp eq i64 %0, %1
-  %4 = and i1 %3, %2
-  %5 = icmp ult i64 %0, %1
   %6 = or i1 %5, %4
   ret i1 %6
 }

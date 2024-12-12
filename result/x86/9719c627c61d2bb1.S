@@ -52,3 +52,9 @@ func000000000000005d:                   # @func000000000000005d
 	addq	%rdi, %rax
 	shlq	$4, %rax
 	retq
+func000000000000003f:                   # @func000000000000003f
+	movl	%edx, %eax
+	imulq	%rsi, %rdi
+	addq	%rdi, %rax
+	shlq	$2, %rax
+	retq

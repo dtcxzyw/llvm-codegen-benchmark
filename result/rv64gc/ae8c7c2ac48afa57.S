@@ -64,7 +64,7 @@ func000000000000004c:                   # @func000000000000004c
 .LCPI3_0:
 	.quad	0x3ff0000000000000              # double 1
 func0000000000000022:                   # @func0000000000000022
-	flt.d	a0, fa0, fa1
+	flt.d	a0, fa1, fa0
 	beqz	a0, .LBB3_3
 	lui	a0, %hi(.LCPI3_0)
 	fld	fa5, %lo(.LCPI3_0)(a0)

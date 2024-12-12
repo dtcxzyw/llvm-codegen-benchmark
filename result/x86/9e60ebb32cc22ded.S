@@ -1,9 +1,9 @@
 func0000000000000000:                   # @func0000000000000000
-	imull	$1960620803, %edx, %eax         # imm = 0x74DCB303
+	imull	$1174137155, %edx, %eax         # imm = 0x45FBE943
 	xorl	%esi, %eax
-	imull	$-1638916925, %eax, %eax        # imm = 0x9E501CC3
+	imull	$-512718531, %eax, %eax         # imm = 0xE170893D
 	xorl	%edi, %eax
-	imull	$-933190689, %eax, %eax         # imm = 0xC860A3DF
+	imull	$153742143, %eax, %eax          # imm = 0x929EB3F
 	retq
 func0000000000000014:                   # @func0000000000000014
 	movl	%edx, %eax

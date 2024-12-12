@@ -1,3 +1,15 @@
+func0000000000000007:                   # @func0000000000000007
+	movabsq	$9218868437227405312, %rax      # imm = 0x7FF0000000000000
+	andq	%rsi, %rax
+	orq	%rdi, %rax
+	shrq	$52, %rax
+	retq
+func000000000000000c:                   # @func000000000000000c
+	movq	%rsi, %rax
+	andl	$248, %eax
+	orq	%rdi, %rax
+	shrq	$3, %rax
+	retq
 func0000000000000002:                   # @func0000000000000002
 	movabsq	$36028797018963968, %rax        # imm = 0x80000000000000
 	andq	%rsi, %rax

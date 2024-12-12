@@ -1,5 +1,5 @@
 
-; 212 occurrences:
+; 217 occurrences:
 ; abc/optimized/giaNf.c.ll
 ; assimp/optimized/MD5Loader.cpp.ll
 ; assimp/optimized/TextureTransform.cpp.ll
@@ -69,12 +69,10 @@
 ; gromacs/optimized/slaev2.cpp.ll
 ; gromacs/optimized/slar1vx.cpp.ll
 ; gromacs/optimized/slarrbx.cpp.ll
-; gromacs/optimized/slasd3.cpp.ll
 ; gromacs/optimized/slasd4.cpp.ll
 ; gromacs/optimized/slasd5.cpp.ll
 ; gromacs/optimized/slasd8.cpp.ll
 ; gromacs/optimized/slasq2.cpp.ll
-; gromacs/optimized/slasq5.cpp.ll
 ; gromacs/optimized/slasq6.cpp.ll
 ; gromacs/optimized/slasv2.cpp.ll
 ; gromacs/optimized/ssteqr.cpp.ll
@@ -154,7 +152,6 @@
 ; oiio/optimized/imagebufalgo_xform.cpp.ll
 ; oiio/optimized/texture3d.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
-; openblas/optimized/ieeeck.c.ll
 ; opencv/optimized/bardetect.cpp.ll
 ; opencv/optimized/bgfg_gmg.cpp.ll
 ; opencv/optimized/checker_detector.cpp.ll
@@ -212,6 +209,14 @@
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
 ; xgboost/optimized/gbtree.cc.ll
+; zed-rs/optimized/1qb020ndphzxmvf33d06yonm0.ll
+; zed-rs/optimized/1uum3gw9a30ezdy8xtn1px0l6.ll
+; zed-rs/optimized/70oxjc4k9uv7kvad3t5u6bzag.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
+; zed-rs/optimized/9jrz8x0nc5lkiswz6iqpo0zcg.ll
+; zed-rs/optimized/b8qhlvoy2nskqwvkt99c6cu9u.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:

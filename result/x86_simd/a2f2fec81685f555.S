@@ -15,10 +15,10 @@ func0000000000000010:                   # @func0000000000000010
 	vzeroupper
 	retq
 .LCPI1_0:
-	.long	4294967231                      # 0xffffffbf
+	.long	4294965358                      # 0xfffff86e
 .LCPI1_1:
-	.long	26                              # 0x1a
-func0000000000000050:                   # @func0000000000000050
+	.long	4294963421                      # 0xfffff0dd
+func0000000000000090:                   # @func0000000000000090
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpsllw	$15, %xmm1, %xmm0

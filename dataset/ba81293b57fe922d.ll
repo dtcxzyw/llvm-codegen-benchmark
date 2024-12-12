@@ -25,7 +25,7 @@
 define double @func0000000000000002(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
-  %4 = fcmp ogt double %3, %0
+  %4 = fcmp olt double %0, %3
   %5 = select i1 %4, double %0, double %3
   ret double %5
 }
@@ -65,7 +65,7 @@ entry:
 define double @func0000000000000004(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
-  %4 = fcmp olt double %3, %0
+  %4 = fcmp ogt double %0, %3
   %5 = select i1 %4, double %0, double %3
   ret double %5
 }
@@ -82,7 +82,7 @@ entry:
 define double @func000000000000000a(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
-  %4 = fcmp oge double %3, %0
+  %4 = fcmp ole double %0, %3
   %5 = select i1 %4, double %0, double %3
   ret double %5
 }
@@ -97,7 +97,7 @@ entry:
 define double @func000000000000000c(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
-  %4 = fcmp ole double %3, %0
+  %4 = fcmp oge double %0, %3
   %5 = select i1 %4, double %0, double %3
   ret double %5
 }

@@ -81,7 +81,7 @@ entry:
   ret i32 %3
 }
 
-; 33 occurrences:
+; 34 occurrences:
 ; assimp/optimized/zip.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
 ; darktable/optimized/AbstractLJpegDecoder.cpp.ll
@@ -97,6 +97,7 @@ entry:
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
+; lvgl/optimized/lv_draw_label.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/miniz.c.ll
@@ -123,13 +124,15 @@ entry:
   ret i32 %3
 }
 
-; 6 occurrences:
+; 8 occurrences:
 ; hyperscan/optimized/gough.c.ll
 ; hyperscan/optimized/mcclellan.c.ll
 ; image-rs/optimized/34r8dryqmufipcqz.ll
 ; llvm/optimized/ASTWriterStmt.cpp.ll
 ; oiio/optimized/Writer.cpp.ll
 ; typst-rs/optimized/53ug9lwflkq7ucu8.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i16 %1) #0 {
 entry:
@@ -153,11 +156,10 @@ entry:
   ret i32 %3
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; cmake/optimized/cover.c.ll
 ; cmake/optimized/fastcover.c.ll
 ; cpython/optimized/marshal.ll
-; linux/optimized/he.ll
 ; linux/optimized/vht.ll
 ; oiio/optimized/Writer.cpp.ll
 ; wireshark/optimized/packet-packetbb.c.ll

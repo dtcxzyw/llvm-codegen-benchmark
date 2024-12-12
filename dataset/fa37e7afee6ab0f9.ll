@@ -6,13 +6,13 @@ define i64 @func000000000000003c(i64 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 8
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   %6 = zext nneg i8 %1 to i64
   %7 = or i64 %5, %6
   ret i64 %7
 }
 
-; 255 occurrences:
+; 262 occurrences:
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/builder_dict.cc.ll
 ; arrow/optimized/scalar.cc.ll
@@ -59,6 +59,7 @@ entry:
 ; harfbuzz/optimized/hb-subset-cff2.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
+; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; just-rs/optimized/3022oi333lxf39jd.ll
 ; libpng/optimized/pngrutil.c.ll
@@ -251,6 +252,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_truetype.c.ll
 ; tls-rs/optimized/1pt3w3786vo2dyk0.ll
+; turborepo-rs/optimized/74s3x9u7hld928rwmttmetb1y.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
 ; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
@@ -268,12 +270,17 @@ entry:
 ; wireshark/optimized/pppdump.c.ll
 ; wireshark/optimized/tvbuff.c.ll
 ; wireshark/optimized/vwr.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001b(i64 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 16
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   %6 = zext i8 %1 to i64
   %7 = or disjoint i64 %5, %6
   ret i64 %7
@@ -319,7 +326,7 @@ define i64 @func0000000000000018(i64 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 8
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   %6 = zext i8 %1 to i64
   %7 = or i64 %5, %6
   ret i64 %7
@@ -333,13 +340,13 @@ define i64 @func0000000000000010(i64 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw i64 %3, 56
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   %6 = zext i8 %1 to i64
   %7 = or i64 %5, %6
   ret i64 %7
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; folly/optimized/IPAddressV6.cpp.ll
@@ -348,12 +355,13 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; wireshark/optimized/erf.c.ll
 ; wireshark/optimized/tvbuff.c.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001a(i64 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 8
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   %6 = zext i8 %1 to i64
   %7 = or i64 %5, %6
   ret i64 %7
@@ -377,7 +385,7 @@ entry:
   ret i64 %7
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; libpng/optimized/pngrtran.c.ll
 ; llvm/optimized/StreamChecker.cpp.ll
 ; openjdk/optimized/ByteBinary1Bit.ll
@@ -385,12 +393,13 @@ entry:
 ; openjdk/optimized/ByteBinary4Bit.ll
 ; openjdk/optimized/pngrtran.ll
 ; php/optimized/pcre2_jit_compile.ll
+; zed-rs/optimized/etmluiftgqx5jpyivviyferrj.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003f(i64 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 10
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   %6 = zext nneg i8 %1 to i64
   %7 = or disjoint i64 %5, %6
   ret i64 %7
@@ -403,7 +412,7 @@ define i64 @func000000000000003e(i64 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 8
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   %6 = zext nneg i8 %1 to i64
   %7 = or i64 %5, %6
   ret i64 %7
@@ -419,7 +428,7 @@ define i64 @func000000000000003b(i64 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
   %4 = shl nuw nsw i64 %3, 32
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   %6 = zext i8 %1 to i64
   %7 = or disjoint i64 %5, %6
   ret i64 %7

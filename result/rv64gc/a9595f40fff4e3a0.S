@@ -6,7 +6,7 @@ func0000000000000003:                   # @func0000000000000003
 	lui	a0, %hi(.LCPI0_0)
 	fld	fa1, %lo(.LCPI0_0)(a0)
 .LBB0_2:                                # %entry
-	fmul.d	fa5, fa1, fa0
+	fmul.d	fa5, fa0, fa1
 	fmv.d.x	fa4, zero
 	fle.d	a0, fa4, fa5
 	xori	a0, a0, 1
@@ -60,7 +60,7 @@ func0000000000000002:                   # @func0000000000000002
 .LBB4_2:                                # %entry
 	lui	a0, %hi(.LCPI4_0)
 	fld	fa5, %lo(.LCPI4_0)(a0)
-	fmul.d	fa4, fa1, fa0
+	fmul.d	fa4, fa0, fa1
 	flt.d	a0, fa4, fa5
 	ret
 func000000000000000e:                   # @func000000000000000e

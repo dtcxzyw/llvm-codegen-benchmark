@@ -28,10 +28,9 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; libquic/optimized/speed.cc.ll
-; linux/optimized/nfs4renewd.ll
 ; qemu/optimized/migration_dirtyrate.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
@@ -55,7 +54,9 @@ entry:
   ret i64 %5
 }
 
-; 6 occurrences:
+; 8 occurrences:
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side_basic.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestRingBuffer.cpp.ll
 ; eastl/optimized/TestVector.cpp.ll
@@ -65,7 +66,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sdiv exact i64 %2, 120
+  %3 = sdiv exact i64 %2, 200
   %4 = add nsw i64 %3, %1
   %5 = sub nsw i64 %4, %0
   ret i64 %5
@@ -89,7 +90,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 2
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = sub i64 %4, %0
   ret i64 %5
 }
@@ -118,7 +119,7 @@ entry:
 define i64 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 48
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = sub i64 %4, %0
   ret i64 %5
 }
@@ -131,7 +132,7 @@ entry:
 define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sub nsw i64 %4, %0
   ret i64 %5
 }

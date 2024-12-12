@@ -71,7 +71,7 @@ entry:
   %3 = lshr i32 %1, %2
   %4 = shl nuw nsw i32 %3, 2
   %5 = and i32 %4, 4
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   ret i32 %6
 }
 

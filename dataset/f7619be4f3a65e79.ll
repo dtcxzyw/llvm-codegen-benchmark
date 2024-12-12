@@ -1,9 +1,8 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; gromacs/optimized/cellsizes.cpp.ll
 ; minetest/optimized/guiScrollBar.cpp.ll
 ; nori/optimized/vscrollpanel.cpp.ll
-; nuklear/optimized/unity.c.ll
 ; oiio/optimized/imagebufalgo_xform.cpp.ll
 ; oiio/optimized/maketexture.cpp.ll
 ; opencv/optimized/bagofwords_classification.cpp.ll

@@ -5,12 +5,12 @@
 ; libquic/optimized/dtoa.cc.ll
 ; php/optimized/zend_strtod.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000488(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000988(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 2
   %3 = getelementptr i8, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 20
-  %5 = getelementptr nusw i8, ptr %0, i64 24
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 24
   %6 = icmp ugt ptr %4, %5
   ret i1 %6
 }

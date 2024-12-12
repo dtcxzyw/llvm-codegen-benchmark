@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 13 occurrences:
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; cmake/optimized/archive_write_set_format_shar.c.ll
@@ -11,6 +11,8 @@
 ; php/optimized/uuencode.ll
 ; pybind11/optimized/test_numpy_dtypes.cpp.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i64 %0) #0 {
 entry:
@@ -20,7 +22,7 @@ entry:
   ret i8 %3
 }
 
-; 7 occurrences:
+; 9 occurrences:
 ; abc/optimized/ifDelay.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
@@ -28,6 +30,8 @@ entry:
 ; llvm/optimized/MachineInstr.cpp.ll
 ; llvm/optimized/TargetInstrInfo.cpp.ll
 ; luau/optimized/IrRegAllocA64.cpp.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i64 %0) #0 {
 entry:

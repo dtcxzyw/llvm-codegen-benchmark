@@ -25,7 +25,6 @@
 ; openssl/optimized/safe_math_test-bin-safe_math_test.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; qemu/optimized/fpu_softfloat.c.ll
-; qemu/optimized/hw_usb_imx-usb-phy.c.ll
 ; raylib/optimized/raudio.c.ll
 ; ruby/optimized/class.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
@@ -37,6 +36,7 @@
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; z3/optimized/algebraic_numbers.cpp.ll
 ; z3/optimized/nlsat_interval_set.cpp.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
@@ -45,7 +45,7 @@ entry:
   ret i1 %3
 }
 
-; 149 occurrences:
+; 141 occurrences:
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/abcBalance.c.ll
 ; abc/optimized/abcFx.c.ll
@@ -61,7 +61,6 @@ entry:
 ; abc/optimized/giaBalLut.c.ll
 ; abc/optimized/giaEquiv.c.ll
 ; abc/optimized/giaEsop.c.ll
-; abc/optimized/giaHash.c.ll
 ; abc/optimized/giaJf.c.ll
 ; abc/optimized/giaLf.c.ll
 ; abc/optimized/giaMfs.c.ll
@@ -81,10 +80,8 @@ entry:
 ; abc/optimized/satInterB.c.ll
 ; abc/optimized/satInterP.c.ll
 ; abc/optimized/satStore.c.ll
-; clamav/optimized/qtmd.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd8.c.ll
-; cmake/optimized/archive_read_support_format_tar.c.ll
 ; cvc5/optimized/equality_engine.cpp.ll
 ; entt/optimized/benchmark.cpp.ll
 ; entt/optimized/custom_identifier.cpp.ll
@@ -120,7 +117,6 @@ entry:
 ; linux/optimized/intel_guc_capture.ll
 ; linux/optimized/intel_panel.ll
 ; linux/optimized/nfs4xdr.ll
-; linux/optimized/tcp_ipv4.ll
 ; linux/optimized/yenta_socket.ll
 ; llvm/optimized/ASTStructuralEquivalence.cpp.ll
 ; llvm/optimized/AggressiveInstCombine.cpp.ll
@@ -169,14 +165,10 @@ entry:
 ; proxygen/optimized/StructuredHeadersDecoder.cpp.ll
 ; proxygen/optimized/StructuredHeadersEncoder.cpp.ll
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll
-; qemu/optimized/ui_vnc-enc-zrle.c.ll
 ; quickjs/optimized/quickjs.ll
 ; re2/optimized/prog.cc.ll
-; sentencepiece/optimized/builder.cc.ll
 ; sentencepiece/optimized/extension_set.cc.ll
 ; sentencepiece/optimized/generated_message_util.cc.ll
-; sentencepiece/optimized/normalizer.cc.ll
-; sentencepiece/optimized/unigram_model.cc.ll
 ; sentencepiece/optimized/wire_format_lite.cc.ll
 ; spike/optimized/clrs32.ll
 ; stb/optimized/stb_dxt.c.ll
@@ -203,7 +195,7 @@ entry:
   ret i1 %3
 }
 
-; 50 occurrences:
+; 51 occurrences:
 ; abc/optimized/extraUtilMult.c.ll
 ; abc/optimized/giaFrames.c.ll
 ; abc/optimized/kitHop.c.ll
@@ -254,6 +246,7 @@ entry:
 ; z3/optimized/fpa_rewriter.cpp.ll
 ; z3/optimized/mpbq.cpp.ll
 ; z3/optimized/mpf.cpp.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
@@ -262,63 +255,42 @@ entry:
   ret i1 %3
 }
 
-; 47 occurrences:
-; abc/optimized/FxchDiv.c.ll
-; abc/optimized/abcFx.c.ll
-; abc/optimized/amapRule.c.ll
-; abc/optimized/cecSweep.c.ll
-; cmake/optimized/archive_ppmd7.c.ll
-; entt/optimized/benchmark.cpp.ll
-; entt/optimized/entity_copy.cpp.ll
-; entt/optimized/group.cpp.ll
-; entt/optimized/helper.cpp.ll
-; entt/optimized/meta_ctor.cpp.ll
-; entt/optimized/meta_func.cpp.ll
-; entt/optimized/observer.cpp.ll
-; entt/optimized/registry.cpp.ll
-; entt/optimized/runtime_view.cpp.ll
-; entt/optimized/sigh_mixin.cpp.ll
-; entt/optimized/sparse_set.cpp.ll
-; entt/optimized/storage.cpp.ll
-; entt/optimized/storage_entity.cpp.ll
-; entt/optimized/view.cpp.ll
-; hyperscan/optimized/literals.cpp.ll
-; hyperscan/optimized/ng_corpus_properties.cpp.ll
-; jq/optimized/jv.ll
-; llvm/optimized/CGCall.cpp.ll
-; llvm/optimized/Instructions.cpp.ll
-; llvm/optimized/SelectionDAG.cpp.ll
+; 5 occurrences:
 ; meilisearch-rs/optimized/4llghrvh6vzci59o.ll
-; ockam-rs/optimized/1145kugil9dl94a2.ll
-; ockam-rs/optimized/gotvfwvqrrp4xgl.ll
-; protobuf/optimized/extension_set.cc.ll
-; protobuf/optimized/wire_format.cc.ll
-; protobuf/optimized/wire_format_lite.cc.ll
-; proxygen/optimized/StructuredHeadersBuffer.cpp.ll
-; recastnavigation/optimized/RecastContour.cpp.ll
-; regex-rs/optimized/4sqmacerw61c696o.ll
-; regex-rs/optimized/6f4i3c8223u3bmw.ll
-; sentencepiece/optimized/builder.cc.ll
-; sentencepiece/optimized/normalizer.cc.ll
-; sentencepiece/optimized/unigram_model.cc.ll
-; sentencepiece/optimized/wire_format_lite.cc.ll
-; wasmtime-rs/optimized/3jqdez78s6gt3fnc.ll
 ; wireshark/optimized/packet-ppi-antenna.c.ll
 ; wireshark/optimized/packet-ppi-gps.c.ll
 ; wireshark/optimized/packet-ppi-sensor.c.ll
 ; wireshark/optimized/packet-ppi-vector.c.ll
-; wireshark/optimized/packet-usb-hid.c.ll
-; yalantinglibs/optimized/test_messages_proto2.struct_pb.cc.ll
-; yalantinglibs/optimized/test_messages_proto3.struct_pb.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %0, %1
-  %3 = icmp ugt i32 %2, 262143
+  %3 = icmp samesign ugt i32 %2, 262143
   ret i1 %3
 }
 
-; 170 occurrences:
+; 12 occurrences:
+; abc/optimized/giaHash.c.ll
+; clamav/optimized/qtmd.c.ll
+; cmake/optimized/archive_read_support_format_tar.c.ll
+; linux/optimized/tcp_ipv4.ll
+; qemu/optimized/ui_vnc-enc-zrle.c.ll
+; sentencepiece/optimized/builder.cc.ll
+; sentencepiece/optimized/normalizer.cc.ll
+; sentencepiece/optimized/unigram_model.cc.ll
+; wireshark/optimized/packet-ppi-antenna.c.ll
+; wireshark/optimized/packet-ppi-gps.c.ll
+; wireshark/optimized/packet-ppi-sensor.c.ll
+; wireshark/optimized/packet-ppi-vector.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+entry:
+  %2 = xor i32 %0, %1
+  %3 = icmp samesign ult i32 %2, 128
+  ret i1 %3
+}
+
+; 172 occurrences:
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
@@ -382,6 +354,8 @@ entry:
 ; abc/optimized/xsatSolverAPI.c.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; clamav/optimized/XzDec.c.ll
 ; clamav/optimized/archive.cpp.ll
 ; clamav/optimized/mszipd.c.ll
@@ -515,6 +489,61 @@ define i1 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %0, %1
   %3 = icmp ne i32 %2, 3
+  ret i1 %3
+}
+
+; 46 occurrences:
+; abc/optimized/FxchDiv.c.ll
+; abc/optimized/abcFx.c.ll
+; abc/optimized/amapRule.c.ll
+; abc/optimized/cecSweep.c.ll
+; cmake/optimized/archive_ppmd7.c.ll
+; entt/optimized/benchmark.cpp.ll
+; entt/optimized/entity_copy.cpp.ll
+; entt/optimized/group.cpp.ll
+; entt/optimized/helper.cpp.ll
+; entt/optimized/meta_ctor.cpp.ll
+; entt/optimized/meta_func.cpp.ll
+; entt/optimized/observer.cpp.ll
+; entt/optimized/registry.cpp.ll
+; entt/optimized/runtime_view.cpp.ll
+; entt/optimized/sigh_mixin.cpp.ll
+; entt/optimized/sparse_set.cpp.ll
+; entt/optimized/storage.cpp.ll
+; entt/optimized/storage_entity.cpp.ll
+; entt/optimized/view.cpp.ll
+; hyperscan/optimized/literals.cpp.ll
+; hyperscan/optimized/ng_corpus_properties.cpp.ll
+; jq/optimized/jv.ll
+; llvm/optimized/CGCall.cpp.ll
+; llvm/optimized/Instructions.cpp.ll
+; llvm/optimized/SelectionDAG.cpp.ll
+; ockam-rs/optimized/1145kugil9dl94a2.ll
+; ockam-rs/optimized/gotvfwvqrrp4xgl.ll
+; protobuf/optimized/extension_set.cc.ll
+; protobuf/optimized/wire_format.cc.ll
+; protobuf/optimized/wire_format_lite.cc.ll
+; proxygen/optimized/StructuredHeadersBuffer.cpp.ll
+; recastnavigation/optimized/RecastContour.cpp.ll
+; regex-rs/optimized/4sqmacerw61c696o.ll
+; regex-rs/optimized/6f4i3c8223u3bmw.ll
+; sentencepiece/optimized/builder.cc.ll
+; sentencepiece/optimized/normalizer.cc.ll
+; sentencepiece/optimized/unigram_model.cc.ll
+; sentencepiece/optimized/wire_format_lite.cc.ll
+; wasmtime-rs/optimized/3jqdez78s6gt3fnc.ll
+; wireshark/optimized/packet-ppi-antenna.c.ll
+; wireshark/optimized/packet-ppi-gps.c.ll
+; wireshark/optimized/packet-ppi-sensor.c.ll
+; wireshark/optimized/packet-ppi-vector.c.ll
+; wireshark/optimized/packet-usb-hid.c.ll
+; yalantinglibs/optimized/test_messages_proto2.struct_pb.cc.ll
+; yalantinglibs/optimized/test_messages_proto3.struct_pb.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
+entry:
+  %2 = xor i32 %0, %1
+  %3 = icmp ugt i32 %2, 127
   ret i1 %3
 }
 

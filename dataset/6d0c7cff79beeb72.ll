@@ -4,7 +4,7 @@
 ; softposit-rs/optimized/1lokjdca9mvxc3pe.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000006c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 10
   %3 = and i64 %2, %0
@@ -12,7 +12,8 @@ entry:
   ret i1 %4
 }
 
-; 11 occurrences:
+; 12 occurrences:
+; boost/optimized/src.ll
 ; lief/optimized/bignum.c.ll
 ; linux/optimized/init_64.ll
 ; linux/optimized/netlabel_kapi.ll
@@ -44,10 +45,10 @@ entry:
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; stockfish/optimized/movegen.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 40
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   %4 = icmp eq i64 %3, 0
   ret i1 %4
 }
@@ -55,7 +56,7 @@ entry:
 ; 1 occurrences:
 ; stockfish/optimized/movegen.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 8
   %3 = and i64 %2, %0
@@ -70,7 +71,7 @@ entry:
 define i1 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 49
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   %4 = icmp ne i64 %3, 0
   ret i1 %4
 }

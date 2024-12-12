@@ -1,5 +1,5 @@
 
-; 44 occurrences:
+; 43 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcExtract.c.ll
 ; abc/optimized/abcMiter.c.ll
@@ -35,7 +35,6 @@
 ; abc/optimized/sswPairs.c.ll
 ; abc/optimized/sswRarity.c.ll
 ; abc/optimized/sswSim.c.ll
-; abc/optimized/sswSimSat.c.ll
 ; abc/optimized/sswSweep.c.ll
 ; abc/optimized/sswUnique.c.ll
 ; llvm/optimized/Expr.cpp.ll

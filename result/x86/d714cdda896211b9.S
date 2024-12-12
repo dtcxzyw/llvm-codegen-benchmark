@@ -58,7 +58,12 @@ func0000000000000035:                   # @func0000000000000035
 	retq
 func0000000000000022:                   # @func0000000000000022
 	addq	%rsi, %rdi
-	leaq	2(%rdi,%rdi), %rax
+	leaq	4(,%rdi,4), %rax
+	retq
+func0000000000000002:                   # @func0000000000000002
+	leaq	(%rdi,%rsi), %rax
+	shlq	$6, %rax
+	addq	$64, %rax
 	retq
 func000000000000002f:                   # @func000000000000002f
 	addq	%rsi, %rdi

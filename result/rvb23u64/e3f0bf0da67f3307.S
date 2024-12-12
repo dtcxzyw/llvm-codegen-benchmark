@@ -9,7 +9,7 @@ func0000000000000002:                   # @func0000000000000002
 .LBB0_2:                                # %entry
 	fli.d	fa4, 1.0
 	fdiv.d	fa5, fa4, fa5
-	fmul.d	fa0, fa5, fa0
+	fmul.d	fa0, fa0, fa5
 	ret
 func0000000000000008:                   # @func0000000000000008
 	fmv.d.x	fa5, zero
@@ -28,5 +28,5 @@ func000000000000000a:                   # @func000000000000000a
 	fmv.d	fa4, fa1
 .LBB2_2:                                # %entry
 	fdiv.d	fa5, fa5, fa4
-	fmul.d	fa0, fa5, fa0
+	fmul.d	fa0, fa0, fa5
 	ret

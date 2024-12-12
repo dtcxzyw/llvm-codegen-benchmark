@@ -9,16 +9,15 @@ entry:
   %2 = shl i32 %1, 1
   %3 = and i32 %2, 30
   %4 = shl nuw i32 2, %3
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; abc/optimized/aigTsim.c.ll
 ; abc/optimized/mvcUtils.c.ll
 ; abc/optimized/saigPhase.c.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001e(i32 %0, i32 %1) #0 {
@@ -26,7 +25,7 @@ entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = and i32 %2, 30
   %4 = shl nuw nsw i32 1, %3
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -38,7 +37,7 @@ entry:
   %2 = shl nsw i32 %1, 1
   %3 = and i32 %2, 30
   %4 = shl nuw nsw i32 1, %3
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -59,7 +58,7 @@ entry:
   %2 = shl i32 %1, 1
   %3 = and i32 %2, 30
   %4 = shl nuw nsw i32 1, %3
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -72,7 +71,7 @@ entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = and i32 %2, 30
   %4 = shl nuw i32 2, %3
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 

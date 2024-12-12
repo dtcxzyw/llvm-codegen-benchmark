@@ -4,13 +4,13 @@ func0000000000000001:                   # @func0000000000000001
 	testl	%esi, %edi
 	sete	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	decl	%esi
 	incl	%edi
 	testl	%esi, %edi
 	sete	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	decl	%esi
 	incl	%edi
 	testl	%esi, %edi

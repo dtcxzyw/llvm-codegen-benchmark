@@ -3,7 +3,7 @@ func0000000000000001:                   # @func0000000000000001
 	fcvt.d.w	fa5, a0
 	fli.d	fa4, 1.0
 	fdiv.d	fa5, fa4, fa5
-	fmul.d	fa0, fa5, fa0
+	fmul.d	fa0, fa0, fa5
 	ret
 .LCPI1_0:
 	.quad	0x400921fb54442d18              # double 3.1415926535897931

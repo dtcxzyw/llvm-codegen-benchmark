@@ -16,7 +16,7 @@ entry:
 ; icu/optimized/ucurr.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000046(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = sdiv i32 %3, 32
@@ -62,7 +62,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/kdtree.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = sdiv i32 %3, 2
@@ -73,7 +73,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/hybrid_binarizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002b(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000004b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = sdiv i32 %3, 25

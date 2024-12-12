@@ -29,10 +29,10 @@ entry:
 ; openjdk/optimized/cmsio0.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0) #0 {
+define i32 @func0000000000000018(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 254
-  %2 = icmp ugt i32 %1, 9
+  %2 = icmp samesign ugt i32 %1, 9
   %3 = and i32 %0, 255
   %4 = select i1 %2, i32 9, i32 %3
   ret i32 %4

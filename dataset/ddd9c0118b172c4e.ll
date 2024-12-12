@@ -1,10 +1,9 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; assimp/optimized/ASELoader.cpp.ll
-; hyperscan/optimized/ng_netflow.cpp.ll
 ; minetest/optimized/CGUITTFont.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
   %3 = sub nuw nsw i64 %2, %0
@@ -17,7 +16,7 @@ entry:
 ; hermes/optimized/SimpleBytecodeBuilder.cpp.ll
 ; spike/optimized/sim.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -4096
   %3 = sub nuw i64 %2, %0

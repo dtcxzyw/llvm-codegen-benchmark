@@ -12,7 +12,7 @@
 ; opencv/optimized/version.cpp.ll
 ; postgres/optimized/execExpr.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr exact i32 %2, 16
   %4 = icmp sgt i32 %3, %1
@@ -44,7 +44,7 @@ entry:
 ; minetest/optimized/mapgen_singlenode.cpp.ll
 ; minetest/optimized/mg_ore.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr exact i32 %2, 16
   %4 = icmp slt i32 %3, %1

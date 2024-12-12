@@ -1,8 +1,7 @@
 
-; 42 occurrences:
+; 41 occurrences:
 ; grpc/optimized/party.cc.ll
 ; linux/optimized/ccm.ll
-; linux/optimized/ctr.ll
 ; linux/optimized/dm-stripe.ll
 ; linux/optimized/gcm.ll
 ; linux/optimized/lskcipher.ll
@@ -47,7 +46,7 @@ define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = xor i64 %2, -1
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   ret i64 %4
 }
 

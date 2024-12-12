@@ -1,5 +1,5 @@
 
-; 113 occurrences:
+; 109 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; abc/optimized/giaDup.c.ll
 ; abc/optimized/giaEnable.c.ll
@@ -14,7 +14,6 @@
 ; cmake/optimized/powerpc.c.ll
 ; cmake/optimized/zstd_compress_sequences.c.ll
 ; cpython/optimized/dtoa.ll
-; darktable/optimized/RawImageDataU16.cpp.ll
 ; delta-rs/optimized/3qkwqfk85qralejq.ll
 ; freetype/optimized/psaux.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -35,9 +34,7 @@
 ; linux/optimized/netdev.ll
 ; linux/optimized/nlattr.ll
 ; linux/optimized/percpu.ll
-; linux/optimized/rpl.ll
 ; linux/optimized/seq_memory.ll
-; linux/optimized/sky2.ll
 ; linux/optimized/virtio_net.ll
 ; linux/optimized/virtio_ring.ll
 ; linux/optimized/x_tables.ll
@@ -108,7 +105,6 @@
 ; yosys/optimized/BigUnsigned.ll
 ; z3/optimized/dl_sparse_table.cpp.ll
 ; z3/optimized/mpf.cpp.ll
-; z3/optimized/watch_list.cpp.ll
 ; zlib/optimized/deflate.c.ll
 ; zstd/optimized/fse_compress.c.ll
 ; zstd/optimized/zstd_compress_sequences.c.ll
@@ -121,7 +117,7 @@ entry:
   ret i32 %3
 }
 
-; 256 occurrences:
+; 258 occurrences:
 ; abc/optimized/acecFadds.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/cecCorr.c.ll
@@ -143,6 +139,7 @@ entry:
 ; abseil-cpp/optimized/nonsecure_base_test.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; abseil-cpp/optimized/uniform_real_distribution_test.cc.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; brotli/optimized/encode.c.ll
 ; brotli/optimized/metablock.c.ll
@@ -182,7 +179,6 @@ entry:
 ; hermes/optimized/dtoa.c.ll
 ; hyperscan/optimized/limex_simd128.c.ll
 ; hyperscan/optimized/limex_simd256.c.ll
-; icu/optimized/calendar.ll
 ; icu/optimized/collation.ll
 ; icu/optimized/collationdata.ll
 ; icu/optimized/package.ll
@@ -218,7 +214,6 @@ entry:
 ; linux/optimized/buffer.ll
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/filter.ll
-; linux/optimized/gso.ll
 ; linux/optimized/hda_codec.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/ich8lan.ll
@@ -296,6 +291,9 @@ entry:
 ; luajit/optimized/minilua.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; lvgl/optimized/lv_flex.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll

@@ -17,20 +17,3 @@ func000000000000002b:                   # @func000000000000002b
 	cmovgeq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
-func000000000000001a:                   # @func000000000000001a
-	andl	$1, %edx
-	leaq	32(,%rdx,4), %rcx
-	xorl	%eax, %eax
-	testl	%esi, %esi
-	cmovsq	%rcx, %rax
-	addq	%rdi, %rax
-	retq
-func0000000000000030:                   # @func0000000000000030
-	andl	$1, %edx
-	movl	$4, %ecx
-	subq	%rdx, %rcx
-	cmpl	$192, %esi
-	movl	$2, %eax
-	cmovneq	%rcx, %rax
-	addq	%rdi, %rax
-	retq

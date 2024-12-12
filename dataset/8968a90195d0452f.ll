@@ -1,6 +1,5 @@
 
-; 6 occurrences:
-; libzmq/optimized/local_thr.cpp.ll
+; 5 occurrences:
 ; openjdk/optimized/xDirector.ll
 ; openjdk/optimized/zDirector.ll
 ; quantlib/optimized/analytic_discr_geom_av_price_heston.ll

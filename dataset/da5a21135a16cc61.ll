@@ -15,7 +15,9 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
+; 5 occurrences:
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; openssl/optimized/libdefault-lib-sskdf.ll

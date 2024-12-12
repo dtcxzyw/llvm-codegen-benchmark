@@ -13,7 +13,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = and i64 %1, 2097151
   %5 = mul nuw nsw i64 %4, %3
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -52,7 +52,7 @@ entry:
   ret i64 %6
 }
 
-; 78 occurrences:
+; 79 occurrences:
 ; arrow/optimized/bignum.cc.ll
 ; double_conversion/optimized/bignum.cc.ll
 ; icu/optimized/double-conversion-bignum.ll
@@ -131,6 +131,7 @@ entry:
 ; openusd/optimized/bignum.cc.ll
 ; openusd/optimized/json.cpp.ll
 ; z3/optimized/mpn.cpp.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
@@ -162,7 +163,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = and i64 %1, 4294967295
   %5 = mul nuw nsw i64 %4, %3
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 

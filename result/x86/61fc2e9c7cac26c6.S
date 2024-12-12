@@ -4,3 +4,15 @@ func000000000000000a:                   # @func000000000000000a
 	setbe	%al
 	movq	%rdi, %rdx
 	retq
+func0000000000000002:                   # @func0000000000000002
+	xorl	%eax, %eax
+	cmpq	%rdx, %rsi
+	sete	%al
+	movq	%rdi, %rdx
+	retq
+func0000000000000012:                   # @func0000000000000012
+	xorl	%eax, %eax
+	cmpq	%rdx, %rsi
+	setae	%al
+	movq	%rdi, %rdx
+	retq

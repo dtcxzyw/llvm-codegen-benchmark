@@ -1,5 +1,5 @@
 
-; 49 occurrences:
+; 55 occurrences:
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/grouper.cc.ll
 ; cvc5/optimized/proof_cnf_stream.cpp.ll
@@ -10,6 +10,7 @@
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; darktable/optimized/introspection_hotpixels.c.ll
+; darktable/optimized/introspection_liquify.c.ll
 ; darktable/optimized/lut3dgmic.cpp.ll
 ; darktable/optimized/print_settings.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
@@ -36,6 +37,8 @@
 ; jemalloc/optimized/hpdata.pic.ll
 ; jemalloc/optimized/hpdata.sym.ll
 ; linux/optimized/select.ll
+; llvm/optimized/CGCall.cpp.ll
+; llvm/optimized/CGExprCXX.cpp.ll
 ; llvm/optimized/MinGW.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
@@ -47,8 +50,11 @@
 ; opencv/optimized/stitching_detailed.cpp.ll
 ; redis/optimized/hpdata.ll
 ; redis/optimized/hpdata.sym.ll
+; redis/optimized/quicklist.ll
 ; wasmedge/optimized/refInstr.cpp.ll
 ; xgboost/optimized/rank_metric.cc.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000c(ptr %0, i64 %1) #0 {
 entry:
@@ -58,7 +64,7 @@ entry:
   ret ptr %4
 }
 
-; 198 occurrences:
+; 197 occurrences:
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -226,7 +232,6 @@ entry:
 ; minetest/optimized/COBJMeshFileLoader.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; minetest/optimized/anaglyph.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/chat.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/dynamicshadowsrender.cpp.ll
@@ -280,20 +285,18 @@ entry:
   ret ptr %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; folly/optimized/AsyncSocket.cpp.ll
-; proxygen/optimized/HTTPSession.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 3
-  %3 = getelementptr nusw i8, ptr %0, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
   ret ptr %3
 }
 
-; 88 occurrences:
+; 98 occurrences:
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
-; harfbuzz/optimized/hb-subset.cc.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTDiagnostic.cpp.ll
@@ -335,13 +338,17 @@ entry:
 ; llvm/optimized/RewriteObjC.cpp.ll
 ; llvm/optimized/Sema.cpp.ll
 ; llvm/optimized/SemaAvailability.cpp.ll
+; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
+; llvm/optimized/SemaCoroutine.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; llvm/optimized/SemaDeclObjC.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/SemaHLSL.cpp.ll
+; llvm/optimized/SemaLookup.cpp.ll
+; llvm/optimized/SemaOpenCL.cpp.ll
 ; llvm/optimized/SemaStmt.cpp.ll
 ; llvm/optimized/SemaTemplate.cpp.ll
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
@@ -363,6 +370,7 @@ entry:
 ; llvm/optimized/TransUnusedInitDelegate.cpp.ll
 ; llvm/optimized/TransZeroOutPropsInDealloc.cpp.ll
 ; llvm/optimized/Transforms.cpp.ll
+; llvm/optimized/USRGeneration.cpp.ll
 ; llvm/optimized/UncountedCallArgsChecker.cpp.ll
 ; llvm/optimized/UncountedLambdaCapturesChecker.cpp.ll
 ; llvm/optimized/UncountedLocalVarsChecker.cpp.ll
@@ -378,14 +386,20 @@ entry:
 ; openblas/optimized/dtrmm_iunucopy.c.ll
 ; openblas/optimized/dtrmm_iutncopy.c.ll
 ; openblas/optimized/dtrmm_iutucopy.c.ll
+; proxygen/optimized/HTTPSession.cpp.ll
 ; wasmedge/optimized/refInstr.cpp.ll
 ; z3/optimized/dl_rule.cpp.ll
+; zed-rs/optimized/04fhfmlktnjtedpduz35189qo.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/b8qhlvoy2nskqwvkt99c6cu9u.ll
+; zed-rs/optimized/cu6jannw5ajqip9tl6sqjzagm.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 4
   %3 = and i64 %2, 68719476720
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 

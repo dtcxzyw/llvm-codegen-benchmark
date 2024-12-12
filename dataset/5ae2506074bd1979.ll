@@ -1,12 +1,13 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; git/optimized/http.ll
 ; linux/optimized/hdac_device.ll
 ; linux/optimized/uncore_snbep.ll
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
+; llvm/optimized/SanitizerSpecialCaseList.cpp.ll
 ; slurm/optimized/job_test.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i32 %0, i1 %1, i64 %2) #0 {
+define i64 @func0000000000000061(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %2, 2
   %4 = select i1 %1, i64 %2, i64 %3
@@ -16,11 +17,12 @@ entry:
   ret i64 %7
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; linux/optimized/uncore_snbep.ll
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
+; llvm/optimized/SanitizerSpecialCaseList.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(i32 %0, i1 %1, i64 %2) #0 {
+define i64 @func0000000000000041(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %2, 1095216660480
   %4 = select i1 %1, i64 %2, i64 %3
@@ -30,9 +32,10 @@ entry:
   ret i64 %7
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
+; llvm/optimized/SanitizerSpecialCaseList.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0, i1 %1, i64 %2) #0 {
 entry:
@@ -47,7 +50,7 @@ entry:
 ; 1 occurrences:
 ; portaudio/optimized/pa_linux_alsa.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000036(i32 %0, i1 %1, i64 %2) #0 {
+define i64 @func0000000000000066(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %2, 2
   %4 = select i1 %1, i64 %2, i64 %3
@@ -60,7 +63,7 @@ entry:
 ; 1 occurrences:
 ; portaudio/optimized/pa_linux_alsa.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000026(i32 %0, i1 %1, i64 %2) #0 {
+define i64 @func0000000000000046(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %2, 8
   %4 = select i1 %1, i64 %2, i64 %3

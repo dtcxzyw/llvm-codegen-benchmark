@@ -1,31 +1,25 @@
 
-%struct.qht_bucket.2595227 = type { %struct.QemuSpin.2595228, %struct.QemuSeqLock.2595229, [4 x i32], [4 x ptr], ptr }
-%struct.QemuSpin.2595228 = type { i32 }
-%struct.QemuSeqLock.2595229 = type { i32 }
-%struct.nghttp2_map_bucket.2616026 = type { i32, i32, ptr }
-%struct.code.3352070 = type { i8, i8, i16 }
+%struct.qht_bucket.2708813 = type { %struct.QemuSpin.2708814, %struct.QemuSeqLock.2708815, [4 x i32], [4 x ptr], ptr }
+%struct.QemuSpin.2708814 = type { i32 }
+%struct.QemuSeqLock.2708815 = type { i32 }
+%struct.nghttp2_map_bucket.2729480 = type { i32, i32, ptr }
+%struct.code.3539872 = type { i8, i8, i16 }
 
-; 29 occurrences:
+; 23 occurrences:
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/encode.c.ll
 ; linux/optimized/balloc.ll
 ; linux/optimized/fault.ll
 ; linux/optimized/fd.ll
 ; linux/optimized/gup.ll
-; linux/optimized/head64.ll
-; linux/optimized/hibernate.ll
-; linux/optimized/hibernate_64.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/init_64.ll
 ; linux/optimized/locks.ll
-; linux/optimized/machine_kexec_64.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mprotect.ll
 ; linux/optimized/mremap.ll
 ; linux/optimized/namei.ll
-; linux/optimized/openclose.ll
 ; linux/optimized/page_vma_mapped.ll
-; linux/optimized/pagewalk.ll
 ; linux/optimized/percpu.ll
 ; linux/optimized/pti.ll
 ; linux/optimized/rmap.ll
@@ -39,8 +33,8 @@
 define ptr @func0000000000000000(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = and i64 %3, %1
-  %5 = getelementptr %struct.qht_bucket.2595227, ptr %0, i64 %4
+  %4 = and i64 %1, %3
+  %5 = getelementptr %struct.qht_bucket.2708813, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -151,11 +145,11 @@ entry:
 ; velox/optimized/VectorEncoding.cpp.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = and i64 %3, %1
-  %5 = getelementptr nusw %struct.nghttp2_map_bucket.2616026, ptr %0, i64 %4
+  %4 = and i64 %1, %3
+  %5 = getelementptr nusw nuw %struct.nghttp2_map_bucket.2729480, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -174,11 +168,11 @@ entry:
 ; stb/optimized/stb_sprintf.c.ll
 ; zstd/optimized/fse_compress.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = and i64 %3, %1
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %4 = and i64 %1, %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -194,8 +188,8 @@ entry:
 define ptr @func0000000000000004(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = and i64 %3, %1
-  %5 = getelementptr %struct.code.3352070, ptr %0, i64 %4
+  %4 = and i64 %1, %3
+  %5 = getelementptr %struct.code.3539872, ptr %0, i64 %4
   ret ptr %5
 }
 

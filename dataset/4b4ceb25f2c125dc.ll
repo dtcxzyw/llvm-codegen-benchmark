@@ -1,8 +1,8 @@
 
-%class.btVector3.2705429 = type { [4 x float] }
-%class.btRotationalLimitMotor2.2706150 = type { float, float, float, float, float, float, float, i8, float, float, i8, float, i8, float, i8, float, i8, float, float, float, float, i32 }
+%class.btVector3.2818144 = type { [4 x float] }
+%class.btRotationalLimitMotor2.2818864 = type { float, float, float, float, float, float, float, i8, float, float, i8, float, i8, float, i8, float, i8, float, float, float, float, i32 }
 
-; 51 occurrences:
+; 50 occurrences:
 ; bullet3/optimized/btGImpactBvh.ll
 ; bullet3/optimized/btGImpactQuantizedBvh.ll
 ; bullet3/optimized/btGeneric6DofSpring2Constraint.ll
@@ -21,7 +21,6 @@
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -55,28 +54,28 @@
 ; recastnavigation/optimized/DetourDebugDraw.cpp.ll
 ; recastnavigation/optimized/DetourNavMesh.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i1 %1, i64 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = and i64 %3, 4294967295
   %5 = select i1 %1, i64 0, i64 %4
-  %6 = getelementptr nusw [3 x %class.btVector3.2705429], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [3 x %class.btVector3.2818144], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; bullet3/optimized/btGeneric6DofSpring2Constraint.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i1 %1, i64 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 4294967295
   %4 = and i64 %3, 4294967295
   %5 = select i1 %1, i64 2, i64 %4
-  %6 = getelementptr nusw [3 x %class.btRotationalLimitMotor2.2706150], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [3 x %class.btRotationalLimitMotor2.2818864], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
-; 22 occurrences:
+; 21 occurrences:
 ; bullet3/optimized/btSoftBody.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
@@ -85,7 +84,6 @@ entry:
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_developability.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_measure.cpp.ll
@@ -100,12 +98,12 @@ entry:
 ; meshlab/optimized/seam_remover.cpp.ll
 ; openusd/optimized/loopPatchBuilder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i1 %1, i64 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
   %4 = and i64 %3, 4294967295
   %5 = select i1 %1, i64 0, i64 %4
-  %6 = getelementptr nusw [3 x i32], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [3 x i32], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 

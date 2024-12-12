@@ -1,11 +1,12 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; clamav/optimized/unpack.cpp.ll
 ; freetype/optimized/pcf.c.ll
 ; linux/optimized/psmouse-base.ll
+; lvgl/optimized/lv_roller.ll
 ; minetest/optimized/dungeongen.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0) #0 {

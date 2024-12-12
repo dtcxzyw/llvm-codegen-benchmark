@@ -1,12 +1,11 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; abc/optimized/sclLibUtil.c.ll
 ; libjpeg-turbo/optimized/jccoefct.c.ll
 ; linux/optimized/bitmap.ll
 ; linux/optimized/md-bitmap.ll
 ; linux/optimized/xhci-ring.ll
 ; llvm/optimized/PDBStringTableBuilder.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/Scalarizer.cpp.ll
 ; openjdk/optimized/jccoefct.ll
 ; wolfssl/optimized/pwdbased.c.ll

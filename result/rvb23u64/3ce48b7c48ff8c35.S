@@ -1,4 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000f:                   # @func000000000000000f
 	subw	a1, a1, a2
 	andi	a1, a1, 255
 	sh2add	a1, a1, a1
@@ -10,10 +10,4 @@ func0000000000000040:                   # @func0000000000000040
 	andi	a1, a1, 255
 	sh2add	a0, a1, a0
 	addi	a0, a0, 4
-	ret
-func0000000000000000:                   # @func0000000000000000
-	subw	a1, a1, a2
-	andi	a1, a1, 255
-	sh2add	a0, a1, a0
-	addi	a0, a0, 12
 	ret

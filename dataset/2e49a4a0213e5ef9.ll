@@ -15,11 +15,13 @@ define i1 @func0000000000000004(double %0, double %1, double %2) #0 {
 entry:
   %3 = fadd double %1, %2
   %4 = fmul double %3, 5.000000e-01
-  %5 = fcmp olt double %4, %0
+  %5 = fcmp ogt double %0, %4
   ret i1 %5
 }
 
-; 3 occurrences:
+; 5 occurrences:
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
 ; gromacs/optimized/forcetable.cpp.ll
 ; quantlib/optimized/analytichestonengine.ll
 ; stat-rs/optimized/rkxxfn3f5mhspne.ll
@@ -28,7 +30,7 @@ define i1 @func0000000000000003(double %0, double %1, double %2) #0 {
 entry:
   %3 = fadd double %1, %2
   %4 = fmul double %3, 5.000000e-01
-  %5 = fcmp ugt double %4, %0
+  %5 = fcmp ult double %0, %4
   ret i1 %5
 }
 
@@ -46,7 +48,7 @@ define i1 @func0000000000000005(double %0, double %1, double %2) #0 {
 entry:
   %3 = fadd double %1, %2
   %4 = fmul double %3, 0x3CB0000000000000
-  %5 = fcmp ult double %4, %0
+  %5 = fcmp ugt double %0, %4
   ret i1 %5
 }
 
@@ -67,7 +69,7 @@ define i1 @func0000000000000002(double %0, double %1, double %2) #0 {
 entry:
   %3 = fadd double %1, %2
   %4 = fmul double %3, 5.000000e-01
-  %5 = fcmp ogt double %4, %0
+  %5 = fcmp olt double %0, %4
   ret i1 %5
 }
 

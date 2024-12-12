@@ -1,9 +1,10 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
+; boost/optimized/iconv_codecvt.ll
 ; cvc5/optimized/SimpSolver.cc.ll
 ; cvc5/optimized/Solver.cc.ll
 ; opencv/optimized/or_imagenet.cpp.ll
@@ -24,7 +25,7 @@ entry:
 ; 1 occurrences:
 ; ruby/optimized/zlib.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = sub nsw i64 16384, %0
@@ -38,7 +39,7 @@ entry:
 ; opencv/optimized/trace.cpp.ll
 ; soc-simulator/optimized/verilated.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000084(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = sub i64 4611686018427387903, %0
@@ -68,11 +69,11 @@ entry:
 ; postgres/optimized/zic.ll
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000f4(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = sub nuw nsw i64 4096, %0
-  %4 = icmp ult i64 %3, %2
+  %4 = icmp samesign ult i64 %3, %2
   ret i1 %4
 }
 
@@ -80,11 +81,11 @@ entry:
 ; linux/optimized/sit.ll
 ; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000074(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = sub nuw nsw i64 4, %0
-  %4 = icmp ult i64 %3, %2
+  %4 = icmp samesign ult i64 %3, %2
   ret i1 %4
 }
 
@@ -99,7 +100,19 @@ entry:
   ret i1 %4
 }
 
-; 14 occurrences:
+; 1 occurrences:
+; boost/optimized/default_formatter_factory.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000088(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = sub i64 32, %0
+  %4 = icmp ugt i64 %3, %2
+  ret i1 %4
+}
+
+; 11 occurrences:
+; boost/optimized/src.ll
 ; graphviz/optimized/ccomps.c.ll
 ; graphviz/optimized/gvpr.c.ll
 ; graphviz/optimized/htmltable.c.ll
@@ -108,18 +121,28 @@ entry:
 ; graphviz/optimized/make_map.c.ll
 ; graphviz/optimized/mincross.c.ll
 ; graphviz/optimized/xdot.c.ll
+; miniaudio/optimized/unity.c.ll
+; wireshark/optimized/tvbuff_rdp.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext i32 %1 to i64
+  %3 = sub nsw i64 2147483646, %0
+  %4 = icmp ult i64 %3, %2
+  ret i1 %4
+}
+
+; 4 occurrences:
 ; hermes/optimized/DependencyExtractor.cpp.ll
 ; hermes/optimized/JSLibInternal.cpp.ll
 ; hermes/optimized/JSRegExp.cpp.ll
 ; hermes/optimized/RegexSerialization.cpp.ll
-; miniaudio/optimized/unity.c.ll
-; wireshark/optimized/tvbuff_rdp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000034(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = sub nsw i64 1152921504606846975, %0
-  %4 = icmp ult i64 %3, %2
+  %4 = icmp samesign ult i64 %3, %2
   ret i1 %4
 }
 
@@ -128,11 +151,11 @@ entry:
 ; wireshark/optimized/capinfos.c.ll
 ; wireshark/optimized/column-utils.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000078(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = sub nuw nsw i64 2048, %0
-  %4 = icmp ugt i64 %3, %2
+  %4 = icmp samesign ugt i64 %3, %2
   ret i1 %4
 }
 
@@ -140,7 +163,7 @@ entry:
 ; abseil-cpp/optimized/duration.cc.ll
 ; z3/optimized/pb_solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = sub nsw i64 4000000000, %0
@@ -151,7 +174,7 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000027(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = sub nsw i64 4000000000, %0
@@ -165,7 +188,7 @@ entry:
 ; postgres/optimized/stringinfo_shlib.ll
 ; postgres/optimized/stringinfo_srv.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a8(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = sub nsw i64 960, %0
@@ -177,7 +200,7 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; opencv/optimized/digits_svm.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a4(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = sub nsw i64 1152921504606846975, %0
@@ -188,7 +211,7 @@ entry:
 ; 1 occurrences:
 ; graphviz/optimized/SparseMatrix.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = sub nuw nsw i64 4294967294, %0

@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 20 occurrences:
 ; abc/optimized/abcReconv.c.ll
 ; abc/optimized/aigDfs.c.ll
 ; abc/optimized/dauTree.c.ll
@@ -20,21 +20,18 @@
 ; slurm/optimized/eval_nodes_block.ll
 ; stb/optimized/stb_herringbone_wang_tile.c.ll
 ; velox/optimized/AsyncDataCache.cpp.ll
-; zxing/optimized/PDFDetectionResultColumn.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000016(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp sle i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp sge i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 13 occurrences:
+; 11 occurrences:
 ; cmake/optimized/urlapi.c.ll
 ; curl/optimized/libcurl_la-urlapi.ll
-; gromacs/optimized/dlasd0.cpp.ll
-; gromacs/optimized/slasd0.cpp.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
@@ -48,12 +45,12 @@ entry:
 define i1 @func0000000000000018(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp ne i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp ne i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; brotli/optimized/backward_references.c.ll
@@ -62,7 +59,6 @@ entry:
 ; linux/optimized/key.ll
 ; linux/optimized/parser.ll
 ; linux/optimized/serial_core.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; openssl/optimized/libcrypto-lib-evp_enc.ll
 ; openssl/optimized/libcrypto-shlib-evp_enc.ll
@@ -76,7 +72,7 @@ entry:
 define i1 @func0000000000000008(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp ugt i64 %3, %1
+  %4 = icmp ult i64 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -107,8 +103,8 @@ entry:
 define i1 @func0000000000000002(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp eq i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp eq i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -145,35 +141,34 @@ entry:
 define i1 @func0000000000000014(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp slt i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp sgt i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 7 occurrences:
-; annoy/optimized/annoymodule.ll
+; 5 occurrences:
 ; brotli/optimized/backward_references.c.ll
 ; duckdb/optimized/ub_duckdb_aggr_algebraic.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
-; libquic/optimized/async_bio.cc.ll
 ; lightgbm/optimized/objective_function.cpp.ll
 ; quantlib/optimized/alphafinder.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000012(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp ule i64 %3, %1
+  %4 = icmp uge i64 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
 
-; 19 occurrences:
+; 20 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcMfs.c.ll
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/extraUtilMaj.c.ll
 ; abc/optimized/saigPhase.c.ll
 ; arrow/optimized/scalar_cast_temporal.cc.ll
+; boost/optimized/to_chars.ll
 ; eastl/optimized/TestFixedMap.cpp.ll
 ; eastl/optimized/TestMap.cpp.ll
 ; eastl/optimized/TestVectorMap.cpp.ll
@@ -191,7 +186,7 @@ entry:
 define i1 @func000000000000000c(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp sgt i64 %3, %1
+  %4 = icmp slt i64 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -210,25 +205,24 @@ entry:
 define i1 @func0000000000000010(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp ult i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp ugt i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; gromacs/optimized/gmx_bar.cpp.ll
 ; icu/optimized/ubidi.ll
 ; icu/optimized/unisetspan.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; wireshark/optimized/fileset_entry_model.cpp.ll
 ; wireshark/optimized/profile_model.cpp.ll
-; zxing/optimized/PDFDetectionResultColumn.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000e(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp sge i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp sle i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -241,8 +235,8 @@ entry:
 define i1 @func000000000000000a(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp uge i64 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp ule i64 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

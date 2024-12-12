@@ -1,12 +1,11 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; abc/optimized/retDelay.c.ll
 ; abc/optimized/satInter.c.ll
 ; abc/optimized/satInterA.c.ll
 ; abc/optimized/satInterB.c.ll
 ; abc/optimized/satInterP.c.ll
 ; libquic/optimized/histogram.cc.ll
-; openblas/optimized/dgetsqrhrt.c.ll
 ; opencv/optimized/detector.cpp.ll
 ; opencv/optimized/sampler.cpp.ll
 ; openjdk/optimized/xRelocationSetSelector.ll

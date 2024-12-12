@@ -17,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/GlobalObject.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000c1(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %0, %1
   %3 = and i64 %2, 1073741824
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ELFObjectWriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %0, %1
   %3 = and i64 %2, 1

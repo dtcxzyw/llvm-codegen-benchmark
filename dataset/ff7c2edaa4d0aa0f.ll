@@ -1,5 +1,6 @@
 
-; 22 occurrences:
+; 28 occurrences:
+; abseil-cpp/optimized/str_split_test.cc.ll
 ; duckdb/optimized/ub_duckdb_func_scalar.cpp.ll
 ; icu/optimized/ucnvmbcs.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll
@@ -15,6 +16,11 @@
 ; openjdk/optimized/methodComparator.ll
 ; openjdk/optimized/methodHandles.ll
 ; openjdk/optimized/verifier.ll
+; protobuf/optimized/command_line_interface.cc.ll
+; protobuf/optimized/extension_set.cc.ll
+; protobuf/optimized/extension_set_heavy.cc.ll
+; protobuf/optimized/message_builder.cc.ll
+; protobuf/optimized/message_builder_lite.cc.ll
 ; qemu/optimized/accel_tcg_tcg-runtime-gvec.c.ll
 ; ruby/optimized/date_core.ll
 ; ruby/optimized/file.ll

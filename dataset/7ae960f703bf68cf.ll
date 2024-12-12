@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 21 occurrences:
 ; abc/optimized/giaAiger.c.ll
 ; abc/optimized/ioReadAiger.c.ll
 ; abc/optimized/ioaReadAig.c.ll
@@ -9,6 +9,7 @@
 ; linux/optimized/intel_dpll.ll
 ; luajit/optimized/lj_strscan.ll
 ; luajit/optimized/lj_strscan_dyn.ll
+; lvgl/optimized/lv_arc.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; openexr/optimized/ImfDeepScanLineOutputFile.cpp.ll
@@ -29,8 +30,9 @@ entry:
   ret i32 %5
 }
 
-; 24 occurrences:
+; 25 occurrences:
 ; cpython/optimized/_datetimemodule.ll
+; git/optimized/apply.ll
 ; graphviz/optimized/ns.c.ll
 ; gromacs/optimized/reduce.cpp.ll
 ; icu/optimized/ucase.ll
@@ -63,7 +65,7 @@ entry:
   ret i32 %5
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; abc/optimized/bacWriteVer.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; arrow/optimized/strptime.c.ll
@@ -71,7 +73,6 @@ entry:
 ; assimp/optimized/SpatialSort.cpp.ll
 ; bullet3/optimized/btLemkeAlgorithm.ll
 ; cpython/optimized/codeobject.ll
-; git/optimized/apply.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_dp.ll
 ; linux/optimized/intel_dpll.ll
@@ -98,7 +99,7 @@ define i32 @func000000000000000f(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 256, %2
   %4 = select i1 %1, i32 %2, i32 %3
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 

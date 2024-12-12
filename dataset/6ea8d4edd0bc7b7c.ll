@@ -3,7 +3,7 @@
 ; duckdb/optimized/ub_duckdb_operator_csv_sniffer.cpp.ll
 ; llvm/optimized/InstrProf.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000182(i8 %0, i64 %1) #0 {
+define i64 @func0000000000000302(i8 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = icmp eq i8 %0, 2

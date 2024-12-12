@@ -1,6 +1,8 @@
 
-; 4 occurrences:
+; 6 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; libsodium/optimized/libsodium_la-codecs.ll
 ; mitsuba3/optimized/string.cpp.ll
@@ -8,7 +10,7 @@
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, 4294967296000100
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = lshr i64 %4, 32
   %6 = add i64 %5, %0
   ret i64 %6
@@ -36,7 +38,7 @@ entry:
 define i64 @func0000000000000078(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 10
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = lshr i64 %4, 32
   %6 = add i64 %5, %0
   ret i64 %6
@@ -62,7 +64,7 @@ entry:
   %3 = mul nuw i64 %2, 4195354525
   %4 = add nuw i64 %3, %1
   %5 = lshr i64 %4, 28
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -127,7 +129,7 @@ entry:
   %3 = mul nuw i64 %2, 4294967295
   %4 = add nuw i64 %3, %1
   %5 = lshr i64 %4, 32
-  %6 = add nuw i64 %5, %0
+  %6 = add nuw i64 %0, %5
   ret i64 %6
 }
 
@@ -175,6 +177,30 @@ entry:
   %4 = add i64 %3, %1
   %5 = lshr i64 %4, 44
   %6 = add nuw nsw i64 %5, %0
+  ret i64 %6
+}
+
+; 1 occurrences:
+; zed-rs/optimized/1dgnm6lfd9h2ap1ws2supa1aq.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000020(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul nsw i64 %2, -9
+  %4 = add i64 %3, %1
+  %5 = lshr i64 %4, 2
+  %6 = add i64 %0, %5
+  ret i64 %6
+}
+
+; 1 occurrences:
+; zed-rs/optimized/1dgnm6lfd9h2ap1ws2supa1aq.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000023(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul nsw i64 %2, -9
+  %4 = add i64 %3, %1
+  %5 = lshr i64 %4, 2
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 

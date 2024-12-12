@@ -51,5 +51,5 @@ func0000000000000002:                   # @func0000000000000002
 	vpandq	.LCPI5_0(%rip){1to4}, %ymm1, %ymm2
 	vpsllq	$31, %ymm1, %ymm1
 	vpandq	.LCPI5_1(%rip){1to4}, %ymm1, %ymm1
-	vpternlogq	$254, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | ymm1
+	vpternlogq	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	retq

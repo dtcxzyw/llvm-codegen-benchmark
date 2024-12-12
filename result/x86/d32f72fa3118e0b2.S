@@ -1,6 +1,6 @@
-func0000000000000031:                   # @func0000000000000031
-	addl	%esi, %edx
+func0000000000000061:                   # @func0000000000000061
+	addl	%edx, %esi
 	incl	%edi
-	cmpl	%edx, %edi
+	cmpl	%esi, %edi
 	sete	%al
 	retq

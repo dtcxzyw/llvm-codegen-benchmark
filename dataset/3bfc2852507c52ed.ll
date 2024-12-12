@@ -44,7 +44,7 @@ entry:
 define i64 @func000000000000003a(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 3
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   %4 = and i64 %3, -4
   %5 = add nuw i64 %4, 92
   ret i64 %5

@@ -6,6 +6,7 @@
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/cutPre22.c.ll
 ; abc/optimized/extraUtilMaj.c.ll
+; abc/optimized/fraigUtil.c.ll
 ; abc/optimized/fretFlow.c.ll
 ; abc/optimized/giaCof.c.ll
 ; abc/optimized/giaEra2.c.ll
@@ -41,7 +42,6 @@
 ; git/optimized/fast-import.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; hyperscan/optimized/repeat.c.ll
-; linux/optimized/file_table.ll
 ; linux/optimized/i9xx_plane.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_display.ll
@@ -462,11 +462,11 @@ define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 512
   %3 = and i32 %2, 7680
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; clamav/optimized/upack.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; gromacs/optimized/threaded_force_buffer.cpp.ll
@@ -475,7 +475,6 @@ entry:
 ; linux/optimized/lzo1x_compress.ll
 ; linux/optimized/stackdepot.ll
 ; llvm/optimized/Instructions.cpp.ll
-; lua/optimized/lcode.ll
 ; opencv/optimized/container_avi.cpp.ll
 ; opencv/optimized/subdivision2d.cpp.ll
 ; openvdb/optimized/FastSweeping.cc.ll
@@ -491,7 +490,7 @@ define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = and i32 %2, 511
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
@@ -504,7 +503,7 @@ define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 511
   %3 = and i32 %2, -512
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -526,7 +525,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 511
   %3 = and i32 %2, -512
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -540,7 +539,7 @@ define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 255
   %3 = and i32 %2, 191
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -565,7 +564,7 @@ define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 251
   %3 = and i32 %2, 255
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 

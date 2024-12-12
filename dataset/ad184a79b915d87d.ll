@@ -1,9 +1,8 @@
 
-; 32 occurrences:
+; 29 occurrences:
 ; clamav/optimized/cert_util.c.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; node/optimized/libnode.crypto_context.ll
-; openssl/optimized/d2i_test-bin-d2i_test.ll
 ; openssl/optimized/ec_internal_test-bin-ec_internal_test.ll
 ; openssl/optimized/evp_extra_test-bin-evp_extra_test.ll
 ; openssl/optimized/evp_test-bin-evp_test.ll
@@ -29,11 +28,9 @@
 ; openssl/optimized/libcrypto-shlib-pem_pkey.ll
 ; openssl/optimized/openssl-bin-req.ll
 ; openssl/optimized/ssl_old_test-bin-ssl_old_test.ll
-; openssl/optimized/sslcorrupttest-bin-sslcorrupttest.ll
-; openssl/optimized/x509aux-bin-x509aux.ll
 ; ruby/optimized/ossl_x509cert.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
   %3 = select i1 %2, i32 8388607, i32 2147483647
@@ -46,7 +43,7 @@ entry:
 ; 1 occurrences:
 ; openssl/optimized/asn1_internal_test-bin-asn1_internal_test.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000030c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000060c(i64 %0, i64 %1) #0 {
 entry:
   %.not = icmp eq i64 %1, 0
   %2 = select i1 %.not, i32 8388607, i32 2147483647

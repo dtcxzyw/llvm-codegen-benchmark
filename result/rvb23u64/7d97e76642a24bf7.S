@@ -4,17 +4,17 @@ func0000000000000000:                   # @func0000000000000000
 	andi	a1, a1, -8
 	add	a0, a0, a1
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000017:                   # @func0000000000000017
 	add	a1, a1, a2
 	addi	a1, a1, 240
 	sh2add.uw	a0, a1, a0
 	ret
-func0000000000000032:                   # @func0000000000000032
+func0000000000000033:                   # @func0000000000000033
 	add	a1, a1, a2
 	addi	a1, a1, 4
 	add.uw	a0, a1, a0
 	ret
-func0000000000000036:                   # @func0000000000000036
+func0000000000000037:                   # @func0000000000000037
 	add	a1, a1, a2
 	addi	a1, a1, 1
 	zext.w	a1, a1
@@ -22,12 +22,12 @@ func0000000000000036:                   # @func0000000000000036
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func000000000000003e:                   # @func000000000000003e
+func000000000000003f:                   # @func000000000000003f
 	add	a1, a1, a2
 	addi	a1, a1, 1
 	sh2add.uw	a0, a1, a0
 	ret
-func0000000000000022:                   # @func0000000000000022
+func0000000000000023:                   # @func0000000000000023
 	add	a1, a1, a2
 	addi	a1, a1, 1
 	sh3add.uw	a0, a1, a0
@@ -37,4 +37,9 @@ func0000000000000002:                   # @func0000000000000002
 	addi	a1, a1, 7
 	andi	a1, a1, -8
 	add	a0, a0, a1
+	ret
+func0000000000000003:                   # @func0000000000000003
+	add	a1, a1, a2
+	addi	a1, a1, 1
+	add.uw	a0, a1, a0
 	ret

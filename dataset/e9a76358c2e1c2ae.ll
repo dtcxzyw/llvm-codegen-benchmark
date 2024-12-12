@@ -21,11 +21,10 @@ entry:
   ret i32 %3
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
 ; brotli/optimized/decode.c.ll
-; linux/optimized/rpl.ll
 ; linux/optimized/socket.ll
 ; llvm/optimized/SemaAttr.cpp.ll
 ; ockam-rs/optimized/r526c2e8kd9diy6.ll
@@ -34,6 +33,8 @@ entry:
 ; qemu/optimized/accel_tcg_user-exec.c.ll
 ; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
 ; wireshark/optimized/packet-mongo.c.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i64 %0) #0 {
 entry:

@@ -4,14 +4,14 @@ func0000000000000002:                   # @func0000000000000002
 	vmflt.vf	v0, v16, fa5
 	vmerge.vim	v16, v16, 0, v0
 	vfmul.vv	v12, v16, v12
-	vfadd.vv	v8, v12, v8
+	vfadd.vv	v8, v8, v12
 	ret
 func0000000000000008:                   # @func0000000000000008
 	fmv.w.x	fa5, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfeq.vf	v0, v16, fa5
 	vmerge.vim	v16, v16, 0, v0
-	vfmul.vv	v12, v16, v12
+	vfmul.vv	v12, v12, v16
 	vfadd.vv	v8, v12, v8
 	ret
 func0000000000000004:                   # @func0000000000000004
@@ -20,6 +20,6 @@ func0000000000000004:                   # @func0000000000000004
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmfgt.vf	v0, v16, fa5
 	vmerge.vxm	v16, v16, a0, v0
-	vfmul.vv	v12, v16, v12
+	vfmul.vv	v12, v12, v16
 	vfadd.vv	v8, v12, v8
 	ret

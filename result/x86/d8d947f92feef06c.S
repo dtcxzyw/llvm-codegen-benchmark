@@ -10,6 +10,12 @@ func000000000000000a:                   # @func000000000000000a
 	addq	%rdi, %rax
 	addq	%rsi, %rax
 	retq
+func000000000000000e:                   # @func000000000000000e
+	addl	$258, %edx                      # imm = 0x102
+	movslq	%edx, %rax
+	addq	%rdi, %rax
+	addq	%rsi, %rax
+	retq
 func000000000000001a:                   # @func000000000000001a
 	addq	%rsi, %rdi
 	movslq	%edx, %rax

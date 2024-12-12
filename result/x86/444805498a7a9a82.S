@@ -35,7 +35,7 @@ func000000000000000b:                   # @func000000000000000b
 	retq
 func0000000000000008:                   # @func0000000000000008
 	vmulsd	%xmm2, %xmm1, %xmm1
-	vcmpeqsd	%xmm0, %xmm1, %k0
+	vcmpeqsd	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 func000000000000000d:                   # @func000000000000000d

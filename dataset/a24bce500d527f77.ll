@@ -16,13 +16,13 @@ entry:
 ; 1 occurrences:
 ; jq/optimized/jv.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000013(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2147483647
   %4 = lshr i32 %1, 1
   %5 = add nuw i32 %4, %3
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw [0 x i8], ptr %0, i64 0, i64 %6
+  %7 = getelementptr nusw nuw [0 x i8], ptr %0, i64 0, i64 %6
   ret ptr %7
 }
 
@@ -30,13 +30,13 @@ entry:
 ; regex-rs/optimized/1x04d8372kemp7hd.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 134217727
   %4 = lshr i32 %1, 16
   %5 = add nuw nsw i32 %4, %3
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw [0 x i32], ptr %0, i64 0, i64 %6
+  %7 = getelementptr nusw nuw [0 x i32], ptr %0, i64 0, i64 %6
   ret ptr %7
 }
 

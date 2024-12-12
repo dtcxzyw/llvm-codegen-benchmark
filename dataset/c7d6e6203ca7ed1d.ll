@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 28 occurrences:
 ; cmake/optimized/stream.c.ll
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
 ; libuv/optimized/stream.c.ll
@@ -27,6 +27,7 @@
 ; protobuf/optimized/message_differencer.cc.ll
 ; rocksdb/optimized/compaction_iterator.cc.ll
 ; typst-rs/optimized/5antv5sfgwt5l2ke.ll
+; zed-rs/optimized/2i8hya6f2t9bndlbd6b6686oi.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, ptr %1, i1 %2) #0 {
 entry:
@@ -37,11 +38,10 @@ entry:
   ret i1 %6
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; openssl/optimized/openssl-bin-fipsinstall.ll
 ; proj/optimized/concatenatedoperation.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; slurm/optimized/sreport.ll
 ; wireshark/optimized/lemon.c.ll
 ; Function Attrs: nounwind

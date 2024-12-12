@@ -1,8 +1,9 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; abc/optimized/ifDec07.c.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {

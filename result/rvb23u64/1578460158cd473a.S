@@ -1,4 +1,20 @@
-func0000000000000011:                   # @func0000000000000011
+func000000000000030c:                   # @func000000000000030c
+	zext.h	a2, a2
+	xor	a0, a0, a1
+	sltiu	a1, a2, 513
+	xori	a1, a1, 1
+	snez	a0, a0
+	or	a0, a0, a1
+	ret
+func0000000000000285:                   # @func0000000000000285
+	slli	a2, a2, 33
+	sltu	a0, a1, a0
+	srli	a2, a2, 33
+	sltiu	a1, a2, 3
+	xori	a0, a0, 1
+	or	a0, a0, a1
+	ret
+func0000000000000021:                   # @func0000000000000021
 	andi	a2, a2, -2
 	xor	a0, a0, a1
 	sext.w	a2, a2
@@ -7,34 +23,22 @@ func0000000000000011:                   # @func0000000000000011
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	not	a2, a2
 	xor	a0, a0, a1
 	bexti	a1, a2, 26
 	snez	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000084:                   # @func0000000000000084
+func0000000000000304:                   # @func0000000000000304
 	andi	a2, a2, 252
 	sltiu	a2, a2, 12
 	xori	a2, a2, 1
 	sltu	a0, a0, a1
 	or	a0, a0, a2
 	ret
-func00000000000000c8:                   # @func00000000000000c8
+func0000000000000188:                   # @func0000000000000188
 	bexti	a2, a2, 2
 	sltu	a0, a1, a0
-	or	a0, a0, a2
-	ret
-func00000000000000c5:                   # @func00000000000000c5
-	bexti	a2, a2, 8
-	sltu	a0, a1, a0
-	xori	a0, a0, 1
-	or	a0, a0, a2
-	ret
-func00000000000000c9:                   # @func00000000000000c9
-	bexti	a2, a2, 7
-	sltu	a0, a0, a1
-	xori	a0, a0, 1
 	or	a0, a0, a2
 	ret

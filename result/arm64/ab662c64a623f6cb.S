@@ -7,3 +7,12 @@ func0000000000000006:                   // @func0000000000000006
 	madd	x0, x8, x9, x0
 	ret
                                         // -- End function
+func0000000000000004:                   // @func0000000000000004
+// %bb.0:                               // %entry
+	mov	w8, #255                        // =0xff
+	mov	w9, #24                         // =0x18
+	bics	wzr, w8, w1
+	csetm	x8, ne
+	madd	x0, x8, x9, x0
+	ret
+                                        // -- End function

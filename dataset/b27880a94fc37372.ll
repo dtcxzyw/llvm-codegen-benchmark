@@ -10,7 +10,7 @@ define i1 @func0000000000000001(i32 %0, double %1) #0 {
 entry:
   %2 = bitcast double %1 to i64
   %3 = trunc i64 %2 to i32
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 

@@ -1,35 +1,9 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	fmov	v16.2d, #-11.00000000
-	ldp	q18, q17, [sp, #96]
-	ldp	q21, q20, [sp, #48]
-	fmov	v19.2d, #6.00000000
-	ldp	q23, q22, [sp, #16]
-	ldr	q24, [sp]
-	ldr	q25, [sp, #80]
-	fmul	v17.2d, v17.2d, v16.2d
-	fmul	v18.2d, v18.2d, v16.2d
-	fmul	v20.2d, v20.2d, v16.2d
-	fmul	v21.2d, v21.2d, v16.2d
-	fmul	v22.2d, v22.2d, v16.2d
-	fmul	v23.2d, v23.2d, v16.2d
-	fmul	v24.2d, v24.2d, v16.2d
-	fmul	v16.2d, v25.2d, v16.2d
-	fdiv	v17.2d, v17.2d, v19.2d
-	fdiv	v18.2d, v18.2d, v19.2d
-	fadd	v7.2d, v7.2d, v17.2d
-	fdiv	v20.2d, v20.2d, v19.2d
-	fadd	v6.2d, v6.2d, v18.2d
-	fdiv	v21.2d, v21.2d, v19.2d
-	fadd	v4.2d, v4.2d, v20.2d
-	fdiv	v22.2d, v22.2d, v19.2d
-	fadd	v3.2d, v3.2d, v21.2d
-	fdiv	v23.2d, v23.2d, v19.2d
-	fadd	v2.2d, v2.2d, v22.2d
-	fdiv	v24.2d, v24.2d, v19.2d
-	fadd	v1.2d, v1.2d, v23.2d
-	fdiv	v16.2d, v16.2d, v19.2d
-	fadd	v0.2d, v0.2d, v24.2d
-	fadd	v5.2d, v5.2d, v16.2d
+	fmov	d2, #-11.00000000
+	fmul	d1, d1, d2
+	fmov	d2, #6.00000000
+	fdiv	d1, d1, d2
+	fadd	d0, d0, d1
 	ret
                                         // -- End function

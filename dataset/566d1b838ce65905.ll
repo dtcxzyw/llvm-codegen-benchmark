@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; abc/optimized/giaDecs.c.ll
 ; ncnn/optimized/lstm_x86_avx.cpp.ll
 ; ncnn/optimized/lstm_x86_avx2.cpp.ll
@@ -9,7 +9,6 @@
 ; opencv/optimized/color_yuv.dispatch.cpp.ll
 ; opencv/optimized/convolution.cpp.ll
 ; openjdk/optimized/jcprepct.ll
-; openusd/optimized/tessellation.cpp.ll
 ; php/optimized/zend_ssa.ll
 ; tev/optimized/ExrImageSaver.cpp.ll
 ; Function Attrs: nounwind

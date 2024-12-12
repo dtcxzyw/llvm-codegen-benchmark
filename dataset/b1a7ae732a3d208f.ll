@@ -19,7 +19,7 @@ entry:
 ; openmpi/optimized/coll_basic_barrier.ll
 ; openmpi/optimized/coll_basic_bcast.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = select i1 %1, i32 0, i32 %3
@@ -32,11 +32,22 @@ entry:
 ; openmpi/optimized/nbc_ibcast.ll
 ; openmpi/optimized/nbc_ireduce.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = select i1 %1, i32 1, i32 %3
   %5 = icmp eq i32 %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000a(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %2, -1
+  %4 = select i1 %1, i32 -1, i32 %3
+  %5 = icmp sgt i32 %4, %0
   ret i1 %5
 }
 

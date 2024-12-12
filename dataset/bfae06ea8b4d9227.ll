@@ -27,6 +27,16 @@ entry:
   ret i32 %.neg
 }
 
+; 1 occurrences:
+; boost/optimized/alloc_lib.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000038(i64 %0) #0 {
+entry:
+  %1 = trunc nuw nsw i64 %0 to i32
+  %.neg = shl i32 -2, %1
+  ret i32 %.neg
+}
+
 ; 2 occurrences:
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll

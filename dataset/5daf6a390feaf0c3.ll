@@ -37,11 +37,9 @@ entry:
   ret double %5
 }
 
-; 9 occurrences:
+; 7 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/aigMan.c.ll
-; abc/optimized/cswMan.c.ll
-; abc/optimized/darMan.c.ll
 ; abc/optimized/darRefact.c.ll
 ; lightgbm/optimized/feature_histogram.cpp.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll

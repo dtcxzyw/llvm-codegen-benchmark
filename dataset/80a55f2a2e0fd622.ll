@@ -5,7 +5,7 @@
 ; openssl/optimized/openssl-bin-ca.ll
 ; yosys/optimized/proc_dff.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, i1 %0, i1 false
@@ -110,7 +110,7 @@ entry:
 ; xgboost/optimized/updater_sync.cc.ll
 ; xgboost/optimized/version.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000018c(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = select i1 %3, i1 %0, i1 false
@@ -127,7 +127,7 @@ entry:
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000181(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = select i1 %3, i1 %0, i1 false
@@ -140,7 +140,7 @@ entry:
 ; memcached/optimized/memcached-memcached.ll
 ; memcached/optimized/memcached_debug-memcached.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i1 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000186(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = select i1 %3, i1 %0, i1 false
@@ -152,7 +152,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_optimizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000002c(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, i1 %0, i1 false
@@ -164,23 +164,11 @@ entry:
 ; 1 occurrences:
 ; slurm/optimized/fed_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i1 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000018a(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = select i1 %3, i1 %0, i1 false
   %5 = icmp sgt i64 %1, 30
-  %6 = select i1 %4, i1 %5, i1 false
-  ret i1 %6
-}
-
-; 1 occurrences:
-; wireshark/optimized/packet-tcp.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000c4(i1 %0, i64 %1, ptr %2) #0 {
-entry:
-  %3 = icmp ne ptr %2, null
-  %4 = select i1 %3, i1 %0, i1 false
-  %5 = icmp ult i64 %1, 3
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
 }

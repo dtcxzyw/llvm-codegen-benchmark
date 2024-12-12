@@ -6,19 +6,14 @@ func0000000000000004:                   # @func0000000000000004
 	xori	a0, a1, 45
 .LBB0_2:                                # %entry
 	ret
-func0000000000000014:                   # @func0000000000000014
-	andi	a3, a1, 1
-	addiw	a1, a2, -1853
-	bnez	a3, .LBB1_2
-	li	a2, 1
-	li	a3, 2
-	bgeu	a1, a3, .LBB1_3
-	j	.LBB1_4
-.LBB1_2:
-	li	a2, 3
-	li	a3, 2
-	bltu	a1, a3, .LBB1_4
-.LBB1_3:                                # %entry
-	mv	a0, a2
-.LBB1_4:                                # %entry
+func0000000000000024:                   # @func0000000000000024
+	lui	a3, 1048573
+	addi	a3, a3, -1946
+	add	a2, a2, a3
+	srliw	a2, a2, 14
+	beqz	a2, .LBB1_2
+	andi	a1, a1, 1
+	addi	a1, a1, -1
+	andi	a0, a1, 255
+.LBB1_2:                                # %entry
 	ret

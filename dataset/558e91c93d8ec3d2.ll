@@ -1,5 +1,6 @@
 
-; 31 occurrences:
+; 33 occurrences:
+; abc/optimized/bmcBmcAnd.c.ll
 ; abc/optimized/saigConstr2.c.ll
 ; abc/optimized/timMan.c.ll
 ; abc/optimized/wlcBlast.c.ll
@@ -31,8 +32,9 @@
 ; quest/optimized/QuEST_validation.c.ll
 ; raylib/optimized/rtext.c.ll
 ; raylib/optimized/rtextures.c.ll
+; yosys/optimized/formalff.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000e6(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = sext i32 %3 to i64
@@ -58,7 +60,7 @@ entry:
 ; openspiel/optimized/checkers.cc.ll
 ; openspiel/optimized/clobber.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = sext i32 %3 to i64
@@ -75,7 +77,7 @@ entry:
 ; qemu/optimized/audio_audio.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000066(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = sext i32 %3 to i64
@@ -89,7 +91,7 @@ entry:
 ; ncnn/optimized/prelu_x86_avx512.cpp.ll
 ; ncnn/optimized/prelu_x86_fma.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = sext i32 %3 to i64
@@ -98,7 +100,7 @@ entry:
   ret i1 %6
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; abc/optimized/bmcBmcAnd.c.ll
 ; gromacs/optimized/atomdata.cpp.ll
 ; ncnn/optimized/convolution1d_x86_avx512.cpp.ll
@@ -107,7 +109,6 @@ entry:
 ; ncnn/optimized/convolution_x86_avx2.cpp.ll
 ; ncnn/optimized/convolution_x86_avx512.cpp.ll
 ; ncnn/optimized/convolution_x86_avx512vnni.cpp.ll
-; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
 ; ncnn/optimized/convolution_x86_fma.cpp.ll
 ; ncnn/optimized/scale_x86_avx.cpp.ll
 ; ncnn/optimized/scale_x86_avx512.cpp.ll
@@ -117,7 +118,7 @@ entry:
 ; openmpi/optimized/coll_sm_reduce.ll
 ; openspiel/optimized/liars_dice.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a6(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = sext i32 %3 to i64
@@ -126,7 +127,8 @@ entry:
   ret i1 %6
 }
 
-; 8 occurrences:
+; 9 occurrences:
+; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
 ; ncnn/optimized/convolution_x86_xop.cpp.ll
 ; ncnn/optimized/prelu_x86.cpp.ll
 ; ncnn/optimized/scale_x86.cpp.ll
@@ -136,7 +138,7 @@ entry:
 ; openusd/optimized/stbImage.cpp.ll
 ; stb/optimized/stb_image.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = sext i32 %3 to i64
@@ -145,8 +147,7 @@ entry:
   ret i1 %6
 }
 
-; 21 occurrences:
-; abc/optimized/bmcBmcAnd.c.ll
+; 20 occurrences:
 ; abc/optimized/giaSim.c.ll
 ; bullet3/optimized/MultiBodyTreeImpl.ll
 ; bullet3/optimized/btLemkeAlgorithm.ll
@@ -168,7 +169,7 @@ entry:
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = sext i32 %3 to i64
@@ -186,7 +187,7 @@ entry:
 ; pbrt-v4/optimized/image.cpp.ll
 ; pbrt-v4/optimized/samplers.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000c1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = sext i32 %3 to i64
@@ -198,7 +199,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_colorin.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = sext i32 %3 to i64
@@ -210,7 +211,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_primaries.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000c4(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = sext i32 %3 to i64
@@ -219,11 +220,10 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; oiio/optimized/pnminput.cpp.ll
-; yosys/optimized/formalff.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000e1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = sext i32 %3 to i64
@@ -238,7 +238,7 @@ entry:
 ; opencv/optimized/prior_box_layer.cpp.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = sext i32 %3 to i64
@@ -250,7 +250,7 @@ entry:
 ; 1 occurrences:
 ; tinyrenderer/optimized/tgaimage.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = sext i32 %3 to i64
@@ -262,7 +262,7 @@ entry:
 ; 1 occurrences:
 ; libwebp/optimized/alpha_dec.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000049(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000089(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = sext i32 %3 to i64

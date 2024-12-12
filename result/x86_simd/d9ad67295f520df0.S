@@ -7,6 +7,6 @@ func0000000000000025:                   # @func0000000000000025
 	vpbroadcastd	.LCPI0_1(%rip), %ymm3   # ymm3 = [9,9,9,9,9,9,9,9]
 	vpsubd	%ymm2, %ymm3, %ymm2
 	vpsrlvd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpslld	$8, %ymm0, %ymm0
 	retq

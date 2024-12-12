@@ -1,3 +1,7 @@
+func0000000000000000:                   # @func0000000000000000
+	leaq	-100000(%rsi,%rdi), %rax
+	andq	$-8, %rax
+	retq
 func0000000000000005:                   # @func0000000000000005
 	leal	(%rsi,%rdi), %eax
 	andl	$7, %eax

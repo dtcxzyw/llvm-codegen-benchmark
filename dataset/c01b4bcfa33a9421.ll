@@ -1,5 +1,6 @@
 
-; 4 occurrences:
+; 5 occurrences:
+; cmake/optimized/cmELF.cxx.ll
 ; llvm/optimized/X86Disassembler.cpp.ll
 ; postgres/optimized/indexcmds.ll
 ; slurm/optimized/scancel.ll

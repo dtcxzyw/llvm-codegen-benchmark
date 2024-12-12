@@ -3,7 +3,7 @@ func0000000000000010:                   # @func0000000000000010
 	cmpb	$3, %sil
 	sete	%al
 	xorq	$5, %rax
-	leaq	4120(%rax,%rdi), %rax
+	leaq	4120(%rdi,%rax), %rax
 	retq
 func000000000000001f:                   # @func000000000000001f
 	xorl	%eax, %eax

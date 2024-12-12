@@ -4,7 +4,7 @@
 	.long	281                             # 0x119
 .LCPI0_2:
 	.long	283                             # 0x11b
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	vptestmq	.LCPI0_0(%rip){1to4}, %ymm1, %k1
 	vptestnmd	%xmm0, %xmm0, %k1 {%k1}
 	vpbroadcastd	.LCPI0_1(%rip), %xmm0   # xmm0 = [281,281,281,281]
@@ -17,7 +17,7 @@ func00000000000000c1:                   # @func00000000000000c1
 	.long	1                               # 0x1
 .LCPI1_2:
 	.long	9                               # 0x9
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpblendd	$170, %ymm1, %ymm2, %ymm1       # ymm1 = ymm2[0],ymm1[1],ymm2[2],ymm1[3],ymm2[4],ymm1[5],ymm2[6],ymm1[7]
 	vpcmpeqq	.LCPI1_0(%rip){1to4}, %ymm1, %k1
@@ -31,7 +31,7 @@ func0000000000000011:                   # @func0000000000000011
 	.long	256                             # 0x100
 .LCPI2_1:
 	.quad	1                               # 0x1
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vpcmpeqd	.LCPI2_0(%rip){1to4}, %xmm0, %k1
 	vptestmq	.LCPI2_1(%rip){1to4}, %ymm1, %k1 {%k1}
 	vpbroadcastd	.LCPI2_2(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [256,256,256,256]
@@ -43,7 +43,7 @@ func000000000000001c:                   # @func000000000000001c
 	.long	18                              # 0x12
 .LCPI3_2:
 	.long	15                              # 0xf
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	vptestmd	%xmm0, %xmm0, %k1
 	vptestmq	.LCPI3_0(%rip){1to4}, %ymm1, %k1 {%k1}
 	vpbroadcastd	.LCPI3_1(%rip), %xmm0   # xmm0 = [18,18,18,18]
@@ -58,7 +58,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	.long	3                               # 0x3
 .LCPI4_1:
 	.quad	2048                            # 0x800
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpcmpltud	.LCPI4_0(%rip){1to4}, %xmm0, %k1
 	vptestnmq	.LCPI4_1(%rip){1to4}, %ymm1, %k1 {%k1}
 	vpbroadcastd	.LCPI4_2(%rip), %xmm0   # xmm0 = [1,1,1,1]

@@ -7,5 +7,5 @@ func0000000000000000:                   # @func0000000000000000
 	kmovd	%edi, %k1
 	vmovss	.LCPI0_1(%rip), %xmm2           # xmm2 = [7.13130056E-1,0.0E+0,0.0E+0,0.0E+0]
 	vmovss	%xmm1, %xmm2, %xmm2 {%k1}
-	vaddss	%xmm0, %xmm2, %xmm0
+	vaddss	%xmm2, %xmm0, %xmm0
 	retq

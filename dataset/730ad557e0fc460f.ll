@@ -28,7 +28,7 @@ entry:
   ret i32 %4
 }
 
-; 20 occurrences:
+; 19 occurrences:
 ; abc/optimized/abcLatch.c.ll
 ; abc/optimized/abcNpn.c.ll
 ; abc/optimized/absOldCex.c.ll
@@ -46,7 +46,6 @@ entry:
 ; abc/optimized/saigDup.c.ll
 ; abc/optimized/sswFilter.c.ll
 ; abc/optimized/sswRarity.c.ll
-; abc/optimized/sswSimSat.c.ll
 ; abc/optimized/wlcMem.c.ll
 ; opencv/optimized/tree.cpp.ll
 ; Function Attrs: nounwind

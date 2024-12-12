@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/target_riscv_monitor.c.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000018b(i32 %0, i32 %1, i64 %2) #0 {
+define i64 @func000000000000030b(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = icmp eq i32 %1, 1
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/reedsolomon.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000189(i32 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000309(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = icmp eq i32 %1, 255

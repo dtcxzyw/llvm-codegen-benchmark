@@ -15,3 +15,11 @@ func0000000000000000:                   # @func0000000000000000
 	li	a0, 2
 .LBB0_4:                                # %entry
 	ret
+func0000000000000002:                   # @func0000000000000002
+	slli	a1, a1, 63
+	andi	a0, a0, 1
+	srai	a1, a1, 63
+	ori	a1, a1, 1
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	ret

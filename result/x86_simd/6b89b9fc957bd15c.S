@@ -10,7 +10,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 .LCPI1_0:
 	.long	32                              # 0x20
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	vpbroadcastd	.LCPI1_0(%rip), %ymm2   # ymm2 = [32,32,32,32,32,32,32,32]
 	vpsubd	%ymm1, %ymm2, %ymm1
 	vpsrlvd	%ymm1, %ymm0, %ymm0
@@ -20,7 +20,7 @@ func0000000000000061:                   # @func0000000000000061
 	retq
 .LCPI2_0:
 	.long	28                              # 0x1c
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpbroadcastd	.LCPI2_0(%rip), %ymm2   # ymm2 = [28,28,28,28,28,28,28,28]
 	vpsubd	%ymm1, %ymm2, %ymm1
 	vpsrlvd	%ymm1, %ymm0, %ymm0
@@ -30,7 +30,7 @@ func0000000000000021:                   # @func0000000000000021
 	retq
 .LCPI3_0:
 	.long	32                              # 0x20
-func000000000000006c:                   # @func000000000000006c
+func00000000000000cc:                   # @func00000000000000cc
 	vpbroadcastd	.LCPI3_0(%rip), %ymm2   # ymm2 = [32,32,32,32,32,32,32,32]
 	vpsubd	%ymm1, %ymm2, %ymm1
 	vpsrlvd	%ymm1, %ymm0, %ymm0
@@ -42,7 +42,7 @@ func000000000000006c:                   # @func000000000000006c
 	.long	16                              # 0x10
 .LCPI4_1:
 	.long	512                             # 0x200
-func0000000000000064:                   # @func0000000000000064
+func00000000000000d4:                   # @func00000000000000d4
 	vpbroadcastd	.LCPI4_0(%rip), %ymm2   # ymm2 = [16,16,16,16,16,16,16,16]
 	vpsubd	%ymm1, %ymm2, %ymm1
 	vpsrlvd	%ymm1, %ymm0, %ymm0
@@ -52,7 +52,7 @@ func0000000000000064:                   # @func0000000000000064
 	retq
 .LCPI5_0:
 	.long	32                              # 0x20
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	vpbroadcastd	.LCPI5_0(%rip), %ymm2   # ymm2 = [32,32,32,32,32,32,32,32]
 	vpsubd	%ymm1, %ymm2, %ymm1
 	vpsrlvd	%ymm1, %ymm0, %ymm0

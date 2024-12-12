@@ -1,5 +1,5 @@
 
-; 44 occurrences:
+; 43 occurrences:
 ; abc/optimized/giaMf.c.ll
 ; abc/optimized/giaNf.c.ll
 ; abc/optimized/giaOf.c.ll
@@ -10,7 +10,6 @@
 ; linux/optimized/initramfs.ll
 ; linux/optimized/ldt.ll
 ; linux/optimized/md.ll
-; linux/optimized/statfs.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/vfs_inode_dotl.ll
 ; llvm/optimized/ASTReader.cpp.ll
@@ -49,7 +48,7 @@ define i32 @func0000000000000003(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, 1044480
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = and i32 %1, 1048576
   %7 = or disjoint i32 %5, %6
   ret i32 %7
@@ -86,7 +85,7 @@ define i32 @func000000000000000f(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = and i32 %3, 255
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = and i32 %1, 16711680
   %7 = or disjoint i32 %5, %6
   ret i32 %7

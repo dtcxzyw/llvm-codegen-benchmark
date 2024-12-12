@@ -58,7 +58,7 @@ entry:
 define i64 @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 32
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = urem i64 %4, %0
   ret i64 %5
 }
@@ -80,7 +80,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 42
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = urem i64 %4, %0
   ret i64 %5
 }

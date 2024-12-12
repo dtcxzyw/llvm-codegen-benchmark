@@ -12,7 +12,9 @@ entry:
   ret i64 %4
 }
 
-; 8 occurrences:
+; 10 occurrences:
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/intersection_pl_l.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; linux/optimized/quirks.ll
 ; openssl/optimized/libcrypto-lib-packet.ll
@@ -30,13 +32,14 @@ entry:
   ret i64 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; hyperscan/optimized/fdr.c.ll
 ; linux/optimized/atkbd.ll
 ; linux/optimized/build_policy.ll
 ; linux/optimized/fair.ll
 ; mold/optimized/arch-sparc64.cc.ll
 ; quickjs/optimized/quickjs.ll
+; zed-rs/optimized/70oxjc4k9uv7kvad3t5u6bzag.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
@@ -74,14 +77,30 @@ entry:
 ; abc/optimized/cuddUtil.c.ll
 ; z3/optimized/arith_sls.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(i64 %0, i64 %1) #0 {
+define i64 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i64 %0, %1
   %3 = select i1 %2, i64 0, i64 2147483562
   ret i64 %3
 }
 
-; 6 occurrences:
+; 4 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub nsw i64 %0, %1
+  %3 = icmp eq i64 %2, -9223372036854775808
+  %4 = select i1 %3, i64 -9223372036854775808, i64 9223372036854775806
+  ret i64 %4
+}
+
+; 8 occurrences:
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/intersection_pl_l.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; gromacs/optimized/colvarbias_histogram.cpp.ll
 ; hermes/optimized/FileCheck.cpp.ll
@@ -92,15 +111,15 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = icmp ugt i64 %2, 32
-  %4 = select i1 %3, i64 3, i64 1
+  %3 = icmp ugt i64 %2, 16
+  %4 = select i1 %3, i64 16, i64 0
   ret i64 %4
 }
 
 ; 1 occurrences:
 ; casadi/optimized/slice.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %.not = icmp sgt i64 %0, %1
   %2 = select i1 %.not, i64 1, i64 -1

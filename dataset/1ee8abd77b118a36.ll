@@ -7,7 +7,7 @@ define i64 @func0000000000000007(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 107
   %4 = select i1 %3, i64 0, i64 32
-  %5 = or disjoint i64 %4, %1
+  %5 = or disjoint i64 %1, %4
   %6 = and i64 %0, 1015808
   %7 = or disjoint i64 %6, %5
   ret i64 %7

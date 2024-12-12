@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 11 occurrences:
 ; abc/optimized/ivyHaig.c.ll
 ; cpython/optimized/_json.ll
 ; cpython/optimized/formatter_unicode.ll
@@ -7,6 +7,8 @@
 ; cpython/optimized/textio.ll
 ; cpython/optimized/unicodeobject.ll
 ; linux/optimized/hda_auto_parser.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; opencv/optimized/grfmt_png.cpp.ll
 ; qemu/optimized/hw_usb_core.c.ll
 ; Function Attrs: nounwind

@@ -1,62 +1,33 @@
-func0000000000000071:                   // @func0000000000000071
+func00000000000000e1:                   // @func00000000000000e1
 // %bb.0:                               // %entry
-	movi	v3.8b, #1
-	movi	v4.4s, #8
-	and	v2.8b, v2.8b, v3.8b
-	movi	v3.4s, #4
-	cmeq	v2.8b, v2.8b, #0
-	add	v0.4s, v0.4s, v3.4s
-	add	v1.4s, v1.4s, v3.4s
-	sshll	v2.8h, v2.8b, #0
-	sshll2	v5.4s, v2.8h, #0
-	sshll	v2.4s, v2.4h, #0
-	bsl	v2.16b, v4.16b, v3.16b
-	bif	v4.16b, v3.16b, v5.16b
-	cmeq	v1.4s, v1.4s, v4.4s
-	cmeq	v0.4s, v0.4s, v2.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	mov	w8, #4                          // =0x4
+	tst	w1, #0x1
+	mov	w9, #8                          // =0x8
+	csel	w8, w9, w8, eq
+	add	w9, w0, #4
+	cmp	w9, w8
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000051:                   // @func0000000000000051
+func00000000000000a1:                   // @func00000000000000a1
 // %bb.0:                               // %entry
-	movi	v3.8b, #1
-	movi	v4.4s, #8
-	mvni	v6.4s, #1
-	add	v0.4s, v0.4s, v6.4s
-	add	v1.4s, v1.4s, v6.4s
-	and	v2.8b, v2.8b, v3.8b
-	movi	v3.4s, #4
-	cmeq	v2.8b, v2.8b, #0
-	sshll	v2.8h, v2.8b, #0
-	sshll2	v5.4s, v2.8h, #0
-	sshll	v2.4s, v2.4h, #0
-	bsl	v2.16b, v4.16b, v3.16b
-	bit	v3.16b, v4.16b, v5.16b
-	cmeq	v1.4s, v1.4s, v3.4s
-	cmeq	v0.4s, v0.4s, v2.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	mov	w8, #4                          // =0x4
+	tst	w1, #0x1
+	mov	w9, #8                          // =0x8
+	csel	w8, w9, w8, eq
+	sub	w9, w0, #2
+	cmp	w9, w8
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000061:                   // @func0000000000000061
+func00000000000000c1:                   // @func00000000000000c1
 // %bb.0:                               // %entry
-	movi	v3.8b, #64
-	movi	v4.4s, #2
-	movi	v6.4s, #1
-	and	v2.8b, v2.8b, v3.8b
-	movi	v3.4s, #4
-	add	v0.4s, v0.4s, v6.4s
-	add	v1.4s, v1.4s, v6.4s
-	cmeq	v2.8b, v2.8b, #0
-	sshll	v2.8h, v2.8b, #0
-	sshll2	v5.4s, v2.8h, #0
-	sshll	v2.4s, v2.4h, #0
-	bsl	v2.16b, v4.16b, v3.16b
-	bit	v3.16b, v4.16b, v5.16b
-	cmeq	v1.4s, v1.4s, v3.4s
-	cmeq	v0.4s, v0.4s, v2.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	mov	w8, #4                          // =0x4
+	tst	w1, #0x40
+	mov	w9, #2                          // =0x2
+	csel	w8, w9, w8, eq
+	add	w9, w0, #1
+	cmp	w9, w8
+	cset	w0, eq
 	ret
                                         // -- End function

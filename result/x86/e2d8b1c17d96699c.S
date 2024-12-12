@@ -28,3 +28,21 @@ func0000000000000004:                   # @func0000000000000004
 	orq	%rdi, %rax
 	orq	%rdx, %rax
 	retq
+func0000000000000002:                   # @func0000000000000002
+	xorl	%eax, %eax
+	testb	$1, %dl
+	movl	$6, %ecx
+	cmoveq	%rax, %rcx
+	movl	%edi, %eax
+	orq	%rsi, %rax
+	orq	%rcx, %rax
+	retq
+func0000000000000006:                   # @func0000000000000006
+	xorl	%eax, %eax
+	testb	$1, %dl
+	movl	$6, %ecx
+	cmoveq	%rax, %rcx
+	movl	%esi, %eax
+	orq	%rdi, %rax
+	orq	%rcx, %rax
+	retq

@@ -30,7 +30,7 @@ func00000000000000c7:                   # @func00000000000000c7
 	vsrl.vi	v8, v8, 4
 	vadd.vv	v8, v8, v10
 	ret
-func0000000000000083:                   # @func0000000000000083
+func0000000000000183:                   # @func0000000000000183
 	li	a0, -1
 	srli	a0, a0, 16
 	vsetivli	zero, 4, e64, m2, ta, ma

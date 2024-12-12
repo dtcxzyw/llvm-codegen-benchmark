@@ -13,6 +13,19 @@ entry:
   ret i1 %5
 }
 
+; 3 occurrences:
+; icu/optimized/collationfastlatinbuilder.ll
+; pbrt-v4/optimized/integrators.cpp.ll
+; ruby/optimized/strftime.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 2
+  %4 = and i1 %0, %1
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
+}
+
 ; 15 occurrences:
 ; git/optimized/commit.ll
 ; hermes/optimized/dtoa.c.ll
@@ -38,8 +51,22 @@ entry:
   ret i1 %5
 }
 
+; 5 occurrences:
+; assimp/optimized/zip.c.ll
+; hermes/optimized/zip.c.ll
+; meshlab/optimized/filter_sketchfab.cpp.ll
+; meshlab/optimized/miniz.c.ll
+; openjdk/optimized/sharedRuntimeTrans.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i32 %2, 2146435072
+  %4 = and i1 %0, %1
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
+}
+
 ; 14 occurrences:
-; flatbuffers/optimized/idl_gen_swift.cpp.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; gromacs/optimized/lmmin.cpp.ll
 ; gromacs/optimized/update.cpp.ll
@@ -53,10 +80,11 @@ entry:
 ; postgres/optimized/dt_common.ll
 ; quantlib/optimized/thailand.ll
 ; wolfssl/optimized/suites.c.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = icmp eq i32 %2, 2
+  %3 = icmp eq i32 %2, 31
   %4 = and i1 %0, %1
   %5 = select i1 %4, i1 true, i1 %3
   ret i1 %5
@@ -74,12 +102,11 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; linux/optimized/ip_output.ll
 ; linux/optimized/xfrm_output.ll
 ; logos-rs/optimized/5f38ll801i7djw99.ll
 ; meshlab/optimized/Scanner.cpp.ll
-; pbrt-v4/optimized/integrators.cpp.ll
 ; postgres/optimized/euc_jp_and_sjis.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i1 %1, i32 %2) #0 {
@@ -90,15 +117,12 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 1 occurrences:
 ; freetype/optimized/sfnt.c.ll
-; luau/optimized/main.cpp.ll
-; nlohmann_json/optimized/unit.cpp.ll
-; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, 1114111
+  %3 = icmp ugt i32 %2, 65535
   %4 = and i1 %0, %1
   %5 = select i1 %4, i1 true, i1 %3
   ret i1 %5

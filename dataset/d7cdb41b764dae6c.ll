@@ -15,7 +15,7 @@ define i32 @func0000000000000000(i32 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = trunc i64 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   %6 = trunc i64 %1 to i32
   %7 = sub i32 %5, %6
   ret i32 %7

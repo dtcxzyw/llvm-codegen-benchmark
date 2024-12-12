@@ -11,10 +11,10 @@
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f1(i64 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000003e1(i64 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = zext nneg i32 %4 to i64
   %6 = add nuw nsw i64 %0, 1
   %7 = icmp eq i64 %6, %5
@@ -30,10 +30,10 @@ entry:
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000231(i64 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000461(i64 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = zext i32 %4 to i64
   %6 = add nuw nsw i64 %0, 1
   %7 = icmp eq i64 %6, %5
@@ -58,10 +58,10 @@ entry:
 ; pbrt-v4/optimized/stbimage.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = zext i32 %4 to i64
   %6 = add nuw nsw i64 %0, 1
   %7 = icmp eq i64 %6, %5
@@ -180,23 +180,23 @@ entry:
 ; zlib/optimized/infback.c.ll
 ; zlib/optimized/inflate.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f4(i64 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000003f4(i64 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = zext nneg i32 %4 to i64
   %6 = add nuw nsw i64 %0, 1
-  %7 = icmp ult i64 %6, %5
+  %7 = icmp samesign ult i64 %6, %5
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; libquic/optimized/print.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002b1(i64 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000561(i64 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = zext i32 %4 to i64
   %6 = add nuw nsw i64 %0, 1
   %7 = icmp eq i64 %6, %5
@@ -206,13 +206,26 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/infblock.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001b4(i64 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000374(i64 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = zext i32 %4 to i64
   %6 = add nuw nsw i64 %0, 8
-  %7 = icmp ult i64 %6, %5
+  %7 = icmp samesign ult i64 %6, %5
+  ret i1 %7
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_calendar.ll
+; Function Attrs: nounwind
+define i1 @func00000000000007f4(i64 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext nneg i8 %2 to i32
+  %4 = add nuw nsw i32 %1, %3
+  %5 = zext nneg i32 %4 to i64
+  %6 = add nuw nsw i64 %0, 1
+  %7 = icmp samesign ult i64 %6, %5
   ret i1 %7
 }
 
@@ -220,23 +233,23 @@ entry:
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/MachineVerifier.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000074(i64 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = zext i32 %4 to i64
   %6 = add nuw nsw i64 %0, 1
-  %7 = icmp ult i64 %6, %5
+  %7 = icmp samesign ult i64 %6, %5
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; linux/optimized/maple_tree.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i64 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000161(i64 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = zext i32 %4 to i64
   %6 = add nuw nsw i64 %0, 1
   %7 = icmp eq i64 %6, %5

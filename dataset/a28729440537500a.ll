@@ -1,5 +1,7 @@
 
-; 42 occurrences:
+; 44 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; darktable/optimized/introspection_toneequal.c.ll
 ; darktable/optimized/lighttable.c.ll

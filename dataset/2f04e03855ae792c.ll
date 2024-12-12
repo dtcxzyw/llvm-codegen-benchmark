@@ -1,5 +1,5 @@
 
-; 34 occurrences:
+; 36 occurrences:
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/xmltok.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
@@ -15,6 +15,8 @@
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/RISCVVEmitter.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
@@ -38,12 +40,12 @@
 define i16 @func000000000000000f(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw nsw i16 %2, 10
-  %4 = or disjoint i16 %3, %1
+  %4 = or disjoint i16 %1, %3
   %5 = or disjoint i16 %4, %0
   ret i16 %5
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/xmltok.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
@@ -52,6 +54,7 @@ entry:
 ; linux/optimized/r8169_main.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; openjdk/optimized/utf8.ll
+; stb/optimized/stb_connected_components.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000003(i16 %0, i16 %1, i16 %2) #0 {
 entry:
@@ -61,9 +64,10 @@ entry:
   ret i16 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; linux/optimized/yenta_socket.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; openjdk/optimized/Ushort555Rgbx.ll
 ; openjdk/optimized/Ushort565Rgb.ll
@@ -72,7 +76,7 @@ entry:
 define i16 @func000000000000000b(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw i16 %2, 11
-  %4 = or disjoint i16 %3, %1
+  %4 = or disjoint i16 %1, %3
   %5 = or disjoint i16 %4, %0
   ret i16 %5
 }
@@ -140,7 +144,7 @@ entry:
 define i16 @func0000000000000002(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl i16 %2, 7
-  %4 = or disjoint i16 %3, %1
+  %4 = or disjoint i16 %1, %3
   %5 = or i16 %4, %0
   ret i16 %5
 }
@@ -152,7 +156,7 @@ define i16 @func000000000000000a(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw i16 %2, 8
   %4 = or disjoint i16 %3, %1
-  %5 = or i16 %4, %0
+  %5 = or i16 %0, %4
   ret i16 %5
 }
 
@@ -162,7 +166,7 @@ entry:
 define i16 @func0000000000000004(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl nsw i16 %2, 4
-  %4 = or i16 %3, %1
+  %4 = or i16 %1, %3
   %5 = or i16 %4, %0
   ret i16 %5
 }

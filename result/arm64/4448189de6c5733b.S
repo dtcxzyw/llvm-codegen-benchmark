@@ -1,16 +1,17 @@
+func0000000000000078:                   // @func0000000000000078
+// %bb.0:                               // %entry
+                                        // kill: def $w1 killed $w1 def $x1
+	mov	w8, #4                          // =0x4
+	lsl	x9, x0, x1
+	sub	w8, w8, w2
+	lsr	x0, x9, x8
+	ret
+                                        // -- End function
 func0000000000000038:                   // @func0000000000000038
 // %bb.0:                               // %entry
-	movi	v4.4s, #4
-	movi	v5.2d, #0000000000000000
-	sub	v3.4s, v4.4s, v3.4s
-	ushll	v4.2d, v2.2s, #0
-	ushll2	v2.2d, v2.4s, #0
-	ushll	v6.2d, v3.2s, #0
-	ushl	v0.2d, v0.2d, v4.2d
-	ushl	v1.2d, v1.2d, v2.2d
-	usubw2	v2.2d, v5.2d, v3.4s
-	neg	v3.2d, v6.2d
-	ushl	v1.2d, v1.2d, v2.2d
-	ushl	v0.2d, v0.2d, v3.2d
+                                        // kill: def $w1 killed $w1 def $x1
+	lsl	x8, x0, x1
+	mvn	w9, w2
+	lsr	x0, x8, x9
 	ret
                                         // -- End function

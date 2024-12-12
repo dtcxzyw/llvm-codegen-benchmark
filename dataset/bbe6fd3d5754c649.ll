@@ -1,8 +1,9 @@
 
-; 18 occurrences:
+; 17 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; abseil-cpp/optimized/int128_test.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
+; boost/optimized/approximately_equals.ll
 ; cpython/optimized/basearith.ll
 ; cpython/optimized/crt.ll
 ; cpython/optimized/transpose.ll
@@ -10,10 +11,8 @@
 ; protobuf/optimized/time_util.cc.ll
 ; qemu/optimized/audio_audio.c.ll
 ; qemu/optimized/hw_intc_riscv_aclint.c.ll
-; qemu/optimized/hw_misc_sifive_e_aon.c.ll
 ; qemu/optimized/hw_net_e1000x_common.c.ll
 ; qemu/optimized/hw_timer_sifive_pwm.c.ll
-; qemu/optimized/target_riscv_m128_helper.c.ll
 ; qemu/optimized/util_host-utils.c.ll
 ; quickjs/optimized/libbf.ll
 ; velox/optimized/CastExpr.cpp.ll
@@ -33,6 +32,16 @@ define i64 @func0000000000000003(i128 %0, i128 %1) #0 {
 entry:
   %2 = udiv i128 %0, %1
   %3 = trunc nuw nsw i128 %2 to i64
+  ret i64 %3
+}
+
+; 1 occurrences:
+; boost/optimized/approximately_equals.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(i128 %0, i128 %1) #0 {
+entry:
+  %2 = udiv i128 %0, %1
+  %3 = trunc nuw i128 %2 to i64
   ret i64 %3
 }
 

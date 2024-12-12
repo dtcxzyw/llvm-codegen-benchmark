@@ -1,7 +1,5 @@
 
-; 11 occurrences:
-; luajit/optimized/lj_asm.ll
-; luajit/optimized/lj_asm_dyn.ll
+; 9 occurrences:
 ; opencv/optimized/softfloat.cpp.ll
 ; openjdk/optimized/ThreeByteBgr.ll
 ; qemu/optimized/source_s_countLeadingZeros64.c.ll
@@ -20,12 +18,11 @@ entry:
   ret i32 %4
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVRegisterInfo.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; openjdk/optimized/hb-buffer.ll
@@ -39,10 +36,7 @@ entry:
   ret i32 %4
 }
 
-; 14 occurrences:
-; icu/optimized/collationiterator.ll
-; icu/optimized/collationkeys.ll
-; icu/optimized/scrptrun.ll
+; 11 occurrences:
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; openexr/optimized/ImfPxr24Compressor.cpp.ll
@@ -60,6 +54,38 @@ entry:
   %2 = icmp ugt i32 %1, 65535
   %3 = select i1 %2, i32 %0, i32 %1
   %4 = lshr i32 %3, 8
+  ret i32 %4
+}
+
+; 10 occurrences:
+; icu/optimized/collationiterator.ll
+; icu/optimized/collationkeys.ll
+; icu/optimized/scrptrun.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; nori/optimized/nanovg.c.ll
+; openusd/optimized/stbImage.cpp.ll
+; pbrt-v4/optimized/stbimage.cpp.ll
+; postgres/optimized/array_selfuncs.ll
+; stb/optimized/stb_image.c.ll
+; tinygltf/optimized/tiny_gltf.cc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000030(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i32 %1, 255
+  %3 = select i1 %2, i32 %0, i32 %1
+  %4 = lshr i32 %3, 4
+  ret i32 %4
+}
+
+; 2 occurrences:
+; luajit/optimized/lj_asm.ll
+; luajit/optimized/lj_asm_dyn.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000028(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 16
+  %3 = select i1 %2, i32 %0, i32 %1
+  %4 = lshr i32 %3, 1
   ret i32 %4
 }
 

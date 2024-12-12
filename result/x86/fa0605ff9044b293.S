@@ -46,6 +46,12 @@ func000000000000000f:                   # @func000000000000000f
 	addq	%rsi, %rdx
 	subq	%rdx, %rax
 	retq
+func0000000000000003:                   # @func0000000000000003
+	movq	%rdi, %rax
+	shrq	$3, %rdx
+	addq	%rsi, %rdx
+	subq	%rdx, %rax
+	retq
 func0000000000000005:                   # @func0000000000000005
 	movq	%rdi, %rax
 	shrq	$6, %rdx

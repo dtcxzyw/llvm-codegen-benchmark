@@ -24,7 +24,7 @@ entry:
   ret i64 %4
 }
 
-; 36 occurrences:
+; 37 occurrences:
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/dauNpn.c.ll
 ; abc/optimized/ifDec07.c.ll
@@ -57,6 +57,7 @@ entry:
 ; typst-rs/optimized/al9nyr8ju52xbc2.ll
 ; wireshark/optimized/text_import.c.ll
 ; z3/optimized/sat_aig_cuts.cpp.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
 ; zstd/optimized/fse_compress.c.ll
 ; zstd/optimized/huf_compress.c.ll
 ; zstd/optimized/zstd_compress_sequences.c.ll

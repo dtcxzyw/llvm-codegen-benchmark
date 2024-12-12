@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 36 occurrences:
 ; abc/optimized/gzread.c.ll
 ; cmake/optimized/gzread.c.ll
 ; cvc5/optimized/io_utils.cpp.ll
@@ -21,8 +21,6 @@
 ; linux/optimized/mballoc.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/YAMLTraits.cpp.ll
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
 ; minetest/optimized/CGUISpriteBank.cpp.ll
 ; openblas/optimized/dsbgst.c.ll
 ; openblas/optimized/dtgevc.c.ll
@@ -47,7 +45,7 @@ entry:
   ret i32 %5
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; darktable/optimized/introspection_blurs.c.ll
@@ -61,7 +59,6 @@ entry:
 ; opencv/optimized/calibration.cpp.ll
 ; opencv/optimized/morph.dispatch.cpp.ll
 ; openspiel/optimized/twixtboard.cc.ll
-; postgres/optimized/float.ll
 ; wireshark/optimized/packet-nvme.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i32 %1, i64 %2) #0 {
@@ -84,9 +81,10 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
+; boost/optimized/to_chars.ll
 ; gromacs/optimized/forcetable.cpp.ll
 ; luajit/optimized/minilua.ll
 ; opencv/optimized/contours.cpp.ll
@@ -94,7 +92,7 @@ entry:
 define i32 @func0000000000000005(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
-  %4 = add nsw i32 %3, 1
+  %4 = add nsw i32 %3, -3
   %5 = select i1 %0, i32 %1, i32 %4
   ret i32 %5
 }

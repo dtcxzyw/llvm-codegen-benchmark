@@ -1,5 +1,6 @@
 
-; 7 occurrences:
+; 8 occurrences:
+; boost/optimized/default_filter_factory.ll
 ; jemalloc/optimized/ckh.ll
 ; jemalloc/optimized/ckh.pic.ll
 ; jemalloc/optimized/ckh.sym.ll
@@ -13,7 +14,7 @@ entry:
   %3 = add i64 %1, %2
   %4 = mul i64 %3, 5
   %5 = add i64 %4, 1390208809
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   %7 = mul i64 %6, 5
   ret i64 %7
 }

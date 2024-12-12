@@ -11,7 +11,7 @@
 ; opencv/optimized/ppf_helpers.cpp.ll
 ; qemu/optimized/ui_vnc-enc-tight.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000014a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %1, %2
   %4 = icmp sgt i32 %3, 0
@@ -23,7 +23,7 @@ entry:
 ; 1 occurrences:
 ; ncnn/optimized/net.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %1, %2
   %4 = icmp eq i32 %3, 8
@@ -36,7 +36,7 @@ entry:
 ; abc/optimized/ioReadBlifMv.c.ll
 ; cmake/optimized/cmCursesMainForm.cxx.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000141(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %1, %2
   %4 = icmp sgt i32 %3, 1
@@ -48,7 +48,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %1, %2
   %4 = icmp sgt i32 %3, 2
@@ -60,7 +60,7 @@ entry:
 ; 1 occurrences:
 ; libwebp/optimized/backward_references_enc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000066(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000c6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %1, %2
   %4 = icmp slt i32 %3, 8

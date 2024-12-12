@@ -11,7 +11,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	%rdx, %rdi
 	setb	%al
 	retq
-func00000000000000a4:                   # @func00000000000000a4
+func0000000000000144:                   # @func0000000000000144
 	decq	%rdx
 	shlq	$12, %rsi
 	addq	%rdi, %rsi

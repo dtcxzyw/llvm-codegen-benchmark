@@ -40,6 +40,12 @@ func000000000000004f:                   # @func000000000000004f
 	orl	%edi, %esi
 	orl	%esi, %eax
 	retq
+func000000000000002f:                   # @func000000000000002f
+	shll	$8, %edx
+	leal	(,%rsi,8), %eax
+	orl	%edx, %eax
+	orl	%edi, %eax
+	retq
 func000000000000000c:                   # @func000000000000000c
 	movl	%esi, %eax
 	shll	$11, %edx

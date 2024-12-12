@@ -9,9 +9,9 @@ func0000000000000002:                   # @func0000000000000002
 	cmpl	$4, %edi
 	sete	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
-	andl	$254, %edi
+func0000000000000028:                   # @func0000000000000028
+	andl	$7, %edi
 	xorl	%eax, %eax
-	cmpl	$250, %edi
+	cmpl	$3, %edi
 	setb	%al
 	retq

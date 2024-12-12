@@ -1,6 +1,7 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; lief/optimized/x509.c.ll
+; lvgl/optimized/lv_calendar.ll
 ; proj/optimized/isea.cpp.ll
 ; wireshark/optimized/packet-aprs.c.ll
 ; Function Attrs: nounwind

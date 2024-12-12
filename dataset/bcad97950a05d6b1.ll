@@ -14,7 +14,7 @@ entry:
   ret i32 %4
 }
 
-; 20 occurrences:
+; 15 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/llb1Reach.c.ll
 ; abc/optimized/saigSwitch.c.ll
@@ -22,12 +22,7 @@ entry:
 ; draco/optimized/sequential_integer_attribute_encoder.cc.ll
 ; draco/optimized/sequential_normal_attribute_encoder.cc.ll
 ; gromacs/optimized/domdec_setup.cpp.ll
-; icu/optimized/ustack.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtpttf.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; openspiel/optimized/PlayAnalyser.cpp.ll
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rtextures.c.ll

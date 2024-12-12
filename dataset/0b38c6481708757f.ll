@@ -108,6 +108,20 @@ entry:
   ret ptr %7
 }
 
+; 2 occurrences:
+; openjdk/optimized/xMark.ll
+; openjdk/optimized/zMark.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000017(i64 %0, i32 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = zext nneg i32 %1 to i64
+  %5 = add nsw i64 %4, %3
+  %6 = inttoptr i64 %5 to ptr
+  %7 = getelementptr nusw nuw ptr, ptr %6, i64 %0
+  ret ptr %7
+}
+
 ; 5 occurrences:
 ; hermes/optimized/HadesGC.cpp.ll
 ; llvm/optimized/XCOFFObjectFile.cpp.ll
@@ -115,13 +129,13 @@ entry:
 ; redis/optimized/arena.ll
 ; redis/optimized/arena.sym.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func0000000000000003(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = ptrtoint ptr %1 to i64
   %5 = add i64 %4, %3
   %6 = inttoptr i64 %5 to ptr
-  %7 = getelementptr nusw i8, ptr %6, i64 %0
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %0
   ret ptr %7
 }
 

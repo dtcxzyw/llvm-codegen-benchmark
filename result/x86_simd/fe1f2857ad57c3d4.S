@@ -7,7 +7,7 @@ func0000000000000000:                   # @func0000000000000000
 	vpmovd2m	%xmm2, %k1
 	vpbroadcastq	.LCPI0_0(%rip), %ymm2   # ymm2 = [2,2,2,2]
 	vpbroadcastq	.LCPI0_1(%rip), %ymm2 {%k1} # ymm2 {%k1} = [3,3,3,3]
-	vpmullq	%ymm1, %ymm2, %ymm1
+	vpmullq	%ymm2, %ymm1, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
 	retq
 func0000000000000005:                   # @func0000000000000005
@@ -16,7 +16,7 @@ func0000000000000005:                   # @func0000000000000005
 	vpcmpnltd	%xmm3, %xmm2, %k1
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpsubq	%ymm1, %ymm2, %ymm1 {%k1}
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI2_0:
 	.quad	40                              # 0x28
@@ -52,5 +52,5 @@ func000000000000000d:                   # @func000000000000000d
 	vpbroadcastq	.LCPI4_0(%rip), %ymm2   # ymm2 = [1000000,1000000,1000000,1000000]
 	vpbroadcastq	.LCPI4_1(%rip), %ymm2 {%k1} # ymm2 {%k1} = [5000000,5000000,5000000,5000000]
 	vpmullq	%ymm1, %ymm2, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq

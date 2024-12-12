@@ -1,9 +1,8 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; fmt/optimized/format-impl-test.cc.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; openusd/optimized/stbImage.cpp.ll
-; openusd/optimized/warped_motion.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_write.c.ll
 ; tev/optimized/StbiLdrImageSaver.cpp.ll

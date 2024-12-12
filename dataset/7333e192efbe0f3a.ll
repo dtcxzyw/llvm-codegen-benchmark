@@ -1,6 +1,5 @@
 
-; 5 occurrences:
-; rust-analyzer-rs/optimized/1lnhy2v45voxjwry.ll
+; 4 occurrences:
 ; spike/optimized/ukadd8.ll
 ; spike/optimized/vsaddu_vi.ll
 ; spike/optimized/vsaddu_vv.ll
@@ -9,7 +8,7 @@
 define i8 @func0000000000000004(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %0, %1
-  %3 = select i1 %2, i8 9, i8 %0
+  %3 = select i1 %2, i8 -1, i8 %0
   ret i8 %3
 }
 

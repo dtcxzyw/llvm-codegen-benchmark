@@ -11,7 +11,7 @@ entry:
   %3 = add i32 %2, 31
   %4 = and i32 %3, 31
   %5 = shl nuw i32 1, %4
-  %6 = and i32 %5, %0
+  %6 = and i32 %0, %5
   ret i32 %6
 }
 
@@ -24,7 +24,7 @@ entry:
   %3 = add i32 %2, 27
   %4 = and i32 %3, 31
   %5 = shl nuw i32 1, %4
-  %6 = and i32 %5, %0
+  %6 = and i32 %0, %5
   ret i32 %6
 }
 
@@ -37,7 +37,7 @@ entry:
   %3 = add i32 %2, 31
   %4 = and i32 %3, 31
   %5 = shl nuw i32 1, %4
-  %6 = and i32 %5, %0
+  %6 = and i32 %0, %5
   ret i32 %6
 }
 
@@ -66,7 +66,7 @@ entry:
   %3 = add i32 %2, 1
   %4 = and i32 %3, 31
   %5 = shl nsw i32 -1, %4
-  %6 = and i32 %5, %0
+  %6 = and i32 %0, %5
   ret i32 %6
 }
 

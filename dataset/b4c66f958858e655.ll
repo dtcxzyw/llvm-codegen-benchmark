@@ -7,7 +7,25 @@ entry:
   %2 = fneg double %1
   %3 = fcmp olt double %1, 0.000000e+00
   %4 = select i1 %3, double %2, double %1
-  %5 = fcmp ogt double %4, %0
+  %5 = fcmp olt double %0, %4
+  ret i1 %5
+}
+
+; 7 occurrences:
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; Function Attrs: nounwind
+define i1 @func000000000000002a(double %0, double %1) #0 {
+entry:
+  %2 = fneg double %1
+  %3 = fcmp olt double %1, 0.000000e+00
+  %4 = select i1 %3, double %2, double %1
+  %5 = fcmp ole double %0, %4
   ret i1 %5
 }
 
@@ -27,7 +45,7 @@ entry:
   %2 = fneg double %1
   %3 = fcmp olt double %1, 0.000000e+00
   %4 = select i1 %3, double %2, double %1
-  %5 = fcmp une double %4, %0
+  %5 = fcmp une double %0, %4
   ret i1 %5
 }
 
@@ -41,7 +59,7 @@ entry:
   %2 = fneg double %1
   %3 = fcmp ult double %1, 0.000000e+00
   %4 = select i1 %3, double %2, double %1
-  %5 = fcmp ogt double %4, %0
+  %5 = fcmp olt double %0, %4
   ret i1 %5
 }
 
@@ -55,7 +73,7 @@ entry:
   %2 = fneg double %1
   %3 = fcmp ult double %1, 0.000000e+00
   %4 = select i1 %3, double %2, double %1
-  %5 = fcmp ult double %4, %0
+  %5 = fcmp ugt double %0, %4
   ret i1 %5
 }
 
@@ -97,7 +115,7 @@ entry:
   %2 = fneg double %1
   %3 = fcmp olt double %1, 0.000000e+00
   %4 = select i1 %3, double %2, double %1
-  %5 = fcmp oeq double %4, %0
+  %5 = fcmp oeq double %0, %4
   ret i1 %5
 }
 
@@ -112,7 +130,7 @@ entry:
   %2 = fneg double %1
   %3 = fcmp ult double %1, 0.000000e+00
   %4 = select i1 %3, double %2, double %1
-  %5 = fcmp ole double %4, %0
+  %5 = fcmp oge double %0, %4
   ret i1 %5
 }
 
@@ -124,7 +142,7 @@ entry:
   %2 = fneg double %1
   %3 = fcmp ult double %1, 0.000000e+00
   %4 = select i1 %3, double %2, double %1
-  %5 = fcmp ugt double %4, %0
+  %5 = fcmp ult double %0, %4
   ret i1 %5
 }
 
@@ -136,7 +154,7 @@ entry:
   %2 = fneg double %1
   %3 = fcmp ult double %1, 0.000000e+00
   %4 = select i1 %3, double %2, double %1
-  %5 = fcmp oge double %4, %0
+  %5 = fcmp ole double %0, %4
   ret i1 %5
 }
 
@@ -148,7 +166,7 @@ entry:
   %2 = fneg double %1
   %3 = fcmp olt double %1, 0.000000e+00
   %4 = select i1 %3, double %2, double %1
-  %5 = fcmp ugt double %4, %0
+  %5 = fcmp ult double %0, %4
   ret i1 %5
 }
 

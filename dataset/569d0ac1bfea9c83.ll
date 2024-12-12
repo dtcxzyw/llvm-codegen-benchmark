@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; assimp/optimized/ObjFileImporter.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
 ; lief/optimized/DyldInfo.cpp.ll
@@ -7,11 +7,10 @@
 ; meshlab/optimized/trackmode.cpp.ll
 ; minetest/optimized/CB3DMeshFileLoader.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/clientlauncher.cpp.ll
 ; opencv/optimized/aruco_calib.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 56
@@ -42,7 +41,7 @@ entry:
 ; openspiel/optimized/afce.cc.ll
 ; openspiel/optimized/efce.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 44
@@ -56,7 +55,7 @@ entry:
 ; llvm/optimized/PGOInstrumentation.cpp.ll
 ; wasmedge/optimized/module.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 56
@@ -68,7 +67,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/DWARFUnit.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000025(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 24

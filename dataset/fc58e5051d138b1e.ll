@@ -38,7 +38,7 @@ entry:
   %4 = zext nneg i8 %3 to i16
   %5 = shl nuw i16 %1, 15
   %6 = or disjoint i16 %5, %4
-  %7 = or disjoint i16 %6, %0
+  %7 = or disjoint i16 %0, %6
   ret i16 %7
 }
 

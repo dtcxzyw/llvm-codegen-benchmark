@@ -6,8 +6,8 @@ func000000000000000a:                   # @func000000000000000a
 	retq
 func0000000000000004:                   # @func0000000000000004
 	movq	%rdi, %rax
-	addq	$131072, %rdx                   # imm = 0x20000
-	cmpq	$262144, %rdx                   # imm = 0x40000
+	addq	$-8, %rdx
+	cmpq	$-7, %rdx
 	cmovaeq	%rsi, %rax
 	retq
 func0000000000000001:                   # @func0000000000000001
@@ -15,7 +15,7 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	$1, %rdx
 	cmovneq	%rsi, %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movq	%rdi, %rax
 	cmpq	$20, %rdx
 	cmovneq	%rsi, %rax
@@ -26,7 +26,7 @@ func0000000000000006:                   # @func0000000000000006
 	addq	%rdx, %rcx
 	cmovnsq	%rsi, %rax
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	movq	%rdi, %rax
 	movslq	%edx, %rcx
 	cmpq	%rdx, %rcx

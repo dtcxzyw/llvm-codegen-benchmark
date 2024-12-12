@@ -1,15 +1,32 @@
-func0000000000000211:                   # @func0000000000000211
+func0000000000000821:                   # @func0000000000000821
 	leaq	(%rsi,%rdx,4), %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%cl
 	testq	%rdi, %rdi
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000281:                   # @func0000000000000281
+func0000000000000d01:                   # @func0000000000000d01
 	addq	%rdx, %rsi
-	cmpq	%rdi, %rsi
-	setb	%cl
+	cmpq	%rsi, %rdi
+	seta	%cl
+	testq	%rdi, %rdi
+	sete	%al
+	orb	%cl, %al
+	retq
+func0000000000000c21:                   # @func0000000000000c21
+	shlq	$4, %rdx
+	addq	%rsi, %rdx
+	cmpq	%rdx, %rdi
+	sete	%cl
+	testq	%rdi, %rdi
+	sete	%al
+	orb	%cl, %al
+	retq
+func0000000000000901:                   # @func0000000000000901
+	addq	%rdx, %rsi
+	cmpq	%rsi, %rdi
+	seta	%cl
 	testq	%rdi, %rdi
 	sete	%al
 	orb	%cl, %al

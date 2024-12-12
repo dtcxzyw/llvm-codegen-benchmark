@@ -5,17 +5,22 @@ func0000000000000004:                   # @func0000000000000004
 	movl	$1, %eax
 	cmovaeq	%rcx, %rax
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	leaq	8(%rdi), %rax
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	addq	$-13, %rsi
 	leaq	13(%rdi), %rcx
 	cmpq	$20, %rsi
 	movl	$32, %eax
 	cmovaeq	%rcx, %rax
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000041:                   # @func0000000000000041
+	leaq	1(%rdi), %rax
+	cmpq	$1, %rsi
+	cmoveq	%rsi, %rax
+	retq
+func0000000000000024:                   # @func0000000000000024
 	addq	$58, %rsi
 	leaq	24(%rdi), %rcx
 	cmpq	$59, %rsi

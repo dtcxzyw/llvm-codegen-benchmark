@@ -1,13 +1,9 @@
 
-; 10 occurrences:
+; 6 occurrences:
 ; clamav/optimized/Bra.c.ll
 ; cmake/optimized/armthumb.c.ll
-; jq/optimized/utf32_be.ll
-; jq/optimized/utf32_le.ll
 ; libphonenumber/optimized/rune.c.ll
 ; linux/optimized/xz_dec_bcj.ll
-; oniguruma/optimized/utf32_be.ll
-; oniguruma/optimized/utf32_le.ll
 ; re2/optimized/rune.cc.ll
 ; ruby/optimized/utf_32be.ll
 ; Function Attrs: nounwind

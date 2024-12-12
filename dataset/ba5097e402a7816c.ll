@@ -11,7 +11,7 @@
 ; quantlib/optimized/mceuropeanbasketengine.ll
 ; quantlib/optimized/mchestonhullwhiteengine.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 120
   %3 = icmp ugt i64 %2, 4611686018427387903

@@ -1,5 +1,5 @@
 
-; 207 occurrences:
+; 205 occurrences:
 ; abc/optimized/abcSpeedup.c.ll
 ; abc/optimized/aigCuts.c.ll
 ; abc/optimized/cnfCut.c.ll
@@ -25,8 +25,7 @@
 ; assimp/optimized/glTFImporter.cpp.ll
 ; assimp/optimized/o3dgcDynamicVectorDecoder.cpp.ll
 ; assimp/optimized/o3dgcTriangleFans.cpp.ll
-; clamav/optimized/upack.c.ll
-; cmake/optimized/lzma2_encoder.c.ll
+; boost/optimized/syslog_backend.ll
 ; coreutils-rs/optimized/jiqj5u7teuhb0o0.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -122,7 +121,6 @@
 ; linux/optimized/intel_display_irq.ll
 ; linux/optimized/intel_display_power.ll
 ; linux/optimized/intel_dmc.ll
-; linux/optimized/intel_engine_user.ll
 ; linux/optimized/intel_guc_log.ll
 ; linux/optimized/intel_reset.ll
 ; linux/optimized/mlme.ll
@@ -173,12 +171,12 @@
 ; php/optimized/pcre2_compile.ll
 ; php/optimized/zend_inference.ll
 ; postgres/optimized/varbit.ll
+; qemu/optimized/hw_net_cadence_gem.c.ll
 ; qemu/optimized/tcg.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; redis/optimized/sentinel.ll
 ; ruby/optimized/iseq.ll
 ; ruby/optimized/regcomp.ll
-; rust-analyzer-rs/optimized/6218mmeycy2lka1.ll
 ; slurm/optimized/gres.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
@@ -211,11 +209,11 @@
 define i32 @func0000000000000000(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 %2, i32 1
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
-; 68 occurrences:
+; 66 occurrences:
 ; abc/optimized/kitCloud.c.ll
 ; cmake/optimized/url.c.ll
 ; curl/optimized/libcurl_la-url.ll
@@ -230,9 +228,7 @@ entry:
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libquic/optimized/file_posix.cc.ll
 ; linux/optimized/aspm.ll
-; linux/optimized/attr.ll
 ; linux/optimized/forcedeth.ll
-; linux/optimized/hdac_regmap.ll
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/ipv6_sockglue.ll
 ; linux/optimized/sky2.ll
@@ -288,7 +284,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 %2, i32 1
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 

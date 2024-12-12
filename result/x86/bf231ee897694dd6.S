@@ -15,7 +15,7 @@ func0000000000000023:                   # @func0000000000000023
 	retq
 func0000000000000028:                   # @func0000000000000028
 	vmaxsd	%xmm2, %xmm1, %xmm1
-	vcmpeqsd	%xmm0, %xmm1, %k0
+	vcmpeqsd	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 func000000000000002b:                   # @func000000000000002b
@@ -41,6 +41,16 @@ func0000000000000044:                   # @func0000000000000044
 func0000000000000045:                   # @func0000000000000045
 	vminsd	%xmm2, %xmm1, %xmm1
 	vucomisd	%xmm0, %xmm1
+	setb	%al
+	retq
+func000000000000004d:                   # @func000000000000004d
+	vminsd	%xmm2, %xmm1, %xmm1
+	vucomisd	%xmm0, %xmm1
+	setbe	%al
+	retq
+func0000000000000043:                   # @func0000000000000043
+	vminsd	%xmm2, %xmm1, %xmm1
+	vucomisd	%xmm1, %xmm0
 	setb	%al
 	retq
 func000000000000002c:                   # @func000000000000002c

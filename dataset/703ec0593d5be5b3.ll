@@ -88,8 +88,7 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
-; openmpi/optimized/libmpi_c_profile_la-get_elements.ll
+; 2 occurrences:
 ; protobuf/optimized/coded_stream.cc.ll
 ; sentencepiece/optimized/coded_stream.cc.ll
 ; Function Attrs: nounwind

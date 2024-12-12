@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openspiel/optimized/coop_box_pushing.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000426(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -32212254720
   %4 = icmp eq i64 %3, 0
@@ -33,10 +33,10 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 0, %2
-  %4 = icmp eq i32 %3, %1
+  %4 = icmp eq i32 %1, %3
   %5 = and i64 %0, 4294967295
   %6 = icmp eq i64 %5, 0
   %7 = and i1 %6, %4

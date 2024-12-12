@@ -1,5 +1,5 @@
 
-; 160 occurrences:
+; 156 occurrences:
 ; abc/optimized/abcAuto.c.ll
 ; abc/optimized/abcBm.c.ll
 ; abc/optimized/abcPrint.c.ll
@@ -59,7 +59,6 @@
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_mutualglobal.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
@@ -75,7 +74,6 @@
 ; meshlab/optimized/parameters.cpp.ll
 ; meshlab/optimized/qualitymapperdialog.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/c_converter.cpp.ll
 ; minetest/optimized/client.cpp.ll
 ; minetest/optimized/clientenvironment.cpp.ll
@@ -137,7 +135,6 @@
 ; wireshark/optimized/packet-gmr1_rach.c.ll
 ; wireshark/optimized/packet-gmr1_rr.c.ll
 ; wireshark/optimized/packet-gryphon.c.ll
-; wireshark/optimized/packet-gsm_r_uus1.c.ll
 ; wireshark/optimized/packet-gtpv2.c.ll
 ; wireshark/optimized/packet-homeplug.c.ll
 ; wireshark/optimized/packet-isis-lsp.c.ll
@@ -151,7 +148,6 @@
 ; wireshark/optimized/packet-nr-rrc.c.ll
 ; wireshark/optimized/packet-oran.c.ll
 ; wireshark/optimized/packet-s1ap.c.ll
-; wireshark/optimized/packet-x2ap.c.ll
 ; wireshark/optimized/packet-xnap.c.ll
 ; wireshark/optimized/packet-z21.c.ll
 ; wireshark/optimized/packet-zbee-zcl-se.c.ll

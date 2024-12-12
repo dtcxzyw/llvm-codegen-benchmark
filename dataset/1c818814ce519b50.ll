@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 25 occurrences:
 ; clamav/optimized/regexec.c.ll
 ; graphviz/optimized/strmatch.c.ll
 ; hermes/optimized/regexec.c.ll
@@ -11,7 +11,6 @@
 ; llvm/optimized/LiveIntervals.cpp.ll
 ; llvm/optimized/MemorySanitizer.cpp.ll
 ; llvm/optimized/MustExecute.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RangeConstraintManager.cpp.ll
 ; llvm/optimized/SimplifyLibCalls.cpp.ll
 ; llvm/optimized/regexec.c.ll
@@ -93,19 +92,6 @@ entry:
   ret ptr %3
 }
 
-; 4 occurrences:
-; coreutils-rs/optimized/1rgvgulc49uxow1y.ll
-; git/optimized/unpack-trees.ll
-; llvm/optimized/AssumptionCache.cpp.ll
-; rustfmt-rs/optimized/s8gyre8ye3tvwam.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000c(ptr %0, ptr %1) #0 {
-entry:
-  %.not = icmp eq ptr %0, %1
-  %2 = select i1 %.not, ptr null, ptr %0
-  ret ptr %2
-}
-
 ; 1 occurrences:
 ; abc/optimized/satProof.c.ll
 ; Function Attrs: nounwind
@@ -114,6 +100,18 @@ entry:
   %2 = icmp ugt ptr %0, %1
   %3 = select i1 %2, ptr %0, ptr null
   ret ptr %3
+}
+
+; 3 occurrences:
+; git/optimized/unpack-trees.ll
+; llvm/optimized/AssumptionCache.cpp.ll
+; turborepo-rs/optimized/avd1ga9yb4qq5g7sdqftppd4q.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000c(ptr %0, ptr %1) #0 {
+entry:
+  %.not = icmp eq ptr %0, %1
+  %2 = select i1 %.not, ptr null, ptr %0
+  ret ptr %2
 }
 
 attributes #0 = { nounwind }

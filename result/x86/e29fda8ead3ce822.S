@@ -50,6 +50,21 @@ func000000000000000b:                   # @func000000000000000b
 	orq	%rdi, %rdx
 	orq	%rdx, %rax
 	retq
+func0000000000000000:                   # @func0000000000000000
+	shll	$8, %edx
+	andl	$1048320, %edx                  # imm = 0xFFF00
+	movzbl	%sil, %eax
+	orq	%rdi, %rax
+	orq	%rdx, %rax
+	retq
+func0000000000000001:                   # @func0000000000000001
+	andl	$4095, %edx                     # imm = 0xFFF
+	shlq	$40, %rdx
+	movabsq	$-4503599627370496, %rax        # imm = 0xFFF0000000000000
+	andq	%rsi, %rax
+	orq	%rdi, %rax
+	orq	%rdx, %rax
+	retq
 func000000000000000e:                   # @func000000000000000e
 	movq	%rsi, %rax
 	andl	$15, %edx
@@ -64,20 +79,4 @@ func000000000000000c:                   # @func000000000000000c
 	andl	$1048576, %esi                  # imm = 0x100000
 	orq	%rdi, %rsi
 	orq	%rsi, %rax
-	retq
-func0000000000000000:                   # @func0000000000000000
-	movq	%rsi, %rax
-	shll	$4, %edx
-	andl	$4194304, %edx                  # imm = 0x400000
-	andl	$131072, %eax                   # imm = 0x20000
-	orq	%rdi, %rax
-	orq	%rdx, %rax
-	retq
-func0000000000000001:                   # @func0000000000000001
-	andl	$1, %edx
-	shlq	$35, %rdx
-	movabsq	$17179869184, %rax              # imm = 0x400000000
-	andq	%rsi, %rax
-	orq	%rdi, %rax
-	orq	%rdx, %rax
 	retq

@@ -6,7 +6,7 @@
 ; openusd/optimized/mvref_common.c.ll
 ; wireshark/optimized/proto.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i8 %0) #0 {
+define i1 @func000000000000018c(i8 %0) #0 {
 entry:
   %1 = icmp ne i8 %0, 110
   %2 = icmp ne i8 %0, 48

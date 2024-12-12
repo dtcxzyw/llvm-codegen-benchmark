@@ -1,8 +1,7 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; bullet3/optimized/btBatchedConstraints.ll
 ; darktable/optimized/introspection_negadoctor.c.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll
 ; recastnavigation/optimized/DetourNavMeshBuilder.cpp.ll
 ; Function Attrs: nounwind

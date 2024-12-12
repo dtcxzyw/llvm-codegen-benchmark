@@ -1,10 +1,9 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; arrow/optimized/basic_decimal.cc.ll
 ; clamav/optimized/aspack.c.ll
 ; hdf5/optimized/H5B2int.c.ll
 ; linux/optimized/bitset.ll
-; linux/optimized/hda_hwdep.ll
 ; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; minetest/optimized/renderingengine.cpp.ll

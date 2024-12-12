@@ -3,11 +3,11 @@
 ; abc/optimized/dauTree.c.ll
 ; qemu/optimized/accel_tcg_tcg-runtime-gvec.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000010(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000030(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, 255
-  %4 = icmp ugt i32 %3, %0
+  %4 = icmp samesign ugt i32 %3, %0
   %5 = zext i1 %4 to i32
   ret i32 %5
 }
@@ -15,11 +15,11 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/accel_tcg_tcg-runtime-gvec.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000012(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000032(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, 255
-  %4 = icmp uge i32 %3, %0
+  %4 = icmp samesign uge i32 %3, %0
   %5 = zext i1 %4 to i32
   ret i32 %5
 }
@@ -29,7 +29,7 @@ entry:
 ; abc/optimized/giaSim.c.ll
 ; abc/optimized/pdrTsim2.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000004c(i32 %0, i64 %1) #0 {
+define i32 @func000000000000008c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = and i32 %2, 536870911
@@ -44,11 +44,11 @@ entry:
 ; abc/optimized/cecSatG3.c.ll
 ; abc/optimized/giaBalAig.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000028(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, 536870911
-  %4 = icmp ult i32 %3, %0
+  %4 = icmp samesign ult i32 %3, %0
   %5 = zext i1 %4 to i32
   ret i32 %5
 }
@@ -70,7 +70,7 @@ entry:
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/giaDup.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000056(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000096(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = and i32 %2, 536870911
@@ -82,7 +82,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaExist.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000042(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000082(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = and i32 %2, 536870911

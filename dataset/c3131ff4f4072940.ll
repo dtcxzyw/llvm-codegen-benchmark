@@ -66,17 +66,4 @@ entry:
   ret i32 %6
 }
 
-; 1 occurrences:
-; pbrt-v4/optimized/shapes.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000105(i32 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 8388607
-  %3 = icmp ugt i32 %2, 3474674
-  %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %0, -127
-  %6 = add nsw i32 %5, %4
-  ret i32 %6
-}
-
 attributes #0 = { nounwind }

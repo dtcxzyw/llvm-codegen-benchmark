@@ -5,7 +5,7 @@ func0000000000000001:                   # @func0000000000000001
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	sext.w	a1, a1
 	slliw	a2, a2, 1
 	xor	a1, a1, a2

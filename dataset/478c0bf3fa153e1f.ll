@@ -1,7 +1,8 @@
 
-; 30 occurrences:
+; 31 occurrences:
 ; abc/optimized/infback.c.ll
 ; abc/optimized/inflate.c.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/inflate64.c.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; cmake/optimized/inflate.c.ll
@@ -34,7 +35,7 @@
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = lshr i32 %4, %0
   ret i32 %5
 }

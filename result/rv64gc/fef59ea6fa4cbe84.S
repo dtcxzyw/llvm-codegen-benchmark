@@ -1,4 +1,4 @@
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	sext.w	a1, a0
 	li	a2, 98
 	blt	a1, a2, .LBB0_2
@@ -21,13 +21,13 @@ func0000000000000008:                   # @func0000000000000008
 	li	a1, 8
 	addw	a0, a0, a1
 	ret
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	sext.w	a1, a0
 	slti	a1, a1, 2
 	add	a0, a0, a1
 	addiw	a0, a0, -2
 	ret
-func00000000000000da:                   # @func00000000000000da
+func00000000000001aa:                   # @func00000000000001aa
 	sext.w	a1, a0
 	lui	a2, 1048400
 	addiw	a2, a2, 1427

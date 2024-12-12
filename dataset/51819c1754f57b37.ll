@@ -79,17 +79,6 @@ entry:
 }
 
 ; 1 occurrences:
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000024(i32 %0, i32 %1) #0 {
-entry:
-  %.not = icmp ult i32 %0, %1
-  %2 = select i1 %.not, i32 0, i32 %1
-  %3 = sub i32 %0, %2
-  ret i32 %3
-}
-
-; 1 occurrences:
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000022(i32 %0, i32 %1) #0 {
@@ -112,19 +101,7 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/hda_codec.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ugt i32 %0, %1
-  %3 = select i1 %2, i32 %1, i32 0
-  %4 = sub nsw i32 %0, %3
-  ret i32 %4
-}
-
-; 2 occurrences:
 ; linux/optimized/hda_controller.ll
-; postgres/optimized/detoast.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:

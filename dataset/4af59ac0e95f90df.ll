@@ -6,7 +6,7 @@
 ; php/optimized/ir_emit.ll
 ; php/optimized/zend_inference.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0) #0 {
+define i32 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 240
   %2 = icmp eq i32 %1, 128

@@ -2,6 +2,7 @@
 ; 93 occurrences:
 ; assimp/optimized/BVHLoader.cpp.ll
 ; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
+; boost/optimized/message.ll
 ; casadi/optimized/dae_builder_internal.cpp.ll
 ; casadi/optimized/fmu2.cpp.ll
 ; casadi/optimized/interpolant.cpp.ll
@@ -27,7 +28,6 @@
 ; gromacs/optimized/gmx_nmeig.cpp.ll
 ; gromacs/optimized/mtop_util.cpp.ll
 ; gromacs/optimized/pull.cpp.ll
-; gromacs/optimized/quadraticsplinetable.cpp.ll
 ; gromacs/optimized/vsite.cpp.ll
 ; hyperscan/optimized/ComponentSequence.cpp.ll
 ; hyperscan/optimized/ng_uncalc_components.cpp.ll

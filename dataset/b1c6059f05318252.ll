@@ -1,9 +1,8 @@
 
-; 14 occurrences:
+; 13 occurrences:
 ; git/optimized/merge-recursive.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; icu/optimized/inputext.ll
-; linux/optimized/irq.ll
 ; llvm/optimized/VPlanRecipes.cpp.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-shape-fallback.ll

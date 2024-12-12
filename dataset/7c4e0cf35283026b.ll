@@ -33,23 +33,22 @@ define i64 @func0000000000000002(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i64 0, i64 %1
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; mitsuba3/optimized/x86instapi.cpp.ll
-; qemu/optimized/util_host-utils.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 16777216
   %4 = select i1 %3, i64 0, i64 %1
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; abc/optimized/saigPhase.c.ll
 ; arrow/optimized/encode_internal.cc.ll
 ; arrow/optimized/encode_internal_avx2.cc.ll
@@ -57,7 +56,6 @@ entry:
 ; linux/optimized/vgaarb.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; qemu/optimized/hw_net_cadence_gem.c.ll
-; quickjs/optimized/quickjs.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1, i32 %2) #0 {
@@ -69,13 +67,24 @@ entry:
 }
 
 ; 1 occurrences:
+; qemu/optimized/util_host-utils.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000028(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 65
+  %4 = select i1 %3, i64 0, i64 %1
+  %5 = or i64 %4, %0
+  ret i64 %5
+}
+
+; 1 occurrences:
 ; openjdk/optimized/ciMethodData.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 63
   %4 = select i1 %3, i64 0, i64 %1
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 
@@ -93,7 +102,7 @@ define i64 @func0000000000000011(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %2, 4
   %4 = select i1 %3, i64 36, i64 %1
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   ret i64 %5
 }
 
@@ -107,7 +116,7 @@ define i64 @func0000000000000015(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 8
   %4 = select i1 %3, i64 128, i64 %1
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   ret i64 %5
 }
 
@@ -126,9 +135,9 @@ entry:
 ; eastl/optimized/Int128_t.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000010(i64 %0, i64 %1, i32 %2) #0 {
+define i64 @func0000000000000030(i64 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, 63
+  %3 = icmp samesign ugt i32 %2, 63
   %4 = select i1 %3, i64 -9223372036854775808, i64 %1
   %5 = or i64 %4, %0
   ret i64 %5

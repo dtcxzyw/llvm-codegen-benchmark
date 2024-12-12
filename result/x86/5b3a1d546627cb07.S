@@ -10,9 +10,9 @@ func0000000000000000:                   # @func0000000000000000
 	retq
 func0000000000000008:                   # @func0000000000000008
 	imulq	%rdx, %rsi
-	leaq	63(%rsi,%rdi), %rax
-	addq	%rdi, %rsi
-	cmovnsq	%rsi, %rax
+	leaq	63(%rdi,%rsi), %rax
+	addq	%rsi, %rdi
+	cmovnsq	%rdi, %rax
 	sarq	$6, %rax
 	retq
 func000000000000000a:                   # @func000000000000000a

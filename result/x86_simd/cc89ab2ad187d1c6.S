@@ -22,7 +22,7 @@ func0000000000000001:                   # @func0000000000000001
 	vpmovb2m	%xmm1, %k1
 	vpbroadcastw	.LCPI0_1(%rip), %ymm1   # ymm1 = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
 	vmovdqu16	%ymm2, %ymm1 {%k1}
-	vpcmpeqw	%ymm0, %ymm1, %k0
+	vpcmpeqw	%ymm1, %ymm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
@@ -50,7 +50,7 @@ func0000000000000004:                   # @func0000000000000004
 	vpmovb2m	%xmm1, %k1
 	vpbroadcastw	.LCPI1_1(%rip), %ymm1   # ymm1 = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
 	vmovdqu16	%ymm2, %ymm1 {%k1}
-	vpcmpnleuw	%ymm0, %ymm1, %k0
+	vpcmpltuw	%ymm1, %ymm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

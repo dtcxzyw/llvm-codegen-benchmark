@@ -1,4 +1,4 @@
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	subw	a0, a0, a1
 	lui	a1, 1048555
 	srliw	a2, a0, 7
@@ -7,28 +7,26 @@ func0000000000000018:                   # @func0000000000000018
 	czero.nez	a1, a1, a2
 	addw	a0, a0, a1
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	subw	a0, a0, a1
 	slli	a1, a0, 30
 	srli	a1, a1, 61
 	addw	a0, a0, a1
 	ret
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	subw	a0, a0, a1
-	lui	a1, 524288
-	slti	a2, a0, 1
-	addi	a1, a1, -86
-	czero.eqz	a1, a1, a2
+	slli	a1, a0, 30
+	srli	a1, a1, 61
 	addw	a0, a0, a1
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	subw	a0, a0, a1
 	sltiu	a1, a0, 3
 	li	a2, -3
 	czero.eqz	a1, a2, a1
 	addw	a0, a0, a1
 	ret
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	subw	a0, a0, a1
 	slti	a1, a0, -4
 	xori	a1, a1, 1

@@ -4,7 +4,7 @@
 ; linux/optimized/trans_virtio.ll
 ; openjdk/optimized/freetypeScaler.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000008a(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 6
   %3 = sub nsw i64 %2, %0
@@ -19,7 +19,7 @@ entry:
 ; luajit/optimized/lj_lib.ll
 ; luajit/optimized/lj_lib_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000281(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = sub nsw i64 %2, %0
@@ -31,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/ql_dsp_simd.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
   %3 = sub nsw i64 %2, %0
@@ -43,7 +43,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SubtargetEmitter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000201(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = sub i64 %2, %0
@@ -55,7 +55,7 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/rose_build_add_mask.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000148(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000288(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 5
   %3 = sub nsw i64 %2, %0

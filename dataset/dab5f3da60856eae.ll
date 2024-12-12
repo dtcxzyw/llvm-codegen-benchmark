@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 29 occurrences:
 ; abc/optimized/giaIso3.c.ll
 ; abc/optimized/giaMf.c.ll
 ; abc/optimized/plaHash.c.ll
@@ -28,6 +28,7 @@
 ; ruby/optimized/symbol.ll
 ; typst-rs/optimized/al9nyr8ju52xbc2.ll
 ; yosys/optimized/memory_map.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
@@ -37,13 +38,12 @@ entry:
   ret i64 %4
 }
 
-; 1625 occurrences:
+; 1623 occurrences:
 ; abc/optimized/dauNpn2.c.ll
 ; abc/optimized/deflate.c.ll
 ; abseil-cpp/optimized/graphcycles.cc.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; brotli/optimized/encode.c.ll
-; c3c/optimized/decltable.c.ll
 ; c3c/optimized/symtab.c.ll
 ; c3c/optimized/types.c.ll
 ; clamav/optimized/hashtab.c.ll
@@ -897,7 +897,6 @@ entry:
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
@@ -1316,7 +1315,6 @@ entry:
 ; z3/optimized/bvarray2uf_rewriter.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/cached_var_subst.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/cofactor_elim_term_ite.cpp.ll
 ; z3/optimized/collect_occs.cpp.ll
 ; z3/optimized/collect_statistics_tactic.cpp.ll
@@ -1661,18 +1659,19 @@ entry:
 ; z3/optimized/var_subst.cpp.ll
 ; z3/optimized/wmax.cpp.ll
 ; z3/optimized/z3_replayer.cpp.ll
+; zed-rs/optimized/4360dz3iad2ygf5m8hd0cmm88.ll
 ; zlib/optimized/deflate.c.ll
 ; zstd/optimized/cover.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
 
-; 938 occurrences:
+; 937 occurrences:
 ; abc/optimized/inftrees.c.ll
 ; brotli/optimized/compound_dictionary.c.ll
 ; clamav/optimized/inflate64.c.ll
@@ -2325,7 +2324,6 @@ entry:
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVMergeBaseOffset.cpp.ll
@@ -2620,8 +2618,7 @@ entry:
   ret i64 %4
 }
 
-; 13 occurrences:
-; c3c/optimized/decltable.c.ll
+; 12 occurrences:
 ; c3c/optimized/symtab.c.ll
 ; git/optimized/object.ll
 ; graphviz/optimized/dthash.c.ll
@@ -2654,7 +2651,7 @@ entry:
 define i64 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 9638941
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -2676,7 +2673,7 @@ entry:
 define i64 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 1
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }

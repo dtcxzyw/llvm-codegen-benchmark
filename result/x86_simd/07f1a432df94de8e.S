@@ -41,3 +41,18 @@ func0000000000000005:                   # @func0000000000000005
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpand	%ymm0, %ymm1, %ymm0
 	retq
+.LCPI3_0:
+	.quad	64                              # 0x40
+.LCPI3_1:
+	.quad	8                               # 0x8
+.LCPI3_2:
+	.quad	12                              # 0xc
+func000000000000000f:                   # @func000000000000000f
+	vpslld	$31, %xmm2, %xmm2
+	vpmovd2m	%xmm2, %k1
+	vpbroadcastq	.LCPI3_0(%rip), %ymm2   # ymm2 = [64,64,64,64]
+	vpbroadcastq	.LCPI3_1(%rip), %ymm2 {%k1} # ymm2 {%k1} = [8,8,8,8]
+	vpaddq	%ymm2, %ymm1, %ymm1
+	vpaddq	.LCPI3_2(%rip){1to4}, %ymm1, %ymm1
+	vpand	%ymm0, %ymm1, %ymm0
+	retq

@@ -31,7 +31,7 @@ func000000000000000b:                   # @func000000000000000b
 	ret
 func0000000000000008:                   # @func0000000000000008
 	fmul.d	fa5, fa1, fa2
-	feq.d	a0, fa5, fa0
+	feq.d	a0, fa0, fa5
 	ret
 func000000000000000d:                   # @func000000000000000d
 	fmul.d	fa5, fa1, fa2

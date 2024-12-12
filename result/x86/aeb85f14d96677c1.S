@@ -5,6 +5,4 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 func000000000000000c:                   # @func000000000000000c
 	movq	%rdi, %rax
-	testq	%rsi, %rsi
-	cmoveq	%rsi, %rax
 	retq

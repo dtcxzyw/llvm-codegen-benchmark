@@ -1,4 +1,31 @@
 
+; 2 occurrences:
+; boost/optimized/default_filter_factory.ll
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000010(i32 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul i64 %2, 10
+  %4 = add i64 %3, %1
+  %5 = mul i64 %4, 10
+  %6 = zext nneg i32 %0 to i64
+  %7 = add i64 %5, %6
+  ret i64 %7
+}
+
+; 1 occurrences:
+; boost/optimized/default_filter_factory.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000118(i32 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul nuw i64 %2, 10
+  %4 = add i64 %3, %1
+  %5 = mul nuw i64 %4, 10
+  %6 = zext nneg i32 %0 to i64
+  %7 = add i64 %5, %6
+  ret i64 %7
+}
+
 ; 1 occurrences:
 ; linux/optimized/control.ll
 ; Function Attrs: nounwind
@@ -53,19 +80,6 @@ define i64 @func00000000000000b0(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 10
   %4 = add nsw i64 %3, %1
-  %5 = mul i64 %4, 10
-  %6 = zext nneg i32 %0 to i64
-  %7 = add i64 %5, %6
-  ret i64 %7
-}
-
-; 1 occurrences:
-; yyjson/optimized/yyjson.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000010(i32 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = mul i64 %2, 10
-  %4 = add i64 %3, %1
   %5 = mul i64 %4, 10
   %6 = zext nneg i32 %0 to i64
   %7 = add i64 %5, %6

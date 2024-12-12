@@ -1,5 +1,5 @@
 
-; 63 occurrences:
+; 64 occurrences:
 ; abc/optimized/absOldSim.c.ll
 ; abc/optimized/bmcBmc3.c.ll
 ; abc/optimized/bmcBmcAnd.c.ll
@@ -63,11 +63,12 @@
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; slurm/optimized/hilbert.ll
 ; softposit-rs/optimized/8mae6k72v4zmmji.ll
+; wireshark/optimized/packet-btbredr_rf.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 0, i32 %2
-  %4 = xor i32 %3, %0
+  %4 = xor i32 %0, %3
   ret i32 %4
 }
 

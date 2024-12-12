@@ -68,9 +68,9 @@ func0000000000000043:                   # @func0000000000000043
 	cmpl	$6, %esi
 	adcl	$0, %eax
 	retq
-func0000000000000087:                   # @func0000000000000087
+func0000000000000187:                   # @func0000000000000187
 	movl	%edi, %eax
-	cmpl	$2, %esi
+	cmpl	$5, %esi
 	sbbl	$-1, %eax
 	retq
 func0000000000000040:                   # @func0000000000000040
@@ -93,6 +93,11 @@ func00000000000000a0:                   # @func00000000000000a0
 	testl	%esi, %esi
 	setg	%al
 	addl	%edi, %eax
+	retq
+func0000000000000147:                   # @func0000000000000147
+	movl	%edi, %eax
+	cmpl	$4, %esi
+	adcl	$0, %eax
 	retq
 func0000000000000012:                   # @func0000000000000012
 	movl	%edi, %eax

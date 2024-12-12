@@ -12,7 +12,7 @@ define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = sext i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -24,13 +24,12 @@ define i64 @func0000000000000003(i64 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = sext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; opencv/optimized/AKAZEFeatures.cpp.ll
-; opencv/optimized/matrix_operations.cpp.ll
 ; opencv/optimized/msd.cpp.ll
 ; slurm/optimized/reservation.ll
 ; sqlite/optimized/sqlite3.ll
@@ -40,7 +39,7 @@ define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 

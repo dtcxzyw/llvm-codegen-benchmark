@@ -16,11 +16,6 @@ func00000000000000cc:                   # @func00000000000000cc
 	imull	%esi, %eax
 	leal	13(%rdi,%rax), %eax
 	retq
-func0000000000000000:                   # @func0000000000000000
-	imull	%edx, %esi
-	subl	%esi, %edi
-	leal	1(%rdi), %eax
-	retq
 func00000000000000d0:                   # @func00000000000000d0
 	movl	$512, %eax                      # imm = 0x200
 	subl	%edx, %eax

@@ -1,8 +1,7 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; git/optimized/transport.ll
 ; linux/optimized/i9xx_wm.ll
-; linux/optimized/uring_cmd.ll
 ; ruby/optimized/compile.ll
 ; ruby/optimized/gc.ll
 ; Function Attrs: nounwind
@@ -27,7 +26,7 @@ entry:
   ret i32 %6
 }
 
-; 19 occurrences:
+; 21 occurrences:
 ; icu/optimized/edits.ll
 ; libpng/optimized/png.c.ll
 ; linux/optimized/i9xx_wm.ll
@@ -47,6 +46,8 @@ entry:
 ; wasmedge/optimized/inode-linux.cpp.ll
 ; wireshark/optimized/packet-rlc-lte.c.ll
 ; wireshark/optimized/packet-usb.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i32 %1, i16 %2) #0 {
 entry:

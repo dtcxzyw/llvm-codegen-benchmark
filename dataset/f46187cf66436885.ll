@@ -1,6 +1,7 @@
 
-; 71 occurrences:
+; 72 occurrences:
 ; actix-rs/optimized/3arfg1ogrgyw4qv2.ll
+; boost/optimized/numeric.ll
 ; graphviz/optimized/dotsplines.c.ll
 ; linux/optimized/addrconf.ll
 ; llvm/optimized/BasicBlock.cpp.ll

@@ -20,7 +20,7 @@ func0000000000000020:                   # @func0000000000000020
 	mul	a0, a0, a1
 	zext.w	a0, a0
 	ret
-func00000000000000a7:                   # @func00000000000000a7
+func0000000000000127:                   # @func0000000000000127
 	sext.w	a3, a2
 	sext.w	a4, a1
 	addi	a2, a2, -1

@@ -10,3 +10,9 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	andb	%sil, %al
 	retq
+func0000000000000004:                   # @func0000000000000004
+	xorb	$1, %sil
+	cmpb	$18, %dil
+	setb	%al
+	andb	%sil, %al
+	retq

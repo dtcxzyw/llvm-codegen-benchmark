@@ -1,5 +1,6 @@
 
 ; 39 occurrences:
+; abc/optimized/giaMinLut2.c.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; clamav/optimized/LzmaDec.c.ll
 ; clamav/optimized/unpack.cpp.ll
@@ -30,7 +31,6 @@
 ; openusd/optimized/openexr-c.c.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll

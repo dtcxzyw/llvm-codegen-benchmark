@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movq	%rdx, %rax
 	shrq	$2, %rax
 	testq	%rsi, %rsi
@@ -28,7 +28,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	$3201, %rsi                     # imm = 0xC81
 	cmovbq	%rdi, %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	movq	%rdx, %rax
 	shrq	$12, %rax
 	cmpq	$65, %rsi

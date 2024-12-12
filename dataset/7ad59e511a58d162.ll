@@ -20,10 +20,10 @@
 ; openssl/optimized/libcrypto-shlib-sm3.ll
 ; openssl/optimized/liblegacy-lib-md5_dgst.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000388(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000d08(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = icmp ugt i64 %3, 63
   %5 = icmp ugt i64 %0, 63
   %6 = select i1 %5, i1 true, i1 %4

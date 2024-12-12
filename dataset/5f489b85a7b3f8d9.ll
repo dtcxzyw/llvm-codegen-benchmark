@@ -12,8 +12,7 @@ entry:
   ret i64 %5
 }
 
-; 9 occurrences:
-; linux/optimized/dns_key.ll
+; 8 occurrences:
 ; opencv/optimized/layer_norm.cpp.ll
 ; openspiel/optimized/colored_trails.cc.ll
 ; openspiel/optimized/random_uci_bot.cc.ll

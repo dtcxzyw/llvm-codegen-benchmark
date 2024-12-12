@@ -90,11 +90,22 @@ func000000000000000f:                   # @func000000000000000f
 	li	a0, 6
 	vmacc.vx	v8, a0, v10
 	ret
-func000000000000001d:                   # @func000000000000001d
-	li	a0, 40
+func0000000000000017:                   # @func0000000000000017
+	li	a0, 60
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmul.vx	v8, v8, a0
-	li	a0, -40
+	lui	a0, 1
+	addiw	a0, a0, -496
+	vmacc.vx	v8, a0, v10
+	ret
+func000000000000001d:                   # @func000000000000001d
+	lui	a0, 2575
+	addiw	a0, a0, -325
+	slli	a0, a0, 13
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmul.vx	v8, v8, a0
+	lui	a0, 244
+	addiw	a0, a0, 576
 	vmacc.vx	v8, a0, v10
 	ret
 func0000000000000038:                   # @func0000000000000038

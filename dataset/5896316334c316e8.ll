@@ -13,7 +13,7 @@
 define i32 @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = and i32 %2, %1
+  %3 = and i32 %1, %2
   ret i32 %3
 }
 
@@ -24,7 +24,7 @@ entry:
 define i32 @func0000000000000007(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = and i32 %2, %1
+  %3 = and i32 %1, %2
   ret i32 %3
 }
 

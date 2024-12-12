@@ -4,7 +4,7 @@ func0000000000000018:                   # @func0000000000000018
 	vmv.v.i	v11, 0
 	vmv1r.v	v0, v9
 	vmerge.vim	v9, v11, 1, v0
-	vor.vv	v8, v9, v8
+	vor.vv	v8, v8, v9
 	vmsne.vi	v8, v8, 0
-	vmor.mm	v0, v8, v10
+	vmor.mm	v0, v10, v8
 	ret

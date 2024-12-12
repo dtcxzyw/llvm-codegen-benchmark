@@ -12,11 +12,12 @@ entry:
   ret i8 %2
 }
 
-; 36 occurrences:
+; 37 occurrences:
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; arrow/optimized/array_base.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_boolean.cc.ll
+; boost/optimized/algorithm.ll
 ; c3c/optimized/sema_casts.c.ll
 ; cpython/optimized/_decimal.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
@@ -57,8 +58,11 @@ entry:
   ret i8 %2
 }
 
-; 17 occurrences:
+; 20 occurrences:
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/math_sqrt.ll
 ; ceres/optimized/trust_region_minimizer.cc.ll
 ; graphviz/optimized/quad_prog_solve.c.ll
 ; gromacs/optimized/pme_load_balancing.cpp.ll
@@ -99,9 +103,12 @@ entry:
   ret i8 %2
 }
 
-; 10 occurrences:
+; 13 occurrences:
 ; abseil-cpp/optimized/marshalling_test.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
+; boost/optimized/algorithm.ll
+; boost/optimized/for_each_coordinate.ll
+; boost/optimized/tuples.ll
 ; g2o/optimized/solver_dense.cpp.ll
 ; glslang/optimized/Constant.cpp.ll
 ; icu/optimized/putil.ll
@@ -118,15 +125,27 @@ entry:
   ret i8 %2
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; abseil-cpp/optimized/marshalling_test.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
+; boost/optimized/math_normalize_spheroidal.ll
 ; glslang/optimized/Constant.cpp.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(double %0) #0 {
 entry:
   %1 = fcmp uno double %0, 0.000000e+00
+  %2 = zext i1 %1 to i8
+  ret i8 %2
+}
+
+; 2 occurrences:
+; boost/optimized/area_box_sg.ll
+; boost/optimized/get_turns_const.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000014(double %0) #0 {
+entry:
+  %1 = fcmp ole double %0, 1.000000e-10
   %2 = zext i1 %1 to i8
   ret i8 %2
 }

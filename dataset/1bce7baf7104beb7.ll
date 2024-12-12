@@ -3,7 +3,7 @@
 ; minetest/optimized/mg_biome.cpp.ll
 ; velox/optimized/ArraySort.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(i16 %0, i16 %1, i64 %2) #0 {
+define i64 @func000000000000002a(i16 %0, i16 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 1
   %4 = add i64 %3, 2
@@ -28,7 +28,7 @@ entry:
 ; opencv/optimized/matrix_operations.cpp.ll
 ; vcpkg/optimized/cofffilereader.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i16 %0, i16 %1, i64 %2) #0 {
+define i64 @func0000000000000024(i16 %0, i16 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 1
   %4 = add i64 %3, 2
@@ -44,7 +44,7 @@ entry:
 ; opencv/optimized/matrix_operations.cpp.ll
 ; velox/optimized/ArraySort.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i16 %0, i16 %1, i64 %2) #0 {
+define i64 @func0000000000000026(i16 %0, i16 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 1
   %4 = add i64 %3, 2
@@ -58,7 +58,7 @@ entry:
 ; faiss/optimized/IndexFastScan.cpp.ll
 ; faiss/optimized/IndexIVFFastScan.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i16 %0, i16 %1, i64 %2) #0 {
+define i64 @func0000000000000028(i16 %0, i16 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 1
   %4 = add i64 %3, 2

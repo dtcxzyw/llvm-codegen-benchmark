@@ -1,46 +1,53 @@
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	movl	$8, %eax
 	shlxq	%rdi, %rax, %rcx
 	cmpl	$61, %edi
 	movq	$-1, %rax
 	cmovbq	%rcx, %rax
 	retq
-func000000000000006a:                   # @func000000000000006a
+func0000000000000098:                   # @func0000000000000098
+	movl	$64, %eax
+	shlxq	%rdi, %rax, %rcx
+	cmpl	$58, %edi
+	movq	$-1, %rax
+	cmovbq	%rcx, %rax
+	retq
+func00000000000000ca:                   # @func00000000000000ca
 	movl	$1, %eax
 	shlxq	%rdi, %rax, %rcx
 	xorl	%eax, %eax
 	cmpl	$64, %edi
 	cmovlq	%rcx, %rax
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	movq	$-1, %rax
 	shlxq	%rdi, %rax, %rcx
 	xorl	%eax, %eax
 	testl	%edi, %edi
 	cmovneq	%rcx, %rax
 	retq
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	movl	$1, %eax
 	shlxq	%rdi, %rax, %rcx
 	xorl	%eax, %eax
 	cmpl	$-1, %edi
 	cmovneq	%rcx, %rax
 	retq
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	movl	$4, %eax
 	shlxq	%rdi, %rax, %rcx
 	xorl	%eax, %eax
 	testl	%edi, %edi
 	cmovneq	%rcx, %rax
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	movl	$4, %eax
 	shlxq	%rdi, %rax, %rcx
 	xorl	%eax, %eax
 	testl	%edi, %edi
 	cmovneq	%rcx, %rax
 	retq
-func0000000000000068:                   # @func0000000000000068
+func00000000000000d8:                   # @func00000000000000d8
 	movl	$1, %eax
 	shlxq	%rdi, %rax, %rcx
 	cmpl	$64, %edi

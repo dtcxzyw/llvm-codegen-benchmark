@@ -10,7 +10,7 @@
 ; velox/optimized/HashStringAllocator.cpp.ll
 ; velox/optimized/InPredicate.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 8
   %3 = icmp eq i64 %1, 1
@@ -29,7 +29,7 @@ entry:
 ; zfp/optimized/encode4d.c.ll
 ; zfp/optimized/encode4l.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = icmp eq i64 %1, 0

@@ -1,6 +1,7 @@
 
-; 28 occurrences:
+; 29 occurrences:
 ; bullet3/optimized/btBoxBoxDetector.ll
+; darktable/optimized/introspection_atrous.c.ll
 ; darktable/optimized/introspection_basecurve.c.ll
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
 ; darktable/optimized/introspection_colorbalance.c.ll

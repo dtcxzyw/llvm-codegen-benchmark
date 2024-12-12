@@ -23,7 +23,7 @@
 ; spike/optimized/mmu.ll
 ; spike/optimized/processor.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i1 %0, i64 %1) #0 {
+define i32 @func0000000000000021(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 65535
   %3 = icmp eq i64 %2, 0

@@ -12,9 +12,8 @@ entry:
   ret i64 %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; llvm/optimized/AArch64CallingConvention.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86CallingConv.cpp.ll
 ; llvm/optimized/X86FastISel.cpp.ll
 ; Function Attrs: nounwind

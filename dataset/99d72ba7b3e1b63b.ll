@@ -182,7 +182,7 @@ entry:
   ret i64 %3
 }
 
-; 39 occurrences:
+; 41 occurrences:
 ; abc/optimized/abcRpo.c.ll
 ; abc/optimized/ifDec07.c.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
@@ -202,6 +202,7 @@ entry:
 ; openjdk/optimized/ciReplay.ll
 ; openjdk/optimized/constantPool.ll
 ; openjdk/optimized/deoptimization.ll
+; openjdk/optimized/freeChunkList.ll
 ; openjdk/optimized/heapShared.ll
 ; openjdk/optimized/javaClasses.ll
 ; openjdk/optimized/jfrJavaSupport.ll
@@ -210,6 +211,7 @@ entry:
 ; openjdk/optimized/jvmciEnv.ll
 ; openjdk/optimized/macroArrayCopy.ll
 ; openjdk/optimized/management.ll
+; openjdk/optimized/metaspaceStatistics.ll
 ; openjdk/optimized/objArrayOop.ll
 ; openjdk/optimized/pngread.ll
 ; openjdk/optimized/reflection.ll

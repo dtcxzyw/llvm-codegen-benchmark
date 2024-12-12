@@ -1,5 +1,7 @@
 
-; 36 occurrences:
+; 38 occurrences:
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
 ; casadi/optimized/idas_bbdpre.c.ll
 ; casadi/optimized/idas_direct.c.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
@@ -40,7 +42,7 @@
 define double @func0000000000000000(double %0, double %1) #0 {
 entry:
   %2 = fsub double %1, %0
-  %3 = fadd double %2, %0
+  %3 = fadd double %0, %2
   ret double %3
 }
 

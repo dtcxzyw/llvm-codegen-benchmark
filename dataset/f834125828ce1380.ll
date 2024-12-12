@@ -22,7 +22,7 @@
 ; rocksdb/optimized/write_batch.cc.ll
 ; rocksdb/optimized/write_unprepared_txn.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 0, %1
   %3 = ashr exact i64 %0, 4
@@ -35,7 +35,7 @@ entry:
 ; rocksdb/optimized/column_family.cc.ll
 ; rocksdb/optimized/compaction_picker_universal.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 0, %1
   %3 = ashr exact i64 %0, 5
@@ -54,7 +54,7 @@ entry:
 ; opencv/optimized/darknet_io.cpp.ll
 ; openusd/optimized/velocityMotionResolvingSceneIndex.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000e4(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 8, %1
   %3 = ashr exact i64 %0, 2
@@ -65,7 +65,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/hw_usb_combined-packet.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000006a(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 1048576, %1
   %3 = ashr exact i64 %0, 32
@@ -86,7 +86,7 @@ entry:
 ; openusd/optimized/usdtree.cpp.ll
 ; yosys/optimized/sim.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %1
   %3 = ashr exact i64 %0, 3
@@ -103,7 +103,7 @@ entry:
 ; openusd/optimized/usdcat.cpp.ll
 ; openusd/optimized/usdtree.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000006c(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %1
   %3 = ashr exact i64 %0, 5
@@ -114,7 +114,7 @@ entry:
 ; 1 occurrences:
 ; ms-gsl/optimized/span_ext_tests.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000066(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %1
   %3 = ashr exact i64 %0, 2
@@ -125,7 +125,7 @@ entry:
 ; 1 occurrences:
 ; llama.cpp/optimized/llama.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 0, %1
   %3 = ashr exact i64 %0, 2
@@ -138,7 +138,7 @@ entry:
 ; hyperscan/optimized/ng_redundancy.cpp.ll
 ; hyperscan/optimized/rose_build_role_aliasing.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %1
   %3 = ashr exact i64 %0, 4
@@ -151,7 +151,7 @@ entry:
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
 ; hyperscan/optimized/rose_build_role_aliasing.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 0, %1
   %3 = ashr exact i64 %0, 4

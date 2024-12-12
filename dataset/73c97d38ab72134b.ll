@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 29 occurrences:
 ; abc/optimized/mapperMatch.c.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -13,6 +13,7 @@
 ; darktable/optimized/introspection_velvia.c.ll
 ; gromacs/optimized/sstebz.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
@@ -27,16 +28,17 @@
 ; ncnn/optimized/roialign_x86_fma.cpp.ll
 ; opencv/optimized/color_hsv.dispatch.cpp.ll
 ; opencv/optimized/seam_finders.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
 ; Function Attrs: nounwind
 define float @func0000000000000004(float %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp ogt float %2, %1
   %4 = select i1 %3, float %1, float %2
-  %5 = fadd float %4, %0
+  %5 = fadd float %0, %4
   ret float %5
 }
 
-; 69 occurrences:
+; 70 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; box2d/optimized/b2_collision.cpp.ll
@@ -81,6 +83,7 @@ entry:
 ; ocio/optimized/FixedFunctionOpCPU.cpp.ll
 ; ocio/optimized/GradingTone.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
+; opencv/optimized/calibinit.cpp.ll
 ; opencv/optimized/color_hsv.dispatch.cpp.ll
 ; opencv/optimized/face_detection_mtcnn.cpp.ll
 ; opencv/optimized/hough.cpp.ll
@@ -111,7 +114,7 @@ define float @func0000000000000002(float %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp olt float %2, %1
   %4 = select i1 %3, float %1, float %2
-  %5 = fadd float %4, %0
+  %5 = fadd float %0, %4
   ret float %5
 }
 
@@ -131,7 +134,7 @@ define float @func000000000000000a(float %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp ole float %1, %2
   %4 = select i1 %3, float %1, float %2
-  %5 = fadd float %4, %0
+  %5 = fadd float %0, %4
   ret float %5
 }
 
@@ -152,7 +155,7 @@ define float @func000000000000000c(float %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp oge float %1, %2
   %4 = select i1 %3, float %1, float %2
-  %5 = fadd float %4, %0
+  %5 = fadd float %0, %4
   ret float %5
 }
 

@@ -1,5 +1,5 @@
 
-; 45 occurrences:
+; 51 occurrences:
 ; abc/optimized/satSolver2.c.ll
 ; cpython/optimized/_asynciomodule.ll
 ; cpython/optimized/fileio.ll
@@ -30,7 +30,13 @@
 ; linux/optimized/tcp_output.ll
 ; llvm/optimized/LLParser.cpp.ll
 ; llvm/optimized/SemaLambda.cpp.ll
-; llvm/optimized/X86CallingConv.cpp.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_bar.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_font.ll
+; lvgl/optimized/lv_group.ll
+; lvgl/optimized/lv_menu.ll
+; lvgl/optimized/lv_span.ll
 ; minetest/optimized/CSkinnedMesh.cpp.ll
 ; openssl/optimized/libssl-lib-quic_sstream.ll
 ; openssl/optimized/libssl-shlib-quic_sstream.ll

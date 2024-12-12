@@ -1,18 +1,18 @@
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	sext.w	a1, a1
 	sext.w	a3, a0
 	bge	a3, a1, .LBB0_2
 	addiw	a0, a2, 100
 .LBB0_2:                                # %entry
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	sext.w	a1, a1
 	sext.w	a3, a0
 	bne	a3, a1, .LBB1_2
 	addiw	a0, a2, 2
 .LBB1_2:                                # %entry
 	ret
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	sext.w	a1, a1
 	sext.w	a3, a0
 	bne	a3, a1, .LBB2_2

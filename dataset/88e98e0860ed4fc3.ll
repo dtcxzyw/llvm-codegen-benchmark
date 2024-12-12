@@ -20,7 +20,7 @@ entry:
 ; 1 occurrences:
 ; stat-rs/optimized/43fparx0v87xel0c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000024(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000044(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
   %4 = icmp ult i64 %3, 171
@@ -28,7 +28,8 @@ entry:
   ret ptr %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; eastl/optimized/TestMemory.cpp.ll
 ; stat-rs/optimized/43fparx0v87xel0c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(ptr %0, i64 %1, i64 %2) #0 {

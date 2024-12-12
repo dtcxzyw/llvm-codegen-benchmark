@@ -4,7 +4,7 @@ func0000000000000001:                   # @func0000000000000001
 	li	a0, -1
 	srli	a0, a0, 32
 	vand.vx	v10, v12, a0
-	vmseq.vv	v0, v10, v8
+	vmseq.vv	v0, v8, v10
 	ret
 func000000000000000c:                   # @func000000000000000c
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -12,5 +12,5 @@ func000000000000000c:                   # @func000000000000000c
 	li	a0, -1
 	srli	a0, a0, 32
 	vand.vx	v10, v12, a0
-	vmsne.vv	v0, v10, v8
+	vmsne.vv	v0, v8, v10
 	ret

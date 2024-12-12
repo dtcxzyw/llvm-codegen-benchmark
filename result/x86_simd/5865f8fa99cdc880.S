@@ -2,7 +2,7 @@
 	.zero	16,1
 .LCPI0_1:
 	.long	256                             # 0x100
-func00000000000000d4:                   # @func00000000000000d4
+func00000000000001a4:                   # @func00000000000001a4
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpsrld	$7, %ymm1, %ymm2

@@ -1,6 +1,5 @@
 
-; 9 occurrences:
-; clamav/optimized/str.c.ll
+; 8 occurrences:
 ; cpython/optimized/ceval.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
@@ -13,13 +12,12 @@
 define i16 @func0000000000000000(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 0, i32 %2
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = trunc i32 %4 to i16
   ret i16 %5
 }
 
-; 3 occurrences:
-; arrow/optimized/float16.cc.ll
+; 2 occurrences:
 ; meshoptimizer/optimized/vertexfilter.cpp.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; Function Attrs: nounwind
@@ -37,7 +35,7 @@ entry:
 define i16 @func0000000000000007(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 2, i32 %2
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = trunc nuw nsw i32 %4 to i16
   ret i16 %5
 }
@@ -51,7 +49,7 @@ entry:
 define i16 @func0000000000000003(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 0, i32 %2
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = trunc nuw nsw i32 %4 to i16
   ret i16 %5
 }

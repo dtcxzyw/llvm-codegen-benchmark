@@ -9,7 +9,7 @@ func0000000000000070:                   # @func0000000000000070
 	addq	%rsi, %rdi
 	leaq	(%rdi,%rdx,8), %rax
 	retq
-func000000000000007a:                   # @func000000000000007a
+func000000000000007f:                   # @func000000000000007f
 	shrl	$2, %edx
 	shlq	$7, %rdx
 	leaq	(%rdi,%rsi), %rax

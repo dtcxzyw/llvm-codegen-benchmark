@@ -7,18 +7,18 @@
 ; hyperscan/optimized/rose_build_anchored.cpp.ll
 ; hyperscan/optimized/ue2string.cpp.ll
 ; linux/optimized/libfs.ll
-; linux/optimized/mii.ll
 ; llvm/optimized/InstCombineCasts.cpp.ll
 ; llvm/optimized/InstCombineVectorOps.cpp.ll
 ; llvm/optimized/MachineBlockPlacement.cpp.ll
-; mitsuba3/optimized/volpath.cpp.ll
 ; opencv/optimized/run_length_morphology.cpp.ll
+; opencv/optimized/softfloat.cpp.ll
 ; openjdk/optimized/vtableStubs.ll
 ; openssl/optimized/openssl-bin-cmp.ll
 ; openusd/optimized/pred_common.c.ll
 ; postgres/optimized/copyfromparse.ll
 ; z3/optimized/mpf.cpp.ll
 ; z3/optimized/sat_xor_finder.cpp.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:

@@ -3,9 +3,19 @@ func0000000000000001:                   # @func0000000000000001
 	setne	%al
 	orb	%dil, %al
 	retq
+func000000000000000a:                   # @func000000000000000a
+	cmpl	%edx, %esi
+	setle	%al
+	orb	%dil, %al
+	retq
 func0000000000000006:                   # @func0000000000000006
 	cmpl	%edx, %esi
 	setge	%al
+	orb	%dil, %al
+	retq
+func0000000000000015:                   # @func0000000000000015
+	cmpl	%edx, %esi
+	seta	%al
 	orb	%dil, %al
 	retq
 func0000000000000005:                   # @func0000000000000005

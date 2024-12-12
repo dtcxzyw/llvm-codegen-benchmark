@@ -15,7 +15,7 @@ func000000000000018f:                   # @func000000000000018f
 	sbbl	$-1, %esi
 	leal	(%rsi,%rdi), %eax
 	retq
-func000000000000008f:                   # @func000000000000008f
+func000000000000028f:                   # @func000000000000028f
 	movl	%edi, %eax
 	cmpl	$3, %edx
 	adcl	%esi, %eax
@@ -45,9 +45,9 @@ func0000000000000025:                   # @func0000000000000025
 	adcl	%esi, %eax
 	retq
 func0000000000000085:                   # @func0000000000000085
-	movl	%edi, %eax
 	cmpl	$3, %edx
-	adcl	%esi, %eax
+	adcl	$0, %esi
+	leal	(%rsi,%rdi), %eax
 	retq
 func0000000000000020:                   # @func0000000000000020
 	xorl	%eax, %eax
@@ -89,12 +89,22 @@ func0000000000000180:                   # @func0000000000000180
 	sbbl	$-1, %esi
 	leal	(%rsi,%rdi), %eax
 	retq
+func000000000000008f:                   # @func000000000000008f
+	movl	%edi, %eax
+	cmpl	$19, %edx
+	adcl	%esi, %eax
+	retq
 func000000000000018e:                   # @func000000000000018e
 	cmpl	$1, %edx
 	sbbl	$-1, %esi
 	leal	(%rsi,%rdi), %eax
 	retq
 func000000000000010f:                   # @func000000000000010f
+	cmpl	$1000000, %edx                  # imm = 0xF4240
+	sbbl	$-1, %esi
+	leal	(%rsi,%rdi), %eax
+	retq
+func000000000000030f:                   # @func000000000000030f
 	cmpl	$1000000, %edx                  # imm = 0xF4240
 	sbbl	$-1, %esi
 	leal	(%rsi,%rdi), %eax
@@ -127,6 +137,11 @@ func0000000000000184:                   # @func0000000000000184
 	cmpl	$1, %edx
 	sbbl	$-1, %esi
 	leal	(%rsi,%rdi), %eax
+	retq
+func0000000000000280:                   # @func0000000000000280
+	movl	%edi, %eax
+	cmpl	$10, %edx
+	adcl	%esi, %eax
 	retq
 func000000000000002d:                   # @func000000000000002d
 	xorl	%eax, %eax

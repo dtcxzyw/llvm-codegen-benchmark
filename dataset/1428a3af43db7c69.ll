@@ -13,7 +13,7 @@
 define i16 @func000000000000001e(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = trunc nuw i32 %3 to i16
   ret i16 %4
 }
@@ -31,7 +31,7 @@ entry:
 define i16 @func0000000000000010(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = trunc i32 %3 to i16
   ret i16 %4
 }
@@ -42,7 +42,7 @@ entry:
 define i16 @func0000000000000014(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = trunc i32 %3 to i16
   ret i16 %4
 }
@@ -61,7 +61,7 @@ entry:
 define i16 @func000000000000000f(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = trunc nuw nsw i32 %3 to i16
   ret i16 %4
 }
@@ -77,7 +77,7 @@ entry:
 define i16 @func000000000000000c(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = trunc i32 %3 to i16
   ret i16 %4
 }
@@ -91,7 +91,7 @@ entry:
 define i16 @func0000000000000004(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = trunc i32 %3 to i16
   ret i16 %4
 }
@@ -102,7 +102,7 @@ entry:
 define i16 @func000000000000001f(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = trunc nuw nsw i32 %3 to i16
   ret i16 %4
 }
@@ -115,7 +115,7 @@ entry:
 define i16 @func0000000000000000(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = trunc i32 %3 to i16
   ret i16 %4
 }
@@ -126,7 +126,7 @@ entry:
 define i16 @func0000000000000012(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = trunc nuw i32 %3 to i16
   ret i16 %4
 }
@@ -137,7 +137,7 @@ entry:
 define i16 @func0000000000000005(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = trunc nsw i32 %3 to i16
   ret i16 %4
 }

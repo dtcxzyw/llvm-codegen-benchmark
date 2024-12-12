@@ -10,5 +10,5 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000000:                   # @func0000000000000000
 	vpsubb	%xmm2, %xmm1, %xmm1
 	vpaddb	.LCPI1_0(%rip), %xmm1, %xmm1
-	vpor	%xmm0, %xmm1, %xmm0
+	vpor	%xmm1, %xmm0, %xmm0
 	retq

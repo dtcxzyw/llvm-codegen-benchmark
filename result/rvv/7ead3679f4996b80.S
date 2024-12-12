@@ -24,6 +24,19 @@ func000000000000002f:                   # @func000000000000002f
 	li	a0, 400
 	vmacc.vx	v8, a0, v10
 	ret
+func000000000000002d:                   # @func000000000000002d
+	li	a0, 294
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vadd.vx	v10, v8, a0
+	li	a0, -272
+	vmv.v.x	v8, a0
+	lui	a0, 762601
+	addi	a0, a0, -1117
+	vmulhu.vx	v10, v10, a0
+	vsrl.vi	v10, v10, 4
+	li	a0, 22
+	vmacc.vx	v8, a0, v10
+	ret
 func000000000000000d:                   # @func000000000000000d
 	li	a0, -1900
 	vsetivli	zero, 8, e32, m2, ta, ma

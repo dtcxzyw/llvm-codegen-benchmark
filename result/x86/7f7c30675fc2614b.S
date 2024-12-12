@@ -5,7 +5,7 @@ func0000000000000044:                   # @func0000000000000044
 	cmovael	%edx, %eax
 	leal	4(%rdi,%rax), %eax
 	retq
-func0000000000000314:                   # @func0000000000000314
+func0000000000000614:                   # @func0000000000000614
 	incl	%edx
 	cmpb	$-1, %sil
 	movl	$4, %eax

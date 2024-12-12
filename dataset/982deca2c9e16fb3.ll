@@ -1,5 +1,6 @@
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/to_chars.ll
 ; ruby/optimized/date_core.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000017(i32 %0, i32 %1) #0 {
@@ -18,7 +19,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %.neg1 = xor i32 %1, -1
-  %.neg = add i32 %.neg1, %0
+  %.neg = add i32 %0, %.neg1
   %2 = add i32 %.neg, 64
   ret i32 %2
 }
@@ -55,7 +56,7 @@ entry:
 define i32 @func0000000000000035(i32 %0, i32 %1) #0 {
 entry:
   %.neg1 = xor i32 %1, -1
-  %.neg = add i32 %.neg1, %0
+  %.neg = add i32 %0, %.neg1
   %2 = add i32 %.neg, 12
   ret i32 %2
 }

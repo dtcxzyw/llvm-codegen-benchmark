@@ -17,8 +17,8 @@ func0000000000000006:                   # @func0000000000000006
 	retq
 func000000000000000d:                   # @func000000000000000d
 	movl	%edx, %ecx
+	xorl	%eax, %eax
 	testb	$1, %sil
-	movl	$6, %eax
 	cmoveq	%rcx, %rax
 	shlq	$32, %rdi
 	orq	%rdi, %rax

@@ -1,11 +1,12 @@
 
-; 48 occurrences:
+; 49 occurrences:
 ; abseil-cpp/optimized/extension_test.cc.ll
 ; abseil-cpp/optimized/hashtablez_sampler_test.cc.ll
 ; abseil-cpp/optimized/mutex_test.cc.ll
 ; abseil-cpp/optimized/nonsecure_base_test.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; abseil-cpp/optimized/sample_recorder_test.cc.ll
+; boost/optimized/benchmark_fstream.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; crow/optimized/example_session.cpp.ll
@@ -54,7 +55,7 @@ entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = add nuw i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = mul i64 %4, %0
+  %5 = mul i64 %0, %4
   ret i64 %5
 }
 
@@ -70,7 +71,7 @@ entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = add nuw i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = mul nuw i64 %4, %0
+  %5 = mul nuw i64 %0, %4
   ret i64 %5
 }
 
@@ -86,7 +87,7 @@ entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = add i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = mul nuw i64 %4, %0
+  %5 = mul nuw i64 %0, %4
   ret i64 %5
 }
 
@@ -98,7 +99,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = mul nuw i64 %4, %0
+  %5 = mul nuw i64 %0, %4
   ret i64 %5
 }
 

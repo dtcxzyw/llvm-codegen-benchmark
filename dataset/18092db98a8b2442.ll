@@ -1,7 +1,6 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
-; cmake/optimized/archive_random.c.ll
 ; libevent/optimized/evutil_rand.c.ll
 ; linux/optimized/maple_tree.ll
 ; wireshark/optimized/dot11decrypt_wep.c.ll

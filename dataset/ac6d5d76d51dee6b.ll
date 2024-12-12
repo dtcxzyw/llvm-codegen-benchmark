@@ -29,12 +29,11 @@ entry:
   ret i64 %3
 }
 
-; 114 occurrences:
+; 113 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
 ; abseil-cpp/optimized/globals.cc.ll
-; abseil-cpp/optimized/hash.cc.ll
 ; abseil-cpp/optimized/hash_function_defaults_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; abseil-cpp/optimized/node_hash_map_test.cc.ll
@@ -152,10 +151,12 @@ entry:
   ret i64 %3
 }
 
-; 10 occurrences:
+; 12 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/ifDec07.c.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; linux/optimized/xarray.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll

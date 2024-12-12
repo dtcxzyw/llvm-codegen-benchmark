@@ -1,6 +1,5 @@
 
-; 6 occurrences:
-; llvm/optimized/PrologEpilogInserter.cpp.ll
+; 5 occurrences:
 ; openjdk/optimized/psOldGen.ll
 ; redis/optimized/extent.ll
 ; redis/optimized/extent.sym.ll
@@ -30,21 +29,31 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
-; jemalloc/optimized/tcache.ll
-; jemalloc/optimized/tcache.pic.ll
-; jemalloc/optimized/tcache.sym.ll
+; 3 occurrences:
 ; llvm/optimized/ASTContext.cpp.ll
 ; redis/optimized/eset.ll
 ; redis/optimized/eset.sym.ll
-; redis/optimized/tcache.ll
-; redis/optimized/tcache.sym.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = and i64 %0, %1
   %5 = icmp ult i64 %4, %3
+  ret i1 %5
+}
+
+; 5 occurrences:
+; jemalloc/optimized/tcache.ll
+; jemalloc/optimized/tcache.pic.ll
+; jemalloc/optimized/tcache.sym.ll
+; redis/optimized/tcache.ll
+; redis/optimized/tcache.sym.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 4294967288
+  %4 = and i64 %0, %1
+  %5 = icmp samesign ult i64 %4, %3
   ret i1 %5
 }
 

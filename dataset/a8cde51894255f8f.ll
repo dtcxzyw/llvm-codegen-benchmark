@@ -5,6 +5,7 @@
 ; graphviz/optimized/emit.c.ll
 ; graphviz/optimized/gvcolor.c.ll
 ; hyperscan/optimized/ng_violet.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/packing.cpp.ll
@@ -12,7 +13,6 @@
 ; mitsuba3/optimized/sensor.cpp.ll
 ; nori/optimized/ttest.cpp.ll
 ; opencv/optimized/thresh.cpp.ll
-; opencv/optimized/trackerKCF.cpp.ll
 ; openvdb/optimized/LevelSetMorph.cc.ll
 ; postgres/optimized/float.ll
 ; postgres/optimized/selfuncs.ll

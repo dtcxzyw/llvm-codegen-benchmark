@@ -1,5 +1,5 @@
 
-; 255 occurrences:
+; 252 occurrences:
 ; arrow/optimized/row_internal.cc.ll
 ; assimp/optimized/ColladaLoader.cpp.ll
 ; assimp/optimized/IRRShared.cpp.ll
@@ -32,7 +32,6 @@
 ; gromacs/optimized/pairlist_simd_kernel.cpp.ll
 ; gromacs/optimized/pdb2gmx.cpp.ll
 ; gromacs/optimized/pull.cpp.ll
-; gromacs/optimized/selmethod.cpp.ll
 ; gromacs/optimized/sim_util.cpp.ll
 ; grpc/optimized/call.cc.ll
 ; grpc/optimized/writing.cc.ll
@@ -67,7 +66,6 @@
 ; linux/optimized/trace_events_filter.ll
 ; linux/optimized/tx.ll
 ; linux/optimized/uhci-hcd.ll
-; linux/optimized/uprobes.ll
 ; linux/optimized/vgacon.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll
@@ -113,13 +111,14 @@
 ; llvm/optimized/raw_ostream.cpp.ll
 ; luau/optimized/Normalize.cpp.ll
 ; luau/optimized/ToString.cpp.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; lvgl/optimized/lv_obj_event.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_measure.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mold/optimized/passes.cc.ALPHA.cc.ll
 ; mold/optimized/passes.cc.ARM32.cc.ll
 ; mold/optimized/passes.cc.ARM64.cc.ll
@@ -145,8 +144,6 @@
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
 ; oiio/optimized/imagecache.cpp.ll
-; opencv/optimized/color_yuv.dispatch.cpp.ll
-; opencv/optimized/lpsolver.cpp.ll
 ; opencv/optimized/tracker_mil_state.cpp.ll
 ; opencv/optimized/ts_gtest.cpp.ll
 ; openjdk/optimized/arguments.ll

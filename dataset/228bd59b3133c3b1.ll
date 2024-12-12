@@ -6,7 +6,7 @@
 define i64 @func0000000000000001(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 32767
-  %3 = add i16 %2, %0
+  %3 = add i16 %0, %2
   %4 = zext nneg i16 %3 to i64
   ret i64 %4
 }
@@ -110,7 +110,7 @@ entry:
 define i64 @func0000000000000007(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 1
-  %3 = add nuw nsw i16 %2, %0
+  %3 = add nuw nsw i16 %0, %2
   %4 = zext nneg i16 %3 to i64
   ret i64 %4
 }

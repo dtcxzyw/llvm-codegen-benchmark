@@ -6,6 +6,16 @@ func0000000000000020:                   # @func0000000000000020
 	andl	$1, %eax
 	leaq	1(%rax,%rdi), %rax
 	retq
+func00000000000000a0:                   # @func00000000000000a0
+	xorl	%eax, %eax
+	cmpl	$3, %edx
+	setb	%al
+	leaq	5(,%rax,8), %rcx
+	testb	$1, %sil
+	movl	$13, %eax
+	cmoveq	%rcx, %rax
+	addq	%rdi, %rax
+	retq
 func0000000000000008:                   # @func0000000000000008
 	andl	$1, %esi
 	cmpl	$5, %edx
@@ -14,7 +24,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmovneq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000009:                   # @func0000000000000009
+func000000000000000b:                   # @func000000000000000b
 	movl	$3155673600, %eax               # imm = 0xBC17C200
 	leaq	86400(%rax), %rcx
 	testb	$1, %sil

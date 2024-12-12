@@ -7,7 +7,7 @@
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i16 %1, i16 %2) #0 {
+define i1 @func00000000000000aa(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = sub nsw i32 %0, %3
@@ -46,7 +46,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/igmp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i16 %1, i16 %2) #0 {
+define i1 @func00000000000000a1(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = sub nsw i32 %0, %3
@@ -59,7 +59,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/igmp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i16 %1, i16 %2) #0 {
+define i1 @func00000000000000a4(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = sub nsw i32 %0, %3
@@ -73,7 +73,7 @@ entry:
 ; libwebp/optimized/sharpyuv_dsp.c.ll
 ; libwebp/optimized/sharpyuv_sse2.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i16 %1, i16 %2) #0 {
+define i1 @func00000000000000a6(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = sub nsw i32 %0, %3

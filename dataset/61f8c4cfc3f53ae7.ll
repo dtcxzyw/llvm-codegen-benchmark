@@ -1,5 +1,5 @@
 
-; 52 occurrences:
+; 53 occurrences:
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; coreutils-rs/optimized/4kgrj997pbefuahr.ll
 ; coreutils-rs/optimized/4xe0oi8s0z5yh0ce.ll
@@ -52,6 +52,7 @@
 ; wasmtime-rs/optimized/4fstrj457bwkmu8y.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
 ; wasmtime-rs/optimized/jcy3ulzaiykp2rl.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0, i16 %1) #0 {
 entry:
@@ -61,7 +62,7 @@ entry:
   ret i64 %4
 }
 
-; 43 occurrences:
+; 44 occurrences:
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; coreutils-rs/optimized/4kgrj997pbefuahr.ll
 ; coreutils-rs/optimized/4xe0oi8s0z5yh0ce.ll
@@ -105,6 +106,7 @@ entry:
 ; wasmtime-rs/optimized/4fstrj457bwkmu8y.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
 ; wasmtime-rs/optimized/jcy3ulzaiykp2rl.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i16 %1) #0 {
 entry:
@@ -221,6 +223,17 @@ entry:
   %2 = zext i16 %1 to i64
   %3 = sub nsw i64 %2, %0
   %4 = shl nuw nsw i64 %3, 3
+  ret i64 %4
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_spinbox.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000010(i64 %0, i16 %1) #0 {
+entry:
+  %2 = zext nneg i16 %1 to i64
+  %3 = sub i64 %2, %0
+  %4 = shl i64 %3, 32
   ret i64 %4
 }
 

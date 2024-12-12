@@ -19,7 +19,7 @@ entry:
 ; ncnn/optimized/gemm_x86_avx512.cpp.ll
 ; ncnn/optimized/gemm_x86_fma.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = freeze i32 %2
   %4 = add nsw i32 %0, %1
@@ -27,7 +27,8 @@ entry:
   ret i1 %5
 }
 
-; 9 occurrences:
+; 10 occurrences:
+; abc/optimized/ifDec08.c.ll
 ; ncnn/optimized/convolution_x86_avx2.cpp.ll
 ; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
 ; ncnn/optimized/convolution_x86_xop.cpp.ll
@@ -38,7 +39,7 @@ entry:
 ; opencv/optimized/copy.cpp.ll
 ; verilator/optimized/V3Number.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = freeze i32 %2
   %4 = add nsw i32 %0, %1
@@ -49,7 +50,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaNf.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = freeze i32 %2
   %4 = add nsw i32 %0, %1
@@ -69,17 +70,6 @@ entry:
 }
 
 ; 1 occurrences:
-; openspiel/optimized/quoridor.cc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = freeze i32 %2
-  %4 = add nsw i32 %0, %1
-  %5 = icmp eq i32 %4, %3
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; postgres/optimized/oracle_compat.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
@@ -93,7 +83,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/mathfuncs.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000066(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = freeze i32 %2
   %4 = add nuw nsw i32 %0, %1

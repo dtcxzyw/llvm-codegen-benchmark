@@ -1,6 +1,7 @@
 
-; 21 occurrences:
+; 22 occurrences:
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
+; boost/optimized/src.ll
 ; hermes/optimized/dtoa.c.ll
 ; jq/optimized/jv_dtoa.ll
 ; linux/optimized/hugetlb.ll
@@ -28,6 +29,19 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = trunc i64 %0 to i32
   %5 = sub i32 %3, %4
+  ret i32 %5
+}
+
+; 2 occurrences:
+; lvgl/optimized/lv_grid.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(i64 %0, ptr %1) #0 {
+entry:
+  %2 = ptrtoint ptr %1 to i64
+  %3 = trunc i64 %2 to i32
+  %4 = trunc i64 %0 to i32
+  %5 = sub nsw i32 %3, %4
   ret i32 %5
 }
 

@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	andi	a0, a0, 1
 	addw	a1, a1, a2
 	beqz	a0, .LBB0_2
@@ -6,7 +6,7 @@ func0000000000000011:                   # @func0000000000000011
 .LBB0_2:                                # %entry
 	seqz	a0, a1
 	ret
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	andi	a0, a0, 1
 	addw	a1, a1, a2
 	beqz	a0, .LBB1_2
@@ -14,7 +14,7 @@ func0000000000000051:                   # @func0000000000000051
 .LBB1_2:                                # %entry
 	seqz	a0, a1
 	ret
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	andi	a0, a0, 1
 	addw	a1, a1, a2
 	beqz	a0, .LBB2_2
@@ -22,7 +22,7 @@ func0000000000000056:                   # @func0000000000000056
 .LBB2_2:                                # %entry
 	slti	a0, a1, 1
 	ret
-func00000000000000da:                   # @func00000000000000da
+func00000000000001aa:                   # @func00000000000001aa
 	andi	a0, a0, 1
 	addw	a1, a1, a2
 	beqz	a0, .LBB3_2
@@ -30,7 +30,7 @@ func00000000000000da:                   # @func00000000000000da
 .LBB3_2:                                # %entry
 	sgtz	a0, a1
 	ret
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	andi	a0, a0, 1
 	addw	a1, a1, a2
 	beqz	a0, .LBB4_2

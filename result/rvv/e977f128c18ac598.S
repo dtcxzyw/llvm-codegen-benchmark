@@ -7,7 +7,7 @@ func0000000000000000:                   # @func0000000000000000
 	vmulhu.vx	v10, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 15
-	vadd.vv	v8, v9, v8
+	vadd.vv	v8, v8, v9
 	ret
 .LCPI1_0:
 	.quad	4153837486827862103             # 0x39a5652fb1137857
@@ -19,7 +19,7 @@ func000000000000000d:                   # @func000000000000000d
 	li	a0, 51
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wx	v9, v10, a0
-	vadd.vv	v8, v9, v8
+	vadd.vv	v8, v8, v9
 	ret
 .LCPI2_0:
 	.quad	-2049638230412172401            # 0xe38e38e38e38e38f
@@ -30,5 +30,5 @@ func000000000000000c:                   # @func000000000000000c
 	vmulhu.vx	v10, v10, a0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 3
-	vadd.vv	v8, v9, v8
+	vadd.vv	v8, v8, v9
 	ret

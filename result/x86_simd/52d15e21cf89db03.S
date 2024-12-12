@@ -17,10 +17,9 @@
 	.zero	1
 func000000000000000c:                   # @func000000000000000c
 	vpsllw	$15, %xmm0, %xmm0
-	vpxor	%xmm2, %xmm2, %xmm2
-	vpcmpeqd	%ymm3, %ymm3, %ymm3
-	vpcmpneqd	%ymm3, %ymm1, %k1
-	vpcmpgtw	%xmm0, %xmm2, %k1 {%k1}
+	vpmovw2m	%xmm0, %k1
+	vpcmpeqd	%ymm0, %ymm0, %ymm0
+	vpcmpneqd	%ymm0, %ymm1, %k1 {%k1}
 	vmovdqu8	.LCPI0_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [7,7,7,7,7,7,7,7,u,u,u,u,u,u,u,u]
 	vzeroupper
 	retq

@@ -19,11 +19,11 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000020:                   # @func0000000000000020
 	leaq	10(%rdi,%rsi), %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
-	leaq	3(%rdi,%rsi), %rax
-	retq
 func000000000000003f:                   # @func000000000000003f
 	leaq	4(%rdi,%rsi), %rax
+	retq
+func0000000000000008:                   # @func0000000000000008
+	leaq	25(%rdi,%rsi), %rax
 	retq
 func0000000000000035:                   # @func0000000000000035
 	leaq	24(%rdi,%rsi), %rax

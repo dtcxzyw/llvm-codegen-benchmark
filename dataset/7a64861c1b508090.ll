@@ -1,9 +1,10 @@
 
-; 69 occurrences:
+; 70 occurrences:
 ; abseil-cpp/optimized/node_hash_map_test.cc.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; c3c/optimized/sema_decls.c.ll
 ; cmake/optimized/cmLoadCacheCommand.cxx.ll
+; cpython/optimized/exceptions.ll
 ; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
 ; cvc5/optimized/quantifiers_engine.cpp.ll
 ; cvc5/optimized/quantifiers_rewriter.cpp.ll
@@ -29,11 +30,11 @@
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
 ; llvm/optimized/MachineCombiner.cpp.ll
 ; llvm/optimized/ParseOpenMP.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/Sanitizers.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; luau/optimized/main.cpp.ll
+; lvgl/optimized/lv_indev_scroll.ll
 ; ncnn/optimized/expanddims.cpp.ll
 ; nlohmann_json/optimized/unit.cpp.ll
 ; ocio/optimized/DisplayViewHelpers.cpp.ll
@@ -78,15 +79,13 @@ entry:
   ret i1 %3
 }
 
-; 18 occurrences:
+; 16 occurrences:
 ; arrow/optimized/string-to-double.cc.ll
 ; cmake/optimized/cmGeneratorTarget.cxx.ll
-; cpython/optimized/exceptions.ll
 ; double_conversion/optimized/string-to-double.cc.ll
 ; icu/optimized/double-conversion-string-to-double.ll
 ; llvm/optimized/EHStreamer.cpp.ll
 ; llvm/optimized/TokenAnnotator.cpp.ll
-; openusd/optimized/dependency.cpp.ll
 ; openusd/optimized/string-to-double.cc.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll

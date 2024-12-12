@@ -13,17 +13,17 @@ func0000000000000000:                   # @func0000000000000000
 	imulq	%rsi, %rdi
 	addq	%rdi, %rax
 	retq
-func000000000000001f:                   # @func000000000000001f
-	movl	%edx, %eax
-	imulq	%rsi, %rdi
-	addq	%rdi, %rax
-	retq
 func0000000000000015:                   # @func0000000000000015
 	movl	%edx, %eax
 	imulq	%rsi, %rdi
 	addq	%rdi, %rax
 	retq
 func000000000000000f:                   # @func000000000000000f
+	movl	%edx, %eax
+	imulq	%rsi, %rdi
+	addq	%rdi, %rax
+	retq
+func000000000000001f:                   # @func000000000000001f
 	movl	%edx, %eax
 	imulq	%rsi, %rdi
 	addq	%rdi, %rax

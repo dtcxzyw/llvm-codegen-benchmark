@@ -11,7 +11,7 @@ func0000000000000002:                   # @func0000000000000002
 	knotb	%k0, %k2
 	vpbroadcastd	.LCPI0_0(%rip), %ymm1 {%k2} {z} # ymm1 {%k2} {z} = [292,292,292,292,292,292,292,292]
 	vpord	.LCPI0_1(%rip){1to8}, %ymm1, %ymm1 {%k1}
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.long	32                              # 0x20

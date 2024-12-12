@@ -1,5 +1,5 @@
 
-; 121 occurrences:
+; 122 occurrences:
 ; arrow/optimized/byte_size.cc.ll
 ; bdwgc/optimized/gc.c.ll
 ; cpp-httplib/optimized/httplib.cc.ll
@@ -18,7 +18,6 @@
 ; icu/optimized/uconv.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll
 ; libquic/optimized/stack_trace.cc.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/process_vm_access.ll
 ; llvm/optimized/CGExpr.cpp.ll
 ; llvm/optimized/DFAJumpThreading.cpp.ll
@@ -114,6 +113,7 @@
 ; openvdb/optimized/points.cc.ll
 ; ruby/optimized/ossl_ssl.ll
 ; rust-analyzer-rs/optimized/3o0zta0tnq3ij8lb.ll
+; turborepo-rs/optimized/avd1ga9yb4qq5g7sdqftppd4q.ll
 ; typst-rs/optimized/3rk2ctuzbghb17s4.ll
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
 ; wasmtime-rs/optimized/3r0osxvwe4cd326n.ll
@@ -121,6 +121,7 @@
 ; wasmtime-rs/optimized/45190zkycf5izngt.ll
 ; wasmtime-rs/optimized/4u85yh8sn1llpfha.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, ptr %1) #0 {
 entry:

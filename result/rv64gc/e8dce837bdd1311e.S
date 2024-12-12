@@ -30,6 +30,10 @@ func0000000000000080:                   # @func0000000000000080
 	subw	a0, a0, a2
 	addw	a0, a0, a1
 	ret
+func0000000000000025:                   # @func0000000000000025
+	subw	a0, a0, a2
+	addw	a0, a0, a1
+	ret
 func000000000000000c:                   # @func000000000000000c
 	subw	a0, a0, a2
 	addw	a0, a0, a1

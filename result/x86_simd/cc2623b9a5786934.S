@@ -99,3 +99,53 @@ func000000000000000c:                   # @func000000000000000c
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+.LCPI6_0:
+	.short	768                             # 0x300
+	.short	768                             # 0x300
+	.short	768                             # 0x300
+	.short	768                             # 0x300
+	.short	768                             # 0x300
+	.short	768                             # 0x300
+	.short	768                             # 0x300
+	.short	768                             # 0x300
+	.short	768                             # 0x300
+	.short	768                             # 0x300
+	.short	768                             # 0x300
+	.short	768                             # 0x300
+	.short	768                             # 0x300
+	.short	768                             # 0x300
+	.short	768                             # 0x300
+	.short	768                             # 0x300
+func0000000000000018:                   # @func0000000000000018
+	vpsllw	$7, %xmm0, %xmm0
+	vpmovb2m	%xmm0, %k1
+	vmovdqu16	%ymm1, %ymm2 {%k1}
+	vpcmpnleuw	.LCPI6_0(%rip), %ymm2, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI7_0:
+	.short	56320                           # 0xdc00
+	.short	56320                           # 0xdc00
+	.short	56320                           # 0xdc00
+	.short	56320                           # 0xdc00
+	.short	56320                           # 0xdc00
+	.short	56320                           # 0xdc00
+	.short	56320                           # 0xdc00
+	.short	56320                           # 0xdc00
+	.short	56320                           # 0xdc00
+	.short	56320                           # 0xdc00
+	.short	56320                           # 0xdc00
+	.short	56320                           # 0xdc00
+	.short	56320                           # 0xdc00
+	.short	56320                           # 0xdc00
+	.short	56320                           # 0xdc00
+	.short	56320                           # 0xdc00
+func0000000000000014:                   # @func0000000000000014
+	vpsllw	$7, %xmm0, %xmm0
+	vpmovb2m	%xmm0, %k1
+	vmovdqu16	%ymm1, %ymm2 {%k1}
+	vpcmpltuw	.LCPI7_0(%rip), %ymm2, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq

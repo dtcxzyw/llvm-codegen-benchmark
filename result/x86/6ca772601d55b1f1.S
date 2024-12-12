@@ -16,7 +16,7 @@ func000000000000000a:                   # @func000000000000000a
 	cmpl	%edi, %edx
 	setg	%al
 	retq
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	shll	$8, %edx
 	subl	%esi, %edx
 	cmpl	%edi, %edx

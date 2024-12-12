@@ -21,10 +21,10 @@ func0000000000000003:                   # @func0000000000000003
 	vmv.v.x	v10, a0
 	lui	a0, 16384
 	vmerge.vxm	v10, v10, a0, v0
-	lui	a0, 20496
+	lui	a0, 4112
 	addi	a0, a0, -1
 	vand.vx	v8, v8, a0
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret
 func0000000000000009:                   # @func0000000000000009
 	li	a0, 1501

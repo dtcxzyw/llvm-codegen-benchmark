@@ -3,10 +3,10 @@
 ; libpng/optimized/pngrutil.c.ll
 ; openjdk/optimized/pngrutil.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000056(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 24
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = icmp slt i32 %0, 0
   %6 = select i1 %5, i32 %4, i32 0
   ret i32 %6
@@ -17,7 +17,7 @@ entry:
 ; harfbuzz/optimized/hb-static.cc.ll
 ; openjdk/optimized/hb-common.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000074(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000e4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = or disjoint i32 %3, %1
@@ -32,7 +32,7 @@ entry:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000071(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000e1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = or disjoint i32 %3, %1
@@ -45,10 +45,10 @@ entry:
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 8
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = icmp eq i32 %0, 2
   %6 = select i1 %5, i32 %4, i32 0
   ret i32 %6
@@ -57,7 +57,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/skl_universal_plane.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 16
   %4 = or disjoint i32 %3, %1

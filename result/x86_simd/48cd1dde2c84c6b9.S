@@ -2,7 +2,7 @@ func0000000000000073:                   # @func0000000000000073
 	vcvtdq2ps	%ymm1, %ymm1
 	vxorps	%xmm2, %xmm2, %xmm2
 	vcmpnleps	%ymm0, %ymm2, %k1
-	vcmpneqps	%ymm0, %ymm1, %k0 {%k1}
+	vcmpneqps	%ymm1, %ymm0, %k0 {%k1}
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

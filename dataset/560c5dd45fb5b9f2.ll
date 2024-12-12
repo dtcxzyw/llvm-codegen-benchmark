@@ -2,11 +2,11 @@
 ; 1 occurrences:
 ; rocksdb/optimized/compaction_picker_universal.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 4294967295
   %4 = and i64 %3, 4294967295
-  %5 = icmp eq i64 %4, %1
+  %5 = icmp eq i64 %1, %4
   %6 = select i1 %5, i1 %0, i1 false
   ret i1 %6
 }
@@ -18,11 +18,11 @@ entry:
 ; libquic/optimized/inflate.c.ll
 ; zlib/optimized/inflate.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000074(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = and i64 %3, 4294967295
-  %5 = icmp ugt i64 %4, %1
+  %5 = icmp samesign ult i64 %1, %4
   %6 = select i1 %5, i1 %0, i1 false
   ret i1 %6
 }
@@ -34,7 +34,7 @@ define i1 @func0000000000000005(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 15
   %4 = and i64 %3, -16
-  %5 = icmp uge i64 %4, %1
+  %5 = icmp ule i64 %1, %4
   %6 = select i1 %5, i1 %0, i1 false
   ret i1 %6
 }
@@ -55,7 +55,7 @@ define i1 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 7
   %4 = and i64 %3, -8
-  %5 = icmp eq i64 %4, %1
+  %5 = icmp eq i64 %1, %4
   %6 = select i1 %5, i1 %0, i1 false
   ret i1 %6
 }

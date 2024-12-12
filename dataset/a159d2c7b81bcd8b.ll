@@ -4,11 +4,11 @@
 ; sqlite/optimized/sqlite3.ll
 ; wolfssl/optimized/api.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000001e(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i64 3, i64 0
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   %6 = sext i32 %1 to i64
   %7 = getelementptr nusw i8, ptr %5, i64 %6
   ret ptr %7
@@ -20,11 +20,11 @@ entry:
 ; opencv/optimized/persistence.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000001c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i64 3, i64 0
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   %6 = sext i32 %1 to i64
   %7 = getelementptr i8, ptr %5, i64 %6
   ret ptr %7
@@ -36,11 +36,11 @@ entry:
 ; stb/optimized/stb_image_write.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000aa(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func00000000000000ae(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 2
   %4 = select i1 %3, i64 2, i64 0
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   %6 = sext i32 %1 to i64
   %7 = getelementptr nusw i8, ptr %5, i64 %6
   ret ptr %7

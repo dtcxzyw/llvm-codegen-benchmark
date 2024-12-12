@@ -19,4 +19,18 @@ entry:
   ret i64 %6
 }
 
+; 3 occurrences:
+; zed-rs/optimized/4kidsk70o8yfs5e4frb89ok7e.ll
+; zed-rs/optimized/5jgfm3klpby9utjhkan94f3dk.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000024(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ult i64 %1, %2
+  %4 = or i1 %3, %0
+  %5 = sub nuw i64 %1, %2
+  %6 = select i1 %4, i64 undef, i64 %5
+  ret i64 %6
+}
+
 attributes #0 = { nounwind }

@@ -1,5 +1,5 @@
 
-; 108 occurrences:
+; 107 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/hashing.cc.ll
@@ -75,7 +75,6 @@
 ; php/optimized/string.ll
 ; php/optimized/zend_ast.ll
 ; php/optimized/zend_smart_str.ll
-; postgres/optimized/char.ll
 ; postgres/optimized/encode.ll
 ; postgres/optimized/fe-exec.ll
 ; postgres/optimized/utf8_and_iso8859_1.ll

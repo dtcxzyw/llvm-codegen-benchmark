@@ -15,3 +15,10 @@ func000000000000000a:                   // @func000000000000000a
 	bic	w0, w8, w0
 	ret
                                         // -- End function
+func0000000000000011:                   // @func0000000000000011
+// %bb.0:                               // %entry
+	cmp	x1, x2
+	cset	w8, eq
+	bic	w0, w8, w0
+	ret
+                                        // -- End function

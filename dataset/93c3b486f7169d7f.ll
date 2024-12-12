@@ -21,18 +21,20 @@ entry:
   ret i32 %6
 }
 
-; 6 occurrences:
+; 8 occurrences:
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; linux/optimized/aes.ll
 ; linux/optimized/drm_format_helper.ll
 ; llvm/optimized/ExprCXX.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; spike/optimized/aes64esm.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = lshr i32 %4, 8
   %6 = and i32 %5, 255
   ret i32 %6

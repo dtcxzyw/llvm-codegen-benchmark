@@ -8,13 +8,12 @@ define i8 @func0000000000000003(i8 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 255, %1
   %3 = trunc nuw nsw i32 %2 to i8
-  %4 = and i8 %3, %0
+  %4 = and i8 %0, %3
   ret i8 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; cmake/optimized/hex.c.ll
-; libquic/optimized/random.c.ll
 ; lief/optimized/rsa.c.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; openssl/optimized/libcrypto-lib-wp_dgst.ll
@@ -25,7 +24,7 @@ define i8 @func0000000000000002(i8 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 255, %1
   %3 = trunc nuw i32 %2 to i8
-  %4 = and i8 %3, %0
+  %4 = and i8 %0, %3
   ret i8 %4
 }
 
@@ -42,7 +41,7 @@ define i8 @func0000000000000004(i8 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 65280, %1
   %3 = trunc i32 %2 to i8
-  %4 = and i8 %3, %0
+  %4 = and i8 %0, %3
   ret i8 %4
 }
 
@@ -53,7 +52,7 @@ define i8 @func0000000000000006(i8 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 128, %1
   %3 = trunc nuw i32 %2 to i8
-  %4 = and i8 %3, %0
+  %4 = and i8 %0, %3
   ret i8 %4
 }
 
@@ -64,7 +63,7 @@ define i8 @func0000000000000000(i8 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 65280, %1
   %3 = trunc i32 %2 to i8
-  %4 = and i8 %3, %0
+  %4 = and i8 %0, %3
   ret i8 %4
 }
 

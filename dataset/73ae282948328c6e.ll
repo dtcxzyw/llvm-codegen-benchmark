@@ -5,7 +5,7 @@
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000064(i32 %0) #0 {
+define i32 @func00000000000000d4(i32 %0) #0 {
 entry:
   %1 = and i32 %0, -2147483636
   %2 = icmp eq i32 %1, 0
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/apply.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0) #0 {
+define i32 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 64
   %2 = icmp eq i32 %1, 0

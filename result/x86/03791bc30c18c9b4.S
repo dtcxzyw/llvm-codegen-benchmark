@@ -26,12 +26,3 @@ func0000000000000007:                   # @func0000000000000007
 	sbbq	%rax, %rax
 	orq	%rcx, %rax
 	retq
-func0000000000000001:                   # @func0000000000000001
-	leaq	15(%rsi), %rcx
-	testq	%rsi, %rsi
-	cmovnsq	%rsi, %rcx
-	andq	$-16, %rcx
-	testb	$1, %dil
-	movl	$64, %eax
-	cmoveq	%rcx, %rax
-	retq

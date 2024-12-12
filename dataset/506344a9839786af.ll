@@ -5,7 +5,7 @@
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; php/optimized/logical_filters.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000042(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %0, i1 %3, i1 false
@@ -20,7 +20,7 @@ entry:
 ; llvm/optimized/AsmPrinter.cpp.ll
 ; redis/optimized/rax.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000302(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = select i1 %0, i1 %3, i1 false
@@ -30,12 +30,11 @@ entry:
   ret i1 %7
 }
 
-; 3 occurrences:
-; linux/optimized/feat_ctl.ll
+; 2 occurrences:
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000318(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = icmp ne i32 %3, 0
@@ -46,22 +45,9 @@ entry:
 }
 
 ; 1 occurrences:
-; llvm/optimized/ValueTracking.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000102(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 60
-  %4 = icmp eq i32 %3, 0
-  %5 = icmp ugt i32 %1, 63
-  %6 = select i1 %0, i1 %5, i1 false
-  %7 = or i1 %6, %4
-  ret i1 %7
-}
-
-; 1 occurrences:
 ; linux/optimized/ping.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000058(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %0, i1 %3, i1 false

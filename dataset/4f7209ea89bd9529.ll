@@ -12,17 +12,6 @@ entry:
 }
 
 ; 1 occurrences:
-; quantlib/optimized/chisquaredistribution.ll
-; Function Attrs: nounwind
-define i1 @func000000000000008a(double %0, i64 %1) #0 {
-entry:
-  %2 = icmp ugt i64 %1, 10000
-  %3 = fcmp ole double %0, 0x3D719799812DEA11
-  %4 = select i1 %3, i1 true, i1 %2
-  ret i1 %4
-}
-
-; 1 occurrences:
 ; cpython/optimized/mpdecimal.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000014(double %0, i64 %1) #0 {

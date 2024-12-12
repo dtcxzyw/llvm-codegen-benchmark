@@ -18,6 +18,11 @@ func0000000000000004:                   # @func0000000000000004
 	subl	%edi, %esi
 	leal	63(%rsi), %eax
 	retq
+func0000000000000008:                   # @func0000000000000008
+	addl	%edx, %edi
+	subl	%edi, %esi
+	leal	12(%rsi), %eax
+	retq
 func0000000000000011:                   # @func0000000000000011
 	addl	%edx, %edi
 	subl	%edi, %esi
@@ -32,11 +37,6 @@ func0000000000000014:                   # @func0000000000000014
 	addl	%edx, %edi
 	subl	%edi, %esi
 	leal	256(%rsi), %eax
-	retq
-func0000000000000008:                   # @func0000000000000008
-	addl	%edx, %edi
-	subl	%edi, %esi
-	leal	1(%rsi), %eax
 	retq
 func0000000000000018:                   # @func0000000000000018
 	addl	%edx, %edi

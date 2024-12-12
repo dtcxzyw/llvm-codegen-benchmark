@@ -23,6 +23,11 @@ func0000000000000000:                   # @func0000000000000000
 	add.uw	a0, a1, a0
 	addi	a0, a0, -1
 	ret
+func0000000000000010:                   # @func0000000000000010
+	addw	a1, a1, a2
+	add	a0, a0, a1
+	addi	a0, a0, 1
+	ret
 func0000000000000070:                   # @func0000000000000070
 	addw	a1, a1, a2
 	add	a0, a0, a1

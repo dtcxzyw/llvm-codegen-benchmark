@@ -1,7 +1,6 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; abc/optimized/kitDsd.c.ll
-; linux/optimized/e1000_hw.ll
 ; linux/optimized/ldt.ll
 ; openssl/optimized/libssl-lib-quic_wire_pkt.ll
 ; openssl/optimized/libssl-shlib-quic_wire_pkt.ll

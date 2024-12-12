@@ -20,6 +20,20 @@ entry:
   ret i16 %6
 }
 
+; 3 occurrences:
+; lvgl/optimized/lv_binfont_loader.ll
+; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
+; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
+; Function Attrs: nounwind
+define i16 @func000000000000001d(i16 %0, i16 %1, i8 %2) #0 {
+entry:
+  %3 = zext nneg i8 %2 to i16
+  %4 = shl nuw i16 %3, 14
+  %5 = or disjoint i16 %0, %1
+  %6 = or disjoint i16 %4, %5
+  ret i16 %6
+}
+
 ; 2 occurrences:
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; opencv/optimized/color_rgb.dispatch.cpp.ll
@@ -67,19 +81,6 @@ entry:
   %4 = shl nuw nsw i16 %3, 3
   %5 = or i16 %0, %1
   %6 = or i16 %5, %4
-  ret i16 %6
-}
-
-; 2 occurrences:
-; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
-; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
-; Function Attrs: nounwind
-define i16 @func000000000000001d(i16 %0, i16 %1, i8 %2) #0 {
-entry:
-  %3 = zext nneg i8 %2 to i16
-  %4 = shl nuw i16 %3, 14
-  %5 = or disjoint i16 %0, %1
-  %6 = or disjoint i16 %4, %5
   ret i16 %6
 }
 

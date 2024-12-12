@@ -9,7 +9,7 @@
 ; php/optimized/hash_sha.ll
 ; php/optimized/sha1.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i32 %0, i1 %1) #0 {
+define i1 @func00000000000001a4(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 56, i32 120
   %3 = sub nsw i32 %2, %0

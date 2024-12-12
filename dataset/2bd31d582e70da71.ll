@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 26 occurrences:
 ; assimp/optimized/ImproveCacheLocality.cpp.ll
 ; assimp/optimized/MakeVerboseFormat.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
@@ -17,7 +17,6 @@
 ; mitsuba3/optimized/linearcurve.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/obj.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/serialized.cpp.ll
 ; opencv/optimized/basicretinafilter.cpp.ll
 ; opencv/optimized/imagelogpolprojection.cpp.ll
@@ -105,11 +104,9 @@ entry:
   ret i64 %3
 }
 
-; 7 occurrences:
+; 5 occurrences:
 ; abc/optimized/giaSpeedup.c.ll
 ; abc/optimized/sfmTim.c.ll
-; delta-rs/optimized/43y2svfstmvqcl15.ll
-; delta-rs/optimized/4zvphat0q9a964bz.ll
 ; gromacs/optimized/bwlzh.c.ll
 ; gromacs/optimized/surfacearea.cpp.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll

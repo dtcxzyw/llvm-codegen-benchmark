@@ -24,20 +24,27 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	shll	$4, %eax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	xorl	%ecx, %ecx
 	cmpq	%rsi, %rdi
 	movl	$2147483562, %eax               # imm = 0x7FFFFFAA
 	cmovgq	%rcx, %rax
 	retq
+func0000000000000021:                   # @func0000000000000021
+	subq	%rsi, %rdi
+	movabsq	$-9223372036854775808, %rcx     # imm = 0x8000000000000000
+	leaq	-2(%rcx), %rax
+	negq	%rdi
+	cmovoq	%rcx, %rax
+	retq
 func0000000000000008:                   # @func0000000000000008
 	subq	%rsi, %rdi
 	xorl	%eax, %eax
-	cmpq	$33, %rdi
+	cmpq	$17, %rdi
 	setae	%al
-	leaq	1(%rax,%rax), %rax
+	shll	$4, %eax
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdi
 	setg	%al

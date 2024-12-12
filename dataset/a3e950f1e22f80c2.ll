@@ -1,7 +1,8 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; clamav/optimized/hashtab.c.ll
 ; luau/optimized/OptimizeConstProp.cpp.ll
+; lvgl/optimized/lv_lru.ll
 ; meshoptimizer/optimized/simplifier.cpp.ll
 ; ninja/optimized/build_log.cc.ll
 ; ninja/optimized/state.cc.ll

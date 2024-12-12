@@ -4,7 +4,7 @@
 ; folly/optimized/File.cpp.ll
 ; vcpkg/optimized/strings.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i16 %0) #0 {
+define i32 @func0000000000000014(i16 %0) #0 {
 entry:
   %1 = and i16 %0, 96
   %2 = icmp eq i16 %1, 0

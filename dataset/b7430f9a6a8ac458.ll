@@ -1,5 +1,6 @@
 
 ; 124 occurrences:
+; boost/optimized/expand_on_spheroid.ll
 ; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_list.cpp.ll
 ; fmt/optimized/format-impl-test.cc.ll
@@ -98,7 +99,6 @@
 ; openusd/optimized/fileIO.cpp.ll
 ; openusd/optimized/textFileFormat.cpp.ll
 ; php/optimized/zend_jit.ll
-; proj/optimized/crs.cpp.ll
 ; proxygen/optimized/HTTPPriorityFunctions.cpp.ll
 ; qemu/optimized/block_io.c.ll
 ; ruby/optimized/util.ll
@@ -128,7 +128,7 @@
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = or i1 %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = xor i1 %4, true
   ret i1 %5
 }

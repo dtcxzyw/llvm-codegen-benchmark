@@ -109,6 +109,19 @@ entry:
   ret i64 %5
 }
 
+; 2 occurrences:
+; opencv/optimized/lkpyramid.cpp.ll
+; opencv/optimized/rlof_localflow.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003b(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, -2
+  %3 = add nuw nsw i32 %0, 1
+  %4 = mul nsw i32 %3, %2
+  %5 = zext nneg i32 %4 to i64
+  ret i64 %5
+}
+
 ; 1 occurrences:
 ; raylib/optimized/rmodels.c.ll
 ; Function Attrs: nounwind

@@ -5,7 +5,7 @@
 define i1 @func0000000000000064(i1 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = trunc nuw i8 %1 to i1
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -33,7 +33,7 @@ entry:
 define i1 @func0000000000000008(i1 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = trunc i8 %1 to i1
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -46,20 +46,8 @@ entry:
 define i1 @func0000000000000060(i1 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 19
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = trunc i8 %1 to i1
-  %6 = select i1 %4, i1 true, i1 %5
-  ret i1 %6
-}
-
-; 1 occurrences:
-; opencv/optimized/affine_feature2d.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, i8 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ugt i32 %2, 9
-  %4 = or i1 %3, %0
-  %5 = trunc nuw i8 %1 to i1
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
 }

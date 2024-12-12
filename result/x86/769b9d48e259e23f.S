@@ -1,9 +1,9 @@
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	addl	%esi, %edi
 	cmpb	$3, %dil
 	setb	%al
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	addl	%esi, %edi
 	cmpb	$3, %dil
 	setae	%al

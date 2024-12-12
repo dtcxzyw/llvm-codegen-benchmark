@@ -27,7 +27,7 @@ entry:
   %3 = and i32 %2, 1040384
   %4 = select i1 %1, i32 %3, i32 0
   %.masked = and i32 %0, -267386881
-  %5 = or i32 %4, %.masked
+  %5 = or i32 %.masked, %4
   ret i32 %5
 }
 

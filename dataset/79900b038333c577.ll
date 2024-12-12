@@ -28,9 +28,8 @@ entry:
   ret i64 %7
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; eastl/optimized/TestVector.cpp.ll
-; lz4/optimized/lz4hc.c.ll
 ; z3/optimized/sat_simplifier.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000030(i64 %0, i64 %1, ptr %2) #0 {

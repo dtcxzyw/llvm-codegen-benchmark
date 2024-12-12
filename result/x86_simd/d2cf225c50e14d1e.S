@@ -38,15 +38,13 @@ func000000000000000e:                   # @func000000000000000e
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vmovdqa64	%ymm1, %ymm0 {%k1}
 	retq
-.LCPI5_0:
-	.quad	3600                            # 0xe10
 func0000000000000005:                   # @func0000000000000005
 	vpslld	$31, %xmm0, %xmm0
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpcmpnltd	%xmm3, %xmm0, %k1
-	vpaddq	%ymm2, %ymm1, %ymm1
-	vpbroadcastq	.LCPI5_0(%rip), %ymm0   # ymm0 = [3600,3600,3600,3600]
-	vpaddq	%ymm1, %ymm1, %ymm0 {%k1}
+	vpmovd2m	%xmm0, %k1
+	vpaddq	%ymm2, %ymm1, %ymm0
+	vpsllq	$2, %ymm0, %ymm0
+	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vmovdqa64	%ymm1, %ymm0 {%k1}
 	retq
 func0000000000000007:                   # @func0000000000000007
 	vpslld	$31, %xmm0, %xmm0

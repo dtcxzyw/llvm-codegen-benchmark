@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	3                               # 0x3
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vpsrld	$14, %ymm1, %ymm1
 	vpternlogd	$236, .LCPI0_0(%rip){1to8}, %ymm0, %ymm1 # ymm1 = (ymm1 & mem) | ymm0
 	vptestmd	%ymm1, %ymm1, %k0
@@ -27,7 +27,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 .LCPI3_0:
 	.long	4                               # 0x4
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpsrld	$1, %ymm1, %ymm1
 	vpternlogd	$236, .LCPI3_0(%rip){1to8}, %ymm0, %ymm1 # ymm1 = (ymm1 & mem) | ymm0
 	vptestnmd	%ymm1, %ymm1, %k0
@@ -38,7 +38,7 @@ func0000000000000011:                   # @func0000000000000011
 	.long	15                              # 0xf
 .LCPI4_1:
 	.long	70                              # 0x46
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	vpsrld	$4, %ymm1, %ymm1
 	vpternlogd	$236, .LCPI4_0(%rip){1to8}, %ymm0, %ymm1 # ymm1 = (ymm1 & mem) | ymm0
 	vpcmpnleud	.LCPI4_1(%rip){1to8}, %ymm1, %k0
@@ -49,7 +49,7 @@ func0000000000000018:                   # @func0000000000000018
 	.long	240                             # 0xf0
 .LCPI5_1:
 	.long	59                              # 0x3b
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	vpsrld	$12, %ymm1, %ymm1
 	vpternlogd	$236, .LCPI5_0(%rip){1to8}, %ymm0, %ymm1 # ymm1 = (ymm1 & mem) | ymm0
 	vpcmpltud	.LCPI5_1(%rip){1to8}, %ymm1, %k0
@@ -79,10 +79,21 @@ func0000000000000008:                   # @func0000000000000008
 	vzeroupper
 	retq
 .LCPI8_0:
-	.long	4095                            # 0xfff
-func0000000000000031:                   # @func0000000000000031
-	vpsrld	$8, %ymm1, %ymm1
+	.long	32640                           # 0x7f80
+.LCPI8_1:
+	.long	257                             # 0x101
+func0000000000000014:                   # @func0000000000000014
+	vpsrld	$1, %ymm1, %ymm1
 	vpternlogd	$236, .LCPI8_0(%rip){1to8}, %ymm0, %ymm1 # ymm1 = (ymm1 & mem) | ymm0
+	vpcmpltud	.LCPI8_1(%rip){1to8}, %ymm1, %k0
+	vpmovm2w	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI9_0:
+	.long	4095                            # 0xfff
+func0000000000000061:                   # @func0000000000000061
+	vpsrld	$8, %ymm1, %ymm1
+	vpternlogd	$236, .LCPI9_0(%rip){1to8}, %ymm0, %ymm1 # ymm1 = (ymm1 & mem) | ymm0
 	vptestnmd	%ymm1, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

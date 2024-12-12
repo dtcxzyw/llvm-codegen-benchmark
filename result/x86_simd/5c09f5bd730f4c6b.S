@@ -3,7 +3,7 @@
 func000000000000000f:                   # @func000000000000000f
 	vpaddd	%ymm1, %ymm1, %ymm1
 	vpandd	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.long	56                              # 0x38
@@ -17,7 +17,7 @@ func000000000000000c:                   # @func000000000000000c
 func000000000000000d:                   # @func000000000000000d
 	vpslld	$3, %ymm1, %ymm1
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI3_0:
 	.byte	0                               # 0x0
@@ -60,5 +60,5 @@ func000000000000000d:                   # @func000000000000000d
 func0000000000000005:                   # @func0000000000000005
 	vpslld	$5, %ymm1, %ymm1
 	vpandd	.LCPI3_1(%rip){1to8}, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq

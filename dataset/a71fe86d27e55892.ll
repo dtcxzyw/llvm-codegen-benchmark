@@ -10,7 +10,7 @@ entry:
   %2 = mul nuw nsw i64 %1, 40
   %3 = add nuw nsw i64 %2, 4294965376
   %4 = and i64 %3, 4294967288
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -22,7 +22,7 @@ entry:
   %2 = mul i64 %1, 12
   %3 = add i64 %2, 7
   %4 = and i64 %3, -8
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -38,16 +38,17 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; lvgl/optimized/lv_draw_sw_gradient.ll
 ; postgres/optimized/brin_tuple.ll
 ; postgres/optimized/latch.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0, i64 %1) #0 {
 entry:
-  %2 = mul nsw i64 %1, 12
+  %2 = mul nsw i64 %1, 3
   %3 = add nsw i64 %2, 7
   %4 = and i64 %3, -8
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 

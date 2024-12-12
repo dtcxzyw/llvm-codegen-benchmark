@@ -28,3 +28,8 @@ func000000000000000c:                   # @func000000000000000c
 	subl	%esi, %edi
 	movslq	%edi, %rax
 	retq
+func0000000000000009:                   # @func0000000000000009
+	addl	%esi, %esi
+	subl	%esi, %edi
+	movslq	%edi, %rax
+	retq

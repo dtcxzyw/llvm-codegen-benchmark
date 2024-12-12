@@ -1,26 +1,18 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	testq	%rsi, %rsi
 	sete	%cl
 	testb	%dil, %dil
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000081:                   # @func0000000000000081
-	shrq	$32, %rsi
-	andl	$3, %edi
-	xorq	$1, %rdi
-	orq	%rsi, %rdi
-	sete	%al
+func0000000000000101:                   # @func0000000000000101
+	cmpq	$2147483647, %rsi               # imm = 0x7FFFFFFF
+	seta	%cl
+	btq	$32, %rdi
+	setae	%al
+	orb	%cl, %al
 	retq
-func0000000000000041:                   # @func0000000000000041
-	cmpq	$2, %rsi
-	setae	%cl
-	andl	$12, %edi
-	cmpl	$4, %edi
-	sete	%al
-	andb	%cl, %al
-	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	testq	%rsi, %rsi
 	setne	%cl
 	andl	$-2, %edi

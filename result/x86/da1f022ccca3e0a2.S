@@ -1,43 +1,15 @@
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	movslq	%edx, %rax
 	addq	$18, %rsi
 	cmpq	%rax, %rsi
 	seta	%al
 	orb	%dil, %al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	movslq	%edx, %rax
 	addq	$2, %rsi
 	cmpq	%rax, %rsi
 	setg	%al
-	orb	%dil, %al
-	retq
-func0000000000000011:                   # @func0000000000000011
-	movslq	%edx, %rax
-	incq	%rsi
-	cmpq	%rax, %rsi
-	sete	%al
-	orb	%dil, %al
-	retq
-func000000000000003b:                   # @func000000000000003b
-	movslq	%edx, %rax
-	addq	$8, %rsi
-	cmpq	%rax, %rsi
-	setge	%al
-	orb	%dil, %al
-	retq
-func0000000000000036:                   # @func0000000000000036
-	movslq	%edx, %rax
-	incq	%rsi
-	cmpq	%rax, %rsi
-	setl	%al
-	orb	%dil, %al
-	retq
-func0000000000000016:                   # @func0000000000000016
-	movslq	%edx, %rax
-	addq	$-4, %rsi
-	cmpq	%rax, %rsi
-	setl	%al
 	orb	%dil, %al
 	retq
 func0000000000000021:                   # @func0000000000000021
@@ -47,7 +19,35 @@ func0000000000000021:                   # @func0000000000000021
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func000000000000006b:                   # @func000000000000006b
+	movslq	%edx, %rax
+	addq	$8, %rsi
+	cmpq	%rax, %rsi
+	setge	%al
+	orb	%dil, %al
+	retq
+func0000000000000066:                   # @func0000000000000066
+	movslq	%edx, %rax
+	incq	%rsi
+	cmpq	%rax, %rsi
+	setl	%al
+	orb	%dil, %al
+	retq
+func0000000000000026:                   # @func0000000000000026
+	movslq	%edx, %rax
+	addq	$-4, %rsi
+	cmpq	%rax, %rsi
+	setl	%al
+	orb	%dil, %al
+	retq
+func0000000000000041:                   # @func0000000000000041
+	movslq	%edx, %rax
+	incq	%rsi
+	cmpq	%rax, %rsi
+	sete	%al
+	orb	%dil, %al
+	retq
+func0000000000000061:                   # @func0000000000000061
 	movslq	%edx, %rax
 	incq	%rsi
 	cmpq	%rax, %rsi

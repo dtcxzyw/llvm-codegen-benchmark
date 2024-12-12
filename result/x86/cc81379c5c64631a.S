@@ -16,47 +16,47 @@ func0000000000000022:                   # @func0000000000000022
 	retq
 .LCPI2_0:
 	.quad	0x8000000000000000              # double -0
-func0000000000000032:                   # @func0000000000000032
+func0000000000000024:                   # @func0000000000000024
 	vxorpd	.LCPI2_0(%rip){1to2}, %xmm1, %xmm2
+	vmaxsd	%xmm1, %xmm2, %xmm1
+	vucomisd	%xmm0, %xmm1
+	seta	%al
+	retq
+.LCPI3_0:
+	.quad	0x8000000000000000              # double -0
+func0000000000000032:                   # @func0000000000000032
+	vxorpd	.LCPI3_0(%rip){1to2}, %xmm1, %xmm2
 	vcmpnlesd	%xmm1, %xmm2, %k1
 	vmovsd	%xmm2, %xmm1, %xmm1 {%k1}
 	vucomisd	%xmm1, %xmm0
 	seta	%al
 	retq
-.LCPI3_0:
+.LCPI4_0:
 	.quad	0x8000000000000000              # double -0
 func0000000000000035:                   # @func0000000000000035
-	vxorpd	.LCPI3_0(%rip){1to2}, %xmm1, %xmm2
+	vxorpd	.LCPI4_0(%rip){1to2}, %xmm1, %xmm2
 	vcmpnlesd	%xmm1, %xmm2, %k1
 	vmovsd	%xmm2, %xmm1, %xmm1 {%k1}
 	vucomisd	%xmm1, %xmm0
 	setb	%al
 	retq
-.LCPI4_0:
-	.quad	0x8000000000000000              # double -0
-func0000000000000034:                   # @func0000000000000034
-	vxorpd	.LCPI4_0(%rip){1to2}, %xmm1, %xmm2
-	vcmpnlesd	%xmm1, %xmm2, %k1
-	vmovsd	%xmm2, %xmm1, %xmm1 {%k1}
-	vucomisd	%xmm0, %xmm1
-	seta	%al
-	retq
 .LCPI5_0:
 	.quad	0x8000000000000000              # double -0
-func000000000000003c:                   # @func000000000000003c
+func0000000000000034:                   # @func0000000000000034
 	vxorpd	.LCPI5_0(%rip){1to2}, %xmm1, %xmm2
 	vcmpnlesd	%xmm1, %xmm2, %k1
 	vmovsd	%xmm2, %xmm1, %xmm1 {%k1}
 	vucomisd	%xmm0, %xmm1
-	setae	%al
+	seta	%al
 	retq
 .LCPI6_0:
 	.quad	0x8000000000000000              # double -0
-func0000000000000024:                   # @func0000000000000024
+func000000000000003c:                   # @func000000000000003c
 	vxorpd	.LCPI6_0(%rip){1to2}, %xmm1, %xmm2
-	vmaxsd	%xmm1, %xmm2, %xmm1
+	vcmpnlesd	%xmm1, %xmm2, %k1
+	vmovsd	%xmm2, %xmm1, %xmm1 {%k1}
 	vucomisd	%xmm0, %xmm1
-	seta	%al
+	setae	%al
 	retq
 .LCPI7_0:
 	.quad	0x8000000000000000              # double -0

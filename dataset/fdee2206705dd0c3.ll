@@ -4,7 +4,7 @@
 ; opencv/optimized/contours.cpp.ll
 ; ruby/optimized/string.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 3145728
   %3 = icmp eq i32 %2, 2097152
@@ -21,7 +21,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-rsa_ossl.ll
 ; redis/optimized/cluster_legacy.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c1(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000181(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 32
   %3 = icmp ne i32 %2, 0

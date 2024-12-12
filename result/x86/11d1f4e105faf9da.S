@@ -40,3 +40,9 @@ func000000000000001b:                   # @func000000000000001b
 	shlq	$32, %rsi
 	orq	%rsi, %rax
 	retq
+func000000000000000b:                   # @func000000000000000b
+	movl	%edx, %eax
+	orq	%rdi, %rax
+	shlq	$48, %rsi
+	orq	%rsi, %rax
+	retq

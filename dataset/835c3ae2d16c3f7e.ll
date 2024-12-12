@@ -1,5 +1,5 @@
 
-; 211 occurrences:
+; 200 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; abseil-cpp/optimized/randen_engine_test.cc.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
@@ -7,6 +7,10 @@
 ; arrow/optimized/key_map.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
 ; base64-rs/optimized/25sh13l3jgkilua2.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/dump_avx2.ll
+; boost/optimized/dump_ssse3.ll
+; boost/optimized/graphml.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; ceres/optimized/dense_qr.cc.ll
 ; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
@@ -14,11 +18,10 @@
 ; ceres/optimized/line_search_minimizer.cc.ll
 ; ceres/optimized/linear_least_squares_problems.cc.ll
 ; ceres/optimized/normal_prior.cc.ll
+; ceres/optimized/polynomial.cc.ll
 ; clamav/optimized/archive.cpp.ll
 ; clamav/optimized/hash.cpp.ll
-; clamav/optimized/lzma_iface.c.ll
 ; clamav/optimized/rawread.cpp.ll
-; clamav/optimized/readdb.c.ll
 ; cmake/optimized/archive_read_support_format_cpio.c.ll
 ; cmake/optimized/archive_write_set_format_cpio_newc.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
@@ -47,16 +50,12 @@
 ; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
 ; git/optimized/sha256.ll
 ; hdf5/optimized/H5FDmulti.c.ll
-; jemalloc/optimized/bitmap.ll
-; jemalloc/optimized/bitmap.pic.ll
-; jemalloc/optimized/bitmap.sym.ll
 ; jemalloc/optimized/malloc_io.ll
 ; jemalloc/optimized/malloc_io.pic.ll
 ; jemalloc/optimized/malloc_io.sym.ll
 ; libdeflate/optimized/crc32.c.ll
 ; libquic/optimized/e_aes.c.ll
 ; libquic/optimized/tls_cbc.c.ll
-; libsodium/optimized/libsodium_la-secretstream_xchacha20poly1305.ll
 ; libuv/optimized/linux.c.ll
 ; libwebp/optimized/rescaler.c.ll
 ; linux/optimized/bitmap.ll
@@ -93,7 +92,6 @@
 ; llvm/optimized/MachineIRBuilder.cpp.ll
 ; llvm/optimized/MicrosoftMangle.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
@@ -123,10 +121,8 @@
 ; opencc/optimized/louds-trie.cc.ll
 ; opencc/optimized/tail.cc.ll
 ; opencv/optimized/knn_matching.cpp.ll
-; opencv/optimized/oilpainting.cpp.ll
 ; opencv/optimized/perf_matching.cpp.ll
 ; openexr/optimized/ImfDwaCompressor.cpp.ll
-; openjdk/optimized/cmscgats.ll
 ; openjdk/optimized/metaspaceShared.ll
 ; openmpi/optimized/errhandler_predefined.ll
 ; openmpi/optimized/hook_comm_method_fns.ll
@@ -157,8 +153,6 @@
 ; quickjs/optimized/quickjs.ll
 ; re2/optimized/prog.cc.ll
 ; readerwriterqueue/optimized/bench.cpp.ll
-; redis/optimized/bitmap.ll
-; redis/optimized/bitmap.sym.ll
 ; redis/optimized/malloc_io.ll
 ; redis/optimized/malloc_io.sym.ll
 ; redis/optimized/rax.ll
@@ -171,12 +165,6 @@
 ; spike/optimized/ror.ll
 ; spike/optimized/rorw.ll
 ; stockfish/optimized/tbprobe.ll
-; tree-sitter-rs/optimized/18kt1xijwoc4jebp.ll
-; tree-sitter-rs/optimized/1o0ocmb45sbun3ez.ll
-; tree-sitter-rs/optimized/43qizak8uz8ar6lc.ll
-; tree-sitter-rs/optimized/55e7aotywrgrb7st.ll
-; tree-sitter-rs/optimized/5e4w8uibwrcl4d4a.ll
-; tree-sitter-rs/optimized/76by25jz7vi08g1.ll
 ; velox/optimized/ArrayDuplicates.cpp.ll
 ; velox/optimized/AsyncDataCache.cpp.ll
 ; velox/optimized/BaseVector.cpp.ll
@@ -207,6 +195,7 @@
 ; yalantinglibs/optimized/file_server.cpp.ll
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
+; zed-rs/optimized/8y2n395sf7zaarcc3wfqoazez.ll
 ; zfp/optimized/bitstream.c.ll
 ; zstd/optimized/huf_compress.c.ll
 ; zstd/optimized/zstd_compress.c.ll
@@ -219,7 +208,7 @@ entry:
   ret i64 %2
 }
 
-; 290 occurrences:
+; 286 occurrences:
 ; abseil-cpp/optimized/examples_test.cc.ll
 ; abseil-cpp/optimized/generate_real_test.cc.ll
 ; abseil-cpp/optimized/randen_engine_test.cc.ll
@@ -228,6 +217,8 @@ entry:
 ; arrow/optimized/compare.cc.ll
 ; arrow/optimized/data.cc.ll
 ; arrow/optimized/float16.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/entropy_encode.c.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dense_cholesky.cc.ll
@@ -251,7 +242,6 @@ entry:
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
 ; darktable/optimized/introspection_clahe.c.ll
 ; darktable/optimized/introspection_liquify.c.ll
-; darktable/optimized/print_settings.c.ll
 ; darktable/optimized/snapshots.c.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll
@@ -270,15 +260,12 @@ entry:
 ; hdf5/optimized/H5Znbit.c.ll
 ; libquic/optimized/err.c.ll
 ; linux/optimized/acpi_lpit.ll
-; linux/optimized/cppc.ll
 ; linux/optimized/dir.ll
 ; linux/optimized/exfldio.ll
 ; linux/optimized/fatent.ll
-; linux/optimized/gen_estimator.ll
 ; linux/optimized/intel_bw.ll
 ; linux/optimized/intel_sseu.ll
 ; linux/optimized/io_pgtable_v2.ll
-; linux/optimized/maccess.ll
 ; linux/optimized/md-bitmap.ll
 ; linux/optimized/move_extent.ll
 ; linux/optimized/page_io.ll
@@ -319,7 +306,6 @@ entry:
 ; llvm/optimized/MemorySanitizer.cpp.ll
 ; llvm/optimized/ModuleSummaryAnalysis.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RISCVO0PreLegalizerCombiner.cpp.ll
 ; llvm/optimized/RISCVPostLegalizerCombiner.cpp.ll
@@ -393,12 +379,9 @@ entry:
 ; qemu/optimized/source_s_shiftRightJam256M.c.ll
 ; qemu/optimized/util_thread-context.c.ll
 ; quickjs/optimized/libbf.ll
-; redis/optimized/bin.ll
-; redis/optimized/bin.sym.ll
 ; redis/optimized/geohash.ll
 ; redis/optimized/geohash_helper.ll
 ; redis/optimized/rax.ll
-; ring-rs/optimized/4prppzcttbsz5zvc.ll
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; spike/optimized/f128_to_i64.ll
@@ -510,6 +493,8 @@ entry:
 ; wireshark/optimized/wireshark_main_window_slots.cpp.ll
 ; wireshark/optimized/wlan_statistics_dialog.cpp.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0) #0 {
 entry:
@@ -518,7 +503,8 @@ entry:
   ret i64 %2
 }
 
-; 36 occurrences:
+; 37 occurrences:
+; boost/optimized/approximately_equals.ll
 ; coreutils-rs/optimized/3stdugogn8b6evb1.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll

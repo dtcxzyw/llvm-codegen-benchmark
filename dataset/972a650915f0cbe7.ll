@@ -1,5 +1,6 @@
 
-; 1 occurrences:
+; 2 occurrences:
+; lz4/optimized/lz4hc.c.ll
 ; ruby/optimized/file.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(ptr %0, i64 %1, ptr %2) #0 {
@@ -12,7 +13,7 @@ entry:
   ret i64 %7
 }
 
-; 62 occurrences:
+; 61 occurrences:
 ; hermes/optimized/CharacterProperties.cpp.ll
 ; hermes/optimized/RegexParser.cpp.ll
 ; llvm/optimized/APINotesWriter.cpp.ll
@@ -40,7 +41,6 @@ entry:
 ; llvm/optimized/LTO.cpp.ll
 ; llvm/optimized/LTOModule.cpp.ll
 ; llvm/optimized/LegacyPassManager.cpp.ll
-; llvm/optimized/LiteralSupport.cpp.ll
 ; llvm/optimized/LiveInterval.cpp.ll
 ; llvm/optimized/LiveIntervals.cpp.ll
 ; llvm/optimized/LiveStacks.cpp.ll
@@ -60,7 +60,6 @@ entry:
 ; llvm/optimized/SafepointIRVerifier.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
-; llvm/optimized/SemaAttr.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; llvm/optimized/SlotIndexes.cpp.ll
 ; llvm/optimized/SourceManager.cpp.ll
@@ -71,16 +70,31 @@ entry:
 ; llvm/optimized/X86TargetMachine.cpp.ll
 ; llvm/optimized/YAMLParser.cpp.ll
 ; llvm/optimized/YAMLTraits.cpp.ll
+; luau/optimized/TypeInfer.cpp.ll
 ; lz4/optimized/lz4.c.ll
 ; nlohmann_json/optimized/unit-cbor.cpp.ll
 ; openusd/optimized/lz4.cpp.ll
 ; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
+define i64 @func000000000000000e(ptr %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %1
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 8
+  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  %7 = ptrtoint ptr %6 to i64
+  ret i64 %7
+}
+
+; 2 occurrences:
+; llvm/optimized/LiteralSupport.cpp.ll
+; llvm/optimized/SemaAttr.cpp.ll
+; Function Attrs: nounwind
 define i64 @func000000000000000a(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
-  %5 = getelementptr nusw i8, ptr %0, i64 8
+  %5 = getelementptr nusw i8, ptr %0, i64 -1
   %6 = getelementptr nusw i8, ptr %5, i64 %4
   %7 = ptrtoint ptr %6 to i64
   ret i64 %7

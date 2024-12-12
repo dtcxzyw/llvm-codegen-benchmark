@@ -1,9 +1,10 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; darktable/optimized/introspection_basicadj.c.ll
 ; gromacs/optimized/pme_spread.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
+; lvgl/optimized/lv_chart.ll
 ; meshlab/optimized/glarea.cpp.ll
 ; mitsuba3/optimized/imageblock.cpp.ll
 ; nori/optimized/block.cpp.ll

@@ -7,7 +7,7 @@ func000000000000000b:                   # @func000000000000000b
 	vmv1r.v	v0, v10
 	vadd.vi	v8, v8, 3, v0.t
 	ret
-func0000000000000023:                   # @func0000000000000023
+func00000000000000a3:                   # @func00000000000000a3
 	vsetivli	zero, 4, e8, mf4, ta, ma
 	vmv1r.v	v9, v0
 	li	a0, 27

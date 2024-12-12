@@ -17,14 +17,13 @@ entry:
   %1 = shl i32 %0, 10
   %2 = and i32 %1, 4096
   %3 = xor i32 %2, 4096
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; darktable/optimized/masks.c.ll
 ; hdf5/optimized/H5F.c.ll
-; hdf5/optimized/H5VLnative_file.c.ll
 ; icu/optimized/ucnvmbcs.ll
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
@@ -40,7 +39,7 @@ entry:
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0) #0 {
+define i32 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 248
   %2 = icmp eq i32 %1, 0

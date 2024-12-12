@@ -22,7 +22,7 @@ func0000000000000014:                   # @func0000000000000014
 	cmovlel	%esi, %eax
 	orl	$2, %eax
 	retq
-func0000000000000010:                   # @func0000000000000010
+func0000000000000030:                   # @func0000000000000030
 	movl	%edi, %eax
 	cmpl	$2, %edx
 	cmovbl	%esi, %eax
@@ -52,10 +52,22 @@ func000000000000000c:                   # @func000000000000000c
 	cmovnsl	%esi, %eax
 	orl	$67108864, %eax                 # imm = 0x4000000
 	retq
+func0000000000000031:                   # @func0000000000000031
+	movl	%edi, %eax
+	cmpl	$256, %edx                      # imm = 0x100
+	cmovbl	%esi, %eax
+	orl	$4, %eax
+	retq
 func0000000000000011:                   # @func0000000000000011
 	movl	%edi, %eax
 	cmpl	$256, %edx                      # imm = 0x100
 	cmovbl	%esi, %eax
+	orl	$4, %eax
+	retq
+func0000000000000029:                   # @func0000000000000029
+	movl	%edi, %eax
+	cmpl	$4194304, %edx                  # imm = 0x400000
+	cmovael	%esi, %eax
 	orl	$4, %eax
 	retq
 func000000000000000d:                   # @func000000000000000d

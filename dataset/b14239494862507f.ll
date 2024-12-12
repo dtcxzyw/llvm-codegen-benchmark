@@ -17,8 +17,8 @@ entry:
 }
 
 ; 9 occurrences:
+; boost/optimized/get_distance_measure.ll
 ; bullet3/optimized/b3VoronoiSimplexSolver.ll
-; bullet3/optimized/btGjkPairDetector.ll
 ; bullet3/optimized/btVoronoiSimplexSolver.ll
 ; darktable/optimized/introspection_toneequal.c.ll
 ; gromacs/optimized/gmx_analyze.cpp.ll
@@ -34,7 +34,9 @@ entry:
   ret i32 %3
 }
 
-; 2 occurrences:
+; 4 occurrences:
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; darktable/optimized/introspection_diffuse.c.ll
 ; nuklear/optimized/unity.c.ll
 ; Function Attrs: nounwind
@@ -45,7 +47,9 @@ entry:
   ret i32 %3
 }
 
-; 4 occurrences:
+; 6 occurrences:
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; darktable/optimized/introspection_lens.cc.ll
 ; libwebp/optimized/random_utils.c.ll
 ; opencv/optimized/histogramphaseunwrapping.cpp.ll

@@ -4,8 +4,14 @@ func000000000000001f:                   # @func000000000000001f
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
+func000000000000000b:                   # @func000000000000000b
+	andi	a2, a2, 248
+	slli	a2, a2, 8
+	or	a0, a0, a1
+	or	a0, a0, a2
+	ret
 func000000000000000f:                   # @func000000000000000f
-	andi	a2, a2, 224
+	andi	a2, a2, 252
 	slli	a2, a2, 3
 	or	a0, a0, a1
 	or	a0, a0, a2

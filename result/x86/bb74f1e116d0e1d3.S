@@ -8,17 +8,17 @@ func0000000000000018:                   # @func0000000000000018
 	setb	%al
 	orb	%dil, %al
 	retq
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	testq	%rsi, %rsi
 	sets	%al
 	orb	%dil, %al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	cmpq	$9, %rsi
 	setb	%al
 	orb	%dil, %al
 	retq
-func0000000000000030:                   # @func0000000000000030
+func0000000000000050:                   # @func0000000000000050
 	cmpq	$9, %rsi
 	setae	%al
 	orb	%dil, %al
@@ -35,7 +35,7 @@ func0000000000000002:                   # @func0000000000000002
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000054:                   # @func0000000000000054
 	testq	%rsi, %rsi
 	setns	%al
 	orb	%dil, %al

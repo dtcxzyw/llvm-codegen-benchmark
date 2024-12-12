@@ -24,7 +24,7 @@ entry:
   ret i64 %6
 }
 
-; 315 occurrences:
+; 316 occurrences:
 ; abseil-cpp/optimized/civil_time.cc.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time.cc.ll
@@ -102,7 +102,6 @@ entry:
 ; linux/optimized/io_apic.ll
 ; linux/optimized/libata-core.ll
 ; linux/optimized/libata-scsi.ll
-; linux/optimized/reciprocal_div.ll
 ; linux/optimized/transport.ll
 ; llvm/optimized/DataLayout.cpp.ll
 ; llvm/optimized/InstrProfWriter.cpp.ll
@@ -310,7 +309,6 @@ entry:
 ; rust-analyzer-rs/optimized/58xaix613yc6ngmz.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; spike/optimized/aes64ks1i.ll
-; spike/optimized/bf16_to_f32.ll
 ; spike/optimized/execute.ll
 ; spike/optimized/fdt.ll
 ; spike/optimized/fdt_ro.ll
@@ -338,7 +336,10 @@ entry:
 ; wireshark/optimized/pppdump.c.ll
 ; wireshark/optimized/tvbuff.c.ll
 ; wireshark/optimized/vwr.c.ll
-; z3/optimized/dd_bdd.cpp.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; zed-rs/optimized/etmluiftgqx5jpyivviyferrj.ll
 ; zxing/optimized/QRFormatInformation.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003f(i64 %0, i64 %1, i64 %2) #0 {
@@ -368,7 +369,7 @@ entry:
   ret i64 %6
 }
 
-; 80 occurrences:
+; 90 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
@@ -395,6 +396,7 @@ entry:
 ; linux/optimized/libata-core.ll
 ; llvm/optimized/CallingConvLower.cpp.ll
 ; luau/optimized/IrLoweringX64.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; nlohmann_json/optimized/unit-bjdata.cpp.ll
 ; nlohmann_json/optimized/unit-cbor.cpp.ll
 ; nlohmann_json/optimized/unit-msgpack.cpp.ll
@@ -431,8 +433,10 @@ entry:
 ; rust-analyzer-rs/optimized/3yqkws4dawqbgt35.ll
 ; rust-analyzer-rs/optimized/4nk4vk785ylcn5k7.ll
 ; rust-analyzer-rs/optimized/4xl67loow1v11x6s.ll
+; rust-analyzer-rs/optimized/55rapmz9wj276hro.ll
 ; rust-analyzer-rs/optimized/58xaix613yc6ngmz.ll
 ; spike/optimized/fdt_ro.ll
+; turborepo-rs/optimized/74s3x9u7hld928rwmttmetb1y.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/2ta8crc4qgl9bp8t.ll
@@ -448,6 +452,13 @@ entry:
 ; wireshark/optimized/peekclassic.c.ll
 ; wireshark/optimized/tvbuff.c.ll
 ; wireshark/optimized/vwr.c.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zxing/optimized/QRFormatInformation.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000002f(i64 %0, i64 %1, i64 %2) #0 {
@@ -459,7 +470,7 @@ entry:
   ret i64 %6
 }
 
-; 59 occurrences:
+; 69 occurrences:
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; folly/optimized/IPAddressV6.cpp.ll
@@ -509,6 +520,8 @@ entry:
 ; spike/optimized/sunpkd831.ll
 ; spike/optimized/sunpkd832.ll
 ; tls-rs/optimized/1pt3w3786vo2dyk0.ll
+; turborepo-rs/optimized/3wg34qzs64td8o5fq33fcg5rk.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; velox/optimized/ComplexVector.cpp.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
@@ -519,6 +532,14 @@ entry:
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; wireshark/optimized/packet-ptp.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/6pnl53dvchkj2615muwn1tztk.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003b(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -556,7 +577,7 @@ entry:
   %3 = shl nuw nsw i64 %2, 48
   %4 = shl nuw i64 %1, 56
   %5 = or disjoint i64 %4, %3
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   ret i64 %6
 }
 
@@ -638,6 +659,19 @@ entry:
   %4 = shl nuw nsw i64 %1, 8
   %5 = or disjoint i64 %4, %3
   %6 = or disjoint i64 %5, %0
+  ret i64 %6
+}
+
+; 2 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000020(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw i64 %2, 63
+  %4 = shl i64 %1, 52
+  %5 = or i64 %4, %3
+  %6 = or i64 %5, %0
   ret i64 %6
 }
 

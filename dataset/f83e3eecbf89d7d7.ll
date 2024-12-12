@@ -1,4 +1,17 @@
 
+; 3 occurrences:
+; cpython/optimized/dtoa.ll
+; opencv/optimized/cuda_test.cpp.ll
+; ruby/optimized/util.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
+entry:
+  %2 = or i32 %1, 1072693248
+  %3 = shl i32 %0, 20
+  %4 = add i32 %3, %2
+  ret i32 %4
+}
+
 ; 8 occurrences:
 ; cmake/optimized/huf_decompress.c.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
@@ -183,17 +196,6 @@ entry:
   %2 = shl nuw nsw i32 %1, 3
   %3 = or i32 %0, -16
   %4 = add nsw i32 %3, %2
-  ret i32 %4
-}
-
-; 1 occurrences:
-; opencv/optimized/cuda_test.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
-entry:
-  %2 = or i32 %1, -8
-  %3 = shl i32 %0, 3
-  %4 = add i32 %3, %2
   ret i32 %4
 }
 

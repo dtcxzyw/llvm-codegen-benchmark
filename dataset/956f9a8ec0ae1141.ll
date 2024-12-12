@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 24 occurrences:
 ; proj/optimized/conversion.cpp.ll
 ; quantlib/optimized/analyticcompoundoptionengine.ll
 ; quantlib/optimized/analytichestonengine.ll
@@ -14,7 +14,6 @@
 ; quantlib/optimized/concentrating1dmesher.ll
 ; quantlib/optimized/convolvedstudentt.ll
 ; quantlib/optimized/creditdefaultswap.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/gbsmrndcalculator.ll
 ; quantlib/optimized/hestonblackvolsurface.ll
 ; quantlib/optimized/impliedvolatility.ll
@@ -57,6 +56,18 @@ entry:
   %3 = fsub double %1, %2
   %4 = fcmp olt double %3, 0x3870000000000000
   %5 = fcmp olt double %0, 0x3870000000000000
+  %6 = or i1 %4, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; gromacs/optimized/forcetable.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000082(double %0, double %1, double %2) #0 {
+entry:
+  %3 = fsub double %1, %2
+  %4 = fcmp uno double %3, 0.000000e+00
+  %5 = fcmp ogt double %0, 0x471A36E2E0000000
   %6 = or i1 %4, %5
   ret i1 %6
 }
@@ -111,9 +122,10 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
+; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; Function Attrs: nounwind
 define i1 @func00000000000000c2(double %0, double %1, double %2) #0 {
 entry:

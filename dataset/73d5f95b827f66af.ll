@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/gc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000161(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 63
   %3 = lshr i64 %2, 6
@@ -106,7 +106,7 @@ entry:
 ; openssl/optimized/libdefault-lib-blake2s_prov.ll
 ; zstd/optimized/zstdmt_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 7
   %3 = lshr i64 %2, 3
@@ -123,7 +123,7 @@ entry:
 ; linux/optimized/i2c-i801.ll
 ; postgres/optimized/tsgistidx.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001b1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000361(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 17179869180
   %3 = lshr i64 %2, 3
@@ -166,13 +166,13 @@ entry:
 ; gromacs/optimized/gmx_dos.cpp.ll
 ; llvm/optimized/CombinerHelper.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001b4(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000374(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 4294967295
   %3 = lshr i64 %2, 1
   %4 = and i64 %3, 2147483647
   %5 = add nuw nsw i64 %0, 1
-  %6 = icmp ult i64 %5, %4
+  %6 = icmp samesign ult i64 %5, %4
   ret i1 %6
 }
 

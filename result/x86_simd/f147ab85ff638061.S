@@ -21,7 +21,7 @@ func0000000000000000:                   # @func0000000000000000
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$3, %edx, %xmm2, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 func000000000000000d:                   # @func000000000000000d
@@ -47,7 +47,7 @@ func000000000000000d:                   # @func000000000000000d
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$3, %edx, %xmm2, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 func0000000000000008:                   # @func0000000000000008
@@ -99,6 +99,6 @@ func000000000000000f:                   # @func000000000000000f
 	xorl	%edx, %edx
 	divl	%ecx
 	vpinsrd	$3, %edx, %xmm2, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq

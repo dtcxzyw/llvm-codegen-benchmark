@@ -1,5 +1,5 @@
 
-; 516 occurrences:
+; 514 occurrences:
 ; arrow/optimized/array_base.cc.ll
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/array_nested.cc.ll
@@ -106,7 +106,6 @@
 ; hyperscan/optimized/block.c.ll
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/catchup.c.ll
-; hyperscan/optimized/init.c.ll
 ; hyperscan/optimized/mpv.c.ll
 ; hyperscan/optimized/ng_width.cpp.ll
 ; hyperscan/optimized/program_runtime.c.ll
@@ -179,7 +178,6 @@
 ; linux/optimized/show_mem.ll
 ; linux/optimized/skl_watermark.ll
 ; linux/optimized/sta_info.ll
-; linux/optimized/support.ll
 ; linux/optimized/virtio_input.ll
 ; linux/optimized/xarray.ll
 ; linux/optimized/yenta_socket.ll
@@ -255,6 +253,12 @@
 ; luajit/optimized/lj_str_dyn.ll
 ; luajit/optimized/lj_strscan.ll
 ; luajit/optimized/lj_strscan_dyn.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; meshlab/optimized/MarchingCubes.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
@@ -263,7 +267,6 @@
 ; minetest/optimized/guiButton.cpp.ll
 ; minetest/optimized/imagefilters.cpp.ll
 ; minetest/optimized/log.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
 ; mold/optimized/icf.cc.ALPHA.cc.ll
 ; mold/optimized/icf.cc.ARM32.cc.ll
@@ -308,8 +311,6 @@
 ; node/optimized/libnode.traced_value.ll
 ; node/optimized/linux.ll
 ; nori/optimized/nanovg.c.ll
-; nuttx/optimized/lib_syslog.c.ll
-; nuttx/optimized/lib_wcwidth.c.ll
 ; oiio/optimized/formatspec.cpp.ll
 ; oiio/optimized/icoinput.cpp.ll
 ; oiio/optimized/psdinput.cpp.ll
@@ -365,7 +366,6 @@
 ; postgres/optimized/bloomfilter.ll
 ; postgres/optimized/brin_bloom.ll
 ; postgres/optimized/catcache.ll
-; postgres/optimized/datapagemap.ll
 ; postgres/optimized/dbcommands.ll
 ; postgres/optimized/event_trigger.ll
 ; postgres/optimized/execExprInterp.ll
@@ -494,7 +494,6 @@
 ; wireshark/optimized/packet-lldp.c.ll
 ; wireshark/optimized/packet-mac-nr.c.ll
 ; wireshark/optimized/packet-mysql.c.ll
-; wireshark/optimized/packet-netanalyzer.c.ll
 ; wireshark/optimized/packet-ocfs2.c.ll
 ; wireshark/optimized/packet-oer.c.ll
 ; wireshark/optimized/packet-pdcp-lte.c.ll
@@ -502,7 +501,6 @@
 ; wireshark/optimized/packet-per.c.ll
 ; wireshark/optimized/packet-pldm.c.ll
 ; wireshark/optimized/packet-sbus.c.ll
-; wireshark/optimized/packet-sita.c.ll
 ; wireshark/optimized/packet-tds.c.ll
 ; wireshark/optimized/packet-ua3g.c.ll
 ; wireshark/optimized/packet-umts_fp.c.ll
@@ -520,12 +518,12 @@
 define i1 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
 
-; 104 occurrences:
+; 105 occurrences:
 ; arrow/optimized/array_base.cc.ll
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/array_nested.cc.ll
@@ -609,6 +607,7 @@ entry:
 ; llvm/optimized/X86InstructionSelector.cpp.ll
 ; llvm/optimized/X86MCTargetDesc.cpp.ll
 ; llvm/optimized/X86RegisterInfo.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; openjdk/optimized/hb-unicode.ll
 ; openjdk/optimized/pngrtran.ll
@@ -634,7 +633,7 @@ entry:
 define i1 @func000000000000000c(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp ne i32 %3, 0
   ret i1 %4
 }
@@ -659,32 +658,21 @@ entry:
 ; stockfish/optimized/search.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp eq i32 %3, 0
-  ret i1 %4
-}
-
-; 1 occurrences:
-; sentencepiece/optimized/generated_message_table_driven_lite.cc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i8 %1) #0 {
-entry:
-  %2 = zext i8 %1 to i32
-  %3 = and i32 %2, %0
-  %4 = icmp ugt i32 %3, 127
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i8 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = icmp ne i32 %3, 0
   ret i1 %4
 }

@@ -8,3 +8,8 @@ func000000000000000b:                   # @func000000000000000b
 	movl	$5, %edx
 	subq	%rdi, %rdx
 	retq
+func000000000000000f:                   # @func000000000000000f
+	leaq	(%rsi,%rdi), %rax
+	movl	$3, %edx
+	subq	%rdi, %rdx
+	retq

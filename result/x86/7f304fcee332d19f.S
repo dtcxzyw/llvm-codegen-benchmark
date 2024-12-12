@@ -1,8 +1,8 @@
-func000000000000001e:                   # @func000000000000001e
+func000000000000001f:                   # @func000000000000001f
 	andl	$63, %esi
 	leaq	1(%rsi,%rdi), %rax
 	retq
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	andl	$-4, %esi
 	leal	-1(%rsi), %eax
 	addq	%rdi, %rax
@@ -16,12 +16,12 @@ func000000000000000c:                   # @func000000000000000c
 	decl	%eax
 	leaq	(%rdi,%rax,8), %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	andl	$-2, %esi
 	addl	$-4, %esi
 	leaq	(%rdi,%rsi,8), %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	andl	$268435455, %esi                # imm = 0xFFFFFFF
 	addl	$-5, %esi
 	leaq	(%rdi,%rsi,8), %rax

@@ -1,5 +1,5 @@
 
-; 34 occurrences:
+; 35 occurrences:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_list.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
@@ -19,6 +19,7 @@
 ; llvm/optimized/InstructionCombining.cpp.ll
 ; llvm/optimized/MacOSKeychainAPIChecker.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
+; lvgl/optimized/lv_ime_pinyin.ll
 ; meshlab/optimized/Scanner.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
@@ -39,19 +40,29 @@ define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = and i64 %2, 8589934584
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
-; slurm/optimized/gres_select_filter.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = and i64 %2, 4294967295
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
+  ret i1 %4
+}
+
+; 1 occurrences:
+; slurm/optimized/gres_select_filter.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+entry:
+  %2 = freeze i64 %1
+  %3 = and i64 %2, 2147483647
+  %4 = icmp samesign ult i64 %0, %3
   ret i1 %4
 }
 

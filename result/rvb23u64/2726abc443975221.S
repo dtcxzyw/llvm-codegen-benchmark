@@ -1,11 +1,11 @@
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	sext.w	a2, a2
 	add	a0, a0, a1
 	sub	a0, a0, a2
 	slti	a0, a0, 0
 	xori	a0, a0, 1
 	ret
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	sext.w	a2, a2
 	add	a0, a0, a1
 	sub	a0, a0, a2

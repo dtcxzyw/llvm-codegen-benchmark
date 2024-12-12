@@ -34,6 +34,19 @@ entry:
 }
 
 ; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000017(i16 %0, i8 %1) #0 {
+entry:
+  %2 = and i8 %1, -8
+  %3 = zext i8 %2 to i16
+  %4 = shl nuw i16 %3, 8
+  %5 = shl nuw nsw i16 %0, 3
+  %6 = or disjoint i16 %5, %4
+  ret i16 %6
+}
+
+; 1 occurrences:
 ; linux/optimized/yenta_socket.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000003d(i16 %0, i8 %1) #0 {

@@ -19,7 +19,7 @@
 ; wireshark/optimized/packet-ip.c.ll
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i1 %1) #0 {
+define i1 @func000000000000018c(i32 %0, i1 %1) #0 {
 entry:
   %2 = icmp ne i32 %0, 32
   %3 = and i1 %2, %1
@@ -34,7 +34,7 @@ entry:
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; oniguruma/optimized/regcomp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000186(i32 %0, i1 %1) #0 {
 entry:
   %2 = icmp ne i32 %0, -1
   %3 = and i1 %2, %1
@@ -47,7 +47,7 @@ entry:
 ; glslang/optimized/Initialize.cpp.ll
 ; quantlib/optimized/china.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a6(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000146(i32 %0, i1 %1) #0 {
 entry:
   %2 = add i32 %0, -1
   %3 = icmp ult i32 %2, 7
@@ -55,15 +55,16 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; eastl/optimized/EAString.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; postgres/optimized/parse_relation.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i32 %0, i1 %1) #0 {
+define i1 @func00000000000000cc(i32 %0, i1 %1) #0 {
 entry:
-  %2 = icmp slt i32 %0, 0
-  %3 = and i1 %2, %1
-  %4 = icmp ne i32 %0, -6
+  %2 = icmp slt i32 %0, 180
+  %3 = and i1 %1, %2
+  %4 = icmp ne i32 %0, 0
   %5 = and i1 %4, %3
   ret i1 %5
 }

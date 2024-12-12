@@ -125,17 +125,6 @@ entry:
 }
 
 ; 1 occurrences:
-; clamav/optimized/phishcheck.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
-entry:
-  %2 = sub i64 %1, %0
-  %3 = trunc i64 %2 to i32
-  %4 = icmp ugt i32 %3, -7
-  ret i1 %4
-}
-
-; 1 occurrences:
 ; imgui/optimized/imgui.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i64 %0, i64 %1) #0 {

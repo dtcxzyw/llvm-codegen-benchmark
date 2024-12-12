@@ -16,7 +16,7 @@ func0000000000000002:                   # @func0000000000000002
 func0000000000000000:                   # @func0000000000000000
 	imull	%edx, %esi
 	leal	(%rsi,%rdi), %eax
-	sarl	%eax
+	sarl	$18, %eax
 	retq
 func000000000000001a:                   # @func000000000000001a
 	imull	%edx, %esi

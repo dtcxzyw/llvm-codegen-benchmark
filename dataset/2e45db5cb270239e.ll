@@ -1,39 +1,39 @@
 
-%"class.std::vector.71.2887811" = type { %"struct.std::_Vector_base.72.2887812" }
-%"struct.std::_Vector_base.72.2887812" = type { %"struct.std::_Vector_base<(anonymous namespace)::StringPacker<unsigned char>::Overlap, std::allocator<(anonymous namespace)::StringPacker<unsigned char>::Overlap>>::_Vector_impl.2887813" }
-%"struct.std::_Vector_base<(anonymous namespace)::StringPacker<unsigned char>::Overlap, std::allocator<(anonymous namespace)::StringPacker<unsigned char>::Overlap>>::_Vector_impl.2887813" = type { %"struct.std::_Vector_base<(anonymous namespace)::StringPacker<unsigned char>::Overlap, std::allocator<(anonymous namespace)::StringPacker<unsigned char>::Overlap>>::_Vector_impl_data.2887814" }
-%"struct.std::_Vector_base<(anonymous namespace)::StringPacker<unsigned char>::Overlap, std::allocator<(anonymous namespace)::StringPacker<unsigned char>::Overlap>>::_Vector_impl_data.2887814" = type { ptr, ptr, ptr }
-%"struct.(anonymous namespace)::Versioned.2974935" = type { %"class.llvm::VersionTuple.2974936", %"struct.(anonymous namespace)::TopLevelItems.2974881" }
-%"class.llvm::VersionTuple.2974936" = type { i64, i64 }
-%"struct.(anonymous namespace)::TopLevelItems.2974881" = type { %"class.std::vector.2974884", %"class.std::vector.2974884", %"class.std::vector.0.2974885", %"class.std::vector.5.2974886", %"class.std::vector.10.2974887", %"class.std::vector.15.2974888", %"class.std::vector.20.2974889", %"class.std::vector.25.2974890" }
-%"class.std::vector.2974884" = type { %"struct.std::_Vector_base.2974891" }
-%"struct.std::_Vector_base.2974891" = type { %"struct.std::_Vector_base<(anonymous namespace)::Class, std::allocator<(anonymous namespace)::Class>>::_Vector_impl.2974892" }
-%"struct.std::_Vector_base<(anonymous namespace)::Class, std::allocator<(anonymous namespace)::Class>>::_Vector_impl.2974892" = type { %"struct.std::_Vector_base<(anonymous namespace)::Class, std::allocator<(anonymous namespace)::Class>>::_Vector_impl_data.2974893" }
-%"struct.std::_Vector_base<(anonymous namespace)::Class, std::allocator<(anonymous namespace)::Class>>::_Vector_impl_data.2974893" = type { ptr, ptr, ptr }
-%"class.std::vector.0.2974885" = type { %"struct.std::_Vector_base.1.2974894" }
-%"struct.std::_Vector_base.1.2974894" = type { %"struct.std::_Vector_base<(anonymous namespace)::Function, std::allocator<(anonymous namespace)::Function>>::_Vector_impl.2974895" }
-%"struct.std::_Vector_base<(anonymous namespace)::Function, std::allocator<(anonymous namespace)::Function>>::_Vector_impl.2974895" = type { %"struct.std::_Vector_base<(anonymous namespace)::Function, std::allocator<(anonymous namespace)::Function>>::_Vector_impl_data.2974896" }
-%"struct.std::_Vector_base<(anonymous namespace)::Function, std::allocator<(anonymous namespace)::Function>>::_Vector_impl_data.2974896" = type { ptr, ptr, ptr }
-%"class.std::vector.5.2974886" = type { %"struct.std::_Vector_base.6.2974897" }
-%"struct.std::_Vector_base.6.2974897" = type { %"struct.std::_Vector_base<(anonymous namespace)::GlobalVariable, std::allocator<(anonymous namespace)::GlobalVariable>>::_Vector_impl.2974898" }
-%"struct.std::_Vector_base<(anonymous namespace)::GlobalVariable, std::allocator<(anonymous namespace)::GlobalVariable>>::_Vector_impl.2974898" = type { %"struct.std::_Vector_base<(anonymous namespace)::GlobalVariable, std::allocator<(anonymous namespace)::GlobalVariable>>::_Vector_impl_data.2974899" }
-%"struct.std::_Vector_base<(anonymous namespace)::GlobalVariable, std::allocator<(anonymous namespace)::GlobalVariable>>::_Vector_impl_data.2974899" = type { ptr, ptr, ptr }
-%"class.std::vector.10.2974887" = type { %"struct.std::_Vector_base.11.2974900" }
-%"struct.std::_Vector_base.11.2974900" = type { %"struct.std::_Vector_base<(anonymous namespace)::EnumConstant, std::allocator<(anonymous namespace)::EnumConstant>>::_Vector_impl.2974901" }
-%"struct.std::_Vector_base<(anonymous namespace)::EnumConstant, std::allocator<(anonymous namespace)::EnumConstant>>::_Vector_impl.2974901" = type { %"struct.std::_Vector_base<(anonymous namespace)::EnumConstant, std::allocator<(anonymous namespace)::EnumConstant>>::_Vector_impl_data.2974902" }
-%"struct.std::_Vector_base<(anonymous namespace)::EnumConstant, std::allocator<(anonymous namespace)::EnumConstant>>::_Vector_impl_data.2974902" = type { ptr, ptr, ptr }
-%"class.std::vector.15.2974888" = type { %"struct.std::_Vector_base.16.2974903" }
-%"struct.std::_Vector_base.16.2974903" = type { %"struct.std::_Vector_base<(anonymous namespace)::Tag, std::allocator<(anonymous namespace)::Tag>>::_Vector_impl.2974904" }
-%"struct.std::_Vector_base<(anonymous namespace)::Tag, std::allocator<(anonymous namespace)::Tag>>::_Vector_impl.2974904" = type { %"struct.std::_Vector_base<(anonymous namespace)::Tag, std::allocator<(anonymous namespace)::Tag>>::_Vector_impl_data.2974905" }
-%"struct.std::_Vector_base<(anonymous namespace)::Tag, std::allocator<(anonymous namespace)::Tag>>::_Vector_impl_data.2974905" = type { ptr, ptr, ptr }
-%"class.std::vector.20.2974889" = type { %"struct.std::_Vector_base.21.2974906" }
-%"struct.std::_Vector_base.21.2974906" = type { %"struct.std::_Vector_base<(anonymous namespace)::Typedef, std::allocator<(anonymous namespace)::Typedef>>::_Vector_impl.2974907" }
-%"struct.std::_Vector_base<(anonymous namespace)::Typedef, std::allocator<(anonymous namespace)::Typedef>>::_Vector_impl.2974907" = type { %"struct.std::_Vector_base<(anonymous namespace)::Typedef, std::allocator<(anonymous namespace)::Typedef>>::_Vector_impl_data.2974908" }
-%"struct.std::_Vector_base<(anonymous namespace)::Typedef, std::allocator<(anonymous namespace)::Typedef>>::_Vector_impl_data.2974908" = type { ptr, ptr, ptr }
-%"class.std::vector.25.2974890" = type { %"struct.std::_Vector_base.26.2974909" }
-%"struct.std::_Vector_base.26.2974909" = type { %"struct.std::_Vector_base<(anonymous namespace)::Namespace, std::allocator<(anonymous namespace)::Namespace>>::_Vector_impl.2974910" }
-%"struct.std::_Vector_base<(anonymous namespace)::Namespace, std::allocator<(anonymous namespace)::Namespace>>::_Vector_impl.2974910" = type { %"struct.std::_Vector_base<(anonymous namespace)::Namespace, std::allocator<(anonymous namespace)::Namespace>>::_Vector_impl_data.2974911" }
-%"struct.std::_Vector_base<(anonymous namespace)::Namespace, std::allocator<(anonymous namespace)::Namespace>>::_Vector_impl_data.2974911" = type { ptr, ptr, ptr }
+%"class.std::vector.71.3082329" = type { %"struct.std::_Vector_base.72.3082330" }
+%"struct.std::_Vector_base.72.3082330" = type { %"struct.std::_Vector_base<(anonymous namespace)::StringPacker<unsigned char>::Overlap, std::allocator<(anonymous namespace)::StringPacker<unsigned char>::Overlap>>::_Vector_impl.3082331" }
+%"struct.std::_Vector_base<(anonymous namespace)::StringPacker<unsigned char>::Overlap, std::allocator<(anonymous namespace)::StringPacker<unsigned char>::Overlap>>::_Vector_impl.3082331" = type { %"struct.std::_Vector_base<(anonymous namespace)::StringPacker<unsigned char>::Overlap, std::allocator<(anonymous namespace)::StringPacker<unsigned char>::Overlap>>::_Vector_impl_data.3082332" }
+%"struct.std::_Vector_base<(anonymous namespace)::StringPacker<unsigned char>::Overlap, std::allocator<(anonymous namespace)::StringPacker<unsigned char>::Overlap>>::_Vector_impl_data.3082332" = type { ptr, ptr, ptr }
+%"struct.(anonymous namespace)::Versioned.3168424" = type { %"class.llvm::VersionTuple.3168425", %"struct.(anonymous namespace)::TopLevelItems.3168370" }
+%"class.llvm::VersionTuple.3168425" = type { i64, i64 }
+%"struct.(anonymous namespace)::TopLevelItems.3168370" = type { %"class.std::vector.3168373", %"class.std::vector.3168373", %"class.std::vector.0.3168374", %"class.std::vector.5.3168375", %"class.std::vector.10.3168376", %"class.std::vector.15.3168377", %"class.std::vector.20.3168378", %"class.std::vector.25.3168379" }
+%"class.std::vector.3168373" = type { %"struct.std::_Vector_base.3168380" }
+%"struct.std::_Vector_base.3168380" = type { %"struct.std::_Vector_base<(anonymous namespace)::Class, std::allocator<(anonymous namespace)::Class>>::_Vector_impl.3168381" }
+%"struct.std::_Vector_base<(anonymous namespace)::Class, std::allocator<(anonymous namespace)::Class>>::_Vector_impl.3168381" = type { %"struct.std::_Vector_base<(anonymous namespace)::Class, std::allocator<(anonymous namespace)::Class>>::_Vector_impl_data.3168382" }
+%"struct.std::_Vector_base<(anonymous namespace)::Class, std::allocator<(anonymous namespace)::Class>>::_Vector_impl_data.3168382" = type { ptr, ptr, ptr }
+%"class.std::vector.0.3168374" = type { %"struct.std::_Vector_base.1.3168383" }
+%"struct.std::_Vector_base.1.3168383" = type { %"struct.std::_Vector_base<(anonymous namespace)::Function, std::allocator<(anonymous namespace)::Function>>::_Vector_impl.3168384" }
+%"struct.std::_Vector_base<(anonymous namespace)::Function, std::allocator<(anonymous namespace)::Function>>::_Vector_impl.3168384" = type { %"struct.std::_Vector_base<(anonymous namespace)::Function, std::allocator<(anonymous namespace)::Function>>::_Vector_impl_data.3168385" }
+%"struct.std::_Vector_base<(anonymous namespace)::Function, std::allocator<(anonymous namespace)::Function>>::_Vector_impl_data.3168385" = type { ptr, ptr, ptr }
+%"class.std::vector.5.3168375" = type { %"struct.std::_Vector_base.6.3168386" }
+%"struct.std::_Vector_base.6.3168386" = type { %"struct.std::_Vector_base<(anonymous namespace)::GlobalVariable, std::allocator<(anonymous namespace)::GlobalVariable>>::_Vector_impl.3168387" }
+%"struct.std::_Vector_base<(anonymous namespace)::GlobalVariable, std::allocator<(anonymous namespace)::GlobalVariable>>::_Vector_impl.3168387" = type { %"struct.std::_Vector_base<(anonymous namespace)::GlobalVariable, std::allocator<(anonymous namespace)::GlobalVariable>>::_Vector_impl_data.3168388" }
+%"struct.std::_Vector_base<(anonymous namespace)::GlobalVariable, std::allocator<(anonymous namespace)::GlobalVariable>>::_Vector_impl_data.3168388" = type { ptr, ptr, ptr }
+%"class.std::vector.10.3168376" = type { %"struct.std::_Vector_base.11.3168389" }
+%"struct.std::_Vector_base.11.3168389" = type { %"struct.std::_Vector_base<(anonymous namespace)::EnumConstant, std::allocator<(anonymous namespace)::EnumConstant>>::_Vector_impl.3168390" }
+%"struct.std::_Vector_base<(anonymous namespace)::EnumConstant, std::allocator<(anonymous namespace)::EnumConstant>>::_Vector_impl.3168390" = type { %"struct.std::_Vector_base<(anonymous namespace)::EnumConstant, std::allocator<(anonymous namespace)::EnumConstant>>::_Vector_impl_data.3168391" }
+%"struct.std::_Vector_base<(anonymous namespace)::EnumConstant, std::allocator<(anonymous namespace)::EnumConstant>>::_Vector_impl_data.3168391" = type { ptr, ptr, ptr }
+%"class.std::vector.15.3168377" = type { %"struct.std::_Vector_base.16.3168392" }
+%"struct.std::_Vector_base.16.3168392" = type { %"struct.std::_Vector_base<(anonymous namespace)::Tag, std::allocator<(anonymous namespace)::Tag>>::_Vector_impl.3168393" }
+%"struct.std::_Vector_base<(anonymous namespace)::Tag, std::allocator<(anonymous namespace)::Tag>>::_Vector_impl.3168393" = type { %"struct.std::_Vector_base<(anonymous namespace)::Tag, std::allocator<(anonymous namespace)::Tag>>::_Vector_impl_data.3168394" }
+%"struct.std::_Vector_base<(anonymous namespace)::Tag, std::allocator<(anonymous namespace)::Tag>>::_Vector_impl_data.3168394" = type { ptr, ptr, ptr }
+%"class.std::vector.20.3168378" = type { %"struct.std::_Vector_base.21.3168395" }
+%"struct.std::_Vector_base.21.3168395" = type { %"struct.std::_Vector_base<(anonymous namespace)::Typedef, std::allocator<(anonymous namespace)::Typedef>>::_Vector_impl.3168396" }
+%"struct.std::_Vector_base<(anonymous namespace)::Typedef, std::allocator<(anonymous namespace)::Typedef>>::_Vector_impl.3168396" = type { %"struct.std::_Vector_base<(anonymous namespace)::Typedef, std::allocator<(anonymous namespace)::Typedef>>::_Vector_impl_data.3168397" }
+%"struct.std::_Vector_base<(anonymous namespace)::Typedef, std::allocator<(anonymous namespace)::Typedef>>::_Vector_impl_data.3168397" = type { ptr, ptr, ptr }
+%"class.std::vector.25.3168379" = type { %"struct.std::_Vector_base.26.3168398" }
+%"struct.std::_Vector_base.26.3168398" = type { %"struct.std::_Vector_base<(anonymous namespace)::Namespace, std::allocator<(anonymous namespace)::Namespace>>::_Vector_impl.3168399" }
+%"struct.std::_Vector_base<(anonymous namespace)::Namespace, std::allocator<(anonymous namespace)::Namespace>>::_Vector_impl.3168399" = type { %"struct.std::_Vector_base<(anonymous namespace)::Namespace, std::allocator<(anonymous namespace)::Namespace>>::_Vector_impl_data.3168400" }
+%"struct.std::_Vector_base<(anonymous namespace)::Namespace, std::allocator<(anonymous namespace)::Namespace>>::_Vector_impl_data.3168400" = type { ptr, ptr, ptr }
 
 ; 4 occurrences:
 ; gromacs/optimized/msd.cpp.ll
@@ -41,12 +41,12 @@
 ; hyperscan/optimized/goughcompile_accel.cpp.ll
 ; opencv/optimized/getlandmarks.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000012a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000012b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sdiv exact i64 %1, -24
   %3 = getelementptr nusw i8, ptr %0, i64 %1
-  %4 = getelementptr %"class.std::vector.71.2887811", ptr %3, i64 %.neg
-  %5 = getelementptr %"class.std::vector.71.2887811", ptr %4, i64 %2
+  %4 = getelementptr %"class.std::vector.71.3082329", ptr %3, i64 %.neg
+  %5 = getelementptr %"class.std::vector.71.3082329", ptr %4, i64 %2
   %6 = getelementptr i8, ptr %5, i64 48
   ret ptr %6
 }
@@ -57,12 +57,12 @@ entry:
 ; llvm/optimized/Multilib.cpp.ll
 ; llvm/optimized/TextStub.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000001ea(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func00000000000001eb(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sdiv exact i64 %1, -208
   %3 = getelementptr nusw i8, ptr %0, i64 %1
-  %4 = getelementptr %"struct.(anonymous namespace)::Versioned.2974935", ptr %3, i64 %.neg
-  %5 = getelementptr %"struct.(anonymous namespace)::Versioned.2974935", ptr %4, i64 %2
+  %4 = getelementptr %"struct.(anonymous namespace)::Versioned.3168424", ptr %3, i64 %.neg
+  %5 = getelementptr %"struct.(anonymous namespace)::Versioned.3168424", ptr %4, i64 %2
   %6 = getelementptr i8, ptr %5, i64 208
   ret ptr %6
 }

@@ -1,4 +1,4 @@
-func0000000000000058:                   // @func0000000000000058
+func00000000000000a8:                   // @func00000000000000a8
 // %bb.0:                               // %entry
 	mov	x9, #28087                      // =0x6db7
 	sub	x8, x0, x1
@@ -16,14 +16,14 @@ func0000000000000058:                   // @func0000000000000058
 	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000051:                   // @func0000000000000051
+func00000000000000a1:                   // @func00000000000000a1
 // %bb.0:                               // %entry
 	sub	x8, x0, x1
 	cmp	x8, #24
 	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000054:                   // @func0000000000000054
+func00000000000000a4:                   // @func00000000000000a4
 // %bb.0:                               // %entry
 	sub	x8, x0, x1
 	mov	x9, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
@@ -35,7 +35,19 @@ func0000000000000054:                   // @func0000000000000054
 	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000011:                   // @func0000000000000011
+func00000000000000b4:                   // @func00000000000000b4
+// %bb.0:                               // %entry
+	sub	x8, x0, x1
+	mov	x9, #-3689348814741910324       // =0xcccccccccccccccc
+	mov	x10, #1                         // =0x1
+	asr	x8, x8, #4
+	movk	x9, #52429
+	madd	x8, x8, x9, x10
+	cmp	x8, #6
+	cset	w0, lo
+	ret
+                                        // -- End function
+func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
 	sub	x8, x0, x1
 	sub	x8, x8, #24
@@ -43,7 +55,7 @@ func0000000000000011:                   // @func0000000000000011
 	cset	w0, lo
 	ret
                                         // -- End function
-func000000000000005c:                   // @func000000000000005c
+func00000000000000ac:                   // @func00000000000000ac
 // %bb.0:                               // %entry
 	sub	x8, x0, x1
 	cmn	x8, #40

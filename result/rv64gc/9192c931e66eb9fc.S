@@ -12,6 +12,13 @@ func000000000000003f:                   # @func000000000000003f
 	li	a0, 8
 	sllw	a0, a0, a1
 	ret
+func0000000000000002:                   # @func0000000000000002
+	slli	a0, a0, 2
+	li	a1, 24
+	subw	a1, a1, a0
+	li	a0, 1
+	sllw	a0, a0, a1
+	ret
 func0000000000000035:                   # @func0000000000000035
 	slli	a0, a0, 3
 	negw	a0, a0
@@ -23,13 +30,6 @@ func000000000000003e:                   # @func000000000000003e
 	li	a1, 28
 	subw	a1, a1, a0
 	li	a0, 15
-	sllw	a0, a0, a1
-	ret
-func0000000000000002:                   # @func0000000000000002
-	slli	a0, a0, 3
-	li	a1, 30
-	subw	a1, a1, a0
-	li	a0, 3
 	sllw	a0, a0, a1
 	ret
 func0000000000000000:                   # @func0000000000000000

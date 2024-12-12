@@ -1,10 +1,9 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; gromacs/optimized/gmx_current.cpp.ll
 ; gromacs/optimized/gmx_dos.cpp.ll
 ; gromacs/optimized/pme_error.cpp.ll
 ; meshlab/optimized/decorate_base.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/ml_default_decorators.cpp.ll
 ; msdfgen/optimized/MSDFErrorCorrection.cpp.ll
 ; msdfgen/optimized/sdf-error-estimation.cpp.ll

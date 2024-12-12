@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/hw_display_vga.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 32
   %4 = icmp eq i8 %3, 0
@@ -19,7 +19,7 @@ entry:
 ; memcached/optimized/memcached-proto_bin.ll
 ; memcached/optimized/memcached_debug-proto_bin.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 15
   %4 = icmp eq i8 %3, 1
@@ -28,11 +28,10 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
-; linux/optimized/mlme.ll
+; 1 occurrences:
 ; linux/optimized/pcm_lib.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 1
   %4 = icmp eq i8 %3, 0
@@ -44,7 +43,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/pcm_lib.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000121(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 2
   %4 = icmp eq i8 %3, 0
@@ -58,7 +57,7 @@ entry:
 ; lua/optimized/ldebug.ll
 ; redis/optimized/ldebug.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000181(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 1
   %4 = icmp ne i8 %3, 0

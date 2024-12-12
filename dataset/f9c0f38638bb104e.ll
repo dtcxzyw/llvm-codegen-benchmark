@@ -13,11 +13,21 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
-; grpc/optimized/rbac_service_config_parser.cc.ll
-; grpc/optimized/retry_service_config.cc.ll
+; 2 occurrences:
 ; wasmedge/optimized/canon.cpp.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000018(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = icmp samesign ugt i64 %0, %1
+  %5 = select i1 %4, i64 0, i64 %3
+  ret i64 %5
+}
+
+; 2 occurrences:
+; grpc/optimized/rbac_service_config_parser.cc.ll
+; grpc/optimized/retry_service_config.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1, i32 %2) #0 {
 entry:

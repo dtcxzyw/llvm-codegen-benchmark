@@ -1,4 +1,4 @@
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	leaq	2(%rdx,%rdx), %rax
 	leaq	1(%rdx,%rdx), %rcx
 	testb	$1, %sil
@@ -6,7 +6,7 @@ func0000000000000046:                   # @func0000000000000046
 	cmpq	%rdi, %rcx
 	setl	%al
 	retq
-func0000000000000164:                   # @func0000000000000164
+func00000000000002c4:                   # @func00000000000002c4
 	leaq	2(%rdx,%rdx), %rax
 	leaq	1(%rdx,%rdx), %rcx
 	testb	$1, %sil

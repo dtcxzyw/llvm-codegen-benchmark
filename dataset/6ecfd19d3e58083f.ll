@@ -3,7 +3,7 @@
 ; ruby/optimized/vm_trace.ll
 ; wireshark/optimized/packet-rtps.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i1 %1, i64 %2) #0 {
+define i1 @func000000000000018c(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = select i1 %3, i1 %1, i1 false
@@ -12,12 +12,10 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
-; openusd/optimized/stbImage.cpp.ll
-; raylib/optimized/rtextures.c.ll
+; 1 occurrences:
 ; yosys/optimized/ql_dsp_macc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 3
   %4 = select i1 %3, i1 %0, i1 false
@@ -30,7 +28,7 @@ entry:
 ; arrow/optimized/vector_selection_take_internal.cc.ll
 ; openusd/optimized/reconinter.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000181(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = select i1 %3, i1 %1, i1 false
@@ -42,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/collationfastlatinbuilder.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i32 %0, i1 %1, i64 %2) #0 {
+define i1 @func000000000000010c(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, 4294967295
   %4 = select i1 %3, i1 %1, i1 false
@@ -54,7 +52,7 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i1 %1, i64 %2) #0 {
+define i1 @func000000000000008c(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 5
   %4 = select i1 %3, i1 %1, i1 false

@@ -1,9 +1,8 @@
 
-; 31 occurrences:
+; 29 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; gromacs/optimized/compiler.cpp.ll
 ; linux/optimized/8139too.ll
-; linux/optimized/8250_dwlib.ll
 ; linux/optimized/addrconf.ll
 ; linux/optimized/cdrom.ll
 ; linux/optimized/commoncap.ll
@@ -26,7 +25,6 @@
 ; openssl/optimized/libcrypto-shlib-ui_lib.ll
 ; qemu/optimized/target_riscv_debug.c.ll
 ; redis/optimized/sentinel.ll
-; ruby/optimized/basicsocket.ll
 ; ruby/optimized/console.ll
 ; ruby/optimized/io.ll
 ; ruby/optimized/parse.ll

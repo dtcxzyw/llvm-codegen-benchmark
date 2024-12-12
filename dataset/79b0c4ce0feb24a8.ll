@@ -29,7 +29,7 @@ entry:
   ret i64 %3
 }
 
-; 16 occurrences:
+; 14 occurrences:
 ; abc/optimized/cuddLinear.c.ll
 ; hermes/optimized/dtoa.c.ll
 ; jq/optimized/jv_dtoa.ll
@@ -43,9 +43,7 @@ entry:
 ; openmpi/optimized/coll_basic_reduce_scatter.ll
 ; php/optimized/zend_strtod.ll
 ; quickjs/optimized/quickjs.ll
-; raylib/optimized/raudio.c.ll
 ; stb/optimized/stb_connected_components.c.ll
-; stb/optimized/stb_vorbis.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i32 %0) #0 {
 entry:

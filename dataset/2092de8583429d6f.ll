@@ -11,9 +11,19 @@ entry:
   ret i32 %5
 }
 
-; 8 occurrences:
+; 1 occurrences:
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = select i1 %1, i32 -1076, i32 %2
+  %4 = add i32 %0, %3
+  %5 = mul i32 %4, -1217359
+  ret i32 %5
+}
+
+; 7 occurrences:
 ; icu/optimized/gregocal.ll
-; icu/optimized/gregoimp.ll
 ; postgres/optimized/d2s.ll
 ; postgres/optimized/d2s_shlib.ll
 ; postgres/optimized/d2s_srv.ll
@@ -24,7 +34,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 -151, i32 %2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = mul nsw i32 %4, -1217359
   ret i32 %5
 }

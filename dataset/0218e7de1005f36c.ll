@@ -1,5 +1,5 @@
 
-; 258 occurrences:
+; 259 occurrences:
 ; abseil-cpp/optimized/spinlock_test_common.cc.ll
 ; arrow/optimized/key_hash.cc.ll
 ; arrow/optimized/key_hash_avx2.cc.ll
@@ -25,6 +25,7 @@
 ; bullet3/optimized/btOverlappingPairCache.ll
 ; bullet3/optimized/btSoftBody.ll
 ; bullet3/optimized/btSoftBodyConcaveCollisionAlgorithm.ll
+; clamav/optimized/Bra86.c.ll
 ; clamav/optimized/crypt.cpp.ll
 ; clamav/optimized/sha1.cpp.ll
 ; clamav/optimized/sha256.cpp.ll
@@ -33,6 +34,7 @@
 ; cmake/optimized/md4.c.ll
 ; cmake/optimized/sha1.c.ll
 ; cmake/optimized/sha256.c.ll
+; cmake/optimized/x86.c.ll
 ; coreutils-rs/optimized/4o7j3eorsq1l9mcp.ll
 ; cpython/optimized/Hacl_Hash_MD5.ll
 ; cpython/optimized/Hacl_Hash_SHA2.ll
@@ -95,6 +97,7 @@
 ; linux/optimized/workqueue.ll
 ; linux/optimized/xfrm_policy.ll
 ; linux/optimized/xfrm_state.ll
+; linux/optimized/xz_dec_bcj.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/MD5.cpp.ll
@@ -192,7 +195,6 @@
 ; spike/optimized/vsha2ms_vv.ll
 ; spike/optimized/vsm3c_vi.ll
 ; stb/optimized/stb_image_write.c.ll
-; stockfish/optimized/half_ka_v2_hm.ll
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; tokio-rs/optimized/1rl1r5ea6bzd5c9z.ll
@@ -205,7 +207,6 @@
 ; verilator/optimized/V3OrderMoveGraph.cpp.ll
 ; verilator/optimized/V3String.cpp.ll
 ; wasmtime-rs/optimized/2c2e8qj2oaih8jds.ll
-; wasmtime-rs/optimized/4t6wupogfkzcdkg8.ll
 ; wireshark/optimized/packet-gsm_sms.c.ll
 ; wireshark/optimized/wmem_map.c.ll
 ; wolfssl/optimized/md5.c.ll
@@ -262,7 +263,7 @@
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, %2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -318,7 +319,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, %2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 

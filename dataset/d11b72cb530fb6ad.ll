@@ -1,5 +1,5 @@
 
-; 171 occurrences:
+; 170 occurrences:
 ; ceres/optimized/canonical_views_clustering.cc.ll
 ; ceres/optimized/single_linkage_clustering.cc.ll
 ; ceres/optimized/visibility.cc.ll
@@ -163,7 +163,6 @@
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/tensor.cpp.ll

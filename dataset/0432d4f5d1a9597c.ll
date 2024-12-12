@@ -117,13 +117,12 @@ entry:
   ret i64 %3
 }
 
-; 58 occurrences:
+; 56 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
 ; cpython/optimized/_pickle.ll
-; cpython/optimized/pystrtod.ll
 ; delta-rs/optimized/3qkwqfk85qralejq.ll
 ; image-rs/optimized/2mngkegtim1o10y3.ll
 ; influxdb-rs/optimized/1s5ibqekmzia6ibu.ll
@@ -142,7 +141,6 @@ entry:
 ; qdrant-rs/optimized/pgs97hhgng8x0qz.ll
 ; raylib/optimized/rcore.c.ll
 ; redis/optimized/t_list.ll
-; rocksdb/optimized/clock_cache.cc.ll
 ; rust-analyzer-rs/optimized/12c5ozyvkyoo7zj1.ll
 ; rust-analyzer-rs/optimized/1r9ygi4s2x06bwuz.ll
 ; rust-analyzer-rs/optimized/1vx00lq5wtnxtv17.ll
@@ -179,8 +177,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
-  %2 = sub nsw i64 3, %1
-  %3 = select i1 %0, i64 %2, i64 2
+  %2 = sub nsw i64 0, %1
+  %3 = select i1 %0, i64 %2, i64 0
   ret i64 %3
 }
 

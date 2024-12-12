@@ -1,6 +1,12 @@
 
-; 42 occurrences:
-; abc/optimized/acbPush.c.ll
+%struct._ir_insn.2794585 = type { %struct.anon.2794586, %union.anon.5.2794587 }
+%struct.anon.2794586 = type { %union.anon.2794588, %union.anon.4.2794589 }
+%union.anon.2794588 = type { i32 }
+%union.anon.4.2794589 = type { i32 }
+%union.anon.5.2794587 = type { %union._ir_val.2794590 }
+%union._ir_val.2794590 = type { double }
+
+; 29 occurrences:
 ; abc/optimized/bmcMaj3.c.ll
 ; abc/optimized/giaEra.c.ll
 ; abc/optimized/giaSim.c.ll
@@ -14,36 +20,24 @@
 ; abc/optimized/satInter.c.ll
 ; bullet3/optimized/btMultiBody.ll
 ; casadi/optimized/cs_post.c.ll
+; casadi/optimized/cs_qr.c.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; cmake/optimized/huf_compress.c.ll
 ; faiss/optimized/IndexPQ.cpp.ll
 ; gromacs/optimized/mshift.cpp.ll
-; libwebp/optimized/webp_enc.c.ll
-; luau/optimized/lstrlib.cpp.ll
-; meshlab/optimized/filter_ssynth.cpp.ll
-; meshlab/optimized/io_x3d.cpp.ll
 ; oiio/optimized/Codec.cpp.ll
-; opencv/optimized/distransform.cpp.ll
-; opencv/optimized/dxt.cpp.ll
-; opencv/optimized/stereo_binary_sgbm.cpp.ll
-; opencv/optimized/stereosgbm.cpp.ll
 ; openjdk/optimized/klassVtable.ll
 ; openssl/optimized/libcrypto-lib-bn_shift.ll
 ; openssl/optimized/libcrypto-shlib-bn_shift.ll
 ; openusd/optimized/decodeframe.c.ll
-; openusd/optimized/fvarLevel.cpp.ll
 ; openusd/optimized/refinerFactory.cpp.ll
-; openusd/optimized/restoration.c.ll
 ; openusd/optimized/topologyDescriptor.cpp.ll
 ; php/optimized/zend_cfg.ll
-; php/optimized/zend_jit.ll
-; stb/optimized/stb_voxel_render.c.ll
 ; zstd/optimized/huf_compress.c.ll
-; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000001b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw i64, ptr %0, i64 %3
@@ -52,7 +46,7 @@ entry:
   ret ptr %6
 }
 
-; 144 occurrences:
+; 142 occurrences:
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/acbMfs.c.ll
 ; abc/optimized/acbPush.c.ll
@@ -64,7 +58,6 @@ entry:
 ; ceres/optimized/cgnr_solver.cc.ll
 ; ceres/optimized/iterative_schur_complement_solver.cc.ll
 ; ceres/optimized/schur_complement_solver.cc.ll
-; darktable/optimized/introspection_demosaic.c.ll
 ; g2o/optimized/solver_cholmod.cpp.ll
 ; g2o/optimized/solver_csparse.cpp.ll
 ; g2o/optimized/solver_dense.cpp.ll
@@ -190,7 +183,6 @@ entry:
 ; openssl/optimized/libcrypto-lib-bn_shift.ll
 ; openssl/optimized/libcrypto-shlib-bn_shift.ll
 ; openusd/optimized/fvarRefinement.cpp.ll
-; openusd/optimized/restoration.c.ll
 ; php/optimized/ir.ll
 ; raylib/optimized/raudio.c.ll
 ; recastnavigation/optimized/DetourDebugDraw.cpp.ll
@@ -198,7 +190,7 @@ entry:
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; slurm/optimized/opt.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000003b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw i64, ptr %0, i64 %3
@@ -207,18 +199,42 @@ entry:
   ret ptr %6
 }
 
-; 14 occurrences:
+; 15 occurrences:
+; abc/optimized/acbPush.c.ll
+; casadi/optimized/cs_qr.c.ll
+; libwebp/optimized/webp_enc.c.ll
+; luau/optimized/lstrlib.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; meshlab/optimized/filter_ssynth.cpp.ll
+; meshlab/optimized/io_x3d.cpp.ll
+; opencv/optimized/distransform.cpp.ll
+; opencv/optimized/dxt.cpp.ll
+; opencv/optimized/stereo_binary_sgbm.cpp.ll
+; opencv/optimized/stereosgbm.cpp.ll
+; openusd/optimized/fvarLevel.cpp.ll
+; php/optimized/zend_jit.ll
+; stb/optimized/stb_voxel_render.c.ll
+; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001a(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw %struct._ir_insn.2794585, ptr %0, i64 %3
+  %5 = getelementptr %struct._ir_insn.2794585, ptr %4, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 16
+  ret ptr %6
+}
+
+; 12 occurrences:
 ; darktable/optimized/common.c.ll
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
 ; darktable/optimized/introspection_colorchecker.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; openblas/optimized/dbdsqr.c.ll
-; openblas/optimized/dgetrf2.c.ll
 ; openblas/optimized/dgtts2.c.ll
 ; openblas/optimized/dlaein.c.ll
 ; openblas/optimized/dlalsd.c.ll
 ; openblas/optimized/dlansf.c.ll
-; openblas/optimized/dlasyf_aa.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; openblas/optimized/dsbtrd.c.ll
 ; wireshark/optimized/packet-catapult-dct2000.c.ll
@@ -249,6 +265,7 @@ entry:
 ; abc/optimized/blocksort.c.ll
 ; abc/optimized/cbaBlast.c.ll
 ; abc/optimized/cmdUtils.c.ll
+; abc/optimized/dauCanon.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; cmake/optimized/blocksort.c.ll
 ; cpython/optimized/ceval.ll
@@ -262,7 +279,6 @@ entry:
 ; openblas/optimized/dbbcsd.c.ll
 ; openblas/optimized/dbdsdc.c.ll
 ; openblas/optimized/dgesvd.c.ll
-; openblas/optimized/dggbak.c.ll
 ; openblas/optimized/dgghd3.c.ll
 ; openblas/optimized/dgtts2.c.ll
 ; openblas/optimized/dlaein.c.ll
@@ -286,54 +302,51 @@ entry:
   ret ptr %6
 }
 
-; 21 occurrences:
+; 1 occurrences:
 ; darktable/optimized/introspection_zonesystem.c.ll
-; gromacs/optimized/dgelq2.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003c(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw nuw float, ptr %0, i64 %3
+  %5 = getelementptr float, ptr %4, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 4
+  ret ptr %6
+}
+
+; 13 occurrences:
 ; gromacs/optimized/dlansy.cpp.ll
 ; gromacs/optimized/dsytrd.cpp.ll
-; gromacs/optimized/dtrti2.cpp.ll
-; gromacs/optimized/sgelq2.cpp.ll
 ; gromacs/optimized/slansy.cpp.ll
 ; gromacs/optimized/ssytrd.cpp.ll
-; gromacs/optimized/strti2.cpp.ll
 ; openblas/optimized/dhsein.c.ll
 ; openblas/optimized/dlaein.c.ll
-; openblas/optimized/dlasyf_aa.c.ll
-; openblas/optimized/dlatdf.c.ll
 ; openblas/optimized/dlatrs.c.ll
 ; openblas/optimized/dorbdb.c.ll
 ; openblas/optimized/dorbdb1.c.ll
 ; openblas/optimized/dorbdb2.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; openblas/optimized/dtgsen.c.ll
-; openblas/optimized/dtgsna.c.ll
 ; openblas/optimized/dtrsen.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000038(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw float, ptr %0, i64 %3
-  %5 = getelementptr float, ptr %4, i64 %1
-  %6 = getelementptr i8, ptr %5, i64 4
+  %4 = getelementptr nusw double, ptr %0, i64 %3
+  %5 = getelementptr double, ptr %4, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 8
   ret ptr %6
 }
 
-; 8 occurrences:
-; abc/optimized/giaEra.c.ll
-; abc/optimized/giaSim.c.ll
-; abc/optimized/giaSim2.c.ll
-; abc/optimized/giaSwitch.c.ll
-; abc/optimized/kitDsd.c.ll
-; abc/optimized/satInter.c.ll
-; casadi/optimized/cs_qr.c.ll
+; 1 occurrences:
 ; gromacs/optimized/gmx_arpack.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000012(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr i32, ptr %0, i64 %3
-  %5 = getelementptr i32, ptr %4, i64 %1
-  %6 = getelementptr i8, ptr %5, i64 -4
+  %4 = getelementptr double, ptr %0, i64 %3
+  %5 = getelementptr double, ptr %4, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 -8
   ret ptr %6
 }
 
@@ -372,10 +385,34 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/xtc3.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000032(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000033(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i32, ptr %0, i64 %3
+  %5 = getelementptr i32, ptr %4, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 4
+  ret ptr %6
+}
+
+; 1 occurrences:
+; openusd/optimized/restoration.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001e(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw nuw i32, ptr %0, i64 %3
+  %5 = getelementptr i32, ptr %4, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 -4
+  ret ptr %6
+}
+
+; 1 occurrences:
+; openusd/optimized/restoration.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003f(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw nuw i32, ptr %0, i64 %3
   %5 = getelementptr i32, ptr %4, i64 %1
   %6 = getelementptr i8, ptr %5, i64 4
   ret ptr %6

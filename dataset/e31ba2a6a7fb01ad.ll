@@ -65,7 +65,7 @@ entry:
 ; openmpi/optimized/schizo.ll
 ; openmpi/optimized/schizo_prte.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = freeze ptr %0
   %3 = getelementptr i16, ptr %2, i64 %1

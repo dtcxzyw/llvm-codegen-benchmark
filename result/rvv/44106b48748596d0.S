@@ -16,7 +16,7 @@ func0000000000000020:                   # @func0000000000000020
 	slli	a0, a0, 14
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v10, a0, v12
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	li	a0, 32
 	vsrl.vx	v10, v8, a0
 	vxor.vv	v8, v10, v8

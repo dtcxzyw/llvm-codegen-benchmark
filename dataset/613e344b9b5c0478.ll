@@ -3,7 +3,7 @@
 ; icu/optimized/ucnv.ll
 ; openjdk/optimized/filemap.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000014c(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
@@ -13,7 +13,7 @@ entry:
   ret i1 %7
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; grpc/optimized/xds_routing.cc.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/ArchiveWriter.cpp.ll
@@ -30,11 +30,10 @@ entry:
 ; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; llvm/optimized/TargetLibraryInfo.cpp.ll
-; nix/optimized/nix-env.ll
 ; protobuf/optimized/name_resolver.cc.ll
 ; quantlib/optimized/asx.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000018c(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3

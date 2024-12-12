@@ -58,16 +58,15 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; linux/optimized/deflate.ll
-; linux/optimized/huf_decompress.ll
 ; linux/optimized/intel_ddi.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl i32 %1, 16
-  %3 = add i32 %2, 33554432
-  %4 = shl nuw nsw i32 %0, 8
+  %2 = shl i32 %1, 12
+  %3 = add i32 %2, 1474888
+  %4 = shl nuw nsw i32 %0, 10
   %5 = or disjoint i32 %4, %3
   ret i32 %5
 }

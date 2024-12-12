@@ -13,8 +13,9 @@ entry:
   ret i1 %2
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; imgui/optimized/imgui.cpp.ll
+; lvgl/optimized/lv_draw_sw_img.ll
 ; postgres/optimized/common.ll
 ; qemu/optimized/block_block-copy.c.ll
 ; Function Attrs: nounwind

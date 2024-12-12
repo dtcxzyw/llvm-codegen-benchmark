@@ -1,6 +1,7 @@
 
 ; 55 occurrences:
 ; arrow/optimized/string-to-double.cc.ll
+; boost/optimized/area.ll
 ; cmake/optimized/cmCPackLog.cxx.ll
 ; double_conversion/optimized/string-to-double.cc.ll
 ; glslang/optimized/Initialize.cpp.ll
@@ -33,7 +34,6 @@
 ; openjdk/optimized/classFileParser.ll
 ; openjdk/optimized/dependencies.ll
 ; openjdk/optimized/pngread.ll
-; openmpi/optimized/monitoring_test.ll
 ; openmpi/optimized/nbc_ireduce.ll
 ; openmpi/optimized/pmix_iof.ll
 ; openssl/optimized/libssl-lib-extensions.ll
@@ -63,10 +63,13 @@ entry:
   ret i1 %2
 }
 
-; 63 occurrences:
+; 67 occurrences:
+; boost/optimized/within_pointlike_geometry.ll
 ; cmake/optimized/multi.c.ll
 ; cmake/optimized/zstd_decompress.c.ll
 ; curl/optimized/libcurl_la-multi.ll
+; darktable/optimized/introspection_invert.c.ll
+; darktable/optimized/introspection_temperature.c.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libwebp/optimized/bit_writer_utils.c.ll
 ; linux/optimized/ds.ll
@@ -126,6 +129,7 @@ entry:
 ; z3/optimized/nlsat_evaluator.cpp.ll
 ; z3/optimized/sat_local_search.cpp.ll
 ; z3/optimized/sat_xor_finder.cpp.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
 ; zstd/optimized/zstd_decompress.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i32 %0) #0 {
@@ -133,17 +137,6 @@ entry:
   %1 = and i32 %0, 32
   %.not = icmp eq i32 %1, 0
   ret i1 %.not
-}
-
-; 2 occurrences:
-; linux/optimized/nf_nat_sip.ll
-; luau/optimized/lgcdebug.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0) #0 {
-entry:
-  %1 = and i32 %0, 15
-  %2 = icmp ult i32 %1, 5
-  ret i1 %2
 }
 
 attributes #0 = { nounwind }

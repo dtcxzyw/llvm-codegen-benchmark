@@ -5,24 +5,22 @@ func000000000000000a:                   # @func000000000000000a
 	vmul.vx	v8, v10, a0
 	vmsgt.vi	v0, v8, 0
 	ret
-func00000000000000ca:                   # @func00000000000000ca
+func0000000000000184:                   # @func0000000000000184
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vnsrl.wi	v10, v8, 0
+	lui	a0, 10486
+	addi	a0, a0, -983
+	vmul.vx	v8, v10, a0
+	vmsltu.vx	v0, v8, a0
+	ret
+func000000000000018a:                   # @func000000000000018a
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
 	li	a0, 36
 	vmul.vx	v8, v10, a0
 	vmsgt.vi	v0, v8, 0
 	ret
-func00000000000000c4:                   # @func00000000000000c4
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v10, v8, 0
-	lui	a0, 244
-	addi	a0, a0, 575
-	vmul.vx	v8, v10, a0
-	lui	a0, 237
-	addi	a0, a0, 838
-	vmsltu.vx	v0, v8, a0
-	ret
-func00000000000000c8:                   # @func00000000000000c8
+func0000000000000188:                   # @func0000000000000188
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
 	lui	a0, 49
@@ -32,7 +30,7 @@ func00000000000000c8:                   # @func00000000000000c8
 	addi	a0, a0, -1635
 	vmsgtu.vx	v0, v8, a0
 	ret
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
 	lui	a0, 926933

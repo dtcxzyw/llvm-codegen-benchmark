@@ -21,7 +21,7 @@ entry:
   ret i32 %6
 }
 
-; 26 occurrences:
+; 25 occurrences:
 ; wireshark/optimized/packet-afp.c.ll
 ; wireshark/optimized/packet-atalk.c.ll
 ; wireshark/optimized/packet-bacnet.c.ll
@@ -45,7 +45,6 @@ entry:
 ; wireshark/optimized/packet-pktc.c.ll
 ; wireshark/optimized/packet-rtcp.c.ll
 ; wireshark/optimized/packet-sasp.c.ll
-; wireshark/optimized/packet-teap.c.ll
 ; wireshark/optimized/packet-tls-utils.c.ll
 ; wolfssl/optimized/asn.c.ll
 ; Function Attrs: nounwind

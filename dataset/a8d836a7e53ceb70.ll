@@ -1,25 +1,5 @@
 
 ; 8 occurrences:
-; cmake/optimized/zstd_fast.c.ll
-; git/optimized/revision.ll
-; hwloc/optimized/lstopo-lstopo-cairo.ll
-; libwebp/optimized/demux.c.ll
-; linux/optimized/dm-table.ll
-; openssl/optimized/asn1_internal_test-bin-asn1_internal_test.ll
-; wolfssl/optimized/client.c.ll
-; zstd/optimized/zstd_fast.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ne i32 %2, 0
-  %not. = xor i1 %1, true
-  %4 = select i1 %not., i1 %3, i1 false
-  %5 = icmp ne i32 %0, 0
-  %6 = select i1 %4, i1 %5, i1 false
-  ret i1 %6
-}
-
-; 8 occurrences:
 ; abc/optimized/giaCSat.c.ll
 ; abc/optimized/giaCSatP.c.ll
 ; abc/optimized/giaCTas.c.ll
@@ -29,7 +9,7 @@ entry:
 ; node/optimized/inet.ll
 ; openssl/optimized/openssl-bin-pkey.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %not. = xor i1 %1, true
@@ -50,7 +30,7 @@ entry:
 ; php/optimized/zend_compile.ll
 ; z3/optimized/sat_aig_cuts.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
   %not. = xor i1 %1, true
@@ -88,7 +68,7 @@ entry:
 ; meshlab/optimized/miniz.c.ll
 ; slurm/optimized/backfill.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 4
   %not. = xor i1 %1, true
@@ -98,10 +78,28 @@ entry:
   ret i1 %6
 }
 
+; 7 occurrences:
+; cmake/optimized/zstd_fast.c.ll
+; git/optimized/revision.ll
+; hwloc/optimized/lstopo-lstopo-cairo.ll
+; libwebp/optimized/demux.c.ll
+; linux/optimized/dm-table.ll
+; wolfssl/optimized/client.c.ll
+; zstd/optimized/zstd_fast.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000018c(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ne i32 %2, 0
+  %4 = select i1 %1, i1 true, i1 %3
+  %5 = icmp ne i32 %0, 0
+  %6 = select i1 %4, i1 %5, i1 false
+  ret i1 %6
+}
+
 ; 1 occurrences:
 ; slurm/optimized/select_linear.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000186(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 1
   %not. = xor i1 %1, true
@@ -114,7 +112,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/MemorySanitizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000101(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
   %not. = xor i1 %1, true
@@ -127,7 +125,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/DwarfDebug.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %2, 4
   %not. = xor i1 %1, true

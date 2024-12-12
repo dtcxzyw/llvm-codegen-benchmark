@@ -33,14 +33,20 @@ func0000000000000002:                   # @func0000000000000002
 	vpsubb	%xmm1, %xmm0, %xmm0
 	retq
 .LCPI6_0:
-	.zero	16,223
-func0000000000000001:                   # @func0000000000000001
+	.zero	16,248
+func000000000000000c:                   # @func000000000000000c
 	vpaddb	%xmm1, %xmm0, %xmm0
 	vpaddb	.LCPI6_0(%rip), %xmm0, %xmm0
 	retq
 .LCPI7_0:
+	.zero	16,223
+func0000000000000001:                   # @func0000000000000001
+	vpaddb	%xmm1, %xmm0, %xmm0
+	vpaddb	.LCPI7_0(%rip), %xmm0, %xmm0
+	retq
+.LCPI8_0:
 	.zero	16,243
 func000000000000000d:                   # @func000000000000000d
 	vpaddb	%xmm1, %xmm0, %xmm0
-	vpaddb	.LCPI7_0(%rip), %xmm0, %xmm0
+	vpaddb	.LCPI8_0(%rip), %xmm0, %xmm0
 	retq

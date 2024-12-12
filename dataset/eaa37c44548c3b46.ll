@@ -13,18 +13,19 @@
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/yjit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0) #0 {
+define i1 @func0000000000000024(i64 %0) #0 {
 entry:
   %1 = add i64 %0, 4294967296
   %2 = icmp sgt i64 %1, -1
   ret i1 %2
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/cmdline.ll
 ; folly/optimized/NestedCommandLineApp.cpp.ll
 ; folly/optimized/ProgramOptions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0) #0 {
+define i1 @func0000000000000068(i64 %0) #0 {
 entry:
   %1 = add i64 %0, -2305843009213693953
   %2 = icmp ult i64 %1, -2305843009213693945
@@ -34,7 +35,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/parse_manifest.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0) #0 {
+define i1 @func0000000000000066(i64 %0) #0 {
 entry:
   %1 = icmp slt i64 %0, 94489280512
   ret i1 %1
@@ -62,7 +63,7 @@ entry:
 ; sentencepiece/optimized/unigram_model.cc.ll
 ; velox/optimized/MmapAllocator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0) #0 {
+define i1 @func0000000000000028(i64 %0) #0 {
 entry:
   %1 = add i64 %0, 34359738368
   %2 = icmp slt i64 %1, 0
@@ -97,7 +98,7 @@ entry:
 ; llvm/optimized/GlobalISelMatchTable.cpp.ll
 ; stockfish/optimized/tbprobe.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i64 %0) #0 {
+define i1 @func000000000000006a(i64 %0) #0 {
 entry:
   %1 = icmp sgt i64 %0, 4
   ret i1 %1
@@ -107,37 +108,16 @@ entry:
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i64 %0) #0 {
+define i1 @func0000000000000046(i64 %0) #0 {
 entry:
   %1 = icmp slt i64 %0, 1021
   ret i1 %1
 }
 
-; 2 occurrences:
-; gromacs/optimized/pairlist.cpp.ll
-; llvm/optimized/ScalarEvolutionExpander.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0) #0 {
-entry:
-  %1 = add i64 %0, -8589934592
-  %2 = icmp sgt i64 %1, 0
-  ret i1 %2
-}
-
-; 2 occurrences:
-; llvm/optimized/ScalarEvolutionExpander.cpp.ll
-; opencv/optimized/qrcode_encoder.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0) #0 {
-entry:
-  %1 = add i64 %0, -8589934592
-  %2 = icmp slt i64 %1, 0
-  ret i1 %2
-}
-
-; 20 occurrences:
+; 21 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; arrow/optimized/uri.cc.ll
+; boost/optimized/area.ll
 ; freetype/optimized/ftbase.c.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
@@ -157,10 +137,32 @@ entry:
 ; openusd/optimized/resolver.cpp.ll
 ; pocketpy/optimized/str.cpp.ll
 ; Function Attrs: nounwind
+define i1 @func000000000000004a(i64 %0) #0 {
+entry:
+  %1 = icmp sgt i64 %0, 4
+  ret i1 %1
+}
+
+; 2 occurrences:
+; gromacs/optimized/pairlist.cpp.ll
+; llvm/optimized/ScalarEvolutionExpander.cpp.ll
+; Function Attrs: nounwind
 define i1 @func000000000000002a(i64 %0) #0 {
 entry:
-  %1 = icmp sgt i64 %0, 39
-  ret i1 %1
+  %1 = add i64 %0, -8589934592
+  %2 = icmp sgt i64 %1, 0
+  ret i1 %2
+}
+
+; 2 occurrences:
+; llvm/optimized/ScalarEvolutionExpander.cpp.ll
+; opencv/optimized/qrcode_encoder.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000026(i64 %0) #0 {
+entry:
+  %1 = add i64 %0, -8589934592
+  %2 = icmp slt i64 %1, 0
+  ret i1 %2
 }
 
 ; 3 occurrences:
@@ -188,7 +190,7 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/sequence_lock_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0) #0 {
+define i1 @func0000000000000044(i64 %0) #0 {
 entry:
   %1 = add nsw i64 %0, 3758096384
   %2 = icmp ult i64 %1, 141733920768
@@ -198,7 +200,7 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/sequence_lock_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0) #0 {
+define i1 @func0000000000000048(i64 %0) #0 {
 entry:
   %1 = icmp slt i64 %0, -3758096384
   ret i1 %1

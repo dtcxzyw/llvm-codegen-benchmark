@@ -1,14 +1,6 @@
-func0000000000000044:                   # @func0000000000000044
+func0000000000000141:                   # @func0000000000000141
 	movzbl	%dl, %eax
-	cmpq	%rsi, %rax
-	seta	%cl
-	cmpq	$19, %rdi
-	setb	%al
-	andb	%cl, %al
-	retq
-func00000000000000a1:                   # @func00000000000000a1
-	movzbl	%dl, %eax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%cl
 	cmpq	$2, %rsi
 	setge	%al

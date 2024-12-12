@@ -22,7 +22,7 @@ func000000000000000e:                   # @func000000000000000e
 	retq
 func000000000000000c:                   # @func000000000000000c
 	vpsllq	$8, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rdx
 	shrq	$9, %rdx

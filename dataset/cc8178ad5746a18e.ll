@@ -1,5 +1,6 @@
 
-; 29 occurrences:
+; 30 occurrences:
+; boost/optimized/src.ll
 ; cmake/optimized/cmDocumentationFormatter.cxx.ll
 ; cpython/optimized/ceval.ll
 ; darktable/optimized/introspection_demosaic.c.ll

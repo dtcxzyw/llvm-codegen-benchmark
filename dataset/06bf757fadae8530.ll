@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 28 occurrences:
 ; darktable/optimized/RawImageDataU16.cpp.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
@@ -18,6 +18,7 @@
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
 ; nanosvg/optimized/nanosvg.ll
 ; nuklear/optimized/unity.c.ll
+; php/optimized/crypt_sha256.ll
 ; qemu/optimized/tcg.c.ll
 ; raylib/optimized/rmodels.c.ll
 ; stb/optimized/stb_dxt.c.ll
@@ -36,11 +37,12 @@ entry:
   ret i32 %4
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; abc/optimized/mpmPre.c.ll
 ; bullet3/optimized/b3Solver.ll
 ; libwebp/optimized/picture_csp_enc.c.ll
 ; linux/optimized/i9xx_wm.ll
+; lvgl/optimized/lv_draw_sw_img.ll
 ; openjdk/optimized/IntArgbBm.ll
 ; openjdk/optimized/Ushort555Rgb.ll
 ; openjdk/optimized/Ushort565Rgb.ll
@@ -124,13 +126,14 @@ entry:
   ret i32 %4
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/lpkAbcMux.c.ll
 ; abc/optimized/lpkCut.c.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
+; boost/optimized/to_chars.ll
 ; libzmq/optimized/mtrie.cpp.ll
 ; libzmq/optimized/trie.cpp.ll
 ; postgres/optimized/utf8_and_gb18030.ll

@@ -18,7 +18,7 @@
 	.byte	12                              # 0xc
 	.byte	3                               # 0x3
 	.byte	14                              # 0xe
-func0000000000000118:                   # @func0000000000000118
+func0000000000000228:                   # @func0000000000000228
 	vpmovsxbd	.LCPI0_2(%rip), %ymm3   # ymm3 = [0,8,1,10,2,12,3,14]
 	vpermi2d	%ymm1, %ymm2, %ymm3
 	vpaddq	.LCPI0_1(%rip){1to4}, %ymm0, %ymm0

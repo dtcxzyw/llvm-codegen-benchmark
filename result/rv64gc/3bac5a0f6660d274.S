@@ -11,7 +11,7 @@ func0000000000000008:                   # @func0000000000000008
 	sltiu	a0, a0, 128
 	xori	a0, a0, 1
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	sraiw	a1, a1, 9
 	xor	a0, a0, a1
 	sext.w	a0, a0

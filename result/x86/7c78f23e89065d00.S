@@ -43,3 +43,13 @@ func0000000000000004:                   # @func0000000000000004
 	testb	$1, %dil
 	cmovnel	%edx, %eax
 	retq
+func0000000000000018:                   # @func0000000000000018
+	notb	%dl
+	movzbl	%dl, %eax
+	andl	$1, %eax
+	leal	1(%rax,%rax), %eax
+	testb	$1, %dil
+	cmovel	%esi, %eax
+	cmpl	$3, %eax
+	setae	%al
+	retq

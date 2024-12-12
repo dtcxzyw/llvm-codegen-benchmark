@@ -9,3 +9,13 @@ func0000000000000000:                   # @func0000000000000000
 	andq	$-64, %rax
 	negq	%rax
 	retq
+func0000000000000029:                   # @func0000000000000029
+	leaq	15(,%rdi,8), %rax
+	andq	$-16, %rax
+	negq	%rax
+	retq
+func0000000000000001:                   # @func0000000000000001
+	leaq	19(,%rdi,4), %rax
+	andq	$-16, %rax
+	negq	%rax
+	retq

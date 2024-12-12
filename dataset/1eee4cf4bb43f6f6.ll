@@ -59,12 +59,12 @@
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000aac(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000001fec(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw ptr, ptr %2, i64 %1
-  %4 = getelementptr nusw ptr, ptr %3, i64 %1
-  %5 = getelementptr nusw ptr, ptr %4, i64 %1
-  %6 = getelementptr nusw i8, ptr %0, i64 8
+  %3 = getelementptr nusw nuw ptr, ptr %2, i64 %1
+  %4 = getelementptr nusw nuw ptr, ptr %3, i64 %1
+  %5 = getelementptr nusw nuw ptr, ptr %4, i64 %1
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 8
   %7 = icmp ne ptr %6, %5
   ret i1 %7
 }
@@ -136,12 +136,12 @@ entry:
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000aa1(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000001fe1(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw ptr, ptr %2, i64 %1
-  %4 = getelementptr nusw ptr, ptr %3, i64 %1
-  %5 = getelementptr nusw ptr, ptr %4, i64 %1
-  %6 = getelementptr nusw i8, ptr %0, i64 8
+  %3 = getelementptr nusw nuw ptr, ptr %2, i64 %1
+  %4 = getelementptr nusw nuw ptr, ptr %3, i64 %1
+  %5 = getelementptr nusw nuw ptr, ptr %4, i64 %1
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 8
   %7 = icmp eq ptr %6, %5
   ret i1 %7
 }
@@ -150,12 +150,12 @@ entry:
 ; cmake/optimized/huf_decompress.c.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000aa4(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000001fe4(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 %1
-  %4 = getelementptr nusw i8, ptr %3, i64 %1
-  %5 = getelementptr nusw i8, ptr %4, i64 %1
-  %6 = getelementptr nusw i8, ptr %0, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 %1
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %1
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 1
   %7 = icmp ult ptr %6, %5
   ret i1 %7
 }

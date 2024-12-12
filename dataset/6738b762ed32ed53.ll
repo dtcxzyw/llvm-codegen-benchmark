@@ -1,10 +1,7 @@
 
-; 38 occurrences:
+; 35 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; cpython/optimized/obmalloc.ll
-; jemalloc/optimized/emap.ll
-; jemalloc/optimized/emap.pic.ll
-; jemalloc/optimized/emap.sym.ll
 ; linux/optimized/audit_tree.ll
 ; linux/optimized/cpu.ll
 ; luajit/optimized/lj_record.ll
@@ -39,9 +36,23 @@
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; Function Attrs: nounwind
+define i64 @func0000000000000006(ptr %0) #0 {
+entry:
+  %1 = getelementptr nusw nuw i8, ptr %0, i64 16
+  %2 = ptrtoint ptr %1 to i64
+  %3 = lshr i64 %2, 12
+  ret i64 %3
+}
+
+; 4 occurrences:
+; bdwgc/optimized/gc.c.ll
+; jemalloc/optimized/emap.ll
+; jemalloc/optimized/emap.pic.ll
+; jemalloc/optimized/emap.sym.ll
+; Function Attrs: nounwind
 define i64 @func0000000000000004(ptr %0) #0 {
 entry:
-  %1 = getelementptr nusw i8, ptr %0, i64 16
+  %1 = getelementptr nusw i8, ptr %0, i64 -8
   %2 = ptrtoint ptr %1 to i64
   %3 = lshr i64 %2, 12
   ret i64 %3
@@ -57,9 +68,9 @@ entry:
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000005(ptr %0) #0 {
+define i64 @func0000000000000007(ptr %0) #0 {
 entry:
-  %1 = getelementptr nusw i8, ptr %0, i64 96
+  %1 = getelementptr nusw nuw i8, ptr %0, i64 96
   %2 = ptrtoint ptr %1 to i64
   %3 = lshr exact i64 %2, 3
   ret i64 %3

@@ -64,7 +64,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/constraint_gpu_helpers.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = lshr exact i64 %0, 2
@@ -72,15 +72,17 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
+; 5 occurrences:
+; ceres/optimized/parameter_block_ordering.cc.ll
 ; linux/optimized/assoc_array.ll
 ; linux/optimized/tls.ll
+; opencv/optimized/slice_layer.cpp.ll
 ; typst-rs/optimized/p1dgiootfedk7bo.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = lshr exact i64 %0, 4
+  %3 = lshr exact i64 %0, 3
   %4 = icmp ugt i64 %3, %2
   ret i1 %4
 }
@@ -100,7 +102,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/basebackup.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = lshr exact i64 %0, 13
@@ -111,7 +113,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/geo_ops.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = lshr exact i64 %0, 4

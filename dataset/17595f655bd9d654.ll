@@ -10,7 +10,7 @@
 define i1 @func000000000000000a(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = ptrtoint ptr %1 to i64
   %6 = sub i64 %4, %5
   %7 = icmp sgt i64 %6, 0
@@ -25,7 +25,7 @@ entry:
 define i1 @func0000000000000006(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = ptrtoint ptr %1 to i64
   %6 = sub i64 %4, %5
   %7 = icmp slt i64 %6, 3
@@ -48,27 +48,22 @@ entry:
 define i1 @func0000000000000001(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = ptrtoint ptr %1 to i64
   %6 = icmp eq i64 %4, %5
   ret i1 %6
 }
 
-; 6 occurrences:
-; cmake/optimized/cookie.c.ll
-; curl/optimized/libcurl_la-cookie.ll
+; 1 occurrences:
 ; folly/optimized/Dump.cpp.ll
-; llvm/optimized/MicrosoftMangle.cpp.ll
-; proxygen/optimized/HTTPTransaction.cpp.ll
-; simdjson/optimized/simdjson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000018(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = ptrtoint ptr %1 to i64
   %6 = sub i64 %4, %5
-  %7 = icmp ugt i64 %6, 2147483647
+  %7 = icmp samesign ugt i64 %6, 2147483647
   ret i1 %7
 }
 
@@ -93,10 +88,27 @@ entry:
 define i1 @func0000000000000004(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = ptrtoint ptr %1 to i64
   %6 = sub i64 %4, %5
   %7 = icmp ult i64 %6, 3
+  ret i1 %7
+}
+
+; 5 occurrences:
+; cmake/optimized/cookie.c.ll
+; curl/optimized/libcurl_la-cookie.ll
+; llvm/optimized/MicrosoftMangle.cpp.ll
+; proxygen/optimized/HTTPTransaction.cpp.ll
+; simdjson/optimized/simdjson.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i64 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = add i64 %0, %3
+  %5 = ptrtoint ptr %1 to i64
+  %6 = sub i64 %4, %5
+  %7 = icmp ugt i64 %6, 1
   ret i1 %7
 }
 

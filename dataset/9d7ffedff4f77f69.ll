@@ -4,7 +4,7 @@
 ; openusd/optimized/bboxCache.cpp.ll
 ; openusd/optimized/pointInstancer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000068(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = ashr exact i64 %1, 5
@@ -13,9 +13,8 @@ entry:
   ret i1 %6
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; cvc5/optimized/string.cpp.ll
-; hyperscan/optimized/rose_build_add_mask.cpp.ll
 ; lief/optimized/Layout.cpp.ll
 ; opencv/optimized/benchmark.cpp.ll
 ; opencv/optimized/train_svmsgd.cpp.ll
@@ -23,7 +22,7 @@ entry:
 ; wasmedge/optimized/proxy.cpp.ll
 ; wasmedge/optimized/validator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = ashr exact i64 %1, 3

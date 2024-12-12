@@ -27,7 +27,7 @@ entry:
   ret i64 %4
 }
 
-; 14 occurrences:
+; 18 occurrences:
 ; eastl/optimized/BenchmarkHash.cpp.ll
 ; eastl/optimized/TestHash.cpp.ll
 ; hyperscan/optimized/ng_corpus_generator.cpp.ll
@@ -42,6 +42,10 @@ entry:
 ; rocksdb/optimized/volatile_tier_impl.cc.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; z3/optimized/check_relation.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/8mr81aw0ctvqdrbyiysor7awe.ll
+; zed-rs/optimized/ddwqyvi7204z7yxly1a7n0b57.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i32 %0, i64 %1) #0 {
 entry:
@@ -51,12 +55,11 @@ entry:
   ret i64 %4
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; clamav/optimized/arc4.c.ll
 ; eastl/optimized/TestFixedHash.cpp.ll
 ; eastl/optimized/TestHash.cpp.ll
 ; graphviz/optimized/triang.c.ll
-; linux/optimized/head64.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86InterleavedAccess.cpp.ll
 ; lua/optimized/ltable.ll
@@ -73,7 +76,7 @@ entry:
   ret i64 %4
 }
 
-; 20 occurrences:
+; 19 occurrences:
 ; eastl/optimized/TestFixedHash.cpp.ll
 ; eastl/optimized/TestHash.cpp.ll
 ; hyperscan/optimized/repeat.c.ll
@@ -82,7 +85,6 @@ entry:
 ; llvm/optimized/InstCombineVectorOps.cpp.ll
 ; llvm/optimized/Legalizer.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/Scalarizer.cpp.ll
 ; opencv/optimized/gapi_imgproc_perf_tests.cpp.ll

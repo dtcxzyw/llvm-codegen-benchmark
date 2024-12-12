@@ -5,7 +5,7 @@
 func0000000000000075:                   # @func0000000000000075
 	vpsllq	$16, %ymm2, %ymm2
 	vpternlogq	$236, .LCPI0_0(%rip){1to4}, %ymm1, %ymm2 # ymm2 = (ymm2 & mem) | ymm1
-	vpaddq	%ymm0, %ymm2, %ymm0
+	vpaddq	%ymm2, %ymm0, %ymm0
 	vpaddq	.LCPI0_1(%rip){1to4}, %ymm0, %ymm0
 	retq
 .LCPI1_0:
@@ -25,7 +25,7 @@ func000000000000007f:                   # @func000000000000007f
 func0000000000000070:                   # @func0000000000000070
 	vpsllq	$16, %ymm2, %ymm2
 	vpternlogq	$236, .LCPI2_0(%rip){1to4}, %ymm1, %ymm2 # ymm2 = (ymm2 & mem) | ymm1
-	vpaddq	%ymm0, %ymm2, %ymm0
+	vpaddq	%ymm2, %ymm0, %ymm0
 	vpaddq	.LCPI2_1(%rip){1to4}, %ymm0, %ymm0
 	retq
 .LCPI3_0:

@@ -1,5 +1,5 @@
 
-; 420 occurrences:
+; 418 occurrences:
 ; abseil-cpp/optimized/mutex.cc.ll
 ; abseil-cpp/optimized/mutex_test.cc.ll
 ; abseil-cpp/optimized/spinlock_test_common.cc.ll
@@ -8,6 +8,7 @@
 ; assimp/optimized/GenVertexNormalsProcess.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
+; boost/optimized/bind_stdin.ll
 ; bullet3/optimized/btDeformableMultiBodyDynamicsWorld.ll
 ; bullet3/optimized/btDiscreteDynamicsWorld.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -106,7 +107,6 @@
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libphonenumber/optimized/phonenumberutil_test.cc.ll
 ; libquic/optimized/json_writer.cc.ll
-; linux/optimized/8250_exar.ll
 ; linux/optimized/8250_port.ll
 ; linux/optimized/boot.ll
 ; linux/optimized/bus.ll
@@ -115,7 +115,6 @@
 ; linux/optimized/dmar.ll
 ; linux/optimized/drm_atomic_helper.ll
 ; linux/optimized/e1000_main.ll
-; linux/optimized/fec.ll
 ; linux/optimized/hda_auto_parser.ll
 ; linux/optimized/hrtimer.ll
 ; linux/optimized/hub.ll
@@ -132,12 +131,10 @@
 ; linux/optimized/irq.ll
 ; linux/optimized/libata-scsi.ll
 ; linux/optimized/loop.ll
-; linux/optimized/mii.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/ohci-hcd.ll
 ; linux/optimized/pci.ll
 ; linux/optimized/pcm_native.ll
-; linux/optimized/percpu-refcount.ll
 ; linux/optimized/policydb.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
 ; linux/optimized/rtnetlink.ll
@@ -152,9 +149,7 @@
 ; linux/optimized/tcp_ipv6.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/tree.ll
-; linux/optimized/utxface.ll
 ; linux/optimized/vc.ll
-; linux/optimized/wol.ll
 ; linux/optimized/xhci-debugfs.ll
 ; linux/optimized/xhci-hub.ll
 ; linux/optimized/xhci-trace.ll
@@ -225,7 +220,6 @@
 ; minetest/optimized/test_voxelalgorithms.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/x86formatter.cpp.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
@@ -284,7 +278,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/posix-source-accessor.ll
@@ -361,7 +354,6 @@
 ; qemu/optimized/fpu_softfloat.c.ll
 ; qemu/optimized/hw_char_serial.c.ll
 ; qemu/optimized/hw_ide_core.c.ll
-; qemu/optimized/hw_net_tulip.c.ll
 ; qemu/optimized/hw_net_vmxnet3.c.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; qemu/optimized/hw_pci_pci.c.ll
@@ -414,12 +406,18 @@
 ; yosys/optimized/alumacc.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; yosys/optimized/share.ll
 ; yosys/optimized/test_cell.ll
 ; z3/optimized/bound_propagator.cpp.ll
 ; z3/optimized/bound_simplifier.cpp.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i32 %0) #0 {
 entry:

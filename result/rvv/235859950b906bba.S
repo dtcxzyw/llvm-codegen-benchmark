@@ -14,7 +14,7 @@ func0000000000000008:                   # @func0000000000000008
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vfneg.v	v12, v12
 	vmflt.vv	v16, v12, v8
-	vmor.mm	v0, v16, v0
+	vmor.mm	v0, v0, v16
 	ret
 func000000000000001a:                   # @func000000000000001a
 	vsetivli	zero, 16, e32, m4, ta, ma

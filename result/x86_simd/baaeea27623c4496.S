@@ -30,16 +30,3 @@ func000000000000000c:                   # @func000000000000000c
 	vpcmpneqw	.LCPI2_0(%rip), %xmm0, %k0
 	vpmovm2d	%k0, %ymm0
 	retq
-.LCPI3_0:
-	.short	4999                            # 0x1387
-	.short	4999                            # 0x1387
-	.short	4999                            # 0x1387
-	.short	4999                            # 0x1387
-	.short	4999                            # 0x1387
-	.short	4999                            # 0x1387
-	.short	4999                            # 0x1387
-	.short	4999                            # 0x1387
-func0000000000000008:                   # @func0000000000000008
-	vpcmpnleuw	.LCPI3_0(%rip), %xmm0, %k0
-	vpmovm2d	%k0, %ymm0
-	retq

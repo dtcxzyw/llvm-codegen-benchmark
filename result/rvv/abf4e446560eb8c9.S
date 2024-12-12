@@ -1,4 +1,4 @@
-func0000000000000204:                   # @func0000000000000204
+func0000000000000404:                   # @func0000000000000404
 	li	a0, 10
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10
@@ -13,7 +13,7 @@ func0000000000000204:                   # @func0000000000000204
 	ret
 .LCPI1_0:
 	.quad	999999999999999999              # 0xde0b6b3a763ffff
-func0000000000000208:                   # @func0000000000000208
+func0000000000000408:                   # @func0000000000000408
 	li	a0, 10
 	lui	a1, %hi(.LCPI1_0)
 	ld	a1, %lo(.LCPI1_0)(a1)
@@ -23,7 +23,7 @@ func0000000000000208:                   # @func0000000000000208
 	vadd.vx	v8, v8, a0
 	vmsgtu.vx	v0, v8, a1
 	ret
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	li	a0, 10
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10
@@ -42,7 +42,7 @@ func0000000000000001:                   # @func0000000000000001
 	vrsub.vi	v8, v8, 0
 	vmseq.vv	v0, v12, v8
 	ret
-func0000000000000106:                   # @func0000000000000106
+func0000000000000206:                   # @func0000000000000206
 	li	a0, 10
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10
@@ -78,7 +78,7 @@ func000000000000000c:                   # @func000000000000000c
 	vadd.vx	v8, v8, a0
 	vmsne.vi	v0, v8, 1
 	ret
-func0000000000000206:                   # @func0000000000000206
+func0000000000000406:                   # @func0000000000000406
 	li	a0, 26
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10
@@ -93,7 +93,7 @@ func0000000000000006:                   # @func0000000000000006
 	vadd.vi	v8, v8, 7
 	vmsle.vi	v0, v8, -1
 	ret
-func0000000000000156:                   # @func0000000000000156
+func00000000000002a6:                   # @func00000000000002a6
 	lui	a0, 21
 	addiw	a0, a0, 384
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -104,7 +104,7 @@ func0000000000000156:                   # @func0000000000000156
 	vadd.vx	v8, v8, a0
 	vmsle.vi	v0, v8, -1
 	ret
-func000000000000010a:                   # @func000000000000010a
+func000000000000020a:                   # @func000000000000020a
 	li	a0, 10
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmacc.vx	v8, a0, v10

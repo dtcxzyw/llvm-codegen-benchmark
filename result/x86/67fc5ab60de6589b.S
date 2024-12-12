@@ -51,8 +51,3 @@ func0000000000000008:                   # @func0000000000000008
 	leaq	(%rdi,%rsi), %rax
 	orq	%rdx, %rax
 	retq
-func000000000000000f:                   # @func000000000000000f
-	leaq	(%rsi,%rdx), %rax
-	shlq	$32, %rdi
-	orq	%rdi, %rax
-	retq

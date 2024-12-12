@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; abc/optimized/sclLibScl.c.ll
 ; abc/optimized/timDump.c.ll
 ; duckdb/optimized/ub_duckdb_storage_statistics.cpp.ll
@@ -14,6 +14,7 @@
 ; stb/optimized/stb_tilemap_editor.c.ll
 ; wireshark/optimized/packet-mbtcp.c.ll
 ; wireshark/optimized/tvbuff.c.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:

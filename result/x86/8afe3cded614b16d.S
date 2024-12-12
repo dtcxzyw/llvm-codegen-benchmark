@@ -8,7 +8,7 @@ func0000000000000000:                   # @func0000000000000000
 	subl	%esi, %eax
 	addq	%rdi, %rax
 	retq
-func000000000000007e:                   # @func000000000000007e
+func000000000000007f:                   # @func000000000000007f
 	movl	$24, %eax
 	subl	%esi, %eax
 	addq	%rdi, %rax

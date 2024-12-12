@@ -52,7 +52,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, -1
-  %3 = add nsw i64 %2, %1
+  %3 = add nsw i64 %1, %2
   %4 = urem i64 %3, %0
   ret i64 %4
 }

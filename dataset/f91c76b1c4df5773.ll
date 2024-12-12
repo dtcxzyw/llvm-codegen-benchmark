@@ -1,10 +1,9 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; c3c/optimized/sema_casts.c.ll
 ; cmake/optimized/cmLinkLineDeviceComputer.cxx.ll
 ; llvm/optimized/LLParser.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
-; ocio/optimized/CDLOpData.cpp.ll
 ; quantlib/optimized/euribor.ll
 ; quantlib/optimized/eurlibor.ll
 ; quantlib/optimized/libor.ll
@@ -19,7 +18,7 @@ entry:
   ret i1 %3
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; ceres/optimized/gradient_problem_solver.cc.ll
 ; ceres/optimized/solver.cc.ll
 ; cmake/optimized/cmTarget.cxx.ll
@@ -27,7 +26,6 @@ entry:
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; llvm/optimized/X86MCInstLower.cpp.ll
 ; llvm/optimized/X86MnemonicTables.cpp.ll
-; ocio/optimized/CDLOpData.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i32 %0) #0 {
 entry:

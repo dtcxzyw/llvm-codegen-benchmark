@@ -1,7 +1,8 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; abc/optimized/giaMinLut2.c.ll
 ; cvc5/optimized/constraint.cpp.ll
+; diesel-rs/optimized/462o5qgxgzqa9ugn.ll
 ; diesel-rs/optimized/6qvzky2suxi9qri.ll
 ; linux/optimized/md.ll
 ; linux/optimized/memblock.ll

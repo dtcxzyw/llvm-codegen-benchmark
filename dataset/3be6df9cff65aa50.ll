@@ -1,9 +1,8 @@
 
-; 2 occurrences:
-; icu/optimized/normalizer2impl.ll
+; 1 occurrences:
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000068(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 2
   %3 = and i32 %2, 60
@@ -11,14 +10,26 @@ entry:
   ret i1 %4
 }
 
+; 2 occurrences:
+; icu/optimized/normalizer2impl.ll
+; qemu/optimized/hw_net_rtl8139.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000078(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl nuw nsw i32 %1, 2
+  %3 = and i32 %2, 60
+  %4 = icmp samesign ugt i32 %3, %0
+  ret i1 %4
+}
+
 ; 1 occurrences:
 ; lief/optimized/ecp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000074(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = and i32 %2, 254
-  %4 = icmp ult i32 %3, %0
+  %4 = icmp samesign ult i32 %3, %0
   ret i1 %4
 }
 
@@ -61,17 +72,16 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; icu/optimized/normalizer2impl.ll
-; linux/optimized/ich8lan.ll
 ; opencv/optimized/grfmt_tiff.cpp.ll
 ; recastnavigation/optimized/RecastArea.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = and i32 %2, 254
-  %4 = icmp ugt i32 %3, %0
+  %4 = icmp samesign ugt i32 %3, %0
   ret i1 %4
 }
 
@@ -88,11 +98,22 @@ entry:
   ret i1 %4
 }
 
+; 1 occurrences:
+; linux/optimized/ich8lan.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 9
+  %3 = and i32 %2, 33553920
+  %4 = icmp ugt i32 %3, %0
+  ret i1 %4
+}
+
 ; 2 occurrences:
 ; icu/optimized/normalizer2impl.ll
 ; linux/optimized/lifebook.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 2
   %3 = and i32 %2, 192

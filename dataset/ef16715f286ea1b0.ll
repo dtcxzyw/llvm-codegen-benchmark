@@ -1,12 +1,10 @@
 
-; 11 occurrences:
+; 9 occurrences:
 ; darktable/optimized/introspection_ashift.c.ll
 ; libjpeg-turbo/optimized/tjbench.c.ll
 ; memcached/optimized/memcached-slabs.ll
 ; memcached/optimized/memcached_debug-slabs.ll
 ; openblas/optimized/dgemmt.c.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtpttf.c.ll
 ; opencv/optimized/sparse_match_interpolators.cpp.ll
 ; openjdk/optimized/jfrStackTrace.ll
 ; ruby/optimized/strftime.ll

@@ -13,8 +13,7 @@ entry:
   ret i64 %6
 }
 
-; 8 occurrences:
-; eastl/optimized/TestChrono.cpp.ll
+; 7 occurrences:
 ; llvm/optimized/DebugInfoMetadata.cpp.ll
 ; llvm/optimized/Metadata.cpp.ll
 ; llvm/optimized/Type.cpp.ll

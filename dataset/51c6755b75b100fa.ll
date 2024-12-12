@@ -3,7 +3,7 @@
 ; openssl/optimized/libcrypto-lib-rsaz_exp_x2.ll
 ; openssl/optimized/libcrypto-shlib-rsaz_exp_x2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 6
   %3 = sext i32 %2 to i64
@@ -18,7 +18,7 @@ entry:
 ; abc/optimized/giaBound.c.ll
 ; soc-simulator/optimized/verilated.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 5
   %3 = sext i32 %2 to i64
@@ -31,7 +31,7 @@ entry:
 ; abc/optimized/giaPat2.c.ll
 ; linux/optimized/tcp_output.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 1
   %3 = sext i32 %2 to i64
@@ -45,7 +45,7 @@ entry:
 ; soc-simulator/optimized/verilated.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 5
   %3 = sext i32 %2 to i64
@@ -60,7 +60,7 @@ entry:
 ; opencv/optimized/dxt.cpp.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000e6(i64 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 1
   %3 = sext i32 %2 to i64

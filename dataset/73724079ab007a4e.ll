@@ -1,8 +1,7 @@
 
-; 39 occurrences:
+; 35 occurrences:
 ; c3c/optimized/sema_decls.c.ll
 ; clamav/optimized/filtering.c.ll
-; cpython/optimized/Hacl_Hash_SHA3.ll
 ; linux/optimized/interrupt.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/pmsr.ll
@@ -14,7 +13,6 @@
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/InstCombineCalls.cpp.ll
 ; llvm/optimized/LLVMTargetMachine.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
@@ -26,14 +24,12 @@
 ; luajit/optimized/lj_ffrecord_dyn.ll
 ; meshlab/optimized/filter_measure.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
-; mitsuba3/optimized/x86func.cpp.ll
 ; node/optimized/simdutf.ll
 ; openjdk/optimized/superword.ll
 ; openusd/optimized/obu.c.ll
 ; php/optimized/zend_jit_vm_helpers.ll
 ; postgres/optimized/tsquery.ll
 ; qemu/optimized/hw_ufs_ufs.c.ll
-; typst-rs/optimized/p1dgiootfedk7bo.ll
 ; velox/optimized/Sequence.cpp.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll

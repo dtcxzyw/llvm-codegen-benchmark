@@ -1,5 +1,5 @@
 
-; 34 occurrences:
+; 32 occurrences:
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
 ; draco/optimized/mesh_stripifier.cc.ll
 ; icu/optimized/calendar.ll
@@ -17,8 +17,6 @@
 ; openssl/optimized/libdefault-lib-argon2.ll
 ; php/optimized/pcre2_compile.ll
 ; postgres/optimized/data.ll
-; postgres/optimized/hashpage.ll
-; postgres/optimized/hashsort.ll
 ; postgres/optimized/varsup.ll
 ; raylib/optimized/raudio.c.ll
 ; wireshark/optimized/packet-dcerpc-netlogon.c.ll
@@ -37,34 +35,22 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add i32 %2, -1
-  %4 = select i1 %0, i32 %3, i32 %1
-  %5 = add i32 %4, 1
-  ret i32 %5
+  %3 = add i32 %1, 1
+  %4 = select i1 %0, i32 %2, i32 %3
+  ret i32 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; linux/optimized/ip_options.ll
 ; qemu/optimized/hw_net_e1000.c.ll
+; velox/optimized/PrestoSerializer.cpp.ll
 ; wireshark/optimized/packet-metamako.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nuw nsw i32 %2, 1
-  %4 = select i1 %0, i32 %3, i32 %1
-  %5 = add nsw i32 %4, -1
-  ret i32 %5
-}
-
-; 1 occurrences:
-; qemu/optimized/hw_net_can_ctucan_core.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000c(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nuw nsw i32 %2, 4
-  %4 = select i1 %0, i32 %3, i32 %1
-  %5 = add i32 %4, -4
-  ret i32 %5
+  %3 = add nsw i32 %1, -1
+  %4 = select i1 %0, i32 %2, i32 %3
+  ret i32 %4
 }
 
 ; 19 occurrences:
@@ -90,21 +76,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, -1
-  %4 = select i1 %0, i32 %3, i32 %1
-  %5 = add nsw i32 %4, 1
-  ret i32 %5
-}
-
-; 1 occurrences:
-; velox/optimized/Re2Functions.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add i32 %2, -1
-  %4 = select i1 %0, i32 %3, i32 %1
-  %5 = add nsw i32 %4, 1
-  ret i32 %5
+  %3 = add nsw i32 %1, 1
+  %4 = select i1 %0, i32 %2, i32 %3
+  ret i32 %4
 }
 
 ; 5 occurrences:
@@ -162,6 +136,17 @@ entry:
   %3 = add nuw nsw i32 %2, 2
   %4 = select i1 %0, i32 %3, i32 %1
   %5 = add nuw nsw i32 %4, 6
+  ret i32 %5
+}
+
+; 1 occurrences:
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw i32 %2, 1
+  %4 = select i1 %0, i32 %3, i32 %1
+  %5 = add i32 %4, 1
   ret i32 %5
 }
 

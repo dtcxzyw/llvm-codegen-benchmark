@@ -1,5 +1,5 @@
 
-; 157 occurrences:
+; 166 occurrences:
 ; abseil-cpp/optimized/inlined_vector_exception_safety_test.cc.ll
 ; cpython/optimized/crossinterp.ll
 ; duckdb/optimized/ub_duckdb_bind_tableref.cpp.ll
@@ -95,13 +95,10 @@
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -157,13 +154,39 @@
 ; nix/optimized/why-depends.ll
 ; nix/optimized/worker.ll
 ; recastnavigation/optimized/CrowdTool.cpp.ll
+; zed-rs/optimized/01a9u2e0i8wru57e54nrmyia7.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/5c6qu0nt7rwrjz6em8cry1wl2.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/89f8nno15240ug8tk8i1phh9j.ll
+; zed-rs/optimized/8h2d4a3i3ysegc1cht5hd5uc2.ll
+; zed-rs/optimized/9442bztux3sevpf574oh1aseo.ll
+; zed-rs/optimized/9lyxlodfxr6ds1lof2oq9jgs7.ll
+; zed-rs/optimized/bwvht24uf41c89mbhdihda1iu.ll
+; zed-rs/optimized/cu6jannw5ajqip9tl6sqjzagm.ll
+; zed-rs/optimized/en4jszg1hvtl62im6poo4zhnt.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000086(ptr %0, i64 %1, ptr %2) #0 {
+define ptr @func0000000000000187(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 128
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 128
   %4 = icmp eq i64 %1, 0
   %5 = select i1 %4, ptr %3, ptr %0
-  %6 = getelementptr nusw i8, ptr %5, i64 8
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 8
+  ret ptr %6
+}
+
+; 3 occurrences:
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/9lyxlodfxr6ds1lof2oq9jgs7.ll
+; zed-rs/optimized/diggdkpukg0xn23g7ivuh3jfw.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000184(ptr %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 24
+  %4 = icmp eq i64 %1, 2
+  %5 = select i1 %4, ptr %3, ptr %0
+  %6 = getelementptr i8, ptr %5, i64 8
   ret ptr %6
 }
 
@@ -182,12 +205,12 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/ds.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1, ptr %2) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 32
   %4 = icmp eq i64 %1, 0
   %5 = select i1 %4, ptr %3, ptr %0
-  %6 = getelementptr nusw i8, ptr %5, i64 8
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 8
   ret ptr %6
 }
 

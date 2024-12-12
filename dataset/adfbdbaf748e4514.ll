@@ -1,11 +1,13 @@
 
-%struct.GC_hblk_s.2591436 = type { [4096 x i8] }
-%"class.(anonymous namespace)::NonSwappableInstance.3284802" = type { %"class.absl::test_internal::BaseCountedInstance.base.3284518", [3 x i8] }
-%"class.absl::test_internal::BaseCountedInstance.base.3284518" = type <{ i32, i8 }>
+%struct.GC_hblk_s.2705275 = type { [4096 x i8] }
+%struct.DdNode.2876289 = type { i32, i32, ptr, %union.anon.2876290, i64 }
+%union.anon.2876290 = type { %struct.DdChildren.2876291 }
+%struct.DdChildren.2876291 = type { ptr, ptr }
+%struct.DdCache.2877286 = type { ptr, ptr, i64, ptr, i32 }
+%"class.(anonymous namespace)::NonSwappableInstance.3475238" = type { %"class.absl::test_internal::BaseCountedInstance.base.3474954", [3 x i8] }
+%"class.absl::test_internal::BaseCountedInstance.base.3474954" = type <{ i32, i8 }>
 
-; 564 occurrences:
-; abc/optimized/cuddCache.c.ll
-; abc/optimized/cuddTable.c.ll
+; 602 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_crc_test.cc.ll
@@ -17,11 +19,9 @@
 ; abseil-cpp/optimized/hash_generator_testing.cc.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/hashtablez_sampler_test.cc.ll
-; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; abseil-cpp/optimized/mutex_test.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; abseil-cpp/optimized/sample_recorder_test.cc.ll
-; abseil-cpp/optimized/str_cat_test.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; abseil-cpp/optimized/time_zone_impl.cc.ll
 ; abseil-cpp/optimized/waiter_test.cc.ll
@@ -29,6 +29,54 @@
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; assimp/optimized/COBLoader.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/attribute_name.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/env.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/extensions.ll
+; boost/optimized/filter_parser.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/run_exe.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/shared_work.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/sub_launcher.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/topology.ll
+; boost/optimized/visit.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
 ; casadi/optimized/casadi_c.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; casadi/optimized/mx_function.cpp.ll
@@ -52,7 +100,6 @@
 ; cmake/optimized/io.cpp.ll
 ; cmake/optimized/json_reader.cpp.ll
 ; cmake/optimized/session.cpp.ll
-; cmake/optimized/zstd_ldm.c.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cvc5/optimized/arith_ite_utils.cpp.ll
 ; cvc5/optimized/array_core_solver.cpp.ll
@@ -134,7 +181,6 @@
 ; duckdb/optimized/ub_duckdb_planner.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_checkpoint.cpp.ll
-; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_table.cpp.ll
 ; duckdb/optimized/ub_duckdb_transaction.cpp.ll
 ; eastl/optimized/TestAlgorithm.cpp.ll
@@ -177,7 +223,6 @@
 ; grpc/optimized/basic_work_queue.cc.ll
 ; grpc/optimized/rls.cc.ll
 ; grpc/optimized/server.cc.ll
-; grpc/optimized/work_serializer.cc.ll
 ; hermes/optimized/TracingRuntime.cpp.ll
 ; hyperscan/optimized/castlecompile.cpp.ll
 ; hyperscan/optimized/dfa_min.cpp.ll
@@ -233,7 +278,6 @@
 ; luau/optimized/Analyze.cpp.ll
 ; luau/optimized/Reduce.cpp.ll
 ; luau/optimized/TopoSortStatements.cpp.ll
-; luau/optimized/lnumprint.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_select.cpp.ll
@@ -299,7 +343,6 @@
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -326,7 +369,6 @@
 ; opencv/optimized/container_avi.cpp.ll
 ; opencv/optimized/contours_common.cpp.ll
 ; opencv/optimized/erfilter.cpp.ll
-; opencv/optimized/find_ellipses.cpp.ll
 ; opencv/optimized/gasync.cpp.ll
 ; opencv/optimized/gfluidbackend.cpp.ll
 ; opencv/optimized/gmodelbuilder.cpp.ll
@@ -390,6 +432,8 @@
 ; proxygen/optimized/HTTPTransaction.cpp.ll
 ; pybind11/optimized/test_stl.cpp.ll
 ; pybind11/optimized/test_stl_binders.cpp.ll
+; quantlib/optimized/date.ll
+; quantlib/optimized/fdminnervaluecalculator.ll
 ; re2/optimized/compile.cc.ll
 ; re2/optimized/dfa.cc.ll
 ; re2/optimized/mimics_pcre.cc.ll
@@ -557,7 +601,6 @@
 ; yosys/optimized/dft_tag.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/preproc.ll
 ; yosys/optimized/qbfsat.ll
 ; yosys/optimized/sta.ll
@@ -567,12 +610,26 @@
 ; z3/optimized/lar_core_solver.cpp.ll
 ; z3/optimized/static_matrix.cpp.ll
 ; z3/optimized/theory_str.cpp.ll
-; zstd/optimized/zstd_ldm.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000003e(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
-  %4 = getelementptr nusw ptr, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw ptr, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw ptr, ptr %4, i64 %0
+  %6 = getelementptr nusw i8, ptr %5, i64 -8
+  ret ptr %6
+}
+
+; 4 occurrences:
+; abseil-cpp/optimized/str_cat_test.cc.ll
+; eastl/optimized/TestDeque.cpp.ll
+; rocksdb/optimized/version_set.cc.ll
+; yalantinglibs/optimized/client.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003a(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = lshr i64 %2, 1
+  %4 = getelementptr nusw nuw ptr, ptr %1, i64 %3
   %5 = getelementptr nusw ptr, ptr %4, i64 %0
   %6 = getelementptr nusw i8, ptr %5, i64 -8
   ret ptr %6
@@ -586,24 +643,56 @@ entry:
 ; opencv/optimized/imgwarp.cpp.ll
 ; raylib/optimized/rmodels.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000020(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000030(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 12
-  %4 = getelementptr nusw %struct.GC_hblk_s.2591436, ptr %1, i64 %3
-  %5 = getelementptr %struct.GC_hblk_s.2591436, ptr %4, i64 %0
+  %4 = getelementptr nusw nuw %struct.GC_hblk_s.2705275, ptr %1, i64 %3
+  %5 = getelementptr %struct.GC_hblk_s.2705275, ptr %4, i64 %0
   %6 = getelementptr i8, ptr %5, i64 4096
   ret ptr %6
+}
+
+; 5 occurrences:
+; abc/optimized/cuddTable.c.ll
+; luau/optimized/lnumprint.cpp.ll
+; opencv/optimized/find_ellipses.cpp.ll
+; zed-rs/optimized/dqryhdkxpzkfeay9pjzpwnhia.ll
+; zed-rs/optimized/dtvy13he5qwv8e5jkwyblypio.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003f(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = lshr i64 %2, 3
+  %4 = getelementptr nusw nuw ptr, ptr %1, i64 %3
+  %5 = getelementptr nuw %struct.DdNode.2876289, ptr %4, i64 %0, i32 1
+  ret ptr %5
+}
+
+; 7 occurrences:
+; abc/optimized/cuddCache.c.ll
+; abseil-cpp/optimized/inlined_vector_test.cc.ll
+; cmake/optimized/zstd_ldm.c.ll
+; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
+; grpc/optimized/work_serializer.cc.ll
+; luau/optimized/lnumprint.cpp.ll
+; zstd/optimized/zstd_ldm.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003b(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = lshr i64 %2, 3
+  %4 = getelementptr nusw nuw ptr, ptr %1, i64 %3
+  %5 = getelementptr %struct.DdCache.2877286, ptr %4, i64 %0, i32 1
+  ret ptr %5
 }
 
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000003(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 6
   %4 = getelementptr i64, ptr %1, i64 %3
   %5 = getelementptr i64, ptr %4, i64 %0
-  %6 = getelementptr nusw i8, ptr %5, i64 16
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 16
   ret ptr %6
 }
 
@@ -635,10 +724,10 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000060(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000070(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 3
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 %0
   %6 = getelementptr i8, ptr %5, i64 16
   ret ptr %6
@@ -647,23 +736,78 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000007b(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 1
-  %4 = getelementptr nusw %"class.(anonymous namespace)::NonSwappableInstance.3284802", ptr %1, i64 %3
-  %5 = getelementptr %"class.(anonymous namespace)::NonSwappableInstance.3284802", ptr %4, i64 %0, i32 0, i32 1
+  %4 = getelementptr nusw nuw %"class.(anonymous namespace)::NonSwappableInstance.3475238", ptr %1, i64 %3
+  %5 = getelementptr %"class.(anonymous namespace)::NonSwappableInstance.3475238", ptr %4, i64 %0, i32 0, i32 1
+  ret ptr %5
+}
+
+; 33 occurrences:
+; zed-rs/optimized/08rfmg7gqi4939tj99psx2cc1.ll
+; zed-rs/optimized/0x2swxz4m93xo6c0jggy1zzvx.ll
+; zed-rs/optimized/13pr1pzdsvcd15h9bn5oaps4z.ll
+; zed-rs/optimized/1oqbug516qe1j9jzuop2d87nk.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/468dd38yzqjsa1zmcu5rd6jgo.ll
+; zed-rs/optimized/4wl6luh08kf5panbyu7di2k6e.ll
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
+; zed-rs/optimized/583y325aopre8a32cz1ntgg8y.ll
+; zed-rs/optimized/5wsk7wl322xg0y1u2gbq1r3rk.ll
+; zed-rs/optimized/5wz01y896jxljxzjbwo9cjiak.ll
+; zed-rs/optimized/6ekeyfm197maw5n7s1cbq34ws.ll
+; zed-rs/optimized/6r3dn74hs4qkhjs23erjoyfu5.ll
+; zed-rs/optimized/6sgfnscy7p01akiz795s6wpkk.ll
+; zed-rs/optimized/71cpo5c8gfob1nb30s7nlggwn.ll
+; zed-rs/optimized/78nr3ruxuq6h5rfkaolnxa52k.ll
+; zed-rs/optimized/7almbq0vtpgp7q0c9d6k1td97.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/8et4dphxwbm7ry4e21dik6h9d.ll
+; zed-rs/optimized/8ittejm142jp6pw24sbau2b8f.ll
+; zed-rs/optimized/8lmzon2kdaz83ocz8p00fckkv.ll
+; zed-rs/optimized/8yy2zhy2bdzv8bn57pipvxcw7.ll
+; zed-rs/optimized/9veql5nv8njiwoukz29yvwhob.ll
+; zed-rs/optimized/a0mwohwi8w2ksrje9uu757r3h.ll
+; zed-rs/optimized/avkcaupfon6sc5v4swrdwryed.ll
+; zed-rs/optimized/b8qgowmgtglca3x1tojob83nm.ll
+; zed-rs/optimized/bha0rxubsdhd11krbgdo6s87h.ll
+; zed-rs/optimized/cgceu28znx3lfd8ddk7c9uglp.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
+; zed-rs/optimized/cu6jannw5ajqip9tl6sqjzagm.ll
+; zed-rs/optimized/d3p7qidwwfiy8pzimmi7epq9h.ll
+; zed-rs/optimized/dqryhdkxpzkfeay9pjzpwnhia.ll
+; zed-rs/optimized/f1suy9miqr5txm7nzzcuw0lf4.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003c(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = lshr i64 %2, 1
+  %4 = getelementptr nusw nuw { i64, i64, i64, { i32, [2 x i32] }, i8, [3 x i8] }, ptr %1, i64 %3
+  %5 = getelementptr { i64, i64, i64, { i32, [2 x i32] }, i8, [3 x i8] }, ptr %4, i64 %0, i32 1
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000000b(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 63
   %4 = getelementptr i8, ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 %0
-  %6 = getelementptr nusw i8, ptr %5, i64 2
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 2
+  ret ptr %6
+}
+
+; 1 occurrences:
+; yyjson/optimized/yyjson.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000f(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = lshr i64 %2, 63
+  %4 = getelementptr i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %0
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 2
   ret ptr %6
 }
 

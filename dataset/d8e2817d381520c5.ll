@@ -1,49 +1,44 @@
 
-; 1 occurrences:
-; php/optimized/pcre2_dfa_match.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000044(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ugt i32 %2, 536870910
-  %4 = select i1 %3, i32 4194303, i32 %1
-  %5 = zext nneg i32 %4 to i64
-  %6 = add i64 %5, %0
-  ret i64 %6
-}
-
-; 9 occurrences:
+; 3 occurrences:
 ; abc/optimized/abcRec3.c.ll
-; abc/optimized/dauCanon.c.ll
 ; abc/optimized/dauTree.c.ll
-; abc/optimized/extraUtilMaj.c.ll
-; abc/optimized/giaMinLut2.c.ll
-; abc/optimized/ifDsd.c.ll
 ; abc/optimized/ifTruth.c.ll
-; abc/optimized/sfmLib.c.ll
-; abc/optimized/utilIsop.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000027(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 117440512
   %4 = select i1 %3, i32 1, i32 %1
   %5 = zext nneg i32 %4 to i64
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; abc/optimized/giaIf.c.ll
 ; abc/optimized/ifDec16.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/sfmDec.c.ll
-; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000037(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 7
   %4 = select i1 %3, i32 1, i32 %1
   %5 = zext nneg i32 %4 to i64
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
+  ret i64 %6
+}
+
+; 3 occurrences:
+; abc/optimized/extraUtilMaj.c.ll
+; abc/optimized/ifDsd.c.ll
+; abc/optimized/utilIsop.c.ll
+; Function Attrs: nounwind
+define i64 @func00000000000000a7(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 7
+  %4 = select i1 %3, i32 1, i32 %1
+  %5 = zext nneg i32 %4 to i64
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -56,7 +51,7 @@ entry:
   %3 = icmp eq i32 %2, -1
   %4 = select i1 %3, i32 31536000, i32 %1
   %5 = zext i32 %4 to i64
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -71,7 +66,7 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 0, i32 %1
   %5 = zext i32 %4 to i64
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -86,7 +81,7 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 32, i32 %1
   %5 = zext nneg i32 %4 to i64
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -102,7 +97,7 @@ entry:
   %3 = icmp eq i32 %2, 6
   %4 = select i1 %3, i32 -33, i32 %1
   %5 = zext nneg i32 %4 to i64
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -115,7 +110,7 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 0, i32 %1
   %5 = zext nneg i32 %4 to i64
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -127,7 +122,7 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 0, i32 %1
   %5 = zext nneg i32 %4 to i64
-  %6 = add nuw i64 %5, %0
+  %6 = add nuw i64 %0, %5
   ret i64 %6
 }
 

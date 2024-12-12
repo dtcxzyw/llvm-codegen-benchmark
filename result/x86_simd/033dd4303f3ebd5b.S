@@ -8,7 +8,7 @@ func00000000000001d5:                   # @func00000000000001d5
 	retq
 .LCPI1_0:
 	.long	4294963840                      # 0xfffff280
-func0000000000000155:                   # @func0000000000000155
+func00000000000001d7:                   # @func00000000000001d7
 	vpslld	$3, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpslld	$3, %ymm0, %ymm0
@@ -16,7 +16,7 @@ func0000000000000155:                   # @func0000000000000155
 	retq
 .LCPI2_0:
 	.long	4294963840                      # 0xfffff280
-func00000000000001d7:                   # @func00000000000001d7
+func0000000000000155:                   # @func0000000000000155
 	vpslld	$3, %ymm1, %ymm1
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpslld	$3, %ymm0, %ymm0

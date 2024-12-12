@@ -22,3 +22,11 @@ func0000000000000004:                   # @func0000000000000004
 	li	a1, 20
 	mul	a0, a0, a1
 	ret
+func0000000000000016:                   # @func0000000000000016
+	andi	a1, a1, 255
+	slli	a0, a0, 8
+	or	a0, a0, a1
+	slli	a1, a0, 3
+	slli	a0, a0, 5
+	sub	a0, a0, a1
+	ret

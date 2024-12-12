@@ -13,10 +13,10 @@ entry:
 
 ; 7 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
+; cvc5/optimized/tableau.cpp.ll
 ; gromacs/optimized/orires.cpp.ll
 ; llvm/optimized/GlobalMerge.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
-; opencv/optimized/motion_estimators.cpp.ll
 ; xgboost/optimized/hist_util.cc.ll
 ; yosys/optimized/equiv_mark.ll
 ; Function Attrs: nounwind

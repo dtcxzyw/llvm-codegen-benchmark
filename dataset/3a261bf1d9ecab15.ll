@@ -1,8 +1,22 @@
 
-; 28 occurrences:
+; 42 occurrences:
 ; abc/optimized/giaFanout.c.ll
 ; abc/optimized/giaGen.c.ll
 ; abc/optimized/giaMini.c.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/env.ll
+; boost/optimized/group.ll
+; boost/optimized/pipe.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/wargs_cmd.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; faiss/optimized/IndexIVFPQ.cpp.ll
 ; git/optimized/block.ll
@@ -37,7 +51,7 @@ entry:
   ret ptr %4
 }
 
-; 8 occurrences:
+; 11 occurrences:
 ; abc/optimized/giaSpeedup.c.ll
 ; cpython/optimized/dictobject.ll
 ; darktable/optimized/introspection_highlights.c.ll
@@ -46,6 +60,9 @@ entry:
 ; hyperscan/optimized/program_runtime.c.ll
 ; linux/optimized/skbuff.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
+; opencv/optimized/convolution_layer.cpp.ll
+; opencv/optimized/demosaicing.cpp.ll
+; stb/optimized/stb_connected_components.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:

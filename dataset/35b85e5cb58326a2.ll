@@ -10,7 +10,7 @@ entry:
   %2 = and i32 %1, 2097151
   %3 = zext nneg i32 %2 to i64
   %4 = mul nuw nsw i64 %3, 136657
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -25,7 +25,7 @@ entry:
   %2 = and i32 %1, 2097151
   %3 = zext nneg i32 %2 to i64
   %4 = mul nsw i64 %3, -683901
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -53,7 +53,7 @@ entry:
   %2 = and i32 %1, 3
   %narrow = mul nuw nsw i32 %2, 50176
   %3 = zext nneg i32 %narrow to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 

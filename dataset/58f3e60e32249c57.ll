@@ -1,6 +1,7 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; icu/optimized/rulebasedcollator.ll
+; linux/optimized/drbg.ll
 ; linux/optimized/hda_auto_parser.ll
 ; llvm/optimized/ODRDiagsEmitter.cpp.ll
 ; llvm/optimized/SemaObjCProperty.cpp.ll
@@ -9,7 +10,7 @@
 ; quickjs/optimized/quickjs.ll
 ; wireshark/optimized/packet-assa_r3.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i32 %0) #0 {
+define i64 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 65535
   %2 = icmp eq i32 %1, 267

@@ -32,7 +32,9 @@ entry:
   ret double %2
 }
 
-; 20 occurrences:
+; 22 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; eastl/optimized/EAScanfCore.cpp.ll
 ; quantlib/optimized/americanpayoffatexpiry.ll
 ; quantlib/optimized/americanpayoffathit.ll

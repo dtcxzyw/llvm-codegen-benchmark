@@ -12,7 +12,7 @@
 define double @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul nsw i64 %2, %0
+  %3 = mul nsw i64 %0, %2
   %4 = sitofp i64 %3 to double
   ret double %4
 }
@@ -23,7 +23,7 @@ entry:
 define double @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = sitofp i64 %3 to double
   ret double %4
 }

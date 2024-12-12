@@ -1,5 +1,5 @@
 
-; 220 occurrences:
+; 223 occurrences:
 ; clap-rs/optimized/4r6y4qxwk52m92uh.ll
 ; coreutils-rs/optimized/1487bf2zeluccyme.ll
 ; coreutils-rs/optimized/22bojphyikqmi872.ll
@@ -35,8 +35,6 @@
 ; icu/optimized/normalizer2impl.ll
 ; icu/optimized/ustrtrns.ll
 ; icu/optimized/utf_impl.ll
-; jq/optimized/utf32_be.ll
-; jq/optimized/utf32_le.ll
 ; just-rs/optimized/53slus9exfz9w045.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
@@ -121,8 +119,6 @@
 ; meilisearch-rs/optimized/3f4k2xees4fvt0r.ll
 ; meilisearch-rs/optimized/gdis3hvl48q1qu4.ll
 ; node/optimized/simdutf.ll
-; oniguruma/optimized/utf32_be.ll
-; oniguruma/optimized/utf32_le.ll
 ; openjdk/optimized/EncodingSupport.ll
 ; openjdk/optimized/utf8.ll
 ; openjdk/optimized/utf_util.ll
@@ -131,7 +127,6 @@
 ; proxygen/optimized/HTTPBinaryCodec.cpp.ll
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
 ; qemu/optimized/hw_net_can_can_sja1000.c.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
 ; ruby/optimized/cesu_8.ll
 ; rust-analyzer-rs/optimized/44ayynfm08lnhjsw.ll
 ; rust-analyzer-rs/optimized/hknx1qr3lu9291s.ll
@@ -220,6 +215,14 @@
 ; vcpkg/optimized/versions.cpp.ll
 ; wireshark/optimized/ngsniffer.c.ll
 ; wireshark/optimized/packet-fp_hint.c.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000003f(i32 %0, i8 %1) #0 {
 entry:

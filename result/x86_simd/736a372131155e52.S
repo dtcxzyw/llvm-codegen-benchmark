@@ -34,15 +34,6 @@ func00000000000000a0:                   # @func00000000000000a0
 	vmovdqa	%xmm1, %xmm0
 	vzeroupper
 	retq
-.LCPI4_0:
-	.quad	31                              # 0x1f
-func0000000000000088:                   # @func0000000000000088
-	vpcmpnleuq	.LCPI4_0(%rip){1to4}, %ymm2, %k1
-	vpmovqd	%ymm1, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm1 {%k1}
-	vmovdqa	%xmm1, %xmm0
-	vzeroupper
-	retq
 func0000000000000048:                   # @func0000000000000048
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0

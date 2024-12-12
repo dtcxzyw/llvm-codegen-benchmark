@@ -26,17 +26,4 @@ entry:
   ret i32 %7
 }
 
-; 1 occurrences:
-; linux/optimized/uring_cmd.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i32 %1, i16 %2) #0 {
-entry:
-  %3 = and i16 %2, 4096
-  %4 = zext nneg i16 %3 to i32
-  %5 = or i32 %0, %1
-  %6 = or i32 %5, %4
-  %7 = or i32 %6, 1024
-  ret i32 %7
-}
-
 attributes #0 = { nounwind }

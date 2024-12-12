@@ -1,5 +1,5 @@
 
-; 425 occurrences:
+; 440 occurrences:
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/log_entry_test.cc.ll
@@ -33,11 +33,27 @@
 ; assimp/optimized/Q3BSPFileParser.cpp.ll
 ; assimp/optimized/SMDLoader.cpp.ll
 ; assimp/optimized/X3DImporter.cpp.ll
+; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
 ; assimp/optimized/XFileImporter.cpp.ll
 ; assimp/optimized/XFileParser.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/collate.ll
+; boost/optimized/collator.ll
+; boost/optimized/conversion.ll
+; boost/optimized/process.ll
+; boost/optimized/spawn.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
 ; casadi/optimized/nlpsol.cpp.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; clamav/optimized/sigtool.c.ll
@@ -138,7 +154,6 @@
 ; lightgbm/optimized/gradient_discretizer.cpp.ll
 ; lightgbm/optimized/network.cpp.ll
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
-; linux/optimized/class.ll
 ; llama.cpp/optimized/common.cpp.ll
 ; llama.cpp/optimized/llama.cpp.ll
 ; llama.cpp/optimized/train.cpp.ll
@@ -429,7 +444,7 @@
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %0, -1
-  %3 = add i64 %2, %1
+  %3 = add i64 %1, %2
   ret i64 %3
 }
 
@@ -447,7 +462,28 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %0, -1
-  %3 = add i64 %2, %1
+  %3 = add i64 %1, %2
+  ret i64 %3
+}
+
+; 2 occurrences:
+; git/optimized/apply.ll
+; zed-rs/optimized/2dbu45lers7mkstxlrhw3mc97.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
+entry:
+  %2 = xor i64 %0, -1
+  %3 = add i64 %1, %2
+  ret i64 %3
+}
+
+; 1 occurrences:
+; cmake/optimized/archive_read_support_format_tar.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub nuw nsw i64 %0, %1
+  %3 = xor i64 %2, 9223372036854775807
   ret i64 %3
 }
 

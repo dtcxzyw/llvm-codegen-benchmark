@@ -76,6 +76,12 @@ func000000000000001f:                   # @func000000000000001f
 	li	a0, 32
 	vwsll.vx	v8, v10, a0
 	ret
+func000000000000005f:                   # @func000000000000005f
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vadd.vv	v8, v8, v8
+	vadd.vi	v10, v8, 2
+	vwsll.vi	v8, v10, 3
+	ret
 func0000000000000022:                   # @func0000000000000022
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsll.vi	v8, v8, 3

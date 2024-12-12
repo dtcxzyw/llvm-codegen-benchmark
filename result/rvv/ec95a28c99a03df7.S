@@ -8,5 +8,5 @@ func0000000000000000:                   # @func0000000000000000
 	vfwcvt.f.x.v	v10, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vfdiv.vf	v10, v10, fa5
-	vfadd.vv	v8, v10, v8
+	vfadd.vv	v8, v8, v10
 	ret

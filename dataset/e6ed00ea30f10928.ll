@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 20 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
@@ -8,7 +8,6 @@
 ; folly/optimized/Conv.cpp.ll
 ; hermes/optimized/zip.c.ll
 ; jq/optimized/unicode.ll
-; jq/optimized/unicode_fold1_key.ll
 ; llvm/optimized/BlockFrequencyInfo.cpp.ll
 ; llvm/optimized/MachineBlockFrequencyInfo.cpp.ll
 ; llvm/optimized/SelectOptimize.cpp.ll
@@ -16,7 +15,6 @@
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; oniguruma/optimized/unicode.ll
-; oniguruma/optimized/unicode_fold1_key.ll
 ; openjdk/optimized/codeHeapState.ll
 ; openjdk/optimized/parse_manifest.ll
 ; ruby/optimized/unicode.ll
@@ -26,7 +24,7 @@
 define i64 @func000000000000001f(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add nuw nsw i32 %4, %0
   %6 = zext nneg i32 %5 to i64
   ret i64 %6
@@ -40,7 +38,7 @@ entry:
 define i64 @func0000000000000018(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add i32 %4, %0
   %6 = zext i32 %5 to i64
   ret i64 %6
@@ -53,7 +51,7 @@ entry:
 define i64 @func0000000000000000(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, %0
   %6 = zext i32 %5 to i64
   ret i64 %6
@@ -65,7 +63,7 @@ entry:
 define i64 @func0000000000000010(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add nuw i32 %3, %1
+  %4 = add nuw i32 %1, %3
   %5 = add i32 %4, %0
   %6 = zext i32 %5 to i64
   ret i64 %6
@@ -77,8 +75,8 @@ entry:
 define i64 @func0000000000000008(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add nsw i32 %3, %1
-  %5 = add i32 %4, %0
+  %4 = add nsw i32 %1, %3
+  %5 = add i32 %0, %4
   %6 = zext i32 %5 to i64
   ret i64 %6
 }
@@ -89,7 +87,7 @@ entry:
 define i64 @func000000000000000a(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   %6 = zext i32 %5 to i64
   ret i64 %6
@@ -102,7 +100,7 @@ entry:
 define i64 @func000000000000001b(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   %6 = zext nneg i32 %5 to i64
   ret i64 %6

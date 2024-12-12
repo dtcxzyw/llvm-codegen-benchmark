@@ -24,19 +24,7 @@ entry:
   %2 = freeze i32 %1
   %3 = and i32 %2, 24576
   %4 = icmp eq i32 %3, 8192
-  %5 = or i1 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; mitsuba3/optimized/x86assembler.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000010(i1 %0, i32 %1) #0 {
-entry:
-  %2 = freeze i32 %1
-  %3 = and i32 %2, 1835008
-  %4 = icmp ugt i32 %3, 1048576
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

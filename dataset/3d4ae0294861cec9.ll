@@ -25,9 +25,10 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; darktable/optimized/DeflateDecompressor.cpp.ll
 ; darktable/optimized/RawImage.cpp.ll
+; lvgl/optimized/lv_draw_sw.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:

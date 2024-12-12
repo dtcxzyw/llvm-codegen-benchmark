@@ -1,5 +1,7 @@
 
-; 17 occurrences:
+; 18 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; graphviz/optimized/tlayout.c.ll
 ; gromacs/optimized/gmx_dos.cpp.ll
 ; gromacs/optimized/thermochemistry.cpp.ll
@@ -11,7 +13,6 @@
 ; openvdb/optimized/LevelSetFilter.cc.ll
 ; openvdb/optimized/LevelSetMeasure.cc.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
-; proj/optimized/wag7.cpp.ll
 ; quantlib/optimized/bivariatenormaldistribution.ll
 ; quantlib/optimized/gaussian1dmodel.ll
 ; quantlib/optimized/integralhestonvarianceoptionengine.ll

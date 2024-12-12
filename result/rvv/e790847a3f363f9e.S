@@ -9,10 +9,9 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000003:                   # @func0000000000000003
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vsrl.vi	v10, v10, 21
-	li	a0, 1024
-	vand.vx	v10, v10, a0
-	li	a0, 640
+	vsrl.vi	v10, v10, 1
+	li	a0, 56
+	vand.vi	v10, v10, 7
 	vand.vx	v8, v8, a0
 	vor.vv	v8, v8, v10
 	ret

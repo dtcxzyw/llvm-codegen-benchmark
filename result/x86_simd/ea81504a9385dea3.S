@@ -1,4 +1,4 @@
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000014a:                   # @func000000000000014a
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpsrlq	$32, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
@@ -26,7 +26,7 @@ func000000000000000a:                   # @func000000000000000a
 	retq
 .LCPI3_0:
 	.long	32                              # 0x20
-func0000000000000086:                   # @func0000000000000086
+func0000000000000106:                   # @func0000000000000106
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpsrlq	$16, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
@@ -36,7 +36,7 @@ func0000000000000086:                   # @func0000000000000086
 	retq
 .LCPI4_0:
 	.long	16                              # 0x10
-func000000000000008a:                   # @func000000000000008a
+func000000000000010a:                   # @func000000000000010a
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpsrlq	$16, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0

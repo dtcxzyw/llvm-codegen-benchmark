@@ -1,8 +1,9 @@
 
-; 45 occurrences:
+; 46 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
+; boost/optimized/alloc_lib.ll
 ; clap-rs/optimized/3b4nqkxyl1xqdcre.ll
 ; duckdb/optimized/ub_duckdb_operator_helper.cpp.ll
 ; git/optimized/urlmatch.ll

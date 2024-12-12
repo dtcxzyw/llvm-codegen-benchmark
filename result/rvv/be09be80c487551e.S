@@ -47,3 +47,10 @@ func000000000000000a:                   # @func000000000000000a
 	vmv.v.i	v8, 0
 	vmerge.vim	v8, v8, 1, v0
 	ret
+func000000000000000c:                   # @func000000000000000c
+	vsetivli	zero, 4, e16, mf2, ta, ma
+	vmsle.vv	v0, v9, v8
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vmv.v.i	v8, 0
+	vmerge.vim	v8, v8, 1, v0
+	ret

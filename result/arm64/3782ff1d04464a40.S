@@ -5,14 +5,14 @@ func0000000000000070:                   // @func0000000000000070
 	sub	x0, x9, x8
 	ret
                                         // -- End function
-func0000000000000008:                   // @func0000000000000008
+func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
 	lsl	w8, w2, #2
 	add	x8, x1, w8, uxtw #2
 	sub	x0, x0, x8
 	ret
                                         // -- End function
-func0000000000000078:                   // @func0000000000000078
+func000000000000007c:                   // @func000000000000007c
 // %bb.0:                               // %entry
 	lsl	w8, w2, #2
 	add	x8, x1, w8, uxtw #1

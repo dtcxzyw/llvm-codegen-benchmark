@@ -61,6 +61,15 @@ func000000000000020f:                   # @func000000000000020f
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
+func000000000000060f:                   # @func000000000000060f
+	sext.w	a2, a2
+	lui	a3, 244
+	andi	a1, a1, 1
+	addiw	a3, a3, 575
+	sltu	a2, a3, a2
+	add	a0, a0, a1
+	addw	a0, a0, a2
+	ret
 func0000000000000285:                   # @func0000000000000285
 	sext.w	a2, a2
 	andi	a1, a1, 1
@@ -83,6 +92,13 @@ func0000000000000300:                   # @func0000000000000300
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
+func0000000000000500:                   # @func0000000000000500
+	sext.w	a2, a2
+	andi	a1, a1, 1
+	sltiu	a2, a2, 10
+	add	a0, a0, a1
+	addw	a0, a0, a2
+	ret
 func0000000000000305:                   # @func0000000000000305
 	sext.w	a2, a2
 	andi	a1, a1, 1
@@ -90,7 +106,7 @@ func0000000000000305:                   # @func0000000000000305
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret
-func000000000000010f:                   # @func000000000000010f
+func000000000000050f:                   # @func000000000000050f
 	sext.w	a2, a2
 	andi	a1, a1, 1
 	sltiu	a2, a2, 1020

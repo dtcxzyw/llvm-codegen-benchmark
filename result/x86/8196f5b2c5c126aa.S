@@ -10,6 +10,6 @@ func0000000000000000:                   # @func0000000000000000
 	retq
 func0000000000000006:                   # @func0000000000000006
 	andq	%rsi, %rdi
-	decb	%dl
+	addb	$-3, %dl
 	shrxq	%rdx, %rdi, %rax
 	retq

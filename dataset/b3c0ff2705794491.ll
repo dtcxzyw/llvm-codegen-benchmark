@@ -1,5 +1,6 @@
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/within.ll
 ; gromacs/optimized/gmx_traj.cpp.ll
 ; gromacs/optimized/sfactor.cpp.ll
 ; minetest/optimized/profilergraph.cpp.ll
@@ -10,7 +11,22 @@
 define i1 @func0000000000000006(i1 %0, double %1, float %2) #0 {
 entry:
   %3 = fpext float %2 to double
-  %4 = fcmp ugt double %3, %1
+  %4 = fcmp ult double %1, %3
+  %5 = or i1 %0, %4
+  ret i1 %5
+}
+
+; 5 occurrences:
+; boost/optimized/within.ll
+; gromacs/optimized/gmx_traj.cpp.ll
+; gromacs/optimized/sfactor.cpp.ll
+; msdfgen/optimized/MSDFErrorCorrection.cpp.ll
+; opencv/optimized/facemarkAAM.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000a(i1 %0, double %1, float %2) #0 {
+entry:
+  %3 = fpext float %2 to double
+  %4 = fcmp ugt double %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -28,22 +44,8 @@ entry:
 define i1 @func0000000000000004(i1 %0, double %1, float %2) #0 {
 entry:
   %3 = fpext float %2 to double
-  %4 = fcmp ogt double %3, %1
-  %5 = or i1 %4, %0
-  ret i1 %5
-}
-
-; 4 occurrences:
-; gromacs/optimized/gmx_traj.cpp.ll
-; gromacs/optimized/sfactor.cpp.ll
-; msdfgen/optimized/MSDFErrorCorrection.cpp.ll
-; opencv/optimized/facemarkAAM.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000a(i1 %0, double %1, float %2) #0 {
-entry:
-  %3 = fpext float %2 to double
-  %4 = fcmp ult double %3, %1
-  %5 = or i1 %4, %0
+  %4 = fcmp olt double %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -54,21 +56,22 @@ entry:
 define i1 @func0000000000000014(i1 %0, double %1, float %2) #0 {
 entry:
   %3 = fpext float %2 to double
-  %4 = fcmp oge double %3, %1
-  %5 = or i1 %4, %0
+  %4 = fcmp ole double %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; opencv/optimized/ts_func.cpp.ll
 ; postgres/optimized/float.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, double %1, float %2) #0 {
 entry:
   %3 = fpext float %2 to double
-  %4 = fcmp olt double %3, %1
-  %5 = or i1 %4, %0
+  %4 = fcmp ogt double %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -78,8 +81,8 @@ entry:
 define i1 @func0000000000000018(i1 %0, double %1, float %2) #0 {
 entry:
   %3 = fpext float %2 to double
-  %4 = fcmp ole double %3, %1
-  %5 = or i1 %4, %0
+  %4 = fcmp oge double %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

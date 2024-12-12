@@ -11,7 +11,7 @@
 ; wireshark/optimized/dot11decrypt_gcmp.c.ll
 ; z3/optimized/mpz.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = sext i32 %0 to i64
@@ -75,21 +75,20 @@ entry:
 ; openjdk/optimized/verifier.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %0, %1
   ret i1 %2
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; darktable/optimized/introspection_clahe.c.ll
-; openjdk/optimized/TransformHelper.ll
 ; openjdk/optimized/check_code.ll
 ; redis/optimized/lcode.ll
 ; redis/optimized/lparser.ll
 ; redis/optimized/ltable.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = sext i32 %0 to i64
@@ -98,7 +97,7 @@ entry:
   ret i1 %5
 }
 
-; 41 occurrences:
+; 44 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cordz_handle_test.cc.ll
 ; abseil-cpp/optimized/cordz_info_statistics_test.cc.ll
@@ -108,6 +107,9 @@ entry:
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; abseil-cpp/optimized/sample_recorder_test.cc.ll
 ; arrow/optimized/io_util.cc.ll
+; boost/optimized/benchmark_fstream.ll
+; boost/optimized/file_test_helpers.ll
+; boost/optimized/partition.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; darktable/optimized/introspection_basecurve.c.ll
@@ -141,7 +143,7 @@ entry:
 ; yalantinglibs/optimized/client_pool.cpp.ll
 ; yalantinglibs/optimized/client_pools.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = sext i32 %0 to i64
@@ -150,7 +152,19 @@ entry:
   ret i1 %5
 }
 
-; 38 occurrences:
+; 1 occurrences:
+; openjdk/optimized/TransformHelper.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = sext i32 %0 to i64
+  %4 = sub nsw i64 %3, %2
+  %5 = icmp samesign ugt i64 %4, 1024
+  ret i1 %5
+}
+
+; 41 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cordz_handle_test.cc.ll
 ; abseil-cpp/optimized/cordz_info_statistics_test.cc.ll
@@ -160,6 +174,9 @@ entry:
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; abseil-cpp/optimized/sample_recorder_test.cc.ll
 ; arrow/optimized/io_util.cc.ll
+; boost/optimized/benchmark_fstream.ll
+; boost/optimized/file_test_helpers.ll
+; boost/optimized/partition.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
@@ -190,7 +207,7 @@ entry:
 ; yalantinglibs/optimized/client_pool.cpp.ll
 ; yalantinglibs/optimized/client_pools.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = sext i32 %0 to i64
@@ -202,7 +219,7 @@ entry:
 ; 1 occurrences:
 ; influxdb-rs/optimized/54bldmpi534adbqh.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000068(i32 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = sext i32 %0 to i64
@@ -214,7 +231,19 @@ entry:
 ; 1 occurrences:
 ; influxdb-rs/optimized/54bldmpi534adbqh.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000078(i32 %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = sext i32 %0 to i64
+  %4 = sub nuw nsw i64 %3, %2
+  %5 = icmp samesign ugt i64 %4, 1
+  ret i1 %5
+}
+
+; 1 occurrences:
+; influxdb-rs/optimized/54bldmpi534adbqh.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = sext i32 %0 to i64

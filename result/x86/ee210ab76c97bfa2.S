@@ -26,17 +26,17 @@ func00000000000000ff:                   # @func00000000000000ff
 	imull	%edi, %esi
 	addl	%esi, %eax
 	retq
+func0000000000000055:                   # @func0000000000000055
+	movl	$10, %eax
+	subl	%esi, %eax
+	imull	%edx, %eax
+	imull	%esi, %edi
+	addl	%edi, %eax
+	retq
 func0000000000000075:                   # @func0000000000000075
 	movl	$64, %eax
 	subl	%esi, %eax
 	imull	%edi, %eax
 	imull	%esi, %edx
 	addl	%edx, %eax
-	retq
-func0000000000000055:                   # @func0000000000000055
-	movl	$16384, %eax                    # imm = 0x4000
-	subl	%edx, %eax
-	imull	%edi, %eax
-	imull	%edx, %esi
-	addl	%esi, %eax
 	retq

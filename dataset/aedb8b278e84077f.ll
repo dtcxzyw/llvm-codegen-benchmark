@@ -1,8 +1,9 @@
 
-; 172 occurrences:
+; 178 occurrences:
 ; abc/optimized/deflate.c.ll
 ; abseil-cpp/optimized/cordz_info_statistics_test.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/pattern.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; clamav/optimized/fmap.c.ll
@@ -138,7 +139,6 @@
 ; openusd/optimized/xformCache.cpp.ll
 ; php/optimized/cgi_main.ll
 ; php/optimized/http.ll
-; php/optimized/math.ll
 ; php/optimized/php_cli_server.ll
 ; php/optimized/php_ini_builder.ll
 ; php/optimized/streams.ll
@@ -150,7 +150,6 @@
 ; postgres/optimized/varbit.ll
 ; protobuf/optimized/descriptor.pb.cc.ll
 ; qemu/optimized/linux-user_elfload.c.ll
-; quantlib/optimized/hestonslvmcmodel.ll
 ; quickjs/optimized/libbf.ll
 ; raylib/optimized/raudio.c.ll
 ; redis/optimized/hiredis.ll
@@ -159,7 +158,6 @@
 ; ropey-rs/optimized/1zgfltkx0c00yngh.ll
 ; ropey-rs/optimized/4i14j6kjvp3g1a3p.ll
 ; ruby/optimized/addr2line.ll
-; ruby/optimized/sprintf.ll
 ; rustfmt-rs/optimized/3sx1t619hmuq0zz7.ll
 ; rustfmt-rs/optimized/4arc02n7xt9gqo2v.ll
 ; typst-rs/optimized/18cop7j4xops9f9h.ll
@@ -171,17 +169,25 @@
 ; yalantinglibs/optimized/example.cpp.ll
 ; yalantinglibs/optimized/file_client.cpp.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/b1bc3rbs9s229gjbf718xcm8w.ll
+; zed-rs/optimized/d8k4gi60mp0onf0c8t6rhs7ks.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
+; zed-rs/optimized/f10ffiihtazjqkmwr0jihceey.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = add i64 %4, 100
   ret i64 %5
 }
 
-; 52 occurrences:
+; 50 occurrences:
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
@@ -215,7 +221,6 @@ entry:
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
 ; llvm/optimized/CodeGenRegisters.cpp.ll
 ; llvm/optimized/RegisterInfoEmitter.cpp.ll
-; luau/optimized/loslib.cpp.ll
 ; memcached/optimized/memcached-storage.ll
 ; memcached/optimized/memcached_debug-storage.ll
 ; meshlab/optimized/arap.cpp.ll
@@ -227,7 +232,6 @@ entry:
 ; opencv/optimized/softfloat.cpp.ll
 ; openssl/optimized/libcrypto-lib-curve25519.ll
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
-; php/optimized/dow.ll
 ; rocksdb/optimized/seqno_to_time_mapping.cc.ll
 ; ruby/optimized/gc.ll
 ; spike/optimized/s_mulAddF32.ll
@@ -243,7 +247,7 @@ entry:
   ret i64 %5
 }
 
-; 44 occurrences:
+; 55 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; fmt/optimized/format-impl-test.cc.ll
@@ -287,6 +291,17 @@ entry:
 ; wasmtime-rs/optimized/1bmc0pjvdnh09g73.ll
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/b1bc3rbs9s229gjbf718xcm8w.ll
+; zed-rs/optimized/d8k4gi60mp0onf0c8t6rhs7ks.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
+; zed-rs/optimized/f10ffiihtazjqkmwr0jihceey.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003f(i64 %0, i64 %1, i64 %2) #0 {
@@ -405,8 +420,99 @@ entry:
   ret i64 %5
 }
 
-; 87 occurrences:
-; curl/optimized/libcurl_la-cleartext.ll
+; 1 occurrences:
+; php/optimized/dow.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001f(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %1, %2
+  %4 = add nuw nsw i64 %0, %3
+  %5 = add nuw nsw i64 %4, 7
+  ret i64 %5
+}
+
+; 18 occurrences:
+; darktable/optimized/introspection_highlights.c.ll
+; hyperscan/optimized/ue2string.cpp.ll
+; libsodium/optimized/libsodium_la-ed25519_ref10.ll
+; opencv/optimized/persistence.cpp.ll
+; openusd/optimized/animMapper.cpp.ll
+; openusd/optimized/dataSourceLegacyPrim.cpp.ll
+; openusd/optimized/dataSourceTetMesh.cpp.ll
+; openusd/optimized/instanceAdapter.cpp.ll
+; openusd/optimized/mapExpression.cpp.ll
+; openusd/optimized/niInstanceAggregationSceneIndex.cpp.ll
+; openusd/optimized/parserHelpers.cpp.ll
+; openusd/optimized/pinnedCurveExpandingSceneIndex.cpp.ll
+; openusd/optimized/primvar.cpp.ll
+; openusd/optimized/primvarSchema.cpp.ll
+; openusd/optimized/retainedDataSource.cpp.ll
+; openusd/optimized/testVtCpp.cpp.ll
+; openusd/optimized/unitTestDelegate.cpp.ll
+; php/optimized/unixtime2tm.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %1, %2
+  %4 = add i64 %3, %0
+  %5 = add i64 %4, 1
+  ret i64 %5
+}
+
+; 1 occurrences:
+; velox/optimized/TimestampConversion.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %1, %2
+  %4 = add nuw i64 %3, %0
+  %5 = add i64 %4, 3
+  ret i64 %5
+}
+
+; 2 occurrences:
+; assimp/optimized/glTF2Exporter.cpp.ll
+; assimp/optimized/glTFExporter.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw i64 %1, %2
+  %4 = add nuw i64 %3, %0
+  %5 = add i64 %4, -1
+  ret i64 %5
+}
+
+; 6 occurrences:
+; spike/optimized/f128_sqrt.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/b1bc3rbs9s229gjbf718xcm8w.ll
+; zed-rs/optimized/d8k4gi60mp0onf0c8t6rhs7ks.ll
+; zed-rs/optimized/f10ffiihtazjqkmwr0jihceey.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000030(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %1, %2
+  %4 = add i64 %3, %0
+  %5 = add i64 %4, -1
+  ret i64 %5
+}
+
+; 4 occurrences:
+; linux/optimized/libata-core.ll
+; linux/optimized/pt.ll
+; linux/optimized/sr_vendor.ll
+; llvm/optimized/MachineInstr.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003d(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %1, %2
+  %4 = add nuw nsw i64 %3, %0
+  %5 = add nsw i64 %4, -1
+  ret i64 %5
+}
+
+; 86 occurrences:
 ; openusd/optimized/OpenEXRImage.cpp.ll
 ; openusd/optimized/TestSdrRegistry_oslParserPlugin.cpp.ll
 ; openusd/optimized/animMapper.cpp.ll
@@ -498,83 +604,7 @@ define i64 @func000000000000003a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = add nuw i64 %3, %0
-  %5 = add nuw i64 %4, 2
-  ret i64 %5
-}
-
-; 18 occurrences:
-; darktable/optimized/introspection_highlights.c.ll
-; hyperscan/optimized/ue2string.cpp.ll
-; libsodium/optimized/libsodium_la-ed25519_ref10.ll
-; opencv/optimized/persistence.cpp.ll
-; openusd/optimized/animMapper.cpp.ll
-; openusd/optimized/dataSourceLegacyPrim.cpp.ll
-; openusd/optimized/dataSourceTetMesh.cpp.ll
-; openusd/optimized/instanceAdapter.cpp.ll
-; openusd/optimized/mapExpression.cpp.ll
-; openusd/optimized/niInstanceAggregationSceneIndex.cpp.ll
-; openusd/optimized/parserHelpers.cpp.ll
-; openusd/optimized/pinnedCurveExpandingSceneIndex.cpp.ll
-; openusd/optimized/primvar.cpp.ll
-; openusd/optimized/primvarSchema.cpp.ll
-; openusd/optimized/retainedDataSource.cpp.ll
-; openusd/optimized/testVtCpp.cpp.ll
-; openusd/optimized/unitTestDelegate.cpp.ll
-; php/optimized/unixtime2tm.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nsw i64 %1, %2
-  %4 = add i64 %3, %0
-  %5 = add i64 %4, 1
-  ret i64 %5
-}
-
-; 1 occurrences:
-; velox/optimized/TimestampConversion.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add i64 %1, %2
-  %4 = add nuw i64 %3, %0
-  %5 = add i64 %4, 3
-  ret i64 %5
-}
-
-; 2 occurrences:
-; assimp/optimized/glTF2Exporter.cpp.ll
-; assimp/optimized/glTFExporter.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw i64 %1, %2
-  %4 = add nuw i64 %3, %0
-  %5 = add i64 %4, -1
-  ret i64 %5
-}
-
-; 1 occurrences:
-; spike/optimized/f128_sqrt.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000030(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw nsw i64 %1, %2
-  %4 = add i64 %3, %0
-  %5 = add i64 %4, -1
-  ret i64 %5
-}
-
-; 4 occurrences:
-; linux/optimized/libata-core.ll
-; linux/optimized/pt.ll
-; linux/optimized/sr_vendor.ll
-; llvm/optimized/MachineInstr.cpp.ll
-; Function Attrs: nounwind
-define i64 @func000000000000003d(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw nsw i64 %1, %2
-  %4 = add nuw nsw i64 %3, %0
-  %5 = add nsw i64 %4, -1
+  %5 = add nuw i64 %4, 1
   ret i64 %5
 }
 
@@ -626,7 +656,7 @@ entry:
 define i64 @func0000000000000035(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = add nsw i64 %4, 131072
   ret i64 %5
 }

@@ -8,7 +8,7 @@ define i64 @func0000000000000001(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub i64 %2, %1
   %.neg1 = trunc i64 %.neg to i32
-  %3 = add i32 %.neg1, %0
+  %3 = add i32 %0, %.neg1
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
@@ -22,7 +22,7 @@ define i64 @func0000000000000000(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub i64 %2, %1
   %.neg1 = trunc i64 %.neg to i32
-  %3 = add i32 %.neg1, %0
+  %3 = add i32 %0, %.neg1
   %4 = sext i32 %3 to i64
   ret i64 %4
 }

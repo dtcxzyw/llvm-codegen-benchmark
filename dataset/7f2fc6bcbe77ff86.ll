@@ -26,7 +26,7 @@ define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = add nsw i32 %2, -1
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   ret i32 %4
 }
 
@@ -42,12 +42,11 @@ define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = add nsw i32 %2, -13
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
-; 4 occurrences:
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; 3 occurrences:
 ; llvm/optimized/TargetLowering.cpp.ll
 ; openmpi/optimized/coll_base_topo.ll
 ; zxing/optimized/QRMatrixUtil.cpp.ll
@@ -79,7 +78,7 @@ define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = add nsw i32 %2, -2
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 

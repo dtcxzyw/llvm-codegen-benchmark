@@ -23,7 +23,12 @@ func0000000000000034:                   # @func0000000000000034
 	subl	%esi, %edi
 	leal	(,%rdi,8), %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000025:                   # @func0000000000000025
+	movl	%edi, %eax
+	subl	%esi, %eax
+	shll	$16, %eax
+	retq
+func0000000000000007:                   # @func0000000000000007
 	movl	%edi, %eax
 	subl	%esi, %eax
 	shll	$9, %eax
@@ -36,4 +41,12 @@ func0000000000000030:                   # @func0000000000000030
 	movl	%edi, %eax
 	subl	%esi, %eax
 	shll	$16, %eax
+	retq
+func0000000000000033:                   # @func0000000000000033
+	subl	%esi, %edi
+	leal	(,%rdi,4), %eax
+	retq
+func0000000000000017:                   # @func0000000000000017
+	subl	%esi, %edi
+	leal	(,%rdi,8), %eax
 	retq

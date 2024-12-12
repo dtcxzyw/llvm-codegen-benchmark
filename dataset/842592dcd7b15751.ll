@@ -1,6 +1,5 @@
 
-; 7 occurrences:
-; linux/optimized/dns_key.ll
+; 6 occurrences:
 ; openjdk/optimized/virtualspace.ll
 ; openmpi/optimized/nbc_iallreduce.ll
 ; openmpi/optimized/nbc_iexscan.ll

@@ -12,14 +12,3 @@ func0000000000000002:                   # @func0000000000000002
 	setb	%al
 	orb	%dil, %al
 	retq
-func0000000000000010:                   # @func0000000000000010
-	movl	%esi, %eax
-	shrl	$5, %eax
-	imulq	$33653025, %rax, %rax           # imm = 0x2018121
-	shrq	$35, %rax
-	imull	$32672, %eax, %eax              # imm = 0x7FA0
-	subl	%eax, %esi
-	cmpl	$4, %esi
-	setae	%al
-	orb	%dil, %al
-	retq

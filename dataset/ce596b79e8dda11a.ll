@@ -9,7 +9,7 @@
 define i32 @func0000000000000015(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %.v = select i1 %1, i32 -2, i32 -1
-  %3 = add nsw i32 %.v, %2
+  %3 = add nsw i32 %2, %.v
   %4 = sub nsw i32 %3, %0
   ret i32 %4
 }
@@ -22,7 +22,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %.v = select i1 %1, i32 2, i32 3
-  %3 = add i32 %.v, %2
+  %3 = add i32 %2, %.v
   %4 = sub i32 %3, %0
   ret i32 %4
 }

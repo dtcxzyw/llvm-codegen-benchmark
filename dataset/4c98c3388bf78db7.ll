@@ -17,10 +17,12 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; openusd/optimized/patchMap.cpp.ll
 ; openusd/optimized/patchTree.cpp.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i64 %1) #0 {
 entry:

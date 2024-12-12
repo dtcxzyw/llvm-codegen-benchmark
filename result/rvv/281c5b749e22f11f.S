@@ -23,3 +23,8 @@ func0000000000000008:                   # @func0000000000000008
 	vnmsac.vv	v8, v12, v10
 	vsll.vi	v8, v8, 8
 	ret
+func0000000000000015:                   # @func0000000000000015
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vnmsac.vv	v8, v12, v10
+	vsll.vi	v8, v8, 8
+	ret

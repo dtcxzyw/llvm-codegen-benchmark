@@ -8,16 +8,26 @@ func0000000000000006:                   # @func0000000000000006
 	leal	(%rdi,%rdi), %eax
 	addb	$43, %al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	cmpq	$2, %rdi
 	setae	%al
 	shlb	$2, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000004:                   # @func0000000000000004
+	cmpq	$127, %rdi
+	seta	%al
+	shlb	$7, %al
+	retq
+func0000000000000018:                   # @func0000000000000018
 	cmpq	$256, %rdi                      # imm = 0x100
 	setb	%al
 	shlb	$3, %al
 	addb	$-5, %al
+	retq
+func0000000000000008:                   # @func0000000000000008
+	cmpq	$127, %rdi
+	seta	%al
+	shlb	$7, %al
 	retq
 func000000000000000a:                   # @func000000000000000a
 	cmpq	$2147483647, %rdi               # imm = 0x7FFFFFFF

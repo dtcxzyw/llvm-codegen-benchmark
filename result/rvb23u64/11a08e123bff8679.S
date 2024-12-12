@@ -1,9 +1,22 @@
+func0000000000000050:                   # @func0000000000000050
+	srai	a1, a1, 32
+	sh1add	a1, a1, a1
+	sh3add	a0, a1, a0
+	addi	a0, a0, 184
+	ret
+func000000000000005c:                   # @func000000000000005c
+	srai	a2, a1, 53
+	srai	a1, a1, 50
+	sub	a1, a1, a2
+	add	a0, a0, a1
+	addi	a0, a0, 56
+	ret
 func0000000000000018:                   # @func0000000000000018
 	andi	a1, a1, -4
 	sub	a0, a0, a1
 	addi	a0, a0, -2
 	ret
-func0000000000000038:                   # @func0000000000000038
+func000000000000003c:                   # @func000000000000003c
 	srli	a1, a1, 2
 	sh1add	a1, a1, a1
 	slli	a1, a1, 5
@@ -16,4 +29,17 @@ func0000000000000030:                   # @func0000000000000030
 	slli	a1, a1, 5
 	add	a0, a0, a1
 	addi	a0, a0, 72
+	ret
+func000000000000001c:                   # @func000000000000001c
+	srai	a1, a1, 32
+	sh1add	a1, a1, a1
+	sh3add	a1, a1, a1
+	sh3add	a0, a1, a0
+	addi	a0, a0, 4
+	ret
+func0000000000000010:                   # @func0000000000000010
+	srai	a1, a1, 32
+	sh1add	a1, a1, a1
+	sh3add	a0, a1, a0
+	addi	a0, a0, 32
 	ret

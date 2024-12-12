@@ -9,7 +9,7 @@
 ; qemu/optimized/io_channel-websock.c.ll
 ; wasmtime-rs/optimized/320v7ko74ke0k4k4.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000302(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = icmp ne i8 %2, 0
@@ -27,7 +27,7 @@ entry:
 ; openjdk/optimized/ad_x86.ll
 ; openjdk/optimized/modRefBarrierSetC2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000318(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -2
   %3 = icmp ne i8 %2, 12
@@ -40,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/MemCpyOptimizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000058(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 12
   %3 = icmp eq i8 %2, 0
@@ -56,7 +56,7 @@ entry:
 ; linux/optimized/ip6_input.ll
 ; linux/optimized/string_helpers.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000042(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -105
   %3 = icmp eq i8 %2, 0

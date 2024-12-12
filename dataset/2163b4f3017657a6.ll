@@ -1,6 +1,8 @@
 
-; 1 occurrences:
+; 3 occurrences:
 ; image-rs/optimized/ptscn4jakoj4p9m.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
@@ -42,7 +44,7 @@ define i64 @func000000000000001f(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 22
   %3 = and i64 %2, 4290772992
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = mul nuw nsw i64 %4, 6
   ret i64 %5
 }
@@ -54,7 +56,7 @@ define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 14
   %3 = and i64 %2, 65536
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = mul nuw nsw i64 %4, 17
   ret i64 %5
 }

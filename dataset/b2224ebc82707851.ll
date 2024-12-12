@@ -1,5 +1,5 @@
 
-; 40 occurrences:
+; 39 occurrences:
 ; clamav/optimized/hashtab.c.ll
 ; git/optimized/object-file.ll
 ; icu/optimized/genmbcs.ll
@@ -14,7 +14,6 @@
 ; linux/optimized/intel_engine_cs.ll
 ; linux/optimized/intel_hotplug.ll
 ; linux/optimized/intel_memory_region.ll
-; linux/optimized/intel_rc6.ll
 ; linux/optimized/intel_uncore.ll
 ; linux/optimized/libata-sata.ll
 ; linux/optimized/mdio_bus.ll
@@ -66,16 +65,14 @@ entry:
   ret i64 %4
 }
 
-; 28 occurrences:
+; 26 occurrences:
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; linux/optimized/blk-mq-debugfs.ll
 ; linux/optimized/drm_blend.ll
 ; linux/optimized/drm_plane.ll
-; linux/optimized/drm_self_refresh_helper.ll
 ; linux/optimized/i915_gem_create.ll
 ; linux/optimized/ibss.ll
 ; linux/optimized/intel_display.ll
-; linux/optimized/intel_engine_user.ll
 ; linux/optimized/intel_gt_irq.ll
 ; linux/optimized/intel_hotplug.ll
 ; linux/optimized/intel_workarounds.ll
@@ -119,13 +116,12 @@ entry:
   ret i64 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; hyperscan/optimized/match.c.ll
 ; linux/optimized/intel_gt_irq.ll
 ; linux/optimized/intel_psr.ll
 ; linux/optimized/libahci.ll
 ; linux/optimized/rcec.ll
-; linux/optimized/sysfs_engines.ll
 ; linux/optimized/xhci-trace.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i32 %1) #0 {

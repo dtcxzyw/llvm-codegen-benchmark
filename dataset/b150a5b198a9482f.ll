@@ -12,7 +12,7 @@ entry:
   ret i64 %6
 }
 
-; 137 occurrences:
+; 138 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -145,6 +145,7 @@ entry:
 ; llvm/optimized/DeclSpec.cpp.ll
 ; llvm/optimized/InstrRefBasedImpl.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; openmpi/optimized/coll_ftagree_earlyreturning.ll
 ; openspiel/optimized/chess.cc.ll
 ; openspiel/optimized/chess_common.cc.ll
@@ -173,13 +174,14 @@ entry:
   ret i64 %6
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; llvm/optimized/InstCombineSimplifyDemanded.cpp.ll
 ; llvm/optimized/LoopPeel.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
 ; quickjs/optimized/quickjs.ll
 ; rust-analyzer-rs/optimized/15tfqr3l9t81r1af.ll
 ; rust-analyzer-rs/optimized/1ocnbqjisn6f62l.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1, i32 %2) #0 {
 entry:

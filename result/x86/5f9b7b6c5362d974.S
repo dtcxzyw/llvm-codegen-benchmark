@@ -1,4 +1,4 @@
-func000000000000014c:                   # @func000000000000014c
+func000000000000048c:                   # @func000000000000048c
 	testb	$1, %dl
 	movl	$1, %eax
 	cmoveq	%rsi, %rax
@@ -8,7 +8,7 @@ func000000000000014c:                   # @func000000000000014c
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000000141:                   # @func0000000000000141
+func0000000000000481:                   # @func0000000000000481
 	testb	$1, %dl
 	movl	$1, %eax
 	cmoveq	%rsi, %rax

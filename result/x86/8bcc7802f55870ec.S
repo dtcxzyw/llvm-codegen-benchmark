@@ -12,7 +12,7 @@ func0000000000000019:                   # @func0000000000000019
 	setl	%cl
 	subl	%ecx, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000051:                   # @func0000000000000051
 	movl	%edi, %eax
 	cmpl	$3, %esi
 	sbbl	$0, %eax
@@ -46,6 +46,11 @@ func0000000000000031:                   # @func0000000000000031
 	setne	%cl
 	subl	%ecx, %eax
 	retq
+func0000000000000011:                   # @func0000000000000011
+	movl	%edi, %eax
+	cmpl	$3, %esi
+	sbbl	$0, %eax
+	retq
 func0000000000000018:                   # @func0000000000000018
 	movl	%edi, %eax
 	xorl	%ecx, %ecx
@@ -55,16 +60,16 @@ func0000000000000018:                   # @func0000000000000018
 	retq
 func0000000000000020:                   # @func0000000000000020
 	movl	%edi, %eax
-	cmpl	$-1074785480, %esi              # imm = 0xBFF01338
+	cmpl	$2, %esi
+	adcl	$-1, %eax
+	retq
+func0000000000000061:                   # @func0000000000000061
+	movl	%edi, %eax
+	cmpl	$4, %esi
 	adcl	$-1, %eax
 	retq
 func0000000000000010:                   # @func0000000000000010
 	movl	%edi, %eax
 	cmpl	$-1074785481, %esi              # imm = 0xBFF01337
 	sbbl	$0, %eax
-	retq
-func0000000000000021:                   # @func0000000000000021
-	movl	%edi, %eax
-	cmpl	$33, %esi
-	adcl	$-1, %eax
 	retq

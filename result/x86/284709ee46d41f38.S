@@ -5,7 +5,7 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	$40, %rdi
 	cmoveq	%rcx, %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	leaq	-3(%rdi), %rcx
 	movl	%edi, %edx
 	andl	$6, %edx

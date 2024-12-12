@@ -18,9 +18,16 @@ func0000000000000030:                   # @func0000000000000030
 	andl	$2147483646, %esi               # imm = 0x7FFFFFFE
 	addq	%rsi, %rax
 	retq
-func000000000000003a:                   # @func000000000000003a
+func000000000000003f:                   # @func000000000000003f
 	imulq	%rsi, %rdx
 	leaq	(%rdi,%rdx,8), %rax
 	andl	$12, %esi
 	leaq	(%rax,%rsi,8), %rax
+	retq
+func000000000000001b:                   # @func000000000000001b
+	imulq	%rsi, %rdx
+	leaq	(%rdi,%rdx,8), %rax
+	movabsq	$2305843009213693948, %rcx      # imm = 0x1FFFFFFFFFFFFFFC
+	andq	%rsi, %rcx
+	leaq	(%rax,%rcx,8), %rax
 	retq

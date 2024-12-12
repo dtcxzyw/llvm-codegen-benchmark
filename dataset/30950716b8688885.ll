@@ -1,5 +1,5 @@
 
-; 217 occurrences:
+; 216 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; assimp/optimized/AMFImporter_Material.cpp.ll
 ; assimp/optimized/AssbinLoader.cpp.ll
@@ -11,6 +11,7 @@
 ; assimp/optimized/XGLLoader.cpp.ll
 ; assimp/optimized/ZipArchiveIOSystem.cpp.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; bullet3/optimized/btGenericPoolAllocator.ll
 ; c3c/optimized/sema_expr.c.ll
 ; clamav/optimized/iso9660.c.ll
@@ -109,7 +110,6 @@
 ; llvm/optimized/OffloadBundler.cpp.ll
 ; llvm/optimized/PaddingChecker.cpp.ll
 ; llvm/optimized/ParentMapContext.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/ReachableCode.cpp.ll
 ; llvm/optimized/RecordLayoutBuilder.cpp.ll
@@ -196,7 +196,6 @@
 ; qemu/optimized/block_qcow2-refcount.c.ll
 ; qemu/optimized/block_vvfat.c.ll
 ; qemu/optimized/hw_intc_sifive_plic.c.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
 ; qemu/optimized/region.c.ll
 ; quantlib/optimized/forwardforwardmappings.ll
 ; quantlib/optimized/fwdperiodadapter.ll
@@ -244,7 +243,7 @@ entry:
   ret i64 %4
 }
 
-; 95 occurrences:
+; 91 occurrences:
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -333,10 +332,6 @@ entry:
 ; openmpi/optimized/sharedfp_lockedfile_iwrite.ll
 ; openmpi/optimized/sharedfp_lockedfile_read.ll
 ; openmpi/optimized/sharedfp_lockedfile_write.ll
-; openmpi/optimized/sharedfp_sm_iread.ll
-; openmpi/optimized/sharedfp_sm_iwrite.ll
-; openmpi/optimized/sharedfp_sm_read.ll
-; openmpi/optimized/sharedfp_sm_write.ll
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; velox/optimized/MmapAllocator.cpp.ll

@@ -21,7 +21,7 @@ entry:
   ret float %3
 }
 
-; 113 occurrences:
+; 114 occurrences:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; assimp/optimized/o3dgcDynamicVectorDecoder.cpp.ll
@@ -84,6 +84,7 @@ entry:
 ; gromacs/optimized/partition.cpp.ll
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
+; lightgbm/optimized/metric.cpp.ll
 ; llama.cpp/optimized/ggml-quants.c.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; minetest/optimized/camera.cpp.ll
@@ -230,7 +231,8 @@ entry:
   ret float %3
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; darktable/optimized/introspection_tonemap.cc.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
 ; meshlab/optimized/glarea.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
@@ -243,7 +245,7 @@ entry:
   ret float %3
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; abc/optimized/giaEmbed.c.ll
 ; bullet3/optimized/btGeneric6DofSpring2Constraint.ll
 ; bullet3/optimized/btKinematicCharacterController.ll
@@ -253,7 +255,6 @@ entry:
 ; darktable/optimized/introspection_graduatednd.c.ll
 ; darktable/optimized/introspection_sigmoid.c.ll
 ; darktable/optimized/introspection_splittoning.c.ll
-; gromacs/optimized/expanded.cpp.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; mitsuba3/optimized/catmullrom.cpp.ll
@@ -304,9 +305,13 @@ entry:
   ret float %3
 }
 
-; 3 occurrences:
+; 7 occurrences:
 ; darktable/optimized/introspection_relight.c.ll
 ; darktable/optimized/introspection_soften.c.ll
+; meshlab/optimized/cube_style_single_iteration.cpp.ll
+; meshlab/optimized/filter_cubization.cpp.ll
+; meshlab/optimized/fit_rotations_l1.cpp.ll
+; meshlab/optimized/orthogonal_procrustes.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
 ; Function Attrs: nounwind
 define float @func000000000000000c(float %0, float %1) #0 {

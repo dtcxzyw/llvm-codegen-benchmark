@@ -6,12 +6,12 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	$655, %eax                      # imm = 0x28F
 	setb	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
-	decl	%edi
-	testb	$3, %dil
+func0000000000000021:                   # @func0000000000000021
+	andl	$3, %edi
+	cmpw	$1, %di
 	sete	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	movl	%edi, %eax
 	incl	%eax
 	movswl	%ax, %ecx

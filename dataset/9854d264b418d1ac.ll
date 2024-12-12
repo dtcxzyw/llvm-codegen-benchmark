@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 21 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; assimp/optimized/AssbinFileWriter.cpp.ll
 ; box2d/optimized/b2_collide_edge.cpp.ll
@@ -17,12 +17,29 @@
 ; pbrt-v4/optimized/textures.cpp.ll
 ; typst-rs/optimized/377uk5tkmxagdt0q.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/4km3eupdnqqnodg5d7nrlf2sf.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/exru7xor9i4a4ixpzw7x9xk8s.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, float %1) #0 {
 entry:
   %2 = bitcast float %1 to i32
   %3 = zext i32 %2 to i64
   %4 = shl nuw i64 %3, 32
+  %5 = or disjoint i64 %4, %0
+  ret i64 %5
+}
+
+; 2 occurrences:
+; eastl/optimized/TestVectorMap.cpp.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000f(i64 %0, float %1) #0 {
+entry:
+  %2 = bitcast float %1 to i32
+  %3 = zext nneg i32 %2 to i64
+  %4 = shl nuw nsw i64 %3, 32
   %5 = or disjoint i64 %4, %0
   ret i64 %5
 }

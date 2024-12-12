@@ -26,12 +26,6 @@ func0000000000000001:                   # @func0000000000000001
 	kmovd	%eax, %k1
 	vmovsd	%xmm0, %xmm0, %xmm0 {%k1} {z}
 	retq
-func0000000000000004:                   # @func0000000000000004
-	cmpq	$5, %rdi
-	setb	%al
-	kmovd	%eax, %k1
-	vmovsd	%xmm0, %xmm0, %xmm0 {%k1} {z}
-	retq
 func000000000000000c:                   # @func000000000000000c
 	testq	%rdi, %rdi
 	sete	%al

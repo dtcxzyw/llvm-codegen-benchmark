@@ -1,11 +1,7 @@
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	fcvtzs	v3.2d, v1.2d
-	fcvtzs	v1.2d, v2.2d
-	ushll	v2.2d, v0.2s, #0
-	ushll2	v0.2d, v0.4s, #0
-	sli	v3.2d, v2.2d, #32
-	sli	v1.2d, v0.2d, #32
-	mov	v0.16b, v3.16b
+	fcvtzs	w8, d0
+                                        // kill: def $w0 killed $w0 def $x0
+	orr	x0, x8, x0, lsl #32
 	ret
                                         // -- End function

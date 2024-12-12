@@ -17,9 +17,20 @@ entry:
   ret i64 %5
 }
 
-; 44 occurrences:
+; 55 occurrences:
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/src.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/wait.ll
 ; cmake/optimized/huf_compress.c.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
@@ -29,7 +40,6 @@ entry:
 ; libsodium/optimized/libsodium_la-keypair.ll
 ; libsodium/optimized/libsodium_la-x25519_ref10.ll
 ; lief/optimized/poly1305.c.ll
-; linux/optimized/fs-writeback.ll
 ; linux/optimized/lzo1x_compress.ll
 ; linux/optimized/mlock.ll
 ; linux/optimized/mpih-div.ll
@@ -61,6 +71,7 @@ entry:
 ; velox/optimized/Not.cpp.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
+; zed-rs/optimized/1dgnm6lfd9h2ap1ws2supa1aq.ll
 ; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
@@ -207,7 +218,7 @@ define i64 @func0000000000000012(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
   %4 = lshr i64 %3, 32
-  %5 = add nuw i64 %4, %0
+  %5 = add nuw i64 %0, %4
   ret i64 %5
 }
 
@@ -236,11 +247,11 @@ define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
   %4 = lshr i64 %3, 32
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
-; 104 occurrences:
+; 102 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/fixed-dtoa.cc.ll
 ; arrow/optimized/strtod.cc.ll
@@ -276,8 +287,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -350,11 +359,12 @@ define i64 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = lshr i64 %3, 32
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
-; 19 occurrences:
+; 20 occurrences:
+; boost/optimized/to_chars.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; libquic/optimized/poly1305_vec.c.ll
@@ -379,24 +389,40 @@ define i64 @func000000000000001b(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = lshr i64 %3, 32
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
-; 7 occurrences:
-; freetype/optimized/ftbase.c.ll
-; libsodium/optimized/libsse2_la-poly1305_sse2.ll
-; opencv/optimized/softfloat.cpp.ll
-; openjdk/optimized/stringTable.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
-; softposit-rs/optimized/1jooigl29qhneyer.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
+; 1 occurrences:
+; qemu/optimized/target_riscv_vector_helper.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000019(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nuw nsw i64 %1, %2
+  %3 = add nsw i64 %1, %2
   %4 = lshr i64 %3, 1
-  %5 = add nsw i64 %4, %0
+  %5 = add nuw i64 %4, %0
+  ret i64 %5
+}
+
+; 12 occurrences:
+; llvm/optimized/IRTranslator.cpp.ll
+; llvm/optimized/IfConversion.cpp.ll
+; llvm/optimized/JumpThreading.cpp.ll
+; llvm/optimized/MIRPrinter.cpp.ll
+; llvm/optimized/MachineBasicBlock.cpp.ll
+; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; llvm/optimized/SwitchLoweringUtils.cpp.ll
+; llvm/optimized/X86FlagsCopyLowering.cpp.ll
+; llvm/optimized/X86SpeculativeLoadHardening.cpp.ll
+; opencv/optimized/softfloat.cpp.ll
+; qemu/optimized/target_riscv_vector_helper.c.ll
+; wireshark/optimized/wireless_timeline.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %1, %2
+  %4 = lshr i64 %3, 1
+  %5 = add nuw i64 %0, %4
   ret i64 %5
 }
 
@@ -569,7 +595,6 @@ entry:
 ; openmpi/optimized/psquash_flex128.ll
 ; openusd/optimized/json.cpp.ll
 ; qemu/optimized/fpu_softfloat.c.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
 ; redis/optimized/decay.ll
 ; redis/optimized/decay.sym.ll
 ; redis/optimized/sc.ll
@@ -648,46 +673,13 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; wolfssl/optimized/poly1305.c.ll
+; zed-rs/optimized/1dgnm6lfd9h2ap1ws2supa1aq.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
-  %4 = lshr i64 %3, 63
+  %4 = lshr i64 %3, 13
   %5 = add nuw nsw i64 %4, %0
-  ret i64 %5
-}
-
-; 1 occurrences:
-; qemu/optimized/target_riscv_vector_helper.c.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nsw i64 %1, %2
-  %4 = lshr i64 %3, 1
-  %5 = add nuw i64 %4, %0
-  ret i64 %5
-}
-
-; 13 occurrences:
-; llvm/optimized/IRTranslator.cpp.ll
-; llvm/optimized/IfConversion.cpp.ll
-; llvm/optimized/JumpThreading.cpp.ll
-; llvm/optimized/MIRPrinter.cpp.ll
-; llvm/optimized/MachineBasicBlock.cpp.ll
-; llvm/optimized/SelectionDAGBuilder.cpp.ll
-; llvm/optimized/SwitchLoweringUtils.cpp.ll
-; llvm/optimized/X86FlagsCopyLowering.cpp.ll
-; llvm/optimized/X86SpeculativeLoadHardening.cpp.ll
-; opencv/optimized/softfloat.cpp.ll
-; qemu/optimized/target_riscv_vector_helper.c.ll
-; spike/optimized/s_mul64To128M.ll
-; wireshark/optimized/wireless_timeline.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add i64 %1, %2
-  %4 = lshr i64 %3, 1
-  %5 = add nuw i64 %4, %0
   ret i64 %5
 }
 
@@ -728,6 +720,21 @@ entry:
   ret i64 %5
 }
 
+; 5 occurrences:
+; freetype/optimized/ftbase.c.ll
+; libsodium/optimized/libsse2_la-poly1305_sse2.ll
+; opencv/optimized/softfloat.cpp.ll
+; openjdk/optimized/stringTable.ll
+; softposit-rs/optimized/1jooigl29qhneyer.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000019(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %1, %2
+  %4 = lshr i64 %3, 3
+  %5 = add nsw i64 %4, %0
+  ret i64 %5
+}
+
 ; 10 occurrences:
 ; abc/optimized/wlcGraft.c.ll
 ; arrow/optimized/fast-dtoa.cc.ll
@@ -744,7 +751,33 @@ define i64 @func000000000000001a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = lshr i64 %3, 32
-  %5 = add nuw i64 %4, %0
+  %5 = add nuw i64 %0, %4
+  ret i64 %5
+}
+
+; 3 occurrences:
+; darktable/optimized/introspection_cacorrect.c.ll
+; freetype/optimized/psaux.c.ll
+; php/optimized/dow.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %1, %2
+  %4 = lshr i64 %3, 2
+  %5 = add i64 %0, %4
+  ret i64 %5
+}
+
+; 3 occurrences:
+; freetype/optimized/psaux.c.ll
+; freetype/optimized/sdf.c.ll
+; php/optimized/dow.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000b(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %1, %2
+  %4 = lshr i64 %3, 2
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -766,18 +799,6 @@ entry:
 }
 
 ; 2 occurrences:
-; darktable/optimized/introspection_cacorrect.c.ll
-; freetype/optimized/psaux.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nsw i64 %1, %2
-  %4 = lshr i64 %3, 1
-  %5 = add i64 %4, %0
-  ret i64 %5
-}
-
-; 2 occurrences:
 ; opencv/optimized/softfloat.cpp.ll
 ; spike/optimized/s_addMagsF32.ll
 ; Function Attrs: nounwind
@@ -785,19 +806,7 @@ define i64 @func000000000000001f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = lshr exact i64 %3, 1
-  %5 = add nuw nsw i64 %4, %0
-  ret i64 %5
-}
-
-; 2 occurrences:
-; freetype/optimized/psaux.c.ll
-; freetype/optimized/sdf.c.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000b(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nsw i64 %1, %2
-  %4 = lshr i64 %3, 16
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 

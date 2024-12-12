@@ -1,5 +1,5 @@
 
-; 188 occurrences:
+; 183 occurrences:
 ; abc/optimized/abcIf.c.ll
 ; abc/optimized/abcNpnSave.c.ll
 ; abc/optimized/abcSymm.c.ll
@@ -72,6 +72,7 @@
 ; arrow/optimized/list_util.cc.ll
 ; arrow/optimized/vector_selection_filter_internal.cc.ll
 ; arrow/optimized/vector_selection_take_internal.cc.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/regexec.c.ll
 ; cmake/optimized/fse_compress.c.ll
 ; cmake/optimized/xmlparse.c.ll
@@ -89,9 +90,6 @@
 ; jemalloc/optimized/base.ll
 ; jemalloc/optimized/base.pic.ll
 ; jemalloc/optimized/base.sym.ll
-; jemalloc/optimized/bin.ll
-; jemalloc/optimized/bin.pic.ll
-; jemalloc/optimized/bin.sym.ll
 ; jemalloc/optimized/buf_writer.ll
 ; jemalloc/optimized/buf_writer.pic.ll
 ; jemalloc/optimized/buf_writer.sym.ll
@@ -108,7 +106,6 @@
 ; linux/optimized/acpi_lpit.ll
 ; linux/optimized/bitmap.ll
 ; linux/optimized/buffered-io.ll
-; linux/optimized/cppc.ll
 ; linux/optimized/dma-iommu.ll
 ; linux/optimized/genalloc.ll
 ; linux/optimized/hugetlb.ll
@@ -166,8 +163,6 @@
 ; redis/optimized/arena.sym.ll
 ; redis/optimized/base.ll
 ; redis/optimized/base.sym.ll
-; redis/optimized/bin.ll
-; redis/optimized/bin.sym.ll
 ; redis/optimized/buf_writer.ll
 ; redis/optimized/buf_writer.sym.ll
 ; redis/optimized/jemalloc.ll

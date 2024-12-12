@@ -30,7 +30,7 @@ func000000000000000c:                   # @func000000000000000c
 	retq
 func0000000000000006:                   # @func0000000000000006
 	subq	%rsi, %rdx
-	cmpq	$1025, %rdx                     # imm = 0x401
+	cmpq	$385, %rdx                      # imm = 0x181
 	setl	%al
 	andb	%dil, %al
 	retq

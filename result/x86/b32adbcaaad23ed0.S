@@ -6,11 +6,11 @@ func0000000000000004:                   # @func0000000000000004
 	cmovnel	%esi, %eax
 	retq
 func0000000000000006:                   # @func0000000000000006
-	testb	$1, %dil
-	movl	$20, %eax
-	cmovel	%esi, %eax
 	testq	%rdx, %rdx
+	movl	$20, %eax
 	cmovnel	%esi, %eax
+	testb	$1, %dil
+	cmovel	%esi, %eax
 	retq
 func0000000000000032:                   # @func0000000000000032
 	testb	$1, %dil

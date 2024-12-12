@@ -1,5 +1,5 @@
 
-; 42 occurrences:
+; 43 occurrences:
 ; assimp/optimized/NDOLoader.cpp.ll
 ; coremark/optimized/core_matrix.c.ll
 ; freetype/optimized/sfnt.c.ll
@@ -18,6 +18,7 @@
 ; linux/optimized/intel_vrr.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/tcp_offload.ll
+; lvgl/optimized/lv_draw_label.ll
 ; oiio/optimized/pnginput.cpp.ll
 ; opencv/optimized/resize.cpp.ll
 ; opencv/optimized/smooth.dispatch.cpp.ll
@@ -51,7 +52,7 @@ entry:
   ret i32 %4
 }
 
-; 35 occurrences:
+; 34 occurrences:
 ; clamav/optimized/matcher-ac.c.ll
 ; cmake/optimized/cmELF.cxx.ll
 ; darktable/optimized/CrwDecoder.cpp.ll
@@ -59,7 +60,6 @@ entry:
 ; darktable/optimized/Rw2Decoder.cpp.ll
 ; freetype/optimized/sfnt.c.ll
 ; icu/optimized/gencnval.ll
-; libquic/optimized/ntt.c.ll
 ; libquic/optimized/poly.c.ll
 ; libwebp/optimized/quant_enc.c.ll
 ; miniaudio/optimized/unity.c.ll

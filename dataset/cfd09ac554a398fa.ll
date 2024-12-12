@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 21 occurrences:
 ; clamav/optimized/message.c.ll
 ; lief/optimized/GnuHash.cpp.ll
 ; lightgbm/optimized/bin.cpp.ll
@@ -9,7 +9,6 @@
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/CheckPlacementNew.cpp.ll
 ; llvm/optimized/PGOInstrumentation.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/VectorCombine.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -31,9 +30,8 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; llvm/optimized/CGBuiltin.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind

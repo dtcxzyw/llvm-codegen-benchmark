@@ -17,13 +17,13 @@ entry:
 ; freetype/optimized/truetype.c.ll
 ; opencv/optimized/imgwarp.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i16 %1) #0 {
+define ptr @func000000000000001b(ptr %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = shl nsw i32 %2, 2
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw i8, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 1
   ret ptr %6
 }
 

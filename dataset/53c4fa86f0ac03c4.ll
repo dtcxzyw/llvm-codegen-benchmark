@@ -1,8 +1,6 @@
 
-; 3 occurrences:
+; 1 occurrences:
 ; linux/optimized/pt.ll
-; opencv/optimized/stereo_binary_bm.cpp.ll
-; opencv/optimized/stereobm.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:

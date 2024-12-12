@@ -1,6 +1,6 @@
-func00000000000001cc:                   # @func00000000000001cc
+func000000000000058c:                   # @func000000000000058c
 	andi	a2, a2, 255
-	negw	a1, a1
+	negw	a2, a2
 	xor	a1, a1, a2
 	or	a0, a0, a1
 	sext.w	a0, a0

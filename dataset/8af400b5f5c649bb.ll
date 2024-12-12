@@ -7,7 +7,7 @@
 ; openssl/optimized/libcrypto-shlib-bn_conv.ll
 ; postgres/optimized/rangetypes_gist.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000ca(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 63
   %3 = lshr i32 %2, 6
@@ -21,7 +21,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-bn_lib.ll
 ; openssl/optimized/libcrypto-shlib-bn_lib.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000046(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = lshr i32 %2, 3
@@ -29,17 +29,15 @@ entry:
   ret i1 %4
 }
 
-; 8 occurrences:
+; 6 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; openjdk/optimized/locknode.ll
 ; openjdk/optimized/matcher.ll
-; openusd/optimized/stbImage.cpp.ll
 ; raylib/optimized/rtextures.c.ll
-; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wireshark/optimized/tvbuff_lz77huff.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000048(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = lshr i32 %2, 6
@@ -47,13 +45,11 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
-; hermes/optimized/APInt.cpp.ll
-; llvm/optimized/APInt.cpp.ll
+; 2 occurrences:
 ; openjdk/optimized/locknode.ll
 ; openjdk/optimized/matcher.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000044(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = lshr i32 %2, 6
@@ -61,15 +57,11 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
-; hdf5/optimized/H5Dchunk.c.ll
+; 2 occurrences:
 ; hyperscan/optimized/repeatcompile.cpp.ll
-; icu/optimized/ustring.ll
-; linux/optimized/route.ll
 ; openjdk/optimized/matcher.ll
-; wireshark/optimized/packet-ldp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000c8(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = lshr i32 %2, 6
@@ -80,7 +72,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/matcher.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000c4(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = lshr i32 %2, 6
@@ -88,8 +80,8 @@ entry:
   ret i1 %4
 }
 
-; 181 occurrences:
-; arrow/optimized/compare_internal.cc.ll
+; 177 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -97,7 +89,6 @@ entry:
 ; fmt/optimized/os.cc.ll
 ; fmt/optimized/unicode-test.cc.ll
 ; fmt/optimized/util.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
 ; hermes/optimized/APInt.cpp.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
@@ -171,7 +162,6 @@ entry:
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/intel_cdclk.ll
-; linux/optimized/virtio_net.ll
 ; llvm/optimized/APInt.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
@@ -245,7 +235,6 @@ entry:
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
 ; openjdk/optimized/escape.ll
-; soc-simulator/optimized/verilated.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; tev/optimized/Channel.cpp.ll
 ; tev/optimized/ClipboardImageLoader.cpp.ll
@@ -266,7 +255,6 @@ entry:
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
-; verilator/optimized/V3Number.cpp.ll
 ; wireshark/optimized/packet-gsm_a_rr.c.ll
 ; z3/optimized/bv_slice.cpp.ll
 ; z3/optimized/theory_char.cpp.ll
@@ -279,11 +267,27 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
-; linux/optimized/drm_dp_helper.ll
+; 5 occurrences:
+; arrow/optimized/compare_internal.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; linux/optimized/virtio_net.ll
+; soc-simulator/optimized/verilated.ll
 ; verilator/optimized/V3Number.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000066(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add i32 %1, 31
+  %3 = lshr i32 %2, 5
+  %4 = icmp samesign ult i32 %3, %0
+  ret i1 %4
+}
+
+; 3 occurrences:
+; linux/optimized/drm_dp_helper.ll
+; soc-simulator/optimized/verilated.ll
+; verilator/optimized/V3Number.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000c6(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 31
   %3 = lshr i32 %2, 5
@@ -316,6 +320,20 @@ entry:
   ret i1 %4
 }
 
+; 4 occurrences:
+; hdf5/optimized/H5Dchunk.c.ll
+; icu/optimized/ustring.ll
+; linux/optimized/route.ll
+; wireshark/optimized/packet-ldp.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000d8(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nuw nsw i32 %1, 8
+  %3 = lshr i32 %2, 3
+  %4 = icmp samesign ugt i32 %3, %0
+  ret i1 %4
+}
+
 ; 6 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/unpack.cpp.ll
@@ -324,7 +342,7 @@ entry:
 ; linux/optimized/nl80211.ll
 ; llvm/optimized/ConstantFolding.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000c1(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = lshr i32 %2, 1
@@ -332,13 +350,23 @@ entry:
   ret i1 %4
 }
 
-; 671 occurrences:
+; 2 occurrences:
+; hermes/optimized/APInt.cpp.ll
+; llvm/optimized/APInt.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000054(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, -1075
+  %3 = lshr i32 %2, 6
+  %4 = icmp samesign ult i32 %3, %0
+  ret i1 %4
+}
+
+; 24 occurrences:
 ; freetype/optimized/pshinter.c.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; hermes/optimized/RegAlloc.cpp.ll
 ; linux/optimized/exfield.ll
-; linux/optimized/exfldio.ll
-; linux/optimized/intel_cdclk.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/CFIInstrInserter.cpp.ll
@@ -359,6 +387,94 @@ entry:
 ; llvm/optimized/TargetRegisterInfo.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; llvm/optimized/X86LowerTileCopy.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add i32 %1, 64
+  %3 = lshr i32 %2, 6
+  %4 = icmp samesign ugt i32 %3, %0
+  ret i1 %4
+}
+
+; 20 occurrences:
+; hermes/optimized/IdentifierTable.cpp.ll
+; llvm/optimized/AArch64FrameLowering.cpp.ll
+; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
+; llvm/optimized/CFIInstrInserter.cpp.ll
+; llvm/optimized/CodeGenCoverage.cpp.ll
+; llvm/optimized/Debugify.cpp.ll
+; llvm/optimized/DependenceAnalysis.cpp.ll
+; llvm/optimized/LoopStrengthReduce.cpp.ll
+; llvm/optimized/MachineCheckDebugify.cpp.ll
+; llvm/optimized/OMPContext.cpp.ll
+; llvm/optimized/PrologEpilogInserter.cpp.ll
+; llvm/optimized/RDFRegisters.cpp.ll
+; llvm/optimized/RegAllocGreedy.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; llvm/optimized/SafeStackLayout.cpp.ll
+; llvm/optimized/ShrinkWrap.cpp.ll
+; llvm/optimized/SpillPlacement.cpp.ll
+; llvm/optimized/StackColoring.cpp.ll
+; llvm/optimized/StackSlotColoring.cpp.ll
+; llvm/optimized/X86FrameLowering.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000098(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nuw i32 %1, 1
+  %3 = lshr i32 %2, 6
+  %4 = icmp samesign ugt i32 %3, %0
+  ret i1 %4
+}
+
+; 2 occurrences:
+; openusd/optimized/stbImage.cpp.ll
+; stb/optimized/stb_image.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000058(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, 7
+  %3 = lshr i32 %2, 3
+  %4 = icmp samesign ugt i32 %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; yosys/optimized/BigUnsigned.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000084(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nuw i32 %1, 63
+  %3 = lshr i32 %2, 6
+  %4 = icmp ult i32 %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; yosys/optimized/BigUnsigned.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000088(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nuw i32 %1, 63
+  %3 = lshr i32 %2, 6
+  %4 = icmp ugt i32 %3, %0
+  ret i1 %4
+}
+
+; 2 occurrences:
+; harfbuzz/optimized/hb-subset.cc.ll
+; quickjs/optimized/libbf.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000006(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add i32 %1, -1
+  %3 = lshr i32 %2, 6
+  %4 = icmp slt i32 %3, %0
+  ret i1 %4
+}
+
+; 646 occurrences:
+; linux/optimized/exfldio.ll
+; linux/optimized/intel_cdclk.ll
 ; wireshark/optimized/packet-gsm_a_rr.c.ll
 ; wolfssl/optimized/coding.c.ll
 ; wolfssl/optimized/sp_int.c.ll
@@ -463,7 +579,6 @@ entry:
 ; z3/optimized/check_relation.cpp.ll
 ; z3/optimized/check_sat_result.cpp.ll
 ; z3/optimized/clp_context.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/cofactor_elim_term_ite.cpp.ll
 ; z3/optimized/cofactor_term_ite_tactic.cpp.ll
 ; z3/optimized/collect_occs.cpp.ll
@@ -1007,71 +1122,16 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add i32 %1, 64
-  %3 = lshr i32 %2, 6
+  %2 = add i32 %1, 8
+  %3 = lshr i32 %2, 3
   %4 = icmp ugt i32 %3, %0
-  ret i1 %4
-}
-
-; 21 occurrences:
-; hermes/optimized/IdentifierTable.cpp.ll
-; llvm/optimized/AArch64FrameLowering.cpp.ll
-; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
-; llvm/optimized/CFIInstrInserter.cpp.ll
-; llvm/optimized/CodeGenCoverage.cpp.ll
-; llvm/optimized/Debugify.cpp.ll
-; llvm/optimized/DependenceAnalysis.cpp.ll
-; llvm/optimized/LoopStrengthReduce.cpp.ll
-; llvm/optimized/MachineCheckDebugify.cpp.ll
-; llvm/optimized/OMPContext.cpp.ll
-; llvm/optimized/PrologEpilogInserter.cpp.ll
-; llvm/optimized/RDFRegisters.cpp.ll
-; llvm/optimized/RegAllocGreedy.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
-; llvm/optimized/SafeStackLayout.cpp.ll
-; llvm/optimized/ShrinkWrap.cpp.ll
-; llvm/optimized/SpillPlacement.cpp.ll
-; llvm/optimized/StackColoring.cpp.ll
-; llvm/optimized/StackSlotColoring.cpp.ll
-; llvm/optimized/X86FrameLowering.cpp.ll
-; yosys/optimized/BigUnsigned.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add nuw i32 %1, 1
-  %3 = lshr i32 %2, 6
-  %4 = icmp ugt i32 %3, %0
-  ret i1 %4
-}
-
-; 2 occurrences:
-; freetype/optimized/sfnt.c.ll
-; yosys/optimized/BigUnsigned.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add nuw i32 %1, 63
-  %3 = lshr i32 %2, 6
-  %4 = icmp ult i32 %3, %0
-  ret i1 %4
-}
-
-; 2 occurrences:
-; harfbuzz/optimized/hb-subset.cc.ll
-; quickjs/optimized/libbf.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000006(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add i32 %1, -1
-  %3 = lshr i32 %2, 6
-  %4 = icmp slt i32 %3, %0
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; wireshark/optimized/packet-gsm_a_rr.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 8
   %3 = lshr exact i32 %2, 3
@@ -1082,7 +1142,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-gsm_a_rr.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000065(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000c5(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 8
   %3 = lshr i32 %2, 3
@@ -1090,15 +1150,25 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; linux/optimized/sd.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, -60
+  %3 = lshr exact i32 %2, 5
+  %4 = icmp eq i32 %3, %0
+  ret i1 %4
+}
+
+; 2 occurrences:
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add nsw i32 %1, -60
-  %3 = lshr i32 %2, 5
+  %2 = add nsw i32 %1, -12
+  %3 = lshr i32 %2, 1
   %4 = icmp eq i32 %3, %0
   ret i1 %4
 }
@@ -1106,7 +1176,7 @@ entry:
 ; 1 occurrences:
 ; wolfssl/optimized/ecc.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000006a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = lshr exact i32 %2, 1
@@ -1117,7 +1187,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/dxt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000e1(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = lshr exact i32 %2, 1
@@ -1128,11 +1198,22 @@ entry:
 ; 1 occurrences:
 ; tev/optimized/Common.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000e6(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = lshr exact i32 %2, 12
   %4 = icmp slt i32 %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; freetype/optimized/sfnt.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000094(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nuw i32 %1, 7
+  %3 = lshr i32 %2, 3
+  %4 = icmp samesign ult i32 %3, %0
   ret i1 %4
 }
 

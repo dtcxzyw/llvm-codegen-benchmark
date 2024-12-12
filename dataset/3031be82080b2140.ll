@@ -315,7 +315,7 @@ entry:
   ret i64 %2
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; actix-rs/optimized/2d9c72efneckaqzp.ll
 ; delta-rs/optimized/s2xrj2sh770tx8d.ll
 ; rust-analyzer-rs/optimized/178ko0g73oimi4oy.ll
@@ -323,6 +323,7 @@ entry:
 ; rust-analyzer-rs/optimized/233tpdwe8f7eoneo.ll
 ; rust-analyzer-rs/optimized/2bwlvqntjk72kr6f.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
+; zed-rs/optimized/exapxsiq77i6auw048euvo21y.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0) #0 {
 entry:

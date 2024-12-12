@@ -12,7 +12,7 @@ entry:
   %4 = mul nuw i16 %3, 36
   %5 = udiv i16 %4, %1
   %6 = zext nneg i16 %5 to i32
-  %7 = add i32 %6, %0
+  %7 = add i32 %0, %6
   ret i32 %7
 }
 

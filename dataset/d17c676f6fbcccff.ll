@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 13 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
@@ -9,7 +9,6 @@
 ; linux/optimized/nl80211.ll
 ; linux/optimized/route.ll
 ; llvm/optimized/DwarfDebug.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/TypeIndexDiscovery.cpp.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; postgres/optimized/xlogreader.ll

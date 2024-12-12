@@ -1,10 +1,9 @@
 
-; 35 occurrences:
+; 33 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/aigCanon.c.ll
 ; abc/optimized/aigCuts.c.ll
 ; abc/optimized/bdcCore.c.ll
-; abc/optimized/cswMan.c.ll
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/extraBddThresh.c.ll
 ; abc/optimized/extraUtilMaj.c.ll
@@ -17,7 +16,6 @@
 ; abc/optimized/ifTruth.c.ll
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/kitTruth.c.ll
-; abc/optimized/lpkMan.c.ll
 ; abc/optimized/lpkMulti.c.ll
 ; abc/optimized/luckySwap.c.ll
 ; abc/optimized/rsbDec6.c.ll
@@ -43,21 +41,21 @@ entry:
   ret i32 %3
 }
 
-; 30 occurrences:
+; 28 occurrences:
 ; abc/optimized/abcLut.c.ll
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/aigCanon.c.ll
 ; abc/optimized/ifDec16.c.ll
 ; abseil-cpp/optimized/charconv.cc.ll
 ; arrow/optimized/compare_internal.cc.ll
+; boost/optimized/to_chars.ll
+; darktable/optimized/introspection_flip.c.ll
 ; folly/optimized/Checksum.cpp.ll
 ; freetype/optimized/psaux.c.ll
 ; git/optimized/diff-delta.ll
 ; hyperscan/optimized/engine_hyperscan.cpp.ll
 ; linux/optimized/dmar.ll
 ; linux/optimized/libata-acpi.ll
-; linux/optimized/nfs4trace.ll
-; linux/optimized/utownerid.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/AArch64TargetMachine.cpp.ll
 ; llvm/optimized/LLVMTargetMachine.cpp.ll
@@ -67,8 +65,6 @@ entry:
 ; llvm/optimized/X86TargetMachine.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
-; opencv/optimized/array.cpp.ll
-; openjdk/optimized/TransformHelper.ll
 ; openjdk/optimized/exceptionHandlerTable.ll
 ; pbrt-v4/optimized/aggregates.cpp.ll
 ; postgres/optimized/tsgistidx.ll
@@ -82,11 +78,9 @@ entry:
   ret i32 %3
 }
 
-; 93 occurrences:
+; 91 occurrences:
 ; abc/optimized/abcDfs.c.ll
 ; abc/optimized/abcIf.c.ll
-; abc/optimized/abcOrchestration.c.ll
-; abc/optimized/abcResub.c.ll
 ; abc/optimized/aigJust.c.ll
 ; abc/optimized/amapPerm.c.ll
 ; abc/optimized/amapRule.c.ll
@@ -184,11 +178,10 @@ entry:
   ret i32 %3
 }
 
-; 17 occurrences:
+; 15 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/acecXor.c.ll
 ; abc/optimized/cecPat.c.ll
-; abc/optimized/dauCount.c.ll
 ; abc/optimized/giaCut.c.ll
 ; abc/optimized/giaDecs.c.ll
 ; abc/optimized/giaPat.c.ll
@@ -198,7 +191,6 @@ entry:
 ; abc/optimized/giaUtil.c.ll
 ; icu/optimized/unistr.ll
 ; icu/optimized/ustr.ll
-; linux/optimized/blk-sysfs.ll
 ; linux/optimized/control.ll
 ; linux/optimized/sit.ll
 ; openusd/optimized/reconintra.c.ll

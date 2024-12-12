@@ -1,5 +1,5 @@
 
-; 754 occurrences:
+; 768 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/cuddGenetic.c.ll
@@ -13,6 +13,22 @@
 ; arrow/optimized/message.cc.ll
 ; arrow/optimized/writer.cc.ll
 ; assimp/optimized/3DSLoader.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/copy_segment_point.ll
+; boost/optimized/core.ll
+; boost/optimized/format_args.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/ipc_reliable_message_queue.ll
+; boost/optimized/mo_lambda.ll
+; boost/optimized/rational.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/static_string.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/casadi_misc.cpp.ll
 ; casadi/optimized/conic.cpp.ll
 ; casadi/optimized/cvodea.c.ll
@@ -101,7 +117,6 @@
 ; cpython/optimized/longobject.ll
 ; cpython/optimized/memoryobject.ll
 ; cpython/optimized/stgdict.ll
-; cpython/optimized/unicode.ll
 ; cpython/optimized/unicodeobject.ll
 ; cvc5/optimized/resolution_proofs_util.cpp.ll
 ; cvc5/optimized/theory_arith_private.cpp.ll
@@ -339,7 +354,6 @@
 ; llvm/optimized/PredicateInfo.cpp.ll
 ; llvm/optimized/Process.cpp.ll
 ; llvm/optimized/ProfileSummaryBuilder.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVVEmitter.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/RecordLayoutBuilder.cpp.ll
@@ -556,7 +570,6 @@
 ; openmpi/optimized/fcoll_vulcan_file_write_all.ll
 ; openmpi/optimized/libompi_dbg_msgq_la-ompi_msgq_dll.ll
 ; openmpi/optimized/opal_datatype_add.ll
-; openmpi/optimized/vprotocol_pessimist_sender_based.ll
 ; openspiel/optimized/battleship.cc.ll
 ; openspiel/optimized/dots_and_boxes.cc.ll
 ; openspiel/optimized/go_board.cc.ll
@@ -753,6 +766,7 @@
 ; z3/optimized/subpaving_mpfx.cpp.ll
 ; z3/optimized/subpaving_mpq.cpp.ll
 ; z3/optimized/theory_arith.cpp.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; zxing/optimized/ConcentricFinder.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {

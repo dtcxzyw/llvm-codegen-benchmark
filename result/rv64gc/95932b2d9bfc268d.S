@@ -8,16 +8,6 @@ func0000000000000000:                   # @func0000000000000000
 	addi	a2, a2, -1
 	addw	a0, a0, a2
 	ret
-func0000000000000020:                   # @func0000000000000020
-	andi	a1, a1, 1
-	bnez	a1, .LBB1_2
-	li	a1, 31
-	addw	a0, a0, a1
-	ret
-.LBB1_2:
-	addi	a1, a2, 32
-	addw	a0, a0, a1
-	ret
 func0000000000000005:                   # @func0000000000000005
 	addi	a2, a2, 1
 	slli	a1, a1, 63

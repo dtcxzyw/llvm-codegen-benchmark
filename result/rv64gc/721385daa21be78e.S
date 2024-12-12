@@ -18,6 +18,13 @@ func0000000000000000:                   # @func0000000000000000
 	slliw	a1, a1, 4
 	or	a0, a0, a1
 	ret
+func0000000000000006:                   # @func0000000000000006
+	lui	a3, 8192
+	slliw	a0, a0, 8
+	addw	a2, a2, a3
+	or	a0, a0, a1
+	or	a0, a0, a2
+	ret
 func0000000000000038:                   # @func0000000000000038
 	add	a1, a1, a2
 	addiw	a1, a1, 4

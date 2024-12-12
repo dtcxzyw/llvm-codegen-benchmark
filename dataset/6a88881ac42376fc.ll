@@ -6,7 +6,7 @@
 ; llvm/optimized/SemaDecl.cpp.ll
 ; ruby/optimized/option.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = icmp eq i64 %3, 0
@@ -20,7 +20,7 @@ entry:
 ; llvm/optimized/BasicAliasAnalysis.cpp.ll
 ; llvm/optimized/CallLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4
   %4 = icmp eq i64 %3, 0

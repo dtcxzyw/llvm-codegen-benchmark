@@ -14,3 +14,10 @@ func0000000000000000:                   # @func0000000000000000
 	subq	%rdi, %rax
 	addq	$16, %rax
 	retq
+func000000000000000c:                   # @func000000000000000c
+	leaq	13(%rsi), %rax
+	leaq	25(%rsi), %rcx
+	testb	$1, %dl
+	cmovneq	%rcx, %rax
+	subq	%rdi, %rax
+	retq

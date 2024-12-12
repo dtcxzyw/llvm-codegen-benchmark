@@ -18,7 +18,7 @@
 define i128 @func0000000000000007(i128 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i128
-  %3 = add nuw nsw i128 %2, %0
+  %3 = add nuw nsw i128 %0, %2
   ret i128 %3
 }
 
@@ -52,7 +52,17 @@ entry:
 define i128 @func0000000000000003(i128 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i128
-  %3 = add nuw nsw i128 %2, %0
+  %3 = add nuw nsw i128 %0, %2
+  ret i128 %3
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i128 @func0000000000000004(i128 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i128
+  %3 = add i128 %0, %2
   ret i128 %3
 }
 

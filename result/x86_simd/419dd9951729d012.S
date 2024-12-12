@@ -23,7 +23,7 @@ func0000000000000007:                   # @func0000000000000007
 	vpbroadcastd	.LCPI0_2(%rip), %ymm3 {%k1} # ymm3 {%k1} = [2,2,2,2,2,2,2,2]
 	vptestnmd	%ymm1, %ymm1, %k1
 	vmovdqa32	%ymm3, %ymm2 {%k1}
-	vpaddd	%ymm0, %ymm2, %ymm0
+	vpaddd	%ymm2, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.short	1                               # 0x1
@@ -52,5 +52,5 @@ func0000000000000005:                   # @func0000000000000005
 	vpbroadcastd	.LCPI1_2(%rip), %ymm3 {%k1} # ymm3 {%k1} = [2,2,2,2,2,2,2,2]
 	vpcmpeqd	.LCPI1_3(%rip){1to8}, %ymm1, %k1
 	vmovdqa32	%ymm3, %ymm2 {%k1}
-	vpaddd	%ymm0, %ymm2, %ymm0
+	vpaddd	%ymm2, %ymm0, %ymm0
 	retq

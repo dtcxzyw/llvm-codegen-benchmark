@@ -1,4 +1,4 @@
-func000000000000009a:                   # @func000000000000009a
+func000000000000012a:                   # @func000000000000012a
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v10, v10, 4
 	li	a0, 63
@@ -8,7 +8,7 @@ func000000000000009a:                   # @func000000000000009a
 	vadd.vv	v8, v8, v10
 	vmsgt.vi	v0, v8, -1
 	ret
-func0000000000000094:                   # @func0000000000000094
+func0000000000000134:                   # @func0000000000000134
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v10, v10, 4
 	li	a0, 63
@@ -19,7 +19,7 @@ func0000000000000094:                   # @func0000000000000094
 	li	a0, 32
 	vmsltu.vx	v0, v8, a0
 	ret
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	li	a0, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsrl.vx	v12, v10, a0
@@ -29,7 +29,7 @@ func000000000000005a:                   # @func000000000000005a
 	vadd.vv	v8, v8, v10
 	vmsgt.vi	v0, v8, -1
 	ret
-func0000000000000054:                   # @func0000000000000054
+func00000000000000b4:                   # @func00000000000000b4
 	li	a0, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v8, v8, 4
@@ -42,7 +42,7 @@ func0000000000000054:                   # @func0000000000000054
 	ret
 .LCPI4_0:
 	.quad	1749024623285053783             # 0x1845c8a0ce512957
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	lui	a0, %hi(.LCPI4_0)
 	ld	a0, %lo(.LCPI4_0)(a0)
 	li	a1, 63
@@ -61,7 +61,7 @@ func0000000000000016:                   # @func0000000000000016
 	ret
 .LCPI5_0:
 	.quad	384307168202282325              # 0x555555555555555
-func00000000000000d8:                   # @func00000000000000d8
+func00000000000001a8:                   # @func00000000000001a8
 	lui	a0, 699051
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
@@ -74,7 +74,7 @@ func00000000000000d8:                   # @func00000000000000d8
 	vmacc.vx	v8, a0, v10
 	vmsgtu.vx	v0, v8, a1
 	ret
-func00000000000000d1:                   # @func00000000000000d1
+func00000000000001b1:                   # @func00000000000001b1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v10, v10, 4
 	vsra.vi	v8, v8, 3
@@ -86,11 +86,23 @@ func00000000000000d1:                   # @func00000000000000d1
 	vrsub.vi	v10, v10, 0
 	vmseq.vv	v0, v8, v10
 	ret
-.LCPI7_0:
+func00000000000001a1:                   # @func00000000000001a1
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsra.vi	v10, v10, 4
+	vsra.vi	v8, v8, 3
+	lui	a0, 699051
+	addiw	a0, a0, -1365
+	slli	a1, a0, 32
+	add	a0, a0, a1
+	vmul.vx	v8, v8, a0
+	vrsub.vi	v10, v10, 0
+	vmseq.vv	v0, v8, v10
+	ret
+.LCPI8_0:
 	.quad	5270498306774157605             # 0x4924924924924925
-func0000000000000091:                   # @func0000000000000091
-	lui	a0, %hi(.LCPI7_0)
-	ld	a0, %lo(.LCPI7_0)(a0)
+func0000000000000121:                   # @func0000000000000121
+	lui	a0, %hi(.LCPI8_0)
+	ld	a0, %lo(.LCPI8_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v10, v10, 3
 	vmulh.vx	v8, v8, a0
@@ -101,11 +113,11 @@ func0000000000000091:                   # @func0000000000000091
 	vrsub.vi	v10, v10, 0
 	vmseq.vv	v0, v8, v10
 	ret
-.LCPI8_0:
+.LCPI9_0:
 	.quad	-1237940039285380275            # 0xeed1f417d9296b4d
-func0000000000000011:                   # @func0000000000000011
-	lui	a0, %hi(.LCPI8_0)
-	ld	a0, %lo(.LCPI8_0)(a0)
+func0000000000000021:                   # @func0000000000000021
+	lui	a0, %hi(.LCPI9_0)
+	ld	a0, %lo(.LCPI9_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulh.vx	v10, v10, a0
 	li	a0, 63
@@ -116,11 +128,11 @@ func0000000000000011:                   # @func0000000000000011
 	vsra.vx	v8, v8, a0
 	vmseq.vv	v0, v8, v10
 	ret
-.LCPI9_0:
+.LCPI10_0:
 	.quad	1237940039285380275             # 0x112e0be826d694b3
-func000000000000001a:                   # @func000000000000001a
-	lui	a0, %hi(.LCPI9_0)
-	ld	a0, %lo(.LCPI9_0)(a0)
+func000000000000002a:                   # @func000000000000002a
+	lui	a0, %hi(.LCPI10_0)
+	ld	a0, %lo(.LCPI10_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmulh.vx	v10, v10, a0
 	li	a0, 63

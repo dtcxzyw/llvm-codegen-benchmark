@@ -1,15 +1,11 @@
 
-; 10 occurrences:
+; 6 occurrences:
 ; cmake/optimized/json_value.cpp.ll
-; coreutils-rs/optimized/4rjs632i9cta2yqf.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; ozz-animation/optimized/jsoncpp.cpp.ll
 ; raylib/optimized/rtext.c.ll
-; ring-rs/optimized/4krjvpwhiya9iudo.ll
 ; stb/optimized/stb_truetype.c.ll
-; wasmtime-rs/optimized/1aegspwwbjc82p4w.ll
-; wasmtime-rs/optimized/1d0hmxdweaxxi3oz.ll
 ; Function Attrs: nounwind
 define { ptr, i64 } @func0000000000000000(ptr %0, i1 %1, i1 %2) #0 {
 entry:

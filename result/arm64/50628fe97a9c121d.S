@@ -1,57 +1,31 @@
-func0000000000000011:                   // @func0000000000000011
+func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
-	movi	v4.4s, #64
-	mov	w8, #49280                      // =0xc080
-	cmeq	v0.4s, v0.4s, #0
-	cmeq	v1.4s, v1.4s, #0
-	movk	w8, #16385, lsl #16
-	and	v3.16b, v3.16b, v4.16b
-	and	v2.16b, v2.16b, v4.16b
-	dup	v4.4s, w8
 	mov	w8, #128                        // =0x80
+	and	w9, w1, #0x40
+	cmp	w0, #0
 	movk	w8, #16384, lsl #16
-	cmeq	v2.4s, v2.4s, #0
-	cmeq	v3.4s, v3.4s, #0
-	orr	v1.16b, v3.16b, v1.16b
-	orr	v0.16b, v2.16b, v0.16b
-	dup	v2.4s, w8
-	bsl	v0.16b, v2.16b, v4.16b
-	bsl	v1.16b, v2.16b, v4.16b
+	ccmp	w9, #0, #4, ne
+	orr	w9, w8, #0x1c000
+	csel	w0, w8, w9, eq
 	ret
                                         // -- End function
-func00000000000000c1:                   // @func00000000000000c1
+func0000000000000181:                   // @func0000000000000181
 // %bb.0:                               // %entry
-	movi	v4.4s, #8, lsl #8
-	movi	v5.4s, #11
-	and	v2.16b, v2.16b, v4.16b
-	and	v3.16b, v3.16b, v4.16b
-	cmeq	v0.4s, v0.4s, v5.4s
-	cmeq	v1.4s, v1.4s, v5.4s
-	mvni	v4.4s, #104, msl #8
-	cmeq	v2.4s, v2.4s, #0
-	cmeq	v3.4s, v3.4s, #0
-	orn	v0.16b, v2.16b, v0.16b
-	orn	v1.16b, v3.16b, v1.16b
-	bic	v2.16b, v4.16b, v0.16b
-	bic	v0.4s, #73
-	bic	v3.16b, v4.16b, v1.16b
-	bic	v1.4s, #73
-	orr	v0.16b, v0.16b, v2.16b
-	orr	v1.16b, v1.16b, v3.16b
+	and	w9, w1, #0x800
+	cmp	w0, #11
+	mov	w8, #-26880                     // =0xffff9700
+	ccmp	w9, #0, #4, eq
+	mov	w9, #-74                        // =0xffffffb6
+	csel	w0, w9, w8, eq
 	ret
                                         // -- End function
-func00000000000000cc:                   // @func00000000000000cc
+func000000000000018c:                   // @func000000000000018c
 // %bb.0:                               // %entry
-	movi	v4.4s, #128, lsl #16
-	and	v3.16b, v3.16b, v4.16b
-	and	v2.16b, v2.16b, v4.16b
-	orr	v0.16b, v2.16b, v0.16b
-	orr	v1.16b, v3.16b, v1.16b
-	movi	v2.4s, #168, lsl #16
-	movi	v3.4s, #40, lsl #16
-	cmeq	v1.4s, v1.4s, #0
-	cmeq	v0.4s, v0.4s, #0
-	bsl	v0.16b, v3.16b, v2.16b
-	bsl	v1.16b, v3.16b, v2.16b
+	and	w9, w1, #0x800000
+	mov	w8, #2621440                    // =0x280000
+	orr	w9, w9, w0
+	cmp	w9, #0
+	mov	w9, #11010048                   // =0xa80000
+	csel	w0, w9, w8, ne
 	ret
                                         // -- End function

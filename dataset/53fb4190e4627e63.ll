@@ -5,10 +5,10 @@
 ; icu/optimized/double-conversion-string-to-double.ll
 ; openusd/optimized/string-to-double.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000d84(i32 %0, i32 %1) #0 {
+define i1 @func0000000000003704(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 48
-  %3 = icmp ugt i32 %2, %0
+  %3 = icmp samesign ugt i32 %2, %0
   %4 = add nsw i32 %0, -48
   %5 = icmp ult i32 %4, 10
   %6 = select i1 %5, i1 %3, i1 false
@@ -18,7 +18,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/xfrm_state.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000104(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = icmp ugt i32 %2, %0

@@ -1,17 +1,4 @@
 
-; 3 occurrences:
-; libquic/optimized/time_support.c.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000a(i1 %0, i64 %1) #0 {
-entry:
-  %2 = icmp sgt i64 %1, 0
-  %3 = select i1 %2, i1 %0, i1 false
-  %4 = sext i1 %3 to i64
-  ret i64 %4
-}
-
 ; 6 occurrences:
 ; arrow/optimized/compare.cc.ll
 ; arrow/optimized/exec.cc.ll
@@ -28,18 +15,8 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
-; hermes/optimized/DateUtil.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000006(i1 %0, i64 %1) #0 {
-entry:
-  %2 = icmp slt i64 %1, 0
-  %3 = select i1 %2, i1 %0, i1 false
-  %4 = sext i1 %3 to i64
-  ret i64 %4
-}
-
-; 19 occurrences:
+; 20 occurrences:
+; boost/optimized/approximately_equals.ll
 ; tev/optimized/Channel.cpp.ll
 ; tev/optimized/ClipboardImageLoader.cpp.ll
 ; tev/optimized/Common.cpp.ll
@@ -63,6 +40,29 @@ entry:
 define i64 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
+  %3 = select i1 %2, i1 %0, i1 false
+  %4 = sext i1 %3 to i64
+  ret i64 %4
+}
+
+; 1 occurrences:
+; libquic/optimized/time_support.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000a(i1 %0, i64 %1) #0 {
+entry:
+  %2 = icmp sgt i64 %1, 0
+  %3 = select i1 %2, i1 %0, i1 false
+  %4 = sext i1 %3 to i64
+  ret i64 %4
+}
+
+; 2 occurrences:
+; hermes/optimized/DateUtil.cpp.ll
+; zed-rs/optimized/70oxjc4k9uv7kvad3t5u6bzag.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000006(i1 %0, i64 %1) #0 {
+entry:
+  %2 = icmp slt i64 %1, 0
   %3 = select i1 %2, i1 %0, i1 false
   %4 = sext i1 %3 to i64
   ret i64 %4

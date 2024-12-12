@@ -1,3 +1,9 @@
+func000000000000001b:                   # @func000000000000001b
+	leal	305(%rsi), %eax
+	testb	$1, %dil
+	cmovel	%esi, %eax
+	addl	$308, %eax                      # imm = 0x134
+	retq
 func000000000000000a:                   # @func000000000000000a
 	leal	-2048(%rsi), %eax
 	testb	$1, %dil

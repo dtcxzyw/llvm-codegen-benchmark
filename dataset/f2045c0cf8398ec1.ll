@@ -35,6 +35,20 @@ entry:
   ret i64 %4
 }
 
+; 3 occurrences:
+; gromacs/optimized/pdb2gmx.cpp.ll
+; linux/optimized/mballoc.ll
+; luau/optimized/IrRegAllocA64.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003f(i8 %0) #0 {
+entry:
+  %1 = zext nneg i8 %0 to i32
+  %2 = shl nuw nsw i32 %1, 3
+  %3 = add nuw nsw i32 %2, 80
+  %4 = zext nneg i32 %3 to i64
+  ret i64 %4
+}
+
 ; 1 occurrences:
 ; quickjs/optimized/libregexp.ll
 ; Function Attrs: nounwind

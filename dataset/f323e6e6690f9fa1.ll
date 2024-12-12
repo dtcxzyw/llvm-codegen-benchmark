@@ -75,7 +75,7 @@
 ; libwebp/optimized/frame_dec.c.ll
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
 ; linux/optimized/drm_dp_dual_mode_helper.ll
-; linux/optimized/drm_scdc_helper.ll
+; linux/optimized/io_pgtable_v2.ll
 ; linux/optimized/journal.ll
 ; linux/optimized/mmap.ll
 ; linux/optimized/nf_nat_core.ll
@@ -93,7 +93,6 @@
 ; llvm/optimized/OMPIRBuilder.cpp.ll
 ; llvm/optimized/PGOInstrumentation.cpp.ll
 ; llvm/optimized/PatternParser.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RetainSummaryManager.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
@@ -147,6 +146,7 @@
 ; yalantinglibs/optimized/data_def.struct_pb.cc.ll
 ; yalantinglibs/optimized/descriptor.struct_pb.cc.ll
 ; yalantinglibs/optimized/example.cpp.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1, i1 %2) #0 {
 entry:

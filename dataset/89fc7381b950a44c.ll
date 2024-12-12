@@ -26,7 +26,7 @@
 ; raylib/optimized/raudio.c.ll
 ; ruby/optimized/vm.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i1 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 1717960833, i32 1717960897
   %3 = or disjoint i32 %2, 1024
@@ -39,7 +39,7 @@ entry:
 ; cpython/optimized/_testbuffer.ll
 ; folly/optimized/MemoryMapping.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001c(i32 %0, i1 %1) #0 {
+define i32 @func000000000000002c(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 2, i32 1
   %3 = or disjoint i32 %2, 32
@@ -56,11 +56,11 @@ entry:
 ; node/optimized/pipe.ll
 ; z3/optimized/util.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i1 %1) #0 {
+define i32 @func0000000000000034(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 0, i32 292
   %3 = or disjoint i32 %2, 146
-  %4 = icmp ult i32 %0, 2
+  %4 = icmp samesign ult i32 %0, 2
   %5 = select i1 %4, i32 %2, i32 %3
   ret i32 %5
 }
@@ -81,7 +81,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_display_power_well.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i1 %1) #0 {
+define i32 @func0000000000000026(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 -2147483584, i32 -2147483648
   %3 = or disjoint i32 %2, 8

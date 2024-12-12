@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ncnn/optimized/pooling3d.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, -1
   %4 = add i32 %3, %2
@@ -19,7 +19,7 @@ entry:
 ; recastnavigation/optimized/Sample_TempObstacles.cpp.ll
 ; recastnavigation/optimized/Sample_TileMesh.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, -1
   %4 = add i32 %3, %2

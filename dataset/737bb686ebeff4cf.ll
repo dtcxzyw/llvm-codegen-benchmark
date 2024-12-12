@@ -1,18 +1,4 @@
 
-; 3 occurrences:
-; linux/optimized/nl80211.ll
-; linux/optimized/trace_probe.ll
-; openssl/optimized/libdefault-lib-cipher_camellia_hw.ll
-; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i8 %1) #0 {
-entry:
-  %2 = and i8 %1, 2
-  %3 = icmp ne i8 %2, 0
-  %4 = icmp ult i32 %0, -2
-  %5 = select i1 %3, i1 true, i1 %4
-  ret i1 %5
-}
-
 ; 13 occurrences:
 ; folly/optimized/ProgramOptions.cpp.ll
 ; git/optimized/ls-refs.ll
@@ -28,7 +14,7 @@ entry:
 ; wireshark/optimized/packet-q933.c.ll
 ; wireshark/optimized/packet-s7comm_szl_ids.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = icmp eq i8 %2, 0
@@ -37,13 +23,14 @@ entry:
   ret i1 %5
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; c3c/optimized/c_abi_x86.c.ll
 ; hermes/optimized/Callable.cpp.ll
 ; libjpeg-turbo/optimized/djpeg.c.ll
 ; linux/optimized/alps.ll
 ; linux/optimized/rx.ll
 ; llvm/optimized/SemaType.cpp.ll
+; lvgl/optimized/lv_textarea.ll
 ; minetest/optimized/minimap.cpp.ll
 ; quickjs/optimized/quickjs.ll
 ; sqlite/optimized/sqlite3.ll
@@ -53,7 +40,7 @@ entry:
 ; wireshark/optimized/wimax_compact_dlmap_ie_decoder.c.ll
 ; wireshark/optimized/wimax_compact_ulmap_ie_decoder.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i8 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = icmp ne i8 %2, 0
@@ -66,7 +53,7 @@ entry:
 ; icu/optimized/uniset_props.ll
 ; openjdk/optimized/ad_x86.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000141(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -6
   %3 = icmp eq i8 %2, 0
@@ -79,7 +66,7 @@ entry:
 ; openjdk/optimized/ad_x86.ll
 ; wireshark/optimized/packet-omron-fins.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i8 %1) #0 {
+define i1 @func00000000000000c1(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -6
   %3 = icmp eq i8 %2, 0
@@ -106,7 +93,7 @@ entry:
 ; wireshark/optimized/packet-sna.c.ll
 ; wireshark/optimized/packet-wisun.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000181(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 16
   %3 = icmp eq i8 %2, 0
@@ -150,7 +137,7 @@ entry:
 ; z3/optimized/theory_seq.cpp.ll
 ; z3/optimized/upolynomial.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i8 %1) #0 {
+define i1 @func000000000000018c(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 8
   %3 = icmp ne i8 %2, 0
@@ -159,15 +146,27 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; linux/optimized/io-wq.ll
+; 1 occurrences:
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i32 %0, i8 %1) #0 {
+define i1 @func000000000000030c(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -3
   %3 = icmp ne i8 %2, 93
-  %4 = icmp ugt i32 %0, 63
+  %4 = icmp samesign ugt i32 %0, 63
+  %5 = select i1 %3, i1 true, i1 %4
+  ret i1 %5
+}
+
+; 2 occurrences:
+; linux/optimized/nl80211.ll
+; quickjs/optimized/quickjs.ll
+; Function Attrs: nounwind
+define i1 @func000000000000028c(i32 %0, i8 %1) #0 {
+entry:
+  %2 = and i8 %1, 4
+  %3 = icmp ne i8 %2, 0
+  %4 = icmp samesign ult i32 %0, 8
   %5 = select i1 %3, i1 true, i1 %4
   ret i1 %5
 }
@@ -177,7 +176,7 @@ entry:
 ; linux/optimized/skbuff.ll
 ; wireshark/optimized/packet-omron-fins.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 64
   %3 = icmp eq i8 %2, 0
@@ -192,11 +191,23 @@ entry:
 ; z3/optimized/interval_mpq.cpp.ll
 ; z3/optimized/nla_intervals.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i32 %0, i8 %1) #0 {
+define i1 @func00000000000000cc(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = icmp ne i8 %2, 0
   %4 = icmp slt i32 %0, 1
+  %5 = select i1 %3, i1 true, i1 %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; linux/optimized/io-wq.ll
+; Function Attrs: nounwind
+define i1 @func000000000000010c(i32 %0, i8 %1) #0 {
+entry:
+  %2 = and i8 %1, 1
+  %3 = icmp ne i8 %2, 0
+  %4 = icmp ugt i32 %0, 1
   %5 = select i1 %3, i1 true, i1 %4
   ret i1 %5
 }
@@ -206,7 +217,7 @@ entry:
 ; z3/optimized/interval_mpq.cpp.ll
 ; z3/optimized/nla_intervals.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i32 %0, i8 %1) #0 {
+define i1 @func000000000000014c(i32 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 8
   %3 = icmp ne i8 %2, 0

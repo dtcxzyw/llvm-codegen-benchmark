@@ -1,9 +1,6 @@
 
-; 18 occurrences:
-; actix-rs/optimized/2opjbt4uk1jlgbvj.ll
-; actix-rs/optimized/2weu4ko9avhthtok.ll
+; 14 occurrences:
 ; clap-rs/optimized/46qpaucouebcxfrx.ll
-; coreutils-rs/optimized/1jsb4obyokb4gner.ll
 ; coreutils-rs/optimized/1m5owynrjtqk4784.ll
 ; llvm/optimized/CommentLexer.cpp.ll
 ; ockam-rs/optimized/1411u8drt798uxi8.ll
@@ -16,8 +13,7 @@
 ; wasmtime-rs/optimized/27g7khr3xg8dgvq3.ll
 ; wasmtime-rs/optimized/3e4qkdgnsm3co8xe.ll
 ; wasmtime-rs/optimized/3qm6o3ec4wwbp8ot.ll
-; wasmtime-rs/optimized/4ito3liofpi8hh88.ll
-; wasmtime-rs/optimized/5ejyp8od7k48ixy3.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
 ; Function Attrs: nounwind
 define { ptr, i64 } @func0000000000000000(i1 %0, i64 %1, ptr %2) #0 {
 entry:

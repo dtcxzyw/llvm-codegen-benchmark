@@ -12,8 +12,3 @@ func0000000000000005:                   # @func0000000000000005
 	movswl	%di, %eax
 	negl	%eax
 	retq
-func0000000000000011:                   # @func0000000000000011
-	movsbl	%dil, %eax
-	sarl	$4, %eax
-	negl	%eax
-	retq

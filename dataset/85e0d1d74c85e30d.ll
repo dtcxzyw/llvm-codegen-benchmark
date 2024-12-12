@@ -1,8 +1,7 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; abc/optimized/exorBits.c.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; qemu/optimized/hw_scsi_lsi53c895a.c.ll
 ; soc-simulator/optimized/verilated.ll
@@ -14,7 +13,7 @@ entry:
   %3 = and i32 %2, 24
   %4 = shl nuw i32 255, %3
   %5 = xor i32 %4, -1
-  %6 = and i32 %5, %1
+  %6 = and i32 %1, %5
   %7 = or i32 %6, %0
   ret i32 %7
 }
@@ -29,7 +28,7 @@ entry:
   %3 = and i32 %2, 24
   %4 = shl i32 16777215, %3
   %5 = xor i32 %4, -1
-  %6 = and i32 %5, %1
+  %6 = and i32 %1, %5
   %7 = or i32 %6, %0
   ret i32 %7
 }
@@ -42,7 +41,7 @@ entry:
   %3 = and i32 %2, 15
   %4 = shl nuw nsw i32 1, %3
   %5 = xor i32 %4, -1
-  %6 = and i32 %5, %1
+  %6 = and i32 %1, %5
   %7 = or i32 %6, %0
   ret i32 %7
 }

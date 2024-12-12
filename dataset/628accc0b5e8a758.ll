@@ -8,7 +8,7 @@
 define i16 @func0000000000000009(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 960
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = trunc i32 %3 to i16
   %5 = and i16 %4, 1023
   %6 = or disjoint i16 %5, -9216

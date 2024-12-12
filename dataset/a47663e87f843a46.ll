@@ -1,8 +1,7 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; clamav/optimized/bcrun.c.ll
 ; linux/optimized/cacheinfo.ll
-; linux/optimized/rpl.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-q931.c.ll

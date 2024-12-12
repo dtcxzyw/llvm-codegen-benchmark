@@ -1,5 +1,6 @@
 
-; 20 occurrences:
+; 21 occurrences:
+; boost/optimized/cpu_timer.ll
 ; c3c/optimized/sema_expr.c.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; llvm/optimized/CGAtomic.cpp.ll

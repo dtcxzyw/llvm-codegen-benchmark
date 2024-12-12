@@ -1,5 +1,6 @@
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/to_chars.ll
 ; cmake/optimized/huf_decompress.c.ll
 ; eastl/optimized/TestBitVector.cpp.ll
 ; zstd/optimized/huf_decompress.c.ll
@@ -9,7 +10,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
   %5 = sub i64 %4, %3
-  %6 = lshr i64 %0, 2
+  %6 = lshr i64 %0, 32
   %7 = icmp ugt i64 %6, %5
   ret i1 %7
 }

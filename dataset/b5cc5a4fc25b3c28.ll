@@ -3,7 +3,7 @@
 ; cmake/optimized/zstd_compress_literals.c.ll
 ; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000089(i32 %0, i64 %1, i32 %2) #0 {
+define i32 @func0000000000000109(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 4
   %4 = icmp ult i64 %1, 1025

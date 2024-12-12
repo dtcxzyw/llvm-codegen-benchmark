@@ -1,5 +1,6 @@
 
-; 6 occurrences:
+; 7 occurrences:
+; llvm/optimized/DependenceAnalysis.cpp.ll
 ; llvm/optimized/DwarfExpression.cpp.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
@@ -7,17 +8,17 @@
 ; openjdk/optimized/bitMap.ll
 ; slurm/optimized/bitstring.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 -1, %2
   %4 = xor i64 %3, -1
-  %5 = and i64 %4, %1
+  %5 = and i64 %1, %4
   %6 = and i64 %5, %0
   %7 = icmp ne i64 %6, 0
   ret i1 %7
 }
 
-; 91 occurrences:
+; 93 occurrences:
 ; linux/optimized/select.ll
 ; llvm/optimized/CoreEngine.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
@@ -25,6 +26,7 @@ entry:
 ; llvm/optimized/DwarfExpression.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
+; llvm/optimized/MachineDominators.cpp.ll
 ; llvm/optimized/ParseOpenMP.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
@@ -33,6 +35,7 @@ entry:
 ; llvm/optimized/StatepointLowering.cpp.ll
 ; llvm/optimized/UninitializedValues.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; velox/optimized/ArrayAndMapMatch.cpp.ll
 ; velox/optimized/ArrayConstructor.cpp.ll
 ; velox/optimized/ArrayContains.cpp.ll
@@ -110,11 +113,11 @@ entry:
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; z3/optimized/sat_cutset.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 -1, %2
   %4 = xor i64 %3, -1
-  %5 = and i64 %4, %1
+  %5 = and i64 %1, %4
   %6 = and i64 %5, %0
   %7 = icmp eq i64 %6, 0
   ret i1 %7

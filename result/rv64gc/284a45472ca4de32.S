@@ -29,7 +29,7 @@ func0000000000000033:                   # @func0000000000000033
 	li	a1, 10
 	addw	a0, a0, a1
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000051:                   # @func0000000000000051
 	lui	a2, 524032
 	and	a1, a1, a2
 	beqz	a1, .LBB4_2
@@ -40,7 +40,7 @@ func0000000000000011:                   # @func0000000000000011
 	li	a1, -1076
 	addw	a0, a0, a1
 	ret
-func0000000000000021:                   # @func0000000000000021
+func0000000000000061:                   # @func0000000000000061
 	slli	a1, a1, 52
 	srli	a1, a1, 52
 	sltiu	a1, a1, 17
@@ -54,28 +54,28 @@ func0000000000000031:                   # @func0000000000000031
 	add	a0, a0, a1
 	addiw	a0, a0, -2
 	ret
-func0000000000000006:                   # @func0000000000000006
-	andi	a1, a1, 4
-	beqz	a1, .LBB7_2
-	li	a1, 244
-	addw	a0, a0, a1
-	ret
-.LBB7_2:
-	li	a1, 16
-	addw	a0, a0, a1
-	ret
-func0000000000000023:                   # @func0000000000000023
+func0000000000000063:                   # @func0000000000000063
 	andi	a1, a1, 15
 	li	a2, 2
-	bltu	a2, a1, .LBB8_2
+	bltu	a2, a1, .LBB7_2
 	li	a1, 1
 	addw	a0, a0, a1
 	ret
-.LBB8_2:
+.LBB7_2:
 	li	a1, 1025
 	addw	a0, a0, a1
 	ret
-func0000000000000012:                   # @func0000000000000012
+func0000000000000006:                   # @func0000000000000006
+	andi	a1, a1, 16
+	beqz	a1, .LBB8_2
+	li	a1, 16
+	addw	a0, a0, a1
+	ret
+.LBB8_2:
+	li	a1, 4
+	addw	a0, a0, a1
+	ret
+func0000000000000052:                   # @func0000000000000052
 	andi	a1, a1, 510
 	li	a2, 62
 	bltu	a1, a2, .LBB9_2

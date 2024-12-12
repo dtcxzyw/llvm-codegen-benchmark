@@ -11,13 +11,11 @@ func0000000000000024:                   # @func0000000000000024
 	retq
 .LCPI1_0:
 	.quad	0x8000000000000000              # double -0
-.LCPI1_1:
-	.quad	0x3e70000000000000              # double 5.9604644775390625E-8
 func0000000000000022:                   # @func0000000000000022
 	vsubsd	%xmm1, %xmm0, %xmm0
 	vxorpd	.LCPI1_0(%rip){1to2}, %xmm0, %xmm1
 	vmaxsd	%xmm0, %xmm1, %xmm0
-	vmovsd	.LCPI1_1(%rip), %xmm1           # xmm1 = [5.9604644775390625E-8,0.0E+0]
+	vxorpd	%xmm1, %xmm1, %xmm1
 	vucomisd	%xmm0, %xmm1
 	seta	%al
 	retq

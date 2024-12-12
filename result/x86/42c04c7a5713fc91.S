@@ -1,7 +1,7 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	xorl	$2147483647, %edx               # imm = 0x7FFFFFFF
-	cmpl	%esi, %edx
-	setl	%al
+	cmpl	%edx, %esi
+	setg	%al
 	orb	%dil, %al
 	retq
 func0000000000000001:                   # @func0000000000000001
@@ -9,72 +9,85 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	negl	%edx
-	cmpl	%esi, %edx
-	setb	%al
+	cmpl	%edx, %esi
+	seta	%al
 	orb	%dil, %al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	movl	$32, %eax
 	subl	%edx, %eax
-	cmpl	%esi, %eax
-	setb	%al
+	cmpl	%eax, %esi
+	seta	%al
 	orb	%dil, %al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	negl	%edx
-	cmpl	%esi, %edx
-	setg	%al
-	orb	%dil, %al
-	retq
-func000000000000003a:                   # @func000000000000003a
-	movl	$100000, %eax                   # imm = 0x186A0
-	subl	%edx, %eax
-	cmpl	%esi, %eax
+	cmpl	%edx, %esi
 	setl	%al
 	orb	%dil, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func000000000000006a:                   # @func000000000000006a
+	movl	$100000, %eax                   # imm = 0x186A0
+	subl	%edx, %eax
+	cmpl	%eax, %esi
+	setg	%al
+	orb	%dil, %al
+	retq
+func0000000000000021:                   # @func0000000000000021
 	movl	$1022, %eax                     # imm = 0x3FE
 	subl	%edx, %eax
-	cmpl	%esi, %eax
+	cmpl	%eax, %esi
 	sete	%al
 	orb	%dil, %al
 	retq
 func0000000000000008:                   # @func0000000000000008
 	negl	%edx
-	cmpl	%esi, %edx
-	setb	%al
+	cmpl	%edx, %esi
+	seta	%al
 	orb	%dil, %al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000000c:                   # @func000000000000000c
+	movl	$4, %eax
+	subl	%edx, %eax
+	cmpl	%eax, %esi
+	setne	%al
+	orb	%dil, %al
+	retq
+func000000000000002c:                   # @func000000000000002c
 	addl	%edx, %esi
 	setne	%al
 	orb	%dil, %al
 	retq
 func000000000000000a:                   # @func000000000000000a
 	negl	%edx
-	cmpl	%esi, %edx
-	setl	%al
+	cmpl	%edx, %esi
+	setg	%al
 	orb	%dil, %al
 	retq
 func0000000000000006:                   # @func0000000000000006
 	negl	%edx
-	cmpl	%esi, %edx
-	setg	%al
+	cmpl	%edx, %esi
+	setl	%al
 	orb	%dil, %al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	negl	%edx
-	cmpl	%esi, %edx
-	seta	%al
+	cmpl	%edx, %esi
+	setb	%al
 	orb	%dil, %al
 	retq
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	movl	$-999999998, %eax               # imm = 0xC4653602
 	subl	%edx, %eax
-	cmpl	%esi, %eax
-	setg	%al
+	cmpl	%eax, %esi
+	setl	%al
+	orb	%dil, %al
+	retq
+func0000000000000024:                   # @func0000000000000024
+	negl	%edx
+	cmpl	%edx, %esi
+	setb	%al
 	orb	%dil, %al
 	retq

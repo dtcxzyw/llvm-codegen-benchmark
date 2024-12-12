@@ -1,5 +1,5 @@
 
-%struct.SortTuple.3469052 = type { ptr, i64, i8, i32 }
+%struct.SortTuple.3653185 = type { ptr, i64, i8, i32 }
 
 ; 1 occurrences:
 ; ruby/optimized/string.ll
@@ -17,7 +17,7 @@ entry:
 ; php/optimized/string.ll
 ; php/optimized/url_scanner_ex.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000041(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
   %4 = icmp eq i32 %1, 0
@@ -30,7 +30,7 @@ entry:
 ; clamav/optimized/qsort.c.ll
 ; nuttx/optimized/lib_qsort.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000066(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func00000000000000c6(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = icmp slt i32 %1, 0
@@ -60,12 +60,12 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/tuplesort.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000046(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000086(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = icmp slt i32 %1, 0
   %.idx = select i1 %4, i64 %3, i64 0
-  %5 = getelementptr %struct.SortTuple.3469052, ptr %0, i64 %.idx
+  %5 = getelementptr %struct.SortTuple.3653185, ptr %0, i64 %.idx
   ret ptr %5
 }
 

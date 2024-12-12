@@ -1,19 +1,9 @@
-func000000000000001c:                   // @func000000000000001c
+func000000000000002c:                   // @func000000000000002c
 // %bb.0:                               // %entry
-	ushll	v3.4s, v3.4h, #0
-	neg	v1.2d, v1.2d
-	neg	v2.2d, v2.2d
-	ushll	v4.2d, v3.2s, #0
-	ushll2	v3.2d, v3.4s, #0
-	shl	v4.2d, v4.2d, #63
-	shl	v3.2d, v3.2d, #63
-	cmlt	v4.2d, v4.2d, #0
-	cmlt	v3.2d, v3.2d, #0
-	cmeq	v2.2d, v3.2d, v2.2d
-	cmeq	v1.2d, v4.2d, v1.2d
-	uzp1	v1.4s, v1.4s, v2.4s
-	mvn	v1.16b, v1.16b
-	xtn	v1.4h, v1.4s
-	and	v0.8b, v0.8b, v1.8b
+                                        // kill: def $w2 killed $w2 def $x2
+	and	x8, x2, #0x1
+	cmp	x1, x8
+	cset	w8, ne
+	and	w0, w0, w8
 	ret
                                         // -- End function

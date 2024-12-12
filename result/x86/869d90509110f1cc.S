@@ -3,8 +3,13 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	$2, %rsi
 	cmoveq	%rdx, %rax
 	retq
+func0000000000000008:                   # @func0000000000000008
+	movq	%rdi, %rax
+	cmpq	$2049, %rsi                     # imm = 0x801
+	cmovaeq	%rdx, %rax
+	retq
 func0000000000000004:                   # @func0000000000000004
 	movq	%rdi, %rax
-	cmpq	$4, %rsi
-	cmovbq	%rdx, %rax
+	shrq	$32, %rsi
+	cmoveq	%rdx, %rax
 	retq

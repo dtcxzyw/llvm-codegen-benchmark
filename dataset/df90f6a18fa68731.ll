@@ -1,8 +1,9 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; mitsuba3/optimized/pplastic.cpp.ll
 ; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
 ; wireshark/optimized/packet-ieee80211-radio.c.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000110(float %0) #0 {
 entry:
@@ -12,7 +13,7 @@ entry:
   ret i1 %3
 }
 
-; 46 occurrences:
+; 44 occurrences:
 ; abc/optimized/abc.c.ll
 ; assimp/optimized/XGLLoader.cpp.ll
 ; box2d/optimized/b2_edge_shape.cpp.ll
@@ -27,13 +28,11 @@ entry:
 ; libwebp/optimized/config_enc.c.ll
 ; meilisearch-rs/optimized/2eqafq69fd46y14a.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/numeric.cpp.ll
 ; minetest/optimized/tool.cpp.ll
 ; miniaudio/optimized/unity.c.ll
@@ -391,13 +390,26 @@ entry:
   ret i1 %3
 }
 
-; 9 occurrences:
+; 1 occurrences:
+; openusd/optimized/value.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000192(float %0) #0 {
+entry:
+  %1 = fcmp oge float %0, 0x41E0000000000000
+  %2 = fcmp ueq float %0, 0x7FF0000000000000
+  %3 = or i1 %2, %1
+  ret i1 %3
+}
+
+; 11 occurrences:
 ; postgres/optimized/float.ll
 ; postgres/optimized/int8.ll
 ; typst-rs/optimized/18i60ist7isq7y2m.ll
 ; typst-rs/optimized/1aflftgqyuracvze.ll
 ; typst-rs/optimized/1ojadsqfk0rsifsx.ll
+; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; typst-rs/optimized/2lj01bfl72moc27l.ll
+; typst-rs/optimized/40w6rezair915kkd.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll

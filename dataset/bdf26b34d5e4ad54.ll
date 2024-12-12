@@ -1,16 +1,17 @@
 
-%"struct.re2::Frag.2486279" = type <{ i32, %"struct.re2::PatchList.2486280", i8, [3 x i8] }>
-%"struct.re2::PatchList.2486280" = type { i32, i32 }
-%"struct.Assimp::Unreal::Triangle.2710809" = type { [3 x i16], i8, i8, [3 x [2 x i8]], i8, i8, i32 }
-%"class.llvm::SDUse.2952479" = type { %"class.llvm::SDValue.2952480", ptr, ptr, ptr }
-%"class.llvm::SDValue.2952480" = type <{ ptr, i32, [4 x i8] }>
-%struct.nfnl_callback.3357983 = type { ptr, ptr, i32, i16 }
-%union.IRIns.3498443 = type { %struct.GCRef.3498444 }
-%struct.GCRef.3498444 = type { i64 }
+%"struct.re2::Frag.2601723" = type <{ i32, %"struct.re2::PatchList.2601724", i8, [3 x i8] }>
+%"struct.re2::PatchList.2601724" = type { i32, i32 }
+%"struct.Assimp::Unreal::Triangle.2823399" = type { [3 x i16], i8, i8, [3 x [2 x i8]], i8, i8, i32 }
+%"class.llvm::SDUse.3146036" = type { %"class.llvm::SDValue.3146037", ptr, ptr, ptr }
+%"class.llvm::SDValue.3146037" = type <{ ptr, i32, [4 x i8] }>
+%struct.nfnl_callback.3545106 = type { ptr, ptr, i32, i16 }
+%union.IRIns.3680616 = type { %struct.GCRef.3680617 }
+%struct.GCRef.3680617 = type { i64 }
 
-; 167 occurrences:
+; 170 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; assimp/optimized/MS3DLoader.cpp.ll
+; boost/optimized/static_string.ll
 ; bullet3/optimized/btAxisSweep3.ll
 ; cmake/optimized/cmELF.cxx.ll
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
@@ -59,7 +60,6 @@
 ; llvm/optimized/RDFGraph.cpp.ll
 ; llvm/optimized/RDFRegisters.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RegisterScavenging.cpp.ll
 ; llvm/optimized/ScheduleDAGFast.cpp.ll
@@ -176,12 +176,15 @@
 ; wasmtime-rs/optimized/4fstrj457bwkmu8y.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
 ; wasmtime-rs/optimized/jcy3ulzaiykp2rl.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
+; zed-rs/optimized/7m8fd3drcujrn3b7m72kwodjc.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func0000000000000061(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw %"struct.re2::Frag.2486279", ptr %1, i64 %3
-  %5 = icmp eq ptr %4, %0
+  %4 = getelementptr nusw nuw %"struct.re2::Frag.2601723", ptr %1, i64 %3
+  %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 
@@ -198,15 +201,16 @@ entry:
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func00000000000000e1(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = icmp eq ptr %4, %0
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 
-; 24 occurrences:
+; 25 occurrences:
+; boost/optimized/static_string.ll
 ; freetype/optimized/ftbase.c.ll
 ; freetype/optimized/ftgasp.c.ll
 ; freetype/optimized/sfnt.c.ll
@@ -232,11 +236,11 @@ entry:
 ; proxygen/optimized/http_parser_cpp.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func0000000000000064(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = icmp ugt ptr %4, %0
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = icmp ult ptr %0, %4
   ret i1 %5
 }
 
@@ -254,22 +258,23 @@ entry:
 define i1 @func0000000000000001(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr %"struct.Assimp::Unreal::Triangle.2710809", ptr %1, i64 %3
-  %5 = icmp eq ptr %4, %0
+  %4 = getelementptr %"struct.Assimp::Unreal::Triangle.2823399", ptr %1, i64 %3
+  %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; sentencepiece/optimized/extension_set.cc.ll
+; zed-rs/optimized/7m8fd3drcujrn3b7m72kwodjc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func000000000000006c(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw %"class.llvm::SDUse.2952479", ptr %1, i64 %3
-  %5 = icmp ne ptr %4, %0
+  %4 = getelementptr nusw nuw %"class.llvm::SDUse.3146036", ptr %1, i64 %3
+  %5 = icmp ne ptr %0, %4
   ret i1 %5
 }
 
@@ -277,11 +282,11 @@ entry:
 ; llvm/optimized/CodeGenPGO.cpp.ll
 ; protobuf/optimized/extension_set.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func00000000000000ec(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr nusw ptr, ptr %1, i64 %3
-  %5 = icmp ne ptr %4, %0
+  %4 = getelementptr nusw nuw ptr, ptr %1, i64 %3
+  %5 = icmp ne ptr %0, %4
   ret i1 %5
 }
 
@@ -309,7 +314,7 @@ define i1 @func0000000000000004(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = icmp ugt ptr %4, %0
+  %5 = icmp ult ptr %0, %4
   ret i1 %5
 }
 
@@ -321,7 +326,7 @@ define i1 @func000000000000000c(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = icmp ne ptr %4, %0
+  %5 = icmp ne ptr %0, %4
   ret i1 %5
 }
 
@@ -334,7 +339,7 @@ define i1 @func0000000000000009(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = icmp ule ptr %4, %0
+  %5 = icmp uge ptr %0, %4
   ret i1 %5
 }
 
@@ -342,11 +347,11 @@ entry:
 ; linux/optimized/nfnetlink.ll
 ; linux/optimized/rx.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func0000000000000081(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = getelementptr %struct.nfnl_callback.3357983, ptr %1, i64 %3
-  %5 = icmp eq ptr %4, %0
+  %4 = getelementptr %struct.nfnl_callback.3545106, ptr %1, i64 %3
+  %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 
@@ -355,11 +360,11 @@ entry:
 ; luajit/optimized/lj_opt_mem.ll
 ; luajit/optimized/lj_opt_mem_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(ptr %0, ptr %1, i16 %2) #0 {
+define i1 @func0000000000000068(ptr %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw %union.IRIns.3498443, ptr %1, i64 %3
-  %5 = icmp ult ptr %4, %0
+  %4 = getelementptr nusw nuw %union.IRIns.3680616, ptr %1, i64 %3
+  %5 = icmp ugt ptr %0, %4
   ret i1 %5
 }
 

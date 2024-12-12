@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; cpython/optimized/weakrefobject.ll
 ; llvm/optimized/ASTMatchFinder.cpp.ll
 ; llvm/optimized/CodeViewDebug.cpp.ll
@@ -11,6 +11,7 @@
 ; ring-rs/optimized/4krjvpwhiya9iudo.ll
 ; wasmtime-rs/optimized/55kotg5r2nkrpa1d.ll
 ; wireshark/optimized/packet-dof.c.ll
+; zed-rs/optimized/2i8hya6f2t9bndlbd6b6686oi.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, ptr %2) #0 {
 entry:

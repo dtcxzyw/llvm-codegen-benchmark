@@ -1,5 +1,5 @@
 
-; 720 occurrences:
+; 709 occurrences:
 ; abc/optimized/abcDsd.c.ll
 ; abc/optimized/bmcBmc2.c.ll
 ; abc/optimized/bmcBmc3.c.ll
@@ -33,6 +33,15 @@
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; abseil-cpp/optimized/poisson_distribution_test.cc.ll
 ; arrow/optimized/tdigest.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
 ; bullet3/optimized/btDeformableBodySolver.ll
 ; bullet3/optimized/btDeformableMultiBodyDynamicsWorld.ll
 ; bullet3/optimized/btGjkPairDetector.ll
@@ -168,10 +177,8 @@
 ; gromacs/optimized/dlasq3.cpp.ll
 ; gromacs/optimized/dlasq4.cpp.ll
 ; gromacs/optimized/dlasv2.cpp.ll
-; gromacs/optimized/dlatrd.cpp.ll
 ; gromacs/optimized/domdec_setup.cpp.ll
 ; gromacs/optimized/dsteqr.cpp.ll
-; gromacs/optimized/dsytd2.cpp.ll
 ; gromacs/optimized/edsam.cpp.ll
 ; gromacs/optimized/ewald.cpp.ll
 ; gromacs/optimized/expfit.cpp.ll
@@ -228,8 +235,6 @@
 ; gromacs/optimized/slarrex.cpp.ll
 ; gromacs/optimized/slasd5.cpp.ll
 ; gromacs/optimized/slasq4.cpp.ll
-; gromacs/optimized/slatrd.cpp.ll
-; gromacs/optimized/ssytd2.cpp.ll
 ; gromacs/optimized/thermochemistry.cpp.ll
 ; gromacs/optimized/topshake.cpp.ll
 ; gromacs/optimized/tpi.cpp.ll
@@ -248,7 +253,6 @@
 ; libpng/optimized/png.c.ll
 ; libwebp/optimized/lossless_enc.c.ll
 ; libwebp/optimized/sharpyuv.c.ll
-; libzmq/optimized/local_thr.cpp.ll
 ; lightgbm/optimized/bin.cpp.ll
 ; meshlab/optimized/Factor.cpp.ll
 ; meshlab/optimized/apss.cpp.ll
@@ -284,7 +288,6 @@
 ; mitsuba3/optimized/roughplastic.cpp.ll
 ; mitsuba3/optimized/sphere.cpp.ll
 ; mitsuba3/optimized/tabphase.cpp.ll
-; msdfgen/optimized/MSDFErrorCorrection.cpp.ll
 ; msdfgen/optimized/edge-segments.cpp.ll
 ; msdfgen/optimized/equation-solver.cpp.ll
 ; msdfgen/optimized/import-svg.cpp.ll
@@ -296,7 +299,6 @@
 ; ocio/optimized/GradingTone.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
 ; openblas/optimized/dbdsvdx.c.ll
-; openblas/optimized/dgesc2.c.ll
 ; openblas/optimized/dhgeqz.c.ll
 ; openblas/optimized/dlaed2.c.ll
 ; openblas/optimized/dlaed4.c.ll
@@ -322,8 +324,6 @@
 ; openblas/optimized/dstebz.c.ll
 ; openblas/optimized/dsteqr.c.ll
 ; openblas/optimized/dsyequb.c.ll
-; openblas/optimized/dsyevr.c.ll
-; openblas/optimized/dsyevr_2stage.c.ll
 ; openblas/optimized/dtgex2.c.ll
 ; opencv/optimized/ann_mlp.cpp.ll
 ; opencv/optimized/ap3p.cpp.ll
@@ -454,17 +454,12 @@
 ; proj/optimized/cass.cpp.ll
 ; proj/optimized/cea.cpp.ll
 ; proj/optimized/col_urban.cpp.ll
-; proj/optimized/collg.cpp.ll
 ; proj/optimized/conversion.cpp.ll
-; proj/optimized/crast.cpp.ll
-; proj/optimized/cs2cs.cpp.ll
-; proj/optimized/eck1.cpp.ll
 ; proj/optimized/eck2.cpp.ll
 ; proj/optimized/eck4.cpp.ll
 ; proj/optimized/eck5.cpp.ll
 ; proj/optimized/ell_set.cpp.ll
 ; proj/optimized/eqearth.cpp.ll
-; proj/optimized/fahey.cpp.ll
 ; proj/optimized/gauss.cpp.ll
 ; proj/optimized/geodesic.c.ll
 ; proj/optimized/geos.cpp.ll
@@ -474,14 +469,11 @@
 ; proj/optimized/krovak.cpp.ll
 ; proj/optimized/labrd.cpp.ll
 ; proj/optimized/laea.cpp.ll
-; proj/optimized/larr.cpp.ll
 ; proj/optimized/lcca.cpp.ll
-; proj/optimized/mbt_fps.cpp.ll
 ; proj/optimized/mbtfpp.cpp.ll
 ; proj/optimized/mbtfpq.cpp.ll
 ; proj/optimized/mlfn.cpp.ll
 ; proj/optimized/nell.cpp.ll
-; proj/optimized/nell_h.cpp.ll
 ; proj/optimized/nzmg.cpp.ll
 ; proj/optimized/oea.cpp.ll
 ; proj/optimized/omerc.cpp.ll
@@ -498,9 +490,6 @@
 ; proj/optimized/vandg.cpp.ll
 ; proj/optimized/vandg2.cpp.ll
 ; proj/optimized/wag2.cpp.ll
-; proj/optimized/wag7.cpp.ll
-; proj/optimized/wink1.cpp.ll
-; proj/optimized/wink2.cpp.ll
 ; quantlib/optimized/abcd.ll
 ; quantlib/optimized/abcdcalibration.ll
 ; quantlib/optimized/alphafinder.ll

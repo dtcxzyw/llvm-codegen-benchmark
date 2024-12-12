@@ -1,6 +1,9 @@
 
-; 118 occurrences:
+; 121 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/basearith.ll
 ; cpython/optimized/crt.ll
 ; cpython/optimized/mpdecimal.ll
@@ -138,6 +141,19 @@ entry:
   %3 = trunc nuw i128 %2 to i64
   %4 = zext i1 %0 to i64
   %5 = add i64 %4, %3
+  ret i64 %5
+}
+
+; 2 occurrences:
+; boost/optimized/to_chars.ll
+; qemu/optimized/util_cutils.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001b(i1 %0, i128 %1) #0 {
+entry:
+  %2 = lshr i128 %1, 64
+  %3 = trunc nuw nsw i128 %2 to i64
+  %4 = zext i1 %0 to i64
+  %5 = add nuw nsw i64 %4, %3
   ret i64 %5
 }
 

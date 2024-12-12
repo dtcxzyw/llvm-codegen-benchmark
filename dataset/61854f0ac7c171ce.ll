@@ -1,11 +1,10 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; git/optimized/column.ll
 ; linux/optimized/blk-iocost.ll
 ; linux/optimized/dm-log.ll
 ; linux/optimized/drm_dsc_helper.ll
 ; linux/optimized/ialloc.ll
-; linux/optimized/jiffies.ll
 ; llvm/optimized/GCOV.cpp.ll
 ; lz4/optimized/lz4frame.c.ll
 ; openjdk/optimized/codeHeapState.ll

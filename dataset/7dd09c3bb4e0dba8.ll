@@ -1,5 +1,5 @@
 
-; 88 occurrences:
+; 87 occurrences:
 ; box2d/optimized/b2_joint.cpp.ll
 ; box2d/optimized/b2_rope.cpp.ll
 ; bullet3/optimized/btDantzigLCP.ll
@@ -8,7 +8,6 @@
 ; darktable/optimized/introspection_colorzones.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; darktable/optimized/introspection_graduatednd.c.ll
-; darktable/optimized/introspection_primaries.c.ll
 ; g2o/optimized/vertex_ellipse.cpp.ll
 ; gromacs/optimized/gmx_dielectric.cpp.ll
 ; gromacs/optimized/kernel_ElecQSTabTwinCut_VdwLJCombGeom_VF.cpp.ll

@@ -1,4 +1,4 @@
-func000000000000005a:                   # @func000000000000005a
+func000000000000009a:                   # @func000000000000009a
 	sext.w	a3, a2
 	sext.w	a4, a1
 	blt	a4, a3, .LBB0_2
@@ -7,7 +7,7 @@ func000000000000005a:                   # @func000000000000005a
 	sext.w	a1, a1
 	add	a0, a0, a1
 	ret
-func000000000000006a:                   # @func000000000000006a
+func00000000000000aa:                   # @func00000000000000aa
 	sext.w	a3, a2
 	sext.w	a4, a1
 	blt	a4, a3, .LBB1_2
@@ -16,7 +16,7 @@ func000000000000006a:                   # @func000000000000006a
 	sext.w	a1, a1
 	add	a0, a0, a1
 	ret
-func0000000000000052:                   # @func0000000000000052
+func00000000000000d2:                   # @func00000000000000d2
 	sext.w	a3, a2
 	sext.w	a4, a1
 	bltu	a4, a3, .LBB2_2
@@ -25,7 +25,7 @@ func0000000000000052:                   # @func0000000000000052
 	sext.w	a1, a1
 	add	a0, a0, a1
 	ret
-func0000000000000072:                   # @func0000000000000072
+func00000000000000b2:                   # @func00000000000000b2
 	sext.w	a3, a2
 	sext.w	a4, a1
 	bne	a4, a3, .LBB3_2

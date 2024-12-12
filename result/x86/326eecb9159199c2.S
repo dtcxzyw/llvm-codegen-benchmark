@@ -1,10 +1,10 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000f:                   # @func000000000000000f
 	negl	%esi
 	andl	$15, %esi
 	leaq	16(%rdi,%rsi), %rax
 	retq
-func0000000000000000:                   # @func0000000000000000
+func000000000000000b:                   # @func000000000000000b
 	negl	%esi
-	andl	$7, %esi
-	leaq	40(%rdi,%rsi), %rax
+	andl	$15, %esi
+	leaq	-95(%rdi,%rsi), %rax
 	retq

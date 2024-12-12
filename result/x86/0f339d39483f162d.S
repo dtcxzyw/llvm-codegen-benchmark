@@ -13,18 +13,18 @@ func000000000000000c:                   # @func000000000000000c
 	andb	$4, %al
 	orb	%sil, %al
 	retq
+func0000000000000009:                   # @func0000000000000009
+	cmpb	$5, %sil
+	setb	%al
+	addb	%al, %al
+	andb	$-3, %dil
+	orb	%dil, %al
+	retq
 func0000000000000019:                   # @func0000000000000019
 	testb	%sil, %sil
 	setne	%al
 	shlb	$5, %al
 	andb	$-33, %dil
-	orb	%dil, %al
-	retq
-func0000000000000009:                   # @func0000000000000009
-	cmpb	$4, %sil
-	setb	%al
-	shlb	$2, %al
-	andb	$1, %dil
 	orb	%dil, %al
 	retq
 func0000000000000011:                   # @func0000000000000011

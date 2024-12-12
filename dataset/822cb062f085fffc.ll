@@ -1,8 +1,9 @@
 
-%"struct.Assimp::MDL::Vertex_MDL4.2716875" = type { [3 x i16], i8, i8 }
-%class.QVariant.3250661 = type { %"struct.QVariant::Private.3250662" }
-%"struct.QVariant::Private.3250662" = type { %union.anon.3250663, i64 }
-%union.anon.3250663 = type { ptr, [16 x i8] }
+%"struct.Assimp::MDL::Vertex_MDL4.2829408" = type { [3 x i16], i8, i8 }
+%class.QVariant.3441844 = type { %"struct.QVariant::Private.3441845" }
+%"struct.QVariant::Private.3441845" = type { %union.anon.3441846, i64 }
+%union.anon.3441846 = type { ptr, [16 x i8] }
+%"class.ZXing::Trit.3649655" = type { i8 }
 
 ; 20 occurrences:
 ; assimp/optimized/COBLoader.cpp.ll
@@ -34,7 +35,7 @@ entry:
   ret i1 %5
 }
 
-; 38 occurrences:
+; 39 occurrences:
 ; abc/optimized/dauTree.c.ll
 ; cmake/optimized/divsufsort.c.ll
 ; cpython/optimized/arraymodule.ll
@@ -72,6 +73,7 @@ entry:
 ; ruby/optimized/string.ll
 ; ruby/optimized/symbol.ll
 ; ruby/optimized/unicode.ll
+; sentencepiece/optimized/bpe_model_trainer.cc.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(ptr %0, ptr %1, i32 %2) #0 {
@@ -271,7 +273,7 @@ entry:
 ; zxing/optimized/ODMultiUPCEANReader.cpp.ll
 ; zxing/optimized/PDFDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000048(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw i8, ptr %1, i64 %3
@@ -308,7 +310,6 @@ entry:
 ; cpython/optimized/xmltok.ll
 ; linux/optimized/lz4_decompress.ll
 ; linux/optimized/nf_conntrack_sip.ll
-; opencv/optimized/ts_func.cpp.ll
 ; postgres/optimized/dict_thesaurus.ll
 ; postgres/optimized/gistutil.ll
 ; postgres/optimized/lock.ll
@@ -316,6 +317,7 @@ entry:
 ; postgres/optimized/procarray.ll
 ; qemu/optimized/migration_qemu-file.c.ll
 ; qemu/optimized/system_physmem.c.ll
+; quickjs/optimized/libbf.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; ruby/optimized/re.ll
 ; ruby/optimized/regexec.ll
@@ -329,7 +331,7 @@ entry:
   ret i1 %5
 }
 
-; 130 occurrences:
+; 128 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcIf.c.ll
@@ -338,7 +340,6 @@ entry:
 ; abc/optimized/bmcMaj3.c.ll
 ; abc/optimized/bmcUnroll.c.ll
 ; abc/optimized/dauCanon.c.ll
-; abc/optimized/dauDivs.c.ll
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/dauNpn.c.ll
@@ -362,6 +363,8 @@ entry:
 ; abc/optimized/sfmLib.c.ll
 ; abc/optimized/utilIsop.c.ll
 ; assimp/optimized/ObjFileParser.cpp.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; clamav/optimized/petite.c.ll
 ; clamav/optimized/upx.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
@@ -369,7 +372,6 @@ entry:
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; freetype/optimized/ftbitmap.c.ll
 ; freetype/optimized/raster.c.ll
-; git/optimized/kwset.ll
 ; git/optimized/line-range.ll
 ; icu/optimized/unistr.ll
 ; imgui/optimized/imgui.cpp.ll
@@ -444,7 +446,6 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; re2/optimized/parse.cc.ll
 ; redis/optimized/ziplist.ll
-; sentencepiece/optimized/bpe_model_trainer.cc.ll
 ; sentencepiece/optimized/model_interface.cc.ll
 ; sentencepiece/optimized/structurally_valid.cc.ll
 ; spike/optimized/fdt_ro.ll
@@ -453,7 +454,6 @@ entry:
 ; velox/optimized/LzoDecompressor.cpp.ll
 ; verilator/optimized/V3ParseLex.cpp.ll
 ; verilator/optimized/V3PreProc.cpp.ll
-; xgboost/optimized/json.cc.ll
 ; yosys/optimized/lz4.ll
 ; yosys/optimized/rtlil_lexer.ll
 ; yosys/optimized/verilog_lexer.ll
@@ -461,7 +461,7 @@ entry:
 ; zxing/optimized/ODITFReader.cpp.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000044(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw ptr, ptr %1, i64 %3
@@ -469,7 +469,7 @@ entry:
   ret i1 %5
 }
 
-; 214 occurrences:
+; 212 occurrences:
 ; abc/optimized/acecRe.c.ll
 ; abc/optimized/giaCof.c.ll
 ; abc/optimized/giaEnable.c.ll
@@ -489,7 +489,6 @@ entry:
 ; cmake/optimized/xmltok.c.ll
 ; faiss/optimized/IndexPQ.cpp.ll
 ; git/optimized/kwset.ll
-; glslang/optimized/hlslParseHelper.cpp.ll
 ; gromacs/optimized/genhydro.cpp.ll
 ; gromacs/optimized/listed_forces.cpp.ll
 ; hermes/optimized/ConvertUTF.cpp.ll
@@ -587,7 +586,6 @@ entry:
 ; meshlab/optimized/io_u3d.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
 ; meshlab/optimized/layerDialog.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/load_save.cpp.ll
 ; meshlab/optimized/mainwindow_Init.cpp.ll
 ; meshlab/optimized/mainwindow_RunTime.cpp.ll
@@ -685,7 +683,7 @@ entry:
 ; zxing/optimized/ODITFReader.cpp.ll
 ; zxing/optimized/ReadBarcode.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000041(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw i8, ptr %1, i64 %3
@@ -703,7 +701,7 @@ entry:
 ; openjdk/optimized/os_posix.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000025(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000045(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw i8, ptr %1, i64 %3
@@ -737,7 +735,7 @@ entry:
 ; protobuf/optimized/unparser.cc.ll
 ; zxing/optimized/Content.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000004c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw i8, ptr %1, i64 %3
@@ -745,18 +743,53 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; assimp/optimized/MDLLoader.cpp.ll
 ; redis/optimized/ziplist.ll
 ; sentencepiece/optimized/model_interface.cc.ll
 ; zxing/optimized/ODCode128Reader.cpp.ll
-; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000029(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000049(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw %"struct.Assimp::MDL::Vertex_MDL4.2716875", ptr %1, i64 %3
+  %4 = getelementptr nusw %"struct.Assimp::MDL::Vertex_MDL4.2829408", ptr %1, i64 %3
   %5 = icmp uge ptr %4, %0
+  ret i1 %5
+}
+
+; 14 occurrences:
+; abc/optimized/dauCanon.c.ll
+; abc/optimized/dauDivs.c.ll
+; abc/optimized/extraBddThresh.c.ll
+; abc/optimized/extraUtilMaj.c.ll
+; abc/optimized/giaIf.c.ll
+; abc/optimized/giaMfs.c.ll
+; abc/optimized/giaMinLut2.c.ll
+; abc/optimized/giaTruth.c.ll
+; abc/optimized/ifDec75.c.ll
+; abc/optimized/ifTruth.c.ll
+; abc/optimized/sfmLib.c.ll
+; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
+; opencv/optimized/datastructs.cpp.ll
+; xgboost/optimized/json.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000064(ptr %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw nuw i64, ptr %1, i64 %3
+  %5 = icmp ult ptr %4, %0
+  ret i1 %5
+}
+
+; 2 occurrences:
+; arrow/optimized/coo_converter.cc.ll
+; glslang/optimized/hlslParseHelper.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000061(ptr %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
@@ -766,8 +799,19 @@ entry:
 define i1 @func000000000000000c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %class.QVariant.3250661, ptr %1, i64 %3
+  %4 = getelementptr %class.QVariant.3441844, ptr %1, i64 %3
   %5 = icmp ne ptr %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; zxing/optimized/QRMaskUtil.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000069(ptr %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw nuw %"class.ZXing::Trit.3649655", ptr %1, i64 %3
+  %5 = icmp uge ptr %4, %0
   ret i1 %5
 }
 

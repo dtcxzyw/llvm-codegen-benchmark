@@ -28,12 +28,12 @@
 ; openexr/optimized/ImfTileOffsets.cpp.ll
 ; pbrt-v4/optimized/loopsubdiv.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000e4(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %.neg = sdiv exact i64 %2, -12
   %3 = sext i32 %1 to i64
   %4 = add i64 %.neg, %3
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 

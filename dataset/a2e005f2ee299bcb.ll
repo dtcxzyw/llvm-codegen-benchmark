@@ -30,7 +30,7 @@
 define i8 @func0000000000000003(i8 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i8
-  %3 = add nuw nsw i8 %2, %0
+  %3 = add nuw nsw i8 %0, %2
   ret i8 %3
 }
 
@@ -47,14 +47,21 @@ entry:
 define i8 @func0000000000000002(i8 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i8
-  %3 = add nuw i8 %2, %0
+  %3 = add nuw i8 %0, %2
   ret i8 %3
 }
 
-; 59 occurrences:
+; 64 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/fxuReduce.c.ll
 ; abseil-cpp/optimized/damerau_levenshtein_distance.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/expand.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/sparring_partner.ll
+; boost/optimized/within.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/write_dsv.ll
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd7.c.ll
@@ -78,8 +85,6 @@ entry:
 ; nix/optimized/local-store.ll
 ; nix/optimized/names.ll
 ; nix/optimized/nix-collect-garbage.ll
-; nix/optimized/nix-env.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/profile.ll
 ; nix/optimized/profiles.ll
 ; nix/optimized/shared.ll
@@ -115,20 +120,26 @@ entry:
 define i8 @func0000000000000000(i8 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i8
-  %3 = add i8 %2, %0
+  %3 = add i8 %0, %2
   ret i8 %3
 }
 
-; 4 occurrences:
+; 10 occurrences:
 ; lief/optimized/ecp_curves.c.ll
 ; spike/optimized/clrs8.ll
 ; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
 ; tree-sitter-rs/optimized/50gi8jfmf82cuy8e.ll
+; zed-rs/optimized/19l54bkp73b8vpqg6elueqjm7.ll
+; zed-rs/optimized/1y02uicosbwbida5bk0bapv74.ll
+; zed-rs/optimized/5e9omh398ijohtd01awo2ssl8.ll
+; zed-rs/optimized/79pkk0uh2o8d7azal4ksf2mob.ll
+; zed-rs/optimized/8et4dphxwbm7ry4e21dik6h9d.ll
+; zed-rs/optimized/a0mwohwi8w2ksrje9uu757r3h.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i8 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i8
-  %3 = add nsw i8 %2, %0
+  %3 = add nsw i8 %0, %2
   ret i8 %3
 }
 

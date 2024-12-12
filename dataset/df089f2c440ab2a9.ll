@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 18 occurrences:
 ; actix-rs/optimized/2m9lq42maoywd5kd.ll
 ; coreutils-rs/optimized/4ooodgzovc6dgngk.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
@@ -15,6 +15,9 @@
 ; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i64 %0, i1 %1, i64 %2) #0 {
 entry:
@@ -24,9 +27,8 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; llvm/optimized/CGCleanup.cpp.ll
-; postgres/optimized/dynahash.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i1 %1, i64 %2) #0 {
 entry:

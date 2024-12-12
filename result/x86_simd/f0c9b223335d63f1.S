@@ -62,16 +62,9 @@ func0000000000000035:                   # @func0000000000000035
 	vpsubq	.LCPI8_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 .LCPI9_0:
-	.quad	8                               # 0x8
-func000000000000003d:                   # @func000000000000003d
-	vpsllq	$3, %ymm1, %ymm1
-	vpsubq	%ymm1, %ymm0, %ymm0
-	vpsubq	.LCPI9_0(%rip){1to4}, %ymm0, %ymm0
-	retq
-.LCPI10_0:
 	.quad	2                               # 0x2
 func0000000000000004:                   # @func0000000000000004
 	vpaddq	%ymm1, %ymm1, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0
-	vpsubq	.LCPI10_0(%rip){1to4}, %ymm0, %ymm0
+	vpsubq	.LCPI9_0(%rip){1to4}, %ymm0, %ymm0
 	retq

@@ -1,5 +1,5 @@
 
-; 126 occurrences:
+; 125 occurrences:
 ; assimp/optimized/3DSConverter.cpp.ll
 ; assimp/optimized/3DSLoader.cpp.ll
 ; assimp/optimized/ASELoader.cpp.ll
@@ -72,7 +72,6 @@
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; bullet3/optimized/btStaticPlaneShape.ll
 ; bullet3/optimized/btUniversalConstraint.ll
-; darktable/optimized/introspection_colorbalancergb.c.ll
 ; gromacs/optimized/bonded.cpp.ll
 ; gromacs/optimized/calc_verletbuf.cpp.ll
 ; gromacs/optimized/calculator.cpp.ll

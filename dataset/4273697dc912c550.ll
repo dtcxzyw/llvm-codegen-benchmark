@@ -1,5 +1,6 @@
 
-; 175 occurrences:
+; 174 occurrences:
+; abc/optimized/abcExact.c.ll
 ; abc/optimized/absRpm.c.ll
 ; abc/optimized/bzlib.c.ll
 ; abc/optimized/deflate.c.ll
@@ -117,7 +118,6 @@
 ; openusd/optimized/stringUtils.cpp.ll
 ; openusd/optimized/textFileFormat.cpp.ll
 ; openusd/optimized/zipFile.cpp.ll
-; php/optimized/hash_crc32.ll
 ; php/optimized/hash_fnv.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; postgres/optimized/tsgistidx.ll
@@ -154,7 +154,6 @@
 ; wireshark/optimized/crc16.c.ll
 ; wireshark/optimized/crc32.c.ll
 ; wireshark/optimized/packet-ax25-kiss.c.ll
-; wireshark/optimized/packet-btbredr_rf.c.ll
 ; wireshark/optimized/packet-mstp.c.ll
 ; wireshark/optimized/packet-netperfmeter.c.ll
 ; wireshark/optimized/packet-nfs.c.ll
@@ -179,7 +178,7 @@
 define i32 @func0000000000000000(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   ret i32 %3
 }
 
@@ -210,7 +209,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   ret i32 %3
 }
 

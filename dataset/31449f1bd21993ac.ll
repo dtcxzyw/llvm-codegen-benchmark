@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 20 occurrences:
 ; clamav/optimized/pe.c.ll
 ; clamav/optimized/upx.c.ll
 ; darktable/optimized/introspection_lut3d.c.ll
@@ -11,6 +11,7 @@
 ; linux/optimized/tcp_input.ll
 ; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_roller.ll
 ; openjdk/optimized/jccoefct.ll
 ; postgres/optimized/brin.ll
 ; qemu/optimized/block_block-copy.c.ll

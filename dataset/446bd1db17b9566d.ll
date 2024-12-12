@@ -1,5 +1,5 @@
 
-; 151 occurrences:
+; 155 occurrences:
 ; arrow/optimized/exec.cc.ll
 ; arrow/optimized/row_encoder.cc.ll
 ; assimp/optimized/Assimp.cpp.ll
@@ -34,6 +34,7 @@
 ; hyperscan/optimized/ng_squash.cpp.ll
 ; hyperscan/optimized/ng_util.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
+; influxdb-rs/optimized/2rfehyqstyicagph.ll
 ; libzmq/optimized/ws_decoder.cpp.ll
 ; libzmq/optimized/ws_encoder.cpp.ll
 ; llvm/optimized/AArch64GlobalISelUtils.cpp.ll
@@ -88,6 +89,7 @@
 ; nlohmann_json/optimized/unit-regression2.cpp.ll
 ; nlohmann_json/optimized/unit-udt_macro.cpp.ll
 ; nori/optimized/nanovg.c.ll
+; ockam-rs/optimized/cts9nubscl1ph7i.ll
 ; opencv/optimized/system.cpp.ll
 ; openjdk/optimized/c2compiler.ll
 ; openjdk/optimized/deoptimization.ll
@@ -114,7 +116,6 @@
 ; postgres/optimized/mcv.ll
 ; postgres/optimized/subselect.ll
 ; postgres/optimized/vacuumlazy.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; proj/optimized/gridshift.cpp.ll
 ; proxygen/optimized/HTTP2Codec.cpp.ll
 ; qemu/optimized/block_qcow2.c.ll
@@ -128,6 +129,7 @@
 ; slurm/optimized/job_scheduler.ll
 ; slurm/optimized/sbatch.ll
 ; spike/optimized/debug_module.ll
+; spike/optimized/triggers.ll
 ; stockfish/optimized/position.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; vcpkg/optimized/binarycaching.cpp.ll
@@ -151,6 +153,8 @@
 ; z3/optimized/bv_bounds_simplifier.cpp.ll
 ; z3/optimized/bv_bounds_tactic.cpp.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/diggdkpukg0xn23g7ivuh3jfw.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0, i8 %1) #0 {
 entry:
@@ -159,7 +163,7 @@ entry:
   ret i8 %3
 }
 
-; 74 occurrences:
+; 91 occurrences:
 ; coreutils-rs/optimized/2g9ijtjos2xwh9zs.ll
 ; coreutils-rs/optimized/2jm5bfr1qa6ga934.ll
 ; coreutils-rs/optimized/3fjbjbdecddacq17.ll
@@ -186,7 +190,9 @@ entry:
 ; llvm/optimized/RewriteObjCFoundationAPI.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
+; ockam-rs/optimized/1145kugil9dl94a2.ll
 ; ockam-rs/optimized/1d1qxhuj8x85dazd.ll
+; ockam-rs/optimized/2ugp26prskc4lvz4.ll
 ; ockam-rs/optimized/39elqh75xhewanjo.ll
 ; regex-rs/optimized/11vfjke4utuj478u.ll
 ; regex-rs/optimized/154fzydpihuymjog.ll
@@ -234,6 +240,21 @@ entry:
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/2dbu45lers7mkstxlrhw3mc97.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/3w62movadz26xj1uazrxcr5i1.ll
+; zed-rs/optimized/4u0dswi9tif78fn5u6xqz5z9a.ll
+; zed-rs/optimized/59wnsznecs6we2kopjyje48jo.ll
+; zed-rs/optimized/5ffktra9g6qxl852v2tr5a0jb.ll
+; zed-rs/optimized/5uhbvltlizm569jusm7kamf9x.ll
+; zed-rs/optimized/7xoulo9o2q4wd1npp9yutbl3x.ll
+; zed-rs/optimized/8et4dphxwbm7ry4e21dik6h9d.ll
+; zed-rs/optimized/8f7mact1a9un9bc0wu959qx4z.ll
+; zed-rs/optimized/ailyigpc30x7abusis8v0e3w5.ll
+; zed-rs/optimized/bflorbpxbjb42ccmeziz8dqw7.ll
+; zed-rs/optimized/f3wmqxw6x607w7cbx1edvfc95.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i8 %0, i8 %1) #0 {
 entry:

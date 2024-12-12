@@ -1,9 +1,7 @@
 
-; 6 occurrences:
+; 4 occurrences:
 ; libjpeg-turbo/optimized/tjexample.c.ll
 ; linux/optimized/hexdump.ll
-; meshlab/optimized/cube_style_precomputation.cpp.ll
-; meshlab/optimized/filter_parametrization.cpp.ll
 ; postgres/optimized/geo_ops.ll
 ; raylib/optimized/rtext.c.ll
 ; Function Attrs: nounwind

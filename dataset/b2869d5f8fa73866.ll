@@ -1,5 +1,5 @@
 
-; 241 occurrences:
+; 236 occurrences:
 ; abc/optimized/abcSat.c.ll
 ; abc/optimized/cecSolve.c.ll
 ; abc/optimized/cuddApa.c.ll
@@ -98,7 +98,6 @@
 ; libwebp/optimized/get_disto.c.ll
 ; libwebp/optimized/quality_estimate.c.ll
 ; libwebp/optimized/quant_enc.c.ll
-; libzmq/optimized/local_thr.cpp.ll
 ; lightgbm/optimized/objective_function.cpp.ll
 ; llvm/optimized/ConstantFolding.cpp.ll
 ; llvm/optimized/SourceManager.cpp.ll
@@ -121,7 +120,6 @@
 ; meshlab/optimized/filter_unsharp.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/layerDialog.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/ml_scene_gl_shared_data_context.cpp.ll
 ; meshlab/optimized/packing.cpp.ll
 ; meshlab/optimized/paintbox.cpp.ll
@@ -184,14 +182,12 @@
 ; openjdk/optimized/xHeuristics.ll
 ; openmpi/optimized/pstat_linux_module.ll
 ; openmpi/optimized/reachable_netlink_module.ll
-; openmpi/optimized/reachable_weighted.ll
 ; openmpi/optimized/sharedfp_individual_collaborate_data.ll
 ; openmpi/optimized/test_overhead.ll
 ; openspiel/optimized/Init.cpp.ll
 ; openspiel/optimized/Scheduler.cpp.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; pbrt-v4/optimized/ArHosekSkyModel.c.ll
-; pbrt-v4/optimized/cameras.cpp.ll
 ; pbrt-v4/optimized/rgb2spec_opt.cpp.ll
 ; php/optimized/php_date.ll
 ; php/optimized/uuencode.ll
@@ -219,7 +215,6 @@
 ; wireshark/optimized/androiddump.c.ll
 ; wireshark/optimized/capture_file_dialog.cpp.ll
 ; wireshark/optimized/editcap.c.ll
-; wireshark/optimized/ftype-time.c.ll
 ; wireshark/optimized/logcat_text.c.ll
 ; wireshark/optimized/netxray.c.ll
 ; wireshark/optimized/packet-exablaze.c.ll

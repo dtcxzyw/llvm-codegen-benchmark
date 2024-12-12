@@ -1,5 +1,5 @@
 
-; 53 occurrences:
+; 51 occurrences:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; clamav/optimized/upack.c.ll
@@ -13,7 +13,6 @@
 ; duckdb/optimized/ub_duckdb_storage_table.cpp.ll
 ; grpc/optimized/frame_window_update.cc.ll
 ; grpc/optimized/json_writer.cc.ll
-; linux/optimized/head64.ll
 ; linux/optimized/i915_pmu.ll
 ; linux/optimized/inflate.ll
 ; linux/optimized/mpage.ll
@@ -45,7 +44,6 @@
 ; postgres/optimized/xloginsert.ll
 ; proxygen/optimized/HTTP1xCodec.cpp.ll
 ; qemu/optimized/accel_tcg_translate-all.c.ll
-; qemu/optimized/migration_qemu-file.c.ll
 ; qemu/optimized/replay_replay-internal.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; rocksdb/optimized/meta_blocks.cc.ll
@@ -95,7 +93,7 @@ define i64 @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 %1, %2
   %4 = and i64 %3, 4294967292
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -110,12 +108,11 @@ entry:
   ret i64 %5
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; assimp/optimized/o3dgcDynamicVectorDecoder.cpp.ll
 ; draco/optimized/symbol_encoding.cc.ll
 ; freetype/optimized/autofit.c.ll
 ; jq/optimized/regexec.ll
-; linux/optimized/i915_cmd_parser.ll
 ; llvm/optimized/X86AvoidStoreForwardingBlocks.cpp.ll
 ; oniguruma/optimized/regexec.ll
 ; qemu/optimized/block_qcow2-cluster.c.ll
@@ -129,7 +126,7 @@ entry:
   ret i64 %5
 }
 
-; 31 occurrences:
+; 30 occurrences:
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/acbTest.c.ll
 ; abc/optimized/acecXor.c.ll
@@ -157,7 +154,6 @@ entry:
 ; abc/optimized/sscSim.c.ll
 ; brotli/optimized/encode.c.ll
 ; llvm/optimized/CGCleanup.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; lz4/optimized/lz4hc.c.ll
 ; opencc/optimized/bit-vector.cc.ll
 ; openusd/optimized/avif_obu.c.ll
@@ -166,19 +162,7 @@ define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = and i64 %3, 3689348814741910323
-  %5 = add nuw nsw i64 %4, %0
-  ret i64 %5
-}
-
-; 2 occurrences:
-; duckdb/optimized/ub_duckdb_common.cpp.ll
-; vcpkg/optimized/export.prefab.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sub i64 %1, %2
-  %4 = and i64 %3, -4
-  %5 = add nuw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -225,7 +209,18 @@ define i64 @func0000000000000007(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = and i64 %3, 3689348814741910323
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
+  ret i64 %5
+}
+
+; 1 occurrences:
+; duckdb/optimized/ub_duckdb_common.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = and i64 %3, 1
+  %5 = add nuw i64 %0, %4
   ret i64 %5
 }
 
@@ -248,7 +243,7 @@ define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 %1, %2
   %4 = and i64 %3, 256
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 

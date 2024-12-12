@@ -1,6 +1,7 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; actix-rs/optimized/comsm606o4zjj7a.ll
+; boost/optimized/alloc_lib.ll
 ; freetype/optimized/raster.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
@@ -18,7 +19,7 @@
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = xor i64 %2, -1
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = and i64 %4, %0
   ret i64 %5
 }

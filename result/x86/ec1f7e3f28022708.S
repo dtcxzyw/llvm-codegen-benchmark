@@ -6,6 +6,14 @@ func000000000000000f:                   # @func000000000000000f
 	leal	(%rcx,%rdx,4), %ecx
 	subl	%ecx, %eax
 	retq
+func000000000000000c:                   # @func000000000000000c
+	leal	(%rdi,%rsi), %eax
+	movzwl	%ax, %ecx
+	imull	$11651, %ecx, %ecx              # imm = 0x2D83
+	shrl	$22, %ecx
+	imull	$360, %ecx, %ecx                # imm = 0x168
+	subl	%ecx, %eax
+	retq
 func000000000000000e:                   # @func000000000000000e
 	leal	(%rdi,%rsi), %eax
 	imull	$3507, %eax, %ecx               # imm = 0xDB3
@@ -18,13 +26,5 @@ func000000000000000e:                   # @func000000000000000e
 	movzwl	%dx, %ecx
 	shrl	$7, %ecx
 	imull	$243, %ecx, %ecx
-	subl	%ecx, %eax
-	retq
-func000000000000000c:                   # @func000000000000000c
-	leal	(%rdi,%rsi), %eax
-	movzwl	%ax, %ecx
-	imull	$33157, %ecx, %ecx              # imm = 0x8185
-	shrl	$23, %ecx
-	imull	$253, %ecx, %ecx
 	subl	%ecx, %eax
 	retq

@@ -19,7 +19,7 @@ entry:
   %3 = zext nneg i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 28
   %5 = select i1 %1, i32 805306368, i32 %4
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   ret i32 %6
 }
 
@@ -32,7 +32,7 @@ entry:
   %3 = zext nneg i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 10
   %5 = select i1 %1, i32 10240, i32 %4
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   ret i32 %6
 }
 

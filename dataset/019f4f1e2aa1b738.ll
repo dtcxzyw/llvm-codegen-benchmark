@@ -1,10 +1,11 @@
 
-; 151 occurrences:
+; 145 occurrences:
 ; abc/optimized/cuddTable.c.ll
 ; abseil-cpp/optimized/numbers.cc.ll
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
+; boost/optimized/sparring_partner.ll
 ; brotli/optimized/decode.c.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; casadi/optimized/function_internal.cpp.ll
@@ -33,9 +34,7 @@
 ; darktable/optimized/introspection_temperature.c.ll
 ; darktable/optimized/introspection_toneequal.c.ll
 ; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
-; faiss/optimized/LocalSearchQuantizer.cpp.ll
 ; faiss/optimized/ResidualQuantizer.cpp.ll
-; faiss/optimized/VectorTransform.cpp.ll
 ; faiss/optimized/extra_distances.cpp.ll
 ; faiss/optimized/index_read.cpp.ll
 ; faiss/optimized/index_write.cpp.ll
@@ -55,22 +54,18 @@
 ; nix/optimized/globals.ll
 ; nix/optimized/lexer-tab.ll
 ; nix/optimized/nix-collect-garbage.ll
-; nix/optimized/nix-env.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/profile.ll
 ; nix/optimized/shared.ll
 ; nix/optimized/store-api.ll
 ; nix/optimized/store-gc.ll
 ; nix/optimized/tarball.ll
 ; nix/optimized/verify.ll
-; ocio/optimized/MatrixOpData.cpp.ll
 ; oiio/optimized/Writer.cpp.ll
 ; oiio/optimized/imagebuf.cpp.ll
 ; oiio/optimized/imagecache.cpp.ll
 ; oiio/optimized/texture3d.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
 ; opencv/optimized/attention_layer.cpp.ll
-; opencv/optimized/audio_spectrogram.cpp.ll
 ; opencv/optimized/convolution.cpp.ll
 ; opencv/optimized/cumsum_layer.cpp.ll
 ; opencv/optimized/dnn_utils.cpp.ll
@@ -111,7 +106,6 @@
 ; openmpi/optimized/osc_rdma_component.ll
 ; openmpi/optimized/osc_rdma_dynamic.ll
 ; openmpi/optimized/osc_rdma_peer.ll
-; openmpi/optimized/sharedfp_individual_write.ll
 ; openusd/optimized/gprimAdapter.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/pathNode.cpp.ll
@@ -155,21 +149,20 @@
 define i64 @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }
 
-; 237 occurrences:
+; 229 occurrences:
 ; abc/optimized/bmcFault.c.ll
-; abc/optimized/giaMinLut.c.ll
-; abc/optimized/ivyMan.c.ll
 ; abseil-cpp/optimized/numbers.cc.ll
 ; arrow/optimized/builder_binary.cc.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_nested.cc.ll
 ; arrow/optimized/vector_selection_internal.cc.ll
 ; assimp/optimized/Assimp.cpp.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; casadi/optimized/cvodes.c.ll
@@ -234,8 +227,6 @@ entry:
 ; llvm/optimized/MachinePipeliner.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
-; meshlab/optimized/filter_img_patch_param.cpp.ll
-; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/outline2_rasterizer.cpp.ll
 ; meshlab/optimized/texture_object.cpp.ll
@@ -268,7 +259,6 @@ entry:
 ; openblas/optimized/dlasda.c.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
-; opencv/optimized/checker_detector.cpp.ll
 ; opencv/optimized/convolution.cpp.ll
 ; opencv/optimized/convolution_layer.cpp.ll
 ; opencv/optimized/daisy.cpp.ll
@@ -331,7 +321,6 @@ entry:
 ; openjdk/optimized/c1_LIRGenerator_x86.ll
 ; openjdk/optimized/jquant2.ll
 ; openjdk/optimized/memnode.ll
-; openjdk/optimized/mlib_ImageConvCopyEdge_Bit.ll
 ; openjdk/optimized/parse3.ll
 ; openmpi/optimized/ad_darray.ll
 ; openmpi/optimized/ad_io_coll.ll
@@ -382,7 +371,6 @@ entry:
 ; spike/optimized/vwmacc_vv.ll
 ; spike/optimized/vwmacc_vx.ll
 ; sqlite/optimized/sqlite3.ll
-; stb/optimized/stb_hexwave.c.ll
 ; stb/optimized/stb_image.c.ll
 ; stockfish/optimized/timeman.ll
 ; sundials/optimized/arkode.c.ll
@@ -393,21 +381,19 @@ entry:
 ; yosys/optimized/booth.ll
 ; yosys/optimized/opt_dff.ll
 ; yosys/optimized/proc_dlatch.ll
-; yosys/optimized/qwp.ll
 ; z3/optimized/mpff.cpp.ll
 ; zxing/optimized/BitMatrix.cpp.ll
-; zxing/optimized/PDFReader.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = add nsw i64 %4, %0
   ret i64 %5
 }
 
-; 92 occurrences:
+; 89 occurrences:
 ; abc/optimized/trees.c.ll
 ; arrow/optimized/byte_size.cc.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
@@ -416,7 +402,6 @@ entry:
 ; casadi/optimized/cvodes_spils.c.ll
 ; casadi/optimized/idas.c.ll
 ; casadi/optimized/idas_spils.c.ll
-; casadi/optimized/kinsol_spils.c.ll
 ; cmake/optimized/cmCMakePath.cxx.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_colorreconstruction.c.ll
@@ -475,8 +460,6 @@ entry:
 ; openjdk/optimized/OGLBlitLoops.ll
 ; openjdk/optimized/ScaledBlit.ll
 ; openjdk/optimized/TransformHelper.ll
-; openjdk/optimized/freeChunkList.ll
-; openjdk/optimized/metaspaceStatistics.ll
 ; openmpi/optimized/nbc_ireduce_scatter.ll
 ; openssl/optimized/libcrypto-lib-curve25519.ll
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
@@ -504,8 +487,8 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul nsw i64 %3, %1
-  %5 = add i64 %4, %0
+  %4 = mul nsw i64 %1, %3
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -522,12 +505,12 @@ entry:
 define i64 @func0000000000000007(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul nsw i64 %3, %1
-  %5 = add nuw nsw i64 %4, %0
+  %4 = mul nsw i64 %1, %3
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_colorequal.c.ll
@@ -540,7 +523,6 @@ entry:
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
-; opencv/optimized/correlation_layer.cpp.ll
 ; opencv/optimized/sift.dispatch.cpp.ll
 ; raylib/optimized/rtextures.c.ll
 ; recastnavigation/optimized/RecastLayers.cpp.ll
@@ -548,22 +530,20 @@ entry:
 define i64 @func000000000000000f(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
-  %5 = add nuw nsw i64 %4, %0
+  %4 = mul nuw nsw i64 %1, %3
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
-; 4 occurrences:
-; darktable/optimized/introspection_cacorrect.c.ll
+; 2 occurrences:
 ; darktable/optimized/introspection_temperature.c.ll
 ; oiio/optimized/targaoutput.cpp.ll
-; openmpi/optimized/sharedfp_individual_iwrite.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul i64 %3, %1
-  %5 = add nsw i64 %4, %0
+  %4 = mul i64 %1, %3
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -575,8 +555,8 @@ entry:
 define i64 @func000000000000000d(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
-  %5 = add nsw i64 %4, %0
+  %4 = mul nuw nsw i64 %1, %3
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -586,7 +566,7 @@ entry:
 define i64 @func0000000000000003(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = add nuw nsw i64 %4, %0
   ret i64 %5
 }
@@ -597,8 +577,8 @@ entry:
 define i64 @func000000000000000e(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
-  %5 = add nuw i64 %4, %0
+  %4 = mul nuw nsw i64 %1, %3
+  %5 = add nuw i64 %0, %4
   ret i64 %5
 }
 
@@ -608,8 +588,8 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = mul i64 %3, %1
-  %5 = add nuw i64 %4, %0
+  %4 = mul i64 %1, %3
+  %5 = add nuw i64 %0, %4
   ret i64 %5
 }
 

@@ -1,7 +1,15 @@
 
-; 64 occurrences:
+; 71 occurrences:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; cpython/optimized/mathmodule.ll
 ; darktable/optimized/introspection_basecurve.c.ll
@@ -62,7 +70,6 @@
 ; stat-rs/optimized/1957ju1ns40544yq.ll
 ; stat-rs/optimized/350eqnsjcoc7kbdy.ll
 ; stat-rs/optimized/3koi1gt1wwkf7v6z.ll
-; sundials/optimized/arkode_butcher_dirk.c.ll
 ; sundials/optimized/arkode_sprk.c.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(double %0, double %1) #0 {

@@ -1,7 +1,6 @@
 
-; 88 occurrences:
+; 87 occurrences:
 ; box2d/optimized/b2_contact.cpp.ll
-; c3c/optimized/number.c.ll
 ; ceres/optimized/schur_eliminator_2_2_2.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_3.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_4.cc.ll
@@ -66,7 +65,6 @@
 ; openusd/optimized/multiInterval.cpp.ll
 ; postgres/optimized/nodeAgg.ll
 ; postgres/optimized/spi.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; recastnavigation/optimized/imgui.cpp.ll
 ; rocksdb/optimized/block_based_table_reader.cc.ll
 ; ruby/optimized/prism.ll
@@ -87,17 +85,20 @@
 ; z3/optimized/subpaving_mpfx.cpp.ll
 ; z3/optimized/subpaving_mpq.cpp.ll
 ; z3/optimized/theory_special_relations.cpp.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
 ; zxing/optimized/PDFBoundingBox.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i8 %1) #0 {
 entry:
   %2 = trunc i8 %1 to i1
   %3 = xor i1 %2, true
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
-; 13 occurrences:
+; 17 occurrences:
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/instantiate_cpp_exprgrammar.ll
 ; c3c/optimized/sema_decls.c.ll
 ; clap-rs/optimized/gk6w3l154s6ch7z.ll
 ; php/optimized/http_fopen_wrapper.ll
@@ -111,12 +112,14 @@ entry:
 ; rust-analyzer-rs/optimized/1x49zfabvca0zorz.ll
 ; rust-analyzer-rs/optimized/2mbx5ptcpq6fo7sc.ll
 ; rust-analyzer-rs/optimized/5fgtm3ees9sdsrsg.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/d1rzz8mrspct74ymgl9sm92kt.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = xor i1 %2, true
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 

@@ -14,13 +14,13 @@ func0000000000000037:                   # @func0000000000000037
 	subq	%rsi, %rdi
 	leaq	-12(%rdi), %rax
 	retq
-func0000000000000000:                   # @func0000000000000000
-	notq	%rsi
-	leaq	-2(%rdi,%rsi), %rax
-	retq
 func0000000000000002:                   # @func0000000000000002
 	notq	%rsi
 	leaq	-2(%rdi,%rsi), %rax
+	retq
+func0000000000000000:                   # @func0000000000000000
+	subq	%rsi, %rdi
+	leaq	-2(%rdi), %rax
 	retq
 func0000000000000035:                   # @func0000000000000035
 	notq	%rsi

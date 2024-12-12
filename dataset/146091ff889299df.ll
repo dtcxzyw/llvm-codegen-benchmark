@@ -1,5 +1,5 @@
 
-; 265 occurrences:
+; 269 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/exponential_biased_test.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
@@ -14,6 +14,10 @@
 ; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/sweep_context.cc.ll
+; boost/optimized/ext.ll
+; boost/optimized/pid.ll
+; boost/optimized/process.ll
+; boost/optimized/shell.ll
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; casadi/optimized/mx_function.cpp.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
@@ -266,7 +270,7 @@
 ; yosys/optimized/rtlil.ll
 ; yosys/optimized/yosys.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000026(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
@@ -275,7 +279,8 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
+; boost/optimized/get_clusters.ll
 ; duckdb/optimized/ub_duckdb_optimizer.cpp.ll
 ; llvm/optimized/IndirectCallPromotion.cpp.ll
 ; minetest/optimized/CSceneManager.cpp.ll
@@ -284,7 +289,7 @@ entry:
 ; protobuf/optimized/enum.cc.ll
 ; rocksdb/optimized/version_set.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, ptr %1) #0 {
+define i1 @func000000000000002a(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = sub i64 %2, %0
@@ -441,7 +446,7 @@ entry:
   ret i1 %5
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; abseil-cpp/optimized/common_policy_traits_test.cc.ll
 ; abseil-cpp/optimized/hash_policy_traits_test.cc.ll
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
@@ -457,7 +462,6 @@ entry:
 ; glog/optimized/mock-log_unittest.cc.ll
 ; quantlib/optimized/fdklugeextouspreadengine.ll
 ; quantlib/optimized/fdsimpleklugeextouvppengine.ll
-; tev/optimized/ImageCanvas.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, ptr %1) #0 {
 entry:

@@ -1,8 +1,8 @@
-func0000000000000141:                   # @func0000000000000141
+func0000000000000681:                   # @func0000000000000681
 	addq	$-5, %rdx
 	xorl	%eax, %eax
 	cmpb	$6, %sil
 	cmovaeq	%rdx, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq

@@ -1,7 +1,8 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; bullet3/optimized/btGeneric6DofSpring2Constraint.ll
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
+; lvgl/optimized/lv_arc.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; minetest/optimized/clientpackethandler.cpp.ll
 ; minetest/optimized/content_cao.cpp.ll

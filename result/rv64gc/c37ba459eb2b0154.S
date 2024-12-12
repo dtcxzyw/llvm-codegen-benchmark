@@ -5,8 +5,8 @@ func0000000000000035:                   # @func0000000000000035
 	ret
 func0000000000000024:                   # @func0000000000000024
 	srli	a2, a2, 32
-	subw	a1, a1, a0
-	subw	a0, a2, a1
+	subw	a0, a0, a1
+	addw	a0, a0, a2
 	ret
 func0000000000000025:                   # @func0000000000000025
 	srli	a2, a2, 32
@@ -15,8 +15,8 @@ func0000000000000025:                   # @func0000000000000025
 	ret
 func0000000000000005:                   # @func0000000000000005
 	srli	a2, a2, 10
-	subw	a1, a1, a0
-	subw	a0, a2, a1
+	subw	a0, a0, a1
+	addw	a0, a0, a2
 	ret
 func0000000000000020:                   # @func0000000000000020
 	srli	a2, a2, 32
@@ -25,8 +25,8 @@ func0000000000000020:                   # @func0000000000000020
 	ret
 func0000000000000045:                   # @func0000000000000045
 	srli	a2, a2, 3
-	subw	a1, a1, a0
-	subw	a0, a2, a1
+	subw	a0, a0, a1
+	addw	a0, a0, a2
 	ret
 func0000000000000044:                   # @func0000000000000044
 	srli	a2, a2, 3

@@ -17,7 +17,7 @@
 	.zero	1
 .LCPI0_1:
 	.long	4294967293                      # 0xfffffffd
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vptestmb	.LCPI0_0(%rip), %xmm2, %k0
@@ -45,7 +45,7 @@ func000000000000004c:                   # @func000000000000004c
 	.zero	1
 .LCPI1_1:
 	.long	4                               # 0x4
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vptestmb	.LCPI1_0(%rip), %xmm2, %k0
@@ -71,13 +71,12 @@ func00000000000000cc:                   # @func00000000000000cc
 	.zero	1
 	.zero	1
 	.zero	1
-func00000000000000ac:                   # @func00000000000000ac
+func000000000000014c:                   # @func000000000000014c
 	vpsllw	$15, %xmm0, %xmm0
-	vpxor	%xmm3, %xmm3, %xmm3
+	vpmovw2m	%xmm0, %k1
 	vptestmb	.LCPI2_0(%rip), %xmm2, %k0
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpcmpgtd	%ymm2, %ymm1, %k1
-	vpcmpgtw	%xmm0, %xmm3, %k1 {%k1}
+	vpcmpeqd	%ymm0, %ymm0, %ymm0
+	vpcmpgtd	%ymm0, %ymm1, %k1 {%k1}
 	kandb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

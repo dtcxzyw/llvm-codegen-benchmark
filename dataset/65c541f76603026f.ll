@@ -1,5 +1,5 @@
 
-; 60 occurrences:
+; 64 occurrences:
 ; abc/optimized/ifMap.c.ll
 ; abc/optimized/kitDsd.c.ll
 ; assimp/optimized/unzip.c.ll
@@ -16,7 +16,6 @@
 ; linux/optimized/array.ll
 ; linux/optimized/compaction.ll
 ; linux/optimized/dmi_scan.ll
-; linux/optimized/i915_driver.ll
 ; linux/optimized/intel_hdmi.ll
 ; linux/optimized/libahci.ll
 ; linux/optimized/libata-core.ll
@@ -26,11 +25,15 @@
 ; linux/optimized/x_tables.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/InstrProfiling.cpp.ll
+; llvm/optimized/LLVMTargetMachine.cpp.ll
 ; llvm/optimized/LoopAccessAnalysis.cpp.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; llvm/optimized/RDFRegisters.cpp.ll
+; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; luajit/optimized/buildvm.ll
+; lvgl/optimized/lv_buttonmatrix.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; minetest/optimized/nodedef.cpp.ll
 ; ncnn/optimized/gemm.cpp.ll
@@ -47,6 +50,7 @@
 ; ruby/optimized/date_strftime.ll
 ; ruby/optimized/strftime.ll
 ; rust-analyzer-rs/optimized/ii5fl5y94ca5wd9.ll
+; rust-analyzer-rs/optimized/lvm5mow7j40zynh.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll

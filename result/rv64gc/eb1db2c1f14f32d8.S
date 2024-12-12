@@ -1,4 +1,4 @@
-func000000000000001b:                   # @func000000000000001b
+func000000000000002b:                   # @func000000000000002b
 	andi	a0, a0, 1
 	sext.w	a4, a2
 	lui	a3, 16
@@ -20,7 +20,7 @@ func000000000000001b:                   # @func000000000000001b
 	slt	a0, a3, a2
 	xori	a0, a0, 1
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	andi	a0, a0, 1
 	sext.w	a4, a2
 	lui	a3, 16
@@ -40,7 +40,7 @@ func000000000000001a:                   # @func000000000000001a
 	sext.w	a3, a1
 	slt	a0, a2, a3
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	andi	a0, a0, 1
 	sext.w	a4, a2
 	lui	a3, 16
@@ -60,7 +60,7 @@ func0000000000000016:                   # @func0000000000000016
 	sext.w	a3, a1
 	slt	a0, a3, a2
 	ret
-func0000000000000015:                   # @func0000000000000015
+func0000000000000025:                   # @func0000000000000025
 	andi	a0, a0, 1
 	sext.w	a4, a2
 	lui	a3, 16
@@ -82,7 +82,7 @@ func0000000000000015:                   # @func0000000000000015
 	sltu	a0, a2, a3
 	xori	a0, a0, 1
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	andi	a0, a0, 1
 	sext.w	a4, a2
 	lui	a3, 524288
@@ -104,7 +104,29 @@ func0000000000000011:                   # @func0000000000000011
 	xor	a2, a2, a3
 	seqz	a0, a2
 	ret
-func0000000000000014:                   # @func0000000000000014
+func000000000000002c:                   # @func000000000000002c
+	andi	a0, a0, 1
+	sext.w	a4, a2
+	li	a5, 4
+	li	a3, 3
+	beq	a4, a5, .LBB5_3
+	sext.w	a2, a2
+	beqz	a0, .LBB5_4
+.LBB5_2:                                # %entry
+	sext.w	a3, a3
+	xor	a2, a2, a3
+	snez	a0, a2
+	ret
+.LBB5_3:                                # %entry
+	li	a2, 3
+	sext.w	a2, a2
+	bnez	a0, .LBB5_2
+.LBB5_4:                                # %entry
+	sext.w	a3, a1
+	xor	a2, a2, a3
+	snez	a0, a2
+	ret
+func0000000000000024:                   # @func0000000000000024
 	sext.w	a1, a1
 	sext.w	a3, a2
 	snez	a3, a3

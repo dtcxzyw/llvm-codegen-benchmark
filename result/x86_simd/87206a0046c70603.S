@@ -17,18 +17,10 @@ func0000000000000004:                   # @func0000000000000004
 	vmovdqa64	%ymm1, %ymm1 {%k1} {z}
 	vpmullq	%ymm0, %ymm1, %ymm0
 	retq
-func0000000000000030:                   # @func0000000000000030
-	vptestmd	%xmm2, %xmm2, %k1
-	vpmullq	%ymm1, %ymm0, %ymm0 {%k1}
-	retq
-func0000000000000031:                   # @func0000000000000031
-	vptestmd	%xmm2, %xmm2, %k1
-	vpmullq	%ymm1, %ymm0, %ymm0 {%k1}
-	retq
-.LCPI5_0:
+.LCPI3_0:
 	.long	1                               # 0x1
 func0000000000000028:                   # @func0000000000000028
-	vpcmpgtd	.LCPI5_0(%rip){1to4}, %xmm2, %k1
+	vpcmpgtd	.LCPI3_0(%rip){1to4}, %xmm2, %k1
 	vmovdqa64	%ymm1, %ymm1 {%k1} {z}
 	vpmullq	%ymm0, %ymm1, %ymm0
 	retq

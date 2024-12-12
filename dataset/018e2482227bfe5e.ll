@@ -1,5 +1,12 @@
 
-; 4 occurrences:
+; 11 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/expand.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/sparring_partner.ll
+; boost/optimized/within.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/write_dsv.ll
 ; cmake/optimized/cmInstallCommand.cxx.ll
 ; gromacs/optimized/nb_free_energy.cpp.ll
 ; quantlib/optimized/dataparsers.ll
@@ -13,7 +20,7 @@ entry:
   ret i8 %4
 }
 
-; 36 occurrences:
+; 34 occurrences:
 ; cmake/optimized/cf-h2-proxy.c.ll
 ; cmake/optimized/cmInstallCommand.cxx.ll
 ; cmake/optimized/http2.c.ll
@@ -33,8 +40,6 @@ entry:
 ; nix/optimized/local-store.ll
 ; nix/optimized/names.ll
 ; nix/optimized/nix-collect-garbage.ll
-; nix/optimized/nix-env.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/profile.ll
 ; nix/optimized/profiles.ll
 ; nix/optimized/shared.ll

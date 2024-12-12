@@ -7,7 +7,7 @@
 ; wireshark/optimized/ngsniffer.c.ll
 ; wireshark/optimized/snoop.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i64 %0) #0 {
+define i32 @func0000000000000061(i64 %0) #0 {
 entry:
   %1 = shl nuw nsw i64 1, %0
   %2 = and i64 %1, 33027
@@ -19,7 +19,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/drm_probe_helper.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i64 %0) #0 {
+define i32 @func0000000000000041(i64 %0) #0 {
 entry:
   %1 = shl nuw i64 1, %0
   %2 = and i64 %1, 23
@@ -31,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestBitset.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i64 %0) #0 {
+define i32 @func0000000000000021(i64 %0) #0 {
 entry:
   %1 = shl nsw i64 -2, %0
   %2 = and i64 %1, 14

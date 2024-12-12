@@ -1,5 +1,5 @@
 
-; 46 occurrences:
+; 47 occurrences:
 ; abseil-cpp/optimized/charset_test.cc.ll
 ; abseil-cpp/optimized/generate_real_test.cc.ll
 ; flac/optimized/bitreader.c.ll
@@ -46,6 +46,7 @@
 ; openjdk/optimized/metachunk.ll
 ; spike/optimized/spike-log-parser.ll
 ; stb/optimized/stb_sprintf.c.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1) #0 {
 entry:

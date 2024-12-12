@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 39 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; mitsuba3/optimized/aov.cpp.ll
 ; mitsuba3/optimized/argparser.cpp.ll
@@ -11,13 +11,13 @@
 ; mitsuba3/optimized/moment.cpp.ll
 ; mitsuba3/optimized/obj.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/properties.cpp.ll
 ; mitsuba3/optimized/specfilm.cpp.ll
 ; mitsuba3/optimized/stokes.cpp.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/xml.cpp.ll
+; opencv/optimized/matmul.dispatch.cpp.ll
 ; rust-analyzer-rs/optimized/1pxyofhmeataj0qk.ll
 ; rust-analyzer-rs/optimized/25eqaaqjz071ug6q.ll
 ; rust-analyzer-rs/optimized/2ebx9eutyph8un4i.ll
@@ -38,6 +38,7 @@
 ; tev/optimized/ImageViewer.cpp.ll
 ; tev/optimized/Ipc.cpp.ll
 ; tev/optimized/main.cpp.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i1 %0, i64 %1) #0 {
 entry:
@@ -46,8 +47,7 @@ entry:
   ret i64 %3
 }
 
-; 4 occurrences:
-; linux/optimized/build_utility.ll
+; 3 occurrences:
 ; opencv/optimized/matmul.dispatch.cpp.ll
 ; rust-analyzer-rs/optimized/2ajuxklycdgazr2a.ll
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll

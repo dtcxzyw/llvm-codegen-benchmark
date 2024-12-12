@@ -1,8 +1,9 @@
 
-; 22 occurrences:
+; 23 occurrences:
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
 ; abseil-cpp/optimized/exponential_biased_test.cc.ll
 ; assimp/optimized/LWSLoader.cpp.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; graphviz/optimized/dotsplines.c.ll
 ; graphviz/optimized/postproc.c.ll
 ; gromacs/optimized/splineutil.cpp.ll

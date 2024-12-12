@@ -4,13 +4,13 @@ func0000000000000070:                   # @func0000000000000070
 	addq	%rsi, %rdx
 	subq	%rdx, %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func000000000000000c:                   # @func000000000000000c
 	movq	%rdi, %rax
 	shll	$2, %edx
 	leaq	(%rsi,%rdx,4), %rcx
 	subq	%rcx, %rax
 	retq
-func0000000000000078:                   # @func0000000000000078
+func000000000000007c:                   # @func000000000000007c
 	movq	%rdi, %rax
 	shll	$2, %edx
 	leaq	(%rsi,%rdx,2), %rcx

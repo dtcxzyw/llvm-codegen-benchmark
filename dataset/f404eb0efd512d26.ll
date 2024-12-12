@@ -11,7 +11,7 @@
 define i32 @func0000000000000000(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = and i32 %1, 4
   %6 = add i32 %4, %5
   ret i32 %6
@@ -26,7 +26,7 @@ entry:
 define i32 @func000000000000000f(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = and i32 %1, 3840
   %6 = add nuw nsw i32 %4, %5
   ret i32 %6
@@ -40,8 +40,20 @@ entry:
 define i32 @func000000000000001f(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = and i32 %1, 1
+  %6 = add nuw nsw i32 %4, %5
+  ret i32 %6
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_calendar.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000017(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext nneg i8 %2 to i32
+  %4 = add nsw i32 %0, %3
+  %5 = and i32 %1, 65535
   %6 = add nuw nsw i32 %4, %5
   ret i32 %6
 }
@@ -52,7 +64,7 @@ entry:
 define i32 @func0000000000000010(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = and i32 %1, 2147483647
   %6 = add i32 %4, %5
   ret i32 %6

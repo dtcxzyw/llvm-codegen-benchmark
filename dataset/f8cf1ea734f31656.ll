@@ -1,10 +1,9 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; git/optimized/pack-bitmap.ll
 ; linux/optimized/libata-core.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
-; spike/optimized/bf16_to_f32.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
 entry:

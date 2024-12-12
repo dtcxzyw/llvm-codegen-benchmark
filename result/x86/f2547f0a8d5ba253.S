@@ -30,3 +30,9 @@ func0000000000000005:                   # @func0000000000000005
 	shlxq	%rdx, %rsi, %rax
 	addq	%rdi, %rax
 	retq
+func0000000000000001:                   # @func0000000000000001
+	andb	$1, %dl
+	xorb	$3, %dl
+	shlxq	%rdx, %rsi, %rax
+	addq	%rdi, %rax
+	retq

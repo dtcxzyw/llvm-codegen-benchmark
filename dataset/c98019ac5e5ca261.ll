@@ -1,4 +1,33 @@
 
+; 19 occurrences:
+; clamav/optimized/bytecode_vm.c.ll
+; cmake/optimized/zstd_lazy.c.ll
+; cpython/optimized/dtoa.ll
+; hermes/optimized/BigIntSupport.cpp.ll
+; hermes/optimized/dtoa.c.ll
+; jq/optimized/jv_dtoa.ll
+; libquic/optimized/dtoa.cc.ll
+; llvm/optimized/LegalizerHelper.cpp.ll
+; luajit/optimized/lj_lex.ll
+; luajit/optimized/lj_lex_dyn.ll
+; openblas/optimized/dsbgst.c.ll
+; opencv/optimized/camera_calibration.cpp.ll
+; opencv/optimized/retinacolor.cpp.ll
+; php/optimized/zend_strtod.ll
+; postgres/optimized/md.ll
+; postgres/optimized/tableam.ll
+; ruby/optimized/util.ll
+; wireshark/optimized/related_packet_delegate.cpp.ll
+; zstd/optimized/zstd_lazy.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 20
+  %3 = sub i32 %0, %2
+  %4 = zext i32 %3 to i64
+  ret i64 %4
+}
+
 ; 7 occurrences:
 ; gromacs/optimized/pairlist_simd_kernel.cpp.ll
 ; openjdk/optimized/gtk2_interface.ll
@@ -41,33 +70,6 @@ entry:
   ret i64 %4
 }
 
-; 17 occurrences:
-; clamav/optimized/bytecode_vm.c.ll
-; cmake/optimized/zstd_lazy.c.ll
-; hermes/optimized/BigIntSupport.cpp.ll
-; hermes/optimized/dtoa.c.ll
-; jq/optimized/jv_dtoa.ll
-; libquic/optimized/dtoa.cc.ll
-; llvm/optimized/LegalizerHelper.cpp.ll
-; luajit/optimized/lj_lex.ll
-; luajit/optimized/lj_lex_dyn.ll
-; openblas/optimized/dsbgst.c.ll
-; opencv/optimized/camera_calibration.cpp.ll
-; opencv/optimized/retinacolor.cpp.ll
-; php/optimized/zend_strtod.ll
-; postgres/optimized/md.ll
-; postgres/optimized/tableam.ll
-; wireshark/optimized/related_packet_delegate.cpp.ll
-; zstd/optimized/zstd_lazy.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl i32 %1, 20
-  %3 = sub i32 %0, %2
-  %4 = zext i32 %3 to i64
-  ret i64 %4
-}
-
 ; 3 occurrences:
 ; icu/optimized/unames.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -89,17 +91,6 @@ entry:
   %2 = shl i32 %1, 3
   %3 = sub nuw nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
-  ret i64 %4
-}
-
-; 1 occurrences:
-; linux/optimized/rsmisc.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000018(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl nuw nsw i32 %1, 1
-  %3 = sub i32 %0, %2
-  %4 = zext i32 %3 to i64
   ret i64 %4
 }
 
@@ -151,6 +142,17 @@ define i64 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 6
   %3 = sub i32 %0, %2
+  %4 = zext nneg i32 %3 to i64
+  ret i64 %4
+}
+
+; 1 occurrences:
+; graphviz/optimized/quad_prog_vpsc.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000013(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl nuw i32 %1, 1
+  %3 = sub nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }

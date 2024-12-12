@@ -25,6 +25,15 @@ func0000000000000006:                   # @func0000000000000006
 	srai	a0, a0, 56
 	slti	a0, a0, 0
 	ret
+func0000000000000014:                   # @func0000000000000014
+	andi	a0, a0, 255
+	sltiu	a0, a0, 58
+	ret
+func0000000000000018:                   # @func0000000000000018
+	andi	a0, a0, 255
+	sltiu	a0, a0, 10
+	xori	a0, a0, 1
+	ret
 func000000000000000b:                   # @func000000000000000b
 	slli	a0, a0, 56
 	srai	a0, a0, 56

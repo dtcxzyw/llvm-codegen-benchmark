@@ -5,5 +5,6 @@ func0000000000000005:                   # @func0000000000000005
 	retq
 func0000000000000003:                   # @func0000000000000003
 	imull	%esi, %edi
-	leal	1(%rdi), %eax
+	leaq	7(%rdi), %rax
+	andq	$-8, %rax
 	retq

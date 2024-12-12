@@ -11,17 +11,15 @@ entry:
   ret i32 %3
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; llvm/optimized/NumericalStabilitySanitizer.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0) #0 {
 entry:
-  %1 = add i64 %0, 7
-  %sh.diff = lshr i64 %1, 2
-  %tr.sh.diff = trunc i64 %sh.diff to i32
-  %2 = and i32 %tr.sh.diff, -2
-  ret i32 %2
+  %1 = trunc i64 %0 to i32
+  %2 = add i32 %1, 7
+  %3 = and i32 %2, -8
+  ret i32 %3
 }
 
 ; 1 occurrences:

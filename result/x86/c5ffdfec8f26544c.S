@@ -14,15 +14,14 @@ func0000000000000014:                   # @func0000000000000014
 	testl	$-2147483645, %edi              # imm = 0x80000003
 	setg	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000028:                   # @func0000000000000028
 	movzbl	%dil, %ecx
 	xorl	%eax, %eax
 	cmpl	$127, %ecx
 	setb	%al
 	retq
-func0000000000000010:                   # @func0000000000000010
-	andl	$7, %edi
+func0000000000000030:                   # @func0000000000000030
 	xorl	%eax, %eax
-	cmpl	$3, %edi
-	setae	%al
+	testb	$-2, %dil
+	setne	%al
 	retq

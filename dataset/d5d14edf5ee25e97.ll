@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 11 occurrences:
 ; darktable/optimized/RawImageDataFloat.cpp.ll
 ; darktable/optimized/introspection_invert.c.ll
 ; image-rs/optimized/ptscn4jakoj4p9m.ll
@@ -9,6 +9,8 @@
 ; mold/optimized/arch-arm32.cc.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; qemu/optimized/tcg.c.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:

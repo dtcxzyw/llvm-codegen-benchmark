@@ -1,50 +1,42 @@
-func0000000000000031:                   // @func0000000000000031
+func0000000000000051:                   // @func0000000000000051
 // %bb.0:                               // %entry
-	mov	w8, #2048                       // =0x800
-	dup	v3.2d, x8
-	cmhi	v2.2d, v2.2d, v3.2d
-	cmhi	v1.2d, v1.2d, v3.2d
-	mov	v3.16b, v0.16b
-	uzp1	v1.4s, v1.4s, v2.4s
-	orr	v3.4s, #32
-	bit	v0.16b, v3.16b, v1.16b
-	orr	v0.4s, #8
+	orr	w8, w0, #0x20
+	cmp	x1, #2048
+	csel	w8, w8, w0, hi
+	orr	w0, w8, #0x8
 	ret
                                         // -- End function
-func0000000000000029:                   // @func0000000000000029
+func0000000000000049:                   // @func0000000000000049
 // %bb.0:                               // %entry
-	mov	w8, #8192                       // =0x2000
-	dup	v3.2d, x8
-	cmhi	v2.2d, v3.2d, v2.2d
-	cmhi	v1.2d, v3.2d, v1.2d
-	mov	v3.16b, v0.16b
-	uzp1	v1.4s, v1.4s, v2.4s
-	orr	v3.4s, #4
-	bit	v0.16b, v3.16b, v1.16b
-	orr	v0.4s, #16
+	orr	w8, w0, #0x4
+	cmp	x1, #2, lsl #12                 // =8192
+	csel	w8, w8, w0, lo
+	orr	w0, w8, #0x10
 	ret
                                         // -- End function
-func0000000000000023:                   // @func0000000000000023
+func0000000000000071:                   // @func0000000000000071
 // %bb.0:                               // %entry
-	cmeq	v2.2d, v2.2d, #0
-	cmeq	v1.2d, v1.2d, #0
-	mov	v3.16b, v0.16b
-	uzp1	v1.4s, v1.4s, v2.4s
-	orr	v3.4s, #16
-	bit	v0.16b, v3.16b, v1.16b
-	orr	v0.4s, #8
+	lsr	x8, x1, #16
+	orr	w9, w0, #0x10
+	cmp	x8, #0
+	csel	w8, w9, w0, ne
+	orr	w0, w8, #0x8
+	ret
+                                        // -- End function
+func0000000000000043:                   // @func0000000000000043
+// %bb.0:                               // %entry
+	orr	w8, w0, #0x10
+	cmp	x1, #0
+	csel	w8, w8, w0, eq
+	orr	w0, w8, #0x8
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
 	mov	x8, #4294967296                 // =0x100000000
-	dup	v3.2d, x8
-	cmeq	v2.2d, v2.2d, v3.2d
-	cmeq	v1.2d, v1.2d, v3.2d
-	mov	v3.16b, v0.16b
-	uzp1	v1.4s, v1.4s, v2.4s
-	orr	v3.4s, #32, lsl #8
-	bit	v0.16b, v3.16b, v1.16b
-	orr	v0.4s, #64, lsl #8
+	orr	w9, w0, #0x2000
+	cmp	x1, x8
+	csel	w8, w9, w0, eq
+	orr	w0, w8, #0x4000
 	ret
                                         // -- End function

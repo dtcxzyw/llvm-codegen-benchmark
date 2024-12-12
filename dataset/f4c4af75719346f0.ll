@@ -39,9 +39,10 @@ entry:
   ret i64 %4
 }
 
-; 45 occurrences:
+; 46 occurrences:
 ; abseil-cpp/optimized/city.cc.ll
 ; arrow/optimized/key_hash.cc.ll
+; boost/optimized/src.ll
 ; cmake/optimized/xxhash.c.ll
 ; eastl/optimized/TestAlgorithm.cpp.ll
 ; folly/optimized/farmhash.cpp.ll
@@ -89,7 +90,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 963444408
-  %3 = xor i64 %2, %0
+  %3 = xor i64 %0, %2
   %4 = mul i64 %3, -7046029288634856825
   ret i64 %4
 }
@@ -101,7 +102,7 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 1
-  %3 = xor i64 %2, %0
+  %3 = xor i64 %0, %2
   %4 = mul i64 %3, 7109453100751455733
   ret i64 %4
 }
@@ -112,7 +113,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -4650441984963589867
-  %3 = xor i64 %2, %0
+  %3 = xor i64 %0, %2
   %4 = mul i64 %3, -7070675565921424023
   ret i64 %4
 }

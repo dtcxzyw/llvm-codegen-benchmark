@@ -1,5 +1,5 @@
 
-; 332 occurrences:
+; 330 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abc.c.ll
@@ -19,6 +19,7 @@
 ; arrow/optimized/expression.cc.ll
 ; assimp/optimized/ValidateDataStructure.cpp.ll
 ; assimp/optimized/Value.cpp.ll
+; boost/optimized/approximately_equals.ll
 ; bullet3/optimized/btDeformableMultiBodyDynamicsWorld.ll
 ; bullet3/optimized/poly34.ll
 ; c3c/optimized/sema_casts.c.ll
@@ -71,7 +72,6 @@
 ; graphviz/optimized/gvrender_pango.c.ll
 ; gromacs/optimized/anadih.cpp.ll
 ; gromacs/optimized/andersentemperaturecoupling.cpp.ll
-; gromacs/optimized/angle_correction.cpp.ll
 ; gromacs/optimized/atomdata.cpp.ll
 ; gromacs/optimized/atomprop.cpp.ll
 ; gromacs/optimized/bonded.cpp.ll
@@ -219,7 +219,6 @@
 ; oiio/optimized/imagebufalgo_compare.cpp.ll
 ; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
 ; oiio/optimized/imagebufalgo_xform.cpp.ll
-; openblas/optimized/iparmq.c.ll
 ; opencv/optimized/Match.cpp.ll
 ; opencv/optimized/PointPair.cpp.ll
 ; opencv/optimized/adaptive_manifold_filter_n.cpp.ll
@@ -283,7 +282,6 @@
 ; openjdk/optimized/cmspack.ll
 ; openjdk/optimized/gcm.ll
 ; openjdk/optimized/subnode.ll
-; openmpi/optimized/name_fns.ll
 ; openusd/optimized/data.cpp.ll
 ; openusd/optimized/delegate.cpp.ll
 ; openusd/optimized/evalUtils.cpp.ll
@@ -299,6 +297,7 @@
 ; openusd/optimized/utils.cpp.ll
 ; openvdb/optimized/Diagnostics.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetMeasure.cc.ll
 ; openvdb/optimized/LevelSetMorph.cc.ll
 ; openvdb/optimized/LevelSetRebuild.cc.ll
@@ -325,7 +324,6 @@
 ; wireshark/optimized/packet-ixveriwave.c.ll
 ; wireshark/optimized/packet-nfapi.c.ll
 ; wireshark/optimized/packet-solaredge.c.ll
-; wireshark/optimized/wimax_utils.c.ll
 ; wireshark/optimized/wireless_timeline.cpp.ll
 ; xgboost/optimized/gbtree.cc.ll
 ; xgboost/optimized/quantile.cc.ll

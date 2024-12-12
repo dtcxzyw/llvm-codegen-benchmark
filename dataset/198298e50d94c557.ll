@@ -40,7 +40,7 @@ entry:
 define i1 @func0000000000000028(i1 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = trunc i8 %1 to i1
   %6 = and i1 %4, %5
   ret i1 %6

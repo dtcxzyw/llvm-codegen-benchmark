@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; hwloc/optimized/hwloc-annotate.ll
 ; hwloc/optimized/hwloc-bind.ll
 ; hwloc/optimized/hwloc-calc.ll
@@ -8,7 +8,6 @@
 ; openjdk/optimized/mlib_ImageConv_16nw.ll
 ; openjdk/optimized/mlib_ImageConv_8nw.ll
 ; openjdk/optimized/mlib_ImageConv_u16nw.ll
-; stb/optimized/stb_hexwave.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i1 %1, i32 %2) #0 {
 entry:

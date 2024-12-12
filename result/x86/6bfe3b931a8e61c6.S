@@ -6,7 +6,7 @@ func0000000000000010:                   # @func0000000000000010
 	leaq	(%rsi,%rcx,8), %rax
 	leaq	16(%rdi,%rax), %rax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000001f:                   # @func000000000000001f
 	movzwl	%dx, %eax
 	xorl	%ecx, %ecx
 	cmpl	$55537, %eax                    # imm = 0xD8F1
@@ -14,7 +14,7 @@ func000000000000001a:                   # @func000000000000001a
 	leaq	(%rsi,%rcx,8), %rax
 	leaq	16(%rdi,%rax), %rax
 	retq
-func0000000000000018:                   # @func0000000000000018
+func000000000000001c:                   # @func000000000000001c
 	xorl	%eax, %eax
 	cmpw	$13, %dx
 	setne	%al
@@ -28,7 +28,7 @@ func0000000000000080:                   # @func0000000000000080
 	sbbq	$-1, %rsi
 	leaq	7(%rsi,%rdi), %rax
 	retq
-func0000000000000088:                   # @func0000000000000088
+func000000000000008c:                   # @func000000000000008c
 	leaq	6888(%rsi), %rax
 	addq	$6918, %rsi                     # imm = 0x1B06
 	cmpw	$9, %dx

@@ -6,7 +6,7 @@
 ; freetype/optimized/type1.c.ll
 ; freetype/optimized/type1cid.c.ll
 ; libuv/optimized/idna.c.ll
-; linux/optimized/ff-memless.ll
+; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; node/optimized/idna.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1, i32 %2) #0 {

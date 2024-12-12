@@ -1,5 +1,5 @@
 
-; 62 occurrences:
+; 61 occurrences:
 ; abc/optimized/saigIsoFast.c.ll
 ; cmake/optimized/zstd_ldm.c.ll
 ; cvc5/optimized/linear_equality.cpp.ll
@@ -8,7 +8,6 @@
 ; libwebp/optimized/rescaler.c.ll
 ; libwebp/optimized/rescaler_sse2.c.ll
 ; lief/optimized/ecp_curves.c.ll
-; linux/optimized/mmconf-fam10h_64.ll
 ; linux/optimized/slub.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/Commit.cpp.ll
@@ -120,7 +119,7 @@ entry:
   ret i32 %4
 }
 
-; 327 occurrences:
+; 329 occurrences:
 ; darktable/optimized/Cr2Decompressor.cpp.ll
 ; darktable/optimized/RawImage.cpp.ll
 ; fmt/optimized/chrono-test.cc.ll
@@ -215,6 +214,8 @@ entry:
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
+; lvgl/optimized/lv_draw_sw_line.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; minetest/optimized/CGUIButton.cpp.ll
 ; minetest/optimized/CGUICheckBox.cpp.ll
 ; minetest/optimized/CGUIComboBox.cpp.ll
@@ -583,7 +584,8 @@ entry:
   ret i32 %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/to_chars.ll
 ; darktable/optimized/DngDecoder.cpp.ll
 ; openusd/optimized/cpuEvaluator.cpp.ll
 ; openusd/optimized/ompEvaluator.cpp.ll

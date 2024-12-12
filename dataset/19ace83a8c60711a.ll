@@ -4,7 +4,7 @@
 ; ruby/optimized/parse.ll
 ; ruby/optimized/ripper.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000008c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 32
   %4 = icmp ne i32 %3, 0
@@ -13,7 +13,9 @@ entry:
   ret i1 %6
 }
 
-; 25 occurrences:
+; 27 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; bullet3/optimized/btSoftBody.ll
 ; cmake/optimized/frm_driver.c.ll
 ; folly/optimized/HugePages.cpp.ll
@@ -40,7 +42,7 @@ entry:
 ; spike/optimized/socketif.ll
 ; velox/optimized/URLFunctions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65280
   %4 = icmp eq i32 %3, 0
@@ -49,7 +51,9 @@ entry:
   ret i1 %6
 }
 
-; 16 occurrences:
+; 18 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; cmake/optimized/cmMakefile.cxx.ll
 ; cmake/optimized/divsufsort.c.ll
 ; folly/optimized/HugePages.cpp.ll
@@ -67,7 +71,7 @@ entry:
 ; z3/optimized/ast.cpp.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000181(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = icmp eq i32 %3, 0
@@ -83,7 +87,7 @@ entry:
 ; oniguruma/optimized/regexec.ll
 ; postgres/optimized/regexec.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000188(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 32768
   %4 = icmp ne i32 %3, 0
@@ -101,7 +105,7 @@ entry:
 ; tev/optimized/Common.cpp.ll
 ; z3/optimized/ast.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000002c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 16384
   %4 = icmp ne i32 %3, 0
@@ -115,7 +119,7 @@ entry:
 ; linux/optimized/dev-ioctl.ll
 ; meshlab/optimized/io_collada.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000018c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
   %4 = icmp ne i32 %3, 121
@@ -128,7 +132,7 @@ entry:
 ; hyperscan/optimized/mcclellan.c.ll
 ; postgres/optimized/regcomp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000184(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2
   %4 = icmp ne i32 %3, 0
@@ -140,7 +144,7 @@ entry:
 ; 1 occurrences:
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000081(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2
   %4 = icmp eq i32 %3, 0

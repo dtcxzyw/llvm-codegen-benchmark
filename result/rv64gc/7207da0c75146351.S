@@ -1,5 +1,5 @@
 func0000000000000004:                   # @func0000000000000004
-	xori	a1, a1, 1
+	not	a1, a1
 	sext.w	a2, a2
 	lui	a3, 16
 	addiw	a3, a3, -512

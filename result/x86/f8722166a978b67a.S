@@ -13,10 +13,11 @@ func0000000000000001:                   # @func0000000000000001
 	movq	%rcx, %rax
 	retq
 func0000000000000000:                   # @func0000000000000000
-	movl	%esi, %eax
-	leaq	7(%rax,%rdi), %rcx
-	addq	%rdi, %rax
-	cmovnsq	%rax, %rcx
-	andq	$-8, %rcx
-	subq	%rcx, %rax
+	movl	%esi, %ecx
+	leaq	7(%rdi,%rcx), %rdx
+	movq	%rdi, %rax
+	addq	%rcx, %rax
+	cmovnsq	%rax, %rdx
+	andq	$-8, %rdx
+	subq	%rdx, %rax
 	retq

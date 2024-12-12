@@ -1,5 +1,5 @@
 
-; 228 occurrences:
+; 227 occurrences:
 ; abc/optimized/acec2Mult.c.ll
 ; abc/optimized/bacReadBlif.c.ll
 ; abc/optimized/bacReadVer.c.ll
@@ -21,6 +21,7 @@
 ; abseil-cpp/optimized/chi_square_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
+; boost/optimized/area.ll
 ; casadi/optimized/cs_sqr.c.ll
 ; cmake/optimized/cmCTestCoverageHandler.cxx.ll
 ; cpython/optimized/_datetimemodule.ll
@@ -168,7 +169,6 @@
 ; openjdk/optimized/sharedRuntimeTrig.ll
 ; openjdk/optimized/threadHeapSampler.ll
 ; openmpi/optimized/reachable_netlink_module.ll
-; openmpi/optimized/reachable_weighted.ll
 ; openmpi/optimized/topo_treematch_dist_graph_create.ll
 ; openspiel/optimized/TransTableL.cpp.ll
 ; openspiel/optimized/bargaining.cc.ll
@@ -188,7 +188,6 @@
 ; postgres/optimized/brin_minmax_multi.ll
 ; postgres/optimized/costsize.ll
 ; postgres/optimized/date.ll
-; postgres/optimized/gininsert.ll
 ; postgres/optimized/interval.ll
 ; postgres/optimized/mvdistinct.ll
 ; postgres/optimized/network.ll
@@ -232,7 +231,7 @@
 define double @func0000000000000000(double %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to double
-  %3 = fadd double %2, %0
+  %3 = fadd double %0, %2
   ret double %3
 }
 

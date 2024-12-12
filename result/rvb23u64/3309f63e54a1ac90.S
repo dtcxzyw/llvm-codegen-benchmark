@@ -19,13 +19,13 @@ func0000000000000001:                   # @func0000000000000001
 	addi	a0, a0, -2
 	srai	a0, a0, 1
 	ret
+func000000000000000a:                   # @func000000000000000a
+	sub	a0, a0, a1
+	addi	a0, a0, 1
+	srai	a0, a0, 63
+	ret
 func000000000000000b:                   # @func000000000000000b
 	sub	a0, a0, a1
 	addi	a0, a0, -4
 	srai	a0, a0, 2
-	ret
-func000000000000000a:                   # @func000000000000000a
-	sub	a0, a0, a1
-	addi	a0, a0, 1
-	srai	a0, a0, 3
 	ret

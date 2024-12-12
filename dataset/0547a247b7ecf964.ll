@@ -1,6 +1,7 @@
 
-; 32 occurrences:
+; 33 occurrences:
 ; arrow/optimized/message.cc.ll
+; ceres/optimized/schur_jacobi_preconditioner.cc.ll
 ; git/optimized/xmerge.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hermes/optimized/RegExp.cpp.ll
@@ -41,7 +42,7 @@ entry:
   ret i64 %4
 }
 
-; 104 occurrences:
+; 102 occurrences:
 ; assimp/optimized/FBXConverter.cpp.ll
 ; assimp/optimized/IRRLoader.cpp.ll
 ; brotli/optimized/backward_references.c.ll
@@ -64,7 +65,6 @@ entry:
 ; hyperscan/optimized/repeatcompile.cpp.ll
 ; jsonnet/optimized/md5.cpp.ll
 ; libzmq/optimized/radix_tree.cpp.ll
-; lief/optimized/Builder.cpp.ll
 ; linux/optimized/inflate.ll
 ; linux/optimized/tcp.ll
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
@@ -96,7 +96,6 @@ entry:
 ; llvm/optimized/MemCpyOptimizer.cpp.ll
 ; llvm/optimized/MemberPointer.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RegAllocGreedy.cpp.ll
 ; llvm/optimized/RegisterScavenging.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
@@ -290,6 +289,19 @@ entry:
   ret i64 %4
 }
 
+; 3 occurrences:
+; harfbuzz/optimized/harfbuzz.cc.ll
+; llvm/optimized/WasmObjectFile.cpp.ll
+; openjdk/optimized/hb-ot-shaper-indic.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw i64 %1 to i32
+  %3 = sub nuw i32 %2, %0
+  %4 = zext i32 %3 to i64
+  ret i64 %4
+}
+
 ; 54 occurrences:
 ; draco/optimized/mesh_cleanup.cc.ll
 ; git/optimized/commit-graph.ll
@@ -350,19 +362,6 @@ define i64 @func0000000000000010(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = sub i32 %2, %0
-  %4 = zext i32 %3 to i64
-  ret i64 %4
-}
-
-; 3 occurrences:
-; harfbuzz/optimized/harfbuzz.cc.ll
-; llvm/optimized/WasmObjectFile.cpp.ll
-; openjdk/optimized/hb-ot-shaper-indic.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000014(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc nuw i64 %1 to i32
-  %3 = sub nuw i32 %2, %0
   %4 = zext i32 %3 to i64
   ret i64 %4
 }

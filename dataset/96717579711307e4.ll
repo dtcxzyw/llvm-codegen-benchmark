@@ -11,7 +11,7 @@ entry:
   %3 = and i64 %2, 4294967295
   %4 = shl i64 %1, 32
   %5 = or disjoint i64 %4, %3
-  %6 = xor i64 %5, %0
+  %6 = xor i64 %0, %5
   ret i64 %6
 }
 

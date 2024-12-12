@@ -2,7 +2,7 @@ func0000000000000031:                   # @func0000000000000031
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmsne.vi	v12, v10, 0
 	lui	a0, 1048064
-	vmor.mm	v0, v12, v0
+	vmor.mm	v0, v0, v12
 	addi	a0, a0, -3
 	vand.vx	v8, v8, a0
 	lui	a0, 512
@@ -23,7 +23,7 @@ func0000000000000004:                   # @func0000000000000004
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v12, v10, 3
 	lui	a0, 8256
-	vmor.mm	v0, v12, v0
+	vmor.mm	v0, v0, v12
 	vmv.v.x	v10, a0
 	lui	a0, 532544
 	vmerge.vxm	v10, v10, a0, v0

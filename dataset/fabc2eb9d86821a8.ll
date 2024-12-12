@@ -7,11 +7,11 @@ define i8 @func0000000000000003(i8 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 31
   %3 = trunc nuw nsw i32 %2 to i8
-  %4 = xor i8 %3, %0
+  %4 = xor i8 %0, %3
   ret i8 %4
 }
 
-; 116 occurrences:
+; 117 occurrences:
 ; clamav/optimized/autoit.c.ll
 ; clamav/optimized/unzip.c.ll
 ; cmake/optimized/archive_read_support_format_zip.c.ll
@@ -76,6 +76,7 @@ entry:
 ; luau/optimized/Unifier2.test.cpp.ll
 ; luau/optimized/Variant.test.cpp.ll
 ; luau/optimized/VecDeque.test.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; nlohmann_json/optimized/unit-algorithms.cpp.ll
 ; nlohmann_json/optimized/unit-alt-string.cpp.ll
 ; nlohmann_json/optimized/unit-binary_formats.cpp.ll
@@ -133,13 +134,14 @@ define i8 @func0000000000000000(i8 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 8
   %3 = trunc i32 %2 to i8
-  %4 = xor i8 %3, %0
+  %4 = xor i8 %0, %3
   ret i8 %4
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; llvm/optimized/SemaAttr.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; openjdk/optimized/Any4Byte.ll
 ; openjdk/optimized/FourByteAbgr.ll
 ; openjdk/optimized/FourByteAbgrPre.ll
@@ -150,7 +152,7 @@ define i8 @func0000000000000002(i8 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 24
   %3 = trunc nuw i32 %2 to i8
-  %4 = xor i8 %3, %0
+  %4 = xor i8 %0, %3
   ret i8 %4
 }
 

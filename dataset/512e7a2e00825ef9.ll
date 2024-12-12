@@ -25,7 +25,7 @@ entry:
 ; nghttp2/optimized/nghttp2_stream.c.ll
 ; openjdk/optimized/loopnode.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000154(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = add nsw i64 %3, %0
@@ -46,10 +46,27 @@ entry:
   ret i1 %5
 }
 
+; 6 occurrences:
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
+; boost/optimized/token_ids.ll
+; cpython/optimized/mpdecimal.ll
+; quickjs/optimized/libbf.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = add i64 %0, %3
+  %5 = add i64 %4, 24
+  %6 = icmp slt i64 %5, 0
+  ret i1 %6
+}
+
 ; 1 occurrences:
 ; libquic/optimized/aead_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = add i64 %3, %0
@@ -60,25 +77,12 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/cabd.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = add nsw i64 %3, %0
   %5 = icmp eq i64 %4, 20
   ret i1 %5
-}
-
-; 2 occurrences:
-; cpython/optimized/mpdecimal.ll
-; quickjs/optimized/libbf.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sub i64 %1, %2
-  %4 = add i64 %3, %0
-  %5 = add i64 %4, 64
-  %6 = icmp slt i64 %5, 1
-  ret i1 %6
 }
 
 attributes #0 = { nounwind }

@@ -33,20 +33,8 @@ define i64 @func000000000000001d(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 36
   %3 = add i64 %2, 274877906944
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
-}
-
-; 1 occurrences:
-; abc/optimized/bdcSpfd.c.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000f(i64 %0, i64 %1) #0 {
-entry:
-  %2 = shl i64 %1, 32
-  %3 = add i64 %2, 1095216660480
-  %4 = and i64 %3, 1095216660480
-  %5 = or disjoint i64 %4, %0
-  ret i64 %5
 }
 
 ; 1 occurrences:
@@ -57,7 +45,7 @@ entry:
   %2 = shl i64 %1, 3
   %3 = add i64 %2, -16
   %4 = and i64 %3, -128
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   ret i64 %5
 }
 

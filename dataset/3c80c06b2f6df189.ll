@@ -62,19 +62,6 @@ entry:
   ret i32 %7
 }
 
-; 1 occurrences:
-; mixbox/optimized/mixbox.ll
-; Function Attrs: nounwind
-define i32 @func00000000000003fd(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = mul nuw nsw i32 %2, 85
-  %4 = add nuw nsw i32 %3, %1
-  %5 = mul nuw nsw i32 %4, 85
-  %6 = add nuw nsw i32 %5, %0
-  %7 = mul nsw i32 %6, 85
-  ret i32 %7
-}
-
 ; 5 occurrences:
 ; icu/optimized/tzfmt.ll
 ; imgui/optimized/imgui_draw.cpp.ll
@@ -99,9 +86,9 @@ entry:
 define i32 @func0000000000000154(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 85
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = mul nsw i32 %4, 85
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   %7 = mul i32 %6, 85
   ret i32 %7
 }
@@ -114,7 +101,7 @@ entry:
   %3 = mul nsw i32 %2, 37
   %4 = add nsw i32 %3, %1
   %5 = mul nsw i32 %4, 37
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   %7 = mul i32 %6, 37
   ret i32 %7
 }

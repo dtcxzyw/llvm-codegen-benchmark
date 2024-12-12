@@ -58,11 +58,11 @@ func0000000000000008:                   # @func0000000000000008
 	vpaddq	%ymm2, %ymm1, %ymm2
 	vpaddq	%ymm0, %ymm2, %ymm0
 	vpcmpltuq	%ymm1, %ymm0, %k1
-	korw	%k0, %k1, %k0
+	korw	%k1, %k0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000000a8:                   # @func00000000000000a8
+func0000000000000148:                   # @func0000000000000148
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vextracti128	$1, %ymm2, %xmm0
@@ -122,7 +122,7 @@ func00000000000000a8:                   # @func00000000000000a8
 	vpaddq	%ymm2, %ymm1, %ymm2
 	vpaddq	%ymm0, %ymm2, %ymm0
 	vpcmpltuq	%ymm1, %ymm0, %k1
-	korw	%k0, %k1, %k0
+	korw	%k1, %k0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

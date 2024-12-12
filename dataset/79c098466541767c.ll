@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 21 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/amapUniq.c.ll
 ; abc/optimized/ioReadBlifAig.c.ll
@@ -16,7 +16,6 @@
 ; crow/optimized/example_static_file.cpp.ll
 ; crow/optimized/example_ws.cpp.ll
 ; crow/optimized/helloworld.cpp.ll
-; linux/optimized/intel_audio.ll
 ; openssl/optimized/libssl-lib-quic_wire_pkt.ll
 ; openssl/optimized/libssl-shlib-quic_wire_pkt.ll
 ; ruby/optimized/time.ll
@@ -48,8 +47,8 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -8197
-  %3 = or i32 %2, %0
-  %4 = or i32 %3, 8192
+  %3 = or disjoint i32 %2, 8192
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
@@ -61,8 +60,8 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -24577
-  %3 = or i32 %2, %0
-  %4 = or i32 %3, 16384
+  %3 = or disjoint i32 %2, 16384
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -72,8 +71,8 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 47168
-  %3 = or i32 %2, %0
-  %4 = or i32 %3, 16384
+  %3 = or disjoint i32 %2, 16384
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 

@@ -1,5 +1,7 @@
 
-; 31 occurrences:
+; 32 occurrences:
+; boost/optimized/any_params_iter.ll
+; boost/optimized/shell.ll
 ; darktable/optimized/Camera.cpp.ll
 ; darktable/optimized/ChecksumFile.cpp.ll
 ; darktable/optimized/RawDecoder.cpp.ll
@@ -19,7 +21,6 @@
 ; nix/optimized/archive.ll
 ; nix/optimized/fromTOML.ll
 ; nix/optimized/local-derivation-goal.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/util.ll
 ; node/optimized/libnode.node_blob.ll
 ; openjdk/optimized/socketTransport.ll
@@ -32,7 +33,7 @@
 ; yalantinglibs/optimized/chat_room.cpp.ll
 ; zxing/optimized/GTIN.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000042(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
@@ -45,7 +46,7 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000030(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000050(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
@@ -58,7 +59,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/Darwin.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000048(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
@@ -72,10 +73,10 @@ entry:
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000058(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = icmp eq i64 %3, %1
+  %4 = icmp eq i64 %1, %3
   %5 = icmp ne ptr %0, null
   %6 = or i1 %5, %4
   ret i1 %6

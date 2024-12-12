@@ -19,39 +19,16 @@ entry:
   ret i8 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; just-rs/optimized/3fhxcueg488gjpka.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
 ; rust-analyzer-rs/optimized/1lnhy2v45voxjwry.ll
-; velox/optimized/GreatestLeast.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000004(i8 %0, i8 %1, i8 %2) #0 {
+define i8 @func0000000000000014(i8 %0, i8 %1, i8 %2) #0 {
 entry:
-  %3 = icmp ult i8 %1, %2
-  %4 = select i1 %3, i8 0, i8 %0
-  ret i8 %4
-}
-
-; 3 occurrences:
-; opencv/optimized/gfluidcore.cpp.ll
-; rayon-rs/optimized/4h6yllo6psxznznq.ll
-; velox/optimized/GreatestLeast.cpp.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000008(i8 %0, i8 %1, i8 %2) #0 {
-entry:
-  %3 = icmp ugt i8 %1, %2
-  %4 = select i1 %3, i8 1, i8 %0
-  ret i8 %4
-}
-
-; 1 occurrences:
-; rayon-rs/optimized/4h6yllo6psxznznq.ll
-; Function Attrs: nounwind
-define i8 @func000000000000000a(i8 %0, i8 %1, i8 %2) #0 {
-entry:
-  %3 = icmp sgt i8 %1, %2
-  %4 = select i1 %3, i8 0, i8 %0
+  %3 = icmp samesign ult i8 %1, %2
+  %4 = select i1 %3, i8 2, i8 %0
   ret i8 %4
 }
 
@@ -59,9 +36,9 @@ entry:
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000006(i8 %0, i8 %1, i8 %2) #0 {
+define i8 @func0000000000000004(i8 %0, i8 %1, i8 %2) #0 {
 entry:
-  %3 = icmp slt i8 %1, %2
+  %3 = icmp ult i8 %1, %2
   %4 = select i1 %3, i8 2, i8 %0
   ret i8 %4
 }

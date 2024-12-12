@@ -10,7 +10,7 @@
 define i1 @func0000000000000006(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = sext i32 %1 to i64
   %6 = icmp slt i64 %4, %5
   ret i1 %6
@@ -23,13 +23,13 @@ entry:
 define i1 @func000000000000000a(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = sext i32 %1 to i64
   %6 = icmp sgt i64 %4, %5
   ret i1 %6
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; git/optimized/sequencer.ll
 ; linux/optimized/percpu.ll
 ; linux/optimized/sock.ll
@@ -38,6 +38,7 @@ entry:
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; nuttx/optimized/lib_fmemopen.c.ll
+; pbrt-v4/optimized/integrators.cpp.ll
 ; postgres/optimized/fe-misc.ll
 ; ruby/optimized/io.ll
 ; spike/optimized/fdt_sw.ll
@@ -46,7 +47,7 @@ entry:
 define i1 @func0000000000000008(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = sext i32 %1 to i64
   %6 = icmp ugt i64 %4, %5
   ret i1 %6
@@ -61,13 +62,13 @@ entry:
 define i1 @func0000000000000004(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = sext i32 %1 to i64
   %6 = icmp ult i64 %4, %5
   ret i1 %6
 }
 
-; 95 occurrences:
+; 97 occurrences:
 ; abc/optimized/abcSpeedup.c.ll
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/acecCore.c.ll
@@ -105,6 +106,8 @@ entry:
 ; libjpeg-turbo/optimized/jquant1.c.ll
 ; lightgbm/optimized/dataset_loader.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; ncnn/optimized/pooling.cpp.ll
 ; ncnn/optimized/pooling1d.cpp.ll
@@ -164,10 +167,10 @@ entry:
 ; yosys/optimized/sim.ll
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = sext i32 %1 to i64
   %6 = icmp slt i64 %4, %5
   ret i1 %6
@@ -179,17 +182,18 @@ entry:
 ; openjdk/optimized/psParallelCompact.ll
 ; qemu/optimized/hw_pci_shpc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = sext i32 %1 to i64
   %6 = icmp ult i64 %4, %5
   ret i1 %6
 }
 
-; 23 occurrences:
+; 22 occurrences:
 ; abc/optimized/cuddExact.c.ll
+; arrow/optimized/light_array.cc.ll
 ; darktable/optimized/amaze.cc.ll
 ; gromacs/optimized/gen_ad.cpp.ll
 ; gromacs/optimized/gmx_bar.cpp.ll
@@ -198,8 +202,6 @@ entry:
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
-; openblas/optimized/dgbtf2.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dsbtrd.c.ll
 ; opencv/optimized/dpm_feature.cpp.ll
 ; opencv/optimized/find_ellipses.cpp.ll
@@ -213,10 +215,10 @@ entry:
 ; stb/optimized/stb_herringbone_wang_tile.c.ll
 ; zxing/optimized/BitMatrix.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = sext i32 %1 to i64
   %6 = icmp sgt i64 %4, %5
   ret i1 %6
@@ -227,10 +229,10 @@ entry:
 ; velox/optimized/HashStringAllocator.cpp.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = sext i32 %1 to i64
   %6 = icmp ugt i64 %4, %5
   ret i1 %6
@@ -244,19 +246,17 @@ entry:
 ; protobuf/optimized/descriptor.cc.ll
 ; soc-simulator/optimized/verilated.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = sext i32 %1 to i64
   %6 = icmp eq i64 %4, %5
   ret i1 %6
 }
 
-; 15 occurrences:
+; 12 occurrences:
 ; darktable/optimized/introspection_clahe.c.ll
-; gromacs/optimized/dorm2l.cpp.ll
-; gromacs/optimized/sorm2l.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; openblas/optimized/dgbbrd.c.ll
 ; openblas/optimized/dlaqr5.c.ll
@@ -266,32 +266,30 @@ entry:
 ; openblas/optimized/dormrz.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; openblas/optimized/dsbtrd.c.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
 ; opencv/optimized/descriptor.cpp.ll
 ; yosys/optimized/opt_expr.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002b(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = sext i32 %1 to i64
   %6 = icmp sge i64 %4, %5
   ret i1 %6
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/cbaBlast.c.ll
 ; abc/optimized/sbdWin.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; annoy/optimized/annoymodule.ll
-; gromacs/optimized/bwt.c.ll
 ; opencv/optimized/sumpixels.dispatch.cpp.ll
 ; yosys/optimized/opt_share.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000066(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = sext i32 %1 to i64
   %6 = icmp slt i64 %4, %5
   ret i1 %6
@@ -303,42 +301,19 @@ entry:
 define i1 @func0000000000000005(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = sext i32 %1 to i64
   %6 = icmp ule i64 %4, %5
-  ret i1 %6
-}
-
-; 12 occurrences:
-; gromacs/optimized/dorm2l.cpp.ll
-; gromacs/optimized/sorm2l.cpp.ll
-; openblas/optimized/dgbbrd.c.ll
-; openblas/optimized/dlaqr5.c.ll
-; openblas/optimized/dlatrs.c.ll
-; openblas/optimized/dormql.c.ll
-; openblas/optimized/dormrq.c.ll
-; openblas/optimized/dormrz.c.ll
-; openblas/optimized/dsbgst.c.ll
-; openblas/optimized/dsbtrd.c.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
-; sqlite/optimized/sqlite3.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000017(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, %0
-  %5 = sext i32 %1 to i64
-  %6 = icmp sle i64 %4, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; gromacs/optimized/kernel_gpu_ref.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000006c(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = sext i32 %1 to i64
   %6 = icmp ne i64 %4, %5
   ret i1 %6
@@ -350,7 +325,7 @@ entry:
 define i1 @func0000000000000001(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = sext i32 %1 to i64
   %6 = icmp eq i64 %4, %5
   ret i1 %6
@@ -362,9 +337,29 @@ entry:
 define i1 @func0000000000000009(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = sext i32 %1 to i64
   %6 = icmp uge i64 %4, %5
+  ret i1 %6
+}
+
+; 9 occurrences:
+; openblas/optimized/dgbbrd.c.ll
+; openblas/optimized/dlaqr5.c.ll
+; openblas/optimized/dlatrs.c.ll
+; openblas/optimized/dormql.c.ll
+; openblas/optimized/dormrq.c.ll
+; openblas/optimized/dormrz.c.ll
+; openblas/optimized/dsbgst.c.ll
+; openblas/optimized/dsbtrd.c.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000027(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = add nsw i64 %0, %3
+  %5 = sext i32 %1 to i64
+  %6 = icmp sle i64 %4, %5
   ret i1 %6
 }
 

@@ -17,10 +17,12 @@ entry:
   ret i64 %6
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
 ; raylib/optimized/rtextures.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000060(i32 %0, i32 %1, i32 %2) #0 {
 entry:

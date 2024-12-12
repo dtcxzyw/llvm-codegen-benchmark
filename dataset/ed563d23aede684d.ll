@@ -1,9 +1,10 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; bullet3/optimized/btAxisSweep3.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hyperscan/optimized/mcclellancompile.cpp.ll
 ; linux/optimized/services.ll
+; openspiel/optimized/phantom_go_board.cc.ll
 ; postgres/optimized/gindatapage.ll
 ; postgres/optimized/rangetypes_gist.ll
 ; qemu/optimized/hw_pci_pcie_aer.c.ll

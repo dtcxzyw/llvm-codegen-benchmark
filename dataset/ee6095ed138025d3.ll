@@ -1,9 +1,9 @@
 
-; 33 occurrences:
+; 34 occurrences:
 ; abc/optimized/abcBlifMv.c.ll
 ; abc/optimized/abcLut.c.ll
 ; abc/optimized/giaIso3.c.ll
-; cpython/optimized/Hacl_Hash_SHA3.ll
+; flac/optimized/stream_encoder.c.ll
 ; git/optimized/ws.ll
 ; linux/optimized/devio.ll
 ; linux/optimized/socket.ll
@@ -20,6 +20,7 @@
 ; llvm/optimized/RegisterInfoEmitter.cpp.ll
 ; llvm/optimized/TpiStream.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; opencv/optimized/contours.cpp.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; openjdk/optimized/hb-buffer-verify.ll

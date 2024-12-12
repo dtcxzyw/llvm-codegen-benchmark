@@ -1,6 +1,7 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; hermes/optimized/TypeInference.cpp.ll
+; libphonenumber/optimized/rune.c.ll
 ; lief/optimized/net_sockets.c.ll
 ; linux/optimized/ohci-hcd.ll
 ; opencv/optimized/chessboard.cpp.ll

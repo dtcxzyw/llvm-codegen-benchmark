@@ -3,7 +3,7 @@
 ; qemu/optimized/hw_nvram_eeprom93xx.c.ll
 ; wireshark/optimized/packet-f5ethtrailer.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000061(i8 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, 1
   %3 = zext i8 %2 to i32
@@ -28,20 +28,20 @@ entry:
 ; protobuf/optimized/message_builder.cc.ll
 ; protobuf/optimized/message_builder_lite.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000074(i8 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, 1
   %3 = zext i8 %2 to i32
   %4 = zext i8 %0 to i32
   %5 = add nuw nsw i32 %4, 1
-  %6 = icmp ult i32 %5, %3
+  %6 = icmp samesign ult i32 %5, %3
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; linux/optimized/maple_tree.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i8 %0, i8 %1) #0 {
+define i1 @func000000000000002a(i8 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, 1
   %3 = zext i8 %2 to i32

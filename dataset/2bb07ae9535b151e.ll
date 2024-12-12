@@ -19,13 +19,37 @@
 define i1 @func0000000000000018(i1 %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = trunc i8 %2 to i1
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = icmp ne ptr %1, null
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
 }
 
-; 13 occurrences:
+; 37 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/ext.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/main.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pid.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/process.ll
+; boost/optimized/shell.ll
+; boost/optimized/spawn.ll
+; boost/optimized/syslog_backend.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/target.ll
+; boost/optimized/wait.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -40,10 +64,10 @@ entry:
 ; crow/optimized/example_ws.cpp.ll
 ; crow/optimized/helloworld.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i1 %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000098(i1 %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = icmp ne ptr %1, null
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6

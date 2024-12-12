@@ -75,6 +75,17 @@ entry:
 }
 
 ; 1 occurrences:
+; lvgl/optimized/lv_sprintf_builtin.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000cd(double %0, i32 %1) #0 {
+entry:
+  %2 = icmp ne i32 %1, 0
+  %3 = fcmp uge double %0, 5.000000e-01
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
+}
+
+; 1 occurrences:
 ; gromacs/optimized/energyoutput.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000001c(double %0, i32 %1) #0 {
@@ -100,9 +111,9 @@ entry:
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; openusd/optimized/mathUtils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004d(double %0, i32 %1) #0 {
+define i1 @func000000000000014d(double %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 19
+  %2 = icmp samesign ult i32 %1, 19
   %3 = fcmp uge double %0, 1.000000e-05
   %4 = select i1 %3, i1 %2, i1 false
   ret i1 %4
@@ -113,9 +124,9 @@ entry:
 ; opencv/optimized/sqpnp.cpp.ll
 ; wireshark/optimized/tap-camelsrt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(double %0, i32 %1) #0 {
+define i1 @func0000000000000144(double %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 9999
+  %2 = icmp samesign ult i32 %1, 9999
   %3 = fcmp ogt double %0, 1.000000e-03
   %4 = select i1 %3, i1 %2, i1 false
   ret i1 %4
@@ -148,9 +159,9 @@ entry:
 ; 1 occurrences:
 ; graphviz/optimized/power.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000042(double %0, i32 %1) #0 {
+define i1 @func0000000000000142(double %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 100
+  %2 = icmp samesign ult i32 %1, 100
   %3 = fcmp olt double %0, 9.999900e-01
   %4 = select i1 %3, i1 %2, i1 false
   ret i1 %4

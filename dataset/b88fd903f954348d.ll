@@ -6,7 +6,6 @@
 ; hermes/optimized/APInt.cpp.ll
 ; linux/optimized/efi_64.ll
 ; linux/optimized/espfix_64.ll
-; linux/optimized/head64.ll
 ; linux/optimized/ldt.ll
 ; linux/optimized/vsyscall_64.ll
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
@@ -14,6 +13,7 @@
 ; llvm/optimized/APFixedPoint.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
+; llvm/optimized/BasicAliasAnalysis.cpp.ll
 ; llvm/optimized/CGStmt.cpp.ll
 ; llvm/optimized/CorrelatedValuePropagation.cpp.ll
 ; llvm/optimized/DependenceAnalysis.cpp.ll

@@ -13,6 +13,6 @@ func0000000000000005:                   # @func0000000000000005
 func0000000000000017:                   # @func0000000000000017
 	vpsllq	$4, %ymm0, %ymm0
 	vpandq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
-	vpaddq	%ymm1, %ymm0, %ymm0
+	vpaddq	%ymm0, %ymm1, %ymm0
 	vpandq	.LCPI1_1(%rip){1to4}, %ymm0, %ymm0
 	retq

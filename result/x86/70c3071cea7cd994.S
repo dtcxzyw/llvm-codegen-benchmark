@@ -8,6 +8,12 @@ func000000000000001f:                   # @func000000000000001f
 	addl	%edi, %esi
 	imulq	$100, %rsi, %rax
 	retq
+func000000000000000b:                   # @func000000000000000b
+	andl	$1, %esi
+	leal	(%rsi,%rdi), %ecx
+	movabsq	$86400000000, %rax              # imm = 0x141DD76000
+	imulq	%rcx, %rax
+	retq
 func0000000000000003:                   # @func0000000000000003
 	andl	$1, %esi
 	addl	%edi, %esi

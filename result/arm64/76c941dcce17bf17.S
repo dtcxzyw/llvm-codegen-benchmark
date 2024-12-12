@@ -5,14 +5,14 @@ func0000000000000000:                   // @func0000000000000000
 	sub	x0, x8, x0
 	ret
                                         // -- End function
-func0000000000000020:                   // @func0000000000000020
+func0000000000000030:                   // @func0000000000000030
 // %bb.0:                               // %entry
 	add	x8, x1, #4
 	and	x8, x8, #0xfffffffffffffffc
 	sub	x0, x8, x0
 	ret
                                         // -- End function
-func0000000000000024:                   // @func0000000000000024
+func0000000000000034:                   // @func0000000000000034
 // %bb.0:                               // %entry
 	add	x8, x1, #295
 	and	x8, x8, #0xfffffffffffffff0

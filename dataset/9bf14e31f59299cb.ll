@@ -6,11 +6,11 @@
 ; wireshark/optimized/packet-do-irp.c.ll
 ; z3/optimized/dimacs.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000102(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -5
   %4 = icmp ult i32 %3, 2
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   %6 = icmp eq i32 %1, 1
   %7 = select i1 %5, i1 %6, i1 false
   ret i1 %7

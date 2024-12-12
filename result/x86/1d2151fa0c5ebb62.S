@@ -10,7 +10,7 @@ func0000000000000004:                   # @func0000000000000004
 	retq
 func0000000000000008:                   # @func0000000000000008
 	vcvtusi2ss	%edi, %xmm1, %xmm1
-	vcmpeqss	%xmm0, %xmm1, %k0
+	vcmpeqss	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 func0000000000000003:                   # @func0000000000000003
@@ -45,12 +45,12 @@ func0000000000000012:                   # @func0000000000000012
 	retq
 func0000000000000018:                   # @func0000000000000018
 	vcvtsi2ss	%edi, %xmm1, %xmm1
-	vcmpeqss	%xmm0, %xmm1, %k0
+	vcmpeqss	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 func0000000000000007:                   # @func0000000000000007
 	vcvtusi2ss	%edi, %xmm1, %xmm1
-	vcmpneqss	%xmm0, %xmm1, %k0
+	vcmpneqss	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 func0000000000000005:                   # @func0000000000000005
@@ -58,9 +58,14 @@ func0000000000000005:                   # @func0000000000000005
 	vucomiss	%xmm0, %xmm1
 	setb	%al
 	retq
+func000000000000000a:                   # @func000000000000000a
+	vcvtusi2ss	%edi, %xmm1, %xmm1
+	vucomiss	%xmm0, %xmm1
+	setae	%al
+	retq
 func0000000000000017:                   # @func0000000000000017
 	vcvtsi2ss	%edi, %xmm1, %xmm1
-	vcmpneqss	%xmm0, %xmm1, %k0
+	vcmpneqss	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 func000000000000001b:                   # @func000000000000001b

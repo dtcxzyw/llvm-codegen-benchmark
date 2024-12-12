@@ -1,5 +1,6 @@
 
-; 4 occurrences:
+; 5 occurrences:
+; clamav/optimized/str.c.ll
 ; flac/optimized/metadata_iterators.c.ll
 ; opencv/optimized/flann_search_dataset.cpp.ll
 ; opencv/optimized/miniflann.cpp.ll

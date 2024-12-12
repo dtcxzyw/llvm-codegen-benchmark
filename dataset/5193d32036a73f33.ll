@@ -30,7 +30,7 @@ entry:
   %3 = shl i32 %2, 11
   %4 = add i32 %3, -1572864
   %5 = and i32 %4, -2147483648
-  %6 = or disjoint i32 %5, %1
+  %6 = or disjoint i32 %1, %5
   %7 = or disjoint i32 %6, %0
   ret i32 %7
 }
@@ -56,7 +56,7 @@ entry:
   %3 = shl i32 %2, 4
   %4 = add i32 %3, 9216
   %5 = and i32 %4, 4128768
-  %6 = or disjoint i32 %5, %1
+  %6 = or disjoint i32 %1, %5
   %7 = or disjoint i32 %6, %0
   ret i32 %7
 }

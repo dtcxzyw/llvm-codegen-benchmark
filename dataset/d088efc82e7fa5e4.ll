@@ -1,5 +1,5 @@
 
-; 44 occurrences:
+; 43 occurrences:
 ; bullet3/optimized/b3Solver.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; gromacs/optimized/sm_compare.cpp.ll
@@ -40,7 +40,6 @@
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; openvdb/optimized/points.cc.ll
 ; php/optimized/hash_gost.ll
-; qemu/optimized/chardev_msmouse.c.ll
 ; qemu/optimized/hw_display_edid-generate.c.ll
 ; qemu/optimized/tcg.c.ll
 ; sqlite/optimized/sqlite3.ll

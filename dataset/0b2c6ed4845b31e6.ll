@@ -7,13 +7,13 @@
 ; php/optimized/zend_compile.ll
 ; php/optimized/zend_inheritance.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000fa(ptr %0, i64 %1) #0 {
+define ptr @func00000000000000ff(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 3
   %3 = add nuw nsw i64 %2, 23
   %4 = and i64 %3, 68719476720
-  %5 = getelementptr nusw i8, ptr %0, i64 24
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 24
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -22,12 +22,12 @@ entry:
 ; php/optimized/compact_literals.ll
 ; php/optimized/zend_ssa.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000005e(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 2
   %3 = add nsw i64 %2, 7
   %4 = and i64 %3, -8
-  %5 = getelementptr nusw i8, ptr %0, i64 104
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 104
   %6 = getelementptr nusw i8, ptr %5, i64 %4
   ret ptr %6
 }
@@ -61,13 +61,13 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/Archive.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 3
   %3 = add i64 %2, 8
   %4 = and i64 %3, 4294967288
-  %5 = getelementptr nusw i8, ptr %0, i64 114
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 114
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -77,12 +77,12 @@ entry:
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/VectorCombine.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000058(ptr %0, i64 %1) #0 {
+define ptr @func000000000000005c(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 2
   %3 = add nsw i64 %2, -4
   %4 = and i64 %3, -16
-  %5 = getelementptr nusw i8, ptr %0, i64 4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 4
   %6 = getelementptr i8, ptr %5, i64 %4
   ret ptr %6
 }
@@ -117,12 +117,12 @@ entry:
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000f8(ptr %0, i64 %1) #0 {
+define ptr @func00000000000000fc(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 1
   %3 = add nuw nsw i64 %2, 8589934590
   %4 = and i64 %3, 8589934590
-  %5 = getelementptr nusw i8, ptr %0, i64 4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 4
   %6 = getelementptr i8, ptr %5, i64 %4
   ret ptr %6
 }

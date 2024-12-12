@@ -1,9 +1,10 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; libwebp/optimized/quant_levels_dec_utils.c.ll
 ; linux/optimized/drm_modes.ll
 ; linux/optimized/kfifo.ll
+; lvgl/optimized/lv_chart.ll
 ; mitsuba3/optimized/jitallocator.cpp.ll
 ; openblas/optimized/dorg2r.c.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
@@ -31,8 +32,9 @@ entry:
   ret i32 %5
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; openblas/optimized/dsptrf.c.ll
 ; opencv/optimized/approx.cpp.ll
@@ -52,11 +54,12 @@ define i32 @func0000000000000005(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nsw i32 %1, %3
-  %5 = mul nsw i32 %4, %0
+  %5 = mul nsw i32 %0, %4
   ret i32 %5
 }
 
-; 11 occurrences:
+; 12 occurrences:
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; opencv/optimized/approx.cpp.ll
 ; pbrt-v4/optimized/film.cpp.ll
@@ -92,7 +95,7 @@ define i32 @func0000000000000001(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub i32 %1, %3
-  %5 = mul nsw i32 %4, %0
+  %5 = mul nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -103,7 +106,7 @@ define i32 @func0000000000000011(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
   %4 = sub i32 %1, %3
-  %5 = mul nsw i32 %4, %0
+  %5 = mul nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -129,7 +132,7 @@ define i32 @func0000000000000004(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nsw i32 %1, %3
-  %5 = mul i32 %4, %0
+  %5 = mul i32 %0, %4
   ret i32 %5
 }
 

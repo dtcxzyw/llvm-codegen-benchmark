@@ -30,13 +30,6 @@ func0000000000000048:                   # @func0000000000000048
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq
-func0000000000000042:                   # @func0000000000000042
-	vcmpltpd	%xmm0, %xmm1, %k0
-	vxorpd	%xmm1, %xmm1, %xmm1
-	vcmpltpd	%xmm1, %xmm0, %k1
-	korw	%k0, %k1, %k0
-	kmovd	%k0, %eax
-	retq
 func0000000000000041:                   # @func0000000000000041
 	vcmpltpd	%xmm0, %xmm1, %k0
 	vxorpd	%xmm1, %xmm1, %xmm1
@@ -48,6 +41,15 @@ func000000000000002e:                   # @func000000000000002e
 	vcmpltpd	%xmm1, %xmm0, %k0
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vcmpordpd	%xmm1, %xmm0, %k1
+	korw	%k0, %k1, %k0
+	kmovd	%k0, %eax
+	retq
+.LCPI6_0:
+	.quad	0x3fbacee9f37bebd5              # double 0.10471975511965977
+func0000000000000042:                   # @func0000000000000042
+	vcmpltpd	%xmm0, %xmm1, %k0
+	vmovsd	.LCPI6_0(%rip), %xmm1           # xmm1 = [1.0471975511965977E-1,0.0E+0]
+	vcmpltpd	%xmm1, %xmm0, %k1
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq

@@ -1,5 +1,5 @@
 
-; 233 occurrences:
+; 230 occurrences:
 ; abc/optimized/abcBm.c.ll
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/gzwrite.c.ll
@@ -12,7 +12,6 @@
 ; clamav/optimized/mbox.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_write_set_options.c.ll
-; cmake/optimized/idna.c.ll
 ; cmake/optimized/zstdmt_compress.c.ll
 ; cpython/optimized/Hacl_Hash_MD5.ll
 ; cpython/optimized/Hacl_Hash_SHA1.ll
@@ -22,8 +21,6 @@
 ; cvc5/optimized/linear_equality.cpp.ll
 ; cvc5/optimized/set_defaults.cpp.ll
 ; cvc5/optimized/sygus_unif_strat.cpp.ll
-; delta-rs/optimized/3qkwqfk85qralejq.ll
-; delta-rs/optimized/43y2svfstmvqcl15.ll
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; flac/optimized/stream_encoder.c.ll
 ; folly/optimized/Zlib.cpp.ll
@@ -37,7 +34,6 @@
 ; gromacs/optimized/libxdrf.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
-; hermes/optimized/HBC.cpp.ll
 ; hwloc/optimized/hwloc-annotate.ll
 ; hwloc/optimized/hwloc-bind.ll
 ; hwloc/optimized/hwloc-calc.ll
@@ -57,7 +53,6 @@
 ; libquic/optimized/asn1_gen.c.ll
 ; libquic/optimized/gzwrite.c.ll
 ; libquic/optimized/prtime.cc.ll
-; libuv/optimized/idna.c.ll
 ; lief/optimized/psa_crypto.c.ll
 ; lief/optimized/psa_crypto_cipher.c.ll
 ; lief/optimized/ssl_tls.c.ll
@@ -105,6 +100,9 @@
 ; luajit/optimized/minilua.ll
 ; luau/optimized/Simplify.cpp.ll
 ; luau/optimized/lstrlib.cpp.ll
+; lvgl/optimized/lv_flex.ll
+; lvgl/optimized/lv_grid.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_measure.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -132,7 +130,6 @@
 ; mitsuba3/optimized/sggx.cpp.ll
 ; mitsuba3/optimized/spot.cpp.ll
 ; mitsuba3/optimized/thinlens.cpp.ll
-; node/optimized/idna.ll
 ; nori/optimized/nanovg.c.ll
 ; nuttx/optimized/lib_glob.c.ll
 ; ocio/optimized/OCIOYaml.cpp.ll
@@ -149,7 +146,6 @@
 ; openjdk/optimized/Net.ll
 ; openjdk/optimized/ProcessHandleImpl_unix.ll
 ; openjdk/optimized/addnode.ll
-; openjdk/optimized/ciMethod.ll
 ; openjdk/optimized/hb-ot-name.ll
 ; openjdk/optimized/invocationCounter.ll
 ; openjdk/optimized/javaClasses.ll
@@ -231,6 +227,7 @@
 ; z3/optimized/dl_mk_interp_tail_simplifier.cpp.ll
 ; z3/optimized/dl_mk_similarity_compressor.cpp.ll
 ; z3/optimized/nlsat_evaluator.cpp.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; zlib/optimized/infback.c.ll
 ; zstd/optimized/zstdmt_compress.c.ll
 ; Function Attrs: nounwind

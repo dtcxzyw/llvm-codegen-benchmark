@@ -1,5 +1,5 @@
 
-; 53 occurrences:
+; 54 occurrences:
 ; casadi/optimized/function_internal.cpp.ll
 ; cvc5/optimized/arith_entail.cpp.ll
 ; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
@@ -8,6 +8,7 @@
 ; graphviz/optimized/arrows.c.ll
 ; gromacs/optimized/decidesimulationworkload.cpp.ll
 ; gromacs/optimized/gmx_hbond.cpp.ll
+; gromacs/optimized/tng_io.c.ll
 ; gromacs/optimized/vsite_parm.cpp.ll
 ; grpc/optimized/tls_security_connector.cc.ll
 ; hermes/optimized/gtest-all.cc.ll
@@ -57,7 +58,7 @@
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = xor i1 %2, true
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }

@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 11 occurrences:
 ; image-rs/optimized/5oy2v8fghrh79s8.ll
 ; ockam-rs/optimized/10k16szy9z0gnoyc.ll
 ; ockam-rs/optimized/1u7cc2g6nvmoyh9z.ll
@@ -9,13 +9,15 @@
 ; typst-rs/optimized/22a0ijn9jg8ilzgs.ll
 ; typst-rs/optimized/42n69x09j7wzwnay.ll
 ; typst-rs/optimized/4p30esqzpn2o5olu.ll
+; zed-rs/optimized/3bwpnkngp0v942xuk5tod4bfe.ll
+; zed-rs/optimized/8429boafm438obcc9d542xswj.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
   %4 = add i64 %1, 95
   %5 = and i64 %4, %3
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -27,7 +29,7 @@ entry:
   %3 = sub i64 0, %2
   %4 = add nsw i64 %1, -1
   %5 = and i64 %4, %3
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 

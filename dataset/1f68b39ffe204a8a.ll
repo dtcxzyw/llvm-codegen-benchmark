@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 29 occurrences:
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
 ; actix-rs/optimized/4oxclimtnmaa5ft9.ll
 ; brotli/optimized/block_splitter.c.ll
@@ -27,8 +27,10 @@
 ; php/optimized/pcre2_jit_compile.ll
 ; ruby/optimized/regexec.ll
 ; wolfssl/optimized/tls.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000041(i8 %0, i8 %1) #0 {
 entry:
   %2 = shl nuw i8 1, %1
   %3 = and i8 %2, %0
@@ -46,7 +48,7 @@ entry:
 ; ruby/optimized/regexec.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i8 %0, i8 %1) #0 {
+define i1 @func000000000000004c(i8 %0, i8 %1) #0 {
 entry:
   %2 = shl nuw i8 2, %1
   %3 = and i8 %2, %0
@@ -59,10 +61,10 @@ entry:
 ; linux/optimized/seccomp.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000061(i8 %0, i8 %1) #0 {
 entry:
   %2 = shl nuw nsw i8 1, %1
-  %3 = and i8 %2, %0
+  %3 = and i8 %0, %2
   %4 = icmp eq i8 %3, 0
   ret i1 %4
 }
@@ -70,10 +72,10 @@ entry:
 ; 1 occurrences:
 ; grpc/optimized/compression_internal.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i8 %0, i8 %1) #0 {
+define i1 @func000000000000006c(i8 %0, i8 %1) #0 {
 entry:
   %2 = shl nuw nsw i8 1, %1
-  %3 = and i8 %2, %0
+  %3 = and i8 %0, %2
   %4 = icmp ne i8 %3, 0
   ret i1 %4
 }
@@ -81,7 +83,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestBitset.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i8 %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %0, %1
   %3 = icmp eq i8 %2, 0

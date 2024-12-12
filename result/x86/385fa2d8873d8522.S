@@ -4,8 +4,8 @@ func000000000000000a:                   # @func000000000000000a
 	movabsq	$-3689348814741910323, %rax     # imm = 0xCCCCCCCCCCCCCCCD
 	mulxq	%rax, %rax, %rax
 	shrq	$3, %rax
-	cmpq	%rdi, %rax
-	setl	%al
+	cmpq	%rax, %rdi
+	setg	%al
 	retq
 func0000000000000008:                   # @func0000000000000008
 	movq	%rsi, %rdx
@@ -13,6 +13,6 @@ func0000000000000008:                   # @func0000000000000008
 	movabsq	$-3689348814741910323, %rax     # imm = 0xCCCCCCCCCCCCCCCD
 	mulxq	%rax, %rax, %rax
 	shrq	$3, %rax
-	cmpq	%rdi, %rax
-	setb	%al
+	cmpq	%rax, %rdi
+	seta	%al
 	retq

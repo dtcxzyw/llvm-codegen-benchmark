@@ -11,7 +11,7 @@
 ; postgres/optimized/pl_exec.ll
 ; ruby/optimized/vm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000318(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2144
   %4 = icmp ne i32 %3, 0
@@ -25,20 +25,20 @@ entry:
 ; linux/optimized/mlme.ll
 ; qemu/optimized/hw_usb_hcd-ehci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000042(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 3840
   %4 = icmp eq i32 %3, 0
   %5 = icmp eq i32 %1, 0
   %6 = select i1 %5, i1 true, i1 %4
-  %7 = or i1 %6, %0
+  %7 = or i1 %0, %6
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; openjdk/optimized/dependencies.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000030(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000050(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 252
   %4 = icmp eq i32 %3, 0

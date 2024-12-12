@@ -12,9 +12,9 @@
 ; abc/optimized/giaPf.c.ll
 ; abc/optimized/sbdCut.c.ll
 ; abc/optimized/sfmArea.c.ll
+; boost/optimized/gregorian.ll
 ; clamav/optimized/lzxd.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
-; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
 ; cpython/optimized/_codecs_jp.ll
 ; cpython/optimized/_datetimemodule.ll
 ; cpython/optimized/_decimal.ll
@@ -47,7 +47,6 @@
 ; icu/optimized/utf8collationiterator.ll
 ; linux/optimized/hda_auto_parser.ll
 ; linux/optimized/i915_gem_mman.ll
-; linux/optimized/intel_display_device.ll
 ; linux/optimized/interrupt.ll
 ; linux/optimized/libata-pmp.ll
 ; linux/optimized/netdev.ll
@@ -108,6 +107,7 @@
 ; luajit/optimized/lj_crecord.ll
 ; luajit/optimized/lj_crecord_dyn.ll
 ; luau/optimized/OptimizeConstProp.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; opencv/optimized/arithm.cpp.ll
 ; opencv/optimized/mathfuncs.cpp.ll

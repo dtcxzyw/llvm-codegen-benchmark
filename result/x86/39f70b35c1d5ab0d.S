@@ -22,7 +22,7 @@ func0000000000000006:                   # @func0000000000000006
 	testl	%edx, %edx
 	setle	%al
 	retq
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	subq	%rsi, %rdi
 	shrq	$2, %rdi
 	imull	$-1431655765, %edi, %eax        # imm = 0xAAAAAAAB

@@ -1,7 +1,13 @@
 
-; 5 occurrences:
+; 11 occurrences:
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
 ; assimp/optimized/sweep.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; opencv/optimized/resize.cpp.ll
 ; postgres/optimized/geo_ops.ll
 ; ruby/optimized/numeric.ll
@@ -34,7 +40,7 @@ entry:
 define i1 @func000000000000000b(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %1, %2
-  %4 = fcmp uge double %3, %0
+  %4 = fcmp ule double %0, %3
   ret i1 %4
 }
 
@@ -95,8 +101,14 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
+; 12 occurrences:
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; brotli/optimized/encode.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; quantlib/optimized/coxingersollross.ll
@@ -106,7 +118,7 @@ entry:
 define i1 @func0000000000000002(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %1, %2
-  %4 = fcmp ogt double %3, %0
+  %4 = fcmp olt double %0, %3
   ret i1 %4
 }
 
@@ -162,7 +174,7 @@ entry:
 define i1 @func0000000000000006(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %1, %2
-  %4 = fcmp one double %3, %0
+  %4 = fcmp one double %0, %3
   ret i1 %4
 }
 

@@ -3,7 +3,7 @@
 ; openssl/optimized/libssl-lib-quic_wire_pkt.ll
 ; openssl/optimized/libssl-shlib-quic_wire_pkt.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c1(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000581(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = icmp ne i64 %3, 0
@@ -93,7 +93,7 @@ entry:
 ; lightgbm/optimized/tree.cpp.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65536
   %4 = icmp ne i32 %3, 0
@@ -106,7 +106,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/libata-core.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001cc(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000058c(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = icmp ne i64 %3, 0

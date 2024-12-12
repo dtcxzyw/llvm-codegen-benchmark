@@ -1,5 +1,5 @@
 
-; 53 occurrences:
+; 54 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcFanio.c.ll
 ; abc/optimized/abcOdc.c.ll
@@ -23,6 +23,7 @@
 ; linux/optimized/tg3.ll
 ; linux/optimized/yenta_socket.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
+; lvgl/optimized/lv_tlsf.ll
 ; nori/optimized/bitmap.cpp.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/geometry.cpp.ll

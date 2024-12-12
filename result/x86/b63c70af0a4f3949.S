@@ -15,12 +15,10 @@ func0000000000000001:                   # @func0000000000000001
 	cmovel	%ecx, %eax
 	retq
 func0000000000000005:                   # @func0000000000000005
-	andb	$1, %dil
 	movzbl	%dl, %ecx
 	shll	$8, %esi
 	orl	%esi, %ecx
 	xorl	%eax, %eax
-	negb	%dil
-	sbbl	%eax, %eax
-	orl	%ecx, %eax
+	testb	$1, %dil
+	cmovel	%ecx, %eax
 	retq

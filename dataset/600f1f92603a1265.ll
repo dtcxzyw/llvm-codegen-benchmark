@@ -1,5 +1,5 @@
 
-; 108 occurrences:
+; 103 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/absDup.c.ll
@@ -41,7 +41,6 @@
 ; abc/optimized/giaTim.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/ifDec16.c.ll
-; abc/optimized/ifSeq.c.ll
 ; abc/optimized/liveness.c.ll
 ; abc/optimized/mfsResub.c.ll
 ; abc/optimized/pdrTsim2.c.ll
@@ -50,20 +49,17 @@
 ; abc/optimized/sbdCore.c.ll
 ; abc/optimized/wlcSim.c.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/area.ll
 ; cmake/optimized/archive_getdate.c.ll
 ; cpython/optimized/frameobject.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_spots.c.ll
-; gromacs/optimized/dlarfb.cpp.ll
 ; gromacs/optimized/dlarft.cpp.ll
-; gromacs/optimized/dorm2l.cpp.ll
 ; gromacs/optimized/gmx_make_edi.cpp.ll
 ; gromacs/optimized/localtopologychecker.cpp.ll
-; gromacs/optimized/slarfb.cpp.ll
 ; gromacs/optimized/slarft.cpp.ll
-; gromacs/optimized/sorm2l.cpp.ll
 ; libjpeg-turbo/optimized/jdcoefct.c.ll
 ; libwebp/optimized/backward_references_enc.c.ll
 ; linux/optimized/netpoll.ll
@@ -83,10 +79,8 @@
 ; openblas/optimized/dlarfb.c.ll
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
-; openblas/optimized/dorgr2.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; openblas/optimized/dsptrs.c.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
 ; opencv/optimized/denoising.cpp.ll
 ; opencv/optimized/hybrid_binarizer.cpp.ll
 ; opencv/optimized/scansegment.cpp.ll
@@ -94,6 +88,7 @@
 ; openexr/optimized/ImfMisc.cpp.ll
 ; openspiel/optimized/oware.cc.ll
 ; pbrt-v4/optimized/lights.cpp.ll
+; pbrt-v4/optimized/pspec.cpp.ll
 ; postgres/optimized/arrayfuncs.ll
 ; postgres/optimized/inval.ll
 ; postgres/optimized/ruleutils.ll
@@ -117,7 +112,7 @@ entry:
   ret i64 %5
 }
 
-; 38 occurrences:
+; 39 occurrences:
 ; arrow/optimized/tz.cpp.ll
 ; arrow/optimized/value_parsing.cc.ll
 ; graphviz/optimized/quad_prog_vpsc.c.ll
@@ -132,6 +127,7 @@ entry:
 ; libjpeg-turbo/optimized/jdcoefct.c.ll
 ; linux/optimized/drm_dsc_helper.ll
 ; linux/optimized/exthdrs.ll
+; lvgl/optimized/lv_draw_sw_fill.ll
 ; miniaudio/optimized/unity.c.ll
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll
 ; oiio/optimized/imageinput.cpp.ll

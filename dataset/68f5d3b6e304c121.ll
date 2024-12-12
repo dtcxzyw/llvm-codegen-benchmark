@@ -11,7 +11,7 @@ entry:
   %2 = urem i64 %1, 3
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -23,7 +23,7 @@ entry:
   %2 = urem i64 %1, 3
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 

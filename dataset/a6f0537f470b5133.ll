@@ -1,5 +1,5 @@
 
-%union._Py_CODEUNIT.3810096 = type { i16 }
+%union._Py_CODEUNIT.3988293 = type { i16 }
 
 ; 38 occurrences:
 ; abc/optimized/llb2Flow.c.ll
@@ -50,7 +50,7 @@ entry:
   ret ptr %5
 }
 
-; 83 occurrences:
+; 69 occurrences:
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/dauMerge.c.ll
 ; arrow/optimized/compare.cc.ll
@@ -77,20 +77,12 @@ entry:
 ; ceres/optimized/schur_eliminator_4_4_4.cc.ll
 ; ceres/optimized/schur_eliminator_4_4_d.cc.ll
 ; clamav/optimized/disasm.c.ll
-; faiss/optimized/IndexBinaryIVF.cpp.ll
 ; git/optimized/daemon.ll
 ; git/optimized/http-push.ll
 ; git/optimized/mv.ll
 ; git/optimized/patch-id.ll
 ; git/optimized/unpack-trees.ll
-; gromacs/optimized/dlar1vx.cpp.ll
-; gromacs/optimized/dsteqr.cpp.ll
-; gromacs/optimized/dsterf.cpp.ll
-; gromacs/optimized/gmx_arpack.cpp.ll
 ; gromacs/optimized/nbsearch.cpp.ll
-; gromacs/optimized/slar1vx.cpp.ll
-; gromacs/optimized/ssteqr.cpp.ll
-; gromacs/optimized/ssterf.cpp.ll
 ; icu/optimized/ctest.ll
 ; icu/optimized/uloc.ll
 ; jq/optimized/regcomp.ll
@@ -103,10 +95,6 @@ entry:
 ; memcached/optimized/memcached-proto_text.ll
 ; memcached/optimized/memcached_debug-proto_text.ll
 ; oniguruma/optimized/regcomp.ll
-; openblas/optimized/dgelsx.c.ll
-; openblas/optimized/dsbtrd.c.ll
-; openblas/optimized/dsteqr.c.ll
-; openblas/optimized/dsterf.c.ll
 ; openjdk/optimized/classFileParser.ll
 ; openjdk/optimized/classLoader.ll
 ; openjdk/optimized/dgif_lib.ll
@@ -119,10 +107,8 @@ entry:
 ; openspiel/optimized/state_distribution.cc.ll
 ; openusd/optimized/patchTreeBuilder.cpp.ll
 ; openusd/optimized/stencilTableFactory.cpp.ll
-; php/optimized/dfa_pass.ll
 ; php/optimized/fastcgi.ll
 ; php/optimized/pcre2_compile.ll
-; php/optimized/zend_cfg.ll
 ; php/optimized/zend_execute.ll
 ; php/optimized/zend_ini_parser.ll
 ; protobuf/optimized/coded_stream.cc.ll
@@ -135,22 +121,20 @@ entry:
 ; stockfish/optimized/tbprobe.ll
 ; velox/optimized/HashStringAllocator.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001e(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
-  %4 = getelementptr nusw i8, ptr %0, i64 168
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 168
   %5 = getelementptr nusw i8, ptr %4, i64 %3
   ret ptr %5
 }
 
-; 15 occurrences:
+; 13 occurrences:
 ; abc/optimized/wlcReadSmt.c.ll
 ; abc/optimized/wlcReadVer.c.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; git/optimized/combine-diff.ll
-; gromacs/optimized/dlar1vx.cpp.ll
-; gromacs/optimized/slar1vx.cpp.ll
 ; icu/optimized/decNumber.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/trans_virtio.ll
@@ -161,11 +145,11 @@ entry:
 ; postgres/optimized/xlog.ll
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001c(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
-  %4 = getelementptr nusw i8, ptr %0, i64 70704
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 70704
   %5 = getelementptr i8, ptr %4, i64 %3
   ret ptr %5
 }
@@ -182,15 +166,53 @@ entry:
   ret ptr %5
 }
 
+; 14 occurrences:
+; faiss/optimized/IndexBinaryIVF.cpp.ll
+; gromacs/optimized/dlar1vx.cpp.ll
+; gromacs/optimized/dsteqr.cpp.ll
+; gromacs/optimized/dsterf.cpp.ll
+; gromacs/optimized/gmx_arpack.cpp.ll
+; gromacs/optimized/slar1vx.cpp.ll
+; gromacs/optimized/ssteqr.cpp.ll
+; gromacs/optimized/ssterf.cpp.ll
+; openblas/optimized/dgelsx.c.ll
+; openblas/optimized/dsbtrd.c.ll
+; openblas/optimized/dsteqr.c.ll
+; openblas/optimized/dsterf.c.ll
+; php/optimized/dfa_pass.ll
+; php/optimized/zend_cfg.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001a(ptr %0, i64 %1) #0 {
+entry:
+  %2 = shl i64 %1, 32
+  %3 = ashr exact i64 %2, 32
+  %4 = getelementptr nusw i8, ptr %0, i64 -32
+  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 2 occurrences:
+; gromacs/optimized/dlar1vx.cpp.ll
+; gromacs/optimized/slar1vx.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000018(ptr %0, i64 %1) #0 {
+entry:
+  %2 = shl i64 %1, 32
+  %3 = ashr exact i64 %2, 30
+  %4 = getelementptr nusw i8, ptr %0, i64 -4
+  %5 = getelementptr i8, ptr %4, i64 %3
+  ret ptr %5
+}
+
 ; 2 occurrences:
 ; icu/optimized/ustdio.ll
 ; opencv/optimized/tree.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 31
   %3 = ashr i64 %2, 32
-  %4 = getelementptr nusw i8, ptr %0, i64 104
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 104
   %5 = getelementptr nusw i16, ptr %4, i64 %3
   ret ptr %5
 }
@@ -198,12 +220,12 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/instrumentation.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000c(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 31
   %3 = ashr i64 %2, 32
-  %4 = getelementptr nusw i8, ptr %0, i64 200
-  %5 = getelementptr %union._Py_CODEUNIT.3810096, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 200
+  %5 = getelementptr %union._Py_CODEUNIT.3988293, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -215,7 +237,7 @@ entry:
   %2 = shl i64 %1, 31
   %3 = ashr i64 %2, 32
   %4 = getelementptr i8, ptr %0, i64 202
-  %5 = getelementptr %union._Py_CODEUNIT.3810096, ptr %4, i64 %3
+  %5 = getelementptr %union._Py_CODEUNIT.3988293, ptr %4, i64 %3
   ret ptr %5
 }
 

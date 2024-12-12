@@ -25,13 +25,13 @@ func000000000000000f:                   # @func000000000000000f
 	subw	a1, a1, a0
 	addiw	a0, a1, 32
 	ret
+func0000000000000003:                   # @func0000000000000003
+	subw	a1, a1, a0
+	addiw	a0, a1, -307
+	ret
 func0000000000000009:                   # @func0000000000000009
 	subw	a0, a1, a0
 	addiw	a0, a0, 8
-	ret
-func0000000000000003:                   # @func0000000000000003
-	subw	a1, a1, a0
-	addiw	a0, a1, 64
 	ret
 func0000000000000002:                   # @func0000000000000002
 	subw	a1, a1, a0

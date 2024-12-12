@@ -14,13 +14,16 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
+; 7 occurrences:
+; box2d/optimized/b2_collide_circle.cpp.ll
+; box2d/optimized/b2_collide_edge.cpp.ll
+; box2d/optimized/b2_collide_polygon.cpp.ll
 ; opencv/optimized/convhull.cpp.ll
 ; openusd/optimized/fvarLevel.cpp.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000006d(i32 %0, i32 %1) #0 {
+define i64 @func00000000000000cd(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = icmp slt i32 %2, %0
@@ -32,7 +35,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/MachineModuleInfo.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000048(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = icmp ult i32 %2, %0

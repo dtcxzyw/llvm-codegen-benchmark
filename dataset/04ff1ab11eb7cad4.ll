@@ -1,5 +1,7 @@
 
-; 107 occurrences:
+; 110 occurrences:
+; boost/optimized/scheduler.ll
+; boost/optimized/waker.ll
 ; clamav/optimized/mpool.c.ll
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
 ; eastl/optimized/TestTupleVector.cpp.ll
@@ -7,6 +9,7 @@
 ; linux/optimized/signal_64.ll
 ; luajit/optimized/lj_cdata.ll
 ; luajit/optimized/lj_cdata_dyn.ll
+; lvgl/optimized/lv_tlsf.ll
 ; node/optimized/libnode.agent.ll
 ; node/optimized/libnode.application.ll
 ; node/optimized/libnode.async_wrap.ll
@@ -108,11 +111,46 @@
 ; verilator/optimized/V3OrderParallel.cpp.ll
 ; wireshark/optimized/voip_calls.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(i64 %0) #0 {
+define ptr @func0000000000000003(i64 %0) #0 {
 entry:
   %1 = add i64 %0, 24
   %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr nusw i8, ptr %2, i64 16
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 16
+  ret ptr %3
+}
+
+; 25 occurrences:
+; linux/optimized/array.ll
+; linux/optimized/auditsc.ll
+; linux/optimized/binfmt_elf.ll
+; linux/optimized/callchain.ll
+; linux/optimized/compat_binfmt_elf.ll
+; linux/optimized/dumpstack.ll
+; linux/optimized/irq.ll
+; linux/optimized/perf_regs.ll
+; linux/optimized/process.ll
+; linux/optimized/process_64.ll
+; linux/optimized/ptrace.ll
+; linux/optimized/regset.ll
+; linux/optimized/seccomp.ll
+; linux/optimized/signal_32.ll
+; linux/optimized/signal_64.ll
+; linux/optimized/step.ll
+; linux/optimized/syscall.ll
+; linux/optimized/syscall_user_dispatch.ll
+; linux/optimized/unwind_orc.ll
+; linux/optimized/vgacon.ll
+; linux/optimized/vma.ll
+; lvgl/optimized/lv_tlsf.ll
+; openjdk/optimized/zPageAllocator.ll
+; ruby/optimized/hash.ll
+; wireshark/optimized/voip_calls.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000000(i64 %0) #0 {
+entry:
+  %1 = add i64 %0, 24
+  %2 = inttoptr i64 %1 to ptr
+  %3 = getelementptr i8, ptr %2, i64 16
   ret ptr %3
 }
 
@@ -205,44 +243,11 @@ entry:
 ; protobuf/optimized/struct.pb.cc.ll
 ; protobuf/optimized/type.pb.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(i64 %0) #0 {
+define ptr @func0000000000000007(i64 %0) #0 {
 entry:
   %1 = add nsw i64 %0, -960
   %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr nusw i8, ptr %2, i64 1128
-  ret ptr %3
-}
-
-; 23 occurrences:
-; linux/optimized/array.ll
-; linux/optimized/auditsc.ll
-; linux/optimized/binfmt_elf.ll
-; linux/optimized/callchain.ll
-; linux/optimized/compat_binfmt_elf.ll
-; linux/optimized/dumpstack.ll
-; linux/optimized/irq.ll
-; linux/optimized/perf_regs.ll
-; linux/optimized/process.ll
-; linux/optimized/process_64.ll
-; linux/optimized/ptrace.ll
-; linux/optimized/regset.ll
-; linux/optimized/seccomp.ll
-; linux/optimized/signal_32.ll
-; linux/optimized/signal_64.ll
-; linux/optimized/step.ll
-; linux/optimized/syscall.ll
-; linux/optimized/syscall_user_dispatch.ll
-; linux/optimized/unwind_orc.ll
-; linux/optimized/vgacon.ll
-; linux/optimized/vma.ll
-; openjdk/optimized/zPageAllocator.ll
-; wireshark/optimized/voip_calls.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000000(i64 %0) #0 {
-entry:
-  %1 = add i64 %0, -72
-  %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr i8, ptr %2, i64 20
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1128
   ret ptr %3
 }
 
@@ -254,6 +259,20 @@ entry:
   %1 = add nsw i64 %0, -960
   %2 = inttoptr i64 %1 to ptr
   %3 = getelementptr i8, ptr %2, i64 800
+  ret ptr %3
+}
+
+; 4 occurrences:
+; luajit/optimized/lj_cdata.ll
+; luajit/optimized/lj_cdata_dyn.ll
+; node/optimized/libnode.node_file.ll
+; node/optimized/libnode.stream_wrap.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000002(i64 %0) #0 {
+entry:
+  %1 = add i64 %0, -88
+  %2 = inttoptr i64 %1 to ptr
+  %3 = getelementptr nusw i8, ptr %2, i64 -16
   ret ptr %3
 }
 

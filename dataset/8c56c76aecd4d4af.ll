@@ -1,7 +1,7 @@
 
-%struct.Mmr_Fixed_t_.2765503 = type { i32, i32, i32, i32, i32, %struct.Vec_Ptr_t_.2765504, %struct.Vec_Int_t_.2765505 }
-%struct.Vec_Ptr_t_.2765504 = type { i32, i32, ptr }
-%struct.Vec_Int_t_.2765505 = type { i32, i32, ptr }
+%struct.Mmr_Fixed_t_.2877738 = type { i32, i32, i32, i32, i32, %struct.Vec_Ptr_t_.2877739, %struct.Vec_Int_t_.2877740 }
+%struct.Vec_Ptr_t_.2877739 = type { i32, i32, ptr }
+%struct.Vec_Int_t_.2877740 = type { i32, i32, ptr }
 
 ; 23 occurrences:
 ; hermes/optimized/Array.cpp.ll
@@ -28,13 +28,13 @@
 ; openssl/optimized/libcrypto-shlib-pvkfmt.ll
 ; openssl/optimized/loader_attic-dso-pvkfmt.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 7
   %3 = lshr i32 %2, 3
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 4
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -42,12 +42,12 @@ entry:
 ; postgres/optimized/varbit.ll
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000078(ptr %0, i32 %1) #0 {
+define ptr @func000000000000007c(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -16
   %3 = lshr exact i32 %2, 2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 2624
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 2624
   %6 = getelementptr i32, ptr %5, i64 %4
   ret ptr %6
 }
@@ -74,12 +74,12 @@ entry:
 ; postgres/optimized/varbit.ll
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000058(ptr %0, i32 %1) #0 {
+define ptr @func000000000000005c(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -32
   %3 = lshr i32 %2, 2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 2640
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 2640
   %6 = getelementptr i32, ptr %5, i64 %4
   ret ptr %6
 }
@@ -106,13 +106,13 @@ entry:
 ; velox/optimized/HashStringAllocator.cpp.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000005f(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -16
   %3 = lshr i32 %2, 3
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 36848
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 36848
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -120,26 +120,26 @@ entry:
 ; velox/optimized/HashStringAllocator.cpp.ll
 ; wolfssl/optimized/ecc.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000007f(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -64
   %3 = lshr exact i32 %2, 6
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 36848
-  %6 = getelementptr nusw i64, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 36848
+  %6 = getelementptr nusw nuw i64, ptr %5, i64 %4
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000f2(ptr %0, i32 %1) #0 {
+define ptr @func00000000000000f3(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 160
   %3 = lshr exact i32 %2, 1
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr i8, ptr %0, i64 922880
-  %6 = getelementptr nusw float, ptr %5, i64 %4
+  %6 = getelementptr nusw nuw float, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -150,35 +150,26 @@ entry:
 ; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/stream.c.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000da(ptr %0, i32 %1) #0 {
+define ptr @func00000000000000df(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 12
   %3 = lshr i32 %2, 3
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 24
-  %6 = getelementptr nusw %struct.Mmr_Fixed_t_.2765503, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 24
+  %6 = getelementptr nusw nuw %struct.Mmr_Fixed_t_.2877738, ptr %5, i64 %4
   ret ptr %6
 }
 
-; 11 occurrences:
-; hyperscan/optimized/castle.c.ll
-; hyperscan/optimized/catchup.c.ll
-; hyperscan/optimized/match.c.ll
-; hyperscan/optimized/mpv.c.ll
-; hyperscan/optimized/program_runtime.c.ll
-; hyperscan/optimized/repeat.c.ll
-; hyperscan/optimized/som_runtime.c.ll
-; hyperscan/optimized/som_stream.c.ll
-; hyperscan/optimized/stream.c.ll
-; hyperscan/optimized/stream_compress.c.ll
+; 2 occurrences:
 ; libquic/optimized/e_rc2.c.ll
+; postgres/optimized/varbit.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000d0(ptr %0, i32 %1) #0 {
+define ptr @func00000000000000dc(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 7
   %3 = lshr i32 %2, 3
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr i8, ptr %0, i64 4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 4
   %6 = getelementptr i8, ptr %5, i64 %4
   ret ptr %6
 }
@@ -201,26 +192,13 @@ entry:
 ; llvm/optimized/CodeGenTarget.cpp.ll
 ; redis/optimized/rax.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000003f(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = lshr exact i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 40
-  %6 = getelementptr nusw ptr, ptr %5, i64 %4
-  ret ptr %6
-}
-
-; 1 occurrences:
-; postgres/optimized/varbit.ll
-; Function Attrs: nounwind
-define ptr @func00000000000000d8(ptr %0, i32 %1) #0 {
-entry:
-  %2 = add nuw nsw i32 %1, 7
-  %3 = lshr i32 %2, 3
-  %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 8
-  %6 = getelementptr i8, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 40
+  %6 = getelementptr nusw nuw ptr, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -234,6 +212,28 @@ entry:
   %3 = lshr i32 %2, 3
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr i8, ptr %0, i64 1
+  %6 = getelementptr i8, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 10 occurrences:
+; hyperscan/optimized/castle.c.ll
+; hyperscan/optimized/catchup.c.ll
+; hyperscan/optimized/match.c.ll
+; hyperscan/optimized/mpv.c.ll
+; hyperscan/optimized/program_runtime.c.ll
+; hyperscan/optimized/repeat.c.ll
+; hyperscan/optimized/som_runtime.c.ll
+; hyperscan/optimized/som_stream.c.ll
+; hyperscan/optimized/stream.c.ll
+; hyperscan/optimized/stream_compress.c.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000d0(ptr %0, i32 %1) #0 {
+entry:
+  %2 = add nuw nsw i32 %1, 7
+  %3 = lshr i32 %2, 3
+  %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr i8, ptr %0, i64 -4
   %6 = getelementptr i8, ptr %5, i64 %4
   ret ptr %6
 }

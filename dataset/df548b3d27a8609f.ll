@@ -1,7 +1,8 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; abc/optimized/darLib.c.ll
 ; nori/optimized/ttest.cpp.ll
+; opencv/optimized/trackerKCF.cpp.ll
 ; openjdk/optimized/cmspack.ll
 ; postgres/optimized/array_selfuncs.ll
 ; quantlib/optimized/extendedbinomialtree.ll

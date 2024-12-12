@@ -1,4 +1,4 @@
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	li	a0, -1
 	srli	a0, a0, 12
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -9,7 +9,7 @@ func0000000000000046:                   # @func0000000000000046
 	vmerge.vvm	v10, v10, v12, v0
 	vsll.vv	v8, v10, v8
 	ret
-func0000000000000047:                   # @func0000000000000047
+func0000000000000087:                   # @func0000000000000087
 	li	a0, -1
 	srli	a0, a0, 12
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -20,7 +20,7 @@ func0000000000000047:                   # @func0000000000000047
 	vmerge.vvm	v10, v10, v12, v0
 	vsll.vv	v8, v10, v8
 	ret
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	li	a0, -1
 	srli	a0, a0, 16
 	vsetivli	zero, 4, e64, m2, ta, ma

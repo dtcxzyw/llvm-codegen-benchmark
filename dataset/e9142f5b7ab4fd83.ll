@@ -1,5 +1,5 @@
 
-; 410 occurrences:
+; 408 occurrences:
 ; abc/optimized/acbPush.c.ll
 ; abc/optimized/aigOper.c.ll
 ; abc/optimized/cmdHist.c.ll
@@ -24,12 +24,12 @@
 ; assimp/optimized/XGLLoader.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/alloc_lib.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/b3GpuPgsConstraintSolver.ll
 ; bullet3/optimized/b3GpuPgsContactSolver.ll
 ; c3c/optimized/llvm_codegen_expr.c.ll
 ; c3c/optimized/sema_expr.c.ll
-; ceres/optimized/partitioned_matrix_view_2_d_d.cc.ll
 ; chibicc/optimized/main.ll
 ; clamav/optimized/ishield.c.ll
 ; clamav/optimized/matcher-bm.c.ll
@@ -74,6 +74,7 @@
 ; flatbuffers/optimized/idl_gen_cpp.cpp.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; freetype/optimized/psaux.c.ll
+; git/optimized/dir.ll
 ; git/optimized/http-walker.ll
 ; git/optimized/range-diff.ll
 ; git/optimized/urlmatch.ll
@@ -98,7 +99,6 @@
 ; gromacs/optimized/resourcedivision.cpp.ll
 ; gromacs/optimized/sstebz.cpp.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
-; hermes/optimized/ASTBuilder.cpp.ll
 ; hermes/optimized/RegAlloc.cpp.ll
 ; hwloc/optimized/common-ps.ll
 ; hwloc/optimized/hwloc-bind.ll
@@ -123,7 +123,6 @@
 ; linux/optimized/inet_connection_sock.ll
 ; linux/optimized/intel_dpll.ll
 ; linux/optimized/io_apic.ll
-; linux/optimized/libata-scsi.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/tcp_minisocks.ll
 ; linux/optimized/tx.ll
@@ -247,6 +246,7 @@
 ; openssl/optimized/sslapitest-bin-sslapitest.ll
 ; openusd/optimized/cpuEvaluator.cpp.ll
 ; openusd/optimized/faceVertex.cpp.ll
+; openusd/optimized/frustum.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/tbbKernel.cpp.ll
 ; pbrt-v4/optimized/lights.cpp.ll
@@ -313,13 +313,13 @@
 ; raylib/optimized/rmodels.c.ll
 ; raylib/optimized/rtext.c.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
-; redis/optimized/bitops.ll
 ; redis/optimized/jemalloc.ll
 ; redis/optimized/jemalloc.sym.ll
 ; redis/optimized/ldebug.ll
 ; rocksdb/optimized/compaction_picker.cc.ll
 ; rocksdb/optimized/table_cache.cc.ll
 ; ruby/optimized/gc.ll
+; ruby/optimized/regexec.ll
 ; ruby/optimized/regparse.ll
 ; ruby/optimized/ruby.ll
 ; rust-analyzer-rs/optimized/1r5fg81ha4dpx7ns.ll
@@ -348,7 +348,6 @@
 ; wasmtime-rs/optimized/xl3b912aq97wiv3.ll
 ; wireshark/optimized/editcap.c.ll
 ; wireshark/optimized/idl2wrs.c.ll
-; wireshark/optimized/mime_file.c.ll
 ; wireshark/optimized/packet-btbredr_rf.c.ll
 ; wireshark/optimized/packet-bthci_evt.c.ll
 ; wireshark/optimized/packet-ecpri.c.ll
@@ -358,7 +357,6 @@
 ; wireshark/optimized/packet-memcache.c.ll
 ; wireshark/optimized/packet-mp2t.c.ll
 ; wireshark/optimized/packet-nbap.c.ll
-; wireshark/optimized/scanner.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; yosys/optimized/abc.ll
 ; yosys/optimized/abc9_ops.ll

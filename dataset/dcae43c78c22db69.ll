@@ -46,16 +46,4 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
-; icu/optimized/islamcal.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000085(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ult i32 %1, 33
-  %3 = zext i1 %2 to i32
-  %4 = sub nsw i32 %3, %0
-  %5 = add nsw i32 %4, -2
-  ret i32 %5
-}
-
 attributes #0 = { nounwind }

@@ -1,9 +1,10 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; arrow/optimized/int_util.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/get_distance_measure.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_scalar.cpp.ll
 ; openusd/optimized/json.cpp.ll

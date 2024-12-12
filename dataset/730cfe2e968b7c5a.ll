@@ -12,6 +12,7 @@
 ; abc/optimized/wlcWriteVer.c.ll
 ; abc/optimized/wlnWriteVer.c.ll
 ; arrow/optimized/key_map.cc.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/fse_decompress.c.ll
 ; cmake/optimized/xmlparse.c.ll
 ; cmake/optimized/zstd_decompress_block.c.ll
@@ -30,7 +31,6 @@
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/AsmWriterEmitter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; openexr/optimized/ImfHuf.cpp.ll
 ; openexr/optimized/internal_huf.c.ll

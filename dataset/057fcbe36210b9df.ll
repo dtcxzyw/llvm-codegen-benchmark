@@ -17,8 +17,7 @@ entry:
   ret i1 %5
 }
 
-; 24 occurrences:
-; abc/optimized/giaSatLE.c.ll
+; 23 occurrences:
 ; clamav/optimized/matcher-pcre.c.ll
 ; cmake/optimized/cmTargetLinkLibrariesCommand.cxx.ll
 ; git/optimized/read-cache.ll
@@ -51,12 +50,9 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
+; 2 occurrences:
 ; linux/optimized/dev_ioctl.ll
-; llvm/optimized/MCWin64EH.cpp.ll
 ; qemu/optimized/audio_audio.c.ll
-; slurm/optimized/gres.ll
-; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0, i1 %1, i1 %2) #0 {
 entry:
@@ -98,14 +94,37 @@ entry:
 }
 
 ; 3 occurrences:
+; llvm/optimized/MCWin64EH.cpp.ll
+; slurm/optimized/gres.ll
+; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0, i1 %1, i1 %2) #0 {
+entry:
+  %3 = and i1 %1, %2
+  %4 = icmp samesign ult i32 %0, 3
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
+; 2 occurrences:
 ; gromacs/optimized/bwt.c.ll
 ; llvm/optimized/Instructions.cpp.ll
-; llvm/optimized/VectorUtils.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = and i1 %1, %2
   %4 = icmp ugt i32 %0, 255
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
+; llvm/optimized/VectorUtils.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i32 %0, i1 %1, i1 %2) #0 {
+entry:
+  %3 = and i1 %1, %2
+  %4 = icmp samesign ugt i32 %0, 1
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
 }

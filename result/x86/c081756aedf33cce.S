@@ -6,7 +6,7 @@ func0000000000000001:                   # @func0000000000000001
 	vmovsd	%xmm0, %xmm1, %xmm1 {%k1}
 	vmovapd	%xmm1, %xmm0
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	vcvtsi2sd	%esi, %xmm1, %xmm1
 	cmpl	$4, %edi
 	setb	%al

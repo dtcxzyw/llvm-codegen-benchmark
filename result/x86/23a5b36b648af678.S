@@ -23,8 +23,18 @@ func000000000000000a:                   # @func000000000000000a
 	testq	%rsi, %rsi
 	cmovleq	%rdi, %rax
 	retq
+func0000000000000018:                   # @func0000000000000018
+	xorl	%eax, %eax
+	cmpq	$33554432, %rsi                 # imm = 0x2000000
+	cmovbq	%rdi, %rax
+	retq
 func0000000000000004:                   # @func0000000000000004
 	cmpq	$8096, %rsi                     # imm = 0x1FA0
 	movl	$8096, %eax                     # imm = 0x1FA0
+	cmovaeq	%rdi, %rax
+	retq
+func0000000000000014:                   # @func0000000000000014
+	xorl	%eax, %eax
+	cmpq	$65, %rsi
 	cmovaeq	%rdi, %rax
 	retq

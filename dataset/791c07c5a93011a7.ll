@@ -46,4 +46,17 @@ entry:
   ret i64 %6
 }
 
+; 2 occurrences:
+; openjdk/optimized/mutableNUMASpace.ll
+; openjdk/optimized/mutableSpace.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000c(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw ptr, ptr %1, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 0, %0
+  %6 = and i64 %5, %4
+  ret i64 %6
+}
+
 attributes #0 = { nounwind }

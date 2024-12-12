@@ -1,21 +1,34 @@
-func0000000000000044:                   // @func0000000000000044
+func0000000000000084:                   // @func0000000000000084
 // %bb.0:                               // %entry
-	movi	v2.16b, #224
-	add	v1.16b, v1.16b, v2.16b
-	add	v0.16b, v0.16b, v2.16b
-	movi	v2.16b, #10
-	umax	v0.16b, v0.16b, v1.16b
-	cmhi	v0.16b, v2.16b, v0.16b
+	and	w8, w0, #0xff
+	and	w9, w1, #0xff
+	sub	w8, w8, #58
+	sub	w9, w9, #91
+	cmn	w8, #10
+	ccmn	w9, #26, #2, lo
+	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000814:                   // @func0000000000000814
+func0000000000001084:                   // @func0000000000001084
 // %bb.0:                               // %entry
-	movi	v2.16b, #167
-	movi	v3.16b, #93
-	movi	v4.16b, #5
-	add	v0.16b, v0.16b, v2.16b
-	cmeq	v1.16b, v1.16b, v3.16b
-	cmhi	v0.16b, v4.16b, v0.16b
-	and	v0.16b, v0.16b, v1.16b
+	and	w9, w0, #0xff
+	and	w10, w1, #0xff
+	mov	w8, #68                         // =0x44
+	sub	w9, w9, #20
+	sub	w10, w10, #5
+	cmn	w9, #8
+	ccmp	w10, w8, #2, lo
+	cset	w0, lo
+	ret
+                                        // -- End function
+func0000000000002024:                   // @func0000000000002024
+// %bb.0:                               // %entry
+	and	w9, w0, #0xff
+	mov	w8, #93                         // =0x5d
+	and	w10, w1, #0xff
+	sub	w9, w9, #89
+	cmp	w9, #5
+	ccmp	w10, w8, #0, lo
+	cset	w0, eq
 	ret
                                         // -- End function

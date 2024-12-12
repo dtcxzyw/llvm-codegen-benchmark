@@ -21,13 +21,12 @@ func0000000000000001:                   # @func0000000000000001
 	shlxl	%edi, %eax, %eax
 	incl	%eax
 	retq
+func0000000000000006:                   # @func0000000000000006
+	movl	$32, %eax
+	btsl	%edi, %eax
+	retq
 func0000000000000000:                   # @func0000000000000000
 	movl	$65536, %eax                    # imm = 0x10000
 	shlxl	%edi, %eax, %eax
 	orl	$268435456, %eax                # imm = 0x10000000
-	retq
-func0000000000000006:                   # @func0000000000000006
-	movl	$2, %eax
-	shlxl	%edi, %eax, %eax
-	orl	$512, %eax                      # imm = 0x200
 	retq

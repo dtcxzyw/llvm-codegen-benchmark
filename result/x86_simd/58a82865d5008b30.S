@@ -9,15 +9,3 @@ func0000000000000005:                   # @func0000000000000005
 	vpbroadcastd	.LCPI0_0(%rip), %ymm0   # ymm0 = [8,8,8,8,8,8,8,8]
 	vpsubd	%ymm2, %ymm1, %ymm0 {%k1}
 	retq
-.LCPI1_0:
-	.long	1                               # 0x1
-.LCPI1_1:
-	.long	5                               # 0x5
-func0000000000000001:                   # @func0000000000000001
-	vpsllw	$15, %xmm0, %xmm0
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpcmpnltw	%xmm3, %xmm0, %k1
-	vpmulld	%ymm2, %ymm1, %ymm1
-	vpbroadcastd	.LCPI1_0(%rip), %ymm0   # ymm0 = [1,1,1,1,1,1,1,1]
-	vpaddd	.LCPI1_1(%rip){1to8}, %ymm1, %ymm0 {%k1}
-	retq

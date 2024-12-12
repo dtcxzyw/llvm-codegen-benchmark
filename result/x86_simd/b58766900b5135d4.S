@@ -2,8 +2,8 @@ func0000000000000004:                   # @func0000000000000004
 	vcvtps2pd	%ymm3, %zmm4
 	vextractf64x4	$1, %zmm3, %ymm3
 	vcvtps2pd	%ymm3, %zmm3
-	vaddpd	%zmm1, %zmm3, %zmm1
-	vaddpd	%zmm0, %zmm4, %zmm0
+	vaddpd	%zmm3, %zmm1, %zmm1
+	vaddpd	%zmm4, %zmm0, %zmm0
 	vextractf64x4	$1, %zmm2, %ymm3
 	vcvtps2pd	%ymm3, %zmm3
 	vcvtps2pd	%ymm2, %zmm2
@@ -17,8 +17,8 @@ func0000000000000003:                   # @func0000000000000003
 	vcvtps2pd	%ymm3, %zmm4
 	vextractf64x4	$1, %zmm3, %ymm3
 	vcvtps2pd	%ymm3, %zmm3
-	vaddpd	%zmm1, %zmm3, %zmm1
-	vaddpd	%zmm0, %zmm4, %zmm0
+	vaddpd	%zmm3, %zmm1, %zmm1
+	vaddpd	%zmm4, %zmm0, %zmm0
 	vextractf64x4	$1, %zmm2, %ymm3
 	vcvtps2pd	%ymm3, %zmm3
 	vcvtps2pd	%ymm2, %zmm2
@@ -32,8 +32,8 @@ func0000000000000005:                   # @func0000000000000005
 	vcvtps2pd	%ymm3, %zmm4
 	vextractf64x4	$1, %zmm3, %ymm3
 	vcvtps2pd	%ymm3, %zmm3
-	vaddpd	%zmm1, %zmm3, %zmm1
-	vaddpd	%zmm0, %zmm4, %zmm0
+	vaddpd	%zmm3, %zmm1, %zmm1
+	vaddpd	%zmm4, %zmm0, %zmm0
 	vextractf64x4	$1, %zmm2, %ymm3
 	vcvtps2pd	%ymm3, %zmm3
 	vcvtps2pd	%ymm2, %zmm2
@@ -47,8 +47,8 @@ func0000000000000002:                   # @func0000000000000002
 	vcvtps2pd	%ymm3, %zmm4
 	vextractf64x4	$1, %zmm3, %ymm3
 	vcvtps2pd	%ymm3, %zmm3
-	vaddpd	%zmm1, %zmm3, %zmm1
-	vaddpd	%zmm0, %zmm4, %zmm0
+	vaddpd	%zmm3, %zmm1, %zmm1
+	vaddpd	%zmm4, %zmm0, %zmm0
 	vextractf64x4	$1, %zmm2, %ymm3
 	vcvtps2pd	%ymm3, %zmm3
 	vcvtps2pd	%ymm2, %zmm2
@@ -62,8 +62,8 @@ func000000000000000c:                   # @func000000000000000c
 	vcvtps2pd	%ymm3, %zmm4
 	vextractf64x4	$1, %zmm3, %ymm3
 	vcvtps2pd	%ymm3, %zmm3
-	vaddpd	%zmm1, %zmm3, %zmm1
-	vaddpd	%zmm0, %zmm4, %zmm0
+	vaddpd	%zmm3, %zmm1, %zmm1
+	vaddpd	%zmm4, %zmm0, %zmm0
 	vextractf64x4	$1, %zmm2, %ymm3
 	vcvtps2pd	%ymm3, %zmm3
 	vcvtps2pd	%ymm2, %zmm2
@@ -77,8 +77,8 @@ func000000000000000a:                   # @func000000000000000a
 	vcvtps2pd	%ymm3, %zmm4
 	vextractf64x4	$1, %zmm3, %ymm3
 	vcvtps2pd	%ymm3, %zmm3
-	vaddpd	%zmm1, %zmm3, %zmm1
-	vaddpd	%zmm0, %zmm4, %zmm0
+	vaddpd	%zmm3, %zmm1, %zmm1
+	vaddpd	%zmm4, %zmm0, %zmm0
 	vextractf64x4	$1, %zmm2, %ymm3
 	vcvtps2pd	%ymm3, %zmm3
 	vcvtps2pd	%ymm2, %zmm2

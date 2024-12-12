@@ -3,7 +3,7 @@
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; minetest/optimized/serverenvironment.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add nsw i32 %3, 1
@@ -12,10 +12,9 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; llvm/optimized/TargetInstrInfo.cpp.ll
 ; minetest/optimized/CNullDriver.cpp.ll
-; qemu/optimized/system_physmem.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i32 %1, i64 %2) #0 {
 entry:
@@ -30,7 +29,7 @@ entry:
 ; git/optimized/remote.ll
 ; openusd/optimized/childrenUtils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add nsw i32 %3, -5
@@ -54,7 +53,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/rowtypes.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000a6(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
   %4 = add nsw i32 %3, 1

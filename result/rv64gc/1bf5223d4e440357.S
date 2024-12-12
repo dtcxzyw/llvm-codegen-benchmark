@@ -3,9 +3,9 @@ func000000000000001e:                   # @func000000000000001e
 	slli	a2, a2, 32
 	srli	a4, a4, 32
 	srli	a2, a2, 32
-	mul	a1, a4, a1
-	mulhu	a3, a4, a0
-	mul	a0, a4, a0
+	mul	a1, a1, a4
+	mulhu	a3, a0, a4
+	mul	a0, a0, a4
 	add	a1, a1, a3
 	add	a2, a2, a0
 	sltu	a0, a2, a0

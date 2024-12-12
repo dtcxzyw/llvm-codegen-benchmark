@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/CodeViewDebug.cpp.ll
@@ -8,7 +8,6 @@
 ; llvm/optimized/LLVMTargetMachine.cpp.ll
 ; llvm/optimized/MCTargetOptionsCommandFlags.cpp.ll
 ; llvm/optimized/PackedVersion.cpp.ll
-; llvm/optimized/PtrTypesSemantics.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/SimplifyLibCalls.cpp.ll
 ; llvm/optimized/TailRecursionElimination.cpp.ll
@@ -25,7 +24,7 @@ entry:
   ret i16 %3
 }
 
-; 16 occurrences:
+; 14 occurrences:
 ; linux/optimized/e1000_ethtool.ll
 ; linux/optimized/ethtool.ll
 ; linux/optimized/sch_frag.ll
@@ -36,8 +35,6 @@ entry:
 ; llvm/optimized/LowerTypeTests.cpp.ll
 ; llvm/optimized/MergeFunctions.cpp.ll
 ; llvm/optimized/WholeProgramDevirt.cpp.ll
-; luajit/optimized/lj_asm.ll
-; luajit/optimized/lj_asm_dyn.ll
 ; openexr/optimized/internal_dwa.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/parserHelpers.cpp.ll

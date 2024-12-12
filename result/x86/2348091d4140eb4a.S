@@ -1,4 +1,4 @@
-func00000000000004a4:                   # @func00000000000004a4
+func0000000000000944:                   # @func0000000000000944
 	addq	%rsi, %rsi
 	leaq	(%rsi,%rsi,4), %rax
 	subq	%rdi, %rax
@@ -6,7 +6,7 @@ func00000000000004a4:                   # @func00000000000004a4
 	testq	%rax, %rax
 	sete	%al
 	retq
-func0000000000000484:                   # @func0000000000000484
+func0000000000000904:                   # @func0000000000000904
 	addq	%rsi, %rsi
 	leaq	(%rsi,%rsi,4), %rax
 	subq	%rdi, %rax
@@ -14,7 +14,7 @@ func0000000000000484:                   # @func0000000000000484
 	testq	%rax, %rax
 	sete	%al
 	retq
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	addq	%rsi, %rsi
 	leaq	(%rsi,%rsi,4), %rax
 	subq	%rdi, %rax
@@ -22,7 +22,7 @@ func0000000000000084:                   # @func0000000000000084
 	testq	%rax, %rax
 	sete	%al
 	retq
-func00000000000000a4:                   # @func00000000000000a4
+func0000000000000144:                   # @func0000000000000144
 	addq	%rsi, %rsi
 	leaq	(%rsi,%rsi,4), %rax
 	subq	%rdi, %rax

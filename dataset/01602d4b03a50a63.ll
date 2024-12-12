@@ -1,5 +1,5 @@
 
-; 31 occurrences:
+; 32 occurrences:
 ; arrow/optimized/api_scalar.cc.ll
 ; linux/optimized/scsi_scan.ll
 ; linux/optimized/scsi_transport_spi.ll
@@ -11,7 +11,8 @@
 ; llvm/optimized/X86InstrMappingEmitter.cpp.ll
 ; luajit/optimized/lj_opt_loop.ll
 ; luajit/optimized/lj_opt_loop_dyn.ll
-; opencv/optimized/stringutils.cpp.ll
+; lvgl/optimized/lv_bar.ll
+; lvgl/optimized/lv_textarea.ll
 ; tree-sitter-rs/optimized/3pra6a7meoswj3tu.ll
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; wireshark/optimized/packet-tds.c.ll
@@ -41,12 +42,11 @@ entry:
   ret i1 %6
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; linux/optimized/intel_hdcp.ll
 ; linux/optimized/intel_psr.ll
 ; linux/optimized/scsi_error.ll
 ; llvm/optimized/DiagnosticIDs.cpp.ll
-; proj/optimized/io.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i1 %1, i8 %2) #0 {
 entry:

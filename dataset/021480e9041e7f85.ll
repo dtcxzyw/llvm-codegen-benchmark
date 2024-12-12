@@ -1,12 +1,11 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; llvm/optimized/Archive.cpp.ll
-; nix/optimized/nix-env.ll
 ; velox/optimized/DecodedVector.cpp.ll
 ; zstd/optimized/zstdmt_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000042(i64 %0, ptr %1) #0 {
 entry:
   %2 = freeze ptr %1
   %3 = icmp eq ptr %2, null
@@ -20,7 +19,7 @@ entry:
 ; hyperscan/optimized/ng_prune.cpp.ll
 ; hyperscan/optimized/rose_build_role_aliasing.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c2(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000182(i64 %0, ptr %1) #0 {
 entry:
   %2 = freeze ptr %1
   %3 = icmp eq ptr %2, null
@@ -33,7 +32,7 @@ entry:
 ; hyperscan/optimized/rose_build_convert.cpp.ll
 ; hyperscan/optimized/rose_build_merge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i64 %0, ptr %1) #0 {
+define i1 @func000000000000004c(i64 %0, ptr %1) #0 {
 entry:
   %2 = freeze ptr %1
   %3 = icmp eq ptr %2, null

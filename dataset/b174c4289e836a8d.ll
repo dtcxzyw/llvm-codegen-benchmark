@@ -315,7 +315,7 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = and i32 %0, -256
@@ -329,7 +329,7 @@ entry:
 ; linux/optimized/hdac_device.ll
 ; linux/optimized/hdac_sysfs.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000141(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, -1
   %3 = and i32 %0, 1073741824
@@ -342,7 +342,7 @@ entry:
 ; linux/optimized/hda_codec.ll
 ; linux/optimized/hdac_device.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i32 %0, i32 %1) #0 {
+define i1 @func000000000000014c(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 0
   %3 = and i32 %0, 4096
@@ -354,7 +354,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/hdac_device.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = and i32 %0, 256

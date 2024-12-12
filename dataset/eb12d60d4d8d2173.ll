@@ -1,5 +1,5 @@
 
-; 30 occurrences:
+; 31 occurrences:
 ; arrow/optimized/float16.cc.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; grpc/optimized/writing.cc.ll
@@ -30,6 +30,7 @@
 ; openusd/optimized/topologyRefiner.cpp.ll
 ; postgres/optimized/tsvector_parser.ll
 ; ruby/optimized/time.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000001(i16 %0, i1 %1, i16 %2) #0 {
 entry:
@@ -38,7 +39,7 @@ entry:
   ret i16 %4
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; c3c/optimized/sema_expr.c.ll
 ; duckdb/optimized/ub_duckdb_common_serializer.cpp.ll
 ; eastl/optimized/TestBitVector.cpp.ll
@@ -51,6 +52,7 @@ entry:
 ; minetest/optimized/clientmap.cpp.ll
 ; nix/optimized/daemon.ll
 ; opencv/optimized/gfluidcore.cpp.ll
+; openusd/optimized/value.cpp.ll
 ; postgres/optimized/file.ll
 ; qemu/optimized/hw_net_igb_core.c.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
@@ -61,7 +63,7 @@ entry:
 define i16 @func0000000000000000(i16 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = select i1 %1, i16 0, i16 %2
-  %4 = or i16 %3, %0
+  %4 = or i16 %0, %3
   ret i16 %4
 }
 

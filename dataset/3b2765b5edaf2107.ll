@@ -1,5 +1,5 @@
 
-; 80 occurrences:
+; 79 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcBidec.c.ll
 ; abc/optimized/abcExact.c.ll
@@ -64,7 +64,6 @@
 ; abc/optimized/kitTruth.c.ll
 ; abc/optimized/lpkCut.c.ll
 ; abc/optimized/lpkMulti.c.ll
-; abc/optimized/lpkMux.c.ll
 ; abc/optimized/luckySwap.c.ll
 ; abc/optimized/mioParse.c.ll
 ; abc/optimized/nwkBidec.c.ll
@@ -89,14 +88,13 @@ entry:
   ret i64 %4
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcRpo.c.ll
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/aigCanon.c.ll
 ; abc/optimized/cutPre22.c.ll
 ; abc/optimized/cutTruth.c.ll
-; abc/optimized/dauCount.c.ll
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/extraUtilMaj.c.ll
 ; abc/optimized/ifDsd.c.ll
@@ -115,14 +113,13 @@ entry:
   ret i64 %4
 }
 
-; 32 occurrences:
+; 31 occurrences:
 ; abc/optimized/abcLut.c.ll
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/aigCanon.c.ll
 ; abc/optimized/amapPerm.c.ll
 ; abc/optimized/bdcCore.c.ll
 ; abc/optimized/bdcDec.c.ll
-; abc/optimized/bdcTable.c.ll
 ; abc/optimized/darRefact.c.ll
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/dauDivs.c.ll

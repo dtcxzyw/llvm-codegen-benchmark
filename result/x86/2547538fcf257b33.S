@@ -1,21 +1,15 @@
-func0000000000000004:                   # @func0000000000000004
-	movl	$-3, %ecx
-	subl	%esi, %ecx
-	testb	$1, %dil
-	movl	$-12, %eax
-	cmovel	%ecx, %eax
-	retq
-func0000000000000005:                   # @func0000000000000005
-	notl	%esi
-	testb	$1, %dil
-	movl	$-7, %eax
-	cmovel	%esi, %eax
-	retq
 func0000000000000001:                   # @func0000000000000001
 	movl	$4094, %ecx                     # imm = 0xFFE
 	subl	%esi, %ecx
 	testb	$1, %dil
 	movl	$4098, %eax                     # imm = 0x1002
+	cmovel	%ecx, %eax
+	retq
+func0000000000000005:                   # @func0000000000000005
+	movl	$1075, %ecx                     # imm = 0x433
+	subl	%esi, %ecx
+	testb	$1, %dil
+	movl	$1074, %eax                     # imm = 0x432
 	cmovel	%ecx, %eax
 	retq
 func0000000000000007:                   # @func0000000000000007

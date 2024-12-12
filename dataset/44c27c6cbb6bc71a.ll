@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openvdb/optimized/SignedFloodFill.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %.idx = shl i64 %1, 5
   %3 = getelementptr i8, ptr %0, i64 %.idx
@@ -76,7 +76,7 @@ entry:
 ; 1 occurrences:
 ; lodepng/optimized/lodepng_util.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000fe(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func00000000000000ff(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 3
   %4 = shl nuw nsw i64 %1, 1

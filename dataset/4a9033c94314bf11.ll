@@ -28,7 +28,7 @@ entry:
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000022(i32 %0, i32 %1) #0 {
+define i8 @func0000000000000042(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, %1
   %3 = icmp eq i32 %2, 0
@@ -36,7 +36,7 @@ entry:
   ret i8 %4
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-ot-cff2-table.cc.ll
 ; harfbuzz/optimized/hb-subset-cff2.cc.ll
@@ -44,7 +44,6 @@ entry:
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/ng_asserts.cpp.ll
 ; linux/optimized/build_utility.ll
-; linux/optimized/mii.ll
 ; llvm/optimized/CoverageMapping.cpp.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; openjdk/optimized/hb-ot-cff2-table.ll
@@ -53,7 +52,7 @@ entry:
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i8 @func0000000000000058(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, %1
   %3 = icmp ne i32 %2, 0

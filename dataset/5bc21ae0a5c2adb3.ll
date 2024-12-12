@@ -1,6 +1,5 @@
 
-; 47 occurrences:
-; abseil-cpp/optimized/exponential_biased.cc.ll
+; 46 occurrences:
 ; bullet3/optimized/b3PgsJacobiSolver.ll
 ; bullet3/optimized/btSequentialImpulseConstraintSolver.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll

@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 19 occurrences:
 ; cmake/optimized/xmlparse.c.ll
 ; cpython/optimized/xmlparse.ll
 ; cvc5/optimized/sygus_explain.cpp.ll
@@ -7,7 +7,6 @@
 ; hyperscan/optimized/ng_haig.cpp.ll
 ; hyperscan/optimized/ng_mcclellan.cpp.ll
 ; linux/optimized/cache.ll
-; linux/optimized/fiemap.ll
 ; linux/optimized/generic-radix-tree.ll
 ; linux/optimized/indirect.ll
 ; linux/optimized/io_pgtable_v2.ll
@@ -29,7 +28,8 @@ entry:
   ret i64 %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/to_chars.ll
 ; cvc5/optimized/query_generator_sample_sat.cpp.ll
 ; linux/optimized/generic-radix-tree.ll
 ; openssl/optimized/libcrypto-lib-mem_sec.ll

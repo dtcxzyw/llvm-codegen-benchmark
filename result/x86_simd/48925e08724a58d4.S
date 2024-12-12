@@ -1,6 +1,6 @@
 func0000000000000004:                   # @func0000000000000004
 	vpaddw	%ymm2, %ymm1, %ymm1
-	vpcmpnleuw	%ymm0, %ymm1, %k0
+	vpcmpltuw	%ymm1, %ymm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
@@ -18,25 +18,31 @@ func000000000000000a:                   # @func000000000000000a
 	retq
 func000000000000000c:                   # @func000000000000000c
 	vpaddw	%ymm2, %ymm1, %ymm1
-	vpcmpneqw	%ymm0, %ymm1, %k0
+	vpcmpneqw	%ymm1, %ymm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
 func0000000000000001:                   # @func0000000000000001
 	vpaddw	%ymm2, %ymm1, %ymm1
-	vpcmpeqw	%ymm0, %ymm1, %k0
+	vpcmpeqw	%ymm1, %ymm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
 func0000000000000008:                   # @func0000000000000008
 	vpaddw	%ymm2, %ymm1, %ymm1
-	vpcmpltuw	%ymm0, %ymm1, %k0
+	vpcmpnleuw	%ymm1, %ymm0, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
+func0000000000000009:                   # @func0000000000000009
+	vpaddw	%ymm2, %ymm1, %ymm1
+	vpcmpnltuw	%ymm1, %ymm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
 func0000000000000005:                   # @func0000000000000005
 	vpaddw	%ymm2, %ymm1, %ymm1
-	vpcmpnltuw	%ymm0, %ymm1, %k0
+	vpcmpleuw	%ymm1, %ymm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

@@ -1,4 +1,4 @@
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	movb	$62, %al
 	bzhiq	%rax, %rdx, %rax
 	incq	%rsi
@@ -6,7 +6,7 @@ func0000000000000034:                   # @func0000000000000034
 	setb	%al
 	orb	%dil, %al
 	retq
-func0000000000000039:                   # @func0000000000000039
+func0000000000000079:                   # @func0000000000000079
 	movl	%edx, %eax
 	incq	%rsi
 	cmpq	%rax, %rsi
@@ -21,21 +21,21 @@ func0000000000000004:                   # @func0000000000000004
 	setb	%al
 	orb	%dil, %al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	movl	%edx, %eax
 	addq	$32, %rsi
 	cmpq	%rax, %rsi
 	seta	%al
 	orb	%dil, %al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	movl	%edx, %eax
 	incq	%rsi
 	cmpq	%rax, %rsi
 	sete	%al
 	orb	%dil, %al
 	retq
-func000000000000003c:                   # @func000000000000003c
+func000000000000006c:                   # @func000000000000006c
 	andl	$2147483647, %edx               # imm = 0x7FFFFFFF
 	incq	%rsi
 	cmpq	%rdx, %rsi

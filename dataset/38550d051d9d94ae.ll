@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/collationiterator.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 2, i32 1
   %4 = shl nsw i32 %1, %3
@@ -25,7 +25,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/collationiterator.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 2, i32 1
   %4 = shl nsw i32 %1, %3
@@ -47,7 +47,7 @@ entry:
 ; 1 occurrences:
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000064(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 7, i32 8
   %4 = shl nuw nsw i32 %1, %3

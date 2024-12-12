@@ -4,7 +4,7 @@
 ; linux/optimized/r8169_main.ll
 ; redis/optimized/server.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 16777216
   %3 = select i1 %2, i32 0, i32 %1

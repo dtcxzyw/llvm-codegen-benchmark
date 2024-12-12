@@ -1,5 +1,5 @@
 
-; 43 occurrences:
+; 44 occurrences:
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; graphviz/optimized/emit.c.ll
 ; gromacs/optimized/gmx_nmeig.cpp.ll
@@ -41,28 +41,31 @@
 ; yosys/optimized/recover_names.ll
 ; yosys/optimized/sat.ll
 ; yosys/optimized/satgen.ll
+; yosys/optimized/sim.ll
 ; yosys/optimized/test_abcloop.ll
 ; yosys/optimized/test_cell.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = trunc i8 %2 to i1
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
 
-; 5 occurrences:
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; 7 occurrences:
 ; quantlib/optimized/analyticgjrgarchengine.ll
 ; rust-analyzer-rs/optimized/2zm9eul0ycl9zsz3.ll
 ; rust-analyzer-rs/optimized/p80zqc6dxbxvppz.ll
 ; slurm/optimized/gres_sock_list.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }

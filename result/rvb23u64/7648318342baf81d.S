@@ -47,6 +47,13 @@ func0000000000000002:                   # @func0000000000000002
 	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
+func0000000000000000:                   # @func0000000000000000
+	andi	a2, a2, 120
+	andi	a1, a1, 240
+	slli	a2, a2, 5
+	or	a0, a0, a1
+	or	a0, a0, a2
+	ret
 func000000000000000e:                   # @func000000000000000e
 	slli	a2, a2, 56
 	andi	a1, a1, 255

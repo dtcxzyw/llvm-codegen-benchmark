@@ -1,5 +1,5 @@
 
-; 124 occurrences:
+; 125 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/bmcBmc3.c.ll
 ; abc/optimized/extraUtilCube.c.ll
@@ -27,6 +27,7 @@
 ; luau/optimized/IrBuilder.cpp.ll
 ; luau/optimized/OptimizeConstProp.cpp.ll
 ; luau/optimized/ltable.cpp.ll
+; lvgl/optimized/lv_lru.ll
 ; lz4/optimized/xxhash.c.ll
 ; memcached/optimized/memcached-murmur3_hash.ll
 ; memcached/optimized/memcached_debug-murmur3_hash.ll
@@ -128,7 +129,7 @@
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, -2048144789
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   %4 = mul i32 %3, -1028477387
   ret i32 %4
 }
@@ -143,7 +144,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 4097
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   %4 = mul nsw i32 %3, 17
   ret i32 %4
 }
@@ -159,7 +160,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 17
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   %4 = mul i32 %3, 1025
   ret i32 %4
 }
@@ -172,7 +173,7 @@ entry:
 define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 4097
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   %4 = mul i32 %3, 17
   ret i32 %4
 }

@@ -1,7 +1,6 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; openjdk/optimized/cmsgmt.ll
-; openjdk/optimized/cmslut.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(i32 %0, i32 %1) #0 {
@@ -29,8 +28,9 @@ entry:
   ret double %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; openjdk/optimized/cmsgamma.ll
+; openjdk/optimized/cmslut.ll
 ; Function Attrs: nounwind
 define double @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:

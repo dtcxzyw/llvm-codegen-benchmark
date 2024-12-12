@@ -27,5 +27,5 @@ func0000000000000001:                   # @func0000000000000001
 	vpsrlw	$15, %ymm1, %ymm2
 	vpsraw	$5, %ymm1, %ymm1
 	vpaddw	%ymm2, %ymm1, %ymm1
-	vpaddw	%ymm0, %ymm1, %ymm0
+	vpaddw	%ymm1, %ymm0, %ymm0
 	retq

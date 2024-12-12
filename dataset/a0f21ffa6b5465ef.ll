@@ -19,7 +19,7 @@
 define i1 @func000000000000000a(i1 %0, i32 %1, float %2) #0 {
 entry:
   %3 = fptosi float %2 to i32
-  %4 = icmp slt i32 %3, %1
+  %4 = icmp sgt i32 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -33,7 +33,7 @@ entry:
 define i1 @func0000000000000006(i1 %0, i32 %1, float %2) #0 {
 entry:
   %3 = fptosi float %2 to i32
-  %4 = icmp sgt i32 %3, %1
+  %4 = icmp slt i32 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -44,7 +44,7 @@ entry:
 define i1 @func0000000000000004(i1 %0, i32 %1, float %2) #0 {
 entry:
   %3 = fptosi float %2 to i32
-  %4 = icmp ugt i32 %3, %1
+  %4 = icmp ult i32 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -55,7 +55,7 @@ entry:
 define i1 @func000000000000000c(i1 %0, i32 %1, float %2) #0 {
 entry:
   %3 = fptosi float %2 to i32
-  %4 = icmp ne i32 %3, %1
+  %4 = icmp ne i32 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -66,7 +66,7 @@ entry:
 define i1 @func0000000000000008(i1 %0, i32 %1, float %2) #0 {
 entry:
   %3 = fptosi float %2 to i32
-  %4 = icmp ult i32 %3, %1
+  %4 = icmp ugt i32 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }

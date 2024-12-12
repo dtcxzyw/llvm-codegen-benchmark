@@ -1,5 +1,5 @@
 
-; 40 occurrences:
+; 41 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/lpkAbcDsd.c.ll
@@ -30,6 +30,7 @@
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; luajit/optimized/minilua.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; minetest/optimized/CImage.cpp.ll
 ; minetest/optimized/serverenvironment.cpp.ll

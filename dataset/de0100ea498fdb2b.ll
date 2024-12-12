@@ -10,10 +10,13 @@ entry:
   ret i64 %5
 }
 
-; 28 occurrences:
+; 31 occurrences:
 ; casadi/optimized/sx_function.cpp.ll
 ; darktable/optimized/RawImage.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_buffer.cpp.ll
+; eastl/optimized/BenchmarkTupleVector.cpp.ll
+; eastl/optimized/TestFixedTupleVector.cpp.ll
+; eastl/optimized/TestTupleVector.cpp.ll
 ; linux/optimized/fork.ll
 ; linux/optimized/mlock.ll
 ; linux/optimized/set_memory.ll
@@ -65,7 +68,7 @@ entry:
   ret i64 %5
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; abc/optimized/aigTsim.c.ll
 ; abc/optimized/saigPhase.c.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
@@ -75,6 +78,7 @@ entry:
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
+; proxygen/optimized/HTTPSession.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -125,9 +129,10 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; llvm/optimized/AArch64Disassembler.cpp.ll
 ; osqp/optimized/csc_utils.c.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -142,9 +147,9 @@ entry:
 ; postgres/optimized/execExprInterp.ll
 ; postgres/optimized/pg_dumpall.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000050(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ult i64 %2, 4294967296
+  %3 = icmp samesign ult i64 %2, 4294967296
   %4 = select i1 %3, i64 %0, i64 %1
   %5 = shl i64 %4, 3
   ret i64 %5

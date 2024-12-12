@@ -23,8 +23,3 @@ func00000000000000d0:                   # @func00000000000000d0
 	leal	3(%rsi,%rdx), %eax
 	cltq
 	retq
-func0000000000000010:                   # @func0000000000000010
-	addl	%esi, %edx
-	leal	1(%rdi,%rdx), %eax
-	cltq
-	retq

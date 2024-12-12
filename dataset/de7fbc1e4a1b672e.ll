@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 27 occurrences:
 ; bullet3/optimized/btBatchedConstraints.ll
 ; faiss/optimized/ScalarQuantizer.cpp.ll
 ; gromacs/optimized/gmx_anaeig.cpp.ll
@@ -8,11 +8,9 @@
 ; gromacs/optimized/gmx_densorder.cpp.ll
 ; gromacs/optimized/hxprops.cpp.ll
 ; gromacs/optimized/sbdsdc.cpp.ll
-; gromacs/optimized/slasdt.cpp.ll
 ; gromacs/optimized/tune_pme.cpp.ll
 ; gromacs/optimized/updategroups.cpp.ll
 ; imgui/optimized/imgui.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; opencv/optimized/aruco_board.cpp.ll
 ; opencv/optimized/chessboard.cpp.ll
 ; opencv/optimized/crop_and_resize_layer.cpp.ll

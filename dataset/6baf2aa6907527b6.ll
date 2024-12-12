@@ -12,7 +12,7 @@ entry:
   ret i32 %5
 }
 
-; 14 occurrences:
+; 12 occurrences:
 ; icu/optimized/ucnvmbcs.ll
 ; linux/optimized/avc.ll
 ; linux/optimized/blk-iocost.ll
@@ -21,9 +21,7 @@ entry:
 ; linux/optimized/hwmon.ll
 ; linux/optimized/intel_display_trace.ll
 ; linux/optimized/iommu-traces.ll
-; linux/optimized/net-traces.ll
 ; linux/optimized/nfs4trace.ll
-; linux/optimized/nfstrace.ll
 ; linux/optimized/power-traces.ll
 ; linux/optimized/regmap.ll
 ; linux/optimized/sched.ll

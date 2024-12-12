@@ -7,7 +7,7 @@
 ; meshlab/optimized/miniz.c.ll
 ; php/optimized/rfc1867.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000cc(i32 %0, i32 %1) #0 {
+define i32 @func000000000000018c(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = icmp ne i32 %0, 0

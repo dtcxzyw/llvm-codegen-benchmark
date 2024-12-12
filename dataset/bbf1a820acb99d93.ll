@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000006aa(i32 %0, i32 %1) #0 {
+define i1 @func000000000000194a(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %0, -1137
   %3 = icmp slt i32 %0, -1085
@@ -16,7 +16,7 @@ entry:
 ; openblas/optimized/cblas_dgemm.c.ll
 ; openblas/optimized/cblas_dgemmt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000426(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 0
   %3 = add i32 %0, -115

@@ -1,5 +1,5 @@
 
-; 251 occurrences:
+; 252 occurrences:
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/wlnRead.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
@@ -251,6 +251,7 @@
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; wireshark/optimized/packet-dmp.c.ll
 ; z3/optimized/sat_aig_cuts.cpp.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i32 %0) #0 {
 entry:

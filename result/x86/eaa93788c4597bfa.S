@@ -10,12 +10,6 @@ func000000000000001b:                   # @func000000000000001b
 	cmovnsl	%esi, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000013:                   # @func0000000000000013
-	cmpl	$10, %edi
-	movl	$1, %eax
-	cmovael	%esi, %eax
-	addl	%edi, %eax
-	retq
 func0000000000000005:                   # @func0000000000000005
 	testl	%edi, %edi
 	cmovel	%edi, %esi

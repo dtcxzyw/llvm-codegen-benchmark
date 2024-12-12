@@ -6,7 +6,12 @@ func0000000000000011:                   # @func0000000000000011
 func0000000000000007:                   # @func0000000000000007
 	testb	%dl, %dl
 	cmovnel	%esi, %edi
-	leal	3(%rdi), %eax
+	leal	87(%rdi), %eax
+	retq
+func0000000000000005:                   # @func0000000000000005
+	testb	%dl, %dl
+	cmovnel	%esi, %edi
+	leal	-1(%rdi), %eax
 	retq
 func0000000000000010:                   # @func0000000000000010
 	cmpb	$26, %dl

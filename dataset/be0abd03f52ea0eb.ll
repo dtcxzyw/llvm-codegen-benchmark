@@ -23,7 +23,7 @@ define i32 @func0000000000000008(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
   %4 = shl i32 16, %3
-  %5 = or i32 %4, %1
+  %5 = or i32 %1, %4
   %6 = and i32 %5, %0
   ret i32 %6
 }
@@ -36,7 +36,7 @@ define i32 @func0000000000000004(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
   %4 = shl nuw i32 1, %3
-  %5 = or i32 %4, %1
+  %5 = or i32 %1, %4
   %6 = and i32 %5, %0
   ret i32 %6
 }

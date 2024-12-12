@@ -1,4 +1,4 @@
-func00000000000000aa:                   // @func00000000000000aa
+func000000000000014a:                   // @func000000000000014a
 // %bb.0:                               // %entry
 	sub	x8, x2, x1
 	cmp	x8, #0
@@ -6,7 +6,7 @@ func00000000000000aa:                   // @func00000000000000aa
 	cset	w0, gt
 	ret
                                         // -- End function
-func000000000000004a:                   // @func000000000000004a
+func000000000000008a:                   // @func000000000000008a
 // %bb.0:                               // %entry
 	sub	x8, x2, x1
 	cmp	x8, #4
@@ -15,7 +15,7 @@ func000000000000004a:                   // @func000000000000004a
 	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000016:                   // @func0000000000000016
+func0000000000000026:                   // @func0000000000000026
 // %bb.0:                               // %entry
 	sub	x8, x2, x1
 	cmp	x8, #8
@@ -23,7 +23,7 @@ func0000000000000016:                   // @func0000000000000016
 	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000044:                   // @func0000000000000044
+func0000000000000084:                   // @func0000000000000084
 // %bb.0:                               // %entry
 	sub	x8, x2, x1
 	cmp	x8, #32
@@ -32,7 +32,7 @@ func0000000000000044:                   // @func0000000000000044
 	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000088:                   // @func0000000000000088
+func0000000000000108:                   // @func0000000000000108
 // %bb.0:                               // %entry
 	sub	x8, x2, x1
 	cmp	x8, #63
@@ -41,7 +41,7 @@ func0000000000000088:                   // @func0000000000000088
 	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000066:                   // @func0000000000000066
+func00000000000000c6:                   // @func00000000000000c6
 // %bb.0:                               // %entry
 	sub	x8, x2, x1
 	cmp	x8, #4

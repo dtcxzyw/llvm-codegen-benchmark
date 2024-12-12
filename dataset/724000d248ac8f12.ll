@@ -8,13 +8,12 @@ entry:
   %4 = zext nneg i8 %3 to i32
   %5 = shl nuw nsw i32 %4, %1
   %6 = trunc i32 %5 to i8
-  %7 = or i8 %6, %0
+  %7 = or i8 %0, %6
   ret i8 %7
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_common_serializer.cpp.ll
-; linux/optimized/rsmisc.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000020(i8 %0, i32 %1, i8 %2) #0 {
 entry:
@@ -22,7 +21,7 @@ entry:
   %4 = zext nneg i8 %3 to i32
   %5 = shl i32 %4, %1
   %6 = trunc i32 %5 to i8
-  %7 = or i8 %6, %0
+  %7 = or i8 %0, %6
   ret i8 %7
 }
 
@@ -35,12 +34,11 @@ entry:
   %4 = zext nneg i8 %3 to i32
   %5 = shl nuw nsw i32 %4, %1
   %6 = trunc nuw i32 %5 to i8
-  %7 = or i8 %6, %0
+  %7 = or i8 %0, %6
   ret i8 %7
 }
 
-; 4 occurrences:
-; linux/optimized/rsmisc.ll
+; 3 occurrences:
 ; llvm/optimized/CodeGenRegisters.cpp.ll
 ; llvm/optimized/X86FoldTablesEmitter.cpp.ll
 ; llvm/optimized/X86InstrMappingEmitter.cpp.ll
@@ -51,7 +49,7 @@ entry:
   %4 = zext nneg i8 %3 to i32
   %5 = shl nuw i32 %4, %1
   %6 = trunc i32 %5 to i8
-  %7 = or i8 %6, %0
+  %7 = or i8 %0, %6
   ret i8 %7
 }
 

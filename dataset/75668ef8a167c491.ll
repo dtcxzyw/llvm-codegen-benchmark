@@ -8,13 +8,13 @@
 define ptr @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 12
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = inttoptr i64 %4 to ptr
   %6 = getelementptr nusw i8, ptr %5, i64 %0
   ret ptr %6
 }
 
-; 69 occurrences:
+; 67 occurrences:
 ; linux/optimized/ahash.ll
 ; linux/optimized/aio.ll
 ; linux/optimized/bio.ll
@@ -34,7 +34,6 @@ entry:
 ; linux/optimized/exec.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/gro.ll
-; linux/optimized/i915_cmd_parser.ll
 ; linux/optimized/i915_gem.ll
 ; linux/optimized/i915_gem_object.ll
 ; linux/optimized/i915_gem_shmem.ll
@@ -51,7 +50,6 @@ entry:
 ; linux/optimized/kexec_core.ll
 ; linux/optimized/libata-sff.ll
 ; linux/optimized/libfs.ll
-; linux/optimized/machine_kexec_64.ll
 ; linux/optimized/mballoc.ll
 ; linux/optimized/md-bitmap.ll
 ; linux/optimized/md.ll
@@ -100,9 +98,21 @@ entry:
 define ptr @func0000000000000030(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 12
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = inttoptr i64 %4 to ptr
   %6 = getelementptr i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 1 occurrences:
+; protobuf/optimized/generated_message_tctable_lite.cc.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000033(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %2, 3
+  %4 = add i64 %1, %3
+  %5 = inttoptr i64 %4 to ptr
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -112,7 +122,7 @@ entry:
 define ptr @func0000000000000032(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 3
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = inttoptr i64 %4 to ptr
   %6 = getelementptr nusw i8, ptr %5, i64 %0
   ret ptr %6

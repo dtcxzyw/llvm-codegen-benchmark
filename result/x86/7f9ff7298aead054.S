@@ -18,7 +18,7 @@ func0000000000000006:                   # @func0000000000000006
 	cmpl	%esi, %edi
 	setl	%al
 	retq
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	subl	%edx, %esi
 	cmpl	%esi, %edi
 	setl	%al
@@ -28,7 +28,7 @@ func000000000000000c:                   # @func000000000000000c
 	cmpl	%esi, %edi
 	setne	%al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	subl	%edx, %esi
 	cmpl	%esi, %edi
 	seta	%al

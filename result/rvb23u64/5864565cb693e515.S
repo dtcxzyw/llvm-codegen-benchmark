@@ -1,4 +1,4 @@
-func00000000000000fa:                   # @func00000000000000fa
+func00000000000000fb:                   # @func00000000000000fb
 	sext.w	a1, a1
 	sh3add	a0, a1, a0
 	sh1add	a1, a2, a2

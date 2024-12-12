@@ -58,7 +58,7 @@ func000000000000004c:                   # @func000000000000004c
 .LBB2_4:                                # %entry
 	ret
 func0000000000000022:                   # @func0000000000000022
-	flt.d	a0, fa0, fa1
+	flt.d	a0, fa1, fa0
 	beqz	a0, .LBB3_3
 	fli.d	fa5, 1.0
 	flt.d	a0, fa0, fa5

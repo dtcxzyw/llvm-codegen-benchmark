@@ -27,7 +27,7 @@ define i8 @func000000000000000c(i8 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = icmp ne i32 %3, 0
-  %5 = and i1 %4, %1
+  %5 = and i1 %1, %4
   %6 = select i1 %5, i8 1, i8 %0
   ret i8 %6
 }

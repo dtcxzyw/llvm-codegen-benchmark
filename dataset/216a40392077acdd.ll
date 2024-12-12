@@ -71,4 +71,16 @@ entry:
   ret i64 %6
 }
 
+; 1 occurrences:
+; meshlab/optimized/filter_screened_poisson.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000e(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = or disjoint i64 %1, %2
+  %4 = shl nuw nsw i64 %3, 5
+  %5 = and i64 %0, 31
+  %6 = or disjoint i64 %4, %5
+  ret i64 %6
+}
+
 attributes #0 = { nounwind }

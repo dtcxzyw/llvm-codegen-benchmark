@@ -23,11 +23,6 @@ func0000000000000000:                   # @func0000000000000000
 	shlq	$52, %rax
 	orq	%rdi, %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
-	movl	%esi, %eax
-	shlq	$52, %rax
-	orq	%rdi, %rax
-	retq
 func000000000000000d:                   # @func000000000000000d
 	movl	%esi, %eax
 	shlq	$56, %rax
@@ -36,6 +31,11 @@ func000000000000000d:                   # @func000000000000000d
 func000000000000000c:                   # @func000000000000000c
 	movl	%esi, %eax
 	shlq	$63, %rax
+	orq	%rdi, %rax
+	retq
+func0000000000000008:                   # @func0000000000000008
+	movl	%esi, %eax
+	shlq	$62, %rax
 	orq	%rdi, %rax
 	retq
 func0000000000000001:                   # @func0000000000000001

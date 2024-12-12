@@ -1,7 +1,6 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
-; flac/optimized/window.c.ll
 ; meshlab/optimized/apss.cpp.ll
 ; meshlab/optimized/fit_rotations_l1.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll

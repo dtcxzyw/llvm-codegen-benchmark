@@ -39,7 +39,6 @@
 ; grpc/optimized/chttp2_transport.cc.ll
 ; grpc/optimized/compression_filter.cc.ll
 ; grpc/optimized/legacy_compression_filter.cc.ll
-; hermes/optimized/NativeFormatting.cpp.ll
 ; hyperscan/optimized/ng_som.cpp.ll
 ; hyperscan/optimized/rose_build_add.cpp.ll
 ; icu/optimized/formatted_string_builder.ll
@@ -61,6 +60,7 @@
 ; llvm/optimized/AArch64Subtarget.cpp.ll
 ; llvm/optimized/AArch64TargetMachine.cpp.ll
 ; llvm/optimized/APINotesWriter.cpp.ll
+; llvm/optimized/APINotesYAMLCompiler.cpp.ll
 ; llvm/optimized/AccelTable.cpp.ll
 ; llvm/optimized/AddressSanitizer.cpp.ll
 ; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
@@ -114,6 +114,7 @@
 ; llvm/optimized/LLVMContext.cpp.ll
 ; llvm/optimized/LTOBackend.cpp.ll
 ; llvm/optimized/LegacyPassManager.cpp.ll
+; llvm/optimized/Lexer.cpp.ll
 ; llvm/optimized/LiveDebugValues.cpp.ll
 ; llvm/optimized/LiveDebugVariables.cpp.ll
 ; llvm/optimized/LoopAccessAnalysis.cpp.ll
@@ -138,7 +139,6 @@
 ; llvm/optimized/MemoryBuiltins.cpp.ll
 ; llvm/optimized/Metadata.cpp.ll
 ; llvm/optimized/ModuleSummaryAnalysis.cpp.ll
-; llvm/optimized/NativeFormatting.cpp.ll
 ; llvm/optimized/NativeTypeFunctionSig.cpp.ll
 ; llvm/optimized/PGOInstrumentation.cpp.ll
 ; llvm/optimized/PassBuilder.cpp.ll
@@ -207,7 +207,6 @@
 ; openjdk/optimized/jvmciCompilerToVMInit.ll
 ; openjdk/optimized/nmtDCmd.ll
 ; openjdk/optimized/xLargePages_linux.ll
-; openmpi/optimized/mpiext_rocm.ll
 ; openmpi/optimized/opal_info_support.ll
 ; openspiel/optimized/go_board.cc.ll
 ; openspiel/optimized/negotiation.cc.ll
@@ -262,6 +261,7 @@
 ; z3/optimized/hilbert_basis.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
 ; z3/optimized/spacer_context.cpp.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
 ; zxing/optimized/PDFDecoder.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i8 %1) #0 {
@@ -271,14 +271,12 @@ entry:
   ret i32 %3
 }
 
-; 32 occurrences:
+; 31 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
-; diesel-rs/optimized/462o5qgxgzqa9ugn.ll
 ; diesel-rs/optimized/6qvzky2suxi9qri.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; libquic/optimized/string_util.cc.ll
 ; llvm/optimized/BranchProbabilityInfo.cpp.ll
-; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/ParseOpenMP.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
@@ -287,7 +285,6 @@ entry:
 ; luau/optimized/ConstraintGenerator.cpp.ll
 ; luau/optimized/DataFlowGraph.cpp.ll
 ; luau/optimized/TypeInfer.cpp.ll
-; nix/optimized/nix-store.ll
 ; openusd/optimized/enum.cpp.ll
 ; openusd/optimized/patchBuilder.cpp.ll
 ; postgres/optimized/namespace.ll
@@ -304,6 +301,8 @@ entry:
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i8 %1) #0 {
 entry:

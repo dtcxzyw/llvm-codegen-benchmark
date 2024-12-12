@@ -8,7 +8,7 @@ func000000000000000c:                   # @func000000000000000c
 	retq
 .LCPI1_0:
 	.long	48                              # 0x30
-func0000000000000023:                   # @func0000000000000023
+func0000000000000043:                   # @func0000000000000043
 	vpcmpneqd	.LCPI1_0(%rip){1to8}, %ymm2, %k1
 	vorps	%ymm1, %ymm0, %ymm0 {%k1}
 	retq
@@ -23,7 +23,7 @@ func0000000000000008:                   # @func0000000000000008
 	retq
 .LCPI3_0:
 	.long	4094                            # 0xffe
-func0000000000000063:                   # @func0000000000000063
+func00000000000000c3:                   # @func00000000000000c3
 	vpcmpneqd	.LCPI3_0(%rip){1to8}, %ymm2, %k1
 	vorps	%ymm1, %ymm0, %ymm0 {%k1}
 	retq

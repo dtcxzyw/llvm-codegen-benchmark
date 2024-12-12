@@ -70,9 +70,9 @@ func0000000000000008:                   # @func0000000000000008
 	retq
 func000000000000000a:                   # @func000000000000000a
 	vpslld	$31, %xmm0, %xmm0
-	vpxor	%xmm2, %xmm2, %xmm2
-	vextracti128	$1, %ymm1, %xmm3
-	vpextrq	$1, %xmm3, %rcx
+	vpmovd2m	%xmm0, %k1
+	vextracti128	$1, %ymm1, %xmm0
+	vpextrq	$1, %xmm0, %rcx
 	movabsq	$1237940039285380275, %rsi      # imm = 0x112E0BE826D694B3
 	movq	%rcx, %rax
 	imulq	%rsi
@@ -82,8 +82,8 @@ func000000000000000a:                   # @func000000000000000a
 	addq	%rax, %rdx
 	imulq	$1000000000, %rdx, %rax         # imm = 0x3B9ACA00
 	subq	%rax, %rcx
-	vmovq	%rcx, %xmm4
-	vmovq	%xmm3, %rcx
+	vmovq	%rcx, %xmm2
+	vmovq	%xmm0, %rcx
 	movq	%rcx, %rax
 	imulq	%rsi
 	movq	%rdx, %rax
@@ -92,8 +92,8 @@ func000000000000000a:                   # @func000000000000000a
 	addq	%rax, %rdx
 	imulq	$1000000000, %rdx, %rax         # imm = 0x3B9ACA00
 	subq	%rax, %rcx
-	vmovq	%rcx, %xmm3
-	vpunpcklqdq	%xmm4, %xmm3, %xmm3     # xmm3 = xmm3[0],xmm4[0]
+	vmovq	%rcx, %xmm0
+	vpunpcklqdq	%xmm2, %xmm0, %xmm0     # xmm0 = xmm0[0],xmm2[0]
 	vpextrq	$1, %xmm1, %rcx
 	movq	%rcx, %rax
 	imulq	%rsi
@@ -103,7 +103,7 @@ func000000000000000a:                   # @func000000000000000a
 	addq	%rax, %rdx
 	imulq	$1000000000, %rdx, %rax         # imm = 0x3B9ACA00
 	subq	%rax, %rcx
-	vmovq	%rcx, %xmm4
+	vmovq	%rcx, %xmm2
 	vmovq	%xmm1, %rcx
 	movq	%rcx, %rax
 	imulq	%rsi
@@ -114,19 +114,18 @@ func000000000000000a:                   # @func000000000000000a
 	imulq	$1000000000, %rdx, %rax         # imm = 0x3B9ACA00
 	subq	%rax, %rcx
 	vmovq	%rcx, %xmm1
-	vpunpcklqdq	%xmm4, %xmm1, %xmm1     # xmm1 = xmm1[0],xmm4[0]
-	vinserti128	$1, %xmm3, %ymm1, %ymm1
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpcmpgtq	%ymm3, %ymm1, %k1
-	vpcmpgtd	%xmm0, %xmm2, %k0 {%k1}
+	vpunpcklqdq	%xmm2, %xmm1, %xmm1     # xmm1 = xmm1[0],xmm2[0]
+	vinserti128	$1, %xmm0, %ymm1, %ymm0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpgtq	%ymm1, %ymm0, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
 func0000000000000006:                   # @func0000000000000006
 	vpslld	$31, %xmm0, %xmm0
-	vpxor	%xmm2, %xmm2, %xmm2
-	vextracti128	$1, %ymm1, %xmm3
-	vpextrq	$1, %xmm3, %rcx
+	vpmovd2m	%xmm0, %k1
+	vextracti128	$1, %ymm1, %xmm0
+	vpextrq	$1, %xmm0, %rcx
 	movabsq	$1237940039285380275, %rsi      # imm = 0x112E0BE826D694B3
 	movq	%rcx, %rax
 	imulq	%rsi
@@ -136,8 +135,8 @@ func0000000000000006:                   # @func0000000000000006
 	addq	%rax, %rdx
 	imulq	$1000000000, %rdx, %rax         # imm = 0x3B9ACA00
 	subq	%rax, %rcx
-	vmovq	%rcx, %xmm4
-	vmovq	%xmm3, %rcx
+	vmovq	%rcx, %xmm2
+	vmovq	%xmm0, %rcx
 	movq	%rcx, %rax
 	imulq	%rsi
 	movq	%rdx, %rax
@@ -146,8 +145,8 @@ func0000000000000006:                   # @func0000000000000006
 	addq	%rax, %rdx
 	imulq	$1000000000, %rdx, %rax         # imm = 0x3B9ACA00
 	subq	%rax, %rcx
-	vmovq	%rcx, %xmm3
-	vpunpcklqdq	%xmm4, %xmm3, %xmm3     # xmm3 = xmm3[0],xmm4[0]
+	vmovq	%rcx, %xmm0
+	vpunpcklqdq	%xmm2, %xmm0, %xmm0     # xmm0 = xmm0[0],xmm2[0]
 	vpextrq	$1, %xmm1, %rcx
 	movq	%rcx, %rax
 	imulq	%rsi
@@ -157,7 +156,7 @@ func0000000000000006:                   # @func0000000000000006
 	addq	%rax, %rdx
 	imulq	$1000000000, %rdx, %rax         # imm = 0x3B9ACA00
 	subq	%rax, %rcx
-	vmovq	%rcx, %xmm4
+	vmovq	%rcx, %xmm2
 	vmovq	%xmm1, %rcx
 	movq	%rcx, %rax
 	imulq	%rsi
@@ -168,10 +167,10 @@ func0000000000000006:                   # @func0000000000000006
 	imulq	$1000000000, %rdx, %rax         # imm = 0x3B9ACA00
 	subq	%rax, %rcx
 	vmovq	%rcx, %xmm1
-	vpunpcklqdq	%xmm4, %xmm1, %xmm1     # xmm1 = xmm1[0],xmm4[0]
-	vinserti128	$1, %xmm3, %ymm1, %ymm1
-	vpmovq2m	%ymm1, %k1
-	vpcmpgtd	%xmm0, %xmm2, %k0 {%k1}
+	vpunpcklqdq	%xmm2, %xmm1, %xmm1     # xmm1 = xmm1[0],xmm2[0]
+	vinserti128	$1, %xmm0, %ymm1, %ymm0
+	vpxor	%xmm1, %xmm1, %xmm1
+	vpcmpgtq	%ymm0, %ymm1, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

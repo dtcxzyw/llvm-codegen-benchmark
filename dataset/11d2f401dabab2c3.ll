@@ -1,8 +1,7 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; openjdk/optimized/cmsps2.ll
 ; php/optimized/plain_wrapper.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
 ; redis/optimized/networking.ll
 ; ruby/optimized/regparse.ll
 ; Function Attrs: nounwind

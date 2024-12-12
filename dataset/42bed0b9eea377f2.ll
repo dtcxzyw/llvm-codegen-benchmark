@@ -1,11 +1,12 @@
 
-; 40 occurrences:
+; 41 occurrences:
 ; ceres/optimized/dense_qr.cc.ll
 ; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
 ; ceres/optimized/line_search_direction.cc.ll
 ; ceres/optimized/line_search_minimizer.cc.ll
 ; ceres/optimized/linear_least_squares_problems.cc.ll
 ; ceres/optimized/normal_prior.cc.ll
+; ceres/optimized/polynomial.cc.ll
 ; folly/optimized/EventBaseLocal.cpp.ll
 ; folly/optimized/FunctionScheduler.cpp.ll
 ; folly/optimized/Request.cpp.ll
@@ -49,7 +50,8 @@ entry:
   ret i64 %3
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/approximately_equals.ll
 ; hdf5/optimized/H5Znbit.c.ll
 ; minetest/optimized/database.cpp.ll
 ; Function Attrs: nounwind

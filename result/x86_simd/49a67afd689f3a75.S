@@ -10,7 +10,7 @@
 .LCPI0_1:
 	.long	2                               # 0x2
 .LCPI0_2:
-	.long	4                               # 0x4
+	.long	64                              # 0x40
 .LCPI0_3:
 	.short	1                               # 0x1
 	.short	1                               # 0x1

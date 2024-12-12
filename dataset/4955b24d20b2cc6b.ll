@@ -1,5 +1,5 @@
 
-; 223 occurrences:
+; 237 occurrences:
 ; abc/optimized/bmcUnroll.c.ll
 ; abc/optimized/cuddApprox.c.ll
 ; abc/optimized/cuddEssent.c.ll
@@ -55,7 +55,6 @@
 ; linux/optimized/intel_bw.ll
 ; linux/optimized/intel_cx0_phy.ll
 ; linux/optimized/intel_pstate.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mempolicy.ll
 ; linux/optimized/nls_base.ll
@@ -120,6 +119,8 @@
 ; llvm/optimized/X86TileConfig.cpp.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_obj_style.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; mold/optimized/arch-ppc64v1.cc.ll
 ; mold/optimized/arch-ppc64v2.cc.ll
@@ -221,6 +222,19 @@
 ; wireshark/optimized/packet-umts_rlc.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/ssl.c.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1b5ll0cnnio0vvxmolgooij5i.ll
+; zed-rs/optimized/1wbwq1jcywou5oe0v0ig8uk8s.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/5qf95fx0pqn6duuq4hkly3hl0.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/cmxsagf2j897pis1fg8tnwnp3.ll
 ; zlib/optimized/infback.c.ll
 ; zlib/optimized/inflate.c.ll
 ; Function Attrs: nounwind
@@ -231,7 +245,7 @@ entry:
   ret i16 %2
 }
 
-; 37 occurrences:
+; 39 occurrences:
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
@@ -269,6 +283,8 @@ entry:
 ; mold/optimized/output-chunks.cc.RV32LE.cc.ll
 ; mold/optimized/output-chunks.cc.SH4.cc.ll
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000003(i64 %0) #0 {
 entry:

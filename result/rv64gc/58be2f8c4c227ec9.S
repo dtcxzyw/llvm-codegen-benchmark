@@ -107,9 +107,16 @@ func0000000000000080:                   # @func0000000000000080
 	ret
 func0000000000000085:                   # @func0000000000000085
 	andi	a2, a2, 255
-	sltiu	a2, a2, 173
-	addi	a2, a2, -1
-	andi	a2, a2, -3
+	li	a3, 143
+	bltu	a3, a2, .LBB12_2
+	lui	a2, 1048571
+	addi	a2, a2, 976
+	add	a0, a0, a1
+	addw	a0, a0, a2
+	ret
+.LBB12_2:
+	lui	a2, 1048564
+	addi	a2, a2, -1328
 	add	a0, a0, a1
 	addw	a0, a0, a2
 	ret

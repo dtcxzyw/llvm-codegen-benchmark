@@ -1,5 +1,5 @@
 
-; 66 occurrences:
+; 67 occurrences:
 ; abc/optimized/acecRe.c.ll
 ; abc/optimized/cbaReadVer.c.ll
 ; abc/optimized/giaBalAig.c.ll
@@ -14,6 +14,7 @@
 ; abc/optimized/wlnWlc.c.ll
 ; bullet3/optimized/btDeformableBodySolver.ll
 ; bullet3/optimized/btSoftBody.ll
+; lvgl/optimized/lv_chart.ll
 ; openmpi/optimized/coll_base_allgather.ll
 ; openmpi/optimized/coll_base_allgatherv.ll
 ; pbrt-v4/optimized/camera.cpp.ll

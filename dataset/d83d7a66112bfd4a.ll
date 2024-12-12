@@ -8,7 +8,7 @@
 define i64 @func00000000000000cf(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %.v = select i1 %4, i64 2, i64 1
   %5 = shl nuw nsw i64 %1, %.v
   ret i64 %5

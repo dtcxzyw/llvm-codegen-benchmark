@@ -1,8 +1,9 @@
 
-; 56 occurrences:
+; 57 occurrences:
 ; cpython/optimized/_decimal.ll
 ; duckdb/optimized/ub_duckdb_main.cpp.ll
 ; libevent/optimized/http.c.ll
+; lvgl/optimized/lv_svg_parser.ll
 ; nanosvg/optimized/nanosvg.ll
 ; postgres/optimized/ruleutils.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
@@ -57,7 +58,7 @@
 ; pybind11/optimized/test_vector_unique_ptr_member.cpp.ll
 ; pybind11/optimized/test_virtual_functions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000184(i8 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294983169
   %3 = icmp ne i64 %2, 0
@@ -66,17 +67,18 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; linux/optimized/dump_pagetables.ll
 ; linux/optimized/scsi_scan.ll
 ; linux/optimized/sta_info.ll
+; lvgl/optimized/lv_flex.ll
 ; minetest/optimized/gameui.cpp.ll
 ; php/optimized/zend_jit.ll
 ; protobuf/optimized/generated_message_tctable_gen.cc.ll
 ; quickjs/optimized/quickjs.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i8 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i8 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
   %3 = icmp eq i64 %2, 0
@@ -92,7 +94,7 @@ entry:
 ; spike/optimized/f16_mul.ll
 ; spike/optimized/f16_rem.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000181(i8 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1
   %3 = icmp ne i64 %2, 0
@@ -103,13 +105,13 @@ entry:
 
 ; 6 occurrences:
 ; linux/optimized/initramfs.ll
-; linux/optimized/percpu-refcount.ll
 ; llvm/optimized/CGObjC.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
+; lvgl/optimized/lv_flex.ll
 ; qemu/optimized/target_riscv_pmp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i8 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1
   %3 = icmp eq i64 %2, 0
@@ -122,7 +124,7 @@ entry:
 ; abseil-cpp/optimized/time.cc.ll
 ; abseil-cpp/optimized/time_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i8 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i8 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 3
   %3 = icmp eq i64 %2, 0
@@ -137,7 +139,7 @@ entry:
 ; protobuf/optimized/generated_message_tctable_gen.cc.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i8 %0, i64 %1) #0 {
+define i1 @func000000000000018c(i8 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1
   %3 = icmp ne i64 %2, 0
@@ -150,7 +152,7 @@ entry:
 ; eastl/optimized/TestFixedString.cpp.ll
 ; eastl/optimized/TestString.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i8 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 9223372036854775807
   %3 = icmp eq i64 %2, 63
@@ -163,10 +165,10 @@ entry:
 ; eastl/optimized/TestFixedString.cpp.ll
 ; eastl/optimized/TestString.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000306(i8 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 9223372036854775806
-  %3 = icmp ugt i64 %2, 125
+  %3 = icmp samesign ugt i64 %2, 125
   %4 = icmp slt i8 %0, 0
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
@@ -175,7 +177,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestString.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000186(i8 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 9223372036854775776
   %3 = icmp ne i64 %2, 0

@@ -11,18 +11,17 @@
 define i16 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 4
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = trunc nuw nsw i32 %3 to i16
   ret i16 %4
 }
 
-; 42 occurrences:
+; 41 occurrences:
 ; darktable/optimized/PanasonicV6Decompressor.cpp.ll
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
 ; icu/optimized/ustrtrns.ll
 ; libevent/optimized/poll.c.ll
 ; libquic/optimized/error_correction.c.ll
-; libzmq/optimized/zmq.cpp.ll
 ; linux/optimized/aspm.ll
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/drm_format_helper.ll
@@ -63,12 +62,12 @@ entry:
 define i16 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 4
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = trunc nuw nsw i32 %3 to i16
   ret i16 %4
 }
 
-; 23 occurrences:
+; 24 occurrences:
 ; arrow/optimized/float16.cc.ll
 ; git/optimized/read-cache.ll
 ; grpc/optimized/json_writer.cc.ll
@@ -92,16 +91,17 @@ entry:
 ; qemu/optimized/hw_pci_pcie.c.ll
 ; qemu/optimized/hw_sd_sd.c.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1023
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = trunc nuw i32 %3 to i16
   ret i16 %4
 }
 
-; 34 occurrences:
+; 33 occurrences:
 ; icu/optimized/umutablecptrie.ll
 ; ocio/optimized/CPUProcessor.cpp.ll
 ; ocio/optimized/CTFTransform.cpp.ll
@@ -126,7 +126,6 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -147,7 +146,6 @@ entry:
 
 ; 34 occurrences:
 ; abc/optimized/kitDsd.c.ll
-; assimp/optimized/BlenderScene.cpp.ll
 ; assimp/optimized/zip.c.ll
 ; cpython/optimized/unicodeobject.ll
 ; darktable/optimized/Cr2Decompressor.cpp.ll
@@ -168,6 +166,7 @@ entry:
 ; luajit/optimized/lj_opt_narrow_dyn.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
+; lvgl/optimized/lv_color.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; node/optimized/idna.ll
@@ -184,12 +183,12 @@ entry:
 define i16 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = trunc i32 %3 to i16
   ret i16 %4
 }
 
-; 44 occurrences:
+; 43 occurrences:
 ; faiss/optimized/IndexRowwiseMinMax.cpp.ll
 ; faiss/optimized/ScalarQuantizer.cpp.ll
 ; linux/optimized/acct.ll
@@ -216,7 +215,6 @@ entry:
 ; openusd/optimized/stbImage.cpp.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -238,7 +236,7 @@ entry:
 define i16 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 32768
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = trunc i32 %3 to i16
   ret i16 %4
 }

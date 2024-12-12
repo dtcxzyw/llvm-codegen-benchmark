@@ -1,4 +1,4 @@
-func0000000000000042:                   # @func0000000000000042
+func0000000000000082:                   # @func0000000000000082
 	cmpq	$20, %rdx
 	sete	%cl
 	orb	%sil, %cl
@@ -6,7 +6,7 @@ func0000000000000042:                   # @func0000000000000042
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000210:                   # @func0000000000000210
+func0000000000000410:                   # @func0000000000000410
 	shrq	$32, %rdx
 	setne	%cl
 	cmpl	$32768, %edi                    # imm = 0x8000
@@ -14,7 +14,7 @@ func0000000000000210:                   # @func0000000000000210
 	orb	%sil, %al
 	orb	%cl, %al
 	retq
-func000000000000018c:                   # @func000000000000018c
+func000000000000030c:                   # @func000000000000030c
 	testq	%rdx, %rdx
 	sets	%cl
 	orb	%sil, %cl
@@ -22,7 +22,7 @@ func000000000000018c:                   # @func000000000000018c
 	sets	%al
 	orb	%cl, %al
 	retq
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	testq	%rdx, %rdx
 	sete	%cl
 	orb	%sil, %cl
@@ -30,7 +30,7 @@ func000000000000004c:                   # @func000000000000004c
 	sets	%al
 	orb	%cl, %al
 	retq
-func0000000000000058:                   # @func0000000000000058
+func0000000000000098:                   # @func0000000000000098
 	testq	%rdx, %rdx
 	sete	%cl
 	orb	%dil, %cl
@@ -38,7 +38,7 @@ func0000000000000058:                   # @func0000000000000058
 	setle	%al
 	orb	%cl, %al
 	retq
-func000000000000030c:                   # @func000000000000030c
+func000000000000060c:                   # @func000000000000060c
 	testq	%rdx, %rdx
 	setne	%cl
 	orb	%sil, %cl
@@ -46,7 +46,7 @@ func000000000000030c:                   # @func000000000000030c
 	sets	%al
 	orb	%cl, %al
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	testq	%rdx, %rdx
 	sete	%cl
 	orb	%sil, %cl
@@ -54,7 +54,7 @@ func0000000000000048:                   # @func0000000000000048
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	testq	%rdx, %rdx
 	sete	%cl
 	orb	%dil, %cl
@@ -62,7 +62,7 @@ func0000000000000044:                   # @func0000000000000044
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000330:                   # @func0000000000000330
+func0000000000000630:                   # @func0000000000000630
 	cmpq	$4, %rdx
 	setne	%cl
 	orb	%dil, %cl
@@ -70,7 +70,7 @@ func0000000000000330:                   # @func0000000000000330
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000000190:                   # @func0000000000000190
+func0000000000000330:                   # @func0000000000000330
 	testq	%rdx, %rdx
 	sets	%cl
 	orb	%sil, %cl
@@ -78,7 +78,7 @@ func0000000000000190:                   # @func0000000000000190
 	setae	%al
 	orb	%cl, %al
 	retq
-func0000000000000304:                   # @func0000000000000304
+func0000000000000604:                   # @func0000000000000604
 	testq	%rdx, %rdx
 	setne	%cl
 	orb	%dil, %cl
@@ -86,7 +86,7 @@ func0000000000000304:                   # @func0000000000000304
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000102:                   # @func0000000000000102
+func0000000000000202:                   # @func0000000000000202
 	cmpq	$6, %rdx
 	setb	%cl
 	orb	%sil, %cl
@@ -94,7 +94,7 @@ func0000000000000102:                   # @func0000000000000102
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000050:                   # @func0000000000000050
+func0000000000000090:                   # @func0000000000000090
 	testq	%rdx, %rdx
 	sete	%cl
 	orb	%dil, %cl
@@ -102,7 +102,7 @@ func0000000000000050:                   # @func0000000000000050
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000302:                   # @func0000000000000302
+func0000000000000602:                   # @func0000000000000602
 	cmpq	$1, %rdx
 	setne	%cl
 	orb	%sil, %cl
@@ -110,7 +110,7 @@ func0000000000000302:                   # @func0000000000000302
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000218:                   # @func0000000000000218
+func0000000000000418:                   # @func0000000000000418
 	shrq	$32, %rdx
 	setne	%cl
 	cmpl	$1, %edi
@@ -118,7 +118,15 @@ func0000000000000218:                   # @func0000000000000218
 	orb	%sil, %al
 	orb	%cl, %al
 	retq
-func0000000000000318:                   # @func0000000000000318
+func000000000000050c:                   # @func000000000000050c
+	cmpq	$1073741823, %rdx               # imm = 0x3FFFFFFF
+	setge	%cl
+	orb	%sil, %cl
+	cmpl	$-1073741822, %edi              # imm = 0xC0000002
+	setl	%al
+	orb	%cl, %al
+	retq
+func0000000000000618:                   # @func0000000000000618
 	testq	%rdx, %rdx
 	setne	%cl
 	orb	%sil, %cl
@@ -126,7 +134,7 @@ func0000000000000318:                   # @func0000000000000318
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000000068:                   # @func0000000000000068
+func00000000000000a8:                   # @func00000000000000a8
 	testq	%rdx, %rdx
 	sete	%cl
 	orb	%dil, %cl
@@ -134,15 +142,7 @@ func0000000000000068:                   # @func0000000000000068
 	setns	%al
 	orb	%cl, %al
 	retq
-func0000000000000228:                   # @func0000000000000228
-	cmpq	$4, %rdx
-	setae	%cl
-	orb	%dil, %cl
-	testl	%esi, %esi
-	setns	%al
-	orb	%cl, %al
-	retq
-func0000000000000070:                   # @func0000000000000070
+func00000000000000b0:                   # @func00000000000000b0
 	testq	%rdx, %rdx
 	sete	%cl
 	orb	%dil, %cl
@@ -150,7 +150,7 @@ func0000000000000070:                   # @func0000000000000070
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000000182:                   # @func0000000000000182
+func0000000000000302:                   # @func0000000000000302
 	testq	%rdx, %rdx
 	sets	%cl
 	orb	%sil, %cl
@@ -158,7 +158,7 @@ func0000000000000182:                   # @func0000000000000182
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000308:                   # @func0000000000000308
+func0000000000000608:                   # @func0000000000000608
 	testq	%rdx, %rdx
 	setne	%cl
 	orb	%sil, %cl

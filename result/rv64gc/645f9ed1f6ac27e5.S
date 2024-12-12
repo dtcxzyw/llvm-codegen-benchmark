@@ -28,21 +28,18 @@ func0000000000000006:                   # @func0000000000000006
 	andi	a0, a0, 1
 	addi	a0, a0, 1
 	ret
+func0000000000000004:                   # @func0000000000000004
+	sext.w	a1, a1
+	sltiu	a1, a1, 3
+	or	a0, a0, a1
+	andi	a0, a0, 1
+	addi	a0, a0, -1
+	andi	a0, a0, 7
+	ret
 func000000000000000a:                   # @func000000000000000a
 	sext.w	a1, a1
 	sgtz	a1, a1
 	or	a0, a0, a1
 	andi	a0, a0, 1
 	addi	a0, a0, 1
-	ret
-func0000000000000004:                   # @func0000000000000004
-	sext.w	a1, a1
-	sltiu	a1, a1, 32
-	or	a0, a0, a1
-	andi	a0, a0, 1
-	bnez	a0, .LBB4_2
-	li	a0, 1
-	ret
-.LBB4_2:
-	li	a0, 32
 	ret

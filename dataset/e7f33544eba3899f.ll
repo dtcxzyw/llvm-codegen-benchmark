@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 21 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; cmake/optimized/deflate.c.ll
 ; cmake/optimized/fse_compress.c.ll
@@ -18,7 +18,6 @@
 ; qemu/optimized/block_qed-table.c.ll
 ; wireshark/optimized/snoop.c.ll
 ; xgboost/optimized/recordio.cc.ll
-; z3/optimized/watch_list.cpp.ll
 ; zlib/optimized/deflate.c.ll
 ; zstd/optimized/fse_compress.c.ll
 ; zstd/optimized/zstd_compress_sequences.c.ll
@@ -49,7 +48,8 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/to_chars.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; linux/optimized/slub.ll
 ; openjdk/optimized/sharedRuntimeTrig.ll

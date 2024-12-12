@@ -11,7 +11,6 @@
 ; luau/optimized/lvmexecute.cpp.ll
 ; luau/optimized/lvmutils.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; msdfgen/optimized/MSDFErrorCorrection.cpp.ll
 ; msdfgen/optimized/sdf-error-estimation.cpp.ll
@@ -22,6 +21,7 @@
 ; openusd/optimized/conformWindow.cpp.ll
 ; openusd/optimized/framing.cpp.ll
 ; raylib/optimized/rcore.c.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(float %0, float %1) #0 {
 entry:

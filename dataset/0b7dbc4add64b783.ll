@@ -1,5 +1,5 @@
 
-; 134 occurrences:
+; 133 occurrences:
 ; abc/optimized/cmdPlugin.c.ll
 ; actix-rs/optimized/fpsycltpd003ini.ll
 ; arrow/optimized/api_scalar.cc.ll
@@ -52,7 +52,6 @@
 ; linux/optimized/hid-sony.ll
 ; linux/optimized/rx.ll
 ; linux/optimized/tx.ll
-; linux/optimized/uthex.ll
 ; llama.cpp/optimized/ggml-quants.c.ll
 ; llvm/optimized/AsmParser.cpp.ll
 ; llvm/optimized/BuildID.cpp.ll
@@ -138,7 +137,7 @@
 define i8 @func0000000000000000(i8 %0, i8 %1) #0 {
 entry:
   %2 = shl i8 %1, 4
-  %3 = or i8 %2, %0
+  %3 = or i8 %0, %2
   ret i8 %3
 }
 
@@ -156,12 +155,13 @@ entry:
 define i8 @func0000000000000006(i8 %0, i8 %1) #0 {
 entry:
   %2 = shl nuw nsw i8 %1, 3
-  %3 = or i8 %2, %0
+  %3 = or i8 %0, %2
   ret i8 %3
 }
 
-; 73 occurrences:
+; 74 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; git/optimized/date.ll
 ; git/optimized/receive-pack.ll
@@ -171,7 +171,6 @@ entry:
 ; libquic/optimized/quic_framer.cc.ll
 ; lief/optimized/psa_crypto.c.ll
 ; lief/optimized/ssl_msg.c.ll
-; linux/optimized/8250_exar.ll
 ; linux/optimized/8250_pci.ll
 ; linux/optimized/blk-flush.ll
 ; linux/optimized/boot.ll
@@ -197,12 +196,13 @@ entry:
 ; llvm/optimized/BitstreamReader.cpp.ll
 ; llvm/optimized/Decl.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
+; lvgl/optimized/lv_anim.ll
+; lvgl/optimized/lv_obj_draw.ll
+; lvgl/optimized/lv_span.ll
 ; minetest/optimized/CSkinnedMesh.cpp.ll
 ; minetest/optimized/nodedef.cpp.ll
 ; minetest/optimized/player.cpp.ll
 ; minetest/optimized/unit_sao.cpp.ll
-; nuttx/optimized/pthread_mutexattr_setprotocol.c.ll
-; nuttx/optimized/pthread_mutexattr_settype.c.ll
 ; opencv/optimized/orb.cpp.ll
 ; openjdk/optimized/cpCache.ll
 ; openssl/optimized/libcommon-lib-ciphercommon.ll
@@ -271,11 +271,11 @@ entry:
 define i8 @func0000000000000004(i8 %0, i8 %1) #0 {
 entry:
   %2 = shl nuw i8 %1, 1
-  %3 = or i8 %2, %0
+  %3 = or i8 %0, %2
   ret i8 %3
 }
 
-; 127 occurrences:
+; 125 occurrences:
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/wlcStdin.c.ll
 ; arrow/optimized/base64.cpp.ll
@@ -302,7 +302,6 @@ entry:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; libevent/optimized/bufferevent_ssl.c.ll
 ; libevent/optimized/event_tagging.c.ll
-; libquic/optimized/spake25519.c.ll
 ; libwebp/optimized/alpha_processing.c.ll
 ; lief/optimized/cmac.c.ll
 ; lightgbm/optimized/tree.cpp.ll
@@ -322,7 +321,6 @@ entry:
 ; linux/optimized/keyboard.ll
 ; linux/optimized/printk.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
-; linux/optimized/rpl.ll
 ; linux/optimized/scsi_error.ll
 ; linux/optimized/scsi_lib.ll
 ; linux/optimized/tdls.ll
@@ -407,11 +405,11 @@ entry:
 define i8 @func0000000000000001(i8 %0, i8 %1) #0 {
 entry:
   %2 = shl i8 %1, 6
-  %3 = or disjoint i8 %2, %0
+  %3 = or disjoint i8 %0, %2
   ret i8 %3
 }
 
-; 32 occurrences:
+; 41 occurrences:
 ; actix-rs/optimized/4oxclimtnmaa5ft9.ll
 ; cpython/optimized/binascii.ll
 ; cpython/optimized/bytesobject.ll
@@ -444,11 +442,20 @@ entry:
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; wireshark/optimized/blf.c.ll
 ; wireshark/optimized/netscreen.c.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/3xn4w3qarvbzl2jkwavm0419t.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/4hgzf672qwd8x8ke1407yey6m.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000005(i8 %0, i8 %1) #0 {
 entry:
   %2 = shl nuw i8 %1, 7
-  %3 = or disjoint i8 %2, %0
+  %3 = or disjoint i8 %0, %2
   ret i8 %3
 }
 
@@ -460,7 +467,7 @@ entry:
 define i8 @func0000000000000003(i8 %0, i8 %1) #0 {
 entry:
   %2 = shl nsw i8 %1, 4
-  %3 = or disjoint i8 %2, %0
+  %3 = or disjoint i8 %0, %2
   ret i8 %3
 }
 

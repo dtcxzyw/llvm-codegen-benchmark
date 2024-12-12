@@ -1,4 +1,4 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	subw	a1, a1, a2
 	slti	a1, a1, 65
 	xori	a1, a1, 1
@@ -12,10 +12,4 @@ func000000000000000a:                   # @func000000000000000a
 	sltu	a1, a1, a2
 	not	a0, a0
 	and	a0, a0, a1
-	ret
-func0000000000000051:                   # @func0000000000000051
-	subw	a1, a1, a2
-	addi	a1, a1, -24
-	seqz	a1, a1
-	or	a0, a0, a1
 	ret

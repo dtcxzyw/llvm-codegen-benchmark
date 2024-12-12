@@ -56,25 +56,24 @@ func000000000000000c:                   # @func000000000000000c
 	vpbroadcastd	.LCPI2_2(%rip), %ymm0 {%k1} # ymm0 {%k1} = [212,212,212,212,212,212,212,212]
 	retq
 .LCPI3_0:
-	.short	8                               # 0x8
-	.short	8                               # 0x8
-	.short	8                               # 0x8
-	.short	8                               # 0x8
-	.short	8                               # 0x8
-	.short	8                               # 0x8
-	.short	8                               # 0x8
-	.short	8                               # 0x8
+	.short	11                              # 0xb
+	.short	11                              # 0xb
+	.short	11                              # 0xb
+	.short	11                              # 0xb
+	.short	11                              # 0xb
+	.short	11                              # 0xb
+	.short	11                              # 0xb
+	.short	11                              # 0xb
 .LCPI3_1:
-	.long	1                               # 0x1
+	.long	32768                           # 0x8000
 .LCPI3_2:
-	.long	234881025                       # 0xe000001
-.LCPI3_3:
-	.long	1040187393                      # 0x3e000001
+	.long	16384                           # 0x4000
 func0000000000000008:                   # @func0000000000000008
 	vpsllw	$15, %xmm0, %xmm0
-	vpmovw2m	%xmm0, %k1
-	vpcmpnleuw	.LCPI3_0(%rip), %xmm1, %k2
-	vpbroadcastd	.LCPI3_1(%rip), %ymm0   # ymm0 = [1,1,1,1,1,1,1,1]
-	vpbroadcastd	.LCPI3_2(%rip), %ymm0 {%k2} # ymm0 {%k2} = [234881025,234881025,234881025,234881025,234881025,234881025,234881025,234881025]
-	vpbroadcastd	.LCPI3_3(%rip), %ymm0 {%k1} # ymm0 {%k1} = [1040187393,1040187393,1040187393,1040187393,1040187393,1040187393,1040187393,1040187393]
+	vpmovw2m	%xmm0, %k0
+	vpcmpnleuw	.LCPI3_0(%rip), %xmm1, %k1
+	vpbroadcastd	.LCPI3_1(%rip), %ymm0   # ymm0 = [32768,32768,32768,32768,32768,32768,32768,32768]
+	vpbroadcastd	.LCPI3_2(%rip), %ymm0 {%k1} # ymm0 {%k1} = [16384,16384,16384,16384,16384,16384,16384,16384]
+	knotb	%k0, %k1
+	vmovdqa32	%ymm0, %ymm0 {%k1} {z}
 	retq

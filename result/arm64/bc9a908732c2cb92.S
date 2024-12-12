@@ -1,213 +1,81 @@
+.LCPI0_0:
+	.xword	0x3ff028f5c28f5c29              // double 1.01
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	sshll	v6.2d, v4.2s, #0
-	sshll2	v4.2d, v4.4s, #0
-	mov	x8, #23593                      // =0x5c29
-	movk	x8, #49807, lsl #16
-	movk	x8, #10485, lsl #32
-	scvtf	v4.2d, v4.2d
-	scvtf	v6.2d, v6.2d
-	movk	x8, #16368, lsl #48
-	fdiv	v1.2d, v4.2d, v1.2d
-	sshll2	v4.2d, v5.4s, #0
-	scvtf	v4.2d, v4.2d
-	fdiv	v3.2d, v4.2d, v3.2d
-	sshll	v4.2d, v5.2s, #0
-	scvtf	v4.2d, v4.2d
-	fdiv	v0.2d, v6.2d, v0.2d
-	fdiv	v2.2d, v4.2d, v2.2d
-	dup	v4.2d, x8
-	fcmgt	v3.2d, v4.2d, v3.2d
-	fcmgt	v1.2d, v4.2d, v1.2d
-	fcmgt	v0.2d, v4.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	fcmgt	v2.2d, v4.2d, v2.2d
-	uzp1	v2.4s, v2.4s, v3.4s
-	uzp1	v0.8h, v0.8h, v2.8h
-	xtn	v0.8b, v0.8h
+	scvtf	d1, w0
+	adrp	x8, .LCPI0_0
+	fdiv	d0, d1, d0
+	ldr	d1, [x8, :lo12:.LCPI0_0]
+	fcmp	d0, d1
+	cset	w0, mi
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	sshll	v6.2d, v4.2s, #0
-	sshll2	v4.2d, v4.4s, #0
+	scvtf	d1, w0
 	mov	x8, #7378697629483820646        // =0x6666666666666666
 	movk	x8, #16358, lsl #48
-	scvtf	v4.2d, v4.2d
-	scvtf	v6.2d, v6.2d
-	fdiv	v1.2d, v4.2d, v1.2d
-	sshll2	v4.2d, v5.4s, #0
-	scvtf	v4.2d, v4.2d
-	fdiv	v3.2d, v4.2d, v3.2d
-	sshll	v4.2d, v5.2s, #0
-	scvtf	v4.2d, v4.2d
-	fdiv	v0.2d, v6.2d, v0.2d
-	fdiv	v2.2d, v4.2d, v2.2d
-	dup	v4.2d, x8
-	fcmge	v3.2d, v3.2d, v4.2d
-	fcmge	v1.2d, v1.2d, v4.2d
-	fcmge	v0.2d, v0.2d, v4.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	fcmge	v2.2d, v2.2d, v4.2d
-	uzp1	v2.4s, v2.4s, v3.4s
-	uzp1	v0.8h, v0.8h, v2.8h
-	mvn	v0.16b, v0.16b
-	xtn	v0.8b, v0.8h
+	fdiv	d0, d1, d0
+	fmov	d1, x8
+	fcmp	d0, d1
+	cset	w0, lt
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	sshll	v6.2d, v4.2s, #0
-	sshll2	v4.2d, v4.4s, #0
-	scvtf	v4.2d, v4.2d
-	scvtf	v6.2d, v6.2d
-	fdiv	v1.2d, v4.2d, v1.2d
-	sshll2	v4.2d, v5.4s, #0
-	scvtf	v4.2d, v4.2d
-	fdiv	v3.2d, v4.2d, v3.2d
-	sshll	v4.2d, v5.2s, #0
-	scvtf	v4.2d, v4.2d
-	fdiv	v0.2d, v6.2d, v0.2d
-	fdiv	v2.2d, v4.2d, v2.2d
-	fmov	v4.2d, #-1.00000000
-	fcmeq	v3.2d, v3.2d, v4.2d
-	fcmeq	v1.2d, v1.2d, v4.2d
-	fcmeq	v0.2d, v0.2d, v4.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	fcmeq	v2.2d, v2.2d, v4.2d
-	uzp1	v2.4s, v2.4s, v3.4s
-	uzp1	v0.8h, v0.8h, v2.8h
-	xtn	v0.8b, v0.8h
+	scvtf	d1, w0
+	fdiv	d0, d1, d0
+	fmov	d1, #-1.00000000
+	fcmp	d0, d1
+	cset	w0, eq
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	sshll	v6.2d, v4.2s, #0
-	sshll2	v4.2d, v4.4s, #0
-	scvtf	v4.2d, v4.2d
-	scvtf	v6.2d, v6.2d
-	fdiv	v1.2d, v4.2d, v1.2d
-	sshll2	v4.2d, v5.4s, #0
-	scvtf	v4.2d, v4.2d
-	fdiv	v3.2d, v4.2d, v3.2d
-	sshll	v4.2d, v5.2s, #0
-	scvtf	v4.2d, v4.2d
-	fcmge	v1.2d, v1.2d, #0.0
-	fdiv	v0.2d, v6.2d, v0.2d
-	fcmge	v3.2d, v3.2d, #0.0
-	fdiv	v2.2d, v4.2d, v2.2d
-	fcmge	v0.2d, v0.2d, #0.0
-	uzp1	v0.4s, v0.4s, v1.4s
-	fcmge	v2.2d, v2.2d, #0.0
-	uzp1	v2.4s, v2.4s, v3.4s
-	uzp1	v0.8h, v0.8h, v2.8h
-	xtn	v0.8b, v0.8h
+	scvtf	d1, w0
+	fdiv	d0, d1, d0
+	fcmp	d0, #0.0
+	cset	w0, ge
 	ret
                                         // -- End function
+.LCPI4_0:
+	.xword	0x3fd51eb851eb851f              // double 0.33000000000000002
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	sshll	v6.2d, v4.2s, #0
-	sshll2	v4.2d, v4.4s, #0
-	mov	x8, #34079                      // =0x851f
-	movk	x8, #20971, lsl #16
-	movk	x8, #7864, lsl #32
-	scvtf	v4.2d, v4.2d
-	scvtf	v6.2d, v6.2d
-	movk	x8, #16341, lsl #48
-	fdiv	v1.2d, v4.2d, v1.2d
-	sshll2	v4.2d, v5.4s, #0
-	scvtf	v4.2d, v4.2d
-	fdiv	v3.2d, v4.2d, v3.2d
-	sshll	v4.2d, v5.2s, #0
-	scvtf	v4.2d, v4.2d
-	fdiv	v0.2d, v6.2d, v0.2d
-	fdiv	v2.2d, v4.2d, v2.2d
-	dup	v4.2d, x8
-	fcmgt	v3.2d, v3.2d, v4.2d
-	fcmgt	v1.2d, v1.2d, v4.2d
-	fcmgt	v0.2d, v0.2d, v4.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	fcmgt	v2.2d, v2.2d, v4.2d
-	uzp1	v2.4s, v2.4s, v3.4s
-	uzp1	v0.8h, v0.8h, v2.8h
-	xtn	v0.8b, v0.8h
+	scvtf	d1, w0
+	adrp	x8, .LCPI4_0
+	fdiv	d0, d1, d0
+	ldr	d1, [x8, :lo12:.LCPI4_0]
+	fcmp	d0, d1
+	cset	w0, gt
 	ret
                                         // -- End function
+.LCPI5_0:
+	.xword	0x3fa999999999999a              // double 0.050000000000000003
 func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
-	sshll	v6.2d, v4.2s, #0
-	sshll2	v4.2d, v4.4s, #0
-	mov	x8, #-7378697629483820647       // =0x9999999999999999
-	movk	x8, #39322
-	movk	x8, #16297, lsl #48
-	scvtf	v4.2d, v4.2d
-	scvtf	v6.2d, v6.2d
-	fdiv	v1.2d, v4.2d, v1.2d
-	sshll2	v4.2d, v5.4s, #0
-	scvtf	v4.2d, v4.2d
-	fdiv	v3.2d, v4.2d, v3.2d
-	sshll	v4.2d, v5.2s, #0
-	scvtf	v4.2d, v4.2d
-	fdiv	v0.2d, v6.2d, v0.2d
-	fdiv	v2.2d, v4.2d, v2.2d
-	dup	v4.2d, x8
-	fcmgt	v3.2d, v3.2d, v4.2d
-	fcmgt	v1.2d, v1.2d, v4.2d
-	fcmgt	v0.2d, v0.2d, v4.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	fcmgt	v2.2d, v2.2d, v4.2d
-	uzp1	v2.4s, v2.4s, v3.4s
-	uzp1	v0.8h, v0.8h, v2.8h
-	mvn	v0.16b, v0.16b
-	xtn	v0.8b, v0.8h
+	scvtf	d1, w0
+	adrp	x8, .LCPI5_0
+	fdiv	d0, d1, d0
+	ldr	d1, [x8, :lo12:.LCPI5_0]
+	fcmp	d0, d1
+	cset	w0, le
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	sshll	v6.2d, v4.2s, #0
-	sshll2	v4.2d, v4.4s, #0
-	scvtf	v4.2d, v4.2d
-	scvtf	v6.2d, v6.2d
-	fdiv	v1.2d, v4.2d, v1.2d
-	sshll2	v4.2d, v5.4s, #0
-	scvtf	v4.2d, v4.2d
-	fdiv	v3.2d, v4.2d, v3.2d
-	sshll	v4.2d, v5.2s, #0
-	scvtf	v4.2d, v4.2d
-	fdiv	v0.2d, v6.2d, v0.2d
-	fdiv	v2.2d, v4.2d, v2.2d
-	fmov	v4.2d, #0.25000000
-	fcmge	v3.2d, v4.2d, v3.2d
-	fcmge	v1.2d, v4.2d, v1.2d
-	fcmge	v0.2d, v4.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	fcmge	v2.2d, v4.2d, v2.2d
-	uzp1	v2.4s, v2.4s, v3.4s
-	uzp1	v0.8h, v0.8h, v2.8h
-	xtn	v0.8b, v0.8h
+	scvtf	d1, w0
+	fdiv	d0, d1, d0
+	fmov	d1, #0.25000000
+	fcmp	d0, d1
+	cset	w0, ls
 	ret
                                         // -- End function
 func000000000000000e:                   // @func000000000000000e
 // %bb.0:                               // %entry
-	sshll	v6.2d, v4.2s, #0
-	sshll2	v4.2d, v4.4s, #0
-	scvtf	v4.2d, v4.2d
-	scvtf	v6.2d, v6.2d
-	fdiv	v1.2d, v4.2d, v1.2d
-	sshll2	v4.2d, v5.4s, #0
-	scvtf	v4.2d, v4.2d
-	fdiv	v3.2d, v4.2d, v3.2d
-	sshll	v4.2d, v5.2s, #0
-	scvtf	v4.2d, v4.2d
-	fcmeq	v1.2d, v1.2d, v1.2d
-	fdiv	v0.2d, v6.2d, v0.2d
-	fcmeq	v3.2d, v3.2d, v3.2d
-	fdiv	v2.2d, v4.2d, v2.2d
-	fcmeq	v0.2d, v0.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	fcmeq	v2.2d, v2.2d, v2.2d
-	uzp1	v2.4s, v2.4s, v3.4s
-	uzp1	v0.8h, v0.8h, v2.8h
-	xtn	v0.8b, v0.8h
+	scvtf	d1, w0
+	fdiv	d0, d1, d0
+	fcmp	d0, d0
+	cset	w0, vc
 	ret
                                         // -- End function

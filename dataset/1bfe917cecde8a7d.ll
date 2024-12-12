@@ -6,7 +6,7 @@ define i64 @func0000000000000020(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 3
   %3 = add i32 %2, 3
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }
@@ -50,8 +50,9 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; hdf5/optimized/H5HFcache.c.ll
+; linux/optimized/rc80211_minstrel_ht.ll
 ; openusd/optimized/grain_synthesis.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000007f(i32 %0, i32 %1) #0 {

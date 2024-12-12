@@ -1,5 +1,5 @@
 func0000000000000001:                   # @func0000000000000001
-	lui	a0, 8
+	bseti	a0, zero, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v12, v10, a0
 	vmseq.vi	v0, v12, 0

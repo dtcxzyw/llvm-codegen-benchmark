@@ -23,9 +23,19 @@ func0000000000000008:                   # @func0000000000000008
 	movl	$1, %eax
 	cmovel	%edi, %eax
 	retq
+func0000000000000018:                   # @func0000000000000018
+	cmpq	$3, %rsi
+	movl	$1, %eax
+	cmovbl	%edi, %eax
+	retq
 func000000000000000c:                   # @func000000000000000c
 	xorl	%eax, %eax
 	negq	%rsi
 	sbbl	%eax, %eax
 	orb	%dil, %al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpq	$1023, %rsi                     # imm = 0x3FF
+	movl	$1, %eax
+	cmovael	%edi, %eax
 	retq

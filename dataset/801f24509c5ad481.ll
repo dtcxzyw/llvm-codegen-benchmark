@@ -1,5 +1,5 @@
 
-; 55 occurrences:
+; 56 occurrences:
 ; bullet3/optimized/btCollisionWorld.ll
 ; bullet3/optimized/btCollisionWorldImporter.ll
 ; bullet3/optimized/btDeformableContactProjection.ll
@@ -15,6 +15,7 @@
 ; freetype/optimized/psaux.c.ll
 ; hyperscan/optimized/literals.cpp.ll
 ; hyperscan/optimized/ng_corpus_properties.cpp.ll
+; lvgl/optimized/lv_math.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll

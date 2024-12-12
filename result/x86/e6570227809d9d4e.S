@@ -12,7 +12,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 func0000000000000002:                   # @func0000000000000002
 	movl	%edi, %ecx
-	notb	%cl
+	xorb	$1, %cl
 	movl	$-2, %eax
 	roll	%cl, %eax
 	retq

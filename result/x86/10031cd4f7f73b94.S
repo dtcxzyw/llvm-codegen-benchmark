@@ -11,8 +11,8 @@ func0000000000000005:                   # @func0000000000000005
 	leal	(%rdi,%rdx), %eax
 	retq
 func0000000000000007:                   # @func0000000000000007
-	andl	$100, %edx
+	andl	$63488, %edx                    # imm = 0xF800
 	orl	%edi, %edx
-	andl	$1000, %esi                     # imm = 0x3E8
+	andl	$2016, %esi                     # imm = 0x7E0
 	leal	(%rsi,%rdx), %eax
 	retq

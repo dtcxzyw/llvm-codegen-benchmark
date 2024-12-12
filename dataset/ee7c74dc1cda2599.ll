@@ -1,7 +1,8 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; bullet3/optimized/btBatchedConstraints.ll
 ; darktable/optimized/introspection_ashift.c.ll
+; lvgl/optimized/lv_arc.ll
 ; meshlab/optimized/VisibleSet.cpp.ll
 ; pbrt-v4/optimized/cameras.cpp.ll
 ; Function Attrs: nounwind

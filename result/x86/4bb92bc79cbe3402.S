@@ -1,10 +1,3 @@
-func000000000000000f:                   # @func000000000000000f
-	andl	$1, %edx
-	leal	258(%rsi,%rdx), %ecx
-	leal	96(%rsi,%rdx), %eax
-	testb	$1, %dil
-	cmovnel	%ecx, %eax
-	retq
 func0000000000000000:                   # @func0000000000000000
 	andl	$1, %edx
 	subl	%edx, %esi
@@ -14,9 +7,17 @@ func0000000000000000:                   # @func0000000000000000
 func0000000000000005:                   # @func0000000000000005
 	andl	$1, %edx
 	decl	%edx
-	orl	$-301, %edx                     # imm = 0xFED3
+	orl	$11, %edx
 	leal	(%rdx,%rsi), %ecx
-	leal	-400(%rdx,%rsi), %eax
+	leal	-12(%rdx,%rsi), %eax
 	testb	$1, %dil
 	cmovel	%ecx, %eax
+	retq
+func000000000000000f:                   # @func000000000000000f
+	notb	%dl
+	movzbl	%dl, %eax
+	andl	$1, %eax
+	leal	(%rsi,%rax,4), %eax
+	andl	$1, %edi
+	leal	5(%rax,%rdi,4), %eax
 	retq

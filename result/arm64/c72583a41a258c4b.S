@@ -1,30 +1,19 @@
 func0000000000000040:                   // @func0000000000000040
 // %bb.0:                               // %entry
-	ushll	v4.8h, v4.8b, #0
-	movi	v6.4s, #12
-	ushll	v5.4s, v4.4h, #0
-	ushll2	v4.4s, v4.8h, #0
-	orr	v3.16b, v4.16b, v3.16b
-	orr	v2.16b, v5.16b, v2.16b
-	mla	v2.4s, v0.4s, v6.4s
-	mla	v3.4s, v1.4s, v6.4s
-	movi	v0.4s, #6
-	add	v1.4s, v3.4s, v0.4s
-	add	v0.4s, v2.4s, v0.4s
+	and	w8, w2, #0xff
+	mov	w9, #12                         // =0xc
+	orr	w8, w1, w8
+	madd	w8, w0, w9, w8
+	add	w0, w8, #6
 	ret
                                         // -- End function
 func000000000000007f:                   // @func000000000000007f
 // %bb.0:                               // %entry
-	ushll	v4.8h, v4.8b, #0
-	movi	v6.4s, #3
-	ushll	v5.4s, v4.4h, #0
-	ushll2	v4.4s, v4.8h, #0
-	orr	v3.16b, v4.16b, v3.16b
-	orr	v2.16b, v5.16b, v2.16b
-	mla	v2.4s, v0.4s, v6.4s
-	mla	v3.4s, v1.4s, v6.4s
-	movi	v0.8h, #2
-	add	v1.4s, v3.4s, v0.4s
-	add	v0.4s, v2.4s, v0.4s
+	and	w8, w2, #0xff
+	add	w9, w0, w0, lsl #1
+	orr	w8, w1, w8
+	add	w8, w8, w9
+	mov	w9, #131074                     // =0x20002
+	add	w0, w8, w9
 	ret
                                         // -- End function

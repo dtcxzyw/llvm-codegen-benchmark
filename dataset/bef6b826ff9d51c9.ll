@@ -29,7 +29,7 @@ entry:
   %4 = and i32 %3, 7
   %5 = zext i8 %1 to i32
   %6 = lshr i32 %5, %4
-  %7 = or i32 %6, %0
+  %7 = or i32 %0, %6
   ret i32 %7
 }
 

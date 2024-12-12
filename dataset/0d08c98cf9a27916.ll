@@ -4,7 +4,7 @@
 ; llvm/optimized/TypeLocBuilder.cpp.ll
 ; ruby/optimized/compile.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000063(i8 %0, i32 %1) #0 {
+define i64 @func00000000000000c3(i8 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = icmp eq i8 %0, 0
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; protobuf/optimized/writer.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000023(i8 %0, i32 %1) #0 {
+define i64 @func0000000000000043(i8 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -8
   %3 = icmp eq i8 %0, -1

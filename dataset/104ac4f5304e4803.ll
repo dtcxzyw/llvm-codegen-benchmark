@@ -95,34 +95,25 @@
 ; velox/optimized/ZipWith.cpp.ll
 ; z3/optimized/sat_cut_simplifier.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
-entry:
-  %2 = shl nsw i64 -1, %1
-  %3 = or i64 %2, %0
-  %4 = icmp eq i64 %3, -1
-  ret i1 %4
-}
-
-; 2 occurrences:
-; image-rs/optimized/4srzh4wujeew249y.ll
-; typst-rs/optimized/5z4no3nnr5v1s13.ll
-; Function Attrs: nounwind
 define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl nuw i64 1, %1
-  %3 = or i64 %2, %0
+  %2 = shl nsw i64 -1, %1
+  %3 = or i64 %0, %2
   %4 = icmp eq i64 %3, -1
   ret i1 %4
 }
 
-; 1 occurrences:
-; duckdb/optimized/ub_duckdb_execution_index.cpp.ll
+; 4 occurrences:
+; image-rs/optimized/4srzh4wujeew249y.ll
+; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl nsw i64 -1, %1
-  %3 = or i64 %2, %0
-  %4 = icmp ugt i64 %3, -4294967297
+  %2 = shl nuw i64 1, %1
+  %3 = or i64 %0, %2
+  %4 = icmp eq i64 %3, -1
   ret i1 %4
 }
 
@@ -131,10 +122,10 @@ entry:
 ; hermes/optimized/APFloat.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000004c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 -1, %1
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = icmp ne i64 %3, -1
   ret i1 %4
 }
@@ -153,7 +144,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000c1(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 65535, %1
   %3 = or i64 %2, %0

@@ -7,11 +7,11 @@
 ; oiio/optimized/filesystem.cpp.ll
 ; oiio/optimized/imagecache.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000064(ptr %0, ptr %1, i64 %2) #0 {
+define ptr @func00000000000000e4(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -5
   %4 = icmp ult i64 %3, -2
-  %5 = getelementptr nusw i8, ptr %1, i64 24
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 24
   %6 = select i1 %4, ptr %5, ptr %0
   ret ptr %6
 }
@@ -19,10 +19,10 @@ entry:
 ; 1 occurrences:
 ; rust-analyzer-rs/optimized/178ko0g73oimi4oy.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(ptr %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000061(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 1
-  %4 = getelementptr nusw i8, ptr %1, i64 16
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 16
   %5 = select i1 %3, ptr %4, ptr %0
   ret ptr %5
 }

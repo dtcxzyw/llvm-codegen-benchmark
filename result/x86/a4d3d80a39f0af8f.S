@@ -8,6 +8,11 @@ func0000000000000002:                   # @func0000000000000002
 	movslq	%esi, %rax
 	addq	%rdi, %rax
 	retq
+func0000000000000007:                   # @func0000000000000007
+	addl	%edx, %esi
+	movslq	%esi, %rax
+	addq	%rdi, %rax
+	retq
 func0000000000000004:                   # @func0000000000000004
 	addl	%edx, %esi
 	movslq	%esi, %rax

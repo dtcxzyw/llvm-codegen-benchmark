@@ -9,7 +9,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = sdiv exact i64 %4, 24
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   %7 = uitofp i64 %6 to float
   ret float %7
 }

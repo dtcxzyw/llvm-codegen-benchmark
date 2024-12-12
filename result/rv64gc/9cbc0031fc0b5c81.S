@@ -1,4 +1,4 @@
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000014a:                   # @func000000000000014a
 	fcvt.w.d	a0, fa1, rtz
 	fcvt.w.d	a1, fa0, rtz
 	sgtz	a0, a0
@@ -6,7 +6,7 @@ func00000000000000aa:                   # @func00000000000000aa
 	not	a1, a1
 	and	a0, a0, a1
 	ret
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	fcvt.w.d	a0, fa1, rtz
 	fcvt.w.d	a1, fa0, rtz
 	slti	a0, a0, 1000

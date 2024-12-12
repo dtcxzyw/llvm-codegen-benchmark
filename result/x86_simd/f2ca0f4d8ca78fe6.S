@@ -37,7 +37,7 @@
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 func0000000000000001:                   # @func0000000000000001
-	vpor	%ymm1, %ymm2, %ymm1
+	vpor	%ymm2, %ymm1, %ymm1
 	vpternlogd	$40, .LCPI0_1(%rip){1to8}, %ymm1, %ymm0 # ymm0 = mem & (ymm0 ^ ymm1)
 	retq
 .LCPI1_0:

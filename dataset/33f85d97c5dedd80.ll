@@ -14,11 +14,12 @@ entry:
   ret i64 %7
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; linux/optimized/setup-bus.ll
 ; linux/optimized/vmalloc.ll
 ; llvm/optimized/CallingConvLower.cpp.ll
+; lvgl/optimized/lv_tlsf.ll
 ; openjdk/optimized/genArguments.ll
 ; openjdk/optimized/hb-blob.ll
 ; qemu/optimized/block_io.c.ll

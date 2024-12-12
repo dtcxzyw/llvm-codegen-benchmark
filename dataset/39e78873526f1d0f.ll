@@ -6,7 +6,7 @@
 define i8 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 6
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = and i32 %1, 7
   %6 = or disjoint i32 %4, %5
   %7 = trunc i32 %6 to i8

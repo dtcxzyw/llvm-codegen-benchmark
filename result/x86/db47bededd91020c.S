@@ -7,7 +7,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	$16, %edi
 	setb	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	leal	255(%rdi), %eax
 	addl	$510, %edi                      # imm = 0x1FE
 	testl	%eax, %eax
@@ -27,7 +27,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	$2, %eax
 	setae	%al
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	leal	-1(%rdi), %eax
 	addl	$2, %edi
 	testl	%eax, %eax

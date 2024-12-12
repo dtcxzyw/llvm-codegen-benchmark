@@ -1,5 +1,5 @@
 
-; 30 occurrences:
+; 29 occurrences:
 ; lightgbm/optimized/bin.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64PreLegalizerCombiner.cpp.ll
@@ -15,7 +15,6 @@
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/MallocChecker.cpp.ll
 ; llvm/optimized/ProgramState.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
 ; llvm/optimized/RangeConstraintManager.cpp.ll
 ; llvm/optimized/SValBuilder.cpp.ll
@@ -41,7 +40,7 @@ entry:
   ret i64 %5
 }
 
-; 23 occurrences:
+; 22 occurrences:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/CStringChecker.cpp.ll
@@ -52,7 +51,6 @@ entry:
 ; llvm/optimized/LegalizeVectorOps.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/MallocChecker.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RangeConstraintManager.cpp.ll
 ; llvm/optimized/SValBuilder.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll

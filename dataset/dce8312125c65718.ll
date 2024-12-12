@@ -1,5 +1,5 @@
 
-; 121 occurrences:
+; 118 occurrences:
 ; abc/optimized/absRpm.c.ll
 ; abc/optimized/aigMffc.c.ll
 ; abc/optimized/aigObj.c.ll
@@ -30,8 +30,6 @@
 ; linux/optimized/hugetlb_vmemmap.ll
 ; linux/optimized/init_64.ll
 ; linux/optimized/ldt.ll
-; linux/optimized/machine_kexec_64.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/pti.ll
 ; linux/optimized/rwsem.ll
@@ -112,7 +110,6 @@
 ; pbrt-v4/optimized/render.cpp.ll
 ; php/optimized/phpdbg_prompt.ll
 ; qemu/optimized/fpu_softfloat.c.ll
-; qemu/optimized/target_riscv_vector_helper.c.ll
 ; quickjs/optimized/quickjs.ll
 ; redis/optimized/networking.ll
 ; ruby/optimized/class.ll
@@ -122,7 +119,7 @@
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/tls13.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0) #0 {
+define i1 @func000000000000002c(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 7
   %2 = icmp eq i64 %1, 0
@@ -132,7 +129,7 @@ entry:
   ret i1 %5
 }
 
-; 146 occurrences:
+; 147 occurrences:
 ; abc/optimized/abcHieGia.c.ll
 ; abc/optimized/abcIvy.c.ll
 ; abc/optimized/abcRec3.c.ll
@@ -204,6 +201,7 @@ entry:
 ; linux/optimized/i915_gem_region.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mempolicy.ll
+; linux/optimized/mincore.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/page_vma_mapped.ll
 ; llvm/optimized/AArch64CallLowering.cpp.ll
@@ -280,7 +278,7 @@ entry:
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0) #0 {
+define i1 @func000000000000018c(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 128
   %2 = icmp ne i64 %1, 0
@@ -290,7 +288,7 @@ entry:
   ret i1 %5
 }
 
-; 105 occurrences:
+; 103 occurrences:
 ; abc/optimized/abcHieGia.c.ll
 ; abc/optimized/abcIvy.c.ll
 ; abc/optimized/abcRec3.c.ll
@@ -379,6 +377,7 @@ entry:
 ; glslang/optimized/ParseHelper.cpp.ll
 ; icu/optimized/double-conversion-bignum-dtoa.ll
 ; icu/optimized/double-conversion-fast-dtoa.ll
+; linux/optimized/fault.ll
 ; linux/optimized/uncore.ll
 ; linux/optimized/uncore_snb.ll
 ; linux/optimized/uncore_snbep.ll
@@ -390,48 +389,16 @@ entry:
 ; openusd/optimized/fast-dtoa.cc.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
-; spike/optimized/f16_classify.ll
-; spike/optimized/f32_classify.ll
-; spike/optimized/f64_classify.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; wolfssl/optimized/tls13.c.ll
 ; z3/optimized/hwf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0) #0 {
+define i1 @func0000000000000181(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 4294967295
   %2 = icmp ne i64 %1, 0
   %3 = and i64 %0, 4294967296
   %4 = icmp eq i64 %3, 0
-  %5 = and i1 %4, %2
-  ret i1 %5
-}
-
-; 4 occurrences:
-; llvm/optimized/CGDebugInfo.cpp.ll
-; postgres/optimized/basebackup.ll
-; postgres/optimized/inv_api.ll
-; qemu/optimized/tcg.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0) #0 {
-entry:
-  %1 = and i64 %0, 255
-  %2 = icmp ult i64 %1, 31
-  %3 = and i64 %0, 65280
-  %4 = icmp eq i64 %3, 256
-  %5 = and i1 %4, %2
-  ret i1 %5
-}
-
-; 1 occurrences:
-; qemu/optimized/tcg.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0) #0 {
-entry:
-  %1 = and i64 %0, 137438953472
-  %2 = icmp eq i64 %1, 0
-  %3 = and i64 %0, 30064771072
-  %4 = icmp ult i64 %3, 8589934593
   %5 = and i1 %4, %2
   ret i1 %5
 }
@@ -545,26 +512,12 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0) #0 {
+define i1 @func0000000000000301(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 9214364837600034816
   %2 = icmp ne i64 %1, 0
   %3 = and i64 %0, 4503599627370495
   %4 = icmp eq i64 %3, 0
-  %5 = and i1 %4, %2
-  ret i1 %5
-}
-
-; 2 occurrences:
-; llvm/optimized/Clang.cpp.ll
-; llvm/optimized/MSVC.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000008c(i64 %0) #0 {
-entry:
-  %1 = and i64 %0, 2147483644
-  %2 = icmp ugt i64 %1, 99
-  %3 = and i64 %0, 2147483648
-  %4 = icmp ne i64 %3, 0
   %5 = and i1 %4, %2
   ret i1 %5
 }

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openssl/optimized/openssl-bin-speed.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000086(i32 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -257
   %3 = icmp ult i64 %2, -256
@@ -11,30 +11,26 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; openssl/optimized/bad_dtls_test-bin-bad_dtls_test.ll
-; wolfssl/optimized/ssl.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014c(i32 %0, i64 %1) #0 {
+define i1 @func000000000000068c(i32 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -3
-  %3 = icmp ult i64 %2, 11
+  %3 = icmp samesign ult i64 %2, 11
   %4 = icmp ne i32 %0, 256
   %5 = select i1 %4, i1 true, i1 %3
   ret i1 %5
 }
 
-; 19 occurrences:
+; 16 occurrences:
 ; cpython/optimized/initconfig.ll
 ; cpython/optimized/preconfig.ll
 ; gromacs/optimized/strconvert.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
-; openssl/optimized/libcrypto-lib-crmf_pbm.ll
-; openssl/optimized/libcrypto-shlib-crmf_pbm.ll
 ; openssl/optimized/libdefault-lib-blake2b_mac.ll
 ; openssl/optimized/libdefault-lib-blake2s_mac.ll
 ; postgres/optimized/arrayfuncs.ll
@@ -45,10 +41,10 @@ entry:
 ; yosys/optimized/rtlil.ll
 ; yosys/optimized/rtlil_lexer.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i64 %1) #0 {
 entry:
-  %2 = add i64 %1, -100001
-  %3 = icmp ult i64 %2, -99901
+  %2 = add i64 %1, -33
+  %3 = icmp ult i64 %2, -32
   %4 = icmp eq i32 %0, 0
   %5 = select i1 %4, i1 true, i1 %3
   ret i1 %5
@@ -76,7 +72,7 @@ entry:
 ; openmpi/optimized/schizo_base_stubs.ll
 ; openssl/optimized/quicserver-bin-quicserver.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000311(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000c21(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 3
   %3 = icmp eq i32 %0, 0
@@ -84,34 +80,16 @@ entry:
   ret i1 %4
 }
 
-; 8 occurrences:
-; darktable/optimized/introspection_basecurve.c.ll
-; darktable/optimized/introspection_colorzones.c.ll
-; darktable/optimized/introspection_filmic.c.ll
-; darktable/optimized/introspection_rgbcurve.c.ll
-; darktable/optimized/introspection_tonecurve.c.ll
+; 3 occurrences:
 ; minetest/optimized/mapnode.cpp.ll
 ; minetest/optimized/png.cpp.ll
 ; redis/optimized/listpack.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000484(i32 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1073741825
   %3 = icmp ult i64 %2, -1073741824
   %4 = icmp ult i32 %0, 9
-  %5 = select i1 %4, i1 true, i1 %3
-  ret i1 %5
-}
-
-; 2 occurrences:
-; llvm/optimized/TransEmptyStatementsAndDealloc.cpp.ll
-; qemu/optimized/ui_vnc-enc-tight.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000146(i32 %0, i64 %1) #0 {
-entry:
-  %2 = add nsw i64 %1, -7
-  %3 = icmp ult i64 %2, 3
-  %4 = icmp slt i32 %0, 97
   %5 = select i1 %4, i1 true, i1 %3
   ret i1 %5
 }
@@ -129,7 +107,7 @@ entry:
 ; openjdk/optimized/relocator.ll
 ; stb/optimized/stb_include.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000314(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000c24(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 3
   %3 = icmp ult i32 %0, 12224
@@ -145,7 +123,7 @@ entry:
 ; lief/optimized/rsa.c.ll
 ; php/optimized/pack.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i64 %1) #0 {
+define i1 @func000000000000008c(i32 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -2147483648
   %3 = icmp ult i64 %2, -4294967296
@@ -162,7 +140,7 @@ entry:
 ; php/optimized/php_pcre.ll
 ; postgres/optimized/wstrncmp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 1
   %3 = icmp eq i32 %0, -1
@@ -170,10 +148,26 @@ entry:
   ret i1 %4
 }
 
+; 5 occurrences:
+; darktable/optimized/introspection_basecurve.c.ll
+; darktable/optimized/introspection_colorzones.c.ll
+; darktable/optimized/introspection_filmic.c.ll
+; darktable/optimized/introspection_rgbcurve.c.ll
+; darktable/optimized/introspection_tonecurve.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000494(i32 %0, i64 %1) #0 {
+entry:
+  %2 = add nsw i64 %1, -257
+  %3 = icmp ult i64 %2, -256
+  %4 = icmp samesign ult i32 %0, 16
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
+}
+
 ; 1 occurrences:
 ; abc/optimized/dauDivs.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000421(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 37
   %3 = icmp eq i32 %0, 31
@@ -181,7 +175,8 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/area.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; git/optimized/userdiff.ll
 ; linux/optimized/forcedeth.ll
@@ -189,7 +184,7 @@ entry:
 ; openmpi/optimized/cmd_line.ll
 ; openspiel/optimized/othello.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000031c(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000c2c(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 25
   %3 = icmp ne i32 %0, 0
@@ -198,9 +193,21 @@ entry:
 }
 
 ; 1 occurrences:
+; llvm/optimized/TransEmptyStatementsAndDealloc.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000486(i32 %0, i64 %1) #0 {
+entry:
+  %2 = add nsw i64 %1, -128
+  %3 = icmp ult i64 %2, -101
+  %4 = icmp slt i32 %0, 0
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000316(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000c26(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 8
   %3 = icmp slt i32 %0, 0
@@ -212,7 +219,7 @@ entry:
 ; libzmq/optimized/trie.cpp.ll
 ; postgres/optimized/regexec.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 1
   %3 = icmp ne i32 %0, 0
@@ -221,9 +228,21 @@ entry:
 }
 
 ; 1 occurrences:
+; wolfssl/optimized/ssl.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000048c(i32 %0, i64 %1) #0 {
+entry:
+  %2 = add nsw i64 %1, -4194305
+  %3 = icmp ult i64 %2, -4194304
+  %4 = icmp ne i32 %0, 0
+  %5 = select i1 %4, i1 true, i1 %3
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; icu/optimized/dtptngen.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000031a(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000c2a(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 15
   %3 = icmp sgt i32 %0, 0

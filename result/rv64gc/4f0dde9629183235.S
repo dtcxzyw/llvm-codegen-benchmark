@@ -10,13 +10,13 @@ func0000000000000006:                   # @func0000000000000006
 	addiw	a0, a0, 1
 	slt	a0, a0, a2
 	ret
-func0000000000000076:                   # @func0000000000000076
+func00000000000000e6:                   # @func00000000000000e6
 	sext.w	a2, a0
 	add	a0, a0, a1
 	addiw	a0, a0, -1
 	slt	a0, a0, a2
 	ret
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	sext.w	a2, a0
 	add	a0, a0, a1
 	addiw	a0, a0, -1
@@ -28,7 +28,7 @@ func000000000000000a:                   # @func000000000000000a
 	addiw	a0, a0, -1
 	slt	a0, a2, a0
 	ret
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	sext.w	a2, a0
 	add	a0, a0, a1
 	addiw	a0, a0, 1

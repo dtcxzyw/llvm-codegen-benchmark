@@ -13,7 +13,7 @@ func0000000000000008:                   # @func0000000000000008
 	setae	%al
 	andb	%dil, %al
 	retq
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	imull	$-100, %edx, %eax
 	addl	%esi, %eax
 	cmpl	$10, %eax

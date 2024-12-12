@@ -23,7 +23,7 @@
 define i16 @func0000000000000000(float %0, i16 %1) #0 {
 entry:
   %2 = uitofp i16 %1 to float
-  %3 = fmul float %2, %0
+  %3 = fmul float %0, %2
   %4 = fptoui float %3 to i16
   ret i16 %4
 }

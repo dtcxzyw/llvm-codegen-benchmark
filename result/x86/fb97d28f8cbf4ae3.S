@@ -10,13 +10,20 @@ func0000000000000001:                   # @func0000000000000001
 	subl	%ecx, %eax
 	retq
 func0000000000000000:                   # @func0000000000000000
-	leal	4095(%rsi), %eax
+	leal	255(%rsi), %eax
 	testl	%esi, %esi
 	cmovnsl	%esi, %eax
-	sarl	$12, %eax
-	leal	4095(%rax,%rdi), %ecx
+	sarl	$8, %eax
 	addl	%edi, %eax
-	cmovnsl	%eax, %ecx
-	andl	$-4096, %ecx                    # imm = 0xF000
-	subl	%ecx, %eax
+	movslq	%eax, %rcx
+	imulq	$-1840700269, %rcx, %rax        # imm = 0x92492493
+	shrq	$32, %rax
+	addl	%ecx, %eax
+	movl	%eax, %edx
+	shrl	$31, %edx
+	sarl	$2, %eax
+	addl	%edx, %eax
+	leal	(,%rax,8), %edx
+	subl	%edx, %eax
+	addl	%ecx, %eax
 	retq

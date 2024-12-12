@@ -1,5 +1,5 @@
 
-%"class.testing::ThrowingValue.3270416" = type { i32 }
+%"class.testing::ThrowingValue.3460894" = type { i32 }
 
 ; 23 occurrences:
 ; cmake/optimized/huf_decompress.c.ll
@@ -26,20 +26,19 @@
 ; zstd/optimized/zstd_ldm.c.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, ptr %1, i64 %2) #0 {
+define i64 @func000000000000000c(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 3
-  %4 = getelementptr nusw ptr, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw ptr, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   ret i64 %6
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; abseil-cpp/optimized/inlined_vector_exception_safety_test.cc.ll
 ; linux/optimized/datagram.ll
 ; linux/optimized/huf_decompress.ll
-; linux/optimized/i915_cmd_parser.ll
 ; linux/optimized/iov_iter.ll
 ; linux/optimized/kexec_core.ll
 ; linux/optimized/kfifo.ll
@@ -52,7 +51,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
-  %4 = getelementptr %"class.testing::ThrowingValue.3270416", ptr %1, i64 %3
+  %4 = getelementptr %"class.testing::ThrowingValue.3460894", ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   ret i64 %6

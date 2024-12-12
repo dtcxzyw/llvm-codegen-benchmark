@@ -1,7 +1,6 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; cmake/optimized/cmCTest.cxx.ll
-; php/optimized/uuencode.ll
 ; postgres/optimized/costsize.ll
 ; quickjs/optimized/quickjs.ll
 ; redis/optimized/hdr_histogram.ll

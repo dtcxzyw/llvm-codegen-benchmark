@@ -1,10 +1,7 @@
 
-; 6 occurrences:
+; 3 occurrences:
 ; git/optimized/transport.ll
 ; hdf5/optimized/H5Dint.c.ll
-; postgres/optimized/pgmkdirp.ll
-; postgres/optimized/pgmkdirp_shlib.ll
-; postgres/optimized/pgmkdirp_srv.ll
 ; ruby/optimized/class.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000a(i32 %0) #0 {

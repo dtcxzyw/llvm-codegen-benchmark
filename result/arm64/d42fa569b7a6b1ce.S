@@ -1,0 +1,9 @@
+func00000000000000af:                   // @func00000000000000af
+// %bb.0:                               // %entry
+	mov	x8, #-72057594037927936         // =0xff00000000000000
+	cmp	w2, #0
+	csel	x8, xzr, x8, ge
+	orr	x8, x8, x1, lsl #24
+	orr	x0, x8, x0
+	ret
+                                        // -- End function

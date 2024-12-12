@@ -36,12 +36,3 @@ func0000000000000001:                   # @func0000000000000001
 	addi	a0, a0, -10
 	seqz	a0, a0
 	ret
-.LCPI4_0:
-	.quad	0x400a934f0979a371              # double 3.3219280948873622
-func0000000000000004:                   # @func0000000000000004
-	lui	a0, %hi(.LCPI4_0)
-	fld	fa5, %lo(.LCPI4_0)(a0)
-	fdiv.d	fa5, fa0, fa5
-	fcvt.w.d	a0, fa5, rtz
-	sltiu	a0, a0, -21
-	ret

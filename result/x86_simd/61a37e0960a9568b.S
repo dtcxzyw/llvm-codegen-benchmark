@@ -7,6 +7,6 @@ func0000000000000000:                   # @func0000000000000000
 	vmulps	%zmm3, %zmm2, %zmm2
 	vmulps	%zmm3, %zmm1, %zmm1
 	vsubps	%zmm2, %zmm1, %zmm1
-	vaddps	%zmm0, %zmm1, %zmm0
+	vaddps	%zmm1, %zmm0, %zmm0
 	vaddps	.LCPI0_1(%rip){1to16}, %zmm0, %zmm0
 	retq

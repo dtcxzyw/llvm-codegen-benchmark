@@ -1,9 +1,10 @@
 func0000000000000001:                   # @func0000000000000001
-	testb	$1, %dl
-	cmovneq	%rsi, %rdi
-	movl	%edi, %eax
+	movq	%rdi, %rax
+	testl	$12288, %edx                    # imm = 0x3000
+	cmovneq	%rsi, %rax
+	andl	$2147483647, %eax               # imm = 0x7FFFFFFF
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	movq	%rdi, %rax
 	testb	$30, %dl
 	cmovneq	%rsi, %rax

@@ -1,8 +1,7 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; git/optimized/ls-files.ll
 ; git/optimized/path.ll
-; linux/optimized/dns_key.ll
 ; openjdk/optimized/FileSystemSupport_md.ll
 ; openssl/optimized/ca_internals_test-bin-ca.ll
 ; openssl/optimized/openssl-bin-ca.ll

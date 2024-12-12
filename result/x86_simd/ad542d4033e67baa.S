@@ -1,10 +1,9 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	vpslld	$31, %xmm0, %xmm0
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpxor	%xmm4, %xmm4, %xmm4
-	vpblendd	$170, %ymm4, %ymm2, %ymm2       # ymm2 = ymm2[0],ymm4[1],ymm2[2],ymm4[3],ymm2[4],ymm4[5],ymm2[6],ymm4[7]
-	vpcmpnleuq	%ymm1, %ymm2, %k1
-	vpcmpgtd	%xmm0, %xmm3, %k0 {%k1}
+	vpmovd2m	%xmm0, %k1
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpblendd	$170, %ymm0, %ymm2, %ymm0       # ymm0 = ymm2[0],ymm0[1],ymm2[2],ymm0[3],ymm2[4],ymm0[5],ymm2[6],ymm0[7]
+	vpcmpltuq	%ymm0, %ymm1, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
@@ -12,10 +11,9 @@ func0000000000000004:                   # @func0000000000000004
 	.quad	4095                            # 0xfff
 func0000000000000001:                   # @func0000000000000001
 	vpslld	$31, %xmm0, %xmm0
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpandq	.LCPI1_0(%rip){1to4}, %ymm2, %ymm2
-	vpcmpeqq	%ymm1, %ymm2, %k1
-	vpcmpgtd	%xmm0, %xmm3, %k0 {%k1}
+	vpmovd2m	%xmm0, %k1
+	vpandq	.LCPI1_0(%rip){1to4}, %ymm2, %ymm0
+	vpcmpeqq	%ymm0, %ymm1, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
@@ -25,7 +23,7 @@ func0000000000000005:                   # @func0000000000000005
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpandq	.LCPI2_0(%rip){1to4}, %ymm2, %ymm2
-	vpcmpnltuq	%ymm1, %ymm2, %k1
+	vpcmpleuq	%ymm2, %ymm1, %k1
 	vpcmpgtd	%xmm0, %xmm3, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -41,32 +39,50 @@ func0000000000000006:                   # @func0000000000000006
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
+func0000000000000004:                   # @func0000000000000004
+	vpslld	$31, %xmm0, %xmm0
+	vpmovd2m	%xmm0, %k1
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpblendd	$170, %ymm0, %ymm2, %ymm0       # ymm0 = ymm2[0],ymm0[1],ymm2[2],ymm0[3],ymm2[4],ymm0[5],ymm2[6],ymm0[7]
+	vpcmpltuq	%ymm0, %ymm1, %k0 {%k1}
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
 func0000000000000008:                   # @func0000000000000008
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpxor	%xmm4, %xmm4, %xmm4
 	vpblendd	$170, %ymm4, %ymm2, %ymm2       # ymm2 = ymm2[0],ymm4[1],ymm2[2],ymm4[3],ymm2[4],ymm4[5],ymm2[6],ymm4[7]
-	vpcmpltuq	%ymm1, %ymm2, %k1
+	vpcmpnleuq	%ymm2, %ymm1, %k1
 	vpcmpgtd	%xmm0, %xmm3, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
 func0000000000000007:                   # @func0000000000000007
 	vpslld	$31, %xmm0, %xmm0
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpxor	%xmm4, %xmm4, %xmm4
-	vpblendd	$170, %ymm4, %ymm2, %ymm2       # ymm2 = ymm2[0],ymm4[1],ymm2[2],ymm4[3],ymm2[4],ymm4[5],ymm2[6],ymm4[7]
-	vpcmpnltq	%ymm1, %ymm2, %k1
-	vpcmpgtd	%xmm0, %xmm3, %k0 {%k1}
+	vpmovd2m	%xmm0, %k1
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpblendd	$170, %ymm0, %ymm2, %ymm0       # ymm0 = ymm2[0],ymm0[1],ymm2[2],ymm0[3],ymm2[4],ymm0[5],ymm2[6],ymm0[7]
+	vpcmpleq	%ymm0, %ymm1, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000009:                   # @func0000000000000009
+func0000000000000018:                   # @func0000000000000018
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpxor	%xmm4, %xmm4, %xmm4
 	vpblendd	$170, %ymm4, %ymm2, %ymm2       # ymm2 = ymm2[0],ymm4[1],ymm2[2],ymm4[3],ymm2[4],ymm4[5],ymm2[6],ymm4[7]
-	vpcmpleuq	%ymm1, %ymm2, %k1
+	vpcmpnleuq	%ymm2, %ymm1, %k1
+	vpcmpgtd	%xmm0, %xmm3, %k0 {%k1}
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+func0000000000000019:                   # @func0000000000000019
+	vpslld	$31, %xmm0, %xmm0
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpxor	%xmm4, %xmm4, %xmm4
+	vpblendd	$170, %ymm4, %ymm2, %ymm2       # ymm2 = ymm2[0],ymm4[1],ymm2[2],ymm4[3],ymm2[4],ymm4[5],ymm2[6],ymm4[7]
+	vpcmpnltuq	%ymm2, %ymm1, %k1
 	vpcmpgtd	%xmm0, %xmm3, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -76,18 +92,27 @@ func000000000000000c:                   # @func000000000000000c
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpxor	%xmm4, %xmm4, %xmm4
 	vpblendd	$170, %ymm4, %ymm2, %ymm2       # ymm2 = ymm2[0],ymm4[1],ymm2[2],ymm4[3],ymm2[4],ymm4[5],ymm2[6],ymm4[7]
-	vpcmpneqq	%ymm1, %ymm2, %k1
+	vpcmpneqq	%ymm2, %ymm1, %k1
+	vpcmpgtd	%xmm0, %xmm3, %k0 {%k1}
+	vpmovm2d	%k0, %xmm0
+	vzeroupper
+	retq
+func0000000000000009:                   # @func0000000000000009
+	vpslld	$31, %xmm0, %xmm0
+	vpxor	%xmm3, %xmm3, %xmm3
+	vpxor	%xmm4, %xmm4, %xmm4
+	vpblendd	$170, %ymm4, %ymm2, %ymm2       # ymm2 = ymm2[0],ymm4[1],ymm2[2],ymm4[3],ymm2[4],ymm4[5],ymm2[6],ymm4[7]
+	vpcmpnltuq	%ymm2, %ymm1, %k1
 	vpcmpgtd	%xmm0, %xmm3, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
 func000000000000000b:                   # @func000000000000000b
 	vpslld	$31, %xmm0, %xmm0
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpxor	%xmm4, %xmm4, %xmm4
-	vpblendw	$17, %ymm2, %ymm4, %ymm2        # ymm2 = ymm2[0],ymm4[1,2,3],ymm2[4],ymm4[5,6,7],ymm2[8],ymm4[9,10,11],ymm2[12],ymm4[13,14,15]
-	vpcmpleq	%ymm1, %ymm2, %k1
-	vpcmpgtd	%xmm0, %xmm3, %k0 {%k1}
+	vpmovd2m	%xmm0, %k1
+	vpxor	%xmm0, %xmm0, %xmm0
+	vpblendw	$17, %ymm2, %ymm0, %ymm0        # ymm0 = ymm2[0],ymm0[1,2,3],ymm2[4],ymm0[5,6,7],ymm2[8],ymm0[9,10,11],ymm2[12],ymm0[13,14,15]
+	vpcmpnltq	%ymm0, %ymm1, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

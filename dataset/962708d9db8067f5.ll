@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; arrow/optimized/future.cc.ll
 ; cpython/optimized/semaphore.ll
 ; draco/optimized/sequential_integer_attribute_encoder.cc.ll
@@ -11,7 +11,6 @@
 ; postgres/optimized/date.ll
 ; postgres/optimized/dt_common.ll
 ; postgres/optimized/pgbench.ll
-; qemu/optimized/system_cpu-throttle.c.ll
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/string.ll
 ; sqlite/optimized/sqlite3.ll
@@ -21,7 +20,7 @@
 define i64 @func0000000000000000(i64 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   ret i64 %3
 }
 
@@ -80,7 +79,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   ret i64 %3
 }
 

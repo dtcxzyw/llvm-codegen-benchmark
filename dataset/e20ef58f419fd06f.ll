@@ -1,7 +1,19 @@
 
-; 29 occurrences:
-; cmake/optimized/cmUuid.cxx.ll
+; 3 occurrences:
 ; coreutils-rs/optimized/43xryk8lar2vb35z.ll
+; qemu/optimized/util_uri.c.ll
+; rocksdb/optimized/slice.cc.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000024(i8 %0, i8 %1) #0 {
+entry:
+  %2 = or disjoint i8 %1, 48
+  %3 = icmp ult i8 %1, 10
+  %4 = select i1 %3, i8 %2, i8 %0
+  ret i8 %4
+}
+
+; 28 occurrences:
+; cmake/optimized/cmUuid.cxx.ll
 ; folly/optimized/json.cpp.ll
 ; git/optimized/imap-send.ll
 ; git/optimized/record.ll
@@ -30,10 +42,10 @@
 ; yosys/optimized/cxxrtl_backend.ll
 ; yosys/optimized/fmt.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000014(i8 %0, i8 %1) #0 {
+define i8 @func0000000000000034(i8 %0, i8 %1) #0 {
 entry:
   %2 = or disjoint i8 %1, 48
-  %3 = icmp ult i8 %1, 10
+  %3 = icmp samesign ult i8 %1, 10
   %4 = select i1 %3, i8 %2, i8 %0
   ret i8 %4
 }

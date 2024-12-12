@@ -1,6 +1,6 @@
 func0000000000000006:                   # @func0000000000000006
 	leal	1(%rsi), %ecx
 	movslq	%edi, %rax
-	cmpq	%rsi, %rax
-	cmovlel	%ecx, %eax
+	cmpq	%rax, %rsi
+	cmovgel	%ecx, %eax
 	retq

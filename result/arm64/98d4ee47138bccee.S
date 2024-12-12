@@ -1,0 +1,6 @@
+func0000000000000002:                   // @func0000000000000002
+// %bb.0:                               // %entry
+	mul	x0, x2, x0
+	mov	x1, #0                          // =0x0
+	ret
+                                        // -- End function

@@ -1,6 +1,18 @@
-func00000000000000a8:                   # @func00000000000000a8
+func00000000000001e8:                   # @func00000000000001e8
+	leaq	(%rsi,%rdx), %rax
+	leaq	1(%rdi), %rcx
+	cmpq	%rcx, %rax
+	cmovaq	%rcx, %rax
+	retq
+func0000000000000148:                   # @func0000000000000148
 	leaq	(%rsi,%rdx), %rax
 	leaq	-5(%rdi), %rcx
+	cmpq	%rcx, %rax
+	cmovaq	%rcx, %rax
+	retq
+func00000000000001c8:                   # @func00000000000001c8
+	leaq	(%rsi,%rdx), %rax
+	leaq	-8(%rdi), %rcx
 	cmpq	%rcx, %rax
 	cmovaq	%rcx, %rax
 	retq

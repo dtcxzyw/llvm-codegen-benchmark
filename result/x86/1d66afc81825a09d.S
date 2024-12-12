@@ -13,11 +13,6 @@ func0000000000000012:                   # @func0000000000000012
 	cmpl	%esi, %edi
 	setb	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
-	xorl	%eax, %eax
-	cmpl	%esi, %edi
-	setae	%al
-	retq
 func0000000000000018:                   # @func0000000000000018
 	xorl	%eax, %eax
 	cmpl	%esi, %edi

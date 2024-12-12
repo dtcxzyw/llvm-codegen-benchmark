@@ -28,11 +28,6 @@ func0000000000000008:                   # @func0000000000000008
 	shrq	$3, %rdi
 	imulq	%rdi, %rax
 	retq
-func0000000000000007:                   # @func0000000000000007
-	movl	%esi, %eax
-	shrq	$32, %rdi
-	imulq	%rdi, %rax
-	retq
 func0000000000000006:                   # @func0000000000000006
 	movl	%esi, %eax
 	shrq	$32, %rdi

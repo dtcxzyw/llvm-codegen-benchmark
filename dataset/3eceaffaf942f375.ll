@@ -1,11 +1,11 @@
 
-; 15 occurrences:
+; 17 occurrences:
 ; cmake/optimized/zstd_decompress_block.c.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
+; libquic/optimized/curve25519.c.ll
 ; libquic/optimized/spdy_framer.cc.ll
 ; linux/optimized/zstd_decompress_block.ll
 ; llvm/optimized/BranchProbability.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; mitsuba3/optimized/spiral.cpp.ll
 ; opencv/optimized/falsecolor.cpp.ll
 ; opencv/optimized/perf_contours.cpp.ll
@@ -14,6 +14,8 @@
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; pbrt-v4/optimized/media.cpp.ll
 ; proxygen/optimized/HTTP2Framer.cpp.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i32 %1) #0 {

@@ -2,7 +2,7 @@
 	.long	25136                           # 0x6230
 .LCPI0_1:
 	.long	16944                           # 0x4230
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm1   # ymm1 = [25136,25136,25136,25136,25136,25136,25136,25136]
@@ -17,7 +17,7 @@ func0000000000000031:                   # @func0000000000000031
 	.long	8                               # 0x8
 .LCPI1_2:
 	.long	101                             # 0x65
-func000000000000003a:                   # @func000000000000003a
+func000000000000006a:                   # @func000000000000006a
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
 	vpbroadcastd	.LCPI1_0(%rip), %ymm1   # ymm1 = [1,1,1,1,1,1,1,1]

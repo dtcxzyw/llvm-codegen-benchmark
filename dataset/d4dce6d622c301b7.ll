@@ -1,8 +1,7 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; folly/optimized/DeterministicSchedule.cpp.ll
 ; libquic/optimized/poly1305_vec.c.ll
-; linux/optimized/capability.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000009(i32 %0, i32 %1) #0 {
 entry:

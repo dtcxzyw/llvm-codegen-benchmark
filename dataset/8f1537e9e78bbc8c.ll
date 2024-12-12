@@ -1,5 +1,5 @@
 
-; 43 occurrences:
+; 42 occurrences:
 ; abc/optimized/cecCorr.c.ll
 ; arrow/optimized/coo_converter.cc.ll
 ; fmt/optimized/chrono-test.cc.ll
@@ -24,7 +24,6 @@
 ; ipopt/optimized/IpProbingMuOracle.ll
 ; linux/optimized/compaction.ll
 ; opencv/optimized/brisk.cpp.ll
-; opencv/optimized/tf_importer.cpp.ll
 ; qemu/optimized/migration_ram.c.ll
 ; ruby/optimized/hash.ll
 ; rust-analyzer-rs/optimized/2qyzpr7jeax5a9tm.ll

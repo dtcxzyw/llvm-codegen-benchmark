@@ -16,6 +16,14 @@ func000000000000000d:                   # @func000000000000000d
 	testb	$1, %dil
 	cmovel	%esi, %eax
 	retq
+func0000000000000004:                   # @func0000000000000004
+	vxorpd	%xmm1, %xmm1, %xmm1
+	xorl	%eax, %eax
+	vucomisd	%xmm1, %xmm0
+	seta	%al
+	testb	$1, %dil
+	cmovel	%esi, %eax
+	retq
 func0000000000000002:                   # @func0000000000000002
 	vxorpd	%xmm1, %xmm1, %xmm1
 	xorl	%eax, %eax
@@ -35,14 +43,6 @@ func000000000000000e:                   # @func000000000000000e
 	xorl	%eax, %eax
 	vucomisd	%xmm0, %xmm0
 	setnp	%al
-	testb	$1, %dil
-	cmovel	%esi, %eax
-	retq
-func0000000000000004:                   # @func0000000000000004
-	vxorpd	%xmm1, %xmm1, %xmm1
-	xorl	%eax, %eax
-	vucomisd	%xmm1, %xmm0
-	seta	%al
 	testb	$1, %dil
 	cmovel	%esi, %eax
 	retq

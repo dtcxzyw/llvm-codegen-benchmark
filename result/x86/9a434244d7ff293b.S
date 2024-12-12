@@ -1,57 +1,48 @@
-func00000000000000a8:                   # @func00000000000000a8
-	xorl	%eax, %eax
+func00000000000000bc:                   # @func00000000000000bc
+	leaq	8(%rdi), %rax
+	leaq	32(%rdi), %rcx
 	testl	%esi, %esi
-	sete	%al
-	leaq	(%rax,%rax,2), %rax
-	leaq	14928(%rdi,%rax,8), %rax
+	cmoveq	%rcx, %rax
+	addq	$14920, %rax                    # imm = 0x3A48
 	retq
-func00000000000000aa:                   # @func00000000000000aa
-	xorl	%eax, %eax
+func00000000000000bf:                   # @func00000000000000bf
+	leaq	24(%rdi), %rax
+	leaq	80(%rdi), %rcx
 	cmpl	$711, %esi                      # imm = 0x2C7
-	sete	%al
-	imulq	$56, %rax, %rax
-	leaq	3272(%rdi,%rax), %rax
+	cmoveq	%rcx, %rax
+	addq	$3248, %rax                     # imm = 0xCB0
 	retq
-func000000000000063b:                   # @func000000000000063b
+func000000000000063f:                   # @func000000000000063f
 	xorl	%eax, %eax
 	testl	%esi, %esi
 	setne	%al
 	shll	$6, %eax
 	leaq	136(%rdi,%rax), %rax
 	retq
-func0000000000000622:                   # @func0000000000000622
-	xorl	%eax, %eax
+func0000000000000633:                   # @func0000000000000633
+	leaq	16(%rdi), %rax
+	leaq	4(%rdi), %rcx
 	testl	%esi, %esi
-	setne	%al
-	leaq	(%rax,%rax,2), %rax
-	leaq	80(%rdi,%rax,4), %rax
+	cmoveq	%rcx, %rax
+	addq	$76, %rax
 	retq
-func0000000000000420:                   # @func0000000000000420
+func0000000000000430:                   # @func0000000000000430
 	xorl	%eax, %eax
 	cmpl	$3, %esi
 	setae	%al
 	leaq	28(%rdi,%rax,8), %rax
 	retq
-func0000000000000422:                   # @func0000000000000422
-	xorl	%eax, %eax
+func0000000000000433:                   # @func0000000000000433
+	leaq	17(%rdi), %rax
+	leaq	37(%rdi), %rcx
 	cmpl	$3, %esi
-	setae	%al
-	leaq	(%rax,%rax,4), %rax
-	leaq	201(%rdi,%rax,4), %rax
+	cmovaeq	%rcx, %rax
+	addq	$184, %rax
 	retq
-func00000000000000a2:                   # @func00000000000000a2
-	xorl	%eax, %eax
+func00000000000000b3:                   # @func00000000000000b3
+	leaq	12(%rdi), %rax
+	leaq	60(%rdi), %rcx
 	testl	%esi, %esi
-	sete	%al
-	leaq	(%rax,%rax,2), %rax
-	shll	$4, %eax
-	leaq	108(%rdi,%rax), %rax
-	retq
-func000000000000062a:                   # @func000000000000062a
-	xorl	%eax, %eax
-	testl	%esi, %esi
-	setne	%al
-	leaq	(%rax,%rax,2), %rax
-	shll	$4, %eax
-	leaq	56(%rdi,%rax), %rax
+	cmoveq	%rcx, %rax
+	addq	$96, %rax
 	retq

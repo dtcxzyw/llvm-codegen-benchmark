@@ -4,22 +4,22 @@ func000000000000000c:                   # @func000000000000000c
 	imulq	$272, %rax, %rax                # imm = 0x110
 	addq	%rdi, %rax
 	retq
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	movzbl	%sil, %eax
 	addl	$-16, %eax
 	leaq	(%rdi,%rax,8), %rax
 	retq
-func000000000000002e:                   # @func000000000000002e
+func000000000000002f:                   # @func000000000000002f
 	movzbl	%sil, %eax
 	addl	$-49, %eax
 	shlq	$4, %rax
 	addq	%rdi, %rax
 	retq
-func000000000000001e:                   # @func000000000000001e
+func000000000000001f:                   # @func000000000000001f
 	movzbl	%sil, %eax
 	leaq	12(%rax,%rdi), %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	movzbl	%sil, %eax
 	decl	%eax
 	leaq	(%rdi,%rax,8), %rax
@@ -46,7 +46,7 @@ func0000000000000008:                   # @func0000000000000008
 	addl	$-32, %eax
 	leaq	(%rdi,%rax,4), %rax
 	retq
-func000000000000003e:                   # @func000000000000003e
+func000000000000003f:                   # @func000000000000003f
 	movzbl	%sil, %eax
 	leaq	4(%rdi,%rax,4), %rax
 	retq

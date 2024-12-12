@@ -1,8 +1,11 @@
 
-; 341 occurrences:
+; 337 occurrences:
 ; arrow/optimized/basic_decimal.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; box2d/optimized/b2_collision.cpp.ll
 ; box2d/optimized/b2_polygon_shape.cpp.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -48,7 +51,6 @@
 ; eastl/optimized/TestAlgorithm.cpp.ll
 ; eastl/optimized/TestBitVector.cpp.ll
 ; eastl/optimized/TestBitset.cpp.ll
-; eastl/optimized/TestCharTraits.cpp.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestExtra.cpp.ll
 ; eastl/optimized/TestFixedString.cpp.ll
@@ -59,7 +61,6 @@
 ; eastl/optimized/TestOptional.cpp.ll
 ; eastl/optimized/TestRingBuffer.cpp.ll
 ; eastl/optimized/TestString.cpp.ll
-; eastl/optimized/TestUtility.cpp.ll
 ; eastl/optimized/TestVariant.cpp.ll
 ; eastl/optimized/TestVector.cpp.ll
 ; eastl/optimized/TestVectorMap.cpp.ll
@@ -81,7 +82,6 @@
 ; hwloc/optimized/hwloc-info.ll
 ; hwloc/optimized/lstopo-lstopo.ll
 ; hwloc/optimized/lstopo_no_graphics-lstopo.ll
-; hyperscan/optimized/huge.cpp.ll
 ; hyperscan/optimized/ng_puff.cpp.ll
 ; icu/optimized/collationbuilder.ll
 ; linux/optimized/core.ll
@@ -100,10 +100,10 @@
 ; llvm/optimized/AArch64LegalizerInfo.cpp.ll
 ; llvm/optimized/AArch64PostLegalizerCombiner.cpp.ll
 ; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
-; llvm/optimized/AArch64SLSHardening.cpp.ll
 ; llvm/optimized/AArch64TargetMachine.cpp.ll
 ; llvm/optimized/ABIInfoImpl.cpp.ll
 ; llvm/optimized/APINotesReader.cpp.ll
+; llvm/optimized/APINotesYAMLCompiler.cpp.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTDiagnostic.cpp.ll
@@ -187,7 +187,6 @@
 ; llvm/optimized/LoopAccessAnalysis.cpp.ll
 ; llvm/optimized/LoopUnrollPass.cpp.ll
 ; llvm/optimized/LowLevelTypeUtils.cpp.ll
-; llvm/optimized/MSVC.cpp.ll
 ; llvm/optimized/MacOSKeychainAPIChecker.cpp.ll
 ; llvm/optimized/MemRegion.cpp.ll
 ; llvm/optimized/Metadata.cpp.ll
@@ -260,7 +259,6 @@
 ; mini-lsm-rs/optimized/2j7sj03n10nloiwr.ll
 ; mini-lsm-rs/optimized/4vkix0mjdn2idd4b.ll
 ; mini-lsm-rs/optimized/fxok0uwzlvxge5x.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; nlohmann_json/optimized/unit-bjdata.cpp.ll
 ; nlohmann_json/optimized/unit-bson.cpp.ll
@@ -276,7 +274,6 @@
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/macroAssembler_x86.ll
-; openjdk/optimized/symbolTable.ll
 ; openjdk/optimized/xAddressSpaceLimit.ll
 ; openjdk/optimized/xPhysicalMemoryBacking_linux.ll
 ; openjdk/optimized/zAddressSpaceLimit.ll
@@ -295,8 +292,6 @@
 ; qemu/optimized/linux-user_mmap.c.ll
 ; qemu/optimized/source_s_addMagsF16.c.ll
 ; qemu/optimized/source_s_subMagsF16.c.ll
-; qemu/optimized/system_cpus.c.ll
-; qemu/optimized/target_riscv_fpu_helper.c.ll
 ; recastnavigation/optimized/RecastContour.cpp.ll
 ; ring-rs/optimized/2ynmf0orlf9ml2dm.ll
 ; ring-rs/optimized/3r96bqjv88cu5m8n.ll
@@ -340,6 +335,7 @@
 ; wasmtime-rs/optimized/2lz954crgst412nx.ll
 ; wolfssl/optimized/internal.c.ll
 ; z3/optimized/smt_context.cpp.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1) #0 {

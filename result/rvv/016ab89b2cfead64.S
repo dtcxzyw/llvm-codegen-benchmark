@@ -15,7 +15,7 @@ func0000000000000002:                   # @func0000000000000002
 	vfmul.vf	v8, v8, fa5
 	fli.s	fa5, 65536.0
 	vmflt.vf	v12, v8, fa5
-	vmand.mm	v0, v12, v0
+	vmand.mm	v0, v0, v12
 	ret
 .LCPI2_0:
 	.word	0x477fff00                      # float 65535
@@ -46,5 +46,5 @@ func000000000000000a:                   # @func000000000000000a
 	vfmul.vf	v8, v8, fa5
 	fmv.w.x	fa5, zero
 	vmfle.vf	v12, v8, fa5
-	vmand.mm	v0, v12, v0
+	vmand.mm	v0, v0, v12
 	ret

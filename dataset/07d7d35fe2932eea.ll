@@ -1,9 +1,8 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; linux/optimized/airtime.ll
 ; linux/optimized/alps.ll
 ; linux/optimized/cistpl.ll
-; linux/optimized/ht.ll
 ; linux/optimized/igmp.ll
 ; linux/optimized/intel-gtt.ll
 ; linux/optimized/mcast.ll

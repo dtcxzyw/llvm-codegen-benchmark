@@ -1,9 +1,8 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; git/optimized/rev-parse.ll
 ; hermes/optimized/JSLibInternal.cpp.ll
 ; llvm/optimized/TargetLoweringObjectFileImpl.cpp.ll
-; ruby/optimized/ractor.ll
 ; wireshark/optimized/dftest.c.ll
 ; wireshark/optimized/packet-wassp.c.ll
 ; Function Attrs: nounwind
@@ -12,7 +11,7 @@ entry:
   %2 = zext i1 %1 to i32
   %3 = select i1 %0, i32 0, i32 2
   %4 = or disjoint i32 %3, %2
-  %5 = or disjoint i32 %4, 4
+  %5 = or disjoint i32 %4, 64
   ret i32 %5
 }
 

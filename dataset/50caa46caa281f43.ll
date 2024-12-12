@@ -1,5 +1,18 @@
 
-; 56 occurrences:
+; 1 occurrences:
+; mitsuba3/optimized/mesh.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000030(i64 %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 32
+  %3 = trunc nuw nsw i64 %2 to i32
+  %4 = trunc i64 %0 to i32
+  %5 = sub i32 %4, %3
+  ret i32 %5
+}
+
+; 57 occurrences:
+; lvgl/optimized/lv_draw_sw_line.ll
 ; minetest/optimized/CGUIButton.cpp.ll
 ; minetest/optimized/CGUICheckBox.cpp.ll
 ; minetest/optimized/CGUIComboBox.cpp.ll
@@ -66,10 +79,9 @@ entry:
   ret i32 %5
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; abc/optimized/saigIsoFast.c.ll
 ; cvc5/optimized/linear_equality.cpp.ll
-; linux/optimized/mmconf-fam10h_64.ll
 ; llvm/optimized/Commit.cpp.ll
 ; llvm/optimized/MacroInfo.cpp.ll
 ; llvm/optimized/RawCommentList.cpp.ll

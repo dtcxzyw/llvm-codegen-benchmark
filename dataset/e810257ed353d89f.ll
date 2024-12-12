@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 27 occurrences:
 ; abc/optimized/cuddZddUtil.c.ll
 ; abc/optimized/ifDec16.c.ll
 ; abc/optimized/ivyCut.c.ll
@@ -8,7 +8,6 @@
 ; flac/optimized/window.c.ll
 ; libquic/optimized/f_enum.c.ll
 ; libquic/optimized/f_int.c.ll
-; linux/optimized/mpih-mul.ll
 ; ncnn/optimized/innerproduct_x86.cpp.ll
 ; ncnn/optimized/padding_x86.cpp.ll
 ; ncnn/optimized/padding_x86_avx.cpp.ll
@@ -29,7 +28,7 @@
 ; redis/optimized/t_zset.ll
 ; ruby/optimized/marshal.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 24
   %3 = zext nneg i32 %2 to i64
@@ -95,7 +94,7 @@ entry:
 ; stb/optimized/stb_vorbis.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 2
   %3 = zext nneg i32 %2 to i64
@@ -108,7 +107,7 @@ entry:
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; postgres/optimized/fastpath.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000161(i64 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 1
   %3 = zext i32 %2 to i64
@@ -122,7 +121,7 @@ entry:
 ; hermes/optimized/regcomp.c.ll
 ; llvm/optimized/regcomp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000121(i64 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 24
   %3 = zext i32 %2 to i64
@@ -134,12 +133,12 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/umutablecptrie.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000f4(i64 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 4
   %3 = zext nneg i32 %2 to i64
   %4 = add nuw nsw i64 %0, 32
-  %5 = icmp ult i64 %4, %3
+  %5 = icmp samesign ult i64 %4, %3
   ret i1 %5
 }
 
@@ -147,12 +146,12 @@ entry:
 ; opencv/optimized/binary_descriptor.cpp.ll
 ; opencv/optimized/dxt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001f4(i64 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 1
   %3 = zext nneg i32 %2 to i64
   %4 = add nuw nsw i64 %0, 2
-  %5 = icmp ult i64 %4, %3
+  %5 = icmp samesign ult i64 %4, %3
   ret i1 %5
 }
 

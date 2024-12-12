@@ -6,7 +6,7 @@
 ; llvm/optimized/X86FlagsCopyLowering.cpp.ll
 ; mitsuba3/optimized/compiler.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000181(i32 %0, i32 %1) #0 {
+define i8 @func0000000000000301(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = zext i1 %2 to i8

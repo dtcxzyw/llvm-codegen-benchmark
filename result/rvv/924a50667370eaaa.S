@@ -17,7 +17,7 @@ func0000000000000014:                   # @func0000000000000014
 	vmacc.vx	v10, a0, v12
 	lui	a0, 12
 	addi	a0, a0, 3
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	vmsgt.vx	v0, v8, a0
 	vmv.v.i	v8, 0
 	vmerge.vim	v8, v8, 1, v0

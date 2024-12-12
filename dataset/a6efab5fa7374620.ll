@@ -1,5 +1,5 @@
 
-; 59 occurrences:
+; 58 occurrences:
 ; abc/optimized/inflate.c.ll
 ; arrow/optimized/compare_internal.cc.ll
 ; assimp/optimized/AMFImporter.cpp.ll
@@ -21,7 +21,6 @@
 ; libquic/optimized/inflate.c.ll
 ; libwebp/optimized/tree_enc.c.ll
 ; lief/optimized/psa_crypto.c.ll
-; linux/optimized/severity.ll
 ; lua/optimized/lstrlib.ll
 ; luajit/optimized/lj_strscan.ll
 ; luajit/optimized/lj_strscan_dyn.ll
@@ -68,23 +67,6 @@ entry:
   ret i1 %4
 }
 
-; 7 occurrences:
-; draco/optimized/point_cloud_decoder.cc.ll
-; libjpeg-turbo/optimized/jdhuff.c.ll
-; linux/optimized/nl80211.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
-; php/optimized/ir_emit.ll
-; postgres/optimized/network.ll
-; qemu/optimized/hw_nvme_ctrl.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i8 %1) #0 {
-entry:
-  %2 = zext i8 %1 to i32
-  %3 = select i1 %0, i32 8, i32 4
-  %4 = icmp ult i32 %3, %2
-  ret i1 %4
-}
-
 ; 9 occurrences:
 ; linux/optimized/cypress_ps2.ll
 ; linux/optimized/intel_fbc.ll
@@ -96,11 +78,27 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; wolfssl/optimized/ssl.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i8 %1) #0 {
+define i1 @func0000000000000018(i1 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = select i1 %0, i32 8, i32 2
-  %4 = icmp ugt i32 %3, %2
+  %4 = icmp samesign ugt i32 %3, %2
+  ret i1 %4
+}
+
+; 6 occurrences:
+; draco/optimized/point_cloud_decoder.cc.ll
+; libjpeg-turbo/optimized/jdhuff.c.ll
+; linux/optimized/nl80211.ll
+; php/optimized/ir_emit.ll
+; postgres/optimized/network.ll
+; qemu/optimized/hw_nvme_ctrl.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i8 %1) #0 {
+entry:
+  %2 = zext i8 %1 to i32
+  %3 = select i1 %0, i32 31, i32 63
+  %4 = icmp samesign ult i32 %3, %2
   ret i1 %4
 }
 
@@ -115,16 +113,17 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/src.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/hdmi.ll
 ; opencv/optimized/persistence_yml.cpp.ll
 ; protobuf/optimized/lexer.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = select i1 %0, i32 4, i32 5
+  %3 = select i1 %0, i32 112, i32 101
   %4 = icmp eq i32 %3, %2
   ret i1 %4
 }
@@ -132,22 +131,22 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/cypress_ps2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000005(i1 %0, i8 %1) #0 {
+define i1 @func0000000000000015(i1 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = select i1 %0, i32 8, i32 3
-  %4 = icmp ule i32 %3, %2
+  %4 = icmp samesign ule i32 %3, %2
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; icu/optimized/ucnv_lmb.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(i1 %0, i8 %1) #0 {
+define i1 @func0000000000000039(i1 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = select i1 %0, i32 19, i32 11
-  %4 = icmp uge i32 %3, %2
+  %4 = icmp samesign uge i32 %3, %2
   ret i1 %4
 }
 

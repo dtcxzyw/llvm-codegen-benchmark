@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	72                              # 0x48
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpmulld	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
 	vptestnmd	%ymm0, %ymm0, %k0

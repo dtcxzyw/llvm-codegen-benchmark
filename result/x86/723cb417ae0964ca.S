@@ -10,6 +10,12 @@ func0000000000000004:                   # @func0000000000000004
 	shrq	$2, %rax
 	addq	%rdi, %rax
 	retq
+func0000000000000009:                   # @func0000000000000009
+	movl	$1, %eax
+	subq	%rsi, %rax
+	shrq	%rax
+	addq	%rdi, %rax
+	retq
 func000000000000000e:                   # @func000000000000000e
 	movl	$8, %eax
 	subq	%rsi, %rax

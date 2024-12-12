@@ -110,12 +110,3 @@ func0000000000000020:                   # @func0000000000000020
 	vpmovm2d	%k0, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
-.LCPI14_0:
-	.long	99                              # 0x63
-func0000000000000040:                   # @func0000000000000040
-	vpsllw	$15, %xmm1, %xmm1
-	vpmovw2m	%xmm1, %k1
-	vpcmpnleud	.LCPI14_0(%rip){1to8}, %ymm2, %k0 {%k1}
-	vpmovm2d	%k0, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
-	retq

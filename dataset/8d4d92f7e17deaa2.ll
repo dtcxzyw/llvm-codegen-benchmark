@@ -107,13 +107,13 @@
 ; tinympc/optimized/admm.cpp.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000256(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000004a6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %2, %1
   %4 = sdiv i64 %3, 2
   %5 = shl nsw i64 %4, 1
   %6 = add nsw i64 %5, %1
-  %7 = icmp sgt i64 %6, %0
+  %7 = icmp slt i64 %0, %6
   ret i1 %7
 }
 
@@ -180,13 +180,13 @@ entry:
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000246(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000486(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %2, %1
   %4 = sdiv i64 %3, 2
   %5 = shl nsw i64 %4, 1
   %6 = add i64 %5, %1
-  %7 = icmp sgt i64 %6, %0
+  %7 = icmp slt i64 %0, %6
   ret i1 %7
 }
 

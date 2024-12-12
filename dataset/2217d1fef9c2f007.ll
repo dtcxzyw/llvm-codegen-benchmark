@@ -4,7 +4,7 @@
 ; linux/optimized/tg3.ll
 ; openjdk/optimized/png.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 536870912
   %4 = icmp eq i32 %3, 0
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/libata-eh.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = icmp eq i32 %3, 0
@@ -29,7 +29,7 @@ entry:
 ; linux/optimized/drm_property.ll
 ; linux/optimized/pt.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65472
   %4 = icmp eq i32 %3, 0

@@ -18,6 +18,11 @@ func0000000000000008:                   # @func0000000000000008
 	seta	%al
 	andb	%dil, %al
 	retq
+func0000000000000019:                   # @func0000000000000019
+	cmpb	%dl, %sil
+	setae	%al
+	andb	%dil, %al
+	retq
 func000000000000000b:                   # @func000000000000000b
 	cmpb	%dl, %sil
 	setge	%al
@@ -36,6 +41,11 @@ func0000000000000007:                   # @func0000000000000007
 func0000000000000009:                   # @func0000000000000009
 	cmpb	%dl, %sil
 	setae	%al
+	andb	%dil, %al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpb	%dl, %sil
+	setb	%al
 	andb	%dil, %al
 	retq
 func0000000000000006:                   # @func0000000000000006

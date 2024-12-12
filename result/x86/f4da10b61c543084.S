@@ -5,3 +5,10 @@ func000000000000003b:                   # @func000000000000003b
 	shlq	$48, %rax
 	orq	%rdx, %rax
 	retq
+func000000000000003d:                   # @func000000000000003d
+	movq	%rdi, %rax
+	shlq	$8, %rdx
+	orq	%rsi, %rdx
+	shlq	$16, %rax
+	orq	%rdx, %rax
+	retq

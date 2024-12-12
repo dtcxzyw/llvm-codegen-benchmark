@@ -1,6 +1,6 @@
 
-%struct.Mig_Obj_t_.2765506 = type { [4 x %struct.Mig_Fan_t_.2765507] }
-%struct.Mig_Fan_t_.2765507 = type { i32 }
+%struct.Mig_Obj_t_.2877741 = type { [4 x %struct.Mig_Fan_t_.2877742] }
+%struct.Mig_Fan_t_.2877742 = type { i32 }
 
 ; 416 occurrences:
 ; abc/optimized/giaCof.c.ll
@@ -285,7 +285,6 @@
 ; llvm/optimized/PtrState.cpp.ll
 ; llvm/optimized/RISCVCodeGenPrepare.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll
@@ -368,6 +367,7 @@
 ; llvm/optimized/X86TargetMachine.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; llvm/optimized/X86WinEHState.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; openjdk/optimized/c1_Runtime1.ll
 ; openjdk/optimized/compilationPolicy.ll
 ; openjdk/optimized/compileBroker.ll
@@ -443,7 +443,7 @@ entry:
   ret ptr %5
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; abc/optimized/mpmMap.c.ll
 ; cpython/optimized/Hacl_Hash_SHA2.ll
 ; gromacs/optimized/pme_gather.cpp.ll
@@ -459,14 +459,13 @@ entry:
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
 ; postgres/optimized/spell.ll
-; recastnavigation/optimized/fastlz.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000014(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 4095
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr %struct.Mig_Obj_t_.2765506, ptr %0, i64 %4
+  %5 = getelementptr %struct.Mig_Obj_t_.2877741, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -474,12 +473,12 @@ entry:
 ; hermes/optimized/MD5.cpp.ll
 ; llvm/optimized/MD5.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 63
   %narrow = sub nuw nsw i32 64, %2
   %3 = zext nneg i32 %narrow to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 

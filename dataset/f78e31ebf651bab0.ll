@@ -1,12 +1,13 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; clamav/optimized/extract.cpp.ll
-; coreutils-rs/optimized/qcad8r5ga44hvbl.ll
 ; hermes/optimized/Host.cpp.ll
 ; lief/optimized/ecp.c.ll
 ; linux/optimized/intel_engine_cs.ll
 ; llvm/optimized/Host.cpp.ll
 ; rust-analyzer-rs/optimized/1j91i64oabb508eh.ll
+; zed-rs/optimized/a9o648rm8h3erlto15zyd64wi.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i32 %0, i1 %1) #0 {
 entry:
@@ -16,10 +17,8 @@ entry:
   ret i8 %4
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; clamav/optimized/extract.cpp.ll
-; libwebp/optimized/frame_dec.c.ll
-; linux/optimized/intel_cdclk.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000008(i32 %0, i1 %1) #0 {
 entry:
@@ -41,6 +40,18 @@ entry:
   %narrow = select i1 %2, i1 %1, i1 false
   %3 = zext i1 %narrow to i8
   ret i8 %3
+}
+
+; 2 occurrences:
+; libwebp/optimized/frame_dec.c.ll
+; linux/optimized/intel_cdclk.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000018(i32 %0, i1 %1) #0 {
+entry:
+  %2 = zext i1 %1 to i8
+  %3 = icmp samesign ugt i32 %0, 266667
+  %4 = select i1 %3, i8 2, i8 %2
+  ret i8 %4
 }
 
 attributes #0 = { nounwind }

@@ -1,16 +1,14 @@
 
-; 5 occurrences:
+; 3 occurrences:
 ; clamav/optimized/readdb.c.ll
 ; hdf5/optimized/H5checksum.c.ll
-; linux/optimized/isadma.ll
 ; minetest/optimized/CImage.cpp.ll
-; wireshark/optimized/packet-asterix.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw nsw i32 %2, 8
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = and i32 %4, 65280
   ret i32 %5
 }

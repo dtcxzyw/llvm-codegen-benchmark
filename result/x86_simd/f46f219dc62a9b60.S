@@ -13,3 +13,13 @@ func000000000000000d:                   # @func000000000000000d
 	vpsubb	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
+func000000000000000f:                   # @func000000000000000f
+	vpmovwb	%ymm1, %xmm1
+	vpsubb	%xmm1, %xmm0, %xmm0
+	vzeroupper
+	retq
+func000000000000000a:                   # @func000000000000000a
+	vpmovwb	%ymm1, %xmm1
+	vpsubb	%xmm1, %xmm0, %xmm0
+	vzeroupper
+	retq

@@ -1,58 +1,29 @@
-func00000000000000aa:                   // @func00000000000000aa
+func000000000000014a:                   // @func000000000000014a
 // %bb.0:                               // %entry
-	sub	v4.4s, v1.4s, v3.4s
-	sub	v5.4s, v0.4s, v2.4s
-	cmgt	v1.4s, v1.4s, v3.4s
-	cmgt	v0.4s, v0.4s, v2.4s
-	cmgt	v4.4s, v4.4s, #0
-	cmgt	v5.4s, v5.4s, #0
-	uzp1	v0.8h, v0.8h, v1.8h
-	uzp1	v2.8h, v5.8h, v4.8h
-	and	v0.16b, v0.16b, v2.16b
-	xtn	v0.8b, v0.8h
+	subs	w8, w0, w1
+	ccmp	w8, #0, #4, gt
+	cset	w0, gt
 	ret
                                         // -- End function
-func0000000000000084:                   // @func0000000000000084
+func0000000000000104:                   // @func0000000000000104
 // %bb.0:                               // %entry
-	movi	v4.4s, #16, lsl #16
-	sub	v5.4s, v3.4s, v1.4s
-	sub	v6.4s, v2.4s, v0.4s
-	cmhi	v1.4s, v3.4s, v1.4s
-	cmhi	v0.4s, v2.4s, v0.4s
-	cmhi	v5.4s, v5.4s, v4.4s
-	cmhi	v4.4s, v6.4s, v4.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	uzp1	v2.8h, v4.8h, v5.8h
-	and	v0.16b, v0.16b, v2.16b
-	xtn	v0.8b, v0.8h
+	mov	w8, #1048576                    // =0x100000
+	subs	w9, w1, w0
+	ccmp	w9, w8, #0, hi
+	cset	w0, hi
 	ret
                                         // -- End function
-func00000000000000a8:                   // @func00000000000000a8
+func0000000000000148:                   // @func0000000000000148
 // %bb.0:                               // %entry
-	sub	v4.4s, v1.4s, v3.4s
-	sub	v5.4s, v0.4s, v2.4s
-	cmhi	v1.4s, v1.4s, v3.4s
-	cmhi	v0.4s, v0.4s, v2.4s
-	cmgt	v4.4s, v4.4s, #0
-	cmgt	v5.4s, v5.4s, #0
-	uzp1	v0.8h, v0.8h, v1.8h
-	uzp1	v2.8h, v5.8h, v4.8h
-	and	v0.16b, v0.16b, v2.16b
-	xtn	v0.8b, v0.8h
+	subs	w8, w0, w1
+	ccmp	w8, #0, #4, hi
+	cset	w0, gt
 	ret
                                         // -- End function
-func0000000000000088:                   // @func0000000000000088
+func0000000000000108:                   // @func0000000000000108
 // %bb.0:                               // %entry
-	movi	v4.4s, #10
-	sub	v5.4s, v1.4s, v3.4s
-	sub	v6.4s, v0.4s, v2.4s
-	cmhi	v1.4s, v1.4s, v3.4s
-	cmhi	v0.4s, v0.4s, v2.4s
-	cmhi	v5.4s, v5.4s, v4.4s
-	cmhi	v4.4s, v6.4s, v4.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	uzp1	v2.8h, v4.8h, v5.8h
-	and	v0.16b, v0.16b, v2.16b
-	xtn	v0.8b, v0.8h
+	subs	w8, w0, w1
+	ccmp	w8, #10, #0, hi
+	cset	w0, hi
 	ret
                                         // -- End function

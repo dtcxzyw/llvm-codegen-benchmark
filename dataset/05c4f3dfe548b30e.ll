@@ -17,7 +17,7 @@ entry:
   ret ptr %5
 }
 
-; 552 occurrences:
+; 556 occurrences:
 ; abc/optimized/abcCut.c.ll
 ; abc/optimized/aigCanon.c.ll
 ; abc/optimized/aigRet.c.ll
@@ -27,7 +27,11 @@ entry:
 ; abc/optimized/cutTruth.c.ll
 ; abc/optimized/giaEra2.c.ll
 ; abc/optimized/giaFanout.c.ll
+; abc/optimized/giaJf.c.ll
+; abc/optimized/giaMf.c.ll
 ; abc/optimized/giaNf.c.ll
+; abc/optimized/giaPf.c.ll
+; abc/optimized/giaSatLE.c.ll
 ; abc/optimized/ifTune.c.ll
 ; abc/optimized/ivyFraig.c.ll
 ; abc/optimized/kitDsd.c.ll
@@ -39,6 +43,7 @@ entry:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/matches_relation_factory.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; bullet3/optimized/btConvexPolyhedron.ll
 ; clamav/optimized/crypt.cpp.ll
@@ -481,8 +486,6 @@ entry:
 ; lua/optimized/lvm.ll
 ; luajit/optimized/lj_lib.ll
 ; luajit/optimized/lj_lib_dyn.ll
-; luajit/optimized/lj_opt_loop.ll
-; luajit/optimized/lj_opt_loop_dyn.ll
 ; luajit/optimized/lj_snap.ll
 ; luajit/optimized/lj_snap_dyn.ll
 ; lz4/optimized/lz4hc.c.ll
@@ -504,7 +507,6 @@ entry:
 ; memcached/optimized/memcached_debug-storage.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
-; meshoptimizer/optimized/indexcodec.cpp.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
@@ -534,6 +536,8 @@ entry:
 ; openjdk/optimized/methodHandles.ll
 ; openjdk/optimized/mlib_ImageLookUp_Bit.ll
 ; openjdk/optimized/superwordVTransformBuilder.ll
+; openusd/optimized/decodeframe.c.ll
+; openusd/optimized/decodemv.c.ll
 ; php/optimized/pcre2_dfa_match.ll
 ; php/optimized/pcre2_match.ll
 ; protobuf/optimized/command_line_interface.cc.ll
@@ -571,16 +575,16 @@ entry:
 ; zstd/optimized/zstd_v03.c.ll
 ; zstd/optimized/zstd_v04.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 63
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 24
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 24
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   ret ptr %5
 }
 
-; 32 occurrences:
+; 29 occurrences:
 ; clamav/optimized/mszipd.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; cpython/optimized/Hacl_Hash_MD5.ll
@@ -603,9 +607,6 @@ entry:
 ; postgres/optimized/gistvacuum.ll
 ; postgres/optimized/spgvacuum.ll
 ; postgres/optimized/spgxlog.ll
-; protobuf/optimized/descriptor.cc.ll
-; protobuf/optimized/extension_set.cc.ll
-; protobuf/optimized/map.cc.ll
 ; qemu/optimized/hw_net_e1000e_core.c.ll
 ; qemu/optimized/hw_net_e1000x_common.c.ll
 ; qemu/optimized/hw_net_igb_core.c.ll
@@ -659,11 +660,11 @@ entry:
 ; qemu/optimized/hw_net_ne2000.c.ll
 ; qemu/optimized/hw_scsi_lsi53c895a.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001c(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 3544
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 3544
   %5 = getelementptr i8, ptr %4, i64 %3
   ret ptr %5
 }
@@ -671,16 +672,17 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/hw_net_ne2000.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000c(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -2
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 8552
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 8552
   %5 = getelementptr i8, ptr %4, i64 %3
   ret ptr %5
 }
 
-; 13 occurrences:
+; 14 occurrences:
+; clamav/optimized/bytecode_vm.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
@@ -695,12 +697,12 @@ entry:
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openjdk/optimized/ps_core.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -4
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 12
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 12
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -709,25 +711,26 @@ entry:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000013(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 32767
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 2
-  %5 = getelementptr nusw i16, ptr %4, i64 %3
+  %5 = getelementptr nusw nuw i16, ptr %4, i64 %3
   ret ptr %5
 }
 
-; 2 occurrences:
-; openusd/optimized/decodeframe.c.ll
-; openusd/optimized/decodemv.c.ll
+; 3 occurrences:
+; luajit/optimized/lj_opt_loop.ll
+; luajit/optimized/lj_opt_loop_dyn.ll
+; meshoptimizer/optimized/indexcodec.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001b(ptr %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 31
+  %2 = and i32 %1, 15
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw nuw i8, ptr %0, i64 8144
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %4 = getelementptr nusw i8, ptr %0, i64 -16
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   ret ptr %5
 }
 

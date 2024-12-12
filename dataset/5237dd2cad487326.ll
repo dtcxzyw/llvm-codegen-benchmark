@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 32 occurrences:
 ; abc/optimized/cbaBlast.c.ll
 ; abc/optimized/cuddAddWalsh.c.ll
 ; abc/optimized/wlcBlast.c.ll
@@ -8,7 +8,6 @@
 ; graphviz/optimized/triang.c.ll
 ; gromacs/optimized/reduce.cpp.ll
 ; icu/optimized/usearch.ll
-; imgui/optimized/imgui_widgets.cpp.ll
 ; lightgbm/optimized/network.cpp.ll
 ; linux/optimized/vmalloc.ll
 ; linux/optimized/vt.ll
@@ -42,7 +41,7 @@ entry:
   ret i64 %5
 }
 
-; 50 occurrences:
+; 49 occurrences:
 ; abc/optimized/SimpSolver.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
 ; abc/optimized/giaCone.c.ll
@@ -55,7 +54,6 @@ entry:
 ; gromacs/optimized/bwt.c.ll
 ; icu/optimized/umutablecptrie.ll
 ; icu/optimized/usearch.ll
-; imgui/optimized/imgui_widgets.cpp.ll
 ; lightgbm/optimized/gradient_discretizer.cpp.ll
 ; lightgbm/optimized/network.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll

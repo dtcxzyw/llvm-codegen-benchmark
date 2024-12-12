@@ -1,5 +1,5 @@
 
-; 980 occurrences:
+; 982 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; graphviz/optimized/gvrender_core_svg.c.ll
 ; graphviz/optimized/gvrender_core_tk.c.ll
@@ -640,7 +640,6 @@
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVMergeBaseOffset.cpp.ll
@@ -980,6 +979,9 @@
 ; z3/optimized/euf_proof.cpp.ll
 ; z3/optimized/euf_solver.cpp.ll
 ; z3/optimized/sat_clause.cpp.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(ptr %0) #0 {
 entry:

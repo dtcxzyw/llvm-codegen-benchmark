@@ -12,6 +12,6 @@ func0000000000000001:                   # @func0000000000000001
 	vsrl.vi	v12, v10, 31
 	vadd.vv	v10, v10, v12
 	vsra.vi	v10, v10, 1
-	vmseq.vv	v12, v10, v8
+	vmseq.vv	v12, v8, v10
 	vmand.mm	v0, v0, v12
 	ret

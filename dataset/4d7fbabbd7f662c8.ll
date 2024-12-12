@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; linux/optimized/e1000_main.ll
@@ -11,7 +11,6 @@
 ; raylib/optimized/rtext.c.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
-; wireshark/optimized/dot11decrypt_tkip.c.ll
 ; wireshark/optimized/logcat.c.ll
 ; wireshark/optimized/packet-eth.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
@@ -19,7 +18,7 @@
 define i16 @func0000000000000004(i16 %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i16
-  %4 = or disjoint i16 %3, %1
+  %4 = or disjoint i16 %1, %3
   %5 = add i16 %4, %0
   ret i16 %5
 }
@@ -32,8 +31,8 @@ entry:
 define i16 @func0000000000000007(i16 %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i16
-  %4 = or disjoint i16 %3, %1
-  %5 = add nuw nsw i16 %4, %0
+  %4 = or disjoint i16 %1, %3
+  %5 = add nuw nsw i16 %0, %4
   ret i16 %5
 }
 
@@ -43,8 +42,8 @@ entry:
 define i16 @func0000000000000000(i16 %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i16
-  %4 = or i16 %3, %1
-  %5 = add i16 %4, %0
+  %4 = or i16 %1, %3
+  %5 = add i16 %0, %4
   ret i16 %5
 }
 

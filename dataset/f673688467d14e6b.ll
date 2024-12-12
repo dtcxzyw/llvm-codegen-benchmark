@@ -1,6 +1,9 @@
 
-; 8 occurrences:
+; 11 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; c3c/optimized/sema_casts.c.ll
+; darktable/optimized/darkroom.c.ll
 ; gromacs/optimized/perf_est.cpp.ll
 ; openblas/optimized/dlasv2.c.ll
 ; opencv/optimized/boost.cpp.ll

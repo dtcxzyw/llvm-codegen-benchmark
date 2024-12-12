@@ -22,14 +22,14 @@ func0000000000000004:                   # @func0000000000000004
 	.quad	0x4076800000000000              # double 360
 func0000000000000003:                   # @func0000000000000003
 	vmulsd	.LCPI2_0(%rip), %xmm1, %xmm1
-	vaddsd	%xmm0, %xmm1, %xmm0
+	vaddsd	%xmm1, %xmm0, %xmm0
 	vucomisd	.LCPI2_1(%rip), %xmm0
 	setb	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
 	vxorpd	%xmm2, %xmm2, %xmm2
 	vmulsd	%xmm2, %xmm1, %xmm1
-	vaddsd	%xmm0, %xmm1, %xmm0
+	vaddsd	%xmm1, %xmm0, %xmm0
 	vucomisd	%xmm0, %xmm0
 	setp	%al
 	retq

@@ -10,12 +10,11 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; darktable/optimized/introspection_equalizer.c.ll
 ; libquic/optimized/hpack_output_stream.cc.ll
 ; lief/optimized/rsa.c.ll
 ; llama.cpp/optimized/ggml-quants.c.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:

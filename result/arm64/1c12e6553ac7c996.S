@@ -16,6 +16,12 @@ func0000000000000004:                   // @func0000000000000004
 	sub	x0, x8, #2048
 	ret
                                         // -- End function
+func0000000000000002:                   // @func0000000000000002
+// %bb.0:                               // %entry
+	sub	x8, x0, x1
+	sub	x0, x8, #8
+	ret
+                                        // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
 	sub	x8, x0, x1

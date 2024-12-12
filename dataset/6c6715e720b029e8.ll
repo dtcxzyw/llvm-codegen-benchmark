@@ -1,6 +1,5 @@
 
-; 6 occurrences:
-; darktable/optimized/KdcDecoder.cpp.ll
+; 5 occurrences:
 ; gromacs/optimized/symtab.cpp.ll
 ; openusd/optimized/level.cpp.ll
 ; openusd/optimized/patchTable.cpp.ll

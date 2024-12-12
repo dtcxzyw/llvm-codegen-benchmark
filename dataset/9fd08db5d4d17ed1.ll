@@ -9,7 +9,7 @@ define i32 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = xor i32 %2, -1
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -40,7 +40,7 @@ entry:
   ret i32 %4
 }
 
-; 269 occurrences:
+; 263 occurrences:
 ; abc/optimized/bacBlast.c.ll
 ; abc/optimized/bacNtk.c.ll
 ; c3c/optimized/sema_expr.c.ll
@@ -68,9 +68,7 @@ entry:
 ; fmt/optimized/xchar-test.cc.ll
 ; freetype/optimized/psaux.c.ll
 ; git/optimized/block.ll
-; gromacs/optimized/dorg2r.cpp.ll
 ; gromacs/optimized/dorgl2.cpp.ll
-; gromacs/optimized/sorg2r.cpp.ll
 ; gromacs/optimized/sorgl2.cpp.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hyperscan/optimized/ng_repeat.cpp.ll
@@ -160,6 +158,7 @@ entry:
 ; llvm/optimized/EHStreamer.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
+; lvgl/optimized/lv_obj_scroll.ll
 ; memcached/optimized/memcached-memcached.ll
 ; memcached/optimized/memcached_debug-memcached.ll
 ; meshlab/optimized/glarea.cpp.ll
@@ -235,26 +234,20 @@ entry:
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
-; openblas/optimized/dgbtf2.c.ll
-; openblas/optimized/dgbtrf.c.ll
-; openblas/optimized/dgetsqrhrt.c.ll
 ; openblas/optimized/dgghd3.c.ll
 ; openblas/optimized/dgsvj0.c.ll
 ; openblas/optimized/dgsvj1.c.ll
 ; openblas/optimized/dlagge.c.ll
 ; openblas/optimized/dlaqr5.c.ll
 ; openblas/optimized/dlarge.c.ll
-; openblas/optimized/dlasyf_aa.c.ll
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
 ; openblas/optimized/dorg2r.c.ll
-; openblas/optimized/dorgl2.c.ll
 ; openblas/optimized/dorm22.c.ll
 ; openblas/optimized/dormql.c.ll
 ; openblas/optimized/dormrq.c.ll
 ; openblas/optimized/dormrz.c.ll
 ; openblas/optimized/dsptri.c.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
 ; openblas/optimized/dsytrf_aa.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; opencv/optimized/smooth.dispatch.cpp.ll
@@ -307,8 +300,9 @@ entry:
 ; wireshark/optimized/tap-iostat.c.ll
 ; yosys/optimized/lz4.ll
 ; yosys/optimized/yosys.ll
-; z3/optimized/mpf.cpp.ll
 ; z3/optimized/pb2bv_tactic.cpp.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
@@ -354,16 +348,15 @@ entry:
   ret i32 %4
 }
 
-; 18 occurrences:
+; 17 occurrences:
+; abc/optimized/ltl_parser.c.ll
 ; abc/optimized/sclLiberty.c.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; hermes/optimized/ISel.cpp.ll
 ; icu/optimized/brkeng.ll
 ; luajit/optimized/minilua.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dgghd3.c.ll
 ; openblas/optimized/dsbtrd.c.ll
-; openblas/optimized/dsygst.c.ll
 ; opencv/optimized/btv_l1.cpp.ll
 ; opencv/optimized/checker_detector.cpp.ll
 ; opencv/optimized/stardetector.cpp.ll
@@ -404,18 +397,14 @@ entry:
   ret i32 %4
 }
 
-; 12 occurrences:
+; 8 occurrences:
 ; abc/optimized/cuddInteract.c.ll
 ; git/optimized/prio-queue.ll
-; gromacs/optimized/dgetf2.cpp.ll
-; gromacs/optimized/sgetf2.cpp.ll
+; lief/optimized/Builder.cpp.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; openblas/optimized/dlaorhr_col_getrfnp.c.ll
 ; openexr/optimized/ImfRgbaFile.cpp.ll
 ; openusd/optimized/json.cpp.ll
-; pbrt-v4/optimized/integrators.cpp.ll
-; pbrt-v4/optimized/interaction.cpp.ll
 ; sundials/optimized/idas.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000030(i32 %0, i64 %1) #0 {
@@ -426,7 +415,7 @@ entry:
   ret i32 %4
 }
 
-; 19 occurrences:
+; 17 occurrences:
 ; abc/optimized/giaTtopt.cpp.ll
 ; abseil-cpp/optimized/charconv.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
@@ -438,8 +427,6 @@ entry:
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
-; openblas/optimized/dlaorhr_col_getrfnp.c.ll
-; openblas/optimized/dsygst.c.ll
 ; opencv/optimized/edge_drawing.cpp.ll
 ; openexr/optimized/ImfHuf.cpp.ll
 ; sqlite/optimized/sqlite3.ll
@@ -475,7 +462,7 @@ define i32 @func0000000000000034(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = xor i32 %2, -1
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 

@@ -38,6 +38,16 @@ func0000000000000042:                   # @func0000000000000042
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq
+func0000000000000024:                   # @func0000000000000024
+	xorl	%eax, %eax
+	vucomisd	%xmm0, %xmm1
+	seta	%al
+	xorl	%ecx, %ecx
+	vucomisd	%xmm1, %xmm0
+	seta	%cl
+	testb	$1, %dil
+	cmovnel	%ecx, %eax
+	retq
 func000000000000004c:                   # @func000000000000004c
 	xorl	%eax, %eax
 	xorl	%ecx, %ecx

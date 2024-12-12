@@ -1,5 +1,5 @@
 
-; 40 occurrences:
+; 56 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/acecRe.c.ll
 ; abc/optimized/dauTree.c.ll
@@ -9,6 +9,20 @@
 ; abc/optimized/wlcNtk.c.ll
 ; abc/optimized/wlcShow.c.ll
 ; abc/optimized/wlcWriteVer.c.ll
+; boost/optimized/alloc_lib.ll
+; crow/optimized/example.cpp.ll
+; crow/optimized/example_blueprint.cpp.ll
+; crow/optimized/example_catchall.cpp.ll
+; crow/optimized/example_chat.cpp.ll
+; crow/optimized/example_cookies.cpp.ll
+; crow/optimized/example_cors.cpp.ll
+; crow/optimized/example_file_upload.cpp.ll
+; crow/optimized/example_json_map.cpp.ll
+; crow/optimized/example_middleware.cpp.ll
+; crow/optimized/example_session.cpp.ll
+; crow/optimized/example_static_file.cpp.ll
+; crow/optimized/example_ws.cpp.ll
+; crow/optimized/helloworld.cpp.ll
 ; faiss/optimized/IndexRowwiseMinMax.cpp.ll
 ; freetype/optimized/pfr.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -18,8 +32,9 @@
 ; libjpeg-turbo/optimized/jquant2.c.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/gen6_ppgtt.ll
+; linux/optimized/icl_dsi.ll
+; linux/optimized/intel_cx0_phy.ll
 ; linux/optimized/intel_dpio_phy.ll
-; linux/optimized/mii.ll
 ; linux/optimized/netdev.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; mitsuba3/optimized/measured_polarized.cpp.ll
@@ -39,6 +54,7 @@
 ; qemu/optimized/gdbstub.c.ll
 ; qemu/optimized/tcg-op-ldst.c.ll
 ; quickjs/optimized/quickjs.ll
+; slurm/optimized/node_mgr.ll
 ; wireshark/optimized/packet-rtps.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
@@ -49,10 +65,9 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; linux/optimized/ethtool.ll
 ; linux/optimized/ich8lan.ll
-; linux/optimized/openclose.ll
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/via-rng.ll
 ; Function Attrs: nounwind

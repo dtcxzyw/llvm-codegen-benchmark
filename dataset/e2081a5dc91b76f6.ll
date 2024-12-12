@@ -16,7 +16,7 @@
 define ptr @func0000000000000000(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = and i64 %3, 281474976710648
   %5 = inttoptr i64 %4 to ptr
   ret ptr %5

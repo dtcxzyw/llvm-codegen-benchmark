@@ -1,12 +1,6 @@
 
-; 12 occurrences:
-; linux/optimized/af_inet.ll
-; linux/optimized/eth.ll
-; linux/optimized/gre_offload.ll
+; 6 occurrences:
 ; linux/optimized/hda_intel.ll
-; linux/optimized/ip6_offload.ll
-; linux/optimized/xfrm4_input.ll
-; linux/optimized/xfrm6_input.ll
 ; llvm/optimized/InlineFunction.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; openusd/optimized/reformat.c.ll

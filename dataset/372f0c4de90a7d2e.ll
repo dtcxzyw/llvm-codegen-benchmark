@@ -1,7 +1,6 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; hyperscan/optimized/noodle_engine.c.ll
-; linux/optimized/hwxface.ll
 ; linux/optimized/intel_fb.ll
 ; node/optimized/libnode.node_sockaddr.ll
 ; openjdk/optimized/ad_x86_pipeline.ll

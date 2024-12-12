@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	2                               # 0x2
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpcmpeqq	%ymm0, %ymm1, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [2,2,2,2]
@@ -37,17 +37,9 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 .LCPI4_0:
 	.long	2                               # 0x2
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpcmpneqq	%ymm0, %ymm1, %k1
 	vpbroadcastd	.LCPI4_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [2,2,2,2]
-	vzeroupper
-	retq
-.LCPI5_0:
-	.long	4                               # 0x4
-func0000000000000038:                   # @func0000000000000038
-	vpaddq	%ymm2, %ymm1, %ymm1
-	vpcmpnleuq	%ymm0, %ymm1, %k1
-	vpbroadcastd	.LCPI5_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [4,4,4,4]
 	vzeroupper
 	retq

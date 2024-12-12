@@ -73,7 +73,8 @@ entry:
   ret i64 %4
 }
 
-; 7 occurrences:
+; 8 occurrences:
+; boost/optimized/alloc_lib.ll
 ; jemalloc/optimized/hpdata.ll
 ; jemalloc/optimized/hpdata.pic.ll
 ; jemalloc/optimized/hpdata.sym.ll
@@ -85,8 +86,8 @@ entry:
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = lshr i64 %2, 15
-  %4 = and i64 %3, 562949953421304
+  %3 = lshr i64 %2, 2
+  %4 = and i64 %3, 4611686018427387902
   ret i64 %4
 }
 

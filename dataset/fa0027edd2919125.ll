@@ -16,8 +16,9 @@ entry:
   ret i8 %4
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; entt/optimized/handle.cpp.ll
+; llvm/optimized/ValueTracking.cpp.ll
 ; yosys/optimized/eval.ll
 ; yosys/optimized/extract_fa.ll
 ; yosys/optimized/flowmap.ll

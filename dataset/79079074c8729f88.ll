@@ -15,19 +15,24 @@ entry:
   %3 = shl nuw i16 %2, 8
   %4 = or disjoint i16 %3, %1
   %5 = zext i16 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
-; 1 occurrences:
+; 6 occurrences:
+; openexr/optimized/ImfB44Compressor.cpp.ll
+; openexr/optimized/internal_b44.c.ll
+; openusd/optimized/openexr-c.c.ll
 ; stockfish/optimized/tbprobe.ll
+; wireshark/optimized/charsets.c.ll
+; wireshark/optimized/netmon.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000009(i32 %0, i16 %1, i16 %2) #0 {
+define i32 @func0000000000000029(i32 %0, i16 %1, i16 %2) #0 {
 entry:
-  %3 = shl i16 %2, 8
+  %3 = shl nuw i16 %2, 8
   %4 = or disjoint i16 %3, %1
   %5 = zext i16 %4 to i32
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -43,23 +48,7 @@ entry:
   %3 = shl nuw i16 %2, 8
   %4 = or disjoint i16 %3, %1
   %5 = zext i16 %4 to i32
-  %6 = add nuw nsw i32 %5, %0
-  ret i32 %6
-}
-
-; 5 occurrences:
-; openexr/optimized/ImfB44Compressor.cpp.ll
-; openexr/optimized/internal_b44.c.ll
-; openusd/optimized/openexr-c.c.ll
-; wireshark/optimized/charsets.c.ll
-; wireshark/optimized/netmon.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000029(i32 %0, i16 %1, i16 %2) #0 {
-entry:
-  %3 = shl nuw i16 %2, 8
-  %4 = or disjoint i16 %3, %1
-  %5 = zext i16 %4 to i32
-  %6 = add nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -71,7 +60,7 @@ entry:
   %3 = shl i16 %2, 4
   %4 = or i16 %3, %1
   %5 = zext i16 %4 to i32
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 

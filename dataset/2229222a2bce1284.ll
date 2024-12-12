@@ -60,43 +60,9 @@ entry:
   ret i32 %4
 }
 
-; 6 occurrences:
-; abc/optimized/abcOdc.c.ll
-; abc/optimized/aigCanon.c.ll
-; abc/optimized/ifDec16.c.ll
-; linux/optimized/nfs4trace.ll
-; opencv/optimized/array.cpp.ll
-; openjdk/optimized/TransformHelper.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp slt i32 %1, 0
-  %3 = shl i32 %0, 24
-  %4 = select i1 %2, i32 0, i32 %3
-  ret i32 %4
-}
-
-; 3 occurrences:
-; abc/optimized/abcOrchestration.c.ll
-; abc/optimized/abcResub.c.ll
-; abc/optimized/ifDec16.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000001b(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp slt i32 %1, 33
-  %3 = shl nuw nsw i32 %0, 2
-  %4 = select i1 %2, i32 4, i32 %3
-  ret i32 %4
-}
-
-; 12 occurrences:
-; abc/optimized/abcDfs.c.ll
+; 7 occurrences:
 ; abc/optimized/amapPerm.c.ll
 ; abc/optimized/amapRule.c.ll
-; abc/optimized/dauCanon.c.ll
-; abc/optimized/extraUtilMaj.c.ll
-; abc/optimized/giaMinLut2.c.ll
-; abc/optimized/sfmLib.c.ll
 ; abc/optimized/wlcStdin.c.ll
 ; icu/optimized/uvector.ll
 ; luajit/optimized/lj_crecord.ll
@@ -111,16 +77,14 @@ entry:
   ret i32 %4
 }
 
-; 13 occurrences:
+; 11 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/aigCuts.c.ll
 ; abc/optimized/bdcCore.c.ll
-; abc/optimized/cswMan.c.ll
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/extraUtilTruth.c.ll
 ; abc/optimized/giaMinLut2.c.ll
 ; abc/optimized/kitTruth.c.ll
-; abc/optimized/lpkMan.c.ll
 ; abc/optimized/lpkMulti.c.ll
 ; abc/optimized/luckySwap.c.ll
 ; abc/optimized/rsbDec6.c.ll
@@ -134,26 +98,40 @@ entry:
   ret i32 %4
 }
 
-; 6 occurrences:
-; abc/optimized/aigCanon.c.ll
+; 4 occurrences:
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/extraUtilMaj.c.ll
 ; abc/optimized/giaMinLut2.c.ll
-; abc/optimized/kitDsd.c.ll
 ; abc/optimized/sfmLib.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000051(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 7
+  %2 = icmp samesign ult i32 %1, 7
   %3 = shl nsw i32 %0, 2
   %4 = select i1 %2, i32 4, i32 %3
   ret i32 %4
 }
 
-; 11 occurrences:
+; 7 occurrences:
+; abc/optimized/abcDfs.c.ll
+; abc/optimized/dauCanon.c.ll
+; abc/optimized/extraUtilMaj.c.ll
+; abc/optimized/giaMinLut2.c.ll
+; abc/optimized/sfmLib.c.ll
+; luajit/optimized/lj_crecord.ll
+; luajit/optimized/lj_crecord_dyn.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000053(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 7
+  %3 = shl nuw nsw i32 %0, 1
+  %4 = select i1 %2, i32 2, i32 %3
+  ret i32 %4
+}
+
+; 10 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/acecXor.c.ll
-; abc/optimized/dauCount.c.ll
 ; abc/optimized/giaCut.c.ll
 ; abc/optimized/giaDecs.c.ll
 ; abc/optimized/giaResub.c.ll
@@ -171,12 +149,48 @@ entry:
   ret i32 %4
 }
 
+; 3 occurrences:
+; abc/optimized/abcOdc.c.ll
+; abc/optimized/aigCanon.c.ll
+; abc/optimized/ifDec16.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp slt i32 %1, 6
+  %3 = shl i32 %0, 5
+  %4 = select i1 %2, i32 32, i32 %3
+  ret i32 %4
+}
+
+; 1 occurrences:
+; abc/optimized/ifDec16.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000001b(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp slt i32 %1, 7
+  %3 = shl nuw nsw i32 %0, 1
+  %4 = select i1 %2, i32 2, i32 %3
+  ret i32 %4
+}
+
+; 2 occurrences:
+; abc/optimized/aigCanon.c.ll
+; abc/optimized/kitDsd.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp ult i32 %1, 402653184
+  %3 = shl nsw i32 %0, 1
+  %4 = select i1 %2, i32 2, i32 %3
+  ret i32 %4
+}
+
 ; 1 occurrences:
 ; abc/optimized/abcLut.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000010(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000050(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 6
+  %2 = icmp samesign ult i32 %1, 6
   %3 = shl i32 %0, 5
   %4 = select i1 %2, i32 32, i32 %3
   ret i32 %4
@@ -222,9 +236,9 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ustr.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000012(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000052(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 128
+  %2 = icmp samesign ult i32 %1, 128
   %3 = shl nuw i32 %0, 1
   %4 = select i1 %2, i32 256, i32 %3
   ret i32 %4

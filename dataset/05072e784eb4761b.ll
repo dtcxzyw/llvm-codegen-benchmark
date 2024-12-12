@@ -13,15 +13,17 @@ entry:
 ; 41 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; hermes/optimized/zip.c.ll
 ; icu/optimized/olsontz.ll
 ; libquic/optimized/e_rc2.c.ll
 ; linux/optimized/alps.ll
 ; linux/optimized/intel_vrr.ll
 ; linux/optimized/mcast.ll
-; linux/optimized/net-traces.ll
 ; linux/optimized/ohci-hcd.ll
 ; linux/optimized/tcp_minisocks.ll
+; lvgl/optimized/lv_freetype_glyph.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; minetest/optimized/clientmap.cpp.ll
@@ -35,8 +37,6 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; quantlib/optimized/date.ll
 ; sqlite/optimized/sqlite3.ll
-; wireshark/optimized/packet-asap.c.ll
-; wireshark/optimized/packet-enrp.c.ll
 ; wireshark/optimized/packet-idn.c.ll
 ; wireshark/optimized/packet-m3ua.c.ll
 ; wireshark/optimized/packet-nordic_ble.c.ll

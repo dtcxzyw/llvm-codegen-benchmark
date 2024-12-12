@@ -1,5 +1,6 @@
 
-; 63 occurrences:
+; 65 occurrences:
+; boost/optimized/ipc_reliable_message_queue.ll
 ; cpython/optimized/mathmodule.ll
 ; flac/optimized/stream_encoder.c.ll
 ; flac/optimized/stream_encoder_framing.c.ll
@@ -62,6 +63,7 @@
 ; rocksdb/optimized/block_based_table_reader.cc.ll
 ; wolfssl/optimized/asn.c.ll
 ; wolfssl/optimized/tls.c.ll
+; z3/optimized/pb2bv_rewriter.cpp.ll
 ; zxing/optimized/QREncoder.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
@@ -71,13 +73,15 @@ entry:
   ret i32 %4
 }
 
-; 7 occurrences:
+; 9 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; darktable/optimized/KodakDecompressor.cpp.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; libpng/optimized/pngwutil.c.ll
 ; libwebp/optimized/filter_enc.c.ll
 ; wolfssl/optimized/asn.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; zxing/optimized/QREncoder.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
@@ -98,7 +102,7 @@ entry:
   ret i32 %4
 }
 
-; 16 occurrences:
+; 18 occurrences:
 ; draco/optimized/adaptive_rans_bit_encoder.cc.ll
 ; draco/optimized/rans_bit_encoder.cc.ll
 ; freetype/optimized/ftbase.c.ll
@@ -113,6 +117,8 @@ entry:
 ; openusd/optimized/patchTree.cpp.ll
 ; openusd/optimized/tbbKernel.cpp.ll
 ; wolfssl/optimized/asn.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; zxing/optimized/MCDecoder.cpp.ll
 ; zxing/optimized/QREncoder.cpp.ll
 ; Function Attrs: nounwind

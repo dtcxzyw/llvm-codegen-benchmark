@@ -54,10 +54,3 @@ func000000000000000c:                   # @func000000000000000c
 .LBB7_2:                                # %entry
 	slliw	a0, a1, 2
 	ret
-func000000000000000d:                   # @func000000000000000d
-	andi	a0, a0, 1
-	bnez	a0, .LBB8_2
-	mv	a1, a2
-.LBB8_2:                                # %entry
-	slliw	a0, a1, 1
-	ret

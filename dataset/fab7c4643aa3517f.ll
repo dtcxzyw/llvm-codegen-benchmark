@@ -22,11 +22,11 @@ entry:
 ; openssl/optimized/libssl-shlib-quic_reactor.ll
 ; openusd/optimized/string-to-double.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(i1 %0, i1 %1, ptr %2) #0 {
+define ptr @func000000000000000f(i1 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = and i1 %0, %1
   %.v = select i1 %3, i64 12, i64 4
-  %4 = getelementptr nusw i8, ptr %2, i64 %.v
+  %4 = getelementptr nusw nuw i8, ptr %2, i64 %.v
   ret ptr %4
 }
 

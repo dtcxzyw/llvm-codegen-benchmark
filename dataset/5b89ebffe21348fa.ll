@@ -16,12 +16,12 @@
 define i32 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 72
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }
 
-; 25 occurrences:
+; 22 occurrences:
 ; clamav/optimized/mew.c.ll
 ; cmake/optimized/progress.c.ll
 ; coreutils-rs/optimized/ymrsitga6ypzvcp.ll
@@ -39,34 +39,16 @@ entry:
 ; linux/optimized/mon_text.ll
 ; opencv/optimized/ts_gtest.cpp.ll
 ; openjdk/optimized/XToolkit.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; php/optimized/network.ll
 ; php/optimized/xp_socket.ll
-; slurm/optimized/node_features_knl_generic.ll
-; slurm/optimized/run_command.ll
-; slurm/optimized/slurm_persist_conn.ll
-; slurm/optimized/slurm_protocol_socket.ll
+; zed-rs/optimized/2nwrl7qhv6ci6obqg1itckcv6.ll
+; zed-rs/optimized/8wa0knulc7q0w36j1a9to646h.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
-  %2 = sdiv i64 %1, 26917
-  %3 = add nsw i64 %2, %0
-  %4 = trunc i64 %3 to i32
-  ret i32 %4
-}
-
-; 5 occurrences:
-; git/optimized/stack.ll
-; libquic/optimized/speed.cc.ll
-; nuttx/optimized/fs_select.c.ll
-; qemu/optimized/net_dump.c.ll
-; spdlog/optimized/spdlog.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000000(i64 %0, i64 %1) #0 {
-entry:
-  %2 = sdiv i64 %1, 1000000000
-  %3 = add i64 %2, %0
+  %2 = sdiv i64 %1, 1000
+  %3 = add nsw i64 %0, %2
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }
@@ -98,7 +80,25 @@ entry:
 define i32 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 12
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
+  %4 = trunc i64 %3 to i32
+  ret i32 %4
+}
+
+; 8 occurrences:
+; git/optimized/stack.ll
+; libquic/optimized/speed.cc.ll
+; nuttx/optimized/fs_select.c.ll
+; slurm/optimized/node_features_knl_generic.ll
+; slurm/optimized/run_command.ll
+; slurm/optimized/slurm_persist_conn.ll
+; slurm/optimized/slurm_protocol_socket.ll
+; spdlog/optimized/spdlog.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sdiv i64 %1, 2147483647
+  %3 = add i64 %0, %2
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }
@@ -111,7 +111,7 @@ entry:
 define i32 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 86400
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = trunc nsw i64 %3 to i32
   ret i32 %4
 }

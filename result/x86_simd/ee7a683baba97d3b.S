@@ -8,14 +8,14 @@ func0000000000000010:                   # @func0000000000000010
 	vpsllq	$4, %ymm0, %ymm0
 	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
-func000000000000001b:                   # @func000000000000001b
-	vpsllq	$16, %ymm1, %ymm1
-	vpsrlq	$25, %ymm0, %ymm0
-	vpaddq	%ymm1, %ymm0, %ymm0
-	retq
 func0000000000000000:                   # @func0000000000000000
 	vpsllq	$4, %ymm1, %ymm1
 	vpsrlq	$1, %ymm0, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
+	retq
+func000000000000001b:                   # @func000000000000001b
+	vpsllq	$20, %ymm1, %ymm1
+	vpsrlq	$21, %ymm0, %ymm0
 	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 func000000000000000e:                   # @func000000000000000e

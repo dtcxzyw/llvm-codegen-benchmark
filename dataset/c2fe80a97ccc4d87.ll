@@ -1,10 +1,9 @@
 
-; 3 occurrences:
-; coreutils-rs/optimized/5bh17hgt9ymhvnmz.ll
+; 2 occurrences:
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; typst-rs/optimized/3iyzbobgjl2g1nyh.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000024(i32 %0) #0 {
+define i8 @func0000000000000044(i32 %0) #0 {
 entry:
   %1 = trunc nuw i32 %0 to i8
   %2 = icmp ult i32 %0, 256

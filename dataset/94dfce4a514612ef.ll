@@ -10,7 +10,7 @@ entry:
   %3 = lshr i8 %2, 4
   %4 = trunc i32 %1 to i8
   %5 = add i8 %3, %4
-  %6 = add i8 %5, %0
+  %6 = add i8 %0, %5
   ret i8 %6
 }
 

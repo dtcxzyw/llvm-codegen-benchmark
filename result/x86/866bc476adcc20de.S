@@ -4,7 +4,7 @@ func000000000000000a:                   # @func000000000000000a
 	andb	%dil, %al
 	retq
 func0000000000000001:                   # @func0000000000000001
-	cmpl	$10, %esi
+	cmpl	$7, %esi
 	sete	%al
 	andb	%dil, %al
 	retq

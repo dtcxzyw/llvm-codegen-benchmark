@@ -30,7 +30,7 @@
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
 ; wasmtime-rs/optimized/jcy3ulzaiykp2rl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i16 %1) #0 {
+define i1 @func00000000000000e8(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = add nuw nsw i64 %2, 2
@@ -39,7 +39,7 @@ entry:
   ret i1 %5
 }
 
-; 49 occurrences:
+; 50 occurrences:
 ; cmake/optimized/smb.c.ll
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; coreutils-rs/optimized/4kgrj997pbefuahr.ll
@@ -89,13 +89,14 @@ entry:
 ; wasmtime-rs/optimized/4fstrj457bwkmu8y.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
 ; wasmtime-rs/optimized/jcy3ulzaiykp2rl.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0, i16 %1) #0 {
+define i1 @func00000000000001f4(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = add nuw nsw i64 %2, 1
   %4 = add nuw nsw i64 %0, 2
-  %5 = icmp ult i64 %3, %4
+  %5 = icmp samesign ult i64 %3, %4
   ret i1 %5
 }
 
@@ -122,7 +123,7 @@ entry:
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000068(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
   %3 = add nuw nsw i64 %2, 2

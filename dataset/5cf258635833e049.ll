@@ -1,7 +1,8 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; meshlab/optimized/mesh.cpp.ll
 ; openvdb/optimized/VectorTransformer.cc.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; Function Attrs: nounwind
 define float @func0000000000000004(double %0, double %1, double %2) #0 {
 entry:

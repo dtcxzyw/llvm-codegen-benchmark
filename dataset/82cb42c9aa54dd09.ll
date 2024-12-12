@@ -1,6 +1,5 @@
 
-; 5 occurrences:
-; assimp/optimized/BlenderModifier.cpp.ll
+; 4 occurrences:
 ; bullet3/optimized/btGeneric6DofSpring2Constraint.ll
 ; bullet3/optimized/btInternalEdgeUtility.ll
 ; darktable/optimized/introspection_ashift.c.ll

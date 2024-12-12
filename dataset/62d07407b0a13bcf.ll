@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 27 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; bullet3/optimized/btGhostObject.ll
 ; darktable/optimized/export_metadata.c.ll
@@ -24,6 +24,9 @@
 ; qemu/optimized/hw_watchdog_wdt_i6300esb.c.ll
 ; recastnavigation/optimized/DetourNavMeshBuilder.cpp.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
+; wolfssl/optimized/internal.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/a80esttvizzblelz7vl2fpyaz.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i1 %0, i1 %1, i1 %2) #0 {
 entry:

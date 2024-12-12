@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 17 occurrences:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/CodeGenPrepare.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
@@ -10,7 +10,6 @@
 ; llvm/optimized/LegalizeVectorOps.cpp.ll
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; llvm/optimized/MachineScheduler.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
@@ -19,7 +18,7 @@
 ; minetest/optimized/craftdef.cpp.ll
 ; z3/optimized/mbp_term_graph.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i16 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000181(i16 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %1, %2
   %4 = icmp eq i16 %0, 0
@@ -34,7 +33,7 @@ entry:
 ; openjdk/optimized/hb-buffer.ll
 ; openjdk/optimized/verifier.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i16 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000084(i16 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ult ptr %1, %2
   %4 = icmp ult i16 %0, -9216
@@ -50,7 +49,7 @@ entry:
 ; php/optimized/parse_date.ll
 ; php/optimized/parse_iso_intervals.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i16 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000008c(i16 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ult ptr %1, %2
   %4 = icmp ne i16 %0, 0
@@ -64,7 +63,7 @@ entry:
 ; lua/optimized/ldo.ll
 ; php/optimized/softmagic.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i16 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000081(i16 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ult ptr %1, %2
   %4 = icmp eq i16 %0, 0
@@ -77,7 +76,7 @@ entry:
 ; php/optimized/pcre2_match.ll
 ; postgres/optimized/inet_net_pton.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i16 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000010c(i16 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ugt ptr %1, %2
   %4 = icmp ne i16 %0, 0
@@ -88,7 +87,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/phishcheck.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i16 %0, ptr %1, ptr %2) #0 {
+define i1 @func00000000000000a1(i16 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ule ptr %1, %2
   %4 = icmp eq i16 %0, 0
@@ -105,7 +104,7 @@ entry:
 ; llvm/optimized/TokenAnnotator.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000021(i16 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
   %4 = icmp eq i16 %0, 32
@@ -118,7 +117,7 @@ entry:
 ; llvm/optimized/LiveRangeShrink.cpp.ll
 ; sentencepiece/optimized/extension_set.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i16 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000018c(i16 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %1, %2
   %4 = icmp ne i16 %0, 23
@@ -130,7 +129,7 @@ entry:
 ; linux/optimized/extents.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i16 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000002c(i16 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
   %4 = icmp ne i16 %0, 0

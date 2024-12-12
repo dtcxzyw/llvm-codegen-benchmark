@@ -10,14 +10,12 @@ entry:
   ret i32 %4
 }
 
-; 9 occurrences:
+; 7 occurrences:
 ; darktable/optimized/introspection_highlights.c.ll
 ; opencv/optimized/trace.cpp.ll
 ; openssl/optimized/libcrypto-lib-err.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
 ; openssl/optimized/libcrypto-lib-v3_addr.ll
 ; openssl/optimized/libcrypto-shlib-err.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; openssl/optimized/libcrypto-shlib-v3_addr.ll
 ; ruby/optimized/process.ll
 ; Function Attrs: nounwind
@@ -29,7 +27,7 @@ entry:
   ret i32 %4
 }
 
-; 136 occurrences:
+; 141 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
 ; c3c/optimized/llvm_codegen.c.ll
@@ -58,7 +56,6 @@ entry:
 ; linux/optimized/kobject_uevent.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/sparse.ll
-; linux/optimized/wep.ll
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
 ; llvm/optimized/APINotesWriter.cpp.ll
 ; llvm/optimized/ArchiveWriter.cpp.ll
@@ -66,7 +63,6 @@ entry:
 ; llvm/optimized/DbiModuleDescriptor.cpp.ll
 ; llvm/optimized/RegAllocFast.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
-; llvm/optimized/SveEmitter.cpp.ll
 ; mitsuba3/optimized/jitallocator.cpp.ll
 ; mold/optimized/arch-alpha.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
@@ -110,6 +106,12 @@ entry:
 ; php/optimized/randomizer.ll
 ; postgres/optimized/datetime.ll
 ; protobuf/optimized/descriptor.cc.ll
+; proxygen/optimized/HPACKDecoder.cpp.ll
+; proxygen/optimized/HPACKEncoder.cpp.ll
+; proxygen/optimized/HeaderTable.cpp.ll
+; proxygen/optimized/QPACKEncoder.cpp.ll
+; proxygen/optimized/QPACKHeaderTable.cpp.ll
+; proxygen/optimized/StaticHeaderTable.cpp.ll
 ; qemu/optimized/audio_mixeng.c.ll
 ; qemu/optimized/net_eth.c.ll
 ; qemu/optimized/system_physmem.c.ll
@@ -121,6 +123,7 @@ entry:
 ; rocksdb/optimized/memtable_list.cc.ll
 ; sentencepiece/optimized/unigram_model.cc.ll
 ; slurm/optimized/env.ll
+; slurm/optimized/slurm_persist_conn.ll
 ; sqlite/optimized/sqlite3.ll
 ; taskflow/optimized/async.cpp.ll
 ; taskflow/optimized/attach_data.cpp.ll
@@ -233,7 +236,19 @@ entry:
   ret i32 %4
 }
 
-; 23 occurrences:
+; 2 occurrences:
+; imgui/optimized/imgui_widgets.cpp.ll
+; qemu/optimized/nbd_server.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000003b(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nuw nsw i64 %0, %1
+  %3 = trunc nuw i64 %2 to i32
+  %4 = add nuw nsw i32 %3, 4
+  ret i32 %4
+}
+
+; 24 occurrences:
 ; clamav/optimized/upack.c.ll
 ; coreutils-rs/optimized/ymrsitga6ypzvcp.ll
 ; darktable/optimized/introspection_clahe.c.ll
@@ -252,45 +267,18 @@ entry:
 ; ncnn/optimized/gemm_x86_avx.cpp.ll
 ; ncnn/optimized/gemm_x86_avx512.cpp.ll
 ; ncnn/optimized/gemm_x86_fma.cpp.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; quantlib/optimized/asx.ll
 ; quantlib/optimized/imm.ll
 ; sqlite/optimized/sqlite3.ll
+; zed-rs/optimized/2nwrl7qhv6ci6obqg1itckcv6.ll
+; zed-rs/optimized/8wa0knulc7q0w36j1a9to646h.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, %1
   %3 = trunc i64 %2 to i32
-  %4 = add i32 %3, -10000
-  ret i32 %4
-}
-
-; 6 occurrences:
-; hermes/optimized/DateUtil.cpp.ll
-; hyperscan/optimized/program_runtime.c.ll
-; libquic/optimized/time_support.c.ll
-; openblas/optimized/dlansf.c.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000011(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add nsw i64 %0, %1
-  %3 = trunc i64 %2 to i32
-  %4 = add nsw i32 %3, -1900
-  ret i32 %4
-}
-
-; 2 occurrences:
-; imgui/optimized/imgui_widgets.cpp.ll
-; qemu/optimized/nbd_server.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000003b(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add nuw nsw i64 %0, %1
-  %3 = trunc nuw i64 %2 to i32
-  %4 = add nuw nsw i32 %3, 4
+  %4 = add i32 %3, 8
   ret i32 %4
 }
 
@@ -355,6 +343,20 @@ entry:
   %2 = add i64 %0, %1
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = add nuw nsw i32 %3, -262136
+  ret i32 %4
+}
+
+; 4 occurrences:
+; hermes/optimized/DateUtil.cpp.ll
+; hyperscan/optimized/program_runtime.c.ll
+; libquic/optimized/time_support.c.ll
+; openblas/optimized/dlansf.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000011(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nsw i64 %0, %1
+  %3 = trunc i64 %2 to i32
+  %4 = add nsw i32 %3, -10000
   ret i32 %4
 }
 

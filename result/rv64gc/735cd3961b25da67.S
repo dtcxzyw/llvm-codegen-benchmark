@@ -37,3 +37,15 @@ func0000000000000005:                   # @func0000000000000005
 	li	a1, -8
 	and	a0, a0, a1
 	ret
+func000000000000000f:                   # @func000000000000000f
+	andi	a1, a1, 1
+	add	a0, a0, a2
+	addi	a0, a0, 12
+	bnez	a1, .LBB3_2
+	li	a1, -64
+	and	a0, a0, a1
+	ret
+.LBB3_2:
+	li	a1, -8
+	and	a0, a0, a1
+	ret

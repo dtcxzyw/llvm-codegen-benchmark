@@ -4,7 +4,7 @@
 ; linux/optimized/yenta_socket.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000011(i8 %0, i8 %1) #0 {
+define i8 @func0000000000000021(i8 %0, i8 %1) #0 {
 entry:
   %2 = or disjoint i8 %1, 8
   %3 = icmp eq i8 %0, 0
@@ -26,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/blf.c.ll
 ; Function Attrs: nounwind
-define i8 @func000000000000001c(i8 %0, i8 %1) #0 {
+define i8 @func000000000000002c(i8 %0, i8 %1) #0 {
 entry:
   %2 = or disjoint i8 %1, 4
   %.not = icmp eq i8 %0, 0
@@ -37,7 +37,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-gtp.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000014(i8 %0, i8 %1) #0 {
+define i8 @func0000000000000024(i8 %0, i8 %1) #0 {
 entry:
   %2 = or disjoint i8 %1, 48
   %3 = icmp ult i8 %0, -96
@@ -49,7 +49,7 @@ entry:
 ; luajit/optimized/lj_ccall.ll
 ; luajit/optimized/lj_ccall_dyn.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000018(i8 %0, i8 %1) #0 {
+define i8 @func0000000000000028(i8 %0, i8 %1) #0 {
 entry:
   %2 = or disjoint i8 %1, 8
   %3 = icmp ugt i8 %0, 8

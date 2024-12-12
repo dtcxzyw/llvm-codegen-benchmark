@@ -1,5 +1,5 @@
 
-; 61 occurrences:
+; 67 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; bullet3/optimized/b3PgsJacobiSolver.ll
 ; bullet3/optimized/btCollisionShape.ll
@@ -31,6 +31,8 @@
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
+; imgui/optimized/imgui_widgets.cpp.ll
+; lvgl/optimized/lv_svg_parser.ll
 ; meshlab/optimized/decorate_base.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; meshlab/optimized/ml_default_decorators.cpp.ll
@@ -61,6 +63,10 @@
 ; stb/optimized/stb_truetype.c.ll
 ; typst-rs/optimized/18i60ist7isq7y2m.ll
 ; typst-rs/optimized/p1dgiootfedk7bo.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i1 %0, float %1, float %2) #0 {
 entry:

@@ -10,7 +10,7 @@ func0000000000000000:                   # @func0000000000000000
 	lui	a0, 5
 	addiw	a0, a0, -480
 	vmerge.vxm	v10, v12, a0, v0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func0000000000000007:                   # @func0000000000000007
 	vsetivli	zero, 4, e32, m1, ta, ma

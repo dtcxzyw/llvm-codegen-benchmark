@@ -19,7 +19,7 @@
 ; slurm/optimized/parse_time.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %0, i32 %1, i32 %2
   %4 = add nsw i32 %3, -13
@@ -48,14 +48,14 @@ entry:
 ; wireshark/optimized/packet-ixiatrailer.c.ll
 ; wireshark/optimized/packet-json_3gpp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %0, i32 %1, i32 %2
   %4 = icmp eq i32 %3, 11
   ret i1 %4
 }
 
-; 28 occurrences:
+; 29 occurrences:
 ; clamav/optimized/macho.c.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
@@ -64,7 +64,6 @@ entry:
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; gromacs/optimized/ter_db.cpp.ll
 ; gromacs/optimized/xtc2.c.ll
-; icu/optimized/hebrwcal.ll
 ; icu/optimized/timezone.ll
 ; icu/optimized/vtzone.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
@@ -82,6 +81,8 @@ entry:
 ; wolfssl/optimized/asn.c.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
 ; z3/optimized/lar_solver.cpp.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; Function Attrs: nounwind
@@ -93,26 +94,26 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; c3c/optimized/diagnostics.c.ll
 ; clamav/optimized/clamdcom.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; hyperscan/optimized/ng_find_matches.cpp.ll
-; qemu/optimized/hw_net_can_ctucan_core.c.ll
 ; wireshark/optimized/file.c.ll
 ; wireshark/optimized/packet-dof.c.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %0, i32 %1, i32 %2
-  %4 = icmp eq i32 %3, 4
+  %4 = icmp eq i32 %3, 1
   ret i1 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; libwebp/optimized/vp8l_enc.c.ll
-; postgres/optimized/fsmpage.ll
 ; wireshark/optimized/packet-megaco.c.ll
 ; wireshark/optimized/reedsolomon.c.ll
 ; Function Attrs: nounwind

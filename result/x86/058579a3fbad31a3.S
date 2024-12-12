@@ -33,3 +33,10 @@ func0000000000000009:                   # @func0000000000000009
 	movzbl	%al, %eax
 	addl	%edi, %eax
 	retq
+func0000000000000023:                   # @func0000000000000023
+	cmpw	$-4, %dx
+	setb	%al
+	andb	%sil, %al
+	movzbl	%al, %eax
+	addl	%edi, %eax
+	retq

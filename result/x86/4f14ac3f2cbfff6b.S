@@ -19,14 +19,14 @@ func000000000000000c:                   # @func000000000000000c
 	andb	%dil, %dl
 	andb	%dl, %al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	notb	%dl
 	testl	%esi, %esi
 	sete	%al
 	andb	%dil, %dl
 	andb	%dl, %al
 	retq
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	notb	%dl
 	testl	%esi, %esi
 	setne	%al

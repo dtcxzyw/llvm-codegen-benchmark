@@ -5,7 +5,7 @@
 ; rust-analyzer-rs/optimized/1lnhy2v45voxjwry.ll
 ; tree-sitter-rs/optimized/4sxnw2peombwi3hz.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000034(i32 %0) #0 {
+define i64 @func0000000000000064(i32 %0) #0 {
 entry:
   %1 = add i32 %0, -3
   %2 = zext i32 %1 to i64
@@ -18,7 +18,7 @@ entry:
 ; 1 occurrences:
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000074(i32 %0) #0 {
+define i64 @func00000000000000e4(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -3
   %2 = zext i32 %1 to i64

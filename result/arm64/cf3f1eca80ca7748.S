@@ -1,14 +1,8 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	mov	x8, #9218868437227405312        // =0x7ff0000000000000
-	dup	v3.2d, x8
+	fmov	x9, d0
 	mov	w8, #-1075                      // =0xfffffbcd
-	and	v1.16b, v1.16b, v3.16b
-	and	v2.16b, v2.16b, v3.16b
-	cmeq	v2.2d, v2.2d, #0
-	cmeq	v1.2d, v1.2d, #0
-	uzp1	v1.4s, v1.4s, v2.4s
-	dup	v2.4s, w8
-	bit	v0.16b, v2.16b, v1.16b
+	tst	x9, #0x7ff0000000000000
+	csel	w0, w8, w0, eq
 	ret
                                         // -- End function

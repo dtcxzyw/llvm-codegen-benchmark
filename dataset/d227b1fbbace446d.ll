@@ -12,7 +12,7 @@
 ; oiio/optimized/tiffinput.cpp.ll
 ; opencv/optimized/norm.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %1, %2
   %4 = and i64 %3, 4294967295
@@ -32,7 +32,7 @@ entry:
 ; darktable/optimized/introspection_toneequal.c.ll
 ; mitsuba3/optimized/aov.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %1, %2
   %4 = and i64 %3, 4294967295
@@ -58,7 +58,7 @@ entry:
 ; ncnn/optimized/padding_x86_avx512.cpp.ll
 ; ncnn/optimized/padding_x86_fma.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
   %4 = and i64 %3, 2147483647
@@ -82,7 +82,7 @@ entry:
 ; darktable/optimized/introspection_zonesystem.c.ll
 ; darktable/optimized/xcf.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
   %4 = and i64 %3, 2305843009213693944
@@ -100,7 +100,7 @@ entry:
 ; darktable/optimized/introspection_invert.c.ll
 ; darktable/optimized/introspection_zonesystem.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
   %4 = and i64 %3, -8
@@ -124,7 +124,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/ColorFilterArray.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001c1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %1, %2
   %4 = and i64 %3, 9223372036854775806
@@ -138,7 +138,7 @@ entry:
 ; oiio/optimized/exrinput.cpp.ll
 ; oiio/optimized/nullimageio.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001e1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %1, %2
   %4 = and i64 %3, 4294967295

@@ -1,5 +1,5 @@
 
-; 132 occurrences:
+; 133 occurrences:
 ; assimp/optimized/OgreBinarySerializer.cpp.ll
 ; bullet3/optimized/b3QuantizedBvh.ll
 ; bullet3/optimized/btQuantizedBvh.ll
@@ -36,8 +36,9 @@
 ; llvm/optimized/InstrProfReader.cpp.ll
 ; llvm/optimized/MachObjectWriter.cpp.ll
 ; llvm/optimized/RISCVCallLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; mitsuba3/optimized/codeholder.cpp.ll
 ; ncnn/optimized/deconvolution_x86.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
@@ -153,7 +154,9 @@ entry:
   ret i32 %3
 }
 
-; 24 occurrences:
+; 26 occurrences:
+; abseil-cpp/optimized/cord.cc.ll
+; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; icu/optimized/utrie2.ll
 ; linux/optimized/hub.ll
 ; linux/optimized/intel_sseu.ll

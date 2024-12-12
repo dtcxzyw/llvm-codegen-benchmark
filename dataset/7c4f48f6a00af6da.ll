@@ -12,7 +12,9 @@ entry:
   ret i8 %3
 }
 
-; 63 occurrences:
+; 65 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/rarvm.cpp.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_read_support_filter_xz.c.ll
@@ -140,7 +142,6 @@ entry:
 ; hermes/optimized/zip.c.ll
 ; libquic/optimized/e_tls.c.ll
 ; libquic/optimized/inftrees.c.ll
-; linux/optimized/exprep.ll
 ; linux/optimized/huf_decompress.ll
 ; linux/optimized/inftrees.ll
 ; linux/optimized/mlme.ll
@@ -150,6 +151,7 @@ entry:
 ; llvm/optimized/DecoderEmitter.cpp.ll
 ; llvm/optimized/RewriteRope.cpp.ll
 ; luau/optimized/BytecodeBuilder.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; openexr/optimized/ImfPxr24Compressor.cpp.ll
 ; openexr/optimized/internal_pxr24.c.ll

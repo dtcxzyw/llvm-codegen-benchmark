@@ -1,11 +1,11 @@
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	testl	$1073741824, %edx               # imm = 0x40000000
 	movl	$1, %eax
 	cmovel	%edi, %eax
 	testl	%esi, %esi
 	cmovel	%edi, %eax
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000058:                   # @func0000000000000058
 	notl	%edx
 	xorl	%eax, %eax
 	testb	$18, %dl

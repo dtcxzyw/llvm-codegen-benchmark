@@ -12,10 +12,10 @@
 ; openjdk/optimized/hb-ot-font.ll
 ; php/optimized/pcre2_compile.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
+define i64 @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %1, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }
@@ -113,11 +113,12 @@ entry:
 
 ; 24 occurrences:
 ; abseil-cpp/optimized/hash_test.cc.ll
+; clamav/optimized/qsort.c.ll
 ; faiss/optimized/IVFlib.cpp.ll
 ; flatbuffers/optimized/flatc.cpp.ll
 ; folly/optimized/GuardPageAllocator.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
-; luau/optimized/StringUtils.cpp.ll
+; nuttx/optimized/lib_qsort.c.ll
 ; oiio/optimized/deepdata.cpp.ll
 ; opencv/optimized/arithm.cpp.ll
 ; opencv/optimized/geometry.cpp.ll
@@ -135,7 +136,6 @@ entry:
 ; openmpi/optimized/opal_datatype_position.ll
 ; php/optimized/string.ll
 ; php/optimized/zend_sort.ll
-; xgboost/optimized/allreduce.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -167,10 +167,21 @@ entry:
   ret i64 %5
 }
 
-; 14 occurrences:
-; clamav/optimized/qsort.c.ll
+; 3 occurrences:
+; luau/optimized/StringUtils.cpp.ll
+; quantlib/optimized/qrdecomposition.ll
+; xgboost/optimized/allreduce.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul i64 %1, %2
+  %4 = getelementptr nusw nuw double, ptr %0, i64 %3
+  %5 = ptrtoint ptr %4 to i64
+  ret i64 %5
+}
+
+; 12 occurrences:
 ; libsodium/optimized/libsse2_la-pwhash_scryptsalsa208sha256_sse.ll
-; nuttx/optimized/lib_qsort.c.ll
 ; postgres/optimized/qsort.ll
 ; postgres/optimized/qsort_arg.ll
 ; postgres/optimized/qsort_arg_shlib.ll

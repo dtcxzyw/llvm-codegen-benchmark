@@ -1,7 +1,6 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; image-rs/optimized/fyek6fuqg0ocunt.ll
-; kcp/optimized/ikcp.ll
 ; luajit/optimized/lj_ir.ll
 ; luajit/optimized/lj_ir_dyn.ll
 ; wireshark/optimized/packet-tcp.c.ll

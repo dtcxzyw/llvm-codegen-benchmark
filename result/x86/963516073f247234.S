@@ -1,9 +1,3 @@
-func0000000000000003:                   # @func0000000000000003
-	movl	%edi, %eax
-	shll	$24, %edx
-	orl	%esi, %eax
-	orl	%edx, %eax
-	retq
 func000000000000000c:                   # @func000000000000000c
 	movl	%edi, %eax
 	shll	$6, %edx
@@ -13,6 +7,12 @@ func000000000000000c:                   # @func000000000000000c
 func0000000000000000:                   # @func0000000000000000
 	movl	%edi, %eax
 	shll	$15, %edx
+	orl	%esi, %eax
+	orl	%edx, %eax
+	retq
+func0000000000000003:                   # @func0000000000000003
+	movl	%edi, %eax
+	shll	$16, %edx
 	orl	%esi, %eax
 	orl	%edx, %eax
 	retq

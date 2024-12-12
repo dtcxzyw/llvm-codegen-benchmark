@@ -3,7 +3,7 @@
 ; openjdk/optimized/memoryFileTracker.ll
 ; openjdk/optimized/vmatree.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000421(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1
   %3 = icmp eq ptr %0, null
@@ -19,7 +19,7 @@ entry:
 ; icu/optimized/number_skeletons.ll
 ; libquic/optimized/quic_framer.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000024(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -3
   %3 = icmp ult i32 %2, 12
@@ -32,7 +32,7 @@ entry:
 ; cpython/optimized/posixmodule.ll
 ; php/optimized/dns.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001cc(ptr %0, i32 %1) #0 {
+define i1 @func000000000000058c(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 1
   %3 = icmp ne ptr %0, null
@@ -40,14 +40,13 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; flac/optimized/encode.c.ll
 ; git/optimized/commit-graph.ll
-; openmpi/optimized/libmpi_mpit_profile_la-finalize.ll
 ; postgres/optimized/pl_exec.ll
 ; wireshark/optimized/packet-ldap.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000184(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = icmp ult i32 %2, 5
@@ -56,14 +55,13 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; hermes/optimized/JSParserImpl.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c4(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000584(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = icmp ult i32 %2, 2
@@ -76,7 +74,7 @@ entry:
 ; cpython/optimized/posixmodule.ll
 ; libevent/optimized/event.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c1(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000581(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1
   %3 = icmp ne ptr %0, null
@@ -87,7 +85,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ComplexDeinterleavingPass.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000181(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1
   %3 = icmp ne ptr %0, null
@@ -100,7 +98,7 @@ entry:
 ; linux/optimized/xhci-ring.ll
 ; wireshark/optimized/idl2wrs.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, i32 %1) #0 {
+define i1 @func000000000000018c(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 1
   %3 = icmp ne ptr %0, null
@@ -111,7 +109,7 @@ entry:
 ; 1 occurrences:
 ; node/optimized/libnode.node_http_parser.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000021(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1
   %3 = icmp eq ptr %0, null

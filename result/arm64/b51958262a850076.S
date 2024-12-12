@@ -1,20 +1,11 @@
-func000000000000000a:                   // @func000000000000000a
+func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
 	fcmp	d0, #0.0
 	cset	w8, mi
 	add	x0, x0, w8, uxtw #3
 	ret
                                         // -- End function
-func000000000000000b:                   // @func000000000000000b
-// %bb.0:                               // %entry
-	fcmp	d0, #0.0
-	mov	w8, #8                          // =0x8
-	mov	w9, #16                         // =0x10
-	csel	x8, x9, x8, mi
-	add	x0, x0, x8
-	ret
-                                        // -- End function
-func0000000000000012:                   // @func0000000000000012
+func0000000000000013:                   // @func0000000000000013
 // %bb.0:                               // %entry
 	fcmp	d0, #0.0
 	mov	w8, #104                        // =0x68
@@ -23,14 +14,7 @@ func0000000000000012:                   // @func0000000000000012
 	add	x0, x0, x8
 	ret
                                         // -- End function
-func0000000000000013:                   // @func0000000000000013
-// %bb.0:                               // %entry
-	fcmp	d0, #0.0
-	cset	w8, gt
-	add	x0, x0, w8, uxtw #3
-	ret
-                                        // -- End function
-func000000000000001e:                   // @func000000000000001e
+func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
 	fcmp	d0, #0.0
 	mov	w8, #24                         // =0x18
@@ -39,7 +23,7 @@ func000000000000001e:                   // @func000000000000001e
 	add	x0, x0, x8
 	ret
                                         // -- End function
-func000000000000000e:                   // @func000000000000000e
+func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
 	fcmp	d0, #0.0
 	mov	w8, #32                         // =0x20
@@ -48,7 +32,7 @@ func000000000000000e:                   // @func000000000000000e
 	add	x0, x0, x8
 	ret
                                         // -- End function
-func000000000000001a:                   // @func000000000000001a
+func000000000000001b:                   // @func000000000000001b
 // %bb.0:                               // %entry
 	mov	x8, #9218868437227405312        // =0x7ff0000000000000
 	fmov	d1, x8
@@ -61,7 +45,7 @@ func000000000000001a:                   // @func000000000000001a
 	add	x0, x0, x8
 	ret
                                         // -- End function
-func0000000000000006:                   // @func0000000000000006
+func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
 	fcmp	d0, d0
 	mov	w8, #2384                       // =0x950

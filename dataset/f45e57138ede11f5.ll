@@ -1,5 +1,5 @@
 
-; 39 occurrences:
+; 38 occurrences:
 ; abseil-cpp/optimized/clock.cc.ll
 ; abseil-cpp/optimized/duration_test.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
@@ -9,7 +9,6 @@
 ; git/optimized/apply.ll
 ; git/optimized/xmerge.ll
 ; linux/optimized/intel_dpio_phy.ll
-; linux/optimized/intel_snps_phy.ll
 ; linux/optimized/memblock.ll
 ; linux/optimized/ohci-hcd.ll
 ; linux/optimized/virtio_console.ll
@@ -198,7 +197,7 @@ entry:
 ; tev/optimized/main.cpp.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = icmp eq i64 %0, 0
@@ -233,9 +232,20 @@ entry:
 }
 
 ; 1 occurrences:
+; openjdk/optimized/whitebox.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i64 %0, i32 %1) #0 {
+entry:
+  %2 = add i32 %1, -8
+  %3 = icmp samesign ult i64 %0, 9
+  %4 = select i1 %3, i32 0, i32 %2
+  ret i32 %4
+}
+
+; 1 occurrences:
 ; velox/optimized/ArrayPosition.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i64 %0, i32 %1) #0 {
+define i32 @func000000000000002a(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = icmp sgt i64 %0, 0
@@ -246,7 +256,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i64 %0, i32 %1) #0 {
+define i32 @func0000000000000064(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = icmp ult i64 %0, 4294967296
@@ -270,10 +280,10 @@ entry:
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i64 %0, i32 %1) #0 {
+define i32 @func0000000000000078(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
-  %3 = icmp ugt i64 %0, 11
+  %3 = icmp samesign ugt i64 %0, 11
   %4 = select i1 %3, i32 4, i32 %2
   ret i32 %4
 }
@@ -282,7 +292,7 @@ entry:
 ; llvm/optimized/AArch64.cpp.ll
 ; llvm/optimized/AArch64TargetParser.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000002a(i64 %0, i32 %1) #0 {
+define i32 @func000000000000004a(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 5
   %3 = icmp sgt i64 %0, -1
@@ -290,15 +300,13 @@ entry:
   ret i32 %4
 }
 
-; 6 occurrences:
+; 4 occurrences:
 ; gromacs/optimized/pbc.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/CGClass.cpp.ll
-; nuttx/optimized/lib_ffsl.c.ll
-; nuttx/optimized/lib_ffsll.c.ll
 ; sentencepiece/optimized/bpe_model.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i64 %0, i32 %1) #0 {
+define i32 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 256
   %3 = icmp eq i64 %0, 0
@@ -310,10 +318,10 @@ entry:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; z3/optimized/hwf.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i32 @func0000000000000034(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -972
-  %3 = icmp ult i64 %0, 4377498837804122112
+  %3 = icmp samesign ult i64 %0, 4377498837804122112
   %4 = select i1 %3, i32 0, i32 %2
   ret i32 %4
 }
@@ -321,10 +329,10 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/utext.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i64 %0, i32 %1) #0 {
+define i32 @func0000000000000038(i64 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 32
-  %3 = icmp ugt i64 %0, 2147483615
+  %3 = icmp samesign ugt i64 %0, 2147483615
   %4 = select i1 %3, i32 2147483647, i32 %2
   ret i32 %4
 }

@@ -1,5 +1,5 @@
 
-; 40 occurrences:
+; 39 occurrences:
 ; abc/optimized/ifTune.c.ll
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
@@ -29,7 +29,6 @@
 ; luajit/optimized/lj_tab_dyn.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; miniaudio/optimized/unity.c.ll
-; nuttx/optimized/lib_fls.c.ll
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-face-builder.ll
 ; openjdk/optimized/hb-face.ll
@@ -41,7 +40,7 @@
 ; openusd/optimized/decodeframe.c.ll
 ; postgres/optimized/pg_test_timing.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 32, %1
   %3 = icmp eq i32 %0, 0
@@ -62,7 +61,7 @@ entry:
 ; openjdk/optimized/ByteBinary2Bit.ll
 ; openjdk/optimized/ByteBinary4Bit.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = icmp eq i32 %0, 0
@@ -80,7 +79,7 @@ entry:
 ; postgres/optimized/pg_lzcompress_shlib.ll
 ; postgres/optimized/pg_lzcompress_srv.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000036(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000066(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 34, %1
   %3 = icmp slt i32 %0, 2
@@ -93,11 +92,22 @@ entry:
 ; openusd/optimized/stbImage.cpp.ll
 ; soc-simulator/optimized/verilated.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 2, %1
   %3 = icmp ult i32 %0, -18
   %4 = select i1 %3, i32 2, i32 %2
+  ret i32 %4
+}
+
+; 1 occurrences:
+; boost/optimized/relative_order.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000026(i32 %0, i32 %1) #0 {
+entry:
+  %2 = sub nsw i32 0, %1
+  %3 = icmp slt i32 %0, 0
+  %4 = select i1 %3, i32 0, i32 %2
   ret i32 %4
 }
 
@@ -112,28 +122,16 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hyperscan/optimized/repeatcompile.cpp.ll
 ; postgres/optimized/hashutil.ll
-; raylib/optimized/rcore.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000064(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 32, %1
   %3 = icmp ult i32 %0, 2
   %4 = select i1 %3, i32 0, i32 %2
-  ret i32 %4
-}
-
-; 1 occurrences:
-; icu/optimized/taiwncal.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
-entry:
-  %2 = sub i32 1912, %1
-  %3 = icmp slt i32 %0, 1
-  %4 = select i1 %3, i32 1911, i32 %2
   ret i32 %4
 }
 

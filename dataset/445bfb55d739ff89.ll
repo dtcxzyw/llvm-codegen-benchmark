@@ -327,9 +327,20 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; folly/optimized/File.cpp.ll
 ; folly/optimized/Singleton.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i64 %0, i8 %1) #0 {
+entry:
+  %2 = sext i8 %1 to i64
+  %3 = and i64 %2, 4294967295
+  %4 = lshr i64 %0, %3
+  %5 = icmp samesign ult i64 %4, 4
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; redis/optimized/dict.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i8 %1) #0 {
@@ -337,7 +348,7 @@ entry:
   %2 = sext i8 %1 to i64
   %3 = and i64 %2, 4294967295
   %4 = lshr i64 %0, %3
-  %5 = icmp ult i64 %4, 4
+  %5 = icmp ult i64 %4, 5
   ret i1 %5
 }
 

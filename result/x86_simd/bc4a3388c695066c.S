@@ -7,7 +7,7 @@ func0000000000000007:                   # @func0000000000000007
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm3   # ymm3 = [127,127,127,127,127,127,127,127]
 	vpxord	%ymm1, %ymm2, %ymm3 {%k1}
-	vpcmpnltd	%ymm0, %ymm3, %k0
+	vpcmpled	%ymm3, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -15,7 +15,7 @@ func0000000000000005:                   # @func0000000000000005
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
 	vpternlogq	$15, %ymm2, %ymm2, %ymm2 # ymm2 = ~ymm2
-	vpcmpnltud	%ymm0, %ymm2, %k1
+	vpcmpleud	%ymm2, %ymm0, %k1
 	korb	%k1, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -26,7 +26,7 @@ func0000000000000001:                   # @func0000000000000001
 	vpcmpnltw	%xmm3, %xmm1, %k1
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpxord	%ymm1, %ymm2, %ymm1 {%k1}
-	vpcmpeqd	%ymm0, %ymm1, %k0
+	vpcmpeqd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

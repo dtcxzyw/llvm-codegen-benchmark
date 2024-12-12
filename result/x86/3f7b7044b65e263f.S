@@ -4,3 +4,8 @@ func0000000000000000:                   # @func0000000000000000
 	movl	$2, %eax
 	subl	%edi, %eax
 	retq
+func0000000000000002:                   # @func0000000000000002
+	andl	%esi, %edi
+	andl	$1, %edi
+	leal	8220(%rdi), %eax
+	retq

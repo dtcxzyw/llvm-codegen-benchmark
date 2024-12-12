@@ -1,5 +1,6 @@
 
 ; 200 occurrences:
+; boost/optimized/topology.ll
 ; clamav/optimized/lzxd.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/zstd_decompress_block.c.ll
@@ -23,7 +24,6 @@
 ; hdf5/optimized/H5FDonion_index.c.ll
 ; hdf5/optimized/H5Shyper.c.ll
 ; hdf5/optimized/H5Spoint.c.ll
-; hdf5/optimized/H5Zfletcher32.c.ll
 ; hermes/optimized/MD5.cpp.ll
 ; hermes/optimized/zip.c.ll
 ; hyperscan/optimized/castle.c.ll
@@ -56,7 +56,6 @@
 ; linux/optimized/intel_tv.ll
 ; linux/optimized/mac.ll
 ; linux/optimized/mlme.ll
-; linux/optimized/spectmgmt.ll
 ; linux/optimized/xfrm_policy.ll
 ; linux/optimized/zstd_decompress_block.ll
 ; llama.cpp/optimized/common.cpp.ll
@@ -65,6 +64,7 @@
 ; llvm/optimized/blake3.c.ll
 ; llvm/optimized/blake3_portable.c.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
@@ -121,7 +121,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -196,9 +195,10 @@
 ; xgboost/optimized/input_split_base.cc.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i16 %0, i8 %1) #0 {

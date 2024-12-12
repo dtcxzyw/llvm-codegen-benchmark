@@ -1,5 +1,5 @@
 
-; 93 occurrences:
+; 89 occurrences:
 ; abc/optimized/cnfCut.c.ll
 ; arrow/optimized/bignum.cc.ll
 ; arrow/optimized/trie.cc.ll
@@ -34,10 +34,7 @@
 ; libwebp/optimized/lossless_sse2.c.ll
 ; libwebp/optimized/lossless_sse41.c.ll
 ; libwebp/optimized/sharpyuv_sse2.c.ll
-; libzmq/optimized/zmq.cpp.ll
-; linux/optimized/intel_dkl_phy.ll
 ; linux/optimized/intel_overlay.ll
-; linux/optimized/pkeys.ll
 ; lua/optimized/lcode.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; minetest/optimized/cavegen.cpp.ll
@@ -56,7 +53,6 @@
 ; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
 ; ncnn/optimized/convolution_x86_fma.cpp.ll
 ; ncnn/optimized/convolution_x86_xop.cpp.ll
-; nuttx/optimized/msgctl.c.ll
 ; oiio/optimized/icooutput.cpp.ll
 ; opencv/optimized/blenders.cpp.ll
 ; opencv/optimized/hough.cpp.ll

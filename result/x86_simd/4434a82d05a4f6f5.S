@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	4294963196                      # 0xffffeffc
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
 	vpaddd	%ymm0, %ymm2, %ymm0
@@ -12,7 +12,7 @@ func000000000000001a:                   # @func000000000000001a
 	retq
 .LCPI1_0:
 	.long	4294967232                      # 0xffffffc0
-func00000000000000d1:                   # @func00000000000000d1
+func00000000000001a1:                   # @func00000000000001a1
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm2, %ymm1
@@ -26,7 +26,7 @@ func00000000000000d1:                   # @func00000000000000d1
 	retq
 .LCPI2_0:
 	.long	4294967264                      # 0xffffffe0
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
 	vpaddd	%ymm0, %ymm2, %ymm0
@@ -38,7 +38,7 @@ func000000000000005a:                   # @func000000000000005a
 	retq
 .LCPI3_0:
 	.long	4294967264                      # 0xffffffe0
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
 	vpaddd	.LCPI3_0(%rip){1to8}, %ymm2, %ymm1
@@ -52,7 +52,7 @@ func0000000000000051:                   # @func0000000000000051
 	retq
 .LCPI4_0:
 	.long	4294901760                      # 0xffff0000
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
 	vpaddd	.LCPI4_0(%rip){1to8}, %ymm2, %ymm1
@@ -66,7 +66,7 @@ func00000000000000c1:                   # @func00000000000000c1
 	retq
 .LCPI5_0:
 	.long	4294836224                      # 0xfffe0000
-func00000000000000da:                   # @func00000000000000da
+func00000000000001aa:                   # @func00000000000001aa
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
 	vpaddd	%ymm0, %ymm2, %ymm0

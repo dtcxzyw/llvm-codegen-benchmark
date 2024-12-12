@@ -3,12 +3,12 @@ func0000000000000001:                   # @func0000000000000001
 	testl	%edi, %edi
 	sete	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	imull	%edi, %edi
 	cmpl	$90, %edi
 	setae	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	imull	%edi, %edi
 	cmpl	$1, %edi
 	sete	%al

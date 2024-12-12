@@ -1,5 +1,5 @@
 
-; 44 occurrences:
+; 48 occurrences:
 ; abc/optimized/bmcFault.c.ll
 ; arrow/optimized/UriRecompose.c.ll
 ; clamav/optimized/wwunpack.c.ll
@@ -16,7 +16,6 @@
 ; fmt/optimized/xchar-test.cc.ll
 ; icu/optimized/formatted_string_builder.ll
 ; influxdb-rs/optimized/2g8nrbnslhx52xx1.ll
-; linux/optimized/hwesleep.ll
 ; linux/optimized/intel_cx0_phy.ll
 ; linux/optimized/scsi_logging.ll
 ; linux/optimized/tls.ll
@@ -44,6 +43,11 @@
 ; wireshark/optimized/packet-iec104.c.ll
 ; wireshark/optimized/packet-pldm.c.ll
 ; wolfssl/optimized/internal.c.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i8 %0) #0 {
 entry:
@@ -52,7 +56,7 @@ entry:
   ret i32 %2
 }
 
-; 32 occurrences:
+; 31 occurrences:
 ; clamav/optimized/bytecode.c.ll
 ; freetype/optimized/autofit.c.ll
 ; hdf5/optimized/H5Oattribute.c.ll
@@ -76,7 +80,6 @@ entry:
 ; postgres/optimized/keywords_shlib.ll
 ; postgres/optimized/keywords_srv.ll
 ; postgres/optimized/pl_scanner.ll
-; proxygen/optimized/HeaderDecodeInfo.cpp.ll
 ; proxygen/optimized/http_parser_cpp.cpp.ll
 ; qemu/optimized/hw_virtio_virtio-pci.c.ll
 ; qemu/optimized/target_riscv_translate.c.ll
@@ -93,13 +96,12 @@ entry:
   ret i32 %2
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; clamav/optimized/libfreshclam_internal.c.ll
 ; clamav/optimized/readdb.c.ll
 ; coreutils-rs/optimized/x8pbloshhgr8d49.ll
 ; cpython/optimized/_codecs_iso2022.ll
 ; fmt/optimized/format-impl-test.cc.ll
-; linux/optimized/8250_dma.ll
 ; linux/optimized/8250_port.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll

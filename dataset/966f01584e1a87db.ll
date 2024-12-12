@@ -20,7 +20,6 @@
 ; linux/optimized/fault.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/icl_dsi.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_guc_submission.ll
 ; linux/optimized/intel_vdsc.ll
 ; linux/optimized/process_64.ll
@@ -43,6 +42,7 @@
 ; llvm/optimized/X86InstructionSelector.cpp.ll
 ; luajit/optimized/lj_opt_loop.ll
 ; luajit/optimized/lj_opt_loop_dyn.ll
+; lvgl/optimized/lv_obj_style.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; minetest/optimized/content_mapnode.cpp.ll
 ; minetest/optimized/map.cpp.ll
@@ -72,7 +72,7 @@ entry:
   ret i32 %4
 }
 
-; 262 occurrences:
+; 263 occurrences:
 ; abc/optimized/fretInit.c.ll
 ; bdwgc/optimized/gc.c.ll
 ; fmt/optimized/chrono-test.cc.ll
@@ -181,6 +181,7 @@ entry:
 ; llvm/optimized/FunctionImport.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; nlohmann_json/optimized/unit-deserialization.cpp.ll

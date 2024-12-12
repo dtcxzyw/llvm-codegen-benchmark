@@ -226,7 +226,7 @@
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; openvdb/optimized/points.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000034c(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000c8c(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 7
   %4 = icmp ult i8 %0, %1
@@ -312,7 +312,7 @@ entry:
 ; openusd/optimized/prim.cpp.ll
 ; openusd/optimized/resolvedAttributeCache.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000084(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add i8 %2, 1
   %4 = icmp ult i8 %3, 8

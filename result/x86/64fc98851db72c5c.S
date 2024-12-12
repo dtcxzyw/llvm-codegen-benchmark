@@ -3,6 +3,6 @@ func0000000000000004:                   # @func0000000000000004
 	addq	%rax, %rax
 	retq
 func0000000000000000:                   # @func0000000000000000
-	leal	(%rsi,%rdi), %eax
+	leal	(%rdi,%rsi), %eax
 	shlq	$32, %rax
 	retq

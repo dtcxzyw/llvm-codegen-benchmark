@@ -4,7 +4,7 @@ func0000000000000010:                   # @func0000000000000010
 	leal	(%rdx,%rdi), %eax
 	retq
 func000000000000001c:                   # @func000000000000001c
-	orl	$1249902592, %edx               # imm = 0x4A800000
+	orl	$7, %edx
 	subl	%esi, %edx
 	leal	(%rdx,%rdi), %eax
 	retq

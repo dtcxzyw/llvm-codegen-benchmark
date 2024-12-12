@@ -1,11 +1,10 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; libpng/optimized/png.c.ll
-; linux/optimized/nf_conntrack_proto_icmpv6.ll
 ; openjdk/optimized/png.ll
 ; openusd/optimized/utils.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -91
   %4 = icmp ult i64 %3, -26

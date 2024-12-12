@@ -28,7 +28,7 @@
 ; postgres/optimized/relcache.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i16 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = zext nneg i32 %2 to i64
@@ -40,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; oiio/optimized/rlainput.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = zext i32 %2 to i64

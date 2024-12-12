@@ -1,12 +1,11 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; cmake/optimized/inflate.c.ll
 ; darktable/optimized/timeline.c.ll
 ; icu/optimized/usearch.ll
 ; ipopt/optimized/IpTripletToCSRConverter.ll
 ; linux/optimized/filter.ll
 ; llvm/optimized/APFixedPoint.cpp.ll
-; luau/optimized/isocline.c.ll
 ; opencv/optimized/recurrent_layers.cpp.ll
 ; openjdk/optimized/frame.ll
 ; openjdk/optimized/methodData.ll

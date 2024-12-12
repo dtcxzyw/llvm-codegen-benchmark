@@ -10,15 +10,17 @@ func0000000000000002:                   # @func0000000000000002
 	vpsubq	%ymm0, %ymm1, %ymm0
 	vpsraq	$32, %ymm0, %ymm0
 	retq
+.LCPI2_0:
+	.quad	171798691840                    # 0x2800000000
 func0000000000000000:                   # @func0000000000000000
-	vpxor	%xmm1, %xmm1, %xmm1
+	vpbroadcastq	.LCPI2_0(%rip), %ymm1   # ymm1 = [171798691840,171798691840,171798691840,171798691840]
 	vpsubq	%ymm0, %ymm1, %ymm0
-	vpsraq	$63, %ymm0, %ymm0
+	vpsraq	$32, %ymm0, %ymm0
 	retq
 .LCPI3_0:
-	.quad	16                              # 0x10
+	.quad	44                              # 0x2c
 func0000000000000003:                   # @func0000000000000003
-	vpbroadcastq	.LCPI3_0(%rip), %ymm1   # ymm1 = [16,16,16,16]
+	vpbroadcastq	.LCPI3_0(%rip), %ymm1   # ymm1 = [44,44,44,44]
 	vpsubq	%ymm0, %ymm1, %ymm0
 	vpsraq	$2, %ymm0, %ymm0
 	retq

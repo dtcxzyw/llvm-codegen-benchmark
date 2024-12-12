@@ -1,7 +1,11 @@
 
-; 407 occurrences:
+; 412 occurrences:
 ; abc/optimized/acecRe.c.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/gregorian.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/entropy_encode.c.ll
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
@@ -292,7 +296,6 @@
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ReachingDefAnalysis.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/RegAllocFast.cpp.ll
@@ -376,7 +379,6 @@
 ; lodepng/optimized/pngdetail.cpp.ll
 ; lz4/optimized/lz4hc.c.ll
 ; minetest/optimized/texturesource.cpp.ll
-; nuttx/optimized/lib_timegm.c.ll
 ; oiio/optimized/Writer.cpp.ll
 ; oiio/optimized/imagebufalgo_yee.cpp.ll
 ; opencv/optimized/fast_window_binarizer.cpp.ll
@@ -385,7 +387,6 @@
 ; openmpi/optimized/tm_tree.ll
 ; openspiel/optimized/oh_hell_test.cc.ll
 ; openusd/optimized/lz4.cpp.ll
-; postgres/optimized/brin_revmap.ll
 ; postgres/optimized/formatting.ll
 ; postgres/optimized/visibilitymap.ll
 ; quantlib/optimized/date.ll
@@ -393,6 +394,7 @@
 ; sentencepiece/optimized/strutil.cc.ll
 ; sqlite/optimized/sqlite3.ll
 ; stockfish/optimized/search.ll
+; turborepo-rs/optimized/4xosjxdd4tab2lzmgagh8c3os.ll
 ; wireshark/optimized/packet-canopen.c.ll
 ; wireshark/optimized/packet-gsm_sms.c.ll
 ; wireshark/optimized/packet-messageanalyzer.c.ll
@@ -405,6 +407,9 @@
 ; yosys/optimized/lz4.ll
 ; z3/optimized/bv_ackerman.cpp.ll
 ; z3/optimized/euf_ackerman.cpp.ll
+; zed-rs/optimized/2nwrl7qhv6ci6obqg1itckcv6.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; zxing/optimized/AZDetector.cpp.ll
 ; zxing/optimized/ODDXFilmEdgeReader.cpp.ll
 ; Function Attrs: nounwind

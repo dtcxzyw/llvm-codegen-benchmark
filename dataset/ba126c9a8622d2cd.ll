@@ -6,7 +6,7 @@
 ; libquic/optimized/deflate.c.ll
 ; minetest/optimized/imagefilters.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = and i32 %3, 7
@@ -20,7 +20,7 @@ entry:
 ; lightgbm/optimized/bin.cpp.ll
 ; qemu/optimized/ahci.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001c1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = and i32 %3, 31
@@ -45,12 +45,12 @@ entry:
 ; lightgbm/optimized/bin.cpp.ll
 ; openjdk/optimized/escape.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = and i32 %3, 31
   %5 = shl nuw i32 1, %4
-  %6 = and i32 %5, %0
+  %6 = and i32 %0, %5
   %7 = icmp eq i32 %6, 0
   ret i1 %7
 }
@@ -59,7 +59,7 @@ entry:
 ; abc/optimized/fraSim.c.ll
 ; abc/optimized/sswSim.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000cc(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = and i32 %3, 31
@@ -85,7 +85,7 @@ entry:
 ; abc/optimized/wlcStdin.c.ll
 ; lightgbm/optimized/bin.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000c1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = and i32 %3, 31
@@ -99,7 +99,7 @@ entry:
 ; arrow/optimized/encode_internal.cc.ll
 ; llvm/optimized/Function.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000e1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = and i32 %3, 7
@@ -112,7 +112,7 @@ entry:
 ; 1 occurrences:
 ; arrow/optimized/encode_internal.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000ec(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = and i32 %3, 7

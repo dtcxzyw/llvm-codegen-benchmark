@@ -6,12 +6,12 @@
 ; meshlab/optimized/rimls.cpp.ll
 ; oiio/optimized/imagecache.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000f4(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 7
   %4 = and i64 %3, 2147483647
   %5 = add nuw nsw i64 %1, 1
-  %6 = icmp ult i64 %5, %4
+  %6 = icmp samesign ult i64 %5, %4
   %7 = select i1 %0, i1 %6, i1 false
   ret i1 %7
 }
@@ -27,7 +27,7 @@ entry:
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000ec(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 3
   %4 = and i64 %3, 4294967295
@@ -40,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; ceres/optimized/residual_block_utils.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000006c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 2
   %4 = and i64 %3, 2147483647

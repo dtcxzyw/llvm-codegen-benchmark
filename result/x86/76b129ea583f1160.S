@@ -20,10 +20,10 @@ func000000000000000a:                   # @func000000000000000a
 	testl	%esi, %esi
 	setns	%al
 	xorb	%dil, %al
-	movzbl	%al, %eax
-	andl	$1, %eax
-	decl	%eax
-	orl	$1, %eax
+	movzbl	%al, %ecx
+	andl	$1, %ecx
+	movl	$-2147483648, %eax              # imm = 0x80000000
+	subl	%ecx, %eax
 	retq
 func0000000000000006:                   # @func0000000000000006
 	testl	%esi, %esi

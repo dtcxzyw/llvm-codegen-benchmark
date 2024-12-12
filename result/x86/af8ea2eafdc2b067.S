@@ -1,37 +1,37 @@
-func00000000000000d7:                   # @func00000000000000d7
+func00000000000001a7:                   # @func00000000000001a7
 	movl	$-1, %eax
 	shlxl	%esi, %eax, %eax
-	cmpl	%edi, %eax
-	setge	%al
+	cmpl	%eax, %edi
+	setle	%al
 	retq
-func0000000000000091:                   # @func0000000000000091
+func0000000000000121:                   # @func0000000000000121
 	movl	$-1, %eax
 	shlxl	%esi, %eax, %eax
 	addl	$1022, %eax                     # imm = 0x3FE
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	movl	$1, %eax
 	shlxl	%esi, %eax, %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq
-func000000000000009b:                   # @func000000000000009b
+func000000000000012b:                   # @func000000000000012b
 	movl	$-1, %eax
 	shlxl	%esi, %eax, %eax
-	cmpl	%edi, %eax
-	setle	%al
+	cmpl	%eax, %edi
+	setge	%al
 	retq
-func000000000000009a:                   # @func000000000000009a
+func000000000000012a:                   # @func000000000000012a
 	movl	$-1, %eax
 	shlxl	%esi, %eax, %eax
-	cmpl	%edi, %eax
-	setl	%al
-	retq
-func0000000000000096:                   # @func0000000000000096
-	movl	$-1, %eax
-	shlxl	%esi, %eax, %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	setg	%al
+	retq
+func0000000000000126:                   # @func0000000000000126
+	movl	$-1, %eax
+	shlxl	%esi, %eax, %eax
+	cmpl	%eax, %edi
+	setl	%al
 	retq

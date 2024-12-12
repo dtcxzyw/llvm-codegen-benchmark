@@ -1,6 +1,8 @@
 
-; 1 occurrences:
+; 3 occurrences:
 ; openjdk/optimized/virtualspace.ll
+; zed-rs/optimized/8429boafm438obcc9d542xswj.ll
+; zed-rs/optimized/el2ujbjp7xo4qjt47dh50oqat.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -12,7 +14,7 @@ entry:
   ret i64 %7
 }
 
-; 13 occurrences:
+; 15 occurrences:
 ; coreutils-rs/optimized/1pz43lsbr7l0inxv.ll
 ; coreutils-rs/optimized/45ibbzl0las8sgut.ll
 ; coreutils-rs/optimized/4wx66ytsj6r522cv.ll
@@ -26,6 +28,8 @@ entry:
 ; ockam-rs/optimized/5d08dby0hzbl8sgj.ll
 ; ockam-rs/optimized/8bl7ikep7ibcq21.ll
 ; tokenizers-rs/optimized/pctti7iv1zxrcsb.ll
+; zed-rs/optimized/8429boafm438obcc9d542xswj.ll
+; zed-rs/optimized/dbzdlmbe9tm616os1ebjr005g.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000020(i64 %0, i64 %1, i64 %2) #0 {
 entry:

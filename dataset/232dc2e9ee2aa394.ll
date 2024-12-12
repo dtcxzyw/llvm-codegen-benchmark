@@ -1,6 +1,5 @@
 
-; 42 occurrences:
-; linux/optimized/blk-sysfs.ll
+; 41 occurrences:
 ; linux/optimized/igmp.ll
 ; spike/optimized/ukadd64.ll
 ; spike/optimized/ukmar64.ll

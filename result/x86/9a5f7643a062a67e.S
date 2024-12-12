@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	andb	$1, %dil
 	xorl	%eax, %eax
 	negb	%dil

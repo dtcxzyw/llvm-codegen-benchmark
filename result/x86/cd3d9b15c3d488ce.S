@@ -1,10 +1,10 @@
-func00000000000002f1:                   # @func00000000000002f1
+func00000000000005e1:                   # @func00000000000005e1
 	leal	200(%rsi,%rsi), %eax
 	incq	%rdi
 	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func00000000000007f1:                   # @func00000000000007f1
+func0000000000000fe1:                   # @func0000000000000fe1
 	leal	4(,%rsi,4), %eax
 	incq	%rdi
 	cmpq	%rax, %rdi

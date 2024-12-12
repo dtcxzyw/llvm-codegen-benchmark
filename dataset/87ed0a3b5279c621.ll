@@ -1,5 +1,5 @@
 
-; 68 occurrences:
+; 67 occurrences:
 ; assimp/optimized/ColladaParser.cpp.ll
 ; casadi/optimized/interpolant.cpp.ll
 ; ceres/optimized/canonical_views_clustering.cc.ll
@@ -18,7 +18,6 @@
 ; gromacs/optimized/particlesequencer.cpp.ll
 ; llvm/optimized/DbiStreamBuilder.cpp.ll
 ; meshlab/optimized/arap.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/camera.cpp.ll
 ; minetest/optimized/content_cao.cpp.ll
 ; minetest/optimized/craftdef.cpp.ll

@@ -3,11 +3,11 @@
 ; openssl/optimized/libssl-lib-statem_clnt.ll
 ; openssl/optimized/libssl-shlib-statem_clnt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000118(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000218(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
   %4 = icmp ne i64 %3, 3
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -48,7 +48,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = add i64 %3, -8
   %5 = icmp ult i64 %4, 56
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -61,14 +61,14 @@ define i1 @func0000000000000002(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp eq i64 %3, -1
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; entt/optimized/storage.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000048(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = add nsw i64 %3, -4
@@ -81,23 +81,23 @@ entry:
 ; opencv/optimized/contours_approx.cpp.ll
 ; openexr/optimized/ImfCheckFile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a2(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000142(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = icmp eq i64 %3, 8
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000102(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000202(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %1, -1
-  %4 = icmp eq i64 %3, %2
-  %5 = or i1 %4, %0
-  ret i1 %5
+  %.neg = add i64 %2, 1
+  %3 = icmp eq i64 %1, %.neg
+  %4 = or i1 %3, %0
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

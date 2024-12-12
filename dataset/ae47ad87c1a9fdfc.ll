@@ -1,5 +1,5 @@
 
-; 36 occurrences:
+; 35 occurrences:
 ; clamav/optimized/kwajd.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -31,7 +31,6 @@
 ; openssl/optimized/sslbuffertest-bin-ssltestlib.ll
 ; openssl/optimized/sslcorrupttest-bin-ssltestlib.ll
 ; openssl/optimized/tls13ccstest-bin-ssltestlib.ll
-; php/optimized/pcre2_compile.ll
 ; raylib/optimized/rtext.c.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; sqlite/optimized/sqlite3.ll
@@ -88,7 +87,7 @@ entry:
 define i64 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 24
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = add i32 %3, -1
   %5 = zext i32 %4 to i64
   ret i64 %5
@@ -113,7 +112,7 @@ entry:
 define i64 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 24
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = add nuw i32 %3, 12
   %5 = zext i32 %4 to i64
   ret i64 %5
@@ -125,7 +124,7 @@ entry:
 define i64 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 16
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = add nuw i32 %3, 1
   %5 = zext i32 %4 to i64
   ret i64 %5

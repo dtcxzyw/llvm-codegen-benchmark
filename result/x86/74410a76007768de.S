@@ -1,4 +1,5 @@
 func0000000000000001:                   # @func0000000000000001
+	addl	%edi, %edi
 	leal	(%rdi,%rdi,2), %eax
 	cltq
 	retq

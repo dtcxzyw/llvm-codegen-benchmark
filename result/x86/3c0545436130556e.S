@@ -1,10 +1,16 @@
-func0000000000000000:                   # @func0000000000000000
-	leal	360(%rdi), %eax
+func0000000000000005:                   # @func0000000000000005
+	leal	700(%rdi), %eax
 	movzwl	%ax, %ecx
-	imull	$11651, %ecx, %ecx              # imm = 0x2D83
-	shrl	$22, %ecx
-	imull	$360, %ecx, %ecx                # imm = 0x168
+	imull	$9363, %ecx, %ecx               # imm = 0x2493
+	shrl	$16, %ecx
 	subl	%ecx, %eax
+	movzwl	%ax, %eax
+	shrl	%eax
+	addl	%ecx, %eax
+	shrl	$2, %eax
+	leal	(,%rax,8), %ecx
+	subl	%ecx, %eax
+	leal	700(%rdi,%rax), %eax
 	retq
 func0000000000000009:                   # @func0000000000000009
 	leal	-26116(%rdi), %eax

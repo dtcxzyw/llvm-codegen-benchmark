@@ -75,16 +75,3 @@ func0000000000000029:                   # @func0000000000000029
 	sarq	$34, %rdx
 	addl	%edx, %eax
 	retq
-func0000000000000001:                   # @func0000000000000001
-	imulq	$1000000000, %rsi, %rcx         # imm = 0x3B9ACA00
-	addq	%rdi, %rcx
-	movabsq	$-7178738738347512491, %rdx     # imm = 0x9C5FFF26ED75ED55
-	movq	%rcx, %rax
-	imulq	%rdx
-	addq	%rdx, %rcx
-	movq	%rcx, %rax
-	shrq	$63, %rax
-	sarq	$41, %rcx
-	addl	%eax, %ecx
-	movl	%ecx, %eax
-	retq

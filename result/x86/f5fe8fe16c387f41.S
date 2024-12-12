@@ -21,6 +21,12 @@ func0000000000000079:                   # @func0000000000000079
 	shrq	$34, %rax
 	addl	%edi, %eax
 	retq
+func0000000000000003:                   # @func0000000000000003
+	leal	2(%rsi,%rsi,4), %eax
+	imulq	$718635051, %rax, %rax          # imm = 0x2AD5802B
+	shrq	$40, %rax
+	addl	%edi, %eax
+	retq
 func0000000000000018:                   # @func0000000000000018
 	imull	$-137, %esi, %eax
 	addl	$136, %eax

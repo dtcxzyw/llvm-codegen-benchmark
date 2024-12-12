@@ -23,3 +23,7 @@ func000000000000000c:                   # @func000000000000000c
 	vptestnmd	%ymm1, %ymm1, %k1
 	vbroadcastss	.LCPI3_0(%rip), %ymm0 {%k1} # ymm0 {%k1} = [1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0,1.0E+0]
 	retq
+func0000000000000006:                   # @func0000000000000006
+	vpmovd2m	%ymm1, %k1
+	vmovaps	%ymm0, %ymm0 {%k1} {z}
+	retq

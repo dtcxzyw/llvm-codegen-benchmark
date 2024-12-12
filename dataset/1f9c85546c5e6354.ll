@@ -12,10 +12,9 @@ entry:
   ret i32 %7
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; glslang/optimized/SpvBuilder.cpp.ll
-; slurm/optimized/ebpf.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000018f(i32 %0, i1 %1, i32 %2) #0 {
 entry:

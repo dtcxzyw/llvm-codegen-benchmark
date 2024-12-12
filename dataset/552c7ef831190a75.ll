@@ -1,5 +1,5 @@
 
-; 30 occurrences:
+; 31 occurrences:
 ; clamav/optimized/arcread.cpp.ll
 ; cmake/optimized/archive_string.c.ll
 ; cmake/optimized/huf_decompress.c.ll
@@ -29,6 +29,7 @@
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-mtp2.c.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i1 %0, i32 %1) #0 {
@@ -38,7 +39,8 @@ entry:
   ret i8 %3
 }
 
-; 77 occurrences:
+; 78 occurrences:
+; boost/optimized/test_system.ll
 ; clamav/optimized/htmlnorm.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
 ; cmake/optimized/archive_write_set_format_zip.c.ll

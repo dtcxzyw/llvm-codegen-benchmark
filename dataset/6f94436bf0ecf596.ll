@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 31 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/cuddBddCorr.c.ll
 ; abc/optimized/cuddBddIte.c.ll
@@ -11,7 +11,6 @@
 ; abc/optimized/cuddSplit.c.ll
 ; abc/optimized/reoSwap.c.ll
 ; abc/optimized/saigMiter.c.ll
-; abc/optimized/sswSat.c.ll
 ; abseil-cpp/optimized/inlined_vector_exception_safety_test.cc.ll
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; abseil-cpp/optimized/status_internal.cc.ll
@@ -23,7 +22,6 @@
 ; openjdk/optimized/objArrayKlass.ll
 ; openjdk/optimized/shenandoahAsserts.ll
 ; openjdk/optimized/shenandoahBarrierSet.ll
-; openjdk/optimized/shenandoahConcurrentGC.ll
 ; openjdk/optimized/shenandoahGC.ll
 ; openjdk/optimized/shenandoahHeap.ll
 ; openjdk/optimized/shenandoahMark.ll

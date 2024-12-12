@@ -1,5 +1,5 @@
 
-; 195 occurrences:
+; 200 occurrences:
 ; abc/optimized/cuddSplit.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; assimp/optimized/AMFImporter.cpp.ll
@@ -40,6 +40,9 @@
 ; llvm/optimized/SampleProfileMatcher.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; luau/optimized/DataFlowGraph.cpp.ll
+; lvgl/optimized/lv_sdl_keyboard.ll
+; lvgl/optimized/lv_sdl_mouse.ll
+; lvgl/optimized/lv_sdl_mousewheel.ll
 ; ocio/optimized/FileFormatCSP.cpp.ll
 ; openjdk/optimized/graphKit.ll
 ; openjdk/optimized/memnode.ll
@@ -48,6 +51,7 @@
 ; openssl/optimized/libcrypto-shlib-context.ll
 ; postgres/optimized/equivclass.ll
 ; postgres/optimized/indxpath.ll
+; protobuf/optimized/message_differencer.cc.ll
 ; proxygen/optimized/HTTP2Codec.cpp.ll
 ; proxygen/optimized/HTTPHeaders.cpp.ll
 ; proxygen/optimized/HTTPMessage.cpp.ll
@@ -195,11 +199,28 @@
 ; yosys/optimized/xilinx_srl.ll
 ; yosys/optimized/xprop.ll
 ; yosys/optimized/zinit.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(ptr %0, ptr %1) #0 {
 entry:
   %2 = freeze ptr %1
-  %3 = icmp eq ptr %2, %0
+  %3 = icmp eq ptr %0, %2
+  ret i1 %3
+}
+
+; 7 occurrences:
+; cvc5/optimized/bag_solver.cpp.ll
+; cvc5/optimized/theory_sets_private.cpp.ll
+; grpc/optimized/xds_cluster_resolver.cc.ll
+; linux/optimized/af_unix.ll
+; llvm/optimized/VPlanAnalysis.cpp.ll
+; rocksdb/optimized/version_set.cc.ll
+; xgboost/optimized/multiclass_obj.cc.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000c(ptr %0, ptr %1) #0 {
+entry:
+  %2 = freeze ptr %1
+  %3 = icmp ne ptr %0, %2
   ret i1 %3
 }
 
@@ -256,7 +277,7 @@ entry:
 define i1 @func0000000000000004(ptr %0, ptr %1) #0 {
 entry:
   %2 = freeze ptr %1
-  %3 = icmp ugt ptr %2, %0
+  %3 = icmp ult ptr %0, %2
   ret i1 %3
 }
 
@@ -268,22 +289,7 @@ entry:
 define i1 @func0000000000000008(ptr %0, ptr %1) #0 {
 entry:
   %2 = freeze ptr %1
-  %3 = icmp ult ptr %2, %0
-  ret i1 %3
-}
-
-; 6 occurrences:
-; cvc5/optimized/bag_solver.cpp.ll
-; cvc5/optimized/theory_sets_private.cpp.ll
-; grpc/optimized/xds_cluster_resolver.cc.ll
-; linux/optimized/af_unix.ll
-; llvm/optimized/VPlanAnalysis.cpp.ll
-; xgboost/optimized/multiclass_obj.cc.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000c(ptr %0, ptr %1) #0 {
-entry:
-  %2 = freeze ptr %1
-  %3 = icmp ne ptr %2, %0
+  %3 = icmp ugt ptr %0, %2
   ret i1 %3
 }
 

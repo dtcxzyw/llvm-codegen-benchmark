@@ -1,4 +1,4 @@
-func00000000000002ca:                   # @func00000000000002ca
+func000000000000098a:                   # @func000000000000098a
 	sarq	$4, %rdx
 	cmpq	%rdi, %rdx
 	setbe	%cl
@@ -6,7 +6,7 @@ func00000000000002ca:                   # @func00000000000002ca
 	setle	%al
 	orb	%cl, %al
 	retq
-func00000000000002ac:                   # @func00000000000002ac
+func000000000000094c:                   # @func000000000000094c
 	sarq	$3, %rdx
 	cmpq	%rsi, %rdx
 	setbe	%cl
@@ -14,15 +14,7 @@ func00000000000002ac:                   # @func00000000000002ac
 	sets	%al
 	orb	%cl, %al
 	retq
-func00000000000002a8:                   # @func00000000000002a8
-	sarq	$3, %rdx
-	cmpq	%rsi, %rdx
-	setbe	%cl
-	cmpl	$3, %edi
-	setb	%al
-	orb	%cl, %al
-	retq
-func00000000000002ec:                   # @func00000000000002ec
+func00000000000009cc:                   # @func00000000000009cc
 	sarq	$2, %rdx
 	cmpq	%rsi, %rdx
 	setle	%cl
@@ -30,7 +22,7 @@ func00000000000002ec:                   # @func00000000000002ec
 	sets	%al
 	orb	%cl, %al
 	retq
-func0000000000000222:                   # @func0000000000000222
+func0000000000000842:                   # @func0000000000000842
 	sarq	$2, %rdx
 	cmpq	%rsi, %rdx
 	sete	%cl

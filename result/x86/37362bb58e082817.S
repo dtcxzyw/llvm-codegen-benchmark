@@ -15,7 +15,7 @@ func000000000000000c:                   # @func000000000000000c
 	andl	$1, %eax
 	orl	%edi, %eax
 	retq
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	testb	%sil, %sil
 	sets	%al
 	orb	%dil, %al

@@ -107,12 +107,13 @@ entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = and i32 %3, 2047
   %5 = add nsw i32 %4, -1075
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; glslang/optimized/ParseHelper.cpp.ll
+; lvgl/optimized/lv_draw_image.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000024(i32 %0, i64 %1) #0 {
 entry:

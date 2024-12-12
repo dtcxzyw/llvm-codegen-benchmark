@@ -22,17 +22,6 @@ entry:
   ret ptr %4
 }
 
-; 1 occurrences:
-; mitsuba3/optimized/obj.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
-entry:
-  %2 = udiv i64 %1, 100
-  %.idx = mul nuw nsw i64 %2, 24
-  %3 = getelementptr nusw i8, ptr %0, i64 %.idx
-  ret ptr %3
-}
-
 ; 3 occurrences:
 ; openjdk/optimized/psParallelCompact.ll
 ; proxygen/optimized/HTTP1xCodec.cpp.ll

@@ -1,3 +1,12 @@
+func000000000000001b:                   # @func000000000000001b
+	li	a0, 305
+	vsetivli	zero, 4, e32, m1, ta, mu
+	vadd.vx	v8, v8, a0, v0.t
+	li	a0, 308
+	vadd.vx	v10, v8, a0
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vzext.vf2	v8, v10
+	ret
 func000000000000000a:                   # @func000000000000000a
 	li	a0, -2048
 	vsetivli	zero, 4, e32, m1, ta, mu

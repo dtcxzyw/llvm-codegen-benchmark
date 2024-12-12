@@ -21,13 +21,13 @@
 define i32 @func0000000000000000(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 4
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = or i32 %4, 3
   %6 = select i1 %0, i32 %4, i32 %5
   ret i32 %6
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/encode.c.ll
@@ -41,6 +41,7 @@ entry:
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; luajit/optimized/lj_snap.ll
 ; luajit/optimized/lj_snap_dyn.ll
+; openjdk/optimized/gtk3_interface.ll
 ; openjdk/optimized/mlib_ImageCreate.ll
 ; openusd/optimized/openexr-c.c.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
@@ -56,16 +57,15 @@ entry:
   ret i32 %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; linux/optimized/gup.ll
-; linux/optimized/icl_dsi.ll
 ; linux/optimized/intel_ddi.ll
 ; php/optimized/zend_inference.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = or i32 %4, -520094722
   %6 = select i1 %0, i32 %4, i32 %5
   ret i32 %6
@@ -77,7 +77,7 @@ entry:
 define i32 @func0000000000000002(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = or disjoint i32 %4, -2147483648
   %6 = select i1 %0, i32 %4, i32 %5
   ret i32 %6

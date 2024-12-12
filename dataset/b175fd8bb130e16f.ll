@@ -1,9 +1,8 @@
 
-; 46 occurrences:
+; 44 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
-; c3c/optimized/lexer.c.ll
 ; cmake/optimized/archive_acl.c.ll
 ; git/optimized/delta-islands.ll
 ; git/optimized/diffcore-break.ll
@@ -32,7 +31,6 @@
 ; llvm/optimized/ELFObjectWriter.cpp.ll
 ; llvm/optimized/IRSymtab.cpp.ll
 ; llvm/optimized/MachineStableHash.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; oiio/optimized/tiffinput.cpp.ll
 ; opencv/optimized/arithm.cpp.ll
@@ -55,8 +53,7 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
-; clamav/optimized/autoit.c.ll
+; 3 occurrences:
 ; freetype/optimized/ftbase.c.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll

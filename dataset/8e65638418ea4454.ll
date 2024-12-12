@@ -8,7 +8,7 @@
 ; openssl/optimized/libssl-shlib-quic_wire_pkt.ll
 ; wireshark/optimized/packet-quic.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f1(i64 %0, i8 %1) #0 {
+define i1 @func00000000000003e1(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 3
   %3 = add nuw nsw i8 %2, 1
@@ -21,7 +21,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/drm_edid.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i8 %1) #0 {
+define i1 @func00000000000001e1(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 31
   %3 = add nsw i8 %2, -1

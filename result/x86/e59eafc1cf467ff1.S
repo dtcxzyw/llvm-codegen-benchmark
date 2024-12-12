@@ -3,6 +3,11 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	orb	%sil, %al
 	retq
+func0000000000000044:                   # @func0000000000000044
+	cmpl	$4, %edi
+	setb	%al
+	orb	%sil, %al
+	retq
 func000000000000000a:                   # @func000000000000000a
 	testl	%edi, %edi
 	setg	%al

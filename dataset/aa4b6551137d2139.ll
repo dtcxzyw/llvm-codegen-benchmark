@@ -1,11 +1,10 @@
 
-%struct.ct_data_s.3356494 = type { %union.anon.3356495, %union.anon.0.3356496 }
-%union.anon.3356495 = type { i16 }
-%union.anon.0.3356496 = type { i16 }
+%struct.ct_data_s.3543797 = type { %union.anon.3543798, %union.anon.0.3543799 }
+%union.anon.3543798 = type { i16 }
+%union.anon.0.3543799 = type { i16 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; abc/optimized/trees.c.ll
-; bullet3/optimized/btBox2dBox2dCollisionAlgorithm.ll
 ; cmake/optimized/trees.c.ll
 ; gromacs/optimized/trees.c.ll
 ; libquic/optimized/trees.c.ll
@@ -25,13 +24,10 @@ entry:
   ret ptr %6
 }
 
-; 6 occurrences:
+; 3 occurrences:
 ; freetype/optimized/raster.c.ll
-; gromacs/optimized/atomdistribution.cpp.ll
 ; libwebp/optimized/histogram_enc.c.ll
-; openblas/optimized/dlarrv.c.ll
 ; openjdk/optimized/mlib_ImageAffineEdge.ll
-; openusd/optimized/blendShapeQuery.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000002a(ptr %0, i32 %1, i32 %2) #0 {
 entry:
@@ -79,7 +75,7 @@ entry:
   %3 = icmp slt i32 %2, 2
   %4 = select i1 %3, i32 %1, i32 0
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %struct.ct_data_s.3356494, ptr %0, i64 %5
+  %6 = getelementptr %struct.ct_data_s.3543797, ptr %0, i64 %5
   ret ptr %6
 }
 

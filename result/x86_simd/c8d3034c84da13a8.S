@@ -48,3 +48,13 @@ func0000000000000002:                   # @func0000000000000002
 	vpsrlq	$3, %ymm1, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
+func0000000000000016:                   # @func0000000000000016
+	vpsubq	%ymm2, %ymm1, %ymm1
+	vpsrlq	$3, %ymm1, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm0
+	retq
+func0000000000000007:                   # @func0000000000000007
+	vpsubq	%ymm2, %ymm1, %ymm1
+	vpsrlq	$2, %ymm1, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm0
+	retq

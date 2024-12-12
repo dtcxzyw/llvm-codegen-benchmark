@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 25 occurrences:
 ; clamav/optimized/list.cpp.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; icu/optimized/tzgnames.ll
@@ -16,7 +16,6 @@
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; mitsuba3/optimized/x86emithelper.cpp.ll
 ; nori/optimized/screen.cpp.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; php/optimized/ir_emit.ll
 ; php/optimized/zend_inference.ll
 ; qemu/optimized/tcg.c.ll
@@ -27,7 +26,7 @@
 ; wireshark/optimized/packet-ros.c.ll
 ; wireshark/optimized/packet-rtps.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 456, i32 1184

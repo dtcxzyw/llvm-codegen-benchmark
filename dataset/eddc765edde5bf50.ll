@@ -5,7 +5,7 @@
 ; wireshark/optimized/packet-ccsds.c.ll
 ; wireshark/optimized/packet-vcdu.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000058(i32 %0, i16 %1) #0 {
 entry:
   %2 = urem i16 %1, 100
   %3 = icmp eq i16 %2, 0

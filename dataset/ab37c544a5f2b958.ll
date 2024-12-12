@@ -6,7 +6,7 @@ define i16 @func000000000000000b(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i16
   %3 = shl nuw i16 %2, 12
-  %4 = add nuw nsw i16 %3, %0
+  %4 = add nuw nsw i16 %0, %3
   ret i16 %4
 }
 
@@ -46,7 +46,7 @@ define i16 @func0000000000000014(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nsw i32 %1 to i16
   %3 = shl nsw i16 %2, 1
-  %4 = add i16 %3, %0
+  %4 = add i16 %0, %3
   ret i16 %4
 }
 
@@ -57,7 +57,7 @@ define i16 @func0000000000000010(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nsw i32 %1 to i16
   %3 = shl i16 %2, 3
-  %4 = add i16 %3, %0
+  %4 = add i16 %0, %3
   ret i16 %4
 }
 
@@ -68,7 +68,7 @@ define i16 @func0000000000000038(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i32 %1 to i16
   %3 = shl nuw i16 %2, 4
-  %4 = add i16 %3, %0
+  %4 = add i16 %0, %3
   ret i16 %4
 }
 
@@ -81,7 +81,7 @@ define i16 @func0000000000000000(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i16
   %3 = shl i16 %2, 2
-  %4 = add i16 %3, %0
+  %4 = add i16 %0, %3
   ret i16 %4
 }
 
@@ -114,7 +114,7 @@ define i16 @func0000000000000030(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i32 %1 to i16
   %3 = shl i16 %2, 4
-  %4 = add i16 %3, %0
+  %4 = add i16 %0, %3
   ret i16 %4
 }
 

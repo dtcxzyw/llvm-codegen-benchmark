@@ -14,6 +14,10 @@ func0000000000000040:                   # @func0000000000000040
 	subw	a1, a1, a0
 	addiw	a0, a1, 32
 	ret
+func0000000000000030:                   # @func0000000000000030
+	subw	a0, a1, a0
+	addiw	a0, a0, 16
+	ret
 func0000000000000020:                   # @func0000000000000020
 	not	a0, a0
 	addw	a0, a0, a1

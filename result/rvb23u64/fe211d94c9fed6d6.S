@@ -1,35 +1,41 @@
-func0000000000000064:                   # @func0000000000000064
+func00000000000000c4:                   # @func00000000000000c4
 	srai	a2, a2, 4
 	addi	a1, a1, 1
 	sltu	a1, a1, a2
 	and	a0, a0, a1
 	ret
-func0000000000000074:                   # @func0000000000000074
+func00000000000000e4:                   # @func00000000000000e4
 	srai	a2, a2, 3
 	addi	a1, a1, 1
 	sltu	a1, a1, a2
 	and	a0, a0, a1
 	ret
-func0000000000000076:                   # @func0000000000000076
+func00000000000000e6:                   # @func00000000000000e6
 	srai	a2, a2, 32
 	addi	a1, a1, 1
 	slt	a1, a1, a2
 	and	a0, a0, a1
 	ret
-func0000000000000056:                   # @func0000000000000056
+func0000000000000084:                   # @func0000000000000084
+	srai	a2, a2, 2
+	addi	a1, a1, 1
+	sltu	a1, a1, a2
+	and	a0, a0, a1
+	ret
+func00000000000000a6:                   # @func00000000000000a6
 	srai	a2, a2, 32
 	addi	a1, a1, 1
 	slt	a1, a1, a2
 	and	a0, a0, a1
 	ret
-func000000000000007c:                   # @func000000000000007c
+func00000000000000ec:                   # @func00000000000000ec
 	srai	a2, a2, 2
 	addi	a1, a1, 1
 	xor	a1, a1, a2
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
-func000000000000006c:                   # @func000000000000006c
+func00000000000000cc:                   # @func00000000000000cc
 	srai	a2, a2, 2
 	addi	a1, a1, 1
 	xor	a1, a1, a2

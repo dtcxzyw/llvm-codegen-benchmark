@@ -1,5 +1,5 @@
 
-; 133 occurrences:
+; 131 occurrences:
 ; darktable/optimized/ColorFilterArray.cpp.ll
 ; darktable/optimized/Cr2Decompressor.cpp.ll
 ; darktable/optimized/DngDecoder.cpp.ll
@@ -30,7 +30,6 @@
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; llvm/optimized/MemCpyOptimizer.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/Scalarizer.cpp.ll
@@ -122,7 +121,6 @@
 ; yosys/optimized/pmux2shiftx.ll
 ; yosys/optimized/proc_mux.ll
 ; yosys/optimized/proc_rmdead.ll
-; yosys/optimized/qwp.ll
 ; yosys/optimized/scopeinfo.ll
 ; yosys/optimized/share.ll
 ; yosys/optimized/sim.ll
@@ -141,7 +139,7 @@ entry:
   ret i32 %3
 }
 
-; 41 occurrences:
+; 43 occurrences:
 ; box2d/optimized/b2_collision.cpp.ll
 ; eastl/optimized/BenchmarkHash.cpp.ll
 ; eastl/optimized/TestHash.cpp.ll
@@ -152,13 +150,11 @@ entry:
 ; libsodium/optimized/libsodium_la-argon2-fill-block-ref.ll
 ; libsodium/optimized/libssse3_la-argon2-fill-block-ssse3.ll
 ; lief/optimized/GnuHash.cpp.ll
-; linux/optimized/scsicam.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
 ; llvm/optimized/AutoUpgrade.cpp.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/ThreadSanitizer.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -183,6 +179,10 @@ entry:
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; z3/optimized/bv_rewriter.cpp.ll
 ; z3/optimized/check_relation.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/8mr81aw0ctvqdrbyiysor7awe.ll
+; zed-rs/optimized/ddwqyvi7204z7yxly1a7n0b57.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i64 %1) #0 {
 entry:
@@ -191,7 +191,7 @@ entry:
   ret i32 %3
 }
 
-; 38 occurrences:
+; 31 occurrences:
 ; clamav/optimized/arc4.c.ll
 ; eastl/optimized/TestFixedHash.cpp.ll
 ; eastl/optimized/TestHash.cpp.ll
@@ -200,10 +200,8 @@ entry:
 ; gromacs/optimized/gmx_xpm2ps.cpp.ll
 ; hermes/optimized/CharacterProperties.cpp.ll
 ; libwebp/optimized/histogram_enc.c.ll
-; linux/optimized/head64.ll
 ; linux/optimized/vc_screen.ll
 ; llvm/optimized/CombinerHelper.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86InterleavedAccess.cpp.ll
 ; lua/optimized/ltable.ll
@@ -222,14 +220,9 @@ entry:
 ; wolfssl/optimized/pwdbased.c.ll
 ; yosys/optimized/iopadmap.ll
 ; yosys/optimized/memory_share.ll
-; yosys/optimized/opt_demorgan.ll
-; yosys/optimized/opt_dff.ll
 ; yosys/optimized/opt_lut.ll
 ; yosys/optimized/opt_muxtree.ll
-; yosys/optimized/pmux2shiftx.ll
 ; yosys/optimized/qwp.ll
-; yosys/optimized/verilog_backend.ll
-; yosys/optimized/zinit.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i64 %1) #0 {
 entry:

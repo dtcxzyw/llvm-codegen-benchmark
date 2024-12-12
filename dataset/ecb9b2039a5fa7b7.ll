@@ -18,7 +18,7 @@
 ; meshlab/optimized/miniz.c.ll
 ; ruby/optimized/weakmap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000042(i64 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000082(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 31
   %4 = icmp eq i32 %3, 10
@@ -31,26 +31,13 @@ entry:
 ; 1 occurrences:
 ; openssl/optimized/asn1_internal_test-bin-asn1_internal_test.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000318(i64 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000618(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -8388608
   %4 = icmp ne i32 %3, 67108864
   %5 = or i1 %4, %1
   %6 = icmp ne i64 %0, 0
   %7 = or i1 %6, %5
-  ret i1 %7
-}
-
-; 1 occurrences:
-; php/optimized/pcre2_dfa_match.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000320(i1 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, -2147483584
-  %4 = icmp ne i32 %3, 0
-  %5 = or i1 %4, %0
-  %6 = icmp ugt i64 %1, 4999999
-  %7 = or i1 %5, %6
   ret i1 %7
 }
 
@@ -61,11 +48,11 @@ entry:
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000302(i64 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000602(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1024
   %4 = icmp ne i32 %3, 0
-  %5 = or i1 %4, %1
+  %5 = or i1 %1, %4
   %6 = icmp eq i64 %0, 0
   %7 = or i1 %6, %5
   ret i1 %7
@@ -77,11 +64,11 @@ entry:
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000308(i64 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000608(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1024
   %4 = icmp ne i32 %3, 0
-  %5 = or i1 %4, %1
+  %5 = or i1 %1, %4
   %6 = icmp ult i64 %0, 4
   %7 = or i1 %6, %5
   ret i1 %7
@@ -93,7 +80,7 @@ entry:
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 15
   %4 = icmp eq i32 %3, 0
@@ -121,7 +108,7 @@ entry:
 ; llvm/optimized/SemaCast.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000098(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 536870911
   %4 = icmp eq i32 %3, 536870911
@@ -134,11 +121,11 @@ entry:
 ; 1 occurrences:
 ; slurm/optimized/slurm_protocol_defs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000070(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000b0(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 15
   %4 = icmp eq i32 %3, 5
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   %6 = icmp ne i64 %1, 0
   %7 = or i1 %5, %6
   ret i1 %7
@@ -147,11 +134,11 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/libata-eh.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000330(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000630(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 32
   %4 = icmp ne i32 %3, 0
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   %6 = icmp ne i64 %1, 0
   %7 = or i1 %5, %6
   ret i1 %7

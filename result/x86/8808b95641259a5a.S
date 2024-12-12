@@ -1,8 +1,3 @@
-func000000000000003d:                   # @func000000000000003d
-	movzbl	%dl, %eax
-	shlxl	%esi, %eax, %eax
-	addl	%edi, %eax
-	retq
 func000000000000000d:                   # @func000000000000000d
 	movzbl	%dl, %eax
 	shlxl	%esi, %eax, %eax

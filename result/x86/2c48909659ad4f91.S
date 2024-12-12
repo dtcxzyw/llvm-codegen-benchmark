@@ -6,6 +6,10 @@ func000000000000000a:                   # @func000000000000000a
 	movq	%rdx, %rax
 	subq	%rsi, %rax
 	retq
+func000000000000001e:                   # @func000000000000001e
+	movq	%rdx, %rax
+	subq	%rsi, %rax
+	retq
 func0000000000000010:                   # @func0000000000000010
 	movl	$8, %eax
 	subq	%rsi, %rax

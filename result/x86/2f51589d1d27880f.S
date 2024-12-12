@@ -5,21 +5,21 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	%rsi, %rdx
 	setb	%al
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	shrq	$3, %rdx
 	addq	%rdi, %rdx
 	incq	%rsi
 	cmpq	%rsi, %rdx
 	setb	%al
 	retq
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	shrq	$3, %rdx
 	addq	%rdi, %rdx
 	incq	%rsi
 	cmpq	%rsi, %rdx
 	seta	%al
 	retq
-func00000000000000c8:                   # @func00000000000000c8
+func0000000000000188:                   # @func0000000000000188
 	shrq	$12, %rdx
 	addq	%rdi, %rdx
 	incq	%rsi

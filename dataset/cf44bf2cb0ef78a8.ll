@@ -1,5 +1,5 @@
 
-; 105 occurrences:
+; 103 occurrences:
 ; abc/optimized/extraUtilEnum.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; assimp/optimized/3DSLoader.cpp.ll
@@ -69,7 +69,6 @@
 ; llvm/optimized/PartiallyInlineLibCalls.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/RISCVAsmPrinter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVRegisterInfo.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/SimplifyLibCalls.cpp.ll
@@ -103,7 +102,6 @@
 ; php/optimized/zend_ssa.ll
 ; qemu/optimized/chardev_char.c.ll
 ; qemu/optimized/plugins_core.c.ll
-; qemu/optimized/ui_kbd-state.c.ll
 ; spike/optimized/debug_module.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i32 %1) #0 {
@@ -128,12 +126,11 @@ entry:
   ret i64 %5
 }
 
-; 30 occurrences:
+; 29 occurrences:
 ; arrow/optimized/reader.cc.ll
 ; gromacs/optimized/coupling.cpp.ll
 ; llvm/optimized/BuildLibCalls.cpp.ll
 ; llvm/optimized/ConstantFolding.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/Threading.cpp.ll
 ; luajit/optimized/lj_snap.ll
 ; luajit/optimized/lj_snap_dyn.ll
@@ -165,7 +162,7 @@ entry:
   %2 = and i32 %1, 63
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 
@@ -189,7 +186,7 @@ entry:
   %2 = and i32 %1, 63
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 1, %3
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 

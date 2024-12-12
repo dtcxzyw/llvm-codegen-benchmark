@@ -39,9 +39,9 @@ func0000000000000001:                   # @func0000000000000001
 	vpcmpeqb	%xmm1, %xmm0, %xmm0
 	retq
 .LCPI2_0:
-	.zero	16,12
+	.zero	16,62
 .LCPI2_1:
-	.zero	4,12
+	.zero	4,62
 func0000000000000008:                   # @func0000000000000008
 	vpandd	.LCPI2_1(%rip){1to4}, %xmm0, %xmm0
 	vpxor	%xmm1, %xmm1, %xmm1
@@ -83,7 +83,7 @@ func000000000000000a:                   # @func000000000000000a
 	.zero	16,64
 .LCPI4_1:
 	.zero	4,64
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	vpandd	.LCPI4_1(%rip){1to4}, %xmm0, %xmm0
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpeqb	%xmm1, %xmm0, %xmm0

@@ -11,7 +11,7 @@
 ; recastnavigation/optimized/DetourNavMeshBuilder.cpp.ll
 ; recastnavigation/optimized/MeshLoaderObj.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000e6(i64 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 3
   %3 = sext i32 %2 to i64
@@ -25,7 +25,7 @@ entry:
 ; bullet3/optimized/btReducedDeformableBody.ll
 ; libjpeg-turbo/optimized/jdmarker.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 3
   %3 = sext i32 %2 to i64
@@ -49,7 +49,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/hough.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a6(i64 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 10
   %3 = sext i32 %2 to i64

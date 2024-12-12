@@ -1,5 +1,5 @@
 
-; 39 occurrences:
+; 38 occurrences:
 ; abc/optimized/cecPat.c.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/gaussian_distribution_test.cc.ll
@@ -11,7 +11,6 @@
 ; abseil-cpp/optimized/poisson_distribution_test.cc.ll
 ; linux/optimized/efi_64.ll
 ; linux/optimized/i915_gem_shrinker.ll
-; linux/optimized/scsiglue.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/CGCXX.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll

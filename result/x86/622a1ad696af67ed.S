@@ -1,10 +1,5 @@
 func0000000000000000:                   # @func0000000000000000
-	leal	1(%rdx), %eax
-	testb	$1, %dil
-	cmoveq	%rsi, %rax
-	retq
-func0000000000000007:                   # @func0000000000000007
-	leal	64(%rdx), %eax
+	leal	-1(%rdx), %eax
 	testb	$1, %dil
 	cmoveq	%rsi, %rax
 	retq
@@ -13,7 +8,7 @@ func0000000000000003:                   # @func0000000000000003
 	testb	$1, %dil
 	cmoveq	%rsi, %rax
 	retq
-func0000000000000005:                   # @func0000000000000005
+func0000000000000001:                   # @func0000000000000001
 	leal	1(%rdx), %eax
 	testb	$1, %dil
 	cmoveq	%rsi, %rax

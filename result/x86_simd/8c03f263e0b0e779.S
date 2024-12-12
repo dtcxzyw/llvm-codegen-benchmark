@@ -69,13 +69,14 @@ func000000000000001b:                   # @func000000000000001b
 	vmovdqa	%ymm1, %ymm0
 	retq
 .LCPI7_0:
-	.long	128                             # 0x80
+	.long	4294967293                      # 0xfffffffd
 .LCPI7_1:
-	.long	126                             # 0x7e
+	.long	16777213                        # 0xfffffd
+.LCPI7_2:
+	.long	16711680                        # 0xff0000
 func0000000000000020:                   # @func0000000000000020
 	vpcmpleud	.LCPI7_0(%rip){1to8}, %ymm0, %k1
-	vpcmpeqd	%ymm2, %ymm2, %ymm2
-	vpbroadcastd	.LCPI7_1(%rip), %ymm1   # ymm1 = [126,126,126,126,126,126,126,126]
-	vpaddd	%ymm2, %ymm0, %ymm1 {%k1}
+	vpbroadcastd	.LCPI7_1(%rip), %ymm1   # ymm1 = [16777213,16777213,16777213,16777213,16777213,16777213,16777213,16777213]
+	vpaddd	.LCPI7_2(%rip){1to8}, %ymm0, %ymm1 {%k1}
 	vmovdqa	%ymm1, %ymm0
 	retq

@@ -1,11 +1,10 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; bullet3/optimized/b3QuantizedBvh.ll
 ; bullet3/optimized/btGImpactBvh.ll
 ; bullet3/optimized/btGImpactQuantizedBvh.ll
 ; bullet3/optimized/btQuantizedBvh.ll
-; gromacs/optimized/dlasdt.cpp.ll
-; gromacs/optimized/slasdt.cpp.ll
+; lvgl/optimized/lv_chart.ll
 ; opencv/optimized/optflowgf.cpp.ll
 ; opencv/optimized/stereo_binary_bm.cpp.ll
 ; opencv/optimized/stereobm.cpp.ll
@@ -18,7 +17,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 3
   %3 = xor i32 %2, -1
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 

@@ -9,7 +9,7 @@
 ; recastnavigation/optimized/RecastFilter.cpp.ll
 ; recastnavigation/optimized/RecastRasterization.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000ea(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = call noundef i32 @llvm.abs.i32(i32 %3, i1 true)
@@ -32,10 +32,12 @@ entry:
   ret i1 %5
 }
 
-; 10 occurrences:
+; 12 occurrences:
 ; image-rs/optimized/254ue5dpb10tdnze.ll
+; libwebp/optimized/anim_encode.c.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/ScheduleDAGRRList.cpp.ll
+; lvgl/optimized/lv_draw_label.ll
 ; ocio/optimized/MathUtils.cpp.ll
 ; opencv/optimized/finder_pattern_finder.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
@@ -44,7 +46,7 @@ entry:
 ; postgres/optimized/rangetypes_gist.ll
 ; zxing/optimized/ODDataBarCommon.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = tail call i32 @llvm.abs.i32(i32 %3, i1 true)
@@ -52,7 +54,7 @@ entry:
   ret i1 %5
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; graphviz/optimized/dotsplines.c.ll
 ; gromacs/optimized/libxdrf.cpp.ll
@@ -60,6 +62,7 @@ entry:
 ; libwebp/optimized/analysis_enc.c.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_indev_scroll.ll
 ; oiio/optimized/imagebufalgo_draw.cpp.ll
 ; opencv/optimized/erfilter.cpp.ll
 ; openjdk/optimized/DrawLine.ll
@@ -67,11 +70,11 @@ entry:
 ; raylib/optimized/rtextures.c.ll
 ; zxing/optimized/Barcode.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000b4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = tail call i32 @llvm.abs.i32(i32 %3, i1 true)
-  %5 = icmp ult i32 %4, %0
+  %5 = icmp samesign ult i32 %4, %0
   ret i1 %5
 }
 
@@ -86,7 +89,7 @@ entry:
 ; openjdk/optimized/awt_ImagingLib.ll
 ; zxing/optimized/ODDXFilmEdgeReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = tail call i32 @llvm.abs.i32(i32 %3, i1 true)
@@ -94,40 +97,12 @@ entry:
   ret i1 %5
 }
 
-; 31 occurrences:
-; assimp/optimized/Assimp.cpp.ll
-; clamav/optimized/pe_icons.c.ll
-; clamav/optimized/rarvm.cpp.ll
-; cmake/optimized/archive_read_support_format_rar.c.ll
-; darktable/optimized/FujiDecompressor.cpp.ll
-; darktable/optimized/OlympusDecompressor.cpp.ll
-; graphviz/optimized/dotsplines.c.ll
+; 3 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; libpng/optimized/pngwutil.c.ll
 ; llvm/optimized/CommentCommandTraits.cpp.ll
-; meshlab/optimized/gltf_loader.cpp.ll
-; nori/optimized/bitmap.cpp.ll
-; nori/optimized/nanovg.c.ll
-; opencv/optimized/abs_decoder.cpp.ll
-; opencv/optimized/demosaicing.cpp.ll
-; opencv/optimized/detector.cpp.ll
-; opencv/optimized/finder_pattern_finder.cpp.ll
-; opencv/optimized/perf_qrcode_pipeline.cpp.ll
-; opencv/optimized/seam_finders.cpp.ll
-; opencv/optimized/stereo_binary_sgbm.cpp.ll
-; opencv/optimized/stereosgbm.cpp.ll
 ; openjdk/optimized/hb-buffer.ll
-; openmpi/optimized/pml_ob1_recvfrag.ll
-; openusd/optimized/intrapred.c.ll
-; openusd/optimized/stbImage.cpp.ll
-; raylib/optimized/rmodels.c.ll
-; raylib/optimized/rtextures.c.ll
-; stb/optimized/stb_image_write.c.ll
-; tev/optimized/StbiLdrImageSaver.cpp.ll
-; tinygltf/optimized/tiny_gltf.cc.ll
-; zxing/optimized/DMDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = tail call i32 @llvm.abs.i32(i32 %3, i1 true)
@@ -146,7 +121,7 @@ entry:
 ; verilator/optimized/V3Width.cpp.ll
 ; verilator/optimized/V3WidthSel.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = call i32 @llvm.abs.i32(i32 %3, i1 true)
@@ -154,10 +129,51 @@ entry:
   ret i1 %5
 }
 
+; 31 occurrences:
+; assimp/optimized/Assimp.cpp.ll
+; clamav/optimized/pe_icons.c.ll
+; clamav/optimized/rarvm.cpp.ll
+; cmake/optimized/archive_read_support_format_rar.c.ll
+; darktable/optimized/FujiDecompressor.cpp.ll
+; darktable/optimized/OlympusDecompressor.cpp.ll
+; graphviz/optimized/dotsplines.c.ll
+; libpng/optimized/pngwutil.c.ll
+; lvgl/optimized/lv_draw_sw_line.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_indev.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; nori/optimized/bitmap.cpp.ll
+; nori/optimized/nanovg.c.ll
+; opencv/optimized/abs_decoder.cpp.ll
+; opencv/optimized/demosaicing.cpp.ll
+; opencv/optimized/detector.cpp.ll
+; opencv/optimized/finder_pattern_finder.cpp.ll
+; opencv/optimized/perf_qrcode_pipeline.cpp.ll
+; opencv/optimized/seam_finders.cpp.ll
+; opencv/optimized/stereo_binary_sgbm.cpp.ll
+; opencv/optimized/stereosgbm.cpp.ll
+; openmpi/optimized/pml_ob1_recvfrag.ll
+; openusd/optimized/intrapred.c.ll
+; openusd/optimized/stbImage.cpp.ll
+; raylib/optimized/rmodels.c.ll
+; raylib/optimized/rtextures.c.ll
+; stb/optimized/stb_image_write.c.ll
+; tev/optimized/StbiLdrImageSaver.cpp.ll
+; tinygltf/optimized/tiny_gltf.cc.ll
+; zxing/optimized/DMDetector.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000b8(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub nsw i32 %1, %2
+  %4 = tail call i32 @llvm.abs.i32(i32 %3, i1 true)
+  %5 = icmp samesign ugt i32 %4, %0
+  ret i1 %5
+}
+
 ; 1 occurrences:
 ; abc/optimized/wlcBlast.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = tail call i32 @llvm.abs.i32(i32 %3, i1 true)
@@ -169,11 +185,22 @@ entry:
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000f4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = tail call noundef i32 @llvm.abs.i32(i32 %3, i1 true)
-  %5 = icmp ult i32 %4, %0
+  %5 = icmp samesign ult i32 %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000f9(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub nsw i32 %1, %2
+  %4 = tail call noundef i32 @llvm.abs.i32(i32 %3, i1 true)
+  %5 = icmp samesign uge i32 %4, %0
   ret i1 %5
 }
 
@@ -181,18 +208,18 @@ entry:
 ; opencv/optimized/perf_qrcode_pipeline.cpp.ll
 ; openusd/optimized/loopfilter.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000055(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000b5(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = tail call i32 @llvm.abs.i32(i32 %3, i1 true)
-  %5 = icmp ule i32 %4, %0
+  %5 = icmp samesign ule i32 %4, %0
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; openusd/optimized/loopfilter.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000057(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a7(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = tail call i32 @llvm.abs.i32(i32 %3, i1 true)
@@ -264,7 +291,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/eval.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = tail call i32 @llvm.abs.i32(i32 %3, i1 true)

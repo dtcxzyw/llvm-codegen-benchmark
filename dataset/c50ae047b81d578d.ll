@@ -6,7 +6,7 @@
 define i32 @func000000000000001c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sle i32 %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = zext i1 %4 to i32
   ret i32 %5
 }
@@ -24,10 +24,9 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; abc/optimized/dauNpn2.c.ll
 ; openmpi/optimized/comm.ll
-; quickjs/optimized/quickjs.ll
 ; stb/optimized/stb_tilemap_editor.c.ll
 ; yosys/optimized/wreduce.ll
 ; Function Attrs: nounwind
@@ -51,7 +50,7 @@ entry:
 define i32 @func0000000000000010(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = zext i1 %4 to i32
   ret i32 %5
 }
@@ -68,13 +67,14 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; wireshark/optimized/packet-btle.c.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ule i32 %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = zext i1 %4 to i32
   ret i32 %5
 }

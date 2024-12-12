@@ -1,8 +1,13 @@
 
-; 20 occurrences:
+; 25 occurrences:
 ; abc/optimized/sscClass.c.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stdin.ll
 ; crow/optimized/example_ws.cpp.ll
 ; glslang/optimized/ParseHelper.cpp.ll
+; libwebp/optimized/predictor_enc.c.ll
 ; llvm/optimized/GlobalISelMatchTable.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; llvm/optimized/WhitespaceManager.cpp.ll
@@ -59,7 +64,7 @@ entry:
 define i1 @func0000000000000002(i1 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 113
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }

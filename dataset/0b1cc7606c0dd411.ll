@@ -54,7 +54,6 @@ entry:
 ; cmake/optimized/zstd_opt.c.ll
 ; linux/optimized/balloc.ll
 ; linux/optimized/mballoc.ll
-; linux/optimized/regcache-flat.ll
 ; linux/optimized/sch_api.ll
 ; linux/optimized/skbuff.ll
 ; linux/optimized/vgacon.ll
@@ -64,6 +63,7 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; redis/optimized/redis-cli.ll
 ; xgboost/optimized/charconv.cc.ll
+; z3/optimized/pb2bv_rewriter.cpp.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {

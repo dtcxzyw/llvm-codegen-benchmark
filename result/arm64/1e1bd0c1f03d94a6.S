@@ -23,13 +23,13 @@ func0000000000000002:                   // @func0000000000000002
 	add	x0, x0, w8, sxtw #3
 	ret
                                         // -- End function
-func0000000000000032:                   // @func0000000000000032
+func0000000000000012:                   // @func0000000000000012
 // %bb.0:                               // %entry
 	lsl	w8, w2, w1
-	add	x0, x0, w8, sxtw #2
+	add	x0, x0, w8, sxtw #3
 	ret
                                         // -- End function
-func0000000000000012:                   // @func0000000000000012
+func0000000000000032:                   // @func0000000000000032
 // %bb.0:                               // %entry
 	lsl	w8, w2, w1
 	add	x0, x0, w8, sxtw #3

@@ -33,10 +33,25 @@ func0000000000000014:                   # @func0000000000000014
 	subq	%rdi, %rsi
 	leaq	-8(%rsi), %rax
 	retq
+func000000000000000a:                   # @func000000000000000a
+	shrq	%rsi
+	subq	%rdi, %rsi
+	leaq	1(%rsi), %rax
+	retq
 func000000000000001e:                   # @func000000000000001e
 	shrq	$5, %rsi
 	subq	%rdi, %rsi
 	leaq	1(%rsi), %rax
+	retq
+func0000000000000006:                   # @func0000000000000006
+	shrq	$3, %rsi
+	notq	%rdi
+	leaq	(%rdi,%rsi), %rax
+	retq
+func0000000000000007:                   # @func0000000000000007
+	shrq	$3, %rsi
+	notq	%rdi
+	leaq	(%rdi,%rsi), %rax
 	retq
 func000000000000001d:                   # @func000000000000001d
 	shrq	$2, %rsi

@@ -6,11 +6,6 @@ func0000000000000003:                   # @func0000000000000003
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, 24
 	ret
-func0000000000000011:                   # @func0000000000000011
-	andi	a0, a0, 252
-	seqz	a0, a0
-	xori	a0, a0, 15
-	ret
 func0000000000000002:                   # @func0000000000000002
 	andi	a0, a0, 4
 	lui	a1, 16384

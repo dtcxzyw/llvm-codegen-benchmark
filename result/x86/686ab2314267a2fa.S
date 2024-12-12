@@ -40,7 +40,7 @@ func000000000000001f:                   # @func000000000000001f
 	retq
 func0000000000000007:                   # @func0000000000000007
 	subl	%edi, %esi
-	leal	64(%rsi), %eax
+	leal	-307(%rsi), %eax
 	retq
 func0000000000000000:                   # @func0000000000000000
 	subl	%edi, %esi

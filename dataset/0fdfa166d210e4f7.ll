@@ -1,6 +1,42 @@
 
-; 75 occurrences:
+; 109 occurrences:
 ; arrow/optimized/diff.cc.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/env.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/extensions.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/run_exe.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/sub_launcher.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
 ; casadi/optimized/bspline.cpp.ll
 ; casadi/optimized/cvodes_direct.c.ll
 ; casadi/optimized/kinsol_direct.c.ll
@@ -61,8 +97,6 @@
 ; rocksdb/optimized/seqno_to_time_mapping.cc.ll
 ; ruby/optimized/gc.ll
 ; soc-simulator/optimized/sim_mycpu.ll
-; spike/optimized/f16_to_f128.ll
-; spike/optimized/f16_to_f64.ll
 ; spike/optimized/htif_pthread.ll
 ; spike/optimized/ns16550.ll
 ; spike/optimized/socketif.ll
@@ -84,19 +118,19 @@ entry:
   ret i64 %5
 }
 
-; 104 occurrences:
+; 107 occurrences:
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; bdwgc/optimized/gc.c.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
-; casadi/optimized/idas_interface.cpp.ll
 ; casadi/optimized/integrator.cpp.ll
 ; casadi/optimized/nlpsol.cpp.ll
 ; casadi/optimized/qrqp.cpp.ll
 ; casadi/optimized/sqpmethod.cpp.ll
 ; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
 ; ceres/optimized/eigensparse.cc.ll
+; clamav/optimized/htmlnorm.c.ll
 ; cmake/optimized/nghttp2_submit.c.ll
 ; cpython/optimized/odictobject.ll
 ; darktable/optimized/introspection_temperature.c.ll
@@ -118,7 +152,6 @@ entry:
 ; icu/optimized/pkgdata.ll
 ; libquic/optimized/pickle.cc.ll
 ; linux/optimized/iov_iter.ll
-; linux/optimized/lbr.ll
 ; linux/optimized/md.ll
 ; linux/optimized/ntp.ll
 ; linux/optimized/regmap-debugfs.ll
@@ -189,6 +222,10 @@ entry:
 ; spike/optimized/vsuxei64_v.ll
 ; spike/optimized/vsuxei8_v.ll
 ; tokenizers-rs/optimized/1w676x6x6lprwvn5.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -431,7 +468,7 @@ entry:
   ret i64 %5
 }
 
-; 38 occurrences:
+; 41 occurrences:
 ; brotli/optimized/encode.c.ll
 ; cmake/optimized/fse_decompress.c.ll
 ; cmake/optimized/zstdmt_compress.c.ll
@@ -439,7 +476,6 @@ entry:
 ; hyperscan/optimized/scratch.c.ll
 ; icu/optimized/decNumber.ll
 ; linux/optimized/blk-merge.ll
-; linux/optimized/head64.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/Preprocessor.cpp.ll
 ; llvm/optimized/SourceManager.cpp.ll
@@ -468,6 +504,10 @@ entry:
 ; wireshark/optimized/packet-per.c.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
 ; zstd/optimized/fse_decompress.c.ll
 ; zstd/optimized/zstdmt_compress.c.ll
 ; Function Attrs: nounwind
@@ -559,9 +599,18 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 11 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; libwebp/optimized/buffer_dec.c.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/3xn4w3qarvbzl2jkwavm0419t.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/4hgzf672qwd8x8ke1407yey6m.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003e(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -571,7 +620,8 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/pattern.ll
 ; linux/optimized/pci.ll
 ; spike/optimized/f128_sqrt.ll
 ; Function Attrs: nounwind
@@ -579,6 +629,26 @@ define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = add nuw i64 %0, %1
+  %5 = add i64 %4, %3
+  ret i64 %5
+}
+
+; 10 occurrences:
+; brotli/optimized/compound_dictionary.c.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/3xn4w3qarvbzl2jkwavm0419t.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/4hgzf672qwd8x8ke1407yey6m.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %1, %2
+  %4 = shl nuw i64 %0, 56
   %5 = add i64 %4, %3
   ret i64 %5
 }
@@ -602,17 +672,6 @@ entry:
   %3 = add nuw i64 %1, %2
   %4 = shl nuw nsw i64 %0, 3
   %5 = add nuw i64 %4, %3
-  ret i64 %5
-}
-
-; 1 occurrences:
-; brotli/optimized/compound_dictionary.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl nuw nsw i64 %2, 2
-  %4 = add nuw i64 %0, %1
-  %5 = add i64 %4, %3
   ret i64 %5
 }
 

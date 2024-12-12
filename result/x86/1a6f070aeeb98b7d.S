@@ -25,3 +25,7 @@ func000000000000000d:                   # @func000000000000000d
 	movabsq	$9218868437227405312, %rax      # imm = 0x7FF0000000000000
 	orq	%rdi, %rax
 	retq
+func0000000000000004:                   # @func0000000000000004
+	shlq	$32, %rdi
+	leaq	2(%rdi), %rax
+	retq

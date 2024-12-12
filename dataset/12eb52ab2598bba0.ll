@@ -11,10 +11,11 @@ entry:
   ret i32 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; lief/optimized/ecp_curves.c.ll
 ; linux/optimized/filter.ll
 ; wireshark/optimized/packet-kismet.c.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i64 %1, i64 %2) #0 {
 entry:

@@ -34,6 +34,14 @@ func00000000000000ca:                   # @func00000000000000ca
 	vmfle.vv	v24, v8, v16
 	vmor.mm	v0, v24, v7
 	ret
+func00000000000000db:                   # @func00000000000000db
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vle64.v	v24, (a0)
+	vmflt.vv	v7, v16, v8
+	vmflt.vv	v16, v8, v24
+	vmnot.m	v8, v7
+	vmorn.mm	v0, v8, v16
+	ret
 func000000000000002c:                   # @func000000000000002c
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)

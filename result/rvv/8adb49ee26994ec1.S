@@ -8,7 +8,7 @@ func0000000000000001:                   # @func0000000000000001
 	vor.vi	v10, v10, 8, v0.t
 	vmv.v.v	v8, v10
 	ret
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vor.vi	v10, v10, 4, v0.t
 	vsetvli	zero, zero, e8, mf2, ta, ma
@@ -17,7 +17,7 @@ func0000000000000031:                   # @func0000000000000031
 	vor.vi	v10, v10, 8, v0.t
 	vmv.v.v	v8, v10
 	ret
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vor.vi	v10, v10, 8, v0.t
 	vsetvli	zero, zero, e8, mf2, ta, ma

@@ -1,10 +1,10 @@
-func000000000000000a:                   # @func000000000000000a
+func000000000000000f:                   # @func000000000000000f
 	xorl	%eax, %eax
 	testb	$1, %sil
 	cmoveq	%rdx, %rax
 	leaq	24(%rax,%rdi,8), %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func000000000000000c:                   # @func000000000000000c
 	xorl	%eax, %eax
 	testb	$1, %sil
 	cmoveq	%rdx, %rax

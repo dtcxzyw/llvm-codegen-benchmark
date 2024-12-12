@@ -1,7 +1,13 @@
 
-; 94 occurrences:
+; 100 occurrences:
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; gromacs/optimized/biasstate.cpp.ll
-; linux/optimized/feat_ctl.ll
 ; linux/optimized/ping.ll
 ; linux/optimized/tg3.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
@@ -99,19 +105,6 @@ define i1 @func0000000000000018(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %1, i1 %2, i1 false
   %4 = icmp ne i32 %0, 0
-  %5 = or i1 %4, %3
-  ret i1 %5
-}
-
-; 3 occurrences:
-; linux/optimized/ich8lan.ll
-; mitsuba3/optimized/x86assembler.cpp.ll
-; verilator/optimized/V3Case.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000010(i32 %0, i1 %1, i1 %2) #0 {
-entry:
-  %3 = select i1 %1, i1 %2, i1 false
-  %4 = icmp ugt i32 %0, 1048576
   %5 = or i1 %4, %3
   ret i1 %5
 }
@@ -224,6 +217,18 @@ entry:
   ret i1 %5
 }
 
+; 2 occurrences:
+; linux/optimized/ich8lan.ll
+; verilator/optimized/V3Case.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000010(i1 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ugt i32 %2, 31
+  %4 = select i1 %0, i1 %1, i1 false
+  %5 = or i1 %4, %3
+  ret i1 %5
+}
+
 ; 1 occurrences:
 ; php/optimized/scanf.ll
 ; Function Attrs: nounwind
@@ -235,12 +240,11 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; clamav/optimized/pe_icons.c.ll
 ; libquic/optimized/general_loss_algorithm.cc.ll
 ; llvm/optimized/Darwin.cpp.ll
 ; opencv/optimized/convolution.cpp.ll
-; wireshark/optimized/filter_dialog.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i32 %0, i1 %1, i1 %2) #0 {
 entry:

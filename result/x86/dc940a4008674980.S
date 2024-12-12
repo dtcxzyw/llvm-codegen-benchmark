@@ -1,4 +1,4 @@
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	movb	$63, %al
 	bzhiq	%rax, %rsi, %rax
 	movabsq	$384307168202282325, %rcx       # imm = 0x555555555555555
@@ -7,7 +7,7 @@ func0000000000000018:                   # @func0000000000000018
 	notb	%dil
 	andb	%dil, %al
 	retq
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	movq	%rsi, %rax
 	shrq	$60, %rax
 	andl	$1, %eax
@@ -41,19 +41,19 @@ func0000000000000006:                   # @func0000000000000006
 	notb	%al
 	andb	%sil, %al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	testq	%rsi, %rsi
 	sete	%al
 	notb	%dil
 	andb	%dil, %al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	shrq	$60, %rsi
 	setne	%al
 	notb	%dil
 	andb	%dil, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	testq	%rsi, %rsi
 	sete	%al
 	notb	%dil

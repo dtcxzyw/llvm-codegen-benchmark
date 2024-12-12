@@ -38,9 +38,9 @@ entry:
 ; darktable/optimized/common.c.ll
 ; linux/optimized/alternative.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000204(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000604(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 72
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 72
   %4 = getelementptr i8, ptr %3, i64 %1
   %5 = getelementptr i8, ptr %4, i64 %0
   %6 = icmp ult ptr %5, %4

@@ -1,5 +1,5 @@
 
-; 50 occurrences:
+; 49 occurrences:
 ; abc/optimized/acecFadds.c.ll
 ; grpc/optimized/message_size_filter.cc.ll
 ; linux/optimized/i915_gem_stolen.ll
@@ -29,7 +29,6 @@
 ; llvm/optimized/Legalizer.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/LowLevelTypeUtils.cpp.ll
-; llvm/optimized/MSVC.cpp.ll
 ; llvm/optimized/MemRegion.cpp.ll
 ; llvm/optimized/PPDirectives.cpp.ll
 ; llvm/optimized/ParseDeclCXX.cpp.ll

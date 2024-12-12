@@ -30,6 +30,14 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	%edi, %eax
 	seta	%al
 	retq
+func0000000000000004:                   # @func0000000000000004
+	movl	%edx, %ecx
+	movl	%esi, %eax
+	cltd
+	idivl	%ecx
+	cmpl	%edi, %eax
+	setb	%al
+	retq
 func000000000000000b:                   # @func000000000000000b
 	movl	%edx, %ecx
 	movl	%esi, %eax
@@ -61,12 +69,4 @@ func0000000000000007:                   # @func0000000000000007
 	idivl	%ecx
 	cmpl	%edi, %eax
 	setle	%al
-	retq
-func0000000000000004:                   # @func0000000000000004
-	movl	%edx, %ecx
-	movl	%esi, %eax
-	cltd
-	idivl	%ecx
-	cmpl	%edi, %eax
-	setb	%al
 	retq

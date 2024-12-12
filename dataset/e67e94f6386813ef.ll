@@ -1,9 +1,12 @@
 
-; 13 occurrences:
+%struct.testl_st.2634489 = type { i32, %struct.anon.2634490, %struct.anon.0.2634491 }
+%struct.anon.2634490 = type { ptr, ptr }
+%struct.anon.0.2634491 = type { ptr, ptr }
+
+; 12 occurrences:
 ; cpython/optimized/hashtable.ll
 ; gromacs/optimized/colvarbias.cpp.ll
 ; linux/optimized/compaction.ll
-; linux/optimized/dns_key.ll
 ; linux/optimized/nf_conntrack_sip.ll
 ; postgres/optimized/nbtsplitloc.ll
 ; postgres/optimized/varlena.ll
@@ -22,21 +25,50 @@ entry:
   ret ptr %5
 }
 
-; 103 occurrences:
+; 29 occurrences:
 ; abc/optimized/acbAbc.c.ll
-; clamav/optimized/filcreat.cpp.ll
 ; cmake/optimized/cmCTestCVS.cxx.ll
-; cmake/optimized/cookie.c.ll
-; coreutils-rs/optimized/1xgh31va70j84rdd.ll
-; curl/optimized/libcurl_la-cookie.ll
-; flac/optimized/metadata.cpp.ll
 ; git/optimized/add-patch.ll
 ; git/optimized/apply.ll
 ; git/optimized/daemon.ll
 ; git/optimized/diff.ll
-; git/optimized/remote-curl.ll
 ; git/optimized/urlmatch.ll
 ; git/optimized/xpatience.ll
+; icu/optimized/timezone.ll
+; icu/optimized/uloc.ll
+; icu/optimized/uspoof_impl.ll
+; imgui/optimized/imgui.cpp.ll
+; libwebp/optimized/cwebp.c.ll
+; lodepng/optimized/pngdetail.cpp.ll
+; opencv/optimized/matrix_decomp.cpp.ll
+; openjdk/optimized/jvmtiTrace.ll
+; openmpi/optimized/pquery.ll
+; openssl/optimized/libcrypto-lib-http_lib.ll
+; openssl/optimized/libcrypto-shlib-http_lib.ll
+; openusd/optimized/parserHelpers.cpp.ll
+; re2/optimized/bitstate.cc.ll
+; ripgrep-rs/optimized/c8unzkdiauw9hyd.ll
+; ripgrep-rs/optimized/w48b1qsmd8jodkv.ll
+; rustfmt-rs/optimized/4gk399kploc9gcsb.ll
+; spike/optimized/fdt_ro.ll
+; typst-rs/optimized/1mrwywpkq81cby93.ll
+; typst-rs/optimized/m09o5qr68f5khss.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/bkp2u7tfyqnnhpthgztcor9ly.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000041(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %4 = icmp eq ptr %0, null
+  %5 = select i1 %4, ptr %3, ptr %0
+  ret ptr %5
+}
+
+; 74 occurrences:
+; cmake/optimized/cookie.c.ll
+; curl/optimized/libcurl_la-cookie.ll
+; flac/optimized/metadata.cpp.ll
+; git/optimized/remote-curl.ll
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; hermes/optimized/CSE.cpp.ll
 ; hermes/optimized/DictPropertyMap.cpp.ll
@@ -46,11 +78,6 @@ entry:
 ; hyperscan/optimized/limex_simd256.c.ll
 ; hyperscan/optimized/limex_simd384.c.ll
 ; hyperscan/optimized/limex_simd512.c.ll
-; icu/optimized/timezone.ll
-; icu/optimized/uloc.ll
-; icu/optimized/uspoof_impl.ll
-; imgui/optimized/imgui.cpp.ll
-; libwebp/optimized/cwebp.c.ll
 ; linux/optimized/dm-raid1.ll
 ; linux/optimized/igmp.ll
 ; linux/optimized/mcast.ll
@@ -108,28 +135,14 @@ entry:
 ; llvm/optimized/VPlanSLP.cpp.ll
 ; llvm/optimized/VPlanTransforms.cpp.ll
 ; llvm/optimized/VarLocBasedImpl.cpp.ll
-; lodepng/optimized/pngdetail.cpp.ll
 ; opencv/optimized/matmul.dispatch.cpp.ll
-; opencv/optimized/matrix_decomp.cpp.ll
-; openjdk/optimized/jvmtiTrace.ll
-; openssl/optimized/libcrypto-lib-http_lib.ll
-; openssl/optimized/libcrypto-shlib-http_lib.ll
 ; openssl/optimized/list_test-bin-list_test.ll
-; openusd/optimized/parserHelpers.cpp.ll
-; re2/optimized/bitstate.cc.ll
 ; redis/optimized/redis-benchmark.ll
 ; redis/optimized/redis-cli.ll
-; ripgrep-rs/optimized/c8unzkdiauw9hyd.ll
-; ripgrep-rs/optimized/w48b1qsmd8jodkv.ll
-; rust-analyzer-rs/optimized/2deyu58ajds9ccnn.ll
-; rustfmt-rs/optimized/4gk399kploc9gcsb.ll
-; spike/optimized/fdt_ro.ll
-; typst-rs/optimized/1mrwywpkq81cby93.ll
-; typst-rs/optimized/m09o5qr68f5khss.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(ptr %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000061(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %struct.testl_st.2634489, ptr %1, i64 %2
   %4 = icmp eq ptr %0, null
   %5 = select i1 %4, ptr %3, ptr %0
   ret ptr %5

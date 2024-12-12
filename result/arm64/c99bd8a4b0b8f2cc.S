@@ -6,28 +6,21 @@ func0000000000000078:                   // @func0000000000000078
 	add	x0, x0, x8
 	ret
                                         // -- End function
-func000000000000007c:                   // @func000000000000007c
+func000000000000007f:                   // @func000000000000007f
 // %bb.0:                               // %entry
 	mov	x8, #4294967296                 // =0x100000000
 	add	x8, x8, x1, lsl #32
 	add	x0, x0, x8, lsr #30
 	ret
                                         // -- End function
-func000000000000006e:                   // @func000000000000006e
+func000000000000006f:                   // @func000000000000006f
 // %bb.0:                               // %entry
 	mov	x8, #-4294967296                // =0xffffffff00000000
 	add	x8, x8, x1, lsl #32
 	add	x0, x0, x8, lsr #30
 	ret
                                         // -- End function
-func000000000000007e:                   // @func000000000000007e
-// %bb.0:                               // %entry
-	mov	x8, #4294967296                 // =0x100000000
-	add	x8, x8, x1, lsl #32
-	add	x0, x0, x8, lsr #26
-	ret
-                                        // -- End function
-func000000000000007a:                   // @func000000000000007a
+func000000000000007b:                   // @func000000000000007b
 // %bb.0:                               // %entry
 	lsl	x8, x1, #2
 	add	x8, x8, #39
@@ -35,7 +28,7 @@ func000000000000007a:                   // @func000000000000007a
 	add	x0, x0, x8
 	ret
                                         // -- End function
-func0000000000000002:                   // @func0000000000000002
+func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
 	lsl	x8, x1, #1
 	add	x8, x8, #7

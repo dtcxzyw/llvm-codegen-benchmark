@@ -11,8 +11,15 @@ entry:
   ret ptr %5
 }
 
-; 83 occurrences:
+; 94 occurrences:
 ; assimp/optimized/TargetAnimation.cpp.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/instantiate_defined_grammar.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; duckdb/optimized/ub_duckdb_optimizer_rules.cpp.ll
 ; eastl/optimized/BenchmarkDeque.cpp.ll
 ; eastl/optimized/BenchmarkTupleVector.cpp.ll
@@ -24,10 +31,16 @@ entry:
 ; entt/optimized/view.cpp.ll
 ; graphviz/optimized/sgd.c.ll
 ; graphviz/optimized/tlayout.c.ll
+; llvm/optimized/ASTDiagnostic.cpp.ll
 ; llvm/optimized/BranchFolding.cpp.ll
+; llvm/optimized/BreakCriticalEdges.cpp.ll
 ; llvm/optimized/CGOpenMPRuntime.cpp.ll
+; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/EarlyIfConversion.cpp.ll
+; llvm/optimized/InstCombineCompares.cpp.ll
 ; llvm/optimized/MachineBlockPlacement.cpp.ll
+; llvm/optimized/SROA.cpp.ll
+; llvm/optimized/SimplifyCFG.cpp.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
 ; node/optimized/libnode.node_trace_buffer.ll
@@ -40,7 +53,6 @@ entry:
 ; typst-rs/optimized/x7jq6ogp3t9ef5k.ll
 ; wireshark/optimized/packet-ssh.c.ll
 ; wolfssl/optimized/ecc.c.ll
-; yosys/optimized/select.ll
 ; z3/optimized/api_context.cpp.ll
 ; z3/optimized/arith_internalize.cpp.ll
 ; z3/optimized/arith_solver.cpp.ll
@@ -48,7 +60,6 @@ entry:
 ; z3/optimized/ast_smt2_pp.cpp.ll
 ; z3/optimized/bv_ackerman.cpp.ll
 ; z3/optimized/cached_var_subst.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/datatype_decl_plugin.cpp.ll
 ; z3/optimized/dd_bdd.cpp.ll
 ; z3/optimized/dd_pdd.cpp.ll
@@ -96,28 +107,39 @@ entry:
 ; z3/optimized/theory_utvpi.cpp.ll
 ; zxing/optimized/ZXBigInteger.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, ptr %1, ptr %2) #0 {
-entry:
-  %3 = icmp eq ptr %1, %2
-  %4 = select i1 %3, ptr %0, ptr %1
-  %5 = getelementptr nusw i8, ptr %4, i64 16
-  ret ptr %5
-}
-
-; 7 occurrences:
-; llvm/optimized/ASTDiagnostic.cpp.ll
-; llvm/optimized/BreakCriticalEdges.cpp.ll
-; llvm/optimized/CGOpenMPRuntime.cpp.ll
-; llvm/optimized/DAGCombiner.cpp.ll
-; llvm/optimized/InstCombineCompares.cpp.ll
-; llvm/optimized/SROA.cpp.ll
-; llvm/optimized/SimplifyCFG.cpp.ll
-; Function Attrs: nounwind
 define ptr @func0000000000000007(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
   %4 = select i1 %3, ptr %0, ptr %1
-  %5 = getelementptr nusw nuw i8, ptr %4, i64 48
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 16
+  ret ptr %5
+}
+
+; 5 occurrences:
+; boost/optimized/calculate_point_order.ll
+; eastl/optimized/TestRingBuffer.cpp.ll
+; eastl/optimized/TestVectorSet.cpp.ll
+; llvm/optimized/CGOpenMPRuntime.cpp.ll
+; yosys/optimized/select.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000006(ptr %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = icmp eq ptr %1, %2
+  %4 = select i1 %3, ptr %0, ptr %1
+  %5 = getelementptr nusw i8, ptr %4, i64 -40
+  ret ptr %5
+}
+
+; 3 occurrences:
+; boost/optimized/alloc_lib.ll
+; luajit/optimized/lj_alloc.ll
+; luajit/optimized/lj_alloc_dyn.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000013(ptr %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = icmp ult ptr %1, %2
+  %4 = select i1 %3, ptr %0, ptr %1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 16
   ret ptr %5
 }
 
@@ -132,38 +154,16 @@ entry:
   ret ptr %5
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; llvm/optimized/BalancedPartitioning.cpp.ll
+; pbrt-v4/optimized/aggregates.cpp.ll
+; pbrt-v4/optimized/imgtool.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000023(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ugt ptr %1, %2
   %4 = select i1 %3, ptr %0, ptr %1
   %5 = getelementptr nusw nuw i8, ptr %4, i64 8
-  ret ptr %5
-}
-
-; 2 occurrences:
-; pbrt-v4/optimized/aggregates.cpp.ll
-; pbrt-v4/optimized/imgtool.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000022(ptr %0, ptr %1, ptr %2) #0 {
-entry:
-  %3 = icmp ugt ptr %1, %2
-  %4 = select i1 %3, ptr %0, ptr %1
-  %5 = getelementptr nusw i8, ptr %4, i64 40
-  ret ptr %5
-}
-
-; 2 occurrences:
-; luajit/optimized/lj_alloc.ll
-; luajit/optimized/lj_alloc_dyn.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, ptr %1, ptr %2) #0 {
-entry:
-  %3 = icmp ult ptr %1, %2
-  %4 = select i1 %3, ptr %0, ptr %1
-  %5 = getelementptr nusw i8, ptr %4, i64 16
   ret ptr %5
 }
 

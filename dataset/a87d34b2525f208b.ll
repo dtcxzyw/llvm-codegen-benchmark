@@ -1,10 +1,11 @@
 
-%"class.re2::StringPiece.2682903" = type { ptr, i64 }
-%struct.nbnxn_cj_t.3173064 = type { i32, i32 }
+%"class.re2::StringPiece.2795662" = type { ptr, i64 }
+%struct.nbnxn_cj_t.3365531 = type { i32, i32 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; assimp/optimized/NFFLoader.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; cvc5/optimized/tableau.cpp.ll
 ; hyperscan/optimized/ng_netflow.cpp.ll
 ; hyperscan/optimized/rose_build_add_mask.cpp.ll
 ; lightgbm/optimized/bin.cpp.ll
@@ -14,13 +15,13 @@
 ; msgpack/optimized/speed_test_nested_array.cpp.ll
 ; ozz-animation/optimized/raw_animation_archive.cc.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000ba(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func00000000000000bb(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = ashr exact i64 %1, 2
   %4 = zext i32 %2 to i64
   %5 = sub nuw nsw i64 %4, %3
   %6 = getelementptr nusw i8, ptr %0, i64 %1
-  %7 = getelementptr nusw i32, ptr %6, i64 %5
+  %7 = getelementptr nusw nuw i32, ptr %6, i64 %5
   ret ptr %7
 }
 
@@ -70,13 +71,13 @@ entry:
 ; yosys/optimized/xprop.ll
 ; yosys/optimized/yosys.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000fa(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func00000000000000fb(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = ashr exact i64 %1, 4
   %4 = zext nneg i32 %2 to i64
   %5 = sub nuw nsw i64 %4, %3
   %6 = getelementptr nusw i8, ptr %0, i64 %1
-  %7 = getelementptr nusw %"class.re2::StringPiece.2682903", ptr %6, i64 %5
+  %7 = getelementptr nusw nuw %"class.re2::StringPiece.2795662", ptr %6, i64 %5
   ret ptr %7
 }
 
@@ -89,7 +90,7 @@ entry:
   %4 = zext nneg i32 %2 to i64
   %5 = sub nuw nsw i64 %4, %3
   %6 = getelementptr nusw i8, ptr %0, i64 %1
-  %7 = getelementptr %struct.nbnxn_cj_t.3173064, ptr %6, i64 %5
+  %7 = getelementptr %struct.nbnxn_cj_t.3365531, ptr %6, i64 %5
   ret ptr %7
 }
 

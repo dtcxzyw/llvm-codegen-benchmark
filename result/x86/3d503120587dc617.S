@@ -14,6 +14,11 @@ func0000000000000035:                   # @func0000000000000035
 	addq	%rsi, %rax
 	subq	%rdi, %rax
 	retq
+func0000000000000030:                   # @func0000000000000030
+	leal	-2(%rdx), %eax
+	addq	%rsi, %rax
+	subq	%rdi, %rax
+	retq
 func0000000000000040:                   # @func0000000000000040
 	movl	%edx, %eax
 	addq	%rsi, %rax

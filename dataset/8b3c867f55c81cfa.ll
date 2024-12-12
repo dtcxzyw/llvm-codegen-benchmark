@@ -30,8 +30,9 @@ entry:
   ret double %2
 }
 
-; 103 occurrences:
+; 100 occurrences:
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; casadi/optimized/convexify.cpp.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; casadi/optimized/sqpmethod.cpp.ll
@@ -90,13 +91,11 @@ entry:
 ; openusd/optimized/matrix4f.cpp.ll
 ; postgres/optimized/clausesel.ll
 ; postgres/optimized/float.ll
-; proj/optimized/aasincos.cpp.ll
 ; proj/optimized/adams.cpp.ll
 ; proj/optimized/aea.cpp.ll
 ; proj/optimized/aeqd.cpp.ll
 ; proj/optimized/bipc.cpp.ll
 ; proj/optimized/cea.cpp.ll
-; proj/optimized/collg.cpp.ll
 ; proj/optimized/eck2.cpp.ll
 ; proj/optimized/eck4.cpp.ll
 ; proj/optimized/fouc_s.cpp.ll
@@ -105,7 +104,6 @@ entry:
 ; proj/optimized/mbtfpp.cpp.ll
 ; proj/optimized/mbtfpq.cpp.ll
 ; proj/optimized/moll.cpp.ll
-; proj/optimized/nell_h.cpp.ll
 ; proj/optimized/omerc.cpp.ll
 ; proj/optimized/ortho.cpp.ll
 ; proj/optimized/putp2.cpp.ll
@@ -114,7 +112,6 @@ entry:
 ; proj/optimized/robin.cpp.ll
 ; proj/optimized/tmerc.cpp.ll
 ; proj/optimized/vandg.cpp.ll
-; proj/optimized/wink2.cpp.ll
 ; quantlib/optimized/bivariatestudenttdistribution.ll
 ; quantlib/optimized/blackformula.ll
 ; quantlib/optimized/exponentialintegrals.ll
@@ -198,7 +195,7 @@ entry:
   ret double %2
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; assimp/optimized/IFCBoolean.cpp.ll
 ; graphviz/optimized/arrows.c.ll
 ; gromacs/optimized/muParserInt.cpp.ll
@@ -211,7 +208,6 @@ entry:
 ; proj/optimized/conversion.cpp.ll
 ; proj/optimized/geod_interface.cpp.ll
 ; proj/optimized/goode.cpp.ll
-; proj/optimized/io.cpp.ll
 ; proj/optimized/ocea.cpp.ll
 ; proj/optimized/qsc.cpp.ll
 ; proj/optimized/som.cpp.ll
@@ -251,7 +247,7 @@ entry:
   ret double %2
 }
 
-; 26 occurrences:
+; 24 occurrences:
 ; graphviz/optimized/dotsplines.c.ll
 ; graphviz/optimized/emit.c.ll
 ; graphviz/optimized/gvc.c.ll
@@ -270,8 +266,6 @@ entry:
 ; oiio/optimized/benchmark.cpp.ll
 ; openblas/optimized/dbdsqr.c.ll
 ; openblas/optimized/dbdsvdx.c.ll
-; openblas/optimized/dlacn2.c.ll
-; openblas/optimized/dlacon.c.ll
 ; openblas/optimized/dlaic1.c.ll
 ; openblas/optimized/dlanv2.c.ll
 ; openblas/optimized/dlasv2.c.ll
@@ -286,6 +280,18 @@ entry:
   ret double %2
 }
 
+; 3 occurrences:
+; boost/optimized/within_pointlike_geometry.ll
+; graphviz/optimized/arrows.c.ll
+; meshlab/optimized/mesh.cpp.ll
+; Function Attrs: nounwind
+define double @func000000000000000a(double %0) #0 {
+entry:
+  %1 = fcmp ole double %0, 0.000000e+00
+  %2 = select i1 %1, double 1.800000e+02, double -1.800000e+02
+  ret double %2
+}
+
 ; 1 occurrences:
 ; gromacs/optimized/muParserInt.cpp.ll
 ; Function Attrs: nounwind
@@ -293,17 +299,6 @@ define double @func000000000000000e(double %0) #0 {
 entry:
   %1 = fcmp ord double %0, 0.000000e+00
   %2 = select i1 %1, double 5.000000e-01, double -5.000000e-01
-  ret double %2
-}
-
-; 2 occurrences:
-; graphviz/optimized/arrows.c.ll
-; meshlab/optimized/mesh.cpp.ll
-; Function Attrs: nounwind
-define double @func000000000000000a(double %0) #0 {
-entry:
-  %1 = fcmp ole double %0, 1.000000e+00
-  %2 = select i1 %1, double 2.550000e+02, double 1.000000e+00
   ret double %2
 }
 

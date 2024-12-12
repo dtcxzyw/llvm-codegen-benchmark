@@ -1,20 +1,20 @@
-func00000000000000c1:                   # @func00000000000000c1
-	cmpq	%rsi, %rdx
+func0000000000000181:                   # @func0000000000000181
+	cmpq	%rdx, %rsi
 	setne	%cl
 	testl	%edi, %edi
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
-	cmpq	%rsi, %rdx
+func0000000000000021:                   # @func0000000000000021
+	cmpq	%rdx, %rsi
 	sete	%cl
 	cmpl	$-1, %edi
 	sete	%al
 	andb	%cl, %al
 	retq
-func000000000000005c:                   # @func000000000000005c
-	cmpq	%rsi, %rdx
-	setae	%cl
+func00000000000000ac:                   # @func00000000000000ac
+	cmpq	%rdx, %rsi
+	setbe	%cl
 	testl	%edi, %edi
 	setne	%al
 	andb	%cl, %al

@@ -1,5 +1,5 @@
 
-; 89 occurrences:
+; 87 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/bacBlast.c.ll
 ; abc/optimized/bmcChain.c.ll
@@ -19,6 +19,7 @@
 ; abc/optimized/giaSweeper.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/mpmAbc.c.ll
+; abc/optimized/sbdWin.c.ll
 ; abc/optimized/sscCore.c.ll
 ; assimp/optimized/zip.c.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
@@ -74,11 +75,8 @@
 ; mitsuba3/optimized/thinlens.cpp.ll
 ; mitsuba3/optimized/volpath.cpp.ll
 ; openssl/optimized/libcrypto-lib-des_enc.ll
-; openssl/optimized/libcrypto-lib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-shlib-des_enc.ll
-; openssl/optimized/libcrypto-shlib-fcrypt_b.ll
 ; openssl/optimized/liblegacy-lib-des_enc.ll
-; openssl/optimized/liblegacy-lib-fcrypt_b.ll
 ; php/optimized/hash_gost.ll
 ; sentencepiece/optimized/builder.cc.ll
 ; sentencepiece/optimized/normalizer.cc.ll

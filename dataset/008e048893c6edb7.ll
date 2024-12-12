@@ -47,7 +47,7 @@
 ; z3/optimized/aig.cpp.ll
 ; z3/optimized/spacer_context.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i64 %1) #0 {
+define i1 @func000000000000018c(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -5
   %3 = icmp ne i64 %2, 0
@@ -67,7 +67,7 @@ entry:
 ; llvm/optimized/SemaOverload.cpp.ll
 ; ruby/optimized/enumerator.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -5
   %3 = icmp eq i64 %2, 0
@@ -85,7 +85,7 @@ entry:
 ; linux/optimized/i915_gem_context.ll
 ; linux/optimized/serial_core.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000181(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 89391104
   %3 = icmp ne i64 %2, 0
@@ -106,7 +106,7 @@ entry:
 ; z3/optimized/dl_rule.cpp.ll
 ; z3/optimized/pb2bv_tactic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2305843005455597567
   %3 = icmp eq i64 %2, 2305843005455597567

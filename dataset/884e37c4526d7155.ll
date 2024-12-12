@@ -1,5 +1,5 @@
 
-; 55 occurrences:
+; 54 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/cuddGenCof.c.ll
 ; abc/optimized/extraUtilCube.c.ll
@@ -15,7 +15,6 @@
 ; assimp/optimized/OpenDDLParser.cpp.ll
 ; cmake/optimized/divsufsort.c.ll
 ; faiss/optimized/LocalSearchQuantizer.cpp.ll
-; freetype/optimized/truetype.c.ll
 ; icu/optimized/regexcmp.ll
 ; libjpeg-turbo/optimized/jchuff.c.ll
 ; linux/optimized/drm_dp_mst_topology.ll
@@ -63,7 +62,7 @@ entry:
   ret i64 %3
 }
 
-; 185 occurrences:
+; 189 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/abcExtract.c.ll
@@ -92,10 +91,12 @@ entry:
 ; freetype/optimized/sfnt.c.ll
 ; git/optimized/midx.ll
 ; gromacs/optimized/atomdata.cpp.ll
+; gromacs/optimized/dlasq2.cpp.ll
 ; gromacs/optimized/grid.cpp.ll
 ; gromacs/optimized/huffmem.c.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; gromacs/optimized/simd_prune_kernel.cpp.ll
+; gromacs/optimized/slasq2.cpp.ll
 ; gromacs/optimized/threaded_force_buffer.cpp.ll
 ; gromacs/optimized/xtc2.c.ll
 ; gromacs/optimized/xtc3.c.ll
@@ -125,6 +126,7 @@ entry:
 ; ncnn/optimized/lstm_x86_fma.cpp.ll
 ; ncnn/optimized/lstm_x86_xop.cpp.ll
 ; nuklear/optimized/unity.c.ll
+; openblas/optimized/dlasq2.c.ll
 ; opencv/optimized/cv2.cpp.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; opencv/optimized/subdivision2d.cpp.ll
@@ -148,6 +150,7 @@ entry:
 ; openjdk/optimized/methodComparator.ll
 ; openjdk/optimized/methodHandles.ll
 ; openmpi/optimized/tm_bucket.ll
+; openspiel/optimized/2048.cc.ll
 ; openspiel/optimized/Moves.cpp.ll
 ; openspiel/optimized/oware.cc.ll
 ; openusd/optimized/decodeframe.c.ll

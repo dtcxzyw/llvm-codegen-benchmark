@@ -1,76 +1,42 @@
-func0000000000000206:                   // @func0000000000000206
+func0000000000000406:                   // @func0000000000000406
 // %bb.0:                               // %entry
-	mvn	v2.16b, v2.16b
-	mvn	v3.16b, v3.16b
-	cmhi	v3.2d, v5.2d, v3.2d
-	cmhi	v2.2d, v4.2d, v2.2d
-	sub	v0.2d, v0.2d, v2.2d
-	sub	v1.2d, v1.2d, v3.2d
-	cmlt	v1.2d, v1.2d, #0
-	cmlt	v0.2d, v0.2d, #0
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	cmn	x1, x2
+	cinc	x8, x0, hs
+	lsr	x0, x8, #63
+                                        // kill: def $w0 killed $w0 killed $x0
 	ret
                                         // -- End function
-func0000000000000204:                   // @func0000000000000204
+func0000000000000404:                   // @func0000000000000404
 // %bb.0:                               // %entry
-	mvn	v2.16b, v2.16b
-	mvn	v3.16b, v3.16b
-	mov	x8, #562949953421312            // =0x2000000000000
-	cmhi	v3.2d, v5.2d, v3.2d
-	cmhi	v2.2d, v4.2d, v2.2d
-	sub	v0.2d, v0.2d, v2.2d
-	sub	v1.2d, v1.2d, v3.2d
-	dup	v2.2d, x8
-	cmhi	v1.2d, v2.2d, v1.2d
-	cmhi	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	cmn	x1, x2
+	cinc	x8, x0, hs
+	lsr	x8, x8, #49
+	cmp	x8, #0
+	cset	w0, eq
 	ret
                                         // -- End function
-func000000000000020a:                   // @func000000000000020a
+func000000000000040a:                   // @func000000000000040a
 // %bb.0:                               // %entry
-	mvn	v2.16b, v2.16b
-	mvn	v3.16b, v3.16b
-	cmhi	v3.2d, v5.2d, v3.2d
-	cmhi	v2.2d, v4.2d, v2.2d
-	sub	v0.2d, v0.2d, v2.2d
-	sub	v1.2d, v1.2d, v3.2d
-	cmge	v1.2d, v1.2d, #0
-	cmge	v0.2d, v0.2d, #0
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	cmn	x1, x2
+	cinc	x8, x0, hs
+	lsr	x8, x8, #63
+	eor	w0, w8, #0x1
 	ret
                                         // -- End function
-func0000000000000208:                   // @func0000000000000208
+func0000000000000408:                   // @func0000000000000408
 // %bb.0:                               // %entry
-	mvn	v2.16b, v2.16b
-	mvn	v3.16b, v3.16b
-	mov	x8, #562949953421311            // =0x1ffffffffffff
-	cmhi	v3.2d, v5.2d, v3.2d
-	cmhi	v2.2d, v4.2d, v2.2d
-	sub	v0.2d, v0.2d, v2.2d
-	sub	v1.2d, v1.2d, v3.2d
-	dup	v2.2d, x8
-	cmhi	v1.2d, v1.2d, v2.2d
-	cmhi	v0.2d, v0.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	cmn	x1, x2
+	cinc	x8, x0, hs
+	lsr	x8, x8, #49
+	cmp	x8, #0
+	cset	w0, ne
 	ret
                                         // -- End function
-func0000000000000228:                   // @func0000000000000228
+func0000000000000448:                   // @func0000000000000448
 // %bb.0:                               // %entry
-	mvn	v2.16b, v2.16b
-	mvn	v3.16b, v3.16b
-	mov	w8, #39                         // =0x27
-	cmhi	v3.2d, v5.2d, v3.2d
-	cmhi	v2.2d, v4.2d, v2.2d
-	sub	v0.2d, v0.2d, v2.2d
-	sub	v1.2d, v1.2d, v3.2d
-	dup	v2.2d, x8
-	cmhi	v1.2d, v1.2d, v2.2d
-	cmhi	v0.2d, v0.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	cmn	x1, x2
+	cinc	x8, x0, hs
+	cmp	x8, #39
+	cset	w0, hi
 	ret
                                         // -- End function

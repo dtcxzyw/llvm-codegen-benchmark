@@ -3,15 +3,15 @@ func0000000000000008:                   # @func0000000000000008
 	movl	$25, %eax
 	movl	$62, %ecx
 	cmovnel	%eax, %ecx
-	cmpw	%di, %cx
-	setb	%al
+	cmpw	%cx, %di
+	seta	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
 	testb	$1, %sil
 	movl	$10, %eax
 	movl	$50, %ecx
 	cmovnel	%eax, %ecx
-	cmpw	%di, %cx
+	cmpw	%cx, %di
 	sete	%al
 	retq
 func0000000000000004:                   # @func0000000000000004
@@ -20,6 +20,6 @@ func0000000000000004:                   # @func0000000000000004
 	andl	$1, %eax
 	shll	$5, %eax
 	addl	$32, %eax
-	cmpw	%di, %ax
-	seta	%al
+	cmpw	%ax, %di
+	setb	%al
 	retq

@@ -1,5 +1,7 @@
 
-; 9 occurrences:
+; 11 occurrences:
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side_basic.ll
 ; cmake/optimized/cmComputeLinkDepends.cxx.ll
 ; gromacs/optimized/muParserBase.cpp.ll
 ; hyperscan/optimized/rose_build_role_aliasing.cpp.ll

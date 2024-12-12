@@ -3,10 +3,10 @@
 ; openvdb/optimized/AttributeArrayString.cc.ll
 ; quickjs/optimized/libunicode.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000049(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000089(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, %1
-  %4 = icmp ugt i32 %3, %0
+  %4 = icmp ult i32 %0, %3
   %5 = icmp uge i32 %0, %1
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -27,10 +27,10 @@ entry:
 ; slurm/optimized/gres.ll
 ; stb/optimized/stb_tilemap_editor.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000016b(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000004cb(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, %1
-  %4 = icmp sgt i32 %3, %0
+  %4 = icmp slt i32 %0, %3
   %5 = icmp sge i32 %0, %1
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -40,10 +40,10 @@ entry:
 ; gromacs/optimized/localtopologychecker.cpp.ll
 ; opencv/optimized/mser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000167(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000004c7(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, %0
-  %4 = icmp sgt i32 %3, %1
+  %4 = icmp slt i32 %1, %3
   %5 = icmp sle i32 %0, %1
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -52,10 +52,10 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/toppush.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000016a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000004ca(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, %1
-  %4 = icmp sgt i32 %3, %0
+  %4 = icmp slt i32 %0, %3
   %5 = icmp sgt i32 %0, %1
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -64,10 +64,10 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/decodeframe.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000ca(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, %1
-  %4 = icmp sgt i32 %3, %0
+  %4 = icmp slt i32 %0, %3
   %5 = icmp sgt i32 %0, %1
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -77,10 +77,10 @@ entry:
 ; cpython/optimized/readline.ll
 ; icu/optimized/ubidiln.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006b(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000cb(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, %1
-  %4 = icmp sgt i32 %3, %0
+  %4 = icmp slt i32 %0, %3
   %5 = icmp sge i32 %0, %1
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6

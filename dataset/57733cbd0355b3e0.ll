@@ -6,11 +6,11 @@
 define i1 @func0000000000000006(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i8
-  %3 = icmp slt i8 %2, %0
+  %3 = icmp sgt i8 %0, %2
   ret i1 %3
 }
 
-; 42 occurrences:
+; 47 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; clamav/optimized/bytecode_api.c.ll
 ; eastl/optimized/EATest.cpp.ll
@@ -53,11 +53,16 @@ entry:
 ; yosys/optimized/xaiger.ll
 ; yosys/optimized/xilinx_dsp.ll
 ; yosys/optimized/xilinx_srl.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i8
-  %3 = icmp eq i8 %2, %0
+  %3 = icmp eq i8 %0, %2
   ret i1 %3
 }
 
@@ -67,7 +72,7 @@ entry:
 define i1 @func000000000000000c(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i8
-  %3 = icmp ne i8 %2, %0
+  %3 = icmp ne i8 %0, %2
   ret i1 %3
 }
 
@@ -77,37 +82,17 @@ entry:
 define i1 @func0000000000000004(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i8
-  %3 = icmp ult i8 %2, %0
-  ret i1 %3
-}
-
-; 1 occurrences:
-; llvm/optimized/MicrosoftDemangle.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000038(i8 %0, i32 %1) #0 {
-entry:
-  %2 = trunc nuw nsw i32 %1 to i8
-  %3 = icmp ugt i8 %2, %0
+  %3 = icmp ugt i8 %0, %2
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; openspiel/optimized/chess_board.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i8 %0, i32 %1) #0 {
-entry:
-  %2 = trunc nuw nsw i32 %1 to i8
-  %3 = icmp ne i8 %2, %0
-  ret i1 %3
-}
-
-; 1 occurrences:
-; openspiel/optimized/chess_board.cc.ll
-; Function Attrs: nounwind
-define i1 @func000000000000001c(i8 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc nsw i32 %1 to i8
-  %3 = icmp ne i8 %2, %0
+  %3 = icmp ne i8 %0, %2
   ret i1 %3
 }
 

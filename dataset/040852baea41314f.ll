@@ -36,24 +36,23 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/histogram.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = or i32 %3, 8
-  %5 = icmp slt i32 %0, -5
+  %5 = icmp samesign ult i32 %0, -5
   %6 = select i1 %5, i32 %4, i32 %3
   ret i32 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; libquic/optimized/histogram.cc.ll
-; linux/optimized/intel_cdclk.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = or i32 %3, 4
-  %5 = icmp ugt i32 %0, 5
+  %5 = icmp samesign ugt i32 %0, 5
   %6 = select i1 %5, i32 %4, i32 %3
   ret i32 %6
 }
@@ -71,7 +70,7 @@ entry:
 ; wasmtime-rs/optimized/3ks7b643ljwe3j81.ll
 ; wireshark/optimized/packet-wassp.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = or disjoint i32 %3, 512
@@ -84,7 +83,7 @@ entry:
 ; llvm/optimized/Function.cpp.ll
 ; llvm/optimized/Globals.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000064(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = or disjoint i32 %3, 16384
@@ -97,7 +96,7 @@ entry:
 ; gromacs/optimized/sasa.cpp.ll
 ; linux/optimized/g4x_hdmi.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000003a(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000006a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = or disjoint i32 %3, 2
@@ -110,7 +109,7 @@ entry:
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/pata_amd.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = or disjoint i32 %3, 127
@@ -122,11 +121,23 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/ohci-hcd.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = or i32 %3, 8192
   %5 = icmp eq i32 %0, 1
+  %6 = select i1 %5, i32 %4, i32 %3
+  ret i32 %6
+}
+
+; 1 occurrences:
+; linux/optimized/intel_cdclk.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or i32 %1, %2
+  %4 = or i32 %3, 65536
+  %5 = icmp ugt i32 %0, 499999
   %6 = select i1 %5, i32 %4, i32 %3
   ret i32 %6
 }

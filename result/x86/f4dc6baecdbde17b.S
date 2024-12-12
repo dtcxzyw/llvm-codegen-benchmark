@@ -6,7 +6,7 @@ func0000000000000009:                   # @func0000000000000009
 	shlq	$32, %rax
 	orq	%rdi, %rax
 	retq
-func0000000000000029:                   # @func0000000000000029
+func0000000000000049:                   # @func0000000000000049
 	addl	$-9, %esi
 	xorl	%eax, %eax
 	cmpl	$-2, %esi

@@ -12,14 +12,14 @@ func0000000000000020:                   # @func0000000000000020
 func000000000000000c:                   # @func000000000000000c
 	slli	a2, a2, 33
 	srli	a2, a2, 33
-	subw	a1, a1, a0
-	subw	a0, a2, a1
+	subw	a0, a0, a1
+	addw	a0, a0, a2
 	ret
 func0000000000000008:                   # @func0000000000000008
 	slli	a2, a2, 33
 	srli	a2, a2, 33
-	subw	a1, a1, a0
-	subw	a0, a2, a1
+	subw	a0, a0, a1
+	addw	a0, a0, a2
 	ret
 func0000000000000001:                   # @func0000000000000001
 	andi	a2, a2, 31

@@ -1,14 +1,13 @@
 
-; 25 occurrences:
+; 24 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
+; boost/optimized/target.ll
 ; brotli/optimized/encode.c.ll
 ; coreutils-rs/optimized/56596qkor8w4ma8l.ll
-; folly/optimized/SSLErrors.cpp.ll
 ; folly/optimized/Zlib.cpp.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
-; libquic/optimized/ssl_lib.c.ll
 ; lief/optimized/cipher.c.ll
 ; linux/optimized/core.ll
 ; linux/optimized/hw_breakpoint.ll
@@ -29,7 +28,7 @@
 define i32 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = select i1 %3, i32 307, i32 311
   ret i32 %4
 }
@@ -74,7 +73,7 @@ entry:
 define i32 @func000000000000000c(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = select i1 %3, i32 283, i32 281
   ret i32 %4
 }

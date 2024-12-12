@@ -1,6 +1,9 @@
 
-; 14 occurrences:
+; 17 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; c3c/optimized/bigint.c.ll
 ; libquic/optimized/lhash.c.ll
 ; mitsuba3/optimized/string.cpp.ll
@@ -19,12 +22,13 @@ define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 64, %2
   %4 = lshr i64 %1, %3
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
+; boost/optimized/to_chars.ll
 ; c3c/optimized/bigint.c.ll
 ; miniaudio/optimized/unity.c.ll
 ; opencv/optimized/softfloat.cpp.ll

@@ -30,7 +30,7 @@
 define i64 @func0000000000000000(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = or i64 %3, 2
   ret i64 %4
 }
@@ -42,7 +42,7 @@ entry:
 define i64 @func0000000000000003(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = or disjoint i64 %3, 4
   ret i64 %4
 }
@@ -53,7 +53,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = or i64 %3, 10
   ret i64 %4
 }
@@ -64,7 +64,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = or disjoint i64 %3, 4
   ret i64 %4
 }

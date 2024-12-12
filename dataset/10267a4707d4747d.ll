@@ -1,5 +1,5 @@
 
-; 32 occurrences:
+; 31 occurrences:
 ; cpython/optimized/typeobject.ll
 ; icu/optimized/uts46.ll
 ; llvm/optimized/ConstantFold.cpp.ll
@@ -30,10 +30,9 @@
 ; openssl/optimized/libcrypto-shlib-cms_smime.ll
 ; php/optimized/zend_jit.ll
 ; ruby/optimized/objspace_dump.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/qsat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, ptr %1) #0 {
+define i1 @func000000000000002c(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, %0
   %3 = icmp ne ptr %0, null
@@ -53,7 +52,7 @@ entry:
 ; ruby/optimized/cont.ll
 ; wireshark/optimized/blf.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(ptr %0, ptr %1) #0 {
+define i1 @func000000000000010c(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp ugt ptr %1, %0
   %3 = icmp ne ptr %0, null
@@ -64,7 +63,7 @@ entry:
 ; 1 occurrences:
 ; ruby/optimized/io_buffer.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000009c(ptr %0, ptr %1) #0 {
+define i1 @func000000000000012c(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp uge ptr %1, %0
   %3 = icmp ne ptr %0, null
@@ -72,10 +71,9 @@ entry:
   ret i1 %4
 }
 
-; 63 occurrences:
+; 62 occurrences:
 ; abc/optimized/sclSize.c.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
-; bdwgc/optimized/gc.c.ll
 ; faiss/optimized/IndexIVFIndependentQuantizer.cpp.ll
 ; git/optimized/mktree.ll
 ; hyperscan/optimized/ng_find_matches.cpp.ll
@@ -137,7 +135,7 @@ entry:
 ; wireshark/optimized/packet-sip.c.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, ptr %1) #0 {
+define i1 @func000000000000018c(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = icmp ne ptr %0, %1
@@ -152,7 +150,7 @@ entry:
 ; openmpi/optimized/libmpi_c_profile_la-raccumulate.ll
 ; openmpi/optimized/libmpi_c_profile_la-rget_accumulate.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000181(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = icmp eq ptr %0, %1
@@ -164,7 +162,7 @@ entry:
 ; libevent/optimized/buffer.c.ll
 ; wireshark/optimized/blf.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000188(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = icmp ugt ptr %0, %1
@@ -175,7 +173,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/xhci-ring.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(ptr %0, ptr %1) #0 {
+define i1 @func00000000000000ac(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp ule ptr %1, %0
   %3 = icmp ne ptr %0, null

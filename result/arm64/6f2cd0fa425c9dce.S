@@ -32,8 +32,9 @@ func0000000000000036:                   // @func0000000000000036
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	sub	w8, w1, #1
-	add	x0, x0, w8, sxtw #3
+	mov	w8, #6                          // =0x6
+	sub	w9, w1, #2
+	smaddl	x0, w9, w8, x0
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
@@ -41,6 +42,13 @@ func0000000000000007:                   // @func0000000000000007
 	lsl	x8, x1, #32
 	add	x8, x0, x8, asr #29
 	add	x0, x8, #8
+	ret
+                                        // -- End function
+func0000000000000017:                   // @func0000000000000017
+// %bb.0:                               // %entry
+	lsl	x8, x1, #32
+	add	x8, x0, x8, asr #30
+	sub	x0, x8, #12
 	ret
                                         // -- End function
 func0000000000000012:                   // @func0000000000000012

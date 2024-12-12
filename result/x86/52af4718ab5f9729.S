@@ -1,75 +1,68 @@
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	shlq	$32, %rdx
 	orq	%rsi, %rdx
-	cmpq	%rdi, %rdx
-	setg	%al
-	retq
-func0000000000000051:                   # @func0000000000000051
-	shlq	$32, %rdx
-	orq	%rsi, %rdx
-	cmpq	%rdi, %rdx
-	sete	%al
-	retq
-func0000000000000054:                   # @func0000000000000054
-	shlq	$32, %rdx
-	orq	%rsi, %rdx
-	cmpq	%rdi, %rdx
-	seta	%al
-	retq
-func00000000000000f1:                   # @func00000000000000f1
-	shlq	$32, %rdx
-	orq	%rsi, %rdx
-	cmpq	%rdi, %rdx
-	sete	%al
-	retq
-func0000000000000059:                   # @func0000000000000059
-	shlq	$32, %rdx
-	orq	%rsi, %rdx
-	cmpq	%rdi, %rdx
-	setbe	%al
-	retq
-func000000000000005a:                   # @func000000000000005a
-	shlq	$32, %rdx
-	orq	%rsi, %rdx
-	cmpq	%rdi, %rdx
+	cmpq	%rdx, %rdi
 	setl	%al
 	retq
-func0000000000000046:                   # @func0000000000000046
+func00000000000000a1:                   # @func00000000000000a1
 	shlq	$32, %rdx
 	orq	%rsi, %rdx
-	cmpq	%rdi, %rdx
-	setg	%al
-	retq
-func0000000000000041:                   # @func0000000000000041
-	shlq	$32, %rdx
-	orq	%rsi, %rdx
-	cmpq	%rdi, %rdx
+	cmpq	%rdx, %rdi
 	sete	%al
 	retq
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a4:                   # @func00000000000000a4
 	shlq	$32, %rdx
 	orq	%rsi, %rdx
-	cmpq	%rdi, %rdx
+	cmpq	%rdx, %rdi
 	setb	%al
 	retq
-func0000000000000061:                   # @func0000000000000061
-	movl	%edx, %eax
-	shlq	$16, %rax
-	orq	%rsi, %rax
-	cmpq	%rdi, %rax
+func00000000000001e1:                   # @func00000000000001e1
+	shlq	$32, %rdx
+	orq	%rsi, %rdx
+	cmpq	%rdx, %rdi
 	sete	%al
 	retq
-func0000000000000064:                   # @func0000000000000064
+func00000000000000a9:                   # @func00000000000000a9
+	shlq	$32, %rdx
+	orq	%rsi, %rdx
+	cmpq	%rdx, %rdi
+	setae	%al
+	retq
+func00000000000000aa:                   # @func00000000000000aa
+	shlq	$32, %rdx
+	orq	%rsi, %rdx
+	cmpq	%rdx, %rdi
+	setg	%al
+	retq
+func0000000000000086:                   # @func0000000000000086
+	shlq	$32, %rdx
+	orq	%rsi, %rdx
+	cmpq	%rdx, %rdi
+	setl	%al
+	retq
+func00000000000000a8:                   # @func00000000000000a8
+	shlq	$32, %rdx
+	orq	%rsi, %rdx
+	cmpq	%rdx, %rdi
+	seta	%al
+	retq
+func0000000000000081:                   # @func0000000000000081
+	shlq	$32, %rdx
+	orq	%rsi, %rdx
+	cmpq	%rdx, %rdi
+	sete	%al
+	retq
+func00000000000000c1:                   # @func00000000000000c1
 	movl	%edx, %eax
 	shlq	$16, %rax
 	orq	%rsi, %rax
-	cmpq	%rdi, %rax
-	seta	%al
+	cmpq	%rax, %rdi
+	sete	%al
 	retq
-func0000000000000068:                   # @func0000000000000068
+func00000000000000c8:                   # @func00000000000000c8
 	movl	%edx, %eax
 	shlq	$30, %rax
 	orq	%rsi, %rax
-	cmpq	%rdi, %rax
-	setb	%al
+	cmpq	%rax, %rdi
+	seta	%al
 	retq

@@ -49,10 +49,23 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/strfn.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i32 %1, i8 %2) #0 {
+define i32 @func0000000000000018(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 14
-  %4 = icmp ugt i8 %3, 9
+  %4 = icmp samesign ugt i8 %3, 9
+  %5 = select i1 %4, i32 %0, i32 %1
+  ret i32 %5
+}
+
+; 3 occurrences:
+; lvgl/optimized/lv_math.ll
+; wireshark/optimized/packet-ieee80211.c.ll
+; yosys/optimized/fstapi.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000021(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = and i8 %2, 16
+  %4 = icmp eq i8 %3, 0
   %5 = select i1 %4, i32 %0, i32 %1
   ret i32 %5
 }

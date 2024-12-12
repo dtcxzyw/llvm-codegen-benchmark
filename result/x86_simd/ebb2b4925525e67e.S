@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpmovqd	%ymm1, %xmm1
 	vptestnmd	%xmm1, %xmm1, %k0
 	vptestnmq	%ymm0, %ymm0, %k1
@@ -6,7 +6,7 @@ func0000000000000011:                   # @func0000000000000011
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vpmovqd	%ymm1, %xmm1
 	vptestnmd	%xmm1, %xmm1, %k0
 	vptestmq	%ymm0, %ymm0, %k1
@@ -16,7 +16,7 @@ func000000000000001c:                   # @func000000000000001c
 	retq
 .LCPI2_0:
 	.quad	2147483648                      # 0x80000000
-func000000000000006c:                   # @func000000000000006c
+func00000000000000cc:                   # @func00000000000000cc
 	vpternlogq	$248, .LCPI2_0(%rip){1to4}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
 	vptestmq	%ymm0, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0

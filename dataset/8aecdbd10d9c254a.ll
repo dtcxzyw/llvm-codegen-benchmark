@@ -1,5 +1,5 @@
 
-; 1383 occurrences:
+; 1374 occurrences:
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/giaResub6.c.ll
 ; abc/optimized/mpmMap.c.ll
@@ -60,7 +60,6 @@
 ; git/optimized/cbtree.ll
 ; git/optimized/writer.ll
 ; glslang/optimized/Constant.cpp.ll
-; graphviz/optimized/randomkit.c.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; hermes/optimized/Analysis.cpp.ll
 ; hermes/optimized/BCOpt.cpp.ll
@@ -153,21 +152,17 @@
 ; linux/optimized/apic.ll
 ; linux/optimized/badblocks.ll
 ; linux/optimized/bugs.ll
-; linux/optimized/centaur.ll
 ; linux/optimized/core.ll
 ; linux/optimized/ds.ll
-; linux/optimized/feat_ctl.ll
 ; linux/optimized/generic.ll
 ; linux/optimized/ibs.ll
 ; linux/optimized/intel.ll
-; linux/optimized/intel_epb.ll
 ; linux/optimized/intel_ggtt.ll
 ; linux/optimized/intel_migrate.ll
 ; linux/optimized/intel_pstate.ll
 ; linux/optimized/knc.ll
 ; linux/optimized/lbr.ll
 ; linux/optimized/libata-core.ll
-; linux/optimized/mmconf-fam10h_64.ll
 ; linux/optimized/mpih-div.ll
 ; linux/optimized/msr-smp.ll
 ; linux/optimized/p4.ll
@@ -176,12 +171,9 @@
 ; linux/optimized/pt.ll
 ; linux/optimized/step.ll
 ; linux/optimized/therm_throt.ll
-; linux/optimized/tsc_msr.ll
-; linux/optimized/tsx.ll
 ; linux/optimized/uncore_snbep.ll
 ; linux/optimized/via-rng.ll
 ; linux/optimized/x86_pkg_temp_thermal.ll
-; linux/optimized/zhaoxin.ll
 ; llvm/optimized/AArch64Arm64ECCallLowering.cpp.ll
 ; llvm/optimized/AArch64ELFStreamer.cpp.ll
 ; llvm/optimized/AArch64ExpandImm.cpp.ll
@@ -870,7 +862,6 @@
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
@@ -1391,7 +1382,7 @@ entry:
   ret i64 %3
 }
 
-; 59 occurrences:
+; 63 occurrences:
 ; abc/optimized/acecRe.c.ll
 ; abc/optimized/ifDec07.c.ll
 ; abc/optimized/luckySwap.c.ll
@@ -1404,6 +1395,8 @@ entry:
 ; git/optimized/reader.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
+; hyperscan/optimized/rose_build_lookaround.cpp.ll
+; hyperscan/optimized/rose_build_program.cpp.ll
 ; libquic/optimized/curve25519.c.ll
 ; libquic/optimized/poly1305_vec.c.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
@@ -1446,6 +1439,8 @@ entry:
 ; spike/optimized/vghsh_vv.ll
 ; spike/optimized/vgmul_vv.ll
 ; spike/optimized/vrev8_v.ll
+; wasmtime-rs/optimized/1f1skdqjemonth3f.ll
+; wasmtime-rs/optimized/21g2sj3ridcu2juk.ll
 ; wireshark/optimized/erf.c.ll
 ; wireshark/optimized/mp2t.c.ll
 ; yyjson/optimized/yyjson.c.ll
@@ -1459,7 +1454,34 @@ entry:
   ret i64 %3
 }
 
-; 142 occurrences:
+; 18 occurrences:
+; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; llvm/optimized/CoreEngine.cpp.ll
+; llvm/optimized/DAGCombiner.cpp.ll
+; llvm/optimized/DependenceAnalysis.cpp.ll
+; llvm/optimized/ExprConstant.cpp.ll
+; llvm/optimized/LoopStrengthReduce.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; llvm/optimized/SemaChecking.cpp.ll
+; llvm/optimized/SemaTemplateDeduction.cpp.ll
+; llvm/optimized/StatepointLowering.cpp.ll
+; llvm/optimized/UninitializedValues.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; mitsuba3/optimized/string.cpp.ll
+; pcg-cpp/optimized/cppref-sample.cpp.ll
+; pcg-cpp/optimized/pcg-demo.cpp.ll
+; typst-rs/optimized/49m3cs7hus53ztof.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
+entry:
+  %2 = or i64 %0, %1
+  %3 = lshr exact i64 %2, 52
+  ret i64 %3
+}
+
+; 139 occurrences:
 ; abc/optimized/ifDec07.c.ll
 ; abseil-cpp/optimized/bit_gen_ref_test.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
@@ -1486,6 +1508,7 @@ entry:
 ; abseil-cpp/optimized/unordered_map_test.cc.ll
 ; abseil-cpp/optimized/unordered_set_test.cc.ll
 ; arrow/optimized/io_util.cc.ll
+; boost/optimized/benchmark_fstream.ll
 ; bullet3/optimized/b3File.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
@@ -1500,7 +1523,6 @@ entry:
 ; faiss/optimized/NNDescent.cpp.ll
 ; faiss/optimized/random.cpp.ll
 ; g2o/optimized/sampler.cpp.ll
-; graphviz/optimized/randomkit.c.ll
 ; gromacs/optimized/coolstuff.cpp.ll
 ; gromacs/optimized/seed.cpp.ll
 ; gromacs/optimized/solvate.cpp.ll
@@ -1525,13 +1547,11 @@ entry:
 ; llvm/optimized/Randstruct.cpp.ll
 ; luau/optimized/CostModel.cpp.ll
 ; meshlab/optimized/filter_ao.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; nix/optimized/filetransfer.ll
 ; ocio/optimized/Platform.cpp.ll
 ; oiio/optimized/filesystem.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
 ; opencv/optimized/sparse_matching_gpc.cpp.ll
-; openmpi/optimized/tm_mt.ll
 ; openspiel/optimized/backgammon_test.cc.ll
 ; openspiel/optimized/bargaining_instance_generator.cc.ll
 ; openspiel/optimized/bridge_uncontested_bidding.cc.ll
@@ -1579,10 +1599,8 @@ entry:
 ; quantlib/optimized/fireflyalgorithm.ll
 ; quantlib/optimized/mt19937uniformrng.ll
 ; quantlib/optimized/particleswarmoptimization.ll
-; quest/optimized/mt19937ar.c.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; redis/optimized/geohash.ll
-; redis/optimized/mt19937-64.ll
 ; rocksdb/optimized/block_cache_trace_analyzer.cc.ll
 ; rocksdb/optimized/compaction_picker.cc.ll
 ; rocksdb/optimized/transaction_test_util.cc.ll
@@ -1602,33 +1620,11 @@ entry:
 ; xgboost/optimized/updater_coordinate.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; xgboost/optimized/updater_shotgun.cc.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %0, %1
-  %3 = lshr exact i64 %2, 1
-  ret i64 %3
-}
-
-; 14 occurrences:
-; llvm/optimized/CoreEngine.cpp.ll
-; llvm/optimized/DAGCombiner.cpp.ll
-; llvm/optimized/DependenceAnalysis.cpp.ll
-; llvm/optimized/ExprConstant.cpp.ll
-; llvm/optimized/LoopStrengthReduce.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
-; llvm/optimized/SemaChecking.cpp.ll
-; llvm/optimized/SemaTemplateDeduction.cpp.ll
-; llvm/optimized/StatepointLowering.cpp.ll
-; llvm/optimized/UninitializedValues.cpp.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
-; pcg-cpp/optimized/cppref-sample.cpp.ll
-; pcg-cpp/optimized/pcg-demo.cpp.ll
-; typst-rs/optimized/49m3cs7hus53ztof.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
-entry:
-  %2 = or i64 %0, %1
   %3 = lshr exact i64 %2, 1
   ret i64 %3
 }

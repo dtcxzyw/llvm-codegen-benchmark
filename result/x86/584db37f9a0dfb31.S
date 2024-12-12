@@ -5,7 +5,7 @@ func0000000000000030:                   # @func0000000000000030
 	leaq	(%rsi,%rax,4), %rax
 	leaq	4(%rdi,%rax), %rax
 	retq
-func000000000000003a:                   # @func000000000000003a
+func000000000000003f:                   # @func000000000000003f
 	xorl	%eax, %eax
 	testb	%dl, %dl
 	setne	%al

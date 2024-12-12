@@ -28,7 +28,7 @@ entry:
   ret i64 %6
 }
 
-; 895 occurrences:
+; 894 occurrences:
 ; abc/optimized/cecSat.c.ll
 ; abc/optimized/cecSatG.c.ll
 ; hermes/optimized/Analysis.cpp.ll
@@ -656,7 +656,6 @@ entry:
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVMergeBaseOffset.cpp.ll
@@ -929,7 +928,7 @@ define i64 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 29
   %4 = xor i32 %3, %1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   %6 = zext nneg i32 %5 to i64
   ret i64 %6
 }
@@ -958,8 +957,8 @@ entry:
 define i64 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 15
-  %4 = xor i32 %3, %1
-  %5 = and i32 %4, %0
+  %4 = xor i32 %1, %3
+  %5 = and i32 %0, %4
   %6 = zext i32 %5 to i64
   ret i64 %6
 }
@@ -971,7 +970,7 @@ entry:
 define i64 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 9
-  %4 = xor i32 %3, %1
+  %4 = xor i32 %1, %3
   %5 = and i32 %4, %0
   %6 = zext nneg i32 %5 to i64
   ret i64 %6

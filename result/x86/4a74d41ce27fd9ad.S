@@ -1,7 +1,7 @@
 func000000000000001f:                   # @func000000000000001f
-	andl	$56, %esi
-	shll	$7, %esi
-	shll	$14, %edi
+	shll	$8, %esi
+	andl	$32768, %esi                    # imm = 0x8000
+	shll	$16, %edi
 	leal	(%rdi,%rsi), %eax
 	retq
 func000000000000001d:                   # @func000000000000001d

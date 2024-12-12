@@ -1,10 +1,12 @@
 
-; 6 occurrences:
+; 8 occurrences:
 ; llvm/optimized/APINotesWriter.cpp.ll
 ; llvm/optimized/TargetLoweringObjectFileImpl.cpp.ll
 ; mitsuba3/optimized/assembler.cpp.ll
 ; mitsuba3/optimized/builder.cpp.ll
 ; verilator/optimized/V3Number.cpp.ll
+; yoga/optimized/AbsoluteLayout.cpp.ll
+; yoga/optimized/CalculateLayout.cpp.ll
 ; yoga/optimized/Node.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i1 %0, i8 %1) #0 {

@@ -30,7 +30,7 @@ entry:
   ret float %3
 }
 
-; 35 occurrences:
+; 37 occurrences:
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/sclUpsize.c.ll
 ; assimp/optimized/Assimp.cpp.ll
@@ -55,6 +55,8 @@ entry:
 ; gromacs/optimized/gmx_vanhove.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_svg_render.ll
 ; ocio/optimized/MathUtils.cpp.ll
 ; oiio/optimized/imagebufalgo_xform.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
@@ -86,6 +88,18 @@ entry:
   ret float %3
 }
 
+; 3 occurrences:
+; box2d/optimized/b2_revolute_joint.cpp.ll
+; darktable/optimized/introspection_basicadj.c.ll
+; graphviz/optimized/constrained_majorization_ipsep.c.ll
+; Function Attrs: nounwind
+define float @func000000000000000b(float %0, float %1) #0 {
+entry:
+  %2 = fcmp ule float %0, 0x402205A660000000
+  %3 = select i1 %2, float %0, float %1
+  ret float %3
+}
+
 ; 1 occurrences:
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
 ; Function Attrs: nounwind
@@ -96,7 +110,7 @@ entry:
   ret float %3
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; darktable/optimized/introspection_channelmixer.c.ll
 ; gromacs/optimized/gmx_rms.cpp.ll
 ; gromacs/optimized/trjcat.cpp.ll
@@ -106,6 +120,7 @@ entry:
 ; nuklear/optimized/unity.c.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000007(float %0, float %1) #0 {
 entry:
@@ -148,17 +163,6 @@ entry:
 define float @func0000000000000005(float %0, float %1) #0 {
 entry:
   %2 = fcmp ugt float %0, 0.000000e+00
-  %3 = select i1 %2, float %0, float %1
-  ret float %3
-}
-
-; 2 occurrences:
-; box2d/optimized/b2_revolute_joint.cpp.ll
-; graphviz/optimized/constrained_majorization_ipsep.c.ll
-; Function Attrs: nounwind
-define float @func000000000000000b(float %0, float %1) #0 {
-entry:
-  %2 = fcmp ule float %0, 0.000000e+00
   %3 = select i1 %2, float %0, float %1
   ret float %3
 }

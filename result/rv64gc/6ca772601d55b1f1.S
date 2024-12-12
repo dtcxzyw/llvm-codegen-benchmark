@@ -16,7 +16,7 @@ func000000000000000a:                   # @func000000000000000a
 	subw	a2, a2, a1
 	slt	a0, a0, a2
 	ret
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	sext.w	a0, a0
 	slli	a2, a2, 8
 	subw	a2, a2, a1

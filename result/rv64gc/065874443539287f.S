@@ -35,21 +35,31 @@ func0000000000000006:                   # @func0000000000000006
 	sext.w	a1, a1
 	slti	a0, a1, 1025
 	ret
-func000000000000000c:                   # @func000000000000000c
+func0000000000000018:                   # @func0000000000000018
 	andi	a0, a0, 1
 	bnez	a0, .LBB4_2
 	slli	a1, a2, 48
 	srai	a1, a1, 48
 .LBB4_2:                                # %entry
 	sext.w	a1, a1
-	snez	a0, a1
+	sltiu	a0, a1, 2
+	xori	a0, a0, 1
 	ret
-func0000000000000004:                   # @func0000000000000004
+func000000000000000c:                   # @func000000000000000c
 	andi	a0, a0, 1
 	bnez	a0, .LBB5_2
 	slli	a1, a2, 48
 	srai	a1, a1, 48
 .LBB5_2:                                # %entry
+	sext.w	a1, a1
+	snez	a0, a1
+	ret
+func0000000000000014:                   # @func0000000000000014
+	andi	a0, a0, 1
+	bnez	a0, .LBB6_2
+	slli	a1, a2, 48
+	srai	a1, a1, 48
+.LBB6_2:                                # %entry
 	sext.w	a1, a1
 	lui	a0, 524288
 	addiw	a0, a0, -10

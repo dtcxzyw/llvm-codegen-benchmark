@@ -1,9 +1,8 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	bic	v1.4h, #255, lsl #8
-	bic	v0.4h, #255, lsl #8
-	uaddl	v0.4s, v0.4h, v1.4h
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
+                                        // kill: def $w0 killed $w0 def $x0
+	and	x8, x0, #0xff
+                                        // kill: def $w1 killed $w1 def $x1
+	add	x0, x8, w1, uxtb
 	ret
                                         // -- End function

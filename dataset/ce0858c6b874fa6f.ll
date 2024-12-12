@@ -1,11 +1,10 @@
 
-; 19 occurrences:
+; 18 occurrences:
 ; box2d/optimized/b2_collide_circle.cpp.ll
 ; bullet3/optimized/b3CpuRigidBodyPipeline.ll
 ; bullet3/optimized/b3GpuJacobiContactSolver.ll
 ; bullet3/optimized/b3Solver.ll
 ; darktable/optimized/introspection_basecurve.c.ll
-; gromacs/optimized/slapy2.cpp.ll
 ; gromacs/optimized/slas2.cpp.ll
 ; llama.cpp/optimized/ggml-quants.c.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -52,8 +51,15 @@ entry:
   ret i1 %4
 }
 
-; 40 occurrences:
+; 47 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/within.ll
 ; box2d/optimized/b2_distance_joint.cpp.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/btHeightfieldTerrainShape.ll
@@ -183,7 +189,9 @@ entry:
   ret i1 %4
 }
 
-; 29 occurrences:
+; 31 occurrences:
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/b3DynamicBvhBroadphase.ll
 ; bullet3/optimized/b3QuantizedBvh.ll
 ; bullet3/optimized/btCollisionWorld.ll
@@ -303,7 +311,8 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; lvgl/optimized/lv_draw_vector.ll
 ; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
 ; openexr/optimized/ImfChromaticities.cpp.ll
@@ -314,28 +323,6 @@ entry:
   %2 = fcmp ogt float %1, %0
   %3 = select i1 %2, float %0, float %1
   %4 = fcmp oeq float %3, 0.000000e+00
-  ret i1 %4
-}
-
-; 1 occurrences:
-; gromacs/optimized/slartg.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000043(float %0, float %1) #0 {
-entry:
-  %2 = fcmp ogt float %0, %1
-  %3 = select i1 %2, float %0, float %1
-  %4 = fcmp ult float %3, 0x4320000000000000
-  ret i1 %4
-}
-
-; 1 occurrences:
-; gromacs/optimized/slartg.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000045(float %0, float %1) #0 {
-entry:
-  %2 = fcmp ogt float %0, %1
-  %3 = select i1 %2, float %0, float %1
-  %4 = fcmp ugt float %3, 0x3CC0000000000000
   ret i1 %4
 }
 

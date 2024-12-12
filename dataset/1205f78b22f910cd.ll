@@ -1,8 +1,9 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; arrow/optimized/UriQuery.c.ll
 ; darktable/optimized/introspection_hotpixels.c.ll
 ; libwebp/optimized/sharpyuv.c.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; opencv/optimized/grfmt_bmp.cpp.ll
 ; opencv/optimized/grfmt_sunras.cpp.ll
 ; quantlib/optimized/seasonality.ll

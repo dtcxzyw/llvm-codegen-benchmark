@@ -1,5 +1,5 @@
 
-; 32 occurrences:
+; 30 occurrences:
 ; abc/optimized/extraUtilSupp.c.ll
 ; abc/optimized/giaCSat.c.ll
 ; abc/optimized/giaCSatOld.c.ll
@@ -12,7 +12,6 @@
 ; glslang/optimized/linkValidate.cpp.ll
 ; libevent/optimized/bufferevent_ssl.c.ll
 ; linux/optimized/hugetlb.ll
-; linux/optimized/uid16.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; llvm/optimized/CodeGenPGO.cpp.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
@@ -28,7 +27,6 @@
 ; openjdk/optimized/c1_LIRAssembler_x86.ll
 ; openjdk/optimized/c1_LIRGenerator.ll
 ; openjdk/optimized/c1_LIRGenerator_x86.ll
-; openjdk/optimized/c1_LinearScan.ll
 ; openssl/optimized/libcrypto-lib-bn_lib.ll
 ; openssl/optimized/libcrypto-shlib-bn_lib.ll
 ; qemu/optimized/hw_display_ati.c.ll
@@ -41,10 +39,7 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
-; assimp/optimized/zip.c.ll
-; hermes/optimized/zip.c.ll
-; meshlab/optimized/filter_sketchfab.cpp.ll
+; 2 occurrences:
 ; meshlab/optimized/miniz.c.ll
 ; qemu/optimized/tcg.c.ll
 ; Function Attrs: nounwind
@@ -56,9 +51,21 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; assimp/optimized/zip.c.ll
+; hermes/optimized/zip.c.ll
+; meshlab/optimized/filter_sketchfab.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i64 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 15
+  %3 = icmp samesign ult i64 %0, 4
+  %4 = select i1 %3, i32 0, i32 %2
+  ret i32 %4
+}
+
+; 1 occurrences:
 ; clamav/optimized/Bra86.c.ll
-; linux/optimized/i9xx_wm.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
@@ -80,6 +87,17 @@ entry:
   %2 = and i32 %1, 2147483647
   %3 = icmp sgt i64 %0, -1
   %4 = select i1 %3, i32 0, i32 %2
+  ret i32 %4
+}
+
+; 1 occurrences:
+; linux/optimized/i9xx_wm.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000018(i64 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 1056964608
+  %3 = icmp samesign ugt i64 %0, 323840000
+  %4 = select i1 %3, i32 134217728, i32 %2
   ret i32 %4
 }
 

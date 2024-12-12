@@ -14,7 +14,7 @@
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/TokenAnnotator.cpp.ll
 ; llvm/optimized/ValueLattice.cpp.ll
-; minetest/optimized/test_serialization.cpp.ll
+; lvgl/optimized/lv_draw_image.ll
 ; openmpi/optimized/libmpi_c_profile_la-ibsend.ll
 ; openmpi/optimized/libmpi_c_profile_la-imrecv.ll
 ; openmpi/optimized/libmpi_c_profile_la-irecv.ll
@@ -44,7 +44,7 @@ entry:
   ret i1 %5
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; cvc5/optimized/term_context.cpp.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
@@ -53,9 +53,10 @@ entry:
 ; llvm/optimized/ExprEngine.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; openjdk/optimized/reflection.ll
+; openvdb/optimized/LevelSetRebuild.cc.ll
+; openvdb/optimized/VolumeToMesh.cc.ll
 ; slurm/optimized/step_mgr.ll
 ; wireshark/optimized/packet-cdma2k.c.ll
-; wireshark/optimized/packet-ieee80211-radio.c.ll
 ; wireshark/optimized/wtap.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
@@ -78,15 +79,18 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
+; 11 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; icu/optimized/genmbcs.ll
+; icu/optimized/ubidiwrt.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
 ; llvm/optimized/DAGISelMatcher.cpp.ll
 ; llvm/optimized/LegalizeVectorOps.cpp.ll
+; llvm/optimized/SemaTemplate.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i1 %1, i16 %2) #0 {
 entry:

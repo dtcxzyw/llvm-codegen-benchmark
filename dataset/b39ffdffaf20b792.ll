@@ -1,16 +1,17 @@
 
-; 155 occurrences:
+; 147 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; arrow/optimized/align_util.cc.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/reader.cc.ll
-; assimp/optimized/FBXBinaryTokenizer.cpp.ll
 ; assimp/optimized/FindDegenerates.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/JoinVerticesProcess.cpp.ll
 ; assimp/optimized/LWOLoader.cpp.ll
 ; assimp/optimized/MDLLoader.cpp.ll
 ; assimp/optimized/ValidateDataStructure.cpp.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/intersection_pl_l.ll
 ; casadi/optimized/fmu2.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; casadi/optimized/mx.cpp.ll
@@ -46,11 +47,8 @@
 ; gromacs/optimized/update.cpp.ll
 ; gromacs/optimized/vsite.cpp.ll
 ; grpc/optimized/channel_stack_builder_impl.cc.ll
-; harfbuzz/optimized/gsubgpos-context.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
 ; hermes/optimized/FlowHelpers.cpp.ll
 ; hermes/optimized/OSCompatPosix.cpp.ll
-; hermes/optimized/escape.cpp.ll
 ; hyperscan/optimized/fdr.c.ll
 ; hyperscan/optimized/ng_redundancy.cpp.ll
 ; lightgbm/optimized/data_parallel_tree_learner.cpp.ll
@@ -58,13 +56,11 @@
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
 ; llvm/optimized/ContinuationIndenter.cpp.ll
 ; llvm/optimized/HeaderSearch.cpp.ll
-; llvm/optimized/SemaType.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/mesh_model_state.cpp.ll
 ; ocio/optimized/Lut1DOpCPU.cpp.ll
-; oiio/optimized/formatspec.cpp.ll
 ; opencv/optimized/core_detect.cpp.ll
 ; opencv/optimized/cv2.cpp.ll
 ; opencv/optimized/gms.cpp.ll
@@ -82,9 +78,7 @@
 ; openusd/optimized/testSdfPredicateExpression.cpp.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; php/optimized/zend_inference.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
-; pugixml/optimized/pugixml.cpp.ll
+; protobuf/optimized/arena.cc.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
@@ -151,8 +145,6 @@
 ; yosys/optimized/memory_dff.ll
 ; yosys/optimized/opt_muxtree.ll
 ; yosys/optimized/subcircuit.ll
-; zxing/optimized/BitMatrix.cpp.ll
-; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
 ; zxing/optimized/PDFEncoder.cpp.ll
 ; zxing/optimized/PDFWriter.cpp.ll
 ; Function Attrs: nounwind
@@ -177,6 +169,29 @@ define i64 @func0000000000000000(ptr %0, ptr %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 16, i64 24
   %4 = getelementptr i8, ptr %1, i64 %3
+  %5 = ptrtoint ptr %4 to i64
+  %6 = ptrtoint ptr %0 to i64
+  %7 = sub i64 %5, %6
+  ret i64 %7
+}
+
+; 11 occurrences:
+; assimp/optimized/FBXBinaryTokenizer.cpp.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; harfbuzz/optimized/gsubgpos-context.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; hermes/optimized/escape.cpp.ll
+; llvm/optimized/SemaType.cpp.ll
+; oiio/optimized/formatspec.cpp.ll
+; pugixml/optimized/pugixml.cpp.ll
+; zxing/optimized/BitMatrix.cpp.ll
+; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000c(ptr %0, ptr %1, i1 %2) #0 {
+entry:
+  %3 = select i1 %2, i64 25, i64 13
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = ptrtoint ptr %0 to i64
   %7 = sub i64 %5, %6

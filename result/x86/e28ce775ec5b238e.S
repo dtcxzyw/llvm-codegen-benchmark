@@ -5,14 +5,14 @@ func0000000000000001:                   # @func0000000000000001
 	testl	%edx, %edx
 	sete	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	movq	%rsi, %rax
 	xorl	%edx, %edx
 	divl	%edi
 	testl	%edx, %edx
 	sete	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	movq	%rsi, %rax
 	xorl	%edx, %edx
 	divl	%edi

@@ -10,8 +10,9 @@ entry:
   ret i64 %4
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; abc/optimized/giaMinLut2.c.ll
+; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
 ; ncnn/optimized/convolution_x86_xop.cpp.ll
 ; ncnn/optimized/prelu_x86.cpp.ll
 ; ncnn/optimized/prelu_x86_avx.cpp.ll
@@ -27,7 +28,7 @@ entry:
   ret i64 %4
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; abc/optimized/giaResub.c.ll
 ; bullet3/optimized/btSoftBody.ll
 ; ncnn/optimized/convolution1d_x86.cpp.ll
@@ -39,7 +40,6 @@ entry:
 ; ncnn/optimized/convolution_x86_avx2.cpp.ll
 ; ncnn/optimized/convolution_x86_avx512.cpp.ll
 ; ncnn/optimized/convolution_x86_avx512vnni.cpp.ll
-; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
 ; ncnn/optimized/convolution_x86_fma.cpp.ll
 ; ncnn/optimized/scale_x86_avx.cpp.ll
 ; ncnn/optimized/scale_x86_avx512.cpp.ll

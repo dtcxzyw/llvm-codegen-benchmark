@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 20 occurrences:
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/pasid.ll
 ; linux/optimized/phy_device.ll
@@ -11,6 +11,7 @@
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/DeclSpec.cpp.ll
 ; llvm/optimized/ExprCXX.cpp.ll
+; lvgl/optimized/lv_image.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; mold/optimized/arch-s390x.cc.ll
 ; openusd/optimized/stencilTableFactory.cpp.ll

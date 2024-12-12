@@ -11,9 +11,8 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
-; linux/optimized/intel_rc6.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:

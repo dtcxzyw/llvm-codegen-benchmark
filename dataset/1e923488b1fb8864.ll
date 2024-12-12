@@ -1,8 +1,7 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; openjdk/optimized/bytecodes.ll
-; postgres/optimized/shm_toc.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
 define i64 @func00000000000000c0(i64 %0, i64 %1) #0 {

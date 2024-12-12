@@ -1,18 +1,18 @@
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwaddu.wv	v10, v10, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vi	v10, v10, 1
 	vmseq.vv	v0, v10, v8
 	ret
-func00000000000000f4:                   # @func00000000000000f4
+func00000000000001f4:                   # @func00000000000001f4
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwaddu.wv	v10, v10, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vi	v10, v10, 4
 	vmsltu.vv	v0, v10, v8
 	ret
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000001e8:                   # @func00000000000001e8
 	li	a0, 46
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwaddu.wv	v10, v10, v12
@@ -20,28 +20,28 @@ func00000000000000f8:                   # @func00000000000000f8
 	vadd.vx	v10, v10, a0
 	vmsltu.vv	v0, v8, v10
 	ret
-func00000000000000f6:                   # @func00000000000000f6
+func00000000000001e6:                   # @func00000000000001e6
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwaddu.wv	v10, v10, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vi	v10, v10, 1
 	vmslt.vv	v0, v10, v8
 	ret
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwaddu.wv	v10, v10, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vi	v10, v10, -6
 	vmslt.vv	v0, v10, v8
 	ret
-func00000000000000ca:                   # @func00000000000000ca
+func000000000000018a:                   # @func000000000000018a
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwaddu.wv	v10, v10, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vi	v10, v10, 2
 	vmslt.vv	v0, v8, v10
 	ret
-func00000000000000fc:                   # @func00000000000000fc
+func00000000000001ec:                   # @func00000000000001ec
 	li	a0, 16
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwaddu.wv	v10, v10, v12
@@ -49,49 +49,49 @@ func00000000000000fc:                   # @func00000000000000fc
 	vadd.vx	v10, v10, a0
 	vmsne.vv	v0, v10, v8
 	ret
-func00000000000000c8:                   # @func00000000000000c8
+func0000000000000188:                   # @func0000000000000188
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwaddu.wv	v10, v10, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vi	v10, v10, 3
 	vmsltu.vv	v0, v8, v10
 	ret
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwaddu.wv	v10, v10, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vi	v10, v10, 8
 	vmsltu.vv	v0, v10, v8
 	ret
-func00000000000000fa:                   # @func00000000000000fa
+func00000000000001f8:                   # @func00000000000001f8
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwaddu.wv	v10, v10, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vi	v10, v10, 4
-	vmslt.vv	v0, v8, v10
+	vmsltu.vv	v0, v8, v10
 	ret
-func00000000000000c6:                   # @func00000000000000c6
+func0000000000000186:                   # @func0000000000000186
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwaddu.wv	v10, v10, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vi	v10, v10, 4
 	vmslt.vv	v0, v10, v8
 	ret
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwaddu.wv	v10, v10, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vi	v10, v10, -3
 	vmslt.vv	v0, v8, v10
 	ret
-func00000000000000da:                   # @func00000000000000da
+func00000000000001aa:                   # @func00000000000001aa
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwaddu.wv	v10, v10, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vi	v10, v10, 2
 	vmslt.vv	v0, v8, v10
 	ret
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	li	a0, -48
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwaddu.wv	v10, v10, v12
@@ -99,7 +99,7 @@ func0000000000000056:                   # @func0000000000000056
 	vadd.vx	v10, v10, a0
 	vmslt.vv	v0, v10, v8
 	ret
-func00000000000000d6:                   # @func00000000000000d6
+func00000000000001a6:                   # @func00000000000001a6
 	lui	a0, 1034754
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwaddu.wv	v10, v10, v12
@@ -108,7 +108,7 @@ func00000000000000d6:                   # @func00000000000000d6
 	vadd.vx	v10, v10, a0
 	vmslt.vv	v0, v10, v8
 	ret
-func00000000000000db:                   # @func00000000000000db
+func00000000000001ab:                   # @func00000000000001ab
 	lui	a0, 1034754
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwaddu.wv	v10, v10, v12

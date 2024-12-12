@@ -1,13 +1,15 @@
 
-; 2 occurrences:
+; 4 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i64 %0, i1 %1) #0 {
+define i32 @func0000000000000074(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
-  %4 = icmp ult i64 %3, 16777216
+  %3 = add nuw nsw i64 %0, %2
+  %4 = icmp samesign ult i64 %3, 16777216
   %5 = select i1 %4, i32 40, i32 41
   ret i32 %5
 }
@@ -30,10 +32,10 @@ entry:
 ; fmt/optimized/xchar-test.cc.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000028(i64 %0, i1 %1) #0 {
+define i32 @func0000000000000048(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   %4 = icmp ugt i64 %3, 999999999999999999
   %5 = select i1 %4, i32 19, i32 18
   ret i32 %5

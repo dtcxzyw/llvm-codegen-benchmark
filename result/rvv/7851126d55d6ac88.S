@@ -6,7 +6,7 @@ func000000000000000c:                   # @func000000000000000c
 	zext.w	a0, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vand.vx	v10, v10, a0
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	vor.vv	v8, v8, v14
 	ret
 func000000000000000f:                   # @func000000000000000f

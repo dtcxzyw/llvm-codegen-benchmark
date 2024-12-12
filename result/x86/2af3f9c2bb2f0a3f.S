@@ -3,12 +3,17 @@ func0000000000000001:                   # @func0000000000000001
 	cmpb	%sil, %dil
 	sete	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000144:                   # @func0000000000000144
+	incb	%dil
+	cmpb	%sil, %dil
+	setb	%al
+	retq
+func0000000000000061:                   # @func0000000000000061
 	incb	%dil
 	cmpb	%sil, %dil
 	sete	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	incb	%dil
 	cmpb	%sil, %dil
 	sete	%al

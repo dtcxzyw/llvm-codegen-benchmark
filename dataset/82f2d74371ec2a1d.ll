@@ -12,7 +12,7 @@
 ; spike/optimized/f64_to_ui32.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 9218868437227405312
   %3 = icmp eq i64 %2, 0

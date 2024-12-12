@@ -1,6 +1,6 @@
 
-%"class.llvm::Use.2964483" = type { ptr, ptr, ptr, ptr }
-%union._Py_CODEUNIT.3795952 = type { i16 }
+%"class.llvm::Use.3157992" = type { ptr, ptr, ptr, ptr }
+%union._Py_CODEUNIT.3974162 = type { i16 }
 
 ; 4 occurrences:
 ; clamav/optimized/petite.c.ll
@@ -8,12 +8,38 @@
 ; clamav/optimized/wwunpack.c.ll
 ; openjdk/optimized/stackChunkOop.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a4(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000003c4(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw i8, ptr %1, i64 16
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 16
   %5 = getelementptr nusw i64, ptr %4, i64 %3
   %6 = icmp ult ptr %5, %0
+  ret i1 %6
+}
+
+; 1 occurrences:
+; boost/optimized/alloc_lib.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000144(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 0, %2
+  %4 = getelementptr nusw i8, ptr %1, i64 -16
+  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %6 = icmp ult ptr %5, %0
+  ret i1 %6
+}
+
+; 3 occurrences:
+; boost/optimized/alloc_lib.ll
+; luajit/optimized/lj_alloc.ll
+; luajit/optimized/lj_alloc_dyn.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000141(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 0, %2
+  %4 = getelementptr nusw i8, ptr %1, i64 -16
+  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
 
@@ -21,7 +47,7 @@ entry:
 ; oiio/optimized/formatspec.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003a1(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000741(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 -40, %2
   %4 = getelementptr nusw i8, ptr %1, i64 -4
@@ -41,11 +67,11 @@ entry:
 ; llvm/optimized/TailRecursionElimination.cpp.ll
 ; mimalloc/optimized/segment.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a1(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000341(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = getelementptr nusw i8, ptr %1, i64 -24
-  %5 = getelementptr nusw %"class.llvm::Use.2964483", ptr %4, i64 %3
+  %5 = getelementptr nusw %"class.llvm::Use.3157992", ptr %4, i64 %3
   %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
@@ -58,7 +84,7 @@ entry:
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; wireshark/optimized/packet-wcp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000204(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = getelementptr i8, ptr %1, i64 -40
@@ -68,10 +94,23 @@ entry:
 }
 
 ; 2 occurrences:
+; lz4/optimized/lz4.c.ll
+; openusd/optimized/lz4.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000003c8(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = sub nsw i64 0, %2
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 4
+  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %6 = icmp ugt ptr %5, %0
+  ret i1 %6
+}
+
+; 2 occurrences:
 ; cmake/optimized/zstd_lazy.c.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000148(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub i64 3, %2
   %4 = getelementptr nusw i8, ptr %1, i64 -1
@@ -80,23 +119,10 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
-; luajit/optimized/lj_alloc.ll
-; luajit/optimized/lj_alloc_dyn.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = sub i64 0, %2
-  %4 = getelementptr nusw i8, ptr %1, i64 -16
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
-  %6 = icmp eq ptr %5, %0
-  ret i1 %6
-}
-
 ; 1 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000201(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = getelementptr i8, ptr %1, i64 -80
@@ -108,11 +134,11 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/optimizer.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010c(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000020c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = getelementptr i8, ptr %1, i64 4
-  %5 = getelementptr %union._Py_CODEUNIT.3795952, ptr %4, i64 %3
+  %5 = getelementptr %union._Py_CODEUNIT.3974162, ptr %4, i64 %3
   %6 = icmp ne ptr %5, %0
   ret i1 %6
 }

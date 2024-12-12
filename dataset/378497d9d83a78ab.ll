@@ -1,5 +1,6 @@
 
-; 38 occurrences:
+; 42 occurrences:
+; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; icu/optimized/number_patternstring.ll
 ; icu/optimized/ubidi.ll
 ; linux/optimized/hda_codec.ll
@@ -38,6 +39,9 @@
 ; wireshark/optimized/packet-eigrp.c.ll
 ; wireshark/optimized/packet-fp_hint.c.ll
 ; wireshark/optimized/packet-smb2.c.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/diggdkpukg0xn23g7ivuh3jfw.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i16 %1) #0 {
 entry:
@@ -47,17 +51,11 @@ entry:
   ret i1 %3
 }
 
-; 11 occurrences:
+; 5 occurrences:
 ; libquic/optimized/ssl_lib.c.ll
-; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/LLParser.cpp.ll
-; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/ScalarizeMaskedMemIntrin.cpp.ll
-; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; nlohmann_json/optimized/unit-deserialization.cpp.ll
 ; nlohmann_json/optimized/unit-wstring.cpp.ll
 ; php/optimized/image.ll
-; postgres/optimized/gistvacuum.ll
 ; postgres/optimized/nbtsort.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i16 %1) #0 {
@@ -67,11 +65,9 @@ entry:
   ret i1 %3
 }
 
-; 8 occurrences:
-; icu/optimized/ucnvbocu.ll
+; 6 occurrences:
 ; libquic/optimized/ssl_lib.c.ll
 ; linux/optimized/nfnetlink.ll
-; postgres/optimized/bufpage.ll
 ; postgres/optimized/gistvacuum.ll
 ; postgres/optimized/hashutil.ll
 ; protobuf/optimized/extension_set.cc.ll
@@ -81,6 +77,34 @@ define i1 @func0000000000000008(i1 %0, i16 %1) #0 {
 entry:
   %2 = icmp ugt i16 %1, 770
   %3 = select i1 %0, i1 true, i1 %2
+  ret i1 %3
+}
+
+; 6 occurrences:
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; llvm/optimized/LLParser.cpp.ll
+; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
+; llvm/optimized/ScalarizeMaskedMemIntrin.cpp.ll
+; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; postgres/optimized/gistvacuum.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i16 %1) #0 {
+entry:
+  %2 = icmp ult i16 %1, 256
+  %3 = select i1 %0, i1 true, i1 %2
+  ret i1 %3
+}
+
+; 3 occurrences:
+; icu/optimized/ucnvbocu.ll
+; linux/optimized/ff-memless.ll
+; postgres/optimized/bufpage.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i16 %1) #0 {
+entry:
+  %2 = icmp ugt i16 %1, 180
+  %not. = xor i1 %0, true
+  %3 = select i1 %not., i1 %2, i1 false
   ret i1 %3
 }
 

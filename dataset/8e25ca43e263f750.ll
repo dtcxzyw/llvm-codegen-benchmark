@@ -1,10 +1,9 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; git/optimized/ident.ll
 ; git/optimized/strbuf.ll
 ; hyperscan/optimized/rose_build_lit_accel.cpp.ll
 ; linux/optimized/build_policy.ll
-; linux/optimized/i8042.ll
 ; llvm/optimized/Symbol.cpp.ll
 ; ruby/optimized/prism.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll

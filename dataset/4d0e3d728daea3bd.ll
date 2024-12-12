@@ -1,8 +1,7 @@
 
-; 72 occurrences:
+; 67 occurrences:
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/dauDsd.c.ll
-; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/saigSynch.c.ll
 ; abc/optimized/sswSim.c.ll
 ; abc/optimized/trees.c.ll
@@ -20,8 +19,6 @@
 ; libwebp/optimized/near_lossless_enc.c.ll
 ; libwebp/optimized/vp8l_enc.c.ll
 ; linux/optimized/af_unix.ll
-; linux/optimized/csum-partial_64.ll
-; linux/optimized/csum-wrappers_64.ll
 ; linux/optimized/deftree.ll
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/filter.ll
@@ -55,7 +52,6 @@
 ; openjdk/optimized/multnode.ll
 ; openjdk/optimized/predicates.ll
 ; openusd/optimized/stbImage.cpp.ll
-; php/optimized/hash_crc32.ll
 ; php/optimized/zip.ll
 ; qemu/optimized/hw_scsi_lsi53c895a.c.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll
@@ -71,7 +67,6 @@
 ; z3/optimized/q_mam.cpp.ll
 ; zlib/optimized/deflate.c.ll
 ; zlib/optimized/trees.c.ll
-; zxing/optimized/QRFormatInformation.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0) #0 {
 entry:

@@ -1,22 +1,13 @@
 
-; 1 occurrences:
-; ruby/optimized/time.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000a(i64 %0, i64 %1) #0 {
-entry:
-  %2 = or i64 %0, %1
-  %3 = add i64 %2, 4611686018427387904
-  %4 = icmp sgt i64 %3, -1
-  ret i1 %4
-}
-
-; 4 occurrences:
+; 6 occurrences:
 ; cmake/optimized/archive_read_support_format_zip.c.ll
 ; fmt/optimized/printf-test.cc.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; php/optimized/ir_emit.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %0, %1
   %3 = add i64 %2, -4294967296
@@ -24,26 +15,25 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
-; lief/optimized/ssl_tls12_client.c.ll
+; 5 occurrences:
 ; openssl/optimized/asynciotest-bin-asynciotest.ll
 ; openssl/optimized/libcommon-lib-ciphercommon_gcm.ll
 ; openssl/optimized/libssl-lib-d1_lib.ll
 ; openssl/optimized/libssl-shlib-d1_lib.ll
 ; openssl/optimized/ssl_test-bin-handshake.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000b4(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %0, %1
   %3 = add nsw i64 %2, -6
-  %4 = icmp ult i64 %3, 3
+  %4 = icmp samesign ult i64 %3, 3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; openjdk/optimized/divnode.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000086(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %0, %1
   %3 = add i64 %2, 1
@@ -67,16 +57,14 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
-; duckdb/optimized/ub_duckdb_parallel.cpp.ll
-; duckdb/optimized/ub_duckdb_storage_buffer.cpp.ll
-; readerwriterqueue/optimized/bench.cpp.ll
+; 1 occurrences:
+; lief/optimized/ssl_tls12_client.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1) #0 {
 entry:
-  %2 = or i64 %0, %1
-  %3 = add i64 %2, -1024
-  %4 = icmp ult i64 %3, -1025
+  %2 = or disjoint i64 %0, %1
+  %3 = add nsw i64 %2, -1
+  %4 = icmp ult i64 %3, 3
   ret i1 %4
 }
 
@@ -96,7 +84,7 @@ entry:
 ; cpython/optimized/marshal.ll
 ; freetype/optimized/ftbase.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %0, %1
   %3 = add nsw i64 %2, -2147483648

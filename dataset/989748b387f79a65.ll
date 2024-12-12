@@ -1,9 +1,11 @@
 
-; 4 occurrences:
+; 6 occurrences:
 ; bullet3/optimized/btBoxBoxDetector.ll
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/LevelSetRebuild.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
+; zed-rs/optimized/3asl26bwuz5g6rf3ammr043cc.ll
+; zed-rs/optimized/7m8fd3drcujrn3b7m72kwodjc.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000022(float %0, float %1, float %2) #0 {
 entry:

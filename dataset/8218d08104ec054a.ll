@@ -1,9 +1,8 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; mitsuba3/optimized/builder.cpp.ll
-; openusd/optimized/reformat.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000023(i32 %0) #0 {
 entry:
@@ -12,14 +11,24 @@ entry:
   ret i32 %2
 }
 
-; 3 occurrences:
-; llvm/optimized/GlobalOpt.cpp.ll
+; 2 occurrences:
+; mitsuba3/optimized/builder.cpp.ll
+; openusd/optimized/reformat.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000063(i32 %0) #0 {
+entry:
+  %1 = icmp samesign ugt i32 %0, 4
+  %2 = select i1 %1, i32 96, i32 64
+  ret i32 %2
+}
+
+; 2 occurrences:
 ; openjdk/optimized/c2_stubGenerator_x86_64_string.ll
 ; qemu/optimized/hw_audio_hda-codec.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000013(i32 %0) #0 {
+define i32 @func0000000000000053(i32 %0) #0 {
 entry:
-  %1 = icmp ult i32 %0, 16384
+  %1 = icmp samesign ult i32 %0, 16384
   %2 = select i1 %1, i32 192000, i32 176400
   ret i32 %2
 }
@@ -90,13 +99,23 @@ entry:
   ret i32 %2
 }
 
+; 1 occurrences:
+; llvm/optimized/GlobalOpt.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000013(i32 %0) #0 {
+entry:
+  %1 = icmp ult i32 %0, 2
+  %2 = select i1 %1, i32 128, i32 64
+  ret i32 %2
+}
+
 ; 2 occurrences:
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000010(i32 %0) #0 {
+define i32 @func0000000000000050(i32 %0) #0 {
 entry:
-  %1 = icmp ult i32 %0, 16
+  %1 = icmp samesign ult i32 %0, 16
   %2 = select i1 %1, i32 -33554432, i32 -67108864
   ret i32 %2
 }

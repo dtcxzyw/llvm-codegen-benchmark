@@ -1,5 +1,5 @@
 
-; 174 occurrences:
+; 175 occurrences:
 ; abc/optimized/acbMfs.c.ll
 ; abc/optimized/bmcICheck.c.ll
 ; abc/optimized/cuddCache.c.ll
@@ -18,6 +18,7 @@
 ; cmake/optimized/zstd_compress_sequences.c.ll
 ; cmake/optimized/zstd_decompress_block.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
+; cpython/optimized/dtoa.ll
 ; cvc5/optimized/Solver.cc.ll
 ; flac/optimized/fixed.c.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
@@ -48,7 +49,6 @@
 ; libwebp/optimized/lossless_enc.c.ll
 ; libwebp/optimized/palette.c.ll
 ; linux/optimized/auth_gss.ll
-; linux/optimized/bitmap-str.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/fse_decompress.ll
 ; linux/optimized/huf_decompress.ll
@@ -75,6 +75,7 @@
 ; luajit/optimized/lj_lex.ll
 ; luajit/optimized/lj_lex_dyn.ll
 ; luau/optimized/UnwindBuilderDwarf2.cpp.ll
+; lvgl/optimized/lv_math.ll
 ; mitsuba3/optimized/imageblock.cpp.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; ncnn/optimized/mat_pixel_rotate.cpp.ll
@@ -146,6 +147,7 @@
 ; recastnavigation/optimized/RecastLayers.cpp.ll
 ; rocksdb/optimized/block.cc.ll
 ; ruby/optimized/regparse.ll
+; ruby/optimized/util.ll
 ; sentencepiece/optimized/unigram_model_trainer.cc.ll
 ; stockfish/optimized/tbprobe.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
@@ -161,7 +163,6 @@
 ; z3/optimized/mpz.cpp.ll
 ; z3/optimized/sat_lookahead.cpp.ll
 ; z3/optimized/sat_simplifier.cpp.ll
-; z3/optimized/watch_list.cpp.ll
 ; zstd/optimized/fse_decompress.c.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; zstd/optimized/zstd_compress_sequences.c.ll
@@ -280,7 +281,7 @@ entry:
   ret i32 %3
 }
 
-; 143 occurrences:
+; 145 occurrences:
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/cuddReorder.c.ll
@@ -294,6 +295,7 @@ entry:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver2.c.ll
 ; abc/optimized/satSolver3.c.ll
+; boost/optimized/area.ll
 ; darktable/optimized/Cr2sRawInterpolator.cpp.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; darktable/optimized/introspection_atrous.c.ll
@@ -312,12 +314,10 @@ entry:
 ; darktable/optimized/introspection_tonecurve.c.ll
 ; darktable/optimized/introspection_zonesystem.c.ll
 ; graphviz/optimized/quad_prog_vpsc.c.ll
-; gromacs/optimized/dlaruv.cpp.ll
 ; gromacs/optimized/gmx_analyze.cpp.ll
 ; gromacs/optimized/libxdrf.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; gromacs/optimized/pairlist_simd_kernel.cpp.ll
-; gromacs/optimized/slaruv.cpp.ll
 ; icu/optimized/ucnvlat1.ll
 ; icu/optimized/ucnvmbcs.ll
 ; icu/optimized/uprops.ll
@@ -422,6 +422,9 @@ entry:
 ; wireshark/optimized/ws_strptime.c.ll
 ; yosys/optimized/booth.ll
 ; yosys/optimized/rtlil.ll
+; zstd/optimized/zstd_v01.c.ll
+; zstd/optimized/zstd_v02.c.ll
+; zstd/optimized/zstd_v03.c.ll
 ; zstd/optimized/zstd_v04.c.ll
 ; zxing/optimized/BitMatrix.cpp.ll
 ; Function Attrs: nounwind
@@ -432,10 +435,11 @@ entry:
   ret i32 %3
 }
 
-; 184 occurrences:
+; 182 occurrences:
 ; abc/optimized/sbdCore.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; arrow/optimized/compare_internal_avx2.cc.ll
+; boost/optimized/ipv6_address_rule.ll
 ; clamav/optimized/wwunpack.c.ll
 ; darktable/optimized/colorpicker.c.ll
 ; darktable/optimized/introspection_sharpen.c.ll
@@ -614,9 +618,6 @@ entry:
 ; tev/optimized/main.cpp.ll
 ; velox/optimized/ArrayShuffle.cpp.ll
 ; velox/optimized/MapConcat.cpp.ll
-; zstd/optimized/zstd_v01.c.ll
-; zstd/optimized/zstd_v02.c.ll
-; zstd/optimized/zstd_v03.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
@@ -625,7 +626,7 @@ entry:
   ret i32 %3
 }
 
-; 42 occurrences:
+; 41 occurrences:
 ; linux/optimized/pcm_lib.ll
 ; ocio/optimized/CPUProcessor.cpp.ll
 ; ocio/optimized/FileFormatDiscreet1DL.cpp.ll
@@ -644,7 +645,6 @@ entry:
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Filter.cc.ll
 ; openvdb/optimized/FindActiveValues.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFilter.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetMeasure.cc.ll
@@ -676,14 +676,15 @@ entry:
   ret i32 %3
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; image-rs/optimized/34r8dryqmufipcqz.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; pcg-cpp/optimized/make-partytrick.cpp.ll
 ; pcg-cpp/optimized/use-partytrick.cpp.ll
 ; softposit-rs/optimized/oveg98n4r9tnk39.ll
-; spike/optimized/i64_to_f32.ll
 ; wireshark/optimized/packet-fip.c.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
@@ -706,7 +707,7 @@ entry:
   ret i32 %3
 }
 
-; 27 occurrences:
+; 24 occurrences:
 ; cpython/optimized/Hacl_Hash_MD5.ll
 ; cpython/optimized/Hacl_Hash_SHA1.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -723,17 +724,14 @@ entry:
 ; hyperscan/optimized/som_stream.c.ll
 ; hyperscan/optimized/stream.c.ll
 ; hyperscan/optimized/stream_compress.c.ll
-; linux/optimized/blk-settings.ll
-; linux/optimized/exprep.ll
 ; linux/optimized/vc_screen.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; oiio/optimized/iffoutput.cpp.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/hb-ot-layout.ll
+; openjdk/optimized/sharedRuntime_x86_64.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
@@ -742,7 +740,7 @@ entry:
   ret i32 %3
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; gromacs/optimized/dlasq3.cpp.ll
 ; gromacs/optimized/dlasq4.cpp.ll
 ; gromacs/optimized/slasq3.cpp.ll
@@ -752,7 +750,6 @@ entry:
 ; meshoptimizer/optimized/overdrawanalyzer.cpp.ll
 ; openblas/optimized/dgejsv.c.ll
 ; openblas/optimized/dgelsy.c.ll
-; openblas/optimized/dgeqp3.c.ll
 ; openblas/optimized/dlaqr0.c.ll
 ; openblas/optimized/dlaqr4.c.ll
 ; opencv/optimized/brisk.cpp.ll
@@ -770,15 +767,13 @@ entry:
   ret i32 %3
 }
 
-; 29 occurrences:
+; 27 occurrences:
 ; arrow/optimized/compare_internal.cc.ll
 ; arrow/optimized/compare_internal_avx2.cc.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; linux/optimized/intel_ring.ll
-; linux/optimized/rpl.ll
-; linux/optimized/rsmisc.ll
 ; llvm/optimized/AsmPrinter.cpp.ll
 ; luajit/optimized/lj_str.ll
 ; luajit/optimized/lj_str_dyn.ll
@@ -808,8 +803,9 @@ entry:
   ret i32 %3
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; darktable/optimized/introspection_ashift.c.ll
+; graphviz/optimized/quad_prog_vpsc.c.ll
 ; openusd/optimized/grain_synthesis.c.ll
 ; wireshark/optimized/packet-pfcp.c.ll
 ; Function Attrs: nounwind

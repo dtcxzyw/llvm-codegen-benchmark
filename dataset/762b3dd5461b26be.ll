@@ -10,7 +10,7 @@ entry:
   %3 = lshr i16 %2, 3
   %4 = and i16 %3, 8188
   %5 = zext nneg i16 %4 to i64
-  %6 = add i64 %5, %1
+  %6 = add i64 %1, %5
   %7 = add i64 %6, %0
   ret i64 %7
 }

@@ -25,7 +25,7 @@ entry:
   ret i32 %5
 }
 
-; 86 occurrences:
+; 84 occurrences:
 ; abc/optimized/bblif.c.ll
 ; abc/optimized/extraUtilFile.c.ll
 ; abc/optimized/msatClause.c.ll
@@ -51,8 +51,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -122,9 +120,8 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; luau/optimized/loslib.cpp.ll
-; nuttx/optimized/lib_strftime.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:

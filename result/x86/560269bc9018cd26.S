@@ -4,12 +4,6 @@ func0000000000000068:                   # @func0000000000000068
 	shlxq	%rdx, %rax, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000000:                   # @func0000000000000000
-	shll	$3, %edx
-	movzbl	%sil, %eax
-	shlxq	%rdx, %rax, %rax
-	addq	%rdi, %rax
-	retq
 func0000000000000060:                   # @func0000000000000060
 	shll	$3, %edx
 	movzbl	%sil, %eax

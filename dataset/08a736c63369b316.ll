@@ -1,5 +1,5 @@
 
-; 52 occurrences:
+; 51 occurrences:
 ; abc/optimized/giaDup.c.ll
 ; abc/optimized/giaHash.c.ll
 ; abc/optimized/giaStr.c.ll
@@ -14,7 +14,6 @@
 ; linux/optimized/insn-eval.ll
 ; linux/optimized/intel_pstate.ll
 ; llvm/optimized/AArch64MCCodeEmitter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVMCCodeEmitter.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
@@ -78,7 +77,7 @@ entry:
   ret i64 %6
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; abc/optimized/giaIso.c.ll
 ; abc/optimized/ifDec07.c.ll
 ; abc/optimized/saigIsoSlow.c.ll
@@ -92,7 +91,6 @@ entry:
 ; openusd/optimized/patchMap.cpp.ll
 ; raylib/optimized/raudio.c.ll
 ; sqlite/optimized/sqlite3.ll
-; wireshark/optimized/packet-ieee80211.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:

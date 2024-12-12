@@ -3,7 +3,7 @@
 ; openssl/optimized/libcrypto-lib-bn_x931p.ll
 ; openssl/optimized/libcrypto-shlib-bn_x931p.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000031a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000c2a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 999
   %4 = icmp sgt i32 %0, %1
@@ -15,7 +15,7 @@ entry:
 ; abc/optimized/extraUtilPerm.c.ll
 ; qemu/optimized/hw_usb_hcd-ehci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000311(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000c21(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 99
   %4 = icmp eq i32 %0, %1
@@ -34,7 +34,7 @@ entry:
 ; openjdk/optimized/oopMap.ll
 ; openjdk/optimized/relocator.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000315(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000c25(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 3
   %4 = icmp ule i32 %0, %1
@@ -47,7 +47,7 @@ entry:
 ; linux/optimized/drm_edid.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000421(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
   %4 = icmp eq i32 %0, %1
@@ -58,7 +58,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/g1Policy.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
   %4 = icmp eq i32 %0, %1
@@ -71,7 +71,7 @@ entry:
 ; openjdk/optimized/fieldInfo.ll
 ; openjdk/optimized/oopMap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000319(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000c29(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 3
   %4 = icmp uge i32 %0, %1
@@ -83,7 +83,7 @@ entry:
 ; libdeflate/optimized/deflate_compress.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
   %4 = icmp sge i32 %0, %1
@@ -94,7 +94,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/luckyFast16.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000117(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000427(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 37
   %4 = icmp sle i32 %0, %1
@@ -110,7 +110,7 @@ entry:
 ; linux/optimized/deflate.ll
 ; zlib/optimized/deflate.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000029(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
   %4 = icmp uge i32 %0, %1
@@ -121,7 +121,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
   %4 = icmp ugt i32 %0, %1
@@ -132,7 +132,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/act_api.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000119(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000429(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
   %4 = icmp uge i32 %0, %1
@@ -143,7 +143,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/sift.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000031b(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000c2b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 4
   %4 = icmp sge i32 %0, %1

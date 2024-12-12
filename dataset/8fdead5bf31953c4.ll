@@ -88,15 +88,20 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
+; 11 occurrences:
+; boost/optimized/approximately_equals.ll
+; boost/optimized/message.ll
 ; coreutils-rs/optimized/3wh0yla9idangd55.ll
 ; rust-analyzer-rs/optimized/3vf8rng5v602wdjs.ll
 ; rust-analyzer-rs/optimized/4yvp88cqyyaanzkc.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/2ta8crc4qgl9bp8t.ll
 ; wasmtime-rs/optimized/45190zkycf5izngt.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = select i1 %3, i32 %0, i32 %1
@@ -109,11 +114,34 @@ entry:
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/45190zkycf5izngt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000044(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = select i1 %3, i32 %0, i32 %1
   %5 = icmp ult i32 %4, 8
+  ret i1 %5
+}
+
+; 2 occurrences:
+; boost/optimized/approximately_equals.ll
+; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000046(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = trunc nuw i8 %2 to i1
+  %4 = select i1 %3, i32 %0, i32 %1
+  %5 = icmp slt i32 %4, 0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; boost/optimized/approximately_equals.ll
+; Function Attrs: nounwind
+define i1 @func000000000000004a(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = trunc nuw i8 %2 to i1
+  %4 = select i1 %3, i32 %0, i32 %1
+  %5 = icmp sgt i32 %4, 0
   ret i1 %5
 }
 
@@ -131,11 +159,9 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 2 occurrences:
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/DeadStoreElimination.cpp.ll
-; opencv/optimized/calibrate_camera.cpp.ll
-; opencv/optimized/calibrate_camera_charuco.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0, i32 %1, i8 %2) #0 {
 entry:
@@ -148,22 +174,11 @@ entry:
 ; 1 occurrences:
 ; wasmtime-rs/optimized/2ta8crc4qgl9bp8t.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000004c(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = select i1 %3, i32 %0, i32 %1
   %5 = icmp ne i32 %4, 0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0, i32 %1, i8 %2) #0 {
-entry:
-  %3 = trunc nuw i8 %2 to i1
-  %4 = select i1 %3, i32 %0, i32 %1
-  %5 = icmp slt i32 %4, 0
   ret i1 %5
 }
 

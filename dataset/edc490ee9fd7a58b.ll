@@ -1,14 +1,14 @@
 
-; 310 occurrences:
+; 312 occurrences:
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
 ; assimp/optimized/PlyParser.cpp.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; c3c/optimized/float.c.ll
 ; c3c/optimized/types.c.ll
 ; casadi/optimized/cvodes.c.ll
-; casadi/optimized/kinsol_spgmr.c.ll
 ; chibicc/optimized/type.ll
 ; clamav/optimized/matcher.c.ll
-; cmake/optimized/archive_entry_strmode.c.ll
 ; cmake/optimized/archive_write_set_format.c.ll
 ; cmake/optimized/archive_write_set_format_gnutar.c.ll
 ; cmake/optimized/core.c.ll
@@ -241,8 +241,6 @@
 ; postgres/optimized/relcache.ll
 ; postgres/optimized/scan.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; qemu/optimized/block_file-posix.c.ll
@@ -251,7 +249,6 @@
 ; qemu/optimized/hw_pci_pci.c.ll
 ; qemu/optimized/linux-user_strace.c.ll
 ; qemu/optimized/optimize.c.ll
-; qemu/optimized/target_riscv_fpu_helper.c.ll
 ; qemu/optimized/target_riscv_monitor.c.ll
 ; raylib/optimized/raudio.c.ll
 ; rocksdb/optimized/db_impl_compaction_flush.cc.ll
@@ -285,19 +282,18 @@
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
 ; wireshark/optimized/file-jpeg.c.ll
-; wireshark/optimized/msg_ucd.c.ll
+; wireshark/optimized/observer.c.ll
 ; wireshark/optimized/packet-acdr.c.ll
-; wireshark/optimized/packet-cmip.c.ll
 ; wireshark/optimized/packet-diameter.c.ll
 ; wireshark/optimized/packet-dpaux.c.ll
 ; wireshark/optimized/packet-epl.c.ll
+; wireshark/optimized/packet-ethercat-datagram.c.ll
 ; wireshark/optimized/packet-exported_pdu.c.ll
 ; wireshark/optimized/packet-h265.c.ll
 ; wireshark/optimized/packet-lbmc.c.ll
 ; wireshark/optimized/packet-ltp.c.ll
 ; wireshark/optimized/packet-mac-lte.c.ll
 ; wireshark/optimized/packet-netflow.c.ll
-; wireshark/optimized/packet-netlink-netfilter.c.ll
 ; wireshark/optimized/packet-rtps.c.ll
 ; wireshark/optimized/packet-sccp.c.ll
 ; wireshark/optimized/packet-u3v.c.ll
@@ -310,6 +306,12 @@
 ; yaml-cpp/optimized/emitterstate.cpp.ll
 ; yosys/optimized/json11.ll
 ; z3/optimized/lp_settings.cpp.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i16 %0) #0 {
 entry:

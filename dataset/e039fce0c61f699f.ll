@@ -1,43 +1,41 @@
 
-; 26 occurrences:
+; 24 occurrences:
 ; abc/optimized/acecPo.c.ll
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; graphviz/optimized/dotsplines.c.ll
 ; gromacs/optimized/libxdrf.cpp.ll
 ; hyperscan/optimized/rose_build_lookaround.cpp.ll
-; libpng/optimized/pngread.c.ll
 ; libpng/optimized/pngrutil.c.ll
-; libpng/optimized/pngwrite.c.ll
 ; libwebp/optimized/analysis_enc.c.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_indev.ll
+; lvgl/optimized/lv_indev_scroll.ll
+; lvgl/optimized/lv_slider.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/dungeongen.cpp.ll
 ; minetest/optimized/game.cpp.ll
 ; oiio/optimized/ddsinput.cpp.ll
 ; oiio/optimized/imagebufalgo_draw.cpp.ll
 ; opencv/optimized/erfilter.cpp.ll
-; opencv/optimized/rand.cpp.ll
 ; openjdk/optimized/DrawLine.ll
-; openjdk/optimized/pngread.ll
 ; openjdk/optimized/pngrutil.ll
 ; openusd/optimized/reconinter.c.ll
 ; raylib/optimized/rtextures.c.ll
-; z3/optimized/dimacs.cpp.ll
 ; zxing/optimized/Barcode.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 true)
-  %3 = icmp ult i32 %2, %0
+  %3 = icmp samesign ult i32 %2, %0
   ret i1 %3
 }
 
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 
-; 39 occurrences:
+; 40 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; clamav/optimized/pe_icons.c.ll
 ; clamav/optimized/rarvm.cpp.ll
@@ -46,11 +44,13 @@ declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 ; darktable/optimized/OlympusDecompressor.cpp.ll
 ; freetype/optimized/sdf.c.ll
 ; graphviz/optimized/dotsplines.c.ll
-; harfbuzz/optimized/harfbuzz.cc.ll
 ; libpng/optimized/pngwutil.c.ll
-; llvm/optimized/CommentCommandTraits.cpp.ll
-; luajit/optimized/lj_strfmt_num.ll
-; luajit/optimized/lj_strfmt_num_dyn.ll
+; lvgl/optimized/lv_draw_sw_line.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_indev.ll
+; lvgl/optimized/lv_indev_scroll.ll
+; lvgl/optimized/lv_math.ll
+; lvgl/optimized/lv_roller.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/dungeongen.cpp.ll
 ; minetest/optimized/game.cpp.ll
@@ -65,7 +65,6 @@ declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
 ; openjdk/optimized/divnode.ll
-; openjdk/optimized/hb-buffer.ll
 ; openmpi/optimized/pml_ob1_recvfrag.ll
 ; openusd/optimized/intrapred.c.ll
 ; openusd/optimized/stbImage.cpp.ll
@@ -78,10 +77,10 @@ declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 ; zxing/optimized/AZEncoder.cpp.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.abs.i32(i32 %1, i1 true)
-  %3 = icmp ugt i32 %2, %0
+  %3 = icmp samesign ugt i32 %2, %0
   ret i1 %3
 }
 
@@ -95,7 +94,7 @@ entry:
 ; recastnavigation/optimized/RecastFilter.cpp.ll
 ; recastnavigation/optimized/RecastRasterization.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000006a(i32 %0, i32 %1) #0 {
 entry:
   %2 = call noundef i32 @llvm.abs.i32(i32 %1, i1 true)
   %3 = icmp sgt i32 %2, %0
@@ -106,10 +105,10 @@ entry:
 ; openvdb/optimized/ChangeBackground.cc.ll
 ; openvdb/optimized/Prune.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000078(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call noundef i32 @llvm.abs.i32(i32 %1, i1 true)
-  %3 = icmp ugt i32 %2, %0
+  %3 = icmp samesign ugt i32 %2, %0
   ret i1 %3
 }
 
@@ -126,13 +125,16 @@ entry:
   ret i1 %3
 }
 
-; 19 occurrences:
+; 22 occurrences:
 ; abc/optimized/msatRead.c.ll
 ; icu/optimized/decNumber.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; jq/optimized/decNumber.ll
+; libwebp/optimized/anim_encode.c.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/ScheduleDAGRRList.cpp.ll
+; lvgl/optimized/lv_draw_label.ll
+; lvgl/optimized/lv_gridnav.ll
 ; ocio/optimized/MathUtils.cpp.ll
 ; opencv/optimized/finder_pattern_finder.cpp.ll
 ; opencv/optimized/morph.dispatch.cpp.ll
@@ -147,7 +149,7 @@ entry:
 ; yosys/optimized/ezminisat.ll
 ; zxing/optimized/ODDataBarCommon.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 true)
   %3 = icmp sgt i32 %2, %0
@@ -173,7 +175,7 @@ entry:
 ; slurm/optimized/print_fields.ll
 ; zxing/optimized/ODDXFilmEdgeReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 true)
   %3 = icmp slt i32 %2, %0
@@ -205,10 +207,38 @@ entry:
 ; verilator/optimized/V3Width.cpp.ll
 ; verilator/optimized/V3WidthSel.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 true)
   %3 = icmp eq i32 %2, %0
+  ret i1 %3
+}
+
+; 5 occurrences:
+; harfbuzz/optimized/harfbuzz.cc.ll
+; llvm/optimized/CommentCommandTraits.cpp.ll
+; luajit/optimized/lj_strfmt_num.ll
+; luajit/optimized/lj_strfmt_num_dyn.ll
+; openjdk/optimized/hb-buffer.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
+entry:
+  %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 true)
+  %3 = icmp ugt i32 %2, %0
+  ret i1 %3
+}
+
+; 5 occurrences:
+; libpng/optimized/pngread.c.ll
+; libpng/optimized/pngwrite.c.ll
+; opencv/optimized/rand.cpp.ll
+; openjdk/optimized/pngread.ll
+; z3/optimized/dimacs.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
+entry:
+  %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 true)
+  %3 = icmp ult i32 %2, %0
   ret i1 %3
 }
 
@@ -246,20 +276,27 @@ entry:
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000074(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call noundef i32 @llvm.abs.i32(i32 %1, i1 true)
-  %3 = icmp ult i32 %2, %0
+  %3 = icmp samesign ult i32 %2, %0
   ret i1 %3
 }
 
-; 4 occurrences:
-; llvm/optimized/VectorUtils.cpp.ll
-; opencv/optimized/perf_qrcode_pipeline.cpp.ll
-; openusd/optimized/loopfilter.c.ll
-; openusd/optimized/mvref_common.c.ll
+; 1 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000079(i32 %0, i32 %1) #0 {
+entry:
+  %2 = tail call noundef i32 @llvm.abs.i32(i32 %1, i1 true)
+  %3 = icmp samesign uge i32 %2, %0
+  ret i1 %3
+}
+
+; 1 occurrences:
+; llvm/optimized/VectorUtils.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000025(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 true)
   %3 = icmp ule i32 %2, %0
@@ -269,25 +306,36 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/reconinter.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000039(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 true)
-  %3 = icmp uge i32 %2, %0
+  %3 = icmp samesign uge i32 %2, %0
+  ret i1 %3
+}
+
+; 3 occurrences:
+; opencv/optimized/perf_qrcode_pipeline.cpp.ll
+; openusd/optimized/loopfilter.c.ll
+; openusd/optimized/mvref_common.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000035(i32 %0, i32 %1) #0 {
+entry:
+  %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 true)
+  %3 = icmp samesign ule i32 %2, %0
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; openusd/optimized/loopfilter.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000027(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 true)
   %3 = icmp sle i32 %2, %0
   ret i1 %3
 }
 
-; 2 occurrences:
-; linux/optimized/filter.ll
+; 1 occurrences:
 ; linux/optimized/freq_table.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
@@ -297,16 +345,23 @@ entry:
   ret i1 %3
 }
 
-; 4 occurrences:
-; freetype/optimized/ftbase.c.ll
+; 1 occurrences:
 ; linux/optimized/ehci-hcd.ll
-; linux/optimized/reg.ll
-; linux/optimized/timekeeping.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.abs.i32(i32 %1, i1 false)
-  %3 = icmp ugt i32 %2, %0
+  %3 = icmp samesign ugt i32 %2, %0
+  ret i1 %3
+}
+
+; 1 occurrences:
+; linux/optimized/filter.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+entry:
+  %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 false)
+  %3 = icmp samesign ult i32 %2, %0
   ret i1 %3
 }
 
@@ -317,6 +372,18 @@ define i1 @func0000000000000009(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 false)
   %3 = icmp uge i32 %2, %0
+  ret i1 %3
+}
+
+; 3 occurrences:
+; freetype/optimized/ftbase.c.ll
+; linux/optimized/reg.ll
+; linux/optimized/timekeeping.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
+entry:
+  %2 = call i32 @llvm.abs.i32(i32 %1, i1 false)
+  %3 = icmp ugt i32 %2, %0
   ret i1 %3
 }
 
@@ -333,7 +400,7 @@ entry:
 ; 1 occurrences:
 ; openblas/optimized/dlasyf.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = call i32 @llvm.abs.i32(i32 %1, i1 true)
   %3 = icmp ne i32 %2, %0
@@ -343,7 +410,7 @@ entry:
 ; 1 occurrences:
 ; libwebp/optimized/buffer_dec.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002b(i32 %0, i32 %1) #0 {
 entry:
   %2 = tail call i32 @llvm.abs.i32(i32 %1, i1 true)
   %3 = icmp sge i32 %2, %0

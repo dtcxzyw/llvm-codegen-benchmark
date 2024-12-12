@@ -6,7 +6,7 @@
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000078(ptr %0, i1 %1, i16 %2) #0 {
+define ptr @func000000000000007c(ptr %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = sub nuw nsw i16 32, %2
   %4 = zext nneg i16 %3 to i64

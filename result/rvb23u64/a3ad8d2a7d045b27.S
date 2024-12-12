@@ -19,3 +19,11 @@ func000000000000000c:                   # @func000000000000000c
 	fneg.s	fa4, fa4
 	fmax.s	fa0, fa5, fa4
 	ret
+func000000000000000e:                   # @func000000000000000e
+	fli.s	fa5, 0.5
+	fadd.s	fa0, fa0, fa5
+	feq.s	a0, fa0, fa0
+	bnez	a0, .LBB3_2
+	fmv.w.x	fa0, zero
+.LBB3_2:                                # %entry
+	ret

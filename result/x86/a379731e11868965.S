@@ -14,3 +14,11 @@ func0000000000000045:                   # @func0000000000000045
 	imulq	%rcx, %rax
 	decq	%rax
 	retq
+func0000000000000065:                   # @func0000000000000065
+	subq	%rdi, %rsi
+	leaq	56(%rsi), %rcx
+	sarq	$3, %rcx
+	movabsq	$7905747460161236407, %rax      # imm = 0x6DB6DB6DB6DB6DB7
+	imulq	%rcx, %rax
+	addq	$-2, %rax
+	retq

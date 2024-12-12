@@ -1,5 +1,5 @@
 
-%"struct.boost::container::dtl::pair.2570852" = type { i32, i32 }
+%"struct.boost::container::dtl::pair.2685211" = type { i32, i32 }
 
 ; 14 occurrences:
 ; darktable/optimized/introspection_colorbalancergb.c.ll
@@ -21,7 +21,7 @@ define ptr @func0000000000000000(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 3
   %4 = and i64 %3, -32
-  %5 = getelementptr %"struct.boost::container::dtl::pair.2570852", ptr %0, i64 %1
+  %5 = getelementptr %"struct.boost::container::dtl::pair.2685211", ptr %0, i64 %1
   %6 = getelementptr i8, ptr %5, i64 %4
   ret ptr %6
 }
@@ -103,17 +103,30 @@ entry:
   ret ptr %6
 }
 
-; 10 occurrences:
+; 5 occurrences:
+; darktable/optimized/introspection_demosaic.c.ll
+; darktable/optimized/introspection_highlights.c.ll
+; duckdb/optimized/ub_duckdb_common_types.cpp.ll
+; g2o/optimized/edge_se2_lotsofxy.cpp.ll
+; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003c(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 2
+  %4 = and i64 %3, 8589934464
+  %5 = getelementptr nusw nuw float, ptr %0, i64 %1
+  %6 = getelementptr i8, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 7 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; darktable/optimized/print_settings.c.ll
-; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; entt/optimized/registry.cpp.ll
 ; entt/optimized/sparse_set.cpp.ll
 ; entt/optimized/storage_entity.cpp.ll
 ; entt/optimized/storage_no_instance.cpp.ll
-; g2o/optimized/edge_se2_lotsofxy.cpp.ll
-; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000038(ptr %0, i64 %1, i64 %2) #0 {
 entry:

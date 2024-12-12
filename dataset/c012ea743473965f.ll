@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 16 occurrences:
 ; abc/optimized/resSim.c.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
@@ -12,6 +12,10 @@
 ; ruby/optimized/time.ll
 ; wasmtime-rs/optimized/11ww7ts55o8z8j6m.ll
 ; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/73pi95mikt3cntupcr2d2nefv.ll
+; zed-rs/optimized/7vgle1vcww8f84ro2xl2r2u8f.ll
+; zed-rs/optimized/a9o648rm8h3erlto15zyd64wi.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000000d(i32 %0) #0 {
 entry:
@@ -20,11 +24,12 @@ entry:
   ret i8 %2
 }
 
-; 30 occurrences:
+; 32 occurrences:
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/mioSop.c.ll
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; arrow/optimized/compare_internal_avx2.cc.ll
+; boost/optimized/src.ll
 ; graphviz/optimized/colxlate.c.ll
 ; hdf5/optimized/H5Tbit.c.ll
 ; icu/optimized/simpletz.ll
@@ -38,6 +43,7 @@ entry:
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; luau/optimized/IrLoweringA64.cpp.ll
 ; luau/optimized/main.cpp.ll
+; lvgl/optimized/lv_timer.ll
 ; nlohmann_json/optimized/unit-cbor.cpp.ll
 ; nlohmann_json/optimized/unit.cpp.ll
 ; oiio/optimized/rlaoutput.cpp.ll
@@ -59,12 +65,13 @@ entry:
   ret i8 %2
 }
 
-; 22 occurrences:
+; 23 occurrences:
 ; cmake/optimized/zstd_compress.c.ll
 ; hyperscan/optimized/mcclellancompile.cpp.ll
 ; hyperscan/optimized/mcsheng_compile.cpp.ll
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; luau/optimized/main.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; meilisearch-rs/optimized/4llghrvh6vzci59o.ll
 ; openusd/optimized/reconinter.c.ll
 ; quickjs/optimized/libregexp.ll

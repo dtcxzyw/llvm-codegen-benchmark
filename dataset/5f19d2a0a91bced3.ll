@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 15 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; flac/optimized/md5.c.ll
 ; image-rs/optimized/1clnprdgqfw2q9lq.ll
@@ -13,6 +13,8 @@
 ; pbrt-v4/optimized/image.cpp.ll
 ; qemu/optimized/hw_display_edid-generate.c.ll
 ; slurm/optimized/gres_select_util.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -48,8 +50,9 @@ entry:
   ret i64 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; oiio/optimized/tiffinput.cpp.ll
+; openusd/optimized/aom_image.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000002c(i64 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -60,9 +63,8 @@ entry:
   ret i64 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; oiio/optimized/tiffinput.cpp.ll
-; openusd/optimized/aom_image.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003c(i64 %0, i32 %1, i32 %2) #0 {
 entry:

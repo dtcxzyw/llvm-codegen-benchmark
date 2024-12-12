@@ -12,7 +12,7 @@
 ; wireshark/optimized/packet-fc.c.ll
 ; wireshark/optimized/packet-scsi.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000181(i32 %0, i16 %1) #0 {
 entry:
   %2 = icmp ne i16 %1, 0
   %3 = icmp eq i32 %0, 0
@@ -45,7 +45,7 @@ entry:
 ; wireshark/optimized/packet-bthci_iso.c.ll
 ; wireshark/optimized/packet-isobus-vt.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i16 %1) #0 {
+define i1 @func000000000000018c(i32 %0, i16 %1) #0 {
 entry:
   %2 = icmp ne i16 %1, 1
   %3 = icmp ne i32 %0, 40
@@ -53,15 +53,13 @@ entry:
   ret i1 %4
 }
 
-; 30 occurrences:
+; 28 occurrences:
 ; arrow/optimized/bignum.cc.ll
 ; double_conversion/optimized/bignum.cc.ll
 ; git/optimized/combine-diff.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; icu/optimized/double-conversion-bignum.ll
 ; libpng/optimized/png.c.ll
-; linux/optimized/attr.ll
-; linux/optimized/dswload.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
 ; llvm/optimized/AggressiveAntiDepBreaker.cpp.ll
@@ -85,7 +83,7 @@ entry:
 ; slurm/optimized/job_mgr.ll
 ; wireshark/optimized/packet-ip.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %1, 0
   %3 = icmp eq i32 %0, 127
@@ -96,7 +94,7 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/dungeongen.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000066(i32 %0, i16 %1) #0 {
+define i1 @func00000000000000c6(i32 %0, i16 %1) #0 {
 entry:
   %2 = icmp slt i16 %1, 3
   %3 = icmp slt i32 %0, 3
@@ -104,7 +102,7 @@ entry:
   ret i1 %4
 }
 
-; 31 occurrences:
+; 32 occurrences:
 ; git/optimized/fast-export.ll
 ; icu/optimized/ustring.ll
 ; linux/optimized/hub.ll
@@ -131,13 +129,14 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; rust-analyzer-rs/optimized/4il2q1fg8uiz7yqm.ll
 ; slurm/optimized/job_mgr.ll
+; slurm/optimized/salloc.ll
 ; slurm/optimized/slurm_step_layout.ll
 ; sqlite/optimized/sqlite3.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; wireshark/optimized/packet-dhcpv6.c.ll
 ; wireshark/optimized/packet-xmcp.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i16 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %1, 0
   %3 = icmp ne i32 %0, 0
@@ -154,7 +153,7 @@ entry:
 ; openjdk/optimized/classFileParser.ll
 ; openjdk/optimized/hb-ot-shape-normalize.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i16 %1) #0 {
 entry:
   %2 = icmp ult i16 %1, 256
   %3 = icmp eq i32 %0, 0
@@ -162,11 +161,22 @@ entry:
   ret i1 %4
 }
 
+; 1 occurrences:
+; boost/optimized/operations.ll
+; Function Attrs: nounwind
+define i1 @func000000000000014c(i32 %0, i16 %1) #0 {
+entry:
+  %2 = icmp sgt i16 %1, -28673
+  %3 = icmp ne i32 %0, 513
+  %4 = select i1 %3, i1 true, i1 %2, !prof !0
+  ret i1 %4
+}
+
 ; 2 occurrences:
 ; slurm/optimized/gres.ll
 ; slurm/optimized/slurmd.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i16 %1) #0 {
+define i1 @func00000000000000c1(i32 %0, i16 %1) #0 {
 entry:
   %2 = icmp slt i16 %1, 0
   %3 = icmp eq i32 %0, 0
@@ -178,7 +188,7 @@ entry:
 ; slurm/optimized/read_config.ll
 ; wireshark/optimized/packet-zebra.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000101(i32 %0, i16 %1) #0 {
 entry:
   %2 = icmp ugt i16 %1, 1
   %3 = icmp eq i32 %0, 0
@@ -193,7 +203,7 @@ entry:
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wireshark/optimized/packet-smb.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %1, 14
   %3 = icmp slt i32 %0, 2
@@ -204,7 +214,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000086(i32 %0, i16 %1) #0 {
 entry:
   %2 = icmp ult i16 %1, -2
   %3 = icmp slt i32 %0, 5
@@ -217,7 +227,7 @@ entry:
 ; linux/optimized/xhci-hub.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i16 %1) #0 {
+define i1 @func000000000000008c(i32 %0, i16 %1) #0 {
 entry:
   %2 = icmp ult i16 %1, 173
   %3 = icmp ne i32 %0, 225
@@ -229,7 +239,7 @@ entry:
 ; linux/optimized/intel_sdvo.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000186(i32 %0, i16 %1) #0 {
 entry:
   %2 = icmp ne i16 %1, 60
   %3 = icmp slt i32 %0, 9
@@ -243,7 +253,7 @@ entry:
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000141(i32 %0, i16 %1) #0 {
 entry:
   %2 = icmp sgt i16 %1, -1
   %3 = icmp eq i32 %0, 40
@@ -251,10 +261,25 @@ entry:
   ret i1 %4
 }
 
-; 1 occurrences:
+; 4 occurrences:
+; llvm/optimized/CGExpr.cpp.ll
+; llvm/optimized/FunctionImport.cpp.ll
+; miniaudio/optimized/unity.c.ll
+; raylib/optimized/raudio.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000084(i32 %0, i16 %1) #0 {
+entry:
+  %2 = icmp ult i16 %1, -4
+  %3 = icmp ult i32 %0, -3
+  %4 = select i1 %3, i1 true, i1 %2
+  ret i1 %4
+}
+
+; 2 occurrences:
+; linux/optimized/libata-scsi.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %1, 78
   %3 = icmp ult i32 %0, 2
@@ -266,7 +291,7 @@ entry:
 ; linux/optimized/tx.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000184(i32 %0, i16 %1) #0 {
 entry:
   %2 = icmp ne i16 %1, 0
   %3 = icmp ult i32 %0, 2
@@ -278,7 +303,7 @@ entry:
 ; icu/optimized/rbbiscan.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i16 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %1, 0
   %3 = icmp sgt i32 %0, 0
@@ -290,10 +315,10 @@ entry:
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000098(i32 %0, i16 %1) #0 {
 entry:
   %2 = icmp ult i16 %1, 2
-  %3 = icmp ugt i32 %0, 64
+  %3 = icmp samesign ugt i32 %0, 64
   %4 = select i1 %3, i1 true, i1 %2
   ret i1 %4
 }
@@ -302,7 +327,7 @@ entry:
 ; icu/optimized/collationruleparser.ll
 ; linux/optimized/smpboot.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i32 %0, i16 %1) #0 {
+define i1 @func000000000000010a(i32 %0, i16 %1) #0 {
 entry:
   %2 = icmp ugt i16 %1, 1
   %3 = icmp sgt i32 %0, 1
@@ -313,7 +338,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/avtab.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000028(i32 %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %1, 0
   %3 = icmp ugt i32 %0, 29
@@ -324,7 +349,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/nodeIndexscan.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i32 %0, i16 %1) #0 {
+define i1 @func00000000000000cc(i32 %0, i16 %1) #0 {
 entry:
   %2 = icmp slt i16 %1, 1
   %3 = icmp ne i32 %0, 403
@@ -332,22 +357,10 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
-; miniaudio/optimized/unity.c.ll
-; raylib/optimized/raudio.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i16 %1) #0 {
-entry:
-  %2 = icmp ult i16 %1, -256
-  %3 = icmp ult i32 %0, -384000
-  %4 = select i1 %3, i1 true, i1 %2
-  ret i1 %4
-}
-
 ; 1 occurrences:
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i32 %0, i16 %1) #0 {
+define i1 @func00000000000000c4(i32 %0, i16 %1) #0 {
 entry:
   %2 = icmp slt i16 %1, 0
   %3 = icmp ult i32 %0, -4194301
@@ -356,3 +369,5 @@ entry:
 }
 
 attributes #0 = { nounwind }
+
+!0 = !{!"branch_weights", !"expected", i32 1, i32 2000}

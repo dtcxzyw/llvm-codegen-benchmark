@@ -1,7 +1,6 @@
 
-; 2 occurrences:
+; 1 occurrences:
 ; openjdk/optimized/assembler_x86.ll
-; php/optimized/pcre2_jit_compile.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i1 %0, i32 %1) #0 {
 entry:

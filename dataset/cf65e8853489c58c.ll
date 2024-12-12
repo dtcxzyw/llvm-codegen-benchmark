@@ -1,22 +1,5 @@
 
-; 5 occurrences:
-; abc/optimized/extraUtilBitMatrix.c.ll
-; abc/optimized/ivyCutTrav.c.ll
-; abc/optimized/mvcUtils.c.ll
-; lief/optimized/bignum.c.ll
-; postgres/optimized/dsm.ll
-; Function Attrs: nounwind
-define i64 @func000000000000018c(i64 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 7
-  %3 = icmp ne i64 %2, 0
-  %4 = zext i1 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
-  %6 = shl i64 %5, 32
-  ret i64 %6
-}
-
-; 14 occurrences:
+; 15 occurrences:
 ; abc/optimized/dauTree.c.ll
 ; cpython/optimized/gcmodule.ll
 ; cpython/optimized/sysmodule.ll
@@ -31,14 +14,29 @@ entry:
 ; hyperscan/optimized/ng_squash.cpp.ll
 ; hyperscan/optimized/ng_violet.cpp.ll
 ; lief/optimized/bignum.c.ll
+; zed-rs/optimized/8y2n395sf7zaarcc3wfqoazez.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000018f(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1729382256910270464
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   %6 = shl nuw nsw i64 %5, 27
+  ret i64 %6
+}
+
+; 2 occurrences:
+; lief/optimized/bignum.c.ll
+; postgres/optimized/dsm.ll
+; Function Attrs: nounwind
+define i64 @func000000000000018c(i64 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 7
+  %3 = icmp ne i64 %2, 0
+  %4 = zext i1 %3 to i64
+  %5 = add nuw nsw i64 %0, %4
+  %6 = shl i64 %5, 3
   ret i64 %6
 }
 
@@ -50,7 +48,7 @@ entry:
   %2 = and i64 %1, 63
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   %6 = shl nuw nsw i64 %5, 3
   ret i64 %6
 }
@@ -63,7 +61,7 @@ entry:
   %2 = and i64 %1, 56
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   %6 = shl nuw i64 %5, 6
   ret i64 %6
 }
@@ -76,7 +74,7 @@ entry:
   %2 = and i64 %1, 7
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   %6 = shl nsw i64 %5, 3
   ret i64 %6
 }

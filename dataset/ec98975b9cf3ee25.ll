@@ -59,9 +59,9 @@ entry:
 ; 1 occurrences:
 ; php/optimized/pcre2_match.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000018(i1 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %1, 127
+  %2 = icmp samesign ugt i32 %1, 127
   %3 = select i1 %2, i1 %0, i1 false
   %4 = xor i1 %3, true
   ret i1 %4
@@ -70,9 +70,9 @@ entry:
 ; 1 occurrences:
 ; glslang/optimized/ParseHelper.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000014(i1 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 28
+  %2 = icmp samesign ult i32 %1, 28
   %3 = select i1 %2, i1 %0, i1 false
   %4 = xor i1 %3, true
   ret i1 %4

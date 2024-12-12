@@ -10,7 +10,7 @@ entry:
   ret i32 %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/intel_pstate.ll
 ; linux/optimized/sd.ll
@@ -19,6 +19,7 @@ entry:
 ; llvm/optimized/InstCombineVectorOps.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; yosys/optimized/sta.ll
+; zed-rs/optimized/5lgahps99tv0rsaolw3x59ow2.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:

@@ -50,8 +50,8 @@ func000000000000000c:                   # @func000000000000000c
 	addw	a0, a0, a1
 	ret
 func0000000000000000:                   # @func0000000000000000
-	li	a2, 375
-	slli	a2, a2, 25
+	lui	a2, 15625
+	slli	a2, a2, 13
 	slli	a1, a1, 48
 	mulhu	a1, a1, a2
 	add	a0, a0, a1

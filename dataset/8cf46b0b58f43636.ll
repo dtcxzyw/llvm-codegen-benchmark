@@ -1,5 +1,7 @@
 
-; 136 occurrences:
+; 139 occurrences:
+; abc/optimized/abcOrchestration.c.ll
+; abc/optimized/abcResub.c.ll
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/rwrEva.c.ll
 ; abc/optimized/saigSwitch.c.ll
@@ -108,6 +110,7 @@
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; qemu/optimized/block_vmdk.c.ll
 ; qemu/optimized/hw_audio_es1370.c.ll
+; qemu/optimized/hw_char_ipoctal232.c.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; qemu/optimized/hw_usb_hcd-xhci.c.ll
 ; qemu/optimized/target_riscv_translate.c.ll
@@ -144,7 +147,7 @@ entry:
   ret i32 %2
 }
 
-; 876 occurrences:
+; 878 occurrences:
 ; abc/optimized/cuddTable.c.ll
 ; abc/optimized/cuddZddReord.c.ll
 ; abc/optimized/ifCut.c.ll
@@ -163,7 +166,6 @@ entry:
 ; icu/optimized/edits.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; libwebp/optimized/lossless_enc.c.ll
-; linux/optimized/addrconf_core.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/intel_workarounds.ll
 ; linux/optimized/random32.ll
@@ -365,6 +367,8 @@ entry:
 ; llvm/optimized/X86InstructionSelector.cpp.ll
 ; llvm/optimized/X86LowerAMXType.cpp.ll
 ; llvm/optimized/X86SpeculativeLoadHardening.cpp.ll
+; lvgl/optimized/lv_indev.ll
+; lvgl/optimized/lv_indev_scroll.ll
 ; openexr/optimized/ImfWav.cpp.ll
 ; openexr/optimized/internal_piz.c.ll
 ; openjdk/optimized/cmstypes.ll
@@ -484,7 +488,6 @@ entry:
 ; z3/optimized/check_relation.cpp.ll
 ; z3/optimized/check_sat_result.cpp.ll
 ; z3/optimized/clp_context.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/cofactor_elim_term_ite.cpp.ll
 ; z3/optimized/cofactor_term_ite_tactic.cpp.ll
 ; z3/optimized/collect_occs.cpp.ll
@@ -1021,6 +1024,8 @@ entry:
 ; z3/optimized/var_subst.cpp.ll
 ; z3/optimized/wmax.cpp.ll
 ; z3/optimized/z3_replayer.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0) #0 {
 entry:
@@ -1029,12 +1034,13 @@ entry:
   ret i32 %2
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; clamav/optimized/LzmaDec.c.ll
 ; clamav/optimized/mew.c.ll
 ; clamav/optimized/unsp.c.ll
 ; clamav/optimized/upack.c.ll
 ; libquic/optimized/err.c.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
 ; openblas/optimized/dlaqr5.c.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; Function Attrs: nounwind

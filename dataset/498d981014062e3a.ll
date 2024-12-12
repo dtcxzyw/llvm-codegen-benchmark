@@ -1,5 +1,5 @@
 
-; 67 occurrences:
+; 65 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; clamav/optimized/bytecode_vm.c.ll
 ; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
@@ -19,12 +19,9 @@
 ; linux/optimized/clnt.ll
 ; linux/optimized/cypress_ps2.ll
 ; linux/optimized/drm_dp_mst_topology.ll
-; linux/optimized/i8042.ll
-; linux/optimized/n_tty.ll
 ; linux/optimized/namei_vfat.ll
 ; linux/optimized/pcm_lib.ll
 ; linux/optimized/rtc-cmos.ll
-; linux/optimized/thermal_trip.ll
 ; linux/optimized/vgacon.ll
 ; linux/optimized/xhci-hub.ll
 ; llvm/optimized/APValue.cpp.ll
@@ -46,6 +43,7 @@
 ; nix/optimized/flake.ll
 ; openjdk/optimized/compilationPolicy.ll
 ; openusd/optimized/stbImage.cpp.ll
+; postgres/optimized/regcomp.ll
 ; postgres/optimized/xloginsert.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; sentencepiece/optimized/strutil.cc.ll

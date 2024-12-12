@@ -6,11 +6,11 @@
 ; openjdk/optimized/ThreeByteBgr.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(i64 %0, i64 %1) #0 {
+define ptr @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 3
   %3 = inttoptr i64 %0 to ptr
-  %4 = getelementptr nusw i8, ptr %3, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %2
   ret ptr %4
 }
 
@@ -77,9 +77,8 @@ entry:
   ret ptr %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; node/optimized/libnode.node_http2.ll
-; opencv/optimized/optflowgf.cpp.ll
 ; openusd/optimized/aom_convolve.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(i64 %0, i64 %1) #0 {
@@ -87,6 +86,17 @@ entry:
   %2 = mul i64 %1, -6
   %3 = inttoptr i64 %0 to ptr
   %4 = getelementptr nusw i8, ptr %3, i64 %2
+  ret ptr %4
+}
+
+; 1 occurrences:
+; opencv/optimized/optflowgf.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(i64 %0, i64 %1) #0 {
+entry:
+  %2 = mul nuw i64 %1, 20
+  %3 = inttoptr i64 %0 to ptr
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %2
   ret ptr %4
 }
 

@@ -14,7 +14,8 @@ entry:
   ret i64 %5
 }
 
-; 170 occurrences:
+; 171 occurrences:
+; boost/optimized/to_chars.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
@@ -189,7 +190,7 @@ entry:
 define i64 @func0000000000000056(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -150
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sub nsw i32 40, %4
   %6 = zext nneg i32 %5 to i64
   %7 = lshr i64 %0, %6

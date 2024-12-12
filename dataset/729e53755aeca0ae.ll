@@ -1,6 +1,7 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; linux/optimized/skl_universal_plane.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
 ; ncnn/optimized/mat.cpp.ll
 ; openjdk/optimized/gtk3_interface.ll
 ; Function Attrs: nounwind
@@ -9,15 +10,19 @@ entry:
   %2 = lshr i16 %1, 8
   %3 = zext nneg i16 %2 to i32
   %4 = shl nuw i32 %3, 24
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
-; 9 occurrences:
+; 13 occurrences:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; linux/optimized/intel_color.ll
 ; linux/optimized/tx.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; openjdk/optimized/gtk2_interface.ll
 ; openjdk/optimized/gtk3_interface.ll
 ; wireshark/optimized/print.c.ll

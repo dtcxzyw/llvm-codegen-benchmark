@@ -4,7 +4,7 @@ func0000000000000003:                   # @func0000000000000003
 	kmovd	%edi, %k1
 	vmovsd	.LCPI0_0(%rip), %xmm2           # xmm2 = [1.0E+0,0.0E+0]
 	vmovsd	%xmm1, %xmm2, %xmm2 {%k1}
-	vmulsd	%xmm0, %xmm2, %xmm0
+	vmulsd	%xmm2, %xmm0, %xmm0
 	vxorpd	%xmm1, %xmm1, %xmm1
 	vucomisd	%xmm1, %xmm0
 	setb	%al
@@ -47,7 +47,7 @@ func0000000000000005:                   # @func0000000000000005
 func0000000000000002:                   # @func0000000000000002
 	kmovd	%edi, %k1
 	vmovsd	%xmm1, %xmm1, %xmm1 {%k1} {z}
-	vmulsd	%xmm0, %xmm1, %xmm0
+	vmulsd	%xmm1, %xmm0, %xmm0
 	vmovsd	.LCPI4_0(%rip), %xmm1           # xmm1 = [2.147483647E+9,0.0E+0]
 	vucomisd	%xmm0, %xmm1
 	seta	%al

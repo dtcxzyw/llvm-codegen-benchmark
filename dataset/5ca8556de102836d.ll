@@ -129,7 +129,7 @@ entry:
   ret i32 %4
 }
 
-; 102 occurrences:
+; 104 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
@@ -139,6 +139,7 @@ entry:
 ; abseil-cpp/optimized/charconv_parse.cc.ll
 ; abseil-cpp/optimized/demangle.cc.ll
 ; arrow/optimized/string-to-double.cc.ll
+; assimp/optimized/XFileParser.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; bdwgc/optimized/cordprnt.c.ll
@@ -172,6 +173,7 @@ entry:
 ; llvm/optimized/FormatString.cpp.ll
 ; llvm/optimized/LiveDebugVariables.cpp.ll
 ; llvm/optimized/VersionTuple.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; nuttx/optimized/lib_inetaton.c.ll
@@ -241,7 +243,8 @@ entry:
   ret i32 %4
 }
 
-; 17 occurrences:
+; 18 occurrences:
+; boost/optimized/dec_octet_rule.ll
 ; c3c/optimized/lexer.c.ll
 ; cmake/optimized/parsedate.c.ll
 ; cpython/optimized/bytesobject.ll
@@ -268,7 +271,7 @@ entry:
   ret i32 %4
 }
 
-; 243 occurrences:
+; 241 occurrences:
 ; brotli/optimized/encode.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/doh.c.ll
@@ -338,6 +341,7 @@ entry:
 ; redis/optimized/hyperloglog.ll
 ; redis/optimized/zipmap.ll
 ; sentencepiece/optimized/strutil.cc.ll
+; stockfish/optimized/position.ll
 ; wireshark/optimized/dot11decrypt.c.ll
 ; wireshark/optimized/file-gif.c.ll
 ; wireshark/optimized/packet-3com-njack.c.ll
@@ -410,7 +414,6 @@ entry:
 ; wireshark/optimized/packet-gsm_a_rr.c.ll
 ; wireshark/optimized/packet-gsm_abis_om2000.c.ll
 ; wireshark/optimized/packet-gsm_gsup.c.ll
-; wireshark/optimized/packet-gsm_r_uus1.c.ll
 ; wireshark/optimized/packet-gsm_sms.c.ll
 ; wireshark/optimized/packet-gtp.c.ll
 ; wireshark/optimized/packet-gtpv2.c.ll
@@ -473,7 +476,6 @@ entry:
 ; wireshark/optimized/packet-rtp.c.ll
 ; wireshark/optimized/packet-rtsp.c.ll
 ; wireshark/optimized/packet-s7comm.c.ll
-; wireshark/optimized/packet-sapenqueue.c.ll
 ; wireshark/optimized/packet-sasp.c.ll
 ; wireshark/optimized/packet-sbus.c.ll
 ; wireshark/optimized/packet-scsi-smc.c.ll
@@ -486,7 +488,6 @@ entry:
 ; wireshark/optimized/packet-synphasor.c.ll
 ; wireshark/optimized/packet-syslog.c.ll
 ; wireshark/optimized/packet-tds.c.ll
-; wireshark/optimized/packet-teap.c.ll
 ; wireshark/optimized/packet-thread.c.ll
 ; wireshark/optimized/packet-tls-utils.c.ll
 ; wireshark/optimized/packet-tls.c.ll
@@ -521,7 +522,7 @@ entry:
   ret i32 %4
 }
 
-; 56 occurrences:
+; 55 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; arrow/optimized/diff.cc.ll
@@ -535,7 +536,6 @@ entry:
 ; libphonenumber/optimized/generate_geocoding_data.cc.ll
 ; libphonenumber/optimized/geocoding_data_test.cc.ll
 ; libsodium/optimized/libsodium_la-utils.ll
-; linux/optimized/evgpeinit.ll
 ; linux/optimized/fib_trie.ll
 ; linux/optimized/hwregs.ll
 ; linux/optimized/intel_vdsc.ll
@@ -688,7 +688,8 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/dec_octet_rule.ll
 ; cpython/optimized/_codecs_cn.ll
 ; slurm/optimized/parse_time.ll
 ; sqlite/optimized/sqlite3.ll
@@ -696,7 +697,7 @@ entry:
 define i32 @func0000000000000017(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = add nsw i32 %0, -480
+  %3 = add nsw i32 %0, -48
   %4 = add nuw nsw i32 %3, %2
   ret i32 %4
 }

@@ -44,7 +44,7 @@ entry:
   ret i1 %4
 }
 
-; 61 occurrences:
+; 60 occurrences:
 ; abc/optimized/extraUtilMaj.c.ll
 ; abc/optimized/superGate.c.ll
 ; graphviz/optimized/graph_generator.c.ll
@@ -88,9 +88,7 @@ entry:
 ; rust-analyzer-rs/optimized/3enygpsog46rh747.ll
 ; rust-analyzer-rs/optimized/3g8gmheh3yshr0h0.ll
 ; rust-analyzer-rs/optimized/3ipaq4e4ganfbkbl.ll
-; rust-analyzer-rs/optimized/3nihs2yq970i3wpb.ll
 ; rust-analyzer-rs/optimized/3smo919kcf8ucrac.ll
-; rust-analyzer-rs/optimized/4bvw1e690behm5u2.ll
 ; rust-analyzer-rs/optimized/4bwxw2k86ri9mh4p.ll
 ; rust-analyzer-rs/optimized/4jc1phjh70qbnowc.ll
 ; rust-analyzer-rs/optimized/4n4kpy0miblxvsjy.ll
@@ -106,8 +104,9 @@ entry:
 ; rust-analyzer-rs/optimized/lt4f7k28xei9pok.ll
 ; rust-analyzer-rs/optimized/sa24v3l2255jmvb.ll
 ; yosys/optimized/maccmap.ll
+; zed-rs/optimized/1cwzjnrfv3j054rlb5kbvkj4j.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000c1(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = lshr i32 %2, %0
@@ -120,7 +119,7 @@ entry:
 ; qemu/optimized/hw_scsi_vmw_pvscsi.c.ll
 ; wolfssl/optimized/asn.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = lshr i32 %2, %0
@@ -134,18 +133,18 @@ entry:
 ; recastnavigation/optimized/Sample_TempObstacles.cpp.ll
 ; recastnavigation/optimized/Sample_TileMesh.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = lshr i32 %2, %0
-  %4 = icmp ugt i32 %3, 255
+  %4 = icmp samesign ugt i32 %3, 255
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; hyperscan/optimized/fdr_compile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 1
   %3 = lshr i32 %2, %0

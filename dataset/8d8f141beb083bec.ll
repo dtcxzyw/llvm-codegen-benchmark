@@ -308,13 +308,13 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f8(i64 %0, i64 %1) #0 {
+define i1 @func00000000000003f8(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 4294967248
   %3 = and i64 %2, 4294967294
   %4 = mul nuw nsw i64 %0, 10
   %5 = add nuw nsw i64 %3, %4
-  %6 = icmp ugt i64 %5, 2147483647
+  %6 = icmp samesign ugt i64 %5, 2147483647
   ret i1 %6
 }
 
@@ -632,13 +632,13 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f4(i64 %0, i64 %1) #0 {
+define i1 @func00000000000003f4(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 4294967248
   %3 = and i64 %2, 4294967294
   %4 = mul nuw nsw i64 %0, 10
   %5 = add nuw nsw i64 %3, %4
-  %6 = icmp ult i64 %5, 2147483648
+  %6 = icmp samesign ult i64 %5, 2147483648
   ret i1 %6
 }
 
@@ -647,7 +647,7 @@ entry:
 ; assimp/optimized/glTFImporter.cpp.ll
 ; opencc/optimized/Config.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003fc(i64 %0, i64 %1) #0 {
+define i1 @func00000000000007ec(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 4294967248
   %3 = and i64 %2, 4294967295
@@ -660,7 +660,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/json.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001fc(i64 %0, i64 %1) #0 {
+define i1 @func00000000000003ec(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 4294967248
   %3 = and i64 %2, 4294967295
@@ -673,7 +673,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/json.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000308(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 4294967248
   %3 = and i64 %2, 4294967294

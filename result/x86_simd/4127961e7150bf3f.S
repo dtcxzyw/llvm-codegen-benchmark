@@ -37,19 +37,9 @@ func0000000000000020:                   # @func0000000000000020
 	vpternlogd	$236, .LCPI3_1(%rip){1to8}, %ymm1, %ymm0 # ymm0 = (ymm0 & mem) | ymm1
 	retq
 .LCPI4_0:
-	.long	24577                           # 0x6001
-.LCPI4_1:
-	.long	2                               # 0x2
-func0000000000000021:                   # @func0000000000000021
-	vpcmpnleud	.LCPI4_0(%rip){1to8}, %ymm1, %k0
-	vpmovm2d	%k0, %ymm1
-	vpsrld	$31, %ymm1, %ymm1
-	vpternlogd	$236, .LCPI4_1(%rip){1to8}, %ymm1, %ymm0 # ymm0 = (ymm0 & mem) | ymm1
-	retq
-.LCPI5_0:
 	.long	1                               # 0x1
 func0000000000000030:                   # @func0000000000000030
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqd	%ymm2, %ymm1, %ymm1
-	vpternlogd	$162, .LCPI5_0(%rip){1to8}, %ymm1, %ymm0 # ymm0 = mem & (ymm0 | ~ymm1)
+	vpternlogd	$162, .LCPI4_0(%rip){1to8}, %ymm1, %ymm0 # ymm0 = mem & (ymm0 | ~ymm1)
 	retq

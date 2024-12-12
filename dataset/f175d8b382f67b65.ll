@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; fmt/optimized/enforce-checks-test.cc.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
@@ -14,15 +14,14 @@
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/af_inet.ll
 ; linux/optimized/af_inet6.ll
-; openjdk/optimized/hb-ot-shape-normalize.ll
 ; openjdk/optimized/hb-ot-shaper-hebrew.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, i32 %1) #0 {
+define i1 @func000000000000004c(i1 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = and i32 %2, 7168
   %4 = icmp ne i32 %3, 0
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

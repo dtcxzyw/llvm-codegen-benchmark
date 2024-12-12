@@ -1,5 +1,5 @@
 
-; 58 occurrences:
+; 61 occurrences:
 ; abc/optimized/bmcUnroll.c.ll
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; abseil-cpp/optimized/examples_test.cc.ll
@@ -7,6 +7,7 @@
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/rational.ll
 ; clamav/optimized/bytecode_vm.c.ll
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll
 ; glslang/optimized/Constant.cpp.ll
@@ -58,6 +59,8 @@
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wireshark/optimized/packet-tn3270.c.ll
 ; wolfssl/optimized/internal.c.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i16 %0, i16 %1) #0 {
 entry:

@@ -1,5 +1,5 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; linux/optimized/net-sysfs.ll
 ; openjdk/optimized/ad_x86.ll
 ; openjdk/optimized/assembler_x86.ll
@@ -7,11 +7,22 @@
 ; openjdk/optimized/foreignGlobals.ll
 ; openjdk/optimized/jvmciCodeInstaller_x86.ll
 ; openjdk/optimized/macroAssembler_x86.ll
-; openjdk/optimized/sharedRuntime_x86_64.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i32 %0) #0 {
 entry:
   %1 = icmp ult i32 %0, 32
+  %2 = select i1 %1, i32 %0, i32 -1
+  %3 = sext i32 %2 to i64
+  ret i64 %3
+}
+
+; 2 occurrences:
+; openjdk/optimized/macroAssembler_x86.ll
+; openjdk/optimized/sharedRuntime_x86_64.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i32 %0) #0 {
+entry:
+  %1 = icmp samesign ult i32 %0, 32
   %2 = select i1 %1, i32 %0, i32 -1
   %3 = sext i32 %2 to i64
   ret i64 %3

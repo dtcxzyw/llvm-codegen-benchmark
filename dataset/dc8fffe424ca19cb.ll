@@ -2,6 +2,7 @@
 ; 92 occurrences:
 ; abc/optimized/extraBddUnate.c.ll
 ; abc/optimized/giaLf.c.ll
+; boost/optimized/text_file_backend.ll
 ; clamav/optimized/server-th.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; git/optimized/mv.ll
@@ -82,7 +83,6 @@
 ; postgres/optimized/inv_api.ll
 ; postgres/optimized/md.ll
 ; qemu/optimized/hw_net_rtl8139.c.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
 ; qemu/optimized/target_riscv_translate.c.ll
 ; qemu/optimized/util_cpuinfo-i386.c.ll
 ; qemu/optimized/util_mmap-alloc.c.ll
@@ -98,11 +98,11 @@ entry:
   %2 = and i32 %1, 64
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 9, i32 64
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
-; 422 occurrences:
+; 421 occurrences:
 ; abc/optimized/resSim.c.ll
 ; cmake/optimized/linux-inotify.c.ll
 ; darktable/optimized/filtering.c.ll
@@ -208,12 +208,9 @@ entry:
 ; linux/optimized/g4x_dp.ll
 ; linux/optimized/g4x_hdmi.ll
 ; linux/optimized/hda_codec.ll
-; linux/optimized/hdac_regmap.ll
 ; linux/optimized/hid-debug.ll
-; linux/optimized/hub.ll
 ; linux/optimized/i915_gem_internal.ll
 ; linux/optimized/i9xx_plane.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_cursor.ll
 ; linux/optimized/intel_cx0_phy.ll
 ; linux/optimized/intel_dp_aux.ll
@@ -249,6 +246,7 @@ entry:
 ; llvm/optimized/COFFAsmParser.cpp.ll
 ; llvm/optimized/CodeGenFunction.cpp.ll
 ; llvm/optimized/CodeViewDebug.cpp.ll
+; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/LTO.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
@@ -525,13 +523,14 @@ entry:
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-synphasor.c.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 14680064
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 0, i32 1048576
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
@@ -541,12 +540,12 @@ entry:
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 12
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 16384, i32 0
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -555,10 +554,10 @@ entry:
 ; icu/optimized/collationfastlatin.ll
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000031(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
-  %3 = icmp ugt i32 %2, 6
+  %3 = icmp samesign ugt i32 %2, 6
   %4 = select i1 %3, i32 11, i32 8
   %5 = or disjoint i32 %4, %0
   ret i32 %5
@@ -567,12 +566,12 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/fundam.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000009(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000029(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 6
   %.not = icmp eq i32 %2, 6
   %3 = select i1 %.not, i32 6, i32 5
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 

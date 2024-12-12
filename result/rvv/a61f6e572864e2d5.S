@@ -22,7 +22,7 @@ func0000000000000005:                   # @func0000000000000005
 	ret
 func0000000000000000:                   # @func0000000000000000
 	vsetivli	zero, 8, e8, mf2, ta, ma
-	vadd.vv	v8, v8, v8
+	vsll.vi	v8, v8, 5
 	li	a0, -128
 	vand.vx	v10, v8, a0
 	vsetvli	zero, zero, e32, m2, ta, ma

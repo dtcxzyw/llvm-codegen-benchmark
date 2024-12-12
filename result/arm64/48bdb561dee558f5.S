@@ -1,159 +1,104 @@
-func0000000000000a31:                   // @func0000000000000a31
+func0000000000001461:                   // @func0000000000001461
 // %bb.0:                               // %entry
-	cmgt	v3.4s, v3.4s, #0
-	sub	v2.4s, v2.4s, v3.4s
-	ushll	v3.2d, v2.2s, #0
-	ushll2	v2.2d, v2.4s, #0
-	cmeq	v1.2d, v2.2d, v1.2d
-	cmeq	v0.2d, v3.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	cmp	w2, #0
+	cinc	w8, w1, gt
+	cmp	x0, x8
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000a11:                   // @func0000000000000a11
+func0000000000001421:                   // @func0000000000001421
 // %bb.0:                               // %entry
-	cmgt	v3.4s, v3.4s, #0
-	sub	v2.4s, v2.4s, v3.4s
-	ushll	v3.2d, v2.2s, #0
-	ushll2	v2.2d, v2.4s, #0
-	cmeq	v1.2d, v2.2d, v1.2d
-	cmeq	v0.2d, v3.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	cmp	w2, #0
+	cinc	w8, w1, gt
+	cmp	x0, x8
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000c31:                   // @func0000000000000c31
+func0000000000001861:                   // @func0000000000001861
 // %bb.0:                               // %entry
-	cmtst	v3.4s, v3.4s, v3.4s
-	sub	v2.4s, v2.4s, v3.4s
-	ushll	v3.2d, v2.2s, #0
-	ushll2	v2.2d, v2.4s, #0
-	cmeq	v1.2d, v2.2d, v1.2d
-	cmeq	v0.2d, v3.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	cmp	w2, #0
+	cinc	w8, w1, ne
+	cmp	x0, x8
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000c71:                   // @func0000000000000c71
+func00000000000018e1:                   // @func00000000000018e1
 // %bb.0:                               // %entry
-	cmtst	v3.4s, v3.4s, v3.4s
-	sub	v2.4s, v2.4s, v3.4s
-	ushll	v3.2d, v2.2s, #0
-	ushll2	v2.2d, v2.4s, #0
-	cmeq	v1.2d, v2.2d, v1.2d
-	cmeq	v0.2d, v3.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	cmp	w2, #0
+	cinc	w8, w1, ne
+	cmp	x0, x8
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000c21:                   // @func0000000000000c21
+func0000000000001841:                   // @func0000000000001841
 // %bb.0:                               // %entry
-	cmtst	v3.4s, v3.4s, v3.4s
-	sub	v2.4s, v2.4s, v3.4s
-	ushll	v3.2d, v2.2s, #0
-	ushll2	v2.2d, v2.4s, #0
-	cmeq	v1.2d, v2.2d, v1.2d
-	cmeq	v0.2d, v3.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	cmp	w2, #0
+	cinc	w8, w1, ne
+	cmp	x0, x8
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000471:                   // @func0000000000000471
+func00000000000008e1:                   // @func00000000000008e1
 // %bb.0:                               // %entry
-	movi	v4.4s, #5
-	cmhi	v3.4s, v4.4s, v3.4s
-	sub	v2.4s, v2.4s, v3.4s
-	ushll	v3.2d, v2.2s, #0
-	ushll2	v2.2d, v2.4s, #0
-	cmeq	v1.2d, v2.2d, v1.2d
-	cmeq	v0.2d, v3.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	cmp	w2, #5
+	cinc	w8, w1, lo
+	cmp	x0, x8
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000431:                   // @func0000000000000431
+func0000000000000861:                   // @func0000000000000861
 // %bb.0:                               // %entry
-	movi	v4.4s, #6
-	cmhi	v3.4s, v4.4s, v3.4s
-	sub	v2.4s, v2.4s, v3.4s
-	ushll	v3.2d, v2.2s, #0
-	ushll2	v2.2d, v2.4s, #0
-	cmeq	v1.2d, v2.2d, v1.2d
-	cmeq	v0.2d, v3.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	cmp	w2, #6
+	cinc	w8, w1, lo
+	cmp	x0, x8
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000171:                   // @func0000000000000171
+func00000000000002e1:                   // @func00000000000002e1
 // %bb.0:                               // %entry
-	cmeq	v3.4s, v3.4s, #0
-	sub	v2.4s, v2.4s, v3.4s
-	ushll	v3.2d, v2.2s, #0
-	ushll2	v2.2d, v2.4s, #0
-	cmeq	v1.2d, v2.2d, v1.2d
-	cmeq	v0.2d, v3.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	cmp	w2, #0
+	cinc	w8, w1, eq
+	cmp	x0, x8
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000871:                   // @func0000000000000871
+func00000000000018f4:                   // @func00000000000018f4
 // %bb.0:                               // %entry
-	movi	v4.4s, #1
-	cmhi	v3.4s, v3.4s, v4.4s
-	sub	v2.4s, v2.4s, v3.4s
-	ushll	v3.2d, v2.2s, #0
-	ushll2	v2.2d, v2.4s, #0
-	cmeq	v1.2d, v2.2d, v1.2d
-	cmeq	v0.2d, v3.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	cmp	w2, #0
+	cinc	w8, w1, ne
+	cmp	x0, x8
+	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000c74:                   // @func0000000000000c74
+func0000000000001814:                   // @func0000000000001814
 // %bb.0:                               // %entry
-	cmtst	v3.4s, v3.4s, v3.4s
-	sub	v2.4s, v2.4s, v3.4s
-	ushll	v3.2d, v2.2s, #0
-	ushll2	v2.2d, v2.4s, #0
-	cmhi	v1.2d, v2.2d, v1.2d
-	cmhi	v0.2d, v3.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	cmp	w2, #0
+	cinc	w8, w1, ne
+	cmp	x0, x8
+	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000c04:                   // @func0000000000000c04
+func0000000000001804:                   // @func0000000000001804
 // %bb.0:                               // %entry
-	cmtst	v3.4s, v3.4s, v3.4s
-	sub	v2.4s, v2.4s, v3.4s
-	ushll	v3.2d, v2.2s, #0
-	ushll2	v2.2d, v2.4s, #0
-	cmhi	v1.2d, v2.2d, v1.2d
-	cmhi	v0.2d, v3.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	cmp	w2, #1
+	cinc	w8, w1, ne
+	cmp	x0, x8
+	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000101:                   // @func0000000000000101
+func0000000000000201:                   // @func0000000000000201
 // %bb.0:                               // %entry
-	cmeq	v3.4s, v3.4s, #0
-	sub	v2.4s, v2.4s, v3.4s
-	ushll	v3.2d, v2.2s, #0
-	ushll2	v2.2d, v2.4s, #0
-	cmeq	v1.2d, v2.2d, v1.2d
-	cmeq	v0.2d, v3.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	cmp	w2, #0
+	cinc	w8, w1, eq
+	cmp	x0, x8
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000131:                   // @func0000000000000131
+func0000000000000261:                   // @func0000000000000261
 // %bb.0:                               // %entry
-	cmeq	v3.4s, v3.4s, #0
-	sub	v2.4s, v2.4s, v3.4s
-	ushll	v3.2d, v2.2s, #0
-	ushll2	v2.2d, v2.4s, #0
-	cmeq	v1.2d, v2.2d, v1.2d
-	cmeq	v0.2d, v3.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	cmp	w2, #0
+	cinc	w8, w1, eq
+	cmp	x0, x8
+	cset	w0, eq
 	ret
                                         // -- End function

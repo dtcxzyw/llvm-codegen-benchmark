@@ -1,5 +1,5 @@
 
-; 59 occurrences:
+; 58 occurrences:
 ; abc/optimized/acecCo.c.ll
 ; abc/optimized/acecPolyn.c.ll
 ; abc/optimized/acecRe.c.ll
@@ -23,7 +23,6 @@
 ; linux/optimized/libahci.ll
 ; linux/optimized/libata-core.ll
 ; linux/optimized/tcp_output.ll
-; linux/optimized/vsmp_64.ll
 ; llvm/optimized/AArch64AsmPrinter.cpp.ll
 ; llvm/optimized/ARMWinEH.cpp.ll
 ; llvm/optimized/ExpandLargeFpConvert.cpp.ll
@@ -82,7 +81,7 @@ entry:
   ret i32 %3
 }
 
-; 103 occurrences:
+; 101 occurrences:
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/acbUtil.c.ll
 ; abc/optimized/acecCo.c.ll
@@ -126,13 +125,11 @@ entry:
 ; linux/optimized/xfrm_replay.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/CallingConvLower.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RegUsageInfoCollector.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLoweringCall.cpp.ll
 ; llvm/optimized/X86RegisterInfo.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; nuttx/optimized/sig_delset.c.ll
 ; openjdk/optimized/bcEscapeAnalyzer.ll
 ; openjdk/optimized/buildOopMap.ll
 ; openjdk/optimized/compile.ll
@@ -195,9 +192,8 @@ entry:
   ret i32 %3
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; clamav/optimized/rarvm.cpp.ll
-; linux/optimized/i915_irq.ll
 ; linux/optimized/i915_pmu.ll
 ; linux/optimized/pcmcia_resource.ll
 ; linux/optimized/uhci-hcd.ll

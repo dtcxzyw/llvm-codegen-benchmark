@@ -12,7 +12,7 @@ func0000000000000002:                   # @func0000000000000002
 	retq
 func0000000000000018:                   # @func0000000000000018
 	vcvtsi2sd	%esi, %xmm1, %xmm1
-	vucomisd	%xmm0, %xmm1
+	vucomisd	%xmm1, %xmm0
 	setnp	%cl
 	sete	%al
 	andb	%cl, %al

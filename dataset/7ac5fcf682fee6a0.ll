@@ -1,5 +1,5 @@
 
-; 34 occurrences:
+; 32 occurrences:
 ; bullet3/optimized/btDeformableBodySolver.ll
 ; bullet3/optimized/btDeformableMultiBodyDynamicsWorld.ll
 ; darktable/optimized/introspection_tonemap.cc.ll
@@ -27,8 +27,6 @@
 ; gromacs/optimized/pme_solve.cpp.ll
 ; gromacs/optimized/position_restraints.cpp.ll
 ; gromacs/optimized/pull_rotation.cpp.ll
-; gromacs/optimized/slatrd.cpp.ll
-; gromacs/optimized/ssytd2.cpp.ll
 ; gromacs/optimized/update.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
 ; openusd/optimized/dualQuatf.cpp.ll

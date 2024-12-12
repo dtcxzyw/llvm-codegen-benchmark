@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 22 occurrences:
 ; arrow/optimized/reader.cc.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; gromacs/optimized/mshift.cpp.ll
@@ -10,6 +10,7 @@
 ; llvm/optimized/SemaCUDA.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SemaRISCV.cpp.ll
+; nuttx/optimized/lib_strtold.c.ll
 ; openjdk/optimized/countbitsnode.ll
 ; openjdk/optimized/sharedRuntime_x86_64.ll
 ; openusd/optimized/cdef.c.ll
@@ -29,7 +30,7 @@ entry:
   ret i32 %2
 }
 
-; 42 occurrences:
+; 41 occurrences:
 ; clamav/optimized/pe.c.ll
 ; cpython/optimized/ast_unparse.ll
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -41,7 +42,6 @@ entry:
 ; icu/optimized/ucptrie.ll
 ; icu/optimized/utrie2.ll
 ; linux/optimized/linkstate.ll
-; linux/optimized/pse-pd.ll
 ; linux/optimized/rtnetlink.ll
 ; linux/optimized/rx.ll
 ; linux/optimized/tcp_ipv4.ll
@@ -106,16 +106,16 @@ entry:
 define i32 @func000000000000002b(i32 %0) #0 {
 entry:
   %1 = icmp sgt i32 %0, 2
-  %2 = select i1 %1, i32 2048, i32 1024
+  %2 = select i1 %1, i32 2879, i32 2863
   ret i32 %2
 }
 
 ; 1 occurrences:
 ; openjdk/optimized/c2_stubGenerator_x86_64_string.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0) #0 {
+define i32 @func0000000000000051(i32 %0) #0 {
 entry:
-  %1 = icmp ult i32 %0, 2
+  %1 = icmp samesign ult i32 %0, 2
   %2 = select i1 %1, i32 0, i32 2
   ret i32 %2
 }
@@ -123,9 +123,9 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/DiagnosticIDs.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000023(i32 %0) #0 {
+define i32 @func0000000000000063(i32 %0) #0 {
 entry:
-  %1 = icmp ugt i32 %0, 300
+  %1 = icmp samesign ugt i32 %0, 300
   %2 = select i1 %1, i32 482, i32 317
   ret i32 %2
 }
@@ -140,14 +140,23 @@ entry:
   ret i32 %1
 }
 
-; 2 occurrences:
-; openspiel/optimized/dou_dizhu_utils.cc.ll
+; 1 occurrences:
 ; wireshark/optimized/packet-rtcp.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000013(i32 %0) #0 {
 entry:
   %1 = icmp ult i32 %0, 192
   %2 = select i1 %1, i32 2, i32 3
+  ret i32 %2
+}
+
+; 1 occurrences:
+; openspiel/optimized/dou_dizhu_utils.cc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000053(i32 %0) #0 {
+entry:
+  %1 = icmp samesign ult i32 %0, 23104
+  %2 = select i1 %1, i32 6, i32 5
   ret i32 %2
 }
 

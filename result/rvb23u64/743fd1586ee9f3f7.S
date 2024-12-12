@@ -1,4 +1,4 @@
-func000000000000021a:                   # @func000000000000021a
+func000000000000042a:                   # @func000000000000042a
 	andi	a0, a0, 1
 	sext.w	a2, a1
 	sltiu	a2, a2, 10
@@ -9,7 +9,7 @@ func000000000000021a:                   # @func000000000000021a
 	slti	a0, a0, 2
 	xori	a0, a0, 1
 	ret
-func000000000000021c:                   # @func000000000000021c
+func000000000000042c:                   # @func000000000000042c
 	andi	a0, a0, 1
 	sext.w	a2, a1
 	sltiu	a2, a2, 10
@@ -20,7 +20,7 @@ func000000000000021c:                   # @func000000000000021c
 	addi	a0, a0, -1
 	snez	a0, a0
 	ret
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	andi	a0, a0, 1
 	sext.w	a2, a1
 	li	a3, 5

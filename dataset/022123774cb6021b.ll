@@ -1,26 +1,14 @@
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/text_file_backend.ll
 ; clamav/optimized/matcher-bm.c.ll
 ; Function Attrs: nounwind
 define i64 @func00000000000001ef(i8 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = mul nuw nsw i64 %2, 211
-  %4 = mul nuw nsw i64 %1, 37
-  %5 = add nuw nsw i64 %4, %3
-  %6 = zext i8 %0 to i64
-  %7 = add nuw nsw i64 %5, %6
-  ret i64 %7
-}
-
-; 1 occurrences:
-; wireshark/optimized/packet-mpeg-sect.c.ll
-; Function Attrs: nounwind
-define i64 @func00000000000001ff(i8 %0, i64 %1, i64 %2) #0 {
-entry:
   %3 = mul nuw nsw i64 %2, 3600
   %4 = mul nuw nsw i64 %1, 60
   %5 = add nuw nsw i64 %4, %3
-  %6 = zext nneg i8 %0 to i64
+  %6 = zext i8 %0 to i64
   %7 = add nuw nsw i64 %5, %6
   ret i64 %7
 }

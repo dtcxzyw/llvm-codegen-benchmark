@@ -7,20 +7,16 @@
 define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 4
-  %4 = icmp ult i32 %3, %1
+  %4 = icmp ugt i32 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
 
-; 112 occurrences:
-; abc/optimized/kitDsd.c.ll
+; 108 occurrences:
 ; abc/optimized/sbdCut.c.ll
 ; cmake/optimized/json_value.cpp.ll
-; llvm/optimized/Metadata.cpp.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
-; php/optimized/zend_persist.ll
-; php/optimized/zend_persist_calc.ll
-; qemu/optimized/hw_intc_sifive_plic.c.ll
+; ozz-animation/optimized/jsoncpp.cpp.ll
 ; z3/optimized/ackermannize_bv_tactic.cpp.ll
 ; z3/optimized/ackr_bound_probe.cpp.ll
 ; z3/optimized/add_bounds_tactic.cpp.ll
@@ -95,6 +91,7 @@ entry:
 ; z3/optimized/qfufbv_tactic.cpp.ll
 ; z3/optimized/quant_tactics.cpp.ll
 ; z3/optimized/quasi_macros_tactic.cpp.ll
+; z3/optimized/realclosure.cpp.ll
 ; z3/optimized/recover_01_tactic.cpp.ll
 ; z3/optimized/reduce_args_tactic.cpp.ll
 ; z3/optimized/sat_tactic.cpp.ll
@@ -120,16 +117,32 @@ entry:
 ; z3/optimized/tactic.cpp.ll
 ; z3/optimized/tactic_cmds.cpp.ll
 ; z3/optimized/tactical.cpp.ll
-; z3/optimized/tbv.cpp.ll
 ; z3/optimized/tseitin_cnf_tactic.cpp.ll
 ; z3/optimized/ufbv_rewriter_tactic.cpp.ll
 ; z3/optimized/ufbv_tactic.cpp.ll
 ; z3/optimized/unit_subsumption_tactic.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 24
-  %4 = icmp ugt i32 %3, %1
+  %4 = icmp samesign ult i32 %1, %3
+  %5 = select i1 %0, i1 %4, i1 false
+  ret i1 %5
+}
+
+; 7 occurrences:
+; abc/optimized/kitDsd.c.ll
+; llvm/optimized/Metadata.cpp.ll
+; php/optimized/zend_persist.ll
+; php/optimized/zend_persist_calc.ll
+; qemu/optimized/hw_intc_sifive_plic.c.ll
+; wireshark/optimized/packet-babel.c.ll
+; z3/optimized/tbv.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 3
+  %4 = icmp ult i32 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -142,7 +155,7 @@ entry:
 define i1 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 3
-  %4 = icmp eq i32 %3, %1
+  %4 = icmp eq i32 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -154,7 +167,29 @@ entry:
 define i1 @func000000000000000c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 8
-  %4 = icmp ne i32 %3, %1
+  %4 = icmp ne i32 %1, %3
+  %5 = select i1 %0, i1 %4, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
+; cvc5/optimized/theory_arith_private.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 2
+  %4 = icmp samesign ugt i32 %1, %3
+  %5 = select i1 %0, i1 %4, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
+; freetype/optimized/sfnt.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000019(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 1
+  %4 = icmp samesign uge i32 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }

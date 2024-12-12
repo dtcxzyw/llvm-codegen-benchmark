@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	beqz	a2, .LBB0_2
 	lui	a2, 26
 	addiw	a2, a2, 1024
@@ -12,7 +12,7 @@ func0000000000000011:                   # @func0000000000000011
 	mv	a0, a2
 .LBB0_4:                                # %entry
 	ret
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	srli	a2, a2, 32
 	beqz	a2, .LBB1_2
 	li	a2, 1
@@ -27,13 +27,13 @@ func0000000000000044:                   # @func0000000000000044
 	mv	a0, a2
 .LBB1_4:                                # %entry
 	ret
-func0000000000000066:                   # @func0000000000000066
+func00000000000000c6:                   # @func00000000000000c6
 	bltz	a1, .LBB2_2
 	srai	a2, a2, 63
 	ori	a0, a2, 1
 .LBB2_2:                                # %entry
 	ret
-func0000000000000088:                   # @func0000000000000088
+func0000000000000118:                   # @func0000000000000118
 	srli	a1, a1, 16
 	bnez	a1, .LBB3_2
 	srli	a2, a2, 32
@@ -41,7 +41,7 @@ func0000000000000088:                   # @func0000000000000088
 	slli	a0, a0, 5
 .LBB3_2:                                # %entry
 	ret
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	srli	a1, a1, 48
 	beqz	a1, .LBB4_2
 	li	a0, -1
@@ -50,4 +50,12 @@ func0000000000000084:                   # @func0000000000000084
 	sltu	a0, a0, a2
 	slli	a0, a0, 5
 .LBB4_2:                                # %entry
+	ret
+func0000000000000284:                   # @func0000000000000284
+	srli	a1, a1, 48
+	beqz	a1, .LBB5_2
+	srli	a2, a2, 32
+	seqz	a0, a2
+	slli	a0, a0, 5
+.LBB5_2:                                # %entry
 	ret

@@ -4,7 +4,7 @@ func0000000000000012:                   # @func0000000000000012
 	sltu	a1, a1, a2
 	and	a0, a0, a1
 	ret
-func00000000000000ac:                   # @func00000000000000ac
+func000000000000012c:                   # @func000000000000012c
 	sext.w	a1, a1
 	sext.w	a2, a2
 	slt	a1, a1, a2

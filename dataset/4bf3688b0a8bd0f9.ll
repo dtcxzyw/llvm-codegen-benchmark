@@ -1,12 +1,11 @@
 
-; 20 occurrences:
+; 19 occurrences:
 ; glslang/optimized/PpScanner.cpp.ll
 ; gromacs/optimized/colvar.cpp.ll
 ; gromacs/optimized/colvarcomp.cpp.ll
 ; gromacs/optimized/colvarcomp_coordnums.cpp.ll
 ; gromacs/optimized/colvarcomp_distances.cpp.ll
 ; gromacs/optimized/colvarcomp_protein.cpp.ll
-; gromacs/optimized/dlapy2.cpp.ll
 ; gromacs/optimized/dlasq4.cpp.ll
 ; icu/optimized/units_converter.ll
 ; libpng/optimized/png.c.ll

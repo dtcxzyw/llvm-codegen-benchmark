@@ -1,5 +1,5 @@
 
-; 311 occurrences:
+; 309 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/str_cat_test.cc.ll
 ; arrow/optimized/align_util.cc.ll
@@ -16,6 +16,7 @@
 ; assimp/optimized/MDLLoader.cpp.ll
 ; assimp/optimized/ValidateDataStructure.cpp.ll
 ; assimp/optimized/X3DXmlHelper.cpp.ll
+; boost/optimized/options_description.ll
 ; casadi/optimized/fmu2.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; casadi/optimized/mapsum.cpp.ll
@@ -178,9 +179,6 @@
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; pocketpy/optimized/vm.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
@@ -374,13 +372,13 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/fadvise.ll
+; linux/optimized/page-writeback.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i1 %0, i64 %1) #0 {
 entry:
-  %2 = add nsw i64 %1, -1
-  %3 = lshr i64 %2, 12
-  %4 = select i1 %0, i64 2251799813685247, i64 %3
+  %2 = add nsw i64 %1, 1024
+  %3 = lshr i64 %2, 2
+  %4 = select i1 %0, i64 512, i64 %3
   ret i64 %4
 }
 

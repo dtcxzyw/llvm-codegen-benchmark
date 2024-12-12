@@ -310,12 +310,12 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001f8(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = mul nuw nsw i64 %2, 10
-  %4 = add nuw nsw i64 %3, %0
-  %5 = icmp ugt i64 %4, 2147483647
+  %4 = add nuw nsw i64 %0, %3
+  %5 = icmp samesign ugt i64 %4, 2147483647
   ret i1 %5
 }
 
@@ -641,19 +641,19 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001f4(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = mul nuw nsw i64 %2, 10
-  %4 = add nuw nsw i64 %3, %0
-  %5 = icmp ult i64 %4, 2147483648
+  %4 = add nuw nsw i64 %0, %3
+  %5 = icmp samesign ult i64 %4, 2147483648
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; fmt/optimized/chrono-test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000158(i64 %0, i32 %1) #0 {
+define i1 @func00000000000002a8(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = mul nsw i64 %2, -100
@@ -665,7 +665,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000284(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw nsw i64 %2, 2
@@ -675,21 +675,9 @@ entry:
 }
 
 ; 1 occurrences:
-; luau/optimized/loslib.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000001d6(i64 %0, i32 %1) #0 {
-entry:
-  %2 = zext nneg i32 %1 to i64
-  %3 = mul nuw nsw i64 %2, 86400
-  %4 = add nsw i64 %3, %0
-  %5 = icmp slt i64 %4, 210866803200
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; linux/optimized/tty_ldsem.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000010a(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = mul nuw i64 %2, 4294967297
@@ -701,11 +689,11 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/tcp_output.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000146(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000286(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = mul nsw i64 %2, -1000
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = icmp slt i64 %4, 0
   ret i1 %5
 }
@@ -713,11 +701,11 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/i915_gem_execbuffer.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i64 %0, i32 %1) #0 {
+define i1 @func000000000000018a(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = mul nuw nsw i64 %2, 56
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = icmp sgt i64 %4, -1
   ret i1 %5
 }
@@ -725,19 +713,19 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/date.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f8(i64 %0, i32 %1) #0 {
+define i1 @func00000000000003f8(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = mul nuw nsw i64 %2, 1000000
   %4 = add nuw nsw i64 %3, %0
-  %5 = icmp ugt i64 %4, 86400000000
+  %5 = icmp samesign ugt i64 %4, 86400000000
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; postgres/optimized/date.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001ca(i64 %0, i32 %1) #0 {
+define i1 @func000000000000038a(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = mul nuw nsw i64 %2, 1000000
@@ -749,7 +737,7 @@ entry:
 ; 1 occurrences:
 ; miniaudio/optimized/unity.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000188(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = mul nuw nsw i64 %2, 112
@@ -764,7 +752,7 @@ entry:
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; eastl/optimized/EATest.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000015a(i64 %0, i32 %1) #0 {
+define i1 @func00000000000002aa(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = mul nsw i64 %2, -1000000000

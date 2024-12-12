@@ -66,7 +66,9 @@ entry:
   ret i1 %2
 }
 
-; 49 occurrences:
+; 51 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -117,23 +119,25 @@ entry:
 ; tinympc/optimized/tiny_api.cpp.ll
 ; velox/optimized/URLFunctions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0) #0 {
+define i1 @func0000000000000038(i64 %0) #0 {
 entry:
   %1 = mul nsw i64 %0, %0
-  %2 = icmp ugt i64 %1, 9223372036854675807
+  %2 = icmp samesign ugt i64 %1, 9223372036854675807
   ret i1 %2
 }
 
-; 4 occurrences:
+; 6 occurrences:
 ; faiss/optimized/VectorTransform.cpp.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0) #0 {
+define i1 @func0000000000000078(i64 %0) #0 {
 entry:
   %1 = mul nuw nsw i64 %0, %0
-  %2 = icmp ugt i64 %1, 16384
+  %2 = icmp samesign ugt i64 %1, 16384
   ret i1 %2
 }
 
@@ -231,17 +235,17 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_blurs.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0) #0 {
+define i1 @func0000000000000034(i64 %0) #0 {
 entry:
   %1 = mul nsw i64 %0, %0
-  %2 = icmp ult i64 %1, 32
+  %2 = icmp samesign ult i64 %1, 32
   ret i1 %2
 }
 
 ; 1 occurrences:
 ; faiss/optimized/VectorTransform.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0) #0 {
+define i1 @func0000000000000021(i64 %0) #0 {
 entry:
   %1 = mul nsw i64 %0, %0
   %2 = icmp eq i64 %1, 1

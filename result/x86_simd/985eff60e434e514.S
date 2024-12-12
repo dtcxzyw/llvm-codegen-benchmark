@@ -89,32 +89,9 @@ func0000000000000000:                   # @func0000000000000000
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000008:                   # @func0000000000000008
-	vpsubq	%ymm0, %ymm1, %ymm0
-	vpmovqb	%ymm0, %xmm0
-	vpaddb	.LCPI4_0(%rip), %xmm0, %xmm0
-	vzeroupper
-	retq
-.LCPI5_0:
-	.byte	23                              # 0x17
-	.byte	23                              # 0x17
-	.byte	23                              # 0x17
-	.byte	23                              # 0x17
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
 func0000000000000009:                   # @func0000000000000009
 	vpsubq	%ymm0, %ymm1, %ymm0
 	vpmovqb	%ymm0, %xmm0
-	vpaddb	.LCPI5_0(%rip), %xmm0, %xmm0
+	vpaddb	.LCPI4_0(%rip), %xmm0, %xmm0
 	vzeroupper
 	retq

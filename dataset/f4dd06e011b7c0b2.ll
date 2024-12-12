@@ -1,5 +1,6 @@
 
-; 345 occurrences:
+; 342 occurrences:
+; boost/optimized/topology.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/color-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -20,8 +21,6 @@
 ; folly/optimized/IPAddressV6.cpp.ll
 ; git/optimized/convert.ll
 ; hyperscan/optimized/gough.c.ll
-; hyperscan/optimized/mcclellan.c.ll
-; hyperscan/optimized/mcsheng.c.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
 ; lief/optimized/BinaryParser.cpp.ll
@@ -180,13 +179,10 @@
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -345,10 +341,11 @@
 ; vcpkg/optimized/vcpkgpaths.cpp.ll
 ; vcpkg/optimized/versiondeserializers.cpp.ll
 ; vcpkg/optimized/versions.cpp.ll
+; zed-rs/optimized/2i8hya6f2t9bndlbd6b6686oi.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000020(i64 %0, i64 %1, ptr %2) #0 {
+define i64 @func0000000000000030(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 8
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 8
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %0, %1
   %6 = add i64 %5, %4
@@ -363,6 +360,19 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 40
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %0, %1
+  %6 = add i64 %5, %4
+  ret i64 %6
+}
+
+; 2 occurrences:
+; hyperscan/optimized/mcclellan.c.ll
+; hyperscan/optimized/mcsheng.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000020(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -1
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %0, %1
   %6 = add i64 %5, %4

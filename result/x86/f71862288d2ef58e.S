@@ -38,6 +38,12 @@ func00000000000000c2:                   # @func00000000000000c2
 	vucomiss	%xmm1, %xmm0
 	seta	%al
 	retq
+func000000000000004a:                   # @func000000000000004a
+	vxorps	%xmm2, %xmm2, %xmm2
+	vmaxss	%xmm2, %xmm1, %xmm1
+	vucomiss	%xmm1, %xmm0
+	setae	%al
+	retq
 func000000000000004c:                   # @func000000000000004c
 	vxorps	%xmm2, %xmm2, %xmm2
 	vmaxss	%xmm2, %xmm1, %xmm1

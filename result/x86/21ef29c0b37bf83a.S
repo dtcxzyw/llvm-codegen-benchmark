@@ -11,10 +11,11 @@ func0000000000000001:                   # @func0000000000000001
 	movl	$159, %eax
 	cmovel	%ecx, %eax
 	retq
-func0000000000000014:                   # @func0000000000000014
-	addq	$-48, %rdi
+func0000000000000024:                   # @func0000000000000024
+	decq	%rdi
 	xorl	%eax, %eax
-	cmpq	$10, %rdi
-	setb	%al
-	leal	2(%rax,%rax), %eax
+	shrq	$32, %rdi
+	setne	%al
+	shll	$5, %eax
+	incl	%eax
 	retq

@@ -15,6 +15,6 @@ func000000000000000a:                   # @func000000000000000a
 	vmv.v.x	v10, a0
 	li	a0, 256
 	vmerge.vxm	v10, v10, a0, v0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	vmsgt.vi	v0, v8, -1
 	ret

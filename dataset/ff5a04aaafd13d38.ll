@@ -3,7 +3,7 @@
 ; jq/optimized/regcomp.ll
 ; oniguruma/optimized/regcomp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000016(ptr %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000017(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp eq ptr %1, null
   %4 = select i1 %3, ptr %0, ptr %1

@@ -8,7 +8,7 @@ entry:
   %3 = add nsw i32 %2, -2
   %4 = sub nsw i32 2, %2
   %5 = select i1 %1, i32 %4, i32 %3
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 

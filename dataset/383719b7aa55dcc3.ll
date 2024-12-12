@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; git/optimized/clone.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 0, i32 %2
   %4 = icmp eq i32 %0, -1
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/clone.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 0, i32 %2
   %4 = icmp eq i32 %0, -1
@@ -27,7 +27,7 @@ entry:
 ; opencv/optimized/matrix_transform.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func00000000000000c1(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 2147483647, i32 %2
   %4 = icmp slt i32 %0, 0
@@ -39,7 +39,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/matrix_transform.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func00000000000000ca(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 1, i32 %2
   %4 = icmp slt i32 %0, 0
@@ -51,7 +51,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/matrix_transform.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000066(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func00000000000000c6(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 1, i32 %2
   %4 = icmp slt i32 %0, 0

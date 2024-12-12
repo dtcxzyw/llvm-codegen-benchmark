@@ -1,27 +1,18 @@
-func0000000000000081:                   # @func0000000000000081
-	testb	$1, %dl
-	movl	$5, %eax
-	cmovel	%esi, %eax
-	cmpl	$5, %esi
-	cmovbl	%esi, %eax
-	cmpl	%edi, %eax
-	sete	%al
-	retq
-func0000000000000011:                   # @func0000000000000011
-	testb	$1, %dl
-	movl	$-2147483648, %eax              # imm = 0x80000000
-	cmovel	%esi, %eax
+func0000000000000021:                   # @func0000000000000021
 	testl	%esi, %esi
+	movl	$-2147483648, %eax              # imm = 0x80000000
 	cmovnel	%esi, %eax
-	cmpl	%edi, %eax
+	testb	$1, %dl
+	cmovel	%esi, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	testb	$1, %dl
 	movl	$2, %eax
 	cmovel	%esi, %eax
 	testl	%esi, %esi
 	cmovel	%esi, %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq

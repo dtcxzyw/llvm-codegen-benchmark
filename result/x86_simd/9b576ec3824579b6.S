@@ -8,7 +8,7 @@
 	.quad	2328                            # 0x918
 .LCPI0_4:
 	.quad	2312                            # 0x908
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpandd	.LCPI0_0(%rip){1to4}, %xmm0, %xmm0
 	vpaddd	.LCPI0_1(%rip){1to4}, %xmm0, %xmm0
 	vpcmpltud	.LCPI0_2(%rip){1to4}, %xmm0, %k1

@@ -1,29 +1,17 @@
 func000000000000000e:                   // @func000000000000000e
 // %bb.0:                               // %entry
-	shl	v0.4s, v0.4s, #3
-	movi	v1.2d, #0000000000000000
-	mov	x8, #2572                       // =0xa0c
-	movk	x8, #2570, lsl #16
-	movk	x8, #2570, lsl #32
-	ushll	v2.2d, v0.2s, #0
-	movk	x8, #2317, lsl #48
-	usubw2	v0.2d, v1.2d, v0.4s
-	dup	v3.2d, x8
-	neg	v2.2d, v2.2d
-	ushl	v1.2d, v3.2d, v0.2d
-	ushl	v0.2d, v3.2d, v2.2d
+	mov	x9, #2572                       // =0xa0c
+	lsl	w8, w0, #3
+	movk	x9, #2570, lsl #16
+	movk	x9, #2570, lsl #32
+	movk	x9, #2317, lsl #48
+	lsr	x0, x9, x8
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	shl	v0.4s, v0.4s, #2
-	movi	v1.2d, #0000000000000000
-	mov	x8, #576460752303423488         // =0x800000000000000
-	dup	v3.2d, x8
-	ushll	v2.2d, v0.2s, #0
-	usubw2	v0.2d, v1.2d, v0.4s
-	neg	v2.2d, v2.2d
-	ushl	v1.2d, v3.2d, v0.2d
-	ushl	v0.2d, v3.2d, v2.2d
+	lsl	w8, w0, #2
+	mov	x9, #576460752303423488         // =0x800000000000000
+	lsr	x0, x9, x8
 	ret
                                         // -- End function

@@ -38,7 +38,7 @@ func0000000000000006:                   # @func0000000000000006
 .LCPI3_0:
 	.quad	0x3fd3333333333333              # double 0.29999999999999999
 	.quad	0x3ff0000000000000              # double 1
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	sext.w	a0, a0
 	sltiu	a0, a0, 40
 	slli	a0, a0, 3
@@ -48,15 +48,27 @@ func0000000000000004:                   # @func0000000000000004
 	fld	fa0, 0(a0)
 	ret
 .LCPI4_0:
+	.quad	0x3fe0000000000000              # double 0.5
+func0000000000000004:                   # @func0000000000000004
+	sext.w	a0, a0
+	li	a1, 3
+	bltu	a0, a1, .LBB4_2
+	fmv.d.x	fa0, zero
+	ret
+.LBB4_2:
+	lui	a0, %hi(.LCPI4_0)
+	fld	fa0, %lo(.LCPI4_0)(a0)
+	ret
+.LCPI5_0:
 	.quad	0x3ff0000000000000              # double 1
 	.quad	0x3ee4f8b588e368f1              # double 1.0000000000000001E-5
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	sext.w	a0, a0
 	sltiu	a0, a0, 5
 	xori	a0, a0, 1
 	slli	a0, a0, 3
-	lui	a1, %hi(.LCPI4_0)
-	addi	a1, a1, %lo(.LCPI4_0)
+	lui	a1, %hi(.LCPI5_0)
+	addi	a1, a1, %lo(.LCPI5_0)
 	add	a0, a0, a1
 	fld	fa0, 0(a0)
 	ret

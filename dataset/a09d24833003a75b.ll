@@ -1,11 +1,12 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; abc/optimized/cecSolveG.c.ll
 ; abc/optimized/giaMuxes.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/sbdCore.c.ll
+; abc/optimized/sbdWin.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000181(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 536870911
   %4 = icmp ne i64 %3, 536870911
@@ -36,7 +37,7 @@ entry:
 ; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
 ; llvm/optimized/X86InstructionSelector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000018c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 536870911
   %4 = icmp ne i64 %3, 536870911
@@ -46,27 +47,28 @@ entry:
   ret i1 %7
 }
 
-; 1 occurrences:
-; spike/optimized/f128_classify.ll
+; 3 occurrences:
+; opencv/optimized/softfloat.cpp.ll
+; spike/optimized/f128_to_i32_r_minMag.ll
+; spike/optimized/f64_to_i32_r_minMag.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, 32767
-  %4 = icmp eq i64 %3, 32767
+  %3 = and i64 %2, 2047
+  %4 = icmp eq i64 %3, 1054
   %5 = icmp slt i64 %1, 0
   %6 = and i1 %5, %4
   %7 = select i1 %6, i1 %0, i1 false
   ret i1 %7
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; glslang/optimized/ParseHelper.cpp.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/swap_state.ll
 ; linux/optimized/task_mmu.ll
 ; llvm/optimized/MachineIRBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967296
   %4 = icmp eq i64 %3, 0
@@ -79,7 +81,7 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/persistent_memory_allocator.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 7
   %4 = icmp eq i64 %3, 0
@@ -93,7 +95,7 @@ entry:
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/RISCVBaseInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 31
   %4 = icmp eq i64 %3, 0

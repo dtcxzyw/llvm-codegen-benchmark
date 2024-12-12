@@ -9,16 +9,15 @@ entry:
   %3 = shl nuw nsw i32 %2, 1
   %4 = and i32 %3, 254
   %5 = select i1 %1, i32 %4, i32 0
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   ret i32 %6
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; cmake/optimized/url.c.ll
 ; curl/optimized/libcurl_la-url.ll
 ; folly/optimized/AsyncSocket.cpp.ll
 ; linux/optimized/aspm.ll
-; linux/optimized/attr.ll
 ; llvm/optimized/DXILResource.cpp.ll
 ; wasmedge/optimized/refInstr.cpp.ll
 ; wireshark/optimized/packet-radius.c.ll
@@ -28,7 +27,7 @@ entry:
   %3 = shl i32 %2, 23
   %4 = and i32 %3, 67108864
   %5 = select i1 %1, i32 %4, i32 0
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   ret i32 %6
 }
 
@@ -57,7 +56,7 @@ entry:
   %3 = shl nuw nsw i32 %2, 3
   %4 = and i32 %3, 128
   %5 = select i1 %1, i32 %4, i32 0
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   ret i32 %6
 }
 

@@ -13,7 +13,7 @@ func0000000000000004:                   # @func0000000000000004
 	vadd.vv	v10, v10, v12
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
-	vadd.vv	v8, v9, v8
+	vadd.vv	v8, v8, v9
 	ret
 .LCPI1_0:
 	.quad	1749024623285053783             # 0x1845c8a0ce512957
@@ -29,7 +29,7 @@ func0000000000000021:                   # @func0000000000000021
 	vadd.vv	v10, v10, v12
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
-	vadd.vv	v8, v9, v8
+	vadd.vv	v8, v8, v9
 	ret
 .LCPI2_0:
 	.quad	3667970486771497111             # 0x32e73fb956a1b897
@@ -46,7 +46,7 @@ func0000000000000025:                   # @func0000000000000025
 	vadd.vv	v10, v10, v12
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
-	vadd.vv	v8, v9, v8
+	vadd.vv	v8, v8, v9
 	ret
 func0000000000000024:                   # @func0000000000000024
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -56,7 +56,7 @@ func0000000000000024:                   # @func0000000000000024
 	vadd.vv	v10, v10, v12
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 1
-	vadd.vv	v8, v9, v8
+	vadd.vv	v8, v8, v9
 	ret
 func0000000000000000:                   # @func0000000000000000
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -70,7 +70,7 @@ func0000000000000000:                   # @func0000000000000000
 	vrsub.vi	v10, v10, 0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
-	vadd.vv	v8, v9, v8
+	vadd.vv	v8, v8, v9
 	ret
 .LCPI5_0:
 	.quad	3234497591006606311             # 0x2ce33e6c02ce33e7
@@ -86,5 +86,5 @@ func0000000000000020:                   # @func0000000000000020
 	vadd.vv	v10, v10, v12
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
-	vadd.vv	v8, v9, v8
+	vadd.vv	v8, v8, v9
 	ret

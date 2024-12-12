@@ -11,7 +11,7 @@ func0000000000000017:                   # @func0000000000000017
 	cmpl	$1, %edx
 	adcl	$0, %eax
 	retq
-func0000000000000043:                   # @func0000000000000043
+func0000000000000143:                   # @func0000000000000143
 	movl	%edi, %eax
 	orl	%esi, %eax
 	cmpl	$32768, %edx                    # imm = 0x8000

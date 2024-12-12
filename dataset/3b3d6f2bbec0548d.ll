@@ -1,5 +1,5 @@
 
-; 93 occurrences:
+; 91 occurrences:
 ; clamav/optimized/unpack.cpp.ll
 ; cpython/optimized/_datetimemodule.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
@@ -23,7 +23,6 @@
 ; linux/optimized/gro.ll
 ; linux/optimized/intel_bios.ll
 ; linux/optimized/intel_vrr.ll
-; linux/optimized/isadma.ll
 ; linux/optimized/ndisc.ll
 ; linux/optimized/pci.ll
 ; linux/optimized/route.ll
@@ -53,7 +52,6 @@
 ; wireshark/optimized/packet-alp.c.ll
 ; wireshark/optimized/packet-amqp.c.ll
 ; wireshark/optimized/packet-arp.c.ll
-; wireshark/optimized/packet-asterix.c.ll
 ; wireshark/optimized/packet-atalk.c.ll
 ; wireshark/optimized/packet-bgp.c.ll
 ; wireshark/optimized/packet-capwap.c.ll
@@ -102,14 +100,13 @@ entry:
   ret i32 %4
 }
 
-; 42 occurrences:
+; 41 occurrences:
 ; clamav/optimized/bytecode.c.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; hdf5/optimized/H5Dbtree2.c.ll
 ; hyperscan/optimized/sheng.c.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/rock.ll
-; linux/optimized/rsmisc.ll
 ; linux/optimized/tx.ll
 ; linux/optimized/vt.ll
 ; miniaudio/optimized/unity.c.ll
@@ -175,6 +172,7 @@ entry:
 ; linux/optimized/pci.ll
 ; linux/optimized/rsparser.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
+; lvgl/optimized/lv_canvas.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/func.cpp.ll
 ; oniguruma/optimized/utf16_be.ll
@@ -222,7 +220,6 @@ entry:
 ; php/optimized/decode.ll
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/raudio.c.ll
-; stockfish/optimized/position.ll
 ; wireshark/optimized/packet-isup.c.ll
 ; wireshark/optimized/packet-lbmc.c.ll
 ; wireshark/optimized/packet-rtmpt.c.ll
@@ -233,7 +230,7 @@ define i32 @func0000000000000005(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = add nsw i32 %2, -1
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -268,9 +265,10 @@ entry:
   ret i32 %4
 }
 
-; 333 occurrences:
+; 334 occurrences:
 ; abc/optimized/abcBlifMv.c.ll
 ; abseil-cpp/optimized/demangle.cc.ll
+; boost/optimized/thread.ll
 ; cmake/optimized/mprintf.c.ll
 ; cpython/optimized/dtoa.ll
 ; curl/optimized/libcurl_la-mprintf.ll
@@ -611,9 +609,8 @@ entry:
   ret i32 %4
 }
 
-; 90 occurrences:
+; 88 occurrences:
 ; brotli/optimized/backward_references.c.ll
-; clamav/optimized/adc.c.ll
 ; clamav/optimized/pdfdecode.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; freetype/optimized/cff.c.ll
@@ -653,7 +650,6 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; verilator/optimized/V3Hasher.cpp.ll
-; wireshark/optimized/packet-aastra-aasp.c.ll
 ; wireshark/optimized/packet-alcap.c.ll
 ; wireshark/optimized/packet-alljoyn.c.ll
 ; wireshark/optimized/packet-ansi_a.c.ll
@@ -777,7 +773,7 @@ define i32 @func0000000000000015(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = add nsw i32 %2, -32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -803,7 +799,7 @@ define i32 @func000000000000001c(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = add nuw nsw i32 %2, 188
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -814,7 +810,7 @@ define i32 @func000000000000001d(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = add nuw nsw i32 %2, 11
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 

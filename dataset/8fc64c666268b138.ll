@@ -1,6 +1,7 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; linux/optimized/r8169_main.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; qemu/optimized/tcg.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0, i32 %1) #0 {

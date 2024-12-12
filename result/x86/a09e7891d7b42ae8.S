@@ -1,4 +1,4 @@
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	xorl	%eax, %eax
 	testb	$1, %sil
 	cmoveq	%rdx, %rax
@@ -15,7 +15,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	$8388608, %rax                  # imm = 0x800000
 	setae	%al
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	testb	$1, %sil
 	movl	$4, %eax
 	cmoveq	%rdx, %rax
@@ -23,7 +23,7 @@ func0000000000000034:                   # @func0000000000000034
 	cmpq	$32768, %rax                    # imm = 0x8000
 	setb	%al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	testb	$1, %sil
 	movl	$4, %eax
 	cmoveq	%rdx, %rax
@@ -45,6 +45,14 @@ func0000000000000001:                   # @func0000000000000001
 	addq	%rdi, %rax
 	sete	%al
 	retq
+func0000000000000068:                   # @func0000000000000068
+	testb	$1, %sil
+	movl	$2, %eax
+	cmoveq	%rdx, %rax
+	addq	%rdi, %rax
+	cmpq	$24, %rax
+	setae	%al
+	retq
 func0000000000000004:                   # @func0000000000000004
 	xorl	%eax, %eax
 	testb	$1, %sil
@@ -53,19 +61,26 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	$65535, %rax                    # imm = 0xFFFF
 	setb	%al
 	retq
-func0000000000000006:                   # @func0000000000000006
+func0000000000000061:                   # @func0000000000000061
+	xorl	%eax, %eax
 	testb	$1, %sil
-	jne	.LBB7_1
-	movq	%rdx, %rax
-	addq	%rdi, %rax
+	cmoveq	%rdx, %rax
+	orq	%rdi, %rax
+	sete	%al
+	retq
+func0000000000000006:                   # @func0000000000000006
+	movq	%rdi, %rax
+	testb	$1, %sil
+	jne	.LBB9_1
+	addq	%rdx, %rax
 	shrq	$63, %rax
 	retq
-.LBB7_1:
-	movabsq	$9223372036854775807, %rax      # imm = 0x7FFFFFFFFFFFFFFF
-	addq	%rdi, %rax
+.LBB9_1:
+	movabsq	$9223372036854775807, %rdx      # imm = 0x7FFFFFFFFFFFFFFF
+	addq	%rdx, %rax
 	shrq	$63, %rax
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	xorl	%eax, %eax
 	testb	$1, %sil
 	cmoveq	%rdx, %rax
@@ -74,14 +89,7 @@ func0000000000000024:                   # @func0000000000000024
 	cmpq	%rcx, %rax
 	setb	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
-	xorl	%eax, %eax
-	testb	$1, %sil
-	cmoveq	%rdx, %rax
-	orq	%rdi, %rax
-	sete	%al
-	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	testb	$1, %sil
 	movl	$1, %eax
 	cmoveq	%rdx, %rax
@@ -96,14 +104,14 @@ func000000000000000c:                   # @func000000000000000c
 	addq	%rdi, %rax
 	setne	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	testb	$1, %sil
 	movq	$-48, %rax
 	cmoveq	%rdx, %rax
 	addq	%rdi, %rax
 	sete	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	testb	$1, %sil
 	movl	$11, %eax
 	cmoveq	%rdx, %rax

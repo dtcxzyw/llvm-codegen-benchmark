@@ -124,7 +124,7 @@ func000000000000000f:                   # @func000000000000000f
 	.byte	0                               # 0x0
 func0000000000000001:                   # @func0000000000000001
 	vpsrld	$5, %ymm2, %ymm2
-	vpaddd	%ymm1, %ymm2, %ymm1
+	vpaddd	%ymm2, %ymm1, %ymm1
 	vpternlogd	$248, .LCPI2_1(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
 	retq
 .LCPI3_0:
@@ -167,6 +167,6 @@ func0000000000000001:                   # @func0000000000000001
 	.byte	0                               # 0x0
 func0000000000000003:                   # @func0000000000000003
 	vpsrld	$1, %ymm2, %ymm2
-	vpaddd	%ymm1, %ymm2, %ymm1
+	vpaddd	%ymm2, %ymm1, %ymm1
 	vpternlogd	$248, .LCPI3_1(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
 	retq

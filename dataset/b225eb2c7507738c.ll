@@ -1,4 +1,17 @@
 
+; 2 occurrences:
+; ruby/optimized/sha1.ll
+; verilator/optimized/V3String.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl nuw nsw i32 %1, 3
+  %3 = and i32 %2, 24
+  %4 = xor i32 %3, 24
+  %5 = lshr i32 %0, %4
+  ret i32 %5
+}
+
 ; 4 occurrences:
 ; libpng/optimized/pngwutil.c.ll
 ; linux/optimized/drm_dp_mst_topology.ll

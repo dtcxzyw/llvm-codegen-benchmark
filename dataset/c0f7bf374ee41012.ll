@@ -1,11 +1,9 @@
 
-; 8 occurrences:
+; 6 occurrences:
 ; cpython/optimized/formatter_unicode.ll
 ; git/optimized/apply.ll
 ; libjpeg-turbo/optimized/tjexample.c.ll
-; opencv/optimized/box_filter.dispatch.cpp.ll
 ; opencv/optimized/imgwarp.cpp.ll
-; opencv/optimized/sumpixels.dispatch.cpp.ll
 ; ruby/optimized/date_strftime.ll
 ; ruby/optimized/strftime.ll
 ; Function Attrs: nounwind
@@ -93,17 +91,6 @@ define i32 @func0000000000000001(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 2097152, i32 1048576
   %3 = icmp eq i32 %0, 1048576
-  %4 = select i1 %3, i32 %2, i32 %0
-  ret i32 %4
-}
-
-; 1 occurrences:
-; quickjs/optimized/quickjs.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i1 %1) #0 {
-entry:
-  %2 = select i1 %1, i32 45, i32 120
-  %3 = icmp ugt i32 %0, 255
   %4 = select i1 %3, i32 %2, i32 %0
   ret i32 %4
 }

@@ -1,31 +1,31 @@
-func0000000000000038:                   # @func0000000000000038
-	imulq	$1000000, %rdi, %rcx            # imm = 0xF4240
-	movabsq	$9223372036854, %rax            # imm = 0x8637BD05AF6
-	cmpq	%rax, %rdi
-	movabsq	$9223372036854775807, %rax      # imm = 0x7FFFFFFFFFFFFFFF
-	cmovbeq	%rcx, %rax
-	retq
 func0000000000000001:                   # @func0000000000000001
 	imulq	$1000000000, %rdi, %rcx         # imm = 0x3B9ACA00
 	testq	%rdi, %rdi
 	movl	$3000000000, %eax               # imm = 0xB2D05E00
 	cmovneq	%rcx, %rax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	imulq	$1000000, %rdi, %rcx            # imm = 0xF4240
 	movabsq	$9223372036854, %rax            # imm = 0x8637BD05AF6
 	cmpq	%rax, %rdi
 	movabsq	$9223372036854775807, %rax      # imm = 0x7FFFFFFFFFFFFFFF
 	cmovleq	%rcx, %rax
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000068:                   # @func0000000000000068
+	imulq	$1000000, %rdi, %rcx            # imm = 0xF4240
+	movabsq	$100000000999, %rax             # imm = 0x174876EBE7
+	cmpq	%rax, %rdi
+	movabsq	$100000000000000000, %rax       # imm = 0x16345785D8A0000
+	cmovbeq	%rcx, %rax
+	retq
+func0000000000000061:                   # @func0000000000000061
 	leaq	(%rdi,%rdi), %rax
 	leaq	(%rax,%rax,2), %rcx
 	xorl	%eax, %eax
 	cmpq	$6, %rdi
 	cmovneq	%rcx, %rax
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	leaq	(,%rdi,4), %rax
 	leaq	(%rax,%rax,2), %rcx
 	movabsq	$1537228672809129301, %rax      # imm = 0x1555555555555555
@@ -49,7 +49,7 @@ func000000000000000a:                   # @func000000000000000a
 .LBB6_1:
 	movabsq	$9223372036854775807, %rax      # imm = 0x7FFFFFFFFFFFFFFF
 	retq
-func000000000000003a:                   # @func000000000000003a
+func000000000000006a:                   # @func000000000000006a
 	imulq	$1000, %rdi, %rcx               # imm = 0x3E8
 	movabsq	$9223372036854774, %rax         # imm = 0x20C49BA5E353F6
 	cmpq	%rax, %rdi

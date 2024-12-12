@@ -1,11 +1,11 @@
-func000000000000006a:                   # @func000000000000006a
+func00000000000000ca:                   # @func00000000000000ca
 	decb	%dil
 	movl	$1, %eax
 	shlxl	%edi, %eax, %eax
 	cmpl	$2049, %eax                     # imm = 0x801
 	setge	%al
 	retq
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	addb	$-6, %dil
 	movl	$2, %eax
 	shlxl	%edi, %eax, %eax

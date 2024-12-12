@@ -5,7 +5,7 @@
 define i64 @func000000000000003d(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 32
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = and i64 %4, 576460752303423487
   %6 = shl nuw i64 %0, 59
   %7 = or disjoint i64 %6, %5
@@ -45,7 +45,7 @@ define i64 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 58
   %.masked = and i64 %1, -288230376151711744
-  %4 = or i64 %3, %.masked
+  %4 = or i64 %.masked, %3
   %5 = shl nuw i64 %0, 1
   %6 = or i64 %4, %5
   ret i64 %6
@@ -57,7 +57,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 62
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = and i64 %4, 9223372036854775807
   %6 = shl i64 %0, 63
   %7 = or disjoint i64 %5, %6

@@ -15,20 +15,9 @@ func000000000000000c:                   # @func000000000000000c
 	cmovel	%ecx, %eax
 	retq
 func0000000000000004:                   # @func0000000000000004
-	movzwl	%si, %ecx
-	xorl	%edx, %edx
-	testb	$1, %dil
-	movl	$65279, %eax                    # imm = 0xFEFF
-	cmovel	%edx, %eax
-	cmpl	$65280, %ecx                    # imm = 0xFF00
-	cmovael	%edx, %eax
-	retq
-func0000000000000008:                   # @func0000000000000008
-	movzwl	%si, %ecx
-	xorl	%edx, %edx
-	testb	$1, %dil
-	movl	$768, %eax                      # imm = 0x300
-	cmovel	%edx, %eax
-	cmpl	$768, %ecx                      # imm = 0x300
-	cmovbl	%edx, %eax
+	leal	(%rdi,%rdi), %ecx
+	orl	$-4, %ecx
+	cmpw	$-2, %si
+	movl	$-4, %eax
+	cmovbl	%ecx, %eax
 	retq

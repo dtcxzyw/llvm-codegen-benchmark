@@ -1,9 +1,8 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; folly/optimized/IPAddressV6.cpp.ll
 ; linux/optimized/boot.ll
 ; linux/optimized/nls_base.ll
-; php/optimized/pcre2_maketables.ll
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i1 %0, i16 %1, i16 %2) #0 {
@@ -13,7 +12,7 @@ entry:
   ret i8 %4
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; assimp/optimized/BlenderScene.cpp.ll
 ; clamav/optimized/entconv.c.ll
 ; icu/optimized/bocsu.ll
@@ -23,7 +22,6 @@ entry:
 ; llvm/optimized/Attributes.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
-; qemu/optimized/hw_sd_ssi-sd.c.ll
 ; qemu/optimized/hw_vfio_pci.c.ll
 ; wireshark/optimized/vwr.c.ll
 ; Function Attrs: nounwind

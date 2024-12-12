@@ -10,6 +10,12 @@ func0000000000000005:                   # @func0000000000000005
 	cmoveq	%rsi, %rax
 	addq	$24, %rax
 	retq
+func000000000000000f:                   # @func000000000000000f
+	leaq	(%rdx,%rdx), %rax
+	testb	$1, %dil
+	cmoveq	%rsi, %rax
+	incq	%rax
+	retq
 func000000000000000d:                   # @func000000000000000d
 	leaq	(%rdx,%rdx), %rax
 	testb	$1, %dil

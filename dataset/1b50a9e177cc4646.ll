@@ -1,5 +1,6 @@
 
-; 10 occurrences:
+; 11 occurrences:
+; gromacs/optimized/tng_io.c.ll
 ; libquic/optimized/div.c.ll
 ; linux/optimized/drm_buddy.ll
 ; openexr/optimized/parse_header.c.ll
@@ -44,7 +45,8 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; gromacs/optimized/tng_io.c.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
@@ -72,7 +74,7 @@ entry:
 define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %1, %2
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   ret i64 %4
 }
 

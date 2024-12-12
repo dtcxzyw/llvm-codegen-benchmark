@@ -1,4 +1,4 @@
-func00000000000001ca:                   # @func00000000000001ca
+func000000000000038a:                   # @func000000000000038a
 	movl	$64, %eax
 	subl	%esi, %eax
 	subq	%rax, %rdi

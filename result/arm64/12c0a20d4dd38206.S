@@ -1,108 +1,57 @@
 func000000000000003f:                   // @func000000000000003f
 // %bb.0:                               // %entry
-	ushll2	v3.2d, v2.4s, #4
-	ushll	v2.2d, v2.2s, #4
-	mov	w8, #352                        // =0x160
-	add	v0.2d, v2.2d, v0.2d
-	add	v1.2d, v3.2d, v1.2d
-	dup	v2.2d, x8
-	add	v1.2d, v1.2d, v2.2d
-	add	v0.2d, v0.2d, v2.2d
+	add	x8, x0, w1, uxtw #4
+	add	x0, x8, #352
 	ret
                                         // -- End function
 func000000000000003c:                   // @func000000000000003c
 // %bb.0:                               // %entry
-	ushll2	v3.2d, v2.4s, #3
-	ushll	v2.2d, v2.2s, #3
-	mov	w8, #16                         // =0x10
-	add	v0.2d, v2.2d, v0.2d
-	add	v1.2d, v3.2d, v1.2d
-	dup	v2.2d, x8
-	add	v1.2d, v1.2d, v2.2d
-	add	v0.2d, v0.2d, v2.2d
+	add	x8, x0, w1, uxtw #3
+	add	x0, x8, #16
 	ret
                                         // -- End function
 func0000000000000034:                   // @func0000000000000034
 // %bb.0:                               // %entry
-	ushll2	v3.2d, v2.4s, #3
-	ushll	v2.2d, v2.2s, #3
-	movi	v4.2d, #0xffffffffffffffff
-	add	v0.2d, v2.2d, v0.2d
-	add	v1.2d, v3.2d, v1.2d
-	add	v1.2d, v1.2d, v4.2d
-	add	v0.2d, v0.2d, v4.2d
+	add	x8, x0, w1, uxtw #3
+	sub	x0, x8, #1
 	ret
                                         // -- End function
 func0000000000000077:                   // @func0000000000000077
 // %bb.0:                               // %entry
-	ushll2	v3.2d, v2.4s, #10
-	ushll	v2.2d, v2.2s, #10
-	mov	x8, #-56320                     // =0xffffffffffff2400
-	movk	x8, #64672, lsl #16
-	add	v0.2d, v2.2d, v0.2d
-	add	v1.2d, v3.2d, v1.2d
-	dup	v2.2d, x8
-	add	v1.2d, v1.2d, v2.2d
-	add	v0.2d, v0.2d, v2.2d
+	mov	w8, w1
+	mov	x9, #-56320                     // =0xffffffffffff2400
+	add	x8, x0, x8, lsl #10
+	movk	x9, #64672, lsl #16
+	add	x0, x8, x9
 	ret
                                         // -- End function
 func000000000000003d:                   // @func000000000000003d
 // %bb.0:                               // %entry
-	ushll2	v3.2d, v2.4s, #2
-	ushll	v2.2d, v2.2s, #2
-	mov	w8, #8                          // =0x8
-	add	v0.2d, v2.2d, v0.2d
-	add	v1.2d, v3.2d, v1.2d
-	dup	v2.2d, x8
-	add	v1.2d, v1.2d, v2.2d
-	add	v0.2d, v0.2d, v2.2d
+	add	x8, x0, w1, uxtw #2
+	add	x0, x8, #8
 	ret
                                         // -- End function
 func0000000000000037:                   // @func0000000000000037
 // %bb.0:                               // %entry
-	ushll2	v3.2d, v2.4s, #1
-	ushll	v2.2d, v2.2s, #1
-	mov	x8, #-2                         // =0xfffffffffffffffe
-	add	v0.2d, v2.2d, v0.2d
-	add	v1.2d, v3.2d, v1.2d
-	dup	v2.2d, x8
-	add	v1.2d, v1.2d, v2.2d
-	add	v0.2d, v0.2d, v2.2d
+	add	x8, x0, w1, uxtw #1
+	sub	x0, x8, #2
 	ret
                                         // -- End function
 func0000000000000035:                   // @func0000000000000035
 // %bb.0:                               // %entry
-	ushll2	v3.2d, v2.4s, #1
-	ushll	v2.2d, v2.2s, #1
-	mov	x8, #-2                         // =0xfffffffffffffffe
-	add	v0.2d, v2.2d, v0.2d
-	add	v1.2d, v3.2d, v1.2d
-	dup	v2.2d, x8
-	add	v1.2d, v1.2d, v2.2d
-	add	v0.2d, v0.2d, v2.2d
+	add	x8, x0, w1, uxtw #1
+	sub	x0, x8, #2
 	ret
                                         // -- End function
 func000000000000007f:                   // @func000000000000007f
 // %bb.0:                               // %entry
-	ushll2	v3.2d, v2.4s, #3
-	ushll	v2.2d, v2.2s, #3
-	mov	w8, #64                         // =0x40
-	add	v0.2d, v2.2d, v0.2d
-	add	v1.2d, v3.2d, v1.2d
-	dup	v2.2d, x8
-	add	v1.2d, v1.2d, v2.2d
-	add	v0.2d, v0.2d, v2.2d
+	add	x8, x0, w1, uxtw #3
+	add	x0, x8, #64
 	ret
                                         // -- End function
 func000000000000007c:                   // @func000000000000007c
 // %bb.0:                               // %entry
-	ushll2	v3.2d, v2.4s, #2
-	ushll	v2.2d, v2.2s, #2
-	mov	w8, #416                        // =0x1a0
-	add	v0.2d, v2.2d, v0.2d
-	add	v1.2d, v3.2d, v1.2d
-	dup	v2.2d, x8
-	add	v1.2d, v1.2d, v2.2d
-	add	v0.2d, v0.2d, v2.2d
+	add	x8, x0, w1, uxtw #2
+	add	x0, x8, #416
 	ret
                                         // -- End function

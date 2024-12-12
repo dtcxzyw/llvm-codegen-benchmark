@@ -47,11 +47,10 @@ entry:
   ret i32 %6
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; abc/optimized/giaNf.c.ll
 ; abc/optimized/giaPf.c.ll
 ; lief/optimized/Builder.cpp.ll
-; linux/optimized/hda_codec.ll
 ; llvm/optimized/ExprCXX.cpp.ll
 ; ozz-animation/optimized/animation_builder.cc.ll
 ; yosys/optimized/SimpSolver.ll
@@ -61,14 +60,13 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 0, i32 67108864
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = shl i32 %1, 27
   %6 = or disjoint i32 %4, %5
   ret i32 %6
 }
 
-; 6 occurrences:
-; linux/optimized/dw.ll
+; 5 occurrences:
 ; llvm/optimized/AArch64MachObjectWriter.cpp.ll
 ; llvm/optimized/RISCVBaseInfo.cpp.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
@@ -78,7 +76,7 @@ entry:
 define i32 @func000000000000000e(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 128, i32 0
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = shl nuw nsw i32 %1, 5
   %6 = or i32 %4, %5
   ret i32 %6
@@ -102,7 +100,7 @@ entry:
 define i32 @func000000000000000a(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 -2147483648, i32 0
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = shl nuw i32 %1, 24
   %6 = or i32 %4, %5
   ret i32 %6

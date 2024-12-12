@@ -23,7 +23,7 @@ entry:
   %3 = lshr i16 %2, 7
   %4 = trunc i16 %3 to i8
   %5 = and i8 %4, 4
-  %6 = or disjoint i8 %5, %1
+  %6 = or disjoint i8 %1, %5
   %7 = or disjoint i8 %6, %0
   ret i8 %7
 }
@@ -37,7 +37,7 @@ entry:
   %3 = trunc i16 %2 to i8
   %4 = lshr i8 %3, 5
   %5 = and i8 %4, 3
-  %6 = or disjoint i8 %5, %1
+  %6 = or disjoint i8 %1, %5
   %7 = or i8 %6, %0
   ret i8 %7
 }
@@ -50,7 +50,7 @@ entry:
   %3 = lshr i16 %2, 5
   %4 = trunc i16 %3 to i8
   %5 = and i8 %4, 27
-  %6 = or i8 %5, %1
+  %6 = or i8 %1, %5
   %7 = or i8 %6, %0
   ret i8 %7
 }

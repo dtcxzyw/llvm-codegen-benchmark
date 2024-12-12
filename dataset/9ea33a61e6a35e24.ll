@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; soc-simulator/optimized/verilated.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000056c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000014cc(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = icmp slt i32 %3, %0
@@ -15,7 +15,7 @@ entry:
 ; clamav/optimized/mew.c.ll
 ; wireshark/optimized/packet-ncp-nmas.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000008c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = icmp ult i32 %3, %0
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/cmdline.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000046c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000010cc(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = icmp slt i32 %3, %0
@@ -40,7 +40,7 @@ entry:
 ; icu/optimized/wrtxml.ll
 ; zxing/optimized/PDFDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000564(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000014c4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = icmp slt i32 %3, %0

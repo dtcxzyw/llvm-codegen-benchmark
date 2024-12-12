@@ -4,7 +4,7 @@
 ; icu/optimized/uconv.ll
 ; nuttx/optimized/lib_hexdumpstream.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000074(i8 %0, i32 %1) #0 {
+define i8 @func00000000000000e4(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i8
   %3 = icmp ult i8 %2, -96
@@ -17,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/hw_net_igb_core.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000014(i8 %0, i32 %1) #0 {
+define i8 @func0000000000000024(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 248
   %3 = icmp eq i32 %2, 0

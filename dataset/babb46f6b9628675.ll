@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 26 occurrences:
 ; ocio/optimized/CPUProcessor.cpp.ll
 ; ocio/optimized/CTFTransform.cpp.ll
 ; ocio/optimized/Lut1DOpCPU.cpp.ll
@@ -19,7 +19,6 @@
 ; openusd/optimized/openexr-c.c.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -31,19 +30,33 @@
 define i16 @func000000000000000d(i16 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = trunc nuw nsw i32 %2 to i16
-  %4 = or i16 %3, %1
+  %4 = or i16 %1, %3
   %5 = or disjoint i16 %4, %0
   ret i16 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; clamav/optimized/autoit.c.ll
 ; duckdb/optimized/ub_duckdb_common_serializer.cpp.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i16 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = trunc i32 %2 to i16
-  %4 = or i16 %3, %1
+  %4 = or i16 %1, %3
   %5 = or i16 %4, %0
+  ret i16 %5
+}
+
+; 3 occurrences:
+; linux/optimized/r8169_main.ll
+; llvm/optimized/ModuleSummaryAnalysis.cpp.ll
+; lvgl/optimized/lv_spinbox.ll
+; Function Attrs: nounwind
+define i16 @func000000000000000f(i16 %0, i16 %1, i32 %2) #0 {
+entry:
+  %3 = trunc nuw nsw i32 %2 to i16
+  %4 = or disjoint i16 %1, %3
+  %5 = or disjoint i16 %4, %0
   ret i16 %5
 }
 
@@ -53,8 +66,8 @@ entry:
 define i16 @func0000000000000008(i16 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = trunc nuw i32 %2 to i16
-  %4 = or i16 %3, %1
-  %5 = or i16 %4, %0
+  %4 = or i16 %1, %3
+  %5 = or i16 %0, %4
   ret i16 %5
 }
 

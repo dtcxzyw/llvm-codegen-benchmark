@@ -1,7 +1,6 @@
 
-; 35 occurrences:
+; 34 occurrences:
 ; linux/optimized/intel_dp_mst.ll
-; linux/optimized/io_pgtable_v2.ll
 ; llvm/optimized/CombinerHelper.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/RISCVCallLowering.cpp.ll
@@ -39,12 +38,13 @@
 define i64 @func0000000000000003(i64 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 2, i64 0
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = or disjoint i64 %3, 1
   ret i64 %4
 }
 
-; 14 occurrences:
+; 15 occurrences:
+; abseil-cpp/optimized/mutex.cc.ll
 ; fmt/optimized/args-test.cc.ll
 ; freetype/optimized/pfr.c.ll
 ; freetype/optimized/type1cid.c.ll
@@ -63,7 +63,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 30276, i64 26180
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = or i64 %3, 32
   ret i64 %4
 }
@@ -93,7 +93,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 536870912, i64 34896609280
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = or disjoint i64 %3, 4947802324992
   ret i64 %4
 }

@@ -29,7 +29,7 @@ entry:
 ; redis/optimized/ziplist.ll
 ; velox/optimized/LzoDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000144(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw i8, ptr %0, i64 %3
@@ -104,7 +104,7 @@ entry:
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000148(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw float, ptr %0, i64 %3
@@ -113,24 +113,19 @@ entry:
   ret i1 %6
 }
 
-; 103 occurrences:
-; ceres/optimized/compressed_row_sparse_matrix.cc.ll
+; 90 occurrences:
 ; clamav/optimized/regcomp.c.ll
 ; hermes/optimized/regcomp.c.ll
 ; icu/optimized/ustring.ll
-; imgui/optimized/imgui.cpp.ll
-; imgui/optimized/imgui_tables.cpp.ll
 ; llvm/optimized/StackSlotColoring.cpp.ll
 ; llvm/optimized/regcomp.c.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; meshlab/optimized/GLLogStream.cpp.ll
 ; meshlab/optimized/action_searcher.cpp.ll
-; meshlab/optimized/additionalgui.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/decorate_base.cpp.ll
-; meshlab/optimized/decorate_raster_proj.cpp.ll
 ; meshlab/optimized/edit_mutualcorrs.cpp.ll
 ; meshlab/optimized/edit_mutualcorrsDialog.cpp.ll
 ; meshlab/optimized/edit_referencing.cpp.ll
@@ -177,7 +172,6 @@ entry:
 ; meshlab/optimized/io_u3d.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
 ; meshlab/optimized/layerDialog.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/load_save.cpp.ll
 ; meshlab/optimized/mainwindow_Init.cpp.ll
 ; meshlab/optimized/mainwindow_RunTime.cpp.ll
@@ -187,11 +181,8 @@ entry:
 ; meshlab/optimized/meshmethods.cpp.ll
 ; meshlab/optimized/meshrender.cpp.ll
 ; meshlab/optimized/meshselect.cpp.ll
-; meshlab/optimized/ml_render_gui.cpp.ll
-; meshlab/optimized/ml_rendering_actions.cpp.ll
 ; meshlab/optimized/mlapplication.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
-; meshlab/optimized/multiViewer_Container.cpp.ll
 ; meshlab/optimized/mytrenderer.cpp.ll
 ; meshlab/optimized/options_dialog.cpp.ll
 ; meshlab/optimized/pickpointsDialog.cpp.ll
@@ -199,8 +190,6 @@ entry:
 ; meshlab/optimized/plugin_manager.cpp.ll
 ; meshlab/optimized/python_utils.cpp.ll
 ; meshlab/optimized/qualitymapperdialog.cpp.ll
-; meshlab/optimized/radianceScalingRenderer.cpp.ll
-; meshlab/optimized/render_raster.cpp.ll
 ; meshlab/optimized/rich_enum.cpp.ll
 ; meshlab/optimized/rich_file_open.cpp.ll
 ; meshlab/optimized/rich_parameter.cpp.ll
@@ -208,17 +197,15 @@ entry:
 ; meshlab/optimized/save_snapshot_dialog.cpp.ll
 ; meshlab/optimized/shaderDialog.cpp.ll
 ; meshlab/optimized/transferfunction.cpp.ll
-; openblas/optimized/dlaswp_ncopy.c.ll
 ; ozz-animation/optimized/animation_builder.cc.ll
 ; php/optimized/ir_patch.ll
-; sentencepiece/optimized/repeated_field.cc.ll
 ; tev/optimized/Ipc.cpp.ll
 ; zxing/optimized/ODCodabarReader.cpp.ll
 ; zxing/optimized/ODCode39Reader.cpp.ll
 ; zxing/optimized/ODDXFilmEdgeReader.cpp.ll
 ; zxing/optimized/ODITFReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000141(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw i8, ptr %0, i64 %3
@@ -243,12 +230,43 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/lz4.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000048(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %1, i64 -11
   %6 = icmp ugt ptr %4, %5
+  ret i1 %6
+}
+
+; 20 occurrences:
+; ceres/optimized/compressed_row_sparse_matrix.cc.ll
+; imgui/optimized/imgui.cpp.ll
+; imgui/optimized/imgui_tables.cpp.ll
+; meshlab/optimized/additionalgui.cpp.ll
+; meshlab/optimized/decorate_raster_proj.cpp.ll
+; meshlab/optimized/edit_mutualcorrs.cpp.ll
+; meshlab/optimized/filter_mutualinfo.cpp.ll
+; meshlab/optimized/filter_voronoi.cpp.ll
+; meshlab/optimized/glarea.cpp.ll
+; meshlab/optimized/layerDialog.cpp.ll
+; meshlab/optimized/mainwindow_RunTime.cpp.ll
+; meshlab/optimized/meshrender.cpp.ll
+; meshlab/optimized/ml_render_gui.cpp.ll
+; meshlab/optimized/ml_rendering_actions.cpp.ll
+; meshlab/optimized/multiViewer_Container.cpp.ll
+; meshlab/optimized/qualitymapperdialog.cpp.ll
+; meshlab/optimized/radianceScalingRenderer.cpp.ll
+; meshlab/optimized/render_raster.cpp.ll
+; openblas/optimized/dlaswp_ncopy.c.ll
+; sentencepiece/optimized/repeated_field.cc.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001c1(ptr %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 1
+  %6 = icmp eq ptr %4, %5
   ret i1 %6
 }
 
@@ -270,7 +288,7 @@ entry:
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000014c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw i8, ptr %0, i64 %3

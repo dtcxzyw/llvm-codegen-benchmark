@@ -46,9 +46,10 @@ entry:
   ret float %5
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; darktable/optimized/introspection_rawprepare.c.ll
 ; graphviz/optimized/sgd.c.ll
+; lvgl/optimized/lv_span.ll
 ; meshlab/optimized/meshio.cpp.ll
 ; minetest/optimized/test_random.cpp.ll
 ; nori/optimized/tabwidget.cpp.ll

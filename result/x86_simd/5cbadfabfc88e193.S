@@ -36,7 +36,7 @@
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
-func0000000000000111:                   # @func0000000000000111
+func0000000000000421:                   # @func0000000000000421
 	vptestnmd	%ymm1, %ymm1, %k1
 	vpsrld	$16, %ymm0, %ymm0 {%k1}
 	vptestnmd	.LCPI0_1(%rip){1to8}, %ymm0, %k0
@@ -45,7 +45,7 @@ func0000000000000111:                   # @func0000000000000111
 	retq
 .LCPI1_0:
 	.long	192                             # 0xc0
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vptestnmd	%ymm1, %ymm1, %k1
 	vpsrld	$8, %ymm0, %ymm0 {%k1}
 	vpbroadcastd	.LCPI1_0(%rip), %ymm1   # ymm1 = [192,192,192,192,192,192,192,192]

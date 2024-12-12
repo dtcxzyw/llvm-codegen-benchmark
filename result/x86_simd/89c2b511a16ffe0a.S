@@ -54,14 +54,13 @@ func0000000000000009:                   # @func0000000000000009
 	vzeroupper
 	retq
 .LCPI5_0:
-	.long	3                               # 0x3
-.LCPI5_1:
-	.long	4294967292                      # 0xfffffffc
-func000000000000000a:                   # @func000000000000000a
-	vpsrlq	$1, %ymm0, %ymm0
+	.long	127                             # 0x7f
+func0000000000000001:                   # @func0000000000000001
 	vpmovqd	%ymm0, %xmm0
-	vpaddd	.LCPI5_0(%rip){1to4}, %xmm0, %xmm0
-	vpandd	.LCPI5_1(%rip){1to4}, %xmm0, %xmm0
+	vpsrld	$11, %xmm0, %xmm0
+	vpcmpeqd	%xmm1, %xmm1, %xmm1
+	vpaddd	%xmm1, %xmm0, %xmm0
+	vpandd	.LCPI5_0(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI6_0:

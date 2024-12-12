@@ -10,7 +10,7 @@ func0000000000000009:                   # @func0000000000000009
 	vmerge.vvm	v8, v9, v8, v0
 	vor.vi	v8, v8, 8
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000031:                   # @func0000000000000031
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmv.v.i	v9, 0
 	lui	a0, 16

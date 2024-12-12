@@ -12,7 +12,7 @@ entry:
   %3 = and i32 %2, 2047
   %4 = sub nsw i32 107, %3
   %5 = shl nsw i32 -1, %4
-  %6 = and i32 %5, %0
+  %6 = and i32 %0, %5
   ret i32 %6
 }
 

@@ -1,9 +1,10 @@
 
-; 69 occurrences:
+; 70 occurrences:
 ; llvm/optimized/AArch64StackTaggingPreRA.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/APINotesReader.cpp.ll
 ; llvm/optimized/APINotesWriter.cpp.ll
+; llvm/optimized/AccelTable.cpp.ll
 ; llvm/optimized/AssumeBundleBuilder.cpp.ll
 ; llvm/optimized/AssumeBundleQueries.cpp.ll
 ; llvm/optimized/Attributor.cpp.ll

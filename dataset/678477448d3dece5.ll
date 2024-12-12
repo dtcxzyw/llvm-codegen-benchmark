@@ -233,7 +233,7 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %0, 8
   %3 = icmp eq i32 %1, 0
@@ -264,7 +264,7 @@ entry:
 ; ncnn/optimized/convolutiondepthwise_x86_avx512.cpp.ll
 ; ncnn/optimized/convolutiondepthwise_x86_fma.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000003a(i32 %0, i32 %1) #0 {
+define i32 @func000000000000006a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %0, 2
   %3 = icmp sgt i32 %1, 100
@@ -283,7 +283,7 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = zext i1 %2 to i32
@@ -296,7 +296,7 @@ entry:
 ; llvm/optimized/MachObjectWriter.cpp.ll
 ; openblas/optimized/dlarrv.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %0, 24
   %3 = icmp eq i32 %1, 1

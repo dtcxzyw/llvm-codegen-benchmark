@@ -8,7 +8,7 @@
 ; cvc5/optimized/Solver.cc.ll
 ; yosys/optimized/Solver.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 1
   %3 = add nsw i32 %2, 1

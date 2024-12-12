@@ -5,14 +5,14 @@ func0000000000000045:                   // @func0000000000000045
 	neg	x0, x8, asr #3
 	ret
                                         // -- End function
-func0000000000000005:                   // @func0000000000000005
+func0000000000000065:                   // @func0000000000000065
 // %bb.0:                               // %entry
-	add	x8, x1, x2, lsl #4
+	add	x8, x1, x2, lsl #2
 	sub	x8, x0, x8
-	neg	x0, x8, asr #4
+	neg	x0, x8, asr #2
 	ret
                                         // -- End function
-func0000000000000047:                   // @func0000000000000047
+func0000000000000067:                   // @func0000000000000067
 // %bb.0:                               // %entry
 	add	x8, x1, x2, lsl #2
 	mov	w9, #5                          // =0x5

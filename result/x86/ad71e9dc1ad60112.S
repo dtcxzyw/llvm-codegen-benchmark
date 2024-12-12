@@ -5,7 +5,7 @@ func0000000000000020:                   # @func0000000000000020
 	cmovbq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000363:                   # @func0000000000000363
+func00000000000006e3:                   # @func00000000000006e3
 	leaq	(%rsi,%rdx), %rcx
 	cmpq	$65521, %rcx                    # imm = 0xFFF1
 	leaq	-65521(%rsi,%rdx), %rax

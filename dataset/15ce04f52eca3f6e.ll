@@ -1,5 +1,5 @@
 
-; 34 occurrences:
+; 33 occurrences:
 ; assimp/optimized/ConvertToLHProcess.cpp.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hermes/optimized/APFloat.cpp.ll
@@ -17,7 +17,6 @@
 ; yosys/optimized/BigUnsignedInABase.ll
 ; z3/optimized/ast.cpp.ll
 ; z3/optimized/bv_delay_internalize.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/dl_base.cpp.ll
 ; z3/optimized/dl_boogie_proof.cpp.ll
 ; z3/optimized/dl_context.cpp.ll
@@ -35,26 +34,26 @@
 ; z3/optimized/var_subst.cpp.ll
 ; z3/optimized/zstring.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000042(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000043(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = xor i32 %3, -1
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw i32, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i32, ptr %0, i64 %6
   ret ptr %7
 }
 
 ; 1 occurrences:
 ; openjdk/optimized/cmspack.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func000000000000006b(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = xor i32 %3, -1
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw i16, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i16, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -63,13 +62,13 @@ entry:
 ; libquic/optimized/padding.c.ll
 ; llvm/optimized/ModuloSchedule.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = xor i32 %3, -1
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw i8, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -107,13 +106,26 @@ entry:
 ; z3/optimized/spacer_pdr.cpp.ll
 ; z3/optimized/tab_context.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000062(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000063(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = xor i32 %3, -1
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw i32, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i32, ptr %0, i64 %6
+  ret ptr %7
+}
+
+; 1 occurrences:
+; hermes/optimized/Conversions.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000000(ptr %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %2 to i32
+  %4 = xor i32 %3, -1
+  %5 = add i32 %1, %4
+  %6 = zext i32 %5 to i64
+  %7 = getelementptr i8, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -125,7 +137,7 @@ define ptr @func0000000000000060(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = xor i32 %3, -1
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = zext i32 %5 to i64
   %7 = getelementptr i8, ptr %0, i64 %6
   ret ptr %7

@@ -1,8 +1,8 @@
 func0000000000000001:                   # @func0000000000000001
-	subq	%rdi, %rsi
-	sarq	$3, %rsi
-	movabsq	$8070450532247928832, %rax      # imm = 0x7000000000000000
-	andq	%rsi, %rax
+	movq	%rsi, %rax
+	subq	%rdi, %rax
+	shrq	$3, %rax
+	andl	$2147483647, %eax               # imm = 0x7FFFFFFF
 	retq
 func0000000000000000:                   # @func0000000000000000
 	movq	%rsi, %rax

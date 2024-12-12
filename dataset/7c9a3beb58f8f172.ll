@@ -1,6 +1,8 @@
 
-; 10 occurrences:
+; 12 occurrences:
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/round_robin.ll
+; boost/optimized/work_stealing.ll
 ; folly/optimized/AsyncSSLSocket.cpp.ll
 ; folly/optimized/Load.cpp.ll
 ; linux/optimized/mballoc.ll
@@ -19,7 +21,12 @@ entry:
   ret i1 %4
 }
 
-; 17 occurrences:
+; 22 occurrences:
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
+; boost/optimized/static_string.ll
+; boost/optimized/waker.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; entt/optimized/version.cpp.ll
 ; folly/optimized/AsyncSocket.cpp.ll

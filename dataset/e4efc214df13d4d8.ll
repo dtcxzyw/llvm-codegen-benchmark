@@ -12,7 +12,8 @@ entry:
   ret i64 %5
 }
 
-; 20 occurrences:
+; 21 occurrences:
+; boost/optimized/to_chars.ll
 ; cpython/optimized/bytearrayobject.ll
 ; cpython/optimized/bytes_methods.ll
 ; cpython/optimized/bytesobject.ll

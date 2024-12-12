@@ -1,4 +1,4 @@
-func0000000000000154:                   # @func0000000000000154
+func0000000000000294:                   # @func0000000000000294
 	movl	%esi, %eax
 	cltd
 	idivl	%edi
@@ -8,7 +8,7 @@ func0000000000000154:                   # @func0000000000000154
 	setge	%al
 	orb	%cl, %al
 	retq
-func0000000000000182:                   # @func0000000000000182
+func0000000000000302:                   # @func0000000000000302
 	movl	%esi, %eax
 	cltd
 	idivl	%edi
@@ -18,7 +18,7 @@ func0000000000000182:                   # @func0000000000000182
 	sete	%al
 	orb	%cl, %al
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	movl	%esi, %eax
 	cltd
 	idivl	%edi
@@ -28,7 +28,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	setle	%al
 	orb	%cl, %al
 	retq
-func000000000000014c:                   # @func000000000000014c
+func000000000000028c:                   # @func000000000000028c
 	movl	%esi, %eax
 	cltd
 	idivl	%edi

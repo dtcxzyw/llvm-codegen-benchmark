@@ -10,10 +10,11 @@ func0000000000000002:                   # @func0000000000000002
 	sete	%al
 	orb	%sil, %al
 	retq
-func0000000000000010:                   # @func0000000000000010
+func000000000000000c:                   # @func000000000000000c
 	andl	%edx, %esi
-	cmpw	$97, %di
-	setae	%al
+	movswl	%di, %eax
+	cmpl	$-16384, %eax                   # imm = 0xC000
+	setl	%al
 	orb	%sil, %al
 	retq
 func0000000000000008:                   # @func0000000000000008

@@ -3,6 +3,6 @@ func0000000000000001:                   # @func0000000000000001
 	vnsrl.wi	v10, v8, 0
 	lui	a0, 16
 	vsll.vi	v8, v10, 16
-	addi	a0, a0, 52
+	addi	a0, a0, 16
 	vadd.vx	v8, v8, a0
 	ret

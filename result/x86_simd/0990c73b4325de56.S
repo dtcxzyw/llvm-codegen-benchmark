@@ -49,14 +49,14 @@ func000000000000000c:                   # @func000000000000000c
 	vzeroupper
 	retq
 .LCPI2_0:
-	.byte	127                             # 0x7f
-	.byte	127                             # 0x7f
-	.byte	127                             # 0x7f
-	.byte	127                             # 0x7f
-	.byte	127                             # 0x7f
-	.byte	127                             # 0x7f
-	.byte	127                             # 0x7f
-	.byte	127                             # 0x7f
+	.byte	63                              # 0x3f
+	.byte	63                              # 0x3f
+	.byte	63                              # 0x3f
+	.byte	63                              # 0x3f
+	.byte	63                              # 0x3f
+	.byte	63                              # 0x3f
+	.byte	63                              # 0x3f
+	.byte	63                              # 0x3f
 	.zero	1
 	.zero	1
 	.zero	1
@@ -66,7 +66,7 @@ func000000000000000c:                   # @func000000000000000c
 	.zero	1
 	.zero	1
 .LCPI2_1:
-	.zero	4,127
+	.zero	4,63
 func0000000000000000:                   # @func0000000000000000
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpmovdb	%ymm0, %xmm0

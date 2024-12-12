@@ -1,5 +1,5 @@
 
-; 36 occurrences:
+; 40 occurrences:
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
 ; folly/optimized/EventBaseLocal.cpp.ll
 ; folly/optimized/FunctionScheduler.cpp.ll
@@ -36,11 +36,15 @@
 ; velox/optimized/Type.cpp.ll
 ; velox/optimized/VectorEncoding.cpp.ll
 ; wasmtime-rs/optimized/3r0osxvwe4cd326n.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }
@@ -57,12 +61,12 @@ entry:
 define i64 @func0000000000000005(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = mul nsw i64 %3, %1
-  %5 = add nsw i64 %4, %0
+  %4 = mul nsw i64 %1, %3
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; cmake/optimized/trees.c.ll
 ; freetype/optimized/ftcache.c.ll
 ; glog/optimized/symbolize.cc.ll
@@ -75,17 +79,18 @@ entry:
 ; postgres/optimized/dsa.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; qemu/optimized/hw_nvme_dif.c.ll
+; zed-rs/optimized/bijypxqg3gfu3lugp8zf7c61q.ll
 ; zlib/optimized/trees.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }
 
-; 19 occurrences:
+; 25 occurrences:
 ; arrow/optimized/bignum.cc.ll
 ; double_conversion/optimized/bignum.cc.ll
 ; grpc/optimized/static_stride_scheduler.cc.ll
@@ -105,16 +110,22 @@ entry:
 ; slurm/optimized/gres_sock_list.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; wireshark/optimized/file-elf.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
-  %5 = add nuw nsw i64 %4, %0
+  %4 = mul nuw nsw i64 %1, %3
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
-; 7 occurrences:
+; 9 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; jemalloc/optimized/arena.ll
@@ -122,62 +133,71 @@ entry:
 ; jemalloc/optimized/arena.sym.ll
 ; redis/optimized/arena.ll
 ; redis/optimized/arena.sym.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001c(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
-  %5 = add i64 %4, %0
+  %4 = mul nuw nsw i64 %1, %3
+  %5 = add i64 %0, %4
+  ret i64 %5
+}
+
+; 5 occurrences:
+; image-rs/optimized/244uszkx0e8t5ie1.ll
+; velox/optimized/ExprCompiler.cpp.ll
+; velox/optimized/SsdFile.cpp.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(i64 %0, i64 %1, i16 %2) #0 {
+entry:
+  %3 = zext i16 %2 to i64
+  %4 = mul i64 %1, %3
+  %5 = add nuw nsw i64 %4, %0
   ret i64 %5
 }
 
 ; 3 occurrences:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
-; velox/optimized/ExprCompiler.cpp.ll
-; velox/optimized/SsdFile.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000003(i64 %0, i64 %1, i16 %2) #0 {
-entry:
-  %3 = zext i16 %2 to i64
-  %4 = mul i64 %3, %1
-  %5 = add nuw nsw i64 %4, %0
-  ret i64 %5
-}
-
-; 1 occurrences:
-; image-rs/optimized/244uszkx0e8t5ie1.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000013(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = add nuw nsw i64 %4, %0
   ret i64 %5
 }
 
-; 5 occurrences:
+; 7 occurrences:
 ; clamav/optimized/hfsplus.c.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000d(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
-  %5 = add nsw i64 %4, %0
+  %4 = mul nuw nsw i64 %1, %3
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -195,7 +215,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }
@@ -206,7 +226,7 @@ entry:
 define i64 @func0000000000000007(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = mul nsw i64 %3, %1
+  %4 = mul nsw i64 %1, %3
   %5 = add nuw nsw i64 %4, %0
   ret i64 %5
 }
@@ -217,8 +237,8 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = mul nuw i64 %3, %1
-  %5 = add i64 %4, %0
+  %4 = mul nuw i64 %1, %3
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 

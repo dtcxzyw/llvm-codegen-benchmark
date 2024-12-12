@@ -14,7 +14,7 @@
 define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 31
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   %4 = icmp ult i32 %3, 191
   ret i1 %4
 }
@@ -34,7 +34,7 @@ entry:
 define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 31
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   %4 = icmp ugt i32 %3, 127
   ret i1 %4
 }
@@ -42,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/smooth.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr exact i32 %1, 9
   %3 = xor i32 %2, %0

@@ -5,7 +5,7 @@
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 258, %2
   %4 = trunc nuw i64 %1 to i32

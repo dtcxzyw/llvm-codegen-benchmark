@@ -35,3 +35,11 @@ func0000000000000009:                   # @func0000000000000009
 	andi	a0, a0, -5
 	sh2add	a0, a1, a0
 	ret
+func0000000000000002:                   # @func0000000000000002
+	sext.w	a1, a1
+	li	a2, 6
+	addi	a1, a1, -16
+	czero.nez	a1, a2, a1
+	andi	a0, a0, -256
+	or	a0, a0, a1
+	ret

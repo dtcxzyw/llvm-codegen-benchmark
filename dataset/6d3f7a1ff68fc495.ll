@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 28 occurrences:
 ; libphonenumber/optimized/asyoutypeformatter.cc.ll
 ; libphonenumber/optimized/phonemetadata.pb.cc.ll
 ; libphonenumber/optimized/phonenumbermatcher.cc.ll
@@ -14,6 +14,7 @@
 ; opencv/optimized/opencv-onnx.pb.cc.ll
 ; opencv/optimized/tensor_shape.pb.cc.ll
 ; opencv/optimized/tf_importer.cpp.ll
+; openusd/optimized/pred_common.c.ll
 ; php/optimized/pack.ll
 ; sentencepiece/optimized/pretokenizer_for_training.cc.ll
 ; sentencepiece/optimized/repeated_field.cc.ll
@@ -28,9 +29,9 @@
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(i1 %0, i32 %1, ptr %2) #0 {
+define ptr @func000000000000000e(i1 %0, i32 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 8
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 8
   %4 = select i1 %0, ptr null, ptr %3
   %5 = sext i32 %1 to i64
   %6 = getelementptr nusw ptr, ptr %4, i64 %5
@@ -40,9 +41,9 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/tidbitmap.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(i1 %0, i32 %1, ptr %2) #0 {
+define ptr @func000000000000000c(i1 %0, i32 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 4
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 4
   %4 = select i1 %0, ptr null, ptr %3
   %5 = sext i32 %1 to i64
   %6 = getelementptr i32, ptr %4, i64 %5

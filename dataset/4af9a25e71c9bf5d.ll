@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 31 occurrences:
 ; cmake/optimized/cmTestGenerator.cxx.ll
 ; entt/optimized/flow.cpp.ll
 ; entt/optimized/organizer.cpp.ll
@@ -25,13 +25,19 @@
 ; vcpkg/optimized/files.cpp.ll
 ; vcpkg/optimized/spdx.cpp.ll
 ; xgboost/optimized/context.cc.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/9lyxlodfxr6ds1lof2oq9jgs7.ll
+; zed-rs/optimized/bwvht24uf41c89mbhdihda1iu.ll
+; zed-rs/optimized/bxm2tfnh5mvxjpr839l8em8o3.ll
+; zed-rs/optimized/diggdkpukg0xn23g7ivuh3jfw.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i64 %1, ptr %2) #0 {
+define ptr @func000000000000000c(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = and i64 %4, 2147483647
-  %6 = getelementptr nusw i8, ptr %0, i64 152
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 152
   %7 = getelementptr i8, ptr %6, i64 %5
   ret ptr %7
 }
@@ -55,26 +61,26 @@ entry:
 ; zstd/optimized/zstd_fast.c.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, ptr %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = and i64 %4, 4294967295
-  %6 = getelementptr nusw i8, ptr %0, i64 1
-  %7 = getelementptr nusw i8, ptr %6, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 1
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %5
   ret ptr %7
 }
 
 ; 1 occurrences:
 ; snappy/optimized/snappy.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1, ptr %2) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = and i64 %4, 2147483647
   %6 = getelementptr i8, ptr %0, i64 1
-  %7 = getelementptr nusw i8, ptr %6, i64 %5
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %5
   ret ptr %7
 }
 

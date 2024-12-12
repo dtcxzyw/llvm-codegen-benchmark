@@ -25,5 +25,5 @@ func000000000000006c:                   # @func000000000000006c
 	vsll.vi	v12, v12, 2
 	vadd.vi	v12, v12, -4
 	vsll.vv	v10, v10, v12
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret

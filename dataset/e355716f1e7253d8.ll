@@ -1,19 +1,19 @@
 
-%"class.std::unique_ptr.2563407" = type { %"struct.std::__uniq_ptr_data.2563408" }
-%"struct.std::__uniq_ptr_data.2563408" = type { %"class.std::__uniq_ptr_impl.2563409" }
-%"class.std::__uniq_ptr_impl.2563409" = type { %"class.std::tuple.33.2563410" }
-%"class.std::tuple.33.2563410" = type { %"struct.std::_Tuple_impl.34.2563411" }
-%"struct.std::_Tuple_impl.34.2563411" = type { %"struct.std::_Head_base.37.2563412" }
-%"struct.std::_Head_base.37.2563412" = type { ptr }
-%struct.page.3346644 = type { i64, %union.anon.4.3346645, %union.anon.12.3346646, %struct.atomic_t.3346612, [8 x i8] }
-%union.anon.4.3346645 = type { %struct.anon.5.3346647 }
-%struct.anon.5.3346647 = type { %union.anon.6.3346648, ptr, %union.anon.8.3346649, i64 }
-%union.anon.6.3346648 = type { %struct.list_head.3346628 }
-%struct.list_head.3346628 = type { ptr, ptr }
-%union.anon.8.3346649 = type { i64 }
-%union.anon.12.3346646 = type { %struct.atomic_t.3346612 }
-%struct.atomic_t.3346612 = type { i32 }
-%struct.pmd_t.3365197 = type { i64 }
+%"class.std::unique_ptr.2677787" = type { %"struct.std::__uniq_ptr_data.2677788" }
+%"struct.std::__uniq_ptr_data.2677788" = type { %"class.std::__uniq_ptr_impl.2677789" }
+%"class.std::__uniq_ptr_impl.2677789" = type { %"class.std::tuple.33.2677790" }
+%"class.std::tuple.33.2677790" = type { %"struct.std::_Tuple_impl.34.2677791" }
+%"struct.std::_Tuple_impl.34.2677791" = type { %"struct.std::_Head_base.37.2677792" }
+%"struct.std::_Head_base.37.2677792" = type { ptr }
+%struct.page.3535211 = type { i64, %union.anon.4.3535212, %union.anon.12.3535213, %struct.atomic_t.3535179, [8 x i8] }
+%union.anon.4.3535212 = type { %struct.anon.5.3535214 }
+%struct.anon.5.3535214 = type { %union.anon.6.3535215, ptr, %union.anon.8.3535216, i64 }
+%union.anon.6.3535215 = type { %struct.list_head.3535195 }
+%struct.list_head.3535195 = type { ptr, ptr }
+%union.anon.8.3535216 = type { i64 }
+%union.anon.12.3535213 = type { %struct.atomic_t.3535179 }
+%struct.atomic_t.3535179 = type { i32 }
+%struct.pmd_t.3551456 = type { i64 }
 
 ; 144 occurrences:
 ; fmt/optimized/xchar-test.cc.ll
@@ -210,7 +210,7 @@ entry:
 ; openjdk/optimized/archiveHeapLoader.ll
 ; openjdk/optimized/debug.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(i64 %0, i64 %1) #0 {
+define ptr @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %0 to ptr
   %3 = getelementptr i8, ptr %2, i64 %1
@@ -218,21 +218,15 @@ entry:
   ret ptr %4
 }
 
-; 17 occurrences:
+; 11 occurrences:
 ; cmake/optimized/cmCTestBinPacker.cxx.ll
 ; darktable/optimized/amaze.cc.ll
 ; eastl/optimized/TestTupleVector.cpp.ll
 ; gromacs/optimized/grid.cpp.ll
 ; gromacs/optimized/pme_grid.cpp.ll
-; hermes/optimized/APInt.cpp.ll
-; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/LiveDebugVariables.cpp.ll
 ; luajit/optimized/lib_table.ll
 ; luajit/optimized/lib_table_dyn.ll
-; luajit/optimized/lj_bcwrite.ll
-; luajit/optimized/lj_bcwrite_dyn.ll
-; luajit/optimized/lj_serialize.ll
-; luajit/optimized/lj_serialize_dyn.ll
 ; mold/optimized/perf.cc.ll
 ; openjdk/optimized/javaAssertions.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
@@ -240,7 +234,25 @@ entry:
 define ptr @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %0 to ptr
-  %3 = getelementptr %"class.std::unique_ptr.2563407", ptr %2, i64 %1
+  %3 = getelementptr %"class.std::unique_ptr.2677787", ptr %2, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 -8
+  ret ptr %4
+}
+
+; 8 occurrences:
+; hermes/optimized/APInt.cpp.ll
+; llvm/optimized/APInt.cpp.ll
+; luajit/optimized/lib_table.ll
+; luajit/optimized/lib_table_dyn.ll
+; luajit/optimized/lj_bcwrite.ll
+; luajit/optimized/lj_bcwrite_dyn.ll
+; luajit/optimized/lj_serialize.ll
+; luajit/optimized/lj_serialize_dyn.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(i64 %0, i64 %1) #0 {
+entry:
+  %2 = inttoptr i64 %0 to ptr
+  %3 = getelementptr i64, ptr %2, i64 %1
   %4 = getelementptr i8, ptr %3, i64 -8
   ret ptr %4
 }
@@ -251,7 +263,7 @@ entry:
 define ptr @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %0 to ptr
-  %3 = getelementptr %struct.page.3346644, ptr %2, i64 %1
+  %3 = getelementptr %struct.page.3535211, ptr %2, i64 %1
   %4 = getelementptr i8, ptr %3, i64 -64
   ret ptr %4
 }
@@ -262,7 +274,7 @@ entry:
 define ptr @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %0 to ptr
-  %3 = getelementptr %struct.pmd_t.3365197, ptr %2, i64 %1
+  %3 = getelementptr %struct.pmd_t.3551456, ptr %2, i64 %1
   %4 = getelementptr i8, ptr %3, i64 8
   ret ptr %4
 }

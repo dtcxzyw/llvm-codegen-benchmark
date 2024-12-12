@@ -1,5 +1,5 @@
 
-; 137 occurrences:
+; 139 occurrences:
 ; abc/optimized/giaEmbed.c.ll
 ; bullet3/optimized/btHeightfieldTerrainShape.ll
 ; darktable/optimized/introspection_atrous.c.ll
@@ -38,6 +38,8 @@
 ; imgui/optimized/imgui_draw.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_line.ll
 ; meshlab/optimized/VisibilityCheck.cpp.ll
 ; meshlab/optimized/VisibleSet.cpp.ll
 ; meshlab/optimized/alignset.cpp.ll

@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; arrow/optimized/decimal.cc.ll
 ; darktable/optimized/darkroom.c.ll
 ; darktable/optimized/introspection_ashift.c.ll
@@ -8,7 +8,6 @@
 ; gromacs/optimized/forcetable.cpp.ll
 ; hermes/optimized/DateUtil.cpp.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
-; msdfgen/optimized/MSDFErrorCorrection.cpp.ll
 ; opencv/optimized/homography_decomp.cpp.ll
 ; quantlib/optimized/kahalesmilesection.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll

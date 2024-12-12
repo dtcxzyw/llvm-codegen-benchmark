@@ -7,7 +7,7 @@
 ; wireshark/optimized/packet-iso14443.c.ll
 ; wireshark/optimized/packet-wow.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 4
   %4 = icmp eq i32 %1, 1265525857
@@ -22,7 +22,7 @@ entry:
 ; wireshark/optimized/packet-rf4ce-profile.c.ll
 ; wireshark/optimized/packet-spdy.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000181(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
   %4 = icmp eq i32 %1, -1

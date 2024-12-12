@@ -102,13 +102,11 @@ entry:
   ret i64 %6
 }
 
-; 7 occurrences:
+; 5 occurrences:
 ; linux/optimized/acpi-cpufreq.ll
-; linux/optimized/centaur.ll
 ; linux/optimized/therm_throt.ll
 ; linux/optimized/via-rng.ll
 ; linux/optimized/x86_pkg_temp_thermal.ll
-; linux/optimized/zhaoxin.ll
 ; llvm/optimized/SampleProfileProbe.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0, i64 %1, i64 %2) #0 {

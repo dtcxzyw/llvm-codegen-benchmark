@@ -42,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; lightgbm/optimized/gbdt_model_text.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000081(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = sext i32 %3 to i64
@@ -53,10 +53,38 @@ entry:
 }
 
 ; 2 occurrences:
+; boost/optimized/conversion.ll
+; opencv/optimized/persistence.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000084(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %2, 1
+  %4 = sext i32 %3 to i64
+  %5 = ptrtoint ptr %1 to i64
+  %6 = sub i64 %5, %0
+  %7 = icmp ult i64 %6, %4
+  ret i1 %7
+}
+
+; 2 occurrences:
+; boost/optimized/conversion.ll
+; zxing/optimized/QRVersion.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000088(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %2, 1
+  %4 = sext i32 %3 to i64
+  %5 = ptrtoint ptr %1 to i64
+  %6 = sub i64 %5, %0
+  %7 = icmp ugt i64 %6, %4
+  ret i1 %7
+}
+
+; 2 occurrences:
 ; hermes/optimized/ConvertUTF.cpp.ll
 ; llvm/optimized/ConvertUTF.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000086(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = sext i32 %3 to i64
@@ -75,39 +103,13 @@ entry:
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i64 %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000008a(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -32768
   %4 = sext i32 %3 to i64
   %5 = ptrtoint ptr %1 to i64
   %6 = sub i64 %5, %0
   %7 = icmp sgt i64 %6, %4
-  ret i1 %7
-}
-
-; 1 occurrences:
-; zxing/optimized/QRVersion.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %2, 1
-  %4 = sext i32 %3 to i64
-  %5 = ptrtoint ptr %1 to i64
-  %6 = sub i64 %5, %0
-  %7 = icmp ugt i64 %6, %4
-  ret i1 %7
-}
-
-; 1 occurrences:
-; opencv/optimized/persistence.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %2, 256
-  %4 = sext i32 %3 to i64
-  %5 = ptrtoint ptr %1 to i64
-  %6 = sub i64 %5, %0
-  %7 = icmp ult i64 %6, %4
   ret i1 %7
 }
 

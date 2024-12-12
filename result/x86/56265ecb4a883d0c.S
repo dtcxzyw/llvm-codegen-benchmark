@@ -4,6 +4,12 @@ func0000000000000005:                   # @func0000000000000005
 	subq	%rcx, %rax
 	incq	%rax
 	retq
+func0000000000000007:                   # @func0000000000000007
+	movl	%esi, %ecx
+	movl	%edi, %eax
+	subq	%rcx, %rax
+	incq	%rax
+	retq
 func0000000000000025:                   # @func0000000000000025
 	movl	%esi, %ecx
 	movl	%edi, %eax

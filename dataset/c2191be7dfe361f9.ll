@@ -1,5 +1,5 @@
 
-; 37 occurrences:
+; 31 occurrences:
 ; abc/optimized/deflate.c.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; cmake/optimized/deflate.c.ll
@@ -10,15 +10,9 @@
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; libquic/optimized/deflate.c.ll
 ; lief/optimized/psa_crypto.c.ll
-; linux/optimized/af_inet.ll
-; linux/optimized/eth.ll
-; linux/optimized/gre_offload.ll
-; linux/optimized/ip6_offload.ll
 ; linux/optimized/module.ll
 ; linux/optimized/rx.ll
 ; linux/optimized/tx.ll
-; linux/optimized/xfrm4_input.ll
-; linux/optimized/xfrm6_input.ll
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/LazyValueInfo.cpp.ll
 ; llvm/optimized/SCCPSolver.cpp.ll
@@ -70,10 +64,12 @@ entry:
   ret i16 %2
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; coreutils-rs/optimized/53yhdh06nqcwsoo6.ll
 ; coreutils-rs/optimized/56596qkor8w4ma8l.ll
 ; image-rs/optimized/34r8dryqmufipcqz.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000007(i16 %0) #0 {
 entry:
@@ -82,11 +78,12 @@ entry:
   ret i16 %2
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; clamav/optimized/unarj.c.ll
 ; icu/optimized/normalizer2impl.ll
 ; linux/optimized/process_64.ll
 ; linux/optimized/xhci-hub.ll
+; llvm/optimized/CodeGenModule.cpp.ll
 ; llvm/optimized/InstCombineCompares.cpp.ll
 ; oiio/optimized/rlainput.cpp.ll
 ; wireshark/optimized/packet-6lowpan.c.ll

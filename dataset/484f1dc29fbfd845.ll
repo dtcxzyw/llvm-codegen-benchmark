@@ -145,7 +145,7 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000608(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000c08(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 12351
   %3 = and i1 %2, %0
@@ -325,7 +325,7 @@ entry:
 ; vcpkg/optimized/versiondeserializers.cpp.ll
 ; vcpkg/optimized/versions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000628(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000c48(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 12351
   %3 = and i1 %2, %0
@@ -339,7 +339,7 @@ entry:
 ; lief/optimized/psa_crypto_slot_management.c.ll
 ; nuklear/optimized/unity.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000508(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000a08(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 1073741823
   %3 = and i1 %2, %0
@@ -354,7 +354,7 @@ entry:
 ; openusd/optimized/collectionExpressionEvaluator.cpp.ll
 ; tokenizers-rs/optimized/4hn9gefsll13qr1r.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000108(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = and i1 %2, %0
@@ -367,7 +367,7 @@ entry:
 ; 1 occurrences:
 ; tokenizers-rs/optimized/4hn9gefsll13qr1r.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000308(i1 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -37
   %3 = icmp ult i32 %2, 3

@@ -7,11 +7,11 @@ entry:
   %.fr = freeze i64 %1
   %2 = urem i64 %.fr, 125000
   %3 = sub nuw i64 %.fr, %2
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
-; 77 occurrences:
+; 78 occurrences:
 ; darktable/optimized/geotagging.c.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; linux/optimized/lzo1x_compress.ll
@@ -89,12 +89,13 @@ entry:
 ; php/optimized/unixtime2tm.ll
 ; typst-rs/optimized/4p46tkw2iv8zjgza.ll
 ; wireshark/optimized/vwr.c.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = udiv i64 %1, 65535
   %3 = mul i64 %2, 65540
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -111,7 +112,7 @@ entry:
   %.fr = freeze i64 %1
   %2 = urem i64 %.fr, 1000000
   %3 = sub nuw i64 %.fr, %2
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 

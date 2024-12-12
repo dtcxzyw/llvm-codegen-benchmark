@@ -15,9 +15,9 @@
 ; verilator/optimized/V3TSP.cpp.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000045(i64 %0, ptr %1) #0 {
+define i64 @func0000000000000065(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 8
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 8
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
   %5 = ashr exact i64 %4, 3
@@ -26,24 +26,11 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/auth_unix.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000005(i64 %0, ptr %1) #0 {
-entry:
-  %2 = getelementptr i8, ptr %1, i64 8
-  %3 = ptrtoint ptr %2 to i64
-  %4 = sub i64 %0, %3
-  %5 = ashr exact i64 %4, 2
-  %6 = add nsw i64 %5, -1
-  ret i64 %6
-}
-
-; 1 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000041(i64 %0, ptr %1) #0 {
+define i64 @func0000000000000061(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 12
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 12
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %0, %3
   %5 = ashr i64 %4, 2

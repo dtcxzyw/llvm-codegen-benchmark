@@ -1,8 +1,14 @@
 
-; 25 occurrences:
+; 31 occurrences:
 ; freetype/optimized/sdf.c.ll
 ; libquic/optimized/a_bitstr.c.ll
 ; libquic/optimized/cfb.c.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; oiio/optimized/psdinput.cpp.ll
 ; openjdk/optimized/mlib_ImageAffine_NN_Bit.ll
 ; openssl/optimized/libcrypto-lib-a_bitstr.ll

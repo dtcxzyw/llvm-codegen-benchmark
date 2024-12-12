@@ -1,7 +1,7 @@
 func0000000000000030:                   # @func0000000000000030
 	vsetivli	zero, 4, e8, mf4, ta, ma
 	vmsne.vi	v8, v8, 0
-	vmor.mm	v0, v8, v0
+	vmor.mm	v0, v0, v8
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.i	v8, 0
 	vmerge.vim	v8, v8, 1, v0
@@ -17,7 +17,7 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func0000000000000010:                   # @func0000000000000010
 	vsetivli	zero, 4, e8, mf4, ta, ma
-	vmsleu.vi	v8, v8, 1
+	vmsleu.vi	v8, v8, 15
 	vmor.mm	v0, v8, v0
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmv.v.i	v8, 0

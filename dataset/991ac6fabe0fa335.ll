@@ -5,9 +5,9 @@
 ; luau/optimized/lstrlib.cpp.ll
 ; redis/optimized/lstrlib.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000201(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000601(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = ptrtoint ptr %3 to i64
   %5 = add i64 %0, %1
   %6 = icmp eq i64 %5, %4

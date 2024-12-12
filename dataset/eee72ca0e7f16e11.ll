@@ -252,7 +252,7 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 1, %2
   %4 = select i1 %0, i32 %3, i32 %1
@@ -263,7 +263,7 @@ entry:
 ; 1 occurrences:
 ; assimp/optimized/NFFLoader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 116, %2
   %4 = select i1 %0, i32 %3, i32 %1
@@ -289,7 +289,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %2
   %4 = select i1 %0, i32 %3, i32 %1
@@ -305,7 +305,7 @@ entry:
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; redis/optimized/fpconv_dtoa.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %2
   %4 = select i1 %0, i32 %3, i32 %1
@@ -314,9 +314,32 @@ entry:
 }
 
 ; 1 occurrences:
-; wireshark/optimized/packet-dns.c.ll
+; boost/optimized/to_chars.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000028(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub nsw i32 3, %2
+  %4 = select i1 %0, i32 %3, i32 %1
+  %5 = icmp ugt i32 %4, 9999
+  ret i1 %5
+}
+
+; 2 occurrences:
+; boost/optimized/to_chars.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub nsw i32 3, %2
+  %4 = select i1 %0, i32 %3, i32 %1
+  %5 = icmp samesign ugt i32 %4, 99
+  ret i1 %5
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-dns.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000048(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw i32 -2147483648, %2
   %4 = select i1 %0, i32 %3, i32 %1
@@ -327,29 +350,18 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/md.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000078(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 131072, %2
   %4 = select i1 %0, i32 %3, i32 %1
-  %5 = icmp ugt i32 %4, 8
-  ret i1 %5
-}
-
-; 1 occurrences:
-; sqlite/optimized/sqlite3.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sub nsw i32 1, %2
-  %4 = select i1 %0, i32 %3, i32 %1
-  %5 = icmp ugt i32 %4, 99
+  %5 = icmp samesign ugt i32 %4, 8
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; ocio/optimized/MathUtils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000046(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw i32 -2147483648, %2
   %4 = select i1 %0, i32 %3, i32 %1
@@ -360,7 +372,7 @@ entry:
 ; 1 occurrences:
 ; ocio/optimized/MathUtils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000044(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw i32 -2147483648, %2
   %4 = select i1 %0, i32 %3, i32 %1

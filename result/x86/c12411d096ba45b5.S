@@ -9,7 +9,7 @@ func000000000000000a:                   # @func000000000000000a
 	sbbq	%rsi, %rcx
 	setl	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	cmpq	%rdi, %rdx
 	sbbq	%rsi, %rcx
 	setb	%al
@@ -39,14 +39,24 @@ func0000000000000007:                   # @func0000000000000007
 	sbbq	%rsi, %rcx
 	setge	%al
 	retq
+func0000000000000019:                   # @func0000000000000019
+	cmpq	%rdx, %rdi
+	sbbq	%rcx, %rsi
+	setae	%al
+	retq
 func000000000000000c:                   # @func000000000000000c
 	xorq	%rcx, %rsi
 	xorq	%rdx, %rdi
 	orq	%rsi, %rdi
 	setne	%al
 	retq
-func0000000000000005:                   # @func0000000000000005
+func0000000000000008:                   # @func0000000000000008
 	cmpq	%rdi, %rdx
 	sbbq	%rsi, %rcx
-	setae	%al
+	setb	%al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpq	%rdx, %rdi
+	sbbq	%rcx, %rsi
+	setb	%al
 	retq

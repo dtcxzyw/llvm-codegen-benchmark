@@ -1,6 +1,6 @@
 func000000000000000a:                   # @func000000000000000a
 	vpsubq	%ymm2, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rax
 	movabsq	$1237940039285380275, %rcx      # imm = 0x112E0BE826D694B3
@@ -34,6 +34,13 @@ func000000000000000a:                   # @func000000000000000a
 	vmovq	%rdx, %xmm0
 	vpunpcklqdq	%xmm2, %xmm0, %xmm0     # xmm0 = xmm0[0],xmm2[0]
 	vinserti128	$1, %xmm1, %ymm0, %ymm0
+	retq
+func000000000000001a:                   # @func000000000000001a
+	vpsubq	%ymm2, %ymm1, %ymm1
+	vpaddq	%ymm0, %ymm1, %ymm0
+	vpsrlq	$63, %ymm0, %ymm1
+	vpaddq	%ymm1, %ymm0, %ymm0
+	vpsraq	$1, %ymm0, %ymm0
 	retq
 func0000000000000008:                   # @func0000000000000008
 	vpsubq	%ymm2, %ymm1, %ymm1
@@ -124,11 +131,4 @@ func0000000000000002:                   # @func0000000000000002
 	vmovq	%rdx, %xmm0
 	vpunpcklqdq	%xmm2, %xmm0, %xmm0     # xmm0 = xmm0[0],xmm2[0]
 	vinserti128	$1, %xmm1, %ymm0, %ymm0
-	retq
-func000000000000001a:                   # @func000000000000001a
-	vpsubq	%ymm2, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
-	vpsrlq	$63, %ymm0, %ymm1
-	vpaddq	%ymm1, %ymm0, %ymm0
-	vpsraq	$1, %ymm0, %ymm0
 	retq

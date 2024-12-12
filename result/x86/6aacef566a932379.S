@@ -4,16 +4,22 @@ func0000000000000050:                   # @func0000000000000050
 	leaq	(%rsi,%rax,8), %rax
 	leaq	(%rax,%rdi,8), %rax
 	retq
-func0000000000000042:                   # @func0000000000000042
+func0000000000000043:                   # @func0000000000000043
 	leal	3(%rdx,%rdx,2), %eax
 	cltq
 	leaq	(%rsi,%rax,4), %rax
 	leaq	(%rax,%rdi,4), %rax
 	retq
-func0000000000000052:                   # @func0000000000000052
+func000000000000005b:                   # @func000000000000005b
 	leal	(,%rdx,8), %eax
 	subl	%edx, %eax
 	addl	$7, %eax
+	cltq
+	leaq	(%rsi,%rax,4), %rax
+	leaq	(%rax,%rdi,4), %rax
+	retq
+func0000000000000042:                   # @func0000000000000042
+	leal	3(%rdx,%rdx,2), %eax
 	cltq
 	leaq	(%rsi,%rax,4), %rax
 	leaq	(%rax,%rdi,4), %rax

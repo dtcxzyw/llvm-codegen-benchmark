@@ -1,12 +1,12 @@
-func0000000000000526:                   # @func0000000000000526
-	leaq	18(%rdx), %rax
+func0000000000001246:                   # @func0000000000001246
+	leaq	5(%rdx), %rax
 	cmpq	%rsi, %rax
 	cmovbq	%rdi, %rax
 	incq	%rax
 	shrq	$63, %rax
 	retq
-func0000000000000126:                   # @func0000000000000126
-	leaq	4(%rdx), %rax
+func0000000000000246:                   # @func0000000000000246
+	leaq	1(%rdx), %rax
 	cmpq	%rsi, %rax
 	cmovbq	%rdi, %rax
 	incq	%rax

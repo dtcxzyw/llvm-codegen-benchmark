@@ -1,10 +1,11 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; coremark/optimized/core_list_join.c.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; llvm/optimized/AtomicExpandPass.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
+; qemu/optimized/target_riscv_vector_helper.c.ll
 ; ruby/optimized/strftime.ll
 ; wireshark/optimized/wimax_pdu_decoder.c.ll
 ; Function Attrs: nounwind

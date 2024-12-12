@@ -47,7 +47,7 @@ entry:
 define i16 @func0000000000000000(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl i16 %1, 4
-  %3 = or i16 %2, %0
+  %3 = or i16 %0, %2
   %4 = and i16 %3, -32258
   ret i16 %4
 }
@@ -58,7 +58,7 @@ entry:
 define i16 @func0000000000000006(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl nuw nsw i16 %1, 1
-  %3 = or i16 %2, %0
+  %3 = or i16 %0, %2
   %4 = and i16 %3, -897
   ret i16 %4
 }

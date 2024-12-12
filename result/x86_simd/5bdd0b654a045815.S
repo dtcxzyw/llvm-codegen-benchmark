@@ -1,4 +1,4 @@
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	vpmovdw	%ymm0, %xmm0
 	vzeroupper
 	retq
@@ -15,7 +15,11 @@ func000000000000000a:                   # @func000000000000000a
 	vpmovdw	%ymm0, %xmm0 {%k1} {z}
 	vzeroupper
 	retq
-.LCPI3_0:
+func0000000000000054:                   # @func0000000000000054
+	vpmovdw	%ymm0, %xmm0
+	vzeroupper
+	retq
+.LCPI4_0:
 	.short	1                               # 0x1
 	.short	1                               # 0x1
 	.short	1                               # 0x1
@@ -24,11 +28,11 @@ func000000000000000a:                   # @func000000000000000a
 	.short	1                               # 0x1
 	.short	1                               # 0x1
 	.short	1                               # 0x1
-.LCPI3_1:
+.LCPI4_1:
 	.short	1                               # 0x1
 func0000000000000006:                   # @func0000000000000006
 	vpmovd2m	%ymm0, %k1
-	vpbroadcastw	.LCPI3_1(%rip), %xmm1   # xmm1 = [1,1,1,1,1,1,1,1]
+	vpbroadcastw	.LCPI4_1(%rip), %xmm1   # xmm1 = [1,1,1,1,1,1,1,1]
 	vpmovdw	%ymm0, %xmm1 {%k1}
 	vmovdqa	%xmm1, %xmm0
 	vzeroupper

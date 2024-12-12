@@ -1,14 +1,16 @@
 
-; 2 occurrences:
+; 4 occurrences:
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; oiio/optimized/Codec.cpp.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000018c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 7
   %4 = icmp ne i32 %3, 0
   %5 = zext i1 %4 to i32
-  %6 = add nuw nsw i32 %5, %1
+  %6 = add nuw nsw i32 %1, %5
   %7 = mul i32 %6, %0
   ret i32 %7
 }
@@ -32,7 +34,7 @@ entry:
   %3 = and i32 %2, 31
   %4 = icmp ne i32 %3, 0
   %5 = zext i1 %4 to i32
-  %6 = add nsw i32 %5, %1
+  %6 = add nsw i32 %1, %5
   %7 = mul nsw i32 %6, %0
   ret i32 %7
 }

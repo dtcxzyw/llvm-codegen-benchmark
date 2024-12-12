@@ -19,8 +19,9 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 
-; 19 occurrences:
+; 20 occurrences:
 ; abc/optimized/luckyFast16.c.ll
+; boost/optimized/to_chars.ll
 ; darktable/optimized/introspection_lens.cc.ll
 ; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_ops.cpp.ll

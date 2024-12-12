@@ -1,6 +1,5 @@
 
-; 3 occurrences:
-; hyperscan/optimized/huge.cpp.ll
+; 2 occurrences:
 ; openssl/optimized/libcrypto-lib-mem_sec.ll
 ; openssl/optimized/libcrypto-shlib-mem_sec.ll
 ; Function Attrs: nounwind

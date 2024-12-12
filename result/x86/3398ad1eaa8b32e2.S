@@ -1,20 +1,20 @@
-func00000000000000fa:                   # @func00000000000000fa
+func00000000000000ff:                   # @func00000000000000ff
 	notq	%rdx
-	leaq	(%rdx,%rdx,2), %rax
+	leaq	(%rsi,%rsi,2), %rax
 	leaq	(%rdi,%rax,8), %rax
-	leaq	(%rsi,%rsi,2), %rcx
+	leaq	(%rdx,%rdx,2), %rcx
 	leaq	8(%rax,%rcx,8), %rax
 	retq
 func0000000000000080:                   # @func0000000000000080
 	notq	%rdx
-	leaq	(%rdi,%rdx,4), %rax
-	leaq	-4(%rax,%rsi,4), %rax
+	leaq	(%rdi,%rsi,4), %rax
+	leaq	-4(%rax,%rdx,4), %rax
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000002e:                   # @func000000000000002e
 	subq	%rdx, %rsi
 	leaq	9(%rsi,%rdi), %rax
 	retq
-func000000000000006a:                   # @func000000000000006a
+func000000000000006e:                   # @func000000000000006e
 	subq	%rdx, %rsi
 	leaq	9(%rsi,%rdi), %rax
 	retq

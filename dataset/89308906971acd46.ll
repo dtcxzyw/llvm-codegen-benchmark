@@ -7,7 +7,7 @@
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = srem i32 %3, %0
@@ -16,7 +16,8 @@ entry:
   ret i32 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/gregorian.ll
 ; icu/optimized/calendar.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {

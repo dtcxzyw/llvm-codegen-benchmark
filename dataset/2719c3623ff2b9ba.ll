@@ -1,5 +1,6 @@
 
-; 7 occurrences:
+; 8 occurrences:
+; boost/optimized/ipv6_address.ll
 ; linux/optimized/intel_pstate.ll
 ; llvm/optimized/SROA.cpp.ll
 ; minetest/optimized/content_cao.cpp.ll

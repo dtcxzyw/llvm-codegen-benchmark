@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 28 occurrences:
 ; arrow/optimized/light_array.cc.ll
 ; libsodium/optimized/libavx2_la-argon2-fill-block-avx2.ll
 ; libsodium/optimized/libavx512f_la-argon2-fill-block-avx512f.ll
@@ -7,7 +7,6 @@
 ; libsodium/optimized/libssse3_la-argon2-fill-block-ssse3.ll
 ; llvm/optimized/CGVTT.cpp.ll
 ; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; minetest/optimized/CImage.cpp.ll
 ; minetest/optimized/CNullDriver.cpp.ll
 ; minetest/optimized/gameui.cpp.ll
@@ -34,7 +33,7 @@ define i32 @func0000000000000008(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
-  %4 = mul i32 %3, %0
+  %4 = mul i32 %0, %3
   ret i32 %4
 }
 
@@ -69,7 +68,7 @@ define i32 @func0000000000000011(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = trunc i64 %2 to i32
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -94,11 +93,11 @@ define i32 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 3
   %3 = trunc i64 %2 to i32
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   ret i32 %4
 }
 
-; 47 occurrences:
+; 46 occurrences:
 ; gromacs/optimized/pull.cpp.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
@@ -114,7 +113,6 @@ entry:
 ; llvm/optimized/MachineVerifier.cpp.ll
 ; llvm/optimized/PrologEpilogInserter.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVRegisterInfo.cpp.ll
 ; llvm/optimized/RegAllocFast.cpp.ll
@@ -151,18 +149,20 @@ define i32 @func0000000000000010(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 5
   %3 = trunc i64 %2 to i32
-  %4 = mul i32 %3, %0
+  %4 = mul i32 %0, %3
   ret i32 %4
 }
 
-; 1 occurrences:
+; 3 occurrences:
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; php/optimized/zend_ssa.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 6
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = mul i32 %3, %0
+  %4 = mul i32 %0, %3
   ret i32 %4
 }
 
@@ -236,7 +236,7 @@ define i32 @func0000000000000009(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -249,7 +249,31 @@ define i32 @func000000000000000b(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
-  %4 = mul nuw nsw i32 %3, %0
+  %4 = mul nuw nsw i32 %0, %3
+  ret i32 %4
+}
+
+; 2 occurrences:
+; lvgl/optimized/lv_bin_decoder.ll
+; opencv/optimized/morph.dispatch.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000f(i32 %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 48
+  %3 = trunc nuw nsw i64 %2 to i32
+  %4 = mul nuw nsw i32 %0, %3
+  ret i32 %4
+}
+
+; 2 occurrences:
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_draw_buf.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000e(i32 %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 48
+  %3 = trunc nuw nsw i64 %2 to i32
+  %4 = mul nuw i32 %0, %3
   ret i32 %4
 }
 
@@ -262,7 +286,7 @@ define i32 @func0000000000000003(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 3
   %3 = trunc i64 %2 to i32
-  %4 = mul nuw nsw i32 %3, %0
+  %4 = mul nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -289,18 +313,7 @@ define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 3
   %3 = trunc i64 %2 to i32
-  %4 = mul i32 %3, %0
-  ret i32 %4
-}
-
-; 1 occurrences:
-; opencv/optimized/morph.dispatch.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000f(i32 %0, i64 %1) #0 {
-entry:
-  %2 = lshr i64 %1, 32
-  %3 = trunc nuw nsw i64 %2 to i32
-  %4 = mul nuw nsw i32 %3, %0
+  %4 = mul i32 %0, %3
   ret i32 %4
 }
 
@@ -311,7 +324,7 @@ define i32 @func000000000000001c(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 1
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = mul i32 %3, %0
+  %4 = mul i32 %0, %3
   ret i32 %4
 }
 

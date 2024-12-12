@@ -1,10 +1,12 @@
 
-; 301 occurrences:
+; 299 occurrences:
 ; abc/optimized/extraBddMisc.c.ll
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
 ; abseil-cpp/optimized/sysinfo.cc.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; arrow/optimized/tdigest.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/constant_mx.cpp.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/finite_differences.cpp.ll
@@ -208,17 +210,13 @@
 ; postgres/optimized/pgbench.ll
 ; postgres/optimized/planner.ll
 ; proj/optimized/airy.cpp.ll
-; proj/optimized/collg.cpp.ll
-; proj/optimized/eck1.cpp.ll
 ; proj/optimized/eck2.cpp.ll
 ; proj/optimized/eck4.cpp.ll
 ; proj/optimized/eqearth.cpp.ll
-; proj/optimized/fahey.cpp.ll
 ; proj/optimized/geodesic.c.ll
 ; proj/optimized/geos.cpp.ll
 ; proj/optimized/isea.cpp.ll
 ; proj/optimized/labrd.cpp.ll
-; proj/optimized/mbt_fps.cpp.ll
 ; proj/optimized/mbtfpp.cpp.ll
 ; proj/optimized/omerc.cpp.ll
 ; proj/optimized/proj_strtod.cpp.ll

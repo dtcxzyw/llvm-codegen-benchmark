@@ -9,7 +9,7 @@ func0000000000000006:                   # @func0000000000000006
 	addl	%edi, %eax
 	shrl	$31, %eax
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	vcvttsd2si	%xmm0, %eax
 	addl	%edi, %eax
 	cmpl	$23, %eax
@@ -21,18 +21,18 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	$32, %eax
 	setb	%al
 	retq
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	vcvttsd2si	%xmm0, %eax
 	addl	%edi, %eax
 	cmpl	$33, %eax
 	setl	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vcvttsd2si	%xmm0, %eax
 	addl	%edi, %eax
 	shrl	$31, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vcvttsd2si	%xmm0, %eax
 	addl	%edi, %eax
 	sete	%al
@@ -43,13 +43,13 @@ func000000000000000a:                   # @func000000000000000a
 	cmpl	$1000001, %eax                  # imm = 0xF4241
 	setge	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	vcvttsd2si	%xmm0, %eax
 	addl	%edi, %eax
 	cmpl	$3, %eax
 	setge	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vcvttsd2si	%xmm0, %eax
 	orl	%edi, %eax
 	sete	%al

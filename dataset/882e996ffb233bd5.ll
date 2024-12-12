@@ -2,6 +2,8 @@
 ; 32 occurrences:
 ; abc/optimized/hopDfs.c.ll
 ; abc/optimized/mpmPre.c.ll
+; abseil-cpp/optimized/cord.cc.ll
+; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; git/optimized/commit-graph.ll
 ; gromacs/optimized/biasstate.cpp.ll
@@ -10,8 +12,6 @@
 ; gromacs/optimized/tune_pme.cpp.ll
 ; icu/optimized/ucptrie.ll
 ; icu/optimized/ushape.ll
-; meshlab/optimized/filter_cubization.cpp.ll
-; meshlab/optimized/filter_trioptimize.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; openblas/optimized/dsptrf.c.ll

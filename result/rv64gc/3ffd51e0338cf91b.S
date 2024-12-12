@@ -1,27 +1,27 @@
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000014a:                   # @func000000000000014a
 	sext.w	a0, a0
 	lui	a1, 524288
 	sltu	a0, a1, a0
 	ret
-func0000000000000318:                   # @func0000000000000318
+func0000000000000c38:                   # @func0000000000000c38
 	addiw	a0, a0, -1
 	sltiu	a0, a0, 27
 	ret
-func00000000000001aa:                   # @func00000000000001aa
+func000000000000054a:                   # @func000000000000054a
 	sext.w	a0, a0
 	slti	a0, a0, 0
 	ret
-func00000000000001a4:                   # @func00000000000001a4
+func0000000000000554:                   # @func0000000000000554
 	sext.w	a0, a0
 	slti	a0, a0, -128
 	xori	a0, a0, 1
 	ret
-func00000000000001a6:                   # @func00000000000001a6
+func0000000000000546:                   # @func0000000000000546
 	sext.w	a0, a0
 	slti	a0, a0, -128
 	xori	a0, a0, 1
 	ret
-func00000000000000a4:                   # @func00000000000000a4
+func0000000000000154:                   # @func0000000000000154
 	sext.w	a0, a0
 	slti	a0, a0, -3
 	xori	a0, a0, 1

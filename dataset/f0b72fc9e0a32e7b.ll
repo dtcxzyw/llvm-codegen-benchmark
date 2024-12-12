@@ -1,7 +1,9 @@
 
-; 223 occurrences:
+; 225 occurrences:
 ; abseil-cpp/optimized/gaussian_distribution_test.cc.ll
 ; annoy/optimized/annoymodule.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/convexify.cpp.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; casadi/optimized/lsqr.cpp.ll

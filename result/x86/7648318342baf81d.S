@@ -40,6 +40,13 @@ func0000000000000002:                   # @func0000000000000002
 	leal	(%rsi,%rdx), %eax
 	orl	%edi, %eax
 	retq
+func0000000000000000:                   # @func0000000000000000
+	andl	$120, %edx
+	shll	$5, %edx
+	andl	$240, %esi
+	leal	(%rsi,%rdx), %eax
+	orl	%edi, %eax
+	retq
 func000000000000000e:                   # @func000000000000000e
 	shll	$8, %edx
 	movzwl	%dx, %ecx

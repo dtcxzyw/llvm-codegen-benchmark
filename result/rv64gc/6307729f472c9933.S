@@ -9,13 +9,11 @@ func0000000000000003:                   # @func0000000000000003
 	or	a0, a0, a1
 	ret
 func0000000000000000:                   # @func0000000000000000
-	andi	a1, a1, 1
-	bnez	a1, .LBB1_2
-	lui	a1, 397312
-	addiw	a2, a1, -1026
-.LBB1_2:                                # %entry
+	slli	a1, a1, 63
+	srai	a1, a1, 63
+	and	a1, a1, a2
+	lui	a2, 262144
 	or	a0, a0, a2
-	lui	a1, 524288
 	or	a0, a0, a1
 	ret
 func0000000000000002:                   # @func0000000000000002

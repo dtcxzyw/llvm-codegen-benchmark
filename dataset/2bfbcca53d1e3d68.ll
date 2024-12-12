@@ -6,7 +6,7 @@
 ; libquic/optimized/adler32.c.ll
 ; zlib/optimized/adler32.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003d8(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000007b8(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 65520
   %4 = add nuw nsw i64 %3, %1

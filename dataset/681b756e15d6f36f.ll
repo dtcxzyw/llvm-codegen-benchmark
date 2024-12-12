@@ -1,5 +1,7 @@
 
-; 29 occurrences:
+; 31 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; darktable/optimized/filtering.c.ll
 ; graphviz/optimized/circpos.c.ll
 ; graphviz/optimized/mm2gv.c.ll
@@ -38,7 +40,9 @@ entry:
   ret double %3
 }
 
-; 11 occurrences:
+; 13 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; darktable/optimized/filtering.c.ll
 ; graphviz/optimized/emit.c.ll
 ; graphviz/optimized/mm2gv.c.ll

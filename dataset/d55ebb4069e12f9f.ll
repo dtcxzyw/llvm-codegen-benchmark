@@ -18,12 +18,12 @@ define i64 @func0000000000000018(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 7
   %3 = icmp ne i64 %2, 0
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = select i1 %4, i64 20, i64 0
   ret i64 %5
 }
 
-; 18 occurrences:
+; 15 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abseil-cpp/optimized/mutex.cc.ll
 ; libquic/optimized/a_strex.c.ll
@@ -39,9 +39,6 @@ entry:
 ; openssl/optimized/libssl-lib-statem_srvr.ll
 ; openssl/optimized/libssl-shlib-statem_srvr.ll
 ; ruby/optimized/hash.ll
-; spike/optimized/f128_classify.ll
-; spike/optimized/f32_classify.ll
-; spike/optimized/f64_classify.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i1 %0, i64 %1) #0 {
 entry:

@@ -1,3 +1,11 @@
+func0000000000000017:                   # @func0000000000000017
+	xorl	%eax, %eax
+	cmpl	$1, %esi
+	sete	%al
+	leal	8(,%rax,4), %eax
+	imull	%edi, %eax
+	addl	$80, %eax
+	retq
 func0000000000000010:                   # @func0000000000000010
 	testl	%esi, %esi
 	movl	$3, %ecx

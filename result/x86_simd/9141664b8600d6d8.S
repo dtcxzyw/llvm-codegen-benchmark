@@ -20,7 +20,7 @@ func0000000000000004:                   # @func0000000000000004
 	vpcmpeqd	.LCPI1_0(%rip){1to8}, %ymm2, %k2
 	knotb	%k0, %k0
 	korb	%k0, %k1, %k0
-	korb	%k0, %k2, %k0
+	korb	%k2, %k0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

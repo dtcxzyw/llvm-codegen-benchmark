@@ -1,5 +1,6 @@
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/src.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-tag.ll
 ; re2/optimized/dfa.cc.ll
@@ -20,7 +21,7 @@ entry:
 ; mitsuba3/optimized/x86instapi.cpp.ll
 ; wireshark/optimized/packet-uds.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0) #0 {
+define i1 @func0000000000000024(i32 %0) #0 {
 entry:
   %1 = trunc i32 %0 to i8
   %2 = and i8 %1, 31
@@ -29,12 +30,13 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/src.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-tag.ll
 ; regex-rs/optimized/1pxsmct4oxs5dlep.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i32 %0) #0 {
+define i1 @func0000000000000104(i32 %0) #0 {
 entry:
   %1 = trunc nuw i32 %0 to i8
   %2 = and i8 %1, -33
@@ -46,7 +48,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_rps.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i32 %0) #0 {
+define i1 @func0000000000000124(i32 %0) #0 {
 entry:
   %1 = trunc nuw i32 %0 to i8
   %2 = and i8 %1, 127

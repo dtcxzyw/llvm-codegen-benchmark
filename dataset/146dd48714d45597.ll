@@ -1,5 +1,5 @@
 
-; 103 occurrences:
+; 109 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/node_hash_map_test.cc.ll
@@ -11,6 +11,7 @@
 ; assimp/optimized/SIBImporter.cpp.ll
 ; assimp/optimized/TerragenLoader.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
+; boost/optimized/static_string.ll
 ; cmake/optimized/cmSetSourceFilesPropertiesCommand.cxx.ll
 ; cmake/optimized/cmTestGenerator.cxx.ll
 ; cpython/optimized/frameobject.ll
@@ -57,6 +58,7 @@
 ; luajit/optimized/lj_lex_dyn.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
 ; luau/optimized/TypeInfer.cpp.ll
+; lvgl/optimized/lv_svg_parser.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; nghttp2/optimized/sfparse.c.ll
 ; openexr/optimized/internal_huf.c.ll
@@ -74,7 +76,6 @@
 ; openusd/optimized/type.cpp.ll
 ; php/optimized/ZendAccelerator.ll
 ; php/optimized/iptc.ll
-; php/optimized/math.ll
 ; php/optimized/mime_sniff.ll
 ; php/optimized/password.ll
 ; php/optimized/phar_object.ll
@@ -85,7 +86,6 @@
 ; php/optimized/uuencode.ll
 ; php/optimized/var_unserializer.ll
 ; php/optimized/zend_compile.ll
-; php/optimized/zend_operators.ll
 ; postgres/optimized/ginpostinglist.ll
 ; proj/optimized/cct.cpp.ll
 ; proj/optimized/gie.cpp.ll
@@ -103,10 +103,16 @@
 ; vcpkg/optimized/versions.cpp.ll
 ; xgboost/optimized/context.cc.ll
 ; yosys/optimized/lz4.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/9lyxlodfxr6ds1lof2oq9jgs7.ll
+; zed-rs/optimized/bwvht24uf41c89mbhdihda1iu.ll
+; zed-rs/optimized/bxm2tfnh5mvxjpr839l8em8o3.ll
+; zed-rs/optimized/diggdkpukg0xn23g7ivuh3jfw.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(ptr %0, ptr %1) #0 {
+define i64 @func000000000000000c(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 64
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 64
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %0 to i64
   %5 = sub i64 %4, %3
@@ -114,14 +120,12 @@ entry:
   ret i64 %6
 }
 
-; 12 occurrences:
+; 10 occurrences:
 ; hermes/optimized/DependencyExtractor.cpp.ll
 ; hermes/optimized/JSLibInternal.cpp.ll
 ; hermes/optimized/JSRegExp.cpp.ll
 ; hermes/optimized/RegexSerialization.cpp.ll
-; jq/optimized/decNumber.ll
 ; linux/optimized/algboss.ll
-; linux/optimized/nsxfname.ll
 ; qemu/optimized/migration_qemu-file.c.ll
 ; quickjs/optimized/quickjs.ll
 ; vcpkg/optimized/export.prefab.cpp.ll
@@ -134,7 +138,22 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %0 to i64
   %5 = sub i64 %4, %3
-  %6 = and i64 %5, 2147483647
+  %6 = and i64 %5, 2147483648
+  ret i64 %6
+}
+
+; 3 occurrences:
+; php/optimized/math.ll
+; php/optimized/pcre2_compile.ll
+; php/optimized/zend_operators.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(ptr %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw i8, ptr %1, i64 -1
+  %3 = ptrtoint ptr %2 to i64
+  %4 = ptrtoint ptr %0 to i64
+  %5 = sub i64 %4, %3
+  %6 = and i64 %5, -8
   ret i64 %6
 }
 

@@ -5,13 +5,13 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	%rdi, %rdx
 	sete	%al
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000064:                   # @func0000000000000064
 	shrl	$8, %edx
 	leaq	(%rsi,%rdx,2), %rax
 	cmpq	%rdi, %rax
 	setb	%al
 	retq
-func0000000000000061:                   # @func0000000000000061
+func00000000000000e1:                   # @func00000000000000e1
 	shrq	%rdx
 	movabsq	$4611686018427387896, %rax      # imm = 0x3FFFFFFFFFFFFFF8
 	andq	%rdx, %rax
@@ -19,7 +19,7 @@ func0000000000000061:                   # @func0000000000000061
 	cmpq	%rdi, %rax
 	sete	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000061:                   # @func0000000000000061
 	movabsq	$8589934590, %rax               # imm = 0x1FFFFFFFE
 	andq	%rdx, %rax
 	leaq	(%rsi,%rax,8), %rax

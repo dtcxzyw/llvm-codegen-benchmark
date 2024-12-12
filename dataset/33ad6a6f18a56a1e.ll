@@ -31,7 +31,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = shl nsw i64 %1, 2
   %5 = mul i64 %4, %3
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -43,7 +43,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = shl i64 %1, 10
   %5 = mul i64 %4, %3
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 

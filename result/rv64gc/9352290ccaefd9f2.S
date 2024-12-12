@@ -12,7 +12,7 @@ func00000000000000c8:                   # @func00000000000000c8
 	add	a2, a2, a3
 	neg	a1, a1
 	and	a1, a1, a2
-	mul	a0, a1, a0
+	mul	a0, a0, a1
 	ret
 func0000000000000040:                   # @func0000000000000040
 	add	a2, a2, a1

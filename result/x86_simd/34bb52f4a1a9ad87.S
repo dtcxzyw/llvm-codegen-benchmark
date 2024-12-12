@@ -21,6 +21,6 @@ func0000000000000002:                   # @func0000000000000002
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
 	vptestnmb	.LCPI0_0(%rip), %xmm2, %k1
-	korb	%k0, %k1, %k1
+	korb	%k1, %k0, %k1
 	vpbroadcastd	.LCPI0_1(%rip), %ymm0 {%k1} # ymm0 {%k1} = [138,138,138,138,138,138,138,138]
 	retq

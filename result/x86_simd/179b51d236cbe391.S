@@ -1,6 +1,6 @@
 func0000000000000002:                   # @func0000000000000002
 	vpmovsxdq	%xmm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rax
 	movabsq	$1749024623285053783, %rcx      # imm = 0x1845C8A0CE512957

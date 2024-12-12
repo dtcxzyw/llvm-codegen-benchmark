@@ -1,5 +1,7 @@
 
-; 23 occurrences:
+; 26 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; influxdb-rs/optimized/4xdswox27ronf9w0.ll
@@ -23,17 +25,20 @@
 ; wasmtime-rs/optimized/3flv1664rwe55t82.ll
 ; wasmtime-rs/optimized/48myxw210mngc99c.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000074(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
-  %4 = icmp ult i64 %3, 63
+  %3 = add nuw nsw i64 %0, %2
+  %4 = icmp samesign ult i64 %3, 63
   ret i1 %4
 }
 
-; 8 occurrences:
+; 10 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; ockam-rs/optimized/2ngtaq92gcad4v6j.ll
 ; ockam-rs/optimized/2whckd326lu2ah2i.ll
@@ -45,7 +50,7 @@ entry:
 define i1 @func0000000000000004(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = icmp ult i64 %3, 63
   ret i1 %4
 }
@@ -81,15 +86,15 @@ entry:
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
 ; wasmtime-rs/optimized/jcy3ulzaiykp2rl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = icmp ugt i64 %3, 11
   ret i1 %4
 }
 
-; 27 occurrences:
+; 28 occurrences:
 ; clamav/optimized/yara_lexer.c.ll
 ; delta-rs/optimized/4say4x9grcidoih4.ll
 ; freetype/optimized/sfnt.c.ll
@@ -117,16 +122,17 @@ entry:
 ; qemu/optimized/hw_net_pcnet.c.ll
 ; stat-rs/optimized/2ao4u4y4ndqxwz8u.ll
 ; tokenizers-rs/optimized/5e69nv5s2wu1vtyr.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = icmp ugt i64 %3, 11
   ret i1 %4
 }
 
-; 21 occurrences:
+; 22 occurrences:
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; influxdb-rs/optimized/4xdswox27ronf9w0.ll
@@ -148,12 +154,13 @@ entry:
 ; wasmtime-rs/optimized/3flv1664rwe55t82.ll
 ; wasmtime-rs/optimized/48myxw210mngc99c.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i16 %1) #0 {
+define i1 @func00000000000000f4(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
-  %4 = icmp ult i64 %3, 12
+  %3 = add nuw nsw i64 %0, %2
+  %4 = icmp samesign ult i64 %3, 12
   ret i1 %4
 }
 
@@ -162,11 +169,11 @@ entry:
 ; openvdb/optimized/LevelSetRebuild.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
-  %3 = sub i64 0, %0
-  %4 = icmp eq i64 %2, %3
+  %3 = sub nsw i64 0, %2
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
@@ -174,10 +181,10 @@ entry:
 ; openvdb/optimized/LevelSetRebuild.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000088(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = icmp ugt i64 %3, 1152921504606846975
   ret i1 %4
 }
@@ -202,10 +209,10 @@ entry:
 ; verilator/optimized/V3Timing.cpp.ll
 ; verilator/optimized/V3Undriven.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i16 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = icmp sgt i64 %3, -1
   ret i1 %4
 }
@@ -229,11 +236,11 @@ entry:
 ; verilator/optimized/V3Timing.cpp.ll
 ; verilator/optimized/V3Undriven.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000034(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = add nsw i64 %2, %0
-  %4 = icmp ult i64 %3, 16
+  %3 = add nsw i64 %0, %2
+  %4 = icmp samesign ult i64 %3, 16
   ret i1 %4
 }
 
@@ -241,10 +248,10 @@ entry:
 ; fmt/optimized/chrono-test.cc.ll
 ; postgres/optimized/gistutil.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000084(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = icmp ult i64 %3, 4294967296
   ret i1 %4
 }
@@ -252,21 +259,21 @@ entry:
 ; 1 occurrences:
 ; libevent/optimized/evdns.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000078(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
-  %4 = icmp ugt i64 %3, 65536
+  %3 = add nuw nsw i64 %0, %2
+  %4 = icmp samesign ugt i64 %3, 65536
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; lodepng/optimized/lodepng_util.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = icmp eq i64 %3, 65535
   ret i1 %4
 }
@@ -275,11 +282,11 @@ entry:
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = sub i64 0, %0
-  %4 = icmp eq i64 %2, %3
+  %3 = sub nsw i64 0, %2
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
@@ -289,8 +296,8 @@ entry:
 define i1 @func0000000000000001(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = sub i64 0, %0
-  %4 = icmp eq i64 %2, %3
+  %3 = sub nsw i64 0, %2
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 

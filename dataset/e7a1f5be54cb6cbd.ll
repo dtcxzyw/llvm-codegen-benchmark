@@ -1,13 +1,12 @@
 
-; 3 occurrences:
-; clamav/optimized/upack.c.ll
+; 2 occurrences:
 ; mitsuba3/optimized/x86instapi.cpp.ll
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000030(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 248
-  %4 = icmp ugt i32 %3, 8
+  %4 = icmp samesign ugt i32 %3, 8
   %5 = select i1 %4, i32 %1, i32 0
   %6 = or i32 %5, %0
   ret i32 %6
@@ -39,7 +38,7 @@ entry:
   ret i32 %6
 }
 
-; 29 occurrences:
+; 27 occurrences:
 ; cmake/optimized/url.c.ll
 ; curl/optimized/libcurl_la-url.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
@@ -47,8 +46,6 @@ entry:
 ; icu/optimized/ustrcase.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; libquic/optimized/file_posix.cc.ll
-; linux/optimized/attr.ll
-; linux/optimized/hdac_regmap.ll
 ; linux/optimized/ipv6_sockglue.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/yenta_socket.ll
@@ -75,7 +72,7 @@ entry:
   %3 = and i32 %2, 1
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, i32 %1, i32 1
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   ret i32 %6
 }
 

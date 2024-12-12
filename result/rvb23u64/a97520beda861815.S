@@ -6,13 +6,6 @@ func000000000000000b:                   # @func000000000000000b
 	czero.eqz	a0, a2, a0
 	add	a0, a0, a1
 	ret
-func0000000000000023:                   # @func0000000000000023
-	sext.w	a1, a1
-	sltiu	a1, a1, 17
-	andi	a0, a0, 1
-	add	a0, a0, a1
-	addi	a0, a0, 1
-	ret
 func0000000000000053:                   # @func0000000000000053
 	sext.w	a1, a1
 	lui	a2, 24

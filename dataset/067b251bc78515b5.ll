@@ -1,5 +1,5 @@
 
-; 72 occurrences:
+; 71 occurrences:
 ; c3c/optimized/lexer.c.ll
 ; clamav/optimized/XzDec.c.ll
 ; cmake/optimized/archive_read_support_filter_uu.c.ll
@@ -16,7 +16,6 @@
 ; icu/optimized/ustrtrns.ll
 ; icu/optimized/utf_impl.ll
 ; imgui/optimized/imgui_draw.cpp.ll
-; libsodium/optimized/libsodium_la-scalarmult_curve25519.ll
 ; linux/optimized/cipso_ipv4.ll
 ; linux/optimized/g4x_dp.ll
 ; linux/optimized/intel_ddi.ll
@@ -81,7 +80,7 @@ entry:
   ret i32 %3
 }
 
-; 114 occurrences:
+; 113 occurrences:
 ; clamav/optimized/XzDec.c.ll
 ; clamav/optimized/XzIn.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
@@ -106,7 +105,6 @@ entry:
 ; linux/optimized/drm_dsc_helper.ll
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/exthdrs.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_backlight.ll
 ; linux/optimized/intel_bios.ll
 ; linux/optimized/intel_ddi.ll
@@ -205,10 +203,9 @@ entry:
   ret i32 %3
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; icu/optimized/bytestrie.ll
 ; linux/optimized/drm_dp_mst_topology.ll
-; linux/optimized/evgpeinit.ll
 ; llvm/optimized/GVNSink.cpp.ll
 ; luau/optimized/CodeGenX64.cpp.ll
 ; openjdk/optimized/imageDecompressor.ll
@@ -225,11 +222,13 @@ entry:
   ret i32 %3
 }
 
-; 12 occurrences:
+; 14 occurrences:
 ; clamav/optimized/mew.c.ll
 ; freetype/optimized/sfnt.c.ll
+; gromacs/optimized/pdb2gmx.cpp.ll
 ; hdf5/optimized/H5Fsuper_cache.c.ll
 ; linux/optimized/mballoc.ll
+; luau/optimized/IrRegAllocA64.cpp.ll
 ; openjdk/optimized/utf8.ll
 ; wireshark/optimized/packet-dof.c.ll
 ; wireshark/optimized/packet-gsm_map.c.ll

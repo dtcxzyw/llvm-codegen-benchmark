@@ -2,7 +2,7 @@
 	.long	1048575                         # 0xfffff
 func0000000000000001:                   # @func0000000000000001
 	vpmovqd	%ymm2, %xmm2
-	vpaddd	%xmm1, %xmm2, %xmm1
+	vpaddd	%xmm2, %xmm1, %xmm1
 	vpslld	$20, %xmm1, %xmm1
 	vpternlogd	$236, .LCPI0_0(%rip){1to4}, %xmm1, %xmm0 # xmm0 = (xmm0 & mem) | xmm1
 	vzeroupper
@@ -11,7 +11,7 @@ func0000000000000001:                   # @func0000000000000001
 	.long	3                               # 0x3
 func0000000000000061:                   # @func0000000000000061
 	vpmovqd	%ymm2, %xmm2
-	vpaddd	%xmm1, %xmm2, %xmm1
+	vpaddd	%xmm2, %xmm1, %xmm1
 	vpslld	$2, %xmm1, %xmm1
 	vpternlogd	$236, .LCPI1_0(%rip){1to4}, %xmm1, %xmm0 # xmm0 = (xmm0 & mem) | xmm1
 	vzeroupper
@@ -20,7 +20,7 @@ func0000000000000061:                   # @func0000000000000061
 	.long	1                               # 0x1
 func000000000000006b:                   # @func000000000000006b
 	vpmovqd	%ymm2, %xmm2
-	vpaddd	%xmm1, %xmm2, %xmm1
+	vpaddd	%xmm2, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm1, %xmm1
 	vpternlogd	$236, .LCPI2_0(%rip){1to4}, %xmm1, %xmm0 # xmm0 = (xmm0 & mem) | xmm1
 	vzeroupper
@@ -29,7 +29,7 @@ func000000000000006b:                   # @func000000000000006b
 	.long	1                               # 0x1
 func000000000000000b:                   # @func000000000000000b
 	vpmovqd	%ymm2, %xmm2
-	vpaddd	%xmm1, %xmm2, %xmm1
+	vpaddd	%xmm2, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm1, %xmm1
 	vpternlogd	$236, .LCPI3_0(%rip){1to4}, %xmm1, %xmm0 # xmm0 = (xmm0 & mem) | xmm1
 	vzeroupper
@@ -38,7 +38,7 @@ func000000000000000b:                   # @func000000000000000b
 	.long	1                               # 0x1
 func000000000000002b:                   # @func000000000000002b
 	vpmovqd	%ymm2, %xmm2
-	vpaddd	%xmm1, %xmm2, %xmm1
+	vpaddd	%xmm2, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm1, %xmm1
 	vpternlogd	$236, .LCPI4_0(%rip){1to4}, %xmm1, %xmm0 # xmm0 = (xmm0 & mem) | xmm1
 	vzeroupper
@@ -47,7 +47,7 @@ func000000000000002b:                   # @func000000000000002b
 	.long	15                              # 0xf
 func000000000000007b:                   # @func000000000000007b
 	vpmovqd	%ymm2, %xmm2
-	vpaddd	%xmm1, %xmm2, %xmm1
+	vpaddd	%xmm2, %xmm1, %xmm1
 	vpslld	$4, %xmm1, %xmm1
 	vpternlogd	$236, .LCPI5_0(%rip){1to4}, %xmm1, %xmm0 # xmm0 = (xmm0 & mem) | xmm1
 	vzeroupper
@@ -56,7 +56,7 @@ func000000000000007b:                   # @func000000000000007b
 	.long	15                              # 0xf
 func000000000000001b:                   # @func000000000000001b
 	vpmovqd	%ymm2, %xmm2
-	vpaddd	%xmm1, %xmm2, %xmm1
+	vpaddd	%xmm2, %xmm1, %xmm1
 	vpslld	$4, %xmm1, %xmm1
 	vpternlogd	$236, .LCPI6_0(%rip){1to4}, %xmm1, %xmm0 # xmm0 = (xmm0 & mem) | xmm1
 	vzeroupper

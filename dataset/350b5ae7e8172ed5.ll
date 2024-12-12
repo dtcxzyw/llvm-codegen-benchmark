@@ -1,5 +1,5 @@
 
-; 39 occurrences:
+; 37 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcLatch.c.ll
 ; abc/optimized/absOldCex.c.ll
@@ -26,7 +26,6 @@
 ; abc/optimized/sswConstr.c.ll
 ; abc/optimized/sswFilter.c.ll
 ; abc/optimized/sswRarity.c.ll
-; abc/optimized/sswSimSat.c.ll
 ; abc/optimized/wlcMem.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
 ; cmake/optimized/zstd_opt.c.ll
@@ -34,7 +33,6 @@
 ; gromacs/optimized/coder.c.ll
 ; libwebp/optimized/near_lossless_enc.c.ll
 ; lief/optimized/des.c.ll
-; linux/optimized/exprep.ll
 ; node/optimized/simdutf.ll
 ; ruby/optimized/process.ll
 ; zstd/optimized/zstd_lazy.c.ll
@@ -47,7 +45,7 @@ entry:
   ret i32 %3
 }
 
-; 215 occurrences:
+; 212 occurrences:
 ; abc/optimized/extraUtilMaj.c.ll
 ; abc/optimized/fraigFeed.c.ll
 ; abc/optimized/lpkAbcDsd.c.ll
@@ -173,9 +171,6 @@ entry:
 ; oiio/optimized/zfile.cpp.ll
 ; opencc/optimized/louds-trie.cc.ll
 ; opencv/optimized/window_gtk.cpp.ll
-; openssl/optimized/libcrypto-lib-fcrypt_b.ll
-; openssl/optimized/libcrypto-shlib-fcrypt_b.ll
-; openssl/optimized/liblegacy-lib-fcrypt_b.ll
 ; openvdb/optimized/LevelSetRebuild.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; qemu/optimized/block_qcow2-cluster.c.ll
@@ -267,11 +262,11 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %0, %1
-  %3 = shl i32 %2, 16
+  %3 = shl i32 %2, 1
   ret i32 %3
 }
 
-; 193 occurrences:
+; 192 occurrences:
 ; abc/optimized/aigObj.c.ll
 ; abc/optimized/bmcCexCut.c.ll
 ; abc/optimized/bmcCexDepth.c.ll
@@ -380,7 +375,6 @@ entry:
 ; luajit/optimized/lj_cparse_dyn.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; openmpi/optimized/tm_bucket.ll
 ; proxygen/optimized/HTTPBinaryCodec.cpp.ll
 ; qemu/optimized/system_watchpoint.c.ll

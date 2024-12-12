@@ -14,10 +14,10 @@
 ; linux/optimized/drm_dp_mst_topology.ll
 ; linux/optimized/ebitmap.ll
 ; linux/optimized/groups.ll
+; linux/optimized/hda_controller.ll
 ; linux/optimized/hdac_device.ll
 ; linux/optimized/hub.ll
 ; linux/optimized/hugetlb_cgroup.ll
-; linux/optimized/i915_cmd_parser.ll
 ; linux/optimized/io-wq.ll
 ; linux/optimized/ip_tunnel.ll
 ; linux/optimized/maple_tree.ll
@@ -77,14 +77,13 @@ entry:
   ret ptr %4
 }
 
-; 349 occurrences:
+; 342 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/aigCanon.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/covMinEsop.c.ll
 ; abc/optimized/covMinSop.c.ll
-; abc/optimized/covMinUtil.c.ll
 ; abc/optimized/cutNode.c.ll
 ; abc/optimized/decFactor.c.ll
 ; abc/optimized/decompress.c.ll
@@ -103,7 +102,6 @@ entry:
 ; abc/optimized/mpmMap.c.ll
 ; abc/optimized/mvcApi.c.ll
 ; abc/optimized/mvcLits.c.ll
-; abc/optimized/mvcPrint.c.ll
 ; abc/optimized/mvcUtils.c.ll
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver2.c.ll
@@ -114,6 +112,7 @@ entry:
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; abseil-cpp/optimized/charset_test.cc.ll
 ; abseil-cpp/optimized/crc.cc.ll
+; boost/optimized/unique_path.ll
 ; c3c/optimized/asm_target.c.ll
 ; c3c/optimized/sema_asm.c.ll
 ; clamav/optimized/aspack.c.ll
@@ -150,9 +149,6 @@ entry:
 ; gromacs/optimized/threaded_force_buffer.cpp.ll
 ; gromacs/optimized/xtc3.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; harfbuzz/optimized/hb-subset-cff-common.cc.ll
-; harfbuzz/optimized/hb-subset-cff1.cc.ll
-; harfbuzz/optimized/hb-subset-cff2.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hyperscan/optimized/limex_simd128.c.ll
@@ -247,7 +243,6 @@ entry:
 ; mini-lsm-rs/optimized/3l74wehtlfae5jz1.ll
 ; mini-lsm-rs/optimized/haynj55bb7tm6r1.ll
 ; mitsuba3/optimized/constpool.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/jitallocator.cpp.ll
 ; mitsuba3/optimized/rapass.cpp.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
@@ -255,9 +250,6 @@ entry:
 ; node/optimized/linux.ll
 ; nori/optimized/nanovg.c.ll
 ; nuttx/optimized/fs_select.c.ll
-; nuttx/optimized/sig_addset.c.ll
-; nuttx/optimized/sig_delset.c.ll
-; nuttx/optimized/sig_ismember.c.ll
 ; oniguruma/optimized/regcomp.ll
 ; oniguruma/optimized/regparse.ll
 ; openjdk/optimized/barrierSetAssembler_x86.ll
@@ -268,7 +260,6 @@ entry:
 ; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-var.ll
-; openjdk/optimized/hb-set.ll
 ; openjdk/optimized/ifg.ll
 ; openjdk/optimized/lcm.ll
 ; openjdk/optimized/locknode.ll
@@ -426,13 +417,15 @@ entry:
 ; z3/optimized/theory_arith.cpp.ll
 ; z3/optimized/theory_bv.cpp.ll
 ; z3/optimized/udoc_relation.cpp.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
+; zed-rs/optimized/d5przcl3nwvj7ddp1j7ydu4aq.ll
 ; zxing/optimized/ODDataBarCommon.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 6
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw [4 x i64], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [4 x i64], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
@@ -465,11 +458,11 @@ entry:
 ; rust-analyzer-rs/optimized/lkt0vc36jo6l130.ll
 ; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 6
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw [8 x i64], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [8 x i64], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

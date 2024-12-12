@@ -1,5 +1,5 @@
 
-; 101 occurrences:
+; 100 occurrences:
 ; llvm/optimized/APINotesManager.cpp.ll
 ; llvm/optimized/ARCMT.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
@@ -67,7 +67,6 @@
 ; llvm/optimized/PreprocessingRecord.cpp.ll
 ; llvm/optimized/Preprocessor.cpp.ll
 ; llvm/optimized/PreprocessorLexer.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RawCommentList.cpp.ll
 ; llvm/optimized/Replacement.cpp.ll
 ; llvm/optimized/RewriteMacros.cpp.ll

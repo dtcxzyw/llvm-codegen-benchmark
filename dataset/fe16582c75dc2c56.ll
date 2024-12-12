@@ -20,9 +20,11 @@ entry:
   ret i8 %2
 }
 
-; 12 occurrences:
+; 14 occurrences:
 ; abseil-cpp/optimized/marshalling_test.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
+; boost/optimized/for_each_coordinate.ll
+; boost/optimized/tuples.ll
 ; faiss/optimized/VectorTransform.cpp.ll
 ; gromacs/optimized/propagator.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -73,8 +75,9 @@ entry:
   ret i8 %2
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; minetest/optimized/clientenvironment.cpp.ll
+; zed-rs/optimized/5kbsfw3jcmbcslmu1o5kx13w3.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000001a(float %0) #0 {
 entry:
@@ -110,32 +113,33 @@ entry:
   ret i8 %2
 }
 
+; 2 occurrences:
+; abseil-cpp/optimized/marshalling_test.cc.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000002(float %0) #0 {
+entry:
+  %1 = fcmp uno float %0, 0.000000e+00
+  %2 = zext i1 %1 to i8
+  ret i8 %2
+}
+
 ; 11 occurrences:
 ; gromacs/optimized/checkpointhandler.cpp.ll
 ; gromacs/optimized/pme_load_balancing.cpp.ll
 ; imgui/optimized/imgui.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
 ; raylib/optimized/rmodels.c.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000018(float %0) #0 {
 entry:
   %1 = fcmp oge float %0, 0.000000e+00
-  %2 = zext i1 %1 to i8
-  ret i8 %2
-}
-
-; 1 occurrences:
-; abseil-cpp/optimized/marshalling_test.cc.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000002(float %0) #0 {
-entry:
-  %1 = fcmp uno float %0, 0.000000e+00
   %2 = zext i1 %1 to i8
   ret i8 %2
 }

@@ -8,7 +8,7 @@
 define i64 @func000000000000003f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1073741816
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = shl nuw nsw i64 %1, 3
   %6 = add nuw nsw i64 %4, %5
   ret i64 %6
@@ -26,22 +26,22 @@ entry:
   ret i64 %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; hyperscan/optimized/scratch.c.ll
-; linux/optimized/head64.ll
 ; llvm/optimized/SourceManager.cpp.ll
 ; qemu/optimized/hw_virtio_virtio.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000030(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -8
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = shl nuw nsw i64 %1, 4
   %6 = add i64 %4, %5
   ret i64 %6
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; clamav/optimized/htmlnorm.c.ll
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
 ; eastl/optimized/TestTupleVector.cpp.ll
 ; libquic/optimized/pickle.cc.ll
@@ -50,7 +50,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -8
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = shl i64 %1, 3
   %6 = add i64 %4, %5
   ret i64 %6
@@ -63,7 +63,7 @@ entry:
 define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 72057594021150720
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = shl i64 %1, 53
   %6 = add i64 %4, %5
   ret i64 %6
@@ -76,7 +76,7 @@ entry:
 define i64 @func0000000000000015(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 60
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = shl nsw i64 %1, 3
   %6 = add nsw i64 %4, %5
   ret i64 %6
@@ -90,7 +90,7 @@ entry:
 define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -8
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = shl nsw i64 %1, 7
   %6 = add i64 %4, %5
   ret i64 %6

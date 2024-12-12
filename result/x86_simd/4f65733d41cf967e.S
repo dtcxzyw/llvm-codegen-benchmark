@@ -1,0 +1,23 @@
+.LCPI0_0:
+	.byte	45                              # 0x2d
+	.byte	45                              # 0x2d
+	.byte	45                              # 0x2d
+	.byte	45                              # 0x2d
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+func0000000000000001:                   # @func0000000000000001
+	vpsubq	%ymm0, %ymm2, %ymm2
+	vpcmpeqd	%ymm3, %ymm3, %ymm3
+	vpcmpeqb	.LCPI0_0(%rip), %xmm1, %k1
+	vpsubq	%ymm3, %ymm2, %ymm0 {%k1}
+	retq

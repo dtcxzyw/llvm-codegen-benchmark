@@ -28,7 +28,7 @@ entry:
   %3 = icmp slt i32 %2, 33
   %4 = trunc i8 %1 to i1
   %5 = select i1 %4, i1 %3, i1 false
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -40,7 +40,7 @@ entry:
   %3 = icmp ult i32 %2, 128
   %4 = trunc i8 %1 to i1
   %5 = select i1 %4, i1 %3, i1 false
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

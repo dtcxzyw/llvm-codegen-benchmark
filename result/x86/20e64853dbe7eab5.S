@@ -25,8 +25,8 @@ func0000000000000003:                   # @func0000000000000003
 	movslq	%edi, %rax
 	retq
 func0000000000000005:                   # @func0000000000000005
-	shll	$3, %edi
-	movl	$8, %eax
+	addl	%edi, %edi
+	movl	$16, %eax
 	subl	%edi, %eax
 	cltq
 	retq

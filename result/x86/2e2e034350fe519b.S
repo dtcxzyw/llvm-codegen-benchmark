@@ -48,3 +48,13 @@ func0000000000000016:                   # @func0000000000000016
 	cmpb	%sil, %dil
 	setge	%al
 	retq
+func0000000000000028:                   # @func0000000000000028
+	xorl	%eax, %eax
+	cmpb	%sil, %dil
+	setb	%al
+	retq
+func0000000000000032:                   # @func0000000000000032
+	xorl	%eax, %eax
+	cmpb	%sil, %dil
+	setae	%al
+	retq

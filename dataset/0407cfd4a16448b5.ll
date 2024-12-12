@@ -1,5 +1,5 @@
 
-; 64 occurrences:
+; 65 occurrences:
 ; cpython/optimized/bytesobject.ll
 ; cpython/optimized/dtoa.ll
 ; cpython/optimized/unicodeobject.ll
@@ -36,6 +36,7 @@
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luajit/optimized/lj_cparse.ll
 ; luajit/optimized/lj_cparse_dyn.ll
+; lvgl/optimized/lv_draw_sw_img.ll
 ; opencv/optimized/grfmt_tiff.cpp.ll
 ; openspiel/optimized/havannah.cc.ll
 ; openspiel/optimized/y.cc.ll
@@ -94,12 +95,27 @@ entry:
   ret i1 %6
 }
 
+; 4 occurrences:
+; icu/optimized/collationdatabuilder.ll
+; icu/optimized/normalizer2impl.ll
+; luajit/optimized/lj_strfmt_num.ll
+; luajit/optimized/lj_strfmt_num_dyn.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 254
+  %4 = icmp samesign ugt i32 %3, 5
+  %5 = select i1 %0, i1 %1, i1 false
+  %6 = select i1 %5, i1 %4, i1 false
+  ret i1 %6
+}
+
 ; 3 occurrences:
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/encode.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000014(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65520
   %4 = icmp eq i32 %3, 0

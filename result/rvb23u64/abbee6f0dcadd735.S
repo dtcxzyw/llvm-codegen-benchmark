@@ -5,7 +5,7 @@ func000000000000000a:                   # @func000000000000000a
 	addi	a0, a1, 32
 	sgtz	a0, a0
 	ret
-func000000000000010a:                   # @func000000000000010a
+func000000000000020a:                   # @func000000000000020a
 	sh2add	a1, a1, a1
 	slli	a1, a1, 1
 	sub	a1, a1, a0

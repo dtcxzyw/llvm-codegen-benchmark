@@ -24,7 +24,7 @@ entry:
 ; 1 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000011(i64 %0) #0 {
+define i8 @func0000000000000021(i64 %0) #0 {
 entry:
   %1 = trunc nsw i64 %0 to i8
   %2 = icmp eq i64 %0, 0

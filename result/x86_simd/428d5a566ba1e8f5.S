@@ -8,14 +8,15 @@ func000000000000000f:                   # @func000000000000000f
 	vpsubq	%ymm1, %ymm0, %ymm0 {%k1} {z}
 	retq
 .LCPI1_0:
-	.quad	-6                              # 0xfffffffffffffffa
+	.quad	-80                             # 0xffffffffffffffb0
+.LCPI1_1:
+	.quad	80                              # 0x50
 func0000000000000000:                   # @func0000000000000000
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
-	vpaddq	%ymm1, %ymm1, %ymm0
-	vpaddq	%ymm1, %ymm0, %ymm0
+	vpmullq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm0
 	knotw	%k0, %k1
-	vpaddq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0 {%k1} {z}
+	vpaddq	.LCPI1_1(%rip){1to4}, %ymm0, %ymm0 {%k1} {z}
 	retq
 .LCPI2_0:
 	.quad	400                             # 0x190

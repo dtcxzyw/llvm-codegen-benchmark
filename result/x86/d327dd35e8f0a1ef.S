@@ -5,8 +5,8 @@ func000000000000000a:                   # @func000000000000000a
 	negb	%sil
 	sbbq	%rax, %rax
 	orq	%rdx, %rax
-	cmpq	%rdi, %rax
-	setl	%al
+	cmpq	%rax, %rdi
+	setg	%al
 	retq
 func000000000000000c:                   # @func000000000000000c
 	andb	$1, %sil
@@ -15,7 +15,7 @@ func000000000000000c:                   # @func000000000000000c
 	negb	%sil
 	sbbq	%rax, %rax
 	orq	%rdx, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	setne	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
@@ -25,7 +25,7 @@ func0000000000000001:                   # @func0000000000000001
 	negb	%sil
 	sbbq	%rax, %rax
 	orq	%rdx, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
 func0000000000000008:                   # @func0000000000000008
@@ -33,14 +33,14 @@ func0000000000000008:                   # @func0000000000000008
 	xorl	%eax, %eax
 	testb	$1, %sil
 	cmoveq	%rdx, %rax
-	cmpq	%rdi, %rax
-	setb	%al
+	cmpq	%rax, %rdi
+	seta	%al
 	retq
 func0000000000000007:                   # @func0000000000000007
 	notq	%rdx
 	xorl	%eax, %eax
 	testb	$1, %sil
 	cmoveq	%rdx, %rax
-	cmpq	%rdi, %rax
-	setge	%al
+	cmpq	%rax, %rdi
+	setle	%al
 	retq

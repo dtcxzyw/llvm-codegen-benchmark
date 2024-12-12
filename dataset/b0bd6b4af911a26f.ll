@@ -24,9 +24,9 @@ entry:
   ret i32 %5
 }
 
-; 180 occurrences:
-; abc/optimized/verStream.c.ll
+; 181 occurrences:
 ; bdwgc/optimized/cordprnt.c.ll
+; boost/optimized/src.ll
 ; brotli/optimized/backward_references.c.ll
 ; clamav/optimized/bytecode_api.c.ll
 ; clamav/optimized/mpool.c.ll
@@ -50,7 +50,6 @@ entry:
 ; grpc/optimized/tcp_posix.cc.ll
 ; hdf5/optimized/H5Tbit.c.ll
 ; hermes/optimized/APFloat.cpp.ll
-; hermes/optimized/circular_raw_ostream.cpp.ll
 ; hyperscan/optimized/castlecompile.cpp.ll
 ; icu/optimized/package.ll
 ; libquic/optimized/aead_test.cc.ll
@@ -69,7 +68,6 @@ entry:
 ; linux/optimized/slub.ll
 ; linux/optimized/trace_probe.ll
 ; linux/optimized/virtio_net.ll
-; linux/optimized/wep.ll
 ; linux/optimized/xhci-ring.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/APINotesReader.cpp.ll
@@ -136,6 +134,7 @@ entry:
 ; mold/optimized/output-chunks.cc.S390X.cc.ll
 ; mold/optimized/output-chunks.cc.SPARC64.cc.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
+; nuttx/optimized/lib_gmtimer.c.ll
 ; oiio/optimized/exif.cpp.ll
 ; opencv/optimized/graycodepattern.cpp.ll
 ; opencv/optimized/persistence.cpp.ll
@@ -160,6 +159,8 @@ entry:
 ; php/optimized/phpdbg_utils.ll
 ; postgres/optimized/bufpage.ll
 ; postgres/optimized/datetime.ll
+; proxygen/optimized/HPACKEncoder.cpp.ll
+; proxygen/optimized/QPACKEncoder.cpp.ll
 ; qemu/optimized/hw_net_net_rx_pkt.c.ll
 ; qemu/optimized/net_eth.c.ll
 ; quickjs/optimized/libbf.ll
@@ -246,7 +247,7 @@ entry:
 define i32 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = trunc i64 %4 to i32
   ret i32 %5
 }
@@ -262,7 +263,8 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/src.ll
 ; hyperscan/optimized/castlecompile.cpp.ll
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; rust-analyzer-rs/optimized/5ac99zaxn7b9r9xv.ll
@@ -272,7 +274,7 @@ entry:
 define i32 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = trunc nuw i64 %4 to i32
   ret i32 %5
 }
@@ -313,7 +315,7 @@ entry:
 define i32 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 %1, %2
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   %5 = trunc i64 %4 to i32
   ret i32 %5
 }
@@ -346,7 +348,7 @@ entry:
 define i32 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = trunc i64 %4 to i32
   ret i32 %5
 }

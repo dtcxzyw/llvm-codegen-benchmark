@@ -1,5 +1,5 @@
 
-; 624 occurrences:
+; 683 occurrences:
 ; abc/optimized/cuddApprox.c.ll
 ; abc/optimized/cuddPriority.c.ll
 ; abc/optimized/satSolver.c.ll
@@ -18,6 +18,42 @@
 ; assimp/optimized/PlyParser.cpp.ll
 ; assimp/optimized/STEPFileReader.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/copy_segment_point.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/difference_pl_pl.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/get_ring.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/intersection_pl_pl.ll
+; boost/optimized/partition.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/src.ll
+; boost/optimized/union_pl_pl.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
+; boost/optimized/write_dsv.ll
 ; bullet3/optimized/btHeightfieldTerrainShape.ll
 ; c3c/optimized/sema_casts.c.ll
 ; casadi/optimized/constant_mx.cpp.ll
@@ -218,7 +254,6 @@
 ; llvm/optimized/CFGPrinter.cpp.ll
 ; llvm/optimized/CallPrinter.cpp.ll
 ; llvm/optimized/LegalizeDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; luajit/optimized/lj_strscan.ll
 ; luajit/optimized/lj_strscan_dyn.ll
@@ -233,7 +268,6 @@
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_referencing.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_measure.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
@@ -301,8 +335,6 @@
 ; openblas/optimized/dbdsqr.c.ll
 ; openblas/optimized/dbdsvdx.c.ll
 ; openblas/optimized/dgesvj.c.ll
-; openblas/optimized/dlacn2.c.ll
-; openblas/optimized/dlacon.c.ll
 ; openblas/optimized/dlaic1.c.ll
 ; openblas/optimized/dlanv2.c.ll
 ; openblas/optimized/dlasv2.c.ll
@@ -441,14 +473,12 @@
 ; postgres/optimized/rangetypes_typanalyze.ll
 ; postgres/optimized/selfuncs.ll
 ; postgres/optimized/subselect.ll
-; proj/optimized/aasincos.cpp.ll
 ; proj/optimized/adams.cpp.ll
 ; proj/optimized/aea.cpp.ll
 ; proj/optimized/aeqd.cpp.ll
 ; proj/optimized/bipc.cpp.ll
 ; proj/optimized/cart.cpp.ll
 ; proj/optimized/cea.cpp.ll
-; proj/optimized/collg.cpp.ll
 ; proj/optimized/conversion.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
 ; proj/optimized/eck2.cpp.ll
@@ -463,14 +493,12 @@
 ; proj/optimized/goode.cpp.ll
 ; proj/optimized/grids.cpp.ll
 ; proj/optimized/hatano.cpp.ll
-; proj/optimized/io.cpp.ll
 ; proj/optimized/isea.cpp.ll
 ; proj/optimized/lagrng.cpp.ll
 ; proj/optimized/lcc.cpp.ll
 ; proj/optimized/mbtfpp.cpp.ll
 ; proj/optimized/mbtfpq.cpp.ll
 ; proj/optimized/moll.cpp.ll
-; proj/optimized/nell_h.cpp.ll
 ; proj/optimized/ocea.cpp.ll
 ; proj/optimized/omerc.cpp.ll
 ; proj/optimized/ortho.cpp.ll
@@ -484,7 +512,6 @@
 ; proj/optimized/tmerc.cpp.ll
 ; proj/optimized/unitconvert.cpp.ll
 ; proj/optimized/vandg.cpp.ll
-; proj/optimized/wink2.cpp.ll
 ; protobuf/optimized/padding_optimizer.cc.ll
 ; proxygen/optimized/StructuredHeadersBuffer.cpp.ll
 ; qdrant-rs/optimized/1qcrz5nljonxi1bh.ll
@@ -607,7 +634,6 @@
 ; wireshark/optimized/packet-ixveriwave.c.ll
 ; wireshark/optimized/packet-nasdaq-itch.c.ll
 ; wireshark/optimized/packet-rmt-norm.c.ll
-; wireshark/optimized/packet-usb-i1d3.c.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; xgboost/optimized/aft_obj.cc.ll
 ; xgboost/optimized/rank_metric.cc.ll
@@ -624,6 +650,39 @@
 ; z3/optimized/qffp_tactic.cpp.ll
 ; z3/optimized/sls_engine.cpp.ll
 ; z3/optimized/theory_str.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1qb020ndphzxmvf33d06yonm0.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/2oaoo1au0mgurs9kk2rwi55od.ll
+; zed-rs/optimized/2tseelemdefm2fo39q21ogou2.ll
+; zed-rs/optimized/35jcvzd99rtsbpw1ntju6vgpx.ll
+; zed-rs/optimized/3tqegt9m5oad3ocos87azd3mb.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/4i7kbhd18au0o53jm2t49fldp.ll
+; zed-rs/optimized/4l6caaucwla3801rwx69seh61.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/5e9omh398ijohtd01awo2ssl8.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/5p9dc47ccf9r9dua6dccyemun.ll
+; zed-rs/optimized/5u1fvsvawpjspuq123qb03vz8.ll
+; zed-rs/optimized/5wqsqgdmsa85llhvjdoyyxdbt.ll
+; zed-rs/optimized/7diapbiz116z58qz43ov3nwc9.ll
+; zed-rs/optimized/7for60ncc55q4u0jy3fqr6omg.ll
+; zed-rs/optimized/8yk2p2sb65wc4uirlpwonhoj2.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/9r3tgj00e2sbbyanbvf1oqgns.ll
+; zed-rs/optimized/a1202jdosca6jpmc3o2s7syhq.ll
+; zed-rs/optimized/a3hrzugt78pdexsn4h7d7fddk.ll
+; zed-rs/optimized/ad3qos5opie5ae39m3c4ahrzq.ll
+; zed-rs/optimized/apge5vvp9hwixphamezb75yuv.ll
+; zed-rs/optimized/b0ehx4vbxawrtril1zkysl0b6.ll
+; zed-rs/optimized/bhm2bjcgbdwnubkgels8aniip.ll
+; zed-rs/optimized/bofvfc19lueo6mgf4butzdvgk.ll
+; zed-rs/optimized/bz6p16t2qoqszqvs08hoy0zu5.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
+; zed-rs/optimized/cmxsagf2j897pis1fg8tnwnp3.ll
+; zed-rs/optimized/cp92gkg5707l1e819dflws6md.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(i1 %0) #0 {
 entry:

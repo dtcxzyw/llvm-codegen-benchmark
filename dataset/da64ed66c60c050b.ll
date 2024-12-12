@@ -1,6 +1,7 @@
 
 ; 52 occurrences:
 ; abseil-cpp/optimized/time_zone_format.cc.ll
+; boost/optimized/src.ll
 ; folly/optimized/Conv.cpp.ll
 ; nix/optimized/built-path.ll
 ; nix/optimized/copy.ll
@@ -8,7 +9,6 @@
 ; nix/optimized/eval-cache.ll
 ; nix/optimized/fetchClosure.ll
 ; nix/optimized/installables.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-copy-closure.ll
 ; nix/optimized/position.ll
 ; nix/optimized/realisation.ll
@@ -53,7 +53,7 @@
 ; taskflow/optimized/visualization.cpp.ll
 ; taskflow/optimized/while_loop.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i8 %0) #0 {
+define i1 @func0000000000000024(i8 %0) #0 {
 entry:
   %1 = sext i8 %0 to i64
   %2 = add nsw i64 %1, -58
@@ -61,10 +61,11 @@ entry:
   ret i1 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/src.ll
 ; git/optimized/object-file.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i8 %0) #0 {
+define i1 @func0000000000000028(i8 %0) #0 {
 entry:
   %1 = sext i8 %0 to i64
   %2 = add nsw i64 %1, -58

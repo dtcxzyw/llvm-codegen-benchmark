@@ -37,7 +37,7 @@ entry:
   ret i64 %5
 }
 
-; 75 occurrences:
+; 77 occurrences:
 ; abc/optimized/ioReadBlifMv.c.ll
 ; arrow/optimized/encode_internal.cc.ll
 ; arrow/optimized/encode_internal_avx2.cc.ll
@@ -56,6 +56,7 @@ entry:
 ; hermes/optimized/RegExp.cpp.ll
 ; hermes/optimized/String.cpp.ll
 ; hwloc/optimized/distances.ll
+; imgui/optimized/imgui_draw.cpp.ll
 ; libquic/optimized/url_canon_relative.cc.ll
 ; libquic/optimized/url_util.cc.ll
 ; linux/optimized/extents_status.ll
@@ -74,6 +75,7 @@ entry:
 ; luajit/optimized/lj_strfmt_dyn.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
+; lvgl/optimized/lv_fs.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; mitsuba3/optimized/imageblock.cpp.ll
 ; mitsuba3/optimized/jitallocator.cpp.ll
@@ -149,7 +151,8 @@ entry:
   ret i64 %5
 }
 
-; 110 occurrences:
+; 111 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -269,7 +272,8 @@ entry:
   ret i64 %5
 }
 
-; 225 occurrences:
+; 226 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll

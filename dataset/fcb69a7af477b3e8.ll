@@ -16,7 +16,7 @@
 ; xgboost/optimized/io.cc.ll
 ; yosys/optimized/extract_reduce.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000551(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000aa1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = sub nsw i64 0, %3
@@ -31,7 +31,7 @@ entry:
 ; opencv/optimized/cap_mjpeg_decoder.cpp.ll
 ; opencv/optimized/container_avi.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000055c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000aac(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
   %4 = sub nsw i64 0, %3

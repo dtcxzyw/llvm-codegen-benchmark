@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; abc/optimized/ioWriteBook.c.ll
 ; abseil-cpp/optimized/discrete_distribution_test.cc.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
@@ -9,7 +9,6 @@
 ; darktable/optimized/introspection_lowlight.c.ll
 ; darktable/optimized/introspection_rgblevels.c.ll
 ; graphviz/optimized/ortho.c.ll
-; pbrt-v4/optimized/cameras.cpp.ll
 ; ruby/optimized/date_core.ll
 ; wireshark/optimized/sequence_diagram.cpp.ll
 ; Function Attrs: nounwind
@@ -17,7 +16,7 @@ define i1 @func0000000000000004(double %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = sitofp i32 %2 to double
-  %4 = fcmp olt double %3, %0
+  %4 = fcmp ogt double %0, %3
   ret i1 %4
 }
 
@@ -29,7 +28,7 @@ define i1 @func0000000000000007(double %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = sitofp i32 %2 to double
-  %4 = fcmp une double %3, %0
+  %4 = fcmp une double %0, %3
   ret i1 %4
 }
 
@@ -46,7 +45,7 @@ define i1 @func0000000000000008(double %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = sitofp i32 %2 to double
-  %4 = fcmp oeq double %3, %0
+  %4 = fcmp oeq double %0, %3
   ret i1 %4
 }
 
@@ -58,7 +57,7 @@ define i1 @func0000000000000005(double %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = sitofp i32 %2 to double
-  %4 = fcmp ult double %3, %0
+  %4 = fcmp ugt double %0, %3
   ret i1 %4
 }
 
@@ -78,7 +77,7 @@ define i1 @func0000000000000002(double %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = sitofp i32 %2 to double
-  %4 = fcmp ogt double %3, %0
+  %4 = fcmp olt double %0, %3
   ret i1 %4
 }
 
@@ -89,7 +88,7 @@ define i1 @func0000000000000003(double %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = sitofp i32 %2 to double
-  %4 = fcmp ugt double %3, %0
+  %4 = fcmp ult double %0, %3
   ret i1 %4
 }
 

@@ -16,7 +16,7 @@ entry:
   %2 = lshr i64 %1, 12
   %3 = and i64 %2, 63
   %4 = shl nuw i64 1, %3
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 
@@ -32,7 +32,7 @@ entry:
   %2 = lshr exact i64 %1, 3
   %3 = and i64 %2, 4294967295
   %4 = shl nuw i64 1, %3
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 
@@ -54,7 +54,7 @@ entry:
   %2 = lshr i64 %1, 15
   %3 = and i64 %2, 31
   %4 = shl nuw nsw i64 1, %3
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 
@@ -66,7 +66,7 @@ entry:
   %2 = lshr i64 %1, 10
   %3 = and i64 %2, 63
   %4 = shl nsw i64 -1, %3
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 

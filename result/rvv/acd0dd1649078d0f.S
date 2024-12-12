@@ -4,7 +4,7 @@ func000000000000001b:                   # @func000000000000001b
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
 	lui	a0, 61681
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	vsrl.vi	v10, v8, 4
 	vadd.vv	v8, v10, v8
 	addi	a0, a0, -241

@@ -9,7 +9,7 @@
 define ptr @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -8
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
@@ -27,7 +27,7 @@ entry:
 define ptr @func0000000000000004(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 7
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
@@ -64,17 +64,16 @@ entry:
 define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 536870911
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw i32, ptr %0, i64 %5
   ret ptr %6
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; abc/optimized/cecSolve.c.ll
 ; abc/optimized/extraUtilPerm.c.ll
 ; abc/optimized/giaEquiv.c.ll
-; cvc5/optimized/cnf_stream.cpp.ll
 ; icu/optimized/ucmstate.ll
 ; icu/optimized/uresdata.ll
 ; icu/optimized/utrie2.ll
@@ -88,7 +87,7 @@ entry:
 define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 268435455
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw i32, ptr %0, i64 %5
   ret ptr %6

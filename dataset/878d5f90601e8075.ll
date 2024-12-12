@@ -1,5 +1,5 @@
 
-; 162 occurrences:
+; 177 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
@@ -69,7 +69,6 @@
 ; linux/optimized/arp.ll
 ; linux/optimized/buffered_read.ll
 ; linux/optimized/build_policy.ll
-; linux/optimized/channels.ll
 ; linux/optimized/coalesce.ll
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/evgpe.ll
@@ -82,7 +81,6 @@
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_dp.ll
 ; linux/optimized/intel_psr.ll
-; linux/optimized/match.ll
 ; linux/optimized/md-bitmap.ll
 ; linux/optimized/ndisc.ll
 ; linux/optimized/nl80211.ll
@@ -117,11 +115,11 @@
 ; llvm/optimized/X86InstrMappingEmitter.cpp.ll
 ; llvm/optimized/X86RecognizableInstr.cpp.ll
 ; llvm/optimized/regexec.c.ll
+; lvgl/optimized/lv_tileview.ll
 ; meshoptimizer/optimized/simplifier.cpp.ll
 ; minetest/optimized/CFileList.cpp.ll
 ; minetest/optimized/localplayer.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/scene.cpp.ll
 ; nanobind/optimized/nb_func.cpp.ll
 ; oiio/optimized/tiffoutput.cpp.ll
@@ -146,6 +144,7 @@
 ; sqlite/optimized/sqlite3.ll
 ; tls-rs/optimized/1pt3w3786vo2dyk0.ll
 ; tls-rs/optimized/z2cy5bf5cayilz9.ll
+; turborepo-rs/optimized/b9mxqsqxupsuldn67x7vgrl1g.ll
 ; vcpkg/optimized/system.mac.cpp.ll
 ; wireshark/optimized/packet-cemi.c.ll
 ; wireshark/optimized/packet-dcc.c.ll
@@ -162,6 +161,22 @@
 ; yosys/optimized/Solver.ll
 ; yosys/optimized/rtlil.ll
 ; z3/optimized/parallel_tactical.cpp.ll
+; zed-rs/optimized/01a9u2e0i8wru57e54nrmyia7.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/2qu3ksqe5t2g2a0ursek881ws.ll
+; zed-rs/optimized/4hp0irs2cz4kzngruuptibfn4.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/553y3uma3m7pxzk4dar8hjwb6.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/6r3dn74hs4qkhjs23erjoyfu5.ll
+; zed-rs/optimized/8eg3c68hjyduepshag5n9ghr7.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
+; zed-rs/optimized/ag0lml678ueaz8wuwxuz1u0bn.ll
+; zed-rs/optimized/bxqgsrk0kqvq41wnnozsjp44k.ll
+; zed-rs/optimized/byetpqxts7g45vq87gqqiy5uv.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i8 %0, i8 %1) #0 {
 entry:
@@ -170,7 +185,9 @@ entry:
   ret i1 %3
 }
 
-; 81 occurrences:
+; 96 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; coreutils-rs/optimized/1vrxha14kpfjcqak.ll
 ; coreutils-rs/optimized/jdhpc8bthd0ylxt.ll
 ; darktable/optimized/introspection_highlights.c.ll
@@ -239,7 +256,6 @@ entry:
 ; openusd/optimized/diagnosticMgr.cpp.ll
 ; openusd/optimized/loopPatchBuilder.cpp.ll
 ; postgres/optimized/ginget.ll
-; postgres/optimized/ginlogic.ll
 ; postgres/optimized/nodeAgg.ll
 ; postgres/optimized/relcache.ll
 ; postgres/optimized/tablecmds.ll
@@ -252,6 +268,20 @@ entry:
 ; wireshark/optimized/packet-dcc.c.ll
 ; z3/optimized/mbp_arith.cpp.ll
 ; z3/optimized/realclosure.cpp.ll
+; zed-rs/optimized/01a9u2e0i8wru57e54nrmyia7.ll
+; zed-rs/optimized/0b032pjjfhzfqpvy5k7rem7aa.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/455yb6ma6j3a5kpbn5166o5rm.ll
+; zed-rs/optimized/4hp0irs2cz4kzngruuptibfn4.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/5zwiozx0qizoaz5dy257szmof.ll
+; zed-rs/optimized/6r3dn74hs4qkhjs23erjoyfu5.ll
+; zed-rs/optimized/7tab72wd3e4t2kifacclhb85x.ll
+; zed-rs/optimized/8eg3c68hjyduepshag5n9ghr7.ll
+; zed-rs/optimized/a9n822469hhbvmntwly5c3zys.ll
+; zed-rs/optimized/ag0lml678ueaz8wuwxuz1u0bn.ll
+; zed-rs/optimized/c8rrq6pnwhh8lrfnv140dr3y1.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i8 %0, i8 %1) #0 {
 entry:
@@ -284,15 +314,14 @@ entry:
 ; z3/optimized/dep_intervals.cpp.ll
 ; z3/optimized/interval_mpq.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i8 %0, i8 %1) #0 {
 entry:
   %2 = or disjoint i8 %0, %1
   %3 = icmp eq i8 %2, 0
   ret i1 %3
 }
 
-; 11 occurrences:
-; abc/optimized/giaPat2.c.ll
+; 10 occurrences:
 ; icu/optimized/ucnv_u7.ll
 ; icu/optimized/udataswp.ll
 ; image-rs/optimized/ptscn4jakoj4p9m.ll
@@ -311,7 +340,7 @@ entry:
   ret i1 %3
 }
 
-; 9 occurrences:
+; 11 occurrences:
 ; assimp/optimized/cencode.c.ll
 ; hermes/optimized/UTF8.cpp.ll
 ; linux/optimized/alps.ll
@@ -321,6 +350,8 @@ entry:
 ; spike/optimized/vsadd_vi.ll
 ; spike/optimized/vsadd_vv.ll
 ; spike/optimized/vsadd_vx.ll
+; zed-rs/optimized/4360dz3iad2ygf5m8hd0cmm88.ll
+; zed-rs/optimized/e7lqw1ynol01cwrgb8ri1wedr.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i8 %0, i8 %1) #0 {
 entry:
@@ -329,8 +360,7 @@ entry:
   ret i1 %3
 }
 
-; 2 occurrences:
-; icu/optimized/decNumber.ll
+; 1 occurrences:
 ; openjdk/optimized/superword.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i8 %0, i8 %1) #0 {
@@ -351,8 +381,18 @@ entry:
   ret i1 %3
 }
 
-; 7 occurrences:
-; linux/optimized/logips2pp.ll
+; 2 occurrences:
+; abc/optimized/giaPat2.c.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i8 %0, i8 %1) #0 {
+entry:
+  %2 = or i8 %0, %1
+  %3 = icmp samesign ult i8 %2, 2
+  ret i1 %3
+}
+
+; 6 occurrences:
 ; wireshark/optimized/packet-cemi.c.ll
 ; yosys/optimized/Solver.ll
 ; yyjson/optimized/yyjson.c.ll
@@ -360,7 +400,7 @@ entry:
 ; z3/optimized/interval_mpq.cpp.ll
 ; z3/optimized/nla_intervals.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i8 %0, i8 %1) #0 {
+define i1 @func000000000000002c(i8 %0, i8 %1) #0 {
 entry:
   %2 = or disjoint i8 %0, %1
   %3 = icmp ne i8 %2, 0
@@ -372,10 +412,31 @@ entry:
 ; llvm/optimized/X86Disassembler.cpp.ll
 ; wireshark/optimized/packet-dhcp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000038(i8 %0, i8 %1) #0 {
 entry:
   %2 = or disjoint i8 %0, %1
-  %3 = icmp ugt i8 %2, 3
+  %3 = icmp samesign ugt i8 %2, 3
+  ret i1 %3
+}
+
+; 2 occurrences:
+; icu/optimized/decNumber.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i8 %0, i8 %1) #0 {
+entry:
+  %2 = or i8 %0, %1
+  %3 = icmp samesign ugt i8 %2, 1
+  ret i1 %3
+}
+
+; 1 occurrences:
+; cpython/optimized/_codecs_jp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i8 %0, i8 %1) #0 {
+entry:
+  %2 = or disjoint i8 %0, %1
+  %3 = icmp ugt i8 %2, 102
   ret i1 %3
 }
 

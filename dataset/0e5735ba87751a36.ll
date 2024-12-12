@@ -1,5 +1,5 @@
 
-; 115 occurrences:
+; 112 occurrences:
 ; abc/optimized/giaForce.c.ll
 ; abc/optimized/giaJf.c.ll
 ; abc/optimized/giaLf.c.ll
@@ -60,15 +60,12 @@
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/print_settings.c.ll
 ; freetype/optimized/sdf.c.ll
-; gromacs/optimized/dlasd0.cpp.ll
 ; gromacs/optimized/dlasda.cpp.ll
 ; gromacs/optimized/dlasq4.cpp.ll
 ; gromacs/optimized/dsyevr.cpp.ll
 ; gromacs/optimized/pairlist_simd_kernel.cpp.ll
-; gromacs/optimized/slasd0.cpp.ll
 ; gromacs/optimized/slasda.cpp.ll
 ; gromacs/optimized/slasq4.cpp.ll
-; gromacs/optimized/slasq5.cpp.ll
 ; gromacs/optimized/ssyevr.cpp.ll
 ; ipopt/optimized/IpGenAugSystemSolver.ll
 ; libquic/optimized/exponentiation.c.ll
@@ -119,7 +116,7 @@
 define i64 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
@@ -152,7 +149,7 @@ entry:
 define i64 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 2
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
@@ -179,12 +176,12 @@ entry:
 define i64 @func000000000000000d(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
 
-; 122 occurrences:
+; 123 occurrences:
 ; abc/optimized/acecTree.c.ll
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/decompress.c.ll
@@ -261,6 +258,7 @@ entry:
 ; ncnn/optimized/scale_x86_avx512.cpp.ll
 ; ncnn/optimized/scale_x86_fma.cpp.ll
 ; nori/optimized/block.cpp.ll
+; nori/optimized/nanovg.c.ll
 ; ocio/optimized/GradingBSplineCurve.cpp.ll
 ; openblas/optimized/dbdsdc.c.ll
 ; opencv/optimized/binary_descriptor.cpp.ll
@@ -311,13 +309,12 @@ entry:
 define i64 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
 
-; 63 occurrences:
-; abc/optimized/acecSt.c.ll
+; 58 occurrences:
 ; darktable/optimized/introspection_tonemap.cc.ll
 ; graphviz/optimized/quad_prog_vpsc.c.ll
 ; gromacs/optimized/dbdsdc.cpp.ll
@@ -339,7 +336,6 @@ entry:
 ; gromacs/optimized/slasd8.cpp.ll
 ; gromacs/optimized/slasq3.cpp.ll
 ; gromacs/optimized/slasq4.cpp.ll
-; gromacs/optimized/slasq5.cpp.ll
 ; gromacs/optimized/slasq6.cpp.ll
 ; gromacs/optimized/sstebz.cpp.ll
 ; icu/optimized/swapimpl.ll
@@ -355,7 +351,6 @@ entry:
 ; openblas/optimized/dbdsvdx.c.ll
 ; openblas/optimized/dgejsv.c.ll
 ; openblas/optimized/dgelsx.c.ll
-; openblas/optimized/dgeqp3.c.ll
 ; openblas/optimized/dlaebz.c.ll
 ; openblas/optimized/dlalsd.c.ll
 ; openblas/optimized/dlarrd.c.ll
@@ -363,10 +358,8 @@ entry:
 ; openblas/optimized/dlasd7.c.ll
 ; openblas/optimized/dlasd8.c.ll
 ; openblas/optimized/dlasq5.c.ll
-; openblas/optimized/dlasq6.c.ll
 ; openblas/optimized/dstebz.c.ll
 ; openblas/optimized/dsyevx.c.ll
-; openblas/optimized/dsyevx_2stage.c.ll
 ; openblas/optimized/dtrevc.c.ll
 ; opencv/optimized/stereosgbm.cpp.ll
 ; openjdk/optimized/jchuff.ll
@@ -384,7 +377,7 @@ entry:
 define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 4
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
@@ -402,25 +395,54 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
-; gromacs/optimized/dlasq2.cpp.ll
-; gromacs/optimized/slasq2.cpp.ll
-; openblas/optimized/dlasq2.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000003(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl i32 %1, 2
-  %3 = add nuw nsw i32 %2, %0
-  %4 = sext i32 %3 to i64
-  ret i64 %4
-}
-
-; 9 occurrences:
+; 51 occurrences:
+; ceres/optimized/block_jacobi_preconditioner.cc.ll
+; ceres/optimized/inner_product_computer.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_2_2.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_2_3.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_2_4.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_2_d.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_3_3.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_3_4.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_3_6.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_3_9.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_3_d.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_3.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_4.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_6.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_8.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_9.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_4_d.cc.ll
+; ceres/optimized/partitioned_matrix_view_2_d_d.cc.ll
+; ceres/optimized/partitioned_matrix_view_3_3_3.cc.ll
+; ceres/optimized/partitioned_matrix_view_4_4_2.cc.ll
+; ceres/optimized/partitioned_matrix_view_4_4_3.cc.ll
+; ceres/optimized/partitioned_matrix_view_4_4_4.cc.ll
 ; ceres/optimized/partitioned_matrix_view_4_4_d.cc.ll
+; ceres/optimized/partitioned_matrix_view_d_d_d.cc.ll
+; ceres/optimized/residual_block.cc.ll
+; ceres/optimized/schur_eliminator_2_2_2.cc.ll
+; ceres/optimized/schur_eliminator_2_2_3.cc.ll
+; ceres/optimized/schur_eliminator_2_2_4.cc.ll
+; ceres/optimized/schur_eliminator_2_2_d.cc.ll
+; ceres/optimized/schur_eliminator_2_3_3.cc.ll
+; ceres/optimized/schur_eliminator_2_3_4.cc.ll
+; ceres/optimized/schur_eliminator_2_3_6.cc.ll
+; ceres/optimized/schur_eliminator_2_3_9.cc.ll
+; ceres/optimized/schur_eliminator_2_3_d.cc.ll
+; ceres/optimized/schur_eliminator_2_4_3.cc.ll
+; ceres/optimized/schur_eliminator_2_4_4.cc.ll
+; ceres/optimized/schur_eliminator_2_4_6.cc.ll
+; ceres/optimized/schur_eliminator_2_4_8.cc.ll
+; ceres/optimized/schur_eliminator_2_4_9.cc.ll
 ; ceres/optimized/schur_eliminator_2_4_d.cc.ll
+; ceres/optimized/schur_eliminator_2_d_d.cc.ll
+; ceres/optimized/schur_eliminator_3_3_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_2.cc.ll
+; ceres/optimized/schur_eliminator_4_4_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_4.cc.ll
 ; ceres/optimized/schur_eliminator_4_4_d.cc.ll
-; gromacs/optimized/dlasd0.cpp.ll
-; gromacs/optimized/slasd0.cpp.ll
+; ceres/optimized/schur_eliminator_d_d_d.cc.ll
 ; linux/optimized/i915_perf.ll
 ; openblas/optimized/dlalsa.c.ll
 ; openblas/optimized/dlasd0.c.ll
@@ -429,7 +451,7 @@ entry:
 define i64 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 1
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }

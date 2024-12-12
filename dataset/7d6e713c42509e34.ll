@@ -9,12 +9,11 @@ entry:
   ret i1 %4
 }
 
-; 43 occurrences:
+; 37 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd8.c.ll
 ; cmake/optimized/cover.c.ll
-; cmake/optimized/idna.c.ll
 ; darktable/optimized/Cr2Decompressor.cpp.ll
 ; darktable/optimized/DngDecoder.cpp.ll
 ; darktable/optimized/RafDecoder.cpp.ll
@@ -23,7 +22,6 @@ entry:
 ; hdf5/optimized/H5HFiblock.c.ll
 ; hdf5/optimized/H5HFsection.c.ll
 ; hyperscan/optimized/repeat.c.ll
-; libuv/optimized/idna.c.ll
 ; linux/optimized/8250_pci.ll
 ; linux/optimized/hdac_stream.ll
 ; linux/optimized/intel_dp_mst.ll
@@ -31,27 +29,23 @@ entry:
 ; linux/optimized/pcm_lib.ll
 ; linux/optimized/swiotlb.ll
 ; linux/optimized/vgacon.ll
-; linux/optimized/vlv_dsi.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/MicrosoftMangle.cpp.ll
 ; llvm/optimized/Scalarizer.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/CGUISpriteBank.cpp.ll
 ; minetest/optimized/guiChatConsole.cpp.ll
-; node/optimized/idna.ll
 ; nori/optimized/nanovg.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; php/optimized/pcre2_compile.ll
 ; qemu/optimized/block_vvfat.c.ll
 ; qemu/optimized/hw_block_m25p80.c.ll
 ; qemu/optimized/hw_display_vga.c.ll
-; raylib/optimized/rmodels.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; slurm/optimized/job_mgr.ll
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; tomlplusplus/optimized/toml.cpp.ll
-; z3/optimized/pb2bv_rewriter.cpp.ll
 ; zstd/optimized/cover.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
@@ -74,7 +68,7 @@ entry:
 ; llvm/optimized/MachineScheduler.cpp.ll
 ; llvm/optimized/SemaRISCV.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
-; llvm/optimized/X86TargetTransformInfo.cpp.ll
+; lvgl/optimized/lv_roller.ll
 ; qemu/optimized/block_vvfat.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/dot11decrypt_util.c.ll
@@ -103,7 +97,7 @@ entry:
   ret i1 %4
 }
 
-; 30 occurrences:
+; 29 occurrences:
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; darktable/optimized/Cr2Decompressor.cpp.ll
 ; darktable/optimized/DngDecoder.cpp.ll
@@ -120,7 +114,6 @@ entry:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; llvm/optimized/Legalizer.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/Scalarizer.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/X86FixupVectorConstants.cpp.ll
@@ -142,6 +135,21 @@ entry:
   ret i1 %4
 }
 
+; 6 occurrences:
+; cmake/optimized/idna.c.ll
+; darktable/optimized/UncompressedDecompressor.cpp.ll
+; libuv/optimized/idna.c.ll
+; linux/optimized/vlv_dsi.ll
+; node/optimized/idna.ll
+; raylib/optimized/rmodels.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = udiv i32 %1, %2
+  %4 = icmp samesign ult i32 %3, %0
+  ret i1 %4
+}
+
 ; 1 occurrences:
 ; darktable/optimized/DngDecoder.cpp.ll
 ; Function Attrs: nounwind
@@ -160,6 +168,16 @@ define i1 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = udiv i32 %1, %2
   %4 = icmp ule i32 %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; llvm/optimized/X86TargetTransformInfo.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = udiv i32 %1, %2
+  %4 = icmp samesign ugt i32 %3, %0
   ret i1 %4
 }
 

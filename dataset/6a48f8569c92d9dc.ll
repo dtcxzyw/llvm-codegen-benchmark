@@ -1,47 +1,8 @@
 
-; 5 occurrences:
-; libquic/optimized/p224-64.c.ll
-; postgres/optimized/d2s.ll
-; postgres/optimized/d2s_shlib.ll
-; postgres/optimized/d2s_srv.ll
-; quickjs/optimized/libbf.ll
-; Function Attrs: nounwind
-define i128 @func000000000000001b(i128 %0, i128 %1, i128 %2) #0 {
-entry:
-  %3 = mul nuw nsw i128 %1, %2
-  %4 = lshr i128 %3, 16
-  %5 = add nuw nsw i128 %4, %0
-  ret i128 %5
-}
-
-; 2 occurrences:
-; libquic/optimized/p224-64.c.ll
-; wolfssl/optimized/sp_int.c.ll
-; Function Attrs: nounwind
-define i128 @func0000000000000010(i128 %0, i128 %1, i128 %2) #0 {
-entry:
-  %3 = mul nuw i128 %1, %2
-  %4 = lshr i128 %3, 16
-  %5 = add i128 %4, %0
-  ret i128 %5
-}
-
-; 3 occurrences:
-; abseil-cpp/optimized/generators_test.cc.ll
-; libquic/optimized/p256-64.c.ll
-; wolfssl/optimized/sp_int.c.ll
-; Function Attrs: nounwind
-define i128 @func0000000000000013(i128 %0, i128 %1, i128 %2) #0 {
-entry:
-  %3 = mul nuw i128 %1, %2
-  %4 = lshr i128 %3, 64
-  %5 = add nuw nsw i128 %4, %0
-  ret i128 %5
-}
-
-; 77 occurrences:
+; 78 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
+; boost/optimized/src.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -123,6 +84,46 @@ entry:
   %3 = mul nuw i128 %1, %2
   %4 = lshr i128 %3, 64
   %5 = add nuw i128 %4, %0
+  ret i128 %5
+}
+
+; 5 occurrences:
+; libquic/optimized/p224-64.c.ll
+; postgres/optimized/d2s.ll
+; postgres/optimized/d2s_shlib.ll
+; postgres/optimized/d2s_srv.ll
+; quickjs/optimized/libbf.ll
+; Function Attrs: nounwind
+define i128 @func000000000000001b(i128 %0, i128 %1, i128 %2) #0 {
+entry:
+  %3 = mul nuw nsw i128 %1, %2
+  %4 = lshr i128 %3, 16
+  %5 = add nuw nsw i128 %0, %4
+  ret i128 %5
+}
+
+; 2 occurrences:
+; libquic/optimized/p224-64.c.ll
+; wolfssl/optimized/sp_int.c.ll
+; Function Attrs: nounwind
+define i128 @func0000000000000010(i128 %0, i128 %1, i128 %2) #0 {
+entry:
+  %3 = mul nuw i128 %1, %2
+  %4 = lshr i128 %3, 16
+  %5 = add i128 %0, %4
+  ret i128 %5
+}
+
+; 3 occurrences:
+; abseil-cpp/optimized/generators_test.cc.ll
+; libquic/optimized/p256-64.c.ll
+; wolfssl/optimized/sp_int.c.ll
+; Function Attrs: nounwind
+define i128 @func0000000000000013(i128 %0, i128 %1, i128 %2) #0 {
+entry:
+  %3 = mul nuw i128 %1, %2
+  %4 = lshr i128 %3, 64
+  %5 = add nuw nsw i128 %0, %4
   ret i128 %5
 }
 

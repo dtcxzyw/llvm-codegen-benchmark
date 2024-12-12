@@ -4,7 +4,7 @@
 ; qemu/optimized/hw_net_can_ctucan_core.c.ll
 ; wolfssl/optimized/ssl.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 7, i32 %0
   %4 = icmp eq i32 %1, 0

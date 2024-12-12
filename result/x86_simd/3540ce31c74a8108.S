@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	4                               # 0x4
-func0000000000000344:                   # @func0000000000000344
+func0000000000000e94:                   # @func0000000000000e94
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpblendd	$170, %ymm3, %ymm2, %ymm2       # ymm2 = ymm2[0],ymm3[1],ymm2[2],ymm3[3],ymm2[4],ymm3[5],ymm2[6],ymm3[7]
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
@@ -10,7 +10,7 @@ func0000000000000344:                   # @func0000000000000344
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000003c4:                   # @func00000000000003c4
+func0000000000000d94:                   # @func0000000000000d94
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpblendd	$170, %ymm3, %ymm2, %ymm2       # ymm2 = ymm2[0],ymm3[1],ymm2[2],ymm3[3],ymm2[4],ymm3[5],ymm2[6],ymm3[7]
 	vpcmpeqd	%ymm3, %ymm3, %ymm3

@@ -8,8 +8,8 @@ func0000000000000004:                   # @func0000000000000004
 	vmovapd	%zmm4, %zmm5
 	vxorpd	%zmm4, %zmm3, %zmm5 {%k2}
 	vxorpd	%zmm4, %zmm2, %zmm4 {%k1}
-	vmulpd	%zmm0, %zmm4, %zmm0
-	vmulpd	%zmm1, %zmm5, %zmm1
+	vmulpd	%zmm4, %zmm0, %zmm0
+	vmulpd	%zmm5, %zmm1, %zmm1
 	retq
 .LCPI1_0:
 	.quad	0x8000000000000000              # double -0
@@ -21,8 +21,8 @@ func0000000000000007:                   # @func0000000000000007
 	vmovapd	%zmm4, %zmm5
 	vxorpd	%zmm4, %zmm3, %zmm5 {%k2}
 	vxorpd	%zmm4, %zmm2, %zmm4 {%k1}
-	vmulpd	%zmm0, %zmm4, %zmm0
-	vmulpd	%zmm1, %zmm5, %zmm1
+	vmulpd	%zmm4, %zmm0, %zmm0
+	vmulpd	%zmm5, %zmm1, %zmm1
 	retq
 .LCPI2_0:
 	.quad	0x8000000000000000              # double -0
@@ -37,6 +37,6 @@ func0000000000000005:                   # @func0000000000000005
 	vmovapd	%zmm5, %zmm6
 	vxorpd	%zmm4, %zmm3, %zmm6 {%k2}
 	vxorpd	%zmm4, %zmm2, %zmm5 {%k1}
-	vmulpd	%zmm0, %zmm5, %zmm0
-	vmulpd	%zmm1, %zmm6, %zmm1
+	vmulpd	%zmm5, %zmm0, %zmm0
+	vmulpd	%zmm6, %zmm1, %zmm1
 	retq

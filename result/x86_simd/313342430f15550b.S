@@ -1,5 +1,5 @@
 func000000000000000a:                   # @func000000000000000a
-	vpslld	$2, %ymm2, %ymm2
+	vpslld	$4, %ymm2, %ymm2
 	vpternlogd	$150, %ymm1, %ymm0, %ymm2 # ymm2 = ymm2 ^ ymm0 ^ ymm1
 	vpslld	$16, %ymm2, %ymm0
 	retq

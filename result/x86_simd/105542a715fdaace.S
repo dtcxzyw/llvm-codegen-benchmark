@@ -18,7 +18,7 @@
 	.zero	2
 	.zero	2
 	.zero	2
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpcmpeqq	.LCPI0_0(%rip){1to4}, %ymm0, %k1
 	vmovdqu16	.LCPI0_1(%rip), %xmm1 {%k1} {z} # xmm1 {%k1} {z} = [58,58,58,58,u,u,u,u]
 	vptestnmq	%ymm0, %ymm0, %k1
@@ -59,7 +59,7 @@ func0000000000000011:                   # @func0000000000000011
 	.zero	2
 .LCPI1_5:
 	.short	406                             # 0x196
-func0000000000000044:                   # @func0000000000000044
+func0000000000000294:                   # @func0000000000000294
 	vpcmpltuq	.LCPI1_0(%rip){1to4}, %ymm0, %k1
 	vpbroadcastw	.LCPI1_5(%rip), %xmm1   # xmm1 = [406,406,406,406,406,406,406,406]
 	vmovdqu16	.LCPI1_2(%rip), %xmm1 {%k1} # xmm1 {%k1} = [470,470,470,470,u,u,u,u]

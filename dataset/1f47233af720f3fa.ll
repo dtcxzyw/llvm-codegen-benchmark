@@ -11,12 +11,11 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; linux/optimized/exfldio.ll
 ; linux/optimized/gss_krb5_crypto.ll
 ; linux/optimized/icl_dsi.ll
 ; linux/optimized/sbitmap.ll
-; linux/optimized/vlv_dsi.ll
 ; openspiel/optimized/SolverIF.cpp.ll
 ; wireshark/optimized/packet-oran.c.ll
 ; Function Attrs: nounwind
@@ -28,10 +27,19 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 1 occurrences:
+; linux/optimized/vlv_dsi.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %1, %2
+  %4 = udiv i32 %3, %0
+  %5 = icmp samesign ugt i32 %4, 63
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; linux/optimized/gss_krb5_crypto.ll
-; linux/optimized/intel_audio.ll
-; linux/optimized/sbitmap.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:

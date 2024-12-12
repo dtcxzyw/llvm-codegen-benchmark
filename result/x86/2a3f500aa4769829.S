@@ -1,4 +1,4 @@
-func0000000000000058:                   # @func0000000000000058
+func00000000000000b8:                   # @func00000000000000b8
 	leaq	-65521(%rsi), %rax
 	testb	$1, %dil
 	movl	$65520, %ecx                    # imm = 0xFFF0

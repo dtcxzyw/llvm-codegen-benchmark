@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 12 occurrences:
 ; duckdb/optimized/ub_duckdb_main.cpp.ll
 ; duckdb/optimized/ub_duckdb_planner_subquery.cpp.ll
 ; hermes/optimized/Path.cpp.ll
@@ -9,6 +9,9 @@
 ; openspiel/optimized/hex.cc.ll
 ; velox/optimized/ExprToSubfieldFilter.cpp.ll
 ; velox/optimized/Filter.cpp.ll
+; zed-rs/optimized/25n0f77f67cr7ewl17g7eja8w.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i1 %0, i64 %1, i64 %2) #0 {
 entry:

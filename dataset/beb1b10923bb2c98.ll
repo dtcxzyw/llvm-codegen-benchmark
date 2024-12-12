@@ -24,10 +24,10 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/matrix_operations.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000029(i64 %0, i32 %1) #0 {
+define i64 @func000000000000002b(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 1
-  %3 = shl nsw i64 %0, 4
+  %3 = shl nuw nsw i64 %0, 4
   %4 = select i1 %2, i64 %3, i64 16
   ret i64 %4
 }

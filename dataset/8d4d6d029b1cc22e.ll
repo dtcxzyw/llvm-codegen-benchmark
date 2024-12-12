@@ -1,21 +1,12 @@
 
-; 1 occurrences:
+; 3 occurrences:
+; boost/optimized/test_codecvt.ll
+; boost/optimized/test_fs.ll
 ; flac/optimized/stream_encoder.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i1 %1) #0 {
 entry:
   %2 = icmp ult i32 %0, 32
-  %3 = and i1 %2, %1
-  %4 = select i1 %3, i32 %0, i32 0
-  ret i32 %4
-}
-
-; 1 occurrences:
-; darktable/optimized/introspection_highlights.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i1 %1) #0 {
-entry:
-  %2 = icmp ugt i32 %0, 1
   %3 = and i1 %2, %1
   %4 = select i1 %3, i32 %0, i32 0
   ret i32 %4

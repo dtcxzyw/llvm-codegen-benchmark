@@ -160,7 +160,7 @@
 ; yosys/optimized/yosys.ll
 ; yosys/optimized/zinit.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001d4(i64 %0, i64 %1) #0 {
+define i1 @func00000000000003a4(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
   %3 = sub nuw nsw i64 %0, %2

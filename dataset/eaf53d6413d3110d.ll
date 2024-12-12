@@ -1,6 +1,5 @@
 
-; 5 occurrences:
-; icu/optimized/gregoimp.ll
+; 4 occurrences:
 ; linux/optimized/ohci-hcd.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; qemu/optimized/ui_console-vc.c.ll
@@ -9,7 +8,7 @@
 define i32 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -48
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = select i1 %0, i32 2147483647, i32 %4
   ret i32 %5
 }

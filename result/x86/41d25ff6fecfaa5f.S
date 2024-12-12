@@ -1,4 +1,4 @@
-func000000000000026b:                   # @func000000000000026b
+func00000000000008cb:                   # @func00000000000008cb
 	movl	%edi, %eax
 	imull	%esi, %eax
 	testl	%eax, %eax
@@ -6,11 +6,11 @@ func000000000000026b:                   # @func000000000000026b
 	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
 	xorl	%edx, %edx
 	divl	%esi
-	cmpl	%edi, %eax
-	setle	%al
+	cmpl	%eax, %edi
+	setge	%al
 	orb	%cl, %al
 	retq
-func000000000000028a:                   # @func000000000000028a
+func000000000000090a:                   # @func000000000000090a
 	movl	%esi, %eax
 	imull	%edi, %eax
 	cmpl	$536870912, %eax                # imm = 0x20000000
@@ -18,11 +18,11 @@ func000000000000028a:                   # @func000000000000028a
 	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
 	xorl	%edx, %edx
 	divl	%esi
-	cmpl	%edi, %eax
-	setl	%al
+	cmpl	%eax, %edi
+	setg	%al
 	orb	%cl, %al
 	retq
-func0000000000000688:                   # @func0000000000000688
+func0000000000001b18:                   # @func0000000000001b18
 	movl	%esi, %eax
 	imull	%edi, %eax
 	cmpl	$536870912, %eax                # imm = 0x20000000
@@ -30,7 +30,7 @@ func0000000000000688:                   # @func0000000000000688
 	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
 	xorl	%edx, %edx
 	divl	%esi
-	cmpl	%edi, %eax
-	setb	%al
+	cmpl	%eax, %edi
+	seta	%al
 	orb	%cl, %al
 	retq

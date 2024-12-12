@@ -12,7 +12,7 @@ entry:
   ret ptr %4
 }
 
-; 230 occurrences:
+; 222 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
@@ -25,7 +25,6 @@ entry:
 ; hdf5/optimized/H5Pocpl.c.ll
 ; libpng/optimized/pngrtran.c.ll
 ; lief/optimized/rsa.c.ll
-; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTImporterLookupTable.cpp.ll
 ; llvm/optimized/ASTMatchFinder.cpp.ll
@@ -93,12 +92,6 @@ entry:
 ; llvm/optimized/UncountedLocalVarsChecker.cpp.ll
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
-; opencv/optimized/canny.cpp.ll
-; opencv/optimized/channels.cpp.ll
-; opencv/optimized/gfluidimgproc.cpp.ll
-; opencv/optimized/posit.cpp.ll
-; opencv/optimized/tree.cpp.ll
-; openjdk/optimized/OGLRenderQueue.ll
 ; openjdk/optimized/classFileParser.ll
 ; openjdk/optimized/hb-face.ll
 ; openjdk/optimized/hb-ot-font.ll
@@ -128,7 +121,6 @@ entry:
 ; z3/optimized/bvarray2uf_rewriter.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/check_logic.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/cofactor_elim_term_ite.cpp.ll
 ; z3/optimized/collect_statistics_tactic.cpp.ll
 ; z3/optimized/decl_collector.cpp.ll
@@ -244,11 +236,11 @@ entry:
 ; z3/optimized/var_subst.cpp.ll
 ; z3/optimized/well_sorted.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(i64 %0, ptr %1) #0 {
+define ptr @func000000000000003f(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 20
-  %3 = getelementptr nusw i8, ptr %2, i64 %0
-  %4 = getelementptr nusw i8, ptr %3, i64 %0
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 20
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 %0
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %0
   ret ptr %4
 }
 
@@ -265,13 +257,30 @@ entry:
   ret ptr %4
 }
 
+; 7 occurrences:
+; llama.cpp/optimized/ggml.c.ll
+; opencv/optimized/canny.cpp.ll
+; opencv/optimized/channels.cpp.ll
+; opencv/optimized/gfluidimgproc.cpp.ll
+; opencv/optimized/posit.cpp.ll
+; opencv/optimized/tree.cpp.ll
+; openjdk/optimized/OGLRenderQueue.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003a(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 48
+  %3 = getelementptr nusw i8, ptr %2, i64 %0
+  %4 = getelementptr nusw i8, ptr %3, i64 %0
+  ret ptr %4
+}
+
 ; 1 occurrences:
 ; libquic/optimized/ec_asn1.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000028(i64 %0, ptr %1) #0 {
+define ptr @func000000000000003c(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 10
-  %3 = getelementptr nusw i8, ptr %2, i64 %0
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 10
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 %0
   %4 = getelementptr i8, ptr %3, i64 %0
   ret ptr %4
 }

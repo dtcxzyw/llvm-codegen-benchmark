@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	51                              # 0x33
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	vpmovqd	%ymm2, %xmm2
 	vpmovqd	%ymm1, %xmm1
 	vpcmpeqd	%xmm2, %xmm1, %k0

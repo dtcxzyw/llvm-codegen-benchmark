@@ -20,11 +20,10 @@ entry:
   ret i16 %4
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/intel_tv.ll
 ; linux/optimized/nf_conntrack_ftp.ll
-; linux/optimized/rsmisc.ll
 ; linux/optimized/vsprintf.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-5co-legacy.c.ll

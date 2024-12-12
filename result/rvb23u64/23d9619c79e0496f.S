@@ -26,3 +26,7 @@ func000000000000000a:                   # @func000000000000000a
 	add	a0, a0, a1
 	zext.w	a0, a0
 	ret
+func0000000000000001:                   # @func0000000000000001
+	sraiw	a1, a1, 18
+	addw	a0, a0, a1
+	ret

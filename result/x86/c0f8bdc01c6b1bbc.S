@@ -12,11 +12,12 @@ func0000000000000001:                   # @func0000000000000001
 	movzbl	%al, %eax
 	shll	$14, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func000000000000000a:                   # @func000000000000000a
+	xorl	%eax, %eax
+	cmpb	$49, %sil
+	setge	%al
+	leaq	1(%rax,%rax), %rcx
 	testb	$1, %dil
-	movl	$1280, %eax                     # imm = 0x500
-	movl	$3584, %ecx                     # imm = 0xE00
-	cmoveq	%rcx, %rax
-	cmpb	$4, %sil
-	cmovbq	%rcx, %rax
+	movl	$1, %eax
+	cmovneq	%rcx, %rax
 	retq

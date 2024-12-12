@@ -1,5 +1,5 @@
 
-; 84 occurrences:
+; 81 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; cpython/optimized/crossinterp.ll
@@ -16,40 +16,32 @@
 ; llvm/optimized/ASTUnit.cpp.ll
 ; llvm/optimized/ASTWriterStmt.cpp.ll
 ; llvm/optimized/AnalysisConsumer.cpp.ll
-; llvm/optimized/BackendUtil.cpp.ll
 ; llvm/optimized/CalledOnceCheck.cpp.ll
 ; llvm/optimized/CloneDetection.cpp.ll
 ; llvm/optimized/CodeGenAction.cpp.ll
-; llvm/optimized/Debugify.cpp.ll
 ; llvm/optimized/ExprEngineC.cpp.ll
+; llvm/optimized/IRMover.cpp.ll
 ; llvm/optimized/IndexBody.cpp.ll
 ; llvm/optimized/IndexDecl.cpp.ll
-; llvm/optimized/LTOBackend.cpp.ll
+; llvm/optimized/MachineRegionInfo.cpp.ll
 ; llvm/optimized/ModelConsumer.cpp.ll
 ; llvm/optimized/ModuleBuilder.cpp.ll
 ; llvm/optimized/ObjCMT.cpp.ll
 ; llvm/optimized/ObjectFilePCHContainerWriter.cpp.ll
+; llvm/optimized/PPLexerChange.cpp.ll
 ; llvm/optimized/ParseHLSL.cpp.ll
 ; llvm/optimized/ParseObjc.cpp.ll
 ; llvm/optimized/ParseOpenMP.cpp.ll
-; llvm/optimized/PassBuilder.cpp.ll
-; llvm/optimized/PassBuilderBindings.cpp.ll
-; llvm/optimized/PassInstrumentation.cpp.ll
-; llvm/optimized/PassTimingInfo.cpp.ll
 ; llvm/optimized/RewriteModernObjC.cpp.ll
 ; llvm/optimized/RewriteObjC.cpp.ll
-; llvm/optimized/SampleProfileProbe.cpp.ll
 ; llvm/optimized/ScheduleDAGInstrs.cpp.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
+; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaDeclObjC.cpp.ll
 ; llvm/optimized/SemaStmt.cpp.ll
-; llvm/optimized/StandardInstrumentations.cpp.ll
 ; llvm/optimized/Stmt.cpp.ll
-; llvm/optimized/TargetPassConfig.cpp.ll
-; llvm/optimized/ThinLTOCodeGenerator.cpp.ll
 ; llvm/optimized/ThreadSafety.cpp.ll
 ; llvm/optimized/ThreadSafetyCommon.cpp.ll
-; llvm/optimized/X86CodeGenPassBuilder.cpp.ll
 ; openspiel/optimized/dark_chess.cc.ll
 ; openspiel/optimized/gin_rummy.cc.ll
 ; openspiel/optimized/goofspiel.cc.ll
@@ -84,28 +76,40 @@
 ; velox/optimized/ComplexVector.cpp.ll
 ; velox/optimized/SubscriptUtil.cpp.ll
 ; verilator/optimized/V3OrderParallel.cpp.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(ptr %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000061(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 8192
   %4 = icmp eq i64 %3, 0
-  %5 = getelementptr nusw i8, ptr %1, i64 16
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 16
   %6 = select i1 %4, ptr %0, ptr %5
   ret ptr %6
 }
 
-; 5 occurrences:
-; llvm/optimized/IRMover.cpp.ll
-; llvm/optimized/MachineRegionInfo.cpp.ll
-; llvm/optimized/PPLexerChange.cpp.ll
-; llvm/optimized/SemaDecl.cpp.ll
-; llvm/optimized/Stmt.cpp.ll
+; 12 occurrences:
+; llvm/optimized/BackendUtil.cpp.ll
+; llvm/optimized/Debugify.cpp.ll
+; llvm/optimized/LTOBackend.cpp.ll
+; llvm/optimized/PassBuilder.cpp.ll
+; llvm/optimized/PassBuilderBindings.cpp.ll
+; llvm/optimized/PassInstrumentation.cpp.ll
+; llvm/optimized/PassTimingInfo.cpp.ll
+; llvm/optimized/SampleProfileProbe.cpp.ll
+; llvm/optimized/StandardInstrumentations.cpp.ll
+; llvm/optimized/TargetPassConfig.cpp.ll
+; llvm/optimized/ThinLTOCodeGenerator.cpp.ll
+; llvm/optimized/X86CodeGenPassBuilder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000031(ptr %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000041(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, 68719476736
+  %3 = and i64 %2, 2
   %4 = icmp eq i64 %3, 0
-  %5 = getelementptr nusw nuw i8, ptr %1, i64 1632
+  %5 = getelementptr nusw i8, ptr %1, i64 -32
   %6 = select i1 %4, ptr %0, ptr %5
   ret ptr %6
 }

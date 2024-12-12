@@ -6,22 +6,14 @@ func00000000000001c0:                   # @func00000000000001c0
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
-func00000000000000ea:                   # @func00000000000000ea
+func00000000000000ff:                   # @func00000000000000ff
 	andi	a2, a2, 255
 	slli	a2, a2, 1
 	add	a0, a0, a1
 	add	a0, a0, a2
 	addi	a0, a0, 14
 	ret
-func00000000000000c2:                   # @func00000000000000c2
-	andi	a2, a2, 255
-	slli	a0, a0, 2
-	slli	a2, a2, 2
-	add	a0, a0, a1
-	add	a0, a0, a2
-	addi	a0, a0, 12
-	ret
-func00000000000001ea:                   # @func00000000000001ea
+func00000000000001ff:                   # @func00000000000001ff
 	andi	a2, a2, 255
 	slli	a2, a2, 9
 	add	a0, a0, a1

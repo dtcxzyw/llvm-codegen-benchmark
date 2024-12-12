@@ -65,7 +65,7 @@
 define i1 @func0000000000000004(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = icmp ult i64 %4, 4294967296
   %6 = and i1 %5, %0
   ret i1 %6
@@ -75,36 +75,35 @@ entry:
 ; csmith/optimized/CVQualifiers.cpp.ll
 ; pybind11/optimized/test_stl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = icmp eq i64 %4, 1
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; csmith/optimized/CVQualifiers.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = icmp ne i64 %4, 1
   %6 = and i1 %5, %0
   ret i1 %6
 }
 
-; 2 occurrences:
-; cpython/optimized/Hacl_Hash_SHA3.ll
+; 1 occurrences:
 ; wireshark/optimized/packet-nvme.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = sub i64 0, %1
-  %5 = icmp ne i64 %3, %4
+  %4 = sub nsw i64 0, %3
+  %5 = icmp ne i64 %1, %4
   %6 = and i1 %5, %0
   ret i1 %6
 }
@@ -115,9 +114,9 @@ entry:
 define i1 @func0000000000000001(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = sub i64 0, %1
-  %5 = icmp eq i64 %3, %4
-  %6 = and i1 %5, %0
+  %4 = sub nsw i64 0, %3
+  %5 = icmp eq i64 %1, %4
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
@@ -126,10 +125,10 @@ entry:
 ; linux/optimized/eventpoll.ll
 ; linux/optimized/printk.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000008a(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = icmp sgt i64 %4, -1
   %6 = and i1 %5, %0
   ret i1 %6
@@ -138,23 +137,22 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/af_packet.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000088(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = icmp ugt i64 %4, 4095
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; linux/optimized/dm-ioctl.ll
-; linux/optimized/rseq.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = icmp sgt i64 %4, -1
   %6 = and i1 %5, %0
   ret i1 %6
@@ -163,22 +161,22 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/sat_local_search.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = icmp sgt i64 %4, -1
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; opencv/optimized/gms.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000aa(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = icmp sgt i64 %4, -1
   %6 = and i1 %5, %0
   ret i1 %6

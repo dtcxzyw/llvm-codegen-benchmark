@@ -20,6 +20,18 @@ func000000000000003e:                   # @func000000000000003e
 	addl	%esi, %eax
 	leal	(%rdi,%rax,4), %eax
 	retq
+func000000000000005f:                   # @func000000000000005f
+	movzbl	%dl, %eax
+	addl	%esi, %eax
+	shll	$12, %eax
+	addl	%edi, %eax
+	retq
+func000000000000005c:                   # @func000000000000005c
+	movzbl	%dl, %eax
+	addl	%esi, %eax
+	shll	$8, %eax
+	addl	%edi, %eax
+	retq
 func0000000000000000:                   # @func0000000000000000
 	movzbl	%dl, %eax
 	addl	%esi, %eax
@@ -56,11 +68,5 @@ func0000000000000060:                   # @func0000000000000060
 	movzbl	%dl, %eax
 	addl	%esi, %eax
 	shll	$5, %eax
-	addl	%edi, %eax
-	retq
-func000000000000005f:                   # @func000000000000005f
-	movzbl	%dl, %eax
-	addl	%esi, %eax
-	shll	$12, %eax
 	addl	%edi, %eax
 	retq

@@ -1,18 +1,4 @@
 
-; 3 occurrences:
-; linux/optimized/intel_fbc.ll
-; linux/optimized/rx.ll
-; qemu/optimized/target_riscv_vector_helper.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000198(i16 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 63
-  %3 = icmp ne i64 %2, 0
-  %4 = icmp ne i16 %0, 0
-  %5 = or i1 %4, %3
-  ret i1 %5
-}
-
 ; 7 occurrences:
 ; assimp/optimized/OgreBinarySerializer.cpp.ll
 ; linux/optimized/filter.ll
@@ -22,7 +8,7 @@ entry:
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i16 %0, i64 %1) #0 {
+define i1 @func0000000000000302(i16 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 66
   %3 = icmp ne i64 %2, 66
@@ -41,7 +27,7 @@ entry:
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; spike/optimized/f16_roundToInt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i16 %0, i64 %1) #0 {
+define i1 @func0000000000000058(i16 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
   %3 = icmp eq i64 %2, 0
@@ -72,7 +58,7 @@ entry:
 ; wireshark/optimized/text_import_scanner.c.ll
 ; wireshark/optimized/uat_load.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i16 %0, i64 %1) #0 {
+define i1 @func0000000000000042(i16 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1
   %3 = icmp eq i64 %2, 0
@@ -82,41 +68,54 @@ entry:
 }
 
 ; 3 occurrences:
+; linux/optimized/intel_fbc.ll
+; linux/optimized/rx.ll
+; llvm/optimized/ASTReader.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000318(i16 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 2048
+  %3 = icmp ne i64 %2, 0
+  %4 = icmp ne i16 %0, 0
+  %5 = or i1 %4, %3
+  ret i1 %5
+}
+
+; 3 occurrences:
 ; linux/optimized/i9xx_plane.ll
 ; linux/optimized/intel_crtc.ll
 ; linux/optimized/intel_display.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000118(i16 %0, i64 %1) #0 {
+define i1 @func0000000000000218(i16 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 196608
   %3 = icmp ne i64 %2, 0
   %4 = icmp ugt i16 %0, 4
   %5 = or i1 %3, %4
-  ret i1 %5
-}
-
-; 2 occurrences:
-; linux/optimized/intel_display_device.ll
-; linux/optimized/intel_dmc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000190(i16 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 196608
-  %3 = icmp ne i64 %2, 0
-  %4 = icmp ugt i16 %0, 4
-  %5 = or i1 %4, %3
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; linux/optimized/intel_display.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i16 %0, i64 %1) #0 {
+define i1 @func0000000000000118(i16 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 16777216
   %3 = icmp ne i64 %2, 0
   %4 = icmp ult i16 %0, 3
   %5 = or i1 %3, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; linux/optimized/intel_dmc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000310(i16 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 8
+  %3 = icmp ne i64 %2, 0
+  %4 = icmp ugt i16 %0, 13
+  %5 = or i1 %4, %3
   ret i1 %5
 }
 

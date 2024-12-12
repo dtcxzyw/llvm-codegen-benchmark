@@ -1,5 +1,5 @@
 
-; 44 occurrences:
+; 42 occurrences:
 ; actix-rs/optimized/x5wdyzwp9hx5e8t.ll
 ; clap-rs/optimized/58cs3pckwcmstm46.ll
 ; coreutils-rs/optimized/3ur69v3u3junjdj1.ll
@@ -19,7 +19,6 @@
 ; ockam-rs/optimized/59na08zlxqp9p17s.ll
 ; ockam-rs/optimized/8oe7xo67uolatn4.ll
 ; qdrant-rs/optimized/1pz5o1a0o8hhdk1i.ll
-; qdrant-rs/optimized/2902jtznwzvq3euo.ll
 ; regex-rs/optimized/1ezs5fkqov3a1527.ll
 ; regex-rs/optimized/4ilpqr23cw58vyva.ll
 ; regex-rs/optimized/4kz6hm699qdzx6df.ll
@@ -39,15 +38,14 @@
 ; typst-rs/optimized/22a0ijn9jg8ilzgs.ll
 ; typst-rs/optimized/4p30esqzpn2o5olu.ll
 ; wasmtime-rs/optimized/1swth1h1xb2uamky.ll
-; wasmtime-rs/optimized/2tdzc7hgano6927f.ll
 ; wasmtime-rs/optimized/4op38pthexwwd97b.ll
 ; wasmtime-rs/optimized/fn3cxi5qpl58ixq.ll
 ; wasmtime-rs/optimized/qzwdmrmrn8c2iza.ll
 ; wasmtime-rs/optimized/r9f6jef0e11b5fk.ll
 ; Function Attrs: nounwind
-define { ptr, i64 } @func000000000000002a(i64 %0, i64 %1, ptr %2) #0 {
+define { ptr, i64 } @func000000000000003a(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 16
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 16
   %4 = getelementptr nusw i8, ptr %3, i64 %1
   %5 = insertvalue { ptr, i64 } poison, ptr %4, 0
   %6 = sub nuw i64 %0, %1

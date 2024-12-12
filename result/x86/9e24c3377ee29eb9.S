@@ -1,10 +1,10 @@
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	movzbl	%dl, %eax
 	orq	%rsi, %rax
 	cmpq	%rdi, %rax
 	seta	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	movzbl	%dl, %eax
 	orq	%rsi, %rax
 	cmpq	%rdi, %rax
@@ -16,49 +16,49 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	%rdi, %rax
 	sete	%al
 	retq
-func0000000000000015:                   # @func0000000000000015
+func0000000000000025:                   # @func0000000000000025
 	movl	%edx, %eax
 	orq	%rsi, %rax
 	cmpq	%rdi, %rax
 	setbe	%al
 	retq
-func0000000000000019:                   # @func0000000000000019
+func0000000000000029:                   # @func0000000000000029
 	movl	%edx, %eax
 	orq	%rsi, %rax
 	cmpq	%rdi, %rax
 	setae	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	movl	%edx, %eax
 	orq	%rsi, %rax
 	cmpq	%rdi, %rax
 	setg	%al
 	retq
-func0000000000000017:                   # @func0000000000000017
+func0000000000000027:                   # @func0000000000000027
 	movl	%edx, %eax
 	orq	%rsi, %rax
 	cmpq	%rdi, %rax
 	setle	%al
 	retq
-func000000000000001b:                   # @func000000000000001b
+func000000000000002b:                   # @func000000000000002b
 	movl	%edx, %eax
 	orq	%rsi, %rax
 	cmpq	%rdi, %rax
 	setge	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	movl	%edx, %eax
 	orq	%rsi, %rax
 	cmpq	%rdi, %rax
 	setl	%al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	movl	%edx, %eax
 	orq	%rsi, %rax
 	cmpq	%rdi, %rax
 	setne	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movl	%edx, %eax
 	orq	%rsi, %rax
 	cmpq	%rdi, %rax

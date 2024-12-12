@@ -19,7 +19,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-bn_prime.ll
 ; openssl/optimized/libcrypto-shlib-bn_prime.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, %1
   %3 = icmp ugt i64 %2, %0
@@ -30,7 +30,7 @@ entry:
 ; ceres/optimized/polynomial.cc.ll
 ; fmt/optimized/format-test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, %1
   %3 = icmp eq i64 %2, %0
@@ -54,7 +54,7 @@ entry:
 ; llama.cpp/optimized/ggml.c.ll
 ; pybind11/optimized/test_numpy_array.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, %1
   %3 = icmp eq i64 %2, %0
@@ -64,7 +64,7 @@ entry:
 ; 1 occurrences:
 ; faiss/optimized/VectorTransform.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, %1
   %3 = icmp ugt i64 %2, %0
@@ -74,7 +74,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/mathmodule.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw i64 %1, %1
   %3 = icmp ugt i64 %2, %0

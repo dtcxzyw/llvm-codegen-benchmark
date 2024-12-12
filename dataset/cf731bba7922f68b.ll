@@ -1,12 +1,11 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; cpython/optimized/unicodeobject.ll
 ; linux/optimized/i915_gem_pages.ll
 ; linux/optimized/i915_gem_shmem.ll
 ; linux/optimized/i915_gem_ttm.ll
 ; linux/optimized/i915_gem_userptr.ll
 ; linux/optimized/i915_gpu_error.ll
-; linux/optimized/i915_mm.ll
 ; linux/optimized/intel_ggtt_fencing.ll
 ; linux/optimized/intel_uc_fw.ll
 ; linux/optimized/mapping.ll

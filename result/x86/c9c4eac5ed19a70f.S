@@ -24,6 +24,13 @@ func0000000000000000:                   # @func0000000000000000
 	shrq	$35, %rcx
 	leal	1(%rdi,%rcx), %eax
 	retq
+func0000000000000009:                   # @func0000000000000009
+	movl	%edi, %eax
+	movl	$2863311531, %ecx               # imm = 0xAAAAAAAB
+	imulq	%rax, %rcx
+	shrq	$35, %rcx
+	leal	1900(%rsi,%rcx), %eax
+	retq
 func0000000000000006:                   # @func0000000000000006
 	movl	%esi, %eax
 	imulq	$91625969, %rax, %rax           # imm = 0x57619F1

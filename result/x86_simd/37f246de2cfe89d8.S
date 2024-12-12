@@ -23,7 +23,7 @@ func000000000000000f:                   # @func000000000000000f
 	vpcmpeqb	.LCPI0_0(%rip), %xmm1, %k1
 	vpbroadcastd	.LCPI0_1(%rip), %xmm1   # xmm1 = [1,1,1,1]
 	vpbroadcastd	.LCPI0_2(%rip), %xmm1 {%k1} # xmm1 {%k1} = [2,2,2,2]
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
 .LCPI1_0:
@@ -51,7 +51,7 @@ func0000000000000022:                   # @func0000000000000022
 	vpcmpltub	.LCPI1_0(%rip), %xmm1, %k1
 	vpbroadcastd	.LCPI1_1(%rip), %xmm1   # xmm1 = [4294967231,4294967231,4294967231,4294967231]
 	vpbroadcastd	.LCPI1_2(%rip), %xmm1 {%k1} # xmm1 {%k1} = [4294967232,4294967232,4294967232,4294967232]
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
 .LCPI2_0:
@@ -146,7 +146,7 @@ func0000000000000047:                   # @func0000000000000047
 	vpcmpnleub	.LCPI5_0(%rip), %xmm1, %k1
 	vpbroadcastd	.LCPI5_1(%rip), %xmm1   # xmm1 = [1,1,1,1]
 	vpbroadcastd	.LCPI5_2(%rip), %xmm1 {%k1} # xmm1 {%k1} = [2,2,2,2]
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
 .LCPI6_0:
@@ -174,7 +174,7 @@ func0000000000000040:                   # @func0000000000000040
 	vpcmpnleub	.LCPI6_0(%rip), %xmm1, %k1
 	vpbroadcastd	.LCPI6_1(%rip), %xmm1   # xmm1 = [12288,12288,12288,12288]
 	vpbroadcastd	.LCPI6_2(%rip), %xmm1 {%k1} # xmm1 {%k1} = [1048576,1048576,1048576,1048576]
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
 .LCPI7_0:
@@ -202,6 +202,6 @@ func0000000000000027:                   # @func0000000000000027
 	vpcmpltub	.LCPI7_0(%rip), %xmm1, %k1
 	vpbroadcastd	.LCPI7_1(%rip), %xmm1   # xmm1 = [5,5,5,5]
 	vpbroadcastd	.LCPI7_2(%rip), %xmm1 {%k1} # xmm1 {%k1} = [1,1,1,1]
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq

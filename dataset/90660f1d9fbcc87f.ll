@@ -9,7 +9,7 @@ entry:
   ret i8 %2
 }
 
-; 31 occurrences:
+; 30 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; lief/optimized/ccm.c.ll
 ; llvm/optimized/BitstreamReader.cpp.ll
@@ -22,7 +22,6 @@ entry:
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/moment.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/xml.cpp.ll
 ; softposit-rs/optimized/1lokjdca9mvxc3pe.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
@@ -49,7 +48,7 @@ entry:
   ret i8 %2
 }
 
-; 86 occurrences:
+; 89 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -107,6 +106,7 @@ entry:
 ; luajit/optimized/lj_crecord.ll
 ; luajit/optimized/lj_crecord_dyn.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
+; lvgl/optimized/lv_obj_draw.ll
 ; minetest/optimized/base64.cpp.ll
 ; mitsuba3/optimized/appender.cpp.ll
 ; nanobind/optimized/nb_ndarray.cpp.ll
@@ -127,7 +127,6 @@ entry:
 ; redis/optimized/script_lua.ll
 ; redis/optimized/sds.ll
 ; softposit-rs/optimized/kf9u47qfx5x7qom.ll
-; spike/optimized/clz8.ll
 ; spike/optimized/csrs.ll
 ; spike/optimized/vector_unit.ll
 ; tev/optimized/Common.cpp.ll
@@ -135,6 +134,9 @@ entry:
 ; tev/optimized/Ipc.cpp.ll
 ; wasmtime-rs/optimized/320v7ko74ke0k4k4.ll
 ; wireshark/optimized/dct3trace.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i64 %0) #0 {
@@ -196,18 +198,19 @@ entry:
   ret i8 %2
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; linux/optimized/yenta_socket.ll
 ; lz4/optimized/lz4.c.ll
 ; openusd/optimized/lz4.cpp.ll
 ; recastnavigation/optimized/fastlz.c.ll
+; spike/optimized/clz8.ll
 ; yosys/optimized/fastlz.ll
 ; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i8
-  %2 = shl nuw i8 %1, 5
+  %2 = shl nuw i8 %1, 4
   ret i8 %2
 }
 

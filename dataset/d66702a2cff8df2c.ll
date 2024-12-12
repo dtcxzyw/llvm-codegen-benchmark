@@ -27,9 +27,10 @@ entry:
   ret float %4
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; bullet3/optimized/btMultiBodySphericalJointLimit.ll
 ; darktable/optimized/introspection_filmic.c.ll
+; lvgl/optimized/lv_arc.ll
 ; meshlab/optimized/VisibilityCheck.cpp.ll
 ; meshlab/optimized/decorate_raster_proj.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll

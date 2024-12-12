@@ -1,8 +1,7 @@
 
-; 132 occurrences:
+; 131 occurrences:
 ; bdwgc/optimized/gc.c.ll
-; brotli/optimized/brotli_bit_stream.c.ll
-; brotli/optimized/histogram.c.ll
+; boost/optimized/to_chars.ll
 ; ceres/optimized/schur_eliminator_2_2_2.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_3.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_4.cc.ll
@@ -75,13 +74,11 @@
 ; meshlab/optimized/meshfilter.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; opencv/optimized/dxt.cpp.ll
-; openjdk/optimized/ciMethod.ll
 ; openjdk/optimized/shenandoahCollectorPolicy.ll
 ; openmpi/optimized/opal_copy_functions_heterogeneous.ll
 ; openssl/optimized/libcrypto-lib-bn_exp.ll
 ; openssl/optimized/libcrypto-shlib-bn_exp.ll
 ; postgres/optimized/network.ll
-; qemu/optimized/ui_vnc-enc-zrle.c.ll
 ; quantlib/optimized/analyticcevengine.ll
 ; quantlib/optimized/cevrndcalculator.ll
 ; quantlib/optimized/gaussiannoncentralchisquaredpolynomial.ll
@@ -98,13 +95,14 @@
 ; ropey-rs/optimized/5d7dflnnetgxg8sm.ll
 ; ruby/optimized/eval.ll
 ; ruby/optimized/pack.ll
+; rust-analyzer-rs/optimized/266k6bqg3m0kg73d.ll
 ; rust-analyzer-rs/optimized/4hdqg9y9agw1ekve.ll
 ; rustfmt-rs/optimized/3xcdaapyewyrfogi.ll
 ; slurm/optimized/data_parser_v0_0_40_la-parsing.ll
 ; slurm/optimized/data_parser_v0_0_41_la-parsing.ll
 ; slurm/optimized/jobcomp_common.ll
 ; softposit-rs/optimized/4kf6wfleft5henpt.ll
-; spike/optimized/f128_classify.ll
+; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
@@ -128,6 +126,7 @@
 ; wireshark/optimized/service_response_time_dialog.cpp.ll
 ; yosys/optimized/fstapi.ll
 ; z3/optimized/dl_util.cpp.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; zstd/optimized/zstd_v05.c.ll
 ; zstd/optimized/zstd_v06.c.ll

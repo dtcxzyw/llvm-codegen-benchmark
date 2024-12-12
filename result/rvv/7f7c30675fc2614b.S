@@ -8,7 +8,7 @@ func0000000000000044:                   # @func0000000000000044
 	vadd.vi	v10, v12, 4
 	vmerge.vvm	v8, v10, v8, v0
 	ret
-func0000000000000314:                   # @func0000000000000314
+func0000000000000614:                   # @func0000000000000614
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vmseq.vi	v0, v10, -1
 	vsetvli	zero, zero, e32, m2, ta, ma

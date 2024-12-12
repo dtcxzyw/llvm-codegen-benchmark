@@ -1,6 +1,7 @@
 
-; 42 occurrences:
+; 43 occurrences:
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/alloc_lib.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll
 ; linux/optimized/dma-iommu.ll
 ; linux/optimized/setup-bus.ll

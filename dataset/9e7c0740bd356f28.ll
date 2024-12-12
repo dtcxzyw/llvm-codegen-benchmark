@@ -1,10 +1,9 @@
 
-; 18 occurrences:
+; 17 occurrences:
 ; cmake/optimized/cmCTestRunTest.cxx.ll
 ; cvc5/optimized/portfolio_driver.cpp.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; ninja/optimized/metrics.cc.ll
-; openmpi/optimized/threads_pthreads_yield.ll
 ; tev/optimized/Channel.cpp.ll
 ; tev/optimized/ClipboardImageLoader.cpp.ll
 ; tev/optimized/EmptyImageLoader.cpp.ll

@@ -16,9 +16,8 @@ entry:
   ret i64 %7
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; flatbuffers/optimized/flatc.cpp.ll
-; linux/optimized/reciprocal_div.ll
 ; llvm/optimized/PassBuilderPipelines.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003f(i64 %0, i64 %1, i64 %2) #0 {
@@ -27,6 +26,20 @@ entry:
   %4 = shl nuw nsw i64 %1, 8
   %5 = or disjoint i64 %4, %3
   %6 = and i64 %0, 255
+  %7 = or disjoint i64 %5, %6
+  ret i64 %7
+}
+
+; 2 occurrences:
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/6pnl53dvchkj2615muwn1tztk.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003b(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %2, 32
+  %4 = shl nuw i64 %1, 48
+  %5 = or disjoint i64 %4, %3
+  %6 = and i64 %0, 4294901760
   %7 = or disjoint i64 %5, %6
   ret i64 %7
 }

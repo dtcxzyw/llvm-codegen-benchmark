@@ -13,7 +13,7 @@
 ; openjdk/optimized/zRelocationSet.ll
 ; openjdk/optimized/zRelocationSetSelector.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
   %4 = icmp eq i32 %1, 1
@@ -21,7 +21,7 @@ entry:
   ret i32 %5
 }
 
-; 23 occurrences:
+; 20 occurrences:
 ; hwloc/optimized/topology-x86.ll
 ; openjdk/optimized/arguments.ll
 ; openjdk/optimized/bytecodeUtils.ll
@@ -36,36 +36,32 @@ entry:
 ; postgres/optimized/array_userfuncs.ll
 ; postgres/optimized/arrayfuncs.ll
 ; postgres/optimized/ginfast.ll
-; postgres/optimized/hashpage.ll
-; postgres/optimized/hashsort.ll
 ; postgres/optimized/heapam.ll
 ; postgres/optimized/list.ll
 ; postgres/optimized/lwlock.ll
 ; postgres/optimized/nodeHash.ll
 ; postgres/optimized/scan.ll
 ; postgres/optimized/typcache.ll
-; wireshark/optimized/packet-dnp.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000054(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
-  %4 = icmp ult i32 %1, 2
+  %4 = icmp samesign ult i32 %1, 2
   %5 = select i1 %4, i32 %0, i32 %3
   ret i32 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; openjdk/optimized/c1_LIRGenerator.ll
 ; openjdk/optimized/shenandoahEvacOOMHandler.ll
 ; postgres/optimized/ginfast.ll
-; postgres/optimized/heapam.ll
 ; postgres/optimized/nodeHash.ll
 ; postgres/optimized/tableam.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000074(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 1, %2
-  %4 = icmp ult i32 %1, 2
+  %4 = icmp samesign ult i32 %1, 2
   %5 = select i1 %4, i32 %0, i32 %3
   ret i32 %5
 }
@@ -73,7 +69,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/vectset.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 1, %2
   %4 = icmp eq i32 %1, 1
@@ -97,10 +93,10 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/luckyRead.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 16, %2
-  %4 = icmp ult i32 %1, 7
+  %4 = icmp samesign ult i32 %1, 7
   %5 = select i1 %4, i32 %0, i32 %3
   ret i32 %5
 }
@@ -113,6 +109,17 @@ define i32 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 16, %2
   %4 = icmp slt i32 %1, 7
+  %5 = select i1 %4, i32 %0, i32 %3
+  ret i32 %5
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-dnp.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl nuw i32 1, %2
+  %4 = icmp ult i32 %1, 8
   %5 = select i1 %4, i32 %0, i32 %3
   ret i32 %5
 }

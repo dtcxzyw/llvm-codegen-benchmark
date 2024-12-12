@@ -21,7 +21,7 @@ entry:
   ret i64 %3
 }
 
-; 58 occurrences:
+; 63 occurrences:
 ; abc/optimized/abcRestruct.c.ll
 ; abc/optimized/cuddTable.c.ll
 ; abc/optimized/darLib.c.ll
@@ -47,8 +47,10 @@ entry:
 ; icu/optimized/ucoleitr.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; linux/optimized/hcd.ll
+; linux/optimized/hda_auto_parser.ll
 ; linux/optimized/rwsem.ll
 ; luajit/optimized/buildvm.ll
+; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
 ; openjdk/optimized/os_perf_linux.ll
 ; openjdk/optimized/vframeArray.ll
@@ -66,8 +68,11 @@ entry:
 ; php/optimized/zend_compile.ll
 ; php/optimized/zend_opcode.ll
 ; postgres/optimized/gindatapage.ll
+; postgres/optimized/ruleutils.ll
+; qemu/optimized/hw_vfio_pci.c.ll
 ; raylib/optimized/rmodels.c.ll
 ; raylib/optimized/rtext.c.ll
+; recastnavigation/optimized/DetourLocalBoundary.cpp.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; redis/optimized/expire.ll
 ; redis/optimized/redis-benchmark.ll
@@ -89,12 +94,13 @@ entry:
   ret i64 %3
 }
 
-; 25 occurrences:
+; 37 occurrences:
 ; abc/optimized/dsdCheck.c.ll
-; abc/optimized/fxuMatrix.c.ll
 ; cpython/optimized/_zoneinfo.ll
+; cpython/optimized/gcmodule.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; linux/optimized/binfmt_elf.ll
+; linux/optimized/cpuidle.ll
 ; linux/optimized/fast_commit.ll
 ; linux/optimized/kcore.ll
 ; linux/optimized/rsparser.ll
@@ -103,14 +109,25 @@ entry:
 ; php/optimized/shared_alloc_shm.ll
 ; postgres/optimized/backend_status.ll
 ; postgres/optimized/bufmgr.ll
+; postgres/optimized/catcache.ll
+; postgres/optimized/copyfrom.ll
+; postgres/optimized/copyfromparse.ll
+; postgres/optimized/copyto.ll
+; postgres/optimized/execExpr.ll
+; postgres/optimized/execExprInterp.ll
 ; postgres/optimized/geqo_erx.ll
+; postgres/optimized/heaptuple.ll
+; postgres/optimized/indextuple.ll
 ; postgres/optimized/isolationtester.ll
 ; postgres/optimized/pg_recvlogical.ll
 ; postgres/optimized/pgbench.ll
 ; postgres/optimized/receivelog.ll
 ; postgres/optimized/regcomp.ll
 ; postgres/optimized/sqlda.ll
+; postgres/optimized/tablecmds.ll
 ; postgres/optimized/timeline.ll
+; postgres/optimized/typecmds.ll
+; qemu/optimized/hw_usb_hcd-xhci.c.ll
 ; qemu/optimized/util_vfio-helpers.c.ll
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/rmodels.c.ll
@@ -118,9 +135,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0) #0 {
 entry:
-  %1 = add i32 %0, -2
+  %1 = add i32 %0, -1
   %2 = sext i32 %1 to i64
-  %3 = mul nsw i64 %2, 24
+  %3 = mul nsw i64 %2, 272
   ret i64 %3
 }
 
@@ -133,6 +150,19 @@ entry:
   %1 = add i32 %0, -2
   %2 = sext i32 %1 to i64
   %3 = mul nuw nsw i64 %2, 6
+  ret i64 %3
+}
+
+; 3 occurrences:
+; linux/optimized/config.ll
+; postgres/optimized/refint.ll
+; wireshark/optimized/packet-smb.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000009(i32 %0) #0 {
+entry:
+  %1 = add nuw i32 %0, 1
+  %2 = sext i32 %1 to i64
+  %3 = mul nsw i64 %2, 24
   ret i64 %3
 }
 

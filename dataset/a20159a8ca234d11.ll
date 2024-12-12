@@ -1,15 +1,15 @@
 
-%"class.mold::LittleEndian.3.2521444" = type { [8 x i8] }
-%"class.mold::LittleEndian.2521443" = type { [4 x i8] }
-%"struct.OT::MathGlyphVariantRecord.2621075" = type { %"struct.OT::HBGlyphID16.2621076", %"struct.OT::IntType.2621070" }
-%"struct.OT::HBGlyphID16.2621076" = type { %"struct.OT::IntType.2621070" }
-%"struct.OT::IntType.2621070" = type { %struct.BEInt.2621071 }
-%struct.BEInt.2621071 = type { [2 x i8] }
-%"struct.OT::MathValueRecord.2621065" = type { %"struct.OT::IntType.155.2621066", %"struct.OT::OffsetTo.157.2621067" }
-%"struct.OT::IntType.155.2621066" = type { %struct.BEInt.156.2621068 }
-%struct.BEInt.156.2621068 = type { [2 x i8] }
-%"struct.OT::OffsetTo.157.2621067" = type { %"struct.OT::Offset.2621069" }
-%"struct.OT::Offset.2621069" = type { %"struct.OT::IntType.2621070" }
+%"class.mold::LittleEndian.3.2635854" = type { [8 x i8] }
+%"class.mold::LittleEndian.2635853" = type { [4 x i8] }
+%"struct.OT::MathGlyphVariantRecord.2734517" = type { %"struct.OT::HBGlyphID16.2734518", %"struct.OT::IntType.2734512" }
+%"struct.OT::HBGlyphID16.2734518" = type { %"struct.OT::IntType.2734512" }
+%"struct.OT::IntType.2734512" = type { %struct.BEInt.2734513 }
+%struct.BEInt.2734513 = type { [2 x i8] }
+%"struct.OT::MathValueRecord.2734507" = type { %"struct.OT::IntType.155.2734508", %"struct.OT::OffsetTo.157.2734509" }
+%"struct.OT::IntType.155.2734508" = type { %struct.BEInt.156.2734510 }
+%struct.BEInt.156.2734510 = type { [2 x i8] }
+%"struct.OT::OffsetTo.157.2734509" = type { %"struct.OT::Offset.2734511" }
+%"struct.OT::Offset.2734511" = type { %"struct.OT::IntType.2734512" }
 
 ; 7 occurrences:
 ; oiio/optimized/iffoutput.cpp.ll
@@ -168,13 +168,13 @@ entry:
 ; z3/optimized/smt_context.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000da(i32 %0, ptr %1, i32 %2) #0 {
+define ptr @func00000000000000ff(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 4
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 4
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   %6 = zext nneg i32 %0 to i64
-  %7 = getelementptr nusw i8, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -276,13 +276,13 @@ entry:
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000004a(i32 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000006f(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 16
-  %5 = getelementptr nusw %"class.mold::LittleEndian.3.2521444", ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 16
+  %5 = getelementptr nusw nuw %"class.mold::LittleEndian.3.2635854", ptr %4, i64 %3
   %6 = zext i32 %0 to i64
-  %7 = getelementptr nusw %"class.mold::LittleEndian.2521443", ptr %5, i64 %6
+  %7 = getelementptr nusw nuw %"class.mold::LittleEndian.2635853", ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -299,22 +299,21 @@ entry:
 ; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/hb-ot-math.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(i32 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000007f(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 4
-  %5 = getelementptr nusw %"struct.OT::MathGlyphVariantRecord.2621075", ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 4
+  %5 = getelementptr nusw nuw %"struct.OT::MathGlyphVariantRecord.2734517", ptr %4, i64 %3
   %6 = zext nneg i32 %0 to i64
-  %7 = getelementptr nusw %"struct.OT::MathGlyphVariantRecord.2621075", ptr %5, i64 %6
+  %7 = getelementptr nusw nuw %"struct.OT::MathGlyphVariantRecord.2734517", ptr %5, i64 %6
   ret ptr %7
 }
 
-; 58 occurrences:
+; 57 occurrences:
 ; clamav/optimized/mew.c.ll
 ; flatbuffers/optimized/reflection.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
-; hdf5/optimized/H5FScache.c.ll
 ; llvm/optimized/ASTDumper.cpp.ll
 ; llvm/optimized/ASTImporter.cpp.ll
 ; llvm/optimized/ASTWriterStmt.cpp.ll
@@ -369,26 +368,53 @@ entry:
 ; openjdk/optimized/hb-ot-math.ll
 ; velox/optimized/CastExpr.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000ca(i32 %0, ptr %1, i32 %2) #0 {
+define ptr @func00000000000000ef(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 2
-  %5 = getelementptr nusw %"struct.OT::MathValueRecord.2621065", ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 2
+  %5 = getelementptr nusw nuw %"struct.OT::MathValueRecord.2734507", ptr %4, i64 %3
   %6 = zext i32 %0 to i64
-  %7 = getelementptr nusw %"struct.OT::MathValueRecord.2621065", ptr %5, i64 %6
+  %7 = getelementptr nusw nuw %"struct.OT::MathValueRecord.2734507", ptr %5, i64 %6
   ret ptr %7
 }
 
 ; 1 occurrences:
 ; openjdk/optimized/rewriter.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000d8(i32 %0, ptr %1, i32 %2) #0 {
+define ptr @func00000000000000fc(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 56
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 56
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
   %6 = zext nneg i32 %0 to i64
   %7 = getelementptr i8, ptr %5, i64 %6
+  ret ptr %7
+}
+
+; 2 occurrences:
+; darktable/optimized/DeflateDecompressor.cpp.ll
+; linux/optimized/nl80211.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000080(i32 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = getelementptr i8, ptr %1, i64 1
+  %5 = getelementptr i8, ptr %4, i64 %3
+  %6 = zext i32 %0 to i64
+  %7 = getelementptr i8, ptr %5, i64 %6
+  ret ptr %7
+}
+
+; 1 occurrences:
+; hdf5/optimized/H5FScache.c.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000cf(i32 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = getelementptr nusw i8, ptr %1, i64 -1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
+  %6 = zext i32 %0 to i64
+  %7 = getelementptr nusw nuw i8, ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -396,10 +422,10 @@ entry:
 ; linux/optimized/ip6_tables.ll
 ; linux/optimized/ip_tables.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000050(i32 %0, ptr %1, i32 %2) #0 {
+define ptr @func0000000000000070(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 64
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 64
   %5 = getelementptr i8, ptr %4, i64 %3
   %6 = zext nneg i32 %0 to i64
   %7 = getelementptr i8, ptr %5, i64 %6
@@ -414,23 +440,10 @@ entry:
 ; linux/optimized/tty_buffer.ll
 ; linux/optimized/xz_dec_lzma2.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000040(i32 %0, ptr %1, i32 %2) #0 {
+define ptr @func0000000000000060(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 32
-  %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = zext i32 %0 to i64
-  %7 = getelementptr i8, ptr %5, i64 %6
-  ret ptr %7
-}
-
-; 1 occurrences:
-; linux/optimized/nl80211.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000080(i32 %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr i8, ptr %1, i64 4
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 32
   %5 = getelementptr i8, ptr %4, i64 %3
   %6 = zext i32 %0 to i64
   %7 = getelementptr i8, ptr %5, i64 %6
@@ -440,10 +453,10 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/jsonb_util.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000c0(i32 %0, ptr %1, i32 %2) #0 {
+define ptr @func00000000000000e0(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 4
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 4
   %5 = getelementptr i32, ptr %4, i64 %3
   %6 = zext i32 %0 to i64
   %7 = getelementptr i8, ptr %5, i64 %6
@@ -453,13 +466,13 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/umutablecptrie.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000092(i32 %0, ptr %1, i32 %2) #0 {
+define ptr @func0000000000000093(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 -4
   %5 = getelementptr i32, ptr %4, i64 %3
   %6 = zext nneg i32 %0 to i64
-  %7 = getelementptr nusw i32, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i32, ptr %5, i64 %6
   ret ptr %7
 }
 

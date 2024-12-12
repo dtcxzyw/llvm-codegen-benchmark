@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 19 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; cmake/optimized/zstd_lazy.c.ll
 ; duckdb/optimized/ub_duckdb_execution_index.cpp.ll
@@ -10,6 +10,7 @@
 ; linux/optimized/sky2.ll
 ; llvm/optimized/DebugLinesSubsection.cpp.ll
 ; llvm/optimized/Expr.cpp.ll
+; llvm/optimized/X86ISelLoweringCall.cpp.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
@@ -66,18 +67,6 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
-; soc-simulator/optimized/verilated.ll
-; Function Attrs: nounwind
-define i32 @func00000000000000df(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc nuw nsw i64 %1 to i32
-  %3 = shl nsw i32 %2, 5
-  %4 = add nuw nsw i32 %3, 32
-  %5 = add nuw nsw i32 %4, %0
-  ret i32 %5
-}
-
 ; 3 occurrences:
 ; hdf5/optimized/H5C.c.ll
 ; hdf5/optimized/H5Ctag.c.ll
@@ -126,18 +115,6 @@ entry:
   %3 = shl nuw nsw i32 %2, 2
   %4 = add nuw nsw i32 %3, 20
   %5 = add nuw nsw i32 %4, %0
-  ret i32 %5
-}
-
-; 1 occurrences:
-; linux/optimized/intel_mocs.ll
-; Function Attrs: nounwind
-define i32 @func00000000000000c0(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc nuw nsw i64 %1 to i32
-  %3 = shl i32 %2, 2
-  %4 = add i32 %3, 45088
-  %5 = add i32 %4, %0
   ret i32 %5
 }
 

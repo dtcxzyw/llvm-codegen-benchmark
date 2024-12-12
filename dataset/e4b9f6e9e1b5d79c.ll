@@ -1,5 +1,6 @@
 
-; 23 occurrences:
+; 24 occurrences:
+; boost/optimized/src.ll
 ; coreutils-rs/optimized/1aqq6ooh2lp9lqic.ll
 ; coreutils-rs/optimized/1efo3swtygw8gpnj.ll
 ; coreutils-rs/optimized/1rgvgulc49uxow1y.ll
@@ -11,8 +12,6 @@
 ; coreutils-rs/optimized/yiho3rob7ld9k5q.ll
 ; just-rs/optimized/2sblcsgax6v4zfcc.ll
 ; just-rs/optimized/bulvmt5gknxyhsd.ll
-; linux/optimized/eht.ll
-; linux/optimized/he.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/tdls.ll
@@ -21,8 +20,10 @@
 ; rust-analyzer-rs/optimized/1ocnbqjisn6f62l.ll
 ; rustfmt-rs/optimized/x2cb3fifm47d4t5.ll
 ; stb/optimized/stb_voxel_render.c.ll
-; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; wireshark/optimized/packet-dof.c.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i8 %0) #0 {
 entry:
@@ -71,6 +72,17 @@ entry:
   %1 = icmp eq i8 %0, 2
   %2 = select i1 %1, i8 0, i8 %0
   %3 = zext i8 %2 to i64
+  ret i64 %3
+}
+
+; 1 occurrences:
+; boost/optimized/graphml.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000d(i8 %0) #0 {
+entry:
+  %1 = icmp slt i8 %0, 0
+  %2 = select i1 %1, i8 122, i8 %0
+  %3 = zext nneg i8 %2 to i64
   ret i64 %3
 }
 

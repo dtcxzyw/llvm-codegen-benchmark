@@ -1,6 +1,5 @@
 
-; 217 occurrences:
-; arrow/optimized/value_parsing.cc.ll
+; 214 occurrences:
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -89,7 +88,6 @@
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
-; linux/optimized/8250_dwlib.ll
 ; linux/optimized/8250_pci.ll
 ; linux/optimized/8250_port.ll
 ; linux/optimized/battery.ll
@@ -114,7 +112,6 @@
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; llvm/optimized/X86MCTargetDesc.cpp.ll
 ; llvm/optimized/X86OptimizeLEAs.cpp.ll
-; mitsuba3/optimized/string.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -220,18 +217,16 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i64 %0) #0 {
 entry:
-  %1 = lshr i64 %0, 52
-  %2 = trunc nuw nsw i64 %1 to i32
-  %3 = and i32 %2, 2047
+  %1 = trunc i64 %0 to i32
+  %2 = lshr i32 %1, 18
+  %3 = and i32 %2, 1
   ret i32 %3
 }
 
-; 13 occurrences:
-; abseil-cpp/optimized/exponential_biased.cc.ll
+; 11 occurrences:
 ; libquic/optimized/poly1305_vec.c.ll
 ; libsodium/optimized/libsse2_la-poly1305_sse2.ll
 ; linux/optimized/ds.ll
-; linux/optimized/i915_cmd_parser.ll
 ; linux/optimized/mballoc.ll
 ; linux/optimized/uncore_nhmex.ll
 ; luajit/optimized/lj_strfmt_num.ll

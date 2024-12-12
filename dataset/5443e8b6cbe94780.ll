@@ -1,5 +1,5 @@
 
-; 1643 occurrences:
+; 1636 occurrences:
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/cuddEssent.c.ll
 ; abc/optimized/dauNpn.c.ll
@@ -37,6 +37,10 @@
 ; assimp/optimized/RemoveRedundantMaterials.cpp.ll
 ; assimp/optimized/SplitByBoneCountProcess.cpp.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/options_description.ll
+; boost/optimized/topology.ll
+; boost/optimized/xml_grammar.ll
 ; c3c/optimized/target.c.ll
 ; casadi/optimized/casadi_misc.cpp.ll
 ; casadi/optimized/dae_builder_internal.cpp.ll
@@ -66,7 +70,6 @@
 ; csmith/optimized/FunctionInvocationUser.cpp.ll
 ; cvc5/optimized/ceg_instantiator.cpp.ll
 ; cvc5/optimized/equality_engine.cpp.ll
-; cvc5/optimized/equality_engine_iterator.cpp.ll
 ; cvc5/optimized/index_trie.cpp.ll
 ; cvc5/optimized/match_trie.cpp.ll
 ; cvc5/optimized/options_handler.cpp.ll
@@ -296,7 +299,6 @@
 ; llvm/optimized/PredicateExpander.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/RISCVAsmPrinter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVRegisterInfo.cpp.ll
 ; llvm/optimized/RegUsageInfoCollector.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
@@ -519,13 +521,10 @@
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -965,9 +964,6 @@
 ; php/optimized/zend_jit.ll
 ; php/optimized/zend_ssa.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/singleoperation.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; protobuf/optimized/context.cc.ll
@@ -1039,7 +1035,6 @@
 ; qemu/optimized/system_physmem.c.ll
 ; qemu/optimized/target_riscv_cpu.c.ll
 ; qemu/optimized/target_riscv_pmu.c.ll
-; qemu/optimized/ui_kbd-state.c.ll
 ; qemu/optimized/ui_vnc.c.ll
 ; qemu/optimized/util_hbitmap.c.ll
 ; qemu/optimized/util_qemu-thread-posix.c.ll
@@ -1542,7 +1537,6 @@
 ; velox/optimized/BooleanMix.cpp.ll
 ; velox/optimized/Bridge.cpp.ll
 ; velox/optimized/CastExpr.cpp.ll
-; velox/optimized/CheckNestedNulls.cpp.ll
 ; velox/optimized/CompactRow.cpp.ll
 ; velox/optimized/ComplexVector.cpp.ll
 ; velox/optimized/ConjunctExpr.cpp.ll
@@ -1623,7 +1617,6 @@
 ; yosys/optimized/flatten.ll
 ; yosys/optimized/freduce.ll
 ; yosys/optimized/glift.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/mem.ll
 ; yosys/optimized/memory_bram.ll
 ; yosys/optimized/memory_dff.ll
@@ -1652,7 +1645,7 @@ entry:
   ret i64 %4
 }
 
-; 116 occurrences:
+; 115 occurrences:
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; arrow/optimized/concatenate.cc.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
@@ -1727,7 +1720,6 @@ entry:
 ; linux/optimized/iface.ll
 ; linux/optimized/iova.ll
 ; linux/optimized/ip_tunnel.ll
-; linux/optimized/loopback.ll
 ; linux/optimized/percpu.ll
 ; linux/optimized/perfmon.ll
 ; linux/optimized/processor_core.ll
@@ -1778,7 +1770,7 @@ entry:
   ret i64 %4
 }
 
-; 60 occurrences:
+; 61 occurrences:
 ; abc/optimized/cuddEssent.c.ll
 ; clamav/optimized/hashtab.c.ll
 ; cpython/optimized/obmalloc.ll
@@ -1839,6 +1831,7 @@ entry:
 ; verilator/optimized/V3Number.cpp.ll
 ; wasmtime-rs/optimized/4z02b278nscq7j1a.ll
 ; wasmtime-rs/optimized/v5prf101dn49s3v.ll
+; zed-rs/optimized/driumlpfhwzx6147be2mcsi4u.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:

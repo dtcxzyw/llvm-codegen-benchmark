@@ -1,9 +1,8 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; icu/optimized/number_decimalquantity.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll

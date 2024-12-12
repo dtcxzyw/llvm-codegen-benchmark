@@ -1,5 +1,5 @@
 
-; 39 occurrences:
+; 38 occurrences:
 ; cmake/optimized/json_value.cpp.ll
 ; cvc5/optimized/quant_conflict_find.cpp.ll
 ; linux/optimized/tx.ll
@@ -15,7 +15,6 @@
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
 ; llvm/optimized/ParseDecl.cpp.ll
 ; llvm/optimized/QualifierAlignmentFixer.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/SelectionDAGISel.cpp.ll
@@ -40,7 +39,7 @@
 ; wireshark/optimized/packet-t38.c.ll
 ; wireshark/optimized/packet-tcp.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i16 %0, ptr %1) #0 {
+define i1 @func000000000000002c(i16 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = icmp ne i16 %0, 32
@@ -60,7 +59,7 @@ entry:
 ; wireshark/optimized/packet-bthci_iso.c.ll
 ; wireshark/optimized/packet-tds.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i16 %0, ptr %1) #0 {
+define i1 @func000000000000018c(i16 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = icmp ne i16 %0, 0
@@ -68,10 +67,9 @@ entry:
   ret i1 %4
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; clamav/optimized/disasm.c.ll
 ; libevent/optimized/event.c.ll
-; linux/optimized/scan.ll
 ; llvm/optimized/InstCombineSelect.cpp.ll
 ; llvm/optimized/ModuleMap.cpp.ll
 ; llvm/optimized/VectorCombine.cpp.ll
@@ -82,7 +80,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-zabbix.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0, ptr %1) #0 {
+define i1 @func0000000000000021(i16 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = icmp eq i16 %0, 0
@@ -94,7 +92,7 @@ entry:
 ; proxygen/optimized/CodecUtil.cpp.ll
 ; proxygen/optimized/RFC2616.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i16 %0, ptr %1) #0 {
+define i1 @func000000000000002a(i16 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = icmp sgt i16 %0, -1
@@ -108,7 +106,7 @@ entry:
 ; wireshark/optimized/packet-bthci_acl.c.ll
 ; wireshark/optimized/packet-bthci_iso.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i16 %0, ptr %1) #0 {
+define i1 @func0000000000000181(i16 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = icmp eq i16 %0, 0
@@ -116,12 +114,13 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/intel_pmdemand.ll
 ; llvm/optimized/ParseDecl.cpp.ll
+; llvm/optimized/SemaConcept.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i16 %0, ptr %1) #0 {
+define i1 @func0000000000000024(i16 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = icmp ult i16 %0, -8
@@ -134,7 +133,7 @@ entry:
 ; node/optimized/libnode.node_errors.ll
 ; wireshark/optimized/packet-kafka.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i16 %0, ptr %1) #0 {
+define i1 @func0000000000000028(i16 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = icmp ugt i16 %0, 4
@@ -145,7 +144,7 @@ entry:
 ; 1 occurrences:
 ; openmpi/optimized/rmaps_base_map_job.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i16 %0, ptr %1) #0 {
+define i1 @func0000000000000188(i16 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = icmp ugt i16 %0, 1
@@ -156,7 +155,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/clnt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i16 %0, ptr %1) #0 {
+define i1 @func0000000000000026(i16 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = icmp slt i16 %0, 0

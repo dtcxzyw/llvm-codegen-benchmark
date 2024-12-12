@@ -1,13 +1,13 @@
 .LCPI0_0:
-	.long	253                             # 0xfd
+	.long	86400                           # 0x15180
 .LCPI0_1:
-	.long	254                             # 0xfe
+	.long	4294880896                      # 0xfffeae80
 func0000000000000005:                   # @func0000000000000005
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k1
 	vpaddd	%ymm2, %ymm1, %ymm0
-	vpbroadcastd	.LCPI0_0(%rip), %ymm1   # ymm1 = [253,253,253,253,253,253,253,253]
-	vpbroadcastd	.LCPI0_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [254,254,254,254,254,254,254,254]
+	vpbroadcastd	.LCPI0_0(%rip), %ymm1   # ymm1 = [86400,86400,86400,86400,86400,86400,86400,86400]
+	vpbroadcastd	.LCPI0_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [4294880896,4294880896,4294880896,4294880896,4294880896,4294880896,4294880896,4294880896]
 	vpaddd	%ymm0, %ymm1, %ymm0
 	retq
 .LCPI1_0:

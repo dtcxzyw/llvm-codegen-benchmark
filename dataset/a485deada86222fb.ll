@@ -4,7 +4,7 @@
 ; meshlab/optimized/trackmode.cpp.ll
 ; minetest/optimized/clientlauncher.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 56
   %3 = and i64 %2, 4294967295
@@ -17,7 +17,7 @@ entry:
 ; abc/optimized/giaTransduction.cpp.ll
 ; assimp/optimized/SkeletonMeshBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 12
   %3 = and i64 %2, 4294967295

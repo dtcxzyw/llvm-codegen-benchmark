@@ -4,15 +4,15 @@ func0000000000000008:                   # @func0000000000000008
 	sete	%al
 	addl	%edi, %eax
 	retq
-func0000000000000009:                   # @func0000000000000009
+func000000000000000b:                   # @func000000000000000b
 	xorl	%eax, %eax
 	cmpb	$32, %sil
 	sete	%al
 	addl	%edi, %eax
 	retq
-func000000000000000b:                   # @func000000000000000b
+func0000000000000009:                   # @func0000000000000009
 	xorl	%eax, %eax
-	cmpb	$2, %sil
+	cmpb	$10, %sil
 	sete	%al
 	addl	%edi, %eax
 	retq
@@ -46,7 +46,7 @@ func0000000000000062:                   # @func0000000000000062
 	cmpb	$1, %sil
 	sbbl	$-1, %eax
 	retq
-func0000000000000043:                   # @func0000000000000043
+func00000000000000c3:                   # @func00000000000000c3
 	movl	%edi, %eax
 	cmpb	$4, %sil
 	sbbl	$-1, %eax
@@ -74,6 +74,17 @@ func0000000000000023:                   # @func0000000000000023
 	cmpb	$-2, %sil
 	adcl	$0, %eax
 	retq
+func0000000000000030:                   # @func0000000000000030
+	xorl	%eax, %eax
+	cmpb	$-64, %sil
+	setl	%al
+	addl	%edi, %eax
+	retq
+func0000000000000043:                   # @func0000000000000043
+	movl	%edi, %eax
+	cmpb	$100, %sil
+	sbbl	$-1, %eax
+	retq
 func000000000000000a:                   # @func000000000000000a
 	xorl	%eax, %eax
 	cmpb	$45, %sil
@@ -91,7 +102,12 @@ func0000000000000050:                   # @func0000000000000050
 	setns	%al
 	addl	%edi, %eax
 	retq
-func0000000000000041:                   # @func0000000000000041
+func00000000000000c0:                   # @func00000000000000c0
+	movl	%edi, %eax
+	cmpb	$-16, %sil
+	sbbl	$-1, %eax
+	retq
+func00000000000000c1:                   # @func00000000000000c1
 	movl	%edi, %eax
 	cmpb	$5, %sil
 	sbbl	$-1, %eax

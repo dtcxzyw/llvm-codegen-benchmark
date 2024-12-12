@@ -63,7 +63,7 @@ func0000000000000030:                   # @func0000000000000030
 	vzeroupper
 	retq
 .LCPI6_0:
-	.long	1                               # 0x1
+	.long	3221225472                      # 0xc0000000
 .LCPI6_2:
 	.zero	4,1
 .LCPI6_1:
@@ -75,38 +75,74 @@ func0000000000000018:                   # @func0000000000000018
 	vzeroupper
 	retq
 .LCPI7_0:
-	.long	4                               # 0x4
+	.long	5                               # 0x5
 .LCPI7_2:
 	.zero	4,1
 .LCPI7_1:
 	.zero	16,1
-func0000000000000020:                   # @func0000000000000020
-	vpcmpnleud	.LCPI7_0(%rip){1to8}, %ymm1, %k1
+func0000000000000011:                   # @func0000000000000011
+	vpcmpltud	.LCPI7_0(%rip){1to8}, %ymm1, %k1
 	vpord	.LCPI7_2(%rip){1to4}, %xmm0, %xmm1
 	vmovdqu8	%xmm1, %xmm0 {%k1}
 	vzeroupper
 	retq
 .LCPI8_0:
-	.long	65536                           # 0x10000
+	.long	4                               # 0x4
 .LCPI8_2:
 	.zero	4,1
 .LCPI8_1:
 	.zero	16,1
-func0000000000000011:                   # @func0000000000000011
-	vpcmpltud	.LCPI8_0(%rip){1to8}, %ymm1, %k1
+func0000000000000060:                   # @func0000000000000060
+	vpcmpnleud	.LCPI8_0(%rip){1to8}, %ymm1, %k1
 	vpord	.LCPI8_2(%rip){1to4}, %xmm0, %xmm1
 	vmovdqu8	%xmm1, %xmm0 {%k1}
 	vzeroupper
 	retq
 .LCPI9_0:
-	.long	2                               # 0x2
+	.long	65536                           # 0x10000
 .LCPI9_2:
 	.zero	4,1
 .LCPI9_1:
 	.zero	16,1
-func0000000000000021:                   # @func0000000000000021
-	vpcmpnleud	.LCPI9_0(%rip){1to8}, %ymm1, %k1
+func0000000000000051:                   # @func0000000000000051
+	vpcmpltud	.LCPI9_0(%rip){1to8}, %ymm1, %k1
 	vpord	.LCPI9_2(%rip){1to4}, %xmm0, %xmm1
+	vmovdqu8	%xmm1, %xmm0 {%k1}
+	vzeroupper
+	retq
+.LCPI10_0:
+	.long	2                               # 0x2
+.LCPI10_2:
+	.zero	4,1
+.LCPI10_1:
+	.zero	16,1
+func0000000000000061:                   # @func0000000000000061
+	vpcmpnleud	.LCPI10_0(%rip){1to8}, %ymm1, %k1
+	vpord	.LCPI10_2(%rip){1to4}, %xmm0, %xmm1
+	vmovdqu8	%xmm1, %xmm0 {%k1}
+	vzeroupper
+	retq
+.LCPI11_0:
+	.long	1                               # 0x1
+.LCPI11_2:
+	.zero	4,1
+.LCPI11_1:
+	.zero	16,1
+func0000000000000021:                   # @func0000000000000021
+	vpcmpnleud	.LCPI11_0(%rip){1to8}, %ymm1, %k1
+	vpord	.LCPI11_2(%rip){1to4}, %xmm0, %xmm1
+	vmovdqu8	%xmm1, %xmm0 {%k1}
+	vzeroupper
+	retq
+.LCPI12_0:
+	.long	7                               # 0x7
+.LCPI12_2:
+	.zero	4,1
+.LCPI12_1:
+	.zero	16,1
+func0000000000000020:                   # @func0000000000000020
+	vpcmpnleud	.LCPI12_0(%rip){1to8}, %ymm1, %k1
+	vpord	.LCPI12_2(%rip){1to4}, %xmm0, %xmm1
 	vmovdqu8	%xmm1, %xmm0 {%k1}
 	vzeroupper
 	retq

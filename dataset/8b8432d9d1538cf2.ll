@@ -70,8 +70,6 @@
 ; openjdk/optimized/shenandoahMark.ll
 ; openjdk/optimized/xHeapIterator.ll
 ; openjdk/optimized/zHeapIterator.ll
-; openmpi/optimized/os_path.ll
-; openmpi/optimized/pmix_os_path.ll
 ; openssl/optimized/libcrypto-lib-dso_dlfcn.ll
 ; openssl/optimized/libcrypto-shlib-dso_dlfcn.ll
 ; openssl/optimized/libssl-lib-statem_dtls.ll
@@ -86,7 +84,6 @@
 ; postgres/optimized/walmethods.ll
 ; proxygen/optimized/HTTP1xCodec.cpp.ll
 ; qemu/optimized/hw_virtio_virtio-pci.c.ll
-; qemu/optimized/meson-generated_.._dbus-display1.c.ll
 ; qemu/optimized/target_riscv_translate.c.ll
 ; quickjs/optimized/quickjs.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
@@ -102,6 +99,9 @@
 ; wireshark/optimized/packet-zbee-security.c.ll
 ; wireshark/optimized/pcapng.c.ll
 ; yosys/optimized/fmt.ll
+; zed-rs/optimized/44bj4n5407vag46bun63mwelh.ll
+; zed-rs/optimized/8epszlr2612bvdrsn7g83nprl.ll
+; zed-rs/optimized/8wvy5aljfw2qmbxbtkkewwal7.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_decompress.c.ll
 ; Function Attrs: nounwind
@@ -109,15 +109,12 @@ define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i64 1, i64 2
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
-; 4 occurrences:
+; 1 occurrences:
 ; mitsuba3/optimized/hdrfilm.cpp.ll
-; protobuf/optimized/zero_copy_stream.cc.ll
-; redis/optimized/listpack.ll
-; rust-analyzer-rs/optimized/1rhf3pjhhflazor1.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000013(i64 %0, i32 %1) #0 {
 entry:
@@ -127,10 +124,9 @@ entry:
   ret i64 %4
 }
 
-; 21 occurrences:
+; 19 occurrences:
 ; cmake/optimized/archive_acl.c.ll
 ; cpython/optimized/_datetimemodule.ll
-; cpython/optimized/pystrtod.ll
 ; curl/optimized/libcurl_la-tftp.ll
 ; folly/optimized/Compression.cpp.ll
 ; libphonenumber/optimized/phonenumbermatcher.cc.ll
@@ -146,7 +142,6 @@ entry:
 ; openspiel/optimized/backgammon.cc.ll
 ; openspiel/optimized/oware.cc.ll
 ; openusd/optimized/restoration.c.ll
-; quickjs/optimized/quickjs.ll
 ; redis/optimized/quicklist.ll
 ; redis/optimized/rax.ll
 ; Function Attrs: nounwind
@@ -154,11 +149,12 @@ define i64 @func0000000000000005(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i64 4, i64 5
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
-; 21 occurrences:
+; 22 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
 ; fmt/optimized/printf-test.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
@@ -215,16 +211,14 @@ entry:
   ret i64 %3
 }
 
-; 3 occurrences:
-; cmake/optimized/zstd_compress.c.ll
+; 1 occurrences:
 ; php/optimized/pcre2_jit_compile.ll
-; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000020(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000060(i64 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %1, 35
+  %2 = icmp samesign ugt i32 %1, 35
   %3 = select i1 %2, i64 13, i64 15
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -236,7 +230,7 @@ define i64 @func0000000000000019(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 0
   %3 = select i1 %2, i64 -1, i64 1
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -248,7 +242,20 @@ define i64 @func0000000000000029(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, -1
   %3 = select i1 %2, i64 1, i64 -1
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
+  ret i64 %4
+}
+
+; 3 occurrences:
+; protobuf/optimized/zero_copy_stream.cc.ll
+; redis/optimized/listpack.ll
+; rust-analyzer-rs/optimized/1rhf3pjhhflazor1.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000053(i64 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 17
+  %3 = select i1 %2, i64 2, i64 1
+  %4 = add nuw nsw i64 %3, %0
   ret i64 %4
 }
 
@@ -268,24 +275,13 @@ entry:
 }
 
 ; 1 occurrences:
-; git/optimized/pack-redundant.ll
-; Function Attrs: nounwind
-define i64 @func000000000000001a(i64 %0, i32 %1) #0 {
-entry:
-  %2 = icmp slt i32 %1, 2
-  %3 = select i1 %2, i64 36, i64 32
-  %4 = add nuw i64 %3, %0
-  ret i64 %4
-}
-
-; 1 occurrences:
 ; glslang/optimized/hlslParseables.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000030(i64 %0, i32 %1) #0 {
 entry:
   %.not = icmp eq i32 %1, 0
   %2 = select i1 %.not, i64 0, i64 2
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   ret i64 %3
 }
 
@@ -310,7 +306,7 @@ define i64 @func000000000000001b(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 1
   %3 = select i1 %2, i64 11, i64 6
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -327,19 +323,13 @@ entry:
   ret i64 %4
 }
 
-; 12 occurrences:
+; 6 occurrences:
 ; hdf5/optimized/H5Odtype.c.ll
-; icu/optimized/ucnv2022.ll
 ; linux/optimized/tg3.ll
 ; node/optimized/libnode.fs_event_wrap.ll
 ; tokenizers-rs/optimized/27irl7jx21l1e8zq.ll
 ; tree-sitter-rs/optimized/39nlc710yttny0r0.ll
 ; tree-sitter-rs/optimized/4x681obl3opoh1yx.ll
-; typst-rs/optimized/15cic2jih5jwap60.ll
-; typst-rs/optimized/1mrwywpkq81cby93.ll
-; typst-rs/optimized/481g0nj22rl2z9g.ll
-; wasmtime-rs/optimized/joyny9bexuq72mb.ll
-; wasmtime-rs/optimized/xwe1luu7ota7lol.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i32 %1) #0 {
 entry:
@@ -358,8 +348,27 @@ define i64 @func0000000000000031(i64 %0, i32 %1) #0 {
 entry:
   %.not = icmp eq i32 %1, 0
   %2 = select i1 %.not, i64 0, i64 8
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   ret i64 %3
+}
+
+; 9 occurrences:
+; icu/optimized/ucnv2022.ll
+; tokenizers-rs/optimized/27irl7jx21l1e8zq.ll
+; tree-sitter-rs/optimized/4x681obl3opoh1yx.ll
+; typst-rs/optimized/15cic2jih5jwap60.ll
+; typst-rs/optimized/1mrwywpkq81cby93.ll
+; typst-rs/optimized/481g0nj22rl2z9g.ll
+; wasmtime-rs/optimized/joyny9bexuq72mb.ll
+; wasmtime-rs/optimized/xwe1luu7ota7lol.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000050(i64 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 2
+  %3 = select i1 %2, i64 8, i64 4
+  %4 = add i64 %3, %0
+  ret i64 %4
 }
 
 ; 2 occurrences:
@@ -371,6 +380,18 @@ entry:
   %2 = icmp ugt i32 %1, 255
   %3 = select i1 %2, i64 16, i64 17
   %4 = add nsw i64 %3, %0
+  ret i64 %4
+}
+
+; 2 occurrences:
+; cmake/optimized/zstd_compress.c.ll
+; zstd/optimized/zstd_compress.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000020(i64 %0, i32 %1) #0 {
+entry:
+  %2 = icmp ugt i32 %1, 6
+  %3 = select i1 %2, i64 149312, i64 128
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -393,7 +414,7 @@ define i64 @func0000000000000012(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 65536
   %3 = select i1 %2, i64 4294967295, i64 4294967294
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   ret i64 %4
 }
 

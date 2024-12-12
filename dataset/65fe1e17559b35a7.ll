@@ -1,6 +1,7 @@
 
-; 75 occurrences:
+; 76 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/backward_references.c.ll
 ; nuklear/optimized/unity.c.ll
 ; oiio/optimized/CineonHeader.cpp.ll

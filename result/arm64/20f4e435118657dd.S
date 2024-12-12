@@ -1,63 +1,39 @@
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
 	mov	w8, #931135488                  // =0x37800000
-	scvtf	v2.4s, v2.4s
-	scvtf	v3.4s, v3.4s
-	dup	v4.4s, w8
-	fmul	v2.4s, v2.4s, v4.4s
-	fmul	v3.4s, v3.4s, v4.4s
-	fmul	v0.4s, v0.4s, v4.4s
-	fmul	v1.4s, v1.4s, v4.4s
-	fcmge	v0.4s, v0.4s, v2.4s
-	fcmge	v1.4s, v1.4s, v3.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	scvtf	s2, w0, #16
+	fmov	s1, w8
+	fmul	s0, s0, s1
+	fcmp	s2, s0
+	cset	w0, ls
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
 	mov	w8, #931135488                  // =0x37800000
-	scvtf	v2.4s, v2.4s
-	scvtf	v3.4s, v3.4s
-	dup	v4.4s, w8
-	fmul	v2.4s, v2.4s, v4.4s
-	fmul	v3.4s, v3.4s, v4.4s
-	fmul	v0.4s, v0.4s, v4.4s
-	fmul	v1.4s, v1.4s, v4.4s
-	fcmge	v0.4s, v2.4s, v0.4s
-	fcmge	v1.4s, v3.4s, v1.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	scvtf	s2, w0, #16
+	fmov	s1, w8
+	fmul	s0, s0, s1
+	fcmp	s2, s0
+	cset	w0, ge
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
 	mov	w8, #931135488                  // =0x37800000
-	scvtf	v2.4s, v2.4s
-	scvtf	v3.4s, v3.4s
-	dup	v4.4s, w8
-	fmul	v2.4s, v2.4s, v4.4s
-	fmul	v3.4s, v3.4s, v4.4s
-	fmul	v0.4s, v0.4s, v4.4s
-	fmul	v1.4s, v1.4s, v4.4s
-	fcmeq	v0.4s, v2.4s, v0.4s
-	fcmeq	v1.4s, v3.4s, v1.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	scvtf	s2, w0, #16
+	fmov	s1, w8
+	fmul	s0, s0, s1
+	fcmp	s2, s0
+	cset	w0, eq
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	movi	v4.4s, #48, lsl #24
-	scvtf	v2.4s, v2.4s
-	scvtf	v3.4s, v3.4s
-	fmul	v2.4s, v2.4s, v4.4s
-	fmul	v3.4s, v3.4s, v4.4s
-	fmul	v0.4s, v0.4s, v4.4s
-	fmul	v1.4s, v1.4s, v4.4s
-	fcmgt	v0.4s, v0.4s, v2.4s
-	fcmgt	v1.4s, v1.4s, v3.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	movi	v1.2s, #48, lsl #24
+	scvtf	s2, w0, #31
+	fmul	s0, s0, s1
+	fcmp	s2, s0
+	cset	w0, mi
 	ret
                                         // -- End function

@@ -1,5 +1,5 @@
 
-; 49 occurrences:
+; 48 occurrences:
 ; darktable/optimized/introspection_bloom.c.ll
 ; darktable/optimized/introspection_colorbalance.c.ll
 ; darktable/optimized/introspection_colorize.c.ll
@@ -46,7 +46,6 @@
 ; openmpi/optimized/nbc_ireduce_scatter_block.ll
 ; openusd/optimized/utils.c.ll
 ; postgres/optimized/print.ll
-; proj/optimized/io.cpp.ll
 ; tev/optimized/Ipc.cpp.ll
 ; z3/optimized/mpz.cpp.ll
 ; Function Attrs: nounwind

@@ -1,17 +1,20 @@
 
-%struct.direntry_t.2591990 = type { [11 x i8], i8, [2 x i8], i16, i16, i16, i16, i16, i16, i16, i32 }
-%struct.b3Contact4Data.2704958 = type { [4 x %class.b3Vector3.2704959], %class.b3Vector3.2704959, i16, i16, i32, i32, i32, i32, i32, i32, i32 }
-%class.b3Vector3.2704959 = type { %union.anon.34.2704960 }
-%union.anon.34.2704960 = type { [4 x float] }
-%struct.gmx_moltype_t.3179545 = type { ptr, %struct.t_atoms.3179546, %"struct.std::array.3179547", %"class.gmx::ListOfLists.3179548" }
-%struct.t_atoms.3179546 = type { i32, ptr, ptr, ptr, ptr, i32, ptr, ptr, i8, i8, i8, i8, i8 }
-%"struct.std::array.3179547" = type { [94 x %struct.InteractionList.3179549] }
-%struct.InteractionList.3179549 = type { %"class.std::vector.50.3179550" }
-%"class.std::vector.50.3179550" = type { %"struct.std::_Vector_base.51.3179551" }
-%"struct.std::_Vector_base.51.3179551" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3179552" }
-%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3179552" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3179553" }
-%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3179553" = type { ptr, ptr, ptr }
-%"class.gmx::ListOfLists.3179548" = type { %"class.std::vector.50.3179550", %"class.std::vector.50.3179550" }
+%struct.direntry_t.2705800 = type { [11 x i8], i8, [2 x i8], i16, i16, i16, i16, i16, i16, i16, i32 }
+%struct.b3Contact4Data.2817673 = type { [4 x %class.b3Vector3.2817674], %class.b3Vector3.2817674, i16, i16, i32, i32, i32, i32, i32, i32, i32 }
+%class.b3Vector3.2817674 = type { %union.anon.34.2817675 }
+%union.anon.34.2817675 = type { [4 x float] }
+%struct.Abc_IffObj_t_.2876965 = type { [7 x float] }
+%struct.gmx_moltype_t.3371853 = type { ptr, %struct.t_atoms.3371854, %"struct.std::array.3371855", %"class.gmx::ListOfLists.3371856" }
+%struct.t_atoms.3371854 = type { i32, ptr, ptr, ptr, ptr, i32, ptr, ptr, i8, i8, i8, i8, i8 }
+%"struct.std::array.3371855" = type { [94 x %struct.InteractionList.3371857] }
+%struct.InteractionList.3371857 = type { %"class.std::vector.50.3371858" }
+%"class.std::vector.50.3371858" = type { %"struct.std::_Vector_base.51.3371859" }
+%"struct.std::_Vector_base.51.3371859" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3371860" }
+%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl.3371860" = type { %"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3371861" }
+%"struct.std::_Vector_base<int, std::allocator<int>>::_Vector_impl_data.3371861" = type { ptr, ptr, ptr }
+%"class.gmx::ListOfLists.3371856" = type { %"class.std::vector.50.3371858", %"class.std::vector.50.3371858" }
+%"struct.BSplineEvaluationData<2, BOUNDARY_NEUMANN>::BSplineComponents.3820778" = type { [3 x %class.Polynomial.17.3820760] }
+%class.Polynomial.17.3820760 = type { [3 x double] }
 
 ; 3 occurrences:
 ; linux/optimized/uncore_snbep.ll
@@ -21,12 +24,12 @@
 define ptr @func0000000000000000(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.direntry_t.2591990, ptr %1, i64 %3
+  %4 = getelementptr %struct.direntry_t.2705800, ptr %1, i64 %3
   %5 = getelementptr [11 x i8], ptr %4, i64 0, i64 %0
   ret ptr %5
 }
 
-; 56 occurrences:
+; 52 occurrences:
 ; abc/optimized/abcIfif.c.ll
 ; abc/optimized/giaLf.c.ll
 ; abc/optimized/giaNf.c.ll
@@ -39,7 +42,6 @@ entry:
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; gromacs/optimized/awh.cpp.ll
 ; gromacs/optimized/biasgrid.cpp.ll
-; gromacs/optimized/biasstate.cpp.ll
 ; gromacs/optimized/biaswriter.cpp.ll
 ; gromacs/optimized/bonded.cpp.ll
 ; gromacs/optimized/domdec.cpp.ll
@@ -52,12 +54,10 @@ entry:
 ; gromacs/optimized/pairlist.cpp.ll
 ; gromacs/optimized/pull.cpp.ll
 ; gromacs/optimized/pullutil.cpp.ll
-; gromacs/optimized/redistribute.cpp.ll
 ; gromacs/optimized/settle.cpp.ll
 ; gromacs/optimized/shake.cpp.ll
 ; gromacs/optimized/shellfc.cpp.ll
 ; gromacs/optimized/solvate.cpp.ll
-; gromacs/optimized/threaded_force_buffer.cpp.ll
 ; gromacs/optimized/vcm.cpp.ll
 ; gromacs/optimized/vsite.cpp.ll
 ; influxdb-rs/optimized/54bldmpi534adbqh.ll
@@ -67,7 +67,6 @@ entry:
 ; meshlab/optimized/edit_point.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_io_nxs.cpp.ll
-; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
@@ -84,11 +83,30 @@ entry:
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; raylib/optimized/rmodels.c.ll
 ; Function Attrs: nounwind
+define ptr @func000000000000000b(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw %struct.b3Contact4Data.2817673, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw [4 x %class.b3Vector3.2817674], ptr %4, i64 0, i64 %0
+  ret ptr %5
+}
+
+; 9 occurrences:
+; abc/optimized/abcIfif.c.ll
+; gromacs/optimized/biasgrid.cpp.ll
+; gromacs/optimized/biasstate.cpp.ll
+; gromacs/optimized/pairlist.cpp.ll
+; gromacs/optimized/pullutil.cpp.ll
+; gromacs/optimized/redistribute.cpp.ll
+; gromacs/optimized/threaded_force_buffer.cpp.ll
+; meshlab/optimized/filter_isoparametrization.cpp.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
+; Function Attrs: nounwind
 define ptr @func000000000000000a(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw %struct.b3Contact4Data.2704958, ptr %1, i64 %3
-  %5 = getelementptr nusw [4 x %class.b3Vector3.2704959], ptr %4, i64 0, i64 %0
+  %4 = getelementptr nusw %struct.Abc_IffObj_t_.2876965, ptr %1, i64 %3
+  %5 = getelementptr nusw [7 x float], ptr %4, i64 0, i64 %0
   ret ptr %5
 }
 
@@ -98,11 +116,22 @@ entry:
 ; opencv/optimized/floodfill.cpp.ll
 ; opencv/optimized/simpleflow.cpp.ll
 ; Function Attrs: nounwind
+define ptr @func0000000000000003(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr %struct.gmx_moltype_t.3371853, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw [94 x %struct.InteractionList.3371857], ptr %4, i64 0, i64 %0
+  ret ptr %5
+}
+
+; 1 occurrences:
+; meshlab/optimized/filter_screened_poisson.cpp.ll
+; Function Attrs: nounwind
 define ptr @func0000000000000002(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr %struct.gmx_moltype_t.3179545, ptr %1, i64 %3
-  %5 = getelementptr nusw [94 x %struct.InteractionList.3179549], ptr %4, i64 0, i64 %0
+  %4 = getelementptr %"struct.BSplineEvaluationData<2, BOUNDARY_NEUMANN>::BSplineComponents.3820778", ptr %1, i64 %3
+  %5 = getelementptr nusw [3 x %class.Polynomial.17.3820760], ptr %4, i64 0, i64 %0
   ret ptr %5
 }
 

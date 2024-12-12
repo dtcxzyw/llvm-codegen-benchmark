@@ -8,7 +8,7 @@
 	.short	1                               # 0x1
 	.short	1                               # 0x1
 .LCPI0_1:
-	.long	4                               # 0x4
+	.long	2048                            # 0x800
 .LCPI0_2:
 	.short	1                               # 0x1
 	.short	1                               # 0x1
@@ -18,7 +18,7 @@ func0000000000000003:                   # @func0000000000000003
 	vpcmpnltw	%xmm3, %xmm0, %k1
 	vpandd	.LCPI0_2(%rip){1to4}, %xmm2, %xmm0
 	vpmovzxwd	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero,xmm0[4],zero,xmm0[5],zero,xmm0[6],zero,xmm0[7],zero
-	vpor	%ymm1, %ymm0, %ymm0
+	vpor	%ymm0, %ymm1, %ymm0
 	vpord	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	retq
 .LCPI1_0:
@@ -41,7 +41,7 @@ func0000000000000001:                   # @func0000000000000001
 	vpcmpnltw	%xmm3, %xmm0, %k1
 	vpandd	.LCPI1_2(%rip){1to4}, %xmm2, %xmm0
 	vpmovzxwd	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero,xmm0[4],zero,xmm0[5],zero,xmm0[6],zero,xmm0[7],zero
-	vpor	%ymm1, %ymm0, %ymm0
+	vpor	%ymm0, %ymm1, %ymm0
 	vpord	.LCPI1_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	retq
 .LCPI2_0:
@@ -64,6 +64,6 @@ func0000000000000000:                   # @func0000000000000000
 	vpcmpnltw	%xmm3, %xmm0, %k1
 	vpandd	.LCPI2_2(%rip){1to4}, %xmm2, %xmm0
 	vpmovzxwd	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero,xmm0[4],zero,xmm0[5],zero,xmm0[6],zero,xmm0[7],zero
-	vpor	%ymm1, %ymm0, %ymm0
+	vpor	%ymm0, %ymm1, %ymm0
 	vpord	.LCPI2_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	retq

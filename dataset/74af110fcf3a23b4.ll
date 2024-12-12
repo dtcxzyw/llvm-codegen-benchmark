@@ -1,5 +1,5 @@
 
-; 85 occurrences:
+; 83 occurrences:
 ; abc/optimized/mapperCreate.c.ll
 ; bullet3/optimized/btDeformableBodySolver.ll
 ; bullet3/optimized/btDeformableMultiBodyDynamicsWorld.ll
@@ -57,8 +57,6 @@
 ; gromacs/optimized/setup.cpp.ll
 ; gromacs/optimized/sim_util.cpp.ll
 ; gromacs/optimized/slarrex.cpp.ll
-; gromacs/optimized/slatrd.cpp.ll
-; gromacs/optimized/ssytd2.cpp.ll
 ; gromacs/optimized/update.cpp.ll
 ; gromacs/optimized/updategroups.cpp.ll
 ; gromacs/optimized/velocityscalingtemperaturecoupling.cpp.ll

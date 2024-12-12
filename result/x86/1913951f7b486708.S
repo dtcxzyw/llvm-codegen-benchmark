@@ -1,4 +1,4 @@
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	addl	$-9, %esi
 	cmpl	$5, %esi
 	setb	%cl
@@ -6,7 +6,7 @@ func0000000000000041:                   # @func0000000000000041
 	sete	%al
 	xorb	%cl, %al
 	retq
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	addl	$-398, %esi                     # imm = 0xFE72
 	cmpl	$5, %esi
 	setb	%cl
@@ -14,7 +14,7 @@ func00000000000000c4:                   # @func00000000000000c4
 	setne	%al
 	xorb	%cl, %al
 	retq
-func0000000000000144:                   # @func0000000000000144
+func0000000000000484:                   # @func0000000000000484
 	addl	$-17, %esi
 	cmpl	$2, %esi
 	setb	%cl
@@ -22,7 +22,7 @@ func0000000000000144:                   # @func0000000000000144
 	setb	%al
 	xorb	%cl, %al
 	retq
-func0000000000000141:                   # @func0000000000000141
+func0000000000000481:                   # @func0000000000000481
 	addl	$-55, %esi
 	cmpl	$5, %esi
 	setb	%cl
@@ -30,7 +30,7 @@ func0000000000000141:                   # @func0000000000000141
 	sete	%al
 	xorb	%cl, %al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	decl	%esi
 	cmpl	$1073741823, %esi               # imm = 0x3FFFFFFF
 	setb	%cl
@@ -38,14 +38,14 @@ func0000000000000044:                   # @func0000000000000044
 	setb	%al
 	xorb	%cl, %al
 	retq
-func00000000000001c1:                   # @func00000000000001c1
+func0000000000000581:                   # @func0000000000000581
 	cmpl	$68, %esi
 	setne	%cl
 	cmpl	$383, %edi                      # imm = 0x17F
 	sete	%al
 	xorb	%cl, %al
 	retq
-func000000000000014c:                   # @func000000000000014c
+func000000000000048c:                   # @func000000000000048c
 	addl	$-17, %esi
 	cmpl	$2, %esi
 	setb	%cl
@@ -53,7 +53,7 @@ func000000000000014c:                   # @func000000000000014c
 	setne	%al
 	xorb	%cl, %al
 	retq
-func000000000000006a:                   # @func000000000000006a
+func00000000000000ca:                   # @func00000000000000ca
 	incl	%esi
 	cmpl	$2, %esi
 	setl	%cl
@@ -61,7 +61,7 @@ func000000000000006a:                   # @func000000000000006a
 	setge	%al
 	xorb	%cl, %al
 	retq
-func00000000000000a6:                   # @func00000000000000a6
+func0000000000000146:                   # @func0000000000000146
 	addl	$2, %esi
 	testl	%esi, %esi
 	setle	%cl

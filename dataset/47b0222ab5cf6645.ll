@@ -1,8 +1,7 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; folly/optimized/AsyncSocket.cpp.ll
 ; linux/optimized/devio.ll
-; linux/optimized/mii.ll
 ; minetest/optimized/map.cpp.ll
 ; openjdk/optimized/socket_md.ll
 ; php/optimized/zend_inference.ll

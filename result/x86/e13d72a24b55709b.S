@@ -1,29 +1,29 @@
-func0000000000000296:                   # @func0000000000000296
+func0000000000000526:                   # @func0000000000000526
 	subl	%edi, %edx
 	cmpl	%esi, %edx
 	setl	%al
 	retq
-func000000000000029b:                   # @func000000000000029b
+func000000000000052b:                   # @func000000000000052b
 	subl	%edi, %edx
 	cmpl	%esi, %edx
 	setge	%al
+	retq
+func0000000000000041:                   # @func0000000000000041
+	subl	%edi, %edx
+	cmpl	%esi, %edx
+	sete	%al
 	retq
 func0000000000000021:                   # @func0000000000000021
 	subl	%edi, %edx
 	cmpl	%esi, %edx
 	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000421:                   # @func0000000000000421
 	subl	%edi, %edx
 	cmpl	%esi, %edx
 	sete	%al
 	retq
-func0000000000000211:                   # @func0000000000000211
-	subl	%edi, %edx
-	cmpl	%esi, %edx
-	sete	%al
-	retq
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	subl	%edi, %edx
 	cmpl	%esi, %edx
 	setb	%al
@@ -33,7 +33,7 @@ func0000000000000006:                   # @func0000000000000006
 	cmpl	%esi, %edx
 	setl	%al
 	retq
-func0000000000000204:                   # @func0000000000000204
+func0000000000000404:                   # @func0000000000000404
 	subl	%edi, %edx
 	cmpl	%esi, %edx
 	setb	%al
@@ -48,22 +48,22 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	%esi, %edx
 	setb	%al
 	retq
-func0000000000000096:                   # @func0000000000000096
+func0000000000000126:                   # @func0000000000000126
 	subl	%edi, %edx
 	cmpl	%esi, %edx
 	setl	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	subl	%edi, %edx
 	cmpl	%esi, %edx
 	setl	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	subl	%edi, %edx
 	cmpl	%esi, %edx
 	setg	%al
 	retq
-func000000000000029a:                   # @func000000000000029a
+func000000000000052a:                   # @func000000000000052a
 	subl	%edi, %edx
 	cmpl	%esi, %edx
 	setg	%al

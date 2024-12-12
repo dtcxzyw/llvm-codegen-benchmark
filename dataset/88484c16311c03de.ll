@@ -1,5 +1,5 @@
 
-%struct.alps_nibble_commands.3368760 = type { i32, i8 }
+%struct.alps_nibble_commands.3554398 = type { i32, i8 }
 
 ; 1 occurrences:
 ; linux/optimized/lz4_decompress.ll
@@ -16,22 +16,22 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/alps.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i8 %1) #0 {
+define ptr @func0000000000000013(ptr %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %1, 4
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr %struct.alps_nibble_commands.3368760, ptr %0, i64 %3, i32 1
+  %4 = getelementptr %struct.alps_nibble_commands.3554398, ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
 ; 1 occurrences:
 ; wolfssl/optimized/aes.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i8 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %1, 4
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr [16 x i8], ptr %0, i64 %3, i64 8
+  %4 = getelementptr nuw [16 x i8], ptr %0, i64 %3, i64 8
   ret ptr %4
 }
 
@@ -39,12 +39,12 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i8 %1) #0 {
+define ptr @func000000000000007f(ptr %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %1, 3
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 1
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 1
   ret ptr %5
 }
 

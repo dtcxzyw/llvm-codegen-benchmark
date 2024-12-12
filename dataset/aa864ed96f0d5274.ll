@@ -1,5 +1,5 @@
 
-; 185 occurrences:
+; 184 occurrences:
 ; cpython/optimized/_ctypes.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
@@ -154,7 +154,6 @@
 ; minetest/optimized/COBJMeshFileLoader.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; minetest/optimized/anaglyph.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/dynamicshadowsrender.cpp.ll
 ; minetest/optimized/enriched_string.cpp.ll
@@ -195,6 +194,19 @@ entry:
   ret i1 %5
 }
 
+; 2 occurrences:
+; boost/optimized/static_string.ll
+; cpython/optimized/bytesio.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(i64 %0, ptr %1) #0 {
+entry:
+  %2 = ptrtoint ptr %1 to i64
+  %3 = add i64 %0, -5
+  %4 = sub i64 %3, %2
+  %5 = icmp eq i64 %4, -2
+  ret i1 %5
+}
+
 ; 1 occurrences:
 ; brotli/optimized/compress_fragment.c.ll
 ; Function Attrs: nounwind
@@ -205,17 +217,6 @@ entry:
   %4 = sub i64 %3, %2
   %5 = icmp ugt i64 %4, 7
   ret i1 %5
-}
-
-; 1 occurrences:
-; cpython/optimized/bytesio.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000001(i64 %0, ptr %1) #0 {
-entry:
-  %2 = ptrtoint ptr %1 to i64
-  %3 = add i64 %0, 1
-  %4 = icmp eq i64 %3, %2
-  ret i1 %4
 }
 
 attributes #0 = { nounwind }

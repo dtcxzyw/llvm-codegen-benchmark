@@ -1,8 +1,7 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; lief/optimized/rsa.c.ll
-; openusd/optimized/fvarLevel.cpp.ll
 ; proxygen/optimized/HeaderDecodeInfo.cpp.ll
 ; wireshark/optimized/packet-ber.c.ll
 ; z3/optimized/old_interval.cpp.ll

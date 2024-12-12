@@ -1,5 +1,5 @@
 
-; 43 occurrences:
+; 40 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/abcOrchestration.c.ll
@@ -17,8 +17,6 @@
 ; abc/optimized/cecCorr.c.ll
 ; abc/optimized/covMinEsop.c.ll
 ; abc/optimized/covMinSop.c.ll
-; abc/optimized/cswMan.c.ll
-; abc/optimized/darMan.c.ll
 ; abc/optimized/darRefact.c.ll
 ; abc/optimized/fraLcr.c.ll
 ; abc/optimized/fraMan.c.ll
@@ -31,7 +29,6 @@
 ; abc/optimized/mfsMan.c.ll
 ; abc/optimized/resCore.c.ll
 ; abc/optimized/retDelay.c.ll
-; abc/optimized/rwrMan.c.ll
 ; abc/optimized/sfmCore.c.ll
 ; abc/optimized/sfmDec.c.ll
 ; abc/optimized/sswMan.c.ll

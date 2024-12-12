@@ -18,13 +18,13 @@ func0000000000000008:                   # @func0000000000000008
 	retq
 func0000000000000010:                   # @func0000000000000010
 	vcvtdq2pd	%ymm1, %zmm1
-	vcmpeqpd	%zmm0, %zmm1, %k0
+	vcmpeqpd	%zmm1, %zmm0, %k0
 	vpmovm2d	%k0, %ymm0
 	vpsrld	$31, %ymm0, %ymm0
 	retq
 func000000000000000e:                   # @func000000000000000e
 	vcvtdq2pd	%ymm1, %zmm1
-	vcmpneqpd	%zmm0, %zmm1, %k0
+	vcmpneqpd	%zmm1, %zmm0, %k0
 	vpmovm2d	%k0, %ymm0
 	vpsrld	$31, %ymm0, %ymm0
 	retq

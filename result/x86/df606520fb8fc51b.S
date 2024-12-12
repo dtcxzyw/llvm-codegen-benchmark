@@ -22,10 +22,3 @@ func0000000000000018:                   # @func0000000000000018
 	cmovnsq	%rdx, %rax
 	imulq	%rdi, %rax
 	retq
-func0000000000000021:                   # @func0000000000000021
-	movq	%rsi, %rax
-	movabsq	$2305843009213693950, %rcx      # imm = 0x1FFFFFFFFFFFFFFE
-	cmpq	%rcx, %rdx
-	cmovbeq	%rdx, %rax
-	imulq	%rdi, %rax
-	retq

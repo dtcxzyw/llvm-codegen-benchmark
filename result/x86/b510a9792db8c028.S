@@ -5,14 +5,14 @@ func0000000000000000:                   # @func0000000000000000
 	andq	$-2, %rax
 	leaq	(%rdi,%rax,2), %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	leaq	240(%rsi), %rdx
 	movabsq	$-9187201950435737471, %rax     # imm = 0x8080808080808081
 	mulxq	%rax, %rax, %rax
 	shrq	$7, %rax
 	addq	%rdi, %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	leaq	-4(%rsi), %rdx
 	movabsq	$-9187201950435737471, %rax     # imm = 0x8080808080808081
 	mulxq	%rax, %rax, %rax

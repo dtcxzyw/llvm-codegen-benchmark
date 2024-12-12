@@ -1,4 +1,4 @@
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	sext.w	a0, a0
 	sext.w	a1, a1
 	snez	a1, a1
@@ -6,7 +6,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	and	a0, a0, a1
 	neg	a0, a0
 	ret
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	sext.w	a0, a0
 	sext.w	a1, a1
 	slti	a1, a1, 1000
@@ -14,7 +14,7 @@ func0000000000000061:                   # @func0000000000000061
 	and	a0, a0, a1
 	neg	a0, a0
 	ret
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	sext.w	a0, a0
 	sext.w	a1, a1
 	snez	a1, a1
@@ -23,7 +23,7 @@ func00000000000000c1:                   # @func00000000000000c1
 	and	a0, a0, a1
 	neg	a0, a0
 	ret
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000014a:                   # @func000000000000014a
 	sext.w	a0, a0
 	sext.w	a1, a1
 	sgtz	a1, a1
@@ -31,7 +31,7 @@ func00000000000000aa:                   # @func00000000000000aa
 	and	a0, a0, a1
 	neg	a0, a0
 	ret
-func00000000000000ca:                   # @func00000000000000ca
+func000000000000018a:                   # @func000000000000018a
 	sext.w	a0, a0
 	sext.w	a1, a1
 	snez	a1, a1
@@ -39,7 +39,7 @@ func00000000000000ca:                   # @func00000000000000ca
 	and	a0, a0, a1
 	neg	a0, a0
 	ret
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	sext.w	a1, a1
 	srliw	a0, a0, 29
 	snez	a1, a1
@@ -47,7 +47,7 @@ func00000000000000c4:                   # @func00000000000000c4
 	and	a0, a0, a1
 	neg	a0, a0
 	ret
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000141:                   # @func0000000000000141
 	sext.w	a0, a0
 	sext.w	a1, a1
 	sgtz	a1, a1
@@ -56,7 +56,7 @@ func00000000000000a1:                   # @func00000000000000a1
 	and	a0, a0, a1
 	neg	a0, a0
 	ret
-func00000000000000c6:                   # @func00000000000000c6
+func0000000000000186:                   # @func0000000000000186
 	sext.w	a0, a0
 	sext.w	a1, a1
 	snez	a1, a1

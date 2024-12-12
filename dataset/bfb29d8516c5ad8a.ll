@@ -42,7 +42,7 @@ entry:
   %3 = add nuw i32 %2, 1
   %4 = zext i32 %3 to i64
   %5 = sub i64 %4, %1
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -55,7 +55,7 @@ entry:
   %3 = add i32 %2, 1
   %4 = zext i32 %3 to i64
   %5 = sub i64 %4, %1
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 

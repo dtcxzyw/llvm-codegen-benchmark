@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; clamav/optimized/readdb.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000041c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000102c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 73
   %4 = icmp eq i32 %1, 3
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; openblas/optimized/dgesvd.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000ccc(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000318c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp ne i32 %1, 0

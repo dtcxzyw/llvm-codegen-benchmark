@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 26 occurrences:
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; delta-rs/optimized/1rw3q64nilk4jthd.ll
 ; delta-rs/optimized/264wku5om6u5pdmz.ll
@@ -12,7 +12,6 @@
 ; delta-rs/optimized/4zvphat0q9a964bz.ll
 ; delta-rs/optimized/s2xrj2sh770tx8d.ll
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
-; qemu/optimized/hw_vfio_common.c.ll
 ; ruby/optimized/array.ll
 ; ruby/optimized/numeric.ll
 ; ruby/optimized/rjit_c.ll
@@ -25,8 +24,10 @@
 ; velox/optimized/Sequence.cpp.ll
 ; velox/optimized/Timestamp.cpp.ll
 ; velox/optimized/TimestampWithTimeZoneType.cpp.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i128 %0) #0 {
+define i1 @func0000000000000024(i128 %0) #0 {
 entry:
   %1 = add nsw i128 %0, 4611686018427387904
   %2 = icmp ult i128 %1, 9223372036854775808
@@ -52,11 +53,21 @@ entry:
   ret i1 %2
 }
 
+; 1 occurrences:
+; qemu/optimized/hw_vfio_common.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i128 %0) #0 {
+entry:
+  %1 = add nsw i128 %0, -1
+  %2 = icmp samesign ult i128 %1, 18446744073709551616
+  ret i1 %2
+}
+
 ; 2 occurrences:
 ; delta-rs/optimized/1rw3q64nilk4jthd.ll
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i128 %0) #0 {
+define i1 @func0000000000000028(i128 %0) #0 {
 entry:
   %1 = add i128 %0, -12
   %2 = icmp ult i128 %1, -9

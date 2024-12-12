@@ -1,29 +1,22 @@
+func0000000000000381:                   # @func0000000000000381
+	movl	%esi, %eax
+	addq	$4, %rax
+	cmpq	%rax, %rdi
+	sete	%al
+	retq
 func00000000000001c1:                   # @func00000000000001c1
 	movl	%esi, %eax
 	addq	$4, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func00000000000000e1:                   # @func00000000000000e1
+func00000000000001e1:                   # @func00000000000001e1
 	movl	%esi, %eax
 	addq	$4, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func00000000000000f1:                   # @func00000000000000f1
-	movl	%esi, %eax
-	addq	$4, %rax
-	cmpq	%rdi, %rax
-	sete	%al
-	retq
-func00000000000001f8:                   # @func00000000000001f8
-	movl	%esi, %eax
-	subq	%rax, %rdi
-	addq	$-4, %rdi
-	cmpq	$3073, %rdi                     # imm = 0xC01
-	setae	%al
-	retq
-func00000000000000e8:                   # @func00000000000000e8
+func00000000000001c8:                   # @func00000000000001c8
 	movl	%esi, %eax
 	subq	%rax, %rdi
 	addq	$-2, %rdi

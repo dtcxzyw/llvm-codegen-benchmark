@@ -43,15 +43,7 @@ entry:
   ret i64 %4
 }
 
-; 10 occurrences:
-; abc/optimized/dauCanon.c.ll
-; abc/optimized/extraBddThresh.c.ll
-; abc/optimized/extraUtilMaj.c.ll
-; abc/optimized/giaIf.c.ll
-; abc/optimized/giaMfs.c.ll
-; abc/optimized/giaTruth.c.ll
-; abc/optimized/ifDec75.c.ll
-; abc/optimized/ifTruth.c.ll
+; 2 occurrences:
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
@@ -63,11 +55,26 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 8 occurrences:
+; abc/optimized/dauCanon.c.ll
+; abc/optimized/extraBddThresh.c.ll
+; abc/optimized/extraUtilMaj.c.ll
+; abc/optimized/giaIf.c.ll
+; abc/optimized/giaMfs.c.ll
+; abc/optimized/giaTruth.c.ll
+; abc/optimized/ifDec75.c.ll
+; abc/optimized/ifTruth.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000029(i32 %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ult i64 %1, 7
+  %3 = zext nneg i32 %0 to i64
+  %4 = select i1 %2, i64 1, i64 %3
+  ret i64 %4
+}
+
+; 1 occurrences:
 ; git/optimized/diff-delta.ll
-; libjpeg-turbo/optimized/jdmarker.c.ll
-; linux/optimized/vc_screen.ll
-; llvm/optimized/BranchProbabilityInfo.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i32 %0, i64 %1) #0 {
 entry:
@@ -101,6 +108,19 @@ entry:
   ret i64 %4
 }
 
+; 3 occurrences:
+; libjpeg-turbo/optimized/jdmarker.c.ll
+; linux/optimized/vc_screen.ll
+; llvm/optimized/BranchProbabilityInfo.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000030(i32 %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i64 %1, 2147483648
+  %3 = zext i32 %0 to i64
+  %4 = select i1 %2, i64 2147483648, i64 %3
+  ret i64 %4
+}
+
 ; 1 occurrences:
 ; linux/optimized/tree.ll
 ; Function Attrs: nounwind
@@ -126,9 +146,9 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestHeap.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000028(i32 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ult i64 %1, 858993460
+  %2 = icmp samesign ult i64 %1, 858993460
   %3 = zext i32 %0 to i64
   %4 = select i1 %2, i64 0, i64 %3
   ret i64 %4

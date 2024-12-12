@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 13 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; annoy/optimized/annoymodule.ll
 ; box2d/optimized/b2_collide_edge.cpp.ll
@@ -11,6 +11,8 @@
 ; typst-rs/optimized/377uk5tkmxagdt0q.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; yoga/optimized/Node.cpp.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i32 %0, float %1) #0 {
 entry:

@@ -46,7 +46,7 @@ define double @func0000000000000007(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl nuw nsw i64 %2, 20
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = bitcast i64 %4 to double
   ret double %5
 }
@@ -58,7 +58,7 @@ define double @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl i64 %2, 63
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = bitcast i64 %4 to double
   ret double %5
 }

@@ -1,12 +1,12 @@
 .LCPI0_0:
-	.byte	15                              # 0xf
-	.byte	15                              # 0xf
-	.byte	15                              # 0xf
-	.byte	15                              # 0xf
-	.byte	15                              # 0xf
-	.byte	15                              # 0xf
-	.byte	15                              # 0xf
-	.byte	15                              # 0xf
+	.byte	1                               # 0x1
+	.byte	1                               # 0x1
+	.byte	1                               # 0x1
+	.byte	1                               # 0x1
+	.byte	1                               # 0x1
+	.byte	1                               # 0x1
+	.byte	1                               # 0x1
+	.byte	1                               # 0x1
 	.zero	1
 	.zero	1
 	.zero	1
@@ -16,11 +16,11 @@
 	.zero	1
 	.zero	1
 .LCPI0_1:
-	.zero	4,15
+	.zero	4,1
 func0000000000000000:                   # @func0000000000000000
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
-	vpsrld	$16, %ymm1, %ymm0
+	vpsrld	$19, %ymm1, %ymm0
 	vpmovdb	%ymm0, %xmm0
 	vpandd	.LCPI0_1(%rip){1to4}, %xmm0, %xmm0
 	knotb	%k0, %k1

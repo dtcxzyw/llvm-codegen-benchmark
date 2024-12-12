@@ -1,7 +1,5 @@
 
-; 9 occurrences:
-; cmake/optimized/vli_decoder.c.ll
-; cmake/optimized/vli_encoder.c.ll
+; 7 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll

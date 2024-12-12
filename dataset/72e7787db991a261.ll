@@ -1,17 +1,4 @@
 
-; 2 occurrences:
-; cpython/optimized/dtoa.ll
-; ruby/optimized/util.ll
-; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = shl i32 %2, 5
-  %4 = sub nsw i32 %0, %1
-  %5 = add i32 %4, %3
-  %6 = icmp sgt i32 %5, 0
-  ret i1 %6
-}
-
 ; 6 occurrences:
 ; hermes/optimized/dtoa.c.ll
 ; jq/optimized/jv_dtoa.ll
@@ -20,7 +7,7 @@ entry:
 ; opencv/optimized/brisk.cpp.ll
 ; php/optimized/zend_strtod.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000015a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = shl nsw i32 %0, 5

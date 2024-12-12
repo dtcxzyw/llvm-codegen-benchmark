@@ -9,7 +9,7 @@ define i1 @func000000000000000c(i1 %0, i16 %1) #0 {
 entry:
   %2 = trunc i16 %1 to i8
   %3 = icmp ne i8 %2, 10
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
@@ -25,7 +25,7 @@ define i1 @func0000000000000001(i1 %0, i16 %1) #0 {
 entry:
   %2 = trunc i16 %1 to i8
   %3 = icmp eq i8 %2, 10
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
@@ -40,8 +40,7 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
-; abseil-cpp/optimized/generators_test.cc.ll
+; 2 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
 ; Function Attrs: nounwind
@@ -49,7 +48,7 @@ define i1 @func0000000000000004(i1 %0, i16 %1) #0 {
 entry:
   %2 = trunc i16 %1 to i8
   %3 = icmp ult i8 %2, 3
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 

@@ -1,17 +1,4 @@
 
-; 2 occurrences:
-; abc/optimized/wlcNtk.c.ll
-; qemu/optimized/block_vhdx-log.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000078(i32 %0) #0 {
-entry:
-  %1 = add nuw nsw i32 %0, 2
-  %2 = and i32 %1, 127
-  %3 = icmp ne i32 %2, 0
-  %4 = zext i1 %3 to i32
-  ret i32 %4
-}
-
 ; 10 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/absOldSim.c.ll
@@ -26,53 +13,20 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000018(i32 %0) #0 {
 entry:
-  %1 = add i32 %0, 2
-  %2 = and i32 %1, 127
-  %3 = icmp ne i32 %2, 0
-  %4 = zext i1 %3 to i32
-  ret i32 %4
+  %1 = and i32 %0, 127
+  %2 = icmp ne i32 %1, 126
+  %3 = zext i1 %2 to i32
+  ret i32 %3
 }
 
-; 9 occurrences:
-; darktable/optimized/introspection_clipping.c.ll
-; git/optimized/sparse-checkout.ll
-; glslang/optimized/GlslangToSpv.cpp.ll
-; harfbuzz/optimized/harfbuzz.cc.ll
-; linux/optimized/phy_device.ll
-; linux/optimized/tg3.ll
-; ocio/optimized/CDLOpData.cpp.ll
-; openjdk/optimized/hb-set.ll
-; redis/optimized/quicklist.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000002(i32 %0) #0 {
-entry:
-  %1 = add i32 %0, 1
-  %2 = and i32 %1, 511
-  %3 = icmp eq i32 %2, 0
-  %4 = zext i1 %3 to i32
-  ret i32 %4
-}
-
-; 2 occurrences:
-; harfbuzz/optimized/harfbuzz.cc.ll
-; openjdk/optimized/hb-set.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000042(i32 %0) #0 {
-entry:
-  %1 = add nuw i32 %0, 1
-  %2 = and i32 %1, 511
-  %3 = icmp eq i32 %2, 0
-  %4 = zext i1 %3 to i32
-  ret i32 %4
-}
-
-; 176 occurrences:
+; 177 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/acecRe.c.ll
 ; abc/optimized/giaBound.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/mfsMan.c.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/rebuildpe.c.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
@@ -244,12 +198,29 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0) #0 {
+define i32 @func0000000000000058(i32 %0) #0 {
 entry:
   %1 = and i32 %0, -2
   %2 = icmp ne i32 %1, 152
   %3 = zext i1 %2 to i32
   ret i32 %3
+}
+
+; 6 occurrences:
+; darktable/optimized/introspection_clipping.c.ll
+; git/optimized/sparse-checkout.ll
+; glslang/optimized/GlslangToSpv.cpp.ll
+; linux/optimized/phy_device.ll
+; linux/optimized/tg3.ll
+; ocio/optimized/CDLOpData.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000002(i32 %0) #0 {
+entry:
+  %1 = add i32 %0, -1
+  %2 = and i32 %1, -3
+  %3 = icmp eq i32 %2, 0
+  %4 = zext i1 %3 to i32
+  ret i32 %4
 }
 
 attributes #0 = { nounwind }

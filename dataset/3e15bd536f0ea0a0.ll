@@ -1,9 +1,8 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; cpython/optimized/ceval.ll
 ; jq/optimized/decNumber.ll
 ; linux/optimized/i9xx_wm.ll
-; nuttx/optimized/lib_daysbeforemonth.c.ll
 ; opencv/optimized/floodfill.cpp.ll
 ; openusd/optimized/fvarLevel.cpp.ll
 ; qemu/optimized/hw_net_pcnet.c.ll

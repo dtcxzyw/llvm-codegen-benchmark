@@ -1,11 +1,3 @@
-func0000000000000004:                   # @func0000000000000004
-	xorl	%ecx, %ecx
-	cmpq	$4, %rdx
-	cmovael	%esi, %ecx
-	testb	$1, %dil
-	movl	$3, %eax
-	cmovel	%ecx, %eax
-	retq
 func0000000000000008:                   # @func0000000000000008
 	shrq	%rdx
 	cmpq	$2147483647, %rdx               # imm = 0x7FFFFFFF
@@ -15,11 +7,11 @@ func0000000000000008:                   # @func0000000000000008
 	movl	$-2, %eax
 	cmovel	%ecx, %eax
 	retq
-func0000000000000006:                   # @func0000000000000006
-	cmpq	$-2147483646, %rdx              # imm = 0x80000002
-	movl	$-2147483647, %ecx              # imm = 0x80000001
-	cmovgel	%esi, %ecx
+func0000000000000001:                   # @func0000000000000001
+	testq	%rdx, %rdx
+	movl	$-99999, %ecx                   # imm = 0xFFFE7961
+	cmovnel	%esi, %ecx
 	testb	$1, %dil
-	movl	$2147483647, %eax               # imm = 0x7FFFFFFF
+	movl	$99999, %eax                    # imm = 0x1869F
 	cmovel	%ecx, %eax
 	retq

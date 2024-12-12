@@ -1,10 +1,11 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; darktable/optimized/introspection_colorbalancergb.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; oiio/optimized/maketexture.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
 ; openjdk/optimized/hb-ot-font.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1) #0 {
 entry:

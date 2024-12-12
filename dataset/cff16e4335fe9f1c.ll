@@ -1,7 +1,6 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; llvm/optimized/ASTReader.cpp.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openjdk/optimized/ciMethodData.ll
 ; openjdk/optimized/methodData.ll
 ; openspiel/optimized/DealerPar.cpp.ll
@@ -12,7 +11,7 @@ define i1 @func0000000000000006(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, 2
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = icmp slt i32 %5, %0
   ret i1 %6
 }
@@ -34,11 +33,11 @@ entry:
 ; 1 occurrences:
 ; ruby/optimized/ripper.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add nsw i32 %3, 2
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = icmp slt i32 %5, %0
   ret i1 %6
 }
@@ -46,7 +45,7 @@ entry:
 ; 1 occurrences:
 ; openssl/optimized/openssl-bin-engine.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, 1
@@ -116,7 +115,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/gmx_awh.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add nsw i32 %3, 7
@@ -128,7 +127,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-e2ap.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000044(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, 1
@@ -140,7 +139,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/filter.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000046(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, 1
@@ -152,11 +151,11 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/reslist.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, 1
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = icmp slt i32 %5, %0
   ret i1 %6
 }
@@ -164,7 +163,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/text_detector_swt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000301(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000601(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = add i32 %3, -1
@@ -176,7 +175,7 @@ entry:
 ; 1 occurrences:
 ; openexr/optimized/ImfHuf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000035a(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000006aa(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = add nsw i32 %3, -57
@@ -188,7 +187,7 @@ entry:
 ; 1 occurrences:
 ; libwebp/optimized/backward_references_cost_enc.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000008a(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add nsw i32 %3, -1

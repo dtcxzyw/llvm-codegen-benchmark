@@ -15,9 +15,9 @@ func0000000000000018:                   # @func0000000000000018
 	sbbl	%eax, %eax
 	orb	%cl, %al
 	retq
-func0000000000000010:                   # @func0000000000000010
+func0000000000000030:                   # @func0000000000000030
 	xorl	%ecx, %ecx
-	cmpl	$15, %esi
+	cmpl	$5, %esi
 	setae	%cl
 	testb	$1, %dil
 	movl	$2, %eax

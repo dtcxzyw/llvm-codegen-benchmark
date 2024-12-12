@@ -25,11 +25,3 @@ func0000000000000006:                   # @func0000000000000006
 	vpcmpltd	.LCPI3_0(%rip){1to8}, %ymm1, %k0 {%k1}
 	vpmovm2d	%k0, %ymm0
 	retq
-.LCPI4_0:
-	.long	4294967292                      # 0xfffffffc
-func0000000000000004:                   # @func0000000000000004
-	vpsllw	$15, %xmm0, %xmm0
-	vpmovw2m	%xmm0, %k1
-	vpcmpltud	.LCPI4_0(%rip){1to8}, %ymm1, %k0 {%k1}
-	vpmovm2d	%k0, %ymm0
-	retq

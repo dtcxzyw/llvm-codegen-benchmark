@@ -1,10 +1,9 @@
 
-; 34 occurrences:
+; 32 occurrences:
 ; hdf5/optimized/H5Shyper.c.ll
 ; hdf5/optimized/h5repack_copy.c.ll
 ; linux/optimized/clocksource.ll
 ; linux/optimized/page_alloc.ll
-; linux/optimized/pcm_timer.ll
 ; linux/optimized/regmap.ll
 ; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/RustDemangle.cpp.ll
@@ -22,7 +21,6 @@
 ; postgres/optimized/receivelog.ll
 ; postgres/optimized/xlog.ll
 ; postgres/optimized/xlogarchive.ll
-; postgres/optimized/xlogbackup.ll
 ; postgres/optimized/xlogfuncs.ll
 ; postgres/optimized/xlogreader.ll
 ; postgres/optimized/xlogrecovery.ll

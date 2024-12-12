@@ -44,14 +44,17 @@ entry:
   ret i64 %3
 }
 
-; 23 occurrences:
+; 26 occurrences:
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; gromacs/optimized/threaded_force_buffer.cpp.ll
 ; icu/optimized/uspoof_impl.ll
+; libwebp/optimized/alpha_processing_sse2.c.ll
+; libwebp/optimized/alpha_processing_sse41.c.ll
 ; libwebp/optimized/io_dec.c.ll
 ; libwebp/optimized/sharpyuv.c.ll
 ; libwebp/optimized/webp_enc.c.ll
 ; luau/optimized/lvmload.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; nori/optimized/nanovg.c.ll
 ; oiio/optimized/bmpinput.cpp.ll
 ; opencv/optimized/grfmt_bmp.cpp.ll

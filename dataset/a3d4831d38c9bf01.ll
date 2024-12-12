@@ -1,10 +1,15 @@
 
-; 51 occurrences:
+; 56 occurrences:
 ; abc/optimized/sclSize.c.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; abseil-cpp/optimized/uniform_real_distribution_test.cc.ll
 ; assimp/optimized/TriangulateProcess.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/within.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; gromacs/optimized/gmx_wham.cpp.ll
 ; gromacs/optimized/msd.cpp.ll

@@ -1,15 +1,14 @@
 func0000000000000004:                   # @func0000000000000004
 	xorl	%eax, %eax
-	cmpb	$45, %sil
+	testb	%sil, %sil
 	sete	%al
-	orq	$-2, %rax
-	addq	%rdi, %rax
+	leaq	4(%rdi,%rax,4), %rax
 	retq
 func0000000000000007:                   # @func0000000000000007
-	leaq	369098752(%rdi), %rax
-	leaq	201326592(%rdi), %rcx
-	testb	%sil, %sil
-	cmoveq	%rcx, %rax
+	cmpb	$1, %sil
+	movq	$-257, %rax                     # imm = 0xFEFF
+	sbbq	$0, %rax
+	addq	%rdi, %rax
 	retq
 func0000000000000005:                   # @func0000000000000005
 	cmpb	$1, %sil
@@ -22,14 +21,14 @@ func0000000000000010:                   # @func0000000000000010
 	setb	%al
 	leaq	1(%rdi,%rax,2), %rax
 	retq
-func0000000000000023:                   # @func0000000000000023
+func0000000000000063:                   # @func0000000000000063
 	movl	$4294967224, %ecx               # imm = 0xFFFFFFB8
 	leaq	13(%rcx), %rax
 	cmpb	$72, %sil
 	cmovaeq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000013:                   # @func0000000000000013
+func0000000000000053:                   # @func0000000000000053
 	movl	$4294967250, %ecx               # imm = 0xFFFFFFD2
 	leaq	13(%rcx), %rax
 	cmpb	$46, %sil
@@ -60,4 +59,10 @@ func0000000000000019:                   # @func0000000000000019
 	setl	%al
 	subq	%rax, %rdi
 	leaq	2400(%rdi), %rax
+	retq
+func0000000000000013:                   # @func0000000000000013
+	xorl	%eax, %eax
+	cmpb	$-2, %sil
+	setae	%al
+	leaq	1(%rdi,%rax,4), %rax
 	retq

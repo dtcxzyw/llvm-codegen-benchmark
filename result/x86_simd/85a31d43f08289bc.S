@@ -41,3 +41,25 @@ func0000000000000008:                   # @func0000000000000008
 	vpbroadcastq	.LCPI5_1(%rip), %ymm0   # ymm0 = [160,160,160,160]
 	vpbroadcastq	.LCPI5_2(%rip), %ymm0 {%k1} # ymm0 {%k1} = [80,80,80,80]
 	retq
+.LCPI6_0:
+	.quad	4294967296                      # 0x100000000
+.LCPI6_1:
+	.quad	52776558133248                  # 0x300000000000
+.LCPI6_2:
+	.quad	61572651155456                  # 0x380000000000
+func0000000000000014:                   # @func0000000000000014
+	vpcmpltuq	.LCPI6_0(%rip){1to4}, %ymm0, %k1
+	vpbroadcastq	.LCPI6_1(%rip), %ymm0   # ymm0 = [52776558133248,52776558133248,52776558133248,52776558133248]
+	vpbroadcastq	.LCPI6_2(%rip), %ymm0 {%k1} # ymm0 {%k1} = [61572651155456,61572651155456,61572651155456,61572651155456]
+	retq
+.LCPI7_0:
+	.quad	3                               # 0x3
+.LCPI7_1:
+	.quad	5                               # 0x5
+.LCPI7_2:
+	.quad	9                               # 0x9
+func0000000000000018:                   # @func0000000000000018
+	vpcmpnleuq	.LCPI7_0(%rip){1to4}, %ymm0, %k1
+	vpbroadcastq	.LCPI7_1(%rip), %ymm0   # ymm0 = [5,5,5,5]
+	vpbroadcastq	.LCPI7_2(%rip), %ymm0 {%k1} # ymm0 {%k1} = [9,9,9,9]
+	retq

@@ -3,7 +3,7 @@
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; ruby/optimized/array.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %1, %2
   %4 = sub nsw i64 %3, %0
@@ -11,21 +11,11 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; ruby/optimized/array.ll
-; yosys/optimized/satgen.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = mul i64 %1, %2
-  %4 = sub nsw i64 %3, %0
-  %5 = icmp ugt i64 %4, 2305843009213693951
-  ret i1 %5
-}
-
-; 2 occurrences:
+; 4 occurrences:
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; linux/optimized/build_policy.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -58,9 +48,20 @@ entry:
 }
 
 ; 1 occurrences:
+; yosys/optimized/satgen.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul i64 %1, %2
+  %4 = sub nsw i64 %3, %0
+  %5 = icmp ugt i64 %4, 9223372036854775804
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; yosys/optimized/calc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %1, %2
   %4 = icmp slt i64 %3, %0
@@ -83,7 +84,7 @@ entry:
 ; opencv/optimized/convolution.cpp.ll
 ; opencv/optimized/convolution_layer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000aa(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
   %4 = icmp sgt i64 %3, %0
@@ -93,7 +94,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/matio.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
   %4 = sub nuw i64 %3, %0
@@ -106,7 +107,7 @@ entry:
 ; opencv/optimized/convolution_layer.cpp.ll
 ; openusd/optimized/warped_motion.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
   %4 = icmp slt i64 %3, %0
@@ -132,7 +133,7 @@ entry:
 ; faiss/optimized/ProductAdditiveQuantizer.cpp.ll
 ; faiss/optimized/ProductQuantizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %1, %2
   %4 = sub nuw i64 %3, %0
@@ -143,7 +144,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/convolution_layer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
   %4 = sub nuw nsw i64 %3, %0

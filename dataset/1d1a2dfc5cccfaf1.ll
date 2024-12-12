@@ -1,9 +1,9 @@
 
-; 56 occurrences:
+; 53 occurrences:
 ; abc/optimized/abcRr.c.ll
 ; abc/optimized/ivyHaig.c.ll
-; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/node_hash_map_test.cc.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; gromacs/optimized/ewald.cpp.ll
 ; linux/optimized/af_netlink.ll
 ; linux/optimized/inet_fragment.ll
@@ -36,12 +36,9 @@
 ; node/optimized/libnode.node_options.ll
 ; node/optimized/libnode.node_worker.ll
 ; nuttx/optimized/mm_memalign.c.ll
-; opencv/optimized/motion_estimators.cpp.ll
-; openjdk/optimized/frame_x86.ll
 ; php/optimized/zend_jit.ll
 ; qemu/optimized/hwprofile.ll
 ; quickjs/optimized/quickjs.ll
-; regex-rs/optimized/1rguw48xrsv49k4z.ll
 ; ruby/optimized/array.ll
 ; ruby/optimized/enumerator.ll
 ; ruby/optimized/io.ll
@@ -51,11 +48,11 @@
 ; rust-analyzer-rs/optimized/3v26vzwqvuu0pyc9.ll
 ; rust-analyzer-rs/optimized/7lpeywhc9n6h2ze.ll
 ; rust-analyzer-rs/optimized/mucn4qgqdg2891h.ll
-; wasmtime-rs/optimized/3ks7b643ljwe3j81.ll
 ; wasmtime-rs/optimized/4sy2q5i3qnvymrev.ll
 ; wasmtime-rs/optimized/4u85yh8sn1llpfha.ll
 ; wasmtime-rs/optimized/joyny9bexuq72mb.ll
-; zxing/optimized/DMDetector.cpp.ll
+; zed-rs/optimized/2nwrl7qhv6ci6obqg1itckcv6.ll
+; zed-rs/optimized/6ynx0w9sgeecr389qqgspp29k.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i1 %0, i64 %1, i64 %2) #0 {
 entry:

@@ -1,12 +1,11 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; clamav/optimized/regcomp.c.ll
 ; hermes/optimized/regcomp.c.ll
-; linux/optimized/drm_scdc_helper.ll
 ; linux/optimized/power_supply_core.ll
 ; llvm/optimized/regcomp.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0) #0 {
+define i32 @func0000000000000026(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 256
   %2 = select i1 %1, i32 3, i32 2

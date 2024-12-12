@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 28 occurrences:
 ; abc/optimized/cecCorr.c.ll
 ; arrow/optimized/coo_converter.cc.ll
 ; gromacs/optimized/biasstate.cpp.ll
@@ -27,7 +27,6 @@
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/X86LoadValueInjectionLoadHardening.cpp.ll
 ; opencv/optimized/brisk.cpp.ll
-; opencv/optimized/tf_importer.cpp.ll
 ; yosys/optimized/simplify.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0) #0 {
@@ -51,7 +50,7 @@ entry:
   ret i32 %3
 }
 
-; 245 occurrences:
+; 244 occurrences:
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; duckdb/optimized/ub_duckdb_func_date.cpp.ll
 ; fmt/optimized/chrono-test.cc.ll
@@ -144,7 +143,6 @@ entry:
 ; llvm/optimized/MoveChecker.cpp.ll
 ; llvm/optimized/OSTargets.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
-; llvm/optimized/SplitModule.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll

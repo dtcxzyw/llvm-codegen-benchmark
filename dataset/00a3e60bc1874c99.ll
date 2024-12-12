@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 23 occurrences:
 ; hdf5/optimized/H5Olink.c.ll
 ; linux/optimized/sme.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
@@ -14,6 +14,15 @@
 ; wasmtime-rs/optimized/joyny9bexuq72mb.ll
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
 ; yalantinglibs/optimized/data_gen.cpp.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/b1bc3rbs9s229gjbf718xcm8w.ll
+; zed-rs/optimized/boyei0qs0y80q8snoztbi8jt7.ll
+; zed-rs/optimized/d8k4gi60mp0onf0c8t6rhs7ks.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
+; zed-rs/optimized/f10ffiihtazjqkmwr0jihceey.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i1 %1, i1 %2) #0 {
 entry:
@@ -24,13 +33,17 @@ entry:
   ret i64 %6
 }
 
-; 6 occurrences:
+; 10 occurrences:
 ; libquic/optimized/quic_protocol.cc.ll
 ; lief/optimized/CorePrStatus.cpp.ll
 ; lief/optimized/DynamicEntryFlags.cpp.ll
 ; lief/optimized/RelocationSizes.cpp.ll
 ; lief/optimized/RelocationStrings.cpp.ll
 ; llvm/optimized/ExprCXX.cpp.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/boyei0qs0y80q8snoztbi8jt7.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i1 %1, i1 %2) #0 {
 entry:

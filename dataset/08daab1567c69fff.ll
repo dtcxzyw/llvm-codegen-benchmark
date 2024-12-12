@@ -9,7 +9,7 @@
 ; luajit/optimized/lj_snap_dyn.ll
 ; openjdk/optimized/generateOopMap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 63
   %3 = zext nneg i16 %2 to i64
@@ -25,12 +25,12 @@ entry:
 ; rust-analyzer-rs/optimized/1a9wgp98jzqk22uy.ll
 ; stockfish/optimized/tbprobe.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i16 %1) #0 {
+define i1 @func00000000000000c1(i64 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 63
   %3 = zext nneg i16 %2 to i64
   %4 = shl nuw i64 1, %3
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   %6 = icmp eq i64 %5, 0
   ret i1 %6
 }

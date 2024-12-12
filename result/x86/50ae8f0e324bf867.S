@@ -5,7 +5,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	$7, %edi
 	setb	%al
 	retq
-func000000000000014a:                   # @func000000000000014a
+func000000000000028a:                   # @func000000000000028a
 	addl	%edx, %esi
 	notl	%edi
 	addl	%esi, %edi
@@ -19,25 +19,25 @@ func000000000000000a:                   # @func000000000000000a
 	cmpl	$-1085, %esi                    # imm = 0xFBC3
 	setge	%al
 	retq
-func0000000000000104:                   # @func0000000000000104
+func0000000000000204:                   # @func0000000000000204
 	addl	%edx, %esi
 	subl	%edi, %esi
 	addl	$-9, %esi
 	cmpl	$16, %esi
 	setb	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	addl	%edx, %esi
 	subl	%edi, %esi
 	cmpl	$-1900001, %esi                 # imm = 0xFFE3021F
 	sete	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	leal	-1(%rdx,%rsi), %eax
 	cmpl	%edi, %eax
 	setg	%al
 	retq
-func000000000000010a:                   # @func000000000000010a
+func000000000000020a:                   # @func000000000000020a
 	addl	%edx, %esi
 	subl	%edi, %esi
 	addl	$64, %esi
@@ -51,7 +51,7 @@ func0000000000000006:                   # @func0000000000000006
 	testl	%esi, %esi
 	setle	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	addl	%edx, %esi
 	subl	%edi, %esi
 	cmpl	$-3, %esi
@@ -69,12 +69,12 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	%edi, %esi
 	sete	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	leal	-1(%rdx,%rsi), %eax
 	cmpl	%edi, %eax
 	setl	%al
 	retq
-func0000000000000154:                   # @func0000000000000154
+func00000000000002a4:                   # @func00000000000002a4
 	addl	%edx, %esi
 	subl	%edi, %esi
 	addl	$256, %esi                      # imm = 0x100

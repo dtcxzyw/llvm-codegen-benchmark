@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	3067833783                      # 0xb6db6db7
-func0000000000000136:                   # @func0000000000000136
+func0000000000000266:                   # @func0000000000000266
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpsrlq	$3, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -14,7 +14,7 @@ func0000000000000136:                   # @func0000000000000136
 	.long	2863311531                      # 0xaaaaaaab
 .LCPI1_1:
 	.long	2                               # 0x2
-func0000000000000116:                   # @func0000000000000116
+func0000000000000226:                   # @func0000000000000226
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpsrlq	$3, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -25,7 +25,7 @@ func0000000000000116:                   # @func0000000000000116
 	retq
 .LCPI2_0:
 	.long	954437177                       # 0x38e38e39
-func0000000000000104:                   # @func0000000000000104
+func0000000000000204:                   # @func0000000000000204
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpsrlq	$3, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -38,7 +38,7 @@ func0000000000000104:                   # @func0000000000000104
 	retq
 .LCPI3_0:
 	.long	954437177                       # 0x38e38e39
-func0000000000000124:                   # @func0000000000000124
+func0000000000000244:                   # @func0000000000000244
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpsrlq	$2, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -51,7 +51,7 @@ func0000000000000124:                   # @func0000000000000124
 	retq
 .LCPI4_0:
 	.long	2863311531                      # 0xaaaaaaab
-func0000000000000106:                   # @func0000000000000106
+func0000000000000206:                   # @func0000000000000206
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpsrlq	$5, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -63,7 +63,7 @@ func0000000000000106:                   # @func0000000000000106
 	retq
 .LCPI5_0:
 	.long	2863311531                      # 0xaaaaaaab
-func0000000000000121:                   # @func0000000000000121
+func0000000000000241:                   # @func0000000000000241
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpsrlq	$2, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -75,7 +75,7 @@ func0000000000000121:                   # @func0000000000000121
 	retq
 .LCPI6_0:
 	.long	2863311531                      # 0xaaaaaaab
-func0000000000000111:                   # @func0000000000000111
+func0000000000000221:                   # @func0000000000000221
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpsrlq	$4, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -87,7 +87,7 @@ func0000000000000111:                   # @func0000000000000111
 	retq
 .LCPI7_0:
 	.long	1736263375                      # 0x677d46cf
-func0000000000000131:                   # @func0000000000000131
+func0000000000000261:                   # @func0000000000000261
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpsrlq	$3, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -99,7 +99,7 @@ func0000000000000131:                   # @func0000000000000131
 	retq
 .LCPI8_0:
 	.long	3186588639                      # 0xbdef7bdf
-func0000000000000101:                   # @func0000000000000101
+func0000000000000201:                   # @func0000000000000201
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpsrlq	$3, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -109,7 +109,7 @@ func0000000000000101:                   # @func0000000000000101
 	vpcmpeqd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpsraq	$63, %ymm1, %ymm2
 	vpsrlq	$39, %ymm2, %ymm2
@@ -123,7 +123,7 @@ func0000000000000031:                   # @func0000000000000031
 	retq
 .LCPI10_0:
 	.long	2863311531                      # 0xaaaaaaab
-func0000000000000108:                   # @func0000000000000108
+func0000000000000208:                   # @func0000000000000208
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpsrlq	$6, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
@@ -136,7 +136,7 @@ func0000000000000108:                   # @func0000000000000108
 	retq
 .LCPI11_0:
 	.long	2863311531                      # 0xaaaaaaab
-func000000000000011a:                   # @func000000000000011a
+func000000000000022a:                   # @func000000000000022a
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpsrlq	$3, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1

@@ -1,63 +1,45 @@
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	movi	v1.4s, #1
-	movi	v2.4s, #56
-	movi	v3.2s, #56
-	add	v0.4s, v0.4s, v1.4s
-	smull2	v1.2d, v0.4s, v2.4s
-	smull	v0.2d, v0.2s, v3.2s
+	mov	w8, #56                         // =0x38
+	add	w9, w0, #1
+	smull	x0, w9, w8
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	movi	v1.4s, #1
-	movi	v2.4s, #40
-	movi	v3.2s, #40
-	add	v0.4s, v0.4s, v1.4s
-	smull2	v1.2d, v0.4s, v2.4s
-	smull	v0.2d, v0.2s, v3.2s
+	mov	w8, #40                         // =0x28
+	add	w9, w0, #1
+	smull	x0, w9, w8
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	mvni	v1.4s, #1
-	movi	v2.4s, #24
-	movi	v3.2s, #24
-	add	v0.4s, v0.4s, v1.4s
-	smull2	v1.2d, v0.4s, v2.4s
-	smull	v0.2d, v0.2s, v3.2s
+	mov	w8, #272                        // =0x110
+	sub	w9, w0, #1
+	smull	x0, w9, w8
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	mvni	v1.4s, #1
-	movi	v2.4s, #6
-	movi	v3.2s, #6
-	add	v0.4s, v0.4s, v1.4s
-	smull2	v1.2d, v0.4s, v2.4s
-	smull	v0.2d, v0.2s, v3.2s
+	mov	w8, #6                          // =0x6
+	sub	w9, w0, #2
+	smull	x0, w9, w8
+	ret
+                                        // -- End function
+func0000000000000009:                   // @func0000000000000009
+// %bb.0:                               // %entry
+	mov	w8, #24                         // =0x18
+	add	w9, w0, #1
+	smull	x0, w9, w8
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	movi	v1.4s, #1
-	mov	x8, #52507                      // =0xcd1b
-	movk	x8, #30795, lsl #16
-	movk	x8, #38042, lsl #32
-	add	v0.4s, v0.4s, v1.4s
-	sshll2	v1.2d, v0.4s, #0
-	sshll	v0.2d, v0.2s, #0
-	fmov	x9, d1
-	fmov	x11, d0
-	mov	x10, v1.d[1]
-	mov	x12, v0.d[1]
-	mul	x9, x9, x8
-	mul	x11, x11, x8
-	mul	x10, x10, x8
-	fmov	d1, x9
-	mul	x8, x12, x8
-	fmov	d0, x11
-	mov	v1.d[1], x10
-	mov	v0.d[1], x8
+	add	w8, w0, #1
+	mov	x9, #52507                      // =0xcd1b
+	sxtw	x8, w8
+	movk	x9, #30795, lsl #16
+	movk	x9, #38042, lsl #32
+	mul	x0, x8, x9
 	ret
                                         // -- End function

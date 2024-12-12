@@ -19,9 +19,9 @@ func0000000000000008:                   # @func0000000000000008
 	vsra.vi	v8, v12, 14
 	ret
 func0000000000000000:                   # @func0000000000000000
-	li	a0, 128
+	lui	a0, 8
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmv.v.x	v12, a0
 	vmacc.vv	v12, v10, v8
-	vsra.vi	v8, v12, 4
+	vsra.vi	v8, v12, 16
 	ret

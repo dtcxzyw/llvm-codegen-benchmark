@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; slurm/optimized/node_scheduler.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 5
   %3 = icmp eq i32 %2, 0
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/AArch64Disassembler.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000074(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1048576
   %.not.not = icmp eq i32 %2, 0
@@ -30,7 +30,7 @@ entry:
 ; llvm/optimized/AArch64Disassembler.cpp.ll
 ; opencv/optimized/opencv-caffe.pb.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 512
   %3 = icmp eq i32 %2, 0

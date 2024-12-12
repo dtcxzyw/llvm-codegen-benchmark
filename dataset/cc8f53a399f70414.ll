@@ -1,9 +1,10 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; cmake/optimized/noproxy.c.ll
 ; curl/optimized/libcurl_la-noproxy.ll
 ; lief/optimized/ssl_msg.c.ll
 ; qemu/optimized/ui_qemu-pixman.c.ll
+; wireshark/optimized/packet-bacapp.c.ll
 ; wireshark/optimized/packet-dmp.c.ll
 ; wireshark/optimized/packet-ms-do.c.ll
 ; wireshark/optimized/packet-wimaxasncp.c.ll
@@ -17,8 +18,9 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; libzmq/optimized/tcp_address.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
 ; wireshark/optimized/msg_dlmap.c.ll
 ; wireshark/optimized/msg_ulmap.c.ll
 ; wireshark/optimized/packet-amr.c.ll
@@ -39,18 +41,6 @@ define i32 @func0000000000000003(i8 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 7, %1
   %3 = shl nuw nsw i32 1, %2
-  %4 = zext i8 %0 to i32
-  %5 = and i32 %3, %4
-  ret i32 %5
-}
-
-; 1 occurrences:
-; wireshark/optimized/packet-bacapp.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000a(i8 %0, i32 %1) #0 {
-entry:
-  %2 = sub nsw i32 7, %1
-  %3 = shl nuw i32 1, %2
   %4 = zext i8 %0 to i32
   %5 = and i32 %3, %4
   ret i32 %5

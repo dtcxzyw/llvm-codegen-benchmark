@@ -1,11 +1,10 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; cmake/optimized/connect.c.ll
 ; cmake/optimized/ftp.c.ll
 ; curl/optimized/libcurl_la-connect.ll
 ; curl/optimized/libcurl_la-ftp.ll
 ; freetype/optimized/ftbase.c.ll
-; graphviz/optimized/sfcvt.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i1 %1, i32 %2) #0 {
 entry:

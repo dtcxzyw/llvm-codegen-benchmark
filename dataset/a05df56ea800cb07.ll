@@ -1,6 +1,8 @@
 
-; 43 occurrences:
+; 45 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; g2o/optimized/edge_project_p2mc.cpp.ll
 ; g2o/optimized/edge_project_p2sc.cpp.ll
 ; g2o/optimized/edge_project_psi2uv.cpp.ll
@@ -48,7 +50,7 @@ define double @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
   %3 = fadd double %1, %2
   %4 = fneg double %3
-  %5 = fmul double %4, %0
+  %5 = fmul double %0, %4
   ret double %5
 }
 

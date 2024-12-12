@@ -5,9 +5,9 @@
 define i1 @func0000000000000004(double %0, double %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to double
-  %4 = fmul double %3, %1
+  %4 = fmul double %1, %3
   %5 = fmul double %4, 0x3CB0000000000000
-  %6 = fcmp olt double %5, %0
+  %6 = fcmp ogt double %0, %5
   ret i1 %6
 }
 
@@ -19,9 +19,9 @@ entry:
 define i1 @func0000000000000005(double %0, double %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to double
-  %4 = fmul double %3, %1
+  %4 = fmul double %1, %3
   %5 = fmul double %4, 5.000000e-01
-  %6 = fcmp ult double %5, %0
+  %6 = fcmp ugt double %0, %5
   ret i1 %6
 }
 
@@ -33,9 +33,9 @@ entry:
 define i1 @func0000000000000003(double %0, double %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to double
-  %4 = fmul double %3, %1
+  %4 = fmul double %1, %3
   %5 = fmul double %4, 5.000000e-01
-  %6 = fcmp ugt double %5, %0
+  %6 = fcmp ult double %0, %5
   ret i1 %6
 }
 

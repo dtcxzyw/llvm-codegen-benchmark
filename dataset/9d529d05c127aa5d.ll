@@ -47,10 +47,9 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; linux/optimized/binfmt_elf.ll
 ; linux/optimized/compat_binfmt_elf.ll
-; linux/optimized/readdir.ll
 ; linux/optimized/vsprintf.ll
 ; linux/optimized/xfrm_output.ll
 ; Function Attrs: nounwind

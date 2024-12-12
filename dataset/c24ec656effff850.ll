@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; abc/optimized/acbTest.c.ll
 ; abc/optimized/extraUtilMaj.c.ll
 ; abc/optimized/giaJf.c.ll
@@ -10,7 +10,6 @@
 ; graphviz/optimized/make_map.c.ll
 ; opencv/optimized/emd_new.cpp.ll
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
-; openmpi/optimized/ad_read_coll.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i32 %0) #0 {

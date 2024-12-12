@@ -1,26 +1,18 @@
-func00000000000000b8:                   # @func00000000000000b8
-	movzwl	%dx, %eax
-	orl	%edi, %eax
-	shll	$24, %esi
-	orl	%eax, %esi
-	cmpl	$2, %esi
-	setae	%al
-	retq
-func00000000000000b1:                   # @func00000000000000b1
+func0000000000000161:                   # @func0000000000000161
 	movzwl	%dx, %eax
 	orl	%edi, %eax
 	shll	$24, %esi
 	orl	%eax, %esi
 	sete	%al
 	retq
-func00000000000000ba:                   # @func00000000000000ba
+func000000000000016a:                   # @func000000000000016a
 	movzwl	%dx, %eax
 	orl	%edi, %eax
 	shll	$24, %esi
 	orl	%eax, %esi
 	setg	%al
 	retq
-func00000000000000bc:                   # @func00000000000000bc
+func000000000000016c:                   # @func000000000000016c
 	movzwl	%dx, %eax
 	orl	%edi, %eax
 	shll	$24, %esi

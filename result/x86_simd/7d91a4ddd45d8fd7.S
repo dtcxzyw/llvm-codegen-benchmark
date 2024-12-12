@@ -6,7 +6,7 @@
 	.long	1                               # 0x1
 .LCPI0_3:
 	.long	6                               # 0x6
-func0000000000000023:                   # @func0000000000000023
+func0000000000000043:                   # @func0000000000000043
 	vpcmpeqd	.LCPI0_0(%rip){1to4}, %xmm0, %k1
 	vpbroadcastd	.LCPI0_1(%rip), %xmm1 {%k1} {z} # xmm1 {%k1} {z} = [3,3,3,3]
 	vpcmpeqd	.LCPI0_2(%rip){1to4}, %xmm0, %k1
@@ -21,7 +21,7 @@ func0000000000000023:                   # @func0000000000000023
 	.long	1                               # 0x1
 .LCPI1_3:
 	.long	255                             # 0xff
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	vpcmpeqd	.LCPI1_0(%rip){1to4}, %xmm0, %k1
 	vpcmpeqd	%xmm1, %xmm1, %xmm1
 	vpbroadcastd	.LCPI1_1(%rip), %xmm1 {%k1} # xmm1 {%k1} = [65535,65535,65535,65535]
@@ -35,7 +35,7 @@ func0000000000000022:                   # @func0000000000000022
 	.long	4                               # 0x4
 .LCPI2_2:
 	.long	16                              # 0x10
-func0000000000000155:                   # @func0000000000000155
+func0000000000000295:                   # @func0000000000000295
 	vpbroadcastd	.LCPI2_0(%rip), %xmm1   # xmm1 = [8,8,8,8]
 	vpcmpgtd	%xmm0, %xmm1, %k1
 	vpblendmd	.LCPI2_1(%rip){1to4}, %xmm1, %xmm2 {%k1}

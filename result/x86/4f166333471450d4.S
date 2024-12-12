@@ -23,8 +23,8 @@ func0000000000000008:                   # @func0000000000000008
 	andb	%sil, %al
 	orb	%dil, %al
 	retq
-func0000000000000010:                   # @func0000000000000010
-	cmpq	$65, %rdx
+func0000000000000030:                   # @func0000000000000030
+	cmpq	$3, %rdx
 	setae	%al
 	andb	%sil, %al
 	orb	%dil, %al

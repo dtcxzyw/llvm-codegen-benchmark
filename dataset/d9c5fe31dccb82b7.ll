@@ -1,9 +1,8 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; openssl/optimized/libcrypto-lib-cmp_hdr.ll
 ; openssl/optimized/libcrypto-shlib-cmp_hdr.ll
 ; qemu/optimized/util_cutils.c.ll
-; spike/optimized/triggers.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i1 %0, i1 %1, i64 %2) #0 {
 entry:
@@ -13,8 +12,9 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
-; linux/optimized/blk-sysfs.ll
+; 4 occurrences:
+; grpc/optimized/socket_utils_posix.cc.ll
+; grpc/optimized/tcp_socket_utils.cc.ll
 ; quickjs/optimized/quickjs.ll
 ; slurm/optimized/acct_gather.ll
 ; Function Attrs: nounwind

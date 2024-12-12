@@ -31,20 +31,42 @@ func0000000000000004:                   # @func0000000000000004
 	seqz	a0, a0
 	xori	a0, a0, 3
 	ret
+func000000000000000c:                   # @func000000000000000c
+	slli	a0, a0, 48
+	beqz	a0, .LBB4_2
+	li	a0, 5
+	ret
+.LBB4_2:
+	li	a0, 9
+	ret
+func0000000000000014:                   # @func0000000000000014
+	slli	a0, a0, 48
+	srli	a0, a0, 48
+	li	a1, 5
+	bltu	a0, a1, .LBB5_2
+	li	a0, 8
+	ret
+.LBB5_2:
+	li	a0, 4
+	ret
 func000000000000000a:                   # @func000000000000000a
 	slli	a0, a0, 48
-	li	a1, -1
 	srai	a0, a0, 48
 	slti	a0, a0, 0
 	xori	a0, a0, 1
-	slli	a1, a1, 63
-	sub	a0, a1, a0
+	addi	a0, a0, 4
 	ret
-func000000000000000c:                   # @func000000000000000c
+func0000000000000018:                   # @func0000000000000018
 	slli	a0, a0, 48
-	beqz	a0, .LBB5_2
-	li	a0, 5
+	srli	a0, a0, 48
+	li	a1, 300
+	bltu	a1, a0, .LBB7_2
+	lui	a0, 192607
+	slli	a0, a0, 2
+	addi	a0, a0, 512
 	ret
-.LBB5_2:
-	li	a0, 9
+.LBB7_2:
+	lui	a0, 6019
+	addiw	a0, a0, 551
+	slli	a0, a0, 7
 	ret

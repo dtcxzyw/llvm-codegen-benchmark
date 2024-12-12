@@ -1,4 +1,4 @@
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	decl	%edx
 	xorl	%eax, %eax
 	cmpl	$1, %esi
@@ -6,7 +6,7 @@ func0000000000000046:                   # @func0000000000000046
 	cltq
 	leaq	(%rdi,%rax,4), %rax
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	incl	%edx
 	xorl	%eax, %eax
 	cmpl	$8, %esi
@@ -22,7 +22,7 @@ func0000000000000006:                   # @func0000000000000006
 	cltq
 	addq	%rdi, %rax
 	retq
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000012a:                   # @func000000000000012a
 	addl	$4392, %edx                     # imm = 0x1128
 	testl	%esi, %esi
 	movl	$4392, %eax                     # imm = 0x1128

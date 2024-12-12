@@ -11,14 +11,15 @@ entry:
   ret i64 %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; image-rs/optimized/ptscn4jakoj4p9m.ll
 ; linux/optimized/drm_dp_mst_topology.ll
 ; linux/optimized/intel_atomic_plane.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_sprite.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
@@ -48,7 +49,8 @@ entry:
   ret i64 %5
 }
 
-; 23 occurrences:
+; 24 occurrences:
+; boost/optimized/ipc_reliable_message_queue.ll
 ; freetype/optimized/pfr.c.ll
 ; git/optimized/packfile.ll
 ; hdf5/optimized/H5Dlayout.c.ll

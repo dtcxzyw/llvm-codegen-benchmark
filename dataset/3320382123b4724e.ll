@@ -8,7 +8,7 @@
 ; llvm/optimized/ValueTracking.cpp.ll
 ; qemu/optimized/block_mirror.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000018c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = icmp ne i64 %3, 0
@@ -17,14 +17,16 @@ entry:
   ret i1 %6
 }
 
-; 5 occurrences:
+; 7 occurrences:
+; linux/optimized/hugetlb.ll
+; linux/optimized/mprotect.ll
 ; llvm/optimized/GlobalISelMatchTable.cpp.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; velox/optimized/ArrayDuplicates.cpp.ll
 ; verilator/optimized/V3Undriven.cpp.ll
 ; verilator/optimized/V3VariableOrder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000181(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = icmp ne i64 %3, 0
@@ -44,7 +46,7 @@ entry:
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; verilator/optimized/V3VariableOrder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = icmp ne i64 %3, 0
@@ -57,7 +59,7 @@ entry:
 ; openjdk/optimized/addnode.ll
 ; openjdk/optimized/convertnode.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a6(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000146(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = icmp slt i64 %3, 0
@@ -70,7 +72,7 @@ entry:
 ; libquic/optimized/time.cc.ll
 ; openjdk/optimized/convertnode.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000ca(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = icmp slt i64 %3, 0
@@ -82,7 +84,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/zend_jit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = icmp eq i64 %3, 3
@@ -94,7 +96,7 @@ entry:
 ; 1 occurrences:
 ; lief/optimized/DelayImportEntry.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000008c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = icmp ult i64 %3, 32768
@@ -106,7 +108,7 @@ entry:
 ; 1 occurrences:
 ; csmith/optimized/CVQualifiers.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000184(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = icmp ne i64 %3, 0
@@ -119,7 +121,7 @@ entry:
 ; hermes/optimized/HadesGC.cpp.ll
 ; linux/optimized/commoncap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = icmp eq i64 %3, 0
@@ -131,7 +133,7 @@ entry:
 ; 1 occurrences:
 ; portaudio/optimized/pa_converters.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = icmp eq i64 %3, 0

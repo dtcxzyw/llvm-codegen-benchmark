@@ -30,15 +30,4 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
-; cmake/optimized/archive_read_support_filter_xz.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i8 %1) #0 {
-entry:
-  %2 = and i8 %1, 31
-  %3 = icmp ugt i8 %2, 12
-  %4 = select i1 %3, i32 %0, i32 0
-  ret i32 %4
-}
-
 attributes #0 = { nounwind }

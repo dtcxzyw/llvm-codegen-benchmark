@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 15 occurrences:
 ; curl/optimized/libcurl_la-imap.ll
 ; curl/optimized/libcurl_la-pop3.ll
 ; graphviz/optimized/htmltable.c.ll
@@ -13,6 +13,8 @@
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/2ta8crc4qgl9bp8t.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i1 %0, i16 %1) #0 {
 entry:

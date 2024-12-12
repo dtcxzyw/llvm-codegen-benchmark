@@ -22,7 +22,7 @@ func0000000000000002:                   # @func0000000000000002
 	.zero	16,1
 .LCPI2_1:
 	.zero	4,1
-func0000000000000038:                   # @func0000000000000038
+func0000000000000058:                   # @func0000000000000058
 	vpor	%xmm1, %xmm0, %xmm0
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpcmpeqb	%xmm1, %xmm0, %xmm0

@@ -1,5 +1,5 @@
 
-; 62 occurrences:
+; 70 occurrences:
 ; abc/optimized/abcTiming.c.ll
 ; abc/optimized/sclBuffer.c.ll
 ; darktable/optimized/histogram.c.ll
@@ -25,6 +25,14 @@
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_demo_widgets.ll
+; lvgl/optimized/lv_draw_line.ll
+; lvgl/optimized/lv_draw_sw_line.ll
+; lvgl/optimized/lv_draw_sw_triangle.ll
+; lvgl/optimized/lv_draw_triangle.ll
+; lvgl/optimized/lv_line.ll
+; lvgl/optimized/lv_matrix.ll
 ; minetest/optimized/gameui.cpp.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; minetest/optimized/mg_ore.cpp.ll

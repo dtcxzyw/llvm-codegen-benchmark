@@ -1,6 +1,5 @@
 
-; 6 occurrences:
-; darktable/optimized/UncompressedDecompressor.cpp.ll
+; 5 occurrences:
 ; mitsuba3/optimized/zonevector.cpp.ll
 ; openjdk/optimized/cmserr.ll
 ; openjdk/optimized/cmslut.ll
@@ -24,7 +23,7 @@ entry:
 ; opencv/optimized/pyramids.cpp.ll
 ; opencv/optimized/sumpixels.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, %0
   %3 = icmp eq i32 %2, %0
@@ -44,7 +43,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/sumpixels.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %0, %1
   %3 = icmp sgt i32 %2, %0
@@ -54,7 +53,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/stereosgbm.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %0, %1
   %3 = icmp slt i32 %2, %0

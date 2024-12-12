@@ -1,7 +1,6 @@
 
-; 2 occurrences:
+; 1 occurrences:
 ; mitsuba3/optimized/roughdielectric.cpp.ll
-; regex-rs/optimized/12jtvy3iayrg5nam.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000004(i8 %0, i1 %1, i32 %2) #0 {
 entry:

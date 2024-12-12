@@ -1,5 +1,21 @@
 
-; 47 occurrences:
+; 6 occurrences:
+; linux/optimized/virtio_ring.ll
+; llvm/optimized/ASTReader.cpp.ll
+; llvm/optimized/LowerTypeTests.cpp.ll
+; llvm/optimized/WholeProgramDevirt.cpp.ll
+; openusd/optimized/faceVertex.cpp.ll
+; qemu/optimized/hw_pci_pcie.c.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000002(i16 %0, i16 %1, i1 %2) #0 {
+entry:
+  %3 = select i1 %2, i16 1024, i16 0
+  %4 = or disjoint i16 %1, %3
+  %5 = or i16 %0, %4
+  ret i16 %5
+}
+
+; 46 occurrences:
 ; c3c/optimized/parse_expr.c.ll
 ; cmake/optimized/json_value.cpp.ll
 ; curl/optimized/libcurl_la-curl_sasl.ll
@@ -41,7 +57,6 @@
 ; php/optimized/util.ll
 ; postgres/optimized/tablecmds.ll
 ; qemu/optimized/hw_net_pcnet.c.ll
-; qemu/optimized/hw_sd_ssi-sd.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-ipmi-se.c.ll
 ; z3/optimized/ast.cpp.ll
@@ -50,25 +65,9 @@
 ; Function Attrs: nounwind
 define i16 @func0000000000000003(i16 %0, i16 %1, i1 %2) #0 {
 entry:
-  %3 = select i1 %2, i16 256, i16 0
+  %3 = select i1 %2, i16 64, i16 0
   %4 = or disjoint i16 %3, %1
-  %5 = or disjoint i16 %4, %0
-  ret i16 %5
-}
-
-; 6 occurrences:
-; linux/optimized/virtio_ring.ll
-; llvm/optimized/ASTReader.cpp.ll
-; llvm/optimized/LowerTypeTests.cpp.ll
-; llvm/optimized/WholeProgramDevirt.cpp.ll
-; openusd/optimized/faceVertex.cpp.ll
-; qemu/optimized/hw_pci_pcie.c.ll
-; Function Attrs: nounwind
-define i16 @func0000000000000002(i16 %0, i16 %1, i1 %2) #0 {
-entry:
-  %3 = select i1 %2, i16 1024, i16 0
-  %4 = or disjoint i16 %3, %1
-  %5 = or i16 %4, %0
+  %5 = or disjoint i16 %0, %4
   ret i16 %5
 }
 

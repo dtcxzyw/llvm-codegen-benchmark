@@ -3,7 +3,7 @@
 ; clamav/optimized/msxml.c.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000084c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000208c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
   %4 = icmp ult i64 %3, %0
@@ -21,7 +21,7 @@ entry:
 ; entt/optimized/storage_entity.cpp.ll
 ; entt/optimized/storage_no_instance.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000005cc(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000158c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = icmp ne i64 %3, %0
@@ -33,7 +33,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/basearith.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000841(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000002081(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, 1
   %4 = icmp ult i64 %3, %0

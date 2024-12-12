@@ -4,7 +4,7 @@
 ; php/optimized/fastcgi.ll
 ; rocksdb/optimized/log_reader.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000711(i8 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000001c21(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = or disjoint i32 %3, %1
@@ -20,7 +20,7 @@ entry:
 ; nori/optimized/nanovg.c.ll
 ; php/optimized/fastcgi.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000007c1(i8 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000001d81(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = or disjoint i32 %3, %1

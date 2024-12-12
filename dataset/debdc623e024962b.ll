@@ -11,7 +11,7 @@ entry:
   %3 = xor i32 %2, -1
   %4 = trunc i64 %1 to i32
   %5 = and i32 %4, %3
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   %7 = zext i32 %6 to i64
   ret i64 %7
 }
@@ -40,7 +40,7 @@ entry:
   %3 = xor i32 %2, -1
   %4 = trunc i64 %1 to i32
   %5 = and i32 %4, %3
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   %7 = zext i32 %6 to i64
   ret i64 %7
 }

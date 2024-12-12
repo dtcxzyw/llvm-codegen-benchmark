@@ -20,7 +20,7 @@
 define i1 @func0000000000000002(double %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to double
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   %5 = sitofp i32 %1 to double
   %6 = fcmp olt double %4, %5
   ret i1 %6
@@ -32,7 +32,7 @@ entry:
 define i1 @func000000000000000d(double %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to double
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   %5 = sitofp i32 %1 to double
   %6 = fcmp uge double %4, %5
   ret i1 %6

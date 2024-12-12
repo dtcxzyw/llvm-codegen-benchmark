@@ -1,4 +1,4 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	movslq	%esi, %rax
 	imulq	$1717986919, %rax, %rcx         # imm = 0x66666667
 	movq	%rcx, %rdx
@@ -12,7 +12,7 @@ func0000000000000002:                   # @func0000000000000002
 	shlq	$4, %rax
 	leaq	8(%rdi,%rax), %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	leal	63(%rsi), %eax
 	testl	%esi, %esi
 	cmovnsl	%esi, %eax

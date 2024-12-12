@@ -5,7 +5,7 @@
 ; stb/optimized/stb_truetype.c.ll
 ; wireshark/optimized/ngsniffer.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i16 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000421(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = or disjoint i16 %1, %2
   %4 = icmp eq i16 %3, 4
@@ -17,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; wasmtime-rs/optimized/3gnma2m1zwm5wpa3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000021(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = or i16 %1, %2
   %4 = icmp eq i16 %3, 0

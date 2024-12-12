@@ -35,6 +35,17 @@ entry:
   ret i1 %5
 }
 
+; 1 occurrences:
+; boost/optimized/within.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000042(double %0, double %1, double %2) #0 {
+entry:
+  %3 = fcmp ogt double %2, %1
+  %4 = fcmp olt double %0, %1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
 ; 3 occurrences:
 ; graphviz/optimized/edges.c.ll
 ; proj/optimized/generic_inverse.cpp.ll

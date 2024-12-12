@@ -19,7 +19,7 @@ entry:
 define i8 @func0000000000000030(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 18
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = lshr i64 %3, 16
   %5 = trunc i64 %4 to i8
   ret i8 %5
@@ -34,7 +34,7 @@ entry:
 define i8 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = lshr i64 %3, 48
   %5 = trunc i64 %4 to i8
   ret i8 %5
@@ -59,7 +59,7 @@ entry:
 define i8 @func000000000000003c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 32
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = lshr exact i64 %3, 40
   %5 = trunc i64 %4 to i8
   ret i8 %5

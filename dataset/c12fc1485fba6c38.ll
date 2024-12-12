@@ -1,5 +1,5 @@
 
-; 257 occurrences:
+; 252 occurrences:
 ; abc/optimized/darLib.c.ll
 ; abc/optimized/dauGia.c.ll
 ; abc/optimized/giaFx.c.ll
@@ -9,20 +9,17 @@
 ; abc/optimized/ivyFraig.c.ll
 ; abc/optimized/pdrMan.c.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
-; arrow/optimized/cached-powers.cc.ll
 ; arrow/optimized/light_array.cc.ll
 ; bullet3/optimized/b3GpuPgsConstraintSolver.ll
 ; bullet3/optimized/b3GpuPgsContactSolver.ll
 ; cpython/optimized/longobject.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_rawdenoise.c.ll
-; double_conversion/optimized/cached-powers.cc.ll
 ; duckdb/optimized/ub_duckdb_func_date.cpp.ll
 ; git/optimized/xhistogram.ll
 ; gromacs/optimized/domdec.cpp.ll
 ; gromacs/optimized/fft_fftw3.cpp.ll
 ; icu/optimized/collationrootelements.ll
-; icu/optimized/double-conversion-cached-powers.ll
 ; icu/optimized/measunit.ll
 ; libquic/optimized/a_bitstr.c.ll
 ; libquic/optimized/convert.c.ll
@@ -205,11 +202,9 @@
 ; openssl/optimized/libcrypto-lib-asn1_dsa.ll
 ; openssl/optimized/libcrypto-lib-bn_conv.ll
 ; openssl/optimized/libcrypto-lib-param_build.ll
-; openssl/optimized/libcrypto-lib-t_pkey.ll
 ; openssl/optimized/libcrypto-shlib-asn1_dsa.ll
 ; openssl/optimized/libcrypto-shlib-bn_conv.ll
 ; openssl/optimized/libcrypto-shlib-param_build.ll
-; openssl/optimized/libcrypto-shlib-t_pkey.ll
 ; openusd/optimized/cached-powers.cc.ll
 ; openusd/optimized/cdef.c.ll
 ; postgres/optimized/bitmapset.ll

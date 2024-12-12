@@ -99,7 +99,7 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000038(i32 %0) #0 {
+define i64 @func0000000000000058(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 2047
   %2 = add nsw i32 %1, -1075
@@ -115,13 +115,12 @@ entry:
 ; zstd/optimized/fse_compress.c.ll
 ; zstd/optimized/zstd_compress_sequences.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000078(i32 %0) #0 {
+define i64 @func00000000000000d8(i32 %0) #0 {
 entry:
-  %1 = add i32 %0, 1
-  %2 = and i32 %1, 7
-  %3 = icmp ne i32 %2, 0
-  %4 = zext i1 %3 to i64
-  ret i64 %4
+  %1 = and i32 %0, 7
+  %2 = icmp ne i32 %1, 7
+  %3 = zext i1 %2 to i64
+  ret i64 %3
 }
 
 attributes #0 = { nounwind }

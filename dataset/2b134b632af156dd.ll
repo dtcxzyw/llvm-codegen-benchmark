@@ -23,10 +23,10 @@ entry:
 ; faiss/optimized/IndexRowwiseMinMax.cpp.ll
 ; faiss/optimized/ScalarQuantizer.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1, float %2) #0 {
+define i32 @func0000000000000014(i32 %0, i32 %1, float %2) #0 {
 entry:
   %3 = bitcast float %2 to i32
-  %4 = icmp ult i32 %3, 2139095040
+  %4 = icmp samesign ult i32 %3, 2139095040
   %5 = select i1 %4, i32 %0, i32 %1
   ret i32 %5
 }

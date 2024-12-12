@@ -1,8 +1,9 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; darktable/optimized/introspection_lens.cc.ll
 ; gromacs/optimized/partition.cpp.ll
+; lvgl/optimized/lv_span.ll
 ; meshlab/optimized/edit_point.cpp.ll
 ; minetest/optimized/CGUIComboBox.cpp.ll
 ; minetest/optimized/guiScrollBar.cpp.ll

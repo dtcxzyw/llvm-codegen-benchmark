@@ -22,7 +22,7 @@ func00000000000000fe:                   # @func00000000000000fe
 	vwsll.vi	v14, v13, 6
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vv	v8, v10, v8
-	vadd.vv	v8, v14, v8
+	vadd.vv	v8, v8, v14
 	vsrl.vi	v8, v8, 16
 	ret
 func0000000000000060:                   # @func0000000000000060
@@ -31,7 +31,7 @@ func0000000000000060:                   # @func0000000000000060
 	vwsll.vi	v14, v13, 16
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vv	v8, v10, v8
-	vadd.vv	v8, v14, v8
+	vadd.vv	v8, v8, v14
 	vsrl.vi	v8, v8, 24
 	ret
 func000000000000006a:                   # @func000000000000006a
@@ -40,6 +40,6 @@ func000000000000006a:                   # @func000000000000006a
 	vwsll.vi	v14, v13, 6
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vv	v8, v10, v8
-	vadd.vv	v8, v14, v8
+	vadd.vv	v8, v8, v14
 	vsrl.vi	v8, v8, 10
 	ret

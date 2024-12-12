@@ -62,16 +62,15 @@ define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = and i32 %2, -65538
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = xor i32 %4, 65539
   ret i32 %5
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; llvm/optimized/AArch64MCCodeEmitter.cpp.ll
 ; luajit/optimized/lj_cparse.ll
 ; luajit/optimized/lj_cparse_dyn.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; postgres/optimized/jsonpath_gram.ll
 ; raylib/optimized/rtextures.c.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
@@ -80,7 +79,7 @@ define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 7
   %3 = and i32 %2, 896
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = xor i32 %4, 16384
   ret i32 %5
 }

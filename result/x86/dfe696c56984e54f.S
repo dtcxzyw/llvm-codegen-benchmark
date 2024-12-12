@@ -28,12 +28,6 @@ func0000000000000000:                   # @func0000000000000000
 	imull	%edx, %edi
 	movslq	%edi, %rax
 	retq
-func0000000000000004:                   # @func0000000000000004
-	incl	%edx
-	addl	%esi, %edi
-	imull	%edx, %edi
-	movslq	%edi, %rax
-	retq
 func0000000000000035:                   # @func0000000000000035
 	addl	%edx, %esi
 	decl	%edi
@@ -47,6 +41,12 @@ func000000000000003d:                   # @func000000000000003d
 	movslq	%edi, %rax
 	retq
 func0000000000000011:                   # @func0000000000000011
+	incl	%edx
+	addl	%esi, %edi
+	imull	%edx, %edi
+	movslq	%edi, %rax
+	retq
+func0000000000000004:                   # @func0000000000000004
 	incl	%edx
 	addl	%esi, %edi
 	imull	%edx, %edi

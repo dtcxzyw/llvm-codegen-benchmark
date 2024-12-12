@@ -9,7 +9,7 @@
 ; linux/optimized/intel_sdvo.ll
 ; linux/optimized/sysctl_net_ipv4.ll
 ; openblas/optimized/dlaeda.c.ll
-; opencv/optimized/demosaicing.cpp.ll
+; opencv/optimized/cornersubpix.cpp.ll
 ; openjdk/optimized/c1_GraphBuilder.ll
 ; openjdk/optimized/c1_LIR.ll
 ; openjdk/optimized/c1_LIRGenerator.ll

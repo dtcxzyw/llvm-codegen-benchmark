@@ -28,24 +28,12 @@ entry:
 ; qemu/optimized/hw_sd_sd.c.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i8 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
   %3 = zext nneg i8 %0 to i32
   %4 = and i32 %3, %2
   %5 = icmp eq i32 %4, 0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; sentencepiece/optimized/generated_message_table_driven_lite.cc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i8 %1) #0 {
-entry:
-  %2 = zext i8 %1 to i32
-  %3 = xor i32 %0, -1
-  %4 = and i32 %3, %2
-  %5 = icmp ugt i32 %4, 127
   ret i1 %5
 }
 

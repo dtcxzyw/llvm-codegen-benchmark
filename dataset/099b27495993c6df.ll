@@ -1,7 +1,8 @@
 
-; 182 occurrences:
+; 181 occurrences:
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
 ; abseil-cpp/optimized/gaussian_distribution_test.cc.ll
+; boost/optimized/buffer_piece_border.ll
 ; c3c/optimized/sema_casts.c.ll
 ; casadi/optimized/ipqp.cpp.ll
 ; casadi/optimized/mx.cpp.ll
@@ -112,7 +113,6 @@
 ; openmpi/optimized/bml_r2.ll
 ; openspiel/optimized/fsicfr.cc.ll
 ; openspiel/optimized/game_parameters.cc.ll
-; openspiel/optimized/policy_iteration.cc.ll
 ; openspiel/optimized/value_iteration.cc.ll
 ; openusd/optimized/drawModeAdapter.cpp.ll
 ; openusd/optimized/frustum.cpp.ll
@@ -124,7 +124,6 @@
 ; proj/optimized/4D_api.cpp.ll
 ; proj/optimized/adams.cpp.ll
 ; proj/optimized/aeqd.cpp.ll
-; proj/optimized/dmstor.cpp.ll
 ; proj/optimized/geodesic.c.ll
 ; proj/optimized/horner.cpp.ll
 ; proj/optimized/isea.cpp.ll
@@ -222,22 +221,19 @@ entry:
   ret double %4
 }
 
-; 11 occurrences:
+; 8 occurrences:
 ; brotli/optimized/encode.c.ll
-; graphviz/optimized/postproc.c.ll
-; gromacs/optimized/coupling.cpp.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; openblas/optimized/dlaln2.c.ll
 ; openjdk/optimized/sharedRuntimeTrans.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; proj/optimized/som.cpp.ll
 ; Function Attrs: nounwind
-define double @func0000000000000004(double %0, double %1, i32 %2) #0 {
+define double @func0000000000000014(double %0, double %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 4
+  %3 = icmp samesign ult i32 %2, 4
   %4 = select i1 %3, double %0, double %1
   ret double %4
 }
@@ -253,7 +249,9 @@ entry:
   ret double %3
 }
 
-; 13 occurrences:
+; 15 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/src.ll
 ; gromacs/optimized/colvarcomp_distances.cpp.ll
 ; icu/optimized/units_converter.ll
 ; nuklear/optimized/unity.c.ll
@@ -275,12 +273,24 @@ entry:
   ret double %4
 }
 
+; 3 occurrences:
+; graphviz/optimized/postproc.c.ll
+; gromacs/optimized/coupling.cpp.ll
+; openblas/optimized/dlaln2.c.ll
+; Function Attrs: nounwind
+define double @func0000000000000004(double %0, double %1, i32 %2) #0 {
+entry:
+  %3 = icmp ult i32 %2, 3
+  %4 = select i1 %3, double %0, double %1
+  ret double %4
+}
+
 ; 1 occurrences:
 ; libwebp/optimized/extras.c.ll
 ; Function Attrs: nounwind
-define double @func0000000000000008(double %0, double %1, i32 %2) #0 {
+define double @func0000000000000018(double %0, double %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, 4
+  %3 = icmp samesign ugt i32 %2, 4
   %4 = select i1 %3, double %0, double %1
   ret double %4
 }

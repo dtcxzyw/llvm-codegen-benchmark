@@ -1,10 +1,10 @@
-func0000000000000006:                   # @func0000000000000006
+func0000000000000007:                   # @func0000000000000007
 	addq	$3, %rsi
 	andq	$-4, %rsi
 	movl	%edi, %eax
 	leaq	(%rsi,%rax,4), %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	leaq	3(%rsi), %rcx
 	andq	$-4, %rcx
 	movl	%edi, %eax

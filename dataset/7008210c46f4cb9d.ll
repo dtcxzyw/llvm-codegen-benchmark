@@ -1,9 +1,8 @@
 
-; 22 occurrences:
+; 21 occurrences:
 ; cvc5/optimized/conjecture_generator.cpp.ll
 ; folly/optimized/AsyncServerSocket.cpp.ll
 ; linux/optimized/sbitmap.ll
-; llvm/optimized/CGBuiltin.cpp.ll
 ; minetest/optimized/game.cpp.ll
 ; postgres/optimized/basebackup_incremental.ll
 ; postgres/optimized/blkreftable.ll
@@ -31,9 +30,19 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
-; git/optimized/progress.ll
+; 1 occurrences:
 ; qemu/optimized/hw_net_e1000.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %2, 1
+  %4 = icmp samesign ult i64 %0, %1
+  %5 = select i1 %4, i32 %3, i32 0
+  ret i32 %5
+}
+
+; 2 occurrences:
+; git/optimized/progress.ll
 ; velox/optimized/MmapAllocator.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {
@@ -47,10 +56,10 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_ashift.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
+define i32 @func0000000000000034(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
-  %4 = icmp ult i64 %0, %1
+  %4 = icmp samesign ult i64 %0, %1
   %5 = select i1 %4, i32 %3, i32 1
   ret i32 %5
 }
@@ -58,7 +67,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i64 %0, i64 %1, i32 %2) #0 {
+define i32 @func0000000000000026(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -3
   %4 = icmp slt i64 %0, %1
@@ -71,7 +80,7 @@ entry:
 ; abc/optimized/satInter.c.ll
 ; openmpi/optimized/pml_ob1_sendreq.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i64 %0, i64 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = icmp eq i64 %0, %1
@@ -84,7 +93,7 @@ entry:
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; slurm/optimized/dist_tasks.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i64 %0, i64 %1, i32 %2) #0 {
+define i32 @func000000000000002a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = icmp sgt i64 %0, %1
@@ -95,7 +104,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/clamdtop.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i64 %0, i64 %1, i32 %2) #0 {
+define i32 @func0000000000000068(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = icmp ugt i64 %0, %1
@@ -107,7 +116,7 @@ entry:
 ; hermes/optimized/SegmentedArray.cpp.ll
 ; opencv/optimized/ts_func.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i64 %0, i64 %1, i32 %2) #0 {
+define i32 @func0000000000000061(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = icmp eq i64 %0, %1
@@ -120,7 +129,7 @@ entry:
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000003a(i64 %0, i64 %1, i32 %2) #0 {
+define i32 @func000000000000006a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = icmp sgt i64 %0, %1
@@ -129,9 +138,20 @@ entry:
 }
 
 ; 1 occurrences:
+; llvm/optimized/CGBuiltin.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000018(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %2, -16
+  %4 = icmp samesign ugt i64 %0, %1
+  %5 = select i1 %4, i32 %3, i32 0
+  ret i32 %5
+}
+
+; 1 occurrences:
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000036(i64 %0, i64 %1, i32 %2) #0 {
+define i32 @func0000000000000066(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = icmp slt i64 %0, %1

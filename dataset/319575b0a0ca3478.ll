@@ -1,7 +1,15 @@
 
-; 60 occurrences:
+; 68 occurrences:
 ; abseil-cpp/optimized/duration_test.cc.ll
 ; arrow/optimized/compare.cc.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; icu/optimized/plurrule.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; ipopt/optimized/IpMonotoneMuUpdate.ll
@@ -64,14 +72,15 @@
 define i1 @func0000000000000010(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp oeq double %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
-; 114 occurrences:
+; 113 occurrences:
 ; abc/optimized/cuddZddReord.c.ll
 ; abseil-cpp/optimized/convert_test.cc.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; casadi/optimized/idas_ic.c.ll
 ; casadi/optimized/nlpsol.cpp.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -128,7 +137,6 @@ entry:
 ; minetest/optimized/mapblock.cpp.ll
 ; minetest/optimized/nodetimer.cpp.ll
 ; ocio/optimized/FixedFunctionOpData.cpp.ll
-; openblas/optimized/dgbcon.c.ll
 ; openblas/optimized/dgejsv.c.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; opencv/optimized/erfilter.cpp.ll
@@ -154,7 +162,6 @@ entry:
 ; postgres/optimized/gistproc.ll
 ; postgres/optimized/pgbench.ll
 ; proj/optimized/c_api.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
 ; proj/optimized/igh.cpp.ll
 ; proj/optimized/igh_o.cpp.ll
@@ -187,11 +194,23 @@ entry:
 define i1 @func0000000000000004(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
-; 60 occurrences:
+; 72 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; gromacs/optimized/compare.cpp.ll
 ; gromacs/optimized/lmmin.cpp.ll
@@ -260,8 +279,10 @@ entry:
   ret i1 %4
 }
 
-; 17 occurrences:
+; 19 occurrences:
 ; arrow/optimized/scalar_cast_numeric.cc.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/expand_on_spheroid.ll
 ; casadi/optimized/sundials_iterative.c.ll
 ; cpython/optimized/complexobject.ll
 ; hermes/optimized/ISel.cpp.ll
@@ -282,14 +303,23 @@ entry:
 define i1 @func000000000000000e(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp une double %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
-; 48 occurrences:
+; 57 occurrences:
 ; assimp/optimized/IFCBoolean.cpp.ll
 ; assimp/optimized/IFCCurve.cpp.ll
-; c3c/optimized/number.c.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; darktable/optimized/snapshots.c.ll
 ; graphviz/optimized/compound.c.ll
@@ -353,7 +383,6 @@ entry:
 ; folly/optimized/FunctionScheduler.cpp.ll
 ; g2o/optimized/hyper_dijkstra.cpp.ll
 ; graphviz/optimized/emit.c.ll
-; graphviz/optimized/legal.c.ll
 ; gromacs/optimized/dsteqr.cpp.ll
 ; gromacs/optimized/gmx_arpack.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
@@ -394,20 +423,29 @@ entry:
 ; sundials/optimized/idas.c.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ogt double %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
-; 36 occurrences:
+; 44 occurrences:
 ; assimp/optimized/IFCCurve.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
-; c3c/optimized/number.c.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/im_instantiator.cpp.ll
 ; graphviz/optimized/legal.c.ll
@@ -445,7 +483,7 @@ entry:
 define i1 @func0000000000000006(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ult double %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
@@ -508,25 +546,31 @@ entry:
 define i1 @func000000000000001a(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp uge double %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
-; 9 occurrences:
+; 15 occurrences:
 ; duckdb/optimized/comparison_operators.cpp.ll
 ; opencv/optimized/edge_drawing.cpp.ll
 ; postgres/optimized/float.ll
 ; postgres/optimized/geqo_selection.ll
 ; postgres/optimized/gistproc.ll
 ; postgres/optimized/pgbench.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; quantlib/optimized/gaussianlhplossmodel.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/25la7m7vywfxvwku7cmlhn88p.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/axq0fnk57nrkchega3zj2zynp.ll
+; zed-rs/optimized/bflorbpxbjb42ccmeziz8dqw7.ll
+; zed-rs/optimized/d3p7qidwwfiy8pzimmi7epq9h.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp oge double %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 

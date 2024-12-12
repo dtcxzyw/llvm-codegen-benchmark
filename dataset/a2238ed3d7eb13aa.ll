@@ -1,9 +1,11 @@
 
-; 35 occurrences:
+; 37 occurrences:
 ; arrow/optimized/bignum-dtoa.cc.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/fixed-dtoa.cc.ll
 ; arrow/optimized/float16.cc.ll
+; cmake/optimized/setopt.c.ll
+; curl/optimized/libcurl_la-setopt.ll
 ; double_conversion/optimized/bignum-dtoa.cc.ll
 ; double_conversion/optimized/fast-dtoa.cc.ll
 ; double_conversion/optimized/fixed-dtoa.cc.ll

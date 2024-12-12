@@ -1,5 +1,5 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	sli	v0.16b, v0.16b, #4
+	bfi	w0, w0, #4, #28
 	ret
                                         // -- End function

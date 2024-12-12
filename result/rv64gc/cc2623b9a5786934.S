@@ -56,3 +56,22 @@ func000000000000000c:                   # @func000000000000000c
 	xor	a0, a0, a1
 	snez	a0, a0
 	ret
+func0000000000000018:                   # @func0000000000000018
+	andi	a0, a0, 1
+	bnez	a0, .LBB6_2
+	mv	a1, a2
+.LBB6_2:                                # %entry
+	slli	a1, a1, 48
+	srli	a1, a1, 48
+	sltiu	a0, a1, 769
+	xori	a0, a0, 1
+	ret
+func0000000000000014:                   # @func0000000000000014
+	andi	a0, a0, 1
+	bnez	a0, .LBB7_2
+	mv	a1, a2
+.LBB7_2:                                # %entry
+	slli	a1, a1, 48
+	srli	a1, a1, 58
+	sltiu	a0, a1, 55
+	ret

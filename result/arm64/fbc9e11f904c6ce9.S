@@ -4,7 +4,7 @@ func000000000000005a:                   // @func000000000000005a
 	add	x0, x8, x0
 	ret
                                         // -- End function
-func000000000000001a:                   // @func000000000000001a
+func000000000000001b:                   // @func000000000000001b
 // %bb.0:                               // %entry
 	sub	x8, x1, w2, uxtw
 	add	x0, x8, x0
@@ -15,5 +15,12 @@ func0000000000000058:                   // @func0000000000000058
 	mov	w8, w2
 	sub	x8, x1, x8, lsl #5
 	add	x0, x8, x0
+	ret
+                                        // -- End function
+func000000000000005b:                   // @func000000000000005b
+// %bb.0:                               // %entry
+	mov	w8, w2
+	sub	x8, x1, x8, lsl #5
+	add	x0, x8, x0, lsl #5
 	ret
                                         // -- End function

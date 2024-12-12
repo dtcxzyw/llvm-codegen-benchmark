@@ -12,9 +12,9 @@
 ; proxygen/optimized/HeaderDecodeInfo.cpp.ll
 ; redis/optimized/read.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000020(i64 %0, ptr %1, ptr %2) #0 {
+define i64 @func0000000000000030(i64 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %0, %4
   %6 = ptrtoint ptr %1 to i64

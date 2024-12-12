@@ -6,19 +6,12 @@ func0000000000000001:                   # @func0000000000000001
 	shll	$14, %eax
 	retq
 func0000000000000009:                   # @func0000000000000009
-	andl	$1, %edi
-	shlq	$32, %rdi
-	leaq	219(%rdi), %rcx
+	xorl	%ecx, %ecx
 	cmpl	%edx, %esi
+	setae	%cl
+	shlq	$32, %rcx
+	orq	$219, %rcx
+	testb	$1, %dil
 	movl	$219, %eax
-	cmovaeq	%rcx, %rax
-	retq
-func000000000000000b:                   # @func000000000000000b
-	notb	%dil
-	movzbl	%dil, %eax
-	andl	$1, %eax
-	cmpl	%edx, %esi
-	leaq	16(,%rax,8), %rcx
-	movl	$24, %eax
-	cmovgeq	%rcx, %rax
+	cmovneq	%rcx, %rax
 	retq

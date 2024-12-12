@@ -3,7 +3,7 @@
 ; rust-analyzer-rs/optimized/1lnhy2v45voxjwry.ll
 ; rust-analyzer-rs/optimized/8q1esjraj83sh5t.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0) #0 {
+define i1 @func0000000000000041(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 1
   %2 = sub nuw i64 %0, %1

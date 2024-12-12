@@ -16,7 +16,7 @@ func0000000000000008:                   # @func0000000000000008
 	seta	%al
 	orb	%dil, %al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	movzwl	%dx, %eax
 	cmpl	%esi, %eax
 	setb	%al
@@ -28,13 +28,19 @@ func000000000000000a:                   # @func000000000000000a
 	setg	%al
 	orb	%dil, %al
 	retq
+func0000000000000018:                   # @func0000000000000018
+	andl	$64, %edx
+	cmpl	%esi, %edx
+	seta	%al
+	orb	%dil, %al
+	retq
 func000000000000000b:                   # @func000000000000000b
 	andl	$8, %edx
 	cmpl	%esi, %edx
 	setge	%al
 	orb	%dil, %al
 	retq
-func0000000000000009:                   # @func0000000000000009
+func0000000000000019:                   # @func0000000000000019
 	andl	$536870911, %edx                # imm = 0x1FFFFFFF
 	cmpl	%esi, %edx
 	setae	%al
@@ -50,5 +56,11 @@ func0000000000000007:                   # @func0000000000000007
 	andl	$31, %edx
 	cmpl	%esi, %edx
 	setle	%al
+	orb	%dil, %al
+	retq
+func0000000000000004:                   # @func0000000000000004
+	movzwl	%dx, %eax
+	cmpl	%esi, %eax
+	setb	%al
 	orb	%dil, %al
 	retq

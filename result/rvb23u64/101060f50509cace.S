@@ -17,3 +17,13 @@ func000000000000001c:                   # @func000000000000001c
 	srliw	a0, a0, 4
 	slli	a0, a0, 4
 	ret
+.LCPI2_0:
+	.quad	-6067343680855748867            # 0xabcc77118461cefd
+func0000000000000007:                   # @func0000000000000007
+	lui	a1, %hi(.LCPI2_0)
+	ld	a1, %lo(.LCPI2_0)(a1)
+	mulhu	a0, a0, a1
+	srli	a0, a0, 25
+	andi	a0, a0, -2
+	sext.w	a0, a0
+	ret

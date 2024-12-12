@@ -1,11 +1,10 @@
 
-; 23 occurrences:
+; 25 occurrences:
 ; delta-rs/optimized/47qjbhol909h8zu7.ll
 ; delta-rs/optimized/4zvphat0q9a964bz.ll
 ; delta-rs/optimized/s2xrj2sh770tx8d.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; hyperscan/optimized/ng_execute.cpp.ll
-; influxdb-rs/optimized/1qfvsl8a7jfomqbf.ll
 ; influxdb-rs/optimized/1zobaqtttt01ywwe.ll
 ; influxdb-rs/optimized/54bldmpi534adbqh.ll
 ; jemalloc/optimized/sc.ll
@@ -17,14 +16,17 @@
 ; regex-rs/optimized/10eccrragw6uslmk.ll
 ; regex-rs/optimized/3bb5ih3626n2er1d.ll
 ; ring-rs/optimized/2ynmf0orlf9ml2dm.ll
-; ring-rs/optimized/3r96bqjv88cu5m8n.ll
 ; ring-rs/optimized/d308x8t7de9vep4.ll
 ; ripgrep-rs/optimized/544b63jf571x6ld1.ll
 ; ripgrep-rs/optimized/5baox15rvywa81ar.ll
 ; tokenizers-rs/optimized/1w676x6x6lprwvn5.ll
 ; tokenizers-rs/optimized/27irl7jx21l1e8zq.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, i1 %2) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
   %4 = lshr i64 %1, 2
@@ -39,12 +41,27 @@ entry:
 ; opencc/optimized/bit-vector.cc.ll
 ; ring-rs/optimized/36n9a21mmta9vg69.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1, i1 %2) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
   %4 = lshr i64 %1, 9
   %5 = add nuw nsw i64 %4, %3
   %6 = icmp ult i64 %5, %0
+  ret i1 %6
+}
+
+; 4 occurrences:
+; delta-rs/optimized/47qjbhol909h8zu7.ll
+; influxdb-rs/optimized/1qfvsl8a7jfomqbf.ll
+; regex-rs/optimized/3bb5ih3626n2er1d.ll
+; ring-rs/optimized/3r96bqjv88cu5m8n.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000078(i64 %0, i64 %1, i1 %2) #0 {
+entry:
+  %3 = zext i1 %2 to i64
+  %4 = lshr i64 %1, 3
+  %5 = add nuw nsw i64 %4, %3
+  %6 = icmp samesign ugt i64 %5, %0
   ret i1 %6
 }
 
@@ -59,7 +76,7 @@ entry:
 ; ring-rs/optimized/36n9a21mmta9vg69.ll
 ; wireshark/optimized/erf.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i1 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
   %4 = lshr i64 %1, 3

@@ -51,9 +51,9 @@ entry:
 ; 1 occurrences:
 ; lodepng/optimized/lodepng.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ugt i64 %2, 255
+  %3 = icmp samesign ugt i64 %2, 255
   %4 = select i1 %3, i64 %0, i64 %1
   %5 = or disjoint i64 %4, 4
   ret i64 %5
@@ -62,11 +62,22 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ult i64 %2, 4294967296
+  %3 = icmp samesign ult i64 %2, 4294967296
   %4 = select i1 %3, i64 %0, i64 %1
   %5 = or i64 %4, 8192
+  ret i64 %5
+}
+
+; 1 occurrences:
+; llvm/optimized/CompilerInvocation.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000029(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ult i64 %2, 4294967296
+  %4 = select i1 %3, i64 %0, i64 %1
+  %5 = or disjoint i64 %4, 256
   ret i64 %5
 }
 

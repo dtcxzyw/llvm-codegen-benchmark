@@ -19,6 +19,7 @@
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; llvm/optimized/MachineScheduler.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
+; lvgl/optimized/lv_chart.ll
 ; memcached/optimized/memcached-slabs.ll
 ; memcached/optimized/memcached_debug-slabs.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -35,7 +36,6 @@
 ; ncnn/optimized/deformableconv2d_x86_fma.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; nuttx/optimized/fs_procfs_mount.c.ll
-; openblas/optimized/dgesdd.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; opencv/optimized/mser.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
@@ -70,7 +70,7 @@ entry:
   ret i32 %4
 }
 
-; 54 occurrences:
+; 53 occurrences:
 ; gromacs/optimized/pme_spread.cpp.ll
 ; libjpeg-turbo/optimized/jdapistd.c.ll
 ; libwebp/optimized/vp8l_dec.c.ll
@@ -107,7 +107,6 @@ entry:
 ; ncnn/optimized/deformableconv2d_x86_fma.cpp.ll
 ; ncnn/optimized/unfold.cpp.ll
 ; nuklear/optimized/unity.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dorcsd2by1.c.ll
 ; openblas/optimized/dpbtrf.c.ll
 ; openblas/optimized/dsyconvf.c.ll
@@ -133,16 +132,18 @@ entry:
   ret i32 %4
 }
 
-; 25 occurrences:
+; 27 occurrences:
 ; abc/optimized/giaSwitch.c.ll
 ; graphviz/optimized/stress.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
+; lvgl/optimized/lv_area.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/guiTable.cpp.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
 ; ncnn/optimized/convolution_x86_avx512.cpp.ll
 ; ncnn/optimized/convolution_x86_avx512vnni.cpp.ll
+; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
 ; ncnn/optimized/convolution_x86_fma.cpp.ll
 ; ncnn/optimized/convolution_x86_xop.cpp.ll
 ; ncnn/optimized/prelu_x86_avx.cpp.ll
@@ -167,25 +168,27 @@ entry:
   ret i32 %4
 }
 
-; 68 occurrences:
+; 70 occurrences:
 ; abc/optimized/bmcCexMin1.c.ll
 ; abc/optimized/bmcCexTools.c.ll
 ; abc/optimized/cuddLinear.c.ll
 ; abc/optimized/giaQbf.c.ll
 ; abseil-cpp/optimized/numbers.cc.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/rational.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; cmake/optimized/frm_driver.c.ll
 ; freetype/optimized/psaux.c.ll
 ; graphviz/optimized/pack.c.ll
-; gromacs/optimized/dlaruv.cpp.ll
 ; gromacs/optimized/fft.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; gromacs/optimized/pme_spread.cpp.ll
-; gromacs/optimized/slaruv.cpp.ll
 ; gromacs/optimized/updategroups.cpp.ll
 ; libwebp/optimized/backward_references_enc.c.ll
 ; libwebp/optimized/frame_enc.c.ll
 ; libwebp/optimized/vp8l_dec.c.ll
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; minetest/optimized/guiTable.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; ncnn/optimized/convolution1d_x86.cpp.ll
@@ -280,16 +283,6 @@ define i32 @func000000000000000d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %1, %2
   %4 = sub nsw i32 %3, %0
-  ret i32 %4
-}
-
-; 1 occurrences:
-; openusd/optimized/restoration.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = mul nuw nsw i32 %1, %2
-  %4 = sub nuw nsw i32 %3, %0
   ret i32 %4
 }
 

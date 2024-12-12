@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/regcomp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000010a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 1
   %3 = mul i32 %2, %0
@@ -13,10 +13,10 @@ entry:
 ; 1 occurrences:
 ; ruby/optimized/regcomp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000106(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 5
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = icmp slt i32 %3, 51
   ret i1 %4
 }
@@ -28,10 +28,10 @@ entry:
 ; re2/optimized/bitstate.cc.ll
 ; re2/optimized/onepass.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = icmp slt i32 %3, -126
   ret i1 %4
 }
@@ -65,7 +65,7 @@ entry:
 ; linux/optimized/intel-gtt.ll
 ; minetest/optimized/mapnode.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000181(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 2
   %3 = mul i32 %2, %0
@@ -77,11 +77,11 @@ entry:
 ; opencv/optimized/norm.cpp.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001f8(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
-  %3 = mul nuw nsw i32 %2, %0
-  %4 = icmp ugt i32 %3, 16000
+  %3 = mul nuw nsw i32 %0, %2
+  %4 = icmp samesign ugt i32 %3, 16000
   ret i1 %4
 }
 
@@ -89,10 +89,10 @@ entry:
 ; jq/optimized/regcomp.ll
 ; oniguruma/optimized/regcomp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000108(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 1
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = icmp ugt i32 %3, 10
   ret i1 %4
 }
@@ -109,10 +109,10 @@ entry:
 ; opencv/optimized/rand.cpp.ll
 ; opencv/optimized/resize.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d6(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001a6(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = icmp slt i32 %3, 0
   ret i1 %4
 }
@@ -172,10 +172,10 @@ entry:
 ; stb/optimized/stb_tilemap_editor.c.ll
 ; tinympc/optimized/codegen.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 3
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = icmp sgt i32 %3, 1600
   ret i1 %4
 }
@@ -199,7 +199,7 @@ entry:
 define i1 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = icmp sgt i32 %3, 0
   ret i1 %4
 }
@@ -217,10 +217,10 @@ entry:
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; xgboost/optimized/gbtree_model.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 2
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
@@ -229,20 +229,19 @@ entry:
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; oiio/optimized/iffinput.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
 
-; 3 occurrences:
-; abc/optimized/giaSimBase.c.ll
+; 2 occurrences:
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/ivyMan.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a4(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = mul nsw i32 %2, %0
@@ -265,10 +264,10 @@ entry:
 ; opencv/optimized/rlof_localflow.cpp.ll
 ; opencv/optimized/ts_func.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000da(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001aa(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = icmp sgt i32 %3, 0
   ret i1 %4
 }
@@ -279,18 +278,16 @@ entry:
 ; opencv/optimized/cuda_test.cpp.ll
 ; opencv/optimized/linemod.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
 
-; 19 occurrences:
-; gromacs/optimized/dlassq.cpp.ll
+; 17 occurrences:
 ; gromacs/optimized/lmmin.cpp.ll
-; gromacs/optimized/slassq.cpp.ll
 ; lightgbm/optimized/c_api.cpp.ll
 ; lightgbm/optimized/gbdt.cpp.ll
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
@@ -308,10 +305,10 @@ entry:
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; xgboost/optimized/cpu_treeshap.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 2
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = icmp slt i32 %3, 0
   ret i1 %4
 }
@@ -324,7 +321,7 @@ entry:
 ; openmpi/optimized/netpatterns_knomial_tree.ll
 ; raylib/optimized/rmodels.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = mul nsw i32 %2, %0
@@ -332,19 +329,18 @@ entry:
   ret i1 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; gromacs/optimized/powerspect.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/io_tri.cpp.ll
 ; oiio/optimized/iffinput.cpp.ll
 ; openexr/optimized/ImfDeepTiledOutputFile.cpp.ll
 ; openexr/optimized/ImfTiledOutputFile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000008a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = icmp sgt i32 %3, 0
   ret i1 %4
 }
@@ -352,7 +348,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000104(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 1
   %3 = mul i32 %2, %0
@@ -363,7 +359,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/blockd.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000e6(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = mul nuw nsw i32 %2, %0
@@ -374,7 +370,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_rps.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000e1(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -183
   %3 = mul nuw nsw i32 %2, %0
@@ -395,7 +391,7 @@ entry:
 ; opencv/optimized/seamless_cloning_impl.cpp.ll
 ; opencv/optimized/ts_func.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i32 %0, i32 %1) #0 {
+define i1 @func000000000000018a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 2
   %3 = mul i32 %2, %0
@@ -413,7 +409,7 @@ entry:
 define i1 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = icmp slt i32 %3, 1
   ret i1 %4
 }
@@ -421,10 +417,10 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/tree.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a8(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = icmp ugt i32 %3, 136
   ret i1 %4
 }
@@ -435,7 +431,7 @@ entry:
 ; opencv/optimized/matrix_operations.cpp.ll
 ; opencv/optimized/pyramids.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d8(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001a8(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 2
   %3 = mul nsw i32 %2, %0
@@ -448,10 +444,10 @@ entry:
 ; opencv/optimized/matrix_operations.cpp.ll
 ; opencv/optimized/solvepnp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001a1(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = icmp eq i32 %3, 3
   ret i1 %4
 }
@@ -460,21 +456,21 @@ entry:
 ; opencv/optimized/matrix_sparse.cpp.ll
 ; opencv/optimized/matrix_transform.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001f4(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
-  %3 = mul nuw nsw i32 %2, %0
-  %4 = icmp ult i32 %3, 4
+  %3 = mul nuw nsw i32 %0, %2
+  %4 = icmp samesign ult i32 %3, 4
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; opencv/optimized/find_ellipses.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000088(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 2
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = icmp ugt i32 %3, 264
   ret i1 %4
 }
@@ -493,10 +489,10 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/find_ellipses.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000086(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 2
-  %3 = mul i32 %2, %0
+  %3 = mul i32 %0, %2
   %4 = icmp slt i32 %3, 0
   ret i1 %4
 }
@@ -505,7 +501,7 @@ entry:
 ; opencv/optimized/lkpyramid.cpp.ll
 ; opencv/optimized/seamless_cloning_impl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000188(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = mul i32 %2, %0
@@ -518,7 +514,7 @@ entry:
 ; opencv/optimized/grfmt_pxm.cpp.ll
 ; opencv/optimized/seamless_cloning_impl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000186(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = mul i32 %2, %0

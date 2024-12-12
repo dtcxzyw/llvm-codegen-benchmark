@@ -1,26 +1,4 @@
 
-; 11 occurrences:
-; abc/optimized/abcGen.c.ll
-; abc/optimized/acbUtil.c.ll
-; abc/optimized/cbaNtk.c.ll
-; abc/optimized/giaBalAig.c.ll
-; abc/optimized/giaTtopt.cpp.ll
-; abc/optimized/ifDsd.c.ll
-; abc/optimized/pdrIncr.c.ll
-; abc/optimized/sscSat.c.ll
-; openssl/optimized/libcrypto-lib-ec_deprecated.ll
-; openssl/optimized/libcrypto-shlib-ec_deprecated.ll
-; soc-simulator/optimized/verilated.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000004(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add i32 %1, 14
-  %3 = icmp ult i32 %2, 15
-  %4 = select i1 %3, i32 1, i32 %0
-  %5 = sext i32 %4 to i64
-  ret i64 %5
-}
-
 ; 17 occurrences:
 ; bullet3/optimized/b3DynamicBvh.ll
 ; bullet3/optimized/b3DynamicBvhBroadphase.ll
@@ -40,7 +18,7 @@ entry:
 ; openusd/optimized/quadRefinement.cpp.ll
 ; raylib/optimized/rcore.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, -1
   %3 = select i1 %2, i32 1, i32 %0
@@ -72,9 +50,29 @@ entry:
 ; abc/optimized/wlcBlast.c.ll
 ; soc-simulator/optimized/verilated.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 99
+  %3 = icmp ult i32 %2, 15
+  %4 = select i1 %3, i32 16, i32 %0
+  %5 = sext i32 %4 to i64
+  ret i64 %5
+}
+
+; 9 occurrences:
+; abc/optimized/abcGen.c.ll
+; abc/optimized/acbUtil.c.ll
+; abc/optimized/cbaNtk.c.ll
+; abc/optimized/giaBalAig.c.ll
+; abc/optimized/giaTtopt.cpp.ll
+; abc/optimized/ifDsd.c.ll
+; abc/optimized/pdrIncr.c.ll
+; abc/optimized/sscSat.c.ll
+; soc-simulator/optimized/verilated.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add i32 %1, 9
   %3 = icmp ult i32 %2, 15
   %4 = select i1 %3, i32 16, i32 %0
   %5 = sext i32 %4 to i64

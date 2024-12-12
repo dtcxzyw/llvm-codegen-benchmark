@@ -27,10 +27,15 @@ entry:
   ret i16 %4
 }
 
-; 3 occurrences:
+; 8 occurrences:
 ; llvm/optimized/AttributorAttributes.cpp.ll
 ; minetest/optimized/content_mapblock.cpp.ll
 ; opencv/optimized/denoising.cpp.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000001d(i16 %0, i32 %1) #0 {
 entry:
@@ -40,7 +45,7 @@ entry:
   ret i16 %4
 }
 
-; 10 occurrences:
+; 12 occurrences:
 ; abc/optimized/kitDsd.c.ll
 ; git/optimized/merge-ort.ll
 ; linux/optimized/hub.ll
@@ -48,6 +53,8 @@ entry:
 ; linux/optimized/vt.ll
 ; llvm/optimized/CGAtomic.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
+; lvgl/optimized/lv_display.ll
+; lvgl/optimized/lv_obj_style.ll
 ; openspiel/optimized/chess_board.cc.ll
 ; qemu/optimized/hw_pci_msi.c.ll
 ; sqlite/optimized/sqlite3.ll
@@ -60,7 +67,7 @@ entry:
   ret i16 %4
 }
 
-; 36 occurrences:
+; 37 occurrences:
 ; clamav/optimized/events.c.ll
 ; icu/optimized/collationdatabuilder.ll
 ; icu/optimized/collationfastlatinbuilder.ll
@@ -92,6 +99,7 @@ entry:
 ; llvm/optimized/SCCPSolver.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; llvm/optimized/SemaLambda.cpp.ll
+; lvgl/optimized/lv_image.ll
 ; openjdk/optimized/relocInfo.ll
 ; qemu/optimized/replay_replay-internal.c.ll
 ; quickjs/optimized/quickjs.ll
@@ -102,7 +110,7 @@ define i16 @func0000000000000001(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i16
   %3 = shl i16 %2, 8
-  %4 = or disjoint i16 %3, %0
+  %4 = or disjoint i16 %0, %3
   ret i16 %4
 }
 
@@ -125,7 +133,7 @@ define i16 @func000000000000001e(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i32 %1 to i16
   %3 = shl nuw nsw i16 %2, 6
-  %4 = or i16 %3, %0
+  %4 = or i16 %0, %3
   ret i16 %4
 }
 
@@ -136,7 +144,7 @@ define i16 @func000000000000000e(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nsw i32 %1 to i16
   %3 = shl nuw nsw i16 %2, 2
-  %4 = or i16 %3, %0
+  %4 = or i16 %0, %3
   ret i16 %4
 }
 
@@ -150,7 +158,7 @@ define i16 @func0000000000000017(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i16
   %3 = shl nuw nsw i16 %2, 5
-  %4 = or disjoint i16 %3, %0
+  %4 = or disjoint i16 %0, %3
   ret i16 %4
 }
 
@@ -161,7 +169,7 @@ define i16 @func0000000000000007(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i16
   %3 = shl nuw nsw i16 %2, 5
-  %4 = or disjoint i16 %3, %0
+  %4 = or disjoint i16 %0, %3
   ret i16 %4
 }
 

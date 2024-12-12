@@ -1,7 +1,6 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; linux/optimized/fair.ll
-; qemu/optimized/hw_misc_sifive_e_aon.c.ll
 ; qemu/optimized/hw_timer_sifive_pwm.c.ll
 ; ring-rs/optimized/1vabw27ldssjsz66.ll
 ; Function Attrs: nounwind

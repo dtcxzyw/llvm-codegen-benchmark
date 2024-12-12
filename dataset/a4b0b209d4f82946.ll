@@ -1,17 +1,11 @@
 
-; 1 occurrences:
-; wireshark/optimized/packet-ssh.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, ptr %1, ptr %2) #0 {
-entry:
-  %3 = getelementptr i8, ptr %2, i64 312
-  %4 = icmp eq ptr %3, %1
-  %5 = select i1 %4, ptr %0, ptr %3
-  %6 = getelementptr nusw i8, ptr %5, i64 264
-  ret ptr %6
-}
-
-; 57 occurrences:
+; 62 occurrences:
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; eastl/optimized/BenchmarkTupleVector.cpp.ll
 ; eastl/optimized/BenchmarkVector.cpp.ll
 ; eastl/optimized/TestRingBuffer.cpp.ll
@@ -23,7 +17,6 @@ entry:
 ; z3/optimized/ast_smt2_pp.cpp.ll
 ; z3/optimized/bv_ackerman.cpp.ll
 ; z3/optimized/cached_var_subst.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/datatype_decl_plugin.cpp.ll
 ; z3/optimized/dd_bdd.cpp.ll
 ; z3/optimized/dd_pdd.cpp.ll
@@ -70,12 +63,24 @@ entry:
 ; z3/optimized/theory_special_relations.cpp.ll
 ; z3/optimized/theory_utvpi.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000086(ptr %0, ptr %1, ptr %2) #0 {
+define ptr @func0000000000000187(ptr %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 24
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 8
   %4 = icmp eq ptr %3, %1
   %5 = select i1 %4, ptr %0, ptr %3
-  %6 = getelementptr nusw i8, ptr %5, i64 4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 8
+  ret ptr %6
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-ssh.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr i8, ptr %2, i64 312
+  %4 = icmp eq ptr %3, %1
+  %5 = select i1 %4, ptr %0, ptr %3
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 264
   ret ptr %6
 }
 

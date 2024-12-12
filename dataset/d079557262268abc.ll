@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 37 occurrences:
 ; arrow/optimized/string-to-double.cc.ll
 ; clamav/optimized/dsig.c.ll
 ; double_conversion/optimized/string-to-double.cc.ll
@@ -35,14 +35,13 @@
 ; php/optimized/cdf.ll
 ; postgres/optimized/fe-exec.ll
 ; qemu/optimized/accel_tcg_translator.c.ll
-; rocksdb/optimized/keyrange.cc.ll
 ; rocksdb/optimized/locktree.cc.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   ret i1 %3
 }
 
@@ -61,7 +60,7 @@ entry:
 define i1 @func0000000000000006(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = icmp slt i32 %2, %0
+  %3 = icmp sgt i32 %0, %2
   ret i1 %3
 }
 
@@ -76,7 +75,7 @@ entry:
 define i1 @func000000000000000a(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = icmp sgt i32 %2, %0
+  %3 = icmp slt i32 %0, %2
   ret i1 %3
 }
 
@@ -86,10 +85,10 @@ entry:
 ; openjdk/optimized/hb-buffer-serialize.ll
 ; openjdk/optimized/hb-number.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000018(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = icmp ugt i32 %2, %0
+  %3 = icmp samesign ult i32 %0, %2
   ret i1 %3
 }
 

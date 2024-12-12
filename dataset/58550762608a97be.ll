@@ -27,9 +27,8 @@ entry:
   ret i32 %5
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/cuddRef.c.ll
-; git/optimized/pq.ll
 ; hermes/optimized/SegmentedArray.cpp.ll
 ; openjdk/optimized/samplePriorityQueue.ll
 ; openusd/optimized/stbImage.cpp.ll
@@ -61,6 +60,17 @@ define i32 @func0000000000000000(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 2
   %4 = add i32 %3, -8
+  %5 = select i1 %0, i32 %1, i32 %4
+  ret i32 %5
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_transform.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000d(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl nuw nsw i32 %2, 1
+  %4 = add nsw i32 %3, -256
   %5 = select i1 %0, i32 %1, i32 %4
   ret i32 %5
 }

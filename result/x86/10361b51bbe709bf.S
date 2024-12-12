@@ -1,11 +1,11 @@
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	shrl	$8, %edx
 	andl	%edi, %edx
 	cmpb	$3, %sil
 	sete	%al
 	andb	%dl, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	testb	$8, %dl
 	sete	%cl
 	andb	%sil, %cl

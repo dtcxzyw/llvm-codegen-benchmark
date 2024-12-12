@@ -1,5 +1,5 @@
 
-; 90 occurrences:
+; 92 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; clamav/optimized/hwp.c.ll
@@ -23,7 +23,6 @@
 ; git/optimized/archive-tar.ll
 ; grpc/optimized/json_token.cc.ll
 ; hdf5/optimized/h5dump_ddl.c.ll
-; image-rs/optimized/4srzh4wujeew249y.ll
 ; jemalloc/optimized/hpdata.ll
 ; jemalloc/optimized/hpdata.pic.ll
 ; jemalloc/optimized/hpdata.sym.ll
@@ -66,7 +65,6 @@
 ; php/optimized/zend_jit.ll
 ; postgres/optimized/foreigncmds.ll
 ; postgres/optimized/reloptions.ll
-; postgres/optimized/shm_toc.ll
 ; qemu/optimized/block_qcow2-snapshot.c.ll
 ; qemu/optimized/block_vhdx.c.ll
 ; qemu/optimized/linux-user_mmap.c.ll
@@ -83,11 +81,15 @@
 ; wasmtime-rs/optimized/joyny9bexuq72mb.ll
 ; wasmtime-rs/optimized/xwe1luu7ota7lol.ll
 ; wireshark/optimized/dot11decrypt_util.c.ll
+; yalantinglibs/optimized/benchmark.cpp.ll
 ; yalantinglibs/optimized/example.cpp.ll
 ; yalantinglibs/optimized/file_client.cpp.ll
 ; yalantinglibs/optimized/struct.struct_pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto2.struct_pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.struct_pb.cc.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/5m9bjvwazi0alu2tzwf9y1ejc.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; zlib/optimized/trees.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
@@ -126,12 +128,12 @@ entry:
 define i64 @func0000000000000022(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 1
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = add nuw i64 %3, 1
   ret i64 %4
 }
 
-; 10 occurrences:
+; 14 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll
 ; lief/optimized/ssl_tls12_client.c.ll
@@ -142,21 +144,22 @@ entry:
 ; regex-rs/optimized/10eccrragw6uslmk.ll
 ; ripgrep-rs/optimized/5baox15rvywa81ar.ll
 ; tokenizers-rs/optimized/27irl7jx21l1e8zq.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003f(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 2
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = add nuw nsw i64 %3, 3
   ret i64 %4
 }
 
-; 6 occurrences:
-; hermes/optimized/ItaniumDemangle.cpp.ll
+; 3 occurrences:
 ; libevent/optimized/evdns.c.ll
 ; llama.cpp/optimized/llama.cpp.ll
-; luajit/optimized/lj_record.ll
-; luajit/optimized/lj_record_dyn.ll
 ; qemu/optimized/linux-user_mmap.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
@@ -180,7 +183,7 @@ entry:
 define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -12
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = add i64 %3, 255
   ret i64 %4
 }
@@ -202,9 +205,10 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; jsonnet/optimized/rapidyaml.cpp.ll
 ; node/optimized/libnode.crypto_clienthello.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000020(i64 %0, i64 %1) #0 {
 entry:
@@ -245,7 +249,7 @@ entry:
 define i64 @func0000000000000035(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = add nsw i64 %3, 3
   ret i64 %4
 }
@@ -261,13 +265,14 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; clamav/optimized/unarj.c.ll
+; zed-rs/optimized/f3wmqxw6x607w7cbx1edvfc95.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000033(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 2
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = add nuw nsw i64 %3, 1
   ret i64 %4
 }
@@ -280,7 +285,7 @@ entry:
 define i64 @func0000000000000030(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 5
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = add i64 %3, 2
   ret i64 %4
 }

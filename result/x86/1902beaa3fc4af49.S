@@ -8,21 +8,21 @@ func0000000000000004:                   # @func0000000000000004
 	cmoveq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000006:                   # @func0000000000000006
-	testb	$1, %sil
+func0000000000000007:                   # @func0000000000000007
+	testl	$4096, %edx                     # imm = 0x1000
 	movl	$44, %eax
 	movl	$604, %ecx                      # imm = 0x25C
-	cmoveq	%rcx, %rax
-	testl	$4096, %edx                     # imm = 0x1000
 	cmovneq	%rcx, %rax
+	testb	$1, %sil
+	cmoveq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000032:                   # @func0000000000000032
-	testb	$1, %sil
+func0000000000000033:                   # @func0000000000000033
+	testb	$8, %dl
 	movl	$320, %eax                      # imm = 0x140
 	movl	$272, %ecx                      # imm = 0x110
 	cmoveq	%rcx, %rax
-	testb	$8, %dl
+	testb	$1, %sil
 	cmoveq	%rcx, %rax
 	addq	%rdi, %rax
 	retq

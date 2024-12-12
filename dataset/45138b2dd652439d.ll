@@ -1,6 +1,10 @@
 
-; 9 occurrences:
+; 13 occurrences:
 ; actix-rs/optimized/2l54a10og4z99516.ll
+; boost/optimized/date_time_format_parser.ll
+; boost/optimized/named_scope_format_parser.ll
+; boost/optimized/object_name.ll
+; boost/optimized/url_base.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; eastl/optimized/EADateTime.cpp.ll
 ; icu/optimized/loclikelysubtags.ll

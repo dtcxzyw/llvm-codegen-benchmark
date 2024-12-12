@@ -1,10 +1,13 @@
 
-; 55 occurrences:
+; 57 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; cpython/optimized/obmalloc.ll
 ; duckdb/optimized/ub_duckdb_storage.cpp.ll
 ; freetype/optimized/autofit.c.ll
@@ -46,7 +49,6 @@
 ; openmpi/optimized/ad_read_str_naive.ll
 ; openusd/optimized/json.cpp.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
-; qemu/optimized/hw_rtc_goldfish_rtc.c.ll
 ; quickjs/optimized/libbf.ll
 ; redis/optimized/base.ll
 ; redis/optimized/base.sym.ll
@@ -80,7 +82,7 @@ define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4190208
   %4 = sub nsw i64 %3, %1
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -94,7 +96,7 @@ define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 72057594037927935
   %4 = sub nsw i64 %3, %1
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 

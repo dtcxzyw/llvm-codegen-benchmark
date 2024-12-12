@@ -11,7 +11,7 @@ entry:
   ret i64 %4
 }
 
-; 58 occurrences:
+; 59 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; eastl/optimized/TestBitVector.cpp.ll
 ; eastl/optimized/TestDeque.cpp.ll
@@ -70,6 +70,7 @@ entry:
 ; velox/optimized/ScanTracker.cpp.ll
 ; velox/optimized/SsdFile.cpp.ll
 ; velox/optimized/TimeZoneMap.cpp.ll
+; zed-rs/optimized/e7lqw1ynol01cwrgb8ri1wedr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
@@ -79,12 +80,10 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; arrow/optimized/compare_internal_avx2.cc.ll
 ; arrow/optimized/diff.cc.ll
 ; darktable/optimized/introspection_basecurve.c.ll
-; openblas/optimized/dspr2_thread_L.c.ll
-; openblas/optimized/dspr_thread_L.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:

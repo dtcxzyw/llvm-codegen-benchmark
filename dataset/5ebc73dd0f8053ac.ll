@@ -6,11 +6,11 @@
 ; glslang/optimized/iomapper.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; linux/optimized/e1000_main.ll
+; linux/optimized/intel_overlay.ll
 ; linux/optimized/nfs4xdr.ll
 ; linux/optimized/r8169_main.ll
 ; linux/optimized/smpboot.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
@@ -39,6 +39,32 @@ entry:
   ret i32 %5
 }
 
+; 16 occurrences:
+; abc/optimized/acec2Mult.c.ll
+; abc/optimized/sbdWin.c.ll
+; gromacs/optimized/dispersioncorrection.cpp.ll
+; gromacs/optimized/xtc2.c.ll
+; imgui/optimized/imgui_draw.cpp.ll
+; lightgbm/optimized/train_share_states.cpp.ll
+; ncnn/optimized/gemm_x86.cpp.ll
+; ncnn/optimized/gemm_x86_avx.cpp.ll
+; ncnn/optimized/gemm_x86_avx512.cpp.ll
+; ncnn/optimized/gemm_x86_fma.cpp.ll
+; opencv/optimized/darknet_io.cpp.ll
+; opencv/optimized/median_blur.dispatch.cpp.ll
+; openjdk/optimized/methodData.ll
+; openmpi/optimized/coll_base_reduce_scatter.ll
+; openmpi/optimized/coll_base_reduce_scatter_block.ll
+; openusd/optimized/reconinter.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp eq i32 %2, -1
+  %4 = select i1 %3, i32 %0, i32 %1
+  %5 = shl nsw i32 %4, 1
+  ret i32 %5
+}
+
 ; 1 occurrences:
 ; openjdk/optimized/constantPool.ll
 ; Function Attrs: nounwind
@@ -47,32 +73,6 @@ entry:
   %3 = icmp sgt i32 %2, 0
   %4 = select i1 %3, i32 %0, i32 %1
   %5 = shl nsw i32 %4, 1
-  ret i32 %5
-}
-
-; 16 occurrences:
-; abc/optimized/acec2Mult.c.ll
-; abc/optimized/sbdWin.c.ll
-; gromacs/optimized/dispersioncorrection.cpp.ll
-; gromacs/optimized/xtc2.c.ll
-; imgui/optimized/imgui_draw.cpp.ll
-; libevent/optimized/poll.c.ll
-; lightgbm/optimized/train_share_states.cpp.ll
-; ncnn/optimized/gemm_x86.cpp.ll
-; ncnn/optimized/gemm_x86_avx.cpp.ll
-; ncnn/optimized/gemm_x86_avx512.cpp.ll
-; ncnn/optimized/gemm_x86_fma.cpp.ll
-; opencv/optimized/darknet_io.cpp.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
-; openmpi/optimized/coll_base_reduce_scatter.ll
-; openmpi/optimized/coll_base_reduce_scatter_block.ll
-; openusd/optimized/reconinter.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp eq i32 %2, 3
-  %4 = select i1 %3, i32 %0, i32 %1
-  %5 = shl nsw i32 %4, 3
   ret i32 %5
 }
 
@@ -90,13 +90,12 @@ entry:
   ret i32 %5
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; gromacs/optimized/pme_pp.cpp.ll
 ; gromacs/optimized/xtc2.c.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; luau/optimized/ltablib.cpp.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; openusd/optimized/ilmbase_half.cpp.ll
 ; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind
@@ -122,16 +121,37 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/error_correction.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, 24577
+  %3 = icmp samesign ugt i32 %2, 24577
   %4 = select i1 %3, i32 %0, i32 %1
   %5 = shl nsw i32 %4, 1
   ret i32 %5
 }
 
-; 7 occurrences:
-; icu/optimized/umutablecptrie.ll
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000012(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ult i32 %2, 50331648
+  %4 = select i1 %3, i32 %0, i32 %1
+  %5 = shl nuw i32 %4, 24
+  ret i32 %5
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_transform.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000051(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 128
+  %4 = select i1 %3, i32 %0, i32 %1
+  %5 = shl nsw i32 %4, 24
+  ret i32 %5
+}
+
+; 6 occurrences:
 ; libwebp/optimized/upsampling.c.ll
 ; libwebp/optimized/upsampling_sse2.c.ll
 ; libwebp/optimized/yuv.c.ll
@@ -169,15 +189,25 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; linux/optimized/tg3.ll
-; postgres/optimized/nodeHash.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 9
   %4 = select i1 %3, i32 %0, i32 %1
   %5 = shl i32 %4, 16
+  ret i32 %5
+}
+
+; 1 occurrences:
+; postgres/optimized/nodeHash.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000050(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 2
+  %4 = select i1 %3, i32 %0, i32 %1
+  %5 = shl i32 %4, 2
   ret i32 %5
 }
 
@@ -189,6 +219,17 @@ entry:
   %3 = icmp ugt i32 %2, 131072
   %4 = select i1 %3, i32 %0, i32 %1
   %5 = shl nuw nsw i32 %4, 13
+  ret i32 %5
+}
+
+; 1 occurrences:
+; icu/optimized/umutablecptrie.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000053(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 32783
+  %4 = select i1 %3, i32 %0, i32 %1
+  %5 = shl nuw nsw i32 %4, 2
   ret i32 %5
 }
 

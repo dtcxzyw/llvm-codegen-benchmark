@@ -1,7 +1,21 @@
 
-; 31 occurrences:
+; 4 occurrences:
+; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
+; gromacs/optimized/matio.cpp.ll
+; image-rs/optimized/4srzh4wujeew249y.ll
+; openspiel/optimized/dark_chess.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000041(i8 %0, i16 %1) #0 {
+entry:
+  %2 = trunc nuw i16 %1 to i8
+  %3 = icmp eq i8 %0, %2
+  ret i1 %3
+}
+
+; 32 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; arrow/optimized/string-to-double.cc.ll
+; boost/optimized/src.ll
 ; clamav/optimized/matcher-ac.c.ll
 ; cmake/optimized/zdict.c.ll
 ; double_conversion/optimized/string-to-double.cc.ll
@@ -35,7 +49,7 @@
 define i1 @func0000000000000001(i8 %0, i16 %1) #0 {
 entry:
   %2 = trunc i16 %1 to i8
-  %3 = icmp eq i8 %2, %0
+  %3 = icmp eq i8 %0, %2
   ret i1 %3
 }
 
@@ -50,12 +64,13 @@ entry:
 define i1 @func000000000000000c(i8 %0, i16 %1) #0 {
 entry:
   %2 = trunc i16 %1 to i8
-  %3 = icmp ne i8 %2, %0
+  %3 = icmp ne i8 %0, %2
   ret i1 %3
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
+; boost/optimized/src.ll
 ; llvm/optimized/CGExpr.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/FunctionAttrs.cpp.ll
@@ -66,7 +81,7 @@ entry:
 define i1 @func0000000000000004(i8 %0, i16 %1) #0 {
 entry:
   %2 = trunc i16 %1 to i8
-  %3 = icmp ugt i8 %2, %0
+  %3 = icmp ult i8 %0, %2
   ret i1 %3
 }
 
@@ -76,19 +91,21 @@ entry:
 define i1 @func0000000000000005(i8 %0, i16 %1) #0 {
 entry:
   %2 = trunc i16 %1 to i8
-  %3 = icmp uge i8 %2, %0
+  %3 = icmp ule i8 %0, %2
   ret i1 %3
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; icu/optimized/normalizer2impl.ll
 ; proxygen/optimized/HTTP1xCodec.cpp.ll
 ; wolfssl/optimized/tls13.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i8 %0, i16 %1) #0 {
+define i1 @func0000000000000044(i8 %0, i16 %1) #0 {
 entry:
   %2 = trunc nuw i16 %1 to i8
-  %3 = icmp ugt i8 %2, %0
+  %3 = icmp ult i8 %0, %2
   ret i1 %3
 }
 
@@ -111,39 +128,27 @@ entry:
 define i1 @func0000000000000008(i8 %0, i16 %1) #0 {
 entry:
   %2 = trunc i16 %1 to i8
-  %3 = icmp ult i8 %2, %0
-  ret i1 %3
-}
-
-; 3 occurrences:
-; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
-; gromacs/optimized/matio.cpp.ll
-; openspiel/optimized/dark_chess.cc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000021(i8 %0, i16 %1) #0 {
-entry:
-  %2 = trunc nuw i16 %1 to i8
-  %3 = icmp eq i8 %2, %0
+  %3 = icmp ugt i8 %0, %2
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; openspiel/optimized/chess_board.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i8 %0, i16 %1) #0 {
+define i1 @func000000000000004c(i8 %0, i16 %1) #0 {
 entry:
   %2 = trunc nuw i16 %1 to i8
-  %3 = icmp ne i8 %2, %0
+  %3 = icmp ne i8 %0, %2
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; wolfssl/optimized/tls13.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i8 %0, i16 %1) #0 {
+define i1 @func0000000000000048(i8 %0, i16 %1) #0 {
 entry:
   %2 = trunc nuw i16 %1 to i8
-  %3 = icmp ult i8 %2, %0
+  %3 = icmp ugt i8 %0, %2
   ret i1 %3
 }
 

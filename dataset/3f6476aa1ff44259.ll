@@ -1,8 +1,7 @@
 
-%"class.gmx::BasicVector.3168823" = type { [3 x float] }
+%"class.gmx::BasicVector.3361322" = type { [3 x float] }
 
-; 106 occurrences:
-; gromacs/optimized/dataframe.cpp.ll
+; 102 occurrences:
 ; gromacs/optimized/force.cpp.ll
 ; gromacs/optimized/pbc.cpp.ll
 ; opencv/optimized/convolution.cpp.ll
@@ -15,7 +14,6 @@
 ; openjdk/optimized/bfsClosure.ll
 ; openjdk/optimized/cardTableRS.ll
 ; openjdk/optimized/classLoaderData.ll
-; openjdk/optimized/continuationFreezeThaw.ll
 ; openjdk/optimized/defNewGeneration.ll
 ; openjdk/optimized/dfsClosure.ll
 ; openjdk/optimized/g1AllocRegion.ll
@@ -106,6 +104,21 @@
 ; openjdk/optimized/zRelocate.ll
 ; openjdk/optimized/zRelocationSet.ll
 ; openjdk/optimized/zVerify.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = inttoptr i64 %1 to ptr
+  %5 = getelementptr nusw i64, ptr %4, i64 %3
+  %6 = getelementptr nusw nuw i64, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 6 occurrences:
+; gromacs/optimized/dataframe.cpp.ll
+; opencv/optimized/convolution.cpp.ll
+; opencv/optimized/pyramids.cpp.ll
+; openjdk/optimized/continuationFreezeThaw.ll
 ; openusd/optimized/resize.c.ll
 ; openusd/optimized/yv12extend.c.ll
 ; Function Attrs: nounwind
@@ -129,8 +142,8 @@ define ptr @func0000000000000000(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = inttoptr i64 %1 to ptr
-  %5 = getelementptr %"class.gmx::BasicVector.3168823", ptr %4, i64 %3
-  %6 = getelementptr %"class.gmx::BasicVector.3168823", ptr %5, i64 %0
+  %5 = getelementptr %"class.gmx::BasicVector.3361322", ptr %4, i64 %3
+  %6 = getelementptr %"class.gmx::BasicVector.3361322", ptr %5, i64 %0
   ret ptr %6
 }
 

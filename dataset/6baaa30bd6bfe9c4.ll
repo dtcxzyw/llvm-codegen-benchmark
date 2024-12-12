@@ -1,5 +1,5 @@
 
-; 114 occurrences:
+; 113 occurrences:
 ; abc/optimized/bacBac.c.ll
 ; abc/optimized/giaGen.c.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
@@ -10,6 +10,8 @@
 ; arrow/optimized/scalar_cast_temporal.cc.ll
 ; arrow/optimized/tz.cpp.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; cmake/optimized/parsedate.c.ll
 ; cpython/optimized/_datetimemodule.ll
 ; curl/optimized/libcurl_la-parsedate.ll
@@ -49,6 +51,8 @@
 ; llama.cpp/optimized/ggml-quants.c.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; minetest/optimized/base64.cpp.ll
 ; minetest/optimized/reflowscan.cpp.ll
 ; ncnn/optimized/lstm_x86_avx512.cpp.ll
@@ -79,16 +83,11 @@
 ; openssl/optimized/asn1_time_test-bin-a_time.ll
 ; openssl/optimized/ca_internals_test-bin-a_time.ll
 ; openssl/optimized/libcrypto-lib-a_time.ll
-; openssl/optimized/libcrypto-lib-deterministic_nonce.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
 ; openssl/optimized/libcrypto-lib-rsaz_exp_x2.ll
 ; openssl/optimized/libcrypto-shlib-a_time.ll
-; openssl/optimized/libcrypto-shlib-deterministic_nonce.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; openssl/optimized/libcrypto-shlib-rsaz_exp_x2.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
-; php/optimized/engine_combinedlcg.ll
 ; postgres/optimized/formatting.ll
 ; postgres/optimized/interval.ll
 ; postgres/optimized/xlog.ll

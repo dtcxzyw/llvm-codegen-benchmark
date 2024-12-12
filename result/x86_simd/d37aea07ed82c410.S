@@ -3,7 +3,7 @@ func0000000000000031:                   # @func0000000000000031
 	vpmovd2m	%xmm1, %k1
 	vptestmd	%xmm2, %xmm2, %k0 {%k1}
 	vpmovm2q	%k0, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.long	10                              # 0xa
@@ -12,5 +12,5 @@ func0000000000000011:                   # @func0000000000000011
 	vpmovd2m	%xmm1, %k1
 	vpcmpltud	.LCPI1_0(%rip){1to4}, %xmm2, %k0 {%k1}
 	vpmovm2q	%k0, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq

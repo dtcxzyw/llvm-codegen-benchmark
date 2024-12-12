@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	incl	%esi
 	andl	$-2, %esi
 	cmpl	$2147483646, %esi               # imm = 0x7FFFFFFE

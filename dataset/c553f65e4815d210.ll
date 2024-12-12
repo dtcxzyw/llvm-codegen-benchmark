@@ -1,5 +1,5 @@
 
-; 37 occurrences:
+; 35 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/aigJust.c.ll
 ; abc/optimized/aigMan.c.ll
@@ -7,8 +7,6 @@
 ; abc/optimized/amapMerge.c.ll
 ; abc/optimized/casDec.c.ll
 ; abc/optimized/cgtCore.c.ll
-; abc/optimized/cswMan.c.ll
-; abc/optimized/dchMan.c.ll
 ; abc/optimized/giaIf.c.ll
 ; abc/optimized/giaMan.c.ll
 ; abc/optimized/ifMan.c.ll

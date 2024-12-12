@@ -8,10 +8,10 @@
 ; rocksdb/optimized/version_set.cc.ll
 ; slurm/optimized/burst_buffer.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000066(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000c6(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp sgt i64 %3, %0
+  %4 = icmp slt i64 %0, %3
   %5 = icmp slt i32 %1, 20
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
@@ -27,10 +27,10 @@ entry:
 ; openjdk/optimized/mlib_ImageConv_u16ext.ll
 ; postgres/optimized/spgtextproc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a6(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000146(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp sgt i64 %3, %0
+  %4 = icmp slt i64 %0, %3
   %5 = icmp sgt i32 %1, 0
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
@@ -39,10 +39,10 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/DecodedVector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000029(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp ule i64 %3, %0
+  %4 = icmp uge i64 %0, %3
   %5 = icmp eq i32 %1, 0
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
@@ -58,10 +58,10 @@ entry:
 ; slurm/optimized/node_features.ll
 ; slurm/optimized/prep.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp sgt i64 %3, %0
+  %4 = icmp slt i64 %0, %3
   %5 = icmp eq i32 %1, 0
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
@@ -72,10 +72,10 @@ entry:
 ; casadi/optimized/cs_maxtrans.c.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000186(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp sgt i64 %3, %0
+  %4 = icmp slt i64 %0, %3
   %5 = icmp ne i32 %1, 0
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
@@ -84,10 +84,10 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/profile_model.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000ca(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp slt i64 %3, %0
+  %4 = icmp sgt i64 %0, %3
   %5 = icmp slt i32 %1, 0
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
@@ -97,10 +97,10 @@ entry:
 ; wireshark/optimized/packet-kafka.c.ll
 ; wireshark/optimized/profile_model.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp slt i64 %3, %0
+  %4 = icmp sgt i64 %0, %3
   %5 = icmp eq i32 %1, 0
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
@@ -109,10 +109,10 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/first_sealed_auction.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   %5 = icmp eq i32 %1, -3
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
@@ -121,10 +121,10 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/pgbench.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006b(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000cb(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp sle i64 %3, %0
+  %4 = icmp sge i64 %0, %3
   %5 = icmp slt i32 %1, 1
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
@@ -133,23 +133,11 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cb(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000018b(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp sle i64 %3, %0
+  %4 = icmp sge i64 %0, %3
   %5 = icmp ne i32 %1, 0
-  %6 = select i1 %4, i1 %5, i1 false
-  ret i1 %6
-}
-
-; 1 occurrences:
-; openexr/optimized/ImfHuf.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = icmp sgt i64 %3, %0
-  %5 = icmp ult i32 %1, 260
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
 }

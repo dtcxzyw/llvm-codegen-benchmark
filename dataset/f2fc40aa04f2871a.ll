@@ -10,7 +10,7 @@
 define i32 @func0000000000000001(ptr %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = icmp eq ptr %2, %0
+  %3 = icmp eq ptr %0, %2
   %4 = select i1 %3, i32 1000000, i32 0
   ret i32 %4
 }

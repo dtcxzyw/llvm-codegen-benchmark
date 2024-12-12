@@ -68,8 +68,3 @@ func0000000000000010:                   # @func0000000000000010
 	srli	a1, a1, 48
 	addw	a0, a0, a1
 	ret
-func000000000000000d:                   # @func000000000000000d
-	slli	a0, a0, 48
-	srli	a0, a0, 48
-	addw	a0, a0, a1
-	ret

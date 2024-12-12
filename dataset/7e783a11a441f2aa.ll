@@ -6,7 +6,7 @@
 ; openjdk/optimized/generateOopMap.ll
 ; postgres/optimized/bitmapset.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -4
   %3 = lshr i32 %0, 24
@@ -18,7 +18,7 @@ entry:
 ; abc/optimized/fretTime.c.ll
 ; linux/optimized/maple_tree.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000046(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = lshr i32 %0, 12
@@ -31,7 +31,7 @@ entry:
 ; abc/optimized/abcResub.c.ll
 ; abc/optimized/ifDelay.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000004a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -2
   %3 = lshr i32 %0, 12
@@ -42,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/ifMap.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000027(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000047(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = lshr i32 %0, 24
@@ -56,7 +56,7 @@ entry:
 ; abc/optimized/fretFlow.c.ll
 ; luau/optimized/IrTranslation.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000c1(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = lshr i32 %0, 12
@@ -72,17 +72,6 @@ entry:
   %2 = add i32 %1, -1
   %3 = lshr i32 %0, 3
   %4 = icmp sgt i32 %3, %2
-  ret i1 %4
-}
-
-; 1 occurrences:
-; hdf5/optimized/H5Dchunk.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000068(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add nuw nsw i32 %1, 1
-  %3 = lshr i32 %0, 3
-  %4 = icmp ugt i32 %3, %2
   ret i1 %4
 }
 
@@ -137,7 +126,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/toast_internals.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000044(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -2
   %3 = lshr i32 %0, 2
@@ -148,7 +137,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000029(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000049(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = lshr i32 %0, 1

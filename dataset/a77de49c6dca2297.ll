@@ -1,12 +1,10 @@
 
-; 27 occurrences:
+; 23 occurrences:
 ; abc/optimized/ioReadBench.c.ll
 ; arrow/optimized/compare_internal.cc.ll
 ; clamav/optimized/pdf.c.ll
 ; cmake/optimized/fse_compress.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; linux/optimized/hda_controller.ll
-; linux/optimized/hdac_controller.ll
 ; linux/optimized/msdos.ll
 ; linux/optimized/sit.ll
 ; linux/optimized/tsc.ll
@@ -20,12 +18,10 @@
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/jvmtiImpl.ll
 ; openssl/optimized/libdefault-lib-drbg.ll
-; php/optimized/pcre2_dfa_match.ll
 ; postgres/optimized/heaptuple.ll
 ; postgres/optimized/multixact.ll
 ; proxygen/optimized/HeaderTable.cpp.ll
 ; redis/optimized/rax.ll
-; sqlite/optimized/sqlite3.ll
 ; zstd/optimized/fse_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i32 %1) #0 {

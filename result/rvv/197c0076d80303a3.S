@@ -1,4 +1,4 @@
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	li	a0, 128
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwsub.wv	v8, v8, v11

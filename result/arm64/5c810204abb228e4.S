@@ -1,6 +1,6 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	fcvtzs	v0.2d, v0.2d
-	fcvtzs	v1.2d, v1.2d
+	fmov	d0, x0
+	fcvtzs	x0, d0
 	ret
                                         // -- End function

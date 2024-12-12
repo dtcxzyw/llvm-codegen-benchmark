@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000186(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %0, %1
   %3 = icmp ne i32 %2, 0
@@ -17,7 +17,7 @@ entry:
 ; llvm/optimized/OptTable.cpp.ll
 ; qemu/optimized/system_qdev-monitor.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %0, %1
   %3 = icmp eq i32 %2, 0
@@ -29,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-geonw.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i32 %1) #0 {
+define i1 @func000000000000018c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, %0
   %3 = icmp ne i32 %2, 0

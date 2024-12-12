@@ -7,8 +7,15 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 func0000000000000006:                   # @func0000000000000006
 	testl	%edx, %edx
-	movq	$-1, %rax
-	cmovnsq	%rdi, %rax
+	movl	$64, %eax
+	cmovgq	%rdi, %rax
+	testb	$1, %sil
+	cmovneq	%rdi, %rax
+	retq
+func0000000000000004:                   # @func0000000000000004
+	cmpl	$2048, %edx                     # imm = 0x800
+	movl	$2, %eax
+	cmovaeq	%rdi, %rax
 	testb	$1, %sil
 	cmovneq	%rdi, %rax
 	retq

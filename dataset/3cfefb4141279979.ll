@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; mitsuba3/optimized/x86formatter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = or i32 %3, %0
@@ -24,10 +24,11 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/src.ll
 ; snappy/optimized/snappy.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = sub i32 0, %0
@@ -36,13 +37,13 @@ entry:
 }
 
 ; 1 occurrences:
-; clamav/optimized/mszipd.c.ll
+; boost/optimized/src.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
-  %4 = add nuw nsw i32 %3, %0
-  %5 = icmp ult i32 %4, 12
+  %4 = add nsw i32 %3, %0
+  %5 = icmp ne i32 %4, -1
   ret i1 %5
 }
 
@@ -50,7 +51,7 @@ entry:
 ; clamav/optimized/mszipd.c.ll
 ; linux/optimized/inffast.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = or i32 %3, %0
@@ -76,10 +77,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   %5 = icmp ult i32 %4, 16
   ret i1 %5
 }
@@ -92,7 +93,7 @@ entry:
 define i1 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = icmp sgt i32 %4, -1
   ret i1 %5
 }
@@ -102,33 +103,11 @@ entry:
 ; libjpeg-turbo/optimized/jdlhuff.c.ll
 ; linux/optimized/hexdump.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = icmp slt i32 %4, 0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; linux/optimized/inffast.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %1, %2
-  %4 = add nuw nsw i32 %3, %0
-  %5 = icmp ugt i32 %4, 2
-  ret i1 %5
-}
-
-; 1 occurrences:
-; linux/optimized/sbitmap.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %1, %2
-  %4 = add i32 %3, %0
-  %5 = icmp ult i32 %4, 16
   ret i1 %5
 }
 

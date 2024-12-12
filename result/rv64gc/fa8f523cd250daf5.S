@@ -1,63 +1,282 @@
-.LCPI0_0:
-	.quad	151050438420815295              # 0x218a392cd3d5dbf
-.LCPI0_1:
-	.ascii	"\000\001\002\007\003\r\b\023\004\031\016\034\t\"\024(\005\021\032&\017.\0350\n\037#6\0252)9?\006\f\022\030\033!'\020%-/\036518>\013\027 $,47=\026+3<*;:"
+func0000000000000007:                   # @func0000000000000007
+	srli	a1, a0, 1
+	lui	a2, 349525
+	lui	a3, 209715
+	lui	a4, 61681
+	lui	a5, 4112
+	or	a0, a0, a1
+	addiw	a1, a2, 1365
+	addiw	a2, a3, 819
+	addiw	a3, a4, -241
+	addiw	a4, a5, 257
+	srli	a5, a0, 2
+	or	a0, a0, a5
+	slli	a5, a1, 32
+	add	a1, a1, a5
+	slli	a5, a2, 32
+	add	a2, a2, a5
+	slli	a5, a3, 32
+	add	a3, a3, a5
+	slli	a5, a4, 32
+	add	a4, a4, a5
+	srli	a5, a0, 4
+	or	a0, a0, a5
+	srli	a5, a0, 8
+	or	a0, a0, a5
+	srli	a5, a0, 16
+	or	a0, a0, a5
+	srli	a5, a0, 32
+	or	a0, a0, a5
+	not	a0, a0
+	srli	a5, a0, 1
+	and	a1, a1, a5
+	sub	a0, a0, a1
+	and	a1, a0, a2
+	srli	a0, a0, 2
+	and	a0, a0, a2
+	add	a0, a0, a1
+	srli	a1, a0, 4
+	add	a0, a0, a1
+	and	a0, a0, a3
+	mul	a0, a0, a4
+	srli	a0, a0, 56
+	li	a1, 64
+	sub	a0, a1, a0
+	ret
 func0000000000000003:                   # @func0000000000000003
 	li	a1, 64
 	li	a2, 64
-	beqz	a0, .LBB0_2
-	lui	a2, %hi(.LCPI0_0)
-	ld	a2, %lo(.LCPI0_0)(a2)
-	neg	a3, a0
+	beqz	a0, .LBB1_2
+	srli	a2, a0, 1
+	lui	a3, 349525
+	lui	a4, 209715
+	lui	a5, 61681
+	or	a0, a0, a2
+	addiw	a2, a3, 1365
+	addiw	a3, a4, 819
+	addiw	a4, a5, -241
+	srli	a5, a0, 2
+	or	a0, a0, a5
+	slli	a5, a2, 32
+	add	a2, a2, a5
+	slli	a5, a3, 32
+	add	a3, a3, a5
+	slli	a5, a4, 32
+	add	a4, a4, a5
+	srli	a5, a0, 4
+	or	a0, a0, a5
+	srli	a5, a0, 8
+	or	a0, a0, a5
+	srli	a5, a0, 16
+	or	a0, a0, a5
+	srli	a5, a0, 32
+	or	a0, a0, a5
+	not	a0, a0
+	srli	a5, a0, 1
+	and	a2, a2, a5
+	sub	a0, a0, a2
+	and	a2, a0, a3
+	srli	a0, a0, 2
 	and	a0, a0, a3
-	mul	a0, a0, a2
-	srli	a0, a0, 58
-	lui	a2, %hi(.LCPI0_1)
-	addi	a2, a2, %lo(.LCPI0_1)
+	lui	a3, 4112
+	addiw	a3, a3, 257
 	add	a0, a0, a2
-	lbu	a2, 0(a0)
-.LBB0_2:                                # %cond.end
+	srli	a2, a0, 4
+	add	a0, a0, a2
+	slli	a2, a3, 32
+	and	a0, a0, a4
+	add	a2, a2, a3
+	mul	a2, a0, a2
+	srli	a2, a2, 56
+.LBB1_2:                                # %cond.end
 	sub	a0, a1, a2
 	ret
-.LCPI1_0:
-	.quad	151050438420815295              # 0x218a392cd3d5dbf
-.LCPI1_1:
-	.ascii	"\000\001\002\007\003\r\b\023\004\031\016\034\t\"\024(\005\021\032&\017.\0350\n\037#6\0252)9?\006\f\022\030\033!'\020%-/\036518>\013\027 $,47=\026+3<*;:"
-func0000000000000001:                   # @func0000000000000001
-	beqz	a0, .LBB1_2
-	lui	a1, %hi(.LCPI1_0)
-	ld	a1, %lo(.LCPI1_0)(a1)
-	neg	a2, a0
+func0000000000000005:                   # @func0000000000000005
+	srli	a1, a0, 1
+	lui	a2, 349525
+	lui	a3, 209715
+	lui	a4, 61681
+	lui	a5, 4112
+	or	a0, a0, a1
+	addiw	a1, a2, 1365
+	addiw	a2, a3, 819
+	addiw	a3, a4, -241
+	addiw	a4, a5, 257
+	srli	a5, a0, 2
+	or	a0, a0, a5
+	slli	a5, a1, 32
+	add	a1, a1, a5
+	slli	a5, a2, 32
+	add	a2, a2, a5
+	slli	a5, a3, 32
+	add	a3, a3, a5
+	slli	a5, a4, 32
+	add	a4, a4, a5
+	srli	a5, a0, 4
+	or	a0, a0, a5
+	srli	a5, a0, 8
+	or	a0, a0, a5
+	srli	a5, a0, 16
+	or	a0, a0, a5
+	srli	a5, a0, 32
+	or	a0, a0, a5
+	not	a0, a0
+	srli	a5, a0, 1
+	and	a1, a1, a5
+	sub	a0, a0, a1
+	and	a1, a0, a2
+	srli	a0, a0, 2
 	and	a0, a0, a2
-	mul	a0, a0, a1
-	srli	a0, a0, 58
-	lui	a1, %hi(.LCPI1_1)
-	addi	a1, a1, %lo(.LCPI1_1)
 	add	a0, a0, a1
-	lbu	a0, 0(a0)
+	srli	a1, a0, 4
+	add	a0, a0, a1
+	and	a0, a0, a3
+	mul	a0, a0, a4
+	srli	a0, a0, 56
+	li	a1, 62
+	sub	a0, a1, a0
+	ret
+func000000000000000f:                   # @func000000000000000f
+	srli	a1, a0, 1
+	lui	a2, 349525
+	lui	a3, 209715
+	lui	a4, 61681
+	lui	a5, 4112
+	or	a0, a0, a1
+	addiw	a1, a2, 1365
+	addiw	a2, a3, 819
+	addiw	a3, a4, -241
+	addiw	a4, a5, 257
+	srli	a5, a0, 2
+	or	a0, a0, a5
+	slli	a5, a1, 32
+	add	a1, a1, a5
+	slli	a5, a2, 32
+	add	a2, a2, a5
+	slli	a5, a3, 32
+	add	a3, a3, a5
+	slli	a5, a4, 32
+	add	a4, a4, a5
+	srli	a5, a0, 4
+	or	a0, a0, a5
+	srli	a5, a0, 8
+	or	a0, a0, a5
+	srli	a5, a0, 16
+	or	a0, a0, a5
+	srli	a5, a0, 32
+	or	a0, a0, a5
+	not	a0, a0
+	srli	a5, a0, 1
+	and	a1, a1, a5
+	sub	a0, a0, a1
+	and	a1, a0, a2
+	srli	a0, a0, 2
+	and	a0, a0, a2
+	add	a0, a0, a1
+	srli	a1, a0, 4
+	add	a0, a0, a1
+	and	a0, a0, a3
+	mul	a0, a0, a4
+	srli	a0, a0, 56
+	li	a1, 64
+	sub	a0, a1, a0
+	ret
+func0000000000000001:                   # @func0000000000000001
+	beqz	a0, .LBB4_2
+	srli	a1, a0, 1
+	lui	a2, 349525
+	lui	a3, 209715
+	lui	a4, 61681
+	or	a0, a0, a1
+	addiw	a1, a2, 1365
+	addiw	a2, a3, 819
+	addiw	a3, a4, -241
+	srli	a4, a0, 2
+	or	a0, a0, a4
+	slli	a4, a1, 32
+	add	a1, a1, a4
+	slli	a4, a2, 32
+	add	a2, a2, a4
+	slli	a4, a3, 32
+	add	a3, a3, a4
+	srli	a4, a0, 4
+	or	a0, a0, a4
+	srli	a4, a0, 8
+	or	a0, a0, a4
+	srli	a4, a0, 16
+	or	a0, a0, a4
+	srli	a4, a0, 32
+	or	a0, a0, a4
+	not	a0, a0
+	srli	a4, a0, 1
+	and	a1, a1, a4
+	sub	a0, a0, a1
+	and	a1, a0, a2
+	srli	a0, a0, 2
+	and	a0, a0, a2
+	lui	a2, 4112
+	addiw	a2, a2, 257
+	add	a0, a0, a1
+	srli	a1, a0, 4
+	add	a0, a0, a1
+	slli	a1, a2, 32
+	and	a0, a0, a3
+	add	a1, a1, a2
+	mul	a0, a0, a1
+	srli	a0, a0, 56
 	li	a1, 63
 	sub	a0, a1, a0
 	ret
-.LBB1_2:
+.LBB4_2:
 	li	a0, 64
 	li	a1, 63
 	sub	a0, a1, a0
 	ret
-.LCPI2_0:
-	.quad	151050438420815295              # 0x218a392cd3d5dbf
-.LCPI2_1:
-	.ascii	"\000\001\002\007\003\r\b\023\004\031\016\034\t\"\024(\005\021\032&\017.\0350\n\037#6\0252)9?\006\f\022\030\033!'\020%-/\036518>\013\027 $,47=\026+3<*;:"
-func0000000000000007:                   # @func0000000000000007
-	lui	a1, %hi(.LCPI2_0)
-	ld	a1, %lo(.LCPI2_0)(a1)
-	neg	a2, a0
-	and	a0, a0, a2
-	mul	a0, a0, a1
-	srli	a0, a0, 58
-	lui	a1, %hi(.LCPI2_1)
-	addi	a1, a1, %lo(.LCPI2_1)
-	add	a0, a0, a1
-	lbu	a0, 0(a0)
+func000000000000000b:                   # @func000000000000000b
 	li	a1, 64
-	sub	a0, a1, a0
+	li	a2, 64
+	beqz	a0, .LBB5_2
+	srli	a2, a0, 1
+	lui	a3, 349525
+	lui	a4, 209715
+	lui	a5, 61681
+	or	a0, a0, a2
+	addiw	a2, a3, 1365
+	addiw	a3, a4, 819
+	addiw	a4, a5, -241
+	srli	a5, a0, 2
+	or	a0, a0, a5
+	slli	a5, a2, 32
+	add	a2, a2, a5
+	slli	a5, a3, 32
+	add	a3, a3, a5
+	slli	a5, a4, 32
+	add	a4, a4, a5
+	srli	a5, a0, 4
+	or	a0, a0, a5
+	srli	a5, a0, 8
+	or	a0, a0, a5
+	srli	a5, a0, 16
+	or	a0, a0, a5
+	srli	a5, a0, 32
+	or	a0, a0, a5
+	not	a0, a0
+	srli	a5, a0, 1
+	and	a2, a2, a5
+	sub	a0, a0, a2
+	and	a2, a0, a3
+	srli	a0, a0, 2
+	and	a0, a0, a3
+	lui	a3, 4112
+	addiw	a3, a3, 257
+	add	a0, a0, a2
+	srli	a2, a0, 4
+	add	a0, a0, a2
+	slli	a2, a3, 32
+	and	a0, a0, a4
+	add	a2, a2, a3
+	mul	a2, a0, a2
+	srli	a2, a2, 56
+.LBB5_2:                                # %cond.end
+	sub	a0, a1, a2
 	ret

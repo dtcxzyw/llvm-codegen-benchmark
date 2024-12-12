@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 34 occurrences:
 ; abc/optimized/giaSpeedup.c.ll
 ; assimp/optimized/ObjFileParser.cpp.ll
 ; assimp/optimized/Subdivision.cpp.ll
@@ -8,7 +8,6 @@
 ; clamav/optimized/rs.cpp.ll
 ; clamav/optimized/unzip.c.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
-; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
 ; cpython/optimized/_json.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; graphviz/optimized/QuadTree.c.ll
@@ -44,12 +43,13 @@ entry:
   ret i1 %4
 }
 
-; 33 occurrences:
+; 34 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; darktable/optimized/introspection_colorin.c.ll
 ; flac/optimized/main.c.ll
 ; graphviz/optimized/dtlist.c.ll
+; graphviz/optimized/spring_electrical.c.ll
 ; gromacs/optimized/dgemm.cpp.ll
 ; gromacs/optimized/dorgqr.cpp.ll
 ; gromacs/optimized/dtrmm.cpp.ll
@@ -83,29 +83,27 @@ define i1 @func000000000000000c(i1 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp slt i32 %2, 0
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; llvm/optimized/LiteralSupport.cpp.ll
 ; openjdk/optimized/jcmaster.ll
 ; php/optimized/pcre2_dfa_match.ll
 ; slurm/optimized/burst_buffer_common.ll
-; wolfssl/optimized/rsa.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000010(i1 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp ugt i32 %2, 10
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; openjdk/optimized/type.ll
 ; verilator/optimized/V3EmitCModel.cpp.ll
-; yosys/optimized/maccmap.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000014(i1 %0, i32 %1) #0 {
 entry:
@@ -115,9 +113,12 @@ entry:
   ret i1 %4
 }
 
-; 20 occurrences:
+; 25 occurrences:
 ; abc/optimized/mfsResub.c.ll
 ; abseil-cpp/optimized/charconv_parse.cc.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
 ; eastl/optimized/TestRandom.cpp.ll
 ; eastl/optimized/TestString.cpp.ll
 ; flac/optimized/encode.c.ll
@@ -136,6 +137,8 @@ entry:
 ; ncnn/optimized/gemm_x86_avx512.cpp.ll
 ; ncnn/optimized/gemm_x86_fma.cpp.ll
 ; wasmtime-rs/optimized/kpzz8s92vshq6im.ll
+; zed-rs/optimized/5xyjbgzjrjfd06sknyxfrytq2.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i1 %0, i32 %1) #0 {
 entry:

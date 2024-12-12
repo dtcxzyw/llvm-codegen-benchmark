@@ -4,7 +4,7 @@
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; minetest/optimized/emerge.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i16 %1, i32 %2) #0 {
+define i32 @func0000000000000026(i32 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = icmp slt i16 %1, 0
@@ -36,7 +36,7 @@ entry:
 ; linux/optimized/deftree.ll
 ; wireshark/optimized/packet-ospf.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i16 %1, i32 %2) #0 {
+define i32 @func0000000000000024(i32 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = icmp ult i16 %1, 257
@@ -57,7 +57,7 @@ entry:
 ; quickjs/optimized/quickjs.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i16 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -2
   %4 = icmp eq i16 %1, 223
@@ -70,7 +70,7 @@ entry:
 ; quickjs/optimized/quickjs.ll
 ; wireshark/optimized/packet-v5ua.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i16 %1, i32 %2) #0 {
+define i32 @func0000000000000061(i32 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 2
   %4 = icmp eq i16 %1, -9216
@@ -92,7 +92,7 @@ entry:
 ; 1 occurrences:
 ; ocio/optimized/MathUtils.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i16 %1, i32 %2) #0 {
+define i32 @func0000000000000064(i32 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 32768
   %4 = icmp ult i16 %1, 32767

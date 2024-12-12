@@ -1,7 +1,11 @@
 
-; 444 occurrences:
+; 456 occurrences:
 ; actix-rs/optimized/2d9c72efneckaqzp.ll
 ; arrow/optimized/exec.cc.ll
+; boost/optimized/any_params_iter.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/within.ll
 ; bullet3/optimized/b3VoronoiSimplexSolver.ll
 ; bullet3/optimized/btVoronoiSimplexSolver.ll
 ; clamav/optimized/arcread.cpp.ll
@@ -150,6 +154,7 @@
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luau/optimized/Unifier2.cpp.ll
+; lvgl/optimized/lv_slider.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
@@ -208,7 +213,6 @@
 ; postgres/optimized/zic.ll
 ; proj/optimized/transformation.cpp.ll
 ; proxygen/optimized/HTTPTransaction.cpp.ll
-; qdrant-rs/optimized/i0sjm53t1vzpf3k.ll
 ; qemu/optimized/block_qcow2-refcount.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; quantlib/optimized/multiproductcomposite.ll
@@ -240,6 +244,9 @@
 ; spike/optimized/triggers.ll
 ; sqlite/optimized/sqlite3.ll
 ; tev/optimized/ImageViewer.cpp.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
+; turborepo-rs/optimized/cfoasa6bvi7hpmvo2g502kghe.ll
 ; typst-rs/optimized/1u1bncyzo9yu1omp.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
 ; typst-rs/optimized/2hy987uth4sp8yoc.ll
@@ -444,6 +451,11 @@
 ; z3/optimized/interval_mpq.cpp.ll
 ; z3/optimized/nla_intervals.cpp.ll
 ; z3/optimized/spacer_context.cpp.ll
+; zed-rs/optimized/1oqbug516qe1j9jzuop2d87nk.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/ak4ykc5o2q07hp1jptfv0x87c.ll
+; zed-rs/optimized/d1rzz8mrspct74ymgl9sm92kt.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, i1 %1) #0 {
 entry:

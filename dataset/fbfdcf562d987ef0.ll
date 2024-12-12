@@ -48,7 +48,19 @@ entry:
   %2 = lshr exact i64 %1, 3
   %3 = trunc i64 %2 to i32
   %4 = xor i32 %3, -1
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
+  ret i32 %5
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000035(i32 %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 46
+  %3 = trunc nuw nsw i64 %2 to i32
+  %4 = add nsw i32 %0, 248
+  %5 = sub nsw i32 %4, %3
   ret i32 %5
 }
 
@@ -109,7 +121,7 @@ entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
   %4 = xor i32 %3, -1
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 

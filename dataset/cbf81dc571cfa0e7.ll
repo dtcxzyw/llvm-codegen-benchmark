@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 25 occurrences:
 ; assimp/optimized/Base64.cpp.ll
 ; clamav/optimized/ishield.c.ll
 ; cmake/optimized/hex.c.ll
@@ -20,7 +20,6 @@
 ; wireshark/optimized/packet-diameter_3gpp.c.ll
 ; wireshark/optimized/packet-dvbci.c.ll
 ; wireshark/optimized/packet-etsi_card_app_toolkit.c.ll
-; wireshark/optimized/packet-gprscdr.c.ll
 ; wireshark/optimized/packet-gsm_a_dtap.c.ll
 ; wireshark/optimized/packet-gsm_sms.c.ll
 ; wireshark/optimized/packet-gtp.c.ll
@@ -30,11 +29,11 @@
 define i8 @func0000000000000003(i8 %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %1, 4
-  %3 = add nuw nsw i8 %2, %0
+  %3 = add nuw nsw i8 %0, %2
   ret i8 %3
 }
 
-; 21 occurrences:
+; 25 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; icu/optimized/collationtailoring.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
@@ -56,6 +55,10 @@ entry:
 ; wasmtime-rs/optimized/35vn1d6iqx9eifvi.ll
 ; wasmtime-rs/optimized/456j0x8j3xyjpk7h.ll
 ; wireshark/optimized/packet-gsm_rlcmac.c.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0, i8 %1) #0 {
 entry:

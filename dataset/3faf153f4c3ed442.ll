@@ -1,5 +1,5 @@
 
-; 34 occurrences:
+; 33 occurrences:
 ; cmake/optimized/pipe.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -21,7 +21,6 @@
 ; node/optimized/pipe.ll
 ; opencv/optimized/boost.cpp.ll
 ; opencv/optimized/container_avi.cpp.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; openjdk/optimized/barrierSetC2.ll
 ; openjdk/optimized/c1_MacroAssembler_x86.ll
 ; openssl/optimized/libcrypto-lib-x509_vfy.ll

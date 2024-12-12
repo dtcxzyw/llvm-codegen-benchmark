@@ -4,7 +4,7 @@
 	.zero	16,4
 .LCPI0_2:
 	.byte	2                               # 0x2
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	vpbroadcastb	.LCPI0_2(%rip), %xmm2   # xmm2 = [2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]
 	vpaddb	%xmm2, %xmm1, %xmm1
 	vpaddb	%xmm2, %xmm0, %xmm0

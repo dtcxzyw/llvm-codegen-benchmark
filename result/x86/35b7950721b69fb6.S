@@ -10,13 +10,13 @@ func0000000000000004:                   # @func0000000000000004
 	cmovnel	%edi, %eax
 	incl	%eax
 	retq
-func00000000000000e9:                   # @func00000000000000e9
+func00000000000001a9:                   # @func00000000000001a9
 	leal	(%rsi,%rdx), %eax
 	cmpl	$15, %edi
 	cmovll	%edi, %eax
 	addl	$3, %eax
 	retq
-func00000000000000e8:                   # @func00000000000000e8
+func00000000000001a8:                   # @func00000000000001a8
 	leal	(%rsi,%rdx), %eax
 	cmpl	$15, %edi
 	cmovll	%edi, %eax

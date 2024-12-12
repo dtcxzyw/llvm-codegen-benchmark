@@ -128,7 +128,7 @@ entry:
   %4 = add nuw nsw i32 %3, 459208
   %5 = shl i32 %1, 12
   %6 = add i32 %4, %5
-  %7 = add i32 %6, %0
+  %7 = add i32 %0, %6
   ret i32 %7
 }
 

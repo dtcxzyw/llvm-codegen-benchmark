@@ -41,23 +41,23 @@ func0000000000000003:                   # @func0000000000000003
 	setb	%al
 	retq
 .LCPI6_0:
+	.long	0x3f800000                      # float 1
+func0000000000000008:                   # @func0000000000000008
+	vaddss	.LCPI6_0(%rip), %xmm1, %xmm1
+	vcmpeqss	%xmm0, %xmm1, %k0
+	kmovd	%k0, %eax
+	retq
+.LCPI7_0:
 	.long	0xc0400000                      # float -3
 func000000000000000a:                   # @func000000000000000a
-	vaddss	.LCPI6_0(%rip), %xmm1, %xmm1
+	vaddss	.LCPI7_0(%rip), %xmm1, %xmm1
 	vucomiss	%xmm1, %xmm0
 	setae	%al
 	retq
-.LCPI7_0:
+.LCPI8_0:
 	.long	0x38d1b717                      # float 9.99999974E-5
 func000000000000000b:                   # @func000000000000000b
-	vaddss	.LCPI7_0(%rip), %xmm1, %xmm1
+	vaddss	.LCPI8_0(%rip), %xmm1, %xmm1
 	vucomiss	%xmm0, %xmm1
 	setbe	%al
-	retq
-.LCPI8_0:
-	.long	0x3f800000                      # float 1
-func0000000000000008:                   # @func0000000000000008
-	vaddss	.LCPI8_0(%rip), %xmm1, %xmm1
-	vcmpeqss	%xmm0, %xmm1, %k0
-	kmovd	%k0, %eax
 	retq

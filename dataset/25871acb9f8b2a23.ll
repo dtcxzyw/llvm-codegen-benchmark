@@ -25,7 +25,7 @@ entry:
   %2 = udiv i16 %1, 3
   %3 = zext nneg i16 %2 to i32
   %4 = shl nuw nsw i32 %3, 8
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -38,7 +38,7 @@ entry:
   %2 = udiv i16 %1, 255
   %3 = zext nneg i16 %2 to i32
   %4 = shl nuw i32 %3, 24
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -51,7 +51,7 @@ entry:
   %2 = udiv i16 %1, 255
   %3 = zext nneg i16 %2 to i32
   %4 = shl nuw i32 %3, 24
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 

@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 28 occurrences:
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; hermes/optimized/BytecodeGenerator.cpp.ll
 ; libquic/optimized/p224-64.c.ll
@@ -17,6 +17,7 @@
 ; llvm/optimized/RawCommentList.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/X86Disassembler.cpp.ll
+; lvgl/optimized/lv_chart.ll
 ; qemu/optimized/hw_block_m25p80.c.ll
 ; qemu/optimized/hw_pci_pcie_doe.c.ll
 ; qemu/optimized/target_riscv_translate.c.ll

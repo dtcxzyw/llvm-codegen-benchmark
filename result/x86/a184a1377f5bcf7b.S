@@ -9,10 +9,10 @@ func0000000000000004:                   # @func0000000000000004
 	retq
 func0000000000000006:                   # @func0000000000000006
 	sarq	$32, %rdx
+	xorl	%eax, %eax
 	testb	$1, %sil
-	movl	$1048576, %eax                  # imm = 0x100000
 	cmovneq	%rdx, %rax
-	addq	%rdi, %rax
+	leaq	(%rdi,%rax,4), %rax
 	retq
 func0000000000000002:                   # @func0000000000000002
 	sarq	$32, %rdx

@@ -3,8 +3,8 @@ func0000000000000006:                   # @func0000000000000006
 	testl	%edx, %edx
 	cmovnsl	%edx, %eax
 	sarl	$2, %eax
-	cmpl	%esi, %eax
-	setg	%al
+	cmpl	%eax, %esi
+	setl	%al
 	andb	%dil, %al
 	retq
 func0000000000000001:                   # @func0000000000000001
@@ -12,7 +12,7 @@ func0000000000000001:                   # @func0000000000000001
 	shrl	$31, %eax
 	addl	%edx, %eax
 	sarl	%eax
-	cmpl	%esi, %eax
+	cmpl	%eax, %esi
 	sete	%al
 	andb	%dil, %al
 	retq

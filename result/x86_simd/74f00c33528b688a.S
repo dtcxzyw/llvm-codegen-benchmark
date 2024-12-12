@@ -1,24 +1,57 @@
 .LCPI0_0:
 	.quad	63                              # 0x3f
 .LCPI0_1:
-	.quad	1                               # 0x1
+	.byte	1                               # 0x1
+	.byte	1                               # 0x1
+	.byte	1                               # 0x1
+	.byte	1                               # 0x1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
 .LCPI0_2:
-	.zero	16,1
-func0000000000000042:                   # @func0000000000000042
+	.zero	4,1
+func0000000000000082:                   # @func0000000000000082
 	vpandq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
+	vpternlogq	$15, %ymm0, %ymm0, %ymm0 # ymm0 = ~ymm0
 	vpsrlvq	%ymm1, %ymm0, %ymm0
-	vptestnmq	.LCPI0_1(%rip){1to4}, %ymm0, %k1
-	vmovdqu8	.LCPI0_2(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+	vpmovqb	%ymm0, %xmm0
+	vpandd	.LCPI0_2(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI1_0:
 	.quad	63                              # 0x3f
 .LCPI1_1:
-	.quad	1                               # 0x1
-func0000000000000058:                   # @func0000000000000058
+	.byte	1                               # 0x1
+	.byte	1                               # 0x1
+	.byte	1                               # 0x1
+	.byte	1                               # 0x1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+.LCPI1_2:
+	.zero	4,1
+func0000000000000098:                   # @func0000000000000098
 	vpandq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm1
 	vpsrlvq	%ymm1, %ymm0, %ymm0
-	vpandq	.LCPI1_1(%rip){1to4}, %ymm0, %ymm0
 	vpmovqb	%ymm0, %xmm0
+	vpandd	.LCPI1_2(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq

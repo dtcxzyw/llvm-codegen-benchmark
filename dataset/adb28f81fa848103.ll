@@ -15,7 +15,7 @@
 define i32 @func000000000000000b(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = shl nuw nsw i32 %3, 2
   %5 = and i32 %4, 2147483640
   ret i32 %5

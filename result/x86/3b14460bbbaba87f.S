@@ -1,16 +1,30 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	leaq	56(%rsi), %rcx
 	xorl	%eax, %eax
 	testb	$1, %dil
 	cmoveq	%rcx, %rax
 	addq	$24, %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	leaq	-16(%rsi), %rcx
 	xorl	%eax, %eax
 	testb	$1, %dil
 	cmoveq	%rcx, %rax
 	addq	$16, %rax
+	retq
+func000000000000000f:                   # @func000000000000000f
+	leaq	248(%rsi), %rcx
+	xorl	%eax, %eax
+	testb	$1, %dil
+	cmoveq	%rcx, %rax
+	addq	$8, %rax
+	retq
+func000000000000000e:                   # @func000000000000000e
+	leaq	16(%rsi), %rcx
+	xorl	%eax, %eax
+	testb	$1, %dil
+	cmoveq	%rcx, %rax
+	addq	$-16, %rax
 	retq
 func0000000000000008:                   # @func0000000000000008
 	leaq	-16(%rsi), %rcx
@@ -19,19 +33,19 @@ func0000000000000008:                   # @func0000000000000008
 	cmoveq	%rcx, %rax
 	addq	$64, %rax
 	retq
-func000000000000000b:                   # @func000000000000000b
+func000000000000000a:                   # @func000000000000000a
 	leaq	-24(%rsi), %rcx
 	xorl	%eax, %eax
 	testb	$1, %dil
 	cmoveq	%rcx, %rax
-	addq	$56, %rax
+	addq	$-32, %rax
 	retq
-func000000000000000f:                   # @func000000000000000f
-	leaq	40(%rsi), %rcx
+func000000000000000c:                   # @func000000000000000c
+	leaq	616(%rsi), %rcx
 	xorl	%eax, %eax
 	testb	$1, %dil
 	cmoveq	%rcx, %rax
-	addq	$8, %rax
+	addq	$-616, %rax                     # imm = 0xFD98
 	retq
 func0000000000000000:                   # @func0000000000000000
 	leaq	1(%rsi), %rcx

@@ -19,12 +19,12 @@ func000000000000000b:                   # @func000000000000000b
 	vzeroupper
 	retq
 func0000000000000008:                   # @func0000000000000008
-	vcmpeqpd	%ymm0, %ymm1, %k0
+	vcmpeqpd	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
 func0000000000000007:                   # @func0000000000000007
-	vcmpneqpd	%ymm0, %ymm1, %k0
+	vcmpneqpd	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
@@ -39,7 +39,7 @@ func000000000000000a:                   # @func000000000000000a
 	vzeroupper
 	retq
 func0000000000000001:                   # @func0000000000000001
-	vcmpunordpd	%ymm0, %ymm1, %k0
+	vcmpunordpd	%ymm1, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq

@@ -23,9 +23,9 @@ func0000000000000004:                   # @func0000000000000004
 	vxorpd	%xmm1, %xmm1, %xmm1
 	xorl	%ecx, %ecx
 	vucomisd	%xmm1, %xmm0
-	seta	%cl
+	setbe	%cl
 	incl	%ecx
+	xorl	%eax, %eax
 	testb	$1, %dil
-	movl	$15, %eax
 	cmovnel	%ecx, %eax
 	retq

@@ -1,5 +1,5 @@
 
-; 105 occurrences:
+; 108 occurrences:
 ; abc/optimized/abcAuto.c.ll
 ; abc/optimized/abcBlifMv.c.ll
 ; abc/optimized/abcCas.c.ll
@@ -73,6 +73,7 @@
 ; lightgbm/optimized/objective_function.cpp.ll
 ; lightgbm/optimized/sample_strategy.cpp.ll
 ; lua/optimized/lobject.ll
+; lvgl/optimized/lv_animimage.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; nuklear/optimized/unity.c.ll
@@ -83,6 +84,7 @@
 ; opencv/optimized/calibration.cpp.ll
 ; opencv/optimized/dpm_cascade.cpp.ll
 ; opencv/optimized/imgwarp.cpp.ll
+; opencv/optimized/lkpyramid.cpp.ll
 ; opencv/optimized/onlineBoosting.cpp.ll
 ; opencv/optimized/slic.cpp.ll
 ; opencv/optimized/sparse_match_interpolators.cpp.ll
@@ -105,6 +107,7 @@
 ; slurm/optimized/parse_time.ll
 ; stb/optimized/stb_sprintf.c.ll
 ; stb/optimized/stb_truetype.c.ll
+; velox/optimized/Re2Functions.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:

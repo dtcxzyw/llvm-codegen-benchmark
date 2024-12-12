@@ -1,5 +1,6 @@
 
-; 161 occurrences:
+; 162 occurrences:
+; boost/optimized/ipc_reliable_message_queue.ll
 ; cvc5/optimized/term_formula_removal.cpp.ll
 ; folly/optimized/TimeoutQueue.cpp.ll
 ; freetype/optimized/truetype.c.ll
@@ -162,15 +163,17 @@
 ; wireshark/optimized/sequence_diagram.cpp.ll
 ; wireshark/optimized/show_packet_bytes_dialog.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, ptr null, ptr %1
-  %5 = icmp eq ptr %4, %0
+  %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 
-; 10 occurrences:
+; 12 occurrences:
+; boost/optimized/graphml.ll
+; boost/optimized/settings_parser.ll
 ; freetype/optimized/truetype.c.ll
 ; hermes/optimized/Dumper.cpp.ll
 ; icu/optimized/ustrtrns.ll
@@ -182,7 +185,7 @@ entry:
 ; llvm/optimized/StackSafetyAnalysis.cpp.ll
 ; redis/optimized/setcpuaffinity.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000024(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp ugt ptr %1, %0
@@ -202,11 +205,11 @@ entry:
 ; llvm/optimized/ObjCARCContract.cpp.ll
 ; llvm/optimized/SemaCUDA.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000002c(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, ptr null, ptr %1
-  %5 = icmp ne ptr %4, %0
+  %5 = icmp ne ptr %0, %4
   ret i1 %5
 }
 
@@ -214,11 +217,11 @@ entry:
 ; hermes/optimized/DateUtil.cpp.ll
 ; icu/optimized/ustrtrns.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000028(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, ptr null, ptr %1
-  %5 = icmp ult ptr %4, %0
+  %5 = icmp ugt ptr %0, %4
   ret i1 %5
 }
 

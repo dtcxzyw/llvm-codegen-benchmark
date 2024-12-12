@@ -6,7 +6,7 @@ define i8 @func000000000000003a(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw nsw i32 1, %2
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = trunc nuw i32 %4 to i8
   ret i8 %5
 }
@@ -18,7 +18,7 @@ define i8 @func000000000000003b(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
   %3 = shl nuw nsw i32 1, %2
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = trunc nuw nsw i32 %4 to i8
   ret i8 %5
 }

@@ -1,5 +1,7 @@
 
 ; 206 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/topology.ll
 ; cmake/optimized/cmComputeLinkDepends.cxx.ll
 ; cmake/optimized/cmFindPackageCommand.cxx.ll
 ; cmake/optimized/cmFortranParserImpl.cxx.ll
@@ -127,7 +129,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -203,11 +204,10 @@
 ; yaml-cpp/optimized/simplekey.cpp.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/preproc.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000351(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000006a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 7
   %4 = add nsw i64 %3, %0
@@ -217,25 +217,12 @@ entry:
   ret i1 %7
 }
 
-; 1 occurrences:
-; minetest/optimized/profilergraph.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000254(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = mul nsw i64 %2, 10
-  %4 = add i64 %3, %1
-  %5 = sdiv exact i64 %0, 48
-  %6 = add nsw i64 %5, %4
-  %7 = icmp ult i64 %6, 10
-  ret i1 %7
-}
-
 ; 3 occurrences:
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
 ; opencv/optimized/persistence.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000358(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000006a8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 21
   %4 = add nsw i64 %3, %0
@@ -248,10 +235,10 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/ng_repeat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000208(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, 6
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = sdiv exact i64 %1, 80
   %6 = add i64 %4, %5
   %7 = icmp ugt i64 %6, 100
@@ -262,7 +249,7 @@ entry:
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
 ; hyperscan/optimized/slot_manager.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000354(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000006a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 5
   %4 = add nsw i64 %3, %0

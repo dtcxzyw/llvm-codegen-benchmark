@@ -1,23 +1,11 @@
 
 ; 1 occurrences:
-; postgres/optimized/localtime.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %2, 7
-  %4 = select i1 %1, i32 %3, i32 %2
-  %5 = sub i32 %0, %4
-  %6 = add nsw i32 %5, 7
-  ret i32 %6
-}
-
-; 1 occurrences:
 ; redis/optimized/lauxlib.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000030(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext i1 %1 to i32
-  %4 = add nuw nsw i32 %3, %2
+  %4 = add nuw nsw i32 %2, %3
   %5 = sub i32 %0, %4
   %6 = add i32 %5, 1
   ret i32 %6

@@ -1,5 +1,5 @@
 
-; 54 occurrences:
+; 55 occurrences:
 ; arrow/optimized/row_encoder.cc.ll
 ; cmake/optimized/cmCTest.cxx.ll
 ; cmake/optimized/cmDebuggerAdapter.cxx.ll
@@ -47,6 +47,7 @@
 ; postgres/optimized/mcv.ll
 ; slurm/optimized/job_scheduler.ll
 ; spike/optimized/debug_module.ll
+; spike/optimized/triggers.ll
 ; vcpkg/optimized/binarycaching.cpp.ll
 ; yosys/optimized/abc.ll
 ; yosys/optimized/genrtlil.ll

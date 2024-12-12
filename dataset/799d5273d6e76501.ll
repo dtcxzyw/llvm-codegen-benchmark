@@ -82,7 +82,7 @@ entry:
   ret i32 %4
 }
 
-; 43 occurrences:
+; 40 occurrences:
 ; cmake/optimized/mprintf.c.ll
 ; curl/optimized/libcurl_la-mprintf.ll
 ; faiss/optimized/NNDescent.cpp.ll
@@ -106,10 +106,6 @@ entry:
 ; ncnn/optimized/roialign_x86_fma.cpp.ll
 ; oiio/optimized/texture3d.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
-; openblas/optimized/lapacke_cgb_nancheck.c.ll
-; openblas/optimized/lapacke_dgb_nancheck.c.ll
-; openblas/optimized/lapacke_sgb_nancheck.c.ll
-; openblas/optimized/lapacke_zgb_nancheck.c.ll
 ; opencv/optimized/bgfg_gaussmix.cpp.ll
 ; opencv/optimized/finder_pattern_finder.cpp.ll
 ; opencv/optimized/kdtree.cpp.ll
@@ -120,6 +116,7 @@ entry:
 ; openmpi/optimized/coll_base_allgatherv.ll
 ; openmpi/optimized/netpatterns_knomial_tree.ll
 ; openusd/optimized/decodeframe.c.ll
+; postgres/optimized/float.ll
 ; postgres/optimized/rangetypes_typanalyze.ll
 ; postgres/optimized/varlena.ll
 ; qemu/optimized/hw_ide_atapi.c.ll
@@ -134,7 +131,7 @@ entry:
   ret i32 %4
 }
 
-; 21 occurrences:
+; 20 occurrences:
 ; abc/optimized/giaResub.c.ll
 ; darktable/optimized/introspection_lens.cc.ll
 ; freetype/optimized/smooth.c.ll
@@ -155,7 +152,6 @@ entry:
 ; openjdk/optimized/stringDedupTable.ll
 ; openusd/optimized/tessellation.cpp.ll
 ; postgres/optimized/rangetypes_gist.ll
-; proj/optimized/io.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -164,26 +160,24 @@ entry:
   ret i32 %4
 }
 
-; 19 occurrences:
+; 17 occurrences:
 ; assimp/optimized/o3dgcArithmeticCodec.cpp.ll
 ; icu/optimized/ucnv_u16.ll
 ; jemalloc/optimized/tcache.ll
 ; jemalloc/optimized/tcache.pic.ll
 ; jemalloc/optimized/tcache.sym.ll
 ; jq/optimized/jv.ll
-; linux/optimized/8250_pci.ll
-; linux/optimized/flow_dissector.ll
 ; linux/optimized/intel_backlight.ll
 ; linux/optimized/ip_output.ll
 ; linux/optimized/kyber-iosched.ll
 ; linux/optimized/scatterlist.ll
-; linux/optimized/serial_core.ll
 ; llvm/optimized/DependenceAnalysis.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; postgres/optimized/hashutil.ll
 ; redis/optimized/tcache.ll
 ; redis/optimized/tcache.sym.ll
 ; sqlite/optimized/sqlite3.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -192,7 +186,7 @@ entry:
   ret i32 %4
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; hwloc/optimized/lstopo-lstopo-draw.ll
 ; hwloc/optimized/lstopo_no_graphics-lstopo-draw.ll
@@ -203,8 +197,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; tinyrenderer/optimized/main.cpp.ll
 ; tinyrenderer/optimized/our_gl.cpp.ll
-; wireshark/optimized/packet-rtp-ed137.c.ll
-; wolfssl/optimized/tls.c.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -221,6 +214,29 @@ entry:
   %.not = icmp ult i32 %1, %2
   %3 = select i1 %.not, i32 %1, i32 %0
   ret i32 %3
+}
+
+; 2 occurrences:
+; wireshark/optimized/packet-rtp-ed137.c.ll
+; wolfssl/optimized/tls.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %1, %2
+  %4 = select i1 %3, i32 %0, i32 %1
+  ret i32 %4
+}
+
+; 3 occurrences:
+; linux/optimized/8250_pci.ll
+; linux/optimized/flow_dissector.ll
+; linux/optimized/serial_core.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i32 %1, %2
+  %4 = select i1 %3, i32 %0, i32 %1
+  ret i32 %4
 }
 
 ; 3 occurrences:

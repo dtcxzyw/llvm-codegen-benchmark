@@ -1,6 +1,7 @@
 
-; 21 occurrences:
+; 20 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/crtmgr.c.ll
 ; clamav/optimized/pe.c.ll
 ; cpython/optimized/_datetimemodule.ll
@@ -11,8 +12,6 @@
 ; jq/optimized/decNumber.ll
 ; linux/optimized/gss_generic_token.ll
 ; openblas/optimized/dgghd3.c.ll
-; openblas/optimized/dlatms.c.ll
-; openblas/optimized/dlatmt.c.ll
 ; opencv/optimized/btv_l1.cpp.ll
 ; openjdk/optimized/gtk2_interface.ll
 ; postgres/optimized/strftime.ll
@@ -32,13 +31,13 @@ entry:
 
 ; 50 occurrences:
 ; cpython/optimized/_datetimemodule.ll
-; gromacs/optimized/slasq5.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-static.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; hermes/optimized/Sorting.cpp.ll
 ; hyperscan/optimized/ng_repeat.cpp.ll
+; lief/optimized/Builder.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/DivisionByConstantInfo.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
@@ -113,11 +112,9 @@ entry:
   ret i32 %4
 }
 
-; 15 occurrences:
+; 13 occurrences:
 ; gromacs/optimized/dlasq5.cpp.ll
 ; gromacs/optimized/dlasq6.cpp.ll
-; gromacs/optimized/muParserBase.cpp.ll
-; gromacs/optimized/slasq5.cpp.ll
 ; gromacs/optimized/slasq6.cpp.ll
 ; icu/optimized/collationweights.ll
 ; meshlab/optimized/qualitymapperdialog.cpp.ll
@@ -138,22 +135,13 @@ entry:
   ret i32 %4
 }
 
-; 15 occurrences:
+; 6 occurrences:
 ; abc/optimized/ifDec16.c.ll
 ; opencv/optimized/audio_spectrogram.cpp.ll
 ; openjdk/optimized/cmstypes.ll
 ; openusd/optimized/blend_a64_mask.c.ll
 ; openusd/optimized/convolve.c.ll
-; openusd/optimized/warped_motion.c.ll
 ; wireshark/optimized/packet-rsvp.c.ll
-; zfp/optimized/decode1d.c.ll
-; zfp/optimized/decode1f.c.ll
-; zfp/optimized/decode2d.c.ll
-; zfp/optimized/decode2f.c.ll
-; zfp/optimized/decode3d.c.ll
-; zfp/optimized/decode3f.c.ll
-; zfp/optimized/decode4d.c.ll
-; zfp/optimized/decode4f.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
 entry:

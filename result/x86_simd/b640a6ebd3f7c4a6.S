@@ -14,3 +14,8 @@ func0000000000000000:                   # @func0000000000000000
 	vpaddd	.LCPI1_0(%rip){1to4}, %xmm0, %xmm0
 	vpmovsxdq	%xmm0, %ymm0
 	retq
+func000000000000009d:                   # @func000000000000009d
+	vpaddd	%xmm0, %xmm2, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
+	vpmovsxdq	%xmm0, %ymm0
+	retq

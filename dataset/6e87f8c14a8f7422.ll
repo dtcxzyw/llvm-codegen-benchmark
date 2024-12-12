@@ -8,7 +8,7 @@ entry:
   %4 = and i32 %1, 4607
   %.masked = and i32 %3, 7680
   %5 = or i32 %4, %.masked
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   ret i32 %6
 }
 
@@ -21,7 +21,7 @@ entry:
   %3 = and i32 %2, 130154495
   %4 = shl nuw i32 %1, 27
   %5 = or disjoint i32 %4, %3
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   ret i32 %6
 }
 
@@ -59,7 +59,7 @@ entry:
   %3 = and i32 %2, 16777215
   %4 = shl i32 %1, 25
   %5 = or disjoint i32 %4, %3
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   ret i32 %6
 }
 

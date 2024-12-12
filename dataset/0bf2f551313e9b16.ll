@@ -1,6 +1,8 @@
 
-; 434 occurrences:
+; 440 occurrences:
+; coreutils-rs/optimized/2g9ijtjos2xwh9zs.ll
 ; cpython/optimized/obmalloc.ll
+; eastl/optimized/TestMemory.cpp.ll
 ; hermes/optimized/Array.cpp.ll
 ; hermes/optimized/HermesBuiltin.cpp.ll
 ; hermes/optimized/JSParserImpl.cpp.ll
@@ -11,7 +13,6 @@
 ; linux/optimized/dst.ll
 ; linux/optimized/ip_options.ll
 ; linux/optimized/ip_tunnel.ll
-; linux/optimized/loopback.ll
 ; linux/optimized/neighbour.ll
 ; linux/optimized/nf_queue.ll
 ; linux/optimized/posix-timers.ll
@@ -132,6 +133,7 @@
 ; llvm/optimized/MallocSizeofChecker.cpp.ll
 ; llvm/optimized/Mangle.cpp.ll
 ; llvm/optimized/MemProfContextDisambiguation.cpp.ll
+; llvm/optimized/MemoryDependenceAnalysis.cpp.ll
 ; llvm/optimized/MicrosoftMangle.cpp.ll
 ; llvm/optimized/ModuleBuilder.cpp.ll
 ; llvm/optimized/NSAPI.cpp.ll
@@ -349,6 +351,8 @@
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/shape.ll
 ; ruby/optimized/vm.ll
+; rust-analyzer-rs/optimized/1wws471dcmaaem6a.ll
+; rust-analyzer-rs/optimized/4n4kpy0miblxvsjy.ll
 ; verilator/optimized/V3Active.cpp.ll
 ; verilator/optimized/V3ActiveTop.cpp.ll
 ; verilator/optimized/V3Assert.cpp.ll
@@ -434,6 +438,8 @@
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; wasmtime-rs/optimized/2dcgoeji2y2j2nl0.ll
 ; wireshark/optimized/packet-bpv7.c.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/8tfe8wg5a4084yrh8oiqzl6uy.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i1 %0, i64 %1) #0 {
 entry:

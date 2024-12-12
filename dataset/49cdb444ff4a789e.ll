@@ -1,7 +1,8 @@
 
-; 51 occurrences:
+; 52 occurrences:
 ; arrow/optimized/list_util.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/approximately_equals.ll
 ; cpython/optimized/obmalloc.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; eastl/optimized/TestSort.cpp.ll
@@ -59,7 +60,8 @@ entry:
   ret i64 %2
 }
 
-; 90 occurrences:
+; 85 occurrences:
+; boost/optimized/monotonic_buffer_resource.ll
 ; folly/optimized/Request.cpp.ll
 ; folly/optimized/SharedMutex.cpp.ll
 ; hyperscan/optimized/fdr_confirm_compile.cpp.ll
@@ -78,7 +80,6 @@ entry:
 ; mitsuba3/optimized/merge.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/tensor.cpp.ll
@@ -123,13 +124,8 @@ entry:
 ; mold/optimized/output-chunks.cc.SH4.cc.ll
 ; mold/optimized/output-chunks.cc.SPARC64.cc.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
-; openjdk/optimized/chunklevel.ll
-; openjdk/optimized/g1CardSet.ll
-; openjdk/optimized/g1CodeRootSet.ll
 ; openjdk/optimized/g1HeapRegion.ll
 ; openjdk/optimized/shenandoahHeap.ll
-; openjdk/optimized/xGlobals_x86.ll
-; openjdk/optimized/zAddress_x86.ll
 ; postgres/optimized/basebackup_incremental.ll
 ; postgres/optimized/blkreftable.ll
 ; postgres/optimized/blkreftable_shlib.ll
@@ -161,6 +157,7 @@ entry:
 ; 105 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
+; boost/optimized/pool_resource.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/DynamicParser.cpp.ll
 ; folly/optimized/EventBaseLocal.cpp.ll
@@ -191,7 +188,6 @@ entry:
 ; llvm/optimized/InferAddressSpaces.cpp.ll
 ; llvm/optimized/Instruction.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/ScaledNumber.cpp.ll
@@ -272,7 +268,8 @@ entry:
   ret i64 %2
 }
 
-; 43 occurrences:
+; 44 occurrences:
+; boost/optimized/pool_resource.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/EventBaseLocal.cpp.ll
 ; folly/optimized/LogConfigParser.cpp.ll

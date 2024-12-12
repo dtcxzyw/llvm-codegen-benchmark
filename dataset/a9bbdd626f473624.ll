@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 23 occurrences:
 ; clamav/optimized/autoit.c.ll
 ; cpython/optimized/_randommodule.ll
 ; eastl/optimized/EARandom.cpp.ll
@@ -16,13 +16,10 @@
 ; meshlab/optimized/meshfilter.cpp.ll
 ; opencv/optimized/rand.cpp.ll
 ; openssl/optimized/libcrypto-lib-des_enc.ll
-; openssl/optimized/libcrypto-lib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-lib-set_key.ll
 ; openssl/optimized/libcrypto-shlib-des_enc.ll
-; openssl/optimized/libcrypto-shlib-fcrypt_b.ll
 ; openssl/optimized/libcrypto-shlib-set_key.ll
 ; openssl/optimized/liblegacy-lib-des_enc.ll
-; openssl/optimized/liblegacy-lib-fcrypt_b.ll
 ; php/optimized/engine_mt19937.ll
 ; pocketpy/optimized/random.cpp.ll
 ; ruby/optimized/random.ll

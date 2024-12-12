@@ -7,7 +7,7 @@ func000000000000000a:                   # @func000000000000000a
 	testl	%edi, %edi
 	cmovlel	%edx, %eax
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	xorl	%eax, %eax
 	testb	$1, %dl
 	movl	$536870944, %ecx                # imm = 0x20000020

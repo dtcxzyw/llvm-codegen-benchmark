@@ -16,8 +16,9 @@ entry:
   ret i32 %3
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; abseil-cpp/optimized/numbers_test.cc.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; clamav/optimized/clamdscan.c.ll
 ; clamav/optimized/clamscan.c.ll
 ; git/optimized/date.ll
@@ -43,33 +44,43 @@ entry:
   ret i32 %2
 }
 
-; 16 occurrences:
+; 5 occurrences:
+; clamav/optimized/pdf.c.ll
+; icu/optimized/uparse.ll
+; proj/optimized/som.cpp.ll
+; ruby/optimized/date_core.ll
+; xgboost/optimized/charconv.cc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i64 %0) #0 {
+entry:
+  %1 = trunc i64 %0 to i32
+  %2 = icmp samesign ult i32 %1, 2458605
+  %3 = select i1 %2, i32 72, i32 82
+  ret i32 %3
+}
+
+; 11 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
-; clamav/optimized/pdf.c.ll
 ; hyperscan/optimized/fdr_engine_description.cpp.ll
-; icu/optimized/uparse.ll
 ; linux/optimized/intel_psr.ll
 ; linux/optimized/kfifo.ll
 ; llvm/optimized/AArch64RegisterBankInfo.cpp.ll
 ; llvm/optimized/WebAssemblyDisassemblerEmitter.cpp.ll
 ; mold/optimized/rust-demangle.c.ll
 ; php/optimized/dtoa.ll
-; proj/optimized/som.cpp.ll
 ; redis/optimized/ziplist.ll
-; ruby/optimized/date_core.ll
 ; spike/optimized/clz32.ll
-; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i64 %0) #0 {
 entry:
-  %1 = trunc i64 %0 to i32
-  %2 = icmp ult i32 %1, 2458605
-  %3 = select i1 %2, i32 72, i32 82
+  %1 = and i64 %0, 4294901760
+  %2 = icmp eq i64 %1, 0
+  %3 = select i1 %2, i32 224, i32 128
   ret i32 %3
 }
 
-; 32 occurrences:
+; 31 occurrences:
 ; abc/optimized/abcXsim.c.ll
 ; graphviz/optimized/xdot.c.ll
 ; gromacs/optimized/gmx_make_edi.cpp.ll
@@ -93,7 +104,6 @@ entry:
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/LegalizeIntegerTypes.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
@@ -117,7 +127,7 @@ entry:
 ; velox/optimized/CastExpr.cpp.ll
 ; z3/optimized/polynomial.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000026(i64 %0) #0 {
+define i32 @func0000000000000046(i64 %0) #0 {
 entry:
   %1 = trunc nuw i64 %0 to i32
   %2 = icmp slt i32 %1, 1
@@ -125,12 +135,9 @@ entry:
   ret i32 %3
 }
 
-; 86 occurrences:
+; 81 occurrences:
+; boost/optimized/to_chars.ll
 ; lief/optimized/File.cpp.ll
-; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/DAGISelMatcherEmitter.cpp.ll
-; llvm/optimized/ParseDeclCXX.cpp.ll
-; llvm/optimized/ParseOpenMP.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nix/optimized/attrs.ll
 ; nix/optimized/binary-cache-store.ll
@@ -150,8 +157,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -213,12 +218,27 @@ entry:
 ; simdjson/optimized/simdjson.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i64 %0) #0 {
+define i32 @func0000000000000018(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i32
   %.inv = icmp ult i32 %1, 10
   %2 = select i1 %.inv, i32 1, i32 10
   ret i32 %2
+}
+
+; 5 occurrences:
+; boost/optimized/to_chars.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; llvm/optimized/DAGISelMatcherEmitter.cpp.ll
+; llvm/optimized/ParseDeclCXX.cpp.ll
+; llvm/optimized/ParseOpenMP.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i64 %0) #0 {
+entry:
+  %1 = trunc i64 %0 to i32
+  %2 = icmp ugt i32 %1, 999999999
+  %3 = select i1 %2, i32 10, i32 9
+  ret i32 %3
 }
 
 ; 5 occurrences:

@@ -35,6 +35,6 @@ func0000000000000000:                   # @func0000000000000000
 	vpmovb2m	%xmm1, %k1
 	knotb	%k0, %k2
 	vpbroadcastd	.LCPI2_0(%rip), %ymm1 {%k2} {z} # ymm1 {%k2} {z} = [8,8,8,8,8,8,8,8]
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	vpord	.LCPI2_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	retq

@@ -1,5 +1,5 @@
 
-; 31 occurrences:
+; 35 occurrences:
 ; eastl/optimized/BenchmarkHash.cpp.ll
 ; eastl/optimized/BenchmarkMap.cpp.ll
 ; hermes/optimized/Callable.cpp.ll
@@ -8,7 +8,6 @@
 ; hermes/optimized/HostModel.cpp.ll
 ; hermes/optimized/Interpreter.cpp.ll
 ; hermes/optimized/JSArray.cpp.ll
-; hermes/optimized/JSArrayBuffer.cpp.ll
 ; hermes/optimized/JSCallSite.cpp.ll
 ; hermes/optimized/JSCallableProxy.cpp.ll
 ; hermes/optimized/JSDataView.cpp.ll
@@ -28,6 +27,11 @@
 ; hermes/optimized/Set.cpp.ll
 ; hermes/optimized/TypedArray.cpp.ll
 ; hermes/optimized/hermes.cpp.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; lvgl/optimized/lv_flex.ll
+; lvgl/optimized/lv_grid.ll
+; lvgl/optimized/lv_obj_pos.ll
+; lvgl/optimized/lv_obj_scroll.ll
 ; opencv/optimized/box_filter.dispatch.cpp.ll
 ; openssl/optimized/libcrypto-lib-bss_file.ll
 ; openssl/optimized/libcrypto-shlib-bss_file.ll
@@ -46,7 +50,7 @@ entry:
 ; minetest/optimized/luaentity_sao.cpp.ll
 ; opencv/optimized/box_filter.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1
   %3 = icmp eq i64 %2, 0

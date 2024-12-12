@@ -1,5 +1,5 @@
 
-; 256 occurrences:
+; 253 occurrences:
 ; abc/optimized/abcBm.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/cecClass.c.ll
@@ -21,7 +21,6 @@
 ; linux/optimized/avc.ll
 ; linux/optimized/cfg.ll
 ; linux/optimized/drm_dp_mst_topology.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_execlists_submission.ll
 ; linux/optimized/nsnames.ll
 ; linux/optimized/power-traces.ll
@@ -38,6 +37,7 @@
 ; llvm/optimized/RewriteMacros.cpp.ll
 ; lua/optimized/lstrlib.ll
 ; luau/optimized/lstrlib.cpp.ll
+; lvgl/optimized/lv_demo_widgets.ll
 ; nghttp2/optimized/nghttp2_alpn.c.ll
 ; nuttx/optimized/intel64_map_region.c.ll
 ; nuttx/optimized/lib_strptime.c.ll
@@ -70,7 +70,6 @@
 ; wireshark/optimized/packet-3g-a11.c.ll
 ; wireshark/optimized/packet-6lowpan.c.ll
 ; wireshark/optimized/packet-a21.c.ll
-; wireshark/optimized/packet-adwin-config.c.ll
 ; wireshark/optimized/packet-aim.c.ll
 ; wireshark/optimized/packet-ajp13.c.ll
 ; wireshark/optimized/packet-amqp.c.ll
@@ -85,7 +84,6 @@
 ; wireshark/optimized/packet-beep.c.ll
 ; wireshark/optimized/packet-bgp.c.ll
 ; wireshark/optimized/packet-bitcoin.c.ll
-; wireshark/optimized/packet-bittorrent.c.ll
 ; wireshark/optimized/packet-btavrcp.c.ll
 ; wireshark/optimized/packet-c1222.c.ll
 ; wireshark/optimized/packet-capwap.c.ll
@@ -212,7 +210,6 @@
 ; wireshark/optimized/packet-synphasor.c.ll
 ; wireshark/optimized/packet-tcpcl.c.ll
 ; wireshark/optimized/packet-tds.c.ll
-; wireshark/optimized/packet-teap.c.ll
 ; wireshark/optimized/packet-thread.c.ll
 ; wireshark/optimized/packet-thrift.c.ll
 ; wireshark/optimized/packet-tls-utils.c.ll
@@ -277,7 +274,7 @@ entry:
   ret i32 %4
 }
 
-; 65 occurrences:
+; 75 occurrences:
 ; abc/optimized/bmcClp.c.ll
 ; abc/optimized/giaResub6.c.ll
 ; arrow/optimized/UriRecompose.c.ll
@@ -316,6 +313,7 @@ entry:
 ; llvm/optimized/RISCVVIntrinsicUtils.cpp.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
+; lvgl/optimized/lv_calendar.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; oiio/optimized/targaoutput.cpp.ll
@@ -342,6 +340,15 @@ entry:
 ; wireshark/optimized/packet-shim6.c.ll
 ; wireshark/optimized/packet-wai.c.ll
 ; yosys/optimized/fstapi.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/3xn4w3qarvbzl2jkwavm0419t.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/4hgzf672qwd8x8ke1407yey6m.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000015(i32 %0, i32 %1) #0 {
@@ -367,31 +374,6 @@ entry:
   ret i32 %4
 }
 
-; 15 occurrences:
-; clamav/optimized/bytecode.c.ll
-; cpython/optimized/_datetimemodule.ll
-; darktable/optimized/amaze.cc.ll
-; eastl/optimized/EADateTime.cpp.ll
-; hdf5/optimized/H5Dbtree2.c.ll
-; libquic/optimized/time_support.c.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; protobuf/optimized/unparser.cc.ll
-; wireshark/optimized/logcat.c.ll
-; wireshark/optimized/packet-bgp.c.ll
-; wireshark/optimized/packet-cfm.c.ll
-; wireshark/optimized/packet-isup.c.ll
-; wireshark/optimized/packet-knxip.c.ll
-; wireshark/optimized/packet-pnrp.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000010(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add nsw i32 %1, 1900
-  %3 = add i32 %2, %0
-  %4 = add i32 %3, 4900
-  ret i32 %4
-}
-
 ; 4 occurrences:
 ; qemu/optimized/fdt.c.ll
 ; wireshark/optimized/packet-mmse.c.ll
@@ -401,12 +383,12 @@ entry:
 define i32 @func0000000000000020(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 12
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = add i32 %3, 4
   ret i32 %4
 }
 
-; 40 occurrences:
+; 39 occurrences:
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/flow_dissector.ll
 ; openjdk/optimized/zip_util.ll
@@ -439,7 +421,6 @@ entry:
 ; wireshark/optimized/packet-reload.c.ll
 ; wireshark/optimized/packet-rfid-pn532-hci.c.ll
 ; wireshark/optimized/packet-s7comm.c.ll
-; wireshark/optimized/packet-sametime.c.ll
 ; wireshark/optimized/packet-scte35.c.ll
 ; wireshark/optimized/packet-srvloc.c.ll
 ; wireshark/optimized/packet-wow.c.ll
@@ -456,7 +437,7 @@ entry:
   ret i32 %4
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
@@ -464,6 +445,7 @@ entry:
 ; icu/optimized/n2builder.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; nori/optimized/nanovg.c.ll
+; openblas/optimized/dorcsd2by1.c.ll
 ; openjdk/optimized/relocator.ll
 ; openjdk/optimized/upcallLinker_x86_64.ll
 ; velox/optimized/FindFirst.cpp.ll
@@ -498,13 +480,36 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = add nuw i32 %3, 1
   ret i32 %4
 }
 
-; 5 occurrences:
+; 12 occurrences:
+; clamav/optimized/bytecode.c.ll
+; cpython/optimized/_datetimemodule.ll
+; darktable/optimized/amaze.cc.ll
+; eastl/optimized/EADateTime.cpp.ll
+; hdf5/optimized/H5Dbtree2.c.ll
+; libquic/optimized/time_support.c.ll
+; protobuf/optimized/unparser.cc.ll
+; wireshark/optimized/logcat.c.ll
+; wireshark/optimized/packet-bgp.c.ll
+; wireshark/optimized/packet-cfm.c.ll
+; wireshark/optimized/packet-isup.c.ll
+; wireshark/optimized/packet-pnrp.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000010(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, 32
+  %3 = add i32 %0, %2
+  %4 = add i32 %3, -1
+  ret i32 %4
+}
+
+; 6 occurrences:
 ; abseil-cpp/optimized/demangle.cc.ll
+; boost/optimized/to_chars.ll
 ; git/optimized/graph.ll
 ; icu/optimized/gencnvex.ll
 ; postgres/optimized/postmaster.ll
@@ -543,6 +548,17 @@ entry:
   %2 = add i32 %1, 12
   %3 = add i32 %2, %0
   %4 = add nsw i32 %3, 4
+  ret i32 %4
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000013(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, -3
+  %3 = add i32 %2, %0
+  %4 = add nuw nsw i32 %3, 1
   ret i32 %4
 }
 
@@ -596,19 +612,6 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
-; gromacs/optimized/dlasd1.cpp.ll
-; gromacs/optimized/slasd1.cpp.ll
-; wireshark/optimized/packet-wai.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000035(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add nuw nsw i32 %1, 1
-  %3 = add nsw i32 %2, %0
-  %4 = add nsw i32 %3, 1
-  ret i32 %4
-}
-
 ; 1 occurrences:
 ; wireshark/optimized/packet-reload.c.ll
 ; Function Attrs: nounwind
@@ -628,6 +631,17 @@ entry:
   %2 = add i32 %1, 20
   %3 = add nuw i32 %2, %0
   %4 = add nuw i32 %3, 2
+  ret i32 %4
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-wai.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000035(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nuw nsw i32 %1, 68
+  %3 = add nsw i32 %2, %0
+  %4 = add nsw i32 %3, 1
   ret i32 %4
 }
 
@@ -670,7 +684,7 @@ entry:
 define i32 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 4
-  %3 = add nuw i32 %2, %0
+  %3 = add nuw i32 %0, %2
   %4 = add nuw i32 %3, 1
   ret i32 %4
 }

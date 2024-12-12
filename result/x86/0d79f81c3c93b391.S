@@ -3,7 +3,7 @@ func0000000000000006:                   # @func0000000000000006
 	movzwl	%ax, %eax
 	shrl	$15, %eax
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	leal	-48(%rsi,%rdi), %eax
 	movzwl	%ax, %eax
 	cmpl	$1000, %eax                     # imm = 0x3E8

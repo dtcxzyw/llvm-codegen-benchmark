@@ -34,13 +34,15 @@ entry:
   ret i32 %3
 }
 
-; 11 occurrences:
+; 13 occurrences:
+; boost/optimized/message.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; icu/optimized/umutablecptrie.ll
 ; linux/optimized/ehci-dbgp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luajit/optimized/buildvm_fold.ll
 ; opencv/optimized/perf_math.cpp.ll
+; opencv/optimized/tf_importer.cpp.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; proxygen/optimized/QPACKEncoder.cpp.ll

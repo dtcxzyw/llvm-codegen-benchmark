@@ -1,5 +1,5 @@
 
-; 347 occurrences:
+; 346 occurrences:
 ; abc/optimized/ifDec08.c.ll
 ; abc/optimized/ifDec10.c.ll
 ; abc/optimized/ifDec16.c.ll
@@ -103,7 +103,6 @@
 ; linux/optimized/extents.ll
 ; linux/optimized/genalloc.ll
 ; linux/optimized/mballoc.ll
-; linux/optimized/nfstrace.ll
 ; linux/optimized/printk_ringbuffer.ll
 ; linux/optimized/read.ll
 ; linux/optimized/write.ll
@@ -351,7 +350,7 @@
 define i1 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, %2
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
@@ -361,15 +360,14 @@ entry:
 define i1 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, %2
-  %4 = icmp uge i64 %3, %0
+  %4 = icmp ule i64 %0, %3
   ret i1 %4
 }
 
-; 30 occurrences:
+; 26 occurrences:
 ; cmake/optimized/zstd_compress_sequences.c.ll
 ; coreutils-rs/optimized/2pqvixtdp9wizsl2.ll
 ; linux/optimized/genalloc.ll
-; linux/optimized/nfstrace.ll
 ; linux/optimized/read.ll
 ; linux/optimized/sysfs.ll
 ; linux/optimized/write.ll
@@ -387,9 +385,6 @@ entry:
 ; openjdk/optimized/g1HeapVerifier.ll
 ; openjdk/optimized/g1RemSet.ll
 ; openjdk/optimized/g1YoungGCPostEvacuateTasks.ll
-; openjdk/optimized/parMarkBitMap.ll
-; openjdk/optimized/psCompactionManager.ll
-; openjdk/optimized/psParallelCompact.ll
 ; openjdk/optimized/shenandoahMarkBitMap.ll
 ; qemu/optimized/block_qcow2-cluster.c.ll
 ; qemu/optimized/block_vhdx.c.ll
@@ -400,7 +395,7 @@ entry:
 define i1 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, %2
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   ret i1 %4
 }
 
@@ -414,7 +409,7 @@ entry:
 define i1 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, %2
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   ret i1 %4
 }
 
@@ -424,7 +419,33 @@ entry:
 define i1 @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, %2
-  %4 = icmp sgt i64 %3, %0
+  %4 = icmp slt i64 %0, %3
+  ret i1 %4
+}
+
+; 17 occurrences:
+; openjdk/optimized/g1CollectedHeap.ll
+; openjdk/optimized/g1ConcurrentMark.ll
+; openjdk/optimized/g1ConcurrentMarkObjArrayProcessor.ll
+; openjdk/optimized/g1ConcurrentRebuildAndScrub.ll
+; openjdk/optimized/g1FullCollector.ll
+; openjdk/optimized/g1FullGCAdjustTask.ll
+; openjdk/optimized/g1FullGCCompactTask.ll
+; openjdk/optimized/g1FullGCPrepareTask.ll
+; openjdk/optimized/g1FullGCResetMetadataTask.ll
+; openjdk/optimized/g1HeapRegion.ll
+; openjdk/optimized/g1HeapVerifier.ll
+; openjdk/optimized/g1RemSet.ll
+; openjdk/optimized/g1YoungGCPostEvacuateTasks.ll
+; openjdk/optimized/parMarkBitMap.ll
+; openjdk/optimized/psCompactionManager.ll
+; openjdk/optimized/psParallelCompact.ll
+; openjdk/optimized/shenandoahMarkBitMap.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = lshr i64 %1, %2
+  %4 = icmp samesign ult i64 %0, %3
   ret i1 %4
 }
 
@@ -435,7 +456,7 @@ entry:
 define i1 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, %2
-  %4 = icmp slt i64 %3, %0
+  %4 = icmp sgt i64 %0, %3
   ret i1 %4
 }
 
@@ -445,7 +466,7 @@ entry:
 define i1 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, %2
-  %4 = icmp ne i64 %3, %0
+  %4 = icmp ne i64 %0, %3
   ret i1 %4
 }
 
@@ -455,7 +476,7 @@ entry:
 define i1 @func0000000000000009(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, %2
-  %4 = icmp ule i64 %3, %0
+  %4 = icmp uge i64 %0, %3
   ret i1 %4
 }
 

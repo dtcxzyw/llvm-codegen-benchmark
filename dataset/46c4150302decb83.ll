@@ -1,5 +1,18 @@
 
 ; 1 occurrences:
+; lvgl/optimized/lv_anim.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000007(i32 %0) #0 {
+entry:
+  %1 = trunc i32 %0 to i16
+  %2 = add i16 %1, 5
+  %3 = udiv i16 %2, 10
+  %4 = zext nneg i16 %3 to i32
+  %5 = shl nuw nsw i32 %4, 10
+  ret i32 %5
+}
+
+; 1 occurrences:
 ; oiio/optimized/ddsinput.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func00000000000000f7(i32 %0) #0 {

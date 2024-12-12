@@ -1,5 +1,5 @@
 
-; 685 occurrences:
+; 703 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCascade.c.ll
@@ -30,7 +30,6 @@
 ; abc/optimized/giaShrink7.c.ll
 ; abc/optimized/ifDelay.c.ll
 ; abc/optimized/ifDsd.c.ll
-; abc/optimized/ifSeq.c.ll
 ; abc/optimized/mioParse.c.ll
 ; abc/optimized/mioSop.c.ll
 ; abc/optimized/msatClause.c.ll
@@ -43,6 +42,10 @@
 ; abc/optimized/wlcNdr.c.ll
 ; abc/optimized/wlnNdr.c.ll
 ; abc/optimized/wlnRead.c.ll
+; boost/optimized/area.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/b3GpuNarrowPhase.ll
 ; bullet3/optimized/b3GpuParallelLinearBvh.ll
@@ -142,7 +145,6 @@
 ; graphviz/optimized/constrained_majorization_ipsep.c.ll
 ; graphviz/optimized/xlabels.c.ll
 ; gromacs/optimized/comm.cpp.ll
-; gromacs/optimized/dlaruv.cpp.ll
 ; gromacs/optimized/domdec.cpp.ll
 ; gromacs/optimized/domdec_constraints.cpp.ll
 ; gromacs/optimized/gmx_angle.cpp.ll
@@ -152,7 +154,6 @@
 ; gromacs/optimized/lincs.cpp.ll
 ; gromacs/optimized/pme_error.cpp.ll
 ; gromacs/optimized/shake.cpp.ll
-; gromacs/optimized/slaruv.cpp.ll
 ; gromacs/optimized/sm_insolidangle.cpp.ll
 ; grpc/optimized/timeout_encoding.cc.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -162,7 +163,6 @@
 ; icu/optimized/calendar.ll
 ; icu/optimized/collation.ll
 ; icu/optimized/decNumber.ll
-; icu/optimized/gregoimp.ll
 ; icu/optimized/uniset.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; influxdb-rs/optimized/2g8nrbnslhx52xx1.ll
@@ -259,6 +259,28 @@
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
 ; luau/optimized/loslib.cpp.ll
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_bar.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_demo_widgets.ll
+; lvgl/optimized/lv_draw_label.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
+; lvgl/optimized/lv_draw_sw_line.ll
+; lvgl/optimized/lv_dropdown.ll
+; lvgl/optimized/lv_flex.ll
+; lvgl/optimized/lv_grid.ll
+; lvgl/optimized/lv_indev_scroll.ll
+; lvgl/optimized/lv_label.ll
+; lvgl/optimized/lv_math.ll
+; lvgl/optimized/lv_obj.ll
+; lvgl/optimized/lv_obj_pos.ll
+; lvgl/optimized/lv_roller.ll
+; lvgl/optimized/lv_scale.ll
+; lvgl/optimized/lv_slider.ll
+; lvgl/optimized/lv_table.ll
+; lvgl/optimized/lv_tabview.ll
+; lvgl/optimized/lv_tileview.ll
 ; memcached/optimized/memcached-items.ll
 ; memcached/optimized/memcached-memcached.ll
 ; memcached/optimized/memcached_debug-items.ll
@@ -355,8 +377,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -422,7 +442,6 @@
 ; nori/optimized/window.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; nuttx/optimized/lib_dayofweek.c.ll
-; nuttx/optimized/lib_strftime.c.ll
 ; ocio/optimized/GradingBSplineCurve.cpp.ll
 ; ockam-rs/optimized/3trfdpf6q4y0wtix.ll
 ; oiio/optimized/CineonHeader.cpp.ll
@@ -594,7 +613,6 @@
 ; openssl/optimized/libcrypto-lib-ec2_oct.ll
 ; openssl/optimized/libcrypto-lib-ecp_oct.ll
 ; openssl/optimized/libcrypto-lib-rsaz_exp_x2.ll
-; openssl/optimized/libcrypto-lib-x_bignum.ll
 ; openssl/optimized/libcrypto-shlib-a_time.ll
 ; openssl/optimized/libcrypto-shlib-bn_conv.ll
 ; openssl/optimized/libcrypto-shlib-bn_lib.ll
@@ -603,7 +621,6 @@
 ; openssl/optimized/libcrypto-shlib-ec2_oct.ll
 ; openssl/optimized/libcrypto-shlib-ecp_oct.ll
 ; openssl/optimized/libcrypto-shlib-rsaz_exp_x2.ll
-; openssl/optimized/libcrypto-shlib-x_bignum.ll
 ; openssl/optimized/libssl-lib-statem_srvr.ll
 ; openssl/optimized/libssl-shlib-statem_srvr.ll
 ; openssl/optimized/libtestutil-lib-format_output.ll
@@ -676,6 +693,7 @@
 ; z3/optimized/linear_equation.cpp.ll
 ; z3/optimized/nlsat_evaluator.cpp.ll
 ; z3/optimized/polynomial.cpp.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; zxing/optimized/AZDetector.cpp.ll
 ; zxing/optimized/AZEncoder.cpp.ll
 ; zxing/optimized/MCReader.cpp.ll
@@ -689,11 +707,11 @@
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 400
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   ret i32 %3
 }
 
-; 251 occurrences:
+; 262 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/cuddApa.c.ll
 ; abc/optimized/exor.c.ll
@@ -702,6 +720,7 @@ entry:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver2.c.ll
 ; abc/optimized/satSolver3.c.ll
+; boost/optimized/gregorian.ll
 ; casadi/optimized/cs_amd.c.ll
 ; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
 ; ceres/optimized/eigensparse.cc.ll
@@ -721,10 +740,8 @@ entry:
 ; glslang/optimized/SPVRemapper.cpp.ll
 ; graphviz/optimized/constraint.c.ll
 ; gromacs/optimized/biasgrid.cpp.ll
-; gromacs/optimized/dlaruv.cpp.ll
 ; gromacs/optimized/localtopology.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
-; gromacs/optimized/slaruv.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-ot-cff1-table.cc.ll
 ; harfbuzz/optimized/hb-ot-cff2-table.cc.ll
@@ -745,7 +762,6 @@ entry:
 ; linux/optimized/alps.ll
 ; linux/optimized/drm_modes.ll
 ; linux/optimized/hid-pidff.ll
-; linux/optimized/i915_cmd_parser.ll
 ; linux/optimized/i915_perf.ll
 ; linux/optimized/ialloc.ll
 ; linux/optimized/input.ll
@@ -765,6 +781,22 @@ entry:
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; luau/optimized/loslib.cpp.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_checkbox.ll
+; lvgl/optimized/lv_demo_widgets.ll
+; lvgl/optimized/lv_draw_sw_line.ll
+; lvgl/optimized/lv_dropdown.ll
+; lvgl/optimized/lv_gridnav.ll
+; lvgl/optimized/lv_indev_scroll.ll
+; lvgl/optimized/lv_obj.ll
+; lvgl/optimized/lv_obj_pos.ll
+; lvgl/optimized/lv_obj_scroll.ll
+; lvgl/optimized/lv_roller.ll
+; lvgl/optimized/lv_slider.ll
+; lvgl/optimized/lv_table.ll
+; lvgl/optimized/lv_tabview.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/eqhandle.cpp.ll
 ; meshlab/optimized/filter_dock_dialog.cpp.ll
@@ -873,9 +905,7 @@ entry:
 ; openspiel/optimized/hex.cc.ll
 ; openspiel/optimized/tiny_bridge.cc.ll
 ; openssl/optimized/libcrypto-lib-bn_gf2m.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
 ; openssl/optimized/libcrypto-shlib-bn_gf2m.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; openusd/optimized/resize.c.ll
 ; openusd/optimized/stackTrace.cpp.ll
 ; php/optimized/ir.ll
@@ -884,7 +914,6 @@ entry:
 ; postgres/optimized/arrayfuncs.ll
 ; postgres/optimized/dt_common.ll
 ; postgres/optimized/execExprInterp.ll
-; postgres/optimized/geqo_pool.ll
 ; postgres/optimized/integerset.ll
 ; postgres/optimized/interval.ll
 ; postgres/optimized/nbtsearch.ll
@@ -949,7 +978,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 4
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   ret i32 %3
 }
 

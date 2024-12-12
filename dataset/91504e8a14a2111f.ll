@@ -15,10 +15,12 @@ entry:
   ret ptr %5
 }
 
-; 54 occurrences:
+; 56 occurrences:
 ; abc/optimized/extraUtilFile.c.ll
 ; abc/optimized/ivyCutTrav.c.ll
 ; abc/optimized/wlcStdin.c.ll
+; boost/optimized/to_chars.ll
+; boost/optimized/url_base.ll
 ; clamav/optimized/qsort.c.ll
 ; git/optimized/connect.ll
 ; git/optimized/dir.ll

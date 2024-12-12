@@ -132,10 +132,10 @@ entry:
 }
 
 ; 4 occurrences:
+; boost/optimized/buffer_piece_border.ll
 ; openexr/optimized/ImfB44Compressor.cpp.ll
 ; openexr/optimized/internal_b44.c.ll
 ; openusd/optimized/openexr-c.c.ll
-; tev/optimized/ExrImageLoader.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:

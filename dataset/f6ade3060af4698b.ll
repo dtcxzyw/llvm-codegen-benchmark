@@ -1,5 +1,5 @@
 
-; 50 occurrences:
+; 49 occurrences:
 ; assimp/optimized/zip.c.ll
 ; curl/optimized/libcurl_la-rtsp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -47,7 +47,6 @@
 ; openssl/optimized/sslbuffertest-bin-ssltestlib.ll
 ; openssl/optimized/sslcorrupttest-bin-ssltestlib.ll
 ; openssl/optimized/tls13ccstest-bin-ssltestlib.ll
-; php/optimized/pcre2_compile.ll
 ; php/optimized/pcre2_pattern_info.ll
 ; redis/optimized/lua_cmsgpack.ll
 ; Function Attrs: nounwind

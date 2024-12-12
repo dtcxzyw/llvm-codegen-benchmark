@@ -1,5 +1,5 @@
 
-; 67 occurrences:
+; 66 occurrences:
 ; assimp/optimized/zip.c.ll
 ; cpython/optimized/obmalloc.ll
 ; curl/optimized/libcurl_la-rtsp.ll
@@ -64,14 +64,13 @@
 ; openssl/optimized/sslbuffertest-bin-ssltestlib.ll
 ; openssl/optimized/sslcorrupttest-bin-ssltestlib.ll
 ; openssl/optimized/tls13ccstest-bin-ssltestlib.ll
-; php/optimized/pcre2_compile.ll
 ; php/optimized/pcre2_pattern_info.ll
 ; redis/optimized/lua_cmsgpack.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = add nuw nsw i64 %3, 5
   ret i64 %4
 }
@@ -105,7 +104,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = add nsw i64 %3, -6
   ret i64 %4
 }
@@ -116,12 +115,12 @@ entry:
 define i64 @func0000000000000001(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = add nsw i64 %3, -8
   ret i64 %4
 }
 
-; 7 occurrences:
+; 9 occurrences:
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; cpython/optimized/obmalloc.ll
 ; git/optimized/pack-bitmap.ll
@@ -129,11 +128,13 @@ entry:
 ; hdf5/optimized/H5Pfapl.c.ll
 ; hdf5/optimized/H5Plapl.c.ll
 ; yosys/optimized/fstapi.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = add i64 %3, 6
   ret i64 %4
 }
@@ -144,7 +145,7 @@ entry:
 define i64 @func0000000000000003(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = add nuw nsw i64 %3, 1
   ret i64 %4
 }
@@ -157,7 +158,7 @@ entry:
 define i64 @func000000000000000c(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = add i64 %3, 1
   ret i64 %4
 }
@@ -169,7 +170,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = add i64 %3, -1
   ret i64 %4
 }

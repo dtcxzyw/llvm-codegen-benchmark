@@ -9,7 +9,7 @@
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; oiio/optimized/imagebufalgo_xform.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(float %0, i64 %1) #0 {
+define i1 @func0000000000000201(float %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = fptosi float %0 to i32
@@ -21,7 +21,7 @@ entry:
 ; darktable/optimized/introspection_sharpen.c.ll
 ; darktable/optimized/introspection_spots.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000121(float %0, i64 %1) #0 {
+define i1 @func0000000000000241(float %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = fptosi float %0 to i32
@@ -32,7 +32,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_bilateral.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000131(float %0, i64 %1) #0 {
+define i1 @func0000000000000261(float %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = fptosi float %0 to i32

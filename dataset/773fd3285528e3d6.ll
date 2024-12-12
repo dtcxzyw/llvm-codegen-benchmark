@@ -1,6 +1,5 @@
 
-; 153 occurrences:
-; hermes/optimized/StringPrimitive.cpp.ll
+; 147 occurrences:
 ; nix/optimized/add-to-store.ll
 ; nix/optimized/archive.ll
 ; nix/optimized/attrs.ll
@@ -71,13 +70,10 @@
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/path-info.ll
@@ -124,8 +120,6 @@
 ; nix/optimized/worker.ll
 ; nlohmann_json/optimized/unit-comparison.cpp.ll
 ; nlohmann_json/optimized/unit-regression2.cpp.ll
-; pbrt-v4/optimized/string.cpp.ll
-; velox/optimized/VectorFuzzer.cpp.ll
 ; yalantinglibs/optimized/addressbook.struct_pb.cc.ll
 ; yalantinglibs/optimized/any.struct_pb.cc.ll
 ; yalantinglibs/optimized/basic_usage.cpp.ll
@@ -154,7 +148,7 @@
 ; yalantinglibs/optimized/wrappers.struct_pb.cc.ll
 ; yosys/optimized/setundef.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw i64 %1, %0
   %3 = sub i64 9223372036854775807, %0
@@ -335,7 +329,7 @@ entry:
 ; yosys/optimized/yosys.ll
 ; yosys/optimized/zinit.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001a4(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw nsw i64 %1, %0
   %3 = sub nsw i64 1152921504606846975, %0

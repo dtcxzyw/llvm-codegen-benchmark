@@ -61,7 +61,7 @@ func0000000000000011:                   # @func0000000000000011
 	vadd.vv	v12, v12, v14
 	addiw	a0, a0, 77
 	vmadd.vx	v12, a0, v10
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	ret
 .LCPI4_0:
 	.quad	-3689348814741910312            # 0xccccccccccccccd8

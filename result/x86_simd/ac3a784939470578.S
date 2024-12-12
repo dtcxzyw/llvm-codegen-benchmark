@@ -27,6 +27,6 @@ func0000000000000002:                   # @func0000000000000002
 func0000000000000010:                   # @func0000000000000010
 	vpcmpnleuw	.LCPI1_0(%rip), %ymm2, %k1
 	vmovdqu8	.LCPI1_1(%rip), %xmm1 {%k1}     # xmm1 {%k1} = [15,15,15,15,15,15,15,15,15,15,15,15,15,15,15,15]
-	vpor	%xmm0, %xmm1, %xmm0
+	vpor	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq

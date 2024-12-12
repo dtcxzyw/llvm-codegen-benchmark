@@ -55,7 +55,7 @@ entry:
   ret i32 %7
 }
 
-; 16 occurrences:
+; 18 occurrences:
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -72,6 +72,8 @@ entry:
 ; image-rs/optimized/34r8dryqmufipcqz.ll
 ; linux/optimized/intel_color.ll
 ; linux/optimized/intel_dpll_mgr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000007f(i32 %0, i32 %1, i16 %2) #0 {
 entry:
@@ -94,6 +96,24 @@ entry:
   %3 = zext nneg i16 %2 to i32
   %4 = shl nuw i32 %3, 24
   %5 = shl nuw nsw i32 %1, 16
+  %6 = or disjoint i32 %5, %4
+  %7 = or disjoint i32 %6, %0
+  ret i32 %7
+}
+
+; 6 occurrences:
+; linux/optimized/hdac_device.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; Function Attrs: nounwind
+define i32 @func000000000000007b(i32 %0, i32 %1, i16 %2) #0 {
+entry:
+  %3 = zext nneg i16 %2 to i32
+  %4 = shl nuw nsw i32 %3, 16
+  %5 = shl nuw i32 %1, 24
   %6 = or disjoint i32 %5, %4
   %7 = or disjoint i32 %6, %0
   ret i32 %7
@@ -136,19 +156,6 @@ entry:
   %5 = shl nuw nsw i32 %1, 12
   %6 = or i32 %5, %4
   %7 = or i32 %6, %0
-  ret i32 %7
-}
-
-; 1 occurrences:
-; linux/optimized/hdac_device.ll
-; Function Attrs: nounwind
-define i32 @func000000000000007b(i32 %0, i32 %1, i16 %2) #0 {
-entry:
-  %3 = zext nneg i16 %2 to i32
-  %4 = shl nuw nsw i32 %3, 20
-  %5 = shl nuw i32 %1, 28
-  %6 = or disjoint i32 %5, %4
-  %7 = or disjoint i32 %6, %0
   ret i32 %7
 }
 

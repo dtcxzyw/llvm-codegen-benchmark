@@ -1,7 +1,6 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; glslang/optimized/hlslParseHelper.cpp.ll
-; linux/optimized/nfs3xdr.ll
 ; openspiel/optimized/simple_gin_rummy_bot.cc.ll
 ; openusd/optimized/drawModeAdapter.cpp.ll
 ; qemu/optimized/hw_char_cadence_uart.c.ll
@@ -15,7 +14,8 @@ entry:
   ret i64 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/text_file_backend.ll
 ; php/optimized/decode.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i32 %0, i32 %1, i1 %2) #0 {

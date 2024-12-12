@@ -1,15 +1,15 @@
 
-%struct.pm_options_scope.2485661 = type { i64, ptr }
-%"struct.rocksdb::CompactionInputFiles.2514910" = type { i32, %"class.std::vector.208.2514911", %"class.std::vector.233.2514912" }
-%"class.std::vector.208.2514911" = type { %"struct.std::_Vector_base.209.2514913" }
-%"struct.std::_Vector_base.209.2514913" = type { %"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl.2514914" }
-%"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl.2514914" = type { %"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl_data.2514915" }
-%"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl_data.2514915" = type { ptr, ptr, ptr }
-%"class.std::vector.233.2514912" = type { %"struct.std::_Vector_base.234.2514916" }
-%"struct.std::_Vector_base.234.2514916" = type { %"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl.2514917" }
-%"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl.2514917" = type { %"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl_data.2514918" }
-%"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl_data.2514918" = type { ptr, ptr, ptr }
-%struct.Vec_Int_t_.2765406 = type { i32, i32, ptr }
+%struct.pm_options_scope.2601139 = type { i64, ptr }
+%"struct.rocksdb::CompactionInputFiles.2630020" = type { i32, %"class.std::vector.208.2630021", %"class.std::vector.233.2630022" }
+%"class.std::vector.208.2630021" = type { %"struct.std::_Vector_base.209.2630023" }
+%"struct.std::_Vector_base.209.2630023" = type { %"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl.2630024" }
+%"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl.2630024" = type { %"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl_data.2630025" }
+%"struct.std::_Vector_base<rocksdb::FileMetaData *, std::allocator<rocksdb::FileMetaData *>>::_Vector_impl_data.2630025" = type { ptr, ptr, ptr }
+%"class.std::vector.233.2630022" = type { %"struct.std::_Vector_base.234.2630026" }
+%"struct.std::_Vector_base.234.2630026" = type { %"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl.2630027" }
+%"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl.2630027" = type { %"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl_data.2630028" }
+%"struct.std::_Vector_base<rocksdb::AtomicCompactionUnitBoundary, std::allocator<rocksdb::AtomicCompactionUnitBoundary>>::_Vector_impl_data.2630028" = type { ptr, ptr, ptr }
+%struct.Vec_Int_t_.2877641 = type { i32, i32, ptr }
 
 ; 3 occurrences:
 ; postgres/optimized/regexec.ll
@@ -20,7 +20,7 @@ define ptr @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %struct.pm_options_scope.2485661, ptr %0, i64 %4, i32 1
+  %5 = getelementptr %struct.pm_options_scope.2601139, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -62,7 +62,7 @@ define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw %"struct.rocksdb::CompactionInputFiles.2514910", ptr %0, i64 %4, i32 1
+  %5 = getelementptr nusw %"struct.rocksdb::CompactionInputFiles.2630020", ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 
@@ -73,7 +73,7 @@ define ptr @func0000000000000004(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = sext i32 %3 to i64
-  %5 = getelementptr %struct.Vec_Int_t_.2765406, ptr %0, i64 %4, i32 1
+  %5 = getelementptr %struct.Vec_Int_t_.2877641, ptr %0, i64 %4, i32 1
   ret ptr %5
 }
 

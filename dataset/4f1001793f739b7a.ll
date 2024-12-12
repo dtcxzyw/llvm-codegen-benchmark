@@ -1,18 +1,13 @@
 
-%"struct.asmjit::_abi_1_10::RATiedReg.2488705" = type { i32, i32, i32, %union.anon.32.2488706, i32, i32, i32, i32 }
-%union.anon.32.2488706 = type { i32 }
-%"union.absl::lts_20230802::container_internal::map_slot_type.677.3483627" = type { %"struct.std::pair.198.3483626" }
-%"struct.std::pair.198.3483626" = type { %"struct.std::pair.137.3483584", ptr }
-%"struct.std::pair.137.3483584" = type <{ ptr, i32, [4 x i8] }>
+%"struct.asmjit::_abi_1_10::RATiedReg.2604137" = type { i32, i32, i32, %union.anon.32.2604138, i32, i32, i32, i32 }
+%union.anon.32.2604138 = type { i32 }
 
-; 167 occurrences:
+; 163 occurrences:
 ; abc/optimized/cutCut.c.ll
 ; abc/optimized/cutOracle.c.ll
 ; abc/optimized/cutTruth.c.ll
 ; abc/optimized/kitDsd.c.ll
-; cvc5/optimized/generic_op.cpp.ll
 ; icu/optimized/ucase.ll
-; jq/optimized/jv.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTDumper.cpp.ll
@@ -147,7 +142,6 @@
 ; llvm/optimized/UnixAPIChecker.cpp.ll
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
-; lua/optimized/lvm.ll
 ; memcached/optimized/memcached-crawler.ll
 ; memcached/optimized/memcached-items.ll
 ; memcached/optimized/memcached-memcached.ll
@@ -165,7 +159,6 @@
 ; memcached/optimized/memcached_debug-slabs.ll
 ; memcached/optimized/memcached_debug-storage.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
-; protobuf/optimized/field_mask_util.cc.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; redis/optimized/rax.ll
 ; z3/optimized/smt_clause.cpp.ll
@@ -174,13 +167,13 @@
 ; z3/optimized/smt_context.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000007f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 76
-  %6 = getelementptr nusw %"struct.asmjit::_abi_1_10::RATiedReg.2488705", ptr %5, i64 %4
-  %7 = getelementptr nusw %"struct.asmjit::_abi_1_10::RATiedReg.2488705", ptr %6, i64 %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 76
+  %6 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::RATiedReg.2604137", ptr %5, i64 %4
+  %7 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::RATiedReg.2604137", ptr %6, i64 %0
   ret ptr %7
 }
 
@@ -207,13 +200,32 @@ entry:
 ; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/ps_core.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000003f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -4
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 12
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
-  %7 = getelementptr nusw i8, ptr %6, i64 %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 12
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %0
+  ret ptr %7
+}
+
+; 7 occurrences:
+; cvc5/optimized/generic_op.cpp.ll
+; jq/optimized/jv.ll
+; lua/optimized/lvm.ll
+; protobuf/optimized/descriptor.cc.ll
+; protobuf/optimized/extension_set.cc.ll
+; protobuf/optimized/field_mask_util.cc.ll
+; protobuf/optimized/map.cc.ll
+; Function Attrs: nounwind
+define ptr @func000000000000007e(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 2147483644
+  %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 16
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
+  %7 = getelementptr nusw i32, ptr %6, i64 %0
   ret ptr %7
 }
 
@@ -233,11 +245,11 @@ entry:
 ; protobuf/optimized/message_builder.cc.ll
 ; protobuf/optimized/message_builder_lite.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000060(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func0000000000000070(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 134217727
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 48
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 48
   %6 = getelementptr i32, ptr %5, i64 %4
   %7 = getelementptr i32, ptr %6, i64 %0
   ret ptr %7
@@ -246,28 +258,13 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CStringChecker.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000068(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000007c(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 8
-  %6 = getelementptr nusw ptr, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 8
+  %6 = getelementptr nusw nuw ptr, ptr %5, i64 %4
   %7 = getelementptr i8, ptr %6, i64 %0
-  ret ptr %7
-}
-
-; 3 occurrences:
-; protobuf/optimized/descriptor.cc.ll
-; protobuf/optimized/extension_set.cc.ll
-; protobuf/optimized/map.cc.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000042(i64 %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 255
-  %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr i8, ptr %1, i64 16
-  %6 = getelementptr %"union.absl::lts_20230802::container_internal::map_slot_type.677.3483627", ptr %5, i64 %4
-  %7 = getelementptr nusw %"union.absl::lts_20230802::container_internal::map_slot_type.677.3483627", ptr %6, i64 %0
   ret ptr %7
 }
 

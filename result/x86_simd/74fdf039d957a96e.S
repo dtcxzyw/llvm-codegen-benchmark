@@ -31,12 +31,3 @@ func0000000000000003:                   # @func0000000000000003
 	vcvtdq2pd	%ymm0, %zmm0
 	vmulpd	.LCPI3_0(%rip){1to8}, %zmm0, %zmm0
 	retq
-.LCPI4_0:
-	.long	4294967168                      # 0xffffff80
-.LCPI4_1:
-	.quad	0x3fe0000000000000              # double 0.5
-func0000000000000002:                   # @func0000000000000002
-	vpaddd	.LCPI4_0(%rip){1to8}, %ymm0, %ymm0
-	vcvtudq2pd	%ymm0, %zmm0
-	vmulpd	.LCPI4_1(%rip){1to8}, %zmm0, %zmm0
-	retq

@@ -10,12 +10,6 @@ func000000000000000b:                   # @func000000000000000b
 	movabsq	$4294967296, %rax               # imm = 0x100000000
 	orq	%rcx, %rax
 	retq
-func0000000000000010:                   # @func0000000000000010
-	movl	%esi, %eax
-	shlq	$8, %rdi
-	orq	%rdi, %rax
-	orq	$128, %rax
-	retq
 func000000000000000f:                   # @func000000000000000f
 	movl	%esi, %ecx
 	shlq	$40, %rdi

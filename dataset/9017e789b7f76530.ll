@@ -1,5 +1,7 @@
 
-; 97 occurrences:
+; 99 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/kinsol.c.ll
 ; ceres/optimized/polynomial.cc.ll
 ; folly/optimized/FunctionScheduler.cpp.ll

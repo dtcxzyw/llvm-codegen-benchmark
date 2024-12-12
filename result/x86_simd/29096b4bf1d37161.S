@@ -29,25 +29,25 @@ func000000000000000f:                   # @func000000000000000f
 	vzeroupper
 	retq
 .LCPI4_0:
-	.quad	1                               # 0x1
-func000000000000000b:                   # @func000000000000000b
-	vpbroadcastq	.LCPI4_0(%rip), %ymm1   # ymm1 = [1,1,1,1]
+	.quad	2                               # 0x2
+func0000000000000000:                   # @func0000000000000000
+	vpbroadcastq	.LCPI4_0(%rip), %ymm1   # ymm1 = [2,2,2,2]
 	vpsllvq	%ymm0, %ymm1, %ymm0
 	vpmovqd	%ymm0, %xmm0
 	vzeroupper
 	retq
 .LCPI5_0:
-	.quad	1                               # 0x1
+	.quad	2                               # 0x2
 func000000000000000c:                   # @func000000000000000c
-	vpbroadcastq	.LCPI5_0(%rip), %ymm1   # ymm1 = [1,1,1,1]
+	vpbroadcastq	.LCPI5_0(%rip), %ymm1   # ymm1 = [2,2,2,2]
 	vpsllvq	%ymm0, %ymm1, %ymm0
 	vpmovqd	%ymm0, %xmm0
 	vzeroupper
 	retq
 .LCPI6_0:
-	.quad	64                              # 0x40
-func0000000000000000:                   # @func0000000000000000
-	vpbroadcastq	.LCPI6_0(%rip), %ymm1   # ymm1 = [64,64,64,64]
+	.quad	1                               # 0x1
+func000000000000000b:                   # @func000000000000000b
+	vpbroadcastq	.LCPI6_0(%rip), %ymm1   # ymm1 = [1,1,1,1]
 	vpsllvq	%ymm0, %ymm1, %ymm0
 	vpmovqd	%ymm0, %xmm0
 	vzeroupper

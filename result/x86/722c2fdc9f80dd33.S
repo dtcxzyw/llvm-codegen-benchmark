@@ -13,12 +13,11 @@ func0000000000000009:                   # @func0000000000000009
 	negl	%eax
 	andl	$31, %eax
 	retq
-func0000000000000001:                   # @func0000000000000001
-	movl	$3, %eax
-	subl	%edi, %eax
-	andl	$2, %eax
-	retq
 func0000000000000005:                   # @func0000000000000005
 	negl	%edi
 	movzbl	%dil, %eax
+	retq
+func0000000000000001:                   # @func0000000000000001
+	movq	%rdi, %rax
+	andl	$1, %eax
 	retq

@@ -1,8 +1,7 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; freetype/optimized/autofit.c.ll
 ; linux/optimized/addrconf.ll
-; linux/optimized/mii.ll
 ; nuttx/optimized/lib_libvsprintf.c.ll
 ; qemu/optimized/hw_pci_msi.c.ll
 ; Function Attrs: nounwind

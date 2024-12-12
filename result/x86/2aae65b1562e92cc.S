@@ -1,11 +1,11 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	andl	$3145728, %edx                  # imm = 0x300000
 	orl	%esi, %edx
 	xorl	%eax, %eax
 	testl	%edi, %edi
 	cmovel	%edx, %eax
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	andl	$1, %edx
 	orl	%esi, %edx
 	xorl	%eax, %eax

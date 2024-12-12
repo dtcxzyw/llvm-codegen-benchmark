@@ -1,8 +1,9 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; lightgbm/optimized/bin.cpp.ll
 ; linux/optimized/nlattr.ll
 ; linux/optimized/tcp_input.ll
+; lvgl/optimized/lv_calendar.ll
 ; slurm/optimized/job_test.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i16 %1) #0 {

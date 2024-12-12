@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	12                              # 0xc
-func0000000000000013:                   # @func0000000000000013
+func0000000000000053:                   # @func0000000000000053
 	vpsllw	$15, %xmm1, %xmm1
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpbroadcastd	.LCPI0_0(%rip), %ymm4   # ymm4 = [12,12,12,12,12,12,12,12]

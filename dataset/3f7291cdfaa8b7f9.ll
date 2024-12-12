@@ -49,7 +49,6 @@
 ; llvm/optimized/ExpandLargeFpConvert.cpp.ll
 ; llvm/optimized/MCAsmStreamer.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
-; llvm/optimized/X86AsmBackend.cpp.ll
 ; luajit/optimized/lj_ir.ll
 ; luajit/optimized/lj_ir_dyn.ll
 ; openblas/optimized/dgghd3.c.ll
@@ -95,6 +94,7 @@
 ; yosys/optimized/stat.ll
 ; z3/optimized/rel_context.cpp.ll
 ; z3/optimized/sat_cutset.cpp.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; zstd/optimized/zstd_v02.c.ll
@@ -111,10 +111,12 @@ entry:
   ret i32 %4
 }
 
-; 127 occurrences:
+; 125 occurrences:
 ; abc/optimized/giaGen.c.ll
 ; abc/optimized/giaResub.c.ll
 ; abseil-cpp/optimized/charconv_parse.cc.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/entropy_common.c.ll
 ; csmith/optimized/ArrayVariable.cpp.ll
 ; darktable/optimized/Cr2Decompressor.cpp.ll
@@ -131,7 +133,6 @@ entry:
 ; icu/optimized/choicfmt.ll
 ; icu/optimized/collationbuilder.ll
 ; icu/optimized/collationruleparser.ll
-; icu/optimized/format.ll
 ; icu/optimized/locdispnames.ll
 ; icu/optimized/messagepattern.ll
 ; icu/optimized/msgfmt.ll
@@ -145,7 +146,6 @@ entry:
 ; icu/optimized/unistr.ll
 ; icu/optimized/unistr_case.ll
 ; icu/optimized/unistr_cnv.ll
-; icu/optimized/usprep.ll
 ; icu/optimized/utext.ll
 ; icu/optimized/utrie2_builder.ll
 ; imgui/optimized/imgui.cpp.ll
@@ -164,6 +164,8 @@ entry:
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/VectorUtils.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_grid.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/guiTable.cpp.ll
@@ -184,7 +186,6 @@ entry:
 ; opencv/optimized/staticSaliencyFineGrained.cpp.ll
 ; opencv/optimized/svm.cpp.ll
 ; openexr/optimized/ImfDeepScanLineInputFile.cpp.ll
-; openjdk/optimized/TransformHelper.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-math.ll
 ; openjdk/optimized/jdmarker.ll
@@ -203,10 +204,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-bn_exp.ll
 ; openssl/optimized/libcrypto-shlib-bio_enc.ll
 ; openssl/optimized/libcrypto-shlib-bn_exp.ll
-; openusd/optimized/decodeframe.c.ll
 ; openusd/optimized/decodemv.c.ll
-; openusd/optimized/decodetxb.c.ll
-; openusd/optimized/detokenize.c.ll
 ; openusd/optimized/json.cpp.ll
 ; openusd/optimized/patchBuilder.cpp.ll
 ; openusd/optimized/patchTreeBuilder.cpp.ll
@@ -247,7 +245,7 @@ entry:
   ret i32 %4
 }
 
-; 44 occurrences:
+; 46 occurrences:
 ; abc/optimized/blocksort.c.ll
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
@@ -274,6 +272,7 @@ entry:
 ; llvm/optimized/ContinuationIndenter.cpp.ll
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_anim_timeline.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; openjdk/optimized/g1Policy.ll
 ; openjdk/optimized/g1YoungCollector.ll
@@ -292,6 +291,7 @@ entry:
 ; tls-rs/optimized/59h61akxu6z29dlt.ll
 ; wireshark/optimized/packet-acn.c.ll
 ; z3/optimized/sls_engine.cpp.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i1 %1, i32 %2) #0 {
 entry:
@@ -300,13 +300,17 @@ entry:
   ret i32 %4
 }
 
-; 7 occurrences:
+; 11 occurrences:
 ; clamav/optimized/matcher.c.ll
 ; cmake/optimized/huf_compress.c.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; linux/optimized/drm_ioctl.ll
 ; llvm/optimized/CombinerHelperVectorOps.cpp.ll
 ; luau/optimized/CodeGenX64.cpp.ll
+; openusd/optimized/decodeframe.c.ll
+; openusd/optimized/decodemv.c.ll
+; openusd/optimized/decodetxb.c.ll
+; openusd/optimized/detokenize.c.ll
 ; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i1 %1, i32 %2) #0 {

@@ -1,9 +1,10 @@
 
-; 45 occurrences:
+; 43 occurrences:
 ; abc/optimized/aigRetF.c.ll
-; abc/optimized/bmcLoad.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; git/optimized/rev-list.ll
 ; glslang/optimized/linkValidate.cpp.ll
@@ -41,9 +42,6 @@
 ; ruby/optimized/string.ll
 ; ruby/optimized/weakmap.ll
 ; spike/optimized/csrs.ll
-; spike/optimized/f128_classify.ll
-; spike/optimized/f32_classify.ll
-; spike/optimized/f64_classify.ll
 ; wolfssl/optimized/tls13.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i1 %1, i64 %2) #0 {
@@ -80,7 +78,7 @@ entry:
   ret i1 %6
 }
 
-; 28 occurrences:
+; 29 occurrences:
 ; abc/optimized/abcHieGia.c.ll
 ; abc/optimized/dauGia.c.ll
 ; abc/optimized/giaBalAig.c.ll
@@ -109,6 +107,7 @@ entry:
 ; openssl/optimized/asn1_internal_test-bin-asn1_internal_test.ll
 ; ruby/optimized/array.ll
 ; ruby/optimized/string.ll
+; slurm/optimized/job_test.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i1 %0, i1 %1, i64 %2) #0 {
 entry:
@@ -119,9 +118,7 @@ entry:
   ret i1 %6
 }
 
-; 7 occurrences:
-; abc/optimized/giaLf.c.ll
-; abc/optimized/giaMuxes.c.ll
+; 5 occurrences:
 ; lief/optimized/ccm.c.ll
 ; linux/optimized/libata-eh.ll
 ; llvm/optimized/CGExprScalar.cpp.ll
@@ -134,20 +131,6 @@ entry:
   %4 = icmp ne i64 %3, 32771
   %5 = or i1 %0, %1
   %6 = or i1 %5, %4
-  ret i1 %6
-}
-
-; 3 occurrences:
-; cmake/optimized/setopt.c.ll
-; curl/optimized/libcurl_la-setopt.ll
-; linux/optimized/p4.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000010(i1 %0, i1 %1, i64 %2) #0 {
-entry:
-  %3 = and i64 %2, 4294443008
-  %4 = icmp ne i64 %3, 0
-  %5 = or i1 %0, %1
-  %6 = or i1 %4, %5
   ret i1 %6
 }
 

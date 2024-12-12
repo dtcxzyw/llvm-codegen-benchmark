@@ -8,13 +8,13 @@
 ; libwebp/optimized/vp8l_dec.c.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 63
   %4 = zext nneg i32 %3 to i64
   %5 = lshr i64 %1, %4
   %6 = and i64 %5, 31
-  %7 = getelementptr nusw [32 x { i16, i8, [1 x i8] }], ptr %0, i64 0, i64 %6
+  %7 = getelementptr nusw nuw [32 x { i16, i8, [1 x i8] }], ptr %0, i64 0, i64 %6
   ret ptr %7
 }
 

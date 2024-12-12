@@ -3,13 +3,16 @@ func000000000000001a:                   # @func000000000000001a
 	subq	%rsi, %rdi
 	leaq	-32(%rdi), %rax
 	retq
+func000000000000001b:                   # @func000000000000001b
+	subq	%rsi, %rdi
+	leaq	32(%rdi), %rax
+	retq
 func000000000000000a:                   # @func000000000000000a
 	shlq	$3, %rsi
 	subq	%rsi, %rdi
 	leaq	-8(%rdi), %rax
 	retq
-func000000000000001b:                   # @func000000000000001b
-	shlq	$5, %rsi
+func000000000000000b:                   # @func000000000000000b
 	subq	%rsi, %rdi
-	leaq	8(%rdi), %rax
+	leaq	16(%rdi), %rax
 	retq

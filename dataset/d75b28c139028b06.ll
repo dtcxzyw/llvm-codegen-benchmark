@@ -1,5 +1,5 @@
 
-; 448 occurrences:
+; 456 occurrences:
 ; abseil-cpp/optimized/city.cc.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; actix-rs/optimized/1v3445utu4y7ica.ll
@@ -29,7 +29,6 @@
 ; delta-rs/optimized/4say4x9grcidoih4.ll
 ; delta-rs/optimized/4zvphat0q9a964bz.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
-; faiss/optimized/IndexPQ.cpp.ll
 ; folly/optimized/IPAddressV6.cpp.ll
 ; folly/optimized/farmhash.cpp.ll
 ; freetype/optimized/cff.c.ll
@@ -77,7 +76,6 @@
 ; hdf5/optimized/H5Shyper.c.ll
 ; hdf5/optimized/H5Spoint.c.ll
 ; hdf5/optimized/H5Tvlen.c.ll
-; hdf5/optimized/H5VLnative_blob.c.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; hermes/optimized/APInt.cpp.ll
 ; hermes/optimized/BytecodeGenerator.cpp.ll
@@ -95,6 +93,7 @@
 ; hermes/optimized/Runtime.cpp.ll
 ; hermes/optimized/StringRef.cpp.ll
 ; icu/optimized/unames.ll
+; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; image-rs/optimized/ptscn4jakoj4p9m.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; libjpeg-turbo/optimized/djpeg.c.ll
@@ -272,7 +271,6 @@
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/tensor.cpp.ll
@@ -437,6 +435,16 @@
 ; wireshark/optimized/tvbuff.c.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; yaml-cpp/optimized/stream.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/avfqkgc3wosoc0eacq6zrtrq5.ll
+; zed-rs/optimized/cmxsagf2j897pis1fg8tnwnp3.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zstd/optimized/divsufsort.c.ll
 ; zstd/optimized/fse_decompress.c.ll
 ; zstd/optimized/huf_decompress.c.ll
@@ -481,7 +489,7 @@ entry:
   ret i64 %5
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/xmltok.ll
 ; folly/optimized/Compression.cpp.ll
@@ -490,7 +498,6 @@ entry:
 ; llvm/optimized/MachineInstrBundle.cpp.ll
 ; openssl/optimized/libcrypto-lib-a_utf8.ll
 ; openssl/optimized/libcrypto-shlib-a_utf8.ll
-; protobuf/optimized/json.cc.ll
 ; rust-analyzer-rs/optimized/357j944nkpwuonjr.ll
 ; rust-analyzer-rs/optimized/k5mtltw7nxmadpl.ll
 ; sqlite/optimized/sqlite3.ll
@@ -506,7 +513,7 @@ entry:
   ret i64 %5
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; just-rs/optimized/3022oi333lxf39jd.ll
 ; libquic/optimized/x25519-x86_64.c.ll
 ; minetest/optimized/nodedef.cpp.ll
@@ -516,6 +523,7 @@ entry:
 ; stockfish/optimized/tbprobe.ll
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i8 %0, i8 %1) #0 {
 entry:

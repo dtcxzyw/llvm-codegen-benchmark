@@ -1,5 +1,7 @@
 
-; 36 occurrences:
+; 37 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; darktable/optimized/print_settings.c.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; graphviz/optimized/arrows.c.ll
@@ -24,7 +26,6 @@
 ; openvdb/optimized/FastSweeping.cc.ll
 ; pbrt-v4/optimized/rgb2spec_opt.cpp.ll
 ; pbrt-v4/optimized/scattering.cpp.ll
-; proj/optimized/bacon.cpp.ll
 ; quantlib/optimized/analytic_discr_geom_av_strike.ll
 ; quantlib/optimized/analyticgjrgarchengine.ll
 ; quantlib/optimized/blackformula.ll
@@ -41,7 +42,7 @@ define double @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, 0x3F616E0689427379
   %4 = fsub double %1, %3
-  %5 = fadd double %4, %0
+  %5 = fadd double %0, %4
   ret double %5
 }
 

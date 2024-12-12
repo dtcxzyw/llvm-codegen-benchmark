@@ -4,7 +4,7 @@
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i16 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = sub nsw i32 0, %2
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_func_cast.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i16 %0, i16 %1) #0 {
+define i1 @func000000000000002a(i16 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = sub nsw i32 0, %2

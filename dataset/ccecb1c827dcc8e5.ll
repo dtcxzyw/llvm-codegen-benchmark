@@ -1,8 +1,7 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; cvc5/optimized/term_tuple_enumerator.cpp.ll
 ; graphviz/optimized/excontext.c.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/ddnf.cpp.ll
 ; z3/optimized/mam.cpp.ll
 ; z3/optimized/opt_cores.cpp.ll

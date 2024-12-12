@@ -4,7 +4,7 @@
 	.zero	16,63
 .LCPI0_2:
 	.zero	4,48
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k1
 	vpord	.LCPI0_2(%rip){1to4}, %xmm0, %xmm1

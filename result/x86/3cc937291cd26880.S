@@ -4,7 +4,14 @@ func000000000000001a:                   # @func000000000000001a
 	andq	$-64, %rsi
 	leaq	64(%rdi,%rsi), %rax
 	retq
-func000000000000005a:                   # @func000000000000005a
+func000000000000001b:                   # @func000000000000001b
+	movl	%edx, %eax
+	shlq	$2, %rax
+	subq	%rax, %rdi
+	andl	$-2, %esi
+	leaq	(%rdi,%rsi,8), %rax
+	retq
+func000000000000005b:                   # @func000000000000005b
 	movl	%edx, %eax
 	shlq	$5, %rax
 	subq	%rax, %rdi

@@ -19,7 +19,7 @@
 	.quad	64                              # 0x40
 .LCPI0_2:
 	.quad	32                              # 0x20
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	vpcmpeqb	.LCPI0_0(%rip), %xmm1, %k1
 	vpbroadcastq	.LCPI0_1(%rip), %ymm1   # ymm1 = [64,64,64,64]
 	vpbroadcastq	.LCPI0_2(%rip), %ymm1 {%k1} # ymm1 {%k1} = [32,32,32,32]

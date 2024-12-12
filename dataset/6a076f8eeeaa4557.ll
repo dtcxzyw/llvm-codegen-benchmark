@@ -1,5 +1,5 @@
 
-; 581 occurrences:
+; 580 occurrences:
 ; clamav/optimized/aspack.c.ll
 ; hermes/optimized/BCOpt.cpp.ll
 ; hermes/optimized/BytecodeGenerator.cpp.ll
@@ -204,7 +204,6 @@
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ReachingDefAnalysis.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/RegAllocFast.cpp.ll
@@ -628,7 +627,7 @@ entry:
   ret i32 %2
 }
 
-; 59 occurrences:
+; 60 occurrences:
 ; clamav/optimized/explode.c.ll
 ; cpython/optimized/dtoa.ll
 ; darktable/optimized/AbstractLJpegDecoder.cpp.ll
@@ -661,6 +660,7 @@ entry:
 ; llvm/optimized/PGOCtxProfWriter.cpp.ll
 ; llvm/optimized/SerializedDiagnosticPrinter.cpp.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
+; lvgl/optimized/lv_tlsf.ll
 ; opencv/optimized/bitsource.cpp.ll
 ; openexr/optimized/ImfCRgbaFile.cpp.ll
 ; openexr/optimized/ImfRgbaYca.cpp.ll
@@ -776,13 +776,13 @@ entry:
 ; recastnavigation/optimized/Sample_TempObstacles.cpp.ll
 ; recastnavigation/optimized/Sample_TileMesh.cpp.ll
 ; wireshark/optimized/addr_resolv.c.ll
+; wireshark/optimized/packet-bacapp.c.ll
 ; wireshark/optimized/packet-dmp.c.ll
 ; wireshark/optimized/packet-ldp.c.ll
 ; wireshark/optimized/packet-ms-do.c.ll
 ; wireshark/optimized/packet-reload-framing.c.ll
 ; wireshark/optimized/packet-wimaxasncp.c.ll
 ; zstd/optimized/zstd_v01.c.ll
-; zxing/optimized/MCBitMatrixParser.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0) #0 {
 entry:
@@ -791,7 +791,7 @@ entry:
   ret i32 %2
 }
 
-; 30 occurrences:
+; 31 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; clamav/optimized/explode.c.ll
 ; clamav/optimized/unarj.c.ll
@@ -802,6 +802,7 @@ entry:
 ; libzmq/optimized/tcp_address.cpp.ll
 ; linux/optimized/journal.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
 ; opencv/optimized/sift.dispatch.cpp.ll
 ; openjdk/optimized/ByteBinary1Bit.ll
 ; openjdk/optimized/ByteBinary2Bit.ll
@@ -852,7 +853,7 @@ entry:
   ret i32 %2
 }
 
-; 23 occurrences:
+; 22 occurrences:
 ; abc/optimized/abcCascade.c.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; flac/optimized/lpc.c.ll
@@ -870,7 +871,6 @@ entry:
 ; openusd/optimized/convolve.c.ll
 ; openusd/optimized/warped_motion.c.ll
 ; php/optimized/zend_strtod.ll
-; wireshark/optimized/packet-bacapp.c.ll
 ; wireshark/optimized/packet-reload-framing.c.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; zstd/optimized/zstd_v03.c.ll
@@ -893,9 +893,9 @@ entry:
 ; abc/optimized/dauGia.c.ll
 ; abc/optimized/giaGig.c.ll
 ; abc/optimized/ifDsd.c.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/zstd_opt.c.ll
 ; libwebp/optimized/bit_writer_utils.c.ll
-; linux/optimized/intel_audio.ll
 ; openspiel/optimized/TransTableL.cpp.ll
 ; openusd/optimized/blend_a64_mask.c.ll
 ; openusd/optimized/convolve.c.ll

@@ -3,7 +3,7 @@
 ; coreutils-rs/optimized/43xryk8lar2vb35z.ll
 ; rocksdb/optimized/slice.cc.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000014(i8 %0) #0 {
+define i8 @func0000000000000024(i8 %0) #0 {
 entry:
   %1 = add i8 %0, 55
   %2 = or disjoint i8 %0, 48
@@ -42,11 +42,11 @@ entry:
 ; yosys/optimized/cxxrtl_backend.ll
 ; yosys/optimized/fmt.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000074(i8 %0) #0 {
+define i8 @func00000000000000f4(i8 %0) #0 {
 entry:
   %1 = add nuw nsw i8 %0, 55
   %2 = or disjoint i8 %0, 48
-  %3 = icmp ult i8 %0, 10
+  %3 = icmp samesign ult i8 %0, 10
   %4 = select i1 %3, i8 %2, i8 %1
   ret i8 %4
 }
@@ -54,7 +54,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/util_uri.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000034(i8 %0) #0 {
+define i8 @func0000000000000064(i8 %0) #0 {
 entry:
   %1 = add nsw i8 %0, 55
   %2 = or disjoint i8 %0, 48

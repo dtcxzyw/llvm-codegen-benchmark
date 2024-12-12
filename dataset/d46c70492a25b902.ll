@@ -10,12 +10,11 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; clamav/optimized/special.c.ll
 ; linux/optimized/drm_dsc_helper.ll
 ; linux/optimized/intel_overlay.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i16 %1) #0 {
 entry:

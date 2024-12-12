@@ -4,7 +4,7 @@
 ; freetype/optimized/raster.c.ll
 ; velox/optimized/TimestampConversion.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000005a(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000aa(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -48
   %3 = mul nsw i32 %2, %0

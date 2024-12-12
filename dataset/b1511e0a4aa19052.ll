@@ -19,7 +19,7 @@ entry:
 ; llvm/optimized/AArch64.cpp.ll
 ; llvm/optimized/ARM.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i64 %0) #0 {
+define i32 @func0000000000000061(i64 %0) #0 {
 entry:
   %1 = trunc nuw nsw i64 %0 to i32
   %2 = and i32 %1, 15

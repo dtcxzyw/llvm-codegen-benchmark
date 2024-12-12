@@ -1,13 +1,14 @@
 
-; 471 occurrences:
+; 472 occurrences:
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; clamav/optimized/mpool.c.ll
 ; clamav/optimized/str.c.ll
 ; cmake/optimized/archive_read_support_format_mtree.c.ll
 ; cmake/optimized/archive_write_add_filter_b64encode.c.ll
 ; cmake/optimized/archive_write_add_filter_bzip2.c.ll
 ; cmake/optimized/archive_write_add_filter_compress.c.ll
-; cmake/optimized/archive_write_add_filter_gzip.c.ll
 ; cmake/optimized/archive_write_add_filter_uuencode.c.ll
 ; cmake/optimized/archive_write_add_filter_xz.c.ll
 ; coreutils-rs/optimized/1rcidqes8gd7e6wh.ll

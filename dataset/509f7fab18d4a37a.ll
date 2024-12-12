@@ -1,6 +1,11 @@
 
-; 151 occurrences:
+; 154 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; coreutils-rs/optimized/22bojphyikqmi872.ll
 ; coreutils-rs/optimized/ixpgh0gjooq08dy.ll
 ; darktable/optimized/introspection_ashift.c.ll
@@ -39,7 +44,6 @@
 ; gromacs/optimized/fixpoint.c.ll
 ; gromacs/optimized/slasd4.cpp.ll
 ; gromacs/optimized/tpi.cpp.ll
-; icu/optimized/gregoimp.ll
 ; lightgbm/optimized/feature_histogram.cpp.ll
 ; lightgbm/optimized/metric.cpp.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
@@ -83,7 +87,6 @@
 ; openvdb/optimized/LevelSetMeasure.cc.ll
 ; postgres/optimized/float.ll
 ; postgres/optimized/geo_ops.ll
-; proj/optimized/factory.cpp.ll
 ; proj/optimized/geodesic.c.ll
 ; proj/optimized/imw_p.cpp.ll
 ; quantlib/optimized/abcdmathfunction.ll

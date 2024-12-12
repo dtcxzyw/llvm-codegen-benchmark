@@ -11,7 +11,7 @@ entry:
   ret i1 %4
 }
 
-; 50 occurrences:
+; 66 occurrences:
 ; abseil-cpp/optimized/bernoulli_distribution_test.cc.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/charconv_test.cc.ll
@@ -44,6 +44,21 @@ entry:
 ; abseil-cpp/optimized/uniform_helper_test.cc.ll
 ; abseil-cpp/optimized/uniform_real_distribution_test.cc.ll
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/partition.ll
+; boost/optimized/rational.ll
 ; eastl/optimized/EAString.cpp.ll
 ; entt/optimized/any.cpp.ll
 ; entt/optimized/handle.cpp.ll
@@ -54,6 +69,7 @@ entry:
 ; entt/optimized/meta_prop.cpp.ll
 ; entt/optimized/meta_type.cpp.ll
 ; entt/optimized/registry.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; nuklear/optimized/unity.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; php/optimized/array.ll
@@ -71,9 +87,10 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; eastl/optimized/EAString.cpp.ll
 ; jq/optimized/jv_aux.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; php/optimized/array.ll
 ; ruby/optimized/numeric.ll
 ; Function Attrs: nounwind
@@ -164,7 +181,22 @@ entry:
   ret i1 %4
 }
 
-; 10 occurrences:
+; 25 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/partition.ll
+; boost/optimized/rational.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; graphviz/optimized/mm2gv.c.ll
 ; gromacs/optimized/biasgrid.cpp.ll
@@ -203,6 +235,33 @@ entry:
   %2 = fcmp ogt double %1, 0x3FE6666666666666
   %3 = select i1 %2, double %0, double %1
   %4 = fcmp oge double %3, 0.000000e+00
+  ret i1 %4
+}
+
+; 17 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/partition.ll
+; boost/optimized/rational.ll
+; typst-rs/optimized/4qskctz4kwc33g7b.ll
+; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000025(double %0, double %1) #0 {
+entry:
+  %2 = fcmp olt double %1, 0.000000e+00
+  %3 = select i1 %2, double %0, double %1
+  %4 = fcmp ugt double %3, 0x10000000000000
   ret i1 %4
 }
 
@@ -351,18 +410,6 @@ entry:
   %2 = fcmp oeq double %1, 0.000000e+00
   %3 = select i1 %2, double %0, double %1
   %4 = fcmp olt double %3, 0.000000e+00
-  ret i1 %4
-}
-
-; 2 occurrences:
-; typst-rs/optimized/4qskctz4kwc33g7b.ll
-; typst-rs/optimized/5z4no3nnr5v1s13.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000025(double %0, double %1) #0 {
-entry:
-  %2 = fcmp olt double %1, 0.000000e+00
-  %3 = select i1 %2, double %0, double %1
-  %4 = fcmp ugt double %3, 9.000000e+01
   ret i1 %4
 }
 

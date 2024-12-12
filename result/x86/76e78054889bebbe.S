@@ -1,4 +1,4 @@
-func0000000000000144:                   # @func0000000000000144
+func0000000000000294:                   # @func0000000000000294
 	leaq	-1(%rdi), %rax
 	shrq	%rax
 	addq	$-2, %rdi
@@ -6,7 +6,7 @@ func0000000000000144:                   # @func0000000000000144
 	cmpq	%rax, %rdi
 	setb	%al
 	retq
-func0000000000000148:                   # @func0000000000000148
+func0000000000000298:                   # @func0000000000000298
 	leaq	-2(%rdi), %rax
 	shrq	%rax
 	decq	%rdi

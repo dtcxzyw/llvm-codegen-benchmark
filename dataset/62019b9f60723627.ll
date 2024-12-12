@@ -1,7 +1,8 @@
 
-; 45 occurrences:
+; 48 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; abseil-cpp/optimized/int128_test.cc.ll
+; boost/optimized/to_chars.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; delta-rs/optimized/1rw3q64nilk4jthd.ll
 ; delta-rs/optimized/264wku5om6u5pdmz.ll
@@ -45,6 +46,8 @@
 ; velox/optimized/Sequence.cpp.ll
 ; velox/optimized/Timestamp.cpp.ll
 ; velox/optimized/TimestampWithTimeZoneType.cpp.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i128 @func0000000000000001(i128 %0) #0 {
 entry:
@@ -52,7 +55,7 @@ entry:
   ret i128 %1
 }
 
-; 38 occurrences:
+; 40 occurrences:
 ; abseil-cpp/optimized/bernoulli_distribution_test.cc.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/bit_gen_ref_test.cc.ll
@@ -69,6 +72,7 @@ entry:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; abseil-cpp/optimized/uniform_real_distribution_test.cc.ll
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
+; boost/optimized/from_chars.ll
 ; coreutils-rs/optimized/3qd2nnv0mbtxq1wn.ll
 ; coreutils-rs/optimized/4kgtcn9evb3aj2za.ll
 ; coreutils-rs/optimized/4o7j3eorsq1l9mcp.ll
@@ -91,6 +95,7 @@ entry:
 ; velox/optimized/HugeInt.cpp.ll
 ; wasmtime-rs/optimized/93h427h9qgxa6fr.ll
 ; wasmtime-rs/optimized/vl32czxhityl01k.ll
+; zed-rs/optimized/9ydmyaey957xyuywtl3djlzml.ll
 ; Function Attrs: nounwind
 define i128 @func0000000000000000(i128 %0) #0 {
 entry:

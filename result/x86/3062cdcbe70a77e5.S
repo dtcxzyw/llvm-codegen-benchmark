@@ -17,8 +17,8 @@ func0000000000000002:                   # @func0000000000000002
 	cmoveq	%rsi, %rax
 	retq
 func0000000000000001:                   # @func0000000000000001
-	leaq	(%rsi,%rsi), %rcx
+	leaq	(,%rsi,8), %rcx
+	xorl	%eax, %eax
 	testb	$1, %dil
-	movl	$4096, %eax                     # imm = 0x1000
 	cmoveq	%rcx, %rax
 	retq

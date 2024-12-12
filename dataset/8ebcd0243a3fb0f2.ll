@@ -1,5 +1,5 @@
 
-; 56 occurrences:
+; 55 occurrences:
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/MD5.c.ll
 ; cmake/optimized/archive_ppmd7.c.ll
@@ -51,7 +51,6 @@
 ; spike/optimized/kmmawt_u.ll
 ; spike/optimized/kstas32.ll
 ; spike/optimized/kstsa32.ll
-; spike/optimized/vsadd_vi.ll
 ; spike/optimized/vsadd_vv.ll
 ; spike/optimized/vsadd_vx.ll
 ; velox/optimized/md5.cpp.ll

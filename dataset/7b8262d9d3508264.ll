@@ -3,7 +3,7 @@
 ; cpython/optimized/_testbuffer.ll
 ; folly/optimized/MemoryMapping.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000039(i1 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000059(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, 32
   %.not = icmp eq i32 %2, -1
@@ -24,7 +24,7 @@ entry:
 ; redis/optimized/lolwut5.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i1 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000042(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, 16
   %4 = icmp eq i32 %2, 0
@@ -77,7 +77,7 @@ entry:
 ; wireshark/optimized/packet-snort.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000023(i1 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000043(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, 16
   %4 = icmp eq i32 %2, 0
@@ -104,10 +104,10 @@ entry:
 ; eastl/optimized/TestBitset.cpp.ll
 ; z3/optimized/util.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000029(i1 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000069(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, 8
-  %4 = icmp ult i32 %2, 256
+  %4 = icmp samesign ult i32 %2, 256
   %5 = select i1 %4, i32 %1, i32 %3
   %6 = or disjoint i32 %5, 4
   %7 = select i1 %0, i32 %5, i32 %6

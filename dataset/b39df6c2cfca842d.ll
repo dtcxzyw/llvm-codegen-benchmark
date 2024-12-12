@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 31 occurrences:
 ; cpython/optimized/unicodeobject.ll
 ; freetype/optimized/cff.c.ll
 ; hyperscan/optimized/castle.c.ll
@@ -15,6 +15,8 @@
 ; linux/optimized/nf_nat_helper.ll
 ; linux/optimized/rx.ll
 ; linux/optimized/tcp_offload.ll
+; lvgl/optimized/lv_obj.ll
+; lvgl/optimized/lv_obj_style.ll
 ; minetest/optimized/connection.cpp.ll
 ; openexr/optimized/ImfWav.cpp.ll
 ; openexr/optimized/internal_piz.c.ll
@@ -28,6 +30,7 @@
 ; wireshark/optimized/packet-ipv6.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wireshark/optimized/packet-teredo.c.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i16 %0) #0 {
 entry:
@@ -36,11 +39,10 @@ entry:
   ret i32 %2
 }
 
-; 18 occurrences:
+; 22 occurrences:
 ; hermes/optimized/Object.cpp.ll
 ; icu/optimized/numparse_decimal.ll
 ; icu/optimized/ucharstrie.ll
-; libevent/optimized/event.c.ll
 ; linux/optimized/ds.ll
 ; linux/optimized/i386.ll
 ; linux/optimized/mlme.ll
@@ -48,6 +50,11 @@ entry:
 ; linux/optimized/regset.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
 ; llvm/optimized/SemaConcept.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; lvgl/optimized/lv_switch.ll
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; qemu/optimized/hw_net_virtio-net.c.ll
 ; qemu/optimized/hw_pci_pcie.c.ll

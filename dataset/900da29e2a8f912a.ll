@@ -1,5 +1,8 @@
 
-; 88 occurrences:
+; 91 occurrences:
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/within.ll
 ; brotli/optimized/metablock.c.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/kinsol.c.ll
@@ -15,6 +18,7 @@
 ; graphviz/optimized/node_distinct_coloring.c.ll
 ; graphviz/optimized/shortest.c.ll
 ; graphviz/optimized/sparse_solve.c.ll
+; gromacs/optimized/cellsizes.cpp.ll
 ; gromacs/optimized/dlasq4.cpp.ll
 ; gromacs/optimized/gmx_bar.cpp.ll
 ; gromacs/optimized/xvgr.cpp.ll
@@ -27,7 +31,6 @@
 ; msdfgen/optimized/contour-combiners.cpp.ll
 ; openblas/optimized/dgesvd.c.ll
 ; openblas/optimized/dlaln2.c.ll
-; openblas/optimized/dlaqp2rk.c.ll
 ; openblas/optimized/dlaqp3rk.c.ll
 ; openblas/optimized/dlaqtr.c.ll
 ; openblas/optimized/dlatrs.c.ll
@@ -173,8 +176,21 @@ entry:
   ret i1 %4
 }
 
-; 21 occurrences:
+; 33 occurrences:
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/partition.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/scpgen.cpp.ll
 ; graphviz/optimized/geom.c.ll
 ; graphviz/optimized/poly.c.ll
@@ -191,7 +207,6 @@ entry:
 ; opencv/optimized/rho.cpp.ll
 ; php/optimized/array.ll
 ; postgres/optimized/geo_ops.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; quantlib/optimized/integral.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
@@ -203,8 +218,16 @@ entry:
   ret i1 %4
 }
 
-; 101 occurrences:
+; 99 occurrences:
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/partition.ll
+; boost/optimized/within.ll
+; boost/optimized/within_sph_geo.ll
 ; casadi/optimized/qrsqp.cpp.ll
 ; casadi/optimized/sqpmethod.cpp.ll
 ; darktable/optimized/introspection_ashift.c.ll
@@ -237,7 +260,6 @@ entry:
 ; openblas/optimized/dgelst.c.ll
 ; openblas/optimized/dgelsx.c.ll
 ; openblas/optimized/dgelsy.c.ll
-; openblas/optimized/dgesdd.c.ll
 ; openblas/optimized/dgesvd.c.ll
 ; openblas/optimized/dgges.c.ll
 ; openblas/optimized/dgges3.c.ll
@@ -245,15 +267,8 @@ entry:
 ; openblas/optimized/dggev.c.ll
 ; openblas/optimized/dggev3.c.ll
 ; openblas/optimized/dggevx.c.ll
-; openblas/optimized/dsbevd.c.ll
-; openblas/optimized/dspevd.c.ll
 ; openblas/optimized/dstemr.c.ll
-; openblas/optimized/dstevd.c.ll
-; openblas/optimized/dsyevd.c.ll
-; openblas/optimized/dsyevr.c.ll
-; openblas/optimized/dsyevr_2stage.c.ll
 ; openblas/optimized/dsyevx.c.ll
-; openblas/optimized/dsyevx_2stage.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; opencv/optimized/colored_kinfu.cpp.ll
 ; opencv/optimized/conjugate_gradient.cpp.ll
@@ -284,11 +299,9 @@ entry:
 ; openvdb/optimized/RayTracer.cc.ll
 ; postgres/optimized/costsize.ll
 ; proj/optimized/4D_api.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; proj/optimized/generic_inverse.cpp.ll
 ; proj/optimized/grids.cpp.ll
 ; proj/optimized/horner.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; quantlib/optimized/bondfunctions.ll
 ; quantlib/optimized/cashflows.ll
 ; quantlib/optimized/creditdefaultswap.ll
@@ -313,7 +326,7 @@ entry:
   ret i1 %4
 }
 
-; 110 occurrences:
+; 117 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
@@ -322,6 +335,14 @@ entry:
 ; abseil-cpp/optimized/gaussian_distribution_test.cc.ll
 ; abseil-cpp/optimized/uniform_real_distribution_test.cc.ll
 ; assimp/optimized/sweep.cc.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; cpython/optimized/cmathmodule.ll
 ; cpython/optimized/complexobject.ll
 ; cvc5/optimized/SimpSolver.cc.ll
@@ -396,7 +417,6 @@ entry:
 ; openvdb/optimized/Merge.cc.ll
 ; openvdb/optimized/ValueTransformer.cc.ll
 ; postgres/optimized/hash.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; proj/optimized/tpeqd.cpp.ll
 ; quantlib/optimized/analyticgjrgarchengine.ll
 ; quantlib/optimized/andreasenhugevolatilityinterpl.ll
@@ -458,7 +478,8 @@ entry:
   ret i1 %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/intersection_box.ll
 ; graphviz/optimized/dotsplines.c.ll
 ; gromacs/optimized/gmx_bar.cpp.ll
 ; meshlab/optimized/filter_developability.cpp.ll
@@ -477,6 +498,7 @@ entry:
 
 ; 15 occurrences:
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/kinsol.c.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
 ; graphviz/optimized/emit.c.ll
@@ -487,7 +509,6 @@ entry:
 ; opencv/optimized/tldDetector.cpp.ll
 ; php/optimized/array.ll
 ; proj/optimized/metadata.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll

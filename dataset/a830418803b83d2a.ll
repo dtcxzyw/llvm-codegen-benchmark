@@ -14,10 +14,9 @@ entry:
   ret double %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; gromacs/optimized/gmx_bar.cpp.ll
-; opencv/optimized/trackerKCF.cpp.ll
 ; quantlib/optimized/localvolsurface.ll
 ; quantlib/optimized/noarbsabr.ll
 ; Function Attrs: nounwind

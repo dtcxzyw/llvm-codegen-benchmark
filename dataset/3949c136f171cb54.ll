@@ -1,13 +1,13 @@
 
-%"class.WasmEdge::Variant.2653376" = type { %"union.WasmEdge::VariadicUnion.2653377" }
-%"union.WasmEdge::VariadicUnion.2653377" = type { %"union.WasmEdge::VariadicUnion.0.2653378" }
-%"union.WasmEdge::VariadicUnion.0.2653378" = type { %"union.WasmEdge::VariadicUnion.1.2653379" }
-%"union.WasmEdge::VariadicUnion.1.2653379" = type { %"union.WasmEdge::VariadicUnion.2.2653380" }
-%"union.WasmEdge::VariadicUnion.2.2653380" = type { %"union.WasmEdge::VariadicUnion.3.2653381" }
-%"union.WasmEdge::VariadicUnion.3.2653381" = type { %"union.WasmEdge::VariadicUnion.4.2653382" }
-%"union.WasmEdge::VariadicUnion.4.2653382" = type { %"union.WasmEdge::VariadicUnion.5.2653383" }
-%"union.WasmEdge::VariadicUnion.5.2653383" = type { i128 }
-%"class.llvm::Use.3045680" = type { ptr, ptr, ptr, ptr }
+%"class.WasmEdge::Variant.2766589" = type { %"union.WasmEdge::VariadicUnion.2766590" }
+%"union.WasmEdge::VariadicUnion.2766590" = type { %"union.WasmEdge::VariadicUnion.0.2766591" }
+%"union.WasmEdge::VariadicUnion.0.2766591" = type { %"union.WasmEdge::VariadicUnion.1.2766592" }
+%"union.WasmEdge::VariadicUnion.1.2766592" = type { %"union.WasmEdge::VariadicUnion.2.2766593" }
+%"union.WasmEdge::VariadicUnion.2.2766593" = type { %"union.WasmEdge::VariadicUnion.3.2766594" }
+%"union.WasmEdge::VariadicUnion.3.2766594" = type { %"union.WasmEdge::VariadicUnion.4.2766595" }
+%"union.WasmEdge::VariadicUnion.4.2766595" = type { %"union.WasmEdge::VariadicUnion.5.2766596" }
+%"union.WasmEdge::VariadicUnion.5.2766596" = type { i128 }
+%"class.llvm::Use.3239024" = type { ptr, ptr, ptr, ptr }
 
 ; 12 occurrences:
 ; abc/optimized/inffast.c.ll
@@ -27,13 +27,13 @@ define i64 @func0000000000000018(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %"class.WasmEdge::Variant.2653376", ptr %1, i64 %4
+  %5 = getelementptr nusw %"class.WasmEdge::Variant.2766589", ptr %1, i64 %4
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %0, %6
   ret i64 %7
 }
 
-; 89 occurrences:
+; 88 occurrences:
 ; abc/optimized/inffast.c.ll
 ; cmake/optimized/inffast.c.ll
 ; gromacs/optimized/inffast.c.ll
@@ -97,7 +97,6 @@ entry:
 ; llvm/optimized/MemorySanitizer.cpp.ll
 ; llvm/optimized/OMPIRBuilder.cpp.ll
 ; llvm/optimized/OpenMPOpt.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/RewriteStatepointsForGC.cpp.ll
@@ -142,7 +141,7 @@ define i64 @func0000000000000050(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr %"class.llvm::Use.3045680", ptr %1, i64 %4
+  %5 = getelementptr %"class.llvm::Use.3239024", ptr %1, i64 %4
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %0, %6
   ret i64 %7

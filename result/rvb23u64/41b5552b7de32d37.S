@@ -1,4 +1,4 @@
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	subw	a1, a1, a2
 	srlw	a0, a1, a0
 	sltiu	a0, a0, 16
@@ -8,8 +8,13 @@ func0000000000000001:                   # @func0000000000000001
 	srlw	a0, a1, a0
 	seqz	a0, a0
 	ret
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	subw	a1, a1, a2
 	srlw	a0, a1, a0
 	seqz	a0, a0
+	ret
+func0000000000000004:                   # @func0000000000000004
+	subw	a1, a1, a2
+	srlw	a0, a1, a0
+	sltiu	a0, a0, 16
 	ret

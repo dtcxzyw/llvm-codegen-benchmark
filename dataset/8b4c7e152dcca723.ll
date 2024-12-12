@@ -1,10 +1,8 @@
 
-; 24 occurrences:
+; 21 occurrences:
 ; darktable/optimized/introspection_liquify.c.ll
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
 ; flatbuffers/optimized/reflection.cpp.ll
-; libpng/optimized/pngread.c.ll
-; libpng/optimized/pngwrite.c.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; nori/optimized/texture_gl.cpp.ll
 ; nuttx/optimized/mempool.c.ll
@@ -22,7 +20,6 @@
 ; opencv/optimized/grfmt_exr.cpp.ll
 ; opencv/optimized/matrix.cpp.ll
 ; openjdk/optimized/os_linux.ll
-; openjdk/optimized/pngread.ll
 ; pbrt-v4/optimized/image.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
@@ -33,16 +30,14 @@ entry:
   ret ptr %5
 }
 
-; 10 occurrences:
+; 8 occurrences:
 ; freetype/optimized/raster.c.ll
-; libpng/optimized/pngread.c.ll
 ; oiio/optimized/exrinput.cpp.ll
 ; oiio/optimized/exroutput.cpp.ll
 ; opencv/optimized/array.cpp.ll
 ; opencv/optimized/grfmt_exr.cpp.ll
 ; openexr/optimized/ImfCompositeDeepScanLine.cpp.ll
 ; openjdk/optimized/X11SurfaceData.ll
-; openjdk/optimized/pngread.ll
 ; pbrt-v4/optimized/image.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000016(ptr %0, i64 %1, i64 %2) #0 {
@@ -50,6 +45,31 @@ entry:
   %3 = mul nsw i64 %1, %2
   %4 = sub nsw i64 0, %3
   %5 = getelementptr nusw i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 2 occurrences:
+; libpng/optimized/pngread.c.ll
+; openjdk/optimized/pngread.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000017(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul nsw i64 %1, %2
+  %4 = sub nsw i64 0, %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 3 occurrences:
+; libpng/optimized/pngread.c.ll
+; libpng/optimized/pngwrite.c.ll
+; openjdk/optimized/pngread.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = mul i64 %1, %2
+  %4 = sub i64 0, %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 

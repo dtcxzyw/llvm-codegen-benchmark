@@ -55,7 +55,7 @@ entry:
   ret i32 %3
 }
 
-; 348 occurrences:
+; 353 occurrences:
 ; abc/optimized/cuddReorder.c.ll
 ; abc/optimized/cuddTable.c.ll
 ; abc/optimized/giaPat2.c.ll
@@ -67,6 +67,8 @@ entry:
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/tz.cpp.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; clamav/optimized/Bra.c.ll
@@ -105,7 +107,6 @@ entry:
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; linux/optimized/af_netlink.ll
 ; linux/optimized/badblocks.ll
-; linux/optimized/bitmap-str.ll
 ; linux/optimized/calipso.ll
 ; linux/optimized/dev_addr_lists.ll
 ; linux/optimized/dma-ring.ll
@@ -253,6 +254,8 @@ entry:
 ; luajit/optimized/minilua.ll
 ; luau/optimized/CodeGenA64.cpp.ll
 ; luau/optimized/CodeGenAssembly.cpp.ll
+; lvgl/optimized/lv_demo_render.ll
+; lvgl/optimized/lv_roller.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshoptimizer/optimized/indexcodec.cpp.ll
 ; minetest/optimized/server.cpp.ll
@@ -287,6 +290,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-rc2_cbc.ll
 ; openusd/optimized/entdec.c.ll
 ; openusd/optimized/resize.c.ll
+; openusd/optimized/stbImage.cpp.ll
 ; openusd/optimized/warped_motion.c.ll
 ; php/optimized/ir_emit.ll
 ; postgres/optimized/arrayfuncs.ll
@@ -299,6 +303,7 @@ entry:
 ; qemu/optimized/system_memory.c.ll
 ; quantlib/optimized/date.ll
 ; quickjs/optimized/quickjs.ll
+; raylib/optimized/rtextures.c.ll
 ; regex-rs/optimized/4sqmacerw61c696o.ll
 ; regex-rs/optimized/6f4i3c8223u3bmw.ll
 ; ruby/optimized/util.ll
@@ -412,7 +417,7 @@ entry:
   ret i32 %3
 }
 
-; 205 occurrences:
+; 210 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcDar.c.ll
@@ -459,7 +464,6 @@ entry:
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/ivySeq.c.ll
 ; abc/optimized/ivyUtil.c.ll
-; abc/optimized/kitHop.c.ll
 ; abc/optimized/mioFunc.c.ll
 ; abc/optimized/pdrTsim.c.ll
 ; abc/optimized/pdrTsim3.c.ll
@@ -474,6 +478,8 @@ entry:
 ; abc/optimized/sswIslands.c.ll
 ; abc/optimized/wlnRead.c.ll
 ; assimp/optimized/LWOLoader.cpp.ll
+; boost/optimized/ipv6_address_rule.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; cmake/optimized/zstd_opt.c.ll
@@ -530,12 +536,16 @@ entry:
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/intel_bios.ll
 ; linux/optimized/mmconfig-shared.ll
-; linux/optimized/mmconfig_64.ll
+; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/VectorUtils.cpp.ll
 ; lua/optimized/lcode.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_draw_label.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/glarea.cpp.ll
@@ -626,7 +636,7 @@ entry:
   ret i32 %3
 }
 
-; 93 occurrences:
+; 91 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
@@ -655,12 +665,10 @@ entry:
 ; libjpeg-turbo/optimized/jquant2.c.ll
 ; libwebp/optimized/lossless_enc.c.ll
 ; libwebp/optimized/rescaler_sse2.c.ll
-; lightgbm/optimized/data_parallel_tree_learner.cpp.ll
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
 ; linux/optimized/regset.ll
-; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
 ; luau/optimized/BytecodeBuilder.cpp.ll
+; lvgl/optimized/lv_draw_sw_line.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshoptimizer/optimized/overdrawanalyzer.cpp.ll
 ; minetest/optimized/cavegen.cpp.ll
@@ -767,15 +775,15 @@ entry:
 
 ; 16 occurrences:
 ; abc/optimized/abc.c.ll
-; abc/optimized/exor.c.ll
 ; cmake/optimized/divsufsort.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; icu/optimized/bytesinkutil.ll
 ; icu/optimized/number_decimalquantity.ll
 ; libwebp/optimized/picture_tools_enc.c.ll
+; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
 ; luajit/optimized/lib_string.ll
 ; luajit/optimized/lib_string_dyn.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; openjdk/optimized/classFileParser.ll
 ; openjdk/optimized/relocator.ll
 ; openjdk/optimized/sharedRuntimeTrig.ll

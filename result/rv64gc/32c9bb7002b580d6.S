@@ -11,7 +11,7 @@ func0000000000000008:                   # @func0000000000000008
 	sltu	a1, a2, a1
 	and	a0, a0, a1
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	mul	a1, a1, a2
 	sgtz	a1, a1
 	and	a0, a0, a1

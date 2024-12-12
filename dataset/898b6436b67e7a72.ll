@@ -1,12 +1,11 @@
 
-; 45 occurrences:
+; 44 occurrences:
 ; abc/optimized/ifDec07.c.ll
 ; clamav/optimized/bytecode_vm.c.ll
 ; cpython/optimized/longobject.ll
 ; cvc5/optimized/minisat.cpp.ll
 ; flac/optimized/stream_decoder.c.ll
 ; gromacs/optimized/checkpoint.cpp.ll
-; gromacs/optimized/xdrd.cpp.ll
 ; hermes/optimized/DebugInfo.cpp.ll
 ; icu/optimized/ucurr.ll
 ; libuv/optimized/linux.c.ll
@@ -54,7 +53,7 @@ entry:
   ret i64 %4
 }
 
-; 36 occurrences:
+; 35 occurrences:
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/giaAgi.c.ll
@@ -81,7 +80,6 @@ entry:
 ; openspiel/optimized/TransTableL.cpp.ll
 ; openspiel/optimized/TransTableS.cpp.ll
 ; postgres/optimized/aset.ll
-; qemu/optimized/util_filemonitor-inotify.c.ll
 ; redis/optimized/hyperloglog.ll
 ; ruby/optimized/array.ll
 ; ruby/optimized/encoding.ll
@@ -96,7 +94,7 @@ define i64 @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = shl nsw i64 %2, 22
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
@@ -107,7 +105,7 @@ define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = shl i64 %2, 34
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 

@@ -1,4 +1,4 @@
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	sext.w	a2, a0
 	addiw	a3, a1, 1
 	blt	a3, a2, .LBB0_2
@@ -12,7 +12,7 @@ func0000000000000008:                   # @func0000000000000008
 	addiw	a0, a1, -3
 .LBB1_2:                                # %entry
 	ret
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	sext.w	a2, a0
 	addiw	a3, a1, 16
 	blt	a2, a3, .LBB2_2

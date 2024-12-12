@@ -1,4 +1,4 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	orl	%edx, %esi
 	orl	%edi, %esi
 	cmpb	$63, %sil
@@ -30,10 +30,4 @@ func000000000000000c:                   # @func000000000000000c
 	orl	%edx, %esi
 	orb	%sil, %dil
 	setne	%al
-	retq
-func0000000000000038:                   # @func0000000000000038
-	orl	%edx, %esi
-	orl	%edi, %esi
-	cmpb	$4, %sil
-	setae	%al
 	retq

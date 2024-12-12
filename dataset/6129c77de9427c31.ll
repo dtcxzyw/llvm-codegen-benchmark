@@ -16,20 +16,19 @@ entry:
   ret i1 %6
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; arrow/optimized/UriNormalize.c.ll
 ; gromacs/optimized/cluster_methods.cpp.ll
 ; icu/optimized/ucnvhz.ll
 ; opencv/optimized/datablock.cpp.ll
 ; openjdk/optimized/c1_Compilation.ll
 ; php/optimized/rfc1867.ll
-; proj/optimized/wkt_parser.cpp.ll
 ; velox/optimized/CastExpr.cpp.ll
 ; yosys/optimized/formalff.ll
 ; zxing/optimized/DMDataBlock.cpp.ll
 ; zxing/optimized/QRDataBlock.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i32
@@ -42,7 +41,7 @@ entry:
 ; arrow/optimized/UriRecompose.c.ll
 ; openjdk/optimized/c1_CodeStubs_x86.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i32
@@ -63,7 +62,7 @@ entry:
 ; openjdk/optimized/hb-ot-color.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000068(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i32
@@ -78,7 +77,7 @@ entry:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i32
@@ -116,7 +115,7 @@ entry:
 ; opencv/optimized/datablock.cpp.ll
 ; velox/optimized/CastExpr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i32
@@ -159,7 +158,7 @@ entry:
 ; quantlib/optimized/unitedkingdom.ll
 ; quantlib/optimized/unitedstates.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000221(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = trunc i64 %3 to i32
@@ -171,7 +170,7 @@ entry:
 ; 1 occurrences:
 ; quantlib/optimized/brazil.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011c(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000022c(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = trunc i64 %3 to i32
@@ -204,7 +203,7 @@ entry:
 ; yosys/optimized/calc.ll
 ; yosys/optimized/simplify.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i32
@@ -218,7 +217,7 @@ entry:
 ; yosys/optimized/aigerparse.ll
 ; yosys/optimized/verilog_backend.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000066(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i32
@@ -231,7 +230,7 @@ entry:
 ; llvm/optimized/ConstraintElimination.cpp.ll
 ; llvm/optimized/MachineIRBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i32
@@ -243,7 +242,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/blk-map.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000131(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000261(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = trunc i64 %3 to i32
@@ -269,7 +268,7 @@ entry:
 ; 1 occurrences:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000048(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i32

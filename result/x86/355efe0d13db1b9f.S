@@ -51,7 +51,7 @@ func0000000000000003:                   # @func0000000000000003
 	.long	0x3f800000                      # float 1
 func0000000000000008:                   # @func0000000000000008
 	vaddss	.LCPI7_0(%rip), %xmm1, %xmm1
-	vcmpeqss	%xmm0, %xmm1, %k0
+	vcmpeqss	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 .LCPI8_0:

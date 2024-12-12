@@ -1,8 +1,9 @@
 
-; 25 occurrences:
+; 27 occurrences:
 ; darktable/optimized/SamsungV1Decompressor.cpp.ll
 ; darktable/optimized/StiDecoder.cpp.ll
 ; eastl/optimized/EAScanfCore.cpp.ll
+; icu/optimized/ucptrie.ll
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; linux/optimized/devinet.ll
@@ -16,6 +17,7 @@
 ; llvm/optimized/RISCVVectorPeephole.cpp.ll
 ; luajit/optimized/lj_crecord.ll
 ; luajit/optimized/lj_crecord_dyn.ll
+; meshlab/optimized/filter_sketchfab.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; nuttx/optimized/lib_strtold.c.ll
 ; php/optimized/pcre2_compile.ll
@@ -52,32 +54,6 @@ define i1 @func000000000000000c(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 7
   %4 = icmp ne i32 %3, 7
-  %5 = select i1 %0, i1 %1, i1 false
-  %6 = and i1 %4, %5
-  ret i1 %6
-}
-
-; 3 occurrences:
-; icu/optimized/normalizer2impl.ll
-; luajit/optimized/lj_strfmt_num.ll
-; luajit/optimized/lj_strfmt_num_dyn.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 254
-  %4 = icmp ugt i32 %3, 5
-  %5 = select i1 %0, i1 %1, i1 false
-  %6 = and i1 %4, %5
-  ret i1 %6
-}
-
-; 1 occurrences:
-; opencv/optimized/ts_func.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 510
-  %4 = icmp eq i32 %3, 0
   %5 = select i1 %0, i1 %1, i1 false
   %6 = and i1 %4, %5
   ret i1 %6

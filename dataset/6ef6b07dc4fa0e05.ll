@@ -28,7 +28,7 @@ entry:
 ; llvm/optimized/X86InstructionSelector.cpp.ll
 ; wireshark/optimized/packet-ospf.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1, i16 %2) #0 {
+define i32 @func0000000000000024(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = add nsw i16 %2, -149
   %4 = icmp ult i16 %3, 2

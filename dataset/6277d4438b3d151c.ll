@@ -1,14 +1,13 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; eastl/optimized/TestBitset.cpp.ll
 ; linux/optimized/hugetlb.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mmu_gather.ll
 ; linux/optimized/mprotect.ll
 ; llvm/optimized/AArch64.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i16 %1, i16 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = and i16 %2, 4096
   %4 = icmp eq i16 %3, 0

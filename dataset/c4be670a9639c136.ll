@@ -38,7 +38,7 @@ entry:
   ret i1 %4
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; hdf5/optimized/H5Tconv_vlen.c.ll
 ; ockam-rs/optimized/1d1qxhuj8x85dazd.ll
 ; ockam-rs/optimized/4h15go5rbmdr09f8.ll
@@ -48,8 +48,9 @@ entry:
 ; rust-analyzer-rs/optimized/4wjr9n8d5oomu43d.ll
 ; slurm/optimized/node_scheduler.ll
 ; syn/optimized/10g9nn9r9o3auy7y.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(ptr %0, i8 %1) #0 {
+define i1 @func000000000000004c(ptr %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp ne ptr %0, null
@@ -81,7 +82,7 @@ entry:
 ; actix-rs/optimized/3afp9uuicyvwgbsz.ll
 ; wasmtime-rs/optimized/22yyfxyxsnty4v9s.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, i8 %1) #0 {
+define i1 @func0000000000000041(ptr %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp eq ptr %0, null

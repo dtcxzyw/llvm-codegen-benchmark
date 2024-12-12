@@ -191,7 +191,7 @@
 define i128 @func0000000000000003(i128 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i128
-  %3 = mul nuw nsw i128 %2, %0
+  %3 = mul nuw nsw i128 %0, %2
   ret i128 %3
 }
 
@@ -201,7 +201,7 @@ entry:
 define i128 @func0000000000000007(i128 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i128
-  %3 = mul nuw nsw i128 %2, %0
+  %3 = mul nuw nsw i128 %0, %2
   ret i128 %3
 }
 
@@ -317,7 +317,7 @@ entry:
 define i128 @func0000000000000002(i128 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i128
-  %3 = mul nuw i128 %2, %0
+  %3 = mul nuw i128 %0, %2
   ret i128 %3
 }
 
@@ -327,17 +327,18 @@ entry:
 define i128 @func0000000000000001(i128 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i128
-  %3 = mul nsw i128 %2, %0
+  %3 = mul nsw i128 %0, %2
   ret i128 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; abseil-cpp/optimized/numbers_test.cc.ll
+; boost/optimized/from_chars.ll
 ; Function Attrs: nounwind
 define i128 @func0000000000000004(i128 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i128
-  %3 = mul i128 %2, %0
+  %3 = mul i128 %0, %2
   ret i128 %3
 }
 
@@ -347,7 +348,7 @@ entry:
 define i128 @func0000000000000005(i128 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i128
-  %3 = mul nsw i128 %2, %0
+  %3 = mul nsw i128 %0, %2
   ret i128 %3
 }
 

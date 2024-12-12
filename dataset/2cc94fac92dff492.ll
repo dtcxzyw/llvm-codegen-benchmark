@@ -64,11 +64,11 @@
 ; yalantinglibs/optimized/MessageGenerator.cpp.ll
 ; yosys/optimized/viz.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
   %3 = freeze ptr %0
-  %4 = getelementptr nusw ptr, ptr %3, i64 %2
+  %4 = getelementptr nusw nuw ptr, ptr %3, i64 %2
   ret ptr %4
 }
 

@@ -19,7 +19,7 @@ define i64 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 2
-  %4 = mul i32 %3, %0
+  %4 = mul i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }
@@ -36,7 +36,7 @@ define i64 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 3
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }
@@ -66,10 +66,8 @@ entry:
   ret i64 %5
 }
 
-; 14 occurrences:
-; gromacs/optimized/dorg2r.cpp.ll
+; 10 occurrences:
 ; gromacs/optimized/dorgl2.cpp.ll
-; gromacs/optimized/sorg2r.cpp.ll
 ; gromacs/optimized/sorgl2.cpp.ll
 ; openblas/optimized/dgges.c.ll
 ; openblas/optimized/dgges3.c.ll
@@ -77,10 +75,8 @@ entry:
 ; openblas/optimized/dorbdb.c.ll
 ; openblas/optimized/dorbdb1.c.ll
 ; openblas/optimized/dorg2r.c.ll
-; openblas/optimized/dorgl2.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; openblas/optimized/dtgsen.c.ll
-; openblas/optimized/dtgsna.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000d(i32 %0, i64 %1) #0 {
 entry:
@@ -98,7 +94,7 @@ define i64 @func0000000000000004(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add nsw i32 %2, -1
-  %4 = mul i32 %3, %0
+  %4 = mul i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }

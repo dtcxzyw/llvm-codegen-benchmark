@@ -62,27 +62,6 @@ entry:
   ret i64 %4
 }
 
-; 11 occurrences:
-; abc/optimized/abcIf.c.ll
-; arrow/optimized/basic_decimal.cc.ll
-; harfbuzz/optimized/harfbuzz.cc.ll
-; harfbuzz/optimized/hb-subset-cff-common.cc.ll
-; harfbuzz/optimized/hb-subset-cff1.cc.ll
-; harfbuzz/optimized/hb-subset-cff2.cc.ll
-; harfbuzz/optimized/hb-subset-plan.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
-; linux/optimized/bitmap.ll
-; openjdk/optimized/hb-ot-layout.ll
-; openjdk/optimized/hb-set.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000007(i32 %0, i32 %1) #0 {
-entry:
-  %2 = lshr i32 %1, 6
-  %3 = sub nuw nsw i32 %0, %2
-  %4 = zext nneg i32 %3 to i64
-  ret i64 %4
-}
-
 ; 6 occurrences:
 ; flac/optimized/metadata_iterators.c.ll
 ; flac/optimized/metadata_object.c.ll
@@ -96,6 +75,19 @@ entry:
   %2 = lshr i32 %1, 3
   %3 = sub nuw i32 %0, %2
   %4 = zext i32 %3 to i64
+  ret i64 %4
+}
+
+; 3 occurrences:
+; abc/optimized/abcIf.c.ll
+; arrow/optimized/basic_decimal.cc.ll
+; linux/optimized/bitmap.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000007(i32 %0, i32 %1) #0 {
+entry:
+  %2 = lshr i32 %1, 24
+  %3 = sub nuw nsw i32 %0, %2
+  %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
 

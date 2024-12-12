@@ -43,7 +43,7 @@ entry:
   ret i64 %4
 }
 
-; 31 occurrences:
+; 30 occurrences:
 ; abc/optimized/ioReadBaf.c.ll
 ; ceres/optimized/schur_eliminator_2_d_d.cc.ll
 ; ceres/optimized/schur_eliminator_d_d_d.cc.ll
@@ -55,7 +55,6 @@ entry:
 ; darktable/optimized/introspection_hotpixels.c.ll
 ; flac/optimized/fixed.c.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; gromacs/optimized/block.cpp.ll
 ; gromacs/optimized/grompp.cpp.ll
 ; gromacs/optimized/lincs.cpp.ll

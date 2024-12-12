@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; stb/optimized/stb_easy_font.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000541(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 64
   %4 = icmp sgt i32 %3, %0
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001bc(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000056c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = icmp sge i32 %3, %0
@@ -48,7 +48,7 @@ entry:
 ; icu/optimized/writesrc.ll
 ; icu/optimized/wrtxml.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000042c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = icmp eq i32 %3, %0

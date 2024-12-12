@@ -12,7 +12,7 @@ func000000000000003b:                   # @func000000000000003b
 func000000000000000e:                   # @func000000000000000e
 	vpsllq	$3, %ymm2, %ymm2
 	vpandq	.LCPI1_0(%rip){1to4}, %ymm2, %ymm2
-	vpternlogq	$254, %ymm1, %ymm0, %ymm2 # ymm2 = ymm2 | ymm0 | ymm1
+	vpternlogq	$254, %ymm0, %ymm1, %ymm2 # ymm2 = ymm2 | ymm1 | ymm0
 	vpmovqd	%ymm2, %xmm0
 	vzeroupper
 	retq
@@ -21,7 +21,7 @@ func000000000000000e:                   # @func000000000000000e
 func0000000000000002:                   # @func0000000000000002
 	vpsllq	$3, %ymm2, %ymm2
 	vpandq	.LCPI2_0(%rip){1to4}, %ymm2, %ymm2
-	vpternlogq	$254, %ymm1, %ymm0, %ymm2 # ymm2 = ymm2 | ymm0 | ymm1
+	vpternlogq	$254, %ymm0, %ymm1, %ymm2 # ymm2 = ymm2 | ymm1 | ymm0
 	vpmovqd	%ymm2, %xmm0
 	vzeroupper
 	retq
@@ -30,7 +30,7 @@ func0000000000000002:                   # @func0000000000000002
 func000000000000000f:                   # @func000000000000000f
 	vpsllq	$4, %ymm2, %ymm2
 	vpandq	.LCPI3_0(%rip){1to4}, %ymm2, %ymm2
-	vpternlogq	$254, %ymm1, %ymm0, %ymm2 # ymm2 = ymm2 | ymm0 | ymm1
+	vpternlogq	$254, %ymm0, %ymm1, %ymm2 # ymm2 = ymm2 | ymm1 | ymm0
 	vpmovqd	%ymm2, %xmm0
 	vzeroupper
 	retq

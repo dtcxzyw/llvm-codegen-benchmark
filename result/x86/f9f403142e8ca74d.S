@@ -37,10 +37,10 @@ func0000000000000015:                   # @func0000000000000015
 	retq
 func0000000000000009:                   # @func0000000000000009
 	xorl	%ecx, %ecx
-	cmpl	$2, %esi
-	setb	%cl
-	shll	$9, %ecx
-	leal	2(%rcx), %eax
+	cmpl	$65536, %esi                    # imm = 0x10000
+	setae	%cl
+	shll	$4, %ecx
+	leal	8(%rcx), %eax
 	testb	$1, %dil
 	cmovnel	%ecx, %eax
 	retq

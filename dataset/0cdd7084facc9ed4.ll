@@ -1,11 +1,13 @@
 
-; 33 occurrences:
+; 35 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
 ; folly/optimized/Uri.cpp.ll
+; icu/optimized/parse.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
-; linux/optimized/xt_mark.ll
 ; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/ClangOpenCLBuiltinEmitter.cpp.ll
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
@@ -37,16 +39,22 @@
 define i1 @func000000000000000c(i8 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i8
-  %3 = icmp ne i8 %2, %0
+  %3 = icmp ne i8 %0, %2
   ret i1 %3
 }
 
-; 210 occurrences:
+; 228 occurrences:
 ; abseil-cpp/optimized/ascii_test.cc.ll
 ; abseil-cpp/optimized/charset_test.cc.ll
 ; abseil-cpp/optimized/compare_test.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/parser_test.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/options_description.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/topology.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; cmake/optimized/xmlparse.c.ll
 ; cpython/optimized/_datetimemodule.ll
 ; cpython/optimized/_zoneinfo.ll
@@ -65,6 +73,7 @@ entry:
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; icu/optimized/messagepattern.ll
 ; icu/optimized/rematch.ll
+; icu/optimized/smpdtfmt.ll
 ; linux/optimized/blk-iolatency.ll
 ; linux/optimized/cfg.ll
 ; linux/optimized/dd.ll
@@ -72,14 +81,11 @@ entry:
 ; linux/optimized/drm_dp_dual_mode_helper.ll
 ; linux/optimized/drm_dp_helper.ll
 ; linux/optimized/drm_dp_mst_topology.ll
-; linux/optimized/drm_self_refresh_helper.ll
 ; linux/optimized/i915_gem_ttm.ll
-; linux/optimized/intel_display_rps.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/ipmr.ll
 ; linux/optimized/loop.ll
 ; linux/optimized/mlme.ll
-; linux/optimized/mm.ll
 ; linux/optimized/nf_conntrack_proto_tcp.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/printk.ll
@@ -94,6 +100,8 @@ entry:
 ; llvm/optimized/APINotesReader.cpp.ll
 ; llvm/optimized/DiagnosticBuilderWrappers.cpp.ll
 ; llvm/optimized/Verifier.cpp.ll
+; lvgl/optimized/lv_bar.ll
+; lvgl/optimized/lv_slider.ll
 ; meilisearch-rs/optimized/4rynht2gwvphprvy.ll
 ; minetest/optimized/CGUIButton.cpp.ll
 ; minetest/optimized/CGUIStaticText.cpp.ll
@@ -251,12 +259,24 @@ entry:
 ; yosys/optimized/formalff.ll
 ; yosys/optimized/opt_expr.ll
 ; yosys/optimized/xilinx_dffopt.ll
+; zed-rs/optimized/127zf2apqcsxh7l3h3wga2qa3.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/5u1fvsvawpjspuq123qb03vz8.ll
+; zed-rs/optimized/6i9q21vg747q3orsxnutiwubi.ll
+; zed-rs/optimized/9r3tgj00e2sbbyanbvf1oqgns.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
+; zed-rs/optimized/cp92gkg5707l1e819dflws6md.ll
+; zed-rs/optimized/d7h2r6mystjn2jzwcl5ofeoiz.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i8 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i8
-  %3 = icmp eq i8 %2, %0
+  %3 = icmp eq i8 %0, %2
   ret i1 %3
 }
 
@@ -273,7 +293,7 @@ entry:
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i8 %0, i1 %1) #0 {
+define i1 @func0000000000000014(i8 %0, i1 %1) #0 {
 entry:
   %2 = icmp eq i8 %0, 0
   %3 = and i1 %2, %1
@@ -283,14 +303,15 @@ entry:
 ; 1 occurrences:
 ; meilisearch-rs/optimized/4rynht2gwvphprvy.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000009(i8 %0, i1 %1) #0 {
+define i1 @func0000000000000019(i8 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i8
-  %3 = icmp ule i8 %2, %0
+  %3 = icmp samesign uge i8 %0, %2
   ret i1 %3
 }
 
-; 13 occurrences:
+; 14 occurrences:
+; boost/optimized/instantiate_cpp_exprgrammar.ll
 ; cvc5/optimized/example_infer.cpp.ll
 ; cvc5/optimized/relevant_domain.cpp.ll
 ; cvc5/optimized/sep_skolem_emp.cpp.ll
@@ -305,10 +326,10 @@ entry:
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i8 %0, i1 %1) #0 {
+define i1 @func0000000000000018(i8 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i8
-  %3 = icmp ult i8 %2, %0
+  %3 = icmp samesign ugt i8 %0, %2
   ret i1 %3
 }
 
@@ -316,10 +337,20 @@ entry:
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000005(i8 %0, i1 %1) #0 {
+define i1 @func0000000000000015(i8 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i8
-  %3 = icmp uge i8 %2, %0
+  %3 = icmp samesign ule i8 %0, %2
+  ret i1 %3
+}
+
+; 1 occurrences:
+; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i8 %0, i1 %1) #0 {
+entry:
+  %2 = zext i1 %1 to i8
+  %3 = icmp ugt i8 %0, %2
   ret i1 %3
 }
 

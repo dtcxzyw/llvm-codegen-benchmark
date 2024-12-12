@@ -38,9 +38,9 @@
 	.byte	0                               # 0x0
 func0000000000000013:                   # @func0000000000000013
 	vpandd	.LCPI0_1(%rip){1to8}, %ymm2, %ymm2
-	vpmulld	%ymm1, %ymm2, %ymm1
+	vpmulld	%ymm2, %ymm1, %ymm1
 	vpsrld	$31, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.long	32767                           # 0x7fff

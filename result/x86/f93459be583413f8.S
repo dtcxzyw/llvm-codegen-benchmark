@@ -1,9 +1,9 @@
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000014a:                   # @func000000000000014a
 	vcvttss2si	%xmm0, %eax
 	orl	%edi, %eax
 	setns	%al
 	retq
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000141:                   # @func0000000000000141
 	vcvttss2si	%xmm0, %eax
 	testl	%eax, %eax
 	setns	%cl

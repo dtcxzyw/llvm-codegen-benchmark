@@ -87,14 +87,14 @@ func0000000000000007:                   # @func0000000000000007
 	vzeroupper
 	retq
 .LCPI2_0:
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
-	.byte	3                               # 0x3
+	.byte	7                               # 0x7
+	.byte	7                               # 0x7
+	.byte	7                               # 0x7
+	.byte	7                               # 0x7
+	.byte	7                               # 0x7
+	.byte	7                               # 0x7
+	.byte	7                               # 0x7
+	.byte	7                               # 0x7
 	.zero	1
 	.zero	1
 	.zero	1
@@ -104,14 +104,14 @@ func0000000000000007:                   # @func0000000000000007
 	.zero	1
 	.zero	1
 .LCPI2_1:
-	.byte	240                             # 0xf0
-	.byte	240                             # 0xf0
-	.byte	240                             # 0xf0
-	.byte	240                             # 0xf0
-	.byte	240                             # 0xf0
-	.byte	240                             # 0xf0
-	.byte	240                             # 0xf0
-	.byte	240                             # 0xf0
+	.byte	56                              # 0x38
+	.byte	56                              # 0x38
+	.byte	56                              # 0x38
+	.byte	56                              # 0x38
+	.byte	56                              # 0x38
+	.byte	56                              # 0x38
+	.byte	56                              # 0x38
+	.byte	56                              # 0x38
 	.zero	1
 	.zero	1
 	.zero	1
@@ -121,56 +121,12 @@ func0000000000000007:                   # @func0000000000000007
 	.zero	1
 	.zero	1
 .LCPI2_2:
-	.zero	4,3
-.LCPI2_3:
-	.zero	4,240
-func0000000000000003:                   # @func0000000000000003
-	vpmovdb	%ymm1, %xmm1
-	vpandd	.LCPI2_2(%rip){1to4}, %xmm1, %xmm1
-	vpternlogd	$236, .LCPI2_3(%rip){1to4}, %xmm1, %xmm0 # xmm0 = (xmm0 & mem) | xmm1
-	vzeroupper
-	retq
-.LCPI3_0:
-	.byte	7                               # 0x7
-	.byte	7                               # 0x7
-	.byte	7                               # 0x7
-	.byte	7                               # 0x7
-	.byte	7                               # 0x7
-	.byte	7                               # 0x7
-	.byte	7                               # 0x7
-	.byte	7                               # 0x7
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-.LCPI3_1:
-	.byte	56                              # 0x38
-	.byte	56                              # 0x38
-	.byte	56                              # 0x38
-	.byte	56                              # 0x38
-	.byte	56                              # 0x38
-	.byte	56                              # 0x38
-	.byte	56                              # 0x38
-	.byte	56                              # 0x38
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-.LCPI3_2:
 	.zero	4,7
-.LCPI3_3:
+.LCPI2_3:
 	.zero	4,56
 func0000000000000005:                   # @func0000000000000005
 	vpmovdb	%ymm1, %xmm1
-	vpandd	.LCPI3_2(%rip){1to4}, %xmm1, %xmm1
-	vpternlogd	$236, .LCPI3_3(%rip){1to4}, %xmm1, %xmm0 # xmm0 = (xmm0 & mem) | xmm1
+	vpandd	.LCPI2_2(%rip){1to4}, %xmm1, %xmm1
+	vpternlogd	$236, .LCPI2_3(%rip){1to4}, %xmm1, %xmm0 # xmm0 = (xmm0 & mem) | xmm1
 	vzeroupper
 	retq

@@ -1,7 +1,6 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; linux/optimized/filter.ll
-; linux/optimized/mcast_snoop.ll
 ; linux/optimized/resize.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll

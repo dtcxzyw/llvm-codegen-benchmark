@@ -1,11 +1,11 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	testl	%esi, %esi
 	sete	%cl
 	testl	%edi, %edi
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	movslq	%esi, %rax
 	movslq	%edi, %rcx
 	imulq	%rax, %rcx
@@ -13,27 +13,34 @@ func0000000000000018:                   # @func0000000000000018
 	cmpq	%rax, %rcx
 	seta	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	movslq	%esi, %rax
 	movslq	%edi, %rcx
 	imulq	%rax, %rcx
 	cmpq	$4, %rcx
 	setge	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	movslq	%esi, %rax
 	movslq	%edi, %rcx
 	imulq	%rax, %rcx
 	cmpq	$32, %rcx
 	setb	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	movslq	%esi, %rcx
 	movslq	%edi, %rax
 	imulq	%rcx, %rax
 	shrq	$63, %rax
 	retq
-func000000000000001c:                   # @func000000000000001c
+func0000000000000038:                   # @func0000000000000038
+	movslq	%esi, %rax
+	movslq	%edi, %rcx
+	imulq	%rax, %rcx
+	shrq	$61, %rcx
+	setne	%al
+	retq
+func000000000000002c:                   # @func000000000000002c
 	testl	%esi, %esi
 	setne	%cl
 	testl	%edi, %edi

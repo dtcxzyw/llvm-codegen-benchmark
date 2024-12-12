@@ -1,5 +1,5 @@
 
-; 397 occurrences:
+; 396 occurrences:
 ; cmake/optimized/xmlparse.c.ll
 ; cpython/optimized/xmlparse.ll
 ; llvm/optimized/AArch64Arm64ECCallLowering.cpp.ll
@@ -267,7 +267,6 @@
 ; llvm/optimized/RDFGraph.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetObjectFile.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
@@ -402,7 +401,7 @@ define i64 @func0000000000000018(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %.neg = shl nsw i64 -1, %2
-  %3 = and i64 %.neg, %0
+  %3 = and i64 %0, %.neg
   ret i64 %3
 }
 
@@ -415,7 +414,7 @@ define i64 @func000000000000001d(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %.neg = shl nsw i64 -1, %2
-  %3 = and i64 %.neg, %0
+  %3 = and i64 %0, %.neg
   ret i64 %3
 }
 
@@ -426,7 +425,7 @@ define i64 @func0000000000000008(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %.neg = shl nsw i64 -1, %2
-  %3 = and i64 %.neg, %0
+  %3 = and i64 %0, %.neg
   ret i64 %3
 }
 

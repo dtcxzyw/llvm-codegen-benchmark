@@ -1,32 +1,28 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	mvn	v1.16b, v1.16b
-	add	v0.4s, v1.4s, v0.4s
-	ushll2	v1.2d, v0.4s, #2
-	ushll	v0.2d, v0.2s, #2
+	mvn	w8, w1
+	add	w8, w0, w8
+	ubfiz	x0, x8, #2, #32
 	ret
                                         // -- End function
 func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
-	mvn	v1.16b, v1.16b
-	add	v0.4s, v1.4s, v0.4s
-	ushll2	v1.2d, v0.4s, #4
-	ushll	v0.2d, v0.2s, #4
+	mvn	w8, w1
+	add	w8, w0, w8
+	ubfiz	x0, x8, #4, #32
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	mvn	v1.16b, v1.16b
-	add	v0.4s, v1.4s, v0.4s
-	shll2	v1.2d, v0.4s, #32
-	shll	v0.2d, v0.2s, #32
+	mvn	w8, w1
+	add	w8, w0, w8
+	lsl	x0, x8, #32
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	mvn	v1.16b, v1.16b
-	add	v0.4s, v1.4s, v0.4s
-	shll2	v1.2d, v0.4s, #32
-	shll	v0.2d, v0.2s, #32
+	mvn	w8, w1
+	add	w8, w0, w8
+	lsl	x0, x8, #32
 	ret
                                         // -- End function

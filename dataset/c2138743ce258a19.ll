@@ -21,7 +21,7 @@
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 24
   %3 = add nuw nsw i32 %2, 4
@@ -36,7 +36,7 @@ entry:
 ; postgres/optimized/tsvector_op.ll
 ; slurm/optimized/KeccakSponge.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 24
   %3 = add nsw i32 %2, -2
@@ -50,7 +50,7 @@ entry:
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000044(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
   %3 = add nuw i32 %2, 1
@@ -58,8 +58,7 @@ entry:
   ret i1 %4
 }
 
-; 20 occurrences:
-; fmt/optimized/compile-test.cc.ll
+; 15 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -71,20 +70,16 @@ entry:
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-set.ll
 ; openusd/optimized/openexr-c.c.ll
-; postgres/optimized/blkreftable.ll
-; postgres/optimized/blkreftable_shlib.ll
-; postgres/optimized/blkreftable_srv.ll
 ; postgres/optimized/network_selfuncs.ll
 ; raylib/optimized/rcore.c.ll
 ; velox/optimized/WidthBucketArray.cpp.ll
 ; wireshark/optimized/packet-thread.c.ll
-; wireshark/optimized/packet-x25.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000074(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 9
   %3 = add nuw nsw i32 %2, 1
-  %4 = icmp ult i32 %3, %0
+  %4 = icmp samesign ult i32 %3, %0
   ret i1 %4
 }
 
@@ -94,11 +89,27 @@ entry:
 ; quickjs/optimized/libbf.ll
 ; redis/optimized/lcode.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000066(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
   %3 = add nuw nsw i32 %2, 1
   %4 = icmp slt i32 %3, %0
+  ret i1 %4
+}
+
+; 6 occurrences:
+; fmt/optimized/compile-test.cc.ll
+; hwloc/optimized/bitmap.ll
+; postgres/optimized/blkreftable.ll
+; postgres/optimized/blkreftable_shlib.ll
+; postgres/optimized/blkreftable_srv.ll
+; wireshark/optimized/packet-x25.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000064(i32 %0, i32 %1) #0 {
+entry:
+  %2 = lshr i32 %1, 24
+  %3 = add nuw nsw i32 %2, 2
+  %4 = icmp ult i32 %3, %0
   ret i1 %4
 }
 
@@ -114,7 +125,7 @@ entry:
 ; redis/optimized/jemalloc.sym.ll
 ; redis/optimized/ltable.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 4
   %3 = add nsw i32 %2, -5
@@ -122,13 +133,12 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; flac/optimized/stream_encoder.c.ll
 ; linux/optimized/mpicoder.ll
-; linux/optimized/xfrm_user.ll
 ; wireshark/optimized/packet-dvb-s2-bb.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000068(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 3
   %3 = add nuw nsw i32 %2, 33
@@ -139,7 +149,7 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/IrValueLocationTracking.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000006a(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 4
   %3 = add nuw nsw i32 %2, 2
@@ -153,7 +163,7 @@ entry:
 ; hdf5/optimized/H5Gnode.c.ll
 ; postgres/optimized/tsvector_op.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
   %3 = add nuw i32 %2, 1
@@ -164,7 +174,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-umts_fp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000e8(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 3
   %3 = add nuw nsw i32 %2, 9
@@ -173,13 +183,24 @@ entry:
 }
 
 ; 1 occurrences:
+; linux/optimized/xfrm_user.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000078(i32 %0, i32 %1) #0 {
+entry:
+  %2 = lshr i32 %1, 3
+  %3 = add nuw nsw i32 %2, 72
+  %4 = icmp samesign ugt i32 %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
 ; nanobind/optimized/nb_func.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000f4(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 10
   %3 = add nuw nsw i32 %2, 1
-  %4 = icmp ult i32 %3, %0
+  %4 = icmp samesign ult i32 %3, %0
   ret i1 %4
 }
 
@@ -300,7 +321,7 @@ entry:
 ; z3/optimized/warning.cpp.ll
 ; z3/optimized/z3_replayer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000048(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
   %3 = add nuw i32 %2, 8
@@ -313,7 +334,7 @@ entry:
 ; zxing/optimized/ODDataBarExpandedReader.cpp.ll
 ; zxing/optimized/ODDataBarReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 2
   %3 = add nsw i32 %2, -2
@@ -325,7 +346,7 @@ entry:
 ; postgres/optimized/reloptions.ll
 ; postgres/optimized/varlena.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 2
   %3 = add nsw i32 %2, -4

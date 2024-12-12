@@ -4,12 +4,6 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	orb	%sil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
-	andl	%edx, %esi
-	cmpb	$64, %dil
-	setae	%al
-	orb	%sil, %al
-	retq
 func000000000000000c:                   # @func000000000000000c
 	andl	%edx, %esi
 	testb	%dil, %dil

@@ -22,6 +22,12 @@ func000000000000000d:                   # @func000000000000000d
 	andl	$3, %eax
 	orl	%edi, %eax
 	retq
+func000000000000000c:                   # @func000000000000000c
+	movq	%rsi, %rax
+	shrl	%eax
+	andl	$1, %eax
+	orl	%edi, %eax
+	retq
 func0000000000000003:                   # @func0000000000000003
 	movq	%rsi, %rax
 	shrl	$6, %eax

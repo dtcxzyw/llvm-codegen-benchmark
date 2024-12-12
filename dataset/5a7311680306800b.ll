@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 39 occurrences:
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; faiss/optimized/AdditiveQuantizer.cpp.ll
 ; fmt/optimized/chrono-test.cc.ll
@@ -35,6 +35,10 @@
 ; spike/optimized/f64_to_ui32.ll
 ; spike/optimized/f64_to_ui64_r_minMag.ll
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
@@ -44,11 +48,13 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 6 occurrences:
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; spike/optimized/f128_to_i64.ll
 ; spike/optimized/f128_to_ui64.ll
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000e(i64 %0, i64 %1) #0 {
 entry:

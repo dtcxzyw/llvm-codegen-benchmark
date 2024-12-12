@@ -121,30 +121,4 @@ entry:
   ret i1 %4
 }
 
-; 1 occurrences:
-; gromacs/optimized/enerdata_utils.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0, ptr %1) #0 {
-entry:
-  %2 = ptrtoint ptr %1 to i64
-  %3 = sub i64 %0, %2
-  %4 = and i64 %3, 34359738360
-  %5 = icmp eq i64 %4, 34359738360
-  ret i1 %5
-}
-
-; 3 occurrences:
-; graphviz/optimized/generate-constraints.cpp.ll
-; gromacs/optimized/make_ndx.cpp.ll
-; opencv/optimized/linemod.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000a(i64 %0, ptr %1) #0 {
-entry:
-  %2 = ptrtoint ptr %1 to i64
-  %3 = sub i64 %0, %2
-  %4 = trunc i64 %3 to i34
-  %5 = icmp sgt i34 %4, 3
-  ret i1 %5
-}
-
 attributes #0 = { nounwind }

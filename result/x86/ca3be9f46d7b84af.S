@@ -1,7 +1,8 @@
 func0000000000000005:                   # @func0000000000000005
-	shrq	$2, %rsi
+	shrq	$19, %rsi
 	subq	%rsi, %rdi
-	imulq	$4000, %rdi, %rax               # imm = 0xFA0
+	shlq	$3, %rdi
+	leaq	(%rdi,%rdi,4), %rax
 	retq
 func0000000000000004:                   # @func0000000000000004
 	sarq	$63, %rsi

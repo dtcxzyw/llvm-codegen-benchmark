@@ -5,5 +5,5 @@ func0000000000000004:                   # @func0000000000000004
 	vxorpd	%xmm3, %xmm3, %xmm3
 	vcmpltsd	%xmm0, %xmm3, %k1
 	vmovsd	%xmm1, %xmm2, %xmm2 {%k1}
-	vaddsd	%xmm0, %xmm2, %xmm0
+	vaddsd	%xmm2, %xmm0, %xmm0
 	retq

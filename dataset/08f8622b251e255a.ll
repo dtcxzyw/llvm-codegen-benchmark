@@ -8,7 +8,7 @@
 ; stb/optimized/stb_truetype.c.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i16 %0, i16 %1) #0 {
+define i1 @func00000000000000a1(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl nuw i16 %1, 8
   %.masked = and i16 %0, -2

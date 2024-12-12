@@ -11,7 +11,7 @@ entry:
   %3 = and i32 %2, 24
   %4 = zext i8 %1 to i32
   %5 = shl nuw i32 %4, %3
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   ret i32 %6
 }
 
@@ -57,7 +57,7 @@ entry:
   %3 = and i32 %2, 7
   %4 = zext i8 %1 to i32
   %5 = shl nuw nsw i32 %4, %3
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   ret i32 %6
 }
 
@@ -82,7 +82,7 @@ entry:
   %3 = and i32 %2, 15
   %4 = zext nneg i8 %1 to i32
   %5 = shl nuw nsw i32 %4, %3
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   ret i32 %6
 }
 

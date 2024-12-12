@@ -1,5 +1,5 @@
 
-%struct.KEYWORD.2625884 = type { ptr, i32 }
+%struct.KEYWORD.2739307 = type { ptr, i32 }
 
 ; 4 occurrences:
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
@@ -12,7 +12,7 @@ entry:
   %3 = add nsw i32 %1, %2
   %4 = sdiv i32 %3, 2
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %struct.KEYWORD.2625884, ptr %0, i64 %5
+  %6 = getelementptr %struct.KEYWORD.2739307, ptr %0, i64 %5
   %7 = getelementptr i8, ptr %6, i64 -16
   ret ptr %7
 }

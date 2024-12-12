@@ -5,7 +5,7 @@ func0000000000000007:                   # @func0000000000000007
 	vpmovqd	%ymm1, %xmm0
 	vmovdqa	%xmm0, %xmm1
 	vpternlogq	$15, %xmm0, %xmm0, %xmm1 # xmm1 = ~xmm1
-	vpaddd	%xmm2, %xmm1, %xmm0 {%k1}
+	vpaddd	%xmm1, %xmm2, %xmm0 {%k1}
 	vzeroupper
 	retq
 func0000000000000003:                   # @func0000000000000003
@@ -15,7 +15,7 @@ func0000000000000003:                   # @func0000000000000003
 	vpmovqd	%ymm1, %xmm0
 	vmovdqa	%xmm0, %xmm1
 	vpternlogq	$15, %xmm0, %xmm0, %xmm1 # xmm1 = ~xmm1
-	vpaddd	%xmm2, %xmm1, %xmm0 {%k1}
+	vpaddd	%xmm1, %xmm2, %xmm0 {%k1}
 	vzeroupper
 	retq
 func0000000000000000:                   # @func0000000000000000
@@ -25,7 +25,7 @@ func0000000000000000:                   # @func0000000000000000
 	vpmovqd	%ymm1, %xmm0
 	vmovdqa	%xmm0, %xmm1
 	vpternlogq	$15, %xmm0, %xmm0, %xmm1 # xmm1 = ~xmm1
-	vpaddd	%xmm2, %xmm1, %xmm0 {%k1}
+	vpaddd	%xmm1, %xmm2, %xmm0 {%k1}
 	vzeroupper
 	retq
 func0000000000000001:                   # @func0000000000000001
@@ -35,6 +35,6 @@ func0000000000000001:                   # @func0000000000000001
 	vpmovqd	%ymm1, %xmm0
 	vmovdqa	%xmm0, %xmm1
 	vpternlogq	$15, %xmm0, %xmm0, %xmm1 # xmm1 = ~xmm1
-	vpaddd	%xmm2, %xmm1, %xmm0 {%k1}
+	vpaddd	%xmm1, %xmm2, %xmm0 {%k1}
 	vzeroupper
 	retq

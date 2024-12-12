@@ -1,7 +1,12 @@
 func0000000000000028:                   # @func0000000000000028
-	movq	%rsi, %rax
-	orq	%rdx, %rax
-	shldq	$20, %rdi, %rax
+	movq	%rdx, %rax
+	orl	%esi, %eax
+	shldq	$58, %rdi, %rax
+	retq
+func000000000000002c:                   # @func000000000000002c
+	movq	%rdx, %rax
+	orl	%esi, %eax
+	shldq	$61, %rdi, %rax
 	retq
 func000000000000000a:                   # @func000000000000000a
 	leaq	(%rdx,%rdx), %rax

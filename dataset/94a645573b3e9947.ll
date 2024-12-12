@@ -1,5 +1,8 @@
 
-; 67 occurrences:
+; 73 occurrences:
+; assimp/optimized/BlenderScene.cpp.ll
+; assimp/optimized/PlyParser.cpp.ll
+; boost/optimized/ipv6_address.ll
 ; clamav/optimized/hfsplus.c.ll
 ; clamav/optimized/ishield.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
@@ -41,10 +44,10 @@
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_truetype.c.ll
+; stockfish/optimized/tbprobe.ll
 ; wasmedge/optimized/inode-linux.cpp.ll
 ; wireshark/optimized/aethra.c.ll
 ; wireshark/optimized/charsets.c.ll
-; wireshark/optimized/csids.c.ll
 ; wireshark/optimized/erf.c.ll
 ; wireshark/optimized/eyesdn.c.ll
 ; wireshark/optimized/k12.c.ll
@@ -67,6 +70,9 @@
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/tls.c.ll
 ; wolfssl/optimized/tls13.c.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000a(i16 %0, i16 %1) #0 {
 entry:
@@ -76,15 +82,12 @@ entry:
   ret i32 %4
 }
 
-; 13 occurrences:
-; assimp/optimized/BlenderScene.cpp.ll
-; assimp/optimized/PlyParser.cpp.ll
+; 10 occurrences:
 ; glslang/optimized/Constant.cpp.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; openjdk/optimized/inStream.ll
 ; openjdk/optimized/javaClasses.ll
 ; openjdk/optimized/jvmtiTagMap.ll
-; stockfish/optimized/tbprobe.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/3vdx8w41hjyzioqv.ll
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
@@ -145,7 +148,7 @@ entry:
 define i32 @func0000000000000003(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl i16 %1, 9
-  %3 = or disjoint i16 %2, %0
+  %3 = or disjoint i16 %0, %2
   %4 = zext nneg i16 %3 to i32
   ret i32 %4
 }

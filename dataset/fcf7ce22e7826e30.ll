@@ -13,7 +13,7 @@ define i32 @func0000000000000005(i32 %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 1
   %3 = zext nneg i16 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -29,17 +29,20 @@ define i32 @func0000000000000004(i32 %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 8
   %3 = zext nneg i16 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
-; 9 occurrences:
+; 12 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; icu/optimized/normalizer2impl.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; openjdk/optimized/cmspack.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wireshark/optimized/packet-umts_fp.c.ll
@@ -48,7 +51,7 @@ define i32 @func0000000000000007(i32 %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 2
   %3 = zext nneg i16 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -59,7 +62,7 @@ define i32 @func000000000000000f(i32 %0, i16 %1) #0 {
 entry:
   %2 = lshr exact i16 %1, 1
   %3 = zext nneg i16 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -70,7 +73,7 @@ define i32 @func0000000000000006(i32 %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 1
   %3 = zext nneg i16 %2 to i32
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   ret i32 %4
 }
 

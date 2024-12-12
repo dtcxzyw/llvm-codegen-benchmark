@@ -1,24 +1,24 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	shrl	$12, %edx
 	subl	%esi, %edx
-	cmpl	%edi, %edx
-	setl	%al
-	retq
-func0000000000000016:                   # @func0000000000000016
-	shrl	$12, %edx
-	subl	%esi, %edx
-	cmpl	%edi, %edx
+	cmpl	%edx, %edi
 	setg	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000026:                   # @func0000000000000026
+	shrl	$12, %edx
+	subl	%esi, %edx
+	cmpl	%edx, %edi
+	setl	%al
+	retq
+func0000000000000024:                   # @func0000000000000024
 	shrl	$8, %edx
 	subl	%esi, %edx
-	cmpl	%edi, %edx
-	seta	%al
+	cmpl	%edx, %edi
+	setb	%al
 	retq
 func0000000000000008:                   # @func0000000000000008
 	shrl	$3, %edx
 	subl	%esi, %edx
-	cmpl	%edi, %edx
-	setb	%al
+	cmpl	%edx, %edi
+	seta	%al
 	retq

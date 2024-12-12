@@ -15,7 +15,7 @@
 define i32 @func0000000000000010(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sub i32 %4, %0
   ret i32 %5
 }
@@ -32,12 +32,12 @@ entry:
 define i32 @func000000000000000f(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = sub nuw nsw i32 %4, %0
   ret i32 %5
 }
 
-; 20 occurrences:
+; 24 occurrences:
 ; clamav/optimized/cpio.c.ll
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; hdf5/optimized/H5B2int.c.ll
@@ -56,18 +56,23 @@ entry:
 ; wireshark/optimized/packet-rfid-pn532-hci.c.ll
 ; wireshark/optimized/packet-rlc-lte.c.ll
 ; wireshark/optimized/packet-s5066sis.c.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zstd/optimized/zstd_v01.c.ll
+; zstd/optimized/zstd_v02.c.ll
+; zstd/optimized/zstd_v03.c.ll
 ; zstd/optimized/zstd_v04.c.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = sub nsw i32 %4, %0
   ret i32 %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
+; boost/optimized/to_chars.ll
 ; linux/optimized/drm_dsc_helper.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; opencv/optimized/stackblur.cpp.ll
@@ -79,16 +84,15 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sub nsw i32 %4, %0
   ret i32 %5
 }
 
-; 46 occurrences:
+; 45 occurrences:
 ; hyperscan/optimized/repeat.c.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; linux/optimized/fse_decompress.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_tv.ll
 ; linux/optimized/reg.ll
 ; linux/optimized/udp_offload.ll
@@ -135,7 +139,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sub i32 %4, %0
   ret i32 %5
 }
@@ -156,12 +160,12 @@ entry:
 define i32 @func000000000000000c(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = sub i32 %4, %0
   ret i32 %5
 }
 
-; 8 occurrences:
+; 11 occurrences:
 ; linux/optimized/af_packet.ll
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
@@ -169,12 +173,15 @@ entry:
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
 ; wireshark/optimized/packet-wifi-nan.c.ll
+; zstd/optimized/zstd_v01.c.ll
+; zstd/optimized/zstd_v02.c.ll
+; zstd/optimized/zstd_v03.c.ll
 ; zstd/optimized/zstd_v04.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sub i32 %4, %0
   ret i32 %5
 }
@@ -186,7 +193,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sub nuw i32 %4, %0
   ret i32 %5
 }
@@ -197,7 +204,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sub nsw i32 %4, %0
   ret i32 %5
 }
@@ -209,7 +216,7 @@ entry:
 define i32 @func000000000000001d(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = sub nsw i32 %4, %0
   ret i32 %5
 }
@@ -220,7 +227,7 @@ entry:
 define i32 @func0000000000000012(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sub nuw i32 %4, %0
   ret i32 %5
 }
@@ -231,7 +238,7 @@ entry:
 define i32 @func0000000000000014(i32 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sub i32 %4, %0
   ret i32 %5
 }

@@ -1,5 +1,5 @@
 
-; 163 occurrences:
+; 166 occurrences:
 ; arrow/optimized/UriNormalize.c.ll
 ; cmake/optimized/nghttp2_http.c.ll
 ; cpython/optimized/suggestions.ll
@@ -54,6 +54,7 @@
 ; lua/optimized/lgc.ll
 ; luajit/optimized/lj_buf.ll
 ; luajit/optimized/lj_buf_dyn.ll
+; lvgl/optimized/lv_math.ll
 ; meshlab/optimized/MarchingCubes.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; minetest/optimized/collision.cpp.ll
@@ -103,7 +104,6 @@
 ; ocio/optimized/FileFormatTruelight.cpp.ll
 ; ocio/optimized/FileFormatVF.cpp.ll
 ; ocio/optimized/FileRules.cpp.ll
-; ocio/optimized/FileTransform.cpp.ll
 ; ocio/optimized/NamedTransform.cpp.ll
 ; ocio/optimized/OCIOZArchive.cpp.ll
 ; ocio/optimized/ParseUtils.cpp.ll
@@ -127,9 +127,6 @@
 ; postgres/optimized/geo_spgist.ll
 ; postgres/optimized/guc.ll
 ; postgres/optimized/heapam.ll
-; postgres/optimized/kwlookup.ll
-; postgres/optimized/kwlookup_shlib.ll
-; postgres/optimized/kwlookup_srv.ll
 ; postgres/optimized/pgstrcasecmp.ll
 ; postgres/optimized/pgstrcasecmp_shlib.ll
 ; postgres/optimized/pgstrcasecmp_srv.ll
@@ -163,6 +160,12 @@
 ; wireshark/optimized/packet-diameter.c.ll
 ; wireshark/optimized/packet-dof.c.ll
 ; z3/optimized/opt_parse.cpp.ll
+; zed-rs/optimized/1jbe4zqf10fi4dnkcvibaggjj.ll
+; zed-rs/optimized/2bjv2ryetyqaw0uwjf53eylb3.ll
+; zed-rs/optimized/4q1bnadqr1o107uase7gmrd0k.ll
+; zed-rs/optimized/5kbsfw3jcmbcslmu1o5kx13w3.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/di6vqkr45z5qfxmwsnoq97jcv.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i1 %0, i8 %1) #0 {
 entry:

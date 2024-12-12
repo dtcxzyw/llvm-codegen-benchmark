@@ -1,4 +1,16 @@
 
+; 2 occurrences:
+; boost/optimized/options_description.ll
+; linux/optimized/compat_binfmt_elf.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, -4
+  %3 = zext i32 %2 to i64
+  %4 = sub i64 %0, %3
+  ret i64 %4
+}
+
 ; 74 occurrences:
 ; meshlab/optimized/edit_mutualcorrs.cpp.ll
 ; meshlab/optimized/edit_referencing.cpp.ll
@@ -91,17 +103,6 @@ entry:
   %2 = and i32 %1, -4096
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 %0, %3
-  ret i64 %4
-}
-
-; 1 occurrences:
-; linux/optimized/compat_binfmt_elf.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, -4096
-  %3 = zext i32 %2 to i64
-  %4 = sub i64 %0, %3
   ret i64 %4
 }
 

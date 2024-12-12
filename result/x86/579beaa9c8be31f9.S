@@ -1,12 +1,12 @@
-func000000000000007a:                   # @func000000000000007a
+func000000000000007f:                   # @func000000000000007f
 	shlxl	%edx, %esi, %eax
 	leaq	1(%rdi,%rax), %rax
 	retq
-func0000000000000072:                   # @func0000000000000072
+func0000000000000073:                   # @func0000000000000073
 	shlxl	%edx, %esi, %eax
 	leaq	8(%rdi,%rax), %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	shlxl	%edx, %esi, %eax
 	leaq	4(%rdi,%rax), %rax
 	retq

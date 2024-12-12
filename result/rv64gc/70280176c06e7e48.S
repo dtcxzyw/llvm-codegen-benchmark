@@ -17,9 +17,16 @@ func0000000000000020:                   # @func0000000000000020
 	add	a0, a0, a1
 	slli	a0, a0, 32
 	ret
+func000000000000002e:                   # @func000000000000002e
+	andi	a1, a1, 255
+	addi	a1, a1, -58
+	seqz	a1, a1
+	add	a0, a0, a1
+	slli	a0, a0, 1
+	ret
 func000000000000002f:                   # @func000000000000002f
 	andi	a1, a1, 255
-	addi	a1, a1, -46
+	addi	a1, a1, -58
 	seqz	a1, a1
 	add	a0, a0, a1
 	slli	a0, a0, 1
@@ -32,6 +39,12 @@ func0000000000000188:                   # @func0000000000000188
 	slli	a0, a0, 1
 	ret
 func0000000000000088:                   # @func0000000000000088
+	andi	a1, a1, 255
+	sltiu	a1, a1, 254
+	add	a0, a0, a1
+	slli	a0, a0, 1
+	ret
+func0000000000000288:                   # @func0000000000000288
 	andi	a1, a1, 255
 	sltiu	a1, a1, 254
 	add	a0, a0, a1

@@ -31,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; jq/optimized/jv.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
   %4 = add nsw i32 %0, %1
@@ -56,11 +56,11 @@ entry:
 ; abc/optimized/ifTruth.c.ll
 ; opencv/optimized/brightedges.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000078(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 24
   %4 = add nuw nsw i32 %0, %1
-  %5 = icmp ugt i32 %4, %3
+  %5 = icmp samesign ugt i32 %4, %3
   ret i1 %5
 }
 
@@ -69,7 +69,7 @@ entry:
 ; abc/optimized/giaIf.c.ll
 ; hdf5/optimized/H5Znbit.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 29
   %4 = add nsw i32 %0, %1
@@ -82,7 +82,7 @@ entry:
 ; freetype/optimized/sfnt.c.ll
 ; llvm/optimized/X86ShuffleDecode.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
   %4 = add nuw nsw i32 %0, %1
@@ -90,7 +90,30 @@ entry:
   ret i1 %5
 }
 
-; 32 occurrences:
+; 1 occurrences:
+; proxygen/optimized/FlowControlFilter.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 1
+  %4 = add i32 %0, %1
+  %5 = icmp samesign ugt i32 %4, %3
+  ret i1 %5
+}
+
+; 2 occurrences:
+; hdf5/optimized/H5Znbit.c.ll
+; opencv/optimized/apriltag_quad_thresh.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 3
+  %4 = add nsw i32 %0, %1
+  %5 = icmp slt i32 %4, %3
+  ret i1 %5
+}
+
+; 31 occurrences:
 ; hermes/optimized/ISel.cpp.ll
 ; hermes/optimized/RegAlloc.cpp.ll
 ; linux/optimized/namei.ll
@@ -120,34 +143,21 @@ entry:
 ; llvm/optimized/WinEHPrepare.cpp.ll
 ; llvm/optimized/X86CallFrameOptimization.cpp.ll
 ; lua/optimized/ltable.ll
-; proxygen/optimized/FlowControlFilter.cpp.ll
 ; slurm/optimized/KeccakSponge.ll
 ; z3/optimized/upolynomial_factorization.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = lshr i32 %2, 1
+  %3 = lshr i32 %2, 3
   %4 = add i32 %0, %1
   %5 = icmp ugt i32 %4, %3
-  ret i1 %5
-}
-
-; 2 occurrences:
-; hdf5/optimized/H5Znbit.c.ll
-; opencv/optimized/apriltag_quad_thresh.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = lshr i32 %2, 3
-  %4 = add nsw i32 %0, %1
-  %5 = icmp slt i32 %4, %3
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 3
   %4 = add i32 %0, %1
@@ -169,29 +179,29 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/umutablecptrie.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000f4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 4
-  %4 = add nsw i32 %0, %1
-  %5 = icmp slt i32 %4, %3
+  %4 = add nuw nsw i32 %0, %1
+  %5 = icmp samesign ult i32 %4, %3
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; opencv/optimized/brightedges.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000035(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000075(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
   %4 = add nuw nsw i32 %0, %1
-  %5 = icmp ule i32 %4, %3
+  %5 = icmp samesign ule i32 %4, %3
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; opencv/optimized/median_blur.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
   %4 = add nsw i32 %0, %1

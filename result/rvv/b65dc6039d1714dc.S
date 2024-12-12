@@ -100,10 +100,20 @@ func00000000000000a8:                   # @func00000000000000a8
 	vmfeq.vf	v0, v8, fa5
 	ret
 .LCPI12_0:
-	.quad	0x21a0000000000000              # double 1.0010415475915505E-146
-func0000000000000045:                   # @func0000000000000045
+	.quad	0x3ddb7cdfd9d7bdbb              # double 1.0E-10
+func000000000000002a:                   # @func000000000000002a
 	lui	a0, %hi(.LCPI12_0)
 	fld	fa5, %lo(.LCPI12_0)(a0)
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vmflt.vv	v0, v16, v8
+	vmerge.vvm	v8, v16, v8, v0
+	vmfle.vf	v0, v8, fa5
+	ret
+.LCPI13_0:
+	.quad	0x21a0000000000000              # double 1.0010415475915505E-146
+func0000000000000045:                   # @func0000000000000045
+	lui	a0, %hi(.LCPI13_0)
+	fld	fa5, %lo(.LCPI13_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmflt.vv	v0, v16, v8
 	vmerge.vvm	v8, v16, v8, v0
@@ -152,13 +162,6 @@ func000000000000002d:                   # @func000000000000002d
 	fli.d	fa5, 1.0
 	vmflt.vf	v16, v8, fa5
 	vmnot.m	v0, v16
-	ret
-func000000000000002a:                   # @func000000000000002a
-	vsetivli	zero, 16, e64, m8, ta, ma
-	vmflt.vv	v0, v8, v16
-	vmerge.vvm	v8, v16, v8, v0
-	fmv.d.x	fa5, zero
-	vmfle.vf	v0, v8, fa5
 	ret
 func000000000000002c:                   # @func000000000000002c
 	vsetivli	zero, 16, e64, m8, ta, ma

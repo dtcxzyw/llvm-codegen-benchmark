@@ -3,6 +3,17 @@ func0000000000000010:                   # @func0000000000000010
 	addq	%rdi, %rax
 	imulq	$53, %rax, %rax
 	retq
+func000000000000000f:                   # @func000000000000000f
+	movzbl	%sil, %eax
+	addq	%rdi, %rax
+	imulq	$1000000, %rax, %rax            # imm = 0xF4240
+	retq
+func0000000000000012:                   # @func0000000000000012
+	movzbl	%sil, %eax
+	addq	%rdi, %rax
+	addq	%rax, %rax
+	leaq	(%rax,%rax,4), %rax
+	retq
 func000000000000001f:                   # @func000000000000001f
 	movzbl	%sil, %eax
 	addq	%rdi, %rax

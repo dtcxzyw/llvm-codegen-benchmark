@@ -1,6 +1,5 @@
 
-; 207 occurrences:
-; c3c/optimized/decltable.c.ll
+; 206 occurrences:
 ; c3c/optimized/symtab.c.ll
 ; c3c/optimized/types.c.ll
 ; hermes/optimized/CFG.cpp.ll

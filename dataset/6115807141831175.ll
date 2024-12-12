@@ -1,10 +1,11 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; php/optimized/php_http_parser.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; verilator/optimized/V3Number.cpp.ll
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; wireshark/optimized/packet-dvb-s2-table.c.ll
+; zed-rs/optimized/4j81zvwpo3may7k9k6shk9eiu.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i1 %0, i8 %1) #0 {
 entry:

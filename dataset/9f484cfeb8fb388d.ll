@@ -7,7 +7,7 @@
 ; icu/optimized/collationkeys.ll
 ; wireshark/optimized/packet-per.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000011(i32 %0, i8 %1) #0 {
+define i8 @func0000000000000021(i32 %0, i8 %1) #0 {
 entry:
   %2 = or disjoint i8 %1, 48
   %3 = icmp eq i32 %0, 0

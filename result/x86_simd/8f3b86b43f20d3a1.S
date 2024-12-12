@@ -22,7 +22,7 @@ func0000000000000006:                   # @func0000000000000006
 	.long	144                             # 0x90
 .LCPI2_2:
 	.long	240                             # 0xf0
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vpcmpleud	.LCPI2_0(%rip){1to8}, %ymm0, %k1
 	vbroadcastss	.LCPI2_1(%rip), %ymm0   # ymm0 = [144,144,144,144,144,144,144,144]
 	vandps	.LCPI2_2(%rip){1to8}, %ymm1, %ymm0 {%k1}
@@ -85,4 +85,51 @@ func000000000000000a:                   # @func000000000000000a
 	vpcmpled	%ymm2, %ymm0, %k1
 	vpandd	.LCPI5_0(%rip){1to8}, %ymm1, %ymm2 {%k1}
 	vmovdqa	%ymm2, %ymm0
+	retq
+.LCPI6_0:
+	.long	255                             # 0xff
+.LCPI6_1:
+	.long	4288741377                      # 0xffa10001
+.LCPI6_3:
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+.LCPI6_2:
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	0                               # 0x0
+func0000000000000008:                   # @func0000000000000008
+	vpcmpleud	.LCPI6_0(%rip){1to8}, %ymm0, %k1
+	vbroadcastss	.LCPI6_1(%rip), %ymm0   # ymm0 = [4288741377,4288741377,4288741377,4288741377,4288741377,4288741377,4288741377,4288741377]
+	vandps	.LCPI6_3(%rip){1to8}, %ymm1, %ymm0 {%k1}
 	retq

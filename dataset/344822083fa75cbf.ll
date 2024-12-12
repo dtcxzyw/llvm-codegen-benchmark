@@ -25,7 +25,7 @@ entry:
   ret double %4
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; cpython/optimized/mathmodule.ll
 ; openblas/optimized/dbdsvdx.c.ll
 ; openblas/optimized/dgesvj.c.ll
@@ -34,13 +34,12 @@ entry:
 ; openblas/optimized/dlag2.c.ll
 ; openblas/optimized/dlarrd.c.ll
 ; openblas/optimized/dlarrf.c.ll
-; openblas/optimized/dstein.c.ll
 ; Function Attrs: nounwind
 define double @func000000000000000c(double %0, double %1) #0 {
 entry:
   %2 = fcmp oge double %0, 0.000000e+00
   %3 = select i1 %2, double %0, double %1
-  %4 = fmul double %3, 1.000000e+01
+  %4 = fmul double %3, 5.000000e-01
   ret double %4
 }
 

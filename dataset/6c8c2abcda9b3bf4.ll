@@ -1,5 +1,7 @@
 
-; 9 occurrences:
+; 11 occurrences:
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side_basic.ll
 ; cmake/optimized/cmComputeLinkDepends.cxx.ll
 ; gromacs/optimized/muParserBase.cpp.ll
 ; hyperscan/optimized/rose_build_role_aliasing.cpp.ll
@@ -29,8 +31,7 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
-; linux/optimized/jiffies.ll
+; 1 occurrences:
 ; wireshark/optimized/erf.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {

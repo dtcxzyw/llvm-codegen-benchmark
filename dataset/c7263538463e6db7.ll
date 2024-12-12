@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000181(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = trunc i64 %3 to i32
@@ -17,7 +17,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_operator_csv_scanner.cpp.ll
 ; entt/optimized/meta_container.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = trunc i64 %3 to i32

@@ -47,6 +47,12 @@ func0000000000000077:                   # @func0000000000000077
 	slli	a0, a0, 48
 	or	a0, a0, a1
 	ret
+func000000000000003d:                   # @func000000000000003d
+	slli	a1, a1, 32
+	srli	a1, a1, 24
+	slli	a0, a0, 40
+	or	a0, a0, a1
+	ret
 func0000000000000016:                   # @func0000000000000016
 	slli	a1, a1, 32
 	slli	a0, a0, 32
@@ -57,12 +63,6 @@ func000000000000003f:                   # @func000000000000003f
 	slli	a1, a1, 32
 	srli	a1, a1, 20
 	slli	a0, a0, 44
-	or	a0, a0, a1
-	ret
-func000000000000003d:                   # @func000000000000003d
-	slli	a1, a1, 32
-	srli	a1, a1, 3
-	slli	a0, a0, 63
 	or	a0, a0, a1
 	ret
 func0000000000000004:                   # @func0000000000000004

@@ -11,7 +11,7 @@ func0000000000000003:                   # @func0000000000000003
 	testb	$1, %sil
 	movl	$2147483648, %eax               # imm = 0x80000000
 	cmovneq	%rdx, %rax
-	leaq	77(%rax,%rdi), %rax
+	leaq	77(%rdi,%rax), %rax
 	retq
 func0000000000000000:                   # @func0000000000000000
 	andl	$32, %edx

@@ -6,7 +6,7 @@
 ; rust-analyzer-rs/optimized/2ajuxklycdgazr2a.ll
 ; rust-analyzer-rs/optimized/3fmes56s5ij0nccc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %1, %0
   %3 = icmp eq i64 %0, 0
@@ -18,7 +18,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %0, 0
   %3 = icmp ne i64 %1, %0

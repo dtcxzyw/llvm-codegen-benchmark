@@ -1,17 +1,9 @@
-func000000000000015a:                   // @func000000000000015a
+func00000000000002aa:                   // @func00000000000002aa
 // %bb.0:                               // %entry
-	shl	v3.4s, v3.4s, #3
-	shl	v4.4s, v4.4s, #3
-	mov	w8, #348                        // =0x15c
-	sub	v2.4s, v2.4s, v4.4s
-	sub	v1.4s, v1.4s, v3.4s
-	dup	v3.4s, w8
-	add	v1.4s, v1.4s, v3.4s
-	add	v2.4s, v2.4s, v3.4s
-	cmgt	v2.4s, v2.4s, #0
-	cmgt	v1.4s, v1.4s, #0
-	uzp1	v1.8h, v1.8h, v2.8h
-	xtn	v1.8b, v1.8h
-	and	v0.8b, v1.8b, v0.8b
+	sub	w8, w1, w2, lsl #3
+	add	w8, w8, #348
+	cmp	w8, #0
+	cset	w8, gt
+	and	w0, w8, w0
 	ret
                                         // -- End function

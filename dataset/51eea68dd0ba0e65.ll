@@ -1,12 +1,15 @@
 
-; 17 occurrences:
+; 20 occurrences:
 ; abc/optimized/abcTiming.c.ll
 ; abc/optimized/amapMatch.c.ll
 ; abc/optimized/sclUpsize.c.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/btConvexHull.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_clipping.c.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; minetest/optimized/content_cao.cpp.ll
 ; minetest/optimized/luaentity_sao.cpp.ll

@@ -17,26 +17,26 @@ func00000000000000ca:                   # @func00000000000000ca
 	setae	%al
 	retq
 .LCPI2_0:
+	.long	0x3b808081                      # float 0.00392156886
+func0000000000000022:                   # @func0000000000000022
+	vmulss	.LCPI2_0(%rip), %xmm2, %xmm2
+	vminss	%xmm2, %xmm1, %xmm1
+	vucomiss	%xmm0, %xmm1
+	seta	%al
+	retq
+.LCPI3_0:
 	.long	0x0c000000                      # float 9.86076131E-32
 func0000000000000045:                   # @func0000000000000045
-	vmulss	.LCPI2_0(%rip), %xmm2, %xmm2
+	vmulss	.LCPI3_0(%rip), %xmm2, %xmm2
 	vmaxss	%xmm2, %xmm1, %xmm1
 	vucomiss	%xmm0, %xmm1
 	setb	%al
 	retq
-.LCPI3_0:
-	.long	0x3f800003                      # float 1.00000036
-func0000000000000024:                   # @func0000000000000024
-	vmulss	.LCPI3_0(%rip), %xmm2, %xmm2
-	vminss	%xmm2, %xmm1, %xmm1
-	vucomiss	%xmm1, %xmm0
-	seta	%al
-	retq
 .LCPI4_0:
 	.long	0x3f800003                      # float 1.00000036
-func0000000000000022:                   # @func0000000000000022
+func0000000000000024:                   # @func0000000000000024
 	vmulss	.LCPI4_0(%rip), %xmm2, %xmm2
 	vminss	%xmm2, %xmm1, %xmm1
-	vucomiss	%xmm0, %xmm1
+	vucomiss	%xmm1, %xmm0
 	seta	%al
 	retq

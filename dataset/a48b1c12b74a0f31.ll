@@ -12,7 +12,7 @@ entry:
   ret i32 %3
 }
 
-; 28 occurrences:
+; 39 occurrences:
 ; abc/optimized/aigUtil.c.ll
 ; abc/optimized/bmcCexCut.c.ll
 ; abc/optimized/bmcMaj3.c.ll
@@ -26,11 +26,22 @@ entry:
 ; freetype/optimized/ftbase.c.ll
 ; libwebp/optimized/bit_writer_utils.c.ll
 ; libwebp/optimized/filter_enc.c.ll
-; libwebp/optimized/frame_enc.c.ll
 ; libwebp/optimized/lossless.c.ll
 ; libwebp/optimized/picture_csp_enc.c.ll
 ; libwebp/optimized/quant_enc.c.ll
 ; linux/optimized/ff-memless.ll
+; lvgl/optimized/lv_anim.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_draw_arc.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; lvgl/optimized/lv_draw_sw_gradient.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
+; lvgl/optimized/lv_math.ll
+; lvgl/optimized/lv_obj_style.ll
+; lvgl/optimized/lv_roller.ll
+; lvgl/optimized/lv_scale.ll
 ; miniaudio/optimized/unity.c.ll
 ; nori/optimized/nanovg.c.ll
 ; opencv/optimized/dxt.cpp.ll
@@ -74,9 +85,10 @@ entry:
   ret i32 %3
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; libwebp/optimized/frame_enc.c.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rtextures.c.ll

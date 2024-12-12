@@ -4,7 +4,7 @@
 ; rocksdb/optimized/testutil.cc.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000004a(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000008a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, %0
   %4 = icmp sgt i32 %3, %1
@@ -13,13 +13,14 @@ entry:
   ret i32 %6
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; postgres/optimized/receivelog.ll
 ; raylib/optimized/raudio.c.ll
+; stb/optimized/stb_vorbis.c.ll
 ; wireshark/optimized/packet_diagram.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
@@ -31,7 +32,7 @@ entry:
   ret i32 %6
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; abc/optimized/inflate.c.ll
 ; clamav/optimized/matcher-pcre.c.ll
 ; cmake/optimized/zstd_compress.c.ll
@@ -41,7 +42,6 @@ entry:
 ; libquic/optimized/inflate.c.ll
 ; linux/optimized/vpd.ll
 ; linux/optimized/xhci-ring.ll
-; nuttx/optimized/fs_blockpartition.c.ll
 ; openjdk/optimized/cmsio0.ll
 ; qemu/optimized/block_parallels.c.ll
 ; slurm/optimized/KeccakSponge.ll
@@ -62,7 +62,7 @@ entry:
 ; qemu/optimized/hw_net_e1000.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000068(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %0, %2
   %4 = icmp ugt i32 %3, %1
@@ -71,11 +71,12 @@ entry:
   ret i32 %6
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; brotli/optimized/decode.c.ll
 ; cmake/optimized/frm_driver.c.ll
 ; git/optimized/read-cache.ll
 ; imgui/optimized/imgui_draw.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/alignset.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
@@ -91,7 +92,7 @@ entry:
 ; stb/optimized/stb_rect_pack.c.ll
 ; yosys/optimized/splitnets.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000005a(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %0, %2
   %4 = icmp sgt i32 %3, %1
@@ -105,7 +106,7 @@ entry:
 ; openjdk/optimized/mlib_ImageCreate.ll
 ; recastnavigation/optimized/DetourPathCorridor.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000da(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000001aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %0, %2
   %4 = icmp sgt i32 %3, %1
@@ -119,7 +120,7 @@ entry:
 ; darktable/optimized/NefDecoder.cpp.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, %0
   %4 = icmp ugt i32 %3, %1
@@ -131,7 +132,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/preload-index.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000048(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000088(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %0, %2
   %4 = icmp ugt i32 %3, %1
@@ -146,7 +147,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; zlib/optimized/inflate.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000048(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, %0
   %4 = icmp ugt i32 %3, %1
@@ -155,27 +156,15 @@ entry:
   ret i32 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; hermes/optimized/APFloat.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll
+; lvgl/optimized/lv_indev_scroll.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000056(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %0, %2
+  %3 = add nsw i32 %2, %0
   %4 = icmp slt i32 %3, %1
-  %5 = sub nsw i32 %1, %2
-  %6 = select i1 %4, i32 %5, i32 %0
-  ret i32 %6
-}
-
-; 2 occurrences:
-; cmake/optimized/zstd_compress.c.ll
-; zstd/optimized/zstd_compress.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000058(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %0, %2
-  %4 = icmp ugt i32 %3, %1
   %5 = sub nsw i32 %1, %2
   %6 = select i1 %4, i32 %5, i32 %0
   ret i32 %6

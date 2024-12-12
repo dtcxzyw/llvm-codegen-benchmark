@@ -44,9 +44,9 @@ func000000000000018c:                   # @func000000000000018c
 	leaq	(%rsi,%rdi), %rax
 	retq
 func000000000000002c:                   # @func000000000000002c
-	movq	%rdi, %rax
 	cmpq	$1, %rdx
-	adcq	%rsi, %rax
+	adcq	$0, %rsi
+	leaq	(%rsi,%rdi), %rax
 	retq
 func000000000000010c:                   # @func000000000000010c
 	cmpq	$16384, %rdx                    # imm = 0x4000
@@ -58,8 +58,9 @@ func000000000000008f:                   # @func000000000000008f
 	cmpq	$131073, %rdx                   # imm = 0x20001
 	adcq	%rsi, %rax
 	retq
-func0000000000000185:                   # @func0000000000000185
-	cmpq	$1, %rdx
-	sbbq	$-1, %rsi
-	leaq	(%rsi,%rdi), %rax
+func0000000000000140:                   # @func0000000000000140
+	notq	%rdx
+	shrq	$63, %rdx
+	leaq	(%rdi,%rsi), %rax
+	addq	%rdx, %rax
 	retq

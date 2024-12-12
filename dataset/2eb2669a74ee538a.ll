@@ -5,9 +5,9 @@
 define i32 @func0000000000000029(i32 %0, double %1) #0 {
 entry:
   %2 = sitofp i32 %0 to double
-  %3 = fcmp ult double %2, %1
+  %3 = fcmp ugt double %1, %2
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -29,9 +29,9 @@ entry:
 define i32 @func0000000000000021(i32 %0, double %1) #0 {
 entry:
   %2 = sitofp i32 %0 to double
-  %3 = fcmp olt double %2, %1
+  %3 = fcmp ogt double %1, %2
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 

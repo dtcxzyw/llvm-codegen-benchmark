@@ -7,15 +7,17 @@ entry:
   %3 = zext i16 %2 to i64
   %4 = shl nuw nsw i64 %3, 5
   %5 = and i64 %1, 4294966272
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   %7 = or i64 %6, %4
   ret i64 %7
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; openspiel/optimized/chess.cc.ll
 ; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i16 %1, i64 %2) #0 {
 entry:

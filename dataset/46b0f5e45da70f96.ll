@@ -1,5 +1,5 @@
 
-; 90 occurrences:
+; 81 occurrences:
 ; abc/optimized/aigRepr.c.ll
 ; abc/optimized/aigUtil.c.ll
 ; abc/optimized/bmcBmc2.c.ll
@@ -18,9 +18,7 @@
 ; linux/optimized/fault.ll
 ; linux/optimized/intel_color.ll
 ; linux/optimized/nf_nat_core.ll
-; linux/optimized/rseq.ll
 ; linux/optimized/task_mmu.ll
-; linux/optimized/tick-common.ll
 ; linux/optimized/tick-sched.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/BackendUtil.cpp.ll
@@ -30,19 +28,15 @@
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; openblas/optimized/lapacke_nancheck.c.ll
 ; opencv/optimized/persistence.cpp.ll
 ; openjdk/optimized/c1_LIR.ll
 ; openjdk/optimized/jvmtiEventController.ll
 ; openjdk/optimized/methodData.ll
 ; openjdk/optimized/synchronizer.ll
 ; openmpi/optimized/nbc_ireduce.ll
-; openssl/optimized/bio_core_test-bin-bio_core_test.ll
 ; openssl/optimized/bio_dgram_test-bin-bio_dgram_test.ll
-; openssl/optimized/bio_readbuffer_test-bin-bio_readbuffer_test.ll
 ; openssl/optimized/evp_pkey_provided_test-bin-evp_pkey_provided_test.ll
 ; openssl/optimized/libdefault-lib-file_store.ll
-; openssl/optimized/membio_test-bin-membio_test.ll
 ; openssl/optimized/quic_multistream_test-bin-quic_multistream_test.ll
 ; openssl/optimized/quic_multistream_test-bin-quictestlib.ll
 ; openssl/optimized/quic_newcid_test-bin-quictestlib.ll
@@ -53,12 +47,9 @@
 ; openusd/optimized/tsTest_TsEvaluator.cpp.ll
 ; php/optimized/output.ll
 ; proj/optimized/init.cpp.ll
-; qemu/optimized/target_riscv_vector_helper.c.ll
 ; qemu/optimized/tcg-op-gvec.c.ll
-; quickjs/optimized/libbf.ll
 ; quickjs/optimized/quickjs.ll
 ; redis/optimized/debug.ll
-; ruby/optimized/basicsocket.ll
 ; ruby/optimized/class.ll
 ; ruby/optimized/coverage.ll
 ; ruby/optimized/enum.ll
@@ -99,7 +90,7 @@ entry:
   ret i32 %3
 }
 
-; 152 occurrences:
+; 151 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/absOldCex.c.ll
 ; abc/optimized/aigWin.c.ll
@@ -115,6 +106,7 @@ entry:
 ; abc/optimized/plaCom.c.ll
 ; abc/optimized/saigMiter.c.ll
 ; abc/optimized/sswSat.c.ll
+; boost/optimized/sparring_partner.ll
 ; clamav/optimized/XzDec.c.ll
 ; cmake/optimized/testDirectory.cxx.ll
 ; cpython/optimized/longobject.ll
@@ -148,7 +140,6 @@ entry:
 ; linux/optimized/sock.ll
 ; linux/optimized/svcsock.ll
 ; linux/optimized/tcp.ll
-; linux/optimized/trace_event_perf.ll
 ; linux/optimized/trace_events.ll
 ; linux/optimized/trace_events_trigger.ll
 ; linux/optimized/virtio_blk.ll
@@ -229,7 +220,6 @@ entry:
 ; ruby/optimized/enum.ll
 ; ruby/optimized/gc.ll
 ; ruby/optimized/hash.ll
-; ruby/optimized/intpack.ll
 ; ruby/optimized/numeric.ll
 ; ruby/optimized/proc.ll
 ; ruby/optimized/rational.ll
@@ -261,13 +251,14 @@ entry:
   ret i32 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; libwebp/optimized/frame_enc.c.ll
+; linux/optimized/nf_nat_sip.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i64 %0) #0 {
+define i32 @func0000000000000028(i64 %0) #0 {
 entry:
-  %1 = and i64 %0, 254
-  %2 = icmp ult i64 %1, 250
+  %1 = and i64 %0, 7
+  %2 = icmp samesign ult i64 %1, 3
   %3 = zext i1 %2 to i32
   ret i32 %3
 }

@@ -1,5 +1,5 @@
 
-; 235 occurrences:
+; 236 occurrences:
 ; annoy/optimized/annoymodule.ll
 ; bullet3/optimized/MultiBodyTree.ll
 ; bullet3/optimized/b3QuantizedBvh.ll
@@ -172,7 +172,6 @@
 ; nori/optimized/warptest.cpp.ll
 ; oiio/optimized/imagebufalgo_yee.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
-; openblas/optimized/ieeeck.c.ll
 ; opencv/optimized/calibinit.cpp.ll
 ; opencv/optimized/dqb.cpp.ll
 ; opencv/optimized/global_motion.cpp.ll
@@ -235,11 +234,13 @@
 ; recastnavigation/optimized/Tests_Recast.cpp.ll
 ; recastnavigation/optimized/main.cpp.ll
 ; xgboost/optimized/regression_obj.cc.ll
+; zed-rs/optimized/7almbq0vtpgp7q0c9d6k1td97.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1) #0 {
 entry:
   %2 = fmul float %1, %1
-  %3 = fadd float %2, %0
+  %3 = fadd float %0, %2
   ret float %3
 }
 

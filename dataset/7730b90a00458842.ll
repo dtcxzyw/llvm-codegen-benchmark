@@ -11,7 +11,7 @@
 ; openssl/optimized/libcrypto-shlib-bn_lib.ll
 ; php/optimized/zend_alloc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 6
   %3 = add nuw nsw i32 %2, 1
@@ -24,7 +24,7 @@ entry:
 ; php/optimized/KeccakSponge.ll
 ; slurm/optimized/KeccakSponge.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001a1(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 3
   %3 = add nsw i32 %2, -1
@@ -36,7 +36,7 @@ entry:
 ; 1 occurrences:
 ; flac/optimized/stream_encoder.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000068(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 3
   %3 = add nuw nsw i32 %2, 33
@@ -49,7 +49,7 @@ entry:
 ; postgres/optimized/reloptions.ll
 ; postgres/optimized/varlena.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 2
   %3 = add nsw i32 %2, -4

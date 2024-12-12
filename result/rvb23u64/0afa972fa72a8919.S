@@ -5,7 +5,7 @@ func0000000000000001:                   # @func0000000000000001
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func000000000000010a:                   # @func000000000000010a
+func000000000000020a:                   # @func000000000000020a
 	slli	a0, a0, 2
 	addiw	a0, a0, -8
 	slti	a0, a0, 0

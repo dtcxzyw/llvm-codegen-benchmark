@@ -14,7 +14,7 @@ func000000000000000a:                   # @func000000000000000a
 	.long	4294910976                      # 0xffff2400
 .LCPI1_1:
 	.long	1024                            # 0x400
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	vpslld	$8, %ymm0, %ymm0
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
@@ -24,7 +24,7 @@ func00000000000000c4:                   # @func00000000000000c4
 	retq
 .LCPI2_0:
 	.long	1001                            # 0x3e9
-func0000000000000346:                   # @func0000000000000346
+func0000000000000686:                   # @func0000000000000686
 	vpaddd	%ymm1, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
@@ -45,7 +45,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 .LCPI4_0:
 	.long	4294967288                      # 0xfffffff8
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	vpslld	$3, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpaddd	.LCPI4_0(%rip){1to8}, %ymm0, %ymm0
@@ -57,7 +57,7 @@ func0000000000000046:                   # @func0000000000000046
 	.long	4026531840                      # 0xf0000000
 .LCPI5_1:
 	.long	2147483631                      # 0x7fffffef
-func0000000000000308:                   # @func0000000000000308
+func0000000000000608:                   # @func0000000000000608
 	vpslld	$28, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpaddd	.LCPI5_0(%rip){1to8}, %ymm0, %ymm0
@@ -79,7 +79,7 @@ func0000000000000004:                   # @func0000000000000004
 	retq
 .LCPI7_0:
 	.long	4294967294                      # 0xfffffffe
-func0000000000000151:                   # @func0000000000000151
+func00000000000002a1:                   # @func00000000000002a1
 	vpaddd	%ymm0, %ymm0, %ymm0
 	vpbroadcastd	.LCPI7_0(%rip), %ymm2   # ymm2 = [4294967294,4294967294,4294967294,4294967294,4294967294,4294967294,4294967294,4294967294]
 	vpsubd	%ymm1, %ymm2, %ymm1

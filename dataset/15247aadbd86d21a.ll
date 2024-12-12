@@ -24,24 +24,24 @@ entry:
 ; php/optimized/parse_tz.ll
 ; redis/optimized/geo.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func000000000000006f(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 20
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func000000000000002b(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, -8
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw i64, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i64, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -61,22 +61,22 @@ entry:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; freetype/optimized/truetype.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i32 %1, i64 %2) #0 {
 entry:
-  %.idx = mul i64 %2, 544
-  %3 = getelementptr nusw i8, ptr %0, i64 %.idx
+  %.idx = mul nuw i64 %2, 544
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %.idx
   %4 = zext nneg i32 %1 to i64
-  %5 = getelementptr nusw float, ptr %3, i64 %4
+  %5 = getelementptr nusw nuw float, ptr %3, i64 %4
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000078(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func000000000000007c(ptr %0, i32 %1, i64 %2) #0 {
 entry:
-  %.idx = mul i64 %2, 544
-  %3 = getelementptr nusw i8, ptr %0, i64 %.idx
+  %.idx = mul nuw i64 %2, 544
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %.idx
   %4 = zext nneg i32 %1 to i64
   %5 = getelementptr float, ptr %3, i64 %4
   ret ptr %5
@@ -98,12 +98,12 @@ entry:
 ; abc/optimized/giaGen.c.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func000000000000005f(ptr %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = mul i64 %2, 3072
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %3 = mul nuw i64 %2, 3072
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr nusw i64, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i64, ptr %4, i64 %5
   ret ptr %6
 }
 

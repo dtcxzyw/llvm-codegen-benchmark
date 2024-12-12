@@ -1,5 +1,5 @@
 
-; 68 occurrences:
+; 71 occurrences:
 ; abc/optimized/rsbDec6.c.ll
 ; brotli/optimized/decode.c.ll
 ; cmake/optimized/fse_compress.c.ll
@@ -7,7 +7,6 @@
 ; hyperscan/optimized/block.c.ll
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/catchup.c.ll
-; hyperscan/optimized/init.c.ll
 ; hyperscan/optimized/mpv.c.ll
 ; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/repeat.c.ll
@@ -66,6 +65,10 @@
 ; z3/optimized/sat_aig_cuts.cpp.ll
 ; z3/optimized/sat_lut_finder.cpp.ll
 ; z3/optimized/sat_xor_finder.cpp.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
 ; zstd/optimized/fse_compress.c.ll
 ; zstd/optimized/zstd_compress_sequences.c.ll
 ; Function Attrs: nounwind
@@ -76,7 +79,7 @@ entry:
   ret i64 %3
 }
 
-; 21 occurrences:
+; 22 occurrences:
 ; grpc/optimized/transport.cc.ll
 ; image-rs/optimized/249ukonr3l56u09i.ll
 ; linux/optimized/sd.ll
@@ -98,6 +101,7 @@ entry:
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; typst-rs/optimized/al9nyr8ju52xbc2.ll
 ; wasmedge/optimized/formchecker.cpp.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:

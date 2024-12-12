@@ -3,7 +3,7 @@
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-tag.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000244(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000484(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp uge ptr %1, %2
   %4 = icmp eq ptr %1, null
@@ -19,12 +19,12 @@ entry:
 ; llvm/optimized/Verifier.cpp.ll
 ; openjdk/optimized/macro.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000084(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
   %4 = icmp eq ptr %1, null
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

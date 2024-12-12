@@ -1,4 +1,4 @@
-func000000000000008a:                   # @func000000000000008a
+func000000000000010a:                   # @func000000000000010a
 	sarq	$34, %rdi
 	testl	%edi, %edi
 	setg	%al

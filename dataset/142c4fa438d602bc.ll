@@ -1,8 +1,17 @@
 
-; 31 occurrences:
+; 40 occurrences:
 ; arrow/optimized/expression.cc.ll
 ; arrow/optimized/key_hash.cc.ll
 ; assimp/optimized/JoinVerticesProcess.cpp.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/wait.ll
 ; casadi/optimized/code_generator.cpp.ll
 ; casadi/optimized/sparsity.cpp.ll
 ; llvm/optimized/UnwrappedLineParser.cpp.ll

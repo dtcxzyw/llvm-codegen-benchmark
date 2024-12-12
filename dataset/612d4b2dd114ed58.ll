@@ -8,7 +8,7 @@ define i32 @func0000000000000001(i1 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -8
   %3 = icmp eq i8 %2, -40
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = select i1 %4, i32 -1, i32 4
   ret i32 %5
 }

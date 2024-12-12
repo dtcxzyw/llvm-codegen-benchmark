@@ -13,7 +13,7 @@
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; wasmtime-rs/optimized/jd0egfnydpuo3ak.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002cc(i64 %0, i64 %1) #0 {
+define i1 @func000000000000098c(i64 %0, i64 %1) #0 {
 entry:
   %.fr = freeze i64 %1
   %2 = urem i64 %.fr, 24

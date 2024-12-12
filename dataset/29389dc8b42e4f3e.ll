@@ -19,13 +19,14 @@ entry:
   ret i32 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; meshlab/optimized/multiViewer_Container.cpp.ll
 ; minetest/optimized/l_env.cpp.ll
 ; minetest/optimized/server.cpp.ll
 ; opencv/optimized/perf_affine2d.cpp.ll
 ; openjdk/optimized/jvm.ll
 ; openssl/optimized/openssl-bin-enc.ll
+; postgres/optimized/fsmpage.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:

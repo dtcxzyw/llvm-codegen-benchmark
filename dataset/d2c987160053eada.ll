@@ -1,7 +1,7 @@
 
-%"struct.asmjit::_abi_1_10::Operand_.2488708" = type { %"struct.asmjit::_abi_1_10::OperandSignature.2488696", i32, [2 x i32] }
-%"struct.asmjit::_abi_1_10::OperandSignature.2488696" = type { i32 }
-%struct.erf_ehdr.3246866 = type { i64 }
+%"struct.asmjit::_abi_1_10::Operand_.2604140" = type { %"struct.asmjit::_abi_1_10::OperandSignature.2604128", i32, [2 x i32] }
+%"struct.asmjit::_abi_1_10::OperandSignature.2604128" = type { i32 }
+%struct.erf_ehdr.3438196 = type { i64 }
 
 ; 17 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
@@ -22,29 +22,12 @@
 ; recastnavigation/optimized/DetourTileCache.cpp.ll
 ; slurm/optimized/cpu_frequency.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i8 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = add nuw nsw i64 %2, 4294967295
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr nusw [4 x %"struct.asmjit::_abi_1_10::Operand_.2488708"], ptr %0, i64 0, i64 %4
-  ret ptr %5
-}
-
-; 6 occurrences:
-; clamav/optimized/special.c.ll
-; mitsuba3/optimized/archtraits.cpp.ll
-; openusd/optimized/decodeframe.c.ll
-; openusd/optimized/decodemv.c.ll
-; openusd/optimized/mvref_common.c.ll
-; openusd/optimized/reconinter.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i8 %1) #0 {
-entry:
-  %2 = zext nneg i8 %1 to i64
-  %3 = add nuw nsw i64 %2, 4294967264
-  %4 = and i64 %3, 4294967295
-  %5 = getelementptr nusw [32 x i8], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [4 x %"struct.asmjit::_abi_1_10::Operand_.2604140"], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -62,6 +45,22 @@ entry:
   ret ptr %5
 }
 
+; 5 occurrences:
+; clamav/optimized/special.c.ll
+; openusd/optimized/decodeframe.c.ll
+; openusd/optimized/decodemv.c.ll
+; openusd/optimized/mvref_common.c.ll
+; openusd/optimized/reconinter.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001f(ptr %0, i8 %1) #0 {
+entry:
+  %2 = zext nneg i8 %1 to i64
+  %3 = add nuw nsw i64 %2, 4294967295
+  %4 = and i64 %3, 4294967295
+  %5 = getelementptr nusw nuw [3 x i16], ptr %0, i64 0, i64 %4
+  ret ptr %5
+}
+
 ; 4 occurrences:
 ; linux/optimized/alps.ll
 ; linux/optimized/filemap.ll
@@ -73,7 +72,7 @@ entry:
   %2 = zext i8 %1 to i64
   %3 = add nuw nsw i64 %2, 4294967295
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr [16 x %struct.erf_ehdr.3246866], ptr %0, i64 0, i64 %4
+  %5 = getelementptr [16 x %struct.erf_ehdr.3438196], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

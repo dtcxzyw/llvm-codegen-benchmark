@@ -1,32 +1,32 @@
 
-%"class.hermes::vm::GCHermesValueBase.2880473" = type { %"class.hermes::vm::HermesValue.2880474" }
-%"class.hermes::vm::HermesValue.2880474" = type { i64 }
-%"class.hermes::vm::GCHermesValueBase.2881673" = type { %"class.hermes::vm::HermesValue32.2881674" }
-%"class.hermes::vm::HermesValue32.2881674" = type { i32 }
+%"class.hermes::vm::GCHermesValueBase.3074997" = type { %"class.hermes::vm::HermesValue.3074998" }
+%"class.hermes::vm::HermesValue.3074998" = type { i64 }
+%"class.hermes::vm::GCHermesValueBase.3076197" = type { %"class.hermes::vm::HermesValue32.3076198" }
+%"class.hermes::vm::HermesValue32.3076198" = type { i32 }
 
 ; 1 occurrences:
 ; abc/optimized/giaSatMap.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000076(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000077(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = add nuw nsw i32 %3, 1
   %5 = lshr i32 %4, 1
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw i32, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i32, ptr %0, i64 %6
   ret ptr %7
 }
 
 ; 1 occurrences:
 ; soc-simulator/optimized/verilated.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000f6(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func00000000000000f7(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 %1, %2
   %4 = add nuw nsw i32 %3, 1
   %5 = lshr i32 %4, 5
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw i32, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i32, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -41,13 +41,13 @@ entry:
 ; hermes/optimized/SegmentedArray.cpp.ll
 ; openusd/optimized/obu.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = add i32 %3, -4097
   %5 = lshr i32 %4, 10
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw %"class.hermes::vm::GCHermesValueBase.2880473", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3074997", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -65,13 +65,13 @@ entry:
 ; hermes/optimized/RuntimeJSONUtils.cpp.ll
 ; hermes/optimized/TypedArray.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000086(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000087(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw i32 %1, %2
   %4 = add i32 %3, -4096
   %5 = lshr i32 %4, 10
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw %"class.hermes::vm::GCHermesValueBase.2881673", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3076197", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -82,7 +82,7 @@ entry:
 define ptr @func0000000000000014(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = lshr i32 %4, 6
   %6 = zext nneg i32 %5 to i64
   %7 = getelementptr i64, ptr %0, i64 %6
@@ -97,13 +97,13 @@ entry:
 ; hyperscan/optimized/stream.c.ll
 ; hyperscan/optimized/stream_compress.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000056(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000057(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = add nsw i32 %3, 7
   %5 = lshr i32 %4, 3
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw i8, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %0, i64 %6
   ret ptr %7
 }
 

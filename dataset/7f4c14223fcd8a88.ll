@@ -1,5 +1,5 @@
 
-; 197 occurrences:
+; 187 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/giaPat2.c.ll
 ; abseil-cpp/optimized/ascii_test.cc.ll
@@ -14,7 +14,6 @@
 ; duckdb/optimized/ub_duckdb_func_map_nested.cpp.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; glslang/optimized/ParseHelper.cpp.ll
-; hdf5/optimized/H5I.c.ll
 ; hdf5/optimized/H5Shyper.c.ll
 ; hermes/optimized/ES6Class.cpp.ll
 ; hyperscan/optimized/runtime.c.ll
@@ -26,7 +25,6 @@
 ; libquic/optimized/bio.c.ll
 ; libquic/optimized/quic_framer.cc.ll
 ; linux/optimized/alps.ll
-; linux/optimized/alternative.ll
 ; linux/optimized/blk-mq.ll
 ; linux/optimized/cdrom.ll
 ; linux/optimized/compaction.ll
@@ -37,10 +35,8 @@
 ; linux/optimized/hda_auto_parser.ll
 ; linux/optimized/hooks.ll
 ; linux/optimized/hub.ll
-; linux/optimized/ich8lan.ll
 ; linux/optimized/intel_pstate.ll
 ; linux/optimized/libata-scsi.ll
-; linux/optimized/netdev.ll
 ; linux/optimized/pci-quirks.ll
 ; linux/optimized/pcm_lib.ll
 ; linux/optimized/recovery.ll
@@ -85,7 +81,6 @@
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; llvm/optimized/MIRPrinter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RegionStore.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
@@ -122,7 +117,6 @@
 ; nuttx/optimized/sem_holder.c.ll
 ; oiio/optimized/imagecache.cpp.ll
 ; oiio/optimized/strutil.cpp.ll
-; opencv/optimized/stringutils.cpp.ll
 ; openjdk/optimized/debugLoop.ll
 ; openjdk/optimized/type.ll
 ; openssl/optimized/libcrypto-lib-decoder_lib.ll
@@ -135,14 +129,12 @@
 ; openusd/optimized/topologyRefinerFactory.cpp.ll
 ; openvdb/optimized/points.cc.ll
 ; php/optimized/ir_emit.ll
-; php/optimized/pcre2_compile.ll
 ; php/optimized/zend_inference.ll
 ; php/optimized/zend_jit.ll
 ; postgres/optimized/parsexlog.ll
 ; postgres/optimized/rangetypes.ll
 ; postgres/optimized/xlogrecovery.ll
 ; proxygen/optimized/HTTP1xCodec.cpp.ll
-; qemu/optimized/hw_net_tulip.c.ll
 ; qemu/optimized/target_riscv_translate.c.ll
 ; ruby/optimized/cont.ll
 ; ruby/optimized/vm.ll
@@ -157,7 +149,6 @@
 ; velox/optimized/StringFunctions.cpp.ll
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; wireshark/optimized/dot11decrypt.c.ll
-; wireshark/optimized/packet-bgp.c.ll
 ; wireshark/optimized/packet-btavdtp.c.ll
 ; wireshark/optimized/packet-cemi.c.ll
 ; wireshark/optimized/packet-cip.c.ll
@@ -187,7 +178,6 @@
 ; wolfssl/optimized/internal.c.ll
 ; yosys/optimized/fstapi.ll
 ; yosys/optimized/simplify.ll
-; yyjson/optimized/yyjson.c.ll
 ; z3/optimized/int_solver.cpp.ll
 ; z3/optimized/mpq.cpp.ll
 ; z3/optimized/mpz.cpp.ll
@@ -206,7 +196,7 @@ entry:
   ret i1 %4
 }
 
-; 247 occurrences:
+; 243 occurrences:
 ; abc/optimized/SimpSolver.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
 ; abseil-cpp/optimized/ascii.cc.ll
@@ -219,10 +209,8 @@ entry:
 ; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
-; folly/optimized/SocketFastOpen.cpp.ll
 ; g2o/optimized/hyper_graph.cpp.ll
 ; git/optimized/cache-tree.ll
-; git/optimized/chdir-notify.ll
 ; git/optimized/convert.ll
 ; git/optimized/debug.ll
 ; git/optimized/diff-lib.ll
@@ -246,7 +234,7 @@ entry:
 ; git/optimized/trace.ll
 ; git/optimized/unpack-trees.ll
 ; git/optimized/update-index.ll
-; hyperscan/optimized/rose_build_compile.cpp.ll
+; graphviz/optimized/actions.c.ll
 ; imgui/optimized/imgui.cpp.ll
 ; libjpeg-turbo/optimized/tjbench.c.ll
 ; libquic/optimized/spdy_framer.cc.ll
@@ -257,7 +245,6 @@ entry:
 ; linux/optimized/cdrom.ll
 ; linux/optimized/drm_dp_helper.ll
 ; linux/optimized/e1000_main.ll
-; linux/optimized/hdac_controller.ll
 ; linux/optimized/hdac_stream.ll
 ; linux/optimized/intel_dp.ll
 ; linux/optimized/intel_psr.ll
@@ -317,7 +304,6 @@ entry:
 ; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/UninitializedValues.cpp.ll
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
-; llvm/optimized/ValueTracking.cpp.ll
 ; llvm/optimized/X86AsmBackend.cpp.ll
 ; llvm/optimized/X86FastISel.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
@@ -463,14 +449,38 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 11 occurrences:
+; html5ever-rs/optimized/38n20yzo26sy51uu.ll
 ; llvm/optimized/DataFlowSanitizer.cpp.ll
+; qemu/optimized/source_s_addMagsF16.c.ll
+; spike/optimized/s_addMagsF16.ll
+; velox/optimized/Utf8Utils.cpp.ll
 ; wireshark/optimized/packet-dns.c.ll
+; wireshark/optimized/packet-epl.c.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i8 %1) #0 {
+define i1 @func0000000000000014(i1 %0, i8 %1) #0 {
 entry:
-  %2 = and i8 %1, 62
-  %3 = icmp eq i8 %2, 0
+  %2 = and i8 %1, 30
+  %3 = icmp ne i8 %2, 30
+  %4 = select i1 %0, i1 %3, i1 false
+  ret i1 %4
+}
+
+; 5 occurrences:
+; image-rs/optimized/5ez7udly19o3uj1p.ll
+; lvgl/optimized/lv_draw_sw_fill.ll
+; typst-rs/optimized/26ex1w19ixz6ifuk.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i8 %1) #0 {
+entry:
+  %2 = and i8 %1, 14
+  %3 = icmp ne i8 %2, 0
   %4 = select i1 %0, i1 %3, i1 false
   ret i1 %4
 }

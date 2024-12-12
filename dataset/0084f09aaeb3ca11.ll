@@ -16,7 +16,7 @@ entry:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; tev/optimized/ImageViewer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i1 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 4
   %3 = trunc i64 %2 to i32
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/posix_acl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000086(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 17179869184
   %3 = icmp ne i64 %2, 0
@@ -62,7 +62,7 @@ entry:
 ; opencv/optimized/tracker_goturn.cpp.ll
 ; opencv/optimized/tracking_feature.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000046(i1 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32

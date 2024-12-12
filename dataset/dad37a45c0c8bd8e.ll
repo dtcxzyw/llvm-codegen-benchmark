@@ -10,7 +10,7 @@ entry:
   %2 = freeze i16 %1
   %3 = and i16 %2, 8
   %4 = icmp ne i16 %3, 0
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

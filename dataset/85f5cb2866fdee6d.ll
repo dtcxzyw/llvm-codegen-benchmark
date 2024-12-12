@@ -1,5 +1,5 @@
 
-; 126 occurrences:
+; 124 occurrences:
 ; abc/optimized/giaUtil.c.ll
 ; clamav/optimized/disasm.c.ll
 ; clamav/optimized/htmlnorm.c.ll
@@ -27,11 +27,9 @@
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/nsnames.ll
-; linux/optimized/thermal_trip.ll
 ; llvm/optimized/CommonArgs.cpp.ll
 ; llvm/optimized/ContinuationIndenter.cpp.ll
 ; llvm/optimized/HWAddressSanitizer.cpp.ll
-; llvm/optimized/MachinePipeliner.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/SemaStmt.cpp.ll
@@ -104,7 +102,6 @@
 ; pybind11/optimized/test_unnamed_namespace_b.cpp.ll
 ; pybind11/optimized/test_vector_unique_ptr_member.cpp.ll
 ; pybind11/optimized/test_virtual_functions.cpp.ll
-; rust-analyzer-rs/optimized/58xaix613yc6ngmz.ll
 ; rustfmt-rs/optimized/4ext43viwbyeinhu.ll
 ; typst-rs/optimized/2hy987uth4sp8yoc.ll
 ; verilator/optimized/V3Number.cpp.ll
@@ -125,6 +122,7 @@
 ; yosys/optimized/sim.ll
 ; yosys/optimized/test_cell.ll
 ; z3/optimized/theory_str.cpp.ll
+; zed-rs/optimized/ddwqyvi7204z7yxly1a7n0b57.ll
 ; zxing/optimized/TextDecoder.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0, i1 %1, i1 %2) #0 {

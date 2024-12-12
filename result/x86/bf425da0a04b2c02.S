@@ -26,10 +26,17 @@ func000000000000000c:                   # @func000000000000000c
 	testl	%esi, %esi
 	setle	%al
 	retq
-func0000000000000010:                   # @func0000000000000010
+func0000000000000030:                   # @func0000000000000030
 	testb	$1, %dil
 	cmovel	%edx, %esi
 	xorl	%eax, %eax
 	cmpl	$2, %esi
+	setae	%al
+	retq
+func0000000000000010:                   # @func0000000000000010
+	testb	$1, %dil
+	cmovel	%edx, %esi
+	xorl	%eax, %eax
+	cmpl	$-2, %esi
 	setae	%al
 	retq

@@ -1,5 +1,6 @@
 
-; 9 occurrences:
+; 10 occurrences:
+; boost/optimized/math_normalize_spheroidal.ll
 ; darktable/optimized/introspection_basicadj.c.ll
 ; darktable/optimized/introspection_lowlight.c.ll
 ; harfbuzz/optimized/hb-subset.cc.ll

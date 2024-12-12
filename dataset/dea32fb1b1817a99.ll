@@ -8,11 +8,11 @@
 ; ncnn/optimized/unaryop_x86_avx512.cpp.ll
 ; ncnn/optimized/unaryop_x86_fma.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0) #0 {
+define i1 @func0000000000000034(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 2147483640
   %2 = or disjoint i32 %1, 3
-  %3 = icmp ult i32 %2, %0
+  %3 = icmp samesign ult i32 %2, %0
   ret i1 %3
 }
 
@@ -29,7 +29,7 @@ entry:
 ; ncnn/optimized/relu_x86_avx512.cpp.ll
 ; ncnn/optimized/relu_x86_fma.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0) #0 {
+define i1 @func0000000000000026(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 2147483640
   %2 = or disjoint i32 %1, 3
@@ -42,7 +42,7 @@ entry:
 ; linux/optimized/yenta_socket.ll
 ; opencv/optimized/boost.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0) #0 {
+define i1 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = and i32 %0, -61441
   %2 = or disjoint i32 %1, 4096

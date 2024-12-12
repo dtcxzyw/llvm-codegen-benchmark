@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000018c(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = select i1 %3, i1 %1, i1 false
@@ -18,7 +18,7 @@ entry:
 ; php/optimized/streams.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i1 %1, i1 false
@@ -30,7 +30,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 2
   %4 = select i1 %3, i1 %1, i1 false
@@ -42,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; brotli/optimized/entropy_encode.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 4
   %4 = select i1 %3, i1 %0, i1 false

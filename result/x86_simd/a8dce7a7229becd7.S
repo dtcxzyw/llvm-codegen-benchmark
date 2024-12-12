@@ -44,28 +44,34 @@ func000000000000001d:                   # @func000000000000001d
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpsllvq	%ymm0, %ymm1, %ymm0
 	retq
-.LCPI6_0:
-	.quad	1                               # 0x1
-func000000000000000a:                   # @func000000000000000a
+func000000000000000d:                   # @func000000000000000d
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
-	vpbroadcastq	.LCPI6_0(%rip), %ymm1   # ymm1 = [1,1,1,1]
+	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpsllvq	%ymm0, %ymm1, %ymm0
 	retq
 .LCPI7_0:
 	.quad	1                               # 0x1
-func000000000000000b:                   # @func000000000000000b
+func000000000000000a:                   # @func000000000000000a
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	vpbroadcastq	.LCPI7_0(%rip), %ymm1   # ymm1 = [1,1,1,1]
 	vpsllvq	%ymm0, %ymm1, %ymm0
 	retq
 .LCPI8_0:
+	.quad	1                               # 0x1
+func000000000000000b:                   # @func000000000000000b
+	vpaddd	%xmm1, %xmm0, %xmm0
+	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	vpbroadcastq	.LCPI8_0(%rip), %ymm1   # ymm1 = [1,1,1,1]
+	vpsllvq	%ymm0, %ymm1, %ymm0
+	retq
+.LCPI9_0:
 	.quad	2                               # 0x2
 func0000000000000004:                   # @func0000000000000004
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
-	vpbroadcastq	.LCPI8_0(%rip), %ymm1   # ymm1 = [2,2,2,2]
+	vpbroadcastq	.LCPI9_0(%rip), %ymm1   # ymm1 = [2,2,2,2]
 	vpsllvq	%ymm0, %ymm1, %ymm0
 	retq
 func0000000000000005:                   # @func0000000000000005
@@ -74,11 +80,11 @@ func0000000000000005:                   # @func0000000000000005
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpsllvq	%ymm0, %ymm1, %ymm0
 	retq
-.LCPI10_0:
+.LCPI11_0:
 	.quad	7                               # 0x7
 func000000000000001f:                   # @func000000000000001f
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
-	vpbroadcastq	.LCPI10_0(%rip), %ymm1  # ymm1 = [7,7,7,7]
+	vpbroadcastq	.LCPI11_0(%rip), %ymm1  # ymm1 = [7,7,7,7]
 	vpsllvq	%ymm0, %ymm1, %ymm0
 	retq

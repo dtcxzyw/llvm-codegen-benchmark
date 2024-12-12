@@ -38,9 +38,10 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; minetest/optimized/serverenvironment.cpp.ll
+; quest/optimized/QuEST_common.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003c(i64 %0, i64 %1) #0 {
 entry:
@@ -352,8 +353,9 @@ entry:
   ret i64 %4
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
+; cvc5/optimized/tableau.cpp.ll
 ; freetype/optimized/autofit.c.ll
 ; gromacs/optimized/dlasr.cpp.ll
 ; gromacs/optimized/slasr.cpp.ll

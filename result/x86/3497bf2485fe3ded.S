@@ -3,12 +3,12 @@ func0000000000000040:                   # @func0000000000000040
 	movl	%edi, %eax
 	leaq	-2(%rax,%rsi), %rax
 	retq
-func000000000000005a:                   # @func000000000000005a
+func000000000000007f:                   # @func000000000000007f
 	addq	%rdx, %rsi
 	movl	%edi, %eax
 	leaq	4(%rax,%rsi), %rax
 	retq
-func000000000000004a:                   # @func000000000000004a
+func000000000000006f:                   # @func000000000000006f
 	addq	%rdx, %rsi
 	movl	%edi, %eax
 	leaq	4(%rax,%rsi), %rax

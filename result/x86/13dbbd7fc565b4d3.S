@@ -28,16 +28,6 @@ func000000000000001b:                   # @func000000000000001b
 	shrq	$32, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000019:                   # @func0000000000000019
-	leaq	(%rsi,%rdx), %rax
-	shrq	%rax
-	addq	%rdi, %rax
-	retq
-func0000000000000003:                   # @func0000000000000003
-	leaq	(%rsi,%rdx), %rax
-	shrq	$63, %rax
-	addq	%rdi, %rax
-	retq
 func000000000000000a:                   # @func000000000000000a
 	leaq	(%rsi,%rdx), %rax
 	shrq	%rax
@@ -46,6 +36,11 @@ func000000000000000a:                   # @func000000000000000a
 func0000000000000002:                   # @func0000000000000002
 	leaq	(%rsi,%rdx), %rax
 	shrq	%rax
+	addq	%rdi, %rax
+	retq
+func0000000000000003:                   # @func0000000000000003
+	leaq	(%rsi,%rdx), %rax
+	shrq	$13, %rax
 	addq	%rdi, %rax
 	retq
 func0000000000000009:                   # @func0000000000000009
@@ -58,9 +53,24 @@ func0000000000000001:                   # @func0000000000000001
 	shrq	$3, %rax
 	addq	%rdi, %rax
 	retq
+func0000000000000019:                   # @func0000000000000019
+	leaq	(%rsi,%rdx), %rax
+	shrq	$3, %rax
+	addq	%rdi, %rax
+	retq
 func000000000000001a:                   # @func000000000000001a
 	leaq	(%rsi,%rdx), %rax
 	shrq	$32, %rax
+	addq	%rdi, %rax
+	retq
+func0000000000000008:                   # @func0000000000000008
+	leaq	(%rsi,%rdx), %rax
+	shrq	$2, %rax
+	addq	%rdi, %rax
+	retq
+func000000000000000b:                   # @func000000000000000b
+	leaq	(%rsi,%rdx), %rax
+	shrq	$2, %rax
 	addq	%rdi, %rax
 	retq
 func0000000000000004:                   # @func0000000000000004
@@ -68,18 +78,8 @@ func0000000000000004:                   # @func0000000000000004
 	shrq	$3, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
-	leaq	(%rsi,%rdx), %rax
-	shrq	%rax
-	addq	%rdi, %rax
-	retq
 func000000000000001f:                   # @func000000000000001f
 	leaq	(%rsi,%rdx), %rax
 	shrq	%rax
-	addq	%rdi, %rax
-	retq
-func000000000000000b:                   # @func000000000000000b
-	leaq	(%rsi,%rdx), %rax
-	shrq	$16, %rax
 	addq	%rdi, %rax
 	retq

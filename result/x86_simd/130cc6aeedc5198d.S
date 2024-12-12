@@ -4,7 +4,7 @@
 	.long	56                              # 0x38
 .LCPI0_2:
 	.quad	8                               # 0x8
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vpandd	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1
 	vpcmpgtd	.LCPI0_1(%rip){1to4}, %xmm1, %k1
 	vpbroadcastq	.LCPI0_2(%rip), %ymm1   # ymm1 = [8,8,8,8]

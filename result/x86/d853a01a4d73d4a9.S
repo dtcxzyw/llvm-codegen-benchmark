@@ -19,8 +19,8 @@ func0000000000000002:                   # @func0000000000000002
 func0000000000000010:                   # @func0000000000000010
 	addl	%edx, %edx
 	movslq	%edx, %rax
-	leaq	(%rsi,%rax,4), %rax
-	leaq	(%rax,%rdi,4), %rax
+	addq	%rdi, %rax
+	addq	%rsi, %rax
 	retq
 func000000000000000a:                   # @func000000000000000a
 	shll	$2, %edx

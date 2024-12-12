@@ -1,8 +1,13 @@
 
-; 9 occurrences:
+; 14 occurrences:
+; arrow/optimized/string-to-double.cc.ll
+; double_conversion/optimized/string-to-double.cc.ll
 ; duckdb/optimized/ub_duckdb_optimizer_rules.cpp.ll
+; eastl/optimized/EAString.cpp.ll
+; icu/optimized/double-conversion-string-to-double.ll
 ; linux/optimized/mempolicy.ll
 ; openjdk/optimized/relocInfo.ll
+; openusd/optimized/string-to-double.cc.ll
 ; re2/optimized/compile.cc.ll
 ; re2/optimized/mimics_pcre.cc.ll
 ; re2/optimized/parse.cc.ll
@@ -10,15 +15,15 @@
 ; re2/optimized/set.cc.ll
 ; re2/optimized/simplify.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000024(ptr %0, i16 %1, ptr %2) #0 {
+define ptr @func0000000000000064(ptr %0, i16 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 8
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 8
   %4 = icmp ult i16 %1, 2
   %5 = select i1 %4, ptr %3, ptr %0
   ret ptr %5
 }
 
-; 79 occurrences:
+; 76 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
@@ -27,12 +32,7 @@ entry:
 ; cmake/optimized/archive_read_support_format_zip.c.ll
 ; folly/optimized/EpollBackend.cpp.ll
 ; git/optimized/merge-ort.ll
-; hyperscan/optimized/block.c.ll
-; hyperscan/optimized/castle.c.ll
-; hyperscan/optimized/catchup.c.ll
 ; hyperscan/optimized/hwlm.c.ll
-; hyperscan/optimized/lbr.c.ll
-; hyperscan/optimized/runtime.c.ll
 ; icu/optimized/collationruleparser.ll
 ; icu/optimized/dayperiodrules.ll
 ; icu/optimized/dtptngen.ll
@@ -50,6 +50,7 @@ entry:
 ; llvm/optimized/DbgEntityHistoryCalculator.cpp.ll
 ; llvm/optimized/DebugHandlerBase.cpp.ll
 ; llvm/optimized/DwarfDebug.cpp.ll
+; llvm/optimized/FastISel.cpp.ll
 ; llvm/optimized/InstrRefBasedImpl.cpp.ll
 ; llvm/optimized/LiveDebugVariables.cpp.ll
 ; llvm/optimized/LiveRangeShrink.cpp.ll
@@ -98,10 +99,11 @@ entry:
 ; redis/optimized/lstrlib.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; verilator/optimized/V3Param.cpp.ll
+; zed-rs/optimized/89f8nno15240ug8tk8i1phh9j.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(ptr %0, i16 %1, ptr %2) #0 {
+define ptr @func0000000000000061(ptr %0, i16 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 8
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 8
   %4 = icmp eq i16 %1, 1
   %5 = select i1 %4, ptr %3, ptr %0
   ret ptr %5
@@ -122,10 +124,26 @@ entry:
 ; imgui/optimized/imgui_tables.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i16 %1, ptr %2) #0 {
+define ptr @func000000000000006a(ptr %0, i16 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 260
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 260
   %4 = icmp sgt i16 %1, 0
+  %5 = select i1 %4, ptr %3, ptr %0
+  ret ptr %5
+}
+
+; 6 occurrences:
+; abseil-cpp/optimized/arg.cc.ll
+; hyperscan/optimized/block.c.ll
+; hyperscan/optimized/castle.c.ll
+; hyperscan/optimized/catchup.c.ll
+; hyperscan/optimized/lbr.c.ll
+; hyperscan/optimized/runtime.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000041(ptr %0, i16 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -1
+  %4 = icmp eq i16 %1, 48
   %5 = select i1 %4, ptr %3, ptr %0
   ret ptr %5
 }

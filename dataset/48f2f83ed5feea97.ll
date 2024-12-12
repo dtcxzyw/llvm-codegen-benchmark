@@ -23,7 +23,7 @@ entry:
 define i8 @func0000000000000006(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 124
-  %3 = or i8 %2, %0
+  %3 = or i8 %0, %2
   ret i8 %3
 }
 

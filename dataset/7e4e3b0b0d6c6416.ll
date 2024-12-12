@@ -7,7 +7,7 @@
 ; opencv/optimized/demosaicing.cpp.ll
 ; wireshark/optimized/lemon.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %0, 0
   %3 = zext i1 %2 to i32

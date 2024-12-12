@@ -1,36 +1,22 @@
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	mov	w8, #2147483647                 // =0x7fffffff
-	sub	v2.2d, v2.2d, v4.2d
-	sub	v1.2d, v1.2d, v3.2d
-	dup	v4.2d, x8
-	shll2	v3.2d, v0.4s, #32
-	shll	v0.2d, v0.2s, #32
-	and	v2.16b, v2.16b, v4.16b
-	and	v1.16b, v1.16b, v4.16b
-	orr	v0.16b, v0.16b, v1.16b
-	orr	v1.16b, v3.16b, v2.16b
+	sub	w8, w1, w2
+                                        // kill: def $w0 killed $w0 def $x0
+	and	x8, x8, #0x7fffffff
+	orr	x0, x8, x0, lsl #32
 	ret
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	sub	v2.2d, v2.2d, v4.2d
-	sub	v1.2d, v1.2d, v3.2d
-	ushll	v3.2d, v0.2s, #0
-	ushll2	v0.2d, v0.4s, #0
-	sli	v1.2d, v3.2d, #32
-	sli	v2.2d, v0.2d, #32
-	mov	v0.16b, v1.16b
-	mov	v1.16b, v2.16b
+                                        // kill: def $w0 killed $w0 def $x0
+	sub	w8, w1, w2
+	orr	x0, x8, x0, lsl #32
 	ret
                                         // -- End function
 func0000000000000027:                   // @func0000000000000027
 // %bb.0:                               // %entry
-	ushll	v5.2d, v4.2s, #0
-	ushll2	v4.2d, v4.4s, #0
-	sub	v0.2d, v0.2d, v2.2d
-	sub	v1.2d, v1.2d, v3.2d
-	sli	v0.2d, v5.2d, #32
-	sli	v1.2d, v4.2d, #32
+	sub	w8, w0, w1
+                                        // kill: def $w2 killed $w2 def $x2
+	orr	x0, x8, x2, lsl #32
 	ret
                                         // -- End function

@@ -1,5 +1,6 @@
 
-; 169 occurrences:
+; 170 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -173,7 +174,7 @@
 define i64 @func0000000000000010(i64 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = trunc i128 %1 to i64
-  %4 = mul i64 %3, %2
+  %4 = mul i64 %2, %3
   %5 = lshr i64 %4, %0
   ret i64 %5
 }
@@ -280,7 +281,7 @@ entry:
 define i64 @func0000000000000038(i64 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = trunc i128 %1 to i64
-  %4 = mul i64 %3, %2
+  %4 = mul i64 %2, %3
   %5 = lshr i64 %4, %0
   ret i64 %5
 }
@@ -387,7 +388,7 @@ entry:
 define i64 @func0000000000000018(i64 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = trunc i128 %1 to i64
-  %4 = mul i64 %3, %2
+  %4 = mul i64 %2, %3
   %5 = lshr i64 %4, %0
   ret i64 %5
 }

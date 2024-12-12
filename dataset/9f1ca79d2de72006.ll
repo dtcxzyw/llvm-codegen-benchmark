@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 20 occurrences:
 ; arrow/optimized/vector_selection_filter_internal.cc.ll
 ; arrow/optimized/vector_selection_internal.cc.ll
 ; ceres/optimized/eigensparse.cc.ll
@@ -20,12 +20,11 @@
 ; postgres/optimized/pgbench.ll
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; slurm/optimized/acct_policy.ll
-; wireshark/optimized/ftype-time.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(double %0, i64 %1) #0 {
 entry:
   %2 = sitofp i64 %1 to double
-  %3 = fmul double %2, %0
+  %3 = fmul double %0, %2
   %4 = fptosi double %3 to i64
   ret i64 %4
 }

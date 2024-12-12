@@ -5,8 +5,8 @@ func0000000000000001:                   # @func0000000000000001
 	cmovnel	%edi, %eax
 	retq
 func0000000000000004:                   # @func0000000000000004
-	andl	$32767, %edx                    # imm = 0x7FFF
+	andl	$4095, %edx                     # imm = 0xFFF
+	xorl	%eax, %eax
 	cmpl	%esi, %edx
-	movl	$7, %eax
 	cmovael	%edi, %eax
 	retq

@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
 ; coreutils-rs/optimized/3fp1x41wzh4l1rh9.ll
@@ -16,8 +16,9 @@
 ; php/optimized/parse_posix.ll
 ; postgres/optimized/localtime.ll
 ; slurm/optimized/assoc_mgr.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0) #0 {
+define i32 @func0000000000000026(i32 %0) #0 {
 entry:
   %1 = srem i32 %0, 7
   %2 = icmp slt i32 %1, 0
@@ -30,7 +31,7 @@ entry:
 ; abseil-cpp/optimized/time_zone_fixed.cc.ll
 ; gromacs/optimized/x2top.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000003a(i32 %0) #0 {
+define i32 @func000000000000006a(i32 %0) #0 {
 entry:
   %1 = srem i32 %0, 360
   %2 = icmp sgt i32 %1, 180

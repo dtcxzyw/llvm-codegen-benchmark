@@ -62,7 +62,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/qemu-io-cmds.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000046(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = select i1 %3, i64 %0, i64 %1
@@ -96,14 +96,15 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; actix-rs/optimized/3u1jix79tu9frq3m.ll
+; boost/optimized/graphml.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = select i1 %3, i64 %0, i64 %1
-  %5 = icmp ugt i64 %4, 12
+  %5 = icmp ugt i64 %4, 15
   ret i1 %5
 }
 
@@ -111,7 +112,7 @@ entry:
 ; actix-rs/optimized/3u1jix79tu9frq3m.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = select i1 %3, i64 %0, i64 %1
@@ -132,8 +133,7 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; llvm/optimized/DwarfUnit.cpp.ll
+; 1 occurrences:
 ; llvm/optimized/InstrProfReader.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i64 %1, i8 %2) #0 {
@@ -145,9 +145,20 @@ entry:
 }
 
 ; 1 occurrences:
+; llvm/optimized/DwarfUnit.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i64 %0, i64 %1, i8 %2) #0 {
+entry:
+  %3 = trunc i8 %2 to i1
+  %4 = select i1 %3, i64 %0, i64 %1
+  %5 = icmp samesign ult i64 %4, 256
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; wasmtime-rs/optimized/2ta8crc4qgl9bp8t.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func000000000000004c(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = select i1 %3, i64 %0, i64 %1
@@ -158,7 +169,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/softfloat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func000000000000004a(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = select i1 %3, i64 %0, i64 %1

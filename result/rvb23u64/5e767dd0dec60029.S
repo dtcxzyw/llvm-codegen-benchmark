@@ -14,6 +14,13 @@ func000000000000018f:                   # @func000000000000018f
 	add	a0, a0, a1
 	addiw	a0, a0, 1
 	ret
+func0000000000000101:                   # @func0000000000000101
+	sext.w	a1, a1
+	sext.w	a2, a2
+	sltu	a1, a2, a1
+	add	a0, a0, a1
+	addiw	a0, a0, -8
+	ret
 func0000000000000185:                   # @func0000000000000185
 	sext.w	a2, a2
 	sext.w	a1, a1

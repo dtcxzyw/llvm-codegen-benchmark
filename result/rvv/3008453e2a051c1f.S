@@ -1,46 +1,46 @@
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsext.vf2	v14, v12
 	vsub.vv	v10, v14, v10
 	vmsltu.vv	v0, v8, v10
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsext.vf2	v14, v12
 	vsub.vv	v10, v14, v10
-	vmseq.vv	v0, v10, v8
+	vmseq.vv	v0, v8, v10
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsext.vf2	v14, v12
 	vsub.vv	v10, v14, v10
 	vmslt.vv	v0, v8, v10
 	ret
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsext.vf2	v14, v12
 	vsub.vv	v10, v14, v10
-	vmseq.vv	v0, v10, v8
+	vmseq.vv	v0, v8, v10
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsext.vf2	v14, v12
 	vsub.vv	v10, v14, v10
 	vmslt.vv	v0, v10, v8
 	ret
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsext.vf2	v14, v12
 	vsub.vv	v10, v14, v10
 	vmsltu.vv	v0, v10, v8
 	ret
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsext.vf2	v14, v12
 	vsub.vv	v10, v14, v10
 	vmsltu.vv	v0, v8, v10
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsext.vf2	v14, v12
 	vsub.vv	v10, v14, v10
@@ -50,9 +50,9 @@ func0000000000000001:                   # @func0000000000000001
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsext.vf2	v14, v12
 	vsub.vv	v10, v14, v10
-	vmseq.vv	v0, v10, v8
+	vmseq.vv	v0, v8, v10
 	ret
-func0000000000000017:                   # @func0000000000000017
+func0000000000000027:                   # @func0000000000000027
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsext.vf2	v14, v12
 	vsub.vv	v10, v14, v10

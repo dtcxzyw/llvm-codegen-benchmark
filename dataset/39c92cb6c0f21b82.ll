@@ -1,5 +1,5 @@
 
-%"struct.asmjit::_abi_1_10::OperandSignature.2487025" = type { i32 }
+%"struct.asmjit::_abi_1_10::OperandSignature.2602469" = type { i32 }
 
 ; 5 occurrences:
 ; icu/optimized/bmpset.ll
@@ -8,11 +8,11 @@
 ; z3/optimized/sat_local_search.cpp.ll
 ; z3/optimized/sat_solver.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i8 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i8 %1) #0 {
 entry:
   %2 = xor i8 %1, 7
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr nusw [32 x %"struct.asmjit::_abi_1_10::OperandSignature.2487025"], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [32 x %"struct.asmjit::_abi_1_10::OperandSignature.2602469"], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 
@@ -21,11 +21,22 @@ entry:
 ; llvm/optimized/SHA1.cpp.ll
 ; llvm/optimized/SHA256.cpp.ll
 ; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i8 %1) #0 {
+entry:
+  %2 = xor i8 %1, 2
+  %3 = zext i8 %2 to i64
+  %4 = getelementptr nusw nuw [3 x float], ptr %0, i64 2, i64 %3
+  ret ptr %4
+}
+
+; 1 occurrences:
+; darktable/optimized/introspection_demosaic.c.ll
+; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i8 %1) #0 {
 entry:
   %2 = xor i8 %1, 2
   %3 = zext i8 %2 to i64
-  %4 = getelementptr nusw [3 x float], ptr %0, i64 2, i64 %3
+  %4 = getelementptr nusw [3 x float], ptr %0, i64 -2, i64 %3
   ret ptr %4
 }
 

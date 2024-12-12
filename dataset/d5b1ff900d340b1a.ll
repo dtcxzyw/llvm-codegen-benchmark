@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/MachineScheduler.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000104(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i32
   %4 = add nuw i32 %1, 1

@@ -13,7 +13,7 @@ entry:
   ret i64 %4
 }
 
-; 19 occurrences:
+; 20 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/giaCSat2.c.ll
@@ -33,6 +33,7 @@ entry:
 ; raylib/optimized/rmodels.c.ll
 ; redis/optimized/cluster_legacy.ll
 ; slurm/optimized/mgr.ll
+; zed-rs/optimized/4hdn1csvepxizqbxhztzuw0uw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:

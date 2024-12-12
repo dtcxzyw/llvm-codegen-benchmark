@@ -1,5 +1,5 @@
 
-; 437 occurrences:
+; 434 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/giaTtopt.cpp.ll
@@ -20,7 +20,6 @@
 ; assimp/optimized/IFCLoader.cpp.ll
 ; assimp/optimized/Importer.cpp.ll
 ; assimp/optimized/LWOLoader.cpp.ll
-; assimp/optimized/MD5Parser.cpp.ll
 ; assimp/optimized/MDLLoader.cpp.ll
 ; assimp/optimized/MS3DLoader.cpp.ll
 ; assimp/optimized/PretransformVertices.cpp.ll
@@ -41,6 +40,17 @@
 ; assimp/optimized/glTFImporter.cpp.ll
 ; assimp/optimized/sweep.cc.ll
 ; assimp/optimized/sweep_context.cc.ll
+; boost/optimized/cmdline.ll
+; boost/optimized/ext.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/message.ll
+; boost/optimized/options_description.ll
+; boost/optimized/parsers.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/sparring_partner.ll
+; boost/optimized/sub_launcher.ll
+; boost/optimized/value_semantic.ll
+; boost/optimized/variables_map.ll
 ; casadi/optimized/code_generator.cpp.ll
 ; cmake/optimized/ccmake.cxx.ll
 ; cmake/optimized/cmAddCustomTargetCommand.cxx.ll
@@ -89,7 +99,6 @@
 ; crow/optimized/helloworld.cpp.ll
 ; csmith/optimized/DefaultOutputMgr.cpp.ll
 ; csmith/optimized/FunctionInvocationUser.cpp.ll
-; cvc5/optimized/attempt_solution_simplex.cpp.ll
 ; cvc5/optimized/bounded_integers.cpp.ll
 ; cvc5/optimized/bv_to_bool.cpp.ll
 ; cvc5/optimized/cardinality_extension.cpp.ll
@@ -98,12 +107,10 @@
 ; cvc5/optimized/circuit_propagator.cpp.ll
 ; cvc5/optimized/congruence_manager.cpp.ll
 ; cvc5/optimized/conjecture_generator.cpp.ll
-; cvc5/optimized/constraint.cpp.ll
 ; cvc5/optimized/core_solver.cpp.ll
 ; cvc5/optimized/cut_log.cpp.ll
 ; cvc5/optimized/dual_simplex.cpp.ll
 ; cvc5/optimized/eq_proof.cpp.ll
-; cvc5/optimized/error_set.cpp.ll
 ; cvc5/optimized/ext_state.cpp.ll
 ; cvc5/optimized/ext_theory_callback.cpp.ll
 ; cvc5/optimized/fc_simplex.cpp.ll
@@ -117,7 +124,6 @@
 ; cvc5/optimized/inst_strategy_cegqi.cpp.ll
 ; cvc5/optimized/instantiation_engine.cpp.ll
 ; cvc5/optimized/int_to_bv.cpp.ll
-; cvc5/optimized/linear_equality.cpp.ll
 ; cvc5/optimized/minisat.cpp.ll
 ; cvc5/optimized/miplib_trick.cpp.ll
 ; cvc5/optimized/model_blocker.cpp.ll
@@ -136,7 +142,6 @@
 ; cvc5/optimized/relevant_domain.cpp.ll
 ; cvc5/optimized/rep_set.cpp.ll
 ; cvc5/optimized/sep_skolem_emp.cpp.ll
-; cvc5/optimized/simplex.cpp.ll
 ; cvc5/optimized/sine_solver.cpp.ll
 ; cvc5/optimized/single_inv_partition.cpp.ll
 ; cvc5/optimized/skolemize.cpp.ll
@@ -177,7 +182,7 @@
 ; draco/optimized/point_cloud_encoder.cc.ll
 ; draco/optimized/sequential_attribute_encoder.cc.ll
 ; draco/optimized/sequential_attribute_encoders_controller.cc.ll
-; draco/optimized/shannon_entropy.cc.ll
+; draco/optimized/symbol_encoding.cc.ll
 ; entt/optimized/group.cpp.ll
 ; entt/optimized/view.cpp.ll
 ; folly/optimized/GlobalThreadPoolList.cpp.ll
@@ -198,7 +203,6 @@
 ; glslang/optimized/SPVRemapper.cpp.ll
 ; glslang/optimized/ShaderLang.cpp.ll
 ; glslang/optimized/SpvBuilder.cpp.ll
-; glslang/optimized/SpvPostProcess.cpp.ll
 ; glslang/optimized/SymbolTable.cpp.ll
 ; glslang/optimized/glslang_tab.cpp.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
@@ -229,7 +233,6 @@
 ; jsonnet/optimized/vm.cpp.ll
 ; libquic/optimized/histogram.cc.ll
 ; llama.cpp/optimized/train.cpp.ll
-; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/AsmWriterEmitter.cpp.ll
 ; llvm/optimized/BitcodeAnalyzer.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
@@ -257,7 +260,6 @@
 ; llvm/optimized/ModuloSchedule.cpp.ll
 ; llvm/optimized/RDFGraph.cpp.ll
 ; llvm/optimized/RDFLiveness.cpp.ll
-; llvm/optimized/Record.cpp.ll
 ; llvm/optimized/SearchableTableEmitter.cpp.ll
 ; llvm/optimized/TpiStreamBuilder.cpp.ll
 ; llvm/optimized/ValueList.cpp.ll
@@ -266,12 +268,10 @@
 ; luau/optimized/IrAnalysis.cpp.ll
 ; luau/optimized/IrUtils.cpp.ll
 ; meshlab/optimized/TexturePainter.cpp.ll
-; meshlab/optimized/VisibilityCheck.cpp.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/cmesh.cpp.ll
-; meshlab/optimized/decorate_raster_proj.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_paint.cpp.ll
@@ -283,7 +283,6 @@
 ; meshlab/optimized/filter_layer.cpp.ll
 ; meshlab/optimized/filter_mutualglobal.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
-; meshlab/optimized/filter_sample_gpu.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
@@ -298,7 +297,6 @@
 ; meshlab/optimized/io_pdb.cpp.ll
 ; meshlab/optimized/io_u3d.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/mainwindow_RunTime.cpp.ll
 ; meshlab/optimized/matching.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
@@ -401,7 +399,6 @@
 ; rocksdb/optimized/db_impl.cc.ll
 ; rocksdb/optimized/forward_iterator.cc.ll
 ; rocksdb/optimized/sortlist.cc.ll
-; rocksdb/optimized/write_batch_with_index.cc.ll
 ; spike/optimized/htif.ll
 ; spike/optimized/interactive.ll
 ; spike/optimized/socketif.ll
@@ -438,7 +435,7 @@
 ; yosys/optimized/hierarchy.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = zext i32 %3 to i64
@@ -448,10 +445,9 @@ entry:
   ret i1 %7
 }
 
-; 47 occurrences:
+; 30 occurrences:
 ; assimp/optimized/MD5Parser.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
-; cpython/optimized/sre.ll
 ; cvc5/optimized/attempt_solution_simplex.cpp.ll
 ; cvc5/optimized/congruence_manager.cpp.ll
 ; cvc5/optimized/constraint.cpp.ll
@@ -460,50 +456,77 @@ entry:
 ; cvc5/optimized/error_set.cpp.ll
 ; cvc5/optimized/fc_simplex.cpp.ll
 ; cvc5/optimized/linear_equality.cpp.ll
-; cvc5/optimized/miplib_trick.cpp.ll
 ; cvc5/optimized/partial_model.cpp.ll
 ; cvc5/optimized/simplex.cpp.ll
 ; cvc5/optimized/soi_simplex.cpp.ll
 ; cvc5/optimized/tableau.cpp.ll
 ; cvc5/optimized/theory_arith_private.cpp.ll
-; draco/optimized/corner_table.cc.ll
 ; draco/optimized/shannon_entropy.cc.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; glslang/optimized/SPVRemapper.cpp.ll
 ; glslang/optimized/SpvBuilder.cpp.ll
 ; glslang/optimized/SpvPostProcess.cpp.ll
-; gromacs/optimized/mdebin_bar.cpp.ll
-; hyperscan/optimized/ng_find_matches.cpp.ll
-; hyperscan/optimized/ng_netflow.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/BitcodeAnalyzer.cpp.ll
-; llvm/optimized/BitcodeReader.cpp.ll
-; llvm/optimized/GVN.cpp.ll
-; llvm/optimized/HeaderSearch.cpp.ll
-; llvm/optimized/InlineAsm.cpp.ll
-; llvm/optimized/MachineBlockFrequencyInfo.cpp.ll
-; llvm/optimized/RDFGraph.cpp.ll
 ; llvm/optimized/Record.cpp.ll
-; llvm/optimized/ValueList.cpp.ll
 ; meshlab/optimized/TexturePainter.cpp.ll
 ; meshlab/optimized/VisibilityCheck.cpp.ll
 ; meshlab/optimized/decorate_raster_proj.cpp.ll
 ; meshlab/optimized/filter_sample_gpu.cpp.ll
-; opencv/optimized/fast_line_detector.cpp.ll
-; openspiel/optimized/ThreadMgr.cpp.ll
 ; rocksdb/optimized/write_batch_with_index.cc.ll
-; xgboost/optimized/hist_util.cc.ll
-; xgboost/optimized/quantile.cc.ll
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000034(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = zext i32 %3 to i64
   %5 = sub i64 %0, %1
   %6 = ashr exact i64 %5, 3
-  %7 = icmp ult i64 %6, %4
+  %7 = icmp samesign ult i64 %6, %4
+  ret i1 %7
+}
+
+; 31 occurrences:
+; assimp/optimized/MD5Parser.cpp.ll
+; assimp/optimized/glTF2Importer.cpp.ll
+; cvc5/optimized/attempt_solution_simplex.cpp.ll
+; cvc5/optimized/congruence_manager.cpp.ll
+; cvc5/optimized/constraint.cpp.ll
+; cvc5/optimized/cut_log.cpp.ll
+; cvc5/optimized/dual_simplex.cpp.ll
+; cvc5/optimized/error_set.cpp.ll
+; cvc5/optimized/fc_simplex.cpp.ll
+; cvc5/optimized/linear_equality.cpp.ll
+; cvc5/optimized/partial_model.cpp.ll
+; cvc5/optimized/simplex.cpp.ll
+; cvc5/optimized/soi_simplex.cpp.ll
+; cvc5/optimized/tableau.cpp.ll
+; cvc5/optimized/theory_arith_private.cpp.ll
+; draco/optimized/shannon_entropy.cc.ll
+; glslang/optimized/GlslangToSpv.cpp.ll
+; glslang/optimized/SPVRemapper.cpp.ll
+; glslang/optimized/SpvBuilder.cpp.ll
+; glslang/optimized/SpvPostProcess.cpp.ll
+; hyperscan/optimized/ng_uncalc_components.cpp.ll
+; llvm/optimized/ASTWriter.cpp.ll
+; llvm/optimized/BitcodeAnalyzer.cpp.ll
+; llvm/optimized/Record.cpp.ll
+; meshlab/optimized/TexturePainter.cpp.ll
+; meshlab/optimized/VisibilityCheck.cpp.ll
+; meshlab/optimized/decorate_raster_proj.cpp.ll
+; meshlab/optimized/filter_sample_gpu.cpp.ll
+; rocksdb/optimized/write_batch_with_index.cc.ll
+; xgboost/optimized/updater_approx.cc.ll
+; xgboost/optimized/updater_quantile_hist.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %2, 1
+  %4 = zext i32 %3 to i64
+  %5 = sub i64 %0, %1
+  %6 = ashr exact i64 %5, 3
+  %7 = icmp samesign ugt i64 %6, %4
   ret i1 %7
 }
 
@@ -522,7 +545,7 @@ entry:
 ; yosys/optimized/share.ll
 ; yosys/optimized/wreduce.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000138(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000268(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -49
   %4 = zext nneg i32 %3 to i64
@@ -560,7 +583,7 @@ entry:
 ; opencv/optimized/abs_decoder.cpp.ll
 ; opencv/optimized/ts_perf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = zext i32 %3 to i64
@@ -570,8 +593,9 @@ entry:
   ret i1 %7
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/ext.ll
 ; glslang/optimized/SPVRemapper.cpp.ll
 ; gromacs/optimized/histogram.cpp.ll
 ; gromacs/optimized/pme_load_balancing.cpp.ll
@@ -582,7 +606,7 @@ entry:
 ; opencv/optimized/convolution.cpp.ll
 ; velox/optimized/Re2Functions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000334(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000664(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
@@ -603,7 +627,7 @@ entry:
 ; opencv/optimized/convolution.cpp.ll
 ; velox/optimized/Re2Functions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000338(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000668(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
@@ -617,7 +641,7 @@ entry:
 ; opencc/optimized/CommandLine.cpp.ll
 ; openvdb/optimized/points.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000118(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000228(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -3
   %4 = zext i32 %3 to i64
@@ -630,7 +654,7 @@ entry:
 ; 1 occurrences:
 ; wasmedge/optimized/variableInstr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000029(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = zext i32 %3 to i64
@@ -644,7 +668,7 @@ entry:
 ; llvm/optimized/ValueList.cpp.ll
 ; velox/optimized/Filter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000214(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000424(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 4
   %4 = zext i32 %3 to i64
@@ -660,7 +684,7 @@ entry:
 ; llvm/optimized/ValueList.cpp.ll
 ; velox/optimized/Filter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000218(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000428(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 4
   %4 = zext i32 %3 to i64
@@ -675,7 +699,7 @@ entry:
 ; abseil-cpp/optimized/parse_test.cc.ll
 ; openspiel/optimized/kuhn_poker.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000331(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000661(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
@@ -688,7 +712,7 @@ entry:
 ; 1 occurrences:
 ; lightgbm/optimized/objective_function.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000139(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000269(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = zext nneg i32 %3 to i64
@@ -698,10 +722,48 @@ entry:
   ret i1 %7
 }
 
+; 26 occurrences:
+; cpython/optimized/sre.ll
+; cvc5/optimized/congruence_manager.cpp.ll
+; cvc5/optimized/cut_log.cpp.ll
+; cvc5/optimized/dual_simplex.cpp.ll
+; cvc5/optimized/fc_simplex.cpp.ll
+; cvc5/optimized/miplib_trick.cpp.ll
+; cvc5/optimized/partial_model.cpp.ll
+; cvc5/optimized/soi_simplex.cpp.ll
+; cvc5/optimized/tableau.cpp.ll
+; cvc5/optimized/theory_arith_private.cpp.ll
+; draco/optimized/corner_table.cc.ll
+; draco/optimized/symbol_encoding.cc.ll
+; gromacs/optimized/mdebin_bar.cpp.ll
+; hyperscan/optimized/ng_find_matches.cpp.ll
+; hyperscan/optimized/ng_netflow.cpp.ll
+; llvm/optimized/BitcodeReader.cpp.ll
+; llvm/optimized/GVN.cpp.ll
+; llvm/optimized/HeaderSearch.cpp.ll
+; llvm/optimized/InlineAsm.cpp.ll
+; llvm/optimized/MachineBlockFrequencyInfo.cpp.ll
+; llvm/optimized/RDFGraph.cpp.ll
+; llvm/optimized/ValueList.cpp.ll
+; opencv/optimized/fast_line_detector.cpp.ll
+; openspiel/optimized/ThreadMgr.cpp.ll
+; xgboost/optimized/hist_util.cc.ll
+; xgboost/optimized/quantile.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %2, 1
+  %4 = zext i32 %3 to i64
+  %5 = sub i64 %0, %1
+  %6 = ashr exact i64 %5, 2
+  %7 = icmp ult i64 %6, %4
+  ret i1 %7
+}
+
 ; 1 occurrences:
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000114(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000224(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = zext i32 %3 to i64
@@ -711,11 +773,12 @@ entry:
   ret i1 %7
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; cvc5/optimized/ceg_instantiator.cpp.ll
+; cvc5/optimized/core_solver.cpp.ll
 ; cvc5/optimized/sygus_process_conj.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000025(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = zext i32 %3 to i64
@@ -728,7 +791,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/ts_perf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000211(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000421(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
   %4 = zext i32 %3 to i64

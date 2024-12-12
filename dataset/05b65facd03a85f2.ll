@@ -7,7 +7,7 @@
 ; openssl/optimized/libcrypto-shlib-initthread.ll
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %0, i1 true, i1 %3
@@ -16,9 +16,8 @@ entry:
   ret i1 %6
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; libquic/optimized/v3_utl.c.ll
-; linux/optimized/build_policy.ll
 ; opencv/optimized/triangulate.cpp.ll
 ; openmpi/optimized/mca_btl_smcuda_la-btl_smcuda.ll
 ; openssl/optimized/libcrypto-lib-v3_utl.ll
@@ -27,7 +26,7 @@ entry:
 ; wireshark/optimized/profile_dialog.cpp.ll
 ; wireshark/optimized/protocol_preferences_menu.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000c1(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 2
   %4 = select i1 %0, i1 true, i1 %3
@@ -40,7 +39,7 @@ entry:
 ; llvm/optimized/ParseTentative.cpp.ll
 ; openvdb/optimized/FastSweeping.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %0, i1 true, i1 %3
@@ -57,7 +56,7 @@ entry:
 ; openjdk/optimized/graphKit.ll
 ; z3/optimized/theory_str.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000181(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 1
   %4 = select i1 %0, i1 true, i1 %3
@@ -69,7 +68,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/awt_ImageRep.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000101(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %2, 256
   %4 = select i1 %0, i1 true, i1 %3
@@ -94,7 +93,7 @@ entry:
 ; wireshark/optimized/packet-tds.c.ll
 ; wolfssl/optimized/server.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000018c(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, -1
   %4 = select i1 %0, i1 true, i1 %3
@@ -106,7 +105,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/processor_throttling.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000081(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 15
   %4 = select i1 %0, i1 true, i1 %3
@@ -118,7 +117,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/relcache.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000014c(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
   %4 = select i1 %0, i1 true, i1 %3

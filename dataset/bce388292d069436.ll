@@ -1,12 +1,13 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; opencv/optimized/denoising.cpp.ll
+; postgres/optimized/geo_ops.ll
 ; ruby/optimized/compile.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000031(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = sext i32 %3 to i64
   %5 = shl nsw i64 %4, 1
   ret i64 %5
@@ -18,7 +19,7 @@ entry:
 define i64 @func0000000000000025(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = sext i32 %3 to i64
   %5 = shl nsw i64 %4, 32
   ret i64 %5
@@ -35,21 +36,9 @@ entry:
 define i64 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = sext i32 %3 to i64
   %5 = shl nsw i64 %4, 4
-  ret i64 %5
-}
-
-; 1 occurrences:
-; yosys/optimized/ezminisat.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000035(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add nsw i32 %2, %0
-  %4 = sext i32 %3 to i64
-  %5 = shl nsw i64 %4, 2
   ret i64 %5
 }
 
@@ -62,9 +51,21 @@ entry:
 define i64 @func0000000000000007(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = sext i32 %3 to i64
   %5 = shl nuw nsw i64 %4, 4
+  ret i64 %5
+}
+
+; 1 occurrences:
+; meshlab/optimized/filter_screened_poisson.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000011(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nsw i64 %1 to i32
+  %3 = add i32 %0, %2
+  %4 = sext i32 %3 to i64
+  %5 = shl nsw i64 %4, 4
   ret i64 %5
 }
 

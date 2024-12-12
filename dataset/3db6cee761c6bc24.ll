@@ -1,5 +1,5 @@
 
-; 76 occurrences:
+; 78 occurrences:
 ; c3c/optimized/target.c.ll
 ; cmake/optimized/json_writer.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -35,6 +35,8 @@
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/TokenLexer.cpp.ll
 ; luajit/optimized/minilua.ll
+; lvgl/optimized/lv_display.ll
+; lvgl/optimized/lv_label.ll
 ; minetest/optimized/CIrrDeviceSDL.cpp.ll
 ; openjdk/optimized/ciEnv.ll
 ; openjdk/optimized/hb-ot-map.ll
@@ -88,16 +90,16 @@ entry:
 
 ; 6 occurrences:
 ; c3c/optimized/sema_expr.c.ll
+; linux/optimized/keyboard.ll
 ; llvm/optimized/ComputeDependence.cpp.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; yalantinglibs/optimized/benchmark.cpp.ll
-; yalantinglibs/optimized/serialize_config.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0, i8 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i8 4, i8 0
-  %4 = or i8 %3, %0
+  %4 = or i8 %0, %3
   %5 = and i8 %1, 8
   %6 = or i8 %4, %5
   ret i8 %6
@@ -110,7 +112,7 @@ entry:
 define i8 @func0000000000000002(i8 %0, i8 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i8 0, i8 64
-  %4 = or disjoint i8 %3, %0
+  %4 = or disjoint i8 %0, %3
   %5 = and i8 %1, -128
   %6 = or i8 %4, %5
   ret i8 %6
@@ -122,7 +124,7 @@ entry:
 define i8 @func0000000000000001(i8 %0, i8 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i8 6, i8 0
-  %4 = or i8 %3, %0
+  %4 = or i8 %0, %3
   %5 = and i8 %1, 16
   %6 = or disjoint i8 %4, %5
   ret i8 %6

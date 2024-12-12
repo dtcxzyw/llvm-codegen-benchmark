@@ -16,7 +16,7 @@ entry:
 ; opencv/optimized/softfloat.cpp.ll
 ; regex-rs/optimized/11vfjke4utuj478u.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
   %3 = zext nneg i32 %0 to i64

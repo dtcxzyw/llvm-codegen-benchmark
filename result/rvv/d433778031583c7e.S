@@ -9,6 +9,6 @@ func0000000000000000:                   # @func0000000000000000
 	vfmul.vf	v16, v24, fa5
 	vsetvli	zero, zero, e32, m4, ta, ma
 	vfncvt.f.f.w	v24, v16
-	vfadd.vv	v12, v24, v12
+	vfadd.vv	v12, v12, v24
 	vfsub.vv	v8, v12, v8
 	ret

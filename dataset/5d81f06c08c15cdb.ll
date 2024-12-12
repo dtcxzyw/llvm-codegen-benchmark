@@ -1,5 +1,5 @@
 
-; 45 occurrences:
+; 44 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; linux/optimized/access.ll
 ; linux/optimized/hooks.ll
@@ -25,7 +25,6 @@
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; llvm/optimized/LowLevelTypeUtils.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
@@ -49,7 +48,7 @@
 define i16 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = select i1 %3, i16 10, i16 42
   ret i16 %4
 }

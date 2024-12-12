@@ -1,4 +1,4 @@
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	leaq	(%rdi,%rsi,8), %rax
 	movabsq	$-9223372036854775808, %rcx     # imm = 0x8000000000000000
 	leaq	63(%rcx), %rdx
@@ -6,12 +6,12 @@ func0000000000000058:                   # @func0000000000000058
 	cmpq	%rcx, %rdx
 	seta	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	leal	(%rdi,%rsi,8), %eax
 	testl	$2048, %eax                     # imm = 0x800
 	sete	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	leal	(%rdi,%rsi,4), %eax
 	testl	$2048, %eax                     # imm = 0x800
 	sete	%al
@@ -21,7 +21,7 @@ func0000000000000001:                   # @func0000000000000001
 	addl	%esi, %edi
 	sete	%al
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	leaq	(%rdi,%rsi,8), %rax
 	movabsq	$-9223372036854775808, %rcx     # imm = 0x8000000000000000
 	leaq	63(%rcx), %rdx
@@ -29,7 +29,7 @@ func0000000000000048:                   # @func0000000000000048
 	cmpq	%rcx, %rdx
 	seta	%al
 	retq
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	leal	(%rdi,%rsi,4), %eax
 	testl	$-262144, %eax                  # imm = 0xFFFC0000
 	sete	%al

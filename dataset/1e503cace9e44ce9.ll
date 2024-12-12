@@ -1,5 +1,5 @@
 
-; 134 occurrences:
+; 130 occurrences:
 ; abc/optimized/giaOf.c.ll
 ; bdwgc/optimized/gc.c.ll
 ; bullet3/optimized/btMiniSDF.ll
@@ -37,9 +37,7 @@
 ; libquic/optimized/tls_cbc.c.ll
 ; libwebp/optimized/huffman_encode_utils.c.ll
 ; libzmq/optimized/zmq_utils.cpp.ll
-; linux/optimized/8250_dwlib.ll
 ; linux/optimized/8250_early.ll
-; linux/optimized/8250_exar.ll
 ; linux/optimized/8250_pci.ll
 ; linux/optimized/8250_port.ll
 ; linux/optimized/cpufreq_ondemand.ll
@@ -47,7 +45,6 @@
 ; linux/optimized/fast_commit.ll
 ; linux/optimized/gss_krb5_crypto.ll
 ; linux/optimized/icl_dsi.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_backlight.ll
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/intel_display.ll
@@ -55,18 +52,15 @@
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/intel_dsi_vbt.ll
 ; linux/optimized/intel_fb.ll
-; linux/optimized/intel_snps_phy.ll
 ; linux/optimized/intel_sprite.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/sbitmap.ll
-; linux/optimized/scsicam.ll
 ; linux/optimized/serial_core.ll
 ; linux/optimized/skbuff.ll
 ; linux/optimized/smpboot.ll
 ; linux/optimized/tcp_cong.ll
 ; linux/optimized/tcp_input.ll
 ; linux/optimized/tcp_output.ll
-; linux/optimized/tsc_msr.ll
 ; linux/optimized/tx.ll
 ; linux/optimized/virtio_net.ll
 ; linux/optimized/vlv_dsi.ll
@@ -87,6 +81,8 @@
 ; llvm/optimized/TypeBasedAliasAnalysis.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_refr.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/guiTable.cpp.ll
 ; minetest/optimized/profiler.cpp.ll
@@ -164,7 +160,7 @@ entry:
   ret i32 %4
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd7.c.ll
@@ -172,6 +168,7 @@ entry:
 ; graphviz/optimized/pack.c.ll
 ; libwebp/optimized/pnmdec.c.ll
 ; linux/optimized/drm_dsc_helper.ll
+; lvgl/optimized/lv_chart.ll
 ; openmpi/optimized/coll_base_bcast.ll
 ; slurm/optimized/step_mgr.ll
 ; Function Attrs: nounwind

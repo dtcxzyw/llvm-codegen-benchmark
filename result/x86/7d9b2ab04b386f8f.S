@@ -9,8 +9,8 @@ func000000000000000f:                   # @func000000000000000f
 func0000000000000005:                   # @func0000000000000005
 	movzbl	%dl, %eax
 	testb	$1, %sil
-	leal	65438(%rax,%rdi), %ecx
-	leal	65472(%rax,%rdi), %eax
+	leal	65438(%rdi,%rax), %ecx
+	leal	65472(%rdi,%rax), %eax
 	cmovnel	%ecx, %eax
 	retq
 func0000000000000000:                   # @func0000000000000000

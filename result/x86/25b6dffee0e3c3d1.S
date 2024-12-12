@@ -4,13 +4,13 @@ func0000000000000006:                   # @func0000000000000006
 	leaq	15(%rdi), %rax
 	shrq	$63, %rax
 	retq
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	movl	%esi, %eax
 	subq	%rax, %rdi
 	cmpq	$-1, %rdi
 	sete	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	andl	$32767, %esi                    # imm = 0x7FFF
 	subq	%rsi, %rdi
 	cmpq	$-1, %rdi

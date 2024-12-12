@@ -1,39 +1,36 @@
 
-%"class.Ipopt::TripletToCSRConverter::TripletEntry.2496215" = type { i32, i32, i32 }
-%class.QModelIndex.3246935 = type { i32, i32, i64, ptr }
+%"class.Ipopt::TripletToCSRConverter::TripletEntry.2611489" = type { i32, i32, i32 }
+%struct.PrioritySortedBlockTransfer.2692747 = type { float, %"class.irr::core::vector3d.2692568", i16 }
+%"class.irr::core::vector3d.2692568" = type { i16, i16, i16 }
+%class.QModelIndex.3438265 = type { i32, i32, i64, ptr }
 
-; 74 occurrences:
+; 68 occurrences:
 ; assimp/optimized/SGSpatialSort.cpp.ll
 ; assimp/optimized/SpatialSort.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; faiss/optimized/IndexIVFFastScan.cpp.ll
 ; faiss/optimized/NNDescent.cpp.ll
 ; faiss/optimized/NSG.cpp.ll
-; gromacs/optimized/gmx_disre.cpp.ll
-; gromacs/optimized/pull_rotation.cpp.ll
 ; gromacs/optimized/transformations.cpp.ll
 ; hermes/optimized/ProfileAnalyzer.cpp.ll
-; hyperscan/optimized/rose_build_lookaround.cpp.ll
 ; ipopt/optimized/IpTripletToCSRConverter.ll
 ; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
-; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/CGProfile.cpp.ll
-; llvm/optimized/CodeGenTBAA.cpp.ll
 ; llvm/optimized/CoverageMappingReader.cpp.ll
 ; llvm/optimized/DWARFDebugAranges.cpp.ll
 ; llvm/optimized/DWARFDebugLine.cpp.ll
-; llvm/optimized/DwarfDebug.cpp.ll
 ; llvm/optimized/IndirectCallPromotion.cpp.ll
 ; llvm/optimized/InstrProf.cpp.ll
 ; llvm/optimized/InstrProfReader.cpp.ll
 ; llvm/optimized/InstrProfWriter.cpp.ll
 ; llvm/optimized/LLParser.cpp.ll
 ; llvm/optimized/LowerSwitch.cpp.ll
-; llvm/optimized/Metadata.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
-; llvm/optimized/SemaHexagon.cpp.ll
-; llvm/optimized/StackMaps.cpp.ll
 ; llvm/optimized/SubtargetEmitter.cpp.ll
 ; llvm/optimized/SwitchLoweringUtils.cpp.ll
 ; llvm/optimized/SymbolDumper.cpp.ll
@@ -45,7 +42,6 @@
 ; meshlab/optimized/filter_mutualglobal.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/seams.cpp.ll
-; minetest/optimized/server.cpp.ll
 ; node/optimized/libnode.cleanup_queue.ll
 ; oiio/optimized/exrinput.cpp.ll
 ; opencv/optimized/akaze.cpp.ll
@@ -82,7 +78,29 @@ define ptr @func000000000000002e(ptr %0, i64 %1) #0 {
 entry:
   %2 = udiv exact i64 %1, 12
   %3 = or i64 %2, 1
-  %4 = getelementptr %"class.Ipopt::TripletToCSRConverter::TripletEntry.2496215", ptr %0, i64 %3
+  %4 = getelementptr %"class.Ipopt::TripletToCSRConverter::TripletEntry.2611489", ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 -24
+  ret ptr %5
+}
+
+; 11 occurrences:
+; gromacs/optimized/gmx_disre.cpp.ll
+; gromacs/optimized/pull_rotation.cpp.ll
+; hyperscan/optimized/rose_build_lookaround.cpp.ll
+; llama.cpp/optimized/llama.cpp.ll
+; llvm/optimized/CGBuiltin.cpp.ll
+; llvm/optimized/CodeGenTBAA.cpp.ll
+; llvm/optimized/DwarfDebug.cpp.ll
+; llvm/optimized/Metadata.cpp.ll
+; llvm/optimized/SemaHexagon.cpp.ll
+; llvm/optimized/StackMaps.cpp.ll
+; minetest/optimized/server.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002f(ptr %0, i64 %1) #0 {
+entry:
+  %2 = udiv exact i64 %1, 12
+  %3 = or i64 %2, 1
+  %4 = getelementptr %struct.PrioritySortedBlockTransfer.2692747, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -24
   ret ptr %5
 }
@@ -95,7 +113,7 @@ define ptr @func000000000000002c(ptr %0, i64 %1) #0 {
 entry:
   %2 = udiv exact i64 %1, 24
   %3 = or i64 %2, 1
-  %4 = getelementptr %class.QModelIndex.3246935, ptr %0, i64 %3
+  %4 = getelementptr %class.QModelIndex.3438265, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -48
   ret ptr %5
 }

@@ -1,5 +1,5 @@
 
-; 98 occurrences:
+; 99 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/bmcBmc3.c.ll
@@ -97,6 +97,7 @@
 ; z3/optimized/smt_context_pp.cpp.ll
 ; z3/optimized/theory_str.cpp.ll
 ; z3/optimized/wmax.cpp.ll
+; zed-rs/optimized/6a257z75npqxppetnyj7rxh76.ll
 ; zxing/optimized/PDFDetectionResult.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
@@ -134,9 +135,8 @@ entry:
   ret i1 %3
 }
 
-; 20 occurrences:
+; 18 occurrences:
 ; grpc/optimized/fault_injection_filter.cc.ll
-; icu/optimized/csrucode.ll
 ; linux/optimized/af_unix.ll
 ; linux/optimized/md.ll
 ; llvm/optimized/Attributes.cpp.ll
@@ -146,7 +146,6 @@ entry:
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; mitsuba3/optimized/bsplinecurve.cpp.ll
 ; oiio/optimized/iffoutput.cpp.ll
-; openspiel/optimized/chess_board.cc.ll
 ; qemu/optimized/fdt.c.ll
 ; spike/optimized/fdt.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
@@ -163,7 +162,7 @@ entry:
   ret i1 %3
 }
 
-; 103 occurrences:
+; 104 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMesh.c.ll
 ; abc/optimized/bmcMesh2.c.ll
@@ -211,6 +210,7 @@ entry:
 ; llvm/optimized/TextStub.cpp.ll
 ; llvm/optimized/TextStubV5.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_chart.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; minetest/optimized/l_env.cpp.ll
 ; minetest/optimized/mapgen.cpp.ll
@@ -275,7 +275,7 @@ entry:
   ret i1 %3
 }
 
-; 66 occurrences:
+; 65 occurrences:
 ; cmake/optimized/cmExportFileGenerator.cxx.ll
 ; cmake/optimized/json_value.cpp.ll
 ; glslang/optimized/SPVRemapper.cpp.ll
@@ -336,7 +336,6 @@ entry:
 ; z3/optimized/pattern_inference.cpp.ll
 ; z3/optimized/pb_solver.cpp.ll
 ; z3/optimized/qe_lite_tactic.cpp.ll
-; z3/optimized/realclosure.cpp.ll
 ; z3/optimized/sat_anf_simplifier.cpp.ll
 ; z3/optimized/sat_gc.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
@@ -401,9 +400,7 @@ entry:
   ret i1 %3
 }
 
-; 4 occurrences:
-; abc/optimized/mpmMap.c.ll
-; abc/optimized/mpmMig.c.ll
+; 2 occurrences:
 ; linux/optimized/tg3.ll
 ; qemu/optimized/block_qcow2-cluster.c.ll
 ; Function Attrs: nounwind
@@ -428,7 +425,7 @@ entry:
   ret i1 %3
 }
 
-; 13 occurrences:
+; 8 occurrences:
 ; abc/optimized/acecRe.c.ll
 ; abc/optimized/bmcFault.c.ll
 ; abc/optimized/cbaNtk.c.ll
@@ -437,6 +434,15 @@ entry:
 ; abc/optimized/cecSim.c.ll
 ; abc/optimized/giaStr.c.ll
 ; abc/optimized/giaTruth.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000019(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign uge i32 %0, %1
+  %3 = freeze i1 %2
+  ret i1 %3
+}
+
+; 5 occurrences:
 ; abc/optimized/solver.c.ll
 ; abc/optimized/xsatSolver.c.ll
 ; git/optimized/convert.ll
@@ -446,6 +452,38 @@ entry:
 define i1 @func0000000000000009(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp uge i32 %0, %1
+  %3 = freeze i1 %2
+  ret i1 %3
+}
+
+; 2 occurrences:
+; abc/optimized/mpmMap.c.ll
+; abc/optimized/mpmMig.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000015(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ule i32 %0, %1
+  %3 = freeze i1 %2
+  ret i1 %3
+}
+
+; 2 occurrences:
+; icu/optimized/csrucode.ll
+; openspiel/optimized/chess_board.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i32 %0, %1
+  %3 = freeze i1 %2
+  ret i1 %3
+}
+
+; 1 occurrences:
+; z3/optimized/realclosure.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %0, %1
   %3 = freeze i1 %2
   ret i1 %3
 }

@@ -16,7 +16,7 @@
 ; git/optimized/hashmap.ll
 ; php/optimized/pcre2_compile.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000024(i32 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -97
   %3 = icmp ult i8 %2, 26

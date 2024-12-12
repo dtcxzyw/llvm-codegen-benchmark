@@ -21,7 +21,8 @@ entry:
   ret float %5
 }
 
-; 10 occurrences:
+; 11 occurrences:
+; boost/optimized/math_normalize_spheroidal.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll

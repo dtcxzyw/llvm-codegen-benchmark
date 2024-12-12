@@ -1,14 +1,13 @@
 
-; 2 occurrences:
-; abc/optimized/dsdTree.c.ll
+; 1 occurrences:
 ; abc/optimized/kitDsd.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000012(ptr %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp ult i16 %1, 7
+  %4 = icmp ult i16 %1, 6
   %5 = select i1 %4, i64 1, i64 %3
-  %6 = getelementptr nusw i64, ptr %0, i64 %5
+  %6 = getelementptr nusw i32, ptr %0, i64 %5
   ret ptr %6
 }
 

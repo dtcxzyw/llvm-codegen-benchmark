@@ -20,6 +20,20 @@ entry:
   ret i32 %6
 }
 
+; 3 occurrences:
+; libwebp/optimized/picture_csp_enc.c.ll
+; libwebp/optimized/yuv.c.ll
+; lvgl/optimized/lv_label.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000035(i32 %0, i32 %1, i16 %2) #0 {
+entry:
+  %3 = zext i16 %2 to i32
+  %4 = mul nuw nsw i32 %3, 3
+  %5 = add nsw i32 %0, %1
+  %6 = add nsw i32 %5, %4
+  ret i32 %6
+}
+
 ; 2 occurrences:
 ; opencv/optimized/demosaicing.cpp.ll
 ; wireshark/optimized/packet-enip.c.ll
@@ -42,19 +56,6 @@ entry:
   %4 = mul nsw i32 %3, -2350
   %5 = add i32 %0, %1
   %6 = add i32 %5, %4
-  ret i32 %6
-}
-
-; 2 occurrences:
-; libwebp/optimized/picture_csp_enc.c.ll
-; libwebp/optimized/yuv.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000035(i32 %0, i32 %1, i16 %2) #0 {
-entry:
-  %3 = zext i16 %2 to i32
-  %4 = mul nuw nsw i32 %3, 28800
-  %5 = add nsw i32 %0, %1
-  %6 = add nsw i32 %5, %4
   ret i32 %6
 }
 

@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; gromacs/optimized/dssp.cpp.ll
 ; hyperscan/optimized/ng_execute.cpp.ll
 ; hyperscan/optimized/ng_haig.cpp.ll
@@ -11,12 +11,13 @@
 ; qemu/optimized/block_io.c.ll
 ; qemu/optimized/block_nvme.c.ll
 ; qemu/optimized/hw_acpi_aml-build.c.ll
+; zed-rs/optimized/6i9q21vg747q3orsxnutiwubi.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = add i64 %2, -1
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   ret i1 %4
 }
 
@@ -27,7 +28,7 @@ define i1 @func0000000000000009(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = add i64 %2, -1
-  %4 = icmp ule i64 %3, %0
+  %4 = icmp uge i64 %0, %3
   ret i1 %4
 }
 
@@ -45,7 +46,7 @@ define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = add i64 %2, -4
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   ret i1 %4
 }
 
@@ -60,7 +61,7 @@ define i1 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = add i64 %2, -4
-  %4 = icmp uge i64 %3, %0
+  %4 = icmp ule i64 %0, %3
   ret i1 %4
 }
 
@@ -74,7 +75,7 @@ define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = add i64 %2, 1
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 

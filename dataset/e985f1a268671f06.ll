@@ -1,10 +1,13 @@
 
-; 5 occurrences:
+; 8 occurrences:
 ; hyperscan/optimized/ng_asserts.cpp.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; linux/optimized/drm_dp_helper.ll
+; llvm/optimized/X86InstrInfo.cpp.ll
 ; protobuf/optimized/unparser.cc.ll
 ; wireshark/optimized/packet-tcp.c.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0, i1 %1) #0 {
 entry:

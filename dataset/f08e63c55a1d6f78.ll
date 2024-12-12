@@ -7,8 +7,8 @@ define i1 @func000000000000000c(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %1, i64 1
   %3 = ptrtoint ptr %2 to i64
-  %4 = sub i64 0, %0
-  %5 = icmp ne i64 %3, %4
+  %4 = sub i64 0, %3
+  %5 = icmp ne i64 %0, %4
   ret i1 %5
 }
 
@@ -20,7 +20,7 @@ define i1 @func0000000000000001(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %1, i64 1
   %3 = ptrtoint ptr %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = icmp eq i64 %4, 1
   ret i1 %5
 }
@@ -33,30 +33,42 @@ define i1 @func0000000000000008(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %1, i64 1
   %3 = ptrtoint ptr %2 to i64
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = icmp ugt i64 %4, 8191
   ret i1 %5
 }
 
-; 11 occurrences:
+; 2 occurrences:
 ; cmake/optimized/ftp.c.ll
-; cmake/optimized/mprintf.c.ll
 ; curl/optimized/libcurl_la-ftp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000101(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw i8, ptr %1, i64 -1
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 0, %3
+  %5 = icmp eq i64 %0, %4
+  ret i1 %5
+}
+
+; 10 occurrences:
+; cmake/optimized/mprintf.c.ll
 ; curl/optimized/libcurl_la-mprintf.ll
 ; jemalloc/optimized/jemalloc.ll
 ; jemalloc/optimized/jemalloc.pic.ll
 ; jemalloc/optimized/jemalloc.sym.ll
 ; linux/optimized/static_call_inline.ll
+; lvgl/optimized/lv_tlsf.ll
 ; php/optimized/json_scanner.ll
 ; redis/optimized/jemalloc.ll
 ; redis/optimized/jemalloc.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000181(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 -1
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 1
   %3 = ptrtoint ptr %2 to i64
-  %4 = sub i64 0, %0
-  %5 = icmp eq i64 %3, %4
+  %4 = sub i64 0, %3
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
@@ -66,12 +78,12 @@ entry:
 ; llvm/optimized/SemaTemplate.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i64 %0, ptr %1) #0 {
+define i1 @func000000000000018c(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 8
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 8
   %3 = ptrtoint ptr %2 to i64
-  %4 = sub i64 0, %0
-  %5 = icmp ne i64 %3, %4
+  %4 = sub i64 0, %3
+  %5 = icmp ne i64 %0, %4
   ret i1 %5
 }
 

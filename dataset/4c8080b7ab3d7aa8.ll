@@ -13,7 +13,7 @@ entry:
   ret i1 %5
 }
 
-; 34 occurrences:
+; 35 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; delta-rs/optimized/264wku5om6u5pdmz.ll
 ; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
@@ -46,15 +46,16 @@ entry:
 ; openexr/optimized/ImfScanLineInputFile.cpp.ll
 ; openexr/optimized/ImfTiledInputFile.cpp.ll
 ; openexr/optimized/ImfTiledOutputFile.cpp.ll
+; openusd/optimized/event.cpp.ll
 ; postgres/optimized/pg_enum.ll
 ; wireshark/optimized/packet-wcp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000061(i1 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 28
-  %4 = select i1 %0, ptr %3, ptr %1
-  %5 = icmp eq ptr %4, null
-  ret i1 %5
+  %3 = icmp eq ptr %1, null
+  %not. = xor i1 %0, true
+  %4 = select i1 %not., i1 %3, i1 false
+  ret i1 %4
 }
 
 ; 3 occurrences:
@@ -70,15 +71,15 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; oiio/optimized/paramlist.cpp.ll
+; zed-rs/optimized/5zwiozx0qizoaz5dy257szmof.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000006c(i1 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 16
-  %4 = select i1 %0, ptr %3, ptr %1
-  %5 = icmp ne ptr %4, null
-  ret i1 %5
+  %3 = icmp ne ptr %1, null
+  %4 = select i1 %0, i1 true, i1 %3
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

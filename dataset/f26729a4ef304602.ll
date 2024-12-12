@@ -65,7 +65,7 @@ entry:
 ; qemu/optimized/fpu_softfloat.c.ll
 ; wireshark/optimized/packet-fcoe.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000004(i16 %0) #0 {
+define i8 @func0000000000000014(i16 %0) #0 {
 entry:
   %1 = and i16 %0, 512
   %.not.not = icmp eq i16 %1, 0

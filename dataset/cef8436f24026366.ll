@@ -14,7 +14,7 @@
 ; wireshark/optimized/packet-p1.c.ll
 ; wireshark/optimized/packet-tcap.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000018c(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp ne ptr %1, null
@@ -43,7 +43,7 @@ entry:
 ; openjdk/optimized/machnode.ll
 ; openssl/optimized/openssl-bin-cms.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp ne i32 %1, 0
@@ -57,7 +57,7 @@ entry:
 ; proj/optimized/4D_api.cpp.ll
 ; wireshark/optimized/packet-multipart.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000181(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp eq i32 %1, 1283
@@ -71,7 +71,7 @@ entry:
 ; minetest/optimized/CGUIImageList.cpp.ll
 ; openmpi/optimized/onesided_aggregation.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func000000000000018a(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp sgt i32 %1, -1
@@ -85,7 +85,7 @@ entry:
 ; redis/optimized/db.ll
 ; wireshark/optimized/pcapio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 2
   %4 = icmp eq ptr %1, null

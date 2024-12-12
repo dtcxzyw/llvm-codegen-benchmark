@@ -1,10 +1,9 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; icu/optimized/calendar.ll
 ; icu/optimized/gregocal.ll
 ; opencv/optimized/data.cpp.ll
 ; opencv/optimized/ts_func.cpp.ll
-; php/optimized/engine_combinedlcg.ll
 ; php/optimized/parse_posix.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000019(i32 %0, i32 %1, i32 %2) #0 {

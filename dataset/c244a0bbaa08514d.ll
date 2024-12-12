@@ -1,5 +1,5 @@
 
-; 86 occurrences:
+; 85 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/cecPat.c.ll
@@ -28,7 +28,6 @@
 ; linux/optimized/buffer.ll
 ; linux/optimized/compaction.ll
 ; linux/optimized/fcntl.ll
-; linux/optimized/feat_ctl.ll
 ; linux/optimized/iface.ll
 ; linux/optimized/inotify_user.ll
 ; linux/optimized/lbr.ll
@@ -49,7 +48,6 @@
 ; llvm/optimized/InstCombineAndOrXor.cpp.ll
 ; llvm/optimized/LangOptions.cpp.ll
 ; llvm/optimized/ParseTemplate.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SemaAttr.cpp.ll
 ; llvm/optimized/SemaConcept.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
@@ -86,6 +84,7 @@
 ; ruby/optimized/io.ll
 ; ruby/optimized/re.ll
 ; ruby/optimized/vm.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:

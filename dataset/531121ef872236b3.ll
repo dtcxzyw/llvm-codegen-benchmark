@@ -27,7 +27,7 @@ entry:
 define i1 @func0000000000000002(double %0, double %1) #0 {
 entry:
   %2 = fmul double %1, 5.000000e-01
-  %3 = fmul double %2, %0
+  %3 = fmul double %0, %2
   %4 = fcmp olt double %3, 0.000000e+00
   ret i1 %4
 }
@@ -60,6 +60,19 @@ entry:
   ret i1 %4
 }
 
+; 3 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; proj/optimized/geodesic.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000003(double %0, double %1) #0 {
+entry:
+  %2 = fmul double %1, 2.500000e-01
+  %3 = fmul double %2, %0
+  %4 = fcmp ult double %3, 0.000000e+00
+  ret i1 %4
+}
+
 ; 5 occurrences:
 ; gromacs/optimized/dbdsqr.cpp.ll
 ; stat-rs/optimized/4d9pj14shc9lbmph.ll
@@ -72,17 +85,6 @@ entry:
   %2 = fmul double %1, 2.000000e+00
   %3 = fmul double %2, %0
   %4 = fcmp ugt double %3, 0.000000e+00
-  ret i1 %4
-}
-
-; 1 occurrences:
-; proj/optimized/geodesic.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000003(double %0, double %1) #0 {
-entry:
-  %2 = fmul double %1, 2.500000e-01
-  %3 = fmul double %2, %0
-  %4 = fcmp ult double %3, 0.000000e+00
   ret i1 %4
 }
 
@@ -104,7 +106,7 @@ entry:
 define i1 @func000000000000000c(double %0, double %1) #0 {
 entry:
   %2 = fmul double %1, 5.000000e-01
-  %3 = fmul double %2, %0
+  %3 = fmul double %0, %2
   %4 = fcmp oge double %3, 0.000000e+00
   ret i1 %4
 }

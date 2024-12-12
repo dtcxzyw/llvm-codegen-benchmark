@@ -10,7 +10,7 @@ func000000000000000c:                   # @func000000000000000c
 	setne	%al
 	orb	%dil, %al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	andl	$-2, %esi
 	cmpl	$429496730, %esi                # imm = 0x1999999A
 	setb	%al

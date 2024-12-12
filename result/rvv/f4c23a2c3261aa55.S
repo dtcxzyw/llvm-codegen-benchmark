@@ -21,5 +21,5 @@ func000000000000000e:                   # @func000000000000000e
 	srli	a0, a0, 12
 	vand.vx	v10, v10, a0
 	vor.vv	v10, v12, v10
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret

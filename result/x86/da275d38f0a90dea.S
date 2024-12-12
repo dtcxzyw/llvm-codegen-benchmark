@@ -1,14 +1,3 @@
-func0000000000000011:                   # @func0000000000000011
-	xorl	%ecx, %ecx
-	cmpl	$3, %edx
-	setae	%cl
-	shll	$4, %ecx
-	orq	$4, %rcx
-	testb	$1, %sil
-	movl	$36, %eax
-	cmoveq	%rcx, %rax
-	orq	%rdi, %rax
-	retq
 func0000000000000015:                   # @func0000000000000015
 	xorl	%ecx, %ecx
 	cmpl	$5, %edx

@@ -2,7 +2,7 @@
 	.quad	-2                              # 0xfffffffffffffffe
 func00000000000000a9:                   # @func00000000000000a9
 	vpsllq	$2, %ymm2, %ymm2
-	vpaddq	%ymm1, %ymm2, %ymm1
+	vpaddq	%ymm2, %ymm1, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpsrlq	$63, %ymm0, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
@@ -10,7 +10,7 @@ func00000000000000a9:                   # @func00000000000000a9
 	retq
 func00000000000000a8:                   # @func00000000000000a8
 	vpsllq	$5, %ymm2, %ymm2
-	vpaddq	%ymm1, %ymm2, %ymm1
+	vpaddq	%ymm2, %ymm1, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpsraq	$63, %ymm0, %ymm1
 	vpsrlq	$59, %ymm1, %ymm1

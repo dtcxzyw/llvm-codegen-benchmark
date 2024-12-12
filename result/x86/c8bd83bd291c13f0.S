@@ -16,6 +16,14 @@ func0000000000000011:                   # @func0000000000000011
 	movabsq	$7905747460161236407, %rax      # imm = 0x6DB6DB6DB6DB6DB7
 	imulq	%rdi, %rax
 	retq
+func0000000000000019:                   # @func0000000000000019
+	imulq	$104, %rdx, %rax
+	addq	%rsi, %rax
+	subq	%rax, %rdi
+	shrq	$3, %rdi
+	movabsq	$5675921253449092805, %rax      # imm = 0x4EC4EC4EC4EC4EC5
+	imulq	%rdi, %rax
+	retq
 func0000000000000000:                   # @func0000000000000000
 	addq	%rdx, %rsi
 	subq	%rsi, %rdi

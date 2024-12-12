@@ -1,4 +1,4 @@
-func0000000000000313:                   # @func0000000000000313
+func0000000000000653:                   # @func0000000000000653
 	vpaddq	%ymm2, %ymm2, %ymm2
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm1, %ymm1

@@ -1,8 +1,7 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; llvm/optimized/GVNHoist.cpp.ll
-; llvm/optimized/ValueEnumerator.cpp.ll
 ; llvm/optimized/X86PreTileConfig.cpp.ll
 ; velox/optimized/ArrayDuplicates.cpp.ll
 ; Function Attrs: nounwind
@@ -32,6 +31,19 @@ entry:
 define i1 @func0000000000000005(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ule i64 %1, %2
+  %4 = select i1 %0, i1 %3, i1 false
+  %5 = freeze i1 %4
+  ret i1 %5
+}
+
+; 3 occurrences:
+; llvm/optimized/CoverageMapping.cpp.ll
+; llvm/optimized/CoverageMappingWriter.cpp.ll
+; llvm/optimized/ValueEnumerator.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ult i64 %1, %2
   %4 = select i1 %0, i1 %3, i1 false
   %5 = freeze i1 %4
   ret i1 %5

@@ -1,5 +1,5 @@
 
-; 143 occurrences:
+; 144 occurrences:
 ; abseil-cpp/optimized/cpu_detect.cc.ll
 ; actix-rs/optimized/5k5ycrtlwwxldg7.ll
 ; assimp/optimized/AMFImporter.cpp.ll
@@ -12,6 +12,7 @@
 ; assimp/optimized/OgreXmlSerializer.cpp.ll
 ; assimp/optimized/X3DImporter.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
+; boost/optimized/dump.ll
 ; coreutils-rs/optimized/1nj6h5colnkxfn01.ll
 ; coreutils-rs/optimized/2vlueqjvzu597xlx.ll
 ; coreutils-rs/optimized/yeky3kbm8zdu7bp.ll
@@ -71,6 +72,7 @@
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
+; lvgl/optimized/lv_color.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; minetest/optimized/CImage.cpp.ll
 ; minetest/optimized/CNullDriver.cpp.ll
@@ -102,7 +104,6 @@
 ; openssl/optimized/libssl-shlib-quic_wire_pkt.ll
 ; php/optimized/pcre2_script_run.ll
 ; postgres/optimized/int8.ll
-; postgres/optimized/rangetypes_gist.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; qemu/optimized/hw_9pfs_9p.c.ll
 ; qemu/optimized/hw_display_vga.c.ll
@@ -138,11 +139,11 @@
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; typst-rs/optimized/5antv5sfgwt5l2ke.ll
 ; wasmtime-rs/optimized/2rq7jdvcgv8h6zge.ll
-; wireshark/optimized/mpeg-audio.c.ll
 ; wireshark/optimized/packet-rmt-lct.c.ll
 ; wireshark/optimized/packet-uavcan-can.c.ll
 ; yosys/optimized/dfflegalize.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0) #0 {
 entry:

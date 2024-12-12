@@ -242,7 +242,7 @@ entry:
   ret i32 %4
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; clamav/optimized/crypt.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
@@ -252,6 +252,7 @@ entry:
 ; openjdk/optimized/IntArgb.ll
 ; openjdk/optimized/IntArgbPre.ll
 ; sqlite/optimized/sqlite3.ll
+; zed-rs/optimized/67gayid14ydsuhkv0lcnhbsvb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i8 %1) #0 {
 entry:

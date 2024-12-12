@@ -1,7 +1,6 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; abc/optimized/dauDsd.c.ll
-; linux/optimized/blk-sysfs.ll
 ; linux/optimized/dmar.ll
 ; qemu/optimized/hw_timer_sifive_pwm.c.ll
 ; Function Attrs: nounwind

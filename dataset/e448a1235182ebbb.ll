@@ -1,36 +1,23 @@
 
-%"struct.open_spiel::chess::Piece.3288780" = type { i8, i8 }
-%struct.i915_engine_class_instance.3350748 = type { i16, i16 }
+%struct.i915_engine_class_instance.3538708 = type { i16, i16 }
 
 ; 1 occurrences:
 ; qemu/optimized/ui_vnc.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000118(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000011c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
   %4 = shl i64 %3, 32
   %5 = ashr exact i64 %4, 32
-  %6 = getelementptr nusw i8, ptr %0, i64 32
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 32
   %7 = getelementptr [2048 x [3 x i64]], ptr %6, i64 0, i64 %5
   ret ptr %7
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; cvc5/optimized/ackermann.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000019a(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw nsw i64 %1, %2
-  %4 = shl i64 %3, 32
-  %5 = ashr exact i64 %4, 32
-  %6 = getelementptr nusw i8, ptr %0, i64 8
-  %7 = getelementptr nusw [2 x i32], ptr %6, i64 0, i64 %5
-  ret ptr %7
-}
-
-; 1 occurrences:
 ; openspiel/optimized/chess_board.cc.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000019e(ptr %0, i64 %1, i64 %2) #0 {
@@ -38,38 +25,12 @@ entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = shl i64 %3, 32
   %5 = ashr exact i64 %4, 32
-  %6 = getelementptr nusw nuw i8, ptr %0, i64 6
-  %7 = getelementptr nusw [64 x %"struct.open_spiel::chess::Piece.3288780"], ptr %6, i64 0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 8
+  %7 = getelementptr nusw [2 x i32], ptr %6, i64 0, i64 %5
   ret ptr %7
 }
 
-; 1 occurrences:
-; openspiel/optimized/bridge_uncontested_bidding.cc.ll
-; Function Attrs: nounwind
-define ptr @func000000000000011e(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw i64 %1, %2
-  %4 = shl i64 %3, 32
-  %5 = ashr exact i64 %4, 32
-  %6 = getelementptr nusw nuw i8, ptr %0, i64 5148
-  %7 = getelementptr nusw [52 x i32], ptr %6, i64 0, i64 %5
-  ret ptr %7
-}
-
-; 1 occurrences:
-; linux/optimized/i915_gem_context.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000198(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw nsw i64 %1, %2
-  %4 = shl i64 %3, 32
-  %5 = ashr exact i64 %4, 32
-  %6 = getelementptr nusw i8, ptr %0, i64 72
-  %7 = getelementptr [0 x %struct.i915_engine_class_instance.3350748], ptr %6, i64 0, i64 %5
-  ret ptr %7
-}
-
-; 78 occurrences:
+; 79 occurrences:
 ; cvc5/optimized/addition.cpp.ll
 ; cvc5/optimized/alethe_let_binding.cpp.ll
 ; cvc5/optimized/arith_poly_norm.cpp.ll
@@ -148,14 +109,28 @@ entry:
 ; cvc5/optimized/type_info.cpp.ll
 ; cvc5/optimized/type_matcher.cpp.ll
 ; cvc5/optimized/type_node.cpp.ll
+; openspiel/optimized/bridge_uncontested_bidding.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000011a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000011e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
   %4 = shl i64 %3, 32
   %5 = ashr exact i64 %4, 32
-  %6 = getelementptr nusw i8, ptr %0, i64 16
-  %7 = getelementptr nusw [0 x ptr], ptr %6, i64 0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 5148
+  %7 = getelementptr nusw [52 x i32], ptr %6, i64 0, i64 %5
+  ret ptr %7
+}
+
+; 1 occurrences:
+; linux/optimized/i915_gem_context.ll
+; Function Attrs: nounwind
+define ptr @func000000000000019c(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %1, %2
+  %4 = shl i64 %3, 32
+  %5 = ashr exact i64 %4, 32
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 72
+  %7 = getelementptr [0 x %struct.i915_engine_class_instance.3538708], ptr %6, i64 0, i64 %5
   ret ptr %7
 }
 
@@ -204,34 +179,36 @@ entry:
 ; cvc5/optimized/type_checker.cpp.ll
 ; cvc5/optimized/type_node.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000001e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = shl i64 %3, 32
   %5 = ashr exact i64 %4, 32
-  %6 = getelementptr nusw i8, ptr %0, i64 16
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 16
   %7 = getelementptr nusw [0 x ptr], ptr %6, i64 0, i64 %5
   ret ptr %7
 }
 
-; 10 occurrences:
+; 12 occurrences:
 ; cvc5/optimized/base_solver.cpp.ll
 ; cvc5/optimized/bv_inverter.cpp.ll
 ; cvc5/optimized/equality_query.cpp.ll
+; cvc5/optimized/quant_conflict_find.cpp.ll
 ; cvc5/optimized/quantifiers_macros.cpp.ll
 ; cvc5/optimized/quantifiers_rewriter.cpp.ll
 ; cvc5/optimized/real_to_int.cpp.ll
+; cvc5/optimized/skolemize.cpp.ll
 ; cvc5/optimized/smt2_printer.cpp.ll
 ; cvc5/optimized/sort_inference.cpp.ll
 ; cvc5/optimized/sygus_process_conj.cpp.ll
 ; cvc5/optimized/theory_model_builder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000001da(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func00000000000001de(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = shl nuw i64 %3, 32
   %5 = ashr exact i64 %4, 32
-  %6 = getelementptr nusw i8, ptr %0, i64 16
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 16
   %7 = getelementptr nusw [0 x ptr], ptr %6, i64 0, i64 %5
   ret ptr %7
 }
@@ -245,12 +222,12 @@ entry:
 ; cvc5/optimized/theory_sets_type_rules.cpp.ll
 ; libjpeg-turbo/optimized/jdhuff.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000009a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000009e(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = shl i64 %3, 32
   %5 = ashr exact i64 %4, 32
-  %6 = getelementptr nusw i8, ptr %0, i64 16
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 16
   %7 = getelementptr nusw [0 x ptr], ptr %6, i64 0, i64 %5
   ret ptr %7
 }

@@ -1,31 +1,32 @@
 .LCPI0_0:
-	.short	360                             # 0x168
-	.short	360                             # 0x168
-	.short	360                             # 0x168
-	.short	360                             # 0x168
-	.short	360                             # 0x168
-	.short	360                             # 0x168
-	.short	360                             # 0x168
-	.short	360                             # 0x168
+	.short	700                             # 0x2bc
+	.short	700                             # 0x2bc
+	.short	700                             # 0x2bc
+	.short	700                             # 0x2bc
+	.short	700                             # 0x2bc
+	.short	700                             # 0x2bc
+	.short	700                             # 0x2bc
+	.short	700                             # 0x2bc
 .LCPI0_1:
-	.short	11651                           # 0x2d83
-	.short	11651                           # 0x2d83
-	.short	11651                           # 0x2d83
-	.short	11651                           # 0x2d83
-	.short	11651                           # 0x2d83
-	.short	11651                           # 0x2d83
-	.short	11651                           # 0x2d83
-	.short	11651                           # 0x2d83
-.LCPI0_2:
-	.short	360                             # 0x168
-func0000000000000000:                   # @func0000000000000000
+	.short	9363                            # 0x2493
+	.short	9363                            # 0x2493
+	.short	9363                            # 0x2493
+	.short	9363                            # 0x2493
+	.short	9363                            # 0x2493
+	.short	9363                            # 0x2493
+	.short	9363                            # 0x2493
+	.short	9363                            # 0x2493
+func0000000000000005:                   # @func0000000000000005
 	vpmovdw	%ymm0, %xmm0
-	vpbroadcastw	.LCPI0_2(%rip), %xmm1   # xmm1 = [360,360,360,360,360,360,360,360]
+	vpaddw	.LCPI0_0(%rip), %xmm0, %xmm0
+	vpmulhuw	.LCPI0_1(%rip), %xmm0, %xmm1    # [9363,9363,9363,9363,9363,9363,9363,9363]
+	vpsubw	%xmm1, %xmm0, %xmm2
+	vpsrlw	$1, %xmm2, %xmm2
+	vpaddw	%xmm1, %xmm2, %xmm1
+	vpsrlw	$2, %xmm1, %xmm1
+	vpsllw	$3, %xmm1, %xmm2
+	vpsubw	%xmm2, %xmm1, %xmm1
 	vpaddw	%xmm1, %xmm0, %xmm0
-	vpmulhuw	.LCPI0_1(%rip), %xmm0, %xmm2    # [11651,11651,11651,11651,11651,11651,11651,11651]
-	vpsrlw	$6, %xmm2, %xmm2
-	vpmullw	%xmm1, %xmm2, %xmm1
-	vpsubw	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI1_0:

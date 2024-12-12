@@ -1,35 +1,43 @@
 func0000000000000004:                   # @func0000000000000004
 	shrl	$15, %edx
 	andl	$31, %edx
-	cmpq	%rsi, %rdx
-	seta	%al
+	cmpq	%rdx, %rsi
+	setb	%al
 	andb	%dil, %al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	shrq	%rdx
 	movl	%edx, %eax
-	cmpq	%rsi, %rax
-	seta	%al
+	cmpq	%rax, %rsi
+	setb	%al
 	andb	%dil, %al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	shrq	$3, %rdx
 	movl	%edx, %eax
-	cmpq	%rsi, %rax
-	setb	%al
+	cmpq	%rax, %rsi
+	seta	%al
 	andb	%dil, %al
 	retq
 func0000000000000008:                   # @func0000000000000008
-	shrl	$20, %edx
-	andl	$15, %edx
-	cmpq	%rsi, %rdx
+	movl	$63, %eax
+	bzhiq	%rax, %rdx, %rax
+	shrq	$9, %rax
+	cmpq	%rax, %rsi
+	seta	%al
+	andb	%dil, %al
+	retq
+func0000000000000034:                   # @func0000000000000034
+	shrq	$3, %rdx
+	movl	%edx, %eax
+	cmpq	%rax, %rsi
 	setb	%al
 	andb	%dil, %al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	shrq	$3, %rdx
 	movl	%edx, %eax
-	cmpq	%rsi, %rax
+	cmpq	%rax, %rsi
 	setne	%al
 	andb	%dil, %al
 	retq

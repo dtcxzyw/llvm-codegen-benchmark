@@ -24,13 +24,12 @@
 define i1 @func0000000000000002(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   %4 = freeze i1 %3
   ret i1 %4
 }
 
-; 20 occurrences:
-; linux/optimized/gso.ll
+; 19 occurrences:
 ; mold/optimized/input-sections.cc.ALPHA.cc.ll
 ; mold/optimized/input-sections.cc.ARM32.cc.ll
 ; mold/optimized/input-sections.cc.ARM64.cc.ll
@@ -54,7 +53,7 @@ entry:
 define i1 @func0000000000000018(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   %4 = freeze i1 %3
   ret i1 %4
 }
@@ -105,7 +104,7 @@ entry:
 define i1 @func0000000000000010(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %1, 8192
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   %4 = freeze i1 %3
   ret i1 %4
 }

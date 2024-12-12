@@ -1,6 +1,5 @@
 
-; 6 occurrences:
-; darktable/optimized/darkroom.c.ll
+; 5 occurrences:
 ; gromacs/optimized/coupling.cpp.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll

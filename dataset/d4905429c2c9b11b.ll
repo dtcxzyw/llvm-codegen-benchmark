@@ -1,5 +1,5 @@
 
-; 141 occurrences:
+; 143 occurrences:
 ; abc/optimized/deflate.c.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; brotli/optimized/encode.c.ll
@@ -23,7 +23,6 @@
 ; libquic/optimized/xts.c.ll
 ; linux/optimized/blk-iolatency.ll
 ; linux/optimized/build_utility.ll
-; linux/optimized/decompress_unlz4.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/fib_semantics.ll
 ; linux/optimized/i915_gem_evict.ll
@@ -139,6 +138,9 @@
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.struct_pb.cc.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/f0amc3mihxn9sd1mhsostg4ox.ll
 ; zlib/optimized/deflate.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
@@ -149,13 +151,14 @@ entry:
   ret i64 %3
 }
 
-; 20 occurrences:
+; 21 occurrences:
 ; abc/optimized/kitTruth.c.ll
 ; arrow/optimized/float16.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; cpython/optimized/_pickle.ll
 ; cpython/optimized/obmalloc.ll
 ; freetype/optimized/psaux.c.ll
+; git/optimized/line-range.ll
 ; linux/optimized/extents.ll
 ; llvm/optimized/AArch64TargetStreamer.cpp.ll
 ; llvm/optimized/MachObjectWriter.cpp.ll
@@ -178,7 +181,7 @@ entry:
   ret i64 %3
 }
 
-; 36 occurrences:
+; 34 occurrences:
 ; brotli/optimized/encode.c.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; cmake/optimized/archive_getdate.c.ll
@@ -190,13 +193,11 @@ entry:
 ; duckdb/optimized/ub_duckdb_aggr_distr.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; faiss/optimized/pq4_fast_scan.cpp.ll
-; git/optimized/line-range.ll
 ; gromacs/optimized/libxdrf.cpp.ll
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; image-rs/optimized/2mngkegtim1o10y3.ll
 ; libevent/optimized/http.c.ll
 ; linux/optimized/af_netlink.ll
-; linux/optimized/decompress_unlz4.ll
 ; linux/optimized/fib_trie.ll
 ; linux/optimized/tunnels.ll
 ; meilisearch-rs/optimized/1bqqlm3jtb9rf3cv.ll
@@ -238,7 +239,7 @@ define i64 @func0000000000000002(i1 %0, i64 %1) #0 {
 entry:
   %not. = xor i1 %0, true
   %2 = zext i1 %not. to i64
-  %3 = add nuw i64 %2, %1
+  %3 = add nuw i64 %1, %2
   ret i64 %3
 }
 

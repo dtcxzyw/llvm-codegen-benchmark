@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 32 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/amapMatch.c.ll
 ; abc/optimized/bdcSpfd.c.ll
@@ -19,6 +19,8 @@
 ; llvm/optimized/CodeViewDebug.cpp.ll
 ; llvm/optimized/DeclCXX.cpp.ll
 ; llvm/optimized/Expr.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
+; lvgl/optimized/lv_image.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
 ; mold/optimized/input-sections.cc.ARM32.cc.ll
 ; mold/optimized/input-sections.cc.I386.cc.ll
@@ -29,6 +31,7 @@
 ; protobuf/optimized/generated_message_reflection.cc.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; z3/optimized/smt_context.cpp.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000d(i64 %0, i32 %1) #0 {
 entry:
@@ -39,7 +42,7 @@ entry:
   ret i64 %5
 }
 
-; 246 occurrences:
+; 249 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abc.c.ll
@@ -207,7 +210,6 @@ entry:
 ; linux/optimized/iface.ll
 ; linux/optimized/intel_gt.ll
 ; linux/optimized/io_apic.ll
-; linux/optimized/reciprocal_div.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64LegalizerInfo.cpp.ll
 ; llvm/optimized/APINotesReader.cpp.ll
@@ -244,6 +246,8 @@ entry:
 ; llvm/optimized/X86ISelLoweringCall.cpp.ll
 ; llvm/optimized/X86LegalizerInfo.cpp.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_draw_buf.ll
+; lvgl/optimized/lv_image.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; mitsuba3/optimized/cpuinfo.cpp.ll
 ; mold/optimized/input-sections.cc.ARM32.cc.ll
@@ -278,7 +282,6 @@ entry:
 ; wireshark/optimized/packet-autosar-ipdu-multiplexer.c.ll
 ; wireshark/optimized/packet-dmp.c.ll
 ; wireshark/optimized/packet-flexray.c.ll
-; wireshark/optimized/packet-lin.c.ll
 ; wireshark/optimized/packet-signal-pdu.c.ll
 ; wireshark/optimized/packet-socketcan.c.ll
 ; wireshark/optimized/packet-someip.c.ll
@@ -286,13 +289,16 @@ entry:
 ; wolfssl/optimized/ssl.c.ll
 ; yosys/optimized/opt_expr.ll
 ; z3/optimized/sat_aig_cuts.cpp.ll
+; zed-rs/optimized/73pi95mikt3cntupcr2d2nefv.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 49
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   ret i64 %5
 }
 
@@ -323,7 +329,7 @@ entry:
   %2 = and i32 %1, 1
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 %3, 63
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 

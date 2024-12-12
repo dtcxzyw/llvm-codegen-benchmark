@@ -1,5 +1,8 @@
 
-; 25 occurrences:
+; 28 occurrences:
+; abc/optimized/bacBlast.c.ll
+; abc/optimized/bacCom.c.ll
+; abc/optimized/bacNtk.c.ll
 ; abc/optimized/bacWriteBlif.c.ll
 ; abc/optimized/bacWriteVer.c.ll
 ; llvm/optimized/CGObjCMac.cpp.ll
@@ -26,7 +29,7 @@
 ; wireshark/optimized/packet-sna.c.ll
 ; wireshark/optimized/packet-udpcp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i8 %0) #0 {
+define i1 @func0000000000000024(i8 %0) #0 {
 entry:
   %1 = lshr i8 %0, 4
   %2 = add nsw i8 %1, -1

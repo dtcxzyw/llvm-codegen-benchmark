@@ -1,11 +1,12 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; linux/optimized/xt_policy.ll
-; opencv/optimized/cornersubpix.cpp.ll
 ; openusd/optimized/restoration.c.ll
 ; ruby/optimized/prism.ll
 ; slurm/optimized/xlate.ll
 ; wireshark/optimized/packet-ipsec.c.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:

@@ -1,6 +1,14 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	add	a1, a1, a2
 	andi	a1, a1, 1
+	seqz	a1, a1
+	and	a0, a0, a1
+	ret
+func0000000000000061:                   # @func0000000000000061
+	add	a1, a1, a2
+	lui	a2, 4
+	addiw	a2, a2, -64
+	and	a1, a1, a2
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret

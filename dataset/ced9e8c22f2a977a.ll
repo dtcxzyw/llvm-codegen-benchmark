@@ -1,5 +1,5 @@
 
-; 223 occurrences:
+; 222 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
@@ -214,7 +214,6 @@
 ; llvm/optimized/X86RegisterBankInfo.cpp.ll
 ; llvm/optimized/X86TargetMachine.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
-; ncnn/optimized/pooling3d.cpp.ll
 ; openjdk/optimized/bytecodes.ll
 ; openusd/optimized/testUsdAttributeInterpolationCpp.cpp.ll
 ; php/optimized/zend_strtod.ll
@@ -232,12 +231,13 @@ entry:
   ret i64 %4
 }
 
-; 220 occurrences:
+; 217 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; arrow/optimized/api_scalar.cc.ll
 ; arrow/optimized/reader.cc.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/LWOLoader.cpp.ll
+; boost/optimized/options_description.ll
 ; casadi/optimized/casadi_misc.cpp.ll
 ; casadi/optimized/function.cpp.ll
 ; casadi/optimized/mapsum.cpp.ll
@@ -333,13 +333,10 @@ entry:
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -414,7 +411,6 @@ entry:
 ; quantlib/optimized/fdg2swaptionengine.ll
 ; quantlib/optimized/fdhullwhiteswaptionengine.ll
 ; quantlib/optimized/fixedvsfloatingswap.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
 ; quantlib/optimized/gaussian1dmodel.ll
 ; quantlib/optimized/gaussian1dnonstandardswaptionengine.ll
@@ -462,14 +458,13 @@ entry:
   ret i64 %4
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; draco/optimized/adaptive_rans_bit_encoder.cc.ll
 ; hyperscan/optimized/mcsheng_compile.cpp.ll
 ; libjpeg-turbo/optimized/jidctint.c.ll
 ; libjpeg-turbo/optimized/jidctred.c.ll
 ; libquic/optimized/curve25519.c.ll
-; llvm/optimized/OMP.cpp.ll
 ; opencv/optimized/stackblur.cpp.ll
 ; openssl/optimized/libcrypto-lib-curve25519.ll
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
@@ -477,12 +472,12 @@ entry:
 define i64 @func0000000000000015(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 1
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = add nsw i64 %3, 16777216
   ret i64 %4
 }
 
-; 99 occurrences:
+; 97 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; darktable/optimized/introspection_cacorrectrgb.c.ll
@@ -494,7 +489,6 @@ entry:
 ; icu/optimized/uniset.ll
 ; jq/optimized/decNumber.ll
 ; lief/optimized/rsa.c.ll
-; linux/optimized/probe_roms.ll
 ; llvm/optimized/AIX.cpp.ll
 ; llvm/optimized/AMDGPUOpenMP.cpp.ll
 ; llvm/optimized/ArgList.cpp.ll
@@ -550,7 +544,6 @@ entry:
 ; opencv/optimized/tensor.pb.cc.ll
 ; openjdk/optimized/bytecodes.ll
 ; postgres/optimized/multixact.ll
-; postgres/optimized/shm_toc.ll
 ; qemu/optimized/hw_net_vmxnet3.c.ll
 ; qemu/optimized/hw_ufs_ufs.c.ll
 ; qemu/optimized/virtio-pci.c.ll
@@ -586,12 +579,12 @@ entry:
 define i64 @func0000000000000030(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 6
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = add i64 %3, 64
   ret i64 %4
 }
 
-; 44 occurrences:
+; 45 occurrences:
 ; abseil-cpp/optimized/layout_test.cc.ll
 ; abseil-cpp/optimized/numbers.cc.ll
 ; arrow/optimized/bitmap_ops.cc.ll
@@ -618,13 +611,11 @@ entry:
 ; linux/optimized/io_pgtable.ll
 ; linux/optimized/io_pgtable_v2.ll
 ; linux/optimized/kexec_core.ll
-; linux/optimized/machine_kexec_64.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/pt.ll
 ; linux/optimized/regmap-debugfs.ll
 ; linux/optimized/rwsem.ll
-; linux/optimized/secretmem.ll
 ; linux/optimized/set_memory.ll
 ; linux/optimized/snapshot.ll
 ; linux/optimized/virtio_net.ll
@@ -636,17 +627,21 @@ entry:
 ; quantlib/optimized/laplaceinterpolation.ll
 ; quickjs/optimized/libbf.ll
 ; spike/optimized/f128_sqrt.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 56
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = add i64 %3, -2401053088876216593
   ret i64 %4
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; hyperscan/optimized/mcclellancompile.cpp.ll
+; llvm/optimized/OMP.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
 ; lz4/optimized/lz4frame.c.ll
 ; opencv/optimized/opencv-caffe.pb.cc.ll
@@ -657,7 +652,7 @@ entry:
 define i64 @func000000000000003f(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 1
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = add nuw nsw i64 %3, 80
   ret i64 %4
 }
@@ -670,7 +665,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 4
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = add nsw i64 %3, -1
   ret i64 %4
 }
@@ -684,7 +679,7 @@ entry:
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 4
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = add nuw nsw i64 %3, 1
   ret i64 %4
 }
@@ -719,7 +714,7 @@ entry:
 define i64 @func0000000000000012(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 9
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = add nuw i64 %3, 1
   ret i64 %4
 }

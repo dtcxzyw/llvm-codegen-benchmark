@@ -25,7 +25,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 2047
   %4 = and i64 %0, %1
@@ -36,7 +36,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000035(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000065(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 4094
   %4 = and i64 %0, %1

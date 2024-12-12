@@ -5,13 +5,13 @@
 define i64 @func000000000000001c(i64 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 8
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = zext nneg i8 %1 to i64
   %6 = or i64 %4, %5
   ret i64 %6
 }
 
-; 262 occurrences:
+; 270 occurrences:
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/builder_dict.cc.ll
 ; arrow/optimized/scalar.cc.ll
@@ -256,6 +256,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_truetype.c.ll
 ; tls-rs/optimized/1pt3w3786vo2dyk0.ll
+; turborepo-rs/optimized/74s3x9u7hld928rwmttmetb1y.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
 ; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
@@ -274,11 +275,18 @@ entry:
 ; wireshark/optimized/pppdump.c.ll
 ; wireshark/optimized/tvbuff.c.ll
 ; wireshark/optimized/vwr.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001b(i64 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 16
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = zext i8 %1 to i64
   %6 = or disjoint i64 %4, %5
   ret i64 %6
@@ -323,7 +331,7 @@ entry:
 define i64 @func0000000000000018(i64 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 8
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = zext i8 %1 to i64
   %6 = or i64 %4, %5
   ret i64 %6
@@ -336,13 +344,13 @@ entry:
 define i64 @func0000000000000010(i64 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 56
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = zext i8 %1 to i64
   %6 = or i64 %4, %5
   ret i64 %6
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; folly/optimized/IPAddressV6.cpp.ll
@@ -351,17 +359,18 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; wireshark/optimized/erf.c.ll
 ; wireshark/optimized/tvbuff.c.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001a(i64 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 8
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = zext i8 %1 to i64
   %6 = or i64 %4, %5
   ret i64 %6
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; libpng/optimized/pngrtran.c.ll
 ; llvm/optimized/StreamChecker.cpp.ll
 ; openjdk/optimized/ByteBinary1Bit.ll
@@ -374,6 +383,7 @@ entry:
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
+; zed-rs/optimized/etmluiftgqx5jpyivviyferrj.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i64 %0, i8 %1, i64 %2) #0 {
 entry:
@@ -384,7 +394,7 @@ entry:
   ret i64 %6
 }
 
-; 11 occurrences:
+; 17 occurrences:
 ; delta-rs/optimized/3qvofkyb7k5flefa.ll
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; just-rs/optimized/3022oi333lxf39jd.ll
@@ -394,8 +404,14 @@ entry:
 ; openusd/optimized/pathExpressionEval.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; tls-rs/optimized/1pt3w3786vo2dyk0.ll
+; turborepo-rs/optimized/74s3x9u7hld928rwmttmetb1y.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000013(i64 %0, i8 %1, i64 %2) #0 {
 entry:
@@ -412,7 +428,7 @@ entry:
 define i64 @func000000000000001e(i64 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 8
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = zext nneg i8 %1 to i64
   %6 = or i64 %4, %5
   ret i64 %6
@@ -427,7 +443,7 @@ entry:
 define i64 @func0000000000000003(i64 %0, i8 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 16
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = zext i8 %1 to i64
   %6 = or disjoint i64 %4, %5
   ret i64 %6

@@ -132,3 +132,11 @@ func000000000000001d:                   # @func000000000000001d
 	vpsllq	$2, %ymm0, %ymm0
 	vpternlogq	$248, .LCPI7_0(%rip){1to4}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
 	retq
+.LCPI8_0:
+	.quad	31                              # 0x1f
+func0000000000000006:                   # @func0000000000000006
+	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpsubq	%ymm2, %ymm1, %ymm1
+	vpsllq	$5, %ymm0, %ymm0
+	vpternlogq	$248, .LCPI8_0(%rip){1to4}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
+	retq

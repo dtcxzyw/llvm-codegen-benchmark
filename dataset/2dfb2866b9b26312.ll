@@ -1,11 +1,13 @@
 
-; 6 occurrences:
+; 8 occurrences:
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; llvm/optimized/DataExtractor.cpp.ll
 ; minetest/optimized/database.cpp.ll
 ; openusd/optimized/warped_motion.c.ll
 ; spike/optimized/kadd16.ll
 ; spike/optimized/ksub16.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i16 %1, i16 %2) #0 {
 entry:

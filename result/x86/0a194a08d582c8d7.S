@@ -34,3 +34,9 @@ func0000000000000005:                   # @func0000000000000005
 	subq	%rdi, %rax
 	addq	$-9, %rax
 	retq
+func0000000000000007:                   # @func0000000000000007
+	leaq	7(%rsi), %rax
+	shrq	$3, %rax
+	notq	%rdi
+	addq	%rdi, %rax
+	retq

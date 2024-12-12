@@ -1,7 +1,6 @@
 
-; 34 occurrences:
+; 33 occurrences:
 ; eastl/optimized/TestFixedVector.cpp.ll
-; linux/optimized/delay.ll
 ; mold/optimized/gc-sections.cc.ALPHA.cc.ll
 ; mold/optimized/gc-sections.cc.ARM64.cc.ll
 ; mold/optimized/gc-sections.cc.LOONGARCH32.cc.ll
@@ -43,7 +42,7 @@ entry:
   ret i64 %4
 }
 
-; 9 occurrences:
+; 11 occurrences:
 ; rust-analyzer-rs/optimized/1pxyofhmeataj0qk.ll
 ; rust-analyzer-rs/optimized/25eqaaqjz071ug6q.ll
 ; rust-analyzer-rs/optimized/2ebx9eutyph8un4i.ll
@@ -53,6 +52,8 @@ entry:
 ; rust-analyzer-rs/optimized/3o06gi7obg71ydg1.ll
 ; rust-analyzer-rs/optimized/4cr05weuwzevn2i6.ll
 ; rust-analyzer-rs/optimized/a1gz87jxvbvnc32.ll
+; zed-rs/optimized/4z6vlo4eo03eve34h1wxhlae7.ll
+; zed-rs/optimized/5t11v1wc3a9lo225k1xr00pdg.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000020(i64 %0, i64 %1) #0 {
 entry:

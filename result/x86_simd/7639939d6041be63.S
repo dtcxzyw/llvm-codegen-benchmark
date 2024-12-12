@@ -8,13 +8,13 @@ func0000000000000003:                   # @func0000000000000003
 	vpbroadcastq	.LCPI0_1(%rip), %ymm0 {%k1} # ymm0 {%k1} = [2147745792,2147745792,2147745792,2147745792]
 	retq
 .LCPI1_0:
-	.quad	1                               # 0x1
+	.quad	4                               # 0x4
 .LCPI1_1:
-	.quad	26                              # 0x1a
+	.quad	5                               # 0x5
 .LCPI1_2:
-	.quad	42                              # 0x2a
+	.quad	1                               # 0x1
 func0000000000000011:                   # @func0000000000000011
-	vpcmpnleuq	.LCPI1_0(%rip){1to4}, %ymm0, %k1
-	vpbroadcastq	.LCPI1_1(%rip), %ymm0   # ymm0 = [26,26,26,26]
-	vpbroadcastq	.LCPI1_2(%rip), %ymm0 {%k1} # ymm0 {%k1} = [42,42,42,42]
+	vpcmpltuq	.LCPI1_0(%rip){1to4}, %ymm0, %k1
+	vpbroadcastq	.LCPI1_1(%rip), %ymm0   # ymm0 = [5,5,5,5]
+	vpbroadcastq	.LCPI1_2(%rip), %ymm0 {%k1} # ymm0 {%k1} = [1,1,1,1]
 	retq

@@ -16,8 +16,7 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
-; linux/optimized/drm_self_refresh_helper.ll
+; 1 occurrences:
 ; linux/optimized/intel_ggtt.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i64 %0, i64 %1) #0 {

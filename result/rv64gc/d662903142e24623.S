@@ -28,6 +28,6 @@ func000000000000001c:                   # @func000000000000001c
 	ret
 func000000000000000c:                   # @func000000000000000c
 	slli	a1, a1, 32
-	srli	a1, a1, 30
+	srli	a1, a1, 27
 	sub	a0, a1, a0
 	ret

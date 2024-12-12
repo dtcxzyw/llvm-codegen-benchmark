@@ -1,6 +1,7 @@
 
-; 173 occurrences:
+; 174 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
+; boost/optimized/to_chars.ll
 ; double_conversion/optimized/fast-dtoa.cc.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
@@ -174,17 +175,18 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000308(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %2
   %4 = zext nneg i32 %3 to i64
   %5 = lshr i64 %1, %4
   %6 = trunc i64 %5 to i32
-  %7 = icmp ult i32 %6, %0
+  %7 = icmp ugt i32 %0, %6
   ret i1 %7
 }
 
-; 169 occurrences:
+; 170 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -355,13 +357,13 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000184(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000304(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 63, %2
   %4 = zext nneg i32 %3 to i64
   %5 = lshr i64 %1, %4
   %6 = trunc i64 %5 to i32
-  %7 = icmp ugt i32 %6, %0
+  %7 = icmp ult i32 %0, %6
   ret i1 %7
 }
 

@@ -6,7 +6,7 @@
 define i8 @func0000000000000030(i8 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = zext i1 %4 to i8
   %6 = and i8 %0, 1
   %7 = or i8 %6, %5

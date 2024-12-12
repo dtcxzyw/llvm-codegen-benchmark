@@ -1,6 +1,9 @@
 
-; 26 occurrences:
+; 29 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; cmake/optimized/huf_compress.c.ll
 ; hermes/optimized/APInt.cpp.ll
 ; libquic/optimized/lhash.c.ll
@@ -35,12 +38,11 @@ entry:
   ret i64 %4
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; cmake/optimized/huf_compress.c.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; spike/optimized/f128_to_i32_r_minMag.ll
 ; spike/optimized/f128_to_i64.ll
-; spike/optimized/f128_to_ui32_r_minMag.ll
 ; spike/optimized/f128_to_ui64.ll
 ; spike/optimized/f32_to_i32_r_minMag.ll
 ; spike/optimized/f32_to_i64.ll

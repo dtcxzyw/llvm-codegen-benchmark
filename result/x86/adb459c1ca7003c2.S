@@ -33,13 +33,13 @@ func000000000000000c:                   # @func000000000000000c
 	setne	%al
 	negq	%rax
 	retq
-func0000000000000008:                   # @func0000000000000008
-	xorl	%eax, %eax
-	cmpl	%edi, %esi
-	sbbq	%rax, %rax
-	retq
 func0000000000000009:                   # @func0000000000000009
 	xorl	%eax, %eax
 	cmpl	%esi, %edi
 	adcq	$-1, %rax
+	retq
+func0000000000000008:                   # @func0000000000000008
+	xorl	%eax, %eax
+	cmpl	%edi, %esi
+	sbbq	%rax, %rax
 	retq

@@ -6,26 +6,27 @@
 define i32 @func0000000000000008(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = xor i32 %3, -1
   ret i32 %4
 }
 
-; 3 occurrences:
+; 5 occurrences:
+; lvgl/optimized/lv_obj_scroll.ll
 ; opencv/optimized/simpleflow.cpp.ll
 ; redis/optimized/zipmap.ll
 ; velox/optimized/FindFirst.cpp.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = xor i32 %3, -1
   ret i32 %4
 }
 
-; 7 occurrences:
-; openblas/optimized/dgbtrf.c.ll
+; 6 occurrences:
 ; openspiel/optimized/colored_trails.cc.ll
 ; openspiel/optimized/random_uci_bot.cc.ll
 ; openspiel/optimized/tabular_q_learning.cc.ll
@@ -36,7 +37,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = xor i32 %3, -1
   ret i32 %4
 }
@@ -50,7 +51,7 @@ entry:
 define i32 @func000000000000000c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = xor i32 %3, -1
   ret i32 %4
 }
@@ -61,7 +62,7 @@ entry:
 define i32 @func000000000000000d(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = xor i32 %3, -1
   ret i32 %4
 }

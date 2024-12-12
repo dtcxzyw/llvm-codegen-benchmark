@@ -1,5 +1,6 @@
 
-; 94 occurrences:
+; 93 occurrences:
+; boost/optimized/topology.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cvc5/optimized/options_handler.cpp.ll
 ; cxxopts/optimized/example.cpp.ll
@@ -66,7 +67,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -92,7 +92,6 @@
 ; xgboost/optimized/input_split_base.cc.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i16 %1, i16 %2) #0 {
@@ -120,14 +119,29 @@ entry:
   ret i32 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; llvm/optimized/AttributorAttributes.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000015(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = or disjoint i16 %1, %2
   %4 = zext i16 %3 to i32
   %5 = shl nuw i32 %0, 16
+  %6 = or disjoint i32 %5, %4
+  ret i32 %6
+}
+
+; 3 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000017(i32 %0, i16 %1, i16 %2) #0 {
+entry:
+  %3 = or disjoint i16 %1, %2
+  %4 = zext i16 %3 to i32
+  %5 = shl nuw nsw i32 %0, 16
   %6 = or disjoint i32 %5, %4
   ret i32 %6
 }

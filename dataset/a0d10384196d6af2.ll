@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; cpython/optimized/mathmodule.ll
 ; openblas/optimized/dbdsvdx.c.ll
 ; openblas/optimized/dgesvj.c.ll
@@ -8,7 +8,6 @@
 ; openblas/optimized/dlag2.c.ll
 ; openblas/optimized/dlarrd.c.ll
 ; openblas/optimized/dlarrf.c.ll
-; openblas/optimized/dstein.c.ll
 ; openusd/optimized/rotation.cpp.ll
 ; proj/optimized/geodesic.c.ll
 ; sundials/optimized/arkode_relaxation.c.ll

@@ -6,8 +6,8 @@ func0000000000000002:                   # @func0000000000000002
 	kshiftrw	$8, %k1, %k1
 	vmovapd	%zmm4, %zmm3 {%k1} {z}
 	vxorpd	%xmm4, %xmm4, %xmm4
-	vaddpd	%zmm1, %zmm3, %zmm1
-	vaddpd	%zmm0, %zmm2, %zmm0
+	vaddpd	%zmm3, %zmm1, %zmm1
+	vaddpd	%zmm2, %zmm0, %zmm0
 	vcmpltpd	%zmm4, %zmm0, %k0
 	vcmpltpd	%zmm4, %zmm1, %k1
 	kunpckbw	%k0, %k1, %k0
@@ -37,8 +37,8 @@ func0000000000000004:                   # @func0000000000000004
 	kshiftrw	$8, %k1, %k1
 	vmovapd	%zmm4, %zmm3 {%k1} {z}
 	vxorpd	%xmm4, %xmm4, %xmm4
-	vaddpd	%zmm1, %zmm3, %zmm1
-	vaddpd	%zmm0, %zmm2, %zmm0
+	vaddpd	%zmm3, %zmm1, %zmm1
+	vaddpd	%zmm2, %zmm0, %zmm0
 	vcmpltpd	%zmm0, %zmm4, %k0
 	vcmpltpd	%zmm1, %zmm4, %k1
 	kunpckbw	%k0, %k1, %k0
@@ -85,8 +85,8 @@ func000000000000000e:                   # @func000000000000000e
 	kshiftrw	$8, %k1, %k1
 	vmovapd	%zmm4, %zmm3 {%k1} {z}
 	vxorpd	%xmm4, %xmm4, %xmm4
-	vaddpd	%zmm1, %zmm3, %zmm1
-	vaddpd	%zmm0, %zmm2, %zmm0
+	vaddpd	%zmm3, %zmm1, %zmm1
+	vaddpd	%zmm2, %zmm0, %zmm0
 	vcmpordpd	%zmm4, %zmm0, %k0
 	vcmpordpd	%zmm4, %zmm1, %k1
 	kunpckbw	%k0, %k1, %k0

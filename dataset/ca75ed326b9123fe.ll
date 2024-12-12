@@ -77,19 +77,20 @@
 define i64 @func0000000000000000(i64 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = trunc i128 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/to_chars.ll
 ; openssl/optimized/libcrypto-lib-f_impl64.ll
 ; openssl/optimized/libcrypto-shlib-f_impl64.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003f(i64 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = trunc nuw nsw i128 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = add nuw nsw i64 %4, %0
   ret i64 %5
 }
@@ -100,8 +101,8 @@ entry:
 define i64 @func0000000000000035(i64 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = trunc nuw nsw i128 %2 to i64
-  %4 = add nsw i64 %3, %1
-  %5 = add nsw i64 %4, %0
+  %4 = add nsw i64 %1, %3
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -112,12 +113,13 @@ entry:
 define i64 @func0000000000000030(i64 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = trunc nuw nsw i128 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }
 
-; 103 occurrences:
+; 104 occurrences:
+; boost/optimized/to_chars.ll
 ; cpython/optimized/basearith.ll
 ; cpython/optimized/crt.ll
 ; cpython/optimized/mpdecimal.ll
@@ -225,12 +227,13 @@ entry:
 define i64 @func0000000000000028(i64 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = trunc nuw i128 %2 to i64
-  %4 = add nuw i64 %3, %1
+  %4 = add nuw i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/to_chars.ll
 ; cpython/optimized/basearith.ll
 ; cpython/optimized/crt.ll
 ; cpython/optimized/mpdecimal.ll
@@ -240,7 +243,7 @@ entry:
 define i64 @func0000000000000020(i64 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = trunc nuw i128 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add i64 %4, %0
   ret i64 %5
 }
@@ -251,8 +254,8 @@ entry:
 define i64 @func0000000000000014(i64 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = trunc nsw i128 %2 to i64
-  %4 = add nsw i64 %3, %1
-  %5 = add i64 %4, %0
+  %4 = add nsw i64 %1, %3
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -262,8 +265,8 @@ entry:
 define i64 @func0000000000000010(i64 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = trunc nsw i128 %2 to i64
-  %4 = add i64 %3, %1
-  %5 = add i64 %4, %0
+  %4 = add i64 %1, %3
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -273,7 +276,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = trunc i128 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = add nuw i64 %4, %0
   ret i64 %5
 }

@@ -1,11 +1,7 @@
 
-; 6 occurrences:
+; 2 occurrences:
 ; linux/optimized/lzo1x_compress.ll
-; lz4/optimized/lz4.c.ll
-; lz4/optimized/lz4hc.c.ll
-; openusd/optimized/lz4.cpp.ll
 ; ruby/optimized/bignum.ll
-; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000c(ptr %0, i64 %1) #0 {
 entry:
@@ -16,6 +12,8 @@ entry:
 }
 
 ; 138 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/topology.ll
 ; cmake/optimized/cmComputeLinkDepends.cxx.ll
 ; cmake/optimized/cmFortranParserImpl.cxx.ll
 ; cmake/optimized/cmMakefile.cxx.ll
@@ -82,7 +80,6 @@ entry:
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -151,16 +148,31 @@ entry:
 ; yaml-cpp/optimized/scanner.cpp.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/preproc.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = udiv i64 %1, 7
   %3 = getelementptr ptr, ptr %0, i64 %2
   %4 = getelementptr i8, ptr %3, i64 8
   ret ptr %4
+}
+
+; 7 occurrences:
+; rust-analyzer-rs/optimized/1cf75p1eybr0uy0c.ll
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
+; zed-rs/optimized/5syv1375c7i7870jctt3co1ip.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/arqdovuoq7gqav26d45ahunbs.ll
+; zed-rs/optimized/ayy5pqcx1yuz6kdx9ooq2ruee.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
+entry:
+  %2 = getelementptr i8, ptr %0, i64 %1
+  %3 = getelementptr i8, ptr %2, i64 40
+  ret ptr %3
 }
 
 attributes #0 = { nounwind }

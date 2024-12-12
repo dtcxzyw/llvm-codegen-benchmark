@@ -1,8 +1,9 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; abc/optimized/sfmLib.c.ll
 ; git/optimized/add-interactive.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; openjdk/optimized/hb-buffer-verify.ll
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind

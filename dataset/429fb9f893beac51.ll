@@ -7,7 +7,7 @@ define i32 @func0000000000000030(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = udiv i32 %2, 65535
   %4 = mul nuw nsw i32 %3, 40
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = add i32 %5, %0
   ret i32 %6
 }
@@ -22,7 +22,7 @@ entry:
   %3 = udiv i32 %2, 235929600
   %4 = mul nsw i32 %3, -3600
   %5 = add nsw i32 %4, %1
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -36,7 +36,7 @@ define i32 @func000000000000003f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = udiv i32 %2, 146097
   %4 = mul nuw nsw i32 %3, 400
-  %5 = add nuw nsw i32 %4, %1
+  %5 = add nuw nsw i32 %1, %4
   %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }

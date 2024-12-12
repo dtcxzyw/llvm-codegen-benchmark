@@ -12,10 +12,9 @@ entry:
   ret i16 %5
 }
 
-; 26 occurrences:
+; 25 occurrences:
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/uhci-hcd.ll
 ; linux/optimized/vmscan.ll
 ; llvm/optimized/ASTReader.cpp.ll

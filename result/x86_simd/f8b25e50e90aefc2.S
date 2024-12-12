@@ -21,10 +21,3 @@ func0000000000000006:                   # @func0000000000000006
 	vmovdqa32	%xmm0, %xmm1 {%k1}
 	vpmovsxdq	%xmm1, %ymm0
 	retq
-.LCPI4_0:
-	.quad	6                               # 0x6
-func0000000000000004:                   # @func0000000000000004
-	vpcmpltuq	.LCPI4_0(%rip){1to4}, %ymm2, %k1
-	vmovdqa32	%xmm0, %xmm1 {%k1}
-	vpmovsxdq	%xmm1, %ymm0
-	retq

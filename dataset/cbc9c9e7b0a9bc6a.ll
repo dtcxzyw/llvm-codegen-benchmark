@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; rocksdb/optimized/db_impl_files.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000104(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 5
   %4 = sub i64 %3, %0
@@ -16,7 +16,7 @@ entry:
 ; wasmedge/optimized/engine.cpp.ll
 ; wasmedge/optimized/helper.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000099(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000129(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
   %4 = sub nsw i64 %3, %0
@@ -31,7 +31,7 @@ entry:
 ; llvm/optimized/BitcodeWriter.cpp.ll
 ; opencv/optimized/trackerKCF.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000128(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = sub nsw i64 %3, %0
@@ -43,7 +43,7 @@ entry:
 ; 1 occurrences:
 ; cvc5/optimized/core_solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000121(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = sub nsw i64 %3, %0
@@ -55,7 +55,7 @@ entry:
 ; 1 occurrences:
 ; cvc5/optimized/regexp_entail.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000124(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
   %4 = sub nsw i64 %3, %0
@@ -67,7 +67,7 @@ entry:
 ; 1 occurrences:
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000001a4(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 32
   %4 = sub nsw i64 %3, %0

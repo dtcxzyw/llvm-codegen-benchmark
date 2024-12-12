@@ -1,6 +1,5 @@
 
-; 3 occurrences:
-; linux/optimized/fs-writeback.ll
+; 2 occurrences:
 ; qemu/optimized/hw_audio_intel-hda.c.ll
 ; ruby/optimized/pack.ll
 ; Function Attrs: nounwind
@@ -12,15 +11,16 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/conversion.ll
 ; grpc/optimized/hpack_parser.cc.ll
 ; opencv/optimized/persistence.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = mul nsw i64 %2, 3
-  %4 = sdiv i64 %3, 4
+  %3 = mul nsw i64 %2, 11
+  %4 = sdiv i64 %3, 10
   ret i64 %4
 }
 

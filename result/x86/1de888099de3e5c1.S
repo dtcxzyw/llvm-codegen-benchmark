@@ -1,4 +1,4 @@
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	movzbl	%sil, %eax
 	movabsq	$9223372036854775807, %rcx      # imm = 0x7FFFFFFFFFFFFFFF
 	xorq	%rax, %rcx
@@ -7,7 +7,7 @@ func000000000000005a:                   # @func000000000000005a
 	cmpq	%rcx, %rax
 	setg	%al
 	retq
-func0000000000000068:                   # @func0000000000000068
+func00000000000000c8:                   # @func00000000000000c8
 	notb	%sil
 	movsbq	%sil, %rax
 	addq	%rdi, %rdi

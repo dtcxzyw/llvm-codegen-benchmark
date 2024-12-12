@@ -10,6 +10,18 @@ func0000000000000005:                   # @func0000000000000005
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2
 	ret
+func0000000000000004:                   # @func0000000000000004
+	andi	a0, a0, 1
+	addi	a1, a1, -1077
+	lui	a2, 1048397
+	addi	a2, a2, 261
+	mulw	a1, a1, a2
+	lui	a2, 192535
+	addiw	a2, a2, 1788
+	czero.eqz	a2, a2, a0
+	czero.nez	a0, a1, a0
+	or	a0, a0, a2
+	ret
 func0000000000000003:                   # @func0000000000000003
 	andi	a0, a0, 1
 	sh1add	a1, a1, a1
@@ -24,17 +36,6 @@ func0000000000000007:                   # @func0000000000000007
 	mulw	a1, a1, a2
 	lui	a2, 1045667
 	addiw	a2, a2, -599
-	czero.eqz	a2, a2, a0
-	czero.nez	a0, a1, a0
-	or	a0, a0, a2
-	ret
-func0000000000000004:                   # @func0000000000000004
-	andi	a0, a0, 1
-	slli	a2, a1, 1
-	slli	a1, a1, 5
-	subw	a1, a1, a2
-	li	a2, 30
-	addiw	a1, a1, 30
 	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2

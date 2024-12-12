@@ -25,9 +25,9 @@ func0000000000000001:                   # @func0000000000000001
 	mul	a0, a0, a1
 	ret
 func0000000000000007:                   # @func0000000000000007
-	srli	a0, a0, 3
-	li	a1, 257
-	slli	a1, a1, 34
+	srli	a0, a0, 2
+	li	a1, 5
+	slli	a1, a1, 36
 	slli	a0, a0, 32
 	mulhu	a0, a0, a1
 	ret

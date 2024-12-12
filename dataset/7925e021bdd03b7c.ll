@@ -1,10 +1,9 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; linux/optimized/intel_migrate.ll
-; linux/optimized/nfs3xdr.ll
 ; linux/optimized/skl_universal_plane.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; ncnn/optimized/convolution_x86_avx512.cpp.ll
@@ -48,6 +47,18 @@ entry:
   ret i32 %4
 }
 
+; 2 occurrences:
+; boost/optimized/to_chars.ll
+; stb/optimized/stb_dxt.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000b(i32 %0, i32 %1) #0 {
+entry:
+  %2 = sub nsw i32 %0, %1
+  %3 = lshr i32 %2, 6
+  %4 = add nuw nsw i32 %3, 1
+  ret i32 %4
+}
+
 ; 1 occurrences:
 ; libquic/optimized/quic_session.cc.ll
 ; Function Attrs: nounwind
@@ -56,17 +67,6 @@ entry:
   %2 = sub nuw i32 %0, %1
   %3 = lshr i32 %2, 1
   %4 = add nsw i32 %3, -1
-  ret i32 %4
-}
-
-; 1 occurrences:
-; stb/optimized/stb_dxt.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000b(i32 %0, i32 %1) #0 {
-entry:
-  %2 = sub nsw i32 %0, %1
-  %3 = lshr i32 %2, 1
-  %4 = add nuw nsw i32 %3, 2
   ret i32 %4
 }
 

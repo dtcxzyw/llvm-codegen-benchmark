@@ -124,15 +124,12 @@ entry:
   ret i32 %5
 }
 
-; 13 occurrences:
+; 10 occurrences:
 ; cmake/optimized/divsufsort.c.ll
 ; cmake/optimized/huf_decompress.c.ll
 ; graphviz/optimized/multispline.c.ll
 ; openblas/optimized/dgghd3.c.ll
-; openblas/optimized/dsyevr.c.ll
-; openblas/optimized/dsyevr_2stage.c.ll
 ; openblas/optimized/dsyevx.c.ll
-; openblas/optimized/dsyevx_2stage.c.ll
 ; openjdk/optimized/type.ll
 ; recastnavigation/optimized/DetourPathCorridor.cpp.ll
 ; z3/optimized/sat_cut_simplifier.cpp.ll

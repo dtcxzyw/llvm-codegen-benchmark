@@ -3,7 +3,7 @@
 ; openssl/optimized/libssl-lib-statem_clnt.ll
 ; openssl/optimized/libssl-shlib-statem_clnt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000441(i32 %0, i64 %1) #0 {
+define i1 @func0000000000001081(i32 %0, i64 %1) #0 {
 entry:
   %2 = zext nneg i32 %0 to i64
   %3 = add i64 %1, -2
@@ -17,7 +17,7 @@ entry:
 ; opencv/optimized/seam_finders.cpp.ll
 ; postgres/optimized/ruleutils.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000311(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000c21(i32 %0, i64 %1) #0 {
 entry:
   %2 = zext i32 %0 to i64
   %3 = add nuw nsw i64 %1, 1
@@ -30,7 +30,7 @@ entry:
 ; 1 occurrences:
 ; hwloc/optimized/topology-synthetic.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000421(i32 %0, i64 %1) #0 {
 entry:
   %2 = zext i32 %0 to i64
   %3 = add nsw i64 %1, -2

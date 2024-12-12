@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openjdk/optimized/relocInfo.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000c1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %2
   %4 = sext i32 %3 to i64
@@ -15,7 +15,7 @@ entry:
 ; opencv/optimized/datastructs.cpp.ll
 ; php/optimized/dtoa.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000044(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sub i32 0, %2
   %4 = sext i32 %3 to i64
@@ -29,7 +29,7 @@ entry:
 ; redis/optimized/ziplist.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000c4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %2
   %4 = sext i32 %3 to i64

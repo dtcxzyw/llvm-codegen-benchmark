@@ -1,4 +1,4 @@
-func00000000000001f1:                   # @func00000000000001f1
+func00000000000003e1:                   # @func00000000000003e1
 	sext.w	a0, a0
 	bset	a1, zero, a1
 	addiw	a1, a1, 1

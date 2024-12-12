@@ -1,7 +1,6 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; icu/optimized/ucnvscsu.ll
-; icu/optimized/utext.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; openusd/optimized/quadRefinement.cpp.ll
 ; Function Attrs: nounwind

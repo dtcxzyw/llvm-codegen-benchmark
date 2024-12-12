@@ -1,6 +1,5 @@
 
-; 3 occurrences:
-; libquic/optimized/random.c.ll
+; 2 occurrences:
 ; openssl/optimized/libcrypto-lib-wp_dgst.ll
 ; openssl/optimized/libcrypto-shlib-wp_dgst.ll
 ; Function Attrs: nounwind
@@ -9,7 +8,7 @@ entry:
   %2 = and i32 %1, 7
   %3 = lshr i32 255, %2
   %4 = trunc nuw i32 %3 to i8
-  %5 = and i8 %4, %0
+  %5 = and i8 %0, %4
   ret i8 %5
 }
 
@@ -26,7 +25,7 @@ entry:
   %2 = and i32 %1, 7
   %3 = lshr exact i32 65280, %2
   %4 = trunc i32 %3 to i8
-  %5 = and i8 %4, %0
+  %5 = and i8 %0, %4
   ret i8 %5
 }
 
@@ -38,7 +37,7 @@ entry:
   %2 = and i32 %1, 7
   %3 = lshr exact i32 128, %2
   %4 = trunc nuw i32 %3 to i8
-  %5 = and i8 %4, %0
+  %5 = and i8 %0, %4
   ret i8 %5
 }
 

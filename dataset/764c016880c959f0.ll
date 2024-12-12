@@ -63,7 +63,7 @@ entry:
   ret i64 %5
 }
 
-; 16 occurrences:
+; 19 occurrences:
 ; abseil-cpp/optimized/civil_time.cc.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time.cc.ll
@@ -71,6 +71,8 @@ entry:
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; abseil-cpp/optimized/time_zone_libc.cc.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; darktable/optimized/export.c.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
 ; git/optimized/dir.ll
@@ -80,6 +82,7 @@ entry:
 ; openmpi/optimized/netpatterns_nary_tree.ll
 ; openusd/optimized/restoration.c.ll
 ; velox/optimized/TimestampConversion.cpp.ll
+; zed-rs/optimized/2nwrl7qhv6ci6obqg1itckcv6.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i32 %1, i32 %2) #0 {
 entry:

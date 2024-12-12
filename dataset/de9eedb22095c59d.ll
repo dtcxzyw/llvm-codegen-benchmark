@@ -1,5 +1,5 @@
 
-; 84 occurrences:
+; 82 occurrences:
 ; lief/optimized/File.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nix/optimized/attrs.ll
@@ -20,8 +20,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -525,6 +523,18 @@ entry:
 }
 
 ; 1 occurrences:
+; openjdk/optimized/graphKit.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003f(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = zext nneg i32 %1 to i64
+  %5 = shl nuw nsw i64 %4, %3
+  %6 = add nuw nsw i64 %5, %0
+  ret i64 %6
+}
+
+; 1 occurrences:
 ; php/optimized/dtoa.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i32 %1, i32 %2) #0 {
@@ -549,6 +559,18 @@ entry:
 }
 
 ; 1 occurrences:
+; openusd/optimized/avif.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000002f(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = zext i32 %1 to i64
+  %5 = shl nuw nsw i64 %4, %3
+  %6 = add nuw nsw i64 %5, %0
+  ret i64 %6
+}
+
+; 1 occurrences:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000024(i64 %0, i32 %1, i32 %2) #0 {
@@ -556,7 +578,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = zext i32 %1 to i64
   %5 = shl nsw i64 %4, %3
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 

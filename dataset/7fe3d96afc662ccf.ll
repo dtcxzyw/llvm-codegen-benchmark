@@ -11,16 +11,13 @@ define i32 @func000000000000000c(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = add nuw nsw i32 %2, 1
-  %4 = mul i32 %3, %0
+  %4 = mul i32 %0, %3
   ret i32 %4
 }
 
-; 9 occurrences:
+; 6 occurrences:
 ; linux/optimized/config.ll
-; linux/optimized/rsmisc.ll
-; linux/optimized/scsicam.ll
 ; linux/optimized/urb.ll
-; qemu/optimized/hw_block_hd-geometry.c.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; sentencepiece/optimized/generated_message_table_driven_lite.cc.ll
 ; wireshark/optimized/packet-vnc.c.ll
@@ -30,7 +27,7 @@ define i32 @func000000000000000f(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = add nuw nsw i32 %2, 1
-  %4 = mul nuw nsw i32 %3, %0
+  %4 = mul nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -54,14 +51,14 @@ define i32 @func000000000000000d(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = add nuw nsw i32 %2, 1
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   ret i32 %4
 }
 
 ; 7 occurrences:
 ; freetype/optimized/pfr.c.ll
 ; linux/optimized/intel_rps.ll
-; linux/optimized/rsmisc.ll
+; lvgl/optimized/lv_led.ll
 ; miniaudio/optimized/unity.c.ll
 ; opencv/optimized/color_yuv.dispatch.cpp.ll
 ; raylib/optimized/raudio.c.ll
@@ -70,7 +67,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add nsw i32 %2, -1
+  %3 = add nsw i32 %2, -80
   %4 = mul nsw i32 %3, %0
   ret i32 %4
 }
@@ -82,7 +79,7 @@ define i32 @func0000000000000004(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = add nsw i32 %2, -1
-  %4 = mul i32 %3, %0
+  %4 = mul i32 %0, %3
   ret i32 %4
 }
 

@@ -1,10 +1,10 @@
 
-; 107 occurrences:
+; 106 occurrences:
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/deflate.c.ll
-; abc/optimized/kitPla.c.ll
 ; arrow/optimized/UriQuery.c.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/numeric.ll
 ; clamav/optimized/pdf.c.ll
 ; cmake/optimized/cmCTestResourceGroupsLexer.cxx.ll
 ; cmake/optimized/cmCommandArgumentLexer.cxx.ll
@@ -98,7 +98,6 @@
 ; redis/optimized/read.ll
 ; ruby/optimized/parse.ll
 ; slurm/optimized/job_mgr.ll
-; soc-simulator/optimized/verilated.ll
 ; velox/optimized/DenseHll.cpp.ll
 ; velox/optimized/Scanner.cpp.ll
 ; verilator/optimized/V3PreProc.cpp.ll

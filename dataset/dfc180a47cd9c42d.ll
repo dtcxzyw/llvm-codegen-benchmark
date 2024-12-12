@@ -1,6 +1,7 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; hermes/optimized/DateUtil.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; nuklear/optimized/unity.c.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind

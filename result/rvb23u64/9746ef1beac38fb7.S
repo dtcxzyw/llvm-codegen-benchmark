@@ -19,13 +19,14 @@ func0000000000000040:                   # @func0000000000000040
 	subw	a0, a1, a0
 	addiw	a0, a0, 1
 	ret
-func0000000000000000:                   # @func0000000000000000
-	srli	a1, a1, 20
-	subw	a0, a1, a0
-	addiw	a0, a0, 1
-	ret
 func0000000000000045:                   # @func0000000000000045
 	srli	a1, a1, 3
 	subw	a0, a1, a0
 	addiw	a0, a0, 1
+	ret
+func0000000000000000:                   # @func0000000000000000
+	srli	a1, a1, 16
+	subw	a1, a1, a0
+	lui	a0, 8
+	addw	a0, a0, a1
 	ret

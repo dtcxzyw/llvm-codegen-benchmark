@@ -4,7 +4,7 @@ func000000000000000a:                   # @func000000000000000a
 	setg	%al
 	andb	%dil, %al
 	retq
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	leal	(%rsi,%rdx,8), %eax
 	testl	%eax, %eax
 	setg	%al

@@ -20,7 +20,7 @@ entry:
   ret i64 %4
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; abc/optimized/fretMain.c.ll
 ; abc/optimized/fxuHeapS.c.ll
 ; abc/optimized/ifLibBox.c.ll
@@ -30,7 +30,6 @@ entry:
 ; jq/optimized/jv_parse.ll
 ; opencv/optimized/mathfuncs.cpp.ll
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
-; proj/optimized/initcache.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i32 %0) #0 {

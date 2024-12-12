@@ -36,7 +36,7 @@
 ; xgboost/optimized/ranking_utils.cc.ll
 ; xgboost/optimized/stats.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 1
   %3 = icmp ugt i64 %0, 4611686018427387903
@@ -67,7 +67,7 @@ entry:
 ; opencv/optimized/sift.dispatch.cpp.ll
 ; openjdk/optimized/UnixNativeDispatcher.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 32
   %3 = icmp eq i64 %0, 4294967295

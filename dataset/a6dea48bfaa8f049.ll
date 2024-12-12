@@ -1,6 +1,5 @@
 
-; 8 occurrences:
-; assimp/optimized/BlenderModifier.cpp.ll
+; 7 occurrences:
 ; bullet3/optimized/btInternalEdgeUtility.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_gamma.c.ll

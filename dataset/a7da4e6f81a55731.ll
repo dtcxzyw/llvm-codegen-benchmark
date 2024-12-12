@@ -11,7 +11,7 @@
 ; mold/optimized/output-chunks.cc.SPARC64.cc.ll
 ; php/optimized/pcre2_compile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i8 %1, i1 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i8 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 2, i32 1
   %4 = icmp eq i8 %1, 22
@@ -29,12 +29,12 @@ entry:
 ; mold/optimized/output-chunks.cc.RV32LE.cc.ll
 ; mold/optimized/output-chunks.cc.SPARC64.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i8 %1, i1 %2) #0 {
+define i1 @func0000000000000034(i32 %0, i8 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 2, i32 1
   %4 = icmp eq i8 %1, 22
   %5 = select i1 %4, i32 0, i32 %3
-  %6 = icmp ult i32 %5, %0
+  %6 = icmp samesign ult i32 %5, %0
   ret i1 %6
 }
 

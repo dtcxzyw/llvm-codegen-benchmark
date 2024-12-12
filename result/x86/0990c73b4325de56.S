@@ -8,5 +8,5 @@ func000000000000000c:                   # @func000000000000000c
 	retq
 func0000000000000000:                   # @func0000000000000000
 	leal	(%rdi,%rsi), %eax
-	andb	$127, %al
+	andb	$63, %al
 	retq

@@ -14,7 +14,7 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; darktable/optimized/introspection_liquify.c.ll
 ; darktable/optimized/tagging.c.ll
 ; ncnn/optimized/innerproduct_x86_avx.cpp.ll
@@ -23,6 +23,7 @@ entry:
 ; ncnn/optimized/innerproduct_x86_fma.cpp.ll
 ; php/optimized/zend_jit.ll
 ; z3/optimized/realclosure.cpp.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, i32 %2) #0 {
 entry:

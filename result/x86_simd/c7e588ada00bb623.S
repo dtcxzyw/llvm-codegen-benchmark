@@ -4,6 +4,6 @@
 	.quad	1609587791953885689             # 0x165667919e3779f9
 func0000000000000020:                   # @func0000000000000020
 	vpmullq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
-	vpxor	%ymm0, %ymm1, %ymm0
+	vpxor	%ymm1, %ymm0, %ymm0
 	vpmullq	.LCPI0_1(%rip){1to4}, %ymm0, %ymm0
 	retq

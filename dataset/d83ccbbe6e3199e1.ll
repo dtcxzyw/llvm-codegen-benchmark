@@ -1,8 +1,9 @@
 
-; 133 occurrences:
+; 136 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/mapperTime.c.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; cjson/optimized/cJSON_Utils.c.ll
 ; clamav/optimized/filestr.cpp.ll
 ; clap-rs/optimized/gk6w3l154s6ch7z.ll
@@ -54,6 +55,8 @@
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; luau/optimized/Unifier.cpp.ll
+; lvgl/optimized/lv_draw_sw_border.ll
+; lvgl/optimized/lv_indev.ll
 ; meilisearch-rs/optimized/3f4k2xees4fvt0r.ll
 ; meilisearch-rs/optimized/gdis3hvl48q1qu4.ll
 ; meshlab/optimized/ml_scene_gl_shared_data_context.cpp.ll
@@ -81,14 +84,12 @@
 ; openssl/optimized/openssl-bin-cms.ll
 ; openssl/optimized/openssl-bin-pkey.ll
 ; openssl/optimized/openssl-bin-rsa.ll
-; openusd/optimized/fvarLevel.cpp.ll
 ; php/optimized/pcre2_compile.ll
 ; php/optimized/zend_compile.ll
 ; php/optimized/zend_jit.ll
 ; postgres/optimized/copyfromparse.ll
 ; postgres/optimized/equivclass.ll
 ; postgres/optimized/execExprInterp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
 ; proj/optimized/grids.cpp.ll
 ; proj/optimized/gridshift.cpp.ll
@@ -102,10 +103,12 @@
 ; regex-rs/optimized/1pxsmct4oxs5dlep.ll
 ; rustfmt-rs/optimized/4arc02n7xt9gqo2v.ll
 ; slurm/optimized/node_features_knl_generic.ll
+; slurm/optimized/update_job.ll
 ; spike/optimized/fall_reciprocal.ll
 ; spike/optimized/vmsbf_m.ll
 ; spike/optimized/vmsif_m.ll
 ; tree-sitter-rs/optimized/2jber9b3bsvatks5.ll
+; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; verilator/optimized/V3Assert.cpp.ll
 ; wireshark/optimized/packet-ber.c.ll
 ; wireshark/optimized/packet-erf.c.ll

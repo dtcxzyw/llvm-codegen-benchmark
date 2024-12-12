@@ -5,7 +5,7 @@ func0000000000000010:                   # @func0000000000000010
 	andb	%dil, %al
 	retq
 func0000000000000018:                   # @func0000000000000018
-	xorb	$1, %dil
+	notb	%dil
 	cmpq	%rdx, %rsi
 	sete	%al
 	andb	%dil, %al
@@ -17,7 +17,7 @@ func0000000000000014:                   # @func0000000000000014
 	andb	%dil, %al
 	retq
 func0000000000000002:                   # @func0000000000000002
-	xorb	$1, %dil
+	notb	%dil
 	cmpq	%rdx, %rsi
 	setne	%al
 	andb	%dil, %al
@@ -29,7 +29,7 @@ func000000000000000c:                   # @func000000000000000c
 	andb	%dil, %al
 	retq
 func0000000000000012:                   # @func0000000000000012
-	xorb	$1, %dil
+	notb	%dil
 	cmpq	%rdx, %rsi
 	setb	%al
 	andb	%dil, %al

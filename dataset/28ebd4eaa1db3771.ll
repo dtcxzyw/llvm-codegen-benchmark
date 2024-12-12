@@ -1,7 +1,6 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; abc/optimized/absOldCex.c.ll
-; abc/optimized/dchMan.c.ll
 ; abc/optimized/giaGen.c.ll
 ; jq/optimized/builtin.ll
 ; opencv/optimized/binary_descriptor.cpp.ll

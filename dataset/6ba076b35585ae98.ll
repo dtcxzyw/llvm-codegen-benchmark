@@ -3,7 +3,7 @@
 ; re2/optimized/re2.cc.ll
 ; redis/optimized/listpack.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000021(i32 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = and i1 %3, %1
@@ -19,7 +19,7 @@ entry:
 ; luau/optimized/lstrlib.cpp.ll
 ; redis/optimized/lstrlib.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i32 %0, i1 %1, ptr %2) #0 {
+define i1 @func000000000000018a(i32 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = and i1 %3, %1
@@ -31,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; lua/optimized/lstrlib.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i1 %1, ptr %2) #0 {
+define i1 @func0000000000000181(i32 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = and i1 %3, %1

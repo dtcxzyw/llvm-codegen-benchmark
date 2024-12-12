@@ -13,10 +13,9 @@ entry:
   ret i32 %5
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; cmake/optimized/archive_ppmd8.c.ll
 ; linux/optimized/8250_early.ll
-; linux/optimized/8250_exar.ll
 ; linux/optimized/intel_dsi_vbt.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/LLVMTargetMachine.cpp.ll

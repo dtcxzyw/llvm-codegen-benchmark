@@ -1,5 +1,5 @@
 
-; 1470 occurrences:
+; 1453 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcCascade.c.ll
@@ -108,7 +108,6 @@
 ; annoy/optimized/annoymodule.ll
 ; arrow/optimized/array_base.cc.ll
 ; arrow/optimized/bignum-dtoa.cc.ll
-; arrow/optimized/cached-powers.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_internal.cc.ll
 ; arrow/optimized/type.cc.ll
@@ -118,6 +117,8 @@
 ; assimp/optimized/X3DXmlHelper.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/formatter.ll
 ; bullet3/optimized/b3File.ll
 ; bullet3/optimized/btBatchedConstraints.ll
 ; bullet3/optimized/btHeightfieldTerrainShape.ll
@@ -215,7 +216,6 @@
 ; darktable/optimized/tethering.c.ll
 ; darktable/optimized/timeline.c.ll
 ; double_conversion/optimized/bignum-dtoa.cc.ll
-; double_conversion/optimized/cached-powers.cc.ll
 ; draco/optimized/attribute_octahedron_transform.cc.ll
 ; draco/optimized/kd_tree_attributes_encoder.cc.ll
 ; draco/optimized/obj_encoder.cc.ll
@@ -359,7 +359,6 @@
 ; gromacs/optimized/dbdsdc.cpp.ll
 ; gromacs/optimized/dgesdd.cpp.ll
 ; gromacs/optimized/distribute.cpp.ll
-; gromacs/optimized/dlasdt.cpp.ll
 ; gromacs/optimized/domdec.cpp.ll
 ; gromacs/optimized/domdec_setup.cpp.ll
 ; gromacs/optimized/dstebz.cpp.ll
@@ -462,11 +461,9 @@
 ; icu/optimized/csrsbcs.ll
 ; icu/optimized/decimfmt.ll
 ; icu/optimized/double-conversion-bignum-dtoa.ll
-; icu/optimized/double-conversion-cached-powers.ll
 ; icu/optimized/fmtable.ll
 ; icu/optimized/gendict.ll
 ; icu/optimized/gregocal.ll
-; icu/optimized/gregoimp.ll
 ; icu/optimized/hebrwcal.ll
 ; icu/optimized/indiancal.ll
 ; icu/optimized/islamcal.ll
@@ -514,7 +511,6 @@
 ; libwebp/optimized/picture_csp_enc.c.ll
 ; libwebp/optimized/quality_estimate.c.ll
 ; libwebp/optimized/quant_enc.c.ll
-; libzmq/optimized/local_thr.cpp.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
 ; lief/optimized/BinaryParser.cpp.ll
@@ -657,6 +653,7 @@
 ; luau/optimized/ltable.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
 ; luau/optimized/main.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/AlignPairDialog.cpp.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; meshlab/optimized/arap.cpp.ll
@@ -684,7 +681,6 @@
 ; meshlab/optimized/filter_createiso.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
@@ -704,7 +700,6 @@
 ; meshlab/optimized/intersection.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll
 ; meshlab/optimized/layerDialog.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/meshio.cpp.ll
@@ -721,7 +716,6 @@
 ; meshlab/optimized/solver.cpp.ll
 ; meshlab/optimized/texture_optimization.cpp.ll
 ; meshlab/optimized/tfhandle.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/c_converter.cpp.ll
 ; minetest/optimized/camera.cpp.ll
 ; minetest/optimized/craftdef.cpp.ll
@@ -810,12 +804,8 @@
 ; openblas/optimized/dgegs.c.ll
 ; openblas/optimized/dgegv.c.ll
 ; openblas/optimized/dgejsv.c.ll
-; openblas/optimized/dgeqp3.c.ll
-; openblas/optimized/dgesdd.c.ll
 ; openblas/optimized/dgesvd.c.ll
 ; openblas/optimized/dgesvdq.c.ll
-; openblas/optimized/dgetsqrhrt.c.ll
-; openblas/optimized/dggbak.c.ll
 ; openblas/optimized/dgges3.c.ll
 ; openblas/optimized/dggev3.c.ll
 ; openblas/optimized/dggglm.c.ll
@@ -833,7 +823,6 @@
 ; openblas/optimized/dlaqr4.c.ll
 ; openblas/optimized/dlarrd.c.ll
 ; openblas/optimized/dlarrj.c.ll
-; openblas/optimized/dorcsd.c.ll
 ; openblas/optimized/dorcsd2by1.c.ll
 ; openblas/optimized/dorgbr.c.ll
 ; openblas/optimized/dspgvd.c.ll
@@ -841,9 +830,7 @@
 ; openblas/optimized/dstedc.c.ll
 ; openblas/optimized/dsyequb.c.ll
 ; openblas/optimized/dsygvd.c.ll
-; openblas/optimized/dsysv_aa.c.ll
 ; openblas/optimized/dsytrd_sb2st.c.ll
-; openblas/optimized/iparmq.c.ll
 ; opencv/optimized/Utils.cpp.ll
 ; opencv/optimized/accum_layer.cpp.ll
 ; opencv/optimized/adaptive_manifold_filter_n.cpp.ll
@@ -1166,7 +1153,6 @@
 ; openmpi/optimized/pstat_linux_module.ll
 ; openmpi/optimized/ptl_base_fns.ll
 ; openmpi/optimized/reachable_netlink_module.ll
-; openmpi/optimized/reachable_weighted.ll
 ; openmpi/optimized/sharedfp_individual_collaborate_data.ll
 ; openmpi/optimized/test_overhead.ll
 ; openmpi/optimized/tm_bucket.ll
@@ -1216,7 +1202,6 @@
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; ozz-animation/optimized/jsoncpp.cpp.ll
 ; pbrt-v4/optimized/ArHosekSkyModel.c.ll
-; pbrt-v4/optimized/cameras.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; pbrt-v4/optimized/math.cpp.ll
 ; pbrt-v4/optimized/media.cpp.ll
@@ -1274,7 +1259,6 @@
 ; proj/optimized/geod_set.cpp.ll
 ; proj/optimized/gie.cpp.ll
 ; proj/optimized/grids.cpp.ll
-; proj/optimized/io.cpp.ll
 ; proj/optimized/isea.cpp.ll
 ; proj/optimized/networkfilemanager.cpp.ll
 ; proj/optimized/proj_json_streaming_writer.cpp.ll
@@ -1401,7 +1385,6 @@
 ; wireshark/optimized/elided_label.cpp.ll
 ; wireshark/optimized/follow_stream_dialog.cpp.ll
 ; wireshark/optimized/follow_stream_text.cpp.ll
-; wireshark/optimized/ftype-time.c.ll
 ; wireshark/optimized/iax2_analysis_dialog.cpp.ll
 ; wireshark/optimized/io_graph_dialog.cpp.ll
 ; wireshark/optimized/label_stack.cpp.ll

@@ -1,12 +1,10 @@
 
-%"class.llvm::Use.2966677" = type { ptr, ptr, ptr, ptr }
-%"class.llvm::Use.2987993" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3160178" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3181463" = type { ptr, ptr, ptr, ptr }
 
-; 4 occurrences:
-; llvm/optimized/InterpFrame.cpp.ll
+; 2 occurrences:
 ; openssl/optimized/libcrypto-lib-sha1dgst.ll
 ; openssl/optimized/libcrypto-shlib-sha1dgst.ll
-; php/optimized/pcre2_dfa_match.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001a(ptr %0, i64 %1, i32 %2) #0 {
 entry:
@@ -15,6 +13,20 @@ entry:
   %5 = getelementptr nusw i8, ptr %0, i64 %4
   %6 = and i64 %1, -64
   %7 = getelementptr nusw i8, ptr %5, i64 %6
+  ret ptr %7
+}
+
+; 2 occurrences:
+; llvm/optimized/InterpFrame.cpp.ll
+; php/optimized/pcre2_dfa_match.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001b(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = sub nsw i64 0, %3
+  %5 = getelementptr nusw i32, ptr %0, i64 %4
+  %6 = and i64 %1, 4294967294
+  %7 = getelementptr nusw nuw i64, ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -37,13 +49,13 @@ entry:
 ; llvm/optimized/VPlanRecipes.cpp.ll
 ; llvm/optimized/Verifier.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000005b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %"class.llvm::Use.2966677", ptr %0, i64 %4
+  %5 = getelementptr nusw %"class.llvm::Use.3160178", ptr %0, i64 %4
   %6 = and i64 %1, 4294967295
-  %7 = getelementptr nusw %"class.llvm::Use.2966677", ptr %5, i64 %6
+  %7 = getelementptr nusw nuw %"class.llvm::Use.3160178", ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -56,7 +68,7 @@ define ptr @func0000000000000058(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %"class.llvm::Use.2987993", ptr %0, i64 %4
+  %5 = getelementptr nusw %"class.llvm::Use.3181463", ptr %0, i64 %4
   %6 = and i64 %1, -128
   %7 = getelementptr i8, ptr %5, i64 %6
   ret ptr %7

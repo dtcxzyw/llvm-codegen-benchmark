@@ -1,6 +1,5 @@
 
-; 22 occurrences:
-; eastl/optimized/BenchmarkString.cpp.ll
+; 21 occurrences:
 ; eastl/optimized/BenchmarkTupleVector.cpp.ll
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
 ; eastl/optimized/TestString.cpp.ll
@@ -24,6 +23,17 @@
 ; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(ptr %0, i64 %1) #0 {
+entry:
+  %diff.neg = sub i64 0, %1
+  ret i64 %diff.neg
+}
+
+; 3 occurrences:
+; boost/optimized/static_string.ll
+; eastl/optimized/BenchmarkString.cpp.ll
+; eastl/optimized/TestString.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000c(ptr %0, i64 %1) #0 {
 entry:
   %diff.neg = sub i64 0, %1
   ret i64 %diff.neg

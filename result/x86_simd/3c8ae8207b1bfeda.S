@@ -35,7 +35,7 @@
 .LCPI0_2:
 	.short	127                             # 0x7f
 	.short	127                             # 0x7f
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vpandd	.LCPI0_2(%rip){1to8}, %ymm2, %ymm2
 	vpcmpnleuw	.LCPI0_1(%rip), %ymm1, %k1
 	vmovdqu16	%ymm0, %ymm2 {%k1}

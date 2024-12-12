@@ -1,5 +1,6 @@
 
-; 18 occurrences:
+; 21 occurrences:
+; boost/optimized/convex_hull_sph_geo.ll
 ; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
 ; duckdb/optimized/comparison_operators.cpp.ll
 ; icu/optimized/measunit_extra.ll
@@ -9,6 +10,7 @@
 ; llvm/optimized/DecoderEmitter.cpp.ll
 ; llvm/optimized/InstCombineAddSub.cpp.ll
 ; llvm/optimized/Instruction.cpp.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; minetest/optimized/localplayer.cpp.ll
 ; openjdk/optimized/exceptions.ll
 ; php/optimized/pcre2_jit_compile.ll
@@ -18,6 +20,7 @@
 ; z3/optimized/subpaving_mpff.cpp.ll
 ; z3/optimized/subpaving_mpfx.cpp.ll
 ; z3/optimized/subpaving_mpq.cpp.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:

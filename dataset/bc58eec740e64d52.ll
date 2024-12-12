@@ -1,5 +1,6 @@
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/approximately_equals.ll
 ; cpython/optimized/mpdecimal.ll
 ; mitsuba3/optimized/qmc.cpp.ll
 ; qemu/optimized/util_host-utils.c.ll
@@ -312,8 +313,10 @@ entry:
   ret i64 %3
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i128 %0, i128 %1) #0 {
 entry:
@@ -322,8 +325,9 @@ entry:
   ret i64 %3
 }
 
-; 228 occurrences:
+; 229 occurrences:
 ; abseil-cpp/optimized/int128_test.cc.ll
+; boost/optimized/to_chars.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll

@@ -1,4 +1,6 @@
 
+%class.aiVector3t.2822608 = type { float, float, float }
+
 ; 7 occurrences:
 ; cpython/optimized/ceval.ll
 ; darktable/optimized/introspection_basecurve.c.ll
@@ -16,8 +18,7 @@ entry:
   ret ptr %5
 }
 
-; 56 occurrences:
-; abc/optimized/cuddExact.c.ll
+; 49 occurrences:
 ; abc/optimized/dchClass.c.ll
 ; abc/optimized/ioReadBaf.c.ll
 ; abc/optimized/sswClass.c.ll
@@ -26,11 +27,8 @@ entry:
 ; faiss/optimized/VectorTransform.cpp.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
-; fmt/optimized/format-impl-test.cc.ll
 ; git/optimized/diff.ll
-; graphviz/optimized/hedges.c.ll
 ; graphviz/optimized/multispline.c.ll
-; icu/optimized/rbbi.ll
 ; icu/optimized/umutablecptrie.ll
 ; icu/optimized/unisetspan.ll
 ; icu/optimized/utrie.ll
@@ -38,8 +36,6 @@ entry:
 ; jq/optimized/builtin.ll
 ; libphonenumber/optimized/generate_geocoding_data.cc.ll
 ; libphonenumber/optimized/geocoding_data_test.cc.ll
-; libquic/optimized/cmp.c.ll
-; lightgbm/optimized/c_api.cpp.ll
 ; llvm/optimized/AssignmentTrackingAnalysis.cpp.ll
 ; ncnn/optimized/padding.cpp.ll
 ; ncnn/optimized/padding_x86.cpp.ll
@@ -54,7 +50,6 @@ entry:
 ; opencv/optimized/rapid.cpp.ll
 ; opencv/optimized/slic.cpp.ll
 ; opencv/optimized/smooth.dispatch.cpp.ll
-; openjdk/optimized/check_code.ll
 ; openspiel/optimized/best_response.cc.ll
 ; openspiel/optimized/dynamic_routing.cc.ll
 ; openspiel/optimized/history_tree.cc.ll
@@ -82,7 +77,7 @@ entry:
   ret ptr %5
 }
 
-; 36 occurrences:
+; 35 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; gromacs/optimized/domdec_specatomcomm.cpp.ll
 ; gromacs/optimized/gmx_bar.cpp.ll
@@ -96,7 +91,6 @@ entry:
 ; ipopt/optimized/IpTNLPAdapter.ll
 ; lightgbm/optimized/objective_function.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll
 ; ncnn/optimized/proposal.cpp.ll
 ; nix/optimized/lock.ll
@@ -128,28 +122,17 @@ entry:
   ret ptr %5
 }
 
-; 231 occurrences:
+; 210 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
-; assimp/optimized/HL1MDLLoader.cpp.ll
-; assimp/optimized/MDLLoader.cpp.ll
-; duckdb/optimized/ub_duckdb_main.cpp.ll
 ; gromacs/optimized/atomdata.cpp.ll
-; gromacs/optimized/distribute.cpp.ll
-; gromacs/optimized/domdec.cpp.ll
 ; gromacs/optimized/domdec_specatomcomm.cpp.ll
-; gromacs/optimized/gen_vsite.cpp.ll
-; gromacs/optimized/genhydro.cpp.ll
 ; gromacs/optimized/gmx_bar.cpp.ll
 ; gromacs/optimized/gmx_chi.cpp.ll
-; gromacs/optimized/gmx_current.cpp.ll
 ; gromacs/optimized/gmx_hbond.cpp.ll
-; gromacs/optimized/grompp.cpp.ll
 ; gromacs/optimized/lincs.cpp.ll
-; gromacs/optimized/msd.cpp.ll
-; gromacs/optimized/mshift.cpp.ll
 ; gromacs/optimized/orires.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; gromacs/optimized/partition.cpp.ll
@@ -164,30 +147,21 @@ entry:
 ; llvm/optimized/CloneFunction.cpp.ll
 ; llvm/optimized/LazyValueInfo.cpp.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
-; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
-; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll
-; meshlab/optimized/outline2_rasterizer.cpp.ll
 ; ncnn/optimized/proposal.cpp.ll
 ; nix/optimized/lock.ll
 ; node/optimized/libnode.node.ll
 ; node/optimized/libnode.node_credentials.ll
 ; ocio/optimized/ColorSpaceTransform.cpp.ll
-; ocio/optimized/Lut3DOpCPU.cpp.ll
 ; opencv/optimized/asift.cpp.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
-; opencv/optimized/detection_output_layer.cpp.ll
 ; opencv/optimized/emdL1.cpp.ll
 ; opencv/optimized/facemarkAAM.cpp.ll
 ; opencv/optimized/facemarkLBF.cpp.ll
 ; opencv/optimized/fast_hough_transform.cpp.ll
 ; opencv/optimized/find_ellipses.cpp.ll
-; opencv/optimized/floodfill.cpp.ll
-; opencv/optimized/generalized_hough.cpp.ll
 ; opencv/optimized/global_motion.cpp.ll
 ; opencv/optimized/lkpyramid.cpp.ll
 ; opencv/optimized/lpsolver.cpp.ll
@@ -200,7 +174,6 @@ entry:
 ; openusd/optimized/catmarkPatchBuilder.cpp.ll
 ; openusd/optimized/level.cpp.ll
 ; openusd/optimized/loopPatchBuilder.cpp.ll
-; pbrt-v4/optimized/loopsubdiv.cpp.ll
 ; protobuf/optimized/descriptor.cc.ll
 ; velox/optimized/AllocationPool.cpp.ll
 ; xgboost/optimized/cpu_predictor.cc.ll
@@ -382,6 +355,24 @@ entry:
   ret ptr %5
 }
 
+; 8 occurrences:
+; abc/optimized/cuddExact.c.ll
+; fmt/optimized/format-impl-test.cc.ll
+; graphviz/optimized/hedges.c.ll
+; icu/optimized/rbbi.ll
+; lightgbm/optimized/c_api.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; openblas/optimized/dsbgst.c.ll
+; openjdk/optimized/check_code.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = sub nsw i64 %3, %1
+  %5 = getelementptr nusw nuw i32, ptr %0, i64 %4
+  ret ptr %5
+}
+
 ; 1 occurrences:
 ; openjdk/optimized/vtableStubs.ll
 ; Function Attrs: nounwind
@@ -393,13 +384,14 @@ entry:
   ret ptr %5
 }
 
-; 17 occurrences:
+; 19 occurrences:
 ; abc/optimized/cuddExact.c.ll
 ; arrow/optimized/double-to-string.cc.ll
 ; double_conversion/optimized/double-to-string.cc.ll
 ; git/optimized/diff.ll
 ; gromacs/optimized/dlasq3.cpp.ll
 ; gromacs/optimized/slasq3.cpp.ll
+; lightgbm/optimized/linker_topo.cpp.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
 ; meshlab/optimized/arap.cpp.ll
@@ -410,6 +402,7 @@ entry:
 ; openblas/optimized/dlarre.c.ll
 ; openblas/optimized/dlasq2.c.ll
 ; opencv/optimized/dpm_cascade.cpp.ll
+; opencv/optimized/dxt.cpp.ll
 ; openusd/optimized/double-to-string.cc.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(ptr %0, i64 %1, i32 %2) #0 {
@@ -420,7 +413,46 @@ entry:
   ret ptr %5
 }
 
-; 29 occurrences:
+; 28 occurrences:
+; assimp/optimized/HL1MDLLoader.cpp.ll
+; assimp/optimized/MDLLoader.cpp.ll
+; duckdb/optimized/ub_duckdb_main.cpp.ll
+; gromacs/optimized/distribute.cpp.ll
+; gromacs/optimized/domdec.cpp.ll
+; gromacs/optimized/gen_vsite.cpp.ll
+; gromacs/optimized/genhydro.cpp.ll
+; gromacs/optimized/gmx_current.cpp.ll
+; gromacs/optimized/gmx_hbond.cpp.ll
+; gromacs/optimized/grompp.cpp.ll
+; gromacs/optimized/msd.cpp.ll
+; gromacs/optimized/mshift.cpp.ll
+; gromacs/optimized/pme_only.cpp.ll
+; gromacs/optimized/redistribute.cpp.ll
+; gromacs/optimized/solvate.cpp.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/filter_isoparametrization.cpp.ll
+; meshlab/optimized/outline2_rasterizer.cpp.ll
+; ocio/optimized/Lut3DOpCPU.cpp.ll
+; opencv/optimized/detection_output_layer.cpp.ll
+; opencv/optimized/emdL1.cpp.ll
+; opencv/optimized/fast_hough_transform.cpp.ll
+; opencv/optimized/floodfill.cpp.ll
+; opencv/optimized/generalized_hough.cpp.ll
+; opencv/optimized/solvepnp.cpp.ll
+; openexr/optimized/ImfTileOffsets.cpp.ll
+; pbrt-v4/optimized/loopsubdiv.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000f(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = sub nuw nsw i64 %3, %1
+  %5 = getelementptr nusw nuw %class.aiVector3t.2822608, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 30 occurrences:
+; boost/optimized/conversion.ll
 ; gromacs/optimized/mdatoms.cpp.ll
 ; lightgbm/optimized/bin.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll

@@ -90,9 +90,9 @@
 define i1 @func0000000000000001(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = inttoptr i64 %4 to ptr
-  %6 = icmp eq ptr %5, %0
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
@@ -222,9 +222,9 @@ entry:
 define i1 @func0000000000000008(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = inttoptr i64 %4 to ptr
-  %6 = icmp ult ptr %5, %0
+  %6 = icmp ugt ptr %0, %5
   ret i1 %6
 }
 
@@ -295,9 +295,9 @@ entry:
 define i1 @func0000000000000005(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = inttoptr i64 %4 to ptr
-  %6 = icmp uge ptr %5, %0
+  %6 = icmp ule ptr %0, %5
   ret i1 %6
 }
 
@@ -374,12 +374,12 @@ entry:
 ; openjdk/optimized/xHeapIterator.ll
 ; openjdk/optimized/zHeapIterator.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000028(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = inttoptr i64 %4 to ptr
-  %6 = icmp ult ptr %5, %0
+  %6 = icmp ugt ptr %0, %5
   ret i1 %6
 }
 
@@ -451,36 +451,36 @@ entry:
 ; openjdk/optimized/shenandoahHeapRegion.ll
 ; openjdk/optimized/whitebox.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000025(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = inttoptr i64 %4 to ptr
-  %6 = icmp uge ptr %5, %0
+  %6 = icmp ule ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; openjdk/optimized/continuationWrapper.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000029(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = inttoptr i64 %4 to ptr
-  %6 = icmp ule ptr %5, %0
+  %6 = icmp uge ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; openjdk/optimized/constMethod.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000024(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = inttoptr i64 %4 to ptr
-  %6 = icmp ugt ptr %5, %0
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
@@ -488,24 +488,24 @@ entry:
 ; llvm/optimized/DIExpressionOptimizer.cpp.ll
 ; llvm/optimized/DwarfExpression.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000004c(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = add nuw i64 %3, %1
+  %4 = add nuw i64 %1, %3
   %5 = inttoptr i64 %4 to ptr
-  %6 = icmp ne ptr %5, %0
+  %6 = icmp ne ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; llvm/optimized/DIExpressionOptimizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000041(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = add nuw i64 %3, %1
+  %4 = add nuw i64 %1, %3
   %5 = inttoptr i64 %4 to ptr
-  %6 = icmp eq ptr %5, %0
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
@@ -516,9 +516,9 @@ entry:
 define i1 @func0000000000000004(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = inttoptr i64 %4 to ptr
-  %6 = icmp ugt ptr %5, %0
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 

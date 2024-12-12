@@ -1,13 +1,11 @@
-func000000000000002a:                   # @func000000000000002a
-	add	a0, a0, a1
-	addi	a0, a0, 10
-	ret
-func0000000000000000:                   # @func0000000000000000
-	slli	a0, a0, 2
-	add	a0, a0, a1
-	ret
-func0000000000000020:                   # @func0000000000000020
+func000000000000003a:                   # @func000000000000003a
+	slli	a2, a0, 3
 	slli	a0, a0, 5
+	sub	a0, a0, a2
 	add	a0, a0, a1
-	addi	a0, a0, 9
+	addi	a0, a0, 17
+	ret
+func0000000000000030:                   # @func0000000000000030
+	add	a0, a0, a1
+	addi	a0, a0, 72
 	ret

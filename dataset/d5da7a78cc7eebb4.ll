@@ -1,12 +1,10 @@
 
-%class.default_map_entry.3428190 = type { %class.default_hash_entry.3428191 }
-%class.default_hash_entry.3428191 = type { i32, i32, %struct._key_data.161.3428176 }
-%struct._key_data.161.3428176 = type <{ %class.symbol.3428170, i32, [4 x i8] }>
-%class.symbol.3428170 = type { ptr }
+%class.default_map_entry.3612739 = type { %class.default_hash_entry.3612740 }
+%class.default_hash_entry.3612740 = type { i32, i32, %struct._key_data.161.3612725 }
+%struct._key_data.161.3612725 = type <{ %class.symbol.3612719, i32, [4 x i8] }>
+%class.symbol.3612719 = type { ptr }
 
-; 50 occurrences:
-; eastl/optimized/EARandom.cpp.ll
-; libquic/optimized/blowfish.c.ll
+; 48 occurrences:
 ; velox/optimized/Expressions.cpp.ll
 ; wasmedge/optimized/alias.cpp.ll
 ; wasmedge/optimized/aot_section.cpp.ll
@@ -56,16 +54,27 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000024(ptr %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000044(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
-  %4 = icmp ugt ptr %3, %0
+  %4 = icmp ult ptr %0, %3
   %5 = select i1 %4, ptr %0, ptr %1
   ret ptr %5
 }
 
-; 126 occurrences:
-; cmake/optimized/frm_driver.c.ll
+; 2 occurrences:
+; eastl/optimized/EARandom.cpp.ll
+; libquic/optimized/blowfish.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000064(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = icmp ult ptr %0, %3
+  %5 = select i1 %4, ptr %0, ptr %1
+  ret ptr %5
+}
+
+; 124 occurrences:
 ; eastl/optimized/TestAlgorithm.cpp.ll
 ; libwebp/optimized/quant_levels_dec_utils.c.ll
 ; opencv/optimized/persistence_yml.cpp.ll
@@ -89,7 +98,6 @@ entry:
 ; z3/optimized/bv_rewriter.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/cached_var_subst.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/cofactor_elim_term_ite.cpp.ll
 ; z3/optimized/ctx_simplify_tactic.cpp.ll
 ; z3/optimized/datatype_decl_plugin.cpp.ll
@@ -192,10 +200,10 @@ entry:
 ; z3/optimized/theory_utvpi.cpp.ll
 ; z3/optimized/wmax.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(ptr %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000061(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %class.default_map_entry.3428190, ptr %0, i64 %2
-  %4 = icmp eq ptr %3, %1
+  %3 = getelementptr nusw nuw %class.default_map_entry.3612739, ptr %0, i64 %2
+  %4 = icmp eq ptr %1, %3
   %5 = select i1 %4, ptr %0, ptr %1
   ret ptr %5
 }
@@ -206,7 +214,18 @@ entry:
 define ptr @func0000000000000001(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %0, i64 %2
-  %4 = icmp eq ptr %3, %1
+  %4 = icmp eq ptr %1, %3
+  %5 = select i1 %4, ptr %0, ptr %1
+  ret ptr %5
+}
+
+; 1 occurrences:
+; cmake/optimized/frm_driver.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000041(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %0, i64 %2
+  %4 = icmp eq ptr %1, %3
   %5 = select i1 %4, ptr %0, ptr %1
   ret ptr %5
 }

@@ -1,10 +1,4 @@
-func0000000000000044:                   # @func0000000000000044
-	andi	a2, a2, 255
-	sltu	a1, a1, a2
-	sltiu	a0, a0, 19
-	and	a0, a0, a1
-	ret
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000141:                   # @func0000000000000141
 	andi	a2, a2, 255
 	slti	a1, a1, 2
 	xor	a0, a0, a2

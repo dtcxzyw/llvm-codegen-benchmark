@@ -64,7 +64,7 @@ func0000000000000004:                   # @func0000000000000004
 	retq
 .LCPI1_0:
 	.quad	2147483646                      # 0x7ffffffe
-func0000000000000154:                   # @func0000000000000154
+func00000000000002a4:                   # @func00000000000002a4
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rdx
 	movabsq	$8589934597, %rax               # imm = 0x200000005
@@ -128,7 +128,7 @@ func0000000000000154:                   # @func0000000000000154
 	retq
 .LCPI2_0:
 	.quad	2147483646                      # 0x7ffffffe
-func00000000000001d4:                   # @func00000000000001d4
+func00000000000003a4:                   # @func00000000000003a4
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rdx
 	movabsq	$8589934597, %rax               # imm = 0x200000005

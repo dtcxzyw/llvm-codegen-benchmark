@@ -1,5 +1,5 @@
 
-; 63 occurrences:
+; 64 occurrences:
 ; faiss/optimized/pq4_fast_scan.cpp.ll
 ; git/optimized/config.ll
 ; git/optimized/merge-ort.ll
@@ -22,6 +22,7 @@
 ; llvm/optimized/CXXInheritance.cpp.ll
 ; llvm/optimized/ComputeDependence.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
+; llvm/optimized/DataFlowSanitizer.cpp.ll
 ; llvm/optimized/DeclCXX.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/ExtractAPIConsumer.cpp.ll
@@ -33,7 +34,7 @@
 ; llvm/optimized/LegalizeTypes.cpp.ll
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; llvm/optimized/MemorySanitizer.cpp.ll
 ; llvm/optimized/RefCntblBaseVirtualDtorChecker.cpp.ll
 ; llvm/optimized/SemaAccess.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
@@ -45,13 +46,13 @@
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; lua/optimized/lgc.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
 ; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; oiio/optimized/bmpinput.cpp.ll
 ; php/optimized/zend_jit.ll
 ; qemu/optimized/hw_gpio_sifive_gpio.c.ll
 ; recastnavigation/optimized/CrowdTool.cpp.ll
 ; spike/optimized/csrs.ll
-; stockfish/optimized/tbprobe.ll
 ; wireshark/optimized/g711.c.ll
 ; wireshark/optimized/msg_dlmap.c.ll
 ; wireshark/optimized/msg_ulmap.c.ll

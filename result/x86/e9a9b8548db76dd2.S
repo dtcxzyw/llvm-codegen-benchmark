@@ -13,6 +13,14 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	$16777216, %esi                 # imm = 0x1000000
 	cmovbl	%edi, %eax
 	retq
+func0000000000000014:                   # @func0000000000000014
+	testb	$1, %dl
+	movl	$125, %ecx
+	movl	$860, %eax                      # imm = 0x35C
+	cmovnel	%ecx, %eax
+	cmpl	$10, %esi
+	cmovbl	%edi, %eax
+	retq
 func000000000000000a:                   # @func000000000000000a
 	andl	$1, %edx
 	shll	$7, %edx
@@ -26,7 +34,7 @@ func000000000000000c:                   # @func000000000000000c
 	cmpl	$4, %esi
 	cmovnel	%edi, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	movl	%edx, %eax
 	andl	$1, %eax
 	shll	$4, %eax

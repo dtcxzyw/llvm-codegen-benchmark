@@ -6,7 +6,7 @@
 ; opencv/optimized/opencv-caffe.pb.cc.ll
 ; qemu/optimized/hw_timer_sifive_pwm.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i32 %1, i32 %2) #0 {
+define i64 @func0000000000000021(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 12288
   %4 = icmp eq i32 %3, 0

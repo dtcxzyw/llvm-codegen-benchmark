@@ -1,10 +1,11 @@
 
-; 83 occurrences:
+; 84 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/attribute_name.ll
 ; cpython/optimized/gcmodule.ll
 ; folly/optimized/ExecutorWithPriority.cpp.ll
 ; jemalloc/optimized/emap.ll
@@ -88,11 +89,11 @@ define i64 @func0000000000000000(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, 3
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
-; 343 occurrences:
+; 356 occurrences:
 ; abc/optimized/abcStrash.c.ll
 ; abc/optimized/cuddBddAbs.c.ll
 ; abc/optimized/cuddBddCorr.c.ll
@@ -108,6 +109,7 @@ entry:
 ; abc/optimized/ivyHaig.c.ll
 ; abc/optimized/lpkMap.c.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/attribute_name.ll
 ; clamav/optimized/yara_grammar.c.ll
 ; cmake/optimized/archive_rb.c.ll
 ; cpython/optimized/_elementtree.ll
@@ -126,7 +128,6 @@ entry:
 ; jemalloc/optimized/prof_data.ll
 ; jemalloc/optimized/prof_data.pic.ll
 ; jemalloc/optimized/prof_data.sym.ll
-; linux/optimized/hid-cypress.ll
 ; linux/optimized/keyring.ll
 ; linux/optimized/maple_tree.ll
 ; llvm/optimized/APValue.cpp.ll
@@ -353,8 +354,8 @@ entry:
 ; llvm/optimized/WholeProgramDevirt.cpp.ll
 ; llvm/optimized/X86AsmPrinter.cpp.ll
 ; llvm/optimized/X86MCInstLower.cpp.ll
-; luajit/optimized/lj_udata.ll
-; luajit/optimized/lj_udata_dyn.ll
+; lvgl/optimized/lv_obj_style.ll
+; lvgl/optimized/lv_span.ll
 ; openjdk/optimized/compile.ll
 ; openjdk/optimized/dictionary.ll
 ; openjdk/optimized/finalizerService.ll
@@ -398,7 +399,6 @@ entry:
 ; openmpi/optimized/osc_rdma_component.ll
 ; openmpi/optimized/osc_rdma_peer.ll
 ; openmpi/optimized/pml_cm.ll
-; openmpi/optimized/pml_monitoring_isend.ll
 ; openmpi/optimized/pml_monitoring_start.ll
 ; openmpi/optimized/pml_ob1_comm.ll
 ; openmpi/optimized/pml_ob1_isend.ll
@@ -429,13 +429,27 @@ entry:
 ; rust-analyzer-rs/optimized/2pjlntmpzwg88apl.ll
 ; rustfmt-rs/optimized/3n0n7c4xrusd0kzl.ll
 ; rustfmt-rs/optimized/llbxf4pclolbp5s.ll
-; stockfish/optimized/tbprobe.ll
 ; syn/optimized/2khi0xu1ufmhwoo.ll
 ; verilator/optimized/V3ParseGrammar.cpp.ll
 ; wasmtime-rs/optimized/2dcgoeji2y2j2nl0.ll
 ; wasmtime-rs/optimized/5dheicv8h8x61a9w.ll
 ; z3/optimized/dl_compiler.cpp.ll
 ; z3/optimized/pb2bv_tactic.cpp.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/1mwyngh2duuoqbqyg0d7k37yf.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/2ehxywt5i46yjybqa8jmzydsx.ll
+; zed-rs/optimized/3ovedgaw1yidfseciw93ubpv7.ll
+; zed-rs/optimized/49ldufv0nkpmlikvem3q45q0g.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
+; zed-rs/optimized/5p9dc47ccf9r9dua6dccyemun.ll
+; zed-rs/optimized/5u1fvsvawpjspuq123qb03vz8.ll
+; zed-rs/optimized/616rp2zngqhnd0pszesmvl987.ll
+; zed-rs/optimized/69ryzzuwe6uhdzky6991droy3.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7for60ncc55q4u0jy3fqr6omg.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/cp92gkg5707l1e819dflws6md.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, ptr %1) #0 {
 entry:

@@ -31,6 +31,24 @@ entry:
   ret i64 %5
 }
 
+; 7 occurrences:
+; boost/optimized/benchmark_fstream.ll
+; boost/optimized/test_filebuf.ll
+; boost/optimized/test_fstream.ll
+; boost/optimized/test_fstream_special.ll
+; boost/optimized/test_ifstream.ll
+; boost/optimized/test_ofstream.ll
+; boost/optimized/test_stackstring.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(i64 %0, ptr %1) #0 {
+entry:
+  %2 = ptrtoint ptr %1 to i64
+  %3 = sub i64 %0, %2
+  %4 = shl i64 %3, 2
+  %5 = add i64 %4, 4
+  ret i64 %5
+}
+
 ; 1 occurrences:
 ; linux/optimized/lzo1x_compress.ll
 ; Function Attrs: nounwind
@@ -38,7 +56,7 @@ define i64 @func0000000000000005(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = xor i64 %2, -1
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = shl nsw i64 %4, 2
   ret i64 %5
 }

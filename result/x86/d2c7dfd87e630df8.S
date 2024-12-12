@@ -1,9 +1,9 @@
-func000000000000015a:                   # @func000000000000015a
+func00000000000002aa:                   # @func00000000000002aa
 	subq	%rsi, %rdi
 	cmpq	$17, %rdi
 	setge	%al
 	retq
-func00000000000003da:                   # @func00000000000003da
+func00000000000007aa:                   # @func00000000000007aa
 	subq	%rsi, %rdi
 	cmpq	$17, %rdi
 	setge	%al
@@ -15,13 +15,13 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	$512, %rdi                      # imm = 0x200
 	sete	%al
 	retq
-func0000000000000158:                   # @func0000000000000158
+func00000000000002a8:                   # @func00000000000002a8
 	movq	%rdi, %rax
 	subq	%rsi, %rax
 	shrq	$61, %rax
 	andl	$1, %eax
 	retq
-func000000000000028a:                   # @func000000000000028a
+func000000000000050a:                   # @func000000000000050a
 	cmpl	%esi, %edi
 	setns	%al
 	retq

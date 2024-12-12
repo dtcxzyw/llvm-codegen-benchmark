@@ -19,11 +19,11 @@
 ; openusd/optimized/openexr-c.c.ll
 ; xgboost/optimized/multiclass_metric.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, float %1) #0 {
+define ptr @func0000000000000007(ptr %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw float, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw float, ptr %0, i64 %3
   ret ptr %4
 }
 

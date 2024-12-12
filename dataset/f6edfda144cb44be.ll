@@ -16,17 +16,6 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add i64 %1, -1
-  %3 = lshr i64 %2, %0
-  %4 = add nsw i64 %3, -1
-  ret i64 %4
-}
-
 ; 2 occurrences:
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll

@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 11 occurrences:
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; hyperscan/optimized/rose_build_lookaround.cpp.ll
@@ -9,11 +9,13 @@
 ; postgres/optimized/blkreftable_shlib.ll
 ; postgres/optimized/blkreftable_srv.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000004(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl nuw i16 1, %1
-  %3 = or i16 %2, %0
+  %3 = or i16 %0, %2
   ret i16 %3
 }
 
@@ -23,7 +25,7 @@ entry:
 define i16 @func0000000000000006(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl nuw nsw i16 1, %1
-  %3 = or i16 %2, %0
+  %3 = or i16 %0, %2
   ret i16 %3
 }
 

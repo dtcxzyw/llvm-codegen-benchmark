@@ -18,6 +18,16 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	%rdx, %rsi
 	cmovbl	%edi, %eax
 	retq
+func0000000000000014:                   # @func0000000000000014
+	xorl	%eax, %eax
+	cmpq	%rdx, %rsi
+	cmovbl	%edi, %eax
+	retq
+func0000000000000018:                   # @func0000000000000018
+	cmpq	%rdx, %rsi
+	movl	$1024, %eax                     # imm = 0x400
+	cmoval	%edi, %eax
+	retq
 func0000000000000006:                   # @func0000000000000006
 	cmpq	%rdx, %rsi
 	movl	$3, %eax

@@ -3,7 +3,7 @@
 ; rocksdb/optimized/internal_stats.cc.ll
 ; yosys/optimized/qwp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000114(i1 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = trunc i64 %2 to i32
@@ -18,12 +18,12 @@ entry:
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; llvm/optimized/LiteralSupport.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000118(i1 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 2
   %3 = trunc i64 %2 to i32
   %4 = icmp ne i32 %3, 2
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -41,7 +41,7 @@ entry:
 ; opencv/optimized/tree.cpp.ll
 ; yosys/optimized/cxxrtl_backend.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i1 %0, i64 %1) #0 {
+define i1 @func000000000000010c(i1 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = trunc i64 %2 to i32
@@ -50,20 +50,21 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
+; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/program.cc.ll
 ; llvm/optimized/CGExprCXX.cpp.ll
 ; opencv/optimized/ar_hmdb_benchmark.cpp.ll
 ; yosys/optimized/nlutmap.ll
 ; yosys/optimized/qwp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000102(i1 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = trunc i64 %2 to i32
   %4 = icmp eq i32 %3, 0
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -96,7 +97,7 @@ entry:
   %2 = lshr i64 %1, 2
   %3 = trunc i64 %2 to i32
   %4 = icmp eq i32 %3, 31
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -108,7 +109,7 @@ entry:
   %2 = lshr i64 %1, 3
   %3 = trunc i64 %2 to i32
   %4 = icmp ne i32 %3, 8
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -138,7 +139,7 @@ entry:
   %2 = lshr i64 %1, 2
   %3 = trunc i64 %2 to i32
   %4 = icmp slt i32 %3, 1
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

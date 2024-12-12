@@ -18,7 +18,7 @@ func000000000000003c:                   # @func000000000000003c
 	shll	$3, %esi
 	shlxl	%esi, %edi, %eax
 	retq
-func000000000000000c:                   # @func000000000000000c
+func000000000000002c:                   # @func000000000000002c
 	shll	$3, %esi
 	shlxl	%esi, %edi, %eax
 	retq

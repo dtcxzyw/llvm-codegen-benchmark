@@ -7,7 +7,7 @@
 ; opencc/optimized/Config.cpp.ll
 ; openusd/optimized/json.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i16 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 13, %2
   %4 = icmp eq i16 %1, 0
@@ -18,7 +18,7 @@ entry:
 ; 1 occurrences:
 ; lua/optimized/ldo.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i16 %1, i32 %2) #0 {
+define i32 @func0000000000000061(i32 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 -3, %2
   %4 = icmp eq i16 %1, -2

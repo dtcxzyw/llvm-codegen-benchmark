@@ -6,7 +6,7 @@ define i1 @func0000000000000002(i1 %0, i32 %1) #0 {
 entry:
   %2 = bitcast i32 %1 to float
   %3 = fcmp olt float %2, 0.000000e+00
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
@@ -29,7 +29,7 @@ define i1 @func0000000000000008(i1 %0, i32 %1) #0 {
 entry:
   %2 = bitcast i32 %1 to float
   %3 = fcmp oeq float %2, 1.270000e+02
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
@@ -40,7 +40,7 @@ define i1 @func000000000000000a(i1 %0, i32 %1) #0 {
 entry:
   %2 = bitcast i32 %1 to float
   %3 = fcmp ole float %2, 1.000000e+00
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 

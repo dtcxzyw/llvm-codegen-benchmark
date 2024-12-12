@@ -1,9 +1,6 @@
 
-; 35 occurrences:
+; 32 occurrences:
 ; cvc5/optimized/Solver.cc.ll
-; freetype/optimized/cff.c.ll
-; freetype/optimized/type1.c.ll
-; freetype/optimized/type1cid.c.ll
 ; lief/optimized/BinaryParser.cpp.ll
 ; lief/optimized/BinaryStream.cpp.ll
 ; lief/optimized/CoreFile.cpp.ll

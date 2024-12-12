@@ -55,7 +55,7 @@ entry:
   %3 = or disjoint i8 %1, %2
   %4 = and i8 %3, -7
   %.masked = and i8 %0, -5
-  %5 = or i8 %4, %.masked
+  %5 = or i8 %.masked, %4
   ret i8 %5
 }
 
@@ -67,7 +67,7 @@ entry:
   %3 = or i8 %1, %2
   %4 = and i8 %3, 64
   %.masked = and i8 %0, 127
-  %5 = or i8 %4, %.masked
+  %5 = or i8 %.masked, %4
   ret i8 %5
 }
 
@@ -77,7 +77,7 @@ entry:
 define i8 @func0000000000000000(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = or i8 %1, %2
-  %4 = or i8 %3, %0
+  %4 = or i8 %0, %3
   %5 = and i8 %4, 127
   ret i8 %5
 }

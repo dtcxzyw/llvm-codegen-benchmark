@@ -29,7 +29,7 @@ func0000000000000001:                   # @func0000000000000001
 	vfsub.vv	v16, v16, v24
 	fmv.d.x	fa5, zero
 	vfmul.vf	v16, v16, fa5
-	vfadd.vv	v8, v16, v8
+	vfadd.vv	v8, v8, v16
 	vmfne.vv	v0, v8, v8
 	ret
 func0000000000000007:                   # @func0000000000000007

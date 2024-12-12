@@ -13,8 +13,7 @@ entry:
   ret i64 %6
 }
 
-; 5 occurrences:
-; llvm/optimized/CGStmt.cpp.ll
+; 4 occurrences:
 ; php/optimized/phar.ll
 ; wireshark/optimized/catapult_dct2000.c.ll
 ; wireshark/optimized/log3gpp.c.ll

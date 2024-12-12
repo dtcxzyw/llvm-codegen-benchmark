@@ -1,8 +1,7 @@
 
-; 29 occurrences:
+; 28 occurrences:
 ; clamav/optimized/bytecode_vm.c.ll
 ; gromacs/optimized/checkpoint.cpp.ll
-; gromacs/optimized/xdrd.cpp.ll
 ; icu/optimized/ucurr.ll
 ; libuv/optimized/linux.c.ll
 ; linux/optimized/memblock.ll

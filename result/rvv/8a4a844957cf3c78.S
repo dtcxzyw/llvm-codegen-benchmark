@@ -23,7 +23,7 @@ func0000000000000004:                   # @func0000000000000004
 	vadd.vx	v10, v8, a0, v0.t
 	vmv.v.v	v8, v10
 	ret
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	lui	a0, 1047844
 	addi	a1, a0, -1728
 	vsetivli	zero, 8, e32, m2, ta, mu

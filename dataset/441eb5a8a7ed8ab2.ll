@@ -2,30 +2,25 @@
 ; 1 occurrences:
 ; ruby/optimized/io.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000118(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000218(i32 %0, i64 %1) #0 {
 entry:
   %2 = zext nneg i32 %0 to i64
-  %3 = icmp sgt i64 %2, %1
+  %3 = icmp slt i64 %1, %2
   %4 = trunc i64 %1 to i32
   %5 = sub i32 %0, %4
   %6 = select i1 %3, i32 %5, i32 0
   ret i32 %6
 }
 
-; 8 occurrences:
+; 3 occurrences:
 ; abc/optimized/gzlib.c.ll
 ; cmake/optimized/gzlib.c.ll
-; cmake/optimized/lzma_decoder.c.ll
-; libquic/optimized/gzlib.c.ll
-; miniaudio/optimized/unity.c.ll
-; raylib/optimized/raudio.c.ll
 ; wireshark/optimized/file_wrappers.c.ll
-; zlib/optimized/gzlib.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000090(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000150(i32 %0, i64 %1) #0 {
 entry:
   %2 = zext i32 %0 to i64
-  %3 = icmp ugt i64 %2, %1
+  %3 = icmp samesign ult i64 %1, %2
   %4 = trunc nuw i64 %1 to i32
   %5 = sub i32 %0, %4
   %6 = select i1 %3, i32 %5, i32 0
@@ -42,7 +37,7 @@ entry:
 define i32 @func0000000000000018(i32 %0, i64 %1) #0 {
 entry:
   %2 = zext i32 %0 to i64
-  %3 = icmp sgt i64 %2, %1
+  %3 = icmp slt i64 %1, %2
   %4 = trunc i64 %1 to i32
   %5 = sub i32 %0, %4
   %6 = select i1 %3, i32 %5, i32 0
@@ -55,8 +50,23 @@ entry:
 define i32 @func0000000000000010(i32 %0, i64 %1) #0 {
 entry:
   %2 = zext i32 %0 to i64
-  %3 = icmp ugt i64 %2, %1
+  %3 = icmp ult i64 %1, %2
   %4 = trunc i64 %1 to i32
+  %5 = sub i32 %0, %4
+  %6 = select i1 %3, i32 %5, i32 0
+  ret i32 %6
+}
+
+; 3 occurrences:
+; cmake/optimized/lzma_decoder.c.ll
+; miniaudio/optimized/unity.c.ll
+; raylib/optimized/raudio.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000110(i32 %0, i64 %1) #0 {
+entry:
+  %2 = zext i32 %0 to i64
+  %3 = icmp ult i64 %1, %2
+  %4 = trunc nuw i64 %1 to i32
   %5 = sub i32 %0, %4
   %6 = select i1 %3, i32 %5, i32 0
   ret i32 %6

@@ -1,12 +1,10 @@
 
-; 16 occurrences:
+; 14 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/aigMan.c.ll
 ; abc/optimized/aigPack.c.ll
 ; abc/optimized/casDec.c.ll
 ; abc/optimized/cgtCore.c.ll
-; abc/optimized/cswMan.c.ll
-; abc/optimized/dchMan.c.ll
 ; abc/optimized/giaIf.c.ll
 ; abc/optimized/giaMan.c.ll
 ; abc/optimized/ifMan.c.ll

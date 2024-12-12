@@ -90,7 +90,7 @@ entry:
   ret i32 %4
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; assimp/optimized/zip.c.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; clamav/optimized/explode.c.ll
@@ -100,6 +100,7 @@ entry:
 ; hdf5/optimized/H5Zscaleoffset.c.ll
 ; linux/optimized/synaptics.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
+; lvgl/optimized/lv_canvas.ll
 ; miniaudio/optimized/unity.c.ll
 ; qemu/optimized/ui_vnc.c.ll
 ; raylib/optimized/raudio.c.ll

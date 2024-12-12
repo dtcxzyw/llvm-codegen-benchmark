@@ -30,7 +30,7 @@
 ; llvm/optimized/TwoAddressInstructionPass.cpp.ll
 ; llvm/optimized/X86SpeculativeLoadHardening.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000104(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -4
   %3 = icmp ult i32 %2, %0
@@ -42,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/AArch64Disassembler.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000181(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 31
   %3 = icmp eq i32 %2, %0
@@ -54,7 +54,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/apic.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i32 %1) #0 {
+define i1 @func000000000000018c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 16711679
   %3 = icmp ne i32 %2, %0
@@ -64,33 +64,9 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/ehci-pci.ll
-; Function Attrs: nounwind
-define i1 @func000000000000008c(i32 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 15
-  %3 = icmp ugt i32 %2, %0
-  %4 = icmp ne i32 %0, 0
-  %5 = and i1 %4, %3
-  ret i1 %5
-}
-
-; 1 occurrences:
-; opencv/optimized/arithm.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000c4(i32 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 7
-  %3 = icmp ne i32 %2, %0
-  %4 = icmp ult i32 %0, 4
-  %5 = and i1 %4, %3
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cb(i32 %0, i32 %1) #0 {
+define i1 @func000000000000018b(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1048575
   %3 = icmp sge i32 %2, %0

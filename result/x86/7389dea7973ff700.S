@@ -8,7 +8,7 @@ func0000000000000001:                   # @func0000000000000001
 	testw	%di, %di
 	cmovel	%ecx, %eax
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	movl	%edx, %ecx
 	orl	$1073741824, %ecx               # imm = 0x40000000
 	testb	$1, %sil
@@ -18,7 +18,7 @@ func0000000000000031:                   # @func0000000000000031
 	testw	%di, %di
 	cmovel	%ecx, %eax
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	movl	%edx, %ecx
 	orl	$4, %ecx
 	testb	$1, %sil

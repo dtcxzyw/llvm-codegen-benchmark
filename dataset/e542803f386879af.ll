@@ -38,7 +38,7 @@ entry:
   ret double %3
 }
 
-; 22 occurrences:
+; 21 occurrences:
 ; hwloc/optimized/lstopo-lstopo-tikz.ll
 ; hwloc/optimized/lstopo_no_graphics-lstopo-tikz.ll
 ; oiio/optimized/imagebuf.cpp.ll
@@ -59,7 +59,6 @@ entry:
 ; wireshark/optimized/packet-s1ap.c.ll
 ; wireshark/optimized/packet-ulp.c.ll
 ; wireshark/optimized/packet-umts_fp.c.ll
-; wireshark/optimized/packet-x2ap.c.ll
 ; wireshark/optimized/packet-xnap.c.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(i32 %0) #0 {

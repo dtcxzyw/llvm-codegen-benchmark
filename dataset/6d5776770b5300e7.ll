@@ -1,5 +1,5 @@
 
-; 30 occurrences:
+; 29 occurrences:
 ; arrow/optimized/string-to-double.cc.ll
 ; cpython/optimized/obmalloc.ll
 ; double_conversion/optimized/string-to-double.cc.ll
@@ -24,7 +24,6 @@
 ; softposit-rs/optimized/4kf6wfleft5henpt.ll
 ; softposit-rs/optimized/coljvwkn4d5o904.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
-; spike/optimized/i64_to_f32.ll
 ; spike/optimized/s_mulAddF16.ll
 ; spike/optimized/s_mulAddF32.ll
 ; spike/optimized/s_mulAddF64.ll

@@ -1,11 +1,9 @@
 
-; 14 occurrences:
-; cvc5/optimized/core_solver.cpp.ll
+; 12 occurrences:
+; boost/optimized/matches_relation_factory.ll
 ; cvc5/optimized/sequences_rewriter.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
-; eastl/optimized/BenchmarkSort.cpp.ll
 ; eastl/optimized/BenchmarkTupleVector.cpp.ll
-; eastl/optimized/TestAlgorithm.cpp.ll
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
 ; eastl/optimized/TestTupleVector.cpp.ll
 ; folly/optimized/TDigest.cpp.ll
@@ -44,13 +42,14 @@ entry:
   ret i64 %4
 }
 
-; 33 occurrences:
+; 34 occurrences:
+; eastl/optimized/BenchmarkSort.cpp.ll
+; eastl/optimized/TestAlgorithm.cpp.ll
 ; llvm/optimized/CoverageMapping.cpp.ll
 ; llvm/optimized/GSIStreamBuilder.cpp.ll
 ; llvm/optimized/InstructionCombining.cpp.ll
 ; llvm/optimized/ValueEnumerator.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
-; proxygen/optimized/QPACKHeaderTable.cpp.ll
 ; quantlib/optimized/fdm2dblackscholesop.ll
 ; quantlib/optimized/fdmbatesop.ll
 ; quantlib/optimized/fdmblackscholesfwdop.ll

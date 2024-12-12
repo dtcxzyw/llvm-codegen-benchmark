@@ -70,7 +70,7 @@ entry:
   ret i1 %3
 }
 
-; 107 occurrences:
+; 104 occurrences:
 ; abc/optimized/acecRe.c.ll
 ; abc/optimized/cbaReadVer.c.ll
 ; abc/optimized/giaBalAig.c.ll
@@ -124,12 +124,10 @@ entry:
 ; git/optimized/transport.ll
 ; git/optimized/userdiff.ll
 ; git/optimized/worktree.ll
-; gromacs/optimized/dlasd0.cpp.ll
 ; gromacs/optimized/dlasda.cpp.ll
 ; gromacs/optimized/domdec_setup.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; gromacs/optimized/pme_error.cpp.ll
-; gromacs/optimized/slasd0.cpp.ll
 ; gromacs/optimized/slasda.cpp.ll
 ; hermes/optimized/dtoa.c.ll
 ; icu/optimized/formattedval_iterimpl.ll
@@ -138,7 +136,6 @@ entry:
 ; libquic/optimized/a_object.c.ll
 ; libquic/optimized/dtoa.cc.ll
 ; lightgbm/optimized/bin.cpp.ll
-; linux/optimized/input-mt.ll
 ; linux/optimized/intel_dp.ll
 ; linux/optimized/intel_hdmi.ll
 ; llvm/optimized/X86InterleavedAccess.cpp.ll
@@ -313,13 +310,12 @@ entry:
   ret i1 %3
 }
 
-; 6 occurrences:
-; clamav/optimized/pe_icons.c.ll
+; 5 occurrences:
 ; hwloc/optimized/bitmap.ll
 ; linux/optimized/intel_guc_submission.ll
+; postgres/optimized/rangetypes_gist.ll
 ; qemu/optimized/block_vvfat.c.ll
 ; slurm/optimized/backfill.ll
-; wireshark/optimized/packet-wassp.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:

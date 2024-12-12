@@ -12,10 +12,9 @@ entry:
   ret i32 %6
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; abc/optimized/abcDress2.c.ll
 ; abc/optimized/giaResub.c.ll
-; linux/optimized/hdac_regmap.ll
 ; linux/optimized/intel_dpll.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/AArch64ExpandImm.cpp.ll
@@ -39,7 +38,7 @@ entry:
   ret i32 %6
 }
 
-; 110 occurrences:
+; 118 occurrences:
 ; abc/optimized/giaGlitch.c.ll
 ; clamav/optimized/Bra.c.ll
 ; clamav/optimized/chmd.c.ll
@@ -56,7 +55,15 @@ entry:
 ; glslang/optimized/ParseHelper.cpp.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; hdf5/optimized/H5Zfletcher32.c.ll
+; hermes/optimized/AST2JS.cpp.ll
+; hermes/optimized/ConsecutiveStringStorage.cpp.ll
+; hermes/optimized/HBC.cpp.ll
+; hermes/optimized/JSLexer.cpp.ll
+; hermes/optimized/JSONEmitter.cpp.ll
+; hermes/optimized/RegexSerialization.cpp.ll
+; hermes/optimized/Runtime.cpp.ll
+; hermes/optimized/SourceErrorManager.cpp.ll
+; hermes/optimized/UTF8.cpp.ll
 ; icu/optimized/edits.ll
 ; icu/optimized/normalizer2impl.ll
 ; icu/optimized/utf8collationiterator.ll
@@ -136,7 +143,6 @@ entry:
 ; sentencepiece/optimized/util.cc.ll
 ; sqlite/optimized/sqlite3.ll
 ; vcpkg/optimized/unicode.cpp.ll
-; wireshark/optimized/mpeg-audio.c.ll
 ; wireshark/optimized/packet-dhcp.c.ll
 ; wireshark/optimized/packet-dmp.c.ll
 ; wireshark/optimized/packet-gsm_a_rr.c.ll
@@ -144,6 +150,7 @@ entry:
 ; wireshark/optimized/packet-q931.c.ll
 ; wireshark/optimized/packet-q933.c.ll
 ; wireshark/optimized/packet-rpc.c.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; zstd/optimized/zstd_v03.c.ll
 ; zstd/optimized/zstd_v04.c.ll
@@ -172,7 +179,7 @@ entry:
   ret i32 %6
 }
 
-; 87 occurrences:
+; 85 occurrences:
 ; abc/optimized/cutMerge.c.ll
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/extraUtilMaj.c.ll
@@ -199,7 +206,6 @@ entry:
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; meshlab/optimized/ml_rendering_actions.cpp.ll
 ; meshlab/optimized/paintbox.cpp.ll
@@ -209,7 +215,6 @@ entry:
 ; minetest/optimized/CB3DMeshFileLoader.cpp.ll
 ; minetest/optimized/CGUISkin.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/game.cpp.ll
 ; minetest/optimized/guiButton.cpp.ll
 ; minetest/optimized/guiSkin.cpp.ll
@@ -252,7 +257,6 @@ entry:
 ; stb/optimized/stb_vorbis.c.ll
 ; wireshark/optimized/addr_resolv.c.ll
 ; wireshark/optimized/busmaster.c.ll
-; wireshark/optimized/file-rtpdump.c.ll
 ; wireshark/optimized/packet-fpp.c.ll
 ; wireshark/optimized/packet-ftp.c.ll
 ; wireshark/optimized/packet-nbap.c.ll
@@ -260,6 +264,7 @@ entry:
 ; wireshark/optimized/packet-stt.c.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; wireshark/optimized/text_import.c.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -270,13 +275,12 @@ entry:
   ret i32 %6
 }
 
-; 19 occurrences:
+; 20 occurrences:
 ; assimp/optimized/BlenderDNA.cpp.ll
 ; assimp/optimized/BlenderScene.cpp.ll
 ; assimp/optimized/PlyParser.cpp.ll
 ; bullet3/optimized/b3File.ll
 ; cmake/optimized/archive_write_set_format_zip.c.ll
-; hdf5/optimized/H5Zfletcher32.c.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; image-rs/optimized/fyek6fuqg0ocunt.ll
@@ -290,6 +294,8 @@ entry:
 ; nuklear/optimized/unity.c.ll
 ; stockfish/optimized/tbprobe.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
+; wasmtime-rs/optimized/4z02b278nscq7j1a.ll
+; zed-rs/optimized/73pi95mikt3cntupcr2d2nefv.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -315,7 +321,7 @@ entry:
   %3 = and i32 %2, 65280
   %4 = shl nuw nsw i32 %1, 16
   %5 = or disjoint i32 %4, %3
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   ret i32 %6
 }
 
@@ -376,7 +382,7 @@ entry:
   %3 = shl nsw i32 %2, 1
   %4 = and i32 %1, 1
   %5 = or disjoint i32 %4, %3
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   ret i32 %6
 }
 

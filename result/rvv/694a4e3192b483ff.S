@@ -8,7 +8,7 @@ func0000000000000004:                   # @func0000000000000004
 	slli	a0, a0, 11
 	vsetivli	zero, 16, e16, m2, ta, ma
 	vxor.vx	v10, v10, a0
-	vand.vv	v8, v10, v8
+	vand.vv	v8, v8, v10
 	bseti	a0, zero, 11
 	vmsltu.vx	v0, v8, a0
 	ret

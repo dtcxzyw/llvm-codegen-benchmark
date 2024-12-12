@@ -29,6 +29,13 @@ func0000000000000024:                   # @func0000000000000024
 	flt.s	a1, fa5, fa0
 	and	a0, a0, a1
 	ret
+func00000000000000a6:                   # @func00000000000000a6
+	fle.s	a0, fa0, fa1
+	lui	a1, 522240
+	fmv.w.x	fa5, a1
+	flt.s	a1, fa0, fa5
+	and	a0, a0, a1
+	ret
 func000000000000004d:                   # @func000000000000004d
 	flt.s	a0, fa1, fa0
 	fmv.w.x	fa5, zero

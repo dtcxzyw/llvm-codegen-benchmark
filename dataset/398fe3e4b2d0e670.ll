@@ -1,11 +1,10 @@
 
-; 14 occurrences:
+; 13 occurrences:
 ; cpython/optimized/dtoa.ll
 ; cpython/optimized/long.ll
 ; hermes/optimized/dtoa.c.ll
 ; jq/optimized/jv_dtoa.ll
 ; libquic/optimized/dtoa.cc.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
 ; meshlab/optimized/ml_default_decorators.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
 ; opencv/optimized/tf_importer.cpp.ll
@@ -15,10 +14,10 @@
 ; ruby/optimized/util.ll
 ; wolfssl/optimized/test.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0) #0 {
+define i32 @func0000000000000034(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -4
-  %2 = icmp ult i32 %0, 6
+  %2 = icmp samesign ult i32 %0, 6
   %3 = select i1 %2, i32 %0, i32 %1
   ret i32 %3
 }
@@ -38,7 +37,7 @@ entry:
 ; openssl/optimized/evp_pkey_dhkem_test-bin-evp_pkey_dhkem_test.ll
 ; zxing/optimized/ODDataBarExpandedBitDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0) #0 {
+define i32 @func0000000000000026(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -5
   %2 = icmp slt i32 %0, 5
@@ -46,20 +45,18 @@ entry:
   ret i32 %3
 }
 
-; 2 occurrences:
-; llvm/optimized/OSTargets.cpp.ll
+; 1 occurrences:
 ; openssl/optimized/stack_test-bin-stack_test.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0) #0 {
+define i32 @func0000000000000074(i32 %0) #0 {
 entry:
   %1 = icmp ugt i32 %0, 2
   %2 = zext i1 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   ret i32 %3
 }
 
-; 10 occurrences:
-; icu/optimized/ethpccal.ll
+; 9 occurrences:
 ; openjdk/optimized/g1ConcurrentMark.ll
 ; openjdk/optimized/g1FullGCMarker.ll
 ; openjdk/optimized/g1ParScanThreadState.ll
@@ -70,7 +67,7 @@ entry:
 ; openjdk/optimized/xHeapIterator.ll
 ; openjdk/optimized/zHeapIterator.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0) #0 {
+define i32 @func000000000000002a(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, 2147483647
   %2 = icmp sgt i32 %0, 0
@@ -78,8 +75,7 @@ entry:
   ret i32 %3
 }
 
-; 14 occurrences:
-; cpython/optimized/Hacl_Hash_SHA3.ll
+; 13 occurrences:
 ; hyperscan/optimized/limex_simd256.c.ll
 ; llvm/optimized/CodeGenRegisters.cpp.ll
 ; llvm/optimized/InjectedSourceStream.cpp.ll
@@ -103,9 +99,31 @@ entry:
 }
 
 ; 1 occurrences:
+; llvm/optimized/X86ISelLowering.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000024(i32 %0) #0 {
+entry:
+  %1 = add nsw i32 %0, -2
+  %2 = icmp ult i32 %0, 2
+  %3 = select i1 %2, i32 %0, i32 %1
+  ret i32 %3
+}
+
+; 1 occurrences:
+; llvm/optimized/OSTargets.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000064(i32 %0) #0 {
+entry:
+  %1 = add nuw nsw i32 %0, 246
+  %2 = icmp ult i32 %0, 10
+  %3 = select i1 %2, i32 %0, i32 %1
+  ret i32 %3
+}
+
+; 1 occurrences:
 ; wireshark/optimized/packet-scte35.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000026(i32 %0) #0 {
+define i32 @func0000000000000046(i32 %0) #0 {
 entry:
   %1 = add nuw i32 %0, 6
   %2 = icmp slt i32 %0, 1

@@ -18,6 +18,11 @@ func0000000000000041:                   # @func0000000000000041
 	notl	%esi
 	leal	(%rsi,%rdi), %eax
 	retq
+func0000000000000035:                   # @func0000000000000035
+	shrq	$46, %rsi
+	subl	%esi, %edi
+	leal	248(%rdi), %eax
+	retq
 func0000000000000020:                   # @func0000000000000020
 	shrq	$32, %rsi
 	subl	%esi, %edi

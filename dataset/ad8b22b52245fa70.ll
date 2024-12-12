@@ -12,7 +12,7 @@ entry:
   %3 = fcmp olt float %1, %2
   %4 = select i1 %3, float %1, float %2
   %5 = fptosi float %4 to i32
-  %6 = mul nsw i32 %5, %0
+  %6 = mul nsw i32 %0, %5
   ret i32 %6
 }
 

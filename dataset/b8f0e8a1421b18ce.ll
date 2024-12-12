@@ -1,5 +1,5 @@
 
-; 211 occurrences:
+; 210 occurrences:
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/abcNpnSave.c.ll
 ; abc/optimized/abcRec3.c.ll
@@ -28,10 +28,10 @@
 ; abc/optimized/kitTruth.c.ll
 ; abc/optimized/mpmTruth.c.ll
 ; assimp/optimized/DefaultLogger.cpp.ll
+; boost/optimized/ipc_reliable_message_queue.ll
 ; bullet3/optimized/b3VoronoiSimplexSolver.ll
 ; bullet3/optimized/btConvexHull.ll
 ; bullet3/optimized/btVoronoiSimplexSolver.ll
-; clamav/optimized/str.c.ll
 ; clamav/optimized/vba_extract.c.ll
 ; cpython/optimized/ceval.ll
 ; cpython/optimized/fileio.ll
@@ -89,9 +89,7 @@
 ; linux/optimized/intel_display_power.ll
 ; linux/optimized/intel_display_power_well.ll
 ; linux/optimized/intel_dsi_vbt.ll
-; linux/optimized/intel_engine_user.ll
 ; linux/optimized/intel_overlay.ll
-; linux/optimized/intel_rc6.ll
 ; linux/optimized/intel_sseu.ll
 ; linux/optimized/libata-sff.ll
 ; linux/optimized/netdev.ll
@@ -132,11 +130,11 @@
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
 ; luajit/optimized/minilua.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/shell.cpp.ll
 ; meshoptimizer/optimized/quantization.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/ieee_float.cpp.ll
 ; minetest/optimized/string.cpp.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
@@ -171,6 +169,7 @@
 ; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha256.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha1_hw.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha256_hw.ll
+; openusd/optimized/value.cpp.ll
 ; openvdb/optimized/Archive.cc.ll
 ; pbrt-v4/optimized/aggregates.cpp.ll
 ; pcg-cpp/optimized/make-partytrick.cpp.ll
@@ -219,14 +218,15 @@ entry:
   ret i32 %4
 }
 
-; 212 occurrences:
+; 209 occurrences:
 ; abc/optimized/abcTim.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/ivyHaig.c.ll
 ; abc/optimized/mioUtils.c.ll
 ; abc/optimized/saigSimMv.c.ll
-; arrow/optimized/float16.cc.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; cmake/optimized/gzlib.c.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
@@ -261,7 +261,6 @@ entry:
 ; imgui/optimized/imgui_demo.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libquic/optimized/file_posix.cc.ll
-; libquic/optimized/gzlib.c.ll
 ; libwebp/optimized/vp8_dec.c.ll
 ; linux/optimized/aspm.ll
 ; linux/optimized/buffered-io.ll
@@ -276,7 +275,6 @@ entry:
 ; linux/optimized/intel_dpll.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/intel_psr.ll
-; linux/optimized/mii.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/phy_device.ll
 ; linux/optimized/poll.ll
@@ -329,13 +327,11 @@ entry:
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshoptimizer/optimized/vertexfilter.cpp.ll
 ; minetest/optimized/map.cpp.ll
-; mitsuba3/optimized/x86func.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; ockam-rs/optimized/1znr2e86bp785yod.ll
 ; opencv/optimized/array.cpp.ll
 ; opencv/optimized/deriv.cpp.ll
 ; opencv/optimized/dxt.cpp.ll
-; opencv/optimized/filter.dispatch.cpp.ll
 ; opencv/optimized/grfmt_tiff.cpp.ll
 ; opencv/optimized/rmat.cpp.ll
 ; opencv/optimized/sumpixels.dispatch.cpp.ll
@@ -430,13 +426,13 @@ entry:
 ; z3/optimized/spacer_util.cpp.ll
 ; z3/optimized/symmetry_reduce_tactic.cpp.ll
 ; z3/optimized/th_rewriter.cpp.ll
-; zlib/optimized/gzlib.c.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 512, i32 %2
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 

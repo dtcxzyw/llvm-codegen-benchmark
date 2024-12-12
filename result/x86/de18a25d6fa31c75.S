@@ -1,8 +1,8 @@
 func0000000000000002:                   # @func0000000000000002
 	movl	%esi, %ecx
-	leaq	63(%rcx,%rdi), %rax
-	addq	%rdi, %rcx
-	cmovnsq	%rcx, %rax
+	leaq	63(%rdi,%rcx), %rax
+	addq	%rcx, %rdi
+	cmovnsq	%rdi, %rax
 	sarq	$6, %rax
 	retq
 func000000000000000a:                   # @func000000000000000a
@@ -17,9 +17,9 @@ func000000000000000a:                   # @func000000000000000a
 	retq
 func0000000000000000:                   # @func0000000000000000
 	movl	%esi, %ecx
-	leaq	63(%rcx,%rdi), %rax
-	addq	%rdi, %rcx
-	cmovnsq	%rcx, %rax
+	leaq	63(%rdi,%rcx), %rax
+	addq	%rcx, %rdi
+	cmovnsq	%rdi, %rax
 	sarq	$6, %rax
 	retq
 func0000000000000008:                   # @func0000000000000008

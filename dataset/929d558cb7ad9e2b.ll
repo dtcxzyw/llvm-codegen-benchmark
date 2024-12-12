@@ -19,14 +19,13 @@ define i32 @func000000000000000f(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 3
   %4 = and i32 %3, 64
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or disjoint i32 %5, 128
   %7 = select i1 %0, i32 %6, i32 %5
   ret i32 %7
 }
 
-; 7 occurrences:
-; linux/optimized/8250_dwlib.ll
+; 6 occurrences:
 ; linux/optimized/atkbd.ll
 ; linux/optimized/g4x_hdmi.ll
 ; linux/optimized/intel_cursor.ll
@@ -51,7 +50,7 @@ define i32 @func000000000000000c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 5
   %4 = and i32 %3, 256
-  %5 = or i32 %4, %1
+  %5 = or i32 %1, %4
   %6 = or i32 %5, 8
   %7 = select i1 %0, i32 %6, i32 %5
   ret i32 %7

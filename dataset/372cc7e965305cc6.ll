@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; minetest/optimized/localplayer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000302(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
   %4 = select i1 %0, i1 %3, i1 false
@@ -15,7 +15,7 @@ entry:
 ; icu/optimized/ucnv_lmb.ll
 ; linux/optimized/apic.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000102(i8 %0, i1 %1, i8 %2) #0 {
+define i1 @func0000000000000202(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ugt i8 %2, 14
   %4 = select i1 %1, i1 %3, i1 false
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/processor_perflib.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i8 %0, i1 %1, i8 %2) #0 {
+define i1 @func0000000000000102(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 10
   %4 = select i1 %1, i1 %3, i1 false

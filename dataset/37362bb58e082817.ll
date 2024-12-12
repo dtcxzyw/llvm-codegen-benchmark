@@ -40,7 +40,7 @@ define i1 @func000000000000000c(i1 %0, i32 %1) #0 {
 entry:
   %.mask = and i32 %1, 268435456
   %2 = icmp ne i32 %.mask, 0
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   ret i1 %3
 }
 
@@ -49,7 +49,7 @@ entry:
 ; spike/optimized/fdt.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i1 %0, i32 %1) #0 {
+define i1 @func000000000000008c(i1 %0, i32 %1) #0 {
 entry:
   %.mask = and i32 %1, 128
   %2 = icmp ne i32 %.mask, 0
@@ -75,7 +75,7 @@ define i1 @func0000000000000018(i1 %0, i32 %1) #0 {
 entry:
   %.mask = and i32 %1, 255
   %2 = icmp ne i32 %.mask, 73
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   ret i1 %3
 }
 

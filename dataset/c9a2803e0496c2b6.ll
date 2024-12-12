@@ -1,6 +1,8 @@
 
-; 63 occurrences:
+; 67 occurrences:
 ; assimp/optimized/IFCCurve.cpp.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; g2o/optimized/odometry_measurement.cpp.ll
 ; graphviz/optimized/osageinit.c.ll
 ; graphviz/optimized/spring_electrical.c.ll
@@ -13,6 +15,7 @@
 ; hermes/optimized/JSLexer.cpp.ll
 ; hermes/optimized/Operations.cpp.ll
 ; hermes/optimized/SynthTraceParser.cpp.ll
+; ipopt/optimized/IpFilterLSAcceptor.ll
 ; jq/optimized/jv_aux.ll
 ; meshlab/optimized/apss.cpp.ll
 ; meshlab/optimized/arap.cpp.ll
@@ -35,6 +38,7 @@
 ; postgres/optimized/vacuumlazy.ll
 ; proj/optimized/conversion.cpp.ll
 ; proj/optimized/geodesic.c.ll
+; proj/optimized/healpix.cpp.ll
 ; qemu/optimized/util_throttle.c.ll
 ; quantlib/optimized/basket.ll
 ; quantlib/optimized/fdm2dblackscholesop.ll
@@ -67,7 +71,7 @@
 define double @func0000000000000000(double %0, i1 %1, double %2) #0 {
 entry:
   %3 = select i1 %1, double %2, double 0.000000e+00
-  %4 = fadd double %3, %0
+  %4 = fadd double %0, %3
   ret double %4
 }
 

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; z3/optimized/sat_aig_cuts.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000044c(i32 %0, i64 %1) #0 {
+define i1 @func000000000000108c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp ne i32 %2, 1
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/sat_aig_cuts.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000004c4(i32 %0, i64 %1) #0 {
+define i1 @func0000000000001184(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp ne i32 %2, 1

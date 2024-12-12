@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; cpython/optimized/optimizer_analysis.ll
 ; icu/optimized/ushape.ll
 ; linux/optimized/net.ll
@@ -7,6 +7,7 @@
 ; llvm/optimized/ContinuationIndenter.cpp.ll
 ; llvm/optimized/ParseExprCXX.cpp.ll
 ; llvm/optimized/RewriteModernObjC.cpp.ll
+; meshlab/optimized/filter_sketchfab.cpp.ll
 ; verilator/optimized/V3Const__gen.cpp.ll
 ; wireshark/optimized/packet-arp.c.ll
 ; wireshark/optimized/packet-cigi.c.ll
@@ -16,7 +17,7 @@
 define i1 @func0000000000000002(i1 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 291
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -28,14 +29,13 @@ entry:
 define i1 @func0000000000000018(i1 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = icmp ne i16 %2, 0
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; llvm/optimized/LegalizeVectorOps.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i1 %1, i16 %2) #0 {

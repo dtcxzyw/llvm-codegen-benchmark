@@ -36,7 +36,7 @@
 ; minetest/optimized/modalMenu.cpp.ll
 ; minetest/optimized/static_text.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001ac(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000054c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = icmp sgt i32 %3, %0

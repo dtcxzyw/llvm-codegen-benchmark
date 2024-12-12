@@ -38,14 +38,24 @@ entry:
   ret i1 %7
 }
 
-; 7 occurrences:
+; 17 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; cmake/optimized/cmComputeLinkDepends.cxx.ll
 ; folly/optimized/Compression.cpp.ll
 ; folly/optimized/ElfCache.cpp.ll
 ; hyperscan/optimized/rose_build_lookaround.cpp.ll
 ; icu/optimized/ucnv.ll
 ; opencv/optimized/subgraphs.cpp.ll
-; php/optimized/pcre2_match.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, ptr %1, ptr %2) #0 {
 entry:

@@ -1,14 +1,12 @@
-func0000000000000311:                   # @func0000000000000311
-	seqz	a1, a1
-	addi	a1, a1, -1
-	negw	a0, a0
+func0000000000000621:                   # @func0000000000000621
+	sext.w	a0, a0
+	snez	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000051:                   # @func0000000000000051
-	snez	a1, a1
-	addi	a1, a1, -1
-	negw	a0, a0
+func00000000000000a1:                   # @func00000000000000a1
+	sext.w	a0, a0
+	seqz	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

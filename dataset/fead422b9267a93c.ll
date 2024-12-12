@@ -7,7 +7,7 @@
 define double @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = uitofp i64 %3 to double
   ret double %4
 }
@@ -19,7 +19,7 @@ entry:
 define double @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = uitofp i64 %3 to double
   ret double %4
 }

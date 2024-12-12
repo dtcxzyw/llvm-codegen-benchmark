@@ -20,13 +20,12 @@ entry:
   ret i8 %2
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; wireshark/optimized/packet-e212.c.ll
 ; wireshark/optimized/packet-gsm_a_dtap.c.ll
 ; wireshark/optimized/packet-mpeg-descriptor.c.ll
-; wireshark/optimized/packet-mpeg-sect.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i8 %0) #0 {
 entry:

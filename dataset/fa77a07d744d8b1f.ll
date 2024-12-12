@@ -23,16 +23,15 @@ entry:
   ret ptr %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; libwebp/optimized/webp_enc.c.ll
-; opencv/optimized/median_blur.dispatch.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = shl nsw i64 %2, 5
+  %3 = shl nsw i64 %2, 2
   %4 = inttoptr i64 %1 to ptr
   %5 = getelementptr nusw i8, ptr %4, i64 %3
-  %6 = getelementptr nusw i16, ptr %5, i64 %0
+  %6 = getelementptr nusw i8, ptr %5, i64 %0
   ret ptr %6
 }
 

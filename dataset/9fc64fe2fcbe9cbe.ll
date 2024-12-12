@@ -1,5 +1,6 @@
 
-; 23 occurrences:
+; 24 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; ncnn/optimized/convolution1d_x86.cpp.ll
@@ -29,7 +30,7 @@ entry:
   %2 = trunc nsw i32 %1 to i8
   %3 = sdiv i8 %2, 4
   %4 = sext i8 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 

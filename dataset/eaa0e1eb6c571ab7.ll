@@ -7,20 +7,18 @@
 define i1 @func0000000000000002(double %0, i64 %1) #0 {
 entry:
   %2 = sitofp i64 %1 to double
-  %3 = fmul double %2, %0
+  %3 = fmul double %0, %2
   %4 = fcmp olt double %3, 0.000000e+00
   ret i1 %4
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; oiio/optimized/tiffoutput.cpp.ll
-; openblas/optimized/dgemm_small_matrix_permit.c.ll
-; openblas/optimized/sgemm_small_matrix_permit.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(double %0, i64 %1) #0 {
 entry:
   %2 = sitofp i64 %1 to double
-  %3 = fmul double %2, %0
+  %3 = fmul double %0, %2
   %4 = fcmp ogt double %3, 5.000000e+00
   ret i1 %4
 }
@@ -32,7 +30,7 @@ entry:
 define i1 @func000000000000000c(double %0, i64 %1) #0 {
 entry:
   %2 = sitofp i64 %1 to double
-  %3 = fmul double %2, %0
+  %3 = fmul double %0, %2
   %4 = fcmp oge double %3, 2.000000e+00
   ret i1 %4
 }
@@ -43,7 +41,7 @@ entry:
 define i1 @func000000000000000e(double %0, i64 %1) #0 {
 entry:
   %2 = sitofp i64 %1 to double
-  %3 = fmul double %2, %0
+  %3 = fmul double %0, %2
   %4 = fcmp ord double %3, 0.000000e+00
   ret i1 %4
 }
@@ -54,7 +52,7 @@ entry:
 define i1 @func000000000000000a(double %0, i64 %1) #0 {
 entry:
   %2 = sitofp i64 %1 to double
-  %3 = fmul double %2, %0
+  %3 = fmul double %0, %2
   %4 = fcmp ole double %3, 9.216000e+03
   ret i1 %4
 }

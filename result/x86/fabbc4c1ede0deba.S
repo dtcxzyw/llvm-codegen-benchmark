@@ -10,11 +10,16 @@ func0000000000000000:                   # @func0000000000000000
 	retq
 func0000000000000001:                   # @func0000000000000001
 	movl	%esi, %eax
-	movl	%esi, %ecx
-	movl	$2147975281, %edx               # imm = 0x80078071
-	imulq	%rcx, %rdx
-	shrq	$47, %rdx
-	imull	$65521, %edx, %ecx              # imm = 0xFFF1
+	imulq	$138547333, %rax, %rcx          # imm = 0x8421085
+	shrq	$32, %rcx
+	movl	%esi, %eax
 	subl	%ecx, %eax
+	shrl	%eax
+	addl	%ecx, %eax
+	shrl	$4, %eax
+	movl	%eax, %ecx
+	shll	$5, %ecx
+	subl	%ecx, %eax
+	addl	%esi, %eax
 	orl	%edi, %eax
 	retq

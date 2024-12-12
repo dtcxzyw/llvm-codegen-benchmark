@@ -24,7 +24,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = shl i32 %2, 3
   %4 = xor i32 %3, -1
-  %5 = icmp ult i32 %4, %0
+  %5 = icmp ugt i32 %0, %4
   ret i1 %5
 }
 
@@ -36,12 +36,12 @@ entry:
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha1_hw.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha256_hw.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003c4(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000784(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nuw nsw i32 %2, 3
   %4 = xor i32 %3, -1
-  %5 = icmp ult i32 %4, %0
+  %5 = icmp ugt i32 %0, %4
   ret i1 %5
 }
 

@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 25 occurrences:
 ; faiss/optimized/IndexLattice.cpp.ll
 ; faiss/optimized/NNDescent.cpp.ll
 ; faiss/optimized/ScalarQuantizer.cpp.ll
@@ -17,7 +17,6 @@
 ; opencv/optimized/epnp.cpp.ll
 ; opencv/optimized/floodfill.cpp.ll
 ; opencv/optimized/svm.cpp.ll
-; openspiel/optimized/oware_board.cc.ll
 ; openusd/optimized/level.cpp.ll
 ; openusd/optimized/quadRefinement.cpp.ll
 ; openusd/optimized/refinerFactory.cpp.ll
@@ -27,12 +26,12 @@
 ; proj/optimized/grids.cpp.ll
 ; zxing/optimized/PDFModulusGF.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000c1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 3
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = icmp eq ptr %5, %0
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
@@ -62,12 +61,12 @@ entry:
 ; openjdk/optimized/mlib_c_ImageAffine_NN.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000c4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 2
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw i32, ptr %1, i64 %4
-  %6 = icmp ugt ptr %5, %0
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
@@ -75,24 +74,24 @@ entry:
 ; openjdk/optimized/mlib_ImageAffine_NN.ll
 ; openjdk/optimized/os.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000c8(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw i32, ptr %1, i64 %4
-  %6 = icmp ult ptr %5, %0
+  %6 = icmp ugt ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000044(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 2
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw i64, ptr %1, i64 %4
-  %6 = icmp ugt ptr %5, %0
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
@@ -101,12 +100,12 @@ entry:
 ; openusd/optimized/quadRefinement.cpp.ll
 ; openusd/optimized/triRefinement.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000041(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 1
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw i32, ptr %1, i64 %4
-  %6 = icmp eq ptr %5, %0
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 

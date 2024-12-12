@@ -15,7 +15,7 @@
 define i64 @func0000000000000001(i64 %0) #0 {
 entry:
   %1 = ashr i64 %0, 1
-  %2 = tail call i64 @llvm.abs.i64(i64 %1, i1 true)
+  %2 = tail call i64 @llvm.abs.i64(i64 range(i64 -4611686018427387904, 4611686018427387904) %1, i1 true)
   ret i64 %2
 }
 

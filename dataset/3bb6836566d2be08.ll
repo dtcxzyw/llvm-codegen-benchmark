@@ -1,5 +1,5 @@
 
-; 46 occurrences:
+; 47 occurrences:
 ; abc/optimized/giaEmbed.c.ll
 ; box2d/optimized/b2_pulley_joint.cpp.ll
 ; darktable/optimized/introspection_ashift.c.ll
@@ -46,6 +46,7 @@
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; pbrt-v4/optimized/mipmap.cpp.ll
 ; pbrt-v4/optimized/shapes.cpp.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i1 %0, float %1, float %2) #0 {
 entry:

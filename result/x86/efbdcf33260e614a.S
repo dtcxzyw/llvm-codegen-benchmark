@@ -1,8 +1,8 @@
-func000000000000008a:                   # @func000000000000008a
+func000000000000010a:                   # @func000000000000010a
 	subq	%rdi, %rdx
-	cmpq	%rdi, %rdx
-	setae	%cl
-	cmpq	%rsi, %rdx
-	seta	%al
+	cmpq	%rdx, %rdi
+	setbe	%cl
+	cmpq	%rdx, %rsi
+	setb	%al
 	orb	%cl, %al
 	retq

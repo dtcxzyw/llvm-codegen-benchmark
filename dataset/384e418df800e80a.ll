@@ -1,12 +1,15 @@
 
-; 29 occurrences:
+; 35 occurrences:
 ; clamav/optimized/xlm_extract.c.ll
 ; hdf5/optimized/H5Zscaleoffset.c.ll
 ; hermes/optimized/DataView.cpp.ll
 ; hermes/optimized/JSObject.cpp.ll
 ; hyperscan/optimized/mcsheng_compile.cpp.ll
+; icu/optimized/collationdatabuilder.ll
+; icu/optimized/dtptngen.ll
 ; icu/optimized/number_grouping.ll
 ; libjpeg-turbo/optimized/tjunittest.c.ll
+; libwebp/optimized/sharpyuv.c.ll
 ; linux/optimized/hda_codec.ll
 ; linux/optimized/printk.ll
 ; linux/optimized/tcp_ipv4.ll
@@ -18,11 +21,14 @@
 ; llvm/optimized/MachObjectWriter.cpp.ll
 ; llvm/optimized/WinCOFFObjectWriter.cpp.ll
 ; llvm/optimized/XCOFFObjectWriter.cpp.ll
+; lvgl/optimized/lv_draw_arc.ll
 ; minetest/optimized/clientiface.cpp.ll
 ; minetest/optimized/mg_decoration.cpp.ll
+; opencv/optimized/ts_func.cpp.ll
 ; openusd/optimized/warped_motion.c.ll
 ; proj/optimized/grids.cpp.ll
 ; qemu/optimized/dump_dump.c.ll
+; quickjs/optimized/quickjs.ll
 ; slurm/optimized/common_topo.ll
 ; slurm/optimized/job_test.ll
 ; slurm/optimized/xcpuinfo.ll

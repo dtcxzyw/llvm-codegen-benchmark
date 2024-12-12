@@ -3,7 +3,7 @@
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-shape-normalize.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i16 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i16 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7168
   %3 = icmp eq i32 %2, 0

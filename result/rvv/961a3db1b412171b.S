@@ -14,5 +14,5 @@ func0000000000000002:                   # @func0000000000000002
 	ret
 func0000000000000007:                   # @func0000000000000007
 	vsetivli	zero, 16, e32, m4, ta, ma
-	vmfne.vv	v0, v12, v8
+	vmfne.vv	v0, v8, v12
 	ret

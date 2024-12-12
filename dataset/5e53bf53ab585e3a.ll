@@ -1,5 +1,5 @@
 
-; 88 occurrences:
+; 87 occurrences:
 ; abc/optimized/extraUtilMemory.c.ll
 ; abc/optimized/mem.c.ll
 ; bullet3/optimized/b3BoundSearchCL.ll
@@ -79,7 +79,6 @@
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; bullet3/optimized/btSoftMultiBodyDynamicsWorld.ll
 ; bullet3/optimized/btSoftRigidDynamicsWorld.ll
-; bullet3/optimized/btSoftSoftCollisionAlgorithm.ll
 ; bullet3/optimized/btSphereBoxCollisionAlgorithm.ll
 ; bullet3/optimized/btSphereSphereCollisionAlgorithm.ll
 ; bullet3/optimized/btSphereTriangleCollisionAlgorithm.ll
@@ -89,7 +88,7 @@
 ; icu/optimized/ucharstriebuilder.ll
 ; nori/optimized/nanovg.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000045(i32 %0) #0 {
+define i64 @func0000000000000085(i32 %0) #0 {
 entry:
   %1 = shl nsw i32 %0, 1
   %2 = icmp eq i32 %0, 0
@@ -108,20 +107,6 @@ entry:
   %1 = shl i32 %0, 1
   %2 = icmp eq i32 %0, 0
   %3 = select i1 %2, i32 1, i32 %1
-  %4 = sext i32 %3 to i64
-  %5 = shl nsw i64 %4, 4
-  ret i64 %5
-}
-
-; 2 occurrences:
-; cmake/optimized/archive_read_support_format_iso9660.c.ll
-; redis/optimized/module.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000059(i32 %0) #0 {
-entry:
-  %1 = shl nsw i32 %0, 1
-  %2 = icmp slt i32 %0, 8
-  %3 = select i1 %2, i32 16, i32 %1
   %4 = sext i32 %3 to i64
   %5 = shl nsw i64 %4, 4
   ret i64 %5

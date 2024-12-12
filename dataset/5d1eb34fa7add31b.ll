@@ -109,7 +109,7 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001c(i32 %0, i8 %1) #0 {
+define i32 @func000000000000002c(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i32 %0, 0
   %3 = icmp ne i8 %1, 2
@@ -121,7 +121,7 @@ entry:
 ; 1 occurrences:
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000024(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i32 %0, 0
   %3 = icmp ult i8 %1, 4

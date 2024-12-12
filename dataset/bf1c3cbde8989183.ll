@@ -1,5 +1,5 @@
 
-; 305 occurrences:
+; 302 occurrences:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver3.c.ll
 ; abc/optimized/solver.c.ll
@@ -74,7 +74,6 @@
 ; llvm/optimized/LoadStoreOpt.cpp.ll
 ; llvm/optimized/LoopUnrollAndJamPass.cpp.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/ScaledNumber.cpp.ll
 ; llvm/optimized/X86SelectionDAGInfo.cpp.ll
@@ -100,8 +99,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -257,8 +254,6 @@
 ; qemu/optimized/block_vmdk.c.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; qemu/optimized/optimize.c.ll
-; qemu/optimized/source_s_approxRecip32_1.c.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; redis/optimized/fpconv_dtoa.ll
 ; redis/optimized/t_string.ll
@@ -287,9 +282,6 @@
 ; spike/optimized/pkbt16.ll
 ; spike/optimized/pktb16.ll
 ; spike/optimized/pktt16.ll
-; spike/optimized/s_approxRecip32_1.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
-; spike/optimized/s_mul64To128M.ll
 ; spike/optimized/ukmar64.ll
 ; spike/optimized/ukmsr64.ll
 ; spike/optimized/umar64.ll
@@ -305,21 +297,27 @@
 ; wireshark/optimized/rtp_audio_stream.cpp.ll
 ; xgboost/optimized/charconv.cc.ll
 ; z3/optimized/mpn.cpp.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/diggdkpukg0xn23g7ivuh3jfw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 7
-  %3 = mul nuw i64 %2, %0
+  %3 = mul nuw i64 %0, %2
   ret i64 %3
 }
 
-; 157 occurrences:
+; 155 occurrences:
 ; abc/optimized/adler32.c.ll
 ; abc/optimized/giaResub6.c.ll
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver3.c.ll
 ; abc/optimized/solver.c.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/to_chars.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; cmake/optimized/adler32.c.ll
@@ -389,7 +387,6 @@ entry:
 ; llvm/optimized/MachineVerifier.cpp.ll
 ; llvm/optimized/ModuloSchedule.cpp.ll
 ; llvm/optimized/RISCVCallLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RISCVLegalizerInfo.cpp.ll
@@ -416,7 +413,6 @@ entry:
 ; oiio/optimized/psdinput.cpp.ll
 ; oiio/optimized/tiffinput.cpp.ll
 ; oiio/optimized/tiffoutput.cpp.ll
-; openblas/optimized/dgbmv_thread_t.c.ll
 ; openblas/optimized/dsbmv_thread_L.c.ll
 ; openblas/optimized/dsbmv_thread_U.c.ll
 ; opencv/optimized/autocalib.cpp.ll
@@ -455,7 +451,6 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; ruby/optimized/bignum.ll
-; ruby/optimized/qsort.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; spike/optimized/f16_div.ll
 ; spike/optimized/f16_sqrt.ll
@@ -475,13 +470,18 @@ entry:
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 7
-  %3 = mul nuw nsw i64 %2, %0
+  %3 = mul nuw nsw i64 %0, %2
   ret i64 %3
 }
 
-; 141 occurrences:
+; 143 occurrences:
 ; abc/optimized/giaResub6.c.ll
 ; arrow/optimized/bignum.cc.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; cmake/optimized/huf_compress.c.ll
 ; cpython/optimized/obmalloc.ll
 ; double_conversion/optimized/bignum.cc.ll
@@ -515,7 +515,6 @@ entry:
 ; linux/optimized/md-bitmap.ll
 ; linux/optimized/mpih-div.ll
 ; linux/optimized/resize.ll
-; linux/optimized/vclock_gettime.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64PostLegalizerLowering.cpp.ll
@@ -525,7 +524,6 @@ entry:
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/LoadStoreOpt.cpp.ll
 ; llvm/optimized/LowerMemIntrinsics.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; lz4/optimized/lz4frame.c.ll
@@ -535,7 +533,6 @@ entry:
 ; meshoptimizer/optimized/simplifier.cpp.ll
 ; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; mimalloc/optimized/segment.c.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; oiio/optimized/exif.cpp.ll
 ; oiio/optimized/paramlist.cpp.ll
 ; oiio/optimized/rlainput.cpp.ll
@@ -624,12 +621,12 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 1023
-  %3 = mul i64 %2, %0
+  %2 = and i64 %1, 4294967295
+  %3 = mul i64 %0, %2
   ret i64 %3
 }
 
-; 50 occurrences:
+; 49 occurrences:
 ; arrow/optimized/coo_converter.cc.ll
 ; clamav/optimized/regcomp.c.ll
 ; darktable/optimized/histogram.c.ll
@@ -648,7 +645,6 @@ entry:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/LoopLoadElimination.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/regcomp.c.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll

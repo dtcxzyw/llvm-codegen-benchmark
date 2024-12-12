@@ -21,3 +21,13 @@ func0000000000000005:                   # @func0000000000000005
 	vmovsd	%xmm1, %xmm3, %xmm3 {%k1}
 	vsubsd	%xmm3, %xmm0, %xmm0
 	retq
+.LCPI3_0:
+	.quad	0x4010000000000000              # double 4
+.LCPI3_1:
+	.quad	0x4002d97c7f3321d2              # double 2.3561944901923448
+func0000000000000003:                   # @func0000000000000003
+	vcmpngesd	.LCPI3_0(%rip), %xmm2, %k1
+	vmovsd	.LCPI3_1(%rip), %xmm2           # xmm2 = [2.3561944901923448E+0,0.0E+0]
+	vmovsd	%xmm1, %xmm2, %xmm2 {%k1}
+	vsubsd	%xmm2, %xmm0, %xmm0
+	retq

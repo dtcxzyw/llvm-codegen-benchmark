@@ -1,5 +1,5 @@
 
-; 46 occurrences:
+; 37 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcIvy.c.ll
 ; abc/optimized/abcLatch.c.ll
@@ -27,16 +27,7 @@
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; llvm/optimized/InstCombinePHI.cpp.ll
 ; llvm/optimized/SemaObjCProperty.cpp.ll
-; mitsuba3/optimized/multijitter.cpp.ll
-; mitsuba3/optimized/orthogonal.cpp.ll
-; mitsuba3/optimized/stratified.cpp.ll
 ; openjdk/optimized/synchronizer.ll
-; pbrt-v4/optimized/camera.cpp.ll
-; pbrt-v4/optimized/integrators.cpp.ll
-; pbrt-v4/optimized/interaction.cpp.ll
-; pbrt-v4/optimized/lowdiscrepancy.cpp.ll
-; pbrt-v4/optimized/pspec.cpp.ll
-; pbrt-v4/optimized/samples.cpp.ll
 ; php/optimized/hash_gost.ll
 ; qemu/optimized/hw_vfio_pci-quirks.c.ll
 ; tokio-rs/optimized/1rl1r5ea6bzd5c9z.ll
@@ -49,8 +40,8 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
-  %2 = lshr i32 %1, 4
-  %3 = lshr i32 %0, 8
+  %2 = lshr i32 %1, 6
+  %3 = lshr i32 %0, 1
   %4 = xor i32 %3, %2
   ret i32 %4
 }

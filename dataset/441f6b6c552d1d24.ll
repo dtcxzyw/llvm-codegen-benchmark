@@ -1,21 +1,29 @@
 
-%"struct.re2::CaseFold.2486320" = type { i32, i32, i32 }
+%"struct.re2::CaseFold.2601764" = type { i32, i32, i32 }
 
-; 73 occurrences:
+; 79 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/abcRpo.c.ll
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/amapMerge.c.ll
 ; abc/optimized/bmcMaj3.c.ll
+; abc/optimized/dauCanon.c.ll
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/dauNpn.c.ll
 ; abc/optimized/dauTree.c.ll
+; abc/optimized/extraBddThresh.c.ll
+; abc/optimized/extraUtilMaj.c.ll
 ; abc/optimized/fretFlow.c.ll
 ; abc/optimized/giaIf.c.ll
+; abc/optimized/giaMfs.c.ll
+; abc/optimized/giaMinLut2.c.ll
+; abc/optimized/giaTruth.c.ll
+; abc/optimized/ifDec75.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/ifMap.c.ll
-; abc/optimized/lpkAbcUtil.c.ll
+; abc/optimized/ifTruth.c.ll
+; abc/optimized/sfmLib.c.ll
 ; abc/optimized/utilIsop.c.ll
 ; abseil-cpp/optimized/charconv_parse.cc.ll
 ; arrow/optimized/int_util.cc.ll
@@ -32,7 +40,6 @@
 ; icu/optimized/number_decimalquantity.ll
 ; icu/optimized/toolutil.ll
 ; icu/optimized/unistr.ll
-; icu/optimized/usprep.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; jemalloc/optimized/jemalloc.ll
 ; jemalloc/optimized/jemalloc.pic.ll
@@ -53,7 +60,6 @@
 ; opencv/optimized/circlesgrid.cpp.ll
 ; opencv/optimized/gfluidimgproc.cpp.ll
 ; opencv/optimized/rapid.cpp.ll
-; opencv/optimized/slice_layer.cpp.ll
 ; openjdk/optimized/cmspack.ll
 ; openjdk/optimized/disassembler.ll
 ; openjdk/optimized/mlib_ImageAffineEdge.ll
@@ -76,18 +82,17 @@
 ; tinyobjloader/optimized/tiny_obj_loader.cc.ll
 ; zstd/optimized/fse_compress.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i1 %1, i32 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = select i1 %1, i64 0, i64 %3
-  %5 = getelementptr nusw %"struct.re2::CaseFold.2486320", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.re2::CaseFold.2601764", ptr %0, i64 %4
   ret ptr %5
 }
 
-; 47 occurrences:
+; 45 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/extraUtilMaj.c.ll
-; abc/optimized/ifMap.c.ll
 ; clamav/optimized/matcher-pcre.c.ll
 ; cmake/optimized/inftrees.c.ll
 ; cmake/optimized/zdict.c.ll
@@ -128,16 +133,15 @@ entry:
 ; openjdk/optimized/g1FullCollector.ll
 ; openjdk/optimized/jfrThreadSampler.ll
 ; openjdk/optimized/png.ll
-; php/optimized/is_simh.ll
 ; wasmedge/optimized/formchecker.cpp.ll
 ; zlib/optimized/inftrees.c.ll
 ; zstd/optimized/zdict.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i1 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = select i1 %1, i64 0, i64 %3
-  %5 = getelementptr nusw i16, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i16, ptr %0, i64 %4
   ret ptr %5
 }
 

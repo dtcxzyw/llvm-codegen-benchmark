@@ -1,15 +1,15 @@
 .LCPI0_0:
-	.zero	16,32
+	.zero	16,2
 .LCPI0_1:
-	.zero	16,16
+	.zero	16,4
 .LCPI0_2:
-	.zero	4,16
+	.zero	4,4
 func0000000000000003:                   # @func0000000000000003
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k1
 	vpsllw	$7, %xmm2, %xmm1
 	vpmovb2m	%xmm1, %k2
-	vmovdqu8	.LCPI0_0(%rip), %xmm1 {%k2} {z} # xmm1 {%k2} {z} = [32,32,32,32,32,32,32,32,32,32,32,32,32,32,32,32]
+	vmovdqu8	.LCPI0_0(%rip), %xmm1 {%k2} {z} # xmm1 {%k2} {z} = [2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]
 	vpor	%xmm0, %xmm1, %xmm0
 	vpord	.LCPI0_2(%rip){1to4}, %xmm0, %xmm1
 	vmovdqu8	%xmm1, %xmm0 {%k1}

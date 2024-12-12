@@ -1,5 +1,5 @@
 
-; 341 occurrences:
+; 343 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/dauDsd.c.ll
@@ -18,6 +18,7 @@
 ; arrow/optimized/list_util.cc.ll
 ; arrow/optimized/vector_selection_filter_internal.cc.ll
 ; arrow/optimized/vector_selection_take_internal.cc.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/decode.c.ll
 ; clamav/optimized/lzwdec.c.ll
 ; clamav/optimized/regexec.c.ll
@@ -54,7 +55,6 @@
 ; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/AsmWriterEmitter.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86InstCombineIntrinsic.cpp.ll
 ; llvm/optimized/regexec.c.ll
 ; meshlab/optimized/miniz.c.ll
@@ -339,6 +339,8 @@
 ; wireshark/optimized/proto.c.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; z3/optimized/dl_sparse_table.cpp.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; zstd/optimized/fse_decompress.c.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; Function Attrs: nounwind

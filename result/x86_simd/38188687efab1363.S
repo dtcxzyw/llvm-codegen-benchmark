@@ -35,20 +35,11 @@ func0000000000000082:                   # @func0000000000000082
 	vzeroupper
 	retq
 .LCPI4_0:
-	.long	0x00800000                      # float 1.17549435E-38
-func0000000000000025:                   # @func0000000000000025
-	vcmpnltps	.LCPI4_0(%rip){1to16}, %zmm2, %k1
-	vmovaps	%zmm1, %zmm1 {%k1} {z}
-	vcmpnleps	%zmm1, %zmm0, %k0
-	vpmovm2b	%k0, %xmm0
-	vzeroupper
-	retq
-.LCPI5_0:
 	.long	0x5d5e0b6b                      # float 9.99999984E+17
 func0000000000000084:                   # @func0000000000000084
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpeqps	%zmm3, %zmm2, %k1
-	vbroadcastss	.LCPI5_0(%rip), %zmm1 {%k1} # zmm1 {%k1} = [9.99999984E+17,9.99999984E+17,9.99999984E+17,9.99999984E+17,9.99999984E+17,9.99999984E+17,9.99999984E+17,9.99999984E+17,9.99999984E+17,9.99999984E+17,9.99999984E+17,9.99999984E+17,9.99999984E+17,9.99999984E+17,9.99999984E+17,9.99999984E+17]
+	vbroadcastss	.LCPI4_0(%rip), %zmm1 {%k1} # zmm1 {%k1} = [9.99999984E+17,9.99999984E+17,9.99999984E+17,9.99999984E+17,9.99999984E+17,9.99999984E+17,9.99999984E+17,9.99999984E+17,9.99999984E+17,9.99999984E+17,9.99999984E+17,9.99999984E+17,9.99999984E+17,9.99999984E+17,9.99999984E+17,9.99999984E+17]
 	vcmpltps	%zmm0, %zmm1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
@@ -61,13 +52,21 @@ func000000000000002c:                   # @func000000000000002c
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-.LCPI7_0:
+.LCPI6_0:
 	.long	0x80000000                      # float -0
 func00000000000000a2:                   # @func00000000000000a2
 	vxorps	%xmm3, %xmm3, %xmm3
 	vcmpleps	%zmm3, %zmm2, %k1
-	vbroadcastss	.LCPI7_0(%rip), %zmm1 {%k1} # zmm1 {%k1} = [-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0]
+	vbroadcastss	.LCPI6_0(%rip), %zmm1 {%k1} # zmm1 {%k1} = [-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0]
 	vcmpltps	%zmm1, %zmm0, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
+func0000000000000025:                   # @func0000000000000025
+	vxorps	%xmm3, %xmm3, %xmm3
+	vcmpnltps	%zmm3, %zmm2, %k1
+	vmovaps	%zmm1, %zmm1 {%k1} {z}
+	vcmpnleps	%zmm1, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

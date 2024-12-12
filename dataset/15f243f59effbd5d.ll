@@ -1,6 +1,7 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; linux/optimized/ohci-hcd.ll
+; lvgl/optimized/lv_scale.ll
 ; rocksdb/optimized/rate_limiter.cc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
@@ -11,7 +12,7 @@ entry:
   ret i32 %4
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; clamav/optimized/pe.c.ll
 ; clamav/optimized/rebuildpe.c.ll
 ; clamav/optimized/upx.c.ll
@@ -29,6 +30,7 @@ entry:
 ; wolfssl/optimized/kdf.c.ll
 ; z3/optimized/mpz.cpp.ll
 ; z3/optimized/upolynomial.cpp.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:

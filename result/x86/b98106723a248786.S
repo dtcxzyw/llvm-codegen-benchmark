@@ -20,7 +20,20 @@ func0000000000000001:                   # @func0000000000000001
 	andb	%dil, %al
 	retq
 func000000000000000a:                   # @func000000000000000a
-	testl	$-2147483645, %esi              # imm = 0x80000003
+	movslq	%esi, %rax
+	imulq	$-2004318071, %rax, %rcx        # imm = 0x88888889
+	shrq	$32, %rcx
+	addl	%eax, %ecx
+	movl	%ecx, %edx
+	shrl	$31, %edx
+	sarl	$4, %ecx
+	addl	%edx, %ecx
+	movl	%ecx, %edx
+	shll	$5, %edx
+	addl	%ecx, %ecx
+	subl	%edx, %ecx
+	addl	%eax, %ecx
+	testl	%ecx, %ecx
 	setg	%al
 	andb	%dil, %al
 	retq

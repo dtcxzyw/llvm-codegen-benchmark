@@ -27,6 +27,15 @@ func0000000000000006:                   # @func0000000000000006
 	vmsle.vi	v0, v8, -1
 	ret
 func0000000000000018:                   # @func0000000000000018
+	lui	a0, 1
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmv.v.x	v10, a0
+	lui	a0, 262144
+	vsll.vv	v8, v10, v8
+	addiw	a0, a0, -1
+	vmsgtu.vx	v0, v8, a0
+	ret
+func0000000000000038:                   # @func0000000000000038
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v10, -1
 	vsll.vv	v8, v10, v8

@@ -45,15 +45,16 @@ entry:
   ret i64 %2
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; linux/optimized/drm_dp_helper.ll
+; llvm/optimized/MDBuilder.cpp.ll
 ; redis/optimized/ziplist.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000009(i8 %0) #0 {
 entry:
-  %1 = icmp ult i8 %0, 20
-  %2 = select i1 %1, i64 1, i64 8
+  %1 = icmp ult i8 %0, 31
+  %2 = select i1 %1, i64 4, i64 3
   ret i64 %2
 }
 

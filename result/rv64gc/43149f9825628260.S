@@ -13,7 +13,7 @@ func000000000000000a:                   # @func000000000000000a
 	ret
 func0000000000000004:                   # @func0000000000000004
 	sext.w	a1, a1
-	sltiu	a1, a1, 11
+	sltiu	a1, a1, 6
 	neg	a1, a1
 	and	a0, a0, a1
 	ret

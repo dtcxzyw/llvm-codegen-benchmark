@@ -1,8 +1,11 @@
 
-; 265 occurrences:
+; 277 occurrences:
 ; arrow/optimized/data.cc.ll
 ; arrow/optimized/datum.cc.ll
 ; assimp/optimized/ColladaLoader.cpp.ll
+; boost/optimized/mapped_file.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; clamav/optimized/jpeg.c.ll
 ; clap-rs/optimized/5651dp9k16h53y8x.ll
 ; cmake/optimized/archive_read_support_filter_uu.c.ll
@@ -124,6 +127,8 @@
 ; nlohmann_json/optimized/unit-regression2.cpp.ll
 ; nlohmann_json/optimized/unit-ubjson.cpp.ll
 ; nlohmann_json/optimized/unit-udt_macro.cpp.ll
+; opencv/optimized/color_yuv.dispatch.cpp.ll
+; opencv/optimized/stereosgbm.cpp.ll
 ; openjdk/optimized/archiveBuilder.ll
 ; openjdk/optimized/memoryPool.ll
 ; openmpi/optimized/ras_base_allocate.ll
@@ -174,7 +179,6 @@
 ; stb/optimized/stb_voxel_render.c.ll
 ; tokenizers-rs/optimized/4hn9gefsll13qr1r.ll
 ; tree-sitter-rs/optimized/55e7aotywrgrb7st.ll
-; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/3rk2ctuzbghb17s4.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; velox/optimized/ArrayAndMapMatch.cpp.ll
@@ -265,6 +269,14 @@
 ; z3/optimized/sat_aig_cuts.cpp.ll
 ; z3/optimized/sat_local_search.cpp.ll
 ; z3/optimized/sat_solver.cpp.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/5ixvfce98s1x7yb9webqub3ar.ll
+; zed-rs/optimized/6t4g10gl152q55lxtcl2heeia.ll
+; zed-rs/optimized/97q4mieihk6fgi9ya31e3gth7.ll
+; zed-rs/optimized/9c10jgz06y4guc3kdqsrv661j.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/9lyxlodfxr6ds1lof2oq9jgs7.ll
+; zed-rs/optimized/cj7s0wliqptmxcvil2fbp8uvc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i8 %0) #0 {
 entry:
@@ -273,7 +285,7 @@ entry:
   ret i64 %2
 }
 
-; 79 occurrences:
+; 80 occurrences:
 ; coreutils-rs/optimized/2s0vwgte372x4qpc.ll
 ; coreutils-rs/optimized/3yatagipaedyu36z.ll
 ; coreutils-rs/optimized/5dvo81hn4cx7e334.ll
@@ -286,9 +298,9 @@ entry:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; hermes/optimized/IR.cpp.ll
+; hermes/optimized/JSLexer.cpp.ll
 ; just-rs/optimized/1t8x2pim4pkxeam1.ll
 ; libjpeg-turbo/optimized/jccolor.c.ll
-; libquic/optimized/x_long.c.ll
 ; libwebp/optimized/cost.c.ll
 ; libwebp/optimized/cost_enc.c.ll
 ; libwebp/optimized/cost_sse2.c.ll
@@ -353,6 +365,7 @@ entry:
 ; wireshark/optimized/packet-mstp.c.ll
 ; wireshark/optimized/packet-opensafety.c.ll
 ; wireshark/optimized/packet-zbee-direct.c.ll
+; zed-rs/optimized/11rrvqb0alhs5mh4wxxke3etr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i8 %0) #0 {
 entry:

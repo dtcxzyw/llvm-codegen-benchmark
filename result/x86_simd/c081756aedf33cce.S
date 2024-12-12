@@ -6,7 +6,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 .LCPI1_0:
 	.long	4                               # 0x4
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	vcvtdq2pd	%ymm2, %zmm2
 	vpcmpltud	.LCPI1_0(%rip){1to8}, %ymm1, %k1
 	vmovapd	%zmm0, %zmm2 {%k1}

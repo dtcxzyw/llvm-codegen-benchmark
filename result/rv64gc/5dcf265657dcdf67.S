@@ -25,15 +25,15 @@ func000000000000001b:                   # @func000000000000001b
 	add	a0, a0, a1
 	addi	a0, a0, 1
 	ret
+func000000000000000b:                   # @func000000000000000b
+	slli	a1, a1, 5
+	add	a0, a0, a1
+	addi	a0, a0, 4
+	ret
 func0000000000000001:                   # @func0000000000000001
 	slli	a1, a1, 2
 	add	a0, a0, a1
 	addi	a0, a0, 3
-	ret
-func000000000000000b:                   # @func000000000000000b
-	slli	a1, a1, 2
-	add	a0, a0, a1
-	addi	a0, a0, 12
 	ret
 func0000000000000009:                   # @func0000000000000009
 	slli	a1, a1, 2

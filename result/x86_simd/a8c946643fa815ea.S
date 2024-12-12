@@ -15,7 +15,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqb	.LCPI0_0(%rip), %xmm1, %k1
@@ -45,7 +45,7 @@ func00000000000000c1:                   # @func00000000000000c1
 	.zero	1
 .LCPI1_1:
 	.long	180                             # 0xb4
-func00000000000000a4:                   # @func00000000000000a4
+func0000000000000144:                   # @func0000000000000144
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpltub	.LCPI1_0(%rip), %xmm1, %k1
@@ -75,7 +75,7 @@ func00000000000000a4:                   # @func00000000000000a4
 	.zero	1
 .LCPI2_1:
 	.long	90                              # 0x5a
-func0000000000000064:                   # @func0000000000000064
+func00000000000000c4:                   # @func00000000000000c4
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpltub	.LCPI2_0(%rip), %xmm1, %k1
@@ -88,7 +88,7 @@ func0000000000000064:                   # @func0000000000000064
 	retq
 .LCPI3_0:
 	.long	3                               # 0x3
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vptestnmb	%xmm1, %xmm1, %k1

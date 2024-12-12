@@ -5,7 +5,7 @@
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000034a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000068a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = add nsw i32 %2, -2
@@ -18,7 +18,7 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003ca(i32 %0, i32 %1) #0 {
+define i1 @func000000000000078a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = add nuw nsw i32 %2, 2
@@ -30,22 +30,22 @@ entry:
 ; 1 occurrences:
 ; oiio/optimized/icooutput.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000015a(i32 %0, i32 %1) #0 {
+define i1 @func00000000000002aa(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 4
   %3 = add nsw i32 %2, -10
-  %4 = icmp slt i32 %3, %0
+  %4 = icmp sgt i32 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; wireshark/optimized/packet-mbtcp.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003da(i32 %0, i32 %1) #0 {
+define i1 @func00000000000007aa(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = add nuw nsw i32 %2, 7
-  %4 = icmp slt i32 %3, %0
+  %4 = icmp sgt i32 %0, %3
   ret i1 %4
 }
 

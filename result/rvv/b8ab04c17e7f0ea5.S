@@ -5,5 +5,5 @@ func0000000000000002:                   # @func0000000000000002
 	vand.vx	v8, v8, a0
 	li	a0, 126
 	vmseq.vx	v10, v8, a0
-	vmor.mm	v0, v10, v0
+	vmor.mm	v0, v0, v10
 	ret

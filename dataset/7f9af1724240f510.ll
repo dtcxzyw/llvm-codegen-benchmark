@@ -38,15 +38,14 @@ entry:
   ret i32 %4
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; darktable/optimized/introspection_basicadj.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; icu/optimized/uset.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/mmconfig-shared.ll
-; linux/optimized/mmconfig_64.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/glarea.cpp.ll
-; openjdk/optimized/TransformHelper.ll
 ; openjdk/optimized/jquant2.ll
 ; openjdk/optimized/sharedRuntimeTrig.ll
 ; openjdk/optimized/sharedRuntime_x86_64.ll
@@ -61,7 +60,7 @@ entry:
   ret i32 %4
 }
 
-; 29 occurrences:
+; 31 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
@@ -89,7 +88,9 @@ entry:
 ; openjdk/optimized/mlib_ImageLookUp_Bit.ll
 ; openjdk/optimized/parse1.ll
 ; openusd/optimized/entdec.c.ll
+; openusd/optimized/stbImage.cpp.ll
 ; php/optimized/ir_emit.ll
+; raylib/optimized/rtextures.c.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
@@ -113,10 +114,11 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; abc/optimized/giaQbf.c.ll
 ; abc/optimized/saigDual.c.ll
 ; abc/optimized/sswIslands.c.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; openjdk/optimized/constantPool.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000014(i32 %0, i32 %1) #0 {

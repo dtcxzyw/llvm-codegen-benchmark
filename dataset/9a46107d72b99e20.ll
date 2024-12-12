@@ -14,6 +14,17 @@ define i16 @func0000000000000004(i16 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 0
   %3 = select i1 %2, i16 -8, i16 -16
+  %4 = add i16 %0, %3
+  ret i16 %4
+}
+
+; 1 occurrences:
+; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000018(i16 %0, i8 %1) #0 {
+entry:
+  %2 = icmp slt i8 %1, 0
+  %3 = select i1 %2, i16 -2, i16 -1
   %4 = add i16 %3, %0
   ret i16 %4
 }
@@ -26,7 +37,7 @@ define i16 @func0000000000000005(i16 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 0
   %3 = select i1 %2, i16 1, i16 3
-  %4 = add nsw i16 %3, %0
+  %4 = add nsw i16 %0, %3
   ret i16 %4
 }
 
@@ -37,7 +48,7 @@ define i16 @func0000000000000023(i16 %0, i8 %1) #0 {
 entry:
   %2 = icmp ugt i8 %1, 8
   %3 = select i1 %2, i16 2, i16 0
-  %4 = add nuw nsw i16 %3, %0
+  %4 = add nuw nsw i16 %0, %3
   ret i16 %4
 }
 
@@ -48,7 +59,7 @@ define i16 @func0000000000000021(i16 %0, i8 %1) #0 {
 entry:
   %2 = icmp ugt i8 %1, 8
   %3 = select i1 %2, i16 7, i16 6
-  %4 = add nsw i16 %3, %0
+  %4 = add nsw i16 %0, %3
   ret i16 %4
 }
 
@@ -84,7 +95,7 @@ define i16 @func0000000000000007(i16 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 1
   %3 = select i1 %2, i16 255, i16 1
-  %4 = add nuw nsw i16 %3, %0
+  %4 = add nuw nsw i16 %0, %3
   ret i16 %4
 }
 

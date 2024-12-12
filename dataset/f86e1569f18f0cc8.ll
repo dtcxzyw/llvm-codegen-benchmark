@@ -1,7 +1,6 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; cmake/optimized/SystemTools.cxx.ll
-; darktable/optimized/tagging.c.ll
 ; gromacs/optimized/reversetopology.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
 ; openjdk/optimized/generateOopMap.ll
@@ -20,12 +19,11 @@ entry:
   ret i32 %5
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; faiss/optimized/sorting.cpp.ll
 ; git/optimized/graph.ll
 ; linux/optimized/dm.ll
 ; linux/optimized/extents.ll
-; linux/optimized/hwdep.ll
 ; openjdk/optimized/mlib_ImageAffineEdge.ll
 ; openssl/optimized/libcrypto-lib-rsa_pk1.ll
 ; openssl/optimized/libcrypto-shlib-rsa_pk1.ll
@@ -50,15 +48,14 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
-; git/optimized/index-pack.ll
+; 1 occurrences:
 ; linux/optimized/hdac_device.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 %2, i32 20
-  %4 = icmp ult i32 %0, 6
-  %5 = select i1 %4, i32 3, i32 %3
+  %3 = select i1 %1, i32 %2, i32 -1
+  %4 = icmp ult i32 %0, 2
+  %5 = select i1 %4, i32 0, i32 %3
   ret i32 %5
 }
 

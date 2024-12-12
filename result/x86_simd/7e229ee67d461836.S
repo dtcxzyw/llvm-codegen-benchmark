@@ -1,4 +1,4 @@
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	vpsrad	$31, %xmm2, %xmm3
 	vpsrld	$27, %xmm3, %xmm3
 	vpaddd	%xmm3, %xmm2, %xmm2
@@ -32,7 +32,7 @@ func0000000000000004:                   # @func0000000000000004
 	retq
 .LCPI3_0:
 	.long	715827883                       # 0x2aaaaaab
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	vpshufd	$245, %xmm2, %xmm3              # xmm3 = xmm2[1,1,3,3]
 	vpbroadcastd	.LCPI3_0(%rip), %xmm4   # xmm4 = [715827883,715827883,715827883,715827883]
 	vpmuldq	%xmm4, %xmm3, %xmm3

@@ -18,10 +18,12 @@ entry:
   ret double %4
 }
 
-; 6 occurrences:
+; 8 occurrences:
 ; grpc/optimized/chttp2_transport.cc.ll
 ; openblas/optimized/dgelq.c.ll
 ; opencv/optimized/matmul.dispatch.cpp.ll
+; opencv/optimized/ocr_beamsearch_decoder.cpp.ll
+; opencv/optimized/ocr_hmm_decoder.cpp.ll
 ; opencv/optimized/window_gtk.cpp.ll
 ; openjdk/optimized/compilationPolicy.ll
 ; zxing/optimized/DMDetector.cpp.ll

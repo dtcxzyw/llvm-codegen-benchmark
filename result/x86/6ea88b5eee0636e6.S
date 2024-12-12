@@ -1,4 +1,4 @@
-func000000000000003a:                   # @func000000000000003a
+func000000000000003f:                   # @func000000000000003f
 	orl	%edx, %esi
 	andl	$65534, %esi                    # imm = 0xFFFE
 	leaq	2(%rdi,%rsi), %rax

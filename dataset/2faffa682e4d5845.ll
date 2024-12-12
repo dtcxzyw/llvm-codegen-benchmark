@@ -28,9 +28,9 @@ entry:
 ; 1 occurrences:
 ; oiio/optimized/DPXHeader.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000047(i8 %0) #0 {
+define i32 @func00000000000000c7(i8 %0) #0 {
 entry:
-  %1 = icmp ugt i8 %0, 9
+  %1 = icmp samesign ugt i8 %0, 9
   %2 = select i1 %1, i8 55, i8 48
   %3 = add nuw nsw i8 %2, %0
   %4 = zext nneg i8 %3 to i32

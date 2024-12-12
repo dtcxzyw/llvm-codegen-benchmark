@@ -1,5 +1,6 @@
 
-; 72 occurrences:
+; 73 occurrences:
+; boost/optimized/src.ll
 ; cpython/optimized/symtable.ll
 ; freetype/optimized/sfnt.c.ll
 ; freetype/optimized/truetype.c.ll
@@ -28,6 +29,7 @@
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; llvm/optimized/SanitizerArgs.cpp.ll
 ; llvm/optimized/SanitizerMetadata.cpp.ll
+; llvm/optimized/SanitizerSpecialCaseList.cpp.ll
 ; llvm/optimized/Sanitizers.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/SemaObjCProperty.cpp.ll
@@ -64,7 +66,6 @@
 ; qemu/optimized/block_export_vduse-blk.c.ll
 ; qemu/optimized/hw_block_virtio-blk.c.ll
 ; qemu/optimized/hw_char_serial.c.ll
-; qemu/optimized/hw_virtio_vhost-vsock-common.c.ll
 ; qemu/optimized/hw_virtio_virtio-pci.c.ll
 ; ruby/optimized/array.ll
 ; ruby/optimized/vm.ll
@@ -80,7 +81,7 @@ entry:
   ret i64 %3
 }
 
-; 179 occurrences:
+; 181 occurrences:
 ; arrow/optimized/bignum-dtoa.cc.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/fixed-dtoa.cc.ll
@@ -88,6 +89,7 @@ entry:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/compile.ll
 ; double_conversion/optimized/bignum-dtoa.cc.ll
 ; double_conversion/optimized/fast-dtoa.cc.ll
@@ -134,6 +136,7 @@ entry:
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/RISCVMatInt.cpp.ll
+; llvm/optimized/SanitizerSpecialCaseList.cpp.ll
 ; llvm/optimized/ToolChain.cpp.ll
 ; llvm/optimized/X86AsmPrinter.cpp.ll
 ; luau/optimized/lnumprint.cpp.ll

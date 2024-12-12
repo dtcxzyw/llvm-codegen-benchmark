@@ -1,6 +1,6 @@
 
-%struct.PhysPageEntry.2596346 = type { i32 }
-%"class.clang::NestedNameSpecifierLoc.2989233" = type { ptr, ptr }
+%struct.PhysPageEntry.2709868 = type { i32 }
+%"class.clang::NestedNameSpecifierLoc.3182702" = type { ptr, ptr }
 
 ; 32 occurrences:
 ; abc/optimized/aigRet.c.ll
@@ -36,17 +36,25 @@
 ; redis/optimized/rax.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 3
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   %6 = zext nneg i32 %1 to i64
-  %7 = getelementptr nusw i8, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %5, i64 %6
   ret ptr %7
 }
 
-; 116 occurrences:
+; 121 occurrences:
+; boost/optimized/cmd.ll
+; boost/optimized/cwd.ll
+; boost/optimized/exe.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/process_name.ll
 ; crow/optimized/example.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
@@ -127,9 +135,6 @@ entry:
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-accessor.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/outputs-spec.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/path-info.ll
@@ -164,13 +169,13 @@ entry:
 ; yalantinglibs/optimized/conformance_test_runner.cc.ll
 ; yalantinglibs/optimized/data_gen.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000002f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 31
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   %6 = zext i32 %1 to i64
-  %7 = getelementptr nusw i8, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -182,22 +187,22 @@ define ptr @func0000000000000030(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 6
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr [512 x %struct.PhysPageEntry.2596346], ptr %0, i64 %4
+  %5 = getelementptr [512 x %struct.PhysPageEntry.2709868], ptr %0, i64 %4
   %6 = zext nneg i32 %1 to i64
-  %7 = getelementptr %struct.PhysPageEntry.2596346, ptr %5, i64 %6
+  %7 = getelementptr %struct.PhysPageEntry.2709868, ptr %5, i64 %6
   ret ptr %7
 }
 
 ; 1 occurrences:
 ; libpng/optimized/pngwrite.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000006f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 4
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   %6 = zext i32 %1 to i64
-  %7 = getelementptr nusw i16, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i16, ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -207,13 +212,13 @@ entry:
 ; llvm/optimized/Expr.cpp.ll
 ; redis/optimized/rax.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 18
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw %"class.clang::NestedNameSpecifierLoc.2989233", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.clang::NestedNameSpecifierLoc.3182702", ptr %0, i64 %4
   %6 = zext nneg i32 %1 to i64
-  %7 = getelementptr nusw ptr, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw ptr, ptr %5, i64 %6
   ret ptr %7
 }
 

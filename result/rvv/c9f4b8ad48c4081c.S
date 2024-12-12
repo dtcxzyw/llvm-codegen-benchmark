@@ -4,7 +4,7 @@ func0000000000000001:                   # @func0000000000000001
 	vsrl.vi	v10, v10, 1
 	vmseq.vv	v0, v10, v8
 	ret
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	csrwi	vxrm, 2
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vaaddu.vv	v10, v10, v8

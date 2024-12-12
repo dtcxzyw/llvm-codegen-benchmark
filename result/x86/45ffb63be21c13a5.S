@@ -1,16 +1,16 @@
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	movzwl	%si, %eax
 	shlq	$16, %rdi
 	orq	%rax, %rdi
 	sete	%al
 	retq
-func000000000000005c:                   # @func000000000000005c
+func00000000000000ac:                   # @func00000000000000ac
 	movzwl	%si, %eax
 	shlq	$16, %rdi
 	orq	%rax, %rdi
 	setne	%al
 	retq
-func000000000000007c:                   # @func000000000000007c
+func00000000000000ec:                   # @func00000000000000ec
 	movzwl	%si, %eax
 	shlq	$16, %rdi
 	orq	%rax, %rdi

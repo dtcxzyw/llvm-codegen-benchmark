@@ -1,8 +1,9 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; abc/optimized/cuddUtil.c.ll
 ; libphonenumber/optimized/generate_geocoding_data.cc.ll
 ; libphonenumber/optimized/geocoding_data_test.cc.ll
+; libwebp/optimized/anim_encode.c.ll
 ; lightgbm/optimized/feature_histogram.cpp.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
@@ -13,7 +14,7 @@ define i1 @func000000000000000a(i32 %0, double %1) #0 {
 entry:
   %2 = fadd double %1, -1.000000e+00
   %3 = fptosi double %2 to i32
-  %4 = icmp slt i32 %3, %0
+  %4 = icmp sgt i32 %0, %3
   ret i1 %4
 }
 
@@ -27,7 +28,7 @@ define i1 @func0000000000000006(i32 %0, double %1) #0 {
 entry:
   %2 = fadd double %1, 5.000000e+00
   %3 = fptosi double %2 to i32
-  %4 = icmp sgt i32 %3, %0
+  %4 = icmp slt i32 %0, %3
   ret i1 %4
 }
 
@@ -42,7 +43,7 @@ define i1 @func0000000000000001(i32 %0, double %1) #0 {
 entry:
   %2 = fadd double %1, 1.000000e+00
   %3 = fptosi double %2 to i32
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
@@ -53,7 +54,7 @@ define i1 @func0000000000000007(i32 %0, double %1) #0 {
 entry:
   %2 = fadd double %1, 5.000000e-01
   %3 = fptosi double %2 to i32
-  %4 = icmp sge i32 %3, %0
+  %4 = icmp sle i32 %0, %3
   ret i1 %4
 }
 

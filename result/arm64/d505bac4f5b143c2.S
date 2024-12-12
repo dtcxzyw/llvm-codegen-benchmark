@@ -1,84 +1,63 @@
-func0000000000000011:                   // @func0000000000000011
+func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
-	mov	w8, #1                          // =0x1
-	dup	v3.2d, x8
-	saddw	v4.2d, v3.2d, v2.2s
-	saddw2	v2.2d, v3.2d, v2.4s
-	cmeq	v1.2d, v2.2d, v1.2d
-	cmeq	v0.2d, v4.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+                                        // kill: def $w1 killed $w1 def $x1
+	sxtw	x8, w1
+	add	x8, x8, #1
+	cmp	x8, x0
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000014:                   // @func0000000000000014
+func0000000000000024:                   // @func0000000000000024
 // %bb.0:                               // %entry
-	mov	w8, #1                          // =0x1
-	dup	v3.2d, x8
-	saddw	v4.2d, v3.2d, v2.2s
-	saddw2	v2.2d, v3.2d, v2.4s
-	cmhi	v1.2d, v1.2d, v2.2d
-	cmhi	v0.2d, v0.2d, v4.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+                                        // kill: def $w1 killed $w1 def $x1
+	sxtw	x8, w1
+	add	x8, x8, #1
+	cmp	x8, x0
+	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000018:                   // @func0000000000000018
+func0000000000000028:                   // @func0000000000000028
 // %bb.0:                               // %entry
-	mov	w8, #16                         // =0x10
-	dup	v3.2d, x8
-	saddw	v4.2d, v3.2d, v2.2s
-	saddw2	v2.2d, v3.2d, v2.4s
-	cmhi	v1.2d, v2.2d, v1.2d
-	cmhi	v0.2d, v4.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+                                        // kill: def $w1 killed $w1 def $x1
+	sxtw	x8, w1
+	add	x8, x8, #16
+	cmp	x8, x0
+	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000015:                   // @func0000000000000015
+func0000000000000025:                   // @func0000000000000025
 // %bb.0:                               // %entry
-	movi	v3.2d, #0xffffffffffffffff
-	saddw	v4.2d, v3.2d, v2.2s
-	saddw2	v2.2d, v3.2d, v2.4s
-	cmhs	v1.2d, v1.2d, v2.2d
-	cmhs	v0.2d, v0.2d, v4.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+                                        // kill: def $w1 killed $w1 def $x1
+	sxtw	x8, w1
+	sub	x8, x8, #1
+	cmp	x8, x0
+	cset	w0, ls
 	ret
                                         // -- End function
-func000000000000001a:                   // @func000000000000001a
+func000000000000002a:                   // @func000000000000002a
 // %bb.0:                               // %entry
-	mov	w8, #4                          // =0x4
-	dup	v3.2d, x8
-	saddw	v4.2d, v3.2d, v2.2s
-	saddw2	v2.2d, v3.2d, v2.4s
-	cmgt	v1.2d, v2.2d, v1.2d
-	cmgt	v0.2d, v4.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+                                        // kill: def $w1 killed $w1 def $x1
+	sxtw	x8, w1
+	add	x8, x8, #4
+	cmp	x8, x0
+	cset	w0, gt
 	ret
                                         // -- End function
-func0000000000000016:                   // @func0000000000000016
+func0000000000000026:                   // @func0000000000000026
 // %bb.0:                               // %entry
-	mov	w8, #1                          // =0x1
-	dup	v3.2d, x8
-	saddw	v4.2d, v3.2d, v2.2s
-	saddw2	v2.2d, v3.2d, v2.4s
-	cmgt	v1.2d, v1.2d, v2.2d
-	cmgt	v0.2d, v0.2d, v4.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+                                        // kill: def $w1 killed $w1 def $x1
+	sxtw	x8, w1
+	add	x8, x8, #1
+	cmp	x8, x0
+	cset	w0, lt
 	ret
                                         // -- End function
-func000000000000001c:                   // @func000000000000001c
+func000000000000002c:                   // @func000000000000002c
 // %bb.0:                               // %entry
-	mov	w8, #17                         // =0x11
-	dup	v3.2d, x8
-	saddw	v4.2d, v3.2d, v2.2s
-	saddw2	v2.2d, v3.2d, v2.4s
-	cmeq	v1.2d, v2.2d, v1.2d
-	cmeq	v0.2d, v4.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	mvn	v0.16b, v0.16b
-	xtn	v0.4h, v0.4s
+                                        // kill: def $w1 killed $w1 def $x1
+	sxtw	x8, w1
+	add	x8, x8, #17
+	cmp	x8, x0
+	cset	w0, ne
 	ret
                                         // -- End function

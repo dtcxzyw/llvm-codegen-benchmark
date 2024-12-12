@@ -32,32 +32,32 @@ func0000000000000003:                   # @func0000000000000003
 	ret
 func0000000000000008:                   # @func0000000000000008
 	fdiv.d	fa5, fa1, fa2
-	fadd.d	fa5, fa5, fa0
+	fadd.d	fa5, fa0, fa5
 	fmv.d.x	fa4, zero
 	feq.d	a0, fa5, fa4
 	ret
 func000000000000000b:                   # @func000000000000000b
 	fdiv.d	fa5, fa1, fa2
-	fadd.d	fa5, fa5, fa0
+	fadd.d	fa5, fa0, fa5
 	fmv.d.x	fa4, zero
 	flt.d	a0, fa4, fa5
 	xori	a0, a0, 1
 	ret
 func000000000000000e:                   # @func000000000000000e
 	fdiv.d	fa5, fa1, fa2
-	fadd.d	fa5, fa5, fa0
+	fadd.d	fa5, fa0, fa5
 	feq.d	a0, fa5, fa5
 	ret
 func000000000000000d:                   # @func000000000000000d
 	fdiv.d	fa5, fa1, fa2
-	fadd.d	fa5, fa5, fa0
+	fadd.d	fa5, fa0, fa5
 	fmv.d.x	fa4, zero
 	flt.d	a0, fa5, fa4
 	xori	a0, a0, 1
 	ret
 func000000000000000c:                   # @func000000000000000c
 	fdiv.d	fa5, fa1, fa2
-	fadd.d	fa5, fa5, fa0
+	fadd.d	fa5, fa0, fa5
 	fmv.d.x	fa4, zero
 	fle.d	a0, fa4, fa5
 	ret

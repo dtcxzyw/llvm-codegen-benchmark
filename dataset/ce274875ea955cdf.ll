@@ -1,7 +1,9 @@
 
-; 49 occurrences:
+; 53 occurrences:
 ; assimp/optimized/ObjFileImporter.cpp.ll
 ; assimp/optimized/PlyLoader.cpp.ll
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
 ; bullet3/optimized/btGenericPoolAllocator.ll
 ; clamav/optimized/fmap.c.ll
 ; clamav/optimized/mpool.c.ll
@@ -49,13 +51,15 @@
 ; xgboost/optimized/regression_obj.cc.ll
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
+; zed-rs/optimized/8y2n395sf7zaarcc3wfqoazez.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000060(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = urem i64 %1, %2
   %4 = icmp ne i64 %3, 0
   %5 = zext i1 %4 to i64
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -69,7 +73,7 @@ entry:
   %3 = urem i64 %1, %2
   %4 = icmp ne i64 %3, 0
   %5 = zext i1 %4 to i64
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -81,7 +85,7 @@ entry:
   %3 = urem i64 %1, %2
   %4 = icmp ne i64 %3, 0
   %5 = zext i1 %4 to i64
-  %6 = add nuw i64 %5, %0
+  %6 = add nuw i64 %0, %5
   ret i64 %6
 }
 

@@ -5,7 +5,7 @@
 ; mitsuba3/optimized/linearcurve.cpp.ll
 ; qemu/optimized/hw_scsi_vmw_pvscsi.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000008c(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = icmp ult i64 %2, 2
@@ -18,7 +18,7 @@ entry:
 ; openssl/optimized/libssl-lib-dtls_meth.ll
 ; openssl/optimized/libssl-shlib-dtls_meth.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000c8(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = icmp slt i64 %2, 0
@@ -31,7 +31,7 @@ entry:
 ; openssl/optimized/libssl-lib-dtls_meth.ll
 ; openssl/optimized/libssl-shlib-dtls_meth.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000148(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %1, %0
   %3 = icmp sgt i64 %2, 0
@@ -43,7 +43,7 @@ entry:
 ; 1 occurrences:
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a9(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000149(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = icmp sgt i64 %2, -1
@@ -55,7 +55,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/unzip.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000045(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000085(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %1, %0
   %3 = icmp ult i64 %2, 4294967296
@@ -75,7 +75,7 @@ entry:
 ; ockam-rs/optimized/3r84qnjy9p2hw0jg.ll
 ; ockam-rs/optimized/7hitgxreqt236i.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000108(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = icmp ugt i64 %2, 32767
@@ -87,7 +87,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/md.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %1, %0
   %3 = icmp ugt i64 %2, 32768

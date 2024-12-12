@@ -1,5 +1,5 @@
 
-%"struct.std::__1::pair.248.2492163" = type { i32, i32 }
+%"struct.std::__1::pair.248.2607584" = type { i32, i32 }
 
 ; 7 occurrences:
 ; assimp/optimized/ASELoader.cpp.ll
@@ -10,26 +10,26 @@
 ; mitsuba3/optimized/mesh.cpp.ll
 ; raylib/optimized/rmodels.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000182(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000183(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = mul i32 %1, 3
   %5 = add i32 %4, %3
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw %"struct.std::__1::pair.248.2492163", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"struct.std::__1::pair.248.2607584", ptr %0, i64 %6
   ret ptr %7
 }
 
 ; 1 occurrences:
 ; minetest/optimized/mapnode.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = mul i32 %1, 3
   %5 = add i32 %4, %3
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw i8, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -49,13 +49,13 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/psaux.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000102(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000103(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = mul i32 %1, 3
   %5 = add i32 %4, %3
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw i64, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i64, ptr %0, i64 %6
   ret ptr %7
 }
 

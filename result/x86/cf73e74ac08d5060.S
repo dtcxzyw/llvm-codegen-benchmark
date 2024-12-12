@@ -126,3 +126,7 @@ func0000000000000008:                   # @func0000000000000008
 	addl	%edx, %esi
 	leal	16(%rdi,%rsi), %eax
 	retq
+func000000000000002d:                   # @func000000000000002d
+	addl	%edx, %esi
+	leal	1(%rdi,%rsi), %eax
+	retq

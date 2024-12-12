@@ -1,16 +1,15 @@
 
-; 6 occurrences:
-; darktable/optimized/introspection_highlights.c.ll
-; linux/optimized/hiddev.ll
+; 5 occurrences:
+; boost/optimized/src.ll
 ; linux/optimized/libata-eh.ll
 ; linux/optimized/vsprintf.ll
 ; ruby/optimized/date_core.ll
 ; ruby/optimized/regcomp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i1 %1) #0 {
+define i1 @func0000000000000034(i64 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 584400, i64 584388
-  %3 = icmp ugt i64 %2, %0
+  %3 = icmp samesign ult i64 %0, %2
   ret i1 %3
 }
 
@@ -74,10 +73,32 @@ entry:
 ; yosys/optimized/glift.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i1 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 32, i64 48
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
+  ret i1 %3
+}
+
+; 2 occurrences:
+; darktable/optimized/introspection_highlights.c.ll
+; linux/optimized/hiddev.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i64 %0, i1 %1) #0 {
+entry:
+  %2 = select i1 %1, i64 2, i64 1
+  %3 = icmp ult i64 %0, %2
+  ret i1 %3
+}
+
+; 2 occurrences:
+; node/optimized/libnode.inspector_socket.ll
+; nuttx/optimized/lib_strtold.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000026(i64 %0, i1 %1) #0 {
+entry:
+  %2 = select i1 %1, i64 2, i64 8
+  %3 = icmp slt i64 %0, %2
   ret i1 %3
 }
 

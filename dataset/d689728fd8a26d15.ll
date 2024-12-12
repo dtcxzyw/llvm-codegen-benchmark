@@ -1,6 +1,9 @@
 
+%"class.hermes::vm::PinnedHermesValue.3081022" = type { %"class.hermes::vm::HermesValue.3081023" }
+%"class.hermes::vm::HermesValue.3081023" = type { i64 }
+
 ; 24 occurrences:
-; hermes/optimized/Interpreter.cpp.ll
+; boost/optimized/url_base.ll
 ; hermes/optimized/NativeFormatting.cpp.ll
 ; llvm/optimized/NativeFormatting.cpp.ll
 ; openjdk/optimized/c1_Runtime1.ll
@@ -25,13 +28,26 @@
 ; openjdk/optimized/vframe.ll
 ; velox/optimized/UnsafeRowSerializer.cpp.ll
 ; Function Attrs: nounwind
+define ptr @func000000000000005e(ptr %0, i64 %1) #0 {
+entry:
+  %2 = shl i64 %1, 32
+  %3 = ashr exact i64 %2, 32
+  %4 = sub nsw i64 0, %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 16
+  %6 = getelementptr nusw i64, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 1 occurrences:
+; hermes/optimized/Interpreter.cpp.ll
+; Function Attrs: nounwind
 define ptr @func000000000000005a(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw i8, ptr %0, i64 16
-  %6 = getelementptr nusw i64, ptr %5, i64 %4
+  %5 = getelementptr nusw i8, ptr %0, i64 -56
+  %6 = getelementptr nusw %"class.hermes::vm::PinnedHermesValue.3081022", ptr %5, i64 %4
   ret ptr %6
 }
 

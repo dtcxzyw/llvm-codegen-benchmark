@@ -9,12 +9,12 @@ func000000000000007a:                   # @func000000000000007a
 	addl	%edi, %eax
 	shrl	$8, %eax
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	imull	$85, %esi, %eax
 	addl	%edi, %eax
 	shrl	$8, %eax
 	retq
-func000000000000003b:                   # @func000000000000003b
+func000000000000007b:                   # @func000000000000007b
 	imull	$85, %esi, %eax
 	addl	%edi, %eax
 	shrl	$24, %eax

@@ -1,5 +1,5 @@
 
-; 356 occurrences:
+; 355 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/abcNtbdd.c.ll
 ; abc/optimized/abcNtk.c.ll
@@ -18,10 +18,13 @@
 ; abc/optimized/lpkSets.c.ll
 ; assimp/optimized/RemoveVCProcess.cpp.ll
 ; assimp/optimized/X3DImporter_Postprocess.cpp.ll
+; boost/optimized/dump.ll
+; boost/optimized/gregorian.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; bullet3/optimized/btDiscreteDynamicsWorld.ll
 ; clamav/optimized/matcher-pcre.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
-; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
 ; coreutils-rs/optimized/2jm5bfr1qa6ga934.ll
 ; coreutils-rs/optimized/2qsl5bwp4bvo535d.ll
 ; cpython/optimized/_codecs_jp.ll
@@ -64,7 +67,6 @@
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
 ; folly/optimized/Uri.cpp.ll
-; freetype/optimized/sfnt.c.ll
 ; git/optimized/default.ll
 ; git/optimized/push.ll
 ; git/optimized/revision.ll
@@ -81,11 +83,9 @@
 ; hyperscan/optimized/stream_compress.c.ll
 ; icu/optimized/dtptngen.ll
 ; icu/optimized/gregocal.ll
-; icu/optimized/gregoimp.ll
 ; icu/optimized/package.ll
 ; icu/optimized/ubidiln.ll
 ; icu/optimized/uchar.ll
-; icu/optimized/uresbund.ll
 ; icu/optimized/uresdata.ll
 ; icu/optimized/uts46.ll
 ; imgui/optimized/imgui.cpp.ll
@@ -100,15 +100,12 @@
 ; linux/optimized/blk-map.ll
 ; linux/optimized/blk-mq.ll
 ; linux/optimized/cancel.ll
-; linux/optimized/cn_proc.ll
 ; linux/optimized/ds.ll
-; linux/optimized/hash.ll
 ; linux/optimized/hda_auto_parser.ll
 ; linux/optimized/hub.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/intel_color.ll
 ; linux/optimized/intel_crtc.ll
-; linux/optimized/intel_display_debugfs.ll
 ; linux/optimized/interrupt.ll
 ; linux/optimized/io_uring.ll
 ; linux/optimized/journal.ll
@@ -192,7 +189,6 @@
 ; llvm/optimized/ParseDeclCXX.cpp.ll
 ; llvm/optimized/ParsedAttr.cpp.ll
 ; llvm/optimized/ProcessImplicitDefs.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/ReachingDefAnalysis.cpp.ll
 ; llvm/optimized/RegAllocFast.cpp.ll
@@ -236,6 +232,8 @@
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
 ; luau/optimized/OptimizeConstProp.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_label.ll
 ; lz4/optimized/lz4frame.c.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
@@ -244,7 +242,6 @@
 ; minetest/optimized/mg_decoration.cpp.ll
 ; minetest/optimized/noise.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
-; mitsuba3/optimized/x86func.cpp.ll
 ; ncnn/optimized/expanddims.cpp.ll
 ; ncnn/optimized/gridsample_x86_avx.cpp.ll
 ; ncnn/optimized/gridsample_x86_avx512.cpp.ll
@@ -320,6 +317,7 @@
 ; ruby/optimized/ossl_asn1.ll
 ; ruby/optimized/regcomp.ll
 ; ruby/optimized/regparse.ll
+; sentencepiece/optimized/bpe_model_trainer.cc.ll
 ; sentencepiece/optimized/time.cc.ll
 ; slurm/optimized/KeccakSponge.ll
 ; slurm/optimized/cons_helpers.ll
@@ -355,6 +353,7 @@
 ; z3/optimized/subpaving_mpff.cpp.ll
 ; z3/optimized/subpaving_mpfx.cpp.ll
 ; z3/optimized/subpaving_mpq.cpp.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
 ; zxing/optimized/ODCode93Writer.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0) #0 {

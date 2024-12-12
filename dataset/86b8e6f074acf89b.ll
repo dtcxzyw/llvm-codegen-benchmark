@@ -21,7 +21,7 @@
 ; wireshark/optimized/packet-dvmrp.c.ll
 ; wireshark/optimized/packet-ipars.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i8 %0, i8 %1) #0 {
+define i32 @func0000000000000021(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 0
   %3 = icmp eq i8 %0, 0
@@ -34,7 +34,7 @@ entry:
 ; linux/optimized/namei_msdos.ll
 ; proxygen/optimized/HTTP1xCodec.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c1(i8 %0, i8 %1) #0 {
+define i32 @func0000000000000181(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 0
   %3 = icmp eq i8 %0, 1
@@ -47,7 +47,7 @@ entry:
 ; linux/optimized/psmouse-base.ll
 ; llvm/optimized/InstructionCombining.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000cc(i8 %0, i8 %1) #0 {
+define i32 @func000000000000018c(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 0
   %3 = icmp ne i8 %0, 0
@@ -57,21 +57,9 @@ entry:
 }
 
 ; 1 occurrences:
-; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
-; Function Attrs: nounwind
-define i32 @func000000000000008c(i8 %0, i8 %1) #0 {
-entry:
-  %2 = icmp ugt i8 %1, 5
-  %3 = icmp ne i8 %0, 0
-  %4 = select i1 %3, i1 %2, i1 false
-  %5 = select i1 %4, i32 123, i32 118
-  ret i32 %5
-}
-
-; 1 occurrences:
 ; linux/optimized/smpboot.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000081(i8 %0, i8 %1) #0 {
+define i32 @func0000000000000101(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ugt i8 %1, 14
   %3 = icmp eq i8 %0, 2

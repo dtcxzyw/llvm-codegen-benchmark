@@ -23,11 +23,11 @@ define i1 @func0000000000000007(double %0) #0 {
 entry:
   %1 = fptosi double %0 to i32
   %2 = sitofp i32 %1 to double
-  %3 = fcmp une double %2, %0
+  %3 = fcmp une double %0, %2
   ret i1 %3
 }
 
-; 48 occurrences:
+; 47 occurrences:
 ; casadi/optimized/sx_elem.cpp.ll
 ; darktable/optimized/export.c.ll
 ; hermes/optimized/Dumper.cpp.ll
@@ -66,7 +66,6 @@ entry:
 ; opencv/optimized/gfluidcore.cpp.ll
 ; openssl/optimized/libcrypto-lib-params.ll
 ; openssl/optimized/libcrypto-shlib-params.ll
-; proj/optimized/io.cpp.ll
 ; proj/optimized/proj_json_streaming_writer.cpp.ll
 ; redis/optimized/ltable.ll
 ; redis/optimized/lua_cmsgpack.ll
@@ -81,7 +80,7 @@ define i1 @func0000000000000008(double %0) #0 {
 entry:
   %1 = fptosi double %0 to i32
   %2 = sitofp i32 %1 to double
-  %3 = fcmp oeq double %2, %0
+  %3 = fcmp oeq double %0, %2
   ret i1 %3
 }
 
@@ -105,7 +104,7 @@ define i1 @func0000000000000004(double %0) #0 {
 entry:
   %1 = fptosi double %0 to i32
   %2 = sitofp i32 %1 to double
-  %3 = fcmp olt double %2, %0
+  %3 = fcmp ogt double %0, %2
   ret i1 %3
 }
 
@@ -116,7 +115,7 @@ define i1 @func0000000000000002(double %0) #0 {
 entry:
   %1 = fptosi double %0 to i32
   %2 = sitofp i32 %1 to double
-  %3 = fcmp ogt double %2, %0
+  %3 = fcmp olt double %0, %2
   ret i1 %3
 }
 

@@ -1,10 +1,13 @@
 
-; 47 occurrences:
+; 51 occurrences:
 ; abseil-cpp/optimized/convert_test.cc.ll
 ; abseil-cpp/optimized/examples_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/uniform_real_distribution_test.cc.ll
 ; assimp/optimized/TextureTransform.cpp.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/btGeneric6DofSpring2Constraint.ll
 ; bullet3/optimized/btSoftBody.ll
 ; draco/optimized/attribute_octahedron_transform.cc.ll
@@ -44,6 +47,7 @@
 ; openspiel/optimized/simple_gin_rummy_bot.cc.ll
 ; openusd/optimized/crease.cpp.ll
 ; pocketpy/optimized/linalg.cpp.ll
+; typst-rs/optimized/1aflftgqyuracvze.ll
 ; velox/optimized/BaseVector.cpp.ll
 ; velox/optimized/Bridge.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll

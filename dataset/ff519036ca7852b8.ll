@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 39 occurrences:
 ; c3c/optimized/sema_stmts.c.ll
 ; git/optimized/transport.ll
 ; hermes/optimized/DebugInfo.cpp.ll
@@ -38,6 +38,7 @@
 ; wireshark/optimized/packet-gtp.c.ll
 ; wireshark/optimized/packet-ieee80211-radiotap.c.ll
 ; wireshark/optimized/packet-rdt.c.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000001(i8 %0) #0 {
 entry:

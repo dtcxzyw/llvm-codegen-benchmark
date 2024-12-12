@@ -11,3 +11,15 @@ func0000000000000015:                   # @func0000000000000015
 	imulq	$86400, %rsi, %rax              # imm = 0x15180
 	addq	%rcx, %rax
 	retq
+func0000000000000055:                   # @func0000000000000055
+	movl	%edx, %ecx
+	subq	%rdi, %rcx
+	imulq	$1000, %rsi, %rax               # imm = 0x3E8
+	addq	%rcx, %rax
+	retq
+func0000000000000044:                   # @func0000000000000044
+	movl	%edx, %ecx
+	subq	%rdi, %rcx
+	imulq	$1000, %rsi, %rax               # imm = 0x3E8
+	addq	%rcx, %rax
+	retq

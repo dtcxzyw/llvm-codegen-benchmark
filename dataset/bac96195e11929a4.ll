@@ -6,7 +6,7 @@
 ; openssl/optimized/libssl-shlib-quic_txp.ll
 ; redis/optimized/networking.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = icmp eq i32 %1, 0
@@ -18,7 +18,7 @@ entry:
 ; 1 occurrences:
 ; slurm/optimized/reservation.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000181(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = icmp eq i32 %1, 0
@@ -30,7 +30,7 @@ entry:
 ; 1 occurrences:
 ; lodepng/optimized/lodepng.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000101(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, 16
   %4 = icmp eq i32 %1, 0
@@ -42,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/Expr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000188(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = icmp ugt i32 %1, 1

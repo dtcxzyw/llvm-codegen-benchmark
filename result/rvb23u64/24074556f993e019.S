@@ -9,7 +9,7 @@ func000000000000000a:                   # @func000000000000000a
 	add	a1, a1, a2
 	slt	a0, a0, a1
 	ret
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	sext.w	a0, a0
 	addi	a1, a1, 7
 	sraiw	a2, a1, 31
@@ -18,7 +18,7 @@ func000000000000002a:                   # @func000000000000002a
 	sraiw	a1, a1, 3
 	slt	a0, a0, a1
 	ret
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	sext.w	a0, a0
 	addi	a1, a1, 7
 	sraiw	a2, a1, 31
@@ -27,7 +27,7 @@ func0000000000000028:                   # @func0000000000000028
 	sraiw	a1, a1, 3
 	sltu	a0, a0, a1
 	ret
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	sext.w	a0, a0
 	addi	a1, a1, 7
 	sraiw	a2, a1, 31
@@ -37,7 +37,7 @@ func0000000000000021:                   # @func0000000000000021
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	sext.w	a0, a0
 	addi	a1, a1, 1
 	srliw	a2, a1, 31
@@ -53,19 +53,6 @@ func0000000000000006:                   # @func0000000000000006
 	add	a1, a1, a2
 	sraiw	a1, a1, 3
 	slt	a0, a1, a0
-	ret
-func0000000000000024:                   # @func0000000000000024
-	sext.w	a0, a0
-	addiw	a1, a1, -10
-	lui	a2, 729444
-	addiw	a2, a2, 713
-	mul	a2, a2, a1
-	srli	a2, a2, 32
-	add	a1, a1, a2
-	srliw	a2, a1, 31
-	sraiw	a1, a1, 5
-	add	a1, a1, a2
-	sltu	a0, a1, a0
 	ret
 func0000000000000007:                   # @func0000000000000007
 	sext.w	a0, a0
@@ -87,4 +74,12 @@ func0000000000000008:                   # @func0000000000000008
 	add	a1, a1, a2
 	sraiw	a1, a1, 14
 	sltu	a0, a0, a1
+	ret
+func0000000000000044:                   # @func0000000000000044
+	sext.w	a0, a0
+	addi	a1, a1, -1
+	srliw	a2, a1, 31
+	add	a1, a1, a2
+	sraiw	a1, a1, 1
+	sltu	a0, a1, a0
 	ret

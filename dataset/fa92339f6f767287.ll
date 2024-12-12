@@ -102,7 +102,7 @@ entry:
   %3 = mul nuw i64 %2, 4164903690
   %4 = add nuw i64 %3, %1
   %5 = lshr i64 %4, 32
-  %6 = add nuw i64 %5, %0
+  %6 = add nuw i64 %0, %5
   %7 = lshr i64 %6, 32
   ret i64 %7
 }

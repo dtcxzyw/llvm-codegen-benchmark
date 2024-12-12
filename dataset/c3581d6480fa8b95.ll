@@ -14,7 +14,7 @@ entry:
   %3 = add i32 %2, %1
   %4 = udiv i32 %3, %1
   %5 = icmp sgt i32 %4, 0
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

@@ -1,3 +1,9 @@
+func0000000000000000:                   # @func0000000000000000
+	andq	$-4, %rdx
+	addq	%rsi, %rdx
+	andq	$-4, %rdx
+	leaq	-8(%rdi,%rdx), %rax
+	retq
 func0000000000000007:                   # @func0000000000000007
 	addq	%rdx, %rsi
 	movb	$51, %al

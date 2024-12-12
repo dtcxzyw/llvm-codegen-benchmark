@@ -25,5 +25,5 @@ func0000000000000001:                   # @func0000000000000001
 	addi	a0, a0, 1077
 	vmacc.vx	v12, a0, v10
 	vsra.vi	v10, v12, 18
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret

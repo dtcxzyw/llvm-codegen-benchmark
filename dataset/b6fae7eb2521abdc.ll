@@ -1,5 +1,5 @@
 
-; 31 occurrences:
+; 30 occurrences:
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/Glucose.cpp.ll
@@ -16,7 +16,6 @@
 ; abc/optimized/satInterP.c.ll
 ; abc/optimized/satStore.c.ll
 ; linux/optimized/percpu.ll
-; linux/optimized/posix-clock.ll
 ; linux/optimized/posix-cpu-timers.ll
 ; minetest/optimized/guiHyperText.cpp.ll
 ; opencv/optimized/contours.cpp.ll

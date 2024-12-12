@@ -1,26 +1,14 @@
 func0000000000000030:                   // @func0000000000000030
 // %bb.0:                               // %entry
-	ushll2	v5.4s, v4.8h, #3
-	ushll	v4.4s, v4.4h, #3
-	add	v1.4s, v3.4s, v1.4s
-	add	v0.4s, v2.4s, v0.4s
-	movi	v2.4s, #12
-	add	v1.4s, v1.4s, v5.4s
-	add	v0.4s, v0.4s, v4.4s
-	add	v1.4s, v1.4s, v2.4s
-	add	v0.4s, v0.4s, v2.4s
+	add	w8, w1, w0
+	add	w8, w8, w2, uxth #3
+	add	w0, w8, #12
 	ret
                                         // -- End function
 func00000000000000ff:                   // @func00000000000000ff
 // %bb.0:                               // %entry
-	ushll2	v5.4s, v4.8h, #1
-	ushll	v4.4s, v4.4h, #1
-	add	v1.4s, v3.4s, v1.4s
-	add	v0.4s, v2.4s, v0.4s
-	movi	v2.4s, #4
-	add	v1.4s, v1.4s, v5.4s
-	add	v0.4s, v0.4s, v4.4s
-	add	v1.4s, v1.4s, v2.4s
-	add	v0.4s, v0.4s, v2.4s
+	add	w8, w1, w0
+	add	w8, w8, w2, uxth #1
+	add	w0, w8, #4
 	ret
                                         // -- End function

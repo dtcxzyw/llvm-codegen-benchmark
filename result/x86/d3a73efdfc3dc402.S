@@ -1,17 +1,17 @@
-func00000000000003ac:                   # @func00000000000003ac
+func0000000000000d4c:                   # @func0000000000000d4c
 	movl	$1, %eax
 	shlxl	%edx, %eax, %eax
-	cmpl	%esi, %eax
-	setl	%cl
+	cmpl	%eax, %esi
+	setg	%cl
 	testl	%edi, %edi
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000281:                   # @func0000000000000281
+func0000000000000901:                   # @func0000000000000901
 	movl	$1, %eax
 	shlxl	%edx, %eax, %eax
-	cmpl	%esi, %eax
-	setb	%cl
+	cmpl	%eax, %esi
+	seta	%cl
 	testl	%edi, %edi
 	sete	%al
 	andb	%cl, %al

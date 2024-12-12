@@ -1,11 +1,10 @@
 
-; 34 occurrences:
+; 33 occurrences:
 ; arrow/optimized/compare.cc.ll
 ; arrow/optimized/coo_converter.cc.ll
 ; arrow/optimized/csf_converter.cc.ll
 ; arrow/optimized/csx_converter.cc.ll
 ; arrow/optimized/int_util.cc.ll
-; arrow/optimized/light_array.cc.ll
 ; arrow/optimized/list_util.cc.ll
 ; arrow/optimized/row_encoder.cc.ll
 ; arrow/optimized/vector_selection_filter_internal.cc.ll

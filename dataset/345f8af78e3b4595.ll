@@ -34,25 +34,12 @@
 ; yosys/optimized/rtlil.ll
 ; yosys/optimized/verilog_backend.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = icmp eq i32 %2, 63
   %5 = select i1 %4, i32 0, i32 %3
   %6 = icmp ne i32 %5, %1
-  %7 = select i1 %0, i1 true, i1 %6
-  ret i1 %7
-}
-
-; 1 occurrences:
-; opencv/optimized/lsc.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000016a(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %2, -1
-  %4 = icmp slt i32 %2, 2
-  %5 = select i1 %4, i32 0, i32 %3
-  %6 = icmp sgt i32 %5, %1
   %7 = select i1 %0, i1 true, i1 %6
   ret i1 %7
 }

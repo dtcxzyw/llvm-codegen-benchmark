@@ -8,7 +8,7 @@ func0000000000000005:                   # @func0000000000000005
 	notb	%dil
 	movzbl	%dil, %eax
 	andl	$1, %eax
-	leaq	1(%rax,%rsi), %rax
+	leaq	1(%rsi,%rax), %rax
 	retq
 func000000000000000f:                   # @func000000000000000f
 	leaq	5(%rsi), %rax

@@ -39,8 +39,8 @@ func0000000000000003:                   # @func0000000000000003
 	.quad	92                              # 0x5c
 func000000000000003a:                   # @func000000000000003a
 	vpaddq	%ymm1, %ymm1, %ymm2
-	vpaddq	%ymm0, %ymm1, %ymm0
-	vpaddq	%ymm0, %ymm2, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
+	vpaddq	%ymm2, %ymm0, %ymm0
 	vpandq	.LCPI3_0(%rip){1to4}, %ymm0, %ymm0
 	vpaddq	.LCPI3_1(%rip){1to4}, %ymm0, %ymm0
 	retq

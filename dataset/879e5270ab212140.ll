@@ -127,7 +127,7 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 32768
   %3 = icmp eq i32 %2, 0
@@ -142,7 +142,7 @@ entry:
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = icmp eq i32 %2, 0
@@ -151,36 +151,34 @@ entry:
   ret i32 %5
 }
 
-; 6 occurrences:
-; linux/optimized/ht.ll
-; linux/optimized/nvram.ll
-; llvm/optimized/BitcodeWriter.cpp.ll
-; llvm/optimized/Globals.cpp.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
-; wireshark/optimized/packet-ansi_683.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 1
-  %3 = icmp eq i32 %2, 0
-  %4 = add nuw nsw i32 %0, 1
-  %5 = select i1 %3, i32 0, i32 %4
-  ret i32 %5
-}
-
-; 6 occurrences:
+; 7 occurrences:
 ; icu/optimized/collationcompare.ll
 ; icu/optimized/collationkeys.ll
 ; llvm/optimized/BitcodeWriter.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; sentencepiece/optimized/builder.cc.ll
 ; sentencepiece/optimized/normalizer.cc.ll
 ; sentencepiece/optimized/unigram_model.cc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 256
+  %2 = and i32 %1, 1024
   %3 = icmp eq i32 %2, 0
-  %4 = add i32 %0, 3
+  %4 = add i32 %0, -1
+  %5 = select i1 %3, i32 6, i32 %4
+  ret i32 %5
+}
+
+; 3 occurrences:
+; llvm/optimized/BitcodeWriter.cpp.ll
+; llvm/optimized/Globals.cpp.ll
+; wireshark/optimized/packet-ansi_683.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 63
+  %3 = icmp eq i32 %2, 0
+  %4 = add nuw nsw i32 %0, 131072
   %5 = select i1 %3, i32 0, i32 %4
   ret i32 %5
 }
@@ -188,7 +186,7 @@ entry:
 ; 1 occurrences:
 ; llama.cpp/optimized/ggml-quants.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 4194304
   %.not.not = icmp eq i32 %2, 0

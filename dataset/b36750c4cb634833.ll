@@ -1,6 +1,5 @@
 
-; 18 occurrences:
-; libquic/optimized/x_bignum.c.ll
+; 17 occurrences:
 ; linux/optimized/ohci-hcd.ll
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
@@ -24,17 +23,16 @@ entry:
   %2 = and i32 %1, 3840
   %3 = icmp eq i32 %2, 256
   %4 = zext i1 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
-; 62 occurrences:
+; 63 occurrences:
 ; abc/optimized/abcIfMux.c.ll
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/bmcBmc3.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; abc/optimized/cecSeq.c.ll
-; abc/optimized/covMinUtil.c.ll
 ; abc/optimized/fraigMan.c.ll
 ; abc/optimized/giaBound.c.ll
 ; abc/optimized/giaDup.c.ll
@@ -91,17 +89,20 @@ entry:
 ; wireshark/optimized/packet-tetra.c.ll
 ; wireshark/optimized/proto.c.ll
 ; wolfssl/optimized/random.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000063(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1835008
   %3 = icmp ne i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
 ; 238 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -184,7 +185,6 @@ entry:
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/coredump.ll
 ; linux/optimized/forcedeth.ll
-; linux/optimized/i915_debugfs.ll
 ; llvm/optimized/BitcodeWriter.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
@@ -346,7 +346,7 @@ entry:
   %2 = and i32 %1, -16777216
   %3 = icmp ne i32 %2, 16777216
   %4 = zext i1 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -381,11 +381,11 @@ entry:
   %2 = and i32 %1, 7936
   %3 = icmp eq i32 %2, 256
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
-; 23 occurrences:
+; 20 occurrences:
 ; abc/optimized/abcCut.c.ll
 ; abc/optimized/darCore.c.ll
 ; abc/optimized/giaAigerExt.c.ll
@@ -397,14 +397,11 @@ entry:
 ; gromacs/optimized/gen_ad.cpp.ll
 ; icu/optimized/msgfmt.ll
 ; icu/optimized/ucnvbocu.ll
-; libquic/optimized/x_long.c.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; opencv/optimized/Sobel_Demo.cpp.ll
 ; opencv/optimized/erfilter.cpp.ll
 ; opencv/optimized/phasecorr.cpp.ll
-; openssl/optimized/libcrypto-lib-x_bignum.ll
 ; openssl/optimized/libcrypto-lib-x_long.ll
-; openssl/optimized/libcrypto-shlib-x_bignum.ll
 ; openssl/optimized/libcrypto-shlib-x_long.ll
 ; postgres/optimized/pruneheap.ll
 ; redis/optimized/cluster_legacy.ll
@@ -415,7 +412,7 @@ entry:
   %2 = and i32 %1, 7
   %3 = icmp eq i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -427,9 +424,9 @@ entry:
 define i32 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 511
-  %3 = icmp eq i32 %2, 0
+  %3 = icmp eq i32 %2, 511
   %4 = zext i1 %3 to i32
-  %5 = add nuw i32 %4, %0
+  %5 = add nuw i32 %0, %4
   ret i32 %5
 }
 
@@ -673,7 +670,7 @@ entry:
   %2 = and i32 %1, -3
   %3 = icmp ne i32 %2, 184
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -686,7 +683,7 @@ entry:
   %2 = and i32 %1, -2147483645
   %3 = icmp sgt i32 %2, 0
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -694,48 +691,48 @@ entry:
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000023(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000a3(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
-  %3 = icmp ult i32 %2, 127
+  %3 = icmp samesign ult i32 %2, 127
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
 ; 1 occurrences:
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000a1(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
-  %3 = icmp ult i32 %2, 127
+  %3 = icmp samesign ult i32 %2, 127
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
 ; 1 occurrences:
 ; pbrt-v4/optimized/shapes.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000041(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000c1(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 8388607
-  %3 = icmp ugt i32 %2, 3474674
+  %3 = icmp samesign ugt i32 %2, 3474674
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
 ; 1 occurrences:
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000043(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000c3(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
-  %3 = icmp ugt i32 %2, 62
+  %3 = icmp samesign ugt i32 %2, 62
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 

@@ -3,7 +3,7 @@ func0000000000000000:                   # @func0000000000000000
 	lui	a2, 524296
 	srli	a1, a1, 32
 	addiw	a2, a2, 1
-	mul	a0, a1, a0
+	mul	a0, a0, a1
 	slli	a1, a2, 32
 	add	a1, a1, a2
 	mulhu	a1, a0, a1
@@ -18,7 +18,7 @@ func0000000000000007:                   # @func0000000000000007
 	lui	a2, %hi(.LCPI1_0)
 	ld	a2, %lo(.LCPI1_0)(a2)
 	sext.w	a1, a1
-	mul	a0, a1, a0
+	mul	a0, a0, a1
 	srli	a1, a0, 1
 	mulhu	a1, a1, a2
 	andi	a2, a1, -2

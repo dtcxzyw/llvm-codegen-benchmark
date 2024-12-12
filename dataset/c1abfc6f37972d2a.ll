@@ -31,31 +31,6 @@ entry:
   ret i32 %6
 }
 
-; 2 occurrences:
-; linux/optimized/airtime.ll
-; php/optimized/image.ll
-; Function Attrs: nounwind
-define i32 @func000000000000007f(i32 %0, i32 %1, i8 %2) #0 {
-entry:
-  %3 = zext nneg i8 %2 to i32
-  %4 = shl nuw nsw i32 %1, 2
-  %5 = add nuw nsw i32 %4, %3
-  %6 = add nuw nsw i32 %5, %0
-  ret i32 %6
-}
-
-; 1 occurrences:
-; hermes/optimized/JSLexer.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000040(i32 %0, i32 %1, i8 %2) #0 {
-entry:
-  %3 = zext nneg i8 %2 to i32
-  %4 = shl i32 %1, 4
-  %5 = add i32 %4, %3
-  %6 = add i32 %5, %0
-  ret i32 %6
-}
-
 ; 1 occurrences:
 ; wireshark/optimized/packet-icmpv6.c.ll
 ; Function Attrs: nounwind

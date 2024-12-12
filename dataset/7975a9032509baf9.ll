@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; assimp/optimized/zip.c.ll
 ; grpc/optimized/timeout_encoding.cc.ll
 ; hermes/optimized/zip.c.ll
@@ -17,6 +17,7 @@
 ; ruby/optimized/gc.ll
 ; stb/optimized/stb_herringbone_wang_tile.c.ll
 ; wireshark/optimized/packet-mrp-msrp.c.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000006(i16 %0) #0 {
 entry:
@@ -25,8 +26,9 @@ entry:
   ret i16 %2
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; grpc/optimized/timeout_encoding.cc.ll
+; lvgl/optimized/lv_anim.ll
 ; postgres/optimized/utf8_and_gb18030.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; tomlplusplus/optimized/toml.cpp.ll
@@ -40,7 +42,8 @@ entry:
   ret i16 %2
 }
 
-; 7 occurrences:
+; 9 occurrences:
+; boost/optimized/to_chars.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; icu/optimized/collationiterator.ll
 ; openusd/optimized/testGfColor.cpp.ll
@@ -48,6 +51,7 @@ entry:
 ; sentencepiece/optimized/time.cc.ll
 ; wireshark/optimized/packet-ansi_637.c.ll
 ; wireshark/optimized/packet-lldp.c.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000002(i16 %0) #0 {
 entry:

@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 14 occurrences:
 ; hermes/optimized/BytecodeGenerator.cpp.ll
 ; hermes/optimized/CFG.cpp.ll
 ; hermes/optimized/LowerBuiltinCalls.cpp.ll
@@ -12,11 +12,13 @@
 ; mold/optimized/arch-sparc64.cc.ll
 ; postgres/optimized/resowner.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
-  %4 = xor i64 %3, %0
+  %4 = xor i64 %0, %3
   %5 = trunc i64 %4 to i32
   ret i32 %5
 }

@@ -1,14 +1,14 @@
 
 ; 12 occurrences:
-; abc/optimized/abcExact.c.ll
 ; abc/optimized/acbMfs.c.ll
 ; abc/optimized/amapMatch.c.ll
 ; abc/optimized/amapOutput.c.ll
 ; abc/optimized/giaIf.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/ifTruth.c.ll
-; abc/optimized/sbdCnf.c.ll
 ; abc/optimized/sfmCnf.c.ll
+; boost/optimized/format_args.ll
+; boost/optimized/pct_format.ll
 ; libquic/optimized/spdy_alt_svc_wire_format.cc.ll
 ; linux/optimized/rate.ll
 ; php/optimized/ir.ll

@@ -1,5 +1,5 @@
 
-; 106 occurrences:
+; 105 occurrences:
 ; casadi/optimized/constant_mx.cpp.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
@@ -16,7 +16,6 @@
 ; g2o/optimized/optimization_algorithm_dogleg.cpp.ll
 ; graphviz/optimized/geom.c.ll
 ; gromacs/optimized/autocorr.cpp.ll
-; gromacs/optimized/dlagtf.cpp.ll
 ; gromacs/optimized/dlagts.cpp.ll
 ; gromacs/optimized/dlasq2.cpp.ll
 ; gromacs/optimized/muParser.cpp.ll
@@ -114,8 +113,15 @@ entry:
   ret double %3
 }
 
-; 60 occurrences:
+; 66 occurrences:
 ; arrow/optimized/tdigest.cc.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; casadi/optimized/constant_mx.cpp.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/fmu2.cpp.ll
@@ -150,7 +156,6 @@ entry:
 ; openusd/optimized/homogeneous.cpp.ll
 ; postgres/optimized/float.ll
 ; postgres/optimized/mcv.ll
-; proj/optimized/cs2cs.cpp.ll
 ; proj/optimized/eck3.cpp.ll
 ; proj/optimized/helmert.cpp.ll
 ; proj/optimized/transformation.cpp.ll
@@ -183,7 +188,9 @@ entry:
   ret double %3
 }
 
-; 33 occurrences:
+; 35 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; casadi/optimized/idas.c.ll

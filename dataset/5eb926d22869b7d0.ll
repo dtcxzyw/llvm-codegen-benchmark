@@ -4,7 +4,7 @@
 ; openssl/optimized/libcrypto-lib-ecp_nistz256.ll
 ; openssl/optimized/libcrypto-shlib-ecp_nistz256.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e4(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001d4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = or disjoint i32 %3, %1
@@ -17,13 +17,13 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/kitTruth.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 24
   %4 = or i32 %3, %1
   %5 = lshr i32 %4, %0
   %6 = and i32 %5, 14
-  %7 = icmp ult i32 %6, 10
+  %7 = icmp samesign ult i32 %6, 10
   ret i1 %7
 }
 

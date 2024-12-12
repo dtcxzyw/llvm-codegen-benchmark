@@ -1,4 +1,4 @@
-func000000000000015a:                   # @func000000000000015a
+func00000000000002aa:                   # @func00000000000002aa
 	movslq	%edx, %rax
 	imulq	$-2147418109, %rax, %rcx        # imm = 0x80010003
 	shrq	$32, %rcx
@@ -9,6 +9,6 @@ func000000000000015a:                   # @func000000000000015a
 	addl	%ecx, %eax
 	leal	(%rax,%rax,4), %eax
 	leal	2(%rsi,%rax), %eax
-	cmpl	%edi, %eax
-	setl	%al
+	cmpl	%eax, %edi
+	setg	%al
 	retq

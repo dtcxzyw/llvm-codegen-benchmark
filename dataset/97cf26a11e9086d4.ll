@@ -1,5 +1,5 @@
 
-; 55 occurrences:
+; 56 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/absDup.c.ll
 ; abc/optimized/absGla.c.ll
@@ -46,6 +46,7 @@
 ; icu/optimized/collation.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; llvm/optimized/SemaConcept.cpp.ll
+; lvgl/optimized/lv_imagebutton.ll
 ; rustfmt-rs/optimized/1mznjg1e09hdetpr.ll
 ; rustfmt-rs/optimized/2tgwtv970e5remme.ll
 ; rustfmt-rs/optimized/2vbyym84o66crvo9.ll
@@ -83,17 +84,18 @@ entry:
   %2 = lshr i64 %1, 40
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = and i32 %3, 255
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absOut.c.ll
 ; abc/optimized/cecSolve.c.ll
 ; glslang/optimized/iomapper.cpp.ll
 ; hdf5/optimized/H5Iint.c.ll
+; lvgl/optimized/lv_draw_image.ll
 ; openjdk/optimized/multiVis.ll
 ; openspiel/optimized/quoridor.cc.ll
 ; openusd/optimized/cpuEvaluator.cpp.ll
@@ -141,10 +143,12 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
+; 7 occurrences:
 ; abc/optimized/bmcUnroll.c.ll
 ; abc/optimized/epd.c.ll
 ; linux/optimized/tg3.ll
+; llvm/optimized/CGCall.cpp.ll
+; llvm/optimized/CGExprCXX.cpp.ll
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; wireshark/optimized/packet-s101.c.ll
 ; Function Attrs: nounwind
@@ -153,7 +157,7 @@ entry:
   %2 = lshr i64 %1, 52
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = and i32 %3, 2047
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -166,7 +170,7 @@ entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
   %4 = and i32 %3, 1431655765
-  %5 = add nuw i32 %4, %0
+  %5 = add nuw i32 %0, %4
   ret i32 %5
 }
 
@@ -186,7 +190,7 @@ entry:
   %2 = lshr i64 %1, 1
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, -16
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -198,7 +202,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 8
   %4 = and i32 %3, 255
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 

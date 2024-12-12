@@ -38,12 +38,3 @@ func00000000000000c7:                   # @func00000000000000c7
 	orb	%dl, %al
 	andb	%cl, %al
 	retq
-.LCPI4_0:
-	.quad	0x3ff0000000000000              # double 1
-func00000000000000cc:                   # @func00000000000000cc
-	vucomisd	.LCPI4_0(%rip), %xmm0
-	setae	%cl
-	testq	%rdi, %rdi
-	setne	%al
-	andb	%cl, %al
-	retq

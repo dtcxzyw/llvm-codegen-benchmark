@@ -16,13 +16,13 @@ func000000000000000a:                   # @func000000000000000a
 	setl	%al
 	orb	%dil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	xorb	$1, %dil
 	cmpl	$128, %esi
 	setb	%al
 	orb	%dil, %al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	xorb	$1, %dil
 	cmpl	$28, %esi
 	setae	%al

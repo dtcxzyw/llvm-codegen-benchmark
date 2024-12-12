@@ -31,11 +31,10 @@ entry:
   ret i32 %3
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; linux/optimized/blk-mq.ll
 ; linux/optimized/core.ll
 ; linux/optimized/dm.ll
-; linux/optimized/hda_codec.ll
 ; linux/optimized/random.ll
 ; linux/optimized/swiotlb.ll
 ; linux/optimized/workqueue.ll
@@ -55,12 +54,11 @@ entry:
   ret i32 %3
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; clamav/optimized/mew.c.ll
 ; icu/optimized/decNumber.ll
 ; jq/optimized/decNumber.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; openjdk/optimized/divnode.ll
 ; qemu/optimized/hw_virtio_virtio.c.ll
 ; Function Attrs: nounwind

@@ -38,17 +38,17 @@ func000000000000000f:                   # @func000000000000000f
 	slli	a0, a0, 32
 	or	a0, a0, a1
 	ret
-func0000000000000017:                   # @func0000000000000017
-	add	a1, a1, a2
-	zext.w	a1, a1
-	sh2add	a0, a0, a1
-	ret
 func000000000000001d:                   # @func000000000000001d
 	addw	a1, a1, a2
 	slli	a0, a0, 32
 	or	a0, a0, a1
 	ret
 func0000000000000011:                   # @func0000000000000011
+	add	a1, a1, a2
+	slli	a0, a0, 32
+	add.uw	a0, a1, a0
+	ret
+func0000000000000017:                   # @func0000000000000017
 	add	a1, a1, a2
 	slli	a0, a0, 32
 	add.uw	a0, a1, a0

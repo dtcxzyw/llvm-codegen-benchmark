@@ -28,3 +28,13 @@ func0000000000000008:                   # @func0000000000000008
 	cmovbl	%esi, %edi
 	movslq	%edi, %rax
 	retq
+func0000000000000018:                   # @func0000000000000018
+	cmpl	$19969, %edx                    # imm = 0x4E01
+	cmovbl	%esi, %edi
+	movslq	%edi, %rax
+	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpl	$2, %edx
+	cmovael	%esi, %edi
+	movslq	%edi, %rax
+	retq

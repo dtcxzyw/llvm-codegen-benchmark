@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 22 occurrences:
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; meshoptimizer/optimized/vertexcodec.cpp.ll
@@ -19,15 +19,14 @@
 ; pybind11/optimized/test_tagbased_polymorphic.cpp.ll
 ; pybind11/optimized/test_virtual_functions.cpp.ll
 ; qemu/optimized/fpu_softfloat.c.ll
-; qemu/optimized/hw_net_tulip.c.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; wireshark/optimized/packet-btle.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0, i8 %1) #0 {
 entry:
-  %2 = lshr i8 %1, 4
-  %3 = xor i8 %2, %0
+  %2 = lshr i8 %1, 1
+  %3 = xor i8 %0, %2
   ret i8 %3
 }
 

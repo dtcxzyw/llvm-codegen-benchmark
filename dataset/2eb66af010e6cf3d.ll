@@ -3,7 +3,7 @@
 ; openjdk/optimized/jdmarker.ll
 ; openspiel/optimized/euchre.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 3
   %3 = add nsw i32 %0, -8
@@ -16,7 +16,7 @@ entry:
 ; ncnn/optimized/mat_pixel_resize.cpp.ll
 ; raylib/optimized/rmodels.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000e1(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 3
   %3 = add nuw nsw i32 %0, 1
@@ -30,7 +30,7 @@ entry:
 ; yalantinglibs/optimized/client_pools.cpp.ll
 ; yalantinglibs/optimized/concurrent_clients.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 20
   %3 = add nuw nsw i32 %0, 1
@@ -48,7 +48,7 @@ entry:
 ; eastl/optimized/TestVectorSet.cpp.ll
 ; imgui/optimized/imgui_demo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000e6(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 3
   %3 = add nuw nsw i32 %0, 3
@@ -56,7 +56,7 @@ entry:
   ret i1 %4
 }
 
-; 1051 occurrences:
+; 1050 occurrences:
 ; hermes/optimized/Analysis.cpp.ll
 ; hermes/optimized/BCOpt.cpp.ll
 ; hermes/optimized/BlockScopingTransformations.cpp.ll
@@ -803,7 +803,6 @@ entry:
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
@@ -1121,7 +1120,7 @@ entry:
 ; hermes/optimized/APFloat.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 8651
   %3 = add nsw i32 %0, 28738
@@ -1133,7 +1132,7 @@ entry:
 ; hermes/optimized/APFloat.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000086(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 12655
   %3 = add i32 %0, -42039
@@ -1151,7 +1150,7 @@ entry:
 ; llvm/optimized/SplitKit.cpp.ll
 ; llvm/optimized/VarLocBasedImpl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000188(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 9
   %3 = add i32 %0, 1
@@ -1162,7 +1161,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-ansi_683.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000184(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 3
   %3 = add i32 %0, -1
@@ -1195,7 +1194,7 @@ entry:
 ; 1 occurrences:
 ; nori/optimized/nanovg.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000da(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001aa(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 6
   %3 = add nsw i32 %0, 6
@@ -1221,7 +1220,7 @@ entry:
 ; z3/optimized/mpz.cpp.ll
 ; z3/optimized/sat_ddfw.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 11
   %3 = add nuw i32 %0, 1
@@ -1233,11 +1232,11 @@ entry:
 ; zxing/optimized/ODDataBarExpandedReader.cpp.ll
 ; zxing/optimized/ODDataBarReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001f8(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 9
   %3 = add nuw nsw i32 %0, 5
-  %4 = icmp ugt i32 %3, %2
+  %4 = icmp samesign ugt i32 %3, %2
   ret i1 %4
 }
 
@@ -1245,7 +1244,7 @@ entry:
 ; zxing/optimized/ODDataBarExpandedReader.cpp.ll
 ; zxing/optimized/ODDataBarReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d6(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001a6(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 13
   %3 = add nsw i32 %0, -5
@@ -1256,7 +1255,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/pg_ctl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000066(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 10
   %3 = add nuw nsw i32 %0, 1
@@ -1267,7 +1266,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/speech_recognition.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000181(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 6
   %3 = add i32 %0, 1
@@ -1278,7 +1277,7 @@ entry:
 ; 1 occurrences:
 ; openblas/optimized/dbdsqr.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 6
   %3 = add nsw i32 %0, 1

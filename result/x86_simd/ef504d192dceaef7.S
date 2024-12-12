@@ -3,7 +3,7 @@ func0000000000000036:                   # @func0000000000000036
 	vpslld	$3, %xmm2, %xmm2
 	vpmovzxbd	%xmm1, %xmm1            # xmm1 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero
 	vpsllvd	%xmm2, %xmm1, %xmm1
-	vpor	%xmm0, %xmm1, %xmm0
+	vpor	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 func0000000000000004:                   # @func0000000000000004
@@ -43,7 +43,7 @@ func0000000000000008:                   # @func0000000000000008
 	vpaddd	%xmm2, %xmm2, %xmm2
 	vpmovzxbd	%xmm1, %xmm1            # xmm1 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero
 	vpsllvd	%xmm2, %xmm1, %xmm1
-	vpor	%xmm0, %xmm1, %xmm0
+	vpor	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 func0000000000000006:                   # @func0000000000000006

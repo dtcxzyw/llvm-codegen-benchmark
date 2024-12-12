@@ -1,5 +1,6 @@
 
-; 26 occurrences:
+; 27 occurrences:
+; boost/optimized/area.ll
 ; clamav/optimized/clamdtop.c.ll
 ; cvc5/optimized/ackermann.cpp.ll
 ; faiss/optimized/VectorTransform.cpp.ll

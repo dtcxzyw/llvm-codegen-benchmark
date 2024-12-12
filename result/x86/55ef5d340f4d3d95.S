@@ -1,18 +1,12 @@
-func0000000000000064:                   # @func0000000000000064
+func00000000000000c4:                   # @func00000000000000c4
 	shrl	$3, %esi
 	subq	%rsi, %rdi
 	cmpq	%rsi, %rdi
 	setb	%al
 	retq
-func0000000000000068:                   # @func0000000000000068
+func00000000000000c8:                   # @func00000000000000c8
 	shrl	$3, %esi
 	subq	%rsi, %rdi
 	cmpq	%rsi, %rdi
 	seta	%al
-	retq
-func0000000000000056:                   # @func0000000000000056
-	shrl	%esi
-	subq	%rsi, %rdi
-	cmpq	%rsi, %rdi
-	setl	%al
 	retq

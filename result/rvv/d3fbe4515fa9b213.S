@@ -62,7 +62,7 @@ func0000000000000008:                   # @func0000000000000008
 	fld	fa5, %lo(.LCPI6_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfdiv.vf	v16, v16, fa5
-	vmfeq.vv	v0, v16, v8
+	vmfeq.vv	v0, v8, v16
 	ret
 .LCPI7_0:
 	.quad	0x400921fb54442d18              # double 3.1415926535897931
@@ -71,5 +71,5 @@ func0000000000000007:                   # @func0000000000000007
 	fld	fa5, %lo(.LCPI7_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfdiv.vf	v16, v16, fa5
-	vmfne.vv	v0, v16, v8
+	vmfne.vv	v0, v8, v16
 	ret

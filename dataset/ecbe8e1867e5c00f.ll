@@ -1,6 +1,7 @@
 
-; 227 occurrences:
-; bdwgc/optimized/gc.c.ll
+%struct.GC_hblk_s.2705275 = type { [4096 x i8] }
+
+; 225 occurrences:
 ; hermes/optimized/FoldingSet.cpp.ll
 ; hermes/optimized/StringSaver.cpp.ll
 ; llvm/optimized/API.cpp.ll
@@ -220,7 +221,6 @@
 ; mimalloc/optimized/os.c.ll
 ; mitsuba3/optimized/zone.cpp.ll
 ; nuttx/optimized/mempool_multiple.c.ll
-; openjdk/optimized/cardTable.ll
 ; openjdk/optimized/os.ll
 ; openjdk/optimized/os_linux.ll
 ; openjdk/optimized/os_posix.ll
@@ -231,7 +231,7 @@
 define ptr @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
-  %4 = and i64 %3, %1
+  %4 = and i64 %1, %3
   %5 = inttoptr i64 %4 to ptr
   %6 = getelementptr nusw i8, ptr %5, i64 %0
   ret ptr %6
@@ -246,9 +246,23 @@ entry:
 define ptr @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = and i64 %3, %1
+  %4 = and i64 %1, %3
   %5 = inttoptr i64 %4 to ptr
   %6 = getelementptr nusw i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 3 occurrences:
+; bdwgc/optimized/gc.c.ll
+; boost/optimized/src.ll
+; openjdk/optimized/cardTable.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 0, %2
+  %4 = and i64 %1, %3
+  %5 = inttoptr i64 %4 to ptr
+  %6 = getelementptr nusw nuw %struct.GC_hblk_s.2705275, ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -260,7 +274,7 @@ entry:
 define ptr @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
-  %4 = and i64 %3, %1
+  %4 = and i64 %1, %3
   %5 = inttoptr i64 %4 to ptr
   %6 = getelementptr i8, ptr %5, i64 %0
   ret ptr %6
@@ -272,7 +286,7 @@ entry:
 define ptr @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = and i64 %3, %1
+  %4 = and i64 %1, %3
   %5 = inttoptr i64 %4 to ptr
   %6 = getelementptr i8, ptr %5, i64 %0
   ret ptr %6

@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	incl	%edi
 	testl	$65533, %edi                    # imm = 0xFFFD
 	sete	%al
@@ -17,7 +17,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpw	$100, %ax
 	setae	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	movl	%edi, %eax
 	negw	%ax
 	cmovsw	%di, %ax
@@ -25,14 +25,21 @@ func0000000000000014:                   # @func0000000000000014
 	cmpl	$16384, %eax                    # imm = 0x4000
 	setb	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	movl	%edi, %eax
 	negw	%ax
 	cmovsw	%di, %ax
 	cmpw	$5, %ax
 	setae	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000018:                   # @func0000000000000018
+	movl	%edi, %eax
+	negw	%ax
+	cmovsw	%di, %ax
+	cmpw	$100, %ax
+	setae	%al
+	retq
+func0000000000000048:                   # @func0000000000000048
 	movl	%edi, %eax
 	negw	%ax
 	cmovsw	%di, %ax

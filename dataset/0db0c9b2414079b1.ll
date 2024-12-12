@@ -5,7 +5,7 @@
 ; llvm/optimized/XCOFFObjectFile.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000184(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 14
   %3 = xor i64 %0, -1
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/Minidump.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw i64 %1, 108
   %3 = xor i64 %0, -1

@@ -1,6 +1,6 @@
-func0000000000000096:                   # @func0000000000000096
+func0000000000000126:                   # @func0000000000000126
 	vpmovqd	%ymm2, %xmm2
-	vpaddd	%xmm1, %xmm2, %xmm1
+	vpaddd	%xmm2, %xmm1, %xmm1
 	vpextrd	$1, %xmm1, %eax
 	vpextrd	$1, %xmm0, %ecx
 	cltd
@@ -26,9 +26,9 @@ func0000000000000096:                   # @func0000000000000096
 	vpcmpgtd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
-func00000000000000d1:                   # @func00000000000000d1
+func00000000000001a1:                   # @func00000000000001a1
 	vpmovqd	%ymm2, %xmm2
-	vpaddd	%xmm1, %xmm2, %xmm1
+	vpaddd	%xmm2, %xmm1, %xmm1
 	vpextrd	$1, %xmm1, %eax
 	vpextrd	$1, %xmm0, %ecx
 	cltd
@@ -56,7 +56,7 @@ func00000000000000d1:                   # @func00000000000000d1
 	retq
 func0000000000000001:                   # @func0000000000000001
 	vpmovqd	%ymm2, %xmm2
-	vpaddd	%xmm1, %xmm2, %xmm1
+	vpaddd	%xmm2, %xmm1, %xmm1
 	vpextrd	$1, %xmm1, %eax
 	vpextrd	$1, %xmm0, %ecx
 	cltd
@@ -82,9 +82,9 @@ func0000000000000001:                   # @func0000000000000001
 	vpcmpeqd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpmovqd	%ymm2, %xmm2
-	vpaddd	%xmm1, %xmm2, %xmm1
+	vpaddd	%xmm2, %xmm1, %xmm1
 	vpextrd	$1, %xmm1, %eax
 	vpextrd	$1, %xmm0, %ecx
 	cltd

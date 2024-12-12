@@ -1,5 +1,5 @@
 
-; 74 occurrences:
+; 75 occurrences:
 ; box2d/optimized/b2_distance.cpp.ll
 ; box2d/optimized/b2_edge_shape.cpp.ll
 ; box2d/optimized/b2_polygon_shape.cpp.ll
@@ -29,6 +29,7 @@
 ; bullet3/optimized/btSoftMultiBodyDynamicsWorld.ll
 ; bullet3/optimized/btSoftRigidDynamicsWorld.ll
 ; bullet3/optimized/btStaticPlaneShape.ll
+; darktable/optimized/introspection_colorbalancergb.c.ll
 ; g2o/optimized/vertex_ellipse.cpp.ll
 ; gromacs/optimized/coupling.cpp.ll
 ; gromacs/optimized/gmx_vanhove.cpp.ll

@@ -26,3 +26,17 @@ func000000000000000c:                   # @func000000000000000c
 	testb	$1, %dil
 	cmovel	%esi, %eax
 	retq
+func0000000000000018:                   # @func0000000000000018
+	xorl	%eax, %eax
+	cmpb	$2, %dl
+	setae	%al
+	testb	$1, %dil
+	cmovel	%esi, %eax
+	retq
+func0000000000000014:                   # @func0000000000000014
+	xorl	%eax, %eax
+	cmpb	$3, %dl
+	setb	%al
+	testb	$1, %dil
+	cmovel	%esi, %eax
+	retq

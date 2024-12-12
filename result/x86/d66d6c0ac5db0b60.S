@@ -1,39 +1,39 @@
-func000000000000008c:                   # @func000000000000008c
-	movl	$1, %eax
+func000000000000010c:                   # @func000000000000010c
+	movq	$-1, %rax
 	shlxq	%rsi, %rax, %rax
-	addq	%rdi, %rax
+	cmpq	%rax, %rdi
 	setne	%al
 	retq
-func0000000000000081:                   # @func0000000000000081
-	movl	$1, %eax
+func0000000000000101:                   # @func0000000000000101
+	movq	$-1, %rax
 	shlxq	%rsi, %rax, %rax
-	addq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func00000000000000c8:                   # @func00000000000000c8
+func0000000000000188:                   # @func0000000000000188
 	movl	$1, %eax
 	shlxq	%rsi, %rax, %rax
 	addq	%rdi, %rax
 	cmpq	$2147483647, %rax               # imm = 0x7FFFFFFF
 	seta	%al
 	retq
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	movl	$1, %eax
 	shlxq	%rsi, %rax, %rax
 	addq	%rdi, %rax
 	cmpq	$2147483647, %rax               # imm = 0x7FFFFFFF
 	seta	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	movq	$-1, %rax
 	shlxq	%rsi, %rax, %rax
 	addq	%rdi, %rax
 	sete	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
-	movl	$64, %eax
+	movq	$-64, %rax
 	shlxq	%rsi, %rax, %rax
-	addq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
 func0000000000000008:                   # @func0000000000000008
@@ -44,16 +44,16 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	%rcx, %rax
 	seta	%al
 	retq
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	movl	$1, %eax
 	shlxq	%rsi, %rax, %rax
 	addq	%rdi, %rax
 	cmpq	$16384, %rax                    # imm = 0x4000
 	setb	%al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
-	movl	$4, %eax
+func0000000000000181:                   # @func0000000000000181
+	movq	$-4, %rax
 	shlxq	%rsi, %rax, %rax
-	addq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq

@@ -15,7 +15,7 @@
 define i64 @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = and i64 %3, 1
   ret i64 %4
 }
@@ -150,14 +150,13 @@ entry:
 define i64 @func0000000000000003(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = and i64 %3, -65281
   ret i64 %4
 }
 
-; 42 occurrences:
+; 41 occurrences:
 ; cpython/optimized/typeobject.ll
-; libquic/optimized/persistent_memory_allocator.cc.ll
 ; libquic/optimized/x509_vfy.c.ll
 ; linux/optimized/if.ll
 ; linux/optimized/libahci.ll
@@ -202,12 +201,12 @@ entry:
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %.tr = trunc i64 %0 to i32
-  %.narrow = or i32 %.tr, %1
+  %.narrow = or i32 %1, %.tr
   %2 = zext i32 %.narrow to i64
   ret i64 %2
 }
 
-; 19 occurrences:
+; 20 occurrences:
 ; abc/optimized/bmcFx.c.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/xhci-ring.ll
@@ -223,6 +222,7 @@ entry:
 ; mold/optimized/output-chunks.cc.SH4.cc.ll
 ; opencv/optimized/circlesgrid.cpp.ll
 ; openmpi/optimized/instance.ll
+; openspiel/optimized/2048.cc.ll
 ; openspiel/optimized/coin_game.cc.ll
 ; openspiel/optimized/coop_box_pushing.cc.ll
 ; openspiel/optimized/quoridor.cc.ll

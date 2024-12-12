@@ -1,28 +1,18 @@
-func0000000000000354:                   // @func0000000000000354
+func0000000000000eb4:                   // @func0000000000000eb4
 // %bb.0:                               // %entry
-	cmhi	v4.2d, v3.2d, v1.2d
-	cmhi	v5.2d, v2.2d, v0.2d
-	sub	v1.2d, v1.2d, v4.2d
-	sub	v0.2d, v0.2d, v5.2d
-	cmhs	v1.2d, v3.2d, v1.2d
-	cmhs	v0.2d, v2.2d, v0.2d
-	uzp1	v2.4s, v5.4s, v4.4s
-	uzp1	v0.4s, v0.4s, v1.4s
-	and	v0.16b, v2.16b, v0.16b
-	xtn	v0.4h, v0.4s
+	cmp	x0, x1
+	cinc	x8, x0, lo
+	cset	w9, lo
+	cmp	x8, x1
+	csel	w0, wzr, w9, hi
 	ret
                                         // -- End function
-func0000000000000254:                   // @func0000000000000254
+func00000000000008a4:                   // @func00000000000008a4
 // %bb.0:                               // %entry
-	cmhi	v4.2d, v3.2d, v1.2d
-	cmhi	v5.2d, v2.2d, v0.2d
-	sub	v1.2d, v1.2d, v4.2d
-	sub	v0.2d, v0.2d, v5.2d
-	cmhs	v1.2d, v3.2d, v1.2d
-	cmhs	v0.2d, v2.2d, v0.2d
-	uzp1	v2.4s, v5.4s, v4.4s
-	uzp1	v0.4s, v0.4s, v1.4s
-	and	v0.16b, v2.16b, v0.16b
-	xtn	v0.4h, v0.4s
+	cmp	x0, x1
+	cinc	x8, x0, lo
+	cset	w9, lo
+	cmp	x8, x1
+	csel	w0, wzr, w9, hi
 	ret
                                         // -- End function

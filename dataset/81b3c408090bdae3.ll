@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0, i16 %1) #0 {
+define i1 @func000000000000008c(i64 %0, i16 %1) #0 {
 entry:
   %2 = icmp ult i16 %1, 3
   %3 = icmp ne i64 %0, 0
@@ -17,7 +17,7 @@ entry:
 ; slurm/optimized/slurmstepd_job.ll
 ; tls-rs/optimized/1pt3w3786vo2dyk0.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %1, 0
   %3 = icmp eq i64 %0, 0
@@ -29,7 +29,7 @@ entry:
 ; llvm/optimized/DependencyDirectivesScanner.cpp.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %1, 0
   %3 = icmp slt i64 %0, 0
@@ -44,7 +44,7 @@ entry:
 ; libquic/optimized/s3_srvr.c.ll
 ; linux/optimized/iter.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i16 %1) #0 {
+define i1 @func000000000000018c(i64 %0, i16 %1) #0 {
 entry:
   %2 = icmp ne i16 %1, 0
   %3 = icmp ne i64 %0, 0
@@ -52,7 +52,43 @@ entry:
   ret i1 %4
 }
 
-; 56 occurrences:
+; 2 occurrences:
+; llvm/optimized/ParseDeclCXX.cpp.ll
+; llvm/optimized/ParseStmt.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000181(i64 %0, i16 %1) #0 {
+entry:
+  %2 = icmp ne i16 %1, 5
+  %3 = icmp eq i64 %0, 0
+  %4 = select i1 %3, i1 true, i1 %2
+  ret i1 %4
+}
+
+; 14 occurrences:
+; llvm/optimized/ASTContext.cpp.ll
+; llvm/optimized/ASTReader.cpp.ll
+; llvm/optimized/ObjectFilePCHContainerWriter.cpp.ll
+; llvm/optimized/SemaConcept.cpp.ll
+; llvm/optimized/SemaDecl.cpp.ll
+; llvm/optimized/SemaExprCXX.cpp.ll
+; llvm/optimized/SemaStmt.cpp.ll
+; llvm/optimized/SemaTemplate.cpp.ll
+; llvm/optimized/SemaTemplateDeduction.cpp.ll
+; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
+; llvm/optimized/SemaTemplateInstantiate.cpp.ll
+; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
+; llvm/optimized/StmtPrinter.cpp.ll
+; llvm/optimized/TextNodeDumper.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000188(i64 %0, i16 %1) #0 {
+entry:
+  %2 = icmp ne i16 %1, 0
+  %3 = icmp ugt i64 %0, 15
+  %4 = select i1 %3, i1 true, i1 %2
+  ret i1 %4
+}
+
+; 55 occurrences:
 ; llvm/optimized/Builtins.cpp.ll
 ; llvm/optimized/Preprocessor.cpp.ll
 ; openusd/optimized/fvarLevel.cpp.ll
@@ -107,10 +143,9 @@ entry:
 ; pybind11/optimized/test_unnamed_namespace_b.cpp.ll
 ; pybind11/optimized/test_vector_unique_ptr_member.cpp.ll
 ; pybind11/optimized/test_virtual_functions.cpp.ll
-; slurm/optimized/salloc.ll
 ; wireshark/optimized/packet-usb.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i16 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %1, 0
   %3 = icmp ne i64 %0, 0
@@ -118,50 +153,13 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
-; llvm/optimized/ParseDeclCXX.cpp.ll
-; llvm/optimized/ParseStmt.cpp.ll
+; 1 occurrences:
+; llvm/optimized/ASTImporter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i16 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i16 %1) #0 {
 entry:
-  %2 = icmp ne i16 %1, 5
+  %2 = icmp ult i16 %1, -5
   %3 = icmp eq i64 %0, 0
-  %4 = select i1 %3, i1 true, i1 %2
-  ret i1 %4
-}
-
-; 14 occurrences:
-; llvm/optimized/ASTContext.cpp.ll
-; llvm/optimized/ASTReader.cpp.ll
-; llvm/optimized/ObjectFilePCHContainerWriter.cpp.ll
-; llvm/optimized/SemaConcept.cpp.ll
-; llvm/optimized/SemaDecl.cpp.ll
-; llvm/optimized/SemaExprCXX.cpp.ll
-; llvm/optimized/SemaStmt.cpp.ll
-; llvm/optimized/SemaTemplate.cpp.ll
-; llvm/optimized/SemaTemplateDeduction.cpp.ll
-; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
-; llvm/optimized/SemaTemplateInstantiate.cpp.ll
-; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
-; llvm/optimized/StmtPrinter.cpp.ll
-; llvm/optimized/TextNodeDumper.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0, i16 %1) #0 {
-entry:
-  %2 = icmp ne i16 %1, 0
-  %3 = icmp ugt i64 %0, 15
-  %4 = select i1 %3, i1 true, i1 %2
-  ret i1 %4
-}
-
-; 2 occurrences:
-; hyperscan/optimized/mcclellancompile_util.cpp.ll
-; llvm/optimized/X86ISelDAGToDAG.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i16 %1) #0 {
-entry:
-  %2 = icmp eq i16 %1, 5
-  %3 = icmp ult i64 %0, 128
   %4 = select i1 %3, i1 true, i1 %2
   ret i1 %4
 }
@@ -169,10 +167,21 @@ entry:
 ; 1 occurrences:
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i64 %0, i16 %1) #0 {
+define i1 @func000000000000010c(i64 %0, i16 %1) #0 {
 entry:
   %2 = icmp ugt i16 %1, 4
   %3 = icmp ne i64 %0, 0
+  %4 = select i1 %3, i1 true, i1 %2
+  ret i1 %4
+}
+
+; 1 occurrences:
+; hyperscan/optimized/mcclellancompile_util.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i64 %0, i16 %1) #0 {
+entry:
+  %2 = icmp eq i16 %1, 1
+  %3 = icmp ult i64 %0, 2
   %4 = select i1 %3, i1 true, i1 %2
   ret i1 %4
 }

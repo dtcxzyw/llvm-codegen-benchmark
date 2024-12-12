@@ -28,5 +28,5 @@ func0000000000000010:                   # @func0000000000000010
 	vadd.vi	v12, v12, -1
 	vrsub.vi	v10, v10, 0
 	vand.vv	v10, v12, v10
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret

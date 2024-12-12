@@ -1,5 +1,5 @@
 
-; 316 occurrences:
+; 315 occurrences:
 ; brotli/optimized/entropy_encode.c.ll
 ; clamav/optimized/pe_icons.c.ll
 ; clamav/optimized/unpack.cpp.ll
@@ -227,7 +227,6 @@
 ; llvm/optimized/RDFLiveness.cpp.ll
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ReachingDefAnalysis.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/RegAllocFast.cpp.ll
@@ -324,7 +323,7 @@ entry:
   ret i32 %2
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; abc/optimized/cuddDecomp.c.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; gromacs/optimized/xtc3.c.ll
@@ -333,6 +332,7 @@ entry:
 ; linux/optimized/drm_modes.ll
 ; linux/optimized/page-writeback.ll
 ; linux/optimized/rhashtable.ll
+; lvgl/optimized/lv_color.ll
 ; opencv/optimized/object_tracker.cpp.ll
 ; slurm/optimized/job_mgr.ll
 ; zxing/optimized/AZDetector.cpp.ll

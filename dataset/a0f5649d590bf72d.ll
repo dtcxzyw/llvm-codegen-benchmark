@@ -1,5 +1,6 @@
 
-; 8 occurrences:
+; 9 occurrences:
+; linux/optimized/printk.ll
 ; rust-analyzer-rs/optimized/178ko0g73oimi4oy.ll
 ; rust-analyzer-rs/optimized/3j0nbdwupb3iwt86.ll
 ; rust-analyzer-rs/optimized/563918kfdqef84tz.ll
@@ -9,7 +10,7 @@
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i8 %0, i16 %1) #0 {
 entry:
   %2 = icmp ne i16 %1, 126
   %3 = icmp eq i8 %0, 0
@@ -17,14 +18,13 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
-; clamav/optimized/special.c.ll
+; 2 occurrences:
 ; icu/optimized/uidna.ll
 ; linux/optimized/intel_dp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i8 %0, i16 %1) #0 {
+define i1 @func0000000000000101(i8 %0, i16 %1) #0 {
 entry:
-  %2 = icmp ult i16 %1, 11
+  %2 = icmp ult i16 %1, 12
   %3 = icmp eq i8 %0, 0
   %4 = select i1 %2, i1 %3, i1 false
   ret i1 %4

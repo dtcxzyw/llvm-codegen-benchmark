@@ -1,5 +1,6 @@
 
-; 10 occurrences:
+; 11 occurrences:
+; boost/optimized/src.ll
 ; folly/optimized/SocketAddress.cpp.ll
 ; llvm/optimized/DebugInfoMetadata.cpp.ll
 ; llvm/optimized/EarlyCSE.cpp.ll
@@ -15,7 +16,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 2654435769
   %4 = add i64 %3, %1
-  %5 = xor i64 %4, %0
+  %5 = xor i64 %0, %4
   %6 = mul i64 %5, 1051668233026429277
   %7 = lshr i64 %6, 32
   ret i64 %7
@@ -29,7 +30,7 @@ define i64 @func0000000000000020(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 2654435769
   %4 = add i64 %3, %1
-  %5 = xor i64 %4, %0
+  %5 = xor i64 %0, %4
   %6 = mul i64 %5, 1051668233026429277
   %7 = lshr i64 %6, 32
   ret i64 %7

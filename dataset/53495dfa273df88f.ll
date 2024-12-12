@@ -1,5 +1,5 @@
 
-; 156 occurrences:
+; 149 occurrences:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcOrchestration.c.ll
@@ -33,13 +33,10 @@
 ; abc/optimized/wlcBlast.c.ll
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/7zCrc.c.ll
-; clamav/optimized/Bra86.c.ll
 ; clamav/optimized/petite.c.ll
 ; cmake/optimized/archive_blake2s_ref.c.ll
-; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; cmake/optimized/lzma_encoder.c.ll
 ; cmake/optimized/lzma_encoder_optimum_normal.c.ll
-; cmake/optimized/x86.c.ll
 ; cpython/optimized/blake2s_impl.ll
 ; darktable/optimized/introspection_flip.c.ll
 ; hdf5/optimized/H5checksum.c.ll
@@ -55,7 +52,6 @@
 ; linux/optimized/blake2s-generic.ll
 ; linux/optimized/vt.ll
 ; linux/optimized/xfrm_state.ll
-; linux/optimized/xz_dec_bcj.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
@@ -63,8 +59,7 @@
 ; meshlab/optimized/miniz.c.ll
 ; nori/optimized/bitmap.cpp.ll
 ; oniguruma/optimized/regcomp.ll
-; opencv/optimized/local_optimization.cpp.ll
-; opencv/optimized/seam_finders.cpp.ll
+; opencv/optimized/hough.cpp.ll
 ; opencv/optimized/t_hash_int.cpp.ll
 ; openexr/optimized/ImfWav.cpp.ll
 ; openexr/optimized/internal_piz.c.ll
@@ -113,7 +108,6 @@
 ; spike/optimized/kmmawt_u.ll
 ; spike/optimized/kstas32.ll
 ; spike/optimized/kstsa32.ll
-; spike/optimized/vsadd_vi.ll
 ; spike/optimized/vsadd_vv.ll
 ; spike/optimized/vsadd_vx.ll
 ; spike/optimized/vsm3c_vi.ll
@@ -155,7 +149,6 @@
 ; z3/optimized/theory_recfun.cpp.ll
 ; z3/optimized/theory_utvpi.cpp.ll
 ; z3/optimized/used_vars.cpp.ll
-; zxing/optimized/QRFormatInformation.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:

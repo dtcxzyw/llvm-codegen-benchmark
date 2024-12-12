@@ -1,4 +1,18 @@
 
+; 4 occurrences:
+; minetest/optimized/cavegen.cpp.ll
+; zstd/optimized/zstd_v02.c.ll
+; zstd/optimized/zstd_v03.c.ll
+; zstd/optimized/zstd_v04.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nuw nsw i32 %1, 1
+  %3 = sub nsw i32 %2, %0
+  %4 = shl i32 %3, 16
+  ret i32 %4
+}
+
 ; 3 occurrences:
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; icu/optimized/uniset.ll
@@ -12,7 +26,9 @@ entry:
   ret i32 %4
 }
 
-; 36 occurrences:
+; 38 occurrences:
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
 ; linux/optimized/gup.ll
@@ -89,20 +105,7 @@ entry:
 define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %0, -1
-  %3 = add i32 %2, %1
-  %4 = shl i32 %3, 16
-  ret i32 %4
-}
-
-; 3 occurrences:
-; zstd/optimized/zstd_v02.c.ll
-; zstd/optimized/zstd_v03.c.ll
-; zstd/optimized/zstd_v04.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add nuw nsw i32 %1, 1
-  %3 = sub nsw i32 %2, %0
+  %3 = add i32 %1, %2
   %4 = shl i32 %3, 16
   ret i32 %4
 }
@@ -113,7 +116,7 @@ entry:
 define i32 @func0000000000000013(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %0, -1
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   %4 = shl nuw nsw i32 %3, 2
   ret i32 %4
 }
@@ -124,7 +127,7 @@ entry:
 define i32 @func0000000000000017(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %0, -1
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   %4 = shl nuw nsw i32 %3, 2
   ret i32 %4
 }

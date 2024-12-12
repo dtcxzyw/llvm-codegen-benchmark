@@ -28,6 +28,21 @@ func0000000000000004:                   # @func0000000000000004
 	setb	%al
 	orb	%dil, %al
 	retq
+func0000000000000018:                   # @func0000000000000018
+	cmpq	$256, %rsi                      # imm = 0x100
+	setae	%al
+	orb	%dil, %al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpq	$8, %rsi
+	setb	%al
+	orb	%dil, %al
+	retq
+func0000000000000011:                   # @func0000000000000011
+	testq	%rsi, %rsi
+	sete	%al
+	orb	%dil, %al
+	retq
 func000000000000000b:                   # @func000000000000000b
 	testq	%rsi, %rsi
 	setns	%al

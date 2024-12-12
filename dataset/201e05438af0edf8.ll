@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; clamav/optimized/manager.c.ll
 ; clamav/optimized/ole2_extract.c.ll
 ; jq/optimized/regcomp.ll
@@ -13,11 +13,10 @@
 ; openjdk/optimized/gtk2_interface.ll
 ; openspiel/optimized/maedn.cc.ll
 ; slurm/optimized/cgroup_v1.ll
-; slurm/optimized/task_cgroup.ll
 ; wireshark/optimized/packet-ieee80211-radiotap.c.ll
 ; z3/optimized/nlqsat.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 2

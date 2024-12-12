@@ -26,3 +26,18 @@ func0000000000000008:                   # @func0000000000000008
 	czero.eqz	a0, a1, a0
 	addi	a0, a0, 80
 	ret
+func0000000000000014:                   # @func0000000000000014
+	srli	a0, a0, 32
+	li	a1, -1
+	slli	a1, a1, 43
+	czero.eqz	a0, a1, a0
+	li	a1, 7
+	slli	a1, a1, 43
+	add	a0, a0, a1
+	ret
+func0000000000000018:                   # @func0000000000000018
+	sltiu	a0, a0, 4
+	li	a1, -4
+	czero.eqz	a0, a1, a0
+	addi	a0, a0, 9
+	ret

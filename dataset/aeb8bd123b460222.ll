@@ -18,7 +18,7 @@ entry:
   ret i32 %5
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; openjdk/optimized/ByteGray.ll
 ; openjdk/optimized/ByteIndexed.ll
 ; openjdk/optimized/FourByteAbgr.ll
@@ -33,6 +33,7 @@ entry:
 ; openjdk/optimized/IntRgbx.ll
 ; openjdk/optimized/ThreeByteBgr.ll
 ; openjdk/optimized/mlib_ImageAffineEdge.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i1 %1, i32 %2) #0 {
 entry:
@@ -53,7 +54,7 @@ define i32 @func000000000000000d(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 32, %2
   %4 = select i1 %1, i32 %3, i32 1
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 

@@ -54,9 +54,11 @@ entry:
   ret i8 %4
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000007b(i32 %0) #0 {
 entry:

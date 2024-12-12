@@ -27,13 +27,12 @@ entry:
   ret i32 %3
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; eastl/optimized/EADateTime.cpp.ll
 ; gromacs/optimized/msd.cpp.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; icu/optimized/uniset.ll
 ; llvm/optimized/ConstantRange.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; sqlite/optimized/sqlite3.ll

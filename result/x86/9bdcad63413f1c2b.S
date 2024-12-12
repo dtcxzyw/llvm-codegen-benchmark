@@ -1,4 +1,4 @@
-func0000000000001901:                   # @func0000000000001901
+func0000000000006201:                   # @func0000000000006201
 	testl	%edx, %edx
 	setne	%al
 	cmpb	$2, %sil

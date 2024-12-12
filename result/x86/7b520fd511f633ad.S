@@ -1,13 +1,13 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	shll	$7, %edx
 	orl	$7, %edx
-	cmpl	%esi, %edx
+	cmpl	%edx, %esi
 	sete	%al
 	andb	%dil, %al
 	retq
-func000000000000003a:                   # @func000000000000003a
+func000000000000006a:                   # @func000000000000006a
 	leal	1(,%rdx,4), %eax
-	cmpl	%esi, %eax
-	setl	%al
+	cmpl	%eax, %esi
+	setg	%al
 	andb	%dil, %al
 	retq

@@ -1,5 +1,5 @@
 
-; 58 occurrences:
+; 70 occurrences:
 ; abc/optimized/cuddEssent.c.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
@@ -31,6 +31,7 @@
 ; llvm/optimized/SymbolDumper.cpp.ll
 ; llvm/optimized/TypeDumpVisitor.cpp.ll
 ; llvm/optimized/TypeRecordMapping.cpp.ll
+; lvgl/optimized/lv_obj_style.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/connection.cpp.ll
@@ -48,6 +49,9 @@
 ; rust-analyzer-rs/optimized/lkt0vc36jo6l130.ll
 ; softposit-rs/optimized/4x7uq85ym1obejw4.ll
 ; stockfish/optimized/search.ll
+; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; verilator/optimized/V3Const__gen.cpp.ll
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
@@ -58,11 +62,19 @@
 ; wireshark/optimized/packet-smb.c.ll
 ; wireshark/optimized/tap-rlc-graph.c.ll
 ; wireshark/optimized/tap-tcp-stream.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/7vgle1vcww8f84ro2xl2r2u8f.ll
+; zed-rs/optimized/8aib3kswyxtai67bpawu71ihu.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/a9n822469hhbvmntwly5c3zys.ll
+; zed-rs/optimized/bxm2tfnh5mvxjpr839l8em8o3.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %1, %2
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
@@ -76,22 +88,21 @@ entry:
 define i1 @func000000000000000b(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp sge i16 %1, %2
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
-; 20 occurrences:
+; 19 occurrences:
 ; clamav/optimized/matcher-ac.c.ll
 ; duckdb/optimized/ub_duckdb_expression_executor.cpp.ll
 ; faiss/optimized/partitioning.cpp.ll
-; harfbuzz/optimized/harfbuzz.cc.ll
 ; icu/optimized/normalizer2impl.ll
 ; icu/optimized/uniset.ll
 ; libquic/optimized/ssl_lib.c.ll
+; lvgl/optimized/lv_ime_pinyin.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/connection.cpp.ll
 ; minetest/optimized/connectionthreads.cpp.ll
-; openjdk/optimized/hb-ot-shape-normalize.ll
 ; openmpi/optimized/pml_ob1_recvfrag.ll
 ; openmpi/optimized/rmaps_base_map_job.ll
 ; postgres/optimized/xloginsert.ll
@@ -105,7 +116,7 @@ entry:
 define i1 @func0000000000000008(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp ugt i16 %1, %2
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
@@ -117,17 +128,16 @@ entry:
 define i1 @func000000000000000a(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp sgt i16 %1, %2
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
-; 23 occurrences:
+; 22 occurrences:
 ; bullet3/optimized/b3QuantizedBvh.ll
 ; bullet3/optimized/btGImpactQuantizedBvh.ll
 ; bullet3/optimized/btQuantizedBvh.ll
 ; icu/optimized/normalizer2impl.ll
 ; icu/optimized/uprops.ll
-; icu/optimized/ustring.ll
 ; linux/optimized/hdac_sysfs.ll
 ; linux/optimized/xt_conntrack.ll
 ; linux/optimized/xt_tcpudp.ll
@@ -143,8 +153,8 @@ entry:
 ; llvm/optimized/X86InstructionSelector.cpp.ll
 ; minetest/optimized/connection.cpp.ll
 ; minetest/optimized/connectionthreads.cpp.ll
-; opencv/optimized/binary_descriptor.cpp.ll
 ; recastnavigation/optimized/RecastLayers.cpp.ll
+; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000009(i1 %0, i16 %1, i16 %2) #0 {
 entry:
@@ -154,7 +164,6 @@ entry:
 }
 
 ; 26 occurrences:
-; abc/optimized/cuddEssent.c.ll
 ; faiss/optimized/partitioning.cpp.ll
 ; freetype/optimized/ftbase.c.ll
 ; icu/optimized/gencnval.ll
@@ -173,12 +182,13 @@ entry:
 ; openjdk/optimized/classFileParser.ll
 ; openmpi/optimized/pml_ob1_recvfrag.ll
 ; postgres/optimized/gistbuild.ll
-; qemu/optimized/hw_net_e1000.c.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; recastnavigation/optimized/RecastRegion.cpp.ll
 ; slurm/optimized/step_mgr.ll
 ; slurm/optimized/xcpuinfo.ll
-; wireshark/optimized/packet-enttec.c.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
+; turborepo-rs/optimized/c500hnb79kuh9h85697qija6o.ll
 ; wireshark/optimized/tap-rtp-analysis.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i16 %1, i16 %2) #0 {
@@ -197,7 +207,7 @@ entry:
 define i1 @func0000000000000007(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp sle i16 %1, %2
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
@@ -219,7 +229,7 @@ entry:
 define i1 @func0000000000000005(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp ule i16 %1, %2
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
@@ -254,7 +264,7 @@ entry:
 define i1 @func0000000000000006(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp slt i16 %1, %2
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 

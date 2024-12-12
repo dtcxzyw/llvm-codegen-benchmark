@@ -1,4 +1,4 @@
-func00000000000001f5:                   # @func00000000000001f5
+func00000000000003f5:                   # @func00000000000003f5
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v13, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
@@ -8,7 +8,7 @@ func00000000000001f5:                   # @func00000000000001f5
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmsleu.vv	v0, v10, v8
 	ret
-func00000000000001f8:                   # @func00000000000001f8
+func00000000000003f8:                   # @func00000000000003f8
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v13, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
@@ -18,7 +18,7 @@ func00000000000001f8:                   # @func00000000000001f8
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmsltu.vv	v0, v8, v10
 	ret
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v13, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
@@ -28,7 +28,7 @@ func0000000000000056:                   # @func0000000000000056
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmslt.vv	v0, v10, v8
 	ret
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v13, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
@@ -58,7 +58,7 @@ func000000000000000c:                   # @func000000000000000c
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmsne.vv	v0, v10, v8
 	ret
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v13, v12
 	vsetvli	zero, zero, e32, m2, ta, ma
@@ -68,7 +68,7 @@ func00000000000000f1:                   # @func00000000000000f1
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vmseq.vv	v0, v10, v8
 	ret
-func00000000000000fa:                   # @func00000000000000fa
+func00000000000001ea:                   # @func00000000000001ea
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vzext.vf2	v13, v12
 	vsetvli	zero, zero, e32, m2, ta, ma

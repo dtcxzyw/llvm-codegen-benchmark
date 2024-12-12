@@ -1,5 +1,5 @@
 
-; 149 occurrences:
+; 154 occurrences:
 ; abc/optimized/sfmDec.c.ll
 ; abc/optimized/sfmTim.c.ll
 ; assimp/optimized/IFCLoader.cpp.ll
@@ -79,8 +79,12 @@
 ; minetest/optimized/camera.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/clouds.cpp.ll
+; minetest/optimized/content_cao.cpp.ll
 ; minetest/optimized/guiScene.cpp.ll
+; minetest/optimized/l_object.cpp.ll
+; minetest/optimized/serverenvironment.cpp.ll
 ; minetest/optimized/sky.cpp.ll
+; minetest/optimized/unit_sao.cpp.ll
 ; minetest/optimized/wieldmesh.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/envmap.cpp.ll
@@ -149,6 +153,7 @@
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_colmaker.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(double %0) #0 {
 entry:

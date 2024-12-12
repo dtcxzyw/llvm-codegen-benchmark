@@ -190,7 +190,7 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/DateUtil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 86400
   %4 = icmp ne i64 %3, %1
@@ -214,7 +214,7 @@ entry:
 ; graphviz/optimized/mainwindow.cpp.ll
 ; llvm/optimized/CachePruning.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 1000000000
   %4 = icmp slt i64 %3, %1
@@ -225,7 +225,7 @@ entry:
 ; 1 occurrences:
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000035(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000065(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 56
   %4 = icmp ule i64 %3, %1
@@ -236,7 +236,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/colorSpace.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nuw i64 %2, 3
   %4 = icmp eq i64 %3, %1

@@ -29,8 +29,7 @@ entry:
   ret i64 %7
 }
 
-; 4 occurrences:
-; abc/optimized/verStream.c.ll
+; 3 occurrences:
 ; clamav/optimized/qtmd.c.ll
 ; libquic/optimized/asn1_par.c.ll
 ; zxing/optimized/QRMaskUtil.cpp.ll

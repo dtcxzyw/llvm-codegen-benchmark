@@ -1,4 +1,4 @@
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	bnez	a1, .LBB0_3
 	bnez	a0, .LBB0_4
 .LBB0_2:                                # %entry

@@ -40,7 +40,7 @@ func0000000000000002:                   # @func0000000000000002
 	vpmovb2m	%xmm0, %k0
 	vpandd	.LCPI0_2(%rip){1to8}, %ymm1, %ymm0
 	vpcmpeqw	.LCPI0_1(%rip), %ymm0, %k1
-	korw	%k0, %k1, %k0
+	korw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

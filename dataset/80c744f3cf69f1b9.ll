@@ -1,9 +1,8 @@
 
-; 2 occurrences:
-; php/optimized/pcre2_jit_compile.ll
+; 1 occurrences:
 ; qemu/optimized/ui_cursor.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %0, 16777215
   %3 = icmp eq i32 %2, %1

@@ -1,9 +1,8 @@
 
-; 21 occurrences:
+; 19 occurrences:
 ; libpng/optimized/pngrutil.c.ll
 ; libwebp/optimized/image_enc.c.ll
 ; linux/optimized/drm_gem_shmem_helper.ll
-; linux/optimized/he.ll
 ; linux/optimized/i915_gem_create.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/nl80211.ll
@@ -17,7 +16,6 @@
 ; openusd/optimized/stbImage.cpp.ll
 ; qemu/optimized/hw_block_pflash_cfi01.c.ll
 ; qemu/optimized/hw_core_loader.c.ll
-; qemu/optimized/ui_vnc-enc-zlib.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; wireshark/optimized/packet-ntp.c.ll

@@ -9,7 +9,7 @@ func00000000000000a5:                   # @func00000000000000a5
 	vucomisd	%xmm0, %xmm2
 	setb	%al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000144:                   # @func0000000000000144
 	cmpl	$4, %edi
 	setb	%al
 	kmovd	%eax, %k1

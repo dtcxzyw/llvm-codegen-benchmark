@@ -1,5 +1,5 @@
 
-; 91 occurrences:
+; 90 occurrences:
 ; abc/optimized/dchSim.c.ll
 ; abc/optimized/giaJf.c.ll
 ; abc/optimized/giaMf.c.ll
@@ -89,7 +89,6 @@
 ; pocketpy/optimized/compiler.cpp.ll
 ; pocketpy/optimized/expr.cpp.ll
 ; pocketpy/optimized/lexer.cpp.ll
-; postgres/optimized/tsvector_op.ll
 ; sentencepiece/optimized/unigram_model.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {

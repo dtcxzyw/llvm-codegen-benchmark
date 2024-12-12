@@ -38,9 +38,10 @@ entry:
   ret i32 %6
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; flac/optimized/decode.c.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; wireshark/optimized/packet-afp.c.ll
 ; Function Attrs: nounwind
@@ -92,21 +93,20 @@ entry:
   ret i32 %6
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; darktable/optimized/timeline.c.ll
 ; icu/optimized/mlbe.ll
-; slurm/optimized/ebpf.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000004f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 8
   %4 = select i1 %3, i32 62, i32 60
-  %5 = add nuw nsw i32 %4, %1
+  %5 = add nuw nsw i32 %1, %4
   %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
 
-; 20 occurrences:
+; 21 occurrences:
 ; abc/optimized/covMinEsop.c.ll
 ; abc/optimized/inflate.c.ll
 ; clamav/optimized/inflate64.c.ll
@@ -115,6 +115,7 @@ entry:
 ; libquic/optimized/inflate.c.ll
 ; linux/optimized/inflate.ll
 ; linux/optimized/trace_events_filter.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; opencv/optimized/ffilldemo.cpp.ll
 ; tev/optimized/ImageViewer.cpp.ll
 ; wireshark/optimized/packet-6lowpan.c.ll
@@ -132,7 +133,7 @@ define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1
   %4 = select i1 %3, i32 12, i32 17
-  %5 = add i32 %4, %1
+  %5 = add i32 %1, %4
   %6 = add i32 %5, %0
   ret i32 %6
 }
@@ -145,7 +146,7 @@ entry:
   %3 = icmp eq i32 %2, 8
   %4 = select i1 %3, i32 4, i32 3
   %5 = add nuw i32 %4, %1
-  %6 = add nuw i32 %5, %0
+  %6 = add nuw i32 %0, %5
   ret i32 %6
 }
 
@@ -157,7 +158,7 @@ define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 3
   %4 = select i1 %3, i32 0, i32 -4194304
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = add i32 %5, %0
   ret i32 %6
 }
@@ -196,7 +197,7 @@ define i32 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 3
   %4 = select i1 %3, i32 0, i32 4194304
-  %5 = add nsw i32 %4, %1
+  %5 = add nsw i32 %1, %4
   %6 = add nsw i32 %5, %0
   ret i32 %6
 }
@@ -210,7 +211,7 @@ define i32 @func000000000000001d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 3
   %4 = select i1 %3, i32 0, i32 4194304
-  %5 = add nuw nsw i32 %4, %1
+  %5 = add nuw nsw i32 %1, %4
   %6 = add nsw i32 %5, %0
   ret i32 %6
 }
@@ -243,6 +244,18 @@ entry:
   ret i32 %6
 }
 
+; 1 occurrences:
+; duckdb/optimized/ub_duckdb_common_types.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000018f(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i32 %2, 99999
+  %4 = select i1 %3, i32 6, i32 5
+  %5 = add nuw nsw i32 %4, %1
+  %6 = add nuw nsw i32 %5, %0
+  ret i32 %6
+}
+
 ; 6 occurrences:
 ; icu/optimized/ucnvmbcs.ll
 ; icu/optimized/uni2name.ll
@@ -265,9 +278,9 @@ entry:
 ; clamav/optimized/wwunpack.c.ll
 ; redis/optimized/rax.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000085(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000185(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, 16
+  %3 = icmp samesign ugt i32 %2, 16
   %4 = select i1 %3, i32 11, i32 12
   %5 = add nsw i32 %4, %1
   %6 = add nsw i32 %5, %0

@@ -13,12 +13,3 @@ func0000000000000001:                   # @func0000000000000001
 	subl	%ecx, %eax
 	addl	%esi, %eax
 	retq
-func0000000000000007:                   # @func0000000000000007
-	movl	%esi, %eax
-	shll	$21, %eax
-	orl	%edi, %eax
-	imulq	$1125899907, %rax, %rcx         # imm = 0x431BDE83
-	shrq	$50, %rcx
-	imull	$1000000, %ecx, %ecx            # imm = 0xF4240
-	subl	%ecx, %eax
-	retq

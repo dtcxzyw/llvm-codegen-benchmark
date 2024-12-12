@@ -1,11 +1,11 @@
 
-%"struct.Assimp::SMD::Vertex.2716623" = type { %class.aiVector3t.2716624, %class.aiVector3t.2716624, %class.aiVector3t.2716624, i32, %"class.std::vector.45.2716616" }
-%class.aiVector3t.2716624 = type { float, float, float }
-%"class.std::vector.45.2716616" = type { %"struct.std::_Vector_base.46.2716617" }
-%"struct.std::_Vector_base.46.2716617" = type { %"struct.std::_Vector_base<std::pair<unsigned int, float>, std::allocator<std::pair<unsigned int, float>>>::_Vector_impl.2716618" }
-%"struct.std::_Vector_base<std::pair<unsigned int, float>, std::allocator<std::pair<unsigned int, float>>>::_Vector_impl.2716618" = type { %"struct.std::_Vector_base<std::pair<unsigned int, float>, std::allocator<std::pair<unsigned int, float>>>::_Vector_impl_data.2716619" }
-%"struct.std::_Vector_base<std::pair<unsigned int, float>, std::allocator<std::pair<unsigned int, float>>>::_Vector_impl_data.2716619" = type { ptr, ptr, ptr }
-%struct.scatterlist.3353112 = type { i64, i32, i32, i64, i32, i32 }
+%"struct.Assimp::SMD::Vertex.2829156" = type { %class.aiVector3t.2829157, %class.aiVector3t.2829157, %class.aiVector3t.2829157, i32, %"class.std::vector.45.2829149" }
+%class.aiVector3t.2829157 = type { float, float, float }
+%"class.std::vector.45.2829149" = type { %"struct.std::_Vector_base.46.2829150" }
+%"struct.std::_Vector_base.46.2829150" = type { %"struct.std::_Vector_base<std::pair<unsigned int, float>, std::allocator<std::pair<unsigned int, float>>>::_Vector_impl.2829151" }
+%"struct.std::_Vector_base<std::pair<unsigned int, float>, std::allocator<std::pair<unsigned int, float>>>::_Vector_impl.2829151" = type { %"struct.std::_Vector_base<std::pair<unsigned int, float>, std::allocator<std::pair<unsigned int, float>>>::_Vector_impl_data.2829152" }
+%"struct.std::_Vector_base<std::pair<unsigned int, float>, std::allocator<std::pair<unsigned int, float>>>::_Vector_impl_data.2829152" = type { ptr, ptr, ptr }
+%struct.scatterlist.3540839 = type { i64, i32, i32, i64, i32, i32 }
 
 ; 4 occurrences:
 ; assimp/optimized/SMDLoader.cpp.ll
@@ -13,24 +13,24 @@
 ; hdf5/optimized/h5tools_dump.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i1 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = zext i32 %3 to i64
   %5 = select i1 %1, i64 0, i64 %4
-  %6 = getelementptr nusw [3 x %"struct.Assimp::SMD::Vertex.2716623"], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [3 x %"struct.Assimp::SMD::Vertex.2829156"], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; clamav/optimized/timefn.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000016(ptr %0, i1 %1, i32 %2) #0 {
+define ptr @func0000000000000017(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
   %5 = select i1 %1, i64 0, i64 %4
-  %6 = getelementptr nusw [6 x i32], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [6 x i32], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -52,12 +52,12 @@ entry:
 ; meshlab/optimized/filter_trioptimize.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i1 %1, i32 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = zext nneg i32 %3 to i64
   %5 = select i1 %1, i64 1, i64 %4
-  %6 = getelementptr nusw [4 x i32], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [4 x i32], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -65,12 +65,12 @@ entry:
 ; openmpi/optimized/alfg.ll
 ; openmpi/optimized/pmix_alfg.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i1 %1, i32 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = zext i32 %3 to i64
   %5 = select i1 %1, i64 0, i64 %4
-  %6 = getelementptr nusw [127 x i32], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [127 x i32], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -82,7 +82,7 @@ entry:
   %3 = add i32 %2, 1
   %4 = zext i32 %3 to i64
   %5 = select i1 %1, i64 0, i64 %4
-  %6 = getelementptr [19 x %struct.scatterlist.3353112], ptr %0, i64 0, i64 %5
+  %6 = getelementptr [19 x %struct.scatterlist.3540839], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -104,12 +104,12 @@ entry:
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i1 %1, i32 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = zext nneg i32 %3 to i64
   %5 = select i1 %1, i64 0, i64 %4
-  %6 = getelementptr nusw [124 x i32], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [124 x i32], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -122,12 +122,12 @@ entry:
 ; meshlab/optimized/filter_trioptimize.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i1 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
   %5 = select i1 %1, i64 0, i64 %4
-  %6 = getelementptr nusw [3 x ptr], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [3 x ptr], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 

@@ -1,9 +1,3 @@
-func0000000000000008:                   # @func0000000000000008
-	xorl	%eax, %eax
-	cmpb	$64, %dil
-	setae	%al
-	shll	$8, %eax
-	retq
 func0000000000000001:                   # @func0000000000000001
 	xorl	%ecx, %ecx
 	testb	%dil, %dil
@@ -33,5 +27,12 @@ func000000000000000c:                   # @func000000000000000c
 	xorl	%eax, %eax
 	testb	%dil, %dil
 	sete	%al
-	shll	$9, %eax
+	shll	$8, %eax
+	addl	$15643, %eax                    # imm = 0x3D1B
+	retq
+func0000000000000008:                   # @func0000000000000008
+	xorl	%eax, %eax
+	cmpb	$9, %dil
+	setae	%al
+	addl	%eax, %eax
 	retq

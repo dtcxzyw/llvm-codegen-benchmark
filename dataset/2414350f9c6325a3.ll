@@ -14,6 +14,30 @@ entry:
 }
 
 ; 1 occurrences:
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(i32 %0, i32 %1) #0 {
+entry:
+  %2 = mul i32 %1, -732923
+  %3 = lshr i32 %2, 20
+  %4 = add nsw i32 %3, %0
+  %5 = zext nneg i32 %4 to i64
+  ret i64 %5
+}
+
+; 1 occurrences:
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(i32 %0, i32 %1) #0 {
+entry:
+  %2 = mul i32 %1, 78913
+  %3 = lshr i32 %2, 18
+  %4 = add nsw i32 %3, %0
+  %5 = zext i32 %4 to i64
+  ret i64 %5
+}
+
+; 1 occurrences:
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i32 %0, i32 %1) #0 {
@@ -34,7 +58,7 @@ define i64 @func0000000000000033(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 1217359
   %3 = lshr i32 %2, 19
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }

@@ -43,6 +43,6 @@ func000000000000003f:                   # @func000000000000003f
 func000000000000002e:                   # @func000000000000002e
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vsll.vi	v11, v11, 24
-	vor.vv	v10, v11, v10
+	vor.vv	v10, v10, v11
 	vwsubu.wv	v8, v8, v10
 	ret

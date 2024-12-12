@@ -1,7 +1,7 @@
-func00000000000001d4:                   # @func00000000000001d4
+func00000000000003a4:                   # @func00000000000003a4
 	sext.w	a2, a2
 	li	a3, 1
-	mul	a0, a2, a0
+	mul	a0, a0, a2
 	slli	a3, a3, 33
 	addi	a3, a3, 5
 	mulhu	a2, a1, a3

@@ -1,5 +1,5 @@
 
-; 88 occurrences:
+; 89 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; assimp/optimized/LWOMaterial.cpp.ll
 ; box2d/optimized/b2_body.cpp.ll
@@ -88,11 +88,12 @@
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; yoga/optimized/AbsoluteLayout.cpp.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, i32 %1) #0 {
 entry:
   %2 = bitcast i32 %1 to float
-  %3 = fmul float %2, %0
+  %3 = fmul float %0, %2
   ret float %3
 }
 

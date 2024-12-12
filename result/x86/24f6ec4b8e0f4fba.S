@@ -31,7 +31,7 @@ func000000000000003d:                   # @func000000000000003d
 func0000000000000015:                   # @func0000000000000015
 	movl	%edi, %eax
 	addl	%edx, %esi
-	shll	$2, %esi
+	shll	$3, %esi
 	subl	%esi, %eax
 	retq
 func0000000000000011:                   # @func0000000000000011

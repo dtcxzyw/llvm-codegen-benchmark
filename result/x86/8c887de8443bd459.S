@@ -19,3 +19,10 @@ func0000000000000010:                   # @func0000000000000010
 	testb	$1, %dil
 	cmovel	%esi, %eax
 	retq
+func0000000000000030:                   # @func0000000000000030
+	xorl	%eax, %eax
+	cmpl	$2097152, %edx                  # imm = 0x200000
+	setae	%al
+	testb	$1, %dil
+	cmovel	%esi, %eax
+	retq

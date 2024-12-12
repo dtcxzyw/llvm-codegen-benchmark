@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 10 occurrences:
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; linux/optimized/fault.ll
@@ -7,9 +7,7 @@
 ; linux/optimized/p4.ll
 ; llvm/optimized/X86InstructionSelector.cpp.ll
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
-; openjdk/optimized/c1_LIRGenerator.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll
-; qemu/optimized/hw_usb_hcd-xhci.c.ll
 ; ruby/optimized/coverage.ll
 ; ruby/optimized/gc.ll
 ; Function Attrs: nounwind

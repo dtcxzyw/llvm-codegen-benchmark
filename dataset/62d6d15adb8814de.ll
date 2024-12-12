@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000181(i32 %0, i32 %1) #0 {
 entry:
   %.mask = and i32 %1, 65535
   %2 = icmp eq i32 %.mask, 0
@@ -18,7 +18,7 @@ entry:
 ; opencv/optimized/camera_calibration.cpp.ll
 ; php/optimized/avifinfo.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %.mask = and i32 %1, 16777215
   %2 = icmp eq i32 %.mask, 0
@@ -33,7 +33,7 @@ entry:
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000010c(i32 %0, i32 %1) #0 {
 entry:
   %.mask = and i32 %1, 2147483647
   %2 = icmp ne i32 %.mask, 32768
@@ -48,7 +48,7 @@ entry:
 ; gromacs/optimized/sorml2.cpp.ll
 ; wireshark/optimized/packet-geonw.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i32 %1) #0 {
+define i1 @func000000000000018c(i32 %0, i32 %1) #0 {
 entry:
   %.mask = and i32 %1, 255
   %2 = icmp ne i32 %.mask, 76

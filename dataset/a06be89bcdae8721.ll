@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 36 occurrences:
 ; bullet3/optimized/b3VoronoiSimplexSolver.ll
 ; bullet3/optimized/btVoronoiSimplexSolver.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
@@ -35,6 +35,7 @@
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; wireshark/optimized/packet-acr122.c.ll
+; zed-rs/optimized/25n0f77f67cr7ewl17g7eja8w.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:

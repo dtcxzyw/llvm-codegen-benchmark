@@ -1,8 +1,3 @@
-func0000000000000028:                   # @func0000000000000028
-	movl	%edi, %eax
-	btsl	%esi, %eax
-	btsl	%edx, %eax
-	retq
 func0000000000000068:                   # @func0000000000000068
 	movl	%edi, %eax
 	btsl	%esi, %eax
@@ -27,5 +22,10 @@ func0000000000000058:                   # @func0000000000000058
 	movl	$-1, %eax
 	shlxl	%esi, %eax, %eax
 	orl	%edi, %eax
+	btsl	%edx, %eax
+	retq
+func0000000000000028:                   # @func0000000000000028
+	movl	%edi, %eax
+	btsl	%esi, %eax
 	btsl	%edx, %eax
 	retq

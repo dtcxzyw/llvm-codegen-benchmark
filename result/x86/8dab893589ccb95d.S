@@ -1,3 +1,9 @@
+func0000000000000000:                   # @func0000000000000000
+	andl	$16777215, %edx                 # imm = 0xFFFFFF
+	leal	(%rdx,%rdi), %eax
+	andl	$-16777216, %esi                # imm = 0xFF000000
+	orl	%esi, %eax
+	retq
 func0000000000000007:                   # @func0000000000000007
 	andl	$1, %edx
 	leal	(%rdx,%rdi), %eax

@@ -1,5 +1,5 @@
 
-; 91 occurrences:
+; 93 occurrences:
 ; abc/optimized/decompress.c.ll
 ; abc/optimized/satSolver2.c.ll
 ; brotli/optimized/transform.c.ll
@@ -28,14 +28,12 @@
 ; linux/optimized/hdac_device.ll
 ; linux/optimized/i915_gem.ll
 ; linux/optimized/intel_ggtt.ll
-; linux/optimized/intel_rc6.ll
 ; linux/optimized/intel_sdvo.ll
 ; linux/optimized/io_apic.ll
 ; linux/optimized/libata-sff.ll
 ; linux/optimized/mon_bin.ll
 ; linux/optimized/nfs4proc.ll
 ; linux/optimized/pcm_native.ll
-; linux/optimized/percpu-refcount.ll
 ; linux/optimized/seq_ports.ll
 ; linux/optimized/sock.ll
 ; linux/optimized/tcp_minisocks.ll
@@ -55,13 +53,16 @@
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/SemaExprObjC.cpp.ll
 ; llvm/optimized/VPlanRecipes.cpp.ll
+; lvgl/optimized/lv_bar.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_display.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_dropdown.ll
+; lvgl/optimized/lv_switch.ll
 ; minetest/optimized/CSkinnedMesh.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; openjdk/optimized/gtk2_interface.ll
-; openssl/optimized/libcrypto-lib-ecx_key.ll
-; openssl/optimized/libcrypto-shlib-ecx_key.ll
 ; openssl/optimized/libtestutil-lib-driver.ll
-; openssl/optimized/quic_ackm_test-bin-quic_ackm_test.ll
 ; openusd/optimized/patchTableFactory.cpp.ll
 ; proxygen/optimized/HTTP1xCodec.cpp.ll
 ; qemu/optimized/block_vvfat.c.ll
@@ -91,6 +92,7 @@
 ; yoga/optimized/YGNodeStyle.cpp.ll
 ; z3/optimized/bound_simplifier.cpp.ll
 ; z3/optimized/theory_arith.cpp.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i8 %0, i32 %1) #0 {
 entry:
@@ -115,18 +117,6 @@ entry:
   %3 = and i8 %2, 6
   %4 = and i8 %0, -8
   %5 = or disjoint i8 %4, %3
-  ret i8 %5
-}
-
-; 1 occurrences:
-; openssl/optimized/quic_ackm_test-bin-quic_ackm_test.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000003(i8 %0, i32 %1) #0 {
-entry:
-  %2 = trunc nsw i32 %1 to i8
-  %3 = and i8 %2, 3
-  %4 = and i8 %0, -16
-  %5 = or disjoint i8 %3, %4
   ret i8 %5
 }
 

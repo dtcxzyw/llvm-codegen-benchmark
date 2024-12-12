@@ -1,11 +1,12 @@
 
-; 97 occurrences:
+; 96 occurrences:
 ; abc/optimized/abcCascade.c.ll
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/giaCof.c.ll
 ; abc/optimized/giaEmbed.c.ll
 ; abc/optimized/nwkUtil.c.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
+; boost/optimized/ipv4_address.ll
 ; faiss/optimized/pq4_fast_scan_search_qbs.cpp.ll
 ; flatbuffers/optimized/idl_gen_text.cpp.ll
 ; gromacs/optimized/gmx_nmr.cpp.ll
@@ -30,8 +31,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -105,8 +104,9 @@ entry:
   ret i8 %2
 }
 
-; 32 occurrences:
+; 36 occurrences:
 ; abc/optimized/ifDsd.c.ll
+; boost/optimized/ipv4_address.ll
 ; cmake/optimized/http.c.ll
 ; coreutils-rs/optimized/162a9hv49p91yl4q.ll
 ; coreutils-rs/optimized/1cffnn5jn7gf4ojp.ll
@@ -138,6 +138,9 @@ entry:
 ; openspiel/optimized/morpion_solitaire.cc.ll
 ; qemu/optimized/ui_console-vc.c.ll
 ; wireshark/optimized/packet-udp.c.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i32 %0) #0 {
 entry:
@@ -146,7 +149,7 @@ entry:
   ret i8 %2
 }
 
-; 96 occurrences:
+; 97 occurrences:
 ; abc/optimized/rsbDec6.c.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
@@ -177,8 +180,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -243,6 +244,9 @@ entry:
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wireshark/optimized/catapult_dct2000.c.ll
 ; wireshark/optimized/packet-hartip.c.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000006(i32 %0) #0 {
 entry:

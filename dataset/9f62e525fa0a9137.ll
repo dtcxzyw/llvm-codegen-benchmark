@@ -1,8 +1,6 @@
 
-; 20 occurrences:
+; 18 occurrences:
 ; abc/optimized/deflate.c.ll
-; abc/optimized/lpkAbcMux.c.ll
-; abc/optimized/lpkAbcUtil.c.ll
 ; bullet3/optimized/btConvexPolyhedron.ll
 ; cmake/optimized/deflate.c.ll
 ; cmake/optimized/fse_compress.c.ll

@@ -1,7 +1,6 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; crow/optimized/example_ws.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; qemu/optimized/hw_net_eepro100.c.ll
 ; soc-simulator/optimized/sim_mycpu.ll

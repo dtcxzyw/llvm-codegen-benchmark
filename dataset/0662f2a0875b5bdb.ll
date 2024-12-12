@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 20 occurrences:
 ; abc/optimized/ifTime.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cvc5/optimized/SimpSolver.cc.ll
@@ -13,13 +13,11 @@
 ; openusd/optimized/convolve.c.ll
 ; php/optimized/zend_jit.ll
 ; postgres/optimized/inv_api.ll
-; postgres/optimized/refint.ll
 ; postgres/optimized/tsvector_op.ll
 ; postgres/optimized/varbit.ll
 ; postgres/optimized/varlena.ll
 ; raylib/optimized/raudio.c.ll
 ; verilator/optimized/V3Number.cpp.ll
-; wireshark/optimized/packet-dhcp-failover.c.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; yosys/optimized/Solver.ll
 ; Function Attrs: nounwind

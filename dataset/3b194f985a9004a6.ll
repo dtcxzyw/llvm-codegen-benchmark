@@ -1,5 +1,5 @@
 
-; 102 occurrences:
+; 101 occurrences:
 ; linux/optimized/drm_dsc_helper.ll
 ; linux/optimized/mm_init.ll
 ; linux/optimized/regmap.ll
@@ -11,7 +11,6 @@
 ; llvm/optimized/InstCombineCasts.cpp.ll
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; llvm/optimized/LoopUtils.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RewriteModernObjC.cpp.ll
 ; llvm/optimized/RewriteObjC.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll

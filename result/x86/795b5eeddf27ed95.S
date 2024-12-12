@@ -9,7 +9,7 @@ func0000000000000015:                   # @func0000000000000015
 	leaq	1048576(%rdi,%rdx), %rax
 	retq
 func0000000000000000:                   # @func0000000000000000
-	subq	%rdx, %rsi
-	shrq	$7, %rdi
-	leaq	-1(%rdi,%rsi), %rax
+	shrq	$21, %rdx
+	subq	%rsi, %rdi
+	leaq	1048576(%rdi,%rdx), %rax
 	retq

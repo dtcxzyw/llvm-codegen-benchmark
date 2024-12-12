@@ -25,6 +25,6 @@ func0000000000000009:                   # @func0000000000000009
 func000000000000000c:                   # @func000000000000000c
 	leal	256(%rsi), %eax
 	shrl	$8, %eax
-	andl	$16776960, %eax                 # imm = 0xFFFF00
+	andl	$8388352, %eax                  # imm = 0x7FFF00
 	orl	%edi, %eax
 	retq

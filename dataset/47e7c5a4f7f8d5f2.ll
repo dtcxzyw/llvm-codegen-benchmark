@@ -19,6 +19,18 @@ entry:
   ret float %4
 }
 
+; 1 occurrences:
+; boost/optimized/math_normalize_spheroidal.ll
+; Function Attrs: nounwind
+define float @func0000000000000042(float %0) #0 {
+entry:
+  %1 = fcmp ogt float %0, 3.600000e+02
+  %2 = select i1 %1, float %0, float 3.600000e+02
+  %3 = fcmp olt float %2, 1.000000e+00
+  %4 = select i1 %3, float 1.000000e+00, float %2
+  ret float %4
+}
+
 ; 28 occurrences:
 ; oiio/optimized/color_ocio.cpp.ll
 ; oiio/optimized/deepdata.cpp.ll

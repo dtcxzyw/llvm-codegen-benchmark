@@ -1,8 +1,9 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; llvm/optimized/Instructions.cpp.ll
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; openjdk/optimized/cmspack.ll
+; php/optimized/zend_jit.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000b(i32 %0) #0 {
 entry:

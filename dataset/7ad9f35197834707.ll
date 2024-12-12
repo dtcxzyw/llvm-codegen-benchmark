@@ -5,7 +5,7 @@
 ; ncnn/optimized/convolution_x86_avx512.cpp.ll
 ; ncnn/optimized/convolution_x86_fma.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000154(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000294(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, %0
   %3 = icmp sgt i32 %2, 8
@@ -30,7 +30,7 @@ entry:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000302(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, %0
   %3 = icmp ne i32 %2, 0
@@ -42,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaResub.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i32 %1) #0 {
+define i1 @func000000000000018c(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, %0
   %3 = icmp slt i32 %2, 2
@@ -55,7 +55,7 @@ entry:
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/netdev.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000028c(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, %0
   %3 = icmp sgt i32 %2, 1200

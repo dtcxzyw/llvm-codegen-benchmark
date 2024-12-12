@@ -1,12 +1,18 @@
+func0000000000000001:                   // @func0000000000000001
+// %bb.0:                               // %entry
+	mov	w8, #-10                        // =0xfffffff6
+	mul	w8, w2, w8
+	cmp	w8, w1
+	cset	w8, eq
+	and	w0, w8, w0
+	ret
+                                        // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	movi	v5.4s, #10
-	mul	v3.4s, v3.4s, v5.4s
-	mul	v4.4s, v4.4s, v5.4s
-	cmhs	v2.4s, v2.4s, v4.4s
-	cmhs	v1.4s, v1.4s, v3.4s
-	uzp1	v1.8h, v1.8h, v2.8h
-	xtn	v1.8b, v1.8h
-	and	v0.8b, v1.8b, v0.8b
+	add	w8, w2, w2, lsl #2
+	lsl	w8, w8, #1
+	cmp	w8, w1
+	cset	w8, ls
+	and	w0, w8, w0
 	ret
                                         // -- End function

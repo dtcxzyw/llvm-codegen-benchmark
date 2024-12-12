@@ -1,7 +1,7 @@
 func0000000000000010:                   # @func0000000000000010
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsllvq	%ymm1, %ymm2, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
 	vzeroupper
 	retq
@@ -37,7 +37,7 @@ func0000000000000023:                   # @func0000000000000023
 func0000000000000002:                   # @func0000000000000002
 	vpbroadcastq	.LCPI4_0(%rip), %ymm2   # ymm2 = [64,64,64,64]
 	vpsllvq	%ymm1, %ymm2, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
 	vzeroupper
 	retq
@@ -46,7 +46,7 @@ func0000000000000002:                   # @func0000000000000002
 func0000000000000003:                   # @func0000000000000003
 	vpbroadcastq	.LCPI5_0(%rip), %ymm2   # ymm2 = [64,64,64,64]
 	vpsllvq	%ymm1, %ymm2, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
 	vzeroupper
 	retq

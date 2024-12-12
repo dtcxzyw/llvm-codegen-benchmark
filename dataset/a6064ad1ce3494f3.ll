@@ -1,7 +1,8 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; libpng/optimized/pngread.c.ll
+; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/Format.cpp.ll
 ; openjdk/optimized/ciArray.ll
 ; openjdk/optimized/pngread.ll

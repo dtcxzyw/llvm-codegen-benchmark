@@ -11,7 +11,7 @@ entry:
   ret i16 %3
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; libjpeg-turbo/optimized/tjunittest.c.ll
 ; linux/optimized/extents.ll
 ; luajit/optimized/lj_cdata.ll
@@ -26,6 +26,7 @@ entry:
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
 ; openusd/optimized/quadRefinement.cpp.ll
+; openusd/optimized/value.cpp.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind

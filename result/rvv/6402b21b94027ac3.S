@@ -3,7 +3,7 @@ func0000000000000018:                   # @func0000000000000018
 	vmsle.vi	v0, v8, -1
 	vrsub.vi	v12, v12, 0
 	vmerge.vvm	v10, v12, v10, v0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret
 func0000000000000028:                   # @func0000000000000028
 	lui	a0, 8

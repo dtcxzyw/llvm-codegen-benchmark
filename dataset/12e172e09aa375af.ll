@@ -58,7 +58,7 @@
 ; nori/optimized/obj.cpp.ll
 ; nori/optimized/warptest.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c1(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %1, %2
   %4 = getelementptr nusw double, ptr %0, i64 %3

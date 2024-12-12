@@ -1,5 +1,5 @@
 
-; 55 occurrences:
+; 64 occurrences:
 ; graphviz/optimized/htmlparse.c.ll
 ; grpc/optimized/channel_args.cc.ll
 ; hdf5/optimized/H5LTparse.c.ll
@@ -33,6 +33,7 @@
 ; llvm/optimized/PredicateInfo.cpp.ll
 ; llvm/optimized/VPlanTransforms.cpp.ll
 ; llvm/optimized/WinCOFFObjectWriter.cpp.ll
+; lvgl/optimized/lv_obj_style.ll
 ; postgres/optimized/bootparse.ll
 ; postgres/optimized/datetime.ll
 ; postgres/optimized/gram.ll
@@ -55,6 +56,14 @@
 ; verilator/optimized/V3ParseGrammar.cpp.ll
 ; wasmtime-rs/optimized/5dheicv8h8x61a9w.ll
 ; z3/optimized/dl_compiler.cpp.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/3ovedgaw1yidfseciw93ubpv7.ll
+; zed-rs/optimized/49ldufv0nkpmlikvem3q45q0g.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
+; zed-rs/optimized/5p9dc47ccf9r9dua6dccyemun.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/cp92gkg5707l1e819dflws6md.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:

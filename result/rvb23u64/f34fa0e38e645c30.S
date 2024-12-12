@@ -35,8 +35,11 @@ func0000000000000008:                   # @func0000000000000008
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1
 	ret
+.LCPI5_0:
+	.quad	0x4066800000000000              # double 180
 func000000000000000a:                   # @func000000000000000a
-	fli.d	fa5, 1.0
+	lui	a2, %hi(.LCPI5_0)
+	fld	fa5, %lo(.LCPI5_0)(a2)
 	fle.d	a2, fa0, fa5
 	czero.nez	a1, a1, a2
 	czero.eqz	a0, a0, a2

@@ -19,7 +19,7 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
+; 10 occurrences:
 ; ockam-rs/optimized/scbbgml6cvr1nwt.ll
 ; openjdk/optimized/jfrTypeSet.ll
 ; quantlib/optimized/callspecifiedmultiproduct.ll
@@ -27,6 +27,9 @@ entry:
 ; rust-analyzer-rs/optimized/44ayynfm08lnhjsw.ll
 ; rust-analyzer-rs/optimized/4hdqg9y9agw1ekve.ll
 ; rust-analyzer-rs/optimized/5fgtm3ees9sdsrsg.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i8 %0, i8 %1) #0 {
 entry:

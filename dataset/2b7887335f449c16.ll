@@ -1,5 +1,5 @@
 
-; 82 occurrences:
+; 78 occurrences:
 ; abseil-cpp/optimized/charset_test.cc.ll
 ; assimp/optimized/zip.c.ll
 ; bdwgc/optimized/gc.c.ll
@@ -12,7 +12,6 @@
 ; hyperscan/optimized/mpv.c.ll
 ; hyperscan/optimized/multibit_build.cpp.ll
 ; hyperscan/optimized/repeat.c.ll
-; libquic/optimized/a_strnid.c.ll
 ; linux/optimized/bitmap.ll
 ; linux/optimized/remap_range.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
@@ -60,12 +59,9 @@
 ; opencv/optimized/softfloat.cpp.ll
 ; openjdk/optimized/macroAssembler_x86.ll
 ; openjdk/optimized/mutableNUMASpace.ll
-; openssl/optimized/libcrypto-lib-a_strnid.ll
 ; openssl/optimized/libcrypto-lib-curve448.ll
-; openssl/optimized/libcrypto-shlib-a_strnid.ll
 ; openssl/optimized/libcrypto-shlib-curve448.ll
 ; openusd/optimized/stageSceneIndex.cpp.ll
-; qemu/optimized/hw_net_can_ctucan_pci.c.ll
 ; qemu/optimized/hw_virtio_vhost.c.ll
 ; ruby/optimized/string.ll
 ; spike/optimized/cmpeq16.ll
@@ -86,7 +82,7 @@
 define i64 @func0000000000000000(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 %2, i64 -1
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   ret i64 %4
 }
 

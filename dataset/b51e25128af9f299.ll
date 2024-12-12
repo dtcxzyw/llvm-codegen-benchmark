@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; casadi/optimized/kinsol.c.ll
 ; minetest/optimized/content_mapblock.cpp.ll
 ; msdfgen/optimized/import-svg.cpp.ll
@@ -9,6 +9,7 @@
 ; quantlib/optimized/yieldtermstructure.ll
 ; stockfish/optimized/timeman.ll
 ; sundials/optimized/kinsol.c.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; Function Attrs: nounwind
 define double @func0000000000000002(double %0) #0 {
 entry:
@@ -34,11 +35,12 @@ entry:
   ret double %3
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; eastl/optimized/EARandom.cpp.ll
 ; oiio/optimized/imagebuf.cpp.ll
 ; oiio/optimized/imagebufalgo_channels.cpp.ll
+; oiio/optimized/imagebufalgo_minmaxchan.cpp.ll
 ; oiio/optimized/imagebufalgo_pixelmath.cpp.ll
 ; oiio/optimized/imagebufalgo_xform.cpp.ll
 ; openjdk/optimized/threadHeapSampler.ll

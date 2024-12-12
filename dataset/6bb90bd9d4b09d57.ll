@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/audio_audio.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000004a4(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000001144(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 2
   %4 = icmp sgt i32 %1, 0
@@ -16,7 +16,7 @@ entry:
 ; cmake/optimized/cmTargetLinkLibrariesCommand.cxx.ll
 ; llvm/optimized/NumericalStabilitySanitizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000ccc(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000318c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 236
   %4 = icmp ne i32 %1, 238
@@ -29,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/dev_ioctl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000444(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000001084(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 16
   %4 = icmp ult i32 %1, 4
@@ -42,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/utrie_swap.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000541(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp sgt i32 %1, 31

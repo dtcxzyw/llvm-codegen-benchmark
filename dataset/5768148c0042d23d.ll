@@ -1,27 +1,5 @@
 
-; 1 occurrences:
-; ruby/optimized/strftime.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000058(i32 %0) #0 {
-entry:
-  %1 = icmp slt i32 %0, 10
-  %2 = add i32 %0, 2
-  %3 = select i1 %1, i32 11, i32 %2
-  ret i32 %3
-}
-
-; 3 occurrences:
-; icu/optimized/ucnvscsu.ll
-; minetest/optimized/CColorConverter.cpp.ll
-; ruby/optimized/strftime.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000059(i32 %0) #0 {
-entry:
-  %1 = call i32 @llvm.smax.i32(i32 %0, i32 6)
-  ret i32 %1
-}
-
-; 246 occurrences:
+; 245 occurrences:
 ; abseil-cpp/optimized/str_cat_test.cc.ll
 ; arrow/optimized/api_scalar.cc.ll
 ; arrow/optimized/array_dict.cc.ll
@@ -30,6 +8,7 @@ entry:
 ; arrow/optimized/vector_hash.cc.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/X3DXmlHelper.cpp.ll
+; boost/optimized/options_description.ll
 ; casadi/optimized/conic.cpp.ll
 ; casadi/optimized/mx_function.cpp.ll
 ; casadi/optimized/nlp_builder.cpp.ll
@@ -147,8 +126,6 @@ entry:
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; pocketpy/optimized/vm.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
@@ -277,10 +254,22 @@ entry:
   ret i32 %3
 }
 
+; 2 occurrences:
+; icu/optimized/ucnvscsu.ll
+; minetest/optimized/CColorConverter.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000099(i32 %0) #0 {
+entry:
+  %1 = icmp slt i32 %0, 1
+  %2 = add nsw i32 %0, -2
+  %3 = select i1 %1, i32 6, i32 %2
+  ret i32 %3
+}
+
 ; 1 occurrences:
 ; qemu/optimized/hw_scsi_mptconfig.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c5(i32 %0) #0 {
+define i32 @func0000000000000185(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 65535
   %2 = add nsw i32 %0, -8
@@ -295,22 +284,12 @@ entry:
 ; luau/optimized/lnumprint.cpp.ll
 ; php/optimized/dtoa.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000045(i32 %0) #0 {
+define i32 @func0000000000000085(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 0
   %2 = add nsw i32 %0, -1076
   %3 = select i1 %1, i32 -1075, i32 %2
   ret i32 %3
-}
-
-; 2 occurrences:
-; pbrt-v4/optimized/samples.cpp.ll
-; stb/optimized/stb_hexwave.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000069(i32 %0) #0 {
-entry:
-  %1 = call i32 @llvm.smin.i32(i32 %0, i32 1)
-  ret i32 %1
 }
 
 ; 1 occurrences:
@@ -324,20 +303,4 @@ entry:
   ret i32 %3
 }
 
-; 1 occurrences:
-; opencv/optimized/slice_layer.cpp.ll
-; Function Attrs: nounwind
-define i32 @func00000000000000d9(i32 %0) #0 {
-entry:
-  %1 = call i32 @llvm.smax.i32(i32 %0, i32 0)
-  ret i32 %1
-}
-
-; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
-declare i32 @llvm.smax.i32(i32, i32) #1
-
-; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
-declare i32 @llvm.smin.i32(i32, i32) #1
-
 attributes #0 = { nounwind }
-attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

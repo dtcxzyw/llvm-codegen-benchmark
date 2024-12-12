@@ -54,19 +54,6 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/huf_decompress.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = shl i32 %2, 16
-  %4 = add i32 %3, 33554432
-  %5 = shl nuw nsw i32 %1, 8
-  %6 = or disjoint i32 %5, %4
-  %7 = or disjoint i32 %6, %0
-  ret i32 %7
-}
-
-; 1 occurrences:
 ; postgres/optimized/utf8_and_gb18030.ll
 ; Function Attrs: nounwind
 define i32 @func00000000000000fe(i32 %0, i32 %1, i32 %2) #0 {
@@ -75,7 +62,7 @@ entry:
   %4 = add nuw nsw i32 %3, -2130706432
   %5 = shl nuw nsw i32 %1, 16
   %6 = or disjoint i32 %5, %4
-  %7 = or i32 %6, %0
+  %7 = or i32 %0, %6
   ret i32 %7
 }
 

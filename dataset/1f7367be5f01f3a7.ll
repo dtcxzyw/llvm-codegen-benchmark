@@ -23,4 +23,14 @@ entry:
   ret ptr %3
 }
 
+; 1 occurrences:
+; php/optimized/ir_emit.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = getelementptr nusw nuw [4 x i8], ptr %0, i64 %2, i64 2
+  ret ptr %3
+}
+
 attributes #0 = { nounwind }

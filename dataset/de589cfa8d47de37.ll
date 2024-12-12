@@ -24,17 +24,15 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
+; 2 occurrences:
 ; icu/optimized/uset.ll
 ; linux/optimized/mmconfig-shared.ll
-; linux/optimized/mmconfig_64.ll
-; openjdk/optimized/TransformHelper.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
-  %3 = shl nsw i32 %2, 1
-  %4 = add nsw i32 %3, 2
+  %3 = shl nsw i32 %2, 20
+  %4 = add nsw i32 %3, 1048576
   %5 = sext i32 %4 to i64
   ret i64 %5
 }

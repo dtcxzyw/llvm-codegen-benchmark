@@ -10,7 +10,7 @@ func0000000000000000:                   # @func0000000000000000
 	vpternlogd	$224, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 & (ymm2 | ymm1)
 	retq
 .LCPI1_0:
-	.long	2                               # 0x2
+	.long	8192                            # 0x2000
 func0000000000000001:                   # @func0000000000000001
 	vpsllw	$15, %xmm2, %xmm2
 	vpmovw2m	%xmm2, %k1

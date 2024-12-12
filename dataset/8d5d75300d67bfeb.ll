@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 26 occurrences:
 ; abc/optimized/ifDec10.c.ll
 ; cmake/optimized/cover.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -9,7 +9,6 @@
 ; linux/optimized/ahci.ll
 ; linux/optimized/exfldio.ll
 ; linux/optimized/hda_intel.ll
-; linux/optimized/i915_driver.ll
 ; linux/optimized/intel-gtt.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; llvm/optimized/AsmParser.cpp.ll
@@ -28,7 +27,7 @@
 ; z3/optimized/dl_sparse_table.cpp.ll
 ; zstd/optimized/cover.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 -1, %1
   %3 = xor i64 %2, -1
@@ -42,7 +41,7 @@ entry:
 ; openjdk/optimized/memnode.ll
 ; openjdk/optimized/os.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(i32 %0, i64 %1) #0 {
+define i64 @func000000000000002a(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 -1, %1
   %3 = xor i64 %2, -1
@@ -55,7 +54,7 @@ entry:
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000028(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 -1, %1
   %3 = xor i64 %2, -1
@@ -76,11 +75,11 @@ entry:
 ; redis/optimized/base.ll
 ; redis/optimized/base.sym.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000034(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 -1, %1
   %3 = xor i64 %2, -1
-  %4 = icmp ult i32 %0, 2
+  %4 = icmp samesign ult i32 %0, 2
   %5 = select i1 %4, i64 0, i64 %3
   ret i64 %5
 }

@@ -32,6 +32,7 @@ entry:
 ; llvm/optimized/BlockFrequencyInfo.cpp.ll
 ; llvm/optimized/MachineBlockFrequencyInfo.cpp.ll
 ; llvm/optimized/SelectOptimize.cpp.ll
+; lvgl/optimized/lv_chart.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/client.cpp.ll
@@ -59,7 +60,6 @@ entry:
 ; minetest/optimized/servermap.cpp.ll
 ; minetest/optimized/test_map.cpp.ll
 ; minetest/optimized/test_voxelalgorithms.cpp.ll
-; minetest/optimized/test_voxelmanipulator.cpp.ll
 ; minetest/optimized/treegen.cpp.ll
 ; minetest/optimized/voxel.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll

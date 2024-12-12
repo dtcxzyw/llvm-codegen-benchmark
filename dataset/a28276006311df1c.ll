@@ -1,5 +1,5 @@
 
-; 54 occurrences:
+; 53 occurrences:
 ; assimp/optimized/IFCBoolean.cpp.ll
 ; casadi/optimized/convexify.cpp.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
@@ -24,7 +24,6 @@
 ; openblas/optimized/dlaed8.c.ll
 ; openblas/optimized/dlahqr.c.ll
 ; openblas/optimized/dlar1v.c.ll
-; openblas/optimized/dtrsna.c.ll
 ; opencv/optimized/ap3p.cpp.ll
 ; opencv/optimized/deriche_filter.cpp.ll
 ; opencv/optimized/normal.cpp.ll

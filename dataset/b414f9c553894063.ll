@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
+define i16 @func0000000000000046(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = icmp slt i32 %3, 0
@@ -15,7 +15,7 @@ entry:
 ; openusd/optimized/av1_inv_txfm2d.c.ll
 ; openusd/optimized/cfl.c.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000076(i32 %0, i32 %1, i32 %2) #0 {
+define i16 @func00000000000000e6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp slt i32 %3, 0
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/warped_motion.c.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000036(i32 %0, i32 %1, i32 %2) #0 {
+define i16 @func0000000000000066(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = icmp slt i32 %3, 0
@@ -40,7 +40,7 @@ entry:
 ; libwebp/optimized/sharpyuv_dsp.c.ll
 ; libwebp/optimized/sharpyuv_sse2.c.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000046(i32 %0, i32 %1, i32 %2) #0 {
+define i16 @func0000000000000086(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp slt i32 %3, 0

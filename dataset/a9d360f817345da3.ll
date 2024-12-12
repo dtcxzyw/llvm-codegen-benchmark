@@ -1,5 +1,5 @@
 
-; 106 occurrences:
+; 105 occurrences:
 ; darktable/optimized/introspection_filmic.c.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; nlohmann_json/optimized/unit-regression1.cpp.ll
@@ -97,7 +97,6 @@
 ; openusd/optimized/openexr-c.c.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -112,6 +111,19 @@ entry:
   %1 = bitcast float %0 to i32
   %2 = lshr i32 %1, 23
   %3 = add nsw i32 %2, -94
+  ret i32 %3
+}
+
+; 3 occurrences:
+; arrow/optimized/float16.cc.ll
+; softposit-rs/optimized/m1vpptg00bzmp9y.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000003(float %0) #0 {
+entry:
+  %1 = bitcast float %0 to i32
+  %2 = lshr i32 %1, 23
+  %3 = add nuw nsw i32 %2, 2
   ret i32 %3
 }
 

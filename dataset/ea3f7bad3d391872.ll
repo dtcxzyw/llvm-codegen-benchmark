@@ -37,7 +37,7 @@
 define i1 @func0000000000000010(i1 %0, i1 %1, double %2) #0 {
 entry:
   %3 = fcmp oeq double %2, 0.000000e+00
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
@@ -95,7 +95,7 @@ entry:
 define i1 @func000000000000001a(i1 %0, i1 %1, double %2) #0 {
 entry:
   %3 = fcmp uge double %2, 3.000000e+00
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
@@ -112,6 +112,18 @@ entry:
   ret i1 %5
 }
 
+; 2 occurrences:
+; openusd/optimized/frustum.cpp.ll
+; proj/optimized/tinshift.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000006(i1 %0, i1 %1, double %2) #0 {
+entry:
+  %3 = fcmp ult double %2, 0.000000e+00
+  %4 = or i1 %1, %3
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
+}
+
 ; 3 occurrences:
 ; graphviz/optimized/visibility.c.ll
 ; opencv/optimized/geometry.cpp.ll
@@ -120,7 +132,7 @@ entry:
 define i1 @func0000000000000008(i1 %0, i1 %1, double %2) #0 {
 entry:
   %3 = fcmp ogt double %2, 1.000000e+00
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
@@ -131,18 +143,7 @@ entry:
 define i1 @func000000000000000a(i1 %0, i1 %1, double %2) #0 {
 entry:
   %3 = fcmp ugt double %2, 0x3FF000000006DF38
-  %4 = or i1 %3, %1
-  %5 = select i1 %0, i1 true, i1 %4
-  ret i1 %5
-}
-
-; 1 occurrences:
-; proj/optimized/tinshift.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000006(i1 %0, i1 %1, double %2) #0 {
-entry:
-  %3 = fcmp ult double %2, -1.000000e-10
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }

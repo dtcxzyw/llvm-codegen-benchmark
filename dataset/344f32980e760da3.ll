@@ -33,7 +33,7 @@ entry:
 ; yosys/optimized/share.ll
 ; yosys/optimized/test_cell.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000023(i1 %0, i32 %1, i8 %2) #0 {
+define i32 @func0000000000000043(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, 4
   %4 = icmp eq i8 %2, 4
@@ -46,7 +46,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ELFObjectFile.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000028(i1 %0, i32 %1, i8 %2) #0 {
+define i32 @func0000000000000048(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, 128
   %4 = icmp ult i8 %2, 2

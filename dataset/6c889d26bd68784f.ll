@@ -1,11 +1,10 @@
 
-%struct.lua_TValue.2811879 = type { %union.Value.2811880, [1 x i32], i32 }
-%union.Value.2811880 = type { ptr }
+%struct.lua_TValue.2923857 = type { %union.Value.2923858, [1 x i32], i32 }
+%union.Value.2923858 = type { ptr }
 
-; 121 occurrences:
+; 113 occurrences:
 ; abc/optimized/giaNf.c.ll
 ; abc/optimized/ifDsd.c.ll
-; gromacs/optimized/matio.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -99,16 +98,11 @@
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
 ; lua/optimized/lvm.ll
-; luajit/optimized/lj_record.ll
-; luajit/optimized/lj_record_dyn.ll
 ; memcached/optimized/memcached-memcached.ll
 ; memcached/optimized/memcached_debug-memcached.ll
 ; opencv/optimized/bgfg_KNN.cpp.ll
-; opencv/optimized/npr.cpp.ll
 ; openjdk/optimized/hb-ot-layout.ll
-; openjdk/optimized/mlib_c_ImageCopy.ll
 ; openjdk/optimized/runTimeClassInfo.ll
-; openjdk/optimized/stackValue.ll
 ; php/optimized/php_reflection.ll
 ; php/optimized/phpdbg.ll
 ; php/optimized/phpdbg_bp.ll
@@ -122,16 +116,14 @@
 ; z3/optimized/smt_conflict_resolution.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
-; zxing/optimized/BinaryBitmap.cpp.ll
-; zxing/optimized/ReadBarcode.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 3
   %4 = and i32 %3, 63
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %1
-  %7 = getelementptr nusw i8, ptr %6, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %5
   ret ptr %7
 }
 
@@ -154,6 +146,26 @@ entry:
 }
 
 ; 8 occurrences:
+; gromacs/optimized/matio.cpp.ll
+; luajit/optimized/lj_record.ll
+; luajit/optimized/lj_record_dyn.ll
+; opencv/optimized/npr.cpp.ll
+; openjdk/optimized/mlib_c_ImageCopy.ll
+; openjdk/optimized/stackValue.ll
+; zxing/optimized/BinaryBitmap.cpp.ll
+; zxing/optimized/ReadBarcode.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001b(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 2
+  %4 = and i32 %3, 1
+  %5 = zext nneg i32 %4 to i64
+  %6 = getelementptr nusw i32, ptr %0, i64 %1
+  %7 = getelementptr nusw nuw i32, ptr %6, i64 %5
+  ret ptr %7
+}
+
+; 8 occurrences:
 ; linux/optimized/devio.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/hid-core.ll
@@ -163,13 +175,13 @@ entry:
 ; linux/optimized/urb.ll
 ; luau/optimized/lvmexecute.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000001c(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 16
   %4 = and i32 %3, 255
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw %struct.lua_TValue.2811879, ptr %0, i64 %1
-  %7 = getelementptr %struct.lua_TValue.2811879, ptr %6, i64 %5
+  %6 = getelementptr nusw nuw %struct.lua_TValue.2923857, ptr %0, i64 %1
+  %7 = getelementptr %struct.lua_TValue.2923857, ptr %6, i64 %5
   ret ptr %7
 }
 

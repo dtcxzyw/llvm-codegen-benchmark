@@ -5,21 +5,22 @@ func0000000000000005:                   # @func0000000000000005
 	vpaddq	%ymm0, %ymm1, %ymm0
 	retq
 .LCPI1_0:
-	.quad	24                              # 0x18
-func0000000000000003:                   # @func0000000000000003
-	vpsrlq	$3, %ymm0, %ymm0
+	.quad	56                              # 0x38
+func0000000000000015:                   # @func0000000000000015
+	vpsllq	$56, %ymm0, %ymm0
+	vpsraq	$56, %ymm0, %ymm0
 	vpmuldq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 .LCPI2_0:
 	.quad	24                              # 0x18
-func0000000000000007:                   # @func0000000000000007
+func0000000000000003:                   # @func0000000000000003
+	vpsrlq	$3, %ymm0, %ymm0
 	vpmuldq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0
 	retq
-func0000000000000015:                   # @func0000000000000015
-	vpsllq	$48, %ymm0, %ymm0
-	vpsraq	$16, %ymm0, %ymm0
-	vpxor	%xmm1, %xmm1, %xmm1
-	vpsubq	%ymm0, %ymm1, %ymm0
+.LCPI3_0:
+	.quad	24                              # 0x18
+func0000000000000007:                   # @func0000000000000007
+	vpmuldq	.LCPI3_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 func0000000000000001:                   # @func0000000000000001
 	vpsllq	$32, %ymm0, %ymm0

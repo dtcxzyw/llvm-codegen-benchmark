@@ -9,7 +9,7 @@ define i32 @func00000000000000ff(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 8
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   %6 = shl nuw nsw i32 %1, 16
   %7 = add nuw nsw i32 %5, %6
   ret i32 %7
@@ -30,7 +30,7 @@ define i32 @func00000000000000f0(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 16
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   %6 = shl nuw nsw i32 %1, 8
   %7 = add i32 %5, %6
   ret i32 %7
@@ -49,7 +49,7 @@ define i32 @func00000000000000f5(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 8
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = shl nuw nsw i32 %1, 4
   %7 = add nsw i32 %5, %6
   ret i32 %7
@@ -63,7 +63,7 @@ define i32 @func00000000000001ff(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 18
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   %6 = shl nuw nsw i32 %1, 6
   %7 = add nuw nsw i32 %5, %6
   ret i32 %7
@@ -90,7 +90,7 @@ define i32 @func00000000000000e0(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 %3, 16
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   %6 = shl nuw i32 %1, 24
   %7 = add i32 %5, %6
   ret i32 %7
@@ -104,7 +104,7 @@ define i32 @func00000000000000b0(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw i32 %3, 24
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   %6 = shl nuw nsw i32 %1, 16
   %7 = add i32 %5, %6
   ret i32 %7
@@ -116,10 +116,11 @@ entry:
 define i32 @func00000000000000cc(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = add i32 %3, %0
-  %5 = shl i32 %4, 8
-  %6 = add i32 %5, %1
-  ret i32 %6
+  %4 = shl nuw nsw i32 %3, 8
+  %5 = add i32 %1, %4
+  %6 = shl nuw nsw i32 %0, 8
+  %7 = add i32 %6, %5
+  ret i32 %7
 }
 
 ; 1 occurrences:
@@ -155,7 +156,7 @@ define i32 @func00000000000000b5(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw i32 %3, 24
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = shl nuw nsw i32 %1, 12
   %7 = add nsw i32 %5, %6
   ret i32 %7

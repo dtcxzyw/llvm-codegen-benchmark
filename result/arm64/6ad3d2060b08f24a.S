@@ -1,16 +1,9 @@
 func0000000000000142:                   // @func0000000000000142
 // %bb.0:                               // %entry
-	ucvtf	v3.4s, v3.4s
-	fadd	v4.4s, v4.4s, v0.4s
-	fadd	v5.4s, v5.4s, v1.4s
-	ucvtf	v2.4s, v2.4s
-	fcmgt	v1.4s, v3.4s, v1.4s
-	fcmgt	v3.4s, v5.4s, v3.4s
-	fcmgt	v0.4s, v2.4s, v0.4s
-	fcmgt	v2.4s, v4.4s, v2.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	uzp1	v1.8h, v2.8h, v3.8h
-	and	v0.16b, v0.16b, v1.16b
-	xtn	v0.8b, v0.8h
+	fadd	s1, s1, s0
+	ucvtf	s2, w0
+	fcmp	s1, s2
+	fccmp	s0, s2, #0, gt
+	cset	w0, mi
 	ret
                                         // -- End function

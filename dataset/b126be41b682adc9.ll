@@ -18,21 +18,19 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000054(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = select i1 %0, i32 4, i32 8
-  %4 = icmp ult i32 %3, %2
+  %4 = icmp samesign ult i32 %3, %2
   ret i1 %4
 }
 
-; 16 occurrences:
-; linux/optimized/uprobes.ll
+; 14 occurrences:
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/IROutliner.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/StructurizeCFG.cpp.ll
 ; llvm/optimized/X86AsmBackend.cpp.ll
 ; llvm/optimized/X86TileConfig.cpp.ll
@@ -52,11 +50,9 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
-; linux/optimized/namei.ll
+; 3 occurrences:
 ; linux/optimized/nl80211.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i64 %1) #0 {
@@ -67,22 +63,10 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; llvm/optimized/X86AsmParser.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = select i1 %0, i32 2, i32 1
-  %4 = icmp ult i32 %3, %2
-  ret i1 %4
-}
-
 ; 1 occurrences:
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = select i1 %0, i32 62, i32 30
@@ -91,9 +75,20 @@ entry:
 }
 
 ; 1 occurrences:
+; llvm/optimized/X86AsmParser.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i1 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = select i1 %0, i32 1, i32 2
+  %4 = icmp ult i32 %3, %2
+  ret i1 %4
+}
+
+; 1 occurrences:
 ; wasmtime-rs/optimized/45190zkycf5izngt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = select i1 %0, i32 2, i32 1
@@ -104,11 +99,11 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-umts_mac.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000058(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = select i1 %0, i32 16384, i32 64
-  %4 = icmp ugt i32 %3, %2
+  %4 = icmp samesign ugt i32 %3, %2
   ret i1 %4
 }
 
@@ -116,11 +111,22 @@ entry:
 ; linux/optimized/drm_dp_helper.ll
 ; openspiel/optimized/backgammon.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = select i1 %0, i32 17, i32 6
   %4 = icmp eq i32 %3, %2
+  ret i1 %4
+}
+
+; 1 occurrences:
+; linux/optimized/namei.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = select i1 %0, i32 12, i32 24
+  %4 = icmp samesign ugt i32 %3, %2
   ret i1 %4
 }
 
@@ -149,7 +155,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/gapi_core_perf_tests.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000046(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = select i1 %0, i32 0, i32 2

@@ -8,7 +8,7 @@ func0000000000000009:                   # @func0000000000000009
 	cmpl	%esi, %edi
 	setae	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	incl	%edi
 	cmpl	%esi, %edi
 	sete	%al
@@ -18,32 +18,32 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	%esi, %edi
 	sete	%al
 	retq
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	addl	$47, %edi
 	cmpl	%esi, %edi
 	setl	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	incl	%edi
 	cmpl	%esi, %edi
 	setl	%al
+	retq
+func0000000000000041:                   # @func0000000000000041
+	incl	%edi
+	cmpl	%esi, %edi
+	sete	%al
+	retq
+func0000000000000024:                   # @func0000000000000024
+	decl	%edi
+	cmpl	%esi, %edi
+	setb	%al
 	retq
 func0000000000000021:                   # @func0000000000000021
 	incl	%edi
 	cmpl	%esi, %edi
 	sete	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
-	decl	%edi
-	cmpl	%esi, %edi
-	setb	%al
-	retq
-func0000000000000011:                   # @func0000000000000011
-	incl	%edi
-	cmpl	%esi, %edi
-	sete	%al
-	retq
-func000000000000003b:                   # @func000000000000003b
+func000000000000006b:                   # @func000000000000006b
 	incl	%edi
 	cmpl	%esi, %edi
 	setge	%al

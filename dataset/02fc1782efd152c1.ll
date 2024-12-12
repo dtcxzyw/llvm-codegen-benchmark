@@ -3,7 +3,7 @@
 ; icu/optimized/rbt_data.ll
 ; linux/optimized/intel_vrr.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1, i16 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = sub nsw i32 %1, %3

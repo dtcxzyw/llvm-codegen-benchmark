@@ -1,5 +1,5 @@
 
-; 54 occurrences:
+; 53 occurrences:
 ; abc/optimized/giaClp.c.ll
 ; cmake/optimized/xmlparse.c.ll
 ; cpython/optimized/instrumentation.ll
@@ -38,7 +38,6 @@
 ; openblas/optimized/dlarrv.c.ll
 ; openblas/optimized/dlasq2.c.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
-; opencv/optimized/demosaicing.cpp.ll
 ; opencv/optimized/tree.cpp.ll
 ; openjdk/optimized/continuationFreezeThaw.ll
 ; openspiel/optimized/observer.cc.ll

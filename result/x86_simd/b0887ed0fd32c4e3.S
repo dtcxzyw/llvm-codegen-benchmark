@@ -2,7 +2,7 @@
 	.long	10                              # 0xa
 func0000000000000175:                   # @func0000000000000175
 	vpmulld	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
-	vpaddd	%ymm1, %ymm2, %ymm1
+	vpaddd	%ymm2, %ymm1, %ymm1
 	vpslld	$3, %ymm1, %ymm2
 	vpsubd	%ymm1, %ymm2, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -15,7 +15,7 @@ func0000000000000175:                   # @func0000000000000175
 	.long	45                              # 0x2d
 func0000000000000155:                   # @func0000000000000155
 	vpmulld	.LCPI1_0(%rip){1to8}, %ymm2, %ymm2
-	vpaddd	%ymm1, %ymm2, %ymm1
+	vpaddd	%ymm2, %ymm1, %ymm1
 	vpslld	$3, %ymm1, %ymm2
 	vpsubd	%ymm1, %ymm2, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -36,7 +36,7 @@ func00000000000003ff:                   # @func00000000000003ff
 	.long	7                               # 0x7
 func0000000000000000:                   # @func0000000000000000
 	vpaddd	%ymm2, %ymm2, %ymm3
-	vpaddd	%ymm1, %ymm2, %ymm1
+	vpaddd	%ymm2, %ymm1, %ymm1
 	vpaddd	%ymm3, %ymm1, %ymm1
 	vpslld	$2, %ymm1, %ymm2
 	vpaddd	%ymm1, %ymm0, %ymm0

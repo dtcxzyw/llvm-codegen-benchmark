@@ -9,7 +9,7 @@ func0000000000000020:                   // @func0000000000000020
 	movk	x8, #49842, lsl #48
 	movk	x9, #5718, lsl #48
 	mul	x8, x2, x8
-	eor	x8, x8, x0
+	eor	x8, x0, x8
 	mul	x0, x8, x9
 	ret
                                         // -- End function

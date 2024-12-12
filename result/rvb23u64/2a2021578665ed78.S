@@ -65,6 +65,12 @@ func000000000000000e:                   # @func000000000000000e
 	sext.w	a1, a1
 	or	a0, a0, a1
 	ret
+func0000000000000034:                   # @func0000000000000034
+	slliw	a2, a2, 9
+	or	a0, a0, a2
+	addiw	a1, a1, -1
+	or	a0, a0, a1
+	ret
 func0000000000000002:                   # @func0000000000000002
 	slliw	a2, a2, 7
 	or	a0, a0, a2

@@ -12,9 +12,8 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; abc/optimized/abcExact.c.ll
-; lightgbm/optimized/data_parallel_tree_learner.cpp.ll
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
 ; openjdk/optimized/continuationFreezeThaw.ll
 ; zxing/optimized/PDFDecoder.cpp.ll
@@ -27,7 +26,7 @@ entry:
   ret i64 %4
 }
 
-; 47 occurrences:
+; 48 occurrences:
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/cecIso.c.ll
 ; abc/optimized/fraClaus.c.ll
@@ -40,6 +39,7 @@ entry:
 ; abc/optimized/satSolver3.c.ll
 ; abc/optimized/sfmLib.c.ll
 ; abc/optimized/wlnRead.c.ll
+; boost/optimized/ipv6_address_rule.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; freetype/optimized/pcf.c.ll
 ; freetype/optimized/raster.c.ll
@@ -84,10 +84,9 @@ entry:
   ret i64 %4
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; abc/optimized/saigSimFast.c.ll
 ; linux/optimized/badblocks.ll
-; linux/optimized/bitmap-str.ll
 ; linux/optimized/intel_pstate.ll
 ; linux/optimized/percpu.ll
 ; ncnn/optimized/convolutiondepthwise_x86.cpp.ll

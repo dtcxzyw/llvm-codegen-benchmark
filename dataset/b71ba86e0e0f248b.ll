@@ -17,7 +17,7 @@ entry:
 ; coreutils-rs/optimized/jzu2v52gceikjdv.ll
 ; tokenizers-rs/optimized/4vpw5vpiz5qnu5om.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(ptr %0, ptr %1, ptr %2) #0 {
+define i64 @func0000000000000041(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64

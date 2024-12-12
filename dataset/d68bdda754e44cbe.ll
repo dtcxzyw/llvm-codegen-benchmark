@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 21 occurrences:
 ; cvc5/optimized/attempt_solution_simplex.cpp.ll
 ; cvc5/optimized/congruence_manager.cpp.ll
 ; cvc5/optimized/constraint.cpp.ll
@@ -20,7 +20,6 @@
 ; qemu/optimized/hw_scsi_megasas.c.ll
 ; qemu/optimized/hw_vfio_pci.c.ll
 ; qemu/optimized/plugins_core.c.ll
-; qemu/optimized/ui_kbd-state.c.ll
 ; velox/optimized/JsonType.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i32 %0) #0 {

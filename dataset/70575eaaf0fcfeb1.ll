@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 25 occurrences:
 ; gromacs/optimized/md5.c.ll
 ; gromacs/optimized/md5.cpp.ll
 ; icu/optimized/decNumber.ll
@@ -21,6 +21,7 @@
 ; openssl/optimized/libcrypto-shlib-bio_print.ll
 ; openssl/optimized/libcrypto-shlib-punycode.ll
 ; redis/optimized/rax.ll
+; softposit-rs/optimized/8mae6k72v4zmmji.ll
 ; velox/optimized/BaseVector.cpp.ll
 ; velox/optimized/Bridge.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll

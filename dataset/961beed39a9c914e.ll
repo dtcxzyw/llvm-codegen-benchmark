@@ -84,7 +84,7 @@ entry:
   ret i32 %2
 }
 
-; 380 occurrences:
+; 382 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Glucose.cpp.ll
@@ -125,6 +125,7 @@ entry:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/archive_getdate.c.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
@@ -167,9 +168,7 @@ entry:
 ; libquic/optimized/error_correction.c.ll
 ; libquic/optimized/exponentiation.c.ll
 ; libquic/optimized/tls_cbc.c.ll
-; libquic/optimized/x_long.c.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
-; libsodium/optimized/libsodium_la-scalarmult_curve25519.ll
 ; libwebp/optimized/alpha_enc.c.ll
 ; libwebp/optimized/analysis_enc.c.ll
 ; libwebp/optimized/bit_writer_utils.c.ll
@@ -263,6 +262,10 @@ entry:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
+; lvgl/optimized/lv_canvas.ll
+; lvgl/optimized/lv_draw_buf.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; lvgl/optimized/lv_draw_sw_line.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
@@ -270,7 +273,6 @@ entry:
 ; meshoptimizer/optimized/overdrawanalyzer.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; nori/optimized/nanovg.c.ll
-; nuttx/optimized/lib_calendar2utc.c.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -473,7 +475,7 @@ entry:
   ret i32 %2
 }
 
-; 28 occurrences:
+; 29 occurrences:
 ; abc/optimized/luckyFast16.c.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
@@ -481,6 +483,7 @@ entry:
 ; gromacs/optimized/edsam.cpp.ll
 ; libwebp/optimized/lossless_enc_sse41.c.ll
 ; linux/optimized/assoc_array.ll
+; lvgl/optimized/lv_calendar_header_dropdown.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; minetest/optimized/mg_decoration.cpp.ll
 ; openexr/optimized/ImfHuf.cpp.ll
@@ -520,7 +523,7 @@ entry:
   ret i32 %2
 }
 
-; 99 occurrences:
+; 80 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/absOldSim.c.ll
 ; abc/optimized/wlcNdr.c.ll
@@ -541,6 +544,7 @@ entry:
 ; linux/optimized/intel_dp.ll
 ; linux/optimized/intel_dp_mst.ll
 ; linux/optimized/percpu.ll
+; lvgl/optimized/lv_indev.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
@@ -578,47 +582,27 @@ entry:
 ; wireshark/optimized/packet-f1ap.c.ll
 ; wireshark/optimized/packet-gsm_a_rr.c.ll
 ; wireshark/optimized/packet-h225.c.ll
-; wireshark/optimized/packet-h235.c.ll
 ; wireshark/optimized/packet-h264.c.ll
 ; wireshark/optimized/packet-h265.c.ll
-; wireshark/optimized/packet-h282.c.ll
-; wireshark/optimized/packet-h283.c.ll
-; wireshark/optimized/packet-h323.c.ll
 ; wireshark/optimized/packet-h450.c.ll
 ; wireshark/optimized/packet-h460.c.ll
-; wireshark/optimized/packet-h501.c.ll
-; wireshark/optimized/packet-hnbap.c.ll
-; wireshark/optimized/packet-ilp.c.ll
-; wireshark/optimized/packet-its.c.ll
-; wireshark/optimized/packet-kpm-v2.c.ll
-; wireshark/optimized/packet-lcsap.c.ll
 ; wireshark/optimized/packet-lpp.c.ll
-; wireshark/optimized/packet-lppa.c.ll
-; wireshark/optimized/packet-lppe.c.ll
 ; wireshark/optimized/packet-lte-rrc.c.ll
-; wireshark/optimized/packet-m2ap.c.ll
-; wireshark/optimized/packet-m3ap.c.ll
 ; wireshark/optimized/packet-mp4ves.c.ll
 ; wireshark/optimized/packet-nbap.c.ll
 ; wireshark/optimized/packet-ngap.c.ll
 ; wireshark/optimized/packet-nr-rrc.c.ll
-; wireshark/optimized/packet-nrppa.c.ll
-; wireshark/optimized/packet-pcap.c.ll
 ; wireshark/optimized/packet-per.c.ll
 ; wireshark/optimized/packet-ranap.c.ll
 ; wireshark/optimized/packet-rlc-nr.c.ll
 ; wireshark/optimized/packet-rnsap.c.ll
 ; wireshark/optimized/packet-rrc.c.ll
-; wireshark/optimized/packet-rrlp.c.ll
-; wireshark/optimized/packet-rua.c.ll
 ; wireshark/optimized/packet-s1ap.c.ll
 ; wireshark/optimized/packet-sabp.c.ll
-; wireshark/optimized/packet-sbc-ap.c.ll
 ; wireshark/optimized/packet-t124.c.ll
 ; wireshark/optimized/packet-t38.c.ll
 ; wireshark/optimized/packet-ulp.c.ll
 ; wireshark/optimized/packet-x11.c.ll
-; wireshark/optimized/packet-x2ap.c.ll
 ; wireshark/optimized/packet-xnap.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0) #0 {

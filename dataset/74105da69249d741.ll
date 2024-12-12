@@ -4,7 +4,6 @@
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
 ; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
 ; draco/optimized/mesh_stripifier.cc.ll
-; linux/optimized/exdebug.ll
 ; linux/optimized/ff-memless.ll
 ; linux/optimized/intel_color.ll
 ; linux/optimized/intel_pps.ll
@@ -12,6 +11,7 @@
 ; linux/optimized/serial_core.ll
 ; linux/optimized/vlv_dsi_pll.ll
 ; linux/optimized/xhci.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; minetest/optimized/wieldmesh.cpp.ll
 ; openjdk/optimized/splashscreen_gfx_impl.ll

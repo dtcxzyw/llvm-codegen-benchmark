@@ -1,11 +1,11 @@
 
-%"class.std::map.2581322" = type { %"class.std::_Rb_tree.2581323" }
-%"class.std::_Rb_tree.2581323" = type { %"struct.std::_Rb_tree<unsigned int, std::pair<const unsigned int, irr::gui::IGUIFont *>, std::_Select1st<std::pair<const unsigned int, irr::gui::IGUIFont *>>, std::less<unsigned int>>::_Rb_tree_impl.2581324" }
-%"struct.std::_Rb_tree<unsigned int, std::pair<const unsigned int, irr::gui::IGUIFont *>, std::_Select1st<std::pair<const unsigned int, irr::gui::IGUIFont *>>, std::less<unsigned int>>::_Rb_tree_impl.2581324" = type { %"struct.std::_Rb_tree_key_compare.2581325", %"struct.std::_Rb_tree_header.2581326" }
-%"struct.std::_Rb_tree_key_compare.2581325" = type { %"struct.std::less.2581327" }
-%"struct.std::less.2581327" = type { i8 }
-%"struct.std::_Rb_tree_header.2581326" = type { %"struct.std::_Rb_tree_node_base.2581328", i64 }
-%"struct.std::_Rb_tree_node_base.2581328" = type { i32, ptr, ptr, ptr }
+%"class.std::map.2695442" = type { %"class.std::_Rb_tree.2695443" }
+%"class.std::_Rb_tree.2695443" = type { %"struct.std::_Rb_tree<unsigned int, std::pair<const unsigned int, irr::gui::IGUIFont *>, std::_Select1st<std::pair<const unsigned int, irr::gui::IGUIFont *>>, std::less<unsigned int>>::_Rb_tree_impl.2695444" }
+%"struct.std::_Rb_tree<unsigned int, std::pair<const unsigned int, irr::gui::IGUIFont *>, std::_Select1st<std::pair<const unsigned int, irr::gui::IGUIFont *>>, std::less<unsigned int>>::_Rb_tree_impl.2695444" = type { %"struct.std::_Rb_tree_key_compare.2695445", %"struct.std::_Rb_tree_header.2695446" }
+%"struct.std::_Rb_tree_key_compare.2695445" = type { %"struct.std::less.2695447" }
+%"struct.std::less.2695447" = type { i8 }
+%"struct.std::_Rb_tree_header.2695446" = type { %"struct.std::_Rb_tree_node_base.2695448", i64 }
+%"struct.std::_Rb_tree_node_base.2695448" = type { i32, ptr, ptr, ptr }
 
 ; 12 occurrences:
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
@@ -21,11 +21,11 @@
 ; spike/optimized/plic.ll
 ; z3/optimized/sat_clause.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 255
-  %4 = add nuw nsw i64 %3, %1
-  %5 = getelementptr nusw [12 x %"class.std::map.2581322"], ptr %0, i64 0, i64 %4
+  %4 = add nuw nsw i64 %1, %3
+  %5 = getelementptr nusw nuw [12 x %"class.std::map.2695442"], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

@@ -51,3 +51,8 @@ func0000000000000002:                   # @func0000000000000002
 	vpternlogq	$15, %xmm0, %xmm0, %xmm0 # xmm0 = ~xmm0
 	vzeroupper
 	retq
+func0000000000000001:                   # @func0000000000000001
+	vpmovqb	%ymm0, %xmm0
+	vpternlogq	$15, %xmm0, %xmm0, %xmm0 # xmm0 = ~xmm0
+	vzeroupper
+	retq

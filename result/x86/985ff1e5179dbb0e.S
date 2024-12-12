@@ -1,8 +1,8 @@
 func0000000000000006:                   # @func0000000000000006
-	cmpl	%edi, %esi
-	setl	%al
+	cmpl	%esi, %edi
+	setg	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
-	cmpl	%edi, %esi
+	cmpl	%esi, %edi
 	sete	%al
 	retq

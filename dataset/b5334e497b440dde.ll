@@ -13,7 +13,7 @@ entry:
   ret i32 %3
 }
 
-; 44 occurrences:
+; 42 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/abcSymm.c.ll
 ; abc/optimized/acec2Mult.c.ll
@@ -47,8 +47,6 @@ entry:
 ; openusd/optimized/aom_scale.c.ll
 ; openusd/optimized/decodeframe.c.ll
 ; openusd/optimized/reconintra.c.ll
-; openusd/optimized/restoration.c.ll
-; redis/optimized/hdr_histogram.ll
 ; spike/optimized/kslra16_u.ll
 ; spike/optimized/kslra32_u.ll
 ; spike/optimized/kslra8_u.ll

@@ -8,7 +8,7 @@ entry:
   %2 = and i32 %1, 15
   %3 = add nuw nsw i32 %2, 255
   %4 = and i32 %3, 191
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -45,7 +45,7 @@ define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 134217726
   %3 = and i32 %2, 134217727
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 

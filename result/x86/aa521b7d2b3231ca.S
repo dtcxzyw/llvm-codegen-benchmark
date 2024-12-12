@@ -4,7 +4,7 @@ func0000000000000001:                   # @func0000000000000001
 	setne	%al
 	addl	$67, %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	cmpw	$2, %di
 	movl	$48, %ecx
 	movl	$12288, %eax                    # imm = 0x3000
@@ -15,6 +15,12 @@ func0000000000000008:                   # @func0000000000000008
 	movl	$33639, %ecx                    # imm = 0x8367
 	movl	$5121, %eax                     # imm = 0x1401
 	cmovael	%ecx, %eax
+	retq
+func0000000000000004:                   # @func0000000000000004
+	movzwl	%di, %eax
+	cmpl	$10000, %eax                    # imm = 0x2710
+	movl	$5, %eax
+	sbbl	$0, %eax
 	retq
 func0000000000000006:                   # @func0000000000000006
 	shrl	$14, %edi
@@ -32,4 +38,11 @@ func000000000000000a:                   # @func000000000000000a
 	testw	%di, %di
 	setle	%al
 	addl	$3, %eax
+	retq
+func0000000000000018:                   # @func0000000000000018
+	movzwl	%di, %eax
+	xorl	%ecx, %ecx
+	cmpl	$31744, %eax                    # imm = 0x7C00
+	movl	$939524096, %eax                # imm = 0x38000000
+	cmovbl	%ecx, %eax
 	retq

@@ -1,10 +1,11 @@
 
-; 12 occurrences:
+; 14 occurrences:
 ; cpython/optimized/dtoa.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-cff1.cc.ll
 ; hdf5/optimized/H5Dchunk.c.ll
 ; llvm/optimized/LiveDebugVariables.cpp.ll
+; lvgl/optimized/lv_spinbox.ll
 ; opencv/optimized/detection_output_layer.cpp.ll
 ; opencv/optimized/geometry.cpp.ll
 ; openjdk/optimized/hb-ot-shaper-indic.ll
@@ -12,16 +13,18 @@
 ; ruby/optimized/util.ll
 ; wolfssl/optimized/asn.c.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = and i1 %1, %2
   %4 = sext i1 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
-; 122 occurrences:
+; 125 occurrences:
+; boost/optimized/to_chars.ll
 ; cpython/optimized/Hacl_Hash_MD5.ll
 ; cpython/optimized/Hacl_Hash_SHA1.ll
 ; fmt/optimized/format.cc.ll
@@ -33,6 +36,7 @@ entry:
 ; freetype/optimized/sfnt.c.ll
 ; hermes/optimized/dtoa.c.ll
 ; icu/optimized/smpdtfmt.ll
+; icu/optimized/ubidiwrt.ll
 ; icu/optimized/utext.ll
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
@@ -112,6 +116,7 @@ entry:
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/lbr.ll
 ; linux/optimized/power_supply_core.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; ninja/optimized/build.cc.ll
 ; opencv/optimized/contours_new.cpp.ll
 ; opencv/optimized/layer_norm.cpp.ll
@@ -149,7 +154,7 @@ define i32 @func0000000000000001(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = and i1 %1, %2
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 

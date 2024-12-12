@@ -1,5 +1,5 @@
 
-; 157 occurrences:
+; 146 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcRestruct.c.ll
 ; abc/optimized/abcResub.c.ll
@@ -56,19 +56,14 @@
 ; hdf5/optimized/H5Odtype.c.ll
 ; hdf5/optimized/H5Oint.c.ll
 ; libquic/optimized/v3_purp.c.ll
-; libquic/optimized/x509_trs.c.ll
 ; lief/optimized/psa_crypto.c.ll
-; linux/optimized/8250_dwlib.ll
 ; linux/optimized/atkbd.ll
 ; linux/optimized/boot.ll
 ; linux/optimized/cfg.ll
 ; linux/optimized/cpu.ll
 ; linux/optimized/ehci-hcd.ll
-; linux/optimized/file_table.ll
 ; linux/optimized/gen8_engine_cs.ll
-; linux/optimized/hdac_regmap.ll
 ; linux/optimized/hooks.ll
-; linux/optimized/ht.ll
 ; linux/optimized/i915_gpu_error.ll
 ; linux/optimized/i915_hwmon.ll
 ; linux/optimized/i9xx_wm.ll
@@ -107,12 +102,9 @@
 ; llvm/optimized/MachineOperand.cpp.ll
 ; llvm/optimized/ParseDecl.cpp.ll
 ; llvm/optimized/ParseDeclCXX.cpp.ll
-; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
-; luajit/optimized/lj_asm.ll
-; luajit/optimized/lj_asm_dyn.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; memcached/optimized/memcached-crawler.ll
 ; memcached/optimized/memcached-items.ll
@@ -130,9 +122,7 @@
 ; openjdk/optimized/PLATFORM_API_LinuxOS_ALSA_MidiIn.ll
 ; openjdk/optimized/assembler_x86.ll
 ; openssl/optimized/libcrypto-lib-v3_purp.ll
-; openssl/optimized/libcrypto-lib-x509_trust.ll
 ; openssl/optimized/libcrypto-shlib-v3_purp.ll
-; openssl/optimized/libcrypto-shlib-x509_trust.ll
 ; openssl/optimized/libssl-lib-quic_wire_pkt.ll
 ; openssl/optimized/libssl-shlib-quic_wire_pkt.ll
 ; openusd/optimized/openexr-c.c.ll
@@ -142,7 +132,6 @@
 ; postgres/optimized/utf8_and_gb18030.ll
 ; protobuf/optimized/tokenizer.cc.ll
 ; qemu/optimized/hw_9pfs_9p.c.ll
-; qemu/optimized/hw_net_cadence_gem.c.ll
 ; qemu/optimized/hw_pci_pcie_aer.c.ll
 ; recastnavigation/optimized/DetourNavMeshQuery.cpp.ll
 ; redis/optimized/module.ll
@@ -167,12 +156,10 @@ entry:
   ret i32 %5
 }
 
-; 73 occurrences:
+; 68 occurrences:
 ; git/optimized/revision.ll
-; hermes/optimized/HBC.cpp.ll
 ; linux/optimized/e100.ll
 ; linux/optimized/e1000_main.ll
-; linux/optimized/fixed_phy.ll
 ; linux/optimized/xhci-hub.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/AddressSanitizer.cpp.ll
@@ -190,14 +177,12 @@ entry:
 ; llvm/optimized/GlobalOpt.cpp.ll
 ; llvm/optimized/Globals.cpp.ll
 ; llvm/optimized/HWAddressSanitizer.cpp.ll
-; llvm/optimized/IRMover.cpp.ll
 ; llvm/optimized/InstrProfiling.cpp.ll
 ; llvm/optimized/LLParser.cpp.ll
 ; llvm/optimized/LTOCodeGenerator.cpp.ll
 ; llvm/optimized/LowerEmuTLS.cpp.ll
 ; llvm/optimized/LowerTypeTests.cpp.ll
 ; llvm/optimized/MergeFunctions.cpp.ll
-; llvm/optimized/PreISelIntrinsicLowering.cpp.ll
 ; llvm/optimized/WholeProgramDevirt.cpp.ll
 ; ocio/optimized/CPUProcessor.cpp.ll
 ; ocio/optimized/FileFormatDiscreet1DL.cpp.ll
@@ -218,7 +203,6 @@ entry:
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Filter.cc.ll
 ; openvdb/optimized/FindActiveValues.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFilter.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetMeasure.cc.ll
@@ -251,7 +235,7 @@ entry:
   ret i32 %5
 }
 
-; 40 occurrences:
+; 39 occurrences:
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/CompressionContextPoolSingletons.cpp.ll
 ; folly/optimized/EDFThreadPoolExecutor.cpp.ll
@@ -267,7 +251,6 @@ entry:
 ; folly/optimized/IOThreadPoolDeadlockDetectorObserver.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/LogCategory.cpp.ll
-; folly/optimized/LoggerDB.cpp.ll
 ; folly/optimized/ManualTimekeeper.cpp.ll
 ; folly/optimized/MaxConcurrentRateLimiter.cpp.ll
 ; folly/optimized/ObserverManager.cpp.ll

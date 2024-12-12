@@ -1,4 +1,4 @@
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	andi	a1, a1, 1
 	li	a3, 2
 	czero.nez	a1, a3, a1
@@ -12,13 +12,13 @@ func0000000000000000:                   # @func0000000000000000
 	add	a1, a1, a2
 	add.uw	a0, a1, a0
 	ret
-func000000000000001e:                   # @func000000000000001e
+func000000000000001f:                   # @func000000000000001f
 	li	a3, 1
 	andn	a1, a3, a1
 	addw	a1, a1, a2
 	sh2add	a0, a1, a0
 	ret
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	andi	a1, a1, 1
 	li	a3, -3
 	czero.nez	a1, a3, a1

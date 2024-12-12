@@ -1,6 +1,7 @@
 
 ; 65 occurrences:
 ; abc/optimized/bmcMaj3.c.ll
+; boost/optimized/to_chars.ll
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/inner_product_computer.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_2.cc.ll
@@ -58,7 +59,6 @@
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
 ; openblas/optimized/dsbgst.c.ll
-; openblas/optimized/dstein.c.ll
 ; openjdk/optimized/mlib_c_ImageConvCopyEdge.ll
 ; openjdk/optimized/relocator.ll
 ; openspiel/optimized/trade_comm.cc.ll
@@ -75,7 +75,7 @@ entry:
   ret i64 %6
 }
 
-; 67 occurrences:
+; 64 occurrences:
 ; abc/optimized/bacPrsBuild.c.ll
 ; abc/optimized/bmcMaj3.c.ll
 ; abc/optimized/cmdStarter.c.ll
@@ -105,7 +105,6 @@ entry:
 ; meshlab/optimized/solver.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; openblas/optimized/dbdsqr.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dgels.c.ll
 ; openblas/optimized/dgelst.c.ll
 ; openblas/optimized/dgelsy.c.ll
@@ -114,11 +113,9 @@ entry:
 ; openblas/optimized/dlagsy.c.ll
 ; openblas/optimized/dlahr2.c.ll
 ; openblas/optimized/dlansf.c.ll
-; openblas/optimized/dlasyf_aa.c.ll
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
 ; openblas/optimized/dlatrs3.c.ll
-; openblas/optimized/dorgl2.c.ll
 ; openblas/optimized/dorgql.c.ll
 ; openblas/optimized/dpbtrf.c.ll
 ; openblas/optimized/dsytri2x.c.ll
@@ -153,17 +150,11 @@ entry:
   ret i64 %6
 }
 
-; 33 occurrences:
+; 27 occurrences:
 ; abc/optimized/giaUtil.c.ll
 ; cpython/optimized/mpdecimal.ll
 ; cpython/optimized/sixstep.ll
 ; darktable/optimized/export.c.ll
-; gromacs/optimized/dlasd1.cpp.ll
-; gromacs/optimized/dlasd3.cpp.ll
-; gromacs/optimized/dlasd6.cpp.ll
-; gromacs/optimized/slasd1.cpp.ll
-; gromacs/optimized/slasd3.cpp.ll
-; gromacs/optimized/slasd6.cpp.ll
 ; hdf5/optimized/H5Ocache.c.ll
 ; nori/optimized/nanovg.c.ll
 ; openblas/optimized/dgesvd.c.ll
@@ -172,9 +163,9 @@ entry:
 ; openblas/optimized/dlaqps.c.ll
 ; openblas/optimized/dlasd3.c.ll
 ; openblas/optimized/dlasyf.c.ll
-; openblas/optimized/dlasyf_aa.c.ll
 ; openblas/optimized/dlasyf_rk.c.ll
 ; openblas/optimized/dlasyf_rook.c.ll
+; openblas/optimized/dorcsd2by1.c.ll
 ; openblas/optimized/dsytrf_aa.c.ll
 ; opencv/optimized/stereosgbm.cpp.ll
 ; openjdk/optimized/method.ll
@@ -197,11 +188,13 @@ entry:
   ret i64 %6
 }
 
-; 17 occurrences:
+; 19 occurrences:
+; boost/optimized/to_chars.ll
 ; gromacs/optimized/dlasda.cpp.ll
 ; gromacs/optimized/slasda.cpp.ll
 ; icu/optimized/numrange_impl.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
+; llvm/optimized/CGStmt.cpp.ll
 ; llvm/optimized/Core.cpp.ll
 ; llvm/optimized/InstCombineCalls.cpp.ll
 ; llvm/optimized/Instructions.cpp.ll
@@ -225,9 +218,7 @@ entry:
   ret i64 %6
 }
 
-; 5 occurrences:
-; gromacs/optimized/dlasd1.cpp.ll
-; gromacs/optimized/slasd1.cpp.ll
+; 3 occurrences:
 ; meshlab/optimized/io_bre.cpp.ll
 ; stockfish/optimized/tbprobe.ll
 ; zxing/optimized/DMBitLayout.cpp.ll
@@ -261,7 +252,7 @@ define i64 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 4
   %4 = add i32 %3, %1
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = sext i32 %5 to i64
   ret i64 %6
 }
@@ -291,7 +282,7 @@ entry:
 define i64 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add nsw i32 %4, %0
   %6 = sext i32 %5 to i64
   ret i64 %6
@@ -303,8 +294,8 @@ entry:
 define i64 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
-  %4 = add nsw i32 %3, %1
-  %5 = add i32 %4, %0
+  %4 = add nsw i32 %1, %3
+  %5 = add i32 %0, %4
   %6 = sext i32 %5 to i64
   ret i64 %6
 }
@@ -318,6 +309,18 @@ entry:
   %3 = add nuw i32 %2, 1
   %4 = add i32 %3, %1
   %5 = add i32 %4, %0
+  %6 = sext i32 %5 to i64
+  ret i64 %6
+}
+
+; 1 occurrences:
+; openblas/optimized/dorcsd2by1.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000002d(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw i32 %2, 1
+  %4 = add nuw nsw i32 %3, %1
+  %5 = add nsw i32 %4, %0
   %6 = sext i32 %5 to i64
   ret i64 %6
 }

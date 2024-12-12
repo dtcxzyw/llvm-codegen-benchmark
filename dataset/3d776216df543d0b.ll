@@ -1,5 +1,7 @@
 
-; 3 occurrences:
+; 5 occurrences:
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/ext.ll
 ; opencv/optimized/mvn_layer.cpp.ll
 ; opencv/optimized/onnx_importer.cpp.ll
 ; soc-simulator/optimized/sim_mycpu.ll
@@ -7,12 +9,13 @@
 define i8 @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   %4 = zext i1 %3 to i8
   ret i8 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/default_filter_factory.ll
 ; luau/optimized/Autocomplete.test.cpp.ll
 ; luau/optimized/Parser.test.cpp.ll
 ; luau/optimized/TypeInfer.functions.test.cpp.ll
@@ -22,7 +25,54 @@ entry:
 define i8 @func0000000000000018(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = icmp ne i64 %2, %0
+  %3 = icmp ne i64 %0, %2
+  %4 = zext i1 %3 to i8
+  ret i8 %4
+}
+
+; 2 occurrences:
+; boost/optimized/default_filter_factory.ll
+; ninja/optimized/build_test.cc.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000014(i64 %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = icmp sgt i64 %0, %2
+  %4 = zext i1 %3 to i8
+  ret i8 %4
+}
+
+; 2 occurrences:
+; boost/optimized/default_filter_factory.ll
+; yosys/optimized/simplify.ll
+; Function Attrs: nounwind
+define i8 @func000000000000000c(i64 %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = icmp slt i64 %0, %2
+  %4 = zext i1 %3 to i8
+  ret i8 %4
+}
+
+; 2 occurrences:
+; boost/optimized/default_filter_factory.ll
+; gromacs/optimized/readir.cpp.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000016(i64 %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = icmp sge i64 %0, %2
+  %4 = zext i1 %3 to i8
+  ret i8 %4
+}
+
+; 1 occurrences:
+; boost/optimized/default_filter_factory.ll
+; Function Attrs: nounwind
+define i8 @func000000000000000e(i64 %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = icmp sle i64 %0, %2
   %4 = zext i1 %3 to i8
   ret i8 %4
 }
@@ -33,40 +83,7 @@ entry:
 define i8 @func0000000000000012(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = icmp ule i64 %2, %0
-  %4 = zext i1 %3 to i8
-  ret i8 %4
-}
-
-; 1 occurrences:
-; yosys/optimized/simplify.ll
-; Function Attrs: nounwind
-define i8 @func000000000000000c(i64 %0, i32 %1) #0 {
-entry:
-  %2 = sext i32 %1 to i64
-  %3 = icmp sgt i64 %2, %0
-  %4 = zext i1 %3 to i8
-  ret i8 %4
-}
-
-; 1 occurrences:
-; gromacs/optimized/readir.cpp.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000016(i64 %0, i32 %1) #0 {
-entry:
-  %2 = sext i32 %1 to i64
-  %3 = icmp sle i64 %2, %0
-  %4 = zext i1 %3 to i8
-  ret i8 %4
-}
-
-; 1 occurrences:
-; ninja/optimized/build_test.cc.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000014(i64 %0, i32 %1) #0 {
-entry:
-  %2 = sext i32 %1 to i64
-  %3 = icmp slt i64 %2, %0
+  %3 = icmp uge i64 %0, %2
   %4 = zext i1 %3 to i8
   ret i8 %4
 }
@@ -77,7 +94,7 @@ entry:
 define i8 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = icmp ugt i64 %2, %0
+  %3 = icmp ult i64 %0, %2
   %4 = zext i1 %3 to i8
   ret i8 %4
 }

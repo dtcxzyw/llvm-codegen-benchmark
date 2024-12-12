@@ -1,5 +1,5 @@
 
-; 55 occurrences:
+; 56 occurrences:
 ; abc/optimized/giaMan.c.ll
 ; abc/optimized/saigSwitch.c.ll
 ; darktable/optimized/introspection_lut3d.c.ll
@@ -18,6 +18,7 @@
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
+; lvgl/optimized/lv_chart.ll
 ; meshlab/optimized/VisibilityCheck.cpp.ll
 ; meshlab/optimized/VisibleSet.cpp.ll
 ; meshlab/optimized/alignset.cpp.ll

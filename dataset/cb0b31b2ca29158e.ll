@@ -1,23 +1,24 @@
 
-%struct.niels_s.2521027 = type { [1 x %struct.gf_s.2521025], [1 x %struct.gf_s.2521025], [1 x %struct.gf_s.2521025] }
-%struct.gf_s.2521025 = type { [8 x i64] }
+%struct.niels_s.2635511 = type { [1 x %struct.gf_s.2635509], [1 x %struct.gf_s.2635509], [1 x %struct.gf_s.2635509] }
+%struct.gf_s.2635509 = type { [8 x i64] }
 
-; 4 occurrences:
+; 5 occurrences:
 ; hermes/optimized/RegExp.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; openssl/optimized/libcrypto-lib-wp_dgst.ll
 ; openssl/optimized/libcrypto-shlib-wp_dgst.ll
+; proj/optimized/mlfn.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = sub i32 512, %1
   %3 = lshr i32 %2, 3
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 103 occurrences:
+; 102 occurrences:
 ; llvm/optimized/APINotesManager.cpp.ll
 ; llvm/optimized/ARCMT.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
@@ -85,7 +86,6 @@ entry:
 ; llvm/optimized/PreprocessingRecord.cpp.ll
 ; llvm/optimized/Preprocessor.cpp.ll
 ; llvm/optimized/PreprocessorLexer.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RawCommentList.cpp.ll
 ; llvm/optimized/Replacement.cpp.ll
 ; llvm/optimized/RewriteMacros.cpp.ll
@@ -122,16 +122,16 @@ entry:
 ; openssl/optimized/libcrypto-shlib-curve448.ll
 ; php/optimized/ir_emit.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000016(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000017(ptr %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = lshr i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw [1 x %struct.niels_s.2521027], ptr %0, i64 %4
+  %5 = getelementptr nusw nuw [1 x %struct.niels_s.2635511], ptr %0, i64 %4
   ret ptr %5
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/CodeCompleteConsumer.cpp.ll
 ; llvm/optimized/CompilerInstance.cpp.ll
@@ -142,15 +142,14 @@ entry:
 ; llvm/optimized/PlistReporter.cpp.ll
 ; llvm/optimized/RewriteMacros.cpp.ll
 ; llvm/optimized/VerifyDiagnosticConsumer.cpp.ll
-; proj/optimized/mlfn.cpp.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000036(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000037(ptr %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 -2, %1
   %3 = lshr i32 %2, 6
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i64, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i64, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -160,12 +159,12 @@ entry:
 ; llvm/optimized/PlistReporter.cpp.ll
 ; llvm/optimized/VerifyDiagnosticConsumer.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000026(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000027(ptr %0, i32 %1) #0 {
 entry:
   %2 = sub nuw i32 -3, %1
   %3 = lshr i32 %2, 6
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i64, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i64, ptr %0, i64 %4
   ret ptr %5
 }
 

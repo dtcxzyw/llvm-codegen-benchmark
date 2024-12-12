@@ -9,7 +9,7 @@ func0000000000000016:                   # @func0000000000000016
 	shlxq	%rsi, %rax, %rax
 	addq	%rdi, %rax
 	retq
-func000000000000001e:                   # @func000000000000001e
+func000000000000001f:                   # @func000000000000001f
 	movl	$4096, %eax                     # imm = 0x1000
 	shlxq	%rsi, %rax, %rax
 	addq	%rdi, %rax

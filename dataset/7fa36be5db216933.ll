@@ -1,5 +1,7 @@
 
-; 5 occurrences:
+; 7 occurrences:
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; freetype/optimized/cff.c.ll
 ; freetype/optimized/pfr.c.ll
 ; linux/optimized/ohci-hcd.ll

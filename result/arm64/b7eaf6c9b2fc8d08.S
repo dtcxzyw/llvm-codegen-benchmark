@@ -1,22 +1,13 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	movi	v6.4s, #31
-	orr	v1.16b, v1.16b, v3.16b
-	orr	v0.16b, v0.16b, v2.16b
-	and	v5.16b, v5.16b, v6.16b
-	and	v4.16b, v4.16b, v6.16b
-	ushl	v0.4s, v0.4s, v4.4s
-	ushl	v1.4s, v1.4s, v5.4s
+	orr	w8, w0, w1
+	lsl	w0, w8, w2
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	movi	v6.4s, #31
-	orr	v1.16b, v1.16b, v3.16b
-	orr	v0.16b, v0.16b, v2.16b
-	and	v5.16b, v5.16b, v6.16b
-	and	v4.16b, v4.16b, v6.16b
-	ushl	v0.4s, v0.4s, v4.4s
-	ushl	v1.4s, v1.4s, v5.4s
+	and	w8, w2, #0x7
+	orr	w9, w0, w1
+	lsl	w0, w9, w8
 	ret
                                         // -- End function

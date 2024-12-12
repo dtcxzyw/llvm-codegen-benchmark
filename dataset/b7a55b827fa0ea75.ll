@@ -3,7 +3,7 @@
 ; chibicc/optimized/hashmap.ll
 ; opencv/optimized/stringutils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000004a(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 100
   %3 = sdiv i32 %2, %0
@@ -25,7 +25,7 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000044(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 100
   %3 = sdiv i32 %2, %0
@@ -36,7 +36,7 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000048(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 100
   %3 = sdiv i32 %2, %0
@@ -47,7 +47,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/stringutils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 100
   %3 = sdiv i32 %2, %0
@@ -58,7 +58,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/stringutils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000004c(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 100
   %3 = sdiv i32 %2, %0

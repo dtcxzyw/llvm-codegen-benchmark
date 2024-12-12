@@ -7,7 +7,7 @@ entry:
   %3 = and i32 %2, 248
   %4 = icmp eq i32 %3, 136
   %5 = zext i1 %4 to i32
-  %6 = or i32 %5, %1
+  %6 = or i32 %1, %5
   %7 = or i32 %6, %0
   ret i32 %7
 }
@@ -20,8 +20,8 @@ entry:
   %3 = and i32 %2, 32752
   %4 = icmp eq i32 %3, 0
   %5 = zext i1 %4 to i32
-  %6 = or disjoint i32 %5, %1
-  %7 = or disjoint i32 %6, %0
+  %6 = or disjoint i32 %1, %5
+  %7 = or disjoint i32 %0, %6
   ret i32 %7
 }
 
@@ -35,21 +35,8 @@ entry:
   %3 = and i32 %2, 96
   %4 = icmp ne i32 %3, 0
   %5 = zext i1 %4 to i32
-  %6 = or i32 %5, %1
+  %6 = or i32 %1, %5
   %7 = or i32 %6, %0
-  ret i32 %7
-}
-
-; 1 occurrences:
-; openusd/optimized/ilmbase_half.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 8380416
-  %4 = icmp eq i32 %3, 0
-  %5 = zext i1 %4 to i32
-  %6 = or i32 %5, %1
-  %7 = or disjoint i32 %6, %0
   ret i32 %7
 }
 
@@ -61,8 +48,8 @@ entry:
   %3 = and i32 %2, 17408
   %4 = icmp eq i32 %3, 16384
   %5 = zext i1 %4 to i32
-  %6 = or disjoint i32 %5, %1
-  %7 = or i32 %6, %0
+  %6 = or disjoint i32 %1, %5
+  %7 = or i32 %0, %6
   ret i32 %7
 }
 
@@ -76,7 +63,7 @@ entry:
   %3 = and i32 %2, 65535
   %4 = icmp ne i32 %3, 0
   %5 = zext i1 %4 to i32
-  %6 = or disjoint i32 %5, %1
+  %6 = or disjoint i32 %1, %5
   %7 = or disjoint i32 %6, %0
   ret i32 %7
 }

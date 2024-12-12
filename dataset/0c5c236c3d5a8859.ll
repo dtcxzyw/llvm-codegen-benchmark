@@ -1,9 +1,11 @@
 
-; 323 occurrences:
+; 325 occurrences:
 ; abc/optimized/mapperRefs.c.ll
 ; annoy/optimized/annoymodule.ll
 ; assimp/optimized/ColladaLoader.cpp.ll
 ; assimp/optimized/XFileImporter.cpp.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; box2d/optimized/b2_rope.cpp.ll
 ; box2d/optimized/b2_time_of_impact.cpp.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
@@ -237,7 +239,6 @@
 ; ocio/optimized/GradingTone.cpp.ll
 ; ocio/optimized/GradingToneOpCPU.cpp.ll
 ; oiio/optimized/imagebufalgo_yee.cpp.ll
-; openblas/optimized/ieeeck.c.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/KAZEFeatures.cpp.ll
 ; opencv/optimized/bgfg_gsoc.cpp.ll
@@ -322,12 +323,13 @@
 ; xgboost/optimized/stats.cc.ll
 ; yoga/optimized/AbsoluteLayout.cpp.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
+; zed-rs/optimized/5lgahps99tv0rsaolw3x59ow2.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:
   %3 = fdiv float %1, %2
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   ret float %4
 }
 

@@ -11,7 +11,7 @@ define i1 @func0000000000000000(i1 %0, i8 %1) #0 {
 entry:
   %2 = freeze i8 %1
   %3 = trunc i8 %2 to i1
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 

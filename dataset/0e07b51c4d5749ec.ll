@@ -2,10 +2,9 @@
 ; 31 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; git/optimized/blame.ll
-; hermes/optimized/Host.cpp.ll
+; hwloc/optimized/memattrs.ll
 ; linux/optimized/blktrace.ll
 ; linux/optimized/buffered_write.ll
-; linux/optimized/cpuid.ll
 ; linux/optimized/md.ll
 ; linux/optimized/skbuff.ll
 ; linux/optimized/usblp.ll
@@ -31,6 +30,7 @@
 ; rust-analyzer-rs/optimized/8q1esjraj83sh5t.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
+; zed-rs/optimized/58eqxolkuiavjghtj45u3c5th.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1, i64 %2) #0 {
 entry:

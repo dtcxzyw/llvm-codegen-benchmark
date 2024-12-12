@@ -14,9 +14,9 @@ func0000000000000040:                   # @func0000000000000040
 	vpaddd	.LCPI1_0(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq
-func0000000000000077:                   # @func0000000000000077
+func0000000000000000:                   # @func0000000000000000
 	vpmovqd	%ymm0, %xmm0
-	vpslld	$5, %xmm0, %xmm0
+	vpslld	$3, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI3_0:

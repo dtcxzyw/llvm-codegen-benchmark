@@ -3,22 +3,22 @@
 ; postgres/optimized/gistproc.ll
 ; qemu/optimized/optimize.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = or disjoint i64 %3, %1
-  %5 = icmp ult i64 %4, %0
+  %4 = or disjoint i64 %1, %3
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; qemu/optimized/optimize.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000025(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = or disjoint i64 %3, %1
-  %5 = icmp uge i64 %4, %0
+  %4 = or disjoint i64 %1, %3
+  %5 = icmp ule i64 %0, %4
   ret i1 %5
 }
 
@@ -26,11 +26,11 @@ entry:
 ; luau/optimized/lnumprint.cpp.ll
 ; qemu/optimized/optimize.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000029(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = or disjoint i64 %3, %1
-  %5 = icmp ule i64 %4, %0
+  %4 = or disjoint i64 %1, %3
+  %5 = icmp uge i64 %0, %4
   ret i1 %5
 }
 
@@ -42,11 +42,11 @@ entry:
 ; spike/optimized/ukmar64.ll
 ; wireshark/optimized/packet-rtp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = or disjoint i64 %3, %1
-  %5 = icmp ugt i64 %4, %0
+  %4 = or disjoint i64 %1, %3
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
@@ -56,33 +56,33 @@ entry:
 ; abc/optimized/cuddBddIte.c.ll
 ; qemu/optimized/optimize.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = or disjoint i64 %3, %1
-  %5 = icmp slt i64 %4, %0
+  %4 = or disjoint i64 %1, %3
+  %5 = icmp sgt i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; qemu/optimized/optimize.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000027(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = or disjoint i64 %3, %1
-  %5 = icmp sge i64 %4, %0
+  %4 = or disjoint i64 %1, %3
+  %5 = icmp sle i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; qemu/optimized/optimize.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002b(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = or disjoint i64 %3, %1
-  %5 = icmp sle i64 %4, %0
+  %4 = or disjoint i64 %1, %3
+  %5 = icmp sge i64 %0, %4
   ret i1 %5
 }
 
@@ -90,11 +90,11 @@ entry:
 ; llvm/optimized/LoopAccessAnalysis.cpp.ll
 ; qemu/optimized/optimize.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = or disjoint i64 %3, %1
-  %5 = icmp sgt i64 %4, %0
+  %4 = or disjoint i64 %1, %3
+  %5 = icmp slt i64 %0, %4
   ret i1 %5
 }
 
@@ -102,11 +102,11 @@ entry:
 ; abc/optimized/ifDec07.c.ll
 ; qemu/optimized/optimize.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = or disjoint i64 %3, %1
-  %5 = icmp ne i64 %4, %0
+  %4 = or disjoint i64 %1, %3
+  %5 = icmp ne i64 %0, %4
   ret i1 %5
 }
 
@@ -119,11 +119,11 @@ entry:
 ; llvm/optimized/ScheduleDAG.cpp.ll
 ; qemu/optimized/optimize.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = or disjoint i64 %3, %1
-  %5 = icmp eq i64 %4, %0
+  %4 = or disjoint i64 %1, %3
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
@@ -196,7 +196,7 @@ define i1 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 7
   %4 = or i64 %3, %1
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
@@ -211,8 +211,8 @@ entry:
 define i1 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 7
-  %4 = or i64 %3, %1
-  %5 = icmp ne i64 %4, %0
+  %4 = or i64 %1, %3
+  %5 = icmp ne i64 %0, %4
   ret i1 %5
 }
 
@@ -222,8 +222,8 @@ entry:
 define i1 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 7
-  %4 = or i64 %3, %1
-  %5 = icmp ugt i64 %4, %0
+  %4 = or i64 %1, %3
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 

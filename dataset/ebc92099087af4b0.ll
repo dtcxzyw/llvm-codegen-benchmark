@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 27 occurrences:
 ; brotli/optimized/backward_references.c.ll
 ; clamav/optimized/lzwdec.c.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
@@ -25,6 +25,8 @@
 ; rustfmt-rs/optimized/4ext43viwbyeinhu.ll
 ; rustfmt-rs/optimized/4gk399kploc9gcsb.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0) #0 {
 entry:
@@ -38,10 +40,10 @@ entry:
 ; openusd/optimized/zipFile.cpp.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0) #0 {
+define i1 @func0000000000000018(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 32767
-  %2 = icmp ugt i64 %1, 31744
+  %2 = icmp samesign ugt i64 %1, 31744
   ret i1 %2
 }
 
@@ -61,10 +63,12 @@ entry:
   ret i1 %2
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; clamav/optimized/lzwdec.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0) #0 {
+define i1 @func0000000000000014(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 256
   %2 = icmp eq i64 %1, 0
@@ -78,7 +82,7 @@ entry:
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0) #0 {
+define i1 @func0000000000000041(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 16383
   %2 = icmp eq i64 %1, 0
@@ -92,7 +96,7 @@ entry:
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0) #0 {
+define i1 @func0000000000000054(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 16256
   %2 = icmp eq i64 %1, 0
@@ -106,21 +110,23 @@ entry:
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0) #0 {
+define i1 @func0000000000000058(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 16128
   %2 = icmp ne i64 %1, 0
   ret i1 %2
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0) #0 {
+define i1 @func0000000000000074(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 2016
-  %2 = icmp ult i64 %1, 992
+  %2 = icmp samesign ult i64 %1, 992
   ret i1 %2
 }
 

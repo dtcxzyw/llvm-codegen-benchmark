@@ -6,7 +6,7 @@
 ; openusd/optimized/dirtyList.cpp.ll
 ; postgres/optimized/syslogger.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %0, %1
   %3 = icmp eq i32 %2, 0
@@ -24,7 +24,7 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %0, %1
   %3 = icmp eq i32 %2, 0

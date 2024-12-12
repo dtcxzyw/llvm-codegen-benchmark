@@ -1,6 +1,5 @@
 
-; 2 occurrences:
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
+; 1 occurrences:
 ; ruby/optimized/vm.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
@@ -10,17 +9,25 @@ entry:
   ret ptr %3
 }
 
-; 24 occurrences:
+; 32 occurrences:
 ; abseil-cpp/optimized/graphcycles.cc.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/wait.ll
 ; cvc5/optimized/didyoumean.cpp.ll
 ; eastl/optimized/TestIntrusiveHash.cpp.ll
 ; folly/optimized/Random.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/eigen_mesh_conversions.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
-; meshlab/optimized/meshfilter.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; openjdk/optimized/jfrStackTraceRepository.ll
 ; openjdk/optimized/os.ll
@@ -36,10 +43,10 @@ entry:
 ; typst-rs/optimized/49m3cs7hus53ztof.ll
 ; verilator/optimized/V3OrderParallel.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = urem i64 %1, 624
-  %3 = getelementptr nusw [624 x i32], ptr %0, i64 0, i64 %2
+  %3 = getelementptr nusw nuw [624 x i32], ptr %0, i64 0, i64 %2
   ret ptr %3
 }
 

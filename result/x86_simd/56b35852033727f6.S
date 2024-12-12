@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	128                             # 0x80
-func0000000000000066:                   # @func0000000000000066
+func00000000000000c6:                   # @func00000000000000c6
 	vpor	%ymm1, %ymm0, %ymm0
 	vptestmd	.LCPI0_0(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0

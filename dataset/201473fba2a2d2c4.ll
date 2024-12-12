@@ -71,15 +71,27 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 1 occurrences:
+; darktable/optimized/introspection_colorzones.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000035(i64 %0, i64 %1) #0 {
+entry:
+  %2 = mul nuw nsw i64 %1, 160
+  %3 = shl nsw i64 %0, 3
+  %4 = add nsw i64 %3, %2
+  ret i64 %4
+}
+
+; 4 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; ceres/optimized/cuda_block_structure.cc.ll
+; darktable/optimized/introspection_colorzones.c.ll
 ; libjpeg-turbo/optimized/jidctint.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0, i64 %1) #0 {
 entry:
-  %2 = mul nsw i64 %1, 40
-  %3 = shl nsw i64 %0, 2
+  %2 = mul nsw i64 %1, 160
+  %3 = shl nsw i64 %0, 3
   %4 = add nsw i64 %3, %2
   ret i64 %4
 }
@@ -104,17 +116,6 @@ entry:
   %2 = mul nuw nsw i64 %1, 24
   %3 = shl i64 %0, 12
   %4 = add nuw i64 %3, %2
-  ret i64 %4
-}
-
-; 1 occurrences:
-; linux/optimized/drm_self_refresh_helper.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000030(i64 %0, i64 %1) #0 {
-entry:
-  %2 = shl nuw nsw i64 %1, 4
-  %3 = mul i64 %0, 3
-  %4 = add i64 %3, %2
   ret i64 %4
 }
 

@@ -1,5 +1,5 @@
 
-; 85 occurrences:
+; 84 occurrences:
 ; abc/optimized/bacWriteVer.c.ll
 ; git/optimized/diffcore-break.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
@@ -10,11 +10,9 @@
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libjpeg-turbo/optimized/jclhuff.c.ll
 ; lightgbm/optimized/config.cpp.ll
-; linux/optimized/cn_proc.ll
 ; linux/optimized/drm_dp_mst_topology.ll
 ; linux/optimized/exec.ll
 ; linux/optimized/forcedeth.ll
-; linux/optimized/intel_tcc.ll
 ; linux/optimized/message.ll
 ; linux/optimized/vsprintf.ll
 ; llvm/optimized/AArch64.cpp.ll
@@ -43,6 +41,7 @@
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; llvm/optimized/X86ShuffleDecode.cpp.ll
+; lvgl/optimized/lv_draw_arc.ll
 ; opencv/optimized/arithm.cpp.ll
 ; opencv/optimized/imgwarp.cpp.ll
 ; opencv/optimized/lapack.cpp.ll
@@ -94,15 +93,14 @@ entry:
   ret i32 %3
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/fatent.ll
-; linux/optimized/inat.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0) #0 {
+define i32 @func0000000000000018(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 255
-  %2 = icmp ugt i32 %1, 14
+  %2 = icmp samesign ugt i32 %1, 14
   %3 = select i1 %2, i32 0, i32 %1
   ret i32 %3
 }

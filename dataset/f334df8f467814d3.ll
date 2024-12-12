@@ -1,20 +1,18 @@
 
-%struct.LuaNode.2827082 = type { %struct.lua_TValue.2827080, %struct.TKey.2827083 }
-%struct.lua_TValue.2827080 = type { %union.Value.2827081, [1 x i32], i32 }
-%union.Value.2827081 = type { ptr }
-%struct.TKey.2827083 = type { %union.Value.2827081, [1 x i32], i32 }
+%struct.LuaNode.2938891 = type { %struct.lua_TValue.2938889, %struct.TKey.2938892 }
+%struct.lua_TValue.2938889 = type { %union.Value.2938890, [1 x i32], i32 }
+%union.Value.2938890 = type { ptr }
+%struct.TKey.2938892 = type { %union.Value.2938890, [1 x i32], i32 }
 
-; 4 occurrences:
+; 2 occurrences:
 ; git/optimized/replace.ll
 ; grpc/optimized/channel_stack.cc.ll
-; hyperscan/optimized/fdr_compile.cpp.ll
-; hyperscan/optimized/teddy_compile.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, ptr %1, i64 %2) #0 {
+define i64 @func000000000000000c(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 6
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %6, %0
   ret i64 %7
@@ -23,11 +21,11 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/ltable.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, ptr %1, i64 %2) #0 {
+define i64 @func000000000000001c(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 4294967295
   %4 = and i64 %3, 4294967295
-  %5 = getelementptr nusw %struct.LuaNode.2827082, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw %struct.LuaNode.2938891, ptr %1, i64 %4
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %6, %0
   ret i64 %7
@@ -51,10 +49,24 @@ entry:
 ; hyperscan/optimized/fdr_compile.cpp.ll
 ; hyperscan/optimized/teddy_compile.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000038(i64 %0, ptr %1, i64 %2) #0 {
+define i64 @func000000000000003c(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 63
   %4 = and i64 %3, 17179869120
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = ptrtoint ptr %5 to i64
+  %7 = sub i64 %6, %0
+  ret i64 %7
+}
+
+; 2 occurrences:
+; hyperscan/optimized/fdr_compile.cpp.ll
+; hyperscan/optimized/teddy_compile.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %2, 63
+  %4 = and i64 %3, -64
   %5 = getelementptr nusw i8, ptr %1, i64 %4
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %6, %0

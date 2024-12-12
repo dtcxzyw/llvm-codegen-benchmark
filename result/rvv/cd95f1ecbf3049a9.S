@@ -16,6 +16,12 @@ func000000000000000a:                   # @func000000000000000a
 	vsext.vf2	v12, v8
 	vmslt.vv	v0, v10, v12
 	ret
+func0000000000000008:                   # @func0000000000000008
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vzext.vf2	v10, v9
+	vsext.vf2	v12, v8
+	vmsltu.vv	v0, v10, v12
+	ret
 func0000000000000001:                   # @func0000000000000001
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vzext.vf2	v10, v9

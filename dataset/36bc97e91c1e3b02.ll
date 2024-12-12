@@ -1,5 +1,6 @@
 
-; 27 occurrences:
+; 28 occurrences:
+; boost/optimized/numeric.ll
 ; clamav/optimized/file.cpp.ll
 ; cmake/optimized/cmOutputConverter.cxx.ll
 ; cmake/optimized/ftplistparser.c.ll
@@ -40,7 +41,6 @@ entry:
 ; cmake/optimized/ftplistparser.c.ll
 ; cpython/optimized/socketmodule.ll
 ; curl/optimized/libcurl_la-ftplistparser.ll
-; darktable/optimized/introspection_flip.c.ll
 ; folly/optimized/LogCategory.cpp.ll
 ; hermes/optimized/zip.c.ll
 ; linux/optimized/forcedeth.ll
@@ -56,6 +56,7 @@ entry:
 ; php/optimized/zend_inference.ll
 ; proj/optimized/geodesic.c.ll
 ; stb/optimized/stb_sprintf.c.ll
+; zed-rs/optimized/cj7s0wliqptmxcvil2fbp8uvc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1) #0 {
 entry:

@@ -1,5 +1,6 @@
 func0000000000000006:                   # @func0000000000000006
-	movq	%rsi, %rax
+	subq	%rdi, %rsi
+	leaq	(%rdi,%rsi,2), %rax
 	retq
 func0000000000000000:                   # @func0000000000000000
 	subq	%rdi, %rsi

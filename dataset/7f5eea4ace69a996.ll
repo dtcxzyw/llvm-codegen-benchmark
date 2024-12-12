@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; eastl/optimized/TestBitset.cpp.ll
 ; graphviz/optimized/htmltable.c.ll
 ; linux/optimized/e1000_main.ll
@@ -8,9 +8,10 @@
 ; linux/optimized/netdev.ll
 ; llvm/optimized/AArch64.cpp.ll
 ; llvm/optimized/ELFObjectFile.cpp.ll
+; lvgl/optimized/lv_label.ll
 ; qemu/optimized/nbd_server.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i16 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i16 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, 4
   %3 = icmp eq i16 %1, 0
@@ -54,7 +55,7 @@ entry:
 ; linux/optimized/intel_dp_aux.ll
 ; wireshark/optimized/packet-tibia.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i16 %1) #0 {
+define i32 @func0000000000000028(i32 %0, i16 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, 33
   %3 = icmp ugt i16 %1, 829
@@ -76,7 +77,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/tvbuff.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i16 %1) #0 {
+define i32 @func0000000000000026(i32 %0, i16 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, -16777216
   %3 = icmp slt i16 %1, 0
@@ -98,7 +99,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_psr.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i16 %1) #0 {
+define i32 @func0000000000000024(i32 %0, i16 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, 268435456
   %3 = icmp ult i16 %1, 20

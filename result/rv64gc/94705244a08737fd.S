@@ -32,10 +32,6 @@ func000000000000000d:                   # @func000000000000000d
 	subw	a1, a1, a0
 	addiw	a0, a1, 64
 	ret
-func000000000000000f:                   # @func000000000000000f
-	subw	a0, a1, a0
-	addiw	a0, a0, 24
-	ret
 func0000000000000002:                   # @func0000000000000002
 	subw	a1, a1, a0
 	addiw	a0, a1, 36
@@ -47,6 +43,10 @@ func000000000000000c:                   # @func000000000000000c
 func000000000000000a:                   # @func000000000000000a
 	subw	a0, a1, a0
 	addiw	a0, a0, 1
+	ret
+func000000000000000f:                   # @func000000000000000f
+	subw	a0, a1, a0
+	addiw	a0, a0, 2
 	ret
 func0000000000000006:                   # @func0000000000000006
 	subw	a0, a1, a0

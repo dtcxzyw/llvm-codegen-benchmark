@@ -1,7 +1,9 @@
 
-; 2 occurrences:
+; 4 occurrences:
 ; git/optimized/statinfo.ll
+; lvgl/optimized/lv_grid.ll
 ; openjdk/optimized/method.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i1 %1, i64 %2) #0 {
 entry:

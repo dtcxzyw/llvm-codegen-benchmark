@@ -242,8 +242,7 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
-; cmake/optimized/lzma2_encoder.c.ll
+; 1 occurrences:
 ; z3/optimized/sat_cutset.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i32 %0, i32 %1) #0 {

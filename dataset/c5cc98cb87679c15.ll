@@ -9,7 +9,7 @@
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; llvm/optimized/CodeGenPGO.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = and i32 %2, 1
@@ -23,7 +23,7 @@ entry:
 ; git/optimized/pack-bitmap-write.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = and i32 %2, 7

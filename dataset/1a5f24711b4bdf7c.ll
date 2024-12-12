@@ -16,11 +16,12 @@
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %1, %2
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   ret i64 %4
 }
 
-; 35 occurrences:
+; 36 occurrences:
+; boost/optimized/rational.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; casadi/optimized/im_instantiator.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_math.cpp.ll

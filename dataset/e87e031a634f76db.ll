@@ -5,7 +5,7 @@
 define i64 @func0000000000000003(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 0, i64 1152921504606846976
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = shl i64 %1, 61
   %6 = or disjoint i64 %4, %5
   ret i64 %6
@@ -47,7 +47,7 @@ entry:
   ret i64 %6
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; gromacs/optimized/decidesimulationworkload.cpp.ll
 ; jemalloc/optimized/extent.ll
 ; jemalloc/optimized/extent.pic.ll
@@ -62,6 +62,7 @@ entry:
 ; redis/optimized/extent.ll
 ; redis/optimized/extent.sym.ll
 ; wireshark/optimized/tvbuff.c.ll
+; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1, i1 %2) #0 {
 entry:
@@ -78,13 +79,15 @@ entry:
 define i64 @func000000000000000b(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 65536, i64 0
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = shl nuw i64 %1, 32
   %6 = or disjoint i64 %4, %5
   ret i64 %6
 }
 
-; 3 occurrences:
+; 5 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; lightgbm/optimized/parser.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; simdjson/optimized/simdjson.cpp.ll
@@ -92,7 +95,7 @@ entry:
 define i64 @func000000000000000e(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 -9223372036854775808, i64 0
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = shl nuw nsw i64 %1, 52
   %6 = or i64 %4, %5
   ret i64 %6

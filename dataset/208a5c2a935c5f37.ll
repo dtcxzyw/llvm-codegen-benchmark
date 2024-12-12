@@ -4,7 +4,7 @@
 ; openssl/optimized/servername_test-bin-servername_test.ll
 ; openssl/optimized/sslapitest-bin-sslapitest.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -5
   %4 = select i1 %0, i64 %1, i64 %3
@@ -12,7 +12,8 @@ entry:
   ret i1 %5
 }
 
-; 10 occurrences:
+; 14 occurrences:
+; boost/optimized/path.ll
 ; clamav/optimized/clamdtop.c.ll
 ; coreutils-rs/optimized/2j3x034tyak3eas9.ll
 ; eastl/optimized/BenchmarkHeap.cpp.ll
@@ -23,6 +24,9 @@ entry:
 ; llvm/optimized/SubtargetFeatureInfo.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
+; zed-rs/optimized/8ong401nghjuvw1pdqaahwms7.ll
+; zed-rs/optimized/dq2w60loei6lzivjguqmeajyy.ll
+; zed-rs/optimized/f1iubl8q66d2sxqoxpce2jw1m.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -32,7 +36,8 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/path.ll
 ; git/optimized/hash-lookup.ll
 ; linux/optimized/md.ll
 ; php/optimized/pcre2_compile.ll
@@ -51,7 +56,7 @@ entry:
 ; luajit/optimized/lj_record_dyn.ll
 ; php/optimized/pack.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = select i1 %0, i64 %1, i64 %3
@@ -63,7 +68,7 @@ entry:
 ; eastl/optimized/TestHeap.cpp.ll
 ; luau/optimized/isocline.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = select i1 %0, i64 %1, i64 %3
@@ -85,7 +90,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SimplifyLibCalls.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = select i1 %0, i64 %1, i64 %3
@@ -111,7 +116,7 @@ entry:
 ; luajit/optimized/lj_record_dyn.ll
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -1
   %4 = select i1 %0, i64 %1, i64 %3

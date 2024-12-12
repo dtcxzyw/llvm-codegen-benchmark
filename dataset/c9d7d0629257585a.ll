@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 25 occurrences:
 ; abc/optimized/acbFunc.c.ll
 ; assimp/optimized/3DSExporter.cpp.ll
 ; brotli/optimized/backward_references.c.ll
@@ -8,7 +8,6 @@
 ; hyperscan/optimized/repeat.c.ll
 ; libwebp/optimized/webpinfo.c.ll
 ; linux/optimized/8139too.ll
-; linux/optimized/8250_mid.ll
 ; linux/optimized/intel-gtt.ll
 ; linux/optimized/opt.ll
 ; linux/optimized/rsparser.ll
@@ -47,12 +46,11 @@ entry:
   ret i32 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; hyperscan/optimized/program_runtime.c.ll
 ; libjpeg-turbo/optimized/jdmarker.c.ll
 ; mold/optimized/arch-loongarch.cc.LOONGARCH32.cc.ll
 ; nori/optimized/screen.cpp.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
 ; Function Attrs: nounwind
@@ -73,7 +71,7 @@ entry:
 define i32 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %0, -1
-  %3 = add i64 %2, %1
+  %3 = add i64 %1, %2
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }

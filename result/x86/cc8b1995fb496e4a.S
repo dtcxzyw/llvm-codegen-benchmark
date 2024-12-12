@@ -1,16 +1,7 @@
-func0000000000000114:                   # @func0000000000000114
+func0000000000000426:                   # @func0000000000000426
 	movl	%edx, %eax
-	cmpq	%rsi, %rax
-	seta	%cl
-	testl	%edx, %edx
-	sete	%al
-	orb	%dil, %al
-	orb	%cl, %al
-	retq
-func0000000000000116:                   # @func0000000000000116
-	movl	%edx, %eax
-	cmpq	%rsi, %rax
-	setg	%cl
+	cmpq	%rax, %rsi
+	setl	%cl
 	testl	%edx, %edx
 	sete	%al
 	orb	%dil, %al

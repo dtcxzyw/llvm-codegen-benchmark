@@ -42,9 +42,9 @@ func0000000000000020:                   # @func0000000000000020
 	retq
 func0000000000000014:                   # @func0000000000000014
 	subl	%edx, %esi
-	incl	%esi
+	addl	$11, %esi
 	movslq	%esi, %rax
-	leaq	(%rdi,%rax,4), %rax
+	addq	%rdi, %rax
 	retq
 func0000000000000034:                   # @func0000000000000034
 	notl	%edx

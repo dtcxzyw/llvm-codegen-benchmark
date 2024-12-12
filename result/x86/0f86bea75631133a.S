@@ -1,4 +1,4 @@
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	decl	%edx
 	andl	$2147483647, %edx               # imm = 0x7FFFFFFF
 	subq	%rsi, %rdi
@@ -8,7 +8,7 @@ func0000000000000018:                   # @func0000000000000018
 	cmpq	%rdx, %rax
 	seta	%al
 	retq
-func0000000000000098:                   # @func0000000000000098
+func0000000000000128:                   # @func0000000000000128
 	incl	%edx
 	subq	%rsi, %rdi
 	sarq	$3, %rdi

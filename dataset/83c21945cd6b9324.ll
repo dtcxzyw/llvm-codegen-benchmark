@@ -23,7 +23,7 @@
 ; openusd/optimized/sceneIndexAdapterSceneDelegate.cpp.ll
 ; openusd/optimized/testSdfPathTable.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000021(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 68719476736
   %3 = icmp eq i64 %2, 0
@@ -43,7 +43,7 @@ entry:
 ; llvm/optimized/Pointer.cpp.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i64 %1) #0 {
+define i1 @func000000000000002c(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4
   %3 = icmp ne i64 %2, 0

@@ -11,7 +11,7 @@ entry:
   %2 = trunc i32 %1 to i8
   %3 = and i8 %2, 7
   %4 = shl nuw i8 1, %3
-  %5 = or i8 %4, %0
+  %5 = or i8 %0, %4
   ret i8 %5
 }
 

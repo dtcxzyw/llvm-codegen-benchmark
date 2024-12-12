@@ -12,12 +12,13 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; abc/optimized/abcIf.c.ll
 ; ocio/optimized/Lut1DOpCPU.cpp.ll
 ; postgres/optimized/float.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; xgboost/optimized/rank_metric.cc.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
@@ -48,7 +49,7 @@ entry:
   ret i1 %4
 }
 
-; 8 occurrences:
+; 10 occurrences:
 ; opencv/optimized/ar_hmdb_benchmark.cpp.ll
 ; opencv/optimized/calibinit.cpp.ll
 ; opencv/optimized/miniflann.cpp.ll
@@ -57,6 +58,8 @@ entry:
 ; opencv/optimized/warpfield.cpp.ll
 ; openvdb/optimized/points.cc.ll
 ; postgres/optimized/float.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:

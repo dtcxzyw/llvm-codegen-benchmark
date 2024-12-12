@@ -1,8 +1,7 @@
 
-; 284 occurrences:
+; 281 occurrences:
 ; c3c/optimized/sema_expr.c.ll
 ; clamav/optimized/autoit.c.ll
-; clamav/optimized/explode.c.ll
 ; clamav/optimized/mew.c.ll
 ; clamav/optimized/mpool.c.ll
 ; clamav/optimized/pdfdecode.c.ll
@@ -31,7 +30,6 @@
 ; hyperscan/optimized/block.c.ll
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/catchup.c.ll
-; hyperscan/optimized/init.c.ll
 ; hyperscan/optimized/mcclellancompile_util.cpp.ll
 ; hyperscan/optimized/mpv.c.ll
 ; hyperscan/optimized/program_runtime.c.ll
@@ -45,7 +43,6 @@
 ; linux/optimized/af_netlink.ll
 ; linux/optimized/blk-iocost.ll
 ; linux/optimized/d_path.ll
-; linux/optimized/drm_debugfs_crc.ll
 ; linux/optimized/esp6.ll
 ; linux/optimized/flow_dissector.ll
 ; linux/optimized/gro.ll
@@ -265,7 +262,6 @@
 ; wireshark/optimized/packet-wmio.c.ll
 ; wireshark/optimized/packet-x11.c.ll
 ; wireshark/optimized/packet-yami.c.ll
-; wireshark/optimized/packet-ymsg.c.ll
 ; wireshark/optimized/packet-z3950.c.ll
 ; wireshark/optimized/packet-zbee-tlv.c.ll
 ; wireshark/optimized/packet-zbncp.c.ll
@@ -282,6 +278,7 @@
 ; z3/optimized/fpa2bv_converter.cpp.ll
 ; z3/optimized/sortmax.cpp.ll
 ; z3/optimized/theory_seq.cpp.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
 ; zstd/optimized/zstd_fast.c.ll
 ; zstd/optimized/zstd_ldm.c.ll
 ; Function Attrs: nounwind
@@ -292,7 +289,7 @@ entry:
   ret i32 %3
 }
 
-; 43 occurrences:
+; 44 occurrences:
 ; abc/optimized/giaTtopt.cpp.ll
 ; crow/optimized/example_chat.cpp.ll
 ; graphviz/optimized/dotsplines.c.ll
@@ -301,6 +298,7 @@ entry:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; linux/optimized/range.ll
 ; linux/optimized/tx.ll
+; lvgl/optimized/lv_grid.ll
 ; minetest/optimized/CGUIEditBox.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; openblas/optimized/dlasyf_rook.c.ll
@@ -344,7 +342,7 @@ entry:
   ret i32 %3
 }
 
-; 461 occurrences:
+; 464 occurrences:
 ; abc/optimized/acbMfs.c.ll
 ; abc/optimized/blocksort.c.ll
 ; abc/optimized/bmcMaj2.c.ll
@@ -359,7 +357,10 @@ entry:
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; abseil-cpp/optimized/test_instance_tracker_test.cc.ll
 ; arrow/optimized/bignum.cc.ll
-; arrow/optimized/decimal.cc.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/to_chars.ll
+; boost/optimized/xml_grammar.ll
+; boost/optimized/xml_wgrammar.ll
 ; brotli/optimized/transform.c.ll
 ; bullet3/optimized/b3DynamicBvhBroadphase.ll
 ; bullet3/optimized/btDbvtBroadphase.ll
@@ -438,6 +439,7 @@ entry:
 ; icu/optimized/ucnv_ext.ll
 ; icu/optimized/umutablecptrie.ll
 ; icu/optimized/uresbund.ll
+; icu/optimized/usprep.ll
 ; icu/optimized/uts46.ll
 ; jq/optimized/compile.ll
 ; jq/optimized/decNumber.ll
@@ -530,6 +532,7 @@ entry:
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; luau/optimized/lvmutils.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
@@ -556,8 +559,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -814,7 +815,7 @@ entry:
   ret i32 %3
 }
 
-; 416 occurrences:
+; 414 occurrences:
 ; clamav/optimized/pe.c.ll
 ; cvc5/optimized/conjecture_generator.cpp.ll
 ; darktable/optimized/AbstractLJpegDecoder.cpp.ll
@@ -952,8 +953,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -1235,11 +1234,11 @@ entry:
 define i32 @func000000000000000d(i32 %0, i32 %1) #0 {
 entry:
   %.neg = xor i32 %1, -1
-  %2 = add i32 %.neg, %0
+  %2 = add i32 %0, %.neg
   ret i32 %2
 }
 
-; 46 occurrences:
+; 47 occurrences:
 ; arrow/optimized/bignum.cc.ll
 ; clamav/optimized/pdfdecode.c.ll
 ; cmake/optimized/cfilters.c.ll
@@ -1252,6 +1251,8 @@ entry:
 ; linux/optimized/crash_core.ll
 ; linux/optimized/device_sysfs.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
+; openblas/optimized/dlatms.c.ll
+; openblas/optimized/dlatmt.c.ll
 ; openjdk/optimized/hb-ot-math.ll
 ; openusd/optimized/bignum.cc.ll
 ; openusd/optimized/entdec.c.ll
@@ -1263,7 +1264,6 @@ entry:
 ; rocksdb/optimized/wfg.cc.ll
 ; wireshark/optimized/addr_resolv.c.ll
 ; wireshark/optimized/file-elf.c.ll
-; wireshark/optimized/file-rtpdump.c.ll
 ; wireshark/optimized/packet-btatt.c.ll
 ; wireshark/optimized/packet-btrfcomm.c.ll
 ; wireshark/optimized/packet-couchbase.c.ll
@@ -1290,7 +1290,7 @@ entry:
 define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %.neg = xor i32 %1, -1
-  %2 = add i32 %.neg, %0
+  %2 = add i32 %0, %.neg
   ret i32 %2
 }
 
@@ -1422,9 +1422,10 @@ entry:
   ret i32 %3
 }
 
-; 48 occurrences:
+; 49 occurrences:
 ; abc/optimized/sfmDec.c.ll
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
+; boost/optimized/default_filter_factory.ll
 ; c3c/optimized/llvm_codegen_expr.c.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -1488,17 +1489,19 @@ entry:
 define i32 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %.neg = xor i32 %1, -1
-  %2 = add i32 %.neg, %0
+  %2 = add i32 %0, %.neg
   ret i32 %2
 }
 
-; 48 occurrences:
+; 50 occurrences:
 ; c3c/optimized/llvm_codegen_expr.c.ll
 ; clamav/optimized/7zIn.c.ll
+; clamav/optimized/explode.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hyperscan/optimized/repeat.c.ll
 ; libpng/optimized/pngrutil.c.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
+; lvgl/optimized/lv_fs.ll
 ; oiio/optimized/strutil.cpp.ll
 ; openjdk/optimized/hb-ot-shaper-indic.ll
 ; stb/optimized/stb_sprintf.c.ll
@@ -1545,7 +1548,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %.neg = xor i32 %1, -1
-  %2 = add i32 %.neg, %0
+  %2 = add i32 %0, %.neg
   ret i32 %2
 }
 
@@ -1581,7 +1584,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %.neg = xor i32 %1, -1
-  %2 = add i32 %.neg, %0
+  %2 = add i32 %0, %.neg
   ret i32 %2
 }
 
@@ -1609,7 +1612,7 @@ entry:
 define i32 @func000000000000000e(i32 %0, i32 %1) #0 {
 entry:
   %.neg = xor i32 %1, -1
-  %2 = add i32 %.neg, %0
+  %2 = add i32 %0, %.neg
   ret i32 %2
 }
 

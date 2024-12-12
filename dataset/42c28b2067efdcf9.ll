@@ -1,10 +1,9 @@
 
-; 80 occurrences:
+; 79 occurrences:
 ; bullet3/optimized/btSequentialImpulseConstraintSolver.ll
 ; darktable/optimized/introspection_clipping.c.ll
 ; darktable/optimized/introspection_temperature.c.ll
 ; draco/optimized/attribute_octahedron_transform.cc.ll
-; gromacs/optimized/expanded.cpp.ll
 ; gromacs/optimized/gmx_dipoles.cpp.ll
 ; gromacs/optimized/msd.cpp.ll
 ; gromacs/optimized/restcbt.cpp.ll

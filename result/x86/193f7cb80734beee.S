@@ -1,11 +1,11 @@
-func000000000000000f:                   # @func000000000000000f
-	andl	$1, %esi
-	leal	258(%rdi,%rsi), %eax
-	retq
 func0000000000000000:                   # @func0000000000000000
 	notl	%esi
 	orl	$-2, %esi
 	leal	1(%rsi,%rdi), %eax
+	retq
+func000000000000000f:                   # @func000000000000000f
+	andl	$1, %esi
+	leal	4(%rdi,%rsi,2), %eax
 	retq
 func0000000000000005:                   # @func0000000000000005
 	notl	%esi

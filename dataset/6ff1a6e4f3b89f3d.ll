@@ -1,5 +1,5 @@
 
-; 107 occurrences:
+; 108 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/cmdPlugin.c.ll
 ; abc/optimized/cutTruth.c.ll
@@ -60,6 +60,8 @@
 ; llvm/optimized/YAMLParser.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; lvgl/optimized/lv_lru.ll
+; lvgl/optimized/lv_text.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
 ; ncnn/optimized/convolution_x86_avx2.cpp.ll
@@ -87,7 +89,6 @@
 ; postgres/optimized/pg_receivewal.ll
 ; postgres/optimized/regcomp.ll
 ; protobuf/optimized/parser.cc.ll
-; qemu/optimized/hw_9pfs_9p.c.ll
 ; qemu/optimized/hw_acpi_aml-build.c.ll
 ; raylib/optimized/rmodels.c.ll
 ; raylib/optimized/rtext.c.ll
@@ -115,7 +116,7 @@ entry:
   ret i32 %2
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; git/optimized/hex.ll
 ; git/optimized/ref-filter.ll
@@ -125,7 +126,6 @@ entry:
 ; hyperscan/optimized/Parser.cpp.ll
 ; hyperscan/optimized/control_verbs.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
-; spike/optimized/i64_to_f32.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i8 %0) #0 {
 entry:

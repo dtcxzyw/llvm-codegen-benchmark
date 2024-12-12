@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 22 occurrences:
 ; abc/optimized/abcSop.c.ll
 ; darktable/optimized/introspection_lens.cc.ll
 ; freetype/optimized/type1.c.ll
@@ -7,10 +7,6 @@
 ; icu/optimized/rematch.ll
 ; icu/optimized/utext.ll
 ; libquic/optimized/x509name.c.ll
-; ncnn/optimized/gemm_x86.cpp.ll
-; ncnn/optimized/gemm_x86_avx.cpp.ll
-; ncnn/optimized/gemm_x86_avx512.cpp.ll
-; ncnn/optimized/gemm_x86_fma.cpp.ll
 ; openblas/optimized/dlaln2.c.ll
 ; openssl/optimized/libcrypto-lib-dso_dlfcn.ll
 ; openssl/optimized/libcrypto-shlib-dso_dlfcn.ll
@@ -35,13 +31,19 @@ entry:
   ret i32 %5
 }
 
-; 6 occurrences:
+; 12 occurrences:
 ; eastl/optimized/EAString.cpp.ll
 ; freetype/optimized/sfnt.c.ll
 ; linux/optimized/gup.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; minetest/optimized/game.cpp.ll
 ; opencv/optimized/min_enclosing_triangle.cpp.ll
 ; postgres/optimized/tsrank.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1, i64 %2) #0 {
 entry:
@@ -51,38 +53,29 @@ entry:
   ret i32 %5
 }
 
-; 10 occurrences:
+; 4 occurrences:
 ; bullet3/optimized/btBox2dBox2dCollisionAlgorithm.ll
-; gromacs/optimized/lmmin.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
-; opencv/optimized/AKAZEFeatures.cpp.ll
-; opencv/optimized/lapack.cpp.ll
-; opencv/optimized/model.cpp.ll
-; opencv/optimized/msd.cpp.ll
 ; openjdk/optimized/mlib_ImageScanPoly.ll
-; openusd/optimized/level.cpp.ll
-; quantlib/optimized/lmdif.ll
+; recastnavigation/optimized/DetourPathCorridor.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000000d(i1 %0, i32 %1, i64 %2) #0 {
+define i32 @func000000000000000f(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = select i1 %0, i32 %3, i32 %1
-  %5 = add nsw i32 %4, 1
+  %5 = add nuw nsw i32 %4, 1
   ret i32 %5
 }
 
-; 5 occurrences:
-; clamav/optimized/clamdcom.c.ll
-; libdeflate/optimized/deflate_compress.c.ll
+; 2 occurrences:
 ; openjdk/optimized/mlib_ImageScanPoly.ll
-; openusd/optimized/openexr-c.c.ll
 ; postgres/optimized/tsrank.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000000c(i1 %0, i32 %1, i64 %2) #0 {
+define i32 @func000000000000000e(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = select i1 %0, i32 %3, i32 %1
-  %5 = add i32 %4, 3
+  %5 = add nuw i32 %4, 1
   ret i32 %5
 }
 
@@ -97,6 +90,40 @@ entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = select i1 %0, i32 %3, i32 %1
   %5 = add i32 %4, 1
+  ret i32 %5
+}
+
+; 5 occurrences:
+; clamav/optimized/clamdcom.c.ll
+; libdeflate/optimized/deflate_compress.c.ll
+; openusd/optimized/openexr-c.c.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000c(i1 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc nuw nsw i64 %2 to i32
+  %4 = select i1 %0, i32 %3, i32 %1
+  %5 = add i32 %4, -36
+  ret i32 %5
+}
+
+; 9 occurrences:
+; bullet3/optimized/btBox2dBox2dCollisionAlgorithm.ll
+; gromacs/optimized/lmmin.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; opencv/optimized/AKAZEFeatures.cpp.ll
+; opencv/optimized/lapack.cpp.ll
+; opencv/optimized/model.cpp.ll
+; opencv/optimized/msd.cpp.ll
+; openusd/optimized/level.cpp.ll
+; quantlib/optimized/lmdif.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000d(i1 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc nuw nsw i64 %2 to i32
+  %4 = select i1 %0, i32 %3, i32 %1
+  %5 = add nsw i32 %4, -1
   ret i32 %5
 }
 
@@ -125,17 +152,6 @@ entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = select i1 %0, i32 %3, i32 %1
   %5 = add nsw i32 %4, 1
-  ret i32 %5
-}
-
-; 1 occurrences:
-; recastnavigation/optimized/DetourPathCorridor.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000f(i1 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc nuw nsw i64 %2 to i32
-  %4 = select i1 %0, i32 %3, i32 %1
-  %5 = add nuw nsw i32 %4, 1
   ret i32 %5
 }
 

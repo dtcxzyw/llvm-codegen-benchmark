@@ -5,7 +5,7 @@ func0000000000000001:                   # @func0000000000000001
 	vadd.vv	v8, v8, v10
 	vmseq.vv	v0, v8, v12
 	ret
-func00000000000000f4:                   # @func00000000000000f4
+func00000000000001f4:                   # @func00000000000001f4
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0
@@ -13,7 +13,7 @@ func00000000000000f4:                   # @func00000000000000f4
 	vadd.vv	v8, v8, v12
 	vmsleu.vi	v0, v8, 10
 	ret
-func000000000000008a:                   # @func000000000000008a
+func000000000000010a:                   # @func000000000000010a
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0
@@ -21,7 +21,7 @@ func000000000000008a:                   # @func000000000000008a
 	vadd.vv	v8, v8, v12
 	vmsgt.vi	v0, v8, -1
 	ret
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0
@@ -29,7 +29,7 @@ func0000000000000056:                   # @func0000000000000056
 	vadd.vv	v8, v8, v12
 	vmsle.vi	v0, v8, -1
 	ret
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0
@@ -72,7 +72,7 @@ func0000000000000008:                   # @func0000000000000008
 	srli	a0, a0, 15
 	vmsgtu.vx	v0, v8, a0
 	ret
-func0000000000000078:                   # @func0000000000000078
+func00000000000000f8:                   # @func00000000000000f8
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v12, 0
 	vadd.vv	v8, v8, v10
@@ -81,7 +81,7 @@ func0000000000000078:                   # @func0000000000000078
 	li	a0, 2046
 	vmsgtu.vx	v0, v8, a0
 	ret
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000141:                   # @func0000000000000141
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0
@@ -89,7 +89,7 @@ func00000000000000a1:                   # @func00000000000000a1
 	vor.vv	v8, v8, v12
 	vmseq.vi	v0, v8, 0
 	ret
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0

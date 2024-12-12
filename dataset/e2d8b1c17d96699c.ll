@@ -11,12 +11,13 @@ entry:
   ret i64 %6
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; linux/optimized/sd.ll
 ; llvm/optimized/DeclCXX.cpp.ll
 ; openssl/optimized/libssl-lib-ssl_lib.ll
 ; openssl/optimized/libssl-shlib-ssl_lib.ll
 ; qemu/optimized/linux-user_syscall.c.ll
+; zed-rs/optimized/6i9q21vg747q3orsxnutiwubi.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i32 %1, i1 %2) #0 {
 entry:
@@ -51,10 +52,36 @@ entry:
 define i64 @func0000000000000004(i64 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 16777216, i64 0
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
+  %5 = zext nneg i32 %1 to i64
+  %6 = or i64 %4, %5
+  ret i64 %6
+}
+
+; 1 occurrences:
+; linux/optimized/maple_tree.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(i32 %0, i64 %1, i1 %2) #0 {
+entry:
+  %3 = select i1 %2, i64 6, i64 0, !prof !0
+  %4 = or i64 %3, %1
+  %5 = zext nneg i32 %0 to i64
+  %6 = or i64 %4, %5
+  ret i64 %6
+}
+
+; 1 occurrences:
+; linux/optimized/maple_tree.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000006(i64 %0, i32 %1, i1 %2) #0 {
+entry:
+  %3 = select i1 %2, i64 6, i64 0, !prof !0
+  %4 = or disjoint i64 %3, %0
   %5 = zext nneg i32 %1 to i64
   %6 = or i64 %4, %5
   ret i64 %6
 }
 
 attributes #0 = { nounwind }
+
+!0 = !{!"branch_weights", i32 8000000, i32 4000000}

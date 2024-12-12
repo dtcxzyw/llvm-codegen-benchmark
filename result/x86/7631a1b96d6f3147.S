@@ -7,10 +7,10 @@ func0000000000000005:                   # @func0000000000000005
 	addl	%edi, %eax
 	retq
 func0000000000000007:                   # @func0000000000000007
-	xorl	%eax, %eax
-	testl	%edx, %esi
-	setne	%al
-	leal	14(%rdi,%rax,2), %eax
+	andl	%edx, %esi
+	movl	$255, %eax
+	cmovel	%esi, %eax
+	addl	%edi, %eax
 	retq
 func0000000000000004:                   # @func0000000000000004
 	leal	11(%rdi), %ecx

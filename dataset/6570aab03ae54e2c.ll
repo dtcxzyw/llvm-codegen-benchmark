@@ -22,7 +22,7 @@ entry:
   ret ptr %6
 }
 
-; 12 occurrences:
+; 16 occurrences:
 ; arrow/optimized/validate.cc.ll
 ; darktable/optimized/ColorFilterArray.cpp.ll
 ; darktable/optimized/introspection_bilateral.cc.ll
@@ -30,6 +30,10 @@ entry:
 ; darktable/optimized/introspection_highlights.c.ll
 ; gromacs/optimized/colvarbias_abf.cpp.ll
 ; gromacs/optimized/colvargrid.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; ncnn/optimized/convolution1d_x86_avx512.cpp.ll
 ; ncnn/optimized/convolution_x86_avx512.cpp.ll
 ; ncnn/optimized/mat_pixel_rotate.cpp.ll
@@ -83,6 +87,18 @@ entry:
   ret ptr %6
 }
 
+; 1 occurrences:
+; darktable/optimized/introspection_highlights.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000017(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = zext nneg i32 %1 to i64
+  %5 = mul nsw i64 %4, %3
+  %6 = getelementptr nusw nuw float, ptr %0, i64 %5
+  ret ptr %6
+}
+
 ; 11 occurrences:
 ; arrow/optimized/light_array.cc.ll
 ; darktable/optimized/RawImage.cpp.ll
@@ -109,12 +125,12 @@ entry:
 ; faiss/optimized/pq4_fast_scan.cpp.ll
 ; opencv/optimized/contours.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = zext nneg i32 %1 to i64
   %5 = mul nuw nsw i64 %4, %3
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 

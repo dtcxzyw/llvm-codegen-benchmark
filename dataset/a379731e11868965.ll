@@ -14,11 +14,13 @@ entry:
   ret i64 %6
 }
 
-; 83 occurrences:
+; 80 occurrences:
 ; assimp/optimized/SGSpatialSort.cpp.ll
 ; assimp/optimized/SpatialSort.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
-; eastl/optimized/BenchmarkHeap.cpp.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; faiss/optimized/IndexIVFFastScan.cpp.ll
 ; faiss/optimized/NNDescent.cpp.ll
 ; faiss/optimized/NSG.cpp.ll
@@ -27,11 +29,9 @@ entry:
 ; gromacs/optimized/pull_rotation.cpp.ll
 ; gromacs/optimized/transformations.cpp.ll
 ; hermes/optimized/ProfileAnalyzer.cpp.ll
-; hyperscan/optimized/ng_anchored_dots.cpp.ll
 ; hyperscan/optimized/rose_build_lookaround.cpp.ll
 ; hyperscan/optimized/rose_build_merge.cpp.ll
 ; llama.cpp/optimized/llama.cpp.ll
-; llvm/optimized/BalancedPartitioning.cpp.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/CGProfile.cpp.ll
 ; llvm/optimized/CodeGenTBAA.cpp.ll
@@ -68,7 +68,6 @@ entry:
 ; opencv/optimized/akaze.cpp.ll
 ; opencv/optimized/bagofwords_classification.cpp.ll
 ; opencv/optimized/chessboard.cpp.ll
-; opencv/optimized/contours_approx.cpp.ll
 ; opencv/optimized/cuda_test.cpp.ll
 ; opencv/optimized/detection_output_layer.cpp.ll
 ; opencv/optimized/erfilter.cpp.ll
@@ -82,14 +81,12 @@ entry:
 ; opencv/optimized/mser.cpp.ll
 ; opencv/optimized/quasi_dense_stereo.cpp.ll
 ; opencv/optimized/selectivesearchsegmentation.cpp.ll
-; opencv/optimized/sparse_matching_gpc.cpp.ll
 ; opencv/optimized/text_detector_swt.cpp.ll
 ; openexr/optimized/ImfScanLineInputFile.cpp.ll
 ; openexr/optimized/ImfTileOffsets.cpp.ll
 ; openusd/optimized/blendShapeQuery.cpp.ll
 ; ozz-animation/optimized/animation_builder.cc.ll
 ; pbrt-v4/optimized/aggregates.cpp.ll
-; pbrt-v4/optimized/imgtool.cpp.ll
 ; php/optimized/zend_opcode.ll
 ; rocksdb/optimized/blob_db_impl.cc.ll
 ; rocksdb/optimized/compaction_picker_universal.cc.ll
@@ -106,6 +103,26 @@ entry:
   %4 = sub i64 %3, %0
   %5 = sdiv exact i64 %4, 24
   %6 = add nsw i64 %5, -1
+  ret i64 %6
+}
+
+; 8 occurrences:
+; eastl/optimized/BenchmarkHeap.cpp.ll
+; hyperscan/optimized/ng_anchored_dots.cpp.ll
+; hyperscan/optimized/rose_build_merge.cpp.ll
+; llvm/optimized/BalancedPartitioning.cpp.ll
+; opencv/optimized/contours_approx.cpp.ll
+; opencv/optimized/quasi_dense_stereo.cpp.ll
+; opencv/optimized/sparse_matching_gpc.cpp.ll
+; pbrt-v4/optimized/imgtool.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000065(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 56
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %0
+  %5 = sdiv exact i64 %4, 56
+  %6 = add nsw i64 %5, -2
   ret i64 %6
 }
 

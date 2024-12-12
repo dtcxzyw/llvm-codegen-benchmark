@@ -1,18 +1,17 @@
 
-; 288 occurrences:
+; 287 occurrences:
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/builder_dict.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/type.cc.ll
 ; arrow/optimized/vector_hash.cc.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/CacheLocality.cpp.ll
 ; folly/optimized/DistributedMutex.cpp.ll
 ; folly/optimized/EDFThreadPoolExecutor.cpp.ll
 ; folly/optimized/EventBase.cpp.ll
-; folly/optimized/F14Table.cpp.ll
-; folly/optimized/Futex.cpp.ll
 ; folly/optimized/Future.cpp.ll
 ; folly/optimized/GlobalExecutor.cpp.ll
 ; folly/optimized/GlobalShutdownSocketSet.cpp.ll
@@ -295,7 +294,7 @@ entry:
   %4 = lshr i64 %3, 37
   %5 = xor i64 %4, %3
   %6 = mul i64 %5, 1609587929392839161
-  %7 = xor i64 %6, %0
+  %7 = xor i64 %0, %6
   ret i64 %7
 }
 
@@ -313,7 +312,7 @@ entry:
   %4 = lshr i64 %3, 24
   %5 = xor i64 %4, %3
   %6 = mul nsw i64 %5, 265
-  %7 = xor i64 %6, %0
+  %7 = xor i64 %0, %6
   ret i64 %7
 }
 
@@ -326,7 +325,7 @@ entry:
   %4 = lshr i64 %3, 32
   %5 = xor i64 %4, %3
   %6 = mul i64 %5, -2960836687051489901
-  %7 = xor i64 %6, %0
+  %7 = xor i64 %0, %6
   ret i64 %7
 }
 

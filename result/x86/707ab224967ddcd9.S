@@ -27,10 +27,12 @@ func0000000000000305:                   # @func0000000000000305
 	sbbq	$-1, %rax
 	retq
 func000000000000030f:                   # @func000000000000030f
+	xorl	%eax, %eax
+	cmpl	$2, %edx
+	setne	%al
 	andl	$1, %esi
-	leaq	(%rsi,%rdi), %rax
-	cmpl	$1, %edx
-	sbbq	$-1, %rax
+	addq	%rsi, %rax
+	addq	%rdi, %rax
 	retq
 func000000000000010f:                   # @func000000000000010f
 	movl	%esi, %eax

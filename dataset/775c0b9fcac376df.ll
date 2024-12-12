@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 29 occurrences:
 ; abc/optimized/cloud.c.ll
 ; abc/optimized/cuddLCache.c.ll
 ; abc/optimized/inftrees.c.ll
@@ -23,17 +23,18 @@
 ; openjdk/optimized/png.ll
 ; openusd/optimized/reformat.c.ll
 ; rocksdb/optimized/lru_cache.cc.ll
+; z3/optimized/pb2bv_rewriter.cpp.ll
 ; zstd/optimized/cover.c.ll
 ; zstd/optimized/zstd_double_fast.c.ll
 ; zstd/optimized/zstd_fast.c.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw ptr, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw ptr, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -82,15 +83,15 @@ entry:
 ; yosys/optimized/memory_map.ll
 ; zxing/optimized/MCDecoder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw ptr, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw ptr, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 24 occurrences:
+; 23 occurrences:
 ; libquic/optimized/hpack_huffman_table.cc.ll
 ; linux/optimized/balloc.ll
 ; linux/optimized/blk-mq.ll
@@ -106,7 +107,6 @@ entry:
 ; linux/optimized/mbcache.ll
 ; linux/optimized/neighbour.ll
 ; linux/optimized/nexthop.ll
-; linux/optimized/regcache-flat.ll
 ; linux/optimized/route.ll
 ; linux/optimized/tcp_metrics.ll
 ; openjdk/optimized/g1RemSet.ll

@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	andl	$1, %esi
 	shlq	$36, %rsi
 	cmpl	$2, %edi
@@ -8,7 +8,7 @@ func0000000000000011:                   # @func0000000000000011
 	movl	$512, %eax                      # imm = 0x200
 	cmovneq	%rcx, %rax
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	andl	$1, %esi
 	leaq	10(%rsi), %rax
 	cmpl	$2097152, %edi                  # imm = 0x200000
@@ -18,7 +18,7 @@ func0000000000000044:                   # @func0000000000000044
 	movl	$13, %eax
 	cmovaeq	%rcx, %rax
 	retq
-func0000000000000046:                   # @func0000000000000046
+func0000000000000286:                   # @func0000000000000286
 	notb	%sil
 	movzbl	%sil, %eax
 	andl	$1, %eax

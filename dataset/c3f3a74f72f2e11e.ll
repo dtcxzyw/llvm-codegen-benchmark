@@ -1,5 +1,6 @@
 
-; 3 occurrences:
+; 4 occurrences:
+; abc/optimized/aigOper.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; gromacs/optimized/gmx_hbond.cpp.ll
 ; zxing/optimized/PDFCodewordDecoder.cpp.ll

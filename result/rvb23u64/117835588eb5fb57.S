@@ -1,9 +1,14 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000001f:                   # @func000000000000001f
 	slli	a1, a1, 5
 	add	a0, a0, a1
 	addi	a0, a0, 48
 	ret
-func0000000000000012:                   # @func0000000000000012
+func000000000000001b:                   # @func000000000000001b
+	sh1add	a1, a1, a1
+	add	a0, a0, a1
+	addi	a0, a0, 5
+	ret
+func0000000000000013:                   # @func0000000000000013
 	sh2add	a0, a1, a0
 	addi	a0, a0, 6
 	ret

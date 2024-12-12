@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; assimp/optimized/FBXConverter.cpp.ll
 ; bullet3/optimized/btGjkPairDetector.ll
 ; darktable/optimized/introspection_ashift.c.ll
@@ -8,7 +8,6 @@
 ; darktable/optimized/introspection_toneequal.c.ll
 ; graphviz/optimized/gvrender_core_pov.c.ll
 ; gromacs/optimized/settle.cpp.ll
-; msdfgen/optimized/MSDFErrorCorrection.cpp.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(double %0, float %1) #0 {
 entry:

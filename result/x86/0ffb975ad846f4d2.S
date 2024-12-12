@@ -1,25 +1,25 @@
-func00000000000002cc:                   # @func00000000000002cc
+func000000000000098c:                   # @func000000000000098c
 	btq	%rdx, %rsi
 	setb	%cl
 	testq	%rdi, %rdi
 	setne	%al
 	xorb	%cl, %al
 	retq
-func0000000000000211:                   # @func0000000000000211
+func0000000000000821:                   # @func0000000000000821
 	btq	%rdx, %rsi
 	setae	%cl
 	testq	%rdi, %rdi
 	sete	%al
 	xorb	%cl, %al
 	retq
-func00000000000002c1:                   # @func00000000000002c1
+func0000000000000981:                   # @func0000000000000981
 	btq	%rdx, %rsi
 	setb	%cl
 	testq	%rdi, %rdi
 	sete	%al
 	xorb	%cl, %al
 	retq
-func000000000000021c:                   # @func000000000000021c
+func000000000000082c:                   # @func000000000000082c
 	btq	%rdx, %rsi
 	setae	%cl
 	testq	%rdi, %rdi

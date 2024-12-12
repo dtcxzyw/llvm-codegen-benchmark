@@ -1,4 +1,4 @@
-func000000000000014c:                   # @func000000000000014c
+func000000000000048c:                   # @func000000000000048c
 	sext.w	a0, a0
 	or	a1, a1, a2
 	sext.w	a1, a1
@@ -6,7 +6,7 @@ func000000000000014c:                   # @func000000000000014c
 	sltu	a0, a1, a0
 	and	a0, a0, a2
 	ret
-func00000000000001cc:                   # @func00000000000001cc
+func000000000000058c:                   # @func000000000000058c
 	sext.w	a0, a0
 	or	a1, a1, a2
 	sext.w	a1, a1

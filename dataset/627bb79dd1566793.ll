@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; abc/optimized/cmdHist.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000221(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000841(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1953068401
   %3 = icmp eq i32 %1, 1701669236

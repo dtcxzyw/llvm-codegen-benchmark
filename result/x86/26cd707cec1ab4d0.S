@@ -18,6 +18,11 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	$5, %edi
 	setb	%al
 	retq
+func0000000000000028:                   # @func0000000000000028
+	xorl	%eax, %eax
+	cmpl	$-146097, %edi                  # imm = 0xFFFDC54F
+	setb	%al
+	retq
 func0000000000000014:                   # @func0000000000000014
 	movl	%edi, %eax
 	notl	%eax

@@ -1,5 +1,5 @@
 
-; 210 occurrences:
+; 205 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; clamav/optimized/hash.cpp.ll
 ; hermes/optimized/Array.cpp.ll
@@ -42,12 +42,10 @@
 ; linux/optimized/blk-mq-tag.ll
 ; linux/optimized/blk-mq.ll
 ; linux/optimized/buildid.ll
-; linux/optimized/cpuidle-haltpoll.ll
 ; linux/optimized/dm-stats.ll
 ; linux/optimized/dma-iommu.ll
 ; linux/optimized/dmaengine.ll
 ; linux/optimized/dst.ll
-; linux/optimized/dst_cache.ll
 ; linux/optimized/exec.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/fork.ll
@@ -57,7 +55,6 @@
 ; linux/optimized/iova.ll
 ; linux/optimized/irq.ll
 ; linux/optimized/kyber-iosched.ll
-; linux/optimized/loopback.ll
 ; linux/optimized/matrix.ll
 ; linux/optimized/mballoc.ll
 ; linux/optimized/md-bitmap.ll
@@ -72,12 +69,10 @@
 ; linux/optimized/rstat.ll
 ; linux/optimized/sch_generic.ll
 ; linux/optimized/show_mem.ll
-; linux/optimized/sleep.ll
 ; linux/optimized/slub.ll
 ; linux/optimized/sock.ll
 ; linux/optimized/srcutree.ll
 ; linux/optimized/sta_info.ll
-; linux/optimized/status.ll
 ; linux/optimized/timer.ll
 ; linux/optimized/trace_events.ll
 ; linux/optimized/trace_uprobe.ll
@@ -88,6 +83,7 @@
 ; linux/optimized/xdp.ll
 ; linux/optimized/xprtsock.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
+; lvgl/optimized/lv_tlsf.ll
 ; openexr/optimized/ImfRgbaFile.cpp.ll
 ; openjdk/optimized/accessBarrierSupport.ll
 ; openjdk/optimized/archiveBuilder.ll
@@ -197,7 +193,6 @@
 ; openmpi/optimized/osc_rdma_peer.ll
 ; openmpi/optimized/vprotocol_pessimist_eventlog.ll
 ; openmpi/optimized/vprotocol_pessimist_recv.ll
-; openmpi/optimized/vprotocol_pessimist_request.ll
 ; openmpi/optimized/vprotocol_pessimist_send.ll
 ; openmpi/optimized/vprotocol_pessimist_wait.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
@@ -211,19 +206,20 @@
 ; velox/optimized/VectorSaver.cpp.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(i64 %0, i64 %1) #0 {
+define ptr @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, %1
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw i8, ptr %3, i64 4096
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 4096
   ret ptr %4
 }
 
-; 32 occurrences:
+; 29 occurrences:
 ; linux/optimized/blk-cgroup.ll
 ; linux/optimized/blk-iocost.ll
 ; linux/optimized/build_utility.ll
 ; linux/optimized/buildid.ll
+; linux/optimized/dma-iommu.ll
 ; linux/optimized/dst.ll
 ; linux/optimized/dumpstack_64.ll
 ; linux/optimized/efi_64.ll
@@ -231,13 +227,10 @@ entry:
 ; linux/optimized/hugetlb_vmemmap.ll
 ; linux/optimized/ioremap.ll
 ; linux/optimized/kexec_core.ll
-; linux/optimized/machine_kexec_64.ll
 ; linux/optimized/md.ll
 ; linux/optimized/nfs4proc.ll
-; linux/optimized/probe_roms.ll
 ; linux/optimized/pt.ll
 ; linux/optimized/rock.ll
-; linux/optimized/scsicam.ll
 ; linux/optimized/sd.ll
 ; linux/optimized/setup.ll
 ; linux/optimized/slub.ll
@@ -249,8 +242,7 @@ entry:
 ; linux/optimized/vmscan.ll
 ; linux/optimized/vsyscall_64.ll
 ; linux/optimized/xdp.ll
-; openjdk/optimized/xReferenceProcessor.ll
-; openjdk/optimized/zReferenceProcessor.ll
+; lvgl/optimized/lv_tlsf.ll
 ; qemu/optimized/accel_tcg_user-exec.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i64 %0, i64 %1) #0 {
@@ -271,11 +263,23 @@ entry:
 ; openjdk/optimized/whitebox.ll
 ; openmpi/optimized/mca_btl_smcuda_la-btl_smcuda_component.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(i64 %0, i64 %1) #0 {
+define ptr @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, %1
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw i8, ptr %3, i64 16
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 16
+  ret ptr %4
+}
+
+; 2 occurrences:
+; openjdk/optimized/xReferenceProcessor.ll
+; openjdk/optimized/zReferenceProcessor.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000001(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %0, %1
+  %3 = inttoptr i64 %2 to ptr
+  %4 = getelementptr nuw i8, ptr %3, i64 8
   ret ptr %4
 }
 

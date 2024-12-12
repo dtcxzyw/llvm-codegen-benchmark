@@ -1,5 +1,5 @@
 
-; 354 occurrences:
+; 363 occurrences:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver3.c.ll
 ; assimp/optimized/AssbinFileWriter.cpp.ll
@@ -7,6 +7,16 @@
 ; assimp/optimized/Exporter.cpp.ll
 ; assimp/optimized/LWOAnimation.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/to_chars.ll
+; boost/optimized/wait.ll
 ; bullet3/optimized/btBatchedConstraints.ll
 ; clamav/optimized/7zBuf2.c.ll
 ; cmake/optimized/archive_string.c.ll
@@ -230,7 +240,6 @@
 ; proxygen/optimized/RequestHandlerAdaptor.cpp.ll
 ; proxygen/optimized/Service.cpp.ll
 ; proxygen/optimized/SynchronizedLruQuicPskCache.cpp.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
 ; quickjs/optimized/libbf.ll
 ; quickjs/optimized/quickjs.ll
 ; redis/optimized/jemalloc.ll
@@ -362,7 +371,7 @@ entry:
   ret i64 %2
 }
 
-; 54 occurrences:
+; 57 occurrences:
 ; abc/optimized/abcNpnSave.c.ll
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/acbTest.c.ll
@@ -401,6 +410,8 @@ entry:
 ; arrow/optimized/bitmap.cc.ll
 ; assimp/optimized/AssbinFileWriter.cpp.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/src.ll
+; boost/optimized/url.ll
 ; folly/optimized/DynamicParser.cpp.ll
 ; folly/optimized/LogConfigParser.cpp.ll
 ; folly/optimized/dynamic.cpp.ll
@@ -410,6 +421,7 @@ entry:
 ; linux/optimized/page-writeback.ll
 ; opencc/optimized/bit-vector.cc.ll
 ; openexr/optimized/ImfRleCompressor.cpp.ll
+; php/optimized/dow.ll
 ; php/optimized/element.ll
 ; proxygen/optimized/RFC2616.cpp.ll
 ; ruby/optimized/string.ll

@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 11 occurrences:
 ; darktable/optimized/DngDecoder.cpp.ll
 ; darktable/optimized/RawDecoder.cpp.ll
 ; git/optimized/xhistogram.ll
@@ -9,6 +9,8 @@
 ; linux/optimized/vsprintf.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0) #0 {
 entry:

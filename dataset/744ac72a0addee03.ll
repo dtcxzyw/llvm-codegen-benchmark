@@ -1,8 +1,5 @@
 
-; 23 occurrences:
-; arrow/optimized/fixed-dtoa.cc.ll
-; double_conversion/optimized/fixed-dtoa.cc.ll
-; linux/optimized/seq_clientmgr.ll
+; 16 occurrences:
 ; openjdk/optimized/barrierSetC1.ll
 ; openjdk/optimized/c1_FrameMap.ll
 ; openjdk/optimized/c1_LIRAssembler.ll
@@ -17,14 +14,10 @@
 ; openjdk/optimized/shenandoahBarrierSetC1_x86.ll
 ; openjdk/optimized/xBarrierSetC1.ll
 ; openjdk/optimized/zBarrierSetC1.ll
-; openusd/optimized/fixed-dtoa.cc.ll
-; postgres/optimized/f2s.ll
-; postgres/optimized/f2s_shlib.ll
-; postgres/optimized/f2s_srv.ll
 ; re2/optimized/re2.cc.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i1 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = icmp ult i32 %2, 18
@@ -61,7 +54,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; xgboost/optimized/allgather.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, -1
   %not. = xor i1 %0, true
@@ -69,7 +62,7 @@ entry:
   ret i1 %3
 }
 
-; 83 occurrences:
+; 66 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCut.c.ll
@@ -77,28 +70,21 @@ entry:
 ; abc/optimized/abcDfs.c.ll
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/abcMap.c.ll
-; abc/optimized/abcPart.c.ll
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/abcRr.c.ll
 ; abc/optimized/absOldCex.c.ll
 ; abc/optimized/absOldSat.c.ll
-; abc/optimized/acbFunc.c.ll
 ; abc/optimized/acbTest.c.ll
 ; abc/optimized/acbUtil.c.ll
-; abc/optimized/acecCl.c.ll
 ; abc/optimized/acecNorm.c.ll
 ; abc/optimized/aigTiming.c.ll
 ; abc/optimized/bacPrsBuild.c.ll
 ; abc/optimized/bmcCexMin1.c.ll
-; abc/optimized/bmcClp.c.ll
 ; abc/optimized/bmcFx.c.ll
 ; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/cecSim.c.ll
-; abc/optimized/cecSplit.c.ll
 ; abc/optimized/combination.c.ll
 ; abc/optimized/dauGia.c.ll
-; abc/optimized/exor.c.ll
-; abc/optimized/fraClau.c.ll
 ; abc/optimized/fretMain.c.ll
 ; abc/optimized/giaDecs.c.ll
 ; abc/optimized/giaDfs.c.ll
@@ -110,32 +96,23 @@ entry:
 ; abc/optimized/giaMan.c.ll
 ; abc/optimized/giaMf.c.ll
 ; abc/optimized/giaMinLut2.c.ll
-; abc/optimized/giaPack.c.ll
 ; abc/optimized/giaResub2.c.ll
 ; abc/optimized/giaRex.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/giaTruth.c.ll
 ; abc/optimized/ivyMan.c.ll
-; abc/optimized/liveness.c.ll
-; abc/optimized/liveness_sim.c.ll
 ; abc/optimized/mioParse.c.ll
-; abc/optimized/mpmPre.c.ll
-; abc/optimized/nwkAig.c.ll
 ; abc/optimized/pdrIncr.c.ll
 ; abc/optimized/plaHash.c.ll
 ; abc/optimized/plaSimple.c.ll
 ; abc/optimized/retLvalue.c.ll
 ; abc/optimized/rpo.c.ll
 ; abc/optimized/satInterP.c.ll
-; abc/optimized/satSolver2i.c.ll
-; abc/optimized/sbdCore.c.ll
 ; abc/optimized/sclBufSize.c.ll
 ; abc/optimized/sclBuffer.c.ll
 ; abc/optimized/wlcBlast.c.ll
-; abc/optimized/wlcUif.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; darktable/optimized/darkroom.c.ll
-; eastl/optimized/EASprintfCore.cpp.ll
 ; graphviz/optimized/adjust.c.ll
 ; icu/optimized/icuexportdata.ll
 ; icu/optimized/indiancal.ll
@@ -147,23 +124,21 @@ entry:
 ; openjdk/optimized/library_call.ll
 ; openssl/optimized/libapps-lib-s_socket.ll
 ; openusd/optimized/quadRefinement.cpp.ll
-; postgres/optimized/bufpage.ll
 ; re2/optimized/re2.cc.ll
 ; readerwriterqueue/optimized/bench.cpp.ll
 ; slurm/optimized/bitstring.ll
 ; verilator/optimized/V3Case.cpp.ll
 ; xgboost/optimized/allgather.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, -1
   %3 = select i1 %0, i1 true, i1 %2
   ret i1 %3
 }
 
-; 267 occurrences:
+; 265 occurrences:
 ; abc/optimized/abcGen.c.ll
-; abc/optimized/giaAiger.c.ll
 ; abc/optimized/giaBalAig.c.ll
 ; abc/optimized/giaFx.c.ll
 ; abc/optimized/giaTtopt.cpp.ll
@@ -176,6 +151,7 @@ entry:
 ; arrow/optimized/vector_hash.cc.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/X3DXmlHelper.cpp.ll
+; boost/optimized/options_description.ll
 ; casadi/optimized/conic.cpp.ll
 ; casadi/optimized/mx_function.cpp.ll
 ; casadi/optimized/nlp_builder.cpp.ll
@@ -305,8 +281,6 @@ entry:
 ; pocketpy/optimized/vm.cpp.ll
 ; postgres/optimized/mvdistinct.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
@@ -438,31 +412,33 @@ entry:
   ret i1 %3
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/sswRarity.c.ll
 ; abc/optimized/wlcNtk.c.ll
-; eastl/optimized/EASprintfCore.cpp.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; luau/optimized/lnumprint.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; postgres/optimized/d2s.ll
 ; postgres/optimized/d2s_shlib.ll
 ; postgres/optimized/d2s_srv.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 9
   %3 = select i1 %0, i1 true, i1 %2
   ret i1 %3
 }
 
-; 23 occurrences:
+; 25 occurrences:
 ; abc/optimized/giaTruth.c.ll
 ; abc/optimized/wlnRetime.c.ll
 ; arrow/optimized/fixed-dtoa.cc.ll
 ; arrow/optimized/function.cc.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; bullet3/optimized/btConvexHull.ll
-; chibicc/optimized/codegen.ll
 ; double_conversion/optimized/fixed-dtoa.cc.ll
 ; gromacs/optimized/gmx_densorder.cpp.ll
 ; icu/optimized/indiancal.ll
@@ -479,9 +455,10 @@ entry:
 ; postgres/optimized/f2s_srv.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; sqlite/optimized/sqlite3.ll
+; typst-rs/optimized/3z60jkym58xbhjyi.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 64
   %not. = xor i1 %0, true
@@ -510,8 +487,10 @@ entry:
   ret i1 %4
 }
 
-; 8 occurrences:
+; 10 occurrences:
 ; arrow/optimized/fixed-dtoa.cc.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/obmalloc.ll
 ; double_conversion/optimized/fixed-dtoa.cc.ll
 ; mimalloc/optimized/arena.c.ll
@@ -520,7 +499,7 @@ entry:
 ; postgres/optimized/d2s_shlib.ll
 ; postgres/optimized/d2s_srv.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000038(i1 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1023
   %3 = icmp ult i32 %2, 52
@@ -529,11 +508,27 @@ entry:
   ret i1 %4
 }
 
+; 6 occurrences:
+; arrow/optimized/fixed-dtoa.cc.ll
+; double_conversion/optimized/fixed-dtoa.cc.ll
+; openusd/optimized/fixed-dtoa.cc.ll
+; postgres/optimized/f2s.ll
+; postgres/optimized/f2s_shlib.ll
+; postgres/optimized/f2s_srv.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i1 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, -1075
+  %3 = icmp ult i32 %2, -128
+  %4 = select i1 %0, i1 true, i1 %3
+  ret i1 %4
+}
+
 ; 2 occurrences:
 ; protobuf/optimized/zero_copy_stream.cc.ll
 ; rust-analyzer-rs/optimized/5fgtm3ees9sdsrsg.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000074(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 1114111
   %3 = select i1 %0, i1 true, i1 %2
@@ -543,7 +538,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 3
   %not. = xor i1 %0, true
@@ -585,7 +580,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/timefn.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000044(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 5
   %3 = select i1 %0, i1 true, i1 %2
@@ -595,7 +590,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/scsi_transport_spi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000078(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = select i1 %0, i1 true, i1 %2
@@ -618,7 +613,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/fsmpage.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i1 %0, i32 %1) #0 {
+define i1 @func000000000000006a(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, -4095
   %3 = select i1 %0, i1 true, i1 %2

@@ -3,7 +3,7 @@
 ; cmake/optimized/parsedate.c.ll
 ; curl/optimized/libcurl_la-parsedate.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000146(i32 %0, i8 %1, i32 %2) #0 {
+define i1 @func0000000000000486(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -48
   %4 = icmp ult i8 %1, 10
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; jsonnet/optimized/rapidyaml.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i8 %1, i32 %2) #0 {
+define i1 @func0000000000000421(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -33
   %4 = icmp eq i8 %1, 33
@@ -28,12 +28,12 @@ entry:
 ; icu/optimized/decNumber.ll
 ; jq/optimized/decNumber.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003a8(i32 %0, i8 %1, i32 %2) #0 {
+define i1 @func0000000000000d58(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 2
   %4 = icmp slt i8 %1, 0
   %5 = select i1 %4, i32 %3, i32 %0
-  %6 = icmp ugt i32 %5, 24
+  %6 = icmp samesign ugt i32 %5, 24
   ret i1 %6
 }
 
@@ -65,7 +65,7 @@ entry:
 ; llvm/optimized/VectorCombine.cpp.ll
 ; llvm/optimized/X86LowerAMXIntrinsics.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i32 %0, i8 %1, i32 %2) #0 {
+define i1 @func0000000000000481(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -29
   %4 = icmp ult i8 %1, 29
@@ -77,19 +77,19 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_tv.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000314(i32 %0, i8 %1, i32 %2) #0 {
+define i1 @func0000000000000c34(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = icmp eq i8 %1, 0
   %5 = select i1 %4, i32 %0, i32 %3
-  %6 = icmp ult i32 %5, 577
+  %6 = icmp samesign ult i32 %5, 577
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i32 %0, i8 %1, i32 %2) #0 {
+define i1 @func000000000000042a(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = icmp eq i8 %1, 0
@@ -101,7 +101,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/uarrsort.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i32 %0, i8 %1, i32 %2) #0 {
+define i1 @func0000000000000426(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = icmp eq i8 %1, 0
@@ -113,7 +113,7 @@ entry:
 ; 1 occurrences:
 ; nuttx/optimized/lib_strtold.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a1(i32 %0, i8 %1, i32 %2) #0 {
+define i1 @func0000000000000541(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -48
   %4 = icmp sgt i8 %1, 57

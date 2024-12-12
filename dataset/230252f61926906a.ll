@@ -28,9 +28,8 @@ entry:
   ret i64 %7
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; eastl/optimized/TestVector.cpp.ll
-; lz4/optimized/lz4hc.c.ll
 ; openjdk/optimized/bytecodes.ll
 ; z3/optimized/sat_simplifier.cpp.ll
 ; Function Attrs: nounwind

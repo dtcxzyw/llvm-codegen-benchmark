@@ -1,7 +1,7 @@
 func0000000000000007:                   # @func0000000000000007
 	add	a0, a0, a1
-	addi	a0, a0, 9
-	andi	a0, a0, 504
+	addi	a0, a0, 1
+	andi	a0, a0, 31
 	ret
 func0000000000000000:                   # @func0000000000000000
 	add	a0, a0, a1

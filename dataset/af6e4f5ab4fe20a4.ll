@@ -248,13 +248,12 @@ entry:
   ret i64 %5
 }
 
-; 39 occurrences:
+; 36 occurrences:
 ; cmake/optimized/process.c.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libuv/optimized/process.c.ll
 ; lief/optimized/psa_crypto.c.ll
 ; linux/optimized/build_policy.ll
-; linux/optimized/i915_driver.ll
 ; linux/optimized/lbr.ll
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/umip.ll
@@ -266,8 +265,6 @@ entry:
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; node/optimized/process.ll
 ; openblas/optimized/cblas_dgemmt.c.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtpttf.c.ll
 ; opencv/optimized/ann_mlp.cpp.ll
 ; opencv/optimized/graphsegmentation.cpp.ll
 ; opencv/optimized/grfmt_jpeg2000_openjpeg.cpp.ll
@@ -294,19 +291,6 @@ entry:
   %2 = and i32 %1, 1
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 %0, i32 1
-  %5 = zext nneg i32 %4 to i64
-  ret i64 %5
-}
-
-; 2 occurrences:
-; gromacs/optimized/md5.c.ll
-; gromacs/optimized/md5.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000011(i32 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 63
-  %3 = icmp ugt i32 %2, 56
-  %4 = select i1 %3, i32 %0, i32 8
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }

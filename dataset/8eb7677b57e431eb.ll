@@ -1,6 +1,4 @@
 
-%class.aiVector3t.2711808 = type { float, float, float }
-
 ; 12 occurrences:
 ; assimp/optimized/MDLMaterialLoader.cpp.ll
 ; assimp/optimized/SIBImporter.cpp.ll
@@ -15,11 +13,11 @@
 ; oiio/optimized/DPXColorConverter.cpp.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 3
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr nusw float, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw float, ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -36,28 +34,30 @@ entry:
 ; openjdk/optimized/pngset.ll
 ; openvdb/optimized/PoissonSolver.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 3
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr nusw i32, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i32, ptr %0, i64 %3
   ret ptr %4
 }
 
-; 7 occurrences:
+; 9 occurrences:
 ; assimp/optimized/AMFImporter_Postprocess.cpp.ll
+; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; hwloc/optimized/lstopo-lstopo-text.ll
 ; hwloc/optimized/lstopo_no_graphics-lstopo-text.ll
 ; linux/optimized/drm_hdcp_helper.ll
 ; miniaudio/optimized/unity.c.ll
+; pbrt-v4/optimized/image.cpp.ll
 ; raylib/optimized/raudio.c.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i64 %1) #0 {
 entry:
-  %2 = mul i64 %1, 6
-  %3 = and i64 %2, 8589934590
-  %4 = getelementptr %class.aiVector3t.2711808, ptr %0, i64 %3
+  %2 = mul i64 %1, 3456
+  %3 = and i64 %2, 8064
+  %4 = getelementptr i8, ptr %0, i64 %3
   ret ptr %4
 }
 

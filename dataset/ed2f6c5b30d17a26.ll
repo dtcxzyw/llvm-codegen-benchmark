@@ -8,7 +8,7 @@
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000101(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 63
   %4 = zext nneg i32 %3 to i64
@@ -21,7 +21,7 @@ entry:
 ; 1 occurrences:
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000108(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 63
   %4 = zext nneg i32 %3 to i64
@@ -35,7 +35,7 @@ entry:
 ; cmake/optimized/zstd_lazy.c.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000010c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 63
   %4 = zext nneg i32 %3 to i64

@@ -1,7 +1,5 @@
 
-; 5 occurrences:
-; luajit/optimized/lj_prng.ll
-; luajit/optimized/lj_prng_dyn.ll
+; 3 occurrences:
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; spike/optimized/fall_reciprocal.ll
 ; wolfssl/optimized/aes.c.ll

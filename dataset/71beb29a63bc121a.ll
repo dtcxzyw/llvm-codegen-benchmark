@@ -52,13 +52,13 @@
 ; openjdk/optimized/psParallelCompact.ll
 ; openusd/optimized/reconinter.c.ll
 ; postgres/optimized/regexec.ll
-; proj/optimized/factory.cpp.ll
 ; pybind11/optimized/test_smart_ptr.cpp.ll
 ; rocksdb/optimized/object_registry.cc.ll
 ; yalantinglibs/optimized/channel.cpp.ll
 ; yalantinglibs/optimized/client_pool.cpp.ll
 ; yalantinglibs/optimized/client_pools.cpp.ll
 ; z3/optimized/dl_sieve_relation.cpp.ll
+; zed-rs/optimized/c43xk22aeat7jwaky6ehuopzs.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(ptr %0, i32 %1) #0 {
 entry:

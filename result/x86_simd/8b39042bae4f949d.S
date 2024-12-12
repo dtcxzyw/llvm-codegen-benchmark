@@ -23,8 +23,8 @@ func0000000000000005:                   # @func0000000000000005
 func0000000000000002:                   # @func0000000000000002
 	vmulpd	%zmm4, %zmm4, %zmm4
 	vmulpd	%zmm5, %zmm5, %zmm5
-	vmulpd	%zmm3, %zmm5, %zmm3
-	vmulpd	%zmm2, %zmm4, %zmm2
+	vmulpd	%zmm5, %zmm3, %zmm3
+	vmulpd	%zmm4, %zmm2, %zmm2
 	vcmpltpd	%zmm2, %zmm0, %k0
 	vcmpltpd	%zmm3, %zmm1, %k1
 	kunpckbw	%k0, %k1, %k0

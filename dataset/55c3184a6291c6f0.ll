@@ -1,5 +1,7 @@
 
-; 6 occurrences:
+; 8 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; opencv/optimized/binary_descriptor.cpp.ll
 ; opencv/optimized/lsd.cpp.ll

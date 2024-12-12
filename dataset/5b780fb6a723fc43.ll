@@ -14,7 +14,7 @@
 ; qemu/optimized/net_socket.c.ll
 ; vcpkg/optimized/versiondeserializers.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000cc3(ptr %0, ptr %1) #0 {
+define i32 @func00000000000018c3(ptr %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = zext i1 %2 to i32

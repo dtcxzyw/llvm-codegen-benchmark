@@ -34,3 +34,15 @@ func0000000000000008:                   # @func0000000000000008
 	xori	a0, a0, 1
 	addi	a0, a0, 1
 	ret
+func0000000000000014:                   # @func0000000000000014
+	andi	a0, a0, 255
+	sltiu	a0, a0, 2
+	slli	a0, a0, 1
+	ret
+func0000000000000018:                   # @func0000000000000018
+	andi	a0, a0, 255
+	sltiu	a0, a0, 10
+	li	a1, -7
+	czero.eqz	a0, a1, a0
+	addi	a0, a0, 55
+	ret

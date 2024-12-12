@@ -1,11 +1,15 @@
 
-; 45 occurrences:
+; 48 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
+; abc/optimized/giaStr.c.ll
 ; abc/optimized/kitCloud.c.ll
+; boost/optimized/to_chars.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
+; hyperscan/optimized/mcclellan.c.ll
+; hyperscan/optimized/mcsheng.c.ll
 ; icu/optimized/ucnv_u7.ll
 ; linux/optimized/e1000_hw.ll
 ; linux/optimized/forcedeth.ll
@@ -42,7 +46,6 @@
 ; postgres/optimized/f2s_srv.ll
 ; qemu/optimized/crypto_block-luks.c.ll
 ; qemu/optimized/hw_net_cadence_gem.c.ll
-; qemu/optimized/virtio-mmio.c.ll
 ; ruby/optimized/process.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind

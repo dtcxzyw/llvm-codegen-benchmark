@@ -8,7 +8,7 @@ func00000000000000c5:                   # @func00000000000000c5
 	add	a0, a0, a1
 	sh3add	a0, a2, a0
 	ret
-func000000000000004a:                   # @func000000000000004a
+func000000000000014a:                   # @func000000000000014a
 	sltiu	a2, a1, 9
 	li	a3, 3
 	czero.nez	a2, a3, a2

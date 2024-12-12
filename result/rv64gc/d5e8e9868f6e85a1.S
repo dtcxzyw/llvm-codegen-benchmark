@@ -17,11 +17,6 @@ func000000000000007c:                   # @func000000000000007c
 	sub	a0, a0, a1
 	addi	a0, a0, 64
 	ret
-func000000000000007e:                   # @func000000000000007e
-	slliw	a1, a1, 4
-	sub	a0, a0, a1
-	addi	a0, a0, 64
-	ret
 func0000000000000006:                   # @func0000000000000006
 	slli	a1, a1, 34
 	srli	a1, a1, 32

@@ -1,10 +1,10 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	shll	$16, %esi
 	xorl	%eax, %eax
 	testb	%dil, %dil
 	cmovel	%esi, %eax
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	shll	$14, %esi
 	xorl	%eax, %eax
 	cmpb	$14, %dil

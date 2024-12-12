@@ -1,8 +1,7 @@
 
-; 45 occurrences:
+; 44 occurrences:
 ; clamav/optimized/rawread.cpp.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
-; cmake/optimized/vli_decoder.c.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/EventBaseLocal.cpp.ll
 ; folly/optimized/LogConfigParser.cpp.ll
@@ -51,7 +50,7 @@ entry:
   %3 = and i8 %2, 15
   %4 = zext nneg i8 %3 to i64
   %5 = shl i64 %4, %1
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -66,7 +65,7 @@ entry:
   %3 = and i8 %2, 15
   %4 = zext nneg i8 %3 to i64
   %5 = shl i64 %4, %1
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 

@@ -1,10 +1,11 @@
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/default_filter_factory.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/oids.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000208(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = add i64 %0, -48
@@ -17,7 +18,7 @@ entry:
 ; llvm/optimized/DLangDemangle.cpp.ll
 ; pbrt-v4/optimized/parser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000106(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000206(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = add i64 %0, -97
@@ -29,7 +30,7 @@ entry:
 ; 1 occurrences:
 ; pbrt-v4/optimized/parser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010a(i64 %0, i8 %1) #0 {
+define i1 @func000000000000020a(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = add i64 %0, -48
@@ -41,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000204(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = add i64 %0, -48

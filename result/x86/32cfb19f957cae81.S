@@ -19,10 +19,10 @@ func000000000000000a:                   # @func000000000000000a
 	vucomiss	%xmm1, %xmm2
 	jb	.LBB1_2
 	vmovss	.LCPI1_0(%rip), %xmm1           # xmm1 = [1.0E+0,0.0E+0,0.0E+0,0.0E+0]
-	vmulss	%xmm0, %xmm1, %xmm0
+	vmulss	%xmm1, %xmm0, %xmm0
 	retq
 .LBB1_2:                                # %select.false.sink
 	vmovss	.LCPI1_0(%rip), %xmm2           # xmm2 = [1.0E+0,0.0E+0,0.0E+0,0.0E+0]
 	vdivss	%xmm1, %xmm2, %xmm1
-	vmulss	%xmm0, %xmm1, %xmm0
+	vmulss	%xmm1, %xmm0, %xmm0
 	retq

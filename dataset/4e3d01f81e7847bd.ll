@@ -3,9 +3,9 @@
 ; cpython/optimized/dtoa.ll
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000009(i32 %0, i32 %1, i64 %2) #0 {
+define i32 @func0000000000000029(i32 %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ult i64 %2, 4503599627370496
+  %3 = icmp samesign ult i64 %2, 4503599627370496
   %4 = select i1 %3, i32 %0, i32 %1
   %5 = lshr exact i32 %4, 1
   ret i32 %5
@@ -38,13 +38,12 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
-; linux/optimized/swiotlb.ll
+; 1 occurrences:
 ; sentencepiece/optimized/int128.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000010(i32 %0, i32 %1, i64 %2) #0 {
+define i32 @func0000000000000030(i32 %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ugt i64 %2, 65535
+  %3 = icmp samesign ugt i64 %2, 65535
   %4 = select i1 %3, i32 %0, i32 %1
   %5 = lshr i32 %4, 8
   ret i32 %5
@@ -58,6 +57,17 @@ entry:
   %3 = icmp ult i64 %2, 512
   %4 = select i1 %3, i32 %0, i32 %1
   %5 = lshr i32 %4, 4
+  ret i32 %5
+}
+
+; 1 occurrences:
+; linux/optimized/swiotlb.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000010(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ugt i64 %2, 4095
+  %4 = select i1 %3, i32 %0, i32 %1
+  %5 = lshr i32 %4, 11
   ret i32 %5
 }
 

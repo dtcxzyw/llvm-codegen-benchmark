@@ -13,10 +13,11 @@ entry:
   ret double %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; graphviz/optimized/arrows.c.ll
 ; msdfgen/optimized/import-svg.cpp.ll
 ; openblas/optimized/dlaic1.c.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; Function Attrs: nounwind
 define double @func0000000000000004(double %0, double %1, double %2) #0 {
 entry:

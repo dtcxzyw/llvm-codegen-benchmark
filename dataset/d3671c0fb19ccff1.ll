@@ -1,6 +1,5 @@
 
-; 8 occurrences:
-; linux/optimized/intel_audio.ll
+; 7 occurrences:
 ; linux/optimized/intel_tv.ll
 ; linux/optimized/tcp_output.ll
 ; linux/optimized/vlv_dsi.ll
@@ -17,10 +16,12 @@ entry:
   ret i32 %5
 }
 
-; 15 occurrences:
+; 17 occurrences:
 ; darktable/optimized/RawImageDataU16.cpp.ll
 ; freetype/optimized/pcf.c.ll
 ; linux/optimized/intel_display.ll
+; lvgl/optimized/lv_draw_arc.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
 ; opencv/optimized/color_yuv.dispatch.cpp.ll
 ; opencv/optimized/colormap.cpp.ll
 ; opencv/optimized/freak.cpp.ll

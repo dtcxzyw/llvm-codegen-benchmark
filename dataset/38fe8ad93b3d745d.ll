@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/compile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000190(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000310(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294934528
   %3 = icmp ne i64 %2, 0
@@ -20,7 +20,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-v3_cpols.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000042(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp eq i32 %2, -1
@@ -36,7 +36,7 @@ entry:
 ; openjdk/optimized/superword.ll
 ; qemu/optimized/chardev_char-ringbuf.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c2(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000182(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2147483648
   %3 = icmp ne i64 %2, 0
@@ -49,7 +49,7 @@ entry:
 ; linux/optimized/xfrm_policy.ll
 ; slurm/optimized/gres_select_filter.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(ptr %0, i64 %1) #0 {
+define i1 @func000000000000004c(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp slt i32 %2, 1
@@ -61,7 +61,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000058(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp eq i32 %2, 1
@@ -73,7 +73,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/MachineInstr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000318(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp ne i32 %2, 1
@@ -85,7 +85,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/LowerTypeTests.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000302(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp ne i32 %2, 0
@@ -97,7 +97,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/vertexAdjacency.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d8(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000198(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp slt i32 %2, 1
@@ -109,7 +109,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/dot11decrypt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000158(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000298(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp sgt i32 %2, 0
@@ -123,7 +123,7 @@ entry:
 ; linux/optimized/register.ll
 ; wireshark/optimized/lemon.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000030(ptr %0, i64 %1) #0 {
+define i1 @func0000000000000050(ptr %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp ugt i32 %2, 100000000

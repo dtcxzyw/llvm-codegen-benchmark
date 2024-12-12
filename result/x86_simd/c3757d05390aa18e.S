@@ -2,7 +2,7 @@
 	.long	4294967232                      # 0xffffffc0
 .LCPI0_1:
 	.quad	1                               # 0x1
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	vpsrad	$31, %xmm1, %xmm2
 	vpsrld	$26, %xmm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm2
@@ -18,7 +18,7 @@ func0000000000000061:                   # @func0000000000000061
 	.long	4294967232                      # 0xffffffc0
 .LCPI1_1:
 	.quad	2                               # 0x2
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	vpsrad	$31, %xmm1, %xmm2
 	vpsrld	$26, %xmm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm2

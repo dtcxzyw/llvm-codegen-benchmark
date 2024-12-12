@@ -1,8 +1,7 @@
 
-; 90 occurrences:
+; 91 occurrences:
 ; abc/optimized/abcNpn.c.ll
 ; abc/optimized/absOldSim.c.ll
-; abc/optimized/covMinUtil.c.ll
 ; abc/optimized/decompress.c.ll
 ; abc/optimized/exorUtil.c.ll
 ; abc/optimized/extraBddKmap.c.ll
@@ -52,16 +51,18 @@
 ; llvm/optimized/AArch64SLSHardening.cpp.ll
 ; llvm/optimized/ASTReaderStmt.cpp.ll
 ; llvm/optimized/RISCVExpandPseudoInsts.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/X86AvoidStoreForwardingBlocks.cpp.ll
 ; llvm/optimized/X86DomainReassignment.cpp.ll
 ; llvm/optimized/X86ExpandPseudo.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; llvm/optimized/X86LowerTileCopy.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; node/optimized/pipe.ll
 ; node/optimized/tcp.ll
-; nuttx/optimized/lib_wcwidth.c.ll
 ; opencv/optimized/ppf_helpers.cpp.ll
 ; openssl/optimized/libcrypto-lib-rsa_oaep.ll
 ; openssl/optimized/libcrypto-lib-rsa_pk1.ll
@@ -99,19 +100,6 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
-; eastl/optimized/TestBitset.cpp.ll
-; linux/optimized/vgaarb.ll
-; qemu/optimized/hw_audio_hda-codec.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %0, %1
-  %3 = icmp ult i32 %2, 16384
-  %4 = select i1 %3, i32 48000, i32 44100
-  ret i32 %4
-}
-
 ; 4 occurrences:
 ; darktable/optimized/introspection_retouch.c.ll
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
@@ -124,6 +112,17 @@ entry:
   %.not = icmp eq i32 %2, 4
   %3 = select i1 %.not, i32 2, i32 0
   ret i32 %3
+}
+
+; 1 occurrences:
+; eastl/optimized/TestBitset.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %0, %1
+  %3 = icmp ult i32 %2, 65536
+  %4 = select i1 %3, i32 0, i32 16
+  ret i32 %4
 }
 
 attributes #0 = { nounwind }

@@ -3,7 +3,7 @@ func0000000000000000:                   # @func0000000000000000
 	testb	$1, %sil
 	cmovnel	%edx, %eax
 	orl	%edi, %eax
-	andl	$-536870913, %eax               # imm = 0xDFFFFFFF
+	andl	$-234881025, %eax               # imm = 0xF1FFFFFF
 	retq
 func0000000000000001:                   # @func0000000000000001
 	xorl	%eax, %eax

@@ -17,7 +17,7 @@ func0000000000000001:                   # @func0000000000000001
 	.zero	16,223
 .LCPI2_1:
 	.zero	16,224
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	vpor	%xmm1, %xmm0, %xmm0
 	vpaddb	.LCPI2_0(%rip), %xmm0, %xmm0
 	vpcmpltub	.LCPI2_1(%rip), %xmm0, %k0
@@ -25,7 +25,7 @@ func0000000000000044:                   # @func0000000000000044
 	retq
 .LCPI3_0:
 	.zero	16,13
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	vpor	%xmm1, %xmm0, %xmm0
 	vpcmpeqb	.LCPI3_0(%rip), %xmm0, %xmm0
 	retq

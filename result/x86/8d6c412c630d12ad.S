@@ -9,9 +9,10 @@ func000000000000000a:                   # @func000000000000000a
 	andl	$992, %eax                      # imm = 0x3E0
 	retq
 func0000000000000000:                   # @func0000000000000000
-	shrl	$2, %edi
-	leal	(%rdi,%rsi), %eax
-	andl	$4128768, %eax                  # imm = 0x3F0000
+	shll	$4, %esi
+	leal	(%rsi,%rdi), %eax
+	shrl	$24, %eax
+	andl	$-16, %eax
 	retq
 func0000000000000018:                   # @func0000000000000018
 	leal	(%rdi,%rsi,8), %eax

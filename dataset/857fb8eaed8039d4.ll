@@ -67,12 +67,13 @@ entry:
   ret i64 %2
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; clamav/optimized/rtf.c.ll
 ; cmake/optimized/archive_blake2s_ref.c.ll
 ; libsodium/optimized/libsodium_la-blake2b-ref.ll
 ; lief/optimized/poly1305.c.ll
 ; rustfmt-rs/optimized/1mznjg1e09hdetpr.ll
+; zed-rs/optimized/coobscod1tjvofpoi7fi6r7gk.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
@@ -146,7 +147,7 @@ entry:
   ret i64 %2
 }
 
-; 18 occurrences:
+; 23 occurrences:
 ; actix-rs/optimized/19s5ghr2x6s6bmh4.ll
 ; cmake/optimized/sha512.c.ll
 ; coreutils-rs/optimized/22bojphyikqmi872.ll
@@ -165,6 +166,11 @@ entry:
 ; postgres/optimized/sha2_srv.ll
 ; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
 ; wasmtime-rs/optimized/4mhzt4bue6j9nl9q.ll
+; zed-rs/optimized/0oeh7hwbxnw4zu37xj5psd1f6.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/7almbq0vtpgp7q0c9d6k1td97.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000e(i64 %0, i64 %1) #0 {
 entry:

@@ -1,5 +1,6 @@
 
-; 42 occurrences:
+; 43 occurrences:
+; boost/optimized/area_box_sg.ll
 ; graphviz/optimized/gvloadimage_pango.c.ll
 ; gromacs/optimized/dlasd4.cpp.ll
 ; gromacs/optimized/forcetable.cpp.ll

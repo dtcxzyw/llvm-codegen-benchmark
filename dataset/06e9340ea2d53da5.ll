@@ -1,24 +1,4 @@
 
-; 10 occurrences:
-; html5ever-rs/optimized/3iu2ouoac0bhrlsy.ll
-; llvm/optimized/CommentBriefParser.cpp.ll
-; llvm/optimized/CompilerInvocation.cpp.ll
-; llvm/optimized/SemaStmt.cpp.ll
-; llvm/optimized/Triple.cpp.ll
-; postgres/optimized/jsonfuncs.ll
-; quantlib/optimized/kahalesmilesection.ll
-; rust-analyzer-rs/optimized/hajha7nvyoiczny.ll
-; rustfmt-rs/optimized/2vbyym84o66crvo9.ll
-; tree-sitter-rs/optimized/2jber9b3bsvatks5.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i1 %1, i8 %2) #0 {
-entry:
-  %3 = trunc nuw i8 %2 to i1
-  %4 = or i1 %3, %1
-  %5 = or i1 %4, %0
-  ret i1 %5
-}
-
 ; 35 occurrences:
 ; clamav/optimized/extract.cpp.ll
 ; clamav/optimized/list.cpp.ll
@@ -59,7 +39,27 @@ entry:
 define i1 @func0000000000000000(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = trunc i8 %2 to i1
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
+  %5 = or i1 %0, %4
+  ret i1 %5
+}
+
+; 10 occurrences:
+; html5ever-rs/optimized/3iu2ouoac0bhrlsy.ll
+; llvm/optimized/CommentBriefParser.cpp.ll
+; llvm/optimized/CompilerInvocation.cpp.ll
+; llvm/optimized/SemaStmt.cpp.ll
+; llvm/optimized/Triple.cpp.ll
+; postgres/optimized/jsonfuncs.ll
+; quantlib/optimized/kahalesmilesection.ll
+; rust-analyzer-rs/optimized/hajha7nvyoiczny.ll
+; tree-sitter-rs/optimized/2jber9b3bsvatks5.ll
+; zed-rs/optimized/7xoulo9o2q4wd1npp9yutbl3x.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i1 %0, i1 %1, i8 %2) #0 {
+entry:
+  %3 = trunc nuw i8 %2 to i1
+  %4 = or i1 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }

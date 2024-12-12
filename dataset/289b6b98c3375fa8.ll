@@ -10,8 +10,8 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, -4
   %5 = icmp ult i32 %4, -2
-  %6 = and i1 %5, %1
-  %7 = and i1 %6, %0
+  %6 = and i1 %1, %5
+  %7 = and i1 %0, %6
   ret i1 %7
 }
 

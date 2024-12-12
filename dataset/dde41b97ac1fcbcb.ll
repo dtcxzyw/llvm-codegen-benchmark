@@ -1,16 +1,14 @@
 
-; 47 occurrences:
+; 45 occurrences:
 ; abc/optimized/cutNode.c.ll
 ; abc/optimized/darCut.c.ll
 ; abc/optimized/extraUtilTruth.c.ll
 ; abc/optimized/kitTruth.c.ll
 ; bullet3/optimized/b3Solver.ll
-; cmake/optimized/poll.c.ll
 ; coreutils-rs/optimized/jiqj5u7teuhb0o0.ll
 ; darktable/optimized/introspection_lens.cc.ll
 ; git/optimized/fetch-pack.ll
 ; git/optimized/revision.ll
-; libuv/optimized/poll.c.ll
 ; linux/optimized/aspm.ll
 ; linux/optimized/atkbd.ll
 ; linux/optimized/dm-ioctl.ll
@@ -25,6 +23,7 @@
 ; llvm/optimized/DebugInfoMetadata.cpp.ll
 ; llvm/optimized/FloatingPointMode.cpp.ll
 ; llvm/optimized/MicrosoftDemangle.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/glarea.cpp.ll
@@ -34,7 +33,6 @@
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV64BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV64LE.cc.ll
-; node/optimized/poll.ll
 ; openexr/optimized/ImfTimeCode.cpp.ll
 ; openjdk/optimized/IntBgr.ll
 ; openjdk/optimized/Ushort4444Argb.ll
@@ -57,13 +55,11 @@ entry:
   ret i32 %4
 }
 
-; 6 occurrences:
+; 4 occurrences:
 ; libevent/optimized/poll.c.ll
-; libzmq/optimized/zmq.cpp.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; postgres/optimized/utf8_and_gb18030.ll
-; qemu/optimized/hw_9pfs_9p.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0) #0 {
 entry:

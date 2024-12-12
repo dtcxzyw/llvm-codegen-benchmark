@@ -15,7 +15,7 @@ entry:
   ret i64 %4
 }
 
-; 37 occurrences:
+; 36 occurrences:
 ; ceres/optimized/single_linkage_clustering.cc.ll
 ; ceres/optimized/visibility_based_preconditioner.cc.ll
 ; cvc5/optimized/cvc5.cpp.ll
@@ -32,7 +32,6 @@ entry:
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; libquic/optimized/rand_util.cc.ll
 ; libquic/optimized/utf_offset_string_conversions.cc.ll
-; lightgbm/optimized/linker_topo.cpp.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
@@ -73,12 +72,14 @@ entry:
   ret i64 %4
 }
 
-; 12 occurrences:
+; 14 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cordz_handle_test.cc.ll
 ; abseil-cpp/optimized/cordz_info_statistics_test.cc.ll
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; arrow/optimized/io_util.cc.ll
+; boost/optimized/file_test_helpers.ll
+; boost/optimized/partition.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; readerwriterqueue/optimized/bench.cpp.ll
 ; taskflow/optimized/parallel_sort.cpp.ll
@@ -106,7 +107,8 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/conversion.ll
 ; brotli/optimized/encode.c.ll
 ; opencv/optimized/lkpyramid.cpp.ll
 ; opencv/optimized/svm.cpp.ll
@@ -120,7 +122,8 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/conversion.ll
 ; opencv/optimized/lkpyramid.cpp.ll
 ; opencv/optimized/svm.cpp.ll
 ; yosys/optimized/wreduce.ll

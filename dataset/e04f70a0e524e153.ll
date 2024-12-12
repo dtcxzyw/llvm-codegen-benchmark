@@ -1,5 +1,7 @@
 
-; 2 occurrences:
+; 4 occurrences:
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; spike/optimized/f128_sqrt.ll
 ; Function Attrs: nounwind

@@ -1,5 +1,5 @@
 
-; 347 occurrences:
+; 348 occurrences:
 ; abc/optimized/aigUtil.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/utilSort.c.ll
@@ -184,6 +184,7 @@
 ; opencv/optimized/phasecorr.cpp.ll
 ; openssl/optimized/libcrypto-lib-bn_lib.ll
 ; openssl/optimized/libcrypto-shlib-bn_lib.ll
+; openusd/optimized/value.cpp.ll
 ; php/optimized/zend_inference.ll
 ; postgres/optimized/createplan.ll
 ; postgres/optimized/syslogger.ll

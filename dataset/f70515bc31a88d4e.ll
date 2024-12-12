@@ -1,5 +1,6 @@
 
-; 53 occurrences:
+; 54 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
 ; clamav/optimized/pe_icons.c.ll
 ; faiss/optimized/ScalarQuantizer.cpp.ll
 ; graphviz/optimized/lab.c.ll
@@ -11,12 +12,12 @@
 ; libwebp/optimized/ssim.c.ll
 ; libwebp/optimized/ssim_sse2.c.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_indev.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
 ; minetest/optimized/touchscreengui.cpp.ll
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll
 ; openblas/optimized/dsfrk.c.ll
-; openblas/optimized/dtfsm.c.ll
 ; opencv/optimized/approx.cpp.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; opencv/optimized/batch_distance.cpp.ll
@@ -71,7 +72,8 @@ entry:
   ret i32 %3
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; lvgl/optimized/lv_area.ll
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/global_histogram_binarizer.cpp.ll
@@ -86,8 +88,7 @@ entry:
   ret i32 %3
 }
 
-; 5 occurrences:
-; linux/optimized/input-mt.ll
+; 4 occurrences:
 ; llvm/optimized/GVNSink.cpp.ll
 ; opencv/optimized/global_histogram_binarizer.cpp.ll
 ; postgres/optimized/tsgistidx.ll

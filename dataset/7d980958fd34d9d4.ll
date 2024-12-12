@@ -14,6 +14,7 @@
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; arrow/optimized/bpacking.cc.ll
 ; arrow/optimized/float16.cc.ll
+; boost/optimized/core.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; bullet3/optimized/gim_contact.ll
 ; clamav/optimized/kwajd.c.ll
@@ -83,7 +84,6 @@
 ; linux/optimized/intel_cx0_phy.ll
 ; linux/optimized/intel_sseu.ll
 ; linux/optimized/io_apic.ll
-; linux/optimized/logips2pp.ll
 ; linux/optimized/random32.ll
 ; linux/optimized/serial_core.ll
 ; linux/optimized/syscalls.ll
@@ -101,6 +101,7 @@
 ; luajit/optimized/lj_asm_dyn.ll
 ; luajit/optimized/lj_tab.ll
 ; luajit/optimized/lj_tab_dyn.ll
+; lvgl/optimized/lv_draw_sw_img.ll
 ; minetest/optimized/CImage.cpp.ll
 ; minetest/optimized/mapblock_mesh.cpp.ll
 ; minetest/optimized/texturesource.cpp.ll
@@ -207,7 +208,6 @@
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; wireshark/optimized/addr_resolv.c.ll
 ; wireshark/optimized/busmaster.c.ll
-; wireshark/optimized/file-rtpdump.c.ll
 ; wireshark/optimized/packet-6lowpan.c.ll
 ; wireshark/optimized/packet-btrfcomm.c.ll
 ; wireshark/optimized/packet-dccp.c.ll
@@ -241,7 +241,7 @@ entry:
   ret i32 %3
 }
 
-; 176 occurrences:
+; 177 occurrences:
 ; abc/optimized/abcLut.c.ll
 ; abc/optimized/blocksort.c.ll
 ; abc/optimized/cmdPlugin.c.ll
@@ -276,6 +276,7 @@ entry:
 ; libwebp/optimized/vp8l_dec.c.ll
 ; libwebp/optimized/yuv.c.ll
 ; lief/optimized/aes.c.ll
+; lief/optimized/constant_time.c.ll
 ; linux/optimized/aspm.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/intel_color.ll
@@ -345,7 +346,6 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -412,17 +412,18 @@ entry:
 ; taskflow/optimized/while_loop.cpp.ll
 ; wasmtime-rs/optimized/48myxw210mngc99c.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
-; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; wireshark/optimized/packet-kingfisher.c.ll
 ; yosys/optimized/ezsat.ll
 ; z3/optimized/bit_util.cpp.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 3
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   ret i32 %3
 }
 
@@ -445,7 +446,7 @@ entry:
   ret i32 %3
 }
 
-; 33 occurrences:
+; 32 occurrences:
 ; coreutils-rs/optimized/56596qkor8w4ma8l.ll
 ; freetype/optimized/pfr.c.ll
 ; git/optimized/read-cache.ll
@@ -460,7 +461,6 @@ entry:
 ; libpng/optimized/pngrtran.c.ll
 ; linux/optimized/aspm.ll
 ; linux/optimized/e100.ll
-; linux/optimized/nvram.ll
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/xhci.ll
 ; llvm/optimized/ASTReader.cpp.ll

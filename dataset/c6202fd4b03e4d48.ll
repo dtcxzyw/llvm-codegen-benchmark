@@ -12,7 +12,7 @@ entry:
   ret i1 %5
 }
 
-; 27 occurrences:
+; 26 occurrences:
 ; linux/optimized/compaction.ll
 ; linux/optimized/efi_64.ll
 ; llvm/optimized/VectorUtils.cpp.ll
@@ -39,7 +39,6 @@ entry:
 ; openusd/optimized/valueUtils.cpp.ll
 ; redis/optimized/db.ll
 ; redis/optimized/setcpuaffinity.ll
-; rust-analyzer-rs/optimized/3aojx6tzw7bx942t.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, ptr %2) #0 {
 entry:

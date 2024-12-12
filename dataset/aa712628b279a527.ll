@@ -1,15 +1,5 @@
 
 ; 1 occurrences:
-; clamav/optimized/pe_icons.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000f(i32 %0) #0 {
-entry:
-  %1 = mul nuw nsw i32 %0, %0
-  %2 = shl nuw nsw i32 %1, 3
-  ret i32 %2
-}
-
-; 1 occurrences:
 ; gromacs/optimized/tpxio.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0) #0 {
@@ -56,23 +46,12 @@ entry:
   ret i32 %2
 }
 
-; 2 occurrences:
-; openblas/optimized/dtgsna.c.ll
+; 1 occurrences:
 ; opencv/optimized/qrcode_reader.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0) #0 {
 entry:
   %1 = mul nsw i32 %0, %0
-  %2 = shl nuw i32 %1, 1
-  ret i32 %2
-}
-
-; 1 occurrences:
-; openblas/optimized/dsytrd_sy2sb.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000e(i32 %0) #0 {
-entry:
-  %1 = mul nuw nsw i32 %0, %0
   %2 = shl nuw i32 %1, 1
   ret i32 %2
 }

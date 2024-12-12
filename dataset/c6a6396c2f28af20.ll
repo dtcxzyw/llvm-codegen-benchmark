@@ -2,11 +2,11 @@
 ; 1 occurrences:
 ; rocksdb/optimized/clock_cache.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000502(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, 63
-  %5 = icmp ult i32 %4, %1
+  %5 = icmp samesign ult i32 %4, %1
   %6 = icmp eq i64 %0, 128
   %7 = or i1 %6, %5
   ret i1 %7
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/fraSat.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000004a2(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000001142(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = and i32 %3, 16777215
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaRetime.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000004c2(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000001182(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = and i32 %3, 536870911
@@ -38,24 +38,10 @@ entry:
   ret i1 %7
 }
 
-; 2 occurrences:
-; abc/optimized/giaLf.c.ll
-; abc/optimized/giaMuxes.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000122(i64 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc i64 %2 to i32
-  %4 = and i32 %3, 536870911
-  %5 = icmp uge i32 %4, %1
-  %6 = icmp eq i64 %0, 536870911
-  %7 = or i1 %6, %5
-  ret i1 %7
-}
-
 ; 1 occurrences:
 ; abc/optimized/abcScorr.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000562(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000012c2(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = and i32 %3, 536870911
@@ -68,7 +54,7 @@ entry:
 ; 1 occurrences:
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a2(i64 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000142(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = and i32 %3, 2147483647

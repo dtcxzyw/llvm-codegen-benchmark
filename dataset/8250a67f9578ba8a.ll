@@ -1,5 +1,7 @@
 
-; 1 occurrences:
+; 3 occurrences:
+; openmpi/optimized/btl_sm_component.ll
+; openmpi/optimized/btl_sm_send.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
@@ -25,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ucnvbocu.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = add i32 %3, 10513

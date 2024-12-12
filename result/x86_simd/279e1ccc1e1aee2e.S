@@ -22,7 +22,7 @@ func0000000000000007:                   # @func0000000000000007
 	.quad	16                              # 0x10
 .LCPI2_1:
 	.quad	-4                              # 0xfffffffffffffffc
-func0000000000000013:                   # @func0000000000000013
+func0000000000000053:                   # @func0000000000000053
 	vpbroadcastq	.LCPI2_0(%rip), %ymm2   # ymm2 = [16,16,16,16]
 	vpcmpnltuq	%ymm2, %ymm0, %k1
 	vpandq	.LCPI2_1(%rip){1to4}, %ymm1, %ymm2 {%k1}

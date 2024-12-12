@@ -1,5 +1,5 @@
 
-; 89 occurrences:
+; 90 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -89,6 +89,7 @@
 ; wireshark/optimized/packet-signal-pdu.c.ll
 ; wireshark/optimized/packet-someip.c.ll
 ; z3/optimized/sat_aig_cuts.cpp.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000007f(i64 %0, i64 %1, i32 %2) #0 {
 entry:
@@ -119,7 +120,7 @@ entry:
   ret i64 %7
 }
 
-; 12 occurrences:
+; 16 occurrences:
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; image-rs/optimized/1clnprdgqfw2q9lq.ll
 ; oiio/optimized/argparse.cpp.ll
@@ -132,6 +133,10 @@ entry:
 ; regex-rs/optimized/1x04d8372kemp7hd.ll
 ; wasmtime-rs/optimized/18flldcd4wnig7ks.ll
 ; wasmtime-rs/optimized/1uw8h1oeggq2kq40.ll
+; zed-rs/optimized/6t4g10gl152q55lxtcl2heeia.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003b(i64 %0, i64 %1, i32 %2) #0 {
 entry:
@@ -165,7 +170,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = shl i64 %3, 54
   %5 = shl i64 %1, 49
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   %7 = or i64 %6, %4
   ret i64 %7
 }
@@ -179,7 +184,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = shl i64 %3, 54
   %5 = shl i64 %1, 49
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   %7 = or i64 %6, %4
   ret i64 %7
 }
@@ -193,14 +198,18 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 19
   %5 = shl nuw nsw i64 %1, 5
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   %7 = or i64 %6, %4
   ret i64 %7
 }
 
-; 2 occurrences:
+; 6 occurrences:
 ; openjdk/optimized/jvmtiTagMap.ll
 ; rust-analyzer-rs/optimized/3yqkws4dawqbgt35.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/6t4g10gl152q55lxtcl2heeia.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000006d(i64 %0, i32 %1, i64 %2) #0 {
 entry:
@@ -218,7 +227,7 @@ entry:
 define i64 @func0000000000000074(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 48
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = zext nneg i32 %1 to i64
   %6 = shl nuw i64 %5, 56
   %7 = or i64 %6, %4
@@ -239,18 +248,20 @@ entry:
   ret i64 %7
 }
 
-; 4 occurrences:
+; 6 occurrences:
 ; abc/optimized/bmcFx.c.ll
 ; linux/optimized/io_apic.ll
 ; llvm/optimized/ASTContext.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; quickjs/optimized/quickjs.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000007b(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 %3, 62
   %5 = shl nuw nsw i64 %1, 47
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   %7 = or disjoint i64 %6, %4
   ret i64 %7
 }
@@ -278,7 +289,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 20
   %5 = shl i64 %1, 40
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   %7 = or i64 %6, %4
   ret i64 %7
 }
@@ -304,7 +315,7 @@ entry:
 define i64 @func000000000000007e(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 61
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = zext nneg i32 %1 to i64
   %6 = shl nuw nsw i64 %5, 62
   %7 = or i64 %6, %4
@@ -324,6 +335,19 @@ entry:
   ret i64 %7
 }
 
+; 1 occurrences:
+; lvgl/optimized/lv_image.ll
+; Function Attrs: nounwind
+define i64 @func000000000000007d(i64 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = shl nuw nsw i64 %2, 32
+  %4 = or disjoint i64 %3, %0
+  %5 = zext nneg i32 %1 to i64
+  %6 = shl nuw i64 %5, 48
+  %7 = or disjoint i64 %6, %4
+  ret i64 %7
+}
+
 ; 2 occurrences:
 ; llvm/optimized/InstrProfWriter.cpp.ll
 ; redis/optimized/siphash.ll
@@ -331,10 +355,11 @@ entry:
 define i64 @func0000000000000078(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = or i64 %3, %1
-  %5 = shl i64 %4, 56
-  %6 = or i64 %5, %0
-  ret i64 %6
+  %4 = shl nuw i64 %3, 56
+  %5 = shl nuw nsw i64 %1, 56
+  %6 = or i64 %0, %5
+  %7 = or i64 %6, %4
+  ret i64 %7
 }
 
 attributes #0 = { nounwind }

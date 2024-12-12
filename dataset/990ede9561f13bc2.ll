@@ -23,8 +23,7 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
-; z3/optimized/watch_list.cpp.ll
+; 1 occurrences:
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {

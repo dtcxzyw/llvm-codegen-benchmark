@@ -1,5 +1,5 @@
 
-; 349 occurrences:
+; 350 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/abcDetect.c.ll
@@ -27,6 +27,7 @@
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; assimp/optimized/ACLoader.cpp.ll
 ; assimp/optimized/ColladaExporter.cpp.ll
+; boost/optimized/static_string.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/b3CpuNarrowPhase.ll
 ; bullet3/optimized/b3FixedConstraint.ll
@@ -100,7 +101,6 @@
 ; git/optimized/sequencer.ll
 ; git/optimized/shallow.ll
 ; git/optimized/show-branch.ll
-; graphviz/optimized/shortest.c.ll
 ; gromacs/optimized/adler32.c.ll
 ; gromacs/optimized/ddot.cpp.ll
 ; gromacs/optimized/matio.cpp.ll
@@ -120,7 +120,6 @@
 ; linux/optimized/hid-sony.ll
 ; linux/optimized/igmp.ll
 ; linux/optimized/intel_gt_clock_utils.ll
-; linux/optimized/map.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
 ; linux/optimized/sidtab.ll
 ; linux/optimized/tsc.ll
@@ -232,6 +231,7 @@
 ; lua/optimized/lstring.ll
 ; luajit/optimized/lj_opt_fold.ll
 ; luajit/optimized/lj_opt_fold_dyn.ll
+; lvgl/optimized/lv_calendar.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/decorate_background.cpp.ll
@@ -242,6 +242,7 @@
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/meshselect.cpp.ll
 ; meshlab/optimized/ml_default_decorators.cpp.ll
 ; miniaudio/optimized/unity.c.ll
@@ -252,6 +253,7 @@
 ; mitsuba3/optimized/hdrfilm.cpp.ll
 ; mitsuba3/optimized/imageblock.cpp.ll
 ; mitsuba3/optimized/measured.cpp.ll
+; mitsuba3/optimized/rgb2spec.c.ll
 ; mitsuba3/optimized/specfilm.cpp.ll
 ; mitsuba3/optimized/volumegrid.cpp.ll
 ; nanobind/optimized/error.cpp.ll
@@ -296,8 +298,6 @@
 ; openjdk/optimized/verifier.ll
 ; openjdk/optimized/vmOperations.ll
 ; openjdk/optimized/zVerify.ll
-; openmpi/optimized/opal_hotel.ll
-; openssl/optimized/libtestutil-lib-random.ll
 ; openssl/optimized/openssl-bin-rehash.ll
 ; openssl/optimized/quic_stream_test-bin-quic_stream_test.ll
 ; openusd/optimized/matrix3d.cpp.ll
@@ -315,7 +315,7 @@
 ; pbrt-v4/optimized/samples.cpp.ll
 ; php/optimized/encode.ll
 ; php/optimized/ir.ll
-; postgres/optimized/brin_revmap.ll
+; php/optimized/unixtime2tm.ll
 ; postgres/optimized/c_keywords.ll
 ; postgres/optimized/cash.ll
 ; postgres/optimized/ecpg_keywords.ll
@@ -347,12 +347,23 @@
 ; wireshark/optimized/voip_calls_info_model.cpp.ll
 ; wolfssl/optimized/ssl.c.ll
 ; z3/optimized/expr_rand.cpp.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; zlib/optimized/adler32.c.ll
 ; zxing/optimized/PDFEncoder.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0) #0 {
 entry:
   %1 = urem i32 %0, 10
+  %2 = zext nneg i32 %1 to i64
+  ret i64 %2
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i32 %0) #0 {
+entry:
+  %1 = urem i32 %0, 56
   %2 = zext nneg i32 %1 to i64
   ret i64 %2
 }

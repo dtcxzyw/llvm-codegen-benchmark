@@ -1,5 +1,5 @@
 
-; 104 occurrences:
+; 105 occurrences:
 ; abc/optimized/bacWriteVer.c.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -12,7 +12,6 @@
 ; linux/optimized/cypress_ps2.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/libata-scsi.ll
-; linux/optimized/nvram.ll
 ; linux/optimized/sky2.ll
 ; llvm/optimized/AsmWriter.cpp.ll
 ; llvm/optimized/CGObjCMac.cpp.ll
@@ -83,7 +82,6 @@
 ; wireshark/optimized/packet-nas_5gs.c.ll
 ; wireshark/optimized/packet-ositp.c.ll
 ; wireshark/optimized/packet-ppp.c.ll
-; wireshark/optimized/packet-rfc2190.c.ll
 ; wireshark/optimized/packet-rmt-alc.c.ll
 ; wireshark/optimized/packet-rmt-norm.c.ll
 ; wireshark/optimized/packet-rohc.c.ll
@@ -104,6 +102,9 @@
 ; wireshark/optimized/packet-wisun.c.ll
 ; wireshark/optimized/packet-zbee-nwk.c.ll
 ; wireshark/optimized/tvbuff.c.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i8 %0) #0 {
 entry:

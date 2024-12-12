@@ -4,7 +4,7 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	andb	%dil, %al
 	retq
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	shlq	$32, %rdx
 	orq	%rsi, %rdx
 	movl	$4294967295, %eax               # imm = 0xFFFFFFFF
@@ -12,7 +12,7 @@ func0000000000000071:                   # @func0000000000000071
 	sete	%al
 	andb	%dil, %al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	shlq	$32, %rdx
 	orq	%rsi, %rdx
 	sete	%al

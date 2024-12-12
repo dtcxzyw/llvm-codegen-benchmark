@@ -6,9 +6,9 @@
 ; hdf5/optimized/H5HFsection.c.ll
 ; hermes/optimized/ProfileAnalyzer.cpp.ll
 ; libpng/optimized/pngwutil.c.ll
-; linux/optimized/intel_snps_phy.ll
 ; linux/optimized/tx.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
+; lvgl/optimized/lv_refr.ll
 ; qemu/optimized/block_parallels.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {

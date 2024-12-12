@@ -1,11 +1,14 @@
 
-; 279 occurrences:
+; 282 occurrences:
+; abc/optimized/abcBm.c.ll
 ; abc/optimized/abcIf.c.ll
 ; abc/optimized/abcLutmin.c.ll
+; abc/optimized/abcSat.c.ll
 ; abc/optimized/abcUtil.c.ll
 ; abc/optimized/amapLib.c.ll
 ; abc/optimized/cecSplit.c.ll
 ; abc/optimized/dauCanon.c.ll
+; abc/optimized/fraCec.c.ll
 ; abc/optimized/luckyFast6.c.ll
 ; abc/optimized/mapperTable.c.ll
 ; abc/optimized/mapperUtils.c.ll
@@ -16,6 +19,7 @@
 ; abc/optimized/superGate.c.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/sweep.cc.ll
+; boost/optimized/get_distance_measure.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/b3QuantizedBvh.ll
 ; bullet3/optimized/b3VoronoiSimplexSolver.ll
@@ -131,7 +135,6 @@
 ; linux/optimized/badblocks.ll
 ; linux/optimized/blk-map.ll
 ; linux/optimized/eventfd.ll
-; linux/optimized/ht.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/journal.ll
 ; linux/optimized/runtime.ll
@@ -149,7 +152,6 @@
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
 ; llvm/optimized/LoopVectorizationLegality.cpp.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/RewriteStatepointsForGC.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
@@ -166,6 +168,7 @@
 ; llvm/optimized/YAMLParser.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
+; lvgl/optimized/lv_math.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshoptimizer/optimized/vertexfilter.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
@@ -224,7 +227,6 @@
 ; postgres/optimized/pg_enum.ll
 ; postgres/optimized/rangetypes_gist.ll
 ; postgres/optimized/rangetypes_typanalyze.ll
-; proj/optimized/filemanager.cpp.ll
 ; qemu/optimized/block_accounting.c.ll
 ; qemu/optimized/block_qcow2.c.ll
 ; qemu/optimized/migration_dirtyrate.c.ll
@@ -252,7 +254,6 @@
 ; wireshark/optimized/lemon.c.ll
 ; wireshark/optimized/packet-btatt.c.ll
 ; wireshark/optimized/packet-bthci_evt.c.ll
-; wireshark/optimized/packet-dhcp-failover.c.ll
 ; wireshark/optimized/packet-pop.c.ll
 ; wireshark/optimized/search_frame.cpp.ll
 ; wireshark/optimized/tap-icmpstat.c.ll
@@ -279,6 +280,8 @@
 ; z3/optimized/pb_card.cpp.ll
 ; z3/optimized/pb_pb.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
+; zed-rs/optimized/2v1crabhdzmbjmzi7m5kjh0ot.ll
+; zed-rs/optimized/bktyyhuk5fekatq647qx0ox8v.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i1 %1) #0 {
 entry:

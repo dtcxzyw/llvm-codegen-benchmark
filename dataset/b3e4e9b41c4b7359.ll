@@ -5,7 +5,7 @@
 ; llvm/optimized/WasmObjectFile.cpp.ll
 ; qemu/optimized/block.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
   %3 = lshr exact i32 %0, 15
@@ -21,11 +21,11 @@ entry:
 ; redis/optimized/rax.ll
 ; yosys/optimized/Solver.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000018(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
   %3 = lshr i32 %0, 11
-  %4 = icmp ugt i32 %3, %2
+  %4 = icmp samesign ugt i32 %3, %2
   ret i1 %4
 }
 

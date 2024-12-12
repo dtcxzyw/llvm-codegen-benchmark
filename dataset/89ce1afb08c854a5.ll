@@ -1,5 +1,7 @@
 
 ; 376 occurrences:
+; boost/optimized/alloc_lib.ll
+; boost/optimized/to_chars.ll
 ; faiss/optimized/lattice_Zn.cpp.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
@@ -87,10 +89,8 @@
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/mballoc.ll
 ; linux/optimized/mempolicy.ll
-; linux/optimized/ptp_kvm_x86.ll
 ; linux/optimized/pvclock.ll
 ; linux/optimized/tlb.ll
-; linux/optimized/vclock_gettime.ll
 ; llvm/optimized/LowerTypeTests.cpp.ll
 ; llvm/optimized/MachOUniversalWriter.cpp.ll
 ; luajit/optimized/lj_alloc.ll

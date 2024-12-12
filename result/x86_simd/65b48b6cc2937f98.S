@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	11                              # 0xb
-func00000000000002f4:                   # @func00000000000002f4
+func00000000000005f4:                   # @func00000000000005f4
 	vpcmpeqd	%xmm3, %xmm3, %xmm3
 	vpcmpeqb	%xmm3, %xmm2, %k0
 	vpmovm2q	%k0, %ymm2

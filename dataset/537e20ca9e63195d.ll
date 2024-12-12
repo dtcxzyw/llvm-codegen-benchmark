@@ -1,8 +1,9 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; libwebp/optimized/analysis_enc.c.ll
 ; libwebp/optimized/dec.c.ll
+; lvgl/optimized/lv_draw_sw_line.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll

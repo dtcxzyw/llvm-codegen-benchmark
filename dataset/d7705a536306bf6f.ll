@@ -1,6 +1,5 @@
 
-; 165 occurrences:
-; abseil-cpp/optimized/memutil.cc.ll
+; 170 occurrences:
 ; arrow/optimized/UriNormalize.c.ll
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/BaseImporter.cpp.ll
@@ -14,6 +13,12 @@
 ; assimp/optimized/STEPFileReader.cpp.ll
 ; assimp/optimized/unzip.c.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/ci_string.ll
+; boost/optimized/normalize.ll
+; boost/optimized/params_base.ll
+; boost/optimized/params_encoded_base.ll
+; boost/optimized/scheme.ll
+; boost/optimized/url_base.ll
 ; cmake/optimized/archive_string.c.ll
 ; cmake/optimized/nghttp2_http.c.ll
 ; cmake/optimized/xmltok.c.ll
@@ -113,7 +118,6 @@
 ; ocio/optimized/FileFormatTruelight.cpp.ll
 ; ocio/optimized/FileFormatVF.cpp.ll
 ; ocio/optimized/FileRules.cpp.ll
-; ocio/optimized/FileTransform.cpp.ll
 ; ocio/optimized/NamedTransform.cpp.ll
 ; ocio/optimized/OCIOZArchive.cpp.ll
 ; ocio/optimized/ParseUtils.cpp.ll
@@ -135,9 +139,6 @@
 ; postgres/optimized/encnames_shlib.ll
 ; postgres/optimized/encnames_srv.ll
 ; postgres/optimized/guc.ll
-; postgres/optimized/kwlookup.ll
-; postgres/optimized/kwlookup_shlib.ll
-; postgres/optimized/kwlookup_srv.ll
 ; postgres/optimized/pgstrcasecmp.ll
 ; postgres/optimized/pgstrcasecmp_shlib.ll
 ; postgres/optimized/pgstrcasecmp_srv.ll
@@ -165,6 +166,10 @@
 ; yosys/optimized/attrmap.ll
 ; yosys/optimized/dfflibmap.ll
 ; z3/optimized/opt_parse.cpp.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/8yk2p2sb65wc4uirlpwonhoj2.ll
+; zed-rs/optimized/cguh9zihnfg4v76y73tdlg6o2.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000004(i8 %0, i8 %1) #0 {
 entry:
@@ -179,7 +184,7 @@ entry:
 ; hyperscan/optimized/Parser.cpp.ll
 ; openjdk/optimized/hb-ot-tag.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000014(i8 %0, i8 %1) #0 {
+define i8 @func0000000000000024(i8 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i8 %1, -65
   %3 = icmp ult i8 %2, 26

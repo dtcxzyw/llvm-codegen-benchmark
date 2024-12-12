@@ -3,7 +3,7 @@
 ; cpython/optimized/dtoa.ll
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = icmp eq i32 %1, 0
@@ -18,7 +18,7 @@ entry:
 ; abc/optimized/cecSatG3.c.ll
 ; qemu/optimized/target_riscv_debug.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000311(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000c21(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = icmp eq i32 %1, 1

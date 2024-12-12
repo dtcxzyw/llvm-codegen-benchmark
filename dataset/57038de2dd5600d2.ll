@@ -4,7 +4,7 @@
 ; openblas/optimized/dlasyf_rk.c.ll
 ; openblas/optimized/dlasyf_rook.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000006ba(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000196a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, %1
   %4 = icmp sge i32 %0, %2

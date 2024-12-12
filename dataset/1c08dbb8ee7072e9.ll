@@ -36,12 +36,13 @@ entry:
   ret i128 %2
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/int128_test.cc.ll
 ; abseil-cpp/optimized/wide_multiply_test.cc.ll
+; boost/optimized/to_chars.ll
 ; Function Attrs: nounwind
 define i128 @func0000000000000005(i32 %0) #0 {
 entry:

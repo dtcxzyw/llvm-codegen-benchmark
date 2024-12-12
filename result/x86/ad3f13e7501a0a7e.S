@@ -1,4 +1,4 @@
-func0000000000000141:                   # @func0000000000000141
+func0000000000000481:                   # @func0000000000000481
 	subl	%edx, %esi
 	cmpl	$8, %esi
 	setb	%cl
@@ -6,14 +6,14 @@ func0000000000000141:                   # @func0000000000000141
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000166:                   # @func0000000000000166
+func00000000000004c6:                   # @func00000000000004c6
 	cmpl	%edx, %esi
 	setle	%cl
 	testl	%edi, %edi
 	setle	%al
 	orb	%cl, %al
 	retq
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000014a:                   # @func000000000000014a
 	subl	%edx, %esi
 	testl	%esi, %esi
 	setg	%cl
@@ -21,7 +21,7 @@ func00000000000000aa:                   # @func00000000000000aa
 	setg	%al
 	orb	%cl, %al
 	retq
-func00000000000001ac:                   # @func00000000000001ac
+func000000000000054c:                   # @func000000000000054c
 	subl	%edx, %esi
 	cmpl	$4, %esi
 	setge	%cl
@@ -29,12 +29,12 @@ func00000000000001ac:                   # @func00000000000001ac
 	setne	%al
 	orb	%cl, %al
 	retq
-func00000000000001cc:                   # @func00000000000001cc
+func000000000000058c:                   # @func000000000000058c
 	xorl	%edx, %esi
 	orl	%edi, %esi
 	setne	%al
 	retq
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000141:                   # @func0000000000000141
 	subl	%edx, %esi
 	testl	%esi, %esi
 	setg	%cl
@@ -42,21 +42,21 @@ func00000000000000a1:                   # @func00000000000000a1
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	cmpl	%edx, %esi
 	sets	%cl
 	testl	%edi, %edi
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000161:                   # @func0000000000000161
+func00000000000004c1:                   # @func00000000000004c1
 	cmpl	%edx, %esi
 	setl	%cl
 	testl	%edi, %edi
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	subl	%edx, %esi
 	cmpl	$2, %esi
 	setb	%cl
@@ -64,14 +64,14 @@ func0000000000000044:                   # @func0000000000000044
 	setb	%al
 	orb	%cl, %al
 	retq
-func00000000000001aa:                   # @func00000000000001aa
+func000000000000054a:                   # @func000000000000054a
 	cmpl	%edx, %esi
 	setg	%cl
 	testl	%edi, %edi
 	setg	%al
 	orb	%cl, %al
 	retq
-func0000000000000066:                   # @func0000000000000066
+func00000000000000c6:                   # @func00000000000000c6
 	subl	%edx, %esi
 	testl	%esi, %esi
 	setle	%cl
@@ -79,15 +79,7 @@ func0000000000000066:                   # @func0000000000000066
 	setle	%al
 	orb	%cl, %al
 	retq
-func0000000000000064:                   # @func0000000000000064
-	subl	%edx, %esi
-	testl	%esi, %esi
-	setle	%cl
-	cmpl	$2, %edi
-	setb	%al
-	orb	%cl, %al
-	retq
-func00000000000001ca:                   # @func00000000000001ca
+func000000000000058a:                   # @func000000000000058a
 	subl	%edx, %esi
 	cmpl	$1, %esi
 	setne	%cl
@@ -95,7 +87,7 @@ func00000000000001ca:                   # @func00000000000001ca
 	setge	%al
 	orb	%cl, %al
 	retq
-func000000000000016a:                   # @func000000000000016a
+func00000000000004ca:                   # @func00000000000004ca
 	subl	%edx, %esi
 	cmpl	$4, %esi
 	setl	%cl
@@ -103,7 +95,7 @@ func000000000000016a:                   # @func000000000000016a
 	setg	%al
 	orb	%cl, %al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	subl	%edx, %esi
 	cmpl	$2, %esi
 	setb	%cl

@@ -1,5 +1,6 @@
 
-; 34 occurrences:
+; 36 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/btConvexHull.ll
 ; cpython/optimized/compile.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
@@ -7,6 +8,7 @@
 ; gromacs/optimized/reversetopology.cpp.ll
 ; icu/optimized/number_affixutils.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
+; lvgl/optimized/lv_matrix.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
 ; mold/optimized/output-chunks.cc.I386.cc.ll
 ; mold/optimized/output-chunks.cc.LOONGARCH32.cc.ll

@@ -5,27 +5,27 @@ func0000000000000009:                   # @func0000000000000009
 	sltu	a0, a0, a1
 	xori	a0, a0, 1
 	ret
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	sub	a0, a0, a2
 	slli	a2, a1, 10
 	slli	a1, a1, 13
 	add	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	sub	a0, a0, a2
 	li	a2, 40
 	mul	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	sub	a0, a0, a2
 	slli	a2, a1, 2
 	slli	a1, a1, 4
 	sub	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	sub	a0, a0, a2
 	slli	a2, a1, 2
 	slli	a1, a1, 4

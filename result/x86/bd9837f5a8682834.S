@@ -1,18 +1,17 @@
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	cmpb	$6, %sil
-	setb	%al
-	cmpb	%dil, %al
+	sbbb	$0, %dil
 	sete	%al
 	retq
-func0000000000000181:                   # @func0000000000000181
+func0000000000000301:                   # @func0000000000000301
 	testb	%sil, %sil
 	setne	%al
-	cmpb	%dil, %al
+	cmpb	%al, %dil
 	sete	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
-	cmpb	$1, %sil
+func0000000000000041:                   # @func0000000000000041
+	cmpb	$45, %sil
 	sete	%al
-	cmpb	%dil, %al
+	cmpb	%al, %dil
 	sete	%al
 	retq

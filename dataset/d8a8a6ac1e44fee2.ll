@@ -1,6 +1,9 @@
 
-; 39 occurrences:
+; 42 occurrences:
 ; abc/optimized/kitTruth.c.ll
+; boost/optimized/collate.ll
+; boost/optimized/collator.ll
+; boost/optimized/message.ll
 ; clamav/optimized/Bra.c.ll
 ; clamav/optimized/crypt.cpp.ll
 ; clamav/optimized/rarvm.cpp.ll
@@ -106,7 +109,7 @@ entry:
   ret i32 %4
 }
 
-; 71 occurrences:
+; 74 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/FxchSCHashTable.c.ll
@@ -161,6 +164,7 @@ entry:
 ; linux/optimized/i9xx_wm.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; lvgl/optimized/lv_draw_sw_img.ll
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
 ; ockam-rs/optimized/1145kugil9dl94a2.ll
@@ -174,10 +178,12 @@ entry:
 ; raylib/optimized/rcore.c.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; ruby/optimized/regparse.ll
-; soc-simulator/optimized/verilated.ll
 ; stb/optimized/stb_truetype.c.ll
 ; wireshark/optimized/packet-asterix.c.ll
 ; wireshark/optimized/packet-umts_fp.c.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/67gayid14ydsuhkv0lcnhbsvb.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:

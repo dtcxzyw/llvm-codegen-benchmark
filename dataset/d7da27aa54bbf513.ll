@@ -9,7 +9,7 @@
 ; oniguruma/optimized/regcomp.ll
 ; ruby/optimized/regcomp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000021(i32 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %1, %2
   %4 = icmp eq i32 %0, 0

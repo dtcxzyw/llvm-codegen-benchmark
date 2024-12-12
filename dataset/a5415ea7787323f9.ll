@@ -1,9 +1,12 @@
 
-; 81 occurrences:
+; 84 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; arrow/optimized/basic_decimal.cc.ll
 ; arrow/optimized/decimal.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
@@ -85,7 +88,7 @@
 define i64 @func0000000000000028(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = mul nuw i128 %3, %1
+  %4 = mul nuw i128 %1, %3
   %5 = add nuw i128 %4, %0
   %6 = trunc i128 %5 to i64
   ret i64 %6
@@ -98,7 +101,7 @@ entry:
 define i64 @func000000000000003c(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = mul nuw nsw i128 %3, %1
+  %4 = mul nuw nsw i128 %1, %3
   %5 = add nuw nsw i128 %4, %0
   %6 = trunc i128 %5 to i64
   ret i64 %6
@@ -113,8 +116,8 @@ entry:
 define i64 @func0000000000000020(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = mul nuw i128 %3, %1
-  %5 = add i128 %4, %0
+  %4 = mul nuw i128 %1, %3
+  %5 = add i128 %0, %4
   %6 = trunc i128 %5 to i64
   ret i64 %6
 }
@@ -128,8 +131,8 @@ entry:
 define i64 @func0000000000000000(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext i64 %2 to i128
-  %4 = mul i128 %3, %1
-  %5 = add i128 %4, %0
+  %4 = mul i128 %1, %3
+  %5 = add i128 %0, %4
   %6 = trunc i128 %5 to i64
   ret i64 %6
 }
@@ -142,8 +145,8 @@ entry:
 define i64 @func000000000000007c(i128 %0, i128 %1, i64 %2) #0 {
 entry:
   %3 = zext nneg i64 %2 to i128
-  %4 = mul nuw nsw i128 %3, %1
-  %5 = add nuw nsw i128 %4, %0
+  %4 = mul nuw nsw i128 %1, %3
+  %5 = add nuw nsw i128 %0, %4
   %6 = trunc i128 %5 to i64
   ret i64 %6
 }

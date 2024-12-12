@@ -6,7 +6,7 @@ define i32 @func0000000000000005(double %0) #0 {
 entry:
   %1 = fcmp ugt double %0, 1.300000e+01
   %2 = select i1 %1, double -1.300000e+01, double -1.000000e+00
-  %3 = fadd double %2, %0
+  %3 = fadd double %0, %2
   %4 = fptosi double %3 to i32
   ret i32 %4
 }
@@ -19,7 +19,7 @@ define i32 @func0000000000000002(double %0) #0 {
 entry:
   %1 = fcmp olt double %0, 0.000000e+00
   %2 = select i1 %1, double -5.000000e-01, double 5.000000e-01
-  %3 = fadd double %2, %0
+  %3 = fadd double %0, %2
   %4 = fptosi double %3 to i32
   ret i32 %4
 }
@@ -32,7 +32,7 @@ define i32 @func000000000000000c(double %0) #0 {
 entry:
   %1 = fcmp oge double %0, 0.000000e+00
   %2 = select i1 %1, double 5.000000e-01, double -5.000000e-01
-  %3 = fadd double %2, %0
+  %3 = fadd double %0, %2
   %4 = fptosi double %3 to i32
   ret i32 %4
 }
@@ -57,7 +57,7 @@ define i32 @func0000000000000003(double %0) #0 {
 entry:
   %1 = fcmp ult double %0, 0.000000e+00
   %2 = select i1 %1, double -5.000000e-01, double 5.000000e-01
-  %3 = fadd double %2, %0
+  %3 = fadd double %0, %2
   %4 = fptosi double %3 to i32
   ret i32 %4
 }

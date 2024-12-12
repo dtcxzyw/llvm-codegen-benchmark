@@ -1,8 +1,11 @@
 
-; 7 occurrences:
+; 10 occurrences:
 ; abseil-cpp/optimized/int128_test.cc.ll
 ; arrow/optimized/decimal.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; quickjs/optimized/libbf.ll
 ; wolfssl/optimized/sp_int.c.ll
@@ -11,24 +14,28 @@
 define i64 @func0000000000000008(i128 %0, i64 %1) #0 {
 entry:
   %2 = trunc i128 %0 to i64
-  %3 = add i64 %2, %1
+  %3 = add i64 %1, %2
   ret i64 %3
 }
 
-; 4 occurrences:
+; 7 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; openssl/optimized/libcrypto-lib-f_impl64.ll
 ; openssl/optimized/libcrypto-shlib-f_impl64.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001c(i128 %0, i64 %1) #0 {
 entry:
   %2 = trunc i128 %0 to i64
-  %3 = add i64 %2, %1
+  %3 = add i64 %1, %2
   ret i64 %3
 }
 
-; 11 occurrences:
+; 13 occurrences:
+; boost/optimized/approximately_equals.ll
 ; openssl/optimized/libcrypto-lib-f_generic.ll
 ; openssl/optimized/libcrypto-lib-f_impl64.ll
 ; openssl/optimized/libcrypto-lib-scalar.ll
@@ -40,11 +47,12 @@ entry:
 ; spike/optimized/vaaddu_vv.ll
 ; spike/optimized/vaaddu_vx.ll
 ; wolfssl/optimized/sp_int.c.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i128 %0, i64 %1) #0 {
 entry:
   %2 = trunc i128 %0 to i64
-  %3 = add i64 %2, %1
+  %3 = add i64 %1, %2
   ret i64 %3
 }
 
@@ -63,7 +71,7 @@ entry:
 define i64 @func0000000000000000(i128 %0, i64 %1) #0 {
 entry:
   %2 = trunc i128 %0 to i64
-  %3 = add i64 %2, %1
+  %3 = add i64 %1, %2
   ret i64 %3
 }
 
@@ -77,7 +85,7 @@ entry:
 define i64 @func0000000000000015(i128 %0, i64 %1) #0 {
 entry:
   %2 = trunc i128 %0 to i64
-  %3 = add i64 %2, %1
+  %3 = add i64 %1, %2
   ret i64 %3
 }
 
@@ -87,7 +95,7 @@ entry:
 define i64 @func0000000000000010(i128 %0, i64 %1) #0 {
 entry:
   %2 = trunc i128 %0 to i64
-  %3 = add i64 %2, %1
+  %3 = add i64 %1, %2
   ret i64 %3
 }
 
@@ -98,7 +106,7 @@ entry:
 define i64 @func0000000000000004(i128 %0, i64 %1) #0 {
 entry:
   %2 = trunc i128 %0 to i64
-  %3 = add i64 %2, %1
+  %3 = add i64 %1, %2
   ret i64 %3
 }
 

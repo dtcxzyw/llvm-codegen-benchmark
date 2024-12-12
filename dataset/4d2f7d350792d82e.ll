@@ -1,5 +1,7 @@
 
-; 25 occurrences:
+; 27 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
@@ -35,7 +37,7 @@ entry:
   ret i1 %6
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; c3c/optimized/sema_decls.c.ll
 ; c3c/optimized/sema_initializers.c.ll
 ; git/optimized/sequencer.ll
@@ -43,7 +45,6 @@ entry:
 ; llvm/optimized/MachineInstr.cpp.ll
 ; llvm/optimized/ParseDecl.cpp.ll
 ; openjdk/optimized/reflection.ll
-; php/optimized/pcre2_match.ll
 ; recastnavigation/optimized/RecastContour.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i1 %0, i1 %1, i32 %2) #0 {

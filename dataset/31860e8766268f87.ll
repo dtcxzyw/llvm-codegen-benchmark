@@ -3,7 +3,7 @@
 ; llvm/optimized/Scalarizer.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000042(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = trunc i64 %1 to i32

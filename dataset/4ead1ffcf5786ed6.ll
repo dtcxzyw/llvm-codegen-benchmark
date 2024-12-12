@@ -1,5 +1,5 @@
 
-%struct.succ_dict_block.2485796 = type { i32, i64, [8 x i64] }
+%struct.succ_dict_block.2601266 = type { i32, i64, [8 x i64] }
 
 ; 4 occurrences:
 ; qemu/optimized/hw_core_loader.c.ll
@@ -12,7 +12,7 @@ entry:
   %2 = add nsw i32 %1, -54
   %3 = lshr i32 %2, 9
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr [0 x %struct.succ_dict_block.2485796], ptr %0, i64 0, i64 %4
+  %5 = getelementptr [0 x %struct.succ_dict_block.2601266], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -25,7 +25,7 @@ entry:
   %2 = add i32 %1, -55
   %3 = lshr i32 %2, 9
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr [0 x %struct.succ_dict_block.2485796], ptr %0, i64 0, i64 %4
+  %5 = getelementptr [0 x %struct.succ_dict_block.2601266], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -43,12 +43,12 @@ entry:
 ; softposit-rs/optimized/xadcarspawrhwb8.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000016(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000017(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = lshr i32 %2, 6
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw [4 x i64], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [4 x i64], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -91,12 +91,12 @@ entry:
 ; verilator/optimized/V3Number.cpp.ll
 ; z3/optimized/fixed_bit_vector.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = lshr i32 %2, 6
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw [64 x i64], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [64 x i64], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -104,12 +104,12 @@ entry:
 ; icu/optimized/genmbcs.ll
 ; openjdk/optimized/matcher.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000036(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000037(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = lshr i32 %2, 6
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw [11 x i64], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [11 x i64], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -117,12 +117,12 @@ entry:
 ; cmake/optimized/archive_ppmd8.c.ll
 ; darktable/optimized/amaze.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000003f(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 160
   %3 = lshr exact i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw [12800 x float], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [12800 x float], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

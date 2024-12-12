@@ -12,7 +12,7 @@ func00000000000000c5:                   # @func00000000000000c5
 	vadd.vi	v10, v8, 8
 	vmerge.vvm	v8, v10, v8, v0
 	ret
-func000000000000004a:                   # @func000000000000004a
+func000000000000014a:                   # @func000000000000014a
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsleu.vi	v0, v10, 8
 	vmv.v.i	v12, 6

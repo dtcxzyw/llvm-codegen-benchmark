@@ -42,7 +42,7 @@ entry:
   ret i64 %3
 }
 
-; 77 occurrences:
+; 80 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; freetype/optimized/sfnt.c.ll
@@ -104,6 +104,7 @@ entry:
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-shape-fallback.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
+; openspiel/optimized/2048.cc.ll
 ; openssl/optimized/libcrypto-lib-bio_ok.ll
 ; openssl/optimized/libcrypto-lib-bn_gf2m.ll
 ; openssl/optimized/libcrypto-lib-p12_utl.ll
@@ -119,6 +120,8 @@ entry:
 ; wireshark/optimized/packet-opensafety.c.ll
 ; wireshark/optimized/scanner.c.ll
 ; z3/optimized/sat_cutset.cpp.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zfp/optimized/zfp.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
@@ -138,7 +141,7 @@ entry:
   ret i64 %3
 }
 
-; 134 occurrences:
+; 133 occurrences:
 ; abc/optimized/ifDec16.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
@@ -156,7 +159,6 @@ entry:
 ; linux/optimized/lbr.ll
 ; linux/optimized/set_memory.ll
 ; llvm/optimized/ConstantFolding.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; nghttp2/optimized/nghttp2_hd_huffman.c.ll
 ; openexr/optimized/ImfHuf.cpp.ll
 ; openexr/optimized/ImfIDManifest.cpp.ll
@@ -281,7 +283,7 @@ entry:
   ret i64 %3
 }
 
-; 26 occurrences:
+; 28 occurrences:
 ; abc/optimized/acecRe.c.ll
 ; abc/optimized/ifDec07.c.ll
 ; abc/optimized/ifDec16.c.ll
@@ -308,6 +310,8 @@ entry:
 ; spike/optimized/vbrev_v.ll
 ; spike/optimized/vrev8_v.ll
 ; wireshark/optimized/packet-tds.c.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
@@ -316,7 +320,7 @@ entry:
   ret i64 %3
 }
 
-; 51 occurrences:
+; 52 occurrences:
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; freetype/optimized/cff.c.ll
@@ -368,6 +372,7 @@ entry:
 ; z3/optimized/bv_internalize.cpp.ll
 ; z3/optimized/sat_cutset.cpp.ll
 ; z3/optimized/theory_bv.cpp.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:

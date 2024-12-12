@@ -8,7 +8,7 @@ define i64 @func000000000000000b(i64 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 36
   %3 = zext i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %0
+  %4 = mul nuw nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -19,7 +19,7 @@ define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 3
   %3 = zext i32 %2 to i64
-  %4 = mul nsw i64 %3, %0
+  %4 = mul nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -31,7 +31,7 @@ define i64 @func000000000000000f(i64 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 6
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %0
+  %4 = mul nuw nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -42,12 +42,11 @@ define i64 @func000000000000000d(i64 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 3
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nsw i64 %3, %0
+  %4 = mul nsw i64 %0, %3
   ret i64 %4
 }
 
-; 5 occurrences:
-; linux/optimized/intel_audio.ll
+; 4 occurrences:
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_sprite.ll
 ; miniaudio/optimized/unity.c.ll
@@ -55,9 +54,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:
-  %2 = mul i32 %1, 5
+  %2 = mul i32 %1, 10
   %3 = zext i32 %2 to i64
-  %4 = mul nuw i64 %3, %0
+  %4 = mul nuw i64 %0, %3
   ret i64 %4
 }
 
@@ -68,7 +67,7 @@ define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 6
   %3 = zext i32 %2 to i64
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   ret i64 %4
 }
 
@@ -79,7 +78,7 @@ define i64 @func000000000000001c(i64 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 12
   %3 = zext nneg i32 %2 to i64
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   ret i64 %4
 }
 
@@ -90,7 +89,7 @@ define i64 @func000000000000001d(i64 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 6
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nsw i64 %3, %0
+  %4 = mul nsw i64 %0, %3
   ret i64 %4
 }
 

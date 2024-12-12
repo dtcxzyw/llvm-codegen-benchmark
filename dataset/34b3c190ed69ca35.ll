@@ -1,17 +1,14 @@
 
-; 6 occurrences:
-; assimp/optimized/MD3Loader.cpp.ll
-; assimp/optimized/MDCLoader.cpp.ll
+; 3 occurrences:
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
-; postgres/optimized/ginfast.ll
 ; qemu/optimized/hw_virtio_virtio-crypto.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000001e8(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 1
-  %5 = add nuw nsw i64 %4, %1
+  %5 = add nuw nsw i64 %1, %4
   %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
@@ -21,7 +18,7 @@ entry:
 ; openusd/optimized/testUsdStageThreading.cpp.ll
 ; qemu/optimized/audio_mixeng.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000108(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw i64 %3, 32
@@ -47,12 +44,26 @@ entry:
 ; llvm/optimized/ThreadSafetyTIL.cpp.ll
 ; opencc/optimized/Config.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000188(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 5
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = icmp ugt i64 %5, %0
+  ret i1 %6
+}
+
+; 3 occurrences:
+; assimp/optimized/MD3Loader.cpp.ll
+; assimp/optimized/MDCLoader.cpp.ll
+; postgres/optimized/ginfast.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001f8(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = shl nuw nsw i64 %3, 3
+  %5 = add nuw nsw i64 %4, %1
+  %6 = icmp samesign ugt i64 %5, %0
   ret i1 %6
 }
 
@@ -62,11 +73,11 @@ entry:
 ; linux/optimized/fse_decompress.ll
 ; zstd/optimized/fse_decompress.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e8(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000001c8(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 2
-  %5 = add nuw i64 %4, %1
+  %5 = add nuw i64 %1, %4
   %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }

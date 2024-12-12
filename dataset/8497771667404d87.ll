@@ -1,12 +1,11 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; git/optimized/transport.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; linux/optimized/yenta_socket.ll
 ; llvm/optimized/ARMWinEH.cpp.ll
 ; llvm/optimized/SemaObjCProperty.cpp.ll
-; qemu/optimized/hw_sd_ssi-sd.c.ll
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/gc.ll
 ; wireshark/optimized/packet-uavcan-can.c.ll
@@ -16,44 +15,7 @@ entry:
   %2 = lshr i32 %1, 11
   %3 = trunc i32 %2 to i16
   %4 = and i16 %3, 512
-  %5 = or disjoint i16 %4, %0
-  ret i16 %5
-}
-
-; 6 occurrences:
-; glslang/optimized/SpvBuilder.cpp.ll
-; image-rs/optimized/254ue5dpb10tdnze.ll
-; llvm/optimized/AttributorAttributes.cpp.ll
-; openexr/optimized/ImfInputFile.cpp.ll
-; php/optimized/phar.ll
-; qemu/optimized/hw_sd_ssi-sd.c.ll
-; Function Attrs: nounwind
-define i16 @func0000000000000005(i16 %0, i32 %1) #0 {
-entry:
-  %2 = lshr i32 %1, 16
-  %3 = trunc nuw i32 %2 to i16
-  %4 = and i16 %3, 4096
-  %5 = or disjoint i16 %4, %0
-  ret i16 %5
-}
-
-; 9 occurrences:
-; linux/optimized/e1000_hw.ll
-; linux/optimized/ich8lan.ll
-; linux/optimized/netdev.ll
-; linux/optimized/rx.ll
-; llvm/optimized/ASTContext.cpp.ll
-; llvm/optimized/DbiStreamBuilder.cpp.ll
-; llvm/optimized/SemaDecl.cpp.ll
-; qemu/optimized/hw_sd_ssi-sd.c.ll
-; sqlite/optimized/sqlite3.ll
-; Function Attrs: nounwind
-define i16 @func0000000000000007(i16 %0, i32 %1) #0 {
-entry:
-  %2 = lshr i32 %1, 17
-  %3 = trunc nuw nsw i32 %2 to i16
-  %4 = and i16 %3, 8192
-  %5 = or disjoint i16 %4, %0
+  %5 = or disjoint i16 %0, %4
   ret i16 %5
 }
 
@@ -73,6 +35,47 @@ entry:
   ret i16 %5
 }
 
+; 11 occurrences:
+; glslang/optimized/SpvBuilder.cpp.ll
+; image-rs/optimized/254ue5dpb10tdnze.ll
+; llvm/optimized/AttributorAttributes.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; openexr/optimized/ImfInputFile.cpp.ll
+; php/optimized/phar.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000005(i16 %0, i32 %1) #0 {
+entry:
+  %2 = lshr i32 %1, 16
+  %3 = trunc nuw i32 %2 to i16
+  %4 = and i16 %3, -256
+  %5 = or disjoint i16 %4, %0
+  ret i16 %5
+}
+
+; 8 occurrences:
+; linux/optimized/e1000_hw.ll
+; linux/optimized/ich8lan.ll
+; linux/optimized/netdev.ll
+; linux/optimized/rx.ll
+; llvm/optimized/ASTContext.cpp.ll
+; llvm/optimized/DbiStreamBuilder.cpp.ll
+; llvm/optimized/SemaDecl.cpp.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000007(i16 %0, i32 %1) #0 {
+entry:
+  %2 = lshr i32 %1, 19
+  %3 = trunc nuw nsw i32 %2 to i16
+  %4 = and i16 %3, 8159
+  %5 = or disjoint i16 %0, %4
+  ret i16 %5
+}
+
 ; 5 occurrences:
 ; linux/optimized/avtab.ll
 ; opencv/optimized/convert.dispatch.cpp.ll
@@ -85,7 +88,7 @@ entry:
   %2 = lshr i32 %1, 16
   %3 = trunc nuw i32 %2 to i16
   %4 = and i16 %3, -32768
-  %5 = or i16 %4, %0
+  %5 = or i16 %0, %4
   ret i16 %5
 }
 

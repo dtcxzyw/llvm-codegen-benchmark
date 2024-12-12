@@ -1,5 +1,5 @@
 
-; 84 occurrences:
+; 85 occurrences:
 ; abc/optimized/cnf_reader.c.ll
 ; abc/optimized/xsatCnfReader.c.ll
 ; arrow/optimized/fast-dtoa.cc.ll
@@ -82,6 +82,7 @@
 ; oiio/optimized/zfile.cpp.ll
 ; openjdk/optimized/awt_ImagingLib.ll
 ; openusd/optimized/fast-dtoa.cc.ll
+; openusd/optimized/warped_motion.c.ll
 ; php/optimized/zend_strtod.ll
 ; ruby/optimized/date_parse.ll
 ; Function Attrs: nounwind
@@ -114,7 +115,8 @@ entry:
   ret i32 %.neg1
 }
 
-; 176 occurrences:
+; 177 occurrences:
+; boost/optimized/to_chars.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
@@ -295,7 +297,7 @@ entry:
 define i32 @func0000000000000015(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1046
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = sub nsw i32 48, %3
   ret i32 %4
 }

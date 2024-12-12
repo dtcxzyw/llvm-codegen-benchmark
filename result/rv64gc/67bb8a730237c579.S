@@ -4,7 +4,7 @@ func0000000000000018:                   # @func0000000000000018
 	srli	a0, a0, 48
 	snez	a0, a0
 	ret
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	add	a0, a0, a1
 	andi	a0, a0, 3
 	addi	a0, a0, -3
@@ -16,21 +16,13 @@ func0000000000000002:                   # @func0000000000000002
 	addi	a0, a0, -3
 	seqz	a0, a0
 	ret
-func0000000000000062:                   # @func0000000000000062
+func00000000000000c2:                   # @func00000000000000c2
 	add	a0, a0, a1
 	andi	a0, a0, 3
 	addi	a0, a0, -1
 	seqz	a0, a0
 	ret
-func0000000000000010:                   # @func0000000000000010
-	add	a0, a0, a1
-	lui	a1, 244141
-	srliw	a0, a0, 9
-	slli	a0, a0, 9
-	addiw	a1, a1, -1537
-	sltu	a0, a1, a0
-	ret
-func0000000000000038:                   # @func0000000000000038
+func0000000000000058:                   # @func0000000000000058
 	add	a0, a0, a1
 	andi	a0, a0, 7
 	snez	a0, a0

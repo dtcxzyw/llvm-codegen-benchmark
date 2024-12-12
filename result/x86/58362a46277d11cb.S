@@ -25,7 +25,7 @@ func0000000000000060:                   # @func0000000000000060
 	andl	$1, %ecx
 	subl	%ecx, %eax
 	retq
-func0000000000000021:                   # @func0000000000000021
+func00000000000000a1:                   # @func00000000000000a1
 	movl	%edi, %eax
 	cmpl	$2, %edx
 	setb	%cl

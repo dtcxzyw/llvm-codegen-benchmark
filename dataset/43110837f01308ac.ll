@@ -11,7 +11,7 @@ entry:
   ret i32 %4
 }
 
-; 27 occurrences:
+; 23 occurrences:
 ; abc/optimized/bblif.c.ll
 ; folly/optimized/AsyncFdSocket.cpp.ll
 ; linux/optimized/af_netlink.ll
@@ -22,10 +22,7 @@ entry:
 ; linux/optimized/io_uring.ll
 ; linux/optimized/iommu-traces.ll
 ; linux/optimized/mei-trace.ll
-; linux/optimized/mmap_lock.ll
-; linux/optimized/net-traces.ll
 ; linux/optimized/nfs4trace.ll
-; linux/optimized/nfstrace.ll
 ; linux/optimized/power-traces.ll
 ; linux/optimized/regmap.ll
 ; linux/optimized/rpm-traces.ll
@@ -34,7 +31,6 @@ entry:
 ; linux/optimized/softirq.ll
 ; linux/optimized/swiotlb.ll
 ; linux/optimized/thermal_core.ll
-; linux/optimized/virtgpu_trace_points.ll
 ; linux/optimized/workqueue.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; opencv/optimized/matmul.dispatch.cpp.ll

@@ -6,14 +6,6 @@ func000000000000002f:                   # @func000000000000002f
 	andl	$1, %esi
 	leal	9(%rsi,%rax), %eax
 	retq
-func00000000000000c5:                   # @func00000000000000c5
-	xorl	%eax, %eax
-	testl	%edx, %edx
-	setle	%al
-	subl	%eax, %edi
-	andl	$1, %esi
-	leal	2(%rdi,%rsi), %eax
-	retq
 func000000000000014f:                   # @func000000000000014f
 	xorl	%eax, %eax
 	cmpl	$6, %edx
@@ -27,12 +19,6 @@ func000000000000010f:                   # @func000000000000010f
 	sbbl	$-1, %edi
 	andl	$1, %esi
 	leal	5(%rdi,%rsi), %eax
-	retq
-func000000000000008f:                   # @func000000000000008f
-	andl	$1, %esi
-	cmpl	$2, %edx
-	adcl	%edi, %esi
-	leal	1(%rsi), %eax
 	retq
 func0000000000000020:                   # @func0000000000000020
 	leal	2(%rdi), %ecx

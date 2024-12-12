@@ -13,7 +13,7 @@ func000000000000002b:                   # @func000000000000002b
 func0000000000000028:                   # @func0000000000000028
 	shrq	$32, %rdi
 	vmovd	%edi, %xmm1
-	vcmpeqss	%xmm0, %xmm1, %k0
+	vcmpeqss	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 func000000000000002a:                   # @func000000000000002a
@@ -43,7 +43,7 @@ func0000000000000023:                   # @func0000000000000023
 func0000000000000027:                   # @func0000000000000027
 	shrq	$32, %rdi
 	vmovd	%edi, %xmm1
-	vcmpneqss	%xmm0, %xmm1, %k0
+	vcmpneqss	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 func0000000000000025:                   # @func0000000000000025

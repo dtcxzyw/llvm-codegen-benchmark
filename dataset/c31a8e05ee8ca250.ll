@@ -17,13 +17,13 @@
 ; wireshark/optimized/packet-mbtcp.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i16 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000078(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = zext i16 %1 to i32
   %5 = add nuw nsw i32 %4, %3
   %6 = zext i16 %0 to i32
-  %7 = icmp ugt i32 %5, %6
+  %7 = icmp samesign ugt i32 %5, %6
   ret i1 %7
 }
 
@@ -31,7 +31,7 @@ entry:
 ; linux/optimized/sock_reuseport.ll
 ; linux/optimized/tcp_output.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i16 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000061(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = zext i16 %1 to i32

@@ -1,6 +1,5 @@
 
-; 2 occurrences:
-; llvm/optimized/ParseDeclCXX.cpp.ll
+; 1 occurrences:
 ; ruby/optimized/string.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i1 %1, i32 %2) #0 {
@@ -14,13 +13,13 @@ entry:
 ; 10 occurrences:
 ; cmake/optimized/zstd_compress.c.ll
 ; flac/optimized/foreign_metadata.c.ll
-; linux/optimized/capability.ll
 ; linux/optimized/hw-me.ll
 ; linux/optimized/intel_ddi.ll
 ; postgres/optimized/date.ll
 ; regex-rs/optimized/154fzydpihuymjog.ll
 ; wireshark/optimized/file.c.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i1 %1, i32 %2) #0 {

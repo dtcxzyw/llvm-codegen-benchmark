@@ -1,20 +1,5 @@
 
-; 5 occurrences:
-; linux/optimized/gup.ll
-; mitsuba3/optimized/ply.cpp.ll
-; tev/optimized/EmptyImageLoader.cpp.ll
-; tev/optimized/PfmImageLoader.cpp.ll
-; tev/optimized/main.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000001(i64 %0, i1 %1, i64 %2) #0 {
-entry:
-  %3 = select i1 %1, i64 9223372036854775807, i64 %2
-  %4 = add i64 %0, 1
-  %5 = icmp eq i64 %4, %3
-  ret i1 %5
-}
-
-; 33 occurrences:
+; 32 occurrences:
 ; abseil-cpp/optimized/examples_test.cc.ll
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; abseil-cpp/optimized/log_message.cc.ll
@@ -26,7 +11,6 @@ entry:
 ; coreutils-rs/optimized/qcad8r5ga44hvbl.ll
 ; cpython/optimized/compile.ll
 ; cpython/optimized/sysmodule.ll
-; eastl/optimized/BenchmarkSort.cpp.ll
 ; grpc/optimized/compression_internal.cc.ll
 ; grpc/optimized/ev_epoll1_linux.cc.ll
 ; grpc/optimized/ev_poll_posix.cc.ll
@@ -49,7 +33,7 @@ entry:
 ; wireshark/optimized/wireless_timeline.cpp.ll
 ; xgboost/optimized/rank_metric.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 16, i64 %2
   %4 = add nuw nsw i64 %0, 1
@@ -57,7 +41,9 @@ entry:
   ret i1 %5
 }
 
-; 297 occurrences:
+; 294 occurrences:
+; boost/optimized/channel.ll
+; boost/optimized/main.ll
 ; darktable/optimized/MosDecoder.cpp.ll
 ; glslang/optimized/Initialize.cpp.ll
 ; glslang/optimized/ParseContextBase.cpp.ll
@@ -160,7 +146,6 @@ entry:
 ; mold/optimized/main.cc.SH4.cc.ll
 ; mold/optimized/main.cc.SPARC64.cc.ll
 ; mold/optimized/main.cc.X86_64.cc.ll
-; mold/optimized/main.cc.ll
 ; mold/optimized/passes.cc.ALPHA.cc.ll
 ; mold/optimized/passes.cc.ARM32.cc.ll
 ; mold/optimized/passes.cc.ARM64.cc.ll
@@ -273,13 +258,10 @@ entry:
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -338,7 +320,6 @@ entry:
 ; nlohmann_json/optimized/unit-regression2.cpp.ll
 ; soc-simulator/optimized/verilated.ll
 ; spike/optimized/disasm.ll
-; spike/optimized/interactive.ll
 ; spike/optimized/socketif.ll
 ; yalantinglibs/optimized/FieldGenerator.cpp.ll
 ; yalantinglibs/optimized/benchmark.cpp.ll
@@ -356,16 +337,127 @@ entry:
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 15, i64 %2
-  %4 = add nsw i64 %0, 5
+  %4 = add nsw i64 %0, 1
   %5 = icmp ugt i64 %4, %3
   ret i1 %5
 }
 
-; 231 occurrences:
-; arrow/optimized/utf8.cc.ll
+; 325 occurrences:
+; boost/optimized/addr2line.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/authority_view.ll
+; boost/optimized/basic.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/channel.ll
+; boost/optimized/chrono.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/config_file.ll
+; boost/optimized/contract.ll
+; boost/optimized/converter.ll
+; boost/optimized/date_time.ll
+; boost/optimized/date_time_format_parser.ll
+; boost/optimized/dynamic_binding.ll
+; boost/optimized/encoding.ll
+; boost/optimized/env.ll
+; boost/optimized/environment.ll
+; boost/optimized/except.ll
+; boost/optimized/exception.ll
+; boost/optimized/exceptions.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/ext.ll
+; boost/optimized/extensions.ll
+; boost/optimized/format_parser.ll
+; boost/optimized/generator.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/graphml.ll
+; boost/optimized/gregorian.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/gzip.ll
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
+; boost/optimized/instantiate_predef_macros.ll
+; boost/optimized/ipv4_address.ll
+; boost/optimized/ipv6_address.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/locale_data.ll
+; boost/optimized/localization_backend.ll
+; boost/optimized/main.ll
+; boost/optimized/named_scope_format_parser.ll
+; boost/optimized/numeric.ll
+; boost/optimized/object_name.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/operations.ll
+; boost/optimized/params_encoded_view.ll
+; boost/optimized/params_view.ll
+; boost/optimized/parsers.ll
+; boost/optimized/path.ll
+; boost/optimized/path_traits.ll
+; boost/optimized/pattern.ll
+; boost/optimized/pct_string_view.ll
+; boost/optimized/pid.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/process.ll
+; boost/optimized/process_cpu_clocks.ll
+; boost/optimized/random_device.ll
+; boost/optimized/run_exe.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/segments_encoded_view.ll
+; boost/optimized/segments_view.ll
+; boost/optimized/shell.ll
+; boost/optimized/spawn.ll
+; boost/optimized/split.ll
+; boost/optimized/src.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/static_url.ll
+; boost/optimized/sub_launcher.ll
+; boost/optimized/syslog_backend.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/target.ll
+; boost/optimized/terminate.ll
+; boost/optimized/test_codecvt.ll
+; boost/optimized/test_convert.ll
+; boost/optimized/test_filebuf.ll
+; boost/optimized/test_fs.ll
+; boost/optimized/test_fstream.ll
+; boost/optimized/test_stackstring.ll
+; boost/optimized/test_system.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/text_wiarchive.ll
+; boost/optimized/thread.ll
+; boost/optimized/thread_clock.ll
+; boost/optimized/throw_error.ll
+; boost/optimized/topology.ll
+; boost/optimized/url.ll
+; boost/optimized/url_base.ll
+; boost/optimized/url_view.ll
+; boost/optimized/vformat.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
+; boost/optimized/xml_grammar.ll
+; boost/optimized/xml_iarchive.ll
+; boost/optimized/xml_wgrammar.ll
+; boost/optimized/xml_wiarchive.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -417,8 +509,6 @@ entry:
 ; folly/optimized/LogConfigParser.cpp.ll
 ; folly/optimized/LogLevel.cpp.ll
 ; folly/optimized/LogMessage.cpp.ll
-; folly/optimized/LogName.cpp.ll
-; folly/optimized/LoggerDB.cpp.ll
 ; folly/optimized/MacAddress.cpp.ll
 ; folly/optimized/MallctlHelper.cpp.ll
 ; folly/optimized/NestedCommandLineApp.cpp.ll
@@ -434,7 +524,6 @@ entry:
 ; folly/optimized/StandardLogHandlerFactory.cpp.ll
 ; folly/optimized/String.cpp.ll
 ; folly/optimized/Subprocess.cpp.ll
-; folly/optimized/SymbolizedFrame.cpp.ll
 ; folly/optimized/TimeUtil.cpp.ll
 ; folly/optimized/Uri.cpp.ll
 ; folly/optimized/Zlib.cpp.ll
@@ -448,8 +537,6 @@ entry:
 ; hyperscan/optimized/literals.cpp.ll
 ; hyperscan/optimized/ng_corpus_generator.cpp.ll
 ; hyperscan/optimized/ue2string.cpp.ll
-; jsonnet/optimized/desugarer.cpp.ll
-; jsonnet/optimized/parser.cpp.ll
 ; jsonnet/optimized/string_utils.cpp.ll
 ; jsonnet/optimized/vm.cpp.ll
 ; minetest/optimized/CB3DMeshFileLoader.cpp.ll
@@ -513,7 +600,6 @@ entry:
 ; mold/optimized/passes.cc.SPARC64.cc.ll
 ; mold/optimized/passes.cc.X86_64.cc.ll
 ; nix/optimized/args.ll
-; nix/optimized/attr-path.ll
 ; nix/optimized/attrs.ll
 ; nix/optimized/binary-cache-store.ll
 ; nix/optimized/build.ll
@@ -527,11 +613,8 @@ entry:
 ; nix/optimized/derivations.ll
 ; nix/optimized/develop.ll
 ; nix/optimized/diff-closures.ll
-; nix/optimized/eval-cache.ll
-; nix/optimized/fetchMercurial.ll
 ; nix/optimized/fetchTree.ll
 ; nix/optimized/fetchers.ll
-; nix/optimized/fetchurl.ll
 ; nix/optimized/file-descriptor.ll
 ; nix/optimized/file-system.ll
 ; nix/optimized/filetransfer.ll
@@ -540,7 +623,6 @@ entry:
 ; nix/optimized/gc.ll
 ; nix/optimized/get-drvs.ll
 ; nix/optimized/git-utils.ll
-; nix/optimized/git.ll
 ; nix/optimized/github.ll
 ; nix/optimized/hilite.ll
 ; nix/optimized/indirect.ll
@@ -549,15 +631,11 @@ entry:
 ; nix/optimized/json-utils.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/lockfile.ll
-; nix/optimized/mercurial.ll
 ; nix/optimized/names.ll
 ; nix/optimized/nar-accessor.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/parsed-derivations.ll
-; nix/optimized/parser-tab.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -567,7 +645,6 @@ entry:
 ; nix/optimized/store-api.ll
 ; nix/optimized/terminal.ll
 ; nix/optimized/util.ll
-; nix/optimized/why-depends.ll
 ; nlohmann_json/optimized/unit-comparison.cpp.ll
 ; nlohmann_json/optimized/unit-regression2.cpp.ll
 ; ozz-animation/optimized/import2ozz_track.cc.ll
@@ -575,15 +652,12 @@ entry:
 ; quantlib/optimized/dataparsers.ll
 ; soc-simulator/optimized/verilated.ll
 ; spike/optimized/disasm.ll
-; spike/optimized/interactive.ll
 ; spike/optimized/isa_parser.ll
-; spike/optimized/processor.ll
 ; spike/optimized/socketif.ll
 ; spike/optimized/spike-log-parser.ll
 ; xgboost/optimized/config.cc.ll
 ; xgboost/optimized/input_split_base.cc.ll
 ; xgboost/optimized/local_filesys.cc.ll
-; yalantinglibs/optimized/MessageGenerator.cpp.ll
 ; yalantinglibs/optimized/channel.cpp.ll
 ; yalantinglibs/optimized/chat_room.cpp.ll
 ; yalantinglibs/optimized/client_pool.cpp.ll
@@ -596,6 +670,7 @@ entry:
 ; yalantinglibs/optimized/file_server.cpp.ll
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, i1 %1, i64 %2) #0 {
 entry:
@@ -605,7 +680,8 @@ entry:
   ret i1 %5
 }
 
-; 19 occurrences:
+; 20 occurrences:
+; boost/optimized/environment.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -637,15 +713,15 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/linux-user_syscall.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000025(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %0, -1
-  %4 = icmp ule i64 %3, %2
+  %4 = icmp uge i64 %2, %3
   %5 = select i1 %1, i1 true, i1 %4
   ret i1 %5
 }
 
-; 78 occurrences:
+; 81 occurrences:
 ; duckdb/optimized/ub_duckdb_adbc.cpp.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
@@ -715,7 +791,6 @@ entry:
 ; luau/optimized/Unifier.cpp.ll
 ; luau/optimized/Unifier2.cpp.ll
 ; luau/optimized/ValueTracking.cpp.ll
-; node/optimized/simdutf.ll
 ; redis/optimized/malloc_io.ll
 ; redis/optimized/malloc_io.sym.ll
 ; regex-rs/optimized/v8mcpnwv4glojx2.ll
@@ -724,22 +799,38 @@ entry:
 ; xgboost/optimized/gbtree.cc.ll
 ; xgboost/optimized/regression_obj.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
+; zed-rs/optimized/diex23lur9mz31ml2mnxprojh.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %0, 1
-  %4 = icmp eq i64 %3, %2
+  %4 = icmp eq i64 %2, %3
   %not. = xor i1 %1, true
   %5 = select i1 %not., i1 %4, i1 false
   ret i1 %5
 }
 
-; 3 occurrences:
+; 1 occurrences:
+; boost/optimized/get_turns.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000021(i64 %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = select i1 %1, i64 0, i64 %2
+  %4 = add nsw i64 %0, 1
+  %5 = icmp eq i64 %4, %3
+  ret i1 %5
+}
+
+; 4 occurrences:
 ; graphviz/optimized/shapes.c.ll
 ; grpc/optimized/channelz.cc.ll
 ; hermes/optimized/UTF8.cpp.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 -1, i64 %2
   %4 = add nuw i64 %0, 1
@@ -750,7 +841,7 @@ entry:
 ; 1 occurrences:
 ; lodepng/optimized/lodepng.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func000000000000004c(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 1, i64 %2
   %4 = add nuw i64 %0, 1
@@ -758,10 +849,11 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000048(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 8, i64 %2
   %4 = add nuw i64 %0, 5
@@ -770,35 +862,51 @@ entry:
 }
 
 ; 1 occurrences:
-; redis/optimized/dict.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000049(i64 %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = select i1 %1, i64 0, i64 %2
-  %4 = add nsw i64 %0, 1
-  %5 = icmp slt i64 %4, %3
+  %3 = add nuw i64 %0, 1
+  %4 = icmp ule i64 %2, %3
+  %5 = select i1 %1, i1 true, i1 %4
   ret i1 %5
 }
 
 ; 2 occurrences:
 ; cpython/optimized/_randommodule.ll
-; node/optimized/simdutf.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = select i1 %1, i64 15, i64 %2
-  %4 = add i64 %0, 1
-  %5 = icmp ult i64 %4, %3
+  %3 = add i64 %0, -1
+  %4 = icmp ugt i64 %2, %3
+  %not. = xor i1 %1, true
+  %5 = select i1 %not., i1 %4, i1 false
+  ret i1 %5
+}
+
+; 5 occurrences:
+; linux/optimized/gup.ll
+; tev/optimized/EmptyImageLoader.cpp.ll
+; tev/optimized/PfmImageLoader.cpp.ll
+; tev/optimized/main.cpp.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(i64 %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %0, -1
+  %4 = icmp eq i64 %2, %3
+  %5 = select i1 %1, i1 undef, i1 %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; brotli/optimized/decode.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000064(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %0, 8
-  %4 = icmp ult i64 %3, %2
+  %4 = icmp ugt i64 %2, %3
   %not. = xor i1 %1, true
   %5 = select i1 %not., i1 %4, i1 false
   ret i1 %5
@@ -807,18 +915,18 @@ entry:
 ; 1 occurrences:
 ; openblas/optimized/dgemv_n.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000074(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 2048, i64 %2
   %4 = add nuw nsw i64 %0, 4
-  %5 = icmp slt i64 %4, %3
+  %5 = icmp samesign ult i64 %4, %3
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; xgboost/optimized/simple_dmatrix.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 -1, i64 %2
   %4 = add nsw i64 %0, -1

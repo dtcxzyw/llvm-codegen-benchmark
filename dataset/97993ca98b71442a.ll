@@ -1,5 +1,6 @@
 
-; 99 occurrences:
+; 100 occurrences:
+; boost/optimized/alloc_lib.ll
 ; cpython/optimized/listobject.ll
 ; darktable/optimized/histogram.c.ll
 ; darktable/optimized/introspection_ashift.c.ll

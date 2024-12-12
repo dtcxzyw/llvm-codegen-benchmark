@@ -1,5 +1,5 @@
 
-; 423 occurrences:
+; 468 occurrences:
 ; abc/optimized/abcDsd.c.ll
 ; abc/optimized/abcExtract.c.ll
 ; abc/optimized/abcUtil.c.ll
@@ -245,7 +245,6 @@
 ; llvm/optimized/PrologEpilogInserter.cpp.ll
 ; llvm/optimized/RDFRegisters.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RISCVMatInt.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
@@ -392,16 +391,54 @@
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha256_hw.ll
 ; openssl/optimized/liblegacy-lib-cipher_rc4_hmac_md5_hw.ll
 ; openusd/optimized/catmarkPatchBuilder.cpp.ll
-; openusd/optimized/cdef_block.c.ll
 ; openusd/optimized/level.cpp.ll
 ; openusd/optimized/patchBuilder.cpp.ll
 ; openusd/optimized/refinerSurfaceFactory.cpp.ll
 ; pbrt-v4/optimized/integrator.cpp.ll
 ; pbrt-v4/optimized/subsurface.cpp.ll
 ; pbrt-v4/optimized/surfscatter.cpp.ll
+; php/optimized/array.ll
+; php/optimized/basic_functions.ll
+; php/optimized/block_pass.ll
+; php/optimized/dfa_pass.ll
+; php/optimized/file.ll
+; php/optimized/formatted_print.ll
+; php/optimized/http_fopen_wrapper.ll
 ; php/optimized/md5.ll
+; php/optimized/node.ll
+; php/optimized/pdo_stmt.ll
+; php/optimized/phar_object.ll
+; php/optimized/php_pcre.ll
+; php/optimized/phpdbg.ll
+; php/optimized/phpdbg_bp.ll
+; php/optimized/phpdbg_frame.ll
+; php/optimized/phpdbg_watch.ll
+; php/optimized/proc_open.ll
 ; php/optimized/spl_dllist.ll
+; php/optimized/spl_fixedarray.ll
+; php/optimized/spl_observer.ll
+; php/optimized/sqlite3.ll
+; php/optimized/streams.ll
+; php/optimized/streamsfuncs.ll
+; php/optimized/string.ll
+; php/optimized/tokenizer.ll
+; php/optimized/url.ll
+; php/optimized/var.ll
+; php/optimized/zend_API.ll
 ; php/optimized/zend_alloc.ll
+; php/optimized/zend_attributes.ll
+; php/optimized/zend_builtin_functions.ll
+; php/optimized/zend_cfg.ll
+; php/optimized/zend_compile.ll
+; php/optimized/zend_execute.ll
+; php/optimized/zend_fibers.ll
+; php/optimized/zend_generators.ll
+; php/optimized/zend_hash.ll
+; php/optimized/zend_inheritance.ll
+; php/optimized/zend_jit.ll
+; php/optimized/zend_observer.ll
+; php/optimized/zend_opcode.ll
+; php/optimized/zend_optimizer.ll
 ; postgres/optimized/regexec.ll
 ; postgres/optimized/reorderbuffer.ll
 ; postgres/optimized/sha2.ll
@@ -423,6 +460,14 @@
 ; wireshark/optimized/packet-iso8583.c.ll
 ; z3/optimized/sat_local_search.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
+; zstd/optimized/zstd_v01.c.ll
+; zstd/optimized/zstd_v02.c.ll
+; zstd/optimized/zstd_v03.c.ll
+; zstd/optimized/zstd_v04.c.ll
+; zstd/optimized/zstd_v05.c.ll
+; zstd/optimized/zstd_v06.c.ll
+; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0) #0 {
 entry:
@@ -432,9 +477,8 @@ entry:
   ret i64 %3
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; hermes/optimized/StringPrimitive.cpp.ll
-; linux/optimized/fs-writeback.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0) #0 {
 entry:

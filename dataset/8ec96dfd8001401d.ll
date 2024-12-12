@@ -1,5 +1,5 @@
 
-; 92 occurrences:
+; 91 occurrences:
 ; abc/optimized/extraUtilMemory.c.ll
 ; abc/optimized/fraImp.c.ll
 ; abc/optimized/mem.c.ll
@@ -80,7 +80,6 @@
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; bullet3/optimized/btSoftMultiBodyDynamicsWorld.ll
 ; bullet3/optimized/btSoftRigidDynamicsWorld.ll
-; bullet3/optimized/btSoftSoftCollisionAlgorithm.ll
 ; bullet3/optimized/btSphereBoxCollisionAlgorithm.ll
 ; bullet3/optimized/btSphereSphereCollisionAlgorithm.ll
 ; bullet3/optimized/btSphereTriangleCollisionAlgorithm.ll
@@ -102,7 +101,7 @@ entry:
   ret i64 %5
 }
 
-; 397 occurrences:
+; 388 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Fxch.c.ll
@@ -147,7 +146,6 @@ entry:
 ; abc/optimized/abcNtbdd.c.ll
 ; abc/optimized/abcNtk.c.ll
 ; abc/optimized/abcOrchestration.c.ll
-; abc/optimized/abcOrder.c.ll
 ; abc/optimized/abcPart.c.ll
 ; abc/optimized/abcPrint.c.ll
 ; abc/optimized/abcQbf.c.ll
@@ -191,7 +189,6 @@ entry:
 ; abc/optimized/acecPolyn.c.ll
 ; abc/optimized/acecPool.c.ll
 ; abc/optimized/acecRe.c.ll
-; abc/optimized/acecSt.c.ll
 ; abc/optimized/acecTree.c.ll
 ; abc/optimized/acecXor.c.ll
 ; abc/optimized/aigDfs.c.ll
@@ -251,7 +248,6 @@ entry:
 ; abc/optimized/cecSynth.c.ll
 ; abc/optimized/cgtAig.c.ll
 ; abc/optimized/cgtDecide.c.ll
-; abc/optimized/cgtMan.c.ll
 ; abc/optimized/cmdPlugin.c.ll
 ; abc/optimized/cnfFast.c.ll
 ; abc/optimized/cnfMan.c.ll
@@ -363,7 +359,6 @@ entry:
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/ifMan.c.ll
 ; abc/optimized/ifReduce.c.ll
-; abc/optimized/ifSeq.c.ll
 ; abc/optimized/ifTest.c.ll
 ; abc/optimized/ifTruth.c.ll
 ; abc/optimized/ifTune.c.ll
@@ -401,7 +396,6 @@ entry:
 ; abc/optimized/llb4Sweep.c.ll
 ; abc/optimized/lpkCore.c.ll
 ; abc/optimized/ltl_parser.c.ll
-; abc/optimized/mapperVec.c.ll
 ; abc/optimized/mfsDiv.c.ll
 ; abc/optimized/mioParse.c.ll
 ; abc/optimized/mioSop.c.ll
@@ -413,7 +407,6 @@ entry:
 ; abc/optimized/mpmMan.c.ll
 ; abc/optimized/mpmPre.c.ll
 ; abc/optimized/msatVec.c.ll
-; abc/optimized/nmApi.c.ll
 ; abc/optimized/nwkAig.c.ll
 ; abc/optimized/nwkFlow.c.ll
 ; abc/optimized/nwkMap.c.ll
@@ -452,7 +445,6 @@ entry:
 ; abc/optimized/saigWnd.c.ll
 ; abc/optimized/satInterP.c.ll
 ; abc/optimized/satProof.c.ll
-; abc/optimized/satSolver2i.c.ll
 ; abc/optimized/sbd.c.ll
 ; abc/optimized/sbdCore.c.ll
 ; abc/optimized/sbdCut.c.ll
@@ -470,7 +462,6 @@ entry:
 ; abc/optimized/simUtils.c.ll
 ; abc/optimized/sscCore.c.ll
 ; abc/optimized/sscSat.c.ll
-; abc/optimized/sscUtil.c.ll
 ; abc/optimized/sswIslands.c.ll
 ; abc/optimized/sswPairs.c.ll
 ; abc/optimized/sswRarity.c.ll
@@ -493,7 +484,6 @@ entry:
 ; abc/optimized/wlcReadSmt.c.ll
 ; abc/optimized/wlcReadVer.c.ll
 ; abc/optimized/wlcSim.c.ll
-; abc/optimized/wlcUif.c.ll
 ; abc/optimized/wlnNtk.c.ll
 ; abc/optimized/wlnRead.c.ll
 ; abc/optimized/wlnRetime.c.ll
@@ -510,7 +500,7 @@ entry:
   ret i64 %5
 }
 
-; 40 occurrences:
+; 36 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/abcOdc.c.ll
@@ -531,15 +521,12 @@ entry:
 ; abc/optimized/giaMinLut2.c.ll
 ; abc/optimized/giaMuxes.c.ll
 ; abc/optimized/giaSimBase.c.ll
-; abc/optimized/giaSupMin.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/ifDec16.c.ll
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/kitIsop.c.ll
 ; abc/optimized/kitTruth.c.ll
-; abc/optimized/lpkMan.c.ll
 ; abc/optimized/luckySwap.c.ll
-; abc/optimized/mfsSat.c.ll
 ; abc/optimized/mioParse.c.ll
 ; abc/optimized/rpo.c.ll
 ; abc/optimized/satTruth.c.ll
@@ -550,7 +537,6 @@ entry:
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
 ; libwebp/optimized/backward_references_cost_enc.c.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
-; redis/optimized/module.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000019(i32 %0, i32 %1) #0 {
 entry:

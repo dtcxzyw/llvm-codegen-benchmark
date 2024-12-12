@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 20 occurrences:
 ; abc/optimized/ivyDsd.c.ll
 ; cmake/optimized/RegularExpression.cxx.ll
 ; cmake/optimized/url.c.ll
@@ -10,7 +10,6 @@
 ; icu/optimized/uspoof.ll
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/hda_codec.ll
-; linux/optimized/hdac_regmap.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/libahci.ll
 ; linux/optimized/mlme.ll

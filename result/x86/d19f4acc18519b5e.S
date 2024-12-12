@@ -7,11 +7,11 @@ func0000000000000004:                   # @func0000000000000004
 	retq
 func0000000000000001:                   # @func0000000000000001
 	movzbl	%sil, %eax
-	decl	%edi
-	cmpl	%edi, %eax
+	incl	%eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	andl	$448, %esi                      # imm = 0x1C0
 	subl	%esi, %edi
 	incl	%edi

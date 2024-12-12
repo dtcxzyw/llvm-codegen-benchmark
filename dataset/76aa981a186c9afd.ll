@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 27 occurrences:
 ; cpython/optimized/dtoa.ll
 ; cpython/optimized/floatobject.ll
 ; graphviz/optimized/actions.c.ll
@@ -11,6 +11,7 @@
 ; jq/optimized/jv_dtoa.ll
 ; libevent/optimized/evdns.c.ll
 ; libquic/optimized/dtoa.cc.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; nuttx/optimized/lib_lgamma.c.ll
 ; opencv/optimized/daisy.cpp.ll

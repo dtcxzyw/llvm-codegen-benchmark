@@ -1,5 +1,5 @@
 
-; 84 occurrences:
+; 82 occurrences:
 ; abc/optimized/acecCo.c.ll
 ; abc/optimized/acecPolyn.c.ll
 ; abc/optimized/acecRe.c.ll
@@ -28,7 +28,6 @@
 ; linux/optimized/boot.ll
 ; linux/optimized/client.ll
 ; linux/optimized/ehci-hcd.ll
-; linux/optimized/exprep.ll
 ; linux/optimized/inftrees.ll
 ; linux/optimized/intel_display_irq.ll
 ; linux/optimized/intel_tc.ll
@@ -38,7 +37,6 @@
 ; linux/optimized/tcp_ipv4.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/vgaarb.ll
-; linux/optimized/vsmp_64.ll
 ; llvm/optimized/AArch64Disassembler.cpp.ll
 ; llvm/optimized/AArch64SLSHardening.cpp.ll
 ; llvm/optimized/AddressSanitizer.cpp.ll

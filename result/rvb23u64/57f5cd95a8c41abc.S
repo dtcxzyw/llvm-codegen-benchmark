@@ -48,6 +48,12 @@ func000000000000002c:                   # @func000000000000002c
 	fle.d	a1, fa1, fa0
 	or	a0, a0, a1
 	ret
+func000000000000008a:                   # @func000000000000008a
+	fmv.d.x	fa5, zero
+	feq.d	a0, fa2, fa5
+	fle.d	a1, fa0, fa1
+	or	a0, a0, a1
+	ret
 func000000000000003d:                   # @func000000000000003d
 	fmv.d.x	fa5, zero
 	fle.d	a0, fa5, fa2
@@ -61,11 +67,11 @@ func0000000000000012:                   # @func0000000000000012
 	flt.d	a1, fa0, fa1
 	or	a0, a0, a1
 	ret
-.LCPI9_0:
+.LCPI10_0:
 	.quad	0x3feccccccccccccd              # double 0.90000000000000002
 func0000000000000044:                   # @func0000000000000044
-	lui	a0, %hi(.LCPI9_0)
-	fld	fa5, %lo(.LCPI9_0)(a0)
+	lui	a0, %hi(.LCPI10_0)
+	fld	fa5, %lo(.LCPI10_0)(a0)
 	flt.d	a0, fa5, fa2
 	flt.d	a1, fa1, fa0
 	or	a0, a0, a1

@@ -12,7 +12,7 @@ entry:
   %3 = zext i16 %2 to i32
   %4 = shl i32 %3, %1
   %5 = trunc i32 %4 to i16
-  %6 = or i16 %5, %0
+  %6 = or i16 %0, %5
   %7 = trunc i16 %6 to i8
   ret i8 %7
 }

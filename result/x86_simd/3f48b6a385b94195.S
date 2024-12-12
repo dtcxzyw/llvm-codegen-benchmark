@@ -6,7 +6,7 @@ func0000000000000010:                   # @func0000000000000010
 	vpaddd	%ymm0, %ymm1, %ymm0
 	retq
 .LCPI1_0:
-	.long	1249902592                      # 0x4a800000
+	.long	7                               # 0x7
 func000000000000001c:                   # @func000000000000001c
 	vpord	.LCPI1_0(%rip){1to8}, %ymm2, %ymm2
 	vpsubd	%ymm1, %ymm2, %ymm1

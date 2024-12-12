@@ -10,14 +10,15 @@ func0000000000000000:                   # @func0000000000000000
 	slli	a1, a1, 26
 	sub	a0, a0, a1
 	ret
-func000000000000000f:                   # @func000000000000000f
-	andi	a1, a1, 30
-	sub	a0, a0, a1
-	ret
 func0000000000000007:                   # @func0000000000000007
 	andi	a1, a1, 255
 	sub	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
+	sub	a0, a0, a1
+	ret
+func000000000000000f:                   # @func000000000000000f
+	slli	a1, a1, 40
+	srli	a1, a1, 40
 	sub	a0, a0, a1
 	ret

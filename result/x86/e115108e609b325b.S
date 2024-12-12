@@ -1,4 +1,4 @@
-func0000000000000354:                   # @func0000000000000354
+func00000000000006a4:                   # @func00000000000006a4
 	sarq	$3, %rdx
 	subq	%rdx, %rsi
 	incq	%rsi
@@ -6,7 +6,7 @@ func0000000000000354:                   # @func0000000000000354
 	cmpq	%rsi, %rdi
 	setb	%al
 	retq
-func00000000000003f4:                   # @func00000000000003f4
+func00000000000007e4:                   # @func00000000000007e4
 	sarq	$3, %rdx
 	subq	%rdx, %rsi
 	addq	$256, %rsi                      # imm = 0x100
@@ -14,7 +14,7 @@ func00000000000003f4:                   # @func00000000000003f4
 	cmpq	%rsi, %rdi
 	setb	%al
 	retq
-func0000000000000254:                   # @func0000000000000254
+func00000000000004a4:                   # @func00000000000004a4
 	sarq	$3, %rdx
 	subq	%rdx, %rsi
 	incq	%rsi
@@ -22,7 +22,7 @@ func0000000000000254:                   # @func0000000000000254
 	cmpq	%rsi, %rdi
 	setb	%al
 	retq
-func00000000000002f4:                   # @func00000000000002f4
+func00000000000005e4:                   # @func00000000000005e4
 	sarq	%rdx
 	subq	%rdx, %rsi
 	incq	%rsi
@@ -30,7 +30,7 @@ func00000000000002f4:                   # @func00000000000002f4
 	cmpq	%rsi, %rdi
 	setb	%al
 	retq
-func00000000000003d4:                   # @func00000000000003d4
+func00000000000007a4:                   # @func00000000000007a4
 	sarq	$6, %rdx
 	subq	%rdx, %rsi
 	incq	%rsi
@@ -38,7 +38,7 @@ func00000000000003d4:                   # @func00000000000003d4
 	cmpq	%rsi, %rdi
 	setb	%al
 	retq
-func00000000000002d4:                   # @func00000000000002d4
+func00000000000005a4:                   # @func00000000000005a4
 	sarq	$3, %rdx
 	subq	%rdx, %rsi
 	incq	%rsi

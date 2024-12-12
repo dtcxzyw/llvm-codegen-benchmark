@@ -1,8 +1,7 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; clamav/optimized/bytecode_vm.c.ll
 ; faiss/optimized/hamming.cpp.ll
-; linux/optimized/readdir.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; minetest/optimized/serverenvironment.cpp.ll
 ; quickjs/optimized/quickjs.ll

@@ -1,8 +1,15 @@
-func0000000000000006:                   // @func0000000000000006
+func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
 	tst	w2, #0xff
 	csel	x8, xzr, x1, eq
 	add	x0, x8, x0, lsl #1
+	ret
+                                        // -- End function
+func0000000000000006:                   // @func0000000000000006
+// %bb.0:                               // %entry
+	tst	w2, #0xff
+	csel	x8, xzr, x1, eq
+	add	x0, x8, x0
 	ret
                                         // -- End function
 func0000000000000032:                   // @func0000000000000032
@@ -13,7 +20,7 @@ func0000000000000032:                   // @func0000000000000032
 	add	x0, x8, x0, lsl #5
 	ret
                                         // -- End function
-func0000000000000012:                   // @func0000000000000012
+func0000000000000013:                   // @func0000000000000013
 // %bb.0:                               // %entry
 	and	w8, w2, #0xff
 	cmp	w8, #253

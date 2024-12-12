@@ -8,7 +8,7 @@ func0000000000000017:                   # @func0000000000000017
 	.long	64                              # 0x40
 func0000000000000000:                   # @func0000000000000000
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1 # ymm1 = ~ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI2_0:
@@ -27,7 +27,7 @@ func0000000000000030:                   # @func0000000000000030
 	.long	12                              # 0xc
 func0000000000000035:                   # @func0000000000000035
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1 # ymm1 = ~ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpaddd	.LCPI4_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 func0000000000000001:                   # @func0000000000000001

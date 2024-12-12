@@ -1,6 +1,7 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
+; boost/optimized/default_filter_factory.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; openusd/optimized/faceVertex.cpp.ll
@@ -12,8 +13,9 @@ entry:
   ret i8 %3
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
+; boost/optimized/default_filter_factory.ll
 ; bullet3/optimized/btConvexConvexAlgorithm.ll
 ; gromacs/optimized/gmx_hbond.cpp.ll
 ; gromacs/optimized/minimize.cpp.ll
@@ -39,8 +41,9 @@ entry:
   ret i8 %3
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; arrow/optimized/compare.cc.ll
+; boost/optimized/default_filter_factory.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; opencv/optimized/edgeboxes.cpp.ll
 ; opencv/optimized/ptsetreg.cpp.ll
@@ -57,7 +60,8 @@ entry:
   ret i8 %3
 }
 
-; 10 occurrences:
+; 11 occurrences:
+; boost/optimized/default_filter_factory.ll
 ; darktable/optimized/introspection_diffuse.c.ll
 ; gromacs/optimized/domdec.cpp.ll
 ; gromacs/optimized/exponentialmovingaverage.cpp.ll
@@ -76,7 +80,8 @@ entry:
   ret i8 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/default_filter_factory.ll
 ; duckdb/optimized/comparison_operators.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000010(float %0, float %1) #0 {
@@ -86,7 +91,8 @@ entry:
   ret i8 %3
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/default_filter_factory.ll
 ; duckdb/optimized/comparison_operators.cpp.ll
 ; gromacs/optimized/gmx_covar.cpp.ll
 ; gromacs/optimized/topsort.cpp.ll

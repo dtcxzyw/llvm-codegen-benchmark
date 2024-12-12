@@ -4,5 +4,5 @@ func0000000000000000:                   # @func0000000000000000
 	lui	a0, 278880
 	fmv.w.x	fa1, a0
 .LBB0_2:                                # %entry
-	fmul.s	fa0, fa1, fa0
+	fmul.s	fa0, fa0, fa1
 	ret

@@ -24,7 +24,7 @@ entry:
   %3 = zext i8 %2 to i32
   %4 = mul nsw i32 %3, -256
   %5 = sub nsw i32 %4, %1
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 

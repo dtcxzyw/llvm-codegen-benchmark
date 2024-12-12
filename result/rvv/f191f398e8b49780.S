@@ -38,7 +38,7 @@ func00000000000000fd:                   # @func00000000000000fd
 	vnsrl.wi	v9, v12, 0
 	vnsrl.wi	v12, v10, 0
 	vadd.vv	v9, v12, v9
-	vmul.vv	v8, v9, v8
+	vmul.vv	v8, v8, v9
 	ret
 func00000000000000ec:                   # @func00000000000000ec
 	vsetivli	zero, 4, e32, m1, ta, ma

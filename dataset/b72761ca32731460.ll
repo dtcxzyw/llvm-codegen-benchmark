@@ -17,7 +17,7 @@ entry:
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003c1(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000781(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = add nuw nsw i32 %0, 1
@@ -50,13 +50,13 @@ entry:
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; llvm/optimized/X86LowerTileCopy.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 64
   %3 = lshr i32 %2, 6
   %4 = add i32 %0, 64
   %5 = lshr i32 %4, 6
-  %6 = icmp ugt i32 %5, %3
+  %6 = icmp samesign ugt i32 %5, %3
   ret i1 %6
 }
 
@@ -82,13 +82,13 @@ entry:
 ; llvm/optimized/StackSlotColoring.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000118(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = lshr i32 %2, 6
   %4 = add nuw i32 %0, 1
   %5 = lshr i32 %4, 6
-  %6 = icmp ugt i32 %5, %3
+  %6 = icmp samesign ugt i32 %5, %3
   ret i1 %6
 }
 

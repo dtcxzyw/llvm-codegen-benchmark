@@ -6,7 +6,7 @@
 ; nlohmann_json/optimized/unit.cpp.ll
 ; wireshark/optimized/g711.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i8 %1, i32 %2) #0 {
+define i32 @func0000000000000026(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 0, %2
   %4 = icmp slt i8 %1, 0

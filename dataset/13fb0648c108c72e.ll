@@ -1,7 +1,8 @@
 
-; 18 occurrences:
+; 22 occurrences:
 ; git/optimized/transport.ll
 ; libzmq/optimized/socket_poller.cpp.ll
+; libzmq/optimized/zmq.cpp.ll
 ; linux/optimized/intel_sdvo.ll
 ; linux/optimized/phy_device.ll
 ; linux/optimized/r8169_main.ll
@@ -12,9 +13,12 @@
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
 ; llvm/optimized/cc1as_main.cpp.ll
+; lvgl/optimized/lv_canvas.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_image.ll
 ; minetest/optimized/CImage.cpp.ll
 ; mold/optimized/arch-arm32.cc.ll
-; php/optimized/pcre2_maketables.ll
 ; postgres/optimized/heapam.ll
 ; wasmedge/optimized/inode-linux.cpp.ll
 ; wireshark/optimized/packet-stun.c.ll

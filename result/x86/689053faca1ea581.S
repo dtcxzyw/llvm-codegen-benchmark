@@ -18,8 +18,3 @@ func000000000000000d:                   # @func000000000000000d
 	addl	%edi, %esi
 	movzwl	%si, %eax
 	retq
-func000000000000000c:                   # @func000000000000000c
-	imull	%edx, %esi
-	addl	%edi, %esi
-	movzwl	%si, %eax
-	retq

@@ -5,7 +5,7 @@
 define i64 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr i32 %2, 19
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %.neg = sub i32 %4, %0
   %5 = add i32 %.neg, 64
   %6 = zext i32 %5 to i64
@@ -114,7 +114,7 @@ entry:
 define i64 @func000000000000002b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr i32 %2, 19
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %.neg = sub i32 %4, %0
   %5 = add i32 %.neg, 64
   %6 = zext nneg i32 %5 to i64
@@ -294,7 +294,7 @@ entry:
 define i64 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = ashr i32 %2, 19
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %.neg = sub i32 %4, %0
   %5 = add i32 %.neg, 64
   %6 = zext i32 %5 to i64

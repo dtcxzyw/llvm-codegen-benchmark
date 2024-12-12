@@ -1,4 +1,4 @@
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 29
 	li	a0, 32
@@ -11,7 +11,7 @@ func0000000000000014:                   # @func0000000000000014
 	vmul.vx	v8, v8, a0
 	vmsltu.vv	v0, v8, v10
 	ret
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v8, v8, 3
@@ -24,7 +24,7 @@ func0000000000000034:                   # @func0000000000000034
 	vmul.vx	v8, v8, a0
 	vmsltu.vv	v0, v8, v10
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v10, v10, 26
 	li	a0, 32
@@ -37,7 +37,7 @@ func0000000000000011:                   # @func0000000000000011
 	vmul.vx	v8, v8, a0
 	vmseq.vv	v0, v8, v10
 	ret
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v8, v8, 4
@@ -52,7 +52,7 @@ func0000000000000036:                   # @func0000000000000036
 	ret
 .LCPI4_0:
 	.quad	-8198552921648689607            # 0x8e38e38e38e38e39
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	li	a0, 32
 	lui	a1, %hi(.LCPI4_0)
 	ld	a1, %lo(.LCPI4_0)(a1)
@@ -63,7 +63,7 @@ func0000000000000038:                   # @func0000000000000038
 	vmul.vx	v8, v8, a1
 	vmsltu.vv	v0, v10, v8
 	ret
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v8, v8, 3
@@ -76,7 +76,7 @@ func0000000000000031:                   # @func0000000000000031
 	vmul.vx	v8, v8, a0
 	vmseq.vv	v0, v8, v10
 	ret
-func000000000000003b:                   # @func000000000000003b
+func000000000000006b:                   # @func000000000000006b
 	li	a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v8, v8, 5

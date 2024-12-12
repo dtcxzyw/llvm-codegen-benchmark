@@ -131,14 +131,14 @@ entry:
 }
 
 ; 1 occurrences:
-; z3/optimized/watch_list.cpp.ll
+; linux/optimized/swiotlb.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000000a(i64 %0) #0 {
+define i32 @func0000000000000001(i64 %0) #0 {
 entry:
-  %1 = lshr i64 %0, 1
-  %2 = trunc nuw i64 %1 to i32
-  %3 = add nuw i32 %2, 3
-  %4 = and i32 %3, -4
+  %1 = trunc i64 %0 to i32
+  %2 = lshr i32 %1, 11
+  %3 = add nuw nsw i32 %2, 127
+  %4 = and i32 %3, 127
   ret i32 %4
 }
 

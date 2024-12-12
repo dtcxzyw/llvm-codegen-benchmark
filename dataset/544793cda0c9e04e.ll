@@ -6,7 +6,7 @@
 ; openusd/optimized/bignum.cc.ll
 ; postgres/optimized/dependencies.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i64 %0, i16 %1) #0 {
+define i1 @func00000000000000e6(i64 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
   %3 = add nsw i64 %2, -1

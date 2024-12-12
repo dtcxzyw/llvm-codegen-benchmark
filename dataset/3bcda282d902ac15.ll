@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; bullet3/optimized/b3DNA.ll
 ; bullet3/optimized/btCollisionWorldImporter.ll
 ; c3c/optimized/asm_target.c.ll
@@ -16,12 +16,13 @@
 ; glslang/optimized/PpScanner.cpp.ll
 ; glslang/optimized/PpTokens.cpp.ll
 ; glslang/optimized/iomapper.cpp.ll
+; lvgl/optimized/lv_lru.ll
 ; yosys/optimized/genrtlil.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i32
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   %4 = mul i32 %3, 16777619
   ret i32 %4
 }

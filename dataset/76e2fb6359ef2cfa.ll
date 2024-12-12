@@ -14,9 +14,12 @@ entry:
   ret i32 %7
 }
 
-; 11 occurrences:
+; 14 occurrences:
 ; linux/optimized/intel_color.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
@@ -47,7 +50,7 @@ entry:
   %4 = shl nuw i32 %3, 16
   %5 = zext i16 %1 to i32
   %6 = or disjoint i32 %4, %5
-  %7 = or i32 %6, %0
+  %7 = or i32 %0, %6
   ret i32 %7
 }
 

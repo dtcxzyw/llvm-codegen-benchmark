@@ -43,32 +43,32 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
-; bullet3/optimized/btBatchedConstraints.ll
-; clamav/optimized/7zBuf2.c.ll
-; linux/optimized/md.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add i64 %0, %1
-  %3 = lshr i64 %2, 63
-  %4 = add i64 %3, %2
-  ret i64 %4
-}
-
-; 5 occurrences:
+; 6 occurrences:
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time.cc.ll
 ; abseil-cpp/optimized/time_test.cc.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
+; php/optimized/dow.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000b(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, %1
   %3 = lshr i64 %2, 2
   %4 = add nuw nsw i64 %3, %2
+  ret i64 %4
+}
+
+; 3 occurrences:
+; bullet3/optimized/btBatchedConstraints.ll
+; clamav/optimized/7zBuf2.c.ll
+; linux/optimized/md.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %0, %1
+  %3 = lshr i64 %2, 4
+  %4 = add i64 %3, %2
   ret i64 %4
 }
 

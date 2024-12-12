@@ -4,17 +4,17 @@ func0000000000000001:                   # @func0000000000000001
 	orl	%esi, %edi
 	orb	%dil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
-	andl	$15, %edx
-	cmpl	$7, %edx
-	setae	%al
-	orl	%esi, %edi
-	orb	%dil, %al
-	retq
 func000000000000000c:                   # @func000000000000000c
 	movl	%edi, %eax
-	shrl	$13, %edx
+	shrl	$26, %edx
 	andl	$1, %edx
 	orl	%esi, %eax
 	orl	%edx, %eax
+	retq
+func0000000000000018:                   # @func0000000000000018
+	andl	$252, %edx
+	cmpl	$196, %edx
+	setae	%al
+	orl	%esi, %edi
+	orb	%dil, %al
 	retq

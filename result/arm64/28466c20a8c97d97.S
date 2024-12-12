@@ -6,7 +6,7 @@ func0000000000000010:                   // @func0000000000000010
 	add	x0, x9, x8
 	ret
                                         // -- End function
-func000000000000001a:                   // @func000000000000001a
+func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
 	ubfx	w8, w2, #10, #1
 	add	x8, x1, w8, uxtw #3

@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 12 occurrences:
 ; folly/optimized/Conv.cpp.ll
 ; libwebp/optimized/frame_dec.c.ll
 ; linux/optimized/crash_core.ll
@@ -10,6 +10,8 @@
 ; tokio-rs/optimized/1k577qo9p6sw2dlc.ll
 ; tokio-rs/optimized/1rl1r5ea6bzd5c9z.ll
 ; tokio-rs/optimized/5cdni0zdopovrkgi.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
+; zed-rs/optimized/4q1bnadqr1o107uase7gmrd0k.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1, i1 %2) #0 {
 entry:

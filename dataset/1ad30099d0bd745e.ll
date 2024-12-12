@@ -11,11 +11,12 @@ define i1 @func0000000000000018(i1 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = icmp ne i16 %2, 0
   %4 = select i1 %1, i1 true, i1 %3
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; hwloc/optimized/topology-xml.ll
 ; openjdk/optimized/classFileParser.ll
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; Function Attrs: nounwind
@@ -23,7 +24,7 @@ define i1 @func0000000000000008(i1 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = icmp ult i16 %2, 49
   %4 = select i1 %1, i1 true, i1 %3
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

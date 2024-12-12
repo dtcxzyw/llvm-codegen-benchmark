@@ -28,7 +28,7 @@ func0000000000000008:                   # @func0000000000000008
 	.long	256                             # 0x100
 .LCPI3_1:
 	.long	8355840                         # 0x7f8000
-func0000000000000021:                   # @func0000000000000021
+func00000000000000a1:                   # @func00000000000000a1
 	vpcmpltud	.LCPI3_0(%rip){1to8}, %ymm1, %k0
 	vpmovm2d	%k0, %ymm1
 	vpsrld	$31, %ymm1, %ymm1
@@ -45,7 +45,7 @@ func000000000000000b:                   # @func000000000000000b
 .LCPI5_0:
 	.long	1                               # 0x1
 .LCPI5_1:
-	.long	4                               # 0x4
+	.long	2                               # 0x2
 func0000000000000060:                   # @func0000000000000060
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqd	%ymm2, %ymm1, %ymm1

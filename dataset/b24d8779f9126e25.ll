@@ -1,5 +1,5 @@
 
-; 63 occurrences:
+; 68 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; arrow/optimized/bitmap_ops.cc.ll
 ; coreutils-rs/optimized/4xxa0w30rbcuabi4.ll
@@ -11,9 +11,6 @@
 ; duckdb/optimized/ub_duckdb_common_types_row.cpp.ll
 ; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
 ; eastl/optimized/TestBitset.cpp.ll
-; freetype/optimized/cff.c.ll
-; freetype/optimized/type1.c.ll
-; freetype/optimized/type1cid.c.ll
 ; hdf5/optimized/H5Tbit.c.ll
 ; html5ever-rs/optimized/19ci5iy6gkdi8zuj.ll
 ; html5ever-rs/optimized/1yuzfqpt8ffhwz7d.ll
@@ -63,6 +60,14 @@
 ; velox/optimized/Not.cpp.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/9jkx32jki2vcljeo0xctxc8uw.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i64 %0) #0 {
 entry:

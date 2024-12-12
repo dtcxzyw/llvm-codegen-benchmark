@@ -5,7 +5,7 @@
 ; postgres/optimized/bool.ll
 ; softposit-rs/optimized/xadcarspawrhwb8.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000198(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000318(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = icmp ne i64 %0, 0
@@ -17,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/type.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000022(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000042(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
   %3 = icmp eq i64 %0, 0
@@ -29,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/bool.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000058(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
   %3 = icmp ne i64 %0, 0

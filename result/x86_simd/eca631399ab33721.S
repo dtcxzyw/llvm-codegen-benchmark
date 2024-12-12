@@ -37,13 +37,3 @@ func0000000000000003:                   # @func0000000000000003
 	vpsllvd	%ymm0, %ymm1, %ymm0
 	vpternlogq	$15, %ymm0, %ymm0, %ymm0 # ymm0 = ~ymm0
 	retq
-.LCPI4_0:
-	.long	6                               # 0x6
-.LCPI4_1:
-	.long	3                               # 0x3
-func0000000000000000:                   # @func0000000000000000
-	vpmulld	.LCPI4_0(%rip){1to8}, %ymm0, %ymm0
-	vpbroadcastd	.LCPI4_1(%rip), %ymm1   # ymm1 = [3,3,3,3,3,3,3,3]
-	vpsllvd	%ymm0, %ymm1, %ymm0
-	vpternlogq	$15, %ymm0, %ymm0, %ymm0 # ymm0 = ~ymm0
-	retq

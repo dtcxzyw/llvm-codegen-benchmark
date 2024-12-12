@@ -1,6 +1,5 @@
 
-; 101 occurrences:
-; abc/optimized/fxuPair.c.ll
+; 97 occurrences:
 ; abc/optimized/resSim.c.ll
 ; assimp/optimized/XGLLoader.cpp.ll
 ; c3c/optimized/parse_stmt.c.ll
@@ -14,7 +13,6 @@
 ; gromacs/optimized/computeglobalselement.cpp.ll
 ; gromacs/optimized/forceelement.cpp.ll
 ; gromacs/optimized/update_vv.cpp.ll
-; grpc/optimized/socket_utils_linux.cc.ll
 ; grpc/optimized/tcp_socket_utils.cc.ll
 ; hwloc/optimized/lstopo-lstopo-ascii.ll
 ; hwloc/optimized/lstopo_no_graphics-lstopo-ascii.ll
@@ -23,7 +21,6 @@
 ; imgui/optimized/imgui_demo.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
-; libquic/optimized/gzlib.c.ll
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/g4x_dp.ll
@@ -99,7 +96,6 @@
 ; z3/optimized/subpaving_mpff.cpp.ll
 ; z3/optimized/subpaving_mpfx.cpp.ll
 ; z3/optimized/subpaving_mpq.cpp.ll
-; zlib/optimized/gzlib.c.ll
 ; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i1 %1) #0 {

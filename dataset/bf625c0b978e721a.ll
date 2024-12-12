@@ -1,5 +1,5 @@
 
-; 186 occurrences:
+; 187 occurrences:
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/bblif.c.ll
 ; abc/optimized/blocksort.c.ll
@@ -12,6 +12,9 @@
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/nwkMerge.c.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/ipv6_address_rule.ll
+; boost/optimized/src.ll
 ; casadi/optimized/tinyxml2.cpp.ll
 ; cmake/optimized/blocksort.c.ll
 ; darktable/optimized/introspection_defringe.c.ll
@@ -28,7 +31,6 @@
 ; gromacs/optimized/forcetable.cpp.ll
 ; gromacs/optimized/redistribute.cpp.ll
 ; gromacs/optimized/slasq3.cpp.ll
-; gromacs/optimized/slasq5.cpp.ll
 ; gromacs/optimized/slasq6.cpp.ll
 ; hyperscan/optimized/Parser.cpp.ll
 ; icu/optimized/derb.ll
@@ -81,7 +83,6 @@
 ; openblas/optimized/dbdsvdx.c.ll
 ; openblas/optimized/dlasq2.c.ll
 ; openblas/optimized/dlasq5.c.ll
-; openblas/optimized/dlasq6.c.ll
 ; openblas/optimized/dlatrs3.c.ll
 ; opencv/optimized/cv2.cpp.ll
 ; opencv/optimized/hash_tsdf.cpp.ll
@@ -195,7 +196,23 @@ entry:
   ret i64 %3
 }
 
-; 85 occurrences:
+; 6 occurrences:
+; abc/optimized/luckyFast16.c.ll
+; gromacs/optimized/dlasq2.cpp.ll
+; gromacs/optimized/slasq2.cpp.ll
+; openmpi/optimized/tm_bucket.ll
+; openssl/optimized/ca_internals_test-bin-ca.ll
+; openssl/optimized/openssl-bin-ca.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(i32 %0) #0 {
+entry:
+  %1 = shl nuw i32 %0, 1
+  %2 = add i32 %1, 5
+  %3 = sext i32 %2 to i64
+  ret i64 %3
+}
+
+; 75 occurrences:
 ; abc/optimized/abcRestruct.c.ll
 ; abc/optimized/decFactor.c.ll
 ; abc/optimized/fretMain.c.ll
@@ -210,21 +227,16 @@ entry:
 ; arrow/optimized/metadata_internal.cc.ll
 ; bullet3/optimized/b3PrefixScanCL.ll
 ; bullet3/optimized/b3PrefixScanFloat4CL.ll
-; bullet3/optimized/btDantzigLCP.ll
 ; bullet3/optimized/btHingeConstraint.ll
 ; bullet3/optimized/btMultiBody.ll
 ; darktable/optimized/email.c.ll
 ; freetype/optimized/psaux.c.ll
-; git/optimized/pq.ll
-; gromacs/optimized/dlasq1.cpp.ll
 ; gromacs/optimized/gmx_filter.cpp.ll
-; gromacs/optimized/slasq1.cpp.ll
 ; icu/optimized/collationsettings.ll
 ; icu/optimized/uset.ll
 ; jq/optimized/jv_parse.ll
 ; libwebp/optimized/alpha_processing_sse2.c.ll
 ; linux/optimized/mmconfig-shared.ll
-; linux/optimized/mmconfig_64.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
@@ -232,10 +244,7 @@ entry:
 ; meshlab/optimized/solver.cpp.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
-; ncnn/optimized/convolution_x86_avx2.cpp.ll
-; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
 ; ncnn/optimized/convolution_x86_fma.cpp.ll
-; ncnn/optimized/convolution_x86_xop.cpp.ll
 ; ncnn/optimized/convolutiondepthwise_x86_avx.cpp.ll
 ; ncnn/optimized/convolutiondepthwise_x86_avx512.cpp.ll
 ; ncnn/optimized/convolutiondepthwise_x86_fma.cpp.ll
@@ -249,7 +258,6 @@ entry:
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
 ; opencv/optimized/zmaxheap.cpp.ll
-; openjdk/optimized/TransformHelper.ll
 ; openjdk/optimized/library_call.ll
 ; openjdk/optimized/rect.ll
 ; openjdk/optimized/samplePriorityQueue.ll
@@ -269,7 +277,6 @@ entry:
 ; postgres/optimized/like.ll
 ; postgres/optimized/quote.ll
 ; postgres/optimized/slru.ll
-; proj/optimized/initcache.cpp.ll
 ; pybind11/optimized/test_numpy_dtypes.cpp.ll
 ; quantlib/optimized/faurersg.ll
 ; recastnavigation/optimized/DetourObstacleAvoidance.cpp.ll
@@ -290,7 +297,7 @@ entry:
   ret i64 %3
 }
 
-; 20 occurrences:
+; 19 occurrences:
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; gromacs/optimized/dlarrbx.cpp.ll
 ; gromacs/optimized/dlasq2.cpp.ll
@@ -304,7 +311,6 @@ entry:
 ; openblas/optimized/dlar1v.c.ll
 ; openblas/optimized/dlarrj.c.ll
 ; openblas/optimized/dtgex2.c.ll
-; opencv/optimized/demosaicing.cpp.ll
 ; openjdk/optimized/continuationFreezeThaw.ll
 ; openusd/optimized/cdef.c.ll
 ; postgres/optimized/geo_ops.ll
@@ -434,20 +440,6 @@ define i64 @func0000000000000009(i32 %0) #0 {
 entry:
   %1 = shl nuw i32 %0, 1
   %2 = add nsw i32 %1, 64
-  %3 = sext i32 %2 to i64
-  ret i64 %3
-}
-
-; 4 occurrences:
-; abc/optimized/luckyFast16.c.ll
-; gromacs/optimized/dlasq2.cpp.ll
-; gromacs/optimized/slasq2.cpp.ll
-; openmpi/optimized/tm_bucket.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000008(i32 %0) #0 {
-entry:
-  %1 = shl nuw i32 %0, 1
-  %2 = add i32 %1, -1
   %3 = sext i32 %2 to i64
   ret i64 %3
 }

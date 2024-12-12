@@ -9,7 +9,7 @@ define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 21
   %3 = mul nsw i64 %2, 666643
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -59,7 +59,7 @@ define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 32
   %3 = mul nsw i64 %2, 3
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -78,9 +78,19 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
-; cpython/optimized/_zoneinfo.ll
+; 1 occurrences:
 ; darktable/optimized/DeflateDecompressor.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000017(i64 %0, i64 %1) #0 {
+entry:
+  %2 = ashr exact i64 %1, 32
+  %3 = mul nsw i64 %2, 3
+  %4 = add nuw nsw i64 %0, %3
+  ret i64 %4
+}
+
+; 3 occurrences:
+; cpython/optimized/_zoneinfo.ll
 ; openspiel/optimized/chess.cc.ll
 ; postgres/optimized/date.ll
 ; Function Attrs: nounwind
@@ -89,17 +99,6 @@ entry:
   %2 = ashr exact i64 %1, 32
   %3 = mul nsw i64 %2, 3
   %4 = add nsw i64 %3, %0
-  ret i64 %4
-}
-
-; 1 occurrences:
-; darktable/optimized/DeflateDecompressor.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000017(i64 %0, i64 %1) #0 {
-entry:
-  %2 = ashr exact i64 %1, 32
-  %3 = mul nsw i64 %2, 3
-  %4 = add nuw nsw i64 %3, %0
   ret i64 %4
 }
 

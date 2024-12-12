@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 22 occurrences:
 ; assimp/optimized/BlenderDNA.cpp.ll
 ; assimp/optimized/BlenderScene.cpp.ll
 ; bullet3/optimized/b3File.ll
@@ -18,19 +18,21 @@
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/2ta8crc4qgl9bp8t.ll
 ; z3/optimized/sat_cutset.cpp.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/6pnl53dvchkj2615muwn1tztk.ll
+; zed-rs/optimized/8y2n395sf7zaarcc3wfqoazez.ll
 ; zxing/optimized/QRFormatInformation.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000b(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 32
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = and i64 %0, 65534
   %6 = or disjoint i64 %5, %4
   ret i64 %6
 }
 
 ; 57 occurrences:
-; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/darLib.c.ll
 ; abc/optimized/ifDec07.c.ll
 ; abseil-cpp/optimized/civil_time.cc.ll
@@ -57,13 +59,11 @@ entry:
 ; libsodium/optimized/libsse2_la-poly1305_sse2.ll
 ; linux/optimized/io_apic.ll
 ; linux/optimized/libata-core.ll
-; linux/optimized/reciprocal_div.ll
 ; llvm/optimized/CallLowering.cpp.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; llvm/optimized/LowLevelTypeUtils.cpp.ll
 ; llvm/optimized/PassBuilderPipelines.cpp.ll
 ; llvm/optimized/VPlan.cpp.ll
-; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; mold/optimized/input-sections.cc.ARM32.cc.ll
 ; mold/optimized/input-sections.cc.I386.cc.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
@@ -82,16 +82,19 @@ entry:
 ; rust-analyzer-rs/optimized/58xaix613yc6ngmz.ll
 ; rust-analyzer-rs/optimized/5amh0jp09v3snpag.ll
 ; rust-analyzer-rs/optimized/p6tl2rrfx0amk3d.ll
+; turborepo-rs/optimized/b9mxqsqxupsuldn67x7vgrl1g.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
 ; wasmtime-rs/optimized/2ta8crc4qgl9bp8t.ll
 ; z3/optimized/sat_cutset.cpp.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/6pnl53dvchkj2615muwn1tztk.ll
 ; zxing/optimized/QRFormatInformation.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 40
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = and i64 %1, 1970324836974592
   %6 = or disjoint i64 %4, %5
   ret i64 %6
@@ -110,7 +113,7 @@ entry:
 define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 63
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = and i64 %1, 2305843009213693952
   %6 = or disjoint i64 %4, %5
   ret i64 %6
@@ -129,7 +132,7 @@ entry:
   ret i64 %6
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; jemalloc/optimized/arena.ll
 ; jemalloc/optimized/arena.pic.ll
 ; jemalloc/optimized/arena.sym.ll
@@ -137,21 +140,21 @@ entry:
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; redis/optimized/arena.ll
 ; redis/optimized/arena.sym.ll
+; tokio-rs/optimized/46apu3hqx0w07xoc.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; z3/optimized/sat_cutset.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 19
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = and i64 %1, 576460752303423488
   %6 = or i64 %4, %5
   ret i64 %6
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; llvm/optimized/TypePrinter.cpp.ll
-; tokio-rs/optimized/46apu3hqx0w07xoc.ll
 ; z3/optimized/sat_cutset.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000e(i64 %0, i64 %1, i64 %2) #0 {
@@ -169,7 +172,7 @@ entry:
 define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 9
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = and i64 %1, -9223372036854775808
   %6 = or i64 %4, %5
   ret i64 %6

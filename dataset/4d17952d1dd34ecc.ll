@@ -3,12 +3,12 @@
 ; clamav/optimized/pe_icons.c.ll
 ; minetest/optimized/content_mapblock.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000174(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002f4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = call i32 @llvm.abs.i32(i32 %2, i1 true)
   %4 = call i32 @llvm.abs.i32(i32 %1, i1 true)
   %5 = add nuw nsw i32 %4, %3
-  %6 = icmp ult i32 %5, %0
+  %6 = icmp samesign ult i32 %5, %0
   ret i1 %6
 }
 
@@ -19,7 +19,7 @@ declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 ; draco/optimized/sequential_normal_attribute_decoder.cc.ll
 ; draco/optimized/sequential_normal_attribute_encoder.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000168(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002c8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call i32 @llvm.abs.i32(i32 %2, i1 true)
   %4 = tail call i32 @llvm.abs.i32(i32 %1, i1 true)
@@ -33,12 +33,12 @@ entry:
 ; zxing/optimized/DMDetector.cpp.ll
 ; zxing/optimized/ODReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000178(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002f8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call i32 @llvm.abs.i32(i32 %2, i1 true)
   %4 = tail call i32 @llvm.abs.i32(i32 %1, i1 true)
   %5 = add nuw nsw i32 %4, %3
-  %6 = icmp ugt i32 %5, %0
+  %6 = icmp samesign ugt i32 %5, %0
   ret i1 %6
 }
 
@@ -47,7 +47,7 @@ entry:
 ; wireshark/optimized/drag_drop_toolbar.cpp.ll
 ; wireshark/optimized/proto_tree.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000028a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000050a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = tail call noundef i32 @llvm.abs.i32(i32 %2, i1 false)
   %4 = tail call noundef i32 @llvm.abs.i32(i32 %1, i1 false)

@@ -1,7 +1,8 @@
 
-; 69 occurrences:
+; 68 occurrences:
 ; abc/optimized/ioWriteBook.c.ll
-; cmake/optimized/cmCTest.cxx.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; cmake/optimized/cmCTestRunTest.cxx.ll
 ; cvc5/optimized/sygus_unif_rl.cpp.ll
 ; darktable/optimized/filtering.c.ll
@@ -44,8 +45,6 @@
 ; php/optimized/zend_operators.ll
 ; postgres/optimized/costsize.ll
 ; proj/optimized/4D_api.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
-; proj/optimized/factory.cpp.ll
 ; proj/optimized/isea.cpp.ll
 ; proj/optimized/ocea.cpp.ll
 ; proj/optimized/som.cpp.ll

@@ -1,9 +1,9 @@
 
 ; 4 occurrences:
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
-; luajit/optimized/lj_udata.ll
-; luajit/optimized/lj_udata_dyn.ll
 ; wasmtime-rs/optimized/2dcgoeji2y2j2nl0.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
@@ -55,15 +55,13 @@ entry:
   ret ptr %5
 }
 
-; 8 occurrences:
+; 6 occurrences:
 ; luajit/optimized/lj_api.ll
 ; luajit/optimized/lj_api_dyn.ll
 ; luajit/optimized/lj_cconv.ll
 ; luajit/optimized/lj_cconv_dyn.ll
 ; luajit/optimized/lj_dispatch.ll
 ; luajit/optimized/lj_dispatch_dyn.ll
-; luajit/optimized/lj_obj.ll
-; luajit/optimized/lj_obj_dyn.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:

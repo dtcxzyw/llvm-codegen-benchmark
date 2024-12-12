@@ -1,6 +1,7 @@
 
-; 31 occurrences:
+; 32 occurrences:
 ; abseil-cpp/optimized/chi_square.cc.ll
+; boost/optimized/expand.ll
 ; cpython/optimized/dtoa.ll
 ; g2o/optimized/optimization_algorithm_levenberg.cpp.ll
 ; graphviz/optimized/smart_ini_x.c.ll
@@ -35,11 +36,13 @@
 define i1 @func0000000000000002(double %0, double %1) #0 {
 entry:
   %2 = fsub double 5.000000e-01, %1
-  %3 = fcmp ogt double %2, %0
+  %3 = fcmp olt double %0, %2
   ret i1 %3
 }
 
-; 9 occurrences:
+; 11 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; openblas/optimized/dbbcsd.c.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; postgres/optimized/mcv.ll
@@ -53,7 +56,7 @@ entry:
 define i1 @func0000000000000004(double %0, double %1) #0 {
 entry:
   %2 = fsub double 1.000000e+00, %1
-  %3 = fcmp olt double %2, %0
+  %3 = fcmp ogt double %0, %2
   ret i1 %3
 }
 
@@ -64,7 +67,7 @@ entry:
 define i1 @func000000000000000d(double %0, double %1) #0 {
 entry:
   %2 = fsub double 1.000000e+00, %1
-  %3 = fcmp ule double %2, %0
+  %3 = fcmp uge double %0, %2
   ret i1 %3
 }
 
@@ -74,7 +77,7 @@ entry:
 define i1 @func000000000000000b(double %0, double %1) #0 {
 entry:
   %2 = fsub double 1.000000e+00, %1
-  %3 = fcmp uge double %2, %0
+  %3 = fcmp ule double %0, %2
   ret i1 %3
 }
 
@@ -84,7 +87,7 @@ entry:
 define i1 @func000000000000000c(double %0, double %1) #0 {
 entry:
   %2 = fsub double 0x400921FB54442D18, %1
-  %3 = fcmp ole double %2, %0
+  %3 = fcmp oge double %0, %2
   ret i1 %3
 }
 

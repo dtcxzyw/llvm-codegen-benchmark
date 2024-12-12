@@ -71,7 +71,7 @@ entry:
 ; rust-analyzer-rs/optimized/4h2i4ex5hsghl46o.ll
 ; rust-analyzer-rs/optimized/4ij72b67lj8l3d8u.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = icmp eq i64 %0, %1
@@ -79,12 +79,10 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
-; opencv/optimized/matmul.dispatch.cpp.ll
+; 1 occurrences:
 ; quantlib/optimized/overnightindexedcouponpricer.ll
-; z3/optimized/array_rewriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = icmp ult i64 %0, %1
@@ -92,11 +90,10 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; quantlib/optimized/basisincompleteordered.ll
-; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func000000000000004c(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = icmp ne i64 %0, %1
@@ -128,8 +125,7 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; llvm/optimized/LegalizerHelper.cpp.ll
+; 1 occurrences:
 ; llvm/optimized/TargetLowering.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i64 %1, i8 %2) #0 {
@@ -163,11 +159,12 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; coreutils-rs/optimized/4xxa0w30rbcuabi4.ll
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
+; zed-rs/optimized/5tjk7umffytrthtuv35pacndm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = icmp ugt i64 %0, %1
@@ -175,24 +172,25 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; postgres/optimized/xlog.ll
+; 2 occurrences:
+; typst-rs/optimized/59tuvc5m3xlovl3o.ll
+; zed-rs/optimized/5tjk7umffytrthtuv35pacndm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000029(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000045(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
-  %4 = icmp uge i64 %0, %1
+  %4 = icmp ule i64 %0, %1
   %5 = and i1 %4, %3
   ret i1 %5
 }
 
 ; 1 occurrences:
-; typst-rs/optimized/59tuvc5m3xlovl3o.ll
+; postgres/optimized/xlog.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000025(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000049(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
-  %4 = icmp ule i64 %0, %1
+  %4 = icmp uge i64 %0, %1
   %5 = and i1 %4, %3
   ret i1 %5
 }

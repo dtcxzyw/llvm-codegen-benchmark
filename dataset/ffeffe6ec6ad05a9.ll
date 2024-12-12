@@ -8,11 +8,11 @@ define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %1, %0
   %3 = and i32 %2, 3
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
-; 28 occurrences:
+; 27 occurrences:
 ; darktable/optimized/RawImageDataU16.cpp.ll
 ; darktable/optimized/TableLookUp.cpp.ll
 ; darktable/optimized/pdf.c.ll
@@ -38,7 +38,6 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wireshark/optimized/packet-alljoyn.c.ll
-; wireshark/optimized/packet-gsm_r_uus1.c.ll
 ; wireshark/optimized/packet-icmpv6.c.ll
 ; wireshark/optimized/packet-rtps.c.ll
 ; Function Attrs: nounwind
@@ -46,7 +45,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 %1, %0
   %3 = and i32 %2, 7
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -62,7 +61,8 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/to_chars.ll
 ; ncnn/optimized/lstm_x86_avx512.cpp.ll
 ; opencv/optimized/connectedcomponents.cpp.ll
 ; Function Attrs: nounwind
@@ -89,7 +89,7 @@ define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %1, %0
   %3 = and i32 %2, -4
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 

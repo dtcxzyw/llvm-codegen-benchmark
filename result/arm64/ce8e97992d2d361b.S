@@ -1,58 +1,40 @@
-func00000000000000a4:                   // @func00000000000000a4
+func0000000000000154:                   // @func0000000000000154
 // %bb.0:                               // %entry
-	mov	x8, #-2                         // =0xfffffffffffffffe
-	dup	v4.2d, x8
-	mov	v5.16b, v4.16b
-	ssra	v4.2d, v2.2d, #2
-	ssra	v5.2d, v3.2d, #2
-	ushr	v2.2d, v4.2d, #1
-	ushr	v3.2d, v5.2d, #1
-	cmhi	v0.2d, v0.2d, v2.2d
-	cmhi	v1.2d, v1.2d, v3.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	asr	x8, x1, #2
+	sub	x8, x8, #2
+	cmp	x0, x8, lsr #1
+	cset	w0, hi
 	ret
                                         // -- End function
-func00000000000000a6:                   // @func00000000000000a6
+func0000000000000146:                   // @func0000000000000146
 // %bb.0:                               // %entry
-	mov	x8, #-2                         // =0xfffffffffffffffe
-	dup	v4.2d, x8
-	mov	v5.16b, v4.16b
-	ssra	v4.2d, v2.2d, #5
-	ssra	v5.2d, v3.2d, #5
-	ushr	v2.2d, v4.2d, #1
-	ushr	v3.2d, v5.2d, #1
-	cmgt	v0.2d, v0.2d, v2.2d
-	cmgt	v1.2d, v1.2d, v3.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	asr	x8, x1, #5
+	sub	x8, x8, #2
+	cmp	x0, x8, lsr #1
+	cset	w0, gt
 	ret
                                         // -- End function
-func00000000000000aa:                   // @func00000000000000aa
+func000000000000014a:                   // @func000000000000014a
 // %bb.0:                               // %entry
-	movi	v4.2d, #0xffffffffffffffff
-	movi	v5.2d, #0xffffffffffffffff
-	ssra	v5.2d, v3.2d, #1
-	ssra	v4.2d, v2.2d, #1
-	ushr	v2.2d, v4.2d, #1
-	ushr	v3.2d, v5.2d, #1
-	cmgt	v1.2d, v3.2d, v1.2d
-	cmgt	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	asr	x8, x1, #1
+	sub	x8, x8, #1
+	cmp	x0, x8, lsr #1
+	cset	w0, lt
 	ret
                                         // -- End function
-func00000000000000a8:                   // @func00000000000000a8
+func0000000000000158:                   // @func0000000000000158
 // %bb.0:                               // %entry
-	movi	v4.2d, #0xffffffffffffffff
-	movi	v5.2d, #0xffffffffffffffff
-	ssra	v5.2d, v3.2d, #2
-	ssra	v4.2d, v2.2d, #2
-	ushr	v2.2d, v4.2d, #1
-	ushr	v3.2d, v5.2d, #1
-	cmhi	v1.2d, v3.2d, v1.2d
-	cmhi	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	asr	x8, x1, #2
+	sub	x8, x8, #1
+	cmp	x0, x8, lsr #1
+	cset	w0, lo
+	ret
+                                        // -- End function
+func0000000000000144:                   // @func0000000000000144
+// %bb.0:                               // %entry
+	asr	x8, x1, #2
+	add	x8, x8, #1023
+	cmp	x0, x8, lsr #10
+	cset	w0, hi
 	ret
                                         // -- End function

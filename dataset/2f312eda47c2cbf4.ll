@@ -1,5 +1,5 @@
 
-; 59 occurrences:
+; 60 occurrences:
 ; arrow/optimized/compare_internal.cc.ll
 ; arrow/optimized/key_map.cc.ll
 ; arrow/optimized/light_array.cc.ll
@@ -51,6 +51,7 @@
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; llvm/optimized/X86LowerTileCopy.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; ncnn/optimized/convolution_x86_avx512.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
 ; ruby/optimized/compile.ll
@@ -95,16 +96,13 @@ entry:
   ret i64 %4
 }
 
-; 38 occurrences:
+; 33 occurrences:
 ; abc/optimized/acecXor.c.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; cmake/optimized/cmHexFileConverter.cxx.ll
 ; cpython/optimized/_randommodule.ll
 ; darktable/optimized/introspection_basecurve.c.ll
 ; graphviz/optimized/mincross.c.ll
-; hyperscan/optimized/match.c.ll
-; hyperscan/optimized/program_runtime.c.ll
-; hyperscan/optimized/runtime.c.ll
 ; icu/optimized/utrie2_builder.ll
 ; libquic/optimized/p256-x86_64.c.ll
 ; linux/optimized/intel_bios.ll
@@ -115,7 +113,6 @@ entry:
 ; llvm/optimized/RegAllocFast.cpp.ll
 ; llvm/optimized/SelectionDAGISel.cpp.ll
 ; llvm/optimized/SemaLookup.cpp.ll
-; llvm/optimized/SourceManager.cpp.ll
 ; llvm/optimized/TargetLoweringBase.cpp.ll
 ; llvm/optimized/VirtRegMap.cpp.ll
 ; llvm/optimized/X86PreTileConfig.cpp.ll
@@ -127,7 +124,6 @@ entry:
 ; openssl/optimized/libcrypto-lib-ecp_nistz256.ll
 ; openssl/optimized/libcrypto-shlib-ecp_nistz256.ll
 ; openusd/optimized/stbImage.cpp.ll
-; postgres/optimized/arrayfuncs.ll
 ; raylib/optimized/rmodels.c.ll
 ; raylib/optimized/rtext.c.ll
 ; raylib/optimized/rtextures.c.ll
@@ -171,18 +167,15 @@ entry:
   ret i64 %4
 }
 
-; 20 occurrences:
+; 27 occurrences:
 ; cmake/optimized/huf_compress.c.ll
 ; libjpeg-turbo/optimized/jchuff.c.ll
 ; libphonenumber/optimized/phonemetadata.pb.cc.ll
 ; libphonenumber/optimized/phonenumber.pb.cc.ll
 ; libpng/optimized/pngrutil.c.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtpttf.c.ll
 ; opencv/optimized/opencv-caffe.pb.cc.ll
 ; openjdk/optimized/jchuff.ll
 ; openjdk/optimized/pngrutil.ll
-; php/optimized/zend_jit.ll
 ; postgres/optimized/varbit.ll
 ; sentencepiece/optimized/sentencepiece.pb.cc.ll
 ; sentencepiece/optimized/sentencepiece_model.pb.cc.ll
@@ -191,6 +184,16 @@ entry:
 ; yalantinglibs/optimized/data_def.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/b1bc3rbs9s229gjbf718xcm8w.ll
+; zed-rs/optimized/boyei0qs0y80q8snoztbi8jt7.ll
+; zed-rs/optimized/d8k4gi60mp0onf0c8t6rhs7ks.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
+; zed-rs/optimized/f10ffiihtazjqkmwr0jihceey.ll
 ; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000037(i32 %0) #0 {
@@ -384,6 +387,21 @@ entry:
   %1 = add nuw nsw i32 %0, 63
   %2 = lshr i32 %1, 6
   %3 = add nsw i32 %2, -1
+  %4 = zext nneg i32 %3 to i64
+  ret i64 %4
+}
+
+; 4 occurrences:
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000027(i32 %0) #0 {
+entry:
+  %1 = add nuw i32 %0, 16
+  %2 = lshr i32 %1, 4
+  %3 = add nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }

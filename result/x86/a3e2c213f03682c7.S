@@ -3,6 +3,10 @@ func0000000000000002:                   # @func0000000000000002
 	imulq	$56, %rax, %rax
 	addq	%rdi, %rax
 	retq
+func0000000000000003:                   # @func0000000000000003
+	movsbq	%sil, %rax
+	leaq	(%rdi,%rax,4), %rax
+	retq
 func0000000000000000:                   # @func0000000000000000
 	movsbq	%sil, %rax
 	imulq	$76, %rax, %rax

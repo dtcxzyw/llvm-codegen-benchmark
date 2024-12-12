@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	slli	a0, a0, 48
 	srli	a0, a0, 48
 	addiw	a1, a1, -1
@@ -6,7 +6,7 @@ func0000000000000011:                   # @func0000000000000011
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	slli	a0, a0, 48
 	srli	a0, a0, 48
 	addiw	a1, a1, 1
@@ -14,7 +14,7 @@ func0000000000000031:                   # @func0000000000000031
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	slli	a0, a0, 48
 	srai	a0, a0, 48
 	li	a2, 7
@@ -23,15 +23,6 @@ func0000000000000016:                   # @func0000000000000016
 	ret
 .LBB2_2:
 	addiw	a0, a1, -3
-	ret
-func0000000000000034:                   # @func0000000000000034
-	slli	a0, a0, 48
-	lui	a2, 229376
-	srli	a0, a0, 48
-	addw	a1, a1, a2
-	sltiu	a0, a0, 1024
-	addi	a0, a0, -1
-	and	a0, a0, a1
 	ret
 func0000000000000001:                   # @func0000000000000001
 	lui	a2, 16
@@ -43,13 +34,23 @@ func0000000000000001:                   # @func0000000000000001
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
-func000000000000003a:                   # @func000000000000003a
+func0000000000000064:                   # @func0000000000000064
+	slli	a0, a0, 48
+	srli	a0, a0, 48
+	li	a2, 9
+	bgeu	a0, a2, .LBB4_2
+	li	a0, 16
+	ret
+.LBB4_2:
+	addiw	a0, a1, 7
+	ret
+func000000000000006a:                   # @func000000000000006a
 	slli	a0, a0, 48
 	addiw	a1, a1, 4
 	srai	a0, a0, 63
 	and	a0, a0, a1
 	ret
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	slli	a0, a0, 48
 	srli	a0, a0, 48
 	li	a2, 14
@@ -59,11 +60,19 @@ func0000000000000018:                   # @func0000000000000018
 .LBB6_2:
 	addiw	a0, a1, -6
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	slli	a0, a0, 48
 	srli	a0, a0, 48
 	addiw	a1, a1, -8
 	sltiu	a0, a0, 2
 	addi	a0, a0, -1
 	and	a0, a0, a1
+	ret
+func000000000000004a:                   # @func000000000000004a
+	slli	a0, a0, 48
+	bltz	a0, .LBB8_2
+	li	a0, 5
+	ret
+.LBB8_2:
+	addiw	a0, a1, 1
 	ret

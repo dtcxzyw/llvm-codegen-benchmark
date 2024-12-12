@@ -1,5 +1,5 @@
 
-; 128 occurrences:
+; 127 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/abcDetect.c.ll
@@ -87,7 +87,7 @@
 ; abc/optimized/wlnWlc.c.ll
 ; bullet3/optimized/btDeformableBodySolver.ll
 ; bullet3/optimized/btSoftBody.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; lvgl/optimized/lv_chart.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; opencv/optimized/core_detect.cpp.ll
@@ -117,7 +117,6 @@
 ; yosys/optimized/formalff.ll
 ; yosys/optimized/ice40_dsp.ll
 ; yosys/optimized/ice40_wrapcarry.ll
-; yosys/optimized/memory_libmap.ll
 ; yosys/optimized/mutate.ll
 ; yosys/optimized/muxcover.ll
 ; yosys/optimized/opt_lut.ll

@@ -156,10 +156,10 @@ func00000000000000aa:                   # @func00000000000000aa
 	retq
 .LCPI17_0:
 	.long	0x7f800000                      # float +Inf
-func0000000000000032:                   # @func0000000000000032
-	vxorps	%xmm2, %xmm2, %xmm2
-	vcmpunordps	%zmm2, %zmm1, %k0
-	vcmpeq_uqps	.LCPI17_0(%rip){1to16}, %zmm0, %k1
+func0000000000000132:                   # @func0000000000000132
+	vbroadcastss	.LCPI17_0(%rip), %zmm2  # zmm2 = [+Inf,+Inf,+Inf,+Inf,+Inf,+Inf,+Inf,+Inf,+Inf,+Inf,+Inf,+Inf,+Inf,+Inf,+Inf,+Inf]
+	vcmpeq_uqps	%zmm2, %zmm1, %k0
+	vcmpeq_uqps	%zmm2, %zmm0, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

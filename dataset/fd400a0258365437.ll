@@ -1,5 +1,5 @@
 
-; 66 occurrences:
+; 67 occurrences:
 ; bullet3/optimized/btSoftBody.ll
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_ashift.c.ll
@@ -66,6 +66,7 @@
 ; recastnavigation/optimized/TestCase.cpp.ll
 ; recastnavigation/optimized/main.cpp.ll
 ; xgboost/optimized/regression_obj.cc.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:

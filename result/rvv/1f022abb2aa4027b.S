@@ -82,15 +82,6 @@ func000000000000002e:                   # @func000000000000002e
 	vand.vi	v8, v8, -4
 	vadd.vi	v8, v8, 4
 	ret
-func000000000000004f:                   # @func000000000000004f
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vi	v8, v8, 1
-	li	a0, -57
-	vsrl.vi	v8, v8, 3
-	srli	a0, a0, 3
-	vand.vx	v8, v8, a0
-	vadd.vi	v8, v8, 8
-	ret
 func0000000000000068:                   # @func0000000000000068
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v8, v8, v8

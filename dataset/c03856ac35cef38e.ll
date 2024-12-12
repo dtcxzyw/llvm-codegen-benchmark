@@ -8,8 +8,8 @@
 define i1 @func000000000000000e(i1 %0, float %1, i16 %2) #0 {
 entry:
   %3 = sitofp i16 %2 to float
-  %4 = fcmp une float %3, %1
-  %5 = or i1 %4, %0
+  %4 = fcmp une float %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

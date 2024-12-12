@@ -3,10 +3,10 @@
 ; re2/optimized/dfa.cc.ll
 ; re2/optimized/onepass.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000018c(ptr %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000050c(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
-  %4 = icmp ult i32 %3, %1
+  %4 = icmp ugt i32 %1, %3
   %5 = icmp ne ptr %0, null
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -15,10 +15,10 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/CGUIListBox.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000018c(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = icmp ne i32 %3, %1
+  %4 = icmp ne i32 %1, %3
   %5 = icmp ne ptr %0, null
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -27,10 +27,10 @@ entry:
 ; 1 occurrences:
 ; git/optimized/merge-recursive.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(ptr %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000cc(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = icmp sgt i32 %3, %1
+  %4 = icmp slt i32 %1, %3
   %5 = icmp ne ptr %0, null
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -39,10 +39,10 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/pdb2top.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(ptr %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000008c(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = icmp ugt i32 %3, %1
+  %4 = icmp ult i32 %1, %3
   %5 = icmp ne ptr %0, null
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -53,10 +53,10 @@ entry:
 ; wireshark/optimized/packet-bthsp.c.ll
 ; wireshark/optimized/packet-btsmp.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000002c(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = icmp eq i32 %3, %1
+  %4 = icmp eq i32 %1, %3
   %5 = icmp ne ptr %0, null
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -154,10 +154,10 @@ entry:
 ; xgboost/optimized/updater_sync.cc.ll
 ; xgboost/optimized/version.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(ptr %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000014c(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = icmp slt i32 %3, %1
+  %4 = icmp sgt i32 %1, %3
   %5 = icmp ne ptr %0, null
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6

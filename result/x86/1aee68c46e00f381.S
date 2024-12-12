@@ -12,3 +12,10 @@ func0000000000000024:                   # @func0000000000000024
 	cltq
 	leaq	(%rdi,%rax,8), %rax
 	retq
+func0000000000000027:                   # @func0000000000000027
+	subq	%rdx, %rsi
+	shrq	$3, %rsi
+	imull	$954437177, %esi, %eax          # imm = 0x38E38E39
+	cltq
+	leaq	(%rdi,%rax,8), %rax
+	retq

@@ -12,8 +12,8 @@ entry:
 }
 
 ; 3 occurrences:
-; casadi/optimized/sparsity.cpp.ll
 ; hyperscan/optimized/ng_haig.cpp.ll
+; hyperscan/optimized/rdfa_merge.cpp.ll
 ; openvdb/optimized/AttributeSet.cc.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(ptr %0, i64 %1, ptr %2) #0 {
@@ -25,7 +25,8 @@ entry:
   ret ptr %6
 }
 
-; 15 occurrences:
+; 17 occurrences:
+; cmake/optimized/zstd_lazy.c.ll
 ; flatbuffers/optimized/reflection.cpp.ll
 ; git/optimized/ewah_bitmap.ll
 ; hyperscan/optimized/ng_find_matches.cpp.ll
@@ -41,26 +42,26 @@ entry:
 ; redis/optimized/hpdata.sym.ll
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
+; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1, ptr %2) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = lshr i64 %4, 3
-  %6 = getelementptr nusw ptr, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw ptr, ptr %0, i64 %5
   ret ptr %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; openusd/optimized/clipSet.cpp.ll
-; openusd/optimized/niInstanceAggregationSceneIndex.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1, ptr %2) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = lshr exact i64 %4, 1
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 

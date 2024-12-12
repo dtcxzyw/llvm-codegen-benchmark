@@ -23,16 +23,17 @@ entry:
   ret ptr %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; gromacs/optimized/lmmin.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/OpenMPClause.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000ba(i64 %0, i64 %1, ptr %2) #0 {
+define ptr @func00000000000000ff(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw ptr, ptr %2, i64 %0
-  %4 = getelementptr nusw ptr, ptr %3, i64 %0
+  %3 = getelementptr nusw nuw ptr, ptr %2, i64 %0
+  %4 = getelementptr nusw nuw ptr, ptr %3, i64 %0
   %5 = shl nuw nsw i64 %1, 3
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -46,18 +47,6 @@ entry:
   %4 = getelementptr i8, ptr %3, i64 %0
   %5 = shl nuw nsw i64 %1, 3
   %6 = getelementptr i8, ptr %4, i64 %5
-  ret ptr %6
-}
-
-; 1 occurrences:
-; gromacs/optimized/lmmin.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000032(i64 %0, i64 %1, ptr %2) #0 {
-entry:
-  %3 = getelementptr i8, ptr %2, i64 %0
-  %4 = getelementptr i8, ptr %3, i64 %0
-  %5 = shl nuw nsw i64 %1, 3
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
   ret ptr %6
 }
 

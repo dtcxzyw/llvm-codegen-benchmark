@@ -57,7 +57,7 @@
 ; nlohmann_json/optimized/unit-pointer_access.cpp.ll
 ; nlohmann_json/optimized/unit-udt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, i32 %1) #0 {
+define i1 @func000000000000018c(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 256
   %3 = icmp ne i32 %2, 0
@@ -77,7 +77,7 @@ entry:
 ; nlohmann_json/optimized/unit-pointer_access.cpp.ll
 ; postgres/optimized/syslogger.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000181(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 256
   %3 = icmp ne i32 %2, 0
@@ -90,7 +90,7 @@ entry:
 ; clamav/optimized/readdb.c.ll
 ; linux/optimized/intel_color.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000021(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 256
   %3 = icmp eq i32 %2, 0
@@ -102,7 +102,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/syslogger.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i32 %1) #0 {
+define i1 @func000000000000002c(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 8
   %3 = icmp eq i32 %2, 0

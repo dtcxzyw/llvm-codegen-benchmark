@@ -3,9 +3,9 @@
 ; hermes/optimized/escape.cpp.ll
 ; icu/optimized/rbutil.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(ptr %0, i1 %1, ptr %2) #0 {
+define i64 @func000000000000000c(ptr %0, i1 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 6
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 6
   %4 = ptrtoint ptr %3 to i64
   %5 = select i1 %1, i64 0, i64 %4
   %6 = ptrtoint ptr %0 to i64

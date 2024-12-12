@@ -182,7 +182,7 @@
 define i32 @func0000000000000000(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
-  %3 = add i128 %2, %0
+  %3 = add i128 %0, %2
   %4 = trunc i128 %3 to i32
   ret i32 %4
 }
@@ -193,7 +193,7 @@ entry:
 define i32 @func000000000000001c(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext nneg i64 %1 to i128
-  %3 = add nuw nsw i128 %2, %0
+  %3 = add nuw nsw i128 %0, %2
   %4 = trunc i128 %3 to i32
   ret i32 %4
 }

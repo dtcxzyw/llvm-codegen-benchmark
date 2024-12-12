@@ -67,7 +67,7 @@ entry:
   %3 = shl i64 %2, 3
   %4 = add i64 %3, 8
   %5 = xor i64 %1, -1
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   %7 = sdiv i64 %6, %4
   ret i64 %7
 }

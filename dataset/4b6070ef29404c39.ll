@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; abseil-cpp/optimized/fastmath_test.cc.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; llvm/optimized/LegalizeVectorOps.cpp.ll
@@ -11,7 +11,6 @@
 ; redis/optimized/dict.ll
 ; redis/optimized/geohash.ll
 ; rocksdb/optimized/clock_cache.cc.ll
-; rocksdb/optimized/ribbon_config.cc.ll
 ; Function Attrs: nounwind
 define double @func0000000000000004(i64 %0) #0 {
 entry:
@@ -20,12 +19,13 @@ entry:
   ret double %2
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; postgres/optimized/hyperloglog.ll
 ; postgres/optimized/nodeHash.ll
 ; redis/optimized/geohash.ll
 ; wireshark/optimized/packet-dhcp.c.ll
 ; wireshark/optimized/packet-olsr.c.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; Function Attrs: nounwind
 define double @func0000000000000007(i64 %0) #0 {
 entry:

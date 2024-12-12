@@ -29,10 +29,15 @@ func0000000000000028:                   # @func0000000000000028
 	setns	%cl
 	subl	%ecx, %eax
 	retq
+func0000000000000021:                   # @func0000000000000021
+	movl	%edi, %eax
+	cmpq	$2, %rsi
+	adcl	$-1, %eax
+	retq
 func0000000000000011:                   # @func0000000000000011
 	movl	%edi, %eax
-	shrq	$32, %rsi
-	cmpq	$1, %rsi
+	movabsq	$1000000000000000000, %rcx      # imm = 0xDE0B6B3A7640000
+	cmpq	%rcx, %rsi
 	sbbl	$0, %eax
 	retq
 func0000000000000010:                   # @func0000000000000010
@@ -40,16 +45,16 @@ func0000000000000010:                   # @func0000000000000010
 	cmpq	$2, %rsi
 	sbbl	$0, %eax
 	retq
-func0000000000000021:                   # @func0000000000000021
-	movl	%edi, %eax
-	shrq	$10, %rsi
-	cmpq	$9765625, %rsi                  # imm = 0x9502F9
-	adcl	$-1, %eax
-	retq
 func0000000000000029:                   # @func0000000000000029
 	movl	%edi, %eax
 	xorl	%ecx, %ecx
 	testq	%rsi, %rsi
 	setns	%cl
 	subl	%ecx, %eax
+	retq
+func0000000000000051:                   # @func0000000000000051
+	movl	%edi, %eax
+	movabsq	$1000000000000000, %rcx         # imm = 0x38D7EA4C68000
+	cmpq	%rcx, %rsi
+	sbbl	$0, %eax
 	retq

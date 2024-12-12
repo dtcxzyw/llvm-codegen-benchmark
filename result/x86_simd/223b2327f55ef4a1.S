@@ -5,7 +5,7 @@ func0000000000000070:                   # @func0000000000000070
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubd	%ymm3, %ymm2, %ymm2
 	vpsubd	%ymm3, %ymm1, %ymm1
-	vpmulld	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm1, %ymm0, %ymm0
 	vpmulld	%ymm2, %ymm0, %ymm0
 	retq
 .LCPI1_0:

@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; assimp/optimized/IFCBoolean.cpp.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
@@ -12,8 +12,9 @@
 ; quantlib/optimized/faurersg.ll
 ; re2/optimized/prog.cc.ll
 ; tinyobjloader/optimized/tiny_obj_loader.cc.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 1
   %3 = icmp eq i64 %2, %0
@@ -21,8 +22,13 @@ entry:
   ret i64 %4
 }
 
-; 97 occurrences:
+; 108 occurrences:
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/aq.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; clamav/optimized/LzmaDec.c.ll
 ; cpython/optimized/basearith.ll
 ; cpython/optimized/bytearrayobject.ll
@@ -119,6 +125,12 @@ entry:
 ; wireshark/optimized/simple_statistics_dialog.cpp.ll
 ; wireshark/optimized/tap_parameter_dialog.cpp.ll
 ; wireshark/optimized/voip_calls_dialog.cpp.ll
+; zed-rs/optimized/1qb020ndphzxmvf33d06yonm0.ll
+; zed-rs/optimized/3k8x435wqn3srsqrie72arxas.ll
+; zed-rs/optimized/6qjfvhk4jerhk7xc8z4gjzbog.ll
+; zed-rs/optimized/b3ou4m5dtc370x50ytakxr6ey.ll
+; zed-rs/optimized/bha0rxubsdhd11krbgdo6s87h.ll
+; zed-rs/optimized/de4xf1plz4ya209x66ee15yyx.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
@@ -139,7 +151,7 @@ entry:
   ret i64 %4
 }
 
-; 12 occurrences:
+; 14 occurrences:
 ; abc/optimized/giaTranStoch.c.ll
 ; assimp/optimized/IFCBoolean.cpp.ll
 ; assimp/optimized/IFCUtil.cpp.ll
@@ -148,12 +160,14 @@ entry:
 ; icu/optimized/formattedval_iterimpl.ll
 ; nuklear/optimized/unity.c.ll
 ; opencv/optimized/min_enclosing_triangle.cpp.ll
+; openusd/optimized/tessellation.cpp.ll
 ; pbrt-v4/optimized/cameras.cpp.ll
+; recastnavigation/optimized/DetourDebugDraw.cpp.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; slurm/optimized/step_mgr.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
   %3 = icmp eq i64 %2, %0
@@ -176,7 +190,7 @@ entry:
 ; git/optimized/add-patch.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 1
   %3 = icmp eq i64 %2, %0
@@ -189,12 +203,23 @@ entry:
 ; linux/optimized/zstd_decompress.ll
 ; zstd/optimized/zstd_decompress.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000068(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 8
   %3 = icmp ugt i64 %2, %0
   %4 = select i1 %3, i64 -72, i64 %2
   ret i64 %4
+}
+
+; 1 occurrences:
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000049(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nuw i64 %1, 1
+  %.not = icmp ult i64 %2, %0
+  %3 = select i1 %.not, i64 %2, i64 0
+  ret i64 %3
 }
 
 ; 2 occurrences:

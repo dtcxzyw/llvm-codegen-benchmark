@@ -1,63 +1,80 @@
-func000000000000010a:                   // @func000000000000010a
+func000000000000020a:                   // @func000000000000020a
 // %bb.0:                               // %entry
-	add	v1.4s, v1.4s, v3.4s
-	add	v0.4s, v0.4s, v2.4s
-	mvni	v2.4s, #30
-	movi	v3.4s, #2
-	add	v1.4s, v5.4s, v1.4s
-	add	v0.4s, v4.4s, v0.4s
-	add	v0.4s, v0.4s, v2.4s
-	add	v1.4s, v1.4s, v2.4s
-	cmgt	v1.4s, v1.4s, v3.4s
-	cmgt	v0.4s, v0.4s, v3.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	add	w8, w0, w1
+	add	w8, w2, w8
+	sub	w8, w8, #31
+	cmp	w8, #2
+	cset	w0, gt
 	ret
                                         // -- End function
-func000000000000015a:                   // @func000000000000015a
+func000000000000028a:                   // @func000000000000028a
 // %bb.0:                               // %entry
-	add	v2.4s, v2.4s, v4.4s
-	add	v3.4s, v3.4s, v5.4s
-	movi	v4.2d, #0xffffffffffffffff
-	add	v1.4s, v1.4s, v3.4s
-	add	v0.4s, v0.4s, v2.4s
-	movi	v2.4s, #1
-	add	v0.4s, v0.4s, v4.4s
-	add	v1.4s, v1.4s, v4.4s
-	cmgt	v1.4s, v1.4s, v2.4s
-	cmgt	v0.4s, v0.4s, v2.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	add	w8, w1, w2
+	add	w8, w0, w8
+	sub	w8, w8, #3
+	mvn	w8, w8
+	lsr	w0, w8, #31
+	ret
+                                        // -- End function
+func0000000000000286:                   // @func0000000000000286
+// %bb.0:                               // %entry
+	add	w8, w1, w2
+	add	w8, w0, w8
+	sub	w8, w8, #3
+	cmn	w8, #99
+	cset	w0, lt
+	ret
+                                        // -- End function
+func00000000000002a6:                   // @func00000000000002a6
+// %bb.0:                               // %entry
+	add	w8, w0, w1
+	add	w8, w2, w8
+	sub	w8, w8, #272
+	cmp	w8, #17
+	cset	w0, lt
+	ret
+                                        // -- End function
+func00000000000002aa:                   // @func00000000000002aa
+// %bb.0:                               // %entry
+	add	w8, w1, w2
+	add	w8, w0, w8
+	sub	w8, w8, #1
+	cmp	w8, #1
+	cset	w0, gt
+	ret
+                                        // -- End function
+func0000000000000004:                   // @func0000000000000004
+// %bb.0:                               // %entry
+	add	w8, w0, w1
+	add	w8, w2, w8
+	add	w8, w8, #2
+	cmp	w8, #128
+	cset	w0, lo
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	add	v2.4s, v2.4s, v4.4s
-	add	v3.4s, v3.4s, v5.4s
-	movi	v4.2d, #0xffffffffffffffff
-	add	v1.4s, v1.4s, v3.4s
-	add	v0.4s, v0.4s, v2.4s
-	add	v0.4s, v0.4s, v4.4s
-	add	v1.4s, v1.4s, v4.4s
-	cmge	v1.4s, v1.4s, #0
-	cmge	v0.4s, v0.4s, #0
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	add	w8, w1, w2
+	neg	w9, w0
+	sub	w8, w9, w8
+	lsr	w0, w8, #31
 	ret
                                         // -- End function
-func000000000000005a:                   // @func000000000000005a
+func00000000000000aa:                   // @func00000000000000aa
 // %bb.0:                               // %entry
-	add	v2.4s, v2.4s, v4.4s
-	add	v3.4s, v3.4s, v5.4s
-	movi	v4.2d, #0xffffffffffffffff
-	add	v1.4s, v1.4s, v3.4s
-	add	v0.4s, v0.4s, v2.4s
-	movi	v2.4s, #2
-	add	v0.4s, v0.4s, v4.4s
-	add	v1.4s, v1.4s, v4.4s
-	cmgt	v1.4s, v1.4s, v2.4s
-	cmgt	v0.4s, v0.4s, v2.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	add	w8, w1, w2
+	add	w8, w0, w8
+	sub	w8, w8, #1
+	cmp	w8, #2
+	cset	w0, gt
+	ret
+                                        // -- End function
+func00000000000002a4:                   // @func00000000000002a4
+// %bb.0:                               // %entry
+	add	w8, w1, w2
+	add	w8, w0, w8
+	add	w8, w8, #256
+	cmp	w8, #769
+	cset	w0, lo
 	ret
                                         // -- End function

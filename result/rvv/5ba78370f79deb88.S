@@ -7,7 +7,7 @@ func00000000000001ed:                   # @func00000000000001ed
 	vmacc.vx	v12, a0, v10
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v9, v12, 22
-	vadd.vv	v8, v9, v8
+	vadd.vv	v8, v8, v9
 	ret
 .LCPI1_0:
 	.quad	1442695040888963407             # 0x14057b7ef767814f
@@ -24,7 +24,7 @@ func000000000000000f:                   # @func000000000000000f
 	li	a0, 62
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wx	v9, v12, a0
-	vadd.vv	v8, v9, v8
+	vadd.vv	v8, v8, v9
 	ret
 func00000000000000a0:                   # @func00000000000000a0
 	lui	a0, 8
@@ -35,7 +35,7 @@ func00000000000000a0:                   # @func00000000000000a0
 	vmacc.vx	v12, a0, v10
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v9, v12, 16
-	vadd.vv	v8, v9, v8
+	vadd.vv	v8, v8, v9
 	ret
 func00000000000000a1:                   # @func00000000000000a1
 	lui	a0, 8
@@ -46,7 +46,7 @@ func00000000000000a1:                   # @func00000000000000a1
 	vmacc.vx	v12, a0, v10
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v9, v12, 16
-	vadd.vv	v8, v9, v8
+	vadd.vv	v8, v8, v9
 	ret
 func00000000000001ef:                   # @func00000000000001ef
 	lui	a0, 8
@@ -57,5 +57,5 @@ func00000000000001ef:                   # @func00000000000001ef
 	vmacc.vx	v12, a0, v10
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v9, v12, 16
-	vadd.vv	v8, v9, v8
+	vadd.vv	v8, v8, v9
 	ret

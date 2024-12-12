@@ -44,23 +44,24 @@
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = shl i32 %4, %0
   ret i32 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; brotli/optimized/compress_fragment.c.ll
 ; clamav/optimized/explode.c.ll
 ; freetype/optimized/ftlzw.c.ll
 ; hdf5/optimized/H5Tbit.c.ll
 ; hdf5/optimized/H5Znbit.c.ll
 ; hdf5/optimized/H5Zscaleoffset.c.ll
+; lvgl/optimized/lv_canvas.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = shl nuw nsw i32 %4, %0
   ret i32 %5
 }
@@ -71,7 +72,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = shl nsw i32 %4, %0
   ret i32 %5
 }

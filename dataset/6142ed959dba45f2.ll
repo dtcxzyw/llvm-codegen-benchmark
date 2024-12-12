@@ -10,18 +10,28 @@
 define i1 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
   %2 = sext i1 %0 to i32
-  %3 = icmp eq i32 %2, %1
+  %3 = icmp eq i32 %1, %2
   ret i1 %3
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; clap-rs/optimized/3b4nqkxyl1xqdcre.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 128
+  ret i1 %2
+}
+
+; 1 occurrences:
 ; postgres/optimized/localtime.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 128
-  ret i1 %2
+  %2 = xor i32 %1, -2147483648
+  %3 = select i1 %0, i32 %2, i32 %1
+  %4 = icmp ult i32 %3, 50
+  ret i1 %4
 }
 
 attributes #0 = { nounwind }

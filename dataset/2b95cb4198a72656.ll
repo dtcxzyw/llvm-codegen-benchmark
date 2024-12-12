@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 21 occurrences:
 ; abc/optimized/epd.c.ll
 ; darktable/optimized/introspection_basicadj.c.ll
 ; graphviz/optimized/exeval.c.ll
@@ -7,6 +7,7 @@
 ; hermes/optimized/DataView.cpp.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; mitsuba3/optimized/roughplastic.cpp.ll
 ; mitsuba3/optimized/sensor.cpp.ll
 ; mitsuba3/optimized/xml.cpp.ll

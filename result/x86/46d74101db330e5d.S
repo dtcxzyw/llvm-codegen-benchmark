@@ -3,7 +3,7 @@ func0000000000000006:                   # @func0000000000000006
 	setl	%al
 	xorb	%dil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	cmpq	%rdx, %rsi
 	seta	%al
 	xorb	%dil, %al
@@ -38,6 +38,11 @@ func0000000000000009:                   # @func0000000000000009
 	setae	%al
 	xorb	%dil, %al
 	retq
+func0000000000000008:                   # @func0000000000000008
+	cmpq	%rdx, %rsi
+	seta	%al
+	xorb	%dil, %al
+	retq
 func0000000000000005:                   # @func0000000000000005
 	cmpq	%rdx, %rsi
 	setbe	%al
@@ -46,5 +51,20 @@ func0000000000000005:                   # @func0000000000000005
 func0000000000000004:                   # @func0000000000000004
 	cmpq	%rdx, %rsi
 	setb	%al
+	xorb	%dil, %al
+	retq
+func000000000000001c:                   # @func000000000000001c
+	cmpq	%rdx, %rsi
+	setne	%al
+	xorb	%dil, %al
+	retq
+func0000000000000011:                   # @func0000000000000011
+	cmpq	%rdx, %rsi
+	sete	%al
+	xorb	%dil, %al
+	retq
+func0000000000000019:                   # @func0000000000000019
+	cmpq	%rdx, %rsi
+	setae	%al
 	xorb	%dil, %al
 	retq

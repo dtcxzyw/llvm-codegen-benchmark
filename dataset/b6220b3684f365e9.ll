@@ -1,11 +1,12 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; abc/optimized/retInit.c.ll
 ; darktable/optimized/pfm.c.ll
 ; git/optimized/pack-check.ll
 ; git/optimized/statinfo.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; linux/optimized/balloc.ll
+; lvgl/optimized/lv_refr.ll
 ; meshlab/optimized/filter_mutualglobal.cpp.ll
 ; openblas/optimized/dlalsa.c.ll
 ; ruby/optimized/parse.ll
@@ -14,12 +15,12 @@
 define i32 @func0000000000000018(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp ne i32 %2, %0
+  %3 = icmp ne i32 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
 
-; 28 occurrences:
+; 27 occurrences:
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/retIncrem.c.ll
 ; git/optimized/object-name.ll
@@ -45,21 +46,19 @@ entry:
 ; wireshark/optimized/packet-nfs.c.ll
 ; wireshark/optimized/packet-nlm.c.ll
 ; wireshark/optimized/packet-pfcp.c.ll
-; wireshark/optimized/packet-smb-sidsnooping.c.ll
 ; wireshark/optimized/packet-smb.c.ll
 ; wireshark/optimized/packet-usbll.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; linux/optimized/orphan.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; ruby/optimized/function.ll
 ; wasmedge/optimized/engine.cpp.ll
@@ -67,7 +66,7 @@ entry:
 define i32 @func0000000000000016(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp sle i32 %2, %0
+  %3 = icmp sge i32 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -81,7 +80,7 @@ entry:
 define i32 @func000000000000000c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp sgt i32 %2, %0
+  %3 = icmp slt i32 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -96,7 +95,7 @@ entry:
 define i32 @func000000000000000e(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp sge i32 %2, %0
+  %3 = icmp sle i32 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -115,7 +114,7 @@ entry:
 define i32 @func0000000000000008(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp ugt i32 %2, %0
+  %3 = icmp ult i32 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -127,7 +126,7 @@ entry:
 define i32 @func000000000000000a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp uge i32 %2, %0
+  %3 = icmp ule i32 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -135,10 +134,10 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/klass.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000062(i32 %0, i64 %1) #0 {
+define i32 @func00000000000000c2(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = icmp eq i32 %2, %0
+  %3 = icmp eq i32 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -152,7 +151,7 @@ entry:
 define i32 @func0000000000000012(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp ule i32 %2, %0
+  %3 = icmp uge i32 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -163,7 +162,7 @@ entry:
 define i32 @func0000000000000010(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp ult i32 %2, %0
+  %3 = icmp ugt i32 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -175,7 +174,7 @@ entry:
 define i32 @func0000000000000014(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp slt i32 %2, %0
+  %3 = icmp sgt i32 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -187,10 +186,10 @@ entry:
 ; libquic/optimized/dtoa.cc.ll
 ; php/optimized/zend_strtod.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000074(i32 %0, i64 %1) #0 {
+define i32 @func00000000000000d4(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = icmp slt i32 %2, %0
+  %3 = icmp sgt i32 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -198,10 +197,10 @@ entry:
 ; 1 occurrences:
 ; bullet3/optimized/btBatchedConstraints.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000058(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
-  %3 = icmp ne i32 %2, %0
+  %3 = icmp ne i32 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -209,10 +208,10 @@ entry:
 ; 1 occurrences:
 ; rust-analyzer-rs/optimized/kcxpblerbqo90m6.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000048(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000088(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = icmp ugt i32 %2, %0
+  %3 = icmp ult i32 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -221,10 +220,10 @@ entry:
 ; darktable/optimized/Cr2Decompressor.cpp.ll
 ; llvm/optimized/WasmObjectFile.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000004a(i32 %0, i64 %1) #0 {
+define i32 @func000000000000008a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = icmp uge i32 %2, %0
+  %3 = icmp ule i32 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -232,10 +231,10 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/amapOutput.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000078(i32 %0, i64 %1) #0 {
+define i32 @func00000000000000d8(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = icmp ne i32 %2, %0
+  %3 = icmp ne i32 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -244,10 +243,10 @@ entry:
 ; cmake/optimized/deflate.c.ll
 ; zlib/optimized/deflate.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000006a(i32 %0, i64 %1) #0 {
+define i32 @func00000000000000ca(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = icmp uge i32 %2, %0
+  %3 = icmp ule i32 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -255,10 +254,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/raw_ostream.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000052(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000092(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = icmp ule i32 %2, %0
+  %3 = icmp uge i32 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -266,10 +265,10 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/indexutil.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000002e(i32 %0, i64 %1) #0 {
+define i32 @func000000000000004e(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
-  %3 = icmp sge i32 %2, %0
+  %3 = icmp sle i32 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -277,10 +276,10 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/scansegment.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000004c(i32 %0, i64 %1) #0 {
+define i32 @func000000000000008c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = icmp sgt i32 %2, %0
+  %3 = icmp slt i32 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }

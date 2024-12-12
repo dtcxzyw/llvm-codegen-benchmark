@@ -23,7 +23,7 @@
 ; mold/optimized/input-files.cc.SPARC64.cc.ll
 ; mold/optimized/input-files.cc.X86_64.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i16 %0) #0 {
+define i1 @func0000000000000041(i16 %0) #0 {
 entry:
   %1 = and i16 %0, 3
   %2 = icmp eq i16 %1, 1
@@ -42,7 +42,7 @@ entry:
   ret i1 %2
 }
 
-; 27 occurrences:
+; 25 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; git/optimized/wt-status.ll
 ; icu/optimized/ucnv_u7.ll
@@ -54,8 +54,6 @@ entry:
 ; llvm/optimized/ComputeDependence.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/DeclPrinter.cpp.ll
-; llvm/optimized/ItaniumDemangle.cpp.ll
-; llvm/optimized/ItaniumManglingCanonicalizer.cpp.ll
 ; llvm/optimized/LLVMTargetMachine.cpp.ll
 ; llvm/optimized/LoopUtils.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
@@ -78,21 +76,17 @@ entry:
   ret i1 %2
 }
 
-; 5 occurrences:
+; 1 occurrences:
 ; qemu/optimized/hw_nvme_dif.c.ll
-; spike/optimized/f16_to_i32.ll
-; spike/optimized/f16_to_i64.ll
-; spike/optimized/f16_to_ui32.ll
-; spike/optimized/f16_to_ui64.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i16 %0) #0 {
+define i1 @func0000000000000078(i16 %0) #0 {
 entry:
   %1 = and i16 %0, 8
   %2 = icmp ne i16 %1, 0
   ret i1 %2
 }
 
-; 15 occurrences:
+; 11 occurrences:
 ; linux/optimized/sit.ll
 ; linux/optimized/sky2.ll
 ; llvm/optimized/ItaniumDemangle.cpp.ll
@@ -102,14 +96,10 @@ entry:
 ; spike/optimized/f16_mul.ll
 ; spike/optimized/f16_rem.ll
 ; spike/optimized/f16_sqrt.ll
-; spike/optimized/f16_to_i32_r_minMag.ll
-; spike/optimized/f16_to_i64_r_minMag.ll
-; spike/optimized/f16_to_ui32_r_minMag.ll
-; spike/optimized/f16_to_ui64_r_minMag.ll
 ; wireshark/optimized/packet-dvb-s2-bb.c.ll
 ; wireshark/optimized/packet-h265.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i16 %0) #0 {
+define i1 @func0000000000000061(i16 %0) #0 {
 entry:
   %1 = and i16 %0, 1
   %2 = icmp eq i16 %1, 0
@@ -120,46 +110,40 @@ entry:
 ; stockfish/optimized/evaluate_nnue.ll
 ; typst-rs/optimized/1fd2xpfefmgrcb9d.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i16 %0) #0 {
+define i1 @func0000000000000014(i16 %0) #0 {
 entry:
   %1 = and i16 %0, 64
   %2 = icmp eq i16 %1, 0
   ret i1 %2
 }
 
-; 7 occurrences:
-; spike/optimized/f16_to_i32_r_minMag.ll
-; spike/optimized/f16_to_i64_r_minMag.ll
-; spike/optimized/f16_to_ui32.ll
-; spike/optimized/f16_to_ui32_r_minMag.ll
-; spike/optimized/f16_to_ui64.ll
-; spike/optimized/f16_to_ui64_r_minMag.ll
+; 1 occurrences:
+; llvm/optimized/SemaRISCV.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000004c(i16 %0) #0 {
+entry:
+  %1 = and i16 %0, 3
+  %2 = icmp ne i16 %1, 0
+  ret i1 %2
+}
+
+; 1 occurrences:
+; llvm/optimized/SemaRISCV.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000006c(i16 %0) #0 {
+entry:
+  %1 = and i16 %0, 3
+  %2 = icmp ne i16 %1, 0
+  ret i1 %2
+}
+
+; 1 occurrences:
 ; wireshark/optimized/packet-ehdlc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i16 %0) #0 {
+define i1 @func0000000000000074(i16 %0) #0 {
 entry:
-  %1 = and i16 %0, 31
-  %2 = icmp ult i16 %1, 25
-  ret i1 %2
-}
-
-; 1 occurrences:
-; llvm/optimized/SemaRISCV.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000002c(i16 %0) #0 {
-entry:
-  %1 = and i16 %0, 3
-  %2 = icmp ne i16 %1, 0
-  ret i1 %2
-}
-
-; 1 occurrences:
-; llvm/optimized/SemaRISCV.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000003c(i16 %0) #0 {
-entry:
-  %1 = and i16 %0, 3
-  %2 = icmp ne i16 %1, 0
+  %1 = and i16 %0, 12
+  %2 = icmp ne i16 %1, 12
   ret i1 %2
 }
 
@@ -167,20 +151,20 @@ entry:
 ; grpc/optimized/hpack_parser.cc.ll
 ; linux/optimized/intel_bios.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i16 %0) #0 {
+define i1 @func0000000000000018(i16 %0) #0 {
 entry:
   %1 = and i16 %0, 15
-  %2 = icmp ugt i16 %1, 2
+  %2 = icmp samesign ugt i16 %1, 2
   ret i1 %2
 }
 
 ; 1 occurrences:
 ; typst-rs/optimized/1fd2xpfefmgrcb9d.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i16 %0) #0 {
+define i1 @func0000000000000054(i16 %0) #0 {
 entry:
   %1 = and i16 %0, 14
-  %2 = icmp ult i16 %1, 10
+  %2 = icmp samesign ult i16 %1, 10
   ret i1 %2
 }
 

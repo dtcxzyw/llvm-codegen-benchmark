@@ -8,7 +8,7 @@
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %.neg = mul i64 %1, -8
-  %2 = and i64 %.neg, %0
+  %2 = and i64 %0, %.neg
   ret i64 %2
 }
 

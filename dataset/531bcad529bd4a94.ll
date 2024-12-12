@@ -12,7 +12,7 @@ entry:
   ret ptr %6
 }
 
-; 17 occurrences:
+; 19 occurrences:
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/aigPack.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -25,6 +25,8 @@ entry:
 ; abc/optimized/sswSim.c.ll
 ; abc/optimized/wlcMem.c.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
+; libwebp/optimized/sharpyuv.c.ll
+; opencv/optimized/morph.dispatch.cpp.ll
 ; openjdk/optimized/mlib_ImageConvClearEdge_Bit.ll
 ; openjdk/optimized/mlib_ImageConvCopyEdge_Bit.ll
 ; openusd/optimized/convolve.c.ll
@@ -40,13 +42,12 @@ entry:
   ret ptr %6
 }
 
-; 18 occurrences:
+; 14 occurrences:
 ; abc/optimized/acecFadds.c.ll
 ; abc/optimized/aigPack.c.ll
 ; abc/optimized/darLib.c.ll
 ; abc/optimized/dauGia.c.ll
 ; abc/optimized/giaShrink6.c.ll
-; abc/optimized/wlnRead.c.ll
 ; freetype/optimized/raster.c.ll
 ; opencv/optimized/hough.cpp.ll
 ; openjdk/optimized/X11TextRenderer_md.ll
@@ -56,9 +57,6 @@ entry:
 ; openjdk/optimized/mlib_c_ImageAffine_BL.ll
 ; openjdk/optimized/mlib_c_ImageAffine_BL_S16.ll
 ; openjdk/optimized/mlib_c_ImageAffine_BL_U16.ll
-; openusd/optimized/aom_convolve.c.ll
-; openusd/optimized/convolve.c.ll
-; openusd/optimized/yuv_scale.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000a(i64 %0, ptr %1, i32 %2) #0 {
 entry:
@@ -69,10 +67,50 @@ entry:
   ret ptr %6
 }
 
-; 5 occurrences:
-; abc/optimized/giaPat2.c.ll
+; 3 occurrences:
 ; abc/optimized/giaResub.c.ll
 ; llama.cpp/optimized/ggml.c.ll
+; opencv/optimized/dxt.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001b(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = ashr exact i32 %2, 1
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw i64, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i64, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 1 occurrences:
+; abc/optimized/giaMinLut2.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000f(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = ashr i32 %2, 1
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw nuw i64, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i64, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 5 occurrences:
+; abc/optimized/aigPack.c.ll
+; abc/optimized/wlnRead.c.ll
+; openusd/optimized/aom_convolve.c.ll
+; openusd/optimized/convolve.c.ll
+; openusd/optimized/yuv_scale.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = ashr i32 %2, 2
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw i32, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i32, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 3 occurrences:
+; abc/optimized/giaPat2.c.ll
 ; opencv/optimized/dxt.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
 ; Function Attrs: nounwind

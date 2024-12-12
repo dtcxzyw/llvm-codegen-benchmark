@@ -1,13 +1,16 @@
 
-; 10 occurrences:
+; 13 occurrences:
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/amapUniq.c.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
+; gromacs/optimized/partition.cpp.ll
 ; libwebp/optimized/io_dec.c.ll
 ; opencv/optimized/resize.cpp.ll
 ; opencv/optimized/stackblur.cpp.ll
 ; openjdk/optimized/jvmtiEnvBase.ll
 ; openmpi/optimized/ompi_datatype_args.ll
+; openusd/optimized/av1_dx_iface.c.ll
+; openusd/optimized/decodeframe.c.ll
 ; quickjs/optimized/quickjs.ll
 ; re2/optimized/dfa.cc.ll
 ; Function Attrs: nounwind
@@ -37,7 +40,8 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; bullet3/optimized/b3GpuSapBroadphase.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; nori/optimized/warptest.cpp.ll
 ; php/optimized/zend_opcode.ll

@@ -1,32 +1,19 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	movi	v2.4s, #127, lsl #8
-	bic	v1.4h, #255, lsl #8
-	ushll	v1.4s, v1.4h, #0
-	and	v0.16b, v0.16b, v2.16b
-	orr	v0.16b, v0.16b, v1.16b
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
+	and	w0, w0, #0x7f00
+	bfxil	w0, w1, #0, #8
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	bic	v1.4h, #255, lsl #8
-	bic	v0.4s, #255
-	ushll	v1.4s, v1.4h, #0
-	orr	v0.16b, v0.16b, v1.16b
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
+                                        // kill: def $w0 killed $w0 def $x0
+	bfxil	w0, w1, #0, #8
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	movi	v2.4s, #60
-	bic	v1.4h, #255, lsl #8
-	ushll	v1.4s, v1.4h, #0
-	and	v0.16b, v0.16b, v2.16b
-	orr	v0.16b, v0.16b, v1.16b
-	ushll2	v1.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
+	and	w8, w1, #0xff
+	and	w9, w0, #0x3c
+	orr	w0, w9, w8
 	ret
                                         // -- End function

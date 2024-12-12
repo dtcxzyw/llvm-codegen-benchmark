@@ -35,9 +35,9 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/DiagnosticIDs.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000023(i1 %0, i32 %1) #0 {
+define i32 @func0000000000000063(i1 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %1, 300
+  %2 = icmp samesign ugt i32 %1, 300
   %3 = select i1 %2, i32 165, i32 0
   %4 = add nuw nsw i32 %3, 317
   %5 = select i1 %0, i32 %4, i32 %3

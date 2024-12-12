@@ -1,7 +1,6 @@
 
-; 23 occurrences:
+; 22 occurrences:
 ; flac/optimized/options.c.ll
-; linux/optimized/uthex.ll
 ; mold/optimized/cmdline.cc.ALPHA.cc.ll
 ; mold/optimized/cmdline.cc.ARM32.cc.ll
 ; mold/optimized/cmdline.cc.ARM64.cc.ll
@@ -28,7 +27,7 @@ define i8 @func0000000000000000(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add i8 %1, %2
   %4 = shl i8 %3, 4
-  %5 = or i8 %4, %0
+  %5 = or i8 %0, %4
   ret i8 %5
 }
 
@@ -39,7 +38,7 @@ define i8 @func0000000000000005(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add i8 %1, %2
   %4 = shl nuw i8 %3, 4
-  %5 = or disjoint i8 %4, %0
+  %5 = or disjoint i8 %0, %4
   ret i8 %5
 }
 
@@ -50,7 +49,7 @@ define i8 @func000000000000001c(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add nuw nsw i8 %1, %2
   %4 = shl nuw i8 %3, 6
-  %5 = or i8 %4, %0
+  %5 = or i8 %0, %4
   ret i8 %5
 }
 
@@ -61,7 +60,7 @@ define i8 @func0000000000000001(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add i8 %1, %2
   %4 = shl i8 %3, 4
-  %5 = or disjoint i8 %4, %0
+  %5 = or disjoint i8 %0, %4
   ret i8 %5
 }
 

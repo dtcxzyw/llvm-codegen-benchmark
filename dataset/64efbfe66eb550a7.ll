@@ -15,14 +15,7 @@ entry:
   ret ptr %5
 }
 
-; 8 occurrences:
-; ceres/optimized/cgnr_solver.cc.ll
-; ceres/optimized/dense_sparse_matrix.cc.ll
-; ceres/optimized/iterative_schur_complement_solver.cc.ll
-; ceres/optimized/power_series_expansion_preconditioner.cc.ll
-; ceres/optimized/residual_block.cc.ll
-; ceres/optimized/schur_complement_solver.cc.ll
-; ceres/optimized/trust_region_minimizer.cc.ll
+; 1 occurrences:
 ; gromacs/optimized/params.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
@@ -32,6 +25,24 @@ entry:
   %4 = shl nsw i64 %3, 3
   %5 = getelementptr nusw i8, ptr %0, i64 %4
   ret ptr %5
+}
+
+; 7 occurrences:
+; ceres/optimized/cgnr_solver.cc.ll
+; ceres/optimized/dense_sparse_matrix.cc.ll
+; ceres/optimized/iterative_schur_complement_solver.cc.ll
+; ceres/optimized/power_series_expansion_preconditioner.cc.ll
+; ceres/optimized/residual_block.cc.ll
+; ceres/optimized/schur_complement_solver.cc.ll
+; ceres/optimized/trust_region_minimizer.cc.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
+entry:
+  %2 = sdiv i32 %1, 4
+  %3 = sext i32 %2 to i64
+  %.idx = shl nsw i64 %3, 5
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %.idx
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

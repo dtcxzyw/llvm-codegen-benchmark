@@ -24,7 +24,9 @@ entry:
   ret i1 %4
 }
 
-; 5 occurrences:
+; 7 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; graphviz/optimized/mm2gv.c.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/meshselect.cpp.ll

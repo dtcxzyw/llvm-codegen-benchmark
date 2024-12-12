@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 17 occurrences:
 ; influxdb-rs/optimized/1s5ibqekmzia6ibu.ll
 ; qdrant-rs/optimized/pgs97hhgng8x0qz.ll
 ; rust-analyzer-rs/optimized/12c5ozyvkyoo7zj1.ll
@@ -15,6 +15,8 @@
 ; wasmtime-rs/optimized/1bmc0pjvdnh09g73.ll
 ; wasmtime-rs/optimized/26trd4atg57wyjbd.ll
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
+; zed-rs/optimized/34wa3jua7n3vs803j44lzfk5b.ll
+; zed-rs/optimized/cu6jannw5ajqip9tl6sqjzagm.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:

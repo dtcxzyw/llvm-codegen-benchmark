@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; abc/optimized/giaEquiv.c.ll
 ; abc/optimized/ivyHaig.c.ll
 ; llvm/optimized/ExprConstant.cpp.ll
@@ -11,6 +11,7 @@
 ; llvm/optimized/SemaLambda.cpp.ll
 ; llvm/optimized/SemaLookup.cpp.ll
 ; llvm/optimized/SemaRISCV.cpp.ll
+; qemu/optimized/hw_net_can_ctucan_core.c.ll
 ; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
@@ -22,9 +23,8 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; glslang/optimized/intermOut.cpp.ll
-; linux/optimized/intel_execlists_submission.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
 entry:

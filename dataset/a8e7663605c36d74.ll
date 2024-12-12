@@ -15,7 +15,7 @@
 define i32 @func000000000000000f(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = mul nuw nsw i32 %3, 37
   ret i32 %4
 }
@@ -27,7 +27,7 @@ entry:
 define i32 @func000000000000000e(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = mul nuw i32 %3, 37
   ret i32 %4
 }
@@ -38,7 +38,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = mul nsw i32 %3, -778
   ret i32 %4
 }
@@ -54,7 +54,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = mul nsw i32 %3, 3
   ret i32 %4
 }
@@ -65,8 +65,20 @@ entry:
 define i32 @func000000000000000c(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = mul i32 %3, -12289
+  ret i32 %4
+}
+
+; 2 occurrences:
+; lvgl/optimized/lv_label.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i32 %0, i16 %1) #0 {
+entry:
+  %2 = zext i16 %1 to i32
+  %3 = add nsw i32 %0, %2
+  %4 = mul i32 %3, -3
   ret i32 %4
 }
 
@@ -86,19 +98,8 @@ entry:
 define i32 @func0000000000000000(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = mul i32 %3, 1025
-  ret i32 %4
-}
-
-; 1 occurrences:
-; sqlite/optimized/sqlite3.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i16 %1) #0 {
-entry:
-  %2 = zext i16 %1 to i32
-  %3 = add nsw i32 %2, %0
-  %4 = mul i32 %3, 13
   ret i32 %4
 }
 

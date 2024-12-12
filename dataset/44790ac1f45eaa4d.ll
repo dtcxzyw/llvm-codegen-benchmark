@@ -85,7 +85,7 @@ entry:
   ret i1 %5
 }
 
-; 26 occurrences:
+; 25 occurrences:
 ; cmake/optimized/Base64.c.ll
 ; darktable/optimized/RawImageDataU16.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_distr.cpp.ll
@@ -98,7 +98,6 @@ entry:
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/n_tty.ll
 ; linux/optimized/update.ll
-; llvm/optimized/CodeMoverUtils.cpp.ll
 ; llvm/optimized/ELF.cpp.ll
 ; minetest/optimized/CGUIScrollBar.cpp.ll
 ; mitsuba3/optimized/sdfgrid.cpp.ll
@@ -121,16 +120,11 @@ entry:
   ret i1 %5
 }
 
-; 11 occurrences:
-; arrow/optimized/scalar.cc.ll
-; arrow/optimized/scalar_cast_temporal.cc.ll
-; arrow/optimized/value_parsing.cc.ll
+; 6 occurrences:
 ; cpython/optimized/mpdecimal.ll
 ; linux/optimized/e100.ll
 ; linux/optimized/scsi_ioctl.ll
 ; minetest/optimized/content_mapblock.cpp.ll
-; wireshark/optimized/hcidump.c.ll
-; wireshark/optimized/packet-mpeg-sect.c.ll
 ; wireshark/optimized/packet-nano.c.ll
 ; wolfssl/optimized/coding.c.ll
 ; Function Attrs: nounwind
@@ -142,8 +136,9 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
+; opencv/optimized/stringutils.cpp.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openusd/optimized/unicodeUtils.cpp.ll
 ; Function Attrs: nounwind
@@ -155,11 +150,9 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
+; 6 occurrences:
 ; cmake/optimized/cmFileInstaller.cxx.ll
 ; linux/optimized/intel_bios.ll
-; linux/optimized/nf_conntrack_proto_icmpv6.ll
-; llvm/optimized/SimplifyIndVar.cpp.ll
 ; openusd/optimized/unicodeUtils.cpp.ll
 ; proxygen/optimized/HTTPTransaction.cpp.ll
 ; wireshark/optimized/packet-tcpcl.c.ll
@@ -181,6 +174,19 @@ entry:
 define i1 @func0000000000000006(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp slt i8 %2, 0
+  %4 = select i1 %3, i1 true, i1 %1
+  %5 = select i1 %4, i1 true, i1 %0
+  ret i1 %5
+}
+
+; 3 occurrences:
+; arrow/optimized/scalar.cc.ll
+; arrow/optimized/scalar_cast_temporal.cc.ll
+; arrow/optimized/value_parsing.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i1 %1, i8 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i8 %2, 23
   %4 = select i1 %3, i1 true, i1 %1
   %5 = select i1 %4, i1 true, i1 %0
   ret i1 %5

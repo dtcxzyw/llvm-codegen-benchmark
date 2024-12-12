@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 20 occurrences:
 ; clamav/optimized/tiff.c.ll
 ; darktable/optimized/AbstractLJpegDecoder.cpp.ll
 ; darktable/optimized/CiffEntry.cpp.ll
@@ -9,7 +9,6 @@
 ; darktable/optimized/TiffEntry.cpp.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; linux/optimized/hda_intel.ll
-; linux/optimized/swphy.ll
 ; llvm/optimized/COFFObjectFile.cpp.ll
 ; postgres/optimized/nbtutils.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll

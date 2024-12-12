@@ -52,10 +52,9 @@ entry:
   ret i64 %6
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; linux/optimized/acpi-cpufreq.ll
 ; linux/optimized/ibs.ll
-; linux/optimized/msr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:

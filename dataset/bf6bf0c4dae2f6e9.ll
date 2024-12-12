@@ -140,7 +140,6 @@
 ; linux/optimized/sparse.ll
 ; linux/optimized/vgacon.ll
 ; linux/optimized/virtio_net.ll
-; linux/optimized/wep.ll
 ; linux/optimized/xfrm_replay.ll
 ; llvm/optimized/AArch64O0PreLegalizerCombiner.cpp.ll
 ; llvm/optimized/AArch64PostLegalizerCombiner.cpp.ll
@@ -279,7 +278,6 @@
 ; php/optimized/ir_cfg.ll
 ; php/optimized/ir_ra.ll
 ; php/optimized/json_encoder.ll
-; postgres/optimized/rangetypes_gist.ll
 ; qemu/optimized/hw_char_virtio-serial-bus.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; raylib/optimized/raudio.c.ll
@@ -367,6 +365,8 @@
 ; z3/optimized/value_factory.cpp.ll
 ; z3/optimized/value_generator.cpp.ll
 ; z3/optimized/value_sweep.cpp.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0) #0 {
 entry:
@@ -376,7 +376,8 @@ entry:
   ret i32 %3
 }
 
-; 51 occurrences:
+; 52 occurrences:
+; boost/optimized/area.ll
 ; cmake/optimized/json_writer.cpp.ll
 ; cpython/optimized/_json.ll
 ; cpython/optimized/unicodeobject.ll
@@ -394,12 +395,12 @@ entry:
 ; linux/optimized/slub.ll
 ; linux/optimized/uncore.ll
 ; llvm/optimized/APFloat.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; nlohmann_json/optimized/unit-deserialization.cpp.ll
 ; nlohmann_json/optimized/unit-wstring.cpp.ll
 ; node/optimized/simdutf.ll
 ; openjdk/optimized/oopMapCache.ll
 ; openjdk/optimized/registerMap_x86.ll
-; postgres/optimized/brin_xlog.ll
 ; postgres/optimized/bufpage.ll
 ; postgres/optimized/ginentrypage.ll
 ; postgres/optimized/gist.ll
@@ -437,7 +438,7 @@ entry:
   ret i32 %3
 }
 
-; 63 occurrences:
+; 67 occurrences:
 ; abc/optimized/giaEra2.c.ll
 ; assimp/optimized/zip.c.ll
 ; freetype/optimized/pcf.c.ll
@@ -448,6 +449,9 @@ entry:
 ; libsodium/optimized/libsodium_la-codecs.ll
 ; libwebp/optimized/cost_enc.c.ll
 ; libwebp/optimized/token_enc.c.ll
+; libwebp/optimized/upsampling.c.ll
+; libwebp/optimized/upsampling_sse2.c.ll
+; libwebp/optimized/yuv.c.ll
 ; linux/optimized/evdev.ll
 ; linux/optimized/vlv_dsi_pll.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
@@ -501,6 +505,7 @@ entry:
 ; velox/optimized/TryExpr.cpp.ll
 ; velox/optimized/VectorFuzzer.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
+; verilator/optimized/V3Const__gen.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0) #0 {
 entry:
@@ -526,7 +531,8 @@ entry:
   ret i32 %3
 }
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/to_chars.ll
 ; faiss/optimized/lattice_Zn.cpp.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; libpng/optimized/pngread.c.ll

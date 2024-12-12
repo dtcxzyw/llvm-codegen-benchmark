@@ -1,55 +1,18 @@
 
-%class.QFileInfo.3257429 = type { %class.QSharedDataPointer.38.3257430 }
-%class.QSharedDataPointer.38.3257430 = type { ptr }
+%class.QFileInfo.3448300 = type { %class.QSharedDataPointer.38.3448301 }
+%class.QSharedDataPointer.38.3448301 = type { ptr }
 
-; 212 occurrences:
+; 64 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
-; arrow/optimized/key_value_metadata.cc.ll
-; cmake/optimized/cmCMakePresetsGraphReadJSON.cxx.ll
-; cmake/optimized/cmCMakePresetsGraphReadJSONBuildPresets.cxx.ll
-; cmake/optimized/cmCMakePresetsGraphReadJSONConfigurePresets.cxx.ll
-; cmake/optimized/cmCMakePresetsGraphReadJSONPackagePresets.cxx.ll
-; cmake/optimized/cmCMakePresetsGraphReadJSONTestPresets.cxx.ll
-; cmake/optimized/cmCMakePresetsGraphReadJSONWorkflowPresets.cxx.ll
-; cmake/optimized/cmCTestResourceSpec.cxx.ll
-; cmake/optimized/cmComputeLinkInformation.cxx.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/parser_utils.ll
+; boost/optimized/read_graphviz_new.ll
 ; cmake/optimized/cmFindBase.cxx.ll
-; cmake/optimized/cmGccDepfileLexerHelper.cxx.ll
-; cmake/optimized/cmList.cxx.ll
-; cmake/optimized/cmMakefile.cxx.ll
-; cmake/optimized/cmNinjaTargetGenerator.cxx.ll
-; cmake/optimized/cmQtAutoMocUic.cxx.ll
-; cmake/optimized/cmSystemTools.cxx.ll
-; cmake/optimized/cmXcFramework.cxx.ll
 ; cvc5/optimized/cegis_core_connective.cpp.ll
-; cvc5/optimized/core_solver.cpp.ll
-; cvc5/optimized/function_const.cpp.ll
-; cvc5/optimized/lfsc_post_processor.cpp.ll
-; cvc5/optimized/quantifiers_attributes.cpp.ll
-; cvc5/optimized/quantifiers_rewriter.cpp.ll
-; cvc5/optimized/theory_ff_rewriter.cpp.ll
-; cvc5/optimized/theory_uf_rewriter.cpp.ll
-; cvc5/optimized/trigger_database.cpp.ll
-; cxxopts/optimized/example.cpp.ll
 ; draco/optimized/point_cloud.cc.ll
-; duckdb/optimized/ub_duckdb_common.cpp.ll
-; duckdb/optimized/ub_duckdb_func_table.cpp.ll
-; duckdb/optimized/ub_duckdb_function.cpp.ll
-; duckdb/optimized/ub_duckdb_optimizer.cpp.ll
-; duckdb/optimized/ub_duckdb_optimizer_join_order.cpp.ll
-; duckdb/optimized/ub_duckdb_optimizer_rules.cpp.ll
-; duckdb/optimized/ub_duckdb_optimizer_statistics_expr.cpp.ll
-; duckdb/optimized/ub_duckdb_optimizer_statistics_op.cpp.ll
-; duckdb/optimized/ub_duckdb_storage.cpp.ll
-; duckdb/optimized/ub_duckdb_transaction.cpp.ll
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
-; eastl/optimized/BenchmarkString.cpp.ll
-; eastl/optimized/BenchmarkTupleVector.cpp.ll
-; eastl/optimized/EASprintfCore.cpp.ll
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
-; faiss/optimized/IndexReplicas.cpp.ll
-; faiss/optimized/IndexShards.cpp.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/EDFThreadPoolExecutor.cpp.ll
 ; folly/optimized/HugePages.cpp.ll
@@ -58,52 +21,28 @@
 ; folly/optimized/MuxIOThreadPoolExecutor.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
 ; folly/optimized/Uri.cpp.ll
-; glog/optimized/logging.cc.ll
-; gromacs/optimized/analysisdata.cpp.ll
-; gromacs/optimized/gmxcpp.cpp.ll
 ; gromacs/optimized/hbond.cpp.ll
 ; gromacs/optimized/topology.cpp.ll
 ; gromacs/optimized/topologyhelpers.cpp.ll
-; grpc/optimized/forkable.cc.ll
 ; hermes/optimized/CharacterProperties.cpp.ll
 ; hermes/optimized/IR.cpp.ll
 ; hermes/optimized/RegexParser.cpp.ll
 ; hyperscan/optimized/ComponentSequence.cpp.ll
 ; hyperscan/optimized/goughcompile.cpp.ll
-; jsonnet/optimized/vm.cpp.ll
 ; libphonenumber/optimized/phonenumberutil.cc.ll
-; libquic/optimized/command_line.cc.ll
-; libquic/optimized/quic_received_packet_manager.cc.ll
-; libquic/optimized/values.cc.ll
-; lief/optimized/FatBinary.cpp.ll
-; lief/optimized/Handler.cpp.ll
-; lief/optimized/ResourceNode.cpp.ll
-; lightgbm/optimized/dataset_loader.cpp.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/COFFObjectFile.cpp.ll
 ; llvm/optimized/CodeGenSchedule.cpp.ll
-; llvm/optimized/CodeLayout.cpp.ll
 ; llvm/optimized/DWARFDebugLine.cpp.ll
 ; llvm/optimized/Instructions.cpp.ll
 ; llvm/optimized/IntrinsicInst.cpp.ll
-; llvm/optimized/MachineRegionInfo.cpp.ll
 ; llvm/optimized/MachineRegisterInfo.cpp.ll
-; llvm/optimized/MemProfContextDisambiguation.cpp.ll
 ; llvm/optimized/RISCVISAInfo.cpp.ll
-; llvm/optimized/RegionInfo.cpp.ll
-; llvm/optimized/RewriteStatepointsForGC.cpp.ll
 ; llvm/optimized/SemaLookup.cpp.ll
 ; llvm/optimized/StackLifetime.cpp.ll
 ; llvm/optimized/X86AsmParser.cpp.ll
-; luau/optimized/InsertionOrderedMap.test.cpp.ll
 ; luau/optimized/SharedCodeAllocator.cpp.ll
-; meshlab/optimized/edit_mutualcorrs.cpp.ll
-; meshlab/optimized/edit_referencing.cpp.ll
-; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/CNullDriver.cpp.ll
-; minetest/optimized/craftdef.cpp.ll
-; minetest/optimized/httpfetch.cpp.ll
-; minetest/optimized/settings.cpp.ll
 ; mold/optimized/input-files.cc.ALPHA.cc.ll
 ; mold/optimized/input-files.cc.ARM32.cc.ll
 ; mold/optimized/input-files.cc.ARM64.cc.ll
@@ -122,6 +61,81 @@
 ; mold/optimized/input-files.cc.SH4.cc.ll
 ; mold/optimized/input-files.cc.SPARC64.cc.ll
 ; mold/optimized/input-files.cc.X86_64.cc.ll
+; opencv/optimized/bagofwords_classification.cpp.ll
+; openusd/optimized/sdfdump.cpp.ll
+; openusd/optimized/sdffilter.cpp.ll
+; rocksdb/optimized/vectorrep.cc.ll
+; spike/optimized/socketif.ll
+; velox/optimized/URLFunctions.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000079(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw ptr, ptr %1, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 8
+  %5 = ptrtoint ptr %4 to i64
+  %6 = sub i64 %0, %5
+  %7 = ashr exact i64 %6, 3
+  ret i64 %7
+}
+
+; 145 occurrences:
+; arrow/optimized/key_value_metadata.cc.ll
+; cmake/optimized/cmCMakePresetsGraphReadJSON.cxx.ll
+; cmake/optimized/cmCMakePresetsGraphReadJSONBuildPresets.cxx.ll
+; cmake/optimized/cmCMakePresetsGraphReadJSONConfigurePresets.cxx.ll
+; cmake/optimized/cmCMakePresetsGraphReadJSONPackagePresets.cxx.ll
+; cmake/optimized/cmCMakePresetsGraphReadJSONTestPresets.cxx.ll
+; cmake/optimized/cmCMakePresetsGraphReadJSONWorkflowPresets.cxx.ll
+; cmake/optimized/cmCTestResourceSpec.cxx.ll
+; cmake/optimized/cmComputeLinkInformation.cxx.ll
+; cmake/optimized/cmGccDepfileLexerHelper.cxx.ll
+; cmake/optimized/cmList.cxx.ll
+; cmake/optimized/cmMakefile.cxx.ll
+; cmake/optimized/cmNinjaTargetGenerator.cxx.ll
+; cmake/optimized/cmQtAutoMocUic.cxx.ll
+; cmake/optimized/cmSystemTools.cxx.ll
+; cmake/optimized/cmXcFramework.cxx.ll
+; cvc5/optimized/trigger_database.cpp.ll
+; cxxopts/optimized/example.cpp.ll
+; duckdb/optimized/ub_duckdb_common.cpp.ll
+; duckdb/optimized/ub_duckdb_func_table.cpp.ll
+; duckdb/optimized/ub_duckdb_function.cpp.ll
+; duckdb/optimized/ub_duckdb_optimizer.cpp.ll
+; duckdb/optimized/ub_duckdb_optimizer_join_order.cpp.ll
+; duckdb/optimized/ub_duckdb_optimizer_rules.cpp.ll
+; duckdb/optimized/ub_duckdb_optimizer_statistics_expr.cpp.ll
+; duckdb/optimized/ub_duckdb_optimizer_statistics_op.cpp.ll
+; duckdb/optimized/ub_duckdb_storage.cpp.ll
+; duckdb/optimized/ub_duckdb_transaction.cpp.ll
+; eastl/optimized/BenchmarkString.cpp.ll
+; eastl/optimized/BenchmarkTupleVector.cpp.ll
+; faiss/optimized/IndexReplicas.cpp.ll
+; faiss/optimized/IndexShards.cpp.ll
+; glog/optimized/logging.cc.ll
+; gromacs/optimized/analysisdata.cpp.ll
+; gromacs/optimized/gmxcpp.cpp.ll
+; grpc/optimized/forkable.cc.ll
+; hermes/optimized/RegexParser.cpp.ll
+; jsonnet/optimized/vm.cpp.ll
+; libquic/optimized/command_line.cc.ll
+; libquic/optimized/quic_received_packet_manager.cc.ll
+; libquic/optimized/values.cc.ll
+; lief/optimized/FatBinary.cpp.ll
+; lief/optimized/Handler.cpp.ll
+; lief/optimized/ResourceNode.cpp.ll
+; lightgbm/optimized/dataset_loader.cpp.ll
+; llvm/optimized/CodeLayout.cpp.ll
+; llvm/optimized/MachineRegionInfo.cpp.ll
+; llvm/optimized/MemProfContextDisambiguation.cpp.ll
+; llvm/optimized/RegionInfo.cpp.ll
+; llvm/optimized/RewriteStatepointsForGC.cpp.ll
+; luau/optimized/InsertionOrderedMap.test.cpp.ll
+; meshlab/optimized/edit_mutualcorrs.cpp.ll
+; meshlab/optimized/edit_referencing.cpp.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; minetest/optimized/craftdef.cpp.ll
+; minetest/optimized/httpfetch.cpp.ll
+; minetest/optimized/settings.cpp.ll
 ; nix/optimized/binary-cache-store.ll
 ; nix/optimized/cache.ll
 ; nix/optimized/config.ll
@@ -197,17 +211,12 @@
 ; openusd/optimized/usdtree.cpp.ll
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
-; rocksdb/optimized/vectorrep.cc.ll
 ; sentencepiece/optimized/unigram_model.cc.ll
-; spike/optimized/socketif.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; tomlplusplus/optimized/toml.cpp.ll
 ; vcpkg/optimized/cmd-parser.cpp.ll
-; velox/optimized/URLFunctions.cpp.ll
 ; yaml-cpp/optimized/node_data.cpp.ll
 ; yosys/optimized/bugpoint.ll
 ; yosys/optimized/proc_clean.ll
@@ -216,17 +225,17 @@
 ; yosys/optimized/rmports.ll
 ; yosys/optimized/subcircuit.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000051(i64 %0, ptr %1, i64 %2) #0 {
+define i64 @func0000000000000059(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw ptr, ptr %1, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 8
+  %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 64
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
-  %7 = ashr exact i64 %6, 3
+  %7 = ashr exact i64 %6, 6
   ret i64 %7
 }
 
-; 12 occurrences:
+; 8 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; hyperscan/optimized/ng_execute.cpp.ll
@@ -234,19 +243,31 @@ entry:
 ; hyperscan/optimized/ng_haig.cpp.ll
 ; hyperscan/optimized/ng_mcclellan.cpp.ll
 ; libquic/optimized/spdy_alt_svc_wire_format.cc.ll
+; vcpkg/optimized/versions.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000078(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 1
+  %5 = ptrtoint ptr %4 to i64
+  %6 = sub i64 %0, %5
+  %7 = ashr i64 %6, 2
+  ret i64 %7
+}
+
+; 4 occurrences:
 ; llvm/optimized/Inliner.cpp.ll
 ; llvm/optimized/LazyCallGraph.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
-; vcpkg/optimized/versions.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000050(i64 %0, ptr %1, i64 %2) #0 {
+define i64 @func0000000000000058(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %1, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 1
+  %3 = getelementptr nusw ptr, ptr %1, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 8
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
-  %7 = ashr i64 %6, 2
+  %7 = ashr i64 %6, 5
   ret i64 %7
 }
 
@@ -259,11 +280,24 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr %class.QFileInfo.3257429, ptr %1, i64 %2
+  %3 = getelementptr %class.QFileInfo.3448300, ptr %1, i64 %2
   %4 = getelementptr i8, ptr %3, i64 8
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
   %7 = ashr exact i64 %6, 3
+  ret i64 %7
+}
+
+; 1 occurrences:
+; eastl/optimized/EASprintfCore.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000071(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i16, ptr %1, i64 %2
+  %4 = getelementptr nusw i8, ptr %3, i64 -2
+  %5 = ptrtoint ptr %4 to i64
+  %6 = sub i64 %0, %5
+  %7 = ashr exact i64 %6, 1
   ret i64 %7
 }
 

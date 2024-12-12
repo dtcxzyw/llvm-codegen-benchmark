@@ -10,7 +10,7 @@ entry:
   %3 = zext i16 %2 to i64
   %4 = and i64 %1, 2031616
   %5 = or disjoint i64 %4, %3
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -37,7 +37,7 @@ entry:
   %3 = zext i16 %2 to i64
   %4 = and i64 %1, -8064
   %5 = or i64 %4, %3
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -49,7 +49,7 @@ entry:
   %3 = zext i16 %2 to i64
   %4 = and i64 %1, 2031616
   %5 = or disjoint i64 %4, %3
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 

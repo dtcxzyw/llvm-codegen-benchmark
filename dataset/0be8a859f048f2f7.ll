@@ -1,6 +1,18 @@
 
-%struct.ImVec2.3263795 = type { float, float }
-%struct.NullableDatum.3467555 = type { i64, i8 }
+%struct.ImVec2.3454338 = type { float, float }
+%struct.NullableDatum.3651746 = type { i64, i8 }
+
+; 1 occurrences:
+; hdf5/optimized/H5FDmulti.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp eq i32 %2, 0
+  %4 = select i1 %3, i32 %1, i32 %2
+  %5 = sext i32 %4 to i64
+  %6 = getelementptr nusw nuw [7 x i32], ptr %0, i64 0, i64 %5
+  ret ptr %6
+}
 
 ; 2 occurrences:
 ; hdf5/optimized/H5FDmulti.c.ll
@@ -11,7 +23,7 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 %2
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw [7 x i32], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw [7 x ptr], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -24,7 +36,7 @@ entry:
   %3 = icmp slt i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 %2
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw [48 x %struct.ImVec2.3263795], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw [48 x %struct.ImVec2.3454338], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -36,7 +48,7 @@ entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 %2
   %5 = sext i32 %4 to i64
-  %6 = getelementptr [0 x %struct.NullableDatum.3467555], ptr %0, i64 0, i64 %5
+  %6 = getelementptr [0 x %struct.NullableDatum.3651746], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 

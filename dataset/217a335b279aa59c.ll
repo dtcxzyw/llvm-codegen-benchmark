@@ -1,5 +1,6 @@
 
-; 12 occurrences:
+; 13 occurrences:
+; boost/optimized/alloc_lib.ll
 ; linux/optimized/ds.ll
 ; linux/optimized/extents_status.ll
 ; linux/optimized/ibs.ll

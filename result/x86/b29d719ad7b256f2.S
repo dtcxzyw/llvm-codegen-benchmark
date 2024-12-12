@@ -16,7 +16,7 @@ func000000000000003b:                   # @func000000000000003b
 	movzbl	%dl, %eax
 	shlq	$8, %rsi
 	orq	%rsi, %rax
-	shlq	$32, %rdi
+	shlq	$16, %rdi
 	orq	%rdi, %rax
 	retq
 func000000000000000c:                   # @func000000000000000c
@@ -52,5 +52,12 @@ func0000000000000033:                   # @func0000000000000033
 	shlq	$8, %rsi
 	orq	%rsi, %rax
 	shlq	$16, %rdi
+	orq	%rdi, %rax
+	retq
+func000000000000002f:                   # @func000000000000002f
+	movzbl	%dl, %eax
+	shlq	$16, %rsi
+	orq	%rsi, %rax
+	shlq	$8, %rdi
 	orq	%rdi, %rax
 	retq

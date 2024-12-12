@@ -1,7 +1,8 @@
 
-; 170 occurrences:
+; 187 occurrences:
 ; abc/optimized/mioSop.c.ll
 ; abseil-cpp/optimized/container_test.cc.ll
+; boost/optimized/topology.ll
 ; bullet3/optimized/b3Generic6DofConstraint.ll
 ; bullet3/optimized/b3Point2PointConstraint.ll
 ; bullet3/optimized/btConeTwistConstraint.ll
@@ -39,23 +40,36 @@
 ; linux/optimized/ip6_output.ll
 ; linux/optimized/xfrm_policy.ll
 ; llama.cpp/optimized/common.cpp.ll
+; llvm/optimized/ASTImporter.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
+; llvm/optimized/ASTUtils.cpp.ll
+; llvm/optimized/ASTWriterStmt.cpp.ll
 ; llvm/optimized/CGClass.cpp.ll
 ; llvm/optimized/CGExprCXX.cpp.ll
+; llvm/optimized/Decl.cpp.ll
 ; llvm/optimized/DeclCXX.cpp.ll
 ; llvm/optimized/DeclPrinter.cpp.ll
 ; llvm/optimized/ExprCXX.cpp.ll
+; llvm/optimized/ExprObjC.cpp.ll
 ; llvm/optimized/ItaniumMangle.cpp.ll
+; llvm/optimized/JSONNodeDumper.cpp.ll
+; llvm/optimized/MacOSKeychainAPIChecker.cpp.ll
+; llvm/optimized/MallocChecker.cpp.ll
+; llvm/optimized/ScopeInfo.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SemaConcept.cpp.ll
+; llvm/optimized/SemaDeclAttr.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
+; llvm/optimized/SemaOpenACC.cpp.ll
+; llvm/optimized/SemaOverload.cpp.ll
 ; llvm/optimized/SemaStmt.cpp.ll
 ; llvm/optimized/SemaTemplate.cpp.ll
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
 ; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
-; llvm/optimized/ValueTracking.cpp.ll
+; llvm/optimized/TextNodeDumper.cpp.ll
+; llvm/optimized/UncountedLocalVarsChecker.cpp.ll
 ; luajit/optimized/minilua.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/CImageLoaderBMP.cpp.ll
@@ -114,7 +128,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -131,11 +144,16 @@
 ; openjdk/optimized/hb-ot-math.ll
 ; openssl/optimized/libcrypto-lib-bn_lib.ll
 ; openssl/optimized/libcrypto-shlib-bn_lib.ll
+; openusd/optimized/env.cpp.ll
+; openusd/optimized/info.cpp.ll
+; openusd/optimized/instanceAdapter.cpp.ll
+; openusd/optimized/mallocTag.cpp.ll
+; openusd/optimized/pointInstancerAdapter.cpp.ll
+; openusd/optimized/reporter.cpp.ll
 ; php/optimized/ir_ra.ll
 ; php/optimized/softmagic.ll
 ; postgres/optimized/array_userfuncs.ll
 ; postgres/optimized/be-fsstubs.ll
-; postgres/optimized/char.ll
 ; postgres/optimized/date.ll
 ; postgres/optimized/encode.ll
 ; postgres/optimized/formatting.ll
@@ -168,14 +186,13 @@
 ; xgboost/optimized/input_split_base.cc.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(ptr %0, ptr %1, i32 %2) #0 {
+define ptr @func0000000000000061(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 16
   %4 = icmp eq i32 %3, 0
-  %5 = getelementptr nusw i8, ptr %1, i64 112
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 112
   %6 = select i1 %4, ptr %5, ptr %0
   ret ptr %6
 }
@@ -197,40 +214,14 @@ entry:
   ret ptr %6
 }
 
-; 27 occurrences:
-; llvm/optimized/ASTImporter.cpp.ll
-; llvm/optimized/ASTUtils.cpp.ll
-; llvm/optimized/ASTWriterStmt.cpp.ll
-; llvm/optimized/Decl.cpp.ll
-; llvm/optimized/ExprObjC.cpp.ll
-; llvm/optimized/JSONNodeDumper.cpp.ll
-; llvm/optimized/MacOSKeychainAPIChecker.cpp.ll
-; llvm/optimized/MallocChecker.cpp.ll
-; llvm/optimized/ScopeInfo.cpp.ll
-; llvm/optimized/SemaConcept.cpp.ll
-; llvm/optimized/SemaDeclAttr.cpp.ll
-; llvm/optimized/SemaExprCXX.cpp.ll
-; llvm/optimized/SemaOpenACC.cpp.ll
-; llvm/optimized/SemaOverload.cpp.ll
-; llvm/optimized/SemaTemplate.cpp.ll
-; llvm/optimized/SemaTemplateDeduction.cpp.ll
-; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
-; llvm/optimized/SemaTemplateInstantiate.cpp.ll
-; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
-; llvm/optimized/TextNodeDumper.cpp.ll
-; llvm/optimized/UncountedLocalVarsChecker.cpp.ll
-; openusd/optimized/env.cpp.ll
-; openusd/optimized/info.cpp.ll
-; openusd/optimized/instanceAdapter.cpp.ll
-; openusd/optimized/mallocTag.cpp.ll
-; openusd/optimized/pointInstancerAdapter.cpp.ll
-; openusd/optimized/reporter.cpp.ll
+; 1 occurrences:
+; llvm/optimized/ValueTracking.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000031(ptr %0, ptr %1, i32 %2) #0 {
+define ptr @func0000000000000041(ptr %0, ptr %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 1
+  %3 = and i32 %2, 1073741824
   %4 = icmp eq i32 %3, 0
-  %5 = getelementptr nusw nuw i8, ptr %1, i64 72
+  %5 = getelementptr nusw i8, ptr %1, i64 -64
   %6 = select i1 %4, ptr %5, ptr %0
   ret ptr %6
 }

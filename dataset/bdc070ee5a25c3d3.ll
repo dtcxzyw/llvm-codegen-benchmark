@@ -8,7 +8,7 @@
 ; recastnavigation/optimized/DetourPathCorridor.cpp.ll
 ; yosys/optimized/splitnets.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000169(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000002a9(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %0
   %4 = icmp sgt i32 %3, %2
@@ -21,7 +21,7 @@ entry:
 ; 1 occurrences:
 ; recastnavigation/optimized/DetourPathCorridor.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000369(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000006a9(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %0
   %4 = icmp sgt i32 %3, %2

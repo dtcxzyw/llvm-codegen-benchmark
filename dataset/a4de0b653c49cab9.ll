@@ -1,11 +1,10 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; eastl/optimized/TestSort.cpp.ll
 ; image-rs/optimized/30755d6iao7ojcvl.ll
 ; jemalloc/optimized/sc.ll
 ; jemalloc/optimized/sc.pic.ll
 ; jemalloc/optimized/sc.sym.ll
-; linux/optimized/i915_gem_gtt.ll
 ; openusd/optimized/meshGeneratorBase.cpp.ll
 ; quantlib/optimized/fdmvppstartlimitstepcondition.ll
 ; quantlib/optimized/fdmvppstepcondition.ll

@@ -1,8 +1,3 @@
-func0000000000000020:                   # @func0000000000000020
-	movq	%rsi, %rax
-	cmpl	$11, %edx
-	cmovael	%edi, %eax
-	retq
 func0000000000000004:                   # @func0000000000000004
 	movq	%rsi, %rax
 	cmpl	$4, %edx
@@ -52,11 +47,6 @@ func0000000000000030:                   # @func0000000000000030
 	movq	%rdi, %rax
 	cmpl	$195, %edx
 	cmovel	%esi, %eax
-	retq
-func000000000000001a:                   # @func000000000000001a
-	movq	%rsi, %rax
-	testl	%edx, %edx
-	cmovsl	%edi, %eax
 	retq
 func0000000000000005:                   # @func0000000000000005
 	movq	%rsi, %rax

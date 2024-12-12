@@ -8,9 +8,9 @@ func000000000000000c:                   # @func000000000000000c
 	setne	%al
 	andb	%dil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000004:                   # @func0000000000000004
 	andl	%edx, %esi
-	cmpl	$64, %esi
-	setae	%al
+	cmpl	$16, %esi
+	setb	%al
 	andb	%dil, %al
 	retq

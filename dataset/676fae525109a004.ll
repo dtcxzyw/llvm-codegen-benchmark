@@ -3,9 +3,9 @@
 ; lief/optimized/rsa.c.ll
 ; openjdk/optimized/classFileParser.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000181(i64 %0, i32 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %0, %4
   %6 = sext i32 %1 to i64
@@ -23,9 +23,9 @@ entry:
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i64 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000186(i64 %0, i32 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %0, %4
   %6 = sext i32 %1 to i64
@@ -36,7 +36,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/snprintf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000104(i64 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -1
   %4 = ptrtoint ptr %3 to i64
@@ -46,13 +46,12 @@ entry:
   ret i1 %7
 }
 
-; 2 occurrences:
-; eastl/optimized/EASprintfCore.cpp.ll
+; 1 occurrences:
 ; velox/optimized/HashStringAllocator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i64 %0, i32 %1, ptr %2) #0 {
+define i1 @func000000000000018a(i64 %0, i32 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 4
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 4
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %0, %4
   %6 = sext i32 %1 to i64
@@ -76,13 +75,26 @@ entry:
 ; 1 occurrences:
 ; lua/optimized/loslib.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008b(i64 %0, i32 %1, ptr %2) #0 {
+define i1 @func000000000000018b(i64 %0, i32 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %0, %4
   %6 = sext i32 %1 to i64
   %7 = icmp sge i64 %5, %6
+  ret i1 %7
+}
+
+; 1 occurrences:
+; eastl/optimized/EASprintfCore.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000010a(i64 %0, i32 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -1
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %0, %4
+  %6 = sext i32 %1 to i64
+  %7 = icmp sgt i64 %5, %6
   ret i1 %7
 }
 

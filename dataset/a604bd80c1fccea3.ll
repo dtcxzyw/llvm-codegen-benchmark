@@ -1,13 +1,23 @@
 
-; 4 occurrences:
-; linux/optimized/tcp_output.ll
-; llvm/optimized/LoopStrengthReduce.cpp.ll
+; 2 occurrences:
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; lua/optimized/lgc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000061(i1 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 24
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 24
+  %4 = icmp eq ptr %1, %3
+  %not. = xor i1 %0, true
+  %5 = select i1 %not., i1 %4, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
+; llvm/optimized/LoopStrengthReduce.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000041(i1 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -32
   %4 = select i1 %0, ptr null, ptr %1
   %5 = icmp eq ptr %4, %3
   ret i1 %5

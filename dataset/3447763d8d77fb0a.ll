@@ -1,5 +1,5 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; eastl/optimized/TestBitVector.cpp.ll
 ; freetype/optimized/ftbase.c.ll
 ; lief/optimized/asn1write.c.ll
@@ -8,6 +8,7 @@
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; typst-rs/optimized/1mrwywpkq81cby93.ll
 ; velox/optimized/AsyncDataCache.cpp.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0) #0 {
 entry:

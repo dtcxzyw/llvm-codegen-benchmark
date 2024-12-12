@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 17 occurrences:
 ; arrow/optimized/decimal.cc.ll
 ; clamav/optimized/pdf.c.ll
 ; clamav/optimized/readdb.c.ll
@@ -11,21 +11,18 @@
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; luau/optimized/Lexer.cpp.ll
 ; node/optimized/libnode.node_http_parser.ll
-; regex-rs/optimized/v8mcpnwv4glojx2.ll
 ; ripgrep-rs/optimized/1blifwgi0jcy5tf4.ll
-; ripgrep-rs/optimized/58dexfd2ydnodcl0.ll
 ; ruby/optimized/ruby.ll
 ; rust-analyzer-rs/optimized/2deyu58ajds9ccnn.ll
-; rust-analyzer-rs/optimized/hknx1qr3lu9291s.ll
-; rust-analyzer-rs/optimized/kcxpblerbqo90m6.ll
 ; rustfmt-rs/optimized/4arc02n7xt9gqo2v.ll
 ; velox/optimized/TimestampConversion.cpp.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i8 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i8 %0, 13
   %.v = select i1 %2, i64 8, i64 7
-  %3 = add i64 %.v, %1
+  %3 = add i64 %1, %.v
   ret i64 %3
 }
 
@@ -35,11 +32,11 @@ entry:
 ; git/optimized/shell.ll
 ; php/optimized/pack.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000051(i8 %0, i64 %1) #0 {
+define i64 @func00000000000000a1(i8 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i8 %0, 42
   %.v = select i1 %2, i64 -2, i64 -1
-  %3 = add nsw i64 %.v, %1
+  %3 = add nsw i64 %1, %.v
   ret i64 %3
 }
 
@@ -49,11 +46,11 @@ entry:
 ; luau/optimized/BuiltinDefinitions.cpp.ll
 ; php/optimized/phpdbg_utils.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000081(i8 %0, i64 %1) #0 {
+define i64 @func0000000000000101(i8 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i8 %0, 93
   %.v = select i1 %2, i64 2, i64 1
-  %3 = add i64 %.v, %1
+  %3 = add i64 %1, %.v
   ret i64 %3
 }
 
@@ -61,11 +58,11 @@ entry:
 ; arrow/optimized/delimiting.cc.ll
 ; luau/optimized/Linter.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000a1(i8 %0, i64 %1) #0 {
+define i64 @func0000000000000141(i8 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i8 %0, 94
   %.v = select i1 %2, i64 2, i64 1
-  %3 = add nuw i64 %.v, %1
+  %3 = add nuw i64 %1, %.v
   ret i64 %3
 }
 
@@ -73,11 +70,11 @@ entry:
 ; cpython/optimized/bytearrayobject.ll
 ; cpython/optimized/bytesobject.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000f1(i8 %0, i64 %1) #0 {
+define i64 @func00000000000001e1(i8 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i8 %0, 10
   %.v = select i1 %2, i64 2, i64 1
-  %3 = add nuw nsw i64 %.v, %1
+  %3 = add nuw nsw i64 %1, %.v
   ret i64 %3
 }
 

@@ -51,14 +51,6 @@ func0000000000000107:                   # @func0000000000000107
 	vmfne.vf	v17, v8, fa5
 	vmand.mm	v0, v17, v16
 	ret
-func000000000000004c:                   # @func000000000000004c
-	fmv.d.x	fa5, zero
-	vsetivli	zero, 16, e64, m8, ta, ma
-	vmflt.vf	v24, v16, fa5
-	vmor.mm	v16, v24, v0
-	vmfge.vf	v17, v8, fa5
-	vmand.mm	v0, v17, v16
-	ret
 func00000000000000c6:                   # @func00000000000000c6
 	fli.d	fa5, inf
 	vsetivli	zero, 16, e64, m8, ta, ma
@@ -67,7 +59,7 @@ func00000000000000c6:                   # @func00000000000000c6
 	vmflt.vf	v16, v8, fa5
 	vmfgt.vf	v17, v8, fa5
 	vmor.mm	v8, v25, v24
-	vmor.mm	v8, v8, v0
+	vmor.mm	v8, v0, v8
 	vmor.mm	v9, v17, v16
 	vmand.mm	v0, v9, v8
 	ret
@@ -89,7 +81,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	vmflt.vf	v16, v8, fa5
 	vmfgt.vf	v17, v8, fa5
 	vmor.mm	v8, v25, v24
-	vmor.mm	v8, v8, v0
+	vmor.mm	v8, v0, v8
 	vmor.mm	v9, v17, v16
 	vmand.mm	v0, v8, v9
 	ret

@@ -1,3 +1,10 @@
+func0000000000000007:                   # @func0000000000000007
+	addl	$5, %edi
+	movzwl	%di, %eax
+	imull	$52429, %eax, %eax              # imm = 0xCCCD
+	shrl	$9, %eax
+	andl	$8387584, %eax                  # imm = 0x7FFC00
+	retq
 func00000000000000f7:                   # @func00000000000000f7
 	incl	%edi
 	movzwl	%di, %eax

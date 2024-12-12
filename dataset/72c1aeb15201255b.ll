@@ -14,20 +14,22 @@ entry:
   ret ptr %6
 }
 
-; 6 occurrences:
+; 8 occurrences:
+; boost/optimized/to_chars.ll
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
 ; gromacs/optimized/gmx_dipoles.cpp.ll
 ; openjdk/optimized/TimeZone_md.ll
+; zed-rs/optimized/dqryhdkxpzkfeay9pjzpwnhia.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i1 %1, i1 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = select i1 %1, i64 6, i64 0
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
   ret ptr %6
 }
 

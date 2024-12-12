@@ -34,18 +34,8 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
-; openusd/optimized/grain_synthesis.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000007(i64 %0, i1 %1) #0 {
-entry:
-  %2 = zext i1 %1 to i32
-  %3 = trunc nuw nsw i64 %0 to i32
-  %4 = or disjoint i32 %3, %2
-  ret i32 %4
-}
-
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/to_chars.ll
 ; cvc5/optimized/dual_simplex.cpp.ll
 ; cvc5/optimized/fc_simplex.cpp.ll
 ; cvc5/optimized/soi_simplex.cpp.ll
@@ -55,6 +45,17 @@ entry:
   %2 = zext i1 %1 to i32
   %3 = trunc nuw nsw i64 %0 to i32
   %4 = or i32 %3, %2
+  ret i32 %4
+}
+
+; 1 occurrences:
+; openusd/optimized/grain_synthesis.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000007(i64 %0, i1 %1) #0 {
+entry:
+  %2 = zext i1 %1 to i32
+  %3 = trunc nuw nsw i64 %0 to i32
+  %4 = or disjoint i32 %3, %2
   ret i32 %4
 }
 

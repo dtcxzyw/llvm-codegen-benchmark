@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; icu/optimized/collationweights.ll
 ; openjdk/optimized/X11PMBlitLoops.ll
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha1.ll
@@ -11,7 +11,6 @@
 ; php/optimized/zend_inference.ll
 ; postgres/optimized/varbit.ll
 ; ruby/optimized/regcomp.ll
-; rust-analyzer-rs/optimized/6218mmeycy2lka1.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__1.ll
@@ -21,26 +20,24 @@ define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 32
   %4 = select i1 %3, i32 %1, i32 1
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
-; 5 occurrences:
-; clamav/optimized/upack.c.ll
-; cmake/optimized/lzma2_encoder.c.ll
+; 3 occurrences:
 ; linux/optimized/intel_guc_log.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000030(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, 8
+  %3 = icmp samesign ugt i32 %2, 8
   %4 = select i1 %3, i32 %1, i32 0
   %5 = or i32 %4, %0
   ret i32 %5
 }
 
-; 39 occurrences:
+; 40 occurrences:
 ; abc/optimized/ifTune.c.ll
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver2.c.ll
@@ -76,6 +73,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-bn_gcd.ll
 ; openusd/optimized/ilmbase_half.cpp.ll
 ; php/optimized/zend_inference.ll
+; qemu/optimized/hw_net_cadence_gem.c.ll
 ; slurm/optimized/gres.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
@@ -89,7 +87,7 @@ entry:
   ret i32 %5
 }
 
-; 35 occurrences:
+; 33 occurrences:
 ; cmake/optimized/url.c.ll
 ; curl/optimized/libcurl_la-url.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
@@ -98,8 +96,6 @@ entry:
 ; imgui/optimized/imgui_tables.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libquic/optimized/file_posix.cc.ll
-; linux/optimized/attr.ll
-; linux/optimized/hdac_regmap.ll
 ; linux/optimized/ipv6_sockglue.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/yenta_socket.ll
@@ -141,7 +137,7 @@ define i32 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
   %4 = select i1 %3, i32 %1, i32 0
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 
@@ -167,7 +163,7 @@ define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 32
   %4 = select i1 %3, i32 %1, i32 54536
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
@@ -182,6 +178,17 @@ entry:
   %3 = select i1 %.not, i32 0, i32 %1
   %4 = or i32 %3, %0
   ret i32 %4
+}
+
+; 1 occurrences:
+; php/optimized/pcre2_compile.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 32
+  %4 = select i1 %3, i32 %1, i32 1
+  %5 = or i32 %4, %0
+  ret i32 %5
 }
 
 ; 2 occurrences:

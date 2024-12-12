@@ -1,9 +1,10 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; rust-analyzer-rs/optimized/1j91i64oabb508eh.ll
 ; rust-analyzer-rs/optimized/2o0d131ok2fe9kmx.ll
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
 ; typst-rs/optimized/1aflftgqyuracvze.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000070(ptr %0, i16 %1, i64 %2) #0 {
 entry:

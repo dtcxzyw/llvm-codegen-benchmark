@@ -28,7 +28,7 @@ entry:
   %3 = and i8 %2, 32
   %4 = xor i8 %3, 32
   %5 = zext nneg i8 %4 to i32
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   ret i32 %6
 }
 

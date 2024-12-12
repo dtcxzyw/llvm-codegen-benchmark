@@ -1,5 +1,6 @@
 
-; 18 occurrences:
+; 19 occurrences:
+; boost/optimized/matches_relation_factory.ll
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
 ; mold/optimized/output-chunks.cc.ARM64.cc.ll
@@ -19,7 +20,7 @@
 ; mold/optimized/output-chunks.cc.SPARC64.cc.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000066(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %2, %1
   %4 = sub i64 %0, %1
@@ -27,11 +28,8 @@ entry:
   ret i1 %5
 }
 
-; 26 occurrences:
+; 23 occurrences:
 ; entt/optimized/dense_set.cpp.ll
-; hyperscan/optimized/ng_find_matches.cpp.ll
-; hyperscan/optimized/ng_violet.cpp.ll
-; hyperscan/optimized/rose_build_program.cpp.ll
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
 ; mold/optimized/output-chunks.cc.ARM64.cc.ll
@@ -55,7 +53,7 @@ entry:
 ; zxing/optimized/DMDetector.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %0, %2
   ret i1 %3
@@ -167,7 +165,7 @@ entry:
 ; velox/optimized/InPredicate.cpp.ll
 ; xgboost/optimized/updater_colmaker.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %2, %1
   %4 = sub i64 %0, %1
@@ -240,7 +238,7 @@ entry:
 ; velox/optimized/InPredicate.cpp.ll
 ; xgboost/optimized/updater_colmaker.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %2, %1
   %4 = sub i64 %0, %1
@@ -308,7 +306,7 @@ entry:
 ; taskflow/optimized/visualization.cpp.ll
 ; taskflow/optimized/while_loop.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000039(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000069(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %2, %1
   %4 = sub i64 %0, %1

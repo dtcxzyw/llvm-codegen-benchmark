@@ -1,29 +1,10 @@
 
-; 13 occurrences:
+; 191 occurrences:
 ; hermes/optimized/SimplifyCFG.cpp.ll
 ; linux/optimized/chan.ll
 ; linux/optimized/hooks.ll
 ; linux/optimized/io-wq.ll
 ; linux/optimized/pci-driver.ll
-; llvm/optimized/LoopVectorize.cpp.ll
-; llvm/optimized/MergedLoadStoreMotion.cpp.ll
-; llvm/optimized/VPlan.cpp.ll
-; llvm/optimized/VPlanSLP.cpp.ll
-; luau/optimized/Simplify.cpp.ll
-; luau/optimized/Unifier2.cpp.ll
-; openusd/optimized/bboxCache.cpp.ll
-; openusd/optimized/stbImage.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000061(ptr %0, ptr %1, ptr %2) #0 {
-entry:
-  %3 = icmp eq ptr %2, null
-  %4 = select i1 %3, ptr null, ptr %1
-  %5 = getelementptr nusw i8, ptr %4, i64 8
-  %6 = icmp eq ptr %5, %0
-  ret i1 %6
-}
-
-; 178 occurrences:
 ; llvm/optimized/AArch64Arm64ECCallLowering.cpp.ll
 ; llvm/optimized/AArch64PromoteConstant.cpp.ll
 ; llvm/optimized/AArch64StackTagging.cpp.ll
@@ -123,6 +104,7 @@ entry:
 ; llvm/optimized/Lint.cpp.ll
 ; llvm/optimized/LoopUnroll.cpp.ll
 ; llvm/optimized/LoopUnrollAndJam.cpp.ll
+; llvm/optimized/LoopVectorize.cpp.ll
 ; llvm/optimized/LowerAllowCheckPass.cpp.ll
 ; llvm/optimized/LowerAtomicPass.cpp.ll
 ; llvm/optimized/LowerExpectIntrinsic.cpp.ll
@@ -136,6 +118,7 @@ entry:
 ; llvm/optimized/MemProfiler.cpp.ll
 ; llvm/optimized/MemorySSA.cpp.ll
 ; llvm/optimized/MergeFunctions.cpp.ll
+; llvm/optimized/MergedLoadStoreMotion.cpp.ll
 ; llvm/optimized/MetaRenamer.cpp.ll
 ; llvm/optimized/MetadataLoader.cpp.ll
 ; llvm/optimized/ModuleInliner.cpp.ll
@@ -193,6 +176,8 @@ entry:
 ; llvm/optimized/TypeFinder.cpp.ll
 ; llvm/optimized/TypePromotion.cpp.ll
 ; llvm/optimized/UniformityAnalysis.cpp.ll
+; llvm/optimized/VPlan.cpp.ll
+; llvm/optimized/VPlanSLP.cpp.ll
 ; llvm/optimized/ValueEnumerator.cpp.ll
 ; llvm/optimized/ValueMapper.cpp.ll
 ; llvm/optimized/ValueProfileCollector.cpp.ll
@@ -202,13 +187,17 @@ entry:
 ; llvm/optimized/X86LowerAMXType.cpp.ll
 ; llvm/optimized/X86PartialReduction.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
+; luau/optimized/Simplify.cpp.ll
+; luau/optimized/Unifier2.cpp.ll
+; openusd/optimized/bboxCache.cpp.ll
+; openusd/optimized/stbImage.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func00000000000000e1(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, ptr null, ptr %1
-  %5 = getelementptr nusw nuw i8, ptr %4, i64 48
-  %6 = icmp eq ptr %5, %0
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 8
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
@@ -216,36 +205,36 @@ entry:
 ; llvm/optimized/CoroElide.cpp.ll
 ; llvm/optimized/X86LowerAMXType.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007c(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func00000000000000ec(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, ptr null, ptr %1
   %5 = getelementptr nusw nuw i8, ptr %4, i64 48
-  %6 = icmp ne ptr %5, %0
+  %6 = icmp ne ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; openusd/optimized/stbImage.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func00000000000000e8(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, ptr null, ptr %1
-  %5 = getelementptr nusw i8, ptr %4, i64 88
-  %6 = icmp ult ptr %5, %0
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 88
+  %6 = icmp ugt ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; icu/optimized/ustrtrns.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(ptr %0, ptr %1, ptr %2) #0 {
+define i1 @func00000000000000c4(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %3, ptr null, ptr %1
   %5 = getelementptr nusw i8, ptr %4, i64 -3
-  %6 = icmp ugt ptr %5, %0
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 

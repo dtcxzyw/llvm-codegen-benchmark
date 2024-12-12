@@ -1,6 +1,5 @@
 
-; 2 occurrences:
-; grpc/optimized/hpack_parser.cc.ll
+; 1 occurrences:
 ; yalantinglibs/optimized/example.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i1 %1) #0 {

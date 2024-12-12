@@ -3,9 +3,9 @@
 ; clamav/optimized/pdfng.c.ll
 ; openjdk/optimized/relocator.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000082(ptr %0, i64 %1, ptr %2) #0 {
+define ptr @func00000000000000c2(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 4
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 4
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %1, %4
   %6 = getelementptr i8, ptr %0, i64 %5
@@ -19,9 +19,9 @@ entry:
 ; luau/optimized/lstrlib.cpp.ll
 ; redis/optimized/lstrlib.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000086(ptr %0, i64 %1, ptr %2) #0 {
+define ptr @func00000000000000c6(ptr %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %1, %4
   %6 = getelementptr i8, ptr %0, i64 %5

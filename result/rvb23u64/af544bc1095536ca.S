@@ -17,3 +17,8 @@ func0000000000000016:                   # @func0000000000000016
 	addi	a0, a0, 1023
 	srli	a0, a0, 10
 	ret
+func000000000000000a:                   # @func000000000000000a
+	addiw	a0, a0, 1
+	addi	a0, a0, -2
+	srli	a0, a0, 1
+	ret

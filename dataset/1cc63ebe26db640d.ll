@@ -1,5 +1,5 @@
 
-; 188 occurrences:
+; 189 occurrences:
 ; abc/optimized/abcExtract.c.ll
 ; abc/optimized/abcLatch.c.ll
 ; abc/optimized/abcMiter.c.ll
@@ -66,6 +66,7 @@
 ; abc/optimized/sswSweep.c.ll
 ; abc/optimized/sswUnique.c.ll
 ; abc/optimized/wlcGraft.c.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/crc64_fast.c.ll
 ; cpython/optimized/typeobject.ll
 ; fmt/optimized/format.cc.ll
@@ -192,12 +193,12 @@
 define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   %4 = and i32 %3, 1048576
   ret i32 %4
 }
 
-; 28 occurrences:
+; 29 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absRef.c.ll
 ; abc/optimized/acecCl.c.ll
@@ -222,6 +223,7 @@ entry:
 ; abc/optimized/ifDec07.c.ll
 ; abc/optimized/pdrTsim2.c.ll
 ; abc/optimized/sbdCore.c.ll
+; abc/optimized/sbdWin.c.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; openspiel/optimized/bridge.cc.ll
@@ -230,7 +232,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   %4 = and i32 %3, 1
   ret i32 %4
 }
@@ -245,7 +247,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   %4 = and i32 %3, 1073741823
   ret i32 %4
 }

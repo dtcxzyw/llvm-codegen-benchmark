@@ -41,7 +41,7 @@
 ; openssl/optimized/libcrypto-lib-bss_mem.ll
 ; openssl/optimized/libcrypto-shlib-bss_mem.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a6(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000546(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = icmp sgt i32 %1, %0
@@ -53,7 +53,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/cpu-common.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000c1(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = icmp slt i32 %1, %0
@@ -65,7 +65,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/cmsnamed.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000181(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000501(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = icmp ugt i32 %1, %0
@@ -79,7 +79,7 @@ entry:
 ; openjdk/optimized/classListParser.ll
 ; openmpi/optimized/coll_base_topo.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001aa(i32 %0, i32 %1) #0 {
+define i1 @func000000000000054a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = icmp sgt i32 %1, %0
@@ -91,7 +91,7 @@ entry:
 ; 1 occurrences:
 ; flac/optimized/stream_encoder.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = icmp ult i32 %0, %1
@@ -103,7 +103,7 @@ entry:
 ; 1 occurrences:
 ; flac/optimized/stream_encoder.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000481(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = icmp ult i32 %0, %1
@@ -117,7 +117,7 @@ entry:
 ; graphviz/optimized/hedges.c.ll
 ; openblas/optimized/dbbcsd.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000016a(i32 %0, i32 %1) #0 {
+define i1 @func00000000000004ca(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = icmp slt i32 %0, %1
@@ -129,7 +129,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/fmt-merge-msg.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a6(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000146(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = icmp sgt i32 %0, %1
@@ -141,7 +141,7 @@ entry:
 ; 1 occurrences:
 ; openmpi/optimized/coll_base_topo.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a1(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000541(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = icmp sgt i32 %1, %0
@@ -154,7 +154,7 @@ entry:
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000ca(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = icmp slt i32 %0, %1

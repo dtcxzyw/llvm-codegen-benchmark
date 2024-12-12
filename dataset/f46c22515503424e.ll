@@ -1,5 +1,5 @@
 
-; 51 occurrences:
+; 49 occurrences:
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/phishcheck.c.ll
 ; darktable/optimized/IiqDecoder.cpp.ll
@@ -8,7 +8,6 @@
 ; hdf5/optimized/H5B2int.c.ll
 ; hermes/optimized/zip.c.ll
 ; jq/optimized/unicode.ll
-; jq/optimized/unicode_fold1_key.ll
 ; libwebp/optimized/cost.c.ll
 ; libwebp/optimized/cost_sse2.c.ll
 ; libwebp/optimized/picture_csp_enc.c.ll
@@ -20,7 +19,6 @@
 ; meshlab/optimized/miniz.c.ll
 ; minetest/optimized/test_voxelalgorithms.cpp.ll
 ; oniguruma/optimized/unicode.ll
-; oniguruma/optimized/unicode_fold1_key.ll
 ; opencv/optimized/box_filter.dispatch.cpp.ll
 ; opencv/optimized/demosaicing.cpp.ll
 ; opencv/optimized/gfluidimgproc_func.dispatch.cpp.ll
@@ -55,7 +53,7 @@
 define i32 @func000000000000000f(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = zext i16 %1 to i32
   %6 = add nuw nsw i32 %4, %5
   ret i32 %6
@@ -97,7 +95,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = zext i16 %1 to i32
   %6 = add i32 %4, %5
   ret i32 %6
@@ -109,7 +107,7 @@ entry:
 define i32 @func0000000000000008(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   %5 = zext i16 %1 to i32
   %6 = add i32 %4, %5
   ret i32 %6
@@ -125,7 +123,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = zext i16 %1 to i32
   %6 = add nsw i32 %4, %5
   ret i32 %6
@@ -139,7 +137,7 @@ entry:
 define i32 @func000000000000003f(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = zext nneg i16 %1 to i32
   %6 = add nuw nsw i32 %4, %5
   ret i32 %6
@@ -152,7 +150,7 @@ entry:
 define i32 @func000000000000000a(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   %5 = zext i16 %1 to i32
   %6 = add nuw i32 %4, %5
   ret i32 %6
@@ -164,7 +162,7 @@ entry:
 define i32 @func000000000000001f(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = zext nneg i16 %1 to i32
   %6 = add nuw nsw i32 %4, %5
   ret i32 %6
@@ -176,7 +174,7 @@ entry:
 define i32 @func000000000000002f(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = zext i16 %1 to i32
   %6 = add nuw nsw i32 %4, %5
   ret i32 %6
@@ -191,7 +189,7 @@ entry:
 define i32 @func0000000000000030(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = zext nneg i16 %1 to i32
   %6 = add i32 %4, %5
   ret i32 %6
@@ -203,7 +201,7 @@ entry:
 define i32 @func0000000000000020(i32 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = zext i16 %1 to i32
   %6 = add i32 %4, %5
   ret i32 %6

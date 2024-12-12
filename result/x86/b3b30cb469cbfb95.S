@@ -1,4 +1,4 @@
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	imull	%esi, %edi
 	movslq	%edi, %rax
 	movabsq	$-4611686018427387905, %rcx     # imm = 0xBFFFFFFFFFFFFFFF
@@ -7,7 +7,7 @@ func0000000000000018:                   # @func0000000000000018
 	cmpq	%rcx, %rax
 	setb	%al
 	retq
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	imull	%esi, %edi
 	movslq	%edi, %rax
 	movabsq	$-1152921504606846977, %rcx     # imm = 0xEFFFFFFFFFFFFFFF
@@ -16,12 +16,12 @@ func0000000000000058:                   # @func0000000000000058
 	cmpq	%rcx, %rax
 	setb	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	imull	%esi, %edi
 	cmpl	$1, %edi
 	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	imull	%esi, %edi
 	cmpl	$1, %edi
 	sete	%al

@@ -35,17 +35,17 @@ func0000000000000003:                   # @func0000000000000003
 	vzeroupper
 	retq
 .LCPI2_0:
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
+	.short	4095                            # 0xfff
+	.short	4095                            # 0xfff
+	.short	4095                            # 0xfff
+	.short	4095                            # 0xfff
+	.short	4095                            # 0xfff
+	.short	4095                            # 0xfff
+	.short	4095                            # 0xfff
+	.short	4095                            # 0xfff
 .LCPI2_1:
-	.short	4096                            # 0x1000
-	.short	4096                            # 0x1000
+	.short	4095                            # 0xfff
+	.short	4095                            # 0xfff
 func0000000000000002:                   # @func0000000000000002
 	vpsrld	$16, %ymm0, %ymm0
 	vpmovdw	%ymm0, %xmm0

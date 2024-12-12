@@ -19,7 +19,7 @@
 	.long	39                              # 0x27
 .LCPI0_2:
 	.long	34                              # 0x22
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpcmpeqb	.LCPI0_0(%rip), %xmm0, %k1
 	vpbroadcastd	.LCPI0_1(%rip), %ymm1   # ymm1 = [39,39,39,39,39,39,39,39]
 	vpbroadcastd	.LCPI0_2(%rip), %ymm1 {%k1} # ymm1 {%k1} = [34,34,34,34,34,34,34,34]

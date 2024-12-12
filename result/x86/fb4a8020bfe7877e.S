@@ -4,7 +4,7 @@ func0000000000000001:                   # @func0000000000000001
 	movl	$2097152, %eax                  # imm = 0x200000
 	cmovnel	%edi, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	movzbl	%dil, %ecx
 	xorl	%eax, %eax
 	cmpl	$15, %ecx

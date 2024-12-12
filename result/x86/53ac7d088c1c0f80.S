@@ -17,9 +17,22 @@ func0000000000000020:                   # @func0000000000000020
 	orb	%dil, %sil
 	orb	%sil, %al
 	retq
-func0000000000000010:                   # @func0000000000000010
+func0000000000000050:                   # @func0000000000000050
 	movzwl	%dx, %eax
 	cmpl	$768, %eax                      # imm = 0x300
+	setb	%al
+	orb	%dil, %sil
+	orb	%sil, %al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	movswl	%dx, %eax
+	cmpl	$-16384, %eax                   # imm = 0xC000
+	setl	%al
+	orb	%dil, %sil
+	orb	%sil, %al
+	retq
+func0000000000000010:                   # @func0000000000000010
+	cmpw	$26, %dx
 	setb	%al
 	orb	%dil, %sil
 	orb	%sil, %al

@@ -42,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/Frontend.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000070(i8 %0, i32 %1) #0 {
+define i1 @func00000000000000b0(i8 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 1
   %3 = trunc i8 %0 to i1
@@ -64,7 +64,7 @@ entry:
 ; 1 occurrences:
 ; ripgrep-rs/optimized/522ioybdaj4myg5i.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000052(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000092(i8 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -65
   %3 = icmp ult i32 %2, 26

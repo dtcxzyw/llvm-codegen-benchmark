@@ -1,4 +1,4 @@
-func0000000000000211:                   # @func0000000000000211
+func0000000000000c21:                   # @func0000000000000c21
 	movl	%edx, %eax
 	leaq	(%rax,%rax,8), %rcx
 	leaq	(%rcx,%rcx,2), %rcx
@@ -9,7 +9,7 @@ func0000000000000211:                   # @func0000000000000211
 	sete	%al
 	orb	%dl, %al
 	retq
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	movl	%edx, %eax
 	testl	%edi, %edi
 	sets	%cl
@@ -17,7 +17,7 @@ func0000000000000061:                   # @func0000000000000061
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000641:                   # @func0000000000000641
+func0000000000001c81:                   # @func0000000000001c81
 	movl	%edx, %eax
 	shlq	$3, %rax
 	cmpl	$65536, %edi                    # imm = 0x10000
@@ -26,7 +26,7 @@ func0000000000000641:                   # @func0000000000000641
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000611:                   # @func0000000000000611
+func0000000000001c21:                   # @func0000000000001c21
 	movl	%edx, %eax
 	cmpl	$65535, %edi                    # imm = 0xFFFF
 	sete	%cl

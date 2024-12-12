@@ -85,11 +85,9 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
-; cpython/optimized/obmalloc.ll
+; 2 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
-; mimalloc/optimized/segment-map.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i1 %1, i64 %2) #0 {
 entry:

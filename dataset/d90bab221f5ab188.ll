@@ -4,7 +4,7 @@
 ; qemu/optimized/hw_nvme_ns.c.ll
 ; slurm/optimized/job_test.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
   %3 = select i1 %2, i64 134217728, i64 %1

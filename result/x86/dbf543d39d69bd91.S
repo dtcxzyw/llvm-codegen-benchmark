@@ -1,4 +1,4 @@
-func000000000000004a:                   # @func000000000000004a
+func000000000000006f:                   # @func000000000000006f
 	shrq	$2, %rdi
 	leaq	(%rdi,%rdi), %rax
 	addq	%rsi, %rax

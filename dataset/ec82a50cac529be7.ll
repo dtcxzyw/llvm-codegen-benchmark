@@ -12,7 +12,7 @@ define double @func0000000000000001(double %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
   %3 = uitofp nneg i32 %2 to double
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   ret double %4
 }
 
@@ -24,7 +24,7 @@ define double @func0000000000000000(double %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -8
   %3 = uitofp i32 %2 to double
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   ret double %4
 }
 

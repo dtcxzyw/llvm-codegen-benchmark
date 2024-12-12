@@ -61,14 +61,14 @@ func000000000000000d:                   # @func000000000000000d
 	vzeroupper
 	retq
 .LCPI4_0:
-	.quad	0x7ff0000000000000              # double +Inf
+	.quad	0x4000000000000000              # double 2
 func0000000000000008:                   # @func0000000000000008
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
 	vpsllw	$7, %xmm1, %xmm0
 	vpmovb2m	%xmm0, %k1
 	korw	%k0, %k1, %k0
-	vbroadcastsd	.LCPI4_0(%rip), %zmm0   # zmm0 = [+Inf,+Inf,+Inf,+Inf,+Inf,+Inf,+Inf,+Inf]
+	vbroadcastsd	.LCPI4_0(%rip), %zmm0   # zmm0 = [2.0E+0,2.0E+0,2.0E+0,2.0E+0,2.0E+0,2.0E+0,2.0E+0,2.0E+0]
 	vcmpeqpd	%zmm0, %zmm2, %k1
 	vcmpeqpd	%zmm0, %zmm3, %k2
 	kunpckbw	%k1, %k2, %k1

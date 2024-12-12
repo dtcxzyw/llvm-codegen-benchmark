@@ -1,11 +1,10 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; cvc5/optimized/SimpSolver.cc.ll
 ; cvc5/optimized/Solver.cc.ll
 ; icu/optimized/collationbuilder.ll
 ; jq/optimized/jv.ll
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
-; libwebp/optimized/backward_references_enc.c.ll
 ; llvm/optimized/FunctionImport.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i32 %0, i32 %1) #0 {

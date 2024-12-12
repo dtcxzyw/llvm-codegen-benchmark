@@ -1,8 +1,7 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; abc/optimized/cuddLCache.c.ll
 ; abc/optimized/cuddTable.c.ll
-; c3c/optimized/decltable.c.ll
 ; c3c/optimized/symtab.c.ll
 ; c3c/optimized/types.c.ll
 ; libevent/optimized/event.c.ll

@@ -49,9 +49,9 @@ entry:
 ; luajit/optimized/lj_cdata.ll
 ; luajit/optimized/lj_cdata_dyn.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000022(i32 %0, i32 %1) #0 {
+define i16 @func0000000000000062(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %1, 3
+  %2 = icmp samesign ugt i32 %1, 3
   %3 = trunc nuw i32 %0 to i16
   %4 = select i1 %2, i16 %3, i16 24
   ret i16 %4

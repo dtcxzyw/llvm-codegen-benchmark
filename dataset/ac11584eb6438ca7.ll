@@ -1,5 +1,7 @@
 
-; 73 occurrences:
+; 78 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; clap-rs/optimized/gk6w3l154s6ch7z.ll
 ; cmake/optimized/cmCPackLog.cxx.ll
 ; cmake/optimized/http.c.ll
@@ -15,7 +17,6 @@
 ; harfbuzz/optimized/hb-subset-cff2.cc.ll
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; imgui/optimized/imgui.cpp.ll
-; libquic/optimized/url_canon_path.cc.ll
 ; lief/optimized/psa_crypto_cipher.c.ll
 ; lief/optimized/psa_crypto_ecp.c.ll
 ; linux/optimized/blk-mq.ll
@@ -72,6 +73,10 @@
 ; wireshark/optimized/packet-ipmi.c.ll
 ; wireshark/optimized/packet-per.c.ll
 ; wireshark/optimized/str_util.c.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/6r72qkitrvbw1ftdc9j10udqo.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/9fdv7qxvc9ek9liffc7407f9x.ll
 ; zxing/optimized/TextDecoder.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i8 %0, i32 %1) #0 {

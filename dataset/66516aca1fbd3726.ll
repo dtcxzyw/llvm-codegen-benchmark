@@ -7,12 +7,12 @@
 ; raylib/optimized/rmodels.c.ll
 ; wireshark/optimized/packet-bgp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i1 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i16
   %3 = urem i16 %2, 28
   %4 = icmp eq i16 %3, 0
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

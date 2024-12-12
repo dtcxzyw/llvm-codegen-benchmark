@@ -1,30 +1,30 @@
 
-%"struct.OT::IntType.0.2622262" = type { %struct.BEInt.1.2622266 }
-%struct.BEInt.1.2622266 = type { [2 x i8] }
+%"struct.OT::IntType.0.2735699" = type { %struct.BEInt.1.2735703 }
+%struct.BEInt.1.2735703 = type { [2 x i8] }
 
 ; 1 occurrences:
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000066(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000067(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 16
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = lshr i32 %4, 24
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw i32, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i32, ptr %0, i64 %6
   ret ptr %7
 }
 
 ; 1 occurrences:
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 24
   %4 = or i32 %3, %1
   %5 = lshr i32 %4, 24
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw i32, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i32, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -47,7 +47,7 @@ entry:
 define ptr @func0000000000000004(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 3
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = lshr i32 %4, 28
   %6 = zext nneg i32 %5 to i64
   %7 = getelementptr i32, ptr %0, i64 %6
@@ -63,13 +63,13 @@ entry:
 ; openjdk/optimized/hb-face.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000076(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000077(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = or disjoint i32 %3, %1
   %5 = lshr i32 %4, 1
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw %"struct.OT::IntType.0.2622262", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"struct.OT::IntType.0.2735699", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -102,13 +102,13 @@ entry:
 ; velox/optimized/UnsafeRowSerializer.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000036(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000037(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 6
   %4 = or disjoint i32 %3, %1
   %5 = lshr i32 %4, 3
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw i8, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %0, i64 %6
   ret ptr %7
 }
 

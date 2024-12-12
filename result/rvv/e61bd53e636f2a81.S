@@ -4,7 +4,7 @@ func0000000000000000:                   # @func0000000000000000
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v14, v12
 	vmul.vv	v8, v10, v8
-	vmul.vv	v8, v14, v8
+	vmul.vv	v8, v8, v14
 	ret
 func0000000000000074:                   # @func0000000000000074
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -12,7 +12,7 @@ func0000000000000074:                   # @func0000000000000074
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v14, v12
 	vmul.vv	v8, v10, v8
-	vmul.vv	v8, v14, v8
+	vmul.vv	v8, v8, v14
 	ret
 func000000000000007e:                   # @func000000000000007e
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -20,7 +20,7 @@ func000000000000007e:                   # @func000000000000007e
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v14, v12
 	vmul.vv	v8, v10, v8
-	vmul.vv	v8, v14, v8
+	vmul.vv	v8, v8, v14
 	ret
 func000000000000000e:                   # @func000000000000000e
 	vsetivli	zero, 4, e32, m1, ta, ma
@@ -28,5 +28,5 @@ func000000000000000e:                   # @func000000000000000e
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v14, v12
 	vmul.vv	v8, v10, v8
-	vmul.vv	v8, v14, v8
+	vmul.vv	v8, v8, v14
 	ret

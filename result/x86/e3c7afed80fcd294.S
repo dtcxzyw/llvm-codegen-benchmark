@@ -140,73 +140,43 @@ func00000000000000d4:                   # @func00000000000000d4
 	retq
 .LCPI11_0:
 	.long	0x7f800000                      # float +Inf
-func0000000000000060:                   # @func0000000000000060
-	vucomiss	%xmm1, %xmm1
-	setp	%cl
-	orb	%dil, %cl
-	vucomiss	.LCPI11_0(%rip), %xmm0
-	setae	%al
-	orb	%cl, %al
-	retq
-.LCPI12_0:
-	.long	0x7f800000                      # float +Inf
-func0000000000000260:                   # @func0000000000000260
-	vmovss	.LCPI12_0(%rip), %xmm2          # xmm2 = [+Inf,0.0E+0,0.0E+0,0.0E+0]
+func0000000000000264:                   # @func0000000000000264
+	vmovss	.LCPI11_0(%rip), %xmm2          # xmm2 = [+Inf,0.0E+0,0.0E+0,0.0E+0]
 	vucomiss	%xmm2, %xmm1
 	sete	%cl
 	orb	%dil, %cl
 	vucomiss	%xmm2, %xmm0
+	sete	%al
+	orb	%cl, %al
+	retq
+.LCPI12_0:
+	.long	0x7f800000                      # float +Inf
+.LCPI12_1:
+	.long	0x43000000                      # float 128
+func0000000000000258:                   # @func0000000000000258
+	vucomiss	.LCPI12_0(%rip), %xmm1
+	sete	%cl
+	orb	%dil, %cl
+	vucomiss	.LCPI12_1(%rip), %xmm0
 	setae	%al
 	orb	%cl, %al
 	retq
 .LCPI13_0:
-	.long	0x7f800000                      # float +Inf
-func0000000000000202:                   # @func0000000000000202
-	vucomiss	.LCPI13_0(%rip), %xmm1
-	setae	%cl
-	vucomiss	%xmm0, %xmm0
-	setp	%al
-	orb	%dil, %al
-	orb	%cl, %al
-	retq
-.LCPI14_0:
-	.long	0x7f800000                      # float +Inf
-func0000000000000050:                   # @func0000000000000050
-	vucomiss	%xmm1, %xmm1
-	setp	%cl
-	orb	%dil, %cl
-	vucomiss	.LCPI14_0(%rip), %xmm0
-	setae	%al
-	orb	%cl, %al
-	retq
-.LCPI15_0:
-	.long	0x7f800000                      # float +Inf
-.LCPI15_1:
-	.long	0x43000000                      # float 128
-func0000000000000258:                   # @func0000000000000258
-	vucomiss	.LCPI15_0(%rip), %xmm1
-	sete	%cl
-	orb	%dil, %cl
-	vucomiss	.LCPI15_1(%rip), %xmm0
-	setae	%al
-	orb	%cl, %al
-	retq
-.LCPI16_0:
 	.long	0x3f800000                      # float 1
 func00000000000000ca:                   # @func00000000000000ca
 	vxorps	%xmm2, %xmm2, %xmm2
 	vucomiss	%xmm2, %xmm1
 	setb	%cl
 	orb	%dil, %cl
-	vmovss	.LCPI16_0(%rip), %xmm1          # xmm1 = [1.0E+0,0.0E+0,0.0E+0,0.0E+0]
+	vmovss	.LCPI13_0(%rip), %xmm1          # xmm1 = [1.0E+0,0.0E+0,0.0E+0,0.0E+0]
 	vucomiss	%xmm0, %xmm1
 	setb	%al
 	orb	%cl, %al
 	retq
-.LCPI17_0:
+.LCPI14_0:
 	.long	0x3f800000                      # float 1
 func0000000000000154:                   # @func0000000000000154
-	vmovss	.LCPI17_0(%rip), %xmm2          # xmm2 = [1.0E+0,0.0E+0,0.0E+0,0.0E+0]
+	vmovss	.LCPI14_0(%rip), %xmm2          # xmm2 = [1.0E+0,0.0E+0,0.0E+0,0.0E+0]
 	vucomiss	%xmm1, %xmm2
 	setb	%cl
 	orb	%dil, %cl
@@ -214,10 +184,10 @@ func0000000000000154:                   # @func0000000000000154
 	setb	%al
 	orb	%cl, %al
 	retq
-.LCPI18_0:
+.LCPI15_0:
 	.long	0x3f800000                      # float 1
 func0000000000000104:                   # @func0000000000000104
-	vucomiss	.LCPI18_0(%rip), %xmm1
+	vucomiss	.LCPI15_0(%rip), %xmm1
 	seta	%cl
 	vxorps	%xmm1, %xmm1, %xmm1
 	vucomiss	%xmm0, %xmm1
@@ -225,22 +195,14 @@ func0000000000000104:                   # @func0000000000000104
 	orb	%dil, %al
 	orb	%cl, %al
 	retq
-.LCPI19_0:
+.LCPI16_0:
 	.long	0x7f800000                      # float +Inf
 func00000000000001d0:                   # @func00000000000001d0
-	vmovss	.LCPI19_0(%rip), %xmm2          # xmm2 = [+Inf,0.0E+0,0.0E+0,0.0E+0]
+	vmovss	.LCPI16_0(%rip), %xmm2          # xmm2 = [+Inf,0.0E+0,0.0E+0,0.0E+0]
 	vucomiss	%xmm2, %xmm1
 	setb	%cl
 	orb	%dil, %cl
 	vucomiss	%xmm2, %xmm0
 	setae	%al
-	orb	%cl, %al
-	retq
-func000000000000039c:                   # @func000000000000039c
-	vucomiss	%xmm1, %xmm1
-	setnp	%cl
-	orb	%dil, %cl
-	vucomiss	%xmm0, %xmm0
-	setnp	%al
 	orb	%cl, %al
 	retq

@@ -9,10 +9,10 @@
 ; yaml-cpp/optimized/scantoken.cpp.ll
 ; yaml-cpp/optimized/stream.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000081(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 9
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = ptrtoint ptr %1 to i64
   %6 = icmp eq i64 %4, %5
   ret i1 %6
@@ -46,10 +46,10 @@ entry:
 ; llvm/optimized/ThreadSafetyCommon.cpp.ll
 ; llvm/optimized/ThreadSafetyTIL.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000188(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 3
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = ptrtoint ptr %1 to i64
   %6 = icmp ugt i64 %4, %5
   ret i1 %6
@@ -81,19 +81,7 @@ entry:
 define i1 @func0000000000000008(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 3
-  %4 = add i64 %3, %0
-  %5 = ptrtoint ptr %1 to i64
-  %6 = icmp ugt i64 %4, %5
-  ret i1 %6
-}
-
-; 1 occurrences:
-; llvm/optimized/SelectionDAG.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = shl nsw i64 %2, 2
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = ptrtoint ptr %1 to i64
   %6 = icmp ugt i64 %4, %5
   ret i1 %6

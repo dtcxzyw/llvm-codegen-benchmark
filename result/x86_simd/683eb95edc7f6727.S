@@ -2,7 +2,7 @@
 	.long	4294967290                      # 0xfffffffa
 .LCPI0_1:
 	.long	954437177                       # 0x38e38e39
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
 	vpshufd	$245, %ymm1, %ymm2              # ymm2 = ymm1[1,1,3,3,5,5,7,7]
 	vpbroadcastd	.LCPI0_1(%rip), %ymm3   # ymm3 = [954437177,954437177,954437177,954437177,954437177,954437177,954437177,954437177]
@@ -17,7 +17,7 @@ func0000000000000021:                   # @func0000000000000021
 	retq
 .LCPI1_0:
 	.long	3435973837                      # 0xcccccccd
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpshufd	$245, %ymm1, %ymm2              # ymm2 = ymm1[1,1,3,3,5,5,7,7]

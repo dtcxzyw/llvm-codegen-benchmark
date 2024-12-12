@@ -5,7 +5,7 @@
 ; quantlib/optimized/dynprogvppintrinsicvalueengine.ll
 ; rocksdb/optimized/compaction_iterator.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, double %1) #0 {
+define i1 @func0000000000000028(i64 %0, double %1) #0 {
 entry:
   %2 = fptoui double %1 to i64
   %3 = ashr exact i64 %0, 4
@@ -20,7 +20,7 @@ entry:
 ; node/optimized/libnode.node_dir.ll
 ; opencv/optimized/lsd.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, double %1) #0 {
+define i1 @func0000000000000024(i64 %0, double %1) #0 {
 entry:
   %2 = fptoui double %1 to i64
   %3 = ashr exact i64 %0, 3

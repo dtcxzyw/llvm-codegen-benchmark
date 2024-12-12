@@ -13,18 +13,9 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
-; qemu/optimized/hw_audio_es1370.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
-entry:
-  %2 = lshr i32 %1, 16
-  %3 = sub nuw nsw i32 %0, %2
-  %4 = shl nuw nsw i32 %3, 2
-  ret i32 %4
-}
-
-; 3 occurrences:
+; 5 occurrences:
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; icu/optimized/ucnvlat1.ll
 ; openjdk/optimized/synchronizer.ll
 ; quantlib/optimized/date.ll
@@ -34,17 +25,6 @@ entry:
   %2 = lshr i32 %1, 3
   %3 = sub i32 %0, %2
   %4 = shl i32 %3, 3
-  ret i32 %4
-}
-
-; 1 occurrences:
-; abc/optimized/exor.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
-entry:
-  %2 = lshr i32 %1, 1
-  %3 = sub nsw i32 %0, %2
-  %4 = shl nuw nsw i32 %3, 1
   ret i32 %4
 }
 

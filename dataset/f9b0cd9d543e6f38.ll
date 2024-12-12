@@ -1,5 +1,5 @@
 
-; 34 occurrences:
+; 35 occurrences:
 ; abc/optimized/abcDress2.c.ll
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
@@ -14,6 +14,7 @@
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; linux/optimized/io_apic.ll
 ; linux/optimized/mballoc.ll
+; lvgl/optimized/lv_dropdown.ll
 ; openjdk/optimized/classLoaderStats.ll
 ; openjdk/optimized/mlib_ImageCopy_Bit.ll
 ; openjdk/optimized/mlib_c_ImageCopy.ll
@@ -29,11 +30,11 @@
 ; verilator/optimized/V3OrderMoveGraph.cpp.ll
 ; wasmtime-rs/optimized/22yyfxyxsnty4v9s.ll
 ; wasmtime-rs/optimized/3ks7b643ljwe3j81.ll
-; wasmtime-rs/optimized/v5prf101dn49s3v.ll
 ; wireshark/optimized/packet-dbus.c.ll
 ; wireshark/optimized/packet-dcerpc-spoolss.c.ll
 ; wireshark/optimized/packet-umts_rlc.c.ll
 ; z3/optimized/dl_mk_unbound_compressor.cpp.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(ptr %0) #0 {
 entry:
@@ -43,10 +44,12 @@ entry:
   ret i32 %3
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; abc/optimized/abcSat.c.ll
 ; abc/optimized/ivyFraig.c.ll
 ; abc/optimized/resSat.c.ll
+; lvgl/optimized/lv_roller.ll
+; lvgl/optimized/lv_slider.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(ptr %0) #0 {
 entry:

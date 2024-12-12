@@ -1,8 +1,8 @@
 
 ; 12 occurrences:
+; boost/optimized/attribute_name.ll
 ; cmake/optimized/cmDependsC.cxx.ll
 ; cmake/optimized/json_reader.cpp.ll
-; darktable/optimized/DeflateDecompressor.cpp.ll
 ; draco/optimized/kd_tree_attributes_encoder.cc.ll
 ; folly/optimized/ManualExecutor.cpp.ll
 ; folly/optimized/QueuedImmediateExecutor.cpp.ll
@@ -16,7 +16,7 @@
 define i64 @func0000000000000015(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -8
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = ashr exact i64 %1, 6
   %6 = add nsw i64 %4, %5
   ret i64 %6
@@ -32,7 +32,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 2097151
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = ashr i64 %1, 21
   %6 = add nsw i64 %4, %5
   ret i64 %6
@@ -47,7 +47,7 @@ entry:
 define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -8
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = ashr exact i64 %1, 6
   %6 = add i64 %4, %5
   ret i64 %6

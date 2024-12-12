@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 29 occurrences:
 ; graphviz/optimized/htmltable.c.ll
 ; libdeflate/optimized/deflate_compress.c.ll
 ; libwebp/optimized/picture_csp_enc.c.ll
@@ -7,6 +7,7 @@
 ; linux/optimized/drbg.ll
 ; linux/optimized/drm_dsc_helper.ll
 ; luajit/optimized/minilua.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; opencv/optimized/pyramids.cpp.ll

@@ -1,5 +1,5 @@
 
-; 266 occurrences:
+; 265 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/absOldCex.c.ll
 ; abc/optimized/absOldSat.c.ll
@@ -41,13 +41,11 @@
 ; linux/optimized/core.ll
 ; linux/optimized/ds.ll
 ; linux/optimized/efi_64.ll
-; linux/optimized/hid-cypress.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/ibs.ll
 ; linux/optimized/intel-gtt.ll
 ; linux/optimized/intel_ggtt.ll
 ; linux/optimized/intel_pstate.ll
-; linux/optimized/io_pgtable_v2.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mprotect.ll
 ; linux/optimized/net_failover.ll
@@ -175,6 +173,7 @@
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86MCInstLower.cpp.ll
 ; llvm/optimized/X86MachObjectWriter.cpp.ll
+; lvgl/optimized/lv_scale.ll
 ; meshlab/optimized/ml_shared_data_context.cpp.ll
 ; mitsuba3/optimized/zone.cpp.ll
 ; mold/optimized/arch-sparc64.cc.ll
@@ -275,7 +274,8 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; linux/optimized/maple_tree.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; llvm/optimized/CallLowering.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll

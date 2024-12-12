@@ -1,5 +1,5 @@
 
-; 258 occurrences:
+; 256 occurrences:
 ; cmake/optimized/cmGeneratorExpression.cxx.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -27,7 +27,6 @@
 ; folly/optimized/IPAddressV4.cpp.ll
 ; folly/optimized/IPAddressV6.cpp.ll
 ; folly/optimized/LogConfigParser.cpp.ll
-; folly/optimized/LoggerDB.cpp.ll
 ; hermes/optimized/Runtime.cpp.ll
 ; hyperscan/optimized/gough.c.ll
 ; hyperscan/optimized/mcclellan.c.ll
@@ -232,7 +231,6 @@
 ; yosys/optimized/lz4.ll
 ; z3/optimized/arith_eq_solver.cpp.ll
 ; z3/optimized/automaton.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/dl_mk_rule_inliner.cpp.ll
 ; z3/optimized/emonics.cpp.ll
 ; z3/optimized/factor_rewriter.cpp.ll
@@ -280,7 +278,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = add i64 %1, -28
   %5 = sub i64 %4, %3
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -298,9 +296,8 @@ entry:
   ret i64 %6
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; clamav/optimized/pdf.c.ll
-; libzmq/optimized/ipc_address.cpp.ll
 ; llvm/optimized/MachineVerifier.cpp.ll
 ; llvm/optimized/RegisterCoalescer.cpp.ll
 ; llvm/optimized/StackSlotColoring.cpp.ll

@@ -15,7 +15,7 @@ func0000000000000004:                   # @func0000000000000004
 	vptestnmw	.LCPI0_0(%rip), %xmm1, %k1
 	vpbroadcastd	.LCPI0_1(%rip), %ymm1   # ymm1 = [201,201,201,201,201,201,201,201]
 	vpbroadcastd	.LCPI0_2(%rip), %ymm1 {%k1} # ymm1 {%k1} = [1,1,1,1,1,1,1,1]
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.short	1                               # 0x1
@@ -52,7 +52,7 @@ func0000000000000007:                   # @func0000000000000007
 	vptestnmw	.LCPI2_0(%rip), %xmm1, %k1
 	vpbroadcastd	.LCPI2_1(%rip), %ymm1   # ymm1 = [16,16,16,16,16,16,16,16]
 	vpbroadcastd	.LCPI2_2(%rip), %ymm1 {%k1} # ymm1 {%k1} = [8,8,8,8,8,8,8,8]
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI3_0:
 	.short	65407                           # 0xff7f

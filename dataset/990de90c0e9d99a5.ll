@@ -1,5 +1,5 @@
 
-; 37 occurrences:
+; 39 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/bmcCexCare.c.ll
 ; abc/optimized/bzlib.c.ll
@@ -12,6 +12,8 @@
 ; freetype/optimized/psnames.c.ll
 ; gromacs/optimized/binsearch.cpp.ll
 ; gromacs/optimized/gmx_wham.cpp.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; minetest/optimized/areastore.cpp.ll
 ; minetest/optimized/client.cpp.ll
 ; minetest/optimized/clientiface.cpp.ll
@@ -45,10 +47,11 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; chibicc/optimized/parse.ll
+; minetest/optimized/server.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:

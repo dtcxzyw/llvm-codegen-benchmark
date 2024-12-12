@@ -15,7 +15,8 @@ entry:
   ret ptr %7
 }
 
-; 24 occurrences:
+; 25 occurrences:
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/conic.cpp.ll
 ; casadi/optimized/integration_tools.cpp.ll
 ; casadi/optimized/nlp_tools.cpp.ll

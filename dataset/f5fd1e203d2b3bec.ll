@@ -1,7 +1,6 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; abc/optimized/cuddEssent.c.ll
-; linux/optimized/msr.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; spike/optimized/triggers.ll
 ; Function Attrs: nounwind

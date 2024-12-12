@@ -1,5 +1,5 @@
 
-; 48 occurrences:
+; 49 occurrences:
 ; abc/optimized/abcBlifMv.c.ll
 ; abc/optimized/abcMap.c.ll
 ; abc/optimized/abcRec3.c.ll
@@ -34,6 +34,7 @@
 ; abc/optimized/sbdSat.c.ll
 ; abc/optimized/sclBuffer.c.ll
 ; abc/optimized/wlcBlast.c.ll
+; boost/optimized/alloc_lib.ll
 ; bullet3/optimized/btBatchedConstraints.ll
 ; cpython/optimized/instrumentation.ll
 ; gromacs/optimized/kernel_gpu_ref.cpp.ll
@@ -57,7 +58,7 @@ entry:
   ret i32 %4
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/giaNf.c.ll
@@ -66,6 +67,7 @@ entry:
 ; grpc/optimized/frame_settings.cc.ll
 ; libsodium/optimized/libsodium_la-codecs.ll
 ; linux/optimized/hid-lg-g15.ll
+; linux/optimized/jack.ll
 ; linux/optimized/pcm_native.ll
 ; llvm/optimized/SemaARM.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
@@ -79,12 +81,11 @@ entry:
   ret i32 %4
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; abc/optimized/mapperTime.c.ll
 ; hyperscan/optimized/block.c.ll
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/catchup.c.ll
-; hyperscan/optimized/init.c.ll
 ; hyperscan/optimized/mpv.c.ll
 ; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/repeat.c.ll

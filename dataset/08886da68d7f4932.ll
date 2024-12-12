@@ -99,7 +99,7 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c01(i64 %0, i128 %1) #0 {
+define i1 @func0000000000001801(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc nuw nsw i128 %1 to i64
   %3 = mul i64 %2, 4294966296
@@ -109,7 +109,8 @@ entry:
   ret i1 %6
 }
 
-; 71 occurrences:
+; 72 occurrences:
+; boost/optimized/to_chars.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -182,7 +183,7 @@ entry:
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c0c(i64 %0, i128 %1) #0 {
+define i1 @func000000000000180c(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc nuw nsw i128 %1 to i64
   %3 = mul i64 %2, 4294966296

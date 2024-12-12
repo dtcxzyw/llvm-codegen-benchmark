@@ -13,7 +13,7 @@ entry:
   ret i64 %6
 }
 
-; 148 occurrences:
+; 151 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -135,6 +135,7 @@ entry:
 ; abc/optimized/wlcBlast.c.ll
 ; abc/optimized/wlnRead.c.ll
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
+; c3c/optimized/lexer.c.ll
 ; c3c/optimized/parse_global.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; duckdb/optimized/ub_duckdb_main_capi.cpp.ll
@@ -149,6 +150,7 @@ entry:
 ; llvm/optimized/DeclCXX.cpp.ll
 ; llvm/optimized/RISCVMCCodeEmitter.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; mitsuba3/optimized/cpuinfo.cpp.ll
 ; openjdk/optimized/multiVis.ll
 ; openjdk/optimized/vm_version_x86.ll
@@ -162,6 +164,7 @@ entry:
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/time.ll
 ; wireshark/optimized/packet-flexray.c.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i64 %1, i32 %2) #0 {
 entry:
@@ -210,6 +213,18 @@ entry:
   %4 = zext i32 %3 to i64
   %5 = or disjoint i64 %0, %1
   %6 = or disjoint i64 %5, %4
+  ret i64 %6
+}
+
+; 1 occurrences:
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000006(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 1
+  %4 = zext nneg i32 %3 to i64
+  %5 = or disjoint i64 %0, %1
+  %6 = or i64 %5, %4
   ret i64 %6
 }
 

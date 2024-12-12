@@ -31,14 +31,15 @@ func0000000000000017:                   # @func0000000000000017
 	slliw	a0, a0, 4
 	or	a0, a0, a1
 	ret
+func0000000000000000:                   # @func0000000000000000
+	lui	a2, 1048560
+	and	a1, a1, a2
+	slliw	a0, a0, 16
+	or	a0, a0, a1
+	ret
 func0000000000000002:                   # @func0000000000000002
 	andi	a1, a1, -57
 	slliw	a0, a0, 3
-	or	a0, a0, a1
-	ret
-func0000000000000000:                   # @func0000000000000000
-	andi	a1, a1, -193
-	slliw	a0, a0, 6
 	or	a0, a0, a1
 	ret
 func0000000000000015:                   # @func0000000000000015

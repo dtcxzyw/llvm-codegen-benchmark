@@ -46,11 +46,9 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 
-; 5 occurrences:
+; 3 occurrences:
 ; abc/optimized/wlcNtk.c.ll
-; abc/optimized/wlcSim.c.ll
 ; openmpi/optimized/reachable_netlink_module.ll
-; openmpi/optimized/reachable_weighted.ll
 ; yosys/optimized/simplify.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000016(i32 %0, i32 %1) #0 {
@@ -78,11 +76,10 @@ entry:
   ret i32 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/wlcAbc.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; abc/optimized/wlcGraft.c.ll
-; abc/optimized/wlcReadVer.c.ll
 ; abc/optimized/wlnWlc.c.ll
 ; yosys/optimized/genrtlil.ll
 ; yosys/optimized/simplify.ll
@@ -101,7 +98,7 @@ entry:
 define i32 @func0000000000000015(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
-  %3 = tail call range(i32 0, -2147483648) i32 @llvm.abs.i32(i32 %2, i1 true)
+  %3 = tail call range(i32 0, -2147483648) i32 @llvm.abs.i32(i32 range(i32 -2147483647, -2147483648) %2, i1 true)
   %4 = add nsw i32 %3, -98312
   ret i32 %4
 }

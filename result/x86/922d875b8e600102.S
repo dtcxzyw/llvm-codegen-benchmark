@@ -23,3 +23,8 @@ func0000000000000014:                   # @func0000000000000014
 	testl	%edi, %edi
 	setns	%al
 	retq
+func0000000000000028:                   # @func0000000000000028
+	xorl	%eax, %eax
+	cmpl	$256, %edi                      # imm = 0x100
+	setb	%al
+	retq

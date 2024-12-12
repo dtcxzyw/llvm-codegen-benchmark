@@ -29,10 +29,10 @@ func000000000000000a:                   # @func000000000000000a
 	vzeroupper
 	retq
 .LCPI1_0:
-	.short	8                               # 0x8
-	.short	8                               # 0x8
-	.short	8                               # 0x8
-	.short	8                               # 0x8
+	.short	65277                           # 0xfefd
+	.short	65277                           # 0xfefd
+	.short	65277                           # 0xfefd
+	.short	65277                           # 0xfefd
 	.zero	2
 	.zero	2
 	.zero	2
@@ -41,7 +41,7 @@ func0000000000000001:                   # @func0000000000000001
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k1
 	vptestnmq	%ymm2, %ymm2, %k2
-	vmovdqu16	.LCPI1_0(%rip), %xmm0 {%k2} {z} # xmm0 {%k2} {z} = [8,8,8,8,u,u,u,u]
+	vmovdqu16	.LCPI1_0(%rip), %xmm0 {%k2} {z} # xmm0 {%k2} {z} = [65277,65277,65277,65277,u,u,u,u]
 	vmovdqu16	%xmm1, %xmm0 {%k1}
 	vzeroupper
 	retq

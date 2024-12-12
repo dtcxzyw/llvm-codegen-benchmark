@@ -11,8 +11,7 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; icu/optimized/ucnv_ext.ll
+; 1 occurrences:
 ; llvm/optimized/RegisterScavenging.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {

@@ -51,16 +51,4 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
-; openblas/optimized/ieeeck.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000001dc(float %0, float %1, float %2) #0 {
-entry:
-  %3 = fadd float %1, %2
-  %4 = fcmp ord float %3, 0.000000e+00
-  %5 = fcmp ord float %0, 0.000000e+00
-  %6 = or i1 %4, %5
-  ret i1 %6
-}
-
 attributes #0 = { nounwind }

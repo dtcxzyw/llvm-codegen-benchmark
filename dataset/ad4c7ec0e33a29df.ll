@@ -1,6 +1,6 @@
 
-; 173 occurrences:
-; abc/optimized/mpmMig.c.ll
+; 172 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -172,7 +172,6 @@
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
-; z3/optimized/dd_bdd.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
@@ -218,10 +217,22 @@ entry:
 ; abc/optimized/ifCut.c.ll
 ; graphviz/optimized/dotsplines.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000010(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000030(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 24
-  %3 = icmp ugt i32 %2, %0
+  %3 = icmp samesign ugt i32 %2, %0
+  %4 = zext i1 %3 to i32
+  ret i32 %4
+}
+
+; 2 occurrences:
+; abc/optimized/mpmMig.c.ll
+; z3/optimized/dd_bdd.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000028(i32 %0, i32 %1) #0 {
+entry:
+  %2 = lshr i32 %1, 1
+  %3 = icmp samesign ult i32 %2, %0
   %4 = zext i1 %3 to i32
   ret i32 %4
 }

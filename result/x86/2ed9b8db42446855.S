@@ -15,3 +15,15 @@ func0000000000000002:                   # @func0000000000000002
 	shlq	$4, %rax
 	addq	%rdi, %rax
 	retq
+func0000000000000007:                   # @func0000000000000007
+	subq	%rdx, %rsi
+	shlq	$28, %rsi
+	sarq	$30, %rsi
+	leaq	(%rsi,%rdi), %rax
+	retq
+func0000000000000003:                   # @func0000000000000003
+	subq	%rdx, %rsi
+	shrq	$3, %rsi
+	movslq	%esi, %rax
+	leaq	(%rdi,%rax,8), %rax
+	retq

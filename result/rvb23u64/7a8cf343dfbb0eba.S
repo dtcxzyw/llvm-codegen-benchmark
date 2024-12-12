@@ -132,17 +132,10 @@ func000000000000002c:                   # @func000000000000002c
 	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func000000000000004c:                   # @func000000000000004c
-	andi	a2, a2, 255
-	slliw	a1, a1, 3
-	slli	a2, a2, 6
-	or	a0, a0, a1
-	or	a0, a0, a2
-	ret
 func000000000000007c:                   # @func000000000000007c
 	andi	a2, a2, 255
-	slliw	a1, a1, 3
-	slli	a2, a2, 6
+	slliw	a1, a1, 6
+	slli	a2, a2, 11
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

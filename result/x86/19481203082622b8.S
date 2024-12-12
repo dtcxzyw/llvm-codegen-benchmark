@@ -1,4 +1,4 @@
-func0000000000000182:                   # @func0000000000000182
+func0000000000000302:                   # @func0000000000000302
 	testl	$568, %edx                      # imm = 0x238
 	sete	%cl
 	testl	%esi, %esi
@@ -6,7 +6,7 @@ func0000000000000182:                   # @func0000000000000182
 	orb	%cl, %al
 	andb	%dil, %al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000058:                   # @func0000000000000058
 	testb	%dl, %dl
 	sete	%cl
 	testl	%esi, %esi
@@ -14,7 +14,7 @@ func0000000000000038:                   # @func0000000000000038
 	orb	%cl, %al
 	andb	%dil, %al
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	testl	$-3, %edx
 	sete	%cl
 	testl	%esi, %esi

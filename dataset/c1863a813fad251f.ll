@@ -1,5 +1,5 @@
 
-; 120 occurrences:
+; 118 occurrences:
 ; abc/optimized/wlcGraft.c.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/strtod.cc.ll
@@ -38,8 +38,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -124,7 +122,7 @@
 define i64 @func0000000000000052(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
-  %4 = mul nuw i64 %3, %0
+  %4 = mul nuw i64 %0, %3
   %5 = mul nuw i64 %0, %1
   %6 = lshr i64 %5, 32
   %7 = add nuw i64 %6, %4
@@ -173,7 +171,7 @@ entry:
   %3 = mul nuw i64 %0, %2
   %4 = lshr i64 %3, 32
   %5 = lshr i64 %1, 32
-  %6 = mul nuw i64 %5, %0
+  %6 = mul nuw i64 %0, %5
   %7 = add nuw i64 %6, %4
   ret i64 %7
 }

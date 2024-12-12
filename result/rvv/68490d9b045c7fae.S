@@ -4,7 +4,7 @@ func0000000000000025:                   # @func0000000000000025
 	vmul.vx	v12, v12, a0
 	vsra.vi	v12, v12, 8
 	vadd.vv	v8, v10, v8
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	ret
 func0000000000000021:                   # @func0000000000000021
 	li	a0, 473
@@ -12,7 +12,7 @@ func0000000000000021:                   # @func0000000000000021
 	vmul.vx	v12, v12, a0
 	vsra.vi	v12, v12, 8
 	vadd.vv	v8, v10, v8
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	ret
 func0000000000000020:                   # @func0000000000000020
 	li	a0, 1461
@@ -20,5 +20,5 @@ func0000000000000020:                   # @func0000000000000020
 	vmul.vx	v12, v12, a0
 	vsra.vi	v12, v12, 2
 	vadd.vv	v8, v10, v8
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	ret

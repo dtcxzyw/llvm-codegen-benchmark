@@ -1,7 +1,7 @@
 
 ; 2 occurrences:
 ; llvm/optimized/TargetLoweringBase.cpp.ll
-; wasmtime-rs/optimized/v5prf101dn49s3v.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i64 %1) #0 {
 entry:

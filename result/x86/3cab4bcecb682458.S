@@ -6,3 +6,11 @@ func0000000000000000:                   # @func0000000000000000
 	movl	$2, %eax
 	cmovel	%ecx, %eax
 	retq
+func0000000000000002:                   # @func0000000000000002
+	andl	$1, %esi
+	negl	%esi
+	orl	$1, %esi
+	xorl	%eax, %eax
+	testb	$1, %dil
+	cmovel	%esi, %eax
+	retq

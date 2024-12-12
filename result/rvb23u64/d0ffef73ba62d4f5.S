@@ -5,7 +5,7 @@ func0000000000000002:                   # @func0000000000000002
 	beqz	a0, .LBB0_2
 	fneg.s	fa5, fa5
 .LBB0_2:                                # %entry
-	fadd.s	fa5, fa5, fa0
+	fadd.s	fa5, fa0, fa5
 	fcvt.w.s	a0, fa5, rtz
 	ret
 func000000000000000c:                   # @func000000000000000c

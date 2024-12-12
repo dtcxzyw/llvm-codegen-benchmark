@@ -3,7 +3,7 @@ func000000000000000c:                   # @func000000000000000c
 	movzbl	%dl, %eax
 	andl	$1, %eax
 	leaq	32(,%rax,4), %rax
-	cmpq	%rsi, %rax
+	cmpq	%rax, %rsi
 	setne	%al
 	andb	%dil, %al
 	retq
@@ -12,7 +12,7 @@ func0000000000000001:                   # @func0000000000000001
 	movq	$-2147483648, %rax              # imm = 0x80000000
 	movl	$2147483647, %ecx               # imm = 0x7FFFFFFF
 	cmovneq	%rax, %rcx
-	cmpq	%rsi, %rcx
+	cmpq	%rcx, %rsi
 	sete	%al
 	andb	%dil, %al
 	retq
@@ -21,7 +21,7 @@ func0000000000000004:                   # @func0000000000000004
 	movl	$16, %eax
 	movl	$4, %ecx
 	cmovneq	%rax, %rcx
-	cmpq	%rsi, %rcx
-	seta	%al
+	cmpq	%rcx, %rsi
+	setb	%al
 	andb	%dil, %al
 	retq

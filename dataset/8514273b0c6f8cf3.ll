@@ -12,7 +12,16 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
+; 12 occurrences:
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; quantlib/optimized/cashflows.ll
 ; quantlib/optimized/noarbsabr.ll
 ; quantlib/optimized/squarerootprocessrndcalculator.ll

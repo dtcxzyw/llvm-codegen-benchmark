@@ -1,5 +1,5 @@
 
-; 173 occurrences:
+; 194 occurrences:
 ; bullet3/optimized/b3RadixSort32CL.ll
 ; clamav/optimized/arcread.cpp.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
@@ -46,7 +46,6 @@
 ; linux/optimized/alternative.ll
 ; linux/optimized/atkbd.ll
 ; linux/optimized/blk-iolatency.ll
-; linux/optimized/excreate.ll
 ; linux/optimized/i2c-core-acpi.ll
 ; linux/optimized/i915_gem_execbuffer.ll
 ; linux/optimized/md.ll
@@ -110,7 +109,7 @@
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
 ; luau/optimized/IrRegAllocA64.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
+; lvgl/optimized/lv_flex.ll
 ; minetest/optimized/base64.cpp.ll
 ; openjdk/optimized/ad_x86.ll
 ; openjdk/optimized/jvmtiEventController.ll
@@ -121,7 +120,6 @@
 ; openjdk/optimized/zMark.ll
 ; openusd/optimized/dataSourceUsdPrimInfo.cpp.ll
 ; openusd/optimized/testHioImage.cpp.ll
-; postgres/optimized/char.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; qemu/optimized/block_qcow2.c.ll
 ; qemu/optimized/block_qed.c.ll
@@ -173,6 +171,29 @@
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/ssl.c.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/06ynmbpbae1je7d5yiue751dw.ll
+; zed-rs/optimized/0zv49ldtv6tf31uz4olgw7861.ll
+; zed-rs/optimized/1qoospyzgc86mrbrflush3m5b.ll
+; zed-rs/optimized/2ehxywt5i46yjybqa8jmzydsx.ll
+; zed-rs/optimized/2i8hya6f2t9bndlbd6b6686oi.ll
+; zed-rs/optimized/2tseelemdefm2fo39q21ogou2.ll
+; zed-rs/optimized/3w62movadz26xj1uazrxcr5i1.ll
+; zed-rs/optimized/3xkvahxsem1hdyf3ef4aq8akj.ll
+; zed-rs/optimized/5jgfm3klpby9utjhkan94f3dk.ll
+; zed-rs/optimized/6gy7cm9m32a7fdg31v3lbyxhl.ll
+; zed-rs/optimized/7nj8apu4jlzv057e0kkcpojil.ll
+; zed-rs/optimized/8l6j9aar0oaoyhr62czfg3g36.ll
+; zed-rs/optimized/99xtkjwhw46g7fh9gdw0hgerp.ll
+; zed-rs/optimized/9awmqr28bdho83r0fgrej0t00.ll
+; zed-rs/optimized/9zd8wd1s2fxo541ze2ot3j12x.ll
+; zed-rs/optimized/a8gnqmwrn3029hplkci6d0ejl.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/d31g6vudldcq1cl7b9cowxr8a.ll
+; zed-rs/optimized/d7h2r6mystjn2jzwcl5ofeoiz.ll
+; zed-rs/optimized/eb0f70f7qg0lwhfftqxruwlu9.ll
+; zed-rs/optimized/etmluiftgqx5jpyivviyferrj.ll
+; zed-rs/optimized/f1suy9miqr5txm7nzzcuw0lf4.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i64 %0) #0 {
 entry:

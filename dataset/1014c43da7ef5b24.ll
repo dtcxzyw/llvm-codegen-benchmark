@@ -33,7 +33,7 @@ entry:
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; softposit-rs/optimized/oveg98n4r9tnk39.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000011(i16 %0, i16 %1) #0 {
+define i16 @func0000000000000021(i16 %0, i16 %1) #0 {
 entry:
   %2 = sub nsw i16 0, %0
   %3 = icmp eq i16 %1, 0

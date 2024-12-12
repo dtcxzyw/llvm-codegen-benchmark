@@ -86,7 +86,7 @@ func000000000000000a:                   # @func000000000000000a
 	setae	%al
 	retq
 .LCPI10_0:
-	.long	0x3f800000                      # float 1
+	.long	0x3f000000                      # float 0.5
 func000000000000000e:                   # @func000000000000000e
 	vaddss	.LCPI10_0(%rip), %xmm0, %xmm0
 	vucomiss	%xmm0, %xmm0

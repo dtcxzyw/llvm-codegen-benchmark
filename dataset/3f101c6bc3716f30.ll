@@ -1,9 +1,12 @@
 
-; 10 occurrences:
+; 13 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; arrow/optimized/basic_decimal.cc.ll
 ; arrow/optimized/decimal.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; openssl/optimized/libcrypto-lib-scalar.ll
 ; openssl/optimized/libcrypto-shlib-scalar.ll
@@ -32,7 +35,7 @@ entry:
   %3 = zext i64 %2 to i128
   %4 = zext i64 %1 to i128
   %5 = mul nuw i128 %4, %3
-  %6 = add i128 %5, %0
+  %6 = add i128 %0, %5
   %7 = trunc i128 %6 to i64
   ret i64 %7
 }

@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 14 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
@@ -7,12 +7,8 @@
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
-; qemu/optimized/source_s_approxRecip32_1.c.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
-; spike/optimized/s_approxRecip32_1.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; spike/optimized/vmulhu_vx.ll
 ; spike/optimized/vwmaccu_vx.ll
 ; spike/optimized/vwmulu_vx.ll
@@ -48,22 +44,23 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; linux/optimized/ff-memless.ll
 ; linux/optimized/intel_vdsc.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; wireshark/optimized/packet-umts_fp.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
-  %3 = and i32 %0, 65535
+  %3 = and i32 %0, 254
   %4 = mul nuw nsw i32 %3, %2
   ret i32 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; linux/optimized/drm_dsc_helper.ll
-; linux/optimized/int_log.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i16 %1) #0 {
 entry:

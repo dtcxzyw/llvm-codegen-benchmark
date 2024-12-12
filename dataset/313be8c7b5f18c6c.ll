@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 23 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; delta-rs/optimized/3qvofkyb7k5flefa.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
@@ -19,8 +19,10 @@
 ; rayon-rs/optimized/9qhkgr4qio1yp41.ll
 ; regex-rs/optimized/3ixfkxlmcuecmmus.ll
 ; rocksdb/optimized/version_set.cc.ll
+; turborepo-rs/optimized/74s3x9u7hld928rwmttmetb1y.ll
 ; wasmtime-rs/optimized/18flldcd4wnig7ks.ll
 ; wireshark/optimized/version_info.c.ll
+; zed-rs/optimized/9lyxlodfxr6ds1lof2oq9jgs7.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1) #0 {
 entry:

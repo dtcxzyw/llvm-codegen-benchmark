@@ -1,11 +1,10 @@
 
-; 229 occurrences:
+; 222 occurrences:
 ; abc/optimized/darCut.c.ll
 ; abc/optimized/extraUtilTruth.c.ll
 ; abc/optimized/kitTruth.c.ll
 ; bullet3/optimized/b3Solver.ll
 ; cmake/optimized/archive_write_set_format_zip.c.ll
-; cmake/optimized/poll.c.ll
 ; cmake/optimized/xmltok.c.ll
 ; coreutils-rs/optimized/jiqj5u7teuhb0o0.ll
 ; cpython/optimized/pegen.ll
@@ -17,7 +16,6 @@
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-cff2.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
-; hdf5/optimized/H5Zfletcher32.c.ll
 ; hermes/optimized/Host.cpp.ll
 ; icu/optimized/coleitr.ll
 ; icu/optimized/collationbuilder.ll
@@ -27,10 +25,8 @@
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libevent/optimized/poll.c.ll
 ; libquic/optimized/des.c.ll
-; libuv/optimized/poll.c.ll
 ; libwebp/optimized/alpha_processing.c.ll
 ; libwebp/optimized/anim_decode.c.ll
-; libzmq/optimized/zmq.cpp.ll
 ; lief/optimized/des.c.ll
 ; linux/optimized/8139too.ll
 ; linux/optimized/airtime.ll
@@ -39,15 +35,12 @@
 ; linux/optimized/drm_format_helper.ll
 ; linux/optimized/ethtool.ll
 ; linux/optimized/fcntl.ll
-; linux/optimized/file_table.ll
 ; linux/optimized/fops.ll
 ; linux/optimized/hda_codec.ll
-; linux/optimized/hdac_regmap.ll
 ; linux/optimized/hooks.ll
 ; linux/optimized/inet_timewait_sock.ll
 ; linux/optimized/intel_overlay.ll
 ; linux/optimized/ioctl.ll
-; linux/optimized/mii.ll
 ; linux/optimized/neighbour.ll
 ; linux/optimized/open.ll
 ; linux/optimized/phy-c45.ll
@@ -134,7 +127,6 @@
 ; mold/optimized/passes.cc.SH4.cc.ll
 ; mold/optimized/passes.cc.SPARC64.cc.ll
 ; mold/optimized/passes.cc.X86_64.cc.ll
-; node/optimized/poll.ll
 ; node/optimized/simdutf.ll
 ; nuklear/optimized/unity.c.ll
 ; oiio/optimized/ddsinput.cpp.ll
@@ -214,7 +206,6 @@
 ; tokio-rs/optimized/5cdni0zdopovrkgi.ll
 ; wireshark/optimized/addr_resolv.c.ll
 ; wireshark/optimized/busmaster.c.ll
-; wireshark/optimized/file-rtpdump.c.ll
 ; wireshark/optimized/packet-6lowpan.c.ll
 ; wireshark/optimized/packet-cpfi.c.ll
 ; wireshark/optimized/packet-dccp.c.ll
@@ -229,6 +220,8 @@
 ; wireshark/optimized/packet-tcp.c.ll
 ; wireshark/optimized/text_import.c.ll
 ; yosys/optimized/dfflegalize.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -271,14 +264,13 @@ entry:
   ret i32 %6
 }
 
-; 23 occurrences:
+; 37 occurrences:
 ; clamav/optimized/bytecode_api.c.ll
 ; icu/optimized/umutablecptrie.ll
 ; jq/optimized/main.ll
 ; lief/optimized/des.c.ll
 ; linux/optimized/aspm.ll
 ; linux/optimized/ehci-hcd.ll
-; linux/optimized/mii.ll
 ; linux/optimized/reg.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
@@ -291,6 +283,21 @@ entry:
 ; mitsuba3/optimized/cpuinfo.cpp.ll
 ; openmpi/optimized/op_avx_component.ll
 ; openusd/optimized/ilmbase_half.cpp.ll
+; openvdb/optimized/Diagnostics.cc.ll
+; openvdb/optimized/FastSweeping.cc.ll
+; openvdb/optimized/Filter.cc.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
+; openvdb/optimized/LevelSetRebuild.cc.ll
+; openvdb/optimized/LevelSetSphere.cc.ll
+; openvdb/optimized/LevelSetTracker.cc.ll
+; openvdb/optimized/Mask.cc.ll
+; openvdb/optimized/Merge.cc.ll
+; openvdb/optimized/MultiResGrid.cc.ll
+; openvdb/optimized/PoissonSolver.cc.ll
+; openvdb/optimized/TopologyToLevelSet.cc.ll
+; openvdb/optimized/VolumeAdvect.cc.ll
+; openvdb/optimized/VolumeToMesh.cc.ll
+; openvdb/optimized/points.cc.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; qemu/optimized/util_cpuinfo-i386.c.ll

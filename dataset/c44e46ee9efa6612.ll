@@ -1,5 +1,7 @@
 
-; 54 occurrences:
+; 58 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/to_chars.ll
 ; bullet3/optimized/btConvexHull.ll
 ; bullet3/optimized/btMiniSDF.ll
 ; cpython/optimized/compile.ll
@@ -11,12 +13,14 @@
 ; lief/optimized/BinaryStream.cpp.ll
 ; lief/optimized/CorePrStatus.cpp.ll
 ; llvm/optimized/Commit.cpp.ll
+; llvm/optimized/ELFObjectFile.cpp.ll
 ; llvm/optimized/HeaderMap.cpp.ll
 ; llvm/optimized/Lexer.cpp.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SourceManager.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_matrix.ll
 ; meshoptimizer/optimized/overdrawanalyzer.cpp.ll
 ; meshoptimizer/optimized/vcacheanalyzer.cpp.ll
 ; miniaudio/optimized/unity.c.ll

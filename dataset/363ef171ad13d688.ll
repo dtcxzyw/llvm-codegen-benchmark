@@ -13,16 +13,19 @@ entry:
   ret i1 %6
 }
 
-; 21 occurrences:
+; 24 occurrences:
 ; freetype/optimized/psaux.c.ll
 ; hermes/optimized/BytecodeDisassembler.cpp.ll
 ; linux/optimized/sd.ll
 ; linux/optimized/tdls.ll
 ; llvm/optimized/AArch64PromoteConstant.cpp.ll
+; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/ControlHeightReduction.cpp.ll
+; llvm/optimized/CoroFrame.cpp.ll
 ; llvm/optimized/EarlyCSE.cpp.ll
 ; llvm/optimized/LICM.cpp.ll
 ; llvm/optimized/SMTConstraintManager.cpp.ll
+; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/TokenAnnotator.cpp.ll
 ; llvm/optimized/Z3CrosscheckVisitor.cpp.ll
 ; openjdk/optimized/superword.ll

@@ -1,7 +1,7 @@
-func000000000000004a:                   # @func000000000000004a
+func000000000000004b:                   # @func000000000000004b
 	xorl	%eax, %eax
-	cmpl	%esi, %edx
-	setbe	%al
+	cmpl	%edx, %esi
+	setae	%al
 	shll	$4, %eax
 	addq	%rdi, %rax
 	retq

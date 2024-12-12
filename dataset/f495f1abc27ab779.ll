@@ -1,4 +1,17 @@
 
+; 2 occurrences:
+; ruby/optimized/sha1.ll
+; verilator/optimized/V3String.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000b(i64 %0) #0 {
+entry:
+  %1 = trunc nuw i64 %0 to i32
+  %2 = shl nuw nsw i32 %1, 3
+  %3 = and i32 %2, 24
+  %4 = xor i32 %3, 24
+  ret i32 %4
+}
+
 ; 15 occurrences:
 ; cmake/optimized/inet.c.ll
 ; libuv/optimized/inet.c.ll

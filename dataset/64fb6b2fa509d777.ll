@@ -11,11 +11,11 @@
 ; quantlib/optimized/turkey.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000101(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -14
   %4 = icmp ult i32 %3, 5
-  %5 = or i1 %4, %1
+  %5 = or i1 %1, %4
   %6 = icmp eq i32 %0, 10
   %7 = and i1 %6, %5
   ret i1 %7
@@ -28,11 +28,11 @@ entry:
 ; quantlib/optimized/italy.ll
 ; quantlib/optimized/romania.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000102(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = icmp ult i32 %3, 2
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   %6 = icmp eq i32 %1, 1
   %7 = and i1 %5, %6
   ret i1 %7

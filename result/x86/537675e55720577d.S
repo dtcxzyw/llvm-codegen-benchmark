@@ -1,12 +1,10 @@
 func0000000000000000:                   # @func0000000000000000
 	notq	%rdx
-	addq	%rdi, %rdx
-	leaq	2(%rsi,%rdx), %rax
+	addq	%rsi, %rdi
+	leaq	2(%rdx,%rdi), %rax
 	retq
 func0000000000000018:                   # @func0000000000000018
 	notq	%rdx
-	shlq	$4, %rdx
-	addq	%rdi, %rdx
-	shlq	$4, %rsi
-	leaq	8(%rsi,%rdx), %rax
+	leaq	(%rdi,%rsi,8), %rax
+	leaq	8(%rax,%rdx,8), %rax
 	retq

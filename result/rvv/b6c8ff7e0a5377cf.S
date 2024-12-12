@@ -6,7 +6,7 @@ func0000000000000008:                   # @func0000000000000008
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfsub.vv	v8, v8, v16
 	vmfgt.vf	v16, v8, fa5
-	vmor.mm	v0, v16, v0
+	vmor.mm	v0, v0, v16
 	ret
 .LCPI1_0:
 	.quad	0x3fdfffff94a03595              # double 0.4999999
@@ -30,7 +30,7 @@ func0000000000000014:                   # @func0000000000000014
 	vfsub.vv	v8, v8, v16
 	fmv.d.x	fa5, zero
 	vmfle.vf	v16, v8, fa5
-	vmor.mm	v0, v16, v0
+	vmor.mm	v0, v0, v16
 	ret
 func0000000000000002:                   # @func0000000000000002
 	vsetivli	zero, 16, e64, m8, ta, ma
@@ -43,7 +43,7 @@ func0000000000000018:                   # @func0000000000000018
 	vfsub.vv	v8, v8, v16
 	fli.d	fa5, 1.0
 	vmfge.vf	v16, v8, fa5
-	vmor.mm	v0, v16, v0
+	vmor.mm	v0, v0, v16
 	ret
 func0000000000000006:                   # @func0000000000000006
 	vsetivli	zero, 16, e64, m8, ta, ma

@@ -36,7 +36,7 @@
 ; z3/optimized/dl_mk_similarity_compressor.cpp.ll
 ; z3/optimized/nnf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = icmp eq i32 %2, 0
@@ -91,7 +91,7 @@ entry:
 ; verilator/optimized/V3EmitCSyms.cpp.ll
 ; z3/optimized/arith_solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i32 %1) #0 {
+define i1 @func000000000000018c(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = icmp ne i32 %2, 0
@@ -100,55 +100,7 @@ entry:
   ret i1 %5
 }
 
-; 37 occurrences:
-; cmake/optimized/core.c.ll
-; darktable/optimized/history.c.ll
-; entt/optimized/entity_copy.cpp.ll
-; entt/optimized/meta_any.cpp.ll
-; entt/optimized/meta_context.cpp.ll
-; entt/optimized/meta_func.cpp.ll
-; entt/optimized/meta_handle.cpp.ll
-; entt/optimized/meta_type.cpp.ll
-; glslang/optimized/Intermediate.cpp.ll
-; glslang/optimized/ParseContextBase.cpp.ll
-; glslang/optimized/ParseHelper.cpp.ll
-; glslang/optimized/SpirvIntrinsics.cpp.ll
-; glslang/optimized/hlslParseHelper.cpp.ll
-; glslang/optimized/iomapper.cpp.ll
-; glslang/optimized/linkValidate.cpp.ll
-; harfbuzz/optimized/harfbuzz.cc.ll
-; libuv/optimized/core.c.ll
-; linux/optimized/blk-merge.ll
-; linux/optimized/intel_uncore.ll
-; linux/optimized/xt_addrtype.ll
-; llvm/optimized/ASTContext.cpp.ll
-; llvm/optimized/ASTStructuralEquivalence.cpp.ll
-; llvm/optimized/InstCombineSelect.cpp.ll
-; llvm/optimized/Instructions.cpp.ll
-; llvm/optimized/MachineOperand.cpp.ll
-; llvm/optimized/MemorySanitizer.cpp.ll
-; llvm/optimized/SemaObjCProperty.cpp.ll
-; llvm/optimized/Verifier.cpp.ll
-; node/optimized/core.ll
-; openjdk/optimized/hb-aat-layout.ll
-; openjdk/optimized/subnode.ll
-; php/optimized/zend_inheritance.ll
-; qemu/optimized/net_can_can_core.c.ll
-; quickjs/optimized/quickjs.ll
-; redis/optimized/anet.ll
-; z3/optimized/arith_solver.cpp.ll
-; z3/optimized/q_solver.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 536870912
-  %3 = icmp ne i32 %2, 0
-  %4 = icmp eq i32 %0, 0
-  %5 = xor i1 %3, %4
-  ret i1 %5
-}
-
-; 110 occurrences:
+; 111 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; git/optimized/diff-no-index.ll
 ; git/optimized/match-trees.ll
@@ -258,21 +210,71 @@ entry:
 ; openjdk/optimized/linkResolver.ll
 ; php/optimized/pcre2_auto_possess.ll
 ; php/optimized/pcre2_match.ll
+; qemu/optimized/hw_net_tulip.c.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000181(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 8
+  %2 = and i32 %1, 16
   %3 = icmp ne i32 %2, 0
-  %4 = icmp eq i32 %0, 178
+  %4 = icmp eq i32 %0, 0
   %5 = xor i1 %4, %3
+  ret i1 %5
+}
+
+; 38 occurrences:
+; cmake/optimized/core.c.ll
+; darktable/optimized/history.c.ll
+; entt/optimized/entity_copy.cpp.ll
+; entt/optimized/meta_any.cpp.ll
+; entt/optimized/meta_context.cpp.ll
+; entt/optimized/meta_func.cpp.ll
+; entt/optimized/meta_handle.cpp.ll
+; entt/optimized/meta_type.cpp.ll
+; glslang/optimized/Intermediate.cpp.ll
+; glslang/optimized/ParseContextBase.cpp.ll
+; glslang/optimized/ParseHelper.cpp.ll
+; glslang/optimized/SpirvIntrinsics.cpp.ll
+; glslang/optimized/hlslParseHelper.cpp.ll
+; glslang/optimized/iomapper.cpp.ll
+; glslang/optimized/linkValidate.cpp.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; libuv/optimized/core.c.ll
+; linux/optimized/blk-merge.ll
+; linux/optimized/intel_uncore.ll
+; linux/optimized/xt_addrtype.ll
+; llvm/optimized/ASTContext.cpp.ll
+; llvm/optimized/ASTStructuralEquivalence.cpp.ll
+; llvm/optimized/InstCombineSelect.cpp.ll
+; llvm/optimized/Instructions.cpp.ll
+; llvm/optimized/MachineOperand.cpp.ll
+; llvm/optimized/MemorySanitizer.cpp.ll
+; llvm/optimized/SemaObjCProperty.cpp.ll
+; llvm/optimized/Verifier.cpp.ll
+; lvgl/optimized/lv_tabview.ll
+; node/optimized/core.ll
+; openjdk/optimized/hb-aat-layout.ll
+; openjdk/optimized/subnode.ll
+; php/optimized/zend_inheritance.ll
+; qemu/optimized/net_can_can_core.c.ll
+; quickjs/optimized/quickjs.ll
+; redis/optimized/anet.ll
+; z3/optimized/arith_solver.cpp.ll
+; z3/optimized/q_solver.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 536870912
+  %3 = icmp ne i32 %2, 0
+  %4 = icmp eq i32 %0, 0
+  %5 = xor i1 %3, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; openjdk/optimized/method.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000184(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 8
   %3 = icmp ne i32 %2, 0
@@ -282,23 +284,10 @@ entry:
 }
 
 ; 2 occurrences:
-; llvm/optimized/SemaLookup.cpp.ll
-; openjdk/optimized/methodHandles.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 15
-  %3 = icmp eq i32 %2, 6
-  %4 = icmp ult i32 %0, 398
-  %5 = xor i1 %3, %4
-  ret i1 %5
-}
-
-; 2 occurrences:
 ; softposit-rs/optimized/1e6z9tsqxvhrpdzq.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000cc(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, %0
   %3 = icmp slt i32 %2, 0
@@ -306,9 +295,21 @@ entry:
 }
 
 ; 1 occurrences:
+; llvm/optimized/SemaLookup.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000081(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, -5
+  %3 = icmp eq i32 %2, 1
+  %4 = icmp ult i32 %0, 5
+  %5 = xor i1 %3, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; gromacs/optimized/parallel_3dfft.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 4
   %3 = icmp eq i32 %2, 0

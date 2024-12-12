@@ -50,11 +50,11 @@
 ; openjdk/optimized/xVerify.ll
 ; openjdk/optimized/zBarrierSet.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000245(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000885(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = icmp ugt ptr %4, %1
+  %5 = icmp ult ptr %1, %4
   %6 = icmp ule ptr %0, %1
   %7 = select i1 %6, i1 %5, i1 false
   ret i1 %7
@@ -70,11 +70,11 @@ entry:
 ; openjdk/optimized/continuation.ll
 ; openjdk/optimized/continuationWrapper.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000249(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000889(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw ptr, ptr %1, i64 %3
-  %5 = icmp ugt ptr %4, %0
+  %5 = icmp ult ptr %0, %4
   %6 = icmp uge ptr %0, %1
   %7 = select i1 %6, i1 %5, i1 false
   ret i1 %7

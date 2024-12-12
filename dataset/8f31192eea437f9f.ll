@@ -17,7 +17,7 @@ entry:
   ret i8 %2
 }
 
-; 22 occurrences:
+; 24 occurrences:
 ; duckdb/optimized/ub_duckdb_common_arrow.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_arrow_appender.cpp.ll
 ; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
@@ -40,6 +40,8 @@ entry:
 ; linux/optimized/intel_sseu_debugfs.ll
 ; linux/optimized/skl_watermark.ll
 ; linux/optimized/tx.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000008(i64 %0) #0 {
 entry:
@@ -66,13 +68,12 @@ entry:
   ret i8 %2
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; linux/optimized/intel_bw.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_dpio_phy.ll
 ; linux/optimized/intel_engine_cs.ll
-; linux/optimized/intel_snps_phy.ll
 ; linux/optimized/skl_watermark.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000000c(i64 %0) #0 {

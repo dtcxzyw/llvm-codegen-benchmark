@@ -8,7 +8,7 @@
 ; ruby/optimized/util.ll
 ; wireshark/optimized/packet-btbredr_rf.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 256
   %3 = icmp eq i32 %2, 0

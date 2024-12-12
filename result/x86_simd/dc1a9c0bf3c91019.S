@@ -4,7 +4,7 @@
 	.long	4096                            # 0x1000
 .LCPI0_2:
 	.long	8192                            # 0x2000
-func0000000000000023:                   # @func0000000000000023
+func0000000000000043:                   # @func0000000000000043
 	vptestmq	.LCPI0_0(%rip){1to4}, %ymm1, %k1
 	vorps	.LCPI0_1(%rip){1to4}, %xmm0, %xmm0 {%k1}
 	vorps	.LCPI0_2(%rip){1to4}, %xmm0, %xmm0
@@ -27,7 +27,7 @@ func0000000000000002:                   # @func0000000000000002
 	.long	136104                          # 0x213a8
 .LCPI2_2:
 	.long	35924                           # 0x8c54
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	vptestmq	.LCPI2_0(%rip){1to4}, %ymm1, %k1
 	vorps	.LCPI2_1(%rip){1to4}, %xmm0, %xmm0 {%k1}
 	vorps	.LCPI2_2(%rip){1to4}, %xmm0, %xmm0

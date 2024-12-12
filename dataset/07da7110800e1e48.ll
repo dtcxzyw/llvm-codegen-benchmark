@@ -1,7 +1,9 @@
 
-; 2 occurrences:
+; 4 occurrences:
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd8.c.ll
+; cmake/optimized/cover.c.ll
+; zstd/optimized/cover.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:

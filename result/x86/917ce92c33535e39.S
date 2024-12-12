@@ -1,6 +1,6 @@
 func0000000000000001:                   # @func0000000000000001
 	andnq	%rsi, %rdx, %rax
-	testq	%rdi, %rax
+	testq	%rax, %rdi
 	sete	%al
 	retq
 func000000000000000c:                   # @func000000000000000c

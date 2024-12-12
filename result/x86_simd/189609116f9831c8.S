@@ -2,7 +2,7 @@
 	.long	4294967292                      # 0xfffffffc
 .LCPI0_1:
 	.long	8                               # 0x8
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	vpsrad	$31, %ymm0, %ymm1
 	vpsrld	$30, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
@@ -17,7 +17,7 @@ func0000000000000044:                   # @func0000000000000044
 	.long	715827883                       # 0x2aaaaaab
 .LCPI1_1:
 	.long	15                              # 0xf
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	vpshufd	$245, %ymm0, %ymm1              # ymm1 = ymm0[1,1,3,3,5,5,7,7]
 	vpbroadcastd	.LCPI1_0(%rip), %ymm2   # ymm2 = [715827883,715827883,715827883,715827883,715827883,715827883,715827883,715827883]
 	vpmuldq	%ymm2, %ymm1, %ymm1

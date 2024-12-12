@@ -1,12 +1,10 @@
 
-; 8 occurrences:
+; 6 occurrences:
 ; abc/optimized/cuddApa.c.ll
 ; clamav/optimized/rebuildpe.c.ll
 ; luau/optimized/loslib.cpp.ll
 ; openssl/optimized/libcrypto-lib-bn_mpi.ll
-; openssl/optimized/libcrypto-lib-x_bignum.ll
 ; openssl/optimized/libcrypto-shlib-bn_mpi.ll
-; openssl/optimized/libcrypto-shlib-x_bignum.ll
 ; openssl/optimized/libtestutil-lib-format_output.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000011(i1 %0, i32 %1) #0 {

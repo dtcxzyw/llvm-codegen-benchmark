@@ -12,12 +12,12 @@ func0000000000000001:                   # @func0000000000000001
 	movslq	%esi, %rax
 	shlq	$4, %rax
 	retq
-func0000000000000035:                   # @func0000000000000035
+func0000000000000007:                   # @func0000000000000007
 	addl	%edi, %esi
 	movslq	%esi, %rax
-	shlq	$2, %rax
+	shlq	$4, %rax
 	retq
-func0000000000000007:                   # @func0000000000000007
+func0000000000000011:                   # @func0000000000000011
 	addl	%edi, %esi
 	movslq	%esi, %rax
 	shlq	$4, %rax

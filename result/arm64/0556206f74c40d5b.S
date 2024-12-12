@@ -1,107 +1,68 @@
 func0000000000000047:                   // @func0000000000000047
 // %bb.0:                               // %entry
-	ldr	q16, [sp]
-	fcmgt	v7.4s, v7.4s, #0.0
-	fcmgt	v6.4s, v6.4s, #0.0
-	fcmgt	v5.4s, v5.4s, #0.0
-	fcmeq	v4.4s, v4.4s, #0.0
-	fcmeq	v3.4s, v3.4s, #0.0
-	fcmgt	v16.4s, v16.4s, #0.0
-	fcmeq	v2.4s, v2.4s, #0.0
-	fcmeq	v1.4s, v1.4s, #0.0
-	uzp1	v5.8h, v5.8h, v6.8h
-	uzp1	v3.8h, v3.8h, v4.8h
-	uzp1	v7.8h, v7.8h, v16.8h
-	uzp1	v1.8h, v1.8h, v2.8h
-	uzp1	v2.16b, v5.16b, v7.16b
-	uzp1	v1.16b, v1.16b, v3.16b
-	and	v0.16b, v2.16b, v0.16b
-	bic	v0.16b, v0.16b, v1.16b
+	fcmp	s1, #0.0
+	cset	w8, gt
+	fcmp	s0, #0.0
+	and	w8, w8, w0
+	csel	w0, wzr, w8, eq
 	ret
                                         // -- End function
 func0000000000000074:                   // @func0000000000000074
 // %bb.0:                               // %entry
-	ldr	q16, [sp]
-	fcmeq	v7.4s, v7.4s, #0.0
-	fcmeq	v6.4s, v6.4s, #0.0
-	fcmeq	v5.4s, v5.4s, #0.0
-	fcmgt	v4.4s, v4.4s, #0.0
-	fcmgt	v3.4s, v3.4s, #0.0
-	fcmeq	v16.4s, v16.4s, #0.0
-	fcmgt	v2.4s, v2.4s, #0.0
-	fcmgt	v1.4s, v1.4s, #0.0
-	uzp1	v5.8h, v5.8h, v6.8h
-	uzp1	v3.8h, v3.8h, v4.8h
-	uzp1	v7.8h, v7.8h, v16.8h
-	uzp1	v1.8h, v1.8h, v2.8h
-	uzp1	v2.16b, v5.16b, v7.16b
-	uzp1	v1.16b, v1.16b, v3.16b
-	bic	v0.16b, v0.16b, v2.16b
-	and	v0.16b, v0.16b, v1.16b
+	fcmp	s1, #0.0
+	cset	w8, ne
+	fcmp	s0, #0.0
+	and	w8, w8, w0
+	csel	w0, wzr, w8, le
 	ret
                                         // -- End function
 func0000000000000077:                   // @func0000000000000077
 // %bb.0:                               // %entry
-	ldr	q16, [sp]
-	fcmeq	v7.4s, v7.4s, #0.0
-	fcmeq	v6.4s, v6.4s, #0.0
-	fcmeq	v5.4s, v5.4s, #0.0
-	fcmeq	v4.4s, v4.4s, #0.0
-	fcmeq	v3.4s, v3.4s, #0.0
-	fcmeq	v16.4s, v16.4s, #0.0
-	fcmeq	v2.4s, v2.4s, #0.0
-	fcmeq	v1.4s, v1.4s, #0.0
-	uzp1	v5.8h, v5.8h, v6.8h
-	uzp1	v3.8h, v3.8h, v4.8h
-	uzp1	v7.8h, v7.8h, v16.8h
-	uzp1	v1.8h, v1.8h, v2.8h
-	uzp1	v2.16b, v5.16b, v7.16b
-	uzp1	v1.16b, v1.16b, v3.16b
-	bic	v0.16b, v0.16b, v2.16b
-	bic	v0.16b, v0.16b, v1.16b
+	fcmp	s1, #0.0
+	cset	w8, ne
+	fcmp	s0, #0.0
+	and	w8, w8, w0
+	csel	w0, wzr, w8, eq
+	ret
+                                        // -- End function
+func0000000000000022:                   // @func0000000000000022
+// %bb.0:                               // %entry
+	fmov	s2, #0.75000000
+	fcmp	s1, s2
+	fmov	s1, #0.12500000
+	cset	w8, mi
+	fcmp	s0, s1
+	and	w8, w0, w8
+	csel	w0, wzr, w8, pl
+	ret
+                                        // -- End function
+func00000000000000c2:                   // @func00000000000000c2
+// %bb.0:                               // %entry
+	fmov	s2, #0.12500000
+	fcmp	s1, #0.0
+	cset	w8, ge
+	fcmp	s0, s2
+	and	w8, w8, w0
+	csel	w0, wzr, w8, pl
 	ret
                                         // -- End function
 func00000000000000c4:                   // @func00000000000000c4
 // %bb.0:                               // %entry
-	fcmgt	v4.4s, v4.4s, #0.0
-	fcmgt	v3.4s, v3.4s, #0.0
-	ldr	q16, [sp]
-	fcmgt	v2.4s, v2.4s, #0.0
-	fcmgt	v1.4s, v1.4s, #0.0
-	fcmge	v7.4s, v7.4s, #0.0
-	fcmge	v16.4s, v16.4s, #0.0
-	fcmge	v6.4s, v6.4s, #0.0
-	fcmge	v5.4s, v5.4s, #0.0
-	uzp1	v3.8h, v3.8h, v4.8h
-	uzp1	v1.8h, v1.8h, v2.8h
-	uzp1	v2.8h, v7.8h, v16.8h
-	uzp1	v4.8h, v5.8h, v6.8h
-	uzp1	v1.16b, v1.16b, v3.16b
-	uzp1	v2.16b, v4.16b, v2.16b
-	and	v0.16b, v0.16b, v1.16b
-	and	v0.16b, v2.16b, v0.16b
+	fcmp	s1, #0.0
+	cset	w8, ge
+	fcmp	s0, #0.0
+	and	w8, w8, w0
+	csel	w0, wzr, w8, le
 	ret
                                         // -- End function
 func0000000000000024:                   // @func0000000000000024
 // %bb.0:                               // %entry
-	fmov	v16.4s, #1.00000000
-	ldr	q17, [sp]
-	movi	v18.4s, #63, lsl #24
-	fcmgt	v17.4s, v16.4s, v17.4s
-	fcmgt	v7.4s, v16.4s, v7.4s
-	fcmgt	v6.4s, v16.4s, v6.4s
-	fcmgt	v5.4s, v16.4s, v5.4s
-	fcmgt	v4.4s, v4.4s, v18.4s
-	fcmgt	v3.4s, v3.4s, v18.4s
-	fcmgt	v2.4s, v2.4s, v18.4s
-	fcmgt	v1.4s, v1.4s, v18.4s
-	uzp1	v7.8h, v7.8h, v17.8h
-	uzp1	v5.8h, v5.8h, v6.8h
-	uzp1	v3.8h, v3.8h, v4.8h
-	uzp1	v1.8h, v1.8h, v2.8h
-	uzp1	v2.16b, v5.16b, v7.16b
-	uzp1	v1.16b, v1.16b, v3.16b
-	and	v0.16b, v2.16b, v0.16b
-	and	v0.16b, v0.16b, v1.16b
+	fmov	s2, #1.00000000
+	fcmp	s1, s2
+	fmov	s1, #0.50000000
+	cset	w8, mi
+	fcmp	s0, s1
+	and	w8, w8, w0
+	csel	w0, wzr, w8, le
 	ret
                                         // -- End function

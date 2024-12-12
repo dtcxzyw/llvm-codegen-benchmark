@@ -1,8 +1,7 @@
 
-; 99 occurrences:
+; 97 occurrences:
 ; abseil-cpp/optimized/cord_analysis.cc.ll
 ; abseil-cpp/optimized/cordz_info.cc.ll
-; abseil-cpp/optimized/exponential_biased_test.cc.ll
 ; abseil-cpp/optimized/exponential_distribution_test.cc.ll
 ; abseil-cpp/optimized/gaussian_distribution_test.cc.ll
 ; assimp/optimized/BlenderTessellator.cpp.ll
@@ -24,7 +23,6 @@
 ; gromacs/optimized/insert_molecules.cpp.ll
 ; libquic/optimized/speed.cc.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
-; oiio/optimized/benchmark.cpp.ll
 ; opencv/optimized/circlesgrid.cpp.ll
 ; opencv/optimized/fast_norm.cpp.ll
 ; opencv/optimized/fr_lfw_benchmark.cpp.ll
@@ -107,10 +105,13 @@ entry:
   ret double %2
 }
 
-; 4 occurrences:
+; 7 occurrences:
 ; folly/optimized/TDigest.cpp.ll
+; gromacs/optimized/colvarcomp_gpath.cpp.ll
 ; meshlab/optimized/edit_referencing.cpp.ll
+; oiio/optimized/benchmark.cpp.ll
 ; openspiel/optimized/coin_game.cc.ll
+; openusd/optimized/plane.cpp.ll
 ; wireshark/optimized/packet-dhcp.c.ll
 ; Function Attrs: nounwind
 define double @func0000000000000001(i64 %0) #0 {

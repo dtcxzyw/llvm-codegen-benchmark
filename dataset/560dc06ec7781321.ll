@@ -18,24 +18,24 @@
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; openvdb/optimized/points.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 3
   %4 = and i32 %3, 3968
-  %5 = add nsw i32 %4, %1
-  %6 = icmp sgt i32 %5, %0
+  %5 = add nsw i32 %1, %4
+  %6 = icmp slt i32 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; openvdb/optimized/FindActiveValues.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 3
   %4 = and i32 %3, 536870784
   %5 = add nsw i32 %4, %1
-  %6 = icmp sle i32 %5, %0
+  %6 = icmp sge i32 %0, %5
   ret i1 %6
 }
 
@@ -48,7 +48,7 @@ entry:
   %3 = lshr i32 %2, 14
   %4 = and i32 %3, 1
   %5 = add i32 %4, %1
-  %6 = icmp ugt i32 %5, %0
+  %6 = icmp ult i32 %0, %5
   ret i1 %6
 }
 
@@ -65,7 +65,7 @@ entry:
   %3 = lshr i32 %2, 14
   %4 = and i32 %3, 1
   %5 = add i32 %4, %1
-  %6 = icmp eq i32 %5, %0
+  %6 = icmp eq i32 %0, %5
   ret i1 %6
 }
 
@@ -76,8 +76,8 @@ define i1 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 3
   %4 = and i32 %3, 31
-  %5 = add i32 %4, %1
-  %6 = icmp slt i32 %5, %0
+  %5 = add i32 %1, %4
+  %6 = icmp sgt i32 %0, %5
   ret i1 %6
 }
 
@@ -88,48 +88,45 @@ define i1 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 3
   %4 = and i32 %3, 31
-  %5 = add i32 %4, %1
-  %6 = icmp sgt i32 %5, %0
+  %5 = add i32 %1, %4
+  %6 = icmp slt i32 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; abc/optimized/ifCut.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 16
   %4 = and i32 %3, 255
-  %5 = add nsw i32 %4, %1
-  %6 = icmp slt i32 %5, %0
-  ret i1 %6
-}
-
-; 4 occurrences:
-; clamav/optimized/infblock.c.ll
-; linux/optimized/interrupt.ll
-; llvm/optimized/SemaDeclAttr.cpp.ll
-; quickjs/optimized/libunicode.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = lshr i32 %2, 5
-  %4 = and i32 %3, 31
-  %5 = add nuw nsw i32 %4, %1
-  %6 = icmp ugt i32 %5, %0
+  %5 = add nsw i32 %1, %4
+  %6 = icmp sgt i32 %0, %5
   ret i1 %6
 }
 
 ; 2 occurrences:
 ; clamav/optimized/infblock.c.ll
-; lua/optimized/ldebug.ll
+; quickjs/optimized/libunicode.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000064(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 5
   %4 = and i32 %3, 31
-  %5 = add nuw nsw i32 %4, %1
-  %6 = icmp ult i32 %5, %0
+  %5 = add nuw nsw i32 %1, %4
+  %6 = icmp ult i32 %0, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; clamav/optimized/infblock.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000068(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 5
+  %4 = and i32 %3, 31
+  %5 = add nuw nsw i32 %1, %4
+  %6 = icmp ugt i32 %0, %5
   ret i1 %6
 }
 
@@ -137,12 +134,25 @@ entry:
 ; llvm/optimized/CGExpr.cpp.ll
 ; llvm/optimized/CodeGenTBAA.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 16
   %4 = and i32 %3, 32767
   %5 = add nuw nsw i32 %4, %1
-  %6 = icmp eq i32 %5, %0
+  %6 = icmp eq i32 %0, %5
+  ret i1 %6
+}
+
+; 2 occurrences:
+; linux/optimized/interrupt.ll
+; llvm/optimized/SemaDeclAttr.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000074(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 21
+  %4 = and i32 %3, 1
+  %5 = add nuw nsw i32 %4, %1
+  %6 = icmp samesign ult i32 %0, %5
   ret i1 %6
 }
 
@@ -154,7 +164,7 @@ entry:
   %3 = lshr i32 %2, 3
   %4 = and i32 %3, 65535
   %5 = add i32 %4, %1
-  %6 = icmp ne i32 %5, %0
+  %6 = icmp ne i32 %0, %5
   ret i1 %6
 }
 
@@ -165,8 +175,8 @@ define i1 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 14
   %4 = and i32 %3, 4095
-  %5 = add i32 %4, %1
-  %6 = icmp ult i32 %5, %0
+  %5 = add i32 %1, %4
+  %6 = icmp ugt i32 %0, %5
   ret i1 %6
 }
 
@@ -177,8 +187,20 @@ define i1 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 15
   %4 = and i32 %3, 65535
-  %5 = add i32 %4, %1
-  %6 = icmp ule i32 %5, %0
+  %5 = add i32 %1, %4
+  %6 = icmp uge i32 %0, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; lua/optimized/ldebug.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000078(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 16
+  %4 = and i32 %3, 255
+  %5 = add nuw nsw i32 %1, %4
+  %6 = icmp samesign ugt i32 %0, %5
   ret i1 %6
 }
 

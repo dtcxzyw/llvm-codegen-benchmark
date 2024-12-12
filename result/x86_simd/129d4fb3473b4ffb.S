@@ -28,3 +28,29 @@ func0000000000000085:                   # @func0000000000000085
 	vpaddd	%ymm0, %ymm1, %ymm0
 	vpmulld	.LCPI0_3(%rip){1to8}, %ymm0, %ymm0
 	retq
+.LCPI1_0:
+	.byte	160                             # 0xa0
+	.byte	160                             # 0xa0
+	.byte	160                             # 0xa0
+	.byte	160                             # 0xa0
+	.byte	160                             # 0xa0
+	.byte	160                             # 0xa0
+	.byte	160                             # 0xa0
+	.byte	160                             # 0xa0
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+.LCPI1_1:
+	.long	4294967232                      # 0xffffffc0
+.LCPI1_2:
+	.long	188                             # 0xbc
+func0000000000000185:                   # @func0000000000000185
+	vpcmpnleub	.LCPI1_0(%rip), %xmm1, %k1
+	vpaddd	.LCPI1_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
+	vpmulld	.LCPI1_2(%rip){1to8}, %ymm0, %ymm0
+	retq

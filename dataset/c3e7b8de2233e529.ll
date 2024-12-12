@@ -1,5 +1,5 @@
 
-; 59 occurrences:
+; 57 occurrences:
 ; annoy/optimized/annoymodule.ll
 ; cpython/optimized/setobject.ll
 ; darktable/optimized/introspection_colormapping.c.ll
@@ -9,8 +9,6 @@
 ; hyperscan/optimized/state_compress.c.ll
 ; image-rs/optimized/2mngkegtim1o10y3.ll
 ; influxdb-rs/optimized/1s5ibqekmzia6ibu.ll
-; luajit/optimized/lj_prng.ll
-; luajit/optimized/lj_prng_dyn.ll
 ; meilisearch-rs/optimized/1bqqlm3jtb9rf3cv.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; mini-lsm-rs/optimized/2y1m09w3fogtr6jd.ll
@@ -33,8 +31,8 @@
 ; mold/optimized/passes.cc.SH4.cc.ll
 ; mold/optimized/passes.cc.SPARC64.cc.ll
 ; mold/optimized/passes.cc.X86_64.cc.ll
+; opencc/optimized/louds-trie.cc.ll
 ; opencv/optimized/rho.cpp.ll
-; php/optimized/engine_combinedlcg.ll
 ; qdrant-rs/optimized/pgs97hhgng8x0qz.ll
 ; qemu/optimized/plugins_loader.c.ll
 ; quickjs/optimized/quickjs.ll

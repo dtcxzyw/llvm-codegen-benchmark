@@ -5,7 +5,7 @@
 ; rocksdb/optimized/plain_table_bloom.cc.ll
 ; wireshark/optimized/packet-tipc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %0, 0
   %3 = icmp ult i32 %1, 512
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; arrow/optimized/compare_internal.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %0, 0
   %3 = icmp ugt i32 %1, 7

@@ -6,7 +6,7 @@ func0000000000000008:                   # @func0000000000000008
 	retq
 func0000000000000004:                   # @func0000000000000004
 	andl	%edx, %esi
-	cmpq	$5000, %rdi                     # imm = 0x1388
+	cmpq	$8, %rdi
 	setb	%al
 	orb	%sil, %al
 	retq

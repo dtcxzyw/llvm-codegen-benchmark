@@ -1,4 +1,30 @@
 
+; 14 occurrences:
+; cmake/optimized/xmltok.c.ll
+; cpython/optimized/xmltok.ll
+; hermes/optimized/ConsecutiveStringStorage.cpp.ll
+; hermes/optimized/HBC.cpp.ll
+; hermes/optimized/JSLexer.cpp.ll
+; hermes/optimized/JSONEmitter.cpp.ll
+; hermes/optimized/RegexSerialization.cpp.ll
+; hermes/optimized/Runtime.cpp.ll
+; hermes/optimized/UTF8.cpp.ll
+; linux/optimized/intel_color.ll
+; llvm/optimized/AArch64Disassembler.cpp.ll
+; zstd/optimized/zstd_v05.c.ll
+; zstd/optimized/zstd_v06.c.ll
+; zstd/optimized/zstd_v07.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001f(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 1835008
+  %4 = shl nuw nsw i32 %1, 12
+  %5 = or disjoint i32 %4, %3
+  %6 = or disjoint i32 %0, %5
+  %7 = zext nneg i32 %6 to i64
+  ret i64 %7
+}
+
 ; 1 occurrences:
 ; hermes/optimized/APFloat.cpp.ll
 ; Function Attrs: nounwind
@@ -9,25 +35,6 @@ entry:
   %5 = or disjoint i32 %4, %3
   %6 = or disjoint i32 %5, %0
   %7 = zext i32 %6 to i64
-  ret i64 %7
-}
-
-; 7 occurrences:
-; cmake/optimized/xmltok.c.ll
-; cpython/optimized/xmltok.ll
-; linux/optimized/intel_color.ll
-; llvm/optimized/AArch64Disassembler.cpp.ll
-; zstd/optimized/zstd_v05.c.ll
-; zstd/optimized/zstd_v06.c.ll
-; zstd/optimized/zstd_v07.c.ll
-; Function Attrs: nounwind
-define i64 @func000000000000001f(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 448
-  %4 = shl nuw nsw i32 %1, 3
-  %5 = or disjoint i32 %4, %3
-  %6 = or disjoint i32 %5, %0
-  %7 = zext nneg i32 %6 to i64
   ret i64 %7
 }
 
@@ -62,7 +69,7 @@ entry:
   %3 = and i32 %2, 127
   %4 = shl i32 %1, 12
   %5 = or disjoint i32 %4, %3
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = zext i32 %6 to i64
   ret i64 %7
 }

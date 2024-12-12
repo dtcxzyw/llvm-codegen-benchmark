@@ -1,3 +1,10 @@
+func0000000000000008:                   # @func0000000000000008
+	xorl	%eax, %eax
+	cmpl	%edx, %esi
+	seta	%al
+	leal	7(,%rax,8), %eax
+	andl	%edi, %eax
+	retq
 func000000000000000a:                   # @func000000000000000a
 	xorl	%eax, %eax
 	cmpl	%edx, %esi
@@ -17,12 +24,5 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	%edx, %esi
 	sete	%al
 	addl	%eax, %eax
-	andl	%edi, %eax
-	retq
-func0000000000000008:                   # @func0000000000000008
-	cmpl	%edx, %esi
-	movl	$52, %ecx
-	movl	$4, %eax
-	cmoval	%ecx, %eax
 	andl	%edi, %eax
 	retq

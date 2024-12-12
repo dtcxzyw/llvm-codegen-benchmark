@@ -1,5 +1,5 @@
 
-; 213 occurrences:
+; 222 occurrences:
 ; abc/optimized/satSolver2.c.ll
 ; arrow/optimized/base64.cpp.ll
 ; assimp/optimized/Base64.cpp.ll
@@ -70,7 +70,6 @@
 ; linux/optimized/dvo_ch7xxx.ll
 ; linux/optimized/fib_semantics.ll
 ; linux/optimized/fib_trie.ll
-; linux/optimized/fs-writeback.ll
 ; linux/optimized/hid-ntrig.ll
 ; linux/optimized/host.ll
 ; linux/optimized/intel_bios.ll
@@ -81,7 +80,6 @@
 ; linux/optimized/keyboard.ll
 ; linux/optimized/ldt.ll
 ; linux/optimized/libata-scsi.ll
-; linux/optimized/logips2pp.ll
 ; linux/optimized/n_tty.ll
 ; linux/optimized/net_failover.ll
 ; linux/optimized/nfs4proc.ll
@@ -130,13 +128,23 @@
 ; llvm/optimized/StmtOpenMP.cpp.ll
 ; llvm/optimized/TokenAnnotator.cpp.ll
 ; llvm/optimized/VPlanRecipes.cpp.ll
-; llvm/optimized/X86CallingConv.cpp.ll
 ; llvm/optimized/X86Disassembler.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_bar.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_draw_rect.ll
+; lvgl/optimized/lv_font.ll
+; lvgl/optimized/lv_group.ll
+; lvgl/optimized/lv_label.ll
+; lvgl/optimized/lv_menu.ll
+; lvgl/optimized/lv_obj_draw.ll
+; lvgl/optimized/lv_refr.ll
+; lvgl/optimized/lv_span.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/CSkinnedMesh.cpp.ll
 ; minetest/optimized/base64.cpp.ll
@@ -213,6 +221,7 @@
 ; z3/optimized/dep_intervals.cpp.ll
 ; z3/optimized/interval_mpq.cpp.ll
 ; z3/optimized/nla_intervals.cpp.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i8 %0, i8 %1) #0 {
 entry:
@@ -239,7 +248,7 @@ define i8 @func0000000000000007(i8 %0, i8 %1) #0 {
 entry:
   %2 = shl nuw nsw i8 %1, 3
   %3 = and i8 %2, 8
-  %4 = or disjoint i8 %3, %0
+  %4 = or disjoint i8 %0, %3
   ret i8 %4
 }
 
@@ -284,18 +293,17 @@ entry:
   ret i8 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; cpython/optimized/textio.ll
 ; linux/optimized/sr.ll
 ; rust-analyzer-rs/optimized/1cf75p1eybr0uy0c.ll
 ; yalantinglibs/optimized/benchmark.cpp.ll
-; yalantinglibs/optimized/serialize_config.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000006(i8 %0, i8 %1) #0 {
 entry:
   %2 = shl nuw nsw i8 %1, 4
   %3 = and i8 %2, 16
-  %4 = or i8 %3, %0
+  %4 = or i8 %0, %3
   ret i8 %4
 }
 
@@ -307,7 +315,7 @@ define i8 @func0000000000000005(i8 %0, i8 %1) #0 {
 entry:
   %2 = shl nuw i8 %1, 6
   %3 = and i8 %2, -128
-  %4 = or disjoint i8 %3, %0
+  %4 = or disjoint i8 %0, %3
   ret i8 %4
 }
 
@@ -318,7 +326,7 @@ define i8 @func0000000000000004(i8 %0, i8 %1) #0 {
 entry:
   %2 = shl nuw i8 %1, 2
   %3 = and i8 %2, -64
-  %4 = or i8 %3, %0
+  %4 = or i8 %0, %3
   ret i8 %4
 }
 

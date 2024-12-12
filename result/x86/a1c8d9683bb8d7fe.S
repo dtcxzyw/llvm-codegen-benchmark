@@ -7,6 +7,14 @@ func0000000000000010:                   # @func0000000000000010
 	testb	$1, %dil
 	cmoveq	%rsi, %rax
 	retq
+func0000000000000030:                   # @func0000000000000030
+	cmpq	$65536, %rdx                    # imm = 0x10000
+	cmovbq	%rdx, %rsi
+	movq	%rsi, %rax
+	shrq	$8, %rax
+	testb	$1, %dil
+	cmoveq	%rsi, %rax
+	retq
 func0000000000000003:                   # @func0000000000000003
 	testq	%rdx, %rdx
 	cmovneq	%rdx, %rsi

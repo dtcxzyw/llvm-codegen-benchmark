@@ -38,13 +38,13 @@ func0000000000000010:                   # @func0000000000000010
 	subq	%rdi, %rax
 	shlq	$2, %rax
 	retq
-func0000000000000014:                   # @func0000000000000014
-	movl	%esi, %eax
-	subq	%rdi, %rax
-	shlq	$2, %rax
-	retq
 func000000000000000e:                   # @func000000000000000e
 	movl	%esi, %eax
 	subl	%edi, %eax
 	shlq	$32, %rax
+	retq
+func0000000000000014:                   # @func0000000000000014
+	movl	%esi, %eax
+	subq	%rdi, %rax
+	shlq	$3, %rax
 	retq

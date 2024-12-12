@@ -4,7 +4,7 @@ func0000000000000000:                   # @func0000000000000000
 	orq	$2, %rax
 	retq
 func0000000000000003:                   # @func0000000000000003
-	leaq	4(%rsi,%rdi), %rax
+	leaq	4(%rdi,%rsi), %rax
 	retq
 func0000000000000002:                   # @func0000000000000002
 	movq	%rdi, %rax

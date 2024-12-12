@@ -18,6 +18,11 @@ func0000000000000000:                   # @func0000000000000000
 	shlxl	%edx, %esi, %eax
 	orl	%edi, %eax
 	retq
+func000000000000000c:                   # @func000000000000000c
+	decb	%dl
+	shlxl	%edx, %esi, %eax
+	orl	%edi, %eax
+	retq
 func000000000000000e:                   # @func000000000000000e
 	addb	$-2, %dl
 	shlxl	%edx, %esi, %eax
@@ -25,11 +30,6 @@ func000000000000000e:                   # @func000000000000000e
 	retq
 func0000000000000004:                   # @func0000000000000004
 	incb	%dl
-	shlxl	%edx, %esi, %eax
-	orl	%edi, %eax
-	retq
-func000000000000000c:                   # @func000000000000000c
-	decb	%dl
 	shlxl	%edx, %esi, %eax
 	orl	%edi, %eax
 	retq

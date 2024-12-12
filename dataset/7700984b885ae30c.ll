@@ -39,10 +39,9 @@ entry:
   ret i32 %6
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/xmltok.ll
-; linux/optimized/scsicam.ll
 ; node/optimized/simdutf.ll
 ; oiio/optimized/formatspec.cpp.ll
 ; redis/optimized/hyperloglog.ll
@@ -52,7 +51,7 @@ entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw nsw i32 %2, 12
   %4 = and i32 %3, 258048
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   %6 = add nuw nsw i32 %5, 67043328
   ret i32 %6
 }

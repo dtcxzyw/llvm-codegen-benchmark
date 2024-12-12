@@ -12,7 +12,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, 1
   %5 = uitofp nneg i32 %4 to float
-  %6 = fcmp ugt float %5, %1
+  %6 = fcmp ult float %1, %5
   %7 = select i1 %0, i1 true, i1 %6
   ret i1 %7
 }

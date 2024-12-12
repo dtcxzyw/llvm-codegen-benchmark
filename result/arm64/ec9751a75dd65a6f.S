@@ -1,8 +1,9 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	movi	v1.16b, #2
-	cmeq	v1.16b, v0.16b, v1.16b
-	orr	v0.16b, v1.16b, v0.16b
-	mvn	v0.16b, v0.16b
+	and	w8, w0, #0xff
+	cmp	w8, #2
+	eor	w8, w0, #0x1
+	cset	w9, ne
+	and	w0, w9, w8
 	ret
                                         // -- End function

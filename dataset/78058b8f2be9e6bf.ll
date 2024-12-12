@@ -1,5 +1,7 @@
 
-; 11 occurrences:
+; 13 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; darktable/optimized/export.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; darktable/optimized/introspection_spots.c.ll
@@ -20,7 +22,7 @@ entry:
   ret i64 %5
 }
 
-; 33 occurrences:
+; 32 occurrences:
 ; clamav/optimized/yara_grammar.c.ll
 ; cmake/optimized/cm_get_date.c.ll
 ; cmake/optimized/nghttp2_stream.c.ll
@@ -29,7 +31,6 @@ entry:
 ; diesel-rs/optimized/2zzzvc1em6im74h3.ll
 ; flac/optimized/fixed.c.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; freetype/optimized/raster.c.ll
 ; freetype/optimized/truetype.c.ll
 ; git/optimized/ewah_rlw.ll
@@ -71,7 +72,7 @@ define i64 @func0000000000000008(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = sub nuw i64 %1, %3
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 

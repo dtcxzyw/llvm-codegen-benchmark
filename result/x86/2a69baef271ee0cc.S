@@ -5,7 +5,7 @@ func0000000000000004:                   # @func0000000000000004
 	setb	%al
 	orb	%dil, %al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	andb	$127, %sil
 	addb	$-5, %sil
 	cmpb	$-4, %sil

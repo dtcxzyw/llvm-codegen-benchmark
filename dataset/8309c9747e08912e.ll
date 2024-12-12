@@ -13,7 +13,7 @@ entry:
   %2 = and i32 %1, 31
   %3 = xor i32 %2, 31
   %4 = zext nneg i32 %3 to i64
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   ret i64 %5
 }
 
@@ -25,7 +25,7 @@ entry:
   %2 = and i32 %1, -2147483648
   %3 = xor i32 %2, -1073741824
   %4 = zext i32 %3 to i64
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   ret i64 %5
 }
 
@@ -37,7 +37,7 @@ entry:
   %2 = and i32 %1, 4
   %3 = xor i32 %2, 4
   %4 = zext nneg i32 %3 to i64
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   ret i64 %5
 }
 

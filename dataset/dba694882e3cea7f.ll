@@ -1,8 +1,10 @@
 
-; 1 occurrences:
+; 3 occurrences:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000188(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 4
   %4 = icmp ne i64 %3, %1
@@ -11,10 +13,12 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000010c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 4
   %4 = icmp ne i64 %3, %0
@@ -72,24 +76,12 @@ entry:
 ; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a6(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000546(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 2
   %4 = icmp slt i64 %3, %0
   %5 = icmp sgt i64 %1, 0
   %6 = and i1 %4, %5
-  ret i1 %6
-}
-
-; 1 occurrences:
-; wireshark/optimized/display_filter_expression_dialog.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl i64 %2, 3
-  %4 = icmp ne i64 %3, %1
-  %5 = icmp ne i64 %0, 0
-  %6 = and i1 %5, %4
   ret i1 %6
 }
 
@@ -119,7 +111,7 @@ entry:
 ; ceres/optimized/schur_eliminator_4_4_d.cc.ll
 ; ceres/optimized/schur_eliminator_d_d_d.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000016c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000004cc(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 2
   %4 = icmp slt i64 %3, %1
@@ -143,7 +135,7 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000016a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000004ca(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 2
   %4 = icmp slt i64 %3, %1
@@ -155,7 +147,7 @@ entry:
 ; 1 occurrences:
 ; ozz-animation/optimized/skinning_job.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000009c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000012c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 2
   %4 = icmp uge i64 %3, %1

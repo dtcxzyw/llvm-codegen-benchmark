@@ -8,6 +8,11 @@ func000000000000002a:                   # @func000000000000002a
 	leaq	4(%rsi,%rdi), %rax
 	shrq	$3, %rax
 	retq
+func0000000000000040:                   # @func0000000000000040
+	subq	%rdx, %rsi
+	leaq	1(%rsi,%rdi), %rax
+	shrq	%rax
+	retq
 func000000000000002e:                   # @func000000000000002e
 	subq	%rdx, %rsi
 	movabsq	$4503599627370458, %rax         # imm = 0xFFFFFFFFFFFDA

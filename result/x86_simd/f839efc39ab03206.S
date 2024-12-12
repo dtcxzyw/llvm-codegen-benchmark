@@ -28,16 +28,3 @@ func0000000000000004:                   # @func0000000000000004
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000005:                   # @func0000000000000005
-	vpsllw	$7, %xmm0, %xmm0
-	vpxor	%xmm5, %xmm5, %xmm5
-	vmulpd	%zmm4, %zmm2, %zmm2
-	vmulpd	%zmm3, %zmm1, %zmm1
-	vxorpd	%xmm3, %xmm3, %xmm3
-	vcmpnlepd	%zmm3, %zmm1, %k0
-	vcmpnlepd	%zmm3, %zmm2, %k1
-	kunpckbw	%k0, %k1, %k1
-	vpcmpgtb	%xmm0, %xmm5, %k0 {%k1}
-	vpmovm2b	%k0, %xmm0
-	vzeroupper
-	retq

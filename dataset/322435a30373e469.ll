@@ -7,7 +7,7 @@
 ; spike/optimized/s_subMagsF16.ll
 ; spike/optimized/s_subMagsF32.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000014(i32 %0, i1 %1) #0 {
+define i8 @func0000000000000024(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i8 16, i8 0
   %3 = or disjoint i8 %2, 8
@@ -19,11 +19,11 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/scrptrun.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000018(i32 %0, i1 %1) #0 {
+define i8 @func0000000000000038(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i8 16, i8 0
   %3 = or disjoint i8 %2, 8
-  %4 = icmp ugt i32 %0, 255
+  %4 = icmp samesign ugt i32 %0, 255
   %5 = select i1 %4, i8 %3, i8 %2
   ret i8 %5
 }

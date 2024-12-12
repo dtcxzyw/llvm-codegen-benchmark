@@ -28,9 +28,22 @@ entry:
 define i64 @func0000000000000007(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 536870912
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = zext nneg i32 %4 to i64
   %6 = and i64 %0, -1073741824
+  %7 = or disjoint i64 %6, %5
+  ret i64 %7
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_draw_buf.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, -65536
+  %4 = or i32 %3, %1
+  %5 = zext i32 %4 to i64
+  %6 = and i64 %0, -4294901761
   %7 = or disjoint i64 %6, %5
   ret i64 %7
 }
@@ -59,7 +72,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -65536
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = zext i32 %4 to i64
   %6 = and i64 %0, -4294967296
   %7 = or disjoint i64 %6, %5

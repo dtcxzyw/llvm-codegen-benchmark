@@ -3,15 +3,15 @@ func0000000000000001:                   # @func0000000000000001
 	xorl	%eax, %eax
 	testb	$1, %sil
 	cmovel	%edx, %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	decl	%edx
 	testb	$1, %sil
 	movl	$2147483646, %eax               # imm = 0x7FFFFFFE
 	cmovel	%edx, %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	setne	%al
 	retq
 func0000000000000004:                   # @func0000000000000004
@@ -19,48 +19,40 @@ func0000000000000004:                   # @func0000000000000004
 	testb	$1, %sil
 	movl	$2, %eax
 	cmovel	%edx, %eax
-	cmpl	%edi, %eax
-	seta	%al
+	cmpl	%eax, %edi
+	setb	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	addl	$-9, %edx
 	testb	$1, %sil
 	movl	$-5, %eax
 	cmovel	%edx, %eax
-	cmpl	%edi, %eax
-	setg	%al
+	cmpl	%eax, %edi
+	setl	%al
 	retq
-func000000000000003b:                   # @func000000000000003b
+func000000000000006b:                   # @func000000000000006b
 	addl	$3, %edx
 	testb	$1, %sil
 	movl	$5, %eax
 	cmovel	%edx, %eax
-	cmpl	%edi, %eax
-	setle	%al
+	cmpl	%eax, %edi
+	setge	%al
 	retq
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	addl	$3, %edx
 	testb	$1, %sil
 	movl	$5, %eax
 	cmovel	%edx, %eax
-	cmpl	%edi, %eax
-	setg	%al
+	cmpl	%eax, %edi
+	setl	%al
 	retq
-func0000000000000034:                   # @func0000000000000034
-	addl	$3, %edx
-	testb	$1, %sil
-	movl	$5, %eax
-	cmovel	%edx, %eax
-	cmpl	%edi, %eax
-	seta	%al
-	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	andb	$1, %sil
 	decl	%edx
 	xorl	%eax, %eax
 	negb	%sil
 	sbbl	%eax, %eax
 	orl	%edx, %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq

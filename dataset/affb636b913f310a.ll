@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 20 occurrences:
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; libquic/optimized/curve25519.c.ll
@@ -17,6 +17,9 @@
 ; redis/optimized/lparser.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; wireshark/optimized/packet-coap.c.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0, i8 %1) #0 {
 entry:
@@ -42,8 +45,10 @@ entry:
   ret i8 %3
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i8 %0, i8 %1) #0 {
 entry:

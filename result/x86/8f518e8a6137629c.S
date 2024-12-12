@@ -1,23 +1,23 @@
-func0000000000000024:                   # @func0000000000000024
+func0000000000000064:                   # @func0000000000000064
 	andl	$1, %edx
 	shll	$4, %edx
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx
 	setb	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000061:                   # @func0000000000000061
 	andl	$1, %edx
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx
 	sete	%al
 	retq
-func000000000000002c:                   # @func000000000000002c
+func000000000000006c:                   # @func000000000000006c
 	andl	$1, %edx
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx
 	setne	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000068:                   # @func0000000000000068
 	andl	$1, %edx
 	addq	%rsi, %rdx
 	cmpq	%rdi, %rdx

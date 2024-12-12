@@ -91,5 +91,5 @@ func0000000000000000:                   # @func0000000000000000
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm2, %ymm2
 	vpsrld	$8, %ymm1, %ymm1
 	vpmulld	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq

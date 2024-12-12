@@ -5,7 +5,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	$33, %eax
 	setae	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	leal	(%rsi,%rdi), %eax
 	xorl	%edx, %edx
 	divl	%edi

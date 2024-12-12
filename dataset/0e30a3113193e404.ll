@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; rocksdb/optimized/db_impl_compaction_flush.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, %1
   %.mask = and i64 %2, 2147483648
@@ -17,7 +17,7 @@ entry:
 ; draco/optimized/sequential_normal_attribute_decoder.cc.ll
 ; draco/optimized/sequential_normal_attribute_encoder.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000019a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000032a(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %0, %1
   %3 = trunc i64 %2 to i32
@@ -30,7 +30,7 @@ entry:
 ; git/optimized/range-diff.ll
 ; llama.cpp/optimized/common.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, %1
   %.mask = and i64 %2, 2147483648
@@ -41,7 +41,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/pathfinding.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000328(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %0, %1
   %.mask = and i64 %2, 2147483648
@@ -55,7 +55,7 @@ entry:
 ; ceres/optimized/power_series_expansion_preconditioner.cc.ll
 ; ceres/optimized/schur_complement_solver.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000022a(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %0, %1
   %3 = trunc i64 %2 to i32
@@ -69,7 +69,7 @@ entry:
 ; ceres/optimized/power_series_expansion_preconditioner.cc.ll
 ; ceres/optimized/schur_complement_solver.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000118(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000238(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %0, %1
   %3 = and i64 %2, 4294967288
@@ -87,7 +87,7 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; tinympc/optimized/tiny_api.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, %1
   %3 = trunc i64 %2 to i32
@@ -98,7 +98,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/boost.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000128(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, %1
   %3 = trunc i64 %2 to i32
@@ -109,7 +109,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/ftbase.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000106(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, %1
   %.mask = and i64 %2, 140737488355328
@@ -120,7 +120,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestIterator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000009a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000012a(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, %1
   %3 = trunc i64 %2 to i62

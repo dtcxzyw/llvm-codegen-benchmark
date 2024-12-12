@@ -10,7 +10,7 @@ entry:
   %2 = shl nuw nsw i64 1, %1
   %3 = trunc nuw i64 %2 to i8
   %4 = xor i8 %3, -1
-  %5 = and i8 %4, %0
+  %5 = and i8 %0, %4
   ret i8 %5
 }
 
@@ -22,7 +22,7 @@ entry:
   %2 = shl nsw i64 -1, %1
   %3 = trunc i64 %2 to i8
   %4 = xor i8 %3, -1
-  %5 = and i8 %4, %0
+  %5 = and i8 %0, %4
   ret i8 %5
 }
 
@@ -43,7 +43,7 @@ entry:
   %2 = shl nuw i64 1, %1
   %3 = trunc i64 %2 to i8
   %4 = xor i8 %3, -1
-  %5 = and i8 %4, %0
+  %5 = and i8 %0, %4
   ret i8 %5
 }
 

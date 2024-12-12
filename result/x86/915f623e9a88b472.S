@@ -1,4 +1,4 @@
-func0000000000000184:                   # @func0000000000000184
+func0000000000000304:                   # @func0000000000000304
 	movb	$40, %al
 	subb	%sil, %al
 	shrxq	%rax, %rdi, %rax
@@ -12,9 +12,15 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	$10, %eax
 	setb	%al
 	retq
-func0000000000000188:                   # @func0000000000000188
+func0000000000000308:                   # @func0000000000000308
 	negb	%sil
 	shrxq	%rsi, %rdi, %rax
 	cmpl	$1000000000, %eax               # imm = 0x3B9ACA00
+	setae	%al
+	retq
+func0000000000000318:                   # @func0000000000000318
+	negb	%sil
+	shrxq	%rsi, %rdi, %rax
+	cmpl	$100000000, %eax                # imm = 0x5F5E100
 	setae	%al
 	retq

@@ -15,3 +15,13 @@ func0000000000000051:                   # @func0000000000000051
 	movabsq	$6148914691236517205, %rax      # imm = 0x5555555555555555
 	imulq	%rcx, %rax
 	retq
+func0000000000000059:                   # @func0000000000000059
+	leaq	(%rdx,%rdx,2), %rcx
+	shlq	$4, %rcx
+	addq	%rsi, %rcx
+	subq	%rdi, %rcx
+	addq	$48, %rcx
+	sarq	$4, %rcx
+	movabsq	$-6148914691236517205, %rax     # imm = 0xAAAAAAAAAAAAAAAB
+	imulq	%rcx, %rax
+	retq

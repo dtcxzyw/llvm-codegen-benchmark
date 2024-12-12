@@ -1,5 +1,5 @@
 
-%struct.stbtt_vertex.2869453 = type { i16, i16, i16, i16, i16, i16, i8, i8 }
+%struct.stbtt_vertex.3063030 = type { i16, i16, i16, i16, i16, i16, i8, i8 }
 
 ; 6 occurrences:
 ; imgui/optimized/imgui_draw.cpp.ll
@@ -9,12 +9,12 @@
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000012a(i64 %0, ptr %1, i16 %2) #0 {
+define ptr @func000000000000013f(i64 %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = shl nuw i16 %2, 1
   %4 = zext i16 %3 to i64
-  %5 = getelementptr nusw %struct.stbtt_vertex.2869453, ptr %1, i64 %4
-  %6 = getelementptr %struct.stbtt_vertex.2869453, ptr %5, i64 %0, i32 6
+  %5 = getelementptr nusw nuw %struct.stbtt_vertex.3063030, ptr %1, i64 %4
+  %6 = getelementptr nuw %struct.stbtt_vertex.3063030, ptr %5, i64 %0, i32 6
   ret ptr %6
 }
 

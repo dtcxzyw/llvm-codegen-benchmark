@@ -22,16 +22,21 @@ func0000000000000004:                   # @func0000000000000004
 	vpbroadcastd	.LCPI3_1(%rip), %ymm0   # ymm0 = [8,8,8,8,8,8,8,8]
 	vpsrld	$26, %ymm1, %ymm0 {%k1}
 	retq
-func0000000000000011:                   # @func0000000000000011
-	vptestmd	%ymm0, %ymm0, %k1
-	vpsrld	$3, %ymm1, %ymm0 {%k1} {z}
+.LCPI4_0:
+	.long	6                               # 0x6
+.LCPI4_1:
+	.long	3                               # 0x3
+func0000000000000014:                   # @func0000000000000014
+	vpcmpnltud	.LCPI4_0(%rip){1to8}, %ymm0, %k1
+	vpbroadcastd	.LCPI4_1(%rip), %ymm0   # ymm0 = [3,3,3,3,3,3,3,3]
+	vpsrld	$1, %ymm1, %ymm0 {%k1}
 	retq
 .LCPI5_0:
-	.long	4294967293                      # 0xfffffffd
+	.long	127999                          # 0x1f3ff
 .LCPI5_1:
-	.long	1                               # 0x1
+	.long	16000                           # 0x3e80
 func0000000000000008:                   # @func0000000000000008
 	vpcmpleud	.LCPI5_0(%rip){1to8}, %ymm0, %k1
-	vpbroadcastd	.LCPI5_1(%rip), %ymm0   # ymm0 = [1,1,1,1,1,1,1,1]
+	vpbroadcastd	.LCPI5_1(%rip), %ymm0   # ymm0 = [16000,16000,16000,16000,16000,16000,16000,16000]
 	vpsrld	$3, %ymm1, %ymm0 {%k1}
 	retq

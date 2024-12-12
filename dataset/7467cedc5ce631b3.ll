@@ -24,7 +24,7 @@ entry:
 ; cpython/optimized/binascii.ll
 ; php/optimized/uuencode.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000031(i32 %0, i8 %1) #0 {
+define i8 @func0000000000000061(i32 %0, i8 %1) #0 {
 entry:
   %2 = add nuw nsw i8 %1, 32
   %3 = icmp eq i32 %0, 0
@@ -32,19 +32,14 @@ entry:
   ret i8 %4
 }
 
-; 10 occurrences:
-; llvm/optimized/AArch64CallingConvention.cpp.ll
+; 5 occurrences:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AggressiveInstCombine.cpp.ll
 ; llvm/optimized/CallLowering.cpp.ll
-; llvm/optimized/CallingConvLower.cpp.ll
-; llvm/optimized/HWAddressSanitizer.cpp.ll
 ; llvm/optimized/MCELFStreamer.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; llvm/optimized/Value.cpp.ll
 ; llvm/optimized/X86ISelLoweringCall.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000011(i32 %0, i8 %1) #0 {
+define i8 @func0000000000000021(i32 %0, i8 %1) #0 {
 entry:
   %2 = add nsw i8 %1, -1
   %3 = icmp eq i32 %0, 0

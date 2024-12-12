@@ -13,8 +13,18 @@ func0000000000000001:                   # @func0000000000000001
 	movl	$2, %eax
 	cmovneq	%rdi, %rax
 	retq
+func0000000000000018:                   # @func0000000000000018
+	cmpl	$20, %esi
+	movl	$328, %eax                      # imm = 0x148
+	cmovbq	%rdi, %rax
+	retq
 func0000000000000004:                   # @func0000000000000004
 	testl	$-4, %esi
 	movl	$2, %eax
+	cmovneq	%rdi, %rax
+	retq
+func0000000000000014:                   # @func0000000000000014
+	movq	%rsi, %rax
+	andl	$-2, %eax
 	cmovneq	%rdi, %rax
 	retq

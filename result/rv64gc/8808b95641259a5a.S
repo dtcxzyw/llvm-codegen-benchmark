@@ -1,8 +1,3 @@
-func000000000000003d:                   # @func000000000000003d
-	andi	a2, a2, 255
-	sllw	a1, a2, a1
-	addw	a0, a0, a1
-	ret
 func000000000000000d:                   # @func000000000000000d
 	andi	a2, a2, 255
 	sllw	a1, a2, a1

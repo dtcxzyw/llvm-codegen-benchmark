@@ -1,9 +1,8 @@
 
-; 85 occurrences:
+; 84 occurrences:
 ; clamav/optimized/infblock.c.ll
 ; cpython/optimized/mathmodule.ll
 ; darktable/optimized/PanasonicV5Decompressor.cpp.ll
-; libsodium/optimized/libsodium_la-pwhash_scryptsalsa208sha256.ll
 ; linux/optimized/lbr.ll
 ; oiio/optimized/ddsinput.cpp.ll
 ; openexr/optimized/internal_huf.c.ll

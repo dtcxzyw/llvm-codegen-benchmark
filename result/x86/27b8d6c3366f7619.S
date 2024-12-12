@@ -1,4 +1,4 @@
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	addl	$-57344, %edx                   # imm = 0xFFFF2000
 	cmpl	$1056768, %edx                  # imm = 0x102000
 	setb	%cl
@@ -7,7 +7,7 @@ func00000000000000c4:                   # @func00000000000000c4
 	andb	%dil, %al
 	andb	%cl, %al
 	retq
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	addl	$-3, %edx
 	cmpl	$10, %edx
 	setb	%cl
@@ -16,7 +16,7 @@ func0000000000000046:                   # @func0000000000000046
 	andb	%dil, %al
 	andb	%cl, %al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	addl	$-4520, %edx                    # imm = 0xEE58
 	cmpl	$27, %edx
 	setb	%cl
@@ -25,7 +25,7 @@ func0000000000000044:                   # @func0000000000000044
 	andb	%dil, %al
 	andb	%cl, %al
 	retq
-func0000000000000144:                   # @func0000000000000144
+func0000000000000484:                   # @func0000000000000484
 	addl	$-44032, %edx                   # imm = 0xFFFF5400
 	cmpl	$11172, %edx                    # imm = 0x2BA4
 	setb	%cl

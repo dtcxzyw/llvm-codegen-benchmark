@@ -8,12 +8,13 @@ entry:
   %4 = zext i8 %1 to i32
   %5 = add nuw nsw i32 %4, %3
   %6 = shl nuw nsw i32 %5, 2
-  %7 = add nuw i32 %6, %0
+  %7 = add nuw i32 %0, %6
   ret i32 %7
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; linux/optimized/drm_dsc_helper.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; opencv/optimized/pyramids.cpp.ll
 ; openusd/optimized/loopfilter.c.ll
 ; Function Attrs: nounwind
@@ -36,7 +37,7 @@ entry:
   %4 = zext i8 %1 to i32
   %5 = add nuw nsw i32 %4, %3
   %6 = shl i32 %5, 24
-  %7 = add i32 %6, %0
+  %7 = add i32 %0, %6
   ret i32 %7
 }
 
@@ -49,7 +50,7 @@ entry:
   %4 = zext i8 %1 to i32
   %5 = add nuw nsw i32 %4, %3
   %6 = shl nuw nsw i32 %5, 8
-  %7 = add i32 %6, %0
+  %7 = add i32 %0, %6
   ret i32 %7
 }
 

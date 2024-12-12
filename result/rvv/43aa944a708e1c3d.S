@@ -3,7 +3,7 @@ func0000000000000004:                   # @func0000000000000004
 	vfsub.vv	v8, v8, v12
 	fli.s	fa5, 0.5
 	vmfgt.vf	v12, v8, fa5
-	vmxor.mm	v0, v12, v0
+	vmxor.mm	v0, v0, v12
 	ret
 func000000000000000b:                   # @func000000000000000b
 	vsetivli	zero, 16, e32, m4, ta, ma

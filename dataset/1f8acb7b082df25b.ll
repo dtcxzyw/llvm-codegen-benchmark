@@ -2,7 +2,7 @@
 ; 12 occurrences:
 ; cmake/optimized/setopt.c.ll
 ; curl/optimized/libcurl_la-setopt.ll
-; linux/optimized/8250_exar.ll
+; hermes/optimized/BytecodeGenerator.cpp.ll
 ; linux/optimized/af_netlink.ll
 ; linux/optimized/i915_perf.ll
 ; linux/optimized/intel_cx0_phy.ll
@@ -22,12 +22,11 @@ entry:
   ret i8 %5
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; curl/optimized/libcurl_la-mqtt.ll
 ; duckdb/optimized/ub_duckdb_common_serializer.cpp.ll
 ; lief/optimized/iostream.cpp.ll
 ; llvm/optimized/DIEHash.cpp.ll
-; luau/optimized/UnwindBuilderDwarf2.cpp.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV64BE.cc.ll
@@ -58,6 +57,31 @@ entry:
   %3 = select i1 %2, i8 -128, i8 0
   %4 = and i8 %0, 127
   %5 = or disjoint i8 %3, %4
+  ret i8 %5
+}
+
+; 1 occurrences:
+; yalantinglibs/optimized/binary_json_conformance_suite.cc.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000031(i8 %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i64 %1, 127
+  %3 = select i1 %2, i8 -128, i8 0
+  %4 = and i8 %0, 127
+  %5 = or disjoint i8 %3, %4
+  ret i8 %5
+}
+
+; 2 occurrences:
+; llvm/optimized/DIEHash.cpp.ll
+; luau/optimized/UnwindBuilderDwarf2.cpp.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000029(i8 %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ult i64 %1, 128
+  %3 = select i1 %2, i8 0, i8 -128
+  %4 = and i8 %0, 127
+  %5 = or disjoint i8 %4, %3
   ret i8 %5
 }
 

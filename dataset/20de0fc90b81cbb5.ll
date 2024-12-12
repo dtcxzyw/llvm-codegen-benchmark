@@ -1,13 +1,9 @@
 
-; 34 occurrences:
+; 30 occurrences:
 ; abc/optimized/cuddGenetic.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; gromacs/optimized/dlabrd.cpp.ll
-; gromacs/optimized/dlatrd.cpp.ll
-; gromacs/optimized/dsytd2.cpp.ll
 ; gromacs/optimized/slabrd.cpp.ll
-; gromacs/optimized/slatrd.cpp.ll
-; gromacs/optimized/ssytd2.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
 ; openblas/optimized/dgejsv.c.ll
 ; openblas/optimized/dhgeqz.c.ll
@@ -38,7 +34,7 @@
 define i64 @func0000000000000015(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, 1
-  %3 = mul nsw i32 %2, %1
+  %3 = mul nsw i32 %1, %2
   %4 = add nsw i32 %3, %0
   %5 = sext i32 %4 to i64
   ret i64 %5

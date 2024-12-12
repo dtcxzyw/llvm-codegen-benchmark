@@ -122,14 +122,14 @@ func0000000000000006:                   # @func0000000000000006
 	retq
 .LCPI19_0:
 	.long	2                               # 0x2
-func0000000000000010:                   # @func0000000000000010
+func0000000000000004:                   # @func0000000000000004
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpaddd	.LCPI19_0(%rip){1to4}, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
 .LCPI20_0:
-	.long	2                               # 0x2
-func0000000000000004:                   # @func0000000000000004
+	.long	4294967286                      # 0xfffffff6
+func0000000000000010:                   # @func0000000000000010
 	vpaddd	%xmm1, %xmm0, %xmm0
 	vpaddd	.LCPI20_0(%rip){1to4}, %xmm0, %xmm0
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero

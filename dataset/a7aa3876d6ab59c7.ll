@@ -1,6 +1,7 @@
 
-; 24 occurrences:
+; 25 occurrences:
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
+; boost/optimized/expand.ll
 ; cpython/optimized/dtoa.ll
 ; hermes/optimized/dtoa.c.ll
 ; ipopt/optimized/IpQualityFunctionMuOracle.ll

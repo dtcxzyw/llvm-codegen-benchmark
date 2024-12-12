@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 26 occurrences:
 ; abc/optimized/acecRe.c.ll
 ; assimp/optimized/X3DImporter_Postprocess.cpp.ll
 ; clamav/optimized/yc.c.ll
@@ -21,11 +21,13 @@
 ; postgres/optimized/parse_coerce.ll
 ; qemu/optimized/block_file-posix.c.ll
 ; quantlib/optimized/indonesia.ll
+; recastnavigation/optimized/Tests_RecastFilter.cpp.ll
 ; slurm/optimized/launch.ll
 ; tokenizers-rs/optimized/4hn9gefsll13qr1r.ll
 ; wireshark/optimized/packet-rtps.c.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000042(i32 %0, i1 %1, i1 %2) #0 {
+define i1 @func0000000000000082(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = or i1 %1, %2
   %4 = icmp eq i32 %0, 45
@@ -33,19 +35,6 @@ entry:
   %6 = icmp eq i32 %0, 95
   %7 = or i1 %6, %5
   ret i1 %7
-}
-
-; 2 occurrences:
-; jq/optimized/unicode.ll
-; oniguruma/optimized/unicode.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000082(i32 %0, i1 %1, i1 %2) #0 {
-entry:
-  %3 = or i1 %1, %2
-  %4 = and i32 %0, -3
-  %5 = icmp eq i32 %4, 5
-  %6 = or i1 %3, %5
-  ret i1 %6
 }
 
 attributes #0 = { nounwind }

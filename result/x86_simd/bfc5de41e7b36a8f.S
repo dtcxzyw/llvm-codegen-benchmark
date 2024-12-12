@@ -42,11 +42,11 @@
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	vpandq	.LCPI0_2(%rip){1to4}, %ymm2, %ymm2
 	vpbroadcastq	.LCPI0_1(%rip), %ymm3   # ymm3 = [1,1,1,1]
 	vpsllvq	%ymm2, %ymm3, %ymm2
-	vpaddq	%ymm1, %ymm2, %ymm1
+	vpaddq	%ymm2, %ymm1, %ymm1
 	vpcmpltuq	%ymm0, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -95,7 +95,7 @@ func0000000000000084:                   # @func0000000000000084
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
-func00000000000000a4:                   # @func00000000000000a4
+func0000000000000144:                   # @func0000000000000144
 	vpandq	.LCPI1_2(%rip){1to4}, %ymm2, %ymm2
 	vpbroadcastq	.LCPI1_1(%rip), %ymm3   # ymm3 = [1,1,1,1]
 	vpsllvq	%ymm2, %ymm3, %ymm2
@@ -148,7 +148,7 @@ func00000000000000a4:                   # @func00000000000000a4
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
-func00000000000000a8:                   # @func00000000000000a8
+func0000000000000148:                   # @func0000000000000148
 	vpandq	.LCPI2_2(%rip){1to4}, %ymm2, %ymm2
 	vpbroadcastq	.LCPI2_1(%rip), %ymm3   # ymm3 = [1,1,1,1]
 	vpsllvq	%ymm2, %ymm3, %ymm2
@@ -165,7 +165,7 @@ func0000000000000008:                   # @func0000000000000008
 	vpandq	.LCPI3_0(%rip){1to4}, %ymm2, %ymm2
 	vpbroadcastq	.LCPI3_1(%rip), %ymm3   # ymm3 = [4,4,4,4]
 	vpsllvq	%ymm2, %ymm3, %ymm2
-	vpaddq	%ymm1, %ymm2, %ymm1
+	vpaddq	%ymm2, %ymm1, %ymm1
 	vpcmpnleuq	%ymm0, %ymm1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

@@ -1,4 +1,4 @@
-func0000000000000d14:                   # @func0000000000000d14
+func0000000000003a34:                   # @func0000000000003a34
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v10, v12
 	lui	a0, 4096
@@ -16,7 +16,7 @@ func0000000000000d14:                   # @func0000000000000d14
 	ret
 .LCPI1_0:
 	.quad	999999999999999999              # 0xde0b6b3a763ffff
-func0000000000000a1a:                   # @func0000000000000a1a
+func000000000000242a:                   # @func000000000000242a
 	lui	a0, %hi(.LCPI1_0)
 	ld	a0, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma

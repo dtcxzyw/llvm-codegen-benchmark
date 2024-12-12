@@ -1,6 +1,5 @@
 
-; 14 occurrences:
-; cmake/optimized/archive_write_add_filter_lz4.c.ll
+; 13 occurrences:
 ; folly/optimized/AsyncSocket.cpp.ll
 ; git/optimized/transport.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll

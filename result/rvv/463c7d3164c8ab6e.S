@@ -4,7 +4,7 @@ func0000000000000007:                   # @func0000000000000007
 	vfdiv.vv	v8, v12, v8
 	fli.s	fa5, inf
 	vmfne.vf	v12, v8, fa5
-	vmand.mm	v0, v12, v0
+	vmand.mm	v0, v0, v12
 	ret
 func0000000000000004:                   # @func0000000000000004
 	vsetivli	zero, 16, e32, m4, ta, ma
@@ -21,7 +21,7 @@ func000000000000000a:                   # @func000000000000000a
 	vfdiv.vv	v8, v12, v8
 	fli.s	fa5, 1.0
 	vmfle.vf	v12, v8, fa5
-	vmand.mm	v0, v12, v0
+	vmand.mm	v0, v0, v12
 	ret
 func000000000000000c:                   # @func000000000000000c
 	vsetivli	zero, 16, e32, m4, ta, ma

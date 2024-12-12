@@ -5,7 +5,7 @@ func0000000000000038:                   # @func0000000000000038
 	ld	a0, %lo(.LCPI0_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vi	v12, v12, 24
-	vor.vv	v10, v12, v10
+	vor.vv	v10, v10, v12
 	vxor.vv	v8, v10, v8
 	vmul.vx	v8, v8, a0
 	li	a0, 37
@@ -20,7 +20,7 @@ func0000000000000008:                   # @func0000000000000008
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vx	v12, v12, a0
 	vor.vv	v10, v12, v10
-	vxor.vv	v8, v10, v8
+	vxor.vv	v8, v8, v10
 	vmul.vx	v8, v8, a1
 	vsrl.vx	v8, v8, a0
 	ret
@@ -33,7 +33,7 @@ func0000000000000000:                   # @func0000000000000000
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vx	v12, v12, a0
 	vor.vv	v10, v12, v10
-	vxor.vv	v8, v10, v8
+	vxor.vv	v8, v8, v10
 	vmul.vx	v8, v8, a1
 	vsrl.vi	v8, v8, 27
 	ret
@@ -46,7 +46,7 @@ func0000000000000028:                   # @func0000000000000028
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsll.vx	v12, v12, a0
 	vor.vv	v10, v12, v10
-	vxor.vv	v8, v10, v8
+	vxor.vv	v8, v8, v10
 	vmul.vx	v8, v8, a1
 	li	a0, 47
 	vsrl.vx	v8, v8, a0

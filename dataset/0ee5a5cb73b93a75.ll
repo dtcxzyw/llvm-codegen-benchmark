@@ -201,7 +201,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/strbuf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub i64 %2, %1
   %3 = add i64 %.neg, -2
@@ -212,7 +212,7 @@ entry:
 ; 1 occurrences:
 ; arrow/optimized/concatenate.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub i64 %2, %1
   %3 = add i64 %.neg, 2147483647
@@ -223,17 +223,18 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/raster.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000aa(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub nsw i64 %2, %1
   %3 = icmp sgt i64 %.neg, %0
   ret i1 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; eastl/optimized/TestBitVector.cpp.ll
 ; eastl/optimized/TestFixedVector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub i64 %2, %1
   %3 = add i64 %.neg, 6

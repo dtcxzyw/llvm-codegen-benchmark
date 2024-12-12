@@ -36,7 +36,7 @@ func0000000000000003:                   # @func0000000000000003
 	retq
 func0000000000000007:                   # @func0000000000000007
 	imull	%esi, %edi
-	leal	1(%rdi), %eax
+	leal	80(%rdi), %eax
 	retq
 func0000000000000008:                   # @func0000000000000008
 	imull	%esi, %edi

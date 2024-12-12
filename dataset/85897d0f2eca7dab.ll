@@ -1,5 +1,5 @@
 
-; 60 occurrences:
+; 59 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
@@ -34,7 +34,6 @@
 ; spdlog/optimized/spdlog.cpp.ll
 ; z3/optimized/arith_eq_solver.cpp.ll
 ; z3/optimized/automaton.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/dl_mk_rule_inliner.cpp.ll
 ; z3/optimized/emonics.cpp.ll
 ; z3/optimized/factor_rewriter.cpp.ll
@@ -84,7 +83,7 @@ entry:
   %4 = add i64 %3, -28
   %5 = ptrtoint ptr %1 to i64
   %6 = sub i64 %4, %5
-  %7 = add nsw i64 %6, %0
+  %7 = add nsw i64 %0, %6
   ret i64 %7
 }
 

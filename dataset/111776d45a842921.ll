@@ -1,8 +1,7 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hermes/optimized/JSObject.cpp.ll
-; linux/optimized/ht.ll
 ; linux/optimized/intel_sdvo.ll
 ; openjdk/optimized/hb-ot-shape.ll
 ; Function Attrs: nounwind

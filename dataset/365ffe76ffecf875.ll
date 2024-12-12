@@ -1,9 +1,8 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/dauGia.c.ll
 ; abc/optimized/ifDsd.c.ll
-; xgboost/optimized/comm.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(ptr %0, i1 %1, i32 %2) #0 {
 entry:

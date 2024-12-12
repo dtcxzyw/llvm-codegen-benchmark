@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; cmake/optimized/uv-common.c.ll
 ; icu/optimized/uniset.ll
 ; libuv/optimized/uv-common.c.ll
@@ -14,24 +14,23 @@
 ; openjdk/optimized/addnode.ll
 ; openjdk/optimized/machnode.ll
 ; openjdk/optimized/vectorIntrinsics.ll
-; redis/optimized/anet.ll
 ; ruby/optimized/symbol.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000304(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000604(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp eq ptr %1, null
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
-; 72 occurrences:
+; 69 occurrences:
 ; clamav/optimized/freshclam.c.ll
 ; clamav/optimized/libfreshclam.c.ll
 ; clamav/optimized/pdfdecode.c.ll
-; clamav/optimized/readdb.c.ll
 ; cmake/optimized/huf_compress.c.ll
+; harfbuzz/optimized/hb-subset-cff1.cc.ll
 ; hdf5/optimized/h5diff_dset.c.ll
 ; icu/optimized/rulebasedcollator.ll
 ; icu/optimized/ucal.ll
@@ -39,9 +38,6 @@ entry:
 ; icu/optimized/unistr_cnv.ll
 ; libquic/optimized/pair.c.ll
 ; libzmq/optimized/tcp_address.cpp.ll
-; linux/optimized/af_packet.ll
-; linux/optimized/nsproxy.ll
-; linux/optimized/raw.ll
 ; linux/optimized/sch_api.ll
 ; linux/optimized/spurious.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
@@ -100,12 +96,12 @@ entry:
 ; wolfssl/optimized/signature.c.ll
 ; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000084(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = icmp eq ptr %1, null
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -121,12 +117,12 @@ entry:
 ; portaudio/optimized/pa_process.c.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000098(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp slt i32 %1, 1
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -156,7 +152,7 @@ entry:
 ; wolfssl/optimized/asn.c.ll
 ; wolfssl/optimized/pwdbased.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000184(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000304(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 1
   %4 = icmp eq ptr %1, null
@@ -165,7 +161,103 @@ entry:
   ret i1 %6
 }
 
-; 8 occurrences:
+; 105 occurrences:
+; boost/optimized/algorithm.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/buffer.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/calculation_type.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/contract.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/copy_segment_point.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/difference_pl_pl.ll
+; boost/optimized/env.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/execution_monitor.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/extensions.ll
+; boost/optimized/for_each_coordinate.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_ring.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/intersection_pl_pl.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/math_abs.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_equals.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/partition.ll
+; boost/optimized/pipe.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/promote_integral.ll
+; boost/optimized/range.ll
+; boost/optimized/rational.ll
+; boost/optimized/relative_order.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/search_path.ll
+; boost/optimized/select_most_precise.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/shell_path.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/test_impl.ll
+; boost/optimized/tupled_output.ll
+; boost/optimized/tuples.ll
+; boost/optimized/union_pl_pl.ll
+; boost/optimized/visit.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
+; boost/optimized/write_dsv.ll
 ; gromacs/optimized/modularsimulator.cpp.ll
 ; llvm/optimized/MCContext.cpp.ll
 ; llvm/optimized/MachineInstr.cpp.ll
@@ -173,18 +265,19 @@ entry:
 ; llvm/optimized/TargetLoweringObjectFileImpl.cpp.ll
 ; openssl/optimized/openssl-bin-x509.ll
 ; php/optimized/zend_API.ll
+; redis/optimized/t_zset.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000330(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000630(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp ne i32 %1, 0
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
-; 55 occurrences:
+; 54 occurrences:
 ; abc/optimized/bzlib.c.ll
 ; clamav/optimized/bytecode_api.c.ll
 ; cmake/optimized/bzlib.c.ll
@@ -221,7 +314,6 @@ entry:
 ; llvm/optimized/OverflowInstAnalysis.cpp.ll
 ; llvm/optimized/ParseDecl.cpp.ll
 ; llvm/optimized/RISCVCodeGenPrepare.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/SelectOptimize.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
@@ -241,26 +333,12 @@ entry:
 ; llvm/optimized/X86InstCombineIntrinsic.cpp.ll
 ; openjdk/optimized/type.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000204(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, -3
   %4 = icmp eq ptr %1, null
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
-  ret i1 %6
-}
-
-; 3 occurrences:
-; libjpeg-turbo/optimized/turbojpeg.c.ll
-; openjdk/optimized/ifnode.ll
-; wolfssl/optimized/ecc.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000060(i1 %0, i32 %1, ptr %2) #0 {
-entry:
-  %3 = icmp eq ptr %2, null
-  %4 = icmp ugt i32 %1, 8
-  %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -274,24 +352,24 @@ entry:
 ; node/optimized/pipe.ll
 ; wolfssl/optimized/aes.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000204(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000404(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %2, 1
   %4 = icmp eq ptr %1, null
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; clamav/optimized/bytecode_api.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000050(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func0000000000000090(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp ult i32 %1, -1024
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -300,36 +378,24 @@ entry:
 ; llvm/optimized/Metadata.cpp.ll
 ; tev/optimized/ImageViewer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000070(i1 %0, i32 %1, ptr %2) #0 {
+define i1 @func00000000000000b0(i1 %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp ne i32 %1, 13
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; z3/optimized/theory_arith.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000130(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000230(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 3
   %4 = icmp ne ptr %1, null
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
-  ret i1 %6
-}
-
-; 1 occurrences:
-; redis/optimized/t_zset.ll
-; Function Attrs: nounwind
-define i1 @func00000000000001b0(i1 %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = icmp slt i32 %2, 1
-  %4 = icmp ne ptr %1, null
-  %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -337,10 +403,22 @@ entry:
 ; icu/optimized/reslist.ll
 ; icu/optimized/ulist.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000284(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000504(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
   %4 = icmp eq ptr %1, null
+  %5 = or i1 %4, %3
+  %6 = or i1 %0, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; libjpeg-turbo/optimized/turbojpeg.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000a0(i1 %0, i32 %1, ptr %2) #0 {
+entry:
+  %3 = icmp eq ptr %2, null
+  %4 = icmp ugt i32 %1, 6
   %5 = or i1 %4, %3
   %6 = or i1 %5, %0
   ret i1 %6

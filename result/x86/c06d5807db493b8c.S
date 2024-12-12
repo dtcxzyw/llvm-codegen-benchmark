@@ -1,9 +1,7 @@
 func0000000000000001:                   # @func0000000000000001
-	notb	%dil
-	cmpb	$-36, %sil
-	setne	%al
-	orb	%dil, %al
+	cmpb	$48, %sil
+	sete	%al
+	andb	%dil, %al
 	movzbl	%al, %eax
-	andl	$1, %eax
-	leaq	-2(%rax,%rax), %rax
+	addl	%eax, %eax
 	retq

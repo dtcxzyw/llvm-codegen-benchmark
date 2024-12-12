@@ -23,7 +23,7 @@ entry:
   %2 = lshr i32 %1, 12
   %3 = and i32 %2, 1023
   %4 = add nuw nsw i32 %3, 1
-  %5 = mul i32 %4, %0
+  %5 = mul i32 %0, %4
   %6 = zext i32 %5 to i64
   ret i64 %6
 }
@@ -44,7 +44,7 @@ entry:
   %2 = lshr i32 %1, 3
   %3 = and i32 %2, 511
   %4 = add nuw nsw i32 %3, 1
-  %5 = mul nsw i32 %4, %0
+  %5 = mul nsw i32 %0, %4
   %6 = zext nneg i32 %5 to i64
   ret i64 %6
 }
@@ -84,7 +84,7 @@ entry:
   %2 = lshr i32 %1, 3
   %3 = and i32 %2, 511
   %4 = add nuw nsw i32 %3, 1
-  %5 = mul nuw nsw i32 %4, %0
+  %5 = mul nuw nsw i32 %0, %4
   %6 = zext nneg i32 %5 to i64
   ret i64 %6
 }

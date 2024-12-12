@@ -7,5 +7,5 @@ func0000000000000000:                   # @func0000000000000000
 	vfwcvt.f.f.v	v24, v16
 	vsetvli	zero, zero, e64, m8, ta, ma
 	vfmerge.vfm	v16, v24, fa5, v0
-	vfmul.vv	v8, v16, v8
+	vfmul.vv	v8, v8, v16
 	ret

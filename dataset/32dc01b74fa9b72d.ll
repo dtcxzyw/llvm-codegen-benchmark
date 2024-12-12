@@ -1,6 +1,5 @@
 
-; 4 occurrences:
-; cmake/optimized/archive_read_disk_set_standard_lookup.c.ll
+; 3 occurrences:
 ; linux/optimized/resize.ll
 ; linux/optimized/vmalloc.ll
 ; minetest/optimized/sound_manager.cpp.ll

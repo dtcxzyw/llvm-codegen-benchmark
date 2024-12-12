@@ -40,7 +40,7 @@ func0000000000000006:                   # @func0000000000000006
 	.short	999                             # 0x3e7
 	.short	999                             # 0x3e7
 	.short	999                             # 0x3e7
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	vpaddw	%ymm0, %ymm1, %ymm0
 	vpaddw	.LCPI1_0(%rip), %ymm0, %ymm0
 	vpcmpnleuw	.LCPI1_1(%rip), %ymm0, %k0

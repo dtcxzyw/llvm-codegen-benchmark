@@ -1,4 +1,4 @@
-func0000000000000210:                   # @func0000000000000210
+func0000000000000410:                   # @func0000000000000410
 	slli	a0, a0, 48
 	sext.w	a2, a2
 	srli	a0, a0, 48
@@ -9,7 +9,7 @@ func0000000000000210:                   # @func0000000000000210
 	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
-func0000000000000302:                   # @func0000000000000302
+func0000000000000602:                   # @func0000000000000602
 	slli	a0, a0, 48
 	sext.w	a2, a2
 	srli	a0, a0, 48
@@ -20,7 +20,7 @@ func0000000000000302:                   # @func0000000000000302
 	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000310:                   # @func0000000000000310
+func0000000000000610:                   # @func0000000000000610
 	slli	a0, a0, 48
 	sext.w	a2, a2
 	snez	a2, a2
@@ -31,17 +31,7 @@ func0000000000000310:                   # @func0000000000000310
 	sltu	a0, a2, a0
 	or	a0, a0, a1
 	ret
-func0000000000000102:                   # @func0000000000000102
-	slli	a0, a0, 48
-	sext.w	a2, a2
-	srli	a0, a0, 48
-	sltiu	a2, a2, 26
-	or	a1, a1, a2
-	addi	a0, a0, -95
-	seqz	a0, a0
-	or	a0, a0, a1
-	ret
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	slli	a1, a1, 48
 	sext.w	a2, a2
 	srli	a1, a1, 48
@@ -51,18 +41,16 @@ func0000000000000044:                   # @func0000000000000044
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
-func0000000000000058:                   # @func0000000000000058
+func0000000000000202:                   # @func0000000000000202
 	slli	a0, a0, 48
 	sext.w	a2, a2
 	srli	a0, a0, 48
-	addi	a2, a2, -8
-	seqz	a2, a2
-	addi	a0, a0, -10
+	sltiu	a2, a2, 2
 	or	a1, a1, a2
-	snez	a0, a0
+	seqz	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000304:                   # @func0000000000000304
+func0000000000000604:                   # @func0000000000000604
 	slli	a1, a1, 48
 	sext.w	a2, a2
 	srli	a1, a1, 48
@@ -71,7 +59,7 @@ func0000000000000304:                   # @func0000000000000304
 	seqz	a1, a1
 	or	a0, a0, a1
 	ret
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	slli	a0, a0, 48
 	sext.w	a2, a2
 	srli	a0, a0, 48
@@ -81,7 +69,7 @@ func0000000000000048:                   # @func0000000000000048
 	sltiu	a0, a0, 256
 	or	a0, a0, a1
 	ret
-func0000000000000042:                   # @func0000000000000042
+func0000000000000082:                   # @func0000000000000082
 	slli	a0, a0, 48
 	sext.w	a2, a2
 	lui	a3, 1

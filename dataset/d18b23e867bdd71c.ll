@@ -7,7 +7,7 @@
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; typst-rs/optimized/49m3cs7hus53ztof.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, double %1) #0 {
+define i1 @func0000000000000058(i64 %0, double %1) #0 {
 entry:
   %2 = bitcast double %1 to i64
   %3 = and i64 %2, -9221120237041090560

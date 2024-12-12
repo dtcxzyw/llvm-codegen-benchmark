@@ -24,7 +24,7 @@ entry:
   ret i8 %3
 }
 
-; 36 occurrences:
+; 40 occurrences:
 ; cmake/optimized/nghttp2_hd.c.ll
 ; cpython/optimized/obmalloc.ll
 ; graphviz/optimized/input.c.ll
@@ -50,6 +50,7 @@ entry:
 ; nghttp2/optimized/nghttp2_hd.c.ll
 ; node/optimized/libnode.base_object.ll
 ; openjdk/optimized/bcEscapeAnalyzer.ll
+; openusd/optimized/fvarLevel.cpp.ll
 ; protobuf/optimized/extension_set_heavy.cc.ll
 ; protobuf/optimized/field.cc.ll
 ; qemu/optimized/hw_char_serial.c.ll
@@ -60,6 +61,9 @@ entry:
 ; wasmedge/optimized/serial_type.cpp.ll
 ; wasmedge/optimized/validator.cpp.ll
 ; wireshark/optimized/packet-fc.c.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/4wlt97p2na7yq96c9gq3wlrfc.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; zxing/optimized/MCDecoder.cpp.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i8 %0) #0 {

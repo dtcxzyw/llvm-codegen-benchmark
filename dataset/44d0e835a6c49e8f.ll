@@ -1,8 +1,9 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; qemu/optimized/source_s_mulAddF16.c.ll
 ; qemu/optimized/target_riscv_translate.c.ll
 ; spike/optimized/s_mulAddF16.ll
+; wireshark/optimized/asn1.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i8 %0, i8 %1) #0 {
 entry:

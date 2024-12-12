@@ -31,13 +31,13 @@ func0000000000000010:                   # @func0000000000000010
 	czero.eqz	a1, a2, a1
 	addw	a0, a0, a1
 	ret
-func0000000000000021:                   # @func0000000000000021
+func0000000000000061:                   # @func0000000000000061
 	sltu	a1, a2, a1
 	addi	a1, a1, -1
 	ori	a1, a1, 1
 	addw	a0, a0, a1
 	ret
-func0000000000000022:                   # @func0000000000000022
+func0000000000000062:                   # @func0000000000000062
 	sltu	a1, a2, a1
 	li	a2, 12
 	czero.nez	a1, a2, a1

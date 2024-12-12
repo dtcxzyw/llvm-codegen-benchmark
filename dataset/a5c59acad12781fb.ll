@@ -20,13 +20,13 @@
 ; openmpi/optimized/group_bitmap.ll
 ; ozz-animation/optimized/track_sampling_job.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000000d8(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 1, %1
   %5 = and i32 %4, %3
   %6 = icmp ne i32 %5, 0
-  %7 = or i1 %6, %0
+  %7 = or i1 %0, %6
   ret i1 %7
 }
 
@@ -38,13 +38,13 @@ entry:
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000062(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func00000000000000c2(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw nsw i32 1, %1
   %5 = and i32 %4, %3
   %6 = icmp eq i32 %5, 0
-  %7 = or i1 %6, %0
+  %7 = or i1 %0, %6
   ret i1 %7
 }
 

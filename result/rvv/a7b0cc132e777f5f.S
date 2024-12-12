@@ -5,7 +5,7 @@ func0000000000000001:                   # @func0000000000000001
 	vadd.vv	v12, v10, v12
 	vand.vi	v12, v12, -16
 	vsub.vv	v10, v10, v12
-	vmseq.vv	v0, v10, v8
+	vmseq.vv	v0, v8, v10
 	ret
 func000000000000000a:                   # @func000000000000000a
 	lui	a0, 419430
@@ -49,5 +49,5 @@ func000000000000000c:                   # @func000000000000000c
 	vadd.vv	v12, v10, v12
 	vand.vi	v12, v12, -2
 	vsub.vv	v10, v10, v12
-	vmsne.vv	v0, v10, v8
+	vmsne.vv	v0, v8, v10
 	ret

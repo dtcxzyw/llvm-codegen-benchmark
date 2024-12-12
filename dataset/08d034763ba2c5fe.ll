@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; linux/optimized/alps.ll
 ; linux/optimized/boot.ll
 ; linux/optimized/i2c-algo-bit.ll
@@ -11,6 +11,7 @@
 ; openusd/optimized/changes.cpp.ll
 ; wasmtime-rs/optimized/3gnma2m1zwm5wpa3.ll
 ; wasmtime-rs/optimized/4aijogcjfl814gfb.ll
+; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; wireshark/optimized/packet-cemi.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000003(i8 %0, i8 %1) #0 {

@@ -1,5 +1,5 @@
 
-; 48 occurrences:
+; 53 occurrences:
 ; abseil-cpp/optimized/civil_time.cc.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time.cc.ll
@@ -8,6 +8,9 @@
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; abseil-cpp/optimized/time_zone_libc.cc.ll
 ; arrow/optimized/data.cc.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/xml_grammar.ll
+; boost/optimized/xml_wgrammar.ll
 ; bullet3/optimized/btConvexHull.ll
 ; c3c/optimized/bigint.c.ll
 ; cvc5/optimized/partial_model.cpp.ll
@@ -22,6 +25,7 @@
 ; llvm/optimized/DWARFDebugLine.cpp.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; llvm/optimized/MicrosoftCXXABI.cpp.ll
+; lvgl/optimized/lv_matrix.ll
 ; minetest/optimized/CGUITabControl.cpp.ll
 ; nlohmann_json/optimized/unit-conversions.cpp.ll
 ; nlohmann_json/optimized/unit-regression1.cpp.ll
@@ -43,6 +47,7 @@
 ; openusd/optimized/rect2i.cpp.ll
 ; proxygen/optimized/HTTP2Framer.cpp.ll
 ; qemu/optimized/fpu_softfloat.c.ll
+; spike/optimized/s_addMagsF128.ll
 ; wireshark/optimized/packet-spice.c.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
@@ -57,7 +62,7 @@ entry:
   ret { i64, i64 } %5
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; abseil-cpp/optimized/civil_time.cc.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time.cc.ll
@@ -66,6 +71,7 @@ entry:
 ; abseil-cpp/optimized/time_zone_libc.cc.ll
 ; c3c/optimized/bigint.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
+; fmt/optimized/format-test.cc.ll
 ; qemu/optimized/util_host-utils.c.ll
 ; Function Attrs: nounwind
 define { i64, i64 } @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {

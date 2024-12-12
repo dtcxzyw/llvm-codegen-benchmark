@@ -46,8 +46,9 @@ func0000000000000013:                   # @func0000000000000013
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsub.vv	v8, v8, v10
 	vsetvli	zero, zero, e32, m1, ta, ma
-	vnsrl.wi	v10, v8, 4
-	vadd.vi	v8, v10, 1
+	vnsrl.wi	v10, v8, 2
+	li	a0, 64
+	vadd.vx	v8, v10, a0
 	ret
 func0000000000000058:                   # @func0000000000000058
 	vsetivli	zero, 4, e64, m2, ta, ma

@@ -1,4 +1,4 @@
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpcmpneqb	%xmm2, %xmm1, %k0
 	vptestnmq	%ymm0, %ymm0, %k1
@@ -42,7 +42,7 @@ func000000000000001c:                   # @func000000000000001c
 	.zero	1
 .LCPI1_2:
 	.quad	922337203685477580              # 0xccccccccccccccc
-func00000000000000a4:                   # @func00000000000000a4
+func0000000000000144:                   # @func0000000000000144
 	vpaddb	.LCPI1_0(%rip), %xmm1, %xmm1
 	vpcmpltub	.LCPI1_1(%rip), %xmm1, %k0
 	vpcmpgtq	.LCPI1_2(%rip){1to4}, %ymm0, %k1
@@ -86,7 +86,7 @@ func00000000000000a4:                   # @func00000000000000a4
 	.zero	1
 .LCPI2_2:
 	.quad	1844674407370955161             # 0x1999999999999999
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	vpaddb	.LCPI2_0(%rip), %xmm1, %xmm1
 	vpcmpltub	.LCPI2_1(%rip), %xmm1, %k0
 	vpcmpnleuq	.LCPI2_2(%rip){1to4}, %ymm0, %k1
@@ -130,7 +130,7 @@ func0000000000000088:                   # @func0000000000000088
 	.zero	1
 .LCPI3_2:
 	.quad	922337203685477579              # 0xccccccccccccccb
-func00000000000000a8:                   # @func00000000000000a8
+func0000000000000148:                   # @func0000000000000148
 	vpaddb	.LCPI3_0(%rip), %xmm1, %xmm1
 	vpcmpltub	.LCPI3_1(%rip), %xmm1, %k0
 	vpcmpgtq	.LCPI3_2(%rip){1to4}, %ymm0, %k1
@@ -174,7 +174,7 @@ func00000000000000a8:                   # @func00000000000000a8
 	.zero	1
 .LCPI4_2:
 	.quad	255                             # 0xff
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpaddb	.LCPI4_0(%rip), %xmm1, %xmm1
 	vpcmpltub	.LCPI4_1(%rip), %xmm1, %k0
 	vpcmpeqq	.LCPI4_2(%rip){1to4}, %ymm0, %k1
@@ -218,7 +218,7 @@ func0000000000000014:                   # @func0000000000000014
 	.zero	1
 .LCPI5_2:
 	.quad	1844674407370955161             # 0x1999999999999999
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	vpaddb	.LCPI5_0(%rip), %xmm1, %xmm1
 	vpcmpltub	.LCPI5_1(%rip), %xmm1, %k0
 	vpcmpnleuq	.LCPI5_2(%rip){1to4}, %ymm0, %k1

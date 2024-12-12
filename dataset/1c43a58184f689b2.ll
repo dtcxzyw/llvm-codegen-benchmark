@@ -11,7 +11,7 @@
 ; protobuf/optimized/parse_context.cc.ll
 ; sentencepiece/optimized/parse_context.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000020a(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000040a(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
@@ -28,7 +28,7 @@ entry:
 ; sentencepiece/optimized/strutil.cc.ll
 ; snappy/optimized/snappy.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000206(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000406(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
@@ -38,13 +38,10 @@ entry:
   ret i1 %7
 }
 
-; 4 occurrences:
-; brotli/optimized/compress_fragment_two_pass.c.ll
+; 1 occurrences:
 ; php/optimized/zend.ll
-; sentencepiece/optimized/strutil.cc.ll
-; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000204(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000404(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw ptr, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
@@ -57,7 +54,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/apply.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000020c(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000040c(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
@@ -75,7 +72,7 @@ entry:
 ; zstd/optimized/zstd_ldm.c.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000201(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000401(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
@@ -85,14 +82,26 @@ entry:
   ret i1 %7
 }
 
-; 3 occurrences:
-; hyperscan/optimized/mcclellan.c.ll
-; yosys/optimized/fstapi.ll
-; zxing/optimized/zueci.c.ll
+; 2 occurrences:
+; brotli/optimized/compress_fragment_two_pass.c.ll
+; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000208(i64 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000604(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %4, %0
+  %6 = and i64 %5, 4294967292
+  %7 = icmp eq i64 %6, 0
+  ret i1 %7
+}
+
+; 1 occurrences:
+; yosys/optimized/fstapi.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000608(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
   %6 = trunc i64 %5 to i32
@@ -100,9 +109,8 @@ entry:
   ret i1 %7
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; linux/optimized/filter.ll
-; linux/optimized/tpm.ll
 ; linux/optimized/vsprintf.ll
 ; linux/optimized/x_tables.ll
 ; wireshark/optimized/file_wrappers.c.ll
@@ -144,6 +152,20 @@ entry:
   %5 = sub i64 %4, %0
   %6 = trunc i64 %5 to i32
   %7 = icmp slt i32 %6, 3
+  ret i1 %7
+}
+
+; 2 occurrences:
+; hyperscan/optimized/mcclellan.c.ll
+; zxing/optimized/zueci.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000408(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %1, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %4, %0
+  %6 = and i64 %5, 4294967292
+  %7 = icmp ne i64 %6, 0
   ret i1 %7
 }
 

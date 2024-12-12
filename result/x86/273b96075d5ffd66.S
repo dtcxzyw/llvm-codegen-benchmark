@@ -1,6 +1,12 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	addl	%edx, %esi
 	testb	$1, %sil
+	sete	%al
+	andb	%dil, %al
+	retq
+func0000000000000061:                   # @func0000000000000061
+	addl	%edx, %esi
+	testl	$16320, %esi                    # imm = 0x3FC0
 	sete	%al
 	andb	%dil, %al
 	retq

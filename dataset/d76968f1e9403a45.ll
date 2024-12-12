@@ -8,7 +8,7 @@
 ; tls-rs/optimized/4vg8hiu39ndz9uqe.ll
 ; tls-rs/optimized/59h61akxu6z29dlt.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000144(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw i32 %2, %1
   %4 = sub nuw i32 %1, %2
@@ -21,7 +21,7 @@ entry:
 ; tokio-rs/optimized/2zetnb9vrfbe3smf.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000148(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw i32 %2, %1
   %4 = sub nuw i32 %1, %2
@@ -45,7 +45,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/depth_cleaner.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a6(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %2, %1
   %4 = sub nsw i32 %1, %2

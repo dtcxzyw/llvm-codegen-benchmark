@@ -20,12 +20,12 @@ entry:
 ; postgres/optimized/pruneheap.ll
 ; qemu/optimized/hw_usb_desc-msos.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001c(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = or disjoint i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 10
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 10
   %6 = getelementptr [0 x i8], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
@@ -38,12 +38,12 @@ entry:
 ; openvdb/optimized/Maps.cc.ll
 ; openvdb/optimized/Transform.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000003e(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 2
   %3 = or disjoint i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 8
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 8
   %6 = getelementptr nusw [16 x double], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
@@ -60,12 +60,12 @@ entry:
 ; openjdk/optimized/jcphuff.ll
 ; openjdk/optimized/methodData.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001e(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = or disjoint i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 8
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 8
   %6 = getelementptr nusw [1 x i64], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
@@ -73,12 +73,12 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/brin_minmax_multi.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000038(ptr %0, i32 %1) #0 {
+define ptr @func000000000000003c(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = or disjoint i32 %2, 1
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 48
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 48
   %6 = getelementptr [0 x i64], ptr %5, i64 0, i64 %4
   ret ptr %6
 }

@@ -12,7 +12,7 @@ entry:
   %4 = and i32 %3, 7
   %5 = shl nuw nsw i32 1, %4
   %6 = trunc nuw i32 %5 to i8
-  %7 = or i8 %6, %0
+  %7 = or i8 %0, %6
   ret i8 %7
 }
 
@@ -38,7 +38,7 @@ entry:
   %4 = and i32 %3, 7
   %5 = shl nuw nsw i32 1, %4
   %6 = trunc nuw i32 %5 to i8
-  %7 = or i8 %6, %0
+  %7 = or i8 %0, %6
   ret i8 %7
 }
 

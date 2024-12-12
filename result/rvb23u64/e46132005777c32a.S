@@ -1,4 +1,4 @@
-func0000000000000015:                   # @func0000000000000015
+func000000000000001f:                   # @func000000000000001f
 	andi	a2, a2, 1
 	lui	a3, 21
 	addiw	a3, a3, 384
@@ -9,6 +9,17 @@ func0000000000000015:                   # @func0000000000000015
 	add	a1, a1, a2
 	mul	a0, a0, a3
 	add	a0, a0, a1
+	ret
+func000000000000000c:                   # @func000000000000000c
+	andi	a2, a2, 1
+	li	a3, -187
+	czero.nez	a2, a3, a2
+	slli	a3, a0, 1
+	slli	a0, a0, 4
+	add	a1, a1, a2
+	sub	a0, a0, a3
+	add	a0, a0, a1
+	addi	a0, a0, 230
 	ret
 func0000000000000000:                   # @func0000000000000000
 	andi	a2, a2, 1

@@ -11,11 +11,11 @@ define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = sdiv i32 %3, -2
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
-; 79 occurrences:
+; 78 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/fraClass.c.ll
@@ -70,11 +70,10 @@ entry:
 ; g2o/optimized/edge_se3_pointxyz_disparity.cpp.ll
 ; g2o/optimized/types_icp.cpp.ll
 ; g2o/optimized/types_seven_dof_expmap.cpp.ll
-; gromacs/optimized/dlaruv.cpp.ll
 ; gromacs/optimized/gmx_awh.cpp.ll
-; gromacs/optimized/slaruv.cpp.ll
 ; libjpeg-turbo/optimized/tjunittest.c.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
+; lvgl/optimized/lv_bar.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
@@ -117,7 +116,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = sdiv i32 %3, 8
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 

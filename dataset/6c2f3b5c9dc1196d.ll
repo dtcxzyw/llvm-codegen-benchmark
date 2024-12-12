@@ -1,15 +1,4 @@
 
-; 2 occurrences:
-; qemu/optimized/hw_9pfs_9p.c.ll
-; z3/optimized/smt_clause.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000001(i32 %0) #0 {
-entry:
-  %1 = shl i32 %0, 5
-  %2 = and i32 %1, 640
-  ret i32 %2
-}
-
 ; 7 occurrences:
 ; abc/optimized/giaEra2.c.ll
 ; flac/optimized/replaygain_synthesis.c.ll
@@ -23,6 +12,16 @@ define i32 @func0000000000000000(i32 %0) #0 {
 entry:
   %1 = lshr i32 %0, 8
   %2 = and i32 %1, 255
+  ret i32 %2
+}
+
+; 1 occurrences:
+; z3/optimized/smt_clause.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(i32 %0) #0 {
+entry:
+  %1 = shl i32 %0, 1
+  %2 = and i32 %1, 4
   ret i32 %2
 }
 

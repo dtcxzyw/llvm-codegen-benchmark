@@ -9,7 +9,7 @@ define i32 @func0000000000000061(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp oge double %1, %2
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -20,7 +20,7 @@ define i32 @func0000000000000038(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp une double %1, %2
   %4 = zext i1 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -31,13 +31,14 @@ define i32 @func0000000000000029(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ugt double %1, %2
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/buffer_piece_border.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
@@ -58,7 +59,7 @@ define i32 @func0000000000000021(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ogt double %1, %2
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -69,7 +70,7 @@ define i32 @func0000000000000039(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp une double %1, %2
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -80,7 +81,7 @@ define i32 @func0000000000000063(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp oge double %1, %2
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -98,7 +99,19 @@ define i32 @func0000000000000023(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ogt double %1, %2
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
+  ret i32 %5
+}
+
+; 2 occurrences:
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
+; Function Attrs: nounwind
+define i32 @func000000000000005b(i32 %0, double %1, double %2) #0 {
+entry:
+  %3 = fcmp ule double %1, %2
+  %4 = zext i1 %3 to i32
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -111,7 +124,7 @@ define i32 @func0000000000000013(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %1, %2
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -122,7 +135,7 @@ define i32 @func0000000000000050(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ole double %1, %2
   %4 = zext i1 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -133,7 +146,7 @@ define i32 @func0000000000000011(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %1, %2
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -144,7 +157,7 @@ define i32 @func0000000000000053(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ole double %1, %2
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 

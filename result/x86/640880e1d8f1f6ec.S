@@ -12,7 +12,7 @@ func000000000000000c:                   # @func000000000000000c
 	testq	%rdx, %rdx
 	setne	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	xorl	%eax, %eax
 	retq
 func0000000000000004:                   # @func0000000000000004

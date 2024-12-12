@@ -16,4 +16,15 @@ entry:
   ret { i64, ptr } %4
 }
 
+; 1 occurrences:
+; llvm/optimized/NetBSD.cpp.ll
+; Function Attrs: nounwind
+define { i64, i64 } @func0000000000000000(i64 %0, i1 %1) #0 {
+entry:
+  %2 = select i1 %1, i64 72136758875290687, i64 72066390131081223
+  %3 = or i64 %0, %2
+  %4 = insertvalue { i64, i64 } poison, i64 %3, 0
+  ret { i64, i64 } %4
+}
+
 attributes #0 = { nounwind }

@@ -42,12 +42,12 @@ define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 16
   %3 = and i32 %2, 1
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = or i32 %4, 4
   ret i32 %5
 }
 
-; 41 occurrences:
+; 40 occurrences:
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/CompressionContextPoolSingletons.cpp.ll
 ; folly/optimized/EDFThreadPoolExecutor.cpp.ll
@@ -63,7 +63,6 @@ entry:
 ; folly/optimized/IOThreadPoolDeadlockDetectorObserver.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/LogCategory.cpp.ll
-; folly/optimized/LoggerDB.cpp.ll
 ; folly/optimized/ManualTimekeeper.cpp.ll
 ; folly/optimized/MaxConcurrentRateLimiter.cpp.ll
 ; folly/optimized/ObserverManager.cpp.ll
@@ -94,7 +93,7 @@ define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
   %3 = and i32 %2, 256
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = or disjoint i32 %4, 128
   ret i32 %5
 }
@@ -112,13 +111,11 @@ entry:
 ; hermes/optimized/Host.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; linux/optimized/8139too.ll
-; linux/optimized/attr.ll
 ; linux/optimized/boot.ll
 ; linux/optimized/cpu.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/fops.ll
 ; linux/optimized/hda_codec.ll
-; linux/optimized/hdac_regmap.ll
 ; linux/optimized/hooks.ll
 ; linux/optimized/ndisc.ll
 ; linux/optimized/slub.ll
@@ -141,6 +138,7 @@ entry:
 ; memcached/optimized/memcached_debug-slabs.ll
 ; memcached/optimized/memcached_debug-storage.ll
 ; openjdk/optimized/assembler_x86.ll
+; openjdk/optimized/gtk3_interface.ll
 ; openusd/optimized/openexr-c.c.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
@@ -153,6 +151,7 @@ entry:
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; wireshark/optimized/packet-cpfi.c.ll
 ; wireshark/optimized/packet-dvb-s2-bb.c.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:

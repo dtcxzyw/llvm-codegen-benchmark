@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; graphviz/optimized/mq.c.ll
 ; icu/optimized/astro.ll
 ; msdfgen/optimized/edge-segments.cpp.ll
@@ -10,7 +10,6 @@
 ; proj/optimized/hatano.cpp.ll
 ; proj/optimized/mbtfpq.cpp.ll
 ; proj/optimized/moll.cpp.ll
-; proj/optimized/wink2.cpp.ll
 ; quantlib/optimized/analytic_discr_geom_av_price_heston.ll
 ; quantlib/optimized/bjerksundstenslandengine.ll
 ; quantlib/optimized/fdklugeextouspreadengine.ll

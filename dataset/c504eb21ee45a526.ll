@@ -1,7 +1,5 @@
 
-; 10 occurrences:
-; cvc5/optimized/nl_model.cpp.ll
-; darktable/optimized/introspection_invert.c.ll
+; 8 occurrences:
 ; duckdb/optimized/is_distinct_from.cpp.ll
 ; llvm/optimized/Dominators.cpp.ll
 ; llvm/optimized/IndVarSimplify.cpp.ll

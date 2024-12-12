@@ -1,8 +1,0 @@
-func0000000000000011:                   # @func0000000000000011
-	not	a2, a2
-	andi	a2, a2, 511
-	not	a1, a1
-	or	a1, a1, a2
-	seqz	a1, a1
-	and	a0, a0, a1
-	ret

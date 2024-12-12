@@ -26,7 +26,7 @@ entry:
   ret i64 %3
 }
 
-; 23 occurrences:
+; 25 occurrences:
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
@@ -50,6 +50,8 @@ entry:
 ; rust-analyzer-rs/optimized/10elsj6wik4dx3zk.ll
 ; tree-sitter-rs/optimized/43qizak8uz8ar6lc.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
+; zed-rs/optimized/1b5ll0cnnio0vvxmolgooij5i.ll
+; zed-rs/optimized/bkz8gk2grsqnr2xbkvtnqlfhe.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i32 %0) #0 {
 entry:

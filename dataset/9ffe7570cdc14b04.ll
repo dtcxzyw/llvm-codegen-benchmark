@@ -13,14 +13,16 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 
-; 5 occurrences:
+; 7 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
 ; folly/optimized/Uri.cpp.ll
 ; quantlib/optimized/period.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0) #0 {
+define i32 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = call i32 @llvm.abs.i32(i32 %0, i1 true)
   %2 = icmp eq i32 %1, 8
@@ -38,10 +40,10 @@ entry:
 ; zxing/optimized/Error.cpp.ll
 ; zxing/optimized/ODDataBarExpandedBitDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0) #0 {
+define i32 @func0000000000000034(i32 %0) #0 {
 entry:
   %1 = call i32 @llvm.abs.i32(i32 %0, i1 true)
-  %2 = icmp ult i32 %1, 10000
+  %2 = icmp samesign ult i32 %1, 10000
   %3 = select i1 %2, i32 4, i32 5
   ret i32 %3
 }
@@ -57,10 +59,10 @@ entry:
 ; quantlib/optimized/squarerootprocessrndcalculator.ll
 ; quantlib/optimized/tcopulapolicy.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0) #0 {
+define i32 @func0000000000000038(i32 %0) #0 {
 entry:
   %1 = tail call i32 @llvm.abs.i32(i32 %0, i1 true)
-  %2 = icmp ugt i32 %1, 1024
+  %2 = icmp samesign ugt i32 %1, 1024
   %3 = select i1 %2, i32 8, i32 2
   ret i32 %3
 }

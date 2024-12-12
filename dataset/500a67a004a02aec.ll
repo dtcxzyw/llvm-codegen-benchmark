@@ -1,5 +1,6 @@
 
-; 97 occurrences:
+; 98 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
 ; fmt/optimized/header-only-test.cc.ll
@@ -115,7 +116,7 @@ define i32 @func000000000000002d(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -69
   %4 = lshr i32 %3, 2
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   %6 = sext i1 %1 to i32
   %7 = add nsw i32 %5, %6
   ret i32 %7
@@ -128,7 +129,7 @@ define i32 @func0000000000000025(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 32768
   %4 = lshr i32 %3, 31
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = sext i1 %1 to i32
   %7 = add nsw i32 %5, %6
   ret i32 %7

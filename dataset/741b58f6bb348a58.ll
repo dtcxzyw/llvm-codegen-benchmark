@@ -1,5 +1,6 @@
 
-; 66 occurrences:
+; 67 occurrences:
+; boost/optimized/formatters_cache.ll
 ; cmake/optimized/select.c.ll
 ; curl/optimized/libcurl_la-select.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll

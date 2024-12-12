@@ -1,10 +1,8 @@
 
-; 10 occurrences:
+; 8 occurrences:
 ; gromacs/optimized/dlarrvx.cpp.ll
-; gromacs/optimized/dorm2l.cpp.ll
 ; gromacs/optimized/pme_grid.cpp.ll
 ; gromacs/optimized/slarrvx.cpp.ll
-; gromacs/optimized/sorm2l.cpp.ll
 ; ipopt/optimized/IpGenAugSystemSolver.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
@@ -14,16 +12,14 @@
 define i32 @func0000000000000014(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = trunc i64 %1 to i32
-  %4 = mul i32 %3, %2
-  %5 = add i32 %4, %0
+  %4 = mul i32 %2, %3
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
-; 11 occurrences:
+; 9 occurrences:
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; openblas/optimized/dgbbrd.c.ll
-; openblas/optimized/dgbtf2.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dgghd3.c.ll
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
@@ -35,8 +31,8 @@ entry:
 define i32 @func0000000000000010(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = trunc i64 %1 to i32
-  %4 = mul i32 %3, %2
-  %5 = add i32 %4, %0
+  %4 = mul i32 %2, %3
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -47,8 +43,8 @@ entry:
 define i32 @func0000000000000030(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = trunc i64 %1 to i32
-  %4 = mul i32 %3, %2
-  %5 = add i32 %4, %0
+  %4 = mul i32 %2, %3
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -58,8 +54,8 @@ entry:
 define i32 @func0000000000000011(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = trunc i64 %1 to i32
-  %4 = mul i32 %3, %2
-  %5 = add nsw i32 %4, %0
+  %4 = mul i32 %2, %3
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -71,8 +67,8 @@ entry:
 define i32 @func0000000000000015(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = trunc i64 %1 to i32
-  %4 = mul i32 %3, %2
-  %5 = add nsw i32 %4, %0
+  %4 = mul i32 %2, %3
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -84,8 +80,8 @@ entry:
 define i32 @func0000000000000034(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = trunc i64 %1 to i32
-  %4 = mul i32 %3, %2
-  %5 = add i32 %4, %0
+  %4 = mul i32 %2, %3
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 

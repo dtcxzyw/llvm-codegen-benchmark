@@ -65,7 +65,7 @@ func0000000000000002:                   # @func0000000000000002
 	.byte	8                               # 0x8
 .LCPI1_3:
 	.zero	4,1
-func0000000000000010:                   # @func0000000000000010
+func0000000000000030:                   # @func0000000000000030
 	vgf2p8affineqb	$0, .LCPI1_2(%rip){1to2}, %xmm0, %xmm0
 	vpandd	.LCPI1_3(%rip){1to4}, %xmm0, %xmm0
 	vpmovzxbd	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,zero,zero,xmm0[1],zero,zero,zero,xmm0[2],zero,zero,zero,xmm0[3],zero,zero,zero,xmm0[4],zero,zero,zero,xmm0[5],zero,zero,zero,xmm0[6],zero,zero,zero,xmm0[7],zero,zero,zero

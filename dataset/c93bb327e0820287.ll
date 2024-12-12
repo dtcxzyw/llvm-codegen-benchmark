@@ -14,18 +14,6 @@ entry:
 }
 
 ; 1 occurrences:
-; bullet3/optimized/btBoxBoxDetector.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000023(i32 %0) #0 {
-entry:
-  %1 = icmp ult i32 %0, 4
-  %2 = select i1 %1, i32 -1, i32 -4
-  %3 = add nsw i32 %2, %0
-  %4 = zext nneg i32 %3 to i64
-  ret i64 %4
-}
-
-; 1 occurrences:
 ; luau/optimized/lvmload.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000040(i32 %0) #0 {
@@ -37,7 +25,9 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
+; 3 occurrences:
+; meshlab/optimized/filter_cubization.cpp.ll
+; meshlab/optimized/filter_trioptimize.cpp.ll
 ; openusd/optimized/loopPatchBuilder.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000033(i32 %0) #0 {

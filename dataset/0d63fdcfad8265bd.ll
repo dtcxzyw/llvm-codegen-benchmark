@@ -9,7 +9,7 @@
 define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   %4 = lshr i64 %3, 32
   ret i64 %4
 }
@@ -43,12 +43,12 @@ entry:
 define i64 @func0000000000000006(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = lshr i64 %3, 32
   ret i64 %4
 }
 
-; 304 occurrences:
+; 300 occurrences:
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; assimp/optimized/zip.c.ll
 ; brotli/optimized/metablock.c.ll
@@ -150,14 +150,12 @@ entry:
 ; linux/optimized/datagram.ll
 ; linux/optimized/i915_gem_mman.ll
 ; linux/optimized/i915_gem_pages.ll
-; linux/optimized/i915_mm.ll
 ; linux/optimized/intel_ggtt.ll
 ; linux/optimized/intel_lrc.ll
 ; linux/optimized/intel_renderstate.ll
 ; linux/optimized/intel_uc_fw.ll
 ; linux/optimized/iov_iter.ll
 ; linux/optimized/libahci.ll
-; linux/optimized/map.ll
 ; linux/optimized/md.ll
 ; linux/optimized/pcmcia_resource.ll
 ; linux/optimized/resize.ll
@@ -166,7 +164,6 @@ entry:
 ; linux/optimized/skbuff.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/trans_virtio.ll
-; linux/optimized/utaddress.ll
 ; linux/optimized/virtio_net.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/BitstreamReader.cpp.ll
@@ -257,7 +254,6 @@ entry:
 ; php/optimized/hash_xxhash.ll
 ; portaudio/optimized/pa_linux_alsa.c.ll
 ; qemu/optimized/hw_net_cadence_gem.c.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
 ; redis/optimized/listpack.ll
 ; redis/optimized/sha256.ll
 ; rocksdb/optimized/xxhash.cc.ll
@@ -357,7 +353,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = lshr i64 %3, 32
   ret i64 %4
 }
@@ -378,7 +374,7 @@ entry:
 define i64 @func000000000000000a(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = lshr i64 %3, 16
   ret i64 %4
 }
@@ -400,7 +396,7 @@ entry:
 define i64 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = lshr i64 %3, 6
   ret i64 %4
 }
@@ -415,16 +411,17 @@ entry:
 define i64 @func000000000000000e(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = lshr i64 %3, 3
   ret i64 %4
 }
 
-; 26 occurrences:
+; 27 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; arrow/optimized/builder.cc.ll
 ; arrow/optimized/vector_selection_internal.cc.ll
 ; arrow/optimized/vector_selection_take_internal.cc.ll
+; boost/optimized/attribute_name.ll
 ; git/optimized/read-cache.ll
 ; hermes/optimized/BytecodeGenerator.cpp.ll
 ; hyperscan/optimized/rose_build_add.cpp.ll
@@ -451,7 +448,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = lshr i64 %3, 6
   ret i64 %4
 }

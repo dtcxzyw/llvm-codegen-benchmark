@@ -1,21 +1,21 @@
-func0000000000000341:                   # @func0000000000000341
+func0000000000000681:                   # @func0000000000000681
 	addl	$31, %edx
 	shrl	$5, %edx
 	leaq	(%rsi,%rdx,8), %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	decl	%edx
 	shrl	%edx
 	addq	%rsi, %rdx
-	cmpq	%rdi, %rdx
+	cmpq	%rdx, %rdi
 	sete	%al
 	retq
-func0000000000000344:                   # @func0000000000000344
+func0000000000000684:                   # @func0000000000000684
 	addl	$7, %edx
 	shrl	$3, %edx
 	addq	%rsi, %rdx
-	cmpq	%rdi, %rdx
-	seta	%al
+	cmpq	%rdx, %rdi
+	setb	%al
 	retq

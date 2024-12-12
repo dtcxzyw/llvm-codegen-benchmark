@@ -1,6 +1,8 @@
 
-; 27 occurrences:
+; 29 occurrences:
 ; arrow/optimized/string-to-double.cc.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; double_conversion/optimized/string-to-double.cc.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
@@ -28,7 +30,7 @@
 ; velox/optimized/URLFunctions.cpp.ll
 ; z3/optimized/inj_axiom.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000002c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 4
   %4 = icmp ne i32 %3, 0
@@ -37,8 +39,9 @@ entry:
   ret i1 %6
 }
 
-; 31 occurrences:
+; 32 occurrences:
 ; arrow/optimized/string-to-double.cc.ll
+; boost/optimized/matches_relation_factory.ll
 ; cpython/optimized/gcmodule.ll
 ; csmith/optimized/Type.cpp.ll
 ; double_conversion/optimized/string-to-double.cc.ll
@@ -70,7 +73,7 @@ entry:
 ; wasmtime-rs/optimized/1f1skdqjemonth3f.ll
 ; wasmtime-rs/optimized/21g2sj3ridcu2juk.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 32
   %4 = icmp eq i32 %3, 0
@@ -82,7 +85,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/subnode.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000121(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 127
   %4 = icmp eq i32 %3, 117
@@ -94,7 +97,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/pcre2_dfa_match.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000008c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 48
   %4 = icmp ne i32 %3, 0
@@ -106,7 +109,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/lzwdec.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000a1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = icmp eq i32 %3, 0
@@ -119,7 +122,7 @@ entry:
 ; linux/optimized/neighbour.ll
 ; llvm/optimized/AttributorAttributes.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000181(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = icmp eq i32 %3, 0
@@ -131,7 +134,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/regexec.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000081(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2
   %4 = icmp eq i32 %3, 0
@@ -150,7 +153,7 @@ entry:
 ; opencv/optimized/train_svmsgd.cpp.ll
 ; opencv/optimized/waldboost.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000101(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 16384
   %4 = icmp eq i32 %3, 0
@@ -163,7 +166,7 @@ entry:
 ; eastl/optimized/string.cpp.ll
 ; opencv/optimized/matrix.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000010c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 32768
   %4 = icmp ne i32 %3, 0

@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 17 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
@@ -14,6 +14,9 @@
 ; ocio/optimized/Lut3DOpCPU.cpp.ll
 ; openvdb/optimized/RayTracer.cc.ll
 ; pybind11/optimized/test_numpy_dtypes.cpp.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i64 %0) #0 {
 entry:

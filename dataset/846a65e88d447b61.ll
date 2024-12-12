@@ -43,7 +43,7 @@
 ; zxing/optimized/BitMatrix.cpp.ll
 ; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 4294967296
   %3 = ashr exact i64 %2, 32
@@ -96,7 +96,7 @@ entry:
 ; zxing/optimized/BitMatrix.cpp.ll
 ; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 4294967296
   %3 = ashr exact i64 %2, 32
@@ -109,7 +109,7 @@ entry:
 ; lightgbm/optimized/metadata.cpp.ll
 ; yosys/optimized/memory_bram.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 4294967296
   %3 = ashr i64 %2, 32
@@ -123,7 +123,7 @@ entry:
 ; yosys/optimized/memory_bram.ll
 ; yosys/optimized/verilog_parser.tab.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 4294967296
   %3 = ashr i64 %2, 32
@@ -137,7 +137,7 @@ entry:
 ; freetype/optimized/pcf.c.ll
 ; freetype/optimized/winfnt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 32
   %.unshifted = xor i64 %2, %0

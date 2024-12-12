@@ -1,9 +1,8 @@
 
-; 13 occurrences:
-; cvc5/optimized/core_solver.cpp.ll
+; 12 occurrences:
+; boost/optimized/matches_relation_factory.ll
 ; cvc5/optimized/sequences_rewriter.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
-; eastl/optimized/BenchmarkSort.cpp.ll
 ; eastl/optimized/BenchmarkTupleVector.cpp.ll
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
 ; eastl/optimized/TestTupleVector.cpp.ll
@@ -33,10 +32,10 @@ entry:
 }
 
 ; 31 occurrences:
+; eastl/optimized/TestAlgorithm.cpp.ll
 ; llvm/optimized/GSIStreamBuilder.cpp.ll
 ; llvm/optimized/InstructionCombining.cpp.ll
 ; llvm/optimized/ValueEnumerator.cpp.ll
-; proxygen/optimized/QPACKHeaderTable.cpp.ll
 ; quantlib/optimized/fdm2dblackscholesop.ll
 ; quantlib/optimized/fdmbatesop.ll
 ; quantlib/optimized/fdmblackscholesfwdop.ll
@@ -104,7 +103,8 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; eastl/optimized/BenchmarkSort.cpp.ll
 ; llvm/optimized/CoverageMapping.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
@@ -161,18 +161,9 @@ entry:
 }
 
 ; 1 occurrences:
-; eastl/optimized/TestAlgorithm.cpp.ll
-; Function Attrs: nounwind
-define i64 @func000000000000003b(i64 %0, i64 %1) #0 {
-entry:
-  %2 = sub nsw i64 %0, %1
-  ret i64 %2
-}
-
-; 1 occurrences:
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000023(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000063(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = shl i64 %2, 2

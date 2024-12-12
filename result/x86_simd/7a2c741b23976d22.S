@@ -2,7 +2,7 @@
 	.long	128                             # 0x80
 .LCPI0_1:
 	.long	63                              # 0x3f
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	vpor	%ymm2, %ymm1, %ymm1
 	vpsrld	$6, %ymm1, %ymm1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm2   # ymm2 = [128,128,128,128,128,128,128,128]

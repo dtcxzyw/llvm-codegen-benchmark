@@ -1,9 +1,5 @@
 
-; 10 occurrences:
-; folly/optimized/CPUThreadPoolExecutor.cpp.ll
-; folly/optimized/EDFThreadPoolExecutor.cpp.ll
-; folly/optimized/ManualExecutor.cpp.ll
-; folly/optimized/ThreadPoolExecutor.cpp.ll
+; 6 occurrences:
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; ruby/optimized/compile.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
@@ -20,10 +16,11 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; abc/optimized/bmcCexCut.c.ll
 ; abc/optimized/bmcCexDepth.c.ll
 ; abc/optimized/ifMan.c.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; qemu/optimized/tcg.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i32 %1) #0 {

@@ -12,3 +12,17 @@ func0000000000000021:                   # @func0000000000000021
 	subq	%rsi, %rdi
 	addq	%rdi, %rax
 	retq
+func000000000000018a:                   # @func000000000000018a
+	xorl	%eax, %eax
+	cmpb	$2, %dl
+	setne	%al
+	subq	%rsi, %rdi
+	addq	%rdi, %rax
+	retq
+func0000000000000180:                   # @func0000000000000180
+	xorl	%eax, %eax
+	cmpb	$45, %dl
+	setne	%al
+	subq	%rsi, %rdi
+	addq	%rdi, %rax
+	retq

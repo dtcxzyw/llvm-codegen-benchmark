@@ -1,10 +1,12 @@
 
-; 3 occurrences:
+; 5 occurrences:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; llvm/optimized/LiteralSupport.cpp.ll
 ; qemu/optimized/hw_net_net_tx_pkt.c.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i16 %0) #0 {
+define i64 @func0000000000000021(i16 %0) #0 {
 entry:
   %1 = icmp eq i16 %0, -22392
   %2 = select i1 %1, i64 22, i64 14
@@ -29,7 +31,7 @@ entry:
 ; oiio/optimized/xmp.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000044(i16 %0) #0 {
+define i64 @func0000000000000084(i16 %0) #0 {
 entry:
   %1 = icmp ult i16 %0, 2048
   %2 = select i1 %1, i64 2, i64 3

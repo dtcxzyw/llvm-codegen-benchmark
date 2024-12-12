@@ -14,9 +14,10 @@ entry:
   ret i64 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; linux/optimized/dm-ioctl.ll
 ; llvm/optimized/ArchiveWriter.cpp.ll
+; llvm/optimized/MCAsmStreamer.cpp.ll
 ; llvm/optimized/Signals.cpp.ll
 ; llvm/optimized/XCOFFObjectWriter.cpp.ll
 ; postgres/optimized/basebackup.ll

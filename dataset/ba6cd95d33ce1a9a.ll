@@ -23,15 +23,13 @@ entry:
   ret i64 %5
 }
 
-; 41 occurrences:
+; 38 occurrences:
 ; abc/optimized/cuddExact.c.ll
 ; gromacs/optimized/dgemv.cpp.ll
-; gromacs/optimized/dlasdt.cpp.ll
 ; gromacs/optimized/dsymv.cpp.ll
 ; gromacs/optimized/dsyr2.cpp.ll
 ; gromacs/optimized/dsyr2k.cpp.ll
 ; gromacs/optimized/sgemv.cpp.ll
-; gromacs/optimized/slasdt.cpp.ll
 ; gromacs/optimized/ssymv.cpp.ll
 ; gromacs/optimized/ssyr2.cpp.ll
 ; gromacs/optimized/ssyr2k.cpp.ll
@@ -47,19 +45,18 @@ entry:
 ; opencv/optimized/gfluidimgproc.cpp.ll
 ; opencv/optimized/nonrigid_icp.cpp.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
-; opencv/optimized/samplers.cpp.ll
 ; openjdk/optimized/buildOopMap.ll
 ; openjdk/optimized/fieldInfo.ll
 ; openjdk/optimized/unsigned5.ll
 ; openspiel/optimized/PlayAnalyser.cpp.ll
 ; openspiel/optimized/laser_tag_test.cc.ll
-; openusd/optimized/cfl.c.ll
 ; openusd/optimized/convolve.c.ll
 ; openusd/optimized/flatNormals.cpp.ll
 ; openusd/optimized/meshUtil.cpp.ll
 ; postgres/optimized/brin_minmax_multi.ll
 ; qemu/optimized/block_vvfat.c.ll
 ; qemu/optimized/hw_char_riscv_htif.c.ll
+; ruby/optimized/rjit_c.ll
 ; slurm/optimized/gres_filter.ll
 ; velox/optimized/ArraySort.cpp.ll
 ; wireshark/optimized/catapult_dct2000.c.ll
@@ -69,13 +66,13 @@ entry:
 define i64 @func0000000000000030(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add i32 %0, 2
+  %3 = add i32 %0, 1
   %4 = add i32 %3, %2
   %5 = sext i32 %4 to i64
   ret i64 %5
 }
 
-; 37 occurrences:
+; 35 occurrences:
 ; abc/optimized/mvcDivide.c.ll
 ; clamav/optimized/cert_util.c.ll
 ; clamav/optimized/manager.c.ll
@@ -86,13 +83,11 @@ entry:
 ; gromacs/optimized/gmx_arpack.cpp.ll
 ; gromacs/optimized/slarft.cpp.ll
 ; libzmq/optimized/udp_engine.cpp.ll
-; llvm/optimized/CGStmt.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; ncnn/optimized/lstm_x86_avx512.cpp.ll
 ; ncnn/optimized/lstm_x86_avx512vnni.cpp.ll
 ; nori/optimized/warptest.cpp.ll
 ; openblas/optimized/dgbbrd.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
 ; openblas/optimized/dlatrs3.c.ll
@@ -123,12 +118,10 @@ entry:
   ret i64 %5
 }
 
-; 11 occurrences:
+; 9 occurrences:
 ; arrow/optimized/UriRecompose.c.ll
 ; darktable/optimized/export.c.ll
 ; git/optimized/xutils.ll
-; gromacs/optimized/dtrtri.cpp.ll
-; gromacs/optimized/strtri.cpp.ll
 ; imgui/optimized/imgui.cpp.ll
 ; opencv/optimized/distransform.cpp.ll
 ; openjdk/optimized/ciMethodData.ll
@@ -201,18 +194,6 @@ entry:
 }
 
 ; 1 occurrences:
-; yosys/optimized/ezminisat.ll
-; Function Attrs: nounwind
-define i64 @func000000000000003d(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add nuw nsw i32 %0, 2
-  %4 = add nsw i32 %3, %2
-  %5 = sext i32 %4 to i64
-  ret i64 %5
-}
-
-; 1 occurrences:
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000038(i32 %0, i64 %1) #0 {
@@ -224,8 +205,7 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
-; postgres/optimized/refint.ll
+; 2 occurrences:
 ; raylib/optimized/rcore.c.ll
 ; wireshark/optimized/packet-mount.c.ll
 ; Function Attrs: nounwind

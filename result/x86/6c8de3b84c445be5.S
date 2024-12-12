@@ -12,7 +12,7 @@ func0000000000000000:                   # @func0000000000000000
 	retq
 func0000000000000003:                   # @func0000000000000003
 	andl	$7680, %esi                     # imm = 0x1E00
-	leal	8192(%rsi,%rdi), %eax
+	leal	8192(%rdi,%rsi), %eax
 	retq
 func0000000000000001:                   # @func0000000000000001
 	movzbl	%sil, %eax

@@ -10,7 +10,7 @@ define i32 @func0000000000000007(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i32
   %4 = shl nsw i32 %3, 24
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = or disjoint i32 %5, %0
   ret i32 %6
 }
@@ -34,7 +34,7 @@ entry:
   %3 = sext i8 %2 to i32
   %4 = shl nsw i32 %3, 6
   %5 = or i32 %4, %1
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   ret i32 %6
 }
 

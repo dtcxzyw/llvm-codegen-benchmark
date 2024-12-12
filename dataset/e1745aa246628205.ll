@@ -1,5 +1,5 @@
 
-; 116 occurrences:
+; 119 occurrences:
 ; abc/optimized/decompress.c.ll
 ; abc/optimized/satSolver2.c.ll
 ; abseil-cpp/optimized/arg.cc.ll
@@ -35,7 +35,6 @@
 ; linux/optimized/intel_dp.ll
 ; linux/optimized/intel_dp_aux.ll
 ; linux/optimized/intel_ggtt.ll
-; linux/optimized/intel_rc6.ll
 ; linux/optimized/intel_sdvo.ll
 ; linux/optimized/io_apic.ll
 ; linux/optimized/libata-scsi.ll
@@ -43,7 +42,6 @@
 ; linux/optimized/mon_bin.ll
 ; linux/optimized/nfs4proc.ll
 ; linux/optimized/pcm_native.ll
-; linux/optimized/percpu-refcount.ll
 ; linux/optimized/printk.ll
 ; linux/optimized/seq_ports.ll
 ; linux/optimized/sock.ll
@@ -67,15 +65,19 @@
 ; llvm/optimized/SemaExprObjC.cpp.ll
 ; llvm/optimized/VPlanRecipes.cpp.ll
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
+; lvgl/optimized/lv_bar.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_display.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_dropdown.ll
+; lvgl/optimized/lv_label.ll
+; lvgl/optimized/lv_switch.ll
 ; minetest/optimized/CSkinnedMesh.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; openjdk/optimized/gtk2_interface.ll
 ; openssl/optimized/libcrypto-lib-asn1_lib.ll
-; openssl/optimized/libcrypto-lib-ecx_key.ll
 ; openssl/optimized/libcrypto-shlib-asn1_lib.ll
-; openssl/optimized/libcrypto-shlib-ecx_key.ll
 ; openssl/optimized/libtestutil-lib-driver.ll
-; openssl/optimized/quic_ackm_test-bin-quic_ackm_test.ll
 ; openusd/optimized/patchTableFactory.cpp.ll
 ; php/optimized/zend_jit.ll
 ; proxygen/optimized/HTTP1xCodec.cpp.ll
@@ -116,12 +118,13 @@
 ; yoga/optimized/YGNodeStyle.cpp.ll
 ; z3/optimized/bound_simplifier.cpp.ll
 ; z3/optimized/theory_arith.cpp.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i8
   %3 = and i8 %2, 3
-  %4 = or disjoint i8 %3, %0
+  %4 = or disjoint i8 %0, %3
   ret i8 %4
 }
 
@@ -141,7 +144,7 @@ define i8 @func0000000000000007(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i32 %1 to i8
   %3 = and i8 %2, 6
-  %4 = or disjoint i8 %3, %0
+  %4 = or disjoint i8 %0, %3
   ret i8 %4
 }
 
@@ -167,18 +170,7 @@ define i8 @func0000000000000000(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i8
   %3 = and i8 %2, 12
-  %4 = or i8 %3, %0
-  ret i8 %4
-}
-
-; 1 occurrences:
-; openssl/optimized/quic_ackm_test-bin-quic_ackm_test.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000003(i8 %0, i32 %1) #0 {
-entry:
-  %2 = trunc nsw i32 %1 to i8
-  %3 = and i8 %2, 3
-  %4 = or disjoint i8 %3, %0
+  %4 = or i8 %0, %3
   ret i8 %4
 }
 
@@ -215,7 +207,7 @@ define i8 @func0000000000000005(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i8
   %3 = and i8 %2, 3
-  %4 = or disjoint i8 %3, %0
+  %4 = or disjoint i8 %0, %3
   ret i8 %4
 }
 

@@ -1,38 +1,38 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	leal	7(%rsi), %eax
 	addl	$14, %esi
 	testl	%eax, %eax
 	cmovnsl	%eax, %esi
 	sarl	$3, %esi
-	cmpl	%edi, %esi
+	cmpl	%esi, %edi
 	sete	%al
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	leal	7(%rsi), %eax
 	addl	$14, %esi
 	testl	%eax, %eax
 	cmovnsl	%eax, %esi
 	sarl	$3, %esi
-	cmpl	%edi, %esi
-	setl	%al
+	cmpl	%esi, %edi
+	setg	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	leal	7(%rsi), %eax
 	addl	$14, %esi
 	testl	%eax, %eax
 	cmovnsl	%eax, %esi
 	sarl	$3, %esi
-	cmpl	%edi, %esi
-	setb	%al
+	cmpl	%esi, %edi
+	seta	%al
 	retq
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	movl	%esi, %eax
 	decl	%eax
 	shrl	$31, %eax
 	leal	-1(%rsi,%rax), %eax
 	sarl	%eax
-	cmpl	%edi, %eax
-	setg	%al
+	cmpl	%eax, %edi
+	setl	%al
 	retq
 func0000000000000006:                   # @func0000000000000006
 	leal	63(%rsi), %eax
@@ -40,17 +40,17 @@ func0000000000000006:                   # @func0000000000000006
 	testl	%eax, %eax
 	cmovnsl	%eax, %esi
 	sarl	$6, %esi
-	cmpl	%edi, %esi
-	setg	%al
+	cmpl	%esi, %edi
+	setl	%al
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	leal	7(%rsi), %eax
 	addl	$14, %esi
 	testl	%eax, %eax
 	cmovnsl	%eax, %esi
 	sarl	$3, %esi
-	cmpl	%edi, %esi
-	seta	%al
+	cmpl	%esi, %edi
+	setb	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
 	addl	$-16, %esi
@@ -60,17 +60,17 @@ func0000000000000001:                   # @func0000000000000001
 	shrq	$63, %rcx
 	sarq	$33, %rax
 	addl	%ecx, %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq
-func000000000000002b:                   # @func000000000000002b
+func000000000000004b:                   # @func000000000000004b
 	leal	3(%rsi), %eax
 	addl	$6, %esi
 	testl	%eax, %eax
 	cmovnsl	%eax, %esi
 	sarl	$2, %esi
-	cmpl	%edi, %esi
-	setle	%al
+	cmpl	%esi, %edi
+	setge	%al
 	retq
 func000000000000000a:                   # @func000000000000000a
 	movl	%esi, %eax
@@ -78,6 +78,6 @@ func000000000000000a:                   # @func000000000000000a
 	shrl	$31, %eax
 	leal	1(%rsi,%rax), %eax
 	sarl	%eax
-	cmpl	%edi, %eax
-	setl	%al
+	cmpl	%eax, %edi
+	setg	%al
 	retq

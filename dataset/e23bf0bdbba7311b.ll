@@ -166,7 +166,7 @@
 define i64 @func00000000000000a8(i64 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = trunc nuw i128 %2 to i64
-  %4 = add nuw i64 %3, %0
+  %4 = add nuw i64 %0, %3
   %notmask = shl nsw i64 -1, %1
   %5 = xor i64 %notmask, -1
   %6 = and i64 %4, %5

@@ -1,4 +1,15 @@
 
+; 1 occurrences:
+; minetest/optimized/mg_schematic.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = mul nsw i32 %1, %2
+  %4 = mul i32 %3, %0
+  %5 = and i32 %4, 1
+  ret i32 %5
+}
+
 ; 7 occurrences:
 ; ncnn/optimized/flatten_x86.cpp.ll
 ; ncnn/optimized/flatten_x86_avx.cpp.ll
@@ -11,7 +22,7 @@
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   %5 = and i32 %4, 1
   ret i32 %5
 }

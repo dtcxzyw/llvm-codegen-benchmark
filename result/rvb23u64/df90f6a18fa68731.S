@@ -172,6 +172,17 @@ func0000000000000050:                   # @func0000000000000050
 	feq.s	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
+func0000000000000192:                   # @func0000000000000192
+	lui	a0, 323584
+	fli.s	fa5, inf
+	flt.s	a1, fa0, fa5
+	flt.s	a2, fa5, fa0
+	fmv.w.x	fa5, a0
+	fle.s	a0, fa5, fa0
+	or	a1, a1, a2
+	xori	a1, a1, 1
+	or	a0, a0, a1
+	ret
 func00000000000001a6:                   # @func00000000000001a6
 	lui	a0, 323584
 	lui	a1, 847872
@@ -198,11 +209,11 @@ func0000000000000146:                   # @func0000000000000146
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
-.LCPI25_0:
+.LCPI26_0:
 	.word	0x7f7fffff                      # float 3.40282347E+38
 func0000000000000058:                   # @func0000000000000058
-	lui	a0, %hi(.LCPI25_0)
-	flw	fa5, %lo(.LCPI25_0)(a0)
+	lui	a0, %hi(.LCPI26_0)
+	flw	fa5, %lo(.LCPI26_0)(a0)
 	fmv.w.x	fa4, zero
 	flt.s	a0, fa0, fa4
 	fle.s	a1, fa5, fa0

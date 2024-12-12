@@ -5,7 +5,7 @@
 define float @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = uitofp i32 %3 to float
   ret float %4
 }
@@ -16,7 +16,7 @@ entry:
 define float @func0000000000000018(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = uitofp i32 %3 to float
   ret float %4
 }
@@ -33,7 +33,7 @@ entry:
 define float @func000000000000001f(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = uitofp nneg i32 %3 to float
   ret float %4
 }
@@ -44,7 +44,7 @@ entry:
 define float @func000000000000001c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add nuw i32 %2, %0
+  %3 = add nuw i32 %0, %2
   %4 = uitofp i32 %3 to float
   ret float %4
 }
@@ -55,7 +55,7 @@ entry:
 define float @func000000000000000f(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = uitofp nneg i32 %3 to float
   ret float %4
 }

@@ -16,7 +16,7 @@ func0000000000000012:                   # @func0000000000000012
 	addq	%rsi, %rax
 	subq	%rdi, %rax
 	retq
-func0000000000000040:                   # @func0000000000000040
+func0000000000000140:                   # @func0000000000000140
 	movl	$4294967294, %ecx               # imm = 0xFFFFFFFE
 	leaq	1(%rcx), %rax
 	cmpl	$256, %edx                      # imm = 0x100

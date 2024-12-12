@@ -10,7 +10,7 @@ entry:
   %3 = icmp ult i8 %2, 30
   %4 = select i1 %3, i8 %1, i8 120
   %5 = zext nneg i8 %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 

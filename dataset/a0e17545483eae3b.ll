@@ -1,5 +1,5 @@
 
-; 550 occurrences:
+; 554 occurrences:
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
@@ -178,7 +178,6 @@
 ; llvm/optimized/DeadStoreElimination.cpp.ll
 ; llvm/optimized/DebugInfo.cpp.ll
 ; llvm/optimized/DebugInfoMetadata.cpp.ll
-; llvm/optimized/DebugProgramInstruction.cpp.ll
 ; llvm/optimized/Debugify.cpp.ll
 ; llvm/optimized/DemandedBits.cpp.ll
 ; llvm/optimized/DynamicType.cpp.ll
@@ -214,7 +213,6 @@
 ; llvm/optimized/InstructionSimplify.cpp.ll
 ; llvm/optimized/Instructions.cpp.ll
 ; llvm/optimized/InterleavedLoadCombinePass.cpp.ll
-; llvm/optimized/IntrinsicInst.cpp.ll
 ; llvm/optimized/JSON.cpp.ll
 ; llvm/optimized/JumpTableToSwitch.cpp.ll
 ; llvm/optimized/JumpThreading.cpp.ll
@@ -283,7 +281,6 @@
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
 ; llvm/optimized/RISCVISAInfo.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RISCVRegisterBankInfo.cpp.ll
@@ -393,11 +390,10 @@
 ; ninja/optimized/util.cc.ll
 ; nix/optimized/attrs.ll
 ; nix/optimized/cgroup.ll
+; nix/optimized/fetchers.ll
 ; nix/optimized/get-drvs.ll
 ; nix/optimized/globals.ll
 ; nix/optimized/nix-collect-garbage.ll
-; nix/optimized/nix-env.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/profile.ll
 ; nix/optimized/profiles.ll
 ; nix/optimized/shared.ll
@@ -550,6 +546,14 @@
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; wasmtime-rs/optimized/4jbigeyowzuvulmb.ll
 ; wasmtime-rs/optimized/fhugawvdzmyefe9.ll
+; zed-rs/optimized/2dbu45lers7mkstxlrhw3mc97.ll
+; zed-rs/optimized/56i9d5rrx6hrud8ee30t4acpd.ll
+; zed-rs/optimized/5lopn02otdgr3jtenihf9pnc6.ll
+; zed-rs/optimized/7m8fd3drcujrn3b7m72kwodjc.ll
+; zed-rs/optimized/83f7cv59nhkcel85ism08ubeo.ll
+; zed-rs/optimized/bktyyhuk5fekatq647qx0ox8v.ll
+; zed-rs/optimized/d31g6vudldcq1cl7b9cowxr8a.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
 define { i64, i8 } @func0000000000000000(i8 %0, i64 %1) #0 {
 entry:

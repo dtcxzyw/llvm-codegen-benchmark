@@ -6,7 +6,7 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	$536870912, %edx                # imm = 0x20000000
 	cmovnel	%edi, %eax
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	notl	%edx
 	leal	512(%rdi,%rsi), %eax
 	movl	%edi, %ecx

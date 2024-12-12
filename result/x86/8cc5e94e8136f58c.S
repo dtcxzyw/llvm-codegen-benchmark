@@ -4,10 +4,6 @@ func0000000000000001:                   # @func0000000000000001
 	addq	%rdi, %rax
 	sarq	$30, %rax
 	retq
-func0000000000000009:                   # @func0000000000000009
-	incl	%edi
-	movslq	%edi, %rax
-	retq
 func0000000000000011:                   # @func0000000000000011
 	shlq	$32, %rdi
 	movabsq	$8589934592, %rax               # imm = 0x200000000
@@ -34,6 +30,10 @@ func000000000000000b:                   # @func000000000000000b
 	retq
 func0000000000000005:                   # @func0000000000000005
 	incl	%edi
+	movslq	%edi, %rax
+	retq
+func0000000000000009:                   # @func0000000000000009
+	subl	$-128, %edi
 	movslq	%edi, %rax
 	retq
 func0000000000000004:                   # @func0000000000000004

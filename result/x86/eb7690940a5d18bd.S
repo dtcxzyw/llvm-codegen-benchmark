@@ -9,12 +9,14 @@ func0000000000000009:                   # @func0000000000000009
 	addl	%edi, %eax
 	retq
 func0000000000000008:                   # @func0000000000000008
-	imull	$367, %esi, %eax                # imm = 0x16F
+	imull	$9600, %esi, %eax               # imm = 0x2580
 	cltq
-	imulq	$715827883, %rax, %rax          # imm = 0x2AAAAAAB
-	movq	%rax, %rcx
-	shrq	$63, %rcx
-	sarq	$33, %rax
+	imulq	$-2130574327, %rax, %rcx        # imm = 0x81020409
+	shrq	$32, %rcx
+	addl	%ecx, %eax
+	movl	%eax, %ecx
+	shrl	$31, %ecx
+	sarl	$12, %eax
 	addl	%ecx, %eax
 	addl	%edi, %eax
 	retq

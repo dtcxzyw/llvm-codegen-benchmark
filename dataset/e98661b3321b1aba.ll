@@ -4,7 +4,7 @@
 ; ruby/optimized/cont.ll
 ; ruby/optimized/io.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000061(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 1
   %3 = or disjoint i64 %2, 1
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; ruby/optimized/array.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = or disjoint i64 %2, 1
@@ -30,7 +30,7 @@ entry:
 ; openjdk/optimized/superword.ll
 ; rust-analyzer-rs/optimized/3j0nbdwupb3iwt86.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000051(i32 %0, i64 %1) #0 {
+define i64 @func00000000000000a1(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 32
   %3 = or disjoint i64 %2, 2
@@ -44,7 +44,7 @@ entry:
 ; opencv/optimized/caffe_importer.cpp.ll
 ; opencv/optimized/onnx_importer.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000076(i32 %0, i64 %1) #0 {
+define i64 @func00000000000000e6(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 5
   %3 = or disjoint i64 %2, 8
@@ -64,7 +64,7 @@ entry:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; openexr/optimized/ImfDeepScanLineOutputFile.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000036(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000066(i32 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 6
   %3 = or disjoint i64 %2, 8

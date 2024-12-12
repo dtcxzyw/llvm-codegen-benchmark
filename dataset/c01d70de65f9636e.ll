@@ -21,7 +21,7 @@ entry:
   %3 = fsub float 3.600000e+02, %1
   %4 = fcmp olt float %2, 0.000000e+00
   %5 = select i1 %4, float %3, float %1
-  %6 = fmul float %5, %0
+  %6 = fmul float %0, %5
   ret float %6
 }
 

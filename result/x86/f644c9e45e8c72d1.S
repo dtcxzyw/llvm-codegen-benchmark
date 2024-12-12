@@ -8,12 +8,12 @@ func0000000000000001:                   # @func0000000000000001
 	testl	%edi, %esi
 	sete	%al
 	retq
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	addl	$31, %esi
 	testl	%edi, %esi
 	sete	%al
 	retq
-func00000000000000d1:                   # @func00000000000000d1
+func00000000000001a1:                   # @func00000000000001a1
 	decl	%esi
 	testl	%edi, %esi
 	sete	%al

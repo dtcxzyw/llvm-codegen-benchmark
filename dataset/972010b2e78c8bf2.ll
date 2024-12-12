@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 15 occurrences:
 ; gromacs/optimized/gmx_current.cpp.ll
 ; gromacs/optimized/gmx_nmeig.cpp.ll
 ; gromacs/optimized/nosehooverchains.cpp.ll
@@ -10,10 +10,8 @@
 ; meshlab/optimized/filter_texture.cpp.ll
 ; minetest/optimized/camera.cpp.ll
 ; minetest/optimized/mapgen_v6.cpp.ll
-; openblas/optimized/iparmq.c.ll
 ; opencv/optimized/finder_pattern_info.cpp.ll
 ; opencv/optimized/webcam_demo.cpp.ll
-; openmpi/optimized/name_fns.ll
 ; redis/optimized/redis-benchmark.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-ixveriwave.c.ll

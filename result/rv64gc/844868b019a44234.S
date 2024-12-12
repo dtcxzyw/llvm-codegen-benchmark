@@ -16,6 +16,12 @@ func000000000000001b:                   # @func000000000000001b
 	add	a0, a0, a1
 	addiw	a0, a0, -128
 	ret
+func000000000000000b:                   # @func000000000000000b
+	andi	a1, a1, 255
+	slli	a0, a0, 6
+	add	a0, a0, a1
+	addiw	a0, a0, -128
+	ret
 func000000000000003b:                   # @func000000000000003b
 	andi	a1, a1, 255
 	slli	a0, a0, 3

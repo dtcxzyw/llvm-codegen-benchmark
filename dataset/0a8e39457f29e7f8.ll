@@ -4,6 +4,8 @@
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
 ; abseil-cpp/optimized/poisson_distribution_test.cc.ll
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; g2o/optimized/edge_project_stereo_xyz.cpp.ll
 ; g2o/optimized/edge_project_xyz.cpp.ll
@@ -16,7 +18,6 @@
 ; msdfgen/optimized/main.cpp.ll
 ; nori/optimized/ttest.cpp.ll
 ; nuttx/optimized/lib_gamma.c.ll
-; openblas/optimized/dgetsqrhrt.c.ll
 ; opencv/optimized/binary_descriptor.cpp.ll
 ; opencv/optimized/colorspace.cpp.ll
 ; opencv/optimized/downhill_simplex.cpp.ll
@@ -25,7 +26,6 @@
 ; opencv/optimized/lsd.cpp.ll
 ; opencv/optimized/omnidir.cpp.ll
 ; opencv/optimized/trackerCSRTUtils.cpp.ll
-; proj/optimized/collg.cpp.ll
 ; proj/optimized/geodesic.c.ll
 ; proj/optimized/init.cpp.ll
 ; proj/optimized/isea.cpp.ll

@@ -9,7 +9,7 @@ func0000000000000020:                   # @func0000000000000020
 	retq
 .LCPI1_0:
 	.long	65536                           # 0x10000
-func00000000000000e0:                   # @func00000000000000e0
+func00000000000001a0:                   # @func00000000000001a0
 	vpaddd	%ymm1, %ymm2, %ymm3
 	vpbroadcastd	.LCPI1_0(%rip), %ymm4   # ymm4 = [65536,65536,65536,65536,65536,65536,65536,65536]
 	vpcmpnleud	%ymm4, %ymm3, %k1

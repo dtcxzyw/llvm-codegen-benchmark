@@ -18,6 +18,11 @@ func0000000000000019:                   # @func0000000000000019
 	testq	%rsi, %rsi
 	cmovsl	%edi, %eax
 	retq
+func0000000000000029:                   # @func0000000000000029
+	movq	%rsi, %rax
+	cmpq	$127, %rsi
+	cmovgl	%edi, %eax
+	retq
 func0000000000000028:                   # @func0000000000000028
 	movq	%rsi, %rax
 	cmpq	$1000000, %rsi                  # imm = 0xF4240

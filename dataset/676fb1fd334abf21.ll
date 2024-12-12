@@ -7,7 +7,7 @@
 define i16 @func0000000000000004(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 65530, i32 %2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = trunc i32 %4 to i16
   ret i16 %5
 }

@@ -20,7 +20,7 @@ define i32 @func0000000000000001(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 1, i32 %2
   %4 = icmp eq i32 %3, -1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   %6 = select i1 %5, i32 8, i32 %3
   ret i32 %6
 }
@@ -40,10 +40,10 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/insn-eval.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i1 %0, i1 %1, i32 %2) #0 {
+define i32 @func0000000000000014(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 -22, i32 %2
-  %4 = icmp ult i32 %3, 6
+  %4 = icmp samesign ult i32 %3, 6
   %5 = and i1 %4, %0
   %6 = select i1 %5, i32 0, i32 %3
   ret i32 %6

@@ -1,5 +1,12 @@
 
-; 2 occurrences:
+; 9 occurrences:
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; linux/optimized/intel_sdvo.ll
 ; openjdk/optimized/ad_x86.ll
 ; Function Attrs: nounwind
@@ -11,13 +18,12 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; openspiel/optimized/mancala.cc.ll
-; openusd/optimized/stringUtils.cpp.ll
 ; quantlib/optimized/saudiarabia.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -5
   %4 = icmp ult i32 %3, 2

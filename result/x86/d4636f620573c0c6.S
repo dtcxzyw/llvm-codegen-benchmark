@@ -10,6 +10,12 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	orb	%dil, %al
 	retq
+func0000000000000018:                   # @func0000000000000018
+	andl	$8191, %edx                     # imm = 0x1FFF
+	cmpq	%rsi, %rdx
+	seta	%al
+	orb	%dil, %al
+	retq
 func0000000000000005:                   # @func0000000000000005
 	movb	$62, %al
 	bzhiq	%rax, %rdx, %rax
@@ -28,5 +34,12 @@ func000000000000000c:                   # @func000000000000000c
 	movl	%edx, %eax
 	cmpq	%rsi, %rax
 	setne	%al
+	orb	%dil, %al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	movb	$62, %al
+	bzhiq	%rax, %rdx, %rax
+	cmpq	%rsi, %rax
+	setb	%al
 	orb	%dil, %al
 	retq

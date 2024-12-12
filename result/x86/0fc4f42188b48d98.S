@@ -24,14 +24,6 @@ func0000000000000002:                   # @func0000000000000002
 	sbbl	%eax, %eax
 	orl	%ecx, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
-	xorl	%ecx, %ecx
-	cmpl	%edx, %esi
-	setb	%cl
-	testb	$1, %dil
-	movl	$2, %eax
-	cmovel	%ecx, %eax
-	retq
 func0000000000000012:                   # @func0000000000000012
 	andb	$1, %dil
 	xorl	%ecx, %ecx

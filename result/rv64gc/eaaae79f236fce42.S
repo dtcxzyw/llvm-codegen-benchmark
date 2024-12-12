@@ -71,12 +71,6 @@ func0000000000000054:                   # @func0000000000000054
 	add	a0, a0, a2
 	addi	a0, a0, -1
 	ret
-func0000000000000048:                   # @func0000000000000048
-	sext.w	a2, a2
-	add	a0, a0, a1
-	add	a0, a0, a2
-	addi	a0, a0, -1
-	ret
 func0000000000000055:                   # @func0000000000000055
 	sext.w	a2, a2
 	add	a0, a0, a1

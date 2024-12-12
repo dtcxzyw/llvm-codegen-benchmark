@@ -1,11 +1,10 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; linux/optimized/intel_migrate.ll
 ; llvm/optimized/CGObjCMac.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; openjdk/optimized/c2_MacroAssembler_x86.ll
-; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i32 %0, i32 %1, i8 %2) #0 {
 entry:

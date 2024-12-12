@@ -107,7 +107,7 @@ entry:
   ret i1 %3
 }
 
-; 57 occurrences:
+; 56 occurrences:
 ; abc/optimized/cuddPriority.c.ll
 ; abc/optimized/giaJf.c.ll
 ; abc/optimized/giaLf.c.ll
@@ -131,7 +131,6 @@ entry:
 ; jq/optimized/jv_dtoa.ll
 ; libquic/optimized/dtoa.cc.ll
 ; lightgbm/optimized/feature_histogram.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll
 ; meshlab/optimized/trackmode.cpp.ll
 ; minetest/optimized/imagefilters.cpp.ll

@@ -1,6 +1,6 @@
 func000000000000000c:                   # @func000000000000000c
 	movslq	%edx, %rax
-	cmpq	%rsi, %rax
+	cmpq	%rax, %rsi
 	setne	%al
 	andb	%dil, %al
 	retq

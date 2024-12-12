@@ -1,5 +1,7 @@
 
-; 4 occurrences:
+; 6 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; icu/optimized/astro.ll
 ; proj/optimized/geodesic.c.ll

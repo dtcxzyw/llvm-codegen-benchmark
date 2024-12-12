@@ -17,7 +17,7 @@ entry:
   ret i64 %4
 }
 
-; 131 occurrences:
+; 129 occurrences:
 ; abc/optimized/bzlib.c.ll
 ; abc/optimized/giaDup.c.ll
 ; assimp/optimized/zip.c.ll
@@ -45,7 +45,6 @@ entry:
 ; llvm/optimized/BitcodeWriter.cpp.ll
 ; llvm/optimized/BranchProbabilityInfo.cpp.ll
 ; llvm/optimized/BranchRelaxation.cpp.ll
-; llvm/optimized/CGCXX.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; llvm/optimized/CGProfile.cpp.ll
@@ -143,7 +142,6 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; ockam-rs/optimized/gotvfwvqrrp4xgl.ll
 ; openmpi/optimized/crc.ll
-; php/optimized/hash_crc32.ll
 ; postgres/optimized/tsgistidx.ll
 ; postgres/optimized/tsquery.ll
 ; raylib/optimized/raudio.c.ll
@@ -152,8 +150,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
-  %2 = lshr i32 %1, 24
-  %3 = xor i32 %2, %0
+  %2 = lshr i32 %1, 8
+  %3 = xor i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }

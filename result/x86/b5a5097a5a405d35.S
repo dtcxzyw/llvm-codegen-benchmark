@@ -4,7 +4,7 @@ func0000000000000001:                   # @func0000000000000001
 	xorb	$1, %dil
 	orb	%dil, %al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	testb	%sil, %sil
 	setns	%al
 	andb	%dil, %al

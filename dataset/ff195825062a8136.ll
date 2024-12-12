@@ -1,7 +1,8 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; cvc5/optimized/base_solver.cpp.ll
 ; opencv/optimized/hough.cpp.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(double %0, double %1) #0 {
 entry:

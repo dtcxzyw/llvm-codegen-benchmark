@@ -1,4 +1,4 @@
-func000000000000002a:                   // @func000000000000002a
+func000000000000002f:                   // @func000000000000002f
 // %bb.0:                               // %entry
 	and	w8, w1, #0xff
 	cmp	w8, #142
@@ -14,7 +14,7 @@ func0000000000000020:                   // @func0000000000000020
 	add	x0, x8, #1
 	ret
                                         // -- End function
-func000000000000010a:                   // @func000000000000010a
+func000000000000010f:                   // @func000000000000010f
 // %bb.0:                               // %entry
 	and	w8, w1, #0xff
 	cmp	w8, #1
@@ -22,7 +22,7 @@ func000000000000010a:                   // @func000000000000010a
 	add	x0, x8, #1
 	ret
                                         // -- End function
-func000000000000018a:                   // @func000000000000018a
+func000000000000018f:                   // @func000000000000018f
 // %bb.0:                               // %entry
 	and	w8, w1, #0xff
 	cmp	w8, #60
@@ -30,14 +30,14 @@ func000000000000018a:                   // @func000000000000018a
 	add	x0, x8, #3
 	ret
                                         // -- End function
-func000000000000008a:                   // @func000000000000008a
+func000000000000008f:                   // @func000000000000008f
 // %bb.0:                               // %entry
 	tst	w1, #0xfe
 	cinc	x8, x0, eq
 	add	x0, x8, #1
 	ret
                                         // -- End function
-func0000000000000028:                   // @func0000000000000028
+func000000000000002c:                   // @func000000000000002c
 // %bb.0:                               // %entry
 	and	w8, w1, #0xff
 	cmp	w8, #45
@@ -53,7 +53,7 @@ func0000000000000140:                   // @func0000000000000140
 	sub	x0, x8, #1
 	ret
                                         // -- End function
-func0000000000000022:                   // @func0000000000000022
+func0000000000000023:                   // @func0000000000000023
 // %bb.0:                               // %entry
 	and	w8, w1, #0xff
 	cmp	w8, #33
@@ -61,7 +61,7 @@ func0000000000000022:                   // @func0000000000000022
 	add	x0, x8, #1
 	ret
                                         // -- End function
-func0000000000000142:                   // @func0000000000000142
+func0000000000000143:                   // @func0000000000000143
 // %bb.0:                               // %entry
 	ubfx	w8, w1, #7, #1
 	eor	w8, w8, #0x1

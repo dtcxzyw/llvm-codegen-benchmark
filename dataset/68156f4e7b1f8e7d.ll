@@ -19,12 +19,12 @@ entry:
 ; openjdk/optimized/mlib_c_ImageLookUp_f.ll
 ; php/optimized/pcre2_substring.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000003f(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = or disjoint i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw [512 x i32], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [512 x i32], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
@@ -36,24 +36,24 @@ entry:
 ; stockfish/optimized/evaluate.ll
 ; stockfish/optimized/position.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 3
   %3 = or disjoint i32 %2, 6
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw [16 x i32], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [16 x i32], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; clamav/optimized/autoit.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = or disjoint i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw [600 x i8], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [600 x i8], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

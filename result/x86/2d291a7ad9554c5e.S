@@ -4,19 +4,19 @@ func0000000000000001:                   # @func0000000000000001
 	cmpb	$43, %sil
 	cmoveq	%rdi, %rax
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	movq	%rdi, %rax
 	negq	%rax
 	cmpb	$10, %sil
 	cmovbq	%rdi, %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movq	%rdi, %rax
 	negq	%rax
 	cmpb	$45, %sil
 	cmoveq	%rdi, %rax
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	movl	$3, %eax
 	subq	%rdi, %rax
 	testb	%sil, %sil

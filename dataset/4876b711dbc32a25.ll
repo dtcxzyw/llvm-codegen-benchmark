@@ -1,18 +1,17 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; abc/optimized/giaHash.c.ll
-; hdf5/optimized/H5Zfletcher32.c.ll
 ; icu/optimized/uchar.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; redis/optimized/acl.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
   %4 = and i32 %3, 14336
-  %5 = or disjoint i32 %4, %1
-  %6 = icmp eq i32 %5, %0
+  %5 = or disjoint i32 %1, %4
+  %6 = icmp eq i32 %0, %5
   ret i1 %6
 }
 
@@ -20,12 +19,12 @@ entry:
 ; abc/optimized/amapMerge.c.ll
 ; wireshark/optimized/packet_diagram.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 16
   %4 = and i32 %3, 1
   %5 = or disjoint i32 %4, %1
-  %6 = icmp slt i32 %5, %0
+  %6 = icmp sgt i32 %0, %5
   ret i1 %6
 }
 
@@ -60,8 +59,8 @@ define i1 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
   %4 = and i32 %3, 3
-  %5 = or i32 %4, %1
-  %6 = icmp ult i32 %5, %0
+  %5 = or i32 %1, %4
+  %6 = icmp ugt i32 %0, %5
   ret i1 %6
 }
 
@@ -96,8 +95,8 @@ define i1 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
   %4 = and i32 %3, 3
-  %5 = or i32 %4, %1
-  %6 = icmp ugt i32 %5, %0
+  %5 = or i32 %1, %4
+  %6 = icmp ult i32 %0, %5
   ret i1 %6
 }
 
@@ -113,8 +112,8 @@ define i1 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
   %4 = and i32 %3, 3
-  %5 = or i32 %4, %1
-  %6 = icmp uge i32 %5, %0
+  %5 = or i32 %1, %4
+  %6 = icmp ule i32 %0, %5
   ret i1 %6
 }
 
@@ -125,20 +124,20 @@ define i1 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
   %4 = and i32 %3, 3
-  %5 = or i32 %4, %1
-  %6 = icmp ule i32 %5, %0
+  %5 = or i32 %1, %4
+  %6 = icmp uge i32 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; wireshark/optimized/packet_diagram.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 5
   %4 = and i32 %3, 7
   %5 = or disjoint i32 %4, %1
-  %6 = icmp sgt i32 %5, %0
+  %6 = icmp slt i32 %0, %5
   ret i1 %6
 }
 
@@ -150,19 +149,19 @@ entry:
   %3 = lshr i32 %2, 5
   %4 = and i32 %3, 1
   %5 = or i32 %4, %1
-  %6 = icmp eq i32 %5, %0
+  %6 = icmp eq i32 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; z3/optimized/sat_simplifier.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr exact i32 %2, 2
   %4 = and i32 %3, 1
   %5 = or disjoint i32 %4, %1
-  %6 = icmp eq i32 %5, %0
+  %6 = icmp eq i32 %0, %5
   ret i1 %6
 }
 

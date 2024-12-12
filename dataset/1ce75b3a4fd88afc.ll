@@ -5,7 +5,7 @@
 ; abc/optimized/giaSatLE.c.ll
 ; abc/optimized/sbdCore.c.ll
 ; abc/optimized/wlcBlast.c.ll
-; linux/optimized/utids.ll
+; lvgl/optimized/lv_demo_render.ll
 ; ncnn/optimized/deformableconv2d_x86.cpp.ll
 ; ncnn/optimized/deformableconv2d_x86_avx.cpp.ll
 ; ncnn/optimized/deformableconv2d_x86_avx512.cpp.ll

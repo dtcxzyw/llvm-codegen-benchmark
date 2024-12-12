@@ -1,4 +1,4 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpextrd	$1, %xmm1, %eax
 	vpextrd	$1, %xmm2, %ecx
 	cltd
@@ -27,7 +27,7 @@ func0000000000000031:                   # @func0000000000000031
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpextrd	$1, %xmm1, %eax
 	vpextrd	$1, %xmm2, %ecx
 	cltd
@@ -85,7 +85,7 @@ func0000000000000004:                   # @func0000000000000004
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpextrd	$1, %xmm1, %eax
 	vpextrd	$1, %xmm2, %ecx
 	cltd

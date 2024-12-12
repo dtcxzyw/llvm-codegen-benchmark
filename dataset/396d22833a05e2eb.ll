@@ -16,19 +16,6 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000104(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add nsw i64 %0, %1
-  %3 = trunc i64 %2 to i32
-  %4 = add i32 %3, -10000
-  %5 = icmp ult i32 %4, -8100
-  ret i1 %5
-}
-
 ; 1 occurrences:
 ; qemu/optimized/system_physmem.c.ll
 ; Function Attrs: nounwind
@@ -68,7 +55,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/WasmObjectFile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, %1
   %3 = trunc nuw i64 %2 to i32

@@ -20,13 +20,17 @@
 define i8 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = or i32 %4, %0
   %6 = trunc nuw i32 %5 to i8
   ret i8 %6
 }
 
-; 16 occurrences:
+; 21 occurrences:
+; boost/optimized/basic_text_iprimitive.ll
+; boost/optimized/basic_text_oprimitive.ll
+; boost/optimized/basic_text_wiprimitive.ll
+; boost/optimized/basic_text_woprimitive.ll
 ; libsodium/optimized/libsodium_la-codecs.ll
 ; linux/optimized/pata_amd.ll
 ; linux/optimized/yenta_socket.ll
@@ -34,6 +38,7 @@ entry:
 ; llvm/optimized/Interp.cpp.ll
 ; luajit/optimized/lj_cconv.ll
 ; luajit/optimized/lj_cconv_dyn.ll
+; lvgl/optimized/lv_canvas.ll
 ; minetest/optimized/CImageLoaderBMP.cpp.ll
 ; openjdk/optimized/ByteBinary1Bit.ll
 ; openjdk/optimized/ByteBinary2Bit.ll
@@ -47,8 +52,8 @@ entry:
 define i8 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = and i32 %3, %1
-  %5 = or i32 %4, %0
+  %4 = and i32 %1, %3
+  %5 = or i32 %0, %4
   %6 = trunc i32 %5 to i8
   ret i8 %6
 }

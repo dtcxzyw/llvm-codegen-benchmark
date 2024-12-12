@@ -39,6 +39,26 @@ func000000000000000a:                   # @func000000000000000a
 	andl	$-4, %esi
 	leaq	40(%rdi,%rsi), %rax
 	retq
+func000000000000002e:                   # @func000000000000002e
+	addq	$15, %rsi
+	andq	$-16, %rsi
+	leaq	16(%rdi,%rsi), %rax
+	retq
+func0000000000000022:                   # @func0000000000000022
+	addq	$15, %rsi
+	andq	$-16, %rsi
+	leaq	17(%rdi,%rsi), %rax
+	retq
+func0000000000000026:                   # @func0000000000000026
+	addq	$15, %rsi
+	andq	$-16, %rsi
+	leaq	17(%rdi,%rsi), %rax
+	retq
+func0000000000000002:                   # @func0000000000000002
+	addq	$19, %rsi
+	andq	$-16, %rsi
+	leaq	17(%rdi,%rsi), %rax
+	retq
 func0000000000000035:                   # @func0000000000000035
 	addl	$7, %esi
 	andl	$131068, %esi                   # imm = 0x1FFFC

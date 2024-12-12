@@ -1,5 +1,8 @@
 
-; 40 occurrences:
+; 43 occurrences:
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/idas.c.ll
 ; graphviz/optimized/furtherest_point.c.ll
 ; graphviz/optimized/xlayout.c.ll

@@ -1,12 +1,9 @@
 
-; 10 occurrences:
+; 7 occurrences:
 ; jemalloc/optimized/tcache.ll
 ; jemalloc/optimized/tcache.pic.ll
 ; jemalloc/optimized/tcache.sym.ll
 ; openblas/optimized/dsfrk.c.ll
-; openblas/optimized/dtfsm.c.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; openmpi/optimized/coll_base_reduce.ll
 ; redis/optimized/tcache.ll
 ; redis/optimized/tcache.sym.ll

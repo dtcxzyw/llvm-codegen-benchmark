@@ -1,9 +1,12 @@
 
-; 5 occurrences:
+; 8 occurrences:
+; abc/optimized/ifTune.c.ll
 ; hermes/optimized/RegExp.cpp.ll
 ; linux/optimized/mempolicy.ll
 ; linux/optimized/pcm_native.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; openjdk/optimized/loopopts.ll
+; openjdk/optimized/superword.ll
 ; qemu/optimized/block.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1, i32 %2) #0 {

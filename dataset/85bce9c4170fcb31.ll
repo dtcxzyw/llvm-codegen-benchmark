@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; coreutils-rs/optimized/1xgh31va70j84rdd.ll
 ; coreutils-rs/optimized/22bojphyikqmi872.ll
 ; darktable/optimized/introspection_colortransfer.c.ll
@@ -17,12 +17,13 @@
 ; rust-analyzer-rs/optimized/k5mtltw7nxmadpl.ll
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(ptr %0, i8 %1) #0 {
+define ptr @func0000000000000061(ptr %0, i8 %1) #0 {
 entry:
   %2 = freeze i8 %1
   %3 = icmp eq i8 %2, 8
-  %4 = getelementptr nusw i8, ptr %0, i64 80
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 80
   %5 = select i1 %3, ptr %4, ptr null
   ret ptr %5
 }

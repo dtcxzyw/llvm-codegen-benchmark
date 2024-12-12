@@ -1,8 +1,22 @@
 
-%struct.lua_TValue.3476466 = type { %union.Value.3476467, i32 }
-%union.Value.3476467 = type { ptr }
+%struct.lua_TValue.3660449 = type { %union.Value.3660450, i32 }
+%union.Value.3660450 = type { ptr }
 
-; 334 occurrences:
+; 3 occurrences:
+; boost/optimized/static_string.ll
+; openssl/optimized/sslapitest-bin-sslapitest.ll
+; php/optimized/pcre2_jit_compile.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001e4(ptr %0, ptr %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i64
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
+  %6 = icmp ult ptr %0, %5
+  ret i1 %6
+}
+
+; 343 occurrences:
 ; abseil-cpp/optimized/cord_analysis.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_navigator_test.cc.ll
@@ -12,6 +26,7 @@
 ; abseil-cpp/optimized/cordz_info_statistics_test.cc.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
+; boost/optimized/static_string.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/color-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -35,6 +50,7 @@
 ; folly/optimized/IPAddressV6.cpp.ll
 ; folly/optimized/Singleton.cpp.ll
 ; libphonenumber/optimized/generate_geocoding_data.cc.ll
+; libphonenumber/optimized/geocoding_data_test.cc.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
 ; lief/optimized/BinaryParser.cpp.ll
@@ -177,16 +193,23 @@
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
+; openspiel/optimized/best_response.cc.ll
 ; openspiel/optimized/dynamic_routing.cc.ll
 ; openspiel/optimized/dynamic_routing_utils.cc.ll
 ; openspiel/optimized/history_tree.cc.ll
 ; openspiel/optimized/spiel.cc.ll
 ; openspiel/optimized/state_distribution.cc.ll
 ; protobuf/optimized/command_line_interface.cc.ll
+; protobuf/optimized/descriptor.cc.ll
 ; protobuf/optimized/descriptor_database.cc.ll
 ; protobuf/optimized/enum.cc.ll
+; protobuf/optimized/extension_set.cc.ll
+; protobuf/optimized/feature_resolver.cc.ll
 ; protobuf/optimized/field_mask_util.cc.ll
 ; protobuf/optimized/file.cc.ll
+; protobuf/optimized/map.cc.ll
+; protobuf/optimized/message_builder.cc.ll
+; protobuf/optimized/message_builder_lite.cc.ll
 ; proxygen/optimized/HTTPBinaryCodec.cpp.ll
 ; ropey-rs/optimized/3dnc959gvadodw9w.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
@@ -338,38 +361,24 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func00000000000001e1(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 11
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
-  %6 = icmp eq ptr %5, %0
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 11
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
-; 15 occurrences:
-; abseil-cpp/optimized/cord_rep_btree.cc.ll
-; abseil-cpp/optimized/hash_instantiated_test.cc.ll
-; abseil-cpp/optimized/str_split_test.cc.ll
-; libphonenumber/optimized/generate_geocoding_data.cc.ll
-; libphonenumber/optimized/geocoding_data_test.cc.ll
-; openspiel/optimized/best_response.cc.ll
-; protobuf/optimized/command_line_interface.cc.ll
-; protobuf/optimized/descriptor.cc.ll
-; protobuf/optimized/descriptor_database.cc.ll
-; protobuf/optimized/extension_set.cc.ll
-; protobuf/optimized/feature_resolver.cc.ll
-; protobuf/optimized/file.cc.ll
-; protobuf/optimized/map.cc.ll
-; protobuf/optimized/message_builder.cc.ll
-; protobuf/optimized/message_builder_lite.cc.ll
+; 1 occurrences:
+; boost/optimized/static_string.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func00000000000001ec(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = getelementptr i8, ptr %1, i64 12
-  %5 = getelementptr nusw i32, ptr %4, i64 %3
-  %6 = icmp eq ptr %5, %0
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
+  %6 = icmp ne ptr %0, %5
   ret i1 %6
 }
 
@@ -388,12 +397,12 @@ entry:
 ; protobuf/optimized/message_builder.cc.ll
 ; protobuf/optimized/message_builder_lite.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000181(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 12
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 12
   %5 = getelementptr i32, ptr %4, i64 %3
-  %6 = icmp eq ptr %5, %0
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
@@ -401,24 +410,24 @@ entry:
 ; luajit/optimized/minilua.ll
 ; redis/optimized/ldo.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func00000000000001e8(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 16
-  %5 = getelementptr nusw %struct.lua_TValue.3476466, ptr %4, i64 %3
-  %6 = icmp ult ptr %5, %0
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 16
+  %5 = getelementptr nusw nuw %struct.lua_TValue.3660449, ptr %4, i64 %3
+  %6 = icmp ugt ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a9(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func00000000000001e9(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 8
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
-  %6 = icmp ule ptr %5, %0
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 8
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %3
+  %6 = icmp uge ptr %0, %5
   ret i1 %6
 }
 

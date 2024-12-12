@@ -1,5 +1,5 @@
 
-; 111 occurrences:
+; 106 occurrences:
 ; actix-rs/optimized/2m9lq42maoywd5kd.ll
 ; bdwgc/optimized/gc.c.ll
 ; coreutils-rs/optimized/4ooodgzovc6dgngk.ll
@@ -7,8 +7,6 @@
 ; delta-rs/optimized/1x96nto90vd3u3mo.ll
 ; delta-rs/optimized/4hbajsv9e0zw688t.ll
 ; delta-rs/optimized/f3qrlbdk00xfer1.ll
-; duckdb/optimized/ub_duckdb_parallel.cpp.ll
-; duckdb/optimized/ub_duckdb_storage_buffer.cpp.ll
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; eastl/optimized/BenchmarkString.cpp.ll
@@ -16,7 +14,6 @@
 ; eastl/optimized/EATest.cpp.ll
 ; eastl/optimized/TestAlgorithm.cpp.ll
 ; eastl/optimized/TestBitVector.cpp.ll
-; eastl/optimized/TestCharTraits.cpp.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestExtra.cpp.ll
 ; eastl/optimized/TestFixedString.cpp.ll
@@ -27,7 +24,6 @@
 ; eastl/optimized/TestOptional.cpp.ll
 ; eastl/optimized/TestRingBuffer.cpp.ll
 ; eastl/optimized/TestString.cpp.ll
-; eastl/optimized/TestUtility.cpp.ll
 ; eastl/optimized/TestVariant.cpp.ll
 ; eastl/optimized/TestVector.cpp.ll
 ; eastl/optimized/TestVectorMap.cpp.ll
@@ -66,7 +62,6 @@
 ; mitsuba3/optimized/null.cpp.ll
 ; mitsuba3/optimized/obj.cpp.ll
 ; mitsuba3/optimized/plastic.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/polarizer.cpp.ll
 ; mitsuba3/optimized/pplastic.cpp.ll
 ; mitsuba3/optimized/principled.cpp.ll
@@ -119,10 +114,8 @@ entry:
   ret i64 %3
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; cpython/optimized/obmalloc.ll
-; duckdb/optimized/ub_duckdb_parallel.cpp.ll
-; duckdb/optimized/ub_duckdb_storage_buffer.cpp.ll
 ; eastl/optimized/EACallback.cpp.ll
 ; graphviz/optimized/psusershape.c.ll
 ; linux/optimized/build_policy.ll
@@ -131,6 +124,9 @@ entry:
 ; mimalloc/optimized/bitmap.c.ll
 ; opencv/optimized/rtrees.cpp.ll
 ; openmpi/optimized/opal_copy_functions_heterogeneous.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1) #0 {
 entry:
@@ -139,7 +135,7 @@ entry:
   ret i64 %3
 }
 
-; 12 occurrences:
+; 14 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; cpython/optimized/frameobject.ll
 ; eastl/optimized/TestString.cpp.ll
@@ -150,6 +146,8 @@ entry:
 ; g2o/optimized/solver_slam2d_linear.cpp.ll
 ; git/optimized/packed-backend.ll
 ; llvm/optimized/APINotesReader.cpp.ll
+; opencv/optimized/matmul.dispatch.cpp.ll
+; opencv/optimized/matrix_operations.cpp.ll
 ; openexr/optimized/ImfDeepTiledOutputFile.cpp.ll
 ; pbrt-v4/optimized/color.cpp.ll
 ; Function Attrs: nounwind
@@ -160,20 +158,18 @@ entry:
   ret i64 %3
 }
 
-; 8 occurrences:
+; 6 occurrences:
 ; g2o/optimized/vertex_ellipse.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_referencing.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/matching.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
-; opencv/optimized/matmul.dispatch.cpp.ll
-; opencv/optimized/matrix_operations.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
-  %2 = shl nsw i64 %1, 4
-  %3 = select i1 %0, i64 %2, i64 16
+  %2 = shl nsw i64 %1, 3
+  %3 = select i1 %0, i64 %2, i64 0
   ret i64 %3
 }
 

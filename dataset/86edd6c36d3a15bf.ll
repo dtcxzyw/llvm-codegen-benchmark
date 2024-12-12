@@ -1,5 +1,5 @@
 
-; 169 occurrences:
+; 172 occurrences:
 ; abc/optimized/abcExtract.c.ll
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/cbaNtk.c.ll
@@ -12,6 +12,11 @@
 ; abc/optimized/utilSort.c.ll
 ; abc/optimized/wlcNtk.c.ll
 ; abseil-cpp/optimized/symbolize.cc.ll
+; boost/optimized/async.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; clamav/optimized/7zIn.c.ll
 ; cmake/optimized/byte_order.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
@@ -29,7 +34,6 @@
 ; libquic/optimized/string_util.cc.ll
 ; linux/optimized/blk-mq.ll
 ; linux/optimized/build_utility.ll
-; linux/optimized/fs-writeback.ll
 ; linux/optimized/gro.ll
 ; linux/optimized/hw_breakpoint.ll
 ; linux/optimized/interface.ll
@@ -154,7 +158,6 @@
 ; qemu/optimized/hw_scsi_megasas.c.ll
 ; qemu/optimized/hw_scsi_mptsas.c.ll
 ; qemu/optimized/hwprofile.ll
-; qemu/optimized/util_filemonitor-inotify.c.ll
 ; quest/optimized/QuEST_cpu.c.ll
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/raudio.c.ll
@@ -173,7 +176,7 @@
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   ret i64 %3
 }
 
@@ -282,7 +285,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   ret i64 %3
 }
 

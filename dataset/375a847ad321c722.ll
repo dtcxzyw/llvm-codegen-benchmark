@@ -1,9 +1,12 @@
 
-; 151 occurrences:
+; 147 occurrences:
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; gromacs/optimized/andersentemperaturecoupling.cpp.ll
 ; gromacs/optimized/cluster_methods.cpp.ll
 ; gromacs/optimized/colvarproxygromacs.cpp.ll
@@ -30,7 +33,6 @@
 ; linux/optimized/dm-stats.ll
 ; linux/optimized/dma-iommu.ll
 ; linux/optimized/kcore.ll
-; linux/optimized/meminfo.ll
 ; linux/optimized/percpu.ll
 ; linux/optimized/resize.ll
 ; linux/optimized/rwsem.ll
@@ -102,19 +104,8 @@
 ; mold/optimized/passes.cc.SPARC64.cc.ll
 ; mold/optimized/passes.cc.X86_64.cc.ll
 ; openblas/optimized/dgemv_thread_n.c.ll
-; openblas/optimized/dsbmv_thread_L.c.ll
-; openblas/optimized/dsbmv_thread_U.c.ll
-; openblas/optimized/dtbmv_thread_NLN.c.ll
-; openblas/optimized/dtbmv_thread_NLU.c.ll
-; openblas/optimized/dtbmv_thread_NUN.c.ll
-; openblas/optimized/dtbmv_thread_NUU.c.ll
-; openblas/optimized/dtbmv_thread_TLN.c.ll
-; openblas/optimized/dtbmv_thread_TLU.c.ll
-; openblas/optimized/dtbmv_thread_TUN.c.ll
-; openblas/optimized/dtbmv_thread_TUU.c.ll
 ; opencv/optimized/convolution_layer.cpp.ll
 ; openjdk/optimized/methodData.ll
-; openmpi/optimized/os_path.ll
 ; php/optimized/dtoa.ll
 ; php/optimized/php_reflection.ll
 ; php/optimized/snprintf.ll
@@ -151,6 +142,11 @@
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; typst-rs/optimized/w6iknwszr5npyaz.ll
 ; typst-rs/optimized/xrijsyrxk2ciyk9.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
+; zed-rs/optimized/8mr81aw0ctvqdrbyiysor7awe.ll
+; zed-rs/optimized/ddwqyvi7204z7yxly1a7n0b57.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -160,7 +156,7 @@ entry:
   ret i64 %5
 }
 
-; 14 occurrences:
+; 10 occurrences:
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/implicit_schur_complement.cc.ll
@@ -169,10 +165,6 @@ entry:
 ; eastl/optimized/TestDeque.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; luau/optimized/isocline.c.ll
-; openblas/optimized/dtrmv_thread_NLN.c.ll
-; openblas/optimized/dtrmv_thread_NLU.c.ll
-; openblas/optimized/dtrmv_thread_TLN.c.ll
-; openblas/optimized/dtrmv_thread_TLU.c.ll
 ; openmpi/optimized/ad_io_coll.ll
 ; rocksdb/optimized/compaction_picker_universal.cc.ll
 ; Function Attrs: nounwind
@@ -196,6 +188,17 @@ entry:
   ret i64 %5
 }
 
+; 1 occurrences:
+; linux/optimized/badblocks.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000d(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = xor i64 %2, -1
+  %4 = add nuw nsw i64 %0, %1
+  %5 = add nsw i64 %4, %3
+  ret i64 %5
+}
+
 ; 5 occurrences:
 ; jemalloc/optimized/arena.ll
 ; jemalloc/optimized/arena.pic.ll
@@ -208,6 +211,28 @@ entry:
   %3 = xor i64 %2, -1
   %4 = add i64 %0, %1
   %5 = add nuw nsw i64 %4, %3
+  ret i64 %5
+}
+
+; 12 occurrences:
+; llama.cpp/optimized/ggml.c.ll
+; openblas/optimized/dgemv_thread_n.c.ll
+; openblas/optimized/dsbmv_thread_L.c.ll
+; openblas/optimized/dsbmv_thread_U.c.ll
+; openblas/optimized/dtbmv_thread_NLN.c.ll
+; openblas/optimized/dtbmv_thread_NLU.c.ll
+; openblas/optimized/dtbmv_thread_NUN.c.ll
+; openblas/optimized/dtbmv_thread_NUU.c.ll
+; openblas/optimized/dtbmv_thread_TLN.c.ll
+; openblas/optimized/dtbmv_thread_TLU.c.ll
+; openblas/optimized/dtbmv_thread_TUN.c.ll
+; openblas/optimized/dtbmv_thread_TUU.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = xor i64 %2, -1
+  %4 = add nuw i64 %0, %1
+  %5 = add i64 %4, %3
   ret i64 %5
 }
 

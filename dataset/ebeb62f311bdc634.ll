@@ -239,7 +239,7 @@ entry:
   ret i32 %4
 }
 
-; 286 occurrences:
+; 282 occurrences:
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; abseil-cpp/optimized/duration.cc.ll
 ; fmt/optimized/chrono-test.cc.ll
@@ -341,7 +341,6 @@ entry:
 ; lightgbm/optimized/feature_histogram.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/apic.ll
-; linux/optimized/delay.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/i915_gpu_error.ll
@@ -352,7 +351,6 @@ entry:
 ; linux/optimized/pt.ll
 ; linux/optimized/resize.ll
 ; linux/optimized/tg3.ll
-; linux/optimized/utaddress.ll
 ; linux/optimized/xhci-ring.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/VarLocBasedImpl.cpp.ll
@@ -436,7 +434,6 @@ entry:
 ; qemu/optimized/audio_mixeng.c.ll
 ; qemu/optimized/hw_net_cadence_gem.c.ll
 ; qemu/optimized/hw_net_e1000x_common.c.ll
-; qemu/optimized/hw_rtc_goldfish_rtc.c.ll
 ; rand-rs/optimized/2lnmku48it2ei9m4.ll
 ; rocksdb/optimized/format.cc.ll
 ; ruby/optimized/bignum.ll
@@ -445,7 +442,6 @@ entry:
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
 ; spike/optimized/dtm.ll
-; spike/optimized/s_mul64To128M.ll
 ; tev/optimized/Channel.cpp.ll
 ; tev/optimized/ClipboardImageLoader.cpp.ll
 ; tev/optimized/Common.cpp.ll
@@ -559,8 +555,7 @@ entry:
   ret i32 %4
 }
 
-; 20 occurrences:
-; abc/optimized/dauCount.c.ll
+; 19 occurrences:
 ; darktable/optimized/introspection_colortransfer.c.ll
 ; linux/optimized/tg3.ll
 ; lua/optimized/ltable.ll
@@ -589,7 +584,7 @@ entry:
   ret i32 %4
 }
 
-; 46 occurrences:
+; 45 occurrences:
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; cmake/optimized/cover.c.ll
 ; cmake/optimized/lz_encoder.c.ll
@@ -608,7 +603,6 @@ entry:
 ; linux/optimized/hw-me.ll
 ; linux/optimized/init_64.ll
 ; linux/optimized/iov_iter.ll
-; linux/optimized/map.ll
 ; linux/optimized/pagelist.ll
 ; linux/optimized/pcmcia_resource.ll
 ; linux/optimized/scatterlist.ll
@@ -701,8 +695,9 @@ entry:
   ret i32 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; arrow/optimized/bignum.cc.ll
+; boost/optimized/to_chars.ll
 ; double_conversion/optimized/bignum.cc.ll
 ; icu/optimized/double-conversion-bignum.ll
 ; libquic/optimized/poly1305_vec.c.ll
@@ -728,13 +723,14 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; graphviz/optimized/pack.c.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, %1
-  %3 = lshr exact i64 %2, 32
+  %3 = lshr exact i64 %2, 2
   %4 = trunc nuw i64 %3 to i32
   ret i32 %4
 }

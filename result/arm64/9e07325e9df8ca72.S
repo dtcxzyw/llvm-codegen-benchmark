@@ -1,49 +1,34 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	cmeq	v0.4s, v0.4s, #0
-	mov	w8, #321                        // =0x141
-	mov	w9, #65                         // =0x41
+	mov	w8, #65                         // =0x41
+	cmp	w0, #0
 	movk	w8, #8738, lsl #16
-	movk	w9, #8738, lsl #16
-	dup	v3.2d, x8
-	dup	v4.2d, x9
-	sshll	v2.2d, v0.2s, #0
-	sshll2	v0.2d, v0.4s, #0
-	mov	v1.16b, v0.16b
-	mov	v0.16b, v2.16b
-	bsl	v1.16b, v4.16b, v3.16b
-	bsl	v0.16b, v4.16b, v3.16b
+	orr	x9, x8, #0x100
+	csel	x0, x8, x9, eq
+	ret
+                                        // -- End function
+func0000000000000031:                   // @func0000000000000031
+// %bb.0:                               // %entry
+	mov	w8, #33                         // =0x21
+	cmp	w0, #769
+	mov	w9, #49                         // =0x31
+	csel	x0, x9, x8, hi
 	ret
                                         // -- End function
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	mov	w8, #769                        // =0x301
-	mov	w9, #49                         // =0x31
-	dup	v1.4s, w8
-	mov	w8, #33                         // =0x21
-	dup	v4.2d, x9
-	dup	v3.2d, x8
-	cmhi	v0.4s, v0.4s, v1.4s
-	sshll	v2.2d, v0.2s, #0
-	sshll2	v0.2d, v0.4s, #0
-	mov	v1.16b, v0.16b
-	mov	v0.16b, v2.16b
-	bsl	v1.16b, v4.16b, v3.16b
-	bsl	v0.16b, v4.16b, v3.16b
+	lsr	w9, w0, #16
+	mov	w8, #8                          // =0x8
+	cmp	w9, #0
+	mov	w9, #24                         // =0x18
+	csel	x0, x9, x8, ne
 	ret
                                         // -- End function
 func000000000000000d:                   // @func000000000000000d
 // %bb.0:                               // %entry
-	cmlt	v0.4s, v0.4s, #0
 	mov	w8, #12                         // =0xc
+	cmp	w0, #0
 	mov	w9, #4                          // =0x4
-	dup	v3.2d, x8
-	dup	v4.2d, x9
-	sshll	v2.2d, v0.2s, #0
-	sshll2	v0.2d, v0.4s, #0
-	mov	v1.16b, v0.16b
-	mov	v0.16b, v2.16b
-	bsl	v1.16b, v4.16b, v3.16b
-	bsl	v0.16b, v4.16b, v3.16b
+	csel	x0, x9, x8, lt
 	ret
                                         // -- End function

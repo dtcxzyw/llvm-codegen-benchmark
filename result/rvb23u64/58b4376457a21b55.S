@@ -13,6 +13,11 @@ func000000000000001f:                   # @func000000000000001f
 	slli	a0, a0, 2
 	addiw	a0, a0, 12
 	ret
+func0000000000000007:                   # @func0000000000000007
+	li	a1, 88
+	mul	a0, a0, a1
+	addiw	a0, a0, -264
+	ret
 func000000000000000a:                   # @func000000000000000a
 	sh1add	a0, a0, a0
 	slli	a0, a0, 1
@@ -37,8 +42,4 @@ func0000000000000008:                   # @func0000000000000008
 	sh1add	a0, a0, a0
 	addi	a0, a0, -3
 	zext.w	a0, a0
-	ret
-func0000000000000007:                   # @func0000000000000007
-	sh1add	a0, a0, a0
-	addiw	a0, a0, -3
 	ret

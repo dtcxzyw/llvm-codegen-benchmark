@@ -4,23 +4,24 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	%rsi, %rdi
 	cmovaq	%rcx, %rax
 	retq
-func00000000000000a8:                   # @func00000000000000a8
+func00000000000001e8:                   # @func00000000000001e8
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdi
 	setbe	%al
 	leaq	16(%rdx,%rax,8), %rax
 	retq
-func00000000000000a4:                   # @func00000000000000a4
+func00000000000001e4:                   # @func00000000000001e4
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdi
 	setae	%al
 	leaq	16(%rdx,%rax,8), %rax
 	retq
-func00000000000000a6:                   # @func00000000000000a6
+func00000000000001e6:                   # @func00000000000001e6
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdi
 	setge	%al
-	leaq	16(%rdx,%rax,8), %rax
+	shll	$4, %eax
+	leaq	64(%rdx,%rax), %rax
 	retq
 func0000000000000006:                   # @func0000000000000006
 	xorl	%eax, %eax
@@ -28,9 +29,15 @@ func0000000000000006:                   # @func0000000000000006
 	setge	%al
 	leaq	64(%rdx,%rax,8), %rax
 	retq
-func00000000000000aa:                   # @func00000000000000aa
+func00000000000001ea:                   # @func00000000000001ea
 	leaq	424(%rdx), %rax
 	leaq	256(%rdx), %rcx
 	cmpq	%rsi, %rdi
 	cmovgq	%rcx, %rax
+	retq
+func00000000000001ec:                   # @func00000000000001ec
+	xorl	%eax, %eax
+	cmpq	%rsi, %rdi
+	sete	%al
+	leaq	20(%rdx,%rax,4), %rax
 	retq

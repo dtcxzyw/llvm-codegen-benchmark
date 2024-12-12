@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 36 occurrences:
 ; abc/optimized/ioReadBlifMv.c.ll
 ; arrow/optimized/double-to-string.cc.ll
 ; arrow/optimized/encode_internal_avx2.cc.ll
@@ -35,6 +35,7 @@
 ; ruby/optimized/compile.ll
 ; sqlite/optimized/sqlite3.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
@@ -44,11 +45,10 @@ entry:
   ret i64 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; arrow/optimized/encode_internal.cc.ll
 ; arrow/optimized/light_array.cc.ll
 ; linux/optimized/svcauth_gss.ll
-; minetest/optimized/CFileSystem.cpp.ll
 ; mitsuba3/optimized/jitallocator.cpp.ll
 ; openjdk/optimized/node.ll
 ; rust-analyzer-rs/optimized/9xkc74kd1bsgldb.ll

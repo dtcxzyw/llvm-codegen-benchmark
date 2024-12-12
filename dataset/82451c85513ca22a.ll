@@ -13,13 +13,10 @@ entry:
   ret ptr %6
 }
 
-; 19 occurrences:
-; abc/optimized/kitIsop.c.ll
-; clamav/optimized/upack.c.ll
+; 16 occurrences:
 ; cpython/optimized/flowgraph.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; gromacs/optimized/pme_gather.cpp.ll
-; libwebp/optimized/iterator_enc.c.ll
 ; linux/optimized/d_path.ll
 ; linux/optimized/datagram.ll
 ; linux/optimized/esp6.ll
@@ -55,7 +52,21 @@ entry:
   ret ptr %6
 }
 
-; 237 occurrences:
+; 3 occurrences:
+; faiss/optimized/lattice_Zn.cpp.ll
+; openssl/optimized/libcrypto-lib-ffc_params_generate.ll
+; openssl/optimized/libcrypto-shlib-ffc_params_generate.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001e(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = sub nsw i64 0, %1
+  %6 = getelementptr nusw i8, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 235 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/abcHieNew.c.ll
@@ -155,7 +166,6 @@ entry:
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/giaSpeedup.c.ll
 ; abc/optimized/giaStr.c.ll
-; abc/optimized/giaSupMin.c.ll
 ; abc/optimized/giaSweep.c.ll
 ; abc/optimized/giaSweeper.c.ll
 ; abc/optimized/giaSwitch.c.ll
@@ -208,7 +218,6 @@ entry:
 ; darktable/optimized/introspection_liquify.c.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
-; faiss/optimized/lattice_Zn.cpp.ll
 ; freetype/optimized/raster.c.ll
 ; git/optimized/dir.ll
 ; git/optimized/kwset.ll
@@ -220,9 +229,13 @@ entry:
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libquic/optimized/e_aes.c.ll
 ; libwebp/optimized/io_dec.c.ll
+; libwebp/optimized/iterator_enc.c.ll
 ; libwebp/optimized/lossless.c.ll
 ; libwebp/optimized/lossless_enc_sse2.c.ll
 ; libwebp/optimized/lossless_enc_sse41.c.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; lvgl/optimized/lv_draw_sw_fill.ll
+; lvgl/optimized/lv_draw_sw_triangle.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
@@ -235,6 +248,7 @@ entry:
 ; opencv/optimized/brisk.cpp.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
 ; opencv/optimized/datastructs.cpp.ll
+; opencv/optimized/optflowgf.cpp.ll
 ; opencv/optimized/scansegment.cpp.ll
 ; opencv/optimized/stardetector.cpp.ll
 ; opencv/optimized/stereobm.cpp.ll
@@ -247,13 +261,9 @@ entry:
 ; openssl/optimized/libcrypto-lib-e_aes.ll
 ; openssl/optimized/libcrypto-lib-e_aria.ll
 ; openssl/optimized/libcrypto-lib-ecdh_ossl.ll
-; openssl/optimized/libcrypto-lib-ffc_params_generate.ll
-; openssl/optimized/libcrypto-lib-rsa_none.ll
 ; openssl/optimized/libcrypto-shlib-e_aes.ll
 ; openssl/optimized/libcrypto-shlib-e_aria.ll
 ; openssl/optimized/libcrypto-shlib-ecdh_ossl.ll
-; openssl/optimized/libcrypto-shlib-ffc_params_generate.ll
-; openssl/optimized/libcrypto-shlib-rsa_none.ll
 ; openusd/optimized/regularPatchBuilder.cpp.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; openusd/optimized/yv12extend.c.ll
@@ -277,7 +287,6 @@ entry:
 ; stb/optimized/stb_vorbis.c.ll
 ; velox/optimized/LzoDecompressor.cpp.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
-; verilator/optimized/V3PreProc.cpp.ll
 ; wolfssl/optimized/rsa.c.ll
 ; zstd/optimized/divsufsort.c.ll
 ; zstd/optimized/zstd_v01.c.ll
@@ -303,9 +312,8 @@ entry:
   ret ptr %6
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; opencv/optimized/deriche_filter.cpp.ll
-; opencv/optimized/optflowgf.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000012(ptr %0, i64 %1, i32 %2) #0 {
 entry:

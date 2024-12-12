@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; velox/optimized/Utf8Utils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000154(i32 %0, i32 %1) #0 {
+define i1 @func00000000000002a4(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 12
   %3 = and i32 %2, 196608
@@ -16,7 +16,7 @@ entry:
 ; abc/optimized/aigTsim.c.ll
 ; abc/optimized/saigPhase.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000254(i32 %0, i32 %1) #0 {
+define i1 @func00000000000004a4(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 1
   %3 = and i32 %2, 2
@@ -30,7 +30,7 @@ entry:
 ; node/optimized/simdutf.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000354(i32 %0, i32 %1) #0 {
+define i1 @func00000000000006a4(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 12
   %3 = and i32 %2, 196608
@@ -58,7 +58,7 @@ entry:
 ; llvm/optimized/UninitializedValues.cpp.ll
 ; llvm/optimized/UnreachableCodeChecker.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001a4(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 2
   %3 = and i32 %2, 12

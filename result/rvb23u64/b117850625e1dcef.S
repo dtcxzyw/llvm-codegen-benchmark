@@ -1,4 +1,4 @@
-func0000000000000120:                   # @func0000000000000120
+func0000000000000220:                   # @func0000000000000220
 	sltu	a2, a0, a2
 	czero.nez	a1, a1, a2
 	czero.eqz	a2, a0, a2
@@ -6,7 +6,7 @@ func0000000000000120:                   # @func0000000000000120
 	zext.w	a1, a1
 	sub	a0, a0, a1
 	ret
-func0000000000000121:                   # @func0000000000000121
+func00000000000002a1:                   # @func00000000000002a1
 	sltu	a2, a0, a2
 	czero.nez	a1, a1, a2
 	czero.eqz	a2, a0, a2

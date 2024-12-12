@@ -4,7 +4,7 @@
 ; ruby/optimized/prism.ll
 ; slurm/optimized/job_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000058(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2064
   %4 = icmp eq i32 %3, 2064
@@ -24,7 +24,7 @@ entry:
 ; ruby/optimized/prism.ll
 ; zxing/optimized/QRBitMatrixParser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000302(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2048
   %4 = icmp ne i32 %3, 0
@@ -34,12 +34,16 @@ entry:
   ret i1 %7
 }
 
-; 18 occurrences:
+; 22 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; c3c/optimized/sema_initializers.c.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
 ; folly/optimized/Uri.cpp.ll
+; hwloc/optimized/topology-xml.ll
+; icu/optimized/uresbund.ll
 ; linux/optimized/sg.ll
 ; llvm/optimized/ConstantFolding.cpp.ll
 ; llvm/optimized/SemaCast.cpp.ll
@@ -54,7 +58,7 @@ entry:
 ; velox/optimized/URLFunctions.cpp.ll
 ; z3/optimized/dl_mk_scale.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000042(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65535
   %4 = icmp eq i32 %3, 11
@@ -68,7 +72,7 @@ entry:
 ; linux/optimized/page_alloc.ll
 ; php/optimized/pcre2_compile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000030(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000050(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 524288
   %4 = icmp eq i32 %3, 0
@@ -82,7 +86,7 @@ entry:
 ; darktable/optimized/SamsungV1Decompressor.cpp.ll
 ; darktable/optimized/SonyArw1Decompressor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000190(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000310(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = icmp ne i32 %3, 0
@@ -95,7 +99,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-do-irp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000048(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -2
   %4 = icmp eq i32 %3, 400
@@ -108,7 +112,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/page_alloc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000118(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 8192
   %4 = icmp ne i32 %3, 0
@@ -121,7 +125,7 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/theory_array_full.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000102(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -2
   %4 = icmp eq i32 %3, 4
@@ -134,7 +138,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/grfmt_pxm.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000318(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 7
   %4 = icmp ne i32 %3, 0

@@ -4,6 +4,7 @@
 ; abseil-cpp/optimized/numbers.cc.ll
 ; arrow/optimized/bignum.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/to_chars.ll
 ; c3c/optimized/parse_expr.c.ll
 ; clamav/optimized/htmlnorm.c.ll
 ; clamav/optimized/sigtool.c.ll
@@ -32,7 +33,6 @@
 ; linux/optimized/blk-iocost.ll
 ; linux/optimized/dcache.ll
 ; linux/optimized/drm_gem.ll
-; linux/optimized/head64.ll
 ; linux/optimized/i915_gem_ttm.ll
 ; linux/optimized/iov_iter.ll
 ; linux/optimized/iterator.ll
@@ -125,7 +125,7 @@ define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 29
   %3 = trunc i64 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -341,16 +341,17 @@ define i32 @func000000000000000c(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
-; 433 occurrences:
+; 437 occurrences:
 ; abc/optimized/cuddTable.c.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; arrow/optimized/light_array.cc.ll
 ; assimp/optimized/LWOLoader.cpp.ll
 ; assimp/optimized/SIBImporter.cpp.ll
+; boost/optimized/to_chars.ll
 ; bullet3/optimized/btCollisionWorld.ll
 ; bullet3/optimized/btCollisionWorldImporter.ll
 ; bullet3/optimized/btSoftBody.ll
@@ -516,6 +517,7 @@ entry:
 ; llvm/optimized/X86OptimizeLEAs.cpp.ll
 ; llvm/optimized/X86RegisterInfo.cpp.ll
 ; luau/optimized/lmathlib.cpp.ll
+; lvgl/optimized/lv_span.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meshlab/optimized/paintbox.cpp.ll
 ; minetest/optimized/CGUIEditBox.cpp.ll
@@ -776,6 +778,8 @@ entry:
 ; z3/optimized/theory_pb.cpp.ll
 ; z3/optimized/theory_str_mc.cpp.ll
 ; z3/optimized/theory_str_regex.cpp.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
+; zed-rs/optimized/bwf7odsfkes1o9vw37iz67e4b.ll
 ; zstd/optimized/fastcover.c.ll
 ; zstd/optimized/zdict.c.ll
 ; zstd/optimized/zstd_ldm.c.ll
@@ -784,7 +788,7 @@ define i32 @func0000000000000008(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -796,13 +800,15 @@ define i32 @func000000000000001d(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 1
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
-; 15 occurrences:
-; abc/optimized/dauCount.c.ll
+; 18 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; darktable/optimized/Cr2Decompressor.cpp.ll
 ; darktable/optimized/DngDecoder.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
@@ -811,6 +817,7 @@ entry:
 ; linux/optimized/intel_dpll.ll
 ; linux/optimized/lib.ll
 ; linux/optimized/vsprintf.ll
+; lvgl/optimized/lv_draw_image.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; openjdk/optimized/multiVis.ll
 ; ruby/optimized/util.ll
@@ -821,11 +828,11 @@ define i32 @func000000000000000d(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 52
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
-; 379 occurrences:
+; 381 occurrences:
 ; abc/optimized/cuddSat.c.ll
 ; abc/optimized/utilIsop.c.ll
 ; bullet3/optimized/b3File.ll
@@ -916,6 +923,8 @@ entry:
 ; lief/optimized/x509.cpp.ll
 ; llvm/optimized/DeltaTree.cpp.ll
 ; luau/optimized/DenseHash.test.cpp.ll
+; lvgl/optimized/lv_draw_sw_line.ll
+; lvgl/optimized/lv_span.ll
 ; meshlab/optimized/packing.cpp.ll
 ; minetest/optimized/CGUIButton.cpp.ll
 ; minetest/optimized/CGUICheckBox.cpp.ll
@@ -1210,11 +1219,11 @@ define i32 @func0000000000000009(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
-; 31 occurrences:
+; 32 occurrences:
 ; abc/optimized/giaUtil.c.ll
 ; brotli/optimized/encode.c.ll
 ; cmake/optimized/fse_compress.c.ll
@@ -1244,6 +1253,7 @@ entry:
 ; redis/optimized/ckh.ll
 ; redis/optimized/ckh.sym.ll
 ; z3/optimized/small_object_allocator.cpp.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
 ; zstd/optimized/fse_compress.c.ll
 ; zstd/optimized/zstd_compress_sequences.c.ll
 ; Function Attrs: nounwind
@@ -1251,7 +1261,7 @@ define i32 @func000000000000000f(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 63
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -1263,7 +1273,7 @@ define i32 @func000000000000000e(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   ret i32 %4
 }
 
@@ -1353,11 +1363,11 @@ define i32 @func0000000000000011(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = trunc i64 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
-; 266 occurrences:
+; 263 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
@@ -1371,7 +1381,6 @@ entry:
 ; assimp/optimized/PretransformVertices.cpp.ll
 ; assimp/optimized/Q3DLoader.cpp.ll
 ; assimp/optimized/XFileImporter.cpp.ll
-; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dynamic_compressed_row_sparse_matrix.cc.ll
 ; csmith/optimized/Bookkeeper.cpp.ll
 ; cvc5/optimized/core_solver.cpp.ll
@@ -1512,7 +1521,6 @@ entry:
 ; llvm/optimized/PoisonChecking.cpp.ll
 ; llvm/optimized/PreISelIntrinsicLowering.cpp.ll
 ; llvm/optimized/PredicateInfo.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RealtimeSanitizer.cpp.ll
 ; llvm/optimized/RegisterInfoEmitter.cpp.ll
 ; llvm/optimized/RelLookupTableConverter.cpp.ll
@@ -1558,11 +1566,9 @@ entry:
 ; luau/optimized/lapi.cpp.ll
 ; luau/optimized/lbuiltins.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
 ; meshlab/optimized/action_searcher.cpp.ll
-; meshlab/optimized/arap.cpp.ll
-; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_developability.cpp.ll
-; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
@@ -1592,6 +1598,7 @@ entry:
 ; ninja/optimized/dyndep.cc.ll
 ; nix/optimized/parser-tab.ll
 ; opencv/optimized/data.cpp.ll
+; opencv/optimized/find_ellipses.cpp.ll
 ; opencv/optimized/genericgfpoly.cpp.ll
 ; opencv/optimized/hough.cpp.ll
 ; opencv/optimized/pcaflow.cpp.ll
@@ -1629,7 +1636,7 @@ define i32 @func0000000000000010(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 4
   %3 = trunc i64 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -1669,7 +1676,7 @@ define i32 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 16
   %3 = trunc i64 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -1693,7 +1700,7 @@ define i32 @func000000000000001f(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 2
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -1705,7 +1712,7 @@ define i32 @func0000000000000018(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 4
   %3 = trunc nuw i64 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -1720,7 +1727,7 @@ define i32 @func000000000000001c(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 12
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -1738,7 +1745,7 @@ define i32 @func000000000000000b(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 12
   %3 = trunc nuw i64 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -1749,7 +1756,7 @@ define i32 @func0000000000000019(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 1
   %3 = trunc nuw i64 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -1760,7 +1767,7 @@ define i32 @func0000000000000013(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 1
   %3 = trunc i64 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -1771,7 +1778,7 @@ define i32 @func0000000000000002(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 13
   %3 = trunc i64 %2 to i32
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   ret i32 %4
 }
 
@@ -1782,7 +1789,7 @@ define i32 @func0000000000000012(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 1
   %3 = trunc i64 %2 to i32
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   ret i32 %4
 }
 
@@ -1794,7 +1801,7 @@ define i32 @func000000000000000a(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   ret i32 %4
 }
 

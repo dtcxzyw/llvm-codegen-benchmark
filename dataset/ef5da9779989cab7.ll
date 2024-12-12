@@ -1,14 +1,12 @@
 
-; 15 occurrences:
+; 13 occurrences:
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; gromacs/optimized/slasd4.cpp.ll
-; gromacs/optimized/slassq.cpp.ll
 ; gromacs/optimized/snrm2.cpp.ll
 ; minetest/optimized/mapgen_carpathian.cpp.ll
 ; nori/optimized/common.cpp.ll
 ; nori/optimized/rfilter.cpp.ll
-; openblas/optimized/ieeeck.c.ll
 ; opencv/optimized/flann_search_dataset.cpp.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll
 ; pbrt-v4/optimized/cameras.cpp.ll

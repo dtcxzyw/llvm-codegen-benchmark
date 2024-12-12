@@ -1,5 +1,18 @@
 
 ; 2 occurrences:
+; boost/optimized/alloc_lib.ll
+; hyperscan/optimized/match.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -8
+  %4 = and i64 %1, -8
+  %5 = add i64 %4, %3
+  %6 = icmp ult i64 %5, %0
+  ret i1 %6
+}
+
+; 2 occurrences:
 ; hdf5/optimized/H5HG.c.ll
 ; hyperscan/optimized/match.c.ll
 ; Function Attrs: nounwind
@@ -51,18 +64,6 @@ entry:
   %4 = and i64 %1, -4096
   %5 = add i64 %4, %3
   %6 = icmp ule i64 %5, %0
-  ret i1 %6
-}
-
-; 1 occurrences:
-; hyperscan/optimized/match.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = and i64 %2, -32
-  %4 = and i64 %1, 4294967295
-  %5 = add i64 %4, %3
-  %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
 

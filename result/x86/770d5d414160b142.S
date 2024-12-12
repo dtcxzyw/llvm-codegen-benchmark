@@ -1,4 +1,4 @@
-func00000000000002cc:                   # @func00000000000002cc
+func000000000000098c:                   # @func000000000000098c
 	movl	$16777488, %eax                 # imm = 0x1000110
 	btq	%rsi, %rax
 	setb	%cl
@@ -6,7 +6,7 @@ func00000000000002cc:                   # @func00000000000002cc
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000002c4:                   # @func00000000000002c4
+func0000000000000984:                   # @func0000000000000984
 	movl	$131024, %eax                   # imm = 0x1FFD0
 	btq	%rsi, %rax
 	setb	%cl

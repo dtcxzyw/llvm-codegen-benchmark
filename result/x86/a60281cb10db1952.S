@@ -16,9 +16,3 @@ func0000000000000009:                   # @func0000000000000009
 	setb	%al
 	shll	$2, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
-	xorl	%ecx, %ecx
-	cmpl	%esi, %edi
-	movl	$25, %eax
-	cmovbel	%ecx, %eax
-	retq

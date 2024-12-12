@@ -1,5 +1,5 @@
 
-; 124 occurrences:
+; 125 occurrences:
 ; fmt/optimized/enforce-checks-test.cc.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
@@ -124,6 +124,7 @@
 ; tev/optimized/StbiLdrImageSaver.cpp.ll
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0) #0 {
 entry:
@@ -179,7 +180,7 @@ entry:
   ret i1 %2
 }
 
-; 20 occurrences:
+; 21 occurrences:
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/gaussian_distribution_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
@@ -200,6 +201,7 @@ entry:
 ; proj/optimized/som.cpp.ll
 ; quickjs/optimized/quickjs.ll
 ; sqlite/optimized/sqlite3.ll
+; zed-rs/optimized/driumlpfhwzx6147be2mcsi4u.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i64 %0) #0 {
 entry:
@@ -282,12 +284,13 @@ entry:
   ret i1 %2
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; hermes/optimized/Operations.cpp.ll
 ; postgres/optimized/float.ll
 ; sqlite/optimized/sqlite3.ll
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000e(i64 %0) #0 {
 entry:

@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 36 occurrences:
 ; c3c/optimized/parse_global.c.ll
 ; cmake/optimized/vtls.c.ll
 ; cpython/optimized/mpdecimal.ll
@@ -19,6 +19,7 @@
 ; linux/optimized/tcp.ll
 ; linux/optimized/vgacon.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
+; lvgl/optimized/lv_span.ll
 ; openssl/optimized/libcommon-lib-ciphercommon_ccm.ll
 ; openssl/optimized/libcommon-lib-ciphercommon_gcm.ll
 ; openssl/optimized/libcrypto-lib-x_pubkey.ll
@@ -44,13 +45,14 @@ entry:
   ret i8 %4
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; abc/optimized/decompress.c.ll
 ; clamav/optimized/Bra.c.ll
 ; clamav/optimized/bzlib.c.ll
 ; cmake/optimized/decompress.c.ll
 ; cmake/optimized/powerpc.c.ll
 ; linux/optimized/fatent.ll
+; linux/optimized/ipv6_sockglue.ll
 ; linux/optimized/rsutils.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; llvm/optimized/Decl.cpp.ll
@@ -65,9 +67,8 @@ entry:
   ret i8 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; nuttx/optimized/pthread_mutexattr_setpshared.c.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; raylib/optimized/raudio.c.ll
@@ -80,8 +81,7 @@ entry:
   ret i8 %4
 }
 
-; 7 occurrences:
-; linux/optimized/evgpeinit.ll
+; 6 occurrences:
 ; linux/optimized/sd.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; luajit/optimized/lj_gc.ll

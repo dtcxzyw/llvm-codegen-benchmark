@@ -6,8 +6,8 @@ func0000000000000001:                   # @func0000000000000001
 	sbbq	%rax, %rax
 	orq	%rdi, %rax
 	retq
-func0000000000000021:                   # @func0000000000000021
-	incl	%esi
+func0000000000000041:                   # @func0000000000000041
+	notl	%esi
 	andl	$63, %esi
 	xorl	%eax, %eax
 	cmpl	$1, %esi

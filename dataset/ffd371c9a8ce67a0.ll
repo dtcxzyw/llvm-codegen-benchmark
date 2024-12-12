@@ -1,5 +1,5 @@
 
-%struct._zend_ssa_op.2681844 = type { i32, i32, i32, i32, i32, i32, i32, i32, i32 }
+%struct._zend_ssa_op.2794603 = type { i32, i32, i32, i32, i32, i32, i32, i32, i32 }
 
 ; 7 occurrences:
 ; abc/optimized/abcTiming.c.ll
@@ -10,13 +10,13 @@
 ; icu/optimized/usprep.ll
 ; php/optimized/zend_jit.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000086(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000107(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr nusw %struct._zend_ssa_op.2681844, ptr %0, i64 %2
+  %3 = getelementptr nusw %struct._zend_ssa_op.2794603, ptr %0, i64 %2
   %4 = icmp eq ptr %0, null
   %5 = select i1 %4, ptr null, ptr %3
-  %6 = getelementptr nusw i8, ptr %5, i64 4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 4
   ret ptr %6
 }
 
@@ -24,13 +24,13 @@ entry:
 ; linux/optimized/hooks.ll
 ; linux/optimized/selinuxfs.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = getelementptr i8, ptr %0, i64 %2
   %4 = icmp eq ptr %0, null
   %5 = select i1 %4, ptr null, ptr %3, !prof !0
-  %6 = getelementptr nusw i8, ptr %5, i64 28
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 28
   ret ptr %6
 }
 

@@ -3,7 +3,7 @@
 ; cpython/optimized/_testbuffer.ll
 ; folly/optimized/MemoryMapping.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000039(i32 %0, i1 %1) #0 {
+define i32 @func0000000000000059(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 2, i32 1
   %3 = or disjoint i32 %2, 32
@@ -22,7 +22,7 @@ entry:
 ; qemu/optimized/net_tap-linux.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000023(i32 %0, i1 %1) #0 {
+define i32 @func0000000000000043(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 1, i32 3
   %3 = or disjoint i32 %2, 4
@@ -36,7 +36,7 @@ entry:
 ; linux/optimized/tcp.ll
 ; php/optimized/zend_inference.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i32 %0, i1 %1) #0 {
+define i32 @func0000000000000042(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 0, i32 -1073741760
   %3 = or disjoint i32 %2, 16
@@ -63,11 +63,11 @@ entry:
 ; eastl/optimized/TestBitset.cpp.ll
 ; z3/optimized/util.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000029(i32 %0, i1 %1) #0 {
+define i32 @func0000000000000069(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 0, i32 16
   %3 = or disjoint i32 %2, 8
-  %4 = icmp ult i32 %0, 256
+  %4 = icmp samesign ult i32 %0, 256
   %5 = select i1 %4, i32 %2, i32 %3
   %6 = or disjoint i32 %5, 4
   ret i32 %6

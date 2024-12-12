@@ -1,12 +1,13 @@
 
-%"struct.OT::VarRegionAxis.2616094" = type { %"struct.OT::HBFixed.163.2616095", %"struct.OT::HBFixed.163.2616095", %"struct.OT::HBFixed.163.2616095" }
-%"struct.OT::HBFixed.163.2616095" = type { %"struct.OT::IntType.148.2616096" }
-%"struct.OT::IntType.148.2616096" = type { %struct.BEInt.149.2616097 }
-%struct.BEInt.149.2616097 = type { [2 x i8] }
+%"struct.OT::VarRegionAxis.2729548" = type { %"struct.OT::HBFixed.163.2729549", %"struct.OT::HBFixed.163.2729549", %"struct.OT::HBFixed.163.2729549" }
+%"struct.OT::HBFixed.163.2729549" = type { %"struct.OT::IntType.148.2729550" }
+%"struct.OT::IntType.148.2729550" = type { %struct.BEInt.149.2729551 }
+%struct.BEInt.149.2729551 = type { [2 x i8] }
 
-; 3 occurrences:
+; 4 occurrences:
 ; oiio/optimized/rlaoutput.cpp.ll
 ; opencv/optimized/filter.dispatch.cpp.ll
+; pbrt-v4/optimized/image.cpp.ll
 ; ruby/optimized/regexec.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(ptr %0, i32 %1, i32 %2) #0 {
@@ -17,7 +18,7 @@ entry:
   ret ptr %5
 }
 
-; 217 occurrences:
+; 224 occurrences:
 ; abc/optimized/cuddLCache.c.ll
 ; abc/optimized/wlcSim.c.ll
 ; arrow/optimized/compare_internal.cc.ll
@@ -54,7 +55,6 @@ entry:
 ; clamav/optimized/rs16.cpp.ll
 ; coremark/optimized/core_main.c.ll
 ; darktable/optimized/JpegDecompressor.cpp.ll
-; darktable/optimized/jpeg.c.ll
 ; draco/optimized/kd_tree_attributes_encoder.cc.ll
 ; draco/optimized/point_cloud_builder.cc.ll
 ; faiss/optimized/PolysemousTraining.cpp.ll
@@ -72,6 +72,7 @@ entry:
 ; git/optimized/revision.ll
 ; graphviz/optimized/solve.c.ll
 ; graphviz/optimized/spring_electrical.c.ll
+; gromacs/optimized/grompp.cpp.ll
 ; gromacs/optimized/lmmin.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-static.cc.ll
@@ -133,6 +134,13 @@ entry:
 ; llvm/optimized/VectorCombine.cpp.ll
 ; llvm/optimized/WhitespaceManager.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_array.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_draw_buf.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; lvgl/optimized/lv_draw_sw_img.ll
+; lvgl/optimized/lv_freetype_image.ll
+; lvgl/optimized/lv_table.ll
 ; memcached/optimized/memcached-slabs.ll
 ; memcached/optimized/memcached_debug-slabs.ll
 ; meshlab/optimized/baseio.cpp.ll
@@ -236,11 +244,11 @@ entry:
 ; z3/optimized/substitution_tree.cpp.ll
 ; z3/optimized/upolynomial_factorization.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw float, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw float, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -249,16 +257,15 @@ entry:
 ; ipopt/optimized/IpDenseSymMatrix.ll
 ; sundials/optimized/sunnonlinsol_fixedpoint.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000001b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw double, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw double, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 52 occurrences:
-; arrow/optimized/row_internal.cc.ll
+; 46 occurrences:
 ; cpython/optimized/Hacl_Hash_SHA3.ll
 ; darktable/optimized/introspection_rawprepare.c.ll
 ; draco/optimized/kd_tree_attributes_encoder.cc.ll
@@ -273,10 +280,7 @@ entry:
 ; linux/optimized/drm_format_helper.ll
 ; linux/optimized/hda_auto_parser.ll
 ; linux/optimized/hda_codec.ll
-; linux/optimized/hda_sysfs.ll
-; linux/optimized/hdac_regmap.ll
 ; linux/optimized/kfifo.ll
-; linux/optimized/memattr.ll
 ; linux/optimized/params.ll
 ; linux/optimized/perfmon.ll
 ; linux/optimized/regcache-rbtree.ll
@@ -292,7 +296,6 @@ entry:
 ; oiio/optimized/Writer.cpp.ll
 ; openblas/optimized/dlatrs3.c.ll
 ; opencv/optimized/stereo_binary_bm.cpp.ll
-; openjdk/optimized/buildOopMap.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
 ; qemu/optimized/block_parallels.c.ll
@@ -308,7 +311,6 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wireshark/optimized/packet-tftp.c.ll
-; z3/optimized/mpfx.cpp.ll
 ; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
@@ -319,7 +321,8 @@ entry:
   ret ptr %5
 }
 
-; 100 occurrences:
+; 101 occurrences:
+; abc/optimized/abcExact.c.ll
 ; abc/optimized/absDup.c.ll
 ; abc/optimized/cecSat.c.ll
 ; abc/optimized/cecSatG.c.ll
@@ -329,7 +332,6 @@ entry:
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/kitCloud.c.ll
 ; bullet3/optimized/btMLCPSolver.ll
-; ceres/optimized/schur_eliminator_d_d_d.cc.ll
 ; clamav/optimized/pe_icons.c.ll
 ; darktable/optimized/Cr2sRawInterpolator.cpp.ll
 ; darktable/optimized/CrwDecompressor.cpp.ll
@@ -350,6 +352,7 @@ entry:
 ; gromacs/optimized/domdec_constraints.cpp.ll
 ; gromacs/optimized/forcerec.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-static.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hyperscan/optimized/stream_compress.c.ll
@@ -378,7 +381,6 @@ entry:
 ; ncnn/optimized/mat_pixel.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; oiio/optimized/paramlist.cpp.ll
-; openblas/optimized/dtfsm.c.ll
 ; opencv/optimized/array.cpp.ll
 ; opencv/optimized/bgfg_KNN.cpp.ll
 ; opencv/optimized/bitmatrix.cpp.ll
@@ -398,6 +400,7 @@ entry:
 ; opencv/optimized/stereosgbm.cpp.ll
 ; openexr/optimized/ImfB44Compressor.cpp.ll
 ; openexr/optimized/internal_piz.c.ll
+; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/hb-ot-var.ll
 ; openjdk/optimized/pngread.ll
@@ -421,11 +424,11 @@ entry:
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; zxing/optimized/QRMatrixUtil.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw ptr, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw ptr, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -462,7 +465,7 @@ entry:
   ret ptr %5
 }
 
-; 14 occurrences:
+; 16 occurrences:
 ; assimp/optimized/TerragenLoader.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-ot-cff2-table.cc.ll
@@ -470,6 +473,8 @@ entry:
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; libwebp/optimized/quant_levels_dec_utils.c.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; openjdk/optimized/hb-ot-cff2-table.ll
 ; openjdk/optimized/hb-ot-font.ll
@@ -478,11 +483,11 @@ entry:
 ; openjdk/optimized/hb-ot-metrics.ll
 ; openjdk/optimized/hb-ot-var.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000013(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw %"struct.OT::VarRegionAxis.2616094", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.OT::VarRegionAxis.2729548", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -507,15 +512,15 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw ptr, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw ptr, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 38 occurrences:
+; 39 occurrences:
 ; darktable/optimized/Cr2Decompressor.cpp.ll
 ; darktable/optimized/Cr2sRawInterpolator.cpp.ll
 ; darktable/optimized/DeflateDecompressor.cpp.ll
@@ -545,6 +550,7 @@ entry:
 ; ncnn/optimized/glu.cpp.ll
 ; ocio/optimized/FileFormatIridasCube.cpp.ll
 ; opencv/optimized/ann_mlp.cpp.ll
+; opencv/optimized/box_filter.dispatch.cpp.ll
 ; opencv/optimized/conv_depthwise.cpp.ll
 ; opencv/optimized/datastructs.cpp.ll
 ; opencv/optimized/filter.dispatch.cpp.ll
@@ -555,11 +561,11 @@ entry:
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; zxing/optimized/HybridBinarizer.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw float, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw float, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -582,11 +588,11 @@ entry:
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; tinyrenderer/optimized/tgaimage.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i16, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i16, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -603,7 +609,8 @@ entry:
   ret ptr %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; darktable/optimized/JpegDecompressor.cpp.ll
 ; darktable/optimized/RawImageDataFloat.cpp.ll
 ; openblas/optimized/dorgtsqr.c.ll
 ; opencv/optimized/resize.cpp.ll
@@ -613,7 +620,7 @@ define ptr @func000000000000000c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr float, ptr %0, i64 %4
+  %5 = getelementptr i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -621,11 +628,11 @@ entry:
 ; graphviz/optimized/solve.c.ll
 ; gromacs/optimized/lmmin.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000016(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000017(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw double, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw double, ptr %0, i64 %4
   ret ptr %5
 }
 

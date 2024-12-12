@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 34 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -19,7 +19,6 @@
 ; opencv/optimized/freetype.cpp.ll
 ; opencv/optimized/pipeline_modeling_tool.cpp.ll
 ; postgres/optimized/orderedsetaggs.ll
-; qemu/optimized/system_cpu-throttle.c.ll
 ; quickjs/optimized/quickjs.ll
 ; rocksdb/optimized/blob_db_impl.cc.ll
 ; tev/optimized/Channel.cpp.ll
@@ -112,36 +111,54 @@ entry:
   ret i1 %2
 }
 
-; 7 occurrences:
+; 5 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; c3c/optimized/project.c.ll
-; pocketpy/optimized/modules.cpp.ll
-; pocketpy/optimized/pocketpy.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(double %0) #0 {
+define i1 @func0000000000000014(double %0) #0 {
 entry:
   %1 = fptosi double %0 to i64
-  %2 = icmp ult i64 %1, 1024
+  %2 = icmp samesign ult i64 %1, 1024
   ret i1 %2
 }
 
-; 8 occurrences:
+; 6 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; c3c/optimized/project.c.ll
 ; jsonnet/optimized/vm.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(double %0) #0 {
+entry:
+  %1 = fptosi double %0 to i64
+  %2 = icmp samesign ugt i64 %1, 1048576
+  ret i1 %2
+}
+
+; 2 occurrences:
 ; openusd/optimized/bakeSkinning.cpp.ll
 ; quantlib/optimized/analytichestonengine.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(double %0) #0 {
 entry:
   %1 = fptosi double %0 to i64
-  %2 = icmp ugt i64 %1, 1048576
+  %2 = icmp ugt i64 %1, 1152921504606846975
+  ret i1 %2
+}
+
+; 2 occurrences:
+; pocketpy/optimized/modules.cpp.ll
+; pocketpy/optimized/pocketpy.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(double %0) #0 {
+entry:
+  %1 = fptosi double %0 to i64
+  %2 = icmp ult i64 %1, 1152921504606846976
   ret i1 %2
 }
 

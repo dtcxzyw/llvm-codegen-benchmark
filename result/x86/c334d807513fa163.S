@@ -1,4 +1,4 @@
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	movl	%edx, %eax
 	orb	$16, %al
 	movzbl	%al, %ecx
@@ -10,7 +10,7 @@ func0000000000000034:                   # @func0000000000000034
 	movzbl	%al, %eax
 	cmovael	%ecx, %eax
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	movl	%edx, %eax
 	orb	$8, %al
 	movzbl	%al, %ecx

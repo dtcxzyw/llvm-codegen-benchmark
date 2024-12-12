@@ -1,8 +1,6 @@
 
-; 8 occurrences:
+; 6 occurrences:
 ; abc/optimized/dauNpn2.c.ll
-; abc/optimized/ifDec08.c.ll
-; abc/optimized/ifDec10.c.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; linux/optimized/filetable.ll
 ; linux/optimized/rsrc.ll

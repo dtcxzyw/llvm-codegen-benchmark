@@ -1,7 +1,11 @@
 
-; 116 occurrences:
+; 119 occurrences:
 ; abc/optimized/cnfPost.c.ll
-; abc/optimized/giaEra.c.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/test_codecvt.ll
+; boost/optimized/test_fs.ll
 ; clamav/optimized/filtering.c.ll
 ; clamav/optimized/matcher-pcre.c.ll
 ; cmake/optimized/cmCTestUpdateHandler.cxx.ll
@@ -37,10 +41,8 @@
 ; linux/optimized/hexdump.ll
 ; linux/optimized/kbuf.ll
 ; linux/optimized/maple_tree.ll
-; linux/optimized/nfs3xdr.ll
 ; linux/optimized/shmem.ll
 ; linux/optimized/swap_state.ll
-; linux/optimized/utbuffer.ll
 ; linux/optimized/xarray.ll
 ; llvm/optimized/Attributor.cpp.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
@@ -116,6 +118,7 @@
 ; wireshark/optimized/packet_list_model.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; wolfssl/optimized/suites.c.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i1 %1, i1 %2) #0 {
 entry:

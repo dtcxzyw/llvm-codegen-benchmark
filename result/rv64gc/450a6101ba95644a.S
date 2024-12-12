@@ -14,7 +14,8 @@ func000000000000001b:                   # @func000000000000001b
 	li	a1, 100
 	mul	a0, a0, a1
 	srli	a0, a0, 31
-	andi	a0, a0, -2
+	srliw	a0, a0, 1
+	slli	a0, a0, 1
 	ret
 func0000000000000000:                   # @func0000000000000000
 	slli	a1, a0, 4

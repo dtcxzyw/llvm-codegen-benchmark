@@ -1,5 +1,5 @@
 
-; 36 occurrences:
+; 37 occurrences:
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/numbers.cc.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
@@ -7,6 +7,7 @@
 ; abseil-cpp/optimized/time_zone_libc.cc.ll
 ; assimp/optimized/glTFCommon.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/src.ll
 ; cmake/optimized/cmCommandArgumentParser.cxx.ll
 ; cmake/optimized/cmExprParser.cxx.ll
 ; cmake/optimized/cmFortranParser.cxx.ll
@@ -44,8 +45,9 @@ entry:
   ret i64 %3
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
+; boost/optimized/src.ll
 ; icu/optimized/ucnv_ct.ll
 ; icu/optimized/ucnvhz.ll
 ; icu/optimized/uconv.ll

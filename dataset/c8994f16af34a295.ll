@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/hw_core_loader.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000041(i32 %0, i8 %1) #0 {
 entry:
   %2 = shl nuw i32 %0, 12
   %3 = icmp eq i8 %1, 4

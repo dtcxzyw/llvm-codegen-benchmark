@@ -12,16 +12,16 @@ func000000000000004f:                   # @func000000000000004f
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
+func000000000000007d:                   # @func000000000000007d
+	slli	a2, a2, 9
+	or	a0, a0, a2
+	slli	a1, a1, 14
+	or	a0, a0, a1
+	ret
 func000000000000003f:                   # @func000000000000003f
 	andi	a2, a2, 255
 	or	a1, a1, a2
 	slli	a1, a1, 3
-	or	a0, a0, a1
-	ret
-func000000000000007d:                   # @func000000000000007d
-	slli	a2, a2, 7
-	or	a0, a0, a2
-	slli	a1, a1, 14
 	or	a0, a0, a1
 	ret
 func000000000000007b:                   # @func000000000000007b

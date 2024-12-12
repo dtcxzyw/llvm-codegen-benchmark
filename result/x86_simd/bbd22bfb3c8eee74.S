@@ -9,7 +9,7 @@ func0000000000000006:                   # @func0000000000000006
 	vptestmd	%ymm2, %ymm2, %k2
 	vpbroadcastd	.LCPI0_0(%rip), %ymm1 {%k2} {z} # ymm1 {%k2} {z} = [292,292,292,292,292,292,292,292]
 	vpord	.LCPI0_1(%rip){1to8}, %ymm1, %ymm1 {%k1}
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.long	10                              # 0xa
@@ -57,5 +57,5 @@ func000000000000002b:                   # @func000000000000002b
 	vpbroadcastd	.LCPI3_0(%rip), %ymm1   # ymm1 = [671088640,671088640,671088640,671088640,671088640,671088640,671088640,671088640]
 	vpbroadcastd	.LCPI3_1(%rip), %ymm1 {%k2} # ymm1 {%k2} = [134217728,134217728,134217728,134217728,134217728,134217728,134217728,134217728]
 	vpord	.LCPI3_2(%rip){1to8}, %ymm1, %ymm1 {%k1}
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	retq

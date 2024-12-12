@@ -1,8 +1,7 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; mitsuba3/optimized/measured.cpp.ll
-; opencv/optimized/weighted_median_filter.cpp.ll
 ; pbrt-v4/optimized/lights.cpp.ll
 ; pbrt-v4/optimized/lightsamplers.cpp.ll
 ; raylib/optimized/rtextures.c.ll

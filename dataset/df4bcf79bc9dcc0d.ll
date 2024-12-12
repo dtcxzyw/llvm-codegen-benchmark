@@ -1,8 +1,7 @@
 
-; 90 occurrences:
+; 91 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/cuddTable.c.ll
-; abc/optimized/dauCanon.c.ll
 ; abc/optimized/giaGlitch.c.ll
 ; arrow/optimized/bignum.cc.ll
 ; arrow/optimized/message.cc.ll
@@ -18,6 +17,7 @@
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
 ; llvm/optimized/DbiStream.cpp.ll
 ; llvm/optimized/MergeICmps.cpp.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; oiio/optimized/exrinput.cpp.ll
 ; oiio/optimized/icooutput.cpp.ll
@@ -26,6 +26,7 @@
 ; opencv/optimized/fully_connected_layer.cpp.ll
 ; opencv/optimized/large_kinfu.cpp.ll
 ; opencv/optimized/perf_umat.cpp.ll
+; opencv/optimized/weighted_median_filter.cpp.ll
 ; openexr/optimized/ImfDeepTiledInputFile.cpp.ll
 ; openexr/optimized/ImfTiledInputFile.cpp.ll
 ; openexr/optimized/ImfTiledMisc.cpp.ll
@@ -111,7 +112,7 @@ entry:
   ret i64 %4
 }
 
-; 168 occurrences:
+; 179 occurrences:
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/cordz_info_statistics_test.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
@@ -280,6 +281,17 @@ entry:
 ; wireshark/optimized/log3gpp.c.ll
 ; wireshark/optimized/packet-rtps.c.ll
 ; xgboost/optimized/data.cc.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/2ehxywt5i46yjybqa8jmzydsx.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/7xoulo9o2q4wd1npp9yutbl3x.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
@@ -289,9 +301,8 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; opencv/optimized/weighted_median_filter.cpp.ll
-; pbrt-v4/optimized/bxdfs.cpp.ll
 ; qemu/optimized/block_qcow2.c.ll
 ; velox/optimized/NthValue.cpp.ll
 ; Function Attrs: nounwind

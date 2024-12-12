@@ -28,17 +28,15 @@ entry:
   ret i32 %3
 }
 
-; 4 occurrences:
-; gromacs/optimized/pdb2gmx.cpp.ll
+; 2 occurrences:
 ; miniaudio/optimized/unity.c.ll
-; opencv/optimized/color_yuv.dispatch.cpp.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i8 %0) #0 {
 entry:
-  %1 = xor i8 %0, 1
+  %1 = xor i8 %0, 16
   %2 = zext nneg i8 %1 to i32
-  %3 = add nuw nsw i32 %2, 1
+  %3 = add nuw nsw i32 %2, 16
   ret i32 %3
 }
 

@@ -45,6 +45,13 @@ func000000000000000b:                   # @func000000000000000b
 	or	a0, a0, a2
 	or	a0, a0, a1
 	ret
+func0000000000000008:                   # @func0000000000000008
+	slliw	a2, a2, 24
+	lui	a3, 4080
+	and	a1, a1, a3
+	or	a0, a0, a2
+	or	a0, a0, a1
+	ret
 func000000000000001b:                   # @func000000000000001b
 	slliw	a2, a2, 26
 	lui	a3, 16382

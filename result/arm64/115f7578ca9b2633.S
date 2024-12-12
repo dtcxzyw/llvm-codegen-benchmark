@@ -1,20 +1,18 @@
 func0000000000000055:                   // @func0000000000000055
 // %bb.0:                               // %entry
-	sabd	v3.4s, v3.4s, v5.4s
-	sabd	v2.4s, v2.4s, v4.4s
-	abs	v1.4s, v1.4s
-	abs	v0.4s, v0.4s
-	sub	v1.4s, v3.4s, v1.4s
-	sub	v0.4s, v2.4s, v0.4s
+	subs	w8, w1, w2
+	cneg	w8, w8, mi
+	cmp	w0, #0
+	cneg	w9, w0, mi
+	sub	w0, w8, w9
 	ret
                                         // -- End function
 func000000000000007d:                   // @func000000000000007d
 // %bb.0:                               // %entry
-	sabd	v3.4s, v3.4s, v5.4s
-	sabd	v2.4s, v2.4s, v4.4s
-	abs	v1.4s, v1.4s
-	abs	v0.4s, v0.4s
-	sub	v1.4s, v3.4s, v1.4s
-	sub	v0.4s, v2.4s, v0.4s
+	subs	w8, w1, w2
+	cneg	w8, w8, mi
+	cmp	w0, #0
+	cneg	w9, w0, mi
+	sub	w0, w8, w9
 	ret
                                         // -- End function

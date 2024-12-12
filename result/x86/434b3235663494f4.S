@@ -15,9 +15,10 @@ func0000000000000001:                   # @func0000000000000001
 	cmovel	%ecx, %eax
 	retq
 func0000000000000008:                   # @func0000000000000008
-	cmpb	$6, %sil
-	setae	%al
-	andb	%dil, %al
-	movzbl	%al, %eax
-	leal	118(%rax,%rax,4), %eax
+	xorl	%eax, %eax
+	cmpb	$15, %sil
+	movl	$10000, %ecx                    # imm = 0x2710
+	cmovbl	%ecx, %eax
+	testb	$1, %dil
+	cmovel	%ecx, %eax
 	retq

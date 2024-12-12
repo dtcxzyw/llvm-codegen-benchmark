@@ -1,5 +1,5 @@
 
-; 98 occurrences:
+; 97 occurrences:
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/ifMap.c.ll
 ; abc/optimized/mpmDsd.c.ll
@@ -97,7 +97,6 @@
 ; velox/optimized/WidthBucketArray.cpp.ll
 ; velox/optimized/Zip.cpp.ll
 ; velox/optimized/ZipWith.cpp.ll
-; z3/optimized/sat_aig_cuts.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:

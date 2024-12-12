@@ -2,7 +2,7 @@
 	.quad	-72340172838076673              # 0xfefefefefefefeff
 func0000000000000000:                   # @func0000000000000000
 	vpaddq	.LCPI0_0(%rip){1to4}, %ymm2, %ymm2
-	vpternlogq	$224, %ymm1, %ymm2, %ymm0 # ymm0 = ymm0 & (ymm2 | ymm1)
+	vpternlogq	$224, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 & (ymm1 | ymm2)
 	retq
 .LCPI1_0:
 	.quad	2048                            # 0x800

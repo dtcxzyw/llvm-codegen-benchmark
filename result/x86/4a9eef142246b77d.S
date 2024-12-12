@@ -8,17 +8,11 @@ func0000000000000003:                   # @func0000000000000003
 	cmoveq	%rcx, %rax
 	retq
 func0000000000000000:                   # @func0000000000000000
-	leaq	-65536(%rdx), %rcx
-	xorl	%eax, %eax
+	leaq	1(%rdx), %rax
 	testb	$1, %sil
-	cmoveq	%rcx, %rax
-	retq
-func0000000000000001:                   # @func0000000000000001
-	leaq	1024(%rdx), %rax
-	xorl	%ecx, %ecx
-	testb	$1, %sil
+	movl	$25, %ecx
 	cmoveq	%rax, %rcx
 	testb	$1, %dil
-	movl	$2048, %eax                     # imm = 0x800
+	movl	$23, %eax
 	cmoveq	%rcx, %rax
 	retq

@@ -1,6 +1,6 @@
 func0000000000000004:                   # @func0000000000000004
 	vpsllw	$3, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	vpmovwb	%ymm0, %xmm0
 	vzeroupper
 	retq

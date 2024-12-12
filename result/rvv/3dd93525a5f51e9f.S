@@ -29,5 +29,5 @@ func0000000000000001:                   # @func0000000000000001
 	vmerge.vim	v12, v12, 1, v0
 	vmv1r.v	v0, v11
 	vmerge.vim	v10, v12, 0, v0
-	vmul.vv	v8, v10, v8
+	vmul.vv	v8, v8, v10
 	ret

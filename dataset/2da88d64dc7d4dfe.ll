@@ -5,7 +5,7 @@
 ; ruby/optimized/rjit_c.ll
 ; ruby/optimized/thread.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000182(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000302(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = icmp eq i64 %0, 0
@@ -21,7 +21,7 @@ entry:
 ; llvm/optimized/LoopUtils.cpp.ll
 ; ruby/optimized/hash.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000022(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000042(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
   %3 = icmp eq i64 %0, 0
@@ -34,7 +34,7 @@ entry:
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000048(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
   %3 = icmp ult i64 %0, 8
@@ -53,7 +53,7 @@ entry:
 ; abseil-cpp/optimized/time_zone_libc.cc.ll
 ; llvm/optimized/Evaluator.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000058(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
   %3 = icmp ne i64 %0, 0
@@ -65,7 +65,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000188(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000308(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = icmp ult i64 %0, 8

@@ -9,7 +9,7 @@ define i32 @func000000000000000f(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = xor i1 %2, true
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   %6 = zext i1 %1 to i32
   %7 = add nuw nsw i32 %5, %6
   ret i32 %7
@@ -23,7 +23,7 @@ define i32 @func0000000000000005(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = xor i1 %2, true
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = zext i1 %1 to i32
   %7 = add nsw i32 %5, %6
   ret i32 %7
@@ -36,7 +36,7 @@ define i32 @func0000000000000000(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = xor i1 %2, true
   %4 = zext i1 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   %6 = zext i1 %1 to i32
   %7 = add i32 %5, %6
   ret i32 %7

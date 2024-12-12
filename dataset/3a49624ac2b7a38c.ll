@@ -1,5 +1,5 @@
 
-; 153 occurrences:
+; 151 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/FxchMan.c.ll
@@ -31,7 +31,6 @@
 ; abc/optimized/cecSatG.c.ll
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
-; abc/optimized/cswMan.c.ll
 ; abc/optimized/cuddTable.c.ll
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/dauNpn.c.ll
@@ -44,7 +43,6 @@
 ; abc/optimized/extraUtilPath.c.ll
 ; abc/optimized/fraClass.c.ll
 ; abc/optimized/fraigTable.c.ll
-; abc/optimized/fxuMatrix.c.ll
 ; abc/optimized/giaBalAig.c.ll
 ; abc/optimized/giaCone.c.ll
 ; abc/optimized/giaCut.c.ll
@@ -84,7 +82,6 @@
 ; abc/optimized/mpmMan.c.ll
 ; abc/optimized/mpmPre.c.ll
 ; abc/optimized/mpmTruth.c.ll
-; abc/optimized/nmApi.c.ll
 ; abc/optimized/nmTable.c.ll
 ; abc/optimized/nwkMerge.c.ll
 ; abc/optimized/saigIsoSlow.c.ll
@@ -118,6 +115,7 @@
 ; linux/optimized/xfrm_replay.ll
 ; llvm/optimized/PDBFileBuilder.cpp.ll
 ; lua/optimized/ltable.ll
+; lvgl/optimized/lv_chart.ll
 ; memcached/optimized/memcached-storage.ll
 ; memcached/optimized/memcached_debug-storage.ll
 ; minetest/optimized/serverenvironment.cpp.ll
@@ -131,7 +129,6 @@
 ; postgres/optimized/brin.ll
 ; postgres/optimized/print.ll
 ; qemu/optimized/block_vvfat.c.ll
-; qemu/optimized/e1000e.c.ll
 ; qemu/optimized/hw_acpi_erst.c.ll
 ; qemu/optimized/hw_net_rocker_rocker_desc.c.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
@@ -153,6 +150,7 @@
 ; z3/optimized/theory_char.cpp.ll
 ; z3/optimized/upolynomial.cpp.ll
 ; z3/optimized/upolynomial_factorization.cpp.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
@@ -161,17 +159,18 @@ entry:
   ret i32 %3
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; git/optimized/graph.ll
 ; graphviz/optimized/shortest.c.ll
 ; lightgbm/optimized/gbdt.cpp.ll
-; linux/optimized/head64.ll
 ; linux/optimized/rx.ll
 ; linux/optimized/sky2.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; oiio/optimized/psdinput.cpp.ll
+; opencv/optimized/convhull.cpp.ll
 ; openusd/optimized/catmarkPatchBuilder.cpp.ll
 ; openusd/optimized/tessellation.cpp.ll
+; recastnavigation/optimized/DetourNavMeshQuery.cpp.ll
 ; slurm/optimized/dist_tasks.ll
 ; yosys/optimized/qwp.ll
 ; zxing/optimized/DMDataBlock.cpp.ll
@@ -183,7 +182,7 @@ entry:
   ret i32 %3
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; arrow/optimized/strptime.c.ll
 ; gromacs/optimized/dgetri.cpp.ll
 ; gromacs/optimized/dormlq.cpp.ll
@@ -196,7 +195,6 @@ entry:
 ; linux/optimized/nl80211.ll
 ; llvm/optimized/Legalizer.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
-; openblas/optimized/dgetri.c.ll
 ; opencv/optimized/fed.cpp.ll
 ; openjdk/optimized/macroAssembler_x86.ll
 ; openjdk/optimized/zip_util.ll

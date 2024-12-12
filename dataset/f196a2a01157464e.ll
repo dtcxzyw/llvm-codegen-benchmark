@@ -211,13 +211,13 @@
 ; cvc5/optimized/vts_term_cache.cpp.ll
 ; llvm/optimized/SemaTemplate.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000003e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 536870911
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 16
-  %6 = getelementptr nusw ptr, ptr %5, i64 %4
-  %7 = icmp eq ptr %6, %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 16
+  %6 = getelementptr nusw nuw ptr, ptr %5, i64 %4
+  %7 = icmp eq ptr %0, %6
   ret i1 %7
 }
 
@@ -235,13 +235,13 @@ entry:
 ; protobuf/optimized/message_builder.cc.ll
 ; protobuf/optimized/message_builder_lite.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000181(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000381(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 12
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 12
   %6 = getelementptr i32, ptr %5, i64 %4
-  %7 = icmp eq ptr %6, %0
+  %7 = icmp eq ptr %0, %6
   ret i1 %7
 }
 
@@ -259,13 +259,13 @@ entry:
 ; cvc5/optimized/theory_uf_type_rules.cpp.ll
 ; cvc5/optimized/transition_inference.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001ac(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000003ec(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 67108863
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 16
-  %6 = getelementptr nusw ptr, ptr %5, i64 %4
-  %7 = icmp ne ptr %6, %0
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 16
+  %6 = getelementptr nusw nuw ptr, ptr %5, i64 %4
+  %7 = icmp ne ptr %0, %6
   ret i1 %7
 }
 

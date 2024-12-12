@@ -1,11 +1,11 @@
-func0000000000000151:                   # @func0000000000000151
+func00000000000002a1:                   # @func00000000000002a1
 	sarq	$3, %rdx
 	shlq	$6, %rsi
 	addq	%rdx, %rsi
 	cmpq	%rdi, %rsi
 	sete	%al
 	retq
-func000000000000015c:                   # @func000000000000015c
+func00000000000002ac:                   # @func00000000000002ac
 	sarq	$4, %rdx
 	shlq	$5, %rsi
 	addq	%rdx, %rsi

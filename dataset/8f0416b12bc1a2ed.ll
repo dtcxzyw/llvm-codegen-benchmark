@@ -267,7 +267,7 @@ entry:
   ret i32 %4
 }
 
-; 26 occurrences:
+; 27 occurrences:
 ; arrow/optimized/bignum.cc.ll
 ; arrow/optimized/compare_internal_avx2.cc.ll
 ; clamav/optimized/pe_icons.c.ll
@@ -283,6 +283,7 @@ entry:
 ; llvm/optimized/LoopUtils.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_scale.ll
 ; opencv/optimized/attr_value.pb.cc.ll
 ; opencv/optimized/function.pb.cc.ll
 ; opencv/optimized/graph.pb.cc.ll
@@ -338,9 +339,8 @@ entry:
   ret i32 %4
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; abc/optimized/amapMerge.c.ll
-; abc/optimized/giaBalLut.c.ll
 ; abc/optimized/ifSelect.c.ll
 ; cmake/optimized/ia64.c.ll
 ; llvm/optimized/AutoUpgrade.cpp.ll

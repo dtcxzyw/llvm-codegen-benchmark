@@ -6,7 +6,7 @@ func000000000000000c:                   # @func000000000000000c
 	setne	%al
 	andb	%dil, %al
 	retq
-func000000000000008c:                   # @func000000000000008c
+func000000000000010c:                   # @func000000000000010c
 	shlq	$3, %rdx
 	leaq	(%rdx,%rdx,2), %rax
 	shlq	$5, %rsi

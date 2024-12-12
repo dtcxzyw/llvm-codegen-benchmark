@@ -1,15 +1,17 @@
 
-; 6 occurrences:
+; 8 occurrences:
 ; abc/optimized/aigUtil.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/utilSort.c.ll
+; cpython/optimized/dtoa.ll
 ; mitsuba3/optimized/imageblock.cpp.ll
 ; nori/optimized/tabwidget.cpp.ll
 ; openjdk/optimized/sharedRuntimeTrans.ll
+; ruby/optimized/util.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = shl i32 %2, 1
+  %3 = shl i32 %2, 20
   %4 = add i32 %3, %1
   %5 = zext i32 %4 to i64
   %6 = shl nuw i64 %5, 32

@@ -24,8 +24,10 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001d(i32 %0, i32 %1) #0 {
 entry:

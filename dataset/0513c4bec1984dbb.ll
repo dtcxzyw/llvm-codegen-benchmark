@@ -12,7 +12,7 @@ entry:
   ret i64 %4
 }
 
-; 57 occurrences:
+; 65 occurrences:
 ; abseil-cpp/optimized/bind.cc.ll
 ; cmake/optimized/Base64.c.ll
 ; diesel-rs/optimized/3nhirlswgfgsoryk.ll
@@ -70,6 +70,14 @@ entry:
 ; yalantinglibs/optimized/timestamp.struct_pb.cc.ll
 ; yalantinglibs/optimized/type.struct_pb.cc.ll
 ; yalantinglibs/optimized/wrappers.struct_pb.cc.ll
+; zed-rs/optimized/1mwyngh2duuoqbqyg0d7k37yf.ll
+; zed-rs/optimized/2ehxywt5i46yjybqa8jmzydsx.ll
+; zed-rs/optimized/5u1fvsvawpjspuq123qb03vz8.ll
+; zed-rs/optimized/616rp2zngqhnd0pszesmvl987.ll
+; zed-rs/optimized/69ryzzuwe6uhdzky6991droy3.ll
+; zed-rs/optimized/6a257z75npqxppetnyj7rxh76.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/7for60ncc55q4u0jy3fqr6omg.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i8 %1) #0 {
 entry:
@@ -79,9 +87,10 @@ entry:
   ret i64 %4
 }
 
-; 30 occurrences:
+; 34 occurrences:
 ; abseil-cpp/optimized/bind.cc.ll
 ; arrow/optimized/bitmap_ops.cc.ll
+; boost/optimized/instantiate_cpp_exprgrammar.ll
 ; clamav/optimized/yara_grammar.c.ll
 ; faiss/optimized/utils.cpp.ll
 ; flatbuffers/optimized/flatc.cpp.ll
@@ -90,8 +99,7 @@ entry:
 ; linux/optimized/manager.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/BasicBlockSectionsProfileReader.cpp.ll
-; llvm/optimized/CGClass.cpp.ll
-; llvm/optimized/CGExpr.cpp.ll
+; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/MCCodeView.cpp.ll
 ; opencc/optimized/PhraseExtract.cpp.ll
@@ -110,6 +118,10 @@ entry:
 ; wireshark/optimized/mp2t.c.ll
 ; wireshark/optimized/tvbuff.c.ll
 ; wolfssl/optimized/ssl.c.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i8 %1) #0 {
 entry:

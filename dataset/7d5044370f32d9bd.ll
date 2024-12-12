@@ -228,11 +228,11 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i128 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i128 %1) #0 {
 entry:
   %2 = trunc i128 %1 to i64
   %3 = and i64 %2, 15
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 

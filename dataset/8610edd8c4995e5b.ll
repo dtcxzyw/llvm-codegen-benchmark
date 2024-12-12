@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 27 occurrences:
 ; arrow/optimized/builder.cc.ll
 ; arrow/optimized/key_hash.cc.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
@@ -12,6 +12,7 @@
 ; mold/optimized/arch-ppc32.cc.ll
 ; opencv/optimized/cap_mjpeg_decoder.cpp.ll
 ; opencv/optimized/erfilter.cpp.ll
+; opencv/optimized/weighted_median_filter.cpp.ll
 ; openjdk/optimized/ShapeSpanIterator.ll
 ; qemu/optimized/hw_ide_core.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
@@ -30,7 +31,7 @@
 define i64 @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = lshr i64 %3, 16
   ret i64 %4
 }
@@ -59,7 +60,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = lshr i64 %3, 16
   ret i64 %4
 }

@@ -34,35 +34,32 @@ func00000000000000a0:                   # @func00000000000000a0
 .LBB3_2:                                # %entry
 	addw	a0, a0, a1
 	ret
+func000000000000001f:                   # @func000000000000001f
+	sext.w	a2, a2
+	seqz	a2, a2
+	addi	a2, a2, -1
+	andi	a2, a2, 255
+	mul	a1, a2, a1
+	addw	a0, a0, a1
+	ret
 func0000000000000014:                   # @func0000000000000014
 	sext.w	a2, a2
 	lui	a3, 524288
-	bne	a2, a3, .LBB4_2
+	bne	a2, a3, .LBB5_2
 	neg	a1, a1
-.LBB4_2:                                # %entry
+.LBB5_2:                                # %entry
 	addw	a0, a0, a1
 	ret
 func000000000000001c:                   # @func000000000000001c
 	sext.w	a2, a2
 	li	a3, 2
-	beq	a2, a3, .LBB5_2
+	beq	a2, a3, .LBB6_2
 	li	a2, 3
 	mul	a1, a2, a1
 	addw	a0, a0, a1
 	ret
-.LBB5_2:
+.LBB6_2:
 	li	a2, 6
-	mul	a1, a2, a1
-	addw	a0, a0, a1
-	ret
-func000000000000001f:                   # @func000000000000001f
-	sext.w	a2, a2
-	lui	a3, 524304
-	addiw	a3, a3, -256
-	xor	a2, a2, a3
-	seqz	a2, a2
-	addi	a2, a2, -1
-	andi	a2, a2, 255
 	mul	a1, a2, a1
 	addw	a0, a0, a1
 	ret

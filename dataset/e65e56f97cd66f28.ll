@@ -20,7 +20,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 32
   %4 = ashr i32 %3, 6
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 

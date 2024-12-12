@@ -5,7 +5,7 @@
 ; rust-analyzer-rs/optimized/55rapmz9wj276hro.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i8 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000302(i8 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = select i1 %3, i1 %1, i1 false
@@ -20,7 +20,7 @@ entry:
 ; hermes/optimized/JSRegExp.cpp.ll
 ; hermes/optimized/RegexSerialization.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i1 %0, i8 %1, i32 %2) #0 {
+define i1 @func0000000000000318(i1 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = select i1 %3, i1 %0, i1 false

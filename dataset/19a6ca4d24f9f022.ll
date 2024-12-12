@@ -23,7 +23,7 @@ entry:
 }
 
 ; 8 occurrences:
-; linux/optimized/feat_ctl.ll
+; icu/optimized/collationfastlatin.ll
 ; linux/optimized/libata-sff.ll
 ; linux/optimized/memfd.ll
 ; llvm/optimized/X86Disassembler.cpp.ll

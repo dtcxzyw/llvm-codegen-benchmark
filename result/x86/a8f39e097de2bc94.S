@@ -1,4 +1,4 @@
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	subl	%edx, %esi
 	incl	%esi
 	cmpl	$3, %esi
@@ -11,7 +11,7 @@ func0000000000000006:                   # @func0000000000000006
 	sets	%al
 	orb	%dil, %al
 	retq
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	subl	%edx, %esi
 	addl	$-57344, %esi                   # imm = 0xFFFF2000
 	cmpl	$6400, %esi                     # imm = 0x1900

@@ -1,9 +1,10 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
+; lvgl/optimized/lv_draw_sw_border.ll
 ; minetest/optimized/reflowscan.cpp.ll
 ; openjdk/optimized/compile.ll
 ; ruby/optimized/prism.ll

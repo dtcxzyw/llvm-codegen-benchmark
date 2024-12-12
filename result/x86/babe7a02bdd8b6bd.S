@@ -1,6 +1,6 @@
 func0000000000000004:                   # @func0000000000000004
 	vmulss	%xmm2, %xmm2, %xmm2
-	vmulss	%xmm1, %xmm2, %xmm1
+	vmulss	%xmm2, %xmm1, %xmm1
 	vucomiss	%xmm0, %xmm1
 	seta	%al
 	retq

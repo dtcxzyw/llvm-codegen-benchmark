@@ -33,7 +33,7 @@ entry:
   ret i64 %4
 }
 
-; 43 occurrences:
+; 44 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; freetype/optimized/sfnt.c.ll
 ; freetype/optimized/type42.c.ll
@@ -77,6 +77,7 @@ entry:
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; wireshark/optimized/vwr.c.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -98,8 +99,7 @@ entry:
   ret i64 %4
 }
 
-; 19 occurrences:
-; linux/optimized/delay.ll
+; 18 occurrences:
 ; linux/optimized/dmar.ll
 ; linux/optimized/hpet.ll
 ; linux/optimized/io_apic.ll
@@ -126,7 +126,7 @@ entry:
   ret i64 %4
 }
 
-; 25 occurrences:
+; 26 occurrences:
 ; coreutils-rs/optimized/3ntjj58b904wujzh.ll
 ; delta-rs/optimized/2gd5h5hcnilezwzy.ll
 ; delta-rs/optimized/4zvphat0q9a964bz.ll
@@ -152,6 +152,7 @@ entry:
 ; redis/optimized/lua_cmsgpack.ll
 ; slurm/optimized/priority_multifactor.ll
 ; yosys/optimized/fstapi.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:

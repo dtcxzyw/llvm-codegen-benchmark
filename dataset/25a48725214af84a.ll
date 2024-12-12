@@ -1,7 +1,9 @@
 
-; 2 occurrences:
+; 4 occurrences:
 ; image-rs/optimized/34r8dryqmufipcqz.ll
 ; softposit-rs/optimized/oveg98n4r9tnk39.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001f(i32 %0, i16 %1) #0 {
 entry:
@@ -32,17 +34,6 @@ entry:
   %2 = zext i16 %1 to i32
   %3 = shl nuw nsw i32 %2, 1
   %4 = sub nuw i32 %0, %3
-  ret i32 %4
-}
-
-; 1 occurrences:
-; linux/optimized/rsmisc.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000c(i32 %0, i16 %1) #0 {
-entry:
-  %2 = zext i16 %1 to i32
-  %3 = shl nuw nsw i32 %2, 1
-  %4 = sub i32 %0, %3
   ret i32 %4
 }
 

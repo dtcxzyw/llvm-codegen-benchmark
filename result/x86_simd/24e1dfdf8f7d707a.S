@@ -17,7 +17,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
-func000000000000006c:                   # @func000000000000006c
+func00000000000000cc:                   # @func00000000000000cc
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpcmpltq	.LCPI0_0(%rip){1to4}, %ymm1, %k0
 	vpcmpneqb	.LCPI0_1(%rip), %xmm0, %k1
@@ -44,7 +44,7 @@ func000000000000006c:                   # @func000000000000006c
 	.zero	1
 	.zero	1
 	.zero	1
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpcmpltuq	.LCPI1_0(%rip){1to4}, %ymm1, %k0
 	vpcmpneqb	.LCPI1_1(%rip), %xmm0, %k1

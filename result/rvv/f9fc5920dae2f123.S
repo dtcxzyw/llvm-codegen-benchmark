@@ -5,21 +5,22 @@ func0000000000000000:                   # @func0000000000000000
 	vmacc.vx	v12, a0, v9
 	vmadd.vx	v8, a0, v12
 	ret
-func0000000000000050:                   # @func0000000000000050
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vnsrl.wi	v12, v10, 0
-	lui	a0, 1
-	addi	a0, a0, -496
-	vmacc.vx	v12, a0, v9
-	li	a0, 60
-	vmadd.vx	v8, a0, v12
-	ret
 func0000000000000300:                   # @func0000000000000300
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v12, v10, 0
 	lui	a0, 838115
 	addi	a0, a0, -687
 	vmacc.vx	v12, a0, v9
+	vmadd.vx	v8, a0, v12
+	ret
+func0000000000000050:                   # @func0000000000000050
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vnsrl.wi	v12, v10, 0
+	lui	a0, 10
+	addi	a0, a0, 1163
+	vmacc.vx	v12, a0, v9
+	lui	a0, 9310
+	addi	a0, a0, 474
 	vmadd.vx	v8, a0, v12
 	ret
 func0000000000000200:                   # @func0000000000000200

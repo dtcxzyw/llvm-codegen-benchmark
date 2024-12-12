@@ -1,5 +1,5 @@
 
-; 416 occurrences:
+; 419 occurrences:
 ; abc/optimized/abcCut.c.ll
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcHieNew.c.ll
@@ -35,6 +35,9 @@
 ; abc/optimized/msatClause.c.ll
 ; abc/optimized/rwrEva.c.ll
 ; abc/optimized/satInterP.c.ll
+; abc/optimized/satSolver.c.ll
+; abc/optimized/satSolver2.c.ll
+; abc/optimized/satSolver3.c.ll
 ; abc/optimized/simSymStr.c.ll
 ; abseil-cpp/optimized/escaping.cc.ll
 ; brotli/optimized/backward_references.c.ll
@@ -417,17 +420,16 @@
 ; zxing/optimized/BinaryBitmap.cpp.ll
 ; zxing/optimized/ReadBarcode.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 3
   %3 = and i32 %2, 63
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 61 occurrences:
-; abc/optimized/dauTree.c.ll
+; 63 occurrences:
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/ifTune.c.ll
 ; cpython/optimized/_codecs_iso2022.ll
@@ -466,6 +468,8 @@ entry:
 ; llvm/optimized/MachineInstr.cpp.ll
 ; llvm/optimized/MachineOperand.cpp.ll
 ; lua/optimized/lvm.ll
+; luajit/optimized/lj_strfmt.ll
+; luajit/optimized/lj_strfmt_dyn.ll
 ; luau/optimized/lvmexecute.cpp.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
 ; opencv/optimized/find_ellipses.cpp.ll
@@ -473,6 +477,7 @@ entry:
 ; openjdk/optimized/runTimeClassInfo.ll
 ; openjdk/optimized/systemDictionaryShared.ll
 ; php/optimized/zend_alloc.ll
+; postgres/optimized/bitmapset.ll
 ; postgres/optimized/clog.ll
 ; postgres/optimized/regis.ll
 ; postgres/optimized/spell.ll
@@ -498,7 +503,7 @@ entry:
   ret ptr %5
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; icu/optimized/bytestrie.ll
 ; jq/optimized/jv.ll
 ; llvm/optimized/LiveInterval.cpp.ll
@@ -507,14 +512,27 @@ entry:
 ; llvm/optimized/MachineVerifier.cpp.ll
 ; llvm/optimized/ScheduleDAGInstrs.cpp.ll
 ; mitsuba3/optimized/qmc.cpp.ll
+; opencv/optimized/chessboard.cpp.ll
 ; z3/optimized/smt_clause.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 1
   %3 = and i32 %2, 65535
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw ptr, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw ptr, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; opencv/optimized/chessboard.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000c(ptr %0, i32 %1) #0 {
+entry:
+  %2 = lshr exact i32 %1, 3
+  %3 = and i32 %2, 511
+  %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr i8, ptr %0, i64 %4
   ret ptr %5
 }
 

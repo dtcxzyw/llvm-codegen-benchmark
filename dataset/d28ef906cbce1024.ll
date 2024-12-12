@@ -1,5 +1,6 @@
 
-; 6 occurrences:
+; 7 occurrences:
+; meilisearch-rs/optimized/4rynht2gwvphprvy.ll
 ; rust-analyzer-rs/optimized/2ydioyxkoxez3z9r.ll
 ; rustfmt-rs/optimized/2iek5i6kf8wd1vt9.ll
 ; tls-rs/optimized/1pt3w3786vo2dyk0.ll
@@ -10,7 +11,7 @@
 define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 -3, %0
-  %3 = icmp ult i64 %2, %1
+  %3 = icmp ugt i64 %1, %2
   ret i1 %3
 }
 

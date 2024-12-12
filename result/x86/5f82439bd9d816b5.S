@@ -10,7 +10,7 @@ func0000000000000004:                   # @func0000000000000004
 	setae	%al
 	addl	%eax, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	cmpb	$10, %dil
 	movl	$48, %eax
 	sbbl	$-1, %eax

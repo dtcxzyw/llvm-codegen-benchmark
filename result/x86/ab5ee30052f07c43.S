@@ -5,3 +5,10 @@ func0000000000000006:                   # @func0000000000000006
 	shlq	$4, %rax
 	addq	%rdi, %rax
 	retq
+func0000000000000007:                   # @func0000000000000007
+	notq	%rdx
+	shrq	%rsi
+	addq	%rdx, %rsi
+	leaq	(%rsi,%rsi,2), %rax
+	leaq	(%rdi,%rax,8), %rax
+	retq

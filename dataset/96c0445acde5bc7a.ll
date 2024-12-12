@@ -20,12 +20,12 @@
 ; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
 ; wasmtime-rs/optimized/1jbxepb6u2xll6bg.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002a4(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000544(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %2, -1
   %4 = sext i1 %3 to i64
   %5 = getelementptr nusw { { { i64, ptr, {} }, i64 } }, ptr %1, i64 %4
-  %6 = icmp ugt ptr %5, %0
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 

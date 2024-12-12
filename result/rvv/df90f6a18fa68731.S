@@ -189,6 +189,17 @@ func0000000000000050:                   # @func0000000000000050
 	vmfeq.vf	v13, v8, fa5
 	vmor.mm	v0, v13, v12
 	ret
+func0000000000000192:                   # @func0000000000000192
+	lui	a0, 323584
+	fli.s	fa5, inf
+	vsetivli	zero, 16, e32, m4, ta, ma
+	vmflt.vf	v12, v8, fa5
+	vmfgt.vf	v13, v8, fa5
+	fmv.w.x	fa5, a0
+	vmfge.vf	v14, v8, fa5
+	vmor.mm	v8, v13, v12
+	vmorn.mm	v0, v14, v8
+	ret
 func00000000000001a6:                   # @func00000000000001a6
 	lui	a0, 323584
 	fmv.w.x	fa5, a0
@@ -216,11 +227,11 @@ func0000000000000146:                   # @func0000000000000146
 	vmfge.vf	v13, v8, fa5
 	vmorn.mm	v0, v12, v13
 	ret
-.LCPI25_0:
+.LCPI26_0:
 	.word	0x7f7fffff                      # float 3.40282347E+38
 func0000000000000058:                   # @func0000000000000058
-	lui	a0, %hi(.LCPI25_0)
-	flw	fa5, %lo(.LCPI25_0)(a0)
+	lui	a0, %hi(.LCPI26_0)
+	flw	fa5, %lo(.LCPI26_0)(a0)
 	fmv.w.x	fa4, zero
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vf	v12, v8, fa4

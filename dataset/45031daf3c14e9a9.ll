@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 33 occurrences:
 ; delta-rs/optimized/43y2svfstmvqcl15.ll
 ; duckdb/optimized/ub_duckdb_func_date.cpp.ll
 ; git/optimized/strbuf.ll
@@ -29,8 +29,6 @@
 ; ruby/optimized/iseq.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-btmesh.c.ll
-; wireshark/optimized/packet-ieee1609dot2.c.ll
-; wireshark/optimized/packet-its.c.ll
 ; wireshark/optimized/ws_strptime.c.ll
 ; zxing/optimized/PDFDetectionResult.cpp.ll
 ; zxing/optimized/PDFDetectionResultColumn.cpp.ll

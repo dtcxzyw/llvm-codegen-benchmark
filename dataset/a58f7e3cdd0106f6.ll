@@ -2,16 +2,17 @@
 ; 1 occurrences:
 ; ipopt/optimized/IpPiecewisePenalty.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000258(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func00000000000008a8(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -48
-  %4 = icmp uge ptr %3, %1
+  %4 = icmp ule ptr %1, %3
   %5 = icmp ugt i64 %0, 1
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
 }
 
-; 52 occurrences:
+; 53 occurrences:
+; boost/optimized/area.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; llvm/optimized/ASTImporter.cpp.ll
@@ -65,10 +66,10 @@ entry:
 ; opencc/optimized/louds-trie.cc.ll
 ; pbrt-v4/optimized/paramdict.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000024c(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000088c(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -4
-  %4 = icmp ugt ptr %3, %1
+  %4 = icmp ult ptr %1, %3
   %5 = icmp ne i64 %0, 0
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -80,10 +81,10 @@ entry:
 ; grpc/optimized/work_serializer.cc.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000248(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000888(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -16
-  %4 = icmp ugt ptr %3, %1
+  %4 = icmp ult ptr %1, %3
   %5 = icmp ugt i64 %0, 2048
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -92,10 +93,10 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/system_physmem.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000008c(i64 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 2048
-  %4 = icmp ugt ptr %3, %1
+  %4 = icmp ult ptr %1, %3
   %5 = icmp ne i64 %0, 0
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -106,27 +107,45 @@ entry:
 ; libuv/optimized/udp.c.ll
 ; node/optimized/udp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002c4(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000d94(i64 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 184
-  %4 = icmp ne ptr %3, %1
-  %5 = icmp ult i64 %0, 19
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 184
+  %4 = icmp ne ptr %1, %3
+  %5 = icmp samesign ult i64 %0, 19
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
 }
 
-; 5 occurrences:
+; 11 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
+; boost/optimized/benchmark_fstream.ll
+; boost/optimized/test_filebuf.ll
+; boost/optimized/test_fstream.ll
+; boost/optimized/test_fstream_special.ll
+; boost/optimized/test_ifstream.ll
+; boost/optimized/test_ofstream.ll
 ; cmake/optimized/udp.c.ll
 ; cvc5/optimized/quant_conflict_find.cpp.ll
 ; libuv/optimized/udp.c.ll
 ; node/optimized/udp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002cc(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000d8c(i64 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 184
-  %4 = icmp ne ptr %3, %1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 184
+  %4 = icmp ne ptr %1, %3
   %5 = icmp ne i64 %0, 0
+  %6 = select i1 %5, i1 %4, i1 false
+  ret i1 %6
+}
+
+; 1 occurrences:
+; abseil-cpp/optimized/container_test.cc.ll
+; Function Attrs: nounwind
+define i1 @func000000000000098c(i64 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -4
+  %4 = icmp ne ptr %1, %3
+  %5 = icmp ne i64 %0, 12
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
 }
@@ -134,10 +153,10 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestFixedString.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000214(i64 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000c24(i64 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 40
-  %4 = icmp eq ptr %3, %1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 40
+  %4 = icmp eq ptr %1, %3
   %5 = icmp ult i64 %0, 63
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6

@@ -18,7 +18,7 @@ func0000000000000000:                   # @func0000000000000000
 	vinserti128	$1, %xmm2, %ymm1, %ymm1
 	vpsrlq	$15, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 func000000000000000d:                   # @func000000000000000d
@@ -41,7 +41,7 @@ func000000000000000d:                   # @func000000000000000d
 	vinserti128	$1, %xmm2, %ymm1, %ymm1
 	vpsrlq	$51, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 func000000000000000c:                   # @func000000000000000c
@@ -64,6 +64,6 @@ func000000000000000c:                   # @func000000000000000c
 	vinserti128	$1, %xmm2, %ymm1, %ymm1
 	vpsrlq	$3, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
-	vpaddd	%xmm0, %xmm1, %xmm0
+	vpaddd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq

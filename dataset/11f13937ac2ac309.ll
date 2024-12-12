@@ -1,5 +1,5 @@
 
-; 118 occurrences:
+; 160 occurrences:
 ; abseil-cpp/optimized/bernoulli_distribution_test.cc.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/charconv_test.cc.ll
@@ -32,6 +32,49 @@
 ; abseil-cpp/optimized/uniform_helper_test.cc.ll
 ; abseil-cpp/optimized/uniform_real_distribution_test.cc.ll
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/copy_segment_point.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/difference_pl_pl.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_ring.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/intersection_pl_pl.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/partition.ll
+; boost/optimized/rational.ll
+; boost/optimized/relative_order.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/union_pl_pl.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
 ; casadi/optimized/cvodes.c.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; eastl/optimized/EAString.cpp.ll
@@ -48,12 +91,12 @@
 ; graphviz/optimized/position.c.ll
 ; graphviz/optimized/solve.c.ll
 ; graphviz/optimized/solve_VPSC.cpp.ll
-; gromacs/optimized/dlapy2.cpp.ll
 ; gromacs/optimized/dlas2.cpp.ll
 ; gromacs/optimized/dlasv2.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; jq/optimized/jv_aux.ll
 ; lua/optimized/lvm.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
@@ -85,7 +128,6 @@
 ; openjdk/optimized/jvmFlag.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; osqp/optimized/scaling.c.ll
 ; pbrt-v4/optimized/rgb2spec_opt.cpp.ll
 ; php/optimized/array.ll
 ; postgres/optimized/array_selfuncs.ll
@@ -126,12 +168,20 @@ entry:
   ret i1 %4
 }
 
-; 20 occurrences:
+; 28 occurrences:
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; eastl/optimized/EAString.cpp.ll
 ; gromacs/optimized/muParserInt.cpp.ll
 ; jq/optimized/jv_aux.ll
 ; lua/optimized/lvm.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; openblas/optimized/dgesvj.c.ll
 ; openblas/optimized/dgsvj0.c.ll
 ; openblas/optimized/dgsvj1.c.ll
@@ -155,7 +205,7 @@ entry:
   ret i1 %4
 }
 
-; 68 occurrences:
+; 67 occurrences:
 ; abseil-cpp/optimized/bernoulli_distribution_test.cc.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/charconv_test.cc.ll
@@ -214,7 +264,6 @@ entry:
 ; openssl/optimized/libcrypto-lib-bio_print.ll
 ; openssl/optimized/libcrypto-shlib-bio_print.ll
 ; openusd/optimized/ray.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; proj/optimized/grids.cpp.ll
 ; quantlib/optimized/blackformula.ll
 ; quantlib/optimized/cevrndcalculator.ll
@@ -274,7 +323,7 @@ entry:
   ret i1 %4
 }
 
-; 75 occurrences:
+; 73 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_2.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_3.cc.ll
@@ -326,7 +375,6 @@ entry:
 ; ocio/optimized/MatrixOpData.cpp.ll
 ; openblas/optimized/dbdsqr.c.ll
 ; openblas/optimized/dbdsvdx.c.ll
-; openblas/optimized/ddisna.c.ll
 ; openblas/optimized/dgejsv.c.ll
 ; openblas/optimized/dgesvj.c.ll
 ; openblas/optimized/dlaic1.c.ll
@@ -341,7 +389,6 @@ entry:
 ; opencv/optimized/smooth.dispatch.cpp.ll
 ; openusd/optimized/evalUtils.cpp.ll
 ; postgres/optimized/geo_ops.ll
-; proj/optimized/cs2cs.cpp.ll
 ; proj/optimized/geodesic.c.ll
 ; quantlib/optimized/fixedlocalvolsurface.ll
 ; quantlib/optimized/goldstein.ll
@@ -358,9 +405,30 @@ entry:
   ret i1 %4
 }
 
-; 92 occurrences:
+; 115 occurrences:
 ; abc/optimized/cuddPriority.c.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/partition.ll
+; boost/optimized/rational.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; casadi/optimized/cvodea.c.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/idaa.c.ll
@@ -425,6 +493,7 @@ entry:
 ; quantlib/optimized/gaussiannoncentralchisquaredpolynomial.ll
 ; quantlib/optimized/hestonprocess.ll
 ; quantlib/optimized/mcpagodaengine.ll
+; quantlib/optimized/perturbativebarrieroptionengine.ll
 ; quantlib/optimized/qdfpamericanengine.ll
 ; quantlib/optimized/qdplusamericanengine.ll
 ; quantlib/optimized/squarerootprocessrndcalculator.ll
@@ -446,6 +515,7 @@ entry:
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; wireshark/optimized/sequence_dialog.cpp.ll
 ; yoga/optimized/PixelGrid.cpp.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; zfp/optimized/encode1d.c.ll
 ; zfp/optimized/encode2d.c.ll
 ; zfp/optimized/encode3d.c.ll
@@ -474,11 +544,31 @@ entry:
   ret i1 %4
 }
 
-; 37 occurrences:
+; 57 occurrences:
 ; abc/optimized/cuddPriority.c.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/partition.ll
+; boost/optimized/rational.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; flac/optimized/lpc.c.ll
 ; graphviz/optimized/lu.c.ll
 ; gromacs/optimized/dlaebz.cpp.ll
@@ -542,14 +632,13 @@ entry:
   ret i1 %4
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; hermes/optimized/DataView.cpp.ll
 ; meshlab/optimized/orthogonal_procrustes.cpp.ll
 ; openusd/optimized/delegate.cpp.ll
 ; postgres/optimized/costsize.ll
 ; postgres/optimized/geo_ops.ll
 ; tinympc/optimized/tiny_api.cpp.ll
-; typst-rs/optimized/m09o5qr68f5khss.ll
 ; velox/optimized/ExprToSubfieldFilter.cpp.ll
 ; velox/optimized/Filter.cpp.ll
 ; velox/optimized/InPredicate.cpp.ll
@@ -585,9 +674,10 @@ entry:
   ret i1 %4
 }
 
-; 14 occurrences:
+; 15 occurrences:
+; boost/optimized/area_box_sg.ll
+; boost/optimized/get_turns_const.ll
 ; gromacs/optimized/dlaebz.cpp.ll
-; openblas/optimized/dgetsqrhrt.c.ll
 ; openblas/optimized/dhgeqz.c.ll
 ; openblas/optimized/dlaebz.c.ll
 ; openblas/optimized/dlag2.c.ll
@@ -604,7 +694,7 @@ entry:
 define i1 @func000000000000000a(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = select i1 %0, double %1, double %2
-  %4 = fcmp ole double %3, 0.000000e+00
+  %4 = fcmp ole double %3, 1.000000e-10
   ret i1 %4
 }
 

@@ -1,26 +1,16 @@
-func0000000000000364:                   // @func0000000000000364
+func00000000000006d4:                   // @func00000000000006d4
 // %bb.0:                               // %entry
-	mov	w8, #63                         // =0x3f
-	ushr	v0.4s, v0.4s, #6
-	dup	v3.2d, x8
-	add	v1.2d, v1.2d, v3.2d
-	add	v2.2d, v2.2d, v3.2d
-	shrn	v1.2s, v1.2d, #6
-	shrn2	v1.4s, v2.2d, #6
-	cmhi	v0.4s, v1.4s, v0.4s
-	xtn	v0.4h, v0.4s
+	add	x8, x1, #63
+	lsr	x8, x8, #6
+	cmp	w8, w0, lsr #6
+	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000368:                   // @func0000000000000368
+func00000000000006d8:                   // @func00000000000006d8
 // %bb.0:                               // %entry
-	mov	w8, #63                         // =0x3f
-	ushr	v0.4s, v0.4s, #6
-	dup	v3.2d, x8
-	add	v1.2d, v1.2d, v3.2d
-	add	v2.2d, v2.2d, v3.2d
-	shrn	v1.2s, v1.2d, #6
-	shrn2	v1.4s, v2.2d, #6
-	cmhi	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	add	x8, x1, #63
+	lsr	x8, x8, #6
+	cmp	w8, w0, lsr #6
+	cset	w0, lo
 	ret
                                         // -- End function

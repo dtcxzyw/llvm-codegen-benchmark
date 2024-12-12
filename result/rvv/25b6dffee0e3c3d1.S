@@ -5,7 +5,7 @@ func0000000000000006:                   # @func0000000000000006
 	vadd.vi	v8, v8, 15
 	vmsle.vi	v0, v8, -1
 	ret
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	li	a0, -1
 	srli	a0, a0, 32
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -13,7 +13,7 @@ func0000000000000081:                   # @func0000000000000081
 	vsub.vv	v8, v8, v10
 	vmseq.vi	v0, v8, -1
 	ret
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	lui	a0, 8
 	addiw	a0, a0, -1
 	vsetivli	zero, 4, e64, m2, ta, ma

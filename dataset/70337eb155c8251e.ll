@@ -1,6 +1,7 @@
 
-; 1 occurrences:
+; 2 occurrences:
 ; eastl/optimized/EADateTime.cpp.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0, i32 %1, i32 %2) #0 {
 entry:

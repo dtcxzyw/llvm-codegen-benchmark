@@ -1,5 +1,5 @@
 
-; 36 occurrences:
+; 37 occurrences:
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
@@ -19,8 +19,8 @@
 ; libquic/optimized/dtoa.cc.ll
 ; luajit/optimized/lib_math.ll
 ; luajit/optimized/lib_math_dyn.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; mitsuba3/optimized/xml.cpp.ll
-; nuttx/optimized/lib_rand48.c.ll
 ; opencv/optimized/mathfuncs_core.dispatch.cpp.ll
 ; openjdk/optimized/sharedRuntimeTrans.ll
 ; openspiel/optimized/cfr.cc.ll
@@ -36,6 +36,7 @@
 ; ruby/optimized/util.ll
 ; tokenizers-rs/optimized/2mot01sr7ebui81b.ll
 ; tokenizers-rs/optimized/4hn9gefsll13qr1r.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(i64 %0) #0 {
 entry:

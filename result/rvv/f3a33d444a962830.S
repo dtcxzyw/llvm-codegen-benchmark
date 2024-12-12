@@ -27,5 +27,5 @@ func0000000000000005:                   # @func0000000000000005
 	li	a0, 48
 	vwsll.vx	v12, v11, a0
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vor.vv	v8, v12, v8
+	vor.vv	v8, v8, v12
 	ret

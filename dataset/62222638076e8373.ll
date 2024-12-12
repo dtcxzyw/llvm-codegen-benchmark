@@ -1,15 +1,13 @@
 
-; 3 occurrences:
+; 1 occurrences:
 ; mitsuba3/optimized/x86rapass.cpp.ll
-; ruby/optimized/utf_16be.ll
-; ruby/optimized/utf_16le.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000003f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = shl nuw nsw i32 %2, 10
-  %4 = add nuw nsw i32 %3, 65536
+  %3 = shl nuw nsw i32 %2, 24
+  %4 = add nuw nsw i32 %3, 134217728
   %5 = or disjoint i32 %0, %1
-  %6 = or disjoint i32 %4, %5
+  %6 = or disjoint i32 %5, %4
   ret i32 %6
 }
 

@@ -1,5 +1,7 @@
 
-; 33 occurrences:
+; 35 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; graphviz/optimized/shapes.c.ll
 ; meshlab/optimized/glarea.cpp.ll
 ; openblas/optimized/dhgeqz.c.ll
@@ -36,9 +38,9 @@
 ; Function Attrs: nounwind
 define double @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
-  %3 = fneg double %1
-  %4 = fmul double %3, %2
-  %5 = fmul double %4, %0
+  %3 = fmul double %1, %2
+  %4 = fneg double %0
+  %5 = fmul double %3, %4
   ret double %5
 }
 

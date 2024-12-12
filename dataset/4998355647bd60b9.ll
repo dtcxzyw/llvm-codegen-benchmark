@@ -1,9 +1,9 @@
 
-; 135 occurrences:
+; 136 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
-; assimp/optimized/Exporter.cpp.ll
 ; assimp/optimized/IRRLoader.cpp.ll
-; assimp/optimized/Importer.cpp.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/b3DynamicBvhBroadphase.ll
 ; bullet3/optimized/btConvexConvexAlgorithm.ll
 ; bullet3/optimized/btConvexPlaneCollisionAlgorithm.ll
@@ -36,7 +36,6 @@
 ; gromacs/optimized/pairlist.cpp.ll
 ; gromacs/optimized/rf_util.cpp.ll
 ; gromacs/optimized/shellfc.cpp.ll
-; gromacs/optimized/slagtf.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; imgui/optimized/imgui_draw.cpp.ll
@@ -135,6 +134,8 @@
 ; rust-analyzer-rs/optimized/1yf6pyfk8ihkfv63.ll
 ; stb/optimized/stb_truetype.c.ll
 ; wireshark/optimized/file.c.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i1 %0, float %1, float %2) #0 {
 entry:

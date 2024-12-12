@@ -8,13 +8,13 @@ func000000000000000f:                   # @func000000000000000f
 	movl	$64, %eax
 	subl	%ecx, %eax
 	retq
-func0000000000000003:                   # @func0000000000000003
-	movzbl	%dil, %ecx
-	movl	$32, %eax
-	subl	%ecx, %eax
-	retq
 func000000000000000a:                   # @func000000000000000a
 	movzbl	%dil, %ecx
 	movl	$23, %eax
+	subl	%ecx, %eax
+	retq
+func0000000000000003:                   # @func0000000000000003
+	movzbl	%dil, %ecx
+	movl	$128, %eax
 	subl	%ecx, %eax
 	retq

@@ -1,6 +1,7 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; abc/optimized/ifDec07.c.ll
+; boost/optimized/area.ll
 ; git/optimized/levenshtein.ll
 ; git/optimized/wildmatch.ll
 ; linux/optimized/x_tables.ll
@@ -27,6 +28,17 @@ entry:
   %.not = icmp ugt i8 %1, %2
   %3 = select i1 %.not, i32 %0, i32 0
   ret i32 %3
+}
+
+; 2 occurrences:
+; boost/optimized/normalize.ll
+; opencv/optimized/colormap.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000006(i32 %0, i8 %1, i8 %2) #0 {
+entry:
+  %3 = icmp slt i8 %1, %2
+  %4 = select i1 %3, i32 1, i32 %0
+  ret i32 %4
 }
 
 ; 2 occurrences:

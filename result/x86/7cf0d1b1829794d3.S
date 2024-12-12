@@ -30,11 +30,3 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	$10, %eax
 	sete	%al
 	retq
-.LCPI4_0:
-	.quad	0x400a934f0979a371              # double 3.3219280948873622
-func0000000000000004:                   # @func0000000000000004
-	vdivsd	.LCPI4_0(%rip), %xmm0, %xmm0
-	vcvttsd2si	%xmm0, %eax
-	cmpl	$-21, %eax
-	setb	%al
-	retq

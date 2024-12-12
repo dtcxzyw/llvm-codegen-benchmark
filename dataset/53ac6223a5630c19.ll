@@ -3,7 +3,7 @@
 ; llvm/optimized/DXILResource.cpp.ll
 ; meilisearch-rs/optimized/2fpcolt33ttb4v7z.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i8 %0, i32 %1) #0 {
+define i32 @func0000000000000061(i8 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 16
   %3 = icmp eq i8 %0, 0
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; stb/optimized/stb_voxel_render.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i8 %0, i32 %1) #0 {
+define i32 @func0000000000000068(i8 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 14
   %3 = icmp ugt i8 %0, 13

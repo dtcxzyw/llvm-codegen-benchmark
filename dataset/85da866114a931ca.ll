@@ -84,4 +84,16 @@ entry:
   ret float %5
 }
 
+; 1 occurrences:
+; opencv/optimized/lsc.cpp.ll
+; Function Attrs: nounwind
+define float @func0000000000000003(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw nsw i64 %1 to i32
+  %3 = sitofp i32 %2 to float
+  %4 = sitofp i32 %0 to float
+  %5 = fdiv float %3, %4
+  ret float %5
+}
+
 attributes #0 = { nounwind }

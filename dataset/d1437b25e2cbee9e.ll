@@ -1,5 +1,6 @@
 
-; 17 occurrences:
+; 18 occurrences:
+; boost/optimized/static_string.ll
 ; cmake/optimized/escape.c.ll
 ; cmake/optimized/urlapi.c.ll
 ; curl/optimized/libcurl_la-escape.ll
@@ -18,7 +19,7 @@
 ; stb/optimized/stb_c_lexer.c.ll
 ; vcpkg/optimized/strings.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000108(i8 %0, i8 %1) #0 {
 entry:
   %2 = freeze i8 %1
   %3 = add i8 %2, -48
@@ -32,7 +33,7 @@ entry:
 ; cmake/optimized/urlapi.c.ll
 ; curl/optimized/libcurl_la-urlapi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000288(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000908(i8 %0, i8 %1) #0 {
 entry:
   %2 = freeze i8 %1
   %3 = add nsw i8 %2, -65

@@ -22,7 +22,7 @@ define i16 @func000000000000001a(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = shl nuw nsw i64 %2, 3
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = trunc nuw i64 %4 to i16
   ret i16 %5
 }

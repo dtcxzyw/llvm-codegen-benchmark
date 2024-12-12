@@ -1,5 +1,5 @@
 
-; 67 occurrences:
+; 63 occurrences:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
@@ -8,9 +8,6 @@
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; hermes/optimized/JSLibInternal.cpp.ll
 ; imgui/optimized/imgui_demo.cpp.ll
-; imgui/optimized/imgui_widgets.cpp.ll
-; linux/optimized/e1000_hw.ll
-; linux/optimized/hdac_regmap.ll
 ; linux/optimized/hwgpe.ll
 ; linux/optimized/i915_perf.ll
 ; linux/optimized/i9xx_plane.ll
@@ -44,7 +41,6 @@
 ; llvm/optimized/X86MachObjectWriter.cpp.ll
 ; luajit/optimized/lj_parse.ll
 ; luajit/optimized/lj_parse_dyn.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; nanobind/optimized/nb_type.cpp.ll
 ; nix/optimized/posix-fs-canonicalise.ll
@@ -58,7 +54,6 @@
 ; qemu/optimized/util_memfd.c.ll
 ; redis/optimized/rax.ll
 ; rocksdb/optimized/fs_posix.cc.ll
-; ruby/optimized/ractor.ll
 ; verilator/optimized/V3CCtors.cpp.ll
 ; verilator/optimized/V3Sched.cpp.ll
 ; wireshark/optimized/dftest.c.ll
@@ -67,12 +62,13 @@
 ; wireshark/optimized/packet-wassp.c.ll
 ; z3/optimized/euf_solver.cpp.ll
 ; z3/optimized/sat_clause.cpp.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i1 %1) #0 {
 entry:
-  %2 = select i1 %1, i32 0, i32 2
+  %2 = select i1 %1, i32 16, i32 8
   %3 = or disjoint i32 %2, %0
-  %4 = or disjoint i32 %3, 4
+  %4 = or disjoint i32 %3, 134742016
   ret i32 %4
 }
 
@@ -147,7 +143,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 0, i32 1024
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = or i32 %3, 512
   ret i32 %4
 }
@@ -160,7 +156,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i32 16, i32 16400
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = or disjoint i32 %3, 128
   ret i32 %4
 }

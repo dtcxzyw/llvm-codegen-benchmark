@@ -15,7 +15,7 @@
 ; proxygen/optimized/Service.cpp.ll
 ; qemu/optimized/virtio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = or disjoint i64 %0, 128

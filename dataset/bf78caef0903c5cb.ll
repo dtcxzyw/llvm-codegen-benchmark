@@ -1,8 +1,8 @@
 
-%"struct.rocksdb::SeqnoToTimeMapping::SeqnoTimePair.2511718" = type { i64, i64 }
-%"class.std::__cxx11::basic_string.2647001" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2647020", i64, %union.anon.2647021 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2647020" = type { ptr }
-%union.anon.2647021 = type { i64, [8 x i8] }
+%"struct.rocksdb::SeqnoToTimeMapping::SeqnoTimePair.2626852" = type { i64, i64 }
+%"class.std::__cxx11::basic_string.2760304" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2760323", i64, %union.anon.2760324 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2760323" = type { ptr }
+%union.anon.2760324 = type { i64, [8 x i8] }
 
 ; 5 occurrences:
 ; arrow/optimized/bit_util.cc.ll
@@ -14,9 +14,9 @@
 define ptr @func000000000000002a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = sdiv i64 %4, 2
-  %6 = getelementptr nusw %"struct.rocksdb::SeqnoToTimeMapping::SeqnoTimePair.2511718", ptr %0, i64 %5
+  %6 = getelementptr nusw %"struct.rocksdb::SeqnoToTimeMapping::SeqnoTimePair.2626852", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -28,9 +28,9 @@ entry:
 define ptr @func0000000000000022(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 5
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = sdiv i64 %4, 2
-  %6 = getelementptr nusw %"class.std::__cxx11::basic_string.2647001", ptr %0, i64 %5
+  %6 = getelementptr nusw %"class.std::__cxx11::basic_string.2760304", ptr %0, i64 %5
   ret ptr %6
 }
 

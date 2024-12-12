@@ -1,9 +1,9 @@
 
-%"struct.mold::elf::ElfRel.2521557" = type { %"class.mold::LittleEndian.3.2521444", %"class.mold::LittleEndian.2521443", %"class.mold::LittleEndian.2521443", %"class.mold::LittleEndian.295.2521558" }
-%"class.mold::LittleEndian.3.2521444" = type { [8 x i8] }
-%"class.mold::LittleEndian.2521443" = type { [4 x i8] }
-%"class.mold::LittleEndian.295.2521558" = type { [8 x i8] }
-%struct.IOVAMapping.2594175 = type { ptr, i64, i64 }
+%"struct.mold::elf::ElfRel.2635966" = type { %"class.mold::LittleEndian.3.2635854", %"class.mold::LittleEndian.2635853", %"class.mold::LittleEndian.2635853", %"class.mold::LittleEndian.295.2635967" }
+%"class.mold::LittleEndian.3.2635854" = type { [8 x i8] }
+%"class.mold::LittleEndian.2635853" = type { [4 x i8] }
+%"class.mold::LittleEndian.295.2635967" = type { [8 x i8] }
+%struct.IOVAMapping.2707794 = type { ptr, i64, i64 }
 
 ; 63 occurrences:
 ; arrow/optimized/tz.cpp.ll
@@ -76,7 +76,7 @@ entry:
   %3 = ptrtoint ptr %1 to i64
   %4 = sub i64 %3, %2
   %5 = sdiv i64 %4, 48
-  %6 = getelementptr nusw %"struct.mold::elf::ElfRel.2521557", ptr %0, i64 %5
+  %6 = getelementptr nusw %"struct.mold::elf::ElfRel.2635966", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -94,28 +94,8 @@ entry:
   %3 = ptrtoint ptr %1 to i64
   %4 = sub i64 %3, %2
   %5 = sdiv i64 %4, 48
-  %6 = getelementptr %struct.IOVAMapping.2594175, ptr %0, i64 %5
+  %6 = getelementptr %struct.IOVAMapping.2707794, ptr %0, i64 %5
   ret ptr %6
-}
-
-; 9 occurrences:
-; hermes/optimized/ConsecutiveStringStorage.cpp.ll
-; hyperscan/optimized/rose_build_long_lit.cpp.ll
-; hyperscan/optimized/rose_build_lookaround.cpp.ll
-; llvm/optimized/CodeGenSchedule.cpp.ll
-; llvm/optimized/ControlHeightReduction.cpp.ll
-; llvm/optimized/IndirectCallPromotion.cpp.ll
-; llvm/optimized/MemorySanitizer.cpp.ll
-; llvm/optimized/NeonEmitter.cpp.ll
-; llvm/optimized/SemaTemplateInstantiate.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, ptr %1) #0 {
-entry:
-  %2 = ptrtoint ptr %0 to i64
-  %3 = ptrtoint ptr %1 to i64
-  %4 = sub i64 %3, %2
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
-  ret ptr %5
 }
 
 attributes #0 = { nounwind }

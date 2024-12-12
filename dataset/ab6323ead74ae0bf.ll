@@ -76,16 +76,4 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
-; zxing/optimized/AZEncoder.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000004f(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ult i32 %1, 4
-  %3 = select i1 %2, i32 88, i32 112
-  %4 = shl nuw nsw i32 %0, 4
-  %5 = add nuw nsw i32 %4, %3
-  ret i32 %5
-}
-
 attributes #0 = { nounwind }

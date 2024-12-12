@@ -1,7 +1,8 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; flac/optimized/window.c.ll
 ; gromacs/optimized/gmx_density.cpp.ll
+; libwebp/optimized/quant_levels_utils.c.ll
 ; opencv/optimized/binary_descriptor.cpp.ll
 ; opencv/optimized/normal.cpp.ll
 ; opencv/optimized/trackerKCF.cpp.ll

@@ -1,14 +1,10 @@
 
-; 38 occurrences:
+; 33 occurrences:
 ; bullet3/optimized/MultiBodyTreeImpl.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; gromacs/optimized/dbdsdc.cpp.ll
-; gromacs/optimized/dgetrf.cpp.ll
-; gromacs/optimized/dlatrd.cpp.ll
 ; gromacs/optimized/dorgbr.cpp.ll
 ; gromacs/optimized/sbdsdc.cpp.ll
-; gromacs/optimized/sgetrf.cpp.ll
-; gromacs/optimized/slatrd.cpp.ll
 ; gromacs/optimized/sorgbr.cpp.ll
 ; ncnn/optimized/deformableconv2d_x86.cpp.ll
 ; ncnn/optimized/deformableconv2d_x86_avx.cpp.ll
@@ -22,7 +18,6 @@
 ; openblas/optimized/dlasyf.c.ll
 ; openblas/optimized/dlasyf_rk.c.ll
 ; openblas/optimized/dlasyf_rook.c.ll
-; openblas/optimized/dorcsd.c.ll
 ; openblas/optimized/dorm22.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; openblas/optimized/dsbtrd.c.ll
@@ -59,43 +54,9 @@ entry:
 define i64 @func00000000000000d5(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   %5 = add nsw i32 %1, -1
   %6 = add nsw i32 %4, %5
-  %7 = sext i32 %6 to i64
-  ret i64 %7
-}
-
-; 4 occurrences:
-; gromacs/optimized/dlasd3.cpp.ll
-; gromacs/optimized/slasd3.cpp.ll
-; openblas/optimized/dlasd3.c.ll
-; openspiel/optimized/crazy_eights.cc.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000045(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %2, 2
-  %4 = mul nsw i32 %3, %0
-  %5 = add i32 %1, 2
-  %6 = add nsw i32 %4, %5
-  %7 = sext i32 %6 to i64
-  ret i64 %7
-}
-
-; 6 occurrences:
-; gromacs/optimized/dlasd3.cpp.ll
-; gromacs/optimized/slasd3.cpp.ll
-; openblas/optimized/dggsvp3.c.ll
-; openblas/optimized/dlasd3.c.ll
-; openblas/optimized/dlatrs3.c.ll
-; openblas/optimized/dsbgst.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add i32 %2, 2
-  %4 = mul nsw i32 %3, %1
-  %5 = add nsw i32 %0, 1
-  %6 = add nsw i32 %5, %4
   %7 = sext i32 %6 to i64
   ret i64 %7
 }
@@ -106,9 +67,23 @@ entry:
 define i64 @func00000000000000dd(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = add nuw nsw i32 %0, 1
   %6 = add nsw i32 %5, %4
+  %7 = sext i32 %6 to i64
+  ret i64 %7
+}
+
+; 2 occurrences:
+; openblas/optimized/dlasd3.c.ll
+; openspiel/optimized/crazy_eights.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000045(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %2, -1
+  %4 = mul nsw i32 %0, %3
+  %5 = add i32 %1, 108
+  %6 = add nsw i32 %4, %5
   %7 = sext i32 %6 to i64
   ret i64 %7
 }
@@ -133,7 +108,7 @@ entry:
 define i64 @func00000000000000d0(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = add i32 %0, 2
   %6 = add i32 %5, %4
   %7 = sext i32 %6 to i64
@@ -147,7 +122,7 @@ entry:
 define i64 @func0000000000000050(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = add i32 %0, 1
   %6 = add i32 %5, %4
   %7 = sext i32 %6 to i64
@@ -162,9 +137,25 @@ entry:
 define i64 @func0000000000000054(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 14
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = add nsw i32 %0, 11
   %6 = add i32 %5, %4
+  %7 = sext i32 %6 to i64
+  ret i64 %7
+}
+
+; 4 occurrences:
+; openblas/optimized/dggsvp3.c.ll
+; openblas/optimized/dlasd3.c.ll
+; openblas/optimized/dlatrs3.c.ll
+; openblas/optimized/dsbgst.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add i32 %2, -1
+  %4 = mul nsw i32 %3, %0
+  %5 = add nsw i32 %1, 1
+  %6 = add nsw i32 %4, %5
   %7 = sext i32 %6 to i64
   ret i64 %7
 }
@@ -190,7 +181,7 @@ entry:
 define i64 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = add i32 %0, 2
   %6 = add i32 %5, %4
   %7 = sext i32 %6 to i64
@@ -203,7 +194,7 @@ entry:
 define i64 @func00000000000000c4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   %5 = add i32 %1, 1
   %6 = add i32 %4, %5
   %7 = sext i32 %6 to i64

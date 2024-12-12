@@ -1,10 +1,10 @@
-func000000000000003e:                   # @func000000000000003e
+func000000000000003f:                   # @func000000000000003f
 	slli	a2, a2, 2
 	add	a1, a1, a2
 	slli	a1, a1, 2
 	add	a0, a0, a1
 	ret
-func000000000000001e:                   # @func000000000000001e
+func000000000000001f:                   # @func000000000000001f
 	slli	a2, a2, 4
 	add	a1, a1, a2
 	slli	a1, a1, 3
@@ -41,4 +41,15 @@ func000000000000003c:                   # @func000000000000003c
 	slli	a2, a2, 2
 	add	a0, a0, a1
 	add	a0, a0, a2
+	ret
+func000000000000003a:                   # @func000000000000003a
+	slli	a2, a2, 2
+	add	a0, a0, a1
+	add	a0, a0, a2
+	ret
+func000000000000000f:                   # @func000000000000000f
+	slli	a2, a2, 2
+	add	a1, a1, a2
+	slli	a1, a1, 3
+	add	a0, a0, a1
 	ret

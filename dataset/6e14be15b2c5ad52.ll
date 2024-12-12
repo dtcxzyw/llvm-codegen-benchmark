@@ -6,7 +6,7 @@
 ; openjdk/optimized/codeHeapState.ll
 ; wireshark/optimized/copy_from_profile_button.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %0, i1 true, i1 %3
@@ -21,7 +21,7 @@ entry:
 ; libquic/optimized/bytestring_test.cc.ll
 ; llvm/optimized/CodeGenTBAA.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000018c(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = select i1 %0, i1 true, i1 %3
@@ -33,7 +33,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaTemplate.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i1 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000188(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = select i1 %0, i1 true, i1 %3
@@ -45,7 +45,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-jxta.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000024(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %0, i1 true, i1 %3

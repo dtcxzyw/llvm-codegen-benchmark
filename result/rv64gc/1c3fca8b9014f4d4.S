@@ -1,4 +1,4 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	andi	a0, a0, 1
 	bnez	a0, .LBB0_2
 	mv	a1, a2
@@ -9,7 +9,7 @@ func0000000000000031:                   # @func0000000000000031
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	andi	a0, a0, 1
 	bnez	a0, .LBB1_2
 	mv	a1, a2
@@ -18,15 +18,4 @@ func0000000000000021:                   # @func0000000000000021
 	slli	a0, a0, 32
 	and	a0, a0, a1
 	seqz	a0, a0
-	ret
-func0000000000000034:                   # @func0000000000000034
-	andi	a0, a0, 1
-	bnez	a0, .LBB2_2
-	mv	a1, a2
-.LBB2_2:                                # %entry
-	lui	a0, 524287
-	slli	a0, a0, 29
-	and	a1, a1, a0
-	xor	a0, a0, a1
-	snez	a0, a0
 	ret

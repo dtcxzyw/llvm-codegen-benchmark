@@ -45,7 +45,7 @@ func0000000000000006:                   # @func0000000000000006
 	.long	32                              # 0x20
 .LCPI3_1:
 	.quad	65535                           # 0xffff
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vpslld	$31, %xmm2, %xmm2
 	vpmovd2m	%xmm2, %k1
 	vpbroadcastd	.LCPI3_0(%rip), %xmm2 {%k1} {z} # xmm2 {%k1} {z} = [32,32,32,32]

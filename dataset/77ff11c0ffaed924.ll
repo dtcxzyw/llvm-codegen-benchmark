@@ -12,7 +12,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = shl nsw i64 %3, 16
   %5 = shl nsw i64 %1, 32
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   %7 = or i64 %6, %4
   ret i64 %7
 }
@@ -41,7 +41,7 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = shl nsw i64 %3, 12
   %5 = shl i64 %1, 36
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   %7 = or i64 %6, %4
   ret i64 %7
 }

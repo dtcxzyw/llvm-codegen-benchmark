@@ -11,16 +11,15 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; opencv/optimized/softfloat.cpp.ll
-; openjdk/optimized/countbitsnode.ll
 ; qemu/optimized/source_s_countLeadingZeros64.c.ll
 ; spike/optimized/s_countLeadingZeros64.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000024(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000054(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = icmp ult i64 %1, 65536
+  %3 = icmp samesign ult i64 %1, 65536
   %4 = select i1 %3, i32 %0, i32 %2
   ret i32 %4
 }
@@ -37,19 +36,32 @@ entry:
   ret i32 %4
 }
 
-; 7 occurrences:
+; 9 occurrences:
 ; abseil-cpp/optimized/vdso_support.cc.ll
+; hermes/optimized/Host.cpp.ll
 ; llvm/optimized/CodeGenTarget.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; php/optimized/pdo_dbh.ll
 ; php/optimized/zend_API.ll
 ; postgres/optimized/data.ll
+; qemu/optimized/block_file-posix.c.ll
 ; qemu/optimized/hw_9pfs_9p-local.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp eq i64 %1, -1
+  %4 = select i1 %3, i32 %0, i32 %2
+  ret i32 %4
+}
+
+; 1 occurrences:
+; openjdk/optimized/countbitsnode.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000044(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw i64 %1 to i32
+  %3 = icmp ult i64 %1, 65536
   %4 = select i1 %3, i32 %0, i32 %2
   ret i32 %4
 }
@@ -67,7 +79,7 @@ entry:
 ; z3/optimized/theory_special_relations.cpp.ll
 ; z3/optimized/theory_utvpi.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000041(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = icmp eq i64 %1, 0
@@ -75,7 +87,7 @@ entry:
   ret i32 %4
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; abseil-cpp/optimized/civil_time.cc.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time.cc.ll
@@ -83,16 +95,28 @@ entry:
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; abseil-cpp/optimized/time_zone_libc.cc.ll
+; boost/optimized/to_chars.ll
 ; linux/optimized/timeconv.ll
 ; protobuf/optimized/time_util.cc.ll
 ; pybind11/optimized/test_chrono.cpp.ll
 ; velox/optimized/Timestamp.cpp.ll
 ; wireshark/optimized/packet-p_mul.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000026(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = icmp slt i64 %1, 0
+  %4 = select i1 %3, i32 %0, i32 %2
+  ret i32 %4
+}
+
+; 1 occurrences:
+; git/optimized/commit-graph.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = icmp ugt i64 %1, 2147483647
   %4 = select i1 %3, i32 %0, i32 %2
   ret i32 %4
 }
@@ -101,10 +125,10 @@ entry:
 ; opencv/optimized/softfloat.cpp.ll
 ; spike/optimized/s_subMagsF32.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000074(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = icmp ult i64 %1, 65536
+  %3 = icmp samesign ult i64 %1, 65536
   %4 = select i1 %3, i32 %0, i32 %2
   ret i32 %4
 }
@@ -119,7 +143,7 @@ entry:
 ; recastnavigation/optimized/RecastContour.cpp.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000061(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = icmp eq i64 %1, 0
@@ -131,10 +155,10 @@ entry:
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/LoopInfo.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000014(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp ult i64 %1, 4294967296
+  %3 = icmp samesign ult i64 %1, 4294967296
   %4 = select i1 %3, i32 %0, i32 %2
   ret i32 %4
 }
@@ -142,10 +166,10 @@ entry:
 ; 1 occurrences:
 ; sentencepiece/optimized/int128.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000028(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000058(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = icmp ugt i64 %1, 65535
+  %3 = icmp samesign ugt i64 %1, 65535
   %4 = select i1 %3, i32 %0, i32 %2
   ret i32 %4
 }
@@ -153,7 +177,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/gup.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = icmp eq i64 %1, 0
@@ -164,10 +188,10 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/fast_line_detector.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000018(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp ugt i64 %1, 4
+  %3 = icmp samesign ugt i64 %1, 4
   %4 = select i1 %3, i32 %0, i32 %2
   ret i32 %4
 }

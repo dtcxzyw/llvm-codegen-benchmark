@@ -1,7 +1,6 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; libdeflate/optimized/deflate_compress.c.ll
-; linux/optimized/intel_audio.ll
 ; openusd/optimized/openexr-c.c.ll
 ; postgres/optimized/dt_common.ll
 ; Function Attrs: nounwind
@@ -26,6 +25,20 @@ entry:
   %3 = sub i32 %2, %.fr
   %4 = add nsw i32 %0, -12
   %5 = add nsw i32 %3, %4
+  ret i32 %5
+}
+
+; 3 occurrences:
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
+; quantlib/optimized/date.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
+entry:
+  %2 = udiv i32 %1, 1530
+  %3 = mul i32 %2, 65524
+  %4 = add nuw nsw i32 %0, 3
+  %5 = add i32 %4, %3
   ret i32 %5
 }
 

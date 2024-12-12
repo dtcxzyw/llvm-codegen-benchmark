@@ -16,3 +16,9 @@ func000000000000000c:                   # @func000000000000000c
 	andq	%rdx, %rax
 	cmovneq	%rdi, %rax
 	retq
+func0000000000000004:                   # @func0000000000000004
+	andq	%rdx, %rsi
+	xorl	%eax, %eax
+	cmpq	$65536, %rsi                    # imm = 0x10000
+	cmovbq	%rdi, %rax
+	retq

@@ -7,7 +7,7 @@
 define float @func0000000000000008(float %0, i1 %1) #0 {
 entry:
   %2 = fcmp ogt float %0, 1.000000e+00
-  %3 = or i1 %2, %1
+  %3 = or i1 %1, %2
   %4 = select i1 %3, float 1.000000e+00, float %0
   ret float %4
 }

@@ -39,7 +39,7 @@ entry:
   ret i64 %4
 }
 
-; 35 occurrences:
+; 39 occurrences:
 ; abc/optimized/utilIsop.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
@@ -54,6 +54,9 @@ entry:
 ; flac/optimized/stream_encoder.c.ll
 ; grpc/optimized/hpack_parser.cc.ll
 ; hermes/optimized/APInt.cpp.ll
+; jemalloc/optimized/tcache.ll
+; jemalloc/optimized/tcache.pic.ll
+; jemalloc/optimized/tcache.sym.ll
 ; libjpeg-turbo/optimized/jdhuff.c.ll
 ; libjpeg-turbo/optimized/jdlhuff.c.ll
 ; libjpeg-turbo/optimized/jdphuff.c.ll
@@ -63,6 +66,7 @@ entry:
 ; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/BlockFrequencyInfoImpl.cpp.ll
 ; llvm/optimized/SourceManager.cpp.ll
+; lvgl/optimized/lv_tlsf.ll
 ; openexr/optimized/ImfFastHuf.cpp.ll
 ; openexr/optimized/ImfHuf.cpp.ll
 ; openexr/optimized/internal_huf.c.ll
@@ -84,8 +88,10 @@ entry:
   ret i64 %4
 }
 
-; 66 occurrences:
+; 69 occurrences:
 ; bdwgc/optimized/gc.c.ll
+; cmake/optimized/zstd_compress.c.ll
+; cmake/optimized/zstd_compress_literals.c.ll
 ; cmake/optimized/zstd_compress_sequences.c.ll
 ; cpython/optimized/mathmodule.ll
 ; cpython/optimized/unicodeobject.ll
@@ -94,7 +100,6 @@ entry:
 ; hyperscan/optimized/block.c.ll
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/catchup.c.ll
-; hyperscan/optimized/init.c.ll
 ; hyperscan/optimized/mpv.c.ll
 ; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/repeat.c.ll
@@ -103,7 +108,6 @@ entry:
 ; jemalloc/optimized/ckh.ll
 ; jemalloc/optimized/ckh.pic.ll
 ; jemalloc/optimized/ckh.sym.ll
-; linux/optimized/8250_exar.ll
 ; linux/optimized/8250_pci.ll
 ; linux/optimized/fair.ll
 ; linux/optimized/hpet.ll
@@ -148,8 +152,11 @@ entry:
 ; redis/optimized/ckh.ll
 ; redis/optimized/ckh.sym.ll
 ; spike/optimized/csrs.ll
+; spike/optimized/triggers.ll
 ; xgboost/optimized/charconv.cc.ll
 ; z3/optimized/mpff.cpp.ll
+; zstd/optimized/zstd_compress.c.ll
+; zstd/optimized/zstd_compress_literals.c.ll
 ; zstd/optimized/zstd_compress_sequences.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i32 %1) #0 {

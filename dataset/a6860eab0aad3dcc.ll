@@ -1,5 +1,5 @@
 
-; 140 occurrences:
+; 139 occurrences:
 ; arrow/optimized/api_scalar.cc.ll
 ; arrow/optimized/cast.cc.ll
 ; arrow/optimized/compare.cc.ll
@@ -45,7 +45,6 @@
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; llvm/optimized/StackProtector.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
-; llvm/optimized/ValueTracking.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luau/optimized/Normalize.cpp.ll
 ; luau/optimized/Unifier.cpp.ll

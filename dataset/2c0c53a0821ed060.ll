@@ -31,27 +31,4 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
-; gromacs/optimized/pairlist.cpp.ll
-; icu/optimized/csrucode.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000001(i1 %0, i32 %1) #0 {
-entry:
-  %2 = icmp eq i32 %1, 0
-  %3 = freeze i1 %0
-  %4 = and i1 %3, %2
-  ret i1 %4
-}
-
-; 1 occurrences:
-; icu/optimized/hebrwcal.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ugt i32 %1, 6
-  %3 = freeze i1 %0
-  %4 = and i1 %3, %2
-  ret i1 %4
-}
-
 attributes #0 = { nounwind }

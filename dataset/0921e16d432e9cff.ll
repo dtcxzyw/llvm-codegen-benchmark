@@ -1,8 +1,9 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; cmake/optimized/nghttp2_hd.c.ll
 ; hdf5/optimized/H5Tinit_float.c.ll
 ; libquic/optimized/hpack_input_stream.cc.ll
+; lvgl/optimized/lv_canvas.ll
 ; nghttp2/optimized/nghttp2_hd.c.ll
 ; openjdk/optimized/macroArrayCopy.ll
 ; Function Attrs: nounwind
@@ -37,7 +38,7 @@ entry:
   %2 = shl nuw i32 1, %1
   %3 = and i32 %2, 49135
   %4 = xor i32 %3, 49135
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 

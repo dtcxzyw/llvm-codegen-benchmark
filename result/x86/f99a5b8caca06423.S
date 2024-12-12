@@ -12,3 +12,10 @@ func000000000000000f:                   # @func000000000000000f
 	orq	%rsi, %rdi
 	orq	%rdi, %rax
 	retq
+func0000000000000006:                   # @func0000000000000006
+	leal	1(%rdx), %eax
+	andl	$31, %eax
+	shlq	$24, %rdi
+	orq	%rsi, %rdi
+	orq	%rdi, %rax
+	retq

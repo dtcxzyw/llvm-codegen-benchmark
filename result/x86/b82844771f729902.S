@@ -1,16 +1,16 @@
-func000000000000008a:                   # @func000000000000008a
+func00000000000000ca:                   # @func00000000000000ca
 	andq	$-8, %rdx
 	leaq	(%rdi,%rsi), %rax
 	subq	%rdx, %rax
 	addq	$24, %rax
 	retq
-func000000000000009a:                   # @func000000000000009a
+func00000000000000da:                   # @func00000000000000da
 	andl	$-16, %edx
 	leaq	(%rdi,%rsi), %rax
 	subq	%rdx, %rax
 	addq	$16, %rax
 	retq
-func0000000000000090:                   # @func0000000000000090
+func00000000000000d0:                   # @func00000000000000d0
 	movl	%edx, %ecx
 	leaq	(%rdi,%rsi), %rax
 	subq	%rcx, %rax
@@ -21,10 +21,4 @@ func0000000000000030:                   # @func0000000000000030
 	leaq	(%rdi,%rsi), %rax
 	subq	%rdx, %rax
 	addq	$576, %rax                      # imm = 0x240
-	retq
-func0000000000000032:                   # @func0000000000000032
-	andl	$15, %edx
-	leaq	(%rdi,%rsi), %rax
-	subq	%rdx, %rax
-	addq	$17, %rax
 	retq

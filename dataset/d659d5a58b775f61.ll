@@ -12,11 +12,11 @@
 ; protobuf/optimized/zero_copy_stream_impl_lite.cc.ll
 ; wireshark/optimized/addr_resolv.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(ptr %0, i8 %1) #0 {
+define ptr @func0000000000000061(ptr %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = icmp eq i8 %2, 0
-  %4 = getelementptr nusw i8, ptr %0, i64 128
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 128
   %5 = select i1 %3, ptr %4, ptr null
   ret ptr %5
 }

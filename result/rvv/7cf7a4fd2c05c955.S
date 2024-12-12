@@ -12,7 +12,7 @@ func00000000000000a5:                   # @func00000000000000a5
 	vmfle.vv	v16, v8, v12
 	vmnot.m	v0, v16
 	ret
-func0000000000000044:                   # @func0000000000000044
+func0000000000000144:                   # @func0000000000000144
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsleu.vi	v0, v16, 3
 	vsetvli	zero, zero, e64, m4, ta, ma

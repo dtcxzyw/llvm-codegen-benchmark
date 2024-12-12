@@ -5,7 +5,7 @@
 ; proj/optimized/defmodel.cpp.ll
 ; proj/optimized/unitconvert.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0) #0 {
+define i1 @func0000000000000058(i32 %0) #0 {
 entry:
   %1 = urem i32 %0, 100
   %2 = icmp eq i32 %1, 0

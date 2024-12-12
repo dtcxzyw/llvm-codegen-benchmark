@@ -1,4 +1,4 @@
-func00000000000000fa:                   # @func00000000000000fa
+func00000000000000ff:                   # @func00000000000000ff
 	or	a1, a1, a2
 	slliw	a1, a1, 2
 	slli	a1, a1, 1

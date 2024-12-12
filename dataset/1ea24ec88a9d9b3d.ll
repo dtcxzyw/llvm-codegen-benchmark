@@ -85,4 +85,15 @@ entry:
   ret i64 %3
 }
 
+; 2 occurrences:
+; zed-rs/optimized/b8qgowmgtglca3x1tojob83nm.ll
+; zed-rs/optimized/bjeparp10jwpmju7lihptx53f.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000028(i8 %0, i8 %1) #0 {
+entry:
+  %2 = icmp samesign uge i8 %0, %1
+  %3 = zext i1 %2 to i64
+  ret i64 %3
+}
+
 attributes #0 = { nounwind }

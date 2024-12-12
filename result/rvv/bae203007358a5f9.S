@@ -11,7 +11,7 @@ func0000000000000008:                   # @func0000000000000008
 	ret
 .LCPI1_0:
 	.quad	2951479051793528259             # 0x28f5c28f5c28f5c3
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	lui	a0, %hi(.LCPI1_0)
 	ld	a0, %lo(.LCPI1_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -23,7 +23,7 @@ func0000000000000034:                   # @func0000000000000034
 	ret
 .LCPI2_0:
 	.quad	5270498306774157605             # 0x4924924924924925
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	lui	a0, %hi(.LCPI2_0)
 	ld	a0, %lo(.LCPI2_0)(a0)
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -33,25 +33,35 @@ func0000000000000014:                   # @func0000000000000014
 	vadd.vv	v10, v12, v10
 	vmsltu.vv	v0, v8, v10
 	ret
-.LCPI3_0:
-	.quad	2951479051793528259             # 0x28f5c28f5c28f5c3
-func0000000000000004:                   # @func0000000000000004
-	lui	a0, %hi(.LCPI3_0)
-	ld	a0, %lo(.LCPI3_0)(a0)
+func00000000000000e4:                   # @func00000000000000e4
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vi	v12, v12, 2
-	vmulhu.vx	v12, v12, a0
-	vsrl.vi	v12, v12, 2
-	vadd.vv	v10, v12, v10
-	vmsltu.vv	v0, v8, v10
-	ret
-func0000000000000074:                   # @func0000000000000074
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsrl.vi	v12, v12, 4
+	vsrl.vi	v12, v12, 3
 	lui	a0, 699051
 	addiw	a0, a0, -1365
 	slli	a1, a0, 32
 	add	a0, a0, a1
 	vmadd.vx	v12, a0, v10
 	vmsltu.vv	v0, v8, v12
+	ret
+func0000000000000081:                   # @func0000000000000081
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsrl.vi	v12, v12, 6
+	lui	a0, 699051
+	addiw	a0, a0, -1365
+	slli	a1, a0, 32
+	add	a0, a0, a1
+	vmadd.vx	v12, a0, v10
+	vmseq.vv	v0, v8, v12
+	ret
+.LCPI5_0:
+	.quad	2951479051793528259             # 0x28f5c28f5c28f5c3
+func0000000000000004:                   # @func0000000000000004
+	lui	a0, %hi(.LCPI5_0)
+	ld	a0, %lo(.LCPI5_0)(a0)
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vsrl.vi	v12, v12, 2
+	vmulhu.vx	v12, v12, a0
+	vsrl.vi	v12, v12, 2
+	vadd.vv	v10, v10, v12
+	vmsltu.vv	v0, v8, v10
 	ret

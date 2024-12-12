@@ -1,7 +1,6 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; coreutils-rs/optimized/3t9yvjig6ylv2f7b.ll
-; libquic/optimized/async_bio.cc.ll
 ; ruby/optimized/thread.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i1 %1, i32 %2) #0 {

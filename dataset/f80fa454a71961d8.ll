@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; mitsuba3/optimized/scene.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, float %1) #0 {
+define i1 @func0000000000000181(i32 %0, float %1) #0 {
 entry:
   %2 = fcmp oge float %1, 5.000000e-01
   %3 = icmp eq i32 %0, 3
@@ -21,7 +21,7 @@ entry:
 ; opencv/optimized/caffe_importer.cpp.ll
 ; opencv/optimized/region_layer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, float %1) #0 {
+define i1 @func0000000000000041(i32 %0, float %1) #0 {
 entry:
   %2 = fcmp olt float %1, 5.000000e-01
   %3 = icmp eq i32 %0, 3
@@ -38,7 +38,7 @@ entry:
 ; mitsuba3/optimized/mesh.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, float %1) #0 {
+define i1 @func0000000000000081(i32 %0, float %1) #0 {
 entry:
   %2 = fcmp ogt float %1, 0.000000e+00
   %3 = icmp eq i32 %0, 0
@@ -49,10 +49,10 @@ entry:
 ; 1 occurrences:
 ; mitsuba3/optimized/util.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, float %1) #0 {
+define i1 @func0000000000000094(i32 %0, float %1) #0 {
 entry:
   %2 = fcmp ogt float %1, 1.024000e+03
-  %3 = icmp ult i32 %0, 5
+  %3 = icmp samesign ult i32 %0, 5
   %4 = select i1 %3, i1 %2, i1 false
   ret i1 %4
 }
@@ -67,7 +67,7 @@ entry:
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; pbrt-v4/optimized/surfscatter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, float %1) #0 {
+define i1 @func000000000000008c(i32 %0, float %1) #0 {
 entry:
   %2 = fcmp ogt float %1, 7.500000e-01
   %3 = icmp ne i32 %0, 0
@@ -78,10 +78,10 @@ entry:
 ; 1 occurrences:
 ; bullet3/optimized/btBatchedConstraints.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i32 %0, float %1) #0 {
+define i1 @func0000000000000154(i32 %0, float %1) #0 {
 entry:
   %2 = fcmp ole float %1, 1.280000e+02
-  %3 = icmp ult i32 %0, 129
+  %3 = icmp samesign ult i32 %0, 129
   %4 = select i1 %3, i1 %2, i1 false
   ret i1 %4
 }
@@ -94,7 +94,7 @@ entry:
 ; imgui/optimized/imgui.cpp.ll
 ; opencv/optimized/onnx_graph_simplifier.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, float %1) #0 {
+define i1 @func0000000000000101(i32 %0, float %1) #0 {
 entry:
   %2 = fcmp oeq float %1, 0.000000e+00
   %3 = icmp eq i32 %0, 0
@@ -102,15 +102,16 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; assimp/optimized/ObjExporter.cpp.ll
 ; assimp/optimized/PbrtExporter.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; darktable/optimized/introspection_basicadj.c.ll
 ; darktable/optimized/navigation.c.ll
 ; opencv/optimized/caffe_importer.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, float %1) #0 {
+define i1 @func00000000000000e1(i32 %0, float %1) #0 {
 entry:
   %2 = fcmp une float %1, 0.000000e+00
   %3 = icmp eq i32 %0, 0
@@ -121,7 +122,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/RawImageDataFloat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0, float %1) #0 {
+define i1 @func000000000000004a(i32 %0, float %1) #0 {
 entry:
   %2 = fcmp olt float %1, 0.000000e+00
   %3 = icmp sgt i32 %0, -1
@@ -133,7 +134,7 @@ entry:
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i32 %0, float %1) #0 {
+define i1 @func000000000000004c(i32 %0, float %1) #0 {
 entry:
   %2 = fcmp olt float %1, 0.000000e+00
   %3 = icmp ne i32 %0, 0
@@ -145,10 +146,10 @@ entry:
 ; pbrt-v4/optimized/bxdfs.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, float %1) #0 {
+define i1 @func0000000000000058(i32 %0, float %1) #0 {
 entry:
   %2 = fcmp olt float %1, 0.000000e+00
-  %3 = icmp ugt i32 %0, 1
+  %3 = icmp samesign ugt i32 %0, 1
   %4 = select i1 %3, i1 %2, i1 false
   ret i1 %4
 }
@@ -158,7 +159,7 @@ entry:
 ; gromacs/optimized/orires.cpp.ll
 ; recastnavigation/optimized/DetourPathCorridor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, float %1) #0 {
+define i1 @func000000000000008a(i32 %0, float %1) #0 {
 entry:
   %2 = fcmp ogt float %1, 0x3FEFAE1480000000
   %3 = icmp sgt i32 %0, 1
@@ -171,7 +172,7 @@ entry:
 ; hwloc/optimized/lstopo-lstopo-draw.ll
 ; hwloc/optimized/lstopo_no_graphics-lstopo-draw.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007c(i32 %0, float %1) #0 {
+define i1 @func00000000000000ec(i32 %0, float %1) #0 {
 entry:
   %2 = fcmp une float %1, 0.000000e+00
   %3 = icmp ne i32 %0, 0
@@ -180,9 +181,20 @@ entry:
 }
 
 ; 1 occurrences:
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; Function Attrs: nounwind
+define i1 @func000000000000010c(i32 %0, float %1) #0 {
+entry:
+  %2 = fcmp oeq float %1, 0.000000e+00
+  %3 = icmp ne i32 %0, 3
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
+}
+
+; 1 occurrences:
 ; nori/optimized/diffuse.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, float %1) #0 {
+define i1 @func00000000000000a1(i32 %0, float %1) #0 {
 entry:
   %2 = fcmp ugt float %1, 0.000000e+00
   %3 = icmp eq i32 %0, 1
@@ -190,14 +202,24 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
-; opencv/optimized/perf_tsdf.cpp.ll
+; 1 occurrences:
 ; postgres/optimized/tableam.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, float %1) #0 {
+define i1 @func0000000000000044(i32 %0, float %1) #0 {
 entry:
   %2 = fcmp olt float %1, 0.000000e+00
   %3 = icmp ult i32 %0, 10
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
+}
+
+; 1 occurrences:
+; opencv/optimized/perf_tsdf.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000054(i32 %0, float %1) #0 {
+entry:
+  %2 = fcmp olt float %1, 2.000000e+01
+  %3 = icmp samesign ult i32 %0, 255
   %4 = select i1 %3, i1 %2, i1 false
   ret i1 %4
 }

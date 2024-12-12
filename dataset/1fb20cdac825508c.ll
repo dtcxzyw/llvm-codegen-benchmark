@@ -12,7 +12,7 @@ entry:
 }
 
 ; 10 occurrences:
-; c3c/optimized/number.c.ll
+; boost/optimized/within.ll
 ; graphviz/optimized/legal.c.ll
 ; graphviz/optimized/shapes.c.ll
 ; gromacs/optimized/read_params.cpp.ll
@@ -31,7 +31,8 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/within.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; graphviz/optimized/legal.c.ll
 ; openjdk/optimized/cmsgamma.ll

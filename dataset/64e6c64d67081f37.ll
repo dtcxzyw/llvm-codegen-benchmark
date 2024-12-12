@@ -9,7 +9,7 @@ entry:
   %2 = and i64 %1, 4294967295
   %3 = icmp ne i64 %2, 0
   %4 = sext i1 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -23,7 +23,7 @@ entry:
   %2 = lshr i64 %1, 56
   %3 = and i64 %2, 1
   %sext = add nsw i64 %3, -1
-  %4 = add nsw i64 %sext, %0
+  %4 = add nsw i64 %0, %sext
   ret i64 %4
 }
 
@@ -37,7 +37,7 @@ entry:
   %2 = and i64 %1, 24
   %3 = icmp ne i64 %2, 0
   %4 = sext i1 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 

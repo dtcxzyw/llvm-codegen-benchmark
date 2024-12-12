@@ -29,3 +29,36 @@ func0000000000000063:                   # @func0000000000000063
 	vpor	%xmm0, %xmm2, %xmm0
 	vzeroupper
 	retq
+.LCPI1_0:
+	.long	5                               # 0x5
+.LCPI1_3:
+	.zero	4,2
+.LCPI1_1:
+	.zero	16,1
+.LCPI1_2:
+	.byte	2                               # 0x2
+	.byte	2                               # 0x2
+	.byte	2                               # 0x2
+	.byte	2                               # 0x2
+	.byte	2                               # 0x2
+	.byte	2                               # 0x2
+	.byte	2                               # 0x2
+	.byte	2                               # 0x2
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+func0000000000000023:                   # @func0000000000000023
+	vpsllw	$15, %xmm1, %xmm1
+	vpmovw2m	%xmm1, %k1
+	vpcmpltud	.LCPI1_0(%rip){1to8}, %ymm2, %k2
+	vmovdqu8	.LCPI1_1(%rip), %xmm1 {%k2} {z} # xmm1 {%k2} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
+	vpord	.LCPI1_3(%rip){1to4}, %xmm1, %xmm2
+	vmovdqu8	%xmm2, %xmm1 {%k1}
+	vpor	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq

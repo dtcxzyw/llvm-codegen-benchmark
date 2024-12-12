@@ -13,12 +13,12 @@
 ; linux/optimized/netdev.ll
 ; luajit/optimized/lj_strfmt.ll
 ; luajit/optimized/lj_strfmt_dyn.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; miniaudio/optimized/unity.c.ll
 ; oniguruma/optimized/regcomp.ll
 ; opencv/optimized/canny.cpp.ll
 ; openjdk/optimized/hb-ot-shape.ll
 ; openusd/optimized/read.c.ll
-; qemu/optimized/hw_usb_hcd-ohci.c.ll
 ; qemu/optimized/util_log.c.ll
 ; ruby/optimized/sprintf.ll
 ; tev/optimized/Common.cpp.ll

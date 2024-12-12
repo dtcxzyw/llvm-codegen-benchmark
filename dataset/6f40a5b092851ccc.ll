@@ -3,7 +3,7 @@
 ; minetest/optimized/mg_biome.cpp.ll
 ; minetest/optimized/serverenvironment.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i16 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000026(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = sext i16 %2 to i32
   %4 = sext i16 %1 to i32
@@ -19,7 +19,7 @@ entry:
 ; icu/optimized/double-conversion-bignum.ll
 ; openusd/optimized/bignum.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i16 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000027(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = sext i16 %2 to i32
   %4 = sext i16 %1 to i32
@@ -38,7 +38,7 @@ entry:
 ; nuklear/optimized/unity.c.ll
 ; openusd/optimized/bignum.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i16 %0, i16 %1, i16 %2) #0 {
+define i1 @func000000000000002a(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = sext i16 %2 to i32
   %4 = sext i16 %1 to i32

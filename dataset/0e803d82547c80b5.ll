@@ -5,7 +5,7 @@
 define i64 @func0000000000000070(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 4
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = add i64 %4, %0
   %6 = shl i64 %5, 4
   ret i64 %6
@@ -20,7 +20,7 @@ define i64 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = mul nuw i64 %3, %1
-  %5 = add nuw i64 %4, %0
+  %5 = add nuw i64 %0, %4
   %6 = shl i64 %5, 32
   ret i64 %6
 }
@@ -32,7 +32,7 @@ define i64 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = mul nuw nsw i64 %3, %1
-  %5 = add nuw i64 %4, %0
+  %5 = add nuw i64 %0, %4
   %6 = shl i64 %5, 32
   ret i64 %6
 }
@@ -46,15 +46,17 @@ define i64 @func0000000000000040(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 1
   %4 = mul i64 %3, %1
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = shl i64 %5, 4
   ret i64 %6
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; darktable/optimized/introspection_basecurve.c.ll
 ; eastl/optimized/Int128_t.cpp.ll
 ; opencv/optimized/stardetector.cpp.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -65,7 +67,7 @@ entry:
   ret i64 %6
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; eastl/optimized/Int128_t.cpp.ll
 ; hermes/optimized/APInt.cpp.ll
 ; linux/optimized/mpih-div.ll
@@ -73,13 +75,12 @@ entry:
 ; llvm/optimized/ScaledNumber.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; openspiel/optimized/quoridor.cc.ll
-; spike/optimized/s_mul64To128M.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000020(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = mul nuw i64 %3, %1
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = shl i64 %5, 32
   ret i64 %6
 }

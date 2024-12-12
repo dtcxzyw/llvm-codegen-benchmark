@@ -1,7 +1,7 @@
 
-%class.relocInfo.2620323 = type { i16 }
+%class.relocInfo.2733766 = type { i16 }
 
-; 111 occurrences:
+; 113 occurrences:
 ; abc/optimized/solver.c.ll
 ; arrow/optimized/UriNormalize.c.ll
 ; arrow/optimized/array_dict.cc.ll
@@ -21,6 +21,7 @@
 ; cvc5/optimized/ceg_arith_instantiator.cpp.ll
 ; cvc5/optimized/enum_stream_substitution.cpp.ll
 ; cvc5/optimized/monomial_check.cpp.ll
+; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
 ; draco/optimized/point_cloud_encoder.cc.ll
 ; hermes/optimized/CompilerDriver.cpp.ll
 ; hermes/optimized/HiddenClass.cpp.ll
@@ -112,15 +113,16 @@
 ; recastnavigation/optimized/DetourDebugDraw.cpp.ll
 ; recastnavigation/optimized/DetourNavMesh.cpp.ll
 ; yosys/optimized/proc_dlatch.ll
+; yosys/optimized/qwp.ll
 ; zstd/optimized/cover.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1, ptr %2) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = lshr exact i64 %4, 3
   %6 = and i64 %5, 4294967295
-  %7 = getelementptr nusw ptr, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw ptr, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -141,13 +143,13 @@ entry:
 ; velox/optimized/LeadLag.cpp.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1, ptr %2) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = lshr i64 %4, 8
   %6 = and i64 %5, 16777215
-  %7 = getelementptr nusw %class.relocInfo.2620323, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %class.relocInfo.2733766, ptr %0, i64 %6
   ret ptr %7
 }
 

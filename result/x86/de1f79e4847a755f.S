@@ -1,8 +1,3 @@
-func0000000000000030:                   # @func0000000000000030
-	movzwl	%si, %eax
-	leal	(%rax,%rax,8), %eax
-	leal	5(%rdi,%rax,2), %eax
-	retq
 func000000000000003f:                   # @func000000000000003f
 	movzbl	%sil, %eax
 	imull	$150, %eax, %eax
@@ -18,6 +13,11 @@ func0000000000000035:                   # @func0000000000000035
 	movzwl	%si, %eax
 	imull	$365, %eax, %eax                # imm = 0x16D
 	leal	-32045(%rdi,%rax), %eax
+	retq
+func0000000000000030:                   # @func0000000000000030
+	movzbl	%sil, %eax
+	imull	$100, %eax, %eax
+	leal	-1900(%rdi,%rax), %eax
 	retq
 func000000000000003d:                   # @func000000000000003d
 	andl	$55, %esi

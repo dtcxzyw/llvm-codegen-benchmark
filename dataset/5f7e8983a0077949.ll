@@ -119,7 +119,7 @@ entry:
   %3 = add nuw i32 %1, %2
   %4 = lshr exact i32 %3, 2
   %5 = and i32 %4, 50529027
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   %7 = lshr i32 %6, 8
   ret i32 %7
 }
@@ -147,7 +147,7 @@ entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = lshr exact i32 %3, 4
   %5 = and i32 %4, 458759
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   %7 = lshr i32 %6, 16
   ret i32 %7
 }

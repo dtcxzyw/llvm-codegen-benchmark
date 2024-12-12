@@ -1,15 +1,15 @@
 func0000000000000001:                   # @func0000000000000001
-	cmpl	%esi, %edx
+	cmpl	%edx, %esi
 	sete	%al
 	andb	%dil, %al
 	retq
 func0000000000000009:                   # @func0000000000000009
-	cmpl	%esi, %edx
-	setbe	%al
+	cmpl	%edx, %esi
+	setae	%al
 	andb	%dil, %al
 	retq
 func0000000000000008:                   # @func0000000000000008
-	cmpl	%esi, %edx
-	setb	%al
+	cmpl	%edx, %esi
+	seta	%al
 	andb	%dil, %al
 	retq

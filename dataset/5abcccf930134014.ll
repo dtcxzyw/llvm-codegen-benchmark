@@ -1,5 +1,5 @@
 
-; 711 occurrences:
+; 704 occurrences:
 ; abc/optimized/abcBalance.c.ll
 ; abc/optimized/abcDress2.c.ll
 ; abc/optimized/abcExact.c.ll
@@ -48,7 +48,6 @@
 ; abc/optimized/cecChoice.c.ll
 ; abc/optimized/cecCore.c.ll
 ; abc/optimized/cecCorr.c.ll
-; abc/optimized/cecMan.c.ll
 ; abc/optimized/cecSat.c.ll
 ; abc/optimized/cecSatG.c.ll
 ; abc/optimized/cecSatG2.c.ll
@@ -57,11 +56,8 @@
 ; abc/optimized/compress.c.ll
 ; abc/optimized/covMinEsop.c.ll
 ; abc/optimized/covMinSop.c.ll
-; abc/optimized/cswMan.c.ll
 ; abc/optimized/cuddAPI.c.ll
-; abc/optimized/darMan.c.ll
 ; abc/optimized/darRefact.c.ll
-; abc/optimized/dchMan.c.ll
 ; abc/optimized/extraUtilDsd.c.ll
 ; abc/optimized/extraUtilSupp.c.ll
 ; abc/optimized/fraLcr.c.ll
@@ -106,7 +102,6 @@
 ; abc/optimized/llb3Nonlin.c.ll
 ; abc/optimized/llb4Nonlin.c.ll
 ; abc/optimized/lpkCore.c.ll
-; abc/optimized/mapperCore.c.ll
 ; abc/optimized/mfsMan.c.ll
 ; abc/optimized/mioUtils.c.ll
 ; abc/optimized/mpmDsd.c.ll
@@ -116,7 +111,6 @@
 ; abc/optimized/resCore.c.ll
 ; abc/optimized/resSim.c.ll
 ; abc/optimized/retDelay.c.ll
-; abc/optimized/rwrMan.c.ll
 ; abc/optimized/saigIsoSlow.c.ll
 ; abc/optimized/saigStrSim.c.ll
 ; abc/optimized/satSolver.c.ll
@@ -149,6 +143,13 @@
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; annoy/optimized/annoymodule.ll
 ; arrow/optimized/slow.cc.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; bullet3/optimized/btDeformableBodySolver.ll
 ; bullet3/optimized/btDeformableMultiBodyDynamicsWorld.ll
 ; bullet3/optimized/poly34.ll
@@ -195,7 +196,6 @@
 ; flac/optimized/fixed.c.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
 ; flac/optimized/fixed_intrin_sse2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; flac/optimized/fixed_intrin_ssse3.c.ll
 ; flac/optimized/lpc.c.ll
 ; flac/optimized/stream_encoder.c.ll
@@ -328,6 +328,7 @@
 ; llvm/optimized/ImportedFunctionsInliningStatistics.cpp.ll
 ; llvm/optimized/OffloadBundler.cpp.ll
 ; llvm/optimized/Timer.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/Factor.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
@@ -538,17 +539,14 @@
 ; proj/optimized/boggs.cpp.ll
 ; proj/optimized/cea.cpp.ll
 ; proj/optimized/chamb.cpp.ll
-; proj/optimized/crast.cpp.ll
 ; proj/optimized/eck5.cpp.ll
 ; proj/optimized/geodesic.c.ll
 ; proj/optimized/hatano.cpp.ll
 ; proj/optimized/krovak.cpp.ll
 ; proj/optimized/laea.cpp.ll
 ; proj/optimized/lagrng.cpp.ll
-; proj/optimized/mbt_fps.cpp.ll
 ; proj/optimized/mbtfpq.cpp.ll
 ; proj/optimized/nell.cpp.ll
-; proj/optimized/nell_h.cpp.ll
 ; proj/optimized/omerc.cpp.ll
 ; proj/optimized/robin.cpp.ll
 ; proj/optimized/sconics.cpp.ll
@@ -558,7 +556,6 @@
 ; proj/optimized/vandg.cpp.ll
 ; proj/optimized/vandg2.cpp.ll
 ; proj/optimized/vandg4.cpp.ll
-; proj/optimized/wink1.cpp.ll
 ; qemu/optimized/migration_migration.c.ll
 ; qemu/optimized/util_qht.c.ll
 ; qemu/optimized/util_throttle.c.ll
@@ -684,16 +681,10 @@
 ; wireshark/optimized/capture_file_properties_dialog.cpp.ll
 ; wireshark/optimized/io_graph_dialog.cpp.ll
 ; wireshark/optimized/mcast_stream.c.ll
-; wireshark/optimized/packet-asap.c.ll
 ; wireshark/optimized/packet-btl2cap.c.ll
-; wireshark/optimized/packet-calcappprotocol.c.ll
 ; wireshark/optimized/packet-componentstatus.c.ll
-; wireshark/optimized/packet-enrp.c.ll
-; wireshark/optimized/packet-fractalgeneratorprotocol.c.ll
 ; wireshark/optimized/packet-ftp.c.ll
 ; wireshark/optimized/packet-netperfmeter.c.ll
-; wireshark/optimized/packet-pingpongprotocol.c.ll
-; wireshark/optimized/packet-scriptingservice.c.ll
 ; wireshark/optimized/protocol_hierarchy_dialog.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; wireshark/optimized/rtp_audio_stream.cpp.ll
@@ -711,6 +702,8 @@
 ; yosys/optimized/mutate.ll
 ; yosys/optimized/qwp.ll
 ; yosys/optimized/stat.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(double %0, double %1) #0 {
 entry:

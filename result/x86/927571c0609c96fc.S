@@ -1,11 +1,4 @@
-func000000000000000a:                   # @func000000000000000a
-	subl	%edx, %esi
-	shll	$5, %esi
-	addl	%edi, %esi
-	testl	%esi, %esi
-	setg	%al
-	retq
-func000000000000015a:                   # @func000000000000015a
+func00000000000002aa:                   # @func00000000000002aa
 	subl	%edx, %esi
 	shll	$5, %esi
 	addl	%edi, %esi
@@ -17,19 +10,19 @@ func0000000000000006:                   # @func0000000000000006
 	leal	(%rsi,%rdi), %eax
 	shrl	$31, %eax
 	retq
-func0000000000000151:                   # @func0000000000000151
+func00000000000002a1:                   # @func00000000000002a1
 	subl	%edx, %esi
 	addl	%esi, %esi
 	addl	%edi, %esi
 	sete	%al
 	retq
-func0000000000000146:                   # @func0000000000000146
+func0000000000000286:                   # @func0000000000000286
 	subl	%edx, %esi
 	leal	(%rdi,%rsi,8), %eax
 	cmpl	$8, %eax
 	setl	%al
 	retq
-func0000000000000156:                   # @func0000000000000156
+func00000000000002a6:                   # @func00000000000002a6
 	subl	%edx, %esi
 	leal	(%rdi,%rsi,2), %eax
 	shrl	$31, %eax

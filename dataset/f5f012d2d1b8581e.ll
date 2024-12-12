@@ -45,26 +45,37 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
-; llvm/optimized/X86ISelLowering.cpp.ll
-; php/optimized/phpdbg_sigsafe.ll
+; 3 occurrences:
+; ripgrep-rs/optimized/2425miidforqaenw.ll
+; rust-analyzer-rs/optimized/2zm9eul0ycl9zsz3.ll
+; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0, i8 %1) #0 {
+define i1 @func000000000000004c(i64 %0, i8 %1) #0 {
 entry:
-  %2 = trunc i8 %1 to i1
-  %3 = icmp ugt i64 %0, 4194304
+  %2 = trunc nuw i8 %1 to i1
+  %3 = icmp ne i64 %0, 4
   %4 = select i1 %3, i1 true, i1 %2
   ret i1 %4
 }
 
-; 2 occurrences:
-; ripgrep-rs/optimized/2425miidforqaenw.ll
-; rust-analyzer-rs/optimized/2zm9eul0ycl9zsz3.ll
+; 1 occurrences:
+; hermes/optimized/JSLexer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i64 %0, i8 %1) #0 {
+define i1 @func000000000000000a(i64 %0, i8 %1) #0 {
 entry:
-  %2 = trunc nuw i8 %1 to i1
-  %3 = icmp ne i64 %0, 4
+  %2 = trunc i8 %1 to i1
+  %3 = icmp sgt i64 %0, 9
+  %4 = select i1 %3, i1 true, i1 %2
+  ret i1 %4
+}
+
+; 1 occurrences:
+; llvm/optimized/X86ISelLowering.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i64 %0, i8 %1) #0 {
+entry:
+  %2 = trunc i8 %1 to i1
+  %3 = icmp ugt i64 %0, 255
   %4 = select i1 %3, i1 true, i1 %2
   ret i1 %4
 }
@@ -80,16 +91,15 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
-; coreutils-rs/optimized/yiho3rob7ld9k5q.ll
+; 3 occurrences:
 ; gromacs/optimized/check.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; gromacs/optimized/vsite_parm.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000058(i64 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
-  %3 = icmp ugt i64 %0, 1
+  %3 = icmp samesign ugt i64 %0, 1
   %4 = select i1 %3, i1 true, i1 %2
   ret i1 %4
 }
@@ -97,7 +107,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/dssp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000044(i64 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp ult i64 %0, 2
@@ -105,15 +115,39 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
+; 1 occurrences:
+; coreutils-rs/optimized/yiho3rob7ld9k5q.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000048(i64 %0, i8 %1) #0 {
+entry:
+  %2 = trunc nuw i8 %1 to i1
+  %3 = icmp ugt i64 %0, 1
+  %4 = select i1 %3, i1 true, i1 %2
+  ret i1 %4
+}
+
+; 4 occurrences:
 ; coreutils-rs/optimized/11fdr7kbbvsdssj2.ll
 ; opencv/optimized/cv2_convert.cpp.ll
 ; opencv/optimized/pattern_matching.cpp.ll
+; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp eq i64 %0, 1
+  %4 = select i1 %3, i1 true, i1 %2
+  ret i1 %4
+}
+
+; 2 occurrences:
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000046(i64 %0, i8 %1) #0 {
+entry:
+  %2 = trunc nuw i8 %1 to i1
+  %3 = icmp slt i64 %0, -9223372036854775804
   %4 = select i1 %3, i1 true, i1 %2
   ret i1 %4
 }

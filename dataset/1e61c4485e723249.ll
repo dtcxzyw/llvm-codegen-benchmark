@@ -4,7 +4,7 @@
 ; minetest/optimized/serverenvironment.cpp.ll
 ; openjdk/optimized/deoptimization.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i16 %0, i16 %1, i16 %2) #0 {
+define i1 @func00000000000000ca(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp slt i16 %2, %1
   %4 = icmp sgt i16 %0, %1
@@ -17,7 +17,7 @@ entry:
 ; minetest/optimized/content_mapblock.cpp.ll
 ; stockfish/optimized/movepick.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000021(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, %1
   %4 = icmp eq i16 %0, %1
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/deoptimization.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i16 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000088(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp ult i16 %2, %1
   %4 = icmp ugt i16 %0, %1

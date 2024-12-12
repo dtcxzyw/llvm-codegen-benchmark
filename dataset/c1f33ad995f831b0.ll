@@ -1,5 +1,5 @@
 
-; 142 occurrences:
+; 145 occurrences:
 ; arrow/optimized/bignum-dtoa.cc.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/fixed-dtoa.cc.ll
@@ -34,6 +34,8 @@
 ; ceres/optimized/schur_eliminator_4_4_4.cc.ll
 ; ceres/optimized/schur_eliminator_4_4_d.cc.ll
 ; ceres/optimized/schur_eliminator_d_d_d.cc.ll
+; cmake/optimized/setopt.c.ll
+; curl/optimized/libcurl_la-setopt.ll
 ; double_conversion/optimized/bignum-dtoa.cc.ll
 ; double_conversion/optimized/fast-dtoa.cc.ll
 ; double_conversion/optimized/fixed-dtoa.cc.ll
@@ -56,6 +58,7 @@
 ; fmt/optimized/xchar-test.cc.ll
 ; g2o/optimized/optimizable_graph.cpp.ll
 ; g2o/optimized/solver_dense.cpp.ll
+; glslang/optimized/hlslParseHelper.cpp.ll
 ; icu/optimized/double-conversion-bignum-dtoa.ll
 ; icu/optimized/double-conversion-fast-dtoa.ll
 ; icu/optimized/double-conversion-strtod.ll
@@ -151,18 +154,28 @@ entry:
   ret i64 %5
 }
 
-; 6 occurrences:
-; linux/optimized/timeconv.ll
-; protobuf/optimized/arena.cc.ll
+; 3 occurrences:
 ; quickjs/optimized/quickjs-libc.ll
 ; quickjs/optimized/quickjs.ll
-; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; spike/optimized/vaeskf1_vi.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 15
   %4 = icmp ult i64 %1, 10
+  %5 = select i1 %4, i64 %3, i64 %0
+  ret i64 %5
+}
+
+; 3 occurrences:
+; linux/optimized/timeconv.ll
+; llvm/optimized/CompilerInvocation.cpp.ll
+; softposit-rs/optimized/5az6c15ag5q4gib5.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 32768
+  %4 = icmp samesign ult i64 %1, 134217728
   %5 = select i1 %4, i64 %3, i64 %0
   ret i64 %5
 }

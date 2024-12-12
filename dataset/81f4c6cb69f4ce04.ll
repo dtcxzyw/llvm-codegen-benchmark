@@ -19,7 +19,7 @@ entry:
   ret i64 %5
 }
 
-; 24 occurrences:
+; 25 occurrences:
 ; glslang/optimized/ParseHelper.cpp.ll
 ; hyperscan/optimized/mcclellancompile.cpp.ll
 ; linux/optimized/pcmcia_resource.ll
@@ -43,6 +43,7 @@ entry:
 ; llvm/optimized/SplitKit.cpp.ll
 ; llvm/optimized/TargetInstrInfo.cpp.ll
 ; llvm/optimized/TwoAddressInstructionPass.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; wireshark/optimized/packet-someip.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0) #0 {

@@ -1,4 +1,4 @@
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	sext.w	a1, a1
 	beqz	a1, .LBB0_2
 	sext.w	a0, a0
@@ -6,7 +6,16 @@ func000000000000001c:                   # @func000000000000001c
 .LBB0_2:                                # %entry
 	mv	a0, a2
 	ret
-func0000000000000018:                   # @func0000000000000018
+func0000000000000021:                   # @func0000000000000021
+	sext.w	a1, a1
+	li	a3, 1
+	bne	a1, a3, .LBB1_2
+	andi	a0, a2, 1
+.LBB1_2:                                # %entry
+	sext.w	a0, a0
+	seqz	a0, a0
+	ret
+func0000000000000028:                   # @func0000000000000028
 	sext.w	a0, a0
 	sext.w	a1, a1
 	snez	a1, a1

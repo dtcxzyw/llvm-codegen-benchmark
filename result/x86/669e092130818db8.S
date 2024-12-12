@@ -1,7 +1,5 @@
 func0000000000000003:                   # @func0000000000000003
-	xorl	%eax, %eax
-	testb	$6, %sil
-	setne	%al
-	addl	%eax, %eax
-	orl	%edi, %eax
+	andl	$1, %esi
+	shll	$10, %esi
+	leal	1024(%rsi,%rdi), %eax
 	retq

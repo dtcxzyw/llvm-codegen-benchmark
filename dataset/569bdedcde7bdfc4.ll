@@ -31,13 +31,26 @@
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000009a(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %2, %1
   %4 = icmp slt i32 %1, %2
   %5 = select i1 %4, i32 %3, i32 0
   %6 = sext i32 %5 to i64
   %7 = getelementptr nusw i8, ptr %0, i64 %6
+  ret ptr %7
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_mask.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000018(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub i32 %2, %1
+  %4 = icmp slt i32 %1, %2
+  %5 = select i1 %4, i32 %3, i32 0
+  %6 = sext i32 %5 to i64
+  %7 = getelementptr i8, ptr %0, i64 %6
   ret ptr %7
 }
 

@@ -14,6 +14,10 @@ func000000000000000d:                   # @func000000000000000d
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
+func000000000000000f:                   # @func000000000000000f
+	mul	a1, a1, a2
+	add	a0, a0, a1
+	ret
 func000000000000000c:                   # @func000000000000000c
 	mul	a1, a1, a2
 	add	a0, a0, a1

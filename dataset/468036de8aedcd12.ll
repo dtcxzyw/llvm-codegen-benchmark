@@ -1,13 +1,8 @@
 
-; 166 occurrences:
+; 161 occurrences:
 ; abc/optimized/aigMffc.c.ll
 ; abc/optimized/dauTree.c.ll
-; abc/optimized/fraigUtil.c.ll
 ; abc/optimized/fretFlow.c.ll
-; abc/optimized/giaCof.c.ll
-; abc/optimized/giaEra2.c.ll
-; abc/optimized/giaMf.c.ll
-; abc/optimized/satUtil.c.ll
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
@@ -43,7 +38,6 @@
 ; icu/optimized/utf8collationiterator.ll
 ; lief/optimized/File.cpp.ll
 ; linux/optimized/ah6.ll
-; linux/optimized/int_log.ll
 ; linux/optimized/skl_universal_plane.ll
 ; linux/optimized/uhci-hcd.ll
 ; linux/optimized/xfrm_user.ll
@@ -88,8 +82,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -166,6 +158,9 @@
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wireshark/optimized/packet-dns.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0) #0 {
 entry:
@@ -216,7 +211,9 @@ entry:
   ret i32 %3
 }
 
-; 71 occurrences:
+; 73 occurrences:
+; hermes/optimized/Path.cpp.ll
+; llvm/optimized/Path.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -291,9 +288,9 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0) #0 {
 entry:
-  %1 = lshr exact i32 %0, 23
-  %2 = and i32 %1, 510
-  %3 = add nsw i32 %2, -150
+  %1 = lshr exact i32 %0, 12
+  %2 = add nsw i32 %1, -3
+  %3 = and i32 %2, -5
   ret i32 %3
 }
 

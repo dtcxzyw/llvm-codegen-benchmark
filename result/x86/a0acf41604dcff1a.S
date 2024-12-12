@@ -1,4 +1,4 @@
-func00000000000002a4:                   # @func00000000000002a4
+func00000000000007c4:                   # @func00000000000007c4
 	shlq	$5, %rsi
 	addq	%rdi, %rsi
 	shlq	$5, %rdx
@@ -6,15 +6,43 @@ func00000000000002a4:                   # @func00000000000002a4
 	cmpq	%rsi, %rax
 	setb	%al
 	retq
-func00000000000002f1:                   # @func00000000000002f1
+func00000000000005e1:                   # @func00000000000005e1
 	leaq	(%rdi,%rsi,8), %rax
 	leaq	8(%rax,%rdx,8), %rcx
 	cmpq	%rax, %rcx
 	sete	%al
 	retq
-func00000000000002a8:                   # @func00000000000002a8
+func0000000000000544:                   # @func0000000000000544
+	leaq	(%rdi,%rsi,8), %rax
+	leaq	-8(%rax,%rdx,8), %rcx
+	cmpq	%rax, %rcx
+	setb	%al
+	retq
+func0000000000000744:                   # @func0000000000000744
+	leaq	(%rdi,%rsi,8), %rax
+	leaq	-8(%rax,%rdx,8), %rcx
+	cmpq	%rax, %rcx
+	setb	%al
+	retq
+func0000000000000568:                   # @func0000000000000568
 	leaq	(%rdi,%rsi,4), %rax
 	leaq	32(%rax,%rdx,4), %rcx
 	cmpq	%rax, %rcx
 	seta	%al
+	retq
+func00000000000005c1:                   # @func00000000000005c1
+	leaq	(%rsi,%rsi,2), %rax
+	leaq	(%rdi,%rax,8), %rax
+	leaq	(%rdx,%rdx,2), %rcx
+	leaq	-24(%rax,%rcx,8), %rcx
+	cmpq	%rax, %rcx
+	sete	%al
+	retq
+func0000000000000541:                   # @func0000000000000541
+	imulq	$304, %rsi, %rax                # imm = 0x130
+	addq	%rdi, %rax
+	imulq	$304, %rdx, %rcx                # imm = 0x130
+	leaq	-304(%rcx,%rax), %rcx
+	cmpq	%rax, %rcx
+	sete	%al
 	retq

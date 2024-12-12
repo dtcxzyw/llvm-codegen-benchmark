@@ -1,18 +1,18 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	testb	$1, %sil
 	sete	%cl
 	testb	$1, %dil
 	sete	%al
 	orb	%cl, %al
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	testq	$-5, %rsi
 	setne	%cl
 	testq	$-5, %rdi
 	sete	%al
 	orb	%cl, %al
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	movl	%esi, %eax
 	xorq	$1, %rax
 	movl	%edi, %ecx
@@ -20,7 +20,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	orq	%rax, %rcx
 	setne	%al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	andl	$31, %esi
 	cmpl	$27, %esi
 	sete	%cl

@@ -5,6 +5,14 @@ func0000000000000004:                   # @func0000000000000004
 	or	a0, a0, a1
 	addiw	a0, a0, 6
 	ret
+func0000000000000018:                   # @func0000000000000018
+	sext.h	a2, a2
+	slti	a2, a2, 0
+	czero.nez	a1, a1, a2
+	czero.eqz	a0, a0, a2
+	or	a0, a0, a1
+	addiw	a0, a0, 1
+	ret
 func0000000000000030:                   # @func0000000000000030
 	zext.h	a2, a2
 	lui	a3, 11
@@ -74,14 +82,6 @@ func0000000000000019:                   # @func0000000000000019
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1
 	addiw	a0, a0, -1
-	ret
-func0000000000000018:                   # @func0000000000000018
-	sext.h	a2, a2
-	slti	a2, a2, 0
-	czero.nez	a1, a1, a2
-	czero.eqz	a0, a0, a2
-	or	a0, a0, a1
-	addiw	a0, a0, 1
 	ret
 func0000000000000011:                   # @func0000000000000011
 	slli	a2, a2, 48

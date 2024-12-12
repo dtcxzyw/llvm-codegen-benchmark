@@ -32,11 +32,12 @@ entry:
   ret ptr %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; libwebp/optimized/io_dec.c.ll
 ; libwebp/optimized/sharpyuv.c.ll
 ; libwebp/optimized/webp_enc.c.ll
 ; luau/optimized/lvmload.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; openjdk/optimized/bytecodeUtils.ll
 ; openusd/optimized/yuv_scale.c.ll
 ; sqlite/optimized/sqlite3.ll

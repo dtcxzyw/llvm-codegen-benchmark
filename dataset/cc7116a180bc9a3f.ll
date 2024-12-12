@@ -3,7 +3,7 @@
 ; openssl/optimized/libssl-lib-extensions_clnt.ll
 ; openssl/optimized/libssl-shlib-extensions_clnt.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001cc(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func000000000000038c(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %1, 8
@@ -23,7 +23,7 @@ entry:
 ; openssl/optimized/libssl-shlib-statem_clnt.ll
 ; openssl/optimized/libssl-shlib-statem_srvr.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c1(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000381(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %1, 8
@@ -40,7 +40,7 @@ entry:
 ; openssl/optimized/libssl-lib-t1_trce.ll
 ; openssl/optimized/libssl-shlib-t1_trce.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f1(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func00000000000003e1(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %1, 8
@@ -81,7 +81,7 @@ entry:
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c4(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000384(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %1, 8
@@ -103,13 +103,13 @@ entry:
 ; openssl/optimized/servername_test-bin-servername_test.ll
 ; openssl/optimized/sslapitest-bin-sslapitest.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001d4(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func00000000000003b4(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %1, 8
   %5 = or disjoint i64 %4, %3
   %6 = add nsw i64 %0, -2
-  %7 = icmp ult i64 %6, %5
+  %7 = icmp samesign ult i64 %6, %5
   ret i1 %7
 }
 
@@ -128,7 +128,7 @@ entry:
 ; openssl/optimized/servername_test-bin-servername_test.ll
 ; openssl/optimized/sslapitest-bin-sslapitest.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001d1(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func00000000000003a1(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %1, 8
@@ -141,13 +141,26 @@ entry:
 ; 1 occurrences:
 ; openssl/optimized/bad_dtls_test-bin-bad_dtls_test.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001d8(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func00000000000003a8(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %1, 8
   %5 = or disjoint i64 %4, %3
   %6 = add nsw i64 %0, -2
   %7 = icmp ugt i64 %6, %5
+  ret i1 %7
+}
+
+; 1 occurrences:
+; openssl/optimized/servername_test-bin-servername_test.ll
+; Function Attrs: nounwind
+define i1 @func00000000000003a4(i64 %0, i64 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i64
+  %4 = shl nuw nsw i64 %1, 8
+  %5 = or disjoint i64 %4, %3
+  %6 = add nsw i64 %0, -2
+  %7 = icmp ult i64 %6, %5
   ret i1 %7
 }
 
@@ -160,13 +173,13 @@ entry:
 ; lief/optimized/ssl_tls12_server.c.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f4(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func00000000000003f4(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %1, 8
   %5 = or disjoint i64 %4, %3
   %6 = add nuw nsw i64 %0, 1
-  %7 = icmp ult i64 %6, %5
+  %7 = icmp samesign ult i64 %6, %5
   ret i1 %7
 }
 
@@ -176,7 +189,7 @@ entry:
 ; hdf5/optimized/H5FScache.c.ll
 ; hdf5/optimized/H5Pdcpl.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func00000000000000c4(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl i64 %1, 8
@@ -190,7 +203,7 @@ entry:
 ; hdf5/optimized/H5Pdcpl.c.ll
 ; hdf5/optimized/H5Pocpl.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func00000000000000c1(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl i64 %1, 8
@@ -203,7 +216,7 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl i64 %1, 8
@@ -216,20 +229,20 @@ entry:
 ; 1 occurrences:
 ; node/optimized/libnode.crypto_clienthello.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f5(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func00000000000003f5(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %1, 8
   %5 = or disjoint i64 %4, %3
   %6 = add nuw nsw i64 %0, 2
-  %7 = icmp ule i64 %6, %5
+  %7 = icmp samesign ule i64 %6, %5
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; node/optimized/libnode.crypto_clienthello.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f8(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func00000000000003e8(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = shl nuw nsw i64 %1, 8
@@ -242,7 +255,7 @@ entry:
 ; 1 occurrences:
 ; lua/optimized/lundump.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003f1(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func00000000000007e1(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
   %4 = shl nuw nsw i64 %1, 7

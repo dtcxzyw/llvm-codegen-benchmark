@@ -1,5 +1,6 @@
 
 ; 36 occurrences:
+; boost/optimized/topology.ll
 ; cpython/optimized/mmapmodule.ll
 ; cpython/optimized/pathconfig.ll
 ; git/optimized/connect.ll
@@ -32,7 +33,6 @@
 ; postgres/optimized/exec_srv.ll
 ; quickjs/optimized/qjsc.ll
 ; redis/optimized/ldebug.ll
-; redis/optimized/loadlib.ll
 ; ruby/optimized/parser.ll
 ; ruby/optimized/transcode.ll
 ; yosys/optimized/techmap.ll

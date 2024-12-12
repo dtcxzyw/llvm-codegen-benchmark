@@ -9,7 +9,6 @@
 ; casadi/optimized/cs_multiply.c.ll
 ; cmake/optimized/cover.c.ll
 ; cmake/optimized/netrc.c.ll
-; cpython/optimized/datetime.ll
 ; cpython/optimized/pathconfig.ll
 ; cpython/optimized/tracemalloc.ll
 ; curl/optimized/libcurl_la-netrc.ll
@@ -85,7 +84,6 @@
 ; openssl/optimized/libcrypto-lib-property_string.ll
 ; openssl/optimized/libcrypto-lib-rsa_backend.ll
 ; openssl/optimized/libcrypto-lib-rsa_chk.ll
-; openssl/optimized/libcrypto-lib-rsa_depr.ll
 ; openssl/optimized/libcrypto-lib-rsa_sp800_56b_gen.ll
 ; openssl/optimized/libcrypto-lib-sm2_crypt.ll
 ; openssl/optimized/libcrypto-lib-x_pubkey.ll
@@ -99,7 +97,6 @@
 ; openssl/optimized/libcrypto-shlib-property_string.ll
 ; openssl/optimized/libcrypto-shlib-rsa_backend.ll
 ; openssl/optimized/libcrypto-shlib-rsa_chk.ll
-; openssl/optimized/libcrypto-shlib-rsa_depr.ll
 ; openssl/optimized/libcrypto-shlib-rsa_sp800_56b_gen.ll
 ; openssl/optimized/libcrypto-shlib-sm2_crypt.ll
 ; openssl/optimized/libcrypto-shlib-x_pubkey.ll
@@ -142,9 +139,12 @@
 ; wireshark/optimized/copy_from_profile_button.cpp.ll
 ; wireshark/optimized/packet-dbus.c.ll
 ; wireshark/optimized/packet-jxta.c.ll
+; wireshark/optimized/packet-rtmpt.c.ll
 ; wireshark/optimized/packet-rtp.c.ll
 ; wireshark/optimized/profile_dialog.cpp.ll
 ; wolfssl/optimized/ssl.c.ll
+; zed-rs/optimized/2i8hya6f2t9bndlbd6b6686oi.ll
+; zed-rs/optimized/exs06pxuzkdidwvzya8luo4wf.ll
 ; zstd/optimized/cover.c.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; Function Attrs: nounwind
@@ -156,7 +156,7 @@ entry:
   ret i1 %5
 }
 
-; 121 occurrences:
+; 119 occurrences:
 ; assimp/optimized/clipper.cpp.ll
 ; c3c/optimized/llvm_codegen_stmt.c.ll
 ; clamav/optimized/clamfi.c.ll
@@ -260,10 +260,8 @@ entry:
 ; postgres/optimized/pg_dump.ll
 ; postgres/optimized/user.ll
 ; proj/optimized/concatenatedoperation.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; qemu/optimized/block_nbd.c.ll
 ; qemu/optimized/hw_pci_pci.c.ll
-; qemu/optimized/system_balloon.c.ll
 ; qemu/optimized/virtio-9p-client.c.ll
 ; rocksdb/optimized/filter_block_reader_common.cc.ll
 ; rocksdb/optimized/index_reader_common.cc.ll

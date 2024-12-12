@@ -17,6 +17,20 @@ entry:
   ret i32 %5
 }
 
+; 3 occurrences:
+; boost/optimized/alloc_lib.ll
+; luajit/optimized/lj_alloc.ll
+; luajit/optimized/lj_alloc_dyn.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000e(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub i64 %0, %1
+  %3 = lshr i64 %2, 3
+  %4 = trunc nuw nsw i64 %3 to i32
+  %5 = shl nuw i32 1, %4
+  ret i32 %5
+}
+
 ; 1 occurrences:
 ; yosys/optimized/memory_libmap.ll
 ; Function Attrs: nounwind

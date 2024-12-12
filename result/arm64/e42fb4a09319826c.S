@@ -9,7 +9,7 @@ func000000000000001b:                   // @func000000000000001b
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	cmn	x3, x0
+	cmn	x0, x3
 	cinc	x0, x1, hs
 	ret
                                         // -- End function

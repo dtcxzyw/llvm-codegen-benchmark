@@ -2,11 +2,11 @@
 ; 1 occurrences:
 ; mitsuba3/optimized/qmc.cpp.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000028(i16 %0, i32 %1, i32 %2) #0 {
+define i16 @func00000000000000a8(i16 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ule i32 %1, %2
+  %3 = icmp samesign ule i32 %1, %2
   %4 = zext i1 %3 to i16
-  %5 = add i16 %4, %0
+  %5 = add i16 %0, %4
   ret i16 %5
 }
 
@@ -18,7 +18,7 @@ define i16 @func0000000000000008(i16 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, %2
   %4 = zext i1 %3 to i16
-  %5 = add i16 %4, %0
+  %5 = add i16 %0, %4
   ret i16 %5
 }
 
@@ -28,11 +28,11 @@ entry:
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000020(i16 %0, i32 %1, i32 %2) #0 {
+define i16 @func00000000000000a0(i16 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %1, %2
+  %3 = icmp samesign ult i32 %1, %2
   %4 = zext i1 %3 to i16
-  %5 = add i16 %4, %0
+  %5 = add i16 %0, %4
   ret i16 %5
 }
 

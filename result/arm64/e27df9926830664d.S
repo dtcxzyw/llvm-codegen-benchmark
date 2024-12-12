@@ -17,3 +17,13 @@ func0000000000000000:                   // @func0000000000000000
 	sub	x0, x8, x0
 	ret
                                         // -- End function
+func000000000000000c:                   // @func000000000000000c
+// %bb.0:                               // %entry
+	tst	w2, #0x1
+	mov	w8, #13                         // =0xd
+	mov	w9, #25                         // =0x19
+	csel	x8, x9, x8, ne
+	add	x8, x1, x8
+	sub	x0, x8, x0
+	ret
+                                        // -- End function

@@ -3,7 +3,7 @@
 ; darktable/optimized/introspection_demosaic.c.ll
 ; redis/optimized/anet.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000058(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 16384
   %3 = icmp eq i32 %2, 0
@@ -20,7 +20,7 @@ entry:
 ; linux/optimized/intel_vdsc.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000198(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000318(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = icmp ne i32 %2, 0
@@ -34,7 +34,7 @@ entry:
 ; git/optimized/index-pack.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000182(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000302(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 12
   %3 = icmp ne i32 %2, 0
@@ -51,7 +51,7 @@ entry:
 ; linux/optimized/libata-sff.ll
 ; redis/optimized/util.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000042(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 61440
   %3 = icmp eq i32 %2, 16384

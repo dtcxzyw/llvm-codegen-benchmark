@@ -1,5 +1,5 @@
 
-; 53 occurrences:
+; 54 occurrences:
 ; brotli/optimized/utf8_util.c.ll
 ; clamav/optimized/unicode.cpp.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
@@ -36,6 +36,7 @@
 ; llama.cpp/optimized/ggml-quants.c.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/YAMLParser.cpp.ll
+; lvgl/optimized/lv_text.ll
 ; node/optimized/idna.ll
 ; node/optimized/simdutf.ll
 ; oiio/optimized/formatspec.cpp.ll

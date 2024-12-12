@@ -2,7 +2,7 @@
 	.long	4294967293                      # 0xfffffffd
 .LCPI0_1:
 	.long	5                               # 0x5
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpmovqd	%ymm1, %xmm1
 	vpaddd	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1
 	vpcmpltud	.LCPI0_1(%rip){1to4}, %xmm1, %k1

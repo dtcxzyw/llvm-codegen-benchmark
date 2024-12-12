@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; abc/optimized/abcPart.c.ll
 ; abc/optimized/aigPart.c.ll
 ; cmake/optimized/cover.c.ll
@@ -9,7 +9,6 @@
 ; linux/optimized/cacheinfo.ll
 ; linux/optimized/libata-core.ll
 ; linux/optimized/libata-scsi.ll
-; linux/optimized/scsicam.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/SemaRISCV.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll

@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 20 occurrences:
 ; actix-rs/optimized/2nm6r5hc2u1hk1e1.ll
 ; clap-rs/optimized/1zp92zvstj9lufi9.ll
 ; delta-rs/optimized/3qvofkyb7k5flefa.ll
@@ -10,10 +10,18 @@
 ; rust-analyzer-rs/optimized/egul20e4uygvok2.ll
 ; rust-analyzer-rs/optimized/rilullg9p294yp1.ll
 ; rustfmt-rs/optimized/3n0n7c4xrusd0kzl.ll
+; turborepo-rs/optimized/5oyfkcp83qeshlhfpeq645wiv.ll
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; wasmtime-rs/optimized/2ta8crc4qgl9bp8t.ll
+; zed-rs/optimized/0vyyug5k32h9xse2mwakvk78w.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/553y3uma3m7pxzk4dar8hjwb6.ll
+; zed-rs/optimized/8ittejm142jp6pw24sbau2b8f.ll
+; zed-rs/optimized/9igphs4jh07znzucv85uqqzol.ll
+; zed-rs/optimized/ab01r9sf75x1uliqc5hdvn2v4.ll
+; zed-rs/optimized/d31g6vudldcq1cl7b9cowxr8a.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000025(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000045(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 5
   %3 = mul nuw i64 %0, 24
@@ -201,7 +209,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/fair.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 10
   %3 = mul nuw nsw i64 %0, 1280
@@ -212,7 +220,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/ginfast.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000e8(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 10
   %3 = mul nuw nsw i64 %0, 8160
@@ -225,7 +233,7 @@ entry:
 ; graphviz/optimized/csettings.cpp.ll
 ; graphviz/optimized/mainwindow.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 3
   %3 = mul nsw i64 %0, 125
@@ -236,7 +244,7 @@ entry:
 ; 1 occurrences:
 ; ocio/optimized/Lut1DOpGPU.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 2
   %3 = mul i64 %0, 12
@@ -247,7 +255,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/_pickle.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = mul nuw i64 %0, 3

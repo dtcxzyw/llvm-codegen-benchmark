@@ -1,7 +1,6 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; darktable/optimized/masks.c.ll
-; hdf5/optimized/H5VLnative_file.c.ll
 ; linux/optimized/intel_display_power_well.ll
 ; linux/optimized/nfs3proc.ll
 ; linux/optimized/vmalloc.ll

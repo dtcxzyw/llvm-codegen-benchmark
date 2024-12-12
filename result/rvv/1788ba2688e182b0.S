@@ -3,7 +3,7 @@ func0000000000000290:                   # @func0000000000000290
 	vmsgt.vi	v0, v12, 0
 	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vzext.vf2	v11, v10
 	vwaddu.wv	v8, v8, v11
@@ -13,7 +13,7 @@ func000000000000029f:                   # @func000000000000029f
 	vmsgt.vi	v0, v12, -1
 	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vzext.vf2	v11, v10
 	vwaddu.wv	v8, v8, v11
@@ -24,7 +24,7 @@ func0000000000000280:                   # @func0000000000000280
 	vmsgt.vx	v0, v12, a0
 	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vzext.vf2	v11, v10
 	vwaddu.wv	v8, v8, v11
@@ -35,7 +35,7 @@ func000000000000028f:                   # @func000000000000028f
 	vmsgt.vx	v0, v12, a0
 	vmv.v.i	v12, 0
 	vmerge.vim	v12, v12, 1, v0
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	vsetvli	zero, zero, e16, m1, ta, ma
 	vzext.vf2	v11, v10
 	vwaddu.wv	v8, v8, v11

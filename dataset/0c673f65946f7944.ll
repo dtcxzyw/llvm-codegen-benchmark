@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; darktable/optimized/masks.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000198(ptr %0, i32 %1) #0 {
+define i32 @func0000000000000318(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2
   %3 = icmp ne i32 %2, 0
@@ -16,7 +16,7 @@ entry:
 ; postgres/optimized/wparser_def.ll
 ; wireshark/optimized/packet-atalk.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000182(ptr %0, i32 %1) #0 {
+define i32 @func0000000000000302(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 16
   %3 = icmp eq i32 %2, 0

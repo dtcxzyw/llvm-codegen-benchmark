@@ -40,15 +40,12 @@ func0000000000000088:                   # @func0000000000000088
 	kmovd	%k0, %eax
 	retq
 .LCPI5_0:
-	.quad	0x4076700000000000              # double 359
-.LCPI5_1:
-	.quad	0x4066600000000000              # double 179
+	.quad	0x3e80000000000000              # double 1.1920928955078125E-7
 func0000000000000044:                   # @func0000000000000044
 	vsubsd	%xmm2, %xmm1, %xmm1
-	vmovsd	.LCPI5_0(%rip), %xmm2           # xmm2 = [3.59E+2,0.0E+0]
+	vmovsd	.LCPI5_0(%rip), %xmm2           # xmm2 = [1.1920928955078125E-7,0.0E+0]
 	vcmpltpd	%xmm0, %xmm2, %k1
-	vmovsd	.LCPI5_1(%rip), %xmm0           # xmm0 = [1.79E+2,0.0E+0]
-	vcmpltpd	%xmm1, %xmm0, %k0 {%k1}
+	vcmpltpd	%xmm1, %xmm2, %k0 {%k1}
 	kmovd	%k0, %eax
 	retq
 .LCPI6_0:

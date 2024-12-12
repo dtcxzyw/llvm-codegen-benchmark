@@ -1,5 +1,5 @@
 
-; 32 occurrences:
+; 31 occurrences:
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/sclLoad.c.ll
 ; bullet3/optimized/btSoftBody.ll
@@ -15,7 +15,6 @@
 ; meshlab/optimized/edit_point.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/meshselect.cpp.ll
@@ -37,7 +36,7 @@ define float @func0000000000000000(float %0, i1 %1, float %2) #0 {
 entry:
   %3 = fneg float %2
   %4 = select i1 %1, float %2, float %3
-  %5 = fadd float %4, %0
+  %5 = fadd float %0, %4
   ret float %5
 }
 

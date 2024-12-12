@@ -24,7 +24,7 @@ func0000000000000004:                   # @func0000000000000004
 	addi	a0, a0, 1
 	sltiu	a0, a0, 23
 	ret
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	andi	a0, a0, 1
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
@@ -48,7 +48,7 @@ func0000000000000001:                   # @func0000000000000001
 	addi	a0, a0, 10
 	seqz	a0, a0
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	andi	a0, a0, 1
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0
@@ -64,7 +64,7 @@ func000000000000000c:                   # @func000000000000000c
 	addi	a0, a0, -2
 	snez	a0, a0
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	andi	a0, a0, 1
 	czero.nez	a2, a2, a0
 	czero.eqz	a0, a1, a0

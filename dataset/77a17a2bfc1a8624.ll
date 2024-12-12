@@ -26,7 +26,7 @@
 ; wireshark/optimized/packet-fcels.c.ll
 ; wireshark/optimized/packet-fcswils.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, i8 %1) #0 {
+define i1 @func000000000000018c(ptr %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 0
   %3 = icmp ne ptr %0, null
@@ -34,7 +34,7 @@ entry:
   ret i1 %4
 }
 
-; 86 occurrences:
+; 87 occurrences:
 ; duckdb/optimized/ub_duckdb_bind_tableref.cpp.ll
 ; duckdb/optimized/ub_duckdb_optimizer_rules.cpp.ll
 ; entt/optimized/any.cpp.ll
@@ -117,12 +117,13 @@ entry:
 ; wireshark/optimized/packet-fcswils.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-ldap.c.ll
+; wireshark/optimized/packet-opa-mad.c.ll
 ; wireshark/optimized/packet-rtmpt.c.ll
 ; wireshark/optimized/packet-sbus.c.ll
 ; wireshark/optimized/packet-usb.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i8 %1) #0 {
+define i1 @func000000000000002c(ptr %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 0
   %3 = icmp ne ptr %0, null
@@ -142,7 +143,7 @@ entry:
 ; wolfssl/optimized/internal.c.ll
 ; z3/optimized/theory_arith.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, i8 %1) #0 {
+define i1 @func0000000000000181(ptr %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 0
   %3 = icmp eq ptr %0, null
@@ -150,11 +151,17 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 8 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; minetest/optimized/CIrrDeviceSDL.cpp.ll
 ; minetest/optimized/dynamicshadowsrender.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(ptr %0, i8 %1) #0 {
+define i1 @func0000000000000101(ptr %0, i8 %1) #0 {
 entry:
   %2 = icmp ugt i8 %1, 1
   %3 = icmp eq ptr %0, null
@@ -162,12 +169,18 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
+; 9 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; php/optimized/zend_language_parser.ll
 ; wireshark/optimized/packet-coap.c.ll
 ; wireshark/optimized/packet-sbus.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(ptr %0, i8 %1) #0 {
+define i1 @func000000000000008c(ptr %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, 2
   %3 = icmp ne ptr %0, null
@@ -175,13 +188,12 @@ entry:
   ret i1 %4
 }
 
-; 42 occurrences:
+; 41 occurrences:
 ; duckdb/optimized/ub_duckdb_bind_statement.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_join.cpp.ll
 ; duckdb/optimized/ub_duckdb_optimizer_pushdown.cpp.ll
 ; icu/optimized/uloc_tag.ll
 ; linux/optimized/i915_gem_execbuffer.ll
-; linux/optimized/led-core.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/IVDescriptors.cpp.ll
 ; llvm/optimized/InstCombineCasts.cpp.ll
@@ -219,7 +231,7 @@ entry:
 ; yosys/optimized/xilinx_dsp.ll
 ; yosys/optimized/xprop.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i8 %1) #0 {
+define i1 @func0000000000000021(ptr %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 0
   %3 = icmp eq ptr %0, null
@@ -227,26 +239,37 @@ entry:
   ret i1 %4
 }
 
-; 4 occurrences:
-; linux/optimized/tcp_ipv4.ll
+; 9 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; yosys/optimized/opt_dff.ll
 ; yosys/optimized/opt_expr.ll
 ; yosys/optimized/simplec.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, i8 %1) #0 {
+define i1 @func0000000000000081(ptr %0, i8 %1) #0 {
 entry:
-  %2 = icmp ult i8 %1, 2
+  %2 = icmp ult i8 %1, -3
   %3 = icmp eq ptr %0, null
   %4 = select i1 %3, i1 %2, i1 false
   ret i1 %4
 }
 
-; 1 occurrences:
+; 7 occurrences:
 ; linux/optimized/set_memory.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(ptr %0, i8 %1) #0 {
+define i1 @func000000000000010c(ptr %0, i8 %1) #0 {
 entry:
-  %2 = icmp ugt i8 %1, 3
+  %2 = icmp ugt i8 %1, -4
   %3 = icmp ne ptr %0, null
   %4 = select i1 %3, i1 %2, i1 false
   ret i1 %4

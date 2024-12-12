@@ -1,15 +1,7 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	mov	w8, #31                         // =0x1f
-	dup	v2.2d, x8
-	mov	w8, #-32                        // =0xffffffe0
-	dup	v4.2d, x8
-	add	v3.2d, v1.2d, v2.2d
-	add	v2.2d, v0.2d, v2.2d
-	and	v2.16b, v2.16b, v4.16b
-	and	v3.16b, v3.16b, v4.16b
-	sub	v1.2d, v3.2d, v1.2d
-	sub	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
+	add	w8, w0, #31
+	and	w8, w8, #0xffffffe0
+	sub	w0, w8, w0
 	ret
                                         // -- End function

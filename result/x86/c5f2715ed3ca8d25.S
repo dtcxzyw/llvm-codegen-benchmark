@@ -1,10 +1,18 @@
-func000000000000002a:                   # @func000000000000002a
+func000000000000003f:                   # @func000000000000003f
 	movzwl	%dx, %eax
 	addq	%rdi, %rax
 	movl	%esi, %ecx
 	leaq	4(%rcx,%rax), %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+func000000000000007f:                   # @func000000000000007f
+	movzwl	%dx, %eax
+	leaq	(%rax,%rax,2), %rax
+	leaq	(%rdi,%rax,2), %rax
+	movl	%esi, %ecx
+	leaq	(%rcx,%rcx,2), %rcx
+	leaq	2(%rax,%rcx,2), %rax
+	retq
+func0000000000000003:                   # @func0000000000000003
 	movzwl	%dx, %eax
 	addq	%rdi, %rax
 	movl	%esi, %ecx
@@ -16,7 +24,7 @@ func0000000000000040:                   # @func0000000000000040
 	movl	%esi, %ecx
 	leaq	1(%rcx,%rax), %rax
 	retq
-func0000000000000042:                   # @func0000000000000042
+func0000000000000043:                   # @func0000000000000043
 	movzwl	%dx, %eax
 	addq	%rdi, %rax
 	movl	%esi, %ecx

@@ -1,7 +1,6 @@
 
-; 2 occurrences:
+; 1 occurrences:
 ; cvc5/optimized/Solver.cc.ll
-; libwebp/optimized/backward_references_enc.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000b(i64 %0, i32 %1) #0 {
 entry:

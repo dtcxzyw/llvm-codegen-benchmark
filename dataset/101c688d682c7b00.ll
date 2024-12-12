@@ -1,5 +1,5 @@
 
-; 495 occurrences:
+; 497 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/exponential_distribution_test.cc.ll
@@ -17,6 +17,8 @@
 ; arrow/optimized/vector_selection_take_internal.cc.ll
 ; assimp/optimized/3DSLoader.cpp.ll
 ; assimp/optimized/FBXMeshGeometry.cpp.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/parameter_block_ordering.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_2.cc.ll
@@ -517,15 +519,14 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; cpython/optimized/_zoneinfo.ll
-; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = lshr i64 %2, 4
+  %3 = lshr i64 %2, 1
   %4 = select i1 %0, i64 %3, i64 %1
-  %5 = icmp ugt i64 %4, 2
+  %5 = icmp ugt i64 %4, 1
   ret i1 %5
 }
 

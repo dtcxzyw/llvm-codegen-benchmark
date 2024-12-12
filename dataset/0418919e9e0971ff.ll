@@ -36,7 +36,7 @@ entry:
   ret i64 %4
 }
 
-; 41 occurrences:
+; 39 occurrences:
 ; ceres/optimized/block_random_access_sparse_matrix.cc.ll
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -53,9 +53,7 @@ entry:
 ; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
 ; ncnn/optimized/convolution_x86_fma.cpp.ll
 ; ncnn/optimized/convolution_x86_xop.cpp.ll
-; opencv/optimized/p3p.cpp.ll
 ; openjdk/optimized/methodData.ll
-; openmpi/optimized/topo_base_dist_graph_create.ll
 ; openspiel/optimized/bridge.cc.ll
 ; openspiel/optimized/euchre.cc.ll
 ; openspiel/optimized/hearts.cc.ll

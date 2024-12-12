@@ -1,13 +1,12 @@
 
-; 2 occurrences:
+; 1 occurrences:
 ; assimp/optimized/IRRLoader.cpp.ll
-; qemu/optimized/hw_block_hd-geometry.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %0, %1
-  %3 = icmp ult i32 %2, 131073
-  %4 = select i1 %3, i32 3, i32 2
+  %3 = icmp ult i32 %2, 300
+  %4 = select i1 %3, i32 3, i32 4
   ret i32 %4
 }
 
@@ -17,11 +16,29 @@ entry:
 ; oiio/optimized/imagecache.cpp.ll
 ; z3/optimized/nlsat_evaluator.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %0, %1
   %3 = icmp slt i32 %2, 256
   %4 = select i1 %3, i32 8, i32 16
+  ret i32 %4
+}
+
+; 8 occurrences:
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; z3/optimized/nla_order_lemmas.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
+entry:
+  %2 = mul nsw i32 %0, %1
+  %3 = icmp eq i32 %2, 1
+  %4 = select i1 %3, i32 1, i32 2
   ret i32 %4
 }
 
@@ -74,7 +91,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_rps.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %0, %1
   %3 = icmp eq i32 %2, 0
@@ -86,7 +103,7 @@ entry:
 ; linux/optimized/intel_rps.ll
 ; opencv/optimized/waldboost.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i32 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %0, %1
   %3 = icmp sgt i32 %2, 0
@@ -95,20 +112,9 @@ entry:
 }
 
 ; 1 occurrences:
-; z3/optimized/nla_order_lemmas.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
-entry:
-  %2 = mul nsw i32 %0, %1
-  %3 = icmp eq i32 %2, 1
-  %4 = select i1 %3, i32 1, i32 -1
-  ret i32 %4
-}
-
-; 1 occurrences:
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000003a(i32 %0, i32 %1) #0 {
+define i32 @func000000000000006a(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %0, %1
   %3 = icmp sgt i32 %2, 9216

@@ -11,7 +11,7 @@ func0000000000000001:                   # @func0000000000000001
 	notb	%sil
 	andb	%sil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	orl	%edx, %esi
 	cmpl	$2, %edi
 	setae	%al
@@ -28,11 +28,5 @@ func000000000000000a:                   # @func000000000000000a
 	orl	%edx, %esi
 	testl	%edi, %edi
 	setg	%al
-	orb	%sil, %al
-	retq
-func0000000000000004:                   # @func0000000000000004
-	orl	%edx, %esi
-	cmpl	$4, %edi
-	setb	%al
 	orb	%sil, %al
 	retq

@@ -4,7 +4,7 @@ func0000000000000180:                   # @func0000000000000180
 	li	a0, 10
 	vwsll.vv	v14, v13, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vadd.vv	v10, v14, v10
+	vadd.vv	v10, v10, v14
 	vmul.vx	v8, v8, a0
 	vsub.vv	v8, v8, v10
 	ret
@@ -14,7 +14,7 @@ func0000000000000080:                   # @func0000000000000080
 	li	a0, 10
 	vwsll.vv	v14, v13, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vadd.vv	v10, v14, v10
+	vadd.vv	v10, v10, v14
 	vmul.vx	v8, v8, a0
 	vsub.vv	v8, v8, v10
 	ret

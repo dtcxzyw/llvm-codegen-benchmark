@@ -21,11 +21,12 @@ entry:
   ret i8 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; meilisearch-rs/optimized/3f4k2xees4fvt0r.ll
 ; qdrant-rs/optimized/49gep1elv33vxlrq.ll
 ; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
 ; tree-sitter-rs/optimized/42mwgpotg9phq80h.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000001a(i32 %0) #0 {
 entry:
@@ -36,7 +37,7 @@ entry:
   ret i8 %4
 }
 
-; 19 occurrences:
+; 20 occurrences:
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/ColladaParser.cpp.ll
 ; assimp/optimized/D3MFImporter.cpp.ll
@@ -56,6 +57,7 @@ entry:
 ; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
 ; tree-sitter-rs/optimized/42mwgpotg9phq80h.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000018(i32 %0) #0 {
 entry:

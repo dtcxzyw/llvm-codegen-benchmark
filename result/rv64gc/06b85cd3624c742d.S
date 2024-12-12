@@ -1,10 +1,10 @@
-func00000000000000a6:                   # @func00000000000000a6
+func00000000000001e6:                   # @func00000000000001e6
 	blez	a1, .LBB0_2
 	add	a0, a0, a2
 	addi	a0, a0, 1
 .LBB0_2:                                # %entry
 	ret
-func00000000000000a1:                   # @func00000000000000a1
+func00000000000001e1:                   # @func00000000000001e1
 	beqz	a1, .LBB1_2
 	slli	a2, a2, 2
 	add	a0, a0, a2

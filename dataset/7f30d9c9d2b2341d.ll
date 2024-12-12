@@ -1,8 +1,6 @@
 
-; 8 occurrences:
+; 6 occurrences:
 ; hermes/optimized/JSProxy.cpp.ll
-; linux/optimized/genetlink.ll
-; linux/optimized/ht.ll
 ; linux/optimized/intel_sdvo.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/FunctionAttrs.cpp.ll

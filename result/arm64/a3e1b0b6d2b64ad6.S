@@ -16,7 +16,7 @@ func0000000000000006:                   // @func0000000000000006
 	csel	x0, x0, xzr, lt
 	ret
                                         // -- End function
-func0000000000000005:                   // @func0000000000000005
+func0000000000000015:                   // @func0000000000000015
 // %bb.0:                               // %entry
 	cmp	x1, x2
 	csel	x0, xzr, x0, hi
@@ -32,5 +32,17 @@ func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
 	cmp	x1, x2
 	csel	x0, xzr, x0, lt
+	ret
+                                        // -- End function
+func0000000000000018:                   // @func0000000000000018
+// %bb.0:                               // %entry
+	cmp	x1, x2
+	csel	x0, x0, xzr, hi
+	ret
+                                        // -- End function
+func0000000000000014:                   // @func0000000000000014
+// %bb.0:                               // %entry
+	cmp	x1, x2
+	csel	x0, x0, xzr, lo
 	ret
                                         // -- End function

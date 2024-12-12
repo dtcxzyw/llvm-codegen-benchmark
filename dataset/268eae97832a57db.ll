@@ -1,5 +1,5 @@
 
-; 73 occurrences:
+; 75 occurrences:
 ; abc/optimized/abcLut.c.ll
 ; abc/optimized/plaHash.c.ll
 ; abc/optimized/sbd.c.ll
@@ -9,6 +9,7 @@
 ; assimp/optimized/ConvertToLHProcess.cpp.ll
 ; assimp/optimized/PlyExporter.cpp.ll
 ; assimp/optimized/SplitLargeMeshes.cpp.ll
+; boost/optimized/gregorian.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
@@ -40,6 +41,7 @@
 ; llvm/optimized/X86InstCombineIntrinsic.cpp.ll
 ; luajit/optimized/lj_cparse.ll
 ; luajit/optimized/lj_cparse_dyn.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
 ; lz4/optimized/lz4.c.ll
 ; oiio/optimized/imagebuf.cpp.ll
 ; oiio/optimized/imageinput.cpp.ll
@@ -62,7 +64,6 @@
 ; qemu/optimized/hw_core_loader.c.ll
 ; quest/optimized/QuEST_common.c.ll
 ; slurm/optimized/backfill.ll
-; sqlite/optimized/sqlite3.ll
 ; verilator/optimized/V3EmitCHeaders.cpp.ll
 ; wireshark/optimized/packet-dof.c.ll
 ; wireshark/optimized/packet-sml.c.ll
@@ -70,6 +71,7 @@
 ; wolfssl/optimized/pwdbased.c.ll
 ; z3/optimized/sat_aig_cuts.cpp.ll
 ; z3/optimized/seq_rewriter.cpp.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
 ; zxing/optimized/ODEAN13Writer.cpp.ll
 ; zxing/optimized/ODEAN8Writer.cpp.ll
 ; zxing/optimized/ODUPCEWriter.cpp.ll
@@ -104,7 +106,7 @@ entry:
   ret i32 %3
 }
 
-; 46 occurrences:
+; 45 occurrences:
 ; abc/optimized/dauNonDsd.c.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
@@ -133,7 +135,6 @@ entry:
 ; openblas/optimized/dlasyf_rk.c.ll
 ; openblas/optimized/dlasyf_rook.c.ll
 ; opencv/optimized/datastructs.cpp.ll
-; opencv/optimized/detector.cpp.ll
 ; opencv/optimized/msd.cpp.ll
 ; openexr/optimized/ImfDeepTiledInputFile.cpp.ll
 ; openexr/optimized/ImfTiledInputFile.cpp.ll
@@ -175,7 +176,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
-  %3 = add nuw i32 %2, %0
+  %3 = add nuw i32 %0, %2
   ret i32 %3
 }
 

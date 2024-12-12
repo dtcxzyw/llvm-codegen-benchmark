@@ -40,7 +40,7 @@ entry:
   ret i64 %4
 }
 
-; 226 occurrences:
+; 225 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
@@ -166,7 +166,6 @@ entry:
 ; llvm/optimized/PPDirectives.cpp.ll
 ; llvm/optimized/PPExpressions.cpp.ll
 ; llvm/optimized/ProgramState.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVO0PreLegalizerCombiner.cpp.ll
 ; llvm/optimized/RISCVPostLegalizerCombiner.cpp.ll
 ; llvm/optimized/RISCVPreLegalizerCombiner.cpp.ll
@@ -277,7 +276,7 @@ entry:
   ret i64 %4
 }
 
-; 72 occurrences:
+; 71 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/cuddEssent.c.ll
 ; hermes/optimized/APInt.cpp.ll
@@ -325,7 +324,6 @@ entry:
 ; llvm/optimized/LowerSwitch.cpp.ll
 ; llvm/optimized/MallocChecker.cpp.ll
 ; llvm/optimized/MemoryBuiltins.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RangeConstraintManager.cpp.ll
 ; llvm/optimized/SValBuilder.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll

@@ -71,7 +71,7 @@ entry:
   ret i64 %6
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
 ; libquic/optimized/poly1305_vec.c.ll
@@ -79,6 +79,7 @@ entry:
 ; linux/optimized/mpih-div.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
+; lvgl/optimized/lv_span.ll
 ; openssl/optimized/libcrypto-lib-curve25519.ll
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
 ; quickjs/optimized/libbf.ll

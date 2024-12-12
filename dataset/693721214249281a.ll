@@ -12,7 +12,7 @@ define i64 @func0000000000000001(i64 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
   %3 = sext i32 %2 to i64
-  %4 = mul nsw i64 %3, %0
+  %4 = mul nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -53,7 +53,7 @@ define i64 @func0000000000000000(i64 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
   %3 = sext i32 %2 to i64
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   ret i64 %4
 }
 

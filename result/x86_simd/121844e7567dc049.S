@@ -5,7 +5,7 @@ func0000000000000002:                   # @func0000000000000002
 	vpmovd2m	%xmm0, %k0
 	vpaddq	.LCPI0_0(%rip){1to4}, %ymm2, %ymm0
 	vpsrlq	$7, %ymm0, %ymm0
-	vpcmpeqq	%ymm1, %ymm0, %k1
+	vpcmpeqq	%ymm0, %ymm1, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
@@ -17,7 +17,7 @@ func000000000000000a:                   # @func000000000000000a
 	vpmovd2m	%xmm0, %k0
 	vpaddq	.LCPI1_0(%rip){1to4}, %ymm2, %ymm0
 	vpsrlq	$12, %ymm0, %ymm0
-	vpcmpnltuq	%ymm1, %ymm0, %k1
+	vpcmpleuq	%ymm0, %ymm1, %k1
 	korw	%k0, %k1, %k0
 	vpmovm2d	%k0, %xmm0
 	vzeroupper

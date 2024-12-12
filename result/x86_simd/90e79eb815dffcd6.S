@@ -14,7 +14,7 @@ func0000000000000018:                   # @func0000000000000018
 	retq
 .LCPI2_0:
 	.long	2031616                         # 0x1f0000
-func0000000000000010:                   # @func0000000000000010
+func0000000000000030:                   # @func0000000000000030
 	vptestmd	.LCPI2_0(%rip){1to4}, %xmm0, %k0
 	vpmovm2q	%k0, %ymm0
 	vpsrlq	$63, %ymm0, %ymm0
@@ -43,7 +43,7 @@ func0000000000000010:                   # @func0000000000000010
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
-func0000000000000008:                   # @func0000000000000008
+func0000000000000028:                   # @func0000000000000028
 	vpandd	.LCPI3_2(%rip){1to4}, %xmm0, %xmm0
 	vpcmpltd	.LCPI3_1(%rip){1to4}, %xmm0, %k0
 	vpmovm2q	%k0, %ymm0

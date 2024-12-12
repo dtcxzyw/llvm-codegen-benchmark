@@ -1,13 +1,15 @@
 
-; 72 occurrences:
+; 78 occurrences:
 ; abc/optimized/bmcBmc3.c.ll
 ; abc/optimized/giaAiger.c.ll
 ; abc/optimized/giaTim.c.ll
 ; assimp/optimized/ObjExporter.cpp.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/syslog_backend.ll
 ; clamav/optimized/kwajd.c.ll
 ; clamav/optimized/nulsft.c.ll
-; cmake/optimized/archive_write_add_filter_gzip.c.ll
 ; cmake/optimized/mprintf.c.ll
+; cmake/optimized/nghttp2_hd.c.ll
 ; cpython/optimized/longobject.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
@@ -72,6 +74,10 @@
 ; yalantinglibs/optimized/file_server.cpp.ll
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
+; zed-rs/optimized/deqzoqcotewn9fb0m32sor9lr.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
@@ -81,8 +87,9 @@ entry:
   ret i8 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; abseil-cpp/optimized/time_zone_format.cc.ll
+; lvgl/optimized/lv_freetype.ll
 ; pocketpy/optimized/expr.cpp.ll
 ; ruby/optimized/sprintf.ll
 ; Function Attrs: nounwind
@@ -98,9 +105,9 @@ entry:
 ; libwebp/optimized/palette.c.ll
 ; minetest/optimized/terminal_chat_console.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000004(i1 %0, i32 %1) #0 {
+define i8 @func0000000000000014(i1 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 240
+  %2 = icmp samesign ult i32 %1, 240
   %3 = select i1 %2, i8 2, i8 3
   %4 = select i1 %0, i8 1, i8 %3
   ret i8 %4

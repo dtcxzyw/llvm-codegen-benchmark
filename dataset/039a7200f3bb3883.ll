@@ -12,7 +12,7 @@
 ; llvm/optimized/X86FloatingPoint.cpp.ll
 ; wireshark/optimized/packet-ber.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000042(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000082(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
   %4 = icmp eq i32 %1, 1
@@ -25,7 +25,7 @@ entry:
 ; icu/optimized/collationdata.ll
 ; linux/optimized/82571.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000062(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000c2(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 64, %2
   %4 = icmp eq i32 %1, 14

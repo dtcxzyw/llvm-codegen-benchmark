@@ -7,7 +7,7 @@ entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = add nuw i32 %2, 511
   %4 = and i32 %3, -512
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 

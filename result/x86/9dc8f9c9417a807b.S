@@ -20,16 +20,16 @@ func0000000000000000:                   # @func0000000000000000
 	orq	%rdi, %rax
 	retq
 func0000000000000006:                   # @func0000000000000006
-	leaq	(%rdx,%rdx), %rcx
-	xorl	%eax, %eax
+	shlq	$8, %rdx
 	testb	$1, %sil
-	cmovneq	%rcx, %rax
+	movl	$512, %eax                      # imm = 0x200
+	cmovneq	%rdx, %rax
 	orq	%rdi, %rax
 	retq
 func0000000000000007:                   # @func0000000000000007
-	shlq	$32, %rdx
+	shlq	$8, %rdx
 	testb	$1, %sil
-	movabsq	$4294967296, %rax               # imm = 0x100000000
+	movl	$512, %eax                      # imm = 0x200
 	cmovneq	%rdx, %rax
 	orq	%rdi, %rax
 	retq

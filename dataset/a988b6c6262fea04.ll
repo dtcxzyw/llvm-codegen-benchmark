@@ -1,5 +1,7 @@
 
-; 10 occurrences:
+; 12 occurrences:
+; boost/optimized/date_time_format_parser.ll
+; boost/optimized/named_scope_format_parser.ll
 ; cpython/optimized/longobject.ll
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; fmt/optimized/enforce-checks-test.cc.ll

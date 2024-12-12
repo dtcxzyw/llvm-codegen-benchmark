@@ -4,7 +4,7 @@
 ; openusd/optimized/decodeframe.c.ll
 ; wireshark/optimized/packet-rtmpt.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000023(i8 %0) #0 {
+define i64 @func0000000000000043(i8 %0) #0 {
 entry:
   %1 = icmp eq i8 %0, 6
   %2 = icmp eq i8 %0, 11

@@ -42,7 +42,7 @@
 define i1 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = srem i32 %1, %2
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
@@ -53,7 +53,7 @@ entry:
 define i1 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = srem i32 %1, %2
-  %4 = icmp slt i32 %3, %0
+  %4 = icmp sgt i32 %0, %3
   ret i1 %4
 }
 
@@ -77,22 +77,21 @@ entry:
 define i1 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = srem i32 %1, %2
-  %4 = icmp sgt i32 %3, %0
+  %4 = icmp slt i32 %0, %3
   ret i1 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; openmpi/optimized/coll_basic_alltoallw.ll
 ; openmpi/optimized/coll_han_bcast.ll
 ; openmpi/optimized/coll_han_gather.ll
 ; openmpi/optimized/coll_han_reduce.ll
 ; openmpi/optimized/coll_han_scatter.ll
-; openmpi/optimized/monitoring_test.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = srem i32 %1, %2
-  %4 = icmp ne i32 %3, %0
+  %4 = icmp ne i32 %0, %3
   ret i1 %4
 }
 

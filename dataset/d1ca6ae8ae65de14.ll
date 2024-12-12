@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; brotli/optimized/block_splitter.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, i16 %1) #0 {
+define i64 @func0000000000000028(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
   %3 = icmp ugt i64 %0, 54399

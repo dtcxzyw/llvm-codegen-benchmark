@@ -21,7 +21,20 @@ define i64 @func0000000000000004(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, -61
   %3 = select i1 %2, i32 1, i32 2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
+  %5 = sext i32 %4 to i64
+  ret i64 %5
+}
+
+; 2 occurrences:
+; abseil-cpp/optimized/cord.cc.ll
+; abseil-cpp/optimized/cord_rep_btree.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000051(i32 %0, i8 %1) #0 {
+entry:
+  %2 = icmp samesign ult i8 %1, 67
+  %3 = select i1 %2, i32 -29, i32 -3725
+  %4 = add nsw i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }

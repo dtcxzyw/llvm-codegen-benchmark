@@ -3,7 +3,7 @@ func0000000000000001:                   # @func0000000000000001
 	movq	%rsi, %rax
 	cqto
 	idivq	%rcx
-	cmpq	%rdi, %rdx
+	cmpq	%rdx, %rdi
 	sete	%al
 	retq
 func0000000000000006:                   # @func0000000000000006
@@ -11,6 +11,6 @@ func0000000000000006:                   # @func0000000000000006
 	movq	%rsi, %rax
 	cqto
 	idivq	%rcx
-	cmpq	%rdi, %rdx
-	setg	%al
+	cmpq	%rdx, %rdi
+	setl	%al
 	retq

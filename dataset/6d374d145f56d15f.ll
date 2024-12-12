@@ -11,7 +11,20 @@ entry:
   %3 = and i64 %2, 1
   %4 = icmp eq i64 %1, 0
   %5 = select i1 %4, i64 %3, i64 0
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
+  ret i64 %6
+}
+
+; 2 occurrences:
+; boost/optimized/alloc_lib.ll
+; nuttx/optimized/mm_realloc.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -8
+  %4 = icmp eq i64 %1, 1
+  %5 = select i1 %4, i64 %3, i64 0
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 
@@ -23,7 +36,7 @@ entry:
   %3 = and i64 %2, 16368
   %4 = icmp ugt i64 %1, 32
   %5 = select i1 %4, i64 %3, i64 256
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -35,7 +48,7 @@ entry:
   %3 = and i64 %2, 16368
   %4 = icmp ugt i64 %1, 32
   %5 = select i1 %4, i64 %3, i64 256
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -74,24 +87,12 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000013(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000053(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 127
-  %4 = icmp ult i64 %1, 96
+  %4 = icmp samesign ult i64 %1, 96
   %5 = select i1 %4, i64 %3, i64 48
-  %6 = add nuw nsw i64 %5, %0
-  ret i64 %6
-}
-
-; 1 occurrences:
-; nuttx/optimized/mm_realloc.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = and i64 %2, -4
-  %4 = icmp eq i64 %1, 0
-  %5 = select i1 %4, i64 %3, i64 0
-  %6 = add i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 

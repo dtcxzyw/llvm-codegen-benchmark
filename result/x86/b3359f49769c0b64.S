@@ -4,18 +4,19 @@ func000000000000001f:                   # @func000000000000001f
 	setne	%al
 	leal	8(%rdi,%rax,2), %eax
 	retq
-func0000000000000045:                   # @func0000000000000045
-	leal	-1023(%rdi), %ecx
-	leal	-1076(%rdi), %eax
-	cmpl	$1048576, %esi                  # imm = 0x100000
-	cmovael	%ecx, %eax
-	incl	%eax
-	retq
 func000000000000001b:                   # @func000000000000001b
 	xorl	%eax, %eax
 	cmpl	$8, %esi
 	sete	%al
 	leal	4(%rax,%rdi), %eax
+	retq
+func0000000000000065:                   # @func0000000000000065
+	xorl	%eax, %eax
+	cmpl	$2, %esi
+	setge	%al
+	negl	%eax
+	orl	$11, %eax
+	leal	-12(%rdi,%rax), %eax
 	retq
 func0000000000000015:                   # @func0000000000000015
 	cmpl	$1, %esi
@@ -41,4 +42,10 @@ func0000000000000060:                   # @func0000000000000060
 	setge	%al
 	shll	$4, %eax
 	leal	3696(%rax,%rdi), %eax
+	retq
+func0000000000000045:                   # @func0000000000000045
+	leal	7(%rdi), %eax
+	cmpl	$16777216, %esi                 # imm = 0x1000000
+	cmovael	%edi, %eax
+	decl	%eax
 	retq

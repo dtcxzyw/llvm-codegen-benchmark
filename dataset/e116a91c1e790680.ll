@@ -1,5 +1,5 @@
 
-; 162 occurrences:
+; 193 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
@@ -11,6 +11,8 @@
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; base64-rs/optimized/3i18zkzed1c7jyoe.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/topology.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cvc5/optimized/equality_engine.cpp.ll
@@ -39,7 +41,6 @@
 ; hyperscan/optimized/ng_literal_analysis.cpp.ll
 ; hyperscan/optimized/ng_mcclellan.cpp.ll
 ; hyperscan/optimized/ng_small_literal_set.cpp.ll
-; hyperscan/optimized/rose_build_add_mask.cpp.ll
 ; hyperscan/optimized/rose_build_anchored.cpp.ll
 ; hyperscan/optimized/shufticompile.cpp.ll
 ; icu/optimized/umutablecptrie.ll
@@ -50,6 +51,25 @@
 ; jemalloc/optimized/jemalloc_cpp.ll
 ; jemalloc/optimized/jemalloc_cpp.pic.ll
 ; llama.cpp/optimized/common.cpp.ll
+; llvm/optimized/BuildLibCalls.cpp.ll
+; llvm/optimized/ConstantFolding.cpp.ll
+; llvm/optimized/DeadStoreElimination.cpp.ll
+; llvm/optimized/FastISel.cpp.ll
+; llvm/optimized/InstructionCombining.cpp.ll
+; llvm/optimized/LibCallsShrinkWrap.cpp.ll
+; llvm/optimized/LoopVectorizationLegality.cpp.ll
+; llvm/optimized/MemoryBuiltins.cpp.ll
+; llvm/optimized/MemoryLocation.cpp.ll
+; llvm/optimized/MemoryOpRemark.cpp.ll
+; llvm/optimized/PartiallyInlineLibCalls.cpp.ll
+; llvm/optimized/RISCVAsmParser.cpp.ll
+; llvm/optimized/RISCVAsmPrinter.cpp.ll
+; llvm/optimized/RISCVRegisterInfo.cpp.ll
+; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; llvm/optimized/SimplifyLibCalls.cpp.ll
+; llvm/optimized/TargetLibraryInfo.cpp.ll
+; llvm/optimized/TargetTransformInfo.cpp.ll
+; llvm/optimized/UpdateCompilerUsed.cpp.ll
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
 ; luau/optimized/Compiler.cpp.ll
@@ -124,7 +144,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -142,6 +161,13 @@
 ; openjdk/optimized/compilerDirectives.ll
 ; openjdk/optimized/xMark.ll
 ; openjdk/optimized/zMark.ll
+; openusd/optimized/env.cpp.ll
+; openusd/optimized/info.cpp.ll
+; openusd/optimized/instanceAdapter.cpp.ll
+; openusd/optimized/mallocTag.cpp.ll
+; openusd/optimized/openexr-c.c.ll
+; openusd/optimized/pointInstancerAdapter.cpp.ll
+; openusd/optimized/reporter.cpp.ll
 ; php/optimized/zend_alloc.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; redis/optimized/acl.ll
@@ -160,18 +186,23 @@
 ; xgboost/optimized/input_split_base.cc.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 2
-  %3 = getelementptr nusw i8, ptr %0, i64 8
-  %4 = getelementptr nusw [4 x i32], ptr %3, i64 0, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 8
+  %4 = getelementptr nusw nuw [4 x i32], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
@@ -181,20 +212,33 @@ entry:
 ; cvc5/optimized/Solver.cc.ll
 ; darktable/optimized/amaze.cc.ll
 ; llama.cpp/optimized/ggml.c.ll
+; openspiel/optimized/PBN.cpp.ll
 ; openssl/optimized/libcrypto-lib-e_chacha20_poly1305.ll
 ; openssl/optimized/libcrypto-shlib-e_chacha20_poly1305.ll
 ; openssl/optimized/libdefault-lib-cipher_chacha20_hw.ll
 ; openvdb/optimized/SignedFloodFill.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 2
-  %3 = getelementptr nusw i8, ptr %0, i64 32
-  %4 = getelementptr nusw [4 x i32], ptr %3, i64 0, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 32
+  %4 = getelementptr nusw nuw [4 x i32], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 
-; 29 occurrences:
+; 2 occurrences:
+; hyperscan/optimized/rose_build_add_mask.cpp.ll
+; mold/optimized/glob.cc.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 6
+  %3 = getelementptr nusw i8, ptr %0, i64 -32
+  %4 = getelementptr nusw nuw [4 x i64], ptr %3, i64 0, i64 %2
+  ret ptr %4
+}
+
+; 25 occurrences:
 ; cpython/optimized/longobject.ll
 ; cpython/optimized/obmalloc.ll
 ; libsodium/optimized/libsodium_la-softaes.ll
@@ -212,23 +256,19 @@ entry:
 ; postgres/optimized/freepage.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; qemu/optimized/hw_char_cadence_uart.c.ll
-; qemu/optimized/hw_char_mchp_pfsoc_mmuart.c.ll
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
 ; qemu/optimized/hw_net_cadence_gem.c.ll
-; qemu/optimized/hw_net_can_ctucan_pci.c.ll
 ; qemu/optimized/hw_net_vmxnet3.c.ll
 ; qemu/optimized/hw_scsi_esp-pci.c.ll
-; qemu/optimized/hw_sd_cadence_sdhci.c.ll
 ; qemu/optimized/hw_sd_sdhci.c.ll
-; qemu/optimized/hw_ssi_sifive_spi.c.ll
 ; qemu/optimized/hw_usb_hcd-ehci.c.ll
 ; qemu/optimized/system_physmem.c.ll
 ; wireshark/optimized/packet-ssyncp.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000c(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 2
-  %3 = getelementptr nusw i8, ptr %0, i64 1348
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 1348
   %4 = getelementptr [17 x i32], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
@@ -237,10 +277,10 @@ entry:
 ; linux/optimized/fib_trie.ll
 ; qemu/optimized/hw_net_tulip.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001c(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
-  %3 = getelementptr nusw i8, ptr %0, i64 11392
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 11392
   %4 = getelementptr [16 x i32], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
@@ -250,70 +290,22 @@ entry:
 ; darktable/optimized/amaze.cc.ll
 ; hyperscan/optimized/ng_revacc.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
   %3 = getelementptr i8, ptr %0, i64 615168
-  %4 = getelementptr nusw [12800 x float], ptr %3, i64 0, i64 %2
+  %4 = getelementptr nusw nuw [12800 x float], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 
 ; 1 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000013(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 1
   %3 = getelementptr i8, ptr %0, i64 615168
-  %4 = getelementptr nusw [12800 x float], ptr %3, i64 0, i64 %2
-  ret ptr %4
-}
-
-; 27 occurrences:
-; llvm/optimized/BuildLibCalls.cpp.ll
-; llvm/optimized/ConstantFolding.cpp.ll
-; llvm/optimized/DeadStoreElimination.cpp.ll
-; llvm/optimized/FastISel.cpp.ll
-; llvm/optimized/InstructionCombining.cpp.ll
-; llvm/optimized/LibCallsShrinkWrap.cpp.ll
-; llvm/optimized/LoopVectorizationLegality.cpp.ll
-; llvm/optimized/MemoryBuiltins.cpp.ll
-; llvm/optimized/MemoryLocation.cpp.ll
-; llvm/optimized/MemoryOpRemark.cpp.ll
-; llvm/optimized/PartiallyInlineLibCalls.cpp.ll
-; llvm/optimized/RISCVAsmParser.cpp.ll
-; llvm/optimized/RISCVAsmPrinter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; llvm/optimized/RISCVRegisterInfo.cpp.ll
-; llvm/optimized/SelectionDAGBuilder.cpp.ll
-; llvm/optimized/SimplifyLibCalls.cpp.ll
-; llvm/optimized/TargetLibraryInfo.cpp.ll
-; llvm/optimized/TargetTransformInfo.cpp.ll
-; llvm/optimized/UpdateCompilerUsed.cpp.ll
-; openusd/optimized/env.cpp.ll
-; openusd/optimized/info.cpp.ll
-; openusd/optimized/instanceAdapter.cpp.ll
-; openusd/optimized/mallocTag.cpp.ll
-; openusd/optimized/openexr-c.c.ll
-; openusd/optimized/pointInstancerAdapter.cpp.ll
-; openusd/optimized/reporter.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
-entry:
-  %2 = lshr i64 %1, 6
-  %3 = getelementptr nusw nuw i8, ptr %0, i64 216
-  %4 = getelementptr nusw [5 x i64], ptr %3, i64 0, i64 %2
-  ret ptr %4
-}
-
-; 1 occurrences:
-; openspiel/optimized/PBN.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1) #0 {
-entry:
-  %2 = lshr exact i64 %1, 1
-  %3 = getelementptr nusw nuw i8, ptr %0, i64 4
-  %4 = getelementptr nusw [52 x i32], ptr %3, i64 0, i64 %2
+  %4 = getelementptr nusw nuw [12800 x float], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 

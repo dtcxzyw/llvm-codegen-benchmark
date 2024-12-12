@@ -1,17 +1,29 @@
 
-%"struct.asmjit::_abi_1_10::x86::InstDB::InstSignature.2493385" = type { i8, i8, [6 x i8] }
-%"class.openvdb::v11_0::math::Vec3.934.2597353" = type { %"class.openvdb::v11_0::math::Tuple.935.2597354" }
-%"class.openvdb::v11_0::math::Tuple.935.2597354" = type { [3 x %"class.openvdb::v11_0::math::internal::half.2597271"] }
-%"class.openvdb::v11_0::math::internal::half.2597271" = type { i16 }
-%"struct.OT::IntType.167.2617260" = type { %struct.BEInt.168.2617261 }
-%struct.BEInt.168.2617261 = type { i8 }
-%"struct.V3NumberData::ValueAndX.2636811" = type { i32, i32 }
-%struct.scsi_lun.3354788 = type { [8 x i8] }
-%union.ListCell.3467255 = type { ptr }
+%"struct.asmjit::_abi_1_10::x86::InstDB::InstSignature.2608686" = type { i8, i8, [6 x i8] }
+%"class.openvdb::v11_0::math::Vec3.934.2710784" = type { %"class.openvdb::v11_0::math::Tuple.935.2710785" }
+%"class.openvdb::v11_0::math::Tuple.935.2710785" = type { [3 x %"class.openvdb::v11_0::math::internal::half.2710702"] }
+%"class.openvdb::v11_0::math::internal::half.2710702" = type { i16 }
+%"struct.OT::IntType.167.2730712" = type { %struct.BEInt.168.2730713 }
+%struct.BEInt.168.2730713 = type { i8 }
+%"struct.V3NumberData::ValueAndX.2750129" = type { i32, i32 }
+%"class.WasmEdge::Variant.2764046" = type { %"union.WasmEdge::VariadicUnion.2764047" }
+%"union.WasmEdge::VariadicUnion.2764047" = type { %"union.WasmEdge::VariadicUnion.37.2764048" }
+%"union.WasmEdge::VariadicUnion.37.2764048" = type { %"union.WasmEdge::VariadicUnion.38.2764049" }
+%"union.WasmEdge::VariadicUnion.38.2764049" = type { %"union.WasmEdge::VariadicUnion.39.2764050" }
+%"union.WasmEdge::VariadicUnion.39.2764050" = type { %"union.WasmEdge::VariadicUnion.40.2764051" }
+%"union.WasmEdge::VariadicUnion.40.2764051" = type { %"union.WasmEdge::VariadicUnion.41.2764052" }
+%"union.WasmEdge::VariadicUnion.41.2764052" = type { %"union.WasmEdge::VariadicUnion.42.2764053" }
+%"union.WasmEdge::VariadicUnion.42.2764053" = type { i128 }
+%"class.WasmEdge::AST::Instruction.2769671" = type <{ %"union.WasmEdge::AST::Instruction::Inner.2769672", i32, i32, %struct.anon.59.2769673, [7 x i8] }>
+%"union.WasmEdge::AST::Instruction::Inner.2769672" = type { i128 }
+%struct.anon.59.2769673 = type { i8 }
+%struct._zend_op.2791392 = type { ptr, %union._znode_op.2791401, %union._znode_op.2791401, %union._znode_op.2791401, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2791401 = type { i32 }
+%struct.scsi_lun.3542285 = type { [8 x i8] }
+%union.ListCell.3651460 = type { ptr }
 
-; 12 occurrences:
+; 11 occurrences:
 ; linux/optimized/base.ll
-; linux/optimized/dns_key.ll
 ; linux/optimized/indirect.ll
 ; linux/optimized/psargs.ll
 ; postgres/optimized/auth.ll
@@ -23,7 +35,7 @@
 ; wireshark/optimized/ngsniffer.c.ll
 ; wireshark/optimized/packet-rtsp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000204(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
@@ -32,7 +44,7 @@ entry:
   ret i1 %6
 }
 
-; 25 occurrences:
+; 23 occurrences:
 ; cpython/optimized/xmlparse.ll
 ; linux/optimized/block_validity.ll
 ; linux/optimized/bug.ll
@@ -42,11 +54,9 @@ entry:
 ; linux/optimized/ip6_tables.ll
 ; linux/optimized/ip_tables.ll
 ; linux/optimized/nf_conntrack_sip.ll
-; linux/optimized/nfsacl.ll
 ; linux/optimized/posix_acl.ll
 ; linux/optimized/property.ll
 ; linux/optimized/sem.ll
-; linux/optimized/tbxfroot.ll
 ; linux/optimized/trace_events.ll
 ; linux/optimized/trace_printk.ll
 ; linux/optimized/utresrc.ll
@@ -68,8 +78,7 @@ entry:
   ret i1 %6
 }
 
-; 9 occurrences:
-; linux/optimized/input-mt.ll
+; 8 occurrences:
 ; postgres/optimized/ascii.ll
 ; postgres/optimized/varbit.ll
 ; postgres/optimized/write_manifest.ll
@@ -79,7 +88,7 @@ entry:
 ; wireshark/optimized/packet-p_mul.c.ll
 ; wireshark/optimized/packet-rtsp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000201(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
@@ -88,7 +97,7 @@ entry:
   ret i1 %6
 }
 
-; 2382 occurrences:
+; 2386 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abseil-cpp/optimized/graphcycles.cc.ll
 ; actix-rs/optimized/1v3445utu4y7ica.ll
@@ -147,14 +156,14 @@ entry:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/src.ll
 ; bullet3/optimized/btAxisSweep3.ll
 ; clamav/optimized/LzmaDec.c.ll
-; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/pdf.c.ll
-; cmake/optimized/archive_ppmd7.c.ll
-; cmake/optimized/archive_ppmd8.c.ll
 ; cmake/optimized/fs.c.ll
 ; cmake/optimized/huf_decompress.c.ll
+; cmake/optimized/zstd_compress.c.ll
+; cmake/optimized/zstd_opt.c.ll
 ; cvc5/optimized/ite_simp.cpp.ll
 ; cvc5/optimized/node_manager.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
@@ -1152,7 +1161,6 @@ entry:
 ; llvm/optimized/RISCVELFStreamer.cpp.ll
 ; llvm/optimized/RISCVGatherScatterLowering.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
@@ -1936,7 +1944,6 @@ entry:
 ; z3/optimized/card2bv.cpp.ll
 ; z3/optimized/check_logic.cpp.ll
 ; z3/optimized/clp_context.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/cmd_context_to_goal.cpp.ll
 ; z3/optimized/cofactor_elim_term_ite.cpp.ll
 ; z3/optimized/collect_occs.cpp.ll
@@ -2466,22 +2473,28 @@ entry:
 ; z3/optimized/value_generator.cpp.ll
 ; z3/optimized/value_sweep.cpp.ll
 ; z3/optimized/var_subst.cpp.ll
-; z3/optimized/watch_list.cpp.ll
 ; z3/optimized/wmax.cpp.ll
 ; z3/optimized/z3_replayer.cpp.ll
 ; z3/optimized/zstring.cpp.ll
+; zed-rs/optimized/04fhfmlktnjtedpduz35189qo.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/b8qhlvoy2nskqwvkt99c6cu9u.ll
+; zed-rs/optimized/cu6jannw5ajqip9tl6sqjzagm.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; zstd/optimized/huf_decompress.c.ll
+; zstd/optimized/zstd_compress.c.ll
+; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000001e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw ptr, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %0, i64 32
+  %4 = getelementptr nusw nuw ptr, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 32
   %6 = icmp eq ptr %5, %4
   ret i1 %6
 }
 
-; 726 occurrences:
+; 728 occurrences:
 ; assimp/optimized/FBXConverter.cpp.ll
 ; assimp/optimized/HL1MDLLoader.cpp.ll
 ; assimp/optimized/IRRMeshLoader.cpp.ll
@@ -3207,13 +3220,15 @@ entry:
 ; z3/optimized/smt_case_split_queue.cpp.ll
 ; z3/optimized/smt_consequences.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
+; zed-rs/optimized/9lyxlodfxr6ds1lof2oq9jgs7.ll
 ; zxing/optimized/AZDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000003e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw %"struct.asmjit::_abi_1_10::x86::InstDB::InstSignature.2493385", ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %0, i64 8
+  %4 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::x86::InstDB::InstSignature.2608686", ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 8
   %6 = icmp eq ptr %5, %4
   ret i1 %6
 }
@@ -3222,11 +3237,11 @@ entry:
 ; openssl/optimized/libcrypto-lib-bf_lbuf.ll
 ; openssl/optimized/libcrypto-shlib-bf_lbuf.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a9(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000003e9(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %0, i64 1
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 1
   %6 = icmp uge ptr %5, %4
   ret i1 %6
 }
@@ -3252,7 +3267,7 @@ entry:
   ret i1 %6
 }
 
-; 21 occurrences:
+; 27 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; darktable/optimized/DngDecoder.cpp.ll
 ; llvm/optimized/CoroSplit.cpp.ll
@@ -3274,17 +3289,23 @@ entry:
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; wasmedge/optimized/compiler.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/89f8nno15240ug8tk8i1phh9j.ll
+; zed-rs/optimized/8h2d4a3i3ysegc1cht5hd5uc2.ll
+; zed-rs/optimized/9lyxlodfxr6ds1lof2oq9jgs7.ll
+; zed-rs/optimized/bxm2tfnh5mvxjpr839l8em8o3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000061(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %"class.openvdb::v11_0::math::Vec3.934.2597353", ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %0, i64 6
+  %4 = getelementptr %"class.openvdb::v11_0::math::Vec3.934.2710784", ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 6
   %6 = icmp eq ptr %5, %4
   ret i1 %6
 }
 
-; 686 occurrences:
+; 684 occurrences:
 ; abc/optimized/solver.c.ll
 ; assimp/optimized/ImproveCacheLocality.cpp.ll
 ; assimp/optimized/LWOBLoader.cpp.ll
@@ -3292,7 +3313,6 @@ entry:
 ; assimp/optimized/LWOMaterial.cpp.ll
 ; clamav/optimized/infblock.c.ll
 ; clamav/optimized/vba_extract.c.ll
-; cmake/optimized/archive_ppmd8.c.ll
 ; cmake/optimized/frm_driver.c.ll
 ; cmake/optimized/xmlparse.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
@@ -3309,12 +3329,12 @@ entry:
 ; freetype/optimized/type1.c.ll
 ; freetype/optimized/winfnt.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
 ; hermes/optimized/Path.cpp.ll
 ; hermes/optimized/RegExp.cpp.ll
 ; hermes/optimized/zip.c.ll
 ; hyperscan/optimized/program_runtime.c.ll
 ; icu/optimized/decNumber.ll
-; icu/optimized/wrtjava.ll
 ; libdeflate/optimized/deflate_decompress.c.ll
 ; libjpeg-turbo/optimized/jdsample.c.ll
 ; libpng/optimized/pngwrite.c.ll
@@ -3329,8 +3349,6 @@ entry:
 ; luajit/optimized/lj_opt_loop_dyn.ll
 ; luajit/optimized/lj_parse.ll
 ; luajit/optimized/lj_parse_dyn.ll
-; luajit/optimized/lj_record.ll
-; luajit/optimized/lj_record_dyn.ll
 ; luajit/optimized/lj_serialize.ll
 ; luajit/optimized/lj_serialize_dyn.ll
 ; luau/optimized/main.cpp.ll
@@ -3426,7 +3444,9 @@ entry:
 ; openjdk/optimized/graphKit.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; openjdk/optimized/hb-buffer-serialize.ll
+; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/hb-ot-layout.ll
+; openjdk/optimized/hb-ot-metrics.ll
 ; openjdk/optimized/hb-ot-name.ll
 ; openjdk/optimized/heapShared.ll
 ; openjdk/optimized/ifnode.ll
@@ -3597,7 +3617,6 @@ entry:
 ; z3/optimized/check_relation.cpp.ll
 ; z3/optimized/check_sat_result.cpp.ll
 ; z3/optimized/clp_context.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/cofactor_elim_term_ite.cpp.ll
 ; z3/optimized/combined_solver.cpp.ll
 ; z3/optimized/cost_parser.cpp.ll
@@ -3972,32 +3991,27 @@ entry:
 ; zstd/optimized/zstd_lazy.c.ll
 ; zstd/optimized/zstd_ldm.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000001e4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i32, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %0, i64 4
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 1
   %6 = icmp ult ptr %5, %4
   ret i1 %6
 }
 
-; 56 occurrences:
+; 47 occurrences:
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/amapLib.c.ll
 ; abc/optimized/amapParse.c.ll
 ; abc/optimized/amapRead.c.ll
-; abc/optimized/dauTree.c.ll
 ; abc/optimized/extraUtilSupp.c.ll
-; abc/optimized/satSolver.c.ll
-; abc/optimized/satSolver2.c.ll
-; abc/optimized/satSolver3.c.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; clamav/optimized/regcomp.c.ll
 ; cmake/optimized/divsufsort.c.ll
 ; freetype/optimized/truetype.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hermes/optimized/regcomp.c.ll
-; hyperscan/optimized/control_verbs.cpp.ll
 ; icu/optimized/appendable.ll
 ; icu/optimized/decNumber.ll
 ; icu/optimized/locdispnames.ll
@@ -4012,9 +4026,6 @@ entry:
 ; libpng/optimized/pngwutil.c.ll
 ; llama.cpp/optimized/grammar-parser.cpp.ll
 ; llvm/optimized/regcomp.c.ll
-; luajit/optimized/lj_err.ll
-; luajit/optimized/lj_err_dyn.ll
-; luajit/optimized/minilua.ll
 ; luau/optimized/lutf8lib.cpp.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
@@ -4035,27 +4046,22 @@ entry:
 ; php/optimized/zend_file_cache.ll
 ; protobuf/optimized/tokenizer.cc.ll
 ; redis/optimized/lapi.ll
-; redis/optimized/lvm.ll
 ; sqlite/optimized/sqlite3.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a4(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000003e4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i32, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %0, i64 8
+  %4 = getelementptr nusw nuw i32, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 8
   %6 = icmp ult ptr %5, %4
   ret i1 %6
 }
 
-; 28 occurrences:
+; 19 occurrences:
 ; assimp/optimized/LWOBLoader.cpp.ll
 ; assimp/optimized/LWOLoader.cpp.ll
 ; assimp/optimized/MDLLoader.cpp.ll
-; clamav/optimized/pdf.c.ll
-; cmake/optimized/zstd_double_fast.c.ll
-; cmake/optimized/zstd_fast.c.ll
-; cmake/optimized/zstd_ldm.c.ll
 ; freetype/optimized/pfr.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-static.cc.ll
@@ -4071,18 +4077,13 @@ entry:
 ; openjdk/optimized/jvmciCodeInstaller.ll
 ; openjdk/optimized/pngrutil.ll
 ; php/optimized/html.ll
-; php/optimized/zend_gc.ll
 ; sqlite/optimized/sqlite3.ll
-; wasmedge/optimized/helper.cpp.ll
-; zstd/optimized/zstd_double_fast.c.ll
-; zstd/optimized/zstd_fast.c.ll
-; zstd/optimized/zstd_ldm.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000001e8(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %0, i64 1
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 1
   %6 = icmp ugt ptr %5, %4
   ret i1 %6
 }
@@ -4096,11 +4097,11 @@ entry:
 ; openjdk/optimized/hb-ot-font.ll
 ; php/optimized/phar.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a8(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000003e8(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw %"struct.OT::IntType.167.2617260", ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %0, i64 1
+  %4 = getelementptr nusw nuw %"struct.OT::IntType.167.2730712", ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 1
   %6 = icmp ugt ptr %5, %4
   ret i1 %6
 }
@@ -4110,32 +4111,34 @@ entry:
 ; openjdk/optimized/subnode.ll
 ; openjdk/optimized/superword.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a9(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000001e9(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw ptr, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %0, i64 8
+  %4 = getelementptr nusw nuw ptr, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 8
   %6 = icmp uge ptr %5, %4
   ret i1 %6
 }
 
-; 60 occurrences:
-; abseil-cpp/optimized/hash_instantiated_test.cc.ll
-; abseil-cpp/optimized/str_split_test.cc.ll
+; 3 occurrences:
+; libjpeg-turbo/optimized/jdsample.c.ll
+; openjdk/optimized/ProcessHandleImpl_linux.ll
+; openjdk/optimized/jdsample.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000184(ptr %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr i8, ptr %0, i64 1
+  %6 = icmp ult ptr %5, %4
+  ret i1 %6
+}
+
+; 48 occurrences:
 ; gromacs/optimized/findallgputasks.cpp.ll
 ; opencv/optimized/grfmt_jpeg2000_openjpeg.cpp.ll
 ; opencv/optimized/va_intel.cpp.ll
 ; protobuf/optimized/arena.cc.ll
-; protobuf/optimized/command_line_interface.cc.ll
-; protobuf/optimized/descriptor.cc.ll
-; protobuf/optimized/descriptor_database.cc.ll
-; protobuf/optimized/extension_set.cc.ll
-; protobuf/optimized/feature_resolver.cc.ll
-; protobuf/optimized/field_mask_util.cc.ll
-; protobuf/optimized/file.cc.ll
-; protobuf/optimized/map.cc.ll
-; protobuf/optimized/message_builder.cc.ll
-; protobuf/optimized/message_builder_lite.cc.ll
 ; spike/optimized/debug_module.ll
 ; vcpkg/optimized/cofffilereader.cpp.ll
 ; verilator/optimized/V3Assert.cpp.ll
@@ -4181,12 +4184,107 @@ entry:
 ; verilator/optimized/V3WidthCommit.cpp.ll
 ; verilator/optimized/V3WidthSel.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000121(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000261(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %"struct.V3NumberData::ValueAndX.2636811", ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %0, i64 8
+  %4 = getelementptr %"struct.V3NumberData::ValueAndX.2750129", ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 8
   %6 = icmp eq ptr %5, %4
+  ret i1 %6
+}
+
+; 48 occurrences:
+; abc/optimized/ac_wrapper.cpp.ll
+; clamav/optimized/Ppmd7.c.ll
+; cmake/optimized/archive_ppmd7.c.ll
+; cmake/optimized/archive_ppmd8.c.ll
+; llvm/optimized/Stmt.cpp.ll
+; php/optimized/zend_compile.ll
+; php/optimized/zend_hash.ll
+; wasmedge/optimized/refInstr.cpp.ll
+; z3/optimized/bv_bounds_tactic.cpp.ll
+; z3/optimized/dl_context.cpp.ll
+; z3/optimized/emonics.cpp.ll
+; z3/optimized/euf_completion_tactic.cpp.ll
+; z3/optimized/euf_internalize.cpp.ll
+; z3/optimized/euf_solver.cpp.ll
+; z3/optimized/inc_sat_solver.cpp.ll
+; z3/optimized/install_tactic.cpp.ll
+; z3/optimized/lar_solver.cpp.ll
+; z3/optimized/mam.cpp.ll
+; z3/optimized/opt_context.cpp.ll
+; z3/optimized/qe_lite_tactic.cpp.ll
+; z3/optimized/qfaufbv_tactic.cpp.ll
+; z3/optimized/qfauflia_tactic.cpp.ll
+; z3/optimized/qfbv_tactic.cpp.ll
+; z3/optimized/qfidl_tactic.cpp.ll
+; z3/optimized/qflia_tactic.cpp.ll
+; z3/optimized/qfnia_tactic.cpp.ll
+; z3/optimized/qfnra_nlsat_tactic.cpp.ll
+; z3/optimized/qfuf_tactic.cpp.ll
+; z3/optimized/qfufbv_tactic.cpp.ll
+; z3/optimized/quant_tactics.cpp.ll
+; z3/optimized/sat_smt_solver.cpp.ll
+; z3/optimized/simplifier_solver.cpp.ll
+; z3/optimized/sls_tactic.cpp.ll
+; z3/optimized/smt_context.cpp.ll
+; z3/optimized/smt_setup.cpp.ll
+; z3/optimized/spacer_util.cpp.ll
+; z3/optimized/theory_arith.cpp.ll
+; z3/optimized/theory_array.cpp.ll
+; z3/optimized/theory_bv.cpp.ll
+; z3/optimized/theory_datatype.cpp.ll
+; z3/optimized/theory_dense_diff_logic.cpp.ll
+; z3/optimized/theory_diff_logic.cpp.ll
+; z3/optimized/theory_fpa.cpp.ll
+; z3/optimized/theory_seq.cpp.ll
+; z3/optimized/theory_special_relations.cpp.ll
+; z3/optimized/theory_str.cpp.ll
+; z3/optimized/theory_utvpi.cpp.ll
+; z3/optimized/ufbv_tactic.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001c1(ptr %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = getelementptr nusw nuw %"class.WasmEdge::Variant.2764046", ptr %1, i64 %3
+  %5 = getelementptr nusw i8, ptr %0, i64 -16
+  %6 = icmp eq ptr %5, %4
+  ret i1 %6
+}
+
+; 9 occurrences:
+; clamav/optimized/pdf.c.ll
+; cmake/optimized/zstd_double_fast.c.ll
+; cmake/optimized/zstd_fast.c.ll
+; cmake/optimized/zstd_ldm.c.ll
+; php/optimized/zend_gc.ll
+; wasmedge/optimized/helper.cpp.ll
+; zstd/optimized/zstd_double_fast.c.ll
+; zstd/optimized/zstd_fast.c.ll
+; zstd/optimized/zstd_ldm.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001c8(ptr %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = getelementptr nusw nuw %"class.WasmEdge::AST::Instruction.2769671", ptr %1, i64 %3
+  %5 = getelementptr nusw i8, ptr %0, i64 -32
+  %6 = icmp ugt ptr %5, %4
+  ret i1 %6
+}
+
+; 5 occurrences:
+; cmake/optimized/archive_ppmd8.c.ll
+; icu/optimized/wrtjava.ll
+; luajit/optimized/lj_record.ll
+; luajit/optimized/lj_record_dyn.ll
+; php/optimized/block_pass.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001c4(ptr %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = getelementptr nusw nuw %struct._zend_op.2791392, ptr %1, i64 %3
+  %5 = getelementptr nusw i8, ptr %0, i64 -32
+  %6 = icmp ult ptr %5, %4
   ret i1 %6
 }
 
@@ -4194,28 +4292,46 @@ entry:
 ; assimp/optimized/MDLLoader.cpp.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a5(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000001e5(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %0, i64 44
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 44
   %6 = icmp ule ptr %5, %4
+  ret i1 %6
+}
+
+; 7 occurrences:
+; abc/optimized/aigRet.c.ll
+; abc/optimized/dauTree.c.ll
+; hyperscan/optimized/control_verbs.cpp.ll
+; luajit/optimized/lj_err.ll
+; luajit/optimized/lj_err_dyn.ll
+; luajit/optimized/minilua.ll
+; redis/optimized/lvm.ll
+; Function Attrs: nounwind
+define i1 @func00000000000003c4(ptr %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = getelementptr nusw nuw i64, ptr %1, i64 %3
+  %5 = getelementptr nusw i8, ptr %0, i64 -8
+  %6 = icmp ult ptr %5, %4
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; luau/optimized/lutf8lib.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000184(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000384(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %0, i64 -1
   %6 = icmp ult ptr %5, %4
   ret i1 %6
 }
 
-; 250 occurrences:
+; 249 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-cff1.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -4315,7 +4431,6 @@ entry:
 ; z3/optimized/bind_variables.cpp.ll
 ; z3/optimized/bv_delay_internalize.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/datalog_parser.cpp.ll
 ; z3/optimized/datatype_decl_plugin.cpp.ll
 ; z3/optimized/datatype_factory.cpp.ll
@@ -4467,11 +4582,11 @@ entry:
 ; z3/optimized/value_factory.cpp.ll
 ; z3/optimized/wmax.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000001ec(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i16, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %0, i64 2
+  %4 = getelementptr nusw nuw i16, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 2
   %6 = icmp ne ptr %5, %4
   ret i1 %6
 }
@@ -4479,10 +4594,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/RegAllocPBQP.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000181(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw float, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw float, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %0, i64 4
   %6 = icmp eq ptr %5, %4
   ret i1 %6
@@ -4509,11 +4624,11 @@ entry:
 ; z3/optimized/nlqsat.cpp.ll
 ; z3/optimized/smt_consequences.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001ac(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000003ec(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw ptr, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %0, i64 8
+  %4 = getelementptr nusw nuw ptr, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 8
   %6 = icmp ne ptr %5, %4
   ret i1 %6
 }
@@ -4539,16 +4654,39 @@ entry:
   ret i1 %6
 }
 
+; 12 occurrences:
+; abseil-cpp/optimized/hash_instantiated_test.cc.ll
+; abseil-cpp/optimized/str_split_test.cc.ll
+; protobuf/optimized/command_line_interface.cc.ll
+; protobuf/optimized/descriptor.cc.ll
+; protobuf/optimized/descriptor_database.cc.ll
+; protobuf/optimized/extension_set.cc.ll
+; protobuf/optimized/feature_resolver.cc.ll
+; protobuf/optimized/field_mask_util.cc.ll
+; protobuf/optimized/file.cc.ll
+; protobuf/optimized/map.cc.ll
+; protobuf/optimized/message_builder.cc.ll
+; protobuf/optimized/message_builder_lite.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000241(ptr %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = getelementptr i32, ptr %1, i64 %3
+  %5 = getelementptr nusw i8, ptr %0, i64 -4
+  %6 = icmp eq ptr %5, %4
+  ret i1 %6
+}
+
 ; 3 occurrences:
 ; cmake/optimized/divsufsort.c.ll
 ; hyperscan/optimized/castle.c.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000124(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000264(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %0, i64 1
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 1
   %6 = icmp ult ptr %5, %4
   ret i1 %6
 }
@@ -4559,11 +4697,11 @@ entry:
 ; zstd/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000064(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %0, i64 32
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 32
   %6 = icmp ult ptr %5, %4
   ret i1 %6
 }
@@ -4572,10 +4710,10 @@ entry:
 ; linux/optimized/nf_conntrack_irc.ll
 ; linux/optimized/scsi_scan.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000208(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.scsi_lun.3354788, ptr %1, i64 %3
+  %4 = getelementptr %struct.scsi_lun.3542285, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %0, i64 8
   %6 = icmp ugt ptr %5, %4
   ret i1 %6
@@ -4584,12 +4722,24 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/gram.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000109(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000209(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %union.ListCell.3467255, ptr %1, i64 %3
+  %4 = getelementptr %union.ListCell.3651460, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %0, i64 8
   %6 = icmp uge ptr %5, %4
+  ret i1 %6
+}
+
+; 1 occurrences:
+; opencv/optimized/onnx_importer.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000003c1(ptr %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = getelementptr nusw nuw i32, ptr %1, i64 %3
+  %5 = getelementptr nusw i8, ptr %0, i64 -4
+  %6 = icmp eq ptr %5, %4
   ret i1 %6
 }
 

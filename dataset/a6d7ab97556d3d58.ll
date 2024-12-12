@@ -6,7 +6,7 @@
 ; llvm/optimized/APInt.cpp.ll
 ; php/optimized/pcre2_match.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000063(i32 %0) #0 {
+define i64 @func00000000000000c3(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 1023
   %2 = icmp eq i32 %1, 0
@@ -20,7 +20,7 @@ entry:
 ; quickjs/optimized/libbf.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000023(i32 %0) #0 {
+define i64 @func0000000000000043(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 63
   %2 = icmp eq i32 %1, 63
@@ -33,7 +33,7 @@ entry:
 ; 1 occurrences:
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000022(i32 %0) #0 {
+define i64 @func0000000000000042(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 63
   %2 = icmp eq i32 %1, 63

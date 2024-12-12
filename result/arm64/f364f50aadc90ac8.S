@@ -27,7 +27,7 @@ func0000000000000032:                   // @func0000000000000032
 // %bb.0:                               // %entry
 	mov	x8, #-2                         // =0xfffffffffffffffe
 	sub	x8, x8, x2
-	madd	x0, x8, x1, x0
+	madd	x0, x1, x8, x0
 	ret
                                         // -- End function
 func0000000000000036:                   // @func0000000000000036

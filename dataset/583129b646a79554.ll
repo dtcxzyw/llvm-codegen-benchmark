@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 39 occurrences:
 ; darktable/optimized/introspection_highlights.c.ll
 ; git/optimized/date.ll
 ; gromacs/optimized/colvargrid.cpp.ll
@@ -15,6 +15,7 @@
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/OpenEXRimages_HDR_Retina_toneMapping.cpp.ll
 ; opencv/optimized/aruco.cpp.ll
+; opencv/optimized/audio_spectrogram.cpp.ll
 ; opencv/optimized/bif.cpp.ll
 ; opencv/optimized/calcHist_Demo.cpp.ll
 ; opencv/optimized/chessboard.cpp.ll
@@ -24,9 +25,9 @@
 ; opencv/optimized/histogram.cpp.ll
 ; opencv/optimized/inner_functions.cpp.ll
 ; opencv/optimized/nonrigid_icp.cpp.ll
-; opencv/optimized/onnx_importer.cpp.ll
 ; opencv/optimized/rand.cpp.ll
 ; opencv/optimized/simple_color_balance.cpp.ll
+; opencv/optimized/speech_recognition.cpp.ll
 ; opencv/optimized/stackblur.cpp.ll
 ; opencv/optimized/stereobm.cpp.ll
 ; opencv/optimized/svm.cpp.ll

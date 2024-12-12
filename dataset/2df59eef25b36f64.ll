@@ -3,7 +3,7 @@
 ; folly/optimized/TcpInfo.cpp.ll
 ; openspiel/optimized/QuickTricks.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000181(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
   %4 = select i1 %0, i1 %3, i1 false
@@ -12,7 +12,7 @@ entry:
   ret i1 %6
 }
 
-; 46 occurrences:
+; 48 occurrences:
 ; clamav/optimized/pe.c.ll
 ; llvm/optimized/CGStmtOpenMP.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
@@ -59,8 +59,10 @@ entry:
 ; z3/optimized/pb_decl_plugin.cpp.ll
 ; z3/optimized/seq_offset_eq.cpp.ll
 ; z3/optimized/tactic_cmds.cpp.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, -1
   %4 = select i1 %0, i1 %3, i1 false
@@ -73,7 +75,7 @@ entry:
 ; verilator/optimized/V3EmitCImp.cpp.ll
 ; verilator/optimized/V3Trace.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 1
   %4 = select i1 %0, i1 %3, i1 false
@@ -88,9 +90,39 @@ entry:
 ; cvc5/optimized/SimpSolver.cc.ll
 ; yosys/optimized/SimpSolver.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000018a(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
+  %4 = select i1 %0, i1 %3, i1 false
+  %5 = icmp sgt i32 %1, 0
+  %6 = select i1 %4, i1 %5, i1 false
+  ret i1 %6
+}
+
+; 6 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; Function Attrs: nounwind
+define i1 @func000000000000008a(i1 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = icmp ult i8 %2, -3
+  %4 = select i1 %0, i1 %3, i1 false
+  %5 = icmp sgt i32 %1, 0
+  %6 = select i1 %4, i1 %5, i1 false
+  ret i1 %6
+}
+
+; 2 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; Function Attrs: nounwind
+define i1 @func000000000000010a(i1 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = icmp ugt i8 %2, -4
   %4 = select i1 %0, i1 %3, i1 false
   %5 = icmp sgt i32 %1, 0
   %6 = select i1 %4, i1 %5, i1 false
@@ -100,7 +132,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-tls.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000028(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 2
   %4 = select i1 %0, i1 %3, i1 false

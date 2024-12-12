@@ -1,4 +1,6 @@
 
+%"class.llvm::MDOperand.3259686" = type { ptr }
+
 ; 6 occurrences:
 ; linux/optimized/libata-scsi.ll
 ; linux/optimized/virtio_net.ll
@@ -27,22 +29,23 @@ entry:
 ; openjdk/optimized/relocInfo_x86.ll
 ; redis/optimized/redis-cli.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i8 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, -43
   %3 = select i1 %2, i64 3, i64 2
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; llvm/optimized/MDBuilder.cpp.ll
 ; redis/optimized/ziplist.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000026(ptr %0, i8 %1) #0 {
+define ptr @func0000000000000027(ptr %0, i8 %1) #0 {
 entry:
-  %2 = icmp ult i8 %1, -2
-  %3 = select i1 %2, i64 1, i64 5
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %2 = icmp ult i8 %1, 31
+  %3 = select i1 %2, i64 4, i64 3
+  %4 = getelementptr nusw nuw %"class.llvm::MDOperand.3259686", ptr %0, i64 %3
   ret ptr %4
 }
 

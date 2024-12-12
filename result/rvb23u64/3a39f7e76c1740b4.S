@@ -3,7 +3,7 @@ func0000000000000022:                   # @func0000000000000022
 	bnez	a0, .LBB0_2
 	fmv.d	fa1, fa2
 .LBB0_2:                                # %entry
-	fmul.d	fa5, fa1, fa0
+	fmul.d	fa5, fa0, fa1
 	fmv.d.x	fa4, zero
 	flt.d	a0, fa5, fa4
 	ret
@@ -12,7 +12,7 @@ func0000000000000028:                   # @func0000000000000028
 	bnez	a0, .LBB1_2
 	fmv.d	fa1, fa2
 .LBB1_2:                                # %entry
-	fmul.d	fa5, fa1, fa0
+	fmul.d	fa5, fa0, fa1
 	fmv.d.x	fa4, zero
 	feq.d	a0, fa5, fa4
 	ret
@@ -30,7 +30,7 @@ func0000000000000023:                   # @func0000000000000023
 	bnez	a0, .LBB3_2
 	fmv.d	fa1, fa2
 .LBB3_2:                                # %entry
-	fmul.d	fa5, fa1, fa0
+	fmul.d	fa5, fa0, fa1
 	fmv.d.x	fa4, zero
 	fle.d	a0, fa4, fa5
 	xori	a0, a0, 1
@@ -68,7 +68,7 @@ func00000000000000ac:                   # @func00000000000000ac
 	bnez	a0, .LBB7_2
 	fmv.d	fa1, fa2
 .LBB7_2:                                # %entry
-	fmul.d	fa5, fa1, fa0
+	fmul.d	fa5, fa0, fa1
 	fmv.d.x	fa4, zero
 	fle.d	a0, fa4, fa5
 	ret
@@ -95,7 +95,7 @@ func0000000000000042:                   # @func0000000000000042
 	bnez	a0, .LBB10_2
 	fmv.d	fa1, fa2
 .LBB10_2:                               # %entry
-	fmul.d	fa5, fa1, fa0
+	fmul.d	fa5, fa0, fa1
 	fli.d	fa4, 1.0
 	flt.d	a0, fa5, fa4
 	ret

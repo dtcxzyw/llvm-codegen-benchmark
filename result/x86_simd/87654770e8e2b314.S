@@ -2,7 +2,7 @@
 	.quad	127                             # 0x7f
 func0000000000000001:                   # @func0000000000000001
 	vpmovzxbd	%xmm1, %xmm1            # xmm1 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero
-	vpcmpeqd	%xmm0, %xmm1, %k1
+	vpcmpeqd	%xmm1, %xmm0, %k1
 	vpbroadcastq	.LCPI0_0(%rip), %ymm0 {%k1} {z} # ymm0 {%k1} {z} = [127,127,127,127]
 	retq
 .LCPI1_0:

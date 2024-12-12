@@ -1,8 +1,10 @@
 
-; 375 occurrences:
+; 373 occurrences:
+; abc/optimized/abcSop.c.ll
 ; abc/optimized/bblif.c.ll
 ; abc/optimized/deflate.c.ll
 ; abc/optimized/giaStr.c.ll
+; abc/optimized/kitPla.c.ll
 ; assimp/optimized/HL1MDLLoader.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
 ; ceres/optimized/polynomial.cc.ll
@@ -47,10 +49,7 @@
 ; linux/optimized/iommu-traces.ll
 ; linux/optimized/main.ll
 ; linux/optimized/mei-trace.ll
-; linux/optimized/mmap_lock.ll
-; linux/optimized/net-traces.ll
 ; linux/optimized/nfs4trace.ll
-; linux/optimized/nfstrace.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/output_core.ll
 ; linux/optimized/power-traces.ll
@@ -65,7 +64,6 @@
 ; linux/optimized/swiotlb.ll
 ; linux/optimized/thermal_core.ll
 ; linux/optimized/vars.ll
-; linux/optimized/virtgpu_trace_points.ll
 ; linux/optimized/vsprintf.ll
 ; linux/optimized/workqueue.ll
 ; llvm/optimized/Delinearization.cpp.ll
@@ -466,13 +464,13 @@ entry:
 ; icu/optimized/messagepattern.ll
 ; icu/optimized/normalizer2impl.ll
 ; icu/optimized/package.ll
+; icu/optimized/ustrcase.ll
 ; icu/optimized/utext.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libquic/optimized/s3_lib.c.ll
 ; libquic/optimized/x509_vfy.c.ll
 ; linux/optimized/mmconfig-shared.ll
-; linux/optimized/swiotlb.ll
 ; llvm/optimized/AArch64LowerHomogeneousPrologEpilog.cpp.ll
 ; llvm/optimized/ControlFlowUtils.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll

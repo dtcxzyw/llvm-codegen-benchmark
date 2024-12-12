@@ -1,11 +1,13 @@
 
-; 259 occurrences:
+; 289 occurrences:
 ; actix-rs/optimized/3sxbtmgc7txd1oqx.ll
 ; actix-rs/optimized/4fx1675rviyztxx0.ll
 ; actix-rs/optimized/d7z2ueos8qkfuul.ll
 ; actix-rs/optimized/x5wdyzwp9hx5e8t.ll
 ; assimp/optimized/IRRLoader.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/work_stealing.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/polynomial.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_2.cc.ll
@@ -57,11 +59,9 @@
 ; hwloc/optimized/hwloc-info.ll
 ; hwloc/optimized/lstopo-lstopo.ll
 ; hwloc/optimized/lstopo_no_graphics-lstopo.ll
-; hyperscan/optimized/huge.cpp.ll
 ; icu/optimized/reslist.ll
 ; influxdb-rs/optimized/45ep097lxkbdotle.ll
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
-; libquic/optimized/a_strnid.c.ll
 ; linux/optimized/dma-fence.ll
 ; linux/optimized/exit.ll
 ; linux/optimized/filemap.ll
@@ -79,7 +79,6 @@
 ; linux/optimized/setup-bus.ll
 ; linux/optimized/setup-res.ll
 ; linux/optimized/shm.ll
-; linux/optimized/vclock_gettime.ll
 ; linux/optimized/vgaarb.ll
 ; linux/optimized/vsprintf.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
@@ -200,9 +199,7 @@
 ; openjdk/optimized/zRelocationSet.ll
 ; openjdk/optimized/zVerify.ll
 ; openssl/optimized/libcommon-lib-tls_pad.ll
-; openssl/optimized/libcrypto-lib-a_strnid.ll
 ; openssl/optimized/libcrypto-lib-err.ll
-; openssl/optimized/libcrypto-shlib-a_strnid.ll
 ; openssl/optimized/libcrypto-shlib-err.ll
 ; openssl/optimized/libssl-lib-quic_channel.ll
 ; openssl/optimized/libssl-shlib-quic_channel.ll
@@ -210,7 +207,6 @@
 ; openssl/optimized/quic_multistream_test-bin-quic_multistream_test.ll
 ; openusd/optimized/stageSceneIndex.cpp.ll
 ; openvdb/optimized/LevelSetMeasure.cc.ll
-; proxygen/optimized/QPACKEncoder.cpp.ll
 ; pyo3-rs/optimized/1dxwqp3o22nst0op.ll
 ; pyo3-rs/optimized/26aiw6t2t8xba8i6.ll
 ; pyo3-rs/optimized/36bd5489ry9qsmb9.ll
@@ -259,6 +255,40 @@
 ; wasmtime-rs/optimized/47hgs4eifsow3k34.ll
 ; yyjson/optimized/yyjson.c.ll
 ; z3/optimized/smt_context.cpp.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/0o1pecj7sihe8j10tk83wbgu7.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/1vv5j9nlfivum07q3z96mzhlk.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/2dbu45lers7mkstxlrhw3mc97.ll
+; zed-rs/optimized/3r1m4prp00pk2zcmrznfgmdke.ll
+; zed-rs/optimized/3xn4w3qarvbzl2jkwavm0419t.ll
+; zed-rs/optimized/41d8ddll8wwmef8q97jpo9b7d.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/47dhsg4crd0e549rnj4wgynqw.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/4ovnxxb7zmwxieofqxkhvk2er.ll
+; zed-rs/optimized/6hbnfszf6gkk4nniq4f5ts2z6.ll
+; zed-rs/optimized/7435o5as5af1nwuofltvv4x7w.ll
+; zed-rs/optimized/7nyodpla10x7d0ixqrkhccie4.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/8r4rexl2hxk4mf5ojed4sh4ix.ll
+; zed-rs/optimized/9v5brbyi15mcpvvj8t9dauqn4.ll
+; zed-rs/optimized/avfqkgc3wosoc0eacq6zrtrq5.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/bg38611xfnz0abj8o6yh866zw.ll
+; zed-rs/optimized/bxihi250edldcndb2a4vmykoa.ll
+; zed-rs/optimized/cgxtqkz3q1lf4y8mn1r3vggst.ll
+; zed-rs/optimized/d31g6vudldcq1cl7b9cowxr8a.ll
+; zed-rs/optimized/d334eo7xhndhquqddprlqx6j8.ll
+; zed-rs/optimized/dr3ks0ib80ortjwkcqg0973x1.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
+; zed-rs/optimized/eio6txv0nku2we5mnjcgiiw85.ll
+; zed-rs/optimized/el2ujbjp7xo4qjt47dh50oqat.ll
+; zed-rs/optimized/ewfky7337ygatenw8mnh0raxz.ll
+; zed-rs/optimized/f10ffiihtazjqkmwr0jihceey.ll
+; zed-rs/optimized/f3wmqxw6x607w7cbx1edvfc95.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
@@ -272,7 +302,7 @@ entry:
 ; spike/optimized/xperm4.ll
 ; spike/optimized/xperm8.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 32
   %.not.not = icmp eq i64 %2, 0
@@ -285,10 +315,10 @@ entry:
 ; linux/optimized/mlme.ll
 ; postgres/optimized/nodeHash.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 9223372036854775807
-  %3 = icmp ugt i64 %2, 9223372032559808512
+  %3 = icmp samesign ugt i64 %2, 9223372032559808512
   %4 = select i1 %3, i64 %0, i64 0
   ret i64 %4
 }

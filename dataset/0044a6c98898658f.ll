@@ -6,7 +6,7 @@ define i1 @func000000000000000a(i32 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = add i32 %2, 1
-  %4 = icmp slt i32 %3, %0
+  %4 = icmp sgt i32 %0, %3
   ret i1 %4
 }
 
@@ -15,11 +15,11 @@ entry:
 ; gromacs/optimized/gmx_xpm2ps.cpp.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, double %1) #0 {
+define i1 @func000000000000002a(i32 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = add nsw i32 %2, 1
-  %4 = icmp slt i32 %3, %0
+  %4 = icmp sgt i32 %0, %3
   ret i1 %4
 }
 
@@ -30,7 +30,7 @@ define i1 @func0000000000000006(i32 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = add i32 %2, 1
-  %4 = icmp sgt i32 %3, %0
+  %4 = icmp slt i32 %0, %3
   ret i1 %4
 }
 
@@ -42,11 +42,11 @@ entry:
 ; quantlib/optimized/japan.ll
 ; stockfish/optimized/search.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, double %1) #0 {
+define i1 @func0000000000000021(i32 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = add nsw i32 %2, 1
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
@@ -56,11 +56,11 @@ entry:
 ; openmpi/optimized/fcoll_dynamic_gen2_file_write_all.ll
 ; openmpi/optimized/fcoll_vulcan_file_write_all.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, double %1) #0 {
+define i1 @func0000000000000026(i32 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = add nsw i32 %2, -1
-  %4 = icmp sgt i32 %3, %0
+  %4 = icmp slt i32 %0, %3
   ret i1 %4
 }
 
@@ -71,7 +71,7 @@ define i1 @func0000000000000001(i32 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = add i32 %2, -1
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 

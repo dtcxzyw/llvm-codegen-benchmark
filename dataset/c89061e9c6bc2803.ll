@@ -1,4 +1,6 @@
 
+%class.XForwardingEntry.2734592 = type { i64 }
+
 ; 7 occurrences:
 ; linux/optimized/binfmt_elf.ll
 ; linux/optimized/compat_binfmt_elf.ll
@@ -16,15 +18,11 @@ entry:
   ret ptr %4
 }
 
-; 14 occurrences:
+; 10 occurrences:
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
 ; eastl/optimized/TestTupleVector.cpp.ll
-; nuttx/optimized/mm_memalign.c.ll
 ; openjdk/optimized/screencast_pipewire.ll
-; openjdk/optimized/xForwarding.ll
-; openjdk/optimized/xNMethodData.ll
 ; openjdk/optimized/xRelocate.ll
-; openjdk/optimized/zForwarding.ll
 ; openjdk/optimized/zRelocate.ll
 ; openjdk/optimized/zVerify.ll
 ; redis/optimized/edata.ll
@@ -32,11 +30,29 @@ entry:
 ; redis/optimized/hpdata.ll
 ; redis/optimized/hpdata.sym.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(i64 %0, i64 %1) #0 {
+define ptr @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 8
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw i8, ptr %3, i64 %0
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %0
+  ret ptr %4
+}
+
+; 8 occurrences:
+; eastl/optimized/TestTupleVector.cpp.ll
+; nuttx/optimized/mm_memalign.c.ll
+; openjdk/optimized/xForwarding.ll
+; openjdk/optimized/xNMethodData.ll
+; openjdk/optimized/xRelocate.ll
+; openjdk/optimized/zForwarding.ll
+; openjdk/optimized/zRelocate.ll
+; openjdk/optimized/zVerify.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000002(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %1, 136
+  %3 = inttoptr i64 %2 to ptr
+  %4 = getelementptr nusw %class.XForwardingEntry.2734592, ptr %3, i64 %0
   ret ptr %4
 }
 

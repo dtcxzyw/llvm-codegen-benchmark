@@ -34,8 +34,9 @@ entry:
   ret i32 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; abc/optimized/giaEmbed.c.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0, i16 %1) #0 {
 entry:

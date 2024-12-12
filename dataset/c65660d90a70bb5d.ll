@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/numeric.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000022(i64 %0) #0 {
+define i64 @func0000000000000042(i64 %0) #0 {
 entry:
   %1 = icmp eq i64 %0, 1
   %2 = icmp eq i64 %0, -1
@@ -15,7 +15,7 @@ entry:
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; delta-rs/optimized/4zvphat0q9a964bz.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000034(i64 %0) #0 {
+define i64 @func0000000000000054(i64 %0) #0 {
 entry:
   %1 = icmp eq i64 %0, -9223372036854775807
   %2 = icmp sgt i64 %0, -9223372036854775806

@@ -1,17 +1,9 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	ushll	v2.4s, v2.4h, #0
-	add	v1.2d, v4.2d, v1.2d
-	mov	x8, #-2                         // =0xfffffffffffffffe
-	add	v0.2d, v3.2d, v0.2d
-	dup	v4.2d, x8
-	ushll2	v5.2d, v2.4s, #0
-	ushll	v2.2d, v2.2s, #0
-	shl	v2.2d, v2.2d, #63
-	shl	v3.2d, v5.2d, #63
-	ssra	v0.2d, v2.2d, #63
-	ssra	v1.2d, v3.2d, #63
-	add	v1.2d, v1.2d, v4.2d
-	add	v0.2d, v0.2d, v4.2d
+                                        // kill: def $w1 killed $w1 def $x1
+	add	x8, x2, x0
+	and	x9, x1, #0x1
+	sub	x8, x8, x9
+	sub	x0, x8, #2
 	ret
                                         // -- End function

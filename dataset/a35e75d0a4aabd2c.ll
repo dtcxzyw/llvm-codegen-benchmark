@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 27 occurrences:
 ; cpython/optimized/codeobject.ll
 ; cpython/optimized/flowgraph.ll
 ; darktable/optimized/print_settings.c.ll
@@ -13,23 +13,32 @@
 ; linux/optimized/skbuff.ll
 ; llvm/optimized/DwarfExpression.cpp.ll
 ; llvm/optimized/MachObjectWriter.cpp.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_checkbox.ll
+; lvgl/optimized/lv_obj_pos.ll
+; lvgl/optimized/lv_obj_scroll.ll
+; lvgl/optimized/lv_roller.ll
+; lvgl/optimized/lv_scale.ll
+; lvgl/optimized/lv_table.ll
 ; openjdk/optimized/type.ll
 ; quickjs/optimized/quickjs.ll
 ; ruby/optimized/thread.ll
 ; wireshark/optimized/packet-quic.c.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; yosys/optimized/equiv_struct.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = trunc i64 %1 to i32
   %5 = add i32 %4, %3
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; lvgl/optimized/lv_chart.ll
 ; minetest/optimized/CGUIEditBox.cpp.ll
 ; minetest/optimized/guiEditBoxWithScrollbar.cpp.ll
 ; Function Attrs: nounwind
@@ -42,9 +51,15 @@ entry:
   ret i32 %6
 }
 
-; 6 occurrences:
+; 12 occurrences:
 ; freetype/optimized/sdf.c.ll
 ; llvm/optimized/SampleProfileMatcher.cpp.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_checkbox.ll
+; lvgl/optimized/lv_scale.ll
+; lvgl/optimized/lv_slider.ll
+; lvgl/optimized/lv_textarea.ll
 ; opencv/optimized/erfilter.cpp.ll
 ; openjdk/optimized/javaClasses.ll
 ; openspiel/optimized/quoridor.cc.ll
@@ -119,6 +134,19 @@ entry:
   ret i32 %6
 }
 
+; 2 occurrences:
+; lvgl/optimized/lv_checkbox.ll
+; lvgl/optimized/lv_scale.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i32 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %2 to i32
+  %4 = trunc i64 %1 to i32
+  %5 = add nsw i32 %4, %3
+  %6 = add i32 %0, %5
+  ret i32 %6
+}
+
 ; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
@@ -127,7 +155,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = trunc nsw i64 %1 to i32
   %5 = add i32 %4, %3
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -167,7 +195,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = trunc i64 %1 to i32
   %5 = add nsw i32 %4, %3
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   ret i32 %6
 }
 

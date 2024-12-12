@@ -1,5 +1,15 @@
 
-; 91 occurrences:
+; 102 occurrences:
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/gregorian.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; cmake/optimized/http.c.ll
 ; cmake/optimized/json_value.cpp.ll
 ; cpython/optimized/object.ll
@@ -9,7 +19,6 @@
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/print_settings.c.ll
 ; eastl/optimized/EADateTime.cpp.ll
-; flac/optimized/stream_encoder.c.ll
 ; freetype/optimized/autofit.c.ll
 ; git/optimized/grep.ll
 ; git/optimized/patch-id.ll
@@ -36,7 +45,6 @@
 ; llvm/optimized/KnownBits.cpp.ll
 ; llvm/optimized/LLParser.cpp.ll
 ; llvm/optimized/ODRHash.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/SemaSwift.cpp.ll
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
@@ -75,6 +83,7 @@
 ; wireshark/optimized/oids.c.ll
 ; wireshark/optimized/packet-mtp2.c.ll
 ; wireshark/optimized/packet-openvpn.c.ll
+; wireshark/optimized/rtp_audio_routing.cpp.ll
 ; wireshark/optimized/search_frame.cpp.ll
 ; yosys/optimized/edif.ll
 ; yosys/optimized/eval.ll
@@ -91,6 +100,8 @@
 ; yosys/optimized/share.ll
 ; yosys/optimized/test_cell.ll
 ; z3/optimized/realclosure.cpp.ll
+; zed-rs/optimized/4boerhlvhy0t7lexovmn31ni1.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1, i1 %2) #0 {
 entry:

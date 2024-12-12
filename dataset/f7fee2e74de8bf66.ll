@@ -1,5 +1,5 @@
 
-; 52 occurrences:
+; 54 occurrences:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -38,6 +38,7 @@
 ; g2o/optimized/vertex_ellipse.cpp.ll
 ; jsonnet/optimized/vm.cpp.ll
 ; linux/optimized/build_policy.ll
+; linux/optimized/build_utility.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/ArchiveWriter.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
@@ -50,18 +51,19 @@
 ; opencv/optimized/stereosgbm.cpp.ll
 ; openssl/optimized/libdefault-lib-scrypt.ll
 ; openusd/optimized/pinnedCurveExpandingSceneIndex.cpp.ll
-; quantlib/optimized/tapcorrelations.ll
 ; velox/optimized/VectorFuzzer.cpp.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 5
-  %4 = mul i64 %3, %1
-  %5 = add i64 %4, %0
+  %4 = mul i64 %1, %3
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
-; 186 occurrences:
+; 185 occurrences:
 ; cpython/optimized/longobject.ll
 ; cpython/optimized/obmalloc.ll
 ; fmt/optimized/format.cc.ll
@@ -70,7 +72,6 @@ entry:
 ; fmt/optimized/os.cc.ll
 ; fmt/optimized/unicode-test.cc.ll
 ; fmt/optimized/util.cc.ll
-; gromacs/optimized/grompp.cpp.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; libjpeg-turbo/optimized/jmemmgr.c.ll
 ; libsodium/optimized/libsodium_la-pwhash_scryptsalsa208sha256_nosse.ll
@@ -253,12 +254,14 @@ define i64 @func0000000000000030(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 2
   %4 = mul i64 %3, %1
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -276,16 +279,12 @@ entry:
 define i64 @func000000000000003f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 7
-  %4 = mul nuw nsw i64 %3, %1
+  %4 = mul nuw nsw i64 %1, %3
   %5 = add nuw nsw i64 %4, %0
   ret i64 %5
 }
 
-; 15 occurrences:
-; abc/optimized/ifDec08.c.ll
-; abc/optimized/ifDec10.c.ll
-; abc/optimized/ifDec16.c.ll
-; abc/optimized/kitTruth.c.ll
+; 11 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
 ; faiss/optimized/ResidualQuantizer.cpp.ll
@@ -306,9 +305,8 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; llvm/optimized/ArchiveWriter.cpp.ll
-; stockfish/optimized/tbprobe.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -339,7 +337,7 @@ define i64 @func0000000000000015(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 14
   %4 = mul nsw i64 %3, %1
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -362,7 +360,7 @@ define i64 @func000000000000003d(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 1
   %4 = mul nuw nsw i64 %3, %1
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 

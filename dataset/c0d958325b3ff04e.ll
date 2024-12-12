@@ -1,7 +1,9 @@
 
-; 344 occurrences:
+; 343 occurrences:
 ; arrow/optimized/io_util.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/src.ll
 ; cpython/optimized/obmalloc.ll
 ; eastl/optimized/TestMemory.cpp.ll
 ; folly/optimized/JemallocHugePageAllocator.cpp.ll
@@ -16,7 +18,6 @@
 ; jsonnet/optimized/rapidyaml.cpp.ll
 ; libsodium/optimized/libsodium_la-utils.ll
 ; linux/optimized/ccm.ll
-; linux/optimized/ctr.ll
 ; linux/optimized/drbg.ll
 ; linux/optimized/drm_cache.ll
 ; linux/optimized/esp6.ll
@@ -25,7 +26,6 @@
 ; linux/optimized/io_pgtable.ll
 ; linux/optimized/locks.ll
 ; linux/optimized/lskcipher.ll
-; linux/optimized/openclose.ll
 ; linux/optimized/set_memory.ll
 ; linux/optimized/setup.ll
 ; linux/optimized/skcipher.ll
@@ -306,7 +306,6 @@
 ; openusd/optimized/fileSystem.cpp.ll
 ; openusd/optimized/virtualMemory.cpp.ll
 ; openusd/optimized/yv12config.c.ll
-; ozz-animation/optimized/allocator.cc.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; php/optimized/phpdbg_watch.ll
 ; pocketpy/optimized/ceval.cpp.ll

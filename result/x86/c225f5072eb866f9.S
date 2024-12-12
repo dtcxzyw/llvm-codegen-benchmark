@@ -1,7 +1,7 @@
 func0000000000000034:                   # @func0000000000000034
 	movq	%rdi, %rax
-	addl	%esi, %edx
-	subl	%edx, %eax
+	addl	%edx, %esi
+	subl	%esi, %eax
 	retq
 func0000000000000000:                   # @func0000000000000000
 	movq	%rdi, %rax

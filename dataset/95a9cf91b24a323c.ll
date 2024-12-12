@@ -1,11 +1,11 @@
 
-%class.ImmutableOopMapPair.2616284 = type { i32, i32 }
-%struct.Dec_Node_t_.2763953 = type { %struct.Dec_Edge_t_.2763954, %struct.Dec_Edge_t_.2763954, %union.anon.1.2763955, i32 }
-%struct.Dec_Edge_t_.2763954 = type { i32 }
-%union.anon.1.2763955 = type { ptr }
-%struct.memblock_region.3348816 = type { i64, i64, i32, i32 }
+%"struct.hb_bit_set_t::page_map_t.2730116" = type { i32, i32 }
+%struct.Dec_Node_t_.2876220 = type { %struct.Dec_Edge_t_.2876221, %struct.Dec_Edge_t_.2876221, %union.anon.1.2876222, i32 }
+%struct.Dec_Edge_t_.2876221 = type { i32 }
+%union.anon.1.2876222 = type { ptr }
+%struct.memblock_region.3537144 = type { i64, i64, i32, i32 }
 
-; 105 occurrences:
+; 66 occurrences:
 ; abc/optimized/abcRestruct.c.ll
 ; abc/optimized/giaDup.c.ll
 ; darktable/optimized/introspection_ashift.c.ll
@@ -33,17 +33,7 @@
 ; luau/optimized/IrValueLocationTracking.cpp.ll
 ; luau/optimized/OptimizeConstProp.cpp.ll
 ; luau/optimized/OptimizeDeadStore.cpp.ll
-; openjdk/optimized/c1_Runtime1.ll
 ; openjdk/optimized/check_code.ll
-; openjdk/optimized/compilationPolicy.ll
-; openjdk/optimized/compileBroker.ll
-; openjdk/optimized/constantPool.ll
-; openjdk/optimized/continuationEntry.ll
-; openjdk/optimized/continuationFreezeThaw.ll
-; openjdk/optimized/deoptimization.ll
-; openjdk/optimized/escapeBarrier.ll
-; openjdk/optimized/forte.ll
-; openjdk/optimized/frame.ll
 ; openjdk/optimized/hb-face.ll
 ; openjdk/optimized/hb-map.ll
 ; openjdk/optimized/hb-ot-font.ll
@@ -56,35 +46,6 @@
 ; openjdk/optimized/hb-ot-shaper-khmer.ll
 ; openjdk/optimized/hb-ot-shaper-use.ll
 ; openjdk/optimized/hb-set.ll
-; openjdk/optimized/instanceStackChunkKlass.ll
-; openjdk/optimized/javaClasses.ll
-; openjdk/optimized/javaThread.ll
-; openjdk/optimized/jfrCallTrace.ll
-; openjdk/optimized/jfrResolution.ll
-; openjdk/optimized/jfrStackTrace.ll
-; openjdk/optimized/jvm.ll
-; openjdk/optimized/jvmciCompilerToVM.ll
-; openjdk/optimized/jvmciRuntime.ll
-; openjdk/optimized/jvmtiEnvBase.ll
-; openjdk/optimized/jvmtiEventController.ll
-; openjdk/optimized/jvmtiExport.ll
-; openjdk/optimized/jvmtiImpl.ll
-; openjdk/optimized/reflection.ll
-; openjdk/optimized/rootResolver.ll
-; openjdk/optimized/runtime.ll
-; openjdk/optimized/safepoint.ll
-; openjdk/optimized/scopedMemoryAccess.ll
-; openjdk/optimized/sharedRuntime.ll
-; openjdk/optimized/stackChunkOop.ll
-; openjdk/optimized/stackWatermark.ll
-; openjdk/optimized/stackWatermarkSet.ll
-; openjdk/optimized/stackwalk.ll
-; openjdk/optimized/vframe.ll
-; openjdk/optimized/vframeArray.ll
-; openjdk/optimized/vmError.ll
-; openjdk/optimized/whitebox.ll
-; openjdk/optimized/xVerify.ll
-; openjdk/optimized/zBarrierSet.ll
 ; php/optimized/parse_tz.ll
 ; php/optimized/zend_inheritance.ll
 ; verilator/optimized/V3Const__gen.cpp.ll
@@ -112,22 +73,22 @@
 ; z3/optimized/theory_pb.cpp.ll
 ; z3/optimized/theory_seq.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
-  %2 = lshr i32 %1, 24
+  %2 = lshr i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw %class.ImmutableOopMapPair.2616284, ptr %0, i64 %3, i32 1
+  %4 = getelementptr nusw nuw %"struct.hb_bit_set_t::page_map_t.2730116", ptr %0, i64 %3, i32 1
   ret ptr %4
 }
 
 ; 1 occurrences:
 ; abc/optimized/abcRestruct.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw %struct.Dec_Node_t_.2763953, ptr %0, i64 %3, i32 3
+  %4 = getelementptr nusw nuw %struct.Dec_Node_t_.2876220, ptr %0, i64 %3, i32 3
   ret ptr %4
 }
 
@@ -139,7 +100,7 @@ define ptr @func0000000000000004(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.memblock_region.3348816, ptr %0, i64 %3, i32 2
+  %4 = getelementptr %struct.memblock_region.3537144, ptr %0, i64 %3, i32 2
   ret ptr %4
 }
 

@@ -17,7 +17,7 @@
 	.byte	6                               # 0x6
 	.byte	14                              # 0xe
 func0000000000000019:                   # @func0000000000000019
-	vpaddq	%ymm1, %ymm2, %ymm1
+	vpaddq	%ymm2, %ymm1, %ymm1
 	vpmovsxbd	.LCPI0_1(%rip), %ymm2   # ymm2 = [0,8,2,10,4,12,6,14]
 	vpermt2d	%ymm1, %ymm2, %ymm0
 	retq
@@ -130,7 +130,7 @@ func0000000000000011:                   # @func0000000000000011
 	.byte	0                               # 0x0
 func000000000000001d:                   # @func000000000000001d
 	vpandq	.LCPI2_2(%rip){1to4}, %ymm2, %ymm2
-	vpaddq	%ymm1, %ymm2, %ymm1
+	vpaddq	%ymm2, %ymm1, %ymm1
 	vpsllq	$32, %ymm1, %ymm1
 	vpternlogq	$236, .LCPI2_3(%rip){1to4}, %ymm1, %ymm0 # ymm0 = (ymm0 & mem) | ymm1
 	retq

@@ -18,7 +18,7 @@ func000000000000002b:                   # @func000000000000002b
 	vmv1r.v	v0, v10
 	vadd.vx	v8, v8, a0, v0.t
 	ret
-func0000000000000023:                   # @func0000000000000023
+func0000000000000063:                   # @func0000000000000063
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmv1r.v	v10, v0
 	li	a0, 300

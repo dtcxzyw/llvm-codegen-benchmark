@@ -12,7 +12,7 @@ entry:
   ret i64 %5
 }
 
-; 271 occurrences:
+; 279 occurrences:
 ; abseil-cpp/optimized/civil_time.cc.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time.cc.ll
@@ -266,6 +266,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_truetype.c.ll
 ; tls-rs/optimized/1pt3w3786vo2dyk0.ll
+; turborepo-rs/optimized/74s3x9u7hld928rwmttmetb1y.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
 ; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
@@ -284,6 +285,13 @@ entry:
 ; wireshark/optimized/pppdump.c.ll
 ; wireshark/optimized/tvbuff.c.ll
 ; wireshark/optimized/vwr.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1, i8 %2) #0 {
 entry:
@@ -293,7 +301,8 @@ entry:
   ret i64 %5
 }
 
-; 37 occurrences:
+; 38 occurrences:
+; boost/optimized/src.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; grpc/optimized/hpack_parser.cc.ll
 ; libquic/optimized/packeted_bio.cc.ll
@@ -340,7 +349,7 @@ entry:
   ret i64 %5
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; libpng/optimized/pngrtran.c.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
 ; llvm/optimized/FastISel.cpp.ll
@@ -359,6 +368,7 @@ entry:
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; wolfssl/optimized/ssl.c.ll
+; zed-rs/optimized/etmluiftgqx5jpyivviyferrj.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i64 %1, i8 %2) #0 {
 entry:
@@ -368,7 +378,7 @@ entry:
   ret i64 %5
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; folly/optimized/IPAddressV6.cpp.ll
@@ -378,6 +388,7 @@ entry:
 ; spike/optimized/triggers.ll
 ; wireshark/optimized/erf.c.ll
 ; wireshark/optimized/tvbuff.c.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1, i8 %2) #0 {
 entry:

@@ -1,9 +1,7 @@
 
-; 10 occurrences:
+; 8 occurrences:
 ; abc/optimized/giaGlitch.c.ll
-; linux/optimized/blk-sysfs.ll
 ; linux/optimized/intel_color.ll
-; linux/optimized/intel_dkl_phy.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/isoch.ll
 ; linux/optimized/skl_watermark.ll

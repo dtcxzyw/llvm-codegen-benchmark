@@ -1,10 +1,9 @@
 
-; 21 occurrences:
+; 20 occurrences:
 ; darktable/optimized/introspection_atrous.c.ll
 ; darktable/optimized/introspection_denoiseprofile.c.ll
 ; darktable/optimized/introspection_lowlight.c.ll
 ; darktable/optimized/introspection_rawdenoise.c.ll
-; gromacs/optimized/slasdt.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
 ; minetest/optimized/clouds.cpp.ll
 ; opencv/optimized/crop_and_resize_layer.cpp.ll

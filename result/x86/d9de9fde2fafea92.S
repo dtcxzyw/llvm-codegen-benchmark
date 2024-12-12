@@ -1,9 +1,3 @@
-func0000000000000011:                   # @func0000000000000011
-	xorl	%eax, %eax
-	cmpl	%edx, %esi
-	setb	%al
-	orl	%edi, %eax
-	retq
 func0000000000000025:                   # @func0000000000000025
 	xorl	%eax, %eax
 	cmpl	%edx, %esi
@@ -46,13 +40,19 @@ func0000000000000029:                   # @func0000000000000029
 	setg	%al
 	orl	%edi, %eax
 	retq
+func0000000000000051:                   # @func0000000000000051
+	xorl	%eax, %eax
+	cmpl	%edx, %esi
+	setb	%al
+	orl	%edi, %eax
+	retq
 func0000000000000030:                   # @func0000000000000030
 	xorl	%eax, %eax
 	cmpl	%edx, %esi
 	setne	%al
 	orl	%edi, %eax
 	retq
-func0000000000000010:                   # @func0000000000000010
+func0000000000000050:                   # @func0000000000000050
 	xorl	%eax, %eax
 	cmpl	%edx, %esi
 	setb	%al
@@ -68,5 +68,11 @@ func000000000000002c:                   # @func000000000000002c
 	xorl	%eax, %eax
 	cmpl	%edx, %esi
 	setge	%al
+	orl	%edi, %eax
+	retq
+func0000000000000011:                   # @func0000000000000011
+	xorl	%eax, %eax
+	cmpl	%edx, %esi
+	setb	%al
 	orl	%edi, %eax
 	retq

@@ -16,7 +16,7 @@ func0000000000000000:                   # @func0000000000000000
 	retq
 func0000000000000001:                   # @func0000000000000001
 	vpternlogq	$15, %ymm0, %ymm0, %ymm0 # ymm0 = ~ymm0
-	vpaddq	%ymm1, %ymm0, %ymm0
+	vpaddq	%ymm0, %ymm1, %ymm0
 	retq
 func000000000000000e:                   # @func000000000000000e
 	vpsubq	%ymm0, %ymm1, %ymm0
@@ -25,7 +25,7 @@ func000000000000000e:                   # @func000000000000000e
 	retq
 func0000000000000004:                   # @func0000000000000004
 	vpternlogq	$15, %ymm0, %ymm0, %ymm0 # ymm0 = ~ymm0
-	vpaddq	%ymm1, %ymm0, %ymm0
+	vpaddq	%ymm0, %ymm1, %ymm0
 	retq
 .LCPI6_0:
 	.quad	-2                              # 0xfffffffffffffffe

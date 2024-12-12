@@ -25,5 +25,5 @@ func0000000000000007:                   # @func0000000000000007
 	retq
 func000000000000000c:                   # @func000000000000000c
 	andl	$1, %edi
-	leal	(%rdi,%rsi), %eax
+	leal	(%rsi,%rdi), %eax
 	retq

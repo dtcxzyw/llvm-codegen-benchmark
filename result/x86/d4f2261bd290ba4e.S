@@ -33,21 +33,33 @@ func0000000000000008:                   # @func0000000000000008
 	movl	$16777216, %eax                 # imm = 0x1000000
 	cmovbl	%edi, %eax
 	retq
+func0000000000000029:                   # @func0000000000000029
+	xorl	%eax, %eax
+	cmpl	$3, %esi
+	cmovbl	%edi, %eax
+	retq
 func0000000000000011:                   # @func0000000000000011
 	cmpl	$2, %esi
 	movl	$1, %eax
 	cmovael	%edi, %eax
+	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpl	$4033, %esi                     # imm = 0xFC1
+	movl	$4160, %eax                     # imm = 0x1040
+	cmovgel	%edi, %eax
 	retq
 func0000000000000010:                   # @func0000000000000010
 	xorl	%eax, %eax
 	cmpl	$200, %esi
 	cmovael	%edi, %eax
 	retq
-func0000000000000014:                   # @func0000000000000014
-	movl	%edi, %eax
-	retq
 func0000000000000018:                   # @func0000000000000018
 	movl	%edi, %eax
+	retq
+func0000000000000031:                   # @func0000000000000031
+	cmpl	$57, %esi
+	movl	$8, %eax
+	cmovael	%edi, %eax
 	retq
 func000000000000000c:                   # @func000000000000000c
 	cmpl	$48, %esi

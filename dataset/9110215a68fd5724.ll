@@ -5,7 +5,7 @@
 define i1 @func0000000000000001(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 15
-  %4 = icmp eq i8 %3, %1
+  %4 = icmp eq i8 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -17,7 +17,7 @@ entry:
 define i1 @func000000000000000c(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 1
-  %4 = icmp ne i8 %3, %1
+  %4 = icmp ne i8 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -28,10 +28,10 @@ entry:
 ; llvm/optimized/MCDwarf.cpp.ll
 ; sentencepiece/optimized/trainer_interface.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000009(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000019(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 1
-  %4 = icmp ule i8 %3, %1
+  %4 = icmp samesign uge i8 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -39,10 +39,10 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-lbmc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000014(i1 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 15
-  %4 = icmp ugt i8 %3, %1
+  %4 = icmp samesign ult i8 %1, %3
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }

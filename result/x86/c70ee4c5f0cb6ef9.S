@@ -1,15 +1,15 @@
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	andb	$1, %sil
 	andb	$1, %dil
 	cmpb	%sil, %dil
 	seta	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	testb	$1, %dil
 	sete	%al
 	andb	%sil, %al
 	retq
-func0000000000000005:                   # @func0000000000000005
+func0000000000000015:                   # @func0000000000000015
 	andb	$1, %sil
 	andb	$1, %dil
 	cmpb	%sil, %dil

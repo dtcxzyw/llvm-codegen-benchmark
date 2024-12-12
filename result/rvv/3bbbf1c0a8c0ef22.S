@@ -31,6 +31,6 @@ func000000000000002f:                   # @func000000000000002f
 func000000000000000f:                   # @func000000000000000f
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vv	v9, v9, v10
-	vmul.vv	v10, v9, v8
+	vmul.vv	v10, v8, v9
 	vwsll.vi	v8, v10, 2
 	ret

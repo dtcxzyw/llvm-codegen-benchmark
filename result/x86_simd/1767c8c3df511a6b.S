@@ -45,7 +45,7 @@ func000000000000000b:                   # @func000000000000000b
 	divl	%ecx
 	vpinsrd	$3, %eax, %xmm3, %xmm2
 	vinserti128	$1, %xmm0, %ymm2, %ymm0
-	vpcmpled	%ymm1, %ymm0, %k1
+	vpcmpnltd	%ymm0, %ymm1, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -102,7 +102,7 @@ func000000000000000a:                   # @func000000000000000a
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vextracti128	$1, %ymm2, %xmm0
@@ -149,7 +149,7 @@ func0000000000000008:                   # @func0000000000000008
 	divl	%ecx
 	vpinsrd	$3, %eax, %xmm3, %xmm2
 	vinserti128	$1, %xmm0, %ymm2, %ymm0
-	vpcmpltud	%ymm1, %ymm0, %k1
+	vpcmpnleud	%ymm0, %ymm1, %k1
 	korb	%k0, %k1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

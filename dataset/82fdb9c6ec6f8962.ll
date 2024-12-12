@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 20 occurrences:
 ; linux/optimized/drm_dp_mst_topology.ll
 ; linux/optimized/hwmon.ll
 ; linux/optimized/i915_active.ll
@@ -7,7 +7,6 @@
 ; linux/optimized/i915_pmu.ll
 ; linux/optimized/ibss.ll
 ; linux/optimized/intel_atomic_plane.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_context.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_dmc.ll
@@ -27,7 +26,7 @@ entry:
   %2 = shl nuw i64 1, %1
   %3 = trunc i64 %2 to i32
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
@@ -50,7 +49,7 @@ entry:
   %2 = shl nsw i64 -1, %1
   %3 = trunc i64 %2 to i32
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
@@ -64,7 +63,7 @@ entry:
   %2 = shl nuw nsw i64 1, %1
   %3 = trunc nuw i64 %2 to i32
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 
@@ -80,7 +79,7 @@ entry:
   %2 = shl nuw nsw i64 1, %1
   %3 = trunc i64 %2 to i32
   %4 = xor i32 %3, -1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 

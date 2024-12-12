@@ -56,9 +56,9 @@ func0000000000000001:                   # @func0000000000000001
 	vpmuldq	.LCPI2_1(%rip){1to4}, %ymm0, %ymm0
 	retq
 .LCPI3_0:
-	.quad	1028                            # 0x404
+	.quad	80                              # 0x50
 func0000000000000007:                   # @func0000000000000007
-	vpsrlq	$3, %ymm0, %ymm0
+	vpsrlq	$2, %ymm0, %ymm0
 	vpmuludq	.LCPI3_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 .LCPI4_0:

@@ -1,6 +1,5 @@
 
-; 9 occurrences:
-; eastl/optimized/TestMemory.cpp.ll
+; 8 occurrences:
 ; llvm/optimized/DynamicAllocator.cpp.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/FixupStatepointCallerSaved.cpp.ll

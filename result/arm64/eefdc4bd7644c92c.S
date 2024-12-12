@@ -1,234 +1,77 @@
-func00000000000000c1:                   // @func00000000000000c1
+func0000000000000181:                   // @func0000000000000181
 // %bb.0:                               // %entry
-	fmov	x8, d2
-	fmov	x9, d4
-	fmov	x12, d5
-	mov	x10, v2.d[1]
-	mov	x11, v4.d[1]
-	mov	x13, v3.d[1]
-	mov	x14, v5.d[1]
-	mul	x8, x9, x8
-	fmov	x9, d3
-	mul	x10, x11, x10
-	mul	x9, x12, x9
-	fmov	d2, x8
-	mul	x11, x14, x13
-	mov	v2.d[1], x10
-	fmov	d3, x9
-	mov	v3.d[1], x11
-	shl	v2.2d, v2.2d, #9
-	cmeq	v0.2d, v2.2d, v0.2d
-	shl	v3.2d, v3.2d, #9
-	cmeq	v1.2d, v3.2d, v1.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	mul	x8, x2, x1
+	cmp	x0, x8, lsl #9
+	cset	w0, eq
 	ret
                                         // -- End function
-func00000000000000f1:                   // @func00000000000000f1
+func00000000000001e1:                   // @func00000000000001e1
 // %bb.0:                               // %entry
-	fmov	x8, d2
-	fmov	x9, d4
-	fmov	x12, d5
-	mov	x10, v2.d[1]
-	mov	x11, v4.d[1]
-	mov	x13, v3.d[1]
-	mov	x14, v5.d[1]
-	mul	x8, x9, x8
-	fmov	x9, d3
-	mul	x10, x11, x10
-	mul	x9, x12, x9
-	fmov	d2, x8
-	mul	x11, x14, x13
-	mov	v2.d[1], x10
-	fmov	d3, x9
-	mov	v3.d[1], x11
-	shl	v2.2d, v2.2d, #2
-	cmeq	v0.2d, v2.2d, v0.2d
-	shl	v3.2d, v3.2d, #2
-	cmeq	v1.2d, v3.2d, v1.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	mul	x8, x2, x1
+	cmp	x0, x8, lsl #2
+	cset	w0, eq
 	ret
                                         // -- End function
-func00000000000000f4:                   // @func00000000000000f4
+func00000000000001e4:                   // @func00000000000001e4
 // %bb.0:                               // %entry
-	fmov	x8, d2
-	fmov	x9, d4
-	fmov	x12, d5
-	mov	x10, v2.d[1]
-	mov	x11, v4.d[1]
-	mov	x13, v3.d[1]
-	mov	x14, v5.d[1]
-	mul	x8, x9, x8
-	fmov	x9, d3
-	mul	x10, x11, x10
-	mul	x9, x12, x9
-	fmov	d2, x8
-	mul	x11, x14, x13
-	mov	v2.d[1], x10
-	fmov	d3, x9
-	mov	v3.d[1], x11
-	shl	v2.2d, v2.2d, #2
-	cmhi	v0.2d, v2.2d, v0.2d
-	shl	v3.2d, v3.2d, #2
-	cmhi	v1.2d, v3.2d, v1.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	mul	x8, x2, x1
+	cmp	x0, x8, lsl #2
+	cset	w0, lo
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	fmov	x8, d2
-	fmov	x9, d4
-	fmov	x12, d5
-	mov	x10, v2.d[1]
-	mov	x11, v4.d[1]
-	mov	x13, v3.d[1]
-	mov	x14, v5.d[1]
-	mul	x8, x9, x8
-	fmov	x9, d3
-	mul	x10, x11, x10
-	mul	x9, x12, x9
-	fmov	d2, x8
-	mul	x11, x14, x13
-	mov	v2.d[1], x10
-	fmov	d3, x9
-	mov	v3.d[1], x11
-	add	v2.2d, v2.2d, v2.2d
-	cmeq	v0.2d, v2.2d, v0.2d
-	add	v3.2d, v3.2d, v3.2d
-	cmeq	v1.2d, v3.2d, v1.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	mul	x8, x2, x1
+	cmp	x0, x8, lsl #1
+	cset	w0, eq
 	ret
                                         // -- End function
-func00000000000000c4:                   // @func00000000000000c4
+func0000000000000184:                   // @func0000000000000184
 // %bb.0:                               // %entry
-	fmov	x8, d2
-	fmov	x9, d4
-	fmov	x12, d5
-	mov	x10, v2.d[1]
-	mov	x11, v4.d[1]
-	mov	x13, v3.d[1]
-	mov	x14, v5.d[1]
-	mul	x8, x9, x8
-	fmov	x9, d3
-	mul	x10, x11, x10
-	mul	x9, x12, x9
-	fmov	d2, x8
-	mul	x11, x14, x13
-	mov	v2.d[1], x10
-	fmov	d3, x9
-	mov	v3.d[1], x11
-	shl	v2.2d, v2.2d, #2
-	cmhi	v0.2d, v2.2d, v0.2d
-	shl	v3.2d, v3.2d, #2
-	cmhi	v1.2d, v3.2d, v1.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	mul	x8, x2, x1
+	cmp	x0, x8, lsl #2
+	cset	w0, lo
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	fmov	x8, d2
-	fmov	x9, d4
-	fmov	x12, d5
-	mov	x10, v2.d[1]
-	mov	x11, v4.d[1]
-	mov	x13, v3.d[1]
-	mov	x14, v5.d[1]
-	mul	x8, x9, x8
-	fmov	x9, d3
-	mul	x10, x11, x10
-	mul	x9, x12, x9
-	fmov	d2, x8
-	mul	x11, x14, x13
-	mov	v2.d[1], x10
-	fmov	d3, x9
-	mov	v3.d[1], x11
-	shl	v2.2d, v2.2d, #32
-	cmhi	v0.2d, v2.2d, v0.2d
-	shl	v3.2d, v3.2d, #32
-	cmhi	v1.2d, v3.2d, v1.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	mul	w8, w2, w1
+	cmp	x0, x8, lsl #32
+	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000044:                   // @func0000000000000044
+func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	fmov	x8, d2
-	fmov	x9, d4
-	fmov	x12, d5
-	mov	x10, v2.d[1]
-	mov	x11, v4.d[1]
-	mov	x13, v3.d[1]
-	mov	x14, v5.d[1]
-	mul	x8, x9, x8
-	fmov	x9, d3
-	mul	x10, x11, x10
-	mul	x9, x12, x9
-	fmov	d2, x8
-	mul	x11, x14, x13
-	mov	v2.d[1], x10
-	fmov	d3, x9
-	mov	v3.d[1], x11
-	shl	v2.2d, v2.2d, #2
-	cmhi	v0.2d, v2.2d, v0.2d
-	shl	v3.2d, v3.2d, #2
-	cmhi	v1.2d, v3.2d, v1.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	mul	x8, x2, x1
+	cmp	x0, x8, lsl #3
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000041:                   // @func0000000000000041
+func0000000000000084:                   // @func0000000000000084
 // %bb.0:                               // %entry
-	fmov	x8, d2
-	fmov	x9, d4
-	fmov	x12, d5
-	mov	x10, v2.d[1]
-	mov	x11, v4.d[1]
-	mov	x13, v3.d[1]
-	mov	x14, v5.d[1]
-	mul	x8, x9, x8
-	fmov	x9, d3
-	mul	x10, x11, x10
-	mul	x9, x12, x9
-	fmov	d2, x8
-	mul	x11, x14, x13
-	mov	v2.d[1], x10
-	fmov	d3, x9
-	mov	v3.d[1], x11
-	shl	v2.2d, v2.2d, #2
-	cmeq	v0.2d, v2.2d, v0.2d
-	shl	v3.2d, v3.2d, #2
-	cmeq	v1.2d, v3.2d, v1.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	mul	x8, x2, x1
+	cmp	x0, x8, lsl #2
+	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000054:                   // @func0000000000000054
+func0000000000000081:                   // @func0000000000000081
 // %bb.0:                               // %entry
-	fmov	x8, d2
-	fmov	x9, d4
-	fmov	x12, d5
-	mov	x10, v2.d[1]
-	mov	x11, v4.d[1]
-	mov	x13, v3.d[1]
-	mov	x14, v5.d[1]
-	mul	x8, x9, x8
-	fmov	x9, d3
-	mul	x10, x11, x10
-	mul	x9, x12, x9
-	fmov	d2, x8
-	mul	x11, x14, x13
-	mov	v2.d[1], x10
-	fmov	d3, x9
-	mov	v3.d[1], x11
-	add	v2.2d, v2.2d, v2.2d
-	cmhi	v0.2d, v2.2d, v0.2d
-	add	v3.2d, v3.2d, v3.2d
-	cmhi	v1.2d, v3.2d, v1.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	mul	x8, x2, x1
+	cmp	x0, x8, lsl #2
+	cset	w0, eq
+	ret
+                                        // -- End function
+func00000000000000a4:                   // @func00000000000000a4
+// %bb.0:                               // %entry
+	mul	x8, x2, x1
+	cmp	x0, x8, lsl #1
+	cset	w0, lo
+	ret
+                                        // -- End function
+func00000000000001f8:                   // @func00000000000001f8
+// %bb.0:                               // %entry
+	mul	x8, x2, x1
+	cmp	x0, x8, lsl #2
+	cset	w0, hi
 	ret
                                         // -- End function

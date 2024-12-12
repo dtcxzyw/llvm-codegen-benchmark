@@ -5,6 +5,6 @@ func000000000000000b:                   # @func000000000000000b
 	negb	%sil
 	sbbq	%rcx, %rcx
 	orq	%rax, %rcx
-	cmpq	%rdi, %rcx
-	setle	%al
+	cmpq	%rcx, %rdi
+	setge	%al
 	retq

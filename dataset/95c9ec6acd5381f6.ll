@@ -1,5 +1,5 @@
 
-; 62 occurrences:
+; 60 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -58,8 +58,6 @@
 ; llvm/optimized/IdentifierTable.cpp.ll
 ; llvm/optimized/Pragma.cpp.ll
 ; openjdk/optimized/c1_LIRGenerator.ll
-; openssl/optimized/libssl-lib-ssl_init.ll
-; openssl/optimized/libssl-shlib-ssl_init.ll
 ; ruby/optimized/vm.ll
 ; wireshark/optimized/proto.c.ll
 ; Function Attrs: nounwind

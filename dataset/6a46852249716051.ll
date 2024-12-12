@@ -7,7 +7,7 @@ define i32 @func0000000000000002(i32 %0, i1 %1) #0 {
 entry:
   %2 = freeze i1 %1
   %3 = zext i1 %2 to i32
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   ret i32 %4
 }
 

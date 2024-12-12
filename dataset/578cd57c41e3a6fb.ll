@@ -101,11 +101,7 @@ entry:
   ret i32 %4
 }
 
-; 6 occurrences:
-; meshlab/optimized/cube_style_single_iteration.cpp.ll
-; meshlab/optimized/filter_cubization.cpp.ll
-; meshlab/optimized/fit_rotations_l1.cpp.ll
-; meshlab/optimized/orthogonal_procrustes.cpp.ll
+; 2 occurrences:
 ; oiio/optimized/dpxoutput.cpp.ll
 ; oiio/optimized/exif.cpp.ll
 ; Function Attrs: nounwind

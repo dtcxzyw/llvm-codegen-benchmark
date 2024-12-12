@@ -1,8 +1,6 @@
 func0000000000000001:                   # @func0000000000000001
-	movabsq	$-9223372036854775807, %rcx     # imm = 0x8000000000000001
-	andq	%rdi, %rcx
 	xorl	%eax, %eax
-	cmpq	$1, %rcx
+	cmpb	$-1, %dil
 	sete	%al
 	negq	%rax
 	retq

@@ -21,21 +21,22 @@
 ; wireshark/optimized/packet-s7comm.c.ll
 ; wolfssl/optimized/tls.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i8 %1) #0 {
+define i1 @func0000000000000042(i1 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -3
   %3 = icmp eq i8 %2, 4
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; llvm/optimized/ValueTracking.cpp.ll
 ; rust-analyzer-rs/optimized/1n2nbybgay5hs9t3.ll
 ; rust-analyzer-rs/optimized/hajha7nvyoiczny.ll
 ; rust-analyzer-rs/optimized/lyex85fppj8jw50.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000030(i1 %0, i8 %1) #0 {
+define i1 @func0000000000000050(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 1
   %3 = icmp ugt i8 %1, 6

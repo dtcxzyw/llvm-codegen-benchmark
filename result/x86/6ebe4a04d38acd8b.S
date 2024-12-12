@@ -17,6 +17,15 @@ func0000000000000012:                   # @func0000000000000012
 	imull	$32897, %eax, %eax              # imm = 0x8081
 	shrl	$23, %eax
 	retq
+func0000000000000010:                   # @func0000000000000010
+	movl	%edi, %eax
+	shll	$8, %eax
+	subl	%edi, %eax
+	movzwl	%ax, %eax
+	shrl	$2, %eax
+	imull	$5243, %eax, %eax               # imm = 0x147B
+	shrl	$17, %eax
+	retq
 func0000000000000018:                   # @func0000000000000018
 	movl	%edi, %eax
 	shll	$7, %eax

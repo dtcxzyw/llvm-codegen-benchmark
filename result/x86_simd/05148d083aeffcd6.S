@@ -26,11 +26,3 @@ func000000000000003d:                   # @func000000000000003d
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
-.LCPI4_0:
-	.long	1721423                         # 0x1a444f
-func0000000000000031:                   # @func0000000000000031
-	vpsrld	$2, %ymm2, %ymm2
-	vpaddd	%ymm0, %ymm1, %ymm0
-	vpaddd	%ymm0, %ymm2, %ymm0
-	vpaddd	.LCPI4_0(%rip){1to8}, %ymm0, %ymm0
-	retq

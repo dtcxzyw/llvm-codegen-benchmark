@@ -1,11 +1,3 @@
-func0000000000000011:                   # @func0000000000000011
-	sext.w	a1, a1
-	sltiu	a1, a1, 5
-	li	a2, -6
-	czero.nez	a1, a2, a1
-	add	a0, a0, a1
-	addi	a0, a0, 1
-	ret
 func0000000000000019:                   # @func0000000000000019
 	sext.w	a1, a1
 	sgtz	a1, a1
@@ -21,7 +13,7 @@ func0000000000000007:                   # @func0000000000000007
 	add	a0, a0, a1
 	addi	a0, a0, 30
 	ret
-func0000000000000013:                   # @func0000000000000013
+func0000000000000053:                   # @func0000000000000053
 	sext.w	a1, a1
 	sltiu	a1, a1, 128
 	li	a2, 4

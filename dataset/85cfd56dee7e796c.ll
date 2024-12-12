@@ -1,6 +1,7 @@
 
-; 132 occurrences:
-; arrow/optimized/decimal.cc.ll
+; 133 occurrences:
+; boost/optimized/test_codecvt.ll
+; boost/optimized/to_chars.ll
 ; c3c/optimized/expr.c.ll
 ; cmake/optimized/cmFileCommand.cxx.ll
 ; coreutils-rs/optimized/2qsl5bwp4bvo535d.ll
@@ -94,11 +95,9 @@
 ; linux/optimized/gup.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/hugetlb_vmemmap.ll
-; linux/optimized/i915_mm.ll
 ; linux/optimized/init_64.ll
 ; linux/optimized/insn-eval.ll
 ; linux/optimized/ldt.ll
-; linux/optimized/machine_kexec_64.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mlock.ll
 ; linux/optimized/mprotect.ll
@@ -110,7 +109,6 @@
 ; linux/optimized/sparse-vmemmap.ll
 ; linux/optimized/vmalloc.ll
 ; llvm/optimized/APFloat.cpp.ll
-; llvm/optimized/COFFImportFile.cpp.ll
 ; opencv/optimized/dxt.cpp.ll
 ; opencv/optimized/persistence.cpp.ll
 ; openjdk/optimized/pngset.ll
@@ -132,6 +130,9 @@
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/1oqbug516qe1j9jzuop2d87nk.ll
+; zed-rs/optimized/8lmzon2kdaz83ocz8p00fckkv.ll
+; zed-rs/optimized/8ong401nghjuvw1pdqaahwms7.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i1 %1) #0 {
 entry:

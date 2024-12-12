@@ -6,12 +6,13 @@
 define i1 @func000000000000000c(i1 %0, i128 %1) #0 {
 entry:
   %2 = icmp ne i128 %1, 0
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   ret i1 %3
 }
 
-; 102 occurrences:
+; 103 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
+; boost/optimized/to_chars.ll
 ; delta-rs/optimized/43y2svfstmvqcl15.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
@@ -117,16 +118,17 @@ entry:
 define i1 @func0000000000000001(i1 %0, i128 %1) #0 {
 entry:
   %2 = icmp eq i128 %1, 0
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   ret i1 %3
 }
 
-; 1 occurrences:
-; abseil-cpp/optimized/duration.cc.ll
+; 2 occurrences:
+; boost/optimized/from_chars.ll
+; delta-rs/optimized/43y2svfstmvqcl15.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i128 %1) #0 {
+define i1 @func0000000000000004(i1 %0, i128 %1) #0 {
 entry:
-  %2 = icmp ugt i128 %1, 9223372036854775807
+  %2 = icmp ult i128 %1, 10384593717069655257060992658440193
   %3 = and i1 %2, %0
   ret i1 %3
 }
@@ -137,7 +139,7 @@ entry:
 define i1 @func0000000000000006(i1 %0, i128 %1) #0 {
 entry:
   %2 = icmp slt i128 %1, 18446744073709551616
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   ret i1 %3
 }
 
@@ -148,16 +150,6 @@ entry:
 define i1 @func000000000000000a(i1 %0, i128 %1) #0 {
 entry:
   %2 = icmp sgt i128 %1, -1
-  %3 = and i1 %2, %0
-  ret i1 %3
-}
-
-; 1 occurrences:
-; delta-rs/optimized/43y2svfstmvqcl15.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i128 %1) #0 {
-entry:
-  %2 = icmp ult i128 %1, 2
   %3 = and i1 %2, %0
   ret i1 %3
 }

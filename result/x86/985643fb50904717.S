@@ -7,7 +7,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	%rdi, %rdx
 	seta	%al
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	movq	%rdx, %rcx
 	movq	%rsi, %rax
 	incq	%rcx
@@ -16,7 +16,7 @@ func0000000000000034:                   # @func0000000000000034
 	cmpq	%rdi, %rdx
 	setb	%al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	movq	%rdx, %rcx
 	movq	%rsi, %rax
 	incq	%rcx
@@ -25,7 +25,7 @@ func0000000000000038:                   # @func0000000000000038
 	cmpq	%rdi, %rdx
 	seta	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	movq	%rdx, %rcx
 	movq	%rsi, %rax
 	incq	%rcx
@@ -43,7 +43,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	%rdi, %rdx
 	setb	%al
 	retq
-func0000000000000019:                   # @func0000000000000019
+func0000000000000029:                   # @func0000000000000029
 	movq	%rdx, %rcx
 	movq	%rsi, %rax
 	decq	%rcx

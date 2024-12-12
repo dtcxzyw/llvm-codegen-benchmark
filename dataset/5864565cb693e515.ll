@@ -5,7 +5,7 @@
 ; opencv/optimized/epnp.cpp.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000fa(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func00000000000000fb(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = sext i32 %1 to i64
   %4 = getelementptr nusw double, ptr %0, i64 %3

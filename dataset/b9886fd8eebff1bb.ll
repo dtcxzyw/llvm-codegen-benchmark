@@ -1,13 +1,16 @@
 
-; 4 occurrences:
+; 7 occurrences:
+; boost/optimized/addr2line.ll
+; boost/optimized/basic.ll
+; boost/optimized/segments_encoded_ref.ll
 ; hermes/optimized/AST2JS.cpp.ll
 ; lief/optimized/ssl_tls.c.ll
 ; llvm/optimized/SemaAccess.cpp.ll
 ; oiio/optimized/sysutil.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(ptr %0, ptr %1) #0 {
+define i32 @func0000000000000061(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 6
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 6
   %3 = icmp eq ptr %2, %0
   %4 = select i1 %3, i32 0, i32 -28928
   ret i32 %4

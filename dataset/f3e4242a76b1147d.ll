@@ -1,10 +1,10 @@
 
-%struct._ir_insn.2678139 = type { %struct.anon.2678140, %union.anon.5.2678141 }
-%struct.anon.2678140 = type { %union.anon.2678142, %union.anon.4.2678143 }
-%union.anon.2678142 = type { i32 }
-%union.anon.4.2678143 = type { i32 }
-%union.anon.5.2678141 = type { %union._ir_val.2678144 }
-%union._ir_val.2678144 = type { double }
+%struct._ir_insn.2791076 = type { %struct.anon.2791077, %union.anon.5.2791078 }
+%struct.anon.2791077 = type { %union.anon.2791079, %union.anon.4.2791080 }
+%union.anon.2791079 = type { i32 }
+%union.anon.4.2791080 = type { i32 }
+%union.anon.5.2791078 = type { %union._ir_val.2791081 }
+%union._ir_val.2791081 = type { double }
 
 ; 96 occurrences:
 ; glslang/optimized/SpvBuilder.cpp.ll
@@ -104,10 +104,10 @@
 ; llvm/optimized/X86TileConfig.cpp.ll
 ; php/optimized/ir_sccp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000066(ptr %0, i32 %1, ptr %2) #0 {
+define ptr @func00000000000000e6(ptr %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = zext nneg i32 %1 to i64
-  %4 = getelementptr nusw %struct._ir_insn.2678139, ptr %2, i64 %3
+  %4 = getelementptr nusw nuw %struct._ir_insn.2791076, ptr %2, i64 %3
   %5 = icmp slt i32 %1, 0
   %6 = select i1 %5, ptr %0, ptr %4
   ret ptr %6
@@ -117,10 +117,10 @@ entry:
 ; llvm/optimized/CloneDetection.cpp.ll
 ; z3/optimized/sat_aig_cuts.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(ptr %0, i32 %1, ptr %2) #0 {
+define ptr @func0000000000000061(ptr %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = zext i32 %1 to i64
-  %4 = getelementptr nusw ptr, ptr %2, i64 %3
+  %4 = getelementptr nusw nuw ptr, ptr %2, i64 %3
   %5 = icmp eq i32 %1, 0
   %6 = select i1 %5, ptr %0, ptr %4
   ret ptr %6
@@ -136,11 +136,11 @@ entry:
 ; protobuf/optimized/unknown_field_set.cc.ll
 ; protobuf/optimized/zip_writer.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000068(ptr %0, i32 %1, ptr %2) #0 {
+define ptr @func00000000000000f8(ptr %0, i32 %1, ptr %2) #0 {
 entry:
   %3 = zext nneg i32 %1 to i64
-  %4 = getelementptr nusw i8, ptr %2, i64 %3
-  %5 = icmp ugt i32 %1, 16
+  %4 = getelementptr nusw nuw i8, ptr %2, i64 %3
+  %5 = icmp samesign ugt i32 %1, 16
   %6 = select i1 %5, ptr %0, ptr %4
   ret ptr %6
 }

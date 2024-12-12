@@ -4,13 +4,13 @@
 ; openusd/optimized/openexr-c.c.ll
 ; raylib/optimized/rcore.c.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000ca(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func00000000000000eb(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 1
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i32, ptr %0, i64 %1
+  %5 = getelementptr nusw nuw i32, ptr %0, i64 %1
   %6 = getelementptr nusw i8, ptr %5, i64 -4
-  %7 = getelementptr nusw i32, ptr %6, i64 %4
+  %7 = getelementptr nusw nuw i32, ptr %6, i64 %4
   ret ptr %7
 }
 
@@ -37,6 +37,19 @@ entry:
   %5 = getelementptr nusw i8, ptr %0, i64 %1
   %6 = getelementptr i8, ptr %5, i64 -1
   %7 = getelementptr i8, ptr %6, i64 %4
+  ret ptr %7
+}
+
+; 1 occurrences:
+; hyperscan/optimized/mcclellan.c.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000fb(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = or disjoint i32 %2, 12
+  %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %6 = getelementptr nusw i8, ptr %5, i64 -64
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %4
   ret ptr %7
 }
 

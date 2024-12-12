@@ -25,6 +25,7 @@
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; llvm/optimized/CGExpr.cpp.ll
+; llvm/optimized/CGOpenMPRuntimeGPU.cpp.ll
 ; llvm/optimized/CallEvent.cpp.ll
 ; llvm/optimized/ConstantFold.cpp.ll
 ; llvm/optimized/Decl.cpp.ll
@@ -60,7 +61,6 @@
 ; opencv/optimized/levmarq.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
 ; opencv/optimized/undistort.dispatch.cpp.ll
-; openjdk/optimized/classFileParser.ll
 ; openspiel/optimized/maedn.cc.ll
 ; openssl/optimized/libssl-lib-quic_stream_map.ll
 ; openssl/optimized/libssl-lib-quic_tserver.ll
@@ -77,12 +77,12 @@
 ; wireshark/optimized/packet-dmp.c.ll
 ; z3/optimized/bound_propagator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -33
   %3 = add nsw i32 %2, -71
   %4 = icmp ult i32 %3, -6
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -101,7 +101,7 @@ entry:
   %2 = and i32 %1, -33
   %3 = add i32 %2, -71
   %4 = icmp ult i32 %3, -6
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -111,7 +111,7 @@ entry:
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/X86TargetMachine.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 67108863
   %3 = add nsw i32 %2, -4
@@ -126,7 +126,7 @@ entry:
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/X86TargetMachine.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 67108863
   %3 = icmp ne i32 %2, 2

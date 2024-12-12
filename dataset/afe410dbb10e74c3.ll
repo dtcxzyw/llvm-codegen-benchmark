@@ -7,13 +7,13 @@
 ; mitsuba3/optimized/moment.cpp.ll
 ; opencv/optimized/floodfill.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, ptr %2) #0 {
+define ptr @func000000000000000b(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = sdiv exact i64 %4, 24
   %6 = lshr i64 %5, 1
-  %7 = getelementptr nusw float, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw float, ptr %0, i64 %6
   ret ptr %7
 }
 

@@ -1,4 +1,4 @@
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	vpmovdb	%ymm0, %xmm0
 	vzeroupper
 	retq

@@ -1,5 +1,5 @@
 
-; 134 occurrences:
+; 140 occurrences:
 ; arrow/optimized/bit_block_counter.cc.ll
 ; c3c/optimized/llvm_codegen_stmt.c.ll
 ; clamav/optimized/sigtool.c.ll
@@ -66,6 +66,7 @@
 ; llvm/optimized/ValueTracking.cpp.ll
 ; luajit/optimized/lj_opt_mem.ll
 ; luajit/optimized/lj_opt_mem_dyn.ll
+; lvgl/optimized/lv_svg_parser.ll
 ; meilisearch-rs/optimized/48hhebymxr5ff2nk.ll
 ; ockam-rs/optimized/1d1qxhuj8x85dazd.ll
 ; ockam-rs/optimized/1y67jc2e8hldxzxu.ll
@@ -94,6 +95,7 @@
 ; postgres/optimized/pg_isready.ll
 ; postgres/optimized/pgoutput.ll
 ; postgres/optimized/refint.ll
+; postgres/optimized/rewriteHandler.ll
 ; qemu/optimized/block_qcow2.c.ll
 ; qemu/optimized/chardev_char.c.ll
 ; ruby/optimized/parse.ll
@@ -105,6 +107,7 @@
 ; rust-analyzer-rs/optimized/3o2zsvb0ik8z2nqt.ll
 ; rust-analyzer-rs/optimized/k5mtltw7nxmadpl.ll
 ; rust-analyzer-rs/optimized/p80zqc6dxbxvppz.ll
+; slurm/optimized/fetch_config.ll
 ; sqlite/optimized/sqlite3.ll
 ; tev/optimized/UberShader.cpp.ll
 ; tokenizers-rs/optimized/1gbi58t02rey1ahs.ll
@@ -134,6 +137,9 @@
 ; z3/optimized/rel_context.cpp.ll
 ; z3/optimized/spacer_unsat_core_plugin.cpp.ll
 ; z3/optimized/theory_str_regex.cpp.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/5zwiozx0qizoaz5dy257szmof.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000c(ptr %0, ptr %1) #0 {
 entry:

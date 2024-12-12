@@ -51,7 +51,7 @@ func0000000000000000:                   # @func0000000000000000
 	movl	%eax, %ebx
 	vpinsrd	$3, %eax, %xmm4, %xmm1
 	vinserti128	$1, %xmm3, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrd	$1, %xmm1, %eax
 	cltd

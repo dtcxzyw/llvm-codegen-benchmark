@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 16 occurrences:
 ; cpython/optimized/bytesobject.ll
 ; graphviz/optimized/shapes.c.ll
 ; hermes/optimized/Object.cpp.ll
@@ -15,6 +15,7 @@
 ; openssl/optimized/libssl-lib-extensions_clnt.ll
 ; openssl/optimized/libssl-shlib-extensions_clnt.ll
 ; spike/optimized/vcpop_m.ll
+; turborepo-rs/optimized/cfoasa6bvi7hpmvo2g502kghe.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000018(i1 %0, i32 %1) #0 {
 entry:

@@ -5,7 +5,7 @@
 ; ruby/optimized/hash.ll
 ; spike/optimized/dtm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000042(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 15728640
   %3 = icmp eq i32 %2, 0

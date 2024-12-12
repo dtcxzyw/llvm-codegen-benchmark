@@ -27,12 +27,12 @@ entry:
 ; ceres/optimized/schur_eliminator_4_4_4.cc.ll
 ; ceres/optimized/schur_eliminator_4_4_d.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000005b(ptr %0, i64 %1) #0 {
 entry:
   %2 = getelementptr double, ptr %0, i64 %1
   %3 = getelementptr i8, ptr %2, i64 -8
   %4 = shl nsw i64 %1, 5
-  %5 = getelementptr nusw i8, ptr %3, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %3, i64 %4
   ret ptr %5
 }
 
@@ -57,12 +57,24 @@ entry:
 ; g2o/optimized/vertex_line3d.cpp.ll
 ; g2o/optimized/vertex_segment2d.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000fa(ptr %0, i64 %1) #0 {
+define ptr @func00000000000000ff(ptr %0, i64 %1) #0 {
 entry:
   %2 = getelementptr double, ptr %0, i64 %1
   %3 = getelementptr i8, ptr %2, i64 8
   %4 = shl nuw nsw i64 %1, 5
-  %5 = getelementptr nusw i8, ptr %3, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %3, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; meshlab/optimized/matching.cpp.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000d0(ptr %0, i64 %1) #0 {
+entry:
+  %2 = getelementptr double, ptr %0, i64 %1
+  %3 = getelementptr i8, ptr %2, i64 8
+  %4 = shl nsw i64 %1, 4
+  %5 = getelementptr i8, ptr %3, i64 %4
   ret ptr %5
 }
 

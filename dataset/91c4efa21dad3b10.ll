@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; darktable/optimized/introspection_highlights.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000311(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000621(i64 %0, i32 %1) #0 {
 entry:
   %notmask = shl nsw i32 -1, %1
   %2 = xor i32 %notmask, -1
@@ -16,7 +16,7 @@ entry:
 ; linux/optimized/buffered-io.ll
 ; linux/optimized/direct-io.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000201(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000401(i64 %0, i32 %1) #0 {
 entry:
   %notmask = shl nsw i32 -1, %1
   %2 = xor i32 %notmask, -1

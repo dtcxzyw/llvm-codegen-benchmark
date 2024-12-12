@@ -26,19 +26,6 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
-; qemu/optimized/ui_vnc-enc-zlib.c.ll
-; z3/optimized/datalog_parser.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000001(i32 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sub i64 %1, %2
-  %4 = trunc i64 %3 to i32
-  %5 = sub i32 %4, %0
-  %6 = icmp eq i32 %5, -1
-  ret i1 %6
-}
-
 ; 45 occurrences:
 ; quantlib/optimized/actual365fixed.ll
 ; quantlib/optimized/actualactual.ll
@@ -86,7 +73,7 @@ entry:
 ; quantlib/optimized/unitedkingdom.ll
 ; quantlib/optimized/unitedstates.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000221(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = trunc i64 %3 to i32
@@ -113,7 +100,7 @@ entry:
 ; quantlib/optimized/unitedkingdom.ll
 ; quantlib/optimized/unitedstates.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011c(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000022c(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = trunc i64 %3 to i32
@@ -137,7 +124,7 @@ entry:
 ; quantlib/optimized/turkey.ll
 ; quantlib/optimized/unitedstates.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000226(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = trunc i64 %3 to i32
@@ -156,7 +143,7 @@ entry:
 ; quantlib/optimized/taiwan.ll
 ; quantlib/optimized/unitedstates.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000022a(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = trunc i64 %3 to i32
@@ -173,11 +160,11 @@ entry:
 ; zxing/optimized/DMDataBlock.cpp.ll
 ; zxing/optimized/QRDataBlock.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i32
-  %5 = icmp sgt i32 %4, %0
+  %5 = icmp slt i32 %0, %4
   ret i1 %5
 }
 
@@ -199,9 +186,20 @@ entry:
 }
 
 ; 1 occurrences:
+; z3/optimized/datalog_parser.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(i32 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub i64 %1, %2
+  %4 = trunc i64 %3 to i32
+  %5 = icmp eq i32 %0, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; arrow/optimized/message.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010a(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000020a(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = trunc i64 %3 to i32

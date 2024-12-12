@@ -24,6 +24,24 @@ func0000000000000022:                   # @func0000000000000022
 	vmovapd	%zmm2, %zmm0
 	vmovapd	%zmm3, %zmm1
 	retq
+.LCPI2_0:
+	.quad	0xc00921fb54442d18              # double -3.1415926535897931
+.LCPI2_1:
+	.quad	0x400921fb54442d18              # double 3.1415926535897931
+func0000000000000024:                   # @func0000000000000024
+	vbroadcastsd	.LCPI2_0(%rip), %zmm6   # zmm6 = [-3.1415926535897931E+0,-3.1415926535897931E+0,-3.1415926535897931E+0,-3.1415926535897931E+0,-3.1415926535897931E+0,-3.1415926535897931E+0,-3.1415926535897931E+0,-3.1415926535897931E+0]
+	vcmpltpd	%zmm6, %zmm5, %k1
+	vcmpltpd	%zmm6, %zmm4, %k2
+	vblendmpd	%zmm2, %zmm4, %zmm2 {%k2}
+	vblendmpd	%zmm3, %zmm5, %zmm3 {%k1}
+	vbroadcastsd	.LCPI2_1(%rip), %zmm4   # zmm4 = [3.1415926535897931E+0,3.1415926535897931E+0,3.1415926535897931E+0,3.1415926535897931E+0,3.1415926535897931E+0,3.1415926535897931E+0,3.1415926535897931E+0,3.1415926535897931E+0]
+	vcmpltpd	%zmm3, %zmm4, %k1
+	vcmpltpd	%zmm2, %zmm4, %k2
+	vmovapd	%zmm0, %zmm2 {%k2}
+	vmovapd	%zmm1, %zmm3 {%k1}
+	vmovapd	%zmm2, %zmm0
+	vmovapd	%zmm3, %zmm1
+	retq
 func0000000000000033:                   # @func0000000000000033
 	vxorpd	%xmm6, %xmm6, %xmm6
 	vcmpnlepd	%zmm5, %zmm6, %k1
@@ -32,22 +50,6 @@ func0000000000000033:                   # @func0000000000000033
 	vblendmpd	%zmm3, %zmm5, %zmm3 {%k1}
 	vcmpnlepd	%zmm3, %zmm6, %k1
 	vcmpnlepd	%zmm2, %zmm6, %k2
-	vmovapd	%zmm0, %zmm2 {%k2}
-	vmovapd	%zmm1, %zmm3 {%k1}
-	vmovapd	%zmm2, %zmm0
-	vmovapd	%zmm3, %zmm1
-	retq
-.LCPI3_0:
-	.quad	0x4066800000000000              # double 180
-func0000000000000024:                   # @func0000000000000024
-	vxorpd	%xmm6, %xmm6, %xmm6
-	vcmpltpd	%zmm6, %zmm5, %k1
-	vcmpltpd	%zmm6, %zmm4, %k2
-	vblendmpd	%zmm2, %zmm4, %zmm2 {%k2}
-	vblendmpd	%zmm3, %zmm5, %zmm3 {%k1}
-	vbroadcastsd	.LCPI3_0(%rip), %zmm4   # zmm4 = [1.8E+2,1.8E+2,1.8E+2,1.8E+2,1.8E+2,1.8E+2,1.8E+2,1.8E+2]
-	vcmpltpd	%zmm3, %zmm4, %k1
-	vcmpltpd	%zmm2, %zmm4, %k2
 	vmovapd	%zmm0, %zmm2 {%k2}
 	vmovapd	%zmm1, %zmm3 {%k1}
 	vmovapd	%zmm2, %zmm0

@@ -1,13 +1,11 @@
 
-; 287 occurrences:
-; abc/optimized/giaDecs.c.ll
+; 278 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
-; abc/optimized/kitTruth.c.ll
 ; arrow/optimized/align_util.cc.ll
-; arrow/optimized/key_map.cc.ll
 ; arrow/optimized/reader.cc.ll
 ; arrow/optimized/table.cc.ll
+; boost/optimized/topology.ll
 ; ceres/optimized/manifold.cc.ll
 ; cmake/optimized/divsufsort.c.ll
 ; csmith/optimized/CVQualifiers.cpp.ll
@@ -142,13 +140,10 @@
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -211,7 +206,6 @@
 ; opencv/optimized/edge_drawing.cpp.ll
 ; opencv/optimized/erfilter.cpp.ll
 ; opencv/optimized/essential_mat_reconstr.cpp.ll
-; opencv/optimized/filter.dispatch.cpp.ll
 ; opencv/optimized/flann_search_dataset.cpp.ll
 ; opencv/optimized/fundamental_solver.cpp.ll
 ; opencv/optimized/gstreamingexecutor.cpp.ll
@@ -231,7 +225,6 @@
 ; opencv/optimized/short_term_imageless_tracker.cpp.ll
 ; opencv/optimized/slic.cpp.ll
 ; opencv/optimized/solvepnp.cpp.ll
-; opencv/optimized/stackblur.cpp.ll
 ; opencv/optimized/subdivision2d.cpp.ll
 ; opencv/optimized/text_detector_swt.cpp.ll
 ; opencv/optimized/waldboost.cpp.ll
@@ -240,7 +233,6 @@
 ; openexr/optimized/ImfDwaCompressor.cpp.ll
 ; openjdk/optimized/mlib_ImageConvClearEdge_Bit.ll
 ; openjdk/optimized/mlib_ImageConvCopyEdge_Bit.ll
-; openjdk/optimized/sharedRuntime_x86_64.ll
 ; openspiel/optimized/battleship.cc.ll
 ; openspiel/optimized/deep_sea.cc.ll
 ; openspiel/optimized/euchre.cc.ll
@@ -258,9 +250,7 @@
 ; openssl/optimized/loader_attic-dso-pvkfmt.ll
 ; openusd/optimized/animMapper.cpp.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
-; php/optimized/ir_ra.ll
 ; protobuf/optimized/message_differencer.cc.ll
-; velox/optimized/PrestoSerializer.cpp.ll
 ; verilator/optimized/V3Undriven.cpp.ll
 ; yosys/optimized/abc9_ops.ll
 ; yosys/optimized/check.ll
@@ -283,6 +273,7 @@
 ; yosys/optimized/techmap.ll
 ; yosys/optimized/test_cell.ll
 ; yosys/optimized/torder.ll
+; yosys/optimized/verilog_backend.ll
 ; zstd/optimized/divsufsort.c.ll
 ; zxing/optimized/ODCode128Writer.cpp.ll
 ; zxing/optimized/ODWriterHelper.cpp.ll
@@ -294,6 +285,53 @@ entry:
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw i64, ptr %1, i64 %4
   %6 = getelementptr nusw i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 12 occurrences:
+; abc/optimized/giaDecs.c.ll
+; abc/optimized/kitTruth.c.ll
+; arrow/optimized/key_map.cc.ll
+; cmake/optimized/divsufsort.c.ll
+; opencv/optimized/dxt.cpp.ll
+; opencv/optimized/filter.dispatch.cpp.ll
+; opencv/optimized/stackblur.cpp.ll
+; openssl/optimized/libcrypto-lib-bn_shift.ll
+; openssl/optimized/libcrypto-shlib-bn_shift.ll
+; php/optimized/ir_ra.ll
+; velox/optimized/PrestoSerializer.cpp.ll
+; zstd/optimized/divsufsort.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = sdiv i32 %2, 64
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw i64, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i64, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 1 occurrences:
+; openjdk/optimized/sharedRuntime_x86_64.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000f(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = sdiv i32 %2, 2
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw nuw i64, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i64, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 1 occurrences:
+; openjdk/optimized/sharedRuntime_x86_64.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000e(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = sdiv i32 %2, 2
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw nuw i64, ptr %1, i64 %4
+  %6 = getelementptr nusw i64, ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -310,15 +348,17 @@ entry:
   ret ptr %6
 }
 
-; 8 occurrences:
+; 10 occurrences:
 ; abc/optimized/fraigMan.c.ll
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/solver_api.c.ll
 ; openblas/optimized/dsptrf.c.ll
 ; opencv/optimized/how_to_use_OpenCV_parallel_for_new.cpp.ll
+; opencv/optimized/optflowgf.cpp.ll
 ; opencv/optimized/stereo_binary_bm.cpp.ll
 ; opencv/optimized/stereobm.cpp.ll
 ; opencv/optimized/univ_intrin.cpp.ll
+; stb/optimized/stb_hexwave.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i64 %0, ptr %1, i32 %2) #0 {
 entry:

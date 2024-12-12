@@ -85,12 +85,14 @@ entry:
   ret i8 %4
 }
 
-; 10 occurrences:
+; 12 occurrences:
 ; duckdb/optimized/ub_duckdb_transformer_expression.cpp.ll
 ; lief/optimized/bignum.c.ll
 ; llvm/optimized/AsmPrinter.cpp.ll
 ; llvm/optimized/BitcodeWriter.cpp.ll
 ; llvm/optimized/ConstantMerge.cpp.ll
+; llvm/optimized/LinkModules.cpp.ll
+; llvm/optimized/MergeFunctions.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; opencv/optimized/contours_new.cpp.ll
 ; php/optimized/string.ll

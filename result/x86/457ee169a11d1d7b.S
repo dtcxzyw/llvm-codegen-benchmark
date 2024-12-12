@@ -12,11 +12,6 @@ func0000000000000006:                   # @func0000000000000006
 	shll	$16, %eax
 	orq	$1048575, %rax                  # imm = 0xFFFFF
 	retq
-func000000000000000d:                   # @func000000000000000d
-	shlq	$63, %rdi
-	movabsq	$9218868437227405312, %rax      # imm = 0x7FF0000000000000
-	orq	%rdi, %rax
-	retq
 func0000000000000005:                   # @func0000000000000005
 	movl	%edi, %eax
 	orq	$16368, %rax                    # imm = 0x3FF0

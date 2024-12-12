@@ -1,3 +1,8 @@
+func000000000000001d:                   # @func000000000000001d
+	movl	%esi, %eax
+	shrq	$52, %rdi
+	orq	%rdi, %rax
+	retq
 func000000000000000a:                   # @func000000000000000a
 	movl	%esi, %eax
 	shlq	$32, %rax

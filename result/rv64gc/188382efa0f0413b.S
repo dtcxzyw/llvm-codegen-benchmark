@@ -61,3 +61,23 @@ func0000000000000005:                   # @func0000000000000005
 	li	a0, -64
 	and	a0, a0, a1
 	ret
+func000000000000000f:                   # @func000000000000000f
+	andi	a0, a0, 1
+	bnez	a0, .LBB3_3
+	li	a2, 64
+	add	a1, a1, a2
+	addi	a1, a1, 12
+	beqz	a0, .LBB3_4
+.LBB3_2:
+	li	a0, -8
+	and	a0, a0, a1
+	ret
+.LBB3_3:
+	li	a2, 8
+	add	a1, a1, a2
+	addi	a1, a1, 12
+	bnez	a0, .LBB3_2
+.LBB3_4:                                # %entry
+	li	a0, -64
+	and	a0, a0, a1
+	ret

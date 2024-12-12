@@ -16,9 +16,9 @@
 ; redis/optimized/sec.ll
 ; redis/optimized/sec.sym.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ult i64 %2, 16385
+  %3 = icmp samesign ult i64 %2, 16385
   %4 = select i1 %3, i64 12, i64 %1
   %5 = lshr i64 %0, %4
   ret i64 %5

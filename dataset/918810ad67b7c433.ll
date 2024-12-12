@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; libwebp/optimized/quant_enc.c.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
@@ -9,6 +9,7 @@
 ; softposit-rs/optimized/1e6z9tsqxvhrpdzq.ll
 ; softposit-rs/optimized/3yl6353p3hwrtv6y.ll
 ; softposit-rs/optimized/oveg98n4r9tnk39.ll
+; zed-rs/optimized/055l6m6wb4e4jq2j59cjsdkaz.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000001(i8 %0) #0 {
 entry:

@@ -31,4 +31,17 @@ entry:
   ret { i64, i64 } %5
 }
 
+; 3 occurrences:
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/1b5ll0cnnio0vvxmolgooij5i.ll
+; zed-rs/optimized/bkz8gk2grsqnr2xbkvtnqlfhe.ll
+; Function Attrs: nounwind
+define { i64, i64 } @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub nuw i64 %1, %2
+  %4 = insertvalue { i64, i64 } poison, i64 %0, 0
+  %5 = insertvalue { i64, i64 } %4, i64 %3, 1
+  ret { i64, i64 } %5
+}
+
 attributes #0 = { nounwind }

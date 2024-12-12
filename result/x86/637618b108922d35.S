@@ -10,18 +10,6 @@ func0000000000000050:                   # @func0000000000000050
 	imull	%esi, %edi
 	movslq	%edi, %rax
 	retq
-func00000000000000d0:                   # @func00000000000000d0
-	incl	%esi
-	incl	%edi
-	imull	%esi, %edi
-	movslq	%edi, %rax
-	retq
-func0000000000000000:                   # @func0000000000000000
-	incl	%esi
-	incl	%edi
-	imull	%esi, %edi
-	movslq	%edi, %rax
-	retq
 func0000000000000040:                   # @func0000000000000040
 	incl	%esi
 	incl	%edi

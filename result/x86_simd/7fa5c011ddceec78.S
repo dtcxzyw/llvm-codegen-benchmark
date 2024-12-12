@@ -78,14 +78,14 @@ func0000000000000019:                   # @func0000000000000019
 	retq
 .LCPI13_0:
 	.long	4294248133                      # 0xfff506c5
-func0000000000000034:                   # @func0000000000000034
+func0000000000000035:                   # @func0000000000000035
 	vpaddd	%ymm1, %ymm2, %ymm1
 	vpsubd	%ymm0, %ymm1, %ymm0
 	vpaddd	.LCPI13_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI14_0:
 	.long	4294248133                      # 0xfff506c5
-func0000000000000035:                   # @func0000000000000035
+func0000000000000034:                   # @func0000000000000034
 	vpaddd	%ymm1, %ymm2, %ymm1
 	vpsubd	%ymm0, %ymm1, %ymm0
 	vpaddd	.LCPI14_0(%rip){1to8}, %ymm0, %ymm0

@@ -1,3 +1,11 @@
+func00000000000000fa:                   # @func00000000000000fa
+	leaq	(%rsi,%rdi), %rax
+	shrq	$5, %rdi
+	shrq	$5, %rdx
+	subq	%rdi, %rdx
+	shlq	$5, %rdx
+	addq	%rdx, %rax
+	retq
 func00000000000000d2:                   # @func00000000000000d2
 	leaq	(%rsi,%rdi), %rax
 	shrq	$4, %rdi
@@ -12,13 +20,5 @@ func00000000000000da:                   # @func00000000000000da
 	shrq	%rdx
 	subq	%rax, %rdx
 	leaq	(%rsi,%rdx,2), %rax
-	addq	%rdi, %rax
-	retq
-func00000000000000fa:                   # @func00000000000000fa
-	movq	%rdi, %rax
-	shrq	$3, %rax
-	shrq	$3, %rdx
-	subq	%rax, %rdx
-	leaq	(%rsi,%rdx,8), %rax
 	addq	%rdi, %rax
 	retq

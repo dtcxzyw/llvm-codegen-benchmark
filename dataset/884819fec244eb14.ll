@@ -9,7 +9,7 @@ define i1 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 8
   %3 = udiv i32 2147483647, %2
-  %4 = icmp slt i32 %3, %0
+  %4 = icmp sgt i32 %0, %3
   ret i1 %4
 }
 

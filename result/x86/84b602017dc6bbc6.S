@@ -1,3 +1,12 @@
+func0000000000000025:                   # @func0000000000000025
+	leal	(%rdx,%rdx,4), %ecx
+	movl	%ecx, %eax
+	shrl	$31, %eax
+	addl	%ecx, %eax
+	sarl	%eax
+	addl	%edi, %eax
+	addl	%esi, %eax
+	retq
 func0000000000000020:                   # @func0000000000000020
 	imull	$367, %edx, %eax                # imm = 0x16F
 	cltq
@@ -6,15 +15,6 @@ func0000000000000020:                   # @func0000000000000020
 	shrq	$63, %rcx
 	sarq	$33, %rax
 	addl	%ecx, %eax
-	addl	%edi, %eax
-	addl	%esi, %eax
-	retq
-func0000000000000025:                   # @func0000000000000025
-	leal	(%rdx,%rdx,4), %ecx
-	movl	%ecx, %eax
-	shrl	$31, %eax
-	addl	%ecx, %eax
-	sarl	%eax
 	addl	%edi, %eax
 	addl	%esi, %eax
 	retq

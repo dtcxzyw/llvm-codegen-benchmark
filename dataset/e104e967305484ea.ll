@@ -1,5 +1,8 @@
 
-; 7 occurrences:
+; 10 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/numeric.ll
+; boost/optimized/src.ll
 ; cmake/optimized/archive_read_support_format_mtree.c.ll
 ; cpython/optimized/unicodeobject.ll
 ; eastl/optimized/EAString.cpp.ll

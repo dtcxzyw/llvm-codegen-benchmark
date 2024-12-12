@@ -35,7 +35,7 @@ entry:
   %3 = add nsw i32 %2, -2
   %4 = zext nneg i32 %3 to i64
   %5 = lshr i64 %1, %4
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   ret i64 %6
 }
 
@@ -48,7 +48,7 @@ entry:
   %3 = add i32 %2, -2
   %4 = zext nneg i32 %3 to i64
   %5 = lshr i64 %1, %4
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   ret i64 %6
 }
 

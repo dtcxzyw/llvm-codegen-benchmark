@@ -26,12 +26,12 @@ func000000000000001c:                   # @func000000000000001c
 	add	a1, a1, a2
 	mul	a0, a0, a1
 	ret
-func0000000000000035:                   # @func0000000000000035
-	addi	a1, a1, 1
-	mul	a0, a0, a1
-	ret
 func0000000000000015:                   # @func0000000000000015
 	addi	a1, a1, 4
+	mul	a0, a0, a1
+	ret
+func0000000000000035:                   # @func0000000000000035
+	addi	a1, a1, 1
 	mul	a0, a0, a1
 	ret
 func000000000000003d:                   # @func000000000000003d

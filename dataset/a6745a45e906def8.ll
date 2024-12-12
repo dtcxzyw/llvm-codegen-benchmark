@@ -8,23 +8,22 @@
 ; openjdk/optimized/nmethod.ll
 ; openusd/optimized/zipFile.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, ptr %1, i16 %2) #0 {
+define i64 @func000000000000000c(i64 %0, ptr %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %0, %5
   ret i64 %6
 }
 
-; 32 occurrences:
+; 30 occurrences:
 ; cmake/optimized/huf_decompress.c.ll
 ; linux/optimized/af_packet.ll
 ; linux/optimized/ah6.ll
 ; linux/optimized/esp6.ll
 ; linux/optimized/exthdrs.ll
 ; linux/optimized/filter.ll
-; linux/optimized/gso.ll
 ; linux/optimized/inet_fragment.ll
 ; linux/optimized/ip6_offload.ll
 ; linux/optimized/ip6_output.ll
@@ -47,7 +46,6 @@ entry:
 ; linux/optimized/xfrm6_input.ll
 ; linux/optimized/xfrm_input.ll
 ; postgres/optimized/heapam.ll
-; postgres/optimized/heapdesc.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; Function Attrs: nounwind

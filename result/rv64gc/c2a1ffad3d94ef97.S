@@ -18,6 +18,11 @@ func000000000000003f:                   # @func000000000000003f
 	slli	a1, a1, 6
 	sub	a0, a1, a0
 	ret
+func0000000000000000:                   # @func0000000000000000
+	add	a1, a1, a2
+	slli	a1, a1, 1
+	sub	a0, a1, a0
+	ret
 func0000000000000012:                   # @func0000000000000012
 	add	a1, a1, a2
 	slli	a1, a1, 2

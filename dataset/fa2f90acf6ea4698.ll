@@ -1,5 +1,5 @@
 
-; 394 occurrences:
+; 399 occurrences:
 ; abseil-cpp/optimized/arg.cc.ll
 ; abseil-cpp/optimized/bernoulli_distribution_test.cc.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
@@ -27,6 +27,9 @@
 ; abseil-cpp/optimized/wide_multiply_test.cc.ll
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
 ; arrow/optimized/basic_decimal.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/to_chars.ll
 ; coreutils-rs/optimized/h56aibhqef681ic.ll
 ; cpython/optimized/basearith.ll
 ; cpython/optimized/crt.ll
@@ -259,7 +262,6 @@
 ; qemu/optimized/optimize.c.ll
 ; qemu/optimized/system_memory.c.ll
 ; qemu/optimized/target_riscv_csr.c.ll
-; qemu/optimized/target_riscv_m128_helper.c.ll
 ; qemu/optimized/target_riscv_op_helper.c.ll
 ; qemu/optimized/util_host-utils.c.ll
 ; quickjs/optimized/libbf.ll
@@ -394,11 +396,14 @@
 ; wasmtime-rs/optimized/4nuxwfk1fz1jsu89.ll
 ; wasmtime-rs/optimized/55kotg5r2nkrpa1d.ll
 ; wolfssl/optimized/sp_int.c.ll
+; zed-rs/optimized/5c6qu0nt7rwrjz6em8cry1wl2.ll
+; zed-rs/optimized/bktyyhuk5fekatq647qx0ox8v.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
 define i128 @func0000000000000001(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
-  %3 = or disjoint i128 %2, %0
+  %3 = or disjoint i128 %0, %2
   ret i128 %3
 }
 
@@ -413,7 +418,7 @@ entry:
 define i128 @func0000000000000000(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext i64 %1 to i128
-  %3 = or i128 %2, %0
+  %3 = or i128 %0, %2
   ret i128 %3
 }
 
@@ -430,7 +435,7 @@ entry:
 define i128 @func0000000000000002(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext nneg i64 %1 to i128
-  %3 = or i128 %2, %0
+  %3 = or i128 %0, %2
   ret i128 %3
 }
 
@@ -441,7 +446,7 @@ entry:
 define i128 @func0000000000000003(i128 %0, i64 %1) #0 {
 entry:
   %2 = zext nneg i64 %1 to i128
-  %3 = or disjoint i128 %2, %0
+  %3 = or disjoint i128 %0, %2
   ret i128 %3
 }
 

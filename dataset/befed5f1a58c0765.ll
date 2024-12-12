@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 26 occurrences:
 ; abc/optimized/abcSymm.c.ll
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
@@ -15,7 +15,6 @@
 ; opencv/optimized/bgfg_gsoc.cpp.ll
 ; opencv/optimized/conv_depthwise.cpp.ll
 ; opencv/optimized/convolution.cpp.ll
-; opencv/optimized/fed.cpp.ll
 ; opencv/optimized/fourier_descriptors.cpp.ll
 ; openmpi/optimized/coll_base_bcast.ll
 ; openssl/optimized/libcrypto-lib-bn_exp.ll
@@ -61,10 +60,9 @@ entry:
   ret i32 %3
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; icu/optimized/calendar.ll
 ; icu/optimized/uhash.ll
-; opencv/optimized/tf_importer.cpp.ll
 ; openspiel/optimized/liars_dice.cc.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind

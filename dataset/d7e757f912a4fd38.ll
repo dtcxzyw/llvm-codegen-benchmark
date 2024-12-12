@@ -3,7 +3,7 @@
 ; openjdk/optimized/cmsxform.ll
 ; postgres/optimized/heap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000001982(i32 %0, i32 %1) #0 {
+define i1 @func0000000000006302(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 1281450528
   %3 = icmp ne i32 %1, 1482250784
@@ -18,7 +18,7 @@ entry:
 ; llvm/optimized/CommonArgs.cpp.ll
 ; quantlib/optimized/mexico.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000001998(i32 %0, i32 %1) #0 {
+define i1 @func0000000000006318(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 25
   %3 = icmp ne i32 %1, 12
@@ -31,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000001882(i32 %0, i32 %1) #0 {
+define i1 @func0000000000006102(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 2
   %3 = icmp ult i32 %1, 7
@@ -44,7 +44,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/pgstat_io.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000001918(i32 %0, i32 %1) #0 {
+define i1 @func0000000000006218(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 3
   %3 = icmp ugt i32 %1, 1
@@ -57,7 +57,7 @@ entry:
 ; 1 occurrences:
 ; tokenizers-rs/optimized/4hn9gefsll13qr1r.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000988(i32 %0, i32 %1) #0 {
+define i1 @func0000000000002308(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 36
   %3 = icmp ne i32 %1, 32

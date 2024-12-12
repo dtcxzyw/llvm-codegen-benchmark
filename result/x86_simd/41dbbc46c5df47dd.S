@@ -16,5 +16,5 @@ func000000000000000c:                   # @func000000000000000c
 func000000000000000d:                   # @func000000000000000d
 	vpmovsxdq	%xmm1, %ymm1
 	vpsllq	$4, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq

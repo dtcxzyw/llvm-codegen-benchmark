@@ -45,14 +45,13 @@ func0000000000000004:                   # @func0000000000000004
 	.quad	3                               # 0x3
 .LCPI4_1:
 	.quad	2                               # 0x2
-.LCPI4_2:
-	.quad	-2                              # 0xfffffffffffffffe
 func0000000000000000:                   # @func0000000000000000
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
 	vpbroadcastq	.LCPI4_0(%rip), %ymm1   # ymm1 = [3,3,3,3]
 	vpbroadcastq	.LCPI4_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [2,2,2,2]
-	vpaddq	.LCPI4_2(%rip){1to4}, %ymm0, %ymm0
+	vpcmpeqd	%ymm2, %ymm2, %ymm2
+	vpsubq	%ymm2, %ymm0, %ymm0
 	vpsllvq	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI5_0:

@@ -1,5 +1,5 @@
 
-; 41 occurrences:
+; 38 occurrences:
 ; curl/optimized/libcurl_la-curl_sasl.ll
 ; git/optimized/merge-ort.ll
 ; hyperscan/optimized/ng_execute.cpp.ll
@@ -13,8 +13,6 @@
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/i915_gem_object.ll
 ; linux/optimized/intel_bw.ll
-; linux/optimized/isadma.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mprotect.ll
 ; linux/optimized/phy_device.ll
@@ -28,7 +26,6 @@
 ; llvm/optimized/CGCleanup.cpp.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/DeclSpec.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RetainCountChecker.cpp.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll

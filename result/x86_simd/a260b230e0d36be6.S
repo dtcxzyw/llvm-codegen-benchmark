@@ -55,7 +55,7 @@ func000000000000000f:                   # @func000000000000000f
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
-func0000000000000000:                   # @func0000000000000000
+func000000000000000c:                   # @func000000000000000c
 	vpmovdb	%ymm0, %xmm0
 	vgf2p8affineqb	$0, .LCPI1_1(%rip){1to2}, %xmm0, %xmm0
 	vzeroupper
@@ -86,7 +86,7 @@ func0000000000000000:                   # @func0000000000000000
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
-func000000000000000c:                   # @func000000000000000c
+func0000000000000000:                   # @func0000000000000000
 	vpmovdb	%ymm0, %xmm0
 	vgf2p8affineqb	$0, .LCPI2_1(%rip){1to2}, %xmm0, %xmm0
 	vzeroupper

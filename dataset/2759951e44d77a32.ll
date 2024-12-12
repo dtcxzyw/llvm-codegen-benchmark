@@ -10,12 +10,13 @@ define i64 @func0000000000000007(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -281470681755648
   %4 = or disjoint i64 %3, %1
-  %5 = or i64 %4, %0
-  %6 = or i64 %5, 8192
+  %5 = or disjoint i64 %4, 8192
+  %6 = or disjoint i64 %0, %5
   ret i64 %6
 }
 
-; 13 occurrences:
+; 14 occurrences:
+; linux/optimized/set_memory.ll
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; llvm/optimized/CGOpenMPRuntime.cpp.ll
@@ -33,9 +34,9 @@ entry:
 define i64 @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4194304
-  %4 = or disjoint i64 %3, %1
-  %5 = or i64 %4, %0
-  %6 = or i64 %5, 2236418
+  %4 = or disjoint i64 %1, %3
+  %5 = or disjoint i64 %4, 2236418
+  %6 = or i64 %0, %5
   ret i64 %6
 }
 

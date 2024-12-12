@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 23 occurrences:
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/ColladaParser.cpp.ll
 ; assimp/optimized/D3MFImporter.cpp.ll
@@ -10,7 +10,6 @@
 ; assimp/optimized/OgreXmlSerializer.cpp.ll
 ; assimp/optimized/X3DImporter.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
-; assimp/optimized/glTF2Importer.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; llvm/optimized/ProfileSummary.cpp.ll
@@ -25,7 +24,7 @@
 ; wireshark/optimized/packet-acdr.c.ll
 ; wireshark/optimized/packet-sapdiag.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000000421(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 75
   %4 = icmp eq i8 %1, 80
@@ -40,7 +39,7 @@ entry:
 ; curl/optimized/libcurl_la-parsedate.ll
 ; wireshark/optimized/packet-memcache.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000004c4(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000001184(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, -10
   %4 = icmp ne i8 %1, 0
@@ -50,13 +49,40 @@ entry:
   ret i1 %7
 }
 
-; 4 occurrences:
+; 1 occurrences:
+; assimp/optimized/glTF2Importer.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000001886(i8 %0, i8 %1, i8 %2) #0 {
+entry:
+  %3 = icmp slt i8 %2, -64
+  %4 = icmp ult i8 %1, 48
+  %5 = and i1 %4, %3
+  %6 = icmp slt i8 %0, -64
+  %7 = and i1 %5, %6
+  ret i1 %7
+}
+
+; 1 occurrences:
+; assimp/optimized/glTF2Importer.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000018c6(i8 %0, i8 %1, i8 %2) #0 {
+entry:
+  %3 = icmp slt i8 %2, -64
+  %4 = icmp slt i8 %1, -64
+  %5 = and i1 %4, %3
+  %6 = icmp slt i8 %0, -64
+  %7 = and i1 %5, %6
+  ret i1 %7
+}
+
+; 5 occurrences:
 ; abc/optimized/mioUtils.c.ll
 ; abc/optimized/sclLibUtil.c.ll
 ; llvm/optimized/AddressSanitizer.cpp.ll
 ; llvm/optimized/OpenMPOpt.cpp.ll
+; quickjs/optimized/libregexp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000044c(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func000000000000108c(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, -26
   %4 = icmp ult i8 %1, -10
@@ -71,7 +97,7 @@ entry:
 ; llvm/optimized/IRBuilder.cpp.ll
 ; llvm/optimized/InstructionSimplify.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000444(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000001084(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 22
   %4 = icmp ult i8 %1, 22
@@ -82,22 +108,9 @@ entry:
 }
 
 ; 1 occurrences:
-; llvm/optimized/SLPVectorizer.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000c4c(i8 %0, i8 %1, i8 %2) #0 {
-entry:
-  %3 = icmp ne i8 %2, 12
-  %4 = icmp ult i8 %1, 22
-  %5 = and i1 %4, %3
-  %6 = icmp ne i8 %0, 12
-  %7 = and i1 %5, %6
-  ret i1 %7
-}
-
-; 1 occurrences:
 ; llvm/optimized/ComplexDeinterleavingPass.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000888(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000002108(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ugt i8 %2, 28
   %4 = icmp ugt i8 %1, 28
@@ -110,7 +123,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/loopfilter.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000ccc(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func000000000000318c(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
   %4 = icmp ne i8 %1, 0
@@ -126,7 +139,7 @@ entry:
 ; pbrt-v4/optimized/stbimage.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func000000000000042a(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 2
   %4 = icmp eq i8 %1, 2
@@ -139,7 +152,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-alljoyn.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000cc1(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000003181(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
   %4 = icmp ne i8 %1, 97
@@ -152,7 +165,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-memcache.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000004cc(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func000000000000118c(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, -4
   %4 = icmp ne i8 %1, 8
@@ -165,7 +178,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-btrfcomm.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c18(i8 %0, i8 %1, i8 %2) #0 {
+define i1 @func0000000000003028(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
   %4 = icmp eq i8 %1, -17

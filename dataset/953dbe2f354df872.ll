@@ -1,5 +1,5 @@
 
-; 102 occurrences:
+; 101 occurrences:
 ; abc/optimized/abcBidec.c.ll
 ; abc/optimized/aigMffc.c.ll
 ; abc/optimized/darLib.c.ll
@@ -72,7 +72,6 @@
 ; minetest/optimized/sky.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; ncnn/optimized/detectionoutput.cpp.ll
-; openblas/optimized/iparmq.c.ll
 ; opencv/optimized/Match.cpp.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; opencv/optimized/bagofwords_classification.cpp.ll

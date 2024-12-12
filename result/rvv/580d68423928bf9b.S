@@ -1,6 +1,6 @@
 func0000000000000004:                   # @func0000000000000004
 	vsetivli	zero, 4, e16, mf2, ta, ma
-	vmsleu.vi	v0, v8, 6
+	vmsleu.vi	v0, v8, 5
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsext.vf2	v10, v9
 	vmerge.vim	v8, v10, 1, v0

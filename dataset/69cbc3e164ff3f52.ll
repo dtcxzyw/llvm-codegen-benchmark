@@ -1,5 +1,7 @@
 
-; 18 occurrences:
+; 20 occurrences:
+; boost/optimized/graphml.ll
+; boost/optimized/settings_parser.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll
 ; linux/optimized/workqueue.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
@@ -19,7 +21,7 @@
 ; openusd/optimized/testSdfPathTable.cpp.ll
 ; pybind11/optimized/test_stl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, -1
   %4 = select i1 %3, ptr null, ptr %1
@@ -30,7 +32,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/freepage.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000002c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, ptr null, ptr %1

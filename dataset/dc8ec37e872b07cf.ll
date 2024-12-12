@@ -35,7 +35,7 @@ entry:
   %4 = add i64 %3, 4
   %5 = mul nuw nsw i64 %1, 12
   %6 = add i64 %4, %5
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 
@@ -48,7 +48,7 @@ entry:
   %4 = add i64 %3, 96
   %5 = mul i64 %1, 244
   %6 = add i64 %4, %5
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 
@@ -91,7 +91,7 @@ entry:
   %4 = add nsw i64 %3, 131072
   %5 = mul nuw nsw i64 %1, 10438
   %6 = add nsw i64 %5, %4
-  %7 = add nsw i64 %6, %0
+  %7 = add nsw i64 %0, %6
   ret i64 %7
 }
 

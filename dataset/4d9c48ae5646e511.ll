@@ -56,17 +56,6 @@ entry:
   ret i1 %4
 }
 
-; 1 occurrences:
-; vcpkg/optimized/commands.depend-info.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0, i8 %1) #0 {
-entry:
-  %2 = trunc nuw i8 %1 to i1
-  %3 = icmp ugt i32 %0, 1
-  %4 = select i1 %2, i1 %3, i1 false
-  ret i1 %4
-}
-
 ; 2 occurrences:
 ; gromacs/optimized/gmx_spol.cpp.ll
 ; vcpkg/optimized/versiondeserializers.cpp.ll
@@ -107,7 +96,7 @@ entry:
 ; 1 occurrences:
 ; diesel-rs/optimized/6qvzky2suxi9qri.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i8 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp eq i32 %0, 2

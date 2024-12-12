@@ -1,9 +1,7 @@
 
-; 7 occurrences:
+; 5 occurrences:
 ; icu/optimized/ustrtrns.ll
-; linux/optimized/ebda.ll
 ; llvm/optimized/AArch64CallingConvention.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86FloatingPoint.cpp.ll
 ; openjdk/optimized/utf8.ll
 ; wireshark/optimized/packet-dns.c.ll

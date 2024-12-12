@@ -5,7 +5,7 @@ func0000000000000008:                   # @func0000000000000008
 	vsub.vv	v8, v8, v10
 	vmsltu.vv	v0, v8, v12
 	ret
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	lui	a0, 131072
 	addi	a0, a0, -2
 	vsetivli	zero, 8, e32, m2, ta, ma

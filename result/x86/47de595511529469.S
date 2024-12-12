@@ -1,9 +1,3 @@
-func00000000000000af:                   # @func00000000000000af
-	xorl	%eax, %eax
-	testb	%sil, %sil
-	setns	%al
-	leal	258(%rdi,%rax), %eax
-	retq
 func000000000000001f:                   # @func000000000000001f
 	xorl	%eax, %eax
 	cmpb	$120, %sil

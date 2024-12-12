@@ -38,13 +38,13 @@ func0000000000000010:                   # @func0000000000000010
 	vpsllvd	%ymm2, %ymm1, %ymm1
 	vpternlogd	$186, %ymm1, %ymm3, %ymm0 # ymm0 = (ymm0 & ~ymm3) | ymm1
 	retq
-func000000000000000e:                   # @func000000000000000e
+func0000000000000008:                   # @func0000000000000008
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsllvd	%ymm2, %ymm3, %ymm3
 	vpsllvd	%ymm2, %ymm1, %ymm1
 	vpternlogd	$186, %ymm1, %ymm3, %ymm0 # ymm0 = (ymm0 & ~ymm3) | ymm1
 	retq
-func0000000000000008:                   # @func0000000000000008
+func000000000000000e:                   # @func000000000000000e
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsllvd	%ymm2, %ymm3, %ymm3
 	vpsllvd	%ymm2, %ymm1, %ymm1

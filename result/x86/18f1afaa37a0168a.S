@@ -1,4 +1,4 @@
-func000000000000001e:                   # @func000000000000001e
+func000000000000001f:                   # @func000000000000001f
 	addl	%edx, %esi
 	andl	$63, %esi
 	leaq	(%rdi,%rsi,2), %rax
@@ -15,7 +15,7 @@ func000000000000001c:                   # @func000000000000001c
 	andl	$4194302, %eax                  # imm = 0x3FFFFE
 	addq	%rdi, %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	andl	$-4, %edx
 	leal	(%rdx,%rsi), %eax
 	andl	$-64, %eax

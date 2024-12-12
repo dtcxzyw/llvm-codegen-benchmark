@@ -22,7 +22,7 @@ define i8 @func0000000000000002(i8 %0, i8 %1, i16 %2) #0 {
 entry:
   %3 = trunc i16 %2 to i8
   %4 = and i8 %3, 18
-  %5 = or disjoint i8 %4, %1
+  %5 = or disjoint i8 %1, %4
   %6 = and i8 %0, 31
   %7 = or i8 %6, %5
   ret i8 %7

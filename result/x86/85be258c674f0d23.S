@@ -3,17 +3,17 @@ func0000000000000002:                   # @func0000000000000002
 	cmpq	%rdi, %rsi
 	sete	%al
 	retq
-func0000000000000036:                   # @func0000000000000036
+func0000000000000056:                   # @func0000000000000056
 	subq	%rdx, %rsi
 	cmpq	%rdi, %rsi
 	setge	%al
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000054:                   # @func0000000000000054
 	subq	%rdx, %rsi
 	cmpq	%rdi, %rsi
 	setg	%al
 	retq
-func0000000000000032:                   # @func0000000000000032
+func0000000000000052:                   # @func0000000000000052
 	subq	%rdx, %rsi
 	cmpq	%rdi, %rsi
 	setae	%al

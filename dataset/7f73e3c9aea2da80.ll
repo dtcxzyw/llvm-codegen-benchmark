@@ -1,6 +1,5 @@
 
-; 16 occurrences:
-; arrow/optimized/int_util.cc.ll
+; 14 occurrences:
 ; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
 ; freetype/optimized/pcf.c.ll
 ; minetest/optimized/cavegen.cpp.ll
@@ -13,7 +12,6 @@
 ; minetest/optimized/minimap.cpp.ll
 ; minetest/optimized/pathfinder.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
-; nuttx/optimized/mq_timedsend.c.ll
 ; opencv/optimized/gfluidcore.cpp.ll
 ; postgres/optimized/nbtsplitloc.ll
 ; Function Attrs: nounwind
@@ -24,7 +22,7 @@ entry:
   ret i1 %4
 }
 
-; 32 occurrences:
+; 35 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; cmake/optimized/archive_read_support_format_zip.c.ll
 ; eastl/optimized/TestStringView.cpp.ll
@@ -38,7 +36,6 @@ entry:
 ; llvm/optimized/BranchFolding.cpp.ll
 ; llvm/optimized/ContinuationIndenter.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/SelectionDAGISel.cpp.ll
@@ -47,6 +44,7 @@ entry:
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; luajit/optimized/lj_opt_mem.ll
 ; luajit/optimized/lj_opt_mem_dyn.ll
+; lvgl/optimized/lv_ime_pinyin.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/dynamicshadows.cpp.ll
 ; minetest/optimized/game.cpp.ll
@@ -56,7 +54,10 @@ entry:
 ; minetest/optimized/serverpackethandler.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_dxt.c.ll
+; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
 ; wireshark/optimized/mp2t.c.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i16 %1, i16 %2) #0 {
 entry:
@@ -151,9 +152,11 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; openmpi/optimized/pml_ob1_recvfrag.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000009(i1 %0, i16 %1, i16 %2) #0 {
 entry:
@@ -162,8 +165,7 @@ entry:
   ret i1 %4
 }
 
-; 13 occurrences:
-; arrow/optimized/int_util.cc.ll
+; 12 occurrences:
 ; clamav/optimized/entconv.c.ll
 ; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
 ; hyperscan/optimized/shufticompile.cpp.ll
@@ -171,15 +173,25 @@ entry:
 ; libquic/optimized/d1_both.c.ll
 ; lightgbm/optimized/bin.cpp.ll
 ; linux/optimized/icl_dsi.ll
-; opencv/optimized/binary_descriptor.cpp.ll
 ; opencv/optimized/gfluidcore.cpp.ll
 ; openjdk/optimized/cmsopt.ll
+; postgres/optimized/gistvacuum.ll
 ; slurm/optimized/job_test.ll
 ; slurm/optimized/slurm_step_layout.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp ult i16 %1, %2
+  %4 = select i1 %3, i1 true, i1 %0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; opencv/optimized/binary_descriptor.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i16 %1, i16 %2) #0 {
+entry:
+  %3 = icmp samesign ult i16 %1, %2
   %4 = select i1 %3, i1 true, i1 %0
   ret i1 %4
 }

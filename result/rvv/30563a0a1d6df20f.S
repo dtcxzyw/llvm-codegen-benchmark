@@ -3,7 +3,7 @@ func0000000000000063:                   # @func0000000000000063
 	vmslt.vv	v0, v9, v10
 	vmv.v.i	v9, 0
 	vmerge.vim	v9, v9, 1, v0
-	vadd.vv	v10, v9, v8
+	vadd.vv	v10, v8, v9
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret
@@ -12,7 +12,7 @@ func0000000000000081:                   # @func0000000000000081
 	vmsltu.vv	v0, v10, v9
 	vmv.v.i	v9, 0
 	vmerge.vim	v9, v9, 1, v0
-	vadd.vv	v10, v9, v8
+	vadd.vv	v10, v8, v9
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret
@@ -21,7 +21,7 @@ func00000000000000c3:                   # @func00000000000000c3
 	vmsne.vv	v0, v9, v10
 	vmv.v.i	v9, 0
 	vmerge.vim	v9, v9, 1, v0
-	vadd.vv	v10, v9, v8
+	vadd.vv	v10, v8, v9
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret
@@ -30,7 +30,7 @@ func00000000000000c7:                   # @func00000000000000c7
 	vmsne.vv	v0, v9, v10
 	vmv.v.i	v9, 0
 	vmerge.vim	v9, v9, 1, v0
-	vadd.vv	v10, v9, v8
+	vadd.vv	v10, v8, v9
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret
@@ -39,7 +39,7 @@ func0000000000000057:                   # @func0000000000000057
 	vmsleu.vv	v0, v9, v10
 	vmv.v.i	v9, 0
 	vmerge.vim	v9, v9, 1, v0
-	vadd.vv	v10, v9, v8
+	vadd.vv	v10, v8, v9
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret
@@ -48,7 +48,7 @@ func0000000000000097:                   # @func0000000000000097
 	vmsleu.vv	v0, v10, v9
 	vmv.v.i	v9, 0
 	vmerge.vim	v9, v9, 1, v0
-	vadd.vv	v10, v9, v8
+	vadd.vv	v10, v8, v9
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret
@@ -57,7 +57,7 @@ func0000000000000090:                   # @func0000000000000090
 	vmsleu.vv	v0, v10, v9
 	vmv.v.i	v9, 0
 	vmerge.vim	v9, v9, 1, v0
-	vadd.vv	v10, v9, v8
+	vadd.vv	v10, v8, v9
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret
@@ -66,7 +66,7 @@ func0000000000000047:                   # @func0000000000000047
 	vmsltu.vv	v0, v9, v10
 	vmv.v.i	v9, 0
 	vmerge.vim	v9, v9, 1, v0
-	vadd.vv	v10, v9, v8
+	vadd.vv	v10, v8, v9
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret
@@ -75,7 +75,7 @@ func0000000000000040:                   # @func0000000000000040
 	vmsltu.vv	v0, v9, v10
 	vmv.v.i	v9, 0
 	vmerge.vim	v9, v9, 1, v0
-	vadd.vv	v10, v9, v8
+	vadd.vv	v10, v8, v9
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret
@@ -84,7 +84,7 @@ func0000000000000017:                   # @func0000000000000017
 	vmseq.vv	v0, v9, v10
 	vmv.v.i	v9, 0
 	vmerge.vim	v9, v9, 1, v0
-	vadd.vv	v10, v9, v8
+	vadd.vv	v10, v8, v9
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret
@@ -93,7 +93,7 @@ func0000000000000010:                   # @func0000000000000010
 	vmseq.vv	v0, v9, v10
 	vmv.v.i	v9, 0
 	vmerge.vim	v9, v9, 1, v0
-	vadd.vv	v10, v9, v8
+	vadd.vv	v10, v8, v9
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret
@@ -102,7 +102,7 @@ func0000000000000067:                   # @func0000000000000067
 	vmslt.vv	v0, v9, v10
 	vmv.v.i	v9, 0
 	vmerge.vim	v9, v9, 1, v0
-	vadd.vv	v10, v9, v8
+	vadd.vv	v10, v8, v9
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret
@@ -111,7 +111,7 @@ func00000000000000a7:                   # @func00000000000000a7
 	vmslt.vv	v0, v10, v9
 	vmv.v.i	v9, 0
 	vmerge.vim	v9, v9, 1, v0
-	vadd.vv	v10, v9, v8
+	vadd.vv	v10, v8, v9
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret
@@ -120,7 +120,16 @@ func0000000000000071:                   # @func0000000000000071
 	vmsle.vv	v0, v9, v10
 	vmv.v.i	v9, 0
 	vmerge.vim	v9, v9, 1, v0
-	vadd.vv	v10, v9, v8
+	vadd.vv	v10, v8, v9
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vzext.vf2	v8, v10
+	ret
+func0000000000000066:                   # @func0000000000000066
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vmslt.vv	v0, v9, v10
+	vmv.v.i	v9, 0
+	vmerge.vim	v9, v9, 1, v0
+	vadd.vv	v10, v8, v9
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret
@@ -129,7 +138,7 @@ func00000000000000c0:                   # @func00000000000000c0
 	vmsne.vv	v0, v9, v10
 	vmv.v.i	v9, 0
 	vmerge.vim	v9, v9, 1, v0
-	vadd.vv	v10, v9, v8
+	vadd.vv	v10, v8, v9
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret

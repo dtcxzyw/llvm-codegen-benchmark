@@ -1,4 +1,16 @@
 
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000025(i32 %0, i16 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %2, -785
+  %4 = add nsw i32 %3, %0
+  %5 = zext i16 %1 to i32
+  %6 = sub nsw i32 %4, %5
+  ret i32 %6
+}
+
 ; 3 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-bgp.c.ll

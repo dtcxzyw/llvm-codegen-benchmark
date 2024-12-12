@@ -64,6 +64,11 @@ func0000000000000019:                   # @func0000000000000019
 	slli	a0, a0, 33
 	sh1add.uw	a0, a1, a0
 	ret
+func0000000000000010:                   # @func0000000000000010
+	slli	a1, a1, 52
+	slli	a0, a0, 63
+	or	a0, a0, a1
+	ret
 func000000000000003c:                   # @func000000000000003c
 	slli	a1, a1, 58
 	slli	a0, a0, 1

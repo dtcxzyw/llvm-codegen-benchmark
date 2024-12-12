@@ -1,10 +1,3 @@
-func0000000000000047:                   # @func0000000000000047
-	cmpl	$10, %edx
-	movl	$9, %eax
-	cmovbl	%esi, %eax
-	shll	$8, %edi
-	orl	%edi, %eax
-	retq
 func000000000000000f:                   # @func000000000000000f
 	movl	%esi, %eax
 	testl	%edx, %edx
@@ -22,11 +15,11 @@ func0000000000000008:                   # @func0000000000000008
 func000000000000000e:                   # @func000000000000000e
 	movl	%esi, %eax
 	testl	%edx, %edx
-	je	.LBB3_1
+	je	.LBB2_1
 	shll	$9, %eax
 	orl	%edi, %eax
 	retq
-.LBB3_1:
+.LBB2_1:
 	xorl	%edi, %edi
 	shll	$9, %eax
 	orl	%edi, %eax

@@ -15,4 +15,17 @@ entry:
   ret i1 %5
 }
 
+; 2 occurrences:
+; gromacs/optimized/anadih.cpp.ll
+; lvgl/optimized/lv_arc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000022(float %0, float %1) #0 {
+entry:
+  %2 = fadd float %1, 3.600000e+02
+  %3 = fcmp olt float %1, 0.000000e+00
+  %4 = select i1 %3, float %2, float %1
+  %5 = fcmp olt float %4, %0
+  ret i1 %5
+}
+
 attributes #0 = { nounwind }

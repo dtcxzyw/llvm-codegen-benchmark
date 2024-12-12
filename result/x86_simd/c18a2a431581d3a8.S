@@ -4,7 +4,7 @@
 	.quad	1                               # 0x1
 .LCPI0_2:
 	.zero	16,1
-func0000000000000030:                   # @func0000000000000030
+func0000000000000050:                   # @func0000000000000050
 	vpsubq	%ymm1, %ymm0, %ymm0
 	vpsraq	$2, %ymm0, %ymm0
 	vpmullq	.LCPI0_0(%rip){1to4}, %ymm0, %ymm0

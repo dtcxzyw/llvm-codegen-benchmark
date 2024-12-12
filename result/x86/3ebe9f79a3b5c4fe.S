@@ -18,7 +18,7 @@ func0000000000000016:                   # @func0000000000000016
 	retq
 func0000000000000000:                   # @func0000000000000000
 	imull	%edx, %esi
-	shll	$3, %esi
+	shll	$2, %esi
 	movslq	%esi, %rax
 	leaq	(%rdi,%rax,4), %rax
 	retq

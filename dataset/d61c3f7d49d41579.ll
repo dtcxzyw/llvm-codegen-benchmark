@@ -1,5 +1,5 @@
 
-; 121 occurrences:
+; 123 occurrences:
 ; abc/optimized/bmcUnroll.c.ll
 ; abc/optimized/giaSatLE.c.ll
 ; abc/optimized/ifDsd.c.ll
@@ -22,7 +22,6 @@
 ; linux/optimized/gen6_ppgtt.ll
 ; linux/optimized/icl_dsi.ll
 ; linux/optimized/intel_rps.ll
-; linux/optimized/intel_tcc.ll
 ; linux/optimized/sparse.ll
 ; linux/optimized/xz_dec_bcj.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
@@ -31,6 +30,9 @@
 ; luau/optimized/IrTranslation.cpp.ll
 ; luau/optimized/isocline.c.ll
 ; luau/optimized/lvmexecute.cpp.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
@@ -130,6 +132,17 @@ entry:
   ret i32 %4
 }
 
+; 1 occurrences:
+; mitsuba3/optimized/qmc.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
+entry:
+  %2 = lshr exact i32 %1, 1
+  %3 = and i32 %2, 65535
+  %4 = sub nuw nsw i32 %0, %3
+  ret i32 %4
+}
+
 ; 5 occurrences:
 ; hdf5/optimized/H5B2int.c.ll
 ; hyperscan/optimized/limex_simd384.c.ll
@@ -166,6 +179,18 @@ entry:
   %2 = lshr i32 %1, 5
   %3 = and i32 %2, 31
   %4 = sub i32 %0, %3
+  ret i32 %4
+}
+
+; 2 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
+entry:
+  %2 = lshr exact i32 %1, 16
+  %3 = and i32 %2, 255
+  %4 = sub nsw i32 %0, %3
   ret i32 %4
 }
 

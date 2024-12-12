@@ -235,7 +235,7 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i8 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, i32 3, i32 4
@@ -244,16 +244,15 @@ entry:
   ret i32 %6
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; hermes/optimized/APFloat.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll
-; mitsuba3/optimized/x86emithelper.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1, i8 %2) #0 {
+define i32 @func0000000000000024(i32 %0, i32 %1, i8 %2) #0 {
 entry:
-  %3 = icmp eq i8 %2, 0
-  %4 = select i1 %3, i32 132, i32 885
-  %5 = icmp ult i32 %1, 10
+  %3 = icmp eq i8 %2, 45
+  %4 = select i1 %3, i32 -32768, i32 32767
+  %5 = icmp ult i32 %1, -65536
   %6 = select i1 %5, i32 %4, i32 %0
   ret i32 %6
 }

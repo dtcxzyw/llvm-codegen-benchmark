@@ -34,7 +34,7 @@
 func0000000000000078:                   # @func0000000000000078
 	vmovdqa	.LCPI0_0(%rip), %ymm3           # ymm3 = [32,0,1,2,33,4,5,6,34,8,9,10,35,12,13,14,36,16,17,18,37,20,21,22,38,24,25,26,39,28,29,30]
 	vpermi2b	%ymm2, %ymm1, %ymm3
-	vpmulld	%ymm0, %ymm3, %ymm0
+	vpmulld	%ymm3, %ymm0, %ymm0
 	vpaddd	%ymm0, %ymm0, %ymm0
 	retq
 .LCPI1_0:
@@ -112,6 +112,6 @@ func0000000000000070:                   # @func0000000000000070
 func000000000000007f:                   # @func000000000000007f
 	vmovdqa	.LCPI2_0(%rip), %ymm3           # ymm3 = [32,0,1,2,33,4,5,6,34,8,9,10,35,12,13,14,36,16,17,18,37,20,21,22,38,24,25,26,39,28,29,30]
 	vpermi2b	%ymm2, %ymm1, %ymm3
-	vpmulld	%ymm0, %ymm3, %ymm0
+	vpmulld	%ymm3, %ymm0, %ymm0
 	vpslld	$2, %ymm0, %ymm0
 	retq

@@ -29,10 +29,6 @@ func0000000000000008:                   # @func0000000000000008
 	leal	1(%rsi), %eax
 	imulq	%rdi, %rax
 	retq
-func000000000000000d:                   # @func000000000000000d
-	leal	-1(%rsi), %eax
-	imulq	%rdi, %rax
-	retq
 func0000000000000003:                   # @func0000000000000003
 	leal	7(%rsi), %eax
 	andl	$-8, %eax
@@ -51,5 +47,10 @@ func0000000000000005:                   # @func0000000000000005
 func0000000000000009:                   # @func0000000000000009
 	leal	-8(%rsi), %eax
 	andl	$-2, %eax
+	imulq	%rdi, %rax
+	retq
+func000000000000000d:                   # @func000000000000000d
+	leaq	1(%rsi), %rax
+	andq	$-2, %rax
 	imulq	%rdi, %rax
 	retq

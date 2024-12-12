@@ -1,9 +1,10 @@
 
-; 538 occurrences:
+; 541 occurrences:
 ; abc/optimized/deflate.c.ll
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
 ; arrow/optimized/light_array.cc.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/src.ll
 ; bullet3/optimized/b3VoronoiSimplexSolver.ll
 ; bullet3/optimized/btVoronoiSimplexSolver.ll
 ; c3c/optimized/sema_stmts.c.ll
@@ -139,18 +140,15 @@
 ; linux/optimized/dvo_ch7xxx.ll
 ; linux/optimized/fib_semantics.ll
 ; linux/optimized/fib_trie.ll
-; linux/optimized/fs-writeback.ll
 ; linux/optimized/host.ll
 ; linux/optimized/i915_gem_execbuffer.ll
 ; linux/optimized/i915_vma.ll
 ; linux/optimized/intel_sdvo.ll
 ; linux/optimized/intel_sseu.ll
 ; linux/optimized/io_apic.ll
-; linux/optimized/keyboard.ll
 ; linux/optimized/nexthop.ll
 ; linux/optimized/nfs4proc.ll
 ; linux/optimized/pcm_native.ll
-; linux/optimized/percpu-refcount.ll
 ; linux/optimized/reg.ll
 ; linux/optimized/socket.ll
 ; linux/optimized/synaptics.ll
@@ -207,6 +205,11 @@
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; luajit/optimized/minilua.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_display.ll
+; lvgl/optimized/lv_image.ll
+; lvgl/optimized/lv_label.ll
+; lvgl/optimized/lv_obj_draw.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; minetest/optimized/CIrrDeviceSDL.cpp.ll
 ; minetest/optimized/CSkinnedMesh.cpp.ll
@@ -340,7 +343,6 @@
 ; pybind11/optimized/test_tagbased_polymorphic.cpp.ll
 ; pybind11/optimized/test_type_caster_pyobject_ptr.cpp.ll
 ; qemu/optimized/block_file-posix.c.ll
-; qemu/optimized/chardev_msmouse.c.ll
 ; qemu/optimized/hw_block_m25p80.c.ll
 ; qemu/optimized/hw_char_serial.c.ll
 ; qemu/optimized/hw_net_can_can_sja1000.c.ll
@@ -537,6 +539,7 @@
 ; z3/optimized/polynomial.cpp.ll
 ; z3/optimized/theory_arith.cpp.ll
 ; z3/optimized/upolynomial.cpp.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; zlib/optimized/deflate.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i8 %0, i8 %1, i8 %2) #0 {
@@ -546,7 +549,7 @@ entry:
   ret i8 %4
 }
 
-; 118 occurrences:
+; 122 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
@@ -606,6 +609,7 @@ entry:
 ; linux/optimized/intel_psr.ll
 ; linux/optimized/intel_rps.ll
 ; linux/optimized/io_uring.ll
+; linux/optimized/keyboard.ll
 ; linux/optimized/libata-scsi.ll
 ; linux/optimized/ndisc.ll
 ; linux/optimized/yenta_socket.ll
@@ -664,7 +668,10 @@ entry:
 ; wireshark/optimized/packet-dcerpc-pn-io.c.ll
 ; wireshark/optimized/packet-dvmrp.c.ll
 ; yalantinglibs/optimized/benchmark.cpp.ll
-; yalantinglibs/optimized/serialize_config.cpp.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0, i8 %1, i8 %2) #0 {
 entry:
@@ -673,7 +680,7 @@ entry:
   ret i8 %4
 }
 
-; 30 occurrences:
+; 31 occurrences:
 ; arrow/optimized/light_array.cc.ll
 ; jemalloc/optimized/jemalloc.ll
 ; jemalloc/optimized/jemalloc.pic.ll
@@ -694,6 +701,7 @@ entry:
 ; openjdk/optimized/cpCache.ll
 ; openvdb/optimized/LevelSetRebuild.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
+; postgres/optimized/regcomp.ll
 ; qemu/optimized/hw_char_serial.c.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; redis/optimized/jemalloc.ll
@@ -708,7 +716,7 @@ entry:
 define i8 @func0000000000000002(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = or disjoint i8 %1, %2
-  %4 = or i8 %3, %0
+  %4 = or i8 %0, %3
   ret i8 %4
 }
 

@@ -1,8 +1,4 @@
 
-%"class.asmjit::_abi_1_10::Operand.2492325" = type { %"struct.asmjit::_abi_1_10::Operand_.2492326" }
-%"struct.asmjit::_abi_1_10::Operand_.2492326" = type { %"struct.asmjit::_abi_1_10::OperandSignature.2492322", i32, [2 x i32] }
-%"struct.asmjit::_abi_1_10::OperandSignature.2492322" = type { i32 }
-
 ; 7 occurrences:
 ; cmake/optimized/smb.c.ll
 ; cpython/optimized/sre.ll
@@ -22,24 +18,14 @@ entry:
   ret i64 %7
 }
 
-; 31 occurrences:
-; assimp/optimized/LWOMaterial.cpp.ll
-; casadi/optimized/sparsity.cpp.ll
+; 19 occurrences:
 ; clamav/optimized/autoit.c.ll
-; git/optimized/fast-import.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-static.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
-; icu/optimized/decNumber.ll
-; jq/optimized/decNumber.ll
 ; llvm/optimized/DXContainer.cpp.ll
-; meshlab/optimized/io_collada.cpp.ll
-; meshlab/optimized/mainwindow_Init.cpp.ll
-; meshlab/optimized/qualitymapperdialog.cpp.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
-; nlohmann_json/optimized/unit-cbor.cpp.ll
-; openexr/optimized/internal_huf.c.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-font.ll
@@ -50,15 +36,14 @@ entry:
 ; openjdk/optimized/hb-ot-shape-fallback.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openjdk/optimized/hb-ot-var.ll
-; openusd/optimized/openexr-c.c.ll
 ; php/optimized/ZendAccelerator.ll
-; php/optimized/pdo_sql_parser.ll
 ; redis/optimized/eval.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000a8(i64 %0, i64 %1, ptr %2) #0 {
+define i64 @func00000000000000fc(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 64
-  %4 = getelementptr %"class.asmjit::_abi_1_10::Operand.2492325", ptr %3, i64 %1, i32 0, i32 1
+  %.idx = shl nuw i64 %1, 4
+  %3 = getelementptr i8, ptr %2, i64 68
+  %4 = getelementptr i8, ptr %3, i64 %.idx
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   ret i64 %6
@@ -73,9 +58,9 @@ entry:
 ; nuttx/optimized/lib_realpath.c.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000080(i64 %0, i64 %1, ptr %2) #0 {
+define i64 @func00000000000000c0(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 2
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 2
   %4 = getelementptr i8, ptr %3, i64 %1
   %5 = getelementptr i8, ptr %4, i64 -2
   %6 = ptrtoint ptr %5 to i64
@@ -83,15 +68,65 @@ entry:
   ret i64 %7
 }
 
-; 2 occurrences:
+; 5 occurrences:
+; casadi/optimized/sparsity.cpp.ll
+; git/optimized/fast-import.ll
+; openspiel/optimized/spades.cc.ll
+; openusd/optimized/openexr-c.c.ll
+; php/optimized/pdo_sql_parser.ll
+; Function Attrs: nounwind
+define i64 @func00000000000000ec(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 24
+  %4 = getelementptr nusw i8, ptr %3, i64 %1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 1
+  %6 = ptrtoint ptr %5 to i64
+  %7 = sub i64 %6, %0
+  ret i64 %7
+}
+
+; 6 occurrences:
+; assimp/optimized/LWOMaterial.cpp.ll
+; boost/optimized/url_view_base.ll
 ; icu/optimized/decNumber.ll
 ; jq/optimized/decNumber.ll
+; openexr/optimized/internal_huf.c.ll
+; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(i64 %0, i64 %1, ptr %2) #0 {
+define i64 @func00000000000000f8(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr i8, ptr %2, i64 10
-  %4 = getelementptr nusw i16, ptr %3, i64 %1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 10
+  %4 = getelementptr nusw nuw i16, ptr %3, i64 %1
   %5 = getelementptr nusw i8, ptr %4, i64 -2
+  %6 = ptrtoint ptr %5 to i64
+  %7 = sub i64 %6, %0
+  ret i64 %7
+}
+
+; 4 occurrences:
+; meshlab/optimized/io_collada.cpp.ll
+; meshlab/optimized/mainwindow_Init.cpp.ll
+; meshlab/optimized/qualitymapperdialog.cpp.ll
+; nlohmann_json/optimized/unit-cbor.cpp.ll
+; Function Attrs: nounwind
+define i64 @func00000000000000e8(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
+  %4 = getelementptr nusw i8, ptr %3, i64 %1
+  %5 = getelementptr nusw i8, ptr %4, i64 -1
+  %6 = ptrtoint ptr %5 to i64
+  %7 = sub i64 %6, %0
+  ret i64 %7
+}
+
+; 1 occurrences:
+; lz4/optimized/lz4hc.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000c(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr i8, ptr %2, i64 1
+  %4 = getelementptr i8, ptr %3, i64 %1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 2
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %6, %0
   ret i64 %7

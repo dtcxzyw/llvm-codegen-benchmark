@@ -20,7 +20,7 @@ func0000000000000004:                   # @func0000000000000004
 	or	a1, a1, a3
 	sltu	a0, a1, a0
 	ret
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	sext.w	a0, a0
 	andi	a1, a1, 1
 	andi	a2, a2, 127
@@ -29,7 +29,14 @@ func0000000000000008:                   # @func0000000000000008
 	or	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
-func0000000000000005:                   # @func0000000000000005
+func0000000000000014:                   # @func0000000000000014
+	sext.w	a0, a0
+	andi	a1, a1, 1
+	zext.h	a2, a2
+	czero.eqz	a1, a2, a1
+	sltu	a0, a1, a0
+	ret
+func0000000000000015:                   # @func0000000000000015
 	sext.w	a0, a0
 	zext.h	a2, a2
 	sltu	a0, a0, a2

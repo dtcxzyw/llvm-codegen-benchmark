@@ -1,8 +1,10 @@
 
-; 3 occurrences:
+; 5 occurrences:
 ; hyperscan/optimized/ng_uncalc_components.cpp.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; raylib/optimized/raudio.c.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000004(i16 %0, i16 %1) #0 {
 entry:

@@ -2,7 +2,7 @@
 	.quad	2047                            # 0x7ff
 .LCPI0_1:
 	.quad	4503599627370495                # 0xfffffffffffff
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vptestnmq	.LCPI0_0(%rip){1to4}, %ymm2, %k1
 	vandpd	.LCPI0_1(%rip){1to4}, %ymm1, %ymm0 {%k1}
 	retq

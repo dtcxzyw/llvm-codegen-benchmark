@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 28 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; cmake/optimized/ftp.c.ll
@@ -17,6 +17,7 @@
 ; linux/optimized/cdrom.ll
 ; luajit/optimized/lj_lex.ll
 ; luajit/optimized/lj_lex_dyn.ll
+; lvgl/optimized/lv_calendar.ll
 ; minetest/optimized/treegen.cpp.ll
 ; msdfgen/optimized/MSDFErrorCorrection.cpp.ll
 ; openssl/optimized/asn1_time_test-bin-a_time.ll
@@ -25,6 +26,7 @@
 ; openssl/optimized/libcrypto-shlib-a_time.ll
 ; openusd/optimized/decodemv.c.ll
 ; wireshark/optimized/packet-smpp.c.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000015(i32 %0, i32 %1) #0 {
@@ -35,37 +37,12 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
-; libquic/optimized/time_support.c.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; protobuf/optimized/unparser.cc.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000010(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add nsw i32 %1, 1900
-  %3 = add i32 %2, %0
-  %4 = mul i32 %3, 1461
-  ret i32 %4
-}
-
-; 5 occurrences:
-; hermes/optimized/DateUtil.cpp.ll
-; libquic/optimized/time_support.c.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; zxing/optimized/ODDataBarExpandedReader.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add nsw i32 %1, -1
-  %3 = add i32 %2, %0
-  %4 = mul nsw i32 %3, 367
-  ret i32 %4
-}
-
-; 24 occurrences:
+; 28 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/format_parser.ll
+; boost/optimized/init_from_settings.ll
+; boost/optimized/text_file_backend.ll
 ; double_conversion/optimized/fast-dtoa.cc.ll
 ; freetype/optimized/sfnt.c.ll
 ; gromacs/optimized/domdec.cpp.ll
@@ -98,7 +75,8 @@ entry:
   ret i32 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/default_filter_factory.ll
 ; darktable/optimized/Cr2sRawInterpolator.cpp.ll
 ; darktable/optimized/introspection_colortransfer.c.ll
 ; protobuf/optimized/unparser.cc.ll
@@ -126,7 +104,10 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
+; 4 occurrences:
+; boost/optimized/format_parser.ll
+; boost/optimized/init_from_settings.ll
+; boost/optimized/text_file_backend.ll
 ; git/optimized/base85.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
@@ -137,7 +118,8 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/dec_octet_rule.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; libquic/optimized/a_gentm.c.ll
 ; libquic/optimized/a_utctm.c.ll
@@ -148,6 +130,30 @@ entry:
   %2 = add nsw i32 %1, -48
   %3 = add nsw i32 %2, %0
   %4 = mul nuw nsw i32 %3, 10
+  ret i32 %4
+}
+
+; 1 occurrences:
+; boost/optimized/default_filter_factory.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add i32 %1, -48
+  %3 = add nsw i32 %0, %2
+  %4 = mul i32 %3, 10
+  ret i32 %4
+}
+
+; 3 occurrences:
+; boost/optimized/default_filter_factory.ll
+; msdfgen/optimized/msdf-error-correction.cpp.ll
+; raylib/optimized/rmodels.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add i32 %1, -48
+  %3 = add nsw i32 %0, %2
+  %4 = mul nsw i32 %3, 10
   ret i32 %4
 }
 
@@ -177,14 +183,27 @@ entry:
 }
 
 ; 2 occurrences:
-; msdfgen/optimized/msdf-error-correction.cpp.ll
-; raylib/optimized/rmodels.c.ll
+; libquic/optimized/time_support.c.ll
+; protobuf/optimized/unparser.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000010(i32 %0, i32 %1) #0 {
 entry:
-  %2 = add i32 %1, -1
-  %3 = add nsw i32 %2, %0
-  %4 = mul nsw i32 %3, 3
+  %2 = add nsw i32 %1, 1900
+  %3 = add i32 %2, %0
+  %4 = mul i32 %3, 1461
+  ret i32 %4
+}
+
+; 3 occurrences:
+; hermes/optimized/DateUtil.cpp.ll
+; libquic/optimized/time_support.c.ll
+; zxing/optimized/ODDataBarExpandedReader.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, -1
+  %3 = add i32 %2, %0
+  %4 = mul nsw i32 %3, 367
   ret i32 %4
 }
 
@@ -195,7 +214,7 @@ entry:
 define i32 @func000000000000003f(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 9
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = mul nuw nsw i32 %3, 82
   ret i32 %4
 }

@@ -31,7 +31,7 @@ func0000000000000020:                   # @func0000000000000020
 	vnsrl.wi	v10, v8, 0, v0.t
 	vmv.v.v	v8, v10
 	ret
-func0000000000000022:                   # @func0000000000000022
+func0000000000000062:                   # @func0000000000000062
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgtu.vi	v0, v10, 3
 	li	a0, 24

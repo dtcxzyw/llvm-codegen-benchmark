@@ -15,5 +15,14 @@ func0000000000000002:                   # @func0000000000000002
 	leaq	(%rdi,%rsi,4), %rax
 	retq
 func0000000000000007:                   # @func0000000000000007
-	leaq	(%rdi,%rsi), %rax
+	sarq	$29, %rsi
+	leaq	(%rsi,%rdi), %rax
+	retq
+func0000000000000003:                   # @func0000000000000003
+	sarq	$32, %rsi
+	leaq	(%rsi,%rdi), %rax
+	retq
+func0000000000000005:                   # @func0000000000000005
+	sarq	$30, %rsi
+	leaq	(%rsi,%rdi), %rax
 	retq

@@ -1,45 +1,25 @@
-func000000000000003a:                   # @func000000000000003a
+func0000000000000069:                   # @func0000000000000069
 	slli	a1, a1, 48
 	srli	a1, a1, 48
-	slli	a1, a1, 16
-	slt	a0, a0, a1
-	ret
-func0000000000000039:                   # @func0000000000000039
-	slli	a1, a1, 48
-	srli	a1, a1, 48
-	slli	a1, a1, 16
+	slli	a1, a1, 4
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	ret
-func0000000000000036:                   # @func0000000000000036
+func0000000000000078:                   # @func0000000000000078
 	slli	a1, a1, 48
 	srli	a1, a1, 48
-	slli	a1, a1, 16
-	slt	a0, a1, a0
-	ret
-func0000000000000035:                   # @func0000000000000035
-	slli	a1, a1, 48
-	srli	a1, a1, 48
-	slli	a1, a1, 16
+	slli	a1, a1, 3
 	sltu	a0, a0, a1
-	xori	a0, a0, 1
 	ret
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	slli	a1, a1, 48
 	srli	a1, a1, 48
-	slli	a1, a1, 16
+	slli	a1, a1, 1
 	sltu	a0, a1, a0
 	ret
-func000000000000003b:                   # @func000000000000003b
+func0000000000000068:                   # @func0000000000000068
 	slli	a1, a1, 48
 	srli	a1, a1, 48
-	slli	a1, a1, 16
-	slt	a0, a1, a0
-	xori	a0, a0, 1
-	ret
-func0000000000000038:                   # @func0000000000000038
-	slli	a1, a1, 48
-	srli	a1, a1, 48
-	slli	a1, a1, 16
+	slli	a1, a1, 1
 	sltu	a0, a0, a1
 	ret

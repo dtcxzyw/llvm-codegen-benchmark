@@ -1,18 +1,20 @@
 
-; 7 occurrences:
+; 9 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; lightgbm/optimized/parser.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0) #0 {
+define i1 @func0000000000000078(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 1
   %2 = add nuw nsw i64 %1, %0
-  %3 = icmp ugt i64 %2, 33554431
+  %3 = icmp samesign ugt i64 %2, 33554431
   ret i1 %3
 }
 
@@ -31,10 +33,10 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/bilateral_filter.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0) #0 {
+define i1 @func0000000000000028(i64 %0) #0 {
 entry:
   %1 = and i64 %0, -16
-  %2 = add nsw i64 %1, %0
+  %2 = add nsw i64 %0, %1
   %3 = icmp ugt i64 %2, 264
   ret i1 %3
 }

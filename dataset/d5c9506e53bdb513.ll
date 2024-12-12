@@ -1,5 +1,5 @@
 
-; 55 occurrences:
+; 54 occurrences:
 ; abc/optimized/abcDsd.c.ll
 ; abc/optimized/bmcBmc2.c.ll
 ; abc/optimized/extraUtilMaj.c.ll
@@ -35,8 +35,6 @@
 ; libwebp/optimized/sharpyuv.c.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; minetest/optimized/texturesource.cpp.ll
-; openblas/optimized/dsyevr.c.ll
-; openblas/optimized/dsyevr_2stage.c.ll
 ; opencv/optimized/facedetect.cpp.ll
 ; opencv/optimized/fisheye.cpp.ll
 ; opencv/optimized/fourier_descriptors.cpp.ll
@@ -50,6 +48,7 @@
 ; openjdk/optimized/png.ll
 ; postgres/optimized/selfuncs.ll
 ; quantlib/optimized/suowangdoublebarrierengine.ll
+; typst-rs/optimized/3z60jkym58xbhjyi.ll
 ; wireshark/optimized/overlay_scroll_bar.cpp.ll
 ; wireshark/optimized/packet-vrt.c.ll
 ; wireshark/optimized/packet_list.cpp.ll

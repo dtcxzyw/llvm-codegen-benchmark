@@ -4,7 +4,7 @@
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000001a1(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000541(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = icmp sgt i32 %2, %0
@@ -17,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; libjpeg-turbo/optimized/jdcoefct.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000001aa(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000054a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = icmp sgt i32 %2, %0

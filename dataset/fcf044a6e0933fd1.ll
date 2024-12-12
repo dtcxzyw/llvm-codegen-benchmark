@@ -33,7 +33,7 @@ define i32 @func00000000000001f4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 32639
   %4 = add nuw nsw i32 %3, 32768
-  %5 = add nuw i32 %4, %1
+  %5 = add nuw i32 %1, %4
   %6 = add nuw i32 %5, %0
   %7 = lshr i32 %6, 16
   ret i32 %7

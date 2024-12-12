@@ -1,18 +1,4 @@
 
-; 4 occurrences:
-; linux/optimized/fair.ll
-; linux/optimized/intel-gtt.ll
-; qemu/optimized/monitor_hmp-cmds.c.ll
-; z3/optimized/theory_str_mc.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, %0
-  %4 = icmp ugt i32 %3, %0
-  ret i1 %4
-}
-
 ; 11 occurrences:
 ; flac/optimized/md5.c.ll
 ; lief/optimized/ecp_curves.c.ll
@@ -45,7 +31,7 @@ entry:
 ; spike/optimized/ukcrsa32.ll
 ; spike/optimized/ukstas32.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000104(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = xor i32 %0, -1
@@ -64,7 +50,7 @@ entry:
 define i1 @func0000000000000006(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = icmp slt i32 %3, %0
   ret i1 %4
 }
@@ -74,10 +60,10 @@ entry:
 ; hermes/optimized/CharacterProperties.cpp.ll
 ; zstd/optimized/fastcover.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000108(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = icmp ugt i32 %3, %0
   ret i1 %4
 }
@@ -85,10 +71,10 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-cbor.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000186(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = icmp slt i32 %3, %0
   ret i1 %4
 }
@@ -96,7 +82,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/tvbuff.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000184(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = xor i32 %0, -1
@@ -107,10 +93,10 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000106(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = icmp slt i32 %3, %0
   ret i1 %4
 }
@@ -163,11 +149,24 @@ entry:
 ; ceres/optimized/schur_eliminator_4_4_d.cc.ll
 ; ceres/optimized/schur_eliminator_d_d_d.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000086(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = icmp slt i32 %3, %0
+  ret i1 %4
+}
+
+; 3 occurrences:
+; linux/optimized/fair.ll
+; linux/optimized/intel-gtt.ll
+; z3/optimized/theory_str_mc.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = add i32 %0, %2
+  %4 = icmp ugt i32 %3, %0
   ret i1 %4
 }
 
@@ -177,7 +176,7 @@ entry:
 define i1 @func000000000000000a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = icmp sgt i32 %3, %0
   ret i1 %4
 }

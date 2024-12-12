@@ -295,8 +295,9 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; eastl/optimized/TestBitset.cpp.ll
+; linux/optimized/fib_trie.ll
 ; linux/optimized/trackpoint.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; wireshark/optimized/packet-pw-fr.c.ll

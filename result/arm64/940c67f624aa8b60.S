@@ -1,4 +1,4 @@
-func00000000000000fa:                   // @func00000000000000fa
+func00000000000000fb:                   // @func00000000000000fb
 // %bb.0:                               // %entry
 	sub	x8, x0, x1, lsl #3
 	sub	x0, x8, #16
@@ -12,12 +12,12 @@ func000000000000003a:                   // @func000000000000003a
 	sub	x0, x8, #176
 	ret
                                         // -- End function
-func0000000000000052:                   // @func0000000000000052
+func0000000000000053:                   // @func0000000000000053
 // %bb.0:                               // %entry
 	sub	x0, x0, x1, lsl #4
 	ret
                                         // -- End function
-func00000000000000f2:                   // @func00000000000000f2
+func00000000000000f3:                   // @func00000000000000f3
 // %bb.0:                               // %entry
 	sub	x8, x0, x1, lsl #5
 	sub	x0, x8, #8

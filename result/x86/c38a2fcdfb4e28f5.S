@@ -1,4 +1,4 @@
-func0000000000000616:                   # @func0000000000000616
+func0000000000001826:                   # @func0000000000001826
 	cmpl	$7, %edx
 	setge	%al
 	testl	%esi, %esi
@@ -8,7 +8,7 @@ func0000000000000616:                   # @func0000000000000616
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000416:                   # @func0000000000000416
+func0000000000001026:                   # @func0000000000001026
 	cmpl	$117440512, %edx                # imm = 0x7000000
 	setae	%al
 	testl	%esi, %esi

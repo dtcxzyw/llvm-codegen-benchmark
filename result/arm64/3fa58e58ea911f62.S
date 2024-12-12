@@ -1,98 +1,52 @@
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	sub	v4.2d, v1.2d, v3.2d
-	sub	v5.2d, v0.2d, v2.2d
-	cmgt	v1.2d, v1.2d, v3.2d
-	cmgt	v0.2d, v0.2d, v2.2d
-	and	v1.16b, v4.16b, v1.16b
-	and	v0.16b, v5.16b, v0.16b
+	subs	x8, x0, x1
+	csel	x0, x8, xzr, gt
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	sub	v4.2d, v3.2d, v1.2d
-	sub	v5.2d, v2.2d, v0.2d
-	cmgt	v1.2d, v3.2d, v1.2d
-	cmgt	v0.2d, v2.2d, v0.2d
-	and	v1.16b, v4.16b, v1.16b
-	and	v0.16b, v5.16b, v0.16b
+	subs	x8, x1, x0
+	csel	x0, x8, xzr, gt
 	ret
                                         // -- End function
-func000000000000001a:                   // @func000000000000001a
+func000000000000002a:                   // @func000000000000002a
 // %bb.0:                               // %entry
-	sub	v4.2d, v1.2d, v3.2d
-	sub	v5.2d, v0.2d, v2.2d
-	cmgt	v1.2d, v1.2d, v3.2d
-	cmgt	v0.2d, v0.2d, v2.2d
-	and	v1.16b, v4.16b, v1.16b
-	and	v0.16b, v5.16b, v0.16b
+	subs	x8, x0, x1
+	csel	x0, x8, xzr, gt
 	ret
                                         // -- End function
-func0000000000000016:                   // @func0000000000000016
+func0000000000000026:                   // @func0000000000000026
 // %bb.0:                               // %entry
-	sub	v4.2d, v2.2d, v0.2d
-	cmgt	v0.2d, v2.2d, v0.2d
-	sub	v2.2d, v3.2d, v1.2d
-	cmgt	v1.2d, v3.2d, v1.2d
-	and	v3.16b, v4.16b, v0.16b
-	mvn	v0.16b, v0.16b
-	and	v2.16b, v2.16b, v1.16b
-	mvn	v1.16b, v1.16b
-	sub	v0.2d, v3.2d, v0.2d
-	sub	v1.2d, v2.2d, v1.2d
+	subs	x8, x1, x0
+	csinc	x0, x8, xzr, gt
 	ret
                                         // -- End function
-func0000000000000025:                   // @func0000000000000025
+func0000000000000045:                   // @func0000000000000045
 // %bb.0:                               // %entry
-	sub	v1.2d, v3.2d, v1.2d
-	sub	v0.2d, v2.2d, v0.2d
+	sub	x0, x1, x0
 	ret
                                         // -- End function
-func0000000000000028:                   // @func0000000000000028
+func0000000000000048:                   // @func0000000000000048
 // %bb.0:                               // %entry
-	sub	v4.2d, v0.2d, v2.2d
-	cmhi	v0.2d, v0.2d, v2.2d
-	sub	v2.2d, v1.2d, v3.2d
-	cmhi	v1.2d, v1.2d, v3.2d
-	and	v3.16b, v4.16b, v0.16b
-	mvn	v0.16b, v0.16b
-	and	v2.16b, v2.16b, v1.16b
-	mvn	v1.16b, v1.16b
-	sub	v0.2d, v3.2d, v0.2d
-	sub	v1.2d, v2.2d, v1.2d
+	subs	x8, x0, x1
+	csinc	x0, x8, xzr, hi
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	sub	v4.2d, v0.2d, v2.2d
-	cmhi	v0.2d, v0.2d, v2.2d
-	sub	v2.2d, v1.2d, v3.2d
-	cmhi	v1.2d, v1.2d, v3.2d
-	and	v3.16b, v4.16b, v0.16b
-	mvn	v0.16b, v0.16b
-	and	v2.16b, v2.16b, v1.16b
-	mvn	v1.16b, v1.16b
-	sub	v0.2d, v3.2d, v0.2d
-	sub	v1.2d, v2.2d, v1.2d
+	subs	x8, x0, x1
+	csinc	x0, x8, xzr, hi
 	ret
                                         // -- End function
-func0000000000000018:                   // @func0000000000000018
+func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	sub	v4.2d, v0.2d, v2.2d
-	cmhi	v0.2d, v0.2d, v2.2d
-	sub	v2.2d, v1.2d, v3.2d
-	cmhi	v1.2d, v1.2d, v3.2d
-	and	v3.16b, v4.16b, v0.16b
-	mvn	v0.16b, v0.16b
-	and	v2.16b, v2.16b, v1.16b
-	mvn	v1.16b, v1.16b
-	sub	v0.2d, v3.2d, v0.2d
-	sub	v1.2d, v2.2d, v1.2d
+	subs	x8, x1, x0
+	csinc	x0, x8, xzr, hi
 	ret
                                         // -- End function
-func0000000000000029:                   // @func0000000000000029
+func0000000000000049:                   // @func0000000000000049
 // %bb.0:                               // %entry
-	sub	v1.2d, v1.2d, v3.2d
-	sub	v0.2d, v0.2d, v2.2d
+	sub	x0, x0, x1
 	ret
                                         // -- End function

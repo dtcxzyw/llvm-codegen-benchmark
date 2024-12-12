@@ -8,7 +8,7 @@
 define i64 @func0000000000000220(i128 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = trunc nuw i128 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = mul i64 %4, -4417276706812531889
   %6 = trunc nuw i128 %0 to i64
   %7 = add i64 %5, %6

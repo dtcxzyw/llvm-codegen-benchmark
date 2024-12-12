@@ -1,41 +1,41 @@
-func000000000000002e:                   # @func000000000000002e
+func000000000000002f:                   # @func000000000000002f
 	subl	%edx, %esi
 	movslq	%esi, %rax
 	leaq	-3(%rdi,%rax), %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	subl	%edx, %esi
 	incl	%esi
 	leaq	(%rdi,%rsi,8), %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	subl	%edx, %esi
 	incl	%esi
 	leaq	(%rdi,%rsi,8), %rax
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000002b:                   # @func000000000000002b
 	subl	%edx, %esi
 	incl	%esi
 	leaq	(%rdi,%rsi,8), %rax
 	retq
-func0000000000000006:                   # @func0000000000000006
+func0000000000000007:                   # @func0000000000000007
 	subl	%edx, %esi
 	leal	8(%rsi), %eax
 	addq	%rdi, %rax
 	retq
-func000000000000006a:                   # @func000000000000006a
+func000000000000006b:                   # @func000000000000006b
 	notl	%edx
 	addl	%esi, %edx
 	leaq	(%rdi,%rdx,8), %rax
 	retq
-func0000000000000062:                   # @func0000000000000062
+func0000000000000063:                   # @func0000000000000063
 	notl	%edx
 	leal	(%rdx,%rsi), %eax
 	addq	%rdi, %rax
 	retq
-func0000000000000042:                   # @func0000000000000042
-	notl	%edx
-	leal	(%rdx,%rsi), %eax
+func0000000000000043:                   # @func0000000000000043
+	subl	%edx, %esi
+	leal	12(%rsi), %eax
 	addq	%rdi, %rax
 	retq
 func0000000000000004:                   # @func0000000000000004

@@ -1,21 +1,15 @@
 
-; 45 occurrences:
+; 41 occurrences:
 ; abc/optimized/ioReadPla.c.ll
 ; abc/optimized/rsbDec6.c.ll
 ; cpython/optimized/typeobject.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
-; lief/optimized/Builder.cpp.ll
 ; linux/optimized/core.ll
-; linux/optimized/memory.ll
-; linux/optimized/scsiglue.ll
 ; linux/optimized/set_memory.ll
 ; linux/optimized/vsprintf.ll
-; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/AArch64LegalizerInfo.cpp.ll
-; llvm/optimized/AArch64RegisterBankInfo.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTDiagnostic.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
@@ -25,7 +19,6 @@
 ; llvm/optimized/Legalizer.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/LoadStoreOpt.cpp.ll
-; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/SanitizerArgs.cpp.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
 ; llvm/optimized/SemaInit.cpp.ll
@@ -39,12 +32,15 @@
 ; mini-lsm-rs/optimized/4lbrpk7rlft27pjz.ll
 ; mini-lsm-rs/optimized/a97dpb4syxv4ifo.ll
 ; qemu/optimized/hw_char_serial.c.ll
-; redis/optimized/script.ll
 ; smol-rs/optimized/1p7wu8w0t94kgeq2.ll
 ; smol-rs/optimized/21eidrukyvr99qqv.ll
 ; spike/optimized/mmu.ll
 ; spike/optimized/mret.ll
 ; wireshark/optimized/packet-lldp.c.ll
+; zed-rs/optimized/06ynmbpbae1je7d5yiue751dw.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/5jgfm3klpby9utjhkan94f3dk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:

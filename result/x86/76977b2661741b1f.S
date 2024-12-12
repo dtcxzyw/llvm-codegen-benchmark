@@ -1,12 +1,3 @@
-func0000000000000011:                   # @func0000000000000011
-	andl	$248, %edx
-	movl	%edi, %eax
-	orl	$4096, %eax                     # imm = 0x1000
-	testb	$1, %sil
-	cmovel	%edi, %eax
-	cmpl	$9, %edx
-	cmovbl	%edi, %eax
-	retq
 func0000000000000003:                   # @func0000000000000003
 	movl	%edi, %eax
 	orl	$4096, %eax                     # imm = 0x1000
@@ -35,8 +26,8 @@ func0000000000000018:                   # @func0000000000000018
 	notl	%edx
 	movl	%edi, %eax
 	orl	$4194304, %eax                  # imm = 0x400000
-	testb	$1, %sil
-	cmovel	%edi, %eax
 	testl	$480, %edx                      # imm = 0x1E0
+	cmovel	%edi, %eax
+	testb	$1, %sil
 	cmovel	%edi, %eax
 	retq

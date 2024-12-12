@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	48                              # 0x30
-func0000000000000306:                   # @func0000000000000306
+func0000000000000606:                   # @func0000000000000606
 	vpmovqd	%ymm0, %xmm0
 	vpaddd	%xmm0, %xmm0, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
@@ -11,7 +11,7 @@ func0000000000000306:                   # @func0000000000000306
 	retq
 .LCPI1_0:
 	.long	4294967293                      # 0xfffffffd
-func0000000000000201:                   # @func0000000000000201
+func0000000000000401:                   # @func0000000000000401
 	vpmovqd	%ymm0, %xmm0
 	vpaddd	%xmm0, %xmm0, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0

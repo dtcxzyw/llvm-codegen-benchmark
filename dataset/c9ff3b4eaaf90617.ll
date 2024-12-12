@@ -2,12 +2,12 @@
 ; 1 occurrences:
 ; minetest/optimized/inventory.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000208(i32 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 312
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, -1
-  %5 = icmp ult i32 %4, %0
+  %5 = icmp ugt i32 %0, %4
   ret i1 %5
 }
 
@@ -19,7 +19,7 @@ entry:
   %2 = sdiv i64 %1, 32768
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, 1
-  %5 = icmp ugt i32 %4, %0
+  %5 = icmp ult i32 %0, %4
   ret i1 %5
 }
 
@@ -246,12 +246,12 @@ entry:
 ; yosys/optimized/yw.ll
 ; yosys/optimized/zinit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000201(i32 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 48
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, -1
-  %5 = icmp eq i32 %4, %0
+  %5 = icmp eq i32 %0, %4
   ret i1 %5
 }
 
@@ -262,12 +262,12 @@ entry:
 ; yosys/optimized/muxcover.ll
 ; yosys/optimized/opt_lut.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000221(i32 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 24
   %3 = trunc i64 %2 to i32
   %4 = add nsw i32 %3, -1
-  %5 = icmp eq i32 %4, %0
+  %5 = icmp eq i32 %0, %4
   ret i1 %5
 }
 
@@ -276,48 +276,48 @@ entry:
 ; llvm/optimized/SwitchLoweringUtils.cpp.ll
 ; meshlab/optimized/trackmode.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000204(i32 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 56
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, -1
-  %5 = icmp ugt i32 %4, %0
+  %5 = icmp ult i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; linux/optimized/indirect.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000020a(i32 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 24
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, -1
-  %5 = icmp slt i32 %4, %0
+  %5 = icmp sgt i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000106(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000206(i32 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 24
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, -1
-  %5 = icmp sgt i32 %4, %0
+  %5 = icmp slt i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; hyperscan/optimized/fdr_compile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010c(i32 %0, i64 %1) #0 {
+define i1 @func000000000000020c(i32 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 12
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, -1
-  %5 = icmp ne i32 %4, %0
+  %5 = icmp ne i32 %0, %4
   ret i1 %5
 }
 

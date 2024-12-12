@@ -1,9 +1,9 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	cmpq	%rdx, %rsi
 	sete	%al
 	orb	%dil, %al
 	retq
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	shlq	$3, %rdx
 	cmpq	%rdx, %rsi
 	setne	%al

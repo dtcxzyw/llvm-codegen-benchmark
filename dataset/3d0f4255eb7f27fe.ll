@@ -25,7 +25,7 @@ entry:
 ; 1 occurrences:
 ; oiio/optimized/icooutput.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000026(i8 %0, i32 %1) #0 {
+define i8 @func0000000000000046(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i8
   %3 = icmp slt i8 %0, 0
@@ -38,7 +38,7 @@ entry:
 ; linux/optimized/huf_decompress.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000031(i8 %0, i32 %1) #0 {
+define i8 @func0000000000000061(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i32 %1 to i8
   %3 = icmp eq i8 %0, 0
@@ -49,7 +49,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/yenta_socket.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000021(i8 %0, i32 %1) #0 {
+define i8 @func0000000000000041(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i8
   %3 = icmp eq i8 %0, 0

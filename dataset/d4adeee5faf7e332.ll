@@ -64,12 +64,25 @@
 ; php/optimized/pcre2_study.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i8 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = or disjoint i64 %3, %1
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
-  %6 = getelementptr nusw i8, ptr %5, i64 1
+  %4 = or disjoint i64 %1, %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 1
+  ret ptr %6
+}
+
+; 2 occurrences:
+; php/optimized/pcre2_auto_possess.ll
+; php/optimized/pcre2_jit_compile.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001e(ptr %0, i64 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i64
+  %4 = or disjoint i64 %1, %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
+  %6 = getelementptr nusw i8, ptr %5, i64 -1
   ret ptr %6
 }
 
@@ -84,7 +97,7 @@ entry:
 define ptr @func0000000000000010(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = getelementptr i8, ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 5
   ret ptr %6
@@ -93,11 +106,11 @@ entry:
 ; 1 occurrences:
 ; nuklear/optimized/unity.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i64 %1, i8 %2) #0 {
+define ptr @func000000000000001c(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = or disjoint i64 %3, %1
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %4 = or disjoint i64 %1, %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 1
   ret ptr %6
 }

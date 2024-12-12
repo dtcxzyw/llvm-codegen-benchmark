@@ -8,15 +8,24 @@ func0000000000000008:                   # @func0000000000000008
 	sltu	a1, a3, a1
 	or	a0, a0, a1
 	ret
-func0000000000000004:                   # @func0000000000000004
+func00000000000001c8:                   # @func00000000000001c8
 	add	a1, a1, a2
-	addi	a1, a1, -2047
-	sltiu	a1, a1, -2048
+	addi	a1, a1, 1
+	sltiu	a1, a1, 17
+	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret
-func0000000000000006:                   # @func0000000000000006
+func00000000000001e8:                   # @func00000000000001e8
 	add	a1, a1, a2
-	addi	a1, a1, -97
-	slti	a1, a1, 1
+	addi	a1, a1, 3
+	sltiu	a1, a1, 17
+	xori	a1, a1, 1
+	or	a0, a0, a1
+	ret
+func0000000000000188:                   # @func0000000000000188
+	add	a1, a1, a2
+	addi	a1, a1, 2
+	sltiu	a1, a1, 120
+	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret

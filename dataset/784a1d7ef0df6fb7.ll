@@ -1,7 +1,6 @@
 
-; 25 occurrences:
+; 24 occurrences:
 ; libpng/optimized/pngread.c.ll
-; linux/optimized/scsicam.ll
 ; linux/optimized/uncore_discovery.ll
 ; opencv/optimized/arithm.cpp.ll
 ; opencv/optimized/array.cpp.ll
@@ -32,6 +31,18 @@ entry:
   %3 = and i32 %0, 255
   %4 = mul nuw nsw i32 %3, %2
   %5 = zext nneg i32 %4 to i64
+  ret i64 %5
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_draw_buf.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, -1
+  %3 = and i32 %0, 65535
+  %4 = mul i32 %3, %2
+  %5 = zext i32 %4 to i64
   ret i64 %5
 }
 

@@ -1,15 +1,17 @@
 
-%union.frame_entry.2709138 = type { %struct.closure.2709139 }
-%struct.closure.2709139 = type { ptr, i32 }
+%union.frame_entry.2821812 = type { %struct.closure.2821813 }
+%struct.closure.2821813 = type { ptr, i32 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw [0 x i8], ptr %0, i64 0, i64 %5
   ret ptr %6
@@ -30,9 +32,9 @@ entry:
 define ptr @func0000000000000006(ptr %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw [0 x %union.frame_entry.2709138], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw [0 x %union.frame_entry.2821812], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -43,7 +45,7 @@ entry:
 define ptr @func0000000000000016(ptr %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext nneg i16 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw [64 x i32], ptr %0, i64 0, i64 %5
   ret ptr %6

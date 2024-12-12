@@ -1,5 +1,5 @@
 
-; 131 occurrences:
+; 130 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; assimp/optimized/MMDImporter.cpp.ll
@@ -54,7 +54,6 @@
 ; ipopt/optimized/SensIndexPCalculator.ll
 ; ipopt/optimized/SensIndexSchurData.ll
 ; linux/optimized/igmp.ll
-; linux/optimized/nl80211.ll
 ; meshlab/optimized/Factor.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
@@ -132,7 +131,7 @@
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i32 %0) #0 {
+define i64 @func0000000000000026(i32 %0) #0 {
 entry:
   %1 = sext i32 %0 to i64
   %2 = shl nsw i64 %1, 2
@@ -225,7 +224,7 @@ entry:
 ; quantlib/optimized/levenbergmarquardt.ll
 ; quantlib/optimized/onefactormodel.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000036(i32 %0) #0 {
+define i64 @func0000000000000066(i32 %0) #0 {
 entry:
   %1 = sext i32 %0 to i64
   %2 = shl nuw nsw i64 %1, 5
@@ -237,7 +236,7 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i32 %0) #0 {
+define i64 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = sext i32 %0 to i64
   %2 = shl nsw i64 %1, 1

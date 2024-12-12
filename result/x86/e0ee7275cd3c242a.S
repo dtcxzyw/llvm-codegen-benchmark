@@ -58,3 +58,7 @@ func000000000000000d:                   # @func000000000000000d
 	leaq	(%rdi,%rsi), %rax
 	shlq	$5, %rax
 	retq
+func0000000000000009:                   # @func0000000000000009
+	leaq	(%rdi,%rsi), %rax
+	shlq	$2, %rax
+	retq

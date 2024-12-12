@@ -22,9 +22,19 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
+; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000001(i1 %0, i16 %1, i16 %2) #0 {
+entry:
+  %3 = add i16 %2, 1
+  %4 = icmp eq i16 %3, %1
+  %5 = select i1 %0, i1 %4, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; linux/optimized/nlattr.ll
-; recastnavigation/optimized/RecastRegion.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i16 %1, i16 %2) #0 {
 entry:

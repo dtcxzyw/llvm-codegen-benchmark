@@ -17,8 +17,9 @@ entry:
   ret i32 %.neg
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; abc/optimized/cuddPriority.c.ll
+; boost/optimized/alloc_lib.ll
 ; libwebp/optimized/lossless.c.ll
 ; lightgbm/optimized/network.cpp.ll
 ; linux/optimized/buffered-io.ll
@@ -53,7 +54,8 @@ entry:
   ret i32 %1
 }
 
-; 16 occurrences:
+; 17 occurrences:
+; boost/optimized/alloc_lib.ll
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
 ; openjdk/optimized/g1CollectedHeap.ll
@@ -129,6 +131,15 @@ entry:
 define i32 @func0000000000000001(i32 %0) #0 {
 entry:
   %.neg = shl i32 -128, %0
+  ret i32 %.neg
+}
+
+; 1 occurrences:
+; cmake/optimized/lzma_encoder.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000005(i32 %0) #0 {
+entry:
+  %.neg = shl nuw nsw i32 1, %0
   ret i32 %.neg
 }
 

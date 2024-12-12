@@ -4,7 +4,7 @@ func0000000000000016:                   # @func0000000000000016
 func0000000000000014:                   # @func0000000000000014
 	movq	%rsi, %rax
 	retq
-func000000000000001e:                   # @func000000000000001e
+func000000000000001f:                   # @func000000000000001f
 	movq	%rdi, %rax
 	subq	%rsi, %rax
 	shrq	$2, %rax

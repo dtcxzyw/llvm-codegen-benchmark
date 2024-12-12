@@ -1,5 +1,5 @@
 
-%"class.asio::detail::op_queue.147.2663383" = type { ptr, ptr }
+%"class.asio::detail::op_queue.147.2776500" = type { ptr, ptr }
 
 ; 2 occurrences:
 ; linux/optimized/intel_dpll_mgr.ll
@@ -13,7 +13,17 @@ entry:
   ret ptr %5
 }
 
-; 31 occurrences:
+; 37 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/process.ll
+; boost/optimized/spawn.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -27,12 +37,8 @@ entry:
 ; crow/optimized/example_static_file.cpp.ll
 ; crow/optimized/example_ws.cpp.ll
 ; crow/optimized/helloworld.cpp.ll
-; jemalloc/optimized/jemalloc.ll
-; jemalloc/optimized/jemalloc.pic.ll
-; jemalloc/optimized/jemalloc.sym.ll
 ; msgpack/optimized/asio_send_recv.cpp.ll
 ; msgpack/optimized/asio_send_recv_zlib.cpp.ll
-; rust-analyzer-rs/optimized/hajha7nvyoiczny.ll
 ; yalantinglibs/optimized/channel.cpp.ll
 ; yalantinglibs/optimized/chat_room.cpp.ll
 ; yalantinglibs/optimized/client.cpp.ll
@@ -46,9 +52,23 @@ entry:
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(ptr %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000041(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw [3 x %"class.asio::detail::op_queue.147.2663383"], ptr %1, i64 0, i64 %2
+  %3 = getelementptr nusw [3 x %"class.asio::detail::op_queue.147.2776500"], ptr %1, i64 0, i64 %2
+  %4 = icmp eq ptr %0, null
+  %5 = select i1 %4, ptr %3, ptr %0
+  ret ptr %5
+}
+
+; 4 occurrences:
+; jemalloc/optimized/jemalloc.ll
+; jemalloc/optimized/jemalloc.pic.ll
+; jemalloc/optimized/jemalloc.sym.ll
+; rust-analyzer-rs/optimized/hajha7nvyoiczny.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000061(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw [0 x ptr], ptr %1, i64 0, i64 %2
   %4 = icmp eq ptr %0, null
   %5 = select i1 %4, ptr %3, ptr %0
   ret ptr %5

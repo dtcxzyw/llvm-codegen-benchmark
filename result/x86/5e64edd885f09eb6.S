@@ -16,3 +16,10 @@ func000000000000000c:                   # @func000000000000000c
 	cmoveq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
+func000000000000000f:                   # @func000000000000000f
+	andl	$1, %edx
+	andl	$1, %esi
+	addq	%rsi, %rsi
+	leaq	(%rsi,%rdx,2), %rax
+	leaq	2(%rdi,%rax), %rax
+	retq

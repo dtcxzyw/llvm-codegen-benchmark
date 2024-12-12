@@ -21,8 +21,7 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
-; postgres/optimized/xlogprefetcher.ll
+; 1 occurrences:
 ; wireshark/optimized/decoders.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i1 %1, i1 %2) #0 {

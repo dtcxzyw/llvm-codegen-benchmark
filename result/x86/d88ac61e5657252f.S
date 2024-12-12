@@ -34,7 +34,19 @@ func000000000000000f:                   # @func000000000000000f
 	subq	%rcx, %rax
 	addq	%rdi, %rax
 	retq
+func0000000000000035:                   # @func0000000000000035
+	movl	%edx, %ecx
+	movl	%esi, %eax
+	subq	%rcx, %rax
+	addq	%rdi, %rax
+	retq
 func0000000000000014:                   # @func0000000000000014
+	movl	%edx, %ecx
+	movl	%esi, %eax
+	subq	%rcx, %rax
+	addq	%rdi, %rax
+	retq
+func0000000000000034:                   # @func0000000000000034
 	movl	%edx, %ecx
 	movl	%esi, %eax
 	subq	%rcx, %rax

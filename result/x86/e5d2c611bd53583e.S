@@ -25,7 +25,7 @@ func0000000000000008:                   # @func0000000000000008
 	seta	%al
 	orb	%dil, %al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	shrl	$2, %edx
 	andl	$7, %edx
 	cmpl	%esi, %edx

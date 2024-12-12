@@ -1,5 +1,23 @@
 
-; 11 occurrences:
+; 2 occurrences:
+; boost/optimized/format_args.ll
+; ruby/optimized/numeric.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000061(i64 %0, i64 %1) #0 {
+entry:
+  %2 = shl nuw nsw i64 1, %1
+  %3 = and i64 %2, %0
+  %4 = icmp eq i64 %3, 0
+  %5 = select i1 %4, i64 1, i64 3
+  ret i64 %5
+}
+
+; 16 occurrences:
+; boost/optimized/any_params_iter.ll
+; boost/optimized/any_segments_iter.ll
+; boost/optimized/format_args.ll
+; boost/optimized/pct_format.ll
+; boost/optimized/url_base.ll
 ; gromacs/optimized/colvarbias.cpp.ll
 ; gromacs/optimized/colvarbias_abf.cpp.ll
 ; gromacs/optimized/colvarbias_histogram.cpp.ll
@@ -12,19 +30,18 @@
 ; openvdb/optimized/MultiResGrid.cc.ll
 ; openvdb/optimized/TopologyToLevelSet.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   %4 = icmp eq i64 %3, 0
   %5 = select i1 %4, i64 16, i64 24
   ret i64 %5
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; fmt/optimized/std-test.cc.ll
-; linux/optimized/drm_self_refresh_helper.ll
 ; llvm/optimized/BlockFrequency.cpp.ll
 ; llvm/optimized/BlockFrequencyInfo.cpp.ll
 ; llvm/optimized/BlockFrequencyInfoImpl.cpp.ll
@@ -34,7 +51,7 @@ entry:
 ; llvm/optimized/SummaryBasedOptimizations.cpp.ll
 ; llvm/optimized/SyntheticCountsPropagation.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000002c(i64 %0, i64 %1) #0 {
+define i64 @func000000000000004c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
   %3 = and i64 %2, %0

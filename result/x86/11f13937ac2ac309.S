@@ -84,10 +84,12 @@ func000000000000000d:                   # @func000000000000000d
 	vucomisd	%xmm1, %xmm0
 	setbe	%al
 	retq
+.LCPI11_0:
+	.quad	0x3ddb7cdfd9d7bdbb              # double 1.0E-10
 func000000000000000a:                   # @func000000000000000a
 	kmovd	%edi, %k1
 	vmovsd	%xmm0, %xmm1, %xmm1 {%k1}
-	vxorpd	%xmm0, %xmm0, %xmm0
+	vmovsd	.LCPI11_0(%rip), %xmm0          # xmm0 = [1.0E-10,0.0E+0]
 	vucomisd	%xmm1, %xmm0
 	setae	%al
 	retq

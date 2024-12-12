@@ -1,5 +1,7 @@
 
-; 20 occurrences:
+; 22 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/convexify.cpp.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; casadi/optimized/sqpmethod.cpp.ll
@@ -24,7 +26,7 @@
 define double @func0000000000000000(double %0, double %1) #0 {
 entry:
   %2 = fneg double %1
-  %3 = fmul double %2, %0
+  %3 = fmul double %0, %2
   %4 = fmul double %3, 5.000000e-01
   ret double %4
 }

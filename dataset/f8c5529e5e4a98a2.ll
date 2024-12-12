@@ -21,10 +21,10 @@ entry:
 ; openssl/optimized/libcrypto-lib-bn_prime.ll
 ; openssl/optimized/libcrypto-shlib-bn_prime.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000009(i32 %0, i32 %1, i1 %2) #0 {
+define i64 @func0000000000000029(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i32 64, i32 128
-  %4 = icmp ult i32 %1, 1025
+  %4 = icmp samesign ult i32 %1, 1025
   %5 = select i1 %4, i32 %3, i32 %0
   %6 = zext nneg i32 %5 to i64
   ret i64 %6

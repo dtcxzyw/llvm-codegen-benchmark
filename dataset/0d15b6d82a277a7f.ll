@@ -31,9 +31,8 @@ entry:
   ret i64 %3
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; clamav/optimized/archive.cpp.ll
-; qemu/optimized/hw_display_ramfb.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:

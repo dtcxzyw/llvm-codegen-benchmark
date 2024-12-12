@@ -9,11 +9,17 @@ func0000000000000000:                   # @func0000000000000000
 	leaq	(%rsi,%rsi,4), %rax
 	leaq	1(%rdi,%rax), %rax
 	retq
-func0000000000000005:                   # @func0000000000000005
+func0000000000000007:                   # @func0000000000000007
 	leaq	100(%rdi), %rax
 	testb	$1, %sil
 	cmoveq	%rdi, %rax
 	addq	$7, %rax
+	retq
+func0000000000000005:                   # @func0000000000000005
+	leaq	7(%rdi), %rax
+	testb	$1, %sil
+	cmoveq	%rdi, %rax
+	addq	$-7, %rax
 	retq
 func0000000000000004:                   # @func0000000000000004
 	leaq	2147483562(%rdi), %rax

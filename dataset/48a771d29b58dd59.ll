@@ -1,6 +1,7 @@
 
-; 34 occurrences:
+; 40 occurrences:
 ; casadi/optimized/bspline.cpp.ll
+; cmake/optimized/huf_compress.c.ll
 ; cvc5/optimized/cvc5.cpp.ll
 ; git/optimized/read-cache.ll
 ; graphviz/optimized/gxl2gv.c.ll
@@ -34,6 +35,11 @@
 ; ruby/optimized/vm_backtrace.ll
 ; ruby/optimized/yjit.ll
 ; ruby/optimized/zlib.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/d8k4gi60mp0onf0c8t6rhs7ks.ll
+; zed-rs/optimized/eio6txv0nku2we5mnjcgiiw85.ll
+; zed-rs/optimized/f34ji21oay71m9pwftbcdstvm.ll
+; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0) #0 {
 entry:

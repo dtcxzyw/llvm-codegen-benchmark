@@ -36,23 +36,23 @@ func000000000000003f:                   # @func000000000000003f
 	vpbroadcastd	.LCPI4_0(%rip), %ymm3   # ymm3 = [255,255,255,255,255,255,255,255]
 	vpsubd	%ymm2, %ymm3, %ymm2
 	vpmulld	%ymm1, %ymm2, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI5_0:
 	.long	767                             # 0x2ff
 func000000000000003d:                   # @func000000000000003d
 	vpbroadcastd	.LCPI5_0(%rip), %ymm3   # ymm3 = [767,767,767,767,767,767,767,767]
 	vpsubd	%ymm2, %ymm3, %ymm2
-	vpmulld	%ymm1, %ymm2, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm2, %ymm1, %ymm1
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI6_0:
 	.long	256                             # 0x100
 func0000000000000030:                   # @func0000000000000030
 	vpbroadcastd	.LCPI6_0(%rip), %ymm3   # ymm3 = [256,256,256,256,256,256,256,256]
 	vpsubd	%ymm2, %ymm3, %ymm2
-	vpmulld	%ymm1, %ymm2, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpmulld	%ymm2, %ymm1, %ymm1
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI7_0:
 	.long	64                              # 0x40
@@ -60,7 +60,7 @@ func0000000000000014:                   # @func0000000000000014
 	vpbroadcastd	.LCPI7_0(%rip), %ymm3   # ymm3 = [64,64,64,64,64,64,64,64]
 	vpsubd	%ymm2, %ymm3, %ymm2
 	vpmulld	%ymm1, %ymm2, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI8_0:
 	.long	16384                           # 0x4000
@@ -68,7 +68,7 @@ func0000000000000004:                   # @func0000000000000004
 	vpbroadcastd	.LCPI8_0(%rip), %ymm3   # ymm3 = [16384,16384,16384,16384,16384,16384,16384,16384]
 	vpsubd	%ymm2, %ymm3, %ymm2
 	vpmulld	%ymm1, %ymm2, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI9_0:
 	.long	512                             # 0x200
@@ -76,5 +76,5 @@ func0000000000000034:                   # @func0000000000000034
 	vpbroadcastd	.LCPI9_0(%rip), %ymm3   # ymm3 = [512,512,512,512,512,512,512,512]
 	vpsubd	%ymm2, %ymm3, %ymm2
 	vpmulld	%ymm1, %ymm2, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq

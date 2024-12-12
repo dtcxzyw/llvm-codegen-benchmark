@@ -6,7 +6,7 @@
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000030a(i8 %0, i32 %1) #0 {
+define i1 @func000000000000060a(i8 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 10
   %3 = add i32 %2, -48
@@ -21,20 +21,20 @@ entry:
 ; curl/optimized/libcurl_la-parsedate.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000754(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000eb4(i8 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 10
   %3 = add nsw i32 %2, -48
   %4 = zext nneg i8 %0 to i32
   %5 = add nsw i32 %3, %4
-  %6 = icmp ult i32 %5, 60
+  %6 = icmp samesign ult i32 %5, 60
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; php/optimized/pcre2_compile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000508(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000a08(i8 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw i32 %1, 10
   %3 = add i32 %2, -48
@@ -44,23 +44,24 @@ entry:
   ret i1 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/dec_octet_rule.ll
 ; php/optimized/pcre2_compile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000758(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000eb8(i8 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 10
   %3 = add nsw i32 %2, -48
   %4 = zext nneg i8 %0 to i32
   %5 = add nsw i32 %3, %4
-  %6 = icmp ugt i32 %5, 65535
+  %6 = icmp samesign ugt i32 %5, 65535
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; php/optimized/pcre2_compile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i8 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 10
   %3 = add i32 %2, -48
@@ -73,7 +74,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/pcre2_compile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i8 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 10
   %3 = add i32 %2, -48
@@ -97,7 +98,7 @@ entry:
 ; xgboost/optimized/tree_model.cc.ll
 ; xgboost/optimized/updater_colmaker.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000208(i8 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 85
   %3 = add i32 %2, -1
@@ -112,7 +113,7 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000301(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000601(i8 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 10
   %3 = add i32 %2, -48
@@ -135,7 +136,7 @@ entry:
 ; xgboost/optimized/tree_model.cc.ll
 ; xgboost/optimized/updater_colmaker.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000201(i8 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 10
   %3 = add i32 %2, -48
@@ -148,7 +149,7 @@ entry:
 ; 1 occurrences:
 ; nuttx/optimized/lib_strptime.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000306(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000606(i8 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 10
   %3 = add i32 %2, -48
@@ -162,7 +163,7 @@ entry:
 ; eastl/optimized/EADateTime.cpp.ll
 ; nuttx/optimized/lib_strptime.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000308(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000608(i8 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 10
   %3 = add i32 %2, -48
@@ -172,16 +173,38 @@ entry:
   ret i1 %6
 }
 
+; 10 occurrences:
+; xgboost/optimized/gblinear.cc.ll
+; xgboost/optimized/gbtree.cc.ll
+; xgboost/optimized/learner.cc.ll
+; xgboost/optimized/linear_updater.cc.ll
+; xgboost/optimized/pseudo_huber.cc.ll
+; xgboost/optimized/ranking_utils.cc.ll
+; xgboost/optimized/regression_obj.cc.ll
+; xgboost/optimized/survival_util.cc.ll
+; xgboost/optimized/tree_model.cc.ll
+; xgboost/optimized/updater_colmaker.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000218(i8 %0, i32 %1) #0 {
+entry:
+  %2 = mul i32 %1, 10
+  %3 = add i32 %2, -48
+  %4 = zext nneg i8 %0 to i32
+  %5 = add i32 %3, %4
+  %6 = icmp samesign ugt i32 %5, 7
+  ret i1 %6
+}
+
 ; 1 occurrences:
 ; eastl/optimized/EADateTime.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000304(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000614(i8 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 10
   %3 = add i32 %2, -48
   %4 = zext nneg i8 %0 to i32
   %5 = add i32 %3, %4
-  %6 = icmp ult i32 %5, 69
+  %6 = icmp samesign ult i32 %5, 69
   ret i1 %6
 }
 

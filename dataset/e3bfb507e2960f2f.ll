@@ -1,10 +1,13 @@
 
-; 19 occurrences:
+; 23 occurrences:
+; arrow/optimized/utf8.cc.ll
 ; eastl/optimized/BenchmarkString.cpp.ll
 ; hermes/optimized/BCP47Parser.cpp.ll
 ; hermes/optimized/SourceErrorManager.cpp.ll
 ; hermes/optimized/StringPrimitive.cpp.ll
+; jsonnet/optimized/desugarer.cpp.ll
 ; jsonnet/optimized/formatter.cpp.ll
+; jsonnet/optimized/parser.cpp.ll
 ; jsonnet/optimized/string_utils.cpp.ll
 ; jsonnet/optimized/vm.cpp.ll
 ; libquic/optimized/string16.cc.ll
@@ -18,13 +21,25 @@
 ; lief/optimized/ResourceVarFileInfo.cpp.ll
 ; lief/optimized/ResourceVersion.cpp.ll
 ; lief/optimized/ResourcesParser.cpp.ll
+; pbrt-v4/optimized/string.cpp.ll
 ; velox/optimized/VectorFuzzer.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000013(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000053(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ult i64 %1, %2
+  %3 = icmp samesign ult i64 %1, %2
   %4 = select i1 %3, i64 %0, i64 %1
   %5 = shl nuw nsw i64 %4, 2
+  ret i64 %5
+}
+
+; 1 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp eq i64 %1, %2
+  %4 = select i1 %3, i64 %0, i64 %1
+  %5 = shl nsw i64 %4, 2
   ret i64 %5
 }
 

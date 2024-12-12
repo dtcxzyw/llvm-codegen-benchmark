@@ -49,23 +49,13 @@ entry:
 define i32 @func000000000000000e(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 65535
-  %3 = mul nuw nsw i64 %2, %0
+  %3 = mul nuw nsw i64 %0, %2
   %4 = trunc nuw i64 %3 to i32
   ret i32 %4
 }
 
-; 1 occurrences:
-; oiio/optimized/rlainput.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000000(i64 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 255
-  %3 = mul i64 %2, %0
-  %4 = trunc i64 %3 to i32
-  ret i32 %4
-}
-
-; 12 occurrences:
+; 13 occurrences:
+; boost/optimized/to_chars.ll
 ; llvm/optimized/Interp.cpp.ll
 ; llvm/optimized/MachineVerifier.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
@@ -81,8 +71,18 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 65535
-  %3 = mul nuw nsw i64 %2, %0
+  %2 = mul i64 %1, %0
+  %3 = trunc i64 %2 to i32
+  ret i32 %3
+}
+
+; 1 occurrences:
+; oiio/optimized/rlainput.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i64 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 255
+  %3 = mul i64 %0, %2
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }

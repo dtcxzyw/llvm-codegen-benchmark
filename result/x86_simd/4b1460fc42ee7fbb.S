@@ -30,24 +30,8 @@ func00000000000000d4:                   # @func00000000000000d4
 	retq
 .LCPI2_0:
 	.quad	0x8000000000000000              # double -0
-func00000000000000c2:                   # @func00000000000000c2
-	vbroadcastsd	.LCPI2_0(%rip), %zmm4   # zmm4 = [-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0]
-	vxorpd	%zmm4, %zmm3, %zmm5
-	vxorpd	%zmm4, %zmm2, %zmm4
-	vcmplepd	%zmm2, %zmm4, %k1
-	vcmplepd	%zmm3, %zmm5, %k2
-	vmovapd	%zmm3, %zmm5 {%k2}
-	vmovapd	%zmm2, %zmm4 {%k1}
-	vcmpltpd	%zmm0, %zmm4, %k0
-	vcmpltpd	%zmm1, %zmm5, %k1
-	kunpckbw	%k0, %k1, %k0
-	vpmovm2b	%k0, %xmm0
-	vzeroupper
-	retq
-.LCPI3_0:
-	.quad	0x8000000000000000              # double -0
 func00000000000000cc:                   # @func00000000000000cc
-	vbroadcastsd	.LCPI3_0(%rip), %zmm4   # zmm4 = [-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0]
+	vbroadcastsd	.LCPI2_0(%rip), %zmm4   # zmm4 = [-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0]
 	vxorpd	%zmm4, %zmm3, %zmm5
 	vxorpd	%zmm4, %zmm2, %zmm4
 	vcmplepd	%zmm2, %zmm4, %k1
@@ -60,10 +44,10 @@ func00000000000000cc:                   # @func00000000000000cc
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-.LCPI4_0:
+.LCPI3_0:
 	.quad	0x8000000000000000              # double -0
 func00000000000000c3:                   # @func00000000000000c3
-	vbroadcastsd	.LCPI4_0(%rip), %zmm4   # zmm4 = [-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0]
+	vbroadcastsd	.LCPI3_0(%rip), %zmm4   # zmm4 = [-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0]
 	vxorpd	%zmm4, %zmm3, %zmm5
 	vxorpd	%zmm4, %zmm2, %zmm4
 	vcmplepd	%zmm2, %zmm4, %k1
@@ -72,6 +56,22 @@ func00000000000000c3:                   # @func00000000000000c3
 	vmovapd	%zmm2, %zmm4 {%k1}
 	vcmpnlepd	%zmm4, %zmm0, %k0
 	vcmpnlepd	%zmm5, %zmm1, %k1
+	kunpckbw	%k0, %k1, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI4_0:
+	.quad	0x8000000000000000              # double -0
+func00000000000000c2:                   # @func00000000000000c2
+	vbroadcastsd	.LCPI4_0(%rip), %zmm4   # zmm4 = [-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0,-0.0E+0]
+	vxorpd	%zmm4, %zmm3, %zmm5
+	vxorpd	%zmm4, %zmm2, %zmm4
+	vcmplepd	%zmm2, %zmm4, %k1
+	vcmplepd	%zmm3, %zmm5, %k2
+	vmovapd	%zmm3, %zmm5 {%k2}
+	vmovapd	%zmm2, %zmm4 {%k1}
+	vcmpltpd	%zmm0, %zmm4, %k0
+	vcmpltpd	%zmm1, %zmm5, %k1
 	kunpckbw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

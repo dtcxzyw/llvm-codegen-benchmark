@@ -1,30 +1,18 @@
-func0000000000000014:                   // @func0000000000000014
+func0000000000000024:                   // @func0000000000000024
 // %bb.0:                               // %entry
-	neg	v6.4s, v1.4s
-	neg	v7.4s, v0.4s
-	cmhi	v3.4s, v5.4s, v3.4s
-	cmhi	v2.4s, v4.4s, v2.4s
-	bif	v1.16b, v6.16b, v3.16b
-	bif	v0.16b, v7.16b, v2.16b
+	cmp	w1, w2
+	cneg	w0, w0, hs
 	ret
                                         // -- End function
-func0000000000000016:                   // @func0000000000000016
+func0000000000000026:                   // @func0000000000000026
 // %bb.0:                               // %entry
-	neg	v6.4s, v1.4s
-	neg	v7.4s, v0.4s
-	cmgt	v3.4s, v5.4s, v3.4s
-	cmgt	v2.4s, v4.4s, v2.4s
-	bif	v1.16b, v6.16b, v3.16b
-	bif	v0.16b, v7.16b, v2.16b
+	cmp	w1, w2
+	cneg	w0, w0, ge
 	ret
                                         // -- End function
-func0000000000000011:                   // @func0000000000000011
+func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
-	neg	v6.4s, v1.4s
-	neg	v7.4s, v0.4s
-	cmeq	v3.4s, v3.4s, v5.4s
-	cmeq	v2.4s, v2.4s, v4.4s
-	bif	v1.16b, v6.16b, v3.16b
-	bif	v0.16b, v7.16b, v2.16b
+	cmp	w1, w2
+	cneg	w0, w0, ne
 	ret
                                         // -- End function

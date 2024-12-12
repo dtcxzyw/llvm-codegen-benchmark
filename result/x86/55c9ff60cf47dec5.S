@@ -28,3 +28,10 @@ func000000000000000c:                   # @func000000000000000c
 	notq	%rax
 	addq	%rdi, %rax
 	retq
+func000000000000001e:                   # @func000000000000001e
+	shrq	$4, %rsi
+	movabsq	$3353953467947191203, %rax      # imm = 0x2E8BA2E8BA2E8BA3
+	imulq	%rsi, %rax
+	notq	%rax
+	addq	%rdi, %rax
+	retq

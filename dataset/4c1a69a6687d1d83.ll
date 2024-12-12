@@ -13,7 +13,7 @@ define float @func0000000000000001(float %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -127
   %3 = sitofp i32 %2 to float
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   ret float %4
 }
 

@@ -1,6 +1,7 @@
 
-; 460 occurrences:
+; 487 occurrences:
 ; abc/optimized/dauCanon.c.ll
+; abseil-cpp/optimized/charconv.cc.ll
 ; abseil-cpp/optimized/clock.cc.ll
 ; abseil-cpp/optimized/crc_cord_state.cc.ll
 ; abseil-cpp/optimized/crc_memcpy_test.cc.ll
@@ -12,7 +13,6 @@
 ; abseil-cpp/optimized/time.cc.ll
 ; abseil-cpp/optimized/time_test.cc.ll
 ; actix-rs/optimized/1heyflno2zbhb99l.ll
-; actix-rs/optimized/1zztmmkm73a8t9o2.ll
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
 ; actix-rs/optimized/2o6s6qtmif526itx.ll
 ; actix-rs/optimized/34zqw30jnodxf0r6.ll
@@ -24,15 +24,18 @@
 ; actix-rs/optimized/n3tsoobypc9yljt.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/date_time.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; bullet3/optimized/btMiniSDF.ll
 ; clap-rs/optimized/1rbie63mhpvpjak.ll
 ; cmake/optimized/SystemTools.cxx.ll
 ; cmake/optimized/cf-https-connect.c.ll
 ; cmake/optimized/cmQtAutoGenInitializer.cxx.ll
+; coreutils-rs/optimized/1487bf2zeluccyme.ll
 ; coreutils-rs/optimized/1cffnn5jn7gf4ojp.ll
 ; coreutils-rs/optimized/1f6bwbppkn5sbvo1.ll
 ; coreutils-rs/optimized/1mr4o1kkd9rb14zq.ll
-; coreutils-rs/optimized/1mziz8r2rj0rwf57.ll
 ; coreutils-rs/optimized/1nj6h5colnkxfn01.ll
 ; coreutils-rs/optimized/1xgh31va70j84rdd.ll
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
@@ -54,6 +57,7 @@
 ; delta-rs/optimized/47qjbhol909h8zu7.ll
 ; delta-rs/optimized/4say4x9grcidoih4.ll
 ; delta-rs/optimized/5d242f2by7re2olg.ll
+; delta-rs/optimized/ji6jbkbato2odt0.ll
 ; diesel-rs/optimized/1mcix0ravw4ybg9k.ll
 ; diesel-rs/optimized/27d1dwdaey9nml16.ll
 ; diesel-rs/optimized/2zzzvc1em6im74h3.ll
@@ -183,7 +187,6 @@
 ; llvm/optimized/ParseOpenACC.cpp.ll
 ; llvm/optimized/PartialInlining.cpp.ll
 ; llvm/optimized/Program.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
@@ -225,16 +228,22 @@
 ; nlohmann_json/optimized/unit-conversions.cpp.ll
 ; ocio/optimized/OCIOYaml.cpp.ll
 ; ockam-rs/optimized/1411u8drt798uxi8.ll
+; ockam-rs/optimized/14m30vbbwzpy4dn0.ll
 ; ockam-rs/optimized/1j8f46ag92qmaepd.ll
+; ockam-rs/optimized/1jxqq0c8ppka0dgc.ll
 ; ockam-rs/optimized/23pvw3nj6m0p9wnd.ll
 ; ockam-rs/optimized/2ngtaq92gcad4v6j.ll
 ; ockam-rs/optimized/31s7w40jb5ho09e2.ll
 ; ockam-rs/optimized/35pvxddga2itk8eb.ll
+; ockam-rs/optimized/37wpz1tx0oad4jej.ll
+; ockam-rs/optimized/3814z5tzzmmk2te1.ll
 ; ockam-rs/optimized/39elqh75xhewanjo.ll
 ; ockam-rs/optimized/3trfdpf6q4y0wtix.ll
 ; ockam-rs/optimized/445trp5tofqtvmh3.ll
+; ockam-rs/optimized/4df8gyzy0u3roc94.ll
 ; ockam-rs/optimized/4h15go5rbmdr09f8.ll
 ; ockam-rs/optimized/4i4les6ijtr4jgtl.ll
+; ockam-rs/optimized/594kg43rtueps2cx.ll
 ; ockam-rs/optimized/5ayhis8cfs1k9t14.ll
 ; ockam-rs/optimized/7hitgxreqt236i.ll
 ; ockam-rs/optimized/8g2r22yshp3qi00.ll
@@ -388,12 +397,11 @@
 ; rust-analyzer-rs/optimized/20n4mfub9828lc66.ll
 ; rust-analyzer-rs/optimized/2c0n7dumpf7kecgy.ll
 ; rust-analyzer-rs/optimized/2pjtxeptskgmq0yj.ll
+; rust-analyzer-rs/optimized/2ydioyxkoxez3z9r.ll
 ; rust-analyzer-rs/optimized/32k9emi9ipqo4utc.ll
 ; rust-analyzer-rs/optimized/3dond84tezktihlu.ll
 ; rust-analyzer-rs/optimized/3g8gmheh3yshr0h0.ll
-; rust-analyzer-rs/optimized/3nihs2yq970i3wpb.ll
 ; rust-analyzer-rs/optimized/3tycbwmeof1lt4v4.ll
-; rust-analyzer-rs/optimized/4bvw1e690behm5u2.ll
 ; rust-analyzer-rs/optimized/4n4kpy0miblxvsjy.ll
 ; rust-analyzer-rs/optimized/4rlc671wrakubmrp.ll
 ; rust-analyzer-rs/optimized/8q1esjraj83sh5t.ll
@@ -435,12 +443,12 @@
 ; tokio-rs/optimized/k2uhbjhe54a6089.ll
 ; tokio-rs/optimized/um69cc05lgsv45r.ll
 ; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
+; turborepo-rs/optimized/avd1ga9yb4qq5g7sdqftppd4q.ll
 ; typst-rs/optimized/1fd2xpfefmgrcb9d.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; typst-rs/optimized/5antv5sfgwt5l2ke.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
-; wasmtime-rs/optimized/1jnsbyq97qowbffw.ll
 ; wasmtime-rs/optimized/1spnjfu340nob5zr.ll
 ; wasmtime-rs/optimized/2b53gxk7phibxp54.ll
 ; wasmtime-rs/optimized/2x1mxlm9f496za8a.ll
@@ -448,7 +456,6 @@
 ; wasmtime-rs/optimized/3flv1664rwe55t82.ll
 ; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
 ; wasmtime-rs/optimized/3ks7b643ljwe3j81.ll
-; wasmtime-rs/optimized/3sfuzir68v08mq5f.ll
 ; wasmtime-rs/optimized/3xijfo75of218kpj.ll
 ; wasmtime-rs/optimized/4krmo5yuqbsteeuo.ll
 ; wasmtime-rs/optimized/4qgt4edt0wnnlcua.ll
@@ -457,8 +464,28 @@
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; wasmtime-rs/optimized/5poarlxbfmu9lbg.ll
 ; wasmtime-rs/optimized/v5prf101dn49s3v.ll
-; wasmtime-rs/optimized/yfrwxvgfff7tccp.ll
 ; yaml-cpp/optimized/scanner.cpp.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/3hzvg0vxovkxolvfr6bwvtv1m.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/5wz01y896jxljxzjbwo9cjiak.ll
+; zed-rs/optimized/6hac4w9crhj7k3lst2ee8ajzz.ll
+; zed-rs/optimized/7almbq0vtpgp7q0c9d6k1td97.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/a9n822469hhbvmntwly5c3zys.ll
+; zed-rs/optimized/b0ehx4vbxawrtril1zkysl0b6.ll
+; zed-rs/optimized/bijypxqg3gfu3lugp8zf7c61q.ll
+; zed-rs/optimized/bktyyhuk5fekatq647qx0ox8v.ll
+; zed-rs/optimized/cj7s0wliqptmxcvil2fbp8uvc.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
+; zed-rs/optimized/dbwuhn7ob83o6nu68k5f1g4py.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/dtqpsl4w47n2m18dddhdjmklr.ll
+; zed-rs/optimized/e0nyk03b5twszr55stktey742.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
 define { i64, i32 } @func0000000000000000(i32 %0, i64 %1) #0 {

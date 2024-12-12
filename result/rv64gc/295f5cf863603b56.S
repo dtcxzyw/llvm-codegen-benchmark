@@ -31,13 +31,13 @@ func000000000000003f:                   # @func000000000000003f
 func000000000000003d:                   # @func000000000000003d
 	li	a3, 767
 	subw	a3, a3, a2
-	mul	a1, a3, a1
+	mul	a1, a1, a3
 	addw	a0, a0, a1
 	ret
 func0000000000000030:                   # @func0000000000000030
 	li	a3, 256
 	subw	a3, a3, a2
-	mul	a1, a3, a1
+	mul	a1, a1, a3
 	addw	a0, a0, a1
 	ret
 func0000000000000014:                   # @func0000000000000014

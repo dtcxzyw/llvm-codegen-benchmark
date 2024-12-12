@@ -1,7 +1,6 @@
 
-; 174 occurrences:
+; 173 occurrences:
 ; abc/optimized/dauDsd.c.ll
-; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/giaNf.c.ll
 ; git/optimized/show-branch.ll
 ; lief/optimized/constant_time.c.ll

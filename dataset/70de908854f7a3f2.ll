@@ -1,5 +1,6 @@
 
 ; 112 occurrences:
+; boost/optimized/to_chars.ll
 ; cmake/optimized/fastcover.c.ll
 ; cmake/optimized/fse_compress.c.ll
 ; fmt/optimized/format-impl-test.cc.ll
@@ -85,7 +86,6 @@
 ; linux/optimized/dm-region-hash.ll
 ; linux/optimized/resize.ll
 ; linux/optimized/tcp_cubic.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; stockfish/optimized/bitboard.ll
 ; stockfish/optimized/movegen.ll

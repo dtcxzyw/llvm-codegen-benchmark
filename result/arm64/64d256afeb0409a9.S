@@ -1,59 +1,33 @@
-func0000000000000023:                   // @func0000000000000023
+func0000000000000063:                   // @func0000000000000063
 // %bb.0:                               // %entry
-	movi	v5.4s, #63
-	movi	v6.4s, #56
+	and	w8, w2, #0x3f
+	cmp	w8, #56
 	mov	w8, #8                          // =0x8
-	and	v4.16b, v4.16b, v5.16b
-	cmhi	v4.4s, v4.4s, v6.4s
-	dup	v6.2d, x8
-	sshll2	v5.2d, v4.4s, #0
-	sshll	v4.2d, v4.2s, #0
-	bif	v2.16b, v6.16b, v4.16b
-	bif	v3.16b, v6.16b, v5.16b
-	add	v1.2d, v3.2d, v1.2d
-	add	v0.2d, v2.2d, v0.2d
+	csel	x8, x1, x8, hi
+	add	x0, x8, x0
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	movi	v5.2d, #0x00ffff0000ffff
-	movi	v6.4s, #204
-	and	v4.16b, v4.16b, v5.16b
-	cmeq	v4.4s, v4.4s, v6.4s
-	sshll2	v5.2d, v4.4s, #0
-	sshll	v4.2d, v4.2s, #0
-	and	v2.16b, v2.16b, v4.16b
-	and	v3.16b, v3.16b, v5.16b
-	add	v1.2d, v3.2d, v1.2d
-	add	v0.2d, v2.2d, v0.2d
+	and	w8, w2, #0xffff
+	cmp	w8, #204
+	csel	x8, x1, xzr, eq
+	add	x0, x0, x8
 	ret
                                         // -- End function
 func0000000000000030:                   // @func0000000000000030
 // %bb.0:                               // %entry
-	movi	v5.4s, #224
-	movi	v6.4s, #192
+	and	w8, w2, #0xe0
+	cmp	w8, #192
 	mov	w8, #2                          // =0x2
-	and	v4.16b, v4.16b, v5.16b
-	cmeq	v4.4s, v4.4s, v6.4s
-	dup	v6.2d, x8
-	sshll2	v5.2d, v4.4s, #0
-	sshll	v4.2d, v4.2s, #0
-	bit	v2.16b, v6.16b, v4.16b
-	bit	v3.16b, v6.16b, v5.16b
-	add	v1.2d, v3.2d, v1.2d
-	add	v0.2d, v2.2d, v0.2d
+	csel	x8, x8, x1, eq
+	add	x0, x0, x8
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	movi	v5.4s, #1, lsl #16
-	and	v4.16b, v4.16b, v5.16b
-	cmeq	v4.4s, v4.4s, #0
-	sshll2	v5.2d, v4.4s, #0
-	sshll	v4.2d, v4.2s, #0
-	and	v2.16b, v2.16b, v4.16b
-	and	v3.16b, v3.16b, v5.16b
-	add	v1.2d, v3.2d, v1.2d
-	add	v0.2d, v2.2d, v0.2d
+	tst	w2, #0x10000
+	csel	x8, x1, xzr, eq
+	add	x0, x8, x0
 	ret
                                         // -- End function

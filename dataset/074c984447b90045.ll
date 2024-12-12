@@ -1,5 +1,6 @@
 
-; 9 occurrences:
+; 10 occurrences:
+; boost/optimized/syslog_backend.ll
 ; cpython/optimized/_codecs_iso2022.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll

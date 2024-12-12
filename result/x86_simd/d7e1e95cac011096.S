@@ -50,10 +50,29 @@ func000000000000000b:                   # @func000000000000000b
 	vpsubb	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
+.LCPI2_0:
+	.byte	14                              # 0xe
+	.byte	14                              # 0xe
+	.byte	14                              # 0xe
+	.byte	14                              # 0xe
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+	.zero	1
+.LCPI2_1:
+	.byte	14                              # 0xe
 func0000000000000000:                   # @func0000000000000000
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpmovqb	%ymm0, %xmm0
-	vpxor	%xmm1, %xmm1, %xmm1
+	vpbroadcastb	.LCPI2_1(%rip), %xmm1   # xmm1 = [14,14,14,14,14,14,14,14,14,14,14,14,14,14,14,14]
 	vpsubb	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq

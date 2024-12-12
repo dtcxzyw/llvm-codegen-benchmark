@@ -34,7 +34,7 @@ define i64 @func000000000000001b(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %not. = xor i1 %1, true
   %3 = zext i1 %not. to i32
-  %4 = add nuw nsw i32 %3, %2
+  %4 = add nuw nsw i32 %2, %3
   %5 = add nsw i32 %4, %0
   %6 = zext nneg i32 %5 to i64
   ret i64 %6

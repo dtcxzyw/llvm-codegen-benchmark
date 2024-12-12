@@ -28,8 +28,13 @@ func0000000000000009:                   # @func0000000000000009
 	sete	%al
 	shlxl	%eax, %edi, %eax
 	retq
+func0000000000000023:                   # @func0000000000000023
+	cmpl	$64, %esi
+	setb	%al
+	shlxl	%eax, %edi, %eax
+	retq
 func000000000000000b:                   # @func000000000000000b
-	cmpl	$4, %esi
+	cmpl	$9, %esi
 	sete	%al
 	shlxl	%eax, %edi, %eax
 	retq

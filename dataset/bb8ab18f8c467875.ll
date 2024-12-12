@@ -7,6 +7,7 @@
 ; abc/optimized/giaGlitch.c.ll
 ; abc/optimized/mpmPre.c.ll
 ; abc/optimized/wlnRead.c.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/codeobject.ll
 ; cpython/optimized/unicodeobject.ll
 ; crow/optimized/example.cpp.ll
@@ -31,7 +32,6 @@
 ; glslang/optimized/linkValidate.cpp.ll
 ; glslang/optimized/reflection.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; hdf5/optimized/H5Zfletcher32.c.ll
 ; hermes/optimized/dtoa.c.ll
 ; icu/optimized/ucptrie.ll
 ; jemalloc/optimized/emap.ll
@@ -146,6 +146,7 @@
 ; luajit/optimized/lj_cconv_dyn.ll
 ; luajit/optimized/lj_cparse.ll
 ; luajit/optimized/lj_cparse_dyn.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; meshlab/optimized/MarchingCubes.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; mitsuba3/optimized/x86formatter.cpp.ll
@@ -213,7 +214,6 @@
 ; qemu/optimized/hw_pci_shpc.c.ll
 ; qemu/optimized/hw_scsi_lsi53c895a.c.ll
 ; qemu/optimized/hw_scsi_mptsas.c.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
 ; qemu/optimized/target_riscv_debug.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; qemu/optimized/tcg-op-vec.c.ll
@@ -260,16 +260,15 @@ entry:
   ret i32 %2
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; eastl/optimized/EAMemory.cpp.ll
-; hdf5/optimized/H5Zfletcher32.c.ll
 ; llvm/optimized/ELFObjectWriter.cpp.ll
 ; quickjs/optimized/quickjs.ll
 ; wireshark/optimized/packet-mp2t.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0) #0 {
 entry:
-  %1 = shl i32 %0, 8
+  %1 = shl i32 %0, 16
   %2 = and i32 %1, -16777216
   ret i32 %2
 }

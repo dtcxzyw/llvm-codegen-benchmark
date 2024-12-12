@@ -6,7 +6,7 @@ func000000000000003f:                   # @func000000000000003f
 func0000000000000000:                   # @func0000000000000000
 	andl	$1, %edx
 	addq	%rsi, %rdx
-	leaq	24(%rdi,%rdx), %rax
+	leaq	4(%rdi,%rdx), %rax
 	retq
 func0000000000000020:                   # @func0000000000000020
 	andl	$1, %edx

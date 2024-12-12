@@ -10,9 +10,9 @@
 define i32 @func0000000000000001(i32 %0, double %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to double
-  %4 = fadd double %3, %1
+  %4 = fadd double %1, %3
   %5 = fptosi double %4 to i32
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -22,9 +22,9 @@ entry:
 define i32 @func0000000000000000(i32 %0, double %1, i32 %2) #0 {
 entry:
   %3 = sitofp i32 %2 to double
-  %4 = fadd double %3, %1
+  %4 = fadd double %1, %3
   %5 = fptosi double %4 to i32
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 

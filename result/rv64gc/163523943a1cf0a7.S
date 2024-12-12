@@ -4,7 +4,7 @@ func0000000000000006:                   # @func0000000000000006
 	addw	a0, a0, a1
 	slti	a0, a0, 0
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	andi	a0, a0, 1
 	addi	a0, a0, -1
 	andi	a0, a0, -4
@@ -12,7 +12,7 @@ func000000000000001a:                   # @func000000000000001a
 	slti	a0, a0, 2
 	xori	a0, a0, 1
 	ret
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	andi	a0, a0, 1
 	addi	a0, a0, -1
 	andi	a0, a0, -4
@@ -20,21 +20,21 @@ func000000000000001c:                   # @func000000000000001c
 	addi	a0, a0, -1
 	snez	a0, a0
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	andi	a0, a0, 1
 	addi	a0, a0, -1
 	andi	a0, a0, -5
 	addw	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	andi	a0, a0, 1
 	addi	a0, a0, -1
 	andi	a0, a0, -15
 	addw	a0, a0, a1
 	slti	a0, a0, 6
 	ret
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	andi	a0, a0, 1
 	addi	a0, a0, -1
 	andi	a0, a0, -15
@@ -42,21 +42,21 @@ func0000000000000018:                   # @func0000000000000018
 	sltiu	a0, a0, 9
 	xori	a0, a0, 1
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	andi	a0, a0, 1
 	addi	a0, a0, -1
 	andi	a0, a0, -15
 	addw	a0, a0, a1
 	sltiu	a0, a0, 12
 	ret
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	not	a0, a0
 	andi	a0, a0, 1
 	or	a0, a0, a1
 	sext.w	a0, a0
 	seqz	a0, a0
 	ret
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	andi	a0, a0, 1
 	addi	a0, a0, -1
 	andi	a0, a0, 6
@@ -78,7 +78,7 @@ func0000000000000001:                   # @func0000000000000001
 	addi	a0, a0, -8
 	seqz	a0, a0
 	ret
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	andi	a0, a0, 1
 	addi	a0, a0, -1
 	andi	a0, a0, 12

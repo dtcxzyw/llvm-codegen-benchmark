@@ -1,7 +1,8 @@
 
-; 111 occurrences:
+; 112 occurrences:
 ; abseil-cpp/optimized/mutex.cc.ll
 ; bdwgc/optimized/cordxtra.c.ll
+; boost/optimized/src.ll
 ; cpython/optimized/cfield.ll
 ; entt/optimized/dense_map.cpp.ll
 ; entt/optimized/dense_set.cpp.ll
@@ -115,11 +116,11 @@
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %1, 1
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   ret i64 %3
 }
 
-; 35 occurrences:
+; 34 occurrences:
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; git/optimized/ewah_bitmap.ll
 ; hermes/optimized/CompilerDriver.cpp.ll
@@ -127,7 +128,6 @@ entry:
 ; linux/optimized/apic.ll
 ; linux/optimized/core.ll
 ; linux/optimized/ehci-dbgp.ll
-; linux/optimized/gso.ll
 ; linux/optimized/gup.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/init_64.ll
@@ -159,7 +159,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = or i64 %1, 4611686018427387904
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   ret i64 %3
 }
 

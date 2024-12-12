@@ -32,7 +32,6 @@
 ; darktable/optimized/introspection_spots.c.ll
 ; darktable/optimized/introspection_tonecurve.c.ll
 ; darktable/optimized/introspection_toneequal.c.ll
-; darktable/optimized/introspection_vibrance.c.ll
 ; darktable/optimized/introspection_vignette.c.ll
 ; darktable/optimized/navigation.c.ll
 ; gromacs/optimized/coupling.cpp.ll
@@ -133,6 +132,7 @@
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; stb/optimized/stb_truetype.c.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0) #0 {
 entry:

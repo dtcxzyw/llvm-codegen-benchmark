@@ -19,3 +19,14 @@ func000000000000002a:                   # @func000000000000002a
 	li	a1, 10
 	mul	a0, a0, a1
 	ret
+func000000000000003f:                   # @func000000000000003f
+	add	a0, a0, a1
+	lui	a1, 351844
+	addiw	a1, a1, -1143
+	mul	a0, a0, a1
+	ret
+func0000000000000030:                   # @func0000000000000030
+	add	a0, a0, a1
+	slli	a1, a0, 1
+	add	a0, a0, a1
+	ret

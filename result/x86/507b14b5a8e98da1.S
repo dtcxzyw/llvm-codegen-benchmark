@@ -5,6 +5,13 @@ func0000000000000000:                   # @func0000000000000000
 	divq	%rcx
 	leal	(%rdx,%rdi), %eax
 	retq
+func000000000000000f:                   # @func000000000000000f
+	movq	%rdx, %rcx
+	movq	%rsi, %rax
+	xorl	%edx, %edx
+	divq	%rcx
+	leal	(%rdx,%rdi), %eax
+	retq
 func0000000000000008:                   # @func0000000000000008
 	movq	%rdx, %rcx
 	movq	%rsi, %rax

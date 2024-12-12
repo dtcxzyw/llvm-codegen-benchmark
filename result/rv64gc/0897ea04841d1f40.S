@@ -7,6 +7,11 @@ func000000000000005a:                   # @func000000000000005a
 	add	a0, a0, a1
 	sub	a0, a0, a2
 	ret
+func000000000000005b:                   # @func000000000000005b
+	srai	a2, a2, 32
+	add	a0, a0, a1
+	sub	a0, a0, a2
+	ret
 func000000000000001a:                   # @func000000000000001a
 	srai	a2, a2, 32
 	slli	a0, a0, 2

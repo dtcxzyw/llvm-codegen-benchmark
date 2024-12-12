@@ -1,5 +1,5 @@
 
-; 152 occurrences:
+; 153 occurrences:
 ; annoy/optimized/annoymodule.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/X3DExporter.cpp.ll
@@ -14,7 +14,6 @@
 ; bullet3/optimized/btSoftBody.ll
 ; bullet3/optimized/poly34.ll
 ; darktable/optimized/introspection_colorequal.c.ll
-; gromacs/optimized/slagtf.cpp.ll
 ; gromacs/optimized/slagts.cpp.ll
 ; gromacs/optimized/slasq2.cpp.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
@@ -94,6 +93,7 @@
 ; ncnn/optimized/innerproduct_x86_avx512.cpp.ll
 ; ncnn/optimized/innerproduct_x86_f16c.cpp.ll
 ; ncnn/optimized/innerproduct_x86_fma.cpp.ll
+; ncnn/optimized/reduction.cpp.ll
 ; ncnn/optimized/requantize.cpp.ll
 ; ncnn/optimized/requantize_x86.cpp.ll
 ; ncnn/optimized/requantize_x86_avx.cpp.ll
@@ -152,6 +152,7 @@
 ; stb/optimized/stb_dxt.c.ll
 ; stb/optimized/stb_hexwave.c.ll
 ; stb/optimized/stb_image_resize2.c.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define float @func0000000000000002(float %0, float %1) #0 {
 entry:
@@ -265,9 +266,11 @@ entry:
   ret float %3
 }
 
-; 110 occurrences:
+; 113 occurrences:
 ; abc/optimized/ifDec16.c.ll
 ; abc/optimized/timMan.c.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/b3QuantizedBvh.ll
 ; bullet3/optimized/btCollisionWorld.ll
 ; bullet3/optimized/btDeformableBackwardEulerObjective.ll
@@ -290,6 +293,7 @@ entry:
 ; gromacs/optimized/domdec.cpp.ll
 ; gromacs/optimized/expanded.cpp.ll
 ; gromacs/optimized/freevolume.cpp.ll
+; gromacs/optimized/genconf.cpp.ll
 ; gromacs/optimized/insert_molecules.cpp.ll
 ; gromacs/optimized/neldermead.cpp.ll
 ; gromacs/optimized/replicaexchange.cpp.ll
@@ -473,8 +477,10 @@ entry:
   ret float %3
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; assimp/optimized/3DSLoader.cpp.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000001(float %0, float %1) #0 {
 entry:

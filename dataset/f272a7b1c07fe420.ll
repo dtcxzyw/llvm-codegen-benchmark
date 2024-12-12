@@ -1,5 +1,5 @@
 
-; 166 occurrences:
+; 168 occurrences:
 ; abc/optimized/aigDup.c.ll
 ; abc/optimized/cuddBddAbs.c.ll
 ; abc/optimized/cuddBddCorr.c.ll
@@ -14,11 +14,13 @@
 ; abc/optimized/st.c.ll
 ; abc/optimized/stmm.c.ll
 ; assimp/optimized/SMDLoader.cpp.ll
+; boost/optimized/codecvt_converter.ll
+; boost/optimized/test_codecvt.ll
+; boost/optimized/test_fs.ll
+; boost/optimized/utf8_codecvt_facet.ll
 ; ceres/optimized/program.cc.ll
 ; cmake/optimized/cmCTestRunTest.cxx.ll
 ; cmake/optimized/nghttp2_buf.c.ll
-; cmake/optimized/vli_decoder.c.ll
-; cmake/optimized/vli_encoder.c.ll
 ; cmake/optimized/zstd_decompress.c.ll
 ; cpython/optimized/_collectionsmodule.ll
 ; cpython/optimized/typeobject.ll
@@ -174,7 +176,7 @@ entry:
   ret i32 %3
 }
 
-; 239 occurrences:
+; 231 occurrences:
 ; abc/optimized/abcIvy.c.ll
 ; abc/optimized/abcMinBase.c.ll
 ; abc/optimized/abcObj.c.ll
@@ -206,6 +208,7 @@ entry:
 ; abc/optimized/sclLiberty.c.ll
 ; abc/optimized/wlnRead.c.ll
 ; arrow/optimized/UriParse.c.ll
+; boost/optimized/sparring_partner.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; c3c/optimized/types.c.ll
@@ -241,7 +244,6 @@ entry:
 ; git/optimized/basics.ll
 ; git/optimized/packfile.ll
 ; git/optimized/submodule.ll
-; git/optimized/tr2_tls.ll
 ; git/optimized/transport.ll
 ; graphviz/optimized/edge.c.ll
 ; graphviz/optimized/exeval.c.ll
@@ -249,7 +251,6 @@ entry:
 ; gromacs/optimized/tmpi_init.cpp.ll
 ; grpc/optimized/legacy_inproc_transport.cc.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; hdf5/optimized/H5Ftest.c.ll
 ; hdf5/optimized/H5Omessage.c.ll
 ; icu/optimized/normalizer2.ll
 ; imgui/optimized/imgui.cpp.ll
@@ -260,7 +261,6 @@ entry:
 ; linux/optimized/af_unix.ll
 ; linux/optimized/audit_tree.ll
 ; linux/optimized/backlight.ll
-; linux/optimized/component.ll
 ; linux/optimized/devres.ll
 ; linux/optimized/dmapool.ll
 ; linux/optimized/eventpoll.ll
@@ -270,14 +270,10 @@ entry:
 ; linux/optimized/hwmon.ll
 ; linux/optimized/input.ll
 ; linux/optimized/intel_dp.ll
-; linux/optimized/ipc_sysctl.ll
 ; linux/optimized/ipmr.ll
 ; linux/optimized/irqdomain.ll
-; linux/optimized/led-class.ll
 ; linux/optimized/mailbox.ll
-; linux/optimized/mdio_devres.ll
 ; linux/optimized/message.ll
-; linux/optimized/mq_sysctl.ll
 ; linux/optimized/pci-sysfs.ll
 ; linux/optimized/pi.ll
 ; linux/optimized/platform.ll
@@ -327,8 +323,8 @@ entry:
 ; luau/optimized/ldblib.cpp.ll
 ; luau/optimized/lstrlib.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
+; lvgl/optimized/lv_obj_tree.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/meshselect.cpp.ll
 ; minetest/optimized/l_mainmenu.cpp.ll
@@ -363,7 +359,6 @@ entry:
 ; openssl/optimized/libssl-shlib-ssl_lib.ll
 ; openssl/optimized/pkcs12_api_test-bin-pkcs12_api_test.ll
 ; php/optimized/phar.ll
-; php/optimized/php_ticks.ll
 ; php/optimized/sqlite3.ll
 ; php/optimized/streams.ll
 ; php/optimized/zend_jit.ll
@@ -390,7 +385,6 @@ entry:
 ; slurm/optimized/select_linear.ll
 ; slurm/optimized/sinfo.ll
 ; slurm/optimized/slurm_protocol_defs.ll
-; slurm/optimized/workq.ll
 ; sqlite/optimized/sqlite3.ll
 ; vcpkg/optimized/commands.set-installed.cpp.ll
 ; vcpkg/optimized/versions.cpp.ll

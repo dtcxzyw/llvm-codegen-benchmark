@@ -15,8 +15,7 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
-; icu/optimized/umutablecptrie.ll
+; 1 occurrences:
 ; slurm/optimized/select_linear.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
@@ -72,6 +71,17 @@ entry:
   ret i32 %5
 }
 
+; 1 occurrences:
+; icu/optimized/umutablecptrie.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp eq i32 %0, %2
+  %4 = select i1 %3, i32 1, i32 %1
+  %5 = add nuw nsw i32 %4, %0
+  ret i32 %5
+}
+
 ; 3 occurrences:
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
@@ -81,7 +91,7 @@ define i32 @func0000000000000029(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %0, %2
   %4 = select i1 %3, i32 0, i32 %1
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 

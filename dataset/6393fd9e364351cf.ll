@@ -5,7 +5,7 @@
 define i1 @func0000000000000028(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
-  %4 = fcmp ogt double %3, %0
+  %4 = fcmp olt double %0, %3
   %5 = select i1 %4, double %0, double %3
   %6 = fcmp oeq double %5, 0.000000e+00
   ret i1 %6
@@ -17,7 +17,7 @@ entry:
 define i1 @func0000000000000043(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
-  %4 = fcmp olt double %3, %0
+  %4 = fcmp ogt double %0, %3
   %5 = select i1 %4, double %0, double %3
   %6 = fcmp ult double %5, 0.000000e+00
   ret i1 %6
@@ -29,7 +29,7 @@ entry:
 define i1 @func0000000000000022(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
-  %4 = fcmp ogt double %3, %0
+  %4 = fcmp olt double %0, %3
   %5 = select i1 %4, double %0, double %3
   %6 = fcmp olt double %5, 1.000000e-01
   ret i1 %6
@@ -41,7 +41,7 @@ entry:
 define i1 @func000000000000004c(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
-  %4 = fcmp olt double %3, %0
+  %4 = fcmp ogt double %0, %3
   %5 = select i1 %4, double %0, double %3
   %6 = fcmp oge double %5, 5.000000e-01
   ret i1 %6
@@ -54,7 +54,7 @@ entry:
 define i1 @func0000000000000024(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
-  %4 = fcmp ogt double %3, %0
+  %4 = fcmp olt double %0, %3
   %5 = select i1 %4, double %0, double %3
   %6 = fcmp ogt double %5, 0.000000e+00
   ret i1 %6
@@ -67,7 +67,7 @@ entry:
 define i1 @func0000000000000042(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
-  %4 = fcmp olt double %3, %0
+  %4 = fcmp ogt double %0, %3
   %5 = select i1 %4, double %0, double %3
   %6 = fcmp olt double %5, 1.000000e+00
   ret i1 %6
@@ -84,7 +84,7 @@ entry:
 define i1 @func0000000000000044(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
-  %4 = fcmp olt double %3, %0
+  %4 = fcmp ogt double %0, %3
   %5 = select i1 %4, double %0, double %3
   %6 = fcmp ogt double %5, 1.000000e+00
   ret i1 %6

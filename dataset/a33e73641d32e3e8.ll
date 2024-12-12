@@ -8,7 +8,7 @@
 ; llvm/optimized/ASTReaderStmt.cpp.ll
 ; llvm/optimized/X86MCInstLower.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000006f1(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000de1(i32 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 63
   %3 = lshr i64 %2, 6
@@ -22,7 +22,7 @@ entry:
 ; hermes/optimized/APInt.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000006fc(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000dec(i32 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 63
   %3 = lshr i64 %2, 6
@@ -35,7 +35,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/APINotesReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000621(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000c41(i32 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 17179869182
   %3 = lshr i64 %2, 2
@@ -48,7 +48,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/COFFObjectFile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000604(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000c04(i32 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 8589934584
   %3 = lshr i64 %2, 1
@@ -61,7 +61,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/snapshot.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 32767
   %3 = lshr i64 %2, 15
@@ -74,7 +74,7 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000608(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000c08(i32 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 17592186040353
   %3 = lshr i64 %2, 12

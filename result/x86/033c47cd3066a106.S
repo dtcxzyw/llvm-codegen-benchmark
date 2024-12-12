@@ -1,4 +1,4 @@
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000001f8:                   # @func00000000000001f8
 	addb	%dl, %sil
 	addb	%dil, %sil
 	cmpb	$2, %sil
@@ -15,21 +15,27 @@ func000000000000000a:                   # @func000000000000000a
 	addb	%dil, %sil
 	setns	%al
 	retq
-func00000000000000f4:                   # @func00000000000000f4
+func00000000000001f4:                   # @func00000000000001f4
 	addb	%dl, %sil
 	addb	%dil, %sil
 	cmpb	$2, %sil
 	setb	%al
 	retq
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	leal	(%rsi,%rdx), %eax
 	addb	%dil, %al
 	shrb	$7, %al
 	retq
-func00000000000000d6:                   # @func00000000000000d6
+func00000000000001a6:                   # @func00000000000001a6
 	leal	(%rsi,%rdx), %eax
 	addb	%dil, %al
 	shrb	$7, %al
+	retq
+func00000000000001e1:                   # @func00000000000001e1
+	addb	%dl, %sil
+	addb	%dil, %sil
+	cmpb	$1, %sil
+	sete	%al
 	retq
 func0000000000000004:                   # @func0000000000000004
 	addb	%dl, %sil

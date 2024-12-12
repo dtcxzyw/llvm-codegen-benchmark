@@ -3,7 +3,7 @@
 ; openjdk/optimized/ArrayReferenceImpl.ll
 ; openjdk/optimized/ThreadReferenceImpl.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003a6(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000d46(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %0, %2
   %4 = icmp sgt i32 %3, %1
@@ -12,7 +12,7 @@ entry:
   ret i1 %6
 }
 
-; 82 occurrences:
+; 80 occurrences:
 ; lief/optimized/File.cpp.ll
 ; llvm/optimized/Instructions.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -34,8 +34,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -96,7 +94,7 @@ entry:
 ; simdjson/optimized/simdjson.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a6(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000546(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %0, %2
   %4 = icmp sgt i32 %3, %1
@@ -108,7 +106,7 @@ entry:
 ; 1 occurrences:
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002a6(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000946(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, %0
   %4 = icmp sgt i32 %3, %1
@@ -120,7 +118,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/ldebug.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000366(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000cc6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %0, %2
   %4 = icmp slt i32 %3, %1

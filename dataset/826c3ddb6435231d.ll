@@ -1,5 +1,9 @@
 
-; 3 occurrences:
+; 7 occurrences:
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
+; boost/optimized/instantiate_predef_macros.ll
 ; llvm/optimized/TextStub.cpp.ll
 ; openusd/optimized/bufferArray.cpp.ll
 ; rocksdb/optimized/compaction_picker.cc.ll
@@ -14,7 +18,7 @@ entry:
   ret i64 %7
 }
 
-; 86 occurrences:
+; 85 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; cvc5/optimized/didyoumean.cpp.ll
 ; cvc5/optimized/miplib_trick.cpp.ll
@@ -86,7 +90,6 @@ entry:
 ; opencv/optimized/data.cpp.ll
 ; opencv/optimized/system.cpp.ll
 ; openusd/optimized/stencilTable.cpp.ll
-; proj/optimized/io.cpp.ll
 ; quantlib/optimized/gaussiannoncentralchisquaredpolynomial.ll
 ; quantlib/optimized/lossdistribution.ll
 ; quantlib/optimized/multisteppathwisewrapper.ll
@@ -220,6 +223,7 @@ entry:
 
 ; 44 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
+; boost/optimized/work_stealing.ll
 ; casadi/optimized/sparsity.cpp.ll
 ; cmake/optimized/cmCTestMultiProcessHandler.cxx.ll
 ; cmake/optimized/cmCTestSubmitHandler.cxx.ll
@@ -249,7 +253,6 @@ entry:
 ; llvm/optimized/LoopInfo.cpp.ll
 ; llvm/optimized/cc1gen_reproducer_main.cpp.ll
 ; luau/optimized/Frontend.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; nix/optimized/installables.ll
 ; openusd/optimized/authoring.cpp.ll
 ; openusd/optimized/changeManager.cpp.ll

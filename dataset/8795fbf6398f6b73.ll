@@ -1,7 +1,6 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/abcDar.c.ll
-; abc/optimized/abcNtk.c.ll
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/abcRestruct.c.ll
 ; abc/optimized/abcUtil.c.ll
@@ -11,7 +10,7 @@
 define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = xor i64 %2, %0
+  %3 = xor i64 %0, %2
   %4 = xor i64 %3, 1
   ret i64 %4
 }
@@ -24,7 +23,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = xor i64 %2, %0
+  %3 = xor i64 %0, %2
   %4 = xor i64 %3, 8098989879002948979
   ret i64 %4
 }

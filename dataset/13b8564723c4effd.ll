@@ -1,8 +1,28 @@
 
-; 126 occurrences:
+; 142 occurrences:
 ; abc/optimized/giaBalLut.c.ll
 ; abc/optimized/sswConstr.c.ll
 ; arrow/optimized/UriCommon.c.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/benchmark_fstream.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/env.ll
+; boost/optimized/group.ll
+; boost/optimized/pipe.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/test_filebuf.ll
+; boost/optimized/test_fstream.ll
+; boost/optimized/test_fstream_special.ll
+; boost/optimized/test_ifstream.ll
+; boost/optimized/test_ofstream.ll
+; boost/optimized/wargs_cmd.ll
 ; clamav/optimized/bytecode_api.c.ll
 ; clamav/optimized/filtering.c.ll
 ; clamav/optimized/sigtool.c.ll
@@ -30,7 +50,6 @@
 ; icu/optimized/measunit_extra.ll
 ; icu/optimized/tzfmt.ll
 ; imgui/optimized/imgui_demo.cpp.ll
-; libsodium/optimized/librdrand_la-randombytes_internal_random.ll
 ; libsodium/optimized/libsodium_la-codecs.ll
 ; libwebp/optimized/quant_enc.c.ll
 ; libzmq/optimized/socket_poller.cpp.ll
@@ -68,6 +87,7 @@
 ; llvm/optimized/X86InstCombineIntrinsic.cpp.ll
 ; llvm/optimized/X86OptimizeLEAs.cpp.ll
 ; luau/optimized/isocline.c.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; openblas/optimized/dgbbrd.c.ll
 ; openblas/optimized/dtrevc3.c.ll
 ; opencv/optimized/cv2.cpp.ll
@@ -77,7 +97,6 @@
 ; openjdk/optimized/UnixOperatingSystem.ll
 ; openjdk/optimized/arguments.ll
 ; openjdk/optimized/hb-aat-layout.ll
-; openmpi/optimized/name_fns.ll
 ; openmpi/optimized/ompi_rte.ll
 ; openssl/optimized/libcrypto-lib-bio_print.ll
 ; openssl/optimized/libcrypto-lib-bn_lib.ll
@@ -96,13 +115,9 @@
 ; php/optimized/zend_optimizer.ll
 ; postgres/optimized/indexcmds.ll
 ; postgres/optimized/name.ll
-; postgres/optimized/pgmkdirp.ll
-; postgres/optimized/pgmkdirp_shlib.ll
-; postgres/optimized/pgmkdirp_srv.ll
 ; postgres/optimized/pquery.ll
 ; postgres/optimized/vacuum.ll
 ; proxygen/optimized/HPACKEncodeBuffer.cpp.ll
-; qemu/optimized/fsdev_qemu-fsdev-throttle.c.ll
 ; qemu/optimized/migration_dirtyrate.c.ll
 ; qemu/optimized/system_vl.c.ll
 ; redis/optimized/ae.ll
@@ -124,6 +139,7 @@
 ; z3/optimized/nlsat_evaluator.cpp.ll
 ; z3/optimized/reduce_args_simplifier.cpp.ll
 ; z3/optimized/reduce_args_tactic.cpp.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
 ; zstd/optimized/huf_compress.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind

@@ -32,39 +32,47 @@ func0000000000000042:                   # @func0000000000000042
 .LBB3_2:
 	flt.d	a0, fa0, fa1
 	ret
-func000000000000004c:                   # @func000000000000004c
+func0000000000000024:                   # @func0000000000000024
 	andi	a0, a0, 1
 	bnez	a0, .LBB4_2
-	flt.d	a0, fa1, fa0
+	flt.d	a0, fa0, fa1
 	ret
 .LBB4_2:
+	flt.d	a0, fa1, fa0
+	ret
+func000000000000004c:                   # @func000000000000004c
+	andi	a0, a0, 1
+	bnez	a0, .LBB5_2
+	flt.d	a0, fa1, fa0
+	ret
+.LBB5_2:
 	fle.d	a0, fa1, fa0
 	ret
 func000000000000002a:                   # @func000000000000002a
 	andi	a0, a0, 1
-	bnez	a0, .LBB5_2
+	bnez	a0, .LBB6_2
 	flt.d	a0, fa0, fa1
 	ret
-.LBB5_2:
+.LBB6_2:
 	fle.d	a0, fa0, fa1
 	ret
 func00000000000000b3:                   # @func00000000000000b3
 	andi	a0, a0, 1
-	bnez	a0, .LBB6_2
+	bnez	a0, .LBB7_2
 	flt.d	a0, fa1, fa0
 	xori	a0, a0, 1
 	ret
-.LBB6_2:
+.LBB7_2:
 	fle.d	a0, fa1, fa0
 	xori	a0, a0, 1
 	ret
 func00000000000000d5:                   # @func00000000000000d5
 	andi	a0, a0, 1
-	bnez	a0, .LBB7_2
+	bnez	a0, .LBB8_2
 	flt.d	a0, fa0, fa1
 	xori	a0, a0, 1
 	ret
-.LBB7_2:
+.LBB8_2:
 	fle.d	a0, fa0, fa1
 	xori	a0, a0, 1
 	ret

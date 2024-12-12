@@ -50,11 +50,11 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/edge_drawing.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(double %0) #0 {
+define i1 @func0000000000000018(double %0) #0 {
 entry:
   %1 = fadd double %0, 5.000000e-01
   %2 = fptosi double %1 to i32
-  %3 = icmp ugt i32 %2, 1
+  %3 = icmp samesign ugt i32 %2, 1
   ret i1 %3
 }
 

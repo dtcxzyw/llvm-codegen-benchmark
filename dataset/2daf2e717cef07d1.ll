@@ -20,13 +20,14 @@ define i8 @func0000000000000018(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -5
   %3 = icmp ne i64 %2, 0
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = zext i1 %4 to i8
   ret i8 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; llvm/optimized/ODRDiagsEmitter.cpp.ll
+; lvgl/optimized/lv_slider.ll
 ; openspiel/optimized/dark_chess.cc.ll
 ; openspiel/optimized/gin_rummy.cc.ll
 ; openspiel/optimized/kriegspiel.cc.ll

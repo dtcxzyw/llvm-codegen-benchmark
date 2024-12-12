@@ -4,7 +4,7 @@
 ; mitsuba3/optimized/specfilm.cpp.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000041(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; jq/optimized/jv.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000026(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000046(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SymbolizableObjectFile.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000024(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000044(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
@@ -49,7 +49,7 @@ entry:
 ; opencv/optimized/slice_layer.cpp.ll
 ; pocketpy/optimized/pocketpy_c.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000046(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000086(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 2
   %3 = trunc i64 %2 to i32

@@ -1,7 +1,8 @@
 func0000000000000004:                   # @func0000000000000004
-	cmpq	$1, %rsi
-	movl	$3, %eax
-	sbbq	$0, %rax
+	xorl	%eax, %eax
+	testq	%rsi, %rsi
+	sete	%al
+	leaq	1(%rax,%rax), %rax
 	imulq	%rdi, %rax
 	retq
 func0000000000000007:                   # @func0000000000000007

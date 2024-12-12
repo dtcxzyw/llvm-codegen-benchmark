@@ -2,7 +2,7 @@
 	.quad	1013                            # 0x3f5
 func0000000000000000:                   # @func0000000000000000
 	vpaddq	.LCPI0_0(%rip){1to4}, %ymm2, %ymm2
-	vpxor	%ymm1, %ymm2, %ymm1
+	vpxor	%ymm2, %ymm1, %ymm1
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rax
 	vextracti128	$1, %ymm0, %xmm3
@@ -64,7 +64,7 @@ func0000000000000003:                   # @func0000000000000003
 	.quad	2654435769                      # 0x9e3779b9
 func0000000000000001:                   # @func0000000000000001
 	vpaddq	.LCPI2_0(%rip){1to4}, %ymm2, %ymm2
-	vpxor	%ymm1, %ymm2, %ymm1
+	vpxor	%ymm2, %ymm1, %ymm1
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rax
 	vextracti128	$1, %ymm0, %xmm3

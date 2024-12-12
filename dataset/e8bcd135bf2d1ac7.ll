@@ -12,10 +12,8 @@ entry:
   ret ptr %6
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; faiss/optimized/IndexPQ.cpp.ll
-; meshlab/optimized/filter_create.cpp.ll
-; opencv/optimized/facemarkAAM.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001e(ptr %0, i64 %1, i64 %2) #0 {
 entry:

@@ -1,5 +1,5 @@
 
-; 82 occurrences:
+; 83 occurrences:
 ; abc/optimized/abcFunc.c.ll
 ; abc/optimized/abcHieGia.c.ll
 ; abc/optimized/acbUtil.c.ll
@@ -69,6 +69,7 @@
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; openssl/optimized/libssl-lib-quic_channel.ll
 ; openssl/optimized/libssl-shlib-quic_channel.ll
 ; qemu/optimized/target_riscv_debug.c.ll
@@ -87,7 +88,7 @@ define i64 @func000000000000000f(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 22
   %3 = zext nneg i32 %2 to i64
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
@@ -105,7 +106,7 @@ define i64 @func0000000000000009(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 16
   %3 = zext i32 %2 to i64
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
@@ -163,16 +164,17 @@ define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 4
   %3 = zext i32 %2 to i64
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; hermes/optimized/Runtime.cpp.ll
 ; hermes/optimized/RuntimeModule.cpp.ll
 ; jemalloc/optimized/emap.ll
 ; jemalloc/optimized/emap.pic.ll
 ; jemalloc/optimized/emap.sym.ll
+; libwebp/optimized/backward_references_enc.c.ll
 ; linux/optimized/maple_tree.ll
 ; linux/optimized/workqueue.ll
 ; qemu/optimized/hw_display_ati.c.ll
@@ -183,7 +185,7 @@ define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 16
   %3 = zext i32 %2 to i64
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
@@ -195,7 +197,7 @@ define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
@@ -207,7 +209,7 @@ define i64 @func000000000000000e(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 6
   %3 = zext nneg i32 %2 to i64
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
@@ -219,7 +221,7 @@ define i64 @func0000000000000007(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 5
   %3 = zext nneg i32 %2 to i64
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
@@ -231,7 +233,7 @@ define i64 @func0000000000000005(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = zext i32 %2 to i64
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 

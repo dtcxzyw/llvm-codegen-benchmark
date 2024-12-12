@@ -6,7 +6,7 @@ func0000000000000055:                   # @func0000000000000055
 	vpsllq	$3, %ymm1, %ymm3
 	vpsubq	%ymm1, %ymm3, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
-	vpaddq	%ymm0, %ymm2, %ymm0
+	vpaddq	%ymm2, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.quad	-6148914691236517205            # 0xaaaaaaaaaaaaaaab
@@ -17,7 +17,7 @@ func0000000000000044:                   # @func0000000000000044
 	vpmullq	.LCPI1_0(%rip){1to4}, %ymm2, %ymm2
 	vpmullq	.LCPI1_1(%rip){1to4}, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
-	vpaddq	%ymm0, %ymm2, %ymm0
+	vpaddq	%ymm2, %ymm0, %ymm0
 	retq
 .LCPI2_0:
 	.quad	-6148914691236517205            # 0xaaaaaaaaaaaaaaab
@@ -28,7 +28,7 @@ func0000000000000054:                   # @func0000000000000054
 	vpmullq	.LCPI2_0(%rip){1to4}, %ymm2, %ymm2
 	vpmullq	.LCPI2_1(%rip){1to4}, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
-	vpaddq	%ymm0, %ymm2, %ymm0
+	vpaddq	%ymm2, %ymm0, %ymm0
 	retq
 .LCPI3_0:
 	.quad	-60                             # 0xffffffffffffffc4
@@ -76,7 +76,7 @@ func0000000000000015:                   # @func0000000000000015
 	vinserti128	$1, %xmm3, %ymm2, %ymm2
 	vpmullq	.LCPI3_0(%rip){1to4}, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
-	vpaddq	%ymm0, %ymm2, %ymm0
+	vpaddq	%ymm2, %ymm0, %ymm0
 	retq
 .LCPI4_0:
 	.quad	146097                          # 0x23ab1
@@ -116,7 +116,7 @@ func0000000000000010:                   # @func0000000000000010
 	vinserti128	$1, %xmm3, %ymm2, %ymm2
 	vpmullq	.LCPI4_0(%rip){1to4}, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
-	vpaddq	%ymm0, %ymm2, %ymm0
+	vpaddq	%ymm2, %ymm0, %ymm0
 	retq
 .LCPI5_0:
 	.quad	-365                            # 0xfffffffffffffe93
@@ -164,7 +164,7 @@ func0000000000000000:                   # @func0000000000000000
 	vinserti128	$1, %xmm3, %ymm2, %ymm2
 	vpmullq	.LCPI5_0(%rip){1to4}, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
-	vpaddq	%ymm0, %ymm2, %ymm0
+	vpaddq	%ymm2, %ymm0, %ymm0
 	retq
 .LCPI6_0:
 	.quad	-3689348814741910323            # 0xcccccccccccccccd
@@ -215,5 +215,5 @@ func0000000000000004:                   # @func0000000000000004
 	vinserti128	$1, %xmm3, %ymm2, %ymm2
 	vpmullq	.LCPI7_0(%rip){1to4}, %ymm1, %ymm1
 	vpaddq	%ymm1, %ymm0, %ymm0
-	vpaddq	%ymm0, %ymm2, %ymm0
+	vpaddq	%ymm2, %ymm0, %ymm0
 	retq

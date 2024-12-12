@@ -6,7 +6,7 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	$55296, %edi                    # imm = 0xD800
 	sete	%al
 	retq
-func0000000000000151:                   # @func0000000000000151
+func00000000000002a1:                   # @func00000000000002a1
 	addl	%esi, %edi
 	testb	$7, %dil
 	sete	%al

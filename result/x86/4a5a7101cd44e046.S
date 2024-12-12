@@ -1,4 +1,4 @@
-func0000000000000148:                   # @func0000000000000148
+func0000000000000288:                   # @func0000000000000288
 	andl	$1, %edx
 	subq	%rdx, %rsi
 	shlq	$6, %rsi
@@ -6,7 +6,7 @@ func0000000000000148:                   # @func0000000000000148
 	shrq	$60, %rsi
 	setne	%al
 	retq
-func000000000000014a:                   # @func000000000000014a
+func000000000000028a:                   # @func000000000000028a
 	andl	$1, %edx
 	subq	%rdx, %rsi
 	shlq	$5, %rsi
@@ -14,7 +14,7 @@ func000000000000014a:                   # @func000000000000014a
 	testq	%rsi, %rsi
 	setg	%al
 	retq
-func0000000000000141:                   # @func0000000000000141
+func0000000000000281:                   # @func0000000000000281
 	andl	$1, %edx
 	subq	%rdx, %rsi
 	shlq	$5, %rsi

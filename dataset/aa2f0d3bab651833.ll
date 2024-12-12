@@ -7,10 +7,10 @@
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000038(ptr %0, i64 %1) #0 {
+define ptr @func000000000000003c(ptr %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 3
-  %3 = getelementptr nusw i8, ptr %0, i64 1660
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 1660
   %4 = getelementptr [768 x i8], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
@@ -29,21 +29,21 @@ entry:
 ; recastnavigation/optimized/NavMeshTesterTool.cpp.ll
 ; stb/optimized/stb_herringbone_wang_tile.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1) #0 {
 entry:
   %2 = mul nuw nsw i64 %1, 3
-  %3 = getelementptr nusw i8, ptr %0, i64 4
-  %4 = getelementptr nusw [147 x float], ptr %3, i64 0, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 4
+  %4 = getelementptr nusw nuw [147 x float], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 
 ; 1 occurrences:
 ; stb/optimized/stb_herringbone_wang_tile.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001e(ptr %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 3
-  %3 = getelementptr nusw i8, ptr %0, i64 6
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 6
   %4 = getelementptr nusw [1 x i8], ptr %3, i64 0, i64 %2
   ret ptr %4
 }

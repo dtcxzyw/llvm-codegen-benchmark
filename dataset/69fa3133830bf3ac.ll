@@ -1,6 +1,7 @@
 
-; 16 occurrences:
-; flac/optimized/window.c.ll
+; 17 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; gromacs/optimized/dispersioncorrection.cpp.ll
 ; meshlab/optimized/apss.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
@@ -20,7 +21,7 @@
 define double @func0000000000000000(double %0, double %1) #0 {
 entry:
   %2 = fdiv double 1.000000e+00, %1
-  %3 = fmul double %2, %0
+  %3 = fmul double %0, %2
   %4 = fmul double %3, %3
   ret double %4
 }

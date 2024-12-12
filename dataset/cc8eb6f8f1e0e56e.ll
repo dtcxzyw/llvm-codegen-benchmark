@@ -1,5 +1,5 @@
 
-; 48 occurrences:
+; 51 occurrences:
 ; assimp/optimized/IFCBoolean.cpp.ll
 ; assimp/optimized/StandardShapes.cpp.ll
 ; assimp/optimized/zip.c.ll
@@ -20,13 +20,12 @@
 ; linux/optimized/exnames.ll
 ; linux/optimized/xdp.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
-; llvm/optimized/CommentLexer.cpp.ll
-; llvm/optimized/CommentParser.cpp.ll
 ; llvm/optimized/ExpandLargeFpConvert.cpp.ll
 ; llvm/optimized/Flang.cpp.ll
 ; llvm/optimized/MCDwarf.cpp.ll
 ; llvm/optimized/MachineInstr.cpp.ll
 ; llvm/optimized/ModuloSchedule.cpp.ll
+; llvm/optimized/NestedNameSpecifier.cpp.ll
 ; llvm/optimized/State.cpp.ll
 ; mitsuba3/optimized/hdrfilm.cpp.ll
 ; oiio/optimized/iffinput.cpp.ll
@@ -47,23 +46,28 @@
 ; wireshark/optimized/packet-ieee80211-radio.c.ll
 ; wireshark/optimized/pcapng.c.ll
 ; wolfssl/optimized/asn.c.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 0, i32 %2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = zext i32 %4 to i64
   ret i64 %5
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; abc/optimized/bmcCexTools.c.ll
 ; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_ops.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll
 ; freetype/optimized/pfr.c.ll
 ; hermes/optimized/CodeBlock.cpp.ll
+; icu/optimized/umutablecptrie.ll
 ; linux/optimized/page_alloc.ll
 ; openjdk/optimized/X11Color.ll
 ; openjdk/optimized/mlib_ImageAffineEdge.ll
@@ -90,7 +94,7 @@ entry:
 define i64 @func0000000000000001(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 0, i32 %2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }
@@ -116,23 +120,22 @@ entry:
 define i64 @func0000000000000005(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 0, i32 %2
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; cmake/optimized/inet.c.ll
 ; libquic/optimized/base64_bio.c.ll
 ; oiio/optimized/ddsinput.cpp.ll
-; redis/optimized/hdr_histogram.ll
 ; sqlite/optimized/sqlite3.ll
 ; z3/optimized/sat_cut_simplifier.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 1, i32 %2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }

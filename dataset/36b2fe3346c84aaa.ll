@@ -25,9 +25,9 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/fretTime.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000062(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %0, %2
+  %3 = icmp samesign ugt i32 %0, %2
   %4 = select i1 %3, i32 %0, i32 %1
   %5 = shl nuw i32 %4, 12
   ret i32 %5

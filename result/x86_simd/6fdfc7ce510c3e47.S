@@ -15,5 +15,5 @@ func000000000000000c:                   # @func000000000000000c
 	vpmovd2m	%xmm1, %k1
 	vpsllq	$2, %ymm2, %ymm1
 	vpbroadcastq	.LCPI1_0(%rip), %ymm1 {%k1} # ymm1 {%k1} = [9223372036854775804,9223372036854775804,9223372036854775804,9223372036854775804]
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq

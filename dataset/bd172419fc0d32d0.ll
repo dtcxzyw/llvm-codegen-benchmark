@@ -1,8 +1,7 @@
 
-%struct.Gia_Obj_t_.2764249 = type <{ i64, i32 }>
+%"class.llvm::MDOperand.3140254" = type { ptr }
 
-; 154 occurrences:
-; abc/optimized/acecCover.c.ll
+; 152 occurrences:
 ; cmake/optimized/divsufsort.c.ll
 ; llvm/optimized/AArch64AsmPrinter.cpp.ll
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
@@ -123,7 +122,6 @@
 ; llvm/optimized/PseudoProbeInserter.cpp.ll
 ; llvm/optimized/PseudoProbePrinter.cpp.ll
 ; llvm/optimized/RISCVAsmPrinter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RemoveRedundantDebugValues.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/SampleContextTracker.cpp.ll
@@ -159,11 +157,11 @@
 ; Function Attrs: nounwind
 define ptr @func000000000000001a(ptr %0, i64 %1) #0 {
 entry:
-  %2 = lshr i64 %1, 32
-  %3 = and i64 %2, 536870911
+  %2 = lshr i64 %1, 2
+  %3 = and i64 %2, 15
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw i8, ptr %0, i64 4224
-  %6 = getelementptr nusw %struct.Gia_Obj_t_.2764249, ptr %5, i64 %4
+  %5 = getelementptr nusw i8, ptr %0, i64 -16
+  %6 = getelementptr nusw %"class.llvm::MDOperand.3140254", ptr %5, i64 %4
   ret ptr %6
 }
 

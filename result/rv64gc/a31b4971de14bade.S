@@ -6,14 +6,6 @@ func00000000000001bf:                   # @func00000000000001bf
 	add	a0, a0, a1
 	mulw	a0, a0, a2
 	ret
-func00000000000001bd:                   # @func00000000000001bd
-	add	a1, a1, a2
-	li	a2, 85
-	mul	a1, a1, a2
-	andi	a0, a0, 255
-	add	a0, a0, a1
-	mulw	a0, a0, a2
-	ret
 func00000000000000d5:                   # @func00000000000000d5
 	add	a1, a1, a2
 	li	a2, 10

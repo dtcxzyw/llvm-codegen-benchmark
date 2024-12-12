@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 13 occurrences:
 ; ceres/optimized/cgnr_solver.cc.ll
 ; ceres/optimized/iterative_schur_complement_solver.cc.ll
 ; ceres/optimized/power_series_expansion_preconditioner.cc.ll
@@ -11,8 +11,10 @@
 ; typst-rs/optimized/4p46tkw2iv8zjgza.ll
 ; typst-rs/optimized/53ug9lwflkq7ucu8.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000101(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %0, %1
   %.mask = and i64 %2, 4611686018427387903
@@ -20,7 +22,7 @@ entry:
   ret i1 %3
 }
 
-; 7 occurrences:
+; 9 occurrences:
 ; graphviz/optimized/nodelist.c.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; llama.cpp/optimized/common.cpp.ll
@@ -28,6 +30,8 @@ entry:
 ; pbrt-v4/optimized/paramdict.cpp.ll
 ; velox/optimized/MallocAllocator.cpp.ll
 ; velox/optimized/MmapAllocator.cpp.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
@@ -41,7 +45,7 @@ entry:
 ; graphviz/optimized/gvdevice_kitty.c.ll
 ; openspiel/optimized/pathfinding.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000181(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %0, %1
   %.mask = and i64 %2, 4294967295
@@ -54,7 +58,7 @@ entry:
 ; opencv/optimized/resize.cpp.ll
 ; postgres/optimized/pg_locale.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, %1
   %3 = trunc nsw i64 %2 to i63
@@ -65,7 +69,7 @@ entry:
 ; 1 occurrences:
 ; graphviz/optimized/gvdevice_kitty.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000188(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %0, %1
   %3 = trunc i64 %2 to i62

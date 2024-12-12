@@ -7,7 +7,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	$125, %eax
 	setae	%al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	testb	$1, %sil
 	movl	$1, %eax
 	cmovneq	%rdx, %rax

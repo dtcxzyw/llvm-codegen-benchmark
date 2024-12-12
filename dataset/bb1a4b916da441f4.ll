@@ -1,5 +1,5 @@
 
-; 130 occurrences:
+; 128 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/bacReadBlif.c.ll
 ; abc/optimized/bacReadVer.c.ll
@@ -53,6 +53,7 @@
 ; lightgbm/optimized/tree.cpp.ll
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
 ; llvm/optimized/ConstantFolding.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_manipulators.cpp.ll
@@ -73,15 +74,12 @@
 ; openblas/optimized/dgedmdq.c.ll
 ; openblas/optimized/dgees.c.ll
 ; openblas/optimized/dgeesx.c.ll
-; openblas/optimized/dgesdd.c.ll
 ; openblas/optimized/dgesvd.c.ll
 ; openblas/optimized/dgesvdq.c.ll
-; openblas/optimized/dggbak.c.ll
 ; openblas/optimized/dgges3.c.ll
 ; openblas/optimized/dggev3.c.ll
 ; openblas/optimized/dlaed0.c.ll
 ; openblas/optimized/dlaeda.c.ll
-; openblas/optimized/dorcsd.c.ll
 ; openblas/optimized/dorcsd2by1.c.ll
 ; openblas/optimized/dstedc.c.ll
 ; opencv/optimized/aruco_detector.cpp.ll
@@ -134,11 +132,11 @@
 define i32 @func0000000000000001(i32 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   ret i32 %3
 }
 
-; 58 occurrences:
+; 57 occurrences:
 ; abc/optimized/bacCom.c.ll
 ; abc/optimized/cbaCom.c.ll
 ; abc/optimized/giaCSat3.c.ll
@@ -162,7 +160,6 @@ entry:
 ; lodepng/optimized/pngdetail.cpp.ll
 ; meshlab/optimized/filter_ao.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll
 ; meshlab/optimized/tfhandle.cpp.ll
 ; minetest/optimized/camera.cpp.ll
@@ -201,7 +198,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   ret i32 %3
 }
 
@@ -216,7 +213,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   ret i32 %3
 }
 

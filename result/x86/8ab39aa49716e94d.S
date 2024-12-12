@@ -7,8 +7,8 @@ func000000000000001f:                   # @func000000000000001f
 func0000000000000000:                   # @func0000000000000000
 	movzwl	%dx, %eax
 	testb	$1, %dil
-	leal	33(%rax,%rsi), %ecx
-	leal	11(%rax,%rsi), %eax
+	leal	33(%rsi,%rax), %ecx
+	leal	11(%rsi,%rax), %eax
 	cmovnel	%ecx, %eax
 	retq
 func000000000000000d:                   # @func000000000000000d

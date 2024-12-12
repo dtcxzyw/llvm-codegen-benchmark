@@ -1,5 +1,5 @@
 
-; 32 occurrences:
+; 33 occurrences:
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; coreutils-rs/optimized/4kgrj997pbefuahr.ll
 ; coreutils-rs/optimized/4xe0oi8s0z5yh0ce.ll
@@ -32,17 +32,18 @@
 ; wasmtime-rs/optimized/4fstrj457bwkmu8y.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
 ; wasmtime-rs/optimized/jcy3ulzaiykp2rl.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000235(i64 %0, i64 %1) #0 {
+define i1 @func0000000000001475(i64 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ult i64 %1, %0
+  %2 = icmp samesign ult i64 %1, %0
   %3 = zext i1 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
-  %5 = icmp ule i64 %4, %0
+  %4 = add nuw nsw i64 %1, %3
+  %5 = icmp samesign ule i64 %4, %0
   ret i1 %5
 }
 
-; 67 occurrences:
+; 70 occurrences:
 ; actix-rs/optimized/2wg1z1eatrkafji9.ll
 ; actix-rs/optimized/36qa1hw006t0trtl.ll
 ; actix-rs/optimized/520p8qtoxfmkvgyc.ll
@@ -110,13 +111,55 @@ entry:
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; wasmtime-rs/optimized/45190zkycf5izngt.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/5wz01y896jxljxzjbwo9cjiak.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000225(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000445(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %1, %0
   %3 = zext i1 %2 to i64
-  %4 = add nuw i64 %3, %1
+  %4 = add nuw i64 %1, %3
   %5 = icmp ule i64 %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000468(i64 %0, i64 %1) #0 {
+entry:
+  %2 = icmp ult i64 %1, %0
+  %3 = zext i1 %2 to i64
+  %4 = add nuw nsw i64 %1, %3
+  %5 = icmp ugt i64 %4, %0
+  ret i1 %5
+}
+
+; 3 occurrences:
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000404(i64 %0, i64 %1) #0 {
+entry:
+  %2 = icmp ult i64 %1, %0
+  %3 = zext i1 %2 to i64
+  %4 = add i64 %1, %3
+  %5 = icmp ult i64 %4, %0
+  ret i1 %5
+}
+
+; 2 occurrences:
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000409(i64 %0, i64 %1) #0 {
+entry:
+  %2 = icmp ult i64 %1, %0
+  %3 = zext i1 %2 to i64
+  %4 = add i64 %1, %3
+  %5 = icmp uge i64 %4, %0
   ret i1 %5
 }
 

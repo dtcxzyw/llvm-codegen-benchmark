@@ -1,11 +1,10 @@
 
-; 59 occurrences:
+; 58 occurrences:
 ; abc/optimized/bmcFx.c.ll
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; abc/optimized/mpmPre.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
-; darktable/optimized/introspection_flip.c.ll
 ; git/optimized/list-objects-filter.ll
 ; git/optimized/unpack-trees.ll
 ; icu/optimized/uspoof.ll
@@ -45,7 +44,7 @@
 ; miniaudio/optimized/unity.c.ll
 ; oniguruma/optimized/regcomp.ll
 ; opencv/optimized/loadsave.cpp.ll
-; openexr/optimized/IexMathFpu.cpp.ll
+; openjdk/optimized/c1_LIRGenerator.ll
 ; openjdk/optimized/classPrinter.ll
 ; openssl/optimized/openssl-bin-smime.ll
 ; php/optimized/ir_emit.ll
@@ -75,7 +74,7 @@ entry:
 ; libquic/optimized/dtoa.cc.ll
 ; php/optimized/zend_strtod.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2146435072
   %4 = icmp eq i32 %3, 0

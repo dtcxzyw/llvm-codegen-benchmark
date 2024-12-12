@@ -8,10 +8,6 @@ func0000000000000004:                   # @func0000000000000004
 	orq	%rdi, %rax
 	shlxq	%rsi, %rax, %rax
 	retq
-func0000000000000007:                   # @func0000000000000007
-	orq	$1024, %rdi                     # imm = 0x400
-	shlxq	%rsi, %rdi, %rax
-	retq
 func0000000000000000:                   # @func0000000000000000
 	orq	$1, %rdi
 	andb	$7, %sil

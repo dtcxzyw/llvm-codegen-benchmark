@@ -1,6 +1,5 @@
 
-; 2 occurrences:
-; lz4/optimized/lz4.c.ll
+; 1 occurrences:
 ; ruby/optimized/strftime.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(ptr %0, i64 %1) #0 {
@@ -11,11 +10,10 @@ entry:
   ret i64 %4
 }
 
-; 80 occurrences:
+; 78 occurrences:
 ; abc/optimized/bdcDec.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; abseil-cpp/optimized/low_level_alloc.cc.ll
-; llvm/optimized/Stmt.cpp.ll
 ; lz4/optimized/lz4.c.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
@@ -91,11 +89,22 @@ entry:
 ; oiio/optimized/zfile.cpp.ll
 ; openusd/optimized/lz4.cpp.ll
 ; php/optimized/state.ll
-; php/optimized/zend_call_stack.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
   %2 = getelementptr nusw i8, ptr %0, i64 %1
+  %3 = ptrtoint ptr %2 to i64
+  %4 = xor i64 %3, -1
+  ret i64 %4
+}
+
+; 2 occurrences:
+; boost/optimized/static_string.ll
+; llvm/optimized/Stmt.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(ptr %0, i64 %1) #0 {
+entry:
+  %2 = getelementptr nusw nuw i8, ptr %0, i64 %1
   %3 = ptrtoint ptr %2 to i64
   %4 = xor i64 %3, -1
   ret i64 %4

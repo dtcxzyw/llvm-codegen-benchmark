@@ -10,7 +10,7 @@ entry:
   ret i64 %4
 }
 
-; 109 occurrences:
+; 108 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -25,7 +25,6 @@ entry:
 ; libjpeg-turbo/optimized/jchuff.c.ll
 ; linux/optimized/intel_cx0_phy.ll
 ; linux/optimized/sd.ll
-; linux/optimized/vclock_gettime.ll
 ; linux/optimized/zstd_decompress_block.ll
 ; llvm/optimized/ScaledNumber.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll

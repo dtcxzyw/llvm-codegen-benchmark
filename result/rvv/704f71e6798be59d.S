@@ -3,7 +3,7 @@ func0000000000000508:                   # @func0000000000000508
 	vmslt.vv	v0, v12, v10
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	vmv.v.i	v10, -1
 	vsll.vv	v8, v10, v8
 	vnot.v	v8, v8
@@ -13,7 +13,7 @@ func0000000000000519:                   # @func0000000000000519
 	vmslt.vv	v0, v12, v10
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	vmv.v.i	v10, -1
 	vsll.vv	v8, v10, v8
 	vnot.v	v8, v8
@@ -23,7 +23,7 @@ func000000000000051d:                   # @func000000000000051d
 	vmslt.vv	v0, v12, v10
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	vmv.v.i	v10, -1
 	vsll.vv	v8, v10, v8
 	vnot.v	v8, v8
@@ -33,7 +33,7 @@ func000000000000050d:                   # @func000000000000050d
 	vmslt.vv	v0, v12, v10
 	vmv.v.i	v10, 0
 	vmerge.vim	v10, v10, 1, v0
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	vmv.v.i	v10, -1
 	vsll.vv	v8, v10, v8
 	vnot.v	v8, v8

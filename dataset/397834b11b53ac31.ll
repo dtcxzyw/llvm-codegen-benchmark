@@ -6,7 +6,7 @@
 ; opencv/optimized/find_ellipses.cpp.ll
 ; openjdk/optimized/parse2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000208(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = lshr exact i64 %2, 2
@@ -35,7 +35,7 @@ entry:
 ; verilator/optimized/V3TraceDecl.cpp.ll
 ; xgboost/optimized/column_matrix.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000201(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = lshr exact i64 %2, 3
@@ -80,7 +80,7 @@ entry:
 ; yosys/optimized/simplify.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000204(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = lshr exact i64 %2, 4
@@ -128,7 +128,7 @@ entry:
 ; velox/optimized/MemoryAllocator.cpp.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000020a(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = lshr exact i64 %2, 3
@@ -166,7 +166,7 @@ entry:
 ; sentencepiece/optimized/unigram_model.cc.ll
 ; velox/optimized/SparseHll.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000106(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000206(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = lshr exact i64 %2, 3
@@ -181,19 +181,20 @@ entry:
 ; gromacs/optimized/shake.cpp.ll
 ; minetest/optimized/mesh_compare.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000114(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000234(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = lshr exact i64 %2, 1
   %4 = trunc i64 %3 to i32
   %5 = add nsw i32 %4, -3
-  %6 = icmp ult i32 %5, 3
+  %6 = icmp samesign ult i32 %5, 3
   ret i1 %6
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; gromacs/optimized/colvarbias_meta.cpp.ll
 ; gromacs/optimized/colvargrid.cpp.ll
+; llvm/optimized/CodeGenDAGPatterns.cpp.ll
 ; qemu/optimized/sdhci-cmd.c.ll
 ; sentencepiece/optimized/unigram_model.cc.ll
 ; Function Attrs: nounwind
@@ -223,7 +224,7 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000012a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000024a(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = lshr exact i64 %2, 2
@@ -240,7 +241,7 @@ entry:
 ; glslang/optimized/hlslGrammar.cpp.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000118(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000228(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = lshr exact i64 %2, 3
@@ -248,6 +249,18 @@ entry:
   %5 = add i32 %4, -129
   %6 = icmp ult i32 %5, -128
   ret i1 %6
+}
+
+; 1 occurrences:
+; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000241(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub i64 %0, %1
+  %3 = lshr exact i64 %2, 2
+  %4 = trunc i64 %3 to i32
+  %5 = icmp eq i32 %4, -2
+  ret i1 %5
 }
 
 ; 7 occurrences:
@@ -259,13 +272,27 @@ entry:
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
 ; zxing/optimized/ReedSolomonDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000221(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = lshr exact i64 %2, 2
   %4 = trunc i64 %3 to i32
   %5 = icmp eq i32 %4, 1
   ret i1 %5
+}
+
+; 2 occurrences:
+; cmake/optimized/divsufsort.c.ll
+; zstd/optimized/divsufsort.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000214(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub i64 %0, %1
+  %3 = lshr exact i64 %2, 2
+  %4 = trunc i64 %3 to i32
+  %5 = add i32 %4, 1
+  %6 = icmp samesign ult i32 %5, 256
+  ret i1 %6
 }
 
 ; 1 occurrences:
@@ -284,7 +311,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/lvm.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000022c(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = lshr exact i64 %2, 2

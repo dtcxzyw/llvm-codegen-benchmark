@@ -17,6 +17,18 @@ entry:
   ret i32 %5
 }
 
+; 1 occurrences:
+; lvgl/optimized/lv_grid.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = add i32 %2, -4
+  %4 = icmp ult i32 %3, 3
+  %5 = select i1 %4, i32 0, i32 %0
+  ret i32 %5
+}
+
 ; 2 occurrences:
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; linux/optimized/fib_trie.ll

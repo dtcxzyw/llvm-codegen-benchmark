@@ -1,12 +1,12 @@
 func000000000000000e:                   # @func000000000000000e
 	vpsrld	$3, %ymm2, %ymm2
-	vpternlogd	$254, %ymm1, %ymm0, %ymm2 # ymm2 = ymm2 | ymm0 | ymm1
+	vpternlogd	$254, %ymm0, %ymm1, %ymm2 # ymm2 = ymm2 | ymm1 | ymm0
 	vpmovdw	%ymm2, %xmm0
 	vzeroupper
 	retq
 func0000000000000002:                   # @func0000000000000002
 	vpsrld	$3, %ymm2, %ymm2
-	vpternlogd	$254, %ymm1, %ymm0, %ymm2 # ymm2 = ymm2 | ymm0 | ymm1
+	vpternlogd	$254, %ymm0, %ymm1, %ymm2 # ymm2 = ymm2 | ymm1 | ymm0
 	vpmovdw	%ymm2, %xmm0
 	vzeroupper
 	retq

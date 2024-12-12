@@ -1,8 +1,7 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; cmake/optimized/archive_entry_link_resolver.c.ll
 ; cmake/optimized/archive_read_set_format.c.ll
-; cmake/optimized/archive_read_support_format_by_code.c.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000000e(i32 %0) #0 {
 entry:

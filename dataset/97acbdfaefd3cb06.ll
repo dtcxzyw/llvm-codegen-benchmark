@@ -17,9 +17,10 @@ entry:
   ret i16 %4
 }
 
-; 22 occurrences:
+; 27 occurrences:
 ; git/optimized/skipping.ll
 ; hermes/optimized/RegexParser.cpp.ll
+; lvgl/optimized/lv_draw_arc.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/game.cpp.ll
 ; minetest/optimized/mg_decoration.cpp.ll
@@ -29,6 +30,10 @@ entry:
 ; recastnavigation/optimized/DetourTileCache.cpp.ll
 ; slurm/optimized/net.ll
 ; sqlite/optimized/sqlite3.ll
+; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
+; turborepo-rs/optimized/c500hnb79kuh9h85697qija6o.ll
 ; typst-rs/optimized/1aflftgqyuracvze.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll

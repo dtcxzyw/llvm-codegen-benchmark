@@ -13,7 +13,7 @@ entry:
   ret i64 %4
 }
 
-; 26 occurrences:
+; 25 occurrences:
 ; cmake/optimized/cmCTestCurl.cxx.ll
 ; cmake/optimized/cmCTestSubmitHandler.cxx.ll
 ; cmake/optimized/cmFileCommand.cxx.ll
@@ -36,7 +36,6 @@ entry:
 ; opencv/optimized/proposal_layer.cpp.ll
 ; opencv/optimized/tldEnsembleClassifier.cpp.ll
 ; opencv/optimized/transientareassegmentationmodule.cpp.ll
-; quantlib/optimized/levenbergmarquardt.ll
 ; spike/optimized/c_mul.ll
 ; spike/optimized/mul.ll
 ; spike/optimized/mulw.ll
@@ -45,7 +44,7 @@ define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = mul i64 %2, %0
-  %4 = ashr exact i64 %3, 29
+  %4 = ashr exact i64 %3, 32
   ret i64 %4
 }
 

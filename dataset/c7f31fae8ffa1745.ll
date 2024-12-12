@@ -1,5 +1,5 @@
 
-; 209 occurrences:
+; 216 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; abseil-cpp/optimized/parse.cc.ll
@@ -8,6 +8,14 @@
 ; arrow/optimized/key_value_metadata.cc.ll
 ; arrow/optimized/registry.cc.ll
 ; arrow/optimized/tz.cpp.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/default_sink.ll
+; boost/optimized/formatter_parser.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/init_from_settings.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/test_system.ll
 ; casadi/optimized/mx_function.cpp.ll
 ; casadi/optimized/sx_function.cpp.ll
 ; cmake/optimized/cmAuxSourceDirectoryCommand.cxx.ll
@@ -141,7 +149,6 @@
 ; openusd/optimized/sdffilter.cpp.ll
 ; openusd/optimized/textFileFormat.tab.cpp.ll
 ; openusd/optimized/textParserHelpers.cpp.ll
-; proj/optimized/io.cpp.ll
 ; protobuf/optimized/helpers.cc.ll
 ; protobuf/optimized/message_field.cc.ll
 ; protobuf/optimized/struct.pb.cc.ll
@@ -242,7 +249,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/snapmgr.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000fa(i64 %0, i32 %1, i64 %2) #0 {
+define i64 @func00000000000001ea(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 2
   %4 = add nuw nsw i64 %3, 120

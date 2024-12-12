@@ -15,7 +15,7 @@ define float @func0000000000000001(float %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, float 0.000000e+00, float -1.280000e+02
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   ret float %4
 }
 

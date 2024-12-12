@@ -1,5 +1,6 @@
 
-; 172 occurrences:
+; 173 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -173,12 +174,12 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000604(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000c04(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = add i64 %4, %1
-  %6 = icmp ugt i64 %5, %0
+  %5 = add i64 %1, %4
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 
@@ -188,36 +189,36 @@ entry:
 ; flatbuffers/optimized/idl_gen_java.cpp.ll
 ; flatbuffers/optimized/idl_gen_python.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000101(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 17
   %4 = zext i1 %3 to i64
-  %5 = add i64 %4, %1
-  %6 = icmp eq i64 %5, %0
+  %5 = add i64 %1, %4
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; rust-analyzer-rs/optimized/lvm5mow7j40zynh.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000234(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000001464(i64 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 17
+  %3 = icmp samesign ult i32 %2, 17
   %4 = zext i1 %3 to i64
-  %5 = add nuw nsw i64 %4, %1
-  %6 = icmp ugt i64 %5, %0
+  %5 = add nuw nsw i64 %1, %4
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; clamav/optimized/unzip.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000601(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000c01(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 27
   %4 = zext i1 %3 to i64
-  %5 = add i64 %4, %1
-  %6 = icmp eq i64 %5, %0
+  %5 = add i64 %1, %4
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 

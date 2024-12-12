@@ -1,35 +1,25 @@
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
-	mla	v1.4s, v3.4s, v5.4s
-	mla	v0.4s, v2.4s, v4.4s
-	uzp1	v0.8h, v0.8h, v1.8h
+	madd	w0, w1, w2, w0
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	mla	v1.4s, v3.4s, v5.4s
-	mla	v0.4s, v2.4s, v4.4s
-	uzp1	v0.8h, v0.8h, v1.8h
+	madd	w0, w1, w2, w0
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	mla	v1.4s, v3.4s, v5.4s
-	mla	v0.4s, v2.4s, v4.4s
-	uzp1	v0.8h, v0.8h, v1.8h
+	madd	w0, w1, w2, w0
 	ret
                                         // -- End function
 func000000000000001c:                   // @func000000000000001c
 // %bb.0:                               // %entry
-	mla	v1.4s, v3.4s, v5.4s
-	mla	v0.4s, v2.4s, v4.4s
-	uzp1	v0.8h, v0.8h, v1.8h
+	madd	w0, w1, w2, w0
 	ret
                                         // -- End function
 func000000000000003e:                   // @func000000000000003e
 // %bb.0:                               // %entry
-	mla	v1.4s, v3.4s, v5.4s
-	mla	v0.4s, v2.4s, v4.4s
-	uzp1	v0.8h, v0.8h, v1.8h
+	madd	w0, w1, w2, w0
 	ret
                                         // -- End function

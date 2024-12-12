@@ -36,7 +36,7 @@ func0000000000000009:                   # @func0000000000000009
 	vpcmpnltw	%xmm3, %xmm1, %k1
 	vpbroadcastd	.LCPI3_0(%rip), %ymm1   # ymm1 = [1,1,1,1,1,1,1,1]
 	vpsllvd	%ymm2, %ymm1, %ymm1 {%k1}
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI4_0:
 	.long	1                               # 0x1

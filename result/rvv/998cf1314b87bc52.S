@@ -1,4 +1,4 @@
-func0000000000000102:                   # @func0000000000000102
+func0000000000000202:                   # @func0000000000000202
 	li	a0, 528
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0
@@ -7,15 +7,6 @@ func0000000000000102:                   # @func0000000000000102
 	vmseq.vx	v12, v10, a0
 	vmfeq.vf	v10, v8, fa5
 	vmor.mm	v0, v12, v10
-	ret
-func0000000000000162:                   # @func0000000000000162
-	li	a0, 32
-	fmv.w.x	fa5, zero
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vx	v10, v10, a0
-	vmseq.vi	v12, v10, 0
-	vmfgt.vf	v10, v8, fa5
-	vmorn.mm	v0, v12, v10
 	ret
 func0000000000000024:                   # @func0000000000000024
 	li	a0, 496
@@ -27,7 +18,7 @@ func0000000000000024:                   # @func0000000000000024
 	vmflt.vf	v10, v8, fa5
 	vmor.mm	v0, v10, v12
 	ret
-func0000000000000042:                   # @func0000000000000042
+func0000000000000082:                   # @func0000000000000082
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vi	v10, v10, -3
 	fli.s	fa5, 1.0

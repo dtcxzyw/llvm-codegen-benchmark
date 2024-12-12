@@ -1,5 +1,5 @@
 
-; 51 occurrences:
+; 52 occurrences:
 ; abc/optimized/abcStrash.c.ll
 ; abc/optimized/aigPart.c.ll
 ; abc/optimized/aigRepr.c.ll
@@ -45,6 +45,7 @@
 ; llvm/optimized/SemaObjCProperty.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; llvm/optimized/Store.cpp.ll
+; lvgl/optimized/lv_string_builtin.ll
 ; openjdk/optimized/icache.ll
 ; openjdk/optimized/psParallelCompact.ll
 ; wolfssl/optimized/aes.c.ll
@@ -55,7 +56,7 @@
 define i1 @func0000000000000001(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = xor i64 %2, %0
+  %3 = xor i64 %0, %2
   %4 = icmp ult i64 %3, 16
   ret i1 %4
 }
@@ -81,7 +82,7 @@ entry:
 define i1 @func000000000000000c(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = xor i64 %2, %0
+  %3 = xor i64 %0, %2
   %4 = icmp ugt i64 %3, 3
   ret i1 %4
 }

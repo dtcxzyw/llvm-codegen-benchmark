@@ -1,5 +1,5 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; openjdk/optimized/sharedRuntimeTrig.ll
 ; openusd/optimized/quatd.cpp.ll
 ; openusd/optimized/quaternion.cpp.ll
@@ -7,6 +7,7 @@
 ; openusd/optimized/quath.cpp.ll
 ; postgres/optimized/float.ll
 ; quantlib/optimized/bivariatenormaldistribution.ll
+; quantlib/optimized/perturbativebarrieroptionengine.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(i1 %0, double %1) #0 {
 entry:

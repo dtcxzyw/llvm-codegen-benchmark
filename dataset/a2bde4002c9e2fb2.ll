@@ -5,7 +5,7 @@
 ; llvm/optimized/Decl.cpp.ll
 ; llvm/optimized/ModuleSummaryAnalysis.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014c(i64 %0, i32 %1) #0 {
+define i1 @func000000000000048c(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
   %3 = add nsw i32 %2, -1

@@ -1,7 +1,6 @@
 
-; 14 occurrences:
+; 13 occurrences:
 ; clamav/optimized/asn1.c.ll
-; cmake/optimized/nghttp2_hd.c.ll
 ; hyperscan/optimized/fdr_compile.cpp.ll
 ; libquic/optimized/s3_srvr.c.ll
 ; libquic/optimized/tls_cbc.c.ll
@@ -18,7 +17,7 @@
 define i8 @func0000000000000000(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = select i1 %1, i8 %2, i8 -1
-  %4 = and i8 %3, %0
+  %4 = and i8 %0, %3
   ret i8 %4
 }
 

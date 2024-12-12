@@ -17,5 +17,5 @@ func0000000000000002:                   # @func0000000000000002
 	addi	a0, a0, 23
 	vand.vx	v10, v10, a0
 	vor.vv	v10, v10, v12
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret

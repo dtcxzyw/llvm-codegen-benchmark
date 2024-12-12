@@ -84,31 +84,48 @@ func0000000000000022:                   # @func0000000000000022
 .LBB8_2:                                # %entry
 	flt.s	a0, fa0, fa5
 	ret
-func0000000000000044:                   # @func0000000000000044
+func000000000000002c:                   # @func000000000000002c
 	fmv.w.x	fa5, zero
-	flt.s	a0, fa5, fa2
+	flt.s	a0, fa2, fa5
 	bnez	a0, .LBB9_2
 	fmv.s	fa0, fa1
 .LBB9_2:                                # %entry
+	fle.s	a0, fa5, fa0
+	ret
+func0000000000000044:                   # @func0000000000000044
+	fmv.w.x	fa5, zero
+	flt.s	a0, fa5, fa2
+	bnez	a0, .LBB10_2
+	fmv.s	fa0, fa1
+.LBB10_2:                               # %entry
 	fli.s	fa5, 1.0
 	flt.s	a0, fa5, fa0
 	ret
 func0000000000000023:                   # @func0000000000000023
 	fmv.w.x	fa5, zero
 	flt.s	a0, fa2, fa5
-	bnez	a0, .LBB10_2
+	bnez	a0, .LBB11_2
 	fmv.s	fa0, fa1
-.LBB10_2:                               # %entry
+.LBB11_2:                               # %entry
 	fle.s	a0, fa5, fa0
+	xori	a0, a0, 1
+	ret
+func000000000000003b:                   # @func000000000000003b
+	fmv.w.x	fa5, zero
+	fle.s	a0, fa5, fa2
+	beqz	a0, .LBB12_2
+	fmv.s	fa0, fa1
+.LBB12_2:                               # %entry
+	flt.s	a0, fa5, fa0
 	xori	a0, a0, 1
 	ret
 func0000000000000024:                   # @func0000000000000024
 	lui	a0, 212992
 	fmv.w.x	fa5, a0
 	flt.s	a0, fa2, fa5
-	bnez	a0, .LBB11_2
+	bnez	a0, .LBB13_2
 	fmv.s	fa0, fa1
-.LBB11_2:                               # %entry
+.LBB13_2:                               # %entry
 	fli.s	fa5, 0.75
 	flt.s	a0, fa5, fa0
 	ret

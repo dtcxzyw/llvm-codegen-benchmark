@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; faiss/optimized/pq4_fast_scan.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000034(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 8
   %.not.not = icmp eq i64 %2, 0

@@ -5,8 +5,8 @@
 define i1 @func000000000000000a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 17
-  %4 = icmp uge i32 %3, %1
-  %5 = or i1 %4, %0
+  %4 = icmp ule i32 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -17,7 +17,7 @@ entry:
 define i1 @func0000000000000002(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 8
-  %4 = icmp eq i32 %3, %1
+  %4 = icmp eq i32 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }

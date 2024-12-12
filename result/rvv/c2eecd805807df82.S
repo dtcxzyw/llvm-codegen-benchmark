@@ -32,7 +32,7 @@ func0000000000000025:                   # @func0000000000000025
 	li	a0, 70
 	vadd.vx	v8, v8, a0
 	ret
-func0000000000000105:                   # @func0000000000000105
+func0000000000000305:                   # @func0000000000000305
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vmsgtu.vi	v0, v10, 1
 	vsetvli	zero, zero, e32, m1, ta, ma

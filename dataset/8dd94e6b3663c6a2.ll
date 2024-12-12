@@ -1,5 +1,5 @@
 
-; 40 occurrences:
+; 38 occurrences:
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; darktable/optimized/introspection_temperature.c.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
@@ -17,7 +17,6 @@
 ; folly/optimized/IOThreadPoolDeadlockDetectorObserver.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/LogCategory.cpp.ll
-; folly/optimized/LoggerDB.cpp.ll
 ; folly/optimized/ManualTimekeeper.cpp.ll
 ; folly/optimized/MaxConcurrentRateLimiter.cpp.ll
 ; folly/optimized/ObserverManager.cpp.ll
@@ -39,9 +38,8 @@
 ; folly/optimized/Zstd.cpp.ll
 ; minetest/optimized/png.cpp.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
-; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = sub nsw i64 %2, %0
@@ -58,7 +56,7 @@ entry:
 ; darktable/optimized/introspection_rgbcurve.c.ll
 ; darktable/optimized/introspection_tonecurve.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = sub nsw i64 %2, %0
@@ -83,7 +81,7 @@ entry:
 ; hyperscan/optimized/ng_corpus_generator.cpp.ll
 ; linux/optimized/usercopy_64.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = sub nuw nsw i64 %2, %0

@@ -30,7 +30,7 @@ func0000000000000007:                   # @func0000000000000007
 	kmovd	%edi, %k1
 	vxorps	%xmm2, %xmm2, %xmm2
 	vmovss	%xmm2, %xmm1, %xmm1 {%k1}
-	vcmpneqss	%xmm0, %xmm1, %k0
+	vcmpneqss	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 func0000000000000003:                   # @func0000000000000003
@@ -45,7 +45,7 @@ func0000000000000003:                   # @func0000000000000003
 func0000000000000008:                   # @func0000000000000008
 	kmovd	%edi, %k1
 	vmovss	.LCPI6_0(%rip), %xmm1 {%k1}     # xmm1 {%k1} = [1.0E+0,0.0E+0,0.0E+0,0.0E+0]
-	vcmpeqss	%xmm0, %xmm1, %k0
+	vcmpeqss	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 func000000000000000c:                   # @func000000000000000c

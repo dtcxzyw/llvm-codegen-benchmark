@@ -15,12 +15,24 @@ entry:
 ; 1 occurrences:
 ; mitsuba3/optimized/jitallocator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %0, -1
-  %4 = add i64 %3, %2
+  %4 = add i64 %2, %3
   %5 = and i64 %4, %1
   %6 = icmp eq i64 %5, %0
+  ret i1 %6
+}
+
+; 1 occurrences:
+; boost/optimized/alloc_lib.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %0, 62
+  %4 = add i64 %3, %2
+  %5 = and i64 %4, %1
+  %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
 
@@ -41,7 +53,7 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %0, -1
   %4 = add nsw i64 %3, %2

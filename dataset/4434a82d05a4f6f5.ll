@@ -3,7 +3,7 @@
 ; openssl/optimized/libcrypto-lib-bio_ok.ll
 ; openssl/optimized/libcrypto-shlib-bio_ok.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %.neg = add i32 %2, -4100
   %3 = add i32 %.neg, %0
@@ -16,7 +16,7 @@ entry:
 ; gromacs/optimized/md5.c.ll
 ; gromacs/optimized/md5.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func00000000000001a1(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %.neg = add i32 %2, -64
   %3 = sub i32 0, %0
@@ -29,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-csn1.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func00000000000000aa(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %.neg = add i32 %2, -32
   %3 = add i32 %.neg, %0
@@ -41,7 +41,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-csn1.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func00000000000000a1(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %.neg = add i32 %2, -32
   %3 = sub i32 0, %0
@@ -54,7 +54,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/libata-sff.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %.neg = add i32 %2, -65536
   %3 = sub i32 0, %0
@@ -67,7 +67,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/md.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000da(i32 %0, i1 %1, i32 %2) #0 {
+define i1 @func00000000000001aa(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %.neg = add i32 %2, -131072
   %3 = add i32 %.neg, %0

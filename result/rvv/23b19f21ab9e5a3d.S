@@ -25,15 +25,15 @@ func0000000000000008:                   # @func0000000000000008
 	vnsrl.wi	v10, v8, 0
 	vadd.vi	v8, v10, -3
 	ret
-func000000000000000d:                   # @func000000000000000d
-	vsetivli	zero, 16, e8, m1, ta, ma
-	vnsrl.wi	v10, v8, 0
-	vadd.vi	v8, v10, -1
-	ret
 func0000000000000001:                   # @func0000000000000001
 	vsetivli	zero, 16, e8, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
 	vadd.vi	v8, v10, -2
+	ret
+func000000000000000d:                   # @func000000000000000d
+	vsetivli	zero, 16, e8, m1, ta, ma
+	vnsrl.wi	v10, v8, 0
+	vadd.vi	v8, v10, -1
 	ret
 func000000000000000e:                   # @func000000000000000e
 	vsetivli	zero, 16, e8, m1, ta, ma

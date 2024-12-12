@@ -1,5 +1,5 @@
 
-; 132 occurrences:
+; 136 occurrences:
 ; abc/optimized/abcTiming.c.ll
 ; abc/optimized/amapMatch.c.ll
 ; abc/optimized/sclUpsize.c.ll
@@ -22,6 +22,8 @@
 ; assimp/optimized/NFFLoader.cpp.ll
 ; assimp/optimized/TextureTransform.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; box2d/optimized/b2_world.cpp.ll
 ; bullet3/optimized/btConvexHull.ll
 ; darktable/optimized/colorpicker.c.ll
@@ -51,6 +53,7 @@
 ; hwloc/optimized/memattrs.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; meshlab/optimized/VisibleSet.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/filter_camera.cpp.ll
@@ -132,6 +135,7 @@
 ; typst-rs/optimized/1ojadsqfk0rsifsx.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; typst-rs/optimized/p1dgiootfedk7bo.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
 ; Function Attrs: nounwind
 define float @func0000000000000002(float %0, float %1) #0 {
 entry:
@@ -140,7 +144,7 @@ entry:
   ret float %3
 }
 
-; 62 occurrences:
+; 63 occurrences:
 ; box2d/optimized/b2_friction_joint.cpp.ll
 ; box2d/optimized/b2_motor_joint.cpp.ll
 ; box2d/optimized/b2_prismatic_joint.cpp.ll
@@ -157,6 +161,7 @@ entry:
 ; darktable/optimized/introspection_shadhi.c.ll
 ; hwloc/optimized/lstopo-lstopo-draw.ll
 ; hwloc/optimized/lstopo_no_graphics-lstopo-draw.ll
+; lvgl/optimized/lv_arc.ll
 ; minetest/optimized/client.cpp.ll
 ; minetest/optimized/content_cao.cpp.ll
 ; minetest/optimized/environment.cpp.ll
@@ -238,7 +243,7 @@ entry:
   ret float %3
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; abc/optimized/sclLiberty.c.ll
 ; darktable/optimized/introspection_basicadj.c.ll
 ; darktable/optimized/introspection_borders.c.ll
@@ -250,6 +255,7 @@ entry:
 ; meshlab/optimized/decorate_base.cpp.ll
 ; ncnn/optimized/priorbox.cpp.ll
 ; opencv/optimized/prior_box_layer.cpp.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define float @func0000000000000008(float %0, float %1) #0 {
 entry:

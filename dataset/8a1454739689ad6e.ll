@@ -1,8 +1,9 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; cmake/optimized/fse_compress.c.ll
 ; linux/optimized/i9xx_wm.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; zstd/optimized/fse_compress.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {

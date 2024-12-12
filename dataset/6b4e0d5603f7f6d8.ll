@@ -1,12 +1,11 @@
 
-; 20 occurrences:
+; 19 occurrences:
 ; fmt/optimized/format-impl-test.cc.ll
 ; git/optimized/transport.ll
 ; libevent/optimized/event.c.ll
 ; linux/optimized/auth.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/tcp.ll
-; linux/optimized/uring_cmd.ll
 ; linux/optimized/vlv_dsi_pll.ll
 ; linux/optimized/vt.ll
 ; llvm/optimized/InstCombineAndOrXor.cpp.ll
@@ -25,14 +24,15 @@ define i32 @func0000000000000002(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 8192
   %3 = zext nneg i16 %2 to i32
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
-; 64 occurrences:
+; 67 occurrences:
 ; abc/optimized/fretInit.c.ll
 ; abc/optimized/wlcNtk.c.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/test_codecvt.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; folly/optimized/Checksum.cpp.ll
@@ -94,12 +94,14 @@ entry:
 ; wireshark/optimized/packet-iax2.c.ll
 ; wireshark/optimized/packet-rlc-lte.c.ll
 ; wireshark/optimized/packet-usb.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 2
   %3 = zext nneg i16 %2 to i32
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
@@ -136,7 +138,7 @@ define i32 @func0000000000000001(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, -2048
   %3 = zext i16 %2 to i32
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
@@ -152,7 +154,7 @@ define i32 @func0000000000000000(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, -3
   %3 = zext i16 %2 to i32
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 

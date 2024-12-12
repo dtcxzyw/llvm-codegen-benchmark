@@ -22,7 +22,7 @@ func0000000000000004:                   # @func0000000000000004
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	testl	%esi, %esi
 	sets	%al
 	orb	%dil, %al

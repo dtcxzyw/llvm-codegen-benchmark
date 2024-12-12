@@ -6,7 +6,7 @@
 	.zero	4,2
 .LCPI0_3:
 	.zero	4,1
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpternlogd	$248, .LCPI0_2(%rip){1to4}, %xmm2, %xmm0 # xmm0 = xmm0 | (xmm2 & mem)
 	vpternlogd	$248, .LCPI0_3(%rip){1to4}, %xmm1, %xmm0 # xmm0 = xmm0 | (xmm1 & mem)
 	vpxor	%xmm1, %xmm1, %xmm1
@@ -22,7 +22,7 @@ func0000000000000031:                   # @func0000000000000031
 	.zero	4,16
 .LCPI1_4:
 	.zero	4,4
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	vpternlogd	$248, .LCPI1_3(%rip){1to4}, %xmm2, %xmm0 # xmm0 = xmm0 | (xmm2 & mem)
 	vpternlogd	$248, .LCPI1_4(%rip){1to4}, %xmm1, %xmm0 # xmm0 = xmm0 | (xmm1 & mem)
 	vpcmpnleub	.LCPI1_2(%rip), %xmm0, %k0

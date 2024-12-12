@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openjdk/optimized/type.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000282(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000902(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = icmp eq i64 %3, -2000000000
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; snappy/optimized/snappy.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000142(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000282(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = icmp sgt i64 %3, -1
@@ -26,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/Sequence.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000234(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000854(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = icmp sgt i64 %3, -1
@@ -38,7 +38,7 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/Sequence.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = icmp sgt i64 %3, -1
@@ -52,7 +52,7 @@ entry:
 ; luajit/optimized/lj_mcode.ll
 ; luajit/optimized/lj_mcode_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000108(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = icmp ult i64 %3, 32
@@ -64,7 +64,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/get-tar-commit-id.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000004c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = icmp slt i64 %3, 1
@@ -84,7 +84,7 @@ entry:
 ; redis/optimized/stats.ll
 ; redis/optimized/stats.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000042(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = icmp eq i64 %3, -1
@@ -93,12 +93,11 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
-; cmake/optimized/archive_read_support_format_rar5.c.ll
+; 2 occurrences:
 ; libquic/optimized/poly1305_vec.c.ll
 ; quickjs/optimized/libbf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000102(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = icmp ult i64 %3, 32
@@ -110,7 +109,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/DLangDemangle.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000288(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000908(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = icmp ult i64 %3, 4
@@ -122,7 +121,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000038c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000b0c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = icmp slt i64 %3, 0
@@ -131,15 +130,28 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
-; delta-rs/optimized/43y2svfstmvqcl15.ll
-; influxdb-rs/optimized/3x4ltxca4agvimmq.ll
+; 1 occurrences:
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000310(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000210(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nsw i64 %1, %2
-  %4 = icmp ugt i64 %3, 86399
-  %5 = icmp ugt i64 %0, 1999999999
+  %3 = add i64 %1, %2
+  %4 = icmp ugt i64 %3, 65536
+  %5 = icmp ugt i64 %0, 512
+  %6 = or i1 %5, %4
+  ret i1 %6
+}
+
+; 3 occurrences:
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/diggdkpukg0xn23g7ivuh3jfw.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000294(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add i64 %1, %2
+  %4 = icmp sgt i64 %3, 1073741822
+  %5 = icmp sgt i64 %0, 1073741822
   %6 = or i1 %5, %4
   ret i1 %6
 }
@@ -147,7 +159,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/softfloat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000298(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000918(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = icmp ne i64 %3, 253
@@ -157,24 +169,12 @@ entry:
 }
 
 ; 1 occurrences:
-; opencv/optimized/softfloat.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000002d0(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nsw i64 %1, %2
-  %4 = icmp ugt i64 %3, 2045
-  %5 = icmp slt i64 %0, 0
-  %6 = or i1 %4, %5
-  ret i1 %6
-}
-
-; 1 occurrences:
 ; cmake/optimized/vtls.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000102(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000202(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 0, %2
-  %4 = icmp eq i64 %3, %1
+  %4 = icmp eq i64 %1, %3
   %5 = icmp ugt i64 %0, 4096
   %6 = or i1 %4, %5
   ret i1 %6

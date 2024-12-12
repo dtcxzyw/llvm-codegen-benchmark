@@ -5,7 +5,7 @@
 ; openjdk/optimized/sharedRuntime_x86_64.ll
 ; openmpi/optimized/tm_solution.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000101(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 1

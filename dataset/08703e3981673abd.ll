@@ -17,7 +17,7 @@ entry:
   %3 = add nuw nsw i16 %1, %2
   %4 = lshr i16 %3, 1
   %5 = trunc nuw i16 %4 to i8
-  %6 = add i8 %5, %0
+  %6 = add i8 %0, %5
   ret i8 %6
 }
 

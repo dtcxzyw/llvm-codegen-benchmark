@@ -14,7 +14,7 @@ entry:
   %4 = ptrtoint ptr %3 to i64
   %5 = ptrtoint ptr %1 to i64
   %6 = sub i64 %4, %5
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 
@@ -26,9 +26,9 @@ entry:
 ; ruby/optimized/printf.ll
 ; snappy/optimized/snappy.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(i64 %0, ptr %1, ptr %2) #0 {
+define i64 @func0000000000000031(i64 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 32
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 32
   %4 = ptrtoint ptr %3 to i64
   %5 = ptrtoint ptr %1 to i64
   %6 = sub i64 %4, %5
@@ -36,7 +36,7 @@ entry:
   ret i64 %7
 }
 
-; 284 occurrences:
+; 279 occurrences:
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/ColladaParser.cpp.ll
 ; assimp/optimized/D3MFImporter.cpp.ll
@@ -47,7 +47,6 @@ entry:
 ; assimp/optimized/OgreXmlSerializer.cpp.ll
 ; assimp/optimized/X3DImporter.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
-; clamav/optimized/htmlnorm.c.ll
 ; clamav/optimized/others_common.c.ll
 ; clamav/optimized/pdf.c.ll
 ; clamav/optimized/regex_list.c.ll
@@ -73,8 +72,6 @@ entry:
 ; fmt/optimized/xchar-test.cc.ll
 ; folly/optimized/Compression.cpp.ll
 ; git/optimized/get-tar-commit-id.ll
-; hyperscan/optimized/teddy.c.ll
-; hyperscan/optimized/teddy_avx2.c.ll
 ; libquic/optimized/client.cc.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
@@ -151,7 +148,6 @@ entry:
 ; llvm/optimized/ComparisonCategories.cpp.ll
 ; luajit/optimized/lj_parse.ll
 ; luajit/optimized/lj_parse_dyn.ll
-; lz4/optimized/lz4hc.c.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; nix/optimized/derivations.ll
 ; oiio/optimized/CineonHeader.cpp.ll
@@ -247,7 +243,6 @@ entry:
 ; php/optimized/zend_jit.ll
 ; php/optimized/zend_smart_str.ll
 ; pugixml/optimized/pugixml.cpp.ll
-; regex-rs/optimized/6f4i3c8223u3bmw.ll
 ; rocksdb/optimized/table_cache.cc.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
@@ -322,13 +317,30 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000020(i64 %0, ptr %1, ptr %2) #0 {
+define i64 @func0000000000000030(i64 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = ptrtoint ptr %3 to i64
   %5 = ptrtoint ptr %1 to i64
   %6 = sub i64 %4, %5
   %7 = add i64 %6, %0
+  ret i64 %7
+}
+
+; 5 occurrences:
+; clamav/optimized/htmlnorm.c.ll
+; hyperscan/optimized/teddy.c.ll
+; hyperscan/optimized/teddy_avx2.c.ll
+; lz4/optimized/lz4hc.c.ll
+; regex-rs/optimized/6f4i3c8223u3bmw.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000020(i64 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -8
+  %4 = ptrtoint ptr %3 to i64
+  %5 = ptrtoint ptr %1 to i64
+  %6 = sub i64 %4, %5
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 

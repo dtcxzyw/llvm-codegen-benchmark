@@ -1,6 +1,7 @@
 
-; 15 occurrences:
+; 16 occurrences:
 ; assimp/optimized/BlenderLoader.cpp.ll
+; boost/optimized/sort_by_side.ll
 ; hermes/optimized/HadesGC.cpp.ll
 ; hermes/optimized/SemanticValidator.cpp.ll
 ; hermes/optimized/rust-api.cpp.ll
@@ -20,7 +21,7 @@ define i64 @func00000000000000c5(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = sext i1 %3 to i64
-  %5 = add nsw i64 %4, %1
+  %5 = add nsw i64 %1, %4
   %6 = add nsw i64 %5, %0
   ret i64 %6
 }
@@ -33,8 +34,8 @@ define i64 @func00000000000000c0(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = sext i1 %3 to i64
-  %5 = add i64 %4, %1
-  %6 = add i64 %5, %0
+  %5 = add i64 %1, %4
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -50,7 +51,7 @@ define i64 @func0000000000000015(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = sext i1 %3 to i64
-  %5 = add nsw i64 %4, %1
+  %5 = add nsw i64 %1, %4
   %6 = add nsw i64 %5, %0
   ret i64 %6
 }
@@ -62,7 +63,7 @@ define i64 @func00000000000000c4(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = sext i1 %3 to i64
-  %5 = add nsw i64 %4, %1
+  %5 = add nsw i64 %1, %4
   %6 = add i64 %5, %0
   ret i64 %6
 }

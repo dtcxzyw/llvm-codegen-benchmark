@@ -32,22 +32,11 @@ entry:
 ; 1 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = mul nsw i64 %2, %0
   %4 = icmp sgt i64 %3, 0
-  ret i1 %4
-}
-
-; 1 occurrences:
-; ceres/optimized/covariance_impl.cc.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
-entry:
-  %2 = freeze i64 %1
-  %3 = mul nsw i64 %2, %0
-  %4 = icmp ugt i64 %3, 2305843009213693951
   ret i1 %4
 }
 

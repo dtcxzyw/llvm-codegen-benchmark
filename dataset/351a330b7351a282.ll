@@ -1,6 +1,7 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; darktable/optimized/introspection_highlights.c.ll
+; linux/optimized/nfs4trace.ll
 ; llvm/optimized/AArch64SelectionDAGInfo.cpp.ll
 ; luajit/optimized/lj_lex.ll
 ; luajit/optimized/lj_lex_dyn.ll
@@ -19,7 +20,7 @@ entry:
   ret i32 %2
 }
 
-; 172 occurrences:
+; 175 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcDfs.c.ll
 ; abc/optimized/abcReconv.c.ll
@@ -89,7 +90,6 @@ entry:
 ; linux/optimized/seg6.ll
 ; linux/optimized/tcp_output.ll
 ; linux/optimized/xhci-ring.ll
-; lua/optimized/ldo.ll
 ; luajit/optimized/lj_state.ll
 ; luajit/optimized/lj_state_dyn.ll
 ; luajit/optimized/minilua.ll
@@ -129,6 +129,7 @@ entry:
 ; openjdk/optimized/cmsgamma.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; openjdk/optimized/jvmciCompilerToVM.ll
+; openmpi/optimized/ad_read_coll.ll
 ; openvdb/optimized/Diagnostics.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Filter.cc.ll
@@ -161,6 +162,7 @@ entry:
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; qemu/optimized/hw_riscv_virt.c.ll
 ; qemu/optimized/hw_scsi_vmw_pvscsi.c.ll
+; qemu/optimized/target_riscv_pmp.c.ll
 ; qemu/optimized/tcg.c.ll
 ; raylib/optimized/rtextures.c.ll
 ; re2/optimized/set.cc.ll
@@ -191,6 +193,8 @@ entry:
 ; z3/optimized/pb_constraint.cpp.ll
 ; z3/optimized/state_graph.cpp.ll
 ; z3/optimized/theory_special_relations.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/9lyxlodfxr6ds1lof2oq9jgs7.ll
 ; zstd/optimized/zstd_compress_sequences.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0) #0 {
@@ -218,8 +222,10 @@ entry:
   ret i32 %2
 }
 
-; 45 occurrences:
+; 50 occurrences:
 ; abc/optimized/giaSimBase.c.ll
+; bullet3/optimized/b3Generic6DofConstraint.ll
+; bullet3/optimized/btGeneric6DofConstraint.ll
 ; cmake/optimized/ProcessUNIX.c.ll
 ; darktable/optimized/collect.c.ll
 ; diesel-rs/optimized/2nqojkvzec127ieh.ll
@@ -264,6 +270,9 @@ entry:
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wireshark/optimized/layout_preferences_frame.cpp.ll
 ; wireshark/optimized/packet-oran.c.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0) #0 {
 entry:
@@ -272,10 +281,13 @@ entry:
   ret i32 %2
 }
 
-; 270 occurrences:
+; 266 occurrences:
 ; abc/optimized/absOldSim.c.ll
 ; abc/optimized/ifDec16.c.ll
 ; arrow/optimized/float16.cc.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/message.ll
+; boost/optimized/text_file_backend.ll
 ; cmake/optimized/zstd_lazy.c.ll
 ; cmake/optimized/zstd_opt.c.ll
 ; coremark/optimized/core_matrix.c.ll
@@ -324,7 +336,6 @@ entry:
 ; linux/optimized/cgroup.ll
 ; linux/optimized/compat_binfmt_elf.ll
 ; linux/optimized/dma-fence.ll
-; linux/optimized/hdac_controller.ll
 ; linux/optimized/hwmon.ll
 ; linux/optimized/i915_query.ll
 ; linux/optimized/intel_display_trace.ll
@@ -336,11 +347,7 @@ entry:
 ; linux/optimized/main.ll
 ; linux/optimized/mei-trace.ll
 ; linux/optimized/mlock.ll
-; linux/optimized/mmap_lock.ll
-; linux/optimized/net-procfs.ll
-; linux/optimized/net-traces.ll
 ; linux/optimized/nfs4trace.ll
-; linux/optimized/nfstrace.ll
 ; linux/optimized/power-traces.ll
 ; linux/optimized/printk.ll
 ; linux/optimized/regmap.ll
@@ -352,7 +359,6 @@ entry:
 ; linux/optimized/swiotlb.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/thermal_core.ll
-; linux/optimized/virtgpu_trace_points.ll
 ; linux/optimized/workqueue.ll
 ; llvm/optimized/ADCE.cpp.ll
 ; llvm/optimized/APINotesWriter.cpp.ll
@@ -399,6 +405,7 @@ entry:
 ; luajit/optimized/lj_parse_dyn.ll
 ; luajit/optimized/lj_state.ll
 ; luajit/optimized/lj_state_dyn.ll
+; lvgl/optimized/lv_tree.ll
 ; meshoptimizer/optimized/vertexfilter.cpp.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; node/optimized/libnode.env.ll
@@ -463,7 +470,6 @@ entry:
 ; redis/optimized/arena.sym.ll
 ; redis/optimized/t_zset.ll
 ; rocksdb/optimized/filter_policy.cc.ll
-; rocksdb/optimized/locktree.cc.ll
 ; ruby/optimized/rmd160.ll
 ; slurm/optimized/gang.ll
 ; spike/optimized/debug_module.ll
@@ -493,7 +499,6 @@ entry:
 ; wireshark/optimized/packet-gsm_a_gm.c.ll
 ; wireshark/optimized/packet-gsm_a_rr.c.ll
 ; wireshark/optimized/packet-gsm_gsup.c.ll
-; wireshark/optimized/packet-gsm_r_uus1.c.ll
 ; wireshark/optimized/packet-gsm_sms.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-ipsec.c.ll
@@ -551,7 +556,7 @@ entry:
   ret i32 %2
 }
 
-; 331 occurrences:
+; 330 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/acbFunc.c.ll
@@ -830,7 +835,6 @@ entry:
 ; openjdk/optimized/metaspaceClosure.ll
 ; openjdk/optimized/metaspaceShared.ll
 ; openjdk/optimized/sharedRuntimeTrig.ll
-; openmpi/optimized/ad_read_coll.ll
 ; openspiel/optimized/havannah.cc.ll
 ; openspiel/optimized/quoridor.cc.ll
 ; openssl/optimized/libcrypto-lib-bn_lib.ll
@@ -969,7 +973,7 @@ entry:
   ret i32 %2
 }
 
-; 125 occurrences:
+; 119 occurrences:
 ; abc/optimized/abcDfs.c.ll
 ; abc/optimized/abcFraig.c.ll
 ; abc/optimized/abcSweep.c.ll
@@ -991,7 +995,7 @@ entry:
 ; abc/optimized/wlcWriteVer.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
-; arrow/optimized/decimal.cc.ll
+; boost/optimized/parser_utils.ll
 ; box2d/optimized/b2_contact_manager.cpp.ll
 ; box2d/optimized/b2_world.cpp.ll
 ; cpython/optimized/bytesobject.ll
@@ -1000,9 +1004,7 @@ entry:
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; graphviz/optimized/exeval.c.ll
 ; gromacs/optimized/dbdsqr.cpp.ll
-; gromacs/optimized/dlarnv.cpp.ll
 ; gromacs/optimized/sbdsqr.cpp.ll
-; gromacs/optimized/slarnv.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hdf5/optimized/H5HFhuge.c.ll
 ; icu/optimized/escapesrc.ll
@@ -1018,7 +1020,6 @@ entry:
 ; imgui/optimized/imgui_draw.cpp.ll
 ; jq/optimized/utf16_be.ll
 ; jq/optimized/utf16_le.ll
-; linux/optimized/pid_namespace.ll
 ; linux/optimized/uncore_nhmex.ll
 ; linux/optimized/uncore_snbep.ll
 ; linux/optimized/xhci-ring.ll
@@ -1057,7 +1058,6 @@ entry:
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Filter.cc.ll
 ; openvdb/optimized/FindActiveValues.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFilter.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetMeasure.cc.ll
@@ -1088,8 +1088,6 @@ entry:
 ; spike/optimized/debug_module.ll
 ; tev/optimized/Common.cpp.ll
 ; verilator/optimized/V3EmitCFunc.cpp.ll
-; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
-; wasmtime-rs/optimized/rpltamrj260p6v4.ll
 ; wireshark/optimized/packet-ieee80211-radiotap-iter.c.ll
 ; wireshark/optimized/proto.c.ll
 ; wireshark/optimized/uat.c.ll
@@ -1103,7 +1101,7 @@ entry:
   ret i32 %2
 }
 
-; 106 occurrences:
+; 105 occurrences:
 ; abc/optimized/absOldSim.c.ll
 ; abc/optimized/extraUtilFile.c.ll
 ; abc/optimized/ioWriteDot.c.ll
@@ -1138,12 +1136,10 @@ entry:
 ; linux/optimized/intel_color.ll
 ; linux/optimized/intel_dram.ll
 ; linux/optimized/lzo1x_compress.ll
-; linux/optimized/mpih-mul.ll
 ; luajit/optimized/lj_trace.ll
 ; luajit/optimized/lj_trace_dyn.ll
 ; luajit/optimized/minilua.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/io_tri.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
@@ -1210,6 +1206,7 @@ entry:
 ; wireshark/optimized/packet-sscop.c.ll
 ; wireshark/optimized/str_util.c.ll
 ; z3/optimized/tbv.cpp.ll
+; zed-rs/optimized/4hdn1csvepxizqbxhztzuw0uw.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0) #0 {
 entry:
@@ -1276,7 +1273,7 @@ entry:
   ret i32 %2
 }
 
-; 26 occurrences:
+; 24 occurrences:
 ; abc/optimized/kitIsop.c.ll
 ; clamav/optimized/upx.c.ll
 ; hyperscan/optimized/castle.c.ll
@@ -1291,8 +1288,6 @@ entry:
 ; icu/optimized/numparse_affixes.ll
 ; icu/optimized/rematch.ll
 ; icu/optimized/sprintf.ll
-; icu/optimized/sscanf.ll
-; icu/optimized/uscanf.ll
 ; postgres/optimized/varlena.ll
 ; wireshark/optimized/packet-isis-lsp.c.ll
 ; zfp/optimized/encode1d.c.ll
@@ -1308,6 +1303,16 @@ define i32 @func0000000000000006(i32 %0) #0 {
 entry:
   %1 = shl i32 %0, 1
   %2 = add i32 %1, -2
+  ret i32 %2
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_mask.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000009(i32 %0) #0 {
+entry:
+  %1 = shl i32 %0, 1
+  %2 = add i32 %1, 4
   ret i32 %2
 }
 

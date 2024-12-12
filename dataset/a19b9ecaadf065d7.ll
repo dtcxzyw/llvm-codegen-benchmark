@@ -1,5 +1,6 @@
 
-; 22 occurrences:
+; 20 occurrences:
+; boost/optimized/decode.ll
 ; cmake/optimized/zstd_lazy.c.ll
 ; coreutils-rs/optimized/2g9ijtjos2xwh9zs.ll
 ; freetype/optimized/type42.c.ll
@@ -8,13 +9,10 @@
 ; hyperscan/optimized/mcsheng.c.ll
 ; llvm/optimized/FormatTokenLexer.cpp.ll
 ; node/optimized/libnode.Protocol.ll
-; ocio/optimized/Lut1DOpCPU.cpp.ll
-; openjdk/optimized/constMethod.ll
 ; openjdk/optimized/jfrTraceIdKlassQueue.ll
 ; openjdk/optimized/verifier.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; php/optimized/readcdf.ll
-; php/optimized/zend_file_cache.ll
 ; postgres/optimized/oracle_compat.ll
 ; postgres/optimized/quote.ll
 ; postgres/optimized/tsearchcmds.ll
@@ -23,18 +21,21 @@
 ; rust-analyzer-rs/optimized/4vbxd64hrlz3u0mk.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(ptr %0, ptr %1, i1 %2) #0 {
+define i1 @func0000000000000064(ptr %0, ptr %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 4, i64 0
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = icmp ult ptr %4, %0
   ret i1 %5
 }
 
-; 373 occurrences:
+; 364 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
-; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/decode_view.ll
+; boost/optimized/params_base.ll
+; boost/optimized/params_encoded_base.ll
+; boost/optimized/src.ll
 ; casadi/optimized/casadi_misc.cpp.ll
 ; ceres/optimized/parameter_block_ordering.cc.ll
 ; cmake/optimized/cmCTestBinPacker.cxx.ll
@@ -246,21 +247,13 @@ entry:
 ; cvc5/optimized/var_match_generator.cpp.ll
 ; cvc5/optimized/vts_term_cache.cpp.ll
 ; draco/optimized/symbol_encoding.cc.ll
-; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_execution_index_art.cpp.ll
-; duckdb/optimized/ub_duckdb_func_table.cpp.ll
-; duckdb/optimized/ub_duckdb_operator_csv_scanner.cpp.ll
 ; duckdb/optimized/ub_duckdb_parallel.cpp.ll
 ; eastl/optimized/TestBitVector.cpp.ll
 ; entt/optimized/meta_container.cpp.ll
 ; faiss/optimized/IndexIVFFastScan.cpp.ll
-; graphviz/optimized/cluster.c.ll
-; graphviz/optimized/edge.c.ll
 ; gromacs/optimized/hbond.cpp.ll
-; grpc/optimized/channel_stack_builder_impl.cc.ll
-; hermes/optimized/Executor.cpp.ll
 ; hermes/optimized/Statistic.cpp.ll
-; hermes/optimized/String.cpp.ll
 ; hermes/optimized/escape.cpp.ll
 ; hwloc/optimized/lstopo-lstopo.ll
 ; hwloc/optimized/lstopo_no_graphics-lstopo.ll
@@ -272,8 +265,6 @@ entry:
 ; lightgbm/optimized/metric.cpp.ll
 ; lightgbm/optimized/objective_function.cpp.ll
 ; linux/optimized/blk-mq-tag.ll
-; llvm/optimized/ASTReader.cpp.ll
-; llvm/optimized/ASTUnit.cpp.ll
 ; llvm/optimized/AccelTable.cpp.ll
 ; llvm/optimized/AsmPrinter.cpp.ll
 ; llvm/optimized/CGExprCXX.cpp.ll
@@ -371,10 +362,8 @@ entry:
 ; opencv/optimized/detection_output_layer.cpp.ll
 ; opencv/optimized/gfluidbackend.cpp.ll
 ; opencv/optimized/nms.cpp.ll
-; openusd/optimized/animMapper.cpp.ll
 ; openusd/optimized/primAdapter.cpp.ll
 ; protobuf/optimized/arena.cc.ll
-; protobuf/optimized/descriptor_database.cc.ll
 ; protobuf/optimized/text_format.cc.ll
 ; protobuf/optimized/wire_format.cc.ll
 ; pybind11/optimized/pybind11_cross_module_tests.cpp.ll
@@ -406,15 +395,15 @@ entry:
 ; yalantinglibs/optimized/test_messages_proto3.struct_pb.cc.ll
 ; z3/optimized/sat_solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, i1 %2) #0 {
+define i1 @func0000000000000061(ptr %0, ptr %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 8, i64 0
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
-; 236 occurrences:
+; 240 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/graphcycles.cc.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
@@ -593,7 +582,6 @@ entry:
 ; opencv/optimized/nms.cpp.ll
 ; opencv/optimized/ransac_solvers.cpp.ll
 ; opencv/optimized/serialization.cpp.ll
-; opencv/optimized/trackerMedianFlow.cpp.ll
 ; openjdk/optimized/hb-face-builder.ll
 ; openjdk/optimized/hb-ot-math.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
@@ -606,6 +594,11 @@ entry:
 ; protobuf/optimized/wire_format.cc.ll
 ; pybind11/optimized/pybind11_cross_module_tests.cpp.ll
 ; pybind11/optimized/test_stl.cpp.ll
+; quantlib/optimized/cmsmarketcalibration.ll
+; quantlib/optimized/noarbsabrinterpolatedsmilesection.ll
+; quantlib/optimized/projection.ll
+; quantlib/optimized/sabrinterpolatedsmilesection.ll
+; quantlib/optimized/sviinterpolatedsmilesection.ll
 ; stockfish/optimized/tbprobe.ll
 ; velox/optimized/Filter.cpp.ll
 ; verilator/optimized/V3DfgRegularize.cpp.ll
@@ -652,22 +645,45 @@ entry:
 ; z3/optimized/subpaving_mpfx.cpp.ll
 ; z3/optimized/subpaving_mpq.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(ptr %0, ptr %1, i1 %2) #0 {
+define i1 @func000000000000006c(ptr %0, ptr %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 0, i64 8
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = icmp ne ptr %4, %0
   ret i1 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; openjdk/optimized/constMethod.ll
-; openjdk/optimized/verifier.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000029(ptr %0, ptr %1, i1 %2) #0 {
+define i1 @func0000000000000049(ptr %0, ptr %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 -2, i64 -4
   %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %5 = icmp uge ptr %4, %0
+  ret i1 %5
+}
+
+; 3 occurrences:
+; ocio/optimized/Lut1DOpCPU.cpp.ll
+; openjdk/optimized/constMethod.ll
+; php/optimized/zend_file_cache.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000044(ptr %0, ptr %1, i1 %2) #0 {
+entry:
+  %3 = select i1 %2, i64 -2, i64 -4
+  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %5 = icmp ult ptr %4, %0
+  ret i1 %5
+}
+
+; 1 occurrences:
+; openjdk/optimized/verifier.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000069(ptr %0, ptr %1, i1 %2) #0 {
+entry:
+  %3 = select i1 %2, i64 3, i64 1
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = icmp uge ptr %4, %0
   ret i1 %5
 }
@@ -679,26 +695,38 @@ entry:
 ; openjdk/optimized/parse2.ll
 ; postgres/optimized/oracle_compat.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(ptr %0, ptr %1, i1 %2) #0 {
+define i1 @func0000000000000068(ptr %0, ptr %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 16, i64 0
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
 
-; 5 occurrences:
-; quantlib/optimized/cmsmarketcalibration.ll
-; quantlib/optimized/noarbsabrinterpolatedsmilesection.ll
-; quantlib/optimized/projection.ll
-; quantlib/optimized/sabrinterpolatedsmilesection.ll
-; quantlib/optimized/sviinterpolatedsmilesection.ll
+; 17 occurrences:
+; assimp/optimized/IFCOpenings.cpp.ll
+; duckdb/optimized/ub_duckdb_common.cpp.ll
+; duckdb/optimized/ub_duckdb_func_table.cpp.ll
+; duckdb/optimized/ub_duckdb_operator_csv_scanner.cpp.ll
+; entt/optimized/meta_container.cpp.ll
+; graphviz/optimized/cluster.c.ll
+; graphviz/optimized/edge.c.ll
+; grpc/optimized/channel_stack_builder_impl.cc.ll
+; hermes/optimized/Executor.cpp.ll
+; hermes/optimized/String.cpp.ll
+; llvm/optimized/ASTReader.cpp.ll
+; llvm/optimized/ASTUnit.cpp.ll
+; llvm/optimized/RegisterCoalescer.cpp.ll
+; nlohmann_json/optimized/unit-class_const_iterator.cpp.ll
+; nlohmann_json/optimized/unit-class_iterator.cpp.ll
+; openusd/optimized/animMapper.cpp.ll
+; protobuf/optimized/descriptor_database.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(ptr %0, ptr %1, i1 %2) #0 {
+define i1 @func0000000000000041(ptr %0, ptr %1, i1 %2) #0 {
 entry:
-  %3 = select i1 %2, i64 8, i64 0
-  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
-  %5 = icmp ne ptr %4, %0
+  %3 = select i1 %2, i64 -8, i64 0
+  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %5 = icmp eq ptr %4, %0
   ret i1 %5
 }
 
@@ -719,11 +747,26 @@ entry:
 ; git/optimized/fmt-merge-msg.ll
 ; postgres/optimized/oracle_compat.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000025(ptr %0, ptr %1, i1 %2) #0 {
+define i1 @func0000000000000065(ptr %0, ptr %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 8, i64 11
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = icmp ule ptr %4, %0
+  ret i1 %5
+}
+
+; 5 occurrences:
+; draco/optimized/adaptive_rans_bit_encoder.cc.ll
+; eastl/optimized/TestBitVector.cpp.ll
+; nlohmann_json/optimized/unit-class_const_iterator.cpp.ll
+; nlohmann_json/optimized/unit-class_iterator.cpp.ll
+; opencv/optimized/trackerMedianFlow.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000004c(ptr %0, ptr %1, i1 %2) #0 {
+entry:
+  %3 = select i1 %2, i64 -8, i64 0
+  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %5 = icmp ne ptr %4, %0
   ret i1 %5
 }
 

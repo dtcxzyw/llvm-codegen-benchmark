@@ -6,7 +6,7 @@ define i1 @func0000000000000001(i8 %0, i16 %1) #0 {
 entry:
   %2 = freeze i16 %1
   %3 = trunc i16 %2 to i8
-  %4 = icmp eq i8 %3, %0
+  %4 = icmp eq i8 %0, %3
   ret i1 %4
 }
 
@@ -17,7 +17,7 @@ define i1 @func0000000000000004(i8 %0, i16 %1) #0 {
 entry:
   %2 = freeze i16 %1
   %3 = trunc i16 %2 to i8
-  %4 = icmp ugt i8 %3, %0
+  %4 = icmp ult i8 %0, %3
   ret i1 %4
 }
 
@@ -28,7 +28,7 @@ define i1 @func000000000000000c(i8 %0, i16 %1) #0 {
 entry:
   %2 = freeze i16 %1
   %3 = trunc i16 %2 to i8
-  %4 = icmp ne i8 %3, %0
+  %4 = icmp ne i8 %0, %3
   ret i1 %4
 }
 
@@ -39,7 +39,7 @@ define i1 @func0000000000000008(i8 %0, i16 %1) #0 {
 entry:
   %2 = freeze i16 %1
   %3 = trunc i16 %2 to i8
-  %4 = icmp ult i8 %3, %0
+  %4 = icmp ugt i8 %0, %3
   ret i1 %4
 }
 

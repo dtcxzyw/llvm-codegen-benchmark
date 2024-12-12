@@ -7,7 +7,7 @@
 ; openjdk/optimized/splashscreen_impl.ll
 ; openspiel/optimized/state_distribution.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 29
   %4 = ashr i64 %3, 32
@@ -17,7 +17,7 @@ entry:
   ret i1 %7
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; assimp/optimized/clipper.cpp.ll
 ; ceres/optimized/parameter_block_ordering.cc.ll
 ; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
@@ -25,12 +25,13 @@ entry:
 ; oiio/optimized/exrinput.cpp.ll
 ; opencv/optimized/calibinit.cpp.ll
 ; opencv/optimized/essential_mat_reconstr.cpp.ll
+; opencv/optimized/matrix_transform.cpp.ll
 ; opencv/optimized/onlineBoosting.cpp.ll
 ; opencv/optimized/tree.cpp.ll
 ; openspiel/optimized/matrix_game_utils.cc.ll
 ; velox/optimized/AsyncDataCache.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
@@ -52,7 +53,7 @@ entry:
 ; opencv/optimized/svm.cpp.ll
 ; openusd/optimized/topologyRefinerFactory.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 30
   %4 = ashr i64 %3, 32
@@ -77,7 +78,7 @@ entry:
 ; yosys/optimized/booth.ll
 ; yosys/optimized/simplify.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
@@ -93,7 +94,7 @@ entry:
 ; openusd/optimized/topologyRefinerFactory.cpp.ll
 ; yosys/optimized/verilog_backend.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 29
   %4 = ashr i64 %3, 32
@@ -109,7 +110,7 @@ entry:
 ; gromacs/optimized/readir.cpp.ll
 ; llvm/optimized/LazyCallGraph.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
@@ -122,7 +123,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/updategroupscog.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000066(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 30
   %4 = ashr exact i64 %3, 32
@@ -136,7 +137,7 @@ entry:
 ; gromacs/optimized/pairlist.cpp.ll
 ; icu/optimized/normalizer2impl.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 29
   %4 = ashr i64 %3, 32
@@ -149,7 +150,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/pystate.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000006a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32

@@ -1,29 +1,17 @@
 
-%"struct.re2::CaseFold.2486320" = type { i32, i32, i32 }
+%"struct.re2::CaseFold.2601764" = type { i32, i32, i32 }
 
 ; 3 occurrences:
 ; abc/optimized/bblif.c.ll
 ; re2/optimized/parse.cc.ll
 ; redis/optimized/hyperloglog.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000024(ptr %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000044(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %"struct.re2::CaseFold.2486320", ptr %1, i64 %2
-  %4 = icmp ugt ptr %3, %0
+  %3 = getelementptr nusw %"struct.re2::CaseFold.2601764", ptr %1, i64 %2
+  %4 = icmp ult ptr %0, %3
   %5 = select i1 %4, ptr %0, ptr null
   ret ptr %5
-}
-
-; 2 occurrences:
-; coreutils-rs/optimized/1rgvgulc49uxow1y.ll
-; rustfmt-rs/optimized/s8gyre8ye3tvwam.ll
-; Function Attrs: nounwind
-define ptr @func000000000000002c(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = getelementptr nusw { { i64, [2 x i64] }, { i64, [2 x i64] }, { i64, [2 x i64] }, i8, i8, [6 x i8] }, ptr %1, i64 %2
-  %.not = icmp eq ptr %3, %0
-  %4 = select i1 %.not, ptr null, ptr %0
-  ret ptr %4
 }
 
 ; 44 occurrences:
@@ -75,7 +63,7 @@ entry:
 define ptr @func0000000000000004(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
-  %4 = icmp ugt ptr %3, %0
+  %4 = icmp ult ptr %0, %3
   %5 = select i1 %4, ptr %0, ptr null
   ret ptr %5
 }

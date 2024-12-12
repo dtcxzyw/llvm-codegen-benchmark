@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 28 occurrences:
 ; cpython/optimized/cfield.ll
 ; libpng/optimized/pngrutil.c.ll
 ; libquic/optimized/a_bitstr.c.ll
@@ -11,6 +11,7 @@
 ; llvm/optimized/Interp.cpp.ll
 ; luajit/optimized/lj_cconv.ll
 ; luajit/optimized/lj_cconv_dyn.ll
+; lvgl/optimized/lv_canvas.ll
 ; minetest/optimized/CImageLoaderBMP.cpp.ll
 ; openjdk/optimized/ByteBinary1Bit.ll
 ; openjdk/optimized/ByteBinary2Bit.ll

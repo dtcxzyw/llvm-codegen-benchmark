@@ -16,7 +16,7 @@ entry:
   ret ptr %4
 }
 
-; 100 occurrences:
+; 98 occurrences:
 ; arrow/optimized/encode_internal.cc.ll
 ; arrow/optimized/key_map.cc.ll
 ; assimp/optimized/Q3BSPFileParser.cpp.ll
@@ -41,7 +41,6 @@ entry:
 ; openjdk/optimized/generateOopMap.ll
 ; openjdk/optimized/methodLiveness.ll
 ; openjdk/optimized/parse1.ll
-; openssl/optimized/siphash_internal_test-bin-siphash_internal_test.ll
 ; openusd/optimized/openexr-c.c.ll
 ; php/optimized/ir_emit.ll
 ; php/optimized/zend_alloc.ll
@@ -58,7 +57,6 @@ entry:
 ; velox/optimized/BooleanMix.cpp.ll
 ; velox/optimized/Bridge.cpp.ll
 ; velox/optimized/CastExpr.cpp.ll
-; velox/optimized/CheckNestedNulls.cpp.ll
 ; velox/optimized/CompactRow.cpp.ll
 ; velox/optimized/ComplexVector.cpp.ll
 ; velox/optimized/DecodedVector.cpp.ll
@@ -118,11 +116,11 @@ entry:
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; xgboost/optimized/updater_refresh.cc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = lshr i64 %2, 6
-  %4 = getelementptr nusw i64, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i64, ptr %0, i64 %3
   ret ptr %4
 }
 

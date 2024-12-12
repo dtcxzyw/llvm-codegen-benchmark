@@ -1,18 +1,17 @@
 
-%struct.s_hv.2760081 = type { float, float }
-
 ; 4 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; darktable/optimized/amaze.cc.ll
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000003b(ptr %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 974208
-  %5 = getelementptr %struct.s_hv.2760081, ptr %4, i64 %3, i32 1
+  %.idx = shl nsw i64 %3, 3
+  %4 = getelementptr i8, ptr %0, i64 974212
+  %5 = getelementptr i8, ptr %4, i64 %.idx
   ret ptr %5
 }
 

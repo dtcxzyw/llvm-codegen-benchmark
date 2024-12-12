@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	orb	$48, %sil
 	testl	%edi, %edi
 	movzbl	%sil, %ecx

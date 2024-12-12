@@ -1,4 +1,4 @@
-func0000000000000098:                   # @func0000000000000098
+func0000000000000128:                   # @func0000000000000128
 	movl	$1, %eax
 	shlxl	%edx, %eax, %eax
 	cltq
@@ -6,7 +6,7 @@ func0000000000000098:                   # @func0000000000000098
 	cmpq	%rdi, %rax
 	seta	%al
 	retq
-func0000000000000096:                   # @func0000000000000096
+func0000000000000126:                   # @func0000000000000126
 	movl	$1, %eax
 	shlxl	%edx, %eax, %eax
 	cltq
@@ -14,7 +14,7 @@ func0000000000000096:                   # @func0000000000000096
 	cmpq	%rdi, %rax
 	setl	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	movl	$2, %eax
 	shlxl	%edx, %eax, %eax
 	cltq
@@ -22,7 +22,7 @@ func0000000000000016:                   # @func0000000000000016
 	cmpq	%rdi, %rax
 	setl	%al
 	retq
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	movl	$1, %eax
 	shlxl	%edx, %eax, %eax
 	cltq
@@ -30,7 +30,7 @@ func0000000000000081:                   # @func0000000000000081
 	cmpq	%rdi, %rax
 	sete	%al
 	retq
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	movl	$1, %eax
 	shlxl	%edx, %eax, %eax
 	cltq

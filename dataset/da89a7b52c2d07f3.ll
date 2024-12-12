@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 12 occurrences:
 ; actix-rs/optimized/19s5ghr2x6s6bmh4.ll
 ; coreutils-rs/optimized/4o7j3eorsq1l9mcp.ll
 ; just-rs/optimized/1uppz7l1e89fp8n7.ll
@@ -9,12 +9,15 @@
 ; ockam-rs/optimized/2zpb9qmdbtl1z92t.ll
 ; ockam-rs/optimized/z0rkq6s90lca7cm.ll
 ; wasmtime-rs/optimized/4mhzt4bue6j9nl9q.ll
+; zed-rs/optimized/0oeh7hwbxnw4zu37xj5psd1f6.ll
+; zed-rs/optimized/7almbq0vtpgp7q0c9d6k1td97.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i8 %1) #0 {
+define i1 @func00000000000000e4(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = sub nuw nsw i64 64, %2
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   ret i1 %4
 }
 
@@ -79,22 +82,72 @@ entry:
 ; velox/optimized/WidthBucketArray.cpp.ll
 ; velox/optimized/ZipWith.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i8 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = sub nsw i64 0, %2
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; vcpkg/optimized/versions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000068(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = sub nuw nsw i64 1844674407370955209, %2
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
+  ret i1 %4
+}
+
+; 2 occurrences:
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/init_from_settings.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000a8(i64 %0, i8 %1) #0 {
+entry:
+  %2 = zext nneg i8 %1 to i64
+  %3 = sub nsw i64 47, %2
+  %4 = icmp ugt i64 %0, %3
+  ret i1 %4
+}
+
+; 6 occurrences:
+; boost/optimized/static_string.ll
+; graphviz/optimized/ccomps.c.ll
+; graphviz/optimized/gvpr.c.ll
+; graphviz/optimized/htmltable.c.ll
+; graphviz/optimized/input.c.ll
+; graphviz/optimized/labels.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i64 %0, i8 %1) #0 {
+entry:
+  %2 = zext i8 %1 to i64
+  %3 = sub nsw i64 4, %2
+  %4 = icmp ugt i64 %0, %3
+  ret i1 %4
+}
+
+; 1 occurrences:
+; boost/optimized/default_filter_factory.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000ca(i64 %0, i8 %1) #0 {
+entry:
+  %2 = zext nneg i8 %1 to i64
+  %3 = sub nuw i64 -9223372036854775761, %2
+  %4 = icmp sgt i64 %0, %3
+  ret i1 %4
+}
+
+; 1 occurrences:
+; clamav/optimized/rtf.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000004a(i64 %0, i8 %1) #0 {
+entry:
+  %2 = zext i8 %1 to i64
+  %3 = sub nuw i64 -9223372036854775761, %2
+  %4 = icmp sgt i64 %0, %3
   ret i1 %4
 }
 
@@ -102,26 +155,11 @@ entry:
 ; coreutils-rs/optimized/22bojphyikqmi872.ll
 ; coreutils-rs/optimized/4o7j3eorsq1l9mcp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000064(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = sub nuw nsw i64 144, %2
-  %4 = icmp ugt i64 %3, %0
-  ret i1 %4
-}
-
-; 5 occurrences:
-; graphviz/optimized/ccomps.c.ll
-; graphviz/optimized/gvpr.c.ll
-; graphviz/optimized/htmltable.c.ll
-; graphviz/optimized/input.c.ll
-; graphviz/optimized/labels.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i8 %1) #0 {
-entry:
-  %2 = zext i8 %1 to i64
-  %3 = sub nsw i64 31, %2
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   ret i1 %4
 }
 

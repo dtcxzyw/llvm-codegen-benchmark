@@ -4,7 +4,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	$1024, %rax                     # imm = 0x400
 	setae	%al
 	retq
-func0000000000000158:                   # @func0000000000000158
+func00000000000002a8:                   # @func00000000000002a8
 	addq	%rsi, %rdi
 	subq	%rdi, %rdx
 	shrq	$61, %rdx

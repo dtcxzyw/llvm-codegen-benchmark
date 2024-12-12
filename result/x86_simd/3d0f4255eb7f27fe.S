@@ -66,20 +66,20 @@ func0000000000000008:                   # @func0000000000000008
 	vmovdqa	%xmm1, %xmm0
 	vzeroupper
 	retq
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	vpmovdb	%ymm1, %xmm1
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpnltb	%xmm2, %xmm0, %k1
 	vmovdqu8	%xmm1, %xmm0 {%k1} {z}
 	vzeroupper
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpmovdb	%ymm1, %xmm1
 	vptestmb	%xmm0, %xmm0, %k1
 	vmovdqu8	%xmm1, %xmm0 {%k1} {z}
 	vzeroupper
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpmovdb	%ymm1, %xmm1
 	vptestmb	%xmm0, %xmm0, %k1
 	vmovdqu8	%xmm1, %xmm0 {%k1} {z}

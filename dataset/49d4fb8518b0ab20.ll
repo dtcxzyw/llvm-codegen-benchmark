@@ -16,9 +16,9 @@
 ; openusd/optimized/xformCommonAPI.cpp.ll
 ; yosys/optimized/spice.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000044(i64 %0, ptr %1) #0 {
+define i32 @func0000000000000064(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 8
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 8
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0
   %5 = lshr exact i64 %4, 3

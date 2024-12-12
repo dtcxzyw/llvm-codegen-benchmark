@@ -1,9 +1,8 @@
 
-; 21 occurrences:
+; 20 occurrences:
 ; cmake/optimized/url.c.ll
 ; curl/optimized/libcurl_la-url.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
-; linux/optimized/attr.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/yenta_socket.ll
 ; llvm/optimized/SemaConcept.cpp.ll
@@ -27,7 +26,7 @@ entry:
   %3 = and i32 %2, 2
   %4 = icmp eq i32 %1, 0
   %5 = select i1 %4, i32 %3, i32 1
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   ret i32 %6
 }
 

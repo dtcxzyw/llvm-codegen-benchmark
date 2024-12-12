@@ -6,7 +6,7 @@
 ; linux/optimized/posix_acl.ll
 ; ruby/optimized/vm.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000cc(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 524288
   %3 = icmp ne i64 %2, 0
@@ -56,7 +56,7 @@ entry:
 ; qemu/optimized/rtas.c.ll
 ; redis/optimized/fpconv_dtoa.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i64 %1) #0 {
+define i1 @func000000000000018c(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 255
   %3 = icmp ne i64 %2, 1
@@ -65,7 +65,7 @@ entry:
   ret i1 %5
 }
 
-; 13 occurrences:
+; 11 occurrences:
 ; git/optimized/revision.ll
 ; linux/optimized/hooks.ll
 ; linux/optimized/mballoc.ll
@@ -73,16 +73,14 @@ entry:
 ; linux/optimized/sock.ll
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/FormatString.cpp.ll
-; openssl/optimized/libcrypto-lib-x_int64.ll
-; openssl/optimized/libcrypto-shlib-x_int64.ll
 ; openssl/optimized/libssl-lib-quic_channel.ll
 ; openssl/optimized/libssl-shlib-quic_channel.ll
 ; redis/optimized/server.ll
 ; slurm/optimized/reservation.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000181(i32 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 2
+  %2 = and i64 %1, 1024
   %3 = icmp eq i64 %2, 0
   %4 = icmp ne i32 %0, 0
   %5 = select i1 %3, i1 true, i1 %4
@@ -218,7 +216,7 @@ entry:
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2147483648
   %3 = icmp ne i64 %2, 0
@@ -271,23 +269,11 @@ entry:
 ; wolfssl/optimized/internal.c.ll
 ; z3/optimized/spacer_global_generalizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1
   %3 = icmp eq i64 %2, 0
   %4 = icmp eq i32 %0, -1
-  %5 = select i1 %3, i1 true, i1 %4
-  ret i1 %5
-}
-
-; 1 occurrences:
-; qemu/optimized/hw_usb_imx-usb-phy.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000a1(i32 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 2147483648
-  %3 = icmp eq i64 %2, 0
-  %4 = icmp sgt i32 %0, -1
   %5 = select i1 %3, i1 true, i1 %4
   ret i1 %5
 }
@@ -300,7 +286,7 @@ entry:
 ; openjdk/optimized/universe.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000c1(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 14
   %3 = icmp eq i64 %2, 12
@@ -314,11 +300,23 @@ entry:
 ; hermes/optimized/Function.cpp.ll
 ; hermes/optimized/Runtime.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000114(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 34359738360
-  %3 = icmp ult i64 %2, 312
+  %3 = icmp samesign ult i64 %2, 312
   %4 = icmp ugt i32 %0, 384
+  %5 = select i1 %3, i1 true, i1 %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; hermes/optimized/HermesBuiltin.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000281(i32 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 2
+  %3 = icmp eq i64 %2, 0
+  %4 = icmp samesign ult i32 %0, 13
   %5 = select i1 %3, i1 true, i1 %4
   ret i1 %5
 }
@@ -330,7 +328,7 @@ entry:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i64 %1) #0 {
+define i1 @func000000000000008c(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 524287
   %3 = icmp ne i64 %2, 0
@@ -346,7 +344,7 @@ entry:
 ; llvm/optimized/InterleavedAccessPass.cpp.ll
 ; llvm/optimized/SemaModule.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967292
   %3 = icmp eq i64 %2, 0
@@ -360,7 +358,7 @@ entry:
 ; redis/optimized/networking.ll
 ; z3/optimized/nlsat_explain.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i32 %0, i64 %1) #0 {
+define i1 @func000000000000014c(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1
   %3 = icmp ne i64 %2, 0
@@ -369,16 +367,40 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
-; linux/optimized/kexec.ll
-; linux/optimized/sd.ll
+; 1 occurrences:
 ; llvm/optimized/ObjCRuntime.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i32 %0, i64 %1) #0 {
+define i1 @func000000000000030c(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
   %3 = icmp ne i64 %2, 0
-  %4 = icmp ugt i32 %0, 8
+  %4 = icmp samesign ugt i32 %0, 8
+  %5 = select i1 %3, i1 true, i1 %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; linux/optimized/sd.ll
+; Function Attrs: nounwind
+define i1 @func000000000000010c(i32 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 33554432
+  %3 = icmp ne i64 %2, 0
+  %4 = icmp ugt i32 %0, 65535
+  %5 = select i1 %3, i1 true, i1 %4
+  ret i1 %5
+}
+
+; 3 occurrences:
+; postgres/optimized/d2s.ll
+; postgres/optimized/d2s_shlib.ll
+; postgres/optimized/d2s_srv.ll
+; Function Attrs: nounwind
+define i1 @func000000000000028c(i32 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 4503599627370495
+  %3 = icmp ne i64 %2, 0
+  %4 = icmp samesign ult i32 %0, 2
   %5 = select i1 %3, i1 true, i1 %4
   ret i1 %5
 }

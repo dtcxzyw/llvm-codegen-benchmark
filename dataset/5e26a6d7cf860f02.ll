@@ -82,22 +82,22 @@ entry:
 ; ceres/optimized/schur_eliminator_3_3_3.cc.ll
 ; opencv/optimized/imgwarp.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000c(ptr %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 24
-  %3 = getelementptr nusw double, ptr %0, i64 %1
+  %3 = getelementptr nusw nuw double, ptr %0, i64 %1
   %4 = getelementptr i8, ptr %3, i64 %2
   ret ptr %4
 }
 
 ; 1 occurrences:
-; meshlab/optimized/quadric_simp.cpp.ll
+; opencv/optimized/imgwarp.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000008(ptr %0, i64 %1) #0 {
 entry:
-  %2 = mul nuw nsw i64 %1, 24
-  %3 = getelementptr nusw double, ptr %0, i64 %1
-  %4 = getelementptr nusw i8, ptr %3, i64 %2
+  %2 = mul i64 %1, -3
+  %3 = getelementptr nusw i8, ptr %0, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 %2
   ret ptr %4
 }
 

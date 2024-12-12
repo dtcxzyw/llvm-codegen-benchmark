@@ -113,6 +113,17 @@ entry:
   ret i32 %4
 }
 
+; 1 occurrences:
+; image-rs/optimized/1njpscpjlgoe3i07.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i64 %0, i64 %1) #0 {
+entry:
+  %2 = shl nuw i64 %1, 16
+  %3 = or disjoint i64 %0, %2
+  %4 = trunc i64 %3 to i32
+  ret i32 %4
+}
+
 ; 12 occurrences:
 ; abc/optimized/ifDec07.c.ll
 ; abc/optimized/sfmDec.c.ll
@@ -130,7 +141,7 @@ entry:
 define i32 @func000000000000001c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 6
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }
@@ -145,7 +156,7 @@ entry:
 define i32 @func000000000000001e(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 6
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = trunc nuw i64 %3 to i32
   ret i32 %4
 }
@@ -156,7 +167,7 @@ entry:
 define i32 @func000000000000001d(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 1
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = trunc nsw i64 %3 to i32
   ret i32 %4
 }
@@ -167,7 +178,7 @@ entry:
 define i32 @func000000000000001a(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 16
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = trunc nuw i64 %3 to i32
   ret i32 %4
 }
@@ -182,7 +193,7 @@ entry:
 define i32 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 23
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = trunc i64 %3 to i32
   ret i32 %4
 }
@@ -199,8 +210,7 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
-; linux/optimized/8250_lpss.ll
+; 2 occurrences:
 ; linux/optimized/initramfs.ll
 ; linux/optimized/intel_ring_submission.ll
 ; Function Attrs: nounwind

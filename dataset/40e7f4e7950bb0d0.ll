@@ -3,7 +3,7 @@
 ; abc/optimized/sscClass.c.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000318(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, -1
   %4 = or i1 %3, %0
@@ -21,10 +21,10 @@ entry:
 ; tls-rs/optimized/z2cy5bf5cayilz9.ll
 ; tree-sitter-rs/optimized/1an3e3vgwrgy9kls.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000042(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 1
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = icmp eq i64 %1, -9223372036854775804
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
@@ -41,7 +41,7 @@ entry:
 ; tls-rs/optimized/z2cy5bf5cayilz9.ll
 ; tree-sitter-rs/optimized/1an3e3vgwrgy9kls.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000102(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000202(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, 3
   %4 = or i1 %3, %0
@@ -54,10 +54,10 @@ entry:
 ; abc/optimized/sscClass.c.ll
 ; slurm/optimized/acct_policy.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000058(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 536870911
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = icmp ne i64 %1, 2684354559
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
@@ -66,10 +66,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaOverload.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000302(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = icmp eq i64 %1, 0
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6

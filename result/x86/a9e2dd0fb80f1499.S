@@ -15,7 +15,7 @@ func0000000000000010:                   # @func0000000000000010
 	movl	$-2147483648, %eax              # imm = 0x80000000
 	subl	%esi, %eax
 	retq
-func0000000000000000:                   # @func0000000000000000
+func0000000000000011:                   # @func0000000000000011
 	imull	%edx, %esi
 	leal	(%rsi,%rdi), %eax
 	negl	%eax
@@ -25,7 +25,7 @@ func0000000000000001:                   # @func0000000000000001
 	leal	(%rsi,%rdi), %eax
 	negl	%eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000000:                   # @func0000000000000000
 	imull	%edx, %esi
 	leal	(%rsi,%rdi), %eax
 	negl	%eax

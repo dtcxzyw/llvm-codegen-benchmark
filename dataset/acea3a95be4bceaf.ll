@@ -1,52 +1,5 @@
 
-; 37 occurrences:
-; abseil-cpp/optimized/demangle.cc.ll
-; arrow/optimized/float16.cc.ll
-; brotli/optimized/decode.c.ll
-; clamav/optimized/unsp.c.ll
-; delta-rs/optimized/4say4x9grcidoih4.ll
-; folly/optimized/json.cpp.ll
-; icu/optimized/collationiterator.ll
-; icu/optimized/ucnvscsu.ll
-; jq/optimized/utf16_be.ll
-; jq/optimized/utf16_le.ll
-; linux/optimized/rc80211_minstrel_ht.ll
-; linux/optimized/setup.ll
-; luajit/optimized/lj_opt_narrow.ll
-; luajit/optimized/lj_opt_narrow_dyn.ll
-; luajit/optimized/lj_parse.ll
-; luajit/optimized/lj_parse_dyn.ll
-; meilisearch-rs/optimized/3f4k2xees4fvt0r.ll
-; mitsuba3/optimized/x86rapass.cpp.ll
-; ncnn/optimized/mat.cpp.ll
-; node/optimized/simdutf.ll
-; oniguruma/optimized/utf16_be.ll
-; oniguruma/optimized/utf16_le.ll
-; openjdk/optimized/c1_LinearScan.ll
-; openjdk/optimized/check_code.ll
-; openjdk/optimized/utf8.ll
-; php/optimized/avifinfo.ll
-; postgres/optimized/utf8_and_gb18030.ll
-; qdrant-rs/optimized/49gep1elv33vxlrq.ll
-; raylib/optimized/rcore.c.ll
-; raylib/optimized/rtextures.c.ll
-; ruby/optimized/utf_16be.ll
-; ruby/optimized/utf_16le.ll
-; ruby/optimized/util.ll
-; rust-analyzer-rs/optimized/10elsj6wik4dx3zk.ll
-; serde-rs-json/optimized/30jxdu82z9wuspjj.ll
-; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
-; tree-sitter-rs/optimized/42mwgpotg9phq80h.ll
-; Function Attrs: nounwind
-define i32 @func000000000000001f(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl nuw nsw i32 %1, 10
-  %3 = add nuw nsw i32 %2, 65536
-  %4 = or disjoint i32 %3, %0
-  ret i32 %4
-}
-
-; 46 occurrences:
+; 47 occurrences:
 ; abc/optimized/giaBalLut.c.ll
 ; abc/optimized/ivyDsd.c.ll
 ; clamav/optimized/timefn.cpp.ll
@@ -62,6 +15,7 @@ entry:
 ; icu/optimized/ucnvscsu.ll
 ; icu/optimized/uspoof_conf.ll
 ; linux/optimized/hid-core.ll
+; linux/optimized/huf_decompress.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_dpll.ll
 ; linux/optimized/intel_sdvo.ll
@@ -98,7 +52,54 @@ define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 22
   %3 = add i32 %2, 4194304
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
+  ret i32 %4
+}
+
+; 37 occurrences:
+; abseil-cpp/optimized/demangle.cc.ll
+; arrow/optimized/float16.cc.ll
+; boost/optimized/test_codecvt.ll
+; brotli/optimized/decode.c.ll
+; clamav/optimized/unsp.c.ll
+; delta-rs/optimized/4say4x9grcidoih4.ll
+; folly/optimized/json.cpp.ll
+; icu/optimized/collationiterator.ll
+; icu/optimized/ucnvscsu.ll
+; jq/optimized/utf16_be.ll
+; jq/optimized/utf16_le.ll
+; linux/optimized/rc80211_minstrel_ht.ll
+; linux/optimized/setup.ll
+; luajit/optimized/lj_opt_narrow.ll
+; luajit/optimized/lj_opt_narrow_dyn.ll
+; luajit/optimized/lj_parse.ll
+; luajit/optimized/lj_parse_dyn.ll
+; meilisearch-rs/optimized/3f4k2xees4fvt0r.ll
+; mitsuba3/optimized/x86rapass.cpp.ll
+; ncnn/optimized/mat.cpp.ll
+; node/optimized/simdutf.ll
+; oniguruma/optimized/utf16_be.ll
+; oniguruma/optimized/utf16_le.ll
+; openjdk/optimized/c1_LinearScan.ll
+; openjdk/optimized/check_code.ll
+; openjdk/optimized/utf8.ll
+; php/optimized/avifinfo.ll
+; postgres/optimized/utf8_and_gb18030.ll
+; qdrant-rs/optimized/49gep1elv33vxlrq.ll
+; raylib/optimized/rcore.c.ll
+; raylib/optimized/rtextures.c.ll
+; ruby/optimized/util.ll
+; rust-analyzer-rs/optimized/10elsj6wik4dx3zk.ll
+; serde-rs-json/optimized/30jxdu82z9wuspjj.ll
+; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
+; tree-sitter-rs/optimized/42mwgpotg9phq80h.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
+; Function Attrs: nounwind
+define i32 @func000000000000001f(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl nuw nsw i32 %1, 22
+  %3 = add nuw nsw i32 %2, 1013972992
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
@@ -129,7 +130,7 @@ define i32 @func000000000000000b(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 23
   %3 = add nsw i32 %2, 1056964608
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
@@ -168,7 +169,7 @@ entry:
   ret i32 %4
 }
 
-; 89 occurrences:
+; 92 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/abcUtil.c.ll
 ; abc/optimized/bdcCore.c.ll
@@ -195,6 +196,8 @@ entry:
 ; git/optimized/fast-import.ll
 ; graphviz/optimized/node.c.ll
 ; gromacs/optimized/deflate.c.ll
+; gromacs/optimized/dlasq2.cpp.ll
+; gromacs/optimized/slasq2.cpp.ll
 ; hermes/optimized/DictPropertyMap.cpp.ll
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; libquic/optimized/deflate.c.ll
@@ -216,6 +219,7 @@ entry:
 ; luajit/optimized/lj_parse_dyn.ll
 ; luajit/optimized/minilua.ll
 ; luau/optimized/BytecodeBuilder.cpp.ll
+; openblas/optimized/dlasq2.c.ll
 ; opencv/optimized/array.cpp.ll
 ; opencv/optimized/cap_v4l.cpp.ll
 ; opencv/optimized/cv2.cpp.ll
@@ -263,7 +267,7 @@ define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 16
   %3 = add i32 %2, 262144
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
@@ -324,7 +328,7 @@ define i32 @func000000000000001b(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 12
   %3 = add nsw i32 %2, -917504
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
@@ -386,7 +390,7 @@ define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 2
   %3 = add i32 %2, -1
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -431,7 +435,7 @@ define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 3
   %3 = add nsw i32 %2, -1
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 

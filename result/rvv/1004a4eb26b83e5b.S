@@ -5,7 +5,7 @@ func0000000000000002:                   # @func0000000000000002
 	vmerge.vim	v16, v16, 0, v0
 	vfwcvt.f.f.v	v24, v16
 	vsetvli	zero, zero, e64, m8, ta, ma
-	vfmul.vv	v8, v24, v8
+	vfmul.vv	v8, v8, v24
 	ret
 func0000000000000004:                   # @func0000000000000004
 	fli.s	fa5, 1.0
@@ -14,5 +14,5 @@ func0000000000000004:                   # @func0000000000000004
 	vfmerge.vfm	v16, v16, fa5, v0
 	vfwcvt.f.f.v	v24, v16
 	vsetvli	zero, zero, e64, m8, ta, ma
-	vfmul.vv	v8, v24, v8
+	vfmul.vv	v8, v8, v24
 	ret

@@ -1,5 +1,6 @@
 
-; 144 occurrences:
+; 145 occurrences:
+; abc/optimized/abcExact.c.ll
 ; cpython/optimized/dictobject.ll
 ; folly/optimized/AsyncSocket.cpp.ll
 ; folly/optimized/IPAddressV4.cpp.ll
@@ -153,19 +154,6 @@ entry:
   ret ptr %5
 }
 
-; 3 occurrences:
-; abc/optimized/extraUtilCube.c.ll
-; arrow/optimized/builder.cc.ll
-; openjdk/optimized/nativeInst_x86.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, i8 %2) #0 {
-entry:
-  %3 = sext i8 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %1
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
-  ret ptr %5
-}
-
 ; 1 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; Function Attrs: nounwind
@@ -173,6 +161,18 @@ define ptr @func0000000000000002(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i64
   %4 = getelementptr i32, ptr %0, i64 %1
+  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 2 occurrences:
+; abc/optimized/extraUtilCube.c.ll
+; arrow/optimized/builder.cc.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000a(ptr %0, i64 %1, i8 %2) #0 {
+entry:
+  %3 = sext i8 %2 to i64
+  %4 = getelementptr nusw i8, ptr %0, i64 %1
   %5 = getelementptr nusw i8, ptr %4, i64 %3
   ret ptr %5
 }

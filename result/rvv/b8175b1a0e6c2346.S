@@ -1,7 +1,7 @@
 func0000000000000002:                   # @func0000000000000002
 	vsetivli	zero, 16, e32, m4, ta, ma
 	vmflt.vv	v16, v8, v12
-	vmxor.mm	v0, v16, v0
+	vmxor.mm	v0, v0, v16
 	ret
 func000000000000000b:                   # @func000000000000000b
 	vsetivli	zero, 16, e32, m4, ta, ma

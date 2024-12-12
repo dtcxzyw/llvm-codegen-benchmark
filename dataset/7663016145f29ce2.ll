@@ -1,7 +1,12 @@
 
-; 33 occurrences:
+; 36 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
-; brotli/optimized/backward_references_hq.c.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/any_params_iter.ll
+; boost/optimized/any_segments_iter.ll
+; boost/optimized/format_args.ll
+; boost/optimized/pct_format.ll
+; boost/optimized/url_base.ll
 ; brotli/optimized/decode.c.ll
 ; coreutils-rs/optimized/16tvsrb5hxbjj8xg.ll
 ; coreutils-rs/optimized/yiho3rob7ld9k5q.ll
@@ -14,9 +19,7 @@
 ; linux/optimized/ds.ll
 ; linux/optimized/lbr.ll
 ; linux/optimized/libata-core.ll
-; linux/optimized/machine_kexec_64.ll
 ; linux/optimized/mlme.ll
-; linux/optimized/uprobes.ll
 ; llvm/optimized/X86CallFrameOptimization.cpp.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; node/optimized/libnode.crypto_tls.ll
@@ -38,27 +41,18 @@ define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 4
   %3 = select i1 %2, i64 144115188075855868, i64 144115188075855870
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
-; 10 occurrences:
-; cpython/optimized/bytearrayobject.ll
+; 1 occurrences:
 ; folly/optimized/AsyncSocket.cpp.ll
-; llvm/optimized/ASTContext.cpp.ll
-; llvm/optimized/Expr.cpp.ll
-; llvm/optimized/ExprCXX.cpp.ll
-; nlohmann_json/optimized/unit-binary_formats.cpp.ll
-; nlohmann_json/optimized/unit-bson.cpp.ll
-; nlohmann_json/optimized/unit-udt_macro.cpp.ll
-; protobuf/optimized/arena.cc.ll
-; quickjs/optimized/libbf.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000050(i64 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ult i64 %1, 100
+  %2 = icmp samesign ult i64 %1, 100
   %3 = select i1 %2, i64 0, i64 8
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -71,12 +65,11 @@ define i64 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %.inv = icmp slt i64 %1, 1
   %2 = select i1 %.inv, i64 1, i64 -1
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   ret i64 %3
 }
 
-; 9 occurrences:
-; abseil-cpp/optimized/cord_test.cc.ll
+; 8 occurrences:
 ; ockam-rs/optimized/3srf4j1tze6zn8ex.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; php/optimized/unixtime2tm.ll
@@ -94,12 +87,10 @@ entry:
   ret i64 %4
 }
 
-; 17 occurrences:
-; abc/optimized/nmApi.c.ll
+; 16 occurrences:
 ; abc/optimized/satStore.c.ll
 ; linux/optimized/truncate.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVOptWInstrs.cpp.ll
@@ -112,6 +103,7 @@ entry:
 ; rust-analyzer-rs/optimized/3jiy4rg0squ6unio.ll
 ; rust-analyzer-rs/optimized/k5mtltw7nxmadpl.ll
 ; z3/optimized/sat_clause.cpp.ll
+; zed-rs/optimized/a3hrzugt78pdexsn4h7d7fddk.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
@@ -133,9 +125,9 @@ entry:
 ; protobuf/optimized/zero_copy_stream_impl_lite.cc.ll
 ; rust-analyzer-rs/optimized/egul20e4uygvok2.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000013(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000053(i64 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ult i64 %1, 4
+  %2 = icmp samesign ult i64 %1, 4
   %3 = select i1 %2, i64 2, i64 1
   %4 = add nuw nsw i64 %3, %0
   ret i64 %4
@@ -149,13 +141,11 @@ define i64 @func0000000000000029(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i64 %1, -1
   %3 = select i1 %2, i64 -1, i64 1
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
-; 6 occurrences:
-; cpython/optimized/bytesio.ll
-; cpython/optimized/stringio.ll
+; 4 occurrences:
 ; spike/optimized/cm_pop.ll
 ; spike/optimized/cm_popret.ll
 ; spike/optimized/cm_popretz.ll
@@ -182,7 +172,7 @@ define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
   %3 = select i1 %2, i64 -16383, i64 -16382
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -194,7 +184,7 @@ define i64 @func000000000000001b(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp slt i64 %1, 7
   %3 = select i1 %2, i64 3, i64 4
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -229,7 +219,7 @@ define i64 @func0000000000000030(i64 %0, i64 %1) #0 {
 entry:
   %.not = icmp eq i64 %1, 0
   %2 = select i1 %.not, i64 0, i64 2
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   ret i64 %3
 }
 
@@ -252,6 +242,36 @@ entry:
   ret i64 %4
 }
 
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000033(i64 %0, i64 %1) #0 {
+entry:
+  %.not = icmp eq i64 %1, 0
+  %2 = select i1 %.not, i64 0, i64 500000000
+  %3 = add nuw nsw i64 %0, %2
+  ret i64 %3
+}
+
+; 9 occurrences:
+; cpython/optimized/bytearrayobject.ll
+; llvm/optimized/ASTContext.cpp.ll
+; llvm/optimized/Expr.cpp.ll
+; llvm/optimized/ExprCXX.cpp.ll
+; nlohmann_json/optimized/unit-binary_formats.cpp.ll
+; nlohmann_json/optimized/unit-bson.cpp.ll
+; nlohmann_json/optimized/unit-udt_macro.cpp.ll
+; protobuf/optimized/arena.cc.ll
+; quickjs/optimized/libbf.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
+entry:
+  %2 = icmp ult i64 %1, 4294967296
+  %3 = select i1 %2, i64 32, i64 40
+  %4 = add i64 %0, %3
+  ret i64 %4
+}
+
 ; 3 occurrences:
 ; llvm/optimized/ArchiveWriter.cpp.ll
 ; llvm/optimized/Expr.cpp.ll
@@ -261,7 +281,7 @@ define i64 @func0000000000000031(i64 %0, i64 %1) #0 {
 entry:
   %.not = icmp eq i64 %1, 0
   %2 = select i1 %.not, i64 0, i64 8
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   ret i64 %3
 }
 
@@ -288,7 +308,7 @@ define i64 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp slt i64 %1, 0
   %3 = select i1 %2, i64 -100, i64 0
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -300,6 +320,17 @@ entry:
   %2 = icmp ugt i64 %1, 2147483647999
   %3 = select i1 %2, i64 -2208988800, i64 2085978496
   %4 = add nsw i64 %3, %0
+  ret i64 %4
+}
+
+; 1 occurrences:
+; abseil-cpp/optimized/cord_test.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000051(i64 %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ult i64 %1, 513
+  %3 = select i1 %2, i64 8, i64 64
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -328,6 +359,18 @@ entry:
   %2 = icmp sgt i64 %1, -9223372036854775807
   %3 = select i1 %2, i64 2, i64 1
   %4 = add nuw nsw i64 %3, %0
+  ret i64 %4
+}
+
+; 2 occurrences:
+; cpython/optimized/bytesio.ll
+; cpython/optimized/stringio.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000052(i64 %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ult i64 %1, 9
+  %3 = select i1 %2, i64 3, i64 6
+  %4 = add nuw i64 %0, %3
   ret i64 %4
 }
 

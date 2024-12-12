@@ -1,5 +1,5 @@
 
-; 182 occurrences:
+; 178 occurrences:
 ; abc/optimized/extraUtilUtil.c.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time_zone_fixed.cc.ll
@@ -68,8 +68,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -126,7 +124,6 @@
 ; nlohmann_json/optimized/unit-unicode5.cpp.ll
 ; nlohmann_json/optimized/unit-user_defined_input.cpp.ll
 ; nlohmann_json/optimized/unit-wstring.cpp.ll
-; nuttx/optimized/lib_strftime.c.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; opencv/optimized/finder_pattern_finder.cpp.ll
 ; opencv/optimized/mathfuncs.cpp.ll
@@ -138,7 +135,6 @@
 ; openspiel/optimized/chess_board.cc.ll
 ; openssl/optimized/rpktest-bin-rpktest.ll
 ; ozz-animation/optimized/gltf2ozz.cc.ll
-; php/optimized/dow.ll
 ; php/optimized/interval.ll
 ; php/optimized/parse_posix.ll
 ; php/optimized/php_date.ll

@@ -1,7 +1,8 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; icu/optimized/umutablecptrie.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
 ; opencv/optimized/gfluidimgproc_func.dispatch.cpp.ll
 ; openusd/optimized/alloccommon.c.ll
 ; openusd/optimized/decoder.c.ll

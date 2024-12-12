@@ -21,7 +21,7 @@
 ; zxing/optimized/ODReader.cpp.ll
 ; zxing/optimized/QRMatrixUtil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000016a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000004ca(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp sgt i32 %3, -1
@@ -40,7 +40,7 @@ entry:
 ; openusd/optimized/AVIFImage.cpp.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000ca(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = icmp sgt i32 %3, -1
@@ -52,7 +52,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/ciMethod.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000031c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000c2c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = icmp ne i32 %3, 0
@@ -64,7 +64,7 @@ entry:
 ; 1 occurrences:
 ; verilator/optimized/V3Number.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000036a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000cca(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = icmp sgt i32 %3, -1
@@ -76,7 +76,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-reload.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000026a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000008ca(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %1, %2
   %4 = icmp sgt i32 %3, -1
@@ -88,10 +88,10 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/convhull.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000368(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000cd8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
-  %4 = icmp ugt i32 %3, 1
+  %4 = icmp samesign ugt i32 %3, 1
   %5 = icmp slt i32 %3, %0
   %6 = select i1 %4, i1 %5, i1 false
   ret i1 %6
@@ -100,7 +100,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/autofit.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ba(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000016a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = icmp sgt i32 %3, 0

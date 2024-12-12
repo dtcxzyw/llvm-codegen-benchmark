@@ -1,5 +1,5 @@
 
-; 676 occurrences:
+; 700 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/convert_test.cc.ll
@@ -11,7 +11,6 @@
 ; arrow/optimized/reader.cc.ll
 ; arrow/optimized/tdigest.cc.ll
 ; arrow/optimized/type.cc.ll
-; assimp/optimized/BlenderDNA.cpp.ll
 ; assimp/optimized/FBXConverter.cpp.ll
 ; assimp/optimized/LimitBoneWeightsProcess.cpp.ll
 ; assimp/optimized/OgreXmlSerializer.cpp.ll
@@ -19,6 +18,53 @@
 ; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/sweep_context.cc.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/env.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/ext.ll
+; boost/optimized/extensions.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/graphml.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/partition.ll
+; boost/optimized/pid.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/process.ll
+; boost/optimized/run_exe.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/settings_parser.ll
+; boost/optimized/shell.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/sub_launcher.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/throw_on_error.ll
+; boost/optimized/topology.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; casadi/optimized/mx_function.cpp.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
@@ -122,9 +168,6 @@
 ; gromacs/optimized/transformations.cpp.ll
 ; gromacs/optimized/usergpuids.cpp.ll
 ; grpc/optimized/ring_hash.cc.ll
-; harfbuzz/optimized/harfbuzz.cc.ll
-; harfbuzz/optimized/hb-subset-plan.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
 ; hermes/optimized/CFG.cpp.ll
 ; hermes/optimized/JSObject.cpp.ll
 ; hermes/optimized/Mem2Reg.cpp.ll
@@ -139,7 +182,6 @@
 ; hyperscan/optimized/teddy_compile.cpp.ll
 ; icu/optimized/icuexportdata.ll
 ; ipopt/optimized/IpTNLPReducer.ll
-; libdeflate/optimized/deflate_compress.c.ll
 ; libphonenumber/optimized/phonenumberutil.cc.ll
 ; libquic/optimized/histogram.cc.ll
 ; libquic/optimized/hpack_huffman_table.cc.ll
@@ -190,12 +232,10 @@
 ; llvm/optimized/IndVarSimplify.cpp.ll
 ; llvm/optimized/IndirectCallPromotion.cpp.ll
 ; llvm/optimized/InfoByHwMode.cpp.ll
-; llvm/optimized/InstrInfoEmitter.cpp.ll
 ; llvm/optimized/InstrProf.cpp.ll
 ; llvm/optimized/InstrRefBasedImpl.cpp.ll
 ; llvm/optimized/InstructionCombining.cpp.ll
 ; llvm/optimized/LTO.cpp.ll
-; llvm/optimized/LiteralSupport.cpp.ll
 ; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; llvm/optimized/LowerTypeTests.cpp.ll
 ; llvm/optimized/MCPseudoProbe.cpp.ll
@@ -271,13 +311,10 @@
 ; meshlab/optimized/filter_unsharp.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
-; meshlab/optimized/mainwindow_Init.cpp.ll
-; meshlab/optimized/mainwindow_RunTime.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/meshselect.cpp.ll
 ; meshlab/optimized/ml_scene_gl_shared_data_context.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
-; meshlab/optimized/multiViewer_Container.cpp.ll
 ; meshlab/optimized/pickpointsDialog.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; meshlab/optimized/seam_remover.cpp.ll
@@ -367,7 +404,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -436,16 +472,6 @@
 ; opencv/optimized/weighted_median_filter.cpp.ll
 ; openexr/optimized/ImfHuf.cpp.ll
 ; openexr/optimized/internal_huf.c.ll
-; openjdk/optimized/gcm.ll
-; openjdk/optimized/hb-face.ll
-; openjdk/optimized/hb-ot-layout.ll
-; openjdk/optimized/hb-set.ll
-; openjdk/optimized/ifnode.ll
-; openjdk/optimized/loopPredicate.ll
-; openjdk/optimized/loopopts.ll
-; openjdk/optimized/memnode.ll
-; openjdk/optimized/node.ll
-; openjdk/optimized/shenandoahSupport.ll
 ; openspiel/optimized/amazons.cc.ll
 ; openspiel/optimized/backgammon.cc.ll
 ; openspiel/optimized/battleship.cc.ll
@@ -612,8 +638,6 @@
 ; yosys/optimized/exec.ll
 ; yosys/optimized/extract.ll
 ; yosys/optimized/ezsat.ll
-; yosys/optimized/firrtl.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/opt_clean.ll
 ; yosys/optimized/proc_dlatch.ll
 ; yosys/optimized/qbfsat.ll
@@ -677,7 +701,7 @@
 ; z3/optimized/theory_pb.cpp.ll
 ; z3/optimized/theory_wmaxsat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000101(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr nusw i8, ptr %1, i64 -4
   %3 = ptrtoint ptr %2 to i64
@@ -687,13 +711,50 @@ entry:
   ret i1 %6
 }
 
+; 25 occurrences:
+; assimp/optimized/BlenderDNA.cpp.ll
+; boost/optimized/static_string.ll
+; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-subset-plan.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; libdeflate/optimized/deflate_compress.c.ll
+; llvm/optimized/InstrInfoEmitter.cpp.ll
+; llvm/optimized/LiteralSupport.cpp.ll
+; meshlab/optimized/mainwindow_Init.cpp.ll
+; meshlab/optimized/mainwindow_RunTime.cpp.ll
+; meshlab/optimized/multiViewer_Container.cpp.ll
+; opencv/optimized/find_ellipses.cpp.ll
+; openjdk/optimized/gcm.ll
+; openjdk/optimized/hb-face.ll
+; openjdk/optimized/hb-ot-layout.ll
+; openjdk/optimized/hb-set.ll
+; openjdk/optimized/ifnode.ll
+; openjdk/optimized/loopPredicate.ll
+; openjdk/optimized/loopopts.ll
+; openjdk/optimized/memnode.ll
+; openjdk/optimized/node.ll
+; openjdk/optimized/shenandoahSupport.ll
+; openusd/optimized/openexr-c.c.ll
+; yosys/optimized/firrtl.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000181(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 64
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %0
+  %5 = and i64 %4, 4294967295
+  %6 = icmp eq i64 %5, 0
+  ret i1 %6
+}
+
 ; 2 occurrences:
 ; openjdk/optimized/memnode.ll
 ; php/optimized/parse_date.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i64 %0, ptr %1) #0 {
+define i1 @func000000000000018c(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 16
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 16
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0
   %5 = and i64 %4, 68719476720

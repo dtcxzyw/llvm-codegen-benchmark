@@ -1,6 +1,5 @@
 
-; 9 occurrences:
-; llvm/optimized/AsmLexer.cpp.ll
+; 8 occurrences:
 ; llvm/optimized/DeclarationFragments.cpp.ll
 ; llvm/optimized/ExprConcepts.cpp.ll
 ; llvm/optimized/ExtractAPIConsumer.cpp.ll
@@ -10,11 +9,23 @@
 ; php/optimized/xp_socket.ll
 ; wireshark/optimized/addr_resolv.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(ptr %0, i8 %1) #0 {
+define ptr @func0000000000000061(ptr %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 4
   %3 = icmp eq i8 %2, 0
-  %4 = getelementptr nusw i8, ptr %0, i64 32
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 32
+  %5 = select i1 %3, ptr null, ptr %4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; llvm/optimized/AsmLexer.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000041(ptr %0, i8 %1) #0 {
+entry:
+  %2 = and i8 %1, -2
+  %3 = icmp eq i8 %2, 48
+  %4 = getelementptr nusw i8, ptr %0, i64 -1
   %5 = select i1 %3, ptr null, ptr %4
   ret ptr %5
 }

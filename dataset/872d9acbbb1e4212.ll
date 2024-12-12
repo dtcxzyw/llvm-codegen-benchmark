@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; rust-analyzer-rs/optimized/1arzxdbnyk8fkg2l.ll
 ; rust-analyzer-rs/optimized/2ebx9eutyph8un4i.ll
 ; rust-analyzer-rs/optimized/3j0nbdwupb3iwt86.ll
@@ -11,12 +11,13 @@
 ; rust-analyzer-rs/optimized/leba1wmgxgrzxkl.ll
 ; rust-analyzer-rs/optimized/lkt0vc36jo6l130.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, i1 %1, i8 %2) #0 {
+define i1 @func0000000000000021(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = add nsw i8 %2, -27
   %4 = select i1 %1, i8 %3, i8 1
-  %5 = icmp eq i8 %4, %0
+  %5 = icmp eq i8 %0, %4
   ret i1 %5
 }
 

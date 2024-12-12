@@ -1,5 +1,5 @@
 
-%struct.scatterlist.3348662 = type { i64, i32, i32, i64, i32, i32 }
+%struct.scatterlist.3536992 = type { i64, i32, i32, i64, i32, i32 }
 
 ; 3 occurrences:
 ; openusd/optimized/stbImage.cpp.ll
@@ -25,7 +25,7 @@ entry:
   %4 = and i64 %3, -8
   %5 = inttoptr i64 %4 to ptr
   %6 = sext i32 %0 to i64
-  %7 = getelementptr %struct.scatterlist.3348662, ptr %5, i64 %6
+  %7 = getelementptr %struct.scatterlist.3536992, ptr %5, i64 %6
   ret ptr %7
 }
 

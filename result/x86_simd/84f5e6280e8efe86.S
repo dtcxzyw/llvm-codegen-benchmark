@@ -10,3 +10,15 @@ func00000000000000ac:                   # @func00000000000000ac
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+.LCPI1_0:
+	.long	0x3f400000                      # float 0.75
+func000000000000002c:                   # @func000000000000002c
+	vpsllw	$7, %xmm0, %xmm0
+	vpxor	%xmm2, %xmm2, %xmm2
+	vxorps	%xmm3, %xmm3, %xmm3
+	vcmpleps	%zmm1, %zmm3, %k1
+	vcmpltps	.LCPI1_0(%rip){1to16}, %zmm1, %k1 {%k1}
+	vpcmpgtb	%xmm0, %xmm2, %k0 {%k1}
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq

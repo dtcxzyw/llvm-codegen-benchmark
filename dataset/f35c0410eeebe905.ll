@@ -1,9 +1,8 @@
 
-; 46 occurrences:
+; 45 occurrences:
 ; freetype/optimized/psaux.c.ll
 ; gromacs/optimized/gmx_chi.cpp.ll
 ; linux/optimized/interface.ll
-; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; opencv/optimized/AKAZE_match.cpp.ll
 ; opencv/optimized/LATCH_match.cpp.ll
 ; opencv/optimized/PnPProblem.cpp.ll

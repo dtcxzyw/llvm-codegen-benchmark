@@ -34,13 +34,25 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; abc/optimized/acbMfs.c.ll
+; lvgl/optimized/lv_math.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000009(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, -6
   %3 = ashr i32 %0, 1
+  %4 = add nsw i32 %3, %2
+  ret i32 %4
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_math.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
+entry:
+  %2 = mul i32 %1, 3
+  %3 = ashr i32 %0, 10
   %4 = add nsw i32 %3, %2
   ret i32 %4
 }

@@ -15,9 +15,3 @@ func000000000000000c:                   # @func000000000000000c
 	imulq	%rsi, %rdx
 	leaq	(%rdx,%rdi), %rax
 	retq
-func000000000000001f:                   # @func000000000000001f
-	shrq	$2, %rdx
-	andl	$2147483647, %edx               # imm = 0x7FFFFFFF
-	imulq	%rsi, %rdx
-	leaq	(%rdx,%rdi), %rax
-	retq

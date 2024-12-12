@@ -10,7 +10,7 @@
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000444(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000844(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %0, %2
   %4 = icmp ugt i64 %1, %0

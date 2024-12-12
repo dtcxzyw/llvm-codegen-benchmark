@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/hw_misc_ivshmem.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000431(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000861(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = trunc i64 %0 to i32
@@ -13,7 +13,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/cgtCore.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000501(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000a01(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = trunc nsw i64 %0 to i32
@@ -31,7 +31,7 @@ entry:
 ; slurm/optimized/slurm_protocol_defs.ll
 ; slurm/optimized/step_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000401(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000801(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = trunc i64 %0 to i32
@@ -42,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c8a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000190a(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 2
@@ -57,7 +57,7 @@ entry:
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; zxing/optimized/QREncoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c9a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000192a(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 2
@@ -71,7 +71,7 @@ entry:
 ; hyperscan/optimized/fdr_compile.cpp.ll
 ; llvm/optimized/SelectionDAGISel.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c01(i64 %0, i64 %1) #0 {
+define i1 @func0000000000001801(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = trunc i64 %0 to i32

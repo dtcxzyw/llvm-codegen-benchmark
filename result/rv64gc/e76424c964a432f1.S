@@ -1,9 +1,4 @@
-func0000000000000061:                   # @func0000000000000061
-	add	a1, a1, a2
-	xor	a0, a0, a1
-	seqz	a0, a0
-	ret
-func0000000000000068:                   # @func0000000000000068
+func00000000000000c8:                   # @func00000000000000c8
 	srai	a2, a2, 3
 	lui	a3, 748983
 	addiw	a3, a3, -585
@@ -13,7 +8,7 @@ func0000000000000068:                   # @func0000000000000068
 	add	a1, a1, a2
 	sltu	a0, a0, a1
 	ret
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	srli	a3, a2, 63
 	add	a2, a2, a3
 	slli	a2, a2, 1
@@ -22,11 +17,22 @@ func0000000000000021:                   # @func0000000000000021
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	srli	a3, a2, 63
 	add	a2, a2, a3
 	slli	a2, a2, 1
 	andi	a2, a2, -4
 	add	a1, a1, a2
 	sltu	a0, a0, a1
+	ret
+.LCPI3_0:
+	.quad	-1229782938247303432            # 0xeeeeeeeeeeeeeef8
+func00000000000000c1:                   # @func00000000000000c1
+	lui	a3, %hi(.LCPI3_0)
+	ld	a3, %lo(.LCPI3_0)(a3)
+	srli	a2, a2, 3
+	mul	a2, a2, a3
+	add	a1, a1, a2
+	xor	a0, a0, a1
+	seqz	a0, a0
 	ret

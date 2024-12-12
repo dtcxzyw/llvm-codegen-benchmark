@@ -1,8 +1,9 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; linux/optimized/clocksource.ll
 ; linux/optimized/timekeeping.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
+; zed-rs/optimized/bijypxqg3gfu3lugp8zf7c61q.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1, i32 %2) #0 {
 entry:

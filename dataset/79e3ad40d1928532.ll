@@ -30,7 +30,7 @@ entry:
 ; opencv/optimized/merge.dispatch.cpp.ll
 ; opencv/optimized/split.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(i64 %0, i64 %1) #0 {
+define ptr @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -4
   %3 = inttoptr i64 %2 to ptr

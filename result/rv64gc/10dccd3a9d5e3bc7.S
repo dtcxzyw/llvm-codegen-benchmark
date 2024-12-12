@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	srliw	a1, a1, 24
 	or	a0, a0, a1
 	sext.w	a0, a0
@@ -14,11 +14,5 @@ func000000000000000c:                   # @func000000000000000c
 	srliw	a1, a1, 31
 	or	a0, a0, a1
 	sext.w	a0, a0
-	snez	a0, a0
-	ret
-func0000000000000008:                   # @func0000000000000008
-	srliw	a0, a0, 16
-	srliw	a1, a1, 31
-	or	a0, a0, a1
 	snez	a0, a0
 	ret

@@ -1,9 +1,7 @@
 
-; 17 occurrences:
+; 15 occurrences:
 ; graphviz/optimized/make_map.c.ll
 ; gromacs/optimized/comm.cpp.ll
-; meshlab/optimized/filter_cubization.cpp.ll
-; meshlab/optimized/filter_trioptimize.cpp.ll
 ; ncnn/optimized/lstm_x86_avx.cpp.ll
 ; ncnn/optimized/lstm_x86_avx2.cpp.ll
 ; ncnn/optimized/lstm_x86_avx512.cpp.ll
@@ -21,7 +19,7 @@
 define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = srem i32 %1, 2
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }

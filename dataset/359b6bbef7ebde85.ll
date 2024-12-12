@@ -1,5 +1,5 @@
 
-; 120 occurrences:
+; 118 occurrences:
 ; abc/optimized/wlcGraft.c.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/strtod.cc.ll
@@ -38,8 +38,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -124,7 +122,7 @@
 define i64 @func0000000000000012(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = mul nuw i64 %3, %1
+  %4 = mul nuw i64 %1, %3
   %5 = lshr i64 %4, 32
   %6 = add nuw i64 %5, %0
   ret i64 %6
@@ -152,7 +150,7 @@ entry:
   ret i64 %6
 }
 
-; 103 occurrences:
+; 99 occurrences:
 ; abc/optimized/wlcGraft.c.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/strtod.cc.ll
@@ -183,8 +181,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -248,13 +244,11 @@ entry:
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; php/optimized/dtoa.ll
 ; php/optimized/strtod.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; redis/optimized/fpconv_dtoa.ll
 ; rocksdb/optimized/clock_cache.cc.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; spike/optimized/mulh.ll
 ; spike/optimized/mulhsu.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000013(i64 %0, i64 %1, i64 %2) #0 {
@@ -266,7 +260,7 @@ entry:
   ret i64 %6
 }
 
-; 90 occurrences:
+; 88 occurrences:
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; eastl/optimized/Int128_t.cpp.ll
@@ -291,8 +285,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -363,7 +355,7 @@ entry:
   %3 = and i64 %2, 4294967295
   %4 = mul nuw i64 %3, %1
   %5 = lshr i64 %4, 9
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -373,7 +365,7 @@ entry:
 define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = mul nuw i64 %3, %1
+  %4 = mul nuw i64 %1, %3
   %5 = lshr i64 %4, 32
   %6 = add nsw i64 %5, %0
   ret i64 %6
@@ -389,7 +381,7 @@ entry:
   %3 = and i64 %2, 4294967295
   %4 = mul nuw nsw i64 %3, %1
   %5 = lshr i64 %4, 32
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -401,7 +393,7 @@ entry:
   %3 = and i64 %2, -32
   %4 = mul i64 %3, %1
   %5 = lshr exact i64 %4, 3
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 

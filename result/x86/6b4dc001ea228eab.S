@@ -34,3 +34,15 @@ func0000000000000010:                   # @func0000000000000010
 	setae	%al
 	orb	%dil, %al
 	retq
+func0000000000000030:                   # @func0000000000000030
+	subq	%rdx, %rsi
+	cmpq	$5000000, %rsi                  # imm = 0x4C4B40
+	setae	%al
+	orb	%dil, %al
+	retq
+func0000000000000028:                   # @func0000000000000028
+	subq	%rdx, %rsi
+	cmpq	$8, %rsi
+	setb	%al
+	orb	%dil, %al
+	retq

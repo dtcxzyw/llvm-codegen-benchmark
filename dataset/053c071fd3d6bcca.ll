@@ -4,7 +4,6 @@
 ; duckdb/optimized/ub_duckdb_execution_index.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; linux/optimized/compaction.ll
-; linux/optimized/snapshot.ll
 ; nuttx/optimized/circbuf.c.ll
 ; openmpi/optimized/pml_ob1_recvfrag.ll
 ; qdrant-rs/optimized/1udohadh7ll8zbvb.ll
@@ -17,6 +16,7 @@
 ; wireshark/optimized/wireless_timeline.cpp.ll
 ; z3/optimized/bv_bounds_simplifier.cpp.ll
 ; z3/optimized/bv_bounds_tactic.cpp.ll
+; zed-rs/optimized/ch2hwe57miuoajae03d01wrki.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -51,7 +51,8 @@ entry:
   ret i64 %4
 }
 
-; 51 occurrences:
+; 50 occurrences:
+; boost/optimized/alloc_lib.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; darktable/optimized/introspection_cacorrectrgb.c.ll
 ; darktable/optimized/introspection_colorequal.c.ll
@@ -93,8 +94,6 @@ entry:
 ; llvm/optimized/SourceMgr.cpp.ll
 ; llvm/optimized/StringExtras.cpp.ll
 ; llvm/optimized/X86AsmParser.cpp.ll
-; luajit/optimized/lj_record.ll
-; luajit/optimized/lj_record_dyn.ll
 ; openjdk/optimized/ostream.ll
 ; openssl/optimized/libssl-lib-statem_dtls.ll
 ; openssl/optimized/libssl-shlib-statem_dtls.ll
@@ -111,7 +110,7 @@ entry:
   ret i64 %4
 }
 
-; 16 occurrences:
+; 13 occurrences:
 ; cpython/optimized/_datetimemodule.ll
 ; cpython/optimized/mpdecimal.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
@@ -122,12 +121,9 @@ entry:
 ; openssl/optimized/libcrypto-lib-v3_utl.ll
 ; openssl/optimized/libcrypto-shlib-v3_utl.ll
 ; velox/optimized/AllocationPool.cpp.ll
-; velox/optimized/LazyVector.cpp.ll
 ; velox/optimized/MallocAllocator.cpp.ll
 ; velox/optimized/MmapAllocator.cpp.ll
 ; velox/optimized/MmapArena.cpp.ll
-; velox/optimized/PrestoSerializer.cpp.ll
-; velox/optimized/RawVector.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -200,6 +196,27 @@ entry:
   %.not = icmp slt i64 %2, %0
   %3 = select i1 %.not, i64 %1, i64 %0
   ret i64 %3
+}
+
+; 1 occurrences:
+; linux/optimized/snapshot.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ult i64 %2, %0
+  %4 = select i1 %3, i64 %0, i64 %1
+  ret i64 %4
+}
+
+; 2 occurrences:
+; luajit/optimized/lj_record.ll
+; luajit/optimized/lj_record_dyn.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i64 %2, %0
+  %4 = select i1 %3, i64 %0, i64 %1
+  ret i64 %4
 }
 
 attributes #0 = { nounwind }

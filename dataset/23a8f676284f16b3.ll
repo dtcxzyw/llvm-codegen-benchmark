@@ -14,24 +14,25 @@ entry:
 }
 
 ; 2 occurrences:
+; boost/optimized/to_chars.ll
 ; icu/optimized/islamcal.ll
-; icu/optimized/tzfmt.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0) #0 {
+define i32 @func0000000000000030(i32 %0) #0 {
 entry:
-  %1 = urem i32 %0, 60000
-  %2 = icmp ult i32 %1, 10000
+  %1 = urem i32 %0, 10
+  %2 = icmp samesign ugt i32 %1, 4
   %3 = zext i1 %2 to i32
   ret i32 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; icu/optimized/islamcal.ll
+; icu/optimized/tzfmt.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000010(i32 %0) #0 {
+define i32 @func0000000000000028(i32 %0) #0 {
 entry:
-  %1 = urem i32 %0, 65
-  %2 = icmp ugt i32 %1, 31
+  %1 = urem i32 %0, 60000
+  %2 = icmp samesign ult i32 %1, 10000
   %3 = zext i1 %2 to i32
   ret i32 %3
 }

@@ -1,5 +1,5 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; jemalloc/optimized/extent.ll
 ; jemalloc/optimized/extent.pic.ll
 ; jemalloc/optimized/extent.sym.ll
@@ -8,6 +8,7 @@
 ; minetest/optimized/guiHyperText.cpp.ll
 ; redis/optimized/extent.ll
 ; redis/optimized/extent.sym.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i1 %0, i1 %1, i32 %2) #0 {
 entry:

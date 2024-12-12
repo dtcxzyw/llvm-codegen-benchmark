@@ -30,7 +30,7 @@ func0000000000000030:                   # @func0000000000000030
 	slt	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func0000000000000020:                   # @func0000000000000020
+func00000000000000a0:                   # @func00000000000000a0
 	sext.w	a2, a2
 	sext.w	a1, a1
 	sltu	a1, a1, a2

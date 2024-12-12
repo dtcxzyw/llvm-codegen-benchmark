@@ -1,10 +1,18 @@
 
-; 132 occurrences:
+; 139 occurrences:
 ; abc/optimized/abcIf.c.ll
 ; abc/optimized/giaIf.c.ll
 ; abseil-cpp/optimized/chi_square.cc.ll
 ; assimp/optimized/TriangulateProcess.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; casadi/optimized/idas.c.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_2.cc.ll
@@ -119,7 +127,6 @@
 ; ruby/optimized/numeric.ll
 ; stat-rs/optimized/1957ju1ns40544yq.ll
 ; stat-rs/optimized/350eqnsjcoc7kbdy.ll
-; stat-rs/optimized/rkxxfn3f5mhspne.ll
 ; sundials/optimized/arkode.c.ll
 ; sundials/optimized/arkode_relaxation.c.ll
 ; sundials/optimized/cvode.c.ll
@@ -211,7 +218,7 @@ entry:
   ret i1 %2
 }
 
-; 44 occurrences:
+; 43 occurrences:
 ; abc/optimized/cuddBddCorr.c.ll
 ; abc/optimized/cuddSplit.c.ll
 ; abc/optimized/cuddUtil.c.ll
@@ -248,7 +255,6 @@ entry:
 ; postgres/optimized/float.ll
 ; postgres/optimized/geo_ops.ll
 ; proj/optimized/airy.cpp.ll
-; proj/optimized/io.cpp.ll
 ; quantlib/optimized/gaussianorthogonalpolynomial.ll
 ; quantlib/optimized/modifiedbessel.ll
 ; quantlib/optimized/noarbsabr.ll
@@ -264,8 +270,13 @@ entry:
   ret i1 %2
 }
 
-; 125 occurrences:
+; 129 occurrences:
 ; abseil-cpp/optimized/chi_square.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; casadi/optimized/convexify.cpp.ll
 ; casadi/optimized/cs_amd.c.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
@@ -367,7 +378,6 @@ entry:
 ; proj/optimized/eck2.cpp.ll
 ; proj/optimized/hatano.cpp.ll
 ; proj/optimized/mbtfpq.cpp.ll
-; proj/optimized/nell_h.cpp.ll
 ; quantlib/optimized/analytichestonengine.ll
 ; quantlib/optimized/cevrndcalculator.ll
 ; quantlib/optimized/convolvedstudentt.ll
@@ -398,7 +408,7 @@ entry:
   ret i1 %2
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; meshlab/optimized/texture_optimization.cpp.ll
 ; mitsuba3/optimized/cylinder.cpp.ll
 ; mitsuba3/optimized/sphere.cpp.ll
@@ -406,7 +416,6 @@ entry:
 ; opencv/optimized/tbmr.cpp.ll
 ; openusd/optimized/mathUtils.cpp.ll
 ; postgres/optimized/geo_ops.ll
-; proj/optimized/io.cpp.ll
 ; proj/optimized/tmerc.cpp.ll
 ; quantlib/optimized/svd.ll
 ; verilator/optimized/V3StatsReport.cpp.ll
@@ -503,9 +512,10 @@ entry:
   ret i1 %2
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; assimp/optimized/clipper.cpp.ll
 ; gromacs/optimized/nrnb.cpp.ll
+; stat-rs/optimized/rkxxfn3f5mhspne.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000b(double %0) #0 {
 entry:

@@ -1,7 +1,6 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; assimp/optimized/HMPLoader.cpp.ll
-; darktable/optimized/jpeg.c.ll
 ; miniaudio/optimized/unity.c.ll
 ; openjdk/optimized/psCardTable.ll
 ; raylib/optimized/raudio.c.ll
@@ -31,6 +30,20 @@ entry:
   ret ptr %7
 }
 
+; 2 occurrences:
+; darktable/optimized/introspection_filmicrgb.c.ll
+; stockfish/optimized/tbprobe.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000bc(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = shl nuw nsw i64 %3, 3
+  %5 = zext i32 %1 to i64
+  %6 = mul nuw nsw i64 %4, %5
+  %7 = getelementptr i8, ptr %0, i64 %6
+  ret ptr %7
+}
+
 ; 1 occurrences:
 ; darktable/optimized/introspection_dither.c.ll
 ; Function Attrs: nounwind
@@ -54,6 +67,19 @@ entry:
   %4 = shl nuw nsw i64 %3, 7
   %5 = zext i32 %1 to i64
   %6 = mul i64 %4, %5
+  %7 = getelementptr i8, ptr %0, i64 %6
+  ret ptr %7
+}
+
+; 1 occurrences:
+; postgres/optimized/mcv.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000fc(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = shl nuw nsw i64 %3, 3
+  %5 = zext nneg i32 %1 to i64
+  %6 = mul nuw nsw i64 %4, %5
   %7 = getelementptr i8, ptr %0, i64 %6
   ret ptr %7
 }

@@ -22,8 +22,9 @@ entry:
   ret i16 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; abc/optimized/ivyFastMap.c.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000000a(i16 %0, i32 %1, i32 %2) #0 {
@@ -46,11 +47,10 @@ entry:
   ret i16 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; slurm/optimized/gres_filter.ll
-; slurm/optimized/job_mgr.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000028(i16 %0, i32 %1, i32 %2) #0 {
+define i16 @func0000000000000048(i16 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = trunc nuw i32 %1 to i16
   %4 = icmp ugt i32 %1, %2
@@ -61,7 +61,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/lanalyzer.c.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000026(i16 %0, i32 %1, i32 %2) #0 {
+define i16 @func0000000000000046(i16 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = trunc nuw i32 %1 to i16
   %4 = icmp slt i32 %1, %2

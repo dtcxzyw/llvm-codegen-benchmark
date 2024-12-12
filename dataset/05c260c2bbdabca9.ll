@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 21 occurrences:
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_exposure.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
@@ -15,7 +15,6 @@
 ; minetest/optimized/game.cpp.ll
 ; minetest/optimized/player.cpp.ll
 ; minetest/optimized/sky.cpp.ll
-; openblas/optimized/iparmq.c.ll
 ; opencv/optimized/approx.cpp.ll
 ; opencv/optimized/contours_approx.cpp.ll
 ; opencv/optimized/fast_line_detector.cpp.ll

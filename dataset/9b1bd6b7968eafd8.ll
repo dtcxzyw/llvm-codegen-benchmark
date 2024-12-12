@@ -1,5 +1,5 @@
 
-; 36 occurrences:
+; 35 occurrences:
 ; eastl/optimized/TestBitset.cpp.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; linux/optimized/bitmap.ll
@@ -17,7 +17,6 @@
 ; llvm/optimized/AArch64MIPeepholeOpt.cpp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll
-; nuttx/optimized/lib_trunc.c.ll
 ; openjdk/optimized/compressedOops.ll
 ; php/optimized/zend_alloc.ll
 ; qemu/optimized/hw_virtio_virtio-balloon.c.ll
@@ -70,10 +69,10 @@ entry:
 ; qemu/optimized/fpu_softfloat.c.ll
 ; spike/optimized/clz.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 -9223372036854775808, %1
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   %4 = icmp eq i64 %3, 0
   ret i1 %4
 }
@@ -81,7 +80,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaRex.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 -9223372036854775808, %1
   %3 = and i64 %2, %0

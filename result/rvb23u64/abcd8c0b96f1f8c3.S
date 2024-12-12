@@ -1,11 +1,11 @@
-func000000000000074c:                   # @func000000000000074c
+func0000000000001e8c:                   # @func0000000000001e8c
 	sext.w	a2, a2
 	addi	a1, a1, 1
 	sltu	a1, a1, a2
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func000000000000034c:                   # @func000000000000034c
+func0000000000000e8c:                   # @func0000000000000e8c
 	zext.w	a2, a2
 	addi	a1, a1, 1
 	addi	a0, a0, -25
@@ -13,7 +13,7 @@ func000000000000034c:                   # @func000000000000034c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func00000000000007c1:                   # @func00000000000007c1
+func0000000000001d81:                   # @func0000000000001d81
 	sext.w	a2, a2
 	addi	a1, a1, 1
 	xor	a1, a1, a2
@@ -21,7 +21,7 @@ func00000000000007c1:                   # @func00000000000007c1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func00000000000003c1:                   # @func00000000000003c1
+func0000000000000d81:                   # @func0000000000000d81
 	zext.w	a2, a2
 	addi	a1, a1, 1
 	xor	a1, a1, a2
@@ -29,7 +29,7 @@ func00000000000003c1:                   # @func00000000000003c1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func00000000000003c4:                   # @func00000000000003c4
+func0000000000000d84:                   # @func0000000000000d84
 	zext.w	a2, a2
 	addi	a1, a1, 1
 	xor	a1, a1, a2
@@ -37,28 +37,21 @@ func00000000000003c4:                   # @func00000000000003c4
 	sltiu	a0, a0, 2
 	and	a0, a0, a1
 	ret
-func000000000000056c:                   # @func000000000000056c
+func00000000000014cc:                   # @func00000000000014cc
 	sext.w	a2, a2
 	addi	a1, a1, 1
 	slt	a1, a1, a2
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000564:                   # @func0000000000000564
-	sext.w	a2, a2
-	addi	a1, a1, 1
-	slt	a1, a1, a2
-	sltiu	a0, a0, 31
-	and	a0, a0, a1
-	ret
-func0000000000000341:                   # @func0000000000000341
+func0000000000000e81:                   # @func0000000000000e81
 	zext.w	a2, a2
 	addi	a1, a1, 1
 	sltu	a1, a1, a2
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func00000000000007cc:                   # @func00000000000007cc
+func0000000000001d8c:                   # @func0000000000001d8c
 	sext.w	a2, a2
 	addi	a1, a1, 1
 	xor	a1, a1, a2

@@ -1,5 +1,9 @@
 
-; 8 occurrences:
+; 12 occurrences:
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; cmake/optimized/fse_compress.c.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; spike/optimized/f128_div.ll

@@ -23,7 +23,7 @@
 ; wireshark/optimized/packet-rtmpt.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003f1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000007e1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 16
   %4 = shl nuw nsw i32 %1, 8
@@ -38,7 +38,7 @@ entry:
 ; qemu/optimized/hw_scsi_scsi-disk.c.ll
 ; wireshark/optimized/packet-mpls.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003fc(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000007ec(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 16
   %4 = shl nuw nsw i32 %1, 8
@@ -57,7 +57,7 @@ entry:
 ; libwebp/optimized/image_dec.c.ll
 ; php/optimized/image.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002f1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000005e1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 16
   %4 = shl nuw nsw i32 %1, 8
@@ -67,18 +67,16 @@ entry:
   ret i1 %7
 }
 
-; 3 occurrences:
-; clamav/optimized/chmd.c.ll
+; 1 occurrences:
 ; php/optimized/image.ll
-; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002f4(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000005f4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 16
   %4 = shl nuw nsw i32 %1, 8
   %5 = or disjoint i32 %4, %3
   %6 = or disjoint i32 %5, %0
-  %7 = icmp ult i32 %6, 65
+  %7 = icmp samesign ult i32 %6, 65
   ret i1 %7
 }
 
@@ -87,7 +85,7 @@ entry:
 ; clamav/optimized/oabd.c.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002f8(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000005e8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 16
   %4 = shl nuw nsw i32 %1, 8
@@ -97,16 +95,30 @@ entry:
   ret i1 %7
 }
 
+; 2 occurrences:
+; clamav/optimized/chmd.c.ll
+; zxing/optimized/zueci.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000005e4(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl nuw i32 %2, 16
+  %4 = shl nuw nsw i32 %1, 8
+  %5 = or disjoint i32 %4, %3
+  %6 = or disjoint i32 %5, %0
+  %7 = icmp ult i32 %6, 22
+  ret i1 %7
+}
+
 ; 1 occurrences:
 ; clamav/optimized/readdb.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003c8(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000798(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 8
   %4 = shl nuw nsw i32 %1, 4
   %5 = or i32 %4, %3
   %6 = or i32 %5, %0
-  %7 = icmp ugt i32 %6, 4072
+  %7 = icmp samesign ugt i32 %6, 4072
   ret i1 %7
 }
 
@@ -141,13 +153,13 @@ entry:
 ; 1 occurrences:
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003f4(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000007f4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 16
   %4 = shl nuw nsw i32 %1, 8
   %5 = or disjoint i32 %4, %3
   %6 = or disjoint i32 %5, %0
-  %7 = icmp ult i32 %6, 18463
+  %7 = icmp samesign ult i32 %6, 18463
   ret i1 %7
 }
 
@@ -156,13 +168,13 @@ entry:
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/tls13.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003f8(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000007f8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 16
   %4 = shl nuw nsw i32 %1, 8
   %5 = or disjoint i32 %4, %3
   %6 = or disjoint i32 %5, %0
-  %7 = icmp ugt i32 %6, 18462
+  %7 = icmp samesign ugt i32 %6, 18462
   ret i1 %7
 }
 

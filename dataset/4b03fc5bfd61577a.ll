@@ -101,7 +101,26 @@ entry:
   ret i64 %4
 }
 
-; 10 occurrences:
+; 8 occurrences:
+; boost/optimized/benchmark_fstream.ll
+; boost/optimized/test_filebuf.ll
+; boost/optimized/test_fstream.ll
+; boost/optimized/test_fstream_special.ll
+; boost/optimized/test_ifstream.ll
+; boost/optimized/test_ofstream.ll
+; boost/optimized/test_stackstring.ll
+; graphviz/optimized/compound.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub i64 %0, %1
+  %3 = shl i64 %2, 2
+  %4 = add i64 %3, 4
+  ret i64 %4
+}
+
+; 11 occurrences:
+; boost/optimized/approximately_equals.ll
 ; cmake/optimized/CommandLineArguments.cxx.ll
 ; cmake/optimized/cover.c.ll
 ; postgres/optimized/bootparse.ll
@@ -116,8 +135,8 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = shl i64 %2, 2
-  %4 = add i64 %3, 4
+  %3 = shl i64 %2, 32
+  %4 = add i64 %3, 1434519076864
   ret i64 %4
 }
 
@@ -139,7 +158,7 @@ entry:
 define i64 @func0000000000000005(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %1, -1
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = shl nsw i64 %3, 2
   ret i64 %4
 }
@@ -154,17 +173,6 @@ entry:
   %2 = sub nsw i64 %0, %1
   %3 = shl i64 %2, 32
   %4 = add i64 %3, -8589934592
-  ret i64 %4
-}
-
-; 1 occurrences:
-; graphviz/optimized/compound.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
-entry:
-  %2 = sub i64 %0, %1
-  %3 = shl i64 %2, 4
-  %4 = add i64 %3, 16
   ret i64 %4
 }
 

@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 19 occurrences:
 ; assimp/optimized/COBLoader.cpp.ll
 ; assimp/optimized/XFileParser.cpp.ll
 ; cmake/optimized/archive_read_support_format_warc.c.ll
@@ -11,6 +11,7 @@
 ; llvm/optimized/GCOV.cpp.ll
 ; llvm/optimized/PPCLinux.cpp.ll
 ; llvm/optimized/SampleProfReader.cpp.ll
+; lvgl/optimized/lv_calendar_header_dropdown.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; ruby/optimized/time.ll
 ; wireshark/optimized/catapult_dct2000.c.ll
@@ -28,8 +29,9 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; abc/optimized/aigPartReg.c.ll
+; lvgl/optimized/lv_calendar_header_dropdown.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i32 %0, i8 %1) #0 {
 entry:

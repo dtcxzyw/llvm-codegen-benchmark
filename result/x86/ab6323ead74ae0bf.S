@@ -40,10 +40,3 @@ func0000000000000011:                   # @func0000000000000011
 	shll	$2, %edi
 	leal	-2(%rdi,%rax,2), %eax
 	retq
-func000000000000004f:                   # @func000000000000004f
-	shll	$4, %edi
-	leal	112(%rdi), %ecx
-	leal	88(%rdi), %eax
-	cmpl	$4, %esi
-	cmovael	%ecx, %eax
-	retq

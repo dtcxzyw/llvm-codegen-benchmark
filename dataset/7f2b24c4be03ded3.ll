@@ -100,12 +100,12 @@
 ; glslang/optimized/Initialize.cpp.ll
 ; hermes/optimized/dtoa.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1, i1 %2) #0 {
+define ptr @func000000000000001e(ptr %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 608
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 608
   %7 = getelementptr nusw [5 x ptr], ptr %6, i64 0, i64 %5
   ret ptr %7
 }
@@ -166,7 +166,6 @@ entry:
 ; cvc5/optimized/sep_skolem_emp.cpp.ll
 ; cvc5/optimized/sequences_rewriter.cpp.ll
 ; cvc5/optimized/single_inv_partition.cpp.ll
-; cvc5/optimized/skolemize.cpp.ll
 ; cvc5/optimized/sort_inference.cpp.ll
 ; cvc5/optimized/strings_entail.cpp.ll
 ; cvc5/optimized/subs_minimize.cpp.ll
@@ -205,26 +204,27 @@ entry:
 ; cvc5/optimized/type_info.cpp.ll
 ; cvc5/optimized/type_node.cpp.ll
 ; cvc5/optimized/type_set.cpp.ll
+; openspiel/optimized/mancala.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i32 %1, i1 %2) #0 {
+define ptr @func000000000000003e(ptr %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 16
-  %7 = getelementptr nusw [0 x ptr], ptr %6, i64 0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 60
+  %7 = getelementptr nusw [14 x i32], ptr %6, i64 0, i64 %5
   ret ptr %7
 }
 
 ; 1 occurrences:
 ; cpython/optimized/dtoa.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i32 %1, i1 %2) #0 {
+define ptr @func000000000000000c(ptr %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 267856
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 267856
   %7 = getelementptr [8 x ptr], ptr %6, i64 0, i64 %5
   ret ptr %7
 }

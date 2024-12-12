@@ -43,24 +43,24 @@
 ; verilator/optimized/V3WidthCommit.cpp.ll
 ; verilator/optimized/V3WidthSel.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000086(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 2
   %4 = icmp slt i32 %1, 129
   %5 = select i1 %4, i1 %3, i1 false
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000088(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 10
   %4 = icmp ugt i32 %1, 3
   %5 = select i1 %4, i1 %3, i1 false
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

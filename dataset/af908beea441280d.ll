@@ -16,7 +16,7 @@ entry:
 ; linux/optimized/skbuff.ll
 ; wolfssl/optimized/asn.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000068(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 536870910
   %4 = add nuw nsw i32 %3, 2

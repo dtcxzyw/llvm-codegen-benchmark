@@ -24,18 +24,6 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
-; arrow/optimized/bitmap_ops.cc.ll
-; slurm/optimized/slurm_persist_conn.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000011(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add nsw i64 %0, %1
-  %3 = trunc i64 %2 to i32
-  %4 = sub nsw i32 5000, %3
-  ret i32 %4
-}
-
 ; 7 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; cpython/optimized/Hacl_Hash_MD5.ll
@@ -182,35 +170,13 @@ entry:
 }
 
 ; 1 occurrences:
-; wolfssl/optimized/test.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000003d(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add nuw nsw i64 %0, %1
-  %3 = trunc nuw nsw i64 %2 to i32
-  %4 = sub nsw i32 1305, %3
-  ret i32 %4
-}
-
-; 1 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000003b(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000011(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %0, %1
-  %3 = trunc nuw i64 %2 to i32
-  %4 = sub nuw nsw i32 8, %3
-  ret i32 %4
-}
-
-; 1 occurrences:
-; openblas/optimized/dgbtrf.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000030(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add nuw nsw i64 %0, %1
+  %2 = add nsw i64 %0, %1
   %3 = trunc i64 %2 to i32
-  %4 = sub i32 0, %3
+  %4 = sub nsw i32 8, %3
   ret i32 %4
 }
 

@@ -1,6 +1,9 @@
 
-; 5 occurrences:
+; 8 occurrences:
 ; linux/optimized/intel_color.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
 ; openjdk/optimized/gtk2_interface.ll
 ; wireshark/optimized/print.c.ll
 ; wireshark/optimized/sequence_analysis.c.ll

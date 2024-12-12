@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 19 occurrences:
 ; abc/optimized/bmcBmcG.c.ll
 ; abc/optimized/bmcBmcS.c.ll
 ; abc/optimized/giaSweeper.c.ll
@@ -14,7 +14,6 @@
 ; meshlab/optimized/solver.cpp.ll
 ; openjdk/optimized/sharedRuntimeTrig.ll
 ; openmpi/optimized/reachable_netlink_module.ll
-; openmpi/optimized/reachable_weighted.ll
 ; openspiel/optimized/TransTableL.cpp.ll
 ; php/optimized/zend_alloc.ll
 ; postgres/optimized/brin_minmax_multi.ll
@@ -24,7 +23,7 @@
 define double @func0000000000000000(double %0, i32 %1) #0 {
 entry:
   %2 = sitofp i32 %1 to double
-  %3 = fadd double %2, %0
+  %3 = fadd double %0, %2
   %4 = fmul double %3, 0x4350000000000000
   ret double %4
 }

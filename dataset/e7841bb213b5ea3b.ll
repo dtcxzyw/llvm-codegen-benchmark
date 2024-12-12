@@ -1,8 +1,13 @@
 
-; 5 occurrences:
+; 10 occurrences:
+; arrow/optimized/utf8.cc.ll
 ; eastl/optimized/BenchmarkString.cpp.ll
+; hermes/optimized/BCP47Parser.cpp.ll
 ; hermes/optimized/SourceErrorManager.cpp.ll
+; jsonnet/optimized/desugarer.cpp.ll
+; jsonnet/optimized/parser.cpp.ll
 ; jsonnet/optimized/string_utils.cpp.ll
+; jsonnet/optimized/vm.cpp.ll
 ; libquic/optimized/string16.cc.ll
 ; lief/optimized/BinaryStream.cpp.ll
 ; Function Attrs: nounwind

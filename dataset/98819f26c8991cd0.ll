@@ -1,8 +1,5 @@
 
-; 4 occurrences:
-; minetest/optimized/CGUIFont.cpp.ll
-; minetest/optimized/COpenGLDriver.cpp.ll
-; minetest/optimized/CSkinnedMesh.cpp.ll
+; 1 occurrences:
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
@@ -14,7 +11,7 @@ entry:
   ret i64 %6
 }
 
-; 19 occurrences:
+; 17 occurrences:
 ; arrow/optimized/encode_internal.cc.ll
 ; arrow/optimized/grouper.cc.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -31,9 +28,7 @@ entry:
 ; llvm/optimized/ResourcePriorityQueue.cpp.ll
 ; llvm/optimized/ScheduleDAGRRList.cpp.ll
 ; luau/optimized/Parser.cpp.ll
-; minetest/optimized/CGUITTFont.cpp.ll
 ; minetest/optimized/COpenGLDriver.cpp.ll
-; minetest/optimized/CSkinnedMesh.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -41,19 +36,6 @@ entry:
   %4 = lshr exact i64 %3, 3
   %5 = and i64 %4, 4294967295
   %6 = sub nuw nsw i64 %5, %0
-  ret i64 %6
-}
-
-; 2 occurrences:
-; minetest/optimized/CSkinnedMesh.cpp.ll
-; minetest/optimized/CXMeshFileLoader.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sub i64 %1, %2
-  %4 = lshr exact i64 %3, 2
-  %5 = and i64 %4, 4294967295
-  %6 = sub nsw i64 %5, %0
   ret i64 %6
 }
 

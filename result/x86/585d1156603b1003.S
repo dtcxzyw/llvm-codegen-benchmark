@@ -53,3 +53,8 @@ func0000000000000020:                   # @func0000000000000020
 	leal	1(%rdi,%rsi), %eax
 	cltq
 	retq
+func000000000000002d:                   # @func000000000000002d
+	addl	%edx, %esi
+	leal	1(%rdi,%rsi), %eax
+	cltq
+	retq

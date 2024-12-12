@@ -1,6 +1,5 @@
 
-; 24 occurrences:
-; clamav/optimized/crc.cpp.ll
+; 23 occurrences:
 ; clamav/optimized/spin.c.ll
 ; cmake/optimized/crc32.c.ll
 ; cpython/optimized/codeobject.ll
@@ -39,7 +38,7 @@ entry:
 ; opencv/optimized/disparity_filtering.cpp.ll
 ; z3/optimized/value_generator.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = icmp eq i32 %2, 0

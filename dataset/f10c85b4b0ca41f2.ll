@@ -1,5 +1,5 @@
 
-; 54 occurrences:
+; 53 occurrences:
 ; clamav/optimized/list.cpp.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; freetype/optimized/pfr.c.ll
@@ -11,7 +11,6 @@
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/gup.ll
 ; linux/optimized/intel_dpll_mgr.ll
-; linux/optimized/mii.ll
 ; linux/optimized/net.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/seq_clientmgr.ll
@@ -55,7 +54,7 @@
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; wireshark/optimized/packet-packetbb.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 16
   %3 = icmp eq i32 %2, 0
@@ -68,7 +67,7 @@ entry:
 ; 1 occurrences:
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -7
   %3 = icmp eq i32 %2, 0
@@ -81,7 +80,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c1(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000181(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 16
   %.not = icmp eq i32 %2, 0

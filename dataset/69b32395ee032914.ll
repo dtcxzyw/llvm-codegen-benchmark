@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 24 occurrences:
 ; arrow/optimized/message.cc.ll
 ; glslang/optimized/SPVRemapper.cpp.ll
 ; hyperscan/optimized/teddy_engine_description.cpp.ll
@@ -9,7 +9,6 @@
 ; llvm/optimized/InstructionCombining.cpp.ll
 ; llvm/optimized/PGOInstrumentation.cpp.ll
 ; llvm/optimized/RISCVCallLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/WinCOFFObjectWriter.cpp.ll
 ; llvm/optimized/X86AsmBackend.cpp.ll
@@ -34,13 +33,12 @@ entry:
   ret i32 %4
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; gromacs/optimized/pme.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; openjdk/optimized/fieldLayoutBuilder.ll
 ; openjdk/optimized/output.ll
 ; openspiel/optimized/tiny_bridge.cc.ll
-; proj/optimized/crs.cpp.ll
 ; rocksdb/optimized/db_impl_compaction_flush.cc.ll
 ; verilator/optimized/V3SplitVar.cpp.ll
 ; z3/optimized/sat_ddfw.cpp.ll
@@ -79,7 +77,7 @@ define i32 @func0000000000000008(i32 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = select i1 %2, i32 8, i32 4
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 

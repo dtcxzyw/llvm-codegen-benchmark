@@ -66,8 +66,7 @@ entry:
   ret i64 %4
 }
 
-; 16 occurrences:
-; clamav/optimized/conv.c.ll
+; 15 occurrences:
 ; darktable/optimized/Cr2Decompressor.cpp.ll
 ; darktable/optimized/LJpegDecompressor.cpp.ll
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -139,6 +138,20 @@ entry:
   ret i64 %4
 }
 
+; 4 occurrences:
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
+; boost/optimized/instantiate_predef_macros.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000a(i64 %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 1
+  %3 = add nuw i64 %2, 1
+  %4 = sub nuw i64 %3, %0
+  ret i64 %4
+}
+
 ; 1 occurrences:
 ; actix-rs/optimized/4vksfexudgt1qids.ll
 ; Function Attrs: nounwind
@@ -147,6 +160,28 @@ entry:
   %2 = lshr exact i64 %1, 5
   %3 = add nuw nsw i64 %2, 1
   %4 = sub nuw i64 %3, %0
+  ret i64 %4
+}
+
+; 1 occurrences:
+; zed-rs/optimized/e7lqw1ynol01cwrgb8ri1wedr.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 3
+  %3 = xor i64 %0, -1
+  %4 = add i64 %2, %3
+  ret i64 %4
+}
+
+; 1 occurrences:
+; zed-rs/optimized/e7lqw1ynol01cwrgb8ri1wedr.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 3
+  %3 = xor i64 %0, -1
+  %4 = add i64 %2, %3
   ret i64 %4
 }
 

@@ -9,23 +9,23 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	$8, %rdx
 	cmovbq	%rdi, %rax
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	addq	$-5, %rdx
 	leaq	-72(%rsi), %rax
 	cmpq	$-2, %rdx
 	cmovbq	%rdi, %rax
 	retq
-func0000000000000026:                   # @func0000000000000026
+func0000000000000066:                   # @func0000000000000066
 	leaq	8(%rsi), %rax
 	incq	%rdx
 	cmovsq	%rdi, %rax
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000061:                   # @func0000000000000061
 	leaq	16(%rsi), %rax
 	cmpq	$1, %rdx
 	cmoveq	%rdi, %rax
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000064:                   # @func0000000000000064
 	addq	$151, %rdx
 	leaq	150(%rsi), %rax
 	cmpq	$150, %rdx

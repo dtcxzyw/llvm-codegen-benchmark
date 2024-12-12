@@ -89,7 +89,7 @@ func0000000000000001:                   # @func0000000000000001
 	.byte	0                               # 0x0
 .LCPI3_1:
 	.quad	4278190080                      # 0xff000000
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	vpandq	.LCPI3_1(%rip){1to4}, %ymm0, %ymm0
 	vpcmpeqq	.LCPI3_1(%rip){1to4}, %ymm0, %k0
 	vpmovm2d	%k0, %xmm0
@@ -106,7 +106,7 @@ func000000000000000c:                   # @func000000000000000c
 	retq
 .LCPI5_0:
 	.long	8192                            # 0x2000
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	vpmovqd	%ymm0, %xmm0
 	vpbroadcastd	.LCPI5_0(%rip), %xmm1   # xmm1 = [8192,8192,8192,8192]
 	vpcmpgtd	%xmm0, %xmm1, %xmm0

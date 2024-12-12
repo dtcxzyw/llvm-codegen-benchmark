@@ -1,8 +1,8 @@
 
-%struct.pmp_entry_t.2596713 = type { i64, i8 }
-%"struct.CFF::number_t.2621885" = type { double }
-%struct.BEValue.2634665 = type { i8, i32, ptr, ptr, ptr }
-%struct.intel_wm_level.3358540 = type { i8, i32, i32, i32, i32 }
+%struct.pmp_entry_t.2710180 = type { i64, i8 }
+%"struct.CFF::number_t.2735326" = type { double }
+%struct.BEValue.2748051 = type { i8, i32, ptr, ptr, ptr }
+%struct.intel_wm_level.3545524 = type { i8, i32, i32, i32, i32 }
 
 ; 5 occurrences:
 ; qemu/optimized/hw_usb_hcd-ehci.c.ll
@@ -14,7 +14,7 @@
 define ptr @func0000000000000040(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = zext i32 %4 to i64
   %6 = getelementptr [6 x ptr], ptr %0, i64 0, i64 %5
   ret ptr %6
@@ -26,9 +26,9 @@ entry:
 define ptr @func0000000000000064(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr [16 x %struct.pmp_entry_t.2596713], ptr %0, i64 0, i64 %5
+  %6 = getelementptr [16 x %struct.pmp_entry_t.2710180], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -41,12 +41,12 @@ entry:
 ; openjdk/optimized/hb-ot-cff2-table.ll
 ; stockfish/optimized/evaluate_nnue.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000062(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000063(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw [513 x %"struct.CFF::number_t.2621885"], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [513 x %"struct.CFF::number_t.2735326"], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -79,12 +79,12 @@ entry:
 ; yyjson/optimized/yyjson.c.ll
 ; z3/optimized/dl_rule.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000042(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000043(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw [256 x %struct.BEValue.2634665], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [256 x %struct.BEValue.2748051], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -104,12 +104,12 @@ entry:
 ; wolfssl/optimized/sp_int.c.ll
 ; z3/optimized/sat_drat.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw [1 x i8], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [1 x i8], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -118,12 +118,12 @@ entry:
 ; openusd/optimized/cdef_block.c.ll
 ; z3/optimized/small_object_allocator.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007e(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw [15 x i32], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [15 x i32], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -133,7 +133,7 @@ entry:
 define ptr @func0000000000000044(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = zext nneg i32 %4 to i64
   %6 = getelementptr [512 x i32], ptr %0, i64 0, i64 %5
   ret ptr %6
@@ -145,7 +145,7 @@ entry:
 define ptr @func0000000000000060(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = zext i32 %4 to i64
   %6 = getelementptr [128 x i8], ptr %0, i64 0, i64 %5
   ret ptr %6
@@ -157,9 +157,9 @@ entry:
 define ptr @func000000000000007c(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr [5 x %struct.intel_wm_level.3358540], ptr %0, i64 0, i64 %5
+  %6 = getelementptr [5 x %struct.intel_wm_level.3545524], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 
@@ -169,7 +169,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = zext i32 %4 to i64
   %6 = getelementptr [16 x [768 x i16]], ptr %0, i64 0, i64 %5
   ret ptr %6
@@ -178,12 +178,12 @@ entry:
 ; 1 occurrences:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000066(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000067(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw [3 x i32], ptr %0, i64 0, i64 %5
+  %6 = getelementptr nusw nuw [3 x i32], ptr %0, i64 0, i64 %5
   ret ptr %6
 }
 

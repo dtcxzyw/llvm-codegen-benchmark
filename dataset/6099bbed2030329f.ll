@@ -1,10 +1,9 @@
 
-; 29 occurrences:
+; 28 occurrences:
 ; icu/optimized/punycode.ll
 ; libquic/optimized/ssl_lib.c.ll
 ; linux/optimized/ds.ll
 ; linux/optimized/io_uring.ll
-; linux/optimized/nsxfname.ll
 ; llvm/optimized/CodeViewDebug.cpp.ll
 ; llvm/optimized/ExprConcepts.cpp.ll
 ; llvm/optimized/MachObjectWriter.cpp.ll
@@ -37,7 +36,7 @@ entry:
   ret i16 %3
 }
 
-; 43 occurrences:
+; 42 occurrences:
 ; icu/optimized/uidna.ll
 ; libevent/optimized/evmap.c.ll
 ; linux/optimized/ata_piix.ll
@@ -67,7 +66,6 @@ entry:
 ; openvdb/optimized/PoissonSolver.cc.ll
 ; openvdb/optimized/TopologyToLevelSet.cc.ll
 ; openvdb/optimized/points.cc.ll
-; php/optimized/pcre2_maketables.ll
 ; postgres/optimized/heapam.ll
 ; postgres/optimized/indexcmds.ll
 ; qemu/optimized/hw_pci_msi.c.ll

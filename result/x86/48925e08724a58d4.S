@@ -1,35 +1,40 @@
 func0000000000000004:                   # @func0000000000000004
 	addl	%edx, %esi
-	cmpw	%di, %si
-	seta	%al
+	cmpw	%si, %di
+	setb	%al
 	retq
 func0000000000000006:                   # @func0000000000000006
 	addl	%edx, %esi
-	cmpw	%di, %si
-	setg	%al
+	cmpw	%si, %di
+	setl	%al
 	retq
 func000000000000000a:                   # @func000000000000000a
 	addl	%edx, %esi
-	cmpw	%di, %si
-	setl	%al
+	cmpw	%si, %di
+	setg	%al
 	retq
 func000000000000000c:                   # @func000000000000000c
 	addl	%edx, %esi
-	cmpw	%di, %si
+	cmpw	%si, %di
 	setne	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
 	addl	%edx, %esi
-	cmpw	%di, %si
+	cmpw	%si, %di
 	sete	%al
 	retq
 func0000000000000008:                   # @func0000000000000008
 	addl	%edx, %esi
-	cmpw	%di, %si
-	setb	%al
+	cmpw	%si, %di
+	seta	%al
+	retq
+func0000000000000009:                   # @func0000000000000009
+	addl	%edx, %esi
+	cmpw	%si, %di
+	setae	%al
 	retq
 func0000000000000005:                   # @func0000000000000005
 	addl	%edx, %esi
-	cmpw	%di, %si
-	setae	%al
+	cmpw	%si, %di
+	setbe	%al
 	retq

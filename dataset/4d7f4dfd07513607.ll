@@ -1,18 +1,18 @@
 
-%struct.deflate_optimum_node.2634602 = type { i32, i32 }
-%union.LWLockPadded.3466997 = type { %struct.LWLock.3466998, [112 x i8] }
-%struct.LWLock.3466998 = type { i16, %struct.pg_atomic_uint32.3466999, %struct.proclist_head.3467000 }
-%struct.pg_atomic_uint32.3466999 = type { i32 }
-%struct.proclist_head.3467000 = type { i32, i32 }
+%struct.deflate_optimum_node.2747994 = type { i32, i32 }
+%union.LWLockPadded.3651208 = type { %struct.LWLock.3651209, [112 x i8] }
+%struct.LWLock.3651209 = type { i16, %struct.pg_atomic_uint32.3651210, %struct.proclist_head.3651211 }
+%struct.pg_atomic_uint32.3651210 = type { i32 }
+%struct.proclist_head.3651211 = type { i32, i32 }
 
 ; 1 occurrences:
 ; openjdk/optimized/ps_core.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000064(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -4
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
   %6 = icmp ult ptr %5, %0
   ret i1 %6
 }
@@ -62,11 +62,11 @@ entry:
 ; velox/optimized/HashStringAllocator.cpp.ll
 ; z3/optimized/dimacs_frontend.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 511
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw %struct.deflate_optimum_node.2634602, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw %struct.deflate_optimum_node.2747994, ptr %1, i64 %4
   %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
@@ -82,11 +82,11 @@ entry:
 ; verilator/optimized/V3EmitCSyms.cpp.ll
 ; verilator/optimized/V3GraphAlg.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000ec(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 8
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
   %6 = icmp ne ptr %5, %0
   ret i1 %6
 }
@@ -97,11 +97,11 @@ entry:
 ; php/optimized/phpdbg.ll
 ; snappy/optimized/snappy.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000e4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 3
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
   %6 = icmp ult ptr %5, %0
   ret i1 %6
 }
@@ -124,11 +124,11 @@ entry:
 ; luajit/optimized/lj_func_dyn.ll
 ; velox/optimized/HashStringAllocator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000e8(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 536870911
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
   %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
@@ -142,11 +142,11 @@ entry:
 ; hermes/optimized/StringPrimitive.cpp.ll
 ; hermes/optimized/hermes.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000068(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -8
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
   %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
@@ -169,7 +169,7 @@ entry:
 ; postgres/optimized/multixact.ll
 ; postgres/optimized/predicate.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000084(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 508
   %4 = zext nneg i32 %3 to i64
@@ -181,11 +181,11 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/predicate.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000088(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 15
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %union.LWLockPadded.3466997, ptr %1, i64 %4
+  %5 = getelementptr %union.LWLockPadded.3651208, ptr %1, i64 %4
   %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }

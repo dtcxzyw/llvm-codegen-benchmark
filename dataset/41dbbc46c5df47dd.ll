@@ -1,18 +1,14 @@
 
-; 139 occurrences:
+; 133 occurrences:
 ; abc/optimized/cuddCompose.c.ll
-; abc/optimized/cuddInit.c.ll
 ; abc/optimized/cuddLinear.c.ll
 ; abc/optimized/cuddReorder.c.ll
 ; abc/optimized/cuddTable.c.ll
-; abc/optimized/ifDec08.c.ll
-; abc/optimized/ifDec10.c.ll
-; abc/optimized/ifDec16.c.ll
-; abc/optimized/kitTruth.c.ll
 ; abseil-cpp/optimized/extension_test.cc.ll
 ; abseil-cpp/optimized/hashtablez_sampler_test.cc.ll
 ; abseil-cpp/optimized/mutex_test.cc.ll
 ; abseil-cpp/optimized/sample_recorder_test.cc.ll
+; boost/optimized/benchmark_fstream.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; clamav/optimized/autoit.c.ll
@@ -43,7 +39,6 @@
 ; linux/optimized/percpu.ll
 ; linux/optimized/set_memory.ll
 ; llvm/optimized/RISCVMergeBaseOffset.cpp.ll
-; llvm/optimized/SelectionDAG.cpp.ll
 ; luajit/optimized/minilua.ll
 ; luau/optimized/lgc.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
@@ -66,7 +61,6 @@
 ; mold/optimized/output-chunks.cc.RV64LE.cc.ll
 ; mold/optimized/output-chunks.cc.S390X.cc.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
-; ncnn/optimized/pooling3d.cpp.ll
 ; ocio/optimized/Platform.cpp.ll
 ; opencv/optimized/opencv-caffe.pb.cc.ll
 ; openexr/optimized/attributes.c.ll
@@ -148,7 +142,7 @@ entry:
   ret i64 %4
 }
 
-; 102 occurrences:
+; 106 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absRef.c.ll
 ; abc/optimized/absVta.c.ll
@@ -158,6 +152,7 @@ entry:
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/inflate.c.ll
 ; arrow/optimized/vector_selection_internal.cc.ll
+; bullet3/optimized/b3GpuSapBroadphase.ll
 ; ceres/optimized/block_random_access_sparse_matrix.cc.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; ceres/optimized/cuda_block_structure.cc.ll
@@ -169,9 +164,11 @@ entry:
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_colorreconstruction.c.ll
+; darktable/optimized/introspection_colorzones.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; gromacs/optimized/inflate.c.ll
+; gromacs/optimized/partition.cpp.ll
 ; jq/optimized/jv.ll
 ; jq/optimized/regexec.ll
 ; libjpeg-turbo/optimized/jidctint.c.ll
@@ -221,12 +218,13 @@ entry:
 ; openjdk/optimized/Ushort565Rgb.ll
 ; openjdk/optimized/UshortGray.ll
 ; openjdk/optimized/UshortIndexed.ll
-; openjdk/optimized/jni.ll
 ; openjdk/optimized/jvmtiEnvBase.ll
 ; openjdk/optimized/objArrayKlass.ll
 ; openjdk/optimized/vmIntrinsics.ll
 ; openmpi/optimized/hook_comm_method_fns.ll
 ; openmpi/optimized/ompi_datatype_args.ll
+; openusd/optimized/av1_dx_iface.c.ll
+; openusd/optimized/decodeframe.c.ll
 ; pbrt-v4/optimized/display.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; pbrt-v4/optimized/pspec.cpp.ll
@@ -280,7 +278,7 @@ define i64 @func000000000000000d(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = shl nuw nsw i64 %2, 4
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 

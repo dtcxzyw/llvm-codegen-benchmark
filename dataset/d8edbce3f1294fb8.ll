@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000004c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %0, 8
   %4 = icmp slt i32 %1, %2

@@ -5,7 +5,7 @@
 ; icu/optimized/double-conversion-strtod.ll
 ; openusd/optimized/strtod.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000046(i64 %0, i32 %1, i32 %2) #0 {
+define i64 @func0000000000000086(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 19, %2
   %4 = icmp slt i32 %3, %1

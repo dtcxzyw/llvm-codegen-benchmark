@@ -19,12 +19,11 @@ entry:
   ret i32 %3
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; opencv/optimized/daisy.cpp.ll
 ; openjdk/optimized/hb-ot-shape-fallback.ll
 ; openspiel/optimized/y.cc.ll
-; slurm/optimized/heartbeat.ll
 ; wireshark/optimized/packet-dnp.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i16 %1) #0 {

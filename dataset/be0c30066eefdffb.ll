@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 12 occurrences:
 ; linux/optimized/drm_modes.ll
 ; linux/optimized/tcp.ll
 ; linux/optimized/tcp_input.ll
@@ -9,6 +9,9 @@
 ; openmpi/optimized/topo_base_dist_graph_create.ll
 ; spike/optimized/ksub32.ll
 ; velox/optimized/MmapAllocator.cpp.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i64 %1, i64 %2) #0 {
 entry:

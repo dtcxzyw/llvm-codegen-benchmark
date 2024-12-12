@@ -1,6 +1,7 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; clamav/optimized/infblock.c.ll
+; lvgl/optimized/lv_flex.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; Function Attrs: nounwind

@@ -1,8 +1,7 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; image-rs/optimized/fyek6fuqg0ocunt.ll
 ; lief/optimized/ecp.c.ll
-; linux/optimized/pcm_timer.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; meilisearch-rs/optimized/2vln1wcrdf8krbw1.ll

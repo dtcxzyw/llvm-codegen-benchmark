@@ -9,7 +9,7 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	negl	%eax
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	xorl	%eax, %eax
 	cmpl	$-146097, %edi                  # imm = 0xFFFDC54F
 	sbbl	%eax, %eax

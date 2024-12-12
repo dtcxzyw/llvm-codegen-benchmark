@@ -24,7 +24,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/fib_trie.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 1
   %3 = and i64 %0, -2
@@ -32,14 +32,13 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
-; opencv/optimized/reshape_layer.cpp.ll
+; 1 occurrences:
 ; xgboost/optimized/cpu_predictor.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl nuw nsw i64 %1, 2
-  %3 = and i64 %0, 17179869180
+  %2 = shl nuw nsw i64 %1, 6
+  %3 = and i64 %0, 4294967295
   %4 = icmp eq i64 %3, %2
   ret i1 %4
 }

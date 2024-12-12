@@ -1,5 +1,5 @@
 
-; 60 occurrences:
+; 59 occurrences:
 ; abc/optimized/acbTest.c.ll
 ; abc/optimized/cutPre22.c.ll
 ; abc/optimized/extraUtilMaj.c.ll
@@ -53,7 +53,6 @@
 ; opencv/optimized/learning_based_color_balance.cpp.ll
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
-; openmpi/optimized/ad_read_coll.ll
 ; openusd/optimized/convolve.c.ll
 ; openusd/optimized/loopPatchBuilder.cpp.ll
 ; qemu/optimized/hw_pci_shpc.c.ll
@@ -89,13 +88,12 @@ entry:
   ret i64 %3
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; git/optimized/unpack-trees.ll
 ; gromacs/optimized/dlarrex.cpp.ll
 ; gromacs/optimized/dlarrvx.cpp.ll
 ; gromacs/optimized/slarrex.cpp.ll
 ; gromacs/optimized/slarrvx.cpp.ll
-; linux/optimized/hdac_controller.ll
 ; linux/optimized/lbr.ll
 ; opencv/optimized/posit.cpp.ll
 ; postgres/optimized/dsa.ll
@@ -111,12 +109,11 @@ entry:
   ret i64 %3
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; gromacs/optimized/dlarrbx.cpp.ll
 ; gromacs/optimized/slarrbx.cpp.ll
 ; icu/optimized/ubidi.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
-; linux/optimized/mpih-mul.ll
 ; openblas/optimized/dlaqr5.c.ll
 ; openblas/optimized/dlarrj.c.ll
 ; openblas/optimized/dlarrv.c.ll

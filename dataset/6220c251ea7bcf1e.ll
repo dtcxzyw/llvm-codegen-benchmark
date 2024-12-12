@@ -1,15 +1,18 @@
 
-; 6 occurrences:
+; 9 occurrences:
 ; icu/optimized/ucm.ll
 ; llvm/optimized/CGCleanup.cpp.ll
 ; llvm/optimized/SanitizerMetadata.cpp.ll
+; lvgl/optimized/lv_anim.ll
 ; minetest/optimized/localplayer.cpp.ll
 ; openspiel/optimized/Moves.cpp.ll
+; openssl/optimized/libssl-lib-rec_layer_s3.ll
+; openssl/optimized/libssl-shlib-rec_layer_s3.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i1 %0, i1 %1, i8 %2) #0 {
 entry:
-  %3 = icmp ne i8 %2, 0
+  %3 = icmp ne i8 %2, 20
   %4 = or i1 %3, %1
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
@@ -28,7 +31,7 @@ entry:
 define i1 @func0000000000000002(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 6
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }

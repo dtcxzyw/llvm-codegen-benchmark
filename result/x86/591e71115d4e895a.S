@@ -15,14 +15,13 @@ func0000000000000006:                   # @func0000000000000006
 	notb	%dil
 	andb	%dil, %al
 	retq
-func0000000000000031:                   # @func0000000000000031
-	orl	%edx, %esi
-	sete	%al
-	notb	%dil
-	andb	%dil, %al
-	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	addl	%edx, %esi
+	sete	%al
+	orb	%dil, %al
+	retq
+func0000000000000061:                   # @func0000000000000061
+	orl	%edx, %esi
 	sete	%al
 	orb	%dil, %al
 	retq
@@ -32,13 +31,13 @@ func000000000000000c:                   # @func000000000000000c
 	notb	%dil
 	andb	%dil, %al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	addl	%edx, %esi
 	testl	%esi, %esi
 	setg	%al
 	orb	%dil, %al
 	retq
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	addl	%edx, %esi
 	sets	%al
 	notb	%dil

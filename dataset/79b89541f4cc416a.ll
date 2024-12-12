@@ -6,7 +6,7 @@
 define i64 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 16
-  %3 = mul nsw i32 %2, %0
+  %3 = mul nsw i32 %0, %2
   %4 = sext i32 %3 to i64
   %5 = shl nsw i64 %4, 2
   ret i64 %5

@@ -1,19 +1,4 @@
 
-; 5 occurrences:
-; jq/optimized/decNumber.ll
-; linux/optimized/intel_pps.ll
-; linux/optimized/sch_api.ll
-; openssl/optimized/libcrypto-lib-dh_gen.ll
-; openssl/optimized/libcrypto-shlib-dh_gen.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000f(i32 %0) #0 {
-entry:
-  %1 = add nuw nsw i32 %0, 24
-  %2 = urem i32 %1, 25
-  %3 = sub nuw nsw i32 %1, %2
-  ret i32 %3
-}
-
 ; 6 occurrences:
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
@@ -52,6 +37,19 @@ entry:
   %1 = add i32 %0, -24
   %2 = urem i32 %1, 24
   %3 = sub nuw i32 %1, %2
+  ret i32 %3
+}
+
+; 3 occurrences:
+; jq/optimized/decNumber.ll
+; linux/optimized/intel_pps.ll
+; linux/optimized/sch_api.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000f(i32 %0) #0 {
+entry:
+  %1 = add nuw nsw i32 %0, 2
+  %2 = urem i32 %1, 3
+  %3 = sub nuw nsw i32 %1, %2
   ret i32 %3
 }
 

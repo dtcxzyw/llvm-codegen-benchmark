@@ -1,11 +1,11 @@
-func0000000000000082:                   # @func0000000000000082
+func0000000000000102:                   # @func0000000000000102
 	shrq	$3, %rsi
 	imull	$-1431655765, %esi, %eax        # imm = 0xAAAAAAAB
 	testl	%eax, %eax
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000090:                   # @func0000000000000090
+func0000000000000110:                   # @func0000000000000110
 	shrq	$3, %rsi
 	imull	$-991146299, %esi, %eax         # imm = 0xC4EC4EC5
 	cmpl	$4000, %eax                     # imm = 0xFA0

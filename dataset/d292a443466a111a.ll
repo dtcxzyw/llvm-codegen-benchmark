@@ -1,18 +1,20 @@
 
-; 3 occurrences:
+; 5 occurrences:
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; llvm/optimized/DWARFAcceleratorTable.cpp.ll
 ; mitsuba3/optimized/codeholder.cpp.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/9ov4zhuctgxchiaoar4zqfrza.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, %1
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
-; 95 occurrences:
+; 93 occurrences:
 ; lief/optimized/File.cpp.ll
 ; linux/optimized/clocksource.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -34,8 +36,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -113,7 +113,7 @@ define i64 @func0000000000000010(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl i64 %3, %1
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -586,7 +586,26 @@ define i64 @func000000000000001f(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, %1
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
+  ret i64 %5
+}
+
+; 9 occurrences:
+; hermes/optimized/GCBase.cpp.ll
+; openjdk/optimized/metaspaceStatistics.ll
+; protobuf/optimized/extension_set.cc.ll
+; protobuf/optimized/primitive_field.cc.ll
+; sentencepiece/optimized/extension_set.cc.ll
+; zfp/optimized/encode1f.c.ll
+; zfp/optimized/encode1i.c.ll
+; zfp/optimized/encode2f.c.ll
+; zfp/optimized/encode2i.c.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001c(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = shl nuw nsw i64 %3, %1
+  %5 = add i64 %4, %0
   ret i64 %5
 }
 
@@ -607,24 +626,6 @@ entry:
   ret i64 %5
 }
 
-; 8 occurrences:
-; hermes/optimized/GCBase.cpp.ll
-; protobuf/optimized/extension_set.cc.ll
-; protobuf/optimized/primitive_field.cc.ll
-; sentencepiece/optimized/extension_set.cc.ll
-; zfp/optimized/encode1f.c.ll
-; zfp/optimized/encode1i.c.ll
-; zfp/optimized/encode2f.c.ll
-; zfp/optimized/encode2i.c.ll
-; Function Attrs: nounwind
-define i64 @func000000000000001c(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext nneg i32 %2 to i64
-  %4 = shl nuw nsw i64 %3, %1
-  %5 = add i64 %4, %0
-  ret i64 %5
-}
-
 ; 1 occurrences:
 ; regex-rs/optimized/33whcn8n29l9c6ys.ll
 ; Function Attrs: nounwind
@@ -632,12 +633,13 @@ define i64 @func0000000000000002(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl i64 %3, %1
-  %5 = add nuw i64 %4, %0
+  %5 = add nuw i64 %0, %4
   ret i64 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; llvm/optimized/DWARFAcceleratorTable.cpp.ll
+; openusd/optimized/avif.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1, i32 %2) #0 {
 entry:
@@ -654,7 +656,7 @@ define i64 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nsw i64 %3, %1
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 

@@ -38,12 +38,22 @@ func0000000000000002:                   # @func0000000000000002
 	subq	%rax, %rsi
 	leaq	(%rsi,%rdi), %rax
 	retq
-func0000000000000000:                   # @func0000000000000000
+func000000000000001b:                   # @func000000000000001b
 	movzbl	%dl, %eax
 	subq	%rax, %rsi
 	leaq	(%rsi,%rdi), %rax
 	retq
 func000000000000001a:                   # @func000000000000001a
+	movzbl	%dl, %eax
+	subq	%rax, %rsi
+	leaq	(%rsi,%rdi), %rax
+	retq
+func000000000000000f:                   # @func000000000000000f
+	movzbl	%dl, %eax
+	subq	%rax, %rsi
+	leaq	(%rsi,%rdi), %rax
+	retq
+func0000000000000000:                   # @func0000000000000000
 	movzbl	%dl, %eax
 	subq	%rax, %rsi
 	leaq	(%rsi,%rdi), %rax

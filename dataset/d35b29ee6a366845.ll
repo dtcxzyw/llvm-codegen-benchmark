@@ -1,8 +1,9 @@
 
-; 36 occurrences:
+; 37 occurrences:
 ; abseil-cpp/optimized/chi_square_test.cc.ll
 ; abseil-cpp/optimized/poisson_distribution_test.cc.ll
 ; darktable/optimized/IiqDecoder.cpp.ll
+; darktable/optimized/introspection_cacorrect.c.ll
 ; graphviz/optimized/mq.c.ll
 ; graphviz/optimized/post_process.c.ll
 ; graphviz/optimized/stress.c.ll

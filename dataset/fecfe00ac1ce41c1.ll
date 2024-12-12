@@ -1,5 +1,6 @@
 
-; 15 occurrences:
+; 16 occurrences:
+; arrow/optimized/value_parsing.cc.ll
 ; darktable/optimized/introspection_colorbalancergb.c.ll
 ; darktable/optimized/introspection_shadhi.c.ll
 ; draco/optimized/sequential_integer_attribute_decoder.cc.ll

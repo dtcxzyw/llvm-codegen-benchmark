@@ -1,18 +1,18 @@
 
-%"class.mold::LittleEndian.2522670" = type { [4 x i8] }
+%"class.mold::LittleEndian.2637079" = type { [4 x i8] }
 
 ; 3 occurrences:
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; openssl/optimized/libcrypto-lib-rsaz_exp_x2.ll
 ; openssl/optimized/libcrypto-shlib-rsaz_exp_x2.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 1
   %4 = zext nneg i32 %3 to i64
   %5 = zext nneg i32 %1 to i64
-  %6 = getelementptr nusw i64, ptr %0, i64 %5
-  %7 = getelementptr nusw i64, ptr %6, i64 %4
+  %6 = getelementptr nusw nuw i64, ptr %0, i64 %5
+  %7 = getelementptr nusw nuw i64, ptr %6, i64 %4
   ret ptr %7
 }
 
@@ -40,13 +40,13 @@ entry:
 ; nuklear/optimized/unity.c.ll
 ; recastnavigation/optimized/RecastDump.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000004a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000004f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 1
   %4 = zext i32 %3 to i64
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
-  %7 = getelementptr nusw %"class.mold::LittleEndian.2522670", ptr %6, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
+  %7 = getelementptr nusw nuw %"class.mold::LittleEndian.2637079", ptr %6, i64 %4
   ret ptr %7
 }
 
@@ -67,13 +67,27 @@ entry:
 ; darktable/optimized/TableLookUp.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000072(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000073(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 1
   %4 = zext nneg i32 %3 to i64
   %5 = zext nneg i32 %1 to i64
   %6 = getelementptr i16, ptr %0, i64 %5
-  %7 = getelementptr nusw i16, ptr %6, i64 %4
+  %7 = getelementptr nusw nuw i16, ptr %6, i64 %4
+  ret ptr %7
+}
+
+; 2 occurrences:
+; hyperscan/optimized/mcclellan.c.ll
+; hyperscan/optimized/mcsheng.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000053(ptr %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or disjoint i32 %2, 12
+  %4 = zext nneg i32 %3 to i64
+  %5 = zext i32 %1 to i64
+  %6 = getelementptr i8, ptr %0, i64 %5
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %4
   ret ptr %7
 }
 

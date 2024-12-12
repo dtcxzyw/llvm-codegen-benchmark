@@ -6,7 +6,7 @@ define i64 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = shl i32 %2, 25
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }
@@ -22,7 +22,7 @@ define i64 @func0000000000000005(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
   %3 = shl nuw i32 %2, 24
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = sext i32 %4 to i64
   ret i64 %5
 }

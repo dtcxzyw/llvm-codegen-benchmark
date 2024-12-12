@@ -1,18 +1,18 @@
-func000000000000008c:                   # @func000000000000008c
+func000000000000010c:                   # @func000000000000010c
 	slli	a0, a0, 48
 	srli	a0, a0, 48
 	sltu	a1, a0, a1
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000184:                   # @func0000000000000184
+func0000000000000504:                   # @func0000000000000504
 	slli	a0, a0, 48
 	srli	a0, a0, 48
 	sltu	a1, a0, a1
 	sltiu	a0, a0, 257
 	and	a0, a0, a1
 	ret
-func000000000000018a:                   # @func000000000000018a
+func000000000000050a:                   # @func000000000000050a
 	slli	a0, a0, 48
 	srai	a2, a0, 48
 	srli	a0, a0, 48
@@ -21,7 +21,7 @@ func000000000000018a:                   # @func000000000000018a
 	not	a1, a1
 	and	a0, a0, a1
 	ret
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	slli	a0, a0, 48
 	srli	a0, a0, 48
 	xor	a1, a1, a0

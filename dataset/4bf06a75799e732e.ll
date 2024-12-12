@@ -61,8 +61,9 @@ entry:
   ret i32 %7
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; coreutils-rs/optimized/3wh0yla9idangd55.ll
+; zed-rs/optimized/7xoulo9o2q4wd1npp9yutbl3x.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000e(i8 %0, i1 %1, i32 %2) #0 {
 entry:

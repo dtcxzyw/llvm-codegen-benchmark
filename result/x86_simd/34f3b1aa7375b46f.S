@@ -33,7 +33,7 @@
 	.byte	128                             # 0x80
 	.byte	128                             # 0x80
 	.byte	128                             # 0x80
-func0000000000000010:                   # @func0000000000000010
+func0000000000000030:                   # @func0000000000000030
 	vpcmpnleuq	.LCPI0_0(%rip){1to4}, %ymm2, %k1
 	vmovdqa64	%ymm0, %ymm1 {%k1}
 	vpshufb	.LCPI0_1(%rip), %ymm1, %ymm0    # ymm0 = ymm1[3],zero,zero,zero,zero,zero,zero,zero,ymm1[11],zero,zero,zero,zero,zero,zero,zero,ymm1[19],zero,zero,zero,zero,zero,zero,zero,ymm1[27],zero,zero,zero,zero,zero,zero,zero

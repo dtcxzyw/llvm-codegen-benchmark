@@ -10,7 +10,16 @@ entry:
   ret double %4
 }
 
-; 74 occurrences:
+; 84 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/idas.c.ll
 ; casadi/optimized/idas_bbdpre.c.ll
@@ -22,6 +31,7 @@ entry:
 ; gromacs/optimized/dlagts.cpp.ll
 ; gromacs/optimized/lmmin.cpp.ll
 ; gromacs/optimized/pull_rotation.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_referencing.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
@@ -52,7 +62,6 @@ entry:
 ; proj/optimized/chamb.cpp.ll
 ; proj/optimized/eck2.cpp.ll
 ; proj/optimized/factors.cpp.ll
-; proj/optimized/factory.cpp.ll
 ; proj/optimized/geodesic.c.ll
 ; proj/optimized/imw_p.cpp.ll
 ; proj/optimized/lcc.cpp.ll
@@ -68,6 +77,7 @@ entry:
 ; quantlib/optimized/convolvedstudentt.ll
 ; quantlib/optimized/lmdif.ll
 ; quantlib/optimized/noarbsabr.ll
+; quantlib/optimized/perturbativebarrieroptionengine.ll
 ; quantlib/optimized/qdfpamericanengine.ll
 ; quantlib/optimized/rounding.ll
 ; quantlib/optimized/squarerootprocessrndcalculator.ll
@@ -94,7 +104,13 @@ entry:
   ret double %4
 }
 
-; 70 occurrences:
+; 76 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_2.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_3.cc.ll

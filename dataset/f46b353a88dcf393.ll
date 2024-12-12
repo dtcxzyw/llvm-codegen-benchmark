@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; coreutils-rs/optimized/1487bf2zeluccyme.ll
 ; folly/optimized/IPAddressV6.cpp.ll
 ; pbrt-v4/optimized/aggregate.cpp.ll
@@ -14,6 +14,7 @@
 ; pbrt-v4/optimized/pspec.cpp.ll
 ; pbrt-v4/optimized/samples.cpp.ll
 ; redis/optimized/hyperloglog.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0) #0 {
 entry:

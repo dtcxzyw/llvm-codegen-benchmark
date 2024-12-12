@@ -7,5 +7,5 @@ func0000000000000006:                   # @func0000000000000006
 func000000000000000a:                   # @func000000000000000a
 	vmovd	%xmm0, %eax
 	xorl	%edi, %eax
-	setns	%al
+	setg	%al
 	retq

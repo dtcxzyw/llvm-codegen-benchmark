@@ -19,5 +19,5 @@ func0000000000000005:                   # @func0000000000000005
 	vsext.vf2	v11, v10
 	vwadd.wv	v8, v8, v11
 	vsetvli	zero, zero, e64, m2, ta, ma
-	vadd.vv	v8, v8, v8
+	vsll.vi	v8, v8, 2
 	ret

@@ -1,6 +1,5 @@
 
-; 4 occurrences:
-; libquic/optimized/x_long.c.ll
+; 3 occurrences:
 ; opencv/optimized/phasecorr.cpp.ll
 ; openssl/optimized/libcrypto-lib-x_long.ll
 ; openssl/optimized/libcrypto-shlib-x_long.ll
@@ -137,14 +136,14 @@ entry:
 }
 
 ; 2 occurrences:
-; abc/optimized/satUtil.c.ll
 ; libquic/optimized/error_correction.c.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; Function Attrs: nounwind
 define i32 @func00000000000000a1(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp sgt i32 %1, 0
+  %2 = icmp sgt i32 %1, 49155
   %3 = zext i1 %2 to i32
-  %4 = ashr i32 %0, 1
+  %4 = ashr i32 %0, 27
   %5 = add nsw i32 %4, %3
   ret i32 %5
 }

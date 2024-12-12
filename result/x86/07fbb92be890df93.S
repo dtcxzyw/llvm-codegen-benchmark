@@ -5,14 +5,14 @@ func0000000000000018:                   # @func0000000000000018
 	setne	%al
 	orb	%dil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000028:                   # @func0000000000000028
 	shrl	$5, %edx
 	andl	$2047, %edx                     # imm = 0x7FF
 	cmpl	%esi, %edx
 	setb	%al
 	orb	%dil, %al
 	retq
-func0000000000000010:                   # @func0000000000000010
+func0000000000000030:                   # @func0000000000000030
 	shrl	$2, %edx
 	andl	$3, %edx
 	cmpl	%esi, %edx
@@ -27,9 +27,9 @@ func0000000000000002:                   # @func0000000000000002
 	orb	%dil, %al
 	retq
 func0000000000000016:                   # @func0000000000000016
-	shrl	$16, %edx
-	movzbl	%dl, %eax
-	cmpl	%esi, %eax
+	shrl	$3, %edx
+	andl	$511, %edx                      # imm = 0x1FF
+	cmpl	%esi, %edx
 	setge	%al
 	orb	%dil, %al
 	retq

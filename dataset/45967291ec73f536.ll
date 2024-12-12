@@ -1,5 +1,5 @@
 
-; 74 occurrences:
+; 77 occurrences:
 ; abc/optimized/absRpm.c.ll
 ; abc/optimized/acecRe.c.ll
 ; assimp/optimized/X3DImporter_Postprocess.cpp.ll
@@ -45,6 +45,7 @@
 ; llvm/optimized/X86FixupVectorConstants.cpp.ll
 ; llvm/optimized/X86MCTargetDesc.cpp.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_textarea.ll
 ; meilisearch-rs/optimized/2d8gq047pqsnm94t.ll
 ; oniguruma/optimized/unicode.ll
 ; openjdk/optimized/gtk3_interface.ll
@@ -74,11 +75,13 @@
 ; z3/optimized/arith_internalize.cpp.ll
 ; z3/optimized/bv_rewriter.cpp.ll
 ; z3/optimized/theory_array_base.cpp.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000042(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000082(i32 %0, i1 %1) #0 {
 entry:
   %2 = icmp eq i32 %0, 27
-  %3 = or i1 %2, %1
+  %3 = or i1 %1, %2
   %4 = icmp eq i32 %0, 10
   %5 = or i1 %4, %3
   ret i1 %5
@@ -90,10 +93,10 @@ entry:
 ; icu/optimized/usearch.ll
 ; qemu/optimized/chardev_char-ringbuf.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000302(i32 %0, i1 %1) #0 {
 entry:
   %2 = icmp slt i32 %0, 1
-  %3 = or i1 %2, %1
+  %3 = or i1 %1, %2
   ret i1 %3
 }
 
@@ -103,26 +106,25 @@ entry:
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000094(i32 %0, i1 %1) #0 {
 entry:
   %2 = icmp eq i32 %0, 0
-  %3 = or i1 %2, %1
+  %3 = or i1 %1, %2
   %4 = icmp sgt i32 %0, 5920
   %5 = or i1 %4, %3
   ret i1 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; icu/optimized/uniset_props.ll
 ; linux/optimized/tg3.ll
 ; wireshark/optimized/packet-nfs.c.ll
-; wireshark/optimized/tap-sctp-analysis.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000102(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000202(i32 %0, i1 %1) #0 {
 entry:
-  %2 = icmp ult i32 %0, 17
+  %2 = icmp ult i32 %0, 12
   %3 = or i1 %2, %1
-  %4 = icmp eq i32 %0, 193
+  %4 = icmp eq i32 %0, 75
   %5 = or i1 %4, %3
   ret i1 %5
 }
@@ -130,7 +132,7 @@ entry:
 ; 1 occurrences:
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000050(i32 %0, i1 %1) #0 {
+define i1 @func0000000000000090(i32 %0, i1 %1) #0 {
 entry:
   %2 = icmp eq i32 %0, 127
   %3 = or i1 %2, %1
@@ -139,27 +141,26 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; linux/optimized/iface.ll
-; z3/optimized/theory_array_base.cpp.ll
+; 1 occurrences:
+; nori/optimized/parser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000304(i1 %0, i32 %1) #0 {
 entry:
-  %2 = icmp eq i32 %1, 6
+  %2 = icmp slt i32 %1, 11
   %3 = or i1 %2, %0
-  %4 = icmp eq i32 %1, 10
+  %4 = icmp eq i32 %1, 24
   %5 = or i1 %3, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
-; nori/optimized/parser.cpp.ll
+; z3/optimized/theory_array_base.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000184(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000084(i1 %0, i32 %1) #0 {
 entry:
-  %2 = icmp slt i32 %1, 11
-  %3 = or i1 %2, %0
-  %4 = icmp eq i32 %1, 24
+  %2 = icmp eq i32 %1, 4
+  %3 = or i1 %0, %2
+  %4 = icmp eq i32 %1, 11
   %5 = or i1 %3, %4
   ret i1 %5
 }
@@ -169,7 +170,7 @@ entry:
 ; icu/optimized/unistr_cnv.ll
 ; postgres/optimized/spi.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i1 %1) #0 {
+define i1 @func000000000000008c(i32 %0, i1 %1) #0 {
 entry:
   %2 = icmp eq i32 %0, 0
   %3 = or i1 %2, %1

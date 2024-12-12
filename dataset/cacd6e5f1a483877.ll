@@ -1,19 +1,18 @@
 
-%"class.clang::SourceLocation.2989237" = type { i32 }
+%"class.clang::SourceLocation.3182706" = type { i32 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; cmake/optimized/huf_compress.c.ll
 ; cmake/optimized/huf_decompress.c.ll
 ; hyperscan/optimized/scratch.c.ll
 ; llvm/optimized/Expr.cpp.ll
-; openexr/optimized/ImfPxr24Compressor.cpp.ll
 ; zstd/optimized/huf_compress.c.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000000a(i64 %0, ptr %1) #0 {
+define i64 @func000000000000000f(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw ptr, ptr %1, i64 %0
-  %3 = getelementptr nusw %"class.clang::SourceLocation.2989237", ptr %2, i64 %0
+  %2 = getelementptr nusw nuw ptr, ptr %1, i64 %0
+  %3 = getelementptr nusw nuw %"class.clang::SourceLocation.3182706", ptr %2, i64 %0
   %4 = ptrtoint ptr %3 to i64
   ret i64 %4
 }
@@ -25,6 +24,17 @@ define i64 @func0000000000000000(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %1, i64 %0
   %3 = getelementptr i8, ptr %2, i64 %0
+  %4 = ptrtoint ptr %3 to i64
+  ret i64 %4
+}
+
+; 1 occurrences:
+; openexr/optimized/ImfPxr24Compressor.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000a(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw i8, ptr %1, i64 %0
+  %3 = getelementptr nusw i8, ptr %2, i64 %0
   %4 = ptrtoint ptr %3 to i64
   ret i64 %4
 }

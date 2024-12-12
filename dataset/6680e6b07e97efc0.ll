@@ -3,7 +3,7 @@
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-shape-fallback.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i8 %1) #0 {
+define i1 @func0000000000000038(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp ugt i8 %1, 1
   %not. = xor i1 %0, true
@@ -11,9 +11,8 @@ entry:
   ret i1 %3
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; linux/optimized/alps.ll
-; llvm/optimized/ASTContext.cpp.ll
 ; lua/optimized/lstrlib.ll
 ; openspiel/optimized/go_test.cc.ll
 ; openspiel/optimized/phantom_go_test.cc.ll
@@ -42,7 +41,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/COFFImportFile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 0
   %not. = xor i1 %0, true
@@ -55,7 +54,7 @@ entry:
 ; wireshark/optimized/packet-c1222.c.ll
 ; wireshark/optimized/packet-s7comm.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i8 %1) #0 {
+define i1 @func0000000000000018(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp ugt i8 %1, 1
   %not. = xor i1 %0, true
@@ -66,7 +65,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/alps.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i8 %1) #0 {
+define i1 @func0000000000000014(i1 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, 25
   %not. = xor i1 %0, true

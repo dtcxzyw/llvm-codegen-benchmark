@@ -1,10 +1,11 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; darktable/optimized/introspection_ashift.c.ll
 ; icu/optimized/unistr.ll
 ; linux/optimized/cmdline.ll
 ; linux/optimized/drbg.ll
 ; linux/optimized/virtio_blk.ll
+; lvgl/optimized/lv_text.ll
 ; openjdk/optimized/phaseX.ll
 ; verilator/optimized/V3OrderParallel.cpp.ll
 ; wireshark/optimized/packet-rtmpt.c.ll

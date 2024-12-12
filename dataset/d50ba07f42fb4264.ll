@@ -1,7 +1,6 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; libquic/optimized/strike_register.cc.ll
-; libquic/optimized/util-64.c.ll
 ; llvm/optimized/BasicAliasAnalysis.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; z3/optimized/dep_intervals.cpp.ll

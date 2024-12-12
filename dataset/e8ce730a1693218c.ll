@@ -1,12 +1,12 @@
 
-; 325 occurrences:
+; 329 occurrences:
 ; abc/optimized/dauTree.c.ll
 ; abc/optimized/trees.c.ll
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
-; abseil-cpp/optimized/memutil.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/utf8_codecvt_facet.ll
 ; brotli/optimized/backward_references.c.ll
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/filtering.c.ll
@@ -107,7 +107,6 @@
 ; linux/optimized/intel_sdvo.ll
 ; linux/optimized/maple_tree.ll
 ; linux/optimized/mmconfig-shared.ll
-; linux/optimized/mmconfig_64.ll
 ; linux/optimized/psmouse-base.ll
 ; linux/optimized/rock.ll
 ; linux/optimized/skbuff.ll
@@ -131,6 +130,12 @@
 ; luajit/optimized/lj_snap_dyn.ll
 ; luajit/optimized/minilua.ll
 ; luau/optimized/lvmutils.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -284,7 +289,6 @@
 ; raylib/optimized/rtextures.c.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
-; ruby/optimized/qsort.ll
 ; ruby/optimized/regenc.ll
 ; ruby/optimized/regparse.ll
 ; sqlite/optimized/sqlite3.ll
@@ -333,13 +337,12 @@ entry:
   ret i32 %3
 }
 
-; 49 occurrences:
+; 48 occurrences:
 ; clamav/optimized/explode.c.ll
 ; cpython/optimized/_datetimemodule.ll
 ; hyperscan/optimized/block.c.ll
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/catchup.c.ll
-; hyperscan/optimized/init.c.ll
 ; hyperscan/optimized/mpv.c.ll
 ; hyperscan/optimized/program_runtime.c.ll
 ; hyperscan/optimized/repeat.c.ll
@@ -391,7 +394,9 @@ entry:
   ret i32 %3
 }
 
-; 29 occurrences:
+; 32 occurrences:
+; boost/optimized/text_file_backend.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/mpdecimal.ll
 ; darktable/optimized/AbstractLJpegDecoder.cpp.ll
 ; darktable/optimized/CrwDecompressor.cpp.ll
@@ -412,6 +417,7 @@ entry:
 ; linux/optimized/hda_auto_parser.ll
 ; linux/optimized/ip_input.ll
 ; llvm/optimized/RISCVTargetParser.cpp.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
 ; openssl/optimized/libcrypto-lib-ecp_nistz256.ll
 ; openssl/optimized/libcrypto-shlib-ecp_nistz256.ll

@@ -30,7 +30,7 @@ func000000000000001c:                   # @func000000000000001c
 func000000000000000a:                   # @func000000000000000a
 	slli	a1, a1, 48
 	srli	a1, a1, 48
-	mul	a0, a1, a0
+	mul	a0, a0, a1
 	lui	a1, 8
 	add	a0, a0, a1
 	srli	a0, a0, 16

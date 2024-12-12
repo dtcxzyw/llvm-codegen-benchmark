@@ -3,15 +3,16 @@ func0000000000000000:                   # @func0000000000000000
 	andl	$-4, %esi
 	leaq	(%rsi,%rdi), %rax
 	retq
-func0000000000000006:                   # @func0000000000000006
+func0000000000000007:                   # @func0000000000000007
 	andl	%edx, %esi
 	movzwl	%si, %eax
 	leaq	(%rdi,%rax,2), %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	andl	%edx, %esi
 	andl	$-8, %esi
-	leaq	(%rdi,%rsi,8), %rax
+	shlq	$4, %rsi
+	leaq	(%rsi,%rdi), %rax
 	retq
 func0000000000000004:                   # @func0000000000000004
 	andl	%edx, %esi

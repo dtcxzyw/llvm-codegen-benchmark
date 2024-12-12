@@ -16,7 +16,7 @@
 ; wireshark/optimized/packet-acn.c.ll
 ; z3/optimized/realclosure.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000e1(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i32 256, i32 128
@@ -30,7 +30,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-bn_prime.ll
 ; openssl/optimized/libcrypto-shlib-bn_prime.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002b1(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000561(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 2048
   %3 = select i1 %2, i32 128, i32 64
@@ -53,7 +53,7 @@ entry:
 ; opencv/optimized/perf_threshold.cpp.ll
 ; openjdk/optimized/c1_Runtime1_x86.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001b1(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000361(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 3
   %3 = select i1 %2, i32 16, i32 32
@@ -66,7 +66,7 @@ entry:
 ; linux/optimized/g4x_hdmi.ll
 ; php/optimized/exec.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000084(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i32 3, i32 2
@@ -79,7 +79,7 @@ entry:
 ; linux/optimized/namei.ll
 ; wireshark/optimized/packet-acn.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1
   %3 = select i1 %2, i32 16, i32 20
@@ -89,20 +89,9 @@ entry:
 }
 
 ; 1 occurrences:
-; wireshark/optimized/packet-metamako.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000074(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ne i32 %1, 0
-  %3 = icmp eq i32 %0, 0
-  %4 = select i1 %2, i1 %3, i1 false
-  ret i1 %4
-}
-
-; 1 occurrences:
 ; postgres/optimized/network_gist.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 3
   %3 = select i1 %2, i32 128, i32 32

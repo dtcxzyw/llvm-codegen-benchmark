@@ -1,23 +1,8 @@
 
-; 4 occurrences:
-; cmake/optimized/fse_compress.c.ll
-; linux/optimized/ht.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
-; zstd/optimized/fse_compress.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000063(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add nuw nsw i32 %1, 1
-  %3 = icmp eq i32 %0, 0
-  %4 = select i1 %3, i32 0, i32 %2
-  %5 = zext nneg i32 %4 to i64
-  ret i64 %5
-}
-
 ; 1 occurrences:
 ; darktable/optimized/introspection_colorreconstruction.c.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000006c(i32 %0, i32 %1) #0 {
+define i64 @func00000000000000cc(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = icmp slt i32 %0, 5
@@ -29,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/pdrMan.c.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000006d(i32 %0, i32 %1) #0 {
+define i64 @func00000000000000cd(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = icmp slt i32 %0, 7
@@ -41,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/giaTruth.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000029(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000049(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1000
   %3 = icmp ult i32 %0, 15
@@ -55,10 +40,10 @@ entry:
 ; hdf5/optimized/H5Dearray.c.ll
 ; hdf5/optimized/H5Dfarray.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000071(i32 %0, i32 %1) #0 {
+define i64 @func00000000000000f1(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
-  %3 = icmp ugt i32 %0, 55
+  %3 = icmp samesign ugt i32 %0, 55
   %4 = select i1 %3, i32 8, i32 %2
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
@@ -67,7 +52,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/timefn.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000049(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000089(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 1
   %3 = icmp ult i32 %0, 4
@@ -102,6 +87,19 @@ entry:
   ret i64 %5
 }
 
+; 2 occurrences:
+; cmake/optimized/fse_compress.c.ll
+; zstd/optimized/fse_compress.c.ll
+; Function Attrs: nounwind
+define i64 @func00000000000000c3(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nuw nsw i32 %1, 3
+  %3 = icmp eq i32 %0, 0
+  %4 = select i1 %3, i32 512, i32 %2
+  %5 = zext nneg i32 %4 to i64
+  ret i64 %5
+}
+
 ; 4 occurrences:
 ; linux/optimized/rtnetlink.ll
 ; sqlite/optimized/sqlite3.ll
@@ -120,7 +118,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/blk-lib.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000022(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000042(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = icmp eq i32 %0, 0
@@ -133,7 +131,7 @@ entry:
 ; protobuf/optimized/zero_copy_stream.cc.ll
 ; wolfssl/optimized/ecc.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000069(i32 %0, i32 %1) #0 {
+define i64 @func00000000000000c9(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 13
   %3 = icmp ult i32 %0, 20
@@ -145,7 +143,7 @@ entry:
 ; 1 occurrences:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000002d(i32 %0, i32 %1) #0 {
+define i64 @func000000000000004d(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = icmp slt i32 %0, 0
@@ -157,7 +155,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/longobject.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000023(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000043(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -2
   %3 = icmp eq i32 %0, 0

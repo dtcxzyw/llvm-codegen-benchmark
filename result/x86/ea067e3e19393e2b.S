@@ -3,7 +3,7 @@ func0000000000000005:                   # @func0000000000000005
 	setbe	%al
 	andb	%dl, %al
 	retq
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	cmpl	%esi, %edi
 	setne	%al
 	andb	%dl, %al
@@ -13,17 +13,17 @@ func000000000000000c:                   # @func000000000000000c
 	setne	%al
 	andb	%dl, %al
 	retq
-func0000000000000027:                   # @func0000000000000027
+func0000000000000047:                   # @func0000000000000047
 	cmpl	%esi, %edi
 	setle	%al
 	andb	%dl, %al
 	retq
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	cmpl	%esi, %edi
 	setl	%al
 	andb	%dl, %al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	cmpl	%esi, %edi
 	sete	%al
 	andb	%dl, %al
@@ -38,7 +38,7 @@ func000000000000000a:                   # @func000000000000000a
 	setg	%al
 	andb	%dl, %al
 	retq
-func0000000000000025:                   # @func0000000000000025
+func0000000000000045:                   # @func0000000000000045
 	cmpl	%esi, %edi
 	setbe	%al
 	andb	%dl, %al

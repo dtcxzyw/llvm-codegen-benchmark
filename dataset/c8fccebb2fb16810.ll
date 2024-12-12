@@ -1,5 +1,5 @@
 
-; 71 occurrences:
+; 74 occurrences:
 ; abc/optimized/deflate.c.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; actix-rs/optimized/34zqw30jnodxf0r6.ll
@@ -13,6 +13,7 @@
 ; git/optimized/writer.ll
 ; gromacs/optimized/deflate.c.ll
 ; grpc/optimized/flow_control.cc.ll
+; hdf5/optimized/H5Shyper.c.ll
 ; hermes/optimized/HiddenClass.cpp.ll
 ; image-rs/optimized/2mngkegtim1o10y3.ll
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
@@ -48,7 +49,6 @@
 ; mitsuba3/optimized/rectangle.cpp.ll
 ; mitsuba3/optimized/volpath.cpp.ll
 ; openblas/optimized/dgegv.c.ll
-; openblas/optimized/lapacke_dlarfb_work.c.ll
 ; openjdk/optimized/addnode.ll
 ; openjdk/optimized/vectorization.ll
 ; openspiel/optimized/oshi_zumo.cc.ll
@@ -70,6 +70,9 @@
 ; wasmedge/optimized/serial_instruction.cpp.ll
 ; wireshark/optimized/packet-zbee-nwk-gp.c.ll
 ; yosys/optimized/calc.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/7nycmhgf1nsxro2z9yfrppi5n.ll
+; zed-rs/optimized/diggdkpukg0xn23g7ivuh3jfw.ll
 ; zlib/optimized/deflate.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, i1 %1) #0 {

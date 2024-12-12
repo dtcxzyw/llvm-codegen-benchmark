@@ -1,7 +1,7 @@
 
-%struct.b3Int4.2705533 = type { %union.anon.2705534 }
-%union.anon.2705534 = type { %struct.anon.2705535 }
-%struct.anon.2705535 = type { i32, i32, i32, i32 }
+%struct.b3Int4.2818248 = type { %union.anon.2818249 }
+%union.anon.2818249 = type { %struct.anon.2818250 }
+%struct.anon.2818250 = type { i32, i32, i32, i32 }
 
 ; 1 occurrences:
 ; openjdk/optimized/mlib_ImageConvClearEdge_Bit.ll
@@ -28,12 +28,12 @@ entry:
 ; gromacs/optimized/reversetopology.cpp.ll
 ; icu/optimized/ucurr.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000002b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = sdiv i32 %3, 2
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %struct.b3Int4.2705533, ptr %0, i64 %5, i32 0, i32 0, i32 1
+  %6 = getelementptr %struct.b3Int4.2818248, ptr %0, i64 %5, i32 0, i32 0, i32 1
   ret ptr %6
 }
 

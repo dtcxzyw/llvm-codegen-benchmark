@@ -13,7 +13,7 @@ func0000000000000007:                   # @func0000000000000007
 	.quad	268435456                       # 0x10000000
 func0000000000000005:                   # @func0000000000000005
 	vpandq	.LCPI1_0(%rip){1to4}, %ymm1, %ymm3
-	vpternlogq	$254, %ymm2, %ymm3, %ymm0 # ymm0 = ymm0 | ymm3 | ymm2
+	vpternlogq	$254, %ymm3, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | ymm3
 	vpternlogq	$248, .LCPI1_1(%rip){1to4}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
 	retq
 .LCPI2_0:
@@ -22,7 +22,7 @@ func0000000000000005:                   # @func0000000000000005
 	.quad	8589934592                      # 0x200000000
 func0000000000000004:                   # @func0000000000000004
 	vpandq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm3
-	vpternlogq	$254, %ymm2, %ymm3, %ymm0 # ymm0 = ymm0 | ymm3 | ymm2
+	vpternlogq	$254, %ymm3, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | ymm3
 	vpternlogq	$248, .LCPI2_1(%rip){1to4}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
 	retq
 .LCPI3_0:
@@ -31,7 +31,7 @@ func0000000000000004:                   # @func0000000000000004
 	.quad	2251799813685248                # 0x8000000000000
 func0000000000000000:                   # @func0000000000000000
 	vpandq	.LCPI3_0(%rip){1to4}, %ymm1, %ymm3
-	vpternlogq	$254, %ymm2, %ymm3, %ymm0 # ymm0 = ymm0 | ymm3 | ymm2
+	vpternlogq	$254, %ymm3, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | ymm3
 	vpternlogq	$248, .LCPI3_1(%rip){1to4}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
 	retq
 .LCPI4_0:
@@ -40,7 +40,7 @@ func0000000000000000:                   # @func0000000000000000
 	.quad	171798691840                    # 0x2800000000
 func0000000000000006:                   # @func0000000000000006
 	vpandq	.LCPI4_0(%rip){1to4}, %ymm1, %ymm3
-	vpternlogq	$254, %ymm2, %ymm3, %ymm0 # ymm0 = ymm0 | ymm3 | ymm2
+	vpternlogq	$254, %ymm3, %ymm2, %ymm0 # ymm0 = ymm0 | ymm2 | ymm3
 	vpternlogq	$248, .LCPI4_1(%rip){1to4}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
 	retq
 .LCPI5_0:

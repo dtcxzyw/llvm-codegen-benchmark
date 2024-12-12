@@ -18,7 +18,7 @@ entry:
   ret i32 %5
 }
 
-; 58 occurrences:
+; 55 occurrences:
 ; abc/optimized/abcHieGia.c.ll
 ; abc/optimized/amapPerm.c.ll
 ; abc/optimized/dauGia.c.ll
@@ -49,17 +49,14 @@ entry:
 ; llvm/optimized/TemplateName.cpp.ll
 ; llvm/optimized/Type.cpp.ll
 ; meshoptimizer/optimized/clusterizer.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/l_mapgen.cpp.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
-; mitsuba3/optimized/x86func.cpp.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32LE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV64BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV64LE.cc.ll
 ; openusd/optimized/primIndex.cpp.ll
 ; postgres/optimized/bufpage.ll
-; postgres/optimized/spgutils.ll
 ; postgres/optimized/tsquery.ll
 ; postgres/optimized/tsquery_cleanup.ll
 ; postgres/optimized/tsvector_op.ll

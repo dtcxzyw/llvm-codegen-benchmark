@@ -1,6 +1,7 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; abc/optimized/abcNtk.c.ll
+; boost/optimized/gregorian.ll
 ; glslang/optimized/Initialize.cpp.ll
 ; icu/optimized/gregocal.ll
 ; linux/optimized/af_packet.ll
@@ -23,7 +24,7 @@ entry:
   %2 = freeze i32 %1
   %3 = and i32 %2, 65536
   %4 = icmp eq i32 %3, 0
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -50,18 +51,6 @@ entry:
   %2 = freeze i32 %1
   %3 = and i32 %2, 33554432
   %4 = icmp ne i32 %3, 0
-  %5 = and i1 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; opencv/optimized/arithm.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i32 %1) #0 {
-entry:
-  %2 = freeze i32 %1
-  %3 = and i32 %2, 4
-  %4 = icmp eq i32 %3, 0
   %5 = and i1 %4, %0
   ret i1 %5
 }

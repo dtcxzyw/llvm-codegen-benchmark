@@ -1,11 +1,10 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; linux/optimized/af_inet.ll
 ; linux/optimized/hooks.ll
 ; linux/optimized/ip_fragment.ll
 ; linux/optimized/ip_output.ll
 ; linux/optimized/nf_conntrack_core.ll
-; linux/optimized/nf_conntrack_proto.ll
 ; linux/optimized/nf_log_syslog.ll
 ; linux/optimized/nf_reject_ipv4.ll
 ; qemu/optimized/hw_audio_hda-codec.c.ll
@@ -19,7 +18,7 @@ entry:
   %2 = shl i8 %1, 1
   %3 = and i8 %2, 2
   %4 = zext nneg i8 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -33,7 +32,7 @@ entry:
   %2 = shl i8 %1, 2
   %3 = and i8 %2, 60
   %4 = zext nneg i8 %3 to i32
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -47,7 +46,7 @@ entry:
   %2 = shl nuw nsw i8 %1, 1
   %3 = and i8 %2, 2
   %4 = zext nneg i8 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 

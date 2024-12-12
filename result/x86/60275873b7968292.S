@@ -23,7 +23,7 @@ func000000000000000c:                   # @func000000000000000c
 	cmpq	%rsi, %rdi
 	setne	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	addq	%rdx, %rdi
 	cmpq	%rsi, %rdi
 	sete	%al

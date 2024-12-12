@@ -1,13 +1,11 @@
 
-; 8 occurrences:
+; 6 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; libquic/optimized/curve25519.c.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; openssl/optimized/libcrypto-lib-curve25519.ll
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -32,7 +30,7 @@ entry:
   ret i64 %5
 }
 
-; 28 occurrences:
+; 27 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -50,7 +48,6 @@ entry:
 ; lief/optimized/base64.c.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/page-writeback.ll
-; linux/optimized/ttm_bo_vm.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/X86AvoidStoreForwardingBlocks.cpp.ll
 ; opencc/optimized/Config.cpp.ll
@@ -59,8 +56,8 @@ entry:
 ; openssl/optimized/libcrypto-shlib-curve25519.ll
 ; openusd/optimized/json.cpp.ll
 ; qemu/optimized/fpu_softfloat.c.ll
-; qemu/optimized/util_buffer.c.ll
 ; spike/optimized/f128_sqrt.ll
+; zed-rs/optimized/e7lqw1ynol01cwrgb8ri1wedr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:

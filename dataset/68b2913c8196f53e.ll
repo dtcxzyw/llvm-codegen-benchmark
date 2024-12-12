@@ -1,5 +1,5 @@
 
-; 84 occurrences:
+; 80 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/cbaReadBlif.c.ll
@@ -12,10 +12,8 @@
 ; darktable/optimized/print_settings.c.ll
 ; gromacs/optimized/bwlzh.c.ll
 ; gromacs/optimized/dlarrvx.cpp.ll
-; gromacs/optimized/dlasd6.cpp.ll
 ; gromacs/optimized/dlasd7.cpp.ll
 ; gromacs/optimized/slarrvx.cpp.ll
-; gromacs/optimized/slasd6.cpp.ll
 ; gromacs/optimized/slasd7.cpp.ll
 ; gromacs/optimized/toppush.cpp.ll
 ; gromacs/optimized/xtc3.c.ll
@@ -25,8 +23,6 @@
 ; linux/optimized/mballoc.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; openblas/optimized/dgbbrd.c.ll
-; openblas/optimized/dgbtf2.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; openblas/optimized/dsbtrd.c.ll
 ; openblas/optimized/dsptri.c.ll
@@ -143,7 +139,7 @@ entry:
   ret i64 %4
 }
 
-; 135 occurrences:
+; 127 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/abcSaucy.c.ll
@@ -165,12 +161,11 @@ entry:
 ; abc/optimized/sswBmc.c.ll
 ; arrow/optimized/bignum.cc.ll
 ; arrow/optimized/fixed-dtoa.cc.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/cmDocumentation.cxx.ll
 ; cmake/optimized/cmListFileLexer.c.ll
 ; cmake/optimized/curl_trc.c.ll
 ; cmake/optimized/xmlparse.c.ll
-; cpython/optimized/ceval.ll
-; curl/optimized/libcurl_la-curl_trc.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; delta-rs/optimized/1rw3q64nilk4jthd.ll
 ; double_conversion/optimized/bignum.cc.ll
@@ -182,13 +177,9 @@ entry:
 ; graphviz/optimized/dotsplines.c.ll
 ; graphviz/optimized/make_map.c.ll
 ; gromacs/optimized/bwlzh.c.ll
-; gromacs/optimized/dgetf2.cpp.ll
-; gromacs/optimized/dlasd1.cpp.ll
 ; gromacs/optimized/dlasq4.cpp.ll
 ; gromacs/optimized/libxdrf.cpp.ll
 ; gromacs/optimized/lincs.cpp.ll
-; gromacs/optimized/sgetf2.cpp.ll
-; gromacs/optimized/slasd1.cpp.ll
 ; gromacs/optimized/slasq4.cpp.ll
 ; hermes/optimized/DateUtil.cpp.ll
 ; icu/optimized/decNumber.ll
@@ -214,7 +205,6 @@ entry:
 ; ncnn/optimized/lstm_x86_avx.cpp.ll
 ; ncnn/optimized/lstm_x86_avx512.cpp.ll
 ; ncnn/optimized/lstm_x86_fma.cpp.ll
-; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
 ; oiio/optimized/rlainput.cpp.ll
 ; oiio/optimized/strutil.cpp.ll
@@ -226,12 +216,10 @@ entry:
 ; openblas/optimized/dlarre.c.ll
 ; openblas/optimized/dlarrv.c.ll
 ; openblas/optimized/dlasd2.c.ll
-; openblas/optimized/dlasyf_aa.c.ll
 ; openblas/optimized/dsytri2x.c.ll
 ; openblas/optimized/dsytri_3x.c.ll
 ; opencv/optimized/bgfg_gsoc.cpp.ll
 ; opencv/optimized/brief.cpp.ll
-; opencv/optimized/cap_mjpeg_encoder.cpp.ll
 ; opencv/optimized/chessboard.cpp.ll
 ; opencv/optimized/edge_drawing.cpp.ll
 ; opencv/optimized/emd.cpp.ll
@@ -305,18 +293,6 @@ define i64 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
   %3 = add i32 %2, 4
-  %4 = sext i32 %3 to i64
-  ret i64 %4
-}
-
-; 2 occurrences:
-; gromacs/optimized/dlasd1.cpp.ll
-; gromacs/optimized/slasd1.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000008(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add nuw i32 %0, %1
-  %3 = add i32 %2, 2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }

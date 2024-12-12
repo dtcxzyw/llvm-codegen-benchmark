@@ -15,10 +15,10 @@ func0000000000000003:                   # @func0000000000000003
 	andi	a0, a0, 1
 	bnez	a0, .LBB2_2
 	slli	a0, a1, 32
-	srli	a0, a0, 29
+	srli	a0, a0, 30
 	ret
 .LBB2_2:
-	li	a0, 32
+	li	a0, 1024
 	ret
 func0000000000000000:                   # @func0000000000000000
 	andi	a0, a0, 1

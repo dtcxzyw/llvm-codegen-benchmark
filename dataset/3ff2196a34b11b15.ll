@@ -1,17 +1,16 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; eastl/optimized/TestSegmentedVector.cpp.ll
 ; freetype/optimized/smooth.c.ll
 ; libquic/optimized/quic_framer.cc.ll
-; lz4/optimized/lz4hc.c.ll
 ; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1000000000
   %3 = udiv i64 %2, 1000000
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   ret i64 %4
 }
 
@@ -23,7 +22,7 @@ define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 2
   %3 = udiv i64 %2, 153
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -34,7 +33,7 @@ define i64 @func0000000000000009(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 8
   %3 = udiv i64 %2, 112
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -57,7 +56,7 @@ define i64 @func0000000000000019(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 86399
   %3 = udiv i64 %2, 86400
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   ret i64 %4
 }
 
@@ -68,7 +67,7 @@ define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -40
   %3 = udiv i64 %2, 40
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 

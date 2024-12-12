@@ -45,7 +45,7 @@ entry:
   ret i32 %6
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; darktable/optimized/OlympusDecompressor.cpp.ll
@@ -62,6 +62,7 @@ entry:
 ; opencv/optimized/box_filter.dispatch.cpp.ll
 ; openusd/optimized/intrapred.c.ll
 ; postgres/optimized/bufpage.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i16 %1, i16 %2) #0 {
 entry:

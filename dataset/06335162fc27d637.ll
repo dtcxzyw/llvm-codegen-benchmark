@@ -48,17 +48,13 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
-; freetype/optimized/sfnt.c.ll
-; openssl/optimized/asynciotest-bin-asynciotest.ll
-; openssl/optimized/libssl-lib-extensions_srvr.ll
-; openssl/optimized/libssl-shlib-extensions_srvr.ll
+; 1 occurrences:
 ; qemu/optimized/hw_ufs_ufs.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000048(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
-  %4 = icmp ult i64 %3, 4
+  %4 = icmp ult i64 %3, 4294967285
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -68,7 +64,7 @@ entry:
 ; openjdk/optimized/parse_manifest.ll
 ; wireshark/optimized/packet-windows-common.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000042(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = icmp eq i64 %3, 4294967295
@@ -76,7 +72,8 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
+; boost/optimized/sort_by_side.ll
 ; grpc/optimized/channelz_registry.cc.ll
 ; hdf5/optimized/H5FDstdio.c.ll
 ; icu/optimized/rematch.ll
@@ -89,7 +86,7 @@ define i1 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
   %4 = icmp slt i64 %3, 0
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -114,18 +111,7 @@ define i1 @func0000000000000018(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
   %4 = icmp ne i64 %3, 0
-  %5 = or i1 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; lief/optimized/psa_crypto_storage.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000030(i1 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = or disjoint i64 %1, %2
-  %4 = icmp ugt i64 %3, 8191
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -133,7 +119,7 @@ entry:
 ; just-rs/optimized/uwydcyn8qeoqoev.ll
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000058(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = icmp ne i64 %3, 0
@@ -141,10 +127,9 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; clamav/optimized/XzDec.c.ll
 ; libsodium/optimized/libsodium_la-pwhash_argon2i.ll
-; libsodium/optimized/libsodium_la-pwhash_argon2id.ll
 ; linux/optimized/i915_gem_context.ll
 ; meshlab/optimized/miniz.c.ll
 ; openusd/optimized/avif_obu.c.ll
@@ -153,7 +138,7 @@ define i1 @func0000000000000010(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
   %4 = icmp ugt i64 %3, 20
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -164,7 +149,7 @@ define i1 @func0000000000000014(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
   %4 = icmp sgt i64 %3, -1
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

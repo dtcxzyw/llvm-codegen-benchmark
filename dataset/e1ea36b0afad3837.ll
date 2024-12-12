@@ -28,4 +28,16 @@ entry:
   ret i32 %5
 }
 
+; 1 occurrences:
+; lvgl/optimized/lv_sprintf_builtin.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i1 %0, double %1) #0 {
+entry:
+  %2 = fptosi double %1 to i32
+  %3 = sext i1 %0 to i32
+  %4 = add nsw i32 %3, %2
+  %5 = add i32 %4, 99
+  ret i32 %5
+}
+
 attributes #0 = { nounwind }

@@ -4,13 +4,13 @@ func0000000000000008:                   # @func0000000000000008
 	seta	%al
 	andb	%dil, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	addl	%edx, %edx
 	cmpl	%esi, %edx
 	sete	%al
 	andb	%dil, %al
 	retq
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	addl	%edx, %edx
 	cmpl	%esi, %edx
 	setl	%al
@@ -28,37 +28,43 @@ func0000000000000004:                   # @func0000000000000004
 	setb	%al
 	andb	%dil, %al
 	retq
-func0000000000000016:                   # @func0000000000000016
-	shll	$5, %edx
-	cmpl	%esi, %edx
-	setl	%al
-	andb	%dil, %al
-	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	addl	%edx, %edx
 	cmpl	%esi, %edx
 	setg	%al
 	andb	%dil, %al
 	retq
-func000000000000001b:                   # @func000000000000001b
+func0000000000000026:                   # @func0000000000000026
+	addl	%edx, %edx
+	cmpl	%esi, %edx
+	setl	%al
+	andb	%dil, %al
+	retq
+func000000000000002b:                   # @func000000000000002b
 	addl	%edx, %edx
 	cmpl	%esi, %edx
 	setge	%al
 	andb	%dil, %al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	addl	%edx, %edx
 	cmpl	%esi, %edx
 	sete	%al
 	andb	%dil, %al
 	retq
-func0000000000000035:                   # @func0000000000000035
+func0000000000000065:                   # @func0000000000000065
 	shll	$2, %edx
 	cmpl	%esi, %edx
 	setbe	%al
 	andb	%dil, %al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000075:                   # @func0000000000000075
+	shll	$2, %edx
+	cmpl	%esi, %edx
+	setbe	%al
+	andb	%dil, %al
+	retq
+func0000000000000078:                   # @func0000000000000078
 	shll	$2, %edx
 	cmpl	%esi, %edx
 	seta	%al
@@ -76,7 +82,7 @@ func0000000000000005:                   # @func0000000000000005
 	setbe	%al
 	andb	%dil, %al
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	shll	$4, %edx
 	cmpl	%esi, %edx
 	setb	%al
@@ -86,5 +92,11 @@ func0000000000000001:                   # @func0000000000000001
 	shll	$3, %edx
 	cmpl	%esi, %edx
 	sete	%al
+	andb	%dil, %al
+	retq
+func0000000000000068:                   # @func0000000000000068
+	addl	%edx, %edx
+	cmpl	%esi, %edx
+	seta	%al
 	andb	%dil, %al
 	retq

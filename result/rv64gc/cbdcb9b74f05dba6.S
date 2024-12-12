@@ -1,4 +1,4 @@
-func000000000000011b:                   # @func000000000000011b
+func000000000000021b:                   # @func000000000000021b
 	srliw	a3, a1, 30
 	sext.w	a1, a1
 	beqz	a3, .LBB0_3

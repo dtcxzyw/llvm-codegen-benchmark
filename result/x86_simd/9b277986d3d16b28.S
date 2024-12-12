@@ -42,7 +42,14 @@ func0000000000000020:                   # @func0000000000000020
 func0000000000000008:                   # @func0000000000000008
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1 # ymm1 = ~ymm1
 	vpaddq	%ymm0, %ymm2, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
+	retq
+.LCPI7_0:
+	.quad	7                               # 0x7
+func000000000000003d:                   # @func000000000000003d
+	vpsubq	%ymm1, %ymm2, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	.LCPI7_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 func0000000000000014:                   # @func0000000000000014
 	vpsubq	%ymm1, %ymm2, %ymm1
@@ -62,12 +69,12 @@ func0000000000000035:                   # @func0000000000000035
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
-.LCPI10_0:
+.LCPI11_0:
 	.quad	-8                              # 0xfffffffffffffff8
 func0000000000000017:                   # @func0000000000000017
 	vpsubq	%ymm1, %ymm2, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
-	vpaddq	.LCPI10_0(%rip){1to4}, %ymm0, %ymm0
+	vpaddq	.LCPI11_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 func0000000000000021:                   # @func0000000000000021
 	vpsubq	%ymm1, %ymm2, %ymm1
@@ -77,15 +84,15 @@ func0000000000000021:                   # @func0000000000000021
 	retq
 func0000000000000009:                   # @func0000000000000009
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1 # ymm1 = ~ymm1
-	vpaddq	%ymm0, %ymm2, %ymm0
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm2, %ymm0, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
-.LCPI13_0:
+.LCPI14_0:
 	.quad	-12                             # 0xfffffffffffffff4
 func000000000000001c:                   # @func000000000000001c
 	vpsubq	%ymm1, %ymm2, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
-	vpaddq	.LCPI13_0(%rip){1to4}, %ymm0, %ymm0
+	vpaddq	.LCPI14_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 func0000000000000036:                   # @func0000000000000036
 	vpsubq	%ymm1, %ymm2, %ymm1
@@ -100,6 +107,17 @@ func0000000000000028:                   # @func0000000000000028
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000011:                   # @func0000000000000011
+	vpsubq	%ymm1, %ymm2, %ymm1
+	vpaddq	%ymm0, %ymm1, %ymm0
+	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpsubq	%ymm1, %ymm0, %ymm0
+	retq
+func0000000000000004:                   # @func0000000000000004
+	vpternlogq	$15, %ymm1, %ymm1, %ymm1 # ymm1 = ~ymm1
+	vpaddq	%ymm2, %ymm0, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
+	retq
+func0000000000000024:                   # @func0000000000000024
 	vpsubq	%ymm1, %ymm2, %ymm1
 	vpaddq	%ymm0, %ymm1, %ymm0
 	vpcmpeqd	%ymm1, %ymm1, %ymm1

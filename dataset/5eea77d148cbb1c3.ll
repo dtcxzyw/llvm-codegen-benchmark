@@ -1,7 +1,6 @@
 
-; 31 occurrences:
+; 30 occurrences:
 ; cmake/optimized/archive_string.c.ll
-; linux/optimized/8139too.ll
 ; linux/optimized/hooks.ll
 ; php/optimized/zend_inference.ll
 ; wireshark/optimized/packet-dcerpc-atsvc.c.ll

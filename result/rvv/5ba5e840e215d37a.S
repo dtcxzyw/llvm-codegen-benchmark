@@ -7,14 +7,6 @@ func0000000000000021:                   # @func0000000000000021
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vsext.vf2	v8, v10
 	ret
-func0000000000000029:                   # @func0000000000000029
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vmsgt.vi	v0, v10, 0
-	vmerge.vim	v9, v9, 0, v0
-	vmul.vv	v10, v9, v8
-	vsetvli	zero, zero, e64, m2, ta, ma
-	vsext.vf2	v8, v10
-	ret
 func0000000000000018:                   # @func0000000000000018
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vmsle.vi	v0, v10, 7

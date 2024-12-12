@@ -7,8 +7,8 @@
 define i1 @func0000000000000008(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 1
-  %4 = icmp ult ptr %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp ugt ptr %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -21,12 +21,12 @@ entry:
 define i1 @func0000000000000005(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 -12
-  %4 = icmp uge ptr %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp ule ptr %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 268 occurrences:
+; 285 occurrences:
 ; cvc5/optimized/symmetry_breaker.cpp.ll
 ; eastl/optimized/BenchmarkSet.cpp.ll
 ; folly/optimized/HHWheelTimer.cpp.ll
@@ -37,15 +37,16 @@ entry:
 ; linux/optimized/cpuset.ll
 ; linux/optimized/dma-iommu.ll
 ; linux/optimized/neighbour.ll
-; llvm/optimized/AlwaysInliner.cpp.ll
 ; llvm/optimized/AsmMatcherEmitter.cpp.ll
 ; llvm/optimized/ClangASTNodesEmitter.cpp.ll
 ; llvm/optimized/DAGDeltaAlgorithm.cpp.ll
 ; llvm/optimized/DeltaAlgorithm.cpp.ll
 ; llvm/optimized/InstrInfoEmitter.cpp.ll
 ; llvm/optimized/LoopAccessAnalysis.cpp.ll
+; llvm/optimized/MachineBasicBlock.cpp.ll
 ; llvm/optimized/PHIElimination.cpp.ll
 ; llvm/optimized/RISCVISAInfo.cpp.ll
+; llvm/optimized/ScheduleDAGInstrs.cpp.ll
 ; meshlab/optimized/texture_optimization.cpp.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; mold/optimized/arch-riscv.cc.RV32BE.cc.ll
@@ -270,6 +271,22 @@ entry:
 ; mold/optimized/relocatable.cc.SPARC64.cc.ll
 ; mold/optimized/relocatable.cc.X86_64.cc.ll
 ; nix/optimized/flake.ll
+; openusd/optimized/bboxCache.cpp.ll
+; openusd/optimized/changeManager.cpp.ll
+; openusd/optimized/diagnosticMgr.cpp.ll
+; openusd/optimized/dirtyList.cpp.ll
+; openusd/optimized/dispatcher.cpp.ll
+; openusd/optimized/noticeRegistry.cpp.ll
+; openusd/optimized/piPrototypeSceneIndex.cpp.ll
+; openusd/optimized/primTypeIndex.cpp.ll
+; openusd/optimized/registry.cpp.ll
+; openusd/optimized/registryManager.cpp.ll
+; openusd/optimized/renderIndex.cpp.ll
+; openusd/optimized/reporterBase.cpp.ll
+; openusd/optimized/resolver.cpp.ll
+; openusd/optimized/stageCacheContext.cpp.ll
+; openusd/optimized/testUsdThreadedAuthoring.cpp.ll
+; openusd/optimized/usdzResolver.cpp.ll
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Filter.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
@@ -296,19 +313,16 @@ entry:
 ; yosys/optimized/wreduce.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000061(i1 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
-  %4 = icmp eq ptr %3, %1
-  %5 = and i1 %4, %0
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
+  %4 = icmp eq ptr %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 38 occurrences:
-; abseil-cpp/optimized/low_level_alloc.cc.ll
-; assimp/optimized/OFFLoader.cpp.ll
-; cmake/optimized/fse_decompress.c.ll
-; cmake/optimized/huf_decompress.c.ll
+; 27 occurrences:
+; boost/optimized/static_string.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -330,30 +344,26 @@ entry:
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; git/optimized/transport.ll
-; harfbuzz/optimized/harfbuzz.cc.ll
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
-; icu/optimized/normalizer2impl.ll
-; lz4/optimized/lz4.c.ll
 ; minetest/optimized/noise.cpp.ll
 ; mitsuba3/optimized/appender.cpp.ll
-; nuttx/optimized/lib_mktemp.c.ll
-; openjdk/optimized/hb-buffer.ll
-; openusd/optimized/lz4.cpp.ll
-; php/optimized/funcs.ll
-; php/optimized/pcre2_substitute.ll
 ; tev/optimized/Common.cpp.ll
 ; tev/optimized/Ipc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000064(i1 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
-  %4 = icmp ugt ptr %3, %1
-  %5 = and i1 %4, %0
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
+  %4 = icmp ult ptr %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 126 occurrences:
+; 132 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
+; boost/optimized/context.ll
+; boost/optimized/round_robin.ll
+; boost/optimized/shared_work.ll
+; boost/optimized/waker.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -397,11 +407,14 @@ entry:
 ; llvm/optimized/DAGDeltaAlgorithm.cpp.ll
 ; llvm/optimized/DWARFAcceleratorTable.cpp.ll
 ; llvm/optimized/DeltaAlgorithm.cpp.ll
+; llvm/optimized/DependenceAnalysis.cpp.ll
+; llvm/optimized/InlineFunction.cpp.ll
 ; llvm/optimized/InstrInfoEmitter.cpp.ll
 ; llvm/optimized/LiteralSupport.cpp.ll
 ; llvm/optimized/MachineBasicBlock.cpp.ll
+; llvm/optimized/MachineBlockPlacement.cpp.ll
+; llvm/optimized/PlaceSafepoints.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVPushPopOptimizer.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
@@ -462,7 +475,6 @@ entry:
 ; openusd/optimized/usdcat.cpp.ll
 ; openusd/optimized/usdtree.cpp.ll
 ; postgres/optimized/autovacuum.ll
-; proj/optimized/io.cpp.ll
 ; proxygen/optimized/HTTPSession.cpp.ll
 ; proxygen/optimized/RFC2616.cpp.ll
 ; rocksdb/optimized/fault_injection_env.cc.ll
@@ -480,15 +492,15 @@ entry:
 ; yosys/optimized/techmap.ll
 ; yosys/optimized/torder.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000006c(i1 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 8
-  %4 = icmp ne ptr %3, %1
-  %5 = and i1 %4, %0
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 8
+  %4 = icmp ne ptr %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 88 occurrences:
+; 91 occurrences:
 ; cpython/optimized/listobject.ll
 ; darktable/optimized/AbstractLJpegDecoder.cpp.ll
 ; darktable/optimized/ArwDecoder.cpp.ll
@@ -532,11 +544,14 @@ entry:
 ; darktable/optimized/introspection_rgbcurve.c.ll
 ; darktable/optimized/introspection_scalepixels.c.ll
 ; darktable/optimized/introspection_tonecurve.c.ll
+; darktable/optimized/pdf.c.ll
 ; darktable/optimized/print_settings.c.ll
 ; duckdb/optimized/is_distinct_from.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
+; duckdb/optimized/ub_duckdb_bind_expression.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
+; duckdb/optimized/ub_duckdb_optimizer.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; folly/optimized/Subprocess.cpp.ll
 ; gromacs/optimized/dlar1vx.cpp.ll
@@ -581,25 +596,25 @@ entry:
 define i1 @func0000000000000004(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 8
-  %4 = icmp ugt ptr %3, %1
+  %4 = icmp ult ptr %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
 
 ; 7 occurrences:
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/static_string.ll
 ; cmake/optimized/ftp.c.ll
 ; curl/optimized/libcurl_la-ftp.ll
 ; gromacs/optimized/pdbio.cpp.ll
-; openjdk/optimized/frame.ll
 ; openjdk/optimized/frame_x86.ll
 ; spike/optimized/fdt_overlay.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000068(i1 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 4096
-  %4 = icmp ult ptr %3, %1
-  %5 = and i1 %4, %0
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 4096
+  %4 = icmp ugt ptr %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -611,26 +626,59 @@ entry:
 define i1 @func0000000000000001(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 3
-  %4 = icmp eq ptr %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp eq ptr %1, %3
+  %5 = and i1 %0, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; openjdk/optimized/frame.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000048(i1 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -48
+  %4 = icmp ugt ptr %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; openjdk/optimized/frame_x86.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000029(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000049(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -8
-  %4 = icmp ule ptr %3, %1
+  %4 = icmp uge ptr %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
 
-; 8 occurrences:
+; 13 occurrences:
+; abseil-cpp/optimized/low_level_alloc.cc.ll
+; assimp/optimized/OFFLoader.cpp.ll
+; cmake/optimized/fse_decompress.c.ll
+; cmake/optimized/huf_decompress.c.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
+; hyperscan/optimized/rose_build_long_lit.cpp.ll
+; icu/optimized/normalizer2impl.ll
+; lz4/optimized/lz4.c.ll
+; nuttx/optimized/lib_mktemp.c.ll
+; openjdk/optimized/hb-buffer.ll
+; openusd/optimized/lz4.cpp.ll
+; php/optimized/funcs.ll
+; php/optimized/pcre2_substitute.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000044(i1 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -2
+  %4 = icmp ult ptr %1, %3
+  %5 = and i1 %4, %0
+  ret i1 %5
+}
+
+; 7 occurrences:
 ; git/optimized/ref-filter.ll
 ; graphviz/optimized/scan.c.ll
-; hyperscan/optimized/ng_repeat.cpp.ll
 ; libsodium/optimized/libsodium_la-argon2-encoding.ll
 ; linux/optimized/drm_dp_mst_topology.ll
 ; linux/optimized/drm_plane.ll
@@ -640,49 +688,29 @@ entry:
 define i1 @func000000000000000c(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %2, i64 -32
-  %4 = icmp ne ptr %3, %1
+  %4 = icmp ne ptr %1, %3
+  %5 = and i1 %0, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; boost/optimized/static_string.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000069(i1 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 2
+  %4 = icmp uge ptr %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
 
-; 4 occurrences:
-; llvm/optimized/DependenceAnalysis.cpp.ll
-; llvm/optimized/InlineFunction.cpp.ll
-; llvm/optimized/MachineBlockPlacement.cpp.ll
-; llvm/optimized/PlaceSafepoints.cpp.ll
+; 1 occurrences:
+; llvm/optimized/AlwaysInliner.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000041(i1 %0, ptr %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw i8, ptr %2, i64 48
-  %4 = icmp ne ptr %3, %1
-  %5 = and i1 %4, %0
-  ret i1 %5
-}
-
-; 18 occurrences:
-; llvm/optimized/MachineBasicBlock.cpp.ll
-; llvm/optimized/ScheduleDAGInstrs.cpp.ll
-; openusd/optimized/bboxCache.cpp.ll
-; openusd/optimized/changeManager.cpp.ll
-; openusd/optimized/diagnosticMgr.cpp.ll
-; openusd/optimized/dirtyList.cpp.ll
-; openusd/optimized/dispatcher.cpp.ll
-; openusd/optimized/noticeRegistry.cpp.ll
-; openusd/optimized/piPrototypeSceneIndex.cpp.ll
-; openusd/optimized/primTypeIndex.cpp.ll
-; openusd/optimized/registry.cpp.ll
-; openusd/optimized/registryManager.cpp.ll
-; openusd/optimized/renderIndex.cpp.ll
-; openusd/optimized/reporterBase.cpp.ll
-; openusd/optimized/resolver.cpp.ll
-; openusd/optimized/stageCacheContext.cpp.ll
-; openusd/optimized/testUsdThreadedAuthoring.cpp.ll
-; openusd/optimized/usdzResolver.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, ptr %1, ptr %2) #0 {
-entry:
-  %3 = getelementptr nusw nuw i8, ptr %2, i64 944
-  %4 = icmp eq ptr %3, %1
+  %3 = getelementptr nusw i8, ptr %2, i64 -56
+  %4 = icmp eq ptr %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
@@ -696,11 +724,11 @@ entry:
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000025(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000045(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %2, i64 -32
-  %4 = icmp uge ptr %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp ule ptr %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

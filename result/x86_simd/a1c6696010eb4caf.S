@@ -1,7 +1,7 @@
 func0000000000000002:                   # @func0000000000000002
 	vxorps	%xmm2, %xmm2, %xmm2
 	vmaxps	%ymm1, %ymm2, %ymm1
-	vmulps	%ymm0, %ymm1, %ymm0
+	vmulps	%ymm1, %ymm0, %ymm0
 	vcvttps2dq	%ymm0, %ymm0
 	retq
 .LCPI1_0:

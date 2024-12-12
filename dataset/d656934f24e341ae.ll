@@ -1,8 +1,9 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; flac/optimized/window.c.ll
 ; gromacs/optimized/gmx_density.cpp.ll
 ; hermes/optimized/String.cpp.ll
+; libwebp/optimized/quant_levels_utils.c.ll
 ; opencv/optimized/binary_descriptor.cpp.ll
 ; opencv/optimized/depth_to_3d.cpp.ll
 ; opencv/optimized/edge_drawing.cpp.ll
@@ -25,7 +26,7 @@ entry:
   ret double %3
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; abc/optimized/cuddRef.c.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; darktable/optimized/introspection_ashift.c.ll
@@ -39,7 +40,6 @@ entry:
 ; postgres/optimized/selfuncs.ll
 ; postgres/optimized/vacuum.ll
 ; raylib/optimized/raudio.c.ll
-; rocksdb/optimized/ribbon_config.cc.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; wireshark/optimized/packet-gsm_osmux.c.ll
 ; wireshark/optimized/sequence_dialog.cpp.ll

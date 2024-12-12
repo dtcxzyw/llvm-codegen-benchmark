@@ -6,10 +6,23 @@
 ; openssl/optimized/libssl-lib-extensions_clnt.ll
 ; openssl/optimized/libssl-shlib-extensions_clnt.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = icmp ne i64 %3, 4294967295
+  %5 = select i1 %0, i1 %4, i1 false
+  ret i1 %5
+}
+
+; 3 occurrences:
+; hdf5/optimized/H5Olink.c.ll
+; openssl/optimized/libssl-lib-extensions_srvr.ll
+; openssl/optimized/libssl-shlib-extensions_srvr.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = or disjoint i64 %1, %2
+  %4 = icmp samesign ult i64 %3, 257
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -22,7 +35,7 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = icmp eq i64 %3, 0
@@ -30,11 +43,9 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; qemu/optimized/fpu_softfloat.c.ll
-; spike/optimized/f128_classify.ll
 ; spike/optimized/f128_to_i32_r_minMag.ll
-; spike/optimized/f128_to_ui32_r_minMag.ll
 ; spike/optimized/f128_to_ui64.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
@@ -45,7 +56,8 @@ entry:
   ret i1 %5
 }
 
-; 9 occurrences:
+; 11 occurrences:
+; boost/optimized/to_chars.ll
 ; llvm/optimized/SemaObjC.cpp.ll
 ; rust-analyzer-rs/optimized/1ocnbqjisn6f62l.ll
 ; rust-analyzer-rs/optimized/233tpdwe8f7eoneo.ll
@@ -55,22 +67,12 @@ entry:
 ; rust-analyzer-rs/optimized/84mgk0fwp2eksq1.ll
 ; rust-analyzer-rs/optimized/egul20e4uygvok2.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/70ymcp0y6yqkpw3c0y4yzyh2l.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
   %4 = icmp eq i64 %3, 0
-  %5 = select i1 %0, i1 %4, i1 false
-  ret i1 %5
-}
-
-; 1 occurrences:
-; hdf5/optimized/H5Olink.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = or disjoint i64 %1, %2
-  %4 = icmp ult i64 %3, 3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }

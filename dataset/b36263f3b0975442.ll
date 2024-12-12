@@ -1,5 +1,8 @@
 
-; 3 occurrences:
+; 6 occurrences:
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_image.ll
+; lvgl/optimized/lv_refr.ll
 ; openusd/optimized/lz4.cpp.ll
 ; velox/optimized/TimestampConversion.cpp.ll
 ; wireshark/optimized/netmon.c.ll
@@ -39,6 +42,17 @@ entry:
   %3 = add nsw i32 %1, %2
   %4 = sub i32 %0, %3
   %5 = udiv i32 %4, 12
+  ret i32 %5
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %1, %2
+  %4 = sub nsw i32 %0, %3
+  %5 = udiv i32 %4, 56
   ret i32 %5
 }
 

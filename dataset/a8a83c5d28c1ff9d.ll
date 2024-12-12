@@ -1,6 +1,5 @@
 
-; 4 occurrences:
-; libevent/optimized/poll.c.ll
+; 3 occurrences:
 ; llvm/optimized/InstCombineSimplifyDemanded.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
 ; openjdk/optimized/classPrinter.ll
@@ -11,7 +10,7 @@ entry:
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, i32 %1, i32 %2
   %6 = and i32 %5, 4
-  %7 = or disjoint i32 %6, %0
+  %7 = or disjoint i32 %0, %6
   ret i32 %7
 }
 
@@ -27,7 +26,7 @@ entry:
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, i32 %1, i32 %2
   %6 = and i32 %5, -3
-  %7 = or i32 %6, %0
+  %7 = or i32 %0, %6
   ret i32 %7
 }
 

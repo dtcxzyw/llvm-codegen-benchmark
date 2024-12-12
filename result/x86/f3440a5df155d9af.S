@@ -8,8 +8,3 @@ func0000000000000000:                   # @func0000000000000000
 	leal	(%rdi,%rsi), %eax
 	imull	%edx, %eax
 	retq
-func000000000000000d:                   # @func000000000000000d
-	shrl	%edx
-	leal	(%rdi,%rsi), %eax
-	imull	%edx, %eax
-	retq

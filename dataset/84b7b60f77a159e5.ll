@@ -10,12 +10,12 @@
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/InstructionSimplify.cpp.ll
 ; llvm/optimized/ParseDecl.cpp.ll
+; lvgl/optimized/lv_indev.ll
 ; openblas/optimized/dgejsv.c.ll
 ; openblas/optimized/dgesvdq.c.ll
 ; openmpi/optimized/libprrte_la-pmix_server_gen.ll
 ; openssl/optimized/openssl-bin-pkey.ll
 ; openssl/optimized/openssl-bin-rsa.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
 ; proj/optimized/grids.cpp.ll
 ; qemu/optimized/hw_intc_riscv_aplic.c.ll

@@ -1,9 +1,10 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; arrow/optimized/scalar_cast_nested.cc.ll
 ; ceres/optimized/cuda_block_structure.cc.ll
 ; cmake/optimized/divsufsort.c.ll
 ; glslang/optimized/ParseHelper.cpp.ll
+; glslang/optimized/Scan.cpp.ll
 ; gromacs/optimized/grompp.cpp.ll
 ; gromacs/optimized/symtab.cpp.ll
 ; icu/optimized/ustdio.ll
@@ -11,7 +12,7 @@
 ; rocksdb/optimized/file_indexer.cc.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i1 %0, i64 %1) #0 {
+define i1 @func000000000000008a(i1 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = trunc i64 %2 to i32
@@ -23,7 +24,7 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000088(i1 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 5
   %3 = trunc i64 %2 to i32
@@ -36,7 +37,7 @@ entry:
 ; gromacs/optimized/updategroups.cpp.ll
 ; minetest/optimized/pipeline.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i1 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = trunc i64 %2 to i32
@@ -78,7 +79,7 @@ entry:
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; pocketpy/optimized/expr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i1 %0, i64 %1) #0 {
+define i1 @func000000000000008c(i1 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 4
   %3 = trunc i64 %2 to i32
@@ -92,7 +93,7 @@ entry:
 ; nori/optimized/main.cpp.ll
 ; opencv/optimized/omni_stereo_calibration.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i1 %0, i64 %1) #0 {
+define i1 @func000000000000004a(i1 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32

@@ -203,14 +203,15 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
-; linux/optimized/cacheinfo.ll
+; 2 occurrences:
+; cmake/optimized/divsufsort.c.ll
+; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000010(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = shl i32 %2, 20
-  %4 = trunc nuw i64 %0 to i32
+  %3 = shl i32 %2, 8
+  %4 = trunc nuw nsw i64 %0 to i32
   %5 = or i32 %3, %4
   ret i32 %5
 }

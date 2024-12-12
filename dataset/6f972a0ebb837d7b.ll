@@ -1,10 +1,16 @@
 
-; 139 occurrences:
+; 145 occurrences:
 ; abc/optimized/dchSweep.c.ll
 ; abc/optimized/fraInd.c.ll
 ; abc/optimized/saigMiter.c.ll
+; boost/optimized/graphml.ll
+; boost/optimized/settings_parser.ll
 ; cpython/optimized/crossinterp.ll
 ; cpython/optimized/descrobject.ll
+; diesel-rs/optimized/1hwven6eovlu4ao9.ll
+; diesel-rs/optimized/53pwara59c5lk385.ll
+; diesel-rs/optimized/hznnvx0rqzdhedj.ll
+; diesel-rs/optimized/vl08vh3jfmwhanx.ll
 ; git/optimized/merge-ort.ll
 ; git/optimized/rev-list.ll
 ; git/optimized/unpack-trees.ll

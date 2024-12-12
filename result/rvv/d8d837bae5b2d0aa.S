@@ -7,5 +7,5 @@ func0000000000000001:                   # @func0000000000000001
 	vsrl.vi	v12, v12, 10
 	addi	a0, a0, 1431
 	vnmsub.vx	v12, a0, v10
-	vmseq.vv	v0, v12, v8
+	vmseq.vv	v0, v8, v12
 	ret

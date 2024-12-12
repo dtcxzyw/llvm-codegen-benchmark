@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/xmltok.ll
 ; folly/optimized/Compression.cpp.ll
@@ -7,7 +7,6 @@
 ; linux/optimized/alps.ll
 ; openssl/optimized/libcrypto-lib-a_utf8.ll
 ; openssl/optimized/libcrypto-shlib-a_utf8.ll
-; protobuf/optimized/json.cc.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i8 %0, i8 %1) #0 {

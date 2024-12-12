@@ -34,6 +34,14 @@ func0000000000000015:                   # @func0000000000000015
 	li	a0, 153
 	vmacc.vx	v8, a0, v10
 	ret
+func0000000000000008:                   # @func0000000000000008
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vv	v10, v8, v10
+	li	a0, -48
+	vmv.v.x	v8, a0
+	li	a0, 10
+	vmacc.vx	v8, a0, v10
+	ret
 func0000000000000035:                   # @func0000000000000035
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vadd.vv	v10, v8, v10

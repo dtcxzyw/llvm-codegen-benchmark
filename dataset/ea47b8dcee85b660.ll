@@ -1,7 +1,9 @@
 
-; 86 occurrences:
+; 90 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; arrow/optimized/csx_converter.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/src.ll
 ; clamav/optimized/yara_grammar.c.ll
 ; cmake/optimized/cmCommandArgumentParser.cxx.ll
 ; cmake/optimized/cmDependsJavaParser.cxx.ll
@@ -86,6 +88,8 @@
 ; verilator/optimized/V3ParseGrammar.cpp.ll
 ; yosys/optimized/rtlil_parser.tab.ll
 ; yosys/optimized/verilog_parser.tab.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i8 %0) #0 {
 entry:

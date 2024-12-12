@@ -1,11 +1,12 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; abc/optimized/abcLut.c.ll
 ; abc/optimized/lpkAbcMux.c.ll
 ; abc/optimized/lpkSets.c.ll
 ; abc/optimized/resFilter.c.ll
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver3.c.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/longobject.ll
 ; hwloc/optimized/hwloc-gather-cpuid.ll
 ; icu/optimized/collationkeys.ll

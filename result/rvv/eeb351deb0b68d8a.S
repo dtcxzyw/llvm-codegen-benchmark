@@ -13,7 +13,7 @@ func000000000000000c:                   # @func000000000000000c
 	vmsne.vi	v10, v8, 0
 	vmor.mm	v0, v0, v10
 	ret
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	lui	a0, 130048
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v8, v8, a0
@@ -21,12 +21,11 @@ func0000000000000004:                   # @func0000000000000004
 	vmsltu.vx	v10, v8, a0
 	vmor.mm	v0, v0, v10
 	ret
-func0000000000000008:                   # @func0000000000000008
-	li	a0, 7
-	slli	a0, a0, 32
+func0000000000000018:                   # @func0000000000000018
+	li	a0, -128
+	zext.w	a0, a0
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vand.vx	v8, v8, a0
-	bseti	a0, zero, 33
-	vmsgtu.vx	v10, v8, a0
+	vmsne.vi	v10, v8, 0
 	vmor.mm	v0, v0, v10
 	ret

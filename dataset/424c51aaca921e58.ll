@@ -40,7 +40,7 @@
 ; z3/optimized/value_generator.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %0
   %3 = icmp eq i32 %1, 45
@@ -48,7 +48,7 @@ entry:
   ret i32 %4
 }
 
-; 32 occurrences:
+; 33 occurrences:
 ; abc/optimized/giaIf.c.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; darktable/optimized/introspection_clipping.c.ll
@@ -63,6 +63,7 @@ entry:
 ; harfbuzz/optimized/hb-ot-cff2-table.cc.ll
 ; harfbuzz/optimized/hb-static.cc.ll
 ; linux/optimized/ehci-hcd.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; nuttx/optimized/lib_b16sin.c.ll
 ; oiio/optimized/ddsinput.cpp.ll
 ; openjdk/optimized/DrawLine.ll
@@ -82,7 +83,7 @@ entry:
 ; z3/optimized/mpz.cpp.ll
 ; z3/optimized/value_generator.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %0
   %3 = icmp slt i32 %1, 0
@@ -95,7 +96,7 @@ entry:
 ; openjdk/optimized/superword.ll
 ; z3/optimized/mpz.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i32 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %0
   %3 = icmp sgt i32 %1, 0
@@ -109,7 +110,7 @@ entry:
 ; meshlab/optimized/io_x3d.cpp.ll
 ; openjdk/optimized/ifnode.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 1, %0
   %3 = icmp eq i32 %1, 2
@@ -138,11 +139,12 @@ entry:
   ret i32 %4
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; clamav/optimized/Bra86.c.ll
 ; clamav/optimized/BraIA64.c.ll
 ; linux/optimized/extents.ll
 ; linux/optimized/fcntl.ll
+; lvgl/optimized/lv_scale.ll
 ; softposit-rs/optimized/8mae6k72v4zmmji.ll
 ; wireshark/optimized/packet-http2.c.ll
 ; wireshark/optimized/stats_tree_dialog.cpp.ll
@@ -187,20 +189,9 @@ entry:
 }
 
 ; 1 occurrences:
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
-entry:
-  %2 = sub nsw i32 8, %0
-  %3 = icmp ult i32 %1, 8
-  %4 = select i1 %3, i32 %2, i32 %0
-  ret i32 %4
-}
-
-; 1 occurrences:
 ; openspiel/optimized/maedn.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000064(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 3, %0
   %3 = icmp ult i32 %1, 2
@@ -211,7 +202,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/Par.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i32 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %0
   %.not = icmp eq i32 %1, 0

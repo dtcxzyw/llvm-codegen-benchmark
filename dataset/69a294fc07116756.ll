@@ -14,7 +14,7 @@ entry:
 ; linux/optimized/vfs_inode.ll
 ; qemu/optimized/hw_9pfs_9p.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000023(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000043(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 511
   %3 = or disjoint i32 %2, -2147483648
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/OGLPaints.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000035(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000055(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 3
   %3 = or disjoint i32 %2, 4

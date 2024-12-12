@@ -13,6 +13,7 @@ func0000000000000007:                   # @func0000000000000007
 	shll	$8, %eax
 	retq
 func0000000000000006:                   # @func0000000000000006
-	orl	%esi, %edi
-	leal	(%rdi,%rdi), %eax
+	movl	%edi, %eax
+	orl	%esi, %eax
+	shll	$4, %eax
 	retq

@@ -1,18 +1,15 @@
 
-; 40 occurrences:
+; 39 occurrences:
 ; clap-rs/optimized/4bajo035z6e1d4qz.ll
 ; hermes/optimized/ISel.cpp.ll
 ; hermes/optimized/Lowering.cpp.ll
 ; hermes/optimized/Passes.cpp.ll
 ; hermes/optimized/SimplifyCFG.cpp.ll
 ; hermes/optimized/TDZDedup.cpp.ll
-; llvm/optimized/ASTReaderDecl.cpp.ll
-; llvm/optimized/AlwaysInliner.cpp.ll
+; linux/optimized/seccomp.ll
 ; llvm/optimized/BoundsChecking.cpp.ll
-; llvm/optimized/CallGraph.cpp.ll
+; llvm/optimized/DXContainer.cpp.ll
 ; llvm/optimized/FlattenCFG.cpp.ll
-; llvm/optimized/InstCombineLoadStoreAlloca.cpp.ll
-; llvm/optimized/JumpThreading.cpp.ll
 ; llvm/optimized/LoopAccessAnalysis.cpp.ll
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; llvm/optimized/Metadata.cpp.ll
@@ -40,11 +37,28 @@
 ; tokenizers-rs/optimized/2d3ht47jz0iets91.ll
 ; tokenizers-rs/optimized/2mot01sr7ebui81b.ll
 ; tokenizers-rs/optimized/58hth72z9dib25am.ll
+; zed-rs/optimized/4q1bnadqr1o107uase7gmrd0k.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(i1 %0, ptr %1) #0 {
+entry:
+  %2 = select i1 %0, ptr null, ptr %1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 32
+  %4 = select i1 %0, ptr null, ptr %3
+  ret ptr %4
+}
+
+; 5 occurrences:
+; llvm/optimized/ASTReaderDecl.cpp.ll
+; llvm/optimized/AlwaysInliner.cpp.ll
+; llvm/optimized/CallGraph.cpp.ll
+; llvm/optimized/InstCombineLoadStoreAlloca.cpp.ll
+; llvm/optimized/JumpThreading.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(i1 %0, ptr %1) #0 {
 entry:
   %2 = select i1 %0, ptr null, ptr %1
-  %3 = getelementptr nusw i8, ptr %2, i64 32
+  %3 = getelementptr nusw i8, ptr %2, i64 -56
   %4 = select i1 %0, ptr null, ptr %3
   ret ptr %4
 }

@@ -77,18 +77,50 @@ func0000000000000002:                   # @func0000000000000002
 	vpternlogq	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	retq
 .LCPI6_0:
+	.long	0                               # 0x0
+	.long	8                               # 0x8
+	.long	2                               # 0x2
+	.long	10                              # 0xa
+	.long	4                               # 0x4
+	.long	12                              # 0xc
+	.long	6                               # 0x6
+	.long	14                              # 0xe
+.LCPI6_1:
+	.byte	0                               # 0x0
+	.byte	8                               # 0x8
+	.byte	2                               # 0x2
+	.byte	10                              # 0xa
+	.byte	4                               # 0x4
+	.byte	12                              # 0xc
+	.byte	6                               # 0x6
+	.byte	14                              # 0xe
+func000000000000003d:                   # @func000000000000003d
+	vpmovsxbd	.LCPI6_1(%rip), %ymm3   # ymm3 = [0,8,2,10,4,12,6,14]
+	vpermi2d	%ymm1, %ymm2, %ymm3
+	vpsllq	$48, %ymm0, %ymm0
+	vpor	%ymm3, %ymm0, %ymm0
+	retq
+.LCPI7_0:
 	.quad	-32769                          # 0xffffffffffff7fff
 func000000000000003c:                   # @func000000000000003c
 	vpsllq	$17, %ymm2, %ymm2
-	vpandq	.LCPI6_0(%rip){1to4}, %ymm1, %ymm1
+	vpandq	.LCPI7_0(%rip){1to4}, %ymm1, %ymm1
 	vpsllq	$30, %ymm0, %ymm0
 	vpternlogq	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	retq
-.LCPI7_0:
+.LCPI8_0:
 	.quad	2                               # 0x2
 func0000000000000006:                   # @func0000000000000006
-	vpandq	.LCPI7_0(%rip){1to4}, %ymm2, %ymm2
+	vpandq	.LCPI8_0(%rip){1to4}, %ymm2, %ymm2
 	vpsllq	$8, %ymm1, %ymm1
 	vpsllq	$2, %ymm0, %ymm0
+	vpternlogq	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
+	retq
+.LCPI9_0:
+	.quad	31                              # 0x1f
+func0000000000000036:                   # @func0000000000000036
+	vpandq	.LCPI9_0(%rip){1to4}, %ymm2, %ymm2
+	vpsllq	$5, %ymm1, %ymm1
+	vpsllq	$24, %ymm0, %ymm0
 	vpternlogq	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	retq

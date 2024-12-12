@@ -5,7 +5,7 @@ func0000000000000014:                   # @func0000000000000014
 	vmflt.vv	v0, v9, v8
 	vsetvli	zero, zero, e64, m2, ta, mu
 	vnot.v	v8, v12
-	vadd.vv	v12, v8, v10, v0.t
+	vadd.vv	v12, v10, v8, v0.t
 	vmv.v.v	v8, v12
 	ret
 func0000000000000012:                   # @func0000000000000012
@@ -15,7 +15,7 @@ func0000000000000012:                   # @func0000000000000012
 	vmflt.vv	v0, v8, v9
 	vsetvli	zero, zero, e64, m2, ta, mu
 	vnot.v	v8, v12
-	vadd.vv	v12, v8, v10, v0.t
+	vadd.vv	v12, v10, v8, v0.t
 	vmv.v.v	v8, v12
 	ret
 func000000000000001a:                   # @func000000000000001a
@@ -25,6 +25,6 @@ func000000000000001a:                   # @func000000000000001a
 	vmfle.vv	v0, v8, v9
 	vsetvli	zero, zero, e64, m2, ta, mu
 	vnot.v	v8, v12
-	vadd.vv	v12, v8, v10, v0.t
+	vadd.vv	v12, v10, v8, v0.t
 	vmv.v.v	v8, v12
 	ret

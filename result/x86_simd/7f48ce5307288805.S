@@ -38,7 +38,7 @@
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
-func00000000000000d4:                   # @func00000000000000d4
+func00000000000001b4:                   # @func00000000000001b4
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpandd	.LCPI0_2(%rip){1to8}, %ymm1, %ymm1
 	vpaddd	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0
@@ -86,7 +86,7 @@ func00000000000000d4:                   # @func00000000000000d4
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000194:                   # @func0000000000000194
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpandd	.LCPI1_2(%rip){1to8}, %ymm1, %ymm1
 	vpaddd	.LCPI1_1(%rip){1to8}, %ymm0, %ymm0
@@ -96,7 +96,7 @@ func00000000000000c4:                   # @func00000000000000c4
 	retq
 .LCPI2_0:
 	.long	20                              # 0x14
-func00000000000000f4:                   # @func00000000000000f4
+func00000000000001f4:                   # @func00000000000001f4
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpblendw	$170, %ymm2, %ymm1, %ymm1       # ymm1 = ymm1[0],ymm2[1],ymm1[2],ymm2[3],ymm1[4],ymm2[5],ymm1[6],ymm2[7],ymm1[8],ymm2[9],ymm1[10],ymm2[11],ymm1[12],ymm2[13],ymm1[14],ymm2[15]
@@ -109,7 +109,7 @@ func00000000000000f4:                   # @func00000000000000f4
 	.long	2047                            # 0x7ff
 .LCPI3_1:
 	.long	16                              # 0x10
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpandd	.LCPI3_0(%rip){1to8}, %ymm1, %ymm1
 	vpaddd	.LCPI3_1(%rip){1to8}, %ymm0, %ymm0

@@ -1,5 +1,6 @@
 
-; 26 occurrences:
+; 27 occurrences:
+; boost/optimized/rational.ll
 ; lightgbm/optimized/linker_topo.cpp.ll
 ; lightgbm/optimized/network.cpp.ll
 ; linux/optimized/intel_vdsc.ll

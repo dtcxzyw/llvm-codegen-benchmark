@@ -18,7 +18,17 @@ func0000000000000004:                   # @func0000000000000004
 	cmovbq	%rdi, %rax
 	retq
 func0000000000000008:                   # @func0000000000000008
-	cmpw	$3, %si
-	movl	$16, %eax
+	cmpw	$2, %si
+	movl	$5, %eax
+	cmovaeq	%rdi, %rax
+	retq
+func0000000000000014:                   # @func0000000000000014
+	xorl	%eax, %eax
+	cmpw	$17, %si
+	cmovbq	%rdi, %rax
+	retq
+func0000000000000018:                   # @func0000000000000018
+	xorl	%eax, %eax
+	cmpw	$65, %si
 	cmovaeq	%rdi, %rax
 	retq

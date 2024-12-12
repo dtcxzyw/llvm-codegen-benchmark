@@ -1,13 +1,10 @@
 
-; 11 occurrences:
+; 8 occurrences:
 ; bullet3/optimized/b3RadixSort32CL.ll
-; icu/optimized/gregoimp.ll
 ; openblas/optimized/dlatrs3.c.ll
 ; openssl/optimized/libcrypto-lib-a_int.ll
-; openssl/optimized/libcrypto-lib-ec_deprecated.ll
 ; openssl/optimized/libcrypto-lib-pvkfmt.ll
 ; openssl/optimized/libcrypto-shlib-a_int.ll
-; openssl/optimized/libcrypto-shlib-ec_deprecated.ll
 ; openssl/optimized/libcrypto-shlib-pvkfmt.ll
 ; openssl/optimized/loader_attic-dso-pvkfmt.ll
 ; ruby/optimized/iseq.ll

@@ -12,5 +12,5 @@ func0000000000000090:                   # @func0000000000000090
 	vsetvli	zero, zero, e32, m4, ta, ma
 	vmfgt.vf	v13, v8, fa4
 	vmor.mm	v8, v13, v12
-	vmor.mm	v0, v8, v0
+	vmor.mm	v0, v0, v8
 	ret

@@ -4,7 +4,7 @@
 ; php/optimized/ir_emit.ll
 ; wireshark/optimized/packet-osmo_trx.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000421(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 128
   %3 = icmp ne i32 %0, 233

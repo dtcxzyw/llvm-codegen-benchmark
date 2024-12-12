@@ -11,7 +11,7 @@
 ; ruby/optimized/string.ll
 ; ruby/optimized/thread.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000304(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000604(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 6
   %3 = icmp ne i64 %2, 0

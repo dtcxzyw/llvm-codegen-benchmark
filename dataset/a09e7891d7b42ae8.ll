@@ -2,17 +2,19 @@
 ; 1 occurrences:
 ; ruby/optimized/coverage.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 0, i64 %2
-  %4 = add nsw i64 %3, %0
+  %4 = add nsw i64 %0, %3
   %5 = icmp slt i64 %4, 4611686018427387904
   ret i1 %5
 }
 
-; 15 occurrences:
+; 17 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; cpython/optimized/obmalloc.ll
 ; eastl/optimized/BenchmarkString.cpp.ll
 ; folly/optimized/Elf.cpp.ll
@@ -40,24 +42,22 @@ entry:
 ; openssl/optimized/asn1_encode_test-bin-asn1_encode_test.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000074(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 4, i64 %2
   %4 = add nuw nsw i64 %3, %0
-  %5 = icmp ult i64 %4, 32768
+  %5 = icmp samesign ult i64 %4, 32768
   ret i1 %5
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; openssl/optimized/asn1_encode_test-bin-asn1_encode_test.ll
-; rust-analyzer-rs/optimized/1gmgjb2cqrqdy4oz.ll
-; rust-analyzer-rs/optimized/3lcvg5e4mhakwunj.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000078(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 4, i64 %2
   %4 = add nuw nsw i64 %3, %0
-  %5 = icmp ugt i64 %4, 255
+  %5 = icmp samesign ugt i64 %4, 255
   ret i1 %5
 }
 
@@ -76,7 +76,7 @@ entry:
   ret i1 %5
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; clamav/optimized/js-norm.c.ll
 ; coreutils-rs/optimized/3ntjj58b904wujzh.ll
 ; cpython/optimized/bufferedio.ll
@@ -88,12 +88,25 @@ entry:
 ; openjdk/optimized/jfrAdaptiveSampler.ll
 ; typst-rs/optimized/4khbogid70pr8yfn.ll
 ; verilator/optimized/V3ExecGraph.cpp.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 0, i64 %2
   %4 = sub i64 0, %0
   %5 = icmp eq i64 %3, %4
+  ret i1 %5
+}
+
+; 2 occurrences:
+; rust-analyzer-rs/optimized/1gmgjb2cqrqdy4oz.ll
+; rust-analyzer-rs/optimized/3lcvg5e4mhakwunj.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000068(i64 %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = select i1 %1, i64 2, i64 %2
+  %4 = add nuw nsw i64 %3, %0
+  %5 = icmp ugt i64 %4, 23
   ret i1 %5
 }
 
@@ -111,6 +124,18 @@ entry:
   ret i1 %5
 }
 
+; 2 occurrences:
+; typst-rs/optimized/40w6rezair915kkd.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000061(i64 %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = select i1 %1, i64 0, i64 %2
+  %4 = or i64 %0, %3
+  %5 = icmp eq i64 %4, 0
+  ret i1 %5
+}
+
 ; 3 occurrences:
 ; linux/optimized/hrtimer.ll
 ; linux/optimized/page-writeback.ll
@@ -119,7 +144,7 @@ entry:
 define i1 @func0000000000000006(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 9223372036854775807, i64 %2, !prof !0
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = icmp slt i64 %4, 0
   ret i1 %5
 }
@@ -127,7 +152,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/number_decimalquantity.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 0, i64 %2
   %4 = add nuw i64 %3, %0
@@ -136,20 +161,9 @@ entry:
 }
 
 ; 1 occurrences:
-; typst-rs/optimized/40w6rezair915kkd.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i1 %1, i64 %2) #0 {
-entry:
-  %3 = select i1 %1, i64 0, i64 %2
-  %4 = or i64 %3, %0
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
-}
-
-; 1 occurrences:
 ; graphviz/optimized/shapes.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 1, i64 %2
   %4 = add nsw i64 %3, %0
@@ -171,7 +185,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/Int128_t.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 -48, i64 %2
   %4 = sub i64 0, %0
@@ -182,7 +196,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestSort.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %1, i64 11, i64 %2
   %4 = add nsw i64 %3, %0

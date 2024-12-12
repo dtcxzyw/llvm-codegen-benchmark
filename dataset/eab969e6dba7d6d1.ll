@@ -4,11 +4,11 @@
 ; openspiel/optimized/colored_trails.cc.ll
 ; openspiel/optimized/colored_trails_board_generator.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000104(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = trunc i64 %1 to i32
-  %4 = mul i32 %3, %2
-  %5 = icmp ugt i32 %4, %0
+  %4 = mul i32 %2, %3
+  %5 = icmp ult i32 %0, %4
   ret i1 %5
 }
 
@@ -44,11 +44,11 @@ entry:
 ; openspiel/optimized/tabular_sarsa.cc.ll
 ; openspiel/optimized/tabular_sarsa_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000108(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = trunc i64 %1 to i32
-  %4 = mul i32 %3, %2
-  %5 = icmp ult i32 %4, %0
+  %4 = mul i32 %2, %3
+  %5 = icmp ugt i32 %0, %4
   ret i1 %5
 }
 
@@ -61,11 +61,11 @@ entry:
 ; openspiel/optimized/tabular_sarsa.cc.ll
 ; openspiel/optimized/tabular_sarsa_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000184(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = trunc i64 %1 to i32
-  %4 = mul i32 %3, %2
-  %5 = icmp ugt i32 %4, %0
+  %4 = mul i32 %2, %3
+  %5 = icmp ult i32 %0, %4
   ret i1 %5
 }
 
@@ -78,11 +78,11 @@ entry:
 ; openspiel/optimized/tabular_sarsa.cc.ll
 ; openspiel/optimized/tabular_sarsa_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000198(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = trunc i64 %1 to i32
-  %4 = mul i32 %3, %2
-  %5 = icmp ult i32 %4, %0
+  %4 = mul i32 %2, %3
+  %5 = icmp samesign ugt i32 %0, %4
   ret i1 %5
 }
 
@@ -90,22 +90,22 @@ entry:
 ; openspiel/optimized/colored_trails_board_generator.cc.ll
 ; openspiel/optimized/garnet.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c8(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000388(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = trunc i64 %1 to i32
-  %4 = mul i32 %3, %2
-  %5 = icmp ult i32 %4, %0
+  %4 = mul i32 %2, %3
+  %5 = icmp ugt i32 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; openspiel/optimized/garnet.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c4(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000384(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = trunc i64 %1 to i32
-  %4 = mul i32 %3, %2
-  %5 = icmp ugt i32 %4, %0
+  %4 = mul i32 %2, %3
+  %5 = icmp ult i32 %0, %4
   ret i1 %5
 }
 

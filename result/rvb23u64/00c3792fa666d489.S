@@ -1,4 +1,4 @@
-func000000000000006c:                   # @func000000000000006c
+func00000000000000cc:                   # @func00000000000000cc
 	slli	a2, a2, 1
 	or	a1, a1, a2
 	and	a0, a0, a1
@@ -16,21 +16,15 @@ func0000000000000001:                   # @func0000000000000001
 	and	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	slli	a2, a2, 8
 	or	a1, a1, a2
 	and	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	slli	a2, a2, 9
 	or	a1, a1, a2
 	and	a0, a0, a1
 	seqz	a0, a0
-	ret
-func0000000000000074:                   # @func0000000000000074
-	slli	a2, a2, 8
-	or	a1, a1, a2
-	and	a0, a0, a1
-	sltiu	a0, a0, 4
 	ret

@@ -74,7 +74,7 @@
 define i64 @func0000000000000000(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc i128 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = lshr i64 %3, 37
   ret i64 %4
 }
@@ -90,8 +90,52 @@ entry:
 define i64 @func0000000000000010(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc nuw i128 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = lshr i64 %3, 3
+  ret i64 %4
+}
+
+; 1 occurrences:
+; luau/optimized/lnumprint.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i64 %0, i128 %1) #0 {
+entry:
+  %2 = trunc nuw i128 %1 to i64
+  %3 = add nuw i64 %0, %2
+  %4 = lshr i64 %3, 2
+  ret i64 %4
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001e(i64 %0, i128 %1) #0 {
+entry:
+  %2 = trunc nuw nsw i128 %1 to i64
+  %3 = add nuw nsw i64 %0, %2
+  %4 = lshr i64 %3, 1
+  ret i64 %4
+}
+
+; 1 occurrences:
+; libsodium/optimized/libsodium_la-ed25519_ref10.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000018(i64 %0, i128 %1) #0 {
+entry:
+  %2 = trunc nuw nsw i128 %1 to i64
+  %3 = add i64 %0, %2
+  %4 = lshr i64 %3, 51
+  ret i64 %4
+}
+
+; 1 occurrences:
+; quickjs/optimized/libbf.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001c(i64 %0, i128 %1) #0 {
+entry:
+  %2 = trunc nuw nsw i128 %1 to i64
+  %3 = add nuw i64 %0, %2
+  %4 = lshr i64 %3, 29
   ret i64 %4
 }
 

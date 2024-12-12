@@ -1,6 +1,45 @@
 
-; 7 occurrences:
+; 1 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000007f(ptr %0, i32 %1) #0 {
+entry:
+  %2 = shl nsw i32 %1, 2
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 16
+  %5 = getelementptr nusw nuw float, ptr %4, i64 %3
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 4
+  ret ptr %6
+}
+
+; 1 occurrences:
+; darktable/optimized/introspection_demosaic.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000030(ptr %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 2
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 16
+  %5 = getelementptr float, ptr %4, i64 %3
+  %6 = getelementptr i8, ptr %5, i64 -4
+  ret ptr %6
+}
+
+; 1 occurrences:
+; darktable/optimized/introspection_demosaic.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000006f(ptr %0, i32 %1) #0 {
+entry:
+  %2 = shl nsw i32 %1, 2
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw i8, ptr %0, i64 -16
+  %5 = getelementptr nusw nuw float, ptr %4, i64 %3
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 4
+  ret ptr %6
+}
+
+; 7 occurrences:
+; abc/optimized/abcExact.c.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
@@ -8,18 +47,34 @@
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000007b(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 2
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 16
-  %5 = getelementptr nusw float, ptr %4, i64 %3
-  %6 = getelementptr nusw i8, ptr %5, i64 4
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 3
+  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 2
   ret ptr %6
 }
 
-; 17 occurrences:
-; darktable/optimized/introspection_demosaic.c.ll
+; 5 occurrences:
+; imgui/optimized/imgui_draw.cpp.ll
+; nori/optimized/nanovg.c.ll
+; nuklear/optimized/unity.c.ll
+; raylib/optimized/rtext.c.ll
+; recastnavigation/optimized/imguiRenderGL.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000078(ptr %0, i32 %1) #0 {
+entry:
+  %2 = shl nsw i32 %1, 1
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 10
+  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %6 = getelementptr i8, ptr %5, i64 1
+  ret ptr %6
+}
+
+; 16 occurrences:
 ; gromacs/optimized/dlar1vx.cpp.ll
 ; gromacs/optimized/dlarrex.cpp.ll
 ; gromacs/optimized/dlarrvx.cpp.ll
@@ -39,44 +94,26 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func0000000000000020(ptr %0, i32 %1) #0 {
 entry:
-  %2 = shl i32 %1, 2
+  %2 = shl i32 %1, 1
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 16
-  %5 = getelementptr float, ptr %4, i64 %3
-  %6 = getelementptr i8, ptr %5, i64 -4
+  %4 = getelementptr nusw i8, ptr %0, i64 -8
+  %5 = getelementptr double, ptr %4, i64 %3
+  %6 = getelementptr i8, ptr %5, i64 -8
   ret ptr %6
 }
 
-; 1 occurrences:
-; abc/optimized/abcExact.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000040(ptr %0, i32 %1) #0 {
-entry:
-  %2 = shl nsw i32 %1, 2
-  %3 = sext i32 %2 to i64
-  %4 = getelementptr i8, ptr %0, i64 3
-  %5 = getelementptr i8, ptr %4, i64 %3
-  %6 = getelementptr i8, ptr %5, i64 2
-  ret ptr %6
-}
-
-; 8 occurrences:
+; 3 occurrences:
 ; gromacs/optimized/dlasq2.cpp.ll
 ; gromacs/optimized/slasq2.cpp.ll
-; imgui/optimized/imgui_draw.cpp.ll
-; nori/optimized/nanovg.c.ll
-; nuklear/optimized/unity.c.ll
 ; openblas/optimized/dlasq2.c.ll
-; raylib/optimized/rtext.c.ll
-; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000068(ptr %0, i32 %1) #0 {
 entry:
-  %2 = shl nsw i32 %1, 1
+  %2 = shl nsw i32 %1, 2
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 10
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
-  %6 = getelementptr i8, ptr %5, i64 1
+  %4 = getelementptr nusw i8, ptr %0, i64 -8
+  %5 = getelementptr nusw double, ptr %4, i64 %3
+  %6 = getelementptr i8, ptr %5, i64 -8
   ret ptr %6
 }
 

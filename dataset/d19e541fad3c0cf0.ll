@@ -4,7 +4,7 @@
 ; spike/optimized/csrs.ll
 ; spike/optimized/s_addMagsF16.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i8 %0, i64 %1) #0 {
+define i1 @func00000000000000c1(i8 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 983040
   %3 = icmp eq i64 %2, 0
@@ -13,11 +13,25 @@ entry:
   ret i1 %5
 }
 
+; 3 occurrences:
+; icu/optimized/uhash.ll
+; qemu/optimized/source_s_addMagsF16.c.ll
+; spike/optimized/s_addMagsF16.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000281(i8 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 1
+  %3 = icmp eq i64 %2, 0
+  %4 = icmp samesign ult i8 %0, 30
+  %5 = select i1 %3, i1 %4, i1 false
+  ret i1 %5
+}
+
 ; 2 occurrences:
 ; qemu/optimized/source_s_subMagsF16.c.ll
 ; spike/optimized/s_subMagsF16.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i8 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 983040
   %3 = icmp eq i64 %2, 0
@@ -35,7 +49,7 @@ entry:
 ; wireshark/optimized/packet-peekremote.c.ll
 ; yosys/optimized/simplify.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i8 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 9223372036854775807
   %3 = icmp eq i64 %2, 0
@@ -44,11 +58,10 @@ entry:
   ret i1 %5
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; abseil-cpp/optimized/substitute.cc.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; linux/optimized/apic.ll
-; linux/optimized/apic_noop.ll
 ; linux/optimized/bugs.ll
 ; linux/optimized/ibs.ll
 ; linux/optimized/scsi_lib.ll
@@ -61,7 +74,7 @@ entry:
 ; verilator/optimized/V3ParseGrammar.cpp.ll
 ; verilator/optimized/V3Width.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i8 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i8 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2048
   %3 = icmp ne i64 %2, 0
@@ -76,7 +89,7 @@ entry:
 ; php/optimized/pcre2_jit_compile.ll
 ; php/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i8 %0, i64 %1) #0 {
+define i1 @func000000000000018c(i8 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2
   %3 = icmp ne i64 %2, 0
@@ -88,7 +101,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaStmt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i8 %0, i64 %1) #0 {
+define i1 @func000000000000008c(i8 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
   %3 = icmp ne i64 %2, 0
@@ -102,7 +115,7 @@ entry:
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/netdev.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000181(i8 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2147483648
   %3 = icmp eq i64 %2, 0

@@ -17,12 +17,12 @@ entry:
 ; llvm/optimized/APInt.cpp.ll
 ; velox/optimized/SparseHll.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000d4(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 38
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = lshr i32 %0, 6
-  %5 = icmp ult i32 %4, %3
+  %5 = icmp samesign ult i32 %4, %3
   ret i1 %5
 }
 
@@ -40,12 +40,12 @@ entry:
 ; llvm/optimized/APFloat.cpp.ll
 ; velox/optimized/SparseHll.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000d8(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 38
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = lshr i32 %0, 6
-  %5 = icmp ugt i32 %4, %3
+  %5 = icmp samesign ugt i32 %4, %3
   ret i1 %5
 }
 
@@ -55,7 +55,7 @@ entry:
 ; opencv/optimized/resize.cpp.ll
 ; protobuf/optimized/unparser.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i64 %1) #0 {
+define i1 @func00000000000000c1(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 6
   %3 = trunc nuw nsw i64 %2 to i32
@@ -67,7 +67,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e1(i32 %0, i64 %1) #0 {
+define i1 @func00000000000001c1(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = trunc nuw nsw i64 %2 to i32
@@ -79,7 +79,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000101(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = trunc i64 %2 to i32
@@ -103,7 +103,7 @@ entry:
 ; 1 occurrences:
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000086(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000106(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 2
   %3 = trunc i64 %2 to i32
@@ -115,7 +115,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/psnames.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000108(i32 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = trunc i64 %2 to i32

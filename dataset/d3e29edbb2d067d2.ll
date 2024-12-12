@@ -5,14 +5,15 @@
 ; gromacs/optimized/coolstuff.cpp.ll
 ; rocksdb/optimized/transaction_test_util.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0) #0 {
+define i1 @func0000000000000061(i64 %0) #0 {
 entry:
   %1 = mul i64 %0, 20
   %2 = icmp ult i64 %1, 16
   ret i1 %2
 }
 
-; 98 occurrences:
+; 99 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -112,7 +113,7 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0) #0 {
+define i1 @func00000000000000e1(i64 %0) #0 {
 entry:
   %1 = zext nneg i64 %0 to i128
   %2 = mul nuw nsw i128 %1, 12379400392853802749
@@ -121,11 +122,23 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; Function Attrs: nounwind
+define i1 @func000000000000006c(i64 %0) #0 {
+entry:
+  %1 = mul i64 %0, 1000000000
+  %2 = icmp ne i64 %1, -9223372036854775808
+  ret i1 %2
+}
+
+; 4 occurrences:
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007c(i64 %0) #0 {
+define i1 @func00000000000000ec(i64 %0) #0 {
 entry:
   %1 = mul i64 %0, 1000000000
   %2 = and i64 %1, 4503599627369984

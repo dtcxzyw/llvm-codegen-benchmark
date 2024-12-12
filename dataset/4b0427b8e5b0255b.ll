@@ -78,13 +78,13 @@
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i64 %1, i8 %2) #0 {
+define ptr @func000000000000002b(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
   %4 = lshr i64 2164195328, %3
   %5 = and i64 %4, 1
   %6 = getelementptr nusw i8, ptr %0, i64 %1
-  %7 = getelementptr nusw i8, ptr %6, i64 %5
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %5
   ret ptr %7
 }
 

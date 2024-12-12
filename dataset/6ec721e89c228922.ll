@@ -10,7 +10,7 @@ entry:
   %3 = sub nsw i32 %2, %1
   %4 = sdiv i32 %3, 2
   %5 = select i1 %0, i32 0, i32 %4
-  %6 = add nsw i32 %5, %1
+  %6 = add nsw i32 %1, %5
   ret i32 %6
 }
 

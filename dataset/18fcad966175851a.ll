@@ -11,10 +11,10 @@
 define i8 @func0000000000000020(i8 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = sdiv i32 %4, 255
   %6 = trunc i32 %5 to i8
-  %7 = add i8 %6, %0
+  %7 = add i8 %0, %6
   ret i8 %7
 }
 

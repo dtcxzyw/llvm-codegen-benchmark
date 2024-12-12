@@ -4,7 +4,7 @@
 	.long	8388608                         # 0x800000
 .LCPI0_2:
 	.long	2147483648                      # 0x80000000
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm2, %ymm0
@@ -21,7 +21,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	.long	8388608                         # 0x800000
 .LCPI1_2:
 	.long	2147483648                      # 0x80000000
-func00000000000000c8:                   # @func00000000000000c8
+func0000000000000188:                   # @func0000000000000188
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm2, %ymm0

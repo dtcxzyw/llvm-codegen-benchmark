@@ -3,7 +3,7 @@
 ; icu/optimized/decNumber.ll
 ; verilator/optimized/V3ParseGrammar.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i32 %0) #0 {
+define i64 @func0000000000000026(i32 %0) #0 {
 entry:
   %1 = sub nsw i32 0, %0
   %2 = icmp slt i32 %0, 0
@@ -12,9 +12,8 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; linux/optimized/nfs4trace.ll
-; linux/optimized/nfstrace.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i32 %0) #0 {
 entry:

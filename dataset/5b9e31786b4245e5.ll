@@ -1,5 +1,5 @@
 
-; 107 occurrences:
+; 110 occurrences:
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; git/optimized/wt-status.ll
 ; hermes/optimized/HiddenClass.cpp.ll
@@ -57,7 +57,6 @@
 ; llvm/optimized/NestedNameSpecifier.cpp.ll
 ; llvm/optimized/PPDirectives.cpp.ll
 ; llvm/optimized/PrintPreprocessedOutput.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
@@ -80,6 +79,7 @@
 ; llvm/optimized/X86FastISel.cpp.ll
 ; llvm/optimized/X86FoldTablesEmitter.cpp.ll
 ; llvm/optimized/X86InterleavedAccess.cpp.ll
+; lvgl/optimized/lv_image.ll
 ; minetest/optimized/COpenGLDriver.cpp.ll
 ; minetest/optimized/FixedPipelineRenderer.cpp.ll
 ; minetest/optimized/dynamicshadowsrender.cpp.ll
@@ -107,6 +107,9 @@
 ; wireshark/optimized/packet-mausb.c.ll
 ; yyjson/optimized/yyjson.c.ll
 ; z3/optimized/euf_egraph.cpp.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/5wz01y896jxljxzjbwo9cjiak.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i16 %0) #0 {
 entry:

@@ -1,8 +1,7 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; llvm/optimized/MetadataLoader.cpp.ll
 ; openjdk/optimized/c1_Canonicalizer.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; rocksdb/optimized/block_based_table_reader.cc.ll
 ; z3/optimized/subpaving_hwf.cpp.ll
 ; z3/optimized/subpaving_mpf.cpp.ll

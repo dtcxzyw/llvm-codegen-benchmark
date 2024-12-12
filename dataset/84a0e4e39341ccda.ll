@@ -15,28 +15,26 @@
 ; rocksdb/optimized/string_util.cc.ll
 ; wireshark/optimized/packet-memcache.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i1 %0, i8 %1, i1 %2) #0 {
+define i1 @func0000000000000104(i1 %0, i8 %1, i1 %2) #0 {
 entry:
   %3 = icmp eq i8 %1, 35
-  %4 = or i1 %3, %2
+  %4 = or i1 %2, %3
   %5 = icmp eq i8 %1, 58
   %6 = or i1 %5, %4
-  %7 = or i1 %6, %0
+  %7 = or i1 %0, %6
   ret i1 %7
 }
 
-; 3 occurrences:
-; opencv/optimized/persistence_xml.cpp.ll
+; 1 occurrences:
 ; wireshark/optimized/tap-sctp-analysis.c.ll
-; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000204(i1 %0, i8 %1, i1 %2) #0 {
+define i1 @func0000000000000404(i1 %0, i8 %1, i1 %2) #0 {
 entry:
   %3 = icmp ult i8 %1, 17
   %4 = or i1 %3, %2
   %5 = icmp eq i8 %1, -63
   %6 = or i1 %5, %4
-  %7 = or i1 %6, %0
+  %7 = or i1 %0, %6
   ret i1 %7
 }
 

@@ -43,7 +43,7 @@ entry:
   ret i32 %3
 }
 
-; 30 occurrences:
+; 32 occurrences:
 ; abc/optimized/aigRet.c.ll
 ; abc/optimized/bmcBmc3.c.ll
 ; abc/optimized/dauNonDsd.c.ll
@@ -59,7 +59,6 @@ entry:
 ; libsodium/optimized/libsodium_la-codecs.ll
 ; libzmq/optimized/ws_engine.cpp.ll
 ; linux/optimized/base64.ll
-; linux/optimized/int_log.ll
 ; linux/optimized/trace_eprobe.ll
 ; linux/optimized/trace_kprobe.ll
 ; linux/optimized/trace_uprobe.ll
@@ -74,6 +73,9 @@ entry:
 ; wireshark/optimized/charsets.c.ll
 ; wireshark/optimized/packet-x11.c.ll
 ; wireshark/optimized/tvbuff_lz77huff.c.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:

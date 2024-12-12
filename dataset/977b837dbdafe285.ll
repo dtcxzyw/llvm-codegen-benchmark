@@ -1,5 +1,5 @@
 
-; 128 occurrences:
+; 129 occurrences:
 ; gromacs/optimized/checkpoint.cpp.ll
 ; hermes/optimized/CommandLine.cpp.ll
 ; hermes/optimized/ESTreeJSONDumper.cpp.ll
@@ -71,6 +71,7 @@
 ; llvm/optimized/LTOCodeGenerator.cpp.ll
 ; llvm/optimized/LTOModule.cpp.ll
 ; llvm/optimized/Lanai.cpp.ll
+; llvm/optimized/LegacyPassManager.cpp.ll
 ; llvm/optimized/LinkModules.cpp.ll
 ; llvm/optimized/LoongArch.cpp.ll
 ; llvm/optimized/M68k.cpp.ll
@@ -132,7 +133,7 @@
 define i1 @func0000000000000001(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp eq i64 %3, %1
+  %4 = icmp eq i64 %1, %3
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }

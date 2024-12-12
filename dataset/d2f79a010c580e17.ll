@@ -14,6 +14,18 @@ entry:
   ret i64 %5
 }
 
+; 1 occurrences:
+; php/optimized/decode.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003f(i64 %0, i8 %1) #0 {
+entry:
+  %2 = zext i8 %1 to i64
+  %3 = add nuw nsw i64 %2, 4294964161
+  %4 = mul nuw nsw i64 %0, 94
+  %5 = add nuw nsw i64 %3, %4
+  ret i64 %5
+}
+
 ; 2 occurrences:
 ; vcpkg/optimized/versions.cpp.ll
 ; yyjson/optimized/yyjson.c.ll

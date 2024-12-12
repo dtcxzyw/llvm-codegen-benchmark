@@ -42,3 +42,10 @@ func0000000000000005:                   # @func0000000000000005
 	vsub.vv	v8, v10, v8
 	vadd.vi	v8, v8, -9
 	ret
+func0000000000000007:                   # @func0000000000000007
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vadd.vi	v10, v10, 7
+	vsrl.vi	v10, v10, 3
+	vnot.v	v8, v8
+	vadd.vv	v8, v10, v8
+	ret

@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	128                             # 0x80
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vptestnmq	%ymm2, %ymm2, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %xmm1 {%k1} # xmm1 {%k1} = [128,128,128,128]
 	vpand	%xmm0, %xmm1, %xmm0
@@ -10,7 +10,7 @@ func0000000000000011:                   # @func0000000000000011
 	retq
 .LCPI1_0:
 	.long	128                             # 0x80
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vptestnmq	%ymm2, %ymm2, %k1
 	vpbroadcastd	.LCPI1_0(%rip), %xmm1 {%k1} # xmm1 {%k1} = [128,128,128,128]
 	vpand	%xmm0, %xmm1, %xmm0

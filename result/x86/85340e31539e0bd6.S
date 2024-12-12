@@ -1,14 +1,14 @@
-func00000000000000dd:                   # @func00000000000000dd
+func000000000000019d:                   # @func000000000000019d
 	movzwl	%dx, %ecx
 	leal	1(%rcx), %eax
-	cmpl	%esi, %ecx
-	cmovgel	%esi, %eax
+	cmpl	%ecx, %esi
+	cmovlel	%esi, %eax
 	addl	%edi, %eax
 	retq
-func00000000000000dc:                   # @func00000000000000dc
+func000000000000019c:                   # @func000000000000019c
 	movzwl	%dx, %ecx
 	leal	1(%rcx), %eax
-	cmpl	%esi, %ecx
-	cmovgel	%esi, %eax
+	cmpl	%ecx, %esi
+	cmovlel	%esi, %eax
 	addl	%edi, %eax
 	retq

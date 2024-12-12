@@ -7,7 +7,7 @@ func0000000000000002:                   # @func0000000000000002
 	vpmovb2m	%xmm1, %k1
 	vpord	.LCPI0_1(%rip){1to4}, %xmm2, %xmm1
 	vmovdqu8	%xmm2, %xmm1 {%k1}
-	vpor	%xmm0, %xmm1, %xmm0
+	vpor	%xmm1, %xmm0, %xmm0
 	retq
 .LCPI1_0:
 	.zero	16,64
@@ -18,5 +18,5 @@ func0000000000000000:                   # @func0000000000000000
 	vpmovb2m	%xmm1, %k1
 	vpord	.LCPI1_1(%rip){1to4}, %xmm2, %xmm1
 	vmovdqu8	%xmm2, %xmm1 {%k1}
-	vpor	%xmm0, %xmm1, %xmm0
+	vpor	%xmm1, %xmm0, %xmm0
 	retq

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; mitsuba3/optimized/codeholder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = add i64 %1, %2
@@ -36,9 +36,10 @@ entry:
   ret i1 %6
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; abseil-cpp/optimized/low_level_alloc.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/alloc_lib.ll
 ; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
@@ -63,7 +64,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/block_qcow2-refcount.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = add i64 %1, %2
@@ -106,7 +107,7 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = add nsw i64 %1, %2
@@ -118,7 +119,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/exfldio.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = add nsw i64 %1, %2

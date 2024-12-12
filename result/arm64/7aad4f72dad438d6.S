@@ -1,68 +1,48 @@
-func0000000000000017:                   // @func0000000000000017
+func0000000000000027:                   // @func0000000000000027
 // %bb.0:                               // %entry
 	mov	w8, #34953                      // =0x8889
 	movk	w8, #34952, lsl #16
-	dup	v4.4s, w8
-	smull2	v5.2d, v2.4s, v4.4s
-	smull	v6.2d, v2.2s, v4.2s
-	smull2	v7.2d, v3.4s, v4.4s
-	smull	v4.2d, v3.2s, v4.2s
-	uzp2	v5.4s, v6.4s, v5.4s
-	movi	v6.4s, #60
-	uzp2	v4.4s, v4.4s, v7.4s
-	add	v2.4s, v5.4s, v2.4s
-	add	v3.4s, v4.4s, v3.4s
-	sshr	v4.4s, v2.4s, #5
-	sshr	v5.4s, v3.4s, #5
-	usra	v4.4s, v2.4s, #31
-	usra	v5.4s, v3.4s, #31
-	mul	v2.4s, v4.4s, v6.4s
-	mul	v3.4s, v5.4s, v6.4s
-	cmge	v0.4s, v2.4s, v0.4s
-	cmge	v1.4s, v3.4s, v1.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	smull	x8, w1, w8
+	lsr	x8, x8, #32
+	add	w8, w8, w1
+	asr	w9, w8, #5
+	add	w8, w9, w8, lsr #31
+	lsl	w9, w8, #6
+	sub	w8, w9, w8, lsl #2
+	cmp	w0, w8
+	cset	w0, le
 	ret
                                         // -- End function
-func0000000000000016:                   // @func0000000000000016
+func0000000000000026:                   // @func0000000000000026
 // %bb.0:                               // %entry
-	cmlt	v4.4s, v2.4s, #0
-	cmlt	v5.4s, v3.4s, #0
-	usra	v2.4s, v4.4s, #29
-	usra	v3.4s, v5.4s, #29
-	bic	v2.4s, #7
-	bic	v3.4s, #7
-	cmgt	v1.4s, v3.4s, v1.4s
-	cmgt	v0.4s, v2.4s, v0.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	negs	w8, w1
+	and	w9, w1, #0x7
+	and	w8, w8, #0x7
+	csneg	w8, w9, w8, mi
+	sub	w8, w1, w8
+	cmp	w0, w8
+	cset	w0, lt
 	ret
                                         // -- End function
-func0000000000000011:                   // @func0000000000000011
+func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
-	cmlt	v4.4s, v2.4s, #0
-	cmlt	v5.4s, v3.4s, #0
-	usra	v2.4s, v4.4s, #26
-	usra	v3.4s, v5.4s, #26
-	bic	v2.4s, #63
-	bic	v3.4s, #63
-	cmeq	v1.4s, v3.4s, v1.4s
-	cmeq	v0.4s, v2.4s, v0.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	negs	w8, w1
+	and	w9, w1, #0x3f
+	and	w8, w8, #0x3f
+	csneg	w8, w9, w8, mi
+	sub	w8, w1, w8
+	cmp	w0, w8
+	cset	w0, eq
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	cmlt	v4.4s, v2.4s, #0
-	cmlt	v5.4s, v3.4s, #0
-	usra	v2.4s, v4.4s, #27
-	usra	v3.4s, v5.4s, #27
-	bic	v2.4s, #31
-	bic	v3.4s, #31
-	cmgt	v1.4s, v3.4s, v1.4s
-	cmgt	v0.4s, v2.4s, v0.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	negs	w8, w1
+	and	w9, w1, #0x1f
+	and	w8, w8, #0x1f
+	csneg	w8, w9, w8, mi
+	sub	w8, w1, w8
+	cmp	w0, w8
+	cset	w0, lt
 	ret
                                         // -- End function

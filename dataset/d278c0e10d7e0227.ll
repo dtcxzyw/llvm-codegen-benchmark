@@ -3,7 +3,7 @@
 ; verilator/optimized/V3Inst.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000281(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000501(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
@@ -19,7 +19,7 @@ entry:
 ; ninja/optimized/build_test.cc.ll
 ; zxing/optimized/ReedSolomonDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000411(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000821(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 2
   %3 = trunc i64 %2 to i32
@@ -36,7 +36,7 @@ entry:
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; opencv/optimized/rapid.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000401(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000801(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 3
   %3 = trunc i64 %2 to i32
@@ -49,7 +49,7 @@ entry:
 ; 1 occurrences:
 ; wasmtime-rs/optimized/4d0kq0wivbp8j3p.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000681(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000d01(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 5
   %3 = trunc nuw i64 %2 to i32
@@ -66,7 +66,7 @@ entry:
 ; openspiel/optimized/outcome_sampling_mccfr.cc.ll
 ; openspiel/optimized/spiel_bots.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000208(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000408(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32

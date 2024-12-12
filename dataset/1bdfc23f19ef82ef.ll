@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 21 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; linux/optimized/blk-iocost.ll
 ; linux/optimized/intel_pstate.ll
@@ -20,6 +20,7 @@
 ; ruby/optimized/string.ll
 ; tokenizers-rs/optimized/1w676x6x6lprwvn5.ll
 ; wireshark/optimized/tap-iostat.c.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:

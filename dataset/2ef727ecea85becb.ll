@@ -1,9 +1,10 @@
 
-; 25 occurrences:
+; 26 occurrences:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver3.c.ll
 ; darktable/optimized/histogram.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
+; darktable/optimized/introspection_lens.cc.ll
 ; faiss/optimized/IndexAdditiveQuantizer.cpp.ll
 ; gromacs/optimized/gmx_densmap.cpp.ll
 ; gromacs/optimized/gmx_sorient.cpp.ll

@@ -1,5 +1,6 @@
 
-; 15 occurrences:
+; 17 occurrences:
+; boost/optimized/from_chars.ll
 ; cmake/optimized/cmCTestCoverageHandler.cxx.ll
 ; gromacs/optimized/editconf.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
@@ -15,6 +16,7 @@
 ; opencv/optimized/find_ellipses.cpp.ll
 ; opencv/optimized/finder_pattern_info.cpp.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i1 %0, float %1, float %2) #0 {
 entry:

@@ -1,12 +1,11 @@
 
-; 18 occurrences:
+; 17 occurrences:
 ; bullet3/optimized/b3QuantizedBvh.ll
 ; bullet3/optimized/btGImpactBvh.ll
 ; bullet3/optimized/btGImpactQuantizedBvh.ll
 ; bullet3/optimized/btQuantizedBvh.ll
-; gromacs/optimized/dlasdt.cpp.ll
-; gromacs/optimized/slasdt.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_chart.ll
 ; openblas/optimized/dlansf.c.ll
 ; opencv/optimized/datastructs.cpp.ll
 ; opencv/optimized/optflowgf.cpp.ll

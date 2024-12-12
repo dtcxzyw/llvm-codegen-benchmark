@@ -25,9 +25,7 @@ entry:
   ret i32 %3
 }
 
-; 4 occurrences:
-; abseil-cpp/optimized/cord.cc.ll
-; abseil-cpp/optimized/cord_rep_btree.cc.ll
+; 2 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; llvm/optimized/AArch64AsmPrinter.cpp.ll
 ; Function Attrs: nounwind
@@ -36,6 +34,18 @@ entry:
   %1 = and i64 %0, 254
   %2 = icmp eq i64 %1, 0
   %3 = select i1 %2, i32 8105, i32 8104
+  ret i32 %3
+}
+
+; 2 occurrences:
+; abseil-cpp/optimized/cord.cc.ll
+; abseil-cpp/optimized/cord_rep_btree.cc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i64 %0) #0 {
+entry:
+  %1 = trunc i64 %0 to i8
+  %2 = icmp samesign ult i8 %1, 67
+  %3 = select i1 %2, i32 3, i32 6
   ret i32 %3
 }
 

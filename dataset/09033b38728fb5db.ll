@@ -53,7 +53,7 @@ entry:
   ret i64 %5
 }
 
-; 296 occurrences:
+; 298 occurrences:
 ; abseil-cpp/optimized/civil_time.cc.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time.cc.ll
@@ -349,6 +349,8 @@ entry:
 ; wireshark/optimized/pppdump.c.ll
 ; wireshark/optimized/tvbuff.c.ll
 ; wireshark/optimized/vwr.c.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zxing/optimized/QRFormatInformation.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i64 %0, i8 %1) #0 {
@@ -360,7 +362,7 @@ entry:
   ret i64 %5
 }
 
-; 66 occurrences:
+; 72 occurrences:
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
@@ -408,8 +410,10 @@ entry:
 ; rust-analyzer-rs/optimized/3yqkws4dawqbgt35.ll
 ; rust-analyzer-rs/optimized/4nk4vk785ylcn5k7.ll
 ; rust-analyzer-rs/optimized/4xl67loow1v11x6s.ll
+; rust-analyzer-rs/optimized/55rapmz9wj276hro.ll
 ; rust-analyzer-rs/optimized/58xaix613yc6ngmz.ll
 ; spike/optimized/fdt_ro.ll
+; turborepo-rs/optimized/74s3x9u7hld928rwmttmetb1y.ll
 ; wasmedge/optimized/formchecker.cpp.ll
 ; wasmedge/optimized/validator.cpp.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
@@ -426,6 +430,10 @@ entry:
 ; wireshark/optimized/peekclassic.c.ll
 ; wireshark/optimized/tvbuff.c.ll
 ; wireshark/optimized/vwr.c.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zxing/optimized/QRFormatInformation.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000017(i64 %0, i8 %1) #0 {
@@ -437,7 +445,7 @@ entry:
   ret i64 %5
 }
 
-; 29 occurrences:
+; 31 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; flatbuffers/optimized/flatc.cpp.ll
 ; flatbuffers/optimized/idl_gen_text.cpp.ll
@@ -467,6 +475,8 @@ entry:
 ; rust-analyzer-rs/optimized/2u22uu4kc5lsbxda.ll
 ; rust-analyzer-rs/optimized/48pgggm69rrbw655.ll
 ; wireshark/optimized/packet-dhcp.c.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/etmluiftgqx5jpyivviyferrj.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003f(i64 %0, i8 %1) #0 {
 entry:
@@ -492,11 +502,12 @@ entry:
   ret i64 %5
 }
 
-; 29 occurrences:
+; 32 occurrences:
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; diesel-rs/optimized/1dr0ikhoh8prk7sr.ll
 ; diesel-rs/optimized/2gwia6lwj254vbd7.ll
 ; folly/optimized/IPAddressV6.cpp.ll
+; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; llvm/optimized/DataLayout.cpp.ll
 ; llvm/optimized/SemaAPINotes.cpp.ll
 ; luau/optimized/EmitCommonX64.cpp.ll
@@ -522,6 +533,8 @@ entry:
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; wireshark/optimized/packet-mysql.c.ll
 ; wireshark/optimized/packet-ptp.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001d(i64 %0, i8 %1) #0 {
 entry:
@@ -546,7 +559,7 @@ entry:
   ret i64 %5
 }
 
-; 12 occurrences:
+; 19 occurrences:
 ; actix-rs/optimized/19s5ghr2x6s6bmh4.ll
 ; coreutils-rs/optimized/4o7j3eorsq1l9mcp.ll
 ; just-rs/optimized/1uppz7l1e89fp8n7.ll
@@ -557,8 +570,15 @@ entry:
 ; ockam-rs/optimized/274k60s1efyiyv8u.ll
 ; ockam-rs/optimized/2zpb9qmdbtl1z92t.ll
 ; ockam-rs/optimized/xqqthbl2d203wsg.ll
+; turborepo-rs/optimized/93lva917qa673k3vktayo9ds8.ll
 ; wasmedge/optimized/type.cpp.ll
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
+; zed-rs/optimized/0oeh7hwbxnw4zu37xj5psd1f6.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/5ta1fnasvc90k95zqql8ufc92.ll
+; zed-rs/optimized/7almbq0vtpgp7q0c9d6k1td97.ll
+; zed-rs/optimized/7jaiv08yt9hrplelvkk8jyr6y.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000039(i64 %0, i8 %1) #0 {
 entry:
@@ -605,6 +625,19 @@ entry:
   %2 = zext i8 %1 to i64
   %3 = shl i64 %2, 58
   %4 = shl nuw nsw i64 %0, 52
+  %5 = or i64 %4, %3
+  ret i64 %5
+}
+
+; 2 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000030(i64 %0, i8 %1) #0 {
+entry:
+  %2 = zext nneg i8 %1 to i64
+  %3 = shl nuw i64 %2, 63
+  %4 = shl i64 %0, 52
   %5 = or i64 %4, %3
   ret i64 %5
 }

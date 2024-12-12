@@ -48,11 +48,11 @@
 ; openvdb/optimized/AttributeSet.cc.ll
 ; verilator/optimized/V3Param.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000361(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 0
-  %4 = getelementptr nusw i8, ptr %1, i64 24
-  %5 = icmp eq ptr %4, %0
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 24
+  %5 = icmp eq ptr %0, %4
   %6 = select i1 %3, i1 true, i1 %5
   ret i1 %6
 }
@@ -60,11 +60,11 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/string_view_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001ac(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000036c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, -1
-  %4 = getelementptr nusw i8, ptr %1, i64 8
-  %5 = icmp ne ptr %4, %0
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 8
+  %5 = icmp ne ptr %0, %4
   %6 = select i1 %3, i1 %5, i1 false
   ret i1 %6
 }

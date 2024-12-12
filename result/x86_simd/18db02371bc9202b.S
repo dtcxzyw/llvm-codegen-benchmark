@@ -21,6 +21,6 @@ func000000000000000a:                   # @func000000000000000a
 	vmovapd	%zmm3, %zmm5 {%k2}
 	vmulpd	%zmm4, %zmm2, %zmm3
 	vmovapd	%zmm2, %zmm3 {%k1}
-	vmulpd	%zmm0, %zmm3, %zmm0
-	vmulpd	%zmm1, %zmm5, %zmm1
+	vmulpd	%zmm3, %zmm0, %zmm0
+	vmulpd	%zmm5, %zmm1, %zmm1
 	retq

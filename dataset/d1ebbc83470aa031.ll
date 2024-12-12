@@ -1,10 +1,13 @@
 
-; 138 occurrences:
+; 141 occurrences:
 ; assimp/optimized/IRRLoader.cpp.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/sundials_sptfqmr.c.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_temperature.c.ll
 ; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
+; flac/optimized/window.c.ll
 ; g2o/optimized/edge_project_p2mc.cpp.ll
 ; g2o/optimized/edge_project_p2sc.cpp.ll
 ; g2o/optimized/edge_project_stereo_xyz_onlypose.cpp.ll
@@ -142,7 +145,7 @@
 define double @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double 5.000000e-01, %2
-  %4 = fmul double %3, %1
+  %4 = fmul double %1, %3
   %5 = fmul double %4, %0
   ret double %5
 }

@@ -1,5 +1,5 @@
 
-%struct.Au_Obj_t_.2765855 = type { i64, [2 x i32] }
+%struct.Au_Obj_t_.2878087 = type { i64, [2 x i32] }
 
 ; 5 occurrences:
 ; linux/optimized/iov_iter.ll
@@ -18,6 +18,20 @@ entry:
   ret ptr %6
 }
 
+; 2 occurrences:
+; abc/optimized/abcHieNew.c.ll
+; hyperscan/optimized/castle.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001e(ptr %0, i64 %1) #0 {
+entry:
+  %2 = getelementptr nusw nuw %struct.Au_Obj_t_.2878087, ptr %0, i64 %1
+  %3 = ptrtoint ptr %2 to i64
+  %4 = and i64 %3, 1023
+  %5 = sub nsw i64 0, %4
+  %6 = getelementptr nusw i8, ptr %2, i64 %5
+  ret ptr %6
+}
+
 ; 7 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
@@ -29,7 +43,7 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000001a(ptr %0, i64 %1) #0 {
 entry:
-  %2 = getelementptr nusw %struct.Au_Obj_t_.2765855, ptr %0, i64 %1
+  %2 = getelementptr nusw %struct.Au_Obj_t_.2878087, ptr %0, i64 %1
   %3 = ptrtoint ptr %2 to i64
   %4 = and i64 %3, 1023
   %5 = sub nsw i64 0, %4
@@ -56,26 +70,26 @@ entry:
 ; hyperscan/optimized/lbr.c.ll
 ; hyperscan/optimized/mpv.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000003b(ptr %0, i64 %1) #0 {
 entry:
   %2 = getelementptr nusw i8, ptr %0, i64 %1
   %3 = ptrtoint ptr %2 to i64
   %4 = and i64 %3, 15
   %5 = sub nuw nsw i64 16, %4
-  %6 = getelementptr nusw i8, ptr %2, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %2, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; hyperscan/optimized/mpv.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000032(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000033(ptr %0, i64 %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %0, i64 %1
   %3 = ptrtoint ptr %2 to i64
   %4 = and i64 %3, 15
   %5 = sub nuw nsw i64 16, %4
-  %6 = getelementptr nusw i8, ptr %2, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %2, i64 %5
   ret ptr %6
 }
 

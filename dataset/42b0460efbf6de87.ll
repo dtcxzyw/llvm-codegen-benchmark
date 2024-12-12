@@ -1,9 +1,10 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; abc/optimized/deflate.c.ll
 ; cmake/optimized/deflate.c.ll
 ; gromacs/optimized/deflate.c.ll
 ; libquic/optimized/deflate.c.ll
+; lvgl/optimized/lv_draw_arc.ll
 ; opencv/optimized/stereosgbm.cpp.ll
 ; qemu/optimized/dump_dump.c.ll
 ; zlib/optimized/deflate.c.ll

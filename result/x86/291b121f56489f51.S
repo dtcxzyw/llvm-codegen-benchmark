@@ -23,7 +23,7 @@ func000000000000000e:                   # @func000000000000000e
 	imulq	%rdi, %rax
 	retq
 func0000000000000005:                   # @func0000000000000005
-	leaq	-1(%rsi), %rax
+	leaq	1(%rsi), %rax
 	imulq	%rdi, %rax
 	retq
 func000000000000000d:                   # @func000000000000000d

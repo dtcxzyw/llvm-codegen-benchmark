@@ -9,14 +9,14 @@ func0000000000000017:                   # @func0000000000000017
 	.quad	4096                            # 0x1000
 func000000000000001c:                   # @func000000000000001c
 	vpsllq	$53, %ymm2, %ymm2
-	vpor	%ymm1, %ymm2, %ymm1
+	vpor	%ymm2, %ymm1, %ymm1
 	vpternlogq	$254, .LCPI1_0(%rip){1to4}, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | mem
 	retq
 .LCPI2_0:
 	.quad	4294967296                      # 0x100000000
 func000000000000001f:                   # @func000000000000001f
 	vpsllq	$40, %ymm2, %ymm2
-	vpor	%ymm1, %ymm2, %ymm1
+	vpor	%ymm2, %ymm1, %ymm1
 	vpternlogq	$254, .LCPI2_0(%rip){1to4}, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | mem
 	retq
 .LCPI3_0:
@@ -37,7 +37,7 @@ func0000000000000018:                   # @func0000000000000018
 	.quad	1610612736                      # 0x60000000
 func0000000000000008:                   # @func0000000000000008
 	vpsllq	$20, %ymm2, %ymm2
-	vpor	%ymm1, %ymm2, %ymm1
+	vpor	%ymm2, %ymm1, %ymm1
 	vpternlogq	$254, .LCPI5_0(%rip){1to4}, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | mem
 	retq
 .LCPI6_0:
@@ -51,7 +51,7 @@ func000000000000000c:                   # @func000000000000000c
 	.quad	6949054225032675328             # 0x6070000000000000
 func0000000000000000:                   # @func0000000000000000
 	vpsllq	$56, %ymm2, %ymm2
-	vpor	%ymm1, %ymm2, %ymm1
+	vpor	%ymm2, %ymm1, %ymm1
 	vpternlogq	$254, .LCPI7_0(%rip){1to4}, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | mem
 	retq
 .LCPI8_0:
@@ -86,14 +86,14 @@ func0000000000000019:                   # @func0000000000000019
 	.quad	-17179869184                    # 0xfffffffc00000000
 func000000000000001e:                   # @func000000000000001e
 	vpsllq	$8, %ymm2, %ymm2
-	vpor	%ymm1, %ymm2, %ymm1
+	vpor	%ymm2, %ymm1, %ymm1
 	vpternlogq	$254, .LCPI12_0(%rip){1to4}, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | mem
 	retq
 .LCPI13_0:
 	.quad	7                               # 0x7
 func000000000000001d:                   # @func000000000000001d
 	vpsllq	$16, %ymm2, %ymm2
-	vpor	%ymm1, %ymm2, %ymm1
+	vpor	%ymm2, %ymm1, %ymm1
 	vpternlogq	$254, .LCPI13_0(%rip){1to4}, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | mem
 	retq
 .LCPI14_0:

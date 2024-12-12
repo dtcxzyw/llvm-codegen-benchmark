@@ -1,10 +1,10 @@
-func0000000000000014:                   # @func0000000000000014
-	andl	$223, %edi
-	addl	$-65, %edi
-	cmpl	$26, %edi
+func0000000000000024:                   # @func0000000000000024
+	andl	$127, %edi
+	addl	$-5, %edi
+	cmpl	$-4, %edi
 	setb	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	notb	%dil
 	testb	$15, %dil
 	sete	%al

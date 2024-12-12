@@ -15,7 +15,7 @@ func0000000000000020:                   # @func0000000000000020
 	vpsubd	%xmm2, %xmm3, %xmm2
 	vpmovqd	%ymm1, %xmm1
 	vpsllvd	%xmm2, %xmm1, %xmm1
-	vpor	%xmm0, %xmm1, %xmm0
+	vpor	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI2_0:

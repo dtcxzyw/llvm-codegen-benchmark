@@ -1,7 +1,6 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; llvm/optimized/MachineFrameInfo.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/VirtRegMap.cpp.ll
 ; rust-analyzer-rs/optimized/hajha7nvyoiczny.ll
 ; wireshark/optimized/vwr.c.ll

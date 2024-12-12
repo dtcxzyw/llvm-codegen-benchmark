@@ -28,6 +28,6 @@ func0000000000000003:                   # @func0000000000000003
 	bnez	a0, .LBB3_2
 	mv	a1, a2
 .LBB3_2:                                # %entry
-	slli	a1, a1, 1
-	andi	a0, a1, 64
+	slli	a0, a1, 61
+	srli	a0, a0, 49
 	ret

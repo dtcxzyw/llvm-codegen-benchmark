@@ -32,12 +32,6 @@ func00000000000000fa:                   # @func00000000000000fa
 	leal	(%rax,%rcx,4), %eax
 	addl	%edi, %eax
 	retq
-func0000000000000044:                   # @func0000000000000044
-	imull	$-53668, %edx, %eax             # imm = 0xFFFF2E5C
-	addl	%esi, %eax
-	imull	$40014, %eax, %eax              # imm = 0x9C4E
-	addl	%edi, %eax
-	retq
 func0000000000000050:                   # @func0000000000000050
 	imull	$-400, %edx, %eax               # imm = 0xFE70
 	addl	%esi, %eax
@@ -58,12 +52,6 @@ func0000000000000054:                   # @func0000000000000054
 	leal	(%rax,%rax), %ecx
 	shll	$6, %eax
 	subl	%ecx, %eax
-	addl	%edi, %eax
-	retq
-func00000000000000f7:                   # @func00000000000000f7
-	imull	$85, %edx, %eax
-	addl	%esi, %eax
-	imull	$85, %eax, %eax
 	addl	%edi, %eax
 	retq
 func00000000000000fc:                   # @func00000000000000fc

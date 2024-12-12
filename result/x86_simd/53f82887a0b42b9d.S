@@ -69,7 +69,7 @@ func0000000000000002:                   # @func0000000000000002
 	retq
 func000000000000000c:                   # @func000000000000000c
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1 # ymm1 = ~ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI14_0:
 	.long	4294967294                      # 0xfffffffe

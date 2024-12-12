@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 37 occurrences:
 ; assimp/optimized/ConvertToLHProcess.cpp.ll
 ; assimp/optimized/MakeVerboseFormat.cpp.ll
 ; assimp/optimized/PlyExporter.cpp.ll
@@ -7,16 +7,15 @@
 ; assimp/optimized/SplitLargeMeshes.cpp.ll
 ; assimp/optimized/Subdivision.cpp.ll
 ; assimp/optimized/mesh_splitter.cpp.ll
+; boost/optimized/options_description.ll
 ; clamav/optimized/matcher-pcre.c.ll
 ; clamav/optimized/pe.c.ll
 ; cmake/optimized/cmCTestMemCheckHandler.cxx.ll
-; cpython/optimized/Hacl_Hash_SHA3.ll
 ; freetype/optimized/pcf.c.ll
 ; git/optimized/transport.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; icu/optimized/ubidiln.ll
-; icu/optimized/uresbund.ll
 ; lief/optimized/rsa.c.ll
 ; linux/optimized/devio.ll
 ; linux/optimized/hdac_stream.ll
@@ -43,17 +42,29 @@ define i1 @func000000000000000c(i1 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp ne i32 %2, 0
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
-; 53 occurrences:
+; 65 occurrences:
 ; abc/optimized/sclLiberty.c.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/directory.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
+; boost/optimized/process.ll
+; boost/optimized/src.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/target.ll
+; boost/optimized/text_file_backend.ll
 ; cmake/optimized/cmJSONState.cxx.ll
 ; cmake/optimized/cmQtAutoGenerator.cxx.ll
 ; cmake/optimized/huf_decompress.c.ll
 ; cmake/optimized/json_reader.cpp.ll
-; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
 ; cpython/optimized/_codecs_jp.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_chat.cpp.ll
@@ -106,29 +117,24 @@ define i1 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp eq i32 %2, 3
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
-; 8 occurrences:
-; linux/optimized/hda_auto_parser.ll
-; llvm/optimized/Scalarizer.cpp.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
+; 2 occurrences:
 ; meshlab/optimized/Scanner.cpp.ll
 ; openjdk/optimized/vm_version_x86.ll
-; openusd/optimized/mvref_common.c.ll
-; php/optimized/pcre2_dfa_match.ll
-; slurm/optimized/burst_buffer_common.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000014(i1 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
-  %3 = icmp ult i32 %2, 24
-  %4 = and i1 %3, %0
+  %3 = icmp samesign ult i32 %2, 24
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
 ; 43 occurrences:
+; abc/optimized/amapPerm.c.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; duckdb/optimized/ub_duckdb_func_ops.cpp.ll
 ; freetype/optimized/sfnt.c.ll
@@ -144,7 +150,6 @@ entry:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/LegalizeDAG.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/SelectionDAGISel.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
@@ -194,6 +199,22 @@ define i1 @func0000000000000008(i1 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp ugt i32 %2, 3
+  %4 = and i1 %0, %3
+  ret i1 %4
+}
+
+; 6 occurrences:
+; linux/optimized/hda_auto_parser.ll
+; llvm/optimized/Scalarizer.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; openusd/optimized/mvref_common.c.ll
+; php/optimized/pcre2_dfa_match.ll
+; slurm/optimized/burst_buffer_common.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i1 %0, i32 %1) #0 {
+entry:
+  %2 = freeze i32 %1
+  %3 = icmp ult i32 %2, 256
   %4 = and i1 %3, %0
   ret i1 %4
 }
@@ -208,7 +229,7 @@ define i1 @func0000000000000006(i1 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp slt i32 %2, 8
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 

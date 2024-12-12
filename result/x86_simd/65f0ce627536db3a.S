@@ -1,41 +1,30 @@
 .LCPI0_0:
-	.short	65                              # 0x41
-	.short	65                              # 0x41
-	.short	65                              # 0x41
-	.short	65                              # 0x41
-	.short	65                              # 0x41
-	.short	65                              # 0x41
-	.short	65                              # 0x41
-	.short	65                              # 0x41
+	.short	8192                            # 0x2000
+	.short	8192                            # 0x2000
+	.short	8192                            # 0x2000
+	.short	8192                            # 0x2000
+	.short	8192                            # 0x2000
+	.short	8192                            # 0x2000
+	.short	8192                            # 0x2000
+	.short	8192                            # 0x2000
 .LCPI0_1:
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
-	.short	1                               # 0x1
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
 .LCPI0_2:
-	.short	16                              # 0x10
-	.short	16                              # 0x10
-	.short	16                              # 0x10
-	.short	16                              # 0x10
-	.short	16                              # 0x10
-	.short	16                              # 0x10
-	.short	16                              # 0x10
-	.short	16                              # 0x10
-.LCPI0_3:
-	.short	65                              # 0x41
-.LCPI0_4:
-	.short	16                              # 0x10
-	.short	16                              # 0x10
-func0000000000000011:                   # @func0000000000000011
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+func0000000000000021:                   # @func0000000000000021
 	vpsllw	$15, %xmm1, %xmm1
-	vpmovw2m	%xmm1, %k1
-	vpbroadcastw	.LCPI0_3(%rip), %xmm2   # xmm2 = [65,65,65,65,65,65,65,65]
-	vmovdqu16	.LCPI0_1(%rip), %xmm2 {%k1} # xmm2 {%k1} = [1,1,1,1,1,1,1,1]
-	vpord	.LCPI0_4(%rip){1to4}, %xmm2, %xmm1
+	vpmovw2m	%xmm1, %k0
+	knotb	%k0, %k1
+	vmovdqu16	.LCPI0_0(%rip), %xmm2 {%k1} {z} # xmm2 {%k1} {z} = [8192,8192,8192,8192,8192,8192,8192,8192]
+	vpord	.LCPI0_2(%rip){1to4}, %xmm2, %xmm1
 	vptestnmd	%ymm0, %ymm0, %k1
 	vmovdqu16	%xmm2, %xmm1 {%k1}
 	vmovdqa	%xmm1, %xmm0

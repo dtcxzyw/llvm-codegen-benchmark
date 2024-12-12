@@ -90,6 +90,18 @@ entry:
   ret i32 %5
 }
 
+; 1 occurrences:
+; abc/optimized/ltl_parser.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000015(i64 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = trunc nsw i64 %0 to i32
+  %4 = sub nsw i32 %3, %2
+  %5 = add nsw i32 %4, 1
+  ret i32 %5
+}
+
 ; 2 occurrences:
 ; lief/optimized/psa_crypto_rsa.c.ll
 ; llvm/optimized/SemaType.cpp.ll

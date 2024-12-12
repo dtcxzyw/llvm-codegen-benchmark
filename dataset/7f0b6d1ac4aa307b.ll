@@ -43,7 +43,7 @@ entry:
   %4 = add i64 %3, 2
   %5 = or disjoint i64 %3, 1
   %6 = select i1 %1, i64 %5, i64 %4
-  %7 = add nsw i64 %6, %0
+  %7 = add nsw i64 %0, %6
   ret i64 %7
 }
 

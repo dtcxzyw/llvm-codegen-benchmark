@@ -1,9 +1,10 @@
 
-; 26 occurrences:
+; 27 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; linux/optimized/hdac_device.ll
 ; linux/optimized/uncore_snbep.ll
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
+; llvm/optimized/SanitizerSpecialCaseList.cpp.ll
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
 ; mold/optimized/output-chunks.cc.ARM64.cc.ll
@@ -35,7 +36,7 @@ entry:
   ret i64 %4
 }
 
-; 36 occurrences:
+; 37 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; hwloc/optimized/hwloc-ps.ll
 ; linux/optimized/hid-quirks.ll
@@ -46,6 +47,7 @@ entry:
 ; llvm/optimized/LLParser.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/SanitizerArgs.cpp.ll
+; llvm/optimized/SanitizerSpecialCaseList.cpp.ll
 ; llvm/optimized/Sanitizers.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/SemaObjCProperty.cpp.ll
@@ -81,7 +83,7 @@ entry:
   ret i64 %4
 }
 
-; 39 occurrences:
+; 40 occurrences:
 ; arrow/optimized/strtod.cc.ll
 ; double_conversion/optimized/strtod.cc.ll
 ; git/optimized/http.ll
@@ -94,6 +96,7 @@ entry:
 ; llvm/optimized/AArch64AsmPrinter.cpp.ll
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
+; llvm/optimized/SanitizerSpecialCaseList.cpp.ll
 ; llvm/optimized/ToolChain.cpp.ll
 ; llvm/optimized/X86AsmPrinter.cpp.ll
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll

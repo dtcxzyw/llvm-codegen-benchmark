@@ -30,15 +30,26 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
-; llvm/optimized/PassBuilderPipelines.cpp.ll
-; llvm/optimized/X86ISelLowering.cpp.ll
+; 1 occurrences:
 ; yosys/optimized/qwp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000018(i8 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967280
   %3 = icmp ne i64 %2, 0
+  %4 = trunc i8 %0 to i1
+  %5 = and i1 %3, %4
+  ret i1 %5
+}
+
+; 2 occurrences:
+; llvm/optimized/PassBuilderPipelines.cpp.ll
+; llvm/optimized/X86ISelLowering.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i8 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = icmp ugt i32 %2, 8
   %4 = trunc i8 %0 to i1
   %5 = and i1 %3, %4
   ret i1 %5
@@ -48,6 +59,18 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i8 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 4294967280
+  %3 = icmp eq i64 %2, 0
+  %4 = trunc i8 %0 to i1
+  %5 = and i1 %3, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; llvm/optimized/X86ISelLowering.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i8 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967280
   %3 = icmp eq i64 %2, 0

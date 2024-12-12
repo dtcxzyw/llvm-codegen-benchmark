@@ -8,25 +8,23 @@
 ; openjdk/optimized/mlib_ImageConv_u16ext.ll
 ; openjdk/optimized/mlib_ImageConv_u16nw.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func0000000000000013(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr double, ptr %0, i64 %3
   %5 = or disjoint i64 %1, 1
-  %6 = getelementptr nusw double, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw double, ptr %4, i64 %5
   ret ptr %6
 }
 
-; 34 occurrences:
+; 32 occurrences:
 ; abc/optimized/ioReadBlifMv.c.ll
 ; abc/optimized/wlnRetime.c.ll
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_retouch.c.ll
-; freetype/optimized/sfnt.c.ll
 ; gromacs/optimized/atomdata.cpp.ll
 ; libquic/optimized/montgomery.c.ll
-; libwebp/optimized/huffman_encode_utils.c.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll
 ; meshlab/optimized/io_collada.cpp.ll
 ; meshlab/optimized/io_tri.cpp.ll
@@ -53,12 +51,12 @@ entry:
 ; openjdk/optimized/mlib_ImageConv_u16nw.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000001b(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw double, ptr %0, i64 %3
   %5 = or disjoint i64 %1, 1
-  %6 = getelementptr nusw double, ptr %4, i64 %5
+  %6 = getelementptr nusw nuw double, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -73,6 +71,18 @@ entry:
   %4 = getelementptr float, ptr %0, i64 %3
   %5 = or disjoint i64 %1, 1
   %6 = getelementptr float, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; freetype/optimized/sfnt.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001a(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %5 = or disjoint i64 %1, 1
+  %6 = getelementptr nusw i32, ptr %4, i64 %5
   ret ptr %6
 }
 

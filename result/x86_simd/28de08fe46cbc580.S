@@ -8,7 +8,7 @@ func000000000000000a:                   # @func000000000000000a
 	vmulps	.LCPI0_0(%rip){1to16}, %zmm2, %zmm0
 	vdivps	%zmm0, %zmm1, %zmm0
 	vcmpnleps	.LCPI0_1(%rip){1to16}, %zmm0, %k1
-	korw	%k0, %k1, %k0
+	korw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
@@ -33,7 +33,7 @@ func0000000000000008:                   # @func0000000000000008
 	vaddps	%zmm2, %zmm2, %zmm0
 	vdivps	%zmm0, %zmm1, %zmm0
 	vcmpgtps	.LCPI2_0(%rip){1to16}, %zmm0, %k1
-	korw	%k0, %k1, %k0
+	korw	%k1, %k0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

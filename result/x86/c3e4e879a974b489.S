@@ -5,11 +5,6 @@ func0000000000000000:                   # @func0000000000000000
 	addl	%edi, %eax
 	addl	%ecx, %eax
 	retq
-func000000000000000d:                   # @func000000000000000d
-	movzbl	%sil, %ecx
-	imull	$-94, %edi, %eax
-	addl	%ecx, %eax
-	retq
 func0000000000000015:                   # @func0000000000000015
 	movzbl	%sil, %eax
 	leal	(%rdi,%rdi,4), %ecx
@@ -42,11 +37,6 @@ func000000000000000f:                   # @func000000000000000f
 	movl	%edi, %eax
 	shll	$4, %eax
 	addl	%edi, %eax
-	addl	%ecx, %eax
-	retq
-func0000000000000007:                   # @func0000000000000007
-	movzbl	%sil, %ecx
-	imull	$85, %edi, %eax
 	addl	%ecx, %eax
 	retq
 func0000000000000018:                   # @func0000000000000018

@@ -1,8 +1,8 @@
 
-%struct._StackType.2596895 = type { i32, i32, %union.anon.3.2596896 }
-%union.anon.3.2596896 = type { %struct.anon.6.2596897 }
-%struct.anon.6.2596897 = type { ptr, %union.StkPtrType.2596898, %union.StkPtrType.2596898 }
-%union.StkPtrType.2596898 = type { i64 }
+%struct._StackType.2710345 = type { i32, i32, %union.anon.3.2710346 }
+%union.anon.3.2710346 = type { %struct.anon.6.2710347 }
+%struct.anon.6.2710347 = type { ptr, %union.StkPtrType.2710348, %union.StkPtrType.2710348 }
+%union.StkPtrType.2710348 = type { i64 }
 
 ; 2 occurrences:
 ; darktable/optimized/print_settings.c.ll
@@ -27,7 +27,19 @@ entry:
   %3 = shl nsw i64 %2, 3
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = ashr i64 %1, 32
-  %6 = getelementptr nusw %struct._StackType.2596895, ptr %4, i64 %5
+  %6 = getelementptr nusw %struct._StackType.2710345, ptr %4, i64 %5
+  ret ptr %6
+}
+
+; 1 occurrences:
+; opencv/optimized/tree.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000030(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nsw i64 %2, 3
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = ashr exact i64 %1, 29
+  %6 = getelementptr i8, ptr %4, i64 %5
   ret ptr %6
 }
 
@@ -39,18 +51,6 @@ entry:
   %3 = shl nsw i64 %2, 2
   %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = ashr exact i64 %1, 1
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
-  ret ptr %6
-}
-
-; 1 occurrences:
-; nuttx/optimized/task_setup.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl nuw nsw i64 %2, 3
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = ashr exact i64 %1, 32
   %6 = getelementptr nusw i8, ptr %4, i64 %5
   ret ptr %6
 }

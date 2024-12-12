@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 34 occurrences:
 ; assimp/optimized/zip.c.ll
 ; hermes/optimized/zip.c.ll
 ; meshlab/optimized/coordinateframe.cpp.ll
@@ -24,7 +24,6 @@
 ; meshlab/optimized/glarea.cpp.ll
 ; meshlab/optimized/io_bre.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; meshlab/optimized/parameters.cpp.ll
@@ -36,27 +35,37 @@
 ; openvdb/optimized/Transform.cc.ll
 ; openvdb/optimized/VectorTransformer.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000003f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 2
-  %4 = getelementptr nusw [16 x double], ptr %1, i64 0, i64 %3
-  %5 = getelementptr nusw double, ptr %4, i64 %0
+  %4 = getelementptr nusw nuw [16 x double], ptr %1, i64 0, i64 %3
+  %5 = getelementptr nusw nuw double, ptr %4, i64 %0
   ret ptr %5
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; abc/optimized/abc.c.ll
-; abc/optimized/abcExact.c.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/Maps.cc.ll
 ; openvdb/optimized/Transform.cc.ll
 ; openvdb/optimized/VectorTransformer.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000000f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 2
-  %4 = getelementptr nusw [16 x double], ptr %1, i64 0, i64 %3
-  %5 = getelementptr nusw double, ptr %4, i64 %0
+  %4 = getelementptr nusw nuw [16 x double], ptr %1, i64 0, i64 %3
+  %5 = getelementptr nusw nuw double, ptr %4, i64 %0
+  ret ptr %5
+}
+
+; 1 occurrences:
+; abc/optimized/abcExact.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000b(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 2
+  %4 = getelementptr nusw [100 x i64], ptr %1, i64 0, i64 %3
+  %5 = getelementptr nusw nuw i64, ptr %4, i64 %0
   ret ptr %5
 }
 

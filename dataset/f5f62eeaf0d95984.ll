@@ -14,21 +14,23 @@
 define i64 @func0000000000000003(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext i32 %3 to i64
   %5 = shl nuw nsw i64 %4, 4
   ret i64 %5
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; faiss/optimized/hamming.cpp.ll
 ; image-rs/optimized/249ukonr3l56u09i.ll
 ; rocksdb/optimized/filter_policy.cc.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000043(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext i32 %3 to i64
   %5 = shl nuw nsw i64 %4, 4
   ret i64 %5
@@ -105,7 +107,7 @@ entry:
 define i64 @func000000000000004a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = zext i32 %3 to i64
   %5 = shl nuw i64 %4, 32
   ret i64 %5
@@ -130,7 +132,7 @@ entry:
 define i64 @func0000000000000042(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext i32 %3 to i64
   %5 = shl nuw i64 %4, 32
   ret i64 %5
@@ -169,7 +171,7 @@ entry:
 define i64 @func0000000000000063(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext i32 %3 to i64
   %5 = shl nuw nsw i64 %4, 2
   ret i64 %5
@@ -182,7 +184,7 @@ entry:
 define i64 @func000000000000004f(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   %5 = shl nuw nsw i64 %4, 32
   ret i64 %5
@@ -196,7 +198,7 @@ entry:
 define i64 @func000000000000006a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = zext i32 %3 to i64
   %5 = shl nuw i64 %4, 32
   ret i64 %5
@@ -214,7 +216,7 @@ entry:
 define i64 @func000000000000007f(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   %5 = shl nuw nsw i64 %4, 32
   ret i64 %5
@@ -226,7 +228,7 @@ entry:
 define i64 @func0000000000000073(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add nuw i32 %2, %0
+  %3 = add nuw i32 %0, %2
   %4 = zext i32 %3 to i64
   %5 = shl nuw nsw i64 %4, 2
   ret i64 %5
@@ -248,7 +250,7 @@ entry:
 define i64 @func0000000000000002(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext i32 %3 to i64
   %5 = shl nuw i64 %4, 32
   ret i64 %5
@@ -262,7 +264,7 @@ entry:
 define i64 @func000000000000000a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = zext i32 %3 to i64
   %5 = shl nuw i64 %4, 32
   ret i64 %5
@@ -274,22 +276,21 @@ entry:
 define i64 @func000000000000005f(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   %5 = shl nuw nsw i64 %4, 32
   ret i64 %5
 }
 
-; 2 occurrences:
-; openspiel/optimized/2048.cc.ll
+; 1 occurrences:
 ; pbrt-v4/optimized/camera.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000b(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = zext i32 %3 to i64
-  %5 = shl nuw nsw i64 %4, 2
+  %5 = shl nuw nsw i64 %4, 16
   ret i64 %5
 }
 
@@ -299,7 +300,7 @@ entry:
 define i64 @func000000000000002a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = zext i32 %3 to i64
   %5 = shl nuw i64 %4, 32
   ret i64 %5
@@ -311,7 +312,7 @@ entry:
 define i64 @func000000000000002f(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   %5 = shl nuw nsw i64 %4, 32
   ret i64 %5
@@ -324,7 +325,7 @@ entry:
 define i64 @func000000000000006f(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   %5 = shl nuw nsw i64 %4, 32
   ret i64 %5
@@ -336,9 +337,22 @@ entry:
 define i64 @func0000000000000022(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext i32 %3 to i64
   %5 = shl nuw i64 %4, 32
+  ret i64 %5
+}
+
+; 2 occurrences:
+; cpython/optimized/flowgraph.ll
+; opencv/optimized/onnx_importer.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000007(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = add i32 %0, %2
+  %4 = zext nneg i32 %3 to i64
+  %5 = shl nuw nsw i64 %4, 2
   ret i64 %5
 }
 
@@ -348,7 +362,7 @@ entry:
 define i64 @func000000000000000f(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   %5 = shl nuw nsw i64 %4, 2
   ret i64 %5
@@ -360,21 +374,9 @@ entry:
 define i64 @func0000000000000062(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext i32 %3 to i64
   %5 = shl nuw i64 %4, 32
-  ret i64 %5
-}
-
-; 1 occurrences:
-; cpython/optimized/flowgraph.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000007(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, %0
-  %4 = zext nneg i32 %3 to i64
-  %5 = shl nuw nsw i64 %4, 2
   ret i64 %5
 }
 

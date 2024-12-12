@@ -1,5 +1,5 @@
 
-; 60 occurrences:
+; 69 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
 ; assimp/optimized/ACLoader.cpp.ll
 ; assimp/optimized/ASEParser.cpp.ll
@@ -26,6 +26,15 @@
 ; assimp/optimized/UnrealLoader.cpp.ll
 ; assimp/optimized/XFileParser.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/expand.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/within.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; llama.cpp/optimized/llama.cpp.ll
@@ -69,11 +78,21 @@ entry:
 }
 
 ; 1 occurrences:
+; zed-rs/optimized/4pyl8821jbmubnjyx7hxe0q2i.ll
+; Function Attrs: nounwind
+define float @func0000000000000014(i8 %0) #0 {
+entry:
+  %1 = icmp samesign ult i8 %0, 2
+  %2 = select i1 %1, float 0x3FC99999A0000000, float 0x3FB99999A0000000
+  ret float %2
+}
+
+; 1 occurrences:
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define float @func0000000000000008(i8 %0) #0 {
+define float @func0000000000000018(i8 %0) #0 {
 entry:
-  %1 = icmp ugt i8 %0, 31
+  %1 = icmp samesign ugt i8 %0, 31
   %2 = select i1 %1, float 1.000000e+00, float -1.000000e+00
   ret float %2
 }

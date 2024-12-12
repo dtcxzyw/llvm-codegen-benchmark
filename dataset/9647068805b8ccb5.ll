@@ -30,7 +30,7 @@ entry:
   %3 = zext i1 %2 to i64
   %4 = select i1 %1, i64 4, i64 3
   %5 = add nuw nsw i64 %4, %3
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 

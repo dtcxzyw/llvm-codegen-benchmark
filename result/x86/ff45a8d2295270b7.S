@@ -9,9 +9,8 @@ func000000000000000d:                   # @func000000000000000d
 	orl	$-16777216, %eax                # imm = 0xFF000000
 	retq
 func0000000000000001:                   # @func0000000000000001
-	movq	%rdi, %rax
-	shrl	%eax
-	orl	$64, %eax
+	shrl	$16, %edi
+	leal	-2147483648(%rdi), %eax
 	retq
 func0000000000000008:                   # @func0000000000000008
 	movq	%rdi, %rax

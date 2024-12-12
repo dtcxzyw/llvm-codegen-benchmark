@@ -155,19 +155,18 @@
 define i1 @func0000000000000006(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp sgt i64 %3, %1
+  %4 = icmp slt i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
 
-; 24 occurrences:
+; 23 occurrences:
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; ceres/optimized/dense_cholesky.cc.ll
 ; clamav/optimized/rdwrfn.cpp.ll
 ; git/optimized/dir.ll
 ; libzmq/optimized/stream_engine_base.cpp.ll
 ; linux/optimized/intel-gtt.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; nix/optimized/primops.ll
 ; nix/optimized/trivial.ll
 ; opencv/optimized/trackerCSRTSegmentation.cpp.ll
@@ -189,7 +188,27 @@ entry:
 define i1 @func0000000000000001(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp eq i64 %3, %1
+  %4 = icmp eq i64 %1, %3
+  %5 = select i1 %0, i1 %4, i1 false
+  ret i1 %5
+}
+
+; 10 occurrences:
+; faiss/optimized/hamming.cpp.ll
+; libjpeg-turbo/optimized/turbojpeg.c.ll
+; libzmq/optimized/dist.cpp.ll
+; linux/optimized/fatent.ll
+; php/optimized/spprintf.ll
+; postgres/optimized/regexec.ll
+; ruby/optimized/array.ll
+; slurm/optimized/hostlist.ll
+; velox/optimized/MapZipWith.cpp.ll
+; velox/optimized/SparseHll.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000008(i1 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = icmp ugt i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -233,7 +252,7 @@ entry:
 define i1 @func000000000000000a(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp slt i64 %3, %1
+  %4 = icmp sgt i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -245,7 +264,7 @@ entry:
 define i1 @func0000000000000009(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp ule i64 %3, %1
+  %4 = icmp uge i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -259,39 +278,20 @@ entry:
 define i1 @func0000000000000007(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp sge i64 %3, %1
+  %4 = icmp sle i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; llvm/optimized/UnicodeNameToCodepoint.cpp.ll
 ; openjdk/optimized/g1IHOPControl.ll
+; zed-rs/optimized/5wz01y896jxljxzjbwo9cjiak.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000005(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp uge i64 %3, %1
-  %5 = select i1 %0, i1 %4, i1 false
-  ret i1 %5
-}
-
-; 10 occurrences:
-; cxxopts/optimized/example.cpp.ll
-; faiss/optimized/hamming.cpp.ll
-; libjpeg-turbo/optimized/turbojpeg.c.ll
-; libzmq/optimized/dist.cpp.ll
-; linux/optimized/fatent.ll
-; php/optimized/spprintf.ll
-; postgres/optimized/regexec.ll
-; slurm/optimized/hostlist.ll
-; velox/optimized/MapZipWith.cpp.ll
-; velox/optimized/SparseHll.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = sext i32 %2 to i64
-  %4 = icmp ult i64 %3, %1
+  %4 = icmp ule i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -321,7 +321,7 @@ entry:
 define i1 @func0000000000000004(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp ugt i64 %3, %1
+  %4 = icmp ult i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -343,7 +343,7 @@ entry:
 define i1 @func000000000000000c(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp ne i64 %3, %1
+  %4 = icmp ne i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -357,7 +357,7 @@ entry:
 define i1 @func000000000000000b(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = icmp sle i64 %3, %1
+  %4 = icmp sge i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }

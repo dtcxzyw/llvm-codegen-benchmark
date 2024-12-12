@@ -1,28 +1,21 @@
-func0000000000000054:                   # @func0000000000000054
-	andl	$127, %edi
-	addl	$-55, %edi
-	cmpl	$4, %edi
-	setb	%al
-	retq
-func0000000000000051:                   # @func0000000000000051
-	andl	$127, %edi
-	cmpw	$55, %di
+func00000000000000a1:                   # @func00000000000000a1
+	andl	$63, %edi
+	cmpw	$1, %di
 	sete	%al
 	retq
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a4:                   # @func00000000000000a4
+	andl	$62, %edi
+	cmpw	$32, %di
+	setne	%al
+	retq
+func00000000000000a8:                   # @func00000000000000a8
 	andl	$60, %edi
 	addl	$-38, %edi
 	cmpl	$-18, %edi
 	setb	%al
 	retq
-func000000000000005c:                   # @func000000000000005c
+func00000000000000ac:                   # @func00000000000000ac
 	andl	$60, %edi
 	cmpw	$20, %di
 	setne	%al
-	retq
-func0000000000000014:                   # @func0000000000000014
-	andl	$65503, %edi                    # imm = 0xFFDF
-	addl	$-91, %edi
-	cmpl	$-26, %edi
-	setb	%al
 	retq

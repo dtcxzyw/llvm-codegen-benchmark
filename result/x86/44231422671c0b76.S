@@ -79,9 +79,3 @@ func0000000000000014:                   # @func0000000000000014
 	setae	%al
 	orb	%dil, %al
 	retq
-func000000000000001c:                   # @func000000000000001c
-	vaddss	%xmm1, %xmm0, %xmm0
-	vucomiss	%xmm0, %xmm0
-	setnp	%al
-	orb	%dil, %al
-	retq

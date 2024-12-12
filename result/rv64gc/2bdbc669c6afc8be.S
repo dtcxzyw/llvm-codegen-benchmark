@@ -1,10 +1,10 @@
-func0000000000000060:                   # @func0000000000000060
+func00000000000000a0:                   # @func00000000000000a0
 	bltu	a1, a2, .LBB0_2
 	addi	a1, a2, -1
 .LBB0_2:                                # %entry
 	add	a0, a0, a1
 	ret
-func0000000000000050:                   # @func0000000000000050
+func0000000000000090:                   # @func0000000000000090
 	bltu	a1, a2, .LBB1_2
 	addi	a1, a2, -1
 .LBB1_2:                                # %entry
@@ -22,19 +22,19 @@ func0000000000000010:                   # @func0000000000000010
 .LBB3_2:                                # %entry
 	add	a0, a0, a1
 	ret
-func0000000000000068:                   # @func0000000000000068
+func00000000000000a8:                   # @func00000000000000a8
 	blt	a2, a1, .LBB4_2
 	addi	a1, a2, 1
 .LBB4_2:                                # %entry
 	add	a0, a0, a1
 	ret
-func0000000000000059:                   # @func0000000000000059
+func0000000000000099:                   # @func0000000000000099
 	blt	a1, a2, .LBB5_2
 	addi	a1, a2, -1
 .LBB5_2:                                # %entry
 	add	a0, a0, a1
 	ret
-func0000000000000069:                   # @func0000000000000069
+func00000000000000a9:                   # @func00000000000000a9
 	blt	a1, a2, .LBB6_2
 	addi	a1, a2, -1
 .LBB6_2:                                # %entry

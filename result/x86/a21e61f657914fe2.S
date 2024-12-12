@@ -22,12 +22,6 @@ func0000000000000019:                   # @func0000000000000019
 	cmovnel	%edi, %eax
 	movzbl	%al, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
-	cmpb	$94, %sil
-	movl	$46, %eax
-	cmovbl	%edi, %eax
-	movzbl	%al, %eax
-	retq
 func0000000000000009:                   # @func0000000000000009
 	cmpb	$30, %sil
 	movl	$120, %eax

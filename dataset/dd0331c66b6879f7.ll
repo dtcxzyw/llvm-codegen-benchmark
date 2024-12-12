@@ -6,7 +6,7 @@
 ; spike/optimized/fdt_sw.ll
 ; wireshark/optimized/packet-atn-ulcs.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp eq i32 %3, 804389138
@@ -34,7 +34,7 @@ entry:
 ; raylib/optimized/rtext.c.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i1 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000002a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp sgt i32 %3, 1239

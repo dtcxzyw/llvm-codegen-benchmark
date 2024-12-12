@@ -1,8 +1,7 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; icu/optimized/csrsbcs.ll
 ; libzmq/optimized/inproc_thr.cpp.ll
-; libzmq/optimized/local_thr.cpp.ll
 ; opencv/optimized/bagofwords_classification.cpp.ll
 ; opencv/optimized/benchmark.cpp.ll
 ; opencv/optimized/erfilter.cpp.ll

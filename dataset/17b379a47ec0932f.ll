@@ -9,7 +9,9 @@
 ; abc/optimized/sbdCore.c.ll
 ; abc/optimized/sbdCut.c.ll
 ; abc/optimized/sbdCut2.c.ll
+; abc/optimized/sbdWin.c.ll
 ; abseil-cpp/optimized/time.cc.ll
+; assimp/optimized/BlenderScene.cpp.ll
 ; assimp/optimized/o3dgcArithmeticCodec.cpp.ll
 ; clamav/optimized/spin.c.ll
 ; cmake/optimized/archive_match.c.ll
@@ -40,6 +42,7 @@
 ; lightgbm/optimized/dataset_loader.cpp.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; linux/optimized/8139too.ll
+; linux/optimized/compaction.ll
 ; linux/optimized/dm-stats.ll
 ; linux/optimized/fse_decompress.ll
 ; linux/optimized/huf_decompress.ll
@@ -51,19 +54,15 @@
 ; linux/optimized/pci.ll
 ; linux/optimized/timeconv.ll
 ; linux/optimized/zstd_decompress_block.ll
-; llvm/optimized/MCWin64EH.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
 ; lua/optimized/ltable.ll
 ; luajit/optimized/minilua.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; oniguruma/optimized/regcomp.ll
 ; oniguruma/optimized/regparse.ll
 ; oniguruma/optimized/unicode.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtpttf.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; opencv/optimized/hybrid_binarizer.cpp.ll
 ; openexr/optimized/attributes.c.ll
 ; openjdk/optimized/hb-ot-math.ll
@@ -73,6 +72,7 @@
 ; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/scale_common.c.ll
 ; php/optimized/parse_tz.ll
+; php/optimized/pcre2_dfa_match.ll
 ; php/optimized/pcre2_script_run.ll
 ; qemu/optimized/tcg.c.ll
 ; raylib/optimized/raudio.c.ll

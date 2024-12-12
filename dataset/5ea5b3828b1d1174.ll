@@ -1,7 +1,8 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/luckyRead.c.ll
+; boost/optimized/numeric.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; gromacs/optimized/enxio.cpp.ll
 ; icu/optimized/number_longnames.ll

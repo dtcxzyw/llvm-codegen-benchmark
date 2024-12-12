@@ -10,9 +10,3 @@ func0000000000000002:                   # @func0000000000000002
 	movzwl	%si, %ecx
 	subq	%rcx, %rax
 	retq
-func0000000000000010:                   # @func0000000000000010
-	movq	%rdi, %rax
-	incl	%esi
-	movzwl	%si, %ecx
-	subq	%rcx, %rax
-	retq

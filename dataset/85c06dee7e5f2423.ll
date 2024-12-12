@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 18 occurrences:
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; darktable/optimized/NefDecoder.cpp.ll
 ; darktable/optimized/darkroom.c.ll
@@ -8,8 +8,6 @@
 ; draco/optimized/sequential_normal_attribute_decoder.cc.ll
 ; draco/optimized/sequential_normal_attribute_encoder.cc.ll
 ; gromacs/optimized/dssp.cpp.ll
-; gromacs/optimized/vsite_parm.cpp.ll
-; minetest/optimized/server.cpp.ll
 ; mitsuba3/optimized/bsplinecurve.cpp.ll
 ; mitsuba3/optimized/hair.cpp.ll
 ; mitsuba3/optimized/pplastic.cpp.ll
@@ -24,16 +22,15 @@
 define i1 @func0000000000000008(i1 %0, i1 %1, float %2) #0 {
 entry:
   %3 = fcmp olt float %2, 0.000000e+00
-  %4 = or i1 %3, %1
-  %5 = or i1 %4, %0
+  %4 = or i1 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; bullet3/optimized/b3CpuRigidBodyPipeline.ll
 ; bullet3/optimized/b3GpuJacobiContactSolver.ll
 ; bullet3/optimized/b3Solver.ll
-; gromacs/optimized/box.cpp.ll
 ; gromacs/optimized/vsite_parm.cpp.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
@@ -49,8 +46,8 @@ entry:
 define i1 @func0000000000000020(i1 %0, i1 %1, float %2) #0 {
 entry:
   %3 = fcmp oeq float %2, 1.000000e+00
-  %4 = or i1 %3, %1
-  %5 = or i1 %4, %0
+  %4 = or i1 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -60,26 +57,25 @@ entry:
 define i1 @func000000000000002c(i1 %0, i1 %1, float %2) #0 {
 entry:
   %3 = fcmp ule float %2, 0.000000e+00
-  %4 = or i1 %3, %1
-  %5 = or i1 %4, %0
+  %4 = or i1 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; draco/optimized/sequential_integer_attribute_decoder.cc.ll
-; gromacs/optimized/box.cpp.ll
 ; opencv/optimized/depth_to_3d.cpp.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i1 %1, float %2) #0 {
 entry:
   %3 = fcmp uno float %2, 0.000000e+00
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
 
-; 10 occurrences:
+; 12 occurrences:
 ; darktable/optimized/introspection_crop.c.ll
 ; gromacs/optimized/gmx_anaeig.cpp.ll
 ; imgui/optimized/imgui.cpp.ll
@@ -90,11 +86,13 @@ entry:
 ; openjdk/optimized/OGLContext.ll
 ; pbrt-v4/optimized/shapes.cpp.ll
 ; postgres/optimized/float.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000001c(i1 %0, i1 %1, float %2) #0 {
 entry:
   %3 = fcmp une float %2, 1.000000e+00
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }
@@ -110,17 +108,16 @@ entry:
 define i1 @func000000000000000c(i1 %0, i1 %1, float %2) #0 {
 entry:
   %3 = fcmp ult float %2, 0.000000e+00
-  %4 = or i1 %3, %1
-  %5 = or i1 %4, %0
+  %4 = or i1 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; bullet3/optimized/b3CpuRigidBodyPipeline.ll
 ; bullet3/optimized/b3GpuJacobiContactSolver.ll
 ; bullet3/optimized/b3Solver.ll
 ; darktable/optimized/NefDecoder.cpp.ll
-; gromacs/optimized/vsite_parm.cpp.ll
 ; libwebp/optimized/frame_enc.c.ll
 ; openusd/optimized/capsuleMeshGenerator.cpp.ll
 ; openusd/optimized/coneMeshGenerator.cpp.ll
@@ -133,8 +130,8 @@ entry:
 define i1 @func0000000000000010(i1 %0, i1 %1, float %2) #0 {
 entry:
   %3 = fcmp ogt float %2, 0x3FEE666660000000
-  %4 = or i1 %3, %1
-  %5 = or i1 %4, %0
+  %4 = or i1 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -149,8 +146,8 @@ entry:
 define i1 @func0000000000000024(i1 %0, i1 %1, float %2) #0 {
 entry:
   %3 = fcmp ueq float %2, 0x7FF0000000000000
-  %4 = or i1 %3, %1
-  %5 = or i1 %4, %0
+  %4 = or i1 %1, %3
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -175,7 +172,7 @@ define i1 @func0000000000000028(i1 %0, i1 %1, float %2) #0 {
 entry:
   %3 = fcmp ole float %2, -1.290000e+02
   %4 = or i1 %3, %1
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -196,18 +193,7 @@ entry:
 define i1 @func0000000000000034(i1 %0, i1 %1, float %2) #0 {
 entry:
   %3 = fcmp uge float %2, 0x41E0000000000000
-  %4 = or i1 %3, %1
-  %5 = or i1 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; openblas/optimized/ieeeck.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i1 %1, float %2) #0 {
-entry:
-  %3 = fcmp ord float %2, 0.000000e+00
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = or i1 %4, %0
   ret i1 %5
 }

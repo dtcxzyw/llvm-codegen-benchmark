@@ -3,7 +3,7 @@
 ; ruby/optimized/prism.ll
 ; wireshark/optimized/packet-iso8583.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000038(i8 %0, i8 %1, i8 %2) #0 {
+define i8 @func0000000000000068(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add nuw nsw i8 %2, 55
   %4 = icmp ugt i8 %1, -97
@@ -17,7 +17,7 @@ entry:
 ; spike/optimized/vsadd_vv.ll
 ; spike/optimized/vsadd_vx.ll
 ; Function Attrs: nounwind
-define i8 @func000000000000002a(i8 %0, i8 %1, i8 %2) #0 {
+define i8 @func000000000000004a(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add nuw i8 %2, 127
   %4 = icmp slt i8 %1, 0
@@ -30,7 +30,7 @@ entry:
 ; spike/optimized/vssub_vv.ll
 ; spike/optimized/vssub_vx.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000026(i8 %0, i8 %1, i8 %2) #0 {
+define i8 @func0000000000000046(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add nuw i8 %2, 127
   %4 = icmp slt i8 %1, 0
@@ -41,7 +41,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/ucnv2022.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000024(i8 %0, i8 %1, i8 %2) #0 {
+define i8 @func0000000000000044(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = add nuw i8 %2, 112
   %4 = icmp ult i8 %1, 96

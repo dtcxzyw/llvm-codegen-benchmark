@@ -3,13 +3,13 @@ func0000000000000001:                   # @func0000000000000001
 	vadd.vi	v8, v8, -3, v0.t
 	vmseq.vi	v0, v8, 0
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	li	a0, -34
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vadd.vx	v8, v8, a0, v0.t
 	vmseq.vi	v0, v8, 0
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	lui	a0, 244
 	addiw	a0, a0, 576
 	vsetivli	zero, 4, e64, m2, ta, mu
@@ -22,7 +22,7 @@ func0000000000000008:                   # @func0000000000000008
 	vadd.vi	v8, v8, 9, v0.t
 	vmsgtu.vx	v0, v8, a0
 	ret
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	lui	a0, 1048544
 	addiw	a0, a0, 30
 	vsetivli	zero, 4, e64, m2, ta, mu
@@ -31,14 +31,11 @@ func0000000000000018:                   # @func0000000000000018
 	addiw	a0, a0, -16
 	vmsgtu.vx	v0, v8, a0
 	ret
-func0000000000000016:                   # @func0000000000000016
-	lui	a0, 244
-	addiw	a0, a0, 576
+func0000000000000026:                   # @func0000000000000026
+	li	a0, -256
 	vsetivli	zero, 4, e64, m2, ta, mu
 	vadd.vx	v8, v8, a0, v0.t
-	lui	a0, 4
-	addiw	a0, a0, -1384
-	vmslt.vx	v0, v8, a0
+	vmsle.vi	v0, v8, -1
 	ret
 func0000000000000004:                   # @func0000000000000004
 	bseti	a0, zero, 32

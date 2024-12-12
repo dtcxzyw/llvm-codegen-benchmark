@@ -31,7 +31,7 @@
 func000000000000000e:                   # @func000000000000000e
 	vpternlogd	$248, .LCPI0_2(%rip){1to4}, %xmm2, %xmm1 # xmm1 = xmm1 | (xmm2 & mem)
 	vgf2p8affineqb	$0, .LCPI0_3(%rip){1to2}, %xmm1, %xmm1
-	vpor	%xmm0, %xmm1, %xmm0
+	vpor	%xmm1, %xmm0, %xmm0
 	retq
 .LCPI1_0:
 	.zero	16,24
@@ -66,7 +66,7 @@ func000000000000000e:                   # @func000000000000000e
 func000000000000000d:                   # @func000000000000000d
 	vpternlogd	$248, .LCPI1_2(%rip){1to4}, %xmm2, %xmm1 # xmm1 = xmm1 | (xmm2 & mem)
 	vgf2p8affineqb	$0, .LCPI1_3(%rip){1to2}, %xmm1, %xmm1
-	vpor	%xmm0, %xmm1, %xmm0
+	vpor	%xmm1, %xmm0, %xmm0
 	retq
 .LCPI2_0:
 	.zero	16,1

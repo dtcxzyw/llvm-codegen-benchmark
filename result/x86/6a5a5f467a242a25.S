@@ -1,4 +1,4 @@
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	leal	3(%rdx), %eax
 	testl	%edx, %edx
 	cmovnsl	%edx, %eax
@@ -7,7 +7,7 @@ func0000000000000051:                   # @func0000000000000051
 	cmpl	%edi, %eax
 	sete	%al
 	retq
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	movslq	%edx, %rax
 	imulq	$1374389535, %rax, %rax         # imm = 0x51EB851F
 	movq	%rax, %rcx
@@ -18,7 +18,7 @@ func000000000000005a:                   # @func000000000000005a
 	cmpl	%edi, %eax
 	setg	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	movl	%edx, %eax
 	shrl	$31, %eax
 	addl	%edx, %eax

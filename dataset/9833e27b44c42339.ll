@@ -1,8 +1,9 @@
 
-; 130 occurrences:
+; 143 occurrences:
 ; abc/optimized/cuddCache.c.ll
 ; abc/optimized/cuddLCache.c.ll
 ; arrow/optimized/UriCommon.c.ll
+; boost/optimized/core.ll
 ; c3c/optimized/stringutils.c.ll
 ; clamav/optimized/bytecode_vm.c.ll
 ; clamav/optimized/pdf.c.ll
@@ -69,6 +70,18 @@
 ; llvm/optimized/X86FrameLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_checkbox.ll
+; lvgl/optimized/lv_grid.ll
+; lvgl/optimized/lv_indev_scroll.ll
+; lvgl/optimized/lv_obj_pos.ll
+; lvgl/optimized/lv_obj_scroll.ll
+; lvgl/optimized/lv_roller.ll
+; lvgl/optimized/lv_scale.ll
+; lvgl/optimized/lv_slider.ll
+; lvgl/optimized/lv_table.ll
+; lvgl/optimized/lv_textarea.ll
 ; lz4/optimized/lz4hc.c.ll
 ; meshlab/optimized/additionalgui.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
@@ -92,7 +105,6 @@
 ; proxygen/optimized/HPACKCodec.cpp.ll
 ; proxygen/optimized/QPACKCodec.cpp.ll
 ; qemu/optimized/block_parallels.c.ll
-; qemu/optimized/monitor_hmp-cmds.c.ll
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/raudio.c.ll
 ; ruby/optimized/sprintf.ll
@@ -128,6 +140,7 @@
 ; z3/optimized/dl_sparse_table.cpp.ll
 ; z3/optimized/dl_table.cpp.ll
 ; z3/optimized/theory_str_mc.cpp.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; zxing/optimized/DMHighLevelEncoder.cpp.ll
 ; Function Attrs: nounwind
@@ -139,7 +152,7 @@ entry:
   ret i32 %4
 }
 
-; 38 occurrences:
+; 39 occurrences:
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; assimp/optimized/IRRLoader.cpp.ll
@@ -177,6 +190,7 @@ entry:
 ; verilator/optimized/V3Width.cpp.ll
 ; wireshark/optimized/packet-elasticsearch.c.ll
 ; wolfssl/optimized/rsa.c.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; zstd/optimized/zdict.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i64 %0, i64 %1) #0 {
@@ -187,7 +201,7 @@ entry:
   ret i32 %4
 }
 
-; 72 occurrences:
+; 80 occurrences:
 ; abc/optimized/extraUtilFile.c.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; cmake/optimized/cmLocalUnixMakefileGenerator3.cxx.ll
@@ -207,6 +221,14 @@ entry:
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/SampleProfileMatcher.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_checkbox.ll
+; lvgl/optimized/lv_dropdown.ll
+; lvgl/optimized/lv_obj_draw.ll
+; lvgl/optimized/lv_scale.ll
+; lvgl/optimized/lv_slider.ll
+; lvgl/optimized/lv_textarea.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; ocio/optimized/GradingBSplineCurve.cpp.ll

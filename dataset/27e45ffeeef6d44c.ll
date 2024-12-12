@@ -1,7 +1,6 @@
 
-; 24 occurrences:
+; 23 occurrences:
 ; abc/optimized/nwkTiming.c.ll
-; assimp/optimized/BlenderModifier.cpp.ll
 ; bullet3/optimized/btInternalEdgeUtility.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_clipping.c.ll

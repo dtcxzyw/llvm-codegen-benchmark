@@ -18,14 +18,14 @@ func000000000000000c:                   # @func000000000000000c
 	shrq	$32, %rax
 	orl	%edi, %eax
 	retq
+func000000000000000f:                   # @func000000000000000f
+	movq	%rsi, %rax
+	shrq	$3, %rax
+	orl	%edi, %eax
+	retq
 func0000000000000000:                   # @func0000000000000000
 	movq	%rsi, %rax
 	shrq	$10, %rax
-	orl	%edi, %eax
-	retq
-func000000000000000f:                   # @func000000000000000f
-	movq	%rsi, %rax
-	shrq	$22, %rax
 	orl	%edi, %eax
 	retq
 func000000000000000e:                   # @func000000000000000e

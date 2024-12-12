@@ -4,7 +4,7 @@
 ; libphonenumber/optimized/rune.c.ll
 ; openjdk/optimized/hb-buffer.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000e1(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 61440
   %3 = shl nuw nsw i32 %0, 6
@@ -17,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/xlm_extract.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000c1(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %0, 8
   %3 = or i32 %2, %1
@@ -29,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/vt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 62
   %3 = shl i32 %0, 6

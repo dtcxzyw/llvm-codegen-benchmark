@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	leal	7(%rsi), %eax
 	testl	%esi, %esi
 	cmovnsl	%esi, %eax
@@ -6,7 +6,7 @@ func0000000000000011:                   # @func0000000000000011
 	addl	%edi, %eax
 	sete	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	movl	%esi, %eax
 	shrl	$31, %eax
 	addl	%esi, %eax
@@ -22,7 +22,7 @@ func000000000000000a:                   # @func000000000000000a
 	cmpl	%eax, %edi
 	setns	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	movslq	%esi, %rax
 	imulq	$954437177, %rax, %rax          # imm = 0x38E38E39
 	movq	%rax, %rcx
@@ -41,7 +41,7 @@ func0000000000000006:                   # @func0000000000000006
 	cmpl	$3, %edi
 	setl	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	movslq	%esi, %rax
 	imulq	$-1840700269, %rax, %rcx        # imm = 0x92492493
 	shrq	$32, %rcx
@@ -54,7 +54,7 @@ func0000000000000018:                   # @func0000000000000018
 	cmpl	$52, %eax
 	setae	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	leal	255(%rsi), %eax
 	testl	%esi, %esi
 	cmovnsl	%esi, %eax
@@ -76,11 +76,22 @@ func0000000000000008:                   # @func0000000000000008
 	retq
 func0000000000000001:                   # @func0000000000000001
 	movslq	%esi, %rax
-	imulq	$1431655766, %rax, %rax         # imm = 0x55555556
-	movq	%rax, %rcx
-	shrq	$63, %rcx
-	shrq	$32, %rax
-	addl	%ecx, %eax
-	addl	%edi, %eax
+	imulq	$1431655765, %rax, %rcx         # imm = 0x55555555
+	shrq	$32, %rcx
+	subl	%eax, %ecx
+	movl	%ecx, %eax
+	shrl	$31, %eax
+	sarl	%ecx
+	addl	%eax, %ecx
+	cmpl	%ecx, %edi
 	sete	%al
+	retq
+func0000000000000024:                   # @func0000000000000024
+	movl	%esi, %eax
+	shrl	$31, %eax
+	addl	%esi, %eax
+	sarl	%eax
+	addl	%edi, %eax
+	cmpl	$3, %eax
+	setb	%al
 	retq

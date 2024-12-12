@@ -2,12 +2,12 @@
 ; 1 occurrences:
 ; glslang/optimized/ParseHelper.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 12
   %4 = and i32 %3, 7
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = icmp sgt i32 %5, 4
   ret i1 %6
 }
@@ -16,13 +16,13 @@ entry:
 ; llvm/optimized/DeclCXX.cpp.ll
 ; slurm/optimized/reservation.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000078(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 4
   %4 = and i32 %3, 1
-  %5 = add nuw nsw i32 %4, %0
-  %6 = icmp ugt i32 %5, 1
+  %5 = add nuw nsw i32 %0, %4
+  %6 = icmp samesign ugt i32 %5, 1
   ret i1 %6
 }
 
@@ -42,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/dm-raid1.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 1

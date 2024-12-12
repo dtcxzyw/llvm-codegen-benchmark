@@ -1,9 +1,10 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; arrow/optimized/scalar_cast_nested.cc.ll
 ; cmake/optimized/divsufsort.c.ll
 ; git/optimized/path.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_bar.ll
 ; opencv/optimized/cuda_gpu_mat.cpp.ll
 ; opencv/optimized/genericgfpoly.cpp.ll
 ; postgres/optimized/regexp.ll
@@ -12,7 +13,7 @@
 ; rocksdb/optimized/file_indexer.cc.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i64 %0, i64 %1) #0 {
+define i1 @func000000000000014a(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp sgt i32 %2, 0
@@ -25,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/block_qcow2-snapshot.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000066(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000c6(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp slt i32 %2, 65536
@@ -44,7 +45,7 @@ entry:
 ; llvm/optimized/BugReporter.cpp.ll
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i64 %1) #0 {
+define i1 @func000000000000018c(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp ne i32 %2, 0
@@ -54,20 +55,21 @@ entry:
   ret i1 %6
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; hyperscan/optimized/ng_depth.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_obj_pos.ll
 ; postgres/optimized/execExprInterp.ll
 ; quickjs/optimized/quickjs.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = icmp eq i32 %2, 1
+  %3 = icmp eq i32 %2, 256
   %4 = trunc i64 %0 to i32
-  %5 = icmp eq i32 %4, 3
+  %5 = icmp eq i32 %4, 0
   %6 = select i1 %5, i1 %3, i1 false
   ret i1 %6
 }
@@ -75,7 +77,7 @@ entry:
 ; 1 occurrences:
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000141(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2147483648
   %3 = icmp eq i64 %2, 0
@@ -89,7 +91,7 @@ entry:
 ; openmpi/optimized/plm_slurm_module.ll
 ; postgres/optimized/rowtypes.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000c1(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp slt i32 %2, 11
@@ -103,7 +105,7 @@ entry:
 ; nori/optimized/main.cpp.ll
 ; opencv/optimized/omni_stereo_calibration.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002aa(i64 %0, i64 %1) #0 {
+define i1 @func000000000000094a(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = icmp sgt i32 %2, 0
@@ -116,7 +118,7 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/polynomial.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000aaa(i64 %0, i64 %1) #0 {
+define i1 @func000000000000294a(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = icmp sgt i32 %2, 0
@@ -133,7 +135,7 @@ entry:
 ; opencv/optimized/roiSelector.cpp.ll
 ; opencv/optimized/window.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000008aa(i64 %0, i64 %1) #0 {
+define i1 @func000000000000214a(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = icmp sgt i32 %2, 0
@@ -147,7 +149,7 @@ entry:
 ; graphviz/optimized/gvrender.c.ll
 ; opencv/optimized/imgwarp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000866(i64 %0, i64 %1) #0 {
+define i1 @func00000000000020c6(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = icmp slt i32 %2, 1

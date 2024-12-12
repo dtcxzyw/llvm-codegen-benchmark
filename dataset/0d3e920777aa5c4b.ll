@@ -1,5 +1,6 @@
 
-; 7 occurrences:
+; 8 occurrences:
+; boost/optimized/within_pointlike_geometry.ll
 ; graphviz/optimized/pack.c.ll
 ; gromacs/optimized/reversetopology.cpp.ll
 ; minetest/optimized/CGUIButton.cpp.ll

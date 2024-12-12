@@ -33,6 +33,12 @@ func000000000000000b:                   # @func000000000000000b
 	orq	%rdi, %rax
 	orq	%rdx, %rax
 	retq
+func000000000000001d:                   # @func000000000000001d
+	movl	%edx, %eax
+	orq	%rdi, %rax
+	shlq	$48, %rsi
+	orq	%rsi, %rax
+	retq
 func000000000000000d:                   # @func000000000000000d
 	movl	%esi, %eax
 	andl	$-65536, %edx                   # imm = 0xFFFF0000

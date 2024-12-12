@@ -16,13 +16,13 @@ func0000000000000007:                   # @func0000000000000007
 	cmovnel	%esi, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000045:                   # @func0000000000000045
+func0000000000000085:                   # @func0000000000000085
 	xorl	%eax, %eax
 	testb	$1, %dl
 	cmovnel	%esi, %eax
 	addl	%edi, %eax
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	xorl	%eax, %eax
 	testb	$4, %dl
 	cmovnel	%esi, %eax

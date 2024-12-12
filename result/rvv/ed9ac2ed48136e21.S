@@ -16,7 +16,7 @@ func0000000000000001:                   # @func0000000000000001
 	vand.vx	v8, v8, a0
 	vmseq.vx	v0, v8, a0
 	ret
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	li	a0, 255
 	slli	a0, a0, 24
 	vsetivli	zero, 4, e64, m2, ta, ma
@@ -30,7 +30,7 @@ func000000000000000c:                   # @func000000000000000c
 	vand.vx	v8, v8, a0
 	vmsne.vx	v0, v8, a0
 	ret
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v10, v8, 0
 	lui	a0, 2

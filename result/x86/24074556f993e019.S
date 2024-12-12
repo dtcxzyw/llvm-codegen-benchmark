@@ -9,7 +9,7 @@ func000000000000000a:                   # @func000000000000000a
 	cmpl	%edi, %eax
 	setg	%al
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	leal	7(%rsi), %eax
 	addl	$14, %esi
 	testl	%eax, %eax
@@ -18,7 +18,7 @@ func000000000000002a:                   # @func000000000000002a
 	cmpl	%edi, %esi
 	setg	%al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	leal	7(%rsi), %eax
 	addl	$14, %esi
 	testl	%eax, %eax
@@ -27,7 +27,7 @@ func0000000000000028:                   # @func0000000000000028
 	cmpl	%edi, %esi
 	seta	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	leal	7(%rsi), %eax
 	addl	$14, %esi
 	testl	%eax, %eax
@@ -36,7 +36,7 @@ func0000000000000021:                   # @func0000000000000021
 	cmpl	%edi, %esi
 	sete	%al
 	retq
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	movl	%esi, %eax
 	incl	%eax
 	shrl	$31, %eax
@@ -53,20 +53,6 @@ func0000000000000006:                   # @func0000000000000006
 	sarl	$3, %esi
 	cmpl	%edi, %esi
 	setl	%al
-	retq
-func0000000000000024:                   # @func0000000000000024
-	movl	%esi, %eax
-	addl	$-10, %eax
-	cltq
-	imulq	$-1307163959, %rax, %rax        # imm = 0xB21642C9
-	shrq	$32, %rax
-	leal	-10(%rax,%rsi), %eax
-	movl	%eax, %ecx
-	shrl	$31, %ecx
-	sarl	$5, %eax
-	addl	%ecx, %eax
-	cmpl	%edi, %eax
-	setb	%al
 	retq
 func0000000000000007:                   # @func0000000000000007
 	leal	7(%rsi), %eax
@@ -85,4 +71,13 @@ func0000000000000008:                   # @func0000000000000008
 	sarl	$14, %esi
 	cmpl	%edi, %esi
 	seta	%al
+	retq
+func0000000000000044:                   # @func0000000000000044
+	movl	%esi, %eax
+	decl	%eax
+	shrl	$31, %eax
+	leal	-1(%rsi,%rax), %eax
+	sarl	%eax
+	cmpl	%edi, %eax
+	setb	%al
 	retq

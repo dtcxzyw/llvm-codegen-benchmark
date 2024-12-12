@@ -1,32 +1,24 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; folly/optimized/HHWheelTimer.cpp.ll
-; openblas/optimized/dsptrf.c.ll
 ; postgres/optimized/network_gist.ll
 ; postgres/optimized/tsvector_op.ll
 ; ruby/optimized/regparse.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000c(ptr %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 32
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 8
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 8
   %5 = getelementptr i32, ptr %4, i64 %3
   ret ptr %5
 }
 
-; 23 occurrences:
-; gromacs/optimized/dlasrt.cpp.ll
-; gromacs/optimized/gmx_arpack.cpp.ll
-; gromacs/optimized/slasrt.cpp.ll
+; 16 occurrences:
 ; icu/optimized/loclikelysubtags.ll
 ; icu/optimized/ucnv_ext.ll
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
-; meshlab/optimized/solver.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; node/optimized/libnode.node_sockaddr.ll
-; openblas/optimized/dlasrt.c.ll
 ; openssl/optimized/libcrypto-lib-ec2_oct.ll
 ; openssl/optimized/libcrypto-lib-ecp_oct.ll
 ; openssl/optimized/libcrypto-lib-pvkfmt.ll
@@ -40,11 +32,11 @@ entry:
 ; redis/optimized/cluster_legacy.ll
 ; redis/optimized/hyperloglog.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000e(ptr %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 8
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 1
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 1
   %5 = getelementptr nusw i8, ptr %4, i64 %3
   ret ptr %5
 }
@@ -72,6 +64,36 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 -4
   %5 = getelementptr i32, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 7 occurrences:
+; gromacs/optimized/dlasrt.cpp.ll
+; gromacs/optimized/gmx_arpack.cpp.ll
+; gromacs/optimized/slasrt.cpp.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/solver.cpp.ll
+; openblas/optimized/dlasrt.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
+entry:
+  %2 = sdiv i32 %1, 2
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw i8, ptr %0, i64 -8
+  %5 = getelementptr nusw double, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 1 occurrences:
+; openblas/optimized/dsptrf.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000008(ptr %0, i32 %1) #0 {
+entry:
+  %2 = sdiv i32 %1, 2
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw i8, ptr %0, i64 -8
+  %5 = getelementptr double, ptr %4, i64 %3
   ret ptr %5
 }
 

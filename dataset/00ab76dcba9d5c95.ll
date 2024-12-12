@@ -1,9 +1,9 @@
 
-%"class.EventLogBase<FormatStringLogMessage<256>>::EventRecord.2626341" = type { double, ptr, %class.FormatStringLogMessage.2626342 }
-%class.FormatStringLogMessage.2626342 = type { %class.FormatBuffer.2626343 }
-%class.FormatBuffer.2626343 = type { %class.FormatBufferBase.2626344, [256 x i8] }
-%class.FormatBufferBase.2626344 = type { ptr }
-%"class.ZXing::Trit.3465387" = type { i8 }
+%"class.EventLogBase<FormatStringLogMessage<256>>::EventRecord.2739762" = type { double, ptr, %class.FormatStringLogMessage.2739763 }
+%class.FormatStringLogMessage.2739763 = type { %class.FormatBuffer.2739764 }
+%class.FormatBuffer.2739764 = type { %class.FormatBufferBase.2739765, [256 x i8] }
+%class.FormatBufferBase.2739765 = type { ptr }
+%"class.ZXing::Trit.3649655" = type { i8 }
 
 ; 10 occurrences:
 ; openjdk/optimized/mlib_ImageAffine_BL_D64.ll
@@ -17,12 +17,12 @@
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000c4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 3
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw i32, ptr %1, i64 %4
-  %6 = icmp ugt ptr %5, %0
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
@@ -34,12 +34,12 @@ entry:
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000c8(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 3
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw i32, ptr %1, i64 %4
-  %6 = icmp ult ptr %5, %0
+  %6 = icmp ugt ptr %0, %5
   ret i1 %6
 }
 
@@ -56,36 +56,36 @@ entry:
 ; openjdk/optimized/jvmci.ll
 ; openusd/optimized/triRefinement.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000c1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 10
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw %"class.EventLogBase<FormatStringLogMessage<256>>::EventRecord.2626341", ptr %1, i64 %4
-  %6 = icmp eq ptr %5, %0
+  %5 = getelementptr nusw %"class.EventLogBase<FormatStringLogMessage<256>>::EventRecord.2739762", ptr %1, i64 %4
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; gromacs/optimized/minimize.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000061(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 3
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw float, ptr %1, i64 %4
-  %6 = icmp eq ptr %5, %0
+  %5 = getelementptr nusw nuw float, ptr %1, i64 %4
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000069(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000e9(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 7
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw %"class.ZXing::Trit.3465387", ptr %1, i64 %4
-  %6 = icmp ule ptr %5, %0
+  %5 = getelementptr nusw nuw %"class.ZXing::Trit.3649655", ptr %1, i64 %4
+  %6 = icmp uge ptr %0, %5
   ret i1 %6
 }
 

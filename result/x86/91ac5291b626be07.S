@@ -3,11 +3,6 @@ func0000000000000014:                   # @func0000000000000014
 	subq	%rdi, %rax
 	incq	%rax
 	retq
-func000000000000001d:                   # @func000000000000001d
-	leaq	(%rsi,%rdx), %rax
-	subq	%rdi, %rax
-	addq	$68569, %rax                    # imm = 0x10BD9
-	retq
 func0000000000000000:                   # @func0000000000000000
 	leaq	(%rsi,%rdx), %rax
 	subq	%rdi, %rax
@@ -36,7 +31,12 @@ func0000000000000015:                   # @func0000000000000015
 func000000000000003f:                   # @func000000000000003f
 	leaq	(%rsi,%rdx), %rax
 	subq	%rdi, %rax
-	addq	$258, %rax                      # imm = 0x102
+	addq	$7, %rax
+	retq
+func000000000000001d:                   # @func000000000000001d
+	leaq	(%rsi,%rdx), %rax
+	subq	%rdi, %rax
+	addq	$68569, %rax                    # imm = 0x10BD9
 	retq
 func0000000000000002:                   # @func0000000000000002
 	leaq	(%rsi,%rdx), %rax

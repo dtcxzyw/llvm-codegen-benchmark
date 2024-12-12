@@ -1,6 +1,7 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; darktable/optimized/introspection_ashift.c.ll
+; darktable/optimized/introspection_cacorrect.c.ll
 ; gromacs/optimized/bonded.cpp.ll
 ; gromacs/optimized/calc_verletbuf.cpp.ll
 ; gromacs/optimized/gmx_densmap.cpp.ll

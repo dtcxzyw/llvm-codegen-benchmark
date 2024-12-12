@@ -123,6 +123,20 @@ entry:
   ret i32 %5
 }
 
+; 4 occurrences:
+; lvgl/optimized/lv_roller.ll
+; openspiel/optimized/goofspiel.cc.ll
+; openusd/optimized/reformat.c.ll
+; openusd/optimized/warped_motion.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl nsw i32 %2, 1
+  %4 = mul i32 %0, %1
+  %5 = add i32 %4, %3
+  ret i32 %5
+}
+
 ; 3 occurrences:
 ; faiss/optimized/hamming.cpp.ll
 ; linux/optimized/selection.ll
@@ -132,19 +146,6 @@ define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = shl nuw nsw i32 %0, 1
-  %5 = add i32 %4, %3
-  ret i32 %5
-}
-
-; 3 occurrences:
-; openspiel/optimized/goofspiel.cc.ll
-; openusd/optimized/reformat.c.ll
-; openusd/optimized/warped_motion.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = shl nsw i32 %2, 13
-  %4 = mul i32 %0, %1
   %5 = add i32 %4, %3
   ret i32 %5
 }
@@ -174,11 +175,10 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; openblas/optimized/dgees.c.ll
 ; openblas/optimized/dgeesx.c.ll
 ; openblas/optimized/dgelsy.c.ll
-; openblas/optimized/dgeqp3.c.ll
 ; opencv/optimized/gfluidimgproc.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
@@ -186,17 +186,6 @@ entry:
   %3 = mul i32 %1, %2
   %4 = shl nsw i32 %0, 1
   %5 = add nsw i32 %4, %3
-  ret i32 %5
-}
-
-; 1 occurrences:
-; openblas/optimized/dsytrd_sy2sb.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = shl nuw i32 %2, 1
-  %4 = mul nuw nsw i32 %0, %1
-  %5 = add i32 %4, %3
   ret i32 %5
 }
 

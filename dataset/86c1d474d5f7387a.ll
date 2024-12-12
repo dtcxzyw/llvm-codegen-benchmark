@@ -1,11 +1,13 @@
 
-; 6 occurrences:
+; 8 occurrences:
 ; raylib/optimized/rcore.c.ll
 ; rust-analyzer-rs/optimized/p80zqc6dxbxvppz.ll
 ; spike/optimized/aes64dsm.ll
 ; spike/optimized/aes64esm.ll
 ; spike/optimized/aes64im.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
 entry:

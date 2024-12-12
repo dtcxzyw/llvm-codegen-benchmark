@@ -79,11 +79,10 @@ entry:
   ret i32 %4
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; abc/optimized/extraUtilPath.c.ll
 ; duckdb/optimized/ub_duckdb_execution_index.cpp.ll
 ; linux/optimized/82571.ll
-; linux/optimized/drm_self_refresh_helper.ll
 ; linux/optimized/nvm.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; meshlab/optimized/filter_ssynth.cpp.ll

@@ -1,65 +1,49 @@
-func0000000000000014:                   // @func0000000000000014
+func00000000000000a8:                   // @func00000000000000a8
 // %bb.0:                               // %entry
-	bic	v0.4h, #255, lsl #8
-	mov	x8, #-129                       // =0xffffffffffffff7f
-	dup	v1.2d, x8
-	mov	w8, #126                        // =0x7e
-	ushll	v0.4s, v0.4h, #0
-	uaddw	v2.2d, v1.2d, v0.2s
-	uaddw2	v0.2d, v1.2d, v0.4s
-	dup	v1.2d, x8
-	cmhi	v0.2d, v1.2d, v0.2d
-	cmhi	v1.2d, v1.2d, v2.2d
-	uzp1	v0.4s, v1.4s, v0.4s
-	xtn	v0.4h, v0.4s
+	tst	w0, #0xff
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000058:                   // @func0000000000000058
+func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
-	cmeq	v0.16b, v0.16b, #0
+	and	w8, w0, #0xff
+	cmp	w8, #1
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000011:                   // @func0000000000000011
+func0000000000000024:                   // @func0000000000000024
 // %bb.0:                               // %entry
-	movi	v1.16b, #1
-	cmeq	v0.16b, v0.16b, v1.16b
+                                        // kill: def $w0 killed $w0 def $x0
+	and	x8, x0, #0xff
+	sub	x8, x8, #192
+	cmn	x8, #128
+	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000054:                   // @func0000000000000054
+func00000000000000a4:                   // @func00000000000000a4
 // %bb.0:                               // %entry
-	bic	v0.4h, #255, lsl #8
-	movi	v1.16b, #153
-	mov	x8, #-54                        // =0xffffffffffffffca
-	dup	v2.2d, x8
-	ushll	v0.4s, v0.4h, #0
-	fneg	v1.2d, v1.2d
-	uaddw	v3.2d, v2.2d, v0.2s
-	uaddw2	v0.2d, v2.2d, v0.4s
-	cmhi	v0.2d, v1.2d, v0.2d
-	cmhi	v1.2d, v1.2d, v3.2d
-	uzp1	v0.4s, v1.4s, v0.4s
-	xtn	v0.4h, v0.4s
+                                        // kill: def $w0 killed $w0 def $x0
+	mov	x8, #-7378697629483820647       // =0x9999999999999999
+	and	x9, x0, #0xff
+	movk	x8, #6553, lsl #48
+	sub	x9, x9, #54
+	cmp	x9, x8
+	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000018:                   // @func0000000000000018
+func0000000000000028:                   // @func0000000000000028
 // %bb.0:                               // %entry
-	bic	v0.4h, #255, lsl #8
-	mov	x8, #-58                        // =0xffffffffffffffc6
-	dup	v1.2d, x8
-	mov	x8, #-10                        // =0xfffffffffffffff6
-	ushll	v0.4s, v0.4h, #0
-	uaddw	v2.2d, v1.2d, v0.2s
-	uaddw2	v0.2d, v1.2d, v0.4s
-	dup	v1.2d, x8
-	cmhi	v0.2d, v1.2d, v0.2d
-	cmhi	v1.2d, v1.2d, v2.2d
-	uzp1	v0.4s, v1.4s, v0.4s
-	xtn	v0.4h, v0.4s
+                                        // kill: def $w0 killed $w0 def $x0
+	and	x8, x0, #0xff
+	sub	x8, x8, #58
+	cmn	x8, #10
+	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000031:                   // @func0000000000000031
+func0000000000000061:                   // @func0000000000000061
 // %bb.0:                               // %entry
-	movi	v1.16b, #7
-	cmeq	v0.16b, v0.16b, v1.16b
+	and	w8, w0, #0xff
+	cmp	w8, #7
+	cset	w0, eq
 	ret
                                         // -- End function

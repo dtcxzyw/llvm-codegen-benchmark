@@ -5,7 +5,7 @@
 ; openjdk/optimized/cpCache.ll
 ; wireshark/optimized/protocol_preferences_menu.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i1 true, i1 %0
@@ -17,7 +17,7 @@ entry:
 ; 1 occurrences:
 ; slurm/optimized/reservation.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000002c(i1 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i1 true, i1 %0

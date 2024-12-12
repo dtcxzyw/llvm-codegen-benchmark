@@ -1,8 +1,10 @@
 
-; 3 occurrences:
+; 5 occurrences:
 ; diesel-rs/optimized/ejac3nrysber2ti.ll
 ; syn/optimized/2i67i8azb4r5b3mw.ll
 ; tokenizers-rs/optimized/40hmx6rev8evi2bx.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:

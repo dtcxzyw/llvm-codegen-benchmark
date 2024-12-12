@@ -1,5 +1,5 @@
 
-; 1523 occurrences:
+; 1616 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abc.c.ll
@@ -61,7 +61,6 @@
 ; abc/optimized/bmcEco.c.ll
 ; abc/optimized/bmcFault.c.ll
 ; abc/optimized/bmcICheck.c.ll
-; abc/optimized/bmcLoad.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaxi.c.ll
 ; abc/optimized/bmcUnroll.c.ll
@@ -146,7 +145,6 @@
 ; abc/optimized/giaStg.c.ll
 ; abc/optimized/giaStoch.c.ll
 ; abc/optimized/giaStr.c.ll
-; abc/optimized/giaSupMin.c.ll
 ; abc/optimized/giaSupp.c.ll
 ; abc/optimized/giaSweep.c.ll
 ; abc/optimized/giaSweeper.c.ll
@@ -244,11 +242,108 @@
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/algorithm.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/buffer.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/calculation_type.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/copy_segment_point.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/difference_pl_pl.ll
+; boost/optimized/env.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/extensions.ll
+; boost/optimized/for_each_coordinate.ll
+; boost/optimized/framework.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_ring.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/intersection_pl_pl.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/math_abs.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_equals.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/partition.ll
+; boost/optimized/pipe.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/promote_integral.ll
+; boost/optimized/range.ll
+; boost/optimized/rational.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/relative_order.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/search_path.ll
+; boost/optimized/select_most_precise.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/shell_path.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/spawn.ll
+; boost/optimized/src.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/test_impl.ll
+; boost/optimized/tupled_output.ll
+; boost/optimized/tuples.ll
+; boost/optimized/union_pl_pl.ll
+; boost/optimized/visit.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
+; boost/optimized/write_dsv.ll
 ; bullet3/optimized/btSimpleBroadphase.ll
 ; bullet3/optimized/btSoftBody.ll
 ; c3c/optimized/ast.c.ll
 ; c3c/optimized/copying.c.ll
-; c3c/optimized/decltable.c.ll
 ; c3c/optimized/expr.c.ll
 ; c3c/optimized/llvm_codegen_stmt.c.ll
 ; c3c/optimized/parse_expr.c.ll
@@ -413,7 +508,6 @@
 ; gromacs/optimized/correlationhistory.cpp.ll
 ; gromacs/optimized/domdec.cpp.ll
 ; gromacs/optimized/domdec_constraints.cpp.ll
-; gromacs/optimized/domdec_network.cpp.ll
 ; gromacs/optimized/dssp.cpp.ll
 ; gromacs/optimized/dump.cpp.ll
 ; gromacs/optimized/edsam.cpp.ll
@@ -491,6 +585,7 @@
 ; hermes/optimized/gtest-all.cc.ll
 ; hyperscan/optimized/ComponentRepeat.cpp.ll
 ; hyperscan/optimized/fdr_compile.cpp.ll
+; hyperscan/optimized/fdr_confirm_compile.cpp.ll
 ; hyperscan/optimized/fdr_engine_description.cpp.ll
 ; hyperscan/optimized/goughcompile.cpp.ll
 ; hyperscan/optimized/goughcompile_accel.cpp.ll
@@ -529,7 +624,6 @@
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/svc_xprt.ll
 ; linux/optimized/thermal.ll
-; linux/optimized/thermal_trip.ll
 ; linux/optimized/virtio_net.ll
 ; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/AArch64AsmPrinter.cpp.ll
@@ -719,7 +813,6 @@
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -790,7 +883,6 @@
 ; minetest/optimized/CSkinnedMesh.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; minetest/optimized/CZipReader.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/c_converter.cpp.ll
 ; minetest/optimized/c_packer.cpp.ll
 ; minetest/optimized/chat.cpp.ll
@@ -825,6 +917,7 @@
 ; minetest/optimized/static_text.cpp.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; minetest/optimized/wieldmesh.cpp.ll
+; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/blender.cpp.ll
 ; mitsuba3/optimized/hdrfilm.cpp.ll
 ; mitsuba3/optimized/obj.cpp.ll
@@ -1044,6 +1137,7 @@
 ; opencv/optimized/serialization.cpp.ll
 ; opencv/optimized/short_term_imageless_tracker.cpp.ll
 ; opencv/optimized/sift.dispatch.cpp.ll
+; opencv/optimized/simple_color_balance.cpp.ll
 ; opencv/optimized/simpleflow.cpp.ll
 ; opencv/optimized/sinusoidalpattern.cpp.ll
 ; opencv/optimized/slic.cpp.ll
@@ -1143,6 +1237,7 @@
 ; ozz-animation/optimized/additive_animation_builder.cc.ll
 ; ozz-animation/optimized/animation_builder.cc.ll
 ; ozz-animation/optimized/animation_optimizer.cc.ll
+; ozz-animation/optimized/gltf2ozz.cc.ll
 ; ozz-animation/optimized/raw_animation_archive.cc.ll
 ; ozz-animation/optimized/raw_animation_utils.cc.ll
 ; ozz-animation/optimized/raw_skeleton_archive.cc.ll
@@ -1170,7 +1265,6 @@
 ; postgres/optimized/ginpostinglist.ll
 ; postgres/optimized/jsonb_util.ll
 ; postgres/optimized/load_manifest.ll
-; postgres/optimized/mcxtfuncs.ll
 ; postgres/optimized/nodeMemoize.ll
 ; postgres/optimized/proc.ll
 ; postgres/optimized/procarray.ll
@@ -1385,7 +1479,6 @@
 ; yosys/optimized/lattice_gsr.ll
 ; yosys/optimized/liberty.ll
 ; yosys/optimized/log.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/ltp.ll
 ; yosys/optimized/lut2mux.ll
 ; yosys/optimized/maccmap.ll
@@ -1532,8 +1625,9 @@ entry:
   ret i32 %4
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; abc/optimized/bmcBmc3.c.ll
+; boost/optimized/gregorian.ll
 ; eastl/optimized/EADateTime.cpp.ll
 ; git/optimized/date.ll
 ; glog/optimized/logging.cc.ll

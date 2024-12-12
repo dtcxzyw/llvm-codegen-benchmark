@@ -1,5 +1,5 @@
 
-; 36 occurrences:
+; 37 occurrences:
 ; abc/optimized/giaMinLut.c.ll
 ; faiss/optimized/sorting.cpp.ll
 ; git/optimized/apply.ll
@@ -13,6 +13,7 @@
 ; lightgbm/optimized/boosting.cpp.ll
 ; lightgbm/optimized/gbdt.cpp.ll
 ; linux/optimized/icl_dsi.ll
+; lvgl/optimized/lv_bar.ll
 ; minetest/optimized/touchscreengui.cpp.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll

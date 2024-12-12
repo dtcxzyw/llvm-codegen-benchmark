@@ -1,30 +1,30 @@
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	imulq	%rcx, %rsi
-	cmpq	%rdi, %rsi
-	seta	%al
-	retq
-func0000000000000088:                   # @func0000000000000088
-	imulq	%rcx, %rsi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	setb	%al
 	retq
-func00000000000001c4:                   # @func00000000000001c4
+func0000000000000108:                   # @func0000000000000108
 	imulq	%rcx, %rsi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
 	seta	%al
 	retq
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000384:                   # @func0000000000000384
 	imulq	%rcx, %rsi
-	cmpq	%rdi, %rsi
+	cmpq	%rsi, %rdi
+	setb	%al
+	retq
+func0000000000000184:                   # @func0000000000000184
+	imulq	%rcx, %rsi
+	cmpq	%rsi, %rdi
+	setb	%al
+	retq
+func0000000000000388:                   # @func0000000000000388
+	imulq	%rcx, %rsi
+	cmpq	%rsi, %rdi
 	seta	%al
 	retq
-func00000000000001c8:                   # @func00000000000001c8
+func0000000000000188:                   # @func0000000000000188
 	imulq	%rcx, %rsi
-	cmpq	%rdi, %rsi
-	setb	%al
-	retq
-func00000000000000c8:                   # @func00000000000000c8
-	imulq	%rcx, %rsi
-	cmpq	%rdi, %rsi
-	setb	%al
+	cmpq	%rsi, %rdi
+	seta	%al
 	retq

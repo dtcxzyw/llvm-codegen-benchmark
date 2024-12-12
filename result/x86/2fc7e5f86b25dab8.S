@@ -1,32 +1,39 @@
-func00000000000001d4:                   # @func00000000000001d4
+func00000000000003b4:                   # @func00000000000003b4
 	movzbl	%sil, %eax
 	shll	$8, %eax
 	leal	-8(%rax,%rdi), %eax
 	cmpl	$16, %eax
 	setb	%al
 	retq
-func00000000000001d8:                   # @func00000000000001d8
+func00000000000003a4:                   # @func00000000000003a4
+	movzbl	%sil, %eax
+	shll	$8, %eax
+	leal	-16(%rax,%rdi), %eax
+	cmpl	$16369, %eax                    # imm = 0x3FF1
+	setb	%al
+	retq
+func00000000000003b8:                   # @func00000000000003b8
 	movzbl	%sil, %eax
 	shll	$8, %eax
 	leal	-3(%rax,%rdi), %eax
 	cmpl	$-2, %eax
 	setb	%al
 	retq
-func00000000000001d1:                   # @func00000000000001d1
+func00000000000003a1:                   # @func00000000000003a1
 	movzbl	%sil, %eax
 	shll	$8, %eax
 	orl	%edi, %eax
 	cmpl	$1, %eax
 	sete	%al
 	retq
-func0000000000000144:                   # @func0000000000000144
+func0000000000000284:                   # @func0000000000000284
 	shll	$24, %esi
 	orl	%edi, %esi
 	addl	$-3, %esi
 	cmpl	$-2, %esi
 	setb	%al
 	retq
-func0000000000000194:                   # @func0000000000000194
+func0000000000000334:                   # @func0000000000000334
 	movzbl	%sil, %eax
 	shll	$8, %eax
 	orl	%edi, %eax
@@ -34,10 +41,17 @@ func0000000000000194:                   # @func0000000000000194
 	cmpl	$809, %eax                      # imm = 0x329
 	setb	%al
 	retq
-func00000000000001c4:                   # @func00000000000001c4
+func00000000000003a8:                   # @func00000000000003a8
 	movzbl	%sil, %eax
 	shll	$8, %eax
-	leal	-65537(%rax,%rdi), %eax
+	leal	-262165(%rax,%rdi), %eax
+	cmpl	$-262145, %eax                  # imm = 0xFFFBFFFF
+	setb	%al
+	retq
+func0000000000000384:                   # @func0000000000000384
+	movzbl	%sil, %eax
+	shll	$8, %eax
+	leal	-65537(%rdi,%rax), %eax
 	cmpl	$-65025, %eax                   # imm = 0xFFFF01FF
 	setb	%al
 	retq

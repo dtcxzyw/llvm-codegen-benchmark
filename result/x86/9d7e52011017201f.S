@@ -1,7 +1,7 @@
 func0000000000000015:                   # @func0000000000000015
 	notl	%edi
 	orl	$-2, %edi
-	leal	10(%rdi,%rsi), %eax
+	leal	10(%rsi,%rdi), %eax
 	retq
 func0000000000000022:                   # @func0000000000000022
 	notb	%dil
@@ -41,5 +41,5 @@ func0000000000000013:                   # @func0000000000000013
 	retq
 func0000000000000006:                   # @func0000000000000006
 	orl	$-2, %edi
-	leal	1(%rdi,%rsi), %eax
+	leal	1(%rsi,%rdi), %eax
 	retq

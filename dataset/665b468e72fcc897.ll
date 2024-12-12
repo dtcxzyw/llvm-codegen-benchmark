@@ -1,8 +1,11 @@
 
-; 30 occurrences:
+; 37 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; delta-rs/optimized/9v8xvedf69luuxb.ll
 ; eastl/optimized/TestBitset.cpp.ll
+; hermes/optimized/JSParserImpl-flow.cpp.ll
 ; hermes/optimized/JSParserImpl.cpp.ll
 ; llvm/optimized/AArch64GlobalISelUtils.cpp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
@@ -15,6 +18,7 @@
 ; mini-lsm-rs/optimized/4vkix0mjdn2idd4b.ll
 ; mini-lsm-rs/optimized/fxok0uwzlvxge5x.ll
 ; mitsuba3/optimized/string.cpp.ll
+; nix/optimized/fetchers.ll
 ; opencv/optimized/stereosgbm.cpp.ll
 ; openvdb/optimized/Diagnostics.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
@@ -30,6 +34,9 @@
 ; typst-rs/optimized/3dimj4rf5dyrieyi.ll
 ; wasmtime-rs/optimized/22yyfxyxsnty4v9s.ll
 ; wasmtime-rs/optimized/2ta8crc4qgl9bp8t.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/bktyyhuk5fekatq647qx0ox8v.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; Function Attrs: nounwind
 define { i64, i32 } @func0000000000000000(i1 %0, i64 %1) #0 {
 entry:

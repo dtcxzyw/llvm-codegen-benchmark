@@ -50,7 +50,7 @@
 ; zxing/optimized/BitMatrix.cpp.ll
 ; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 4294967296
   %3 = ashr exact i64 %2, 32
@@ -109,7 +109,7 @@ entry:
 ; zxing/optimized/BitMatrix.cpp.ll
 ; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 4294967296
   %3 = ashr exact i64 %2, 32
@@ -117,23 +117,10 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
-; openjdk/optimized/stringopts.ll
-; recastnavigation/optimized/RecastContour.cpp.ll
-; recastnavigation/optimized/RecastMeshDetail.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
-entry:
-  %2 = add i64 %1, 4294967296
-  %3 = ashr exact i64 %2, 32
-  %4 = icmp slt i64 %3, %0
-  ret i1 %4
-}
-
 ; 1 occurrences:
 ; c3c/optimized/sema_passes.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -8589934592
   %3 = ashr exact i64 %2, 32
@@ -171,6 +158,18 @@ entry:
   ret i1 %4
 }
 
+; 2 occurrences:
+; recastnavigation/optimized/RecastContour.cpp.ll
+; recastnavigation/optimized/RecastMeshDetail.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %1, 17179869184
+  %3 = ashr exact i64 %2, 32
+  %4 = icmp slt i64 %3, %0
+  ret i1 %4
+}
+
 ; 5 occurrences:
 ; ceres/optimized/polynomial.cc.ll
 ; icu/optimized/ucbuf.ll
@@ -178,7 +177,7 @@ entry:
 ; recastnavigation/optimized/RecastContour.cpp.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 17179869184
   %3 = ashr exact i64 %2, 32
@@ -191,7 +190,7 @@ entry:
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000006a(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -4294967296
   %3 = ashr exact i64 %2, 32
@@ -228,7 +227,7 @@ entry:
 ; freetype/optimized/pcf.c.ll
 ; freetype/optimized/winfnt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 32
   %3 = ashr i64 %2, 6
@@ -249,7 +248,7 @@ entry:
 ; eastl/optimized/TestSort.cpp.ll
 ; eastl/optimized/TestVariant.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000004a(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = ashr i64 %2, 1
@@ -266,7 +265,7 @@ entry:
 ; eastl/optimized/TestHeap.cpp.ll
 ; eastl/optimized/TestSort.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000046(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = ashr i64 %2, 1

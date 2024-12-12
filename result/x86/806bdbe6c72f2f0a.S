@@ -5,12 +5,6 @@ func000000000000001a:                   # @func000000000000001a
 	shlq	$5, %rax
 	addq	%rcx, %rax
 	retq
-func0000000000000012:                   # @func0000000000000012
-	movslq	%edx, %rax
-	leaq	(%rdi,%rax,4), %rax
-	movslq	%esi, %rcx
-	leaq	(%rax,%rcx,4), %rax
-	retq
 func0000000000000018:                   # @func0000000000000018
 	movslq	%edx, %rax
 	leaq	(%rdi,%rax,4), %rax

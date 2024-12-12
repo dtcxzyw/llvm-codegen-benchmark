@@ -3,8 +3,8 @@ func000000000000001f:                   # @func000000000000001f
 	leal	32(,%rdi,4), %eax
 	retq
 func000000000000001b:                   # @func000000000000001b
-	andl	$31, %edi
-	leal	-4(,%rdi,4), %eax
+	movzbl	%dil, %eax
+	leal	-48(,%rax,8), %eax
 	retq
 func000000000000001c:                   # @func000000000000001c
 	andl	$-8, %edi

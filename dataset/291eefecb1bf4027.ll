@@ -1,9 +1,10 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; abc/optimized/giaTtopt.cpp.ll
 ; draco/optimized/float_points_tree_decoder.cc.ll
 ; draco/optimized/kd_tree_attributes_decoder.cc.ll
 ; libjpeg-turbo/optimized/jchuff.c.ll
+; oiio/optimized/rlainput.cpp.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; Function Attrs: nounwind

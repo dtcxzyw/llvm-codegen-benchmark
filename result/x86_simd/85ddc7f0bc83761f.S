@@ -34,7 +34,7 @@
 	.byte	30                              # 0x1e
 func0000000000000007:                   # @func0000000000000007
 	vpmovdw	%ymm2, %xmm2
-	vpor	%xmm1, %xmm2, %xmm2
+	vpor	%xmm2, %xmm1, %xmm2
 	vpmovsxbw	.LCPI0_1(%rip), %ymm1   # ymm1 = [0,16,1,18,2,20,3,22,4,24,5,26,6,28,7,30]
 	vpermi2w	%ymm0, %ymm2, %ymm1
 	vmovdqa	%ymm1, %ymm0

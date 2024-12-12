@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 17 occurrences:
 ; libwebp/optimized/sharpyuv_gamma.c.ll
 ; minetest/optimized/client.cpp.ll
 ; wireshark/optimized/packet-acdr.c.ll
@@ -8,7 +8,6 @@
 ; wireshark/optimized/packet-f1ap.c.ll
 ; wireshark/optimized/packet-geonw.c.ll
 ; wireshark/optimized/packet-gryphon.c.ll
-; wireshark/optimized/packet-gsm_r_uus1.c.ll
 ; wireshark/optimized/packet-gtpv2.c.ll
 ; wireshark/optimized/packet-homeplug.c.ll
 ; wireshark/optimized/packet-lte-rrc.c.ll
@@ -17,7 +16,6 @@
 ; wireshark/optimized/packet-ngap.c.ll
 ; wireshark/optimized/packet-nr-rrc.c.ll
 ; wireshark/optimized/packet-s1ap.c.ll
-; wireshark/optimized/packet-x2ap.c.ll
 ; wireshark/optimized/packet-xnap.c.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(i32 %0) #0 {

@@ -1,9 +1,9 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	subl	%edx, %esi
 	addl	%esi, %edi
 	sete	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	subl	%edx, %esi
 	addl	%esi, %edi
 	testl	$-4, %edi
@@ -21,12 +21,12 @@ func0000000000000001:                   # @func0000000000000001
 	testb	$1, %dil
 	sete	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	subl	%edx, %esi
 	addw	%si, %di
 	setns	%al
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	subq	%rdx, %rsi
 	addq	%rdi, %rsi
 	movabsq	$-9223372036854775808, %rax     # imm = 0x8000000000000000
@@ -35,7 +35,7 @@ func0000000000000048:                   # @func0000000000000048
 	cmpq	%rax, %rcx
 	seta	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	subq	%rdx, %rsi
 	addq	%rdi, %rsi
 	movabsq	$-9223372036854775808, %rax     # imm = 0x8000000000000000
@@ -44,7 +44,7 @@ func0000000000000018:                   # @func0000000000000018
 	cmpq	%rax, %rcx
 	seta	%al
 	retq
-func0000000000000058:                   # @func0000000000000058
+func00000000000000b8:                   # @func00000000000000b8
 	subl	%edx, %esi
 	addl	%esi, %edi
 	movzwl	%di, %eax

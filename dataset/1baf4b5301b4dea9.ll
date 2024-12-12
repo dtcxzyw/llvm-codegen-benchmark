@@ -1,13 +1,11 @@
 
-; 3 occurrences:
-; linux/optimized/printk.ll
+; 1 occurrences:
 ; qemu/optimized/hw_sd_sdhci.c.ll
-; wireshark/optimized/packet-qnet6.c.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000014(i16 %0, i16 %1, i32 %2) #0 {
+define i16 @func0000000000000024(i16 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i16 %1 to i32
-  %4 = icmp ugt i32 %3, %2
+  %4 = icmp ult i32 %2, %3
   %5 = select i1 %4, i16 %0, i16 %1
   ret i16 %5
 }
@@ -22,21 +20,43 @@ entry:
 define i16 @func0000000000000006(i16 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = zext i16 %1 to i32
-  %4 = icmp sgt i32 %3, %2
+  %4 = icmp slt i32 %2, %3
   %5 = select i1 %4, i16 %0, i16 %1
   ret i16 %5
 }
 
-; 4 occurrences:
+; 2 occurrences:
 ; recastnavigation/optimized/RecastRegion.cpp.ll
-; wireshark/optimized/packet-moldudp.c.ll
 ; wireshark/optimized/packet-qnet6.c.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000014(i16 %0, i16 %1, i32 %2) #0 {
+entry:
+  %3 = zext i16 %1 to i32
+  %4 = icmp samesign ult i32 %2, %3
+  %5 = select i1 %4, i16 %0, i16 %1
+  ret i16 %5
+}
+
+; 2 occurrences:
+; linux/optimized/printk.ll
+; wireshark/optimized/packet-qnet6.c.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000034(i16 %0, i16 %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i16 %1 to i32
+  %4 = icmp samesign ult i32 %2, %3
+  %5 = select i1 %4, i16 %0, i16 %1
+  ret i16 %5
+}
+
+; 2 occurrences:
+; wireshark/optimized/packet-moldudp.c.ll
 ; wireshark/optimized/packet-s7comm.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000004(i16 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = zext i16 %1 to i32
-  %4 = icmp ugt i32 %3, %2
+  %4 = icmp ult i32 %2, %3
   %5 = select i1 %4, i16 %0, i16 %1
   ret i16 %5
 }

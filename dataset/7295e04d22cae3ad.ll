@@ -1,5 +1,5 @@
 
-%"union.std::aligned_storage<8, 8>::type.2568893" = type { [8 x i8] }
+%"union.std::aligned_storage<8, 8>::type.2683267" = type { [8 x i8] }
 
 ; 44 occurrences:
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
@@ -47,11 +47,11 @@
 ; velox/optimized/UnsafeRowSerializer.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000000a(ptr %0, i64 %1) #0 {
+define i64 @func000000000000000e(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -1
-  %3 = getelementptr nusw i8, ptr %0, i64 16
-  %4 = getelementptr nusw [14 x %"union.std::aligned_storage<8, 8>::type.2568893"], ptr %3, i64 0, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 16
+  %4 = getelementptr nusw [14 x %"union.std::aligned_storage<8, 8>::type.2683267"], ptr %3, i64 0, i64 %2
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }

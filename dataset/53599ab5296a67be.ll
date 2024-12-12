@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; linux/optimized/drm_edid.ll
 ; llvm/optimized/X86MCInstLower.cpp.ll
@@ -9,6 +9,7 @@
 ; opencv/optimized/dxt.cpp.ll
 ; openjdk/optimized/logFileOutput.ll
 ; openusd/optimized/rigidBodyAPI.cpp.ll
+; postgres/optimized/oracle_compat.ll
 ; wireshark/optimized/packet-ospf.c.ll
 ; wireshark/optimized/packet-rtmpt.c.ll
 ; Function Attrs: nounwind

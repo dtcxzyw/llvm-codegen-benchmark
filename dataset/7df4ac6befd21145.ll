@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ec(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001cc(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 64, %1
   %3 = zext nneg i32 %2 to i64
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e1(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001c1(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 64, %1
   %3 = zext nneg i32 %2 to i64
@@ -38,7 +38,7 @@ entry:
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; openjdk/optimized/compressedOops.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000c1(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 32, %1
   %3 = zext nneg i32 %2 to i64
@@ -51,7 +51,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/compressedOops.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000cc(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 32, %1
   %3 = zext nneg i32 %2 to i64
@@ -69,7 +69,7 @@ entry:
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
 ; llvm/optimized/AArch64MIPeepholeOpt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 64, %1
   %3 = zext nneg i32 %2 to i64
@@ -82,7 +82,7 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/mpz.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e4(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001c4(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 64, %1
   %3 = zext nneg i32 %2 to i64

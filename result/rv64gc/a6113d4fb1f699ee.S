@@ -1,4 +1,4 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	beqz	a1, .LBB0_2
 	addi	a0, a2, 16
 .LBB0_2:                                # %entry
@@ -15,33 +15,32 @@ func0000000000000008:                   # @func0000000000000008
 	addi	a0, a2, 32
 .LBB2_2:                                # %entry
 	ret
-func0000000000000011:                   # @func0000000000000011
-	beqz	a1, .LBB3_2
-	addi	a0, a2, 8
-.LBB3_2:                                # %entry
-	ret
-func0000000000000026:                   # @func0000000000000026
-	bltz	a1, .LBB4_2
+func0000000000000046:                   # @func0000000000000046
+	bltz	a1, .LBB3_2
 	li	a0, -1
 	srli	a0, a0, 1
 	add	a0, a0, a2
-.LBB4_2:                                # %entry
+.LBB3_2:                                # %entry
 	ret
 func0000000000000021:                   # @func0000000000000021
-	beqz	a1, .LBB5_2
-	addi	a0, a2, 8
-.LBB5_2:                                # %entry
+	beqz	a1, .LBB4_2
+	addi	a0, a2, 1
+.LBB4_2:                                # %entry
 	ret
-func0000000000000034:                   # @func0000000000000034
-	li	a3, 1022
-	bltu	a1, a3, .LBB6_2
+func000000000000000c:                   # @func000000000000000c
+	bnez	a1, .LBB5_2
 	addi	a0, a2, 2
-.LBB6_2:                                # %entry
+.LBB5_2:                                # %entry
 	ret
 func0000000000000004:                   # @func0000000000000004
 	li	a3, 4
-	bltu	a1, a3, .LBB7_2
+	bltu	a1, a3, .LBB6_2
 	addi	a0, a2, 4
+.LBB6_2:                                # %entry
+	ret
+func0000000000000041:                   # @func0000000000000041
+	beqz	a1, .LBB7_2
+	addi	a0, a2, 8
 .LBB7_2:                                # %entry
 	ret
 func0000000000000006:                   # @func0000000000000006
@@ -56,8 +55,14 @@ func000000000000000a:                   # @func000000000000000a
 	add	a0, a0, a2
 .LBB9_2:                                # %entry
 	ret
-func000000000000002a:                   # @func000000000000002a
-	bgtz	a1, .LBB10_2
-	addi	a0, a2, 1
+func0000000000000024:                   # @func0000000000000024
+	li	a3, 2
+	bltu	a1, a3, .LBB10_2
+	addi	a0, a2, 1000
 .LBB10_2:                               # %entry
+	ret
+func000000000000004a:                   # @func000000000000004a
+	bgtz	a1, .LBB11_2
+	addi	a0, a2, 1
+.LBB11_2:                               # %entry
 	ret

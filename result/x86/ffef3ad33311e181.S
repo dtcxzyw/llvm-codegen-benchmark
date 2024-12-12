@@ -15,18 +15,18 @@ func0000000000000006:                   # @func0000000000000006
 	notb	%dil
 	andb	%dil, %al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	addq	%rdx, %rsi
 	setns	%al
 	notb	%dil
 	andb	%dil, %al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	addq	%rdx, %rsi
 	sets	%al
 	orb	%dil, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	addq	%rdx, %rsi
 	sete	%al
 	orb	%dil, %al

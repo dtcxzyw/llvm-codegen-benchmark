@@ -1,7 +1,7 @@
 
-%struct.ml_effect_state.3343863 = type { ptr, i64, i32, i64, i64, i64 }
+%struct.ml_effect_state.3532716 = type { ptr, i64, i32, i64, i64, i64 }
 
-; 31 occurrences:
+; 33 occurrences:
 ; abc/optimized/ivyCutTrav.c.ll
 ; arrow/optimized/bignum.cc.ll
 ; clamav/optimized/unarj.c.ll
@@ -32,25 +32,15 @@
 ; meshlab/optimized/seam_remover.cpp.ll
 ; meshlab/optimized/shell.cpp.ll
 ; nuklear/optimized/unity.c.ll
-; sqlite/optimized/sqlite3.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i16 %1) #0 {
-entry:
-  %2 = sext i16 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 4
-  %4 = getelementptr nusw [128 x i32], ptr %3, i64 0, i64 %2
-  ret ptr %4
-}
-
-; 2 occurrences:
 ; openusd/optimized/bignum.cc.ll
 ; openusd/optimized/decodemv.c.ll
+; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000e(ptr %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
-  %3 = getelementptr nusw nuw i8, ptr %0, i64 8192
-  %4 = getelementptr nusw [8 x [9 x i16]], ptr %3, i64 0, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 4
+  %4 = getelementptr nusw [128 x i32], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 
@@ -62,11 +52,11 @@ entry:
 ; postgres/optimized/regcomp.ll
 ; postgres/optimized/selfuncs.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i16 %1) #0 {
+define ptr @func000000000000000c(ptr %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 8
-  %4 = getelementptr [16 x %struct.ml_effect_state.3343863], ptr %3, i64 0, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 8
+  %4 = getelementptr [16 x %struct.ml_effect_state.3532716], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 

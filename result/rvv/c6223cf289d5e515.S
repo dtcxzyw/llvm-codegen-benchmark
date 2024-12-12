@@ -1,4 +1,4 @@
-func0000000000000218:                   # @func0000000000000218
+func0000000000000c38:                   # @func0000000000000c38
 	lui	a0, 16
 	addiw	a0, a0, -16
 	vsetivli	zero, 4, e64, m2, ta, mu

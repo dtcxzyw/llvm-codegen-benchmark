@@ -52,7 +52,7 @@
 .LCPI0_3:
 	.short	65519                           # 0xffef
 	.short	65519                           # 0xffef
-func0000000000000042:                   # @func0000000000000042
+func0000000000000082:                   # @func0000000000000082
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
 	vpandd	.LCPI0_3(%rip){1to8}, %ymm0, %ymm1
@@ -135,7 +135,7 @@ func0000000000000042:                   # @func0000000000000042
 	.byte	255                             # 0xff
 	.byte	0                               # 0x0
 	.byte	255                             # 0xff
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	vpsllw	$7, %xmm1, %xmm1
 	vpmovb2m	%xmm1, %k0
 	vpandd	.LCPI1_3(%rip){1to8}, %ymm0, %ymm1

@@ -1,5 +1,5 @@
 func0000000000000002:                   # @func0000000000000002
-	vminsd	%xmm1, %xmm0, %xmm0
+	vmaxsd	%xmm1, %xmm0, %xmm0
 	vmulsd	%xmm0, %xmm0, %xmm0
 	retq
 func000000000000000c:                   # @func000000000000000c

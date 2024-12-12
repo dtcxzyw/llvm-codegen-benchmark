@@ -1,5 +1,6 @@
 
-; 97 occurrences:
+; 98 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
 ; fmt/optimized/header-only-test.cc.ll
@@ -104,11 +105,12 @@ entry:
   %4 = zext nneg i32 %3 to i64
   %5 = lshr i64 %1, %4
   %6 = trunc i64 %5 to i32
-  %7 = xor i32 %6, %0
+  %7 = xor i32 %0, %6
   ret i32 %7
 }
 
-; 97 occurrences:
+; 98 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
 ; fmt/optimized/header-only-test.cc.ll
@@ -213,7 +215,7 @@ entry:
   %4 = zext nneg i32 %3 to i64
   %5 = lshr i64 %1, %4
   %6 = trunc i64 %5 to i32
-  %7 = xor i32 %6, %0
+  %7 = xor i32 %0, %6
   ret i32 %7
 }
 

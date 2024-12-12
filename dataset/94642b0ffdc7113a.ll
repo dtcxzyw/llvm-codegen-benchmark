@@ -1,5 +1,5 @@
 
-; 31 occurrences:
+; 32 occurrences:
 ; coreutils-rs/optimized/2l6nxvvz97tcra6u.ll
 ; delta-rs/optimized/4say4x9grcidoih4.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
@@ -27,10 +27,11 @@
 ; proxygen/optimized/HTTPConnectorWithFizz.cpp.ll
 ; qemu/optimized/block_vvfat.c.ll
 ; rustfmt-rs/optimized/s8gyre8ye3tvwam.ll
-; tokenizers-rs/optimized/58hth72z9dib25am.ll
 ; velox/optimized/ConjunctExpr.cpp.ll
 ; wireshark/optimized/packet-nasdaq-itch.c.ll
 ; yosys/optimized/hierarchy.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/b0ehx4vbxawrtril1zkysl0b6.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i8 %0, ptr %1) #0 {
 entry:

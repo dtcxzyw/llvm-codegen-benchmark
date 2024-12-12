@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 26 occurrences:
 ; clamav/optimized/dlp.c.ll
 ; folly/optimized/json.cpp.ll
 ; git/optimized/diff.ll
@@ -22,6 +22,7 @@
 ; openssl/optimized/libdefault-lib-pkcs12kdf.ll
 ; openusd/optimized/cfl.c.ll
 ; openusd/optimized/scale_common.c.ll
+; postgres/optimized/trigger.ll
 ; wireshark/optimized/packet-packetbb.c.ll
 ; wireshark/optimized/packet-tibia.c.ll
 ; wolfssl/optimized/random.c.ll
@@ -33,7 +34,7 @@ entry:
   ret i16 %4
 }
 
-; 77 occurrences:
+; 80 occurrences:
 ; arrow/optimized/float16.cc.ll
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/unpack.cpp.ll
@@ -69,6 +70,8 @@ entry:
 ; linux/optimized/vlv_dsi.ll
 ; linux/optimized/xfrm_input.ll
 ; linux/optimized/xt_TCPMSS.ll
+; lvgl/optimized/lv_ime_pinyin.ll
+; lvgl/optimized/lv_math.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/content_mapblock.cpp.ll
@@ -105,12 +108,13 @@ entry:
 ; spike/optimized/vadc_vxm.ll
 ; sqlite/optimized/sqlite3.ll
 ; stockfish/optimized/search.ll
-; wireshark/optimized/dot11decrypt_tkip.c.ll
 ; wireshark/optimized/packet-homeplug-av.c.ll
 ; wireshark/optimized/packet-pn-rtc-one.c.ll
 ; wireshark/optimized/packet-reload.c.ll
 ; wireshark/optimized/packet-smb.c.ll
 ; wireshark/optimized/packet-wai.c.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i16 %0, i16 %1, i16 %2) #0 {
 entry:
@@ -119,11 +123,14 @@ entry:
   ret i16 %4
 }
 
-; 4 occurrences:
+; 7 occurrences:
 ; abc/optimized/exorList.c.ll
 ; linux/optimized/skl_watermark.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; spike/optimized/vadc_vim.ll
 ; wireshark/optimized/packet-wai.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000000c(i16 %0, i16 %1, i16 %2) #0 {
 entry:
@@ -156,7 +163,8 @@ entry:
   ret i16 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/text_file_backend.ll
 ; clamav/optimized/dlp.c.ll
 ; icu/optimized/simpletz.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
@@ -165,7 +173,18 @@ entry:
 define i16 @func0000000000000005(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = add nsw i16 %1, %2
-  %4 = add nsw i16 %3, %0
+  %4 = add nsw i16 %0, %3
+  ret i16 %4
+}
+
+; 2 occurrences:
+; lvgl/optimized/lv_color.ll
+; opencv/optimized/smooth.dispatch.cpp.ll
+; Function Attrs: nounwind
+define i16 @func000000000000000e(i16 %0, i16 %1, i16 %2) #0 {
+entry:
+  %3 = add nuw nsw i16 %1, %2
+  %4 = add nuw i16 %3, %0
   ret i16 %4
 }
 
@@ -187,16 +206,6 @@ define i16 @func000000000000000d(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = add nuw nsw i16 %1, %2
   %4 = add nsw i16 %3, %0
-  ret i16 %4
-}
-
-; 1 occurrences:
-; opencv/optimized/smooth.dispatch.cpp.ll
-; Function Attrs: nounwind
-define i16 @func000000000000000e(i16 %0, i16 %1, i16 %2) #0 {
-entry:
-  %3 = add nuw nsw i16 %1, %2
-  %4 = add nuw i16 %3, %0
   ret i16 %4
 }
 

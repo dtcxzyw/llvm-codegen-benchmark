@@ -79,7 +79,7 @@ func000000000000003f:                   # @func000000000000003f
 	retq
 func0000000000000002:                   # @func0000000000000002
 	movq	%rdi, %rax
-	shlq	$6, %rdx
+	shlq	$4, %rdx
 	addq	%rsi, %rdx
 	subq	%rdx, %rax
 	retq

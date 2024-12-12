@@ -7,6 +7,3 @@ func000000000000000c:                   # @func000000000000000c
 func0000000000000008:                   # @func0000000000000008
 	shlxl	%edi, %esi, %eax
 	retq
-func000000000000001c:                   # @func000000000000001c
-	shlxl	%edi, %esi, %eax
-	retq

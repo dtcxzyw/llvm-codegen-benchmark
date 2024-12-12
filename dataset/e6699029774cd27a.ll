@@ -25,7 +25,7 @@
 ; proj/optimized/grids.cpp.ll
 ; zxing/optimized/PDFModulusGF.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000064(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = sext i32 %2 to i64
@@ -59,7 +59,7 @@ entry:
 ; proj/optimized/grids.cpp.ll
 ; zxing/optimized/PDFModulusGF.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000068(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = sext i32 %2 to i64
@@ -74,7 +74,7 @@ entry:
 ; openusd/optimized/quadRefinement.cpp.ll
 ; openusd/optimized/triRefinement.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 2
   %3 = sext i32 %2 to i64
@@ -83,12 +83,11 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
-; opencv/optimized/cap_mjpeg_encoder.cpp.ll
+; 2 occurrences:
 ; openusd/optimized/quadRefinement.cpp.ll
 ; openusd/optimized/triRefinement.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 1
   %3 = sext i32 %2 to i64
@@ -101,12 +100,24 @@ entry:
 ; openspiel/optimized/stones_and_gems.cc.ll
 ; openspiel/optimized/tiny_hanabi.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = sext i32 %2 to i64
   %4 = ashr exact i64 %0, 5
   %5 = icmp eq i64 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; opencv/optimized/cap_mjpeg_encoder.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i64 %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 1
+  %3 = sext i32 %2 to i64
+  %4 = ashr exact i64 %0, 2
+  %5 = icmp samesign ugt i64 %4, %3
   ret i1 %5
 }
 

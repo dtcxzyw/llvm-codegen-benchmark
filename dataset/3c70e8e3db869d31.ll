@@ -1,4 +1,17 @@
 
+; 3 occurrences:
+; llvm/optimized/LegalizerHelper.cpp.ll
+; opencv/optimized/testset.cpp.ll
+; slurm/optimized/gres_filter.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000d(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = mul nuw nsw i32 %1, %2
+  %4 = udiv i32 %3, %0
+  %5 = zext nneg i32 %4 to i64
+  ret i64 %5
+}
+
 ; 4 occurrences:
 ; linux/optimized/tsc.ll
 ; llvm/optimized/CGBuiltin.cpp.ll

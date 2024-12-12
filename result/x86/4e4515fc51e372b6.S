@@ -19,12 +19,14 @@ func0000000000000022:                   # @func0000000000000022
 	seta	%al
 	andb	%dil, %al
 	retq
-func000000000000002e:                   # @func000000000000002e
+.LCPI2_0:
+	.quad	0x3ff0000000000000              # double 1
+func0000000000000024:                   # @func0000000000000024
 	vxorpd	%xmm2, %xmm2, %xmm2
 	vcmpltsd	%xmm2, %xmm1, %k1
 	vmovsd	%xmm0, %xmm1, %xmm1 {%k1}
-	vucomisd	%xmm1, %xmm1
-	setnp	%al
+	vucomisd	.LCPI2_0(%rip), %xmm1
+	seta	%al
 	andb	%dil, %al
 	retq
 .LCPI3_0:

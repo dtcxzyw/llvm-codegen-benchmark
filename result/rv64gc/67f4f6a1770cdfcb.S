@@ -11,12 +11,12 @@ func0000000000000010:                   # @func0000000000000010
 	slli	a2, a4, 32
 	beq	a3, a4, .LBB1_2
 	addi	a2, a2, -88
-	mul	a1, a2, a1
+	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
 .LBB1_2:
 	addi	a2, a2, -98
-	mul	a1, a2, a1
+	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
 func00000000000000ad:                   # @func00000000000000ad

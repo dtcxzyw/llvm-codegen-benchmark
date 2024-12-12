@@ -1,7 +1,8 @@
 
-; 566 occurrences:
+; 563 occurrences:
 ; abseil-cpp/optimized/raw_hash_set.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/basic_iarchive.ll
 ; clamav/optimized/hash.cpp.ll
 ; cpython/optimized/obmalloc.ll
 ; eastl/optimized/BenchmarkTupleVector.cpp.ll
@@ -92,14 +93,12 @@
 ; linux/optimized/blktrace.ll
 ; linux/optimized/build_utility.ll
 ; linux/optimized/compaction.ll
-; linux/optimized/cpuidle-haltpoll.ll
 ; linux/optimized/crash_core.ll
 ; linux/optimized/dm-stats.ll
 ; linux/optimized/dm.ll
 ; linux/optimized/dma-iommu.ll
 ; linux/optimized/dmaengine.ll
 ; linux/optimized/dst.ll
-; linux/optimized/dst_cache.ll
 ; linux/optimized/exec.ll
 ; linux/optimized/fib_semantics.ll
 ; linux/optimized/forcedeth.ll
@@ -107,7 +106,6 @@
 ; linux/optimized/gen_stats.ll
 ; linux/optimized/genhd.ll
 ; linux/optimized/gro_cells.ll
-; linux/optimized/head64.ll
 ; linux/optimized/insn-eval.ll
 ; linux/optimized/ioremap.ll
 ; linux/optimized/iova.ll
@@ -116,7 +114,6 @@
 ; linux/optimized/jump_label.ll
 ; linux/optimized/kexec_core.ll
 ; linux/optimized/kyber-iosched.ll
-; linux/optimized/loopback.ll
 ; linux/optimized/main.ll
 ; linux/optimized/matrix.ll
 ; linux/optimized/mballoc.ll
@@ -142,7 +139,6 @@
 ; linux/optimized/sbitmap.ll
 ; linux/optimized/sch_api.ll
 ; linux/optimized/sch_generic.ll
-; linux/optimized/sch_mq.ll
 ; linux/optimized/seq_file.ll
 ; linux/optimized/shmem.ll
 ; linux/optimized/show_mem.ll
@@ -153,7 +149,6 @@
 ; linux/optimized/static_call_inline.ll
 ; linux/optimized/sysfs.ll
 ; linux/optimized/timer.ll
-; linux/optimized/trace_event_perf.ll
 ; linux/optimized/trace_events.ll
 ; linux/optimized/trace_kprobe.ll
 ; linux/optimized/trace_output.ll
@@ -205,6 +200,7 @@
 ; llvm/optimized/XCOFFObjectFile.cpp.ll
 ; llvm/optimized/YAMLParser.cpp.ll
 ; llvm/optimized/YAMLTraits.cpp.ll
+; lvgl/optimized/lv_tlsf.ll
 ; meilisearch-rs/optimized/4rynht2gwvphprvy.ll
 ; memcached/optimized/memcached-restart.ll
 ; memcached/optimized/memcached_debug-restart.ll
@@ -529,7 +525,6 @@
 ; openmpi/optimized/smsc_cma_module.ll
 ; openmpi/optimized/vprotocol_pessimist_eventlog.ll
 ; openmpi/optimized/vprotocol_pessimist_recv.ll
-; openmpi/optimized/vprotocol_pessimist_request.ll
 ; openmpi/optimized/vprotocol_pessimist_send.ll
 ; openmpi/optimized/vprotocol_pessimist_wait.ll
 ; openusd/optimized/fileSystem.cpp.ll
@@ -566,11 +561,13 @@
 ; wasmedge/optimized/module.cpp.ll
 ; wasmtime-rs/optimized/3vdx8w41hjyzioqv.ll
 ; wasmtime-rs/optimized/44b2uzewkuf2yts2.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
+; zed-rs/optimized/avfqkgc3wosoc0eacq6zrtrq5.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = inttoptr i64 %3 to ptr
   ret ptr %4
 }
@@ -830,7 +827,7 @@ entry:
 define ptr @func0000000000000001(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = inttoptr i64 %3 to ptr
   ret ptr %4
 }
@@ -842,7 +839,7 @@ entry:
 define ptr @func0000000000000002(i64 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   %4 = inttoptr i64 %3 to ptr
   ret ptr %4
 }

@@ -1,47 +1,47 @@
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	movl	%edx, %eax
-	cmpq	%rsi, %rax
-	setae	%cl
+	cmpq	%rax, %rsi
+	setbe	%cl
 	testq	%rdi, %rdi
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000111:                   # @func0000000000000111
+func0000000000000421:                   # @func0000000000000421
 	movl	%edx, %eax
-	cmpq	%rsi, %rax
+	cmpq	%rax, %rsi
 	sete	%cl
 	testq	%rdi, %rdi
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movl	%edx, %eax
-	cmpq	%rsi, %rax
+	cmpq	%rax, %rsi
 	sete	%cl
 	testq	%rdi, %rdi
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	movl	%edx, %eax
-	cmpq	%rsi, %rax
-	seta	%cl
-	testq	%rdi, %rdi
-	sete	%al
-	orb	%cl, %al
-	retq
-func00000000000001a1:                   # @func00000000000001a1
-	movl	%edx, %eax
-	cmpq	%rsi, %rax
-	setl	%cl
-	testq	%rdi, %rdi
-	sete	%al
-	orb	%cl, %al
-	retq
-func0000000000000181:                   # @func0000000000000181
-	movl	%edx, %eax
-	cmpq	%rsi, %rax
+	cmpq	%rax, %rsi
 	setb	%cl
+	testq	%rdi, %rdi
+	sete	%al
+	orb	%cl, %al
+	retq
+func0000000000000541:                   # @func0000000000000541
+	movl	%edx, %eax
+	cmpq	%rax, %rsi
+	setg	%cl
+	testq	%rdi, %rdi
+	sete	%al
+	orb	%cl, %al
+	retq
+func0000000000000501:                   # @func0000000000000501
+	movl	%edx, %eax
+	cmpq	%rax, %rsi
+	seta	%cl
 	testq	%rdi, %rdi
 	sete	%al
 	orb	%cl, %al

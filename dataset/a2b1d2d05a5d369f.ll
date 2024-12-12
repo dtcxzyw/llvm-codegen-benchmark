@@ -12,7 +12,7 @@
 ; opencv/optimized/brisk.cpp.ll
 ; opencv/optimized/infer_ssd_onnx.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, float %1) #0 {
+define i1 @func000000000000002a(i32 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
   %3 = add nsw i32 %0, -1
@@ -20,7 +20,7 @@ entry:
   ret i1 %4
 }
 
-; 25 occurrences:
+; 26 occurrences:
 ; abc/optimized/timMan.c.ll
 ; bullet3/optimized/b3PgsJacobiSolver.ll
 ; darktable/optimized/introspection_colorequal.c.ll
@@ -30,6 +30,7 @@ entry:
 ; gromacs/optimized/freevolume.cpp.ll
 ; gromacs/optimized/gmx_sham.cpp.ll
 ; gromacs/optimized/sfactor.cpp.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; meshlab/optimized/texture_object.cpp.ll
 ; ncnn/optimized/roialign.cpp.ll
@@ -47,7 +48,7 @@ entry:
 ; pbrt-v4/optimized/noise.cpp.ll
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, float %1) #0 {
+define i1 @func0000000000000061(i32 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
   %3 = add nuw nsw i32 %0, 1
@@ -58,7 +59,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_lut3d.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, float %1) #0 {
+define i1 @func0000000000000026(i32 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
   %3 = add nsw i32 %0, -2
@@ -71,11 +72,22 @@ entry:
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; opencv/optimized/dis_flow.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, float %1) #0 {
+define i1 @func0000000000000066(i32 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
   %3 = add nuw nsw i32 %0, 1
   %4 = icmp slt i32 %3, %2
+  ret i1 %4
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_draw_arc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000021(i32 %0, float %1) #0 {
+entry:
+  %2 = fptosi float %1 to i32
+  %3 = add nsw i32 %0, 360
+  %4 = icmp eq i32 %3, %2
   ret i1 %4
 }
 
@@ -95,7 +107,7 @@ entry:
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; opencv/optimized/fed.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i32 %0, float %1) #0 {
+define i1 @func000000000000006a(i32 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
   %3 = add nuw nsw i32 %0, 2
@@ -117,7 +129,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/optflowgf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, float %1) #0 {
+define i1 @func0000000000000028(i32 %0, float %1) #0 {
 entry:
   %2 = fptosi float %1 to i32
   %3 = add nsw i32 %0, -1

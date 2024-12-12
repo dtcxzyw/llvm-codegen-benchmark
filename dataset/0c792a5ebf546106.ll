@@ -1,14 +1,13 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; cmake/optimized/url.c.ll
 ; curl/optimized/libcurl_la-url.ll
-; git/optimized/diff.ll
 ; icu/optimized/rulebasedcollator.ll
 ; libevent/optimized/http.c.ll
 ; libzmq/optimized/mtrie.cpp.ll
 ; openjdk/optimized/classFileParser.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i16 %1) #0 {
+define i1 @func0000000000000021(ptr %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %1, 0
   %3 = icmp eq ptr %0, null
@@ -32,7 +31,7 @@ entry:
 ; wireshark/optimized/packet-smb-pipe.c.ll
 ; wireshark/optimized/packet-tls.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, i16 %1) #0 {
+define i1 @func000000000000018c(ptr %0, i16 %1) #0 {
 entry:
   %2 = icmp ne i16 %1, 0
   %3 = icmp ne ptr %0, null
@@ -59,10 +58,21 @@ entry:
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; wireshark/optimized/packet-opa-mad.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i16 %1) #0 {
+define i1 @func000000000000002c(ptr %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %1, 0
   %3 = icmp ne ptr %0, null
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
+}
+
+; 1 occurrences:
+; git/optimized/diff.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000c1(ptr %0, i16 %1) #0 {
+entry:
+  %2 = icmp slt i16 %1, -28672
+  %3 = icmp eq ptr %0, null
   %4 = select i1 %3, i1 %2, i1 false
   ret i1 %4
 }
@@ -71,7 +81,7 @@ entry:
 ; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/DeclCXX.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(ptr %0, i16 %1) #0 {
+define i1 @func000000000000008c(ptr %0, i16 %1) #0 {
 entry:
   %2 = icmp ult i16 %1, 8192
   %3 = icmp ne ptr %0, null
@@ -83,7 +93,7 @@ entry:
 ; llvm/optimized/ParseObjc.cpp.ll
 ; wireshark/optimized/packet-m3ua.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, i16 %1) #0 {
+define i1 @func0000000000000181(ptr %0, i16 %1) #0 {
 entry:
   %2 = icmp ne i16 %1, 62
   %3 = icmp eq ptr %0, null
@@ -95,7 +105,7 @@ entry:
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
 ; wireshark/optimized/packet-m3ua.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, i16 %1) #0 {
+define i1 @func0000000000000081(ptr %0, i16 %1) #0 {
 entry:
   %2 = icmp ult i16 %1, 2
   %3 = icmp eq ptr %0, null
@@ -104,9 +114,31 @@ entry:
 }
 
 ; 1 occurrences:
+; wireshark/optimized/packet-btbredr_rf.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000014c(ptr %0, i16 %1) #0 {
+entry:
+  %2 = icmp sgt i16 %1, -1
+  %3 = icmp ne ptr %0, null
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
+}
+
+; 1 occurrences:
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000cc(ptr %0, i16 %1) #0 {
+entry:
+  %2 = icmp slt i16 %1, 0
+  %3 = icmp ne ptr %0, null
+  %4 = select i1 %3, i1 %2, i1 false
+  ret i1 %4
+}
+
+; 1 occurrences:
 ; icu/optimized/tzfmt.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(ptr %0, i16 %1) #0 {
+define i1 @func000000000000010c(ptr %0, i16 %1) #0 {
 entry:
   %2 = icmp ugt i16 %1, 31
   %3 = icmp ne ptr %0, null

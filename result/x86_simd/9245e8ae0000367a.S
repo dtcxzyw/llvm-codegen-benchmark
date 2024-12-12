@@ -18,7 +18,7 @@ func000000000000007f:                   # @func000000000000007f
 	retq
 .LCPI2_0:
 	.quad	64                              # 0x40
-func000000000000031f:                   # @func000000000000031f
+func000000000000061f:                   # @func000000000000061f
 	vpsllq	$3, %ymm2, %ymm2
 	vpaddq	.LCPI2_0(%rip){1to4}, %ymm2, %ymm2
 	vptestmd	%xmm1, %xmm1, %k1

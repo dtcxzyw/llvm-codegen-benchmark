@@ -1,5 +1,5 @@
 
-%"struct.Yosys::RTLIL::IdString.2937137" = type { i32 }
+%"struct.Yosys::RTLIL::IdString.3130787" = type { i32 }
 
 ; 51 occurrences:
 ; actix-rs/optimized/1cyxz7f31jo1m8z1.ll
@@ -54,11 +54,11 @@
 ; wasmtime-rs/optimized/4xu6ecb82tc69emg.ll
 ; wasmtime-rs/optimized/pc3lkwoxfkbj2dl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(ptr %0, ptr %1, i1 %2) #0 {
+define i1 @func0000000000000044(ptr %0, ptr %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i64
   %4 = getelementptr nusw { { { i64, ptr }, i64 }, { i64, [9 x i64] }, { i8, [31 x i8] }, { i32, i16, i16 }, { ptr } }, ptr %1, i64 %3
-  %5 = icmp ugt ptr %4, %0
+  %5 = icmp ult ptr %0, %4
   ret i1 %5
 }
 
@@ -67,11 +67,11 @@ entry:
 ; hermes/optimized/RegexParser.cpp.ll
 ; opencv/optimized/persistence.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(ptr %0, ptr %1, i1 %2) #0 {
+define i1 @func000000000000004c(ptr %0, ptr %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i64
   %4 = getelementptr nusw ptr, ptr %1, i64 %3
-  %5 = icmp ne ptr %4, %0
+  %5 = icmp ne ptr %0, %4
   ret i1 %5
 }
 
@@ -80,11 +80,11 @@ entry:
 ; icu/optimized/ucnv.ll
 ; yosys/optimized/sim.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, i1 %2) #0 {
+define i1 @func0000000000000041(ptr %0, ptr %1, i1 %2) #0 {
 entry:
   %3 = sext i1 %2 to i64
-  %4 = getelementptr nusw %"struct.Yosys::RTLIL::IdString.2937137", ptr %1, i64 %3
-  %5 = icmp eq ptr %4, %0
+  %4 = getelementptr nusw %"struct.Yosys::RTLIL::IdString.3130787", ptr %1, i64 %3
+  %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 

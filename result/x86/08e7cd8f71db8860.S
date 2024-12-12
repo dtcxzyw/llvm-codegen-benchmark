@@ -16,12 +16,6 @@ func0000000000000017:                   # @func0000000000000017
 	shlq	$32, %rax
 	orq	%rsi, %rax
 	retq
-func000000000000003f:                   # @func000000000000003f
-	movzwl	%si, %eax
-	shlq	$31, %rax
-	shlq	$23, %rdi
-	orq	%rdi, %rax
-	retq
 func000000000000001e:                   # @func000000000000001e
 	movzwl	%si, %eax
 	shll	$10, %eax
@@ -32,6 +26,12 @@ func0000000000000019:                   # @func0000000000000019
 	movzwl	%si, %eax
 	shlq	$32, %rax
 	shlq	$60, %rdi
+	orq	%rdi, %rax
+	retq
+func000000000000003f:                   # @func000000000000003f
+	movzwl	%si, %eax
+	shll	$13, %eax
+	shlq	$21, %rdi
 	orq	%rdi, %rax
 	retq
 func000000000000001c:                   # @func000000000000001c

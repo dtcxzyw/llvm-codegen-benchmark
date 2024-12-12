@@ -18,15 +18,16 @@ entry:
   ret i32 %5
 }
 
-; 266 occurrences:
+; 267 occurrences:
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/giaTtopt.cpp.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
 ; folly/optimized/Uri.cpp.ll
-; gromacs/optimized/gmx_hbond.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; lief/optimized/File.cpp.ll

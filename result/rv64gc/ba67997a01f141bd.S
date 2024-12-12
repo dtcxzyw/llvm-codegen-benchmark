@@ -5,6 +5,14 @@ func0000000000000005:                   # @func0000000000000005
 	negw	a1, a1
 	subw	a0, a1, a0
 	ret
+func000000000000000d:                   # @func000000000000000d
+	slli	a0, a0, 63
+	li	a2, 308
+	srai	a0, a0, 63
+	andi	a0, a0, 305
+	subw	a2, a2, a1
+	subw	a0, a2, a0
+	ret
 func0000000000000003:                   # @func0000000000000003
 	slli	a0, a0, 63
 	li	a2, 64

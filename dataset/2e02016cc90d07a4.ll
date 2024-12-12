@@ -32,7 +32,7 @@ define i32 @func0000000000000019(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 4
   %3 = add i32 %2, 16
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
@@ -55,11 +55,11 @@ define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 6
   %3 = add i32 %2, 128
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
-; 19 occurrences:
+; 17 occurrences:
 ; linux/optimized/avc.ll
 ; linux/optimized/blk-iocost.ll
 ; linux/optimized/cgroup.ll
@@ -67,9 +67,7 @@ entry:
 ; linux/optimized/hwmon.ll
 ; linux/optimized/intel_display_trace.ll
 ; linux/optimized/iommu-traces.ll
-; linux/optimized/net-traces.ll
 ; linux/optimized/nfs4trace.ll
-; linux/optimized/nfstrace.ll
 ; linux/optimized/power-traces.ll
 ; linux/optimized/regmap.ll
 ; linux/optimized/sched.ll
@@ -120,12 +118,13 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; abc/optimized/ioWriteDot.c.ll
 ; linux/optimized/lzo1x_compress.ll
 ; luajit/optimized/minilua.ll
 ; openjdk/optimized/oopRecorder.ll
 ; redis/optimized/lcode.ll
+; zed-rs/optimized/4hdn1csvepxizqbxhztzuw0uw.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000009(i32 %0, i32 %1) #0 {
 entry:
@@ -148,7 +147,7 @@ define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 14
   %3 = add i32 %2, -393216
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 

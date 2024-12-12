@@ -4,13 +4,13 @@ func0000000000000001:                   # @func0000000000000001
 	testq	%rdx, %rdi
 	sete	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	decq	%rdx
 	subq	%rsi, %rdi
 	testq	%rdx, %rdi
 	sete	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	decq	%rdx
 	subq	%rsi, %rdi
 	testq	%rdx, %rdi

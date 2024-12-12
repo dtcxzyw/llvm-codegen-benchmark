@@ -1,7 +1,8 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; cmake/optimized/json_value.cpp.ll
 ; llvm/optimized/DynamicExtent.cpp.ll
+; llvm/optimized/RegionStore.cpp.ll
 ; openjdk/optimized/memnode.ll
 ; ozz-animation/optimized/jsoncpp.cpp.ll
 ; Function Attrs: nounwind

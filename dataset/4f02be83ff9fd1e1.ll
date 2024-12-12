@@ -73,7 +73,6 @@
 ; libsodium/optimized/libsodium_la-poly1305_donna.ll
 ; lief/optimized/ChainedFixup.cpp.ll
 ; lief/optimized/RelocationFixup.cpp.ll
-; linux/optimized/blk-sysfs.ll
 ; linux/optimized/core.ll
 ; linux/optimized/dmar.ll
 ; linux/optimized/ds.ll
@@ -88,7 +87,6 @@
 ; linux/optimized/iommu.ll
 ; linux/optimized/lbr.ll
 ; linux/optimized/libata-core.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mremap.ll
 ; linux/optimized/p4.ll
@@ -98,7 +96,6 @@
 ; linux/optimized/process.ll
 ; linux/optimized/pt.ll
 ; linux/optimized/ptrace.ll
-; linux/optimized/scsiglue.ll
 ; linux/optimized/set_memory.ll
 ; linux/optimized/setup-bus.ll
 ; linux/optimized/slub.ll
@@ -190,7 +187,6 @@
 ; llvm/optimized/ProgramPoint.cpp.ll
 ; llvm/optimized/RISCVAsmBackend.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RISCVMCCodeEmitter.cpp.ll
 ; llvm/optimized/RISCVO0PreLegalizerCombiner.cpp.ll
@@ -227,6 +223,7 @@
 ; luau/optimized/Config.test.cpp.ll
 ; luau/optimized/CostModel.cpp.ll
 ; luau/optimized/Parser.test.cpp.ll
+; lvgl/optimized/lv_freetype_glyph.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; mold/optimized/arch-s390x.cc.ll
@@ -267,7 +264,6 @@
 ; openmpi/optimized/osc_rdma_component.ll
 ; openmpi/optimized/osc_rdma_peer.ll
 ; openmpi/optimized/pml_cm.ll
-; openmpi/optimized/pml_monitoring_isend.ll
 ; openmpi/optimized/pml_monitoring_start.ll
 ; openmpi/optimized/pml_ob1_comm.ll
 ; openmpi/optimized/pml_ob1_isend.ll
@@ -482,6 +478,8 @@
 ; spike/optimized/vzext_vf8.ll
 ; spike/optimized/zunpkd830.ll
 ; spike/optimized/zunpkd832.ll
+; turborepo-rs/optimized/7fw9xnh6zcxu0x094jeq6b04v.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; velox/optimized/Filter.cpp.ll
 ; velox/optimized/JsonType.cpp.ll
 ; wasmedge/optimized/vinode.cpp.ll
@@ -490,22 +488,24 @@
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wireshark/optimized/btsnoop.c.ll
 ; wireshark/optimized/mpeg.c.ll
-; wireshark/optimized/packet-etag.c.ll
 ; wireshark/optimized/packet-mpeg-pes.c.ll
 ; wireshark/optimized/packet-noe.c.ll
 ; wolfssl/optimized/aes.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 16
   %3 = and i64 %2, 31
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
-; 58 occurrences:
+; 52 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dense_qr.cc.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
@@ -535,7 +535,6 @@ entry:
 ; g2o/optimized/optimizable_graph.cpp.ll
 ; hermes/optimized/Executor.cpp.ll
 ; linux/optimized/hugetlb.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/swap_state.ll
 ; linux/optimized/task_mmu.ll
@@ -544,13 +543,8 @@ entry:
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64InstructionSelector.cpp.ll
-; llvm/optimized/APINotesWriter.cpp.ll
 ; llvm/optimized/InstCombinePHI.cpp.ll
-; llvm/optimized/LoadStoreVectorizer.cpp.ll
-; llvm/optimized/MCContext.cpp.ll
-; llvm/optimized/MIRFSDiscriminator.cpp.ll
 ; llvm/optimized/MachineTraceMetrics.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_referencing.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
@@ -569,11 +563,12 @@ define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 9
   %3 = and i64 %2, 16777184
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
-; 70 occurrences:
+; 65 occurrences:
+; boost/optimized/to_chars.ll
 ; git/optimized/ewah_bitmap.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; linux/optimized/gen6_ppgtt.ll
@@ -613,15 +608,11 @@ entry:
 ; spike/optimized/f128_div.ll
 ; spike/optimized/f128_mul.ll
 ; spike/optimized/f128_sqrt.ll
-; spike/optimized/f128_to_f16.ll
-; spike/optimized/f128_to_f32.ll
 ; spike/optimized/f128_to_i32_r_minMag.ll
-; spike/optimized/f128_to_ui32_r_minMag.ll
 ; spike/optimized/f32_div.ll
 ; spike/optimized/f32_mul.ll
 ; spike/optimized/f32_sqrt.ll
 ; spike/optimized/f32_to_bf16.ll
-; spike/optimized/f32_to_f16.ll
 ; spike/optimized/f32_to_i32_r_minMag.ll
 ; spike/optimized/f32_to_i64_r_minMag.ll
 ; spike/optimized/f32_to_ui32_r_minMag.ll
@@ -629,8 +620,6 @@ entry:
 ; spike/optimized/f64_div.ll
 ; spike/optimized/f64_mul.ll
 ; spike/optimized/f64_sqrt.ll
-; spike/optimized/f64_to_f16.ll
-; spike/optimized/f64_to_f32.ll
 ; spike/optimized/f64_to_i32_r_minMag.ll
 ; spike/optimized/f64_to_i64_r_minMag.ll
 ; spike/optimized/f64_to_ui32_r_minMag.ll

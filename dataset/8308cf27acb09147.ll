@@ -1,5 +1,5 @@
 
-; 61 occurrences:
+; 62 occurrences:
 ; abc/optimized/abcRr.c.ll
 ; abc/optimized/deflate.c.ll
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
@@ -38,6 +38,7 @@
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/SemaExprMember.cpp.ll
 ; llvm/optimized/SemaObjCProperty.cpp.ll
+; lvgl/optimized/lv_display.ll
 ; minetest/optimized/CIrrDeviceSDL.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/game.cpp.ll

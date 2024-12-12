@@ -54,11 +54,17 @@ func000000000000001e:                   # @func000000000000001e
 	bseti	a1, a1, 48
 	mul	a0, a0, a1
 	ret
-.LCPI8_0:
+func0000000000000016:                   # @func0000000000000016
+	slli	a1, a1, 8
+	or	a0, a0, a1
+	sh1add	a0, a0, a0
+	slli	a0, a0, 3
+	ret
+.LCPI9_0:
 	.quad	7046029254386353131             # 0x61c8864680b583eb
 func0000000000000000:                   # @func0000000000000000
-	lui	a2, %hi(.LCPI8_0)
-	ld	a2, %lo(.LCPI8_0)(a2)
+	lui	a2, %hi(.LCPI9_0)
+	ld	a2, %lo(.LCPI9_0)(a2)
 	slli	a1, a1, 6
 	or	a0, a0, a1
 	mul	a0, a0, a2

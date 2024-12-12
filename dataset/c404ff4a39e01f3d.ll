@@ -1,11 +1,10 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; abc/optimized/cuddApa.c.ll
 ; arrow/optimized/basic_decimal.cc.ll
 ; hermes/optimized/APInt.cpp.ll
 ; linux/optimized/hda_controller.ll
 ; llvm/optimized/APInt.cpp.ll
-; openmpi/optimized/timer_linux_component.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; ruby/optimized/bignum.ll
 ; soc-simulator/optimized/verilated.ll

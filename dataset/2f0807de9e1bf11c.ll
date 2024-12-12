@@ -1,5 +1,5 @@
 
-; 76 occurrences:
+; 79 occurrences:
 ; abc/optimized/sbdCore.c.ll
 ; abseil-cpp/optimized/civil_time.cc.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
@@ -8,6 +8,8 @@
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; abseil-cpp/optimized/time_zone_libc.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
 ; cmake/optimized/archive_read_support_format_zip.c.ll
 ; cpython/optimized/_ctypes_test.ll
@@ -27,6 +29,7 @@
 ; llvm/optimized/ClangOpenCLBuiltinEmitter.cpp.ll
 ; llvm/optimized/CodeGenModule.cpp.ll
 ; llvm/optimized/LangOptions.cpp.ll
+; lvgl/optimized/lv_draw_label.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_referencing.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll

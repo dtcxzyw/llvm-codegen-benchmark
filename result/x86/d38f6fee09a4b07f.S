@@ -14,7 +14,7 @@ func000000000000000b:                   # @func000000000000000b
 	addl	%ecx, %eax
 	retq
 func000000000000000f:                   # @func000000000000000f
-	movzwl	%si, %ecx
-	movzbl	%dil, %eax
+	movzbl	%sil, %ecx
+	movzwl	%di, %eax
 	addl	%ecx, %eax
 	retq

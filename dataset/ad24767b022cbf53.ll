@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; stockfish/optimized/search.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001b(i32 %0, i32 %1) #0 {
+define i32 @func000000000000002b(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -7
   %3 = icmp sge i32 %2, %0

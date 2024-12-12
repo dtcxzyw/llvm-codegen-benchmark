@@ -3,6 +3,16 @@ func0000000000000037:                   # @func0000000000000037
 	shrl	$12, %eax
 	addl	%edi, %eax
 	retq
+func0000000000000003:                   # @func0000000000000003
+	imull	$-732923, %esi, %eax            # imm = 0xFFF4D105
+	shrl	$20, %eax
+	addl	%edi, %eax
+	retq
+func0000000000000002:                   # @func0000000000000002
+	imull	$78913, %esi, %eax              # imm = 0x13441
+	shrl	$18, %eax
+	addl	%edi, %eax
+	retq
 func0000000000000007:                   # @func0000000000000007
 	imull	$16843009, %esi, %eax           # imm = 0x1010101
 	shrl	$24, %eax

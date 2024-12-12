@@ -1,5 +1,5 @@
 
-; 49 occurrences:
+; 51 occurrences:
 ; assimp/optimized/MDLLoader.cpp.ll
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
@@ -49,11 +49,13 @@
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, i16 %1) #0 {
 entry:
   %2 = uitofp i16 %1 to float
-  %3 = fmul float %2, %0
+  %3 = fmul float %0, %2
   ret float %3
 }
 
@@ -63,7 +65,7 @@ entry:
 define float @func0000000000000001(float %0, i16 %1) #0 {
 entry:
   %2 = uitofp nneg i16 %1 to float
-  %3 = fmul float %2, %0
+  %3 = fmul float %0, %2
   ret float %3
 }
 

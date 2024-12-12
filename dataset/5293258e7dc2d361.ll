@@ -3,7 +3,7 @@
 ; abc/optimized/sclLibUtil.c.ll
 ; cpython/optimized/memoryobject.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000711(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000001c21(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
@@ -17,7 +17,7 @@ entry:
 ; hdf5/optimized/H5Shyper.c.ll
 ; hdf5/optimized/H5Spoint.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000318(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000c28(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
@@ -32,7 +32,7 @@ entry:
 ; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/RDFRegisters.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000031c(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000c2c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
@@ -45,11 +45,11 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000781(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000001f01(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add nuw nsw i64 %1, 16
-  %5 = icmp ugt i64 %4, %3
+  %5 = icmp samesign ugt i64 %4, %3
   %6 = icmp eq i64 %0, 0
   %7 = select i1 %6, i1 true, i1 %5
   ret i1 %7
@@ -58,7 +58,7 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/dl_rule.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000311(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000c21(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
@@ -71,11 +71,11 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/pdecl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000391(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000f21(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
-  %5 = icmp uge i64 %4, %3
+  %5 = icmp samesign uge i64 %4, %3
   %6 = icmp eq i64 %0, 1
   %7 = select i1 %6, i1 true, i1 %5
   ret i1 %7
@@ -84,7 +84,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/bitmapset.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000071c(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000001c2c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1

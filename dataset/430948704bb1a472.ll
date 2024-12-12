@@ -1,18 +1,17 @@
 
-%union.iseq_inline_storage_entry.2485792 = type { %struct.anon.21.2485793 }
-%struct.anon.21.2485793 = type { ptr, i64 }
-%struct.ChatFormattedLine.2579793 = type <{ %"class.std::vector.5.2579789", i8, [7 x i8] }>
-%"class.std::vector.5.2579789" = type { %"struct.std::_Vector_base.6.2579790" }
-%"struct.std::_Vector_base.6.2579790" = type { %"struct.std::_Vector_base<ChatFormattedFragment, std::allocator<ChatFormattedFragment>>::_Vector_impl.2579791" }
-%"struct.std::_Vector_base<ChatFormattedFragment, std::allocator<ChatFormattedFragment>>::_Vector_impl.2579791" = type { %"struct.std::_Vector_base<ChatFormattedFragment, std::allocator<ChatFormattedFragment>>::_Vector_impl_data.2579792" }
-%"struct.std::_Vector_base<ChatFormattedFragment, std::allocator<ChatFormattedFragment>>::_Vector_impl_data.2579792" = type { ptr, ptr, ptr }
-%struct.code.3364141 = type { i8, i8, i16 }
+%union.iseq_inline_storage_entry.2601263 = type { %struct.anon.21.2601264 }
+%struct.anon.21.2601264 = type { ptr, i64 }
+%struct.ChatFormattedLine.2693933 = type <{ %"class.std::vector.5.2693929", i8, [7 x i8] }>
+%"class.std::vector.5.2693929" = type { %"struct.std::_Vector_base.6.2693930" }
+%"struct.std::_Vector_base.6.2693930" = type { %"struct.std::_Vector_base<ChatFormattedFragment, std::allocator<ChatFormattedFragment>>::_Vector_impl.2693931" }
+%"struct.std::_Vector_base<ChatFormattedFragment, std::allocator<ChatFormattedFragment>>::_Vector_impl.2693931" = type { %"struct.std::_Vector_base<ChatFormattedFragment, std::allocator<ChatFormattedFragment>>::_Vector_impl_data.2693932" }
+%"struct.std::_Vector_base<ChatFormattedFragment, std::allocator<ChatFormattedFragment>>::_Vector_impl_data.2693932" = type { ptr, ptr, ptr }
+%struct.code.3550467 = type { i8, i8, i16 }
 
-; 98 occurrences:
-; arrow/optimized/encode_internal_avx2.cc.ll
+; 96 occurrences:
 ; clamav/optimized/wwunpack.c.ll
 ; cpython/optimized/unicodedata.ll
-; hyperscan/optimized/stream.c.ll
+; hermes/optimized/Conversions.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; libquic/optimized/base64_bio.c.ll
 ; libsodium/optimized/libavx2_la-argon2-fill-block-avx2.ll
@@ -40,7 +39,6 @@
 ; linux/optimized/intel_ggtt_fencing.ll
 ; linux/optimized/intel_guc_submission.ll
 ; linux/optimized/intel_hdcp.ll
-; linux/optimized/intel_rc6.ll
 ; linux/optimized/intel_ring_submission.ll
 ; linux/optimized/intel_uncore.ll
 ; linux/optimized/intel_vblank.ll
@@ -65,10 +63,10 @@
 ; nghttp2/optimized/llhttp.c.ll
 ; opencv/optimized/binary_descriptor.cpp.ll
 ; openjdk/optimized/g1RemSet.ll
-; openjdk/optimized/node.ll
 ; openssl/optimized/libcrypto-lib-bio_b64.ll
 ; openssl/optimized/libcrypto-shlib-bio_b64.ll
 ; pbrt-v4/optimized/progressreporter.cpp.ll
+; php/optimized/snprintf.ll
 ; postgres/optimized/conv.ll
 ; postgres/optimized/fe-print.ll
 ; postgres/optimized/jsonb_util.ll
@@ -112,11 +110,11 @@ define ptr @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr %union.iseq_inline_storage_entry.2485792, ptr %0, i64 %4
+  %5 = getelementptr %union.iseq_inline_storage_entry.2601263, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 1037 occurrences:
+; 1051 occurrences:
 ; abc/optimized/abcSaucy.c.ll
 ; abc/optimized/blocksort.c.ll
 ; abc/optimized/deflate.c.ll
@@ -159,6 +157,7 @@ entry:
 ; assimp/optimized/glTFImporter.cpp.ll
 ; assimp/optimized/json_exporter.cpp.ll
 ; assimp/optimized/mesh_splitter.cpp.ll
+; boost/optimized/message.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/compound_dictionary.c.ll
@@ -353,6 +352,7 @@ entry:
 ; libquic/optimized/padding.c.ll
 ; libquic/optimized/s3_pkt.c.ll
 ; libwebp/optimized/anim_decode.c.ll
+; libwebp/optimized/huffman_encode_utils.c.ll
 ; libwebp/optimized/palette.c.ll
 ; lightgbm/optimized/bin.cpp.ll
 ; llama.cpp/optimized/llama.cpp.ll
@@ -584,6 +584,14 @@ entry:
 ; luau/optimized/CodeGenUtils.cpp.ll
 ; luau/optimized/IrBuilder.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
+; lvgl/optimized/lv_label.ll
+; lvgl/optimized/lv_span.ll
+; lvgl/optimized/lv_table.ll
+; lvgl/optimized/lv_text.ll
+; lvgl/optimized/lv_textarea.ll
 ; memcached/optimized/memcached-slab_automove.ll
 ; memcached/optimized/memcached-slab_automove_extstore.ll
 ; memcached/optimized/memcached_debug-slab_automove.ll
@@ -737,9 +745,6 @@ entry:
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-accessor.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/outputs-spec.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/path-info.ll
@@ -803,6 +808,7 @@ entry:
 ; openjdk/optimized/locknode.ll
 ; openjdk/optimized/machnode.ll
 ; openjdk/optimized/macro.ll
+; openjdk/optimized/node.ll
 ; openjdk/optimized/output.ll
 ; openjdk/optimized/parse1.ll
 ; openjdk/optimized/parse2.ll
@@ -863,6 +869,7 @@ entry:
 ; proxy/optimized/proxy_creation_tests.cpp.ll
 ; proxy/optimized/proxy_invocation_tests.cpp.ll
 ; proxy/optimized/proxy_lifetime_tests.cpp.ll
+; quantlib/optimized/bspline.ll
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rmodels.c.ll
 ; raylib/optimized/rtext.c.ll
@@ -974,7 +981,6 @@ entry:
 ; z3/optimized/check_logic.cpp.ll
 ; z3/optimized/check_relation.cpp.ll
 ; z3/optimized/clp_context.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/cofactor_elim_term_ite.cpp.ll
 ; z3/optimized/collect_statistics_tactic.cpp.ll
 ; z3/optimized/cost_evaluator.cpp.ll
@@ -1148,6 +1154,12 @@ entry:
 ; z3/optimized/var_subst.cpp.ll
 ; z3/optimized/well_sorted.cpp.ll
 ; z3/optimized/zstring.cpp.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
+; zed-rs/optimized/e7lqw1ynol01cwrgb8ri1wedr.ll
+; zed-rs/optimized/exs06pxuzkdidwvzya8luo4wf.ll
 ; zlib/optimized/deflate.c.ll
 ; zlib/optimized/inftrees.c.ll
 ; zstd/optimized/zdict.c.ll
@@ -1155,15 +1167,15 @@ entry:
 ; zstd/optimized/zstd_lazy.c.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw float, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw float, ptr %0, i64 %4
   ret ptr %5
 }
 
-; 317 occurrences:
+; 308 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcSymm.c.ll
 ; abc/optimized/acecTree.c.ll
@@ -1177,6 +1189,7 @@ entry:
 ; abc/optimized/satSolver2.c.ll
 ; abc/optimized/satSolver3.c.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/src.ll
 ; bullet3/optimized/b3Solver.ll
 ; bullet3/optimized/btHeightfieldTerrainShape.ll
 ; bullet3/optimized/btSoftBody.ll
@@ -1201,8 +1214,6 @@ entry:
 ; freetype/optimized/sfnt.c.ll
 ; g2o/optimized/marginal_covariance_cholesky.cpp.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
-; gromacs/optimized/dlasd0.cpp.ll
-; gromacs/optimized/slasd0.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -1246,7 +1257,6 @@ entry:
 ; libphonenumber/optimized/generate_geocoding_data.cc.ll
 ; libphonenumber/optimized/geocoding_data_test.cc.ll
 ; libpng/optimized/pngrtran.c.ll
-; libquic/optimized/a_i2d_fp.c.ll
 ; libquic/optimized/mul.c.ll
 ; libquic/optimized/pem_lib.c.ll
 ; libwebp/optimized/backward_references_enc.c.ll
@@ -1301,7 +1311,6 @@ entry:
 ; llvm/optimized/ObjectFilePCHContainerWriter.cpp.ll
 ; llvm/optimized/PaddingChecker.cpp.ll
 ; llvm/optimized/ParentMapContext.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ReachableCode.cpp.ll
 ; llvm/optimized/RefCntblBaseVirtualDtorChecker.cpp.ll
 ; llvm/optimized/Sema.cpp.ll
@@ -1366,16 +1375,12 @@ entry:
 ; ncnn/optimized/mat_pixel.cpp.ll
 ; node/optimized/simdutf.ll
 ; oiio/optimized/imagecache.cpp.ll
-; openblas/optimized/dgesdd.c.ll
 ; openblas/optimized/dlaed1.c.ll
 ; openblas/optimized/dlaed7.c.ll
 ; openblas/optimized/dlalsa.c.ll
 ; openblas/optimized/dlasd0.c.ll
 ; openblas/optimized/dlasda.c.ll
 ; openblas/optimized/dsptrf.c.ll
-; openblas/optimized/dsytrd_sy2sb.c.ll
-; openblas/optimized/dtgsna.c.ll
-; openblas/optimized/dtptri.c.ll
 ; openblas/optimized/lapacke_ctp_trans.c.ll
 ; openblas/optimized/lapacke_dtp_trans.c.ll
 ; openblas/optimized/lapacke_stp_trans.c.ll
@@ -1411,7 +1416,6 @@ entry:
 ; openmpi/optimized/opal_object.ll
 ; openmpi/optimized/pmix_object.ll
 ; openmpi/optimized/pmix_output.ll
-; openspiel/optimized/2048.cc.ll
 ; openspiel/optimized/best_response.cc.ll
 ; openspiel/optimized/checkers.cc.ll
 ; openspiel/optimized/clobber.cc.ll
@@ -1426,11 +1430,9 @@ entry:
 ; openspiel/optimized/spiel.cc.ll
 ; openspiel/optimized/state_distribution.cc.ll
 ; openspiel/optimized/tiny_bridge.cc.ll
-; openssl/optimized/libcrypto-lib-a_i2d_fp.ll
 ; openssl/optimized/libcrypto-lib-bn_mul.ll
 ; openssl/optimized/libcrypto-lib-bn_sqr.ll
 ; openssl/optimized/libcrypto-lib-rsaz_exp_x2.ll
-; openssl/optimized/libcrypto-shlib-a_i2d_fp.ll
 ; openssl/optimized/libcrypto-shlib-bn_mul.ll
 ; openssl/optimized/libcrypto-shlib-bn_sqr.ll
 ; openssl/optimized/libcrypto-shlib-rsaz_exp_x2.ll
@@ -1461,6 +1463,7 @@ entry:
 ; slurm/optimized/launch.ll
 ; slurm/optimized/sbatch.ll
 ; sqlite/optimized/sqlite3.ll
+; stb/optimized/stb_connected_components.c.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; stockfish/optimized/tbprobe.ll
 ; tev/optimized/ImageCanvas.cpp.ll
@@ -1482,11 +1485,11 @@ entry:
 ; zxing/optimized/QRMatrixUtil.cpp.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -1608,11 +1611,11 @@ entry:
 ; zstd/optimized/zstd_compress_superblock.c.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i16, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i16, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -1643,6 +1646,8 @@ entry:
 ; llvm/optimized/SampleProfileMatcher.cpp.ll
 ; llvm/optimized/SelectionDAGISel.cpp.ll
 ; luau/optimized/lnumprint.cpp.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
+; lvgl/optimized/lv_obj_tree.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/CFileSystem.cpp.ll
 ; minetest/optimized/chat.cpp.ll
@@ -1666,8 +1671,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -1764,11 +1767,11 @@ entry:
 ; yyjson/optimized/yyjson.c.ll
 ; zxing/optimized/AZDecoder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw %struct.ChatFormattedLine.2579793, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %struct.ChatFormattedLine.2693933, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -1786,6 +1789,7 @@ entry:
 ; linux/optimized/gro.ll
 ; linux/optimized/ip_output.ll
 ; linux/optimized/nf_reject_ipv6.ll
+; linux/optimized/rc80211_minstrel_ht.ll
 ; linux/optimized/rx.ll
 ; linux/optimized/sr.ll
 ; linux/optimized/tg3.ll
@@ -1809,7 +1813,6 @@ entry:
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/raudio.c.ll
 ; stb/optimized/stb_vorbis.c.ll
-; wireshark/optimized/dot11decrypt.c.ll
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; wireshark/optimized/k12.c.ll
 ; wireshark/optimized/netscaler.c.ll
@@ -1838,7 +1841,8 @@ entry:
   ret ptr %5
 }
 
-; 22 occurrences:
+; 23 occurrences:
+; boost/optimized/to_chars.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
@@ -1930,11 +1934,11 @@ entry:
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
 ; zxing/optimized/ReedSolomonDecoder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i32, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i32, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -1959,11 +1963,11 @@ entry:
 ; zlib/optimized/infback.c.ll
 ; zlib/optimized/inflate.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000013(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -1972,11 +1976,11 @@ entry:
 ; darktable/optimized/OrfDecoder.cpp.ll
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000016(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000017(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -2010,18 +2014,18 @@ define ptr @func0000000000000010(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr %struct.code.3364141, ptr %0, i64 %4
+  %5 = getelementptr %struct.code.3550467, ptr %0, i64 %4
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; raylib/optimized/rmodels.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000001b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 

@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/XCOFFObjectFile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000101(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
   %4 = trunc i64 %3 to i32
@@ -27,7 +27,7 @@ entry:
 ; hyperscan/optimized/ng_corpus_generator.cpp.ll
 ; wasmtime-rs/optimized/3ongwcslbj2wmgl9.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e1(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001c1(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 %1, %2
   %4 = trunc nuw i64 %3 to i32

@@ -1,4 +1,4 @@
-func0000000000000cc3:                   # @func0000000000000cc3
+func00000000000018c3:                   # @func00000000000018c3
 	movabsq	$-9223372036854775807, %rcx     # imm = 0x8000000000000001
 	xorl	%edx, %edx
 	cmpq	%rcx, %rsi
@@ -8,7 +8,7 @@ func0000000000000cc3:                   # @func0000000000000cc3
 	setne	%al
 	addq	%rdx, %rax
 	retq
-func0000000000000ca3:                   # @func0000000000000ca3
+func00000000000018a3:                   # @func00000000000018a3
 	xorl	%ecx, %ecx
 	negq	%rsi
 	setno	%cl
@@ -19,7 +19,7 @@ func0000000000000ca3:                   # @func0000000000000ca3
 	setg	%al
 	addq	%rcx, %rax
 	retq
-func0000000000000aa3:                   # @func0000000000000aa3
+func00000000000014a3:                   # @func00000000000014a3
 	movabsq	$-9223372036854775807, %rcx     # imm = 0x8000000000000001
 	xorl	%edx, %edx
 	cmpq	%rcx, %rsi

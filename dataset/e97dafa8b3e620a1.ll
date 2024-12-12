@@ -1,5 +1,7 @@
 
-; 12 occurrences:
+; 13 occurrences:
+; boost/optimized/format_args.ll
+; boost/optimized/pct_format.ll
 ; flatbuffers/optimized/cpp_generator.cc.ll
 ; folly/optimized/LogMessage.cpp.ll
 ; libquic/optimized/spdy_alt_svc_wire_format.cc.ll
@@ -8,7 +10,6 @@
 ; pocketpy/optimized/str.cpp.ll
 ; postgres/optimized/initdb.ll
 ; proj/optimized/axisswap.cpp.ll
-; qemu/optimized/hw_9pfs_9p.c.ll
 ; qemu/optimized/source_s_mulAddF16.c.ll
 ; ruby/optimized/file.ll
 ; spike/optimized/s_mulAddF16.ll

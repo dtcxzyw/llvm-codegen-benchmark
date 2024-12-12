@@ -1,6 +1,5 @@
 
-; 34 occurrences:
-; darktable/optimized/introspection_cacorrect.c.ll
+; 32 occurrences:
 ; darktable/optimized/introspection_denoiseprofile.c.ll
 ; darktable/optimized/introspection_filmic.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
@@ -14,7 +13,6 @@
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; meshlab/optimized/apss.cpp.ll
 ; meshlab/optimized/decorate_base.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_measure.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
@@ -38,8 +36,8 @@
 define double @func0000000000000000(double %0, double %1, float %2) #0 {
 entry:
   %3 = fpext float %2 to double
-  %4 = fmul double %3, %1
-  %5 = fadd double %4, %0
+  %4 = fmul double %1, %3
+  %5 = fadd double %0, %4
   ret double %5
 }
 

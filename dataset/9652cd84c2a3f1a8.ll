@@ -19,7 +19,7 @@
 ; wireshark/optimized/packet-tibia.c.ll
 ; wireshark/optimized/packet-zebra.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i8 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2
   %3 = icmp eq i32 %2, 0
@@ -33,7 +33,7 @@ entry:
 ; qemu/optimized/hw_block_m25p80.c.ll
 ; ruby/optimized/regenc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 8192
   %3 = icmp eq i32 %2, 0
@@ -42,7 +42,7 @@ entry:
   ret i1 %5
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; icu/optimized/ubidi.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/mlme.ll
@@ -52,7 +52,6 @@ entry:
 ; meshlab/optimized/mesh.cpp.ll
 ; minetest/optimized/collision.cpp.ll
 ; minetest/optimized/game.cpp.ll
-; openusd/optimized/fvarLevel.cpp.ll
 ; php/optimized/zend_closures.ll
 ; php/optimized/zend_inference.ll
 ; php/optimized/zend_jit.ll
@@ -62,7 +61,7 @@ entry:
 ; wireshark/optimized/packet-nas_eps.c.ll
 ; wireshark/optimized/packet-zebra.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 128
   %3 = icmp eq i32 %2, 0
@@ -77,9 +76,9 @@ entry:
 ; openjdk/optimized/hb-ot-shaper-use.ll
 ; wireshark/optimized/packet-ip.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i8 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 24
+  %2 = and i32 %1, 69752
   %3 = icmp eq i32 %2, 0
   %4 = icmp ugt i8 %0, 31
   %5 = select i1 %4, i1 true, i1 %3
@@ -91,7 +90,7 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i8 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -2
   %3 = icmp eq i32 %2, 4
@@ -103,7 +102,7 @@ entry:
 ; 1 occurrences:
 ; spike/optimized/csrs.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c6(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000186(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 4
   %3 = icmp ne i32 %2, 0
@@ -112,11 +111,15 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 6 occurrences:
+; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
+; openusd/optimized/stbImage.cpp.ll
+; pbrt-v4/optimized/stbimage.cpp.ll
 ; stb/optimized/stb_image.c.ll
+; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000308(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 14
   %3 = icmp eq i32 %2, 14
@@ -132,7 +135,7 @@ entry:
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000184(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -5
   %3 = icmp ne i32 %2, 0
@@ -144,7 +147,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ASTContext.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i8 %0, i32 %1) #0 {
+define i1 @func000000000000018c(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 16
   %3 = icmp ne i32 %2, 0
@@ -159,7 +162,7 @@ entry:
 ; llvm/optimized/InstructionSimplify.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000181(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 48
   %3 = icmp ne i32 %2, 0
@@ -171,7 +174,7 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i8 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2
   %3 = icmp eq i32 %2, 0

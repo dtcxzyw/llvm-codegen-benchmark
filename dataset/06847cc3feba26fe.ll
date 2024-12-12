@@ -42,16 +42,4 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
-; proj/optimized/coordinateoperationfactory.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000002(i64 %0, ptr %1) #0 {
-entry:
-  %2 = ptrtoint ptr %1 to i64
-  %3 = sub i64 %0, %2
-  %4 = icmp eq i64 %3, 48
-  %5 = zext i1 %4 to i32
-  ret i32 %5
-}
-
 attributes #0 = { nounwind }

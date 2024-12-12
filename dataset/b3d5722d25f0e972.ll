@@ -1,5 +1,5 @@
 
-; 31 occurrences:
+; 32 occurrences:
 ; abc/optimized/giaJf.c.ll
 ; abc/optimized/giaKf.c.ll
 ; bullet3/optimized/btMultiBodyConstraintSolver.ll
@@ -31,6 +31,7 @@
 ; opencv/optimized/checkchessboard.cpp.ll
 ; pbrt-v4/optimized/lights.cpp.ll
 ; xgboost/optimized/random.cc.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define float @func0000000000000002(float %0, float %1) #0 {
 entry:

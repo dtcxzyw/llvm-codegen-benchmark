@@ -5,22 +5,15 @@ func0000000000000008:                   # @func0000000000000008
 	orb	%sil, %al
 	andb	%dil, %al
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	cmpb	$3, %dl
 	sete	%al
 	orb	%sil, %al
 	andb	%dil, %al
 	retq
-func0000000000000030:                   # @func0000000000000030
+func0000000000000050:                   # @func0000000000000050
 	addb	$-9, %dl
 	cmpb	$-7, %dl
-	setb	%al
-	orb	%sil, %al
-	andb	%dil, %al
-	retq
-func0000000000000010:                   # @func0000000000000010
-	addb	$-7, %dl
-	cmpb	$-8, %dl
 	setb	%al
 	orb	%sil, %al
 	andb	%dil, %al

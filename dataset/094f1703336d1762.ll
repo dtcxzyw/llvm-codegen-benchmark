@@ -1,8 +1,7 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; flac/optimized/fixed.c.ll
 ; flac/optimized/fixed_intrin_avx2.c.ll
-; flac/optimized/fixed_intrin_sse42.c.ll
 ; openjdk/optimized/xHeuristics.ll
 ; wireshark/optimized/rtp_audio_stream.cpp.ll
 ; Function Attrs: nounwind

@@ -9,3 +9,8 @@ func0000000000000000:                   # @func0000000000000000
 	notl	%edi
 	addl	%edi, %eax
 	retq
+func000000000000000c:                   # @func000000000000000c
+	leal	(%rsi,%rdx), %eax
+	notl	%edi
+	addl	%edi, %eax
+	retq

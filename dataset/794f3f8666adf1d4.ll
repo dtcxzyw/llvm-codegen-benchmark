@@ -4,7 +4,7 @@
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; ruby/optimized/addr2line.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = trunc i64 %2 to i32
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; faiss/optimized/LocalSearchQuantizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000044(i32 %0, i64 %1) #0 {
 entry:
   %2 = freeze i64 %1
   %3 = trunc i64 %2 to i32

@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 27 occurrences:
 ; c3c/optimized/sema_casts.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; git/optimized/trailer.ll
@@ -11,7 +11,6 @@
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/APValue.cpp.ll
 ; llvm/optimized/CodeGenModule.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; luajit/optimized/minilua.ll
 ; ncnn/optimized/gemm_x86.cpp.ll
 ; ncnn/optimized/gemm_x86_avx.cpp.ll
@@ -37,44 +36,27 @@ entry:
   ret ptr %5
 }
 
-; 35 occurrences:
+; 18 occurrences:
 ; assimp/optimized/BaseImporter.cpp.ll
-; cmake/optimized/cmFileAPICommand.cxx.ll
-; eastl/optimized/EAString.cpp.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; glslang/optimized/hlslParseables.cpp.ll
 ; gromacs/optimized/gmx_make_edi.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; icu/optimized/number_formatimpl.ll
 ; libwebp/optimized/backward_references_enc.c.ll
-; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
-; llvm/optimized/CombinerHelper.cpp.ll
 ; llvm/optimized/ConstantFolding.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; llvm/optimized/SemaTemplate.cpp.ll
-; llvm/optimized/StackProtector.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; luajit/optimized/lj_strfmt.ll
 ; luajit/optimized/lj_strfmt_dyn.ll
-; luau/optimized/lstrlib.cpp.ll
-; nix/optimized/print-ambiguous.ll
-; nlohmann_json/optimized/unit-json_patch.cpp.ll
-; nlohmann_json/optimized/unit-json_pointer.cpp.ll
-; nlohmann_json/optimized/unit-readme.cpp.ll
-; nlohmann_json/optimized/unit-regression1.cpp.ll
-; nlohmann_json/optimized/unit-regression2.cpp.ll
-; opencv/optimized/semantic_segmentation.cpp.ll
 ; openjdk/optimized/hb-buffer.ll
-; openusd/optimized/filesystemDiscoveryHelpers.cpp.ll
 ; soc-simulator/optimized/verilated.ll
-; velox/optimized/FunctionSignature.cpp.ll
-; velox/optimized/HiveTypeParser.cpp.ll
-; velox/optimized/SignatureBinder.cpp.ll
 ; zxing/optimized/DMHighLevelEncoder.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000014(ptr %0, ptr %1, i32 %2) #0 {
+define ptr @func0000000000000024(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -65536
   %4 = icmp ult i32 %3, 1048576
@@ -103,7 +85,7 @@ entry:
 ; llvm/optimized/InstructionCombining.cpp.ll
 ; llvm/optimized/InstructionSimplify.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000011(ptr %0, ptr %1, i32 %2) #0 {
+define ptr @func0000000000000021(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 44
   %4 = select i1 %3, ptr %0, ptr %1

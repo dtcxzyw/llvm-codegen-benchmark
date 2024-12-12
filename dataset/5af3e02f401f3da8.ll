@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 18 occurrences:
 ; lief/optimized/ResourcesParser.cpp.ll
 ; linux/optimized/i2c-core-base.ll
 ; llvm/optimized/AArch64CallingConvention.cpp.ll
@@ -13,14 +13,13 @@
 ; llvm/optimized/ParseStmt.cpp.ll
 ; llvm/optimized/ParseTemplate.cpp.ll
 ; llvm/optimized/ParseTentative.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/TokenLexer.cpp.ll
 ; llvm/optimized/X86CallingConv.cpp.ll
 ; qemu/optimized/hw_virtio_virtio.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i16 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i16 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 17179869184
   %3 = icmp ne i64 %2, 0
@@ -32,11 +31,36 @@ entry:
 ; 1 occurrences:
 ; slurm/optimized/job_mgr.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i16 %0, i64 %1) #0 {
+define i1 @func000000000000018c(i16 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 256
   %3 = icmp ne i64 %2, 0
   %4 = icmp ne i16 %0, 0
+  %5 = select i1 %3, i1 %4, i1 false
+  ret i1 %5
+}
+
+; 2 occurrences:
+; libquic/optimized/ssl_lib.c.ll
+; postgres/optimized/xlogreader.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000081(i16 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 134217728
+  %3 = icmp eq i64 %2, 0
+  %4 = icmp ult i16 %0, -258
+  %5 = select i1 %3, i1 %4, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
+; libquic/optimized/ssl_lib.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000101(i16 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 134217728
+  %3 = icmp eq i64 %2, 0
+  %4 = icmp ugt i16 %0, 770
   %5 = select i1 %3, i1 %4, i1 false
   ret i1 %5
 }
@@ -61,7 +85,7 @@ entry:
 ; llvm/optimized/SemaTemplateVariadic.cpp.ll
 ; llvm/optimized/TextNodeDumper.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i16 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 6
   %3 = icmp eq i64 %2, 0
@@ -79,23 +103,11 @@ entry:
 ; llvm/optimized/ExprEngineCXX.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i16 %0, i64 %1) #0 {
+define i1 @func0000000000000181(i16 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 6
   %3 = icmp eq i64 %2, 0
   %4 = icmp ne i16 %0, 0
-  %5 = select i1 %3, i1 %4, i1 false
-  ret i1 %5
-}
-
-; 1 occurrences:
-; postgres/optimized/xlogreader.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000041(i16 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 7
-  %3 = icmp eq i64 %2, 0
-  %4 = icmp ult i16 %0, 1025
   %5 = select i1 %3, i1 %4, i1 false
   ret i1 %5
 }

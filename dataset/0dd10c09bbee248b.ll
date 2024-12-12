@@ -1,5 +1,5 @@
 
-; 97 occurrences:
+; 98 occurrences:
 ; abc/optimized/darBalance.c.ll
 ; abc/optimized/giaDup.c.ll
 ; abc/optimized/ifDsd.c.ll
@@ -76,6 +76,7 @@
 ; llvm/optimized/USRGeneration.cpp.ll
 ; llvm/optimized/WhitespaceManager.cpp.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_color.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; minetest/optimized/CImage.cpp.ll
 ; miniaudio/optimized/unity.c.ll

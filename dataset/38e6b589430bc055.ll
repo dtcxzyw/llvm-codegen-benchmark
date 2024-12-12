@@ -1,5 +1,5 @@
 
-; 44 occurrences:
+; 42 occurrences:
 ; coremark/optimized/core_main.c.ll
 ; hermes/optimized/HiddenClass.cpp.ll
 ; hermes/optimized/InstSimplify.cpp.ll
@@ -12,7 +12,6 @@
 ; llvm/optimized/HeaderIncludes.cpp.ll
 ; llvm/optimized/InstrRefBasedImpl.cpp.ll
 ; llvm/optimized/ModuleMap.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/VLIWMachineScheduler.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
@@ -21,7 +20,6 @@
 ; minetest/optimized/test_map.cpp.ll
 ; minetest/optimized/test_sao.cpp.ll
 ; minetest/optimized/test_schematic.cpp.ll
-; minetest/optimized/test_voxelmanipulator.cpp.ll
 ; nix/optimized/fromTOML.ll
 ; oiio/optimized/bmp_pvt.cpp.ll
 ; oiio/optimized/tiffinput.cpp.ll
@@ -97,10 +95,9 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; icu/optimized/listformatter.ll
 ; icu/optimized/tzgnames.ll
-; linux/optimized/probe_roms.ll
 ; quickjs/optimized/quickjs-libc.ll
 ; wireshark/optimized/packet-ethercat-datagram.c.ll
 ; Function Attrs: nounwind

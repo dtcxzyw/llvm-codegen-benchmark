@@ -1,8 +1,7 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; icu/optimized/collationkeys.ll
 ; llvm/optimized/X86InstCombineIntrinsic.cpp.ll
-; postgres/optimized/char.ll
 ; ruby/optimized/transcode.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i64 %0) #0 {

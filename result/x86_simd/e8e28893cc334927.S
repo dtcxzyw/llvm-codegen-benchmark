@@ -6,7 +6,7 @@
 	.long	3                               # 0x3
 .LCPI0_3:
 	.long	190                             # 0xbe
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	vptestnmd	%ymm1, %ymm1, %k1
 	vpbroadcastd	.LCPI0_0(%rip), %ymm1   # ymm1 = [175,175,175,175,175,175,175,175]
 	vpbroadcastd	.LCPI0_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [174,174,174,174,174,174,174,174]

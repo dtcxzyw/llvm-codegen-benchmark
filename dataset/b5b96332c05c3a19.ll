@@ -1,5 +1,5 @@
 
-; 67 occurrences:
+; 65 occurrences:
 ; abc/optimized/cecSolve.c.ll
 ; abc/optimized/cuddApa.c.ll
 ; annoy/optimized/annoymodule.ll
@@ -20,7 +20,6 @@
 ; meshlab/optimized/edit_mutualcorrs.cpp.ll
 ; meshlab/optimized/filter_layer.cpp.ll
 ; meshlab/optimized/layerDialog.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/packing.cpp.ll
 ; meshlab/optimized/paintbox.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
@@ -55,7 +54,6 @@
 ; openjdk/optimized/hb-ot-shape.ll
 ; openspiel/optimized/Init.cpp.ll
 ; openspiel/optimized/Scheduler.cpp.ll
-; pbrt-v4/optimized/cameras.cpp.ll
 ; postgres/optimized/brin_minmax_multi.ll
 ; qemu/optimized/chardev_wctablet.c.ll
 ; redis/optimized/fpconv_dtoa.ll

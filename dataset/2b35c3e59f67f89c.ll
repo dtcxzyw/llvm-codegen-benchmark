@@ -5,7 +5,7 @@
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c4(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000184(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 32, %2
   %4 = icmp eq i32 %1, 0
@@ -17,12 +17,12 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/ifTune.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c5(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000185(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 32, %2
   %4 = icmp eq i32 %1, 1
   %5 = select i1 %4, i32 1, i32 %3
-  %6 = mul nsw i32 %5, %0
+  %6 = mul nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -31,7 +31,7 @@ entry:
 ; postgres/optimized/pg_lzcompress_shlib.ll
 ; postgres/optimized/pg_lzcompress_srv.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000d8(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000198(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 100, %2
   %4 = icmp slt i32 %1, 0
@@ -45,7 +45,7 @@ entry:
 ; postgres/optimized/pg_lzcompress_shlib.ll
 ; postgres/optimized/pg_lzcompress_srv.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000db(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000019b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nuw nsw i32 100, %2
   %4 = icmp slt i32 %1, 0

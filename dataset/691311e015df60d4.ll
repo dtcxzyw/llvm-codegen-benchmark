@@ -1,5 +1,5 @@
 
-; 31 occurrences:
+; 32 occurrences:
 ; graphviz/optimized/mm2gv.c.ll
 ; ipopt/optimized/IpAdaptiveMuUpdate.ll
 ; ipopt/optimized/IpMonotoneMuUpdate.ll
@@ -27,6 +27,7 @@
 ; quantlib/optimized/hestonprocess.ll
 ; quantlib/optimized/kahalesmilesection.ll
 ; quantlib/optimized/normaldistribution.ll
+; quantlib/optimized/perturbativebarrieroptionengine.ll
 ; quantlib/optimized/qdfpamericanengine.ll
 ; quantlib/optimized/qdplusamericanengine.ll
 ; quantlib/optimized/squarerootprocessrndcalculator.ll

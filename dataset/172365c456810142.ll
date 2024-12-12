@@ -1,5 +1,5 @@
 
-; 164 occurrences:
+; 160 occurrences:
 ; abc/optimized/acbTest.c.ll
 ; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/dauGia.c.ll
@@ -41,6 +41,7 @@
 ; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
+; lvgl/optimized/lv_demo_widgets.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/glarea.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -62,8 +63,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -122,7 +121,6 @@
 ; nlohmann_json/optimized/unit-wstring.cpp.ll
 ; nori/optimized/warptest.cpp.ll
 ; oiio/optimized/Writer.cpp.ll
-; openblas/optimized/iparmq.c.ll
 ; opencv/optimized/cap_v4l.cpp.ll
 ; opencv/optimized/convexhull.cpp.ll
 ; opencv/optimized/erfilter.cpp.ll
@@ -141,10 +139,8 @@
 ; openssl/optimized/ca_internals_test-bin-a_time.ll
 ; openssl/optimized/libcrypto-lib-a_time.ll
 ; openssl/optimized/libcrypto-lib-bn_conv.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
 ; openssl/optimized/libcrypto-shlib-a_time.ll
 ; openssl/optimized/libcrypto-shlib-bn_conv.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; openusd/optimized/restoration.c.ll
 ; openusd/optimized/thread_common.c.ll
 ; ozz-animation/optimized/gltf2ozz.cc.ll
@@ -159,8 +155,8 @@
 ; stockfish/optimized/uci.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; verilator/optimized/V3Undriven.cpp.ll
-; wireshark/optimized/packet-ieee1609dot2.c.ll
-; wireshark/optimized/packet-its.c.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; zxing/optimized/AZDetector.cpp.ll
 ; zxing/optimized/ConcentricFinder.cpp.ll
 ; zxing/optimized/PDFReader.cpp.ll
@@ -172,7 +168,7 @@ entry:
   ret i32 %2
 }
 
-; 38 occurrences:
+; 37 occurrences:
 ; darktable/optimized/OrfDecoder.cpp.ll
 ; hwloc/optimized/lstopo-lstopo-fig.ll
 ; hwloc/optimized/lstopo_no_graphics-lstopo-fig.ll
@@ -183,7 +179,6 @@ entry:
 ; linux/optimized/drm_vblank.ll
 ; linux/optimized/hcd.ll
 ; linux/optimized/hid-pidff.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_bw.ll
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/intel_dpll_mgr.ll

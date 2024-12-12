@@ -111,7 +111,7 @@
 define i128 @func000000000000000a(i128 %0, i128 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i128
-  %4 = mul nuw i128 %3, %0
+  %4 = mul nuw i128 %0, %3
   %5 = lshr i128 %1, 32
   %6 = add nuw i128 %4, %5
   ret i128 %6

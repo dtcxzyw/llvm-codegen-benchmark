@@ -3,10 +3,10 @@
 ; qemu/optimized/hw_display_vga.c.ll
 ; yosys/optimized/test_cell.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003f1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000007e1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = mul nuw nsw i32 %3, %1
+  %4 = mul nuw nsw i32 %1, %3
   %5 = add nuw nsw i32 %0, 1
   %6 = icmp eq i32 %5, %4
   ret i1 %6
@@ -16,10 +16,10 @@ entry:
 ; abc/optimized/extraUtilPath.c.ll
 ; opencv/optimized/boostdesc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000171(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002e1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = add nuw nsw i32 %0, 1
   %6 = icmp eq i32 %5, %4
   ret i1 %6
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/memtest.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000176(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002e6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -2
   %4 = mul nsw i32 %3, %1
@@ -40,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/smooth.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000151(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002a1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = mul nsw i32 %3, %1
@@ -52,7 +52,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/smooth.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = mul nsw i32 %3, %1
@@ -67,7 +67,7 @@ entry:
 ; hwloc/optimized/hwloc-calc.ll
 ; hwloc/optimized/hwloc-info.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000156(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = mul nsw i32 %3, %1

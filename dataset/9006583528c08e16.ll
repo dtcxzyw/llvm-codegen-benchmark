@@ -48,6 +48,17 @@ entry:
 }
 
 ; 1 occurrences:
+; boost/optimized/within_sph_geo.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(double %0, double %1, double %2) #0 {
+entry:
+  %3 = fcmp olt double %1, %2
+  %4 = fcmp ogt double %0, 0.000000e+00
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; zxing/optimized/ODDXFilmEdgeReader.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000047(double %0, double %1, double %2) #0 {

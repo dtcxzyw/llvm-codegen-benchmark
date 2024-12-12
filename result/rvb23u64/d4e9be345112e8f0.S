@@ -73,7 +73,7 @@ func000000000000000a:                   # @func000000000000000a
 	fle.s	a0, fa5, fa4
 	ret
 func000000000000000e:                   # @func000000000000000e
-	fli.s	fa5, 1.0
+	fli.s	fa5, 0.5
 	fadd.s	fa5, fa0, fa5
 	feq.s	a0, fa5, fa5
 	ret

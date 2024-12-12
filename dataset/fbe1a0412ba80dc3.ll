@@ -1,5 +1,5 @@
 
-; 34 occurrences:
+; 35 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/aigUtil.c.ll
@@ -16,12 +16,13 @@
 ; abc/optimized/sswMan.c.ll
 ; abc/optimized/sswSim.c.ll
 ; abc/optimized/utilCex.c.ll
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; miniaudio/optimized/unity.c.ll
 ; opencv/optimized/gfluidimgproc_func.dispatch.cpp.ll
 ; opencv/optimized/hough.cpp.ll
 ; opencv/optimized/imgwarp.cpp.ll
 ; opencv/optimized/resize.cpp.ll
-; openjdk/optimized/TransformHelper.ll
 ; openjdk/optimized/mlib_c_ImageAffine_BC.ll
 ; openjdk/optimized/mlib_c_ImageAffine_BC_S16.ll
 ; openjdk/optimized/mlib_c_ImageAffine_BC_U16.ll
@@ -38,7 +39,7 @@
 define i32 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = ashr i32 %4, 12
   ret i32 %5
 }
@@ -80,15 +81,16 @@ entry:
 define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = ashr i32 %4, 15
   ret i32 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; abc/optimized/fraSim.c.ll
 ; abc/optimized/giaCex.c.ll
 ; abc/optimized/sswSim.c.ll
+; lvgl/optimized/lv_area.ll
 ; opencv/optimized/resize.cpp.ll
 ; openjdk/optimized/cmsintrp.ll
 ; openjdk/optimized/cmsopt.ll
@@ -96,13 +98,14 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = ashr i32 %4, 16
   ret i32 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; linux/optimized/mballoc.ll
+; lvgl/optimized/lv_area.ll
 ; miniaudio/optimized/unity.c.ll
 ; opencv/optimized/stereo_binary_bm.cpp.ll
 ; opencv/optimized/stereobm.cpp.ll
@@ -112,8 +115,8 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
-  %4 = add i32 %3, %0
-  %5 = ashr i32 %4, 1
+  %4 = add i32 %0, %3
+  %5 = ashr i32 %4, 18
   ret i32 %5
 }
 
@@ -123,7 +126,7 @@ entry:
 define i32 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %1, %2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = ashr i32 %4, 6
   ret i32 %5
 }

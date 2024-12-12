@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 33 occurrences:
 ; abc/optimized/giaEquiv.c.ll
 ; box2d/optimized/b2_world.cpp.ll
 ; clamav/optimized/arcread.cpp.ll
@@ -8,9 +8,7 @@
 ; libpng/optimized/pngwrite.c.ll
 ; libwebp/optimized/cwebp.c.ll
 ; libwebp/optimized/picture_tools_enc.c.ll
-; linux/optimized/exit.ll
 ; linux/optimized/netlabel.ll
-; linux/optimized/pata_amd.ll
 ; linux/optimized/phy_device.ll
 ; linux/optimized/seq_clientmgr.ll
 ; linux/optimized/workqueue.ll
@@ -36,7 +34,7 @@
 ; wireshark/optimized/packet_list.cpp.ll
 ; zxing/optimized/ODMultiUPCEANReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000021(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2048
   %3 = icmp eq i32 %2, 0
@@ -45,13 +43,12 @@ entry:
   ret i1 %5
 }
 
-; 75 occurrences:
+; 73 occurrences:
 ; bullet3/optimized/btMultiBodyDynamicsWorld.ll
 ; darktable/optimized/introspection_denoiseprofile.c.ll
 ; folly/optimized/AsyncSocket.cpp.ll
 ; graphviz/optimized/dtmethod.c.ll
 ; linux/optimized/fault.ll
-; linux/optimized/read_write.ll
 ; linux/optimized/reg.ll
 ; linux/optimized/rx.ll
 ; linux/optimized/security.ll
@@ -81,7 +78,6 @@ entry:
 ; llvm/optimized/LLVMTargetMachine.cpp.ll
 ; llvm/optimized/LegalizeIntegerTypes.cpp.ll
 ; llvm/optimized/NSErrorChecker.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/RegionStore.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
@@ -122,7 +118,7 @@ entry:
 ; slurm/optimized/job_scheduler.ll
 ; wireshark/optimized/wmem_allocator_block.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, i32 %1) #0 {
+define i1 @func000000000000002c(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -2
   %3 = icmp ne i32 %2, 22
@@ -142,7 +138,7 @@ entry:
 ; php/optimized/pcre2_match.ll
 ; postgres/optimized/postmaster.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, i32 %1) #0 {
+define i1 @func000000000000018c(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 8
   %3 = icmp ne i32 %2, 0
@@ -173,7 +169,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, i32 %1) #0 {
+define i1 @func0000000000000181(ptr %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = icmp eq i32 %2, 0
@@ -182,18 +178,4 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; linux/optimized/hid-sony.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000018(ptr %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 65280
-  %3 = icmp ugt i32 %2, 767
-  %4 = icmp eq ptr %0, null
-  %5 = select i1 %3, i1 true, i1 %4, !prof !0
-  ret i1 %5
-}
-
 attributes #0 = { nounwind }
-
-!0 = !{!"branch_weights", i32 1, i32 2000}

@@ -1,5 +1,5 @@
 
-; 313 occurrences:
+; 312 occurrences:
 ; abc/optimized/cecCorr.c.ll
 ; abseil-cpp/optimized/inlined_vector_exception_safety_test.cc.ll
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
@@ -126,7 +126,6 @@
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
-; llvm/optimized/SplitModule.cpp.ll
 ; llvm/optimized/X86LoadValueInjectionLoadHardening.cpp.ll
 ; mold/optimized/output-chunks.cc.SH4.cc.ll
 ; oiio/optimized/CineonHeader.cpp.ll
@@ -203,7 +202,6 @@
 ; opencv/optimized/brisk.cpp.ll
 ; opencv/optimized/mathfuncs.cpp.ll
 ; opencv/optimized/matmul.dispatch.cpp.ll
-; opencv/optimized/tf_importer.cpp.ll
 ; openjdk/optimized/g1ConcurrentMark.ll
 ; openusd/optimized/stencilTableFactory.cpp.ll
 ; postgres/optimized/md.ll
@@ -313,6 +311,7 @@
 ; xgboost/optimized/allreduce.cc.ll
 ; yosys/optimized/simplify.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/5e9omh398ijohtd01awo2ssl8.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0) #0 {
 entry:

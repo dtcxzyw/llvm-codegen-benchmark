@@ -12,7 +12,19 @@ define i8 @func0000000000000004(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = or disjoint i8 %2, 8
   %4 = select i1 %1, i8 %3, i8 %2
-  %5 = add i8 %4, %0
+  %5 = add i8 %0, %4
+  ret i8 %5
+}
+
+; 2 occurrences:
+; icu/optimized/scrptrun.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000007(i8 %0, i1 %1, i8 %2) #0 {
+entry:
+  %3 = or disjoint i8 %2, 16
+  %4 = select i1 %1, i8 %3, i8 %2
+  %5 = add nuw nsw i8 %4, %0
   ret i8 %5
 }
 

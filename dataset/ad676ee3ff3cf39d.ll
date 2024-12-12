@@ -1,7 +1,6 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; abc/optimized/giaJf.c.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; openssl/optimized/quic_ackm_test-bin-quic_ackm_test.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0, i64 %1) #0 {
@@ -27,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/int.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = ashr exact i32 %0, 16
@@ -38,7 +37,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/int.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = ashr exact i32 %0, 16
@@ -49,7 +48,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/int.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = ashr exact i32 %0, 16
@@ -61,7 +60,7 @@ entry:
 ; postgres/optimized/int.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000027(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = ashr exact i32 %0, 16
@@ -73,7 +72,7 @@ entry:
 ; postgres/optimized/int.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = ashr exact i32 %0, 16
@@ -84,7 +83,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/int.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i32 %0, i64 %1) #0 {
+define i1 @func000000000000002b(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = ashr exact i32 %0, 16
@@ -106,7 +105,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/icp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000046(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = ashr i32 %0, 1

@@ -1,5 +1,5 @@
 
-; 118 occurrences:
+; 114 occurrences:
 ; abc/optimized/abcNpn.c.ll
 ; abc/optimized/abcNpnSave.c.ll
 ; abc/optimized/aigTable.c.ll
@@ -23,7 +23,6 @@
 ; cmake/optimized/thread.c.ll
 ; darktable/optimized/PanasonicV5Decompressor.cpp.ll
 ; darktable/optimized/introspection_colorbalancergb.c.ll
-; eastl/optimized/EAFixedPoint.cpp.ll
 ; eastl/optimized/EAString.cpp.ll
 ; faiss/optimized/IndexAdditiveQuantizerFastScan.cpp.ll
 ; faiss/optimized/IndexFastScan.cpp.ll
@@ -47,7 +46,6 @@
 ; linux/optimized/percpu.ll
 ; linux/optimized/tree.ll
 ; llvm/optimized/Instructions.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; memcached/optimized/memcached-restart.ll
 ; memcached/optimized/memcached_debug-restart.ll
 ; nix/optimized/outputs-spec.ll
@@ -75,9 +73,7 @@
 ; openspiel/optimized/tiny_bridge.cc.ll
 ; openssl/optimized/libcrypto-lib-cms_pwri.ll
 ; openssl/optimized/libcrypto-shlib-cms_pwri.ll
-; openssl/optimized/libssl-lib-ssl3_meth.ll
 ; openssl/optimized/libssl-lib-tls1_meth.ll
-; openssl/optimized/libssl-shlib-ssl3_meth.ll
 ; openssl/optimized/libssl-shlib-tls1_meth.ll
 ; openusd/optimized/skinningQuery.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll

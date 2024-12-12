@@ -1,5 +1,5 @@
 
-; 154 occurrences:
+; 153 occurrences:
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; wireshark/optimized/sequence_analysis.c.ll
 ; z3/optimized/aig_exporter.cpp.ll
@@ -18,7 +18,6 @@
 ; z3/optimized/bv_bounds_tactic.cpp.ll
 ; z3/optimized/bv_size_reduction_tactic.cpp.ll
 ; z3/optimized/bvarray2uf_rewriter.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/ctx_solver_simplify_tactic.cpp.ll
 ; z3/optimized/dd_pdd.cpp.ll
 ; z3/optimized/degree_shift_tactic.cpp.ll
@@ -159,7 +158,7 @@ define i1 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 3
   %3 = add i32 %2, 2
-  %4 = icmp ult i32 %3, %0
+  %4 = icmp ugt i32 %0, %3
   ret i1 %4
 }
 
@@ -170,11 +169,11 @@ entry:
 ; icu/optimized/uresbund.ll
 ; openjdk/optimized/mlib_ImageLookUp_Bit.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 3
   %3 = add nsw i32 %2, -24
-  %4 = icmp slt i32 %3, %0
+  %4 = icmp sgt i32 %0, %3
   ret i1 %4
 }
 
@@ -187,11 +186,11 @@ entry:
 ; eastl/optimized/TestSort.cpp.ll
 ; openjdk/optimized/mlib_ImageLookUp_Bit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 3
   %3 = add nsw i32 %2, -4
-  %4 = icmp sgt i32 %3, %0
+  %4 = icmp slt i32 %0, %3
   ret i1 %4
 }
 
@@ -199,19 +198,20 @@ entry:
 ; libpng/optimized/png.c.ll
 ; openjdk/optimized/png.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000144(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw i32 %1, 12
   %3 = add nuw i32 %2, 132
-  %4 = icmp ugt i32 %3, %0
+  %4 = icmp ult i32 %0, %3
   ret i1 %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; hdf5/optimized/H5C.c.ll
 ; hdf5/optimized/H5Ctag.c.ll
 ; hdf5/optimized/H5Iint.c.ll
 ; linux/optimized/netdev.ll
+; lvgl/optimized/lv_svg_parser.ll
 ; openjdk/optimized/cmstypes.ll
 ; openmpi/optimized/tm_malloc.ll
 ; slurm/optimized/xhash.ll
@@ -221,7 +221,7 @@ define i1 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 12
   %3 = add i32 %2, 16
-  %4 = icmp ugt i32 %3, %0
+  %4 = icmp ult i32 %0, %3
   ret i1 %4
 }
 
@@ -235,11 +235,11 @@ entry:
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 27
   %3 = add nsw i32 %2, -292
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
@@ -413,11 +413,11 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001a1(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 27
   %3 = add nsw i32 %2, -292
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
@@ -432,7 +432,7 @@ define i1 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 5
   %3 = add i32 %2, -5
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
@@ -443,7 +443,7 @@ define i1 @func000000000000000b(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 14
   %3 = add i32 %2, 68
-  %4 = icmp sle i32 %3, %0
+  %4 = icmp sge i32 %0, %3
   ret i1 %4
 }
 
@@ -457,7 +457,7 @@ define i1 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 3
   %3 = add i32 %2, 1
-  %4 = icmp sgt i32 %3, %0
+  %4 = icmp slt i32 %0, %3
   ret i1 %4
 }
 
@@ -465,11 +465,11 @@ entry:
 ; linux/optimized/intel_dmc.ll
 ; wireshark/optimized/packet-ieee17221.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001e1(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 3
   %3 = add nuw nsw i32 %2, 11
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
@@ -477,11 +477,11 @@ entry:
 ; linux/optimized/generic-radix-tree.ll
 ; wireshark/optimized/packet-uftp.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f6(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001e6(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 52
   %3 = add nuw nsw i32 %2, 12
-  %4 = icmp sgt i32 %3, %0
+  %4 = icmp slt i32 %0, %3
   ret i1 %4
 }
 
@@ -489,22 +489,22 @@ entry:
 ; linux/optimized/generic-radix-tree.ll
 ; openblas/optimized/dgges3.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000fb(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001eb(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 9
   %3 = add nuw nsw i32 %2, 12
-  %4 = icmp sle i32 %3, %0
+  %4 = icmp sge i32 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; opencv/optimized/fast_window_binarizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a6(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000146(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw i32 %1, 6
   %3 = add nuw i32 %2, 6
-  %4 = icmp sgt i32 %3, %0
+  %4 = icmp slt i32 %0, %3
   ret i1 %4
 }
 

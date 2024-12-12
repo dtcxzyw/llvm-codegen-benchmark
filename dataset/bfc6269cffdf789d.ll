@@ -1,5 +1,5 @@
 
-; 86 occurrences:
+; 88 occurrences:
 ; clamav/optimized/Lzma2Dec.c.ll
 ; clamav/optimized/nulsft.c.ll
 ; clamav/optimized/readdb.c.ll
@@ -82,6 +82,8 @@
 ; wireshark/optimized/packet-pop.c.ll
 ; wireshark/optimized/packet-quic.c.ll
 ; wireshark/optimized/tvbuff_zlib.c.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
 ; zlib/optimized/deflate.c.ll
 ; zlib/optimized/gzwrite.c.ll
 ; zstd/optimized/zstd_lazy.c.ll
@@ -91,7 +93,7 @@ define i32 @func0000000000000000(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub i64 %2, %1
   %.neg1 = trunc i64 %.neg to i32
-  %3 = add i32 %.neg1, %0
+  %3 = add i32 %0, %.neg1
   ret i32 %3
 }
 
@@ -112,7 +114,7 @@ define i32 @func0000000000000009(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub i64 %2, %1
   %.neg1 = trunc i64 %.neg to i32
-  %3 = add i32 %.neg1, %0
+  %3 = add i32 %0, %.neg1
   ret i32 %3
 }
 
@@ -158,11 +160,11 @@ define i32 @func0000000000000001(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub i64 %2, %1
   %.neg1 = trunc i64 %.neg to i32
-  %3 = add i32 %.neg1, %0
+  %3 = add i32 %0, %.neg1
   ret i32 %3
 }
 
-; 8 occurrences:
+; 11 occurrences:
 ; cmake/optimized/frm_driver.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; linux/optimized/i915_perf.ll
@@ -171,12 +173,15 @@ entry:
 ; openjdk/optimized/hb-buffer-serialize.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; qemu/optimized/hw_ufs_lu.c.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub i64 %2, %1
   %.neg1 = trunc i64 %.neg to i32
-  %3 = add i32 %.neg1, %0
+  %3 = add i32 %0, %.neg1
   ret i32 %3
 }
 
@@ -190,7 +195,7 @@ define i32 @func0000000000000028(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub i64 %2, %1
   %.neg1 = trunc i64 %.neg to i32
-  %3 = add i32 %.neg1, %0
+  %3 = add i32 %0, %.neg1
   ret i32 %3
 }
 
@@ -212,7 +217,7 @@ define i32 @func0000000000000010(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub i64 %2, %1
   %.neg1 = trunc i64 %.neg to i32
-  %3 = add i32 %.neg1, %0
+  %3 = add i32 %0, %.neg1
   ret i32 %3
 }
 
@@ -224,7 +229,7 @@ define i32 @func0000000000000015(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub i64 %2, %1
   %.neg1 = trunc i64 %.neg to i32
-  %3 = add i32 %.neg1, %0
+  %3 = add i32 %0, %.neg1
   ret i32 %3
 }
 
@@ -235,7 +240,7 @@ define i32 @func000000000000000a(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub i64 %2, %1
   %.neg1 = trunc i64 %.neg to i32
-  %3 = add i32 %.neg1, %0
+  %3 = add i32 %0, %.neg1
   ret i32 %3
 }
 
@@ -247,7 +252,7 @@ define i32 @func0000000000000020(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub i64 %2, %1
   %.neg1 = trunc i64 %.neg to i32
-  %3 = add i32 %.neg1, %0
+  %3 = add i32 %0, %.neg1
   ret i32 %3
 }
 
@@ -263,7 +268,7 @@ define i32 @func0000000000000003(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub i64 %2, %1
   %.neg1 = trunc i64 %.neg to i32
-  %3 = add i32 %.neg1, %0
+  %3 = add i32 %0, %.neg1
   ret i32 %3
 }
 
@@ -278,7 +283,7 @@ define i32 @func0000000000000038(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub i64 %2, %1
   %.neg1 = trunc i64 %.neg to i32
-  %3 = add i32 %.neg1, %0
+  %3 = add i32 %0, %.neg1
   ret i32 %3
 }
 
@@ -293,7 +298,7 @@ define i32 @func0000000000000011(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub i64 %2, %1
   %.neg1 = trunc i64 %.neg to i32
-  %3 = add i32 %.neg1, %0
+  %3 = add i32 %0, %.neg1
   ret i32 %3
 }
 
@@ -307,7 +312,7 @@ define i32 @func0000000000000014(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub i64 %2, %1
   %.neg1 = trunc i64 %.neg to i32
-  %3 = add i32 %.neg1, %0
+  %3 = add i32 %0, %.neg1
   ret i32 %3
 }
 
@@ -318,7 +323,7 @@ define i32 @func0000000000000008(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub i64 %2, %1
   %.neg1 = trunc i64 %.neg to i32
-  %3 = add i32 %.neg1, %0
+  %3 = add i32 %0, %.neg1
   ret i32 %3
 }
 
@@ -329,7 +334,7 @@ define i32 @func0000000000000013(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub i64 %2, %1
   %.neg1 = trunc i64 %.neg to i32
-  %3 = add i32 %.neg1, %0
+  %3 = add i32 %0, %.neg1
   ret i32 %3
 }
 
@@ -340,7 +345,7 @@ define i32 @func0000000000000022(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub i64 %2, %1
   %.neg1 = trunc i64 %.neg to i32
-  %3 = add i32 %.neg1, %0
+  %3 = add i32 %0, %.neg1
   ret i32 %3
 }
 
@@ -351,7 +356,7 @@ define i32 @func0000000000000012(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %.neg = sub i64 %2, %1
   %.neg1 = trunc i64 %.neg to i32
-  %3 = add i32 %.neg1, %0
+  %3 = add i32 %0, %.neg1
   ret i32 %3
 }
 

@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 37 occurrences:
 ; abc/optimized/bzlib.c.ll
 ; abseil-cpp/optimized/crc.cc.ll
 ; arrow/optimized/crc32.cc.ll
@@ -24,7 +24,6 @@
 ; openssl/optimized/libcrypto-shlib-bn_lib.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; openusd/optimized/zipFile.cpp.ll
-; php/optimized/hash_crc32.ll
 ; postgres/optimized/tsgistidx.ll
 ; postgres/optimized/tsquery.ll
 ; raylib/optimized/raudio.c.ll
@@ -42,7 +41,7 @@
 define i64 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -53,7 +52,7 @@ entry:
 define i64 @func0000000000000003(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -73,7 +72,7 @@ entry:
 define i64 @func0000000000000000(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
@@ -84,7 +83,7 @@ entry:
 define i64 @func0000000000000002(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }

@@ -1,4 +1,4 @@
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	andi	a1, a1, 255
 	slli	a1, a1, 2
 	add	a0, a0, a1
@@ -12,11 +12,11 @@ func000000000000000c:                   # @func000000000000000c
 	addiw	a1, a1, 512
 	add	a0, a0, a1
 	ret
-func000000000000000a:                   # @func000000000000000a
-	ori	a1, a1, 48
+func000000000000000b:                   # @func000000000000000b
+	ori	a1, a1, 13
 	li	a2, 1
 	slli	a2, a2, 32
-	addi	a2, a2, -208
+	addi	a2, a2, -3
 	and	a1, a1, a2
 	add	a0, a0, a1
 	ret

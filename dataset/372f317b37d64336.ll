@@ -1,5 +1,6 @@
 
-; 126 occurrences:
+; 125 occurrences:
+; boost/optimized/numeric.ll
 ; clamav/optimized/aspack.c.ll
 ; clamav/optimized/entconv.c.ll
 ; clamav/optimized/matcher-byte-comp.c.ll
@@ -16,6 +17,7 @@
 ; darktable/optimized/TiffEntry.cpp.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; eastl/optimized/TestBitVector.cpp.ll
+; freetype/optimized/cff.c.ll
 ; freetype/optimized/truetype.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hdf5/optimized/H5Zscaleoffset.c.ll
@@ -39,12 +41,10 @@
 ; linux/optimized/io_uring.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/nls_base.ll
-; linux/optimized/nsxfname.ll
 ; linux/optimized/phy_device.ll
 ; linux/optimized/public_key.ll
 ; linux/optimized/shm.ll
 ; linux/optimized/sky2.ll
-; linux/optimized/swphy.ll
 ; linux/optimized/tcp_input.ll
 ; linux/optimized/tg3.ll
 ; llvm/optimized/BlockFrequencyInfo.cpp.ll
@@ -97,7 +97,6 @@
 ; qemu/optimized/hw_ipack_tpci200.c.ll
 ; qemu/optimized/hw_net_pcnet.c.ll
 ; qemu/optimized/hw_pci_pcie_aer.c.ll
-; qemu/optimized/hw_sd_ssi-sd.c.ll
 ; qemu/optimized/hw_usb_hcd-uhci.c.ll
 ; qemu/optimized/system_physmem.c.ll
 ; raylib/optimized/rtext.c.ll
@@ -134,14 +133,11 @@ entry:
   ret i16 %4
 }
 
-; 9 occurrences:
+; 6 occurrences:
 ; eastl/optimized/EAString.cpp.ll
-; image-rs/optimized/4srzh4wujeew249y.ll
 ; linux/optimized/sky2.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
-; openexr/optimized/ImfInputFile.cpp.ll
-; openexr/optimized/ImfRgbaYca.cpp.ll
 ; qemu/optimized/nbd_server.c.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; Function Attrs: nounwind
@@ -165,12 +161,14 @@ entry:
   ret i16 %3
 }
 
-; 9 occurrences:
+; 11 occurrences:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; image-rs/optimized/30755d6iao7ojcvl.ll
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/phy-c45.ll
 ; llvm/optimized/DbiStreamBuilder.cpp.ll
+; luajit/optimized/lj_asm.ll
+; luajit/optimized/lj_asm_dyn.ll
 ; postgres/optimized/ginget.ll
 ; postgres/optimized/nbtsearch.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
@@ -183,11 +181,22 @@ entry:
   ret i16 %4
 }
 
-; 7 occurrences:
-; hermes/optimized/escape.cpp.ll
+; 4 occurrences:
+; image-rs/optimized/4srzh4wujeew249y.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; openexr/optimized/ImfInputFile.cpp.ll
+; openexr/optimized/ImfRgbaYca.cpp.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000018(i16 %0, i16 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i32 %2, 65535
+  %4 = select i1 %3, i16 %0, i16 %1
+  ret i16 %4
+}
+
+; 5 occurrences:
 ; icu/optimized/ubidiwrt.ll
 ; libpng/optimized/png.c.ll
-; openexr/optimized/ImfInputFile.cpp.ll
 ; openjdk/optimized/png.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
@@ -215,6 +224,18 @@ entry:
 define i16 @func000000000000000a(i16 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
+  %4 = select i1 %3, i16 %0, i16 %1
+  ret i16 %4
+}
+
+; 3 occurrences:
+; hermes/optimized/escape.cpp.ll
+; openexr/optimized/ImfInputFile.cpp.ll
+; postgres/optimized/heapam.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000014(i16 %0, i16 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 10
   %4 = select i1 %3, i16 %0, i16 %1
   ret i16 %4
 }

@@ -4,6 +4,18 @@ func0000000000000000:                   # @func0000000000000000
 	add	a0, a0, a2
 	addiw	a0, a0, -1
 	ret
+func0000000000000014:                   # @func0000000000000014
+	sraiw	a2, a2, 1
+	add	a0, a0, a1
+	add	a0, a0, a2
+	addiw	a0, a0, 1
+	ret
+func0000000000000001:                   # @func0000000000000001
+	sraiw	a2, a2, 1
+	add	a0, a0, a1
+	add	a0, a0, a2
+	addiw	a0, a0, 2
+	ret
 func0000000000000015:                   # @func0000000000000015
 	sraiw	a2, a2, 19
 	add	a0, a0, a1

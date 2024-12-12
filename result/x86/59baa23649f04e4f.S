@@ -11,10 +11,10 @@ func0000000000000004:                   # @func0000000000000004
 	andb	%sil, %al
 	retq
 func000000000000000c:                   # @func000000000000000c
-	andl	%edx, %esi
-	cmpw	$2, %di
+	cmpw	$3, %dx
 	setne	%al
-	andb	%sil, %al
+	andl	%esi, %edi
+	andb	%dil, %al
 	retq
 func0000000000000008:                   # @func0000000000000008
 	andl	%edx, %esi

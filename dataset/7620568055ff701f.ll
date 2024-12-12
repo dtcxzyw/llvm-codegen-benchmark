@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 25 occurrences:
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; abc/optimized/giaCSat2.c.ll
@@ -12,13 +12,8 @@
 ; icu/optimized/ucase.ll
 ; influxdb-rs/optimized/2g8nrbnslhx52xx1.ll
 ; libpng/optimized/pngwrite.c.ll
-; libwebp/optimized/upsampling.c.ll
-; libwebp/optimized/upsampling_sse2.c.ll
-; libwebp/optimized/yuv.c.ll
 ; linux/optimized/pci.ll
 ; linux/optimized/tg3.ll
-; llvm/optimized/DIE.cpp.ll
-; llvm/optimized/DWARFFormValue.cpp.ll
 ; memcached/optimized/crc32c.ll
 ; memcached/optimized/memcached-crc32c.ll
 ; memcached/optimized/memcached_debug-crc32c.ll
@@ -27,6 +22,9 @@
 ; qemu/optimized/target_riscv_debug.c.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1, i32 %2) #0 {
 entry:

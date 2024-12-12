@@ -1,6 +1,5 @@
 
-; 6 occurrences:
-; clamav/optimized/lzma_iface.c.ll
+; 5 occurrences:
 ; eastl/optimized/TestBitVector.cpp.ll
 ; llvm/optimized/AArch64StackTagging.cpp.ll
 ; mitsuba3/optimized/xml.cpp.ll

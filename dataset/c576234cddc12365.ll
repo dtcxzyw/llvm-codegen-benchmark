@@ -1,8 +1,10 @@
 
-; 205 occurrences:
+; 206 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cordz_test.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
+; boost/optimized/src.ll
+; boost/optimized/static_string.ll
 ; c3c/optimized/sema_passes.c.ll
 ; casadi/optimized/tinyxml2.cpp.ll
 ; cmake/optimized/doh.c.ll
@@ -41,6 +43,7 @@
 ; git/optimized/xemit.ll
 ; graphviz/optimized/gv2gxl.c.ll
 ; graphviz/optimized/maze.c.ll
+; graphviz/optimized/spring_electrical.c.ll
 ; gromacs/optimized/dorm2r.cpp.ll
 ; gromacs/optimized/dormqr.cpp.ll
 ; gromacs/optimized/sim_util.cpp.ll
@@ -97,21 +100,16 @@
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SemaCast.cpp.ll
-; llvm/optimized/SemaConcept.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
-; llvm/optimized/SemaDeclCXX.cpp.ll
-; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
-; llvm/optimized/SemaTemplate.cpp.ll
-; llvm/optimized/SemaTemplateDeduction.cpp.ll
-; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
-; llvm/optimized/SemaTemplateInstantiate.cpp.ll
-; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; llvm/optimized/TruncInstCombine.cpp.ll
 ; llvm/optimized/VarLocBasedImpl.cpp.ll
 ; lua/optimized/lgc.ll
 ; luau/optimized/Config.cpp.ll
 ; luau/optimized/ConstantFolding.cpp.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
+; lvgl/optimized/lv_draw_sw_triangle.ll
+; lvgl/optimized/lv_indev.ll
 ; minetest/optimized/guiButton.cpp.ll
 ; minetest/optimized/mapnode.cpp.ll
 ; miniaudio/optimized/unity.c.ll
@@ -196,13 +194,16 @@
 ; wireshark/optimized/packet-scsi-osd.c.ll
 ; wireshark/optimized/packet-scte35.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
-; wireshark/optimized/packet-skype.c.ll
 ; wireshark/optimized/packet-sua.c.ll
 ; wireshark/optimized/packet-websocket.c.ll
 ; z3/optimized/dep_intervals.cpp.ll
 ; z3/optimized/interval_mpq.cpp.ll
 ; z3/optimized/nla_intervals.cpp.ll
 ; z3/optimized/theory_bv.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; zxing/optimized/TextDecoder.cpp.ll
 ; Function Attrs: nounwind

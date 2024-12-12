@@ -1,9 +1,8 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; gromacs/optimized/forcetable.cpp.ll
 ; ocio/optimized/LogUtils.cpp.ll
 ; proj/optimized/healpix.cpp.ll
-; proj/optimized/nell_h.cpp.ll
 ; quantlib/optimized/analyticgjrgarchengine.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(double %0, double %1, double %2) #0 {

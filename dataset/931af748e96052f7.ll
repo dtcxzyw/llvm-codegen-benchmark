@@ -1,5 +1,5 @@
 
-; 132 occurrences:
+; 131 occurrences:
 ; abc/optimized/dauNpn2.c.ll
 ; abc/optimized/giaGlitch.c.ll
 ; clamav/optimized/infblock.c.ll
@@ -130,7 +130,6 @@
 ; openusd/optimized/vec3h.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; qemu/optimized/hw_usb_dev-smartcard-reader.c.ll
-; redis/optimized/rax.ll
 ; wireshark/optimized/packet-x11.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
@@ -189,7 +188,7 @@ entry:
   ret i32 %5
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; hdf5/optimized/H5Ctag.c.ll
 ; hdf5/optimized/H5Iint.c.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
@@ -197,7 +196,6 @@ entry:
 ; linux/optimized/ccm.ll
 ; linux/optimized/compat_binfmt_elf.ll
 ; linux/optimized/gcm.ll
-; linux/optimized/rss.ll
 ; linux/optimized/slab_common.ll
 ; llvm/optimized/Descriptor.cpp.ll
 ; openmpi/optimized/tm_malloc.ll

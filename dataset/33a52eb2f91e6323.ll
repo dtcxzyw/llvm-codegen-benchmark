@@ -10,10 +10,10 @@
 ; openjdk/optimized/AccelGlyphCache.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %reass.add = shl i32 %1, 1
-  %3 = add i32 %reass.add, %2
+  %3 = add i32 %2, %reass.add
   %4 = icmp sgt i32 %3, %0
   ret i1 %4
 }
@@ -24,7 +24,7 @@ entry:
 define i1 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %reass.add = shl i32 %1, 1
-  %3 = add i32 %reass.add, %2
+  %3 = add i32 %2, %reass.add
   %4 = icmp ult i32 %3, %0
   ret i1 %4
 }
@@ -36,7 +36,7 @@ entry:
 define i1 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %reass.add = shl i32 %1, 1
-  %3 = add i32 %reass.add, %2
+  %3 = add i32 %2, %reass.add
   %4 = icmp ugt i32 %3, %0
   ret i1 %4
 }
@@ -47,7 +47,7 @@ entry:
 define i1 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %reass.add = shl i32 %1, 1
-  %3 = add i32 %reass.add, %2
+  %3 = add i32 %2, %reass.add
   %4 = icmp slt i32 %3, %0
   ret i1 %4
 }
@@ -55,11 +55,11 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/checkers.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000b4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %reass.add = shl i32 %1, 1
-  %3 = add i32 %reass.add, %2
-  %4 = icmp ult i32 %3, %0
+  %3 = add i32 %2, %reass.add
+  %4 = icmp samesign ult i32 %3, %0
   ret i1 %4
 }
 

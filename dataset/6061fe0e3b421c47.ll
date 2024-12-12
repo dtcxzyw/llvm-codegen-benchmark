@@ -37,16 +37,4 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
-; opencv/optimized/distransform.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000015(i64 %0, i32 %1) #0 {
-entry:
-  %2 = shl nsw i32 %1, 1
-  %3 = xor i32 %2, -1
-  %4 = sext i32 %3 to i64
-  %5 = add i64 %4, %0
-  ret i64 %5
-}
-
 attributes #0 = { nounwind }

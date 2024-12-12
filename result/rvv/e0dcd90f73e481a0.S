@@ -12,10 +12,3 @@ func000000000000005d:                   # @func000000000000005d
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vmadd.vx	v8, a0, v12
 	ret
-func0000000000000030:                   # @func0000000000000030
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vwsll.vi	v12, v10, 4
-	li	a0, 3
-	vsetvli	zero, zero, e64, m2, ta, ma
-	vmadd.vx	v8, a0, v12
-	ret

@@ -1,46 +1,46 @@
-func00000000000000d4:                   # @func00000000000000d4
+func00000000000001a4:                   # @func00000000000001a4
 	srai	a2, a2, 2
 	sub	a0, a0, a2
 	srai	a1, a1, 2
 	sltu	a0, a0, a1
 	ret
-func00000000000000e8:                   # @func00000000000000e8
+func00000000000001c8:                   # @func00000000000001c8
 	srai	a2, a2, 2
 	sub	a0, a0, a2
 	srai	a1, a1, 2
 	sltu	a0, a1, a0
 	ret
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000001e8:                   # @func00000000000001e8
 	srai	a2, a2, 3
 	sub	a0, a0, a2
 	srai	a1, a1, 3
 	sltu	a0, a1, a0
 	ret
-func00000000000000f6:                   # @func00000000000000f6
+func00000000000001e6:                   # @func00000000000001e6
 	srai	a2, a2, 2
 	sub	a0, a0, a2
 	srai	a1, a1, 3
 	slt	a0, a0, a1
 	ret
-func00000000000000fa:                   # @func00000000000000fa
+func00000000000001ea:                   # @func00000000000001ea
 	srai	a2, a2, 2
 	sub	a0, a0, a2
 	srai	a1, a1, 3
 	slt	a0, a1, a0
 	ret
-func00000000000000e6:                   # @func00000000000000e6
+func00000000000001c6:                   # @func00000000000001c6
 	srai	a2, a2, 2
 	sub	a0, a0, a2
 	srai	a1, a1, 3
 	slt	a0, a0, a1
 	ret
-func00000000000000ea:                   # @func00000000000000ea
+func00000000000001ca:                   # @func00000000000001ca
 	srai	a2, a2, 2
 	sub	a0, a0, a2
 	srai	a1, a1, 3
 	slt	a0, a1, a0
 	ret
-func00000000000000e4:                   # @func00000000000000e4
+func00000000000001c4:                   # @func00000000000001c4
 	srai	a2, a2, 3
 	sub	a0, a0, a2
 	srai	a1, a1, 3

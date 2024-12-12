@@ -1,9 +1,9 @@
-func000000000000007e:                   # @func000000000000007e
+func000000000000007f:                   # @func000000000000007f
 	addiw	a2, a2, 1
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func000000000000003e:                   # @func000000000000003e
+func000000000000003f:                   # @func000000000000003f
 	addiw	a2, a2, 1
 	mul	a1, a1, a2
 	sh3add	a0, a1, a0
@@ -26,7 +26,7 @@ func0000000000000000:                   # @func0000000000000000
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	addi	a2, a2, -1
 	zext.w	a2, a2
 	mul	a1, a1, a2
@@ -43,11 +43,16 @@ func0000000000000044:                   # @func0000000000000044
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	addi	a2, a2, -1
 	zext.w	a2, a2
 	mul	a1, a1, a2
 	sh2add	a0, a1, a0
+	ret
+func0000000000000033:                   # @func0000000000000033
+	addiw	a2, a2, -2
+	mul	a1, a1, a2
+	sh3add	a0, a1, a0
 	ret
 func0000000000000014:                   # @func0000000000000014
 	addiw	a2, a2, 1
@@ -91,6 +96,12 @@ func000000000000000a:                   # @func000000000000000a
 	mul	a1, a1, a2
 	sh2add	a0, a1, a0
 	ret
+func0000000000000002:                   # @func0000000000000002
+	addi	a2, a2, 1
+	zext.w	a2, a2
+	mul	a1, a1, a2
+	sh2add	a0, a1, a0
+	ret
 func000000000000007c:                   # @func000000000000007c
 	addiw	a2, a2, 1
 	mul	a1, a1, a2
@@ -122,7 +133,12 @@ func0000000000000012:                   # @func0000000000000012
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func000000000000001e:                   # @func000000000000001e
+func000000000000003e:                   # @func000000000000003e
+	addiw	a2, a2, 1
+	mul	a1, a1, a2
+	add	a0, a0, a1
+	ret
+func000000000000001f:                   # @func000000000000001f
 	addiw	a2, a2, -1
 	mul	a1, a1, a2
 	add	a0, a0, a1

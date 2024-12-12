@@ -8,7 +8,7 @@
 	.byte	12                              # 0xc
 .LCPI0_4:
 	.byte	2                               # 0x2
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpbroadcastb	.LCPI0_3(%rip), %xmm2   # xmm2 = [12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12]
 	vpand	%xmm2, %xmm1, %xmm1
 	vpcmpeqb	%xmm2, %xmm1, %k1

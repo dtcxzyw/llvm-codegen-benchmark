@@ -1,5 +1,6 @@
 
-; 1 occurrences:
+; 2 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; minetest/optimized/CImage.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i16 %0, i16 %1, i16 %2) #0 {

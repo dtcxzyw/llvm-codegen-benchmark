@@ -70,11 +70,12 @@ entry:
   ret i32 %5
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; abc/optimized/fraHot.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; icu/optimized/decNumber.ll
 ; icu/optimized/islamcal.ll
+; lvgl/optimized/lv_bar.ll
 ; openblas/optimized/dlaqr0.c.ll
 ; openblas/optimized/dlaqr4.c.ll
 ; openjdk/optimized/jidctint.ll
@@ -114,7 +115,8 @@ entry:
   ret i32 %5
 }
 
-; 14 occurrences:
+; 15 occurrences:
+; boost/optimized/to_chars.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; git/optimized/diff.ll
 ; openblas/optimized/dgghd3.c.ll
@@ -170,7 +172,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = sub nsw i32 %4, %0
   ret i32 %5
 }

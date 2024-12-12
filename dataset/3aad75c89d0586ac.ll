@@ -1,5 +1,5 @@
 
-; 292 occurrences:
+; 290 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
@@ -113,8 +113,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -300,23 +298,22 @@ entry:
   ret i64 %3
 }
 
-; 2 occurrences:
-; linux/optimized/hpet.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
-entry:
-  %2 = mul nuw nsw i64 %1, 1000000000
-  %3 = lshr i64 %2, %0
-  ret i64 %3
-}
-
 ; 1 occurrences:
 ; abc/optimized/ifDec07.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nuw i64 %1, 4294967297
+  %3 = lshr i64 %2, %0
+  ret i64 %3
+}
+
+; 1 occurrences:
+; linux/optimized/hpet.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
+entry:
+  %2 = mul nuw nsw i64 %1, 1000000000
   %3 = lshr i64 %2, %0
   ret i64 %3
 }

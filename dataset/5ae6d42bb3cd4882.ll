@@ -1,6 +1,7 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; abseil-cpp/optimized/nonsecure_base_test.cc.ll
+; boost/optimized/async_pipe.ll
 ; clamav/optimized/arcread.cpp.ll
 ; clap-rs/optimized/3b4nqkxyl1xqdcre.ll
 ; clap-rs/optimized/5651dp9k16h53y8x.ll
@@ -25,9 +26,15 @@ entry:
   ret i8 %4
 }
 
-; 6 occurrences:
+; 12 occurrences:
+; boost/optimized/benchmark_fstream.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/test_filebuf.ll
+; boost/optimized/test_fstream.ll
+; boost/optimized/test_fstream_special.ll
+; boost/optimized/test_ifstream.ll
+; boost/optimized/test_ofstream.ll
 ; llvm/optimized/AMDGPU.cpp.ll
-; llvm/optimized/CommandFlags.cpp.ll
 ; opencv/optimized/out.cpp.ll
 ; qemu/optimized/hw_pci_pcie.c.ll
 ; wireshark/optimized/qcustomplot.cpp.ll

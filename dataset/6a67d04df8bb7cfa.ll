@@ -1,5 +1,5 @@
 
-; 31 occurrences:
+; 33 occurrences:
 ; flac/optimized/picture.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -31,8 +31,10 @@
 ; ruby/optimized/utf_32be.ll
 ; sqlite/optimized/sqlite3.ll
 ; z3/optimized/doc.cpp.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp eq i32 %3, 0
@@ -40,8 +42,15 @@ entry:
   ret i1 %5
 }
 
-; 45 occurrences:
+; 51 occurrences:
 ; abc/optimized/saigRetMin.c.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; cmake/optimized/test_int_C.c.ll
 ; cmake/optimized/test_int_CXX.cxx.ll
 ; cpython/optimized/_iomodule.ll
@@ -49,7 +58,6 @@ entry:
 ; cpython/optimized/lexer.ll
 ; cpython/optimized/unicodedata.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
-; flac/optimized/ogg_encoder_aspect.c.ll
 ; glslang/optimized/Initialize.cpp.ll
 ; libquic/optimized/d1_srvr.c.ll
 ; libquic/optimized/mul.c.ll
@@ -91,7 +99,7 @@ define i1 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = icmp eq i32 %3, 0
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -123,11 +131,11 @@ entry:
 ; wolfssl/optimized/api.c.ll
 ; z3/optimized/doc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp ne i32 %3, 536936448
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -205,76 +213,58 @@ define i1 @func000000000000000c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
   %4 = icmp ne i32 %3, 0
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 9 occurrences:
-; cmake/optimized/idna.c.ll
-; libuv/optimized/idna.c.ll
-; linux/optimized/intel_gt_mcr.ll
-; node/optimized/idna.ll
+; 3 occurrences:
 ; qemu/optimized/fdt.c.ll
-; qemu/optimized/hw_scsi_esp.c.ll
 ; spike/optimized/fdt.ll
-; wolfssl/optimized/internal.c.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp ult i32 %3, 16
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 24 occurrences:
-; cmake/optimized/idna.c.ll
-; cmake/optimized/json_writer.cpp.ll
+; 4 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; harfbuzz/optimized/hb-subset-plan.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
-; hermes/optimized/BytecodeGenerator.cpp.ll
-; hermes/optimized/HBC.cpp.ll
-; hermes/optimized/JSLexer.cpp.ll
-; html5ever-rs/optimized/38n20yzo26sy51uu.ll
-; libuv/optimized/idna.c.ll
 ; linux/optimized/intel_gt_mcr.ll
 ; linux/optimized/intel_uncore.ll
-; meshlab/optimized/gltf_loader.cpp.ll
-; node/optimized/idna.ll
-; node/optimized/simdutf.ll
-; nori/optimized/nanovg.c.ll
 ; openjdk/optimized/hb-ot-layout.ll
-; openusd/optimized/pathExpression.cpp.ll
-; openusd/optimized/pathParser.cpp.ll
-; openusd/optimized/predicateExpression.cpp.ll
-; php/optimized/html.ll
-; simdjson/optimized/simdjson.cpp.ll
-; velox/optimized/Utf8Utils.cpp.ll
-; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000038(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = icmp ugt i32 %3, 1
+  %4 = icmp samesign ugt i32 %3, 1
   %5 = and i1 %4, %0
   ret i1 %5
 }
 
-; 6 occurrences:
-; llvm/optimized/TwoAddressInstructionPass.cpp.ll
-; llvm/optimized/ValueTracking.cpp.ll
-; llvm/optimized/X86TargetMachine.cpp.ll
+; 1 occurrences:
 ; php/optimized/pcre2_compile.ll
-; sqlite/optimized/sqlite3.ll
-; z3/optimized/model_based_opt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
-  %4 = icmp ult i32 %3, 128
-  %5 = and i1 %4, %0
+  %4 = icmp samesign ult i32 %3, 128
+  %5 = and i1 %0, %4
+  ret i1 %5
+}
+
+; 3 occurrences:
+; boost/optimized/ipv6_address_rule.ll
+; linux/optimized/intel_gt_mcr.ll
+; wolfssl/optimized/internal.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or disjoint i32 %1, %2
+  %4 = icmp samesign ult i32 %3, 598
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -288,6 +278,34 @@ entry:
   %3 = or i32 %1, %2
   %4 = icmp slt i32 %3, 0
   %5 = and i1 %4, %0
+  ret i1 %5
+}
+
+; 5 occurrences:
+; llvm/optimized/TwoAddressInstructionPass.cpp.ll
+; llvm/optimized/ValueTracking.cpp.ll
+; llvm/optimized/X86TargetMachine.cpp.ll
+; sqlite/optimized/sqlite3.ll
+; z3/optimized/model_based_opt.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or i32 %1, %2
+  %4 = icmp ult i32 %3, 2
+  %5 = and i1 %0, %4
+  ret i1 %5
+}
+
+; 3 occurrences:
+; harfbuzz/optimized/hb-subset-plan.cc.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; zxing/optimized/zueci.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or disjoint i32 %1, %2
+  %4 = icmp ugt i32 %3, 57343
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

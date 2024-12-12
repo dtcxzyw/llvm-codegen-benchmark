@@ -1,96 +1,48 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	fcmgt	v16.4s, v4.4s, v0.4s
-	fcmgt	v17.4s, v7.4s, v3.4s
-	fcmgt	v18.4s, v6.4s, v2.4s
-	fcmgt	v19.4s, v5.4s, v1.4s
-	bif	v0.16b, v4.16b, v16.16b
-	bif	v2.16b, v6.16b, v18.16b
-	bif	v3.16b, v7.16b, v17.16b
-	bif	v1.16b, v5.16b, v19.16b
+	fcmp	s0, s1
+	fcsel	s0, s0, s1, mi
 	ret
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	fcmgt	v16.4s, v0.4s, v4.4s
-	fcmgt	v17.4s, v3.4s, v7.4s
-	fcmgt	v18.4s, v2.4s, v6.4s
-	fcmgt	v19.4s, v1.4s, v5.4s
-	bif	v0.16b, v4.16b, v16.16b
-	bif	v2.16b, v6.16b, v18.16b
-	bif	v3.16b, v7.16b, v17.16b
-	bif	v1.16b, v5.16b, v19.16b
+	fcmp	s0, s1
+	fcsel	s0, s0, s1, gt
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	fcmge	v16.4s, v4.4s, v0.4s
-	fcmge	v17.4s, v7.4s, v3.4s
-	fcmge	v18.4s, v6.4s, v2.4s
-	fcmge	v19.4s, v5.4s, v1.4s
-	bif	v0.16b, v4.16b, v16.16b
-	bif	v2.16b, v6.16b, v18.16b
-	bif	v3.16b, v7.16b, v17.16b
-	bif	v1.16b, v5.16b, v19.16b
+	fcmp	s0, s1
+	fcsel	s0, s0, s1, ls
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	fcmge	v16.4s, v0.4s, v4.4s
-	fcmge	v17.4s, v3.4s, v7.4s
-	fcmge	v18.4s, v2.4s, v6.4s
-	fcmge	v19.4s, v1.4s, v5.4s
-	bif	v0.16b, v4.16b, v16.16b
-	bif	v2.16b, v6.16b, v18.16b
-	bif	v3.16b, v7.16b, v17.16b
-	bif	v1.16b, v5.16b, v19.16b
+	fcmp	s0, s1
+	fcsel	s0, s0, s1, ge
 	ret
                                         // -- End function
 func000000000000000d:                   // @func000000000000000d
 // %bb.0:                               // %entry
-	fcmgt	v16.4s, v0.4s, v4.4s
-	fcmgt	v17.4s, v3.4s, v7.4s
-	fcmgt	v18.4s, v2.4s, v6.4s
-	fcmgt	v19.4s, v1.4s, v5.4s
-	bit	v0.16b, v4.16b, v16.16b
-	bit	v2.16b, v6.16b, v18.16b
-	bit	v3.16b, v7.16b, v17.16b
-	bit	v1.16b, v5.16b, v19.16b
+	fcmp	s1, s0
+	fcsel	s0, s1, s0, mi
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	fcmge	v16.4s, v4.4s, v0.4s
-	fcmge	v17.4s, v7.4s, v3.4s
-	fcmge	v18.4s, v6.4s, v2.4s
-	fcmge	v19.4s, v5.4s, v1.4s
-	bit	v0.16b, v4.16b, v16.16b
-	bit	v2.16b, v6.16b, v18.16b
-	bit	v3.16b, v7.16b, v17.16b
-	bit	v1.16b, v5.16b, v19.16b
+	fcmp	s0, s1
+	fcsel	s0, s1, s0, ls
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	fcmge	v16.4s, v4.4s, v0.4s
-	fcmge	v17.4s, v7.4s, v3.4s
-	fcmge	v18.4s, v6.4s, v2.4s
-	fcmge	v19.4s, v5.4s, v1.4s
-	bit	v0.16b, v4.16b, v16.16b
-	bit	v2.16b, v6.16b, v18.16b
-	bit	v3.16b, v7.16b, v17.16b
-	bit	v1.16b, v5.16b, v19.16b
+	fcmp	s1, s0
+	fcsel	s0, s1, s0, ge
 	ret
                                         // -- End function
 func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
-	fcmgt	v16.4s, v4.4s, v0.4s
-	fcmgt	v17.4s, v7.4s, v3.4s
-	fcmgt	v18.4s, v6.4s, v2.4s
-	fcmgt	v19.4s, v5.4s, v1.4s
-	bit	v0.16b, v4.16b, v16.16b
-	bit	v2.16b, v6.16b, v18.16b
-	bit	v3.16b, v7.16b, v17.16b
-	bit	v1.16b, v5.16b, v19.16b
+	fcmp	s1, s0
+	fcsel	s0, s1, s0, gt
 	ret
                                         // -- End function

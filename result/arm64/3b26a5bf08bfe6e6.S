@@ -1,16 +1,14 @@
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	ushll	v3.2d, v2.2s, #0
-	ushll2	v2.2d, v2.4s, #0
-	sli	v1.2d, v2.2d, #32
-	sli	v0.2d, v3.2d, #32
+                                        // kill: def $w1 killed $w1 def $x1
+	bfi	x0, x1, #32, #32
+	fmov	d0, x0
 	ret
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	ushll	v3.2d, v2.2s, #0
-	ushll2	v2.2d, v2.4s, #0
-	sli	v1.2d, v2.2d, #32
-	sli	v0.2d, v3.2d, #32
+                                        // kill: def $w1 killed $w1 def $x1
+	bfi	x0, x1, #32, #32
+	fmov	d0, x0
 	ret
                                         // -- End function

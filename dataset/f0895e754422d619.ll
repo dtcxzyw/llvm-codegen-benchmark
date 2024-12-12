@@ -18,7 +18,6 @@
 ; linux/optimized/maple_tree.ll
 ; linux/optimized/net.ll
 ; linux/optimized/xt_conntrack.ll
-; linux/optimized/xt_state.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
@@ -40,6 +39,7 @@
 ; wasmtime-rs/optimized/22yyfxyxsnty4v9s.ll
 ; wasmtime-rs/optimized/3ks7b643ljwe3j81.ll
 ; z3/optimized/sat_binspr.cpp.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i64 %0) #0 {
 entry:
@@ -49,24 +49,13 @@ entry:
   ret i32 %3
 }
 
-; 1 occurrences:
-; openjdk/optimized/sharedRuntimeTrans.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000024(i64 %0) #0 {
-entry:
-  %1 = and i64 %0, 2146435072
-  %2 = icmp eq i64 %1, 0
-  %3 = select i1 %2, i32 -1076, i32 -1023
-  ret i32 %3
-}
-
 ; 4 occurrences:
 ; fmt/optimized/format-impl-test.cc.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; spike/optimized/aes64im.ll
 ; z3/optimized/sat_binspr.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i64 %0) #0 {
+define i32 @func0000000000000041(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 524288
   %2 = icmp eq i64 %1, 0
@@ -93,23 +82,12 @@ entry:
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i64 %0) #0 {
+define i32 @func0000000000000061(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 1
   %2 = icmp eq i64 %1, 0
   %3 = select i1 %2, i32 32, i32 126
   ret i32 %3
-}
-
-; 1 occurrences:
-; git/optimized/sha1.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i64 %0) #0 {
-entry:
-  %1 = and i64 %0, 56
-  %.not = icmp eq i64 %1, 56
-  %2 = select i1 %.not, i32 120, i32 56
-  ret i32 %2
 }
 
 attributes #0 = { nounwind }

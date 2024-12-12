@@ -1,5 +1,5 @@
 func000000000000003f:                   # @func000000000000003f
 	andl	$1, %edx
-	addl	%esi, %edx
-	leaq	1(%rdx,%rdi), %rax
+	addl	%edx, %esi
+	leaq	1(%rsi,%rdi), %rax
 	retq

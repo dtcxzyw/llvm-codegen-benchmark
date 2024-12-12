@@ -1,21 +1,19 @@
 
-; 14 occurrences:
+; 12 occurrences:
 ; cmake/optimized/MD5.c.ll
 ; cpython/optimized/obmalloc.ll
 ; jemalloc/optimized/hpdata.ll
 ; jemalloc/optimized/hpdata.pic.ll
 ; jemalloc/optimized/hpdata.sym.ll
-; libpng/optimized/png.c.ll
 ; linux/optimized/inline.ll
 ; mimalloc/optimized/options.c.ll
-; openjdk/optimized/png.ll
 ; openssl/optimized/evp_xof_test-bin-evp_xof_test.ll
 ; openssl/optimized/quic_stream_test-bin-quic_stream_test.ll
 ; redis/optimized/hpdata.ll
 ; redis/optimized/hpdata.sym.ll
 ; ruby/optimized/md5.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000068(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 64, %2
   %4 = icmp ugt i64 %1, 64
@@ -23,10 +21,30 @@ entry:
   ret i64 %5
 }
 
+; 10 occurrences:
+; cmake/optimized/MD5.c.ll
+; jemalloc/optimized/hpdata.ll
+; jemalloc/optimized/hpdata.pic.ll
+; jemalloc/optimized/hpdata.sym.ll
+; libpng/optimized/png.c.ll
+; openjdk/optimized/png.ll
+; openssl/optimized/evp_xof_test-bin-evp_xof_test.ll
+; redis/optimized/hpdata.ll
+; redis/optimized/hpdata.sym.ll
+; ruby/optimized/md5.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000078(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sub nuw nsw i64 64, %2
+  %4 = icmp samesign ugt i64 %1, 64
+  %5 = select i1 %4, i64 %3, i64 %0
+  ret i64 %5
+}
+
 ; 1 occurrences:
 ; minetest/optimized/database.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000036(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000066(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 4096, %2
   %4 = icmp slt i64 %1, 0
@@ -39,7 +57,7 @@ entry:
 ; nuklear/optimized/unity.c.ll
 ; openjdk/optimized/shenandoahSimpleBitMap.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw nsw i64 64, %2
   %4 = icmp eq i64 %1, -1
@@ -69,7 +87,7 @@ entry:
 ; assimp/optimized/clipper.cpp.ll
 ; linux/optimized/mlock.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = icmp eq i64 %1, 0
@@ -86,7 +104,7 @@ entry:
 ; spike/optimized/kmsda32.ll
 ; spike/optimized/kmsxda32.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000026(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = icmp slt i64 %1, 0
@@ -110,10 +128,10 @@ entry:
 ; 1 occurrences:
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 62, %2
-  %4 = icmp ult i64 %1, 1022
+  %4 = icmp samesign ult i64 %1, 1022
   %5 = select i1 %4, i64 %3, i64 %0
   ret i64 %5
 }
@@ -133,7 +151,7 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 4294967295, %2
   %4 = icmp ugt i64 %1, 4294967295
@@ -144,7 +162,7 @@ entry:
 ; 1 occurrences:
 ; casadi/optimized/im_instantiator.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func000000000000002a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = icmp sgt i64 %1, 0

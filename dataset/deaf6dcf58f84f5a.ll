@@ -6,7 +6,7 @@ define i16 @func000000000000000b(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i16
   %3 = add nsw i16 %2, -48
-  %4 = or disjoint i16 %3, %0
+  %4 = or disjoint i16 %0, %3
   ret i16 %4
 }
 
@@ -17,7 +17,7 @@ define i16 @func0000000000000002(i16 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i16
   %3 = add nsw i16 %2, -48
-  %4 = or i16 %3, %0
+  %4 = or i16 %0, %3
   ret i16 %4
 }
 

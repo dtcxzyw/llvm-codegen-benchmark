@@ -19,11 +19,12 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; box2d/optimized/b2_distance.cpp.ll
 ; box2d/optimized/b2_revolute_joint.cpp.ll
 ; bullet3/optimized/btGImpactCollisionAlgorithm.ll
 ; gromacs/optimized/slarrex.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; nuklear/optimized/unity.c.ll
 ; pbrt-v4/optimized/lights.cpp.ll
 ; Function Attrs: nounwind

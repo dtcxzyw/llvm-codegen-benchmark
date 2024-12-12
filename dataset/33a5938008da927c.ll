@@ -5,9 +5,9 @@
 ; imgui/optimized/imgui_draw.cpp.ll
 ; php/optimized/zend_language_scanner.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000214(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000c24(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 1
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 1
   %3 = icmp ne ptr %1, null
   %4 = icmp ult ptr %2, %0
   %5 = select i1 %3, i1 %4, i1 false
@@ -19,9 +19,9 @@ entry:
 ; luau/optimized/laux.cpp.ll
 ; openmpi/optimized/pmix_iof.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000211(ptr %0, ptr %1) #0 {
+define i1 @func0000000000000c21(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 24
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 24
   %3 = icmp eq ptr %1, null
   %4 = icmp eq ptr %2, %0
   %5 = select i1 %3, i1 true, i1 %4

@@ -61,7 +61,7 @@ func0000000000000003:                   # @func0000000000000003
 	vfadd.vv	v12, v12, v16
 	lui	a0, %hi(.LCPI5_0)
 	flw	fa5, %lo(.LCPI5_0)(a0)
-	vfadd.vv	v8, v12, v8
+	vfadd.vv	v8, v8, v12
 	fli.s	fa4, 0.5
 	vfmul.vf	v8, v8, fa4
 	vmfge.vf	v12, v8, fa5

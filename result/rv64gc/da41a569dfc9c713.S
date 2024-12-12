@@ -34,12 +34,29 @@ func000000000000000a:                   # @func000000000000000a
 	srai	a0, a0, 7
 	srli	a0, a0, 56
 	ret
+func0000000000000014:                   # @func0000000000000014
+	andi	a0, a0, 255
+	sltiu	a0, a0, 240
+	li	a1, 4
+	sub	a0, a1, a0
+	ret
 func0000000000000008:                   # @func0000000000000008
 	andi	a0, a0, 255
 	li	a1, 6
-	bltu	a1, a0, .LBB5_2
+	bltu	a1, a0, .LBB6_2
 	li	a0, 24
 	ret
-.LBB5_2:
+.LBB6_2:
 	li	a0, 16
+	ret
+func0000000000000018:                   # @func0000000000000018
+	andi	a1, a0, 255
+	li	a0, 1
+	li	a2, 71
+	slli	a0, a0, 32
+	bltu	a2, a1, .LBB7_2
+	addi	a0, a0, -59
+	ret
+.LBB7_2:
+	addi	a0, a0, -72
 	ret

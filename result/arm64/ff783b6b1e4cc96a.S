@@ -1,30 +1,18 @@
 func0000000000000011:                   // @func0000000000000011
 // %bb.0:                               // %entry
-	add	v4.4s, v3.4s, v3.4s
-	add	v5.4s, v2.4s, v2.4s
-	sub	v1.4s, v1.4s, v3.4s
-	sub	v0.4s, v0.4s, v2.4s
-	add	v1.4s, v1.4s, v4.4s
-	add	v0.4s, v0.4s, v5.4s
+	sub	w8, w0, w1
+	add	w0, w8, w1, lsl #1
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	add	v4.4s, v3.4s, v3.4s
-	add	v5.4s, v2.4s, v2.4s
-	sub	v1.4s, v1.4s, v3.4s
-	sub	v0.4s, v0.4s, v2.4s
-	add	v1.4s, v1.4s, v4.4s
-	add	v0.4s, v0.4s, v5.4s
+	sub	w8, w0, w1
+	add	w0, w8, w1, lsl #1
 	ret
                                         // -- End function
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
-	add	v4.4s, v3.4s, v3.4s
-	add	v5.4s, v2.4s, v2.4s
-	sub	v1.4s, v1.4s, v3.4s
-	sub	v0.4s, v0.4s, v2.4s
-	add	v1.4s, v1.4s, v4.4s
-	add	v0.4s, v0.4s, v5.4s
+	sub	w8, w0, w1
+	add	w0, w8, w1, lsl #1
 	ret
                                         // -- End function

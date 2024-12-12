@@ -1,5 +1,5 @@
 
-; 45 occurrences:
+; 47 occurrences:
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/ColladaParser.cpp.ll
 ; assimp/optimized/D3MFImporter.cpp.ll
@@ -45,16 +45,18 @@
 ; sqlite/optimized/sqlite3.ll
 ; yosys/optimized/dfflegalize.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -2147483648
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = lshr exact i32 %3, 1
   ret i32 %4
 }
 
-; 49 occurrences:
+; 64 occurrences:
 ; libwebp/optimized/vp8_dec.c.ll
 ; lief/optimized/rsa.c.ll
 ; linux/optimized/devio.ll
@@ -63,6 +65,21 @@ entry:
 ; openjdk/optimized/mlib_ImageAffine_NN_Bit.ll
 ; openssl/optimized/libcrypto-lib-rsa_pk1.ll
 ; openssl/optimized/libcrypto-shlib-rsa_pk1.ll
+; openvdb/optimized/Diagnostics.cc.ll
+; openvdb/optimized/FastSweeping.cc.ll
+; openvdb/optimized/Filter.cc.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
+; openvdb/optimized/LevelSetRebuild.cc.ll
+; openvdb/optimized/LevelSetSphere.cc.ll
+; openvdb/optimized/LevelSetTracker.cc.ll
+; openvdb/optimized/Mask.cc.ll
+; openvdb/optimized/Merge.cc.ll
+; openvdb/optimized/MultiResGrid.cc.ll
+; openvdb/optimized/PoissonSolver.cc.ll
+; openvdb/optimized/TopologyToLevelSet.cc.ll
+; openvdb/optimized/VolumeAdvect.cc.ll
+; openvdb/optimized/VolumeToMesh.cc.ll
+; openvdb/optimized/points.cc.ll
 ; php/optimized/zend_jit.ll
 ; qemu/optimized/hw_sd_sd.c.ll
 ; ruby/optimized/pack.ll
@@ -113,7 +130,9 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
+; 5 occurrences:
+; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; php/optimized/zend_jit.ll
 ; rocksdb/optimized/filter_policy.cc.ll
@@ -121,12 +140,12 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 4096
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = lshr exact i32 %3, 8
   ret i32 %4
 }
 
-; 81 occurrences:
+; 80 occurrences:
 ; abc/optimized/abcIfMux.c.ll
 ; abc/optimized/bzlib.c.ll
 ; abc/optimized/extraUtilTruth.c.ll
@@ -163,7 +182,6 @@ entry:
 ; openvdb/optimized/LevelSetRebuild.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/LevelSetTracker.cc.ll
-; openvdb/optimized/Mask.cc.ll
 ; openvdb/optimized/Merge.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
 ; openvdb/optimized/PoissonSolver.cc.ll
@@ -212,7 +230,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2130706432
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = lshr i32 %3, 16
   ret i32 %4
 }

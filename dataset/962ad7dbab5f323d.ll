@@ -1,13 +1,13 @@
 
-%struct.dtMeshTile.2914343 = type { i32, i32, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, i32, i32, ptr }
+%struct.dtMeshTile.3108389 = type { i32, i32, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, ptr, i32, i32, ptr }
 
 ; 1 occurrences:
 ; php/optimized/memory.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000021c(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000082c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
-  %4 = icmp eq ptr %3, %0
+  %4 = icmp eq ptr %0, %3
   %5 = icmp ne ptr %0, null
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
@@ -16,32 +16,42 @@ entry:
 ; 1 occurrences:
 ; php/optimized/string.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000025c(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000008ac(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
-  %4 = icmp uge ptr %3, %0
+  %4 = icmp ule ptr %0, %3
   %5 = icmp ne ptr %0, null
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
 }
 
-; 4 occurrences:
+; 1 occurrences:
 ; flac/optimized/operations_shorthand_vorbiscomment.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000c8c(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = icmp ult ptr %0, %3
+  %5 = icmp ne ptr %0, null
+  %6 = select i1 %5, i1 %4, i1 false
+  ret i1 %6
+}
+
+; 3 occurrences:
 ; git/optimized/urlmatch.ll
 ; git/optimized/utf8.ll
 ; hwloc/optimized/topology-synthetic.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000024c(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000088c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
-  %4 = icmp ugt ptr %3, %0
+  %4 = icmp ult ptr %0, %3
   %5 = icmp ne ptr %0, null
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6
 }
 
-; 15 occurrences:
-; hyperscan/optimized/teddy_compile.cpp.ll
+; 13 occurrences:
 ; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/BTFParser.cpp.ll
 ; llvm/optimized/BasicBlockUtils.cpp.ll
@@ -55,12 +65,24 @@ entry:
 ; llvm/optimized/ParentMapContext.cpp.ll
 ; llvm/optimized/ToolChain.cpp.ll
 ; recastnavigation/optimized/DetourNavMesh.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000d8c(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw %struct.dtMeshTile.3108389, ptr %1, i64 %2
+  %4 = icmp ne ptr %0, %3
+  %5 = icmp ne ptr %0, null
+  %6 = select i1 %5, i1 %4, i1 false
+  ret i1 %6
+}
+
+; 2 occurrences:
+; hyperscan/optimized/teddy_compile.cpp.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002cc(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000098c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %struct.dtMeshTile.2914343, ptr %1, i64 %2
-  %4 = icmp ne ptr %3, %0
+  %3 = getelementptr nusw { { i32, [1 x i32] }, i16, i8, [1 x i8] }, ptr %1, i64 %2
+  %4 = icmp ne ptr %0, %3
   %5 = icmp ne ptr %0, null
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6

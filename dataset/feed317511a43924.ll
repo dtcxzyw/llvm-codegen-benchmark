@@ -6,13 +6,13 @@
 define i64 @func0000000000000033(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 8
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = or i64 %4, %0
   %6 = shl nuw nsw i64 %5, 4
   ret i64 %6
 }
 
-; 24 occurrences:
+; 26 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; freetype/optimized/sfnt.c.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -37,11 +37,13 @@ entry:
 ; wireshark/optimized/eyesdn.c.ll
 ; wireshark/optimized/packet-opensafety.c.ll
 ; z3/optimized/sat_cutset.cpp.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 16
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = or disjoint i64 %4, %0
   %6 = shl nuw nsw i64 %5, 8
   ret i64 %6
@@ -74,7 +76,7 @@ entry:
 define i64 @func000000000000003e(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 8
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = or disjoint i64 %4, %0
   %6 = shl nuw i64 %5, 32
   ret i64 %6
@@ -88,7 +90,7 @@ entry:
 define i64 @func000000000000003c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 16
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = or disjoint i64 %4, %0
   %6 = shl i64 %5, 1
   ret i64 %6
@@ -101,7 +103,7 @@ entry:
 define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 16
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = or disjoint i64 %4, %0
   %6 = shl i64 %5, 8
   ret i64 %6
@@ -113,8 +115,8 @@ entry:
 define i64 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 40
-  %4 = or disjoint i64 %3, %1
-  %5 = or i64 %4, %0
+  %4 = or disjoint i64 %1, %3
+  %5 = or i64 %0, %4
   %6 = shl i64 %5, 8
   ret i64 %6
 }
@@ -126,7 +128,7 @@ define i64 @func000000000000003a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 1
   %4 = or disjoint i64 %3, %1
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   %6 = shl nuw i64 %5, 32
   ret i64 %6
 }
@@ -137,7 +139,7 @@ entry:
 define i64 @func0000000000000032(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 8
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = or i64 %4, %0
   %6 = shl nuw i64 %5, 32
   ret i64 %6
@@ -150,7 +152,7 @@ define i64 @func000000000000003b(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 1
   %4 = or disjoint i64 %3, %1
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   %6 = shl nuw nsw i64 %5, 16
   ret i64 %6
 }

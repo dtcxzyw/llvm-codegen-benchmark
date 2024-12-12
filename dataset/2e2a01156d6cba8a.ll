@@ -1,19 +1,19 @@
 
-%struct.page.3357069 = type { i64, %union.anon.4.3357070, %union.anon.12.3357071, %struct.atomic_t.3357031, [8 x i8] }
-%union.anon.4.3357070 = type { %struct.anon.5.3357072 }
-%struct.anon.5.3357072 = type { %union.anon.6.3357073, ptr, %union.anon.8.3357074, i64 }
-%union.anon.6.3357073 = type { %struct.list_head.3357038 }
-%struct.list_head.3357038 = type { ptr, ptr }
-%union.anon.8.3357074 = type { i64 }
-%union.anon.12.3357071 = type { %struct.atomic_t.3357031 }
-%struct.atomic_t.3357031 = type { i32 }
+%"struct.rapidjson::GenericMember.2749222" = type { %"class.rapidjson::GenericValue.2749211", %"class.rapidjson::GenericValue.2749211" }
+%"class.rapidjson::GenericValue.2749211" = type { %"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2749212" }
+%"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2749212" = type { %"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2749213" }
+%"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2749213" = type { i32, i32, ptr }
+%struct.page.3544300 = type { i64, %union.anon.4.3544301, %union.anon.12.3544302, %struct.atomic_t.3544262, [8 x i8] }
+%union.anon.4.3544301 = type { %struct.anon.5.3544303 }
+%struct.anon.5.3544303 = type { %union.anon.6.3544304, ptr, %union.anon.8.3544305, i64 }
+%union.anon.6.3544304 = type { %struct.list_head.3544269 }
+%struct.list_head.3544269 = type { ptr, ptr }
+%union.anon.8.3544305 = type { i64 }
+%union.anon.12.3544302 = type { %struct.atomic_t.3544262 }
+%struct.atomic_t.3544262 = type { i32 }
 
-; 176 occurrences:
+; 165 occurrences:
 ; abc/optimized/giaUtil.c.ll
-; assimp/optimized/glTF2Exporter.cpp.ll
-; assimp/optimized/glTF2Importer.cpp.ll
-; assimp/optimized/glTFExporter.cpp.ll
-; assimp/optimized/glTFImporter.cpp.ll
 ; cmake/optimized/cmCTestBinPacker.cxx.ll
 ; delta-rs/optimized/11w0at10aiwuq3yr.ll
 ; eastl/optimized/TestTupleVector.cpp.ll
@@ -26,7 +26,6 @@
 ; fmt/optimized/unicode-test.cc.ll
 ; fmt/optimized/util.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
-; hermes/optimized/ArrayStorage.cpp.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
 ; lief/optimized/BinaryParser.cpp.ll
@@ -98,22 +97,15 @@
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
-; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/ArchiveWriter.cpp.ll
-; llvm/optimized/CGOpenMPRuntime.cpp.ll
-; llvm/optimized/SemaAvailability.cpp.ll
-; llvm/optimized/SemaTemplateVariadic.cpp.ll
 ; luajit/optimized/lj_bcread.ll
 ; luajit/optimized/lj_bcread_dyn.ll
-; luajit/optimized/lj_tab.ll
-; luajit/optimized/lj_tab_dyn.ll
 ; meilisearch-rs/optimized/2vln1wcrdf8krbw1.ll
 ; mimalloc/optimized/os.c.ll
-; opencc/optimized/Config.cpp.ll
 ; openjdk/optimized/os_posix.ll
 ; openusd/optimized/dispatcher.cpp.ll
-; openusd/optimized/json.cpp.ll
 ; php/optimized/ir_emit.ll
+; protobuf/optimized/arena.cc.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
@@ -185,39 +177,32 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; wasmtime-rs/optimized/3brysg9si6kuvbeh.ll
+; zed-rs/optimized/73pi95mikt3cntupcr2d2nefv.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr nusw i8, ptr %3, i64 %1
-  %5 = icmp eq ptr %4, %0
+  %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; meilisearch-rs/optimized/2vln1wcrdf8krbw1.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000004c(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr nusw i8, ptr %3, i64 %1
-  %5 = icmp ne ptr %4, %0
+  %5 = icmp ne ptr %0, %4
   ret i1 %5
 }
 
-; 113 occurrences:
+; 105 occurrences:
 ; bdwgc/optimized/gc.c.ll
-; llvm/optimized/COFFObjectFile.cpp.ll
 ; llvm/optimized/SwitchLoweringUtils.cpp.ll
-; luajit/optimized/lj_debug.ll
-; luajit/optimized/lj_debug_dyn.ll
 ; luajit/optimized/lj_err.ll
 ; luajit/optimized/lj_err_dyn.ll
-; luajit/optimized/lj_gc.ll
-; luajit/optimized/lj_gc_dyn.ll
-; luajit/optimized/lj_serialize.ll
-; luajit/optimized/lj_serialize_dyn.ll
-; msgpack/optimized/msgpack_variant_mapbased.cpp.ll
 ; openjdk/optimized/OGLRenderQueue.ll
 ; openjdk/optimized/archiveHeapLoader.ll
 ; openjdk/optimized/archiveHeapWriter.ll
@@ -320,11 +305,11 @@ entry:
 ; openjdk/optimized/zRelocationSet.ll
 ; openjdk/optimized/zVerify.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000044(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr nusw i8, ptr %3, i64 %1
-  %5 = icmp ugt ptr %4, %0
+  %5 = icmp ult ptr %0, %4
   ret i1 %5
 }
 
@@ -341,11 +326,11 @@ entry:
 ; openjdk/optimized/zHeapIterator.ll
 ; openjdk/optimized/zMark.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000048(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr nusw i8, ptr %3, i64 %1
-  %5 = icmp ult ptr %4, %0
+  %5 = icmp ugt ptr %0, %4
   ret i1 %5
 }
 
@@ -360,18 +345,166 @@ define i1 @func0000000000000001(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr i8, ptr %3, i64 %1
-  %5 = icmp eq ptr %4, %0
+  %5 = icmp eq ptr %0, %4
+  ret i1 %5
+}
+
+; 104 occurrences:
+; llvm/optimized/COFFObjectFile.cpp.ll
+; luajit/optimized/lj_debug.ll
+; luajit/optimized/lj_debug_dyn.ll
+; luajit/optimized/lj_err.ll
+; luajit/optimized/lj_err_dyn.ll
+; luajit/optimized/lj_gc.ll
+; luajit/optimized/lj_gc_dyn.ll
+; luajit/optimized/lj_serialize.ll
+; luajit/optimized/lj_serialize_dyn.ll
+; msgpack/optimized/msgpack_variant_mapbased.cpp.ll
+; openjdk/optimized/archiveHeapLoader.ll
+; openjdk/optimized/archiveHeapWriter.ll
+; openjdk/optimized/bfsClosure.ll
+; openjdk/optimized/cardTableRS.ll
+; openjdk/optimized/classLoaderData.ll
+; openjdk/optimized/defNewGeneration.ll
+; openjdk/optimized/dfsClosure.ll
+; openjdk/optimized/g1AllocRegion.ll
+; openjdk/optimized/g1Allocator.ll
+; openjdk/optimized/g1Arguments.ll
+; openjdk/optimized/g1BarrierSet.ll
+; openjdk/optimized/g1BatchedTask.ll
+; openjdk/optimized/g1BlockOffsetTable.ll
+; openjdk/optimized/g1CardSet.ll
+; openjdk/optimized/g1CardTable.ll
+; openjdk/optimized/g1CollectedHeap.ll
+; openjdk/optimized/g1CollectionSet.ll
+; openjdk/optimized/g1CollectionSetCandidates.ll
+; openjdk/optimized/g1CollectionSetChooser.ll
+; openjdk/optimized/g1ConcurrentMark.ll
+; openjdk/optimized/g1ConcurrentMarkBitMap.ll
+; openjdk/optimized/g1ConcurrentMarkObjArrayProcessor.ll
+; openjdk/optimized/g1ConcurrentMarkThread.ll
+; openjdk/optimized/g1ConcurrentRebuildAndScrub.ll
+; openjdk/optimized/g1ConcurrentRefine.ll
+; openjdk/optimized/g1DirtyCardQueue.ll
+; openjdk/optimized/g1EvacFailureRegions.ll
+; openjdk/optimized/g1FullCollector.ll
+; openjdk/optimized/g1FullGCAdjustTask.ll
+; openjdk/optimized/g1FullGCCompactTask.ll
+; openjdk/optimized/g1FullGCCompactionPoint.ll
+; openjdk/optimized/g1FullGCMarkTask.ll
+; openjdk/optimized/g1FullGCMarker.ll
+; openjdk/optimized/g1FullGCOopClosures.ll
+; openjdk/optimized/g1FullGCPrepareTask.ll
+; openjdk/optimized/g1FullGCResetMetadataTask.ll
+; openjdk/optimized/g1GCPhaseTimes.ll
+; openjdk/optimized/g1HeapRegion.ll
+; openjdk/optimized/g1HeapRegionManager.ll
+; openjdk/optimized/g1HeapRegionRemSet.ll
+; openjdk/optimized/g1HeapRegionSet.ll
+; openjdk/optimized/g1HeapVerifier.ll
+; openjdk/optimized/g1IHOPControl.ll
+; openjdk/optimized/g1MonitoringSupport.ll
+; openjdk/optimized/g1NMethodClosure.ll
+; openjdk/optimized/g1OopClosures.ll
+; openjdk/optimized/g1OopStarChunkedList.ll
+; openjdk/optimized/g1ParScanThreadState.ll
+; openjdk/optimized/g1PeriodicGCTask.ll
+; openjdk/optimized/g1Policy.ll
+; openjdk/optimized/g1RegionMarkStatsCache.ll
+; openjdk/optimized/g1RemSet.ll
+; openjdk/optimized/g1RemSetSummary.ll
+; openjdk/optimized/g1RemSetTrackingPolicy.ll
+; openjdk/optimized/g1RootClosures.ll
+; openjdk/optimized/g1RootProcessor.ll
+; openjdk/optimized/g1SATBMarkQueueSet.ll
+; openjdk/optimized/g1StringDedup.ll
+; openjdk/optimized/g1UncommitRegionTask.ll
+; openjdk/optimized/g1VMOperations.ll
+; openjdk/optimized/g1YoungCollector.ll
+; openjdk/optimized/g1YoungGCAllocationFailureInjector.ll
+; openjdk/optimized/g1YoungGCPostEvacuateTasks.ll
+; openjdk/optimized/g1YoungGCPreEvacuateTasks.ll
+; openjdk/optimized/gcVMOperations.ll
+; openjdk/optimized/heapShared.ll
+; openjdk/optimized/instanceKlass.ll
+; openjdk/optimized/iterator.ll
+; openjdk/optimized/jvm.ll
+; openjdk/optimized/mutableSpace.ll
+; openjdk/optimized/parMarkBitMap.ll
+; openjdk/optimized/psCardTable.ll
+; openjdk/optimized/psCompactionManager.ll
+; openjdk/optimized/psParallelCompact.ll
+; openjdk/optimized/serialFullGC.ll
+; openjdk/optimized/serialHeap.ll
+; openjdk/optimized/shenandoahBarrierSet.ll
+; openjdk/optimized/shenandoahFullGC.ll
+; openjdk/optimized/shenandoahHeap.ll
+; openjdk/optimized/shenandoahHeapRegion.ll
+; openjdk/optimized/shenandoahMark.ll
+; openjdk/optimized/shenandoahRuntime.ll
+; openjdk/optimized/shenandoahVerifier.ll
+; openjdk/optimized/whitebox.ll
+; openjdk/optimized/xBarrier.ll
+; openjdk/optimized/xBarrierSetRuntime.ll
+; openjdk/optimized/xHeapIterator.ll
+; openjdk/optimized/xMark.ll
+; openjdk/optimized/zBarrierSetRuntime.ll
+; openjdk/optimized/zHeapIterator.ll
+; openjdk/optimized/zMark.ll
+; openjdk/optimized/zRelocate.ll
+; openjdk/optimized/zRelocationSet.ll
+; openjdk/optimized/zVerify.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000064(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = inttoptr i64 %2 to ptr
+  %4 = getelementptr nusw nuw i32, ptr %3, i64 %1
+  %5 = icmp ult ptr %0, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
+; openjdk/optimized/shenandoahMark.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000068(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = inttoptr i64 %2 to ptr
+  %4 = getelementptr nusw nuw ptr, ptr %3, i64 %1
+  %5 = icmp ugt ptr %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; openjdk/optimized/mallocTracker.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000029(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000049(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr nusw i8, ptr %3, i64 %1
-  %5 = icmp ule ptr %4, %0
+  %5 = icmp uge ptr %0, %4
+  ret i1 %5
+}
+
+; 13 occurrences:
+; assimp/optimized/glTF2Exporter.cpp.ll
+; assimp/optimized/glTF2Importer.cpp.ll
+; assimp/optimized/glTFExporter.cpp.ll
+; assimp/optimized/glTFImporter.cpp.ll
+; hermes/optimized/ArrayStorage.cpp.ll
+; llvm/optimized/ASTWriter.cpp.ll
+; llvm/optimized/CGOpenMPRuntime.cpp.ll
+; llvm/optimized/SemaAvailability.cpp.ll
+; llvm/optimized/SemaTemplateVariadic.cpp.ll
+; luajit/optimized/lj_tab.ll
+; luajit/optimized/lj_tab_dyn.ll
+; opencc/optimized/Config.cpp.ll
+; openusd/optimized/json.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000061(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = inttoptr i64 %2 to ptr
+  %4 = getelementptr nusw nuw %"struct.rapidjson::GenericMember.2749222", ptr %3, i64 %1
+  %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 
@@ -387,7 +520,7 @@ define i1 @func0000000000000004(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr i8, ptr %3, i64 %1
-  %5 = icmp ugt ptr %4, %0
+  %5 = icmp ult ptr %0, %4
   ret i1 %5
 }
 
@@ -397,8 +530,8 @@ entry:
 define i1 @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr %struct.page.3357069, ptr %3, i64 %1
-  %5 = icmp ult ptr %4, %0
+  %4 = getelementptr %struct.page.3544300, ptr %3, i64 %1
+  %5 = icmp ugt ptr %0, %4
   ret i1 %5
 }
 

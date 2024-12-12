@@ -3,7 +3,7 @@
 func0000000000000008:                   # @func0000000000000008
 	vmovss	.LCPI0_0(%rip), %xmm2           # xmm2 = [-1.00000024E-1,0.0E+0,0.0E+0,0.0E+0]
 	vsubss	%xmm1, %xmm2, %xmm1
-	vaddss	%xmm0, %xmm1, %xmm0
+	vaddss	%xmm1, %xmm0, %xmm0
 	vxorps	%xmm1, %xmm1, %xmm1
 	vcmpeqss	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
@@ -25,7 +25,7 @@ func0000000000000002:                   # @func0000000000000002
 func000000000000000a:                   # @func000000000000000a
 	vmovss	.LCPI2_0(%rip), %xmm2           # xmm2 = [1.0E+0,0.0E+0,0.0E+0,0.0E+0]
 	vsubss	%xmm1, %xmm2, %xmm1
-	vaddss	%xmm0, %xmm1, %xmm0
+	vaddss	%xmm1, %xmm0, %xmm0
 	vxorps	%xmm1, %xmm1, %xmm1
 	vucomiss	%xmm0, %xmm1
 	setae	%al

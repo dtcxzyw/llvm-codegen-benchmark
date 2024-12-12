@@ -1,9 +1,10 @@
 func000000000000000f:                   # @func000000000000000f
-	andi	a2, a2, 768
-	or	a1, a1, a2
-	lui	a2, 16
-	add	a0, a0, a2
-	addw	a0, a0, a1
+	lui	a3, 1047564
+	addi	a3, a3, 261
+	and	a2, a2, a3
+	or	a0, a0, a2
+	add	a0, a0, a1
+	addiw	a0, a0, 1024
 	ret
 func000000000000000b:                   # @func000000000000000b
 	lui	a3, 15

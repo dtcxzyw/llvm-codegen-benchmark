@@ -27,8 +27,7 @@ entry:
   ret i32 %7
 }
 
-; 10 occurrences:
-; abc/optimized/satUtil.c.ll
+; 9 occurrences:
 ; gromacs/optimized/mshift.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; gromacs/optimized/wholemoleculetransform.cpp.ll
@@ -42,9 +41,9 @@ entry:
 define i32 @func0000000000000040(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = lshr exact i64 %3, 2
+  %4 = lshr exact i64 %3, 3
   %5 = trunc i64 %4 to i32
-  %6 = add i32 %5, -1
+  %6 = add i32 %5, 1
   %7 = add i32 %6, %0
   ret i32 %7
 }

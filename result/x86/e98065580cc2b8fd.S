@@ -25,3 +25,12 @@ func0000000000000004:                   # @func0000000000000004
 	setb	%al
 	andb	%dil, %al
 	retq
+func0000000000000018:                   # @func0000000000000018
+	movl	%edx, %ecx
+	movl	%esi, %eax
+	xorl	%edx, %edx
+	divl	%ecx
+	cmpl	$7, %eax
+	setae	%al
+	andb	%dil, %al
+	retq

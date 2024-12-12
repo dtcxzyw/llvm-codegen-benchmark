@@ -1,103 +1,55 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	movi	v3.2d, #0x000000ffffffff
-	neg	v2.2d, v2.2d
-	neg	v1.2d, v1.2d
-	and	v1.16b, v1.16b, v3.16b
-	and	v2.16b, v2.16b, v3.16b
-	cmeq	v2.2d, v2.2d, #0
-	cmeq	v1.2d, v1.2d, #0
-	uzp1	v1.4s, v1.4s, v2.4s
-	xtn	v1.4h, v1.4s
-	orr	v0.8b, v1.8b, v0.8b
+	cmp	w1, #0
+	cset	w8, eq
+	orr	w8, w0, w8
+	and	w0, w8, #0x1
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	mov	w8, #1                          // =0x1
-	dup	v3.2d, x8
-	mov	w8, #15                         // =0xf
-	add	v2.2d, v2.2d, v3.2d
-	add	v1.2d, v1.2d, v3.2d
-	dup	v3.2d, x8
-	and	v1.16b, v1.16b, v3.16b
-	and	v2.16b, v2.16b, v3.16b
-	cmeq	v2.2d, v2.2d, #0
-	cmeq	v1.2d, v1.2d, #0
-	uzp1	v1.4s, v1.4s, v2.4s
-	mvn	v1.16b, v1.16b
-	xtn	v1.4h, v1.4s
-	orr	v0.8b, v1.8b, v0.8b
+	mvn	w8, w1
+	tst	x8, #0xf
+	cset	w8, ne
+	orr	w8, w0, w8
+	and	w0, w8, #0x1
 	ret
                                         // -- End function
-func0000000000000022:                   // @func0000000000000022
+func0000000000000042:                   // @func0000000000000042
 // %bb.0:                               // %entry
-	mov	x8, #-2                         // =0xfffffffffffffffe
-	dup	v3.2d, x8
-	mov	x8, #-3                         // =0xfffffffffffffffd
-	add	v2.2d, v2.2d, v3.2d
-	add	v1.2d, v1.2d, v3.2d
-	dup	v3.2d, x8
-	and	v1.16b, v1.16b, v3.16b
-	and	v2.16b, v2.16b, v3.16b
-	cmeq	v2.2d, v2.2d, #0
-	cmeq	v1.2d, v1.2d, #0
-	uzp1	v1.4s, v1.4s, v2.4s
-	xtn	v1.4h, v1.4s
-	orr	v0.8b, v1.8b, v0.8b
+	sub	x8, x1, #2
+	tst	x8, #0xfffffffffffffffd
+	cset	w8, eq
+	orr	w8, w0, w8
+	and	w0, w8, #0x1
 	ret
                                         // -- End function
-func0000000000000008:                   // @func0000000000000008
+func0000000000000028:                   // @func0000000000000028
 // %bb.0:                               // %entry
-	movi	v3.2d, #0xffffffffffffffff
-	mov	x8, #2305843009213693951        // =0x1fffffffffffffff
-	add	v2.2d, v2.2d, v3.2d
-	add	v1.2d, v1.2d, v3.2d
-	dup	v3.2d, x8
-	mov	w8, #7                          // =0x7
-	and	v1.16b, v1.16b, v3.16b
-	and	v2.16b, v2.16b, v3.16b
-	dup	v3.2d, x8
-	cmhi	v2.2d, v3.2d, v2.2d
-	cmhi	v1.2d, v3.2d, v1.2d
-	uzp1	v1.4s, v1.4s, v2.4s
-	xtn	v1.4h, v1.4s
-	orr	v0.8b, v1.8b, v0.8b
+	sub	x8, x1, #1
+	and	x8, x8, #0x1fffffffffffffff
+	cmp	x8, #7
+	cset	w8, lo
+	orr	w8, w0, w8
+	and	w0, w8, #0x1
 	ret
                                         // -- End function
-func0000000000000010:                   // @func0000000000000010
+func0000000000000030:                   // @func0000000000000030
 // %bb.0:                               // %entry
-	mov	w8, #4095                       // =0xfff
-	dup	v3.2d, x8
-	mov	x8, #17592186040320             // =0xffffffff000
-	add	v2.2d, v2.2d, v3.2d
-	add	v1.2d, v1.2d, v3.2d
-	dup	v3.2d, x8
-	mov	w8, #65536                      // =0x10000
-	and	v1.16b, v1.16b, v3.16b
-	and	v2.16b, v2.16b, v3.16b
-	dup	v3.2d, x8
-	cmhi	v2.2d, v2.2d, v3.2d
-	cmhi	v1.2d, v1.2d, v3.2d
-	uzp1	v1.4s, v1.4s, v2.4s
-	xtn	v1.4h, v1.4s
-	orr	v0.8b, v1.8b, v0.8b
+	add	x8, x1, #4095
+	and	x8, x8, #0xffffffff000
+	cmp	x8, #16, lsl #12                // =65536
+	cset	w8, hi
+	orr	w8, w8, w0
+	and	w0, w8, #0x1
 	ret
                                         // -- End function
-func0000000000000038:                   // @func0000000000000038
+func0000000000000058:                   // @func0000000000000058
 // %bb.0:                               // %entry
-	movi	v3.2d, #0xffffffffffffffff
-	mov	w8, #3                          // =0x3
-	add	v2.2d, v2.2d, v3.2d
-	add	v1.2d, v1.2d, v3.2d
-	dup	v3.2d, x8
-	and	v1.16b, v1.16b, v3.16b
-	and	v2.16b, v2.16b, v3.16b
-	cmeq	v2.2d, v2.2d, #0
-	cmeq	v1.2d, v1.2d, #0
-	uzp1	v1.4s, v1.4s, v2.4s
-	mvn	v1.16b, v1.16b
-	xtn	v1.4h, v1.4s
-	orr	v0.8b, v1.8b, v0.8b
+	and	x8, x1, #0x3
+	cmp	x8, #1
+	cset	w8, ne
+	orr	w8, w8, w0
+	and	w0, w8, #0x1
 	ret
                                         // -- End function

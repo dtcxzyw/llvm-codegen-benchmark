@@ -7,7 +7,7 @@
 ; linux/optimized/deftree.ll
 ; zlib/optimized/trees.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000189(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000309(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 256
   %3 = add i32 %0, -1

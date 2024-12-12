@@ -24,7 +24,7 @@ func0000000000000001:                   # @func0000000000000001
 	.long	128                             # 0x80
 .LCPI2_1:
 	.long	27                              # 0x1b
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	vptestmd	.LCPI2_0(%rip){1to8}, %ymm0, %k1
 	vpbroadcastd	.LCPI2_1(%rip), %ymm0 {%k1} {z} # ymm0 {%k1} {z} = [27,27,27,27,27,27,27,27]
 	retq

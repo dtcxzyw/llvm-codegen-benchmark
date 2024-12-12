@@ -5,7 +5,7 @@
 func000000000000000c:                   # @func000000000000000c
 	vpandq	.LCPI0_0(%rip){1to4}, %ymm1, %ymm1
 	vpaddq	.LCPI0_1(%rip){1to4}, %ymm1, %ymm1
-	vpmullq	%ymm0, %ymm1, %ymm0
+	vpmullq	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.quad	9223372036854775806             # 0x7ffffffffffffffe
@@ -22,7 +22,7 @@ func000000000000000e:                   # @func000000000000000e
 	vpandq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubq	%ymm2, %ymm1, %ymm1
-	vpmullq	%ymm0, %ymm1, %ymm0
+	vpmullq	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI3_0:
 	.quad	-32                             # 0xffffffffffffffe0

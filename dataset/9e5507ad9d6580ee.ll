@@ -1,5 +1,5 @@
 
-; 65 occurrences:
+; 64 occurrences:
 ; bullet3/optimized/poly34.ll
 ; graphviz/optimized/route.c.ll
 ; gromacs/optimized/calc_verletbuf.cpp.ll
@@ -11,7 +11,6 @@
 ; meshlab/optimized/rimls.cpp.ll
 ; msdfgen/optimized/edge-segments.cpp.ll
 ; nanosvg/optimized/nanosvg.ll
-; openblas/optimized/dtgsna.c.ll
 ; opencv/optimized/freetype.cpp.ll
 ; opencv/optimized/triangulate.cpp.ll
 ; openspiel/optimized/mcts.cc.ll
@@ -69,8 +68,8 @@
 define double @func0000000000000000(double %0, double %1) #0 {
 entry:
   %2 = fmul double %1, 3.000000e+00
-  %3 = fmul double %2, %1
-  %4 = fmul double %3, %0
+  %3 = fmul double %1, %2
+  %4 = fmul double %0, %3
   ret double %4
 }
 

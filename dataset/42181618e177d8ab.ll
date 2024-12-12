@@ -1,10 +1,8 @@
 
-; 15 occurrences:
+; 13 occurrences:
 ; darktable/optimized/SamsungV2Decompressor.cpp.ll
 ; libquic/optimized/ssl_cipher.c.ll
-; linux/optimized/i915_gem_gtt.ll
 ; linux/optimized/i9xx_plane.ll
-; linux/optimized/intel_mocs.ll
 ; linux/optimized/sky2.ll
 ; linux/optimized/traps.ll
 ; llvm/optimized/CallLowering.cpp.ll

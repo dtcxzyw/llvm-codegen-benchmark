@@ -8,7 +8,7 @@
 ; sqlite/optimized/sqlite3.ll
 ; verilator/optimized/V3Width.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i16 %0, ptr %1) #0 {
+define i1 @func000000000000002c(i16 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = icmp ne i16 %0, 0
@@ -21,7 +21,7 @@ entry:
 ; linux/optimized/i9xx_wm.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i16 %0, ptr %1) #0 {
+define i1 @func0000000000000188(i16 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = icmp ugt i16 %0, 1
@@ -34,6 +34,7 @@ entry:
 ; clamav/optimized/unzip.c.ll
 ; git/optimized/remote-curl.ll
 ; graphviz/optimized/compile.c.ll
+; libevent/optimized/bufferevent_pair.c.ll
 ; linux/optimized/blk-mq-tag.ll
 ; linux/optimized/hda_jack.ll
 ; linux/optimized/tcp.ll
@@ -47,10 +48,9 @@ entry:
 ; slurm/optimized/node_info.ll
 ; slurm/optimized/partition_info.ll
 ; wireshark/optimized/packet-h245.c.ll
-; wireshark/optimized/packet-netlink-generic.c.ll
 ; wireshark/optimized/packet-udp.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i16 %0, ptr %1) #0 {
+define i1 @func000000000000018c(i16 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = icmp ne i16 %0, 0
@@ -72,7 +72,7 @@ entry:
 ; wireshark/optimized/packet-5co-legacy.c.ll
 ; wireshark/optimized/packet-rpcrdma.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0, ptr %1) #0 {
+define i1 @func0000000000000021(i16 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = icmp eq i16 %0, 15
@@ -80,13 +80,12 @@ entry:
   ret i1 %4
 }
 
-; 39 occurrences:
+; 37 occurrences:
 ; cmake/optimized/json_value.cpp.ll
 ; git/optimized/fast-import.ll
 ; libwebp/optimized/tiffdec.c.ll
 ; linux/optimized/agg-tx.ll
 ; llvm/optimized/AArch64CallLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/SelectionDAGISel.cpp.ll
 ; llvm/optimized/SemaInit.cpp.ll
@@ -110,7 +109,6 @@ entry:
 ; wireshark/optimized/packet-h225.c.ll
 ; wireshark/optimized/packet-http.c.ll
 ; wireshark/optimized/packet-sccp.c.ll
-; wireshark/optimized/packet-smb-mailslot.c.ll
 ; wireshark/optimized/packet-smb-pipe.c.ll
 ; wireshark/optimized/packet-smb.c.ll
 ; wireshark/optimized/packet-smb2.c.ll
@@ -121,7 +119,7 @@ entry:
 ; wireshark/optimized/packet-websocket.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i16 %0, ptr %1) #0 {
+define i1 @func0000000000000181(i16 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = icmp eq i16 %0, 16384
@@ -132,7 +130,7 @@ entry:
 ; 1 occurrences:
 ; slurm/optimized/read_config.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i16 %0, ptr %1) #0 {
+define i1 @func0000000000000028(i16 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = icmp ugt i16 %0, 1
@@ -145,7 +143,7 @@ entry:
 ; llvm/optimized/DWARFFormValue.cpp.ll
 ; postgres/optimized/gindatapage.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i16 %0, ptr %1) #0 {
+define i1 @func0000000000000184(i16 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = icmp ult i16 %0, 5
@@ -156,7 +154,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/collationsets.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i16 %0, ptr %1) #0 {
+define i1 @func0000000000000024(i16 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = icmp ult i16 %0, 32

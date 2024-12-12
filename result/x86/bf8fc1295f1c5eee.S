@@ -25,7 +25,7 @@ func0000000000000183:                   # @func0000000000000183
 	shrq	$35, %rax
 	addl	%ecx, %eax
 	retq
-func0000000000000113:                   # @func0000000000000113
+func0000000000000513:                   # @func0000000000000513
 	addl	%esi, %edi
 	imulq	$963315389, %rdi, %rax          # imm = 0x396B06BD
 	shrq	$47, %rax

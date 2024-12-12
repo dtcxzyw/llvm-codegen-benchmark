@@ -1,5 +1,5 @@
 
-; 246 occurrences:
+; 244 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; double_conversion/optimized/fast-dtoa.cc.ll
 ; icu/optimized/double-conversion-fast-dtoa.ll
@@ -92,8 +92,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -247,7 +245,7 @@
 ; tev/optimized/main.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000208(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000408(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %notmask = shl nsw i64 -1, %2
   %3 = xor i64 %notmask, -1
@@ -267,7 +265,7 @@ entry:
 ; php/optimized/dtoa.ll
 ; redis/optimized/fpconv_dtoa.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000204(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000404(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %notmask = shl nsw i64 -1, %2
   %3 = xor i64 %notmask, -1
@@ -277,7 +275,7 @@ entry:
   ret i1 %6
 }
 
-; 89 occurrences:
+; 87 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -303,8 +301,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -368,7 +364,7 @@ entry:
 ; simdjson/optimized/simdjson.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000209(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000409(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %notmask = shl nsw i64 -1, %2
   %3 = xor i64 %notmask, -1

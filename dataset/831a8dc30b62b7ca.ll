@@ -59,7 +59,7 @@ entry:
 ; 1 occurrences:
 ; lief/optimized/nist_kw.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000018(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000028(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = icmp ugt i64 %3, 7
@@ -89,7 +89,7 @@ entry:
 ; opencv/optimized/smooth.dispatch.cpp.ll
 ; opencv/optimized/staticSaliencyFineGrained.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func0000000000000026(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = icmp slt i64 %3, -1
@@ -101,7 +101,7 @@ entry:
 ; openblas/optimized/dlahqr.c.ll
 ; opencv/optimized/qrcode_reader.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i64 %1, i64 %2) #0 {
+define i32 @func000000000000002a(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = icmp sgt i64 %3, 30

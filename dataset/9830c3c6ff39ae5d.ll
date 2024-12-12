@@ -1,5 +1,6 @@
 
-; 1 occurrences:
+; 2 occurrences:
+; lvgl/optimized/lv_imagebutton.ll
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i64 %1) #0 {
@@ -10,7 +11,7 @@ entry:
   ret i32 %4
 }
 
-; 137 occurrences:
+; 135 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcDar.c.ll
@@ -32,7 +33,6 @@ entry:
 ; abc/optimized/acecPo.c.ll
 ; abc/optimized/acecPolyn.c.ll
 ; abc/optimized/acecRe.c.ll
-; abc/optimized/acecSt.c.ll
 ; abc/optimized/acecTree.c.ll
 ; abc/optimized/acecUtil.c.ll
 ; abc/optimized/bmcBCore.c.ll
@@ -45,7 +45,6 @@ entry:
 ; abc/optimized/bmcFault.c.ll
 ; abc/optimized/bmcGen.c.ll
 ; abc/optimized/bmcInse.c.ll
-; abc/optimized/bmcLoad.c.ll
 ; abc/optimized/bmcMulti.c.ll
 ; abc/optimized/bmcUnroll.c.ll
 ; abc/optimized/cbaNtk.c.ll
@@ -208,9 +207,10 @@ entry:
   ret i32 %4
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; grpc/optimized/hpack_parser.cc.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
 ; openjdk/optimized/sharedRuntimeTrig.ll
 ; openusd/optimized/cpuEvaluator.cpp.ll
 ; openusd/optimized/ompEvaluator.cpp.ll
@@ -228,7 +228,7 @@ entry:
   ret i32 %4
 }
 
-; 96 occurrences:
+; 95 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcDar.c.ll
@@ -254,7 +254,6 @@ entry:
 ; abc/optimized/bmcFault.c.ll
 ; abc/optimized/bmcGen.c.ll
 ; abc/optimized/bmcInse.c.ll
-; abc/optimized/bmcLoad.c.ll
 ; abc/optimized/bmcUnroll.c.ll
 ; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/cecIso.c.ll

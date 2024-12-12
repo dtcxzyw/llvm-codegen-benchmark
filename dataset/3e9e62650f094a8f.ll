@@ -17,9 +17,11 @@ entry:
   ret i64 %5
 }
 
-; 9 occurrences:
+; 11 occurrences:
 ; arrow/optimized/strtod.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; double_conversion/optimized/strtod.cc.ll
 ; icu/optimized/double-conversion-strtod.ll
 ; llvm/optimized/DLangDemangle.cpp.ll
@@ -37,9 +39,11 @@ entry:
   ret i64 %5
 }
 
-; 21 occurrences:
+; 22 occurrences:
 ; arrow/optimized/bignum.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; cmake/optimized/content_stream.cpp.ll
 ; cpython/optimized/bytesobject.ll
 ; cpython/optimized/io.ll
@@ -57,7 +61,6 @@ entry:
 ; openssl/optimized/libcrypto-shlib-bn_conv.ll
 ; openusd/optimized/bignum.cc.ll
 ; php/optimized/der.ll
-; spdlog/optimized/spdlog.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i8 %0, i64 %1) #0 {

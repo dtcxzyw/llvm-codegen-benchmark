@@ -1,9 +1,8 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; cvc5/optimized/theory_bv.cpp.ll
 ; linux/optimized/udp.ll
 ; linux/optimized/xprtsock.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ExpandPseudo.cpp.ll
 ; llvm/optimized/X86FixupLEAs.cpp.ll
 ; Function Attrs: nounwind

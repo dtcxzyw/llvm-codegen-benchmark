@@ -13,7 +13,7 @@ entry:
   %4 = add i32 %3, 2
   %5 = add i32 %4, %1
   %6 = sext i32 %5 to i64
-  %7 = add i64 %6, %0
+  %7 = add i64 %0, %6
   ret i64 %7
 }
 

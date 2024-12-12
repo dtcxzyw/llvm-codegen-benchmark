@@ -1,10 +1,10 @@
 
-; 16 occurrences:
+; 18 occurrences:
+; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; eastl/optimized/TestAlgorithm.cpp.ll
 ; eastl/optimized/TestHeap.cpp.ll
 ; eastl/optimized/TestRingBuffer.cpp.ll
 ; linux/optimized/posix-cpu-timers.ll
-; llvm/optimized/DIPrinter.cpp.ll
 ; llvm/optimized/FunctionSpecialization.cpp.ll
 ; llvm/optimized/InlineCost.cpp.ll
 ; llvm/optimized/InstructionCombining.cpp.ll
@@ -16,6 +16,8 @@
 ; llvm/optimized/SCCPSolver.cpp.ll
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; php/optimized/zend_hash.ll
+; rust-analyzer-rs/optimized/4yvp88cqyyaanzkc.ll
+; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i1 %1, i64 %2) #0 {
 entry:
@@ -25,13 +27,12 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
-; hyperscan/optimized/ng_util.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000004(i64 %0, i1 %1, i64 %2) #0 {
+define i64 @func0000000000000014(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 513
   %4 = select i1 %1, i1 true, i1 %3

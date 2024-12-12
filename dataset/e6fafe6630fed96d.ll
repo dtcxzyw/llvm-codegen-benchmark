@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 35 occurrences:
 ; libphonenumber/optimized/phonemetadata.pb.cc.ll
 ; libphonenumber/optimized/phonenumber.pb.cc.ll
 ; opencv/optimized/attr_value.pb.cc.ll
@@ -28,6 +28,13 @@
 ; yalantinglibs/optimized/data_def.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/b1bc3rbs9s229gjbf718xcm8w.ll
+; zed-rs/optimized/boyei0qs0y80q8snoztbi8jt7.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
+; zed-rs/optimized/f10ffiihtazjqkmwr0jihceey.ll
 ; Function Attrs: nounwind
 define i64 @func00000000000000f4(i64 %0, i32 %1) #0 {
 entry:
@@ -35,11 +42,12 @@ entry:
   %3 = add nuw nsw i32 %2, 73
   %4 = lshr i32 %3, 6
   %5 = zext nneg i32 %4 to i64
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
-; 97 occurrences:
+; 98 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
 ; fmt/optimized/header-only-test.cc.ll
@@ -144,14 +152,16 @@ entry:
   %3 = add i32 %2, 32800
   %4 = lshr i32 %3, 16
   %5 = zext nneg i32 %4 to i64
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; opencv/optimized/opencv-caffe.pb.cc.ll
 ; protobuf/optimized/extension_set.cc.ll
 ; sentencepiece/optimized/extension_set.cc.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
 ; Function Attrs: nounwind
 define i64 @func00000000000000f7(i64 %0, i32 %1) #0 {
 entry:
@@ -159,7 +169,7 @@ entry:
   %3 = add nuw nsw i32 %2, 73
   %4 = lshr i32 %3, 6
   %5 = zext nneg i32 %4 to i64
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 

@@ -1,15 +1,15 @@
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	add.uw	a1, a2, a1
 	not	a1, a1
 	sltu	a0, a1, a0
 	ret
-func00000000000001c8:                   # @func00000000000001c8
+func0000000000000388:                   # @func0000000000000388
 	sext.w	a2, a2
 	add	a1, a1, a2
 	add	a0, a0, a1
 	sltu	a0, a1, a0
 	ret
-func00000000000000c8:                   # @func00000000000000c8
+func0000000000000188:                   # @func0000000000000188
 	add.uw	a1, a2, a1
 	add	a0, a0, a1
 	sltu	a0, a1, a0

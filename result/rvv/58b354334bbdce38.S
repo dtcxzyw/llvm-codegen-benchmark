@@ -17,16 +17,31 @@ func0000000000000006:                   # @func0000000000000006
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmerge.vim	v8, v8, 1, v0
 	ret
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	li	a0, 224
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsltu.vx	v0, v10, a0
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmerge.vim	v8, v8, 1, v0
 	ret
-func0000000000000008:                   # @func0000000000000008
+func0000000000000004:                   # @func0000000000000004
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmsgtu.vi	v0, v10, 1
+	vmsleu.vi	v0, v10, 1
+	vsetvli	zero, zero, e8, mf2, ta, ma
+	vmerge.vim	v8, v8, 1, v0
+	ret
+func0000000000000008:                   # @func0000000000000008
+	li	a0, 127
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmsgtu.vx	v0, v10, a0
+	li	a0, 63
+	vsetvli	zero, zero, e8, mf2, ta, ma
+	vmerge.vxm	v8, v8, a0, v0
+	ret
+func0000000000000018:                   # @func0000000000000018
+	li	a0, 100
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmsgtu.vx	v0, v10, a0
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmerge.vim	v8, v8, 0, v0
 	ret

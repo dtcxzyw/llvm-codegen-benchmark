@@ -45,7 +45,8 @@ entry:
   ret i64 %6
 }
 
-; 7 occurrences:
+; 8 occurrences:
+; boost/optimized/alloc_lib.ll
 ; jemalloc/optimized/hpdata.ll
 ; jemalloc/optimized/hpdata.pic.ll
 ; jemalloc/optimized/hpdata.sym.ll
@@ -59,8 +60,8 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %3, %2
-  %5 = lshr i64 %4, 15
-  %6 = and i64 %5, 562949953421304
+  %5 = lshr i64 %4, 2
+  %6 = and i64 %5, 4611686018427387902
   ret i64 %6
 }
 

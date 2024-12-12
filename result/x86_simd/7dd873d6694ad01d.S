@@ -24,7 +24,7 @@ func000000000000000e:                   # @func000000000000000e
 	vpmulld	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1
 	vpbroadcastd	.LCPI2_1(%rip), %ymm2   # ymm2 = [4092,4092,4092,4092,4092,4092,4092,4092]
 	vpsllvd	%ymm1, %ymm2, %ymm1
-	vpand	%ymm0, %ymm1, %ymm0
+	vpand	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI3_0:
 	.long	1                               # 0x1
@@ -42,5 +42,5 @@ func0000000000000002:                   # @func0000000000000002
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpbroadcastd	.LCPI4_0(%rip), %ymm2   # ymm2 = [1,1,1,1,1,1,1,1]
 	vpsllvd	%ymm1, %ymm2, %ymm1
-	vpand	%ymm0, %ymm1, %ymm0
+	vpand	%ymm1, %ymm0, %ymm0
 	retq

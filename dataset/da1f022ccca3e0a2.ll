@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/net_colo.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000068(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 18
@@ -15,7 +15,7 @@ entry:
 ; icu/optimized/locavailable.ll
 ; openjdk/optimized/SpanClipRenderer.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nsw i64 %1, 2
@@ -28,7 +28,7 @@ entry:
 ; abc/optimized/abcSaucy.c.ll
 ; openjdk/optimized/verifier.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nsw i64 %1, 1
@@ -42,7 +42,7 @@ entry:
 ; slurm/optimized/prep.ll
 ; yosys/optimized/proc_dlatch.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003b(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000006b(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 8
@@ -54,7 +54,7 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/ezsat.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000066(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1
@@ -68,7 +68,7 @@ entry:
 ; gromacs/optimized/slasq4.cpp.ll
 ; postgres/optimized/rowtypes.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nsw i64 %1, -4
@@ -80,7 +80,7 @@ entry:
 ; 1 occurrences:
 ; protobuf/optimized/unparser.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nuw i64 %1, 1
@@ -92,7 +92,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/_testbuffer.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i1 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = add nuw nsw i64 %1, 1

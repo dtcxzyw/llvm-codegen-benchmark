@@ -1,4 +1,16 @@
 
+; 2 occurrences:
+; boost/optimized/sort_by_side_basic.ll
+; icu/optimized/stringtriebuilder.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000042(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, 1
+  %3 = icmp eq i32 %2, %0
+  %4 = zext i1 %3 to i8
+  ret i8 %4
+}
+
 ; 16 occurrences:
 ; icu/optimized/alphaindex.ll
 ; oiio/optimized/color_ocio.cpp.ll
@@ -17,7 +29,7 @@
 ; oiio/optimized/imagebufalgo_yee.cpp.ll
 ; oiio/optimized/maketexture.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func000000000000002c(i32 %0, i32 %1) #0 {
+define i8 @func000000000000004c(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = icmp slt i32 %2, %0
@@ -29,7 +41,7 @@ entry:
 ; linux/optimized/skl_watermark.ll
 ; openusd/optimized/decodeframe.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000034(i32 %0, i32 %1) #0 {
+define i8 @func0000000000000054(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = icmp sgt i32 %2, %0
@@ -50,20 +62,9 @@ entry:
 }
 
 ; 1 occurrences:
-; icu/optimized/stringtriebuilder.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000022(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add nsw i32 %1, 1
-  %3 = icmp eq i32 %2, %0
-  %4 = zext i1 %3 to i8
-  ret i8 %4
-}
-
-; 1 occurrences:
 ; opencv/optimized/tree.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i8 @func0000000000000058(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = icmp ne i32 %2, %0

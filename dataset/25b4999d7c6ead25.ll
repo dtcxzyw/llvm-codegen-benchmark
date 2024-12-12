@@ -1,17 +1,5 @@
 
 ; 2 occurrences:
-; darktable/optimized/introspection_ashift.c.ll
-; opencv/optimized/binary_descriptor.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000d(double %0, double %1, double %2) #0 {
-entry:
-  %3 = fadd double %2, -1.000000e+00
-  %4 = fmul double %3, %1
-  %5 = fcmp uge double %4, %0
-  ret i1 %5
-}
-
-; 2 occurrences:
 ; darktable/optimized/introspection_colorzones.c.ll
 ; opencv/optimized/lsd.cpp.ll
 ; Function Attrs: nounwind
@@ -32,17 +20,6 @@ entry:
   %3 = fadd double %2, 1.000000e+00
   %4 = fmul double %3, %1
   %5 = fcmp ult double %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; openblas/optimized/dlatdf.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(double %0, double %1, double %2) #0 {
-entry:
-  %3 = fadd double %2, 1.000000e+00
-  %4 = fmul double %3, %1
-  %5 = fcmp ogt double %4, %0
   ret i1 %5
 }
 

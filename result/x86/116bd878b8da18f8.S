@@ -4,13 +4,13 @@ func0000000000000000:                   # @func0000000000000000
 	andl	$-2, %eax
 	addq	%rdi, %rax
 	retq
-func0000000000000006:                   # @func0000000000000006
+func0000000000000007:                   # @func0000000000000007
 	incl	%edx
 	andl	%esi, %edx
 	movzwl	%dx, %eax
 	leaq	(%rdi,%rax,2), %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	decl	%edx
 	andl	%esi, %edx
 	andl	$-8, %edx

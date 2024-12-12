@@ -20,5 +20,5 @@ func0000000000000008:                   # @func0000000000000008
 func0000000000000004:                   # @func0000000000000004
 	vpcmpltud	.LCPI3_0(%rip){1to8}, %ymm2, %k1
 	vpbroadcastd	.LCPI3_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [4096,4096,4096,4096,4096,4096,4096,4096]
-	vpand	%ymm0, %ymm1, %ymm0
+	vpand	%ymm1, %ymm0, %ymm0
 	retq

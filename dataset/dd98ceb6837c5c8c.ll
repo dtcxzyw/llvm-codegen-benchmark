@@ -1,7 +1,8 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; assimp/optimized/IRRLoader.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/work_stealing.ll
 ; faiss/optimized/IndexBinaryFromFloat.cpp.ll
 ; faiss/optimized/IndexFastScan.cpp.ll
 ; faiss/optimized/IndexIVFFastScan.cpp.ll
@@ -27,7 +28,7 @@ entry:
 ; spike/optimized/s_subMagsF32.ll
 ; spike/optimized/s_subMagsF64.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 7
   %3 = icmp eq i64 %0, 0
@@ -38,7 +39,7 @@ entry:
 ; 1 occurrences:
 ; spike/optimized/processor.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001c(i64 %0, i64 %1) #0 {
+define i64 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nsw i64 %1, 2
   %.not = icmp eq i64 %0, 0
@@ -49,7 +50,7 @@ entry:
 ; 1 occurrences:
 ; spike/optimized/processor.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000003c(i64 %0, i64 %1) #0 {
+define i64 @func000000000000006c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 2
   %.not = icmp eq i64 %0, 0
@@ -105,7 +106,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/vsprintf.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 48
   %3 = icmp eq i64 %0, 0
@@ -120,17 +121,6 @@ define i64 @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = icmp sgt i64 %0, 0
-  %4 = select i1 %3, i64 %2, i64 0
-  ret i64 %4
-}
-
-; 1 occurrences:
-; libjpeg-turbo/optimized/turbojpeg.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000024(i64 %0, i64 %1) #0 {
-entry:
-  %2 = shl nuw i64 %1, 32
-  %3 = icmp ult i64 %0, 4294967296
   %4 = select i1 %3, i64 %2, i64 0
   ret i64 %4
 }

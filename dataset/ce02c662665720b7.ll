@@ -11,7 +11,7 @@
 ; slurm/optimized/ring.ll
 ; zxing/optimized/PDFBoundingBox.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000056(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %0, -1
   %4 = add nsw i32 %1, %2
@@ -20,10 +20,23 @@ entry:
   ret i32 %6
 }
 
+; 2 occurrences:
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
+; opencv/optimized/staticSaliencyFineGrained.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000086(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %0, -1
+  %4 = add i32 %1, %2
+  %5 = icmp slt i32 %4, %0
+  %6 = select i1 %5, i32 %4, i32 %3
+  ret i32 %6
+}
+
 ; 1 occurrences:
 ; linux/optimized/extents.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000088(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000108(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %0, 1
   %4 = add i32 %1, %2
@@ -41,18 +54,6 @@ entry:
   %3 = add i32 %0, -1
   %4 = add i32 %1, %2
   %5 = icmp ult i32 %4, %0
-  %6 = select i1 %5, i32 %4, i32 %3
-  ret i32 %6
-}
-
-; 1 occurrences:
-; opencv/optimized/staticSaliencyFineGrained.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000046(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %0, -1
-  %4 = add i32 %1, %2
-  %5 = icmp slt i32 %4, %0
   %6 = select i1 %5, i32 %4, i32 %3
   ret i32 %6
 }

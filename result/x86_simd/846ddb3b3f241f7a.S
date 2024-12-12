@@ -7,9 +7,9 @@ func0000000000000009:                   # @func0000000000000009
 	vpsllq	$3, %ymm0, %ymm0
 	retq
 .LCPI1_0:
-	.long	4                               # 0x4
+	.long	255                             # 0xff
 func0000000000000001:                   # @func0000000000000001
-	vpbroadcastd	.LCPI1_0(%rip), %xmm1   # xmm1 = [4,4,4,4]
+	vpbroadcastd	.LCPI1_0(%rip), %xmm1   # xmm1 = [255,255,255,255]
 	vpsllvd	%xmm0, %xmm1, %xmm0
 	vpmovsxdq	%xmm0, %ymm0
 	vpsllq	$2, %ymm0, %ymm0

@@ -1,9 +1,10 @@
 
-%struct.rb_econv_elem_t.2485295 = type { ptr, ptr, ptr, ptr, ptr, i32 }
-%"class.re2::Prog::Inst.2486277" = type { i32, %union.anon.27.2486278 }
-%union.anon.27.2486278 = type { i32 }
+%struct.rb_econv_elem_t.2600781 = type { ptr, ptr, ptr, ptr, ptr, i32 }
+%"class.re2::Prog::Inst.2601721" = type { i32, %union.anon.27.2601722 }
+%union.anon.27.2601722 = type { i32 }
+%struct._ir_use_list.2791082 = type { i32, i32 }
 
-; 244 occurrences:
+; 235 occurrences:
 ; abc/optimized/FxchDiv.c.ll
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/FxchSCHashTable.c.ll
@@ -48,13 +49,11 @@
 ; cpython/optimized/assemble.ll
 ; cpython/optimized/flowgraph.ll
 ; cpython/optimized/instrumentation.ll
-; cpython/optimized/listobject.ll
 ; cpython/optimized/selectmodule.ll
 ; cpython/optimized/xmlparse.ll
 ; cpython/optimized/xmltok.ll
 ; gromacs/optimized/gmx_nmeig.cpp.ll
 ; gromacs/optimized/gmx_xpm2ps.cpp.ll
-; gromacs/optimized/grompp.cpp.ll
 ; libwebp/optimized/anim_encode.c.ll
 ; linux/optimized/acpi-cpufreq.ll
 ; linux/optimized/auditfilter.ll
@@ -96,7 +95,6 @@
 ; linux/optimized/ip6_tables.ll
 ; linux/optimized/ip_tables.ll
 ; linux/optimized/libata-pmp.ll
-; linux/optimized/list_lru.ll
 ; linux/optimized/memblock.ll
 ; linux/optimized/msdos.ll
 ; linux/optimized/net-sysfs.ll
@@ -106,9 +104,7 @@
 ; linux/optimized/orphan.ll
 ; linux/optimized/processor_throttling.ll
 ; linux/optimized/pt.ll
-; linux/optimized/quota_v2.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
-; linux/optimized/regcache-flat.ll
 ; linux/optimized/regcache-maple.ll
 ; linux/optimized/regcache.ll
 ; linux/optimized/resize.ll
@@ -126,7 +122,6 @@
 ; linux/optimized/virtgpu_vq.ll
 ; linux/optimized/virtio_blk.ll
 ; linux/optimized/virtio_ring.ll
-; php/optimized/ir_cfg.ll
 ; php/optimized/sccp.ll
 ; postgres/optimized/analyzejoins.ll
 ; postgres/optimized/brin_minmax_multi.ll
@@ -143,7 +138,6 @@
 ; postgres/optimized/freelist.ll
 ; postgres/optimized/function.ll
 ; postgres/optimized/geqo_erx.ll
-; postgres/optimized/geqo_pool.ll
 ; postgres/optimized/ginget.ll
 ; postgres/optimized/gistproc.ll
 ; postgres/optimized/heapam.ll
@@ -219,7 +213,6 @@
 ; qemu/optimized/system_dirtylimit.c.ll
 ; qemu/optimized/system_dma-helpers.c.ll
 ; qemu/optimized/system_physmem.c.ll
-; qemu/optimized/util_fdmon-poll.c.ll
 ; qemu/optimized/util_iov.c.ll
 ; qemu/optimized/util_uri.c.ll
 ; quickjs/optimized/quickjs.ll
@@ -236,7 +229,6 @@
 ; wireshark/optimized/lemon.c.ll
 ; wireshark/optimized/packet-btmesh.c.ll
 ; wireshark/optimized/packet-mbim.c.ll
-; wireshark/optimized/packet-nbap.c.ll
 ; wireshark/optimized/packet-someip.c.ll
 ; wireshark/optimized/packet-systemd-journal.c.ll
 ; wireshark/optimized/packet-wccp.c.ll
@@ -252,11 +244,11 @@
 define ptr @func0000000000000000(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr %struct.rb_econv_elem_t.2485295, ptr %0, i64 %2, i32 2
+  %3 = getelementptr %struct.rb_econv_elem_t.2600781, ptr %0, i64 %2, i32 2
   ret ptr %3
 }
 
-; 1310 occurrences:
+; 1278 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/FxchMan.c.ll
@@ -302,7 +294,6 @@ entry:
 ; abc/optimized/bmcEco.c.ll
 ; abc/optimized/bmcFault.c.ll
 ; abc/optimized/bmcFx.c.ll
-; abc/optimized/bmcLoad.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaxi.c.ll
 ; abc/optimized/bmcUnroll.c.ll
@@ -380,7 +371,6 @@ entry:
 ; abc/optimized/giaTis.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; abc/optimized/ifTune.c.ll
-; abc/optimized/lpkCut.c.ll
 ; abc/optimized/luckySimple.c.ll
 ; abc/optimized/mpmAbc.c.ll
 ; abc/optimized/mpmDsd.c.ll
@@ -397,7 +387,6 @@ entry:
 ; abc/optimized/sfmWin.c.ll
 ; abc/optimized/sscCore.c.ll
 ; abc/optimized/timBox.c.ll
-; abc/optimized/timTrav.c.ll
 ; abc/optimized/trees.c.ll
 ; abc/optimized/utilBridge.c.ll
 ; abc/optimized/wlcAbs.c.ll
@@ -544,7 +533,6 @@ entry:
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; cmake/optimized/cmELF.cxx.ll
 ; cmake/optimized/frm_driver.c.ll
-; cmake/optimized/huf_compress.c.ll
 ; cmake/optimized/trees.c.ll
 ; cmake/optimized/xmlparse.c.ll
 ; cmake/optimized/xmltok.c.ll
@@ -610,7 +598,6 @@ entry:
 ; graphviz/optimized/poly.c.ll
 ; graphviz/optimized/position.c.ll
 ; graphviz/optimized/trapezoid.c.ll
-; gromacs/optimized/alltoall.cpp.ll
 ; gromacs/optimized/atomprop.cpp.ll
 ; gromacs/optimized/atoms.cpp.ll
 ; gromacs/optimized/atomsbuilder.cpp.ll
@@ -650,7 +637,6 @@ entry:
 ; gromacs/optimized/force.cpp.ll
 ; gromacs/optimized/freevolume.cpp.ll
 ; gromacs/optimized/g96io.cpp.ll
-; gromacs/optimized/gather.cpp.ll
 ; gromacs/optimized/gen_ad.cpp.ll
 ; gromacs/optimized/gen_vsite.cpp.ll
 ; gromacs/optimized/genhydro.cpp.ll
@@ -687,7 +673,6 @@ entry:
 ; gromacs/optimized/helpformat.cpp.ll
 ; gromacs/optimized/histogram.cpp.ll
 ; gromacs/optimized/hizzie.cpp.ll
-; gromacs/optimized/huffman.c.ll
 ; gromacs/optimized/hxprops.cpp.ll
 ; gromacs/optimized/imd.cpp.ll
 ; gromacs/optimized/index.cpp.ll
@@ -709,7 +694,6 @@ entry:
 ; gromacs/optimized/nbnxm.cpp.ll
 ; gromacs/optimized/nm2type.cpp.ll
 ; gromacs/optimized/nrama.cpp.ll
-; gromacs/optimized/once.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; gromacs/optimized/partition.cpp.ll
 ; gromacs/optimized/pbcmethods.cpp.ll
@@ -722,7 +706,6 @@ entry:
 ; gromacs/optimized/pme_only.cpp.ll
 ; gromacs/optimized/pme_pp.cpp.ll
 ; gromacs/optimized/princ.cpp.ll
-; gromacs/optimized/printhardware.cpp.ll
 ; gromacs/optimized/propagator.cpp.ll
 ; gromacs/optimized/prunekerneldispatch.cpp.ll
 ; gromacs/optimized/pull.cpp.ll
@@ -740,8 +723,6 @@ entry:
 ; gromacs/optimized/reversetopology.cpp.ll
 ; gromacs/optimized/runner.cpp.ll
 ; gromacs/optimized/sasa.cpp.ll
-; gromacs/optimized/scan.cpp.ll
-; gromacs/optimized/scatter.cpp.ll
 ; gromacs/optimized/select.cpp.ll
 ; gromacs/optimized/shellfc.cpp.ll
 ; gromacs/optimized/sim_util.cpp.ll
@@ -823,7 +804,6 @@ entry:
 ; llvm/optimized/MachineVerifier.cpp.ll
 ; llvm/optimized/ModuloSchedule.cpp.ll
 ; llvm/optimized/PeepholeOptimizer.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInsertWriteVXRM.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
@@ -1081,7 +1061,6 @@ entry:
 ; opencv/optimized/pipeline_modeling_tool.cpp.ll
 ; opencv/optimized/ppf_helpers.cpp.ll
 ; opencv/optimized/resize.cpp.ll
-; opencv/optimized/scansegment.cpp.ll
 ; opencv/optimized/seam_finders.cpp.ll
 ; opencv/optimized/selectivesearchsegmentation.cpp.ll
 ; opencv/optimized/short_term_imageless_tracker.cpp.ll
@@ -1110,19 +1089,11 @@ entry:
 ; openjdk/optimized/X11PMBlitLoops.ll
 ; openjdk/optimized/X11SurfaceData.ll
 ; openjdk/optimized/X11TextRenderer_md.ll
-; openjdk/optimized/abstractInterpreter.ll
 ; openjdk/optimized/awt_GraphicsEnv.ll
-; openjdk/optimized/bootstrapInfo.ll
-; openjdk/optimized/bytecode.ll
-; openjdk/optimized/bytecodeTracer.ll
 ; openjdk/optimized/check_code.ll
-; openjdk/optimized/ciEnv.ll
-; openjdk/optimized/ciReplay.ll
 ; openjdk/optimized/classLoader.ll
 ; openjdk/optimized/collectedHeap.ll
 ; openjdk/optimized/compilationLog.ll
-; openjdk/optimized/constantPool.ll
-; openjdk/optimized/cpCache.ll
 ; openjdk/optimized/debugDispatch.ll
 ; openjdk/optimized/deoptimization.ll
 ; openjdk/optimized/dgif_lib.ll
@@ -1136,12 +1107,8 @@ entry:
 ; openjdk/optimized/jvm.ll
 ; openjdk/optimized/jvmFlag.ll
 ; openjdk/optimized/jvmci.ll
-; openjdk/optimized/jvmciCompilerToVM.ll
-; openjdk/optimized/jvmtiClassFileReconstituter.ll
 ; openjdk/optimized/jvmtiExport.ll
 ; openjdk/optimized/jvmtiRedefineClasses.ll
-; openjdk/optimized/linkResolver.ll
-; openjdk/optimized/methodComparator.ll
 ; openjdk/optimized/multiVis.ll
 ; openjdk/optimized/nmethod.ll
 ; openjdk/optimized/os_linux.ll
@@ -1159,7 +1126,6 @@ entry:
 ; openjdk/optimized/threads.ll
 ; openjdk/optimized/vframeArray.ll
 ; openjdk/optimized/vmThread.ll
-; openjdk/optimized/whitebox.ll
 ; openjdk/optimized/xPhysicalMemory.ll
 ; openjdk/optimized/zGeneration.ll
 ; openjdk/optimized/zPhysicalMemory.ll
@@ -1190,7 +1156,6 @@ entry:
 ; openmpi/optimized/tm_bucket.ll
 ; openmpi/optimized/topo_base_dist_graph_create.ll
 ; openspiel/optimized/Moves.cpp.ll
-; openspiel/optimized/QuickTricks.cpp.ll
 ; openspiel/optimized/ce.cc.ll
 ; openspiel/optimized/dou_dizhu.cc.ll
 ; openspiel/optimized/havannah.cc.ll
@@ -1229,7 +1194,6 @@ entry:
 ; php/optimized/ir_ra.ll
 ; php/optimized/ir_sccp.ll
 ; php/optimized/ir_strtab.ll
-; php/optimized/optimize_func_calls.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; php/optimized/proc_open.ll
 ; php/optimized/scanf.ll
@@ -1242,7 +1206,6 @@ entry:
 ; php/optimized/zend_dump.ll
 ; php/optimized/zend_inference.ll
 ; php/optimized/zend_jit.ll
-; php/optimized/zend_object_handlers.ll
 ; php/optimized/zend_optimizer.ll
 ; php/optimized/zend_ssa.ll
 ; pocketpy/optimized/ceval.cpp.ll
@@ -1307,7 +1270,6 @@ entry:
 ; slurm/optimized/job_resources.ll
 ; slurm/optimized/job_scheduler.ll
 ; slurm/optimized/job_test.ll
-; slurm/optimized/node_data.ll
 ; slurm/optimized/node_scheduler.ll
 ; slurm/optimized/pmi_server.ll
 ; slurm/optimized/rate_limit.ll
@@ -1324,7 +1286,6 @@ entry:
 ; velox/optimized/AllocationPool.cpp.ll
 ; velox/optimized/ConjunctExpr.cpp.ll
 ; velox/optimized/SsdFile.cpp.ll
-; velox/optimized/StringView.cpp.ll
 ; verilator/optimized/V3Subst.cpp.ll
 ; verilator/optimized/V3Task.cpp.ll
 ; wolfssl/optimized/internal.c.ll
@@ -1564,14 +1525,30 @@ entry:
 ; yosys/optimized/yw.ll
 ; yosys/optimized/zinit.ll
 ; zlib/optimized/trees.c.ll
-; zstd/optimized/huf_compress.c.ll
 ; zxing/optimized/DMDataBlock.cpp.ll
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = getelementptr nusw %"class.re2::Prog::Inst.2486277", ptr %0, i64 %2, i32 1
+  %3 = getelementptr nusw %"class.re2::Prog::Inst.2601721", ptr %0, i64 %2, i32 1
+  ret ptr %3
+}
+
+; 8 occurrences:
+; assimp/optimized/HL1MDLLoader.cpp.ll
+; boost/optimized/message.ll
+; opencv/optimized/boostdesc.cpp.ll
+; opencv/optimized/facemarkLBF.cpp.ll
+; php/optimized/ir_sccp.ll
+; php/optimized/zend_inference.ll
+; php/optimized/zend_jit.ll
+; yosys/optimized/mem.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
+entry:
+  %2 = sext i32 %1 to i64
+  %3 = getelementptr nusw nuw %struct._ir_use_list.2791082, ptr %0, i64 %2, i32 1
   ret ptr %3
 }
 

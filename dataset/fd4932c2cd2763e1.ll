@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 24 occurrences:
 ; abc/optimized/cuddUtil.c.ll
 ; arrow/optimized/tdigest.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -18,7 +18,6 @@
 ; openblas/optimized/dgtrfs.c.ll
 ; openblas/optimized/dlaic1.c.ll
 ; openblas/optimized/dlanv2.c.ll
-; openblas/optimized/dtgsna.c.ll
 ; opencv/optimized/dls.cpp.ll
 ; opencv/optimized/lda.cpp.ll
 ; proj/optimized/factors.cpp.ll

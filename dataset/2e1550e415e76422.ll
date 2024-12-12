@@ -24,7 +24,7 @@ entry:
   %3 = fcmp oge double %1, %2
   %4 = select i1 %3, double %1, double %2
   %5 = fdiv double 1.000000e+00, %4
-  %6 = fmul double %5, %0
+  %6 = fmul double %0, %5
   ret double %6
 }
 

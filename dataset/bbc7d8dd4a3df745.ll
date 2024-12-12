@@ -1,6 +1,7 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; harfbuzz/optimized/hb-subset.cc.ll
+; libquic/optimized/ssl_lib.c.ll
 ; linux/optimized/vmscan.ll
 ; llvm/optimized/Dwarf.cpp.ll
 ; llvm/optimized/PassBuilderPipelines.cpp.ll

@@ -1,13 +1,17 @@
 
-; 109 occurrences:
+; 113 occurrences:
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; casadi/optimized/lsqr.cpp.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
 ; cpython/optimized/mathmodule.ll
-; flac/optimized/window.c.ll
 ; graphviz/optimized/circpos.c.ll
 ; gromacs/optimized/biasparams.cpp.ll
 ; gromacs/optimized/colvarbias_histogram_reweight_amd.cpp.ll

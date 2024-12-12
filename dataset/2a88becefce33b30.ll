@@ -1,5 +1,5 @@
 
-%"class.re2::StringPiece.2682903" = type { ptr, i64 }
+%"class.re2::StringPiece.2795662" = type { ptr, i64 }
 
 ; 1 occurrences:
 ; mitsuba3/optimized/roughplastic.cpp.ll
@@ -16,29 +16,30 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/Re2Functions.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007e(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000007f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = zext nneg i32 %3 to i64
   %5 = sub nuw nsw i64 %4, %1
-  %6 = getelementptr nusw %"class.re2::StringPiece.2682903", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.re2::StringPiece.2795662", ptr %0, i64 %5
   ret ptr %6
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
+; cvc5/optimized/tableau.cpp.ll
 ; hyperscan/optimized/ng_netflow.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/GCOV.cpp.ll
 ; llvm/optimized/MasmParser.cpp.ll
 ; z3/optimized/upolynomial.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = zext i32 %3 to i64
   %5 = sub nuw nsw i64 %4, %1
-  %6 = getelementptr nusw i32, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i32, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -105,12 +106,12 @@ entry:
 ; 1 occurrences:
 ; meshlab/optimized/outline2_rasterizer.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -1
   %4 = zext nneg i32 %3 to i64
   %5 = sub nuw nsw i64 %4, %1
-  %6 = getelementptr nusw i32, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i32, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -130,12 +131,12 @@ entry:
 ; 1 occurrences:
 ; graphviz/optimized/mincross.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = zext nneg i32 %3 to i64
   %5 = sub nuw nsw i64 %4, %1
-  %6 = getelementptr nusw ptr, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw ptr, ptr %0, i64 %5
   ret ptr %6
 }
 

@@ -1,5 +1,7 @@
 
-; 8 occurrences:
+; 10 occurrences:
+; lvgl/optimized/lv_canvas.ll
+; lvgl/optimized/lv_draw_sw_line.ll
 ; opencv/optimized/color_hsv.dispatch.cpp.ll
 ; opencv/optimized/color_yuv.dispatch.cpp.ll
 ; opencv/optimized/freetype.cpp.ll

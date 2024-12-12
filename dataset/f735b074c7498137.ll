@@ -1,5 +1,5 @@
 
-; 51 occurrences:
+; 50 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/ComputeUVMappingProcess.cpp.ll
 ; assimp/optimized/NFFLoader.cpp.ll
@@ -32,7 +32,6 @@
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; bullet3/optimized/btStaticPlaneShape.ll
 ; bullet3/optimized/btUniversalConstraint.ll
-; darktable/optimized/introspection_colorbalancergb.c.ll
 ; gromacs/optimized/bonded.cpp.ll
 ; gromacs/optimized/gmx_bundle.cpp.ll
 ; gromacs/optimized/gmx_order.cpp.ll
@@ -55,7 +54,7 @@
 define float @func0000000000000000(float %0, float %1, float %2) #0 {
 entry:
   %3 = fdiv float 1.000000e+00, %2
-  %4 = fmul float %3, %0
+  %4 = fmul float %0, %3
   %5 = fneg float %1
   %6 = fmul float %4, %5
   ret float %6

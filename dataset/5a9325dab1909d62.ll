@@ -1,5 +1,5 @@
 
-; 658 occurrences:
+; 659 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/acbFunc.c.ll
 ; abc/optimized/aigJust.c.ll
@@ -24,6 +24,8 @@
 ; assimp/optimized/MDLLoader.cpp.ll
 ; assimp/optimized/TerragenLoader.cpp.ll
 ; assimp/optimized/ValidateDataStructure.cpp.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; c3c/optimized/llvm_codegen_expr.c.ll
 ; casadi/optimized/fmu2.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
@@ -36,7 +38,6 @@
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
-; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; cmake/optimized/hex.c.ll
 ; cmake/optimized/hostip.c.ll
 ; cmake/optimized/noproxy.c.ll
@@ -258,7 +259,6 @@
 ; linux/optimized/mon_bin.ll
 ; linux/optimized/mpi-bit.ll
 ; linux/optimized/n_tty.ll
-; linux/optimized/rpl.ll
 ; linux/optimized/scatterlist.ll
 ; linux/optimized/scatterwalk.ll
 ; linux/optimized/scsi_lib.ll
@@ -321,6 +321,9 @@
 ; lodepng/optimized/lodepng.cpp.ll
 ; luajit/optimized/lj_opt_fold.ll
 ; luajit/optimized/lj_opt_fold_dyn.ll
+; lvgl/optimized/lv_binfont_loader.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
@@ -480,8 +483,6 @@
 ; postgres/optimized/sha2_srv.ll
 ; postgres/optimized/varbit.ll
 ; postgres/optimized/zic.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
@@ -666,7 +667,7 @@ entry:
   ret i32 %2
 }
 
-; 152 occurrences:
+; 161 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/acecCover.c.ll
 ; abc/optimized/bdcSpfd.c.ll
@@ -701,6 +702,8 @@ entry:
 ; abc/optimized/saigSwitch.c.ll
 ; abc/optimized/sfmDec.c.ll
 ; abc/optimized/sswSim.c.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; clamav/optimized/mew.c.ll
 ; clamav/optimized/mszipd.c.ll
 ; clamav/optimized/qtmd.c.ll
@@ -747,7 +750,6 @@ entry:
 ; linux/optimized/md.ll
 ; linux/optimized/nexthop.ll
 ; linux/optimized/poll.ll
-; linux/optimized/spectmgmt.ll
 ; linux/optimized/xz_dec_bcj.ll
 ; llvm/optimized/APInt.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
@@ -762,6 +764,13 @@ entry:
 ; luajit/optimized/lj_crecord_dyn.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_flex.ll
+; lvgl/optimized/lv_grid.ll
+; lvgl/optimized/lv_line.ll
+; lvgl/optimized/lv_obj_pos.ll
+; lvgl/optimized/lv_refr.ll
+; lvgl/optimized/lv_span.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshoptimizer/optimized/indexcodec.cpp.ll
 ; miniaudio/optimized/unity.c.ll
@@ -772,6 +781,7 @@ entry:
 ; opencv/optimized/array.cpp.ll
 ; opencv/optimized/lapack.cpp.ll
 ; opencv/optimized/matrix_sparse.cpp.ll
+; opencv/optimized/qrcode_encoder.cpp.ll
 ; openjdk/optimized/cmsmd5.ll
 ; openjdk/optimized/compressedStream.ll
 ; openjdk/optimized/graphKit.ll
@@ -827,12 +837,11 @@ entry:
   ret i32 %2
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; linux/optimized/addrconf.ll
 ; linux/optimized/devinet.ll
 ; linux/optimized/esp6.ll
 ; linux/optimized/ff-memless.ll
-; linux/optimized/fib_notifier.ll
 ; linux/optimized/nexthop.ll
 ; linux/optimized/slab_common.ll
 ; linux/optimized/tg3.ll

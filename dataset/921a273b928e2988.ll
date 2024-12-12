@@ -1,7 +1,6 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; git/optimized/merge-ort.ll
-; linux/optimized/mii.ll
 ; linux/optimized/tg3.ll
 ; llvm/optimized/APValue.cpp.ll
 ; z3/optimized/dep_intervals.cpp.ll

@@ -1,5 +1,5 @@
 
-; 336 occurrences:
+; 337 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcPart.c.ll
 ; abc/optimized/abcRpo.c.ll
@@ -72,6 +72,7 @@
 ; llvm/optimized/VectorUtils.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
+; lvgl/optimized/lv_draw_sw_line.ll
 ; minetest/optimized/guiTable.cpp.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; msdfgen/optimized/edge-coloring.cpp.ll

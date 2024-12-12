@@ -23,7 +23,7 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; wireshark/optimized/packet-pw-satop.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000023(i1 %0, i32 %1, i8 %2) #0 {
+define i32 @func0000000000000043(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, 8
   %4 = icmp eq i8 %2, 0
@@ -62,7 +62,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/af_unix.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i1 %0, i32 %1, i8 %2) #0 {
+define i32 @func0000000000000042(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, 8257
   %4 = icmp eq i8 %2, 0

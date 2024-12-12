@@ -31,7 +31,7 @@ entry:
   ret i64 %3
 }
 
-; 67 occurrences:
+; 68 occurrences:
 ; abseil-cpp/optimized/log_severity_test.cc.ll
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
 ; abseil-cpp/optimized/mutex_test.cc.ll
@@ -92,6 +92,7 @@ entry:
 ; protobuf/optimized/message_differencer.cc.ll
 ; proxygen/optimized/HTTPTransactionEgressSM.cpp.ll
 ; proxygen/optimized/HTTPTransactionIngressSM.cpp.ll
+; quantlib/optimized/hestonslvfdmmodel.ll
 ; tev/optimized/Common.cpp.ll
 ; tev/optimized/Image.cpp.ll
 ; tev/optimized/Ipc.cpp.ll

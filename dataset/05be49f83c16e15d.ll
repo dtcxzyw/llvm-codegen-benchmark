@@ -1,5 +1,5 @@
 
-; 41 occurrences:
+; 40 occurrences:
 ; abc/optimized/cuddEssent.c.ll
 ; abc/optimized/ioReadPla.c.ll
 ; abc/optimized/plaMan.c.ll
@@ -32,7 +32,6 @@
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; llvm/optimized/DecoderEmitter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; openjdk/optimized/intrinsicnode.ll
 ; openusd/optimized/avif_obu.c.ll
 ; openusd/optimized/fixed-dtoa.cc.ll
@@ -49,7 +48,7 @@ entry:
   ret i64 %3
 }
 
-; 1318 occurrences:
+; 1310 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcIf.c.ll
@@ -131,6 +130,8 @@ entry:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/zip.c.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/rational.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; brotli/optimized/decode.c.ll
@@ -332,8 +333,6 @@ entry:
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
-; linux/optimized/8250_lpss.ll
-; linux/optimized/8250_mid.ll
 ; linux/optimized/amd_nb.ll
 ; linux/optimized/apic.ll
 ; linux/optimized/badblocks.ll
@@ -342,7 +341,6 @@ entry:
 ; linux/optimized/dm-region-hash.ll
 ; linux/optimized/dm-stripe.ll
 ; linux/optimized/drm_buddy.ll
-; linux/optimized/dw.ll
 ; linux/optimized/exfldio.ll
 ; linux/optimized/extents.ll
 ; linux/optimized/fse_decompress.ll
@@ -360,7 +358,6 @@ entry:
 ; linux/optimized/mpage.ll
 ; linux/optimized/netlabel_kapi.ll
 ; linux/optimized/pt.ll
-; linux/optimized/ptp_kvm_x86.ll
 ; linux/optimized/pvclock.ll
 ; linux/optimized/quota_tree.ll
 ; linux/optimized/rapl.ll
@@ -375,8 +372,6 @@ entry:
 ; linux/optimized/uncore_snbep.ll
 ; linux/optimized/util.ll
 ; linux/optimized/utmath.ll
-; linux/optimized/vclock_gettime.ll
-; linux/optimized/vsyscall.ll
 ; linux/optimized/workingset.ll
 ; linux/optimized/xarray.ll
 ; linux/optimized/xprt.ll
@@ -554,7 +549,6 @@ entry:
 ; llvm/optimized/RISCVAsmBackend.cpp.ll
 ; llvm/optimized/RISCVDisassembler.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RISCVLegalizerInfo.cpp.ll
 ; llvm/optimized/RISCVMatInt.cpp.ll
@@ -664,8 +658,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -1201,7 +1193,6 @@ entry:
 ; spike/optimized/fsr.ll
 ; spike/optimized/fsri.ll
 ; spike/optimized/fsrw.ll
-; spike/optimized/i64_to_f32.ll
 ; spike/optimized/s_mulAddF16.ll
 ; spike/optimized/vwsll_vv.ll
 ; sqlite/optimized/sqlite3.ll
@@ -1376,7 +1367,7 @@ entry:
   ret i64 %3
 }
 
-; 68 occurrences:
+; 69 occurrences:
 ; abc/optimized/cuddEssent.c.ll
 ; abc/optimized/extraUtilMisc.c.ll
 ; abc/optimized/fraClaus.c.ll
@@ -1427,6 +1418,7 @@ entry:
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; openjdk/optimized/graphKit.ll
+; openusd/optimized/avif.c.ll
 ; openusd/optimized/fixed-dtoa.cc.ll
 ; openusd/optimized/openexr-c.c.ll
 ; pbrt-v4/optimized/camera.cpp.ll
@@ -1476,7 +1468,7 @@ entry:
   ret i64 %3
 }
 
-; 270 occurrences:
+; 271 occurrences:
 ; abc/optimized/abcIf.c.ll
 ; abc/optimized/abcSymm.c.ll
 ; abc/optimized/ac_wrapper.cpp.ll
@@ -1521,6 +1513,7 @@ entry:
 ; abc/optimized/sfmDec.c.ll
 ; abc/optimized/sfmLib.c.ll
 ; arrow/optimized/fixed-dtoa.cc.ll
+; boost/optimized/to_chars.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/compress_fragment.c.ll

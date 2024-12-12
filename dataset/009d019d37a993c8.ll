@@ -1,5 +1,5 @@
 
-; 332 occurrences:
+; 336 occurrences:
 ; abseil-cpp/optimized/charconv_parse.cc.ll
 ; arrow/optimized/string-to-double.cc.ll
 ; cmake/optimized/archive_read_support_format_tar.c.ll
@@ -105,6 +105,9 @@
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/cistpl.ll
 ; llama.cpp/optimized/grammar-parser.cpp.ll
+; llvm/optimized/AttributorAttributes.cpp.ll
+; llvm/optimized/CoroFrame.cpp.ll
+; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/TargetTransformInfo.cpp.ll
 ; llvm/optimized/VectorCombine.cpp.ll
 ; luau/optimized/Transpiler.cpp.ll
@@ -174,6 +177,7 @@
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
 ; openusd/optimized/string-to-double.cc.ll
+; pocketpy/optimized/lexer.cpp.ll
 ; proxygen/optimized/HTTPBinaryCodec.cpp.ll
 ; qemu/optimized/util_uri.c.ll
 ; regex-rs/optimized/1pxsmct4oxs5dlep.ll
@@ -341,9 +345,11 @@ entry:
   ret i1 %5
 }
 
-; 86 occurrences:
+; 93 occurrences:
 ; abc/optimized/acecPo.c.ll
 ; assimp/optimized/ASEParser.cpp.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; clamav/optimized/dlp.c.ll
 ; cmake/optimized/cmCTestBZR.cxx.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
@@ -363,20 +369,25 @@ entry:
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/sd.ll
 ; linux/optimized/tdls.ll
+; linux/optimized/trace_probe.ll
 ; llvm/optimized/AArch64PromoteConstant.cpp.ll
 ; llvm/optimized/AsmWriterEmitter.cpp.ll
 ; llvm/optimized/AsmWriterInst.cpp.ll
+; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/BitcodeWriter.cpp.ll
 ; llvm/optimized/ControlHeightReduction.cpp.ll
 ; llvm/optimized/CoroFrame.cpp.ll
 ; llvm/optimized/EarlyCSE.cpp.ll
+; llvm/optimized/InstCombineLoadStoreAlloca.cpp.ll
+; llvm/optimized/InstructionCombining.cpp.ll
 ; llvm/optimized/LICM.cpp.ll
+; llvm/optimized/LazyValueInfo.cpp.ll
 ; llvm/optimized/Lint.cpp.ll
+; llvm/optimized/Loads.cpp.ll
 ; llvm/optimized/MCAsmInfoXCOFF.cpp.ll
 ; llvm/optimized/SMTConstraintManager.cpp.ll
 ; llvm/optimized/SValBuilder.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
-; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/TokenAnnotator.cpp.ll
 ; llvm/optimized/TokenConcatenation.cpp.ll
 ; llvm/optimized/Z3CrosscheckVisitor.cpp.ll
@@ -404,8 +415,8 @@ entry:
 ; regex-rs/optimized/6c2onrqlphpgxx0.ll
 ; rocksdb/optimized/string_util.cc.ll
 ; ruby/optimized/bignum.ll
+; ruby/optimized/regexec.ll
 ; ruby/optimized/symbol.ll
-; slurm/optimized/env.ll
 ; softposit-rs/optimized/279qzdp4rwsfn4n0.ll
 ; spike/optimized/socketif.ll
 ; typst-rs/optimized/3rk2ctuzbghb17s4.ll
@@ -451,7 +462,24 @@ entry:
   ret i1 %5
 }
 
-; 13 occurrences:
+; 7 occurrences:
+; openjdk/optimized/library_call.ll
+; openjdk/optimized/zip_util.ll
+; openssl/optimized/libssl-lib-rec_layer_s3.ll
+; openssl/optimized/libssl-shlib-rec_layer_s3.ll
+; wireshark/optimized/packet-dnp.c.ll
+; yoga/optimized/CalculateLayout.cpp.ll
+; zxing/optimized/zueci.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000030(i1 %0, i1 %1, i8 %2) #0 {
+entry:
+  %3 = icmp ne i8 %2, 22
+  %4 = or i1 %0, %1
+  %5 = or i1 %4, %3
+  ret i1 %5
+}
+
+; 14 occurrences:
 ; clamav/optimized/readdb.c.ll
 ; cmake/optimized/mprintf.c.ll
 ; curl/optimized/libcurl_la-mprintf.ll
@@ -465,11 +493,12 @@ entry:
 ; spike/optimized/mmu.ll
 ; stb/optimized/stb_c_lexer.c.ll
 ; wireshark/optimized/packet-cemi.c.ll
+; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i8 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = or i1 %1, %2
-  %4 = icmp ne i8 %0, 22
+  %4 = icmp ne i8 %0, 20
   %5 = or i1 %4, %3
   ret i1 %5
 }
@@ -502,7 +531,7 @@ entry:
   ret i1 %5
 }
 
-; 50 occurrences:
+; 47 occurrences:
 ; freetype/optimized/psaux.c.ll
 ; hermes/optimized/Executor.cpp.ll
 ; linux/optimized/tdls.ll
@@ -534,7 +563,6 @@ entry:
 ; llvm/optimized/LowerConstantIntrinsics.cpp.ll
 ; llvm/optimized/OverflowInstAnalysis.cpp.ll
 ; llvm/optimized/RISCVCodeGenPrepare.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/SelectOptimize.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
@@ -551,25 +579,10 @@ entry:
 ; php/optimized/zend_ast.ll
 ; wireshark/optimized/packet-iscsi.c.ll
 ; wireshark/optimized/packet-memcache.c.ll
-; yoga/optimized/CalculateLayout.cpp.ll
-; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000010(i8 %0, i1 %1, i1 %2) #0 {
+define i1 @func0000000000000010(i1 %0, i1 %1, i8 %2) #0 {
 entry:
-  %3 = or i1 %1, %2
-  %4 = icmp ugt i8 %0, 1
-  %5 = or i1 %4, %3
-  ret i1 %5
-}
-
-; 3 occurrences:
-; openjdk/optimized/library_call.ll
-; openjdk/optimized/zip_util.ll
-; wireshark/optimized/packet-dnp.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000030(i1 %0, i1 %1, i8 %2) #0 {
-entry:
-  %3 = icmp ne i8 %2, 3
+  %3 = icmp ult i8 %2, 10
   %4 = or i1 %0, %1
   %5 = or i1 %4, %3
   ret i1 %5

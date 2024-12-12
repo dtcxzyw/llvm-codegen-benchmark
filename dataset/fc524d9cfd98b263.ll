@@ -1,5 +1,7 @@
 
-; 279 occurrences:
+; 284 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; clamav/optimized/arcread.cpp.ll
 ; clamav/optimized/explode.c.ll
 ; diesel-rs/optimized/1dr0ikhoh8prk7sr.ll
@@ -24,6 +26,9 @@
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll
 ; folly/optimized/Uri.cpp.ll
+; freetype/optimized/cff.c.ll
+; freetype/optimized/type1.c.ll
+; freetype/optimized/type1cid.c.ll
 ; gromacs/optimized/checkpoint.cpp.ll
 ; hdf5/optimized/H5Gtraverse.c.ll
 ; hdf5/optimized/H5Ocache.c.ll

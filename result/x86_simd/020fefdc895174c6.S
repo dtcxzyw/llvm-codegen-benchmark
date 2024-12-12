@@ -26,10 +26,3 @@ func0000000000000008:                   # @func0000000000000008
 	vpcmpnleub	.LCPI4_0(%rip), %xmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	retq
-.LCPI5_0:
-	.zero	16,32
-func0000000000000004:                   # @func0000000000000004
-	vpand	%xmm1, %xmm0, %xmm0
-	vpcmpltub	.LCPI5_0(%rip), %xmm0, %k0
-	vpmovm2b	%k0, %xmm0
-	retq

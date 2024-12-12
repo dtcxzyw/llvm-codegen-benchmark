@@ -1,9 +1,6 @@
 
-; 464 occurrences:
+; 461 occurrences:
 ; abc/optimized/bacBlast.c.ll
-; abc/optimized/bacCom.c.ll
-; abc/optimized/bacNtk.c.ll
-; abc/optimized/bacWriteBlif.c.ll
 ; abc/optimized/bacWriteVer.c.ll
 ; abc/optimized/satSolver2.c.ll
 ; assimp/optimized/Assimp.cpp.ll
@@ -41,6 +38,7 @@
 ; icu/optimized/locdistance.ll
 ; icu/optimized/loclikelysubtags.ll
 ; icu/optimized/measunit_extra.ll
+; icu/optimized/numparse_affixes.ll
 ; icu/optimized/propname.ll
 ; icu/optimized/rulebasedcollator.ll
 ; icu/optimized/ucasemap.ll
@@ -78,7 +76,6 @@
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/drm_eld.ll
 ; linux/optimized/drm_hdcp_helper.ll
-; linux/optimized/evgpeinit.ll
 ; linux/optimized/exthdrs.ll
 ; linux/optimized/fatent.ll
 ; linux/optimized/filter.ll
@@ -95,11 +92,9 @@
 ; linux/optimized/intel_fb.ll
 ; linux/optimized/intel_rps.ll
 ; linux/optimized/intel_sdvo.ll
-; linux/optimized/joliet.ll
 ; linux/optimized/ldt.ll
 ; linux/optimized/libata-scsi.ll
 ; linux/optimized/maple_tree.ll
-; linux/optimized/nvram.ll
 ; linux/optimized/ohci-hcd.ll
 ; linux/optimized/printk.ll
 ; linux/optimized/psargs.ll
@@ -158,6 +153,13 @@
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
 ; luau/optimized/IrRegAllocA64.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_draw_sw_img.ll
+; lvgl/optimized/lv_math.ll
+; lvgl/optimized/lv_obj_style.ll
+; lvgl/optimized/lv_style.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/CImageLoaderTGA.cpp.ll
@@ -206,7 +208,6 @@
 ; openssl/optimized/libcrypto-lib-ecp_nistz256.ll
 ; openssl/optimized/libcrypto-lib-quic_vlint.ll
 ; openssl/optimized/libcrypto-lib-rsaz_exp.ll
-; openssl/optimized/libcrypto-lib-t_pkey.ll
 ; openssl/optimized/libcrypto-shlib-a_int.ll
 ; openssl/optimized/libcrypto-shlib-bn_lib.ll
 ; openssl/optimized/libcrypto-shlib-bn_mpi.ll
@@ -214,7 +215,6 @@
 ; openssl/optimized/libcrypto-shlib-ecp_nistz256.ll
 ; openssl/optimized/libcrypto-shlib-quic_vlint.ll
 ; openssl/optimized/libcrypto-shlib-rsaz_exp.ll
-; openssl/optimized/libcrypto-shlib-t_pkey.ll
 ; openssl/optimized/libssl-lib-quic_wire.ll
 ; openssl/optimized/libssl-lib-quic_wire_pkt.ll
 ; openssl/optimized/libssl-shlib-quic_vlint.ll
@@ -399,7 +399,6 @@
 ; wireshark/optimized/packet-mtp3mg.c.ll
 ; wireshark/optimized/packet-mux27010.c.ll
 ; wireshark/optimized/packet-nas_eps.c.ll
-; wireshark/optimized/packet-netanalyzer.c.ll
 ; wireshark/optimized/packet-netflow.c.ll
 ; wireshark/optimized/packet-nvme.c.ll
 ; wireshark/optimized/packet-obex.c.ll
@@ -418,7 +417,6 @@
 ; wireshark/optimized/packet-rohc.c.ll
 ; wireshark/optimized/packet-rsvp.c.ll
 ; wireshark/optimized/packet-rtcp.c.ll
-; wireshark/optimized/packet-rtp-events.c.ll
 ; wireshark/optimized/packet-rtp-midi.c.ll
 ; wireshark/optimized/packet-rtp.c.ll
 ; wireshark/optimized/packet-s5066dts.c.ll
@@ -427,7 +425,6 @@
 ; wireshark/optimized/packet-scsi.c.ll
 ; wireshark/optimized/packet-selfm.c.ll
 ; wireshark/optimized/packet-shim6.c.ll
-; wireshark/optimized/packet-skype.c.ll
 ; wireshark/optimized/packet-sna.c.ll
 ; wireshark/optimized/packet-solaredge.c.ll
 ; wireshark/optimized/packet-sstp.c.ll

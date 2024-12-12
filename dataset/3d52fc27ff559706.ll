@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; arrow/optimized/encode_internal.cc.ll
 ; darktable/optimized/introspection_liquify.c.ll
 ; linux/optimized/tsc.ll
@@ -11,7 +11,6 @@
 ; postgres/optimized/informix.ll
 ; postgres/optimized/print.ll
 ; qemu/optimized/hw_gpio_sifive_gpio.c.ll
-; spike/optimized/f128_classify.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:

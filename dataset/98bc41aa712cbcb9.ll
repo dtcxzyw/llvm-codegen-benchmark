@@ -6,7 +6,7 @@
 define i1 @func0000000000000012(double %0, i32 %1) #0 {
 entry:
   %2 = uitofp nneg i32 %1 to double
-  %3 = fadd double %2, %0
+  %3 = fadd double %0, %2
   %4 = fcmp olt double %3, 0.000000e+00
   ret i1 %4
 }
@@ -17,7 +17,7 @@ entry:
 define i1 @func0000000000000002(double %0, i32 %1) #0 {
 entry:
   %2 = uitofp i32 %1 to double
-  %3 = fadd double %2, %0
+  %3 = fadd double %0, %2
   %4 = fcmp olt double %3, 0.000000e+00
   ret i1 %4
 }
@@ -29,7 +29,7 @@ entry:
 define i1 @func0000000000000004(double %0, i32 %1) #0 {
 entry:
   %2 = uitofp i32 %1 to double
-  %3 = fadd double %2, %0
+  %3 = fadd double %0, %2
   %4 = fcmp ogt double %3, 0x433FFFFFFFFFFFFF
   ret i1 %4
 }

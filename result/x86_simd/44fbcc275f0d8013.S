@@ -64,18 +64,18 @@ func0000000000000020:                   # @func0000000000000020
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vextracti128	$1, %ymm1, %xmm2
 	vpextrq	$1, %xmm2, %rax
-	movabsq	$2361183241434822607, %rcx      # imm = 0x20C49BA5E353F7CF
+	movabsq	$4835703278458516699, %rcx      # imm = 0x431BDE82D7B634DB
 	imulq	%rcx
 	movq	%rdx, %rax
 	shrq	$63, %rax
-	sarq	$7, %rdx
+	sarq	$18, %rdx
 	addq	%rax, %rdx
 	vmovq	%rdx, %xmm3
 	vmovq	%xmm2, %rax
 	imulq	%rcx
 	movq	%rdx, %rax
 	shrq	$63, %rax
-	sarq	$7, %rdx
+	sarq	$18, %rdx
 	addq	%rax, %rdx
 	vmovq	%rdx, %xmm2
 	vpunpcklqdq	%xmm3, %xmm2, %xmm2     # xmm2 = xmm2[0],xmm3[0]
@@ -83,20 +83,20 @@ func0000000000000020:                   # @func0000000000000020
 	imulq	%rcx
 	movq	%rdx, %rax
 	shrq	$63, %rax
-	sarq	$7, %rdx
+	sarq	$18, %rdx
 	addq	%rax, %rdx
 	vmovq	%rdx, %xmm3
 	vmovq	%xmm1, %rax
 	imulq	%rcx
 	movq	%rdx, %rax
 	shrq	$63, %rax
-	sarq	$7, %rdx
+	sarq	$18, %rdx
 	addq	%rax, %rdx
 	vmovq	%rdx, %xmm1
 	vpunpcklqdq	%xmm3, %xmm1, %xmm1     # xmm1 = xmm1[0],xmm3[0]
 	vinserti128	$1, %xmm2, %ymm1, %ymm1
 	vpmullq	.LCPI3_0(%rip){1to4}, %ymm0, %ymm0
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI4_0:
 	.quad	-6148914691236517205            # 0xaaaaaaaaaaaaaaab

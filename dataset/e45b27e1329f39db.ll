@@ -334,7 +334,7 @@
 ; zxing/optimized/PDFEncoder.cpp.ll
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = sdiv exact i64 %0, 56
@@ -342,7 +342,7 @@ entry:
   ret i1 %4
 }
 
-; 406 occurrences:
+; 405 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; arrow/optimized/hdfs.cc.ll
@@ -437,7 +437,6 @@ entry:
 ; lightgbm/optimized/tree.cpp.ll
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
 ; llama.cpp/optimized/llama.cpp.ll
-; llvm/optimized/BranchProbabilityInfo.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
@@ -750,7 +749,7 @@ entry:
 ; zxing/optimized/PDFEncoder.cpp.ll
 ; zxing/optimized/PDFScanningDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = sdiv exact i64 %0, 88
@@ -841,7 +840,7 @@ entry:
 ; sentencepiece/optimized/unigram_model_trainer.cc.ll
 ; xgboost/optimized/tracker.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = sdiv exact i64 %0, 24
@@ -859,7 +858,7 @@ entry:
 ; gromacs/optimized/vsite_parm.cpp.ll
 ; linux/optimized/show_mem.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = sdiv exact i64 %0, 40
@@ -870,7 +869,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/localtopology.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000027(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = sdiv exact i64 %0, 52
@@ -878,15 +877,14 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; gromacs/optimized/domdec_specatomcomm.cpp.ll
 ; gromacs/optimized/pme_redistribute.cpp.ll
 ; linux/optimized/thermal_core.ll
-; linux/optimized/thermal_trip.ll
 ; postgres/optimized/jsonb_util.ll
 ; postgres/optimized/ts_parse.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = sdiv exact i64 %0, 12
@@ -897,7 +895,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/bargaining.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000029(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = sdiv exact i64 %0, 24
@@ -908,7 +906,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/net_impl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000025(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
   %3 = sdiv exact i64 %0, 24

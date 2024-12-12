@@ -1,4 +1,4 @@
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	li	a0, 7
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwadd.vx	v10, v9, a0
@@ -6,7 +6,7 @@ func0000000000000014:                   # @func0000000000000014
 	vzext.vf2	v12, v8
 	vmsltu.vv	v0, v10, v12
 	ret
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	li	a0, 24
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwadd.vx	v10, v9, a0
@@ -14,7 +14,7 @@ func0000000000000058:                   # @func0000000000000058
 	vzext.vf2	v12, v8
 	vmsltu.vv	v0, v12, v10
 	ret
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	li	a0, 50
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vwadd.vx	v10, v9, a0

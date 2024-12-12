@@ -15,5 +15,5 @@ func0000000000000000:                   # @func0000000000000000
 	movq	%rdi, %rax
 	xorl	%edx, %edx
 	divq	%rsi
-	leaq	-8152(%rdx), %rax
+	leaq	-1(%rdx), %rax
 	retq

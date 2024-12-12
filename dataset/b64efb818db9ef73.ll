@@ -4,7 +4,7 @@
 ; pbrt-v4/optimized/rgb2spec_opt.cpp.ll
 ; wireshark/optimized/packet-ansi_637.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0) #0 {
+define i1 @func0000000000000021(i16 %0) #0 {
 entry:
   %1 = add nsw i16 %0, -1
   %2 = urem i16 %1, 3

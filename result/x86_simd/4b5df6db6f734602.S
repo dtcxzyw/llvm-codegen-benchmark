@@ -4,7 +4,7 @@ func0000000000000018:                   # @func0000000000000018
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vptestmq	%ymm1, %ymm1, %k1
-	kxorw	%k0, %k1, %k1
+	kxorw	%k1, %k0, %k1
 	vmovdqu8	.LCPI0_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
 	vzeroupper
 	retq
@@ -14,7 +14,7 @@ func0000000000000002:                   # @func0000000000000002
 	vpslld	$31, %xmm0, %xmm0
 	vpmovd2m	%xmm0, %k0
 	vptestnmq	%ymm1, %ymm1, %k1
-	kxorw	%k0, %k1, %k1
+	kxorw	%k1, %k0, %k1
 	vmovdqu8	.LCPI1_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
 	vzeroupper
 	retq

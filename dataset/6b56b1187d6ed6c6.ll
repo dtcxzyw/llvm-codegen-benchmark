@@ -1,5 +1,5 @@
 
-; 239 occurrences:
+; 237 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/cecPat.c.ll
 ; abc/optimized/cecSolve.c.ll
@@ -8,6 +8,8 @@
 ; abc/optimized/pdrTsim2.c.ll
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver3.c.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/topology.ll
 ; bullet3/optimized/btRigidBody.ll
 ; cmake/optimized/archive_entry.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
@@ -136,13 +138,10 @@
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -208,7 +207,6 @@
 ; qemu/optimized/hw_intc_riscv_aplic.c.ll
 ; qemu/optimized/hw_net_can_ctucan_core.c.ll
 ; qemu/optimized/hw_net_vmxnet3.c.ll
-; qemu/optimized/hw_ssi_sifive_spi.c.ll
 ; qemu/optimized/hw_virtio_virtio-crypto.c.ll
 ; quickjs/optimized/quickjs.ll
 ; redis/optimized/db.ll
@@ -248,7 +246,8 @@ entry:
   ret i32 %4
 }
 
-; 11 occurrences:
+; 12 occurrences:
+; boost/optimized/to_chars.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; imgui/optimized/imgui_demo.cpp.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll

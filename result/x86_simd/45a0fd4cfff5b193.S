@@ -5,5 +5,5 @@ func0000000000000021:                   # @func0000000000000021
 	vpcmpnleuq	.LCPI0_0(%rip){1to4}, %ymm1, %k0
 	vpmovm2q	%k0, %ymm1
 	vpsrlq	$63, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	retq

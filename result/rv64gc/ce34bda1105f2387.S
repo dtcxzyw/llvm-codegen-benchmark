@@ -1,18 +1,19 @@
-func0000000000000a06:                   # @func0000000000000a06
+func0000000000001406:                   # @func0000000000001406
 	sext.w	a2, a2
 	sgtz	a2, a2
 	add	a0, a0, a1
 	subw	a0, a0, a2
 	slti	a0, a0, 1
 	ret
-func000000000000014a:                   # @func000000000000014a
+func000000000000028a:                   # @func000000000000028a
 	sext.w	a2, a2
+	addi	a2, a2, -1
 	seqz	a2, a2
 	add	a0, a0, a1
 	subw	a0, a0, a2
 	sgtz	a0, a0
 	ret
-func0000000000000a0c:                   # @func0000000000000a0c
+func000000000000140c:                   # @func000000000000140c
 	not	a2, a2
 	sraiw	a2, a2, 31
 	add	a0, a0, a1

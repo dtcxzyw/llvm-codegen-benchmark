@@ -1,19 +1,19 @@
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	shlxq	%rdx, %rsi, %rax
 	cmpq	%rdi, %rax
 	seta	%al
 	retq
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	shlxq	%rdx, %rsi, %rax
 	cmpq	%rdi, %rax
 	setg	%al
 	retq
-func0000000000000046:                   # @func0000000000000046
+func0000000000000086:                   # @func0000000000000086
 	shlxq	%rdx, %rsi, %rax
 	cmpq	%rdi, %rax
 	setl	%al
 	retq
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	shlxq	%rdx, %rsi, %rax
 	cmpq	%rdi, %rax
 	setb	%al

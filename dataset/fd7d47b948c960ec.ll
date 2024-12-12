@@ -1,6 +1,11 @@
 
-; 75 occurrences:
+; 83 occurrences:
 ; abc/optimized/absGlaOld.c.ll
+; boost/optimized/ext.ll
+; boost/optimized/pid.ll
+; boost/optimized/process.ll
+; boost/optimized/shell.ll
+; boost/optimized/src.ll
 ; bullet3/optimized/btSoftBody.ll
 ; coreutils-rs/optimized/1e5pt7vtfxa4ahz7.ll
 ; coreutils-rs/optimized/28bc720kv1ca2ji3.ll
@@ -69,12 +74,15 @@
 ; taskflow/optimized/visualization.cpp.ll
 ; taskflow/optimized/while_loop.cpp.ll
 ; tokenizers-rs/optimized/27irl7jx21l1e8zq.ll
+; turborepo-rs/optimized/2nugbu58bpckifsmteww668r2.ll
 ; typst-rs/optimized/3dimj4rf5dyrieyi.ll
 ; typst-rs/optimized/3rk2ctuzbghb17s4.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; wasmtime-rs/optimized/3swlmlzz83rbbf1u.ll
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, ptr %1) #0 {
 entry:

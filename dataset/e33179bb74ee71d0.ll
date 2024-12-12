@@ -1,5 +1,5 @@
 
-; 178 occurrences:
+; 177 occurrences:
 ; abc/optimized/cuddSat.c.ll
 ; abc/optimized/fraigUtil.c.ll
 ; abc/optimized/giaFanout.c.ll
@@ -7,12 +7,13 @@
 ; abc/optimized/ioWritePla.c.ll
 ; assimp/optimized/ObjFileParser.cpp.ll
 ; assimp/optimized/shapes.cc.ll
+; boost/optimized/addr2line.ll
+; boost/optimized/basic.ll
+; boost/optimized/segments_encoded_ref.ll
 ; cmake/optimized/cmCPackDebGenerator.cxx.ll
 ; cmake/optimized/cmComputeLinkDepends.cxx.ll
 ; cmake/optimized/cmGeneratorExpressionDAGChecker.cxx.ll
 ; cmake/optimized/cmGeneratorTarget.cxx.ll
-; cmake/optimized/vli_decoder.c.ll
-; cmake/optimized/vli_encoder.c.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cpython/optimized/specialize.ll
 ; cpython/optimized/sre.ll
@@ -66,7 +67,6 @@
 ; linux/optimized/control.ll
 ; linux/optimized/devio.ll
 ; linux/optimized/drm_file.ll
-; linux/optimized/evhandler.ll
 ; linux/optimized/expire.ll
 ; linux/optimized/fib_trie.ll
 ; linux/optimized/i915_gem_object.ll
@@ -158,7 +158,6 @@
 ; postgres/optimized/path.ll
 ; postgres/optimized/path_shlib.ll
 ; postgres/optimized/path_srv.ll
-; proj/optimized/crs.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; rustfmt-rs/optimized/s8gyre8ye3tvwam.ll
 ; sqlite/optimized/sqlite3.ll
@@ -186,20 +185,6 @@ entry:
   ret i32 %3
 }
 
-; 5 occurrences:
-; darktable/optimized/RafDecoder.cpp.ll
-; folly/optimized/LoggerDB.cpp.ll
-; llvm/optimized/AArch64BranchTargets.cpp.ll
-; llvm/optimized/LoopIdiomRecognize.cpp.ll
-; openjdk/optimized/vectorIntrinsics.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000c(ptr %0, ptr %1) #0 {
-entry:
-  %.not = icmp eq ptr %0, %1
-  %2 = select i1 %.not, i32 2000, i32 2147483647
-  ret i32 %2
-}
-
 ; 16 occurrences:
 ; clamav/optimized/strfn.cpp.ll
 ; cmake/optimized/cover.c.ll
@@ -225,8 +210,9 @@ entry:
   ret i32 %3
 }
 
-; 4 occurrences:
-; linux/optimized/crash_dump.ll
+; 5 occurrences:
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; linux/optimized/dir.ll
 ; openjdk/optimized/vmSymbols.ll
 ; postgres/optimized/tsrank.ll
@@ -236,6 +222,19 @@ entry:
   %2 = icmp ugt ptr %0, %1
   %3 = select i1 %2, i32 1, i32 -1
   ret i32 %3
+}
+
+; 4 occurrences:
+; darktable/optimized/RafDecoder.cpp.ll
+; llvm/optimized/AArch64BranchTargets.cpp.ll
+; llvm/optimized/LoopIdiomRecognize.cpp.ll
+; openjdk/optimized/vectorIntrinsics.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000c(ptr %0, ptr %1) #0 {
+entry:
+  %.not = icmp eq ptr %0, %1
+  %2 = select i1 %.not, i32 8, i32 1
+  ret i32 %2
 }
 
 ; 1 occurrences:

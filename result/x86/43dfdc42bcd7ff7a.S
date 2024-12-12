@@ -20,8 +20,8 @@ func0000000000000001:                   # @func0000000000000001
 	orq	%rdx, %rax
 	retq
 func0000000000000000:                   # @func0000000000000000
-	movq	%rdx, %rax
-	orl	%esi, %eax
+	movq	%rsi, %rax
+	orl	%edx, %eax
 	andl	$7, %eax
 	orq	%rdi, %rax
 	retq

@@ -5,7 +5,7 @@
 ; opencv/optimized/calibinit.cpp.ll
 ; wireshark/optimized/asn1.c.ll
 ; Function Attrs: nounwind
-define double @func0000000000000011(i32 %0) #0 {
+define double @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, -18
   %2 = select i1 %1, double 8.325000e-02, double 2.500000e-01

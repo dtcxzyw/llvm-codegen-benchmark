@@ -1,6 +1,12 @@
-func0000000000000008:                   # @func0000000000000008
+func0000000000000028:                   # @func0000000000000028
 	andl	%edx, %esi
 	cmpq	$2, %rdi
+	setb	%al
+	orb	%sil, %al
+	retq
+func0000000000000008:                   # @func0000000000000008
+	andl	%edx, %esi
+	cmpq	$4, %rdi
 	setb	%al
 	orb	%sil, %al
 	retq
@@ -32,5 +38,11 @@ func0000000000000014:                   # @func0000000000000014
 	andl	%edx, %esi
 	cmpq	$3, %rdi
 	setge	%al
+	orb	%sil, %al
+	retq
+func0000000000000030:                   # @func0000000000000030
+	andl	%edx, %esi
+	cmpq	$2, %rdi
+	setae	%al
 	orb	%sil, %al
 	retq

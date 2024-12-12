@@ -64,11 +64,3 @@ func000000000000000a:                   # @func000000000000000a
 	vpcmpltd	.LCPI3_0(%rip){1to8}, %ymm1, %k1
 	vandps	.LCPI3_1(%rip){1to8}, %ymm2, %ymm0 {%k1}
 	retq
-.LCPI4_0:
-	.long	3121                            # 0xc31
-.LCPI4_1:
-	.long	2047                            # 0x7ff
-func0000000000000008:                   # @func0000000000000008
-	vpcmpleud	.LCPI4_0(%rip){1to8}, %ymm1, %k1
-	vandps	.LCPI4_1(%rip){1to8}, %ymm2, %ymm0 {%k1}
-	retq

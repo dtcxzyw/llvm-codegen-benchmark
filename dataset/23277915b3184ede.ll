@@ -1,12 +1,11 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; darktable/optimized/CrwDecoder.cpp.ll
 ; darktable/optimized/MrwDecoder.cpp.ll
 ; icu/optimized/utrie_swap.ll
 ; linux/optimized/i9xx_wm.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/DAGISelEmitter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/TokenAnnotator.cpp.ll
 ; qemu/optimized/block_qcow2-bitmap.c.ll
@@ -19,7 +18,7 @@ entry:
   ret i1 %5
 }
 
-; 29 occurrences:
+; 28 occurrences:
 ; clamav/optimized/matcher-ac.c.ll
 ; darktable/optimized/TiffEntry.cpp.ll
 ; hermes/optimized/CommandLine.cpp.ll
@@ -44,7 +43,6 @@ entry:
 ; qemu/optimized/hw_pci_pcie.c.ll
 ; rust-analyzer-rs/optimized/4vbxd64hrlz3u0mk.ll
 ; softposit-rs/optimized/3yl6353p3hwrtv6y.ll
-; spike/optimized/f16_classify.ll
 ; stb/optimized/stb_connected_components.c.ll
 ; stockfish/optimized/movepick.ll
 ; stockfish/optimized/search.ll
@@ -77,7 +75,7 @@ entry:
 
 ; 3 occurrences:
 ; darktable/optimized/FujiDecompressor.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wireshark/optimized/packet-ocp1.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000018(i16 %0, i1 %1, i1 %2) #0 {
@@ -100,11 +98,11 @@ entry:
   ret i1 %5
 }
 
-; 36 occurrences:
+; 35 occurrences:
 ; hwloc/optimized/topology-linux.ll
-; hwloc/optimized/topology-xml.ll
 ; hwloc/optimized/topology.ll
 ; icu/optimized/collationdatabuilder.ll
+; icu/optimized/ubidiln.ll
 ; icu/optimized/usearch.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -124,7 +122,6 @@ entry:
 ; llvm/optimized/LegalizeVectorOps.cpp.ll
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll

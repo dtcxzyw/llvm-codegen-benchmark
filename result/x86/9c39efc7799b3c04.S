@@ -1,4 +1,4 @@
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	addb	$-3, %dil
 	cmpb	$4, %dil
 	setb	%al
@@ -8,12 +8,12 @@ func0000000000000004:                   # @func0000000000000004
 	cmpb	$2, %dil
 	setb	%al
 	retq
-func0000000000000094:                   # @func0000000000000094
+func0000000000000124:                   # @func0000000000000124
 	addb	$-3, %dil
 	cmpb	$4, %dil
 	setb	%al
 	retq
-func0000000000000098:                   # @func0000000000000098
+func0000000000000138:                   # @func0000000000000138
 	addb	$-57, %dil
 	cmpb	$-9, %dil
 	setb	%al
@@ -26,7 +26,7 @@ func000000000000000a:                   # @func000000000000000a
 	incb	%dil
 	setns	%al
 	retq
-func000000000000008a:                   # @func000000000000008a
+func000000000000010a:                   # @func000000000000010a
 	incb	%dil
 	setns	%al
 	retq
@@ -35,7 +35,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpb	$-11, %dil
 	setb	%al
 	retq
-func0000000000000091:                   # @func0000000000000091
+func0000000000000121:                   # @func0000000000000121
 	cmpb	$-5, %dil
 	sete	%al
 	retq

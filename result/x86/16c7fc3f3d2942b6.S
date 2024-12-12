@@ -1,7 +1,7 @@
 func0000000000000001:                   # @func0000000000000001
 	movl	%esi, %eax
-	orl	$-2147483648, %edx              # imm = 0x80000000
-	andl	$2047, %eax                     # imm = 0x7FF
+	orl	$1, %edx
+	andl	$7, %eax
 	testb	$1, %dil
 	cmovel	%edx, %eax
 	retq

@@ -16,14 +16,14 @@ func0000000000000003:                   # @func0000000000000003
 	not	a0, a0
 	slliw	a0, a0, 4
 	ret
-func000000000000002d:                   # @func000000000000002d
+func000000000000002f:                   # @func000000000000002f
 	slli	a0, a0, 3
 	li	a1, 24
 	subw	a0, a1, a0
 	ret
-func000000000000002f:                   # @func000000000000002f
-	slli	a0, a0, 3
-	li	a1, 24
+func0000000000000035:                   # @func0000000000000035
+	slli	a0, a0, 4
+	li	a1, 128
 	subw	a0, a1, a0
 	ret
 func000000000000000d:                   # @func000000000000000d

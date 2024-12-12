@@ -9,7 +9,7 @@
 ; llvm/optimized/SemaStmt.cpp.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i16 %0) #0 {
+define i32 @func0000000000000021(i16 %0) #0 {
 entry:
   %1 = and i16 %0, -4096
   %2 = icmp eq i16 %1, -24576

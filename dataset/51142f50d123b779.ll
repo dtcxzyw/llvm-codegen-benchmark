@@ -53,13 +53,10 @@ entry:
   ret i64 %6
 }
 
-; 6 occurrences:
+; 3 occurrences:
 ; graphviz/optimized/multispline.c.ll
 ; openblas/optimized/dgghd3.c.ll
-; openblas/optimized/dsyevr.c.ll
-; openblas/optimized/dsyevr_2stage.c.ll
 ; openblas/optimized/dsyevx.c.ll
-; openblas/optimized/dsyevx_2stage.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i1 %0, i32 %1, i64 %2) #0 {
 entry:

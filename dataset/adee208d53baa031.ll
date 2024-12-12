@@ -52,11 +52,11 @@ define i32 @func0000000000000004(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 58
   %3 = sext i1 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
-; 40 occurrences:
+; 39 occurrences:
 ; abc/optimized/amapLiberty.c.ll
 ; abc/optimized/cbaReadVer.c.ll
 ; abc/optimized/llb1Sched.c.ll
@@ -74,7 +74,6 @@ entry:
 ; gromacs/optimized/colvarparse.cpp.ll
 ; gromacs/optimized/genhydro.cpp.ll
 ; icu/optimized/ubidi.ll
-; linux/optimized/dns_key.ll
 ; linux/optimized/nlattr.ll
 ; linux/optimized/tcp_input.ll
 ; llvm/optimized/CloneFunction.cpp.ll
@@ -102,7 +101,7 @@ define i32 @func0000000000000005(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 45
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -119,7 +118,7 @@ define i32 @func0000000000000031(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 0
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -131,17 +130,18 @@ define i32 @func0000000000000020(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp ugt i8 %1, 4
   %3 = sext i1 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/scalar_cast_temporal.cc.ll
 ; arrow/optimized/tz.cpp.ll
 ; arrow/optimized/value_parsing.cc.ll
+; lvgl/optimized/lv_calendar.ll
 ; velox/optimized/DateTimeFormatter.cpp.ll
 ; velox/optimized/Sequence.cpp.ll
 ; Function Attrs: nounwind
@@ -149,7 +149,7 @@ define i32 @func0000000000000011(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, 3
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -164,19 +164,41 @@ define i32 @func0000000000000030(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 54
   %3 = sext i1 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; linux/optimized/scsi_proc.ll
-; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000021(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp ugt i8 %1, 1
   %3 = sext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
+  ret i32 %4
+}
+
+; 1 occurrences:
+; zxing/optimized/zueci.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000061(i32 %0, i8 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i8 %1, -56
+  %3 = sext i1 %2 to i32
+  %4 = add nsw i32 %0, %3
+  ret i32 %4
+}
+
+; 2 occurrences:
+; arrow/optimized/diff.cc.ll
+; arrow/optimized/scalar_cast_string.cc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000051(i32 %0, i8 %1) #0 {
+entry:
+  %2 = icmp samesign ult i8 %1, 3
+  %3 = sext i1 %2 to i32
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 

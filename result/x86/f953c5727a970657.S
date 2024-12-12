@@ -22,9 +22,3 @@ func0000000000000009:                   # @func0000000000000009
 	sete	%al
 	subl	%edi, %eax
 	retq
-func0000000000000021:                   # @func0000000000000021
-	movl	%edi, %eax
-	cmpl	$33, %esi
-	sbbl	$0, %eax
-	negl	%eax
-	retq

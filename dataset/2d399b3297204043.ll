@@ -1,5 +1,5 @@
 
-; 161 occurrences:
+; 160 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/utilSort.c.ll
 ; arrow/optimized/array_dict.cc.ll
@@ -151,7 +151,6 @@
 ; tev/optimized/Common.cpp.ll
 ; tev/optimized/Image.cpp.ll
 ; tev/optimized/main.cpp.ll
-; velox/optimized/PrestoSerializer.cpp.ll
 ; wasmedge/optimized/global.cpp.ll
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasimodule.cpp.ll
@@ -188,9 +187,8 @@ entry:
   ret i64 %5
 }
 
-; 179 occurrences:
+; 194 occurrences:
 ; cmake/optimized/zstd_compress.c.ll
-; cmake/optimized/zstd_lazy.c.ll
 ; coreutils-rs/optimized/1h544hbxou17yglq.ll
 ; coreutils-rs/optimized/4eha0eg6w5wo3r0o.ll
 ; coreutils-rs/optimized/yfsl8dt73p06kfs.ll
@@ -331,7 +329,6 @@ entry:
 ; minetest/optimized/COBJMeshFileLoader.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; minetest/optimized/anaglyph.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/enriched_string.cpp.ll
 ; minetest/optimized/factory.cpp.ll
@@ -365,8 +362,25 @@ entry:
 ; xgboost/optimized/allgather.cc.ll
 ; xgboost/optimized/data.cc.ll
 ; xgboost/optimized/input_split_base.cc.ll
+; zed-rs/optimized/19l54bkp73b8vpqg6elueqjm7.ll
+; zed-rs/optimized/1dgnm6lfd9h2ap1ws2supa1aq.ll
+; zed-rs/optimized/3tqegt9m5oad3ocos87azd3mb.ll
+; zed-rs/optimized/4yr6g2ok92pf18o3rcyc7uswo.ll
+; zed-rs/optimized/5e9omh398ijohtd01awo2ssl8.ll
+; zed-rs/optimized/5q8zw1h1kdgz0fiksol53zkaa.ll
+; zed-rs/optimized/69ryzzuwe6uhdzky6991droy3.ll
+; zed-rs/optimized/7for60ncc55q4u0jy3fqr6omg.ll
+; zed-rs/optimized/914lh5mzek2kam75czht77x9a.ll
+; zed-rs/optimized/9eafvdu9qxyugp5or14xw795l.ll
+; zed-rs/optimized/9p59c0slbkpkbmcp28i14dl74.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/a3hrzugt78pdexsn4h7d7fddk.ll
+; zed-rs/optimized/c6zcqmm1tlbhiy5p6czlxqg9e.ll
+; zed-rs/optimized/clfnbm8q68pj6tyseqadz86ib.ll
+; zed-rs/optimized/dhtd8mxtyja4srmt3ddrqkjib.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
+; zed-rs/optimized/erzde9u7wnx5zkvy3kzdy8721.ll
 ; zstd/optimized/zstd_compress.c.ll
-; zstd/optimized/zstd_lazy.c.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, ptr %1) #0 {
@@ -378,7 +392,7 @@ entry:
   ret i64 %5
 }
 
-; 35 occurrences:
+; 56 occurrences:
 ; actix-rs/optimized/4vksfexudgt1qids.ll
 ; coreutils-rs/optimized/1hfndwarkzjc08wu.ll
 ; delta-rs/optimized/s2xrj2sh770tx8d.ll
@@ -414,6 +428,27 @@ entry:
 ; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
 ; wasmtime-rs/optimized/4cnvf14b3xea7eab.ll
 ; wasmtime-rs/optimized/joyny9bexuq72mb.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
+; zed-rs/optimized/5eo3r6xqgcl9c03ocnkjc70d3.ll
+; zed-rs/optimized/69ryzzuwe6uhdzky6991droy3.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/7d83zatnfw8jz3f790h28195t.ll
+; zed-rs/optimized/8aib3kswyxtai67bpawu71ihu.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/ahuveaqkmks5i6nnvip2o62e5.ll
+; zed-rs/optimized/b2ktka7yg7i1nuhew6e88xzwi.ll
+; zed-rs/optimized/c2psz5rm4tia23zti1npejtse.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
+; zed-rs/optimized/d5przcl3nwvj7ddp1j7ydu4aq.ll
+; zed-rs/optimized/d7h2r6mystjn2jzwcl5ofeoiz.ll
+; zed-rs/optimized/dpj3mwjfm2c61mxrpoi279us4.ll
+; zed-rs/optimized/dwdz33j6zk3evwqybph0x5e70.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
+; zed-rs/optimized/f1xl8k103at60m3wnvb71vdir.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000017(i64 %0, ptr %1) #0 {
 entry:
@@ -450,14 +485,13 @@ entry:
   ret i64 %5
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; assimp/optimized/clipper.cpp.ll
 ; casadi/optimized/sx_function.cpp.ll
 ; ceres/optimized/reorder_program.cc.ll
-; gromacs/optimized/invblock.cpp.ll
 ; gromacs/optimized/matio.cpp.ll
 ; hyperscan/optimized/ng_haig.cpp.ll
-; opencv/optimized/perf_layer.cpp.ll
+; hyperscan/optimized/rdfa_merge.cpp.ll
 ; opencv/optimized/perf_rlof.cpp.ll
 ; opencv/optimized/trackerMedianFlow.cpp.ll
 ; openexr/optimized/ImfCompositeDeepScanLine.cpp.ll
@@ -506,8 +540,13 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
+; 6 occurrences:
 ; wasmtime-rs/optimized/4d0kq0wivbp8j3p.ll
+; zed-rs/optimized/04fhfmlktnjtedpduz35189qo.ll
+; zed-rs/optimized/1058j2jmz8vfpblqgu0wznwf9.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
+; zed-rs/optimized/b8qhlvoy2nskqwvkt99c6cu9u.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0, ptr %1) #0 {
 entry:

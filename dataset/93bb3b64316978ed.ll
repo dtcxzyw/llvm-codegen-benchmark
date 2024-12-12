@@ -1,5 +1,5 @@
 
-; 42 occurrences:
+; 45 occurrences:
 ; abseil-cpp/optimized/civil_time.cc.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/clock_test.cc.ll
@@ -42,6 +42,9 @@
 ; ruby/optimized/time.ll
 ; velox/optimized/Timestamp.cpp.ll
 ; wireshark/optimized/packet-p_mul.c.ll
+; zed-rs/optimized/2nwrl7qhv6ci6obqg1itckcv6.ll
+; zed-rs/optimized/8wa0knulc7q0w36j1a9to646h.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i64 %0) #0 {
 entry:
@@ -50,7 +53,7 @@ entry:
   ret i1 %2
 }
 
-; 130 occurrences:
+; 131 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abseil-cpp/optimized/civil_time.cc.ll
@@ -76,6 +79,7 @@ entry:
 ; arrow/optimized/validate.cc.ll
 ; arrow/optimized/vector_selection_take_internal.cc.ll
 ; arrow/optimized/writer.cc.ll
+; boost/optimized/text_file_backend.ll
 ; casadi/optimized/ipqp.cpp.ll
 ; casadi/optimized/newton.cpp.ll
 ; casadi/optimized/qrqp.cpp.ll

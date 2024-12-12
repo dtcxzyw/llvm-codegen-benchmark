@@ -22,7 +22,7 @@ entry:
   ret i64 %5
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; abc/optimized/dsc.c.ll
 ; llvm/optimized/Inliner.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
@@ -38,7 +38,6 @@ entry:
 ; openjdk/optimized/mlib_ImageConv_F32nw.ll
 ; openjdk/optimized/mlib_ImageConv_u16nw.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
-; stb/optimized/stb_hexwave.c.ll
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind

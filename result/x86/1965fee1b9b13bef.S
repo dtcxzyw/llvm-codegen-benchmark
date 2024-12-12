@@ -1,4 +1,4 @@
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	shlxq	%rsi, %rdi, %rax
 	testw	%ax, %ax
 	sete	%al
@@ -8,7 +8,7 @@ func0000000000000001:                   # @func0000000000000001
 	testw	%ax, %ax
 	sete	%al
 	retq
-func000000000000003c:                   # @func000000000000003c
+func000000000000006c:                   # @func000000000000006c
 	shlxq	%rsi, %rdi, %rax
 	testl	$32512, %eax                    # imm = 0x7F00
 	setne	%al

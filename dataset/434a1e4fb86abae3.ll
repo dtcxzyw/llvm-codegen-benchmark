@@ -29,9 +29,10 @@ entry:
   ret i16 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; c3c/optimized/sema_expr.c.ll
 ; llvm/optimized/CGAtomic.cpp.ll
+; openusd/optimized/value.cpp.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i1 %0, i16 %1, i16 %2) #0 {
 entry:

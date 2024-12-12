@@ -1,18 +1,17 @@
 .LCPI0_0:
 	.quad	1                               # 0x1
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	vpslld	$31, %xmm0, %xmm0
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpbroadcastq	.LCPI0_0(%rip), %ymm4   # ymm4 = [1,1,1,1]
-	vpsllvq	%ymm2, %ymm4, %ymm2
-	vpcmpltuq	%ymm1, %ymm2, %k1
-	vpcmpgtd	%xmm0, %xmm3, %k0 {%k1}
+	vpmovd2m	%xmm0, %k1
+	vpbroadcastq	.LCPI0_0(%rip), %ymm0   # ymm0 = [1,1,1,1]
+	vpsllvq	%ymm2, %ymm0, %ymm0
+	vpcmpltuq	%ymm1, %ymm0, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
 .LCPI1_0:
 	.quad	1                               # 0x1
-func0000000000000029:                   # @func0000000000000029
+func0000000000000049:                   # @func0000000000000049
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpbroadcastq	.LCPI1_0(%rip), %ymm4   # ymm4 = [1,1,1,1]
@@ -24,17 +23,16 @@ func0000000000000029:                   # @func0000000000000029
 	retq
 .LCPI2_0:
 	.quad	1                               # 0x1
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	vpslld	$31, %xmm0, %xmm0
-	vpxor	%xmm3, %xmm3, %xmm3
-	vpbroadcastq	.LCPI2_0(%rip), %ymm4   # ymm4 = [1,1,1,1]
-	vpsllvq	%ymm2, %ymm4, %ymm2
-	vpcmpgtq	%ymm1, %ymm2, %k1
-	vpcmpgtd	%xmm0, %xmm3, %k0 {%k1}
+	vpmovd2m	%xmm0, %k1
+	vpbroadcastq	.LCPI2_0(%rip), %ymm0   # ymm0 = [1,1,1,1]
+	vpsllvq	%ymm2, %ymm0, %ymm0
+	vpcmpgtq	%ymm1, %ymm0, %k0 {%k1}
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000017:                   # @func0000000000000017
+func0000000000000027:                   # @func0000000000000027
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqd	%ymm4, %ymm4, %ymm4
@@ -46,7 +44,7 @@ func0000000000000017:                   # @func0000000000000017
 	retq
 .LCPI4_0:
 	.quad	1                               # 0x1
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	vpslld	$31, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpbroadcastq	.LCPI4_0(%rip), %ymm4   # ymm4 = [1,1,1,1]

@@ -50,6 +50,10 @@ func000000000000001b:                   # @func000000000000001b
 	leal	1(%rsi), %eax
 	imull	%edi, %eax
 	retq
+func0000000000000013:                   # @func0000000000000013
+	leal	1(%rsi), %eax
+	imull	%edi, %eax
+	retq
 func0000000000000011:                   # @func0000000000000011
 	leal	1(%rsi), %eax
 	imull	%edi, %eax
@@ -63,6 +67,10 @@ func0000000000000009:                   # @func0000000000000009
 	imull	%edi, %eax
 	retq
 func000000000000000f:                   # @func000000000000000f
+	leal	1(%rsi), %eax
+	imull	%edi, %eax
+	retq
+func0000000000000007:                   # @func0000000000000007
 	leal	1(%rsi), %eax
 	imull	%edi, %eax
 	retq

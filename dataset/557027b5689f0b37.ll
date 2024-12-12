@@ -48,7 +48,7 @@ entry:
 define i32 @func0000000000000035(i64 %0, i64 %1) #0 {
 entry:
   %.neg = xor i64 %1, -1
-  %2 = add i64 %.neg, %0
+  %2 = add i64 %0, %.neg
   %3 = trunc nsw i64 %2 to i32
   ret i32 %3
 }
@@ -60,7 +60,7 @@ entry:
 define i32 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
   %.neg = xor i64 %1, -1
-  %2 = add i64 %.neg, %0
+  %2 = add i64 %0, %.neg
   %3 = trunc i64 %2 to i32
   ret i32 %3
 }
@@ -94,7 +94,7 @@ entry:
 define i32 @func0000000000000030(i64 %0, i64 %1) #0 {
 entry:
   %.neg = xor i64 %1, -1
-  %2 = add i64 %.neg, %0
+  %2 = add i64 %0, %.neg
   %3 = trunc i64 %2 to i32
   ret i32 %3
 }
@@ -105,7 +105,7 @@ entry:
 define i32 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %.neg = xor i64 %1, -1
-  %2 = add i64 %.neg, %0
+  %2 = add i64 %0, %.neg
   %3 = trunc i64 %2 to i32
   ret i32 %3
 }
@@ -117,7 +117,7 @@ entry:
 define i32 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %.neg = xor i64 %1, -1
-  %2 = add i64 %.neg, %0
+  %2 = add i64 %0, %.neg
   %3 = trunc i64 %2 to i32
   ret i32 %3
 }
@@ -139,7 +139,7 @@ entry:
 define i32 @func0000000000000020(i64 %0, i64 %1) #0 {
 entry:
   %.neg = xor i64 %1, -1
-  %2 = add i64 %.neg, %0
+  %2 = add i64 %0, %.neg
   %3 = trunc i64 %2 to i32
   ret i32 %3
 }

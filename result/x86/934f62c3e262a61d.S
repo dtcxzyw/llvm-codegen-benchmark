@@ -1,9 +1,3 @@
-func0000000000000021:                   # @func0000000000000021
-	xorl	%eax, %eax
-	cmpq	$8, %rsi
-	cmovaeq	%rdi, %rax
-	negq	%rax
-	retq
 func0000000000000011:                   # @func0000000000000011
 	cmpq	$-7, %rsi
 	movq	$-1, %rax
@@ -31,12 +25,4 @@ func0000000000000018:                   # @func0000000000000018
 	sarq	$63, %rax
 	andq	%rdi, %rax
 	negq	%rax
-	retq
-func0000000000000028:                   # @func0000000000000028
-	movabsq	$9223372036854775807, %rax      # imm = 0x7FFFFFFFFFFFFFFF
-	movq	%rax, %rcx
-	subq	%rdi, %rcx
-	incq	%rax
-	testq	%rsi, %rsi
-	cmovnsq	%rcx, %rax
 	retq

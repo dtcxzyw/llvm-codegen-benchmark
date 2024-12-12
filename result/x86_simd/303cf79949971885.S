@@ -9,7 +9,7 @@
 	.short	7                               # 0x7
 .LCPI0_1:
 	.long	7                               # 0x7
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqw	.LCPI0_0(%rip), %xmm1, %k1
@@ -29,7 +29,7 @@ func0000000000000011:                   # @func0000000000000011
 	.short	24                              # 0x18
 .LCPI1_1:
 	.long	8                               # 0x8
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	vpsllw	$15, %xmm0, %xmm0
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpnleuw	.LCPI1_0(%rip), %xmm1, %k1

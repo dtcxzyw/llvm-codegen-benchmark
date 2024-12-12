@@ -56,9 +56,9 @@ entry:
 ; folly/optimized/SplitStringSimd.cpp.ll
 ; linux/optimized/nf_conntrack_core.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000009(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000029(i64 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ult i64 %1, 50
+  %2 = icmp samesign ult i64 %1, 50
   %3 = select i1 %2, i64 0, i64 8
   %4 = and i64 %0, -16
   %5 = or disjoint i64 %4, %3

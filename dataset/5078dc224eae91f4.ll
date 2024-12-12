@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; cmake/optimized/nghttp2_http.c.ll
 ; git/optimized/transport-helper.ll
 ; git/optimized/tree-walk.ll
@@ -10,7 +10,6 @@
 ; openssl/optimized/libcrypto-lib-set_key.ll
 ; openssl/optimized/libcrypto-shlib-set_key.ll
 ; php/optimized/ir_emit.ll
-; spike/optimized/i64_to_f32.ll
 ; wireshark/optimized/msg_dlmap.c.ll
 ; wireshark/optimized/msg_ulmap.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
@@ -30,6 +29,7 @@ entry:
 ; abc/optimized/ifDec16.c.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
+; boost/optimized/format_args.ll
 ; cpython/optimized/_zoneinfo.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; icu/optimized/number_compact.ll
@@ -48,7 +48,6 @@ entry:
 ; slurm/optimized/data_parser_v0_0_39_la-parsing.ll
 ; slurm/optimized/data_parser_v0_0_40_la-parsing.ll
 ; slurm/optimized/data_parser_v0_0_41_la-parsing.ll
-; spike/optimized/i64_to_f32.ll
 ; spike/optimized/s_mulAddF16.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-gsm_a_rr.c.ll

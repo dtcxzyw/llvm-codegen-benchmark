@@ -50,11 +50,11 @@ define i32 @func0000000000000063(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
-; 39 occurrences:
+; 40 occurrences:
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; draco/optimized/mesh_cleanup.cc.ll
 ; duckdb/optimized/ub_duckdb_func_list.cpp.ll
@@ -94,12 +94,13 @@ entry:
 ; yyjson/optimized/yyjson.c.ll
 ; z3/optimized/hilbert_basis.cpp.ll
 ; z3/optimized/smt_lookahead.cpp.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000060(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 4
   %3 = zext i1 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -137,41 +138,38 @@ define i32 @func0000000000000008(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 29
   %3 = zext i1 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
-; 14 occurrences:
+; 9 occurrences:
 ; abc/optimized/giaSatLut.c.ll
 ; arrow/optimized/value_parsing.cc.ll
-; cmake/optimized/zstd_compress.c.ll
-; cmake/optimized/zstd_compress_literals.c.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
-; git/optimized/commit-graph.ll
-; gromacs/optimized/angle.cpp.ll
 ; hyperscan/optimized/fdr_engine_description.cpp.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; openssl/optimized/libcrypto-lib-bn_lib.ll
 ; openssl/optimized/libcrypto-shlib-bn_lib.ll
-; redis/optimized/object.ll
-; zstd/optimized/zstd_compress.c.ll
-; zstd/optimized/zstd_compress_literals.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000043(i32 %0, i64 %1) #0 {
+define i32 @func00000000000000c3(i32 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ugt i64 %1, 33554431
+  %2 = icmp samesign ugt i64 %1, 33554431
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
-; 25 occurrences:
+; 27 occurrences:
 ; abc/optimized/aigRepr.c.ll
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/ifMap.c.ll
 ; abc/optimized/plaCom.c.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/authority_view.ll
+; boost/optimized/url_view_base.ll
 ; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/BlockFrequency.cpp.ll
 ; llvm/optimized/BlockFrequencyInfo.cpp.ll
@@ -196,21 +194,20 @@ define i32 @func0000000000000061(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
-; 4 occurrences:
-; c3c/optimized/llvm_codegen_expr.c.ll
+; 3 occurrences:
 ; duckdb/optimized/ub_duckdb_execution_index.cpp.ll
 ; openssl/optimized/libcrypto-lib-bn_lib.ll
 ; openssl/optimized/libcrypto-shlib-bn_lib.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000040(i32 %0, i64 %1) #0 {
+define i32 @func00000000000000c0(i32 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ugt i64 %1, 1
+  %2 = icmp samesign ugt i64 %1, 1
   %3 = zext i1 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -243,7 +240,7 @@ define i32 @func0000000000000009(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 12884901888
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -255,7 +252,7 @@ define i32 @func0000000000000062(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = zext i1 %2 to i32
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   ret i32 %4
 }
 
@@ -281,7 +278,36 @@ define i32 @func000000000000000b(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 8589934592
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
+  ret i32 %4
+}
+
+; 2 occurrences:
+; c3c/optimized/llvm_codegen_expr.c.ll
+; duckdb/optimized/ub_duckdb_execution_index.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000040(i32 %0, i64 %1) #0 {
+entry:
+  %2 = icmp ugt i64 %1, 4294967295
+  %3 = zext i1 %2 to i32
+  %4 = add i32 %0, %3
+  ret i32 %4
+}
+
+; 7 occurrences:
+; cmake/optimized/zstd_compress.c.ll
+; cmake/optimized/zstd_compress_literals.c.ll
+; git/optimized/commit-graph.ll
+; gromacs/optimized/angle.cpp.ll
+; redis/optimized/object.ll
+; zstd/optimized/zstd_compress.c.ll
+; zstd/optimized/zstd_compress_literals.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000043(i32 %0, i64 %1) #0 {
+entry:
+  %2 = icmp ugt i64 %1, 2147483647
+  %3 = zext i1 %2 to i32
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -294,23 +320,21 @@ define i32 @func0000000000000053(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i64 %1, -1
   %3 = zext i1 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
-; 6 occurrences:
-; cpython/optimized/mpdecimal.ll
-; cpython/optimized/sixstep.ll
+; 4 occurrences:
+; boost/optimized/authority_view.ll
 ; cvc5/optimized/inst_match_generator_multi_linear.cpp.ll
 ; oiio/optimized/strutil.cpp.ll
 ; stb/optimized/stb_sprintf.c.ll
-; zxing/optimized/AZEncoder.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000041(i32 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ugt i64 %1, 999999999999999999
+  %2 = icmp ugt i64 %1, 1
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -324,7 +348,7 @@ define i32 @func0000000000000050(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i64 %1, 0
   %3 = zext i1 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -335,7 +359,20 @@ define i32 @func000000000000000a(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 8191
   %3 = zext i1 %2 to i32
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
+  ret i32 %4
+}
+
+; 3 occurrences:
+; cpython/optimized/mpdecimal.ll
+; cpython/optimized/sixstep.ll
+; zxing/optimized/AZEncoder.cpp.ll
+; Function Attrs: nounwind
+define i32 @func00000000000000c1(i32 %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i64 %1, 4
+  %3 = zext i1 %2 to i32
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -349,7 +386,7 @@ define i32 @func0000000000000051(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i64 %1, 0
   %3 = zext i1 %2 to i32
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -360,7 +397,7 @@ define i32 @func0000000000000020(i32 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %1, 4
   %3 = zext i1 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 

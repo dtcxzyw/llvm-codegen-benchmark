@@ -1,5 +1,5 @@
 
-; 378 occurrences:
+; 368 occurrences:
 ; abc/optimized/abcIf.c.ll
 ; abc/optimized/abcTim.c.ll
 ; abc/optimized/absGlaOld.c.ll
@@ -20,9 +20,10 @@
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; arrow/optimized/key_hash_avx2.cc.ll
 ; assimp/optimized/zip.c.ll
-; c3c/optimized/lexer.c.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
 ; clamav/optimized/Bra86.c.ll
-; clamav/optimized/autoit.c.ll
 ; clamav/optimized/file.cpp.ll
 ; cmake/optimized/archive_acl.c.ll
 ; cmake/optimized/huf_decompress.c.ll
@@ -47,7 +48,6 @@
 ; git/optimized/path.ll
 ; git/optimized/replay.ll
 ; glslang/optimized/ParseHelper.cpp.ll
-; glslang/optimized/PoolAlloc.cpp.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; glslang/optimized/linkValidate.cpp.ll
 ; graphviz/optimized/actions.c.ll
@@ -74,7 +74,6 @@
 ; linux/optimized/blk-merge.ll
 ; linux/optimized/blk-mq.ll
 ; linux/optimized/cacheinfo.ll
-; linux/optimized/cn_proc.ll
 ; linux/optimized/control.ll
 ; linux/optimized/devio.ll
 ; linux/optimized/dm-table.ll
@@ -85,7 +84,6 @@
 ; linux/optimized/exec.ll
 ; linux/optimized/fatent.ll
 ; linux/optimized/forcedeth.ll
-; linux/optimized/hash.ll
 ; linux/optimized/hda_codec.ll
 ; linux/optimized/hdac_device.ll
 ; linux/optimized/hid-input.ll
@@ -93,24 +91,18 @@
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/hw-me.ll
 ; linux/optimized/i9xx_wm.ll
-; linux/optimized/inat.ll
 ; linux/optimized/intel_dpll.ll
 ; linux/optimized/intel_dpll_mgr.ll
-; linux/optimized/intel_hti.ll
-; linux/optimized/intel_pmdemand.ll
-; linux/optimized/intel_tcc.ll
 ; linux/optimized/ioctl.ll
 ; linux/optimized/ipmr.ll
 ; linux/optimized/loop.ll
 ; linux/optimized/message.ll
-; linux/optimized/mii.ll
 ; linux/optimized/namei.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/nl80211.ll
 ; linux/optimized/pci.ll
 ; linux/optimized/pcmcia_cis.ll
 ; linux/optimized/pid_list.ll
-; linux/optimized/uid16.ll
 ; linux/optimized/vfs_inode.ll
 ; linux/optimized/vgaarb.ll
 ; linux/optimized/vht.ll
@@ -165,7 +157,6 @@
 ; llvm/optimized/ParseTemplate.cpp.ll
 ; llvm/optimized/ParsedAttr.cpp.ll
 ; llvm/optimized/RISCVAsmPrinter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVMergeBaseOffset.cpp.ll
 ; llvm/optimized/Sema.cpp.ll
 ; llvm/optimized/SemaAttr.cpp.ll
@@ -181,7 +172,6 @@
 ; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
-; llvm/optimized/X86AsmBackend.cpp.ll
 ; llvm/optimized/X86AsmPrinter.cpp.ll
 ; llvm/optimized/X86FloatingPoint.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -195,6 +185,8 @@
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
 ; luau/optimized/BytecodeBuilder.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_draw_arc.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -219,7 +211,6 @@
 ; openjdk/optimized/c1_LIRAssembler_x86.ll
 ; openjdk/optimized/c1_LIRGenerator.ll
 ; openjdk/optimized/c1_LIRGenerator_x86.ll
-; openjdk/optimized/c1_LinearScan.ll
 ; openjdk/optimized/check_code.ll
 ; openjdk/optimized/cmsalpha.ll
 ; openjdk/optimized/cmsio0.ll
@@ -249,7 +240,6 @@
 ; openssl/optimized/libcrypto-lib-tasn_enc.ll
 ; openssl/optimized/libcrypto-shlib-bn_lib.ll
 ; openssl/optimized/libcrypto-shlib-tasn_enc.ll
-; openssl/optimized/libdefault-lib-decode_pvk2key.ll
 ; openusd/optimized/patchTableFactory.cpp.ll
 ; openusd/optimized/stencilTableFactory.cpp.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
@@ -310,7 +300,6 @@
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; wasmtime-rs/optimized/v5prf101dn49s3v.ll
 ; wireshark/optimized/charsets.c.ll
-; wireshark/optimized/golay.c.ll
 ; wireshark/optimized/packet-aeron.c.ll
 ; wireshark/optimized/packet-cdma2k.c.ll
 ; wireshark/optimized/packet-fc.c.ll
@@ -377,6 +366,7 @@
 ; z3/optimized/spacer_util.cpp.ll
 ; z3/optimized/symmetry_reduce_tactic.cpp.ll
 ; z3/optimized/th_rewriter.cpp.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1) #0 {

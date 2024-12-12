@@ -1,5 +1,5 @@
 
-; 37 occurrences:
+; 38 occurrences:
 ; abc/optimized/aigJust.c.ll
 ; abc/optimized/aigObj.c.ll
 ; abc/optimized/bmcCexCut.c.ll
@@ -31,6 +31,7 @@
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; openssl/optimized/libssl-lib-quic_channel.ll
 ; openssl/optimized/libssl-shlib-quic_channel.ll
 ; qemu/optimized/target_riscv_debug.c.ll

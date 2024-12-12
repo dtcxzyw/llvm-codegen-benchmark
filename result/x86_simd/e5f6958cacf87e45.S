@@ -27,3 +27,26 @@ func0000000000000002:                   # @func0000000000000002
 	knotw	%k0, %k1
 	vpsllw	$15, %ymm1, %ymm0 {%k1} {z}
 	retq
+.LCPI2_0:
+	.short	512                             # 0x200
+	.short	512                             # 0x200
+	.short	512                             # 0x200
+	.short	512                             # 0x200
+	.short	512                             # 0x200
+	.short	512                             # 0x200
+	.short	512                             # 0x200
+	.short	512                             # 0x200
+	.short	512                             # 0x200
+	.short	512                             # 0x200
+	.short	512                             # 0x200
+	.short	512                             # 0x200
+	.short	512                             # 0x200
+	.short	512                             # 0x200
+	.short	512                             # 0x200
+	.short	512                             # 0x200
+func0000000000000003:                   # @func0000000000000003
+	vpsllw	$7, %xmm0, %xmm0
+	vpmovb2m	%xmm0, %k1
+	vpsllw	$8, %ymm1, %ymm0
+	vmovdqu16	.LCPI2_0(%rip), %ymm0 {%k1} # ymm0 {%k1} = [512,512,512,512,512,512,512,512,512,512,512,512,512,512,512,512]
+	retq

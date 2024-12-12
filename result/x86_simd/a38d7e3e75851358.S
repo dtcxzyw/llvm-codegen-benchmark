@@ -22,7 +22,7 @@ func00000000000000a0:                   # @func00000000000000a0
 	vpcmpgtq	.LCPI1_0(%rip){1to4}, %ymm2, %k1
 	vpbroadcastd	.LCPI1_1(%rip), %xmm2   # xmm2 = [6,6,6,6]
 	vpbroadcastd	.LCPI1_2(%rip), %xmm2 {%k1} # xmm2 {%k1} = [10,10,10,10]
-	vpaddd	%xmm1, %xmm2, %xmm1
+	vpaddd	%xmm2, %xmm1, %xmm1
 	vpsubd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq

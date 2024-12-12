@@ -1,5 +1,5 @@
 
-; 32 occurrences:
+; 34 occurrences:
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/bblif.c.ll
 ; abc/optimized/dauDsd.c.ll
@@ -7,7 +7,6 @@
 ; arrow/optimized/bitmap.cc.ll
 ; arrow/optimized/light_array.cc.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
-; hermes/optimized/BytecodeGenerator.cpp.ll
 ; libevent/optimized/evdns.c.ll
 ; libquic/optimized/cfb.c.ll
 ; linux/optimized/8139too.ll
@@ -22,7 +21,6 @@
 ; openssl/optimized/libdefault-lib-cipher_tdes_default_hw.ll
 ; openssl/optimized/liblegacy-lib-cipher_des_hw.ll
 ; openusd/optimized/ilmbase_half.cpp.ll
-; openvdb/optimized/Half.cc.ll
 ; proxygen/optimized/Logging.cpp.ll
 ; soc-simulator/optimized/verilated.ll
 ; velox/optimized/BitUtil.cpp.ll
@@ -32,6 +30,10 @@
 ; wireshark/optimized/packet-rtps.c.ll
 ; yosys/optimized/blif.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:

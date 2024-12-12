@@ -31,12 +31,14 @@ func0000000000000018:                   // @func0000000000000018
 	madd	x0, x1, x9, x8
 	ret
                                         // -- End function
-func0000000000000038:                   // @func0000000000000038
+func000000000000003c:                   // @func000000000000003c
 // %bb.0:                               // %entry
 	tst	w2, #0x1
-	add	x8, x0, #4
-	add	x9, x1, x1, lsl #1
-	csinc	x8, x8, x0, ne
-	add	x0, x8, x9
+	mov	w8, #352                        // =0x160
+	mov	w9, #348                        // =0x15c
+	csel	x8, x9, x8, ne
+	mov	w9, #152                        // =0x98
+	add	x8, x0, x8
+	madd	x0, x1, x9, x8
 	ret
                                         // -- End function

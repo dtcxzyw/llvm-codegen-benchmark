@@ -12,7 +12,7 @@
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; wireshark/optimized/packet-sccp.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i8 %0, i8 %1) #0 {
+define i1 @func000000000000002c(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 64
   %3 = icmp eq i8 %2, 0
@@ -22,8 +22,7 @@ entry:
   ret i1 %6
 }
 
-; 17 occurrences:
-; assimp/optimized/glTF2Importer.cpp.ll
+; 16 occurrences:
 ; duckdb/optimized/ub_duckdb_optimizer.cpp.ll
 ; hermes/optimized/IREval.cpp.ll
 ; linux/optimized/i8042.ll
@@ -41,7 +40,7 @@ entry:
 ; wireshark/optimized/packet-docsis.c.ll
 ; wireshark/optimized/packet-epl.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -2
   %3 = icmp eq i8 %2, 12
@@ -63,7 +62,7 @@ entry:
 ; wireshark/optimized/packet-mac-lte.c.ll
 ; z3/optimized/nlsat_interval_set.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000181(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 4
   %3 = icmp ne i8 %2, 0
@@ -80,51 +79,12 @@ entry:
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/MemCpyOptimizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i8 %0, i8 %1) #0 {
+define i1 @func000000000000018c(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, -2
   %3 = icmp ne i8 %2, 12
   %4 = and i8 %0, -2
   %5 = icmp ne i8 %4, 12
-  %6 = and i1 %5, %3
-  ret i1 %6
-}
-
-; 1 occurrences:
-; wireshark/optimized/packet-epl.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000041(i8 %0, i8 %1) #0 {
-entry:
-  %2 = and i8 %1, 2
-  %3 = icmp eq i8 %2, 0
-  %4 = and i8 %0, 3
-  %5 = icmp eq i8 %4, 2
-  %6 = and i1 %5, %3
-  ret i1 %6
-}
-
-; 1 occurrences:
-; wireshark/optimized/packet-epl.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000014(i8 %0, i8 %1) #0 {
-entry:
-  %2 = and i8 %1, 3
-  %3 = icmp eq i8 %2, 2
-  %4 = and i8 %0, 2
-  %5 = icmp eq i8 %4, 0
-  %6 = and i1 %5, %3
-  ret i1 %6
-}
-
-; 1 occurrences:
-; linux/optimized/intel_gt_irq.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000044(i8 %0, i8 %1) #0 {
-entry:
-  %2 = and i8 %1, 63
-  %3 = icmp ult i8 %2, 9
-  %4 = and i8 %0, 6
-  %5 = icmp ne i8 %4, 6
   %6 = and i1 %5, %3
   ret i1 %6
 }

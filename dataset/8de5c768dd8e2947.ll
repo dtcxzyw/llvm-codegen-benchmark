@@ -42,10 +42,13 @@ entry:
   ret i64 %4
 }
 
-; 92 occurrences:
+; 93 occurrences:
 ; abseil-cpp/optimized/str_replace_test.cc.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
 ; assimp/optimized/PlyParser.cpp.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/conic.cpp.ll
 ; casadi/optimized/integration_tools.cpp.ll
 ; casadi/optimized/nlp_tools.cpp.ll
@@ -87,7 +90,6 @@ entry:
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
@@ -97,7 +99,6 @@ entry:
 ; meshlab/optimized/filter_sdfgpu.cpp.ll
 ; meshlab/optimized/filter_unsharp.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/mesh_attribute.cpp.ll
 ; meshlab/optimized/mesh_graph.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll

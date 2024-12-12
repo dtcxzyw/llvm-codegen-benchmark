@@ -11,10 +11,9 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
-; linux/optimized/mmconfig_64.ll
 ; meshlab/optimized/MarchingCubes.cpp.ll
 ; openjdk/optimized/hb-ot-var.ll
 ; Function Attrs: nounwind

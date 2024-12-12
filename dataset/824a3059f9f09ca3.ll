@@ -13,7 +13,7 @@ define i64 @func0000000000000001(i64 %0, i1 %1) #0 {
 entry:
   %2 = select i1 %1, i64 0, i64 8192
   %.masked = and i64 %0, -245761
-  %3 = or i64 %2, %.masked
+  %3 = or i64 %.masked, %2
   ret i64 %3
 }
 

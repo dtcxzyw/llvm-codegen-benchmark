@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, i128 %1) #0 {
+define i1 @func0000000000000041(i1 %0, i128 %1) #0 {
 entry:
   %2 = trunc nuw i128 %1 to i64
   %3 = icmp eq i64 %2, 0
@@ -14,7 +14,7 @@ entry:
 ; rust-analyzer-rs/optimized/12c5ozyvkyoo7zj1.ll
 ; rust-analyzer-rs/optimized/2mbx5ptcpq6fo7sc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i128 %1) #0 {
+define i1 @func0000000000000061(i1 %0, i128 %1) #0 {
 entry:
   %2 = trunc nuw nsw i128 %1 to i64
   %3 = icmp eq i64 %2, 1
@@ -31,7 +31,7 @@ entry:
 ; delta-rs/optimized/s2xrj2sh770tx8d.ll
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i128 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i128 %1) #0 {
 entry:
   %2 = trunc nsw i128 %1 to i64
   %3 = icmp eq i64 %2, 8
@@ -64,7 +64,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/i915_hwmon.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i1 %0, i128 %1) #0 {
+define i1 @func000000000000006c(i1 %0, i128 %1) #0 {
 entry:
   %2 = trunc nuw nsw i128 %1 to i64
   %3 = icmp ne i64 %2, 0

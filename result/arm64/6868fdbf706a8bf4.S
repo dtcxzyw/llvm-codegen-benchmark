@@ -1,53 +1,36 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	movi	v6.2d, #0x00ff000000ff00
-	movi	v7.2d, #0x0000ff000000ff
-	movi	v16.2d, #0xff000000ff0000
-	and	v5.16b, v5.16b, v6.16b
-	and	v3.16b, v3.16b, v7.16b
-	and	v4.16b, v4.16b, v6.16b
-	and	v2.16b, v2.16b, v7.16b
-	and	v1.16b, v1.16b, v16.16b
-	and	v0.16b, v0.16b, v16.16b
-	orr	v3.16b, v3.16b, v5.16b
-	orr	v2.16b, v2.16b, v4.16b
-	orr	v1.16b, v3.16b, v1.16b
-	orr	v0.16b, v2.16b, v0.16b
+	and	w8, w2, #0xff00
+	and	w9, w0, #0xff0000
+	bfxil	w8, w1, #0, #8
+	orr	w0, w8, w9
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
 	mov	w8, #30959                      // =0x78ef
-	movi	v6.4s, #16
-	movi	v16.4s, #8, lsl #16
+	and	w9, w1, #0x10
+	and	w10, w0, #0x80000
 	movk	w8, #255, lsl #16
-	dup	v7.4s, w8
-	and	v3.16b, v3.16b, v6.16b
-	and	v2.16b, v2.16b, v6.16b
-	and	v1.16b, v1.16b, v16.16b
-	and	v5.16b, v5.16b, v7.16b
-	and	v4.16b, v4.16b, v7.16b
-	and	v0.16b, v0.16b, v16.16b
-	orr	v3.16b, v3.16b, v5.16b
-	orr	v2.16b, v2.16b, v4.16b
-	orr	v0.16b, v2.16b, v0.16b
-	orr	v1.16b, v3.16b, v1.16b
+	orr	w9, w9, w10
+	and	w8, w2, w8
+	orr	w0, w9, w8
+	ret
+                                        // -- End function
+func0000000000000000:                   // @func0000000000000000
+// %bb.0:                               // %entry
+	and	w8, w2, #0xf00
+	bfxil	w8, w1, #0, #8
+	bfxil	w8, w0, #0, #4
+	mov	x0, x8
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	movi	v6.4s, #224
-	movi	v7.4s, #63
-	movi	v16.4s, #8, lsl #8
-	and	v5.16b, v5.16b, v6.16b
-	and	v3.16b, v3.16b, v7.16b
-	and	v4.16b, v4.16b, v6.16b
-	and	v2.16b, v2.16b, v7.16b
-	and	v1.16b, v1.16b, v16.16b
-	and	v0.16b, v0.16b, v16.16b
-	orr	v3.16b, v3.16b, v5.16b
-	orr	v2.16b, v2.16b, v4.16b
-	orr	v1.16b, v3.16b, v1.16b
-	orr	v0.16b, v2.16b, v0.16b
+	and	w8, w2, #0xe0
+	and	w9, w1, #0x3f
+	orr	w8, w9, w8
+	and	w9, w0, #0x800
+	orr	w0, w8, w9
 	ret
                                         // -- End function

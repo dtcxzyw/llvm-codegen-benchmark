@@ -1,7 +1,8 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; opencv/optimized/softfloat.cpp.ll
 ; wasmtime-rs/optimized/320v7ko74ke0k4k4.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
 entry:

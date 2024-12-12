@@ -8,7 +8,7 @@ func000000000000000c:                   # @func000000000000000c
 	testb	$48, %dil
 	setne	%al
 	retq
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000141:                   # @func0000000000000141
 	xorl	%esi, %edi
 	testl	$1023, %edi                     # imm = 0x3FF
 	sete	%al

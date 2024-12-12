@@ -31,14 +31,14 @@ define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %1, %2
   %4 = freeze i1 %3
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
 ; 5 occurrences:
 ; freetype/optimized/sdf.c.ll
 ; gromacs/optimized/pairlist.cpp.ll
-; icu/optimized/hebrwcal.ll
+; lvgl/optimized/lv_chart.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; redis/optimized/lolwut6.ll
 ; Function Attrs: nounwind
@@ -50,8 +50,7 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
-; icu/optimized/csrucode.ll
+; 2 occurrences:
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; Function Attrs: nounwind
@@ -81,7 +80,7 @@ define i1 @func000000000000000a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %1, %2
   %4 = freeze i1 %3
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

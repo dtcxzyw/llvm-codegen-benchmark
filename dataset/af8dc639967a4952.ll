@@ -3,7 +3,7 @@
 ; openjdk/optimized/classFileParser.ll
 ; openmpi/optimized/check_monitoring.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c4(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000384(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 10
   %4 = zext nneg i32 %3 to i64
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c6(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000386(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 6
   %4 = zext nneg i32 %3 to i64

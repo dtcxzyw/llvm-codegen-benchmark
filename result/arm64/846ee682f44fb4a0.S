@@ -25,12 +25,19 @@ func000000000000001a:                   // @func000000000000001a
 	sub	x0, x8, x1
 	ret
                                         // -- End function
-func00000000000000fa:                   // @func00000000000000fa
+func00000000000000ff:                   // @func00000000000000ff
 // %bb.0:                               // %entry
 	mov	w8, #24                         // =0x18
 	mov	w9, #2                          // =0x2
 	madd	x8, x2, x8, x0
 	sub	x9, x9, x1
 	add	x0, x8, x9, lsl #3
+	ret
+                                        // -- End function
+func00000000000000de:                   // @func00000000000000de
+// %bb.0:                               // %entry
+	mov	w8, #20                         // =0x14
+	madd	x8, x2, x8, x0
+	sub	x0, x8, x1, lsl #2
 	ret
                                         // -- End function

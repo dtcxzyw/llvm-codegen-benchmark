@@ -1,4 +1,19 @@
 
+%struct.PyDictUnicodeEntry.3967079 = type { ptr, ptr }
+
+; 1 occurrences:
+; boost/optimized/alloc_lib.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000bf(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -16
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %0
+  %5 = and i64 %1, 15
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 8
+  ret ptr %7
+}
+
 ; 5 occurrences:
 ; llvm/optimized/AArch64Disassembler.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
@@ -6,27 +21,13 @@
 ; lz4/optimized/lz4.c.ll
 ; openusd/optimized/lz4.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000aa(i64 %0, i64 %1, ptr %2) #0 {
+define ptr @func00000000000000ff(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
-  %4 = getelementptr nusw i8, ptr %3, i64 %0
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %0
   %5 = and i64 %1, 4294967295
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 2
-  ret ptr %7
-}
-
-; 2 occurrences:
-; cpython/optimized/ceval.ll
-; postgres/optimized/tsvector_op.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000082(i64 %0, i64 %1, ptr %2) #0 {
-entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 8
-  %4 = getelementptr i8, ptr %3, i64 %0
-  %5 = and i64 %1, -2
-  %6 = getelementptr i8, ptr %4, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 2
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 2
   ret ptr %7
 }
 
@@ -57,6 +58,18 @@ entry:
   %6 = getelementptr i8, ptr %4, i64 %5
   %7 = getelementptr i8, ptr %6, i64 16
   ret ptr %7
+}
+
+; 1 occurrences:
+; cpython/optimized/ceval.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000c3(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 32
+  %4 = getelementptr i8, ptr %3, i64 %0
+  %5 = and i64 %1, 65535
+  %6 = getelementptr %struct.PyDictUnicodeEntry.3967079, ptr %4, i64 %5, i32 1
+  ret ptr %6
 }
 
 attributes #0 = { nounwind }

@@ -6,9 +6,9 @@
 ; libquic/optimized/prtime.cc.ll
 ; libquic/optimized/t_x509.c.ll
 ; libwebp/optimized/dec.c.ll
-; libzmq/optimized/mechanism_base.cpp.ll
 ; llvm/optimized/GCOV.cpp.ll
 ; llvm/optimized/SampleProfReader.cpp.ll
+; lvgl/optimized/lv_calendar_header_dropdown.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; openssl/optimized/asn1_time_test-bin-a_time.ll
 ; openssl/optimized/ca_internals_test-bin-a_time.ll

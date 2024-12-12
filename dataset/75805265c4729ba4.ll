@@ -1,12 +1,13 @@
 
 ; 28 occurrences:
+; boost/optimized/src.ll
+; boost/optimized/static_string.ll
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; eastl/optimized/BenchmarkString.cpp.ll
 ; eastl/optimized/EASTLBenchmark.cpp.ll
 ; eastl/optimized/EATest.cpp.ll
 ; eastl/optimized/TestBitVector.cpp.ll
-; eastl/optimized/TestCharTraits.cpp.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestFixedString.cpp.ll
 ; eastl/optimized/TestFunctional.cpp.ll
@@ -15,7 +16,6 @@
 ; eastl/optimized/TestOptional.cpp.ll
 ; eastl/optimized/TestRingBuffer.cpp.ll
 ; eastl/optimized/TestString.cpp.ll
-; eastl/optimized/TestUtility.cpp.ll
 ; eastl/optimized/TestVector.cpp.ll
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/main.cpp.ll
@@ -37,7 +37,8 @@ entry:
   ret i8 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/static_string.ll
 ; eastl/optimized/TestString.cpp.ll
 ; mold/optimized/arch-m68k.cc.ll
 ; Function Attrs: nounwind
@@ -49,9 +50,10 @@ entry:
   ret i8 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; abc/optimized/cuddUtil.c.ll
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
+; boost/optimized/static_string.ll
 ; jq/optimized/regcomp.ll
 ; oniguruma/optimized/regcomp.ll
 ; Function Attrs: nounwind

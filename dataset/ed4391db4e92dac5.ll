@@ -1,5 +1,5 @@
 
-; 60 occurrences:
+; 61 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; brotli/optimized/transform.c.ll
 ; c3c/optimized/parse_expr.c.ll
@@ -25,6 +25,7 @@
 ; libwebp/optimized/yuv_sse41.c.ll
 ; lief/optimized/pkcs12.c.ll
 ; linux/optimized/vlv_dsi.ll
+; lvgl/optimized/lv_color.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; ncnn/optimized/mat_pixel.cpp.ll
 ; nori/optimized/nanovg.c.ll
@@ -69,7 +70,7 @@ entry:
   ret i32 %5
 }
 
-; 113 occurrences:
+; 114 occurrences:
 ; abc/optimized/compress.c.ll
 ; abseil-cpp/optimized/duration_test.cc.ll
 ; abseil-cpp/optimized/examples_test.cc.ll
@@ -82,6 +83,7 @@ entry:
 ; arrow/optimized/bignum.cc.ll
 ; arrow/optimized/key_hash.cc.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/partition.ll
 ; bullet3/optimized/btCollisionWorld.ll
 ; bullet3/optimized/btCollisionWorldImporter.ll
 ; bullet3/optimized/btSoftBody.ll
@@ -192,8 +194,9 @@ entry:
   ret i32 %5
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; assimp/optimized/zip.c.ll
+; boost/optimized/src.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; hermes/optimized/zip.c.ll
 ; imgui/optimized/imgui_draw.cpp.ll
@@ -217,6 +220,7 @@ entry:
 ; arrow/optimized/scalar_cast_temporal.cc.ll
 ; arrow/optimized/tz.cpp.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/src.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
@@ -231,7 +235,6 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/raw_ostream.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; opencv/optimized/cap_v4l.cpp.ll
 ; opencv/optimized/color_rgb.dispatch.cpp.ll
 ; opencv/optimized/imgwarp.cpp.ll
 ; opencv/optimized/resize.cpp.ll
@@ -249,7 +252,7 @@ entry:
 define i32 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = lshr i32 %4, 2
   ret i32 %5
 }
@@ -267,7 +270,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = lshr i32 %4, 16
   ret i32 %5
 }
@@ -332,7 +335,7 @@ entry:
 define i32 @func000000000000000e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = lshr i32 %4, 6
   ret i32 %5
 }

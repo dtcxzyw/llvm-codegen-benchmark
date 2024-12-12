@@ -3,7 +3,7 @@ func000000000000000e:                   # @func000000000000000e
 	sh2add	a0, a1, a0
 	addi	a0, a0, 4
 	ret
-func000000000000001e:                   # @func000000000000001e
+func000000000000001f:                   # @func000000000000001f
 	add	a1, a1, a2
 	sh2add	a0, a1, a0
 	addi	a0, a0, 4

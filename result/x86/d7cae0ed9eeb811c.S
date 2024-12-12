@@ -18,12 +18,12 @@ func000000000000018f:                   # @func000000000000018f
 	sbbl	$-1, %edi
 	leal	(%rdi,%rdi,2), %eax
 	retq
-func000000000000008c:                   # @func000000000000008c
+func000000000000028c:                   # @func000000000000028c
 	cmpl	$-146097, %esi                  # imm = 0xFFFDC54F
 	adcl	$0, %edi
 	imull	$146097, %edi, %eax             # imm = 0x23AB1
 	retq
-func000000000000008d:                   # @func000000000000008d
+func000000000000028d:                   # @func000000000000028d
 	cmpl	$-146097, %esi                  # imm = 0xFFFDC54F
 	adcl	$0, %edi
 	imull	$-400, %edi, %eax               # imm = 0xFE70

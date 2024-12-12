@@ -21,7 +21,7 @@ func0000000000000018:                   # @func0000000000000018
 	vmerge.vim	v10, v10, 12, v0
 	vsrl.vv	v8, v8, v10
 	ret
-func0000000000000010:                   # @func0000000000000010
+func0000000000000030:                   # @func0000000000000030
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgtu.vi	v0, v10, 4
 	vmv.v.i	v10, 0

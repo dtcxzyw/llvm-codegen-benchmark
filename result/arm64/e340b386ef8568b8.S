@@ -15,8 +15,8 @@ func000000000000001a:                   // @func000000000000001a
 	umulh	x9, x8, x2
 	mul	x10, x8, x2
 	madd	x8, x8, x3, x9
-	adds	x9, x10, x0
-	adc	x8, x8, x1
+	adds	x9, x0, x10
+	adc	x8, x1, x8
 	extr	x0, x8, x9, #16
 	lsr	x1, x8, #16
 	ret

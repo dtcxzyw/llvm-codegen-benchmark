@@ -11,51 +11,6 @@ func00000000000000c0:                   # @func00000000000000c0
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v8, v10, 0
 	ret
-.LCPI1_0:
-	.quad	1654928120671552141             # 0x16f77c5b896ec28d
-.LCPI1_1:
-	.quad	1403534266930087369             # 0x137a5afac274c5c9
-func0000000000000014:                   # @func0000000000000014
-	lui	a0, %hi(.LCPI1_0)
-	ld	a0, %lo(.LCPI1_0)(a0)
-	lui	a1, %hi(.LCPI1_1)
-	ld	a1, %lo(.LCPI1_1)(a1)
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vmulh.vx	v12, v12, a0
-	li	a0, 63
-	vmulh.vx	v10, v10, a1
-	vsrl.vx	v14, v12, a0
-	vsra.vi	v12, v12, 17
-	vadd.vv	v12, v12, v14
-	vsrl.vx	v14, v10, a0
-	vsra.vi	v10, v10, 11
-	vadd.vv	v8, v12, v8
-	vadd.vv	v10, v10, v14
-	vadd.vv	v10, v8, v10
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vnsrl.wi	v8, v10, 0
-	ret
-func0000000000000024:                   # @func0000000000000024
-	li	a0, 63
-	li	a1, 62
-	lui	a2, 629146
-	vsetivli	zero, 4, e64, m2, ta, ma
-	vsra.vx	v14, v12, a0
-	addi	a2, a2, -1639
-	vsrl.vx	v14, v14, a1
-	slli	a1, a2, 32
-	vadd.vv	v12, v12, v14
-	add.uw	a1, a2, a1
-	vsra.vi	v12, v12, 2
-	vmulh.vx	v8, v8, a1
-	vsub.vv	v10, v10, v12
-	vsrl.vx	v12, v8, a0
-	vsra.vi	v8, v8, 5
-	vadd.vv	v8, v8, v12
-	vadd.vv	v10, v8, v10
-	vsetvli	zero, zero, e32, m1, ta, ma
-	vnsrl.wi	v8, v10, 0
-	ret
 func00000000000000d4:                   # @func00000000000000d4
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vsra.vi	v12, v12, 3
@@ -66,6 +21,30 @@ func00000000000000d4:                   # @func00000000000000d4
 	vmadd.vx	v12, a0, v8
 	vsra.vi	v10, v10, 3
 	vmadd.vx	v10, a0, v12
+	vsetvli	zero, zero, e32, m1, ta, ma
+	vnsrl.wi	v8, v10, 0
+	ret
+.LCPI2_0:
+	.quad	1654928120671552141             # 0x16f77c5b896ec28d
+.LCPI2_1:
+	.quad	1403534266930087369             # 0x137a5afac274c5c9
+func0000000000000014:                   # @func0000000000000014
+	lui	a0, %hi(.LCPI2_0)
+	ld	a0, %lo(.LCPI2_0)(a0)
+	lui	a1, %hi(.LCPI2_1)
+	ld	a1, %lo(.LCPI2_1)(a1)
+	vsetivli	zero, 4, e64, m2, ta, ma
+	vmulh.vx	v12, v12, a0
+	li	a0, 63
+	vmulh.vx	v10, v10, a1
+	vsrl.vx	v14, v12, a0
+	vsra.vi	v12, v12, 17
+	vadd.vv	v12, v12, v14
+	vsrl.vx	v14, v10, a0
+	vsra.vi	v10, v10, 11
+	vadd.vv	v8, v8, v12
+	vadd.vv	v10, v10, v14
+	vadd.vv	v10, v8, v10
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v8, v10, 0
 	ret

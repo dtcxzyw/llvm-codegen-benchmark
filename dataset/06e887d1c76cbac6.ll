@@ -15,7 +15,7 @@
 ; openjdk/optimized/hb-ot-shape.ll
 ; openjdk/optimized/hb-set.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000101(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw i32 %0, %1
   %.mask = and i32 %2, 536870911
@@ -27,7 +27,7 @@ entry:
 ; abc/optimized/giaAigerExt.c.ll
 ; abc/optimized/saigSwitch.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000084(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
   %3 = and i32 %2, 1073741792
@@ -35,11 +35,10 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; abc/optimized/giaAigerExt.c.ll
-; abc/optimized/kitHop.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a4(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
   %3 = and i32 %2, 2147483584
@@ -74,23 +73,12 @@ entry:
   ret i1 %3
 }
 
-; 1 occurrences:
-; llvm/optimized/AArch64ISelLowering.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1) #0 {
-entry:
-  %2 = sub nsw i32 %0, %1
-  %.mask = and i32 %2, 536870911
-  %3 = icmp eq i32 %.mask, 0
-  ret i1 %3
-}
-
 ; 3 occurrences:
 ; harfbuzz/optimized/hb-subset-cff1.cc.ll
 ; harfbuzz/optimized/hb-subset-cff2.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000181(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 %0, %1
   %.mask = and i32 %2, 536870911

@@ -3,7 +3,7 @@
 ; qemu/optimized/block_vpc.c.ll
 ; xgboost/optimized/multi_target_tree_model.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sext i32 %1 to i64
@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/block_qcow2-cache.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a8(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sext i32 %1 to i64
@@ -29,7 +29,7 @@ entry:
 ; opencv/optimized/ocl_perf.cpp.ll
 ; openmpi/optimized/coll_adapt_ireduce.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a4(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = zext nneg i32 %1 to i64
@@ -41,7 +41,7 @@ entry:
 ; 1 occurrences:
 ; xgboost/optimized/multi_target_tree_model.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = zext i32 %1 to i64

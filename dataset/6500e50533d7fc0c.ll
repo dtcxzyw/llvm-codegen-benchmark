@@ -20,13 +20,13 @@ entry:
 ; abc/optimized/ifCut.c.ll
 ; abc/optimized/ifMap.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 24
   %4 = trunc i64 %0 to i32
   %5 = lshr i32 %4, 24
-  %6 = icmp ugt i32 %5, %3
+  %6 = icmp samesign ugt i32 %5, %3
   ret i1 %6
 }
 
@@ -38,13 +38,13 @@ entry:
 ; icu/optimized/collationcompare.ll
 ; z3/optimized/spacer_context.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 6
   %4 = trunc i64 %0 to i32
   %5 = lshr i32 %4, 6
-  %6 = icmp ult i32 %5, %3
+  %6 = icmp samesign ult i32 %5, %3
   ret i1 %6
 }
 

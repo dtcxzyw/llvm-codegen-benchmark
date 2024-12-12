@@ -25,6 +25,6 @@ func000000000000000d:                   # @func000000000000000d
 	vpbroadcastd	.LCPI2_0(%rip), %xmm1   # xmm1 = [32,32,32,32]
 	vpbroadcastd	.LCPI2_1(%rip), %xmm3   # xmm3 = [1,1,1,1]
 	vpsubd	%xmm2, %xmm1, %xmm3 {%k1}
-	vpaddd	%xmm0, %xmm3, %xmm0
+	vpaddd	%xmm3, %xmm0, %xmm0
 	vpmovsxdq	%xmm0, %ymm0
 	retq

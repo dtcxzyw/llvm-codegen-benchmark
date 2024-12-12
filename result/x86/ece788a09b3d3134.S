@@ -47,7 +47,7 @@ func0000000000000014:                   # @func0000000000000014
 	retq
 .LCPI5_0:
 	.quad	0x4090000000000000              # double 1024
-func000000000000004c:                   # @func000000000000004c
+func000000000000014c:                   # @func000000000000014c
 	cmpq	$4, %rdi
 	setb	%cl
 	vucomisd	.LCPI5_0(%rip), %xmm0
@@ -62,12 +62,20 @@ func00000000000000cc:                   # @func00000000000000cc
 	setae	%al
 	andb	%cl, %al
 	retq
-.LCPI7_0:
+func0000000000000144:                   # @func0000000000000144
+	cmpq	$20, %rdi
+	setb	%cl
+	vxorpd	%xmm1, %xmm1, %xmm1
+	vucomisd	%xmm1, %xmm0
+	seta	%al
+	andb	%cl, %al
+	retq
+.LCPI8_0:
 	.quad	0x7ff0000000000000              # double +Inf
 func00000000000000c6:                   # @func00000000000000c6
 	testq	%rdi, %rdi
 	setne	%cl
-	vucomisd	.LCPI7_0(%rip), %xmm0
+	vucomisd	.LCPI8_0(%rip), %xmm0
 	setne	%al
 	andb	%cl, %al
 	retq

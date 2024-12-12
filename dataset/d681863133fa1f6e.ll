@@ -1,7 +1,6 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; cmake/optimized/cmRST.cxx.ll
-; llvm/optimized/Reassociate.cpp.ll
 ; lz4/optimized/lz4.c.ll
 ; openusd/optimized/lz4.cpp.ll
 ; yosys/optimized/lz4.ll

@@ -16,10 +16,9 @@ entry:
   ret i64 %2
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; cpython/optimized/dictobject.ll
 ; linux/optimized/apic.ll
-; linux/optimized/ptp_vclock.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0) #0 {
 entry:

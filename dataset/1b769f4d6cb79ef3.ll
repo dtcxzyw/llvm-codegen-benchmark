@@ -1,5 +1,5 @@
 
-; 45 occurrences:
+; 47 occurrences:
 ; arrow/optimized/vector_selection_take_internal.cc.ll
 ; assimp/optimized/BlenderCustomData.cpp.ll
 ; assimp/optimized/FindInstancesProcess.cpp.ll
@@ -44,13 +44,15 @@
 ; wireshark/optimized/req_resp_hdrs.c.ll
 ; wireshark/optimized/wireshark_main_window.cpp.ll
 ; wireshark/optimized/wireshark_main_window_slots.cpp.ll
+; zed-rs/optimized/8bnapxt4ilkd5y3egr7fzm1sv.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; zstd/optimized/zdict.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = select i1 %1, i1 %3, i1 false
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -72,7 +74,7 @@ define i1 @func0000000000000001(i1 %0, i1 %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %1, i1 %3, i1 false
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

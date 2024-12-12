@@ -1,9 +1,10 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
+; boost/optimized/to_chars.ll
 ; icu/optimized/bocsu.ll
 ; linux/optimized/decompress_unlzma.ll
 ; linux/optimized/intel_llc.ll
@@ -20,13 +21,14 @@ entry:
   ret i32 %3
 }
 
-; 46 occurrences:
+; 52 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/tz.cpp.ll
 ; clamav/optimized/unpack.cpp.ll
+; cpython/optimized/Hacl_Hash_SHA3.ll
 ; darktable/optimized/timeline.c.ll
 ; eastl/optimized/EADateTime.cpp.ll
 ; fmt/optimized/chrono-test.cc.ll
@@ -44,6 +46,9 @@ entry:
 ; llvm/optimized/MemorySSAUpdater.cpp.ll
 ; llvm/optimized/PromoteMemoryToRegister.cpp.ll
 ; llvm/optimized/SSAUpdaterBulk.cpp.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_image.ll
+; lvgl/optimized/lv_refr.ll
 ; openjdk/optimized/loopnode.ll
 ; openusd/optimized/lz4.cpp.ll
 ; quantlib/optimized/date.ll
@@ -67,6 +72,8 @@ entry:
 ; wireshark/optimized/packet-uftp5.c.ll
 ; yosys/optimized/fastlz.ll
 ; yosys/optimized/lz4.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:

@@ -41,18 +41,18 @@ entry:
 ; clamav/optimized/mszipd.c.ll
 ; icu/optimized/ucnvmbcs.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i16 %0, i32 %1) #0 {
+define i1 @func00000000000001f4(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i32 %1 to i16
   %3 = add nuw nsw i16 %0, 1
-  %4 = icmp ult i16 %3, %2
+  %4 = icmp samesign ult i16 %3, %2
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; wireshark/optimized/packet-cdma2k.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000108(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i16
   %3 = add i16 %0, 1
@@ -76,7 +76,7 @@ entry:
 ; hyperscan/optimized/mcsheng_compile.cpp.ll
 ; z3/optimized/mam.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000044(i16 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i16
   %3 = add nuw i16 %0, 1

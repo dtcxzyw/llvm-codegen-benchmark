@@ -27,3 +27,10 @@ func0000000000000004:                   # @func0000000000000004
 	vptestnmq	.LCPI3_0(%rip){1to4}, %ymm1, %k1
 	vmovdqa64	%ymm0, %ymm0 {%k1} {z}
 	retq
+.LCPI4_0:
+	.long	264                             # 0x108
+func0000000000000014:                   # @func0000000000000014
+	vpmovqd	%ymm1, %xmm1
+	vpcmpltud	.LCPI4_0(%rip){1to4}, %xmm1, %k1
+	vmovdqa64	%ymm0, %ymm0 {%k1} {z}
+	retq

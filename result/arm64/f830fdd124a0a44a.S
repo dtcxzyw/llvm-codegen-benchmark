@@ -1,64 +1,24 @@
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	zip1	v4.8b, v3.8b, v0.8b
-	zip2	v3.8b, v3.8b, v0.8b
-	zip1	v5.8b, v0.8b, v0.8b
-	zip2	v0.8b, v0.8b, v0.8b
-	movi	v6.4s, #3
-	movi	v7.4s, #2
-	ushll	v4.4s, v4.4h, #0
-	ushll	v3.4s, v3.4h, #0
-	ushll	v5.4s, v5.4h, #0
-	ushll	v0.4s, v0.4h, #0
-	shl	v4.4s, v4.4s, #31
-	shl	v3.4s, v3.4s, #31
-	shl	v5.4s, v5.4s, #31
-	shl	v0.4s, v0.4s, #31
-	cmlt	v4.4s, v4.4s, #0
-	cmlt	v3.4s, v3.4s, #0
-	cmlt	v5.4s, v5.4s, #0
-	cmlt	v0.4s, v0.4s, #0
-	bsl	v4.16b, v7.16b, v6.16b
-	bsl	v3.16b, v7.16b, v6.16b
-	bic	v4.16b, v4.16b, v5.16b
-	bic	v3.16b, v3.16b, v0.16b
-	sub	v4.4s, v4.4s, v5.4s
-	sub	v3.4s, v3.4s, v0.4s
-	add	v0.4s, v1.4s, v6.4s
-	add	v1.4s, v2.4s, v6.4s
-	add	v0.4s, v0.4s, v4.4s
-	add	v1.4s, v1.4s, v3.4s
+	tst	w2, #0x1
+	mov	w8, #2                          // =0x2
+	cinc	w8, w8, eq
+	tst	w0, #0x1
+	csinc	w8, w8, wzr, eq
+	add	w8, w1, w8
+	add	w0, w8, #3
 	ret
                                         // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
-	zip2	v4.8b, v3.8b, v0.8b
-	zip1	v3.8b, v3.8b, v0.8b
-	zip1	v5.8b, v2.8b, v0.8b
-	zip2	v2.8b, v2.8b, v0.8b
-	movi	v6.4s, #5
-	movi	v7.4s, #20
-	ushll	v4.4s, v4.4h, #0
-	ushll	v3.4s, v3.4h, #0
-	ushll	v5.4s, v5.4h, #0
-	ushll	v2.4s, v2.4h, #0
-	shl	v4.4s, v4.4s, #31
-	shl	v3.4s, v3.4s, #31
-	shl	v5.4s, v5.4s, #31
-	shl	v2.4s, v2.4s, #31
-	cmlt	v4.4s, v4.4s, #0
-	cmlt	v3.4s, v3.4s, #0
-	cmlt	v5.4s, v5.4s, #0
-	cmlt	v2.4s, v2.4s, #0
-	bsl	v4.16b, v7.16b, v6.16b
-	bsl	v3.16b, v7.16b, v6.16b
-	movi	v6.4s, #10
-	movi	v7.2d, #0xffffffffffffffff
-	bit	v3.16b, v6.16b, v5.16b
-	bsl	v2.16b, v6.16b, v4.16b
-	add	v0.4s, v0.4s, v7.4s
-	add	v1.4s, v1.4s, v7.4s
-	add	v0.4s, v0.4s, v3.4s
-	add	v1.4s, v1.4s, v2.4s
+	tst	w2, #0x1
+	mov	w8, #5                          // =0x5
+	mov	w9, #20                         // =0x14
+	csel	w8, w9, w8, ne
+	tst	w1, #0x1
+	mov	w9, #10                         // =0xa
+	csel	w8, w9, w8, ne
+	add	w8, w0, w8
+	sub	w0, w8, #1
 	ret
                                         // -- End function

@@ -20,7 +20,7 @@ entry:
 ; freetype/optimized/psaux.c.ll
 ; opencv/optimized/opencv-caffe.pb.cc.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000c7(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000187(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 8
   %3 = icmp eq i32 %2, 0

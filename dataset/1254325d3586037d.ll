@@ -1,27 +1,24 @@
 
-%struct.GC_hblk_s.2591436 = type { [4096 x i8] }
+%struct.GC_hblk_s.2705275 = type { [4096 x i8] }
 
 ; 1 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, ptr %1, i64 %2) #0 {
+define i64 @func000000000000001e(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %struct.GC_hblk_s.2591436, ptr %1, i64 %2
-  %4 = getelementptr nusw %struct.GC_hblk_s.2591436, ptr %3, i64 %0
+  %3 = getelementptr nusw nuw %struct.GC_hblk_s.2705275, ptr %1, i64 %2
+  %4 = getelementptr nusw nuw %struct.GC_hblk_s.2705275, ptr %3, i64 %0
   %5 = ptrtoint ptr %4 to i64
   %6 = lshr i64 %5, 12
   %7 = and i64 %6, 262143
   ret i64 %7
 }
 
-; 47 occurrences:
-; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
+; 43 occurrences:
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
-; ceres/optimized/dense_cholesky.cc.ll
 ; ceres/optimized/dense_qr.cc.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
-; ceres/optimized/implicit_schur_complement.cc.ll
 ; ceres/optimized/polynomial.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_2.cc.ll
 ; ceres/optimized/schur_eliminator_2_2_3.cc.ll
@@ -51,7 +48,6 @@ entry:
 ; g2o/optimized/solver_dense.cpp.ll
 ; g2o/optimized/solver_eigen.cpp.ll
 ; g2o/optimized/solver_pcg.cpp.ll
-; g2o/optimized/structure_only.cpp.ll
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
@@ -67,6 +63,63 @@ define i64 @func0000000000000015(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw double, ptr %1, i64 %2
   %4 = getelementptr nusw double, ptr %3, i64 %0
+  %5 = ptrtoint ptr %4 to i64
+  %6 = lshr exact i64 %5, 3
+  %7 = and i64 %6, 1
+  ret i64 %7
+}
+
+; 6 occurrences:
+; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
+; ceres/optimized/implicit_schur_complement.cc.ll
+; g2o/optimized/structure_only.cpp.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/edit_referencing.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001f(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw double, ptr %1, i64 %2
+  %4 = getelementptr nusw nuw double, ptr %3, i64 %0
+  %5 = ptrtoint ptr %4 to i64
+  %6 = lshr exact i64 %5, 3
+  %7 = and i64 %6, 1
+  ret i64 %7
+}
+
+; 9 occurrences:
+; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
+; ceres/optimized/dense_cholesky.cc.ll
+; ceres/optimized/implicit_schur_complement.cc.ll
+; ceres/optimized/schur_eliminator_2_d_d.cc.ll
+; ceres/optimized/schur_eliminator_d_d_d.cc.ll
+; g2o/optimized/solver_dense.cpp.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001d(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw double, ptr %1, i64 %2
+  %4 = getelementptr nusw double, ptr %3, i64 %0
+  %5 = ptrtoint ptr %4 to i64
+  %6 = lshr exact i64 %5, 3
+  %7 = and i64 %6, 1
+  ret i64 %7
+}
+
+; 6 occurrences:
+; g2o/optimized/optimizable_graph.cpp.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/edit_referencing.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/matching.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000017(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw double, ptr %1, i64 %2
+  %4 = getelementptr nusw nuw double, ptr %3, i64 %0
   %5 = ptrtoint ptr %4 to i64
   %6 = lshr exact i64 %5, 3
   %7 = and i64 %6, 1
@@ -95,6 +148,19 @@ define i64 @func0000000000000005(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr double, ptr %1, i64 %2
   %4 = getelementptr nusw double, ptr %3, i64 %0
+  %5 = ptrtoint ptr %4 to i64
+  %6 = lshr exact i64 %5, 3
+  %7 = and i64 %6, 1
+  ret i64 %7
+}
+
+; 1 occurrences:
+; g2o/optimized/types_seven_dof_expmap.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000007(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr double, ptr %1, i64 %2
+  %4 = getelementptr nusw nuw double, ptr %3, i64 %0
   %5 = ptrtoint ptr %4 to i64
   %6 = lshr exact i64 %5, 3
   %7 = and i64 %6, 1

@@ -3,22 +3,43 @@ func0000000000000000:                   # @func0000000000000000
 	movl	%edi, %ecx
 	leaq	-16(%rax,%rcx,8), %rax
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000002b:                   # @func000000000000002b
 	addq	%rdx, %rsi
 	andl	$15, %edi
 	leaq	-16(%rdi,%rsi), %rax
 	retq
-func0000000000000028:                   # @func0000000000000028
+func000000000000003f:                   # @func000000000000003f
+	addq	%rdx, %rsi
+	andl	$3, %edi
+	leaq	1(%rdi,%rsi), %rax
+	retq
+func000000000000002f:                   # @func000000000000002f
+	addq	%rdx, %rsi
+	movl	%edi, %eax
+	leaq	40(%rax,%rsi), %rax
+	retq
+func000000000000003b:                   # @func000000000000003b
+	addq	%rdx, %rsi
+	andl	$15, %edi
+	leaq	-95(%rdi,%rsi), %rax
+	retq
+func000000000000003c:                   # @func000000000000003c
 	addq	%rdx, %rsi
 	andq	$-4, %rdi
 	leaq	1(%rdi,%rsi), %rax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func000000000000002c:                   # @func000000000000002c
+	shlq	$5, %rdx
+	addq	%rsi, %rdx
+	andq	$-128, %rdi
+	leaq	32(%rdi,%rdx), %rax
+	retq
+func000000000000000c:                   # @func000000000000000c
 	addq	%rdx, %rsi
 	movl	%edi, %eax
 	leaq	2(%rsi,%rax,2), %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	leaq	(%rsi,%rdx,4), %rax
 	andl	$1073741823, %edi               # imm = 0x3FFFFFFF
 	leaq	8(%rdi,%rax), %rax

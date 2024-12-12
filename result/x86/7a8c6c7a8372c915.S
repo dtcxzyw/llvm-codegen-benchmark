@@ -4,7 +4,7 @@ func0000000000000012:                   # @func0000000000000012
 	cmpq	%rdi, %rsi
 	setae	%al
 	retq
-func0000000000000036:                   # @func0000000000000036
+func0000000000000056:                   # @func0000000000000056
 	addq	%rsi, %rsi
 	xorl	%eax, %eax
 	cmpq	%rdi, %rsi

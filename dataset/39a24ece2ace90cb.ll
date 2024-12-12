@@ -1,12 +1,10 @@
 
-; 381 occurrences:
+; 390 occurrences:
 ; abc/optimized/cbaBlast.c.ll
 ; abc/optimized/wlcReadVer.c.ll
-; abseil-cpp/optimized/arg.cc.ll
 ; abseil-cpp/optimized/charconv_parse.cc.ll
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
-; abseil-cpp/optimized/float_conversion.cc.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; arrow/optimized/strptime.c.ll
 ; arrow/optimized/value_parsing.cc.ll
@@ -17,6 +15,10 @@
 ; assimp/optimized/PlyLoader.cpp.ll
 ; assimp/optimized/PlyParser.cpp.ll
 ; assimp/optimized/SMDLoader.cpp.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/src.ll
 ; c3c/optimized/json.c.ll
 ; c3c/optimized/lexer.c.ll
 ; c3c/optimized/module.c.ll
@@ -30,13 +32,11 @@
 ; cmake/optimized/cmQtAutoGen.cxx.ll
 ; cmake/optimized/cmSystemTools.cxx.ll
 ; cmake/optimized/digest.c.ll
-; cmake/optimized/ftp.c.ll
 ; cmake/optimized/json_reader.cpp.ll
 ; cmake/optimized/mprintf.c.ll
 ; cmake/optimized/nghttp2_session.c.ll
 ; cmake/optimized/xmlparse.c.ll
 ; cmake/optimized/xmltok.c.ll
-; coreutils-rs/optimized/2g9ijtjos2xwh9zs.ll
 ; cpython/optimized/dictobject.ll
 ; curl/optimized/libcurl_la-digest.ll
 ; curl/optimized/libcurl_la-mprintf.ll
@@ -52,7 +52,6 @@
 ; freetype/optimized/autofit.c.ll
 ; freetype/optimized/bdf.c.ll
 ; freetype/optimized/psaux.c.ll
-; git/optimized/apply.ll
 ; git/optimized/files-backend.ll
 ; git/optimized/pathspec.ll
 ; git/optimized/revision.ll
@@ -85,12 +84,10 @@
 ; linux/optimized/hrtimer.ll
 ; linux/optimized/inet_connection_sock.ll
 ; linux/optimized/interface.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/mon_bin.ll
 ; linux/optimized/mon_text.ll
 ; linux/optimized/nf_nat_masquerade.ll
-; linux/optimized/pcmcia_cis.ll
 ; linux/optimized/read_write.ll
 ; linux/optimized/tty_ioctl.ll
 ; llama.cpp/optimized/grammar-parser.cpp.ll
@@ -110,30 +107,22 @@
 ; llvm/optimized/Compiler.cpp.ll
 ; llvm/optimized/ComputeDependence.cpp.ll
 ; llvm/optimized/Consumed.cpp.ll
-; llvm/optimized/DeadStoreElimination.cpp.ll
 ; llvm/optimized/DeclBase.cpp.ll
 ; llvm/optimized/DeclPrinter.cpp.ll
-; llvm/optimized/EarlyCSE.cpp.ll
 ; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/ExprCXX.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/ExprEngineCXX.cpp.ll
 ; llvm/optimized/ExprMutationAnalyzer.cpp.ll
 ; llvm/optimized/FormatString.cpp.ll
-; llvm/optimized/GVNHoist.cpp.ll
 ; llvm/optimized/IndexBody.cpp.ll
-; llvm/optimized/InterleavedLoadCombinePass.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
 ; llvm/optimized/ItaniumMangle.cpp.ll
 ; llvm/optimized/JSONNodeDumper.cpp.ll
-; llvm/optimized/LICM.cpp.ll
 ; llvm/optimized/LLVMConventionsChecker.cpp.ll
 ; llvm/optimized/LiteralSupport.cpp.ll
-; llvm/optimized/MemCpyOptimizer.cpp.ll
-; llvm/optimized/MemorySSA.cpp.ll
-; llvm/optimized/MemorySSAUpdater.cpp.ll
 ; llvm/optimized/MicrosoftMangle.cpp.ll
-; llvm/optimized/NewGVN.cpp.ll
+; llvm/optimized/ModuleMap.cpp.ll
 ; llvm/optimized/PtrTypesSemantics.cpp.ll
 ; llvm/optimized/Sema.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
@@ -152,7 +141,7 @@
 ; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
-; llvm/optimized/SimpleLoopUnswitch.cpp.ll
+; llvm/optimized/SourceManager.cpp.ll
 ; llvm/optimized/StmtPrinter.cpp.ll
 ; llvm/optimized/TestAfterDivZeroChecker.cpp.ll
 ; llvm/optimized/TextNodeDumper.cpp.ll
@@ -178,6 +167,8 @@
 ; luajit/optimized/minilua.ll
 ; luau/optimized/IrLoweringX64.cpp.ll
 ; luau/optimized/lstrlib.cpp.ll
+; lvgl/optimized/lv_draw_sw_fill.ll
+; lvgl/optimized/lv_fs.ll
 ; minetest/optimized/content_cao.cpp.ll
 ; minetest/optimized/game.cpp.ll
 ; minetest/optimized/l_item.cpp.ll
@@ -207,14 +198,12 @@
 ; mold/optimized/main.cc.X86_64.cc.ll
 ; nanosvg/optimized/nanosvg.ll
 ; nghttp2/optimized/nghttp2_session.c.ll
-; nix/optimized/fromTOML.ll
 ; nix/optimized/lexer-tab.ll
 ; nuklear/optimized/unity.c.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/strutil.cpp.ll
 ; opencv/optimized/persistence_xml.cpp.ll
 ; opencv/optimized/tinyxml2.cpp.ll
-; openjdk/optimized/check_code.ll
 ; openjdk/optimized/hb-ot-name.ll
 ; openjdk/optimized/screencast_pipewire.ll
 ; openjdk/optimized/shenandoahHeap.ll
@@ -236,7 +225,25 @@
 ; openssl/optimized/libtestutil-lib-provider.ll
 ; openssl/optimized/openssl-bin-ca.ll
 ; openssl/optimized/openssl-bin-req.ll
+; openusd/optimized/bboxCache.cpp.ll
+; openusd/optimized/crateData.cpp.ll
+; openusd/optimized/dataSourceMaterial.cpp.ll
+; openusd/optimized/decodeframe.c.ll
+; openusd/optimized/delegate.cpp.ll
+; openusd/optimized/dispatcher.cpp.ll
+; openusd/optimized/flatteningSceneIndex.cpp.ll
+; openusd/optimized/info.cpp.ll
+; openusd/optimized/layerStack.cpp.ll
+; openusd/optimized/mergingSceneIndex.cpp.ll
+; openusd/optimized/namespaceEditor.cpp.ll
+; openusd/optimized/prim.cpp.ll
+; openusd/optimized/primDataSourceOverlayCache.cpp.ll
+; openusd/optimized/primGather.cpp.ll
+; openusd/optimized/renderIndex.cpp.ll
 ; openusd/optimized/stackTrace.cpp.ll
+; openusd/optimized/testUsdStageThreading.cpp.ll
+; openusd/optimized/testUsdThreadedAuthoring.cpp.ll
+; openusd/optimized/testWorkDispatcher.cpp.ll
 ; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/TopologyToLevelSet.cc.ll
 ; ozz-animation/optimized/jsoncpp.cpp.ll
@@ -264,7 +271,6 @@
 ; postgres/optimized/dependencies.ll
 ; postgres/optimized/dict.ll
 ; postgres/optimized/jsonb_gin.ll
-; postgres/optimized/jsonb_op.ll
 ; postgres/optimized/jsonfuncs.ll
 ; postgres/optimized/like.ll
 ; postgres/optimized/mcv.ll
@@ -332,11 +338,9 @@
 ; rocksdb/optimized/builder.cc.ll
 ; rocksdb/optimized/db_impl_write.cc.ll
 ; rocksdb/optimized/error_handler.cc.ll
-; ruby/optimized/ripper.ll
 ; rust-analyzer-rs/optimized/1au8fupciwcmum6.ll
 ; rust-analyzer-rs/optimized/2ajuxklycdgazr2a.ll
 ; rust-analyzer-rs/optimized/357j944nkpwuonjr.ll
-; rust-analyzer-rs/optimized/4vbxd64hrlz3u0mk.ll
 ; rust-analyzer-rs/optimized/58xaix613yc6ngmz.ll
 ; rust-analyzer-rs/optimized/8q1esjraj83sh5t.ll
 ; rust-analyzer-rs/optimized/k5mtltw7nxmadpl.ll
@@ -381,16 +385,21 @@
 ; z3/optimized/upolynomial.cpp.ll
 ; z3/optimized/upolynomial_factorization.cpp.ll
 ; z3/optimized/util.cpp.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/en4jszg1hvtl62im6poo4zhnt.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(ptr %0, i8 %1, ptr %2) #0 {
+define ptr @func0000000000000061(ptr %0, i8 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 4
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 4
   %4 = icmp eq i8 %1, 35
   %5 = select i1 %4, ptr %0, ptr %3
   ret ptr %5
 }
 
-; 25 occurrences:
+; 26 occurrences:
 ; cpython/optimized/_datetimemodule.ll
 ; cpython/optimized/xmlparse.ll
 ; cpython/optimized/xmltok.ll
@@ -399,6 +408,7 @@ entry:
 ; linux/optimized/libata-scsi.ll
 ; linux/optimized/lzo1x_compress.ll
 ; linux/optimized/vsprintf.ll
+; llvm/optimized/CommentLexer.cpp.ll
 ; postgres/optimized/pl_gram.ll
 ; postgres/optimized/preproc.ll
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
@@ -425,6 +435,56 @@ entry:
   ret ptr %5
 }
 
+; 40 occurrences:
+; abseil-cpp/optimized/arg.cc.ll
+; abseil-cpp/optimized/float_conversion.cc.ll
+; cmake/optimized/ftp.c.ll
+; coreutils-rs/optimized/2g9ijtjos2xwh9zs.ll
+; git/optimized/apply.ll
+; jsonnet/optimized/rapidyaml.cpp.ll
+; llvm/optimized/DeadStoreElimination.cpp.ll
+; llvm/optimized/EarlyCSE.cpp.ll
+; llvm/optimized/GVNHoist.cpp.ll
+; llvm/optimized/InterleavedLoadCombinePass.cpp.ll
+; llvm/optimized/LICM.cpp.ll
+; llvm/optimized/MemCpyOptimizer.cpp.ll
+; llvm/optimized/MemorySSA.cpp.ll
+; llvm/optimized/MemorySSAUpdater.cpp.ll
+; llvm/optimized/NewGVN.cpp.ll
+; llvm/optimized/SimpleLoopUnswitch.cpp.ll
+; nix/optimized/fromTOML.ll
+; openjdk/optimized/check_code.ll
+; ruby/optimized/ripper.ll
+; rust-analyzer-rs/optimized/4vbxd64hrlz3u0mk.ll
+; turborepo-rs/optimized/4npj4wsmg2ap1thdgni5ygdc7.ll
+; turborepo-rs/optimized/4w2esflvo3af23i5beiirhnry.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/18cjjdq897fwjf59btw7ls4h5.ll
+; zed-rs/optimized/3gxjnopqjcvfkrlhukk2wsrdt.ll
+; zed-rs/optimized/468dd38yzqjsa1zmcu5rd6jgo.ll
+; zed-rs/optimized/4s3i3gpn7nuv3jdpoq0skrhno.ll
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
+; zed-rs/optimized/6a257z75npqxppetnyj7rxh76.ll
+; zed-rs/optimized/74i1v673pe7qetuqalfjvc8x1.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/7ompx9hnv04717jtdd3ubpjf5.ll
+; zed-rs/optimized/83f7cv59nhkcel85ism08ubeo.ll
+; zed-rs/optimized/8bnapxt4ilkd5y3egr7fzm1sv.ll
+; zed-rs/optimized/8c9m4dxfbx8n642b944htcs78.ll
+; zed-rs/optimized/an9c1nbjiirpzpjk20en0tyzy.ll
+; zed-rs/optimized/bx05yi7k15cz36qdtwh95aj38.ll
+; zed-rs/optimized/cgceu28znx3lfd8ddk7c9uglp.ll
+; zed-rs/optimized/dpj3mwjfm2c61mxrpoi279us4.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000041(ptr %0, i8 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -1
+  %4 = icmp eq i8 %1, 13
+  %5 = select i1 %4, ptr %0, ptr %3
+  ret ptr %5
+}
+
 ; 7 occurrences:
 ; mitsuba3/optimized/assembler.cpp.ll
 ; mitsuba3/optimized/builder.cpp.ll
@@ -434,9 +494,9 @@ entry:
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000028(ptr %0, i8 %1, ptr %2) #0 {
+define ptr @func0000000000000068(ptr %0, i8 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = icmp ugt i8 %1, 30
   %5 = select i1 %4, ptr %0, ptr %3
   ret ptr %5
@@ -454,15 +514,15 @@ entry:
 ; hwloc/optimized/lstopo_no_graphics-lstopo.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002c(ptr %0, i8 %1, ptr %2) #0 {
+define ptr @func000000000000006c(ptr %0, i8 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 288
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 288
   %.not = icmp eq i8 %1, 0
   %4 = select i1 %.not, ptr %3, ptr %0
   ret ptr %4
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; cmake/optimized/parsedate.c.ll
 ; curl/optimized/libcurl_la-parsedate.ll
 ; delta-rs/optimized/1rw3q64nilk4jthd.ll
@@ -470,12 +530,13 @@ entry:
 ; libquic/optimized/prtime.cc.ll
 ; lightgbm/optimized/parser.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
+; luau/optimized/lstrlib.cpp.ll
 ; php/optimized/parse_date.ll
 ; php/optimized/php_pcre.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000024(ptr %0, i8 %1, ptr %2) #0 {
+define ptr @func0000000000000064(ptr %0, i8 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = icmp ult i8 %1, 10
   %5 = select i1 %4, ptr %0, ptr %3
   ret ptr %5
@@ -502,9 +563,9 @@ entry:
 ; luau/optimized/main.cpp.ll
 ; nlohmann_json/optimized/unit.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000026(ptr %0, i8 %1, ptr %2) #0 {
+define ptr @func0000000000000066(ptr %0, i8 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 120
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 120
   %4 = icmp slt i8 %1, 0
   %5 = select i1 %4, ptr %0, ptr %3
   ret ptr %5
@@ -523,55 +584,47 @@ entry:
   ret ptr %5
 }
 
-; 31 occurrences:
-; llvm/optimized/ASTImporter.cpp.ll
-; llvm/optimized/ComputeDependence.cpp.ll
-; llvm/optimized/ModuleMap.cpp.ll
-; llvm/optimized/Sema.cpp.ll
-; llvm/optimized/SemaConcept.cpp.ll
-; llvm/optimized/SemaDecl.cpp.ll
-; llvm/optimized/SemaDeclCXX.cpp.ll
-; llvm/optimized/SemaExprCXX.cpp.ll
-; llvm/optimized/SemaTemplate.cpp.ll
-; llvm/optimized/SemaTemplateDeduction.cpp.ll
-; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
-; llvm/optimized/SemaTemplateInstantiate.cpp.ll
-; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
-; openusd/optimized/bboxCache.cpp.ll
-; openusd/optimized/crateData.cpp.ll
-; openusd/optimized/dataSourceMaterial.cpp.ll
-; openusd/optimized/decodeframe.c.ll
-; openusd/optimized/delegate.cpp.ll
-; openusd/optimized/dispatcher.cpp.ll
-; openusd/optimized/flatteningSceneIndex.cpp.ll
-; openusd/optimized/info.cpp.ll
-; openusd/optimized/layerStack.cpp.ll
-; openusd/optimized/mergingSceneIndex.cpp.ll
-; openusd/optimized/namespaceEditor.cpp.ll
-; openusd/optimized/prim.cpp.ll
-; openusd/optimized/primDataSourceOverlayCache.cpp.ll
-; openusd/optimized/primGather.cpp.ll
-; openusd/optimized/renderIndex.cpp.ll
-; openusd/optimized/testUsdStageThreading.cpp.ll
-; openusd/optimized/testUsdThreadedAuthoring.cpp.ll
-; openusd/optimized/testWorkDispatcher.cpp.ll
+; 11 occurrences:
+; turborepo-rs/optimized/4npj4wsmg2ap1thdgni5ygdc7.ll
+; zed-rs/optimized/3gxjnopqjcvfkrlhukk2wsrdt.ll
+; zed-rs/optimized/468dd38yzqjsa1zmcu5rd6jgo.ll
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
+; zed-rs/optimized/74i1v673pe7qetuqalfjvc8x1.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/83f7cv59nhkcel85ism08ubeo.ll
+; zed-rs/optimized/8bnapxt4ilkd5y3egr7fzm1sv.ll
+; zed-rs/optimized/an9c1nbjiirpzpjk20en0tyzy.ll
+; zed-rs/optimized/cgceu28znx3lfd8ddk7c9uglp.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000031(ptr %0, i8 %1, ptr %2) #0 {
+define ptr @func000000000000004c(ptr %0, i8 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw nuw i8, ptr %2, i64 48
-  %4 = icmp eq i8 %1, 0
-  %5 = select i1 %4, ptr %0, ptr %3
-  ret ptr %5
+  %3 = getelementptr nusw i8, ptr %2, i64 -24
+  %.not = icmp eq i8 %1, -1
+  %4 = select i1 %.not, ptr %3, ptr %0
+  ret ptr %4
 }
 
 ; 2 occurrences:
 ; eastl/optimized/TestString.cpp.ll
 ; linux/optimized/mlme.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i8 %1, ptr %2) #0 {
+define ptr @func000000000000006a(ptr %0, i8 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 3904
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 3904
   %4 = icmp sgt i8 %1, 0
+  %5 = select i1 %4, ptr %0, ptr %3
+  ret ptr %5
+}
+
+; 2 occurrences:
+; eastl/optimized/TestRingBuffer.cpp.ll
+; eastl/optimized/TestVectorMap.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000046(ptr %0, i8 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -128
+  %4 = icmp slt i8 %1, 0
   %5 = select i1 %4, ptr %0, ptr %3
   ret ptr %5
 }

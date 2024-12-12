@@ -1,6 +1,5 @@
 
-; 7 occurrences:
-; lz4/optimized/lz4hc.c.ll
+; 6 occurrences:
 ; nanosvg/optimized/nanosvg.ll
 ; oiio/optimized/strutil.cpp.ll
 ; opencv/optimized/persistence_yml.cpp.ll
@@ -8,9 +7,9 @@
 ; stb/optimized/stb_sprintf.c.ll
 ; zxing/optimized/QRMatrixUtil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000201(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000601(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 1
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 1
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0
   %5 = trunc i64 %4 to i32
@@ -18,14 +17,12 @@ entry:
   ret i1 %6
 }
 
-; 5 occurrences:
-; icu/optimized/ucnvmbcs.ll
-; ninja/optimized/depfile_parser.cc.ll
+; 3 occurrences:
 ; openssl/optimized/libcrypto-lib-pem_lib.ll
 ; openssl/optimized/libcrypto-shlib-pem_lib.ll
 ; openssl/optimized/loader_attic-dso-e_loader_attic.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000020a(i64 %0, ptr %1) #0 {
+define i1 @func000000000000040a(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr nusw i8, ptr %1, i64 -11
   %3 = ptrtoint ptr %2 to i64
@@ -68,9 +65,9 @@ entry:
 ; yosys/optimized/fstapi.ll
 ; zxing/optimized/ODCode128Reader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000206(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000606(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 1
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 1
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0
   %5 = trunc i64 %4 to i32
@@ -83,7 +80,7 @@ entry:
 ; recastnavigation/optimized/fastlz.c.ll
 ; yosys/optimized/fastlz.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000204(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000404(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr nusw i8, ptr %1, i64 -1
   %3 = ptrtoint ptr %2 to i64
@@ -97,13 +94,27 @@ entry:
 ; recastnavigation/optimized/fastlz.c.ll
 ; yosys/optimized/fastlz.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000208(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000408(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr nusw i8, ptr %1, i64 -3
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %0
   %5 = trunc i64 %4 to i32
   %6 = icmp ugt i32 %5, 262
+  ret i1 %6
+}
+
+; 2 occurrences:
+; icu/optimized/ucnvmbcs.ll
+; ninja/optimized/depfile_parser.cc.ll
+; Function Attrs: nounwind
+define i1 @func000000000000060a(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 1
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %0
+  %5 = trunc i64 %4 to i32
+  %6 = icmp sgt i32 %5, 2
   ret i1 %6
 }
 
@@ -117,6 +128,19 @@ entry:
   %4 = sub i64 %3, %0
   %5 = and i64 %4, 4294967294
   %6 = icmp ne i64 %5, 0
+  ret i1 %6
+}
+
+; 1 occurrences:
+; lz4/optimized/lz4hc.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000401(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw i8, ptr %1, i64 -2
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %0
+  %5 = trunc i64 %4 to i32
+  %6 = icmp eq i32 %5, 0
   ret i1 %6
 }
 

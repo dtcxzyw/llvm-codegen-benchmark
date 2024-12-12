@@ -14,7 +14,7 @@ func0000000000000002:                   # @func0000000000000002
 	cmovnel	%esi, %eax
 	orl	$4, %eax
 	retq
-func0000000000000023:                   # @func0000000000000023
+func0000000000000043:                   # @func0000000000000043
 	orl	%edx, %esi
 	movl	%esi, %eax
 	orl	$127, %eax
@@ -22,7 +22,7 @@ func0000000000000023:                   # @func0000000000000023
 	cmovnel	%esi, %eax
 	orl	$1048448, %eax                  # imm = 0xFFF80
 	retq
-func0000000000000074:                   # @func0000000000000074
+func00000000000000d4:                   # @func00000000000000d4
 	leal	201326592(%rsi,%rdx), %eax
 	movl	%esi, %ecx
 	orl	%edx, %ecx

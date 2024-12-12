@@ -1,8 +1,8 @@
 
 ; 7 occurrences:
-; eastl/optimized/TestMemory.cpp.ll
 ; hermes/optimized/BytecodeDataProvider.cpp.ll
 ; libwebp/optimized/webp_enc.c.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; nix/optimized/serialise.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; raylib/optimized/rtextures.c.ll

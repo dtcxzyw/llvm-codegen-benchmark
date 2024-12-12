@@ -1,9 +1,10 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; eastl/optimized/TestBitVector.cpp.ll
 ; lief/optimized/asn1write.c.ll
 ; openssl/optimized/libdefault-lib-tls1_prf.ll
 ; typst-rs/optimized/1mrwywpkq81cby93.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:

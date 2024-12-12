@@ -17,6 +17,17 @@ func0000000000000005:                   # @func0000000000000005
 	or	a0, a0, a2
 	addi	a0, a0, 2
 	ret
+func0000000000000003:                   # @func0000000000000003
+	srli	a2, a2, 52
+	slli	a2, a2, 52
+	or	a0, a0, a2
+	lui	a2, 4095
+	slli	a2, a2, 28
+	and	a1, a1, a2
+	or	a0, a0, a1
+	lui	a1, 256
+	or	a0, a0, a1
+	ret
 func0000000000000000:                   # @func0000000000000000
 	li	a3, 1
 	slli	a4, a3, 59
@@ -45,17 +56,4 @@ func0000000000000006:                   # @func0000000000000006
 	and	a1, a1, a3
 	or	a0, a0, a1
 	ori	a0, a0, 64
-	ret
-func0000000000000003:                   # @func0000000000000003
-	lui	a3, 65535
-	slli	a3, a3, 12
-	and	a2, a2, a3
-	lui	a3, 16383
-	slli	a3, a3, 36
-	and	a1, a1, a3
-	li	a3, 1
-	slli	a3, a3, 62
-	or	a0, a0, a2
-	or	a1, a1, a3
-	or	a0, a0, a1
 	ret

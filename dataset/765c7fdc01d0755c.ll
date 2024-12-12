@@ -1,5 +1,5 @@
 
-; 86 occurrences:
+; 84 occurrences:
 ; cmake/optimized/smb.c.ll
 ; curl/optimized/libcurl_la-smb.ll
 ; hdf5/optimized/H5B.c.ll
@@ -23,8 +23,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll

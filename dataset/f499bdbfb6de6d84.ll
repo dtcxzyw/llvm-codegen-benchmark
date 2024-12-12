@@ -18,7 +18,7 @@ entry:
 ; velox/optimized/Filter.cpp.ll
 ; velox/optimized/JsonType.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000f1(i64 %0, i32 %1, i64 %2) #0 {
+define i64 @func00000000000001e1(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 2
   %4 = add nuw nsw i64 %3, 16
@@ -30,7 +30,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/snapmgr.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000fa(i64 %0, i32 %1, i64 %2) #0 {
+define i64 @func00000000000001ea(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 2
   %4 = add nuw nsw i64 %3, 120

@@ -1,11 +1,10 @@
 
-; 30 occurrences:
+; 29 occurrences:
 ; flac/optimized/options.c.ll
 ; hermes/optimized/ItaniumDemangle.cpp.ll
 ; icu/optimized/ufmt_cmn.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; linux/optimized/tdls.ll
-; linux/optimized/uthex.ll
 ; llvm/optimized/ItaniumDemangle.cpp.ll
 ; llvm/optimized/ItaniumManglingCanonicalizer.cpp.ll
 ; mold/optimized/cmdline.cc.ALPHA.cc.ll
@@ -59,6 +58,17 @@ entry:
   ret i8 %3
 }
 
+; 2 occurrences:
+; boost/optimized/parser_utils.ll
+; cpython/optimized/_codecs_jp.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000004(i8 %0, i8 %1) #0 {
+entry:
+  %2 = add nsw i8 %0, %1
+  %3 = shl i8 %2, 3
+  ret i8 %3
+}
+
 ; 1 occurrences:
 ; ozz-animation/optimized/animation_builder.cc.ll
 ; Function Attrs: nounwind
@@ -66,16 +76,6 @@ define i8 @func000000000000000e(i8 %0, i8 %1) #0 {
 entry:
   %2 = add nuw nsw i8 %0, %1
   %3 = shl nuw i8 %2, 6
-  ret i8 %3
-}
-
-; 1 occurrences:
-; cpython/optimized/_codecs_jp.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000004(i8 %0, i8 %1) #0 {
-entry:
-  %2 = add nsw i8 %0, %1
-  %3 = shl i8 %2, 1
   ret i8 %3
 }
 

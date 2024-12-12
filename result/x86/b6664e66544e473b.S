@@ -1,18 +1,34 @@
-func0000000000000381:                   # @func0000000000000381
+func0000000000000d01:                   # @func0000000000000d01
 	cmpl	$4, %edx
 	sete	%cl
 	cmpq	%rsi, %rdi
 	seta	%al
 	andb	%cl, %al
 	retq
-func000000000000011c:                   # @func000000000000011c
+func0000000000000024:                   # @func0000000000000024
+	addl	$-3, %edx
+	cmpl	$10, %edx
+	setb	%cl
+	cmpq	%rsi, %rdi
+	sete	%al
+	andb	%cl, %al
+	retq
+func000000000000042c:                   # @func000000000000042c
 	cmpl	$1, %edx
 	sete	%cl
 	cmpq	%rsi, %rdi
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000085:                   # @func0000000000000085
+	addl	$-2, %edx
+	cmpl	$35, %edx
+	setb	%cl
+	cmpq	%rsi, %rdi
+	setbe	%al
+	andb	%cl, %al
+	retq
+func0000000000000184:                   # @func0000000000000184
 	decl	%edx
 	cmpl	$4, %edx
 	setb	%cl
@@ -20,34 +36,10 @@ func00000000000000c4:                   # @func00000000000000c4
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000003cc:                   # @func00000000000003cc
+func0000000000000d8c:                   # @func0000000000000d8c
 	cmpl	$63, %edx
 	setne	%cl
 	cmpq	%rsi, %rdi
 	setne	%al
-	andb	%cl, %al
-	retq
-func0000000000000141:                   # @func0000000000000141
-	addl	$-30, %edx
-	cmpl	$11, %edx
-	setb	%cl
-	cmpq	%rsi, %rdi
-	sete	%al
-	andb	%cl, %al
-	retq
-func0000000000000114:                   # @func0000000000000114
-	addl	$-31, %edx
-	cmpl	$6, %edx
-	setb	%cl
-	cmpq	%rsi, %rdi
-	sete	%al
-	andb	%cl, %al
-	retq
-func0000000000000014:                   # @func0000000000000014
-	addl	$-750, %edx                     # imm = 0xFD12
-	cmpl	$-769, %edx                     # imm = 0xFCFF
-	setb	%cl
-	cmpq	%rsi, %rdi
-	sete	%al
 	andb	%cl, %al
 	retq

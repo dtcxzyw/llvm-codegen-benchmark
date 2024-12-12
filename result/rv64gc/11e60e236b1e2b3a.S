@@ -21,3 +21,17 @@ func0000000000000004:                   # @func0000000000000004
 	fmul.s	fa0, fa5, fa0
 .LBB1_2:                                # %entry
 	ret
+.LCPI2_0:
+	.word	0xc20a27b5                      # float -34.5387764
+func0000000000000005:                   # @func0000000000000005
+	fmv.w.x	fa5, zero
+	fle.s	a0, fa1, fa5
+	beqz	a0, .LBB2_2
+	lui	a0, %hi(.LCPI2_0)
+	flw	fa0, %lo(.LCPI2_0)(a0)
+	ret
+.LBB2_2:
+	lui	a0, 262656
+	fmv.w.x	fa5, a0
+	fmul.s	fa0, fa0, fa5
+	ret

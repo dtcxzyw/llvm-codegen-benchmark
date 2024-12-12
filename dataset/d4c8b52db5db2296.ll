@@ -108,7 +108,7 @@ define i32 @func0000000000000015(i32 %0, i8 %1) #0 {
 entry:
   %2 = xor i8 %1, -1
   %3 = sext i8 %2 to i32
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 

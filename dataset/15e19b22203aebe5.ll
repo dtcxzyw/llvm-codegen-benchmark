@@ -1,5 +1,5 @@
 
-; 59 occurrences:
+; 58 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; cmake/optimized/archive_write_set_format_pax.c.ll
 ; cmake/optimized/lz_encoder.c.ll
@@ -11,6 +11,7 @@
 ; linux/optimized/services.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/ASTReader.cpp.ll
+; llvm/optimized/Attributes.cpp.ll
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; llvm/optimized/CGStmt.cpp.ll
 ; llvm/optimized/Core.cpp.ll
@@ -21,7 +22,6 @@
 ; llvm/optimized/Legalizer.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/RISCVISAInfo.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RewriteObjC.cpp.ll
 ; llvm/optimized/TarWriter.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
@@ -48,7 +48,6 @@
 ; qemu/optimized/nbd_client.c.ll
 ; qemu/optimized/virtio-9p-client.c.ll
 ; rocksdb/optimized/memtable.cc.ll
-; wasmtime-rs/optimized/1cnnneruo9nr1th2.ll
 ; wireshark/optimized/catapult_dct2000.c.ll
 ; wireshark/optimized/lemon.c.ll
 ; wireshark/optimized/log3gpp.c.ll

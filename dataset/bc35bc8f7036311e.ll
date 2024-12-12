@@ -11,6 +11,17 @@ entry:
   ret i16 %4
 }
 
+; 1 occurrences:
+; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000008(i1 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw i64 %1 to i16
+  %3 = select i1 %0, i16 -2, i16 -1
+  %4 = add i16 %3, %2
+  ret i16 %4
+}
+
 ; 2 occurrences:
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; icu/optimized/ufmt_cmn.ll

@@ -106,11 +106,15 @@ entry:
   ret double %5
 }
 
-; 28 occurrences:
+; 32 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; casadi/optimized/idas.c.ll
 ; graphviz/optimized/shapes.c.ll
 ; gromacs/optimized/dlaebz.cpp.ll
-; gromacs/optimized/dlapy2.cpp.ll
 ; gromacs/optimized/dlarrbx.cpp.ll
 ; gromacs/optimized/dlarrex.cpp.ll
 ; gromacs/optimized/dlas2.cpp.ll
@@ -144,8 +148,7 @@ entry:
   ret double %5
 }
 
-; 16 occurrences:
-; openblas/optimized/ddisna.c.ll
+; 14 occurrences:
 ; openblas/optimized/dgegv.c.ll
 ; openblas/optimized/dhgeqz.c.ll
 ; openblas/optimized/dlaebz.c.ll
@@ -159,14 +162,13 @@ entry:
 ; openblas/optimized/dlasd2.c.ll
 ; openblas/optimized/dlasd7.c.ll
 ; openblas/optimized/dstebz.c.ll
-; openblas/optimized/dstein.c.ll
 ; openblas/optimized/dtgevc.c.ll
 ; Function Attrs: nounwind
 define double @func000000000000000c(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp oge double %1, %2
   %4 = select i1 %3, double %1, double %2
-  %5 = fmul double %4, %0
+  %5 = fmul double %0, %4
   ret double %5
 }
 

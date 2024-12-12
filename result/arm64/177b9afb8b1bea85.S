@@ -1,24 +1,27 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	movi	v3.16b, #1
-	ushl	v2.16b, v3.16b, v2.16b
-	bic	v1.16b, v1.16b, v2.16b
-	orr	v0.16b, v1.16b, v0.16b
+	mov	w8, #1                          // =0x1
+                                        // kill: def $w2 killed $w2 def $x2
+	lsl	w8, w8, w2
+	bic	w8, w1, w8
+	orr	w0, w8, w0
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	movi	v3.2d, #0xffffffffffffffff
-	ushl	v2.16b, v3.16b, v2.16b
-	bic	v1.16b, v1.16b, v2.16b
-	orr	v0.16b, v1.16b, v0.16b
+	mov	w8, #-1                         // =0xffffffff
+                                        // kill: def $w2 killed $w2 def $x2
+	lsl	w8, w8, w2
+	bic	w8, w1, w8
+	orr	w0, w0, w8
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	movi	v3.16b, #63
-	ushl	v2.16b, v3.16b, v2.16b
-	bic	v1.16b, v1.16b, v2.16b
-	orr	v0.16b, v1.16b, v0.16b
+	mov	w8, #63                         // =0x3f
+                                        // kill: def $w2 killed $w2 def $x2
+	lsl	w8, w8, w2
+	bic	w8, w1, w8
+	orr	w0, w8, w0
 	ret
                                         // -- End function

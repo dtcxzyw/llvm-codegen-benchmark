@@ -4,5 +4,5 @@ func0000000000000001:                   # @func0000000000000001
 	mv	a0, a1
 	ret
 .LBB0_2:
-	srliw	a0, a2, 3
+	srliw	a0, a2, 5
 	ret

@@ -43,12 +43,12 @@ func0000000000000005:                   # @func0000000000000005
 	vpor	%ymm1, %ymm2, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
-func0000000000000000:                   # @func0000000000000000
-	vpsllq	$32, %ymm2, %ymm2
+func0000000000000016:                   # @func0000000000000016
+	vpsllq	$16, %ymm2, %ymm2
 	vpor	%ymm1, %ymm2, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000000:                   # @func0000000000000000
 	vpsllq	$32, %ymm2, %ymm2
 	vpor	%ymm1, %ymm2, %ymm1
 	vpsubq	%ymm1, %ymm0, %ymm0

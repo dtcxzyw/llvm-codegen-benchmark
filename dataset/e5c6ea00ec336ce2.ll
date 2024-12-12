@@ -51,8 +51,8 @@
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.not = xor i64 %1, -1
-  %3 = or i64 %.not, %2
-  %4 = and i64 %3, %0
+  %3 = or i64 %2, %.not
+  %4 = and i64 %0, %3
   ret i64 %4
 }
 

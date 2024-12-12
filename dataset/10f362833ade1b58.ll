@@ -6,7 +6,7 @@
 ; quantlib/optimized/extendedblackvariancesurface.ll
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
   %4 = mul i64 %0, %1
@@ -51,7 +51,7 @@ entry:
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = mul i64 %0, %1
@@ -84,7 +84,7 @@ entry:
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = mul i64 %0, %1
@@ -112,7 +112,7 @@ entry:
 ; openusd/optimized/patchTableFactory.cpp.ll
 ; xgboost/optimized/multi_target_tree_model.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = mul nsw i64 %0, %1
@@ -140,7 +140,7 @@ entry:
 ; openusd/optimized/patchTableFactory.cpp.ll
 ; xgboost/optimized/multi_target_tree_model.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = mul nsw i64 %0, %1
@@ -152,7 +152,7 @@ entry:
 ; llama.cpp/optimized/llama.cpp.ll
 ; oiio/optimized/sgiinput.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
   %4 = mul nuw nsw i64 %0, %1
@@ -164,7 +164,7 @@ entry:
 ; llama.cpp/optimized/llama.cpp.ll
 ; oiio/optimized/sgiinput.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000e4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
   %4 = mul nuw nsw i64 %0, %1
@@ -177,7 +177,7 @@ entry:
 ; gromacs/optimized/mrcdensitymap.cpp.ll
 ; gromacs/optimized/tngio.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 2
   %4 = mul nsw i64 %0, %1

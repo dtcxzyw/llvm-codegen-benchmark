@@ -7,7 +7,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 -1, %1
   %.not = xor i32 %2, -1
-  %3 = and i32 %.not, %0
+  %3 = and i32 %0, %.not
   ret i32 %3
 }
 
@@ -18,7 +18,7 @@ define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 -1, %1
   %.not = xor i32 %2, -1
-  %3 = and i32 %.not, %0
+  %3 = and i32 %0, %.not
   ret i32 %3
 }
 
@@ -29,7 +29,7 @@ define i32 @func000000000000000d(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 -1, %1
   %.not = xor i32 %2, -1
-  %3 = and i32 %.not, %0
+  %3 = and i32 %0, %.not
   ret i32 %3
 }
 

@@ -1,8 +1,3 @@
-func0000000000000013:                   # @func0000000000000013
-	zext.h	a1, a1
-	mul	a0, a0, a1
-	srliw	a0, a0, 20
-	ret
 func0000000000000012:                   # @func0000000000000012
 	zext.h	a1, a1
 	mul	a0, a0, a1
@@ -17,6 +12,11 @@ func000000000000001b:                   # @func000000000000001b
 	zext.h	a1, a1
 	mul	a0, a0, a1
 	srliw	a0, a0, 13
+	ret
+func0000000000000013:                   # @func0000000000000013
+	zext.h	a1, a1
+	mul	a0, a0, a1
+	srliw	a0, a0, 20
 	ret
 func0000000000000018:                   # @func0000000000000018
 	zext.h	a1, a1

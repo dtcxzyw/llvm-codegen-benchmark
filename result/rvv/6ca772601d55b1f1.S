@@ -16,7 +16,7 @@ func000000000000000a:                   # @func000000000000000a
 	vsub.vv	v10, v12, v10
 	vmslt.vv	v0, v8, v10
 	ret
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v12, v12, 8
 	vsub.vv	v10, v12, v10

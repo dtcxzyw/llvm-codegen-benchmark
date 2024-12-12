@@ -59,7 +59,7 @@ entry:
 ; z3/optimized/polynomial.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = select i1 %0, i32 %1, i32 %2
@@ -81,7 +81,7 @@ entry:
 ; z3/optimized/sat_smt_solver.cpp.ll
 ; z3/optimized/sat_solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = select i1 %0, i32 %1, i32 %2
@@ -102,7 +102,7 @@ entry:
 ; z3/optimized/theory_lra.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = select i1 %0, i32 %1, i32 %2
@@ -114,7 +114,7 @@ entry:
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; z3/optimized/lar_solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i1 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = select i1 %0, i32 %1, i32 %2
@@ -125,7 +125,7 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i1 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = select i1 %0, i32 %1, i32 %2

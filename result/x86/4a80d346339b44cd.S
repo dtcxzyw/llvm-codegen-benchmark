@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	incq	%rdx
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdx
@@ -6,7 +6,7 @@ func0000000000000011:                   # @func0000000000000011
 	cmpq	%rdi, %rax
 	sete	%al
 	retq
-func0000000000000111:                   # @func0000000000000111
+func0000000000000421:                   # @func0000000000000421
 	incq	%rdx
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdx

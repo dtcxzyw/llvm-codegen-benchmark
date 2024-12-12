@@ -5,7 +5,7 @@
 ; opencv/optimized/stereo_binary_bm.cpp.ll
 ; redis/optimized/redis-cli.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000046(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 3
   %3 = sdiv i32 %0, %2
@@ -20,7 +20,7 @@ entry:
 ; gromacs/optimized/settle.cpp.ll
 ; opencv/optimized/sift.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000004a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = sdiv i32 %0, %2
@@ -32,7 +32,7 @@ entry:
 ; postgres/optimized/planner.ll
 ; postgres/optimized/refint.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000086(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw i32 %1, 1
   %3 = sdiv i32 %0, %2
@@ -43,7 +43,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/chessboard.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000ca(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %1, 1
   %3 = sdiv i32 %0, %2

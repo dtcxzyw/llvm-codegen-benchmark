@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	sext.w	a1, a1
 	li	a2, 1
 	andi	a0, a0, 1
@@ -14,7 +14,7 @@ func0000000000000011:                   # @func0000000000000011
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
-func0000000000000064:                   # @func0000000000000064
+func00000000000000d4:                   # @func00000000000000d4
 	sext.w	a3, a1
 	lui	a4, 4096
 	mv	a2, a0
@@ -37,7 +37,7 @@ func0000000000000064:                   # @func0000000000000064
 .LBB1_6:
 	li	a0, 2
 	ret
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	mv	a2, a0
 	sext.w	a1, a1
 	li	a0, 4
@@ -54,76 +54,126 @@ func0000000000000088:                   # @func0000000000000088
 .LBB2_4:
 	li	a0, 8
 	ret
-func0000000000000044:                   # @func0000000000000044
+func0000000000000146:                   # @func0000000000000146
+	sext.w	a3, a1
+	li	a4, -99
+	andi	a2, a0, 1
+	bge	a3, a4, .LBB3_2
+	li	a0, 6
+	bnez	a2, .LBB3_3
+	j	.LBB3_4
+.LBB3_2:
+	not	a0, a1
+	srliw	a0, a0, 31
+	xori	a0, a0, 5
+	beqz	a2, .LBB3_4
+.LBB3_3:
+	li	a0, 5
+.LBB3_4:                                # %entry
+	ret
+func0000000000000318:                   # @func0000000000000318
+	sext.w	a2, a1
+	li	a3, 99
+	andi	a1, a0, 1
+	bgeu	a3, a2, .LBB4_2
+	li	a0, 5
+	bnez	a1, .LBB4_3
+	j	.LBB4_4
+.LBB4_2:
+	sltiu	a0, a2, 10
+	xori	a0, a0, 1
+	addi	a0, a0, 3
+	beqz	a1, .LBB4_4
+.LBB4_3:
+	li	a0, 6
+.LBB4_4:                                # %entry
+	ret
+func0000000000000084:                   # @func0000000000000084
 	sext.w	a2, a1
 	li	a3, 17
 	mv	a1, a0
-	bltu	a2, a3, .LBB3_2
+	bltu	a2, a3, .LBB5_2
 	li	a0, 8
 	li	a3, 5
 	andi	a1, a1, 1
-	bltu	a2, a3, .LBB3_3
-	j	.LBB3_4
-.LBB3_2:
+	bltu	a2, a3, .LBB5_3
+	j	.LBB5_4
+.LBB5_2:
 	li	a0, 4
 	li	a3, 5
 	andi	a1, a1, 1
-	bgeu	a2, a3, .LBB3_4
-.LBB3_3:                                # %entry
+	bgeu	a2, a3, .LBB5_4
+.LBB5_3:                                # %entry
 	li	a0, 2
-.LBB3_4:                                # %entry
-	bnez	a1, .LBB3_6
+.LBB5_4:                                # %entry
+	bnez	a1, .LBB5_6
 	ret
-.LBB3_6:
+.LBB5_6:
 	li	a0, 1
 	ret
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000014a:                   # @func000000000000014a
 	mv	a2, a0
 	sext.w	a1, a1
 	li	a3, 1
 	lui	a0, 1
-	blt	a3, a1, .LBB4_2
+	blt	a3, a1, .LBB6_2
 	addiw	a0, a0, -2007
 	andi	a2, a2, 1
 	li	a4, 6
 	lui	a3, 3
-	blt	a4, a1, .LBB4_3
-	j	.LBB4_4
-.LBB4_2:
+	blt	a4, a1, .LBB6_3
+	j	.LBB6_4
+.LBB6_2:
 	addiw	a0, a0, -1448
 	andi	a2, a2, 1
 	li	a4, 6
 	lui	a3, 3
-	bge	a4, a1, .LBB4_4
-.LBB4_3:                                # %entry
+	bge	a4, a1, .LBB6_4
+.LBB6_3:                                # %entry
 	addiw	a0, a3, 1544
-.LBB4_4:                                # %entry
-	bnez	a2, .LBB4_6
+.LBB6_4:                                # %entry
+	bnez	a2, .LBB6_6
 	ret
-.LBB4_6:
+.LBB6_6:
 	addiw	a0, a3, 1533
 	ret
-func0000000000000041:                   # @func0000000000000041
+func0000000000000294:                   # @func0000000000000294
+	srliw	a3, a1, 11
+	andi	a2, a0, 1
+	bnez	a3, .LBB7_2
+	li	a0, 2
+	bnez	a2, .LBB7_3
+	j	.LBB7_4
+.LBB7_2:
+	srliw	a0, a1, 16
+	snez	a0, a0
+	addi	a0, a0, 3
+	beqz	a2, .LBB7_4
+.LBB7_3:
+	li	a0, 1
+.LBB7_4:                                # %entry
+	ret
+func0000000000000081:                   # @func0000000000000081
 	mv	a2, a0
 	sext.w	a3, a1
 	li	a0, 10
 	lui	a1, 1
-	bltu	a3, a0, .LBB5_2
+	bltu	a3, a0, .LBB8_2
 	addiw	a0, a1, -782
 	li	a4, 8
 	andi	a2, a2, 1
-	beq	a3, a4, .LBB5_3
-	j	.LBB5_4
-.LBB5_2:
+	beq	a3, a4, .LBB8_3
+	j	.LBB8_4
+.LBB8_2:
 	addiw	a0, a1, -735
 	li	a4, 8
 	andi	a2, a2, 1
-	bne	a3, a4, .LBB5_4
-.LBB5_3:                                # %entry
+	bne	a3, a4, .LBB8_4
+.LBB8_3:                                # %entry
 	addiw	a0, a1, -819
-.LBB5_4:                                # %entry
-	bnez	a2, .LBB5_6
+.LBB8_4:                                # %entry
+	bnez	a2, .LBB8_6
 	ret
-.LBB5_6:
+.LBB8_6:
 	addiw	a0, a1, -849
 	ret

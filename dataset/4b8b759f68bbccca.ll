@@ -1,5 +1,6 @@
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/to_chars.ll
 ; cpython/optimized/crt.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; qemu/optimized/hw_vfio_common.c.ll
@@ -8,12 +9,24 @@
 define i128 @func0000000000000000(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = zext i64 %3 to i128
   ret i128 %4
 }
 
-; 100 occurrences:
+; 1 occurrences:
+; qemu/optimized/hw_virtio_vhost-shadow-virtqueue.c.ll
+; Function Attrs: nounwind
+define i128 @func0000000000000002(i64 %0, i1 %1) #0 {
+entry:
+  %2 = zext i1 %1 to i64
+  %3 = add nsw i64 %0, %2
+  %4 = zext i64 %3 to i128
+  ret i128 %4
+}
+
+; 101 occurrences:
+; boost/optimized/to_chars.ll
 ; cpython/optimized/basearith.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
@@ -118,8 +131,19 @@ entry:
 define i128 @func0000000000000004(i64 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i64
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   %4 = zext i64 %3 to i128
+  ret i128 %4
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i128 @func0000000000000007(i64 %0, i1 %1) #0 {
+entry:
+  %2 = zext i1 %1 to i64
+  %3 = add nuw nsw i64 %0, %2
+  %4 = zext nneg i64 %3 to i128
   ret i128 %4
 }
 

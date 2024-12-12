@@ -84,8 +84,9 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; hdf5/optimized/H5HFcache.c.ll
+; linux/optimized/rc80211_minstrel_ht.ll
 ; postgres/optimized/multixact.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000007f(i32 %0, i32 %1) #0 {

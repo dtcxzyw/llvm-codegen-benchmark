@@ -1,3 +1,9 @@
+func0000000000000000:                   # @func0000000000000000
+	movl	%edi, %eax
+	shll	$20, %esi
+	orl	$1072693248, %eax               # imm = 0x3FF00000
+	subl	%esi, %eax
+	retq
 func000000000000001a:                   # @func000000000000001a
 	movl	%edi, %eax
 	shll	$23, %esi

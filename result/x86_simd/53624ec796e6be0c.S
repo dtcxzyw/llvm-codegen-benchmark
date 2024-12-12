@@ -12,7 +12,7 @@ func0000000000000000:                   # @func0000000000000000
 	retq
 func0000000000000002:                   # @func0000000000000002
 	vpmulld	%ymm2, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000003:                   # @func0000000000000003
 	vpmulld	%ymm2, %ymm1, %ymm1

@@ -17,14 +17,15 @@ entry:
   ret i32 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/gregorian.ll
 ; openusd/optimized/loopPatchBuilder.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0) #0 {
 entry:
   %1 = freeze i32 %0
-  %2 = add nsw i32 %1, 2
-  %3 = srem i32 %2, 6
+  %2 = add nsw i32 %1, 1900
+  %3 = srem i32 %2, 400
   ret i32 %3
 }
 

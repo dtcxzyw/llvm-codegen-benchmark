@@ -29,21 +29,12 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/hw_display_virtio-gpu.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 16
   %3 = shl nsw i32 %0, 16
   %4 = icmp slt i32 %3, %2
   ret i1 %4
-}
-
-; 1 occurrences:
-; qemu/optimized/hw_net_ne2000.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000f4(i32 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ult i32 %0, %1
-  ret i1 %2
 }
 
 ; 3 occurrences:
@@ -62,7 +53,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/hw_block_pflash_cfi01.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000006a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 3
   %3 = shl nuw nsw i32 %0, 4
@@ -73,7 +64,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/awt_ImagingLib.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000e6(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %0, %1
   ret i1 %2
@@ -90,7 +81,7 @@ entry:
 ; openjdk/optimized/mlib_c_ImageAffine_BL_U16.ll
 ; openjdk/optimized/mlib_c_ImageAffine_NN.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %0, %1
   ret i1 %2
@@ -101,7 +92,7 @@ entry:
 ; abc/optimized/wlcNdr.c.ll
 ; openjdk/optimized/splashscreen_gfx_impl.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000aa(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 2
   %3 = shl nsw i32 %0, 3
@@ -112,7 +103,7 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i32 %0, i32 %1) #0 {
+define i1 @func00000000000001e1(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 1
   %3 = shl nuw nsw i32 %0, 2
@@ -126,13 +117,13 @@ entry:
 ; opencv/optimized/degeneracy.cpp.ll
 ; openusd/optimized/planar_functions.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %0, %1
   ret i1 %2
 }
 
-; 288 occurrences:
+; 287 occurrences:
 ; hermes/optimized/BigIntSupport.cpp.ll
 ; libjpeg-turbo/optimized/jdmaster.c.ll
 ; linux/optimized/netdev.ll
@@ -174,7 +165,6 @@ entry:
 ; z3/optimized/bv_solver.cpp.ll
 ; z3/optimized/bvarray2uf_rewriter.cpp.ll
 ; z3/optimized/char_decl_plugin.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/cofactor_elim_term_ite.cpp.ll
 ; z3/optimized/collect_occs.cpp.ll
 ; z3/optimized/core_solver_pretty_printer.cpp.ll
@@ -448,7 +438,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/color_yuv.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000086(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 1
   %3 = shl i32 %0, 1
@@ -459,7 +449,7 @@ entry:
 ; 1 occurrences:
 ; graphviz/optimized/pack.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i32 %0, i32 %1) #0 {
+define i1 @func000000000000014a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 1
   %3 = shl nuw i32 %0, 1

@@ -24,12 +24,6 @@ func0000000000000005:                   # @func0000000000000005
 	vmfle.vv	v24, v8, v16
 	vmnot.m	v0, v24
 	ret
-func000000000000000c:                   # @func000000000000000c
-	vsetivli	zero, 16, e64, m8, ta, ma
-	vle64.v	v24, (a0)
-	vfsub.vv	v16, v16, v24
-	vmfle.vv	v0, v16, v8
-	ret
 func000000000000000d:                   # @func000000000000000d
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
@@ -37,11 +31,17 @@ func000000000000000d:                   # @func000000000000000d
 	vmflt.vv	v24, v8, v16
 	vmnot.m	v0, v24
 	ret
+func000000000000000c:                   # @func000000000000000c
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vle64.v	v24, (a0)
+	vfsub.vv	v16, v16, v24
+	vmfle.vv	v0, v16, v8
+	ret
 func0000000000000008:                   # @func0000000000000008
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vle64.v	v24, (a0)
 	vfsub.vv	v16, v16, v24
-	vmfeq.vv	v0, v16, v8
+	vmfeq.vv	v0, v8, v16
 	ret
 func000000000000000a:                   # @func000000000000000a
 	vsetivli	zero, 16, e64, m8, ta, ma
@@ -55,7 +55,7 @@ func0000000000000001:                   # @func0000000000000001
 	vfsub.vv	v16, v16, v24
 	vmfne.vv	v24, v16, v16
 	vmfne.vv	v16, v8, v8
-	vmor.mm	v0, v24, v16
+	vmor.mm	v0, v16, v24
 	ret
 func000000000000000b:                   # @func000000000000000b
 	vsetivli	zero, 16, e64, m8, ta, ma

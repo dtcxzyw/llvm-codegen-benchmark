@@ -25,6 +25,6 @@ func000000000000002f:                   # @func000000000000002f
 	ret
 func000000000000000f:                   # @func000000000000000f
 	add	a1, a1, a2
-	mulw	a0, a1, a0
+	mulw	a0, a0, a1
 	slli	a0, a0, 2
 	ret

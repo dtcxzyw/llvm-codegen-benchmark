@@ -1,5 +1,5 @@
 
-; 366 occurrences:
+; 367 occurrences:
 ; abc/optimized/abcExtract.c.ll
 ; abc/optimized/abcIvy.c.ll
 ; abc/optimized/abcSpeedup.c.ll
@@ -22,6 +22,7 @@
 ; abc/optimized/lpkMap.c.ll
 ; abc/optimized/nwkSpeedup.c.ll
 ; abc/optimized/saigRetStep.c.ll
+; abc/optimized/sswSat.c.ll
 ; bdwgc/optimized/gc.c.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; freetype/optimized/cff.c.ll

@@ -1,5 +1,5 @@
 
-; 228 occurrences:
+; 222 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; abc/optimized/amapRule.c.ll
@@ -14,7 +14,6 @@
 ; abc/optimized/mpmPre.c.ll
 ; abc/optimized/msatClause.c.ll
 ; abc/optimized/rwrLib.c.ll
-; abc/optimized/rwtUtil.c.ll
 ; assimp/optimized/BlenderDNA.cpp.ll
 ; c3c/optimized/types.c.ll
 ; clamav/optimized/bytecode_api.c.ll
@@ -32,7 +31,6 @@
 ; glslang/optimized/hlslGrammar.cpp.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; graphviz/optimized/actions.c.ll
-; gromacs/optimized/vals16.c.ll
 ; hdf5/optimized/H5FDcore.c.ll
 ; hdf5/optimized/H5FDlog.c.ll
 ; hdf5/optimized/H5FDsec2.c.ll
@@ -43,15 +41,12 @@
 ; lief/optimized/des.c.ll
 ; linux/optimized/8250_port.ll
 ; linux/optimized/drm_format_helper.ll
-; linux/optimized/feat_ctl.ll
-; linux/optimized/file_table.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/hdmi.ll
 ; linux/optimized/hooks.ll
 ; linux/optimized/i2c-i801.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/iface.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_display_irq.ll
 ; linux/optimized/intel_dp_aux.ll
 ; linux/optimized/intel_dvo.ll
@@ -65,13 +60,11 @@
 ; linux/optimized/lbr.ll
 ; linux/optimized/libata-core.ll
 ; linux/optimized/libata-sata.ll
-; linux/optimized/mii.ll
 ; linux/optimized/neighbour.ll
 ; linux/optimized/open.ll
 ; linux/optimized/phy-c45.ll
 ; linux/optimized/phy_device.ll
 ; linux/optimized/scsi_ioctl.ll
-; linux/optimized/statfs.ll
 ; linux/optimized/tg3.ll
 ; linux/optimized/transaction.ll
 ; linux/optimized/vfs_inode.ll
@@ -139,6 +132,7 @@
 ; lua/optimized/lcode.ll
 ; luajit/optimized/lib_jit.ll
 ; luajit/optimized/lib_jit_dyn.ll
+; lvgl/optimized/lv_svg_parser.ll
 ; lz4/optimized/lz4frame.c.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -188,7 +182,6 @@
 ; openvdb/optimized/LevelSetRebuild.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/LevelSetTracker.cc.ll
-; openvdb/optimized/Mask.cc.ll
 ; openvdb/optimized/Merge.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
 ; openvdb/optimized/PoissonSolver.cc.ll
@@ -228,6 +221,7 @@
 ; wireshark/optimized/packet-rlc-lte.c.ll
 ; wireshark/optimized/packet-signal-pdu.c.ll
 ; z3/optimized/mpf.cpp.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -264,9 +258,7 @@ entry:
 ; linux/optimized/hooks.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/idma32.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_color.ll
-; linux/optimized/intel_snps_phy.ll
 ; linux/optimized/intel_vdsc.ll
 ; linux/optimized/libata-core.ll
 ; linux/optimized/tg3.ll
@@ -311,6 +303,8 @@ entry:
 ; tev/optimized/Common.cpp.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -322,7 +316,7 @@ entry:
   ret i32 %7
 }
 
-; 29 occurrences:
+; 21 occurrences:
 ; abc/optimized/giaMf.c.ll
 ; abc/optimized/giaNf.c.ll
 ; abc/optimized/giaOf.c.ll
@@ -332,21 +326,13 @@ entry:
 ; cmake/optimized/archive_string.c.ll
 ; cpython/optimized/unicodeobject.ll
 ; hermes/optimized/APFloat.cpp.ll
-; hermes/optimized/AST2JS.cpp.ll
-; hermes/optimized/ConsecutiveStringStorage.cpp.ll
-; hermes/optimized/HBC.cpp.ll
-; hermes/optimized/JSLexer.cpp.ll
-; hermes/optimized/JSONEmitter.cpp.ll
-; hermes/optimized/RegexSerialization.cpp.ll
-; hermes/optimized/Runtime.cpp.ll
-; hermes/optimized/SourceErrorManager.cpp.ll
-; hermes/optimized/UTF8.cpp.ll
 ; jsonnet/optimized/desugarer.cpp.ll
 ; jsonnet/optimized/parser.cpp.ll
 ; jsonnet/optimized/string_utils.cpp.ll
 ; jsonnet/optimized/vm.cpp.ll
 ; llvm/optimized/YAMLParser.cpp.ll
 ; lua/optimized/lcode.ll
+; lvgl/optimized/lv_text.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; openjdk/optimized/ByteIndexed.ll
 ; openjdk/optimized/UshortIndexed.ll
@@ -414,10 +400,38 @@ entry:
   ret i32 %7
 }
 
-; 4 occurrences:
+; 15 occurrences:
+; openvdb/optimized/Diagnostics.cc.ll
+; openvdb/optimized/FastSweeping.cc.ll
+; openvdb/optimized/Filter.cc.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
+; openvdb/optimized/LevelSetRebuild.cc.ll
+; openvdb/optimized/LevelSetSphere.cc.ll
+; openvdb/optimized/LevelSetTracker.cc.ll
+; openvdb/optimized/Mask.cc.ll
+; openvdb/optimized/Merge.cc.ll
+; openvdb/optimized/MultiResGrid.cc.ll
+; openvdb/optimized/PoissonSolver.cc.ll
+; openvdb/optimized/TopologyToLevelSet.cc.ll
+; openvdb/optimized/VolumeAdvect.cc.ll
+; openvdb/optimized/VolumeToMesh.cc.ll
+; openvdb/optimized/points.cc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl i32 %2, 5
+  %4 = and i32 %3, 3840
+  %5 = and i32 %1, 240
+  %6 = or disjoint i32 %5, %4
+  %7 = or i32 %0, %6
+  ret i32 %7
+}
+
+; 5 occurrences:
 ; abc/optimized/ifDec07.c.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/vfs_inode.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; raylib/optimized/rtext.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000e(i32 %0, i32 %1, i32 %2) #0 {

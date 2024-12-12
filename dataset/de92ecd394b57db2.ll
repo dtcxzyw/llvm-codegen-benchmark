@@ -36,20 +36,18 @@ entry:
 ; openjdk/optimized/xHeapIterator.ll
 ; openjdk/optimized/zHeapIterator.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(ptr %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000148(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw ptr, ptr %0, i64 %3
-  %5 = getelementptr nusw ptr, ptr %0, i64 %1
-  %6 = icmp ugt ptr %5, %4
-  ret i1 %6
+  %4 = icmp sgt i64 %1, %3
+  ret i1 %4
 }
 
 ; 2 occurrences:
 ; cmake/optimized/divsufsort.c.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(ptr %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000044(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 %3

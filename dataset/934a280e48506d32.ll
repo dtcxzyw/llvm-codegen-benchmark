@@ -1,7 +1,8 @@
 
-; 57 occurrences:
+; 55 occurrences:
 ; abc/optimized/cecSolve.c.ll
 ; abc/optimized/cecSolveG.c.ll
+; boost/optimized/src.ll
 ; cvc5/optimized/SimpSolver.cc.ll
 ; cvc5/optimized/Solver.cc.ll
 ; cvc5/optimized/timeout_core_manager.cpp.ll
@@ -36,7 +37,6 @@
 ; llvm/optimized/X86AsmParser.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
@@ -53,10 +53,8 @@
 ; redis/optimized/extent.sym.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; spike/optimized/csrs.ll
-; spike/optimized/f128_classify.ll
-; spike/optimized/f16_classify.ll
-; spike/optimized/f32_classify.ll
-; spike/optimized/f64_classify.ll
+; zed-rs/optimized/6i9q21vg747q3orsxnutiwubi.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i1 %1, i1 %2) #0 {
 entry:
@@ -67,7 +65,7 @@ entry:
   ret i64 %6
 }
 
-; 13 occurrences:
+; 9 occurrences:
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/LLParser.cpp.ll
@@ -77,37 +75,29 @@ entry:
 ; openjdk/optimized/vm_version_x86.ll
 ; ozz-animation/optimized/jsoncpp.cpp.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
-; spike/optimized/f128_classify.ll
-; spike/optimized/f16_classify.ll
-; spike/optimized/f32_classify.ll
-; spike/optimized/f64_classify.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 0, i64 144115188075855872
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = select i1 %1, i64 0, i64 72057594037927936
   %6 = or i64 %4, %5
   ret i64 %6
 }
 
-; 10 occurrences:
+; 6 occurrences:
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/CGCall.cpp.ll
 ; llvm/optimized/LLParser.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; ozz-animation/optimized/jsoncpp.cpp.ll
 ; spike/optimized/csrs.ll
-; spike/optimized/f128_classify.ll
-; spike/optimized/f16_classify.ll
-; spike/optimized/f32_classify.ll
-; spike/optimized/f64_classify.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i1 %1, i1 %2) #0 {
 entry:
-  %3 = select i1 %2, i64 8, i64 0
-  %4 = or disjoint i64 %3, %0
-  %5 = select i1 %1, i64 128, i64 0
+  %3 = select i1 %2, i64 0, i64 5188
+  %4 = or disjoint i64 %0, %3
+  %5 = select i1 %1, i64 0, i64 4096
   %6 = or i64 %4, %5
   ret i64 %6
 }

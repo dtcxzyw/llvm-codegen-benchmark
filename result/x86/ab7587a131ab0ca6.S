@@ -5,8 +5,7 @@ func000000000000000c:                   # @func000000000000000c
 	andb	%sil, %al
 	retq
 func0000000000000001:                   # @func0000000000000001
-	andl	$254, %edx
-	cmpl	$14, %edx
+	testb	$4, %dl
 	sete	%al
 	andb	%dil, %sil
 	andb	%sil, %al

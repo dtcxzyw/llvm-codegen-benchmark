@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; php/optimized/pcre2_match.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000222(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000842(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp eq i32 %3, 65535
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000034c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000a8c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp slt i32 %3, %0
@@ -26,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000290(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000910(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp ugt i32 %3, %0
@@ -38,7 +38,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000308(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000a08(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
   %4 = icmp ugt i32 %3, %0

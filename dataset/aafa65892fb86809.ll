@@ -1,5 +1,5 @@
 
-; 37 occurrences:
+; 38 occurrences:
 ; clamav/optimized/str.c.ll
 ; fmt/optimized/core-test.cc.ll
 ; gromacs/optimized/muParserTest.cpp.ll
@@ -23,7 +23,6 @@
 ; llvm/optimized/ODRDiagsEmitter.cpp.ll
 ; llvm/optimized/PrintPreprocessedOutput.cpp.ll
 ; lua/optimized/lvm.ll
-; meilisearch-rs/optimized/4rynht2gwvphprvy.ll
 ; nlohmann_json/optimized/unit-udt.cpp.ll
 ; opencv/optimized/rlof_localflow.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
@@ -37,6 +36,8 @@
 ; redis/optimized/extent_dss.ll
 ; redis/optimized/extent_dss.sym.ll
 ; tomlplusplus/optimized/toml.cpp.ll
+; zed-rs/optimized/20fr88unk1byt75zzz5ooa6xr.ll
+; zed-rs/optimized/50na78mbd3ev0fg48iszd7iya.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {
 entry:

@@ -50,10 +50,11 @@ func0000000000000003:                   # @func0000000000000003
 	vpmulld	%ymm1, %ymm0, %ymm0
 	vpaddd	.LCPI8_0(%rip){1to8}, %ymm0, %ymm0
 	retq
+.LCPI9_0:
+	.long	80                              # 0x50
 func0000000000000007:                   # @func0000000000000007
 	vpmulld	%ymm1, %ymm0, %ymm0
-	vpcmpeqd	%ymm1, %ymm1, %ymm1
-	vpsubd	%ymm1, %ymm0, %ymm0
+	vpaddd	.LCPI9_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 func0000000000000008:                   # @func0000000000000008
 	vpmulld	%ymm1, %ymm0, %ymm0

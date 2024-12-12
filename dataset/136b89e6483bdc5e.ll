@@ -23,7 +23,7 @@ entry:
   ret i32 %3
 }
 
-; 244 occurrences:
+; 242 occurrences:
 ; abseil-cpp/optimized/str_cat_test.cc.ll
 ; arrow/optimized/api_scalar.cc.ll
 ; arrow/optimized/array_dict.cc.ll
@@ -31,6 +31,7 @@ entry:
 ; arrow/optimized/vector_hash.cc.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/X3DXmlHelper.cpp.ll
+; boost/optimized/options_description.ll
 ; casadi/optimized/mx_function.cpp.ll
 ; casadi/optimized/nlp_builder.cpp.ll
 ; casadi/optimized/optistack_internal.cpp.ll
@@ -83,7 +84,6 @@ entry:
 ; hyperscan/optimized/ue2string.cpp.ll
 ; jsonnet/optimized/vm.cpp.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
-; linux/optimized/sch_mq.ll
 ; linux/optimized/timer.ll
 ; llvm/optimized/HeaderSearch.cpp.ll
 ; luau/optimized/TypeInfer.cpp.ll
@@ -148,8 +148,6 @@ entry:
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; pocketpy/optimized/vm.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll

@@ -18,10 +18,11 @@ entry:
   ret i64 %6
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; abc/optimized/plaRead.c.ll
 ; clamav/optimized/bytecode.c.ll
 ; cpython/optimized/longobject.ll
+; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; openjdk/optimized/signature.ll
 ; Function Attrs: nounwind

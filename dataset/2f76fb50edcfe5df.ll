@@ -2,11 +2,11 @@
 ; 1 occurrences:
 ; ruby/optimized/time.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i16 %1) #0 {
+define i1 @func0000000000000034(i1 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
   %3 = select i1 %0, i32 0, i32 60
-  %4 = icmp ult i32 %3, %2
+  %4 = icmp samesign ult i32 %3, %2
   ret i1 %4
 }
 
@@ -30,20 +30,19 @@ entry:
   ret i1 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; icu/optimized/ucnvmbcs.ll
 ; icu/optimized/utrie_swap.ll
 ; linux/optimized/dir.ll
 ; linux/optimized/nl80211.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; php/optimized/ir_ra.ll
 ; postgres/optimized/nbtutils.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i16 %1) #0 {
+define i1 @func0000000000000018(i1 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = select i1 %0, i32 1, i32 2
-  %4 = icmp ugt i32 %3, %2
+  %4 = icmp samesign ugt i32 %3, %2
   ret i1 %4
 }
 
@@ -56,7 +55,7 @@ entry:
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
   %3 = select i1 %0, i32 3, i32 1
@@ -67,7 +66,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/InstCombineAndOrXor.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i16 %1) #0 {
+define i1 @func000000000000002c(i1 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
   %3 = select i1 %0, i32 32, i32 33
@@ -75,23 +74,22 @@ entry:
   ret i1 %4
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; icu/optimized/ucnvlat1.ll
 ; icu/optimized/ucnvmbcs.ll
 ; linux/optimized/hub.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_overlay.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; openusd/optimized/decodeframe.c.ll
 ; openusd/optimized/decodemv.c.ll
 ; openusd/optimized/decodetxb.c.ll
 ; postgres/optimized/nbtsearch.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i16 %1) #0 {
+define i1 @func0000000000000014(i1 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = select i1 %0, i32 64, i32 32
-  %4 = icmp ult i32 %3, %2
+  %3 = select i1 %0, i32 0, i32 32768
+  %4 = icmp samesign ult i32 %3, %2
   ret i1 %4
 }
 
@@ -109,11 +107,11 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i16 %1) #0 {
+define i1 @func0000000000000038(i1 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
   %3 = select i1 %0, i32 10, i32 20
-  %4 = icmp ugt i32 %3, %2
+  %4 = icmp samesign ugt i32 %3, %2
   ret i1 %4
 }
 

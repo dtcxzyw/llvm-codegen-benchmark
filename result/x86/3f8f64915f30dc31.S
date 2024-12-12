@@ -5,7 +5,6 @@ func0000000000000019:                   # @func0000000000000019
 func0000000000000001:                   # @func0000000000000001
 	imull	%edi, %esi
 	movslq	%esi, %rax
-	shlq	$3, %rax
 	retq
 func0000000000000008:                   # @func0000000000000008
 	imull	%edi, %esi

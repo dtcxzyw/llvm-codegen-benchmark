@@ -23,7 +23,7 @@ func0000000000000007:                   # @func0000000000000007
 	vpmaddwd	.LCPI0_1(%rip), %ymm0, %ymm0    # [10,0,10,0,10,0,10,0,10,0,10,0,10,0,10,0]
 	retq
 .LCPI1_0:
-	.long	24                              # 0x18
+	.long	365                             # 0x16d
 func0000000000000003:                   # @func0000000000000003
 	vpsubd	%ymm1, %ymm0, %ymm0
 	vpxor	%xmm1, %xmm1, %xmm1

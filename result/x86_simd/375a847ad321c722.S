@@ -15,7 +15,17 @@ func0000000000000005:                   # @func0000000000000005
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpaddq	%ymm2, %ymm0, %ymm0
 	retq
+func000000000000000d:                   # @func000000000000000d
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2 # ymm2 = ~ymm2
+	vpaddq	%ymm1, %ymm0, %ymm0
+	vpaddq	%ymm2, %ymm0, %ymm0
+	retq
 func0000000000000003:                   # @func0000000000000003
+	vpternlogq	$15, %ymm2, %ymm2, %ymm2 # ymm2 = ~ymm2
+	vpaddq	%ymm1, %ymm0, %ymm0
+	vpaddq	%ymm2, %ymm0, %ymm0
+	retq
+func0000000000000008:                   # @func0000000000000008
 	vpternlogq	$15, %ymm2, %ymm2, %ymm2 # ymm2 = ~ymm2
 	vpaddq	%ymm1, %ymm0, %ymm0
 	vpaddq	%ymm2, %ymm0, %ymm0

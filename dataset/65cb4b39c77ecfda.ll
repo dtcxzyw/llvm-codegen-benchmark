@@ -10,7 +10,7 @@ entry:
   %2 = fmul double %1, 2.550000e+02
   %3 = fptosi double %2 to i32
   %4 = shl i32 %3, 24
-  %5 = or disjoint i32 %4, %0
+  %5 = or disjoint i32 %0, %4
   ret i32 %5
 }
 

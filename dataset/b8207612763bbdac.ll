@@ -26,13 +26,14 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/approximately_equals.ll
 ; cpython/optimized/obmalloc.ll
 ; mimalloc/optimized/bitmap.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000d(i64 %0) #0 {
 entry:
-  %1 = and i64 %0, 63
+  %1 = and i64 %0, 56
   %2 = sub nuw nsw i64 64, %1
   %3 = shl nsw i64 -1, %2
   %4 = xor i64 %3, -1

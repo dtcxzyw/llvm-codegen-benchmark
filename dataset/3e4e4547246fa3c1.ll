@@ -1,8 +1,9 @@
 
-; 56 occurrences:
+; 57 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_navigator_test.cc.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/src.ll
 ; cmake/optimized/lzma2_encoder.c.ll
 ; cmake/optimized/nghttp2_frame.c.ll
 ; cmake/optimized/nghttp2_hd.c.ll
@@ -65,9 +66,10 @@ entry:
 }
 
 ; 32 occurrences:
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; hdf5/optimized/H5T.c.ll
-; hdf5/optimized/h5tools_type.c.ll
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; linux/optimized/exthdrs.ll
 ; llvm/optimized/DWARFDebugLine.cpp.ll
@@ -77,7 +79,6 @@ entry:
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/moment.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/xml.cpp.ll
 ; openspiel/optimized/solitaire.cc.ll
 ; php/optimized/ir_emit.ll
@@ -105,10 +106,11 @@ entry:
   ret i8 %2
 }
 
-; 39 occurrences:
+; 69 occurrences:
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_navigator.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_navigator_test.cc.ll
+; boost/optimized/src.ll
 ; brotli/optimized/entropy_encode.c.ll
 ; cmake/optimized/archive_write_add_filter_xz.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
@@ -144,6 +146,35 @@ entry:
 ; ropey-rs/optimized/2p9nf7n6i9ycxebu.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/erf.c.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/0fzu5iswc3qhp95jt69713e0a.ll
+; zed-rs/optimized/17z6n2wor03lzp7xkvyb2v4b8.ll
+; zed-rs/optimized/1wjst2j1bd1xnipyz033svz8u.ll
+; zed-rs/optimized/2pjmz9fmy54g6vkualen6rbg5.ll
+; zed-rs/optimized/4ovnxxb7zmwxieofqxkhvk2er.ll
+; zed-rs/optimized/5qba05g0dyedoh8rydwnrszty.ll
+; zed-rs/optimized/5s44oz7ztp6o1gjtp6jhzkvc2.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/6k04c116ogp35htlpsavpzpvg.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/7435o5as5af1nwuofltvv4x7w.ll
+; zed-rs/optimized/7nj8apu4jlzv057e0kkcpojil.ll
+; zed-rs/optimized/8gg8u2ott7gsi4x0g8ewxmxbb.ll
+; zed-rs/optimized/asge4ovzpoi4j0hgzjom7idmo.ll
+; zed-rs/optimized/b1bc3rbs9s229gjbf718xcm8w.ll
+; zed-rs/optimized/ba1fbg7c0slithvjnvqvkyuvg.ll
+; zed-rs/optimized/bg38611xfnz0abj8o6yh866zw.ll
+; zed-rs/optimized/bktyyhuk5fekatq647qx0ox8v.ll
+; zed-rs/optimized/brfpsqsl3kxc3ngzjjsbjx55x.ll
+; zed-rs/optimized/bxihi250edldcndb2a4vmykoa.ll
+; zed-rs/optimized/cgxtqkz3q1lf4y8mn1r3vggst.ll
+; zed-rs/optimized/daazuwy5q4pkhw5qv9dy4nfnq.ll
+; zed-rs/optimized/df2iyo9i9ey3dkyn58ljuz3pg.ll
+; zed-rs/optimized/dr3ks0ib80ortjwkcqg0973x1.ll
+; zed-rs/optimized/e2t208u96614zaapml39g6l5s.ll
+; zed-rs/optimized/el2ujbjp7xo4qjt47dh50oqat.ll
+; zed-rs/optimized/ewfky7337ygatenw8mnh0raxz.ll
+; zed-rs/optimized/f10ffiihtazjqkmwr0jihceey.ll
 ; zstd/optimized/fse_compress.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000004(i64 %0) #0 {
@@ -153,114 +184,22 @@ entry:
   ret i8 %2
 }
 
-; 107 occurrences:
+; 15 occurrences:
 ; clamav/optimized/aspack.c.ll
-; fmt/optimized/color-test.cc.ll
-; fmt/optimized/compile-test.cc.ll
-; fmt/optimized/enforce-checks-test.cc.ll
-; fmt/optimized/format-impl-test.cc.ll
-; fmt/optimized/format-test.cc.ll
-; fmt/optimized/format.cc.ll
-; fmt/optimized/gtest-extra.cc.ll
-; fmt/optimized/header-only-test.cc.ll
-; fmt/optimized/os-test.cc.ll
-; fmt/optimized/os.cc.ll
-; fmt/optimized/ostream-test.cc.ll
-; fmt/optimized/ranges-odr-test.cc.ll
-; fmt/optimized/ranges-test.cc.ll
-; fmt/optimized/std-test.cc.ll
-; fmt/optimized/unicode-test.cc.ll
-; fmt/optimized/util.cc.ll
-; fmt/optimized/xchar-test.cc.ll
 ; git/optimized/base85.ll
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
-; lightgbm/optimized/tree.cpp.ll
-; linux/optimized/he.ll
 ; lua/optimized/llex.ll
 ; luajit/optimized/lj_lex.ll
 ; luajit/optimized/lj_lex_dyn.ll
 ; luajit/optimized/minilua.ll
 ; openssl/optimized/bad_dtls_test-bin-bad_dtls_test.ll
 ; qemu/optimized/hw_usb_core.c.ll
-; vcpkg/optimized/archives.cpp.ll
-; vcpkg/optimized/binarycaching.cpp.ll
-; vcpkg/optimized/binaryparagraph.cpp.ll
-; vcpkg/optimized/bundlesettings.cpp.ll
-; vcpkg/optimized/checks.cpp.ll
-; vcpkg/optimized/ci-baseline.cpp.ll
-; vcpkg/optimized/cmakevars.cpp.ll
-; vcpkg/optimized/cmd-parser.cpp.ll
-; vcpkg/optimized/cofffilereader.cpp.ll
-; vcpkg/optimized/commands.add-version.cpp.ll
-; vcpkg/optimized/commands.add.cpp.ll
-; vcpkg/optimized/commands.autocomplete.cpp.ll
-; vcpkg/optimized/commands.build.cpp.ll
-; vcpkg/optimized/commands.check-support.cpp.ll
-; vcpkg/optimized/commands.ci-clean.cpp.ll
-; vcpkg/optimized/commands.ci-verify-versions.cpp.ll
-; vcpkg/optimized/commands.ci.cpp.ll
-; vcpkg/optimized/commands.contact.cpp.ll
-; vcpkg/optimized/commands.create.cpp.ll
-; vcpkg/optimized/commands.depend-info.cpp.ll
-; vcpkg/optimized/commands.download.cpp.ll
-; vcpkg/optimized/commands.edit.cpp.ll
-; vcpkg/optimized/commands.env.cpp.ll
-; vcpkg/optimized/commands.export.cpp.ll
-; vcpkg/optimized/commands.find.cpp.ll
-; vcpkg/optimized/commands.format-manifest.cpp.ll
-; vcpkg/optimized/commands.generate-msbuild-props.cpp.ll
-; vcpkg/optimized/commands.help.cpp.ll
-; vcpkg/optimized/commands.init-registry.cpp.ll
-; vcpkg/optimized/commands.install.cpp.ll
-; vcpkg/optimized/commands.integrate.cpp.ll
-; vcpkg/optimized/commands.list.cpp.ll
-; vcpkg/optimized/commands.new.cpp.ll
-; vcpkg/optimized/commands.package-info.cpp.ll
-; vcpkg/optimized/commands.portsdiff.cpp.ll
-; vcpkg/optimized/commands.remove.cpp.ll
-; vcpkg/optimized/commands.set-installed.cpp.ll
-; vcpkg/optimized/commands.update-baseline.cpp.ll
-; vcpkg/optimized/commands.update.cpp.ll
-; vcpkg/optimized/commands.version.cpp.ll
-; vcpkg/optimized/commands.z-changelog.cpp.ll
-; vcpkg/optimized/commands.z-extract.cpp.ll
-; vcpkg/optimized/commands.z-generate-message-map.cpp.ll
-; vcpkg/optimized/configuration.cpp.ll
-; vcpkg/optimized/configure-environment.cpp.ll
-; vcpkg/optimized/dependencies.cpp.ll
-; vcpkg/optimized/downloads.cpp.ll
-; vcpkg/optimized/export.chocolatey.cpp.ll
-; vcpkg/optimized/export.ifw.cpp.ll
-; vcpkg/optimized/export.prefab.cpp.ll
-; vcpkg/optimized/files.cpp.ll
-; vcpkg/optimized/git.cpp.ll
-; vcpkg/optimized/hash.cpp.ll
-; vcpkg/optimized/input.cpp.ll
-; vcpkg/optimized/json.cpp.ll
-; vcpkg/optimized/message_sinks.cpp.ll
-; vcpkg/optimized/messages.cpp.ll
-; vcpkg/optimized/packagespec.cpp.ll
-; vcpkg/optimized/paragraphs.cpp.ll
-; vcpkg/optimized/parse.cpp.ll
-; vcpkg/optimized/platform-expression.cpp.ll
-; vcpkg/optimized/portfileprovider.cpp.ll
-; vcpkg/optimized/postbuildlint.cpp.ll
-; vcpkg/optimized/registries.cpp.ll
-; vcpkg/optimized/sourceparagraph.cpp.ll
-; vcpkg/optimized/spdx.cpp.ll
-; vcpkg/optimized/strings.cpp.ll
-; vcpkg/optimized/system.cpp.ll
-; vcpkg/optimized/system.process.cpp.ll
-; vcpkg/optimized/tools.cpp.ll
-; vcpkg/optimized/triplet.cpp.ll
-; vcpkg/optimized/vcpkgcmdarguments.cpp.ll
-; vcpkg/optimized/vcpkgpaths.cpp.ll
-; vcpkg/optimized/versiondeserializers.cpp.ll
-; vcpkg/optimized/versions.cpp.ll
 ; wireshark/optimized/erf.c.ll
 ; wireshark/optimized/packet-evrc.c.ll
 ; wireshark/optimized/packet-knxip_decrypt.c.ll
 ; wolfssl/optimized/api.c.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000000f(i64 %0) #0 {
 entry:
@@ -269,7 +208,7 @@ entry:
   ret i8 %2
 }
 
-; 32 occurrences:
+; 34 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; darktable/optimized/introspection_basecurve.c.ll
@@ -302,6 +241,8 @@ entry:
 ; tinyrenderer/optimized/tgaimage.cpp.ll
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; wireshark/optimized/packet-tcp.c.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/clfnbm8q68pj6tyseqadz86ib.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000000e(i64 %0) #0 {
 entry:
@@ -310,7 +251,7 @@ entry:
   ret i8 %2
 }
 
-; 66 occurrences:
+; 67 occurrences:
 ; abc/optimized/aigCuts.c.ll
 ; abc/optimized/compress.c.ll
 ; abc/optimized/cswCut.c.ll
@@ -377,6 +318,7 @@ entry:
 ; wireshark/optimized/simple_statistics_dialog.cpp.ll
 ; wireshark/optimized/tap_parameter_dialog.cpp.ll
 ; wireshark/optimized/voip_calls_dialog.cpp.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000000c(i64 %0) #0 {
 entry:
@@ -422,9 +364,11 @@ entry:
   ret i8 %2
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; ockam-rs/optimized/z0rkq6s90lca7cm.ll
 ; regex-rs/optimized/183h9dropc9vohym.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
+; zed-rs/optimized/d5przcl3nwvj7ddp1j7ydu4aq.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000007(i64 %0) #0 {
 entry:

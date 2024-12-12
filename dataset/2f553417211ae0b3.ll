@@ -19,7 +19,7 @@ entry:
 define i16 @func0000000000000034(i32 %0, i32 %1) #0 {
 entry:
   %.neg = xor i32 %1, -1
-  %2 = add i32 %.neg, %0
+  %2 = add i32 %0, %.neg
   %3 = trunc i32 %2 to i16
   ret i16 %3
 }
@@ -31,7 +31,7 @@ entry:
 define i16 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %.neg = xor i32 %1, -1
-  %2 = add i32 %.neg, %0
+  %2 = add i32 %0, %.neg
   %3 = trunc i32 %2 to i16
   ret i16 %3
 }

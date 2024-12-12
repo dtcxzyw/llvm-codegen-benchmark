@@ -4,11 +4,11 @@
 ; linux/optimized/intel_dp.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; llvm/optimized/MemorySanitizer.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetParser.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; llvm/optimized/X86MCInstLower.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; meshlab/optimized/ofbx.cpp.ll
 ; oiio/optimized/tiffinput.cpp.ll
 ; opencv/optimized/ts_func.cpp.ll

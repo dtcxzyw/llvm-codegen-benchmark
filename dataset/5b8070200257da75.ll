@@ -6,7 +6,7 @@
 ; libquic/optimized/trees.c.ll
 ; zlib/optimized/trees.c.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000de(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000019e(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %.not = icmp sgt i32 %1, %2
@@ -19,7 +19,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/deftree.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000dc(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000019c(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %.not = icmp sgt i32 %1, %2

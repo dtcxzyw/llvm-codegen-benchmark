@@ -10,7 +10,8 @@ entry:
   ret i128 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/to_chars.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; qemu/optimized/accel_tcg_user-exec.c.ll
@@ -20,7 +21,7 @@ entry:
 define i128 @func0000000000000000(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = shl i128 %1, %2
-  %4 = or i128 %3, %0
+  %4 = or i128 %0, %3
   ret i128 %4
 }
 

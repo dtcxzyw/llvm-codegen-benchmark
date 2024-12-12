@@ -27,10 +27,8 @@ entry:
   ret double %4
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; gromacs/optimized/forcetable.cpp.ll
-; openblas/optimized/dlacn2.c.ll
-; openblas/optimized/dlacon.c.ll
 ; postgres/optimized/bufmgr.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind

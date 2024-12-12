@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, i16 %1) #0 {
+define i1 @func00000000000000a8(i32 %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 2
   %3 = and i16 %2, 4095
@@ -12,11 +12,10 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
-; linux/optimized/pci.ll
+; 1 occurrences:
 ; llvm/optimized/APINotesYAMLCompiler.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000088(i32 %0, i16 %1) #0 {
 entry:
   %2 = lshr i16 %1, 1
   %3 = and i16 %2, 255

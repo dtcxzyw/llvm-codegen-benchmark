@@ -7,9 +7,9 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000000:                   # @func0000000000000000
 	leal	19(%rdx), %eax
 	andl	$4080, %eax                     # imm = 0xFF0
+	andl	$4092, %esi                     # imm = 0xFFC
 	testb	$1, %dil
 	cmovel	%esi, %eax
-	andl	$4092, %eax                     # imm = 0xFFC
 	retq
 func0000000000000003:                   # @func0000000000000003
 	movl	%esi, %eax

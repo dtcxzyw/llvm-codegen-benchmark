@@ -9,7 +9,7 @@ func000000000000000a:                   # @func000000000000000a
 	testl	%ecx, %ecx
 	cmovgl	%edi, %eax
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	vcvttsd2si	%xmm0, %ecx
 	xorl	%eax, %eax
 	cmpl	$3, %ecx

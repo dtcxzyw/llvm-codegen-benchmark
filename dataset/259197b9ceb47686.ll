@@ -163,13 +163,13 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a4(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000344(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 -53, %1
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
   %5 = sub nuw i64 %4, %0
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 
@@ -337,13 +337,13 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000188(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000308(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 -53, %1
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
   %5 = sub i64 %4, %0
-  %6 = icmp ult i64 %5, %0
+  %6 = icmp ugt i64 %0, %5
   ret i1 %6
 }
 
@@ -511,13 +511,13 @@ entry:
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000184(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000304(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 -53, %1
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 1, %3
   %5 = sub i64 %4, %0
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 

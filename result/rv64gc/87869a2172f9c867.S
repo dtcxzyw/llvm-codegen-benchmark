@@ -16,7 +16,7 @@ func000000000000005a:                   # @func000000000000005a
 	add	a0, a0, a2
 	addi	a0, a0, -2
 	ret
-func000000000000007a:                   # @func000000000000007a
+func000000000000007b:                   # @func000000000000007b
 	slli	a3, a2, 1
 	slli	a1, a1, 1
 	addw	a2, a2, a3

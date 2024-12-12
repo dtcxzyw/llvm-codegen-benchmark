@@ -4,13 +4,13 @@
 ; linux/optimized/bitmap.ll
 ; llvm/optimized/APInt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000364(i32 %0, i64 %1) #0 {
+define i1 @func00000000000006d4(i32 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 63
   %3 = lshr i64 %2, 6
   %4 = trunc nuw nsw i64 %3 to i32
   %5 = lshr i32 %0, 6
-  %6 = icmp ult i32 %5, %4
+  %6 = icmp samesign ult i32 %5, %4
   ret i1 %6
 }
 
@@ -27,13 +27,13 @@ entry:
 ; hyperscan/optimized/stream_compress.c.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000368(i32 %0, i64 %1) #0 {
+define i1 @func00000000000006d8(i32 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 63
   %3 = lshr i64 %2, 6
   %4 = trunc nuw nsw i64 %3 to i32
   %5 = lshr i32 %0, 6
-  %6 = icmp ugt i32 %5, %4
+  %6 = icmp samesign ugt i32 %5, %4
   ret i1 %6
 }
 

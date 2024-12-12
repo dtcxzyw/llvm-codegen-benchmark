@@ -1,5 +1,5 @@
 
-; 415 occurrences:
+; 397 occurrences:
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/dauNpn2.c.ll
@@ -10,6 +10,7 @@
 ; c3c/optimized/lexer.c.ll
 ; c3c/optimized/parse_expr.c.ll
 ; cmake/optimized/cmCommandArgumentParser.cxx.ll
+; cmake/optimized/cmExprParser.cxx.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -228,13 +229,8 @@
 ; redis/optimized/server.ll
 ; rocksdb/optimized/trace_replay.cc.ll
 ; ruby/optimized/generator.ll
-; softposit-rs/optimized/oveg98n4r9tnk39.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; spdlog/optimized/spdlog.cpp.ll
-; spike/optimized/f16_to_i32_r_minMag.ll
-; spike/optimized/f16_to_i64_r_minMag.ll
-; spike/optimized/f16_to_ui32_r_minMag.ll
-; spike/optimized/f16_to_ui64_r_minMag.ll
 ; spike/optimized/s_subMagsF16.ll
 ; spike/optimized/s_subMagsF32.ll
 ; spike/optimized/s_subMagsF64.ll
@@ -401,20 +397,6 @@
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; wireshark/optimized/json_dumper.c.ll
 ; wireshark/optimized/tvbparse.c.ll
-; yalantinglibs/optimized/addressbook.struct_pb.cc.ll
-; yalantinglibs/optimized/any.struct_pb.cc.ll
-; yalantinglibs/optimized/conformance.struct_pb.cc.ll
-; yalantinglibs/optimized/data_def.struct_pb.cc.ll
-; yalantinglibs/optimized/descriptor.struct_pb.cc.ll
-; yalantinglibs/optimized/duration.struct_pb.cc.ll
-; yalantinglibs/optimized/field_mask.struct_pb.cc.ll
-; yalantinglibs/optimized/source_context.struct_pb.cc.ll
-; yalantinglibs/optimized/struct.struct_pb.cc.ll
-; yalantinglibs/optimized/test_messages_proto2.struct_pb.cc.ll
-; yalantinglibs/optimized/test_messages_proto3.struct_pb.cc.ll
-; yalantinglibs/optimized/timestamp.struct_pb.cc.ll
-; yalantinglibs/optimized/type.struct_pb.cc.ll
-; yalantinglibs/optimized/wrappers.struct_pb.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i8 %0) #0 {
 entry:

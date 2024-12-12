@@ -15,7 +15,7 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; openjdk/optimized/ad_x86.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 1
   %4 = icmp eq i32 %3, %1
@@ -23,11 +23,12 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/numeric.ll
 ; openjdk/optimized/c1_RangeCheckElimination.ll
 ; proxygen/optimized/Window.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, -2147483648
   %4 = icmp sgt i32 %3, %1
@@ -40,21 +41,10 @@ entry:
 ; ncnn/optimized/rmsnorm_x86.cpp.ll
 ; opencv/optimized/simpleflow.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %2, 3
   %4 = icmp slt i32 %3, %1
-  %5 = select i1 %0, i1 %4, i1 false
-  ret i1 %5
-}
-
-; 1 occurrences:
-; wireshark/optimized/packet-isis-clv.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = or disjoint i32 %2, 1
-  %4 = icmp ult i32 %3, %1
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }

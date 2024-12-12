@@ -10,5 +10,5 @@ func0000000000000008:                   # @func0000000000000008
 	vmsleu.vi	v0, v12, 1
 	vand.vi	v12, v10, -7
 	vmerge.vvm	v10, v12, v10, v0
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret

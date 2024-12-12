@@ -15,16 +15,15 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; linux/optimized/uncore_discovery.ll
 ; llvm/optimized/PassBuilderPipelines.cpp.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
-; qemu/optimized/tcg.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000010(i64 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %1, i1 true, i1 %2
-  %4 = icmp ugt i64 %0, 8589934592
+  %4 = icmp ugt i64 %0, 511
   %5 = or i1 %4, %3
   ret i1 %5
 }
@@ -112,16 +111,14 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
-; clamav/optimized/pe.c.ll
+; 2 occurrences:
 ; cmake/optimized/huf_decompress.c.ll
-; opencv/optimized/eltwise_layer.cpp.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0, i1 %1, i1 %2) #0 {
+define i1 @func0000000000000008(i1 %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = select i1 %1, i1 true, i1 %2
-  %4 = icmp ult i64 %0, 959
+  %3 = icmp ult i64 %2, 256
+  %4 = select i1 %0, i1 true, i1 %1
   %5 = or i1 %4, %3
   ret i1 %5
 }

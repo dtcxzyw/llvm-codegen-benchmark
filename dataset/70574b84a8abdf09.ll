@@ -1,5 +1,5 @@
 
-%"class.llvm::Use.2947876" = type { ptr, ptr, ptr, ptr }
+%"class.llvm::Use.3141442" = type { ptr, ptr, ptr, ptr }
 
 ; 19 occurrences:
 ; clamav/optimized/petite.c.ll
@@ -22,13 +22,13 @@
 ; openusd/optimized/lz4.cpp.ll
 ; z3/optimized/hilbert_basis.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000002b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 0, %3
   %5 = getelementptr nusw i8, ptr %0, i64 %4
   %6 = zext i32 %1 to i64
-  %7 = getelementptr nusw i8, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -36,13 +36,13 @@ entry:
 ; clamav/optimized/petite.c.ll
 ; php/optimized/pcre2_auto_possess.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000003b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 0, %3
   %5 = getelementptr nusw i8, ptr %0, i64 %4
   %6 = zext nneg i32 %1 to i64
-  %7 = getelementptr nusw i8, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -61,13 +61,13 @@ entry:
 ; spike/optimized/fdt_rw.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000ba(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func00000000000000bb(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
   %5 = getelementptr nusw i8, ptr %0, i64 %4
   %6 = zext nneg i32 %1 to i64
-  %7 = getelementptr nusw i8, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -86,7 +86,7 @@ entry:
   ret ptr %7
 }
 
-; 78 occurrences:
+; 77 occurrences:
 ; cmake/optimized/divsufsort.c.ll
 ; jemalloc/optimized/arena.ll
 ; jemalloc/optimized/arena.pic.ll
@@ -149,7 +149,6 @@ entry:
 ; llvm/optimized/NaryReassociate.cpp.ll
 ; llvm/optimized/OpenMPOpt.cpp.ll
 ; llvm/optimized/RISCVCodeGenPrepare.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ReplaceWithVeclib.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
@@ -166,13 +165,13 @@ entry:
 ; redis/optimized/arena.sym.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000aa(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func00000000000000ab(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 0, %3
-  %5 = getelementptr nusw %"class.llvm::Use.2947876", ptr %0, i64 %4
+  %5 = getelementptr nusw %"class.llvm::Use.3141442", ptr %0, i64 %4
   %6 = zext i32 %1 to i64
-  %7 = getelementptr nusw %"class.llvm::Use.2947876", ptr %5, i64 %6
+  %7 = getelementptr nusw nuw %"class.llvm::Use.3141442", ptr %5, i64 %6
   ret ptr %7
 }
 
@@ -192,13 +191,13 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/lzma_encoder_optimum_normal.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000022(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000023(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 0, %3
   %5 = getelementptr i8, ptr %0, i64 %4
   %6 = zext i32 %1 to i64
-  %7 = getelementptr nusw i8, ptr %5, i64 %6
+  %7 = getelementptr nusw nuw i8, ptr %5, i64 %6
   ret ptr %7
 }
 

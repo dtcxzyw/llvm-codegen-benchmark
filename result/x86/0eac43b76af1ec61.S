@@ -1,9 +1,9 @@
 func0000000000000006:                   # @func0000000000000006
 	addq	%rsi, %rdi
-	decq	%rdi
+	addq	$3, %rdi
 	setns	%al
 	retq
-func0000000000000054:                   # @func0000000000000054
+func00000000000000b4:                   # @func00000000000000b4
 	leaq	30(%rdi,%rsi), %rax
 	cmpq	$31, %rax
 	setb	%al

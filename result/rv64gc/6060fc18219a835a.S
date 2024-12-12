@@ -14,14 +14,14 @@ func00000000000000a8:                   # @func00000000000000a8
 	add	a0, a0, a1
 	addi	a0, a0, 12
 	ret
-func000000000000008a:                   # @func000000000000008a
+func000000000000008b:                   # @func000000000000008b
 	srli	a1, a1, 2
 	li	a2, 144
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	addi	a0, a0, -32
 	ret
-func00000000000000aa:                   # @func00000000000000aa
+func00000000000000ab:                   # @func00000000000000ab
 	srli	a1, a1, 2
 	li	a2, 144
 	mul	a1, a1, a2

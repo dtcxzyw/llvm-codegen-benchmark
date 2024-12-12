@@ -4,6 +4,6 @@ func0000000000000006:                   # @func0000000000000006
 	lui	a0, 65793
 	addi	a0, a0, 16
 	vand.vx	v10, v10, a0
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	vsrl.vi	v8, v8, 1
 	ret

@@ -1,11 +1,11 @@
-func0000000000000076:                   # @func0000000000000076
+func00000000000000e6:                   # @func00000000000000e6
 	leal	(%rsi,%rsi,2), %eax
 	cltq
 	addq	$3, %rdi
 	cmpq	%rax, %rdi
 	setl	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	leal	(%rsi,%rsi,2), %eax
 	cltq
 	incq	%rdi
@@ -19,7 +19,7 @@ func0000000000000006:                   # @func0000000000000006
 	cmpq	%rax, %rdi
 	setl	%al
 	retq
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	addl	%esi, %esi
 	leal	(%rsi,%rsi,4), %eax
 	cltq

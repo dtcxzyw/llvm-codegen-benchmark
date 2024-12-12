@@ -10,12 +10,32 @@
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; wasmtime-rs/optimized/jd0egfnydpuo3ak.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i64 %0) #0 {
+define i1 @func000000000000010c(i64 %0) #0 {
 entry:
   %.fr1 = freeze i64 %0
   %1 = mul i64 %.fr1, 88
   %2 = urem i64 %1, 80
   %3 = icmp ne i64 %2, 0
+  ret i1 %3
+}
+
+; 9 occurrences:
+; zed-rs/optimized/0cyv10l6w91jqdqmhl8pbusw2.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/553y3uma3m7pxzk4dar8hjwb6.ll
+; zed-rs/optimized/5lopn02otdgr3jtenihf9pnc6.ll
+; zed-rs/optimized/5xfke1jw0ac7pab611oym1u20.ll
+; zed-rs/optimized/9kzypu599rxw1s8z0tdtjo3oe.ll
+; zed-rs/optimized/bxqgsrk0kqvq41wnnozsjp44k.ll
+; zed-rs/optimized/cerruq7gww65l7esxsyv0yj53.ll
+; zed-rs/optimized/d31g6vudldcq1cl7b9cowxr8a.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000101(i64 %0) #0 {
+entry:
+  %.fr1 = freeze i64 %0
+  %1 = mul i64 %.fr1, 280
+  %2 = urem i64 %1, 24
+  %3 = icmp eq i64 %2, 0
   ret i1 %3
 }
 

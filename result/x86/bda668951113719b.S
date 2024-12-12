@@ -3,7 +3,7 @@ func0000000000000000:                   # @func0000000000000000
 	leal	1(%rsi), %eax
 	addq	%rdi, %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	notl	%edx
 	leal	(%rdx,%rsi), %eax
 	addq	%rdi, %rax

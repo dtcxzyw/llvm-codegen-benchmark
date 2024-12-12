@@ -11,7 +11,8 @@ entry:
   ret i64 %2
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/cmdline.ll
 ; folly/optimized/NestedCommandLineApp.cpp.ll
 ; folly/optimized/ProgramOptions.cpp.ll
 ; minetest/optimized/content_mapblock.cpp.ll

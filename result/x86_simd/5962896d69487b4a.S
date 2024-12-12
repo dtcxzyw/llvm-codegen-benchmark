@@ -22,13 +22,13 @@ func0000000000000001:                   # @func0000000000000001
 	vzeroupper
 	retq
 .LCPI2_0:
-	.long	652835029                       # 0x26e978d5
+	.long	3264175145                      # 0xc28f5c29
 .LCPI2_1:
-	.long	4294967                         # 0x418937
-func0000000000000011:                   # @func0000000000000011
+	.long	42949672                        # 0x28f5c28
+func0000000000000021:                   # @func0000000000000021
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpmulld	.LCPI2_0(%rip){1to8}, %ymm0, %ymm0
-	vprord	$3, %ymm0, %ymm0
+	vprord	$2, %ymm0, %ymm0
 	vpcmpleud	.LCPI2_1(%rip){1to8}, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -37,7 +37,7 @@ func0000000000000011:                   # @func0000000000000011
 	.long	613566757                       # 0x24924925
 .LCPI3_1:
 	.long	4                               # 0x4
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	vpaddd	%ymm1, %ymm0, %ymm0
 	vpshufd	$245, %ymm0, %ymm1              # ymm1 = ymm0[1,1,3,3,5,5,7,7]
 	vpbroadcastd	.LCPI3_0(%rip), %ymm2   # ymm2 = [613566757,613566757,613566757,613566757,613566757,613566757,613566757,613566757]

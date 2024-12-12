@@ -1,7 +1,12 @@
 
-; 246 occurrences:
+; 249 occurrences:
 ; assimp/optimized/ASELoader.cpp.ll
 ; assimp/optimized/NFFLoader.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/topology.ll
 ; cmake/optimized/cmComputeLinkDepends.cxx.ll
 ; cmake/optimized/cmFindPackageCommand.cxx.ll
 ; cmake/optimized/cmFortranParserImpl.cxx.ll
@@ -157,7 +162,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -242,7 +246,6 @@
 ; yaml-cpp/optimized/simplekey.cpp.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/preproc.ll
 ; yosys/optimized/qbfsat.ll
 ; yosys/optimized/rtlil.ll
@@ -384,7 +387,8 @@ entry:
   ret i64 %5
 }
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/self_intersection_points.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestRingBuffer.cpp.ll
@@ -402,7 +406,26 @@ entry:
   ret i64 %5
 }
 
-; 27 occurrences:
+; 8 occurrences:
+; cpython/optimized/obmalloc.ll
+; cpython/optimized/semaphore.ll
+; minetest/optimized/semaphore.cpp.ll
+; php/optimized/parse_posix.ll
+; php/optimized/tm2unixtime.ll
+; postgres/optimized/pgbench.ll
+; quickjs/optimized/quickjs.ll
+; velox/optimized/Timestamp.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = sdiv i64 %2, 1000000000
+  %4 = add i64 %0, %1
+  %5 = add i64 %4, %3
+  ret i64 %5
+}
+
+; 26 occurrences:
+; boost/optimized/exit_code.ll
 ; ceres/optimized/dense_cholesky.cc.ll
 ; duckdb/optimized/is_distinct_from.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
@@ -427,46 +450,13 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; minetest/optimized/profilergraph.cpp.ll
 ; openjdk/optimized/vm_version_x86.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = sdiv i64 %2, 26917
-  %4 = add nsw i64 %0, %1
+  %3 = add i64 %1, %2
+  %4 = sdiv exact i64 %0, 48
   %5 = add nsw i64 %4, %3
-  ret i64 %5
-}
-
-; 3 occurrences:
-; libquic/optimized/time_support.c.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000009(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nsw i64 %1, %2
-  %4 = sdiv i64 %0, -80
-  %5 = add nsw i64 %4, %3
-  ret i64 %5
-}
-
-; 8 occurrences:
-; cpython/optimized/obmalloc.ll
-; cpython/optimized/semaphore.ll
-; minetest/optimized/semaphore.cpp.ll
-; php/optimized/parse_posix.ll
-; php/optimized/tm2unixtime.ll
-; postgres/optimized/pgbench.ll
-; quickjs/optimized/quickjs.ll
-; velox/optimized/Timestamp.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sdiv i64 %2, 1000000000
-  %4 = add i64 %0, %1
-  %5 = add i64 %4, %3
   ret i64 %5
 }
 
@@ -542,6 +532,17 @@ entry:
   %3 = sdiv i64 %2, 2
   %4 = add nsw i64 %0, %1
   %5 = add i64 %4, %3
+  ret i64 %5
+}
+
+; 1 occurrences:
+; libquic/optimized/time_support.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000009(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %1, %2
+  %4 = sdiv i64 %0, -80
+  %5 = add nsw i64 %4, %3
   ret i64 %5
 }
 

@@ -51,13 +51,13 @@
 define i32 @func000000000000000b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 357913941
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = and i32 %4, 858993459
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   ret i32 %6
 }
 
-; 51 occurrences:
+; 50 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/FxchSCHashTable.c.ll
@@ -98,7 +98,6 @@ entry:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver2.c.ll
 ; abc/optimized/satSolver3.c.ll
-; abc/optimized/satUtil.c.ll
 ; abc/optimized/sswSim.c.ll
 ; abc/optimized/wlcAbs.c.ll
 ; clamav/optimized/hfsplus.c.ll
@@ -113,9 +112,9 @@ entry:
 define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 53687091
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = and i32 %4, 117901063
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -132,9 +131,9 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -8
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = and i32 %4, -8
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -146,7 +145,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -8
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = and i32 %4, -8
   %6 = add nsw i32 %5, %0
   ret i32 %6
@@ -163,9 +162,9 @@ entry:
 define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 15
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = and i32 %4, 31
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -177,7 +176,7 @@ entry:
 define i32 @func000000000000000d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = and i32 %4, 8388606
   %6 = add nsw i32 %5, %0
   ret i32 %6
@@ -189,9 +188,9 @@ entry:
 define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 7
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = and i32 %4, 858993459
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add nuw nsw i32 %0, %5
   ret i32 %6
 }
 

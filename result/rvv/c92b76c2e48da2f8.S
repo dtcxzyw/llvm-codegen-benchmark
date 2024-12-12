@@ -5,5 +5,5 @@ func0000000000000001:                   # @func0000000000000001
 	srli	a0, a0, 32
 	vand.vx	v12, v14, a0
 	vsrl.vv	v10, v10, v12
-	vmseq.vv	v0, v10, v8
+	vmseq.vv	v0, v8, v10
 	ret

@@ -1,7 +1,7 @@
-func0000000000000006:                   # @func0000000000000006
+func0000000000000028:                   # @func0000000000000028
 	sext.w	a2, a1
-	li	a3, 7
-	beq	a2, a3, .LBB0_2
+	li	a3, 59
+	blt	a3, a2, .LBB0_2
 	mv	a0, a1
 .LBB0_2:                                # %entry
 	ret
@@ -18,10 +18,4 @@ func0000000000000020:                   # @func0000000000000020
 	bltu	a3, a2, .LBB2_2
 	mv	a0, a1
 .LBB2_2:                                # %entry
-	ret
-func0000000000000022:                   # @func0000000000000022
-	srliw	a2, a1, 16
-	bnez	a2, .LBB3_2
-	mv	a0, a1
-.LBB3_2:                                # %entry
 	ret

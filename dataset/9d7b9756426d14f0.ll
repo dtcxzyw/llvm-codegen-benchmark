@@ -37,13 +37,13 @@
 ; velox/optimized/VectorFuzzer.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000041(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 63
   %4 = sdiv i32 %3, 64
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw i64, ptr %1, i64 %5
-  %7 = icmp eq ptr %6, %0
+  %7 = icmp eq ptr %0, %6
   ret i1 %7
 }
 
@@ -51,39 +51,39 @@ entry:
 ; abc/optimized/giaTtopt.cpp.ll
 ; lightgbm/optimized/bin.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000141(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 63
   %4 = sdiv i32 %3, 64
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw i64, ptr %1, i64 %5
-  %7 = icmp eq ptr %6, %0
+  %7 = icmp eq ptr %0, %6
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; opencv/optimized/grfmt_sunras.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000104(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 7
   %4 = sdiv i32 %3, 8
   %5 = sext i32 %4 to i64
   %6 = getelementptr i8, ptr %1, i64 %5
-  %7 = icmp ugt ptr %6, %0
+  %7 = icmp ult ptr %0, %6
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; openexr/optimized/ImfHuf.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000144(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 7
   %4 = sdiv i32 %3, 8
   %5 = sext i32 %4 to i64
   %6 = getelementptr nusw i8, ptr %1, i64 %5
-  %7 = icmp ugt ptr %6, %0
+  %7 = icmp ult ptr %0, %6
   ret i1 %7
 }
 

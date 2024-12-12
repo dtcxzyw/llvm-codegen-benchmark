@@ -1,7 +1,3 @@
-func0000000000000018:                   # @func0000000000000018
-	leal	254(%rdi), %eax
-	shrl	%eax
-	retq
 func0000000000000002:                   # @func0000000000000002
 	leal	510(%rdi), %eax
 	shrl	%eax

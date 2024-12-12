@@ -1,5 +1,5 @@
 
-; 82 occurrences:
+; 78 occurrences:
 ; arrow/optimized/key_map.cc.ll
 ; darktable/optimized/RawImageDataU16.cpp.ll
 ; icu/optimized/uresdata.ll
@@ -75,20 +75,16 @@
 ; llvm/optimized/UncountedLocalVarsChecker.cpp.ll
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
-; lua/optimized/ldebug.ll
-; meshoptimizer/optimized/vertexfilter.cpp.ll
 ; openjdk/optimized/pngread.ll
-; openusd/optimized/level.cpp.ll
-; openusd/optimized/patchBuilder.cpp.ll
 ; redis/optimized/rax.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, -1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %1
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
   ret ptr %6
 }
 
@@ -110,12 +106,27 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/tls_cbc.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, i32 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, 32
   %4 = zext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %1
-  %6 = getelementptr nusw i8, ptr %5, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %4
+  ret ptr %6
+}
+
+; 4 occurrences:
+; lua/optimized/ldebug.ll
+; meshoptimizer/optimized/vertexfilter.cpp.ll
+; openusd/optimized/level.cpp.ll
+; openusd/optimized/patchBuilder.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001b(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = xor i32 %2, 2
+  %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr nusw float, ptr %0, i64 %1
+  %6 = getelementptr nusw nuw float, ptr %5, i64 %4
   ret ptr %6
 }
 

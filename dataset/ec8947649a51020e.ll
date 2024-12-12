@@ -6,10 +6,10 @@
 ; proxygen/optimized/QPACKCodec.cpp.ll
 ; ruby/optimized/gc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000582(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000001302(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
-  %4 = and i64 %3, %1
+  %4 = and i64 %1, %3
   %5 = icmp ne i64 %4, 0
   %6 = icmp eq i64 %0, 0
   %7 = or i1 %6, %5
@@ -20,10 +20,10 @@ entry:
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; verilator/optimized/V3Undriven.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000438(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000001058(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
-  %4 = and i64 %3, %1
+  %4 = and i64 %1, %3
   %5 = icmp eq i64 %4, 0
   %6 = icmp ne i64 %0, 0
   %7 = or i1 %6, %5
@@ -43,10 +43,10 @@ entry:
 ; velox/optimized/UnsafeRowSerializer.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000422(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000001042(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
-  %4 = and i64 %3, %1
+  %4 = and i64 %1, %3
   %5 = icmp eq i64 %4, 0
   %6 = icmp eq i64 %0, 0
   %7 = or i1 %6, %5
@@ -56,10 +56,10 @@ entry:
 ; 1 occurrences:
 ; csmith/optimized/CVQualifiers.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000590(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000001310(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 1, %2
-  %4 = and i64 %3, %1
+  %4 = and i64 %1, %3
   %5 = icmp ne i64 %4, 0
   %6 = icmp ugt i64 %0, 2
   %7 = or i1 %6, %5
@@ -69,7 +69,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_display_irq.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000622(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000001842(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 1, %2
   %4 = and i64 %3, %1

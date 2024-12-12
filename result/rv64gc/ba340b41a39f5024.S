@@ -9,14 +9,14 @@ func0000000000000001:                   # @func0000000000000001
 	sext.w	a0, a0
 	seqz	a0, a0
 	ret
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	andi	a2, a2, 34
 	or	a1, a1, a2
 	xor	a0, a0, a1
 	andi	a0, a0, 51
 	snez	a0, a0
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	or	a1, a1, a2
 	xor	a0, a0, a1
 	slli	a0, a0, 46

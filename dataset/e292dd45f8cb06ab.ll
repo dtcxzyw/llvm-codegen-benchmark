@@ -1,30 +1,30 @@
 
-%struct.page.3341640 = type { i64, %union.anon.19.3341641, %union.anon.27.3341642, %struct.atomic_t.3341632, [8 x i8] }
-%union.anon.19.3341641 = type { %struct.anon.20.3341643 }
-%struct.anon.20.3341643 = type { %union.anon.21.3341644, ptr, %union.anon.23.3341645, i64 }
-%union.anon.21.3341644 = type { %struct.list_head.3341646 }
-%struct.list_head.3341646 = type { ptr, ptr }
-%union.anon.23.3341645 = type { i64 }
-%union.anon.27.3341642 = type { %struct.atomic_t.3341632 }
-%struct.atomic_t.3341632 = type { i32 }
-%struct.page.3352830 = type { i64, %union.anon.14.3352831, %union.anon.22.3352832, %struct.atomic_t.3352812, [8 x i8] }
-%union.anon.14.3352831 = type { %struct.anon.15.3352833 }
-%struct.anon.15.3352833 = type { %union.anon.16.3352834, ptr, %union.anon.18.3352835, i64 }
-%union.anon.16.3352834 = type { %struct.list_head.3352807 }
-%struct.list_head.3352807 = type { ptr, ptr }
-%union.anon.18.3352835 = type { i64 }
-%union.anon.22.3352832 = type { %struct.atomic_t.3352812 }
-%struct.atomic_t.3352812 = type { i32 }
+%struct.page.3530776 = type { i64, %union.anon.19.3530777, %union.anon.27.3530778, %struct.atomic_t.3530768, [8 x i8] }
+%union.anon.19.3530777 = type { %struct.anon.20.3530779 }
+%struct.anon.20.3530779 = type { %union.anon.21.3530780, ptr, %union.anon.23.3530781, i64 }
+%union.anon.21.3530780 = type { %struct.list_head.3530782 }
+%struct.list_head.3530782 = type { ptr, ptr }
+%union.anon.23.3530781 = type { i64 }
+%union.anon.27.3530778 = type { %struct.atomic_t.3530768 }
+%struct.atomic_t.3530768 = type { i32 }
+%struct.page.3540562 = type { i64, %union.anon.14.3540563, %union.anon.22.3540564, %struct.atomic_t.3540544, [8 x i8] }
+%union.anon.14.3540563 = type { %struct.anon.15.3540565 }
+%struct.anon.15.3540565 = type { %union.anon.16.3540566, ptr, %union.anon.18.3540567, i64 }
+%union.anon.16.3540566 = type { %struct.list_head.3540539 }
+%struct.list_head.3540539 = type { ptr, ptr }
+%union.anon.18.3540567 = type { i64 }
+%union.anon.22.3540564 = type { %struct.atomic_t.3540544 }
+%struct.atomic_t.3540544 = type { i32 }
 
 ; 3 occurrences:
 ; ruby/optimized/ripper.ll
 ; slurm/optimized/file_functions.ll
 ; wolfssl/optimized/rsa.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000060(i64 %0, ptr %1, i32 %2) #0 {
+define i64 @func0000000000000070(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = shl i64 %6, 32
@@ -36,10 +36,10 @@ entry:
 ; llvm/optimized/Archive.cpp.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000020(i64 %0, ptr %1, i32 %2) #0 {
+define i64 @func0000000000000030(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = shl i64 %6, 32
@@ -54,7 +54,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr %struct.page.3341640, ptr %1, i64 %3
+  %4 = getelementptr %struct.page.3530776, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = shl i64 %6, 6
@@ -72,7 +72,7 @@ entry:
 define i64 @func0000000000000040(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr %struct.page.3352830, ptr %1, i64 %3
+  %4 = getelementptr %struct.page.3540562, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = sub i64 %5, %0
   %7 = shl i64 %6, 6

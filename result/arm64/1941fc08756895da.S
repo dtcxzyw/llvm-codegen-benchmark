@@ -1,28 +1,19 @@
 func0000000000000009:                   // @func0000000000000009
 // %bb.0:                               // %entry
-	add	v3.4s, v1.4s, v3.4s
-	add	v2.4s, v0.4s, v2.4s
-	movi	v1.4s, #1
-	movi	v0.4s, #1
-	cmlt	v4.4s, v3.4s, #0
-	cmlt	v5.4s, v2.4s, #0
-	usra	v3.4s, v4.4s, #28
-	usra	v2.4s, v5.4s, #28
-	ssra	v0.4s, v2.4s, #4
-	ssra	v1.4s, v3.4s, #4
+	adds	w8, w0, w1
+	add	w9, w8, #15
+	csel	w8, w9, w8, lt
+	asr	w8, w8, #4
+	add	w0, w8, #1
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	add	v3.4s, v1.4s, v3.4s
-	add	v2.4s, v0.4s, v2.4s
-	movi	v1.4s, #1
-	movi	v0.4s, #1
-	cmlt	v4.4s, v3.4s, #0
-	cmlt	v5.4s, v2.4s, #0
-	usra	v3.4s, v4.4s, #26
-	usra	v2.4s, v5.4s, #26
-	ssra	v0.4s, v2.4s, #6
-	ssra	v1.4s, v3.4s, #6
+	add	w8, w0, w1
+	add	w9, w8, #63
+	cmp	w8, #0
+	csel	w8, w9, w8, lt
+	asr	w8, w8, #6
+	add	w0, w8, #1
 	ret
                                         // -- End function

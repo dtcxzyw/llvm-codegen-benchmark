@@ -37,7 +37,7 @@ entry:
   %3 = icmp eq i32 %2, 8
   %4 = select i1 %3, i32 4, i32 3
   %5 = add nuw i32 %4, %1
-  %6 = add nuw i32 %5, %0
+  %6 = add nuw i32 %0, %5
   %7 = zext nneg i32 %6 to i64
   ret i64 %7
 }

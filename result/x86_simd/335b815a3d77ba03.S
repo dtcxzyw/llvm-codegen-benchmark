@@ -1,7 +1,7 @@
 .LCPI0_0:
-	.zero	16,133
+	.zero	16,191
 .LCPI0_1:
-	.zero	16,230
+	.zero	16,26
 func0000000000000004:                   # @func0000000000000004
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
@@ -43,7 +43,7 @@ func0000000000000008:                   # @func0000000000000008
 	.zero	16,251
 .LCPI4_1:
 	.zero	16,252
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpsllw	$7, %xmm0, %xmm0
 	vpmovb2m	%xmm0, %k0
 	vpaddb	.LCPI4_0(%rip), %xmm1, %xmm0

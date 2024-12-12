@@ -1,6 +1,7 @@
 
-; 266 occurrences:
+; 269 occurrences:
 ; assimp/optimized/3DSLoader.cpp.ll
+; boost/optimized/syslog_backend.ll
 ; brotli/optimized/decode.c.ll
 ; bullet3/optimized/btAxisSweep3.ll
 ; c3c/optimized/llvm_codegen_function.c.ll
@@ -55,7 +56,6 @@
 ; linux/optimized/coredump.ll
 ; linux/optimized/dm.ll
 ; linux/optimized/exoparg1.ll
-; linux/optimized/fils_aead.ll
 ; linux/optimized/gro.ll
 ; linux/optimized/hda_codec.ll
 ; linux/optimized/hda_controller.ll
@@ -127,7 +127,6 @@
 ; llvm/optimized/MachineSink.cpp.ll
 ; llvm/optimized/ParseObjc.cpp.ll
 ; llvm/optimized/PrologEpilogInserter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVLegalizerInfo.cpp.ll
 ; llvm/optimized/RefCntblBaseVirtualDtorChecker.cpp.ll
@@ -239,9 +238,6 @@
 ; slurm/optimized/gang.ll
 ; slurm/optimized/slurm_protocol_api.ll
 ; slurm/optimized/step_io.ll
-; spike/optimized/f16_to_i32.ll
-; spike/optimized/f16_to_i64.ll
-; spike/optimized/f16_to_ui32.ll
 ; sqlite/optimized/sqlite3.ll
 ; unicode-normalization-rs/optimized/kwscsepwptyv51i.ll
 ; verilator/optimized/V3Param.cpp.ll
@@ -266,6 +262,13 @@
 ; yalantinglibs/optimized/file_server.cpp.ll
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/89f8nno15240ug8tk8i1phh9j.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i16 %0) #0 {
 entry:
@@ -274,14 +277,12 @@ entry:
   ret i64 %2
 }
 
-; 16 occurrences:
+; 13 occurrences:
 ; icu/optimized/normalizer2impl.ll
-; icu/optimized/ufmt_cmn.ll
 ; libevent/optimized/evdns.c.ll
 ; linux/optimized/decompress_unlzo.ll
 ; linux/optimized/intel_bios.ll
 ; linux/optimized/intel_display.ll
-; linux/optimized/intel_display_power.ll
 ; linux/optimized/intel_wm.ll
 ; linux/optimized/ucs2_string.ll
 ; llvm/optimized/DWARFDebugLine.cpp.ll
@@ -290,7 +291,6 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; qemu/optimized/block_export_vduse-blk.c.ll
 ; qemu/optimized/hw_block_vhost-user-blk.c.ll
-; sentencepiece/optimized/time.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i16 %0) #0 {
 entry:
@@ -324,12 +324,12 @@ entry:
 ; assimp/optimized/OgreXmlSerializer.cpp.ll
 ; assimp/optimized/X3DImporter.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
+; boost/optimized/test_codecvt.ll
 ; cpython/optimized/_json.ll
 ; cpython/optimized/unicodeobject.ll
 ; eastl/optimized/EAString.cpp.ll
 ; eastl/optimized/EATextUtil.cpp.ll
 ; icu/optimized/ucnv2022.ll
-; llvm/optimized/AArch64CallingConvention.cpp.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -348,18 +348,18 @@ entry:
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; llvm/optimized/LowLevelType.cpp.ll
 ; llvm/optimized/LowLevelTypeUtils.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/TargetLoweringBase.cpp.ll
+; llvm/optimized/ThreadSafetyCommon.cpp.ll
 ; llvm/optimized/TypeStreamMerger.cpp.ll
 ; llvm/optimized/ValueTypes.cpp.ll
+; llvm/optimized/X86ExpandPseudo.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLoweringCall.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
-; node/optimized/libnode.node_messaging.ll
 ; oiio/optimized/xmp.cpp.ll
 ; openusd/optimized/decodemv.c.ll
 ; openusd/optimized/refinerSurfaceFactory.cpp.ll
@@ -372,23 +372,6 @@ entry:
   ret i64 %2
 }
 
-; 8 occurrences:
-; imgui/optimized/imgui_tables.cpp.ll
-; llvm/optimized/SubtargetEmitter.cpp.ll
-; postgres/optimized/ginentrypage.ll
-; postgres/optimized/ginutil.ll
-; postgres/optimized/hashutil.ll
-; postgres/optimized/indextuple.ll
-; spike/optimized/f16_to_i32_r_minMag.ll
-; spike/optimized/f16_to_i64_r_minMag.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000a(i16 %0) #0 {
-entry:
-  %1 = icmp sgt i16 %0, -1
-  %2 = select i1 %1, i64 9223372036854775807, i64 -9223372036854775808
-  ret i64 %2
-}
-
 ; 2 occurrences:
 ; cvc5/optimized/theory_sep.cpp.ll
 ; hermes/optimized/JSProxy.cpp.ll
@@ -398,6 +381,44 @@ entry:
   %.not = icmp eq i16 %0, 0
   %1 = select i1 %.not, i64 9, i64 5
   ret i64 %1
+}
+
+; 2 occurrences:
+; llvm/optimized/AArch64CallingConvention.cpp.ll
+; node/optimized/libnode.node_messaging.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i16 %0) #0 {
+entry:
+  %1 = icmp samesign ult i16 %0, 5
+  %2 = select i1 %1, i64 4, i64 8
+  ret i64 %2
+}
+
+; 6 occurrences:
+; imgui/optimized/imgui_tables.cpp.ll
+; llvm/optimized/SubtargetEmitter.cpp.ll
+; postgres/optimized/ginentrypage.ll
+; postgres/optimized/ginutil.ll
+; postgres/optimized/hashutil.ll
+; postgres/optimized/indextuple.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000a(i16 %0) #0 {
+entry:
+  %1 = icmp sgt i16 %0, -1
+  %2 = select i1 %1, i64 5, i64 4
+  ret i64 %2
+}
+
+; 3 occurrences:
+; icu/optimized/ufmt_cmn.ll
+; linux/optimized/intel_display_power.ll
+; sentencepiece/optimized/time.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000018(i16 %0) #0 {
+entry:
+  %1 = icmp samesign ugt i16 %0, 300
+  %2 = select i1 %1, i64 3155760000, i64 3155673600
+  ret i64 %2
 }
 
 attributes #0 = { nounwind }

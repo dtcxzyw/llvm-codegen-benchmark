@@ -1,5 +1,5 @@
 
-; 270 occurrences:
+; 268 occurrences:
 ; abc/optimized/abcOdc.c.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
 ; arrow/optimized/bitmap_ops.cc.ll
@@ -38,7 +38,6 @@
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hdf5/optimized/H5Fsuper_cache.c.ll
 ; hermes/optimized/TypeInference.cpp.ll
-; hyperscan/optimized/accel.c.ll
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/hwlm.c.ll
 ; hyperscan/optimized/lbr.c.ll
@@ -85,11 +84,9 @@
 ; linux/optimized/inet_hashtables.ll
 ; linux/optimized/intel_color.ll
 ; linux/optimized/intel_guc.ll
-; linux/optimized/intel_mocs.ll
 ; linux/optimized/intel_overlay.ll
 ; linux/optimized/intel_tv.ll
 ; linux/optimized/intel_vdsc.ll
-; linux/optimized/mii.ll
 ; linux/optimized/nfs.ll
 ; linux/optimized/skl_universal_plane.ll
 ; linux/optimized/sky2.ll
@@ -122,7 +119,6 @@
 ; minetest/optimized/serverenvironment.cpp.ll
 ; minetest/optimized/servermap.cpp.ll
 ; minetest/optimized/test_map.cpp.ll
-; minetest/optimized/test_serialization.cpp.ll
 ; minetest/optimized/test_voxelalgorithms.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; openjdk/optimized/altHashing.ll
@@ -159,14 +155,12 @@
 ; pocketpy/optimized/expr.cpp.ll
 ; postgres/optimized/brin.ll
 ; postgres/optimized/brin_minmax_multi.ll
-; postgres/optimized/brin_revmap.ll
 ; postgres/optimized/catcache.ll
 ; postgres/optimized/execReplication.ll
 ; postgres/optimized/gindatapage.ll
 ; postgres/optimized/gindesc.ll
 ; postgres/optimized/ginentrypage.ll
 ; postgres/optimized/ginget.ll
-; postgres/optimized/gininsert.ll
 ; postgres/optimized/ginvacuum.ll
 ; postgres/optimized/ginxlog.ll
 ; postgres/optimized/gist.ll
@@ -176,8 +170,6 @@
 ; postgres/optimized/heapam.ll
 ; postgres/optimized/heapam_handler.ll
 ; postgres/optimized/heapam_visibility.ll
-; postgres/optimized/heapdesc.ll
-; postgres/optimized/itemptr.ll
 ; postgres/optimized/lmgr.ll
 ; postgres/optimized/nbtdedup.ll
 ; postgres/optimized/nbtinsert.ll
@@ -266,6 +258,12 @@
 ; wireshark/optimized/rtp_stream_id.c.ll
 ; wireshark/optimized/tvbuff_lz77huff.c.ll
 ; wireshark/optimized/usbdump.c.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/c11y3knqzm7uiyc3hjuh2wdo8.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; zxing/optimized/ODCodabarReader.cpp.ll
 ; zxing/optimized/ODCode39Reader.cpp.ll
@@ -279,7 +277,7 @@ entry:
   ret i32 %4
 }
 
-; 82 occurrences:
+; 84 occurrences:
 ; arrow/optimized/float16.cc.ll
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/ColladaParser.cpp.ll
@@ -309,7 +307,6 @@ entry:
 ; linux/optimized/8250_pci.ll
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/hdac_device.ll
-; linux/optimized/int_log.ll
 ; linux/optimized/nf_conntrack_helper.ll
 ; linux/optimized/vlv_dsi.ll
 ; llvm/optimized/SemaDecl.cpp.ll
@@ -362,6 +359,9 @@ entry:
 ; wireshark/optimized/packet-reload.c.ll
 ; wireshark/optimized/tvbuff.c.ll
 ; wireshark/optimized/vwr.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i16 %1) #0 {
 entry:
@@ -387,7 +387,7 @@ define i32 @func0000000000000000(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = shl i32 %2, 24
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -441,7 +441,7 @@ entry:
   ret i32 %4
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; abc/optimized/mapperCanon.c.ll
 ; libwebp/optimized/vp8l_dec.c.ll
 ; linux/optimized/82571.ll
@@ -455,7 +455,6 @@ entry:
 ; recastnavigation/optimized/DetourTileCache.cpp.ll
 ; wireshark/optimized/packet-gsm_sms.c.ll
 ; wireshark/optimized/packet-hci_usb.c.ll
-; wireshark/optimized/packet-lin.c.ll
 ; wireshark/optimized/packet-tecmp.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i16 %1) #0 {
@@ -488,11 +487,11 @@ define i32 @func0000000000000001(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = shl i32 %2, 20
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
-; 289 occurrences:
+; 297 occurrences:
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -616,6 +615,10 @@ entry:
 ; linux/optimized/xhci.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
@@ -782,31 +785,39 @@ entry:
 ; wireshark/optimized/print.c.ll
 ; wireshark/optimized/sequence_analysis.c.ll
 ; wireshark/optimized/sharkd_session.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
   %3 = shl nuw nsw i32 %2, 16
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
-; 9 occurrences:
+; 13 occurrences:
 ; abc/optimized/giaEmbed.c.ll
 ; linux/optimized/cacheinfo.ll
 ; linux/optimized/skl_universal_plane.ll
+; lvgl/optimized/lv_binfont_loader.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; ncnn/optimized/mat.cpp.ll
 ; openjdk/optimized/gtk3_interface.ll
 ; recastnavigation/optimized/DetourDebugDraw.cpp.ll
 ; recastnavigation/optimized/RecastDebugDraw.cpp.ll
 ; wireshark/optimized/packet-flexray.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
   %3 = shl nuw i32 %2, 24
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
@@ -831,7 +842,7 @@ define i32 @func0000000000000008(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
   %3 = shl i32 %2, 28
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 

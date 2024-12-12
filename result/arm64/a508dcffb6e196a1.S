@@ -4,20 +4,13 @@ func0000000000000001:                   // @func0000000000000001
 	cset	w0, eq
 	ret
                                         // -- End function
-func000000000000004c:                   // @func000000000000004c
+func000000000000008c:                   // @func000000000000008c
 // %bb.0:                               // %entry
 	cmn	x1, w0, uxtw
 	cset	w0, ne
 	ret
                                         // -- End function
-func000000000000004a:                   // @func000000000000004a
-// %bb.0:                               // %entry
-	add	x8, x1, w0, uxtw
-	lsr	x8, x8, #63
-	eor	w0, w8, #0x1
-	ret
-                                        // -- End function
-func000000000000000a:                   // @func000000000000000a
+func000000000000008a:                   // @func000000000000008a
 // %bb.0:                               // %entry
 	add	x8, x1, w0, uxtw
 	lsr	x8, x8, #63

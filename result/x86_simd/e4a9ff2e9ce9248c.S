@@ -148,3 +148,53 @@ func0000000000000000:                   # @func0000000000000000
 	vpord	.LCPI2_3(%rip){1to8}, %ymm1, %ymm0
 	vmovdqu16	%ymm1, %ymm0 {%k1}
 	retq
+.LCPI3_0:
+	.short	8192                            # 0x2000
+	.short	8192                            # 0x2000
+	.short	8192                            # 0x2000
+	.short	8192                            # 0x2000
+	.short	8192                            # 0x2000
+	.short	8192                            # 0x2000
+	.short	8192                            # 0x2000
+	.short	8192                            # 0x2000
+	.short	8192                            # 0x2000
+	.short	8192                            # 0x2000
+	.short	8192                            # 0x2000
+	.short	8192                            # 0x2000
+	.short	8192                            # 0x2000
+	.short	8192                            # 0x2000
+	.short	8192                            # 0x2000
+	.short	8192                            # 0x2000
+.LCPI3_1:
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+.LCPI3_2:
+	.short	8192                            # 0x2000
+	.short	8192                            # 0x2000
+.LCPI3_3:
+	.short	256                             # 0x100
+	.short	256                             # 0x100
+func0000000000000001:                   # @func0000000000000001
+	vpsllw	$7, %xmm0, %xmm0
+	vpmovb2m	%xmm0, %k1
+	vpsllw	$7, %xmm1, %xmm0
+	vpmovb2m	%xmm0, %k2
+	vpord	.LCPI3_2(%rip){1to8}, %ymm2, %ymm1
+	vmovdqu16	%ymm2, %ymm1 {%k2}
+	vpord	.LCPI3_3(%rip){1to8}, %ymm1, %ymm0
+	vmovdqu16	%ymm1, %ymm0 {%k1}
+	retq

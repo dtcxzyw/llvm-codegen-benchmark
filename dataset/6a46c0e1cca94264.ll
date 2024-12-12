@@ -12,7 +12,7 @@ entry:
   %3 = sub nuw nsw i16 32, %2
   %4 = zext nneg i16 %3 to i32
   %5 = select i1 %1, i32 1, i32 %4
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   %7 = sub nsw i32 24, %6
   ret i32 %7
 }

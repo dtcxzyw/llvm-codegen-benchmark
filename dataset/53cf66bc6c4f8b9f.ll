@@ -1,5 +1,6 @@
 
-; 17 occurrences:
+; 19 occurrences:
+; arrow/optimized/value_parsing.cc.ll
 ; assimp/optimized/PlyParser.cpp.ll
 ; assimp/optimized/STEPFileReader.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -11,6 +12,7 @@
 ; lightgbm/optimized/tree.cpp.ll
 ; luajit/optimized/lib_base.ll
 ; luajit/optimized/lib_base_dyn.ll
+; mitsuba3/optimized/string.cpp.ll
 ; opencc/optimized/Config.cpp.ll
 ; openusd/optimized/json.cpp.ll
 ; simdjson/optimized/simdjson.cpp.ll

@@ -31,6 +31,18 @@ func00000000000000f8:                   # @func00000000000000f8
 	add	a0, a0, a1
 	add	a0, a0, a2
 	ret
+func00000000000000fc:                   # @func00000000000000fc
+	slli	a2, a2, 1
+	li	a3, 1
+	slli	a1, a1, 3
+	slli	a3, a3, 33
+	addi	a3, a3, -4
+	add	a2, a2, a3
+	and	a2, a2, a3
+	add	a0, a0, a1
+	slli	a2, a2, 3
+	add	a0, a0, a2
+	ret
 func00000000000000f0:                   # @func00000000000000f0
 	slli	a2, a2, 2
 	li	a3, 1

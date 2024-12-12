@@ -51,7 +51,7 @@
 ; openjdk/optimized/zVerify.ll
 ; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002a8(ptr %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000548(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw float, ptr %0, i64 %2
   %4 = getelementptr nusw i8, ptr %3, i64 -4

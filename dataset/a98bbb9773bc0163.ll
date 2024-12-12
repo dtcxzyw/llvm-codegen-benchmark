@@ -3,7 +3,7 @@
 ; icu/optimized/unistr.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000666(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000018c6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 1
   %4 = icmp sgt i32 %1, 0
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/CColorConverter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000066c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000018cc(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 0
   %4 = icmp slt i32 %1, 1
@@ -36,7 +36,7 @@ entry:
 ; verilator/optimized/V3VariableOrder.cpp.ll
 ; zxing/optimized/Content.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000421(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 63
   %4 = icmp ne i32 %1, 63
@@ -49,7 +49,7 @@ entry:
 ; 1 occurrences:
 ; openblas/optimized/cblas_dgemm.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000016a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000004ca(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 113
   %4 = icmp slt i32 %1, 0

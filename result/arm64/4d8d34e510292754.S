@@ -1,14 +1,9 @@
-func0000000000000051:                   // @func0000000000000051
+func00000000000000a1:                   // @func00000000000000a1
 // %bb.0:                               // %entry
-	shll	v1.8h, v1.8b, #8
-	mvni	v2.8h, #218
+	orr	w8, w0, w1, lsl #8
+	mov	w9, #65317                      // =0xff25
+	cmp	w9, w8, uxth
 	mov	w8, #37097                      // =0x90e9
-	dup	v3.4s, w8
-	orr	v0.16b, v1.16b, v0.16b
-	cmeq	v0.8h, v0.8h, v2.8h
-	sshll	v2.4s, v0.4h, #0
-	sshll2	v0.4s, v0.8h, #0
-	and	v1.16b, v0.16b, v3.16b
-	and	v0.16b, v2.16b, v3.16b
+	csel	w0, w8, wzr, eq
 	ret
                                         // -- End function

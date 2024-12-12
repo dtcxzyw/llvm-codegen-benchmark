@@ -1,14 +1,14 @@
 func0000000000000000:                   # @func0000000000000000
 	movl	%esi, %eax
-	xorb	%dil, %al
-	andb	$1, %dil
 	andb	$1, %al
+	xorb	%dil, %sil
+	andb	$1, %sil
 	xorl	%ecx, %ecx
-	negb	%dil
+	cmpb	$1, %al
 	sbbl	%ecx, %ecx
-	orb	%al, %cl
+	orb	%sil, %cl
 	movzbl	%cl, %ecx
-	movzbl	%al, %eax
-	testb	$1, %sil
-	cmovel	%ecx, %eax
+	movzbl	%sil, %eax
+	testb	$1, %dil
+	cmovnel	%ecx, %eax
 	retq

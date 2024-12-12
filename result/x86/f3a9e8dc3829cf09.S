@@ -1,47 +1,40 @@
-func0000000000000022:                   # @func0000000000000022
-	cmpl	%edi, %edx
+func0000000000000042:                   # @func0000000000000042
+	cmpl	%edx, %edi
 	sete	%cl
 	testb	%sil, %sil
 	setns	%al
 	orb	%cl, %al
 	retq
-func00000000000000e2:                   # @func00000000000000e2
-	cmpl	%edi, %edx
-	setge	%cl
+func00000000000001c2:                   # @func00000000000001c2
+	cmpl	%edx, %edi
+	setle	%cl
 	testl	$33554432, %esi                 # imm = 0x2000000
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000638:                   # @func0000000000000638
+func0000000000001858:                   # @func0000000000001858
 	btq	$32, %rdx
 	setae	%cl
-	cmpl	%edi, %esi
+	cmpl	%esi, %edi
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000000622:                   # @func0000000000000622
-	cmpl	%edi, %edx
+func0000000000001842:                   # @func0000000000001842
+	cmpl	%edx, %edi
 	sete	%cl
 	testb	$7, %sil
 	sete	%al
 	orb	%cl, %al
 	retq
-func00000000000000a2:                   # @func00000000000000a2
-	cmpl	%edi, %edx
-	setae	%cl
+func0000000000000142:                   # @func0000000000000142
+	cmpl	%edx, %edi
+	setbe	%cl
 	testl	%esi, %esi
 	setns	%al
 	orb	%cl, %al
 	retq
-func0000000000000698:                   # @func0000000000000698
-	cmpl	%edi, %edx
-	seta	%cl
-	testb	$3, %sil
-	setne	%al
-	orb	%cl, %al
-	retq
-func0000000000000198:                   # @func0000000000000198
-	cmpl	%edi, %edx
+func0000000000000318:                   # @func0000000000000318
+	cmpl	%edx, %edi
 	setne	%al
 	shrq	$32, %rsi
 	andl	$1, %esi

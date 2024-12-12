@@ -1,5 +1,5 @@
 
-; 31 occurrences:
+; 20 occurrences:
 ; abc/optimized/extraUtilCube.c.ll
 ; ceres/optimized/schur_eliminator_2_3_3.cc.ll
 ; ceres/optimized/schur_eliminator_2_3_4.cc.ll
@@ -14,22 +14,11 @@
 ; hdf5/optimized/H5DS.c.ll
 ; hwloc/optimized/lstopo-lstopo-text.ll
 ; hwloc/optimized/lstopo_no_graphics-lstopo-text.ll
-; meshlab/optimized/edit_point.cpp.ll
-; meshlab/optimized/filter_colorproc.cpp.ll
-; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_measure.cpp.ll
-; meshlab/optimized/filter_voronoi.cpp.ll
-; meshlab/optimized/meshfilter.cpp.ll
-; meshlab/optimized/meshselect.cpp.ll
-; meshlab/optimized/mlsplugin.cpp.ll
 ; ocio/optimized/FileFormatICC.cpp.ll
-; opencv/optimized/dpm_feature.cpp.ll
 ; opencv/optimized/imgproc_calcHist.cpp.ll
 ; openmpi/optimized/common_ompio_aggregators.ll
 ; openusd/optimized/listOp.cpp.ll
-; raylib/optimized/rmodels.c.ll
 ; recastnavigation/optimized/RecastArea.cpp.ll
-; recastnavigation/optimized/TestCase.cpp.ll
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0) #0 {
@@ -39,12 +28,14 @@ entry:
   ret i64 %2
 }
 
-; 73 occurrences:
+; 85 occurrences:
 ; abseil-cpp/optimized/symbolize.cc.ll
 ; annoy/optimized/annoymodule.ll
 ; arrow/optimized/decimal.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; brotli/optimized/backward_references.c.ll
 ; ceres/optimized/schur_eliminator_2_3_3.cc.ll
 ; ceres/optimized/schur_eliminator_2_3_4.cc.ll
@@ -113,6 +104,16 @@ entry:
 ; tree-sitter-rs/optimized/3pra6a7meoswj3tu.ll
 ; tree-sitter-rs/optimized/3w8fnbh84xi9yzxl.ll
 ; tree-sitter-rs/optimized/hpag7w091st4k7n.ll
+; zed-rs/optimized/03brr8qxqnecxcjxb2rfivkuz.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/3quypyfrg8uizn5sealer8xsk.ll
+; zed-rs/optimized/4s3i3gpn7nuv3jdpoq0skrhno.ll
+; zed-rs/optimized/83f7cv59nhkcel85ism08ubeo.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/c4c7jl64zv8zhv2ne6xdvhty4.ll
+; zed-rs/optimized/cj7s0wliqptmxcvil2fbp8uvc.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0) #0 {
 entry:
@@ -121,7 +122,7 @@ entry:
   ret i64 %2
 }
 
-; 65 occurrences:
+; 73 occurrences:
 ; abc/optimized/acecCo.c.ll
 ; abc/optimized/acecPool.c.ll
 ; abc/optimized/acecRe.c.ll
@@ -134,16 +135,20 @@ entry:
 ; clamav/optimized/others_common.c.ll
 ; cmake/optimized/cmConditionEvaluator.cxx.ll
 ; cmake/optimized/cmExportFileGenerator.cxx.ll
+; cmake/optimized/lzma_encoder_optimum_normal.c.ll
 ; darktable/optimized/Cr2sRawInterpolator.cpp.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
 ; darktable/optimized/introspection_colorchecker.c.ll
+; darktable/optimized/introspection_demosaic.c.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; folly/optimized/Dump.cpp.ll
 ; gromacs/optimized/simulatoralgorithm.cpp.ll
 ; gromacs/optimized/surfacearea.cpp.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
 ; hdf5/optimized/h5stat.c.ll
 ; hdf5/optimized/sio_perf.c.ll
+; hwloc/optimized/topology-synthetic.ll
 ; hyperscan/optimized/ng_violet.cpp.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; linux/optimized/e100.ll
@@ -157,12 +162,16 @@ entry:
 ; nlohmann_json/optimized/unit-regression2.cpp.ll
 ; node/optimized/libnode.cleanup_queue.ll
 ; ocio/optimized/Lut1DOpData.cpp.ll
-; openblas/optimized/dgbtrf.c.ll
 ; opencv/optimized/fast_window_binarizer.cpp.ll
+; openjdk/optimized/hb-ot-shaper-indic.ll
+; openjdk/optimized/hb-ot-shaper-khmer.ll
+; openjdk/optimized/hb-ot-shaper-myanmar.ll
+; openjdk/optimized/hb-ot-shaper-use.ll
 ; openusd/optimized/testHdSceneIndex.cpp.ll
 ; php/optimized/apprentice.ll
 ; postgres/optimized/nodeIndexscan.ll
 ; postgres/optimized/pgbench.ll
+; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
 ; quantlib/optimized/lsmbasissystem.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; recastnavigation/optimized/NavMeshTesterTool.cpp.ll
@@ -195,9 +204,8 @@ entry:
   ret i64 %2
 }
 
-; 25 occurrences:
+; 26 occurrences:
 ; abc/optimized/giaMini.c.ll
-; abc/optimized/sclUpsize.c.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/builder_dict.cc.ll
@@ -208,10 +216,12 @@ entry:
 ; glslang/optimized/glslang_tab.cpp.ll
 ; gromacs/optimized/tng_io.c.ll
 ; gromacs/optimized/xtc3.c.ll
+; jq/optimized/jv.ll
 ; libjpeg-turbo/optimized/jquant1.c.ll
 ; libquic/optimized/modp_b64.cc.ll
 ; linux/optimized/build_utility.ll
 ; linux/optimized/generic-radix-tree.ll
+; linux/optimized/rc80211_minstrel_ht.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; ocio/optimized/Lut1DOpGPU.cpp.ll
 ; openblas/optimized/dgemm_itcopy.c.ll
@@ -229,8 +239,9 @@ entry:
   ret i64 %2
 }
 
-; 44 occurrences:
+; 55 occurrences:
 ; abc/optimized/acecOrder.c.ll
+; abc/optimized/sclUpsize.c.ll
 ; assimp/optimized/LWOLoader.cpp.ll
 ; assimp/optimized/SceneCombiner.cpp.ll
 ; assimp/optimized/UnrealLoader.cpp.ll
@@ -238,10 +249,13 @@ entry:
 ; casadi/optimized/integration_tools.cpp.ll
 ; casadi/optimized/mx_function.cpp.ll
 ; cpython/optimized/longobject.ll
+; darktable/optimized/introspection_demosaic.c.ll
 ; gromacs/optimized/mtop_util.cpp.ll
+; harfbuzz/optimized/harfbuzz.cc.ll
 ; hermes/optimized/gtest-all.cc.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; influxdb-rs/optimized/4xdswox27ronf9w0.ll
+; jq/optimized/jv.ll
 ; just-rs/optimized/15cobjmzhaiu6jpj.ll
 ; libwebp/optimized/upsampling.c.ll
 ; lief/optimized/nist_kw.c.ll
@@ -249,6 +263,7 @@ entry:
 ; linux/optimized/generic-radix-tree.ll
 ; linux/optimized/io_pgtable.ll
 ; linux/optimized/io_pgtable_v2.ll
+; linux/optimized/xhci.ll
 ; llvm/optimized/CodeGenSchedule.cpp.ll
 ; llvm/optimized/SampleProfileInference.cpp.ll
 ; llvm/optimized/SimplifyCFG.cpp.ll
@@ -266,10 +281,16 @@ entry:
 ; opencv/optimized/regtree.cpp.ll
 ; opencv/optimized/sparse_matching_gpc.cpp.ll
 ; opencv/optimized/ts_gtest.cpp.ll
+; openjdk/optimized/hb-ot-shaper-indic.ll
+; openspiel/optimized/bridge.cc.ll
 ; openspiel/optimized/go_board.cc.ll
 ; openspiel/optimized/phantom_go_board.cc.ll
-; openusd/optimized/simplify.cpp.ll
+; openspiel/optimized/spades.cc.ll
 ; openusd/optimized/type.cpp.ll
+; postgres/optimized/execExpr.ll
+; qemu/optimized/hw_core_numa.c.ll
+; rayon-rs/optimized/2xi93mrj8f00xnic.ll
+; sqlite/optimized/sqlite3.ll
 ; vcpkg/optimized/paragraphs.cpp.ll
 ; wasmtime-rs/optimized/3flv1664rwe55t82.ll
 ; wasmtime-rs/optimized/48myxw210mngc99c.ll
@@ -282,18 +303,20 @@ entry:
   ret i64 %2
 }
 
-; 17 occurrences:
-; abc/optimized/sclUpsize.c.ll
+; 19 occurrences:
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; clamav/optimized/petite.c.ll
 ; gromacs/optimized/boxdeformation.cpp.ll
 ; icu/optimized/gregocal.ll
+; linux/optimized/dm-raid1.ll
 ; linux/optimized/generic-radix-tree.ll
 ; luau/optimized/isocline.c.ll
 ; meshlab/optimized/io_x3d.cpp.ll
 ; ocio/optimized/Lut1DOpData.cpp.ll
-; openblas/optimized/dgbtrf.c.ll
 ; php/optimized/tm2unixtime.ll
+; postgres/optimized/brin_inclusion.ll
+; postgres/optimized/brin_minmax.ll
+; postgres/optimized/brin_minmax_multi.ll
 ; quantlib/optimized/cmsmarketcalibration.ll
 ; recastnavigation/optimized/DetourPathCorridor.cpp.ll
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
@@ -350,6 +373,17 @@ entry:
   ret i64 %2
 }
 
+; 2 occurrences:
+; abc/optimized/sclUpsize.c.ll
+; cpython/optimized/longobject.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000006(i64 %0) #0 {
+entry:
+  %1 = mul i64 %0, 12
+  %2 = add i64 %1, -12
+  ret i64 %2
+}
+
 ; 1 occurrences:
 ; git/optimized/parse-options-cb.ll
 ; Function Attrs: nounwind
@@ -373,45 +407,82 @@ entry:
   ret i64 %2
 }
 
-; 1 occurrences:
-; linux/optimized/tick-sched.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000e(i64 %0) #0 {
-entry:
-  %1 = mul nuw i64 %0, 1000000
-  %2 = add nuw i64 %1, 1000000
-  ret i64 %2
-}
-
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/src.ll
 ; postgres/optimized/nodeIndexscan.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000d(i64 %0) #0 {
 entry:
-  %1 = mul i64 %0, -72
-  %2 = add i64 %1, -72
+  %1 = mul i64 %0, -48
+  %2 = add i64 %1, -48
   ret i64 %2
 }
 
-; 3 occurrences:
+; 12 occurrences:
+; linux/optimized/tick-sched.ll
+; meshlab/optimized/edit_point.cpp.ll
+; meshlab/optimized/filter_colorproc.cpp.ll
+; meshlab/optimized/filter_create.cpp.ll
+; meshlab/optimized/filter_measure.cpp.ll
+; meshlab/optimized/filter_voronoi.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; meshlab/optimized/meshselect.cpp.ll
+; meshlab/optimized/mlsplugin.cpp.ll
+; opencv/optimized/dpm_feature.cpp.ll
+; raylib/optimized/rmodels.c.ll
+; recastnavigation/optimized/TestCase.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000e(i64 %0) #0 {
+entry:
+  %1 = mul nuw i64 %0, 12
+  %2 = add nuw i64 %1, 12
+  ret i64 %2
+}
+
+; 38 occurrences:
 ; eastl/optimized/BenchmarkTupleVector.cpp.ll
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
+; eastl/optimized/TestSegmentedVector.cpp.ll
 ; eastl/optimized/TestTupleVector.cpp.ll
+; hwloc/optimized/topology-synthetic.ll
+; zed-rs/optimized/08rfmg7gqi4939tj99psx2cc1.ll
+; zed-rs/optimized/1dgnm6lfd9h2ap1ws2supa1aq.ll
+; zed-rs/optimized/1jbe4zqf10fi4dnkcvibaggjj.ll
+; zed-rs/optimized/1szjr41vjnxcxgyq70q0xb6lv.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/25la7m7vywfxvwku7cmlhn88p.ll
+; zed-rs/optimized/2kdnbhr565y0fo4mrf73ibiu5.ll
+; zed-rs/optimized/2tnb5q2nu282joegshdwbwmo4.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/3asl26bwuz5g6rf3ammr043cc.ll
+; zed-rs/optimized/468dd38yzqjsa1zmcu5rd6jgo.ll
+; zed-rs/optimized/4jorz9az93w02qp1j17ku3v0j.ll
+; zed-rs/optimized/4z6vlo4eo03eve34h1wxhlae7.ll
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
+; zed-rs/optimized/5syv1375c7i7870jctt3co1ip.ll
+; zed-rs/optimized/5wsk7wl322xg0y1u2gbq1r3rk.ll
+; zed-rs/optimized/5xevyi85tx7z64jdpnqwqtx9p.ll
+; zed-rs/optimized/5zvzdqo9nykovvrfw25tdotue.ll
+; zed-rs/optimized/6sgfnscy7p01akiz795s6wpkk.ll
+; zed-rs/optimized/79pkk0uh2o8d7azal4ksf2mob.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/8lmzon2kdaz83ocz8p00fckkv.ll
+; zed-rs/optimized/8uq0kpgi8jqekwanrrlvbr0h1.ll
+; zed-rs/optimized/914lh5mzek2kam75czht77x9a.ll
+; zed-rs/optimized/a3hrzugt78pdexsn4h7d7fddk.ll
+; zed-rs/optimized/ag0lml678ueaz8wuwxuz1u0bn.ll
+; zed-rs/optimized/ayy5pqcx1yuz6kdx9ooq2ruee.ll
+; zed-rs/optimized/b6ps497cu7xjd0as5oqedkmfl.ll
+; zed-rs/optimized/biea7u9y4mp6m3ifunknc64xm.ll
+; zed-rs/optimized/blc07kmo6cnkd0np8c4wtnq7t.ll
+; zed-rs/optimized/cd51tp3f9xzjf7uqmsq5af267.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
+; zed-rs/optimized/de4xf1plz4ya209x66ee15yyx.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0) #0 {
 entry:
-  %1 = mul i64 %0, 56
-  %2 = add i64 %1, 56
-  ret i64 %2
-}
-
-; 1 occurrences:
-; cpython/optimized/longobject.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000006(i64 %0) #0 {
-entry:
-  %1 = mul i64 %0, 30
-  %2 = add i64 %1, -30
+  %1 = mul i64 %0, 24
+  %2 = add i64 %1, -24
   ret i64 %2
 }
 

@@ -1,7 +1,9 @@
 
-; 2 occurrences:
+; 4 occurrences:
 ; ring-rs/optimized/2y22w349mvmovez2.ll
 ; rocksdb/optimized/file_prefetch_buffer.cc.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:

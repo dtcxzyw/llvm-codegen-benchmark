@@ -1,5 +1,5 @@
 
-; 71 occurrences:
+; 70 occurrences:
 ; assimp/optimized/ColladaLoader.cpp.ll
 ; assimp/optimized/FBXExporter.cpp.ll
 ; graphviz/optimized/adjust.c.ll
@@ -27,7 +27,6 @@
 ; gromacs/optimized/replicaexchange.cpp.ll
 ; gromacs/optimized/sbdsdc.cpp.ll
 ; gromacs/optimized/slasd4.cpp.ll
-; gromacs/optimized/slasdt.cpp.ll
 ; gromacs/optimized/sstebz.cpp.ll
 ; gromacs/optimized/trxio.cpp.ll
 ; gromacs/optimized/velocityscalingtemperaturecoupling.cpp.ll

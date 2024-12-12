@@ -1,5 +1,7 @@
 
-; 194 occurrences:
+; 195 occurrences:
+; boost/optimized/attribute_value_set.ll
+; boost/optimized/to_chars.ll
 ; coreutils-rs/optimized/2g9ijtjos2xwh9zs.ll
 ; eastl/optimized/TestVector.cpp.ll
 ; folly/optimized/farmhash.cpp.ll
@@ -167,7 +169,6 @@
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/tensor.cpp.ll
@@ -203,7 +204,7 @@ entry:
   ret i64 %5
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_temporal.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
@@ -212,6 +213,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_func_date.cpp.ll
 ; libjpeg-turbo/optimized/jidctint.c.ll
 ; ruby/optimized/time.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -227,7 +229,7 @@ entry:
 define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = mul nsw i64 %4, 86400
   ret i64 %5
 }
@@ -262,7 +264,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = mul nsw i64 %4, 365
   ret i64 %5
 }
@@ -279,7 +281,8 @@ entry:
   ret i64 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/default_formatter_factory.ll
 ; hermes/optimized/HadesGC.cpp.ll
 ; hyperscan/optimized/ng_repeat.cpp.ll
 ; lief/optimized/Builder.cpp.ll
@@ -295,7 +298,24 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
+; 6 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
+; opencv/optimized/resize.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003d(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %1, %2
+  %4 = add nuw nsw i64 %3, %0
+  %5 = mul nsw i64 %4, 1000000
+  ret i64 %5
+}
+
+; 5 occurrences:
+; boost/optimized/text_file_backend.ll
 ; faiss/optimized/hamming.cpp.ll
 ; hyperscan/optimized/ng_literal_analysis.cpp.ll
 ; libjpeg-turbo/optimized/jfdctint.c.ll
@@ -305,7 +325,7 @@ define i64 @func000000000000003f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = add nuw nsw i64 %3, %0
-  %5 = mul nuw nsw i64 %4, 20
+  %5 = mul nuw nsw i64 %4, 1000000
   ret i64 %5
 }
 
@@ -317,17 +337,6 @@ entry:
   %3 = add nuw i64 %1, %2
   %4 = add nuw nsw i64 %3, %0
   %5 = mul nuw nsw i64 %4, 20
-  ret i64 %5
-}
-
-; 1 occurrences:
-; opencv/optimized/resize.cpp.ll
-; Function Attrs: nounwind
-define i64 @func000000000000003d(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw nsw i64 %1, %2
-  %4 = add nuw nsw i64 %3, %0
-  %5 = mul nsw i64 %4, -4294967296
   ret i64 %5
 }
 

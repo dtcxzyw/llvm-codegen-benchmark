@@ -4,7 +4,7 @@
 ; oiio/optimized/iffoutput.cpp.ll
 ; rocksdb/optimized/writable_file_writer.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, %0
   %4 = sub nuw i64 %3, %1
@@ -28,11 +28,10 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; redis/optimized/listpack.ll
+; 1 occurrences:
 ; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, %0
   %4 = sub nsw i64 %3, %1

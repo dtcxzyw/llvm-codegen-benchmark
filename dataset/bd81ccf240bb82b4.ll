@@ -25,20 +25,6 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
-; libjpeg-turbo/optimized/jcdctmgr.c.ll
-; linux/optimized/select.ll
-; qemu/optimized/hw_audio_es1370.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000008(i64 %0) #0 {
-entry:
-  %1 = trunc i64 %0 to i32
-  %2 = add i32 %1, 988
-  %3 = lshr i32 %2, 2
-  %4 = and i32 %3, 255
-  ret i32 %4
-}
-
 ; 5 occurrences:
 ; hermes/optimized/APInt.cpp.ll
 ; linux/optimized/evdev.ll
@@ -67,6 +53,19 @@ entry:
   %2 = lshr i64 %1, 32
   %3 = trunc nuw i64 %2 to i32
   %4 = and i32 %3, 255
+  ret i32 %4
+}
+
+; 2 occurrences:
+; libjpeg-turbo/optimized/jcdctmgr.c.ll
+; linux/optimized/select.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i64 %0) #0 {
+entry:
+  %1 = add nsw i64 %0, 63
+  %2 = lshr i64 %1, 3
+  %3 = trunc i64 %2 to i32
+  %4 = and i32 %3, -8
   ret i32 %4
 }
 

@@ -8,13 +8,15 @@
 define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   %4 = select i1 %3, i64 1155, i64 1
   ret i64 %4
 }
 
-; 21 occurrences:
+; 23 occurrences:
 ; assimp/optimized/MMDImporter.cpp.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; cmake/optimized/cmCTestSubmitHandler.cxx.ll
 ; cvc5/optimized/bounded_integers.cpp.ll
 ; eastl/optimized/TestFixedMap.cpp.ll
@@ -39,7 +41,7 @@ entry:
 define i64 @func000000000000000a(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = icmp slt i64 %2, %0
+  %3 = icmp sgt i64 %0, %2
   %4 = select i1 %3, i64 24, i64 16
   ret i64 %4
 }
@@ -63,12 +65,13 @@ entry:
 define i64 @func0000000000000006(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = icmp sgt i64 %2, %0
+  %3 = icmp slt i64 %0, %2
   %4 = select i1 %3, i64 16, i64 24
   ret i64 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/benchmark_fstream.ll
 ; cvc5/optimized/quant_conflict_find.cpp.ll
 ; lief/optimized/BinaryParser.cpp.ll
 ; verilator/optimized/V3Slice.cpp.ll
@@ -77,7 +80,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = icmp ugt i64 %2, %0
+  %3 = icmp ult i64 %0, %2
   %4 = select i1 %3, i64 24, i64 16
   ret i64 %4
 }
@@ -88,7 +91,7 @@ entry:
 define i64 @func0000000000000007(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %.not = icmp slt i64 %2, %0
+  %.not = icmp sgt i64 %0, %2
   %3 = select i1 %.not, i64 408, i64 736
   ret i64 %3
 }

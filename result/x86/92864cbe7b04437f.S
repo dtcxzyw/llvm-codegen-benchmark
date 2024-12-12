@@ -13,11 +13,11 @@ func000000000000018f:                   # @func000000000000018f
 	sbbq	$-1, %rdi
 	leaq	1(%rdi), %rax
 	retq
-func0000000000000105:                   # @func0000000000000105
-	shrq	$54, %rsi
-	cmpq	$1, %rsi
-	sbbq	$-1, %rdi
-	leaq	-2047(%rdi), %rax
+func0000000000000188:                   # @func0000000000000188
+	xorl	%eax, %eax
+	cmpq	$7, %rsi
+	setne	%al
+	leaq	-1(%rdi,%rax), %rax
 	retq
 func0000000000000185:                   # @func0000000000000185
 	cmpq	$1, %rsi

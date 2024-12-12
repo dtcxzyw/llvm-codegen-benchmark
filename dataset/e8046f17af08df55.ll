@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 16 occurrences:
 ; cpython/optimized/longobject.ll
 ; duckdb/optimized/ub_duckdb_adbc_nanoarrow.cpp.ll
 ; eastl/optimized/BenchmarkDeque.cpp.ll
@@ -10,11 +10,12 @@
 ; llvm/optimized/SemaChecking.cpp.ll
 ; meilisearch-rs/optimized/54ajasddlqavlxt2.ll
 ; openblas/optimized/dgetrf_single.c.ll
-; opencv/optimized/samplers.cpp.ll
 ; openjdk/optimized/codeCache.ll
 ; openssl/optimized/evp_test-bin-evp_test.ll
 ; php/optimized/dow.ll
 ; ruby/optimized/gc.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -35,10 +36,20 @@ entry:
   ret i64 %5
 }
 
-; 200 occurrences:
+; 220 occurrences:
 ; annoy/optimized/annoymodule.ll
 ; arrow/optimized/feather.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
+; assimp/optimized/AMFImporter.cpp.ll
+; assimp/optimized/ColladaParser.cpp.ll
+; assimp/optimized/D3MFImporter.cpp.ll
+; assimp/optimized/D3MFOpcPackage.cpp.ll
+; assimp/optimized/IRRLoader.cpp.ll
+; assimp/optimized/IRRMeshLoader.cpp.ll
+; assimp/optimized/OgreImporter.cpp.ll
+; assimp/optimized/OgreXmlSerializer.cpp.ll
+; assimp/optimized/X3DImporter.cpp.ll
+; assimp/optimized/XGLLoader.cpp.ll
 ; bdwgc/optimized/gc.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; clamav/optimized/fmap.c.ll
@@ -64,6 +75,7 @@ entry:
 ; hdf5/optimized/H5Pdcpl.c.ll
 ; hdf5/optimized/H5Shyper.c.ll
 ; hyperscan/optimized/rose_build_long_lit.cpp.ll
+; image-rs/optimized/4srzh4wujeew249y.ll
 ; libuv/optimized/core.c.ll
 ; libwebp/optimized/frame_enc.c.ll
 ; linux/optimized/initramfs.ll
@@ -209,6 +221,7 @@ entry:
 ; mimalloc/optimized/segment.c.ll
 ; node/optimized/core.ll
 ; nuttx/optimized/lib_getpwbufr.c.ll
+; oiio/optimized/xmp.cpp.ll
 ; openblas/optimized/dgetrf_parallel.c.ll
 ; openjdk/optimized/defNewGeneration.ll
 ; openjdk/optimized/g1FromCardCache.ll
@@ -236,6 +249,14 @@ entry:
 ; yalantinglibs/optimized/struct.struct_pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto2.struct_pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.struct_pb.cc.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/8bnapxt4ilkd5y3egr7fzm1sv.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/deqzoqcotewn9fb0m32sor9lr.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -245,7 +266,8 @@ entry:
   ret i64 %5
 }
 
-; 7 occurrences:
+; 12 occurrences:
+; glog/optimized/signalhandler.cc.ll
 ; libjpeg-turbo/optimized/jfdctint.c.ll
 ; linux/optimized/ndisc.ll
 ; meilisearch-rs/optimized/4rtt9oltj0ubuf08.ll
@@ -253,6 +275,10 @@ entry:
 ; ripgrep-rs/optimized/5baox15rvywa81ar.ll
 ; tokenizers-rs/optimized/27irl7jx21l1e8zq.ll
 ; wireshark/optimized/androiddump.c.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -262,7 +288,7 @@ entry:
   ret i64 %5
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; assimp/optimized/zip.c.ll
 ; hermes/optimized/zip.c.ll
 ; libpng/optimized/pngwutil.c.ll
@@ -273,6 +299,7 @@ entry:
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; qemu/optimized/hw_virtio_virtio.c.ll
 ; qemu/optimized/virtio.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -308,8 +335,9 @@ entry:
   ret i64 %5
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; arrow/optimized/builder_run_end.cc.ll
+; boost/optimized/approximately_equals.ll
 ; cmake/optimized/archive_read_support_format_rar5.c.ll
 ; cpython/optimized/obmalloc.ll
 ; hyperscan/optimized/noodle_engine.c.ll
@@ -341,6 +369,17 @@ define i64 @func0000000000000030(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %1, %2
   %4 = add i64 %0, 2
+  %5 = add i64 %4, %3
+  ret i64 %5
+}
+
+; 1 occurrences:
+; boost/optimized/approximately_equals.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000020(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw i64 %2, 2
+  %4 = add i64 %0, %1
   %5 = add i64 %4, %3
   ret i64 %5
 }
@@ -393,6 +432,17 @@ entry:
 }
 
 ; 1 occurrences:
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; Function Attrs: nounwind
+define i64 @func000000000000002c(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw i64 %2, 2
+  %4 = add nuw nsw i64 %0, %1
+  %5 = add i64 %4, %3
+  ret i64 %5
+}
+
+; 1 occurrences:
 ; linux/optimized/locks.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000012(i64 %0, i64 %1, i64 %2) #0 {
@@ -400,28 +450,6 @@ entry:
   %3 = add nsw i64 %2, -1
   %4 = add i64 %0, %1
   %5 = add nuw i64 %4, %3
-  ret i64 %5
-}
-
-; 1 occurrences:
-; glog/optimized/signalhandler.cc.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000037(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw nsw i64 %2, 1
-  %4 = add nsw i64 %0, %1
-  %5 = add nuw nsw i64 %4, %3
-  ret i64 %5
-}
-
-; 1 occurrences:
-; opencv/optimized/samplers.cpp.ll
-; Function Attrs: nounwind
-define i64 @func000000000000001c(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nsw i64 %2, 1
-  %4 = add nuw nsw i64 %0, %1
-  %5 = add i64 %4, %3
   ret i64 %5
 }
 

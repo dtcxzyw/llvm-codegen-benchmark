@@ -3,7 +3,7 @@
 ; libquic/optimized/prtime.cc.ll
 ; qemu/optimized/target_riscv_translate.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = sext i8 %2 to i32
   %4 = sub nsw i32 %0, %1

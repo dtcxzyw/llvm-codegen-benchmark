@@ -1,10 +1,11 @@
 
-; 32 occurrences:
+; 33 occurrences:
 ; abc/optimized/cuddZddReord.c.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
 ; arrow/optimized/future.cc.ll
+; boost/optimized/default_filter_factory.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; cmake/optimized/cmCTestScriptHandler.cxx.ll
 ; cmake/optimized/cmCTestSubmitHandler.cxx.ll
@@ -36,7 +37,7 @@
 define i1 @func0000000000000004(double %0, i64 %1) #0 {
 entry:
   %2 = sitofp i64 %1 to double
-  %3 = fcmp olt double %2, %0
+  %3 = fcmp ogt double %0, %2
   ret i1 %3
 }
 
@@ -47,13 +48,14 @@ entry:
 define i1 @func000000000000000b(double %0, i64 %1) #0 {
 entry:
   %2 = sitofp i64 %1 to double
-  %3 = fcmp uge double %2, %0
+  %3 = fcmp ule double %0, %2
   ret i1 %3
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; arrow/optimized/scalar_cast_numeric.cc.ll
+; boost/optimized/default_filter_factory.ll
 ; folly/optimized/JsonTestUtil.cpp.ll
 ; folly/optimized/LogConfigParser.cpp.ll
 ; folly/optimized/dynamic.cpp.ll
@@ -71,11 +73,12 @@ entry:
 define i1 @func0000000000000007(double %0, i64 %1) #0 {
 entry:
   %2 = sitofp i64 %1 to double
-  %3 = fcmp une double %2, %0
+  %3 = fcmp une double %0, %2
   ret i1 %3
 }
 
-; 100 occurrences:
+; 101 occurrences:
+; boost/optimized/default_filter_factory.ll
 ; casadi/optimized/code_generator.cpp.ll
 ; casadi/optimized/constant_mx.cpp.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
@@ -180,11 +183,12 @@ entry:
 define i1 @func0000000000000008(double %0, i64 %1) #0 {
 entry:
   %2 = sitofp i64 %1 to double
-  %3 = fcmp oeq double %2, %0
+  %3 = fcmp oeq double %0, %2
   ret i1 %3
 }
 
-; 29 occurrences:
+; 30 occurrences:
+; boost/optimized/default_filter_factory.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; folly/optimized/dynamic.cpp.ll
 ; icu/optimized/olsontz.ll
@@ -218,7 +222,7 @@ entry:
 define i1 @func0000000000000002(double %0, i64 %1) #0 {
 entry:
   %2 = sitofp i64 %1 to double
-  %3 = fcmp ogt double %2, %0
+  %3 = fcmp olt double %0, %2
   ret i1 %3
 }
 
@@ -236,11 +240,12 @@ entry:
 define i1 @func0000000000000003(double %0, i64 %1) #0 {
 entry:
   %2 = sitofp i64 %1 to double
-  %3 = fcmp ugt double %2, %0
+  %3 = fcmp ult double %0, %2
   ret i1 %3
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/default_filter_factory.ll
 ; casadi/optimized/im_instantiator.cpp.ll
 ; lua/optimized/lvm.ll
 ; oiio/optimized/imageio.cpp.ll
@@ -250,7 +255,19 @@ entry:
 define i1 @func000000000000000c(double %0, i64 %1) #0 {
 entry:
   %2 = sitofp i64 %1 to double
-  %3 = fcmp ole double %2, %0
+  %3 = fcmp oge double %0, %2
+  ret i1 %3
+}
+
+; 3 occurrences:
+; boost/optimized/default_filter_factory.ll
+; lua/optimized/lvm.ll
+; pocketpy/optimized/pocketpy.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000a(double %0, i64 %1) #0 {
+entry:
+  %2 = sitofp i64 %1 to double
+  %3 = fcmp ole double %0, %2
   ret i1 %3
 }
 
@@ -266,18 +283,7 @@ entry:
 define i1 @func0000000000000005(double %0, i64 %1) #0 {
 entry:
   %2 = sitofp i64 %1 to double
-  %3 = fcmp ult double %2, %0
-  ret i1 %3
-}
-
-; 2 occurrences:
-; lua/optimized/lvm.ll
-; pocketpy/optimized/pocketpy.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000a(double %0, i64 %1) #0 {
-entry:
-  %2 = sitofp i64 %1 to double
-  %3 = fcmp oge double %2, %0
+  %3 = fcmp ugt double %0, %2
   ret i1 %3
 }
 

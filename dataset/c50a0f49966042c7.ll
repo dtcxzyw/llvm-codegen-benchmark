@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 24 occurrences:
 ; darktable/optimized/introspection_colorzones.c.ll
 ; delta-rs/optimized/11w0at10aiwuq3yr.ll
 ; git/optimized/hash-lookup.ll
@@ -23,6 +23,7 @@
 ; qemu/optimized/accel_tcg_tcg-runtime-gvec.c.ll
 ; ruby/optimized/string.ll
 ; soc-simulator/optimized/verilated.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000d(i32 %0, i32 %1) #0 {
 entry:
@@ -32,7 +33,7 @@ entry:
   ret i64 %4
 }
 
-; 756 occurrences:
+; 760 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
@@ -58,6 +59,10 @@ entry:
 ; assimp/optimized/ValidateDataStructure.cpp.ll
 ; assimp/optimized/X3DXmlHelper.cpp.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/options_description.ll
+; boost/optimized/src.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/work_stealing.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/encode.c.ll
@@ -166,7 +171,6 @@ entry:
 ; folly/optimized/IOThreadPoolDeadlockDetectorObserver.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/LogCategory.cpp.ll
-; folly/optimized/LoggerDB.cpp.ll
 ; folly/optimized/ManualTimekeeper.cpp.ll
 ; folly/optimized/MaxConcurrentRateLimiter.cpp.ll
 ; folly/optimized/ObserverManager.cpp.ll
@@ -309,7 +313,6 @@ entry:
 ; meshlab/optimized/io_x3d.cpp.ll
 ; meshlab/optimized/mesh_model_state.cpp.ll
 ; minetest/optimized/CImageLoaderTGA.cpp.ll
-; minetest/optimized/test_serialization.cpp.ll
 ; mitsuba3/optimized/codeholder.cpp.ll
 ; mold/optimized/input-files.cc.ARM32.cc.ll
 ; mold/optimized/input-files.cc.I386.cc.ll
@@ -408,11 +411,9 @@ entry:
 ; postgres/optimized/varbit.ll
 ; postgres/optimized/xlogreader.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; proxygen/optimized/HeaderTable.cpp.ll
+; proxygen/optimized/QPACKHeaderTable.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
@@ -512,6 +513,7 @@ entry:
 ; spike/optimized/vwsubu_vv.ll
 ; sqlite/optimized/sqlite3.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
+; turborepo-rs/optimized/6jkgkc1600lrz2u0oa3gubskw.ll
 ; velox/optimized/ArrayAndMapMatch.cpp.ll
 ; velox/optimized/ArrayConstructor.cpp.ll
 ; velox/optimized/ArrayContains.cpp.ll
@@ -615,7 +617,6 @@ entry:
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/check_relation.cpp.ll
 ; z3/optimized/clp_context.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/ctx_simplify_tactic.cpp.ll
 ; z3/optimized/datalog_parser.cpp.ll
 ; z3/optimized/dd_bdd.cpp.ll
@@ -785,6 +786,10 @@ entry:
 ; z3/optimized/value_generator.cpp.ll
 ; z3/optimized/value_sweep.cpp.ll
 ; z3/optimized/var_subst.cpp.ll
+; zed-rs/optimized/06lo9zvab5lvkkn9g2iqvtuth.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/2nwrl7qhv6ci6obqg1itckcv6.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
 ; zstd/optimized/zstd_ldm.c.ll
 ; zxing/optimized/Content.cpp.ll
 ; zxing/optimized/PDFEncoder.cpp.ll
@@ -1082,7 +1087,7 @@ entry:
   ret i64 %4
 }
 
-; 246 occurrences:
+; 248 occurrences:
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
 ; fmt/optimized/format-test.cc.ll
@@ -1329,6 +1334,8 @@ entry:
 ; wasmtime-rs/optimized/4jtzwzfip25p8spx.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
@@ -1338,7 +1345,7 @@ entry:
   ret i64 %4
 }
 
-; 66 occurrences:
+; 65 occurrences:
 ; abc/optimized/cuddTable.c.ll
 ; darktable/optimized/introspection_colorzones.c.ll
 ; hermes/optimized/PlatformUnicodeICU.cpp.ll
@@ -1353,7 +1360,6 @@ entry:
 ; z3/optimized/ast_counter.cpp.ll
 ; z3/optimized/automaton.cpp.ll
 ; z3/optimized/bv_slice.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/dd_bdd.cpp.ll
 ; z3/optimized/demodulator_rewriter.cpp.ll
 ; z3/optimized/demodulator_simplifier.cpp.ll

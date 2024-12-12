@@ -1,10 +1,10 @@
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	notq	%rsi
 	leaq	-35(%rdx,%rsi), %rax
 	cmpq	%rdi, %rax
 	setb	%al
 	retq
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	notq	%rsi
 	leaq	-2(%rdx,%rsi), %rax
 	cmpq	%rdi, %rax
@@ -18,7 +18,7 @@ func0000000000000008:                   # @func0000000000000008
 	retq
 func0000000000000004:                   # @func0000000000000004
 	notq	%rsi
-	leaq	-4(%rsi,%rdx), %rax
+	leaq	-4(%rdx,%rsi), %rax
 	cmpq	%rdi, %rax
 	setb	%al
 	retq

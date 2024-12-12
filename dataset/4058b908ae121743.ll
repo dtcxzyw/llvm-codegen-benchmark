@@ -10,12 +10,12 @@
 ; duckdb/optimized/ub_duckdb_value_operations.cpp.ll
 ; openjdk/optimized/sharedRuntime_x86_64.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 2
   %4 = sext i32 %3 to i64
-  %5 = add nsw i64 %4, %1
-  %6 = icmp sgt i64 %5, %0
+  %5 = add nsw i64 %1, %4
+  %6 = icmp slt i64 %0, %5
   ret i1 %6
 }
 
@@ -32,12 +32,12 @@ entry:
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
 ; duckdb/optimized/ub_duckdb_value_operations.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 30
   %4 = sext i32 %3 to i64
-  %5 = add nsw i64 %4, %1
-  %6 = icmp eq i64 %5, %0
+  %5 = add nsw i64 %1, %4
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
@@ -51,12 +51,12 @@ entry:
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
 ; duckdb/optimized/ub_duckdb_value_operations.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 30
   %4 = sext i32 %3 to i64
-  %5 = add nsw i64 %4, %1
-  %6 = icmp slt i64 %5, %0
+  %5 = add nsw i64 %1, %4
+  %6 = icmp sgt i64 %0, %5
   ret i1 %6
 }
 
@@ -68,8 +68,8 @@ define i1 @func0000000000000008(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 1000
   %4 = sext i32 %3 to i64
-  %5 = add i64 %4, %1
-  %6 = icmp ult i64 %5, %0
+  %5 = add i64 %1, %4
+  %6 = icmp ugt i64 %0, %5
   ret i1 %6
 }
 
@@ -80,8 +80,8 @@ define i1 @func0000000000000001(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 1000
   %4 = sext i32 %3 to i64
-  %5 = add i64 %4, %1
-  %6 = icmp eq i64 %5, %0
+  %5 = add i64 %1, %4
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
@@ -92,8 +92,8 @@ define i1 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sdiv i32 %2, 512
   %4 = sext i32 %3 to i64
-  %5 = add i64 %4, %1
-  %6 = icmp ugt i64 %5, %0
+  %5 = add i64 %1, %4
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 

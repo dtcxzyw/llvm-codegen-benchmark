@@ -13,7 +13,7 @@ entry:
   ret i64 %7
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; assimp/optimized/BlenderScene.cpp.ll
 ; assimp/optimized/zip.c.ll
 ; hermes/optimized/HadesGC.cpp.ll
@@ -24,7 +24,6 @@ entry:
 ; nuttx/optimized/fs_anonmap.c.ll
 ; opencv/optimized/bitstrm.cpp.ll
 ; opencv/optimized/detection_output_layer.cpp.ll
-; opencv/optimized/erfilter.cpp.ll
 ; openjdk/optimized/splashscreen_impl.ll
 ; openssl/optimized/libcrypto-lib-a_d2i_fp.ll
 ; openssl/optimized/libcrypto-shlib-a_d2i_fp.ll
@@ -71,7 +70,7 @@ entry:
   ret i64 %7
 }
 
-; 61 occurrences:
+; 60 occurrences:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver2.c.ll
 ; abc/optimized/satSolver3.c.ll
@@ -132,7 +131,6 @@ entry:
 ; mold/optimized/passes.cc.X86_64.cc.ll
 ; sentencepiece/optimized/repeated_field.cc.ll
 ; yosys/optimized/ql_dsp_simd.ll
-; yosys/optimized/qwp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1, ptr %2) #0 {
 entry:
@@ -140,7 +138,7 @@ entry:
   %4 = sub i64 %3, %1
   %5 = shl i64 %4, 29
   %6 = ashr i64 %5, 32
-  %7 = add nsw i64 %6, %0
+  %7 = add nsw i64 %0, %6
   ret i64 %7
 }
 

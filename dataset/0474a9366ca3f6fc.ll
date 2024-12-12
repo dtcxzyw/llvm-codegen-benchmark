@@ -1,5 +1,9 @@
 
-; 15 occurrences:
+; 19 occurrences:
+; boost/optimized/console_buffer.ll
+; boost/optimized/cstdio.ll
+; boost/optimized/test_convert.ll
+; boost/optimized/test_stackstring.ll
 ; cmake/optimized/archive_string.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; icu/optimized/package.ll
@@ -24,7 +28,11 @@ entry:
   ret i8 %4
 }
 
-; 8 occurrences:
+; 12 occurrences:
+; boost/optimized/console_buffer.ll
+; boost/optimized/cstdio.ll
+; boost/optimized/test_convert.ll
+; boost/optimized/test_stackstring.ll
 ; cmake/optimized/archive_string.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; libquic/optimized/ctr.c.ll

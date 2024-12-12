@@ -27,7 +27,7 @@ entry:
   ret i64 %3
 }
 
-; 53 occurrences:
+; 58 occurrences:
 ; clamav/optimized/archive.cpp.ll
 ; clamav/optimized/filestr.cpp.ll
 ; meilisearch-rs/optimized/4rtt9oltj0ubuf08.ll
@@ -72,6 +72,7 @@ entry:
 ; openusd/optimized/testHdSceneIndex.cpp.ll
 ; openusd/optimized/testUsdImagingStageSceneIndex.cpp.ll
 ; openusd/optimized/velocityMotionResolvingSceneIndex.cpp.ll
+; php/optimized/dow.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; protobuf/optimized/map_field.cc.ll
 ; protobuf/optimized/struct.pb.cc.ll
@@ -81,6 +82,10 @@ entry:
 ; ripgrep-rs/optimized/5baox15rvywa81ar.ll
 ; tokenizers-rs/optimized/1w676x6x6lprwvn5.ll
 ; tokenizers-rs/optimized/27irl7jx21l1e8zq.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0) #0 {
 entry:
@@ -90,7 +95,7 @@ entry:
   ret i64 %3
 }
 
-; 35 occurrences:
+; 31 occurrences:
 ; abc/optimized/deflate.c.ll
 ; clamav/optimized/XzIn.c.ll
 ; clamav/optimized/archive.cpp.ll
@@ -104,9 +109,7 @@ entry:
 ; clamav/optimized/rawread.cpp.ll
 ; clamav/optimized/recvol.cpp.ll
 ; clamav/optimized/scantree.cpp.ll
-; clamav/optimized/strlist.cpp.ll
 ; clamav/optimized/unpack.cpp.ll
-; cmake/optimized/compress.c.ll
 ; cmake/optimized/deflate.c.ll
 ; cmake/optimized/fse_compress.c.ll
 ; cmake/optimized/huf_compress.c.ll
@@ -117,12 +120,10 @@ entry:
 ; crow/optimized/example_ws.cpp.ll
 ; freetype/optimized/bdf.c.ll
 ; freetype/optimized/psaux.c.ll
-; gromacs/optimized/compress.c.ll
 ; gromacs/optimized/deflate.c.ll
 ; libquic/optimized/deflate.c.ll
 ; nix/optimized/args.ll
 ; quickjs/optimized/quickjs.ll
-; zlib/optimized/compress.c.ll
 ; zlib/optimized/deflate.c.ll
 ; zstd/optimized/fse_compress.c.ll
 ; zstd/optimized/huf_compress.c.ll

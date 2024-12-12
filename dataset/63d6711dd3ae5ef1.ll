@@ -10,7 +10,7 @@
 ; wireshark/optimized/packet-btatt.c.ll
 ; wireshark/optimized/packet-sapdiag.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000442(i8 %0, i8 %1) #0 {
+define i1 @func0000000000001082(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %0, 20
   %3 = icmp eq i8 %1, 22
@@ -25,7 +25,7 @@ entry:
 ; luau/optimized/isocline.c.ll
 ; wireshark/optimized/packet-memcache.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000001042(i8 %0, i8 %1) #0 {
+define i1 @func0000000000004082(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, 10
   %3 = icmp eq i8 %0, 95
@@ -38,7 +38,7 @@ entry:
 ; 1 occurrences:
 ; actix-rs/optimized/3arfg1ogrgyw4qv2.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000104c(i8 %0, i8 %1) #0 {
+define i1 @func000000000000408c(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, 92
   %3 = icmp eq i8 %0, 33
@@ -48,11 +48,10 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
-; opencv/optimized/persistence_xml.cpp.ll
+; 1 occurrences:
 ; wireshark/optimized/tap-sctp-analysis.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000502(i8 %0, i8 %1) #0 {
+define i1 @func0000000000001202(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 64
   %3 = icmp ult i8 %0, 17
@@ -65,7 +64,7 @@ entry:
 ; 1 occurrences:
 ; typst-rs/optimized/3rk2ctuzbghb17s4.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000444(i8 %0, i8 %1) #0 {
+define i1 @func0000000000001084(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 0
   %3 = icmp eq i8 %0, 22

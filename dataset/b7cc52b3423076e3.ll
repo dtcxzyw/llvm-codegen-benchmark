@@ -1,5 +1,5 @@
 
-; 78 occurrences:
+; 75 occurrences:
 ; clamav/optimized/bytecode_vm.c.ll
 ; cmake/optimized/lzma2_decoder.c.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
@@ -14,14 +14,11 @@
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; libdeflate/optimized/deflate_compress.c.ll
 ; libquic/optimized/hpack_huffman_table.cc.ll
-; linux/optimized/8250_dwlib.ll
 ; linux/optimized/8250_early.ll
 ; linux/optimized/8250_port.ll
 ; linux/optimized/airtime.ll
 ; linux/optimized/buffered-io.ll
 ; linux/optimized/fib_trie.ll
-; linux/optimized/hwsleep.ll
-; linux/optimized/hwxface.ll
 ; linux/optimized/mballoc.ll
 ; linux/optimized/md.ll
 ; linux/optimized/move_extent.ll
@@ -30,7 +27,6 @@
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/processor_throttling.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
-; linux/optimized/rsmisc.ll
 ; linux/optimized/sch_api.ll
 ; linux/optimized/sd.ll
 ; linux/optimized/tcp_timer.ll
@@ -42,7 +38,6 @@
 ; linux/optimized/virtio_blk.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SemaHexagon.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; luau/optimized/IrRegAllocA64.cpp.ll
@@ -78,6 +73,8 @@
 ; spike/optimized/s_shortShiftRightM.ll
 ; typst-rs/optimized/53ug9lwflkq7ucu8.ll
 ; velox/optimized/PrestoSerializer.cpp.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i8 %1) #0 {
 entry:
@@ -86,7 +83,7 @@ entry:
   ret i32 %3
 }
 
-; 32 occurrences:
+; 31 occurrences:
 ; clamav/optimized/explode.c.ll
 ; clamav/optimized/kwajd.c.ll
 ; clamav/optimized/lzxd.c.ll
@@ -116,7 +113,6 @@ entry:
 ; qemu/optimized/target_riscv_translate.c.ll
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/raudio.c.ll
-; spike/optimized/s_shortShiftLeft64To96M.ll
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
@@ -175,8 +171,7 @@ entry:
   ret i32 %3
 }
 
-; 5 occurrences:
-; linux/optimized/rsmisc.ll
+; 4 occurrences:
 ; openusd/optimized/tessellation.cpp.ll
 ; softposit-rs/optimized/coljvwkn4d5o904.ll
 ; wireshark/optimized/packet-gsm_a_gm.c.ll

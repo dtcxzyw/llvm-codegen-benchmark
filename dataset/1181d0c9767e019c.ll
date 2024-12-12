@@ -7,11 +7,11 @@ define i64 @func0000000000000034(i64 %0, i64 %1) #0 {
 entry:
   %notmask = shl nsw i64 -1, %1
   %2 = xor i64 %notmask, -1
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   ret i64 %3
 }
 
-; 235 occurrences:
+; 234 occurrences:
 ; brotli/optimized/backward_references_hq.c.ll
 ; hdf5/optimized/H5FAdblock.c.ll
 ; llvm/optimized/AArch64CallingConvention.cpp.ll
@@ -160,7 +160,6 @@ entry:
 ; llvm/optimized/PrologEpilogInserter.cpp.ll
 ; llvm/optimized/RDFGraph.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RawCommentList.cpp.ll
 ; llvm/optimized/Record.cpp.ll
 ; llvm/optimized/RecordLayout.cpp.ll
@@ -252,7 +251,7 @@ define i64 @func0000000000000020(i64 %0, i64 %1) #0 {
 entry:
   %notmask = shl nsw i64 -1, %1
   %2 = xor i64 %notmask, -1
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   ret i64 %3
 }
 
@@ -279,19 +278,18 @@ entry:
   ret i64 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; llvm/optimized/AArch64LegalizerInfo.cpp.ll
 ; llvm/optimized/CoroFrame.cpp.ll
 ; llvm/optimized/DwarfDebug.cpp.ll
 ; llvm/optimized/PrologEpilogInserter.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000022(i64 %0, i64 %1) #0 {
 entry:
   %notmask = shl nsw i64 -1, %1
   %2 = xor i64 %notmask, -1
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   ret i64 %3
 }
 

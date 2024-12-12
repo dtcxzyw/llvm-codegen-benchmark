@@ -12,17 +12,3 @@ func0000000000000002:                   // @func0000000000000002
 	add	x0, x8, x9
 	ret
                                         // -- End function
-func0000000000000003:                   // @func0000000000000003
-// %bb.0:                               // %entry
-	sub	x8, x2, x1
-	and	x9, x0, #0xfffffffc
-	add	x0, x8, x9
-	ret
-                                        // -- End function
-func0000000000000001:                   // @func0000000000000001
-// %bb.0:                               // %entry
-	sub	x8, x2, x1
-	and	x9, x0, #0xfffffffffffffffe
-	add	x0, x8, x9
-	ret
-                                        // -- End function

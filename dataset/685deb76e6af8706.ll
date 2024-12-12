@@ -1,10 +1,9 @@
 
-; 142 occurrences:
+; 141 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
 ; abseil-cpp/optimized/globals.cc.ll
-; abseil-cpp/optimized/hash.cc.ll
 ; abseil-cpp/optimized/hash_function_defaults_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; abseil-cpp/optimized/node_hash_map_test.cc.ll
@@ -155,6 +154,7 @@ entry:
 ; abc/optimized/compress.c.ll
 ; abc/optimized/timDump.c.ll
 ; abseil-cpp/optimized/proto.cc.ll
+; boost/optimized/basic_text_iprimitive.ll
 ; clamav/optimized/arcread.cpp.ll
 ; clamav/optimized/kwajd.c.ll
 ; clamav/optimized/mszipd.c.ll
@@ -164,7 +164,6 @@ entry:
 ; libwebp/optimized/huffman_encode_utils.c.ll
 ; libwebp/optimized/lossless_enc.c.ll
 ; linux/optimized/ehci-dbgp.ll
-; linux/optimized/hwsleep.ll
 ; linux/optimized/icl_dsi.ll
 ; linux/optimized/intel_gmbus.ll
 ; linux/optimized/intel_hdcp.ll
@@ -250,11 +249,11 @@ define i32 @func0000000000000004(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw i32 %3, %1
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 
-; 14 occurrences:
+; 15 occurrences:
 ; abc/optimized/ifDec16.c.ll
 ; llvm/optimized/APINotesWriter.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
@@ -264,6 +263,7 @@ entry:
 ; llvm/optimized/GlobalModuleIndex.cpp.ll
 ; llvm/optimized/SerializedDiagnosticPrinter.cpp.ll
 ; llvm/optimized/TestModuleFileExtension.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; oiio/optimized/DPXHeader.cpp.ll
 ; openjdk/optimized/compilerDirectives.ll
 ; openjdk/optimized/jcphuff.ll

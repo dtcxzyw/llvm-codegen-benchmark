@@ -3,10 +3,10 @@
 ; openjdk/optimized/sharedRuntimeTrans.ll
 ; ruby/optimized/date_core.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 15
-  %3 = icmp ult i32 %2, 3
+  %3 = icmp samesign ult i32 %2, 3
   %4 = select i1 %3, i32 %0, i32 %2
   ret i32 %4
 }
@@ -55,10 +55,27 @@ entry:
 ; spike/optimized/fsri.ll
 ; spike/optimized/fsrw.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
-  %3 = icmp ugt i32 %2, 2
+  %3 = icmp samesign ugt i32 %2, 2
+  %4 = select i1 %3, i32 %0, i32 %2
+  ret i32 %4
+}
+
+; 7 occurrences:
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_flex.ll
+; lvgl/optimized/lv_grid.ll
+; lvgl/optimized/lv_line.ll
+; lvgl/optimized/lv_obj_pos.ll
+; lvgl/optimized/lv_refr.ll
+; lvgl/optimized/lv_span.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000a(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, -1610612737
+  %3 = icmp sgt i32 %2, 268435455
   %4 = select i1 %3, i32 %0, i32 %2
   ret i32 %4
 }

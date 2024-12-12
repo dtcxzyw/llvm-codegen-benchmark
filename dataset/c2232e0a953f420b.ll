@@ -19,7 +19,7 @@ entry:
 define i16 @func0000000000000004(i16 %0, i16 %1) #0 {
 entry:
   %2 = ashr exact i16 %1, 8
-  %3 = add i16 %2, %0
+  %3 = add i16 %0, %2
   ret i16 %3
 }
 
@@ -30,7 +30,7 @@ entry:
 define i16 @func0000000000000001(i16 %0, i16 %1) #0 {
 entry:
   %2 = ashr i16 %1, 7
-  %3 = add nsw i16 %2, %0
+  %3 = add nsw i16 %0, %2
   ret i16 %3
 }
 
@@ -44,7 +44,7 @@ entry:
 define i16 @func0000000000000000(i16 %0, i16 %1) #0 {
 entry:
   %2 = ashr i16 %1, 1
-  %3 = add i16 %2, %0
+  %3 = add i16 %0, %2
   ret i16 %3
 }
 

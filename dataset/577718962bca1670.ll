@@ -1,5 +1,5 @@
 
-; 164 occurrences:
+; 162 occurrences:
 ; abc/optimized/giaRex.c.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
@@ -28,8 +28,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -260,7 +258,8 @@ entry:
   ret i64 %3
 }
 
-; 14 occurrences:
+; 15 occurrences:
+; boost/optimized/src.ll
 ; cmake/optimized/zstdmt_compress.c.ll
 ; linux/optimized/addrconf.ll
 ; linux/optimized/addrlabel.ll
@@ -303,7 +302,8 @@ entry:
   ret i64 %3
 }
 
-; 164 occurrences:
+; 165 occurrences:
+; boost/optimized/to_chars.ll
 ; icu/optimized/collationweights.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
@@ -477,7 +477,8 @@ entry:
   ret i64 %3
 }
 
-; 100 occurrences:
+; 101 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll

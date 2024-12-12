@@ -69,6 +69,6 @@ func0000000000000002:                   # @func0000000000000002
 	vptestnmd	.LCPI1_0(%rip){1to8}, %ymm1, %k1
 	vpbroadcastb	.LCPI1_3(%rip), %xmm1   # xmm1 = [64,64,64,64,64,64,64,64,64,64,64,64,64,64,64,64]
 	vmovdqu8	.LCPI1_2(%rip), %xmm1 {%k1}     # xmm1 {%k1} = [4,4,4,4,4,4,4,4,u,u,u,u,u,u,u,u]
-	vpor	%xmm0, %xmm1, %xmm0
+	vpor	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq

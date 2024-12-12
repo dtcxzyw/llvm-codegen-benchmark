@@ -1,4 +1,4 @@
-func0000000000000caa:                   # @func0000000000000caa
+func000000000000314a:                   # @func000000000000314a
 	testl	%edx, %edx
 	setne	%al
 	testl	%esi, %esi
@@ -8,7 +8,7 @@ func0000000000000caa:                   # @func0000000000000caa
 	setge	%al
 	orb	%cl, %al
 	retq
-func0000000000000ccc:                   # @func0000000000000ccc
+func000000000000318c:                   # @func000000000000318c
 	testl	%edx, %edx
 	setne	%al
 	testl	%esi, %esi

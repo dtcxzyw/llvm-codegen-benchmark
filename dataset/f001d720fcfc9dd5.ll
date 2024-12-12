@@ -304,16 +304,4 @@ entry:
   ret i32 %6
 }
 
-; 1 occurrences:
-; quickjs/optimized/quickjs.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ugt i32 %2, 48
-  %4 = select i1 %3, i1 %1, i1 false
-  %5 = add nsw i32 %2, -48
-  %6 = select i1 %4, i32 %5, i32 %0
-  ret i32 %6
-}
-
 attributes #0 = { nounwind }

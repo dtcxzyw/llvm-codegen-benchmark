@@ -2,12 +2,12 @@
 ; 1 occurrences:
 ; ruby/optimized/time.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000074(i16 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 24
   %3 = select i1 %2, i32 0, i32 60
   %4 = zext nneg i16 %0 to i32
-  %5 = icmp ult i32 %3, %4
+  %5 = icmp samesign ult i32 %3, %4
   ret i1 %5
 }
 
@@ -18,12 +18,12 @@ entry:
 ; php/optimized/ir_ra.ll
 ; postgres/optimized/nbtutils.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000058(i16 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i32 1, i32 2
   %4 = zext i16 %0 to i32
-  %5 = icmp ugt i32 %3, %4
+  %5 = icmp samesign ugt i32 %3, %4
   ret i1 %5
 }
 
@@ -32,7 +32,7 @@ entry:
 ; llvm/optimized/InstCombineAndOrXor.cpp.ll
 ; llvm/optimized/InstructionSimplify.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000061(i16 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 28
   %3 = select i1 %2, i32 7, i32 8
@@ -47,7 +47,7 @@ entry:
 ; postgres/optimized/nbtsearch.ll
 ; postgres/optimized/nbtutils.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000041(i16 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 38
   %3 = select i1 %2, i32 3645, i32 3644
@@ -60,19 +60,19 @@ entry:
 ; linux/optimized/intel_overlay.ll
 ; postgres/optimized/nbtsearch.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000054(i16 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1
   %3 = select i1 %2, i32 4096, i32 8192
   %4 = zext i16 %0 to i32
-  %5 = icmp ult i32 %3, %4
+  %5 = icmp samesign ult i32 %3, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; postgres/optimized/nbtpage.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i16 %0, i32 %1) #0 {
+define i1 @func000000000000004c(i16 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i32 1, i32 2

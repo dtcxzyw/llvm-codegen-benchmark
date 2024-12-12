@@ -7,7 +7,7 @@
 ; slurm/optimized/job_scheduler.ll
 ; wireshark/optimized/packet-tcp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 4
   %4 = icmp eq ptr %1, null
@@ -21,7 +21,7 @@ entry:
 ; minetest/optimized/clientpackethandler.cpp.ll
 ; opencv/optimized/calibinit.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000181(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp eq ptr %1, null
@@ -41,7 +41,7 @@ entry:
 ; openusd/optimized/write.c.ll
 ; slurm/optimized/job_scheduler.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000018c(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, -1
   %4 = icmp ne ptr %1, null
@@ -54,7 +54,7 @@ entry:
 ; libquic/optimized/persistent_histogram_allocator.cc.ll
 ; nuklear/optimized/unity.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000081(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, -1073741821
   %4 = icmp eq ptr %1, null

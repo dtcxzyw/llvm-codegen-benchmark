@@ -1,4 +1,4 @@
-func00000000000000ea:                   // @func00000000000000ea
+func00000000000000ff:                   // @func00000000000000ff
 // %bb.0:                               // %entry
 	mov	w8, #6                          // =0x6
 	umaddl	x8, w2, w8, x1

@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 18 occurrences:
 ; influxdb-rs/optimized/2g8nrbnslhx52xx1.ll
 ; ockam-rs/optimized/1411u8drt798uxi8.ll
 ; ockam-rs/optimized/1sh1jgeif2r7m14r.ll
@@ -13,7 +13,6 @@
 ; ockam-rs/optimized/594kg43rtueps2cx.ll
 ; rust-analyzer-rs/optimized/1r5fg81ha4dpx7ns.ll
 ; rust-analyzer-rs/optimized/3lmu0tsslmelo8sk.ll
-; rust-analyzer-rs/optimized/4hdqg9y9agw1ekve.ll
 ; rust-analyzer-rs/optimized/kcxpblerbqo90m6.ll
 ; typst-rs/optimized/5antv5sfgwt5l2ke.ll
 ; wasmtime-rs/optimized/24tijvi11z3k9odl.ll

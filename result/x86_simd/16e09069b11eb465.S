@@ -15,7 +15,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpcmpeqb	.LCPI0_0(%rip), %xmm1, %k1
 	vpmovqd	%ymm2, %xmm0 {%k1}
 	vzeroupper
@@ -42,7 +42,7 @@ func0000000000000001:                   # @func0000000000000001
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpcmpeqb	.LCPI2_0(%rip), %xmm1, %k1
 	vpmovqd	%ymm2, %xmm0 {%k1}
 	vzeroupper
@@ -64,7 +64,7 @@ func0000000000000031:                   # @func0000000000000031
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpcmpeqb	.LCPI3_0(%rip), %xmm1, %k1
 	vpmovqd	%ymm2, %xmm0 {%k1}
 	vzeroupper

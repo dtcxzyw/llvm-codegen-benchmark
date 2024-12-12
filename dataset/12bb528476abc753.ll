@@ -11,11 +11,11 @@ define i1 @func0000000000000004(i32 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = trunc i64 %2 to i32
-  %4 = icmp ugt i32 %3, %0
+  %4 = icmp ult i32 %0, %3
   ret i1 %4
 }
 
-; 71 occurrences:
+; 73 occurrences:
 ; abc/optimized/abcDfs.c.ll
 ; abc/optimized/abcRr.c.ll
 ; abc/optimized/abcSat.c.ll
@@ -35,6 +35,9 @@ entry:
 ; linux/optimized/io_apic.ll
 ; linux/optimized/nf_conntrack_netlink.ll
 ; linux/optimized/pcm_lib.ll
+; lvgl/optimized/lv_demo_flex_layout_flex_loader.ll
+; lvgl/optimized/lv_obj_style.ll
+; lvgl/optimized/lv_scale.ll
 ; nuklear/optimized/unity.c.ll
 ; openjdk/optimized/ad_x86.ll
 ; openjdk/optimized/c1_LIRAssembler_x86.ll
@@ -69,7 +72,6 @@ entry:
 ; wireshark/optimized/packet-nlm.c.ll
 ; wireshark/optimized/packet-obex.c.ll
 ; wireshark/optimized/packet-pfcp.c.ll
-; wireshark/optimized/packet-smb-sidsnooping.c.ll
 ; wireshark/optimized/packet-smb.c.ll
 ; wireshark/optimized/packet-tcp.c.ll
 ; wireshark/optimized/packet-udp.c.ll
@@ -92,7 +94,7 @@ define i1 @func0000000000000001(i32 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = trunc i64 %2 to i32
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
   ret i1 %4
 }
 
@@ -103,12 +105,14 @@ define i1 @func000000000000000b(i32 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = trunc i64 %2 to i32
-  %4 = icmp sle i32 %3, %0
+  %4 = icmp sge i32 %0, %3
   ret i1 %4
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; abc/optimized/retLvalue.c.ll
+; lvgl/optimized/lv_label.ll
+; lvgl/optimized/lv_line.ll
 ; openvdb/optimized/Prune.cc.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
@@ -116,7 +120,7 @@ define i1 @func0000000000000006(i32 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = trunc i64 %2 to i32
-  %4 = icmp sgt i32 %3, %0
+  %4 = icmp slt i32 %0, %3
   ret i1 %4
 }
 
@@ -128,14 +132,15 @@ define i1 @func0000000000000009(i32 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = trunc i64 %2 to i32
-  %4 = icmp ule i32 %3, %0
+  %4 = icmp uge i32 %0, %3
   ret i1 %4
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; abc/optimized/fxuSingle.c.ll
 ; darktable/optimized/collect.c.ll
 ; darktable/optimized/filtering.c.ll
+; lvgl/optimized/lv_buttonmatrix.ll
 ; openmpi/optimized/mca_base_pvar.ll
 ; openmpi/optimized/mca_base_var_group.ll
 ; openmpi/optimized/pmix_mca_base_var_group.ll
@@ -144,7 +149,7 @@ define i1 @func000000000000000a(i32 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = trunc i64 %2 to i32
-  %4 = icmp slt i32 %3, %0
+  %4 = icmp sgt i32 %0, %3
   ret i1 %4
 }
 
@@ -163,13 +168,14 @@ define i1 @func0000000000000008(i32 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = trunc i64 %2 to i32
-  %4 = icmp ult i32 %3, %0
+  %4 = icmp ugt i32 %0, %3
   ret i1 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; abc/optimized/retInit.c.ll
 ; icu/optimized/store.ll
+; lvgl/optimized/lv_refr.ll
 ; wireshark/optimized/packet-blip.c.ll
 ; wireshark/optimized/packet-btavdtp.c.ll
 ; wireshark/optimized/packet-sctp.c.ll
@@ -178,18 +184,18 @@ define i1 @func000000000000000c(i32 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = trunc i64 %2 to i32
-  %4 = icmp ne i32 %3, %0
+  %4 = icmp ne i32 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; wasmtime-rs/optimized/51r9csr3d9dou1a2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0, ptr %1) #0 {
+define i1 @func0000000000000044(i32 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = trunc nuw i64 %2 to i32
-  %4 = icmp ugt i32 %3, %0
+  %4 = icmp ult i32 %0, %3
   ret i1 %4
 }
 
@@ -201,7 +207,7 @@ define i1 @func0000000000000007(i32 %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = trunc i64 %2 to i32
-  %4 = icmp sge i32 %3, %0
+  %4 = icmp sle i32 %0, %3
   ret i1 %4
 }
 

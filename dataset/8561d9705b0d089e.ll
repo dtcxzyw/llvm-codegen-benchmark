@@ -1,5 +1,5 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; llvm/optimized/AttributorAttributes.cpp.ll
 ; meshoptimizer/optimized/clusterizer.cpp.ll
 ; postgres/optimized/multirangetypes.ll
@@ -7,7 +7,6 @@
 ; tokio-rs/optimized/2zetnb9vrfbe3smf.ll
 ; tokio-rs/optimized/r9h5225tdo2hxm6.ll
 ; tokio-rs/optimized/rq81hdouiclvz49.ll
-; wasmtime-rs/optimized/4t6wupogfkzcdkg8.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:

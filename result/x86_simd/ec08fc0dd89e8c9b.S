@@ -15,8 +15,6 @@ func0000000000000024:                   # @func0000000000000024
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-.LCPI1_0:
-	.quad	0x3e70000000000000              # double 5.9604644775390625E-8
 func0000000000000022:                   # @func0000000000000022
 	vsubpd	%zmm5, %zmm3, %zmm3
 	vsubpd	%zmm4, %zmm2, %zmm2
@@ -25,9 +23,8 @@ func0000000000000022:                   # @func0000000000000022
 	vcmpltpd	%zmm4, %zmm3, %k2
 	vmovapd	%zmm1, %zmm3 {%k2}
 	vmovapd	%zmm0, %zmm2 {%k1}
-	vbroadcastsd	.LCPI1_0(%rip), %zmm0   # zmm0 = [5.9604644775390625E-8,5.9604644775390625E-8,5.9604644775390625E-8,5.9604644775390625E-8,5.9604644775390625E-8,5.9604644775390625E-8,5.9604644775390625E-8,5.9604644775390625E-8]
-	vcmpltpd	%zmm0, %zmm2, %k0
-	vcmpltpd	%zmm0, %zmm3, %k1
+	vcmpltpd	%zmm4, %zmm2, %k0
+	vcmpltpd	%zmm4, %zmm3, %k1
 	kunpckbw	%k0, %k1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

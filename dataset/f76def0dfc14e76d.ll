@@ -1,18 +1,18 @@
 
-%"struct.llvh::detail::DenseMapPair.2886197" = type { %"struct.std::pair.247.2886198" }
-%"struct.std::pair.247.2886198" = type { i64, %"class.std::__cxx11::basic_string.2886194" }
-%"class.std::__cxx11::basic_string.2886194" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2886195", i64, %union.anon.2886196 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2886195" = type { ptr }
-%union.anon.2886196 = type { i64, [8 x i8] }
-%"struct.llvm::detail::DenseMapPair.653.2982817" = type { %"struct.std::pair.654.2982818" }
-%"struct.std::pair.654.2982818" = type { i32, i32 }
-%"struct.llvm::detail::DenseMapPair.2992152" = type { %"struct.std::pair.289.2992153" }
-%"struct.std::pair.289.2992153" = type { i32, i32 }
-%"struct.llvm::detail::DenseMapPair.3059067" = type { %"struct.std::pair.3059068" }
-%"struct.std::pair.3059068" = type { %"class.llvm::MCRegister.3059066", i32 }
-%"class.llvm::MCRegister.3059066" = type { i32 }
+%"struct.llvh::detail::DenseMapPair.3080718" = type { %"struct.std::pair.247.3080719" }
+%"struct.std::pair.247.3080719" = type { i64, %"class.std::__cxx11::basic_string.3080715" }
+%"class.std::__cxx11::basic_string.3080715" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3080716", i64, %union.anon.3080717 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.3080716" = type { ptr }
+%union.anon.3080717 = type { i64, [8 x i8] }
+%"struct.llvm::detail::DenseMapPair.653.3176296" = type { %"struct.std::pair.654.3176297" }
+%"struct.std::pair.654.3176297" = type { i32, i32 }
+%"struct.llvm::detail::DenseMapPair.3185615" = type { %"struct.std::pair.289.3185616" }
+%"struct.std::pair.289.3185616" = type { i32, i32 }
+%"struct.llvm::detail::DenseMapPair.3251978" = type { %"struct.std::pair.3251979" }
+%"struct.std::pair.3251979" = type { %"class.llvm::MCRegister.3251977", i32 }
+%"class.llvm::MCRegister.3251977" = type { i32 }
 
-; 70 occurrences:
+; 71 occurrences:
 ; hermes/optimized/ConsecutiveStringStorage.cpp.ll
 ; hermes/optimized/ES6Class.cpp.ll
 ; hermes/optimized/GCBase.cpp.ll
@@ -55,6 +55,7 @@
 ; llvm/optimized/LoopDeletion.cpp.ll
 ; llvm/optimized/MacroExpander.cpp.ll
 ; llvm/optimized/MappedBlockStream.cpp.ll
+; llvm/optimized/MemProfContextDisambiguation.cpp.ll
 ; llvm/optimized/Metadata.cpp.ll
 ; llvm/optimized/MetadataLoader.cpp.ll
 ; llvm/optimized/ModuleMap.cpp.ll
@@ -84,13 +85,13 @@
 ; llvm/optimized/WasmEHPrepare.cpp.ll
 ; llvm/optimized/X86InstructionSelector.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = mul i32 %3, 37
-  %5 = and i32 %4, %1
+  %5 = and i32 %1, %4
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw %"struct.llvh::detail::DenseMapPair.2886197", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"struct.llvh::detail::DenseMapPair.3080718", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -98,44 +99,43 @@ entry:
 ; llvm/optimized/CombinerHelper.cpp.ll
 ; llvm/optimized/MachinePipeliner.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000062(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000063(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = mul i32 %3, 37
-  %5 = and i32 %4, %1
+  %5 = and i32 %1, %4
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw %"struct.llvm::detail::DenseMapPair.653.2982817", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"struct.llvm::detail::DenseMapPair.653.3176296", ptr %0, i64 %6
   ret ptr %7
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; llvm/optimized/BitcodeReader.cpp.ll
 ; llvm/optimized/IROutliner.cpp.ll
 ; llvm/optimized/IRSimilarityIdentifier.cpp.ll
 ; llvm/optimized/InitHeaderSearch.cpp.ll
 ; llvm/optimized/InstrRefBasedImpl.cpp.ll
-; llvm/optimized/SplitModule.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000042(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000043(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = mul i32 %3, 37
-  %5 = and i32 %4, %1
+  %5 = and i32 %1, %4
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw %"struct.llvm::detail::DenseMapPair.2992152", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"struct.llvm::detail::DenseMapPair.3185615", ptr %0, i64 %6
   ret ptr %7
 }
 
 ; 1 occurrences:
 ; llvm/optimized/X86MCTargetDesc.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = mul i32 %3, 37
-  %5 = and i32 %4, %1
+  %5 = and i32 %1, %4
   %6 = zext nneg i32 %5 to i64
-  %7 = getelementptr nusw %"struct.llvm::detail::DenseMapPair.3059067", ptr %0, i64 %6
+  %7 = getelementptr nusw nuw %"struct.llvm::detail::DenseMapPair.3251978", ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -146,7 +146,7 @@ define ptr @func0000000000000000(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = mul i32 %3, 3163
-  %5 = and i32 %4, %1
+  %5 = and i32 %1, %4
   %6 = zext i32 %5 to i64
   %7 = getelementptr i32, ptr %0, i64 %6
   ret ptr %7
@@ -155,13 +155,13 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/graphcycles.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = mul nsw i32 %3, 41
-  %5 = and i32 %4, %1
+  %5 = and i32 %1, %4
   %6 = zext i32 %5 to i64
-  %7 = getelementptr nusw i32, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i32, ptr %0, i64 %6
   ret ptr %7
 }
 

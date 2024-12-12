@@ -1,4 +1,4 @@
-func0000000000000282:                   # @func0000000000000282
+func0000000000000902:                   # @func0000000000000902
 	leal	-11(%rdi), %eax
 	cmpl	$3, %eax
 	setb	%cl
@@ -7,7 +7,7 @@ func0000000000000282:                   # @func0000000000000282
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000082:                   # @func0000000000000082
+func0000000000000102:                   # @func0000000000000102
 	leal	-1500(%rdi), %eax
 	cmpl	$3, %eax
 	setb	%cl
@@ -16,18 +16,18 @@ func0000000000000082:                   # @func0000000000000082
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000098:                   # @func0000000000000098
+func0000000000000118:                   # @func0000000000000118
 	leal	-17(%rdi), %eax
 	cmpl	$-13, %eax
 	setb	%al
 	orb	%dil, %al
 	retq
-func0000000000000030:                   # @func0000000000000030
+func0000000000000050:                   # @func0000000000000050
 	andl	$-2032, %edi                    # imm = 0xF810
 	cmpl	$2064, %edi                     # imm = 0x810
 	setne	%al
 	retq
-func0000000000000228:                   # @func0000000000000228
+func0000000000000848:                   # @func0000000000000848
 	movl	%edi, %eax
 	andl	$65520, %eax                    # imm = 0xFFF0
 	cmpl	$8288, %eax                     # imm = 0x2060
@@ -37,7 +37,7 @@ func0000000000000228:                   # @func0000000000000228
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	movl	%edi, %eax
 	notl	%eax
 	testl	$65534, %eax                    # imm = 0xFFFE
@@ -47,7 +47,7 @@ func0000000000000028:                   # @func0000000000000028
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000188:                   # @func0000000000000188
+func0000000000000308:                   # @func0000000000000308
 	testb	$7, %dil
 	setne	%cl
 	addl	$-1601, %edi                    # imm = 0xF9BF
@@ -55,7 +55,7 @@ func0000000000000188:                   # @func0000000000000188
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000390:                   # @func0000000000000390
+func0000000000000b10:                   # @func0000000000000b10
 	testb	$3, %dil
 	setne	%cl
 	addl	$-262205, %edi                  # imm = 0xFFFBFFC3

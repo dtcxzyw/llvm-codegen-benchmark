@@ -10,5 +10,5 @@ func0000000000000028:                   # @func0000000000000028
 	vpsubw	%ymm1, %ymm2, %ymm3
 	vpcmpgtw	%ymm2, %ymm0, %k1
 	vmovdqu16	%ymm1, %ymm3 {%k1}
-	vpaddw	%ymm0, %ymm3, %ymm0
+	vpaddw	%ymm3, %ymm0, %ymm0
 	retq

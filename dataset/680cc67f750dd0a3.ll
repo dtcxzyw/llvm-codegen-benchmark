@@ -4,7 +4,7 @@
 ; minetest/optimized/CColorConverter.cpp.ll
 ; minetest/optimized/noise.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000188(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 2
@@ -13,16 +13,17 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; cmake/optimized/stream.c.ll
 ; git/optimized/packfile.ll
 ; openjdk/optimized/psCardTable.ll
 ; openjdk/optimized/psParallelCompact.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e4(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000001e4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 7
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
   %6 = icmp ult ptr %5, %0
   ret i1 %6
 }
@@ -36,7 +37,7 @@ entry:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c4(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000384(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 1
@@ -51,7 +52,7 @@ entry:
 ; darktable/optimized/introspection_lens.cc.ll
 ; darktable/optimized/introspection_rawprepare.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c8(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000388(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 2
@@ -69,7 +70,7 @@ entry:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_lens.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000184(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 2
@@ -82,11 +83,11 @@ entry:
 ; hermes/optimized/BytecodeDataProvider.cpp.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e8(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000001e8(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 3
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
   %6 = icmp ugt ptr %5, %0
   ret i1 %6
 }
@@ -101,11 +102,11 @@ entry:
 ; llvm/optimized/SplitKit.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000001e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 5
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
   %6 = icmp eq ptr %5, %0
   ret i1 %6
 }
@@ -116,24 +117,12 @@ entry:
 ; llvm/optimized/LoopVectorize.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001e1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000003e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 2
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
   %6 = icmp eq ptr %5, %0
-  ret i1 %6
-}
-
-; 1 occurrences:
-; llvm/optimized/X86ISelLowering.cpp.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000ec(ptr %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = zext i32 %2 to i64
-  %4 = shl nuw nsw i64 %3, 2
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = icmp ne ptr %5, %0
   ret i1 %6
 }
 
@@ -142,9 +131,21 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func00000000000001ec(ptr %0, ptr %1, i32 %2) #0 {
 entry:
+  %3 = zext i32 %2 to i64
+  %4 = shl nuw nsw i64 %3, 2
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = icmp ne ptr %5, %0
+  ret i1 %6
+}
+
+; 1 occurrences:
+; llvm/optimized/X86ISelLowering.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000003ec(ptr %0, ptr %1, i32 %2) #0 {
+entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 2
-  %5 = getelementptr nusw i8, ptr %1, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
   %6 = icmp ne ptr %5, %0
   ret i1 %6
 }

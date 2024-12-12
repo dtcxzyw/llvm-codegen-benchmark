@@ -75,8 +75,52 @@ func0000000000000008:                   # @func0000000000000008
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+.LCPI5_0:
+	.short	3                               # 0x3
+	.short	3                               # 0x3
+	.short	3                               # 0x3
+	.short	3                               # 0x3
+	.short	3                               # 0x3
+	.short	3                               # 0x3
+	.short	3                               # 0x3
+	.short	3                               # 0x3
+	.short	3                               # 0x3
+	.short	3                               # 0x3
+	.short	3                               # 0x3
+	.short	3                               # 0x3
+	.short	3                               # 0x3
+	.short	3                               # 0x3
+	.short	3                               # 0x3
+	.short	3                               # 0x3
+func0000000000000018:                   # @func0000000000000018
+	vpcmpnleuw	.LCPI5_0(%rip), %ymm0, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
 func000000000000000c:                   # @func000000000000000c
 	vptestmw	%ymm0, %ymm0, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
+.LCPI7_0:
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+	.short	6                               # 0x6
+func0000000000000014:                   # @func0000000000000014
+	vpcmpltuw	.LCPI7_0(%rip), %ymm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

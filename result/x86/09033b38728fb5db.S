@@ -75,6 +75,12 @@ func0000000000000006:                   # @func0000000000000006
 	shlq	$52, %rax
 	orq	%rsi, %rax
 	retq
+func0000000000000030:                   # @func0000000000000030
+	movq	%rdi, %rax
+	shlq	$63, %rsi
+	shlq	$52, %rax
+	orq	%rsi, %rax
+	retq
 func0000000000000027:                   # @func0000000000000027
 	movzbl	%sil, %eax
 	shll	$3, %eax

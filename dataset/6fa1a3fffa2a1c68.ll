@@ -16,6 +16,18 @@ entry:
   ret i32 %5
 }
 
+; 2 occurrences:
+; llvm/optimized/GlobalsStream.cpp.ll
+; lvgl/optimized/lv_calendar.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000d(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = udiv i32 %2, 100
+  %4 = add nuw nsw i32 %0, %1
+  %5 = sub nsw i32 %4, %3
+  ret i32 %5
+}
+
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind

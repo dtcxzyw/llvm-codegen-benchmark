@@ -4,7 +4,7 @@
 ; hermes/optimized/zip.c.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000001824(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000006044(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp eq i64 %1, 0

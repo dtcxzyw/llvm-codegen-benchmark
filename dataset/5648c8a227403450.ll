@@ -1,19 +1,4 @@
 
-; 5 occurrences:
-; libquic/optimized/time_support.c.ll
-; linux/optimized/kallsyms.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; protobuf/optimized/unparser.cc.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
-entry:
-  %2 = sdiv i32 %1, 12
-  %3 = add i32 %2, %0
-  %4 = mul i32 %3, 1461
-  ret i32 %4
-}
-
 ; 3 occurrences:
 ; hermes/optimized/DateUtil.cpp.ll
 ; luau/optimized/loslib.cpp.ll
@@ -27,13 +12,26 @@ entry:
   ret i32 %4
 }
 
+; 3 occurrences:
+; libquic/optimized/time_support.c.ll
+; linux/optimized/kallsyms.ll
+; protobuf/optimized/unparser.cc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
+entry:
+  %2 = sdiv i32 %1, 12
+  %3 = add i32 %0, %2
+  %4 = mul i32 %3, 1461
+  ret i32 %4
+}
+
 ; 1 occurrences:
 ; protobuf/optimized/unparser.cc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, -4
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = mul nsw i32 %3, 80
   ret i32 %4
 }

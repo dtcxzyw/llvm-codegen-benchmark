@@ -33,7 +33,6 @@
 ; gromacs/optimized/gmx_dielectric.cpp.ll
 ; gromacs/optimized/invertmatrix.cpp.ll
 ; gromacs/optimized/nb_free_energy.cpp.ll
-; gromacs/optimized/strti2.cpp.ll
 ; gromacs/optimized/vsite.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
@@ -47,6 +46,7 @@
 ; mitsuba3/optimized/roughplastic.cpp.ll
 ; mitsuba3/optimized/sggx.cpp.ll
 ; mitsuba3/optimized/sphere.cpp.ll
+; ncnn/optimized/layernorm.cpp.ll
 ; nori/optimized/colorwheel.cpp.ll
 ; nori/optimized/warptest.cpp.ll
 ; ocio/optimized/GradingTone.cpp.ll

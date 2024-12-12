@@ -11,19 +11,19 @@ func0000000000000008:                   # @func0000000000000008
 	addw	a0, a0, a2
 	sltu	a0, a0, a1
 	ret
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	add	a1, a1, a2
 	addiw	a1, a1, -1
 	addiw	a0, a0, -3
 	sltu	a0, a1, a0
 	ret
-func000000000000011a:                   # @func000000000000011a
+func000000000000022a:                   # @func000000000000022a
 	add	a1, a1, a2
 	addiw	a1, a1, 3
 	addiw	a0, a0, -32
 	slt	a0, a0, a1
 	ret
-func0000000000000116:                   # @func0000000000000116
+func0000000000000226:                   # @func0000000000000226
 	add	a1, a1, a2
 	addiw	a1, a1, 3
 	addiw	a0, a0, -32

@@ -105,7 +105,7 @@ entry:
   ret i64 %5
 }
 
-; 12 occurrences:
+; 14 occurrences:
 ; diesel-rs/optimized/1epek8hq4oxhh3ri.ll
 ; diesel-rs/optimized/309lo11gmt11hfmy.ll
 ; diesel-rs/optimized/3k6gak4fsx54o1kk.ll
@@ -118,6 +118,8 @@ entry:
 ; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; wasmtime-rs/optimized/2ta8crc4qgl9bp8t.ll
+; zed-rs/optimized/bflorbpxbjb42ccmeziz8dqw7.ll
+; zed-rs/optimized/bqkhvme8kwgfmpydn1hdkle55.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
 entry:

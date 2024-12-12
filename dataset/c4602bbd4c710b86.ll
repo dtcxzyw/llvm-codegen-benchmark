@@ -1,13 +1,11 @@
 
-; 29 occurrences:
+; 25 occurrences:
 ; abc/optimized/rsbDec6.c.ll
 ; clamav/optimized/Bra.c.ll
 ; cmake/optimized/armthumb.c.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; hdf5/optimized/H5Spoint.c.ll
 ; hyperscan/optimized/Parser.cpp.ll
-; jq/optimized/utf32_be.ll
-; jq/optimized/utf32_le.ll
 ; libphonenumber/optimized/rune.c.ll
 ; libuv/optimized/idna.c.ll
 ; linux/optimized/intel_dsb.ll
@@ -16,8 +14,6 @@
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; node/optimized/idna.ll
-; oniguruma/optimized/utf32_be.ll
-; oniguruma/optimized/utf32_le.ll
 ; openjdk/optimized/Ushort555Rgbx.ll
 ; openjdk/optimized/Ushort565Rgb.ll
 ; openjdk/optimized/assembler_x86.ll
@@ -52,7 +48,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = shl nuw nsw i32 %4, 2
   ret i32 %5
 }
@@ -63,7 +59,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or i32 %1, %2
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = shl nsw i32 %4, 2
   ret i32 %5
 }
@@ -120,7 +116,7 @@ entry:
 define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = shl i32 %4, 1
   ret i32 %5
 }
@@ -187,8 +183,19 @@ entry:
 define i32 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %1, %2
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = shl nsw i32 %4, 1
+  ret i32 %5
+}
+
+; 1 occurrences:
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or i32 %1, %2
+  %4 = or disjoint i32 %3, %0
+  %5 = shl nuw i32 %4, 8
   ret i32 %5
 }
 

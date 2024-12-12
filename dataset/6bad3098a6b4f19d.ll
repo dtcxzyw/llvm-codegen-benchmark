@@ -15,12 +15,12 @@
 ; postgres/optimized/walsender.ll
 ; postgres/optimized/xlog.ll
 ; postgres/optimized/xlogarchive.ll
-; postgres/optimized/xlogbackup.ll
 ; postgres/optimized/xlogfuncs.ll
 ; postgres/optimized/xlogreader.ll
 ; postgres/optimized/xlogrecovery.ll
 ; postgres/optimized/xlogutils.ll
 ; velox/optimized/VectorFuzzer.cpp.ll
+; zed-rs/optimized/92iizbpp16n9wzmmxw0rpztpt.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:

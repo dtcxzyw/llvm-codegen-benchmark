@@ -1,5 +1,5 @@
 
-; 284 occurrences:
+; 276 occurrences:
 ; abc/optimized/abcDec.c.ll
 ; abc/optimized/abcOdc.c.ll
 ; abc/optimized/abcOrchestration.c.ll
@@ -9,7 +9,6 @@
 ; abc/optimized/bdcCore.c.ll
 ; abc/optimized/cecClass.c.ll
 ; abc/optimized/cecCorr.c.ll
-; abc/optimized/cecMan.c.ll
 ; abc/optimized/cecPat.c.ll
 ; abc/optimized/cecSeq.c.ll
 ; abc/optimized/cecSolve.c.ll
@@ -29,14 +28,12 @@
 ; abc/optimized/giaMinLut2.c.ll
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/giaSimBase.c.ll
-; abc/optimized/giaSupMin.c.ll
 ; abc/optimized/giaTruth.c.ll
 ; abc/optimized/giaTsim.c.ll
 ; abc/optimized/hopTruth.c.ll
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/llb4Cex.c.ll
 ; abc/optimized/llb4Nonlin.c.ll
-; abc/optimized/lpkMan.c.ll
 ; abc/optimized/mfsMan.c.ll
 ; abc/optimized/pdrUtil.c.ll
 ; abc/optimized/resSim.c.ll
@@ -46,16 +43,15 @@
 ; abc/optimized/satTruth.c.ll
 ; abc/optimized/sswSim.c.ll
 ; abc/optimized/utilCex.c.ll
-; abc/optimized/xsatSolver.c.ll
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; abseil-cpp/optimized/sequence_lock_test.cc.ll
 ; annoy/optimized/annoymodule.ll
 ; arrow/optimized/light_array.cc.ll
 ; arrow/optimized/row_internal.cc.ll
+; boost/optimized/sparring_partner.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; clamav/optimized/XzDec.c.ll
 ; clamav/optimized/XzIn.c.ll
-; clamav/optimized/yara_hash.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; cmake/optimized/zstdmt_compress.c.ll
 ; cpython/optimized/dtoa.ll
@@ -84,7 +80,6 @@
 ; jq/optimized/execute.ll
 ; jq/optimized/jv_dtoa.ll
 ; jq/optimized/regexec.ll
-; jq/optimized/regparse.ll
 ; libjpeg-turbo/optimized/jidctint.c.ll
 ; libjpeg-turbo/optimized/jidctred.c.ll
 ; libquic/optimized/dtoa.cc.ll
@@ -132,7 +127,6 @@
 ; ncnn/optimized/pooling3d.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; oniguruma/optimized/regexec.ll
-; oniguruma/optimized/regparse.ll
 ; opencv/optimized/lapack.cpp.ll
 ; opencv/optimized/sparse_match_interpolators.cpp.ll
 ; opencv/optimized/speech_recognition.cpp.ll
@@ -173,7 +167,6 @@
 ; php/optimized/sqlite3.ll
 ; php/optimized/xml.ll
 ; php/optimized/zend_API.ll
-; php/optimized/zend_alloc.ll
 ; php/optimized/zend_call_graph.ll
 ; php/optimized/zend_cfg.ll
 ; php/optimized/zend_inference.ll
@@ -279,7 +272,6 @@
 ; spike/optimized/srai32_u.ll
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_vorbis.c.ll
-; stockfish/optimized/tbprobe.ll
 ; velox/optimized/BaseVector.cpp.ll
 ; velox/optimized/UnsafeRowSerializer.cpp.ll
 ; wireshark/optimized/lemon.c.ll
@@ -343,7 +335,6 @@ entry:
 ; draco/optimized/sequential_integer_attribute_decoder.cc.ll
 ; draco/optimized/sequential_integer_attribute_encoder.cc.ll
 ; draco/optimized/sequential_normal_attribute_encoder.cc.ll
-; draco/optimized/symbol_encoding.cc.ll
 ; faiss/optimized/HNSW.cpp.ll
 ; faiss/optimized/IndexAdditiveQuantizer.cpp.ll
 ; faiss/optimized/IndexBinaryIVF.cpp.ll
@@ -562,6 +553,7 @@ entry:
 ; re2/optimized/dfa.cc.ll
 ; re2/optimized/prog.cc.ll
 ; rocksdb/optimized/version_set.cc.ll
+; stockfish/optimized/tbprobe.ll
 ; taskflow/optimized/exclusive_scan.cpp.ll
 ; taskflow/optimized/inclusive_scan.cpp.ll
 ; taskflow/optimized/parallel_for.cpp.ll

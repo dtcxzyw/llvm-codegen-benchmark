@@ -1,10 +1,7 @@
 
-; 9 occurrences:
-; arrow/optimized/cached-powers.cc.ll
-; double_conversion/optimized/cached-powers.cc.ll
+; 6 occurrences:
 ; graphviz/optimized/graph_generator.c.ll
 ; graphviz/optimized/position.c.ll
-; icu/optimized/double-conversion-cached-powers.ll
 ; nuttx/optimized/lib_gamma.c.ll
 ; nuttx/optimized/lib_lgamma.c.ll
 ; openusd/optimized/cached-powers.cc.ll

@@ -1,5 +1,5 @@
 
-; 46 occurrences:
+; 43 occurrences:
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; clamav/optimized/special.c.ll
 ; cmake/optimized/cmQtAutoMocUic.cxx.ll
@@ -33,9 +33,6 @@
 ; oiio/optimized/icooutput.cpp.ll
 ; openjdk/optimized/vm_version_x86.ll
 ; openmpi/optimized/osc_sm_component.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; php/optimized/dow.ll
 ; php/optimized/unixtime2tm.ll
 ; postgres/optimized/slru.ll
 ; qemu/optimized/hw_vfio_pci.c.ll
@@ -55,7 +52,7 @@ entry:
   ret i64 %5
 }
 
-; 792 occurrences:
+; 803 occurrences:
 ; abc/optimized/deflate.c.ll
 ; abseil-cpp/optimized/city.cc.ll
 ; abseil-cpp/optimized/cordz_info_statistics_test.cc.ll
@@ -73,6 +70,18 @@ entry:
 ; assimp/optimized/JoinVerticesProcess.cpp.ll
 ; assimp/optimized/unzip.c.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/wait.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/decode.c.ll
@@ -119,7 +128,6 @@ entry:
 ; clamav/optimized/www.c.ll
 ; cmake/optimized/SystemTools.cxx.ll
 ; cmake/optimized/cmGlobalNinjaGenerator.cxx.ll
-; cmake/optimized/compress.c.ll
 ; cmake/optimized/core.c.ll
 ; cmake/optimized/deflate.c.ll
 ; cmake/optimized/headers.c.ll
@@ -206,7 +214,6 @@ entry:
 ; gromacs/optimized/andersentemperaturecoupling.cpp.ll
 ; gromacs/optimized/cluster_methods.cpp.ll
 ; gromacs/optimized/colvarproxygromacs.cpp.ll
-; gromacs/optimized/compress.c.ll
 ; gromacs/optimized/coordstate.cpp.ll
 ; gromacs/optimized/coupling.cpp.ll
 ; gromacs/optimized/deflate.c.ll
@@ -235,7 +242,6 @@ entry:
 ; hdf5/optimized/H5EAsblock.c.ll
 ; hdf5/optimized/H5FA.c.ll
 ; hdf5/optimized/H5FAcache.c.ll
-; hdf5/optimized/H5FAdbg.c.ll
 ; hdf5/optimized/H5FAdblock.c.ll
 ; hdf5/optimized/H5Oattr.c.ll
 ; hdf5/optimized/H5Odtype.c.ll
@@ -462,6 +468,7 @@ entry:
 ; luau/optimized/CodeAllocator.cpp.ll
 ; luau/optimized/isocline.c.ll
 ; luau/optimized/lgc.cpp.ll
+; lvgl/optimized/lv_tlsf.ll
 ; lz4/optimized/lz4frame.c.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meilisearch-rs/optimized/4rynht2gwvphprvy.ll
@@ -494,7 +501,6 @@ entry:
 ; mitsuba3/optimized/merge.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/tensor.cpp.ll
@@ -555,8 +561,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -719,13 +723,13 @@ entry:
 ; postgres/optimized/nodeAgg.ll
 ; postgres/optimized/partbounds.ll
 ; postgres/optimized/preproc.ll
-; postgres/optimized/shm_toc.ll
 ; postgres/optimized/sqlda.ll
 ; postgres/optimized/xloginsert.ll
 ; postgres/optimized/zic.ll
 ; proj/optimized/isea.cpp.ll
 ; protobuf/optimized/any.pb.cc.ll
 ; protobuf/optimized/api.pb.cc.ll
+; protobuf/optimized/arena.cc.ll
 ; protobuf/optimized/descriptor.pb.cc.ll
 ; protobuf/optimized/plugin.pb.cc.ll
 ; protobuf/optimized/struct.pb.cc.ll
@@ -842,7 +846,11 @@ entry:
 ; yosys/optimized/lz4.ll
 ; yyjson/optimized/yyjson.c.ll
 ; z3/optimized/lar_solver.cpp.ll
-; zlib/optimized/compress.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/d8k4gi60mp0onf0c8t6rhs7ks.ll
 ; zlib/optimized/deflate.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_compress_superblock.c.ll
@@ -882,7 +890,7 @@ entry:
   ret i64 %5
 }
 
-; 170 occurrences:
+; 172 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/strtod.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
@@ -904,7 +912,6 @@ entry:
 ; hdf5/optimized/H5FSstat.c.ll
 ; hdf5/optimized/H5HFcache.c.ll
 ; hdf5/optimized/H5HL.c.ll
-; hdf5/optimized/H5HLdblk.c.ll
 ; hdf5/optimized/H5Ofsinfo.c.ll
 ; hermes/optimized/zip.c.ll
 ; hyperscan/optimized/scratch.c.ll
@@ -956,8 +963,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -1025,6 +1030,7 @@ entry:
 ; openusd/optimized/strtod.cc.ll
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; php/optimized/dtoa.ll
+; php/optimized/fastcgi.ll
 ; php/optimized/strtod.ll
 ; postgres/optimized/mcv.ll
 ; qemu/optimized/block_qcow2-snapshot.c.ll
@@ -1045,6 +1051,10 @@ entry:
 ; z3/optimized/arith_solver.cpp.ll
 ; z3/optimized/lar_solver.cpp.ll
 ; z3/optimized/theory_lra.cpp.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; zstd/optimized/zstd_decompress.c.ll
 ; zstd/optimized/zstd_v02.c.ll
@@ -1117,16 +1127,15 @@ define i64 @func0000000000000030(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 160
   %4 = add i64 %3, %1
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
-; 72 occurrences:
+; 69 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; casadi/optimized/bspline.cpp.ll
 ; cmake/optimized/cmFindPackageCommand.cxx.ll
 ; darktable/optimized/export.c.ll
-; darktable/optimized/introspection_highlights.c.ll
 ; duckdb/optimized/ub_duckdb_adbc_nanoarrow.cpp.ll
 ; eastl/optimized/BenchmarkDeque.cpp.ll
 ; eastl/optimized/TestAlgorithm.cpp.ll
@@ -1167,7 +1176,6 @@ entry:
 ; linux/optimized/printk.ll
 ; llvm/optimized/AArch64CallingConvention.cpp.ll
 ; llvm/optimized/ArchiveWriter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SampleProfileInference.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/X86CallingConv.cpp.ll
@@ -1176,7 +1184,6 @@ entry:
 ; mitsuba3/optimized/merge.cpp.ll
 ; openmpi/optimized/ad_io_coll.ll
 ; openmpi/optimized/coll_ftagree_earlyreturning.ll
-; php/optimized/fastcgi.ll
 ; postgres/optimized/extended_stats.ll
 ; postgres/optimized/nodeAgg.ll
 ; postgres/optimized/nodeWindowAgg.ll
@@ -1203,7 +1210,7 @@ entry:
   ret i64 %5
 }
 
-; 33 occurrences:
+; 37 occurrences:
 ; assimp/optimized/zip.c.ll
 ; brotli/optimized/backward_references.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
@@ -1236,6 +1243,10 @@ entry:
 ; regex-rs/optimized/10eccrragw6uslmk.ll
 ; ripgrep-rs/optimized/5baox15rvywa81ar.ll
 ; tokenizers-rs/optimized/27irl7jx21l1e8zq.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
 ; zstd/optimized/fastcover.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003c(i64 %0, i64 %1, i64 %2) #0 {
@@ -1293,34 +1304,6 @@ entry:
   ret i64 %5
 }
 
-; 18 occurrences:
-; abc/optimized/cuddTable.c.ll
-; abc/optimized/extraUtilMult.c.ll
-; abc/optimized/extraUtilPerm.c.ll
-; g2o/optimized/optimizable_graph.cpp.ll
-; g2o/optimized/vertex_ellipse.cpp.ll
-; gromacs/optimized/tng_io.c.ll
-; libquic/optimized/time_support.c.ll
-; memcached/optimized/memcached-items.ll
-; memcached/optimized/memcached-storage.ll
-; memcached/optimized/memcached_debug-items.ll
-; memcached/optimized/memcached_debug-storage.ll
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/edit_referencing.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
-; meshlab/optimized/meshfilter.cpp.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
-; sqlite/optimized/sqlite3.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000035(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw nsw i64 %2, 4294962396
-  %4 = add nsw i64 %3, %1
-  %5 = add nsw i64 %4, %0
-  ret i64 %5
-}
-
 ; 17 occurrences:
 ; eastl/optimized/BenchmarkDeque.cpp.ll
 ; eastl/optimized/TestAlgorithm.cpp.ll
@@ -1354,8 +1337,8 @@ entry:
 define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -1
-  %4 = add i64 %3, %1
-  %5 = add nuw i64 %4, %0
+  %4 = add i64 %1, %3
+  %5 = add nuw i64 %0, %4
   ret i64 %5
 }
 
@@ -1379,12 +1362,39 @@ entry:
 define i64 @func000000000000003e(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 544
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = add nuw i64 %4, %0
   ret i64 %5
 }
 
-; 82 occurrences:
+; 17 occurrences:
+; abc/optimized/cuddTable.c.ll
+; abc/optimized/extraUtilMult.c.ll
+; abc/optimized/extraUtilPerm.c.ll
+; boost/optimized/approximately_equals.ll
+; g2o/optimized/optimizable_graph.cpp.ll
+; g2o/optimized/vertex_ellipse.cpp.ll
+; gromacs/optimized/tng_io.c.ll
+; libquic/optimized/time_support.c.ll
+; memcached/optimized/memcached-items.ll
+; memcached/optimized/memcached-storage.ll
+; memcached/optimized/memcached_debug-items.ll
+; memcached/optimized/memcached_debug-storage.ll
+; meshlab/optimized/edit_align.cpp.ll
+; meshlab/optimized/edit_referencing.cpp.ll
+; meshlab/optimized/filter_icp.cpp.ll
+; meshlab/optimized/meshfilter.cpp.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000035(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nuw nsw i64 %2, 760
+  %4 = add nsw i64 %3, %1
+  %5 = add nsw i64 %4, %0
+  ret i64 %5
+}
+
+; 80 occurrences:
 ; lief/optimized/File.cpp.ll
 ; linux/optimized/compress.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -1406,8 +1416,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -1496,7 +1504,7 @@ define i64 @func000000000000000f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 32
   %4 = add nuw nsw i64 %3, %1
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -1612,17 +1620,6 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add i64 %2, -1
-  %4 = add nuw i64 %3, %1
-  %5 = add i64 %4, %0
-  ret i64 %5
-}
-
 ; 3 occurrences:
 ; linux/optimized/fse_decompress.ll
 ; linux/optimized/page-writeback.ll
@@ -1676,7 +1673,7 @@ entry:
 define i64 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 1
-  %4 = add nuw i64 %3, %1
+  %4 = add nuw i64 %1, %3
   %5 = add nuw i64 %4, %0
   ret i64 %5
 }
@@ -1687,7 +1684,7 @@ entry:
 define i64 @func000000000000003a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
-  %4 = add nuw i64 %3, %1
+  %4 = add nuw i64 %1, %3
   %5 = add nuw i64 %4, %0
   ret i64 %5
 }

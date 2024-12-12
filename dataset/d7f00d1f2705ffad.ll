@@ -6,7 +6,7 @@
 define i32 @func0000000000000018(i32 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = icmp ne i16 %2, 304
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = select i1 %4, i32 1, i32 %0
   ret i32 %5
 }
@@ -21,19 +21,8 @@ entry:
 define i32 @func0000000000000002(i32 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 65
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = select i1 %4, i32 1, i32 %0
-  ret i32 %5
-}
-
-; 1 occurrences:
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i1 %1, i16 %2) #0 {
-entry:
-  %3 = icmp ult i16 %2, 49
-  %4 = or i1 %3, %1
-  %5 = select i1 %4, i32 566, i32 %0
   ret i32 %5
 }
 

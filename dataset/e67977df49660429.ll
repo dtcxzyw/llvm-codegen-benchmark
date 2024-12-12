@@ -1,8 +1,9 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; abc/optimized/dauCanon.c.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; clamav/optimized/rarvm.cpp.ll
+; lvgl/optimized/lv_area.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/bitmap.cpp.ll
 ; nori/optimized/nanovg.c.ll

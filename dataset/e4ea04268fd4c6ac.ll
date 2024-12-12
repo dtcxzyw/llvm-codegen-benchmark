@@ -2,8 +2,6 @@
 ; 14 occurrences:
 ; abc/optimized/kitTruth.c.ll
 ; abc/optimized/luckySwap.c.ll
-; gromacs/optimized/dorm2l.cpp.ll
-; gromacs/optimized/sorm2l.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; llvm/optimized/ExprConstant.cpp.ll
 ; luajit/optimized/lj_record.ll
@@ -14,6 +12,8 @@
 ; rust-analyzer-rs/optimized/34epm85550lugb2d.ll
 ; slurm/optimized/fair_tree.ll
 ; z3/optimized/hilbert_basis.cpp.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i1 %1, i1 %2) #0 {
 entry:

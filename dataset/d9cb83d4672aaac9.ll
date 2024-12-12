@@ -120,7 +120,7 @@ define i1 @func000000000000000a(i1 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i63
   %3 = icmp sgt i63 %2, 0
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
@@ -128,7 +128,7 @@ entry:
 ; cpython/optimized/complexobject.ll
 ; linux/optimized/sch_generic.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i1 %0, i64 %1) #0 {
+define i1 @func000000000000004a(i1 %0, i64 %1) #0 {
 entry:
   %.mask = and i64 %1, 4611686018427387904
   %2 = icmp eq i64 %.mask, 0

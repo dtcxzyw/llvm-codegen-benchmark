@@ -1,9 +1,7 @@
 
-; 7 occurrences:
-; hwloc/optimized/shmem.ll
+; 5 occurrences:
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/GVNHoist.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; openjdk/optimized/bytecodeAssembler.ll
 ; openjdk/optimized/stackwalk.ll
 ; ruby/optimized/ancdata.ll
@@ -11,14 +9,15 @@
 define i1 @func0000000000000001(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = icmp eq i64 %3, %1
+  %4 = icmp eq i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; actix-rs/optimized/1v3445utu4y7ica.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/addr2line.ll
 ; clamav/optimized/upack.c.ll
 ; clamav/optimized/upx.c.ll
 ; folly/optimized/JemallocHugePageAllocator.cpp.ll
@@ -32,7 +31,7 @@ entry:
 define i1 @func0000000000000008(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = icmp ult i64 %3, %1
+  %4 = icmp ugt i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -44,7 +43,7 @@ entry:
 define i1 @func0000000000000004(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = icmp ugt i64 %3, %1
+  %4 = icmp ult i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -55,7 +54,7 @@ entry:
 define i1 @func000000000000000c(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = icmp ne i64 %3, %1
+  %4 = icmp ne i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -67,7 +66,7 @@ entry:
 define i1 @func0000000000000009(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = icmp ule i64 %3, %1
+  %4 = icmp uge i64 %1, %3
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }

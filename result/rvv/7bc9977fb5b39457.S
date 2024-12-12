@@ -22,6 +22,15 @@ func0000000000000050:                   # @func0000000000000050
 	li	a0, -31
 	vadd.vx	v8, v8, a0
 	ret
+func0000000000000057:                   # @func0000000000000057
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vsll.vi	v12, v12, 12
+	vadd.vv	v8, v8, v10
+	lui	a0, 1034754
+	vadd.vv	v8, v8, v12
+	addi	a0, a0, 1024
+	vadd.vx	v8, v8, a0
+	ret
 func0000000000000007:                   # @func0000000000000007
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v12, v12, 4

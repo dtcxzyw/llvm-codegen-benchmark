@@ -6,7 +6,7 @@
 ; quantlib/optimized/longstaffschwartzmultipathpricer.ll
 ; quantlib/optimized/mceuropeanbasketengine.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000058(i64 %0, i64 %1) #0 {
+define i64 @func00000000000000a8(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = sdiv exact i64 %2, 120
@@ -19,7 +19,7 @@ entry:
 ; 1 occurrences:
 ; assimp/optimized/FBXConverter.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000048(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000088(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = sdiv exact i64 %2, 12
@@ -35,7 +35,7 @@ entry:
 ; quantlib/optimized/mcamericanbasketengine.ll
 ; quantlib/optimized/mchestonhullwhiteengine.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000078(i64 %0, i64 %1) #0 {
+define i64 @func00000000000000e8(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = sdiv exact i64 %2, 88

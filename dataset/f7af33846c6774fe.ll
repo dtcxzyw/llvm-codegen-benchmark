@@ -1,5 +1,5 @@
 
-; 132 occurrences:
+; 136 occurrences:
 ; abc/optimized/reoSift.c.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
@@ -7,6 +7,15 @@
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
 ; assimp/optimized/IFCCurve.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/get_distance_measure.ll
 ; brotli/optimized/cluster.c.ll
 ; casadi/optimized/casadi_misc.cpp.ll
 ; casadi/optimized/convexify.cpp.ll
@@ -68,20 +77,14 @@
 ; openblas/optimized/dsteqr.c.ll
 ; openblas/optimized/dsterf.c.ll
 ; opencc/optimized/PhraseExtract.cpp.ll
-; opencv/optimized/benchmark.cpp.ll
-; opencv/optimized/cv2.cpp.ll
 ; opencv/optimized/daisy.cpp.ll
 ; opencv/optimized/dls.cpp.ll
 ; opencv/optimized/dxt.cpp.ll
 ; opencv/optimized/homography_decomp.cpp.ll
 ; opencv/optimized/lapack.cpp.ll
 ; opencv/optimized/lda.cpp.ll
-; opencv/optimized/nms.cpp.ll
-; opencv/optimized/perf_common.cpp.ll
 ; opencv/optimized/pipeline_modeling_tool.cpp.ll
 ; opencv/optimized/svm.cpp.ll
-; opencv/optimized/tldUtils.cpp.ll
-; opencv/optimized/trackerKCF.cpp.ll
 ; openjdk/optimized/g1MMUTracker.ll
 ; openjdk/optimized/sharedRuntimeTrans.ll
 ; openjdk/optimized/sharedRuntimeTrig.ll
@@ -111,6 +114,7 @@
 ; quantlib/optimized/fdminnervaluecalculator.ll
 ; quantlib/optimized/fdmshoutloginnervaluecalculator.ll
 ; quantlib/optimized/fdmsquarerootfwdop.ll
+; quantlib/optimized/gaussian1dmodel.ll
 ; quantlib/optimized/gsrprocesscore.ll
 ; quantlib/optimized/isdacdsengine.ll
 ; quantlib/optimized/noarbsabr.ll

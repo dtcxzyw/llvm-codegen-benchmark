@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 22 occurrences:
 ; chibicc/optimized/codegen.ll
 ; graphviz/optimized/triang.c.ll
 ; gromacs/optimized/pme.cpp.ll
@@ -11,7 +11,6 @@
 ; openexr/optimized/ImfMisc.cpp.ll
 ; openjdk/optimized/numberSeq.ll
 ; openmpi/optimized/coll_base_bcast.ll
-; openmpi/optimized/monitoring_test.ll
 ; openmpi/optimized/test_overhead.ll
 ; openssl/optimized/destest-bin-destest.ll
 ; openusd/optimized/catmarkPatchBuilder.cpp.ll

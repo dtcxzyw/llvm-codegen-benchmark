@@ -1,5 +1,5 @@
 
-; 176 occurrences:
+; 175 occurrences:
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/color-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -95,7 +95,6 @@
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
 ; linux/optimized/compaction.ll
-; linux/optimized/printk_ringbuffer.ll
 ; openjdk/optimized/deoptimization.ll
 ; proxygen/optimized/HTTPBinaryCodec.cpp.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
@@ -177,7 +176,7 @@
 ; vcpkg/optimized/versions.cpp.ll
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i1 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -9001
   %3 = icmp ult i32 %2, 2
@@ -185,8 +184,9 @@ entry:
   ret i1 %4
 }
 
-; 152 occurrences:
+; 153 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
+; freetype/optimized/ftgzip.c.ll
 ; libpng/optimized/png.c.ll
 ; linux/optimized/hdac_device.ll
 ; luau/optimized/isocline.c.ll
@@ -343,6 +343,18 @@ define i1 @func0000000000000004(i1 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -67108865
   %3 = icmp ult i32 %2, -67108353
+  %not. = xor i1 %0, true
+  %4 = select i1 %not., i1 true, i1 %3
+  ret i1 %4
+}
+
+; 1 occurrences:
+; linux/optimized/printk_ringbuffer.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i1 %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, 1
+  %3 = icmp ult i32 %2, 2
   %not. = xor i1 %0, true
   %4 = select i1 %not., i1 true, i1 %3
   ret i1 %4

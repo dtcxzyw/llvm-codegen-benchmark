@@ -12,10 +12,9 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll
-; linux/optimized/fadvise.ll
 ; mimalloc/optimized/page.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i1 %1, i1 %2) #0 {

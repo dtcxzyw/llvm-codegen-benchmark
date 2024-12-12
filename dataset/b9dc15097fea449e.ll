@@ -18,12 +18,12 @@ define i32 @func0000000000000002(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 14
   %3 = icmp eq i64 %2, 10
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = zext i1 %4 to i32
   ret i32 %5
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/epd.c.ll
 ; abc/optimized/extraBddThresh.c.ll
@@ -33,14 +33,13 @@ entry:
 ; linux/optimized/hugetlbpage.ll
 ; llvm/optimized/ASTWriterStmt.cpp.ll
 ; openjdk/optimized/modRefBarrierSetC1.ll
-; qemu/optimized/target_riscv_vector_helper.c.ll
 ; ruby/optimized/cont.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000018(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, -5
   %3 = icmp ne i64 %2, 0
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = zext i1 %4 to i32
   ret i32 %5
 }

@@ -1,4 +1,4 @@
-func00000000000001c1:                   # @func00000000000001c1
+func0000000000000581:                   # @func0000000000000581
 	testl	%edx, %edx
 	setne	%al
 	testl	%esi, %esi
@@ -8,7 +8,7 @@ func00000000000001c1:                   # @func00000000000001c1
 	sete	%al
 	andb	%cl, %al
 	retq
-func0000000000000181:                   # @func0000000000000181
+func0000000000000501:                   # @func0000000000000501
 	testl	%edx, %edx
 	setne	%al
 	cmpl	$4096, %esi                     # imm = 0x1000

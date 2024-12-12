@@ -36,7 +36,7 @@ entry:
 ; llvm/optimized/Reassociate.cpp.ll
 ; openusd/optimized/variableExpressionImpl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000004a(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %0, %1
   %3 = icmp sgt i64 %2, 3

@@ -1,7 +1,5 @@
 
-; 5 occurrences:
-; linux/optimized/cap_audit.ll
-; linux/optimized/shmem.ll
+; 3 occurrences:
 ; openjdk/optimized/objectSampleWriter.ll
 ; postgres/optimized/heapam.ll
 ; qemu/optimized/dump_dump.c.ll
@@ -27,6 +25,18 @@ define i1 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1
   %4 = icmp eq i64 %3, %1
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
+}
+
+; 2 occurrences:
+; libquic/optimized/quic_stream_sequencer_buffer.cc.ll
+; linux/optimized/shmem.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 8191
+  %4 = icmp samesign ugt i64 %3, %1
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }
@@ -62,6 +72,18 @@ define i1 @func000000000000000c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = icmp ne i64 %3, %1
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
+}
+
+; 2 occurrences:
+; llvm/optimized/MemoryDependenceAnalysis.cpp.ll
+; postgres/optimized/nbtutils.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 4611686018427387903
+  %4 = icmp samesign ult i64 %3, %1
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5
 }

@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; assimp/optimized/STEPFileEncoding.cpp.ll
 ; lief/optimized/BinaryParser.cpp.ll
 ; lief/optimized/DyldInfo.cpp.ll
@@ -10,7 +10,6 @@
 ; linux/optimized/rsparser.ll
 ; linux/optimized/xhci-hub.ll
 ; llvm/optimized/CGObjCMac.cpp.ll
-; llvm/optimized/VerifyDiagnosticConsumer.cpp.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meilisearch-rs/optimized/54ajasddlqavlxt2.ll
 ; openusd/optimized/faceVertex.cpp.ll

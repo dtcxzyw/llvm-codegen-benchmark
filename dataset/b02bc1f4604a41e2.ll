@@ -14,7 +14,7 @@
 ; php/optimized/pcre2_jit_compile.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000014(i8 %0, i8 %1, i32 %2) #0 {
+define i8 @func0000000000000024(i8 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -65
   %4 = icmp ult i32 %3, 26

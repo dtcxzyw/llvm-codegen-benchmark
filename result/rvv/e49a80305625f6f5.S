@@ -6,5 +6,5 @@ func0000000000000001:                   # @func0000000000000001
 	vsll.vi	v9, v9, 8
 	lui	a0, 62
 	vand.vx	v9, v9, a0
-	vor.vv	v8, v9, v8
+	vor.vv	v8, v8, v9
 	ret

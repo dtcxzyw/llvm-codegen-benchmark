@@ -5,7 +5,7 @@ func0000000000000006:                   # @func0000000000000006
 	mv	a0, a1
 .LBB0_2:                                # %entry
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	addiw	a1, a1, -48
 	beqz	a1, .LBB1_2
 	mv	a0, a1
@@ -41,10 +41,17 @@ func0000000000000004:                   # @func0000000000000004
 	mv	a0, a1
 .LBB5_2:                                # %entry
 	ret
-func0000000000000018:                   # @func0000000000000018
-	addiw	a1, a1, -48
-	li	a2, 9
-	bltu	a2, a1, .LBB6_2
+func0000000000000014:                   # @func0000000000000014
+	addiw	a1, a1, 15
+	li	a2, 1024
+	bltu	a1, a2, .LBB6_2
 	mv	a0, a1
 .LBB6_2:                                # %entry
+	ret
+func0000000000000028:                   # @func0000000000000028
+	addiw	a1, a1, -48
+	li	a2, 9
+	bltu	a2, a1, .LBB7_2
+	mv	a0, a1
+.LBB7_2:                                # %entry
 	ret

@@ -1,9 +1,14 @@
 
-; 47 occurrences:
+%"struct.folly::relaxed_atomic.2689758" = type { %"struct.folly::detail::relaxed_atomic_integral_base.2689759" }
+%"struct.folly::detail::relaxed_atomic_integral_base.2689759" = type { %"struct.folly::detail::relaxed_atomic_base.2689760" }
+%"struct.folly::detail::relaxed_atomic_base.2689760" = type { %"struct.std::atomic.2689761" }
+%"struct.std::atomic.2689761" = type { %"struct.std::__atomic_base.2689762" }
+%"struct.std::__atomic_base.2689762" = type { i8 }
+
+; 54 occurrences:
 ; cvc5/optimized/regexp_elim.cpp.ll
 ; diesel-rs/optimized/2gwia6lwj254vbd7.ll
 ; diesel-rs/optimized/3btvyztn2iiarpvf.ll
-; folly/optimized/ShutdownSocketSet.cpp.ll
 ; folly/optimized/json.cpp.ll
 ; html5ever-rs/optimized/1wenjtbhc61q6deg.ll
 ; html5ever-rs/optimized/2k27uywn6e9ruua6.ll
@@ -47,12 +52,20 @@
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; wolfssl/optimized/pkcs12.c.ll
 ; xgboost/optimized/gbtree.cc.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i1 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = select i1 %1, i64 0, i64 %3
-  %5 = getelementptr nusw float, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw float, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -69,11 +82,22 @@ entry:
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i1 %1, i32 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = select i1 %1, i64 0, i64 %3
-  %5 = getelementptr nusw float, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw float, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; folly/optimized/ShutdownSocketSet.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000002(ptr %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = select i1 %1, i64 -1, i64 %3
+  %5 = getelementptr nusw %"struct.folly::relaxed_atomic.2689758", ptr %0, i64 %4
   ret ptr %5
 }
 

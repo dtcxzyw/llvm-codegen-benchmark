@@ -1,15 +1,8 @@
-func00000000000000c4:                   // @func00000000000000c4
+func0000000000000184:                   // @func0000000000000184
 // %bb.0:                               // %entry
-	movi	v4.4s, #64, lsl #24
-	mov	w8, #4097                       // =0x1001
-	dup	v5.2d, x8
-	cmtst	v3.4s, v3.4s, v4.4s
-	cmhi	v2.2d, v5.2d, v2.2d
-	cmhi	v1.2d, v5.2d, v1.2d
-	uzp1	v1.4s, v1.4s, v2.4s
-	xtn	v2.4h, v3.4s
-	xtn	v1.4h, v1.4s
-	and	v0.8b, v2.8b, v0.8b
-	and	v0.8b, v0.8b, v1.8b
+	and	w8, w0, w2, lsr #30
+	cmp	x1, #1, lsl #12                 // =4096
+	cset	w9, ls
+	and	w0, w8, w9
 	ret
                                         // -- End function

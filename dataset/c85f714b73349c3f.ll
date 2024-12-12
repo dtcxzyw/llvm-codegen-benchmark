@@ -1,8 +1,9 @@
 
-; 19 occurrences:
+; 20 occurrences:
 ; abseil-cpp/optimized/exponential_distribution_test.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/nonsecure_base_test.cc.ll
+; boost/optimized/xml_wgrammar.ll
 ; icu/optimized/regexcmp.ll
 ; linux/optimized/assoc_array.ll
 ; linux/optimized/binfmt_elf.ll
@@ -269,7 +270,7 @@ entry:
   ret i32 %2
 }
 
-; 54 occurrences:
+; 55 occurrences:
 ; abc/optimized/bmcFault.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
@@ -277,6 +278,7 @@ entry:
 ; abc/optimized/sbdSat.c.ll
 ; abseil-cpp/optimized/fixed_array_test.cc.ll
 ; assimp/optimized/XFileParser.cpp.ll
+; boost/optimized/default_filter_factory.ll
 ; clamav/optimized/textdet.c.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; graphviz/optimized/make_map.c.ll
@@ -332,7 +334,9 @@ entry:
   ret i32 %2
 }
 
-; 7 occurrences:
+; 9 occurrences:
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/xml_grammar.ll
 ; darktable/optimized/SamsungV2Decompressor.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_distributive.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_ops.cpp.ll

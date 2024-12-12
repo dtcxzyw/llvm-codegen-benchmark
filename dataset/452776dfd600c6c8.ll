@@ -1,23 +1,5 @@
 
-; 7 occurrences:
-; llvm/optimized/SemaCodeComplete.cpp.ll
-; openssl/optimized/hpke_test-bin-hpke_test.ll
-; openssl/optimized/openssl-bin-ocsp.ll
-; openssl/optimized/openssl-bin-pkey.ll
-; qemu/optimized/block_qcow2.c.ll
-; ruby/optimized/gc.ll
-; wireshark/optimized/tap-sctp-analysis.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000c(i1 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ne i32 %2, 1
-  %not. = xor i1 %1, true
-  %4 = select i1 %not., i1 %3, i1 false
-  %5 = select i1 %0, i1 true, i1 %4
-  ret i1 %5
-}
-
-; 13 occurrences:
+; 14 occurrences:
 ; abc/optimized/giaCSat.c.ll
 ; abc/optimized/giaCSatOld.c.ll
 ; abc/optimized/giaCSatP.c.ll
@@ -31,10 +13,28 @@ entry:
 ; openssl/optimized/libapps-lib-s_socket.ll
 ; quest/optimized/QuEST_validation.c.ll
 ; quickjs/optimized/quickjs.ll
+; ruby/optimized/gc.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
+  %not. = xor i1 %1, true
+  %4 = select i1 %not., i1 %3, i1 false
+  %5 = select i1 %0, i1 true, i1 %4
+  ret i1 %5
+}
+
+; 6 occurrences:
+; llvm/optimized/SemaCodeComplete.cpp.ll
+; openssl/optimized/hpke_test-bin-hpke_test.ll
+; openssl/optimized/openssl-bin-ocsp.ll
+; openssl/optimized/openssl-bin-pkey.ll
+; qemu/optimized/block_qcow2.c.ll
+; wireshark/optimized/tap-sctp-analysis.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000c(i1 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ne i32 %2, 0
   %not. = xor i1 %1, true
   %4 = select i1 %not., i1 %3, i1 false
   %5 = select i1 %0, i1 true, i1 %4
@@ -69,18 +69,6 @@ entry:
 define i1 @func0000000000000006(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 1
-  %not. = xor i1 %1, true
-  %4 = select i1 %not., i1 %3, i1 false
-  %5 = select i1 %0, i1 true, i1 %4
-  ret i1 %5
-}
-
-; 1 occurrences:
-; cpython/optimized/longobject.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ugt i32 %2, 7
   %not. = xor i1 %1, true
   %4 = select i1 %not., i1 %3, i1 false
   %5 = select i1 %0, i1 true, i1 %4

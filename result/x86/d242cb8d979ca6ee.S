@@ -48,3 +48,8 @@ func000000000000000e:                   # @func000000000000000e
 	shll	$8, %eax
 	orl	%edi, %eax
 	retq
+func000000000000000c:                   # @func000000000000000c
+	movzbl	%sil, %eax
+	shll	$8, %eax
+	orl	%edi, %eax
+	retq

@@ -25,15 +25,11 @@ entry:
   ret ptr %7
 }
 
-; 48 occurrences:
+; 44 occurrences:
 ; abc/optimized/aigFrames.c.ll
 ; abc/optimized/saigPhase.c.ll
 ; gromacs/optimized/dlabrd.cpp.ll
-; gromacs/optimized/dlatrd.cpp.ll
-; gromacs/optimized/dsytd2.cpp.ll
 ; gromacs/optimized/slabrd.cpp.ll
-; gromacs/optimized/slatrd.cpp.ll
-; gromacs/optimized/ssytd2.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
 ; openblas/optimized/dgegs.c.ll
 ; openblas/optimized/dgegv.c.ll

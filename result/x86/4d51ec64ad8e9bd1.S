@@ -1,6 +1,6 @@
-func000000000000001a:                   # @func000000000000001a
+func000000000000001f:                   # @func000000000000001f
 	xorl	%eax, %eax
-	testb	%sil, %sil
+	cmpb	$3, %sil
 	sete	%al
-	leaq	560(%rdi,%rax,8), %rax
+	leaq	104(%rdi,%rax,8), %rax
 	retq

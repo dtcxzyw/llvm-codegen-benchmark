@@ -1,5 +1,5 @@
 
-; 249 occurrences:
+; 251 occurrences:
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver3.c.ll
@@ -7,6 +7,7 @@
 ; abseil-cpp/optimized/str_cat_test.cc.ll
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/alloc_lib.ll
 ; hdf5/optimized/H5Tbit.c.ll
 ; hyperscan/optimized/repeat.c.ll
 ; libquic/optimized/p224-64.c.ll
@@ -20,6 +21,7 @@
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
+; lvgl/optimized/lv_tlsf.ll
 ; openjdk/optimized/archiveHeapLoader.ll
 ; openjdk/optimized/archiveHeapWriter.ll
 ; openjdk/optimized/barrierSetNMethod.ll

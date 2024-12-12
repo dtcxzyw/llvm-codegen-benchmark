@@ -1,11 +1,11 @@
-func0000000000000caa:                   # @func0000000000000caa
+func000000000000314a:                   # @func000000000000314a
 	cmpl	%esi, %edi
 	setne	%cl
 	orl	%edi, %esi
 	setns	%al
 	andb	%cl, %al
 	retq
-func0000000000000ccc:                   # @func0000000000000ccc
+func000000000000318c:                   # @func000000000000318c
 	cmpl	%esi, %edi
 	setne	%al
 	cmpl	$4, %esi

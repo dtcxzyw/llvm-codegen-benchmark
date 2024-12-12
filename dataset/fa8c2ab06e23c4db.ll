@@ -1,10 +1,9 @@
 
-; 20 occurrences:
+; 19 occurrences:
 ; darktable/optimized/introspection_exposure.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; darktable/optimized/introspection_toneequal.c.ll
 ; gromacs/optimized/anadih.cpp.ll
-; gromacs/optimized/angle_correction.cpp.ll
 ; gromacs/optimized/bonded.cpp.ll
 ; gromacs/optimized/coupling.cpp.ll
 ; gromacs/optimized/dispersioncorrection.cpp.ll

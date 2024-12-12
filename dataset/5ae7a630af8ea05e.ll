@@ -1,6 +1,5 @@
 
-; 119 occurrences:
-; abseil-cpp/optimized/inlined_vector_exception_safety_test.cc.ll
+; 109 occurrences:
 ; arrow/optimized/caching.cc.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; casadi/optimized/mx_function.cpp.ll
@@ -10,8 +9,6 @@
 ; cvc5/optimized/ite_utilities.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types_column.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_scan.cpp.ll
-; eastl/optimized/TestDeque.cpp.ll
-; faiss/optimized/IVFlib.cpp.ll
 ; gromacs/optimized/colvaratoms.cpp.ll
 ; gromacs/optimized/gmx_xpm2ps.cpp.ll
 ; gromacs/optimized/molecules.cpp.ll
@@ -22,13 +19,11 @@
 ; llvm/optimized/UDTLayout.cpp.ll
 ; luau/optimized/Normalize.cpp.ll
 ; opencv/optimized/detection_output_layer.cpp.ll
-; opencv/optimized/model.cpp.ll
 ; opencv/optimized/sift.dispatch.cpp.ll
 ; opencv/optimized/trace.cpp.ll
 ; openspiel/optimized/spiel.cc.ll
 ; openusd/optimized/animation.cpp.ll
 ; openusd/optimized/backdrop.cpp.ll
-; openusd/optimized/bakeSkinning.cpp.ll
 ; openusd/optimized/bindingAPI.cpp.ll
 ; openusd/optimized/blendShape.cpp.ll
 ; openusd/optimized/boundable.cpp.ll
@@ -104,7 +99,6 @@
 ; openusd/optimized/subset.cpp.ll
 ; openusd/optimized/tetMesh.cpp.ll
 ; openusd/optimized/validationRegistry.cpp.ll
-; openusd/optimized/valueUtils.cpp.ll
 ; openusd/optimized/var.cpp.ll
 ; openusd/optimized/visibilityAPI.cpp.ll
 ; openusd/optimized/volumeLightAPI.cpp.ll
@@ -115,12 +109,8 @@
 ; rocksdb/optimized/wal_manager.cc.ll
 ; velox/optimized/Filter.cpp.ll
 ; verilator/optimized/V3Config.cpp.ll
-; xgboost/optimized/host_device_vector.cc.ll
-; xgboost/optimized/tree_model.cc.ll
-; zxing/optimized/PDFScanningDecoder.cpp.ll
-; zxing/optimized/ZXBigInteger.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000036(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000037(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %0, i64 %1
   %4 = getelementptr i8, ptr %3, i64 %2
@@ -138,6 +128,25 @@ entry:
   %4 = getelementptr i32, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 %2
   ret ptr %5
+}
+
+; 10 occurrences:
+; abseil-cpp/optimized/inlined_vector_exception_safety_test.cc.ll
+; eastl/optimized/TestDeque.cpp.ll
+; faiss/optimized/IVFlib.cpp.ll
+; opencv/optimized/model.cpp.ll
+; openusd/optimized/bakeSkinning.cpp.ll
+; openusd/optimized/valueUtils.cpp.ll
+; xgboost/optimized/host_device_vector.cc.ll
+; xgboost/optimized/tree_model.cc.ll
+; zxing/optimized/PDFScanningDecoder.cpp.ll
+; zxing/optimized/ZXBigInteger.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000036(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr i8, ptr %0, i64 %1
+  %4 = getelementptr i8, ptr %3, i64 %2
+  ret ptr %4
 }
 
 ; 2 occurrences:

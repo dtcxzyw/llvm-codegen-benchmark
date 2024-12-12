@@ -16,9 +16,8 @@ entry:
   ret i64 %3
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; gromacs/optimized/nm2type.cpp.ll
-; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; openssl/optimized/libcrypto-lib-bn_nist.ll
 ; openssl/optimized/libcrypto-shlib-bn_nist.ll
@@ -103,7 +102,8 @@ entry:
   ret i64 %3
 }
 
-; 10 occurrences:
+; 11 occurrences:
+; boost/optimized/to_chars.ll
 ; cmake/optimized/x86.c.ll
 ; flac/optimized/bitreader.c.ll
 ; icu/optimized/collationweights.ll
@@ -147,6 +147,17 @@ entry:
   %1 = shl i32 %0, 3
   %2 = sub nuw nsw i32 64, %1
   %3 = zext nneg i32 %2 to i64
+  ret i64 %3
+}
+
+; 1 occurrences:
+; llvm/optimized/AArch64ISelLowering.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000a(i32 %0) #0 {
+entry:
+  %1 = shl nsw i32 %0, 4
+  %2 = sub nsw i32 128, %1
+  %3 = zext i32 %2 to i64
   ret i64 %3
 }
 

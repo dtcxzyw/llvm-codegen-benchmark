@@ -13,12 +13,12 @@
 define i64 @func0000000000000002(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = or i64 %4, %0
   ret i64 %5
 }
 
-; 14 occurrences:
+; 8 occurrences:
 ; arrow/optimized/decimal.cc.ll
 ; linux/optimized/commoncap.ll
 ; linux/optimized/gro.ll
@@ -26,23 +26,17 @@ entry:
 ; opencv/optimized/softfloat.cpp.ll
 ; openjdk/optimized/zMark.ll
 ; qemu/optimized/hw_display_virtio-gpu-base.c.ll
-; spike/optimized/f128_to_f16.ll
-; spike/optimized/f128_to_f32.ll
 ; spike/optimized/f128_to_i32_r_minMag.ll
-; spike/optimized/f128_to_ui32_r_minMag.ll
-; spike/optimized/f32_to_f16.ll
-; spike/optimized/f64_to_f16.ll
-; spike/optimized/f64_to_f32.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = or i64 %3, %1
+  %4 = or i64 %1, %3
   %5 = or i64 %4, %0
   ret i64 %5
 }
 
-; 28 occurrences:
+; 23 occurrences:
 ; c3c/optimized/bigint.c.ll
 ; cvc5/optimized/timeout_core_manager.cpp.ll
 ; linux/optimized/lbr.ll
@@ -59,7 +53,6 @@ entry:
 ; llvm/optimized/Metadata.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
@@ -67,15 +60,11 @@ entry:
 ; openusd/optimized/level.cpp.ll
 ; ozz-animation/optimized/jsoncpp.cpp.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_h368ace38__0.ll
-; spike/optimized/f128_classify.ll
-; spike/optimized/f16_classify.ll
-; spike/optimized/f32_classify.ll
-; spike/optimized/f64_classify.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = or disjoint i64 %3, %1
+  %4 = or disjoint i64 %1, %3
   %5 = or disjoint i64 %4, %0
   ret i64 %5
 }
@@ -86,8 +75,8 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i64
-  %4 = or i64 %3, %1
-  %5 = or disjoint i64 %4, %0
+  %4 = or i64 %1, %3
+  %5 = or disjoint i64 %0, %4
   ret i64 %5
 }
 

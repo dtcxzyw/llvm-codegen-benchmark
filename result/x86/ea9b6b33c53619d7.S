@@ -6,6 +6,13 @@ func0000000000000034:                   # @func0000000000000034
 	addl	%esi, %ecx
 	leal	-306(%rdi,%rcx), %eax
 	retq
+func000000000000003f:                   # @func000000000000003f
+	movl	%edx, %eax
+	imulq	$376287347, %rax, %rax          # imm = 0x166DB073
+	shrq	$39, %rax
+	addl	%esi, %eax
+	leal	60736(%rdi,%rax), %eax
+	retq
 func0000000000000000:                   # @func0000000000000000
 	movl	%esi, %eax
 	imulq	$954437177, %rax, %rax          # imm = 0x38E38E39

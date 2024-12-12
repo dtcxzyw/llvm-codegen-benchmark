@@ -1,4 +1,4 @@
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	bexti	a2, a0, 35
 	czero.nez	a0, a0, a2
 	czero.eqz	a1, a1, a2
@@ -6,7 +6,7 @@ func0000000000000014:                   # @func0000000000000014
 	srli	a0, a0, 30
 	seqz	a0, a0
 	ret
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	bexti	a2, a0, 35
 	czero.nez	a0, a0, a2
 	czero.eqz	a1, a1, a2
@@ -14,14 +14,14 @@ func0000000000000018:                   # @func0000000000000018
 	srli	a0, a0, 31
 	snez	a0, a0
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	bexti	a2, a0, 35
 	czero.nez	a0, a0, a2
 	czero.eqz	a1, a1, a2
 	or	a0, a0, a1
 	seqz	a0, a0
 	ret
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	li	a2, 3
 	slli	a2, a2, 60
 	and	a2, a2, a0
@@ -29,4 +29,11 @@ func000000000000001c:                   # @func000000000000001c
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1
 	snez	a0, a0
+	ret
+func0000000000000024:                   # @func0000000000000024
+	bexti	a2, a0, 12
+	czero.nez	a0, a0, a2
+	czero.eqz	a1, a1, a2
+	or	a0, a0, a1
+	sltiu	a0, a0, 8
 	ret

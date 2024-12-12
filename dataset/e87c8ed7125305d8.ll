@@ -1,10 +1,11 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; lodepng/optimized/lodepng_util.cpp.ll
 ; luajit/optimized/lj_gc.ll
 ; luajit/optimized/lj_gc_dyn.ll
 ; minetest/optimized/CImageLoaderJPG.cpp.ll
 ; miniaudio/optimized/unity.c.ll
+; oiio/optimized/Writer.cpp.ll
 ; oiio/optimized/icooutput.cpp.ll
 ; oiio/optimized/jpegoutput.cpp.ll
 ; oiio/optimized/pngoutput.cpp.ll
@@ -49,16 +50,15 @@ entry:
 ; openusd/optimized/AVIFImage.cpp.ll
 ; stockfish/optimized/search.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = icmp sgt i32 %3, 0
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 3 occurrences:
-; linux/optimized/input-mt.ll
+; 2 occurrences:
 ; openjdk/optimized/memnode.ll
 ; qemu/optimized/ui_vnc-enc-tight.c.ll
 ; Function Attrs: nounwind
@@ -66,7 +66,7 @@ define i1 @func0000000000000006(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = icmp slt i32 %3, 2048
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -76,7 +76,7 @@ entry:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000004c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw i32 %1, %2
   %4 = icmp ne i32 %3, 0
@@ -96,7 +96,7 @@ define i1 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = icmp eq i32 %3, 0
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -118,28 +118,6 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; darktable/optimized/SamsungV0Decompressor.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = mul nsw i32 %1, %2
-  %4 = icmp ugt i32 %3, 1
-  %5 = and i1 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; slurm/optimized/dist_tasks.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = mul nuw nsw i32 %1, %2
-  %4 = icmp ugt i32 %3, 1
-  %5 = and i1 %4, %0
-  ret i1 %5
-}
-
 ; 7 occurrences:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; llvm/optimized/APInt.cpp.ll
@@ -157,15 +135,14 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = icmp ugt i32 %3, 64
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -173,11 +150,11 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; opencv/optimized/matrix_operations.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = icmp eq i32 %3, 64
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -186,7 +163,7 @@ entry:
 ; graphviz/optimized/stuff.c.ll
 ; gromacs/optimized/calcgrid.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = icmp ne i32 %3, 90
@@ -197,7 +174,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/nurbsApproximatingSceneIndex.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000006c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %1, %2
   %4 = icmp ne i32 %3, 0

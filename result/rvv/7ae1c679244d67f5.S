@@ -11,6 +11,6 @@ func0000000000000014:                   # @func0000000000000014
 	vsext.vf4	v14, v12
 	vsll.vi	v10, v10, 12
 	vsll.vi	v12, v14, 4
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	vor.vv	v8, v8, v12
 	ret

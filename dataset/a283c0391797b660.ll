@@ -1,5 +1,5 @@
 
-; 12 occurrences:
+; 13 occurrences:
 ; llama.cpp/optimized/ggml-quants.c.ll
 ; mitsuba3/optimized/measured_polarized.cpp.ll
 ; mitsuba3/optimized/medium.cpp.ll
@@ -12,6 +12,7 @@
 ; mitsuba3/optimized/roughplastic.cpp.ll
 ; opencv/optimized/evaluation.cpp.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(float %0) #0 {
 entry:

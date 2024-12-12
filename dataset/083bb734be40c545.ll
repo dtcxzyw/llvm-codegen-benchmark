@@ -1,5 +1,6 @@
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/src.ll
 ; flac/optimized/stream_decoder.c.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; llvm/optimized/APSInt.cpp.ll

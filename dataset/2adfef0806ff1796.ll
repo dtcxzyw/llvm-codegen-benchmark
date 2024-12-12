@@ -1,7 +1,6 @@
 
-; 34 occurrences:
+; 32 occurrences:
 ; cvc5/optimized/miplib_trick.cpp.ll
-; faiss/optimized/lattice_Zn.cpp.ll
 ; hdf5/optimized/H5Zscaleoffset.c.ll
 ; hyperscan/optimized/ng_squash.cpp.ll
 ; linux/optimized/sbitmap.ll
@@ -21,7 +20,6 @@
 ; llvm/optimized/LazyValueInfo.cpp.ll
 ; llvm/optimized/Legalizer.cpp.ll
 ; llvm/optimized/OMPIRBuilder.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
@@ -122,7 +120,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 15, %1
-  %3 = xor i64 %2, %0
+  %3 = xor i64 %0, %2
   ret i64 %3
 }
 
@@ -134,7 +132,7 @@ entry:
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 1, %1
-  %3 = xor i64 %2, %0
+  %3 = xor i64 %0, %2
   ret i64 %3
 }
 

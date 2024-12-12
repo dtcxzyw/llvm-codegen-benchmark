@@ -24,3 +24,7 @@ func0000000000000003:                   # @func0000000000000003
 	leal	(%rax,%rax,2), %eax
 	addl	%edi, %eax
 	retq
+func0000000000000007:                   # @func0000000000000007
+	sarl	$16, %edi
+	imull	$104, %edi, %eax
+	retq

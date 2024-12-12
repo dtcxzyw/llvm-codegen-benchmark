@@ -1,7 +1,6 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; cmake/optimized/archive_read_support_format_rar.c.ll
-; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; nanosvg/optimized/nanosvg.ll
 ; openjdk/optimized/cmspack.ll
 ; Function Attrs: nounwind

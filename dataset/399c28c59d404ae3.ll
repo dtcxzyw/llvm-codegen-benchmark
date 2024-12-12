@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 25 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/amapUniq.c.ll
 ; abc/optimized/darCut.c.ll
@@ -20,7 +20,6 @@
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; linux/optimized/build_utility.ll
 ; linux/optimized/e1000_hw.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/poll.ll
 ; llvm/optimized/CGVTables.cpp.ll
 ; openjdk/optimized/hb-common.ll
@@ -31,16 +30,6 @@ define i32 @func0000000000000001(i32 %0) #0 {
 entry:
   %1 = and i32 %0, -232
   %2 = or disjoint i32 %1, 3
-  ret i32 %2
-}
-
-; 1 occurrences:
-; linux/optimized/openclose.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000000(i32 %0) #0 {
-entry:
-  %1 = and i32 %0, -4202817
-  %2 = or disjoint i32 %1, 256
   ret i32 %2
 }
 

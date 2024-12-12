@@ -50,8 +50,7 @@ entry:
   ret ptr %3
 }
 
-; 3 occurrences:
-; linux/optimized/8250_pnp.ll
+; 2 occurrences:
 ; raylib/optimized/rmodels.c.ll
 ; wireshark/optimized/editcap.c.ll
 ; Function Attrs: nounwind

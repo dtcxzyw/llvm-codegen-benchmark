@@ -6,7 +6,7 @@ func0000000000000003:                   # @func0000000000000003
 	retq
 func0000000000000002:                   # @func0000000000000002
 	movl	%edi, %eax
-	testb	$1, %dl
+	testl	$33554432, %edx                 # imm = 0x2000000
 	cmovnel	%esi, %eax
-	orl	$2, %eax
+	orl	$49152, %eax                    # imm = 0xC000
 	retq

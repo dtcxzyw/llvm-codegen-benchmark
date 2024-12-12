@@ -8,7 +8,7 @@
 	.byte	2                               # 0x2
 .LCPI0_4:
 	.byte	3                               # 0x3
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	vpcmpeqb	.LCPI0_0(%rip), %xmm0, %k0
 	vpbroadcastb	.LCPI0_3(%rip), %xmm1   # xmm1 = [2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2]
 	vpcmpeqb	%xmm1, %xmm0, %k1

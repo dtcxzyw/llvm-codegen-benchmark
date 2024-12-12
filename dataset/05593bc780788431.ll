@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 24 occurrences:
 ; assimp/optimized/FBXExporter.cpp.ll
 ; darktable/optimized/introspection_vignette.c.ll
 ; graphviz/optimized/gvrender_core_svg.c.ll
@@ -23,6 +23,7 @@
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; wireshark/optimized/packet-mate.c.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(i1 %0, float %1) #0 {
 entry:

@@ -1,5 +1,14 @@
 
-; 53 occurrences:
+; 60 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
 ; bullet3/optimized/btGjkPairDetector.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_graduatednd.c.ll
@@ -15,13 +24,11 @@
 ; gromacs/optimized/pull.cpp.ll
 ; gromacs/optimized/settle.cpp.ll
 ; hermes/optimized/hermes.cpp.ll
-; libzmq/optimized/local_thr.cpp.ll
 ; meshlab/optimized/Factor.cpp.ll
 ; meshlab/optimized/apss.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; mitsuba3/optimized/regular.cpp.ll
 ; mitsuba3/optimized/tabphase.cpp.ll
-; msdfgen/optimized/MSDFErrorCorrection.cpp.ll
 ; openblas/optimized/dlaed6.c.ll
 ; opencv/optimized/benchmark.cpp.ll
 ; opencv/optimized/daisy.cpp.ll

@@ -43,6 +43,34 @@ entry:
   ret i32 %6
 }
 
+; 16 occurrences:
+; llvm/optimized/MCWin64EH.cpp.ll
+; openvdb/optimized/Diagnostics.cc.ll
+; openvdb/optimized/FastSweeping.cc.ll
+; openvdb/optimized/Filter.cc.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
+; openvdb/optimized/LevelSetRebuild.cc.ll
+; openvdb/optimized/LevelSetSphere.cc.ll
+; openvdb/optimized/LevelSetTracker.cc.ll
+; openvdb/optimized/Mask.cc.ll
+; openvdb/optimized/Merge.cc.ll
+; openvdb/optimized/MultiResGrid.cc.ll
+; openvdb/optimized/PoissonSolver.cc.ll
+; openvdb/optimized/TopologyToLevelSet.cc.ll
+; openvdb/optimized/VolumeAdvect.cc.ll
+; openvdb/optimized/VolumeToMesh.cc.ll
+; openvdb/optimized/points.cc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 3
+  %3 = and i32 %2, 31744
+  %4 = lshr i32 %0, 2
+  %5 = and i32 %4, 992
+  %6 = or disjoint i32 %5, %3
+  ret i32 %6
+}
+
 ; 12 occurrences:
 ; abc/optimized/giaIso.c.ll
 ; abseil-cpp/optimized/arg.cc.ll
@@ -80,19 +108,6 @@ entry:
   %4 = shl nsw i32 %0, 1
   %5 = and i32 %4, 254
   %6 = or disjoint i32 %5, %3
-  ret i32 %6
-}
-
-; 1 occurrences:
-; llvm/optimized/MCWin64EH.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl i32 %1, 5
-  %3 = and i32 %2, 192
-  %4 = lshr i32 %0, 3
-  %5 = and i32 %4, 255
-  %6 = or i32 %5, %3
   ret i32 %6
 }
 

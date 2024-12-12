@@ -47,10 +47,8 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
-; abc/optimized/luckyFast16.c.ll
+; 1 occurrences:
 ; bdwgc/optimized/gc.c.ll
-; sentencepiece/optimized/int128.cc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000011(i32 %0, i32 %1, i64 %2) #0 {
 entry:
@@ -60,42 +58,14 @@ entry:
   ret i32 %5
 }
 
-; 11 occurrences:
-; git/optimized/push.ll
-; linux/optimized/aspm.ll
-; linux/optimized/hwgpe.ll
-; linux/optimized/intel_display.ll
-; linux/optimized/journal.ll
-; linux/optimized/lbr.ll
-; linux/optimized/tg3.ll
-; linux/optimized/x86_pkg_temp_thermal.ll
-; llvm/optimized/CGDebugInfo.cpp.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
-; quickjs/optimized/libbf.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000002(i32 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = icmp eq i64 %2, 0
-  %4 = select i1 %3, i32 %0, i32 %1
-  %5 = or i32 %4, 524288
-  ret i32 %5
-}
-
-; 14 occurrences:
+; 7 occurrences:
 ; abc/optimized/giaSupps.c.ll
 ; abc/optimized/rsbDec6.c.ll
-; cpython/optimized/mpdecimal.ll
-; cpython/optimized/sixstep.ll
 ; duckdb/optimized/ub_duckdb_execution_index.cpp.ll
-; eastl/optimized/TestBitset.cpp.ll
-; hwloc/optimized/bitmap.ll
-; hwloc/optimized/cpukinds.ll
-; hwloc/optimized/topology-x86.ll
 ; miniaudio/optimized/unity.c.ll
 ; openjdk/optimized/countbitsnode.ll
 ; qemu/optimized/io_channel-websock.c.ll
 ; spike/optimized/spike.ll
-; z3/optimized/util.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000009(i32 %0, i32 %1, i64 %2) #0 {
 entry:
@@ -105,12 +75,62 @@ entry:
   ret i32 %5
 }
 
+; 2 occurrences:
+; abc/optimized/luckyFast16.c.ll
+; sentencepiece/optimized/int128.cc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000031(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i64 %2, 65535
+  %4 = select i1 %3, i32 %0, i32 %1
+  %5 = or disjoint i32 %4, 8
+  ret i32 %5
+}
+
+; 10 occurrences:
+; git/optimized/push.ll
+; linux/optimized/aspm.ll
+; linux/optimized/hwgpe.ll
+; linux/optimized/intel_display.ll
+; linux/optimized/journal.ll
+; linux/optimized/lbr.ll
+; linux/optimized/tg3.ll
+; linux/optimized/x86_pkg_temp_thermal.ll
+; llvm/optimized/CGDebugInfo.cpp.ll
+; quickjs/optimized/libbf.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000002(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = icmp eq i64 %2, 0
+  %4 = select i1 %3, i32 %0, i32 %1
+  %5 = or i32 %4, 32
+  ret i32 %5
+}
+
+; 8 occurrences:
+; cpython/optimized/mpdecimal.ll
+; cpython/optimized/sixstep.ll
+; duckdb/optimized/ub_duckdb_execution_index.cpp.ll
+; eastl/optimized/TestBitset.cpp.ll
+; hwloc/optimized/bitmap.ll
+; hwloc/optimized/cpukinds.ll
+; hwloc/optimized/topology-x86.ll
+; z3/optimized/util.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000029(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ult i64 %2, 65536
+  %4 = select i1 %3, i32 %0, i32 %1
+  %5 = or disjoint i32 %4, 8
+  ret i32 %5
+}
+
 ; 1 occurrences:
 ; z3/optimized/util.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0, i32 %1, i64 %2) #0 {
+define i32 @func0000000000000028(i32 %0, i32 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ult i64 %2, 16
+  %3 = icmp samesign ult i64 %2, 16
   %4 = select i1 %3, i32 %0, i32 %1
   %5 = or i32 %4, 2
   ret i32 %5

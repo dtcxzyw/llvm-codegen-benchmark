@@ -32,6 +32,12 @@ func0000000000000001:                   # @func0000000000000001
 	addl	%edi, %eax
 	negl	%eax
 	retq
+func0000000000000030:                   # @func0000000000000030
+	addl	%edx, %esi
+	addl	%edi, %esi
+	movl	$90, %eax
+	subl	%esi, %eax
+	retq
 func0000000000000011:                   # @func0000000000000011
 	addl	%edx, %esi
 	addl	%edi, %esi

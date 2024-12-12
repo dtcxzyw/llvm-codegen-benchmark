@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
 ; cvc5/optimized/theory_arith_private.cpp.ll
 ; llvm/optimized/AttributorAttributes.cpp.ll
@@ -7,6 +7,7 @@
 ; llvm/optimized/ParseOpenMP.cpp.ll
 ; llvm/optimized/StackColoring.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_draw_sw_border.ll
 ; openspiel/optimized/goofspiel.cc.ll
 ; z3/optimized/polynomial.cpp.ll
 ; z3/optimized/upolynomial.cpp.ll

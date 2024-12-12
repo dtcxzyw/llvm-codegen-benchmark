@@ -51,16 +51,4 @@ entry:
   ret i8 %5
 }
 
-; 2 occurrences:
-; linux/optimized/ich8lan.ll
-; linux/optimized/netdev.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000008(i8 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ugt i32 %2, 100
-  %4 = select i1 %3, i1 %1, i1 false
-  %5 = select i1 %4, i8 1, i8 %0
-  ret i8 %5
-}
-
 attributes #0 = { nounwind }

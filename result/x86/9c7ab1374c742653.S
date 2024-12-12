@@ -5,7 +5,7 @@ func0000000000000010:                   # @func0000000000000010
 	andq	$-64, %rax
 	leaq	64(%rdi,%rax), %rax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000001f:                   # @func000000000000001f
 	leaq	3(%rsi), %rax
 	testq	%rsi, %rsi
 	cmovnsq	%rsi, %rax

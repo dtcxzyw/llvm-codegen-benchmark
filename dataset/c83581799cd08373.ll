@@ -9,7 +9,7 @@
 ; raylib/optimized/rtextures.c.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i1 %1, i32 %2) #0 {
+define i32 @func0000000000000026(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = select i1 %1, i32 %0, i32 %3

@@ -1,5 +1,5 @@
 
-; 106 occurrences:
+; 108 occurrences:
 ; c3c/optimized/sema_decls.c.ll
 ; c3c/optimized/sema_expr.c.ll
 ; darktable/optimized/ArwDecoder.cpp.ll
@@ -10,7 +10,6 @@
 ; linux/optimized/e1000_hw.ll
 ; linux/optimized/flow_dissector.ll
 ; linux/optimized/hda_auto_parser.ll
-; linux/optimized/he.ll
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/intel_dram.ll
 ; linux/optimized/pci.ll
@@ -74,6 +73,10 @@
 ; lua/optimized/ldo.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; lvgl/optimized/lv_image.ll
+; lvgl/optimized/lv_obj_scroll.ll
+; lvgl/optimized/lv_obj_style.ll
+; lvgl/optimized/lv_spinbox.ll
 ; openjdk/optimized/relocInfo_x86.ll
 ; openusd/optimized/patchTableFactory.cpp.ll
 ; openusd/optimized/reconinter.c.ll
@@ -84,7 +87,6 @@
 ; ruby/optimized/ripper.ll
 ; ruby/optimized/strftime.ll
 ; ruby/optimized/time.ll
-; spike/optimized/f16_classify.ll
 ; spike/optimized/f16_roundToInt.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-ansi_637.c.ll
@@ -114,7 +116,7 @@ entry:
   ret i1 %2
 }
 
-; 26 occurrences:
+; 28 occurrences:
 ; c3c/optimized/parse_global.c.ll
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -134,6 +136,8 @@ entry:
 ; llvm/optimized/RetainCountDiagnostics.cpp.ll
 ; llvm/optimized/Verifier.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
+; lvgl/optimized/lv_image.ll
+; lvgl/optimized/lv_obj_scroll.ll
 ; openusd/optimized/level.cpp.ll
 ; openusd/optimized/topologyRefiner.cpp.ll
 ; ruby/optimized/time.ll
@@ -142,14 +146,14 @@ entry:
 ; wireshark/optimized/packet-ieee80211-radio.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i16 %0) #0 {
+define i1 @func0000000000000014(i16 %0) #0 {
 entry:
   %1 = and i16 %0, 384
   %2 = icmp ne i16 %1, 384
   ret i1 %2
 }
 
-; 22 occurrences:
+; 24 occurrences:
 ; c3c/optimized/sema_decls.c.ll
 ; c3c/optimized/sema_expr.c.ll
 ; hermes/optimized/CommandLine.cpp.ll
@@ -164,6 +168,8 @@ entry:
 ; llvm/optimized/Mangler.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_image.ll
+; lvgl/optimized/lv_spinbox.ll
 ; openusd/optimized/decodemv.c.ll
 ; openusd/optimized/topologyRefiner.cpp.ll
 ; ruby/optimized/ripper.ll
@@ -195,7 +201,7 @@ entry:
 ; wireshark/optimized/packet-mausb.c.ll
 ; wireshark/optimized/packet-stun.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i16 %0) #0 {
+define i1 @func0000000000000018(i16 %0) #0 {
 entry:
   %1 = and i16 %0, 24
   %2 = icmp eq i16 %1, 24

@@ -35,14 +35,14 @@ entry:
   ret i8 %4
 }
 
-; 20 occurrences:
+; 19 occurrences:
+; boost/optimized/src.ll
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; eastl/optimized/BenchmarkString.cpp.ll
 ; eastl/optimized/EASTLBenchmark.cpp.ll
 ; eastl/optimized/EATest.cpp.ll
 ; eastl/optimized/TestBitVector.cpp.ll
-; eastl/optimized/TestCharTraits.cpp.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestFixedString.cpp.ll
 ; eastl/optimized/TestFunctional.cpp.ll
@@ -51,7 +51,6 @@ entry:
 ; eastl/optimized/TestOptional.cpp.ll
 ; eastl/optimized/TestRingBuffer.cpp.ll
 ; eastl/optimized/TestString.cpp.ll
-; eastl/optimized/TestUtility.cpp.ll
 ; eastl/optimized/TestVector.cpp.ll
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/main.cpp.ll
@@ -61,7 +60,7 @@ define i8 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %0, %1
   %3 = trunc i64 %2 to i8
-  %4 = sub i8 0, %3
+  %4 = sub i8 14, %3
   ret i8 %4
 }
 

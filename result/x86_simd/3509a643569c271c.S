@@ -26,20 +26,29 @@ func000000000000003a:                   # @func000000000000003a
 	vzeroupper
 	retq
 .LCPI3_0:
-	.quad	2082041510483722240             # 0x1ce4e5b900000000
-func0000000000000024:                   # @func0000000000000024
+	.quad	196742565691928                 # 0xb2efb2bd8218
+func000000000000003b:                   # @func000000000000003b
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	vpmullq	.LCPI3_0(%rip){1to4}, %ymm0, %ymm0
-	vpsrlq	$31, %ymm0, %ymm0
+	vpsrlq	$48, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
 	vzeroupper
 	retq
 .LCPI4_0:
-	.quad	103                             # 0x67
-func000000000000003b:                   # @func000000000000003b
+	.quad	163391164108059                 # 0x949a784bcd1b
+func0000000000000003:                   # @func0000000000000003
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
-	vpmuludq	.LCPI4_0(%rip){1to4}, %ymm0, %ymm0
-	vpsrlq	$10, %ymm0, %ymm0
+	vpmullq	.LCPI4_0(%rip){1to4}, %ymm0, %ymm0
+	vpsrlq	$46, %ymm0, %ymm0
+	vpmovqd	%ymm0, %xmm0
+	vzeroupper
+	retq
+.LCPI5_0:
+	.quad	281474978                       # 0x10c6f7a2
+func0000000000000038:                   # @func0000000000000038
+	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	vpmuludq	.LCPI5_0(%rip){1to4}, %ymm0, %ymm0
+	vpsrlq	$16, %ymm0, %ymm0
 	vpmovqd	%ymm0, %xmm0
 	vzeroupper
 	retq
@@ -50,15 +59,6 @@ func0000000000000012:                   # @func0000000000000012
 	vpmuludq	%xmm2, %xmm0, %xmm0
 	vpshufd	$245, %xmm0, %xmm0              # xmm0 = xmm0[1,1,3,3]
 	vpblendd	$10, %xmm1, %xmm0, %xmm0        # xmm0 = xmm0[0],xmm1[1],xmm0[2],xmm1[3]
-	retq
-.LCPI6_0:
-	.quad	7046029254386353131             # 0x61c8864680b583eb
-func0000000000000003:                   # @func0000000000000003
-	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
-	vpmullq	.LCPI6_0(%rip){1to4}, %ymm0, %ymm0
-	vpsrlq	$56, %ymm0, %ymm0
-	vpmovqd	%ymm0, %xmm0
-	vzeroupper
 	retq
 .LCPI7_0:
 	.quad	196742565691928                 # 0xb2efb2bd8218

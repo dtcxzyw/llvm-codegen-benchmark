@@ -35,9 +35,3 @@ func0000000000000011:                   # @func0000000000000011
 	setb	%al
 	orl	%edi, %eax
 	retq
-func0000000000000021:                   # @func0000000000000021
-	xorl	%eax, %eax
-	cmpq	$2, %rsi
-	setae	%al
-	orl	%edi, %eax
-	retq

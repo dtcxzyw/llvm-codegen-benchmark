@@ -1,6 +1,6 @@
 
-%"struct.asmjit::_abi_1_10::RATiedReg.2488705" = type { i32, i32, i32, %union.anon.32.2488706, i32, i32, i32, i32 }
-%union.anon.32.2488706 = type { i32 }
+%"struct.asmjit::_abi_1_10::RATiedReg.2604137" = type { i32, i32, i32, %union.anon.32.2604138, i32, i32, i32, i32 }
+%union.anon.32.2604138 = type { i32 }
 
 ; 20 occurrences:
 ; abc/optimized/extraUtilDsd.c.ll
@@ -24,12 +24,12 @@
 ; openjdk/optimized/mlib_ImageLookUp_Bit.ll
 ; openspiel/optimized/TransTableL.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %1, %2
   %4 = and i32 %3, 255
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw %"struct.asmjit::_abi_1_10::RATiedReg.2488705", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.asmjit::_abi_1_10::RATiedReg.2604137", ptr %0, i64 %5
   ret ptr %6
 }
 

@@ -1,23 +1,23 @@
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	sext.w	a1, a1
 	slli	a1, a1, 2
 	sub	a0, a0, a1
 	slti	a0, a0, 65
 	xori	a0, a0, 1
 	ret
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	sext.w	a1, a1
 	slli	a1, a1, 1
 	sub	a0, a0, a1
 	sltiu	a0, a0, 8
 	ret
-func0000000000000044:                   # @func0000000000000044
+func0000000000000084:                   # @func0000000000000084
 	sext.w	a1, a1
 	slli	a1, a1, 1
 	sub	a0, a0, a1
 	sltiu	a0, a0, 8
 	ret
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	sext.w	a1, a1
 	slli	a1, a1, 2
 	sub	a0, a0, a1

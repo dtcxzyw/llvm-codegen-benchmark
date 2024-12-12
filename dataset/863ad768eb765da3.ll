@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/vector_selection_filter_internal.cc.ll
 ; arrow/optimized/vector_selection_take_internal.cc.ll
@@ -12,7 +12,6 @@
 ; linux/optimized/e1000_main.ll
 ; llvm/optimized/PtrTypesSemantics.cpp.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
-; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; Function Attrs: nounwind

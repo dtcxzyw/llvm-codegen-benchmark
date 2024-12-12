@@ -1,5 +1,5 @@
 
-; 94 occurrences:
+; 91 occurrences:
 ; abc/optimized/acecRe.c.ll
 ; abc/optimized/inflate.c.ll
 ; casadi/optimized/cvodes.c.ll
@@ -31,7 +31,6 @@
 ; llvm/optimized/LegalizeFloatTypes.cpp.ll
 ; llvm/optimized/LegalizeIntegerTypes.cpp.ll
 ; llvm/optimized/LegalizeVectorOps.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RegionStore.cpp.ll
 ; llvm/optimized/SampleProfWriter.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
@@ -64,8 +63,6 @@
 ; openjdk/optimized/c1_LIRAssembler.ll
 ; openjdk/optimized/subnode.ll
 ; openjdk/optimized/type.ll
-; openmpi/optimized/libmpi_mpit_profile_la-cvar_get_info.ll
-; openmpi/optimized/libmpi_mpit_profile_la-cvar_handle_alloc.ll
 ; openssl/optimized/libcrypto-lib-ecx_meth.ll
 ; openssl/optimized/libcrypto-shlib-ecx_meth.ll
 ; openssl/optimized/sslapitest-bin-sslapitest.ll
@@ -95,7 +92,7 @@
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; zlib/optimized/inflate.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i32 %0) #0 {
+define i32 @func0000000000000042(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 3
   %2 = icmp eq i32 %0, 0
@@ -109,24 +106,12 @@ entry:
 ; openssl/optimized/libapps-lib-apps.ll
 ; zxing/optimized/QRVersion.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000002c(i32 %0) #0 {
+define i32 @func000000000000004c(i32 %0) #0 {
 entry:
   %1 = icmp eq i32 %0, 5
   %2 = icmp slt i32 %0, 0
   %3 = or i1 %2, %1
   %4 = select i1 %3, i32 5, i32 0
-  ret i32 %4
-}
-
-; 1 occurrences:
-; opencv/optimized/arithm.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000028(i32 %0) #0 {
-entry:
-  %1 = icmp eq i32 %0, 5
-  %2 = icmp ult i32 %0, 4
-  %3 = or i1 %2, %1
-  %4 = select i1 %3, i32 5, i32 6
   ret i32 %4
 }
 

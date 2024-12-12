@@ -1,6 +1,5 @@
 
-; 9 occurrences:
-; linux/optimized/mmconf-fam10h_64.ll
+; 8 occurrences:
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/LowerExpectIntrinsic.cpp.ll
 ; llvm/optimized/SCCPSolver.cpp.ll
@@ -18,7 +17,8 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/alloc_lib.ll
 ; duckdb/optimized/ub_duckdb_transaction.cpp.ll
 ; linux/optimized/percpu.ll
 ; linux/optimized/swiotlb.ll

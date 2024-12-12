@@ -17,16 +17,15 @@ entry:
   ret i1 %3
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; postgres/optimized/aset.ll
-; postgres/optimized/backend_progress.ll
 ; postgres/optimized/procsignal.ll
 ; postgres/optimized/tupdesc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(ptr %0) #0 {
+define i1 @func0000000000000064(ptr %0) #0 {
 entry:
   %1 = getelementptr i8, ptr %0, i64 68
-  %2 = getelementptr nusw i8, ptr %0, i64 4
+  %2 = getelementptr nusw nuw i8, ptr %0, i64 4
   %3 = icmp ult ptr %2, %1
   ret i1 %3
 }

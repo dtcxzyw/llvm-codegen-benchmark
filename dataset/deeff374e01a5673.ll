@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 13 occurrences:
 ; abc/optimized/bzlib.c.ll
 ; cmake/optimized/archive_write_set_format_mtree.c.ll
 ; cmake/optimized/bzlib.c.ll
@@ -8,7 +8,6 @@
 ; lodepng/optimized/lodepng.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; openmpi/optimized/crc.ll
-; php/optimized/hash_crc32.ll
 ; postgres/optimized/tsgistidx.ll
 ; postgres/optimized/tsquery.ll
 ; raylib/optimized/raudio.c.ll

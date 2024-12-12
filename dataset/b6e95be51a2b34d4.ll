@@ -1,8 +1,9 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; graphviz/optimized/shapes.c.ll
 ; llvm/optimized/FileSystemStatCache.cpp.ll
 ; luau/optimized/Clone.cpp.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
 ; opencv/optimized/homography_solver.cpp.ll
 ; openusd/optimized/layerStack.cpp.ll
 ; rocksdb/optimized/vectorrep.cc.ll

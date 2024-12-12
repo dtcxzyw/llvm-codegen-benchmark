@@ -12,7 +12,8 @@ entry:
   ret i8 %2
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/src.ll
 ; cpython/optimized/io.ll
 ; linux/optimized/hid-sony.ll
 ; qemu/optimized/hw_display_edid-generate.c.ll

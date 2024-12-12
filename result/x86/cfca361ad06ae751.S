@@ -10,16 +10,9 @@ func000000000000000c:                   # @func000000000000000c
 	setne	%al
 	andb	%dil, %al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	subl	%edx, %esi
 	testb	$7, %sil
 	sete	%al
-	andb	%dil, %al
-	retq
-func0000000000000004:                   # @func0000000000000004
-	subl	%edx, %esi
-	andl	$2147483647, %esi               # imm = 0x7FFFFFFF
-	cmpl	$1025, %esi                     # imm = 0x401
-	setb	%al
 	andb	%dil, %al
 	retq

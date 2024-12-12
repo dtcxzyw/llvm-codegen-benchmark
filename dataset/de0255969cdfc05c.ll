@@ -1,8 +1,6 @@
 
-; 3 occurrences:
+; 1 occurrences:
 ; folly/optimized/ElfCache.cpp.ll
-; nlohmann_json/optimized/unit-regression2.cpp.ll
-; ozz-animation/optimized/animation_builder.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(ptr %0, i64 %1, ptr %2) #0 {
 entry:
@@ -13,7 +11,7 @@ entry:
   ret i64 %5
 }
 
-; 148 occurrences:
+; 149 occurrences:
 ; abseil-cpp/optimized/convert_test.cc.ll
 ; assimp/optimized/PlyParser.cpp.ll
 ; cmake/optimized/cmCTest.cxx.ll
@@ -124,6 +122,7 @@ entry:
 ; opencv/optimized/bagofwords_classification.cpp.ll
 ; opencv/optimized/fisheye.cpp.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
+; ozz-animation/optimized/animation_builder.cc.ll
 ; protobuf/optimized/generated_message_tctable_gen.cc.ll
 ; pybind11/optimized/test_stl_binders.cpp.ll
 ; spike/optimized/sim.ll

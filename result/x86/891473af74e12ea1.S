@@ -11,11 +11,3 @@ func0000000000000002:                   # @func0000000000000002
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000010:                   # @func0000000000000010
-	shrl	$16, %edx
-	andl	$63, %edx
-	andl	$63, %esi
-	cmpl	%edx, %esi
-	seta	%al
-	orb	%dil, %al
-	retq

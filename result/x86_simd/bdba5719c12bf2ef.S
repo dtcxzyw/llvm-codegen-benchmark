@@ -41,10 +41,10 @@ func000000000000000c:                   # @func000000000000000c
 	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 .LCPI6_0:
-	.long	32                              # 0x20
+	.long	2                               # 0x2
 func0000000000000004:                   # @func0000000000000004
 	vpaddd	%ymm0, %ymm1, %ymm0
-	vpbroadcastd	.LCPI6_0(%rip), %ymm1   # ymm1 = [32,32,32,32,32,32,32,32]
+	vpbroadcastd	.LCPI6_0(%rip), %ymm1   # ymm1 = [2,2,2,2,2,2,2,2]
 	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
 .LCPI7_0:

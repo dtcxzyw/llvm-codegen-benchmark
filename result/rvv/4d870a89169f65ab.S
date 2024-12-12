@@ -8,5 +8,5 @@ func000000000000000e:                   # @func000000000000000e
 	lui	a0, 512
 	vmerge.vxm	v12, v12, a0, v0
 	vor.vv	v10, v12, v10
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret

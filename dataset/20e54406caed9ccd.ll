@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 28 occurrences:
 ; arrow/optimized/UriNormalize.c.ll
 ; clamav/optimized/readdb.c.ll
 ; cpython/optimized/unicodeobject.ll
@@ -15,6 +15,7 @@
 ; libwebp/optimized/enc_sse2.c.ll
 ; linux/optimized/drbg.ll
 ; linux/optimized/ehci-hcd.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; opencv/optimized/brisk.cpp.ll
 ; opencv/optimized/filter.dispatch.cpp.ll
@@ -36,10 +37,13 @@ entry:
   ret i32 %4
 }
 
-; 35 occurrences:
+; 39 occurrences:
 ; actix-rs/optimized/1xpd5itwjglolvjs.ll
 ; actix-rs/optimized/50w0q9897vi4wd8e.ll
 ; arrow/optimized/key_map.cc.ll
+; boost/optimized/collate.ll
+; boost/optimized/collator.ll
+; boost/optimized/message.ll
 ; clamav/optimized/explode.c.ll
 ; coreutils-rs/optimized/4b7wvqwqsxwjf3d3.ll
 ; coreutils-rs/optimized/yeky3kbm8zdu7bp.ll
@@ -47,6 +51,7 @@ entry:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; eastl/optimized/EAString.cpp.ll
 ; icu/optimized/ucnv_u8.ll
+; linux/optimized/intel_rps.ll
 ; linux/optimized/pt.ll
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll
 ; mold/optimized/output-chunks.cc.ARM32.cc.ll
@@ -182,14 +187,13 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
-; hermes/optimized/JSLexer.cpp.ll
+; 1 occurrences:
 ; wireshark/optimized/packet-dect-nwk.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = shl i32 %0, 4
+  %3 = shl i32 %0, 3
   %4 = add i32 %3, %2
   ret i32 %4
 }

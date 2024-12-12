@@ -1,13 +1,19 @@
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	movzbl	%sil, %eax
 	orl	%edi, %eax
 	cmpl	$128, %eax
 	setb	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	movzbl	%sil, %eax
 	orl	%edi, %eax
 	sete	%al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	movzbl	%sil, %eax
+	orl	%edi, %eax
+	cmpl	$128, %eax
+	setb	%al
 	retq
 func0000000000000004:                   # @func0000000000000004
 	movzbl	%sil, %eax
@@ -15,13 +21,13 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	$128, %eax
 	setb	%al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	movzbl	%sil, %eax
 	orl	%edi, %eax
 	cmpl	$2, %eax
 	setne	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	movzbl	%sil, %eax
 	orl	%edi, %eax
 	cmpl	$770, %eax                      # imm = 0x302
@@ -37,57 +43,75 @@ func0000000000000001:                   # @func0000000000000001
 	orl	%edi, %eax
 	sete	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	movzbl	%sil, %eax
 	orl	%edi, %eax
 	cmpl	$1114112, %eax                  # imm = 0x110000
 	sete	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000028:                   # @func0000000000000028
+	movzbl	%sil, %eax
+	orl	%edi, %eax
+	cmpl	$17, %eax
+	setae	%al
+	retq
+func0000000000000024:                   # @func0000000000000024
+	movzbl	%sil, %eax
+	orl	%edi, %eax
+	cmpl	$16, %eax
+	setb	%al
+	retq
+func0000000000000026:                   # @func0000000000000026
 	movzbl	%sil, %eax
 	orl	%edi, %eax
 	setle	%al
 	retq
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	movzbl	%sil, %eax
 	orl	%edi, %eax
 	setne	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	movzbl	%sil, %eax
 	orl	%edi, %eax
 	setg	%al
 	retq
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	movzbl	%sil, %eax
 	orl	%edi, %eax
 	cmpl	$32, %eax
 	setb	%al
 	retq
-func000000000000003c:                   # @func000000000000003c
+func000000000000006c:                   # @func000000000000006c
 	movzbl	%sil, %eax
 	orl	%edi, %eax
 	setne	%al
 	retq
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	movzbl	%sil, %eax
 	orl	%edi, %eax
 	cmpl	$272, %eax                      # imm = 0x110
 	setl	%al
 	retq
-func000000000000003a:                   # @func000000000000003a
+func000000000000006a:                   # @func000000000000006a
 	movzbl	%sil, %eax
 	orl	%edi, %eax
 	cmpl	$3, %eax
 	setge	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000064:                   # @func0000000000000064
+	movzbl	%sil, %eax
+	orl	%edi, %eax
+	cmpl	$8, %eax
+	setb	%al
+	retq
+func0000000000000018:                   # @func0000000000000018
 	movzbl	%sil, %eax
 	orl	%edi, %eax
 	cmpl	$4073, %eax                     # imm = 0xFE9
 	setae	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	movzbl	%sil, %eax
 	orl	%edi, %eax
 	cmpl	$1819047278, %eax               # imm = 0x6C6C756E
@@ -99,7 +123,7 @@ func0000000000000006:                   # @func0000000000000006
 	cmpl	$128, %eax
 	setl	%al
 	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	movzbl	%sil, %eax
 	orl	%edi, %eax
 	cmpl	$2, %eax

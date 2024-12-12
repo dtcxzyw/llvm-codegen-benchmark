@@ -6,7 +6,7 @@ func0000000000000000:                   # @func0000000000000000
 	vpaddd	%ymm3, %ymm1, %ymm3
 	vpsrad	$2, %ymm3, %ymm3
 	vpaddd	%ymm0, %ymm2, %ymm0
-	vpaddd	%ymm0, %ymm3, %ymm0
+	vpaddd	%ymm3, %ymm0, %ymm0
 	vpshufd	$245, %ymm1, %ymm2              # ymm2 = ymm1[1,1,3,3,5,5,7,7]
 	vpbroadcastd	.LCPI0_0(%rip), %ymm3   # ymm3 = [1374389535,1374389535,1374389535,1374389535,1374389535,1374389535,1374389535,1374389535]
 	vpmuldq	%ymm3, %ymm2, %ymm2
@@ -26,7 +26,7 @@ func0000000000000021:                   # @func0000000000000021
 	vpaddd	%ymm3, %ymm1, %ymm3
 	vpsrad	$2, %ymm3, %ymm3
 	vpaddd	%ymm0, %ymm2, %ymm0
-	vpaddd	%ymm0, %ymm3, %ymm0
+	vpaddd	%ymm3, %ymm0, %ymm0
 	vpshufd	$245, %ymm1, %ymm2              # ymm2 = ymm1[1,1,3,3,5,5,7,7]
 	vpbroadcastd	.LCPI1_0(%rip), %ymm3   # ymm3 = [1374389535,1374389535,1374389535,1374389535,1374389535,1374389535,1374389535,1374389535]
 	vpmuldq	%ymm3, %ymm2, %ymm2
@@ -66,7 +66,7 @@ func0000000000000025:                   # @func0000000000000025
 	vpaddd	%ymm3, %ymm1, %ymm3
 	vpsrad	$2, %ymm3, %ymm3
 	vpaddd	%ymm0, %ymm2, %ymm0
-	vpaddd	%ymm0, %ymm3, %ymm0
+	vpaddd	%ymm3, %ymm0, %ymm0
 	vpshufd	$245, %ymm1, %ymm2              # ymm2 = ymm1[1,1,3,3,5,5,7,7]
 	vpbroadcastd	.LCPI3_0(%rip), %ymm3   # ymm3 = [1374389535,1374389535,1374389535,1374389535,1374389535,1374389535,1374389535,1374389535]
 	vpmuldq	%ymm3, %ymm2, %ymm2

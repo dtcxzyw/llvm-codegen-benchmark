@@ -14,14 +14,6 @@ func0000000000000014:                   # @func0000000000000014
 	add	a0, a0, a1
 	srliw	a0, a0, 16
 	ret
-func0000000000000010:                   # @func0000000000000010
-	lui	a2, 12289
-	slli	a2, a2, 6
-	slli	a1, a1, 46
-	mulhu	a1, a1, a2
-	add	a0, a0, a1
-	srliw	a0, a0, 18
-	ret
 func000000000000000a:                   # @func000000000000000a
 	andi	a1, a1, 1020
 	lui	a2, 1048575

@@ -17,9 +17,9 @@ func0000000000000185:                   # @func0000000000000185
 	leal	(%rsi,%rdi), %eax
 	retq
 func0000000000000024:                   # @func0000000000000024
-	movl	%edi, %eax
 	cmpq	$1, %rdx
-	adcl	%esi, %eax
+	adcl	$0, %esi
+	leal	(%rsi,%rdi), %eax
 	retq
 func000000000000002f:                   # @func000000000000002f
 	xorl	%eax, %eax
@@ -28,7 +28,7 @@ func000000000000002f:                   # @func000000000000002f
 	addl	%edi, %eax
 	addl	%esi, %eax
 	retq
-func000000000000010f:                   # @func000000000000010f
+func000000000000030f:                   # @func000000000000030f
 	cmpq	$2, %rdx
 	sbbl	$-1, %esi
 	leal	(%rsi,%rdi), %eax
@@ -48,6 +48,16 @@ func0000000000000105:                   # @func0000000000000105
 	seta	%al
 	addl	%edi, %eax
 	addl	%esi, %eax
+	retq
+func000000000000010f:                   # @func000000000000010f
+	cmpq	$65792, %rdx                    # imm = 0x10100
+	sbbl	$-1, %esi
+	leal	(%rsi,%rdi), %eax
+	retq
+func0000000000000305:                   # @func0000000000000305
+	cmpq	$5, %rdx
+	sbbl	$-1, %esi
+	leal	(%rsi,%rdi), %eax
 	retq
 func0000000000000180:                   # @func0000000000000180
 	cmpq	$1, %rdx

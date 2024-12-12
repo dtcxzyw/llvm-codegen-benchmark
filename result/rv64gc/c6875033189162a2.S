@@ -19,10 +19,3 @@ func0000000000000015:                   # @func0000000000000015
 	subw	a0, a0, a1
 	addiw	a0, a0, 1
 	ret
-func0000000000000085:                   # @func0000000000000085
-	andi	a1, a1, 255
-	sltiu	a1, a1, 201
-	xori	a1, a1, 1
-	subw	a0, a0, a1
-	addiw	a0, a0, -161
-	ret

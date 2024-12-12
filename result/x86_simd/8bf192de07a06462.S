@@ -36,7 +36,7 @@
 	.zero	1
 .LCPI0_3:
 	.byte	2                               # 0x2
-func0000000000000198:                   # @func0000000000000198
+func0000000000000318:                   # @func0000000000000318
 	vpcmpneqq	.LCPI0_0(%rip){1to4}, %ymm1, %k0
 	vptestmd	%xmm0, %xmm0, %k1
 	korw	%k0, %k1, %k1
@@ -61,7 +61,7 @@ func0000000000000198:                   # @func0000000000000198
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000182:                   # @func0000000000000182
+func0000000000000302:                   # @func0000000000000302
 	vptestmq	%ymm1, %ymm1, %k0
 	vptestnmd	%xmm0, %xmm0, %k1
 	korw	%k0, %k1, %k1
@@ -104,7 +104,7 @@ func0000000000000182:                   # @func0000000000000182
 	.zero	1
 .LCPI2_2:
 	.byte	2                               # 0x2
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	vptestnmq	%ymm1, %ymm1, %k0
 	vptestnmd	%xmm0, %xmm0, %k1
 	korw	%k0, %k1, %k1

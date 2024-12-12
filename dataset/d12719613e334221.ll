@@ -1,6 +1,8 @@
 
-; 16 occurrences:
+; 18 occurrences:
 ; abc/optimized/extraUtilMaj.c.ll
+; abc/optimized/ifCut.c.ll
+; boost/optimized/alloc_lib.ll
 ; cpython/optimized/_ctypes.ll
 ; eastl/optimized/TestBitVector.cpp.ll
 ; grpc/optimized/xds_override_host.cc.ll
@@ -21,11 +23,11 @@ define i32 @func0000000000000004(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nuw i32 1, %2
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
-; 46 occurrences:
+; 43 occurrences:
 ; abc/optimized/acecTree.c.ll
 ; abc/optimized/cutMerge.c.ll
 ; abc/optimized/extraUtilEnum.c.ll
@@ -53,7 +55,6 @@ entry:
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_qhull.cpp.ll
@@ -69,15 +70,13 @@ entry:
 ; openusd/optimized/patchBuilder.cpp.ll
 ; postgres/optimized/lock.ll
 ; qemu/optimized/hw_display_vga.c.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
-; wireshark/optimized/golay.c.ll
 ; zxing/optimized/ODDataBarCommon.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001e(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = shl nuw nsw i32 2, %2
-  %4 = or i32 %3, %0
+  %3 = shl nuw nsw i32 1, %2
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -101,10 +100,10 @@ entry:
 ; abc/optimized/kitTruth.c.ll
 ; abc/optimized/luckySwap.c.ll
 ; abc/optimized/mapperUtils.c.ll
-; abc/optimized/mfsSat.c.ll
 ; abc/optimized/resFilter.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; assimp/optimized/ProcessHelper.cpp.ll
+; boost/optimized/alloc_lib.ll
 ; cpython/optimized/hamt.ll
 ; eastl/optimized/TestBitVector.cpp.ll
 ; git/optimized/show-branch.ll
@@ -130,7 +129,7 @@ define i32 @func000000000000001c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nuw i32 1, %2
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -141,7 +140,7 @@ define i32 @func0000000000000016(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = shl nuw nsw i32 1, %2
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -153,7 +152,7 @@ define i32 @func0000000000000014(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = shl nuw i32 1, %2
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -164,7 +163,24 @@ define i32 @func000000000000000c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = shl nuw i32 1, %2
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
+  ret i32 %4
+}
+
+; 7 occurrences:
+; boost/optimized/alloc_lib.ll
+; linux/optimized/cgroup.ll
+; linux/optimized/ehci-hcd.ll
+; linux/optimized/i9xx_wm.ll
+; linux/optimized/nl80211.ll
+; linux/optimized/pcm_lib.ll
+; linux/optimized/pcm_native.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000006(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = shl nuw nsw i32 1, %2
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -177,25 +193,7 @@ define i32 @func0000000000000018(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl i32 2, %2
-  %4 = or i32 %3, %0
-  ret i32 %4
-}
-
-; 8 occurrences:
-; linux/optimized/cgroup.ll
-; linux/optimized/ehci-hcd.ll
-; linux/optimized/i9xx_wm.ll
-; linux/optimized/ip6_tables.ll
-; linux/optimized/ip_tables.ll
-; linux/optimized/nl80211.ll
-; linux/optimized/pcm_lib.ll
-; linux/optimized/pcm_native.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000006(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = shl nuw nsw i32 1, %2
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -206,7 +204,7 @@ define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl i32 32768, %2
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 

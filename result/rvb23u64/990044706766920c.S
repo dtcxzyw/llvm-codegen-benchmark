@@ -14,6 +14,12 @@ func0000000000000008:                   # @func0000000000000008
 	flt.d	a1, fa5, fa0
 	or	a0, a0, a1
 	ret
+func0000000000000006:                   # @func0000000000000006
+	fcvt.d.w	fa5, a1
+	fle.d	a1, fa5, fa0
+	xori	a1, a1, 1
+	or	a0, a0, a1
+	ret
 func0000000000000016:                   # @func0000000000000016
 	fcvt.d.w	fa5, a1
 	flt.d	a1, fa5, fa0
@@ -33,12 +39,12 @@ func0000000000000018:                   # @func0000000000000018
 	ret
 func0000000000000010:                   # @func0000000000000010
 	fcvt.d.w	fa5, a1
-	feq.d	a1, fa5, fa0
+	feq.d	a1, fa0, fa5
 	or	a0, a0, a1
 	ret
 func000000000000000e:                   # @func000000000000000e
 	fcvt.d.w	fa5, a1
-	feq.d	a1, fa5, fa0
+	feq.d	a1, fa0, fa5
 	xori	a1, a1, 1
 	or	a0, a0, a1
 	ret

@@ -31,3 +31,7 @@ func000000000000000f:                   # @func000000000000000f
 	andi	a1, a1, 2
 	or	a0, a0, a1
 	ret
+func0000000000000006:                   # @func0000000000000006
+	slliw	a1, a1, 8
+	or	a0, a0, a1
+	ret

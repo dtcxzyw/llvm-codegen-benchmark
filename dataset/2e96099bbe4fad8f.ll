@@ -62,7 +62,6 @@
 ; mitsuba3/optimized/tabphase.cpp.ll
 ; mitsuba3/optimized/thinlens.cpp.ll
 ; mitsuba3/optimized/volpath.cpp.ll
-; nanosvg/optimized/nanosvg.ll
 ; nlohmann_json/optimized/unit-regression2.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll
 ; opencv/optimized/mathfuncs.cpp.ll
@@ -79,10 +78,11 @@
 ; redis/optimized/lolwut5.ll
 ; stb/optimized/stb_easy_font.c.ll
 ; wireshark/optimized/packet-ansi_801.c.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
 ; Function Attrs: nounwind
 define float @func0000000000000001(float %0, float %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 1
+  %3 = and i32 %2, 2
   %4 = icmp eq i32 %3, 0
   %5 = select i1 %4, float %0, float %1
   ret float %5

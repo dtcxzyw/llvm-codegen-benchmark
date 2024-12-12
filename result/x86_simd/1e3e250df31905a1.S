@@ -20,7 +20,7 @@ func000000000000001f:                   # @func000000000000001f
 	vpmovzxdq	%xmm2, %ymm1            # ymm1 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
 	vpbroadcastq	.LCPI2_0(%rip), %ymm2   # ymm2 = [8,8,8,8]
 	vpsllq	$3, %ymm1, %ymm2 {%k1}
-	vpaddq	%ymm0, %ymm2, %ymm0
+	vpaddq	%ymm2, %ymm0, %ymm0
 	retq
 func000000000000000c:                   # @func000000000000000c
 	vpslld	$31, %xmm1, %xmm1

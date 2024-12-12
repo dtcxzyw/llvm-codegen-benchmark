@@ -6,7 +6,7 @@
 ; spike/optimized/s_roundPackToF16.ll
 ; spike/optimized/s_roundPackToF32.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000022(i8 %0, i8 %1) #0 {
+define i64 @func0000000000000042(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 8
   %3 = icmp eq i8 %0, 0
@@ -18,7 +18,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/imap-send.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000038(i8 %0, i8 %1) #0 {
+define i64 @func0000000000000058(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 10
   %3 = icmp ne i8 %0, 13
@@ -30,7 +30,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_operator_csv_sniffer.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000182(i8 %0, i8 %1) #0 {
+define i64 @func0000000000000302(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 2
   %3 = icmp eq i8 %0, 3
@@ -43,7 +43,7 @@ entry:
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/InterpBuiltin.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000198(i8 %0, i8 %1) #0 {
+define i64 @func0000000000000318(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 3
   %3 = icmp ne i8 %0, 3
@@ -56,7 +56,7 @@ entry:
 ; nlohmann_json/optimized/unit-class_const_iterator.cpp.ll
 ; nlohmann_json/optimized/unit-class_iterator.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000088(i8 %0, i8 %1) #0 {
+define i64 @func0000000000000108(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, -2
   %3 = icmp ult i8 %0, -2

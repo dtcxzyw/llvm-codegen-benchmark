@@ -1,6 +1,5 @@
 
-; 168 occurrences:
-; abc/optimized/dauNonDsd.c.ll
+; 167 occurrences:
 ; abc/optimized/giaNf.c.ll
 ; linux/optimized/intel_engine_cs.ll
 ; llvm/optimized/ParseDeclCXX.cpp.ll

@@ -10,7 +10,7 @@ entry:
   ret float %3
 }
 
-; 25 occurrences:
+; 26 occurrences:
 ; abc/optimized/giaUtil.c.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/ComputeUVMappingProcess.cpp.ll
@@ -27,6 +27,7 @@ entry:
 ; box2d/optimized/b2_weld_joint.cpp.ll
 ; box2d/optimized/b2_wheel_joint.cpp.ll
 ; box2d/optimized/b2_world.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; ocio/optimized/MathUtils.cpp.ll
 ; oiio/optimized/imagebufalgo_xform.cpp.ll
 ; oiio/optimized/texturesys.cpp.ll

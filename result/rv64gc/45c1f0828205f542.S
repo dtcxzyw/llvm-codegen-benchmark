@@ -29,19 +29,26 @@ func0000000000000001:                   # @func0000000000000001
 .LBB3_2:                                # %entry
 	andi	a0, a0, 255
 	ret
+func0000000000000014:                   # @func0000000000000014
+	srliw	a2, a2, 20
+	beqz	a2, .LBB4_2
+	mv	a0, a1
+.LBB4_2:                                # %entry
+	andi	a0, a0, 7
+	ret
 func000000000000000c:                   # @func000000000000000c
 	sext.w	a2, a2
-	beqz	a2, .LBB4_2
+	beqz	a2, .LBB5_2
 	mv	a1, a0
-.LBB4_2:                                # %entry
-	andi	a0, a1, 63
+.LBB5_2:                                # %entry
+	andi	a0, a1, 1024
 	ret
 func0000000000000008:                   # @func0000000000000008
 	sext.w	a2, a2
 	lui	a3, 16
-	bltu	a3, a2, .LBB5_2
+	bltu	a3, a2, .LBB6_2
 	mv	a0, a1
-.LBB5_2:                                # %entry
+.LBB6_2:                                # %entry
 	slli	a0, a0, 48
 	srli	a0, a0, 48
 	ret

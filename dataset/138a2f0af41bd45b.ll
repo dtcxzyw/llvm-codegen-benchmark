@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 27 occurrences:
 ; mitsuba3/optimized/aov.cpp.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/class.cpp.ll
@@ -9,7 +9,6 @@
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/moment.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/xml.cpp.ll
 ; qemu/optimized/optimize.c.ll
 ; spike/optimized/csrs.ll
@@ -48,9 +47,21 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/alloc_lib.ll
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000029(i64 %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ult i64 %1, 23
+  %3 = or disjoint i64 %0, 3
+  %4 = select i1 %2, i64 35, i64 %3
+  ret i64 %4
+}
+
+; 1 occurrences:
+; boost/optimized/alloc_lib.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000009(i64 %0, i64 %1) #0 {
 entry:

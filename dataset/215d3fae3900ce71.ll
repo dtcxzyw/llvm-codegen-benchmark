@@ -121,7 +121,8 @@ entry:
   ret i32 %4
 }
 
-; 17 occurrences:
+; 18 occurrences:
+; boost/optimized/to_chars.ll
 ; cpython/optimized/dtoa.ll
 ; hdf5/optimized/H5Zscaleoffset.c.ll
 ; hermes/optimized/dtoa.c.ll

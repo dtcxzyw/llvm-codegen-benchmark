@@ -26,13 +26,14 @@ entry:
   ret i8 %7
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; linux/optimized/pata_amd.ll
 ; linux/optimized/yenta_socket.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
 ; llvm/optimized/Interp.cpp.ll
 ; luajit/optimized/lj_cconv.ll
 ; luajit/optimized/lj_cconv_dyn.ll
+; lvgl/optimized/lv_canvas.ll
 ; minetest/optimized/CImageLoaderBMP.cpp.ll
 ; openjdk/optimized/ByteBinary1Bit.ll
 ; openjdk/optimized/ByteBinary2Bit.ll
@@ -45,7 +46,7 @@ entry:
   %3 = xor i32 %2, -1
   %4 = zext i8 %1 to i32
   %5 = and i32 %4, %3
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   %7 = trunc i32 %6 to i8
   ret i8 %7
 }

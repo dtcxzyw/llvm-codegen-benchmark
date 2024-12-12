@@ -41,7 +41,7 @@ entry:
 ; yosys/optimized/test_cell.ll
 ; z3/optimized/tbv.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
   %3 = and i64 %2, %0
@@ -55,7 +55,7 @@ entry:
 ; linux/optimized/intel_dpio_phy.ll
 ; verilator/optimized/V3Number.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i32 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 1, %1
   %3 = and i64 %2, %0
@@ -68,10 +68,10 @@ entry:
 ; hermes/optimized/APInt.cpp.ll
 ; llvm/optimized/APInt.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000002c(i64 %0, i64 %1) #0 {
+define i32 @func000000000000004c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
-  %3 = and i64 %2, %0
+  %3 = and i64 %0, %2
   %.not = icmp eq i64 %3, 0
   %4 = select i1 %.not, i32 1, i32 -1
   ret i32 %4
@@ -80,7 +80,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_display_power.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000003c(i64 %0, i64 %1) #0 {
+define i32 @func000000000000006c(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 1, %1
   %3 = and i64 %2, %0

@@ -1,3 +1,13 @@
+func000000000000000c:                   # @func000000000000000c
+	andl	$1, %edx
+	movl	$2, %eax
+	subl	%edx, %eax
+	xorl	%ecx, %ecx
+	testb	$1, %sil
+	cmovnel	%eax, %ecx
+	cmpl	%ecx, %edi
+	setne	%al
+	retq
 func0000000000000008:                   # @func0000000000000008
 	andl	$1, %edx
 	shll	$6, %edx
@@ -5,8 +15,8 @@ func0000000000000008:                   # @func0000000000000008
 	testb	$1, %sil
 	movl	$128, %eax
 	cmovnel	%edx, %eax
-	cmpl	%edi, %eax
-	setb	%al
+	cmpl	%eax, %edi
+	seta	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
 	andl	$1, %edx
@@ -14,7 +24,7 @@ func0000000000000001:                   # @func0000000000000001
 	testb	$1, %sil
 	movl	$4, %eax
 	cmovnel	%edx, %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq
 func0000000000000006:                   # @func0000000000000006
@@ -24,6 +34,6 @@ func0000000000000006:                   # @func0000000000000006
 	testb	$1, %sil
 	movl	$1, %ecx
 	cmovnel	%eax, %ecx
-	cmpl	%edi, %ecx
-	setg	%al
+	cmpl	%ecx, %edi
+	setl	%al
 	retq

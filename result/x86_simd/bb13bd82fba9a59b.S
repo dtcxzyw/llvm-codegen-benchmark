@@ -8,7 +8,7 @@ func000000000000001f:                   # @func000000000000001f
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpbroadcastq	.LCPI0_0(%rip), %ymm3   # ymm3 = [1,1,1,1]
 	vpsubq	%ymm2, %ymm1, %ymm3 {%k1}
-	vpaddq	%ymm0, %ymm3, %ymm0
+	vpaddq	%ymm3, %ymm0, %ymm0
 	retq
 func000000000000000c:                   # @func000000000000000c
 	vpslld	$31, %xmm1, %xmm1

@@ -34,7 +34,7 @@ entry:
   ret i64 %4
 }
 
-; 21 occurrences:
+; 19 occurrences:
 ; cpython/optimized/_datetimemodule.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_denoiseprofile.c.ll
@@ -44,10 +44,8 @@ entry:
 ; darktable/optimized/introspection_rawdenoise.c.ll
 ; darktable/optimized/introspection_temperature.c.ll
 ; linux/optimized/dmar.ll
-; linux/optimized/head64.ll
 ; openblas/optimized/dgghd3.c.ll
 ; opencv/optimized/aruco_detector.cpp.ll
-; opencv/optimized/lsd.cpp.ll
 ; opencv/optimized/pose_3d.cpp.ll
 ; openexr/optimized/ImfRgbaFile.cpp.ll
 ; openjdk/optimized/g1MMUTracker.ll

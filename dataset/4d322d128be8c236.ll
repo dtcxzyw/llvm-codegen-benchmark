@@ -35,7 +35,7 @@ entry:
   %2 = and i32 %1, 4194304
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 27
-  %5 = or i64 %4, %0
+  %5 = or i64 %0, %4
   %6 = or i64 %5, 32
   ret i64 %6
 }
@@ -80,7 +80,7 @@ entry:
   %2 = and i32 %1, 65535
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 %3, 48
-  %5 = or disjoint i64 %4, %0
+  %5 = or disjoint i64 %0, %4
   %6 = or disjoint i64 %5, 1
   ret i64 %6
 }

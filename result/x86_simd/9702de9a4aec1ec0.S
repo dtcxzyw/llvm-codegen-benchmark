@@ -14,7 +14,7 @@ func0000000000000007:                   # @func0000000000000007
 	.quad	32768                           # 0x8000
 func0000000000000000:                   # @func0000000000000000
 	vpaddq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI3_0:
 	.quad	33554432                        # 0x2000000

@@ -1,5 +1,5 @@
 
-; 54 occurrences:
+; 51 occurrences:
 ; abc/optimized/abcDetect.c.ll
 ; abc/optimized/aigPack.c.ll
 ; abc/optimized/bmcCexTools.c.ll
@@ -34,7 +34,6 @@
 ; abc/optimized/sclBuffer.c.ll
 ; abc/optimized/sfmSat.c.ll
 ; abc/optimized/simSupp.c.ll
-; abc/optimized/simSym.c.ll
 ; abc/optimized/simSymSim.c.ll
 ; abc/optimized/sswFilter.c.ll
 ; abc/optimized/sswSim.c.ll
@@ -43,8 +42,6 @@
 ; faiss/optimized/PolysemousTraining.cpp.ll
 ; graphviz/optimized/graph_generator.c.ll
 ; imgui/optimized/imgui_demo.cpp.ll
-; linux/optimized/utownerid.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; mitsuba3/optimized/rapass.cpp.ll
 ; openusd/optimized/stbImage.cpp.ll
@@ -62,21 +59,18 @@ entry:
   ret i32 %3
 }
 
-; 19 occurrences:
+; 16 occurrences:
 ; abc/optimized/ivyMulti.c.ll
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/lpkAbcDsd.c.ll
 ; abc/optimized/lpkAbcUtil.c.ll
 ; abc/optimized/lpkSets.c.ll
 ; abc/optimized/luckyFast16.c.ll
-; clamav/optimized/Bra86.c.ll
-; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; flac/optimized/stream_decoder.c.ll
 ; hdf5/optimized/H5Zscaleoffset.c.ll
 ; linux/optimized/ehci-dbgp.ll
 ; linux/optimized/rate.ll
 ; linux/optimized/xhci.ll
-; linux/optimized/xz_dec_bcj.ll
 ; luau/optimized/AssemblyBuilderA64.cpp.ll
 ; oiio/optimized/ddsinput.cpp.ll
 ; openjdk/optimized/awt_parseImage.ll
@@ -86,7 +80,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 -1, %1
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   ret i32 %3
 }
 
@@ -98,7 +92,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 3, %1
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   ret i32 %3
 }
 
@@ -110,7 +104,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 1, %1
-  %3 = xor i32 %2, %0
+  %3 = xor i32 %0, %2
   ret i32 %3
 }
 

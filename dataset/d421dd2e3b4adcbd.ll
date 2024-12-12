@@ -1,5 +1,5 @@
 
-; 50 occurrences:
+; 51 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/cordz_sample_token_test.cc.ll
@@ -50,15 +50,16 @@
 ; soc-simulator/optimized/sim_mycpu.ll
 ; spike/optimized/s_mul128MTo256M.ll
 ; vcpkg/optimized/uuid.cpp.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = mul i32 %2, %1
+  %3 = mul i32 %1, %2
   ret i32 %3
 }
 
-; 65 occurrences:
+; 66 occurrences:
 ; abc/optimized/giaCex.c.ll
 ; abseil-cpp/optimized/extension_test.cc.ll
 ; abseil-cpp/optimized/hashtablez_sampler_test.cc.ll
@@ -66,6 +67,7 @@ entry:
 ; abseil-cpp/optimized/nonsecure_base_test.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; abseil-cpp/optimized/sample_recorder_test.cc.ll
+; boost/optimized/benchmark_fstream.ll
 ; ceres/optimized/block_sparse_matrix.cc.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; crow/optimized/example_session.cpp.ll
@@ -128,7 +130,7 @@ entry:
 define i32 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = mul i32 %2, %1
+  %3 = mul i32 %1, %2
   ret i32 %3
 }
 
@@ -144,7 +146,7 @@ entry:
 define i32 @func000000000000001e(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = mul i32 %2, %1
+  %3 = mul i32 %1, %2
   ret i32 %3
 }
 
@@ -162,7 +164,7 @@ entry:
 define i32 @func0000000000000010(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = mul i32 %2, %1
+  %3 = mul i32 %1, %2
   ret i32 %3
 }
 
@@ -183,7 +185,7 @@ entry:
 define i32 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = mul i32 %2, %1
+  %3 = mul i32 %1, %2
   ret i32 %3
 }
 
@@ -195,7 +197,7 @@ entry:
 define i32 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = mul i32 %2, %1
+  %3 = mul i32 %1, %2
   ret i32 %3
 }
 
@@ -227,7 +229,7 @@ entry:
 define i32 @func000000000000001c(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = mul i32 %2, %1
+  %3 = mul i32 %1, %2
   ret i32 %3
 }
 
@@ -245,7 +247,7 @@ entry:
 define i32 @func0000000000000014(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = mul i32 %2, %1
+  %3 = mul i32 %1, %2
   ret i32 %3
 }
 
@@ -259,7 +261,7 @@ entry:
 define i32 @func000000000000001d(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = mul i32 %2, %1
+  %3 = mul i32 %1, %2
   ret i32 %3
 }
 
@@ -271,7 +273,7 @@ entry:
 define i32 @func000000000000000b(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = mul i32 %2, %1
+  %3 = mul i32 %1, %2
   ret i32 %3
 }
 
@@ -282,7 +284,7 @@ entry:
 define i32 @func000000000000001f(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = mul i32 %2, %1
+  %3 = mul i32 %1, %2
   ret i32 %3
 }
 
@@ -293,7 +295,7 @@ entry:
 define i32 @func000000000000000f(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = mul i32 %2, %1
+  %3 = mul i32 %1, %2
   ret i32 %3
 }
 
@@ -303,7 +305,7 @@ entry:
 define i32 @func0000000000000017(i64 %0, i32 %1) #0 {
 entry:
   %2 = trunc i64 %0 to i32
-  %3 = mul i32 %2, %1
+  %3 = mul i32 %1, %2
   ret i32 %3
 }
 

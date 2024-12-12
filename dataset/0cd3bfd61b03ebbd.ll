@@ -1,9 +1,8 @@
 
-; 2 occurrences:
-; opencv/optimized/tf_importer.cpp.ll
+; 1 occurrences:
 ; php/optimized/url.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000044(i32 %0) #0 {
+define i32 @func0000000000000084(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -87
   %2 = add i32 %0, -48
@@ -28,19 +27,42 @@ entry:
   ret i32 %4
 }
 
-; 6 occurrences:
-; meshlab/optimized/filter_isoparametrization.cpp.ll
+; 3 occurrences:
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
-; proj/optimized/isea.cpp.ll
-; tev/optimized/ImageViewer.cpp.ll
 ; wireshark/optimized/ws_strptime.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000054(i32 %0) #0 {
+define i32 @func00000000000000a4(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -55
   %2 = add nsw i32 %0, -48
   %3 = icmp ult i32 %2, 7
+  %4 = select i1 %3, i32 %2, i32 %1
+  ret i32 %4
+}
+
+; 3 occurrences:
+; meshlab/optimized/filter_isoparametrization.cpp.ll
+; proj/optimized/isea.cpp.ll
+; tev/optimized/ImageViewer.cpp.ll
+; Function Attrs: nounwind
+define i32 @func00000000000000b4(i32 %0) #0 {
+entry:
+  %1 = add nsw i32 %0, -9
+  %2 = add nsw i32 %0, -4
+  %3 = icmp samesign ult i32 %2, 5
+  %4 = select i1 %3, i32 %2, i32 %1
+  ret i32 %4
+}
+
+; 1 occurrences:
+; opencv/optimized/tf_importer.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000094(i32 %0) #0 {
+entry:
+  %1 = add nsw i32 %0, 1
+  %2 = add i32 %0, 4
+  %3 = icmp samesign ult i32 %2, 3
   %4 = select i1 %3, i32 %2, i32 %1
   ret i32 %4
 }

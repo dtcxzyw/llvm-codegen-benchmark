@@ -28,7 +28,7 @@ func000000000000001e:                   # @func000000000000001e
 	vpmovsxdq	%xmm2, %ymm2
 	vpsubq	%ymm2, %ymm1, %ymm1
 	vpsllq	$52, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	retq
 func000000000000001d:                   # @func000000000000001d
 	vpslld	$31, %xmm2, %xmm2

@@ -41,12 +41,13 @@ entry:
   ret i64 %2
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; cmake/optimized/sha512.c.ll
 ; ockam-rs/optimized/z0rkq6s90lca7cm.ll
 ; postgres/optimized/sha2.ll
 ; postgres/optimized/sha2_shlib.ll
 ; postgres/optimized/sha2_srv.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000e(i64 %0, i64 %1) #0 {
 entry:

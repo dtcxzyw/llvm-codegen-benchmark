@@ -1,19 +1,22 @@
 
-; 32 occurrences:
+; 35 occurrences:
+; boost/optimized/args_cmd.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/env.ll
+; boost/optimized/group.ll
+; boost/optimized/pipe.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/wargs_cmd.ll
 ; cmake/optimized/cmListFileLexer.c.ll
 ; cvc5/optimized/inst_match_generator_multi.cpp.ll
-; git/optimized/sequencer.ll
 ; git/optimized/unpack-trees.ll
-; hermes/optimized/DependencyExtractor.cpp.ll
-; hermes/optimized/JSLibInternal.cpp.ll
-; hermes/optimized/JSRegExp.cpp.ll
-; hermes/optimized/RegexParser.cpp.ll
-; hermes/optimized/RegexSerialization.cpp.ll
-; hyperscan/optimized/ng_find_matches.cpp.ll
-; hyperscan/optimized/ng_violet.cpp.ll
-; hyperscan/optimized/rose_build_bytecode.cpp.ll
-; hyperscan/optimized/rose_build_program.cpp.ll
-; hyperscan/optimized/rose_in_util.cpp.ll
 ; icu/optimized/localeprioritylist.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/RegisterInfoEmitter.cpp.ll
@@ -43,8 +46,9 @@ entry:
   ret i64 %7
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; annoy/optimized/annoymodule.ll
+; git/optimized/sequencer.ll
 ; linux/optimized/filter.ll
 ; postgres/optimized/arrayfuncs.ll
 ; Function Attrs: nounwind

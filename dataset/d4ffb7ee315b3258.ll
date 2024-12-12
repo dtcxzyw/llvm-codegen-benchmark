@@ -167,17 +167,13 @@ entry:
   ret i32 %3
 }
 
-; 11 occurrences:
+; 7 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
 ; hermes/optimized/BigIntSupport.cpp.ll
-; lz4/optimized/lz4.c.ll
-; opencv/optimized/cap_mjpeg_encoder.cpp.ll
 ; openspiel/optimized/observer.cc.ll
 ; openusd/optimized/faceVertex.cpp.ll
-; openusd/optimized/lz4.cpp.ll
-; wolfssl/optimized/sp_int.c.ll
 ; zxing/optimized/BitMatrix.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001b(i64 %0) #0 {

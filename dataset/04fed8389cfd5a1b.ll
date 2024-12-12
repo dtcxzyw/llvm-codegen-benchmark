@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; cmake/optimized/archive_read_support_format_rar.c.ll
 ; linux/optimized/filetable.ll
 ; linux/optimized/nfs.ll
@@ -7,7 +7,6 @@
 ; linux/optimized/ring_buffer.ll
 ; linux/optimized/rsrc.ll
 ; linux/optimized/tctx.ll
-; linux/optimized/tsc_msr.ll
 ; openjdk/optimized/commonRef.ll
 ; pocketpy/optimized/vm.cpp.ll
 ; postgres/optimized/nodeHash.ll
@@ -21,7 +20,7 @@
 define i64 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = and i32 %2, %0
+  %3 = and i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }

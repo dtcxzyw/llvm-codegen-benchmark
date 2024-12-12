@@ -1,8 +1,7 @@
 
-; 33 occurrences:
+; 31 occurrences:
 ; brotli/optimized/encode.c.ll
 ; cpython/optimized/compile.ll
-; linux/optimized/i915_debugfs.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/intel_display_power.ll
@@ -16,7 +15,6 @@
 ; linux/optimized/intel_gt_mcr.ll
 ; linux/optimized/intel_guc.ll
 ; linux/optimized/intel_guc_ct.ll
-; linux/optimized/intel_guc_slpc.ll
 ; linux/optimized/intel_guc_submission.ll
 ; linux/optimized/intel_hdcp.ll
 ; linux/optimized/intel_hdmi.ll

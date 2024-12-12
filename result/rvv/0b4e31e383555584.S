@@ -9,7 +9,7 @@ func0000000000000018:                   # @func0000000000000018
 func0000000000000008:                   # @func0000000000000008
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsleu.vi	v9, v10, 1
-	vmor.mm	v0, v9, v0
+	vmor.mm	v0, v0, v9
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmv.v.i	v9, 0
 	vmerge.vvm	v8, v9, v8, v0
@@ -27,7 +27,7 @@ func0000000000000010:                   # @func0000000000000010
 	li	a0, 20
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsgtu.vx	v9, v10, a0
-	vmor.mm	v0, v9, v0
+	vmor.mm	v0, v0, v9
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmv.v.i	v9, 0
 	vmerge.vvm	v8, v9, v8, v0

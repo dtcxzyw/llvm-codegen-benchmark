@@ -1,8 +1,7 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; cpython/optimized/dictobject.ll
 ; darktable/optimized/introspection_basecurve.c.ll
-; luau/optimized/StringUtils.cpp.ll
 ; mitsuba3/optimized/sdfgrid.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
@@ -13,9 +12,10 @@ entry:
   ret i64 %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; libquic/optimized/quic_framer.cc.ll
 ; linux/optimized/libata-core.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
 ; opencv/optimized/sift.dispatch.cpp.ll
 ; openssl/optimized/libcrypto-lib-bio_dump.ll
 ; openssl/optimized/libcrypto-shlib-bio_dump.ll
@@ -30,7 +30,7 @@ entry:
   ret i64 %5
 }
 
-; 71 occurrences:
+; 74 occurrences:
 ; abseil-cpp/optimized/city.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dense_qr.cc.ll
@@ -79,7 +79,6 @@ entry:
 ; linux/optimized/printk.ll
 ; linux/optimized/skl_watermark.ll
 ; llama.cpp/optimized/ggml.c.ll
-; luau/optimized/StringUtils.cpp.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
@@ -101,6 +100,10 @@ entry:
 ; php/optimized/string.ll
 ; tev/optimized/Ipc.cpp.ll
 ; yalantinglibs/optimized/user_defined_serialization.cpp.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/4f0whfvi6d4n250vl2y4kac10.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
 ; zfp/optimized/zfp.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
@@ -111,7 +114,7 @@ entry:
   ret i64 %5
 }
 
-; 8 occurrences:
+; 10 occurrences:
 ; casadi/optimized/function_internal.cpp.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; linux/optimized/blk-iocost.ll
@@ -120,6 +123,8 @@ entry:
 ; opencv/optimized/lapack.cpp.ll
 ; opencv/optimized/torch_importer.cpp.ll
 ; openjdk/optimized/c1_IR.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -129,8 +134,9 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -140,9 +146,8 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; linux/optimized/blk-iocost.ll
-; linux/optimized/intel_audio.ll
 ; openjdk/optimized/g1MonotonicArena.ll
 ; openjdk/optimized/g1MonotonicArenaFreePool.ll
 ; Function Attrs: nounwind
@@ -154,8 +159,7 @@ entry:
   ret i64 %5
 }
 
-; 16 occurrences:
-; darktable/optimized/introspection_highlights.c.ll
+; 15 occurrences:
 ; hdf5/optimized/H5Tconv_float.c.ll
 ; hdf5/optimized/H5Tconv_integer.c.ll
 ; hdf5/optimized/H5Tconv_reference.c.ll
@@ -175,7 +179,7 @@ entry:
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %1, %2
-  %4 = add nsw i64 %0, 1
+  %4 = add nsw i64 %0, 1400
   %5 = add i64 %4, %3
   ret i64 %5
 }
@@ -272,10 +276,9 @@ entry:
   ret i64 %5
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; casadi/optimized/cvodes_spils.c.ll
 ; casadi/optimized/idas_spils.c.ll
-; casadi/optimized/kinsol_spils.c.ll
 ; faiss/optimized/sorting.cpp.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll

@@ -146,11 +146,10 @@ func00000000000000aa:                   # @func00000000000000aa
 	retq
 .LCPI17_0:
 	.long	0x7f800000                      # float +Inf
-func0000000000000032:                   # @func0000000000000032
-	vxorps	%xmm2, %xmm2, %xmm2
-	vcmpunordps	%xmm2, %xmm1, %k0
-	vmovss	.LCPI17_0(%rip), %xmm1          # xmm1 = [+Inf,0.0E+0,0.0E+0,0.0E+0]
-	vcmpeq_uqps	%xmm1, %xmm0, %k1
+func0000000000000132:                   # @func0000000000000132
+	vmovss	.LCPI17_0(%rip), %xmm2          # xmm2 = [+Inf,0.0E+0,0.0E+0,0.0E+0]
+	vcmpeq_uqps	%xmm2, %xmm1, %k0
+	vcmpeq_uqps	%xmm2, %xmm0, %k1
 	korw	%k0, %k1, %k0
 	kmovd	%k0, %eax
 	retq

@@ -1,4 +1,4 @@
-func000000000000002a:                   # @func000000000000002a
+func000000000000002e:                   # @func000000000000002e
 	leal	7(%rsi), %eax
 	addl	$14, %esi
 	testl	%eax, %eax

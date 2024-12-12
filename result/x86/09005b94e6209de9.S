@@ -1,12 +1,12 @@
 func0000000000000001:                   # @func0000000000000001
 	notl	%edx
 	addl	%esi, %edx
-	cmpq	%rdi, %rdx
+	cmpq	%rdx, %rdi
 	sete	%al
 	retq
-func0000000000000101:                   # @func0000000000000101
+func0000000000000201:                   # @func0000000000000201
 	notl	%edx
 	addl	%esi, %edx
-	cmpq	%rdi, %rdx
+	cmpq	%rdx, %rdi
 	sete	%al
 	retq

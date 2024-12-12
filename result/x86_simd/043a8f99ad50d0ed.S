@@ -67,12 +67,3 @@ func00000000000000c7:                   # @func00000000000000c7
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
-.LCPI9_0:
-	.long	31                              # 0x1f
-func0000000000000087:                   # @func0000000000000087
-	vpcmpnleud	.LCPI9_0(%rip){1to8}, %ymm1, %k0
-	vpmovm2d	%k0, %ymm1
-	vpsrld	$31, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm0, %ymm0
-	vpor	%ymm1, %ymm0, %ymm0
-	retq

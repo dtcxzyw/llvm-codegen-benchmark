@@ -10,7 +10,7 @@ entry:
   ret i1 %5
 }
 
-; 29 occurrences:
+; 31 occurrences:
 ; abc/optimized/absOldCex.c.ll
 ; abc/optimized/absOldSat.c.ll
 ; abc/optimized/bmcCexMin1.c.ll
@@ -20,6 +20,7 @@ entry:
 ; abc/optimized/giaNf.c.ll
 ; cvc5/optimized/sygus_grammar_cons.cpp.ll
 ; git/optimized/diff.ll
+; libquic/optimized/deflate.c.ll
 ; linux/optimized/nbcon.ll
 ; luajit/optimized/lj_cparse.ll
 ; luajit/optimized/lj_cparse_dyn.ll
@@ -40,6 +41,7 @@ entry:
 ; quickjs/optimized/quickjs.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
+; z3/optimized/realclosure.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -60,7 +62,7 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
+; 10 occurrences:
 ; abc/optimized/absOldCex.c.ll
 ; abc/optimized/absOldSat.c.ll
 ; abc/optimized/bmcCexMin1.c.ll
@@ -69,10 +71,12 @@ entry:
 ; linux/optimized/blk-merge.ll
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/intel_display_power_well.ll
+; opencv/optimized/contours.cpp.ll
+; velox/optimized/Sequence.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 1
+  %3 = and i32 %2, 255
   %4 = icmp ne i32 %3, %1
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
@@ -89,20 +93,19 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; clamav/optimized/vba_extract.c.ll
 ; freetype/optimized/truetype.c.ll
 ; linux/optimized/icl_dsi.ll
 ; linux/optimized/intel_overlay.ll
-; linux/optimized/mempolicy.ll
-; wireshark/optimized/packet-iwarp-mpa.c.ll
+; wireshark/optimized/packet-gsm_a_dtap.c.ll
 ; wireshark/optimized/packet-tftp.c.ll
 ; wireshark/optimized/packet-umts_rlc.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 4095
-  %4 = icmp ult i32 %3, %1
+  %4 = icmp samesign ult i32 %3, %1
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -124,10 +127,23 @@ entry:
 ; llvm/optimized/SemaHLSL.cpp.ll
 ; llvm/optimized/Triple.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000009(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000019(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2147483647
-  %4 = icmp uge i32 %3, %1
+  %4 = icmp samesign uge i32 %3, %1
+  %5 = select i1 %4, i1 %0, i1 false
+  ret i1 %5
+}
+
+; 3 occurrences:
+; linux/optimized/mempolicy.ll
+; wireshark/optimized/packet-icmp.c.ll
+; wireshark/optimized/packet-iwarp-mpa.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 511
+  %4 = icmp ult i32 %3, %1
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -135,10 +151,10 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_dp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000005(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000015(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
-  %4 = icmp ule i32 %3, %1
+  %4 = icmp samesign ule i32 %3, %1
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }
@@ -154,15 +170,16 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; icu/optimized/uniset.ll
 ; linux/optimized/acpi_pm.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 16777215
-  %4 = icmp ugt i32 %3, %1
+  %4 = icmp samesign ugt i32 %3, %1
   %5 = select i1 %4, i1 %0, i1 false
   ret i1 %5
 }

@@ -8,7 +8,7 @@
 ; ruby/optimized/parse.ll
 ; wireshark/optimized/packet-umts_rlc.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = select i1 %0, i1 true, i1 %3
@@ -38,7 +38,7 @@ entry:
 ; slurm/optimized/priority_multifactor.ll
 ; velox/optimized/MmapAllocator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 3
   %4 = select i1 %0, i1 true, i1 %3
@@ -51,7 +51,7 @@ entry:
 ; jq/optimized/builtin.ll
 ; wireshark/optimized/packet-usb.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %0, i1 true, i1 %3
@@ -64,7 +64,7 @@ entry:
 ; abc/optimized/abc.c.ll
 ; oiio/optimized/imagecache.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000018a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = select i1 %0, i1 true, i1 %3
@@ -76,7 +76,7 @@ entry:
 ; 1 occurrences:
 ; oiio/optimized/tiffoutput.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 7
   %4 = select i1 %0, i1 true, i1 %3
@@ -85,11 +85,10 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
-; icu/optimized/ucnv2022.ll
+; 1 occurrences:
 ; llvm/optimized/ASTStructuralEquivalence.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %0, i1 true, i1 %3
@@ -101,7 +100,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/Clang.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000008c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, -2
   %4 = select i1 %0, i1 true, i1 %3
@@ -110,19 +109,16 @@ entry:
   ret i1 %6
 }
 
-; 8 occurrences:
+; 5 occurrences:
 ; cpython/optimized/action_helpers.ll
 ; hwloc/optimized/topology-xml.ll
-; linux/optimized/i915_module.ll
-; openblas/optimized/ddisna.c.ll
-; openmpi/optimized/libprrte_la-hwloc_base_maffinity.ll
 ; proj/optimized/geod.cpp.ll
 ; wolfssl/optimized/server.c.ll
 ; z3/optimized/theory_arith.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000018c(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ne i32 %2, 0
+  %3 = icmp ne i32 %2, 1
   %4 = select i1 %0, i1 true, i1 %3
   %5 = icmp ne i32 %1, 0
   %6 = select i1 %4, i1 %5, i1 false

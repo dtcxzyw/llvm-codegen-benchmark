@@ -6,10 +6,10 @@
 ; openusd/optimized/avif_obu.c.ll
 ; postgres/optimized/varlena.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(ptr %0, i1 %1, ptr %2) #0 {
+define i1 @func00000000000001e4(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %.v = select i1 %1, i64 4, i64 2
-  %3 = getelementptr nusw i8, ptr %2, i64 %.v
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 %.v
   %4 = icmp ult ptr %3, %0
   ret i1 %4
 }
@@ -20,24 +20,34 @@ entry:
 ; tev/optimized/Common.cpp.ll
 ; verilator/optimized/V3Number.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, i1 %1, ptr %2) #0 {
+define i1 @func00000000000001e1(ptr %0, i1 %1, ptr %2) #0 {
 entry:
   %.v = select i1 %1, i64 2, i64 1
-  %3 = getelementptr nusw i8, ptr %2, i64 %.v
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 %.v
   %4 = icmp eq ptr %3, %0
   ret i1 %4
 }
 
-; 4 occurrences:
+; 1 occurrences:
 ; hermes/optimized/BigIntSupport.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000148(ptr %0, i1 %1, ptr %2) #0 {
+entry:
+  %.v = select i1 %1, i64 -16, i64 -8
+  %3 = getelementptr nusw i8, ptr %2, i64 %.v
+  %4 = icmp ugt ptr %3, %0
+  ret i1 %4
+}
+
+; 3 occurrences:
 ; hermes/optimized/zip.c.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(ptr %0, i1 %1, ptr %2) #0 {
+define i1 @func00000000000001e8(ptr %0, i1 %1, ptr %2) #0 {
 entry:
-  %.v = select i1 %1, i64 -16, i64 -8
-  %3 = getelementptr nusw i8, ptr %2, i64 %.v
+  %.v = select i1 %1, i64 2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 %.v
   %4 = icmp ugt ptr %3, %0
   ret i1 %4
 }

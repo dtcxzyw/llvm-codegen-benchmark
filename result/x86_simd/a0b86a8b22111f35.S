@@ -20,7 +20,7 @@ func0000000000000001:                   # @func0000000000000001
 	.zero	16,8
 func0000000000000002:                   # @func0000000000000002
 	vpaddb	.LCPI3_0(%rip), %xmm1, %xmm1
-	vpor	%xmm0, %xmm1, %xmm0
+	vpor	%xmm1, %xmm0, %xmm0
 	retq
 .LCPI4_0:
 	.zero	16,208

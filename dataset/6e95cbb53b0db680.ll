@@ -1,5 +1,6 @@
 
-; 166 occurrences:
+; 167 occurrences:
+; boost/optimized/src.ll
 ; libquic/optimized/p224-64.c.ll
 ; libquic/optimized/poly1305_vec.c.ll
 ; lief/optimized/ASN1Reader.cpp.ll
@@ -171,11 +172,12 @@ define i128 @func0000000000000002(i128 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = zext i64 %2 to i128
-  %4 = mul nuw i128 %3, %0
+  %4 = mul nuw i128 %0, %3
   ret i128 %4
 }
 
-; 98 occurrences:
+; 99 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
@@ -279,7 +281,7 @@ define i128 @func0000000000000012(i128 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 32
   %3 = zext i64 %2 to i128
-  %4 = mul nuw i128 %3, %0
+  %4 = mul nuw i128 %0, %3
   ret i128 %4
 }
 
@@ -459,7 +461,7 @@ define i128 @func000000000000001f(i128 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 1
   %3 = zext nneg i64 %2 to i128
-  %4 = mul nuw nsw i128 %3, %0
+  %4 = mul nuw nsw i128 %0, %3
   ret i128 %4
 }
 
@@ -470,7 +472,7 @@ define i128 @func000000000000001d(i128 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 1
   %3 = zext nneg i64 %2 to i128
-  %4 = mul nsw i128 %3, %0
+  %4 = mul nsw i128 %0, %3
   ret i128 %4
 }
 
@@ -481,7 +483,7 @@ define i128 @func0000000000000013(i128 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 32
   %3 = zext i64 %2 to i128
-  %4 = mul nuw nsw i128 %3, %0
+  %4 = mul nuw nsw i128 %0, %3
   ret i128 %4
 }
 

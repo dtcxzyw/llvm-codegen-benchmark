@@ -16,19 +16,22 @@
 ; raylib/optimized/raudio.c.ll
 ; ruby/optimized/parse.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, -1
   %3 = select i1 %0, i1 true, i1 %2
   ret i1 %3
 }
 
-; 195 occurrences:
+; 200 occurrences:
 ; abc/optimized/dauNpn.c.ll
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_reader_test.cc.ll
 ; abseil-cpp/optimized/mutex_test.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/mo_lambda.ll
+; boost/optimized/static_string.ll
 ; chibicc/optimized/main.ll
 ; clamav/optimized/entconv.c.ll
 ; cmake/optimized/archive_cryptor.c.ll
@@ -36,7 +39,6 @@ entry:
 ; cmake/optimized/cmMakefileTargetGenerator.cxx.ll
 ; cmake/optimized/cmNinjaTargetGenerator.cxx.ll
 ; cmake/optimized/cmPolicies.cxx.ll
-; cmake/optimized/filter_decoder.c.ll
 ; cmake/optimized/filter_encoder.c.ll
 ; coreutils-rs/optimized/2u6e9ztkbsxyrm4k.ll
 ; cpython/optimized/instrumentation.ll
@@ -125,10 +127,11 @@ entry:
 ; llvm/optimized/LoongArchTargetParser.cpp.ll
 ; llvm/optimized/PPCTargetParser.cpp.ll
 ; llvm/optimized/Path.cpp.ll
-; llvm/optimized/Reassociate.cpp.ll
 ; luau/optimized/IrDump.cpp.ll
 ; luau/optimized/IrRegAllocX64.cpp.ll
 ; luau/optimized/Lexer.cpp.ll
+; lvgl/optimized/lv_span.ll
+; lvgl/optimized/lv_text.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/edit_sample.cpp.ll
@@ -216,18 +219,20 @@ entry:
 ; tokio-rs/optimized/3nmgzybx6iv04snk.ll
 ; vcpkg/optimized/vcpkgcmdarguments.cpp.ll
 ; verilator/optimized/V3ParseImp.cpp.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; zxing/optimized/PDFReader.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; zxing/optimized/QRMaskUtil.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 4
   %3 = select i1 %0, i1 true, i1 %2
   ret i1 %3
 }
 
-; 27 occurrences:
+; 25 occurrences:
 ; c3c/optimized/sema_decls.c.ll
 ; darktable/optimized/introspection_basecurve.c.ll
 ; darktable/optimized/introspection_colorzones.c.ll
@@ -249,14 +254,12 @@ entry:
 ; minetest/optimized/mapnode.cpp.ll
 ; minetest/optimized/png.cpp.ll
 ; mitsuba3/optimized/string.cpp.ll
-; openssl/optimized/bad_dtls_test-bin-bad_dtls_test.ll
-; qemu/optimized/ui_vnc-enc-tight.c.ll
 ; redis/optimized/listpack.ll
 ; ruby/optimized/bignum.ll
 ; wireshark/optimized/tvbuff_lz77huff.c.ll
 ; wolfssl/optimized/ssl.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i1 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 1
   %3 = icmp ult i64 %2, 2
@@ -264,8 +267,10 @@ entry:
   ret i1 %4
 }
 
-; 56 occurrences:
+; 55 occurrences:
 ; arrow/optimized/int_util.cc.ll
+; boost/optimized/format.ll
+; boost/optimized/std_backend.ll
 ; brotli/optimized/backward_references.c.ll
 ; clamav/optimized/readdb.c.ll
 ; cmake/optimized/parsedate.c.ll
@@ -288,7 +293,6 @@ entry:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVMatInt.cpp.ll
 ; llvm/optimized/ScaledNumber.cpp.ll
 ; llvm/optimized/X86ISelDAGToDAG.cpp.ll
@@ -296,12 +300,9 @@ entry:
 ; llvm/optimized/XCOFFObjectWriter.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
-; meilisearch-rs/optimized/4rynht2gwvphprvy.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; openjdk/optimized/compilerDefinitions.ll
 ; openmpi/optimized/opal_cstring.ll
-; openssl/optimized/libcrypto-lib-crmf_pbm.ll
-; openssl/optimized/libcrypto-shlib-crmf_pbm.ll
 ; openssl/optimized/libdefault-lib-blake2b_mac.ll
 ; openssl/optimized/libdefault-lib-blake2s_mac.ll
 ; openssl/optimized/libssl-lib-quic_thread_assist.ll
@@ -321,6 +322,7 @@ entry:
 ; wireshark/optimized/packet-jxta.c.ll
 ; yosys/optimized/rtlil.ll
 ; yosys/optimized/rtlil_lexer.ll
+; zed-rs/optimized/f3wmqxw6x607w7cbx1edvfc95.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i64 %1) #0 {
 entry:
@@ -330,7 +332,113 @@ entry:
   ret i1 %4
 }
 
-; 44 occurrences:
+; 1 occurrences:
+; openssl/optimized/bad_dtls_test-bin-bad_dtls_test.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i1 %0, i64 %1) #0 {
+entry:
+  %2 = add nsw i64 %1, -3
+  %3 = icmp samesign ult i64 %2, 11
+  %4 = select i1 %0, i1 true, i1 %3
+  ret i1 %4
+}
+
+; 140 occurrences:
+; boost/optimized/algorithm.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/buffer.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/calculation_type.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/copy_segment_point.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/difference_pl_pl.ll
+; boost/optimized/env.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/extensions.ll
+; boost/optimized/for_each_coordinate.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_ring.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/intersection_pl_pl.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/math_abs.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_equals.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/partition.ll
+; boost/optimized/pipe.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/promote_integral.ll
+; boost/optimized/range.ll
+; boost/optimized/rational.ll
+; boost/optimized/relative_order.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/search_path.ll
+; boost/optimized/select_most_precise.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/shell_path.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/test_impl.ll
+; boost/optimized/test_tools.ll
+; boost/optimized/tupled_output.ll
+; boost/optimized/tuples.ll
+; boost/optimized/union_pl_pl.ll
+; boost/optimized/visit.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
+; boost/optimized/write_dsv.ll
 ; cmake/optimized/CommandLineArguments.cxx.ll
 ; cmake/optimized/strcase.c.ll
 ; cpython/optimized/mpdecimal.ll
@@ -347,6 +455,7 @@ entry:
 ; linux/optimized/ucs2_string.ll
 ; llvm/optimized/ExpandMemCmp.cpp.ll
 ; luau/optimized/StringUtils.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; miniaudio/optimized/unity.c.ll
 ; nuttx/optimized/lib_strncmp.c.ll
 ; openjdk/optimized/xDriver.ll
@@ -386,7 +495,7 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i1 %0, i64 %1) #0 {
+define i1 @func000000000000006c(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 12
   %3 = select i1 %0, i1 true, i1 %2

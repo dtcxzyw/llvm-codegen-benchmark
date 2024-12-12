@@ -35,47 +35,20 @@
 define double @func0000000000000000(double %0, double %1, i64 %2) #0 {
 entry:
   %3 = uitofp i64 %2 to double
-  %4 = fmul double %3, %1
+  %4 = fmul double %1, %3
   %5 = fdiv double %4, %0
   ret double %5
 }
 
-; 30 occurrences:
+; 3 occurrences:
 ; gromacs/optimized/energyterm.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
-; openblas/optimized/dspmv_thread_L.c.ll
-; openblas/optimized/dspmv_thread_U.c.ll
-; openblas/optimized/dspr2_thread_L.c.ll
-; openblas/optimized/dspr2_thread_U.c.ll
-; openblas/optimized/dspr_thread_L.c.ll
-; openblas/optimized/dspr_thread_U.c.ll
-; openblas/optimized/dsymv_thread_L.c.ll
-; openblas/optimized/dsyr2_thread_L.c.ll
-; openblas/optimized/dsyr2_thread_U.c.ll
-; openblas/optimized/dsyr_thread_L.c.ll
-; openblas/optimized/dsyr_thread_U.c.ll
-; openblas/optimized/dtpmv_thread_NLN.c.ll
-; openblas/optimized/dtpmv_thread_NLU.c.ll
-; openblas/optimized/dtpmv_thread_NUN.c.ll
-; openblas/optimized/dtpmv_thread_NUU.c.ll
-; openblas/optimized/dtpmv_thread_TLN.c.ll
-; openblas/optimized/dtpmv_thread_TLU.c.ll
-; openblas/optimized/dtpmv_thread_TUN.c.ll
-; openblas/optimized/dtpmv_thread_TUU.c.ll
-; openblas/optimized/dtrmv_thread_NLN.c.ll
-; openblas/optimized/dtrmv_thread_NLU.c.ll
-; openblas/optimized/dtrmv_thread_NUN.c.ll
-; openblas/optimized/dtrmv_thread_NUU.c.ll
-; openblas/optimized/dtrmv_thread_TLN.c.ll
-; openblas/optimized/dtrmv_thread_TLU.c.ll
-; openblas/optimized/dtrmv_thread_TUN.c.ll
-; openblas/optimized/dtrmv_thread_TUU.c.ll
 ; opencv/optimized/core_detect.cpp.ll
 ; Function Attrs: nounwind
 define double @func0000000000000001(double %0, double %1, i64 %2) #0 {
 entry:
   %3 = uitofp nneg i64 %2 to double
-  %4 = fmul double %3, %1
+  %4 = fmul double %1, %3
   %5 = fdiv double %4, %0
   ret double %5
 }

@@ -1,12 +1,11 @@
 
-; 23 occurrences:
+; 22 occurrences:
 ; clamav/optimized/mew.c.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; icu/optimized/bytestrie.ll
-; linux/optimized/evgpeinit.ll
 ; linux/optimized/ldt.ll
 ; linux/optimized/rx.ll
 ; linux/optimized/sd.ll
@@ -50,7 +49,7 @@ define i32 @func000000000000000f(i8 %0) #0 {
 entry:
   %1 = lshr exact i8 %0, 2
   %2 = zext nneg i8 %1 to i32
-  %3 = shl nuw nsw i32 %2, 24
+  %3 = shl nuw nsw i32 %2, 8
   ret i32 %3
 }
 

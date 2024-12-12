@@ -30,6 +30,14 @@ func000000000000000a:                   // @func000000000000000a
 	adc	x1, x9, x1
 	ret
                                         // -- End function
+func0000000000000008:                   // @func0000000000000008
+// %bb.0:                               // %entry
+	adds	x8, x2, x4
+	adc	x9, x3, x5
+	adds	x0, x8, x0
+	adc	x1, x9, x1
+	ret
+                                        // -- End function
 func0000000000000005:                   // @func0000000000000005
 // %bb.0:                               // %entry
 	adds	x8, x2, x4

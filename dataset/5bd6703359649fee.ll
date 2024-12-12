@@ -1,5 +1,5 @@
 
-; 106 occurrences:
+; 105 occurrences:
 ; abc/optimized/SimpSolver.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
 ; assimp/optimized/zip.c.ll
@@ -9,7 +9,6 @@
 ; gromacs/optimized/threaded_force_buffer.cpp.ll
 ; hermes/optimized/zip.c.ll
 ; imgui/optimized/imgui_tables.cpp.ll
-; libquic/optimized/x_long.c.ll
 ; libwebp/optimized/analysis_enc.c.ll
 ; libwebp/optimized/io_dec.c.ll
 ; libwebp/optimized/iterator_enc.c.ll
@@ -107,7 +106,7 @@
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; yosys/optimized/SimpSolver.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002a(i32 %0) #0 {
+define i1 @func000000000000004a(i32 %0) #0 {
 entry:
   %1 = icmp sgt i32 %0, 0
   ret i1 %1
@@ -126,12 +125,11 @@ entry:
   ret i1 %2
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; libjpeg-turbo/optimized/jcarith.c.ll
-; libwebp/optimized/iterator_enc.c.ll
 ; openjdk/optimized/memnode.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i32 %0) #0 {
+define i1 @func0000000000000044(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -48
   %2 = icmp ult i32 %1, 64
@@ -142,7 +140,7 @@ entry:
 ; flac/optimized/window.c.ll
 ; opencv/optimized/version.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0) #0 {
+define i1 @func0000000000000066(i32 %0) #0 {
 entry:
   %1 = icmp slt i32 %0, 1
   ret i1 %1
@@ -163,7 +161,7 @@ entry:
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0) #0 {
+define i1 @func0000000000000046(i32 %0) #0 {
 entry:
   %1 = icmp slt i32 %0, 1
   ret i1 %1
@@ -172,7 +170,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/resize.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0) #0 {
+define i1 @func0000000000000041(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, 1
   %.mask = and i32 %1, -2
@@ -196,7 +194,7 @@ entry:
 ; redis/optimized/config.ll
 ; wireshark/optimized/packet-btbredr_rf.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i32 %0) #0 {
+define i1 @func000000000000006a(i32 %0) #0 {
 entry:
   %1 = icmp sgt i32 %0, 16777215
   ret i1 %1
@@ -205,7 +203,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-ospf.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0) #0 {
+define i1 @func0000000000000068(i32 %0) #0 {
 entry:
   %1 = add i32 %0, -37
   %2 = icmp ult i32 %1, -33
@@ -219,10 +217,20 @@ entry:
 ; openexr/optimized/ImfHuf.cpp.ll
 ; postgres/optimized/heapam.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0) #0 {
+define i1 @func0000000000000026(i32 %0) #0 {
 entry:
   %1 = add i32 %0, 1
   %2 = icmp slt i32 %1, 0
+  ret i1 %2
+}
+
+; 1 occurrences:
+; libwebp/optimized/iterator_enc.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000054(i32 %0) #0 {
+entry:
+  %1 = add nsw i32 %0, 1
+  %2 = icmp ult i32 %1, 16
   ret i1 %2
 }
 

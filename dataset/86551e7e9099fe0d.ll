@@ -23,7 +23,7 @@ define i1 @func0000000000000001(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 47
   %4 = and i1 %3, %1
-  %5 = xor i1 %4, %0
+  %5 = xor i1 %0, %4
   ret i1 %5
 }
 

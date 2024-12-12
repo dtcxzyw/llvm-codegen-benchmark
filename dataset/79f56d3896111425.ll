@@ -1,5 +1,5 @@
 
-; 18 occurrences:
+; 17 occurrences:
 ; clamav/optimized/filefn.cpp.ll
 ; cmake/optimized/doh.c.ll
 ; cpython/optimized/_testbuffer.ll
@@ -7,7 +7,6 @@
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; hdf5/optimized/H5Gobj.c.ll
 ; linux/optimized/relay.ll
-; linux/optimized/vclock_gettime.ll
 ; lua/optimized/lgc.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; opencv/optimized/samplers.cpp.ll

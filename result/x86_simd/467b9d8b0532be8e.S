@@ -1,14 +1,14 @@
 .LCPI0_0:
-	.long	1461                            # 0x5b5
+	.long	1103515245                      # 0x41c64e6d
 .LCPI0_1:
-	.long	7012800                         # 0x6b01c0
+	.long	12345                           # 0x3039
 func0000000000000000:                   # @func0000000000000000
 	vpmulld	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0
 	vpaddd	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0
 	vpsrad	$31, %ymm0, %ymm1
-	vpsrld	$30, %ymm1, %ymm1
+	vpsrld	$16, %ymm1, %ymm1
 	vpaddd	%ymm1, %ymm0, %ymm0
-	vpsrad	$2, %ymm0, %ymm0
+	vpsrad	$16, %ymm0, %ymm0
 	retq
 .LCPI1_0:
 	.long	11                              # 0xb

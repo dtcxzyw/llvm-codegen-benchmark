@@ -12,7 +12,7 @@
 ; yosys/optimized/celledges.ll
 ; zxing/optimized/DMWriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = srem i32 %0, %1
@@ -23,7 +23,7 @@ entry:
 ; 1 occurrences:
 ; oiio/optimized/texture3d.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = srem i32 %0, %1
@@ -34,7 +34,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/gin_rummy_utils.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -1
   %3 = srem i32 %0, %1
@@ -57,7 +57,7 @@ entry:
 ; 1 occurrences:
 ; libwebp/optimized/backward_references_enc.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -8
   %3 = srem i32 %0, %1

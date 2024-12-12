@@ -1,5 +1,5 @@
 
-; 86 occurrences:
+; 87 occurrences:
 ; abc/optimized/abcAig.c.ll
 ; abc/optimized/abcIvy.c.ll
 ; abc/optimized/abcStrash.c.ll
@@ -77,6 +77,7 @@
 ; llvm/optimized/SwiftErrorValueTracking.cpp.ll
 ; llvm/optimized/VTableBuilder.cpp.ll
 ; llvm/optimized/WasmEHPrepare.cpp.ll
+; lvgl/optimized/lv_string_builtin.ll
 ; mini-lsm-rs/optimized/1pvec8aj5zmr89ee.ll
 ; mini-lsm-rs/optimized/45da4db1y19tqmo.ll
 ; openjdk/optimized/icache.ll

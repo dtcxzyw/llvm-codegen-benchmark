@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/re.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000008a(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func000000000000010a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %2, %0
   %4 = icmp sgt i64 %3, %1
@@ -37,7 +37,7 @@ entry:
 ; qemu/optimized/libvhost-user.c.ll
 ; rocksdb/optimized/io_posix.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %0, %2
   %4 = icmp ugt i64 %3, %1
@@ -46,7 +46,7 @@ entry:
   ret i64 %6
 }
 
-; 34 occurrences:
+; 33 occurrences:
 ; clamav/optimized/clamfi.c.ll
 ; cmake/optimized/archive_read.c.ll
 ; cmake/optimized/zdict.c.ll
@@ -54,7 +54,6 @@ entry:
 ; git/optimized/ewah_rlw.ll
 ; hdf5/optimized/H5PB.c.ll
 ; libevent/optimized/buffer.c.ll
-; libquic/optimized/hkdf.c.ll
 ; libquic/optimized/pair.c.ll
 ; libquic/optimized/quic_stream_sequencer_buffer.cc.ll
 ; libwebp/optimized/tiffdec.c.ll
@@ -97,7 +96,7 @@ entry:
 ; openjdk/optimized/freetypeScaler.ll
 ; openssl/optimized/evp_xof_test-bin-evp_xof_test.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000068(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %0, %2
   %4 = icmp ugt i64 %3, %1
@@ -107,21 +106,9 @@ entry:
 }
 
 ; 1 occurrences:
-; jsonnet/optimized/vm.cpp.ll
-; Function Attrs: nounwind
-define i64 @func00000000000000e8(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = add nuw nsw i64 %0, %2
-  %4 = icmp ugt i64 %3, %1
-  %5 = sub nuw i64 %1, %2
-  %6 = select i1 %4, i64 %5, i64 %0
-  ret i64 %6
-}
-
-; 1 occurrences:
 ; php/optimized/iconv.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000c8(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000188(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %0, %2
   %4 = icmp ugt i64 %3, %1
@@ -133,7 +120,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/string.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000ca(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func000000000000018a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %0, %2
   %4 = icmp sgt i64 %3, %1
@@ -145,7 +132,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/string.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000108(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %0, %2
   %4 = icmp ugt i64 %3, %1
@@ -158,7 +145,7 @@ entry:
 ; faiss/optimized/IndexBinaryFlat.cpp.ll
 ; luau/optimized/isocline.c.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000005a(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func00000000000000aa(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %0, %2
   %4 = icmp sgt i64 %3, %1
@@ -170,10 +157,10 @@ entry:
 ; 1 occurrences:
 ; luau/optimized/isocline.c.ll
 ; Function Attrs: nounwind
-define i64 @func00000000000000d8(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func00000000000001b8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %0, %2
-  %4 = icmp ugt i64 %3, %1
+  %4 = icmp samesign ugt i64 %3, %1
   %5 = sub nsw i64 %1, %2
   %6 = select i1 %4, i64 %5, i64 %0
   ret i64 %6
@@ -182,7 +169,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/vpd.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000003a(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func000000000000006a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %0, %2
   %4 = icmp sgt i64 %3, %1

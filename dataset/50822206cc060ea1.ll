@@ -33,7 +33,7 @@ entry:
 ; rust-analyzer-rs/optimized/2zm9eul0ycl9zsz3.ll
 ; rust-analyzer-rs/optimized/547gv31sq3clwal6.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i1 %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000041(i1 %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i8 %2 to i1
   %4 = xor i1 %3, true

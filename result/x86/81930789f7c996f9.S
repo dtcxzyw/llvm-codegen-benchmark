@@ -11,7 +11,7 @@ func0000000000000031:                   # @func0000000000000031
 	cltq
 	retq
 func0000000000000015:                   # @func0000000000000015
-	leal	-2(%rdi,%rsi,2), %eax
+	leal	4(%rdi,%rsi,2), %eax
 	cltq
 	retq
 func0000000000000014:                   # @func0000000000000014

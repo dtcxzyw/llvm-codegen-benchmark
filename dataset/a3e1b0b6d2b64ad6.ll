@@ -1,5 +1,5 @@
 
-; 48 occurrences:
+; 52 occurrences:
 ; cmake/optimized/cmString.cxx.ll
 ; entt/optimized/meta_any.cpp.ll
 ; entt/optimized/meta_type.cpp.ll
@@ -11,7 +11,6 @@
 ; llvm/optimized/BTFParser.cpp.ll
 ; llvm/optimized/DWARFDebugFrame.cpp.ll
 ; llvm/optimized/InstrProf.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RetainCountDiagnostics.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/SimpleLoopUnswitch.cpp.ll
@@ -40,7 +39,6 @@
 ; node/optimized/libnode.crypto_common.ll
 ; openjdk/optimized/debug.ll
 ; openjdk/optimized/memnode.ll
-; postgres/optimized/shm_toc.ll
 ; protobuf/optimized/arena.cc.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; ring-rs/optimized/4krjvpwhiya9iudo.ll
@@ -48,6 +46,12 @@
 ; ruby/optimized/error.ll
 ; ruby/optimized/shape.ll
 ; ruby/optimized/vm.ll
+; zed-rs/optimized/5tjk7umffytrthtuv35pacndm.ll
+; zed-rs/optimized/9c10jgz06y4guc3kdqsrv661j.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/bkp2u7tfyqnnhpthgztcor9ly.ll
+; zed-rs/optimized/cj7s0wliqptmxcvil2fbp8uvc.ll
+; zed-rs/optimized/d1rzz8mrspct74ymgl9sm92kt.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000001(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -56,7 +60,7 @@ entry:
   ret ptr %4
 }
 
-; 414 occurrences:
+; 343 occurrences:
 ; actix-rs/optimized/1e8u217hm6qvrsw6.ll
 ; actix-rs/optimized/3r4ha69xj2bs6l86.ll
 ; actix-rs/optimized/4pmtvrahn6eloepe.ll
@@ -68,212 +72,131 @@ entry:
 ; assimp/optimized/FBXDocument.cpp.ll
 ; assimp/optimized/STEPFileReader.cpp.ll
 ; assimp/optimized/X3DExporter.cpp.ll
+; boost/optimized/algorithm.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/benchmark_fstream.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/buffer.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/calculation_type.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/context.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/copy_segment_point.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/difference_pl_pl.ll
+; boost/optimized/env.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/extensions.ll
+; boost/optimized/for_each_coordinate.ll
+; boost/optimized/framework.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_ring.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/intersection_pl_pl.ll
+; boost/optimized/junit_log_formatter.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/math_abs.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_equals.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/partition.ll
+; boost/optimized/pipe.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/promote_integral.ll
+; boost/optimized/range.ll
+; boost/optimized/rational.ll
+; boost/optimized/relative_order.ll
+; boost/optimized/results_collector.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/search_path.ll
+; boost/optimized/select_most_precise.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/shell_path.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/spawn.ll
+; boost/optimized/src.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/test_impl.ll
+; boost/optimized/tupled_output.ll
+; boost/optimized/tuples.ll
+; boost/optimized/union_pl_pl.ll
+; boost/optimized/visit.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
+; boost/optimized/write_dsv.ll
 ; cmake/optimized/cmComputeLinkDepends.cxx.ll
 ; cmake/optimized/cmExecuteProcessCommand.cxx.ll
 ; coreutils-rs/optimized/1vrxha14kpfjcqak.ll
 ; coreutils-rs/optimized/41036g19gzrox2gs.ll
 ; coreutils-rs/optimized/bop1lnrjt6srds1.ll
 ; coreutils-rs/optimized/jdhpc8bthd0ylxt.ll
-; cpython/optimized/obmalloc.ll
-; cvc5/optimized/alf_node_converter.cpp.ll
-; cvc5/optimized/alf_post_processor.cpp.ll
 ; cvc5/optimized/alf_printer.cpp.ll
-; cvc5/optimized/alpha_equivalence.cpp.ll
-; cvc5/optimized/arith_entail.cpp.ll
-; cvc5/optimized/arith_ite_utils.cpp.ll
-; cvc5/optimized/arith_msum.cpp.ll
-; cvc5/optimized/array_core_solver.cpp.ll
 ; cvc5/optimized/attribute.cpp.ll
-; cvc5/optimized/bag_solver.cpp.ll
-; cvc5/optimized/bags_rewriter.cpp.ll
-; cvc5/optimized/bags_utils.cpp.ll
-; cvc5/optimized/base_solver.cpp.ll
-; cvc5/optimized/bound_inference.cpp.ll
-; cvc5/optimized/bounded_integers.cpp.ll
-; cvc5/optimized/bv_inverter.cpp.ll
-; cvc5/optimized/candidate_rewrite_filter.cpp.ll
-; cvc5/optimized/card_solver.cpp.ll
-; cvc5/optimized/cardinality_extension.cpp.ll
-; cvc5/optimized/ce_guided_single_inv.cpp.ll
-; cvc5/optimized/ceg_arith_instantiator.cpp.ll
-; cvc5/optimized/ceg_bv_instantiator.cpp.ll
-; cvc5/optimized/ceg_instantiator.cpp.ll
-; cvc5/optimized/cegis_core_connective.cpp.ll
-; cvc5/optimized/cegis_unif.cpp.ll
-; cvc5/optimized/code_point_solver.cpp.ll
-; cvc5/optimized/conjecture_generator.cpp.ll
-; cvc5/optimized/contraction_origins.cpp.ll
-; cvc5/optimized/conv_proof_generator.cpp.ll
-; cvc5/optimized/core_solver.cpp.ll
-; cvc5/optimized/cvc5.cpp.ll
-; cvc5/optimized/datatypes_rewriter.cpp.ll
-; cvc5/optimized/difficulty_manager.cpp.ll
-; cvc5/optimized/difficulty_post_processor.cpp.ll
 ; cvc5/optimized/dot_printer.cpp.ll
-; cvc5/optimized/dtype.cpp.ll
-; cvc5/optimized/dtype_cons.cpp.ll
-; cvc5/optimized/dynamic_rewrite.cpp.ll
-; cvc5/optimized/embedding_converter.cpp.ll
-; cvc5/optimized/entailment_check.cpp.ll
-; cvc5/optimized/enum_stream_substitution.cpp.ll
-; cvc5/optimized/equality_query.cpp.ll
-; cvc5/optimized/equality_substitution.cpp.ll
-; cvc5/optimized/example_eval_cache.cpp.ll
-; cvc5/optimized/example_infer.cpp.ll
-; cvc5/optimized/exponential_solver.cpp.ll
-; cvc5/optimized/expr_miner.cpp.ll
-; cvc5/optimized/ext_theory.cpp.ll
-; cvc5/optimized/ext_theory_callback.cpp.ll
-; cvc5/optimized/extended_rewrite.cpp.ll
-; cvc5/optimized/extf_solver.cpp.ll
-; cvc5/optimized/factoring_check.cpp.ll
-; cvc5/optimized/first_order_model.cpp.ll
-; cvc5/optimized/first_order_model_fmc.cpp.ll
-; cvc5/optimized/full_model_check.cpp.ll
-; cvc5/optimized/fun_def_evaluator.cpp.ll
-; cvc5/optimized/fun_def_fmf.cpp.ll
-; cvc5/optimized/ho_elim.cpp.ll
-; cvc5/optimized/ho_extension.cpp.ll
-; cvc5/optimized/ho_term_database.cpp.ll
-; cvc5/optimized/ho_trigger.cpp.ll
 ; cvc5/optimized/iand_utils.cpp.ll
-; cvc5/optimized/inference_manager_buffered.cpp.ll
-; cvc5/optimized/inst_match_generator.cpp.ll
 ; cvc5/optimized/inst_match_generator_multi.cpp.ll
-; cvc5/optimized/inst_match_generator_multi_linear.cpp.ll
 ; cvc5/optimized/inst_match_generator_simple.cpp.ll
-; cvc5/optimized/inst_match_trie.cpp.ll
-; cvc5/optimized/inst_strategy_cegqi.cpp.ll
-; cvc5/optimized/inst_strategy_e_matching.cpp.ll
-; cvc5/optimized/inst_strategy_e_matching_user.cpp.ll
-; cvc5/optimized/inst_strategy_enumerative.cpp.ll
-; cvc5/optimized/inst_strategy_mbqi.cpp.ll
-; cvc5/optimized/inst_strategy_pool.cpp.ll
-; cvc5/optimized/instantiate.cpp.ll
-; cvc5/optimized/int_blaster.cpp.ll
-; cvc5/optimized/ite_utilities.cpp.ll
-; cvc5/optimized/lazy_proof_chain.cpp.ll
-; cvc5/optimized/lazy_trie.cpp.ll
-; cvc5/optimized/learned_rewrite.cpp.ll
-; cvc5/optimized/lfsc_node_converter.cpp.ll
-; cvc5/optimized/lfsc_printer.cpp.ll
-; cvc5/optimized/match_trie.cpp.ll
-; cvc5/optimized/miplib_trick.cpp.ll
-; cvc5/optimized/model.cpp.ll
-; cvc5/optimized/model_blocker.cpp.ll
-; cvc5/optimized/model_builder.cpp.ll
-; cvc5/optimized/model_cons_default.cpp.ll
-; cvc5/optimized/monomial.cpp.ll
-; cvc5/optimized/monomial_bounds_check.cpp.ll
-; cvc5/optimized/monomial_check.cpp.ll
-; cvc5/optimized/nary_match_trie.cpp.ll
-; cvc5/optimized/nary_term_util.cpp.ll
-; cvc5/optimized/nl_lemma_utils.cpp.ll
-; cvc5/optimized/nl_model.cpp.ll
-; cvc5/optimized/node_algorithm.cpp.ll
-; cvc5/optimized/node_manager.cpp.ll
-; cvc5/optimized/node_trie.cpp.ll
-; cvc5/optimized/normal_form.cpp.ll
-; cvc5/optimized/oracle_caller.cpp.ll
-; cvc5/optimized/oracle_checker.cpp.ll
-; cvc5/optimized/pattern_term_selector.cpp.ll
-; cvc5/optimized/proof_manager.cpp.ll
-; cvc5/optimized/proof_node_algorithm.cpp.ll
-; cvc5/optimized/proof_node_to_sexpr.cpp.ll
-; cvc5/optimized/proof_node_updater.cpp.ll
-; cvc5/optimized/proof_post_processor.cpp.ll
 ; cvc5/optimized/quant_conflict_find.cpp.ll
-; cvc5/optimized/quant_info.cpp.ll
-; cvc5/optimized/quant_relevance.cpp.ll
 ; cvc5/optimized/quant_rep_bound_ext.cpp.ll
-; cvc5/optimized/quant_split.cpp.ll
-; cvc5/optimized/quant_util.cpp.ll
-; cvc5/optimized/quantifiers_attributes.cpp.ll
-; cvc5/optimized/quantifiers_engine.cpp.ll
-; cvc5/optimized/quantifiers_macros.cpp.ll
-; cvc5/optimized/quantifiers_registry.cpp.ll
-; cvc5/optimized/quantifiers_rewriter.cpp.ll
-; cvc5/optimized/query_generator_sample_sat.cpp.ll
-; cvc5/optimized/regexp_eval.cpp.ll
-; cvc5/optimized/regexp_operation.cpp.ll
-; cvc5/optimized/regexp_solver.cpp.ll
 ; cvc5/optimized/relevant_domain.cpp.ll
-; cvc5/optimized/rels_utils.cpp.ll
-; cvc5/optimized/rep_set.cpp.ll
-; cvc5/optimized/resolution_proofs_util.cpp.ll
-; cvc5/optimized/rewrite_db.cpp.ll
-; cvc5/optimized/sep_skolem_emp.cpp.ll
-; cvc5/optimized/sine_solver.cpp.ll
-; cvc5/optimized/single_inv_partition.cpp.ll
-; cvc5/optimized/skolem_manager.cpp.ll
-; cvc5/optimized/skolemize.cpp.ll
 ; cvc5/optimized/solver_engine.cpp.ll
-; cvc5/optimized/solver_state.cpp.ll
-; cvc5/optimized/sort_inference.cpp.ll
-; cvc5/optimized/sort_type_size.cpp.ll
-; cvc5/optimized/state.cpp.ll
-; cvc5/optimized/strings_entail.cpp.ll
-; cvc5/optimized/subs.cpp.ll
-; cvc5/optimized/subs_minimize.cpp.ll
-; cvc5/optimized/sygus_datatype_utils.cpp.ll
-; cvc5/optimized/sygus_enumerator.cpp.ll
-; cvc5/optimized/sygus_eval_unfold.cpp.ll
-; cvc5/optimized/sygus_explain.cpp.ll
 ; cvc5/optimized/sygus_extension.cpp.ll
-; cvc5/optimized/sygus_grammar_cons.cpp.ll
-; cvc5/optimized/sygus_grammar_norm.cpp.ll
-; cvc5/optimized/sygus_grammar_red.cpp.ll
-; cvc5/optimized/sygus_inference.cpp.ll
-; cvc5/optimized/sygus_interpol.cpp.ll
-; cvc5/optimized/sygus_pbe.cpp.ll
-; cvc5/optimized/sygus_process_conj.cpp.ll
-; cvc5/optimized/sygus_repair_const.cpp.ll
-; cvc5/optimized/sygus_sampler.cpp.ll
-; cvc5/optimized/sygus_solver.cpp.ll
-; cvc5/optimized/sygus_unif.cpp.ll
 ; cvc5/optimized/sygus_unif_io.cpp.ll
-; cvc5/optimized/sygus_unif_rl.cpp.ll
-; cvc5/optimized/sygus_unif_strat.cpp.ll
-; cvc5/optimized/synth_conjecture.cpp.ll
-; cvc5/optimized/synth_rew_rules.cpp.ll
-; cvc5/optimized/tangent_plane_check.cpp.ll
 ; cvc5/optimized/taylor_generator.cpp.ll
-; cvc5/optimized/template_infer.cpp.ll
-; cvc5/optimized/term_canonize.cpp.ll
-; cvc5/optimized/term_database.cpp.ll
-; cvc5/optimized/term_database_sygus.cpp.ll
-; cvc5/optimized/term_pools.cpp.ll
 ; cvc5/optimized/term_tuple_enumerator.cpp.ll
-; cvc5/optimized/term_util.cpp.ll
-; cvc5/optimized/theory_arith_private.cpp.ll
-; cvc5/optimized/theory_arrays.cpp.ll
-; cvc5/optimized/theory_bags.cpp.ll
-; cvc5/optimized/theory_bags_type_enumerator.cpp.ll
-; cvc5/optimized/theory_bv_rewriter.cpp.ll
-; cvc5/optimized/theory_datatypes.cpp.ll
-; cvc5/optimized/theory_ff_rewriter.cpp.ll
-; cvc5/optimized/theory_model.cpp.ll
-; cvc5/optimized/theory_model_builder.cpp.ll
 ; cvc5/optimized/theory_sep.cpp.ll
-; cvc5/optimized/theory_sep_rewriter.cpp.ll
-; cvc5/optimized/theory_sets_private.cpp.ll
-; cvc5/optimized/theory_sets_rels.cpp.ll
-; cvc5/optimized/theory_sets_rewriter.cpp.ll
 ; cvc5/optimized/theory_strings.cpp.ll
-; cvc5/optimized/theory_strings_preprocess.cpp.ll
-; cvc5/optimized/theory_uf.cpp.ll
-; cvc5/optimized/theory_uf_model.cpp.ll
 ; cvc5/optimized/timeout_core_manager.cpp.ll
 ; cvc5/optimized/transcendental_solver.cpp.ll
 ; cvc5/optimized/transcendental_state.cpp.ll
-; cvc5/optimized/transition_inference.cpp.ll
-; cvc5/optimized/trigger_database.cpp.ll
-; cvc5/optimized/trigger_trie.cpp.ll
-; cvc5/optimized/type_info.cpp.ll
-; cvc5/optimized/type_node_id_trie.cpp.ll
-; cvc5/optimized/unsat_core_manager.cpp.ll
-; cvc5/optimized/variadic_trie.cpp.ll
-; cvc5/optimized/vts_term_cache.cpp.ll
 ; delta-rs/optimized/264wku5om6u5pdmz.ll
 ; diesel-rs/optimized/27d1dwdaey9nml16.ll
 ; duckdb/optimized/ub_duckdb_aggr_nested.cpp.ll
@@ -284,7 +207,6 @@ entry:
 ; flatbuffers/optimized/flatc.cpp.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; glslang/optimized/ParseHelper.cpp.ll
-; gromacs/optimized/p2p_protocol.cpp.ll
 ; grpc/optimized/fault_injection_filter.cc.ll
 ; grpc/optimized/rbac_filter.cc.ll
 ; grpc/optimized/xds_cluster_resolver.cc.ll
@@ -304,7 +226,6 @@ entry:
 ; lief/optimized/ResourceAccelerator.cpp.ll
 ; lief/optimized/ResourceDialog.cpp.ll
 ; lief/optimized/ResourceDialogItem.cpp.ll
-; linux/optimized/amd_nb.ll
 ; linux/optimized/sg.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64StackTagging.cpp.ll
@@ -442,6 +363,7 @@ entry:
 ; tokenizers-rs/optimized/1w676x6x6lprwvn5.ll
 ; tokenizers-rs/optimized/4hn9gefsll13qr1r.ll
 ; tokio-rs/optimized/2i86qkpybymk1snv.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; typst-rs/optimized/3dimj4rf5dyrieyi.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
@@ -471,6 +393,17 @@ entry:
 ; yalantinglibs/optimized/client.cpp.ll
 ; yalantinglibs/optimized/test_messages_proto2.struct_pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.struct_pb.cc.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/1b5ll0cnnio0vvxmolgooij5i.ll
+; zed-rs/optimized/2dbu45lers7mkstxlrhw3mc97.ll
+; zed-rs/optimized/5jgfm3klpby9utjhkan94f3dk.ll
+; zed-rs/optimized/6i9q21vg747q3orsxnutiwubi.ll
+; zed-rs/optimized/8f7mact1a9un9bc0wu959qx4z.ll
+; zed-rs/optimized/9zd8wd1s2fxo541ze2ot3j12x.ll
+; zed-rs/optimized/axq0fnk57nrkchega3zj2zynp.ll
+; zed-rs/optimized/ddwqyvi7204z7yxly1a7n0b57.ll
+; zed-rs/optimized/di6vqkr45z5qfxmwsnoq97jcv.ll
+; zed-rs/optimized/dqlxdbn4bc486rcuwzrxwttzb.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -479,8 +412,11 @@ entry:
   ret ptr %4
 }
 
-; 134 occurrences:
+; 135 occurrences:
 ; assimp/optimized/FBXConverter.cpp.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/topology.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/einstein.cpp.ll
 ; casadi/optimized/im_instantiator.cpp.ll
@@ -566,7 +502,6 @@ entry:
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -612,7 +547,6 @@ entry:
 ; yalantinglibs/optimized/test_messages_proto3.struct_pb.cc.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i64 %1, i64 %2) #0 {
@@ -625,14 +559,14 @@ entry:
 ; 1 occurrences:
 ; wasmedge/optimized/wasifunc.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000005(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000015(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %.not = icmp ugt i64 %1, %2
+  %.not = icmp samesign ugt i64 %1, %2
   %3 = select i1 %.not, ptr null, ptr %0
   ret ptr %3
 }
 
-; 18 occurrences:
+; 62 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; libquic/optimized/quic_data_writer.cc.ll
 ; llvm/optimized/DWARFUnit.cpp.ll
@@ -640,6 +574,10 @@ entry:
 ; llvm/optimized/ProfileSummaryBuilder.cpp.ll
 ; openspiel/optimized/fsicfr.cc.ll
 ; qdrant-rs/optimized/4a3k1lnyyshtxc9t.ll
+; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
+; turborepo-rs/optimized/b9mxqsqxupsuldn67x7vgrl1g.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; wasmtime-rs/optimized/1qcvhhk6ae10xu9.ll
@@ -651,6 +589,46 @@ entry:
 ; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
 ; wasmtime-rs/optimized/4op38pthexwwd97b.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
+; zed-rs/optimized/0jte70wp5piqvamn4r8mygd7m.ll
+; zed-rs/optimized/0pbj35jdb0n0bb6blyk493qkr.ll
+; zed-rs/optimized/101enz14pylx453ld99plp60b.ll
+; zed-rs/optimized/1cn7xv4w6dvhmserny8iqmdc3.ll
+; zed-rs/optimized/20bozbjbsf9a2657h3xzu9a73.ll
+; zed-rs/optimized/2bmd7m579qu61sjfzthhk5yj1.ll
+; zed-rs/optimized/2ddhoez3lxnwet69778aw7ehj.ll
+; zed-rs/optimized/2icxmtzclo7z45oyowu1m9m0s.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/2n7u2iil7splx0vyzxy5z2jdh.ll
+; zed-rs/optimized/2qu3ksqe5t2g2a0ursek881ws.ll
+; zed-rs/optimized/2xv7gcyhgnpwydetyfctbxzbn.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/4h84anocrn0e2zexjpu5utgbx.ll
+; zed-rs/optimized/4wl6luh08kf5panbyu7di2k6e.ll
+; zed-rs/optimized/54arwywyn44uhdmfvofjwixkx.ll
+; zed-rs/optimized/5xzbfmjm0ssp4zaxaevz1taue.ll
+; zed-rs/optimized/6c1m5725g8fkc8u2sxpts1slw.ll
+; zed-rs/optimized/6t66wyfdhcx0enyarsxt68bq7.ll
+; zed-rs/optimized/79iwpw5lq360ug3z4zdidy7ez.ll
+; zed-rs/optimized/7znph2z4y55emrpyaq53m67p1.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9gug1rix20893syijvsd2r8c6.ll
+; zed-rs/optimized/9sysltstjhp0j3770z48leqk1.ll
+; zed-rs/optimized/9v5brbyi15mcpvvj8t9dauqn4.ll
+; zed-rs/optimized/axq0fnk57nrkchega3zj2zynp.ll
+; zed-rs/optimized/bkz8gk2grsqnr2xbkvtnqlfhe.ll
+; zed-rs/optimized/bqkhvme8kwgfmpydn1hdkle55.ll
+; zed-rs/optimized/bzgpsrur2ydjgs01q4vmv48xa.ll
+; zed-rs/optimized/cjc5h4eq3nq6focwl45zxxvpx.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/dotykqg7r97h0htpk8r9ip155.ll
+; zed-rs/optimized/dvn8qit1prase6mygaqh1d4z0.ll
+; zed-rs/optimized/e7sq1vacbh4jwrroyxorjc2j4.ll
+; zed-rs/optimized/edm0tyzllcff5rtqrop0amdwq.ll
+; zed-rs/optimized/etkkpijil810uxaq6a1xhpkj9.ll
+; zed-rs/optimized/ex6g57bc10sgfoa3czinybu3l.ll
+; zed-rs/optimized/ezbwcajxpi0qb56jds6g2c4u6.ll
+; zed-rs/optimized/f1suy9miqr5txm7nzzcuw0lf4.ll
+; zed-rs/optimized/f1xl8k103at60m3wnvb71vdir.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000008(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -667,6 +645,220 @@ entry:
   %.not = icmp slt i64 %1, %2
   %3 = select i1 %.not, ptr null, ptr %0
   ret ptr %3
+}
+
+; 1 occurrences:
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000018(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i64 %1, %2
+  %4 = select i1 %3, ptr %0, ptr null
+  ret ptr %4
+}
+
+; 195 occurrences:
+; cpython/optimized/obmalloc.ll
+; cvc5/optimized/alf_node_converter.cpp.ll
+; cvc5/optimized/alf_post_processor.cpp.ll
+; cvc5/optimized/alf_printer.cpp.ll
+; cvc5/optimized/alpha_equivalence.cpp.ll
+; cvc5/optimized/arith_entail.cpp.ll
+; cvc5/optimized/arith_ite_utils.cpp.ll
+; cvc5/optimized/arith_msum.cpp.ll
+; cvc5/optimized/array_core_solver.cpp.ll
+; cvc5/optimized/bag_solver.cpp.ll
+; cvc5/optimized/bags_rewriter.cpp.ll
+; cvc5/optimized/bags_utils.cpp.ll
+; cvc5/optimized/base_solver.cpp.ll
+; cvc5/optimized/bound_inference.cpp.ll
+; cvc5/optimized/bounded_integers.cpp.ll
+; cvc5/optimized/bv_inverter.cpp.ll
+; cvc5/optimized/candidate_rewrite_filter.cpp.ll
+; cvc5/optimized/card_solver.cpp.ll
+; cvc5/optimized/cardinality_extension.cpp.ll
+; cvc5/optimized/ce_guided_single_inv.cpp.ll
+; cvc5/optimized/ceg_arith_instantiator.cpp.ll
+; cvc5/optimized/ceg_bv_instantiator.cpp.ll
+; cvc5/optimized/ceg_instantiator.cpp.ll
+; cvc5/optimized/cegis_core_connective.cpp.ll
+; cvc5/optimized/cegis_unif.cpp.ll
+; cvc5/optimized/code_point_solver.cpp.ll
+; cvc5/optimized/conjecture_generator.cpp.ll
+; cvc5/optimized/contraction_origins.cpp.ll
+; cvc5/optimized/conv_proof_generator.cpp.ll
+; cvc5/optimized/core_solver.cpp.ll
+; cvc5/optimized/cvc5.cpp.ll
+; cvc5/optimized/datatypes_rewriter.cpp.ll
+; cvc5/optimized/difficulty_manager.cpp.ll
+; cvc5/optimized/difficulty_post_processor.cpp.ll
+; cvc5/optimized/dtype.cpp.ll
+; cvc5/optimized/dtype_cons.cpp.ll
+; cvc5/optimized/dynamic_rewrite.cpp.ll
+; cvc5/optimized/embedding_converter.cpp.ll
+; cvc5/optimized/entailment_check.cpp.ll
+; cvc5/optimized/enum_stream_substitution.cpp.ll
+; cvc5/optimized/equality_query.cpp.ll
+; cvc5/optimized/equality_substitution.cpp.ll
+; cvc5/optimized/example_eval_cache.cpp.ll
+; cvc5/optimized/example_infer.cpp.ll
+; cvc5/optimized/exponential_solver.cpp.ll
+; cvc5/optimized/expr_miner.cpp.ll
+; cvc5/optimized/ext_theory.cpp.ll
+; cvc5/optimized/ext_theory_callback.cpp.ll
+; cvc5/optimized/extended_rewrite.cpp.ll
+; cvc5/optimized/extf_solver.cpp.ll
+; cvc5/optimized/factoring_check.cpp.ll
+; cvc5/optimized/first_order_model.cpp.ll
+; cvc5/optimized/first_order_model_fmc.cpp.ll
+; cvc5/optimized/full_model_check.cpp.ll
+; cvc5/optimized/fun_def_evaluator.cpp.ll
+; cvc5/optimized/fun_def_fmf.cpp.ll
+; cvc5/optimized/ho_elim.cpp.ll
+; cvc5/optimized/ho_extension.cpp.ll
+; cvc5/optimized/ho_term_database.cpp.ll
+; cvc5/optimized/ho_trigger.cpp.ll
+; cvc5/optimized/inference_manager_buffered.cpp.ll
+; cvc5/optimized/inst_match_generator.cpp.ll
+; cvc5/optimized/inst_match_generator_multi.cpp.ll
+; cvc5/optimized/inst_match_generator_multi_linear.cpp.ll
+; cvc5/optimized/inst_match_trie.cpp.ll
+; cvc5/optimized/inst_strategy_cegqi.cpp.ll
+; cvc5/optimized/inst_strategy_e_matching.cpp.ll
+; cvc5/optimized/inst_strategy_e_matching_user.cpp.ll
+; cvc5/optimized/inst_strategy_enumerative.cpp.ll
+; cvc5/optimized/inst_strategy_mbqi.cpp.ll
+; cvc5/optimized/inst_strategy_pool.cpp.ll
+; cvc5/optimized/instantiate.cpp.ll
+; cvc5/optimized/int_blaster.cpp.ll
+; cvc5/optimized/ite_utilities.cpp.ll
+; cvc5/optimized/lazy_proof_chain.cpp.ll
+; cvc5/optimized/lazy_trie.cpp.ll
+; cvc5/optimized/learned_rewrite.cpp.ll
+; cvc5/optimized/lfsc_node_converter.cpp.ll
+; cvc5/optimized/lfsc_printer.cpp.ll
+; cvc5/optimized/match_trie.cpp.ll
+; cvc5/optimized/miplib_trick.cpp.ll
+; cvc5/optimized/model.cpp.ll
+; cvc5/optimized/model_blocker.cpp.ll
+; cvc5/optimized/model_builder.cpp.ll
+; cvc5/optimized/model_cons_default.cpp.ll
+; cvc5/optimized/monomial.cpp.ll
+; cvc5/optimized/monomial_bounds_check.cpp.ll
+; cvc5/optimized/monomial_check.cpp.ll
+; cvc5/optimized/nary_match_trie.cpp.ll
+; cvc5/optimized/nary_term_util.cpp.ll
+; cvc5/optimized/nl_lemma_utils.cpp.ll
+; cvc5/optimized/nl_model.cpp.ll
+; cvc5/optimized/node_algorithm.cpp.ll
+; cvc5/optimized/node_manager.cpp.ll
+; cvc5/optimized/node_trie.cpp.ll
+; cvc5/optimized/normal_form.cpp.ll
+; cvc5/optimized/oracle_caller.cpp.ll
+; cvc5/optimized/oracle_checker.cpp.ll
+; cvc5/optimized/pattern_term_selector.cpp.ll
+; cvc5/optimized/proof_manager.cpp.ll
+; cvc5/optimized/proof_node_algorithm.cpp.ll
+; cvc5/optimized/proof_node_to_sexpr.cpp.ll
+; cvc5/optimized/proof_node_updater.cpp.ll
+; cvc5/optimized/proof_post_processor.cpp.ll
+; cvc5/optimized/quant_conflict_find.cpp.ll
+; cvc5/optimized/quant_info.cpp.ll
+; cvc5/optimized/quant_relevance.cpp.ll
+; cvc5/optimized/quant_split.cpp.ll
+; cvc5/optimized/quant_util.cpp.ll
+; cvc5/optimized/quantifiers_attributes.cpp.ll
+; cvc5/optimized/quantifiers_engine.cpp.ll
+; cvc5/optimized/quantifiers_macros.cpp.ll
+; cvc5/optimized/quantifiers_registry.cpp.ll
+; cvc5/optimized/quantifiers_rewriter.cpp.ll
+; cvc5/optimized/query_generator_sample_sat.cpp.ll
+; cvc5/optimized/regexp_eval.cpp.ll
+; cvc5/optimized/regexp_operation.cpp.ll
+; cvc5/optimized/regexp_solver.cpp.ll
+; cvc5/optimized/relevant_domain.cpp.ll
+; cvc5/optimized/rels_utils.cpp.ll
+; cvc5/optimized/rep_set.cpp.ll
+; cvc5/optimized/resolution_proofs_util.cpp.ll
+; cvc5/optimized/rewrite_db.cpp.ll
+; cvc5/optimized/sep_skolem_emp.cpp.ll
+; cvc5/optimized/sine_solver.cpp.ll
+; cvc5/optimized/single_inv_partition.cpp.ll
+; cvc5/optimized/skolem_manager.cpp.ll
+; cvc5/optimized/skolemize.cpp.ll
+; cvc5/optimized/solver_engine.cpp.ll
+; cvc5/optimized/solver_state.cpp.ll
+; cvc5/optimized/sort_inference.cpp.ll
+; cvc5/optimized/sort_type_size.cpp.ll
+; cvc5/optimized/state.cpp.ll
+; cvc5/optimized/strings_entail.cpp.ll
+; cvc5/optimized/subs.cpp.ll
+; cvc5/optimized/subs_minimize.cpp.ll
+; cvc5/optimized/sygus_datatype_utils.cpp.ll
+; cvc5/optimized/sygus_enumerator.cpp.ll
+; cvc5/optimized/sygus_eval_unfold.cpp.ll
+; cvc5/optimized/sygus_explain.cpp.ll
+; cvc5/optimized/sygus_extension.cpp.ll
+; cvc5/optimized/sygus_grammar_cons.cpp.ll
+; cvc5/optimized/sygus_grammar_norm.cpp.ll
+; cvc5/optimized/sygus_grammar_red.cpp.ll
+; cvc5/optimized/sygus_inference.cpp.ll
+; cvc5/optimized/sygus_interpol.cpp.ll
+; cvc5/optimized/sygus_pbe.cpp.ll
+; cvc5/optimized/sygus_process_conj.cpp.ll
+; cvc5/optimized/sygus_repair_const.cpp.ll
+; cvc5/optimized/sygus_sampler.cpp.ll
+; cvc5/optimized/sygus_solver.cpp.ll
+; cvc5/optimized/sygus_unif.cpp.ll
+; cvc5/optimized/sygus_unif_io.cpp.ll
+; cvc5/optimized/sygus_unif_rl.cpp.ll
+; cvc5/optimized/sygus_unif_strat.cpp.ll
+; cvc5/optimized/synth_conjecture.cpp.ll
+; cvc5/optimized/synth_rew_rules.cpp.ll
+; cvc5/optimized/tangent_plane_check.cpp.ll
+; cvc5/optimized/template_infer.cpp.ll
+; cvc5/optimized/term_canonize.cpp.ll
+; cvc5/optimized/term_database.cpp.ll
+; cvc5/optimized/term_database_sygus.cpp.ll
+; cvc5/optimized/term_pools.cpp.ll
+; cvc5/optimized/term_tuple_enumerator.cpp.ll
+; cvc5/optimized/term_util.cpp.ll
+; cvc5/optimized/theory_arith_private.cpp.ll
+; cvc5/optimized/theory_arrays.cpp.ll
+; cvc5/optimized/theory_bags.cpp.ll
+; cvc5/optimized/theory_bags_type_enumerator.cpp.ll
+; cvc5/optimized/theory_bv_rewriter.cpp.ll
+; cvc5/optimized/theory_datatypes.cpp.ll
+; cvc5/optimized/theory_ff_rewriter.cpp.ll
+; cvc5/optimized/theory_model.cpp.ll
+; cvc5/optimized/theory_model_builder.cpp.ll
+; cvc5/optimized/theory_sep.cpp.ll
+; cvc5/optimized/theory_sep_rewriter.cpp.ll
+; cvc5/optimized/theory_sets_private.cpp.ll
+; cvc5/optimized/theory_sets_rels.cpp.ll
+; cvc5/optimized/theory_sets_rewriter.cpp.ll
+; cvc5/optimized/theory_strings.cpp.ll
+; cvc5/optimized/theory_strings_preprocess.cpp.ll
+; cvc5/optimized/theory_uf.cpp.ll
+; cvc5/optimized/theory_uf_model.cpp.ll
+; cvc5/optimized/timeout_core_manager.cpp.ll
+; cvc5/optimized/transcendental_state.cpp.ll
+; cvc5/optimized/transition_inference.cpp.ll
+; cvc5/optimized/trigger_database.cpp.ll
+; cvc5/optimized/trigger_trie.cpp.ll
+; cvc5/optimized/type_info.cpp.ll
+; cvc5/optimized/type_node_id_trie.cpp.ll
+; cvc5/optimized/unsat_core_manager.cpp.ll
+; cvc5/optimized/variadic_trie.cpp.ll
+; cvc5/optimized/vts_term_cache.cpp.ll
+; gromacs/optimized/p2p_protocol.cpp.ll
+; linux/optimized/amd_nb.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000014(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ult i64 %1, %2
+  %4 = select i1 %3, ptr %0, ptr null
+  ret ptr %4
 }
 
 attributes #0 = { nounwind }

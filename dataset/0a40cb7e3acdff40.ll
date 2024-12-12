@@ -37,7 +37,7 @@ entry:
 ; wireshark/optimized/packet-ieee80211-radiotap.c.ll
 ; wireshark/optimized/pcapng.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000310(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000610(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 4, %1
   %3 = icmp eq i32 %1, 0
@@ -51,7 +51,7 @@ entry:
 ; wireshark/optimized/packet-btsap.c.ll
 ; wireshark/optimized/pcapng.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000031f(i32 %0, i32 %1) #0 {
+define i32 @func000000000000061f(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 4, %1
   %3 = icmp eq i32 %1, 0

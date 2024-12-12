@@ -19,7 +19,7 @@ define i1 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 32512
   %3 = icmp eq i64 %2, 15360
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
@@ -47,12 +47,11 @@ define i1 @func000000000000000c(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 16711680
   %3 = icmp ne i64 %2, 0
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
-; 7 occurrences:
-; icu/optimized/collationkeys.ll
+; 6 occurrences:
 ; linux/optimized/uncore_nhmex.ll
 ; llvm/optimized/Decl.cpp.ll
 ; llvm/optimized/PPMacroExpansion.cpp.ll
@@ -60,10 +59,10 @@ entry:
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; wireshark/optimized/packet-cimd.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000018(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 33552384
-  %3 = icmp ugt i64 %2, 17920
+  %3 = icmp samesign ugt i64 %2, 17920
   %4 = and i1 %3, %0
   ret i1 %4
 }

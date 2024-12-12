@@ -28,3 +28,8 @@ func0000000000000008:                   # @func0000000000000008
 	cmpl	$2147483632, %esi               # imm = 0x7FFFFFF0
 	cmovbq	%rdi, %rax
 	retq
+func0000000000000018:                   # @func0000000000000018
+	xorl	%eax, %eax
+	cmpl	$17, %esi
+	cmovbq	%rdi, %rax
+	retq

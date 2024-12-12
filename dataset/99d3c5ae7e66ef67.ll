@@ -31,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/conformWindow.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i32 %0, double %1, double %2) #0 {
+define i1 @func0000000000000161(i32 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ule double %1, %2
   %4 = icmp eq i32 %0, 2

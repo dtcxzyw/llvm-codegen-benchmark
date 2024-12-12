@@ -1,5 +1,5 @@
 
-; 567 occurrences:
+; 564 occurrences:
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; abseil-cpp/optimized/str_cat_test.cc.ll
 ; arrow/optimized/expression.cc.ll
@@ -262,8 +262,6 @@
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-accessor.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/outputs-spec.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/path-info.ll
@@ -372,8 +370,6 @@
 ; pocketpy/optimized/str.cpp.ll
 ; pocketpy/optimized/vm.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; protobuf/optimized/php_generator.cc.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
@@ -565,6 +561,7 @@
 ; yosys/optimized/cxxrtl_backend.ll
 ; yosys/optimized/fmt.ll
 ; z3/optimized/ast_smt2_pp.cpp.ll
+; zed-rs/optimized/53iexoleo5ntv1dnjbqpooo1x.ll
 ; zxing/optimized/DMWriter.cpp.ll
 ; zxing/optimized/ODCode39Writer.cpp.ll
 ; Function Attrs: nounwind
@@ -576,7 +573,9 @@ entry:
   ret i64 %3
 }
 
-; 6 occurrences:
+; 8 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; folly/optimized/HugePages.cpp.ll
 ; folly/optimized/JSONSchema.cpp.ll
 ; folly/optimized/TestUtil.cpp.ll

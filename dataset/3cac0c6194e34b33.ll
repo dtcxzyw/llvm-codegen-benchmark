@@ -40,9 +40,8 @@ entry:
   ret i64 %7
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; linux/optimized/intel_atomic_plane.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_sprite.ll
 ; Function Attrs: nounwind

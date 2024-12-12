@@ -3,7 +3,7 @@ func0000000000000001:                   # @func0000000000000001
 	andnq	%rdi, %rsi, %rax
 	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	shrq	$8, %rdi
 	andnq	%rdi, %rsi, %rax
 	sete	%al

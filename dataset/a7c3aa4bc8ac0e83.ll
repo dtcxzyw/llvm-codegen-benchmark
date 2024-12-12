@@ -3,7 +3,7 @@
 ; openblas/optimized/dlarrd.c.ll
 ; openssl/optimized/asn1_time_test-bin-asn1_time_test.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000cc(i32 %0, i32 %1) #0 {
+define i32 @func000000000000018c(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 0
   %3 = icmp slt i32 %0, 0
@@ -17,7 +17,7 @@ entry:
 ; abc/optimized/sswLcorr.c.ll
 ; openssl/optimized/asn1_time_test-bin-asn1_time_test.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000154(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000294(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 0
   %3 = icmp sgt i32 %0, 0
@@ -29,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000010c(i32 %0, i32 %1) #0 {
+define i32 @func000000000000020c(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 999
   %3 = icmp slt i32 %0, 0
@@ -41,7 +41,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/tcg.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000028(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000048(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 6144
   %3 = icmp ult i32 %0, 3
@@ -59,7 +59,7 @@ entry:
 ; wireshark/optimized/proto_node.cpp.ll
 ; yosys/optimized/genrtlil.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000182(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000302(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = icmp eq i32 %0, 0
@@ -104,7 +104,7 @@ entry:
 ; z3/optimized/dd_bdd.cpp.ll
 ; z3/optimized/nlarith_util.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000198(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000318(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 10
   %3 = icmp ne i32 %0, 13
@@ -119,7 +119,7 @@ entry:
 ; libphonenumber/optimized/rune.c.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000058(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 3
   %3 = icmp ne i32 %0, 65533
@@ -138,7 +138,7 @@ entry:
 ; llvm/optimized/ScalarEvolutionExpander.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000042(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1
   %3 = icmp eq i32 %0, 1
@@ -150,7 +150,7 @@ entry:
 ; 1 occurrences:
 ; luajit/optimized/luajit.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000158(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000298(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 0
   %3 = icmp ne i32 %0, 0
@@ -162,7 +162,7 @@ entry:
 ; 1 occurrences:
 ; graphviz/optimized/strmatch.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000088(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000108(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 10
   %3 = icmp ult i32 %0, 26
@@ -174,7 +174,7 @@ entry:
 ; 1 occurrences:
 ; libwebp/optimized/frame_enc.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000194(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000314(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = icmp sgt i32 %0, 2

@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; gromacs/optimized/dens_filter.cpp.ll
 ; lightgbm/optimized/linker_topo.cpp.ll
 ; openmpi/optimized/coll_base_allgather.ll
@@ -8,7 +8,6 @@
 ; openmpi/optimized/coll_base_bcast.ll
 ; openmpi/optimized/nbc_iallgatherv.ll
 ; openmpi/optimized/nbc_ibarrier.ll
-; openmpi/optimized/ompi_mpi_preconnect.ll
 ; slurm/optimized/cbuf.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {

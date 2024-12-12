@@ -1,74 +1,56 @@
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
-	shrn	v0.2s, v0.2d, #2
-	movi	v2.4s, #7
-	shrn2	v0.4s, v1.2d, #2
-	add	v0.4s, v0.4s, v2.4s
-	bic	v0.4s, #7
+	lsr	x8, x0, #2
+	add	w8, w8, #7
+	and	w0, w8, #0xfffffff8
 	ret
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	shrn	v0.2s, v0.2d, #9
-	movi	v2.4s, #7
-	mov	w8, #33554424                   // =0x1fffff8
-	shrn2	v0.4s, v1.2d, #9
-	dup	v1.4s, w8
-	add	v0.4s, v0.4s, v2.4s
-	and	v0.16b, v0.16b, v1.16b
+	lsr	x8, x0, #9
+	add	w8, w8, #7
+	and	w0, w8, #0x1fffff8
 	ret
                                         // -- End function
 func0000000000000018:                   // @func0000000000000018
 // %bb.0:                               // %entry
-	movi	v2.4s, #7
-	uzp2	v0.4s, v0.4s, v1.4s
-	add	v0.4s, v0.4s, v2.4s
-	bic	v0.4s, #7
+	lsr	x8, x0, #32
+	add	w8, w8, #7
+	and	w0, w8, #0xfffffff8
 	ret
                                         // -- End function
 func000000000000001d:                   // @func000000000000001d
 // %bb.0:                               // %entry
-	mov	w8, #-1075                      // =0xfffffbcd
-	uzp2	v1.4s, v0.4s, v1.4s
-	dup	v0.4s, w8
-	usra	v0.4s, v1.4s, #20
-	bic	v0.4s, #1
+	lsr	x8, x0, #52
+	sub	w8, w8, #1075
+	and	w0, w8, #0xfffffffe
 	ret
                                         // -- End function
 func0000000000000009:                   // @func0000000000000009
 // %bb.0:                               // %entry
-	movi	v2.4s, #32
-	uzp2	v0.4s, v0.4s, v1.4s
-	movi	v1.4s, #3, msl #8
-	add	v0.4s, v0.4s, v2.4s
-	and	v0.16b, v0.16b, v1.16b
+	lsr	x8, x0, #32
+	add	w8, w8, #32
+	and	w0, w8, #0x3ff
 	ret
                                         // -- End function
-func000000000000000a:                   // @func000000000000000a
+func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	shrn	v0.2s, v0.2d, #1
-	movi	v2.4s, #3
-	shrn2	v0.4s, v1.2d, #1
-	add	v0.4s, v0.4s, v2.4s
-	bic	v0.4s, #3
+	lsr	w8, w0, #11
+	sub	w8, w8, #1
+	and	w0, w8, #0x7f
 	ret
                                         // -- End function
 func000000000000000d:                   // @func000000000000000d
 // %bb.0:                               // %entry
-	movi	v2.2d, #0xffffffffffffffff
-	uzp2	v0.4s, v0.4s, v1.4s
-	usra	v2.4s, v0.4s, #25
-	bic	v2.4s, #1
-	mov	v0.16b, v2.16b
+	lsr	x8, x0, #57
+	sub	w8, w8, #1
+	and	w0, w8, #0xfffffffe
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	shrn	v0.2s, v0.2d, #16
-	movi	v2.4s, #128, lsl #8
-	shrn2	v0.4s, v1.2d, #16
-	movi	v1.2d, #0xffff0000ffff0000
-	add	v0.4s, v0.4s, v2.4s
-	and	v0.16b, v0.16b, v1.16b
+	lsr	x8, x0, #16
+	add	w8, w8, #8, lsl #12             // =32768
+	and	w0, w8, #0xffff0000
 	ret
                                         // -- End function

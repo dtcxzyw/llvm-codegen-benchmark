@@ -18,12 +18,11 @@ func0000000000000014:                   # @func0000000000000014
 	sext.w	a0, a0
 	sgtz	a0, a0
 	ret
-func0000000000000008:                   # @func0000000000000008
+func0000000000000028:                   # @func0000000000000028
 	andi	a0, a0, 255
 	sltiu	a0, a0, 127
 	ret
-func0000000000000010:                   # @func0000000000000010
-	andi	a0, a0, 7
-	sltiu	a0, a0, 3
-	xori	a0, a0, 1
+func0000000000000030:                   # @func0000000000000030
+	andi	a0, a0, 254
+	snez	a0, a0
 	ret

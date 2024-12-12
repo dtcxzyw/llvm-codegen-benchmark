@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	32                              # 0x20
-func00000000000000c8:                   # @func00000000000000c8
+func0000000000000198:                   # @func0000000000000198
 	vpbroadcastd	.LCPI0_0(%rip), %ymm2   # ymm2 = [32,32,32,32,32,32,32,32]
 	vpsubd	%ymm1, %ymm2, %ymm1
 	vpslld	$3, %ymm0, %ymm0
@@ -10,7 +10,7 @@ func00000000000000c8:                   # @func00000000000000c8
 	retq
 .LCPI1_0:
 	.long	32                              # 0x20
-func000000000000007a:                   # @func000000000000007a
+func00000000000000ea:                   # @func00000000000000ea
 	vpbroadcastd	.LCPI1_0(%rip), %ymm2   # ymm2 = [32,32,32,32,32,32,32,32]
 	vpsubd	%ymm1, %ymm2, %ymm1
 	vpslld	$3, %ymm0, %ymm0
@@ -20,7 +20,7 @@ func000000000000007a:                   # @func000000000000007a
 	retq
 .LCPI2_0:
 	.long	32                              # 0x20
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	vpbroadcastd	.LCPI2_0(%rip), %ymm2   # ymm2 = [32,32,32,32,32,32,32,32]
 	vpsubd	%ymm1, %ymm2, %ymm1
 	vpslld	$3, %ymm0, %ymm0
@@ -28,7 +28,7 @@ func000000000000004a:                   # @func000000000000004a
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpsubd	%ymm1, %ymm2, %ymm1
 	vpaddd	%ymm0, %ymm0, %ymm0
@@ -38,7 +38,7 @@ func000000000000005a:                   # @func000000000000005a
 	retq
 .LCPI4_0:
 	.long	65536                           # 0x10000
-func0000000000000074:                   # @func0000000000000074
+func00000000000000f4:                   # @func00000000000000f4
 	vpbroadcastd	.LCPI4_0(%rip), %ymm2   # ymm2 = [65536,65536,65536,65536,65536,65536,65536,65536]
 	vpsubd	%ymm1, %ymm2, %ymm1
 	vpslld	$8, %ymm0, %ymm0
@@ -46,7 +46,7 @@ func0000000000000074:                   # @func0000000000000074
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpsubd	%ymm1, %ymm2, %ymm1
 	vpaddd	%ymm0, %ymm0, %ymm0

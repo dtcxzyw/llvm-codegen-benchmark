@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000000c4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -65
   %4 = icmp slt i32 %3, -32
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000045(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000085(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 8
   %4 = icmp ult i32 %3, 768
@@ -36,7 +36,7 @@ entry:
 ; llvm/optimized/PassBuilder.cpp.ll
 ; llvm/optimized/X86LoadValueInjectionLoadHardening.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003cc(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000d8c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 63
   %4 = icmp ne ptr %0, %1
@@ -48,7 +48,7 @@ entry:
 ; llvm/optimized/InstCombineLoadStoreAlloca.cpp.ll
 ; llvm/optimized/ModuloSchedule.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000018c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 1
   %4 = icmp ne ptr %0, %1
@@ -57,21 +57,9 @@ entry:
 }
 
 ; 1 occurrences:
-; llvm/optimized/InstCombineVectorOps.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000141(ptr %0, ptr %1, i32 %2) #0 {
-entry:
-  %3 = add nsw i32 %2, -70
-  %4 = icmp ult i32 %3, 4
-  %5 = icmp eq ptr %0, %1
-  %6 = select i1 %5, i1 %4, i1 false
-  ret i1 %6
-}
-
-; 1 occurrences:
 ; abseil-cpp/optimized/demangle.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000088(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -10
   %4 = icmp ult i32 %3, -19
@@ -84,7 +72,7 @@ entry:
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/xmltok.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014c(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000048c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -65
   %4 = icmp ult i32 %3, 26

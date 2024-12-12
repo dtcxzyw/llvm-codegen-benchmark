@@ -1,60 +1,54 @@
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	vpmaxuw	%ymm2, %ymm1, %ymm1
 	vpcmpltuw	%ymm0, %ymm1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000094:                   # @func0000000000000094
+func0000000000000124:                   # @func0000000000000124
 	vpcmpltuw	%ymm1, %ymm0, %k1
 	vpcmpnltuw	%ymm2, %ymm0, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000007b:                   # @func000000000000007b
+func00000000000000eb:                   # @func00000000000000eb
 	vpcmpnltw	%ymm1, %ymm0, %k1
 	vpcmplew	%ymm2, %ymm0, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpcmpeqw	%ymm1, %ymm0, %k1
 	vpcmpeqw	%ymm2, %ymm0, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000007a:                   # @func000000000000007a
+func00000000000000ea:                   # @func00000000000000ea
 	vpcmpgtw	%ymm1, %ymm0, %k1
 	vpcmplew	%ymm2, %ymm0, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	vpcmpnleuw	%ymm1, %ymm0, %k1
 	vpcmpleuw	%ymm2, %ymm0, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	vpcmpltuw	%ymm1, %ymm0, %k1
 	vpcmpleuw	%ymm2, %ymm0, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000049:                   # @func0000000000000049
+func0000000000000089:                   # @func0000000000000089
 	vpcmpnltuw	%ymm1, %ymm0, %k1
 	vpcmpltuw	%ymm2, %ymm0, %k0 {%k1}
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000059:                   # @func0000000000000059
+func00000000000000a9:                   # @func00000000000000a9
 	vpcmpnltuw	%ymm1, %ymm0, %k1
 	vpcmpleuw	%ymm2, %ymm0, %k0 {%k1}
-	vpmovm2b	%k0, %xmm0
-	vzeroupper
-	retq
-func0000000000000099:                   # @func0000000000000099
-	vpmaxuw	%ymm2, %ymm1, %ymm1
-	vpcmpleuw	%ymm0, %ymm1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq

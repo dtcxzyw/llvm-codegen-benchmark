@@ -1,4 +1,4 @@
-func000000000000030a:                   # @func000000000000030a
+func000000000000060a:                   # @func000000000000060a
 	sh2add	a1, a1, a1
 	andi	a0, a0, 255
 	sh1add	a0, a1, a0
@@ -7,14 +7,14 @@ func000000000000030a:                   # @func000000000000030a
 	addiw	a1, a1, -821
 	slt	a0, a1, a0
 	ret
-func0000000000000754:                   # @func0000000000000754
+func0000000000000eb4:                   # @func0000000000000eb4
 	sh2add	a1, a1, a1
 	andi	a0, a0, 255
 	sh1add	a0, a1, a0
 	addiw	a0, a0, -48
 	sltiu	a0, a0, 60
 	ret
-func0000000000000508:                   # @func0000000000000508
+func0000000000000a08:                   # @func0000000000000a08
 	sh2add	a1, a1, a1
 	andi	a0, a0, 255
 	sh1add	a0, a1, a0
@@ -23,7 +23,7 @@ func0000000000000508:                   # @func0000000000000508
 	addiw	a1, a1, -821
 	sltu	a0, a1, a0
 	ret
-func0000000000000758:                   # @func0000000000000758
+func0000000000000eb8:                   # @func0000000000000eb8
 	sh2add	a1, a1, a1
 	andi	a0, a0, 255
 	sh1add	a0, a1, a0
@@ -31,7 +31,7 @@ func0000000000000758:                   # @func0000000000000758
 	srliw	a0, a0, 16
 	snez	a0, a0
 	ret
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	sh2add	a1, a1, a1
 	andi	a0, a0, 255
 	sh1add	a0, a1, a0
@@ -39,7 +39,7 @@ func0000000000000018:                   # @func0000000000000018
 	srliw	a0, a0, 16
 	snez	a0, a0
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	sh2add	a1, a1, a1
 	andi	a0, a0, 255
 	slli	a1, a1, 1
@@ -48,7 +48,7 @@ func0000000000000011:                   # @func0000000000000011
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000108:                   # @func0000000000000108
+func0000000000000208:                   # @func0000000000000208
 	li	a2, 85
 	andi	a0, a0, 255
 	mul	a1, a1, a2
@@ -58,7 +58,7 @@ func0000000000000108:                   # @func0000000000000108
 	addiw	a1, a2, 771
 	sltu	a0, a1, a0
 	ret
-func0000000000000301:                   # @func0000000000000301
+func0000000000000601:                   # @func0000000000000601
 	sh2add	a1, a1, a1
 	andi	a0, a0, 255
 	sh1add	a0, a1, a0
@@ -68,7 +68,7 @@ func0000000000000301:                   # @func0000000000000301
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000101:                   # @func0000000000000101
+func0000000000000201:                   # @func0000000000000201
 	sh2add	a1, a1, a1
 	andi	a0, a0, 255
 	slli	a1, a1, 1
@@ -77,14 +77,14 @@ func0000000000000101:                   # @func0000000000000101
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000306:                   # @func0000000000000306
+func0000000000000606:                   # @func0000000000000606
 	sh2add	a1, a1, a1
 	andi	a0, a0, 255
 	sh1add	a0, a1, a0
 	addiw	a0, a0, -48
 	slti	a0, a0, 10
 	ret
-func0000000000000308:                   # @func0000000000000308
+func0000000000000608:                   # @func0000000000000608
 	sh2add	a1, a1, a1
 	andi	a0, a0, 255
 	sh1add	a0, a1, a0
@@ -92,7 +92,15 @@ func0000000000000308:                   # @func0000000000000308
 	sltiu	a0, a0, 100
 	xori	a0, a0, 1
 	ret
-func0000000000000304:                   # @func0000000000000304
+func0000000000000218:                   # @func0000000000000218
+	sh2add	a1, a1, a1
+	andi	a0, a0, 255
+	sh1add	a0, a1, a0
+	addiw	a0, a0, -48
+	sltiu	a0, a0, 8
+	xori	a0, a0, 1
+	ret
+func0000000000000614:                   # @func0000000000000614
 	sh2add	a1, a1, a1
 	andi	a0, a0, 255
 	sh1add	a0, a1, a0

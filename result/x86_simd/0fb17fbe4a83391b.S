@@ -40,7 +40,7 @@
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
-func0000000000000023:                   # @func0000000000000023
+func0000000000000043:                   # @func0000000000000043
 	vptestnmd	.LCPI0_3(%rip){1to8}, %ymm1, %k1
 	vorps	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	vorps	.LCPI0_2(%rip){1to8}, %ymm0, %ymm0
@@ -53,7 +53,7 @@ func0000000000000023:                   # @func0000000000000023
 	.long	1048576                         # 0x100000
 .LCPI1_3:
 	.long	2097152                         # 0x200000
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	vpandd	.LCPI1_0(%rip){1to8}, %ymm1, %ymm1
 	vpcmpeqd	.LCPI1_1(%rip){1to8}, %ymm1, %k1
 	vorps	.LCPI1_2(%rip){1to8}, %ymm0, %ymm0 {%k1}

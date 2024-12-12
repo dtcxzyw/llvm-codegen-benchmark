@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 25 occurrences:
 ; ceres/optimized/polynomial.cc.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_filmic.c.ll
@@ -9,7 +9,6 @@
 ; graphviz/optimized/imageviewer.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; opencv/optimized/calibinit.cpp.ll
 ; opencv/optimized/cascadedetect.cpp.ll
 ; opencv/optimized/facemarkLBF.cpp.ll
@@ -31,7 +30,7 @@ define double @func0000000000000000(double %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = sitofp i32 %2 to double
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   ret double %4
 }
 
@@ -51,7 +50,7 @@ define double @func0000000000000001(double %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = sitofp i32 %2 to double
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   ret double %4
 }
 
@@ -71,7 +70,7 @@ define double @func0000000000000002(double %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = sitofp i32 %2 to double
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   ret double %4
 }
 
@@ -82,7 +81,7 @@ define double @func0000000000000003(double %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = sitofp i32 %2 to double
-  %4 = fmul double %3, %0
+  %4 = fmul double %0, %3
   ret double %4
 }
 

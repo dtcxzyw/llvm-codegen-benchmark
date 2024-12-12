@@ -4,7 +4,7 @@
 ; openssl/optimized/servername_test-bin-servername_test.ll
 ; openssl/optimized/sslapitest-bin-sslapitest.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000030(i64 %0) #0 {
+define i32 @func0000000000000070(i64 %0) #0 {
 entry:
   %1 = add i64 %0, -9
   %2 = icmp ult i64 %1, -4
@@ -16,24 +16,11 @@ entry:
 ; duckdb/optimized/ub_duckdb_func_table.cpp.ll
 ; openssl/optimized/clienthellotest-bin-clienthellotest.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i64 %0) #0 {
+define i32 @func0000000000000042(i64 %0) #0 {
 entry:
   %1 = icmp eq i64 %0, 517
   %2 = zext i1 %1 to i32
   ret i32 %2
-}
-
-; 3 occurrences:
-; cpython/optimized/unicodectype.ll
-; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
-; openssl/optimized/libdefault-lib-encode_key2blob.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000028(i64 %0) #0 {
-entry:
-  %1 = add nsw i64 %0, -1
-  %2 = icmp ult i64 %1, 2
-  %3 = zext i1 %2 to i32
-  ret i32 %3
 }
 
 ; 6 occurrences:
@@ -53,9 +40,20 @@ entry:
 }
 
 ; 1 occurrences:
+; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000048(i64 %0) #0 {
+entry:
+  %1 = add nsw i64 %0, -3
+  %2 = icmp ult i64 %1, 7
+  %3 = zext i1 %2 to i32
+  ret i32 %3
+}
+
+; 1 occurrences:
 ; cpython/optimized/_pickle.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000038(i64 %0) #0 {
+define i32 @func0000000000000058(i64 %0) #0 {
 entry:
   %1 = icmp ne i64 %0, 1
   %2 = zext i1 %1 to i32

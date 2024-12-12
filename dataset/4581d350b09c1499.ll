@@ -15,7 +15,7 @@
 ; slurm/optimized/controller.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i16 %0, i16 %1) #0 {
+define i1 @func000000000000002c(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 4096
   %3 = icmp ne i16 %2, 0
@@ -24,9 +24,8 @@ entry:
   ret i1 %5
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; clamav/optimized/xlm_extract.c.ll
-; git/optimized/diffcore-rename.ll
 ; icu/optimized/serv.ll
 ; linux/optimized/i2c-core-base.ll
 ; linux/optimized/sock.ll
@@ -42,7 +41,7 @@ entry:
 ; wireshark/optimized/packet-isakmp.c.ll
 ; wireshark/optimized/packet-nhrp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 8
   %3 = icmp eq i16 %2, 0
@@ -57,7 +56,7 @@ entry:
 ; openusd/optimized/patchBuilder.cpp.ll
 ; qemu/optimized/hw_pci_pcie.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i16 %0, i16 %1) #0 {
+define i1 @func000000000000018c(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 32
   %3 = icmp ne i16 %2, 0
@@ -74,7 +73,7 @@ entry:
 ; wireshark/optimized/packet-gsm_a_bssmap.c.ll
 ; wireshark/optimized/packet-uma.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000181(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 1
   %3 = icmp eq i16 %2, 0
@@ -83,18 +82,17 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; 4 occurrences:
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; wasmtime-rs/optimized/2ly4gzztxx8hlwxv.ll
 ; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i16 %0, i16 %1) #0 {
+define i1 @func0000000000000081(i16 %0, i16 %1) #0 {
 entry:
-  %2 = and i16 %1, 896
-  %3 = icmp eq i16 %2, 0
-  %4 = icmp ult i16 %0, 53
+  %2 = and i16 %1, -128
+  %3 = icmp eq i16 %2, 128
+  %4 = icmp ult i16 %0, 2
   %5 = select i1 %3, i1 %4, i1 false
   ret i1 %5
 }
@@ -102,7 +100,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-ieee80211-prism.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i16 %0, i16 %1) #0 {
+define i1 @func000000000000008c(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 1
   %3 = icmp ne i16 %2, 0
@@ -114,7 +112,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/numparse_decimal.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i16 %0, i16 %1) #0 {
+define i1 @func000000000000010c(i16 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 1
   %3 = icmp ne i16 %2, 0

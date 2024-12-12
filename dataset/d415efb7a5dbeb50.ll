@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 22 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; abc/optimized/mpmPre.c.ll
@@ -21,14 +21,13 @@
 ; linux/optimized/8139too.ll
 ; meshlab/optimized/MarchingCubes.cpp.ll
 ; php/optimized/pcre2_study.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
 ; wireshark/optimized/packet-cipmotion.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001f(i32 %0, i32 %1) #0 {
 entry:
-  %2 = shl i32 %1, 10
-  %3 = and i32 %2, 7168
-  %4 = shl nuw nsw i32 %0, 14
+  %2 = shl i32 %1, 18
+  %3 = and i32 %2, 1835008
+  %4 = shl nuw nsw i32 %0, 12
   %5 = or disjoint i32 %4, %3
   ret i32 %5
 }

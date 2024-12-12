@@ -23,17 +23,17 @@ func0000000000000002:                   # @func0000000000000002
 	vfneg.v	v8, v8, v0.t
 	vmflt.vf	v0, v8, fa5
 	ret
+.LCPI3_0:
+	.quad	0xc059000000000000              # double -100
 func0000000000000004:                   # @func0000000000000004
-	fmv.d.x	fa5, zero
+	lui	a0, %hi(.LCPI3_0)
+	fld	fa5, %lo(.LCPI3_0)(a0)
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vfneg.v	v8, v8, v0.t
 	vmfgt.vf	v0, v8, fa5
 	ret
-.LCPI4_0:
-	.quad	0x3d719799812dea11              # double 9.9999999999999998E-13
 func0000000000000005:                   # @func0000000000000005
-	lui	a0, %hi(.LCPI4_0)
-	fld	fa5, %lo(.LCPI4_0)(a0)
+	fli.d	fa5, min
 	vsetivli	zero, 16, e64, m8, ta, mu
 	vfneg.v	v8, v8, v0.t
 	vmfle.vf	v16, v8, fa5

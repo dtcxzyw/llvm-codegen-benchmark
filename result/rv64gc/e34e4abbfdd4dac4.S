@@ -1,44 +1,50 @@
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	andi	a1, a1, 255
 	slli	a1, a1, 8
 	addw	a0, a0, a1
 	sltiu	a0, a0, 1024
 	ret
-func00000000000000fc:                   # @func00000000000000fc
+func0000000000000386:                   # @func0000000000000386
+	andi	a1, a1, 255
+	slli	a1, a1, 6
+	addw	a0, a0, a1
+	slti	a0, a0, 23
+	ret
+func00000000000001ec:                   # @func00000000000001ec
 	andi	a1, a1, 255
 	slli	a1, a1, 4
 	addw	a0, a0, a1
 	addi	a0, a0, -32
 	snez	a0, a0
 	ret
-func00000000000000e8:                   # @func00000000000000e8
+func00000000000001c8:                   # @func00000000000001c8
 	andi	a1, a1, 255
 	slli	a1, a1, 8
 	add	a0, a0, a1
 	srliw	a0, a0, 30
 	snez	a0, a0
 	ret
-func00000000000000d6:                   # @func00000000000000d6
+func00000000000001a6:                   # @func00000000000001a6
 	andi	a1, a1, 255
 	slli	a1, a1, 2
 	addw	a0, a0, a1
 	slti	a0, a0, 129
 	ret
-func00000000000001da:                   # @func00000000000001da
+func00000000000003aa:                   # @func00000000000003aa
 	andi	a1, a1, 255
 	slli	a1, a1, 1
 	addw	a0, a0, a1
 	slti	a0, a0, 3
 	xori	a0, a0, 1
 	ret
-func00000000000001c8:                   # @func00000000000001c8
+func0000000000000388:                   # @func0000000000000388
 	slli	a1, a1, 28
 	addw	a0, a0, a1
 	lui	a1, 524288
 	addiw	a1, a1, -17
 	sltu	a0, a1, a0
 	ret
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000001f8:                   # @func00000000000001f8
 	andi	a1, a1, 255
 	slli	a1, a1, 3
 	add	a0, a0, a1
@@ -46,21 +52,21 @@ func00000000000000f8:                   # @func00000000000000f8
 	sltiu	a0, a0, 5
 	xori	a0, a0, 1
 	ret
-func00000000000000f4:                   # @func00000000000000f4
+func00000000000001f4:                   # @func00000000000001f4
 	andi	a1, a1, 255
 	slli	a1, a1, 3
 	add	a0, a0, a1
 	srliw	a0, a0, 10
 	sltiu	a0, a0, 5
 	ret
-func00000000000000c8:                   # @func00000000000000c8
+func0000000000000188:                   # @func0000000000000188
 	andi	a1, a1, 255
 	slli	a1, a1, 3
 	add	a0, a0, a1
 	srliw	a0, a0, 16
 	snez	a0, a0
 	ret
-func00000000000000da:                   # @func00000000000000da
+func00000000000001aa:                   # @func00000000000001aa
 	andi	a1, a1, 255
 	slli	a1, a1, 1
 	addw	a0, a0, a1

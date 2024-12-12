@@ -4,7 +4,7 @@ func00000000000000c0:                   # @func00000000000000c0
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
 	vptestmd	.LCPI0_0(%rip){1to8}, %ymm2, %k1
-	korb	%k0, %k1, %k0
+	korb	%k1, %k0, %k0
 	vpmovm2d	%k0, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
@@ -14,7 +14,7 @@ func00000000000000c3:                   # @func00000000000000c3
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k0
 	vptestmd	.LCPI1_0(%rip){1to8}, %ymm2, %k1
-	korb	%k0, %k1, %k0
+	korb	%k1, %k0, %k0
 	vpmovm2d	%k0, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
@@ -27,7 +27,7 @@ func0000000000000011:                   # @func0000000000000011
 	vpmovw2m	%xmm1, %k0
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm2, %ymm1
 	vpcmpeqd	.LCPI2_1(%rip){1to8}, %ymm1, %k1
-	korb	%k0, %k1, %k0
+	korb	%k1, %k0, %k0
 	vpmovm2d	%k0, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
@@ -40,7 +40,7 @@ func0000000000000010:                   # @func0000000000000010
 	vpmovw2m	%xmm1, %k0
 	vpandd	.LCPI3_0(%rip){1to8}, %ymm2, %ymm1
 	vpcmpeqd	.LCPI3_1(%rip){1to8}, %ymm1, %k1
-	korb	%k0, %k1, %k0
+	korb	%k1, %k0, %k0
 	vpmovm2d	%k0, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
@@ -53,7 +53,7 @@ func0000000000000013:                   # @func0000000000000013
 	vpmovw2m	%xmm1, %k0
 	vpandd	.LCPI4_0(%rip){1to8}, %ymm2, %ymm1
 	vpcmpeqd	.LCPI4_1(%rip){1to8}, %ymm1, %k1
-	korb	%k0, %k1, %k0
+	korb	%k1, %k0, %k0
 	vpmovm2d	%k0, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq

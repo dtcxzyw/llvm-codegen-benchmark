@@ -4,7 +4,7 @@ func0000000000000006:                   # @func0000000000000006
 	cmpl	$4, %ecx
 	cmovll	%ecx, %eax
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	leal	-10(%rdi), %ecx
 	cmpl	$20, %ecx
 	movl	$5, %eax

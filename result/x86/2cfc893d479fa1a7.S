@@ -1,12 +1,12 @@
-func000000000000006e:                   # @func000000000000006e
+func000000000000006f:                   # @func000000000000006f
 	bzhil	%edx, %esi, %eax
 	leaq	(%rdi,%rax,4), %rax
 	retq
-func000000000000004e:                   # @func000000000000004e
+func000000000000004f:                   # @func000000000000004f
 	bzhil	%edx, %esi, %eax
 	leaq	(%rdi,%rax,4), %rax
 	retq
-func0000000000000046:                   # @func0000000000000046
+func0000000000000047:                   # @func0000000000000047
 	bzhil	%edx, %esi, %eax
 	leaq	(%rdi,%rax,4), %rax
 	retq

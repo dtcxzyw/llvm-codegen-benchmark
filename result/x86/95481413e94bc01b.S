@@ -1,8 +1,8 @@
 func0000000000000008:                   # @func0000000000000008
 	notl	%esi
 	andl	$31, %esi
-	cmpl	%edi, %esi
-	setb	%al
+	cmpl	%esi, %edi
+	seta	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
 	andl	$112, %esi
@@ -13,8 +13,14 @@ func0000000000000001:                   # @func0000000000000001
 func0000000000000006:                   # @func0000000000000006
 	notl	%esi
 	andl	$1, %esi
-	cmpl	%edi, %esi
-	setg	%al
+	cmpl	%esi, %edi
+	setl	%al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	notl	%esi
+	andl	$1, %esi
+	cmpl	%esi, %edi
+	seta	%al
 	retq
 func000000000000000c:                   # @func000000000000000c
 	andl	$4, %esi
@@ -22,21 +28,21 @@ func000000000000000c:                   # @func000000000000000c
 	cmpl	$4, %esi
 	setne	%al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	notl	%esi
 	movzbl	%sil, %eax
-	cmpl	%edi, %eax
-	seta	%al
+	cmpl	%eax, %edi
+	setb	%al
 	retq
-func0000000000000005:                   # @func0000000000000005
+func0000000000000015:                   # @func0000000000000015
 	notl	%esi
 	movzbl	%sil, %eax
-	cmpl	%edi, %eax
-	setae	%al
+	cmpl	%eax, %edi
+	setbe	%al
 	retq
 func000000000000000a:                   # @func000000000000000a
 	notl	%esi
 	movzbl	%sil, %eax
-	cmpl	%edi, %eax
-	setl	%al
+	cmpl	%eax, %edi
+	setg	%al
 	retq

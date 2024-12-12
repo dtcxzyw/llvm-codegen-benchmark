@@ -24,7 +24,7 @@ entry:
   ret i64 %4
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; assimp/optimized/MDLMaterialLoader.cpp.ll
 ; clamav/optimized/LzmaDec.c.ll
 ; darktable/optimized/introspection_bilateral.cc.ll
@@ -35,7 +35,6 @@ entry:
 ; hwloc/optimized/lstopo-lstopo-text.ll
 ; hwloc/optimized/lstopo_no_graphics-lstopo-text.ll
 ; hyperscan/optimized/teddy_engine_description.cpp.ll
-; linux/optimized/intel_audio.ll
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; recastnavigation/optimized/DetourDebugDraw.cpp.ll

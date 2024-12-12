@@ -1,11 +1,9 @@
 
-%struct.XHCIInterrupter.2593270 = type { i32, i32, i32, i32, i32, i32, i32, i8, i8, i64, i32, i32, i8, [5632 x %struct.XHCIEvent.2593248], i32, i32 }
-%struct.XHCIEvent.2593248 = type { i32, i32, i64, i32, i32, i8, i8 }
-%struct.object_slot.2709045 = type { i32, i32, %struct.jv.2709043, %struct.jv.2709043 }
-%struct.jv.2709043 = type { i8, i8, i16, i32, %union.anon.2709044 }
-%union.anon.2709044 = type { ptr }
-%"class.clang::detail::CXXOperatorIdName.2969095" = type { i32, ptr }
-%struct.futureTricks.3297924 = type { i32, i32, [13 x i32], [13 x i32], [13 x i32], [13 x i32] }
+%struct.XHCIInterrupter.2706965 = type { i32, i32, i32, i32, i32, i32, i32, i8, i8, i64, i32, i32, i8, [5632 x %struct.XHCIEvent.2706950], i32, i32 }
+%struct.XHCIEvent.2706950 = type { i32, i32, i64, i32, i32, i8, i8 }
+%struct.object_slot.2821745 = type { i32, i32, %struct.jv.2821743, %struct.jv.2821743 }
+%struct.jv.2821743 = type { i8, i8, i16, i32, %union.anon.2821744 }
+%union.anon.2821744 = type { ptr }
 
 ; 42 occurrences:
 ; linux/optimized/cdrom.ll
@@ -51,23 +49,19 @@
 ; ruby/optimized/compile.ll
 ; wireshark/optimized/packet-umts_rlc.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001c(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 32
-  %3 = getelementptr nusw i8, ptr %0, i64 8
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 8
   %4 = getelementptr [1 x i64], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 
-; 190 occurrences:
+; 203 occurrences:
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/compress.c.ll
 ; abc/optimized/lpkCut.c.ll
 ; abc/optimized/trees.c.ll
-; actix-rs/optimized/22x16e3cd4musvfe.ll
-; actix-rs/optimized/559mdouync0xx14h.ll
-; actix-rs/optimized/u8tt4f5khiooymn.ll
-; cmake/optimized/archive_read_disk_set_standard_lookup.c.ll
 ; cmake/optimized/trees.c.ll
 ; cvc5/optimized/ackermann.cpp.ll
 ; cvc5/optimized/addition.cpp.ll
@@ -176,7 +170,6 @@ entry:
 ; cvc5/optimized/type_matcher.cpp.ll
 ; cvc5/optimized/type_node.cpp.ll
 ; darktable/optimized/metadata.c.ll
-; draco/optimized/float_points_tree_encoder.cc.ll
 ; git/optimized/apply.ll
 ; git/optimized/fsmonitor.ll
 ; git/optimized/object-name.ll
@@ -189,17 +182,35 @@ entry:
 ; icu/optimized/package.ll
 ; icu/optimized/rbnf.ll
 ; icu/optimized/ucnvisci.ll
+; jq/optimized/jv.ll
 ; libjpeg-turbo/optimized/jdhuff.c.ll
 ; libquic/optimized/trees.c.ll
-; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
+; llvm/optimized/ASTReader.cpp.ll
+; llvm/optimized/ASTReaderDecl.cpp.ll
+; llvm/optimized/ASTReaderStmt.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; meshlab/optimized/seam_remover.cpp.ll
 ; nuttx/optimized/fs_foreachinode.c.ll
 ; openjdk/optimized/cmsgamma.ll
+; openspiel/optimized/PlayAnalyser.cpp.ll
+; openspiel/optimized/Scheduler.cpp.ll
+; openspiel/optimized/SolveBoard.cpp.ll
+; openspiel/optimized/amazons.cc.ll
+; openspiel/optimized/bridge.cc.ll
+; openspiel/optimized/bridge_uncontested_bidding.cc.ll
+; openspiel/optimized/chess_board.cc.ll
+; openspiel/optimized/connect_four.cc.ll
+; openspiel/optimized/euchre.cc.ll
+; openspiel/optimized/hearts.cc.ll
+; openspiel/optimized/nine_mens_morris.cc.ll
+; openspiel/optimized/othello.cc.ll
+; openspiel/optimized/phantom_ttt.cc.ll
+; openspiel/optimized/spades.cc.ll
 ; openssl/optimized/libssl-lib-ssl_ciph.ll
 ; openssl/optimized/libssl-shlib-ssl_ciph.ll
+; openusd/optimized/decoder.c.ll
 ; openvdb/optimized/RayTracer.cc.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll
 ; pbrt-v4/optimized/loopsubdiv.cpp.ll
@@ -251,25 +262,40 @@ entry:
 ; wolfssl/optimized/wc_port.c.ll
 ; zlib/optimized/trees.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000001e(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 32
-  %3 = getelementptr nusw i8, ptr %0, i64 1160
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 1160
   %4 = getelementptr nusw [24 x ptr], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 
 ; 4 occurrences:
+; actix-rs/optimized/22x16e3cd4musvfe.ll
+; actix-rs/optimized/559mdouync0xx14h.ll
+; actix-rs/optimized/u8tt4f5khiooymn.ll
+; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001f(ptr %0, i64 %1) #0 {
+entry:
+  %2 = ashr exact i64 %1, 32
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 256
+  %4 = getelementptr nusw nuw [720 x i16], ptr %3, i64 0, i64 %2
+  ret ptr %4
+}
+
+; 5 occurrences:
 ; jq/optimized/jv.ll
 ; linux/optimized/devinet.ll
 ; linux/optimized/neighbour.ll
+; postgres/optimized/tsvector_op.ll
 ; qemu/optimized/hw_usb_hcd-xhci.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000c(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 32
-  %3 = getelementptr nusw i8, ptr %0, i64 29928
-  %4 = getelementptr [16 x %struct.XHCIInterrupter.2593270], ptr %3, i64 0, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 29928
+  %4 = getelementptr [16 x %struct.XHCIInterrupter.2706965], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 
@@ -288,70 +314,32 @@ entry:
   ret ptr %4
 }
 
-; 1 occurrences:
-; jq/optimized/jv.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i64 %1) #0 {
-entry:
-  %2 = ashr exact i64 %1, 32
-  %3 = getelementptr i8, ptr %0, i64 8
-  %4 = getelementptr nusw [0 x %struct.object_slot.2709045], ptr %3, i64 0, i64 %2
-  ret ptr %4
-}
-
-; 6 occurrences:
+; 8 occurrences:
 ; imgui/optimized/imgui.cpp.ll
 ; jq/optimized/jv.ll
 ; libquic/optimized/quic_session.cc.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
-entry:
-  %2 = ashr i64 %1, 32
-  %3 = getelementptr nusw i8, ptr %0, i64 8
-  %4 = getelementptr nusw [0 x %struct.object_slot.2709045], ptr %3, i64 0, i64 %2
-  ret ptr %4
-}
-
-; 18 occurrences:
-; llvm/optimized/ASTReader.cpp.ll
-; llvm/optimized/ASTReaderDecl.cpp.ll
-; llvm/optimized/ASTReaderStmt.cpp.ll
-; openspiel/optimized/PlayAnalyser.cpp.ll
-; openspiel/optimized/Scheduler.cpp.ll
-; openspiel/optimized/SolveBoard.cpp.ll
-; openspiel/optimized/amazons.cc.ll
-; openspiel/optimized/bridge.cc.ll
-; openspiel/optimized/bridge_uncontested_bidding.cc.ll
-; openspiel/optimized/chess_board.cc.ll
-; openspiel/optimized/connect_four.cc.ll
-; openspiel/optimized/euchre.cc.ll
-; openspiel/optimized/hearts.cc.ll
-; openspiel/optimized/nine_mens_morris.cc.ll
-; openspiel/optimized/othello.cc.ll
-; openspiel/optimized/phantom_ttt.cc.ll
-; openspiel/optimized/spades.cc.ll
-; openusd/optimized/decoder.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i64 %1) #0 {
-entry:
-  %2 = ashr exact i64 %1, 32
-  %3 = getelementptr nusw nuw i8, ptr %0, i64 17384
-  %4 = getelementptr nusw [46 x %"class.clang::detail::CXXOperatorIdName.2969095"], ptr %3, i64 0, i64 %2
-  ret ptr %4
-}
-
-; 2 occurrences:
 ; openspiel/optimized/SolveBoard.cpp.ll
 ; openspiel/optimized/morpion_solitaire.cc.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 32
-  %3 = getelementptr nusw nuw i8, ptr %0, i64 4
-  %4 = getelementptr nusw [200 x %struct.futureTricks.3297924], ptr %3, i64 0, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 8
+  %4 = getelementptr nusw [0 x %struct.object_slot.2821745], ptr %3, i64 0, i64 %2
+  ret ptr %4
+}
+
+; 1 occurrences:
+; draco/optimized/float_points_tree_encoder.cc.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001a(ptr %0, i64 %1) #0 {
+entry:
+  %2 = ashr exact i64 %1, 32
+  %3 = getelementptr nusw i8, ptr %0, i64 -12
+  %4 = getelementptr nusw [3 x i32], ptr %3, i64 0, i64 %2
   ret ptr %4
 }
 

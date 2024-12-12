@@ -1,6 +1,12 @@
 
-; 91 occurrences:
+%"class.ue2::CharReach.3849988" = type { %"class.ue2::bitfield.3849989" }
+%"class.ue2::bitfield.3849989" = type { %"struct.std::array.26.3849990" }
+%"struct.std::array.26.3849990" = type { [4 x i64] }
+
+; 96 occurrences:
+; abc/optimized/bmcMaj2.c.ll
 ; abc/optimized/extraUtilMisc.c.ll
+; bullet3/optimized/b3GpuSapBroadphase.ll
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -66,11 +72,14 @@
 ; g2o/optimized/solver_pcg.cpp.ll
 ; g2o/optimized/vertex_ellipse.cpp.ll
 ; gromacs/optimized/forcetable.cpp.ll
+; gromacs/optimized/grompp.cpp.ll
+; libjpeg-turbo/optimized/transupp.c.ll
 ; libsodium/optimized/libsodium_la-pwhash_scryptsalsa208sha256_nosse.ll
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
 ; linux/optimized/cfg.ll
 ; linux/optimized/initramfs.ll
 ; linux/optimized/intel_guc_ads.ll
+; linux/optimized/kyber-iosched.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
@@ -100,37 +109,69 @@ entry:
   ret ptr %5
 }
 
-; 12 occurrences:
-; gromacs/optimized/orires.cpp.ll
+; 9 occurrences:
+; abc/optimized/giaUtil.c.ll
 ; gromacs/optimized/readir.cpp.ll
-; hyperscan/optimized/ng_limex_accel.cpp.ll
-; hyperscan/optimized/ng_mcclellan.cpp.ll
-; hyperscan/optimized/rdfa_merge.cpp.ll
-; hyperscan/optimized/smallwrite_build.cpp.ll
 ; libjpeg-turbo/optimized/transupp.c.ll
 ; llvm/optimized/AutoUpgrade.cpp.ll
 ; openjdk/optimized/mlib_ImageLookUp_Bit.ll
 ; openusd/optimized/resize.c.ll
+; stb/optimized/stb_connected_components.c.ll
 ; wolfssl/optimized/aes.c.ll
 ; zxing/optimized/ODMultiUPCEANReader.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000001f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %2, 1
-  %4 = getelementptr nusw i32, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i32, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %0
+  ret ptr %5
+}
+
+; 1 occurrences:
+; gromacs/optimized/orires.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001e(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = or disjoint i64 %2, 3
+  %4 = getelementptr nusw nuw float, ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 %0
   ret ptr %5
 }
 
-; 2 occurrences:
-; meshlab/optimized/cube_style_precomputation.cpp.ll
+; 1 occurrences:
 ; meshlab/optimized/fit_rotations_l1.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001c(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = or disjoint i64 %2, 2
+  %4 = getelementptr nusw nuw double, ptr %1, i64 %3
+  %5 = getelementptr double, ptr %4, i64 %0
+  ret ptr %5
+}
+
+; 1 occurrences:
+; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000018(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = or disjoint i64 %2, 2
-  %4 = getelementptr nusw double, ptr %1, i64 %3
-  %5 = getelementptr double, ptr %4, i64 %0
+  %3 = or disjoint i64 %2, 1
+  %4 = getelementptr nusw i32, ptr %1, i64 %3
+  %5 = getelementptr i32, ptr %4, i64 %0
+  ret ptr %5
+}
+
+; 4 occurrences:
+; hyperscan/optimized/ng_limex_accel.cpp.ll
+; hyperscan/optimized/ng_mcclellan.cpp.ll
+; hyperscan/optimized/rdfa_merge.cpp.ll
+; hyperscan/optimized/smallwrite_build.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001b(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = or disjoint i64 %2, 1
+  %4 = getelementptr nusw %"class.ue2::CharReach.3849988", ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %0
   ret ptr %5
 }
 

@@ -49,9 +49,10 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; hdf5/optimized/H5Ctag.c.ll
 ; hdf5/optimized/H5Iint.c.ll
+; lvgl/optimized/lv_imagebutton.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000020(i32 %0, i64 %1) #0 {
 entry:
@@ -59,6 +60,26 @@ entry:
   %3 = and i32 %2, 16711680
   %4 = add i32 %0, -1640531527
   %5 = add i32 %4, %3
+  ret i32 %5
+}
+
+; 9 occurrences:
+; jemalloc/optimized/pac.ll
+; jemalloc/optimized/pac.pic.ll
+; jemalloc/optimized/pac.sym.ll
+; llvm/optimized/BugReporterVisitors.cpp.ll
+; llvm/optimized/PathDiagnostic.cpp.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; ozz-animation/optimized/gltf2ozz.cc.ll
+; redis/optimized/pac.ll
+; redis/optimized/pac.sym.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000005(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = and i32 %2, 1
+  %4 = add nsw i32 %0, 1
+  %5 = add nsw i32 %4, %3
   ret i32 %5
 }
 
@@ -82,25 +103,6 @@ entry:
   %3 = and i32 %2, 2
   %4 = add nsw i32 %0, -6
   %5 = add nuw nsw i32 %4, %3
-  ret i32 %5
-}
-
-; 8 occurrences:
-; jemalloc/optimized/pac.ll
-; jemalloc/optimized/pac.pic.ll
-; jemalloc/optimized/pac.sym.ll
-; llvm/optimized/BugReporterVisitors.cpp.ll
-; llvm/optimized/PathDiagnostic.cpp.ll
-; ozz-animation/optimized/gltf2ozz.cc.ll
-; redis/optimized/pac.ll
-; redis/optimized/pac.sym.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000005(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = and i32 %2, 3
-  %4 = add nsw i32 %0, -3
-  %5 = add nsw i32 %4, %3
   ret i32 %5
 }
 

@@ -6,7 +6,7 @@
 define i8 @func000000000000003a(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 12
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = lshr i32 %3, 10
   %5 = trunc nuw i32 %4 to i8
   %6 = and i8 %5, 63
@@ -22,7 +22,7 @@ entry:
 define i8 @func0000000000000038(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 10
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = lshr i32 %3, 12
   %5 = trunc i32 %4 to i8
   %6 = and i8 %5, 63
@@ -47,8 +47,22 @@ entry:
 define i8 @func000000000000003c(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 10
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = lshr exact i32 %3, 6
+  %5 = trunc i32 %4 to i8
+  %6 = and i8 %5, 63
+  ret i8 %6
+}
+
+; 2 occurrences:
+; clamav/optimized/str.c.ll
+; cpython/optimized/assemble.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000000(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 4
+  %3 = or i32 %0, %2
+  %4 = lshr i32 %3, 6
   %5 = trunc i32 %4 to i8
   %6 = and i8 %5, 63
   ret i8 %6
@@ -60,21 +74,8 @@ entry:
 define i8 @func0000000000000030(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 4
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = lshr i32 %3, 6
-  %5 = trunc i32 %4 to i8
-  %6 = and i8 %5, 63
-  ret i8 %6
-}
-
-; 1 occurrences:
-; cpython/optimized/assemble.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000000(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl i32 %1, 1
-  %3 = or i32 %2, %0
-  %4 = lshr i32 %3, 18
   %5 = trunc i32 %4 to i8
   %6 = and i8 %5, 63
   ret i8 %6

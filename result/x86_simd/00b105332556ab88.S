@@ -52,3 +52,54 @@ func0000000000000009:                   # @func0000000000000009
 	vandpd	.LCPI4_1(%rip){1to4}, %ymm0, %ymm0
 	vorpd	.LCPI4_2(%rip){1to4}, %ymm0, %ymm0 {%k1}
 	retq
+.LCPI5_0:
+	.long	16                              # 0x10
+.LCPI5_1:
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+.LCPI5_2:
+	.quad	6                               # 0x6
+.LCPI5_3:
+	.byte	0                               # 0x0
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+	.byte	255                             # 0xff
+func0000000000000002:                   # @func0000000000000002
+	vpcmpeqd	.LCPI5_0(%rip){1to4}, %xmm1, %k1
+	vandpd	.LCPI5_3(%rip){1to4}, %ymm0, %ymm0
+	vorpd	.LCPI5_2(%rip){1to4}, %ymm0, %ymm0 {%k1}
+	retq

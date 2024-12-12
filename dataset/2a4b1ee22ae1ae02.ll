@@ -5,16 +5,17 @@
 ; ruby/optimized/pack.ll
 ; zxing/optimized/zueci.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i1 %0, i8 %1) #0 {
+define i1 @func0000000000000048(i1 %0, i8 %1) #0 {
 entry:
   %2 = freeze i8 %1
   %3 = add nsw i8 %2, -9
   %4 = icmp ult i8 %3, 2
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 21 occurrences:
+; 23 occurrences:
+; boost/optimized/static_string.ll
 ; cmake/optimized/escape.c.ll
 ; cmake/optimized/urlapi.c.ll
 ; curl/optimized/libcurl_la-escape.ll
@@ -25,6 +26,7 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hermes/optimized/Inlining.cpp.ll
 ; linux/optimized/namei_msdos.ll
+; llvm/optimized/AttributorAttributes.cpp.ll
 ; luau/optimized/isocline.c.ll
 ; nix/optimized/names.ll
 ; opencv/optimized/persistence_yml.cpp.ll
@@ -42,7 +44,7 @@ entry:
   %2 = freeze i8 %1
   %3 = add i8 %2, -48
   %4 = icmp ult i8 %3, 10
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

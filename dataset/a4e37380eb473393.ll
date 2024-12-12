@@ -1,10 +1,9 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; libsodium/optimized/libavx2_la-argon2-fill-block-avx2.ll
 ; libsodium/optimized/libavx512f_la-argon2-fill-block-avx512f.ll
 ; libsodium/optimized/libsodium_la-argon2-fill-block-ref.ll
 ; libsodium/optimized/libssse3_la-argon2-fill-block-ssse3.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; minetest/optimized/CNullDriver.cpp.ll
 ; qemu/optimized/hw_intc_riscv_imsic.c.ll
 ; Function Attrs: nounwind
@@ -12,7 +11,7 @@ define i32 @func0000000000000020(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
-  %5 = mul i32 %4, %1
+  %5 = mul i32 %1, %4
   %6 = add i32 %5, %0
   ret i32 %6
 }
@@ -24,7 +23,7 @@ define i32 @func0000000000000021(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
-  %5 = mul i32 %4, %1
+  %5 = mul i32 %1, %4
   %6 = add nsw i32 %5, %0
   ret i32 %6
 }
@@ -42,12 +41,12 @@ define i32 @func0000000000000045(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 8
   %4 = trunc i64 %3 to i32
-  %5 = mul nsw i32 %4, %1
+  %5 = mul nsw i32 %1, %4
   %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 
-; 36 occurrences:
+; 35 occurrences:
 ; gromacs/optimized/pull.cpp.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
@@ -61,7 +60,6 @@ entry:
 ; llvm/optimized/MachineVerifier.cpp.ll
 ; llvm/optimized/PrologEpilogInserter.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVRegisterInfo.cpp.ll
 ; llvm/optimized/RegAllocFast.cpp.ll
@@ -89,7 +87,7 @@ define i32 @func0000000000000040(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 3
   %4 = trunc i64 %3 to i32
-  %5 = mul i32 %4, %1
+  %5 = mul i32 %1, %4
   %6 = add i32 %5, %0
   ret i32 %6
 }
@@ -114,8 +112,8 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 3
   %4 = trunc i64 %3 to i32
-  %5 = mul i32 %4, %1
-  %6 = add i32 %5, %0
+  %5 = mul i32 %1, %4
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -126,7 +124,7 @@ define i32 @func0000000000000004(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = trunc i64 %3 to i32
-  %5 = mul nsw i32 %4, %1
+  %5 = mul nsw i32 %1, %4
   %6 = add i32 %5, %0
   ret i32 %6
 }
@@ -142,7 +140,7 @@ define i32 @func0000000000000005(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 3
   %4 = trunc i64 %3 to i32
-  %5 = mul nsw i32 %4, %1
+  %5 = mul nsw i32 %1, %4
   %6 = add nsw i32 %5, %0
   ret i32 %6
 }
@@ -154,7 +152,7 @@ define i32 @func000000000000000f(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 2
   %4 = trunc i64 %3 to i32
-  %5 = mul nuw nsw i32 %4, %1
+  %5 = mul nuw nsw i32 %1, %4
   %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }
@@ -166,8 +164,8 @@ define i32 @func0000000000000007(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 2
   %4 = trunc i64 %3 to i32
-  %5 = mul nsw i32 %4, %1
-  %6 = add nuw nsw i32 %5, %0
+  %5 = mul nsw i32 %1, %4
+  %6 = add nuw nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -199,7 +197,7 @@ define i32 @func0000000000000025(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
-  %5 = mul nsw i32 %4, %1
+  %5 = mul nsw i32 %1, %4
   %6 = add nsw i32 %5, %0
   ret i32 %6
 }
@@ -211,8 +209,8 @@ define i32 @func0000000000000044(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 2
   %4 = trunc i64 %3 to i32
-  %5 = mul nsw i32 %4, %1
-  %6 = add i32 %5, %0
+  %5 = mul nsw i32 %1, %4
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -223,7 +221,7 @@ define i32 @func0000000000000027(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
-  %5 = mul nsw i32 %4, %1
+  %5 = mul nsw i32 %1, %4
   %6 = add nuw nsw i32 %5, %0
   ret i32 %6
 }

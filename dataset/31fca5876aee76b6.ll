@@ -5,7 +5,7 @@
 ; php/optimized/parse_posix.ll
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000021(i32 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
   %4 = icmp eq i32 %0, 0
@@ -17,7 +17,7 @@ entry:
 ; postgres/optimized/dict_thesaurus.ll
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000002a(i32 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %1, %2
   %4 = icmp sgt i32 %0, 0
@@ -37,7 +37,7 @@ entry:
 ; grpc/optimized/xds_credentials.cc.ll
 ; grpc/optimized/xds_server_config_fetcher.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000081(i32 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp uge ptr %1, %2
   %4 = icmp eq i32 %0, 0

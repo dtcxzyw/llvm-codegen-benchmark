@@ -34,3 +34,9 @@ func000000000000000d:                   # @func000000000000000d
 	vadd.vv	v8, v10, v8
 	vadd.vi	v8, v8, 1
 	ret
+func0000000000000007:                   # @func0000000000000007
+	vsetivli	zero, 16, e16, m2, ta, ma
+	vadd.vv	v8, v10, v8
+	li	a0, -48
+	vadd.vx	v8, v8, a0
+	ret

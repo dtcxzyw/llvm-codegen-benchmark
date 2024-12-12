@@ -17,8 +17,7 @@ entry:
   ret i32 %5
 }
 
-; 7 occurrences:
-; linux/optimized/i915_cmd_parser.ll
+; 6 occurrences:
 ; linux/optimized/kallsyms.ll
 ; postgres/optimized/integerset.ll
 ; postgres/optimized/nbtsearch.ll

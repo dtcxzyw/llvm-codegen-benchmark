@@ -1,5 +1,5 @@
 
-%struct.Answer.2591651 = type { i8, i8 }
+%struct.Answer.2705487 = type { i8, i8 }
 
 ; 48 occurrences:
 ; bullet3/optimized/b3DynamicBvhBroadphase.ll
@@ -15,7 +15,6 @@
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_developability.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
@@ -40,6 +39,7 @@
 ; meshlab/optimized/seams.cpp.ll
 ; meshlab/optimized/shell.cpp.ll
 ; nori/optimized/layout.cpp.ll
+; openspiel/optimized/dou_dizhu.cc.ll
 ; openspiel/optimized/spades.cc.ll
 ; openssl/optimized/libcrypto-lib-err.ll
 ; openssl/optimized/libcrypto-lib-err_blocks.ll
@@ -51,12 +51,12 @@
 ; recastnavigation/optimized/CrowdTool.cpp.ll
 ; redis/optimized/latency.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000001e(ptr %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = srem i32 %2, 16
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 512
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 512
   %6 = getelementptr nusw [16 x i32], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
@@ -66,13 +66,13 @@ entry:
 ; postgres/optimized/walsender.ll
 ; qemu/optimized/hw_usb_dev-smartcard-reader.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000c(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = srem i32 %2, 128
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 74720
-  %6 = getelementptr [128 x %struct.Answer.2591651], ptr %5, i64 0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 74720
+  %6 = getelementptr [128 x %struct.Answer.2705487], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 
@@ -82,27 +82,13 @@ entry:
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_trioptimize.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000e(ptr %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 1
   %3 = srem i32 %2, 3
   %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 180
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 180
   %6 = getelementptr nusw [3 x [256 x float]], ptr %5, i64 0, i64 %4
-  ret ptr %6
-}
-
-; 2 occurrences:
-; openspiel/optimized/dou_dizhu.cc.ll
-; openspiel/optimized/spades.cc.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1) #0 {
-entry:
-  %2 = add nsw i32 %1, 2
-  %3 = srem i32 %2, 4
-  %4 = sext i32 %3 to i64
-  %5 = getelementptr nusw nuw i8, ptr %0, i64 120
-  %6 = getelementptr nusw [4 x i32], ptr %5, i64 0, i64 %4
   ret ptr %6
 }
 

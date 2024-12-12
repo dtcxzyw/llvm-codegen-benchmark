@@ -1,9 +1,10 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; assimp/optimized/LWSLoader.cpp.ll
 ; assimp/optimized/MD5Parser.cpp.ll
 ; assimp/optimized/NFFLoader.cpp.ll
+; boost/optimized/to_chars.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i32 %0, i32 %1) #0 {
@@ -23,7 +24,7 @@ entry:
 define i64 @func000000000000007f(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 60
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   %5 = mul nuw nsw i64 %4, 1000000
   ret i64 %5
@@ -35,7 +36,7 @@ entry:
 define i64 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 3
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = zext i32 %3 to i64
   %5 = mul nuw i64 %4, 4294967297
   ret i64 %5

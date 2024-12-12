@@ -13,8 +13,7 @@ entry:
   ret i1 %7
 }
 
-; 4 occurrences:
-; proj/optimized/factory.cpp.ll
+; 3 occurrences:
 ; proj/optimized/singleoperation.cpp.ll
 ; proj/optimized/transformation.cpp.ll
 ; quantlib/optimized/gausslobattointegral.ll
@@ -25,33 +24,6 @@ entry:
   %4 = fcmp une double %1, 0.000000e+00
   %5 = or i1 %4, %3
   %6 = fcmp une double %0, 0.000000e+00
-  %7 = or i1 %5, %6
-  ret i1 %7
-}
-
-; 2 occurrences:
-; stat-rs/optimized/1957ju1ns40544yq.ll
-; stat-rs/optimized/rkxxfn3f5mhspne.ll
-; Function Attrs: nounwind
-define i1 @func0000000000002294(double %0, double %1, double %2) #0 {
-entry:
-  %3 = fcmp oeq double %2, 0x7FF0000000000000
-  %4 = fcmp ole double %1, 0.000000e+00
-  %5 = or i1 %4, %3
-  %6 = fcmp ole double %0, 0.000000e+00
-  %7 = or i1 %6, %5
-  ret i1 %7
-}
-
-; 1 occurrences:
-; stat-rs/optimized/rkxxfn3f5mhspne.ll
-; Function Attrs: nounwind
-define i1 @func0000000000002664(double %0, double %1, double %2) #0 {
-entry:
-  %3 = fcmp ueq double %2, 0x7FF0000000000000
-  %4 = fcmp ueq double %1, 0x7FF0000000000000
-  %5 = or i1 %4, %3
-  %6 = fcmp ueq double %0, 0x7FF0000000000000
   %7 = or i1 %5, %6
   ret i1 %7
 }
@@ -120,32 +92,6 @@ entry:
   %4 = fcmp oeq double %1, 0x7FF0000000000000
   %5 = or i1 %4, %3
   %6 = fcmp une double %0, 0.000000e+00
-  %7 = or i1 %5, %6
-  ret i1 %7
-}
-
-; 1 occurrences:
-; opencv/optimized/hough.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000002aa8(double %0, double %1, double %2) #0 {
-entry:
-  %3 = fcmp ole double %2, 0.000000e+00
-  %4 = fcmp ole double %1, 0.000000e+00
-  %5 = or i1 %4, %3
-  %6 = fcmp ole double %0, 0.000000e+00
-  %7 = or i1 %5, %6
-  ret i1 %7
-}
-
-; 1 occurrences:
-; typst-rs/optimized/m09o5qr68f5khss.ll
-; Function Attrs: nounwind
-define i1 @func0000000000002264(double %0, double %1, double %2) #0 {
-entry:
-  %3 = fcmp oeq double %2, 0.000000e+00
-  %4 = fcmp ueq double %1, 0x7FF0000000000000
-  %5 = or i1 %4, %3
-  %6 = fcmp ueq double %0, 0x7FF0000000000000
   %7 = or i1 %5, %6
   ret i1 %7
 }

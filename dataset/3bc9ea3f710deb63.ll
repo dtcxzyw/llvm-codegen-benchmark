@@ -1,5 +1,5 @@
 
-; 116 occurrences:
+; 115 occurrences:
 ; abc/optimized/deflate.c.ll
 ; cmake/optimized/deflate.c.ll
 ; gromacs/optimized/deflate.c.ll
@@ -114,41 +114,39 @@
 ; mold/optimized/output-chunks.cc.S390X.cc.ll
 ; mold/optimized/output-chunks.cc.SPARC64.cc.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
-; wireshark/optimized/decode_as_utils.c.ll
 ; zlib/optimized/deflate.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000064(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = zext i32 %1 to i64
   %5 = add nuw nsw i64 %4, %3
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; proxygen/optimized/QPACKDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b8(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000168(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = zext i32 %1 to i64
   %5 = add nuw nsw i64 %4, %3
-  %6 = icmp ult i64 %5, %0
+  %6 = icmp ugt i64 %0, %5
   ret i1 %6
 }
 
-; 3 occurrences:
-; clamav/optimized/pe.c.ll
+; 2 occurrences:
 ; clamav/optimized/petite.c.ll
 ; clamav/optimized/upx.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000035(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000075(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = zext i32 %1 to i64
   %5 = add nuw nsw i64 %4, %3
-  %6 = icmp uge i64 %5, %0
+  %6 = icmp samesign ule i64 %0, %5
   ret i1 %6
 }
 
@@ -156,12 +154,12 @@ entry:
 ; clamav/optimized/pe.c.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000078(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = zext i32 %1 to i64
   %5 = add nuw nsw i64 %4, %3
-  %6 = icmp ult i64 %5, %0
+  %6 = icmp samesign ugt i64 %0, %5
   ret i1 %6
 }
 
@@ -169,48 +167,60 @@ entry:
 ; linux/optimized/filter.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001e4(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = zext nneg i32 %1 to i64
   %5 = add nuw nsw i64 %4, %3
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; lodepng/optimized/lodepng.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001e1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = zext nneg i32 %1 to i64
   %5 = add nuw nsw i64 %4, %3
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; llvm/optimized/Compiler.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000039(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000069(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = zext i32 %1 to i64
   %5 = add nuw nsw i64 %4, %3
-  %6 = icmp ule i64 %5, %0
+  %6 = icmp uge i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; llvm/optimized/BitcodeWriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = zext i32 %1 to i64
   %5 = add nuw nsw i64 %4, %3
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; wireshark/optimized/decode_as_utils.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000074(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = zext i32 %1 to i64
+  %5 = add nuw nsw i64 %4, %3
+  %6 = icmp samesign ult i64 %0, %5
   ret i1 %6
 }
 

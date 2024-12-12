@@ -1,8 +1,9 @@
 
-; 199 occurrences:
+; 204 occurrences:
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; abc/optimized/kitDsd.c.ll
+; boost/optimized/ipc_reliable_message_queue.ll
 ; clamav/optimized/macho.c.ll
 ; cmake/optimized/archive_pathmatch.c.ll
 ; cmake/optimized/cmFileCommand.cxx.ll
@@ -12,6 +13,8 @@
 ; fmt/optimized/compile-test.cc.ll
 ; freetype/optimized/cff.c.ll
 ; freetype/optimized/ftbase.c.ll
+; freetype/optimized/type1.c.ll
+; freetype/optimized/type1cid.c.ll
 ; git/optimized/pathspec.ll
 ; git/optimized/push.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
@@ -101,6 +104,9 @@
 ; luajit/optimized/lj_strfmt.ll
 ; luajit/optimized/lj_strfmt_dyn.ll
 ; luau/optimized/IrLoweringA64.cpp.ll
+; lvgl/optimized/lv_scale.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
+; lvgl/optimized/lv_text.ll
 ; memcached/optimized/crc32c.ll
 ; memcached/optimized/memcached-crc32c.ll
 ; memcached/optimized/memcached_debug-crc32c.ll
@@ -186,7 +192,6 @@
 ; tev/optimized/Common.cpp.ll
 ; verilator/optimized/V3Clean.cpp.ll
 ; verilator/optimized/V3Expand.cpp.ll
-; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wireshark/optimized/packet-dcerpc-lsa.c.ll
 ; wireshark/optimized/packet-dcerpc-witness.c.ll
@@ -252,18 +257,18 @@ entry:
 ; openjdk/optimized/sharedRuntimeTrans.ll
 ; qemu/optimized/tcg-op-ldst.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %0, i32 %1, i32 %2
   %4 = and i32 %3, 7
-  %5 = icmp ult i32 %4, 3
+  %5 = icmp samesign ult i32 %4, 3
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; linux/optimized/pci.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %0, i32 %1, i32 %2
   %4 = and i32 %3, 248

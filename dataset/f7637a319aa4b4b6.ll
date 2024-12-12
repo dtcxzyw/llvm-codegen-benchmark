@@ -30,25 +30,9 @@
 define i64 @func0000000000000000(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = lshr i64 %4, 3
-  %6 = add i64 %5, %0
-  ret i64 %6
-}
-
-; 5 occurrences:
-; opencv/optimized/softfloat.cpp.ll
-; qemu/optimized/source_s_approxRecip32_1.c.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
-; spike/optimized/s_approxRecip32_1.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
-; Function Attrs: nounwind
-define i64 @func000000000000001b(i64 %0, i64 %1, i16 %2) #0 {
-entry:
-  %3 = zext i16 %2 to i64
-  %4 = mul nuw nsw i64 %3, %1
-  %5 = lshr i64 %4, 25
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -60,9 +44,9 @@ entry:
 define i64 @func0000000000000003(i64 %0, i64 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i64
-  %4 = mul i64 %3, %1
+  %4 = mul i64 %1, %3
   %5 = lshr i64 %4, 3
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 

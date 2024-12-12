@@ -48,7 +48,7 @@ entry:
   ret i32 %2
 }
 
-; 89 occurrences:
+; 87 occurrences:
 ; abc/optimized/extraBddCas.c.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/b3CpuNarrowPhase.ll
@@ -95,6 +95,7 @@ entry:
 ; meshlab/optimized/glarea.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
+; mitsuba3/optimized/rgb2spec.c.ll
 ; opencv/optimized/detect_board.cpp.ll
 ; opencv/optimized/detect_board_charuco.cpp.ll
 ; opencv/optimized/detect_diamonds.cpp.ll
@@ -106,8 +107,6 @@ entry:
 ; openssl/optimized/dtlstest-bin-ssltestlib.ll
 ; openssl/optimized/fatalerrtest-bin-ssltestlib.ll
 ; openssl/optimized/lhash_test-bin-lhash_test.ll
-; openssl/optimized/libcrypto-lib-dh_gen.ll
-; openssl/optimized/libcrypto-shlib-dh_gen.ll
 ; openssl/optimized/quic_multistream_test-bin-ssltestlib.ll
 ; openssl/optimized/quic_newcid_test-bin-ssltestlib.ll
 ; openssl/optimized/quic_srt_gen_test-bin-ssltestlib.ll
@@ -135,18 +134,17 @@ entry:
 ; php/optimized/math.ll
 ; postgres/optimized/ruleutils.ll
 ; postgres/optimized/utf8_and_gb18030.ll
-; qemu/optimized/hw_misc_mchp_pfsoc_dmc.c.ll
 ; qemu/optimized/hw_scsi_mptsas.c.ll
 ; sentencepiece/optimized/time.cc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0) #0 {
 entry:
   %1 = add nuw nsw i32 %0, 1
-  %2 = urem i32 %1, 10
+  %2 = urem i32 %1, 3
   ret i32 %2
 }
 
-; 81 occurrences:
+; 80 occurrences:
 ; abc/optimized/rwrUtil.c.ll
 ; clamav/optimized/bytecode_vm.c.ll
 ; cmake/optimized/archive_string.c.ll
@@ -203,7 +201,6 @@ entry:
 ; opencv/optimized/guided_filter.cpp.ll
 ; opencv/optimized/ts_gtest.cpp.ll
 ; openjdk/optimized/barrierSetNMethod.ll
-; openssl/optimized/libtestutil-lib-random.ll
 ; openusd/optimized/lz4.cpp.ll
 ; openusd/optimized/triRefinement.cpp.ll
 ; pbrt-v4/optimized/loopsubdiv.cpp.ll
@@ -231,8 +228,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0) #0 {
 entry:
-  %1 = add i32 %0, 28
-  %2 = urem i32 %1, 31
+  %1 = add i32 %0, 1
+  %2 = urem i32 %1, 255
   ret i32 %2
 }
 

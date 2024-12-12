@@ -67,7 +67,7 @@ define i64 @func000000000000002e(i64 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = shl nuw i32 %3, 24
-  %5 = or disjoint i32 %4, %1
+  %5 = or disjoint i32 %1, %4
   %6 = zext nneg i32 %5 to i64
   %7 = sub nuw i64 %0, %6
   ret i64 %7

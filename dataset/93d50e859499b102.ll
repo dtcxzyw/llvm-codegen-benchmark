@@ -1,5 +1,5 @@
 
-; 217 occurrences:
+; 230 occurrences:
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; arrow/optimized/array_base.cc.ll
 ; arrow/optimized/scalar.cc.ll
@@ -53,6 +53,8 @@
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; libwebp/optimized/sharpyuv_gamma.c.ll
 ; lightgbm/optimized/metadata.cpp.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_svg_render.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; meshlab/optimized/plylib.cpp.ll
 ; minetest/optimized/CGUITTFont.cpp.ll
@@ -206,6 +208,17 @@
 ; xgboost/optimized/gradient_index.cc.ll
 ; xgboost/optimized/iterative_dmatrix.cc.ll
 ; xgboost/optimized/quantile.cc.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/49ldufv0nkpmlikvem3q45q0g.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/6i9q21vg747q3orsxnutiwubi.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
+; zed-rs/optimized/diex23lur9mz31ml2mnxprojh.ll
 ; zxing/optimized/ODCodabarReader.cpp.ll
 ; zxing/optimized/ODCode128Reader.cpp.ll
 ; zxing/optimized/ODCode39Reader.cpp.ll

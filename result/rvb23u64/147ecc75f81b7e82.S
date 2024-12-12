@@ -1,4 +1,4 @@
-func00000000000001ea:                   # @func00000000000001ea
+func00000000000001ff:                   # @func00000000000001ff
 	sh1add	a2, a2, a2
 	slliw	a2, a2, 1
 	add	a0, a0, a1

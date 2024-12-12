@@ -13,9 +13,25 @@ entry:
 }
 
 ; 7 occurrences:
+; linux/optimized/maple_tree.ll
+; opencv/optimized/bilateral_filter.dispatch.cpp.ll
+; opencv/optimized/joint_bilateral_filter.cpp.ll
+; opencv/optimized/lkpyramid.cpp.ll
+; opencv/optimized/rlof_localflow.cpp.ll
+; qemu/optimized/target_riscv_pmp.c.ll
+; zed-rs/optimized/9lyxlodfxr6ds1lof2oq9jgs7.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003f(i32 %0) #0 {
+entry:
+  %1 = shl i32 %0, 4
+  %2 = add i32 %1, 24
+  %3 = zext nneg i32 %2 to i64
+  ret i64 %3
+}
+
+; 6 occurrences:
 ; cmake/optimized/zstd_lazy.c.ll
 ; g2o/optimized/edge_se2_lotsofxy.cpp.ll
-; linux/optimized/net-procfs.ll
 ; node/optimized/libnode.env.ll
 ; nuklear/optimized/unity.c.ll
 ; openjdk/optimized/dict.ll
@@ -106,21 +122,6 @@ entry:
   %1 = shl i32 %0, 1
   %2 = add i32 %1, 2047
   %3 = zext i32 %2 to i64
-  ret i64 %3
-}
-
-; 5 occurrences:
-; linux/optimized/maple_tree.ll
-; opencv/optimized/bilateral_filter.dispatch.cpp.ll
-; opencv/optimized/joint_bilateral_filter.cpp.ll
-; opencv/optimized/lkpyramid.cpp.ll
-; opencv/optimized/rlof_localflow.cpp.ll
-; Function Attrs: nounwind
-define i64 @func000000000000003f(i32 %0) #0 {
-entry:
-  %1 = shl i32 %0, 1
-  %2 = add i32 %1, 3
-  %3 = zext nneg i32 %2 to i64
   ret i64 %3
 }
 

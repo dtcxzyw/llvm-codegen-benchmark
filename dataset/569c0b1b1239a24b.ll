@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 27 occurrences:
 ; linux/optimized/hda_intel.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; mitsuba3/optimized/aov.cpp.ll
@@ -11,7 +11,6 @@
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/moment.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/xml.cpp.ll
 ; tev/optimized/Channel.cpp.ll
 ; tev/optimized/ClipboardImageLoader.cpp.ll
@@ -36,39 +35,20 @@ entry:
   ret i1 %2
 }
 
-; 7 occurrences:
+; 4 occurrences:
 ; libjpeg-turbo/optimized/jmemmgr.c.ll
-; linux/optimized/intel_dpll.ll
-; linux/optimized/ioctl.ll
-; llvm/optimized/RDFGraph.cpp.ll
 ; openssl/optimized/libcrypto-lib-ecp_nistz256.ll
 ; openssl/optimized/libcrypto-shlib-ecp_nistz256.ll
 ; postgres/optimized/spell.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0) #0 {
+define i1 @func0000000000000028(i64 %0) #0 {
 entry:
   %1 = or disjoint i64 %0, 6
   %2 = icmp ugt i64 %1, 22369621
   ret i1 %2
 }
 
-; 59 occurrences:
-; abseil-cpp/optimized/flat_hash_map_test.cc.ll
-; abseil-cpp/optimized/raw_hash_set_test.cc.ll
-; ceres/optimized/schur_eliminator_2_2_2.cc.ll
-; ceres/optimized/schur_eliminator_2_2_3.cc.ll
-; ceres/optimized/schur_eliminator_2_2_4.cc.ll
-; ceres/optimized/schur_eliminator_2_2_d.cc.ll
-; ceres/optimized/schur_eliminator_2_4_3.cc.ll
-; ceres/optimized/schur_eliminator_2_4_4.cc.ll
-; ceres/optimized/schur_eliminator_2_4_6.cc.ll
-; ceres/optimized/schur_eliminator_2_4_8.cc.ll
-; ceres/optimized/schur_eliminator_2_4_9.cc.ll
-; ceres/optimized/schur_eliminator_2_4_d.cc.ll
-; ceres/optimized/schur_eliminator_4_4_2.cc.ll
-; ceres/optimized/schur_eliminator_4_4_3.cc.ll
-; ceres/optimized/schur_eliminator_4_4_4.cc.ll
-; ceres/optimized/schur_eliminator_4_4_d.cc.ll
+; 39 occurrences:
 ; crow/optimized/example_ws.cpp.ll
 ; darktable/optimized/introspection_levels.c.ll
 ; delta-rs/optimized/3qvofkyb7k5flefa.ll
@@ -77,14 +57,10 @@ entry:
 ; harfbuzz/optimized/hb-ot-cff1-table.cc.ll
 ; harfbuzz/optimized/hb-ot-cff2-table.cc.ll
 ; linux/optimized/intel_dpll.ll
-; meshlab/optimized/arap.cpp.ll
-; meshlab/optimized/cube_style_precomputation.cpp.ll
-; meshlab/optimized/filter_parametrization.cpp.ll
 ; minetest/optimized/mapblock.cpp.ll
 ; opencv/optimized/tflite_importer.cpp.ll
 ; openjdk/optimized/hb-ot-cff1-table.ll
 ; openjdk/optimized/hb-ot-cff2-table.ll
-; postgres/optimized/rowtypes.ll
 ; rust-analyzer-rs/optimized/11fzjzs7q1iz2s6j.ll
 ; rust-analyzer-rs/optimized/12c5ozyvkyoo7zj1.ll
 ; rust-analyzer-rs/optimized/13cccnalsixxllfg.ll
@@ -108,38 +84,93 @@ entry:
 ; rust-analyzer-rs/optimized/n2ltxs27br91fc6.ll
 ; rust-analyzer-rs/optimized/p80zqc6dxbxvppz.ll
 ; sqlite/optimized/sqlite3.ll
-; typst-rs/optimized/22a0ijn9jg8ilzgs.ll
-; typst-rs/optimized/40w6rezair915kkd.ll
-; typst-rs/optimized/4p30esqzpn2o5olu.ll
 ; wasmtime-rs/optimized/3tddp02mhmdocq2m.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
+; zed-rs/optimized/c3nozc4nsp9d7jgiddflq9oh8.ll
+; zed-rs/optimized/diggdkpukg0xn23g7ivuh3jfw.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0) #0 {
+define i1 @func0000000000000034(i64 %0) #0 {
 entry:
   %1 = or disjoint i64 %0, 3
-  %2 = icmp ult i64 %1, 4095
+  %2 = icmp samesign ult i64 %1, 4095
   ret i1 %2
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; cpython/optimized/dictobject.ll
-; php/optimized/zend_smart_str.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; qemu/optimized/accel_tcg_user-exec.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0) #0 {
+define i1 @func0000000000000014(i64 %0) #0 {
 entry:
   %1 = or i64 %0, -4096
-  %2 = icmp ult i64 %1, -8
+  %2 = icmp samesign ult i64 %1, -8
+  ret i1 %2
+}
+
+; 1 occurrences:
+; php/optimized/zend_smart_str.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i64 %0) #0 {
+entry:
+  %1 = or i64 %0, 4095
+  %2 = icmp ult i64 %1, 2097151
   ret i1 %2
 }
 
 ; 1 occurrences:
 ; git/optimized/unpack-objects.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0) #0 {
+define i1 @func0000000000000018(i64 %0) #0 {
 entry:
   %1 = or i64 %0, -9223372036854775808
-  %2 = icmp ugt i64 %1, -13
+  %2 = icmp samesign ugt i64 %1, -13
+  ret i1 %2
+}
+
+; 5 occurrences:
+; linux/optimized/intel_dpll.ll
+; linux/optimized/ioctl.ll
+; llvm/optimized/RDFGraph.cpp.ll
+; zed-rs/optimized/97oknpq36u72fa2khd3i9ovxc.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i64 %0) #0 {
+entry:
+  %1 = or disjoint i64 %0, 31
+  %2 = icmp samesign ugt i64 %1, 65536
+  ret i1 %2
+}
+
+; 23 occurrences:
+; abseil-cpp/optimized/flat_hash_map_test.cc.ll
+; abseil-cpp/optimized/raw_hash_set_test.cc.ll
+; ceres/optimized/schur_eliminator_2_2_2.cc.ll
+; ceres/optimized/schur_eliminator_2_2_3.cc.ll
+; ceres/optimized/schur_eliminator_2_2_4.cc.ll
+; ceres/optimized/schur_eliminator_2_2_d.cc.ll
+; ceres/optimized/schur_eliminator_2_4_3.cc.ll
+; ceres/optimized/schur_eliminator_2_4_4.cc.ll
+; ceres/optimized/schur_eliminator_2_4_6.cc.ll
+; ceres/optimized/schur_eliminator_2_4_8.cc.ll
+; ceres/optimized/schur_eliminator_2_4_9.cc.ll
+; ceres/optimized/schur_eliminator_2_4_d.cc.ll
+; ceres/optimized/schur_eliminator_4_4_2.cc.ll
+; ceres/optimized/schur_eliminator_4_4_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_4.cc.ll
+; ceres/optimized/schur_eliminator_4_4_d.cc.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
+; postgres/optimized/rowtypes.ll
+; typst-rs/optimized/22a0ijn9jg8ilzgs.ll
+; typst-rs/optimized/40w6rezair915kkd.ll
+; typst-rs/optimized/4p30esqzpn2o5olu.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000024(i64 %0) #0 {
+entry:
+  %1 = or disjoint i64 %0, 1
+  %2 = icmp ult i64 %1, 17
   ret i1 %2
 }
 

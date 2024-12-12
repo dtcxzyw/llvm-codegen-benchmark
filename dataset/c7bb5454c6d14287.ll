@@ -79,7 +79,7 @@
 ; lightgbm/optimized/tree.cpp.ll
 ; spdlog/optimized/bundled_fmtlib_format.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %2, 1
   %4 = icmp eq i64 %1, 0

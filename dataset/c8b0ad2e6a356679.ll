@@ -1,5 +1,5 @@
 
-; 47 occurrences:
+; 48 occurrences:
 ; abseil-cpp/optimized/bernoulli_distribution_test.cc.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/bit_gen_ref_test.cc.ll
@@ -29,6 +29,7 @@
 ; actix-rs/optimized/520p8qtoxfmkvgyc.ll
 ; actix-rs/optimized/5k5ycrtlwwxldg7.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
+; boost/optimized/src.ll
 ; delta-rs/optimized/1rw3q64nilk4jthd.ll
 ; grpc/optimized/fault_injection_filter.cc.ll
 ; influxdb-rs/optimized/54bldmpi534adbqh.ll
@@ -51,7 +52,7 @@
 define i64 @func0000000000000000(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc i128 %1 to i64
-  %3 = xor i64 %2, %0
+  %3 = xor i64 %0, %2
   ret i64 %3
 }
 
@@ -90,7 +91,7 @@ entry:
 define i64 @func0000000000000002(i64 %0, i128 %1) #0 {
 entry:
   %2 = trunc nuw i128 %1 to i64
-  %3 = xor i64 %2, %0
+  %3 = xor i64 %0, %2
   ret i64 %3
 }
 

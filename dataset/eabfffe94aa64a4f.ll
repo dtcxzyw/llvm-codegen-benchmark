@@ -1,8 +1,9 @@
 
-; 20 occurrences:
+; 21 occurrences:
 ; abc/optimized/cuddRef.c.ll
 ; abc/optimized/ioWriteBook.c.ll
 ; abseil-cpp/optimized/uniform_int_distribution_test.cc.ll
+; boost/optimized/area.ll
 ; brotli/optimized/bit_cost.c.ll
 ; cpython/optimized/floatobject.ll
 ; cpython/optimized/longobject.ll
@@ -28,7 +29,7 @@ entry:
   ret double %3
 }
 
-; 25 occurrences:
+; 24 occurrences:
 ; faiss/optimized/PolysemousTraining.cpp.ll
 ; gromacs/optimized/gmx_rms.cpp.ll
 ; hermes/optimized/String.cpp.ll
@@ -36,7 +37,6 @@ entry:
 ; lightgbm/optimized/objective_function.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/texture_optimization.cpp.ll
 ; mitsuba3/optimized/rgb2spec_opt.cpp.ll
 ; mitsuba3/optimized/spectrum.cpp.ll

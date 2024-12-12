@@ -1,10 +1,13 @@
 
-; 18 occurrences:
+; 21 occurrences:
 ; cpython/optimized/_datetimemodule.ll
 ; graphviz/optimized/constraint.c.ll
 ; linux/optimized/drm_modes.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
+; lvgl/optimized/lv_indev_scroll.ll
+; lvgl/optimized/lv_obj_pos.ll
+; lvgl/optimized/lv_obj_scroll.ll
 ; meshlab/optimized/filter_dock_dialog.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; qemu/optimized/ui_console.c.ll
@@ -23,11 +26,11 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = sdiv i32 %3, 4
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
-; 25 occurrences:
+; 30 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; cpython/optimized/_datetimemodule.ll
@@ -35,6 +38,11 @@ entry:
 ; gromacs/optimized/domdec.cpp.ll
 ; gromacs/optimized/shake.cpp.ll
 ; icu/optimized/calendar.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_demo_widgets.ll
+; lvgl/optimized/lv_flex.ll
+; lvgl/optimized/lv_grid.ll
 ; minetest/optimized/CGUIButton.cpp.ll
 ; minetest/optimized/guiButton.cpp.ll
 ; minetest/optimized/guiTable.cpp.ll
@@ -58,13 +66,16 @@ define i32 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %1, %2
   %4 = sdiv i32 %3, 64
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
-; 17 occurrences:
+; 20 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; icu/optimized/uset.ll
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_checkbox.ll
+; lvgl/optimized/lv_slider.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; minetest/optimized/CGUIEditBox.cpp.ll
 ; minetest/optimized/CGUISpriteBank.cpp.ll
@@ -89,13 +100,15 @@ entry:
   ret i32 %5
 }
 
-; 11 occurrences:
+; 13 occurrences:
 ; cpython/optimized/_datetimemodule.ll
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_indev_scroll.ll
+; lvgl/optimized/lv_obj_pos.ll
 ; meshlab/optimized/glarea.cpp.ll
 ; minetest/optimized/CGUIButton.cpp.ll
 ; minetest/optimized/CGUICheckBox.cpp.ll
 ; minetest/optimized/guiButton.cpp.ll
-; nuttx/optimized/lib_strftime.c.ll
 ; opencv/optimized/tree.cpp.ll
 ; stockfish/optimized/search.ll
 ; wireshark/optimized/packet-mpeg-pes.c.ll

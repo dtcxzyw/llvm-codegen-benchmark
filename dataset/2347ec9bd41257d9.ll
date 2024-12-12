@@ -1,5 +1,5 @@
 
-; 39 occurrences:
+; 38 occurrences:
 ; darktable/optimized/Cr2Decoder.cpp.ll
 ; darktable/optimized/FiffParser.cpp.ll
 ; grpc/optimized/party.cc.ll
@@ -13,7 +13,6 @@
 ; llvm/optimized/AccelTable.cpp.ll
 ; llvm/optimized/DIE.cpp.ll
 ; qemu/optimized/target_riscv_csr.c.ll
-; qemu/optimized/target_riscv_fpu_helper.c.ll
 ; spike/optimized/csrs.ll
 ; spike/optimized/fadd_h.ll
 ; spike/optimized/fcvt_bf16_s.ll
@@ -47,23 +46,16 @@ entry:
   ret i64 %2
 }
 
-; 12 occurrences:
+; 5 occurrences:
 ; duckdb/optimized/ub_duckdb_execution_index_art.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/StatepointLowering.cpp.ll
-; spike/optimized/f16_to_i32.ll
-; spike/optimized/f16_to_i32_r_minMag.ll
-; spike/optimized/f16_to_i64.ll
-; spike/optimized/f16_to_i64_r_minMag.ll
-; spike/optimized/f16_to_ui32.ll
-; spike/optimized/f16_to_ui32_r_minMag.ll
-; spike/optimized/f16_to_ui64.ll
-; spike/optimized/f16_to_ui64_r_minMag.ll
 ; wireshark/optimized/packet-netflow.c.ll
+; zed-rs/optimized/53iexoleo5ntv1dnjbqpooo1x.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i16 %0) #0 {
 entry:
-  %1 = or i16 %0, 1024
+  %1 = or i16 %0, 1
   %2 = zext i16 %1 to i64
   ret i64 %2
 }

@@ -18,7 +18,7 @@
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000318(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000c38(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %0, 0
   %3 = icmp eq i32 %1, 0

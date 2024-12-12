@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/CastExpr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000020a(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, 10
   %3 = add i64 %2, 48

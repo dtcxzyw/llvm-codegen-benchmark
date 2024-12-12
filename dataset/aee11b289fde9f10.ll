@@ -10,11 +10,12 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nsw i64 -1, %3
   %5 = xor i64 %4, -1
-  %6 = and i64 %5, %0
+  %6 = and i64 %0, %5
   ret i64 %6
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/src.ll
 ; postgres/optimized/d2s.ll
 ; postgres/optimized/d2s_shlib.ll
 ; postgres/optimized/d2s_srv.ll
@@ -26,7 +27,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nsw i64 -1, %3
   %5 = xor i64 %4, -1
-  %6 = and i64 %5, %0
+  %6 = and i64 %0, %5
   ret i64 %6
 }
 

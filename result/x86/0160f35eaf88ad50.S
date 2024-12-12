@@ -3,6 +3,6 @@ func0000000000000004:                   # @func0000000000000004
 	movl	$1, %eax
 	cmovel	%edx, %eax
 	addl	%edi, %eax
-	cmpl	%edi, %eax
-	seta	%al
+	cmpl	%eax, %edi
+	setb	%al
 	retq

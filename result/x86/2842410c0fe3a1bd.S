@@ -6,10 +6,9 @@ func0000000000000004:                   # @func0000000000000004
 	movl	$-22, %eax
 	cmovael	%ecx, %eax
 	retq
-func0000000000000014:                   # @func0000000000000014
-	addl	$-218, %edi
+func0000000000000024:                   # @func0000000000000024
+	decl	%edi
 	xorl	%eax, %eax
-	cmpw	$3, %di
-	setae	%al
-	leal	13(,%rax,4), %eax
+	cmpw	$2, %di
+	adcl	$4435, %eax                     # imm = 0x1153
 	retq

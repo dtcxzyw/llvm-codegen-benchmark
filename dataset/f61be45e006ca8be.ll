@@ -1,5 +1,5 @@
 
-%struct.TCGTemp.2593549 = type { i48, i64, ptr, i64, ptr, i64, ptr }
+%struct.TCGTemp.2707225 = type { i48, i64, ptr, i64, ptr, i64, ptr }
 
 ; 1 occurrences:
 ; qemu/optimized/tcg.c.ll
@@ -9,7 +9,7 @@ entry:
   %2 = lshr i32 %1, 28
   %3 = and i32 %2, 3
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %struct.TCGTemp.2593549, ptr %0, i64 %4
+  %5 = getelementptr %struct.TCGTemp.2707225, ptr %0, i64 %4
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }
@@ -37,12 +37,12 @@ entry:
 ; z3/optimized/smt_context.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000006(ptr %0, i32 %1) #0 {
+define i64 @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 28
   %3 = and i32 %2, 8
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   %6 = ptrtoint ptr %5 to i64
   ret i64 %6
 }

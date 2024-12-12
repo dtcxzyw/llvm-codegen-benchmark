@@ -6,19 +6,19 @@
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i32 %0, i1 %1, i8 %2) #0 {
+define i1 @func000000000000022a(i32 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i32 %0 to i8
   %4 = select i1 %1, i8 %3, i8 %2
   %5 = zext i8 %4 to i32
-  %6 = icmp slt i32 %5, %0
+  %6 = icmp sgt i32 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i32 %0, i1 %1, i8 %2) #0 {
+define i1 @func0000000000000208(i32 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = trunc nuw i32 %0 to i8
   %4 = select i1 %1, i8 %3, i8 %2

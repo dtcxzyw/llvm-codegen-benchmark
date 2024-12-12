@@ -1,22 +1,10 @@
 
-; 1 occurrences:
-; meilisearch-rs/optimized/4p6euf9p6jz4j36m.ll
-; Function Attrs: nounwind
-define i1 @func000000000000004c(i1 %0, i64 %1, i8 %2) #0 {
-entry:
-  %3 = icmp ult i8 %2, 3
-  %4 = icmp ne i64 %1, 3
-  %5 = select i1 %4, i1 %3, i1 false
-  %6 = select i1 %5, i1 %0, i1 false
-  ret i1 %6
-}
-
 ; 3 occurrences:
 ; linux/optimized/scsi_lib.ll
 ; qemu/optimized/linux-user_elfload.c.ll
 ; redis/optimized/linenoise.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i64 %1, i8 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 127
   %4 = icmp ne i64 %1, -1
@@ -28,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; rust-analyzer-rs/optimized/k5mtltw7nxmadpl.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i64 %1, i8 %2) #0 {
+define i1 @func000000000000018c(i1 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 3
   %4 = icmp ne i64 %1, -9223372036854775806
@@ -40,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/jpeg.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000028(i1 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = icmp ugt i64 %1, 1
@@ -61,7 +49,7 @@ entry:
 ; tev/optimized/ExrImageLoader.cpp.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 1
   %4 = icmp eq i64 %1, 1970

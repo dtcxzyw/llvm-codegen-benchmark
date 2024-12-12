@@ -1,59 +1,37 @@
-func0000000000000071:                   // @func0000000000000071
+func00000000000000e1:                   // @func00000000000000e1
 // %bb.0:                               // %entry
-	mul	v3.4s, v3.4s, v3.4s
-	mul	v2.4s, v2.4s, v2.4s
-	orr	v0.16b, v2.16b, v0.16b
-	orr	v1.16b, v3.16b, v1.16b
-	cmeq	v1.4s, v1.4s, #0
-	cmeq	v0.4s, v0.4s, #0
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	mul	w8, w1, w1
+	orr	w8, w0, w8
+	cmp	w8, #0
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000078:                   // @func0000000000000078
+func00000000000000f8:                   // @func00000000000000f8
 // %bb.0:                               // %entry
-	mla	v1.4s, v3.4s, v3.4s
-	mla	v0.4s, v2.4s, v2.4s
-	movi	v2.4s, #9
-	cmhi	v1.4s, v1.4s, v2.4s
-	cmhi	v0.4s, v0.4s, v2.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	madd	w8, w1, w1, w0
+	cmp	w8, #9
+	cset	w0, hi
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	mul	v2.4s, v2.4s, v2.4s
-	mul	v3.4s, v3.4s, v3.4s
-	neg	v0.4s, v0.4s
-	neg	v1.4s, v1.4s
-	cmeq	v1.4s, v3.4s, v1.4s
-	cmeq	v0.4s, v2.4s, v0.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	mul	w8, w1, w1
+	cmn	w0, w8
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000074:                   // @func0000000000000074
+func00000000000000f4:                   // @func00000000000000f4
 // %bb.0:                               // %entry
-	mla	v1.4s, v3.4s, v3.4s
-	mla	v0.4s, v2.4s, v2.4s
-	movi	v2.4s, #36
-	cmhi	v1.4s, v2.4s, v1.4s
-	cmhi	v0.4s, v2.4s, v0.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	madd	w8, w1, w1, w0
+	cmp	w8, #36
+	cset	w0, lo
 	ret
                                         // -- End function
-func000000000000007c:                   // @func000000000000007c
+func00000000000000ec:                   // @func00000000000000ec
 // %bb.0:                               // %entry
-	mul	v3.4s, v3.4s, v3.4s
-	mul	v2.4s, v2.4s, v2.4s
-	orr	v0.16b, v2.16b, v0.16b
-	orr	v1.16b, v3.16b, v1.16b
-	cmeq	v1.4s, v1.4s, #0
-	cmeq	v0.4s, v0.4s, #0
-	uzp1	v0.8h, v0.8h, v1.8h
-	mvn	v0.16b, v0.16b
-	xtn	v0.8b, v0.8h
+	mul	w8, w1, w1
+	orr	w8, w0, w8
+	cmp	w8, #0
+	cset	w0, ne
 	ret
                                         // -- End function

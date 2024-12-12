@@ -9,6 +9,13 @@ func0000000000000002:                   # @func0000000000000002
 	cltq
 	addq	%rdi, %rax
 	retq
+func0000000000000003:                   # @func0000000000000003
+	movl	$52, %eax
+	subl	%esi, %eax
+	cltq
+	shlq	$4, %rax
+	addq	%rdi, %rax
+	retq
 func0000000000000006:                   # @func0000000000000006
 	negl	%esi
 	movslq	%esi, %rax

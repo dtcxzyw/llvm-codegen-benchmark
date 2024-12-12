@@ -41,7 +41,7 @@
 define i32 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = icmp eq i64 %3, 0
   %5 = select i1 %4, i32 -100, i32 0
   ret i32 %5
@@ -53,7 +53,7 @@ entry:
 define i32 @func0000000000000004(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = icmp ult i64 %3, 32768
   %5 = select i1 %4, i32 3, i32 6
   ret i32 %5
@@ -63,10 +63,10 @@ entry:
 ; opencv/optimized/array.cpp.ll
 ; z3/optimized/mpz.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i64 %0, i32 %1) #0 {
+define i32 @func0000000000000026(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = mul nsw i64 %2, %0
+  %3 = mul nsw i64 %0, %2
   %4 = icmp slt i64 %3, 0
   %5 = select i1 %4, i32 -1, i32 1
   ret i32 %5

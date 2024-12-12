@@ -76,3 +76,12 @@ func0000000000000006:                   # @func0000000000000006
 	vmovdqu8	%xmm0, %xmm0 {%k1} {z}
 	vzeroupper
 	retq
+.LCPI6_0:
+	.long	1                               # 0x1
+func0000000000000018:                   # @func0000000000000018
+	vpcmpnleud	.LCPI6_0(%rip){1to8}, %ymm1, %k1
+	vmovdqu8	%xmm0, %xmm0 {%k1} {z}
+	vzeroupper
+	retq
+func0000000000000014:                   # @func0000000000000014
+	retq

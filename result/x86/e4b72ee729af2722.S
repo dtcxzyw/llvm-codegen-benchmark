@@ -1,8 +1,8 @@
-func0000000000000008:                   # @func0000000000000008
+func000000000000000c:                   # @func000000000000000c
 	movslq	%edi, %rax
 	leaq	16(%rsi,%rax,8), %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+func000000000000000e:                   # @func000000000000000e
 	movslq	%edi, %rax
 	leaq	72(%rsi,%rax,8), %rax
 	retq

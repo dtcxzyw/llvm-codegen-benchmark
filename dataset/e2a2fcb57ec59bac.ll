@@ -308,13 +308,13 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001f8(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = mul nuw nsw i64 %2, 10
   %4 = and i64 %0, 4294967294
   %5 = add nuw nsw i64 %4, %3
-  %6 = icmp ugt i64 %5, 2147483647
+  %6 = icmp samesign ugt i64 %5, 2147483647
   ret i1 %6
 }
 
@@ -632,13 +632,13 @@ entry:
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0, i32 %1) #0 {
+define i1 @func00000000000001f4(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = mul nuw nsw i64 %2, 10
   %4 = and i64 %0, 4294967294
   %5 = add nuw nsw i64 %4, %3
-  %6 = icmp ult i64 %5, 2147483648
+  %6 = icmp samesign ult i64 %5, 2147483648
   ret i1 %6
 }
 

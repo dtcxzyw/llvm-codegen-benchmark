@@ -11,7 +11,7 @@
 ; gromacs/optimized/fft.cpp.ll
 ; gromacs/optimized/gmx_energy.cpp.ll
 ; gromacs/optimized/gmx_traj.cpp.ll
-; libquic/optimized/cmp.c.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; oiio/optimized/targainput.cpp.ll
 ; openblas/optimized/dgbbrd.c.ll
 ; opencv/optimized/rapid.cpp.ll
@@ -186,20 +186,8 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
-; clamav/optimized/yara_exec.c.ll
-; linux/optimized/acpi_video.ll
-; wireshark/optimized/proto.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
-entry:
-  %2 = add i32 %1, -1
-  %3 = sext i32 %2 to i64
-  %4 = sub i64 %3, %0
-  ret i64 %4
-}
-
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/conversion.ll
 ; hermes/optimized/OSCompatPosix.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i32 %1) #0 {
@@ -210,8 +198,21 @@ entry:
   ret i64 %4
 }
 
-; 6 occurrences:
-; draco/optimized/symbol_encoding.cc.ll
+; 4 occurrences:
+; clamav/optimized/yara_exec.c.ll
+; linux/optimized/acpi_video.ll
+; wireshark/optimized/packet_list.cpp.ll
+; wireshark/optimized/proto.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
+entry:
+  %2 = add i32 %1, -1
+  %3 = sext i32 %2 to i64
+  %4 = sub i64 %3, %0
+  ret i64 %4
+}
+
+; 5 occurrences:
 ; faiss/optimized/lattice_Zn.cpp.ll
 ; gromacs/optimized/forcetable.cpp.ll
 ; gromacs/optimized/redistribute.cpp.ll
@@ -220,7 +221,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i32 %1) #0 {
 entry:
-  %2 = add i32 %1, 1
+  %2 = add i32 %1, 2
   %3 = sext i32 %2 to i64
   %4 = sub nuw nsw i64 %3, %0
   ret i64 %4

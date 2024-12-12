@@ -5,7 +5,7 @@ func0000000000000001:                   # @func0000000000000001
 	testl	%edi, %edi
 	cmovel	%esi, %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	shrl	$4, %esi
 	andl	$7, %esi
 	xorl	%eax, %eax
@@ -31,4 +31,11 @@ func000000000000000c:                   # @func000000000000000c
 	movzwl	%si, %eax
 	testl	%edi, %edi
 	cmovel	%edi, %eax
+	retq
+func0000000000000004:                   # @func0000000000000004
+	shrl	$5, %esi
+	andl	$63, %esi
+	cmpl	$2048, %edi                     # imm = 0x800
+	movl	$64, %eax
+	cmovbl	%esi, %eax
 	retq

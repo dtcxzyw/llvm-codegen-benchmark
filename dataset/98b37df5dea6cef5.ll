@@ -1,5 +1,7 @@
 
-; 17 occurrences:
+; 19 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; cmake/optimized/ftp.c.ll
 ; curl/optimized/libcurl_la-ftp.ll
 ; git/optimized/update-ref.ll

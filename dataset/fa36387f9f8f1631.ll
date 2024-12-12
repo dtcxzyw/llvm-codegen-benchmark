@@ -3,9 +3,9 @@
 ; clamav/optimized/pdf.c.ll
 ; openssl/optimized/http_test-bin-http_test.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000206(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000606(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 11
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 11
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %1, %4
   %6 = add i64 %5, %0
@@ -18,9 +18,9 @@ entry:
 ; git/optimized/diff.ll
 ; lief/optimized/rsa.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000201(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000601(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 1
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %1, %4
   %6 = sub i64 0, %0
@@ -46,9 +46,9 @@ entry:
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000204(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000604(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 7
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 7
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %1, %4
   %6 = add i64 %5, %0

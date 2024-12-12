@@ -8,31 +8,43 @@
 ; openjdk/optimized/rewriter.ll
 ; z3/optimized/smt_clause.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000068(ptr %0, i32 %1) #0 {
+define i64 @func000000000000007c(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 5
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 5
   %5 = ptrtoint ptr %4 to i64
   %6 = add i64 %5, 3
   ret i64 %6
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; clamav/optimized/mew.c.ll
 ; clamav/optimized/upack.c.ll
 ; clamav/optimized/wwunpack.c.ll
 ; hyperscan/optimized/castlecompile.cpp.ll
 ; hyperscan/optimized/mcclellancompile.cpp.ll
-; redis/optimized/listpack.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(ptr %0, i32 %1) #0 {
+define i64 @func000000000000003c(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 80
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 80
   %5 = ptrtoint ptr %4 to i64
   %6 = add i64 %5, 4
+  ret i64 %6
+}
+
+; 1 occurrences:
+; redis/optimized/listpack.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000038(ptr %0, i32 %1) #0 {
+entry:
+  %2 = zext i32 %1 to i64
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
+  %4 = getelementptr nusw i8, ptr %3, i64 -1
+  %5 = ptrtoint ptr %4 to i64
+  %6 = add i64 %5, 1
   ret i64 %6
 }
 

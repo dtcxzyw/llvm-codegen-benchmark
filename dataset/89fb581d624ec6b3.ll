@@ -1,5 +1,6 @@
 
-; 96 occurrences:
+; 94 occurrences:
+; boost/optimized/ipc_reliable_message_queue.ll
 ; cmake/optimized/archive_write_disk_posix.c.ll
 ; cmake/optimized/fs.c.ll
 ; cmake/optimized/pipe.c.ll
@@ -29,9 +30,7 @@
 ; linux/optimized/af_unix.ll
 ; linux/optimized/cistpl.ll
 ; linux/optimized/direct-io.ll
-; linux/optimized/file_table.ll
 ; linux/optimized/g4x_dp.ll
-; linux/optimized/hdac_regmap.ll
 ; linux/optimized/hooks.ll
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/intel_display_power.ll
@@ -57,7 +56,6 @@
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; llvm/optimized/LangOptions.cpp.ll
 ; llvm/optimized/MachOObjectFile.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/TargetLoweringObjectFileImpl.cpp.ll
 ; llvm/optimized/ValueTracking.cpp.ll
@@ -104,7 +102,7 @@ entry:
   ret i32 %2
 }
 
-; 17 occurrences:
+; 15 occurrences:
 ; cpython/optimized/dtoa.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; hermes/optimized/dtoa.c.ll
@@ -113,8 +111,6 @@ entry:
 ; hwloc/optimized/topology-x86.ll
 ; jq/optimized/jv_dtoa.ll
 ; libquic/optimized/dtoa.cc.ll
-; linux/optimized/fib_trie.ll
-; linux/optimized/gen8_engine_cs.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; openjdk/optimized/countbitsnode.ll
 ; php/optimized/zend_strtod.ll
@@ -174,7 +170,7 @@ entry:
   ret i32 %2
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; openusd/optimized/stbImage.cpp.ll
@@ -182,7 +178,6 @@ entry:
 ; postgres/optimized/array_selfuncs.ll
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
-; wireshark/optimized/packet-iso14443.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000011(i32 %0) #0 {
 entry:
@@ -191,10 +186,9 @@ entry:
   ret i32 %2
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/netdev.ll
-; linux/optimized/umh.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0) #0 {
 entry:

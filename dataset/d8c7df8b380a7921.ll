@@ -1,12 +1,12 @@
 
-; 26 occurrences:
+; 27 occurrences:
+; boost/optimized/mo_lambda.ll
 ; darktable/optimized/metadata.c.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll
 ; just-rs/optimized/53slus9exfz9w045.ll
 ; libquic/optimized/a_int.c.ll
 ; llvm/optimized/ASTWriterDecl.cpp.ll
 ; llvm/optimized/ASTWriterStmt.cpp.ll
-; llvm/optimized/COFFImportFile.cpp.ll
 ; llvm/optimized/ExprCXX.cpp.ll
 ; llvm/optimized/MCExpr.cpp.ll
 ; llvm/optimized/ParseDecl.cpp.ll
@@ -26,11 +26,12 @@
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/5tjk7umffytrthtuv35pacndm.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000018(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = zext i1 %3 to i64
   ret i64 %4
 }
@@ -59,32 +60,17 @@ entry:
 ; rust-analyzer-rs/optimized/4fo6e09jeifrbt47.ll
 ; rust-analyzer-rs/optimized/5dzancx749u0myyk.ll
 ; rustfmt-rs/optimized/1mznjg1e09hdetpr.ll
-; spike/optimized/f64_classify.ll
 ; spike/optimized/s_roundPackToF128.ll
 ; spike/optimized/s_roundPackToI64.ll
 ; spike/optimized/s_roundToI32.ll
 ; spike/optimized/s_roundToI64.ll
 ; spike/optimized/s_roundToUI32.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/21d8bsf2bcvltxgcdrjl7oqzs.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 2
-  %3 = and i1 %2, %0
-  %4 = zext i1 %3 to i64
-  ret i64 %4
-}
-
-; 5 occurrences:
-; cmake/optimized/connect.c.ll
-; curl/optimized/libcurl_la-connect.ll
-; llvm/optimized/ASTWriterDecl.cpp.ll
-; llvm/optimized/ASTWriterStmt.cpp.ll
-; llvm/optimized/ExprCXX.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000010(i1 %0, i64 %1) #0 {
-entry:
-  %2 = icmp ugt i64 %1, 600
   %3 = and i1 %2, %0
   %4 = zext i1 %3 to i64
   ret i64 %4
@@ -114,6 +100,19 @@ entry:
 define i64 @func000000000000000c(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp slt i64 %1, 0
+  %3 = and i1 %0, %2
+  %4 = zext i1 %3 to i64
+  ret i64 %4
+}
+
+; 3 occurrences:
+; llvm/optimized/ASTWriterDecl.cpp.ll
+; llvm/optimized/ASTWriterStmt.cpp.ll
+; llvm/optimized/ExprCXX.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000010(i1 %0, i64 %1) #0 {
+entry:
+  %2 = icmp ugt i64 %1, 7
   %3 = and i1 %2, %0
   %4 = zext i1 %3 to i64
   ret i64 %4

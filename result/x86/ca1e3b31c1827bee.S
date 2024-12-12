@@ -1,7 +1,7 @@
-func000000000000006a:                   # @func000000000000006a
+func00000000000000ca:                   # @func00000000000000ca
 	movzbl	%sil, %eax
-	cmpl	%edi, %eax
-	setg	%cl
+	cmpl	%eax, %edi
+	setl	%cl
 	testl	%edi, %edi
 	setg	%al
 	andb	%cl, %al

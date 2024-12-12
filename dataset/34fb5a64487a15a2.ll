@@ -3,7 +3,7 @@
 ; ruby/optimized/parse.ll
 ; velox/optimized/HashStringAllocator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000028c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp sgt i64 %3, %0
@@ -16,7 +16,7 @@ entry:
 ; cmake/optimized/archive_read.c.ll
 ; ruby/optimized/ripper.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000034c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000a8c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 %1, %2
   %4 = icmp sgt i64 %3, %0
@@ -30,7 +30,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-a_d2i_fp.ll
 ; openssl/optimized/libcrypto-shlib-a_d2i_fp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000510(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000001210(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nuw i64 %1, %2
   %4 = icmp ugt i64 %3, 2147483647
@@ -62,7 +62,7 @@ entry:
 ; mold/optimized/cmdline.cc.X86_64.cc.ll
 ; node/optimized/libnode.node_blob.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000042(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp eq i64 %3, -1
@@ -74,7 +74,7 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/AsyncDataCache.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000016c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002cc(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp slt i64 %3, 1
@@ -86,7 +86,7 @@ entry:
 ; 1 occurrences:
 ; abseil-cpp/optimized/parse.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000102(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp eq i64 %3, -1
@@ -98,7 +98,7 @@ entry:
 ; 1 occurrences:
 ; wolfssl/optimized/asn.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000194(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp sgt i64 %3, %0
@@ -110,7 +110,7 @@ entry:
 ; 1 occurrences:
 ; libwebp/optimized/demux.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000108(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp ult i64 %3, 8

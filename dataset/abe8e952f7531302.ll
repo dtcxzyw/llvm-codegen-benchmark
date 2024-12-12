@@ -1,5 +1,5 @@
 
-; 341 occurrences:
+; 339 occurrences:
 ; clamav/optimized/infblock.c.ll
 ; flac/optimized/stream_decoder.c.ll
 ; fmt/optimized/chrono-test.cc.ll
@@ -96,7 +96,6 @@
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
-; linux/optimized/balloc.ll
 ; linux/optimized/extents.ll
 ; linux/optimized/extents_status.ll
 ; linux/optimized/indirect.ll
@@ -112,7 +111,6 @@
 ; llvm/optimized/SerializedDiagnosticPrinter.cpp.ll
 ; llvm/optimized/TestModuleFileExtension.cpp.ll
 ; llvm/optimized/WebAssemblyDisassemblerEmitter.cpp.ll
-; miniaudio/optimized/unity.c.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -187,7 +185,6 @@
 ; postgres/optimized/hashovfl.ll
 ; proxygen/optimized/HTTPBinaryCodec.cpp.ll
 ; qemu/optimized/target_riscv_translate.c.ll
-; qemu/optimized/target_riscv_vector_helper.c.ll
 ; quickjs/optimized/quickjs.ll
 ; rocksdb/optimized/block.cc.ll
 ; rocksdb/optimized/block_based_table_iterator.cc.ll
@@ -341,6 +338,7 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; wireshark/optimized/tvbuff_lznt1.c.ll
+; z3/optimized/pb2bv_rewriter.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -360,12 +358,23 @@ entry:
   ret i1 %4
 }
 
-; 35 occurrences:
+; 3 occurrences:
+; linux/optimized/balloc.ll
+; miniaudio/optimized/unity.c.ll
+; qemu/optimized/target_riscv_vector_helper.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %1, %2
+  %4 = icmp samesign ult i32 %3, %0
+  ret i1 %4
+}
+
+; 34 occurrences:
 ; clamav/optimized/unarj.c.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; flac/optimized/stream_encoder.c.ll
 ; gromacs/optimized/domdec_setup.cpp.ll
-; gromacs/optimized/freeenergy.cpp.ll
 ; gromacs/optimized/genion.cpp.ll
 ; gromacs/optimized/tngio.cpp.ll
 ; gromacs/optimized/tune_pme.cpp.ll
@@ -405,13 +414,13 @@ entry:
 }
 
 ; 8 occurrences:
+; boost/optimized/ipc_reliable_message_queue.ll
 ; flac/optimized/bitwriter.c.ll
 ; flac/optimized/format.c.ll
 ; flac/optimized/stream_encoder.c.ll
 ; linux/optimized/balloc.ll
 ; linux/optimized/extents.ll
 ; linux/optimized/extents_status.ll
-; miniaudio/optimized/unity.c.ll
 ; postgres/optimized/hashovfl.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
@@ -432,6 +441,26 @@ define i1 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %1, %2
   %4 = icmp slt i32 %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; miniaudio/optimized/unity.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %1, %2
+  %4 = icmp samesign ugt i32 %3, %0
+  ret i1 %4
+}
+
+; 1 occurrences:
+; meshlab/optimized/filter_texture.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %1, %2
+  %4 = icmp ne i32 %3, %0
   ret i1 %4
 }
 

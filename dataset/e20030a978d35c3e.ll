@@ -12,11 +12,11 @@
 ; spike/optimized/fmin_d.ll
 ; spike/optimized/fminm_d.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = and i64 %2, 4503595332403200
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = icmp eq i64 %4, 0
   ret i1 %5
 }
@@ -25,7 +25,7 @@ entry:
 ; linux/optimized/synaptics.ll
 ; llvm/optimized/CallLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %1, 3
   %3 = and i64 %2, 524280
@@ -37,7 +37,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CallLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 %1, 3
   %3 = and i64 %2, 524280

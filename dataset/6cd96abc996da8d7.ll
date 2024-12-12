@@ -1,5 +1,5 @@
 
-; 145 occurrences:
+; 143 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; abc/optimized/absGla.c.ll
@@ -49,7 +49,6 @@
 ; linux/optimized/fib_rules.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/generic.ll
-; linux/optimized/i915_cmd_parser.ll
 ; linux/optimized/intel_workarounds.ll
 ; linux/optimized/ip6t_ipv6header.ll
 ; linux/optimized/ipconfig.ll
@@ -92,7 +91,6 @@
 ; quantlib/optimized/sobolrsg.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; spike/optimized/plic.ll
-; wireshark/optimized/golay.c.ll
 ; wireshark/optimized/inet_cidr.c.ll
 ; wireshark/optimized/packet-autosar-nm.c.ll
 ; wireshark/optimized/packet-iso15765.c.ll
@@ -168,7 +166,7 @@ entry:
 define i1 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, %2
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   %5 = icmp sgt i32 %4, -1
   ret i1 %5
 }
@@ -189,7 +187,7 @@ entry:
 define i1 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, %2
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   %5 = icmp slt i32 %4, 0
   ret i1 %5
 }
@@ -209,7 +207,7 @@ entry:
 define i1 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, %2
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   %5 = icmp ne i32 %4, 0
   ret i1 %5
 }

@@ -1,71 +1,71 @@
-func0000000000000098:                   # @func0000000000000098
+func0000000000000118:                   # @func0000000000000118
 	incq	%rdx
-	cmpq	%rsi, %rdx
-	seta	%cl
+	cmpq	%rdx, %rsi
+	setb	%cl
 	testq	%rdi, %rdi
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000000382:                   # @func0000000000000382
+func0000000000000b02:                   # @func0000000000000b02
 	decq	%rdx
-	cmpq	%rdi, %rdx
+	cmpq	%rdx, %rdi
 	sete	%cl
 	cmpq	$7, %rsi
 	setne	%al
 	orb	%cl, %al
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	decq	%rdx
-	cmpq	%rsi, %rdx
+	cmpq	%rdx, %rsi
 	sete	%cl
 	testq	%rdi, %rdi
 	sete	%al
 	orb	%cl, %al
 	retq
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	addq	$2, %rdx
-	cmpq	%rdi, %rdx
-	setg	%cl
+	cmpq	%rdx, %rdi
+	setl	%cl
 	negq	%rsi
 	seto	%al
 	orb	%cl, %al
 	retq
-func00000000000000c2:                   # @func00000000000000c2
+func0000000000000182:                   # @func0000000000000182
 	addq	$7, %rdx
-	cmpq	%rsi, %rdx
-	setg	%cl
+	cmpq	%rdx, %rsi
+	setl	%cl
 	negq	%rdi
 	seto	%al
 	orb	%cl, %al
 	retq
-func0000000000000032:                   # @func0000000000000032
+func0000000000000052:                   # @func0000000000000052
 	incq	%rdx
-	cmpq	%rdi, %rdx
-	setbe	%cl
+	cmpq	%rdx, %rdi
+	setae	%cl
 	testq	%rsi, %rsi
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000122:                   # @func0000000000000122
+func0000000000000242:                   # @func0000000000000242
 	incq	%rdx
-	cmpq	%rsi, %rdx
-	setbe	%cl
+	cmpq	%rdx, %rsi
+	setae	%cl
 	testq	%rdi, %rdi
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000110:                   # @func0000000000000110
+func0000000000000210:                   # @func0000000000000210
 	addq	$-10, %rdx
-	cmpq	%rsi, %rdx
-	setb	%cl
+	cmpq	%rdx, %rsi
+	seta	%cl
 	cmpq	$-2, %rdi
 	setae	%al
 	orb	%cl, %al
 	retq
-func00000000000002d6:                   # @func00000000000002d6
+func0000000000000996:                   # @func0000000000000996
 	decq	%rdx
-	cmpq	%rdi, %rdx
-	setle	%cl
+	cmpq	%rdx, %rdi
+	setge	%cl
 	cmpq	$2, %rsi
 	setl	%al
 	orb	%cl, %al

@@ -1,5 +1,5 @@
 
-; 149 occurrences:
+; 148 occurrences:
 ; mitsuba3/optimized/aov.cpp.ll
 ; mitsuba3/optimized/appender.cpp.ll
 ; mitsuba3/optimized/area.cpp.ll
@@ -76,7 +76,6 @@
 ; mitsuba3/optimized/perspective.cpp.ll
 ; mitsuba3/optimized/plastic.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/point.cpp.ll
 ; mitsuba3/optimized/polarizer.cpp.ll
 ; mitsuba3/optimized/pplastic.cpp.ll
@@ -150,7 +149,7 @@
 ; tev/optimized/UberShader.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i8 %1, i8 %2) #0 {
+define i64 @func0000000000000021(i64 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
   %4 = icmp eq i8 %1, 0
@@ -172,7 +171,7 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/SynthTraceParser.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i8 %1, i8 %2) #0 {
+define i64 @func0000000000000024(i64 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
   %4 = icmp ult i8 %1, 10
@@ -215,7 +214,7 @@ entry:
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; typst-rs/optimized/xrijsyrxk2ciyk9.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0, i8 %1, i8 %2) #0 {
+define i64 @func0000000000000026(i64 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
   %4 = icmp slt i8 %1, 0

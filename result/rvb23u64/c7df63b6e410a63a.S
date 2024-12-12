@@ -8,7 +8,7 @@ func000000000000000a:                   # @func000000000000000a
 	sgtz	a1, a1
 	czero.eqz	a0, a0, a1
 	ret
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	fcvt.w.d	a1, fa0, rtz
 	sltiu	a1, a1, 3
 	czero.nez	a0, a0, a1

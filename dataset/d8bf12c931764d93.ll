@@ -20,14 +20,13 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/abcLutmin.c.ll
 ; nuklear/optimized/unity.c.ll
 ; opencv/optimized/calibinit.cpp.ll
 ; php/optimized/zend_operators.ll
 ; raylib/optimized/raudio.c.ll
 ; stb/optimized/stb_vorbis.c.ll
-; yosys/optimized/maccmap.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -37,12 +36,11 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; icu/optimized/decNumber.ll
 ; icu/optimized/unistr.ll
 ; opencv/optimized/contours.cpp.ll
 ; spike/optimized/fdt_ro.ll
-; yosys/optimized/maccmap.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i1 %0, i32 %1, i32 %2) #0 {
 entry:

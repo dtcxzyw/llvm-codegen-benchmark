@@ -8,7 +8,7 @@
 define i64 @func0000000000000005(i32 %0, i64 %1) #0 {
 entry:
   %2 = sext i32 %0 to i64
-  %3 = mul i64 %2, %1
+  %3 = mul i64 %1, %2
   %4 = sub i64 0, %3
   ret i64 %4
 }

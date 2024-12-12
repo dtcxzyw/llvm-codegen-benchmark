@@ -1,4 +1,4 @@
-func0000000000000318:                   # @func0000000000000318
+func0000000000000638:                   # @func0000000000000638
 	slli	a2, a1, 2
 	slli	a1, a1, 6
 	subw	a1, a1, a2
@@ -10,7 +10,7 @@ func0000000000000318:                   # @func0000000000000318
 	czero.nez	a1, a2, a1
 	addw	a0, a0, a1
 	ret
-func00000000000003d8:                   # @func00000000000003d8
+func00000000000007b8:                   # @func00000000000007b8
 	lui	a2, 244
 	addi	a2, a2, 576
 	mul	a1, a1, a2
@@ -23,7 +23,7 @@ func00000000000003d8:                   # @func00000000000003d8
 	czero.eqz	a1, a1, a2
 	addw	a0, a0, a1
 	ret
-func000000000000011a:                   # @func000000000000011a
+func000000000000022a:                   # @func000000000000022a
 	li	a2, 1000
 	mul	a1, a1, a2
 	lui	a2, 244
@@ -35,18 +35,7 @@ func000000000000011a:                   # @func000000000000011a
 	czero.eqz	a1, a1, a2
 	addw	a0, a0, a1
 	ret
-func0000000000000116:                   # @func0000000000000116
-	lui	a2, 1048573
-	addi	a2, a2, 77
-	mul	a1, a1, a2
-	lui	a2, 524288
-	add	a0, a0, a1
-	sraiw	a1, a0, 31
-	addi	a2, a2, -85
-	and	a1, a1, a2
-	addw	a0, a0, a1
-	ret
-func0000000000000316:                   # @func0000000000000316
+func0000000000000626:                   # @func0000000000000626
 	lui	a2, 244
 	addi	a2, a2, 576
 	mul	a1, a1, a2

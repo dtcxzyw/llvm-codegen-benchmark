@@ -6,16 +6,16 @@ func0000000000000008:                   # @func0000000000000008
 	setb	%al
 	orb	%dil, %al
 	retq
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	movzbl	%dl, %eax
-	leal	-100001(%rax,%rsi), %eax
+	leal	-100001(%rsi,%rax), %eax
 	cmpl	$-100000, %eax                  # imm = 0xFFFE7960
 	setb	%al
 	orb	%dil, %al
 	retq
-func0000000000000188:                   # @func0000000000000188
+func0000000000000308:                   # @func0000000000000308
 	movzbl	%dl, %eax
-	leal	-64976(%rax,%rsi), %eax
+	leal	-64976(%rsi,%rax), %eax
 	cmpl	$32, %eax
 	setb	%al
 	orb	%dil, %al

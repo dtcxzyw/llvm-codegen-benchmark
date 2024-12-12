@@ -1,5 +1,5 @@
 
-; 33 occurrences:
+; 31 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; c3c/optimized/sema_expr.c.ll
@@ -10,13 +10,11 @@
 ; icu/optimized/simpletz.ll
 ; icu/optimized/ucnvbocu.ll
 ; linux/optimized/icl_dsi.ll
-; linux/optimized/intel_dkl_phy.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_trioptimize.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; opencv/optimized/mathfuncs.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
-; openssl/optimized/rpktest-bin-rpktest.ll
 ; php/optimized/php_date.ll
 ; postgres/optimized/formatting.ll
 ; postgres/optimized/network.ll

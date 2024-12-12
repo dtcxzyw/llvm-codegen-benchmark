@@ -30,6 +30,12 @@ func000000000000000b:                   # @func000000000000000b
 	and	a1, a1, a2
 	add	a0, a0, a1
 	ret
+func0000000000000000:                   # @func0000000000000000
+	andi	a2, a2, -4
+	add	a1, a1, a2
+	andi	a1, a1, -4
+	add	a0, a0, a1
+	ret
 func0000000000000003:                   # @func0000000000000003
 	add	a1, a1, a2
 	slli	a1, a1, 13
@@ -40,12 +46,6 @@ func000000000000000c:                   # @func000000000000000c
 	add	a1, a1, a2
 	slli	a1, a1, 13
 	srli	a1, a1, 13
-	add	a0, a0, a1
-	ret
-func0000000000000000:                   # @func0000000000000000
-	andi	a2, a2, -16
-	add	a1, a1, a2
-	andi	a1, a1, -16
 	add	a0, a0, a1
 	ret
 func0000000000000005:                   # @func0000000000000005

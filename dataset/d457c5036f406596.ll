@@ -1,10 +1,15 @@
 
-%struct.rb_code_location_struct.2485213 = type { %struct.rb_code_position_struct.2485214, %struct.rb_code_position_struct.2485214 }
-%struct.rb_code_position_struct.2485214 = type { i32, i32 }
-%struct.rb_code_location_struct.2486232 = type { %struct.rb_code_position_struct.2486233, %struct.rb_code_position_struct.2486233 }
-%struct.rb_code_position_struct.2486233 = type { i32, i32 }
-%union.YYSTYPE.3468010 = type { %struct.this_type.3468011 }
-%struct.this_type.3468011 = type { ptr, i32, ptr, ptr, ptr, ptr }
+%struct.rb_code_location_struct.2600702 = type { %struct.rb_code_position_struct.2600703, %struct.rb_code_position_struct.2600703 }
+%struct.rb_code_position_struct.2600703 = type { i32, i32 }
+%struct.rb_code_location_struct.2601676 = type { %struct.rb_code_position_struct.2601677, %struct.rb_code_position_struct.2601677 }
+%struct.rb_code_position_struct.2601677 = type { i32, i32 }
+%union.YYSTYPE.3652191 = type { %struct.this_type.3652192 }
+%struct.this_type.3652192 = type { ptr, i32, ptr, ptr, ptr, ptr }
+%union.yyGLRStackItem.3703833 = type { %struct.yySemanticOption.3703838 }
+%struct.yySemanticOption.3703838 = type { i8, i32, ptr, i32, %union.YYSTYPE.3703834, %"struct.nix::ParserLocation.3703835", ptr }
+%union.YYSTYPE.3703834 = type { %"struct.nix::StringToken.3703839" }
+%"struct.nix::StringToken.3703839" = type { ptr, i64, i8 }
+%"struct.nix::ParserLocation.3703835" = type { i32, i32, i32, i32, i32, i32, i32, i32 }
 
 ; 10 occurrences:
 ; postgres/optimized/bootparse.ll
@@ -22,12 +27,12 @@ define ptr @func0000000000000010(ptr %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i64
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr %struct.rb_code_location_struct.2485213, ptr %0, i64 %3
+  %4 = getelementptr %struct.rb_code_location_struct.2600702, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 16
   ret ptr %5
 }
 
-; 39 occurrences:
+; 38 occurrences:
 ; clamav/optimized/yara_grammar.c.ll
 ; cmake/optimized/cmCommandArgumentParser.cxx.ll
 ; cmake/optimized/cmDependsJavaParser.cxx.ll
@@ -50,7 +55,6 @@ entry:
 ; graphviz/optimized/htmlparse.c.ll
 ; hdf5/optimized/H5LTparse.c.ll
 ; jq/optimized/parser.ll
-; nix/optimized/parser-tab.ll
 ; php/optimized/json_parser.ll
 ; php/optimized/phpdbg_parser.ll
 ; php/optimized/zend_ini_parser.ll
@@ -68,12 +72,12 @@ entry:
 ; yosys/optimized/rtlil_parser.tab.ll
 ; yosys/optimized/verilog_parser.tab.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i8 %1) #0 {
+define ptr @func000000000000001b(ptr %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i64
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw %struct.rb_code_location_struct.2486232, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 16
+  %4 = getelementptr nusw %struct.rb_code_location_struct.2601676, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 16
   ret ptr %5
 }
 
@@ -82,12 +86,24 @@ entry:
 ; postgres/optimized/preproc.ll
 ; postgres/optimized/specparse.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i8 %1) #0 {
+define ptr @func0000000000000013(ptr %0, i8 %1) #0 {
 entry:
   %2 = sext i8 %1 to i64
   %3 = sub nsw i64 1, %2
-  %4 = getelementptr %union.YYSTYPE.3468010, ptr %0, i64 %3, i32 0, i32 1
+  %4 = getelementptr %union.YYSTYPE.3652191, ptr %0, i64 %3, i32 0, i32 1
   ret ptr %4
+}
+
+; 1 occurrences:
+; nix/optimized/parser-tab.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001a(ptr %0, i8 %1) #0 {
+entry:
+  %2 = sext i8 %1 to i64
+  %3 = sub nsw i64 0, %2
+  %4 = getelementptr nusw %union.yyGLRStackItem.3703833, ptr %0, i64 %3
+  %5 = getelementptr nusw i8, ptr %4, i64 -88
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

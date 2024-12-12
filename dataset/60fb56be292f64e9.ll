@@ -1,7 +1,6 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; csmith/optimized/Lhs.cpp.ll
-; linux/optimized/intel_display_debugfs.ll
 ; llvm/optimized/CommandLine.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/SemaConcept.cpp.ll
@@ -21,20 +20,19 @@
 define i1 @func0000000000000002(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   %4 = freeze i1 %3
   ret i1 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; gromacs/optimized/pbc.cpp.ll
-; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/DeclPrinter.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, -5
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   %4 = freeze i1 %3
   ret i1 %4
 }

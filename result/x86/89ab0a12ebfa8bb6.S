@@ -9,21 +9,21 @@ func000000000000000a:                   # @func000000000000000a
 	cmpl	%esi, %edi
 	setg	%al
 	retq
-func000000000000003a:                   # @func000000000000003a
+func000000000000006a:                   # @func000000000000006a
 	cmpl	%esi, %edi
 	setg	%al
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	sarl	$16, %esi
 	sarl	$16, %edi
 	cmpl	%esi, %edi
 	setg	%al
 	retq
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	cmpl	%esi, %edi
 	setl	%al
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	cmpl	%esi, %edi
 	sete	%al
 	retq
@@ -44,12 +44,12 @@ func000000000000000b:                   # @func000000000000000b
 	cmpl	%esi, %edi
 	setge	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	xorl	%esi, %edi
 	cmpl	$65536, %edi                    # imm = 0x10000
 	setb	%al
 	retq
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	sarl	$16, %esi
 	sarl	$16, %edi
 	cmpl	%esi, %edi

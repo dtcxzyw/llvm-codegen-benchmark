@@ -5,13 +5,13 @@
 ; postgres/optimized/ginfast.ll
 ; qemu/optimized/gen-vdso.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001b8(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000378(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %1, 5
   %5 = add nuw nsw i64 %4, %3
   %6 = zext i32 %0 to i64
-  %7 = icmp ugt i64 %5, %6
+  %7 = icmp samesign ugt i64 %5, %6
   ret i1 %7
 }
 
@@ -34,13 +34,26 @@ entry:
 ; openspiel/optimized/System.cpp.ll
 ; openspiel/optimized/ThreadMgr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000128(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nsw i64 %1, 3
   %5 = add nsw i64 %4, %3
   %6 = zext i32 %0 to i64
   %7 = icmp ugt i64 %5, %6
+  ret i1 %7
+}
+
+; 1 occurrences:
+; abc/optimized/giaTransduction.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000138(i32 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = shl nsw i64 %1, 3
+  %5 = add nsw i64 %4, %3
+  %6 = zext i32 %0 to i64
+  %7 = icmp samesign ugt i64 %5, %6
   ret i1 %7
 }
 
@@ -51,7 +64,7 @@ entry:
 ; gromacs/optimized/domdec_constraints.cpp.ll
 ; openspiel/optimized/quoridor.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d8(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000001a8(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nsw i64 %1, 3
@@ -62,9 +75,22 @@ entry:
 }
 
 ; 1 occurrences:
+; draco/optimized/sequential_attribute_encoders_controller.cc.ll
+; Function Attrs: nounwind
+define i1 @func00000000000001b8(i32 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = shl nsw i64 %1, 3
+  %5 = add nsw i64 %4, %3
+  %6 = zext nneg i32 %0 to i64
+  %7 = icmp samesign ugt i64 %5, %6
+  ret i1 %7
+}
+
+; 1 occurrences:
 ; gromacs/optimized/basicoptions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000001a4(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nsw i64 %1, 3
@@ -77,7 +103,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-acn.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001bc(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000036c(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw nsw i64 %1, 1
@@ -90,7 +116,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/idr.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000088(i32 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = shl i64 %1, 10

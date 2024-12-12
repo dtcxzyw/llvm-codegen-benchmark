@@ -1,4 +1,4 @@
-func0000000000000056:                   // @func0000000000000056
+func00000000000000a6:                   // @func00000000000000a6
 // %bb.0:                               // %entry
 	sub	x8, x2, x1
 	mov	x9, #-6148914691236517206       // =0xaaaaaaaaaaaaaaaa
@@ -9,7 +9,7 @@ func0000000000000056:                   // @func0000000000000056
 	cset	w0, gt
 	ret
                                         // -- End function
-func0000000000000044:                   // @func0000000000000044
+func0000000000000084:                   // @func0000000000000084
 // %bb.0:                               // %entry
 	sub	x8, x2, x1
 	mov	x9, #-3689348814741910324       // =0xcccccccccccccccc

@@ -7,7 +7,7 @@ entry:
   %3 = icmp slt i32 %2, 1
   %4 = zext i1 %3 to i32
   %5 = shl i32 %1, %4
-  %6 = mul i32 %5, %0
+  %6 = mul i32 %0, %5
   ret i32 %6
 }
 
@@ -26,7 +26,7 @@ entry:
   %3 = icmp eq i32 %2, 16
   %4 = zext i1 %3 to i32
   %5 = shl i32 %1, %4
-  %6 = mul nsw i32 %5, %0
+  %6 = mul nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -93,7 +93,7 @@ entry:
   %3 = icmp eq i32 %2, 5
   %4 = zext i1 %3 to i32
   %5 = shl nuw nsw i32 %1, %4
-  %6 = mul nsw i32 %5, %0
+  %6 = mul nsw i32 %0, %5
   ret i32 %6
 }
 

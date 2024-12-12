@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 25 occurrences:
 ; cmake/optimized/index.c.ll
 ; html5ever-rs/optimized/19ci5iy6gkdi8zuj.ll
 ; html5ever-rs/optimized/1yuzfqpt8ffhwz7d.ll
@@ -16,6 +16,15 @@
 ; php/optimized/ZendAccelerator.ll
 ; postgres/optimized/nodeHash.ll
 ; qemu/optimized/block_qcow2.c.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/74s0htufyupfabszhrulapmbp.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
+; zed-rs/optimized/el2ujbjp7xo4qjt47dh50oqat.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i32 %0) #0 {
 entry:

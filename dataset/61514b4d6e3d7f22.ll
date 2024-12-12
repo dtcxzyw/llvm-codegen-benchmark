@@ -88,7 +88,7 @@ entry:
   %3 = add i64 %1, %2
   %4 = and i64 %3, 1
   %5 = icmp eq i64 %4, 0
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -101,19 +101,19 @@ entry:
   %3 = add i64 %1, %2
   %4 = and i64 %3, 2147483648
   %5 = icmp ne i64 %4, 0
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; redis/optimized/quicklist.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000010(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000030(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = and i64 %3, 4294967295
-  %5 = icmp ugt i64 %4, 8192
-  %6 = or i1 %5, %0
+  %5 = icmp samesign ugt i64 %4, 8192
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

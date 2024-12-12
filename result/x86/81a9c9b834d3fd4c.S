@@ -23,8 +23,18 @@ func0000000000000008:                   # @func0000000000000008
 	movl	$4, %eax
 	cmovaq	%rdi, %rax
 	retq
+func0000000000000018:                   # @func0000000000000018
+	xorl	%eax, %eax
+	cmpq	%rdx, %rsi
+	cmovaq	%rdi, %rax
+	retq
 func0000000000000005:                   # @func0000000000000005
 	movq	%rdi, %rax
+	retq
+func0000000000000014:                   # @func0000000000000014
+	xorl	%eax, %eax
+	cmpq	%rdx, %rsi
+	cmovbq	%rdi, %rax
 	retq
 func0000000000000007:                   # @func0000000000000007
 	xorl	%eax, %eax

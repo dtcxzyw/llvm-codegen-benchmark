@@ -12,8 +12,9 @@ entry:
   ret i8 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
+; lvgl/optimized/lv_calendar.ll
 ; pocketpy/optimized/compiler.cpp.ll
 ; wireshark/optimized/packet-mysql.c.ll
 ; zxing/optimized/DMHighLevelEncoder.cpp.ll
@@ -40,13 +41,14 @@ entry:
   ret i8 %4
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; arrow/optimized/bridge.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_numeric.cc.ll
 ; arrow/optimized/scalar_cast_temporal.cc.ll
 ; arrow/optimized/uri.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/init_from_settings.ll
 ; linux/optimized/x509_cert_parser.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000033(i8 %0, i8 %1) #0 {

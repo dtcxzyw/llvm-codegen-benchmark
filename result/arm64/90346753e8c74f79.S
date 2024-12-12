@@ -1,4 +1,4 @@
-func00000000000000be:                   // @func00000000000000be
+func00000000000000bf:                   // @func00000000000000bf
 // %bb.0:                               // %entry
                                         // kill: def $w1 killed $w1 def $x1
 	and	x8, x1, #0xffff

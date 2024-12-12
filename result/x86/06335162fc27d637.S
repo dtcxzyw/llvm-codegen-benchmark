@@ -4,13 +4,14 @@ func0000000000000002:                   # @func0000000000000002
 	sete	%al
 	orb	%dil, %al
 	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	orq	%rdx, %rsi
-	cmpq	$4, %rsi
+	movl	$4294967285, %eax               # imm = 0xFFFFFFF5
+	cmpq	%rax, %rsi
 	setb	%al
 	orb	%dil, %al
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	orq	%rdx, %rsi
 	movl	$4294967295, %eax               # imm = 0xFFFFFFFF
 	cmpq	%rax, %rsi
@@ -27,13 +28,7 @@ func0000000000000018:                   # @func0000000000000018
 	setne	%al
 	orb	%dil, %al
 	retq
-func0000000000000030:                   # @func0000000000000030
-	orq	%rdx, %rsi
-	cmpq	$8192, %rsi                     # imm = 0x2000
-	setae	%al
-	orb	%dil, %al
-	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000058:                   # @func0000000000000058
 	orq	%rdx, %rsi
 	setne	%al
 	orb	%dil, %al

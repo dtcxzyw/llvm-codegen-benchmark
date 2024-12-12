@@ -6,7 +6,7 @@ define i64 @func000000000000018c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = add nuw nsw i64 %4, %1
+  %5 = add nuw nsw i64 %1, %4
   %6 = sub i64 %5, %0
   ret i64 %6
 }
@@ -28,20 +28,19 @@ define i64 @func000000000000018f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = add nuw nsw i64 %4, %1
+  %5 = add nuw nsw i64 %1, %4
   %6 = sub nuw nsw i64 %5, %0
   ret i64 %6
 }
 
-; 2 occurrences:
-; arrow/optimized/light_array.cc.ll
+; 1 occurrences:
 ; arrow/optimized/writer.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000185(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = add nsw i64 %4, %1
+  %5 = add nsw i64 %1, %4
   %6 = sub nsw i64 %5, %0
   ret i64 %6
 }
@@ -53,7 +52,7 @@ define i64 @func0000000000000186(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = add nsw i64 %4, %1
+  %5 = add nsw i64 %1, %4
   %6 = sub nuw i64 %5, %0
   ret i64 %6
 }

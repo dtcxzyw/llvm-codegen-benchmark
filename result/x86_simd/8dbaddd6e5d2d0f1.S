@@ -1,4 +1,4 @@
-func00000000000005a6:                   # @func00000000000005a6
+func0000000000001546:                   # @func0000000000001546
 	vpsllw	$8, %ymm2, %ymm2
 	vpor	%ymm1, %ymm2, %ymm1
 	vpxor	%xmm2, %xmm2, %xmm2
@@ -7,7 +7,7 @@ func00000000000005a6:                   # @func00000000000005a6
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000511:                   # @func0000000000000511
+func0000000000001421:                   # @func0000000000001421
 	vpsllw	$8, %ymm2, %ymm2
 	vpor	%ymm1, %ymm2, %ymm1
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
@@ -35,7 +35,7 @@ func0000000000000511:                   # @func0000000000000511
 	.short	3                               # 0x3
 .LCPI2_1:
 	.short	3                               # 0x3
-func0000000000000518:                   # @func0000000000000518
+func0000000000001428:                   # @func0000000000001428
 	vpsllw	$8, %ymm2, %ymm2
 	vpor	%ymm1, %ymm2, %ymm1
 	vpbroadcastw	.LCPI2_1(%rip), %ymm2   # ymm2 = [3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3]

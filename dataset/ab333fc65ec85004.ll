@@ -14,9 +14,30 @@ entry:
   ret ptr %5
 }
 
-; 22 occurrences:
-; darktable/optimized/introspection_dither.c.ll
-; hermes/optimized/BigIntSupport.cpp.ll
+; 2 occurrences:
+; minetest/optimized/CColorConverter.cpp.ll
+; opencv/optimized/scansegment.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002e(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 %0
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %1
+  %5 = getelementptr nusw i8, ptr %4, i64 %0
+  ret ptr %5
+}
+
+; 1 occurrences:
+; minetest/optimized/CColorConverter.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003b(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 %0
+  %4 = getelementptr nusw i8, ptr %3, i64 %1
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %0
+  ret ptr %5
+}
+
+; 17 occurrences:
 ; libwebp/optimized/frame_dec.c.ll
 ; minetest/optimized/CColorConverter.cpp.ll
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll
@@ -25,12 +46,9 @@ entry:
 ; opencv/optimized/emd.cpp.ll
 ; opencv/optimized/gfluidimgproc.cpp.ll
 ; opencv/optimized/odometry.cpp.ll
-; opencv/optimized/scansegment.cpp.ll
 ; openjdk/optimized/bcEscapeAnalyzer.ll
 ; openjdk/optimized/mlib_ImageConvMxN_ext.ll
 ; openusd/optimized/pinnedCurveExpandingSceneIndex.cpp.ll
-; ozz-animation/optimized/sampling_job.cc.ll
-; wolfssl/optimized/pwdbased.c.ll
 ; yosys/optimized/fsm_expand.ll
 ; yosys/optimized/fsm_export.ll
 ; yosys/optimized/fsm_info.ll
@@ -40,9 +58,9 @@ entry:
 ; Function Attrs: nounwind
 define ptr @func000000000000002a(i64 %0, i64 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 %0
-  %4 = getelementptr nusw i8, ptr %3, i64 %1
-  %5 = getelementptr nusw i8, ptr %4, i64 %0
+  %3 = getelementptr nusw i16, ptr %2, i64 %0
+  %4 = getelementptr nusw i16, ptr %3, i64 %1
+  %5 = getelementptr nusw i16, ptr %4, i64 %0
   ret ptr %5
 }
 
@@ -57,6 +75,20 @@ entry:
   ret ptr %5
 }
 
+; 4 occurrences:
+; darktable/optimized/introspection_dither.c.ll
+; hermes/optimized/BigIntSupport.cpp.ll
+; ozz-animation/optimized/sampling_job.cc.ll
+; wolfssl/optimized/pwdbased.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003f(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw nuw float, ptr %2, i64 %0
+  %4 = getelementptr nusw nuw float, ptr %3, i64 %1
+  %5 = getelementptr nusw nuw float, ptr %4, i64 %0
+  ret ptr %5
+}
+
 ; 1 occurrences:
 ; opencv/optimized/channels.cpp.ll
 ; Function Attrs: nounwind
@@ -65,19 +97,6 @@ entry:
   %3 = getelementptr ptr, ptr %2, i64 %0
   %4 = getelementptr nusw ptr, ptr %3, i64 %1
   %5 = getelementptr nusw ptr, ptr %4, i64 %0
-  ret ptr %5
-}
-
-; 3 occurrences:
-; meshlab/optimized/edit_align.cpp.ll
-; meshlab/optimized/filter_icp.cpp.ll
-; meshlab/optimized/solver.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000008(i64 %0, i64 %1, ptr %2) #0 {
-entry:
-  %3 = getelementptr double, ptr %2, i64 %0
-  %4 = getelementptr nusw double, ptr %3, i64 %1
-  %5 = getelementptr double, ptr %4, i64 %0
   ret ptr %5
 }
 

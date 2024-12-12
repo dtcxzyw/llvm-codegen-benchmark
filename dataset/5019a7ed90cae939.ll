@@ -1,5 +1,7 @@
 
-; 58 occurrences:
+; 60 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/cvodea.c.ll
 ; casadi/optimized/idaa.c.ll
 ; ceres/optimized/covariance_impl.cc.ll

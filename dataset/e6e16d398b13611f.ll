@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 30 occurrences:
 ; abc/optimized/cecIso.c.ll
 ; gromacs/optimized/pme_solve.cpp.ll
 ; hdf5/optimized/h5tools_utils.c.ll
@@ -29,20 +29,22 @@
 ; wireshark/optimized/packet-dcerpc-ndr.c.ll
 ; z3/optimized/realclosure.cpp.ll
 ; z3/optimized/upolynomial.cpp.ll
+; zed-rs/optimized/4mvts9r7x1v34mewfakj220xc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = and i1 %1, %2
   %4 = zext i1 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
-; 26 occurrences:
+; 27 occurrences:
 ; abc/optimized/cnfPost.c.ll
 ; abc/optimized/ioReadBlifAig.c.ll
 ; abc/optimized/llb2Flow.c.ll
 ; abc/optimized/wlnRead.c.ll
+; boost/optimized/text_file_backend.ll
 ; clamav/optimized/matcher-ac.c.ll
 ; git/optimized/block.ll
 ; glslang/optimized/Initialize.cpp.ll
@@ -70,7 +72,7 @@ define i32 @func0000000000000001(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = and i1 %1, %2
   %4 = zext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -82,6 +84,7 @@ entry:
 ; bdwgc/optimized/gc.c.ll
 ; graphviz/optimized/compound.c.ll
 ; gromacs/optimized/imd.cpp.ll
+; icu/optimized/ubidiwrt.ll
 ; linux/optimized/lib.ll
 ; linux/optimized/vlv_dsi.ll
 ; llvm/optimized/CodeGenDAGPatterns.cpp.ll
@@ -90,7 +93,6 @@ entry:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; minetest/optimized/content_mapblock.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; nuttx/optimized/lib_daysbeforemonth.c.ll
 ; openusd/optimized/crease.cpp.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; postgres/optimized/print.ll
@@ -101,7 +103,7 @@ define i32 @func0000000000000003(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = and i1 %1, %2
   %4 = zext i1 %3 to i32
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -115,7 +117,7 @@ define i32 @func0000000000000002(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = and i1 %1, %2
   %4 = zext i1 %3 to i32
-  %5 = add nuw i32 %4, %0
+  %5 = add nuw i32 %0, %4
   ret i32 %5
 }
 

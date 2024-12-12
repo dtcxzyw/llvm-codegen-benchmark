@@ -1,5 +1,5 @@
 
-; 174 occurrences:
+; 173 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/saigSwitch.c.ll
@@ -167,7 +167,6 @@
 ; velox/optimized/CumeDist.cpp.ll
 ; velox/optimized/Rank.cpp.ll
 ; wireshark/optimized/capinfos.c.ll
-; wireshark/optimized/ftype-time.c.ll
 ; wireshark/optimized/packet-tds.c.ll
 ; wireshark/optimized/rtp_player_dialog.cpp.ll
 ; wireshark/optimized/tap-rtp-analysis.c.ll

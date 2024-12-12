@@ -1,8 +1,7 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; abc/optimized/abcBidec.c.ll
 ; abc/optimized/nwkBidec.c.ll
-; gromacs/optimized/angle_correction.cpp.ll
 ; gromacs/optimized/bonded.cpp.ll
 ; gromacs/optimized/gmx_chi.cpp.ll
 ; gromacs/optimized/updategroups.cpp.ll
@@ -19,9 +18,8 @@ entry:
   ret i1 %3
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; faiss/optimized/HNSW.cpp.ll
-; gromacs/optimized/angle_correction.cpp.ll
 ; gromacs/optimized/gmx_chi.cpp.ll
 ; gromacs/optimized/membed.cpp.ll
 ; gromacs/optimized/slasq4.cpp.ll

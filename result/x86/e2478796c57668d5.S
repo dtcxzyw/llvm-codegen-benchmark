@@ -14,6 +14,12 @@ func000000000000000c:                   # @func000000000000000c
 	cmpw	$-2, %di
 	cmovnel	%edi, %eax
 	retq
+func0000000000000014:                   # @func0000000000000014
+	movl	%esi, %eax
+	movzwl	%di, %ecx
+	cmpl	$128, %ecx
+	cmovbl	%edi, %eax
+	retq
 func000000000000000a:                   # @func000000000000000a
 	movl	%esi, %eax
 	testw	%di, %di

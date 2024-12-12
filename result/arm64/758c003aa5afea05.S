@@ -1,35 +1,44 @@
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	add	v3.8h, v3.8h, v5.8h
-	add	v2.8h, v2.8h, v4.8h
-	movi	v4.8h, #1
-	add	v0.8h, v2.8h, v0.8h
-	add	v1.8h, v3.8h, v1.8h
-	cmeq	v1.8h, v1.8h, v4.8h
-	cmeq	v0.8h, v0.8h, v4.8h
-	uzp1	v0.16b, v0.16b, v1.16b
+	add	w8, w1, w2
+	add	w8, w8, w0
+	and	w8, w8, #0xffff
+	cmp	w8, #1
+	cset	w0, eq
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	add	v3.8h, v3.8h, v5.8h
-	add	v2.8h, v2.8h, v4.8h
-	movi	v4.8h, #15
-	add	v0.8h, v2.8h, v0.8h
-	add	v1.8h, v3.8h, v1.8h
-	cmhi	v1.8h, v1.8h, v4.8h
-	cmhi	v0.8h, v0.8h, v4.8h
-	uzp1	v0.16b, v0.16b, v1.16b
+	add	w8, w1, w2
+	add	w8, w8, w0
+	and	w8, w8, #0xffff
+	cmp	w8, #15
+	cset	w0, hi
+	ret
+                                        // -- End function
+func0000000000000014:                   // @func0000000000000014
+// %bb.0:                               // %entry
+	add	w8, w1, w2
+	add	w8, w0, w8
+	and	w8, w8, #0xffff
+	cmp	w8, #90
+	cset	w0, lo
+	ret
+                                        // -- End function
+func0000000000000004:                   // @func0000000000000004
+// %bb.0:                               // %entry
+	add	w8, w1, w2
+	add	w8, w8, w0
+	tst	w8, #0xfffe
+	cset	w0, eq
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	add	v3.8h, v3.8h, v5.8h
-	add	v2.8h, v2.8h, v4.8h
-	add	v0.8h, v2.8h, v0.8h
-	add	v1.8h, v3.8h, v1.8h
-	cmgt	v1.8h, v1.8h, #0
-	cmgt	v0.8h, v0.8h, #0
-	uzp1	v0.16b, v0.16b, v1.16b
+	add	w8, w1, w2
+	add	w8, w8, w0
+	sxth	w8, w8
+	cmp	w8, #0
+	cset	w0, gt
 	ret
                                         // -- End function

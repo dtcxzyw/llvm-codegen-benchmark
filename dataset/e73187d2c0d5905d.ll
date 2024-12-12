@@ -1,12 +1,9 @@
 
-; 169 occurrences:
+; 166 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; cmake/optimized/archive_match.c.ll
 ; cpython/optimized/_csv.ll
-; eastl/optimized/BenchmarkTupleVector.cpp.ll
-; eastl/optimized/TestFixedTupleVector.cpp.ll
-; eastl/optimized/TestTupleVector.cpp.ll
 ; faiss/optimized/OnDiskInvertedLists.cpp.ll
 ; graphviz/optimized/DotIO.c.ll
 ; graphviz/optimized/actions.c.ll
@@ -178,14 +175,13 @@ entry:
   ret i64 %3
 }
 
-; 26 occurrences:
+; 25 occurrences:
 ; arrow/optimized/bridge.cc.ll
 ; assimp/optimized/o3dgcTriangleFans.cpp.ll
 ; faiss/optimized/Index2Layer.cpp.ll
 ; faiss/optimized/IndexIVFPQ.cpp.ll
 ; folly/optimized/Subprocess.cpp.ll
 ; freetype/optimized/bdf.c.ll
-; gromacs/optimized/parser.cpp.ll
 ; hyperscan/optimized/goughcompile_accel.cpp.ll
 ; llvm/optimized/X86LoadValueInjectionLoadHardening.cpp.ll
 ; mitsuba3/optimized/aov.cpp.ll
@@ -206,7 +202,7 @@ entry:
 ; quantlib/optimized/mcamericanbasketengine.ll
 ; quantlib/optimized/mchestonhullwhiteengine.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000038(i64 %0) #0 {
+define i64 @func0000000000000068(i64 %0) #0 {
 entry:
   %1 = shl nuw nsw i64 %0, 3
   %2 = icmp ugt i64 %0, 2305843009213693951
@@ -214,7 +210,7 @@ entry:
   ret i64 %3
 }
 
-; 407 occurrences:
+; 408 occurrences:
 ; assimp/optimized/ASELoader.cpp.ll
 ; assimp/optimized/COBLoader.cpp.ll
 ; assimp/optimized/ColladaLoader.cpp.ll
@@ -230,11 +226,14 @@ entry:
 ; assimp/optimized/Q3BSPFileImporter.cpp.ll
 ; assimp/optimized/SceneCombiner.cpp.ll
 ; assimp/optimized/XFileImporter.cpp.ll
-; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; assimp/optimized/o3dgcDynamicVectorDecoder.cpp.ll
+; boost/optimized/cmd.ll
+; boost/optimized/numeric.ll
+; boost/optimized/test_stackstring.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; ceres/optimized/residual_block.cc.ll
 ; cmake/optimized/CommandLineArguments.cxx.ll
 ; darktable/optimized/introspection_bilateral.cc.ll
@@ -429,7 +428,6 @@ entry:
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; proj/optimized/c_api.cpp.ll
 ; pybind11/optimized/test_buffers.cpp.ll
-; pybind11/optimized/test_eigen_matrix.cpp.ll
 ; pybind11/optimized/test_sequences_and_iterators.cpp.ll
 ; quantlib/optimized/abcdcalibration.ll
 ; quantlib/optimized/abcdvol.ll
@@ -619,7 +617,6 @@ entry:
 ; sentencepiece/optimized/unigram_model.cc.ll
 ; sentencepiece/optimized/unigram_model_trainer.cc.ll
 ; spike/optimized/cachesim.ll
-; wasmtime-rs/optimized/4u85yh8sn1llpfha.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
 ; Function Attrs: nounwind
@@ -631,7 +628,7 @@ entry:
   ret i64 %3
 }
 
-; 350 occurrences:
+; 356 occurrences:
 ; abseil-cpp/optimized/salted_seed_seq_test.cc.ll
 ; abseil-cpp/optimized/seed_material_test.cc.ll
 ; arrow/optimized/bridge.cc.ll
@@ -642,6 +639,13 @@ entry:
 ; assimp/optimized/o3dgcDynamicVectorDecoder.cpp.ll
 ; assimp/optimized/o3dgcDynamicVectorEncoder.cpp.ll
 ; assimp/optimized/o3dgcTriangleFans.cpp.ll
+; boost/optimized/benchmark_fstream.ll
+; boost/optimized/test_filebuf.ll
+; boost/optimized/test_fstream.ll
+; boost/optimized/test_fstream_special.ll
+; boost/optimized/test_ifstream.ll
+; boost/optimized/test_ofstream.ll
+; boost/optimized/test_stackstring.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
 ; ceres/optimized/eigensparse.cc.ll
@@ -760,7 +764,6 @@ entry:
 ; openexr/optimized/ImfCheckFile.cpp.ll
 ; openexr/optimized/ImfDeepScanLineInputFile.cpp.ll
 ; openexr/optimized/ImfImage.cpp.ll
-; openexr/optimized/ImfTiledRgbaFile.cpp.ll
 ; openssl/optimized/libssl-lib-quic_fc.ll
 ; openssl/optimized/libssl-shlib-quic_fc.ll
 ; openvdb/optimized/LevelSetRebuild.cc.ll
@@ -938,7 +941,6 @@ entry:
 ; quantlib/optimized/variancegammamodel.ll
 ; quantlib/optimized/vasicek.ll
 ; quantlib/optimized/zabr.ll
-; regex-rs/optimized/3ixfkxlmcuecmmus.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; taskflow/optimized/async.cpp.ll
 ; taskflow/optimized/attach_data.cpp.ll
@@ -978,12 +980,13 @@ entry:
 ; taskflow/optimized/text_pipeline.cpp.ll
 ; taskflow/optimized/visualization.cpp.ll
 ; taskflow/optimized/while_loop.cpp.ll
-; wasmtime-rs/optimized/1zz7jsxv168dc7km.ll
+; wasmtime-rs/optimized/3gnma2m1zwm5wpa3.ll
 ; wasmtime-rs/optimized/3jqdez78s6gt3fnc.ll
-; wasmtime-rs/optimized/4u85yh8sn1llpfha.ll
-; wasmtime-rs/optimized/joyny9bexuq72mb.ll
+; wasmtime-rs/optimized/4aijogcjfl814gfb.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(i64 %0) #0 {
+define i64 @func0000000000000048(i64 %0) #0 {
 entry:
   %1 = shl nuw i64 %0, 2
   %2 = icmp ugt i64 %0, 4611686018427387903
@@ -1008,7 +1011,7 @@ entry:
 ; quantlib/optimized/longstaffschwartzmultipathpricer.ll
 ; quantlib/optimized/mceuropeanbasketengine.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0) #0 {
+define i64 @func0000000000000028(i64 %0) #0 {
 entry:
   %1 = shl nsw i64 %0, 2
   %2 = icmp ugt i64 %0, 4611686018427387903
@@ -1019,7 +1022,7 @@ entry:
 ; 1 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000031(i64 %0) #0 {
+define i64 @func0000000000000061(i64 %0) #0 {
 entry:
   %1 = shl nuw nsw i64 %0, 4
   %2 = icmp eq i64 %0, 0
@@ -1027,10 +1030,65 @@ entry:
   ret i64 %3
 }
 
+; 2 occurrences:
+; opencc/optimized/louds-trie.cc.ll
+; opencc/optimized/tail.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000078(i64 %0) #0 {
+entry:
+  %1 = shl nuw nsw i64 %0, 1
+  %2 = icmp samesign ugt i64 %0, 1152921504606846975
+  %3 = select i1 %2, i64 2305843009213693951, i64 %1
+  ret i64 %3
+}
+
+; 4 occurrences:
+; assimp/optimized/glTF2Exporter.cpp.ll
+; assimp/optimized/glTFExporter.cpp.ll
+; quantlib/optimized/svd.ll
+; wasmtime-rs/optimized/4u85yh8sn1llpfha.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000018(i64 %0) #0 {
+entry:
+  %1 = shl i64 %0, 4
+  %2 = icmp samesign ugt i64 %0, 1152921504606846975
+  %3 = select i1 %2, i64 -1, i64 %1
+  ret i64 %3
+}
+
+; 19 occurrences:
+; ceres/optimized/covariance_impl.cc.ll
+; ceres/optimized/dynamic_sparse_normal_cholesky_solver.cc.ll
+; ceres/optimized/eigensparse.cc.ll
+; ceres/optimized/reorder_program.cc.ll
+; g2o/optimized/slam2d_linear.cpp.ll
+; g2o/optimized/solver_eigen.cpp.ll
+; g2o/optimized/solver_slam2d_linear.cpp.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
+; meshlab/optimized/cube_style_single_iteration.cpp.ll
+; meshlab/optimized/filter_geodesic.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
+; meshlab/optimized/filter_texture.cpp.ll
+; meshlab/optimized/filter_unsharp.cpp.ll
+; openexr/optimized/ImfTiledRgbaFile.cpp.ll
+; pybind11/optimized/test_eigen_matrix.cpp.ll
+; quantlib/optimized/andreasenhugevolatilityinterpl.ll
+; quantlib/optimized/svd.ll
+; regex-rs/optimized/3ixfkxlmcuecmmus.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000058(i64 %0) #0 {
+entry:
+  %1 = shl nuw i64 %0, 3
+  %2 = icmp samesign ugt i64 %0, 2305843009213693951
+  %3 = select i1 %2, i64 -1, i64 %1
+  ret i64 %3
+}
+
 ; 1 occurrences:
 ; luau/optimized/isocline.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000036(i64 %0) #0 {
+define i64 @func0000000000000066(i64 %0) #0 {
 entry:
   %1 = shl nuw nsw i64 %0, 1
   %2 = icmp slt i64 %0, 1
@@ -1038,29 +1096,26 @@ entry:
   ret i64 %3
 }
 
-; 3 occurrences:
-; clamav/optimized/htmlnorm.c.ll
-; cpython/optimized/obmalloc.ll
-; mimalloc/optimized/options.c.ll
+; 1 occurrences:
+; boost/optimized/approximately_equals.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000006(i64 %0) #0 {
+define i64 @func0000000000000021(i64 %0) #0 {
 entry:
-  %1 = shl i64 %0, 2
-  %2 = icmp slt i64 %0, 0
-  %3 = select i1 %2, i64 0, i64 %1
+  %1 = shl nsw i64 %0, 1
+  %2 = icmp eq i64 %0, 0
+  %3 = select i1 %2, i64 1, i64 %1
   ret i64 %3
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; grpc/optimized/chttp2_transport.cc.ll
-; libevent/optimized/http.c.ll
 ; z3/optimized/sat_asymm_branch.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(i64 %0) #0 {
+define i64 @func000000000000002a(i64 %0) #0 {
 entry:
   %1 = shl nsw i64 %0, 1
-  %2 = icmp sgt i64 %0, 1800
-  %3 = select i1 %2, i64 3600, i64 %1
+  %2 = icmp sgt i64 %0, 1073741823
+  %3 = select i1 %2, i64 2147483647, i64 %1
   ret i64 %3
 }
 
@@ -1091,7 +1146,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/cff.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0) #0 {
+define i64 @func0000000000000026(i64 %0) #0 {
 entry:
   %1 = shl nsw i64 %0, 16
   %2 = icmp slt i64 %0, -32767
@@ -1102,7 +1157,7 @@ entry:
 ; 1 occurrences:
 ; graphviz/optimized/closest.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(i64 %0) #0 {
+define i64 @func0000000000000041(i64 %0) #0 {
 entry:
   %1 = shl nuw i64 %0, 1
   %2 = icmp eq i64 %0, 0

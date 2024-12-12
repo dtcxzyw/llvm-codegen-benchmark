@@ -13,7 +13,9 @@ entry:
   ret i1 %1
 }
 
-; 4 occurrences:
+; 6 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; openvdb/optimized/LevelSetMorph.cc.ll
 ; openvdb/optimized/LevelSetTracker.cc.ll
 ; quantlib/optimized/gaussian1dcapfloorengine.ll

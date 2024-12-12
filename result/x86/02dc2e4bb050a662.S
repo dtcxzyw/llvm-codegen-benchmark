@@ -6,9 +6,9 @@ func0000000000000000:                   # @func0000000000000000
 	xorl	%edi, %eax
 	retq
 func0000000000000002:                   # @func0000000000000002
-	leal	(,%rdx,4), %ecx
-	andl	$52428, %ecx                    # imm = 0xCCCC
+	shll	$4, %edx
+	andl	$61680, %edx                    # imm = 0xF0F0
 	movzwl	%si, %eax
 	xorl	%edi, %eax
-	xorl	%ecx, %eax
+	xorl	%edx, %eax
 	retq

@@ -1,8 +1,6 @@
 
-; 7 occurrences:
+; 5 occurrences:
 ; cpython/optimized/dtoa.ll
-; darktable/optimized/introspection_bilateral.cc.ll
-; darktable/optimized/introspection_tonemap.cc.ll
 ; hermes/optimized/dtoa.c.ll
 ; jq/optimized/jv_dtoa.ll
 ; libquic/optimized/dtoa.cc.ll

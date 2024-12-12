@@ -11,3 +11,9 @@ func0000000000000018:                   # @func0000000000000018
 	orl	%esi, %eax
 	andl	%edi, %eax
 	retq
+func0000000000000028:                   # @func0000000000000028
+	testb	%dl, %dl
+	setns	%al
+	orb	%sil, %al
+	andb	%dil, %al
+	retq

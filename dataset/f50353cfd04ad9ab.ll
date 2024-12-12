@@ -1,5 +1,5 @@
 
-; 26 occurrences:
+; 27 occurrences:
 ; abseil-cpp/optimized/symbolize.cc.ll
 ; clamav/optimized/yara_grammar.c.ll
 ; folly/optimized/HugePages.cpp.ll
@@ -14,6 +14,7 @@
 ; hdf5/optimized/H5LTparse.c.ll
 ; luajit/optimized/minilua.ll
 ; luau/optimized/lstrlib.cpp.ll
+; opencv/optimized/onnx_importer.cpp.ll
 ; php/optimized/json_parser.ll
 ; php/optimized/phpdbg_parser.ll
 ; php/optimized/zend_ini_parser.ll
@@ -37,7 +38,7 @@ entry:
   ret ptr %7
 }
 
-; 168 occurrences:
+; 165 occurrences:
 ; llvm/optimized/MicrosoftDemangle.cpp.ll
 ; llvm/optimized/X86AsmParser.cpp.ll
 ; mold/optimized/cmdline.cc.ALPHA.cc.ll
@@ -145,13 +146,10 @@ entry:
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -266,10 +264,39 @@ entry:
   ret ptr %7
 }
 
+; 3 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; luau/optimized/lstrlib.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000007(ptr %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = ptrtoint ptr %1 to i64
+  %5 = sub i64 %4, %3
+  %6 = getelementptr i8, ptr %0, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 1
+  ret ptr %7
+}
+
+; 2 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/path_traits.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = ptrtoint ptr %1 to i64
+  %5 = sub i64 %4, %3
+  %6 = getelementptr i8, ptr %0, i64 %5
+  %7 = getelementptr i8, ptr %6, i64 4
+  ret ptr %7
+}
+
 ; 1 occurrences:
 ; lodepng/optimized/lodepng.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, ptr %1, ptr %2) #0 {
+define ptr @func000000000000000f(ptr %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64

@@ -7,13 +7,13 @@
 ; openssl/optimized/libcrypto-shlib-pvkfmt.ll
 ; openssl/optimized/loader_attic-dso-pvkfmt.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000da(i32 %0, ptr %1, i32 %2) #0 {
+define ptr @func00000000000000ff(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = zext nneg i32 %0 to i64
-  %6 = getelementptr nusw i8, ptr %4, i64 %5
-  %7 = getelementptr nusw i8, ptr %6, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %4, i64 %5
+  %7 = getelementptr nusw nuw i8, ptr %6, i64 %5
   ret ptr %7
 }
 
@@ -27,26 +27,26 @@ entry:
 ; llvm/optimized/OpenMPClause.cpp.ll
 ; php/optimized/scdf.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000004a(i32 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000006f(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i64, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i64, ptr %1, i64 %3
   %5 = zext i32 %0 to i64
-  %6 = getelementptr nusw i64, ptr %4, i64 %5
-  %7 = getelementptr nusw i64, ptr %6, i64 %5
+  %6 = getelementptr nusw nuw i64, ptr %4, i64 %5
+  %7 = getelementptr nusw nuw i64, ptr %6, i64 %5
   ret ptr %7
 }
 
 ; 1 occurrences:
 ; brotli/optimized/compound_dictionary.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(i32 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000007f(i32 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i32, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i32, ptr %1, i64 %3
   %5 = zext nneg i32 %0 to i64
-  %6 = getelementptr nusw i16, ptr %4, i64 %5
-  %7 = getelementptr nusw i32, ptr %6, i64 %5
+  %6 = getelementptr nusw nuw i16, ptr %4, i64 %5
+  %7 = getelementptr nusw nuw i32, ptr %6, i64 %5
   ret ptr %7
 }
 

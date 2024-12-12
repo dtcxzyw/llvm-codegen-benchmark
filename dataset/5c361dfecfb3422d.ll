@@ -3,6 +3,7 @@
 ; abc/optimized/absRefSelect.c.ll
 ; abc/optimized/darCore.c.ll
 ; abc/optimized/giaIso.c.ll
+; boost/optimized/gregorian.ll
 ; cmake/optimized/cmCTestCoverageHandler.cxx.ll
 ; cmake/optimized/cmCTestGIT.cxx.ll
 ; eastl/optimized/EADateTime.cpp.ll
@@ -16,7 +17,6 @@
 ; icu/optimized/indiancal.ll
 ; icu/optimized/normalizer2impl.ll
 ; jq/optimized/builtin.ll
-; libquic/optimized/random.c.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
@@ -42,7 +42,7 @@
 ; zxing/optimized/PDFCodewordDecoder.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0) #0 {
+define i1 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, 1900
   %2 = srem i32 %1, 400
@@ -50,7 +50,8 @@ entry:
   ret i1 %3
 }
 
-; 7 occurrences:
+; 9 occurrences:
+; boost/optimized/gregorian.ll
 ; icu/optimized/indiancal.ll
 ; jq/optimized/builtin.ll
 ; openssl/optimized/asn1_time_test-bin-a_time.ll
@@ -58,8 +59,9 @@ entry:
 ; openssl/optimized/libcrypto-lib-a_time.ll
 ; openssl/optimized/libcrypto-shlib-a_time.ll
 ; php/optimized/cdf_time.ll
+; zed-rs/optimized/4hdn1csvepxizqbxhztzuw0uw.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0) #0 {
+define i1 @func000000000000002c(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, 1900
   %2 = srem i32 %1, 100
@@ -85,10 +87,9 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i32 %0) #0 {
 entry:
-  %1 = add i32 %0, 1
-  %2 = and i32 %1, 127
-  %3 = icmp eq i32 %2, 0
-  ret i1 %3
+  %1 = and i32 %0, 127
+  %2 = icmp eq i32 %1, 127
+  ret i1 %2
 }
 
 ; 6 occurrences:
@@ -99,7 +100,7 @@ entry:
 ; libquic/optimized/exponentiation.c.ll
 ; proj/optimized/isea.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0) #0 {
+define i1 @func000000000000002a(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, 1
   %2 = srem i32 %1, 1000
@@ -107,7 +108,7 @@ entry:
   ret i1 %3
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; abseil-cpp/optimized/civil_time.cc.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time.cc.ll
@@ -119,12 +120,11 @@ entry:
 ; cpython/optimized/marshal.ll
 ; icu/optimized/calendar.ll
 ; icu/optimized/chnsecal.ll
-; icu/optimized/gregoimp.ll
 ; icu/optimized/hebrwcal.ll
 ; icu/optimized/islamcal.ll
 ; luau/optimized/loslib.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0) #0 {
+define i1 @func0000000000000026(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -1
   %2 = srem i32 %1, 12
@@ -133,21 +133,21 @@ entry:
 }
 
 ; 9 occurrences:
+; boost/optimized/gregorian.ll
 ; icu/optimized/calendar.ll
 ; icu/optimized/gregocal.ll
 ; icu/optimized/hebrwcal.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
 ; meshlab/optimized/filter_trioptimize.cpp.ll
-; nuttx/optimized/lib_strftime.c.ll
 ; openusd/optimized/loopPatchBuilder.cpp.ll
 ; wireshark/optimized/msg_ulmap.c.ll
 ; zxing/optimized/DMHighLevelEncoder.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i32 %0) #0 {
 entry:
-  %1 = add i32 %0, 1
-  %2 = srem i32 %1, 6
-  %3 = icmp slt i32 %2, 1
+  %1 = add i32 %0, 700
+  %2 = srem i32 %1, 7
+  %3 = icmp slt i32 %2, 4
   ret i1 %3
 }
 

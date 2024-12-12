@@ -13,7 +13,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/drm_dp_helper.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000016(i8 %0, i16 %1) #0 {
+define i8 @func0000000000000026(i8 %0, i16 %1) #0 {
 entry:
   %2 = or disjoint i8 %0, 4
   %3 = icmp slt i16 %1, 0
@@ -24,7 +24,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/heapam.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000011(i8 %0, i16 %1) #0 {
+define i8 @func0000000000000021(i8 %0, i16 %1) #0 {
 entry:
   %2 = or disjoint i8 %0, 32
   %3 = icmp eq i16 %1, 0

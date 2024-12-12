@@ -1,10 +1,16 @@
-func000000000000004a:                   # @func000000000000004a
+func000000000000004e:                   # @func000000000000004e
 	sh1add	a1, a1, a1
 	addiw	a1, a1, 3
 	sh2add	a0, a1, a0
 	addi	a0, a0, 4
 	ret
-func000000000000000a:                   # @func000000000000000a
+func0000000000000042:                   # @func0000000000000042
+	sh1add	a1, a1, a1
+	addiw	a1, a1, 3
+	sh3add	a0, a1, a0
+	addi	a0, a0, 8
+	ret
+func000000000000000e:                   # @func000000000000000e
 	li	a2, 122
 	mul	a1, a1, a2
 	lui	a2, 305

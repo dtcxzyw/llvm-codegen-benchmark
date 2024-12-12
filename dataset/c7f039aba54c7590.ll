@@ -3,7 +3,7 @@
 ; delta-rs/optimized/s2xrj2sh770tx8d.ll
 ; rust-analyzer-rs/optimized/6ix1w6o1enhavym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000168(i64 %0, i64 %1) #0 {
+define i1 @func00000000000002c8(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nuw i64 %0, %1
   %3 = lshr exact i64 %2, 1
@@ -20,7 +20,7 @@ entry:
 ; darktable/optimized/PentaxDecompressor.cpp.ll
 ; darktable/optimized/TableLookUp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = lshr i64 %2, 1
@@ -34,14 +34,12 @@ entry:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000141(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %0, %1
-  %3 = lshr i64 %2, 1
-  %4 = add nuw i64 %3, 1
-  %5 = and i64 %4, 3
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %3 = and i64 %2, 6
+  %4 = icmp eq i64 %3, 6
+  ret i1 %4
 }
 
 ; 13 occurrences:
@@ -59,23 +57,20 @@ entry:
 ; crow/optimized/example_ws.cpp.ll
 ; crow/optimized/helloworld.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
-  %3 = lshr i64 %2, 4
-  %4 = add nuw nsw i64 %3, 1
-  %5 = and i64 %4, 3
-  %6 = icmp eq i64 %5, 0
-  ret i1 %6
+  %3 = and i64 %2, 48
+  %4 = icmp eq i64 %3, 48
+  ret i1 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; entt/optimized/dense_map.cpp.ll
 ; entt/optimized/dense_set.cpp.ll
 ; g2o/optimized/edge_se2_lotsofxy.cpp.ll
-; llvm/optimized/InstCombineCalls.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = lshr exact i64 %2, 3
@@ -88,7 +83,7 @@ entry:
 ; 1 occurrences:
 ; delta-rs/optimized/s2xrj2sh770tx8d.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000161(i64 %0, i64 %1) #0 {
+define i1 @func00000000000002c1(i64 %0, i64 %1) #0 {
 entry:
   ret i1 false
 }
@@ -96,7 +91,7 @@ entry:
 ; 1 occurrences:
 ; delta-rs/optimized/s2xrj2sh770tx8d.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000171(i64 %0, i64 %1) #0 {
+define i1 @func00000000000002e1(i64 %0, i64 %1) #0 {
 entry:
   ret i1 false
 }

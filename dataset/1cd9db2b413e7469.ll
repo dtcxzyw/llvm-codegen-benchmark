@@ -52,10 +52,9 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; darktable/optimized/DngDecoder.cpp.ll
 ; llvm/optimized/CombinerHelper.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i64 %0, i64 %1) #0 {
 entry:
@@ -65,8 +64,7 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; 4 occurrences:
 ; spike/optimized/smalda.ll
 ; spike/optimized/smaldrs.ll
 ; spike/optimized/smalds.ll

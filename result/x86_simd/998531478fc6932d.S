@@ -15,7 +15,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000111:                   # @func0000000000000111
+func0000000000000421:                   # @func0000000000000421
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqb	.LCPI0_0(%rip), %xmm1, %k1
 	vpsubd	%ymm0, %ymm2, %ymm0 {%k1}
@@ -42,7 +42,7 @@ func0000000000000111:                   # @func0000000000000111
 	.zero	1
 .LCPI1_1:
 	.long	99                              # 0x63
-func0000000000000118:                   # @func0000000000000118
+func0000000000000428:                   # @func0000000000000428
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpeqb	.LCPI1_0(%rip), %xmm1, %k1
 	vpsubd	%ymm0, %ymm2, %ymm0 {%k1}
@@ -50,7 +50,7 @@ func0000000000000118:                   # @func0000000000000118
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000011a:                   # @func000000000000011a
+func000000000000042a:                   # @func000000000000042a
 	vpxor	%xmm2, %xmm2, %xmm2
 	vptestnmb	%xmm1, %xmm1, %k1
 	vpsubd	%ymm0, %ymm2, %ymm0 {%k1}

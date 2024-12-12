@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 24 occurrences:
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/wide_multiply_test.cc.ll
 ; libquic/optimized/p224-64.c.ll
@@ -23,6 +23,7 @@
 ; spike/optimized/vmadc_vxm.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; wolfssl/optimized/sp_int.c.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; Function Attrs: nounwind
 define i128 @func000000000000001e(i128 %0, i128 %1, i128 %2) #0 {
 entry:
@@ -32,7 +33,8 @@ entry:
   ret i128 %5
 }
 
-; 10 occurrences:
+; 11 occurrences:
+; boost/optimized/to_chars.ll
 ; libquic/optimized/p224-64.c.ll
 ; libquic/optimized/p256-64.c.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
@@ -66,9 +68,10 @@ entry:
   ret i128 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; abseil-cpp/optimized/generators_test.cc.ll
 ; abseil-cpp/optimized/wide_multiply_test.cc.ll
+; boost/optimized/approximately_equals.ll
 ; libquic/optimized/p224-64.c.ll
 ; quickjs/optimized/libbf.ll
 ; Function Attrs: nounwind
@@ -76,7 +79,7 @@ define i128 @func0000000000000014(i128 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = add nuw i128 %1, %2
   %4 = add nuw i128 %3, %0
-  %5 = lshr i128 %4, 56
+  %5 = lshr i128 %4, 64
   ret i128 %5
 }
 

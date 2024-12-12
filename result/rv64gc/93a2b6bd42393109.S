@@ -11,7 +11,7 @@ func0000000000000002:                   # @func0000000000000002
 .LBB1_2:                                # %entry
 	srli	a0, a0, 8
 	ret
-func0000000000000010:                   # @func0000000000000010
+func0000000000000030:                   # @func0000000000000030
 	srli	a2, a2, 32
 	bnez	a2, .LBB2_2
 	mv	a0, a1
@@ -31,10 +31,25 @@ func000000000000000c:                   # @func000000000000000c
 .LBB4_2:                                # %entry
 	srli	a0, a0, 63
 	ret
-func0000000000000008:                   # @func0000000000000008
-	li	a3, 4
-	bltu	a2, a3, .LBB5_2
+func0000000000000010:                   # @func0000000000000010
+	li	a3, -1
+	slli	a3, a3, 32
+	addi	a3, a3, -1
+	bltu	a3, a2, .LBB5_2
 	mv	a0, a1
 .LBB5_2:                                # %entry
+	srli	a0, a0, 16
+	ret
+func0000000000000008:                   # @func0000000000000008
+	li	a3, 4
+	bltu	a2, a3, .LBB6_2
+	mv	a0, a1
+.LBB6_2:                                # %entry
 	srli	a0, a0, 32
+	ret
+func0000000000000018:                   # @func0000000000000018
+	beqz	a2, .LBB7_2
+	mv	a1, a0
+.LBB7_2:                                # %entry
+	srli	a0, a1, 57
 	ret

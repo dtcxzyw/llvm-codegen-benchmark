@@ -25,11 +25,7 @@ entry:
   ret i32 %6
 }
 
-; 14 occurrences:
-; abc/optimized/cecSatG3.c.ll
-; abc/optimized/extraUtilBitMatrix.c.ll
-; abc/optimized/ifMan.c.ll
-; abc/optimized/ivyCutTrav.c.ll
+; 10 occurrences:
 ; duckdb/optimized/ub_duckdb_execution_index.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; jemalloc/optimized/sc.ll

@@ -1,9 +1,7 @@
 
-; 6 occurrences:
+; 4 occurrences:
 ; brotli/optimized/backward_references_hq.c.ll
-; linux/optimized/hwvalid.ll
 ; linux/optimized/i915_scatterlist.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; opencc/optimized/bit-vector.cc.ll
 ; qemu/optimized/block_bochs.c.ll
 ; Function Attrs: nounwind
@@ -39,7 +37,7 @@ entry:
   %2 = lshr i32 %1, 3
   %narrow = add nuw nsw i32 %2, 12
   %3 = zext nneg i32 %narrow to i64
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   ret i64 %4
 }
 

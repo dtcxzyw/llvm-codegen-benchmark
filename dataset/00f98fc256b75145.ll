@@ -1,10 +1,9 @@
 
-; 20 occurrences:
+; 19 occurrences:
 ; hdf5/optimized/H5Tconv_integer.c.ll
 ; libpng/optimized/pngrtran.c.ll
 ; linux/optimized/early-quirks.ll
 ; linux/optimized/neighbour.ll
-; linux/optimized/uprobes.ll
 ; luau/optimized/main.cpp.ll
 ; minetest/optimized/mapnode.cpp.ll
 ; nlohmann_json/optimized/unit.cpp.ll

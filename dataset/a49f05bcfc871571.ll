@@ -1,5 +1,5 @@
 
-; 64 occurrences:
+; 65 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; abseil-cpp/optimized/charset_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
@@ -59,6 +59,7 @@
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; rand-rs/optimized/qpqwmytuo9t2y51.ll
+; spike/optimized/triggers.ll
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; yalantinglibs/optimized/test_messages_proto2.struct_pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.struct_pb.cc.ll

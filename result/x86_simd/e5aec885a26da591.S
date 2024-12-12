@@ -1,4 +1,4 @@
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpnltd	%ymm2, %ymm0, %k1
 	vpmovdw	%ymm1, %xmm0 {%k1} {z}
@@ -20,7 +20,7 @@ func0000000000000001:                   # @func0000000000000001
 	vmovdqa	%xmm1, %xmm0
 	vzeroupper
 	retq
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	vpxor	%xmm2, %xmm2, %xmm2
 	vpcmpnltd	%ymm2, %ymm0, %k1
 	vpmovdw	%ymm1, %xmm0 {%k1} {z}
@@ -45,7 +45,7 @@ func000000000000000c:                   # @func000000000000000c
 	retq
 .LCPI4_0:
 	.long	14                              # 0xe
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpcmpneqd	.LCPI4_0(%rip){1to8}, %ymm0, %k1
 	vpmovdw	%ymm1, %xmm0 {%k1} {z}
 	vzeroupper
@@ -56,7 +56,7 @@ func0000000000000006:                   # @func0000000000000006
 	vpmovdw	%ymm1, %xmm0 {%k1} {z}
 	vzeroupper
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vptestmd	%ymm0, %ymm0, %k1
 	vpmovdw	%ymm1, %xmm0 {%k1} {z}
 	vzeroupper
@@ -99,7 +99,7 @@ func000000000000000a:                   # @func000000000000000a
 	retq
 .LCPI9_0:
 	.long	4294901759                      # 0xfffeffff
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	vpmovdw	%ymm1, %xmm1
 	vpcmpnleud	.LCPI9_0(%rip){1to8}, %ymm0, %k1
 	vpcmpeqd	%xmm0, %xmm0, %xmm0
@@ -118,7 +118,7 @@ func0000000000000028:                   # @func0000000000000028
 	.short	365                             # 0x16d
 	.short	365                             # 0x16d
 	.short	365                             # 0x16d
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpmovdw	%ymm1, %xmm1
 	vpcmpeqd	.LCPI10_0(%rip){1to8}, %ymm0, %k1
 	vmovdqu16	.LCPI10_1(%rip), %xmm1 {%k1} # xmm1 {%k1} = [365,365,365,365,365,365,365,365]

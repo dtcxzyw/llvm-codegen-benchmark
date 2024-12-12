@@ -1,5 +1,10 @@
 
-; 51 occurrences:
+; 56 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
 ; casadi/optimized/kinsol.c.ll
 ; g2o/optimized/edge_sba_scale.cpp.ll
 ; g2o/optimized/types_seven_dof_expmap.cpp.ll
@@ -54,9 +59,9 @@
 ; Function Attrs: nounwind
 define double @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
-  %3 = fneg double %1
-  %4 = fmul double %3, %2
-  %5 = fmul double %4, %0
+  %3 = fneg double %2
+  %4 = fmul double %1, %3
+  %5 = fmul double %0, %4
   ret double %5
 }
 

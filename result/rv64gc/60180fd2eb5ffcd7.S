@@ -1,6 +1,6 @@
-func0000000000000014:                   # @func0000000000000014
-	addiw	a2, a2, -65
-	sltiu	a2, a2, 26
+func0000000000000024:                   # @func0000000000000024
+	addiw	a2, a2, -6
+	sltiu	a2, a2, 5
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

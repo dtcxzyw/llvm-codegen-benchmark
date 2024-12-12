@@ -76,6 +76,12 @@ func0000000000000071:                   # @func0000000000000071
 	setle	%al
 	addl	%edi, %eax
 	retq
+func0000000000000066:                   # @func0000000000000066
+	xorl	%eax, %eax
+	cmpl	%edx, %esi
+	setl	%al
+	addl	%edi, %eax
+	retq
 func00000000000000c0:                   # @func00000000000000c0
 	xorl	%eax, %eax
 	cmpl	%edx, %esi

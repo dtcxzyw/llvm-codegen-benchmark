@@ -12,30 +12,30 @@ func0000000000000008:                   # @func0000000000000008
 	addiw	a0, a0, -1
 .LBB1_2:                                # %entry
 	ret
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	seqz	a0, a0
-	addi	a0, a0, -1
-	and	a0, a0, a1
-	ret
-func0000000000000026:                   # @func0000000000000026
-	slti	a0, a0, 0
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
 func000000000000000a:                   # @func000000000000000a
 	lui	a2, 524288
 	addiw	a3, a2, -2
-	bge	a3, a0, .LBB4_2
+	bge	a3, a0, .LBB3_2
 	addiw	a1, a2, -1
-.LBB4_2:                                # %entry
+.LBB3_2:                                # %entry
 	mv	a0, a1
 	ret
-func0000000000000031:                   # @func0000000000000031
+func0000000000000046:                   # @func0000000000000046
+	slti	a0, a0, 0
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	ret
+func0000000000000061:                   # @func0000000000000061
 	seqz	a0, a0
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	srli	a2, a0, 32
 	mv	a0, a1
 	bnez	a2, .LBB6_2
@@ -50,18 +50,18 @@ func0000000000000004:                   # @func0000000000000004
 .LBB7_2:                                # %entry
 	mv	a0, a1
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	blez	a0, .LBB8_2
 	li	a1, 1
 .LBB8_2:                                # %entry
 	mv	a0, a1
 	ret
-func000000000000003a:                   # @func000000000000003a
+func000000000000006a:                   # @func000000000000006a
 	sgtz	a0, a0
 	neg	a0, a0
 	or	a0, a0, a1
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	li	a2, -1
 	srli	a2, a2, 1
 	bne	a0, a2, .LBB10_2
@@ -75,7 +75,7 @@ func0000000000000006:                   # @func0000000000000006
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	lui	a2, 477
 	addi	a2, a2, -667
 	slli	a2, a2, 41
@@ -84,23 +84,37 @@ func0000000000000038:                   # @func0000000000000038
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
-func0000000000000034:                   # @func0000000000000034
+func0000000000000018:                   # @func0000000000000018
+	lui	a2, 1
+	bgeu	a2, a0, .LBB13_2
+	lui	a1, 1
+.LBB13_2:                               # %entry
+	mv	a0, a1
+	ret
+func0000000000000064:                   # @func0000000000000064
 	srli	a0, a0, 56
 	snez	a0, a0
 	addi	a0, a0, -1
 	or	a0, a0, a1
 	ret
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	slti	a0, a0, 0
 	addi	a0, a0, -1
 	and	a0, a0, a1
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000054:                   # @func0000000000000054
+	lui	a2, 209715
+	addiw	a2, a2, 820
+	sltu	a0, a0, a2
+	addi	a0, a0, -1
+	and	a0, a0, a1
+	ret
+func0000000000000024:                   # @func0000000000000024
 	li	a2, -1
 	slli	a2, a2, 32
-	bgeu	a0, a2, .LBB15_2
+	bgeu	a0, a2, .LBB17_2
 	lui	a1, 524288
 	addiw	a1, a1, -1
-.LBB15_2:                               # %entry
+.LBB17_2:                               # %entry
 	mv	a0, a1
 	ret

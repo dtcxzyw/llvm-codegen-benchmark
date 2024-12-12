@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; velox/optimized/LeadLag.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000401(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000801(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 3
   %4 = trunc i64 %3 to i32
@@ -18,7 +18,7 @@ entry:
 ; raylib/optimized/rtext.c.ll
 ; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000019a(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000032a(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = trunc nuw i64 %3 to i32
@@ -31,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaChecking.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000511(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000a21(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 3
   %4 = trunc i64 %3 to i32
@@ -47,7 +47,7 @@ entry:
 ; gromacs/optimized/vsite.cpp.ll
 ; opencv/optimized/fast_line_detector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000516(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000a26(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 2
   %4 = trunc i64 %3 to i32
@@ -63,7 +63,7 @@ entry:
 ; gromacs/optimized/updategroups.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000406(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000806(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 2
   %4 = trunc i64 %3 to i32
@@ -80,7 +80,7 @@ entry:
 ; gromacs/optimized/readir.cpp.ll
 ; gromacs/optimized/updategroups.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000506(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000a06(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 2
   %4 = trunc i64 %3 to i32
@@ -93,7 +93,7 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/mtop_util.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000606(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000c06(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 2
   %4 = trunc i64 %3 to i32

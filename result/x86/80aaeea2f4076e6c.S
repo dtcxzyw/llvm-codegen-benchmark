@@ -1,10 +1,10 @@
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	leal	1(%rsi), %ecx
 	cmpl	$1073741824, %edi               # imm = 0x40000000
 	movl	$32, %eax
 	cmovael	%ecx, %eax
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	leal	1(%rsi), %ecx
 	testl	%edi, %edi
 	movl	$32, %eax
@@ -16,29 +16,29 @@ func0000000000000001:                   # @func0000000000000001
 	movl	$1, %eax
 	cmovnel	%ecx, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	leal	-1(%rsi), %eax
 	testl	%edi, %edi
 	cmovel	%edi, %eax
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	leal	-1(%rsi), %ecx
 	xorl	%eax, %eax
 	testl	%edi, %edi
 	cmovnsl	%ecx, %eax
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	leal	1(%rsi), %eax
 	testl	%edi, %edi
 	cmovel	%edi, %eax
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	leal	-48(%rsi), %ecx
 	cmpl	$64, %edi
 	movl	$16, %eax
 	cmovael	%ecx, %eax
 	retq
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	leal	2(%rsi), %ecx
 	xorl	%eax, %eax
 	testl	%edi, %edi
@@ -50,19 +50,13 @@ func0000000000000006:                   # @func0000000000000006
 	movl	$7, %eax
 	cmovnsl	%ecx, %eax
 	retq
-func0000000000000018:                   # @func0000000000000018
-	leal	-5(%rsi), %ecx
-	cmpl	$6900, %edi                     # imm = 0x1AF4
-	movl	$63, %eax
-	cmovbl	%ecx, %eax
-	retq
-func0000000000000038:                   # @func0000000000000038
+func0000000000000068:                   # @func0000000000000068
 	leal	5(%rsi), %ecx
 	cmpl	$5900, %edi                     # imm = 0x170C
 	movl	$63, %eax
 	cmovbl	%ecx, %eax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	leal	1(%rsi), %ecx
 	xorl	%eax, %eax
 	cmpl	$17, %edi
@@ -74,19 +68,25 @@ func0000000000000004:                   # @func0000000000000004
 	movl	$16, %eax
 	cmovael	%ecx, %eax
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000078:                   # @func0000000000000078
+	leal	1(%rsi), %ecx
+	cmpl	$56, %edi
+	movl	$8, %eax
+	cmovbl	%ecx, %eax
+	retq
+func0000000000000044:                   # @func0000000000000044
 	leal	1(%rsi), %ecx
 	xorl	%eax, %eax
 	cmpl	$4, %edi
 	cmovael	%ecx, %eax
 	retq
-func000000000000000a:                   # @func000000000000000a
+func0000000000000028:                   # @func0000000000000028
 	leal	-1(%rsi), %ecx
 	xorl	%eax, %eax
-	testl	%edi, %edi
-	cmovlel	%ecx, %eax
+	cmpl	$2, %edi
+	cmovbl	%ecx, %eax
 	retq
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	leal	256(%rsi), %ecx
 	cmpl	$2048, %edi                     # imm = 0x800
 	movl	$2048, %eax                     # imm = 0x800
@@ -98,27 +98,39 @@ func000000000000000c:                   # @func000000000000000c
 	movl	$1, %eax
 	cmovel	%ecx, %eax
 	retq
-func000000000000003a:                   # @func000000000000003a
+func000000000000006a:                   # @func000000000000006a
 	leal	1(%rsi), %ecx
 	xorl	%eax, %eax
 	testl	%edi, %edi
 	cmovlel	%ecx, %eax
 	retq
-func000000000000001c:                   # @func000000000000001c
-	leal	1(%rsi), %ecx
+func000000000000000a:                   # @func000000000000000a
+	leal	-2333(%rsi), %ecx
+	xorl	%eax, %eax
 	testl	%edi, %edi
-	movl	$1, %eax
-	cmovel	%ecx, %eax
+	cmovlel	%ecx, %eax
 	retq
-func000000000000003c:                   # @func000000000000003c
-	leal	1(%rsi), %ecx
-	testl	%edi, %edi
-	movl	$1, %eax
-	cmovel	%ecx, %eax
+func0000000000000074:                   # @func0000000000000074
+	leal	128(%rsi), %ecx
+	cmpl	$128, %edi
+	movl	$128, %eax
+	cmovael	%ecx, %eax
+	retq
+func0000000000000034:                   # @func0000000000000034
+	leal	-4194304(%rsi), %ecx
+	xorl	%eax, %eax
+	cmpl	$4194304, %edi                  # imm = 0x400000
+	cmovael	%ecx, %eax
 	retq
 func000000000000002c:                   # @func000000000000002c
-	leal	4(%rsi), %ecx
+	leal	1(%rsi), %ecx
 	testl	%edi, %edi
-	movl	$7, %eax
+	movl	$1, %eax
+	cmovel	%ecx, %eax
+	retq
+func000000000000006c:                   # @func000000000000006c
+	leal	1(%rsi), %ecx
+	testl	%edi, %edi
+	movl	$1, %eax
 	cmovel	%ecx, %eax
 	retq

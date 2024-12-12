@@ -10,7 +10,8 @@ entry:
   ret i8 %4
 }
 
-; 24 occurrences:
+; 23 occurrences:
+; boost/optimized/url_base.ll
 ; c3c/optimized/lexer.c.ll
 ; hyperscan/optimized/fdr.c.ll
 ; lief/optimized/ssl_msg.c.ll
@@ -26,9 +27,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha256.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha1_hw.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha256_hw.ll
-; openssl/optimized/libssl-lib-ssl3_meth.ll
 ; openssl/optimized/libssl-lib-tls1_meth.ll
-; openssl/optimized/libssl-shlib-ssl3_meth.ll
 ; openssl/optimized/libssl-shlib-tls1_meth.ll
 ; openssl/optimized/ossltest-dso-e_ossltest.ll
 ; php/optimized/pcre2_jit_compile.ll

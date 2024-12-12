@@ -6,7 +6,7 @@ func0000000000000001:                   # @func0000000000000001
 	vor.vx	v8, v10, a0
 	vmerge.vvm	v8, v8, v10, v0
 	ret
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vor.vv	v10, v10, v12
 	bseti	a0, zero, 48
@@ -14,7 +14,7 @@ func0000000000000021:                   # @func0000000000000021
 	vor.vx	v8, v10, a0
 	vmerge.vvm	v8, v8, v10, v0
 	ret
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vor.vv	v10, v10, v12
 	li	a0, 255

@@ -1,5 +1,5 @@
 
-; 321 occurrences:
+; 315 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; assimp/optimized/3DSLoader.cpp.ll
 ; casadi/optimized/options.cpp.ll
@@ -21,11 +21,6 @@
 ; folly/optimized/dynamic.cpp.ll
 ; gromacs/optimized/partition.cpp.ll
 ; grpc/optimized/event_log.cc.ll
-; hermes/optimized/DependencyExtractor.cpp.ll
-; hermes/optimized/JSLibInternal.cpp.ll
-; hermes/optimized/JSRegExp.cpp.ll
-; hermes/optimized/RegexParser.cpp.ll
-; hermes/optimized/RegexSerialization.cpp.ll
 ; hermes/optimized/Statistic.cpp.ll
 ; hermes/optimized/UniquingStringLiteralTable.cpp.ll
 ; hyperscan/optimized/ng_misc_opt.cpp.ll
@@ -142,7 +137,6 @@
 ; llvm/optimized/WasmObjectWriter.cpp.ll
 ; llvm/optimized/WindowScheduler.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
-; luau/optimized/Reduce.cpp.ll
 ; meshlab/optimized/additionalgui.cpp.ll
 ; meshlab/optimized/paintbox.cpp.ll
 ; meshlab/optimized/qualitymapperdialog.cpp.ll
@@ -340,21 +334,20 @@ entry:
 ; llvm/optimized/ValueEnumerator.cpp.ll
 ; openjdk/optimized/jfrEventClassTransformer.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000038(ptr %0, ptr %1, i64 %2) #0 {
+define i64 @func000000000000003c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 1
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = ptrtoint ptr %4 to i64
   %6 = ptrtoint ptr %0 to i64
   %7 = sub i64 %5, %6
   ret i64 %7
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; llvm/optimized/MemProfReader.cpp.ll
 ; openjdk/optimized/psParallelCompact.ll
-; php/optimized/cdf.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(ptr %0, ptr %1, i64 %2) #0 {
 entry:
@@ -367,17 +360,17 @@ entry:
 }
 
 ; 2 occurrences:
-; eastl/optimized/BenchmarkSort.cpp.ll
-; oiio/optimized/deepdata.cpp.ll
+; boost/optimized/url_base.ll
+; php/optimized/cdf.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000010(ptr %0, ptr %1, i64 %2) #0 {
+define i64 @func000000000000000c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %.idx = shl i64 %2, 3
-  %3 = getelementptr i8, ptr %1, i64 %.idx
-  %4 = ptrtoint ptr %3 to i64
-  %5 = ptrtoint ptr %0 to i64
-  %6 = sub i64 %4, %5
-  ret i64 %6
+  %3 = shl i64 %2, 3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = ptrtoint ptr %4 to i64
+  %6 = ptrtoint ptr %0 to i64
+  %7 = sub i64 %5, %6
+  ret i64 %7
 }
 
 ; 2 occurrences:
@@ -394,8 +387,7 @@ entry:
   ret i64 %7
 }
 
-; 2 occurrences:
-; eastl/optimized/BenchmarkSort.cpp.ll
+; 1 occurrences:
 ; gromacs/optimized/topology.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000030(ptr %0, ptr %1, i64 %2) #0 {

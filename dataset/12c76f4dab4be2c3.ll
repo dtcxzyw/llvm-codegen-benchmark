@@ -30,10 +30,9 @@ entry:
   ret i64 %6
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; arrow/optimized/grouper.cc.ll
 ; libquic/optimized/mul.c.ll
-; openblas/optimized/dorgr2.c.ll
 ; openssl/optimized/libcrypto-lib-bn_sqr.ll
 ; openssl/optimized/libcrypto-shlib-bn_sqr.ll
 ; Function Attrs: nounwind
@@ -125,8 +124,7 @@ entry:
   ret i64 %6
 }
 
-; 2 occurrences:
-; openblas/optimized/dorgr2.c.ll
+; 1 occurrences:
 ; opencv/optimized/seam_finders.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i32 %0, i32 %1, i64 %2) #0 {

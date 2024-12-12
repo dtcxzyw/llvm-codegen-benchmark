@@ -480,7 +480,7 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/IdentifierTable.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0) #0 {
+define i1 @func0000000000000028(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 2
   %2 = add nsw i64 %1, %0
@@ -491,11 +491,11 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/ftlzw.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0) #0 {
+define i1 @func0000000000000078(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 1
   %2 = add nuw nsw i64 %1, %0
-  %3 = icmp ugt i64 %2, 65532
+  %3 = icmp samesign ugt i64 %2, 65532
   ret i1 %3
 }
 

@@ -23,7 +23,7 @@ entry:
 define i8 @func0000000000000004(i1 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   %4 = zext i1 %3 to i8
   ret i8 %4
 }

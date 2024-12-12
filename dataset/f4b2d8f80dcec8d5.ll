@@ -1,5 +1,5 @@
 
-; 72 occurrences:
+; 70 occurrences:
 ; abseil-cpp/optimized/zipf_distribution_test.cc.ll
 ; ceres/optimized/parameter_block_ordering.cc.ll
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
@@ -24,9 +24,7 @@
 ; llvm/optimized/MergeFunctions.cpp.ll
 ; llvm/optimized/SymbolizableObjectFile.cpp.ll
 ; llvm/optimized/WasmObjectWriter.cpp.ll
-; mold/optimized/arch-i386.cc.ll
 ; mold/optimized/arch-ppc64v1.cc.ll
-; mold/optimized/arch-sh4.cc.ll
 ; mold/optimized/input-files.cc.ALPHA.cc.ll
 ; mold/optimized/input-files.cc.ARM64.cc.ll
 ; mold/optimized/input-files.cc.LOONGARCH64.cc.ll
@@ -73,11 +71,11 @@
 ; xgboost/optimized/input_split_base.cc.ll
 ; xgboost/optimized/quantile.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = xor i64 %3, -1
-  %5 = add nsw i64 %4, %2
+  %5 = add nsw i64 %2, %4
   %6 = icmp ult i64 %0, %1
   %7 = select i1 %6, i64 %3, i64 %5
   ret i64 %7
@@ -178,20 +176,33 @@ entry:
 ; quantlib/optimized/isdacdsengine.ll
 ; velox/optimized/tz.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000026(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000046(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = xor i64 %3, -1
-  %5 = add nsw i64 %4, %2
+  %5 = add nsw i64 %2, %4
   %6 = icmp slt i64 %0, %1
   %7 = select i1 %6, i64 %3, i64 %5
   ret i64 %7
 }
 
-; 20 occurrences:
+; 2 occurrences:
+; mold/optimized/arch-i386.cc.ll
+; mold/optimized/arch-sh4.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = lshr i64 %2, 1
+  %4 = xor i64 %3, -1
+  %5 = add nsw i64 %2, %4
+  %6 = icmp samesign ult i64 %0, %1
+  %7 = select i1 %6, i64 %3, i64 %5
+  ret i64 %7
+}
+
+; 19 occurrences:
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; hermes/optimized/UniquingStringLiteralTable.cpp.ll
-; hyperscan/optimized/ng_misc_opt.cpp.ll
 ; hyperscan/optimized/ng_repeat.cpp.ll
 ; lightgbm/optimized/dataset.cpp.ll
 ; lightgbm/optimized/gbdt_model_text.cpp.ll
@@ -210,11 +221,11 @@ entry:
 ; opencv/optimized/aruco_detector.cpp.ll
 ; vcpkg/optimized/registries.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = xor i64 %3, -1
-  %5 = add nsw i64 %4, %2
+  %5 = add nsw i64 %2, %4
   %6 = icmp ugt i64 %0, %1
   %7 = select i1 %6, i64 %3, i64 %5
   ret i64 %7
@@ -227,12 +238,25 @@ entry:
 ; llvm/optimized/CGOpenMPRuntime.cpp.ll
 ; llvm/optimized/LoopCacheAnalysis.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000002a(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func000000000000004a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = xor i64 %3, -1
-  %5 = add nsw i64 %4, %2
+  %5 = add nsw i64 %2, %4
   %6 = icmp sgt i64 %0, %1
+  %7 = select i1 %6, i64 %3, i64 %5
+  ret i64 %7
+}
+
+; 1 occurrences:
+; hyperscan/optimized/ng_misc_opt.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000058(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = lshr i64 %2, 1
+  %4 = xor i64 %3, -1
+  %5 = add nsw i64 %2, %4
+  %6 = icmp samesign ugt i64 %0, %1
   %7 = select i1 %6, i64 %3, i64 %5
   ret i64 %7
 }

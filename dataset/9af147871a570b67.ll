@@ -38,7 +38,7 @@ entry:
   %sh.diff = lshr i64 %1, 29
   %tr.sh.diff = trunc i64 %sh.diff to i32
   %2 = and i32 %tr.sh.diff, 56
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   ret i32 %3
 }
 
@@ -50,7 +50,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = shl i32 %2, 10
   %4 = and i32 %3, 2088960
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   ret i32 %5
 }
 

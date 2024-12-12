@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 22 occurrences:
 ; delta-rs/optimized/1x96nto90vd3u3mo.ll
 ; delta-rs/optimized/4say4x9grcidoih4.ll
 ; delta-rs/optimized/5f0eiaabmf6x2cpj.ll
@@ -21,13 +21,26 @@
 ; ockam-rs/optimized/6i1m1ipgbjjr3bk.ll
 ; ockam-rs/optimized/8vw3dw8isly7xg2.ll
 ; openjdk/optimized/psParallelCompact.ll
+; zed-rs/optimized/driumlpfhwzx6147be2mcsi4u.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -32
   %4 = sub i64 %3, %1
   %5 = lshr i64 %4, 5
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp samesign ugt i64 %5, %0
+  ret i1 %6
+}
+
+; 1 occurrences:
+; openjdk/optimized/psParallelCompact.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -524288
+  %4 = sub i64 %3, %1
+  %5 = lshr i64 %4, 19
+  %6 = icmp samesign ult i64 %5, %0
   ret i1 %6
 }
 
@@ -48,12 +61,12 @@ entry:
 ; protobuf/optimized/map_field.cc.ll
 ; protobuf/optimized/struct.pb.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000029(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000059(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967294
   %4 = sub nsw i64 %3, %1
   %5 = lshr i64 %4, 2
-  %6 = icmp uge i64 %5, %0
+  %6 = icmp samesign uge i64 %5, %0
   ret i1 %6
 }
 

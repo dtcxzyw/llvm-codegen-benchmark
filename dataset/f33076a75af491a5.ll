@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; flac/optimized/metadata.cpp.ll
 ; git/optimized/add-patch.ll
 ; git/optimized/daemon.ll
@@ -7,7 +7,6 @@
 ; imgui/optimized/imgui.cpp.ll
 ; jq/optimized/jv.ll
 ; libwebp/optimized/cwebp.c.ll
-; linux/optimized/dns_key.ll
 ; linux/optimized/nf_conntrack_sip.ll
 ; llvm/optimized/LLLexer.cpp.ll
 ; openjdk/optimized/mallocLimit.ll

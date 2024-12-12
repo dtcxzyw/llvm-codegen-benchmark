@@ -1,5 +1,7 @@
 
-%struct.Gia_Obj_t_.2763699 = type <{ i64, i32 }>
+%struct.Gia_Obj_t_.2875971 = type <{ i64, i32 }>
+%struct.Wlc_Obj_t_.2876161 = type { i16, i32, i32, i32, %union.anon.2876162 }
+%union.anon.2876162 = type { [1 x ptr] }
 
 ; 2 occurrences:
 ; qemu/optimized/hw_audio_intel-hda.c.ll
@@ -29,7 +31,7 @@ entry:
   ret i64 %7
 }
 
-; 138 occurrences:
+; 128 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcHieGia.c.ll
 ; abc/optimized/abcRec3.c.ll
@@ -48,7 +50,6 @@ entry:
 ; abc/optimized/bmcBmcS.c.ll
 ; abc/optimized/bmcFault.c.ll
 ; abc/optimized/bmcICheck.c.ll
-; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/cecCec.c.ll
 ; abc/optimized/cecCorr.c.ll
 ; abc/optimized/cecPat.c.ll
@@ -71,7 +72,6 @@ entry:
 ; abc/optimized/giaCSatOld.c.ll
 ; abc/optimized/giaCSatP.c.ll
 ; abc/optimized/giaCTas.c.ll
-; abc/optimized/giaCof.c.ll
 ; abc/optimized/giaCone.c.ll
 ; abc/optimized/giaCut.c.ll
 ; abc/optimized/giaDfs.c.ll
@@ -84,7 +84,6 @@ entry:
 ; abc/optimized/giaForce.c.ll
 ; abc/optimized/giaHash.c.ll
 ; abc/optimized/giaIf.c.ll
-; abc/optimized/giaIff.c.ll
 ; abc/optimized/giaIso.c.ll
 ; abc/optimized/giaIso3.c.ll
 ; abc/optimized/giaJf.c.ll
@@ -102,7 +101,6 @@ entry:
 ; abc/optimized/giaResub2.c.ll
 ; abc/optimized/giaRetime.c.ll
 ; abc/optimized/giaSatEdge.c.ll
-; abc/optimized/giaScript.c.ll
 ; abc/optimized/giaShow.c.ll
 ; abc/optimized/giaShrink.c.ll
 ; abc/optimized/giaShrink6.c.ll
@@ -122,14 +120,12 @@ entry:
 ; abc/optimized/wlcBlast.c.ll
 ; abc/optimized/wlcMem.c.ll
 ; abc/optimized/wlcNtk.c.ll
-; abc/optimized/wlcWriteVer.c.ll
 ; abc/optimized/wlnWlc.c.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/cmesh.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; meshlab/optimized/edit_point.cpp.ll
-; meshlab/optimized/eigen_mesh_conversions.cpp.ll
 ; meshlab/optimized/filter_ao.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
@@ -163,18 +159,62 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/ml_scene_gl_shared_data_context.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
+; protobuf/optimized/message_builder.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000044(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = getelementptr nusw %struct.Gia_Obj_t_.2875971, ptr %1, i64 %2
+  %4 = ptrtoint ptr %3 to i64
+  %5 = sub i64 %4, %0
+  %6 = sdiv exact i64 %5, 12
+  %7 = shl i64 %6, 32
+  ret i64 %7
+}
+
+; 36 occurrences:
+; abc/optimized/abcDar.c.ll
+; abc/optimized/absIter.c.ll
+; abc/optimized/acecFadds.c.ll
+; abc/optimized/cbaNtk.c.ll
+; abc/optimized/giaBalAig.c.ll
+; abc/optimized/giaBound.c.ll
+; abc/optimized/giaCof.c.ll
+; abc/optimized/giaCut.c.ll
+; abc/optimized/giaDup.c.ll
+; abc/optimized/giaEmbed.c.ll
+; abc/optimized/giaFanout.c.ll
+; abc/optimized/giaForce.c.ll
+; abc/optimized/giaIf.c.ll
+; abc/optimized/giaIff.c.ll
+; abc/optimized/giaIso3.c.ll
+; abc/optimized/giaJf.c.ll
+; abc/optimized/giaLf.c.ll
+; abc/optimized/giaMf.c.ll
+; abc/optimized/giaMuxes.c.ll
+; abc/optimized/giaRetime.c.ll
+; abc/optimized/giaScript.c.ll
+; abc/optimized/giaShow.c.ll
+; abc/optimized/giaShrink.c.ll
+; abc/optimized/giaShrink6.c.ll
+; abc/optimized/giaSimBase.c.ll
+; abc/optimized/giaUtil.c.ll
+; abc/optimized/wlcNtk.c.ll
+; abc/optimized/wlcWriteVer.c.ll
+; meshlab/optimized/eigen_mesh_conversions.cpp.ll
+; meshlab/optimized/filter_isoparametrization.cpp.ll
+; meshlab/optimized/mlsplugin.cpp.ll
 ; protobuf/optimized/dynamic_message.cc.ll
 ; protobuf/optimized/field.cc.ll
 ; protobuf/optimized/generated_message_reflection.cc.ll
 ; protobuf/optimized/message_builder.cc.ll
 ; protobuf/optimized/message_builder_lite.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000044(i64 %0, ptr %1, i64 %2) #0 {
+define i64 @func0000000000000064(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw %struct.Gia_Obj_t_.2763699, ptr %1, i64 %2
+  %3 = getelementptr nusw nuw %struct.Wlc_Obj_t_.2876161, ptr %1, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = sub i64 %4, %0
-  %6 = sdiv exact i64 %5, 12
+  %6 = sdiv exact i64 %5, 24
   %7 = shl i64 %6, 32
   ret i64 %7
 }

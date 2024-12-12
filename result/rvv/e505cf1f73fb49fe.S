@@ -14,7 +14,7 @@ func0000000000000180:                   # @func0000000000000180
 	lui	a0, 1048574
 	addi	a0, a0, -1808
 	vmadd.vx	v12, a0, v9
-	vadd.vv	v10, v12, v8
+	vadd.vv	v10, v8, v12
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vzext.vf2	v8, v10
 	ret

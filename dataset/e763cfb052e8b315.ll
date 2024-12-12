@@ -1,6 +1,7 @@
 
-; 18 occurrences:
+; 19 occurrences:
 ; assimp/optimized/MDLLoader.cpp.ll
+; boost/optimized/attribute_name.ll
 ; cmake/optimized/cmDependsC.cxx.ll
 ; cmake/optimized/json_reader.cpp.ll
 ; draco/optimized/kd_tree_attributes_encoder.cc.ll

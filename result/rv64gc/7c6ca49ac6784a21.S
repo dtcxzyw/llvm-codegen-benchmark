@@ -19,21 +19,12 @@ func0000000000000022:                   # @func0000000000000022
 	fld	fa5, %lo(.LCPI1_0)(a0)
 	flt.d	a0, fa0, fa5
 	ret
-func000000000000002a:                   # @func000000000000002a
-	fsub.d	fa5, fa1, fa2
-	flt.d	a0, fa0, fa5
-	bnez	a0, .LBB2_2
-	fmv.d	fa0, fa5
-.LBB2_2:                                # %entry
-	fmv.d.x	fa5, zero
-	fle.d	a0, fa0, fa5
-	ret
 func00000000000000ac:                   # @func00000000000000ac
 	fsub.d	fa5, fa1, fa2
 	fle.d	a0, fa0, fa5
-	bnez	a0, .LBB3_2
+	bnez	a0, .LBB2_2
 	fmv.d	fa0, fa5
-.LBB3_2:                                # %entry
+.LBB2_2:                                # %entry
 	fmv.d.x	fa5, zero
 	fle.d	a0, fa5, fa0
 	ret

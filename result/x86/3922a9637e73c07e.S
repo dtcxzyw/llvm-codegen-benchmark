@@ -10,7 +10,7 @@ func000000000000000c:                   # @func000000000000000c
 	xorl	%edi, %eax
 	andb	$1, %al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	xorl	%edx, %esi
 	xorl	%edi, %esi
 	testb	$6, %sil

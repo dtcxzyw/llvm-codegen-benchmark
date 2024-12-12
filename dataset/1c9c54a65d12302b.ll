@@ -33,7 +33,7 @@ entry:
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; yosys/optimized/mem.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0) #0 {
+define i1 @func0000000000000028(i64 %0) #0 {
 entry:
   %1 = shl i64 %0, 32
   %2 = ashr exact i64 %1, 32
@@ -53,7 +53,7 @@ entry:
 ; redis/optimized/emap.sym.ll
 ; wireshark/optimized/packet-btmesh.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0) #0 {
+define i1 @func0000000000000021(i64 %0) #0 {
 entry:
   %1 = shl i64 %0, 56
   %2 = ashr exact i64 %1, 56

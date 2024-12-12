@@ -55,7 +55,7 @@
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
 ; wasmtime-rs/optimized/4190jy0hpyvhha7p.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000008aa(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000214a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, %0
   %4 = sub i64 %1, %3
@@ -73,11 +73,11 @@ entry:
 ; ceres/optimized/schur_eliminator_2_d_d.cc.ll
 ; ceres/optimized/schur_eliminator_d_d_d.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000058a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000170a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, %0
   %4 = sub i64 %1, %3
-  %5 = icmp ugt i64 %4, 3
+  %5 = icmp samesign ugt i64 %4, 3
   %6 = icmp sgt i64 %0, 0
   %7 = and i1 %6, %5
   ret i1 %7

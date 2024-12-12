@@ -4,7 +4,7 @@
 ; icu/optimized/ucharstriebuilder.ll
 ; recastnavigation/optimized/MeshLoaderObj.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0, i32 %1, i32 %2) #0 {
+define i64 @func0000000000000026(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp slt i32 %1, 0

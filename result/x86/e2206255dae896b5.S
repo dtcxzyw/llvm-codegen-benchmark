@@ -9,8 +9,8 @@ func000000000000000c:                   # @func000000000000000c
 	movl	%edi, %eax
 	movl	%esi, %ecx
 	notl	%ecx
-	testb	$1, %dl
-	cmovel	%esi, %eax
 	testl	$2139095040, %ecx               # imm = 0x7F800000
+	cmovel	%esi, %eax
+	testb	$1, %dl
 	cmovel	%esi, %eax
 	retq

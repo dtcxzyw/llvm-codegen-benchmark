@@ -31,15 +31,14 @@ entry:
   ret i64 %5
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; darktable/optimized/amaze.cc.ll
-; gromacs/optimized/dorg2r.cpp.ll
 ; gromacs/optimized/localtopologychecker.cpp.ll
-; gromacs/optimized/sorg2r.cpp.ll
 ; openblas/optimized/dsbgst.c.ll
 ; openjdk/optimized/mlib_ImageConvClearEdge_Bit.ll
 ; openmpi/optimized/coll_base_bcast.ll
 ; pbrt-v4/optimized/lights.cpp.ll
+; pbrt-v4/optimized/pspec.cpp.ll
 ; wireshark/optimized/main_window_layout.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {

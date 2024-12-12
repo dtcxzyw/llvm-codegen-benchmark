@@ -4,7 +4,7 @@ func0000000000000019:                   # @func0000000000000019
 	xorl	%edx, %edx
 	retq
 func0000000000000000:                   # @func0000000000000000
-	leaq	(%rdi,%rsi,2), %rax
+	leaq	(%rdi,%rsi,4), %rax
 	xorl	%edx, %edx
 	retq
 func0000000000000010:                   # @func0000000000000010

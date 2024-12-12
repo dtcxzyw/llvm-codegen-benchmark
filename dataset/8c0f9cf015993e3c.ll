@@ -1,5 +1,13 @@
 
-; 18 occurrences:
+; 26 occurrences:
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_sph_geo.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; graphviz/optimized/QuadTree.c.ll
 ; graphviz/optimized/legal.c.ll
@@ -26,11 +34,12 @@ entry:
   ret i1 %4
 }
 
-; 33 occurrences:
+; 34 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/gaussian_distribution_test.cc.ll
 ; abseil-cpp/optimized/uniform_real_distribution_test.cc.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; cpython/optimized/dtoa.ll
 ; graphviz/optimized/shapes.c.ll
 ; hermes/optimized/dtoa.c.ll
@@ -102,7 +111,8 @@ entry:
   ret i1 %4
 }
 
-; 63 occurrences:
+; 64 occurrences:
+; boost/optimized/intersection_box.ll
 ; cmake/optimized/fty_num.c.ll
 ; g2o/optimized/data_queue.cpp.ll
 ; graphviz/optimized/emit.c.ll
@@ -174,7 +184,10 @@ entry:
   ret i1 %4
 }
 
-; 51 occurrences:
+; 54 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/expand_on_spheroid.ll
 ; casadi/optimized/qrsqp.cpp.ll
 ; darktable/optimized/filtering.c.ll
 ; gromacs/optimized/sm_insolidangle.cpp.ll
@@ -234,8 +247,10 @@ entry:
   ret i1 %4
 }
 
-; 47 occurrences:
+; 49 occurrences:
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/intersection_pl_l.ll
 ; casadi/optimized/idas_spbcgs.c.ll
 ; casadi/optimized/idas_spgmr.c.ll
 ; casadi/optimized/idas_sptfqmr.c.ll
@@ -308,10 +323,10 @@ entry:
 
 ; 8 occurrences:
 ; arrow/optimized/compare.cc.ll
+; boost/optimized/area_box_sg.ll
 ; opencv/optimized/chessboard.cpp.ll
 ; opencv/optimized/svm.cpp.ll
 ; openusd/optimized/drawModeAdapter.cpp.ll
-; postgres/optimized/geqo_pool.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; velox/optimized/ArrayContains.cpp.ll
 ; verilator/optimized/V3ParseImp.cpp.ll
@@ -323,7 +338,7 @@ entry:
   ret i1 %4
 }
 
-; 20 occurrences:
+; 21 occurrences:
 ; graphviz/optimized/compound.c.ll
 ; graphviz/optimized/emit.c.ll
 ; graphviz/optimized/gvevent.c.ll
@@ -341,6 +356,7 @@ entry:
 ; quantlib/optimized/longstaffschwartzmultipathpricer.ll
 ; quantlib/optimized/zabr.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
+; typst-rs/optimized/40w6rezair915kkd.ll
 ; xgboost/optimized/updater_colmaker.cc.ll
 ; z3/optimized/q_queue.cpp.ll
 ; z3/optimized/qi_queue.cpp.ll

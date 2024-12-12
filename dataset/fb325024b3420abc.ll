@@ -1,5 +1,5 @@
 
-; 51 occurrences:
+; 50 occurrences:
 ; abc/optimized/abcRestruct.c.ll
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/fraigFeed.c.ll
@@ -41,7 +41,6 @@
 ; meshlab/optimized/filter_trioptimize.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mold/optimized/arch-arm64.cc.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; openjdk/optimized/sharedRuntimeTrans.ll
 ; postgres/optimized/wparser_def.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll

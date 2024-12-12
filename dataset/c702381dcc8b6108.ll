@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 39 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/giaIf.c.ll
 ; abc/optimized/ifDec16.c.ll
@@ -23,6 +23,7 @@
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/CodeViewDebug.cpp.ll
 ; llvm/optimized/PPCLinux.cpp.ll
+; lvgl/optimized/lv_calendar.ll
 ; openjdk/optimized/cmscgats.ll
 ; openspiel/optimized/Moves.cpp.ll
 ; openspiel/optimized/coin_game.cc.ll
@@ -47,7 +48,7 @@ entry:
   ret i32 %4
 }
 
-; 254 occurrences:
+; 255 occurrences:
 ; abc/optimized/cnf_reader.c.ll
 ; abc/optimized/xsatCnfReader.c.ll
 ; arrow/optimized/strptime.c.ll
@@ -141,6 +142,7 @@ entry:
 ; llvm/optimized/PPDirectives.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
 ; llvm/optimized/Stmt.cpp.ll
+; lvgl/optimized/lv_draw_label.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; nuttx/optimized/lib_strtold.c.ll

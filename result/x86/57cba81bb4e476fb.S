@@ -22,6 +22,12 @@ func0000000000000004:                   # @func0000000000000004
 	setae	%al
 	orb	%dil, %al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	xorb	$1, %dil
+	cmpl	$127, %esi
+	seta	%al
+	orb	%dil, %al
+	retq
 func0000000000000008:                   # @func0000000000000008
 	xorb	$1, %dil
 	cmpl	$32, %esi

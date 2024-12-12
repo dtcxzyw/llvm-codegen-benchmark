@@ -1,11 +1,12 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; clamav/optimized/special.c.ll
 ; hdf5/optimized/H5HFcache.c.ll
 ; hdf5/optimized/H5HFhdr.c.ll
 ; linux/optimized/drm_dsc_helper.ll
 ; openjdk/optimized/Index12Gray.ll
 ; openjdk/optimized/Index8Gray.ll
+; php/optimized/decode.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003f(i64 %0, i8 %1) #0 {
 entry:

@@ -1,5 +1,10 @@
 
-; 12 occurrences:
+; 17 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
 ; cpython/optimized/mathmodule.ll
 ; gromacs/optimized/dlasv2.cpp.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll

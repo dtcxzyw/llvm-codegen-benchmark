@@ -31,7 +31,7 @@ entry:
 define i8 @func000000000000003e(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 4
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = trunc nuw i32 %3 to i8
   ret i8 %4
 }
@@ -85,12 +85,13 @@ entry:
 define i8 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 4
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = trunc i32 %3 to i8
   ret i8 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/src.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; crow/optimized/example.cpp.ll
 ; linux/optimized/rate.ll
@@ -99,7 +100,7 @@ entry:
 define i8 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 4
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = trunc i32 %3 to i8
   ret i8 %4
 }
@@ -111,7 +112,7 @@ entry:
 define i8 @func0000000000000010(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 4
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = trunc i32 %3 to i8
   ret i8 %4
 }
@@ -124,7 +125,7 @@ entry:
 define i8 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 4
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = trunc i32 %3 to i8
   ret i8 %4
 }

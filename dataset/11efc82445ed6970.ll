@@ -72,9 +72,8 @@ entry:
   ret i1 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; llvm/optimized/SplitKit.cpp.ll
-; proj/optimized/factory.cpp.ll
 ; ripgrep-rs/optimized/1ukn63sdzqaif6pp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000010(i64 %0, i1 %1) #0 {

@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 17 occurrences:
 ; gromacs/optimized/sim_util.cpp.ll
 ; libevent/optimized/ws.c.ll
 ; linux/optimized/uhci-hcd.ll
@@ -8,10 +8,8 @@
 ; llvm/optimized/PPMacroExpansion.cpp.ll
 ; node/optimized/libnode.endpoint.ll
 ; openjdk/optimized/nmtDCmd.ll
-; openmpi/optimized/mpiext_rocm.ll
 ; openspiel/optimized/rbc.cc.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_gcm_siv_hw.ll
-; postgres/optimized/print.ll
 ; softposit-rs/optimized/1e6z9tsqxvhrpdzq.ll
 ; softposit-rs/optimized/kf9u47qfx5x7qom.ll
 ; wireshark/optimized/packet-btle.c.ll

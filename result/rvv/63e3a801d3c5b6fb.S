@@ -45,7 +45,7 @@ func0000000000000005:                   # @func0000000000000005
 	lui	a0, 425984
 	vmerge.vxm	v12, v12, a0, v0
 	li	a0, 4
-	vor.vv	v10, v12, v10
+	vor.vv	v10, v10, v12
 	vor.vv	v8, v10, v8
 	bseti	a0, a0, 40
 	vor.vx	v8, v8, a0

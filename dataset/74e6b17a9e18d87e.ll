@@ -1,5 +1,5 @@
 
-; 19 occurrences:
+; 20 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; linux/optimized/i915_gem_execbuffer.ll
@@ -16,11 +16,12 @@
 ; llvm/optimized/SemaObjC.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
+; minetest/optimized/base64.cpp.ll
 ; quickjs/optimized/quickjs.ll
 ; regex-rs/optimized/33whcn8n29l9c6ys.ll
 ; ruby/optimized/weakmap.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000042(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 31
   %3 = icmp eq i64 %2, 27
@@ -35,7 +36,7 @@ entry:
 ; llvm/optimized/SemaDecl.cpp.ll
 ; qemu/optimized/hw_dma_sifive_pdma.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000302(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1
   %3 = icmp eq i64 %2, 0
@@ -64,10 +65,10 @@ entry:
 ; llvm/optimized/ItaniumMangle.cpp.ll
 ; llvm/optimized/MicrosoftMangle.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000798(i64 %0, i64 %1) #0 {
+define i1 @func0000000000001b18(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = icmp ne i64 %3, 0
   ret i1 %4
 }
@@ -75,7 +76,7 @@ entry:
 ; 1 occurrences:
 ; lief/optimized/bignum.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000318(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 255
   %3 = or i64 %2, %0
@@ -86,7 +87,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000782(i64 %0, i64 %1) #0 {
+define i1 @func0000000000001b02(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 7
   %3 = icmp ne i64 %2, 0
@@ -99,7 +100,7 @@ entry:
 ; llvm/optimized/SemaDecl.cpp.ll
 ; opencv/optimized/ts_arrtest.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000058(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 7
   %3 = icmp eq i64 %2, 1
@@ -111,7 +112,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaDecl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000622(i64 %0, i64 %1) #0 {
+define i1 @func0000000000001842(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 3
   %3 = icmp eq i64 %2, 2
@@ -123,7 +124,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaM68k.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000790(i64 %0, i64 %1) #0 {
+define i1 @func0000000000001b10(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1
   %3 = icmp ne i64 %2, 0
@@ -135,37 +136,11 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/vsprintf.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000638(i64 %0, i64 %1) #0 {
+define i1 @func0000000000001858(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 255
   %3 = icmp eq i64 %2, 16
   %4 = icmp ne i64 %0, 0
-  %5 = or i1 %4, %3
-  ret i1 %5
-}
-
-; 3 occurrences:
-; postgres/optimized/d2s.ll
-; postgres/optimized/d2s_shlib.ll
-; postgres/optimized/d2s_srv.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000698(i64 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 2046
-  %3 = icmp eq i64 %2, 0
-  %4 = icmp ne i64 %0, 0
-  %5 = or i1 %4, %3
-  ret i1 %5
-}
-
-; 1 occurrences:
-; cpython/optimized/dtoa.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000788(i64 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 1048575
-  %3 = icmp ne i64 %2, 0
-  %4 = icmp ult i64 %0, 9007199254740992
   %5 = or i1 %4, %3
   ret i1 %5
 }

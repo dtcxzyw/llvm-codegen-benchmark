@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 26 occurrences:
 ; darktable/optimized/histogram.c.ll
 ; darktable/optimized/introspection_basecurve.c.ll
 ; darktable/optimized/introspection_basicadj.c.ll
@@ -17,6 +17,7 @@
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
+; lvgl/optimized/lv_demo_widgets.ll
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
 ; opencv/optimized/dis_flow.cpp.ll

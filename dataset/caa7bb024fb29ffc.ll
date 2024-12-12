@@ -1,5 +1,5 @@
 
-; 218 occurrences:
+; 219 occurrences:
 ; assimp/optimized/3DSConverter.cpp.ll
 ; assimp/optimized/ACLoader.cpp.ll
 ; assimp/optimized/AMFImporter_Postprocess.cpp.ll
@@ -46,6 +46,7 @@
 ; postgres/optimized/d2s.ll
 ; postgres/optimized/d2s_shlib.ll
 ; postgres/optimized/d2s_srv.ll
+; proxygen/optimized/HTTPConnectorWithFizz.cpp.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; quickjs/optimized/libbf.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
@@ -253,16 +254,6 @@ entry:
   %2 = and i64 %1, -4
   %3 = or disjoint i64 %2, 1
   ret i64 %3
-}
-
-; 1 occurrences:
-; proxygen/optimized/HTTPConnectorWithFizz.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000003(i64 %0) #0 {
-entry:
-  %1 = shl i64 %0, 4
-  %2 = or disjoint i64 %1, 8
-  ret i64 %2
 }
 
 attributes #0 = { nounwind }

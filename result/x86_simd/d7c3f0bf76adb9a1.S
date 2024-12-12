@@ -19,7 +19,7 @@ func0000000000000000:                   # @func0000000000000000
 	vpmovw2m	%xmm0, %k1
 	vpandd	.LCPI0_3(%rip){1to4}, %xmm2, %xmm0
 	vpmovzxwd	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero,xmm0[4],zero,xmm0[5],zero,xmm0[6],zero,xmm0[7],zero
-	vpor	%ymm1, %ymm0, %ymm0
+	vpor	%ymm0, %ymm1, %ymm0
 	vpord	.LCPI0_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	vpord	.LCPI0_2(%rip){1to8}, %ymm0, %ymm0
 	retq
@@ -44,7 +44,7 @@ func0000000000000007:                   # @func0000000000000007
 	vpmovw2m	%xmm0, %k1
 	vpandd	.LCPI1_3(%rip){1to4}, %xmm2, %xmm0
 	vpmovzxwd	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero,xmm0[4],zero,xmm0[5],zero,xmm0[6],zero,xmm0[7],zero
-	vpor	%ymm1, %ymm0, %ymm0
+	vpor	%ymm0, %ymm1, %ymm0
 	vpord	.LCPI1_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	vpord	.LCPI1_2(%rip){1to8}, %ymm0, %ymm0
 	retq

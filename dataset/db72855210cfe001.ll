@@ -39,7 +39,7 @@ entry:
   ret i32 %4
 }
 
-; 41 occurrences:
+; 37 occurrences:
 ; abc/optimized/acbMfs.c.ll
 ; cvc5/optimized/fc_simplex.cpp.ll
 ; cvc5/optimized/monomial_check.cpp.ll
@@ -59,10 +59,7 @@ entry:
 ; ncnn/optimized/reshape_x86_avx512.cpp.ll
 ; ncnn/optimized/reshape_x86_fma.cpp.ll
 ; oiio/optimized/tiffinput.cpp.ll
-; openblas/optimized/dlarrv.c.ll
 ; opencv/optimized/datastructs.cpp.ll
-; opencv/optimized/lkpyramid.cpp.ll
-; opencv/optimized/rlof_localflow.cpp.ll
 ; opencv/optimized/stackblur.cpp.ll
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; opencv/optimized/stereosgbm.cpp.ll
@@ -80,7 +77,6 @@ entry:
 ; z3/optimized/nla_basics_lemmas.cpp.ll
 ; z3/optimized/nla_core.cpp.ll
 ; zxing/optimized/AZDetector.cpp.ll
-; zxing/optimized/PDFDetectionResultColumn.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i1 %1, i32 %2) #0 {
 entry:

@@ -5,7 +5,7 @@ func0000000000000001:                   # @func0000000000000001
 	vand.vx	v10, v10, a0
 	bseti	a0, zero, 52
 	vor.vx	v10, v10, a0
-	vand.vv	v8, v10, v8
+	vand.vv	v8, v8, v10
 	ret
 func0000000000000000:                   # @func0000000000000000
 	lui	a0, 65535

@@ -24,6 +24,7 @@
 ; luajit/optimized/lj_ir_dyn.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
+; lvgl/optimized/lv_ime_pinyin.ll
 ; minetest/optimized/mapgen_v6.cpp.ll
 ; minetest/optimized/minimap.cpp.ll
 ; ocio/optimized/CPUProcessor.cpp.ll
@@ -49,7 +50,6 @@
 ; openusd/optimized/openexr-c.c.ll
 ; openvdb/optimized/Archive.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Half.cc.ll
 ; openvdb/optimized/LevelSetFracture.cc.ll
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
@@ -134,14 +134,12 @@ entry:
   ret i16 %2
 }
 
-; 7 occurrences:
+; 5 occurrences:
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
-; linux/optimized/e1000_main.ll
-; llvm/optimized/BitcodeWriter.cpp.ll
+; lvgl/optimized/lv_imagebutton.ll
 ; slurm/optimized/step_mgr.ll
-; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
-; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
-; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
+; typst-rs/optimized/59tuvc5m3xlovl3o.ll
+; wireshark/optimized/packet-homeplug-av.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000008(i32 %0) #0 {
 entry:
@@ -439,6 +437,19 @@ entry:
 define i16 @func0000000000000014(i32 %0) #0 {
 entry:
   %1 = icmp sgt i32 %0, -1
+  %2 = zext i1 %1 to i16
+  ret i16 %2
+}
+
+; 4 occurrences:
+; linux/optimized/e1000_main.ll
+; wasmtime-rs/optimized/3hy0ahodfyjxdbrv.ll
+; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
+; wasmtime-rs/optimized/sa4imocsqq56n3l.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000028(i32 %0) #0 {
+entry:
+  %1 = icmp samesign ult i32 %0, 256
   %2 = zext i1 %1 to i16
   ret i16 %2
 }

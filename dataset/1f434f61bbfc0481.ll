@@ -19,7 +19,7 @@ entry:
   ret i64 %3
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; freetype/optimized/ftbase.c.ll
 ; libwebp/optimized/rescaler.c.ll
@@ -28,7 +28,6 @@ entry:
 ; opencv/optimized/demosaicing.cpp.ll
 ; openjdk/optimized/g1FullCollector.ll
 ; openjdk/optimized/shenandoahFreeSet.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
 ; qemu/optimized/system_dirtylimit.c.ll
 ; wireshark/optimized/packet-lbmpdm.c.ll
 ; Function Attrs: nounwind

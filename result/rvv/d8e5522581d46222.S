@@ -4,16 +4,16 @@ func0000000000000002:                   # @func0000000000000002
 	vmseq.vi	v11, v8, 0
 	vmor.mm	v0, v10, v11
 	ret
-func0000000000000018:                   # @func0000000000000018
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmorn.mm	v10, v0, v10
-	vmsne.vi	v11, v8, 0
-	vmor.mm	v0, v10, v11
-	ret
 func000000000000000c:                   # @func000000000000000c
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmorn.mm	v10, v0, v10
 	vmsle.vi	v11, v8, 0
+	vmor.mm	v0, v10, v11
+	ret
+func0000000000000018:                   # @func0000000000000018
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmorn.mm	v10, v0, v10
+	vmsne.vi	v11, v8, 0
 	vmor.mm	v0, v10, v11
 	ret
 func0000000000000010:                   # @func0000000000000010

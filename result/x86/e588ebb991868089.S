@@ -1,8 +1,3 @@
-func0000000000000004:                   # @func0000000000000004
-	testb	$8, %sil
-	sete	%al
-	andb	%dil, %al
-	retq
 func0000000000000001:                   # @func0000000000000001
 	testb	$32, %sil
 	sete	%al

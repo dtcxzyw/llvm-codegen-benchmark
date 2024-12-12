@@ -13,7 +13,7 @@ func0000000000000000:                   # @func0000000000000000
 	vmadd.vx	v12, a0, v10
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v9, v12, 0
-	vadd.vv	v8, v9, v8
+	vadd.vv	v8, v8, v9
 	ret
 .LCPI1_0:
 	.quad	-6067343680855748867            # 0xabcc77118461cefd
@@ -29,5 +29,5 @@ func00000000000000f0:                   # @func00000000000000f0
 	vmadd.vx	v12, a0, v10
 	vsetvli	zero, zero, e32, m1, ta, ma
 	vnsrl.wi	v9, v12, 0
-	vadd.vv	v8, v9, v8
+	vadd.vv	v8, v8, v9
 	ret

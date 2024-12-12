@@ -6,7 +6,7 @@ func0000000000000001:                   # @func0000000000000001
 	vand.vi	v8, v10, -8
 	vmerge.vim	v8, v8, 0, v0
 	ret
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vsll.vi	v10, v8, 13
 	lui	a0, 14
@@ -23,7 +23,7 @@ func0000000000000006:                   # @func0000000000000006
 	vand.vi	v8, v10, -16
 	vmerge.vim	v8, v8, 0, v0
 	ret
-func00000000000000f6:                   # @func00000000000000f6
+func00000000000001e6:                   # @func00000000000001e6
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vv	v10, v8, v8
 	li	a0, 129

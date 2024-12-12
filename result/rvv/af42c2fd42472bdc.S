@@ -8,11 +8,6 @@ func0000000000000019:                   # @func0000000000000019
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v8, v8, a0
 	ret
-func0000000000000011:                   # @func0000000000000011
-	lui	a0, 12
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vand.vx	v8, v8, a0
-	ret
 func0000000000000002:                   # @func0000000000000002
 	li	a0, 128
 	vsetivli	zero, 8, e32, m2, ta, ma

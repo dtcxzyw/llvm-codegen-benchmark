@@ -6,7 +6,7 @@ func0000000000000062:                   # @func0000000000000062
 	li	a0, 60
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmsne.vi	v8, v8, 5
-	vmor.mm	v0, v8, v0
+	vmor.mm	v0, v0, v8
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vadd.vv	v8, v12, v10
 	vsra.vi	v8, v8, 5

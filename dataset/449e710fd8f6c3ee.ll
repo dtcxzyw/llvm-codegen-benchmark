@@ -1,5 +1,5 @@
 
-; 162 occurrences:
+; 164 occurrences:
 ; abseil-cpp/optimized/examples_test.cc.ll
 ; abseil-cpp/optimized/randen_engine_test.cc.ll
 ; abseil-cpp/optimized/seed_sequences_test.cc.ll
@@ -28,6 +28,8 @@
 ; assimp/optimized/XGLLoader.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; cmake/optimized/ftp.c.ll
 ; cmake/optimized/ntlm.c.ll
@@ -53,7 +55,6 @@
 ; git/optimized/kwset.ll
 ; grpc/optimized/tls_security_connector.cc.ll
 ; hermes/optimized/HadesGC.cpp.ll
-; hermes/optimized/IR.cpp.ll
 ; hermes/optimized/StringRef.cpp.ll
 ; hyperscan/optimized/Parser.cpp.ll
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
@@ -69,9 +70,7 @@
 ; llvm/optimized/DIPrinter.cpp.ll
 ; llvm/optimized/Disassembler.cpp.ll
 ; llvm/optimized/DwarfDebug.cpp.ll
-; llvm/optimized/FormatVariadic.cpp.ll
 ; llvm/optimized/MatchFilePath.cpp.ll
-; llvm/optimized/RISCVISAInfo.cpp.ll
 ; llvm/optimized/RISCVVIntrinsicUtils.cpp.ll
 ; llvm/optimized/Regex.cpp.ll
 ; llvm/optimized/SPIR.cpp.ll
@@ -104,7 +103,6 @@
 ; openssl/optimized/libcrypto-shlib-bss_mem.ll
 ; openusd/optimized/fileSystem.cpp.ll
 ; php/optimized/formatted_print.ll
-; php/optimized/math.ll
 ; php/optimized/url_scanner_ex.ll
 ; postgres/optimized/freepage.ll
 ; proxygen/optimized/ParseURL.cpp.ll
@@ -151,9 +149,13 @@
 ; sentencepiece/optimized/stringpiece.cc.ll
 ; typst-rs/optimized/3z60jkym58xbhjyi.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
-; wasmedge/optimized/vinode.cpp.ll
 ; wireshark/optimized/atap_data_model.cpp.ll
 ; wireshark/optimized/uat_model.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/7xoulo9o2q4wd1npp9yutbl3x.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/eldybx25av55fm0jlf5yq64qn.ll
 ; zstd/optimized/zstd_decompress.c.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; zstd/optimized/zstd_v02.c.ll
@@ -171,7 +173,7 @@ entry:
   ret i64 %5
 }
 
-; 10 occurrences:
+; 13 occurrences:
 ; coreutils-rs/optimized/4il3dwdvn9kvvj4p.ll
 ; coreutils-rs/optimized/594a9u59es5pyenu.ll
 ; coreutils-rs/optimized/czge978gjagq0cc.ll
@@ -182,6 +184,9 @@ entry:
 ; tokenizers-rs/optimized/2mot01sr7ebui81b.ll
 ; tokenizers-rs/optimized/40hmx6rev8evi2bx.ll
 ; tokenizers-rs/optimized/4vpw5vpiz5qnu5om.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/b0ehx4vbxawrtril1zkysl0b6.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i1 %0, i64 %1, ptr %2) #0 {
 entry:

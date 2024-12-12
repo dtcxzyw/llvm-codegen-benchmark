@@ -7,7 +7,7 @@
 ; duckdb/optimized/ub_duckdb_storage_table.cpp.ll
 ; vcpkg/optimized/paragraphs.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b4(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000164(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 12
   %3 = add nsw i64 %2, 60
@@ -19,7 +19,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestRingBuffer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000161(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 24
   %3 = add nsw i64 %2, 2

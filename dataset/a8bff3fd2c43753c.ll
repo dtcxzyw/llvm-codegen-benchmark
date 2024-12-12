@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 39 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcMini.c.ll
 ; abc/optimized/abcSat.c.ll
@@ -29,6 +29,7 @@
 ; abc/optimized/sswSat.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
+; boost/optimized/alloc_lib.ll
 ; brotli/optimized/encode.c.ll
 ; linux/optimized/syscalls.ll
 ; llvm/optimized/AArch64ISelDAGToDAG.cpp.ll
@@ -43,17 +44,16 @@ define i32 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, -2147483648
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = xor i32 %4, -2147483648
   ret i32 %5
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/bmcBCore.c.ll
-; abc/optimized/bmcLoad.c.ll
 ; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/cecSim.c.ll
 ; abc/optimized/cecSynth.c.ll
@@ -95,7 +95,7 @@ define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = and i32 %2, 15
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = xor i32 %4, 15
   ret i32 %5
 }

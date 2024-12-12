@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 12 occurrences:
 ; assimp/optimized/clipper.cpp.ll
 ; cpython/optimized/mathmodule.ll
 ; meshlab/optimized/arap.cpp.ll
@@ -7,10 +7,8 @@
 ; meshlab/optimized/filter_parametrization.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
-; openblas/optimized/dgemm_small_matrix_permit.c.ll
 ; openblas/optimized/dgemv_thread_n.c.ll
 ; openblas/optimized/dgetrf_parallel.c.ll
-; openblas/optimized/sgemm_small_matrix_permit.c.ll
 ; osqp/optimized/amd_2.c.ll
 ; php/optimized/zend_execute.ll
 ; php/optimized/zend_operators.ll

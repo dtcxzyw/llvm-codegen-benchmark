@@ -36,3 +36,17 @@ func0000000000000008:                   # @func0000000000000008
 	xori	a0, a0, 1
 	addi	a0, a0, 1
 	ret
+func0000000000000014:                   # @func0000000000000014
+	andi	a0, a0, 255
+	sltiu	a0, a0, 2
+	slli	a0, a0, 1
+	ret
+func0000000000000018:                   # @func0000000000000018
+	andi	a0, a0, 255
+	li	a1, 9
+	bltu	a1, a0, .LBB7_2
+	li	a0, 48
+	ret
+.LBB7_2:
+	li	a0, 55
+	ret

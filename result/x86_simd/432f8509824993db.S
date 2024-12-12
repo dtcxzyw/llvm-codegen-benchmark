@@ -38,15 +38,15 @@ func0000000000000001:                   # @func0000000000000001
 	vpternlogd	$236, .LCPI0_5(%rip){1to4}, %xmm1, %xmm0 # xmm0 = (xmm0 & mem) | xmm1
 	retq
 .LCPI1_0:
-	.zero	16,64
-.LCPI1_1:
 	.zero	16,96
+.LCPI1_1:
+	.zero	16,64
 .LCPI1_2:
-	.zero	4,64
-.LCPI1_3:
 	.zero	4,96
+.LCPI1_3:
+	.zero	4,64
 func0000000000000000:                   # @func0000000000000000
 	vpaddb	%xmm1, %xmm1, %xmm1
-	vpandd	.LCPI1_2(%rip){1to4}, %xmm1, %xmm1
-	vpternlogd	$236, .LCPI1_3(%rip){1to4}, %xmm1, %xmm0 # xmm0 = (xmm0 & mem) | xmm1
+	vpandd	.LCPI1_2(%rip){1to4}, %xmm0, %xmm0
+	vpternlogd	$248, .LCPI1_3(%rip){1to4}, %xmm1, %xmm0 # xmm0 = xmm0 | (xmm1 & mem)
 	retq

@@ -1,14 +1,4 @@
-func000000000000004a:                   # @func000000000000004a
-	sext.w	a1, a0
-	slli	a0, a0, 1
-	li	a2, 7
-	addiw	a0, a0, 5
-	sgtz	a1, a1
-	czero.nez	a2, a2, a1
-	czero.eqz	a0, a0, a1
-	or	a0, a0, a2
-	ret
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	sext.w	a1, a0
 	slli	a0, a0, 8
 	lui	a2, 16
@@ -28,7 +18,7 @@ func000000000000000a:                   # @func000000000000000a
 	slti	a1, a1, 2
 	czero.nez	a0, a0, a1
 	ret
-func00000000000000d8:                   # @func00000000000000d8
+func00000000000001b8:                   # @func00000000000001b8
 	sext.w	a1, a0
 	slli	a0, a0, 9
 	lui	a2, 1048574

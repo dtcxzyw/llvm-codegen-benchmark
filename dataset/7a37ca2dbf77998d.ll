@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; arrow/optimized/message.cc.ll
 ; arrow/optimized/metadata_internal.cc.ll
 ; arrow/optimized/reader.cc.ll
@@ -7,6 +7,7 @@
 ; flatbuffers/optimized/bfbs_gen_nim.cpp.ll
 ; flatbuffers/optimized/binary_annotator.cpp.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
+; llvm/optimized/Clang.cpp.ll
 ; llvm/optimized/ParseDecl.cpp.ll
 ; opencv/optimized/tflite_importer.cpp.ll
 ; openusd/optimized/reconinter.c.ll
@@ -19,7 +20,7 @@ entry:
   %3 = and i64 %2, -5
   %4 = icmp ne i64 %3, 0
   %5 = select i1 %4, i1 %1, i1 false
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

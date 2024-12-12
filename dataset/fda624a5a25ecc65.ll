@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openmpi/optimized/coll_base_topo.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001c(i32 %0, i32 %1) #0 {
+define i64 @func000000000000002c(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %.not = icmp eq i32 %0, 0
@@ -24,11 +24,10 @@ entry:
   ret i64 %5
 }
 
-; 2 occurrences:
-; meshlab/optimized/filter_isoparametrization.cpp.ll
+; 1 occurrences:
 ; meshlab/optimized/filter_texture.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000024(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -2
   %3 = icmp ult i32 %0, 3

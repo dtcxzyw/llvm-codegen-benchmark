@@ -1,5 +1,5 @@
 
-; 50 occurrences:
+; 49 occurrences:
 ; arrow/optimized/memory_pool.cc.ll
 ; clap-rs/optimized/3b4nqkxyl1xqdcre.ll
 ; cpython/optimized/obmalloc.ll
@@ -36,7 +36,6 @@
 ; postgres/optimized/tablecmds.ll
 ; postgres/optimized/user.ll
 ; proj/optimized/conversion.cpp.ll
-; proj/optimized/crs.cpp.ll
 ; proj/optimized/singleoperation.cpp.ll
 ; proxygen/optimized/FileServerListGenerator.cpp.ll
 ; proxygen/optimized/ServerListGenerator.cpp.ll

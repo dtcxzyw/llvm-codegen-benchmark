@@ -13,9 +13,10 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luajit/optimized/buildvm_fold.ll
+; opencv/optimized/tf_importer.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i64 %1) #0 {
 entry:

@@ -1,25 +1,26 @@
 
-%struct.page.3358159 = type { i64, %union.anon.11.3358160, %union.anon.19.3358161, %struct.atomic_t.3358128, [8 x i8] }
-%union.anon.11.3358160 = type { %struct.anon.12.3358162 }
-%struct.anon.12.3358162 = type { %union.anon.13.3358163, ptr, %union.anon.15.3358164, i64 }
-%union.anon.13.3358163 = type { %struct.list_head.3358122 }
-%struct.list_head.3358122 = type { ptr, ptr }
-%union.anon.15.3358164 = type { i64 }
-%union.anon.19.3358161 = type { %struct.atomic_t.3358128 }
-%struct.atomic_t.3358128 = type { i32 }
+%struct.page.3545263 = type { i64, %union.anon.11.3545264, %union.anon.19.3545265, %struct.atomic_t.3545232, [8 x i8] }
+%union.anon.11.3545264 = type { %struct.anon.12.3545266 }
+%struct.anon.12.3545266 = type { %union.anon.13.3545267, ptr, %union.anon.15.3545268, i64 }
+%union.anon.13.3545267 = type { %struct.list_head.3545226 }
+%struct.list_head.3545226 = type { ptr, ptr }
+%union.anon.15.3545268 = type { i64 }
+%union.anon.19.3545265 = type { %struct.atomic_t.3545232 }
+%struct.atomic_t.3545232 = type { i32 }
+%struct.Node.3680639 = type { %union.TValue.3680640, %union.TValue.3680640, %struct.MRef.3680641 }
+%union.TValue.3680640 = type { i64 }
+%struct.MRef.3680641 = type { i64 }
 
-; 9 occurrences:
+; 7 occurrences:
 ; abc/optimized/giaUtil.c.ll
 ; bdwgc/optimized/gc.c.ll
 ; cmake/optimized/cmCTestBinPacker.cxx.ll
 ; eastl/optimized/BenchmarkTupleVector.cpp.ll
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
 ; eastl/optimized/TestTupleVector.cpp.ll
-; luajit/optimized/lj_tab.ll
-; luajit/optimized/lj_tab_dyn.ll
 ; openjdk/optimized/psParallelCompact.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000041(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr nusw i8, ptr %3, i64 %1
@@ -36,7 +37,7 @@ entry:
 ; openjdk/optimized/os_linux.ll
 ; openjdk/optimized/stackChunkOop.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000044(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
   %4 = getelementptr nusw i8, ptr %3, i64 %1
@@ -44,8 +45,84 @@ entry:
   ret i1 %5
 }
 
-; 96 occurrences:
+; 67 occurrences:
 ; bdwgc/optimized/gc.c.ll
+; openjdk/optimized/cardTableRS.ll
+; openjdk/optimized/g1AllocRegion.ll
+; openjdk/optimized/g1Allocator.ll
+; openjdk/optimized/g1Arguments.ll
+; openjdk/optimized/g1BarrierSet.ll
+; openjdk/optimized/g1BatchedTask.ll
+; openjdk/optimized/g1BlockOffsetTable.ll
+; openjdk/optimized/g1CardSet.ll
+; openjdk/optimized/g1CardTable.ll
+; openjdk/optimized/g1CollectedHeap.ll
+; openjdk/optimized/g1CollectionSet.ll
+; openjdk/optimized/g1CollectionSetCandidates.ll
+; openjdk/optimized/g1CollectionSetChooser.ll
+; openjdk/optimized/g1ConcurrentMark.ll
+; openjdk/optimized/g1ConcurrentMarkBitMap.ll
+; openjdk/optimized/g1ConcurrentMarkObjArrayProcessor.ll
+; openjdk/optimized/g1ConcurrentMarkThread.ll
+; openjdk/optimized/g1ConcurrentRebuildAndScrub.ll
+; openjdk/optimized/g1ConcurrentRefine.ll
+; openjdk/optimized/g1DirtyCardQueue.ll
+; openjdk/optimized/g1EvacFailureRegions.ll
+; openjdk/optimized/g1FullCollector.ll
+; openjdk/optimized/g1FullGCAdjustTask.ll
+; openjdk/optimized/g1FullGCCompactTask.ll
+; openjdk/optimized/g1FullGCCompactionPoint.ll
+; openjdk/optimized/g1FullGCMarkTask.ll
+; openjdk/optimized/g1FullGCMarker.ll
+; openjdk/optimized/g1FullGCOopClosures.ll
+; openjdk/optimized/g1FullGCPrepareTask.ll
+; openjdk/optimized/g1FullGCResetMetadataTask.ll
+; openjdk/optimized/g1GCPhaseTimes.ll
+; openjdk/optimized/g1HeapRegion.ll
+; openjdk/optimized/g1HeapRegionManager.ll
+; openjdk/optimized/g1HeapRegionRemSet.ll
+; openjdk/optimized/g1HeapRegionSet.ll
+; openjdk/optimized/g1HeapVerifier.ll
+; openjdk/optimized/g1IHOPControl.ll
+; openjdk/optimized/g1MonitoringSupport.ll
+; openjdk/optimized/g1NMethodClosure.ll
+; openjdk/optimized/g1OopClosures.ll
+; openjdk/optimized/g1OopStarChunkedList.ll
+; openjdk/optimized/g1ParScanThreadState.ll
+; openjdk/optimized/g1PeriodicGCTask.ll
+; openjdk/optimized/g1Policy.ll
+; openjdk/optimized/g1RegionMarkStatsCache.ll
+; openjdk/optimized/g1RemSet.ll
+; openjdk/optimized/g1RemSetSummary.ll
+; openjdk/optimized/g1RemSetTrackingPolicy.ll
+; openjdk/optimized/g1RootClosures.ll
+; openjdk/optimized/g1RootProcessor.ll
+; openjdk/optimized/g1SATBMarkQueueSet.ll
+; openjdk/optimized/g1StringDedup.ll
+; openjdk/optimized/g1UncommitRegionTask.ll
+; openjdk/optimized/g1VMOperations.ll
+; openjdk/optimized/g1YoungCollector.ll
+; openjdk/optimized/g1YoungGCAllocationFailureInjector.ll
+; openjdk/optimized/g1YoungGCPostEvacuateTasks.ll
+; openjdk/optimized/g1YoungGCPreEvacuateTasks.ll
+; openjdk/optimized/gcVMOperations.ll
+; openjdk/optimized/psCardTable.ll
+; openjdk/optimized/psParallelCompact.ll
+; openjdk/optimized/psPromotionManager.ll
+; openjdk/optimized/psScavenge.ll
+; openjdk/optimized/shenandoahHeap.ll
+; openjdk/optimized/shenandoahHeapRegion.ll
+; openjdk/optimized/whitebox.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000068(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = inttoptr i64 %2 to ptr
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %1
+  %5 = icmp ugt ptr %4, %0
+  ret i1 %5
+}
+
+; 95 occurrences:
 ; mimalloc/optimized/arena.c.ll
 ; openjdk/optimized/archiveHeapLoader.ll
 ; openjdk/optimized/archiveHeapWriter.ll
@@ -142,10 +219,10 @@ entry:
 ; openjdk/optimized/zRelocationSet.ll
 ; openjdk/optimized/zVerify.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(ptr %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000048(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr nusw i8, ptr %3, i64 %1
+  %4 = getelementptr nusw i64, ptr %3, i64 %1
   %5 = icmp ugt ptr %4, %0
   ret i1 %5
 }
@@ -187,7 +264,19 @@ entry:
 define i1 @func0000000000000001(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = inttoptr i64 %2 to ptr
-  %4 = getelementptr %struct.page.3358159, ptr %3, i64 %1
+  %4 = getelementptr %struct.page.3545263, ptr %3, i64 %1
+  %5 = icmp eq ptr %4, %0
+  ret i1 %5
+}
+
+; 2 occurrences:
+; luajit/optimized/lj_tab.ll
+; luajit/optimized/lj_tab_dyn.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000061(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = inttoptr i64 %2 to ptr
+  %4 = getelementptr nusw nuw %struct.Node.3680639, ptr %3, i64 %1
   %5 = icmp eq ptr %4, %0
   ret i1 %5
 }

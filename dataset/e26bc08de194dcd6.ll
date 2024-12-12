@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 21 occurrences:
 ; cmake/optimized/http.c.ll
 ; cmake/optimized/ntlm.c.ll
 ; cmake/optimized/zstd_compress.c.ll
@@ -17,8 +17,6 @@
 ; linux/optimized/zstd_decompress.ll
 ; memcached/optimized/memcached-items.ll
 ; memcached/optimized/memcached_debug-items.ll
-; openmpi/optimized/os_path.ll
-; openmpi/optimized/pmix_os_path.ll
 ; php/optimized/iconv.ll
 ; rustfmt-rs/optimized/3sx1t619hmuq0zz7.ll
 ; zstd/optimized/zstd_compress.c.ll
@@ -28,7 +26,7 @@ define i64 @func0000000000000010(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 127
   %4 = select i1 %3, i64 21, i64 30
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = add i64 %5, %0
   ret i64 %6
 }
@@ -45,7 +43,8 @@ entry:
   ret i64 %6
 }
 
-; 7 occurrences:
+; 8 occurrences:
+; boost/optimized/to_chars.ll
 ; memcached/optimized/memcached-items.ll
 ; memcached/optimized/memcached_debug-items.ll
 ; miniaudio/optimized/unity.c.ll
@@ -72,8 +71,8 @@ define i64 @func0000000000000060(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 2
   %4 = select i1 %3, i64 4, i64 0
-  %5 = add i64 %4, %1
-  %6 = add i64 %5, %0
+  %5 = add i64 %1, %4
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -85,7 +84,7 @@ define i64 @func000000000000001c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %3, i64 2, i64 4
-  %5 = add nuw nsw i64 %4, %1
+  %5 = add nuw nsw i64 %1, %4
   %6 = add i64 %5, %0
   ret i64 %6
 }
@@ -152,19 +151,6 @@ entry:
 }
 
 ; 2 occurrences:
-; libwebp/optimized/webp_enc.c.ll
-; quickjs/optimized/quickjs.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000015(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = icmp eq i32 %2, 0
-  %4 = select i1 %3, i64 -366, i64 -365
-  %5 = add nsw i64 %4, %1
-  %6 = add nsw i64 %5, %0
-  ret i64 %6
-}
-
-; 2 occurrences:
 ; cmake/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
@@ -172,7 +158,7 @@ define i64 @func0000000000000080(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %2, 6
   %4 = select i1 %3, i64 149312, i64 128
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = add i64 %5, %0
   ret i64 %6
 }
@@ -198,19 +184,19 @@ entry:
   %3 = icmp ugt i32 %2, 99999999
   %4 = select i1 %3, i64 2, i64 1
   %5 = add nsw i64 %4, %1
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 
 ; 1 occurrences:
-; cpython/optimized/pystrtod.ll
+; libwebp/optimized/webp_enc.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
+define i64 @func0000000000000015(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
-  %4 = select i1 %3, i64 3, i64 8
-  %5 = add nsw i64 %4, %1
-  %6 = add i64 %5, %0
+  %4 = select i1 %3, i64 0, i64 2079
+  %5 = add nsw i64 %1, %4
+  %6 = add nsw i64 %5, %0
   ret i64 %6
 }
 

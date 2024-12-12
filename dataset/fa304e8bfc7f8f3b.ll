@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; arrow/optimized/thread_pool.cc.ll
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; duckdb/optimized/ub_duckdb_parallel.cpp.ll
@@ -7,6 +7,7 @@
 ; glslang/optimized/disassemble.cpp.ll
 ; hermes/optimized/BytecodeGenerator.cpp.ll
 ; hermes/optimized/GCBase.cpp.ll
+; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; pocketpy/optimized/collections.cpp.ll
 ; proxygen/optimized/HTTP2Codec.cpp.ll
@@ -52,13 +53,15 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = lshr exact i64 %4, 3
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   %7 = trunc i64 %6 to i32
   ret i32 %7
 }
 
-; 6 occurrences:
+; 8 occurrences:
+; boost/optimized/cmdline.ll
 ; gromacs/optimized/qmmminputgenerator.cpp.ll
+; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/IRSymtab.cpp.ll
 ; llvm/optimized/MemProf.cpp.ll
 ; opencv/optimized/objects_associator.cpp.ll
@@ -85,7 +88,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = lshr exact i64 %4, 2
-  %6 = add nuw i64 %5, %0
+  %6 = add nuw i64 %0, %5
   %7 = trunc i64 %6 to i32
   ret i32 %7
 }
@@ -112,7 +115,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub nuw i64 %3, %1
   %5 = lshr exact i64 %4, 5
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   %7 = trunc i64 %6 to i32
   ret i32 %7
 }

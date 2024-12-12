@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = call i32 @llvm.abs.i32(i32 %2, i1 true)
@@ -16,22 +16,11 @@ declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 ; 1 occurrences:
 ; llvm/optimized/VectorUtils.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000025(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = call i32 @llvm.abs.i32(i32 %2, i1 true)
   %4 = icmp ule i32 %3, %0
-  ret i1 %4
-}
-
-; 1 occurrences:
-; linux/optimized/filter.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = tail call i32 @llvm.abs.i32(i32 %2, i1 false)
-  %4 = icmp ult i32 %3, %0
   ret i1 %4
 }
 
@@ -49,7 +38,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/rand.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = tail call i32 @llvm.abs.i32(i32 %2, i1 true)

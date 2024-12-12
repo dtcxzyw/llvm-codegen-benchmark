@@ -1,11 +1,10 @@
 
-; 38 occurrences:
+; 39 occurrences:
 ; clamav/optimized/hashtab.c.ll
 ; clamav/optimized/recvol.cpp.ll
 ; cmake/optimized/archive_ppmd8.c.ll
 ; hyperscan/optimized/repeat.c.ll
 ; linux/optimized/8250_early.ll
-; linux/optimized/8250_exar.ll
 ; linux/optimized/drm_modes.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/intel_dsi_vbt.ll
@@ -23,6 +22,8 @@
 ; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_timer.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/texture_rendering.cpp.ll

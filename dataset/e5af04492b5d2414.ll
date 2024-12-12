@@ -29,12 +29,19 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
+; 12 occurrences:
 ; openjdk/optimized/collectedHeap.ll
 ; rust-analyzer-rs/optimized/2334ao9w0k9d7973.ll
 ; rust-analyzer-rs/optimized/4nrj6o47dqd25wok.ll
 ; rust-analyzer-rs/optimized/68ytxs4wk5ncclk.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
+; zed-rs/optimized/4360dz3iad2ygf5m8hd0cmm88.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8y2n395sf7zaarcc3wfqoazez.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
+; zed-rs/optimized/a48ncfl2mo4yu8srnhcxrs0e7.ll
+; zed-rs/optimized/diggdkpukg0xn23g7ivuh3jfw.ll
+; zed-rs/optimized/e7lqw1ynol01cwrgb8ri1wedr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000020(i64 %0, i64 %1) #0 {
 entry:
@@ -45,10 +52,6 @@ entry:
 }
 
 ; 12 occurrences:
-; abc/optimized/adler32.c.ll
-; cmake/optimized/adler32.c.ll
-; gromacs/optimized/adler32.c.ll
-; libquic/optimized/adler32.c.ll
 ; rust-analyzer-rs/optimized/hajha7nvyoiczny.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/3dimj4rf5dyrieyi.ll
@@ -56,13 +59,32 @@ entry:
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
-; zlib/optimized/adler32.c.ll
+; zed-rs/optimized/455yb6ma6j3a5kpbn5166o5rm.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
+; zed-rs/optimized/8wvy5aljfw2qmbxbtkkewwal7.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %1, 1
   %3 = select i1 %2, i64 %0, i64 %1
   %4 = shl nsw i64 %3, 4
+  ret i64 %4
+}
+
+; 5 occurrences:
+; abc/optimized/adler32.c.ll
+; cmake/optimized/adler32.c.ll
+; gromacs/optimized/adler32.c.ll
+; libquic/optimized/adler32.c.ll
+; zlib/optimized/adler32.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000061(i64 %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i64 %1, 131041
+  %3 = select i1 %2, i64 %0, i64 %1
+  %4 = shl nsw i64 %3, 16
   ret i64 %4
 }
 
@@ -124,15 +146,14 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
-; luajit/optimized/lj_prng.ll
-; luajit/optimized/lj_prng_dyn.ll
+; 1 occurrences:
+; miniaudio/optimized/unity.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000010(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000052(i64 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ult i64 %1, 2
+  %2 = icmp samesign ult i64 %1, 4294967296
   %3 = select i1 %2, i64 %0, i64 %1
-  %4 = shl i64 %3, 31
+  %4 = shl nuw i64 %3, 16
   ret i64 %4
 }
 

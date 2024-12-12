@@ -13,7 +13,7 @@ entry:
   ret i1 %4
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; git/optimized/ewah_bitmap.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; linux/optimized/amdtopology.ll
@@ -24,7 +24,6 @@ entry:
 ; spike/optimized/f32_rem.ll
 ; spike/optimized/f64_mul.ll
 ; spike/optimized/f64_rem.ll
-; spike/optimized/triggers.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:

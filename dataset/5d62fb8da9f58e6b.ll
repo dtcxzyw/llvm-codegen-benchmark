@@ -9,12 +9,12 @@
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000020a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 16
   %4 = zext i1 %3 to i32
   %5 = shl i32 %1, %4
-  %6 = or i32 %5, %0
+  %6 = or i32 %0, %5
   %7 = icmp sgt i32 %6, -1
   ret i1 %7
 }

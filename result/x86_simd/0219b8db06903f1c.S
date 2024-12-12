@@ -2,7 +2,7 @@ func0000000000000041:                   # @func0000000000000041
 	vpternlogq	$15, %ymm1, %ymm1, %ymm1 # ymm1 = ~ymm1
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpaddd	%ymm0, %ymm2, %ymm0
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	vpaddd	%ymm3, %ymm0, %ymm0
 	retq
 .LCPI1_0:

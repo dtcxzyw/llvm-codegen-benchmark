@@ -41,3 +41,14 @@ func0000000000000014:                   # @func0000000000000014
 	slli	a1, a1, 63
 	sub	a0, a1, a0
 	ret
+func0000000000000028:                   # @func0000000000000028
+	sext.w	a1, a1
+	sltiu	a1, a1, 3
+	or	a0, a0, a1
+	andi	a0, a0, 1
+	bnez	a0, .LBB5_2
+	li	a0, 5
+	ret
+.LBB5_2:
+	li	a0, 13
+	ret

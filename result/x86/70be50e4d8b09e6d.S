@@ -7,7 +7,7 @@ func0000000000000001:                   # @func0000000000000001
 	cmpl	%ecx, %edi
 	cmovel	%edi, %eax
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	leal	3(%rdi), %ecx
 	testl	%edi, %edi
 	cmovnsl	%edi, %ecx

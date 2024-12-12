@@ -21,7 +21,7 @@ define i64 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
   %4 = and i64 %3, 4294967295
-  %5 = mul nuw i64 %4, %0
+  %5 = mul nuw i64 %0, %4
   ret i64 %5
 }
 
@@ -38,28 +38,26 @@ define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %1, %2
   %4 = and i64 %3, 4294967295
-  %5 = mul i64 %4, %0
+  %5 = mul i64 %0, %4
   ret i64 %5
 }
 
 ; 4 occurrences:
-; opencv/optimized/softfloat.cpp.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
-; spike/optimized/f128_sqrt.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
+; git/optimized/pack-redundant.ll
+; linux/optimized/keyring.ll
+; linux/optimized/slub.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nsw i64 %1, %2
+  %3 = add i64 %1, %2
   %4 = and i64 %3, 4294967295
   %5 = mul nuw i64 %4, %0
   ret i64 %5
 }
 
-; 3 occurrences:
+; 1 occurrences:
 ; lief/optimized/poly1305.c.ll
-; qemu/optimized/source_s_approxRecip32_1.c.ll
-; spike/optimized/s_approxRecip32_1.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000e(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -69,14 +67,13 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
-; git/optimized/pack-redundant.ll
-; linux/optimized/keyring.ll
-; linux/optimized/slub.ll
+; 2 occurrences:
+; opencv/optimized/softfloat.cpp.ll
+; spike/optimized/f128_sqrt.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000002(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %1, %2
+  %3 = add nsw i64 %1, %2
   %4 = and i64 %3, 4294967295
   %5 = mul nuw i64 %4, %0
   ret i64 %5
@@ -100,7 +97,7 @@ define i64 @func0000000000000009(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
   %4 = and i64 %3, 4294967295
-  %5 = mul nsw i64 %4, %0
+  %5 = mul nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -111,7 +108,7 @@ define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %1, %2
   %4 = and i64 %3, 65535
-  %5 = mul nsw i64 %4, %0
+  %5 = mul nsw i64 %0, %4
   ret i64 %5
 }
 

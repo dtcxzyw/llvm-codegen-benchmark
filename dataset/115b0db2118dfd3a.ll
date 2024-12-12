@@ -2,16 +2,17 @@
 ; 1 occurrences:
 ; ruby/optimized/date_core.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000051(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 15
-  %3 = icmp ult i32 %2, 3
+  %3 = icmp samesign ult i32 %2, 3
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
-; 9 occurrences:
+; 10 occurrences:
+; boost/optimized/area.ll
 ; glslang/optimized/Initialize.cpp.ll
 ; hdf5/optimized/H5Znbit.c.ll
 ; libquic/optimized/padding.c.ll
@@ -25,9 +26,9 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 7
-  %3 = icmp eq i32 %2, 0
+  %3 = icmp eq i32 %2, 1
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -51,7 +52,7 @@ entry:
   %2 = and i32 %1, 511
   %3 = icmp ne i32 %2, 511
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -69,12 +70,12 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/vba_extract.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000061(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 4095
-  %3 = icmp ugt i32 %2, 32
+  %3 = icmp samesign ugt i32 %2, 32
   %4 = sext i1 %3 to i32
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -89,7 +90,7 @@ entry:
   %2 = and i32 %1, -2
   %3 = icmp eq i32 %2, 100
   %4 = sext i1 %3 to i32
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 

@@ -34,10 +34,10 @@ func000000000000001c:                   # @func000000000000001c
 	orq	%rdi, %rsi
 	orq	%rsi, %rax
 	retq
-func000000000000000e:                   # @func000000000000000e
+func000000000000000c:                   # @func000000000000000c
 	movzbl	%dl, %eax
 	shll	$16, %eax
-	andl	$63, %esi
+	andq	$-2147418113, %rsi              # imm = 0x8000FFFF
 	orq	%rsi, %rax
 	orq	%rdi, %rax
 	retq

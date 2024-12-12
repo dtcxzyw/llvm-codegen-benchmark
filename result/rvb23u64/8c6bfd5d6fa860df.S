@@ -34,6 +34,12 @@ func0000000000000002:                   # @func0000000000000002
 	add	a0, a0, a1
 	slli	a0, a0, 32
 	ret
+func000000000000002b:                   # @func000000000000002b
+	add	a0, a0, a1
+	lui	a1, 983040
+	add	a0, a0, a1
+	slli.uw	a0, a0, 28
+	ret
 func0000000000000007:                   # @func0000000000000007
 	add	a0, a0, a1
 	addiw	a0, a0, 1

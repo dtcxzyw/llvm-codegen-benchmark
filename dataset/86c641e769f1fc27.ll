@@ -10,8 +10,8 @@
 define i1 @func0000000000000004(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = freeze i64 %2
-  %4 = icmp ugt i64 %3, %1
-  %5 = and i1 %4, %0
+  %4 = icmp ult i64 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -24,7 +24,7 @@ entry:
 define i1 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = freeze i64 %2
-  %4 = icmp ult i64 %3, %1
+  %4 = icmp ugt i64 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
@@ -36,7 +36,7 @@ entry:
 define i1 @func0000000000000009(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = freeze i64 %2
-  %4 = icmp ule i64 %3, %1
+  %4 = icmp uge i64 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }

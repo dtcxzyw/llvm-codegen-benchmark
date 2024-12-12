@@ -11,7 +11,7 @@
 define i32 @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -31,7 +31,7 @@ entry:
 define i32 @func000000000000000e(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = icmp sge i64 %2, %0
+  %3 = icmp sle i64 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -55,23 +55,21 @@ entry:
 define i32 @func000000000000000c(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = icmp sgt i64 %2, %0
+  %3 = icmp slt i64 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
 
-; 6 occurrences:
-; darktable/optimized/copy.c.ll
+; 4 occurrences:
 ; darktable/optimized/email.c.ll
 ; darktable/optimized/piwigo.c.ll
-; darktable/optimized/ppm.c.ll
 ; libquic/optimized/x509_vfy.c.ll
 ; openblas/optimized/dlalsa.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000018(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = icmp ne i64 %2, %0
+  %3 = icmp ne i64 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -93,7 +91,7 @@ entry:
 define i32 @func0000000000000016(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = icmp sle i64 %2, %0
+  %3 = icmp sge i64 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -104,7 +102,7 @@ entry:
 define i32 @func0000000000000008(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = icmp ugt i64 %2, %0
+  %3 = icmp ult i64 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -116,7 +114,7 @@ entry:
 define i32 @func0000000000000012(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = icmp ule i64 %2, %0
+  %3 = icmp uge i64 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }
@@ -127,7 +125,7 @@ entry:
 define i32 @func0000000000000014(i64 %0, i32 %1) #0 {
 entry:
   %2 = sext i32 %1 to i64
-  %3 = icmp slt i64 %2, %0
+  %3 = icmp sgt i64 %0, %2
   %4 = zext i1 %3 to i32
   ret i32 %4
 }

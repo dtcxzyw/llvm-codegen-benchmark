@@ -9,7 +9,7 @@ entry:
   %3 = icmp ne ptr %2, null
   %4 = zext i1 %3 to i64
   %5 = zext i1 %1 to i64
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   %7 = add nuw nsw i64 %6, %4
   ret i64 %7
 }
@@ -25,7 +25,7 @@ entry:
   %3 = icmp ne ptr %2, null
   %4 = zext i1 %3 to i64
   %5 = zext i1 %1 to i64
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   %7 = add i64 %6, %4
   ret i64 %7
 }
@@ -38,7 +38,7 @@ entry:
   %3 = icmp ne ptr %2, null
   %4 = zext i1 %3 to i64
   %5 = zext i1 %1 to i64
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   %7 = add nsw i64 %6, %4
   ret i64 %7
 }

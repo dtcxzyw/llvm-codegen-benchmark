@@ -87,19 +87,6 @@ entry:
 }
 
 ; 2 occurrences:
-; gromacs/optimized/dlasd1.cpp.ll
-; gromacs/optimized/slasd1.cpp.ll
-; Function Attrs: nounwind
-define i32 @func00000000000000b5(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = add nuw i32 %1, %2
-  %4 = add nuw nsw i32 %3, 1
-  %5 = add nsw i32 %4, %0
-  %6 = add nsw i32 %5, 1
-  ret i32 %6
-}
-
-; 2 occurrences:
 ; protobuf/optimized/coded_stream.cc.ll
 ; sentencepiece/optimized/coded_stream.cc.ll
 ; Function Attrs: nounwind
@@ -129,7 +116,7 @@ define i32 @func00000000000000ff(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = add nuw nsw i32 %3, 2
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   %6 = add nuw nsw i32 %5, 2
   ret i32 %6
 }

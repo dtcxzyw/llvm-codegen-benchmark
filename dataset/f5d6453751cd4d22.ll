@@ -1,8 +1,7 @@
 
-; 87 occurrences:
+; 85 occurrences:
 ; abc/optimized/pdrUtil.c.ll
 ; clamav/optimized/communication.c.ll
-; clamav/optimized/fanotif.c.ll
 ; clamav/optimized/inotif.c.ll
 ; clamav/optimized/netcode.c.ll
 ; clamav/optimized/output.c.ll
@@ -84,7 +83,6 @@
 ; ruby/optimized/thread.ll
 ; slurm/optimized/common.ll
 ; wireshark/optimized/androiddump.c.ll
-; wireshark/optimized/ws_pipe.c.ll
 ; wolfssl/optimized/client.c.ll
 ; wolfssl/optimized/server.c.ll
 ; Function Attrs: nounwind
@@ -96,19 +94,6 @@ entry:
   ret i64 %3
 }
 
-; 3 occurrences:
-; gromacs/optimized/lincs.cpp.ll
-; postgres/optimized/bitmapset.ll
-; re2/optimized/bitmap256.cc.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000005(i32 %0) #0 {
-entry:
-  %1 = srem i32 %0, 64
-  %2 = zext nneg i32 %1 to i64
-  %3 = shl nsw i64 -1, %2
-  ret i64 %3
-}
-
 ; 1 occurrences:
 ; openjdk/optimized/jvmtiImpl.ll
 ; Function Attrs: nounwind
@@ -117,6 +102,18 @@ entry:
   %1 = srem i32 %0, 64
   %2 = zext nneg i32 %1 to i64
   %3 = shl i64 2, %2
+  ret i64 %3
+}
+
+; 2 occurrences:
+; gromacs/optimized/lincs.cpp.ll
+; postgres/optimized/bitmapset.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000005(i32 %0) #0 {
+entry:
+  %1 = srem i32 %0, 64
+  %2 = zext nneg i32 %1 to i64
+  %3 = shl nsw i64 -1, %2
   ret i64 %3
 }
 

@@ -1,5 +1,5 @@
 
-; 84 occurrences:
+; 86 occurrences:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver3.c.ll
 ; abc/optimized/solver.c.ll
@@ -48,6 +48,8 @@
 ; linux/optimized/build_utility.ll
 ; linux/optimized/huf_decompress.ll
 ; linux/optimized/initramfs.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; memcached/optimized/memcached-items.ll
 ; memcached/optimized/memcached_debug-items.ll
 ; meshlab/optimized/gltf_loader.cpp.ll

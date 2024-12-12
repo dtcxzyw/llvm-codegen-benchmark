@@ -1,6 +1,7 @@
 
-; 1 occurrences:
+; 2 occurrences:
 ; ockam-rs/optimized/gotvfwvqrrp4xgl.ll
+; zed-rs/optimized/2bmd7m579qu61sjfzthhk5yj1.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000018(i1 %0, i64 %1, i64 %2) #0 {
 entry:

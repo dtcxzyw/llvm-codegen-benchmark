@@ -1,5 +1,5 @@
 
-; 77 occurrences:
+; 76 occurrences:
 ; clamav/optimized/pe.c.ll
 ; clamav/optimized/readdb.c.ll
 ; cmake/optimized/SystemTools.cxx.ll
@@ -27,7 +27,6 @@
 ; llvm/optimized/IndVarSimplify.cpp.ll
 ; llvm/optimized/Pragma.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/SemaARM.cpp.ll
 ; llvm/optimized/SemaStmt.cpp.ll
@@ -117,7 +116,7 @@ entry:
 ; tev/optimized/Channel.cpp.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 1
   %3 = select i1 %0, i1 %2, i1 false
@@ -136,16 +135,111 @@ entry:
 ; rocksdb/optimized/version_set.cc.ll
 ; sentencepiece/optimized/bpe_model_trainer.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 2
   %3 = select i1 %0, i1 %2, i1 false
   ret i1 %3
 }
 
-; 48 occurrences:
+; 144 occurrences:
 ; abseil-cpp/optimized/generate_real_test.cc.ll
 ; arrow/optimized/crc32.cc.ll
+; boost/optimized/algorithm.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/buffer.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/calculate_point_order.ll
+; boost/optimized/calculation_type.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/copy_segment_point.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/difference_pl_pl.ll
+; boost/optimized/env.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/expand.ll
+; boost/optimized/expand_on_spheroid.ll
+; boost/optimized/extensions.ll
+; boost/optimized/for_each_coordinate.ll
+; boost/optimized/framework.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_ring.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/intersection_pl_pl.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/math_abs.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_equals.ll
+; boost/optimized/math_normalize_spheroidal.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/partition.ll
+; boost/optimized/pipe.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/promote_integral.ll
+; boost/optimized/range.ll
+; boost/optimized/rational.ll
+; boost/optimized/relative_order.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/search_path.ll
+; boost/optimized/select_most_precise.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/shell_path.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/test_impl.ll
+; boost/optimized/tupled_output.ll
+; boost/optimized/tuples.ll
+; boost/optimized/union_pl_pl.ll
+; boost/optimized/visit.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
+; boost/optimized/write_dsv.ll
 ; brotli/optimized/decode.c.ll
 ; clamav/optimized/regex_list.c.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
@@ -177,6 +271,7 @@ entry:
 ; linux/optimized/profile.ll
 ; linux/optimized/tcp_ipv4.ll
 ; linux/optimized/vmstat.ll
+; lvgl/optimized/lv_string_builtin.ll
 ; miniaudio/optimized/unity.c.ll
 ; nuttx/optimized/lib_libfread_unlocked.c.ll
 ; openjdk/optimized/jdmarker.ll
@@ -200,36 +295,24 @@ entry:
   ret i1 %3
 }
 
-; 27 occurrences:
-; c3c/optimized/sema_casts.c.ll
-; graphviz/optimized/gvrender_core_dot.c.ll
-; image-rs/optimized/4srzh4wujeew249y.ll
+; 15 occurrences:
 ; libpng/optimized/png.c.ll
 ; linux/optimized/core.ll
 ; linux/optimized/nf_conntrack_proto_icmpv6.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVMatInt.cpp.ll
 ; luajit/optimized/lj_meta.ll
 ; luajit/optimized/lj_meta_dyn.ll
-; ocio/optimized/FileFormatICC.cpp.ll
 ; openjdk/optimized/png.ll
 ; openssl/optimized/sslapitest-bin-sslapitest.ll
-; openusd/optimized/stbImage.cpp.ll
 ; openusd/optimized/utils.c.ll
 ; postgres/optimized/jsonfuncs.ll
-; postgres/optimized/regcomp.ll
 ; quickjs/optimized/quickjs.ll
-; raylib/optimized/rtextures.c.ll
-; rust-analyzer-rs/optimized/17y19x1rgmlymeti.ll
 ; rust-analyzer-rs/optimized/wcknfmhk1hydgx3.ll
 ; rustfmt-rs/optimized/1mznjg1e09hdetpr.ll
-; typst-rs/optimized/59tuvc5m3xlovl3o.ll
-; wasmtime-rs/optimized/3x26ra3en5gtspzq.ll
-; wasmtime-rs/optimized/4zpfk2x34146qelg.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i1 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -3
   %3 = icmp ult i64 %2, 2
@@ -237,7 +320,7 @@ entry:
   ret i1 %4
 }
 
-; 249 occurrences:
+; 251 occurrences:
 ; abseil-cpp/optimized/bit_cast_test.cc.ll
 ; abseil-cpp/optimized/charset_test.cc.ll
 ; abseil-cpp/optimized/chi_square_test.cc.ll
@@ -248,6 +331,9 @@ entry:
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; abseil-cpp/optimized/low_level_hash_test.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
+; boost/optimized/static_string.ll
+; boost/optimized/within_pointlike_geometry.ll
+; boost/optimized/within_sph_geo.ll
 ; bullet3/optimized/btSoftBody.ll
 ; cmake/optimized/cmDebuggerProtocol.cxx.ll
 ; cmake/optimized/protocol_events.cpp.ll
@@ -339,7 +425,6 @@ entry:
 ; meshlab/optimized/filter_dirt.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -488,16 +573,15 @@ entry:
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i1 %0, i64 %1) #0 {
+define i1 @func000000000000006c(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 4
   %3 = select i1 %0, i1 %2, i1 false
   ret i1 %3
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; cmake/optimized/escape.c.ll
-; cmake/optimized/vli_decoder.c.ll
 ; cpython/optimized/obmalloc.ll
 ; curl/optimized/libcurl_la-escape.ll
 ; eastl/optimized/EAMemory.cpp.ll
@@ -549,7 +633,7 @@ entry:
 ; lief/optimized/gcm.c.ll
 ; mimalloc/optimized/options.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000028(i1 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -14
   %3 = icmp ult i64 %2, -13
@@ -562,7 +646,7 @@ entry:
 ; eastl/optimized/TestDeque.cpp.ll
 ; lief/optimized/gcm.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 64
   %3 = select i1 %0, i1 %2, i1 false
@@ -572,7 +656,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/ucs2_string.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, i64 %1) #0 {
+define i1 @func000000000000004c(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, -2
   %3 = select i1 %0, i1 %2, i1 false

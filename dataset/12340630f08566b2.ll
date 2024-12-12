@@ -1,10 +1,9 @@
 
-; 26 occurrences:
+; 25 occurrences:
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_colorequal.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
-; gromacs/optimized/slagtf.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; minetest/optimized/numeric.cpp.ll
 ; minetest/optimized/player_sao.cpp.ll

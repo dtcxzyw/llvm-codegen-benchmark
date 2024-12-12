@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; freetype/optimized/type1.c.ll
 ; git/optimized/diff.ll
 ; icu/optimized/rematch.ll
@@ -10,6 +10,7 @@
 ; postgres/optimized/psqlscan.ll
 ; postgres/optimized/scan.ll
 ; ruby/optimized/date_core.ll
+; velox/optimized/PrestoSerializer.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i32 %1, i64 %2) #0 {
@@ -20,11 +21,24 @@ entry:
   ret i32 %5
 }
 
-; 10 occurrences:
+; 4 occurrences:
+; cmake/optimized/archive_read_support_format_cab.c.ll
+; cmake/optimized/archive_read_support_format_lha.c.ll
+; mitsuba3/optimized/rgb2spec.c.ll
+; slurm/optimized/file_functions.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000f(i1 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc nuw nsw i64 %2 to i32
+  %4 = select i1 %0, i32 %1, i32 %3
+  %5 = add nuw nsw i32 %4, 1
+  ret i32 %5
+}
+
+; 9 occurrences:
 ; abc/optimized/ifDsd.c.ll
 ; cmake/optimized/archive_read_support_format_lha.c.ll
 ; hermes/optimized/OSCompatPosix.cpp.ll
-; mitsuba3/optimized/rgb2spec.c.ll
 ; openusd/optimized/patchBuilder.cpp.ll
 ; openusd/optimized/quadRefinement.cpp.ll
 ; proj/optimized/4D_api.cpp.ll
@@ -72,19 +86,6 @@ entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = select i1 %0, i32 %1, i32 %3
   %5 = add i32 %4, -1
-  ret i32 %5
-}
-
-; 3 occurrences:
-; cmake/optimized/archive_read_support_format_cab.c.ll
-; cmake/optimized/archive_read_support_format_lha.c.ll
-; slurm/optimized/file_functions.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000f(i1 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc nuw nsw i64 %2 to i32
-  %4 = select i1 %0, i32 %1, i32 %3
-  %5 = add nuw nsw i32 %4, 1
   ret i32 %5
 }
 

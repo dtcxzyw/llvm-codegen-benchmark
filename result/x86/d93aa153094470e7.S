@@ -10,9 +10,3 @@ func0000000000000005:                   # @func0000000000000005
 	cmovnel	%esi, %eax
 	shrl	$6, %eax
 	retq
-func0000000000000021:                   # @func0000000000000021
-	movl	%edi, %eax
-	cmpl	$65536, %esi                    # imm = 0x10000
-	cmovbl	%esi, %eax
-	shrl	$5, %eax
-	retq

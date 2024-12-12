@@ -1,16 +1,17 @@
-func000000000000005a:                   # @func000000000000005a
+func000000000000005b:                   # @func000000000000005b
 	andl	$16777215, %esi                 # imm = 0xFFFFFF
 	subq	%rsi, %rdi
 	leaq	8(%rdi), %rax
 	retq
+func000000000000005a:                   # @func000000000000005a
+	andl	$4095, %esi                     # imm = 0xFFF
+	shll	$4, %esi
+	subq	%rsi, %rdi
+	leaq	-16(%rdi), %rax
+	retq
 func0000000000000058:                   # @func0000000000000058
 	andl	$2147483647, %esi               # imm = 0x7FFFFFFF
 	shlq	$2, %rsi
-	subq	%rsi, %rdi
-	leaq	8(%rdi), %rax
-	retq
-func000000000000005b:                   # @func000000000000005b
-	shll	$5, %esi
 	subq	%rsi, %rdi
 	leaq	8(%rdi), %rax
 	retq

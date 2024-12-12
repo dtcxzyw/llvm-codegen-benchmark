@@ -21,11 +21,12 @@ entry:
   ret i64 %7
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; llvm/optimized/CodeViewDebug.cpp.ll
 ; ocio/optimized/Lut1DOpCPU.cpp.ll
 ; postgres/optimized/ginget.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000073(i16 %0, i64 %1, i64 %2) #0 {
 entry:

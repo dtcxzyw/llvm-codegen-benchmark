@@ -16,7 +16,7 @@ entry:
   ret i1 %1
 }
 
-; 28 occurrences:
+; 30 occurrences:
 ; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/APINotesYAMLCompiler.cpp.ll
@@ -29,9 +29,11 @@ entry:
 ; llvm/optimized/InlineFunction.cpp.ll
 ; llvm/optimized/InstCombineCalls.cpp.ll
 ; llvm/optimized/InstCombineSimplifyDemanded.cpp.ll
+; llvm/optimized/LinkModules.cpp.ll
 ; llvm/optimized/MIRPrinter.cpp.ll
 ; llvm/optimized/MLRegAllocEvictAdvisor.cpp.ll
 ; llvm/optimized/MemCpyOptimizer.cpp.ll
+; llvm/optimized/MergeFunctions.cpp.ll
 ; llvm/optimized/SMTConstraintManager.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll

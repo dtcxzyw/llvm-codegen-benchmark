@@ -1,4 +1,4 @@
-func000000000000004c:                   # @func000000000000004c
+func000000000000008c:                   # @func000000000000008c
 	cmpl	$36000, %edi                    # imm = 0x8CA0
 	setb	%al
 	andb	%sil, %al
@@ -6,7 +6,7 @@ func000000000000004c:                   # @func000000000000004c
 	movl	$2, %eax
 	subl	%ecx, %eax
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	notl	%esi
 	testl	$6144, %esi                     # imm = 0x1800
 	setne	%al
@@ -17,7 +17,7 @@ func0000000000000018:                   # @func0000000000000018
 	negl	%eax
 	orl	$1, %eax
 	retq
-func0000000000000081:                   # @func0000000000000081
+func0000000000000301:                   # @func0000000000000301
 	testl	$2130706432, %esi               # imm = 0x7F000000
 	setne	%al
 	testl	%edi, %edi
@@ -26,7 +26,7 @@ func0000000000000081:                   # @func0000000000000081
 	movzbl	%cl, %eax
 	orl	$2, %eax
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	xorl	%ecx, %ecx
 	testl	$538968064, %esi                # imm = 0x20200000
 	setne	%cl
@@ -36,7 +36,7 @@ func000000000000001c:                   # @func000000000000001c
 	movl	$6291456, %eax                  # imm = 0x600000
 	cmovnel	%ecx, %eax
 	retq
-func00000000000000c1:                   # @func00000000000000c1
+func0000000000000181:                   # @func0000000000000181
 	notl	%esi
 	xorl	%eax, %eax
 	testl	%edi, %edi
@@ -46,7 +46,7 @@ func00000000000000c1:                   # @func00000000000000c1
 	movl	$3, %eax
 	cmovel	%ecx, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	andl	$61440, %esi                    # imm = 0xF000
 	xorl	$32768, %esi                    # imm = 0x8000
 	xorl	%eax, %eax
@@ -54,7 +54,7 @@ func0000000000000011:                   # @func0000000000000011
 	setne	%al
 	shll	$6, %eax
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	testb	$6, %sil
 	setne	%al
 	testl	%edi, %edi
@@ -63,7 +63,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	movzbl	%cl, %eax
 	incl	%eax
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000281:                   # @func0000000000000281
 	andl	$63, %esi
 	cmpl	$5, %esi
 	setb	%al
@@ -73,7 +73,7 @@ func0000000000000041:                   # @func0000000000000041
 	movzbl	%cl, %eax
 	xorl	$1649, %eax                     # imm = 0x671
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	xorl	%eax, %eax
 	testl	$100663296, %esi                # imm = 0x6000000
 	sete	%al

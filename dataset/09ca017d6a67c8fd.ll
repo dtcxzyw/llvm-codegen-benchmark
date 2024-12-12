@@ -4,7 +4,7 @@
 ; openssl/optimized/libssl-shlib-quic_wire.ll
 ; ruby/optimized/io.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 31
   %4 = icmp ne i64 %3, 11
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; jsonnet/optimized/rapidyaml.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 2
   %4 = icmp eq i64 %3, 0
@@ -30,7 +30,7 @@ entry:
 ; velox/optimized/ComplexVector.cpp.ll
 ; z3/optimized/dl_rule.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 65536
   %4 = icmp eq i64 %3, 0
@@ -42,7 +42,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/xdiffi.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000141(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1
   %4 = icmp eq i64 %3, 0
@@ -55,7 +55,7 @@ entry:
 ; git/optimized/xdiffi.ll
 ; llvm/optimized/VNCoercion.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000014c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1
   %4 = icmp ne i64 %3, 0
@@ -124,7 +124,7 @@ entry:
 ; spike/optimized/vluxei64_v.ll
 ; spike/optimized/vluxei8_v.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000018c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 3
   %4 = icmp ne i64 %3, 0
@@ -134,9 +134,21 @@ entry:
 }
 
 ; 1 occurrences:
+; lvgl/optimized/lv_tlsf.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000101(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 1
+  %4 = icmp eq i64 %3, 0
+  %5 = icmp ugt i64 %0, %1
+  %6 = select i1 %4, i1 true, i1 %5
+  ret i1 %6
+}
+
+; 1 occurrences:
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
   %4 = icmp eq i64 %3, 0
@@ -146,21 +158,9 @@ entry:
 }
 
 ; 1 occurrences:
-; z3/optimized/pdecl.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000091(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = and i64 %2, 7
-  %4 = icmp eq i64 %3, 1
-  %5 = icmp uge i64 %0, %1
-  %6 = select i1 %4, i1 true, i1 %5
-  ret i1 %6
-}
-
-; 1 occurrences:
 ; opencv/optimized/permute_layer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000008c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 2147483648
   %4 = icmp ne i64 %3, 0

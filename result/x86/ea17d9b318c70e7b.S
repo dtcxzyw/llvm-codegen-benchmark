@@ -8,6 +8,16 @@ func0000000000000006:                   # @func0000000000000006
 	testl	%edi, %edi
 	cmovsl	%ecx, %eax
 	retq
+func000000000000000c:                   # @func000000000000000c
+	movl	%edx, %ecx
+	andl	$-2, %ecx
+	testb	$1, %sil
+	cmovnel	%edx, %ecx
+	movl	%ecx, %eax
+	andl	$-785, %eax                     # imm = 0xFCEF
+	testl	%edi, %edi
+	cmovnel	%ecx, %eax
+	retq
 func0000000000000001:                   # @func0000000000000001
 	movl	%edx, %ecx
 	andl	$1020, %ecx                     # imm = 0x3FC

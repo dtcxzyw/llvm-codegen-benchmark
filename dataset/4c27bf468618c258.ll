@@ -12,7 +12,7 @@
 ; ruby/optimized/gc.ll
 ; ruby/optimized/range.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000302(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = icmp ne i64 %3, 0
@@ -26,7 +26,7 @@ entry:
 ; qemu/optimized/block_file-posix.c.ll
 ; verilator/optimized/V3Undriven.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000058(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = icmp eq i64 %3, 0
@@ -56,7 +56,7 @@ entry:
 ; velox/optimized/VectorSaver.cpp.ll
 ; z3/optimized/sat_cut_simplifier.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000042(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = icmp eq i64 %3, 0
@@ -68,7 +68,7 @@ entry:
 ; 1 occurrences:
 ; csmith/optimized/CVQualifiers.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000190(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000310(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = icmp ne i64 %3, 0
@@ -77,28 +77,15 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_display_irq.ll
-; llvm/optimized/AArch64AsmParser.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000030(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000070(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = icmp eq i64 %3, 0
-  %5 = icmp ugt i64 %0, 32
-  %6 = or i1 %5, %4
-  ret i1 %6
-}
-
-; 1 occurrences:
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000188(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = and i64 %1, %2
-  %4 = icmp ne i64 %3, 0
-  %5 = icmp ult i64 %0, 4096
+  %5 = icmp samesign ugt i64 %0, 3
   %6 = or i1 %5, %4
   ret i1 %6
 }

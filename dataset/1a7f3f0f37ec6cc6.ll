@@ -46,13 +46,14 @@ entry:
   ret i8 %4
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; arrow/optimized/string.cc.ll
 ; cpython/optimized/_zoneinfo.ll
 ; eastl/optimized/EAString.cpp.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; linux/optimized/scsi_lib.ll
 ; linux/optimized/vht.ll
+; lvgl/optimized/lv_calendar.ll
 ; meshlab/optimized/filter_measure.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; postgres/optimized/hyperloglog.ll

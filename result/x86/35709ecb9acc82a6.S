@@ -1,4 +1,4 @@
-func0000000000000078:                   # @func0000000000000078
+func00000000000000f8:                   # @func00000000000000f8
 	addl	$-48, %edx
 	andl	$-2, %edx
 	addq	%rsi, %rdx

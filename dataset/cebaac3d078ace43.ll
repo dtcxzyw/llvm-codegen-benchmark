@@ -1,7 +1,13 @@
 
-; 6 occurrences:
+; 12 occurrences:
 ; icu/optimized/normalizer2impl.ll
 ; libjpeg-turbo/optimized/jdcolor.c.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; mold/optimized/arch-arm32.cc.ll
 ; oiio/optimized/Codec.cpp.ll
 ; openusd/optimized/reformat.c.ll

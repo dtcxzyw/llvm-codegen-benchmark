@@ -6,7 +6,7 @@ func0000000000000004:                   # @func0000000000000004
 	vmsltu.vx	v10, v8, a0
 	vmor.mm	v0, v10, v0
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vi	v8, v8, -3
 	vmsleu.vi	v10, v8, -3
@@ -17,12 +17,12 @@ func000000000000000c:                   # @func000000000000000c
 	vmsne.vi	v10, v8, -1
 	vmor.mm	v0, v10, v0
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v10, v8, 2
 	vmor.mm	v0, v10, v0
 	ret
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsne.vi	v10, v8, 1
 	vmor.mm	v0, v10, v0
@@ -52,7 +52,13 @@ func000000000000000a:                   # @func000000000000000a
 	vmsgt.vi	v10, v8, 0
 	vmor.mm	v0, v10, v0
 	ret
-func0000000000000026:                   # @func0000000000000026
+func0000000000000034:                   # @func0000000000000034
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vadd.vi	v8, v8, -2
+	vmsleu.vi	v10, v8, 3
+	vmor.mm	v0, v10, v0
+	ret
+func0000000000000046:                   # @func0000000000000046
 	lui	a0, 4096
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vadd.vx	v8, v8, a0
@@ -60,8 +66,22 @@ func0000000000000026:                   # @func0000000000000026
 	vmslt.vx	v10, v8, a0
 	vmor.mm	v0, v10, v0
 	ret
-func000000000000003c:                   # @func000000000000003c
+func0000000000000014:                   # @func0000000000000014
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vadd.vi	v8, v8, -4
+	li	a0, 48
+	vmsltu.vx	v10, v8, a0
+	vmor.mm	v0, v10, v0
+	ret
+func000000000000006c:                   # @func000000000000006c
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsne.vi	v10, v8, 2
+	vmor.mm	v0, v10, v0
+	ret
+func0000000000000018:                   # @func0000000000000018
+	li	a0, 354
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vadd.vx	v8, v8, a0
+	vmsleu.vi	v10, v8, 5
 	vmor.mm	v0, v10, v0
 	ret

@@ -77,16 +77,16 @@ func0000000000000016:                   # @func0000000000000016
 	setbe	%al
 	orb	%dil, %al
 	retq
-.LCPI11_0:
-	.quad	0x7ff0000000000000              # double +Inf
-func0000000000000012:                   # @func0000000000000012
-	vucomisd	.LCPI11_0(%rip), %xmm0
-	sete	%al
-	orb	%dil, %al
-	retq
 func000000000000001c:                   # @func000000000000001c
 	vucomisd	%xmm0, %xmm0
 	setnp	%al
+	orb	%dil, %al
+	retq
+.LCPI12_0:
+	.quad	0x7ff0000000000000              # double +Inf
+func0000000000000012:                   # @func0000000000000012
+	vucomisd	.LCPI12_0(%rip), %xmm0
+	sete	%al
 	orb	%dil, %al
 	retq
 .LCPI13_0:

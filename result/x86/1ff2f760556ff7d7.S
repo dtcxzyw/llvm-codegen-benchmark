@@ -14,8 +14,15 @@ func000000000000000c:                   # @func000000000000000c
 	retq
 func0000000000000004:                   # @func0000000000000004
 	xorl	%eax, %eax
+	cmpl	$3, %edx
+	cmovael	%edi, %eax
 	testb	$1, %sil
 	cmovel	%edi, %eax
-	cmpl	$3, %edx
+	retq
+func0000000000000014:                   # @func0000000000000014
+	testb	$1, %sil
+	movl	$43, %eax
+	cmovel	%edi, %eax
+	cmpl	$3600, %edx                     # imm = 0xE10
 	cmovael	%edi, %eax
 	retq

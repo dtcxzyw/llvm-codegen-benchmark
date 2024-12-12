@@ -20,7 +20,7 @@ entry:
   ret i32 %5
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; abc/optimized/bmcCexCare.c.ll
 ; git/optimized/index-pack.ll
 ; git/optimized/rebase.ll
@@ -28,6 +28,7 @@ entry:
 ; libquic/optimized/gcm.c.ll
 ; linux/optimized/intel_vdsc.ll
 ; llvm/optimized/ReachingDefAnalysis.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000018(i1 %0, i32 %1) #0 {

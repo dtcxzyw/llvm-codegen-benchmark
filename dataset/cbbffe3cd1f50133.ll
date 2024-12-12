@@ -10,7 +10,7 @@ entry:
   ret i1 %5
 }
 
-; 28 occurrences:
+; 27 occurrences:
 ; eastl/optimized/TestFixedString.cpp.ll
 ; eastl/optimized/TestString.cpp.ll
 ; llvm/optimized/COFFObjectFile.cpp.ll
@@ -20,7 +20,6 @@ entry:
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/moment.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/xml.cpp.ll
 ; openvdb/optimized/StreamCompression.cc.ll
 ; rocksdb/optimized/db_iter.cc.ll
@@ -49,6 +48,8 @@ entry:
 }
 
 ; 53 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; cmake/optimized/archive_getdate.c.ll
 ; cmake/optimized/cm_get_date.c.ll
 ; cpython/optimized/mpdecimal.ll
@@ -66,7 +67,6 @@ entry:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/DWARFTypePrinter.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVMergeBaseOffset.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
@@ -77,7 +77,6 @@ entry:
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/moment.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; mitsuba3/optimized/xml.cpp.ll
 ; ocio/optimized/Lut3DOpCPU.cpp.ll
@@ -111,7 +110,7 @@ entry:
   ret i1 %5
 }
 
-; 487 occurrences:
+; 496 occurrences:
 ; darktable/optimized/Camera.cpp.ll
 ; darktable/optimized/ColorFilterArray.cpp.ll
 ; darktable/optimized/DngDecoder.cpp.ll
@@ -302,6 +301,7 @@ entry:
 ; mold/optimized/main.cc.SH4.cc.ll
 ; mold/optimized/main.cc.SPARC64.cc.ll
 ; mold/optimized/main.cc.X86_64.cc.ll
+; mold/optimized/main.cc.ll
 ; mold/optimized/mapfile.cc.ALPHA.cc.ll
 ; mold/optimized/mapfile.cc.ARM32.cc.ll
 ; mold/optimized/mapfile.cc.ARM64.cc.ll
@@ -487,13 +487,10 @@ entry:
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/outputs-spec.ll
 ; nix/optimized/parsed-derivations.ll
@@ -541,6 +538,7 @@ entry:
 ; nix/optimized/suggestions.ll
 ; nix/optimized/tarball.ll
 ; nix/optimized/tarfile.ll
+; nix/optimized/terminal.ll
 ; nix/optimized/tests.ll
 ; nix/optimized/thread-pool.ll
 ; nix/optimized/trivial.ll
@@ -568,12 +566,14 @@ entry:
 ; spike/optimized/isa_parser.ll
 ; spike/optimized/ns16550.ll
 ; spike/optimized/plic.ll
+; spike/optimized/processor.ll
 ; spike/optimized/socketif.ll
 ; spike/optimized/spike-dasm.ll
 ; spike/optimized/spike-log-parser.ll
 ; spike/optimized/spike.ll
 ; yalantinglibs/optimized/EnumFieldGenerator.cpp.ll
 ; yalantinglibs/optimized/FieldGenerator.cpp.ll
+; yalantinglibs/optimized/MessageGenerator.cpp.ll
 ; yalantinglibs/optimized/PrimitiveFieldGenerator.cpp.ll
 ; yalantinglibs/optimized/StructGenerator.cpp.ll
 ; yalantinglibs/optimized/basic_usage.cpp.ll
@@ -586,21 +586,29 @@ entry:
 ; yalantinglibs/optimized/client_pools.cpp.ll
 ; yalantinglibs/optimized/concurrent_clients.cpp.ll
 ; yalantinglibs/optimized/conformance.pb.cc.ll
+; yalantinglibs/optimized/conformance.struct_pb.cc.ll
 ; yalantinglibs/optimized/conformance_cpp.cc.ll
 ; yalantinglibs/optimized/conformance_test.cc.ll
 ; yalantinglibs/optimized/conformance_test_runner.cc.ll
 ; yalantinglibs/optimized/data_def.pb.cc.ll
 ; yalantinglibs/optimized/data_gen.cpp.ll
+; yalantinglibs/optimized/descriptor.struct_pb.cc.ll
 ; yalantinglibs/optimized/example.cpp.ll
+; yalantinglibs/optimized/field_mask.struct_pb.cc.ll
 ; yalantinglibs/optimized/file_client.cpp.ll
 ; yalantinglibs/optimized/file_server.cpp.ll
 ; yalantinglibs/optimized/non_aggregated_type.cpp.ll
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
+; yalantinglibs/optimized/struct.struct_pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
+; yalantinglibs/optimized/test_messages_proto2.struct_pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
+; yalantinglibs/optimized/test_messages_proto3.struct_pb.cc.ll
+; yalantinglibs/optimized/tutorial.cpp.ll
+; yalantinglibs/optimized/type.struct_pb.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000046(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %0, i64 %1, i64 %2
   %4 = add nuw i64 %3, 1
@@ -659,11 +667,12 @@ entry:
   ret i1 %5
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; coreutils-rs/optimized/22bojphyikqmi872.ll
 ; curl/optimized/libcurl_la-mqtt.ll
 ; eastl/optimized/TestFixedString.cpp.ll
 ; eastl/optimized/TestString.cpp.ll
+; llvm/optimized/COFFImportFile.cpp.ll
 ; llvm/optimized/COFFObjectFile.cpp.ll
 ; llvm/optimized/ScaledNumber.cpp.ll
 ; ocio/optimized/Lut3DOpCPU.cpp.ll
@@ -682,7 +691,7 @@ entry:
 ; 1 occurrences:
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %0, i64 %1, i64 %2
   %4 = add nsw i64 %3, -8
@@ -704,7 +713,7 @@ entry:
 ; 1 occurrences:
 ; llama.cpp/optimized/llama.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = select i1 %0, i64 %1, i64 %2
   %4 = icmp eq i64 %3, 1

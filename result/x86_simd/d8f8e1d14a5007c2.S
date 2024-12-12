@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	4294967291                      # 0xfffffffb
-func00000000000000ec:                   # @func00000000000000ec
+func00000000000001cc:                   # @func00000000000001cc
 	vpaddd	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
 	vpsrlvd	%xmm1, %xmm0, %xmm0
@@ -10,7 +10,7 @@ func00000000000000ec:                   # @func00000000000000ec
 	retq
 .LCPI1_0:
 	.long	4294967290                      # 0xfffffffa
-func00000000000000fc:                   # @func00000000000000fc
+func00000000000001ec:                   # @func00000000000001ec
 	vpaddd	.LCPI1_0(%rip){1to4}, %xmm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
 	vpsrlvd	%xmm1, %xmm0, %xmm0
@@ -22,7 +22,7 @@ func00000000000000fc:                   # @func00000000000000fc
 	.long	4294967291                      # 0xfffffffb
 .LCPI2_1:
 	.long	1                               # 0x1
-func00000000000000e1:                   # @func00000000000000e1
+func00000000000001c1:                   # @func00000000000001c1
 	vpaddd	.LCPI2_0(%rip){1to4}, %xmm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
 	vpsrlvd	%xmm1, %xmm0, %xmm0
@@ -35,7 +35,7 @@ func00000000000000e1:                   # @func00000000000000e1
 	.long	4294967264                      # 0xffffffe0
 .LCPI3_1:
 	.long	1                               # 0x1
-func00000000000001a1:                   # @func00000000000001a1
+func0000000000000341:                   # @func0000000000000341
 	vpaddd	.LCPI3_0(%rip){1to4}, %xmm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
 	vpsrlvd	%xmm1, %xmm0, %xmm0
@@ -46,7 +46,7 @@ func00000000000001a1:                   # @func00000000000001a1
 	retq
 .LCPI4_0:
 	.long	4294967291                      # 0xfffffffb
-func00000000000001ec:                   # @func00000000000001ec
+func00000000000003cc:                   # @func00000000000003cc
 	vpaddd	.LCPI4_0(%rip){1to4}, %xmm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
 	vpsrlvd	%xmm1, %xmm0, %xmm0
@@ -56,7 +56,7 @@ func00000000000001ec:                   # @func00000000000001ec
 	retq
 .LCPI5_0:
 	.long	1                               # 0x1
-func0000000000000121:                   # @func0000000000000121
+func0000000000000241:                   # @func0000000000000241
 	vpcmpeqd	%xmm2, %xmm2, %xmm2
 	vpaddd	%xmm2, %xmm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
@@ -70,7 +70,7 @@ func0000000000000121:                   # @func0000000000000121
 	.long	4294967145                      # 0xffffff69
 .LCPI6_1:
 	.long	1                               # 0x1
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpaddd	.LCPI6_0(%rip){1to4}, %xmm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
 	vpsrlvd	%xmm1, %xmm0, %xmm0

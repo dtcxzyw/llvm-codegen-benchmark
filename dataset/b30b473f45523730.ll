@@ -1,5 +1,5 @@
 
-; 75 occurrences:
+; 58 occurrences:
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; delta-rs/optimized/1rw3q64nilk4jthd.ll
 ; delta-rs/optimized/26brbbjk91eotd4o.ll
@@ -12,7 +12,6 @@
 ; jemalloc/optimized/decay.sym.ll
 ; linux/optimized/balloc.ll
 ; linux/optimized/mballoc.ll
-; linux/optimized/nfstrace.ll
 ; linux/optimized/read.ll
 ; linux/optimized/sd.ll
 ; linux/optimized/write.ll
@@ -29,32 +28,16 @@
 ; llvm/optimized/SerializedDiagnosticPrinter.cpp.ll
 ; llvm/optimized/TestModuleFileExtension.cpp.ll
 ; openjdk/optimized/codeHeapState.ll
-; openjdk/optimized/g1CollectedHeap.ll
-; openjdk/optimized/g1ConcurrentMark.ll
-; openjdk/optimized/g1ConcurrentMarkObjArrayProcessor.ll
-; openjdk/optimized/g1ConcurrentRebuildAndScrub.ll
-; openjdk/optimized/g1FullCollector.ll
-; openjdk/optimized/g1FullGCAdjustTask.ll
-; openjdk/optimized/g1FullGCCompactTask.ll
-; openjdk/optimized/g1FullGCPrepareTask.ll
-; openjdk/optimized/g1FullGCResetMetadataTask.ll
-; openjdk/optimized/g1HeapRegion.ll
-; openjdk/optimized/g1HeapVerifier.ll
-; openjdk/optimized/g1RemSet.ll
-; openjdk/optimized/g1YoungGCPostEvacuateTasks.ll
 ; openjdk/optimized/objArrayKlass.ll
-; openjdk/optimized/psParallelCompact.ll
 ; openjdk/optimized/shenandoahAsserts.ll
 ; openjdk/optimized/shenandoahBarrierSet.ll
 ; openjdk/optimized/shenandoahFullGC.ll
 ; openjdk/optimized/shenandoahHeap.ll
 ; openjdk/optimized/shenandoahMark.ll
-; openjdk/optimized/shenandoahMarkBitMap.ll
 ; openjdk/optimized/shenandoahRuntime.ll
 ; openjdk/optimized/shenandoahVerifier.ll
 ; openjdk/optimized/stubRoutines.ll
 ; qemu/optimized/block_qcow2-refcount.c.ll
-; qemu/optimized/hw_timer_sifive_pwm.c.ll
 ; qemu/optimized/util_hbitmap.c.ll
 ; redis/optimized/decay.ll
 ; redis/optimized/decay.sym.ll
@@ -83,12 +66,11 @@ entry:
   ret i1 %4
 }
 
-; 23 occurrences:
+; 22 occurrences:
 ; jemalloc/optimized/eset.ll
 ; jemalloc/optimized/eset.pic.ll
 ; jemalloc/optimized/eset.sym.ll
 ; linux/optimized/cache.ll
-; linux/optimized/dw.ll
 ; linux/optimized/fair.ll
 ; linux/optimized/fatent.ll
 ; linux/optimized/i915_ttm_buddy_manager.ll
@@ -115,7 +97,7 @@ entry:
   ret i1 %4
 }
 
-; 24 occurrences:
+; 22 occurrences:
 ; abc/optimized/abcNpnSave.c.ll
 ; abc/optimized/ifDec07.c.ll
 ; abc/optimized/ifDec16.c.ll
@@ -123,13 +105,11 @@ entry:
 ; linux/optimized/clockevents.ll
 ; linux/optimized/hugetlb.ll
 ; linux/optimized/mballoc.ll
-; linux/optimized/nfstrace.ll
 ; linux/optimized/printk_ringbuffer.ll
 ; linux/optimized/read.ll
 ; linux/optimized/resize.ll
 ; linux/optimized/write.ll
 ; llvm/optimized/AggressiveInstCombine.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; oiio/optimized/exrinput.cpp.ll
 ; openjdk/optimized/parMarkBitMap.ll
 ; openjdk/optimized/psCompactionManager.ll
@@ -145,6 +125,32 @@ define i1 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, %2
   %4 = icmp eq i64 %3, %0
+  ret i1 %4
+}
+
+; 17 occurrences:
+; openjdk/optimized/g1CollectedHeap.ll
+; openjdk/optimized/g1ConcurrentMark.ll
+; openjdk/optimized/g1ConcurrentMarkObjArrayProcessor.ll
+; openjdk/optimized/g1ConcurrentRebuildAndScrub.ll
+; openjdk/optimized/g1FullCollector.ll
+; openjdk/optimized/g1FullGCAdjustTask.ll
+; openjdk/optimized/g1FullGCCompactTask.ll
+; openjdk/optimized/g1FullGCPrepareTask.ll
+; openjdk/optimized/g1FullGCResetMetadataTask.ll
+; openjdk/optimized/g1HeapRegion.ll
+; openjdk/optimized/g1HeapVerifier.ll
+; openjdk/optimized/g1RemSet.ll
+; openjdk/optimized/g1YoungGCPostEvacuateTasks.ll
+; openjdk/optimized/psParallelCompact.ll
+; openjdk/optimized/shenandoahMarkBitMap.ll
+; qemu/optimized/block_qcow2-refcount.c.ll
+; qemu/optimized/hw_timer_sifive_pwm.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = lshr i64 %1, %2
+  %4 = icmp samesign ult i64 %3, %0
   ret i1 %4
 }
 

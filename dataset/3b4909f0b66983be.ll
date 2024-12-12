@@ -7,7 +7,7 @@
 ; opencv/optimized/contrast_preserve.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = sext i32 %3 to i64
@@ -24,7 +24,7 @@ entry:
 ; opencv/optimized/contrast_preserve.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = sext i32 %3 to i64
@@ -33,7 +33,7 @@ entry:
   ret i1 %6
 }
 
-; 35 occurrences:
+; 34 occurrences:
 ; faiss/optimized/NNDescent.cpp.ll
 ; faiss/optimized/VectorTransform.cpp.ll
 ; faiss/optimized/index_read.cpp.ll
@@ -43,7 +43,6 @@ entry:
 ; gromacs/optimized/pme.cpp.ll
 ; gromacs/optimized/state.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
@@ -70,7 +69,7 @@ entry:
 ; openusd/optimized/patchTreeBuilder.cpp.ll
 ; xgboost/optimized/iterative_dmatrix.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000064(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = sext i32 %3 to i64
@@ -79,7 +78,7 @@ entry:
   ret i1 %6
 }
 
-; 27 occurrences:
+; 26 occurrences:
 ; faiss/optimized/NNDescent.cpp.ll
 ; faiss/optimized/VectorTransform.cpp.ll
 ; gromacs/optimized/atomdata.cpp.ll
@@ -87,7 +86,6 @@ entry:
 ; gromacs/optimized/pme.cpp.ll
 ; gromacs/optimized/state.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
@@ -108,7 +106,7 @@ entry:
 ; openusd/optimized/patchTreeBuilder.cpp.ll
 ; xgboost/optimized/iterative_dmatrix.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000068(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = sext i32 %3 to i64
@@ -127,7 +125,7 @@ entry:
 ; openspiel/optimized/matrix_game.cc.ll
 ; pbrt-v4/optimized/media.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = sext i32 %3 to i64

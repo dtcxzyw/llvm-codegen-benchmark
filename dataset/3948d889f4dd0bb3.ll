@@ -1,15 +1,16 @@
 
-; 5 occurrences:
+; 6 occurrences:
 ; gromacs/optimized/quadraticsplinetable.cpp.ll
 ; ipopt/optimized/IpCGPenaltyLSAcceptor.ll
 ; ipopt/optimized/IpCGSearchDirCalc.ll
 ; ocio/optimized/GradingTone.cpp.ll
 ; quantlib/optimized/markovfunctional.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; Function Attrs: nounwind
 define double @func0000000000000002(double %0, double %1) #0 {
 entry:
   %2 = fadd double %1, 1.000000e+00
-  %3 = fcmp ogt double %2, %0
+  %3 = fcmp olt double %0, %2
   %4 = select i1 %3, double %2, double %0
   ret double %4
 }
@@ -22,7 +23,7 @@ entry:
 define double @func0000000000000004(double %0, double %1) #0 {
 entry:
   %2 = fadd double %1, -1.000000e+00
-  %3 = fcmp olt double %2, %0
+  %3 = fcmp ogt double %0, %2
   %4 = select i1 %3, double %2, double %0
   ret double %4
 }

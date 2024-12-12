@@ -24,13 +24,13 @@
 ; quantlib/optimized/thailand.ll
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i32 %1) #0 {
+define i1 @func0000000000000042(i1 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -3
   %3 = icmp eq i32 %2, 1
   %4 = icmp eq i32 %1, 8
   %5 = or i1 %4, %3
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

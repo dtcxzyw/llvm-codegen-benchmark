@@ -25,7 +25,7 @@ entry:
   ret i64 %5
 }
 
-; 89 occurrences:
+; 88 occurrences:
 ; abc/optimized/giaMinLut2.c.ll
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/zip.c.ll
@@ -46,7 +46,6 @@ entry:
 ; hermes/optimized/zip.c.ll
 ; libjpeg-turbo/optimized/tjbench.c.ll
 ; libjpeg-turbo/optimized/tjunittest.c.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
@@ -124,7 +123,7 @@ entry:
   ret i64 %5
 }
 
-; 113 occurrences:
+; 112 occurrences:
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/darPrec.c.ll
 ; abc/optimized/extraUtilMisc.c.ll
@@ -198,7 +197,6 @@ entry:
 ; oiio/optimized/texturesys.cpp.ll
 ; oiio/optimized/tiffinput.cpp.ll
 ; oiio/optimized/tiffoutput.cpp.ll
-; openblas/optimized/dgetsqrhrt.c.ll
 ; opencv/optimized/array.cpp.ll
 ; opencv/optimized/bardetect.cpp.ll
 ; opencv/optimized/bgfg_KNN.cpp.ll

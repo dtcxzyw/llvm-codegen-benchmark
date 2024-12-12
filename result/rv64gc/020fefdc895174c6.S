@@ -27,8 +27,3 @@ func0000000000000008:                   # @func0000000000000008
 	sltiu	a0, a0, 96
 	xori	a0, a0, 1
 	ret
-func0000000000000004:                   # @func0000000000000004
-	and	a0, a0, a1
-	andi	a0, a0, 255
-	sltiu	a0, a0, 32
-	ret

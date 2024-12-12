@@ -86,7 +86,7 @@ entry:
 define i32 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul nsw i64 %1, -40
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = sdiv exact i64 %3, 40
   %5 = trunc i64 %4 to i32
   ret i32 %5
@@ -113,18 +113,6 @@ entry:
   %2 = mul nsw i64 %1, 1000000
   %3 = add nsw i64 %2, %0
   %4 = sdiv i64 %3, 86400000000
-  %5 = trunc nsw i64 %4 to i32
-  ret i32 %5
-}
-
-; 1 occurrences:
-; eastl/optimized/TestChrono.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000001(i64 %0, i64 %1) #0 {
-entry:
-  %2 = mul i64 %1, 1000000000
-  %3 = add i64 %2, %0
-  %4 = sdiv i64 %3, 3600000000000
   %5 = trunc nsw i64 %4 to i32
   ret i32 %5
 }

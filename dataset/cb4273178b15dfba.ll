@@ -1,5 +1,5 @@
 
-; 46 occurrences:
+; 50 occurrences:
 ; abc/optimized/bdcSpfd.c.ll
 ; abc/optimized/giaDecs.c.ll
 ; arrow/optimized/message.cc.ll
@@ -20,9 +20,13 @@
 ; linux/optimized/gen8_ppgtt.ll
 ; linux/optimized/io_apic.ll
 ; llvm/optimized/CallLowering.cpp.ll
+; llvm/optimized/DecoderEmitter.cpp.ll
+; llvm/optimized/DependenceAnalysis.cpp.ll
 ; llvm/optimized/DwarfExpression.cpp.ll
+; llvm/optimized/LoopStrengthReduce.cpp.ll
 ; llvm/optimized/MCAssembler.cpp.ll
 ; llvm/optimized/PeepholeOptimizer.cpp.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; opencv/optimized/tflite_importer.cpp.ll
 ; openjdk/optimized/c1_Optimizer.ll
@@ -55,10 +59,11 @@ entry:
   ret i1 %5
 }
 
-; 46 occurrences:
+; 47 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/sfmDec.c.ll
 ; arrow/optimized/api_scalar.cc.ll
+; boost/optimized/approximately_equals.ll
 ; cmake/optimized/archive_entry.c.ll
 ; cpython/optimized/obmalloc.ll
 ; gromacs/optimized/colvarbias_meta.cpp.ll

@@ -2,11 +2,11 @@
 ; 1 occurrences:
 ; openjdk/optimized/psParallelCompact.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000000a(ptr %0, i32 %1) #0 {
+define i64 @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = getelementptr nusw ptr, ptr %0, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 524280
+  %3 = getelementptr nusw nuw ptr, ptr %0, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 524280
   %5 = ptrtoint ptr %4 to i64
   %6 = and i64 %5, -524288
   ret i64 %6
@@ -43,11 +43,11 @@ entry:
 ; 1 occurrences:
 ; wolfssl/optimized/rsa.c.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000001a(ptr %0, i32 %1) #0 {
+define i64 @func000000000000001f(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 %2
-  %4 = getelementptr nusw i8, ptr %3, i64 1
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 1
   %5 = ptrtoint ptr %4 to i64
   %6 = and i64 %5, 7
   ret i64 %6

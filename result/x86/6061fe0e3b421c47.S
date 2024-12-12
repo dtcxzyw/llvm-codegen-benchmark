@@ -10,9 +10,3 @@ func0000000000000010:                   # @func0000000000000010
 	subq	%rax, %rdi
 	leaq	1(%rdi), %rax
 	retq
-func0000000000000015:                   # @func0000000000000015
-	addl	%esi, %esi
-	notl	%esi
-	movslq	%esi, %rax
-	addq	%rdi, %rax
-	retq

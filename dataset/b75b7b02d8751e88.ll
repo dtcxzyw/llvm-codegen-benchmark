@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/FindFirst.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = and i32 %3, -64
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; velox/optimized/FirstLastValue.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = and i32 %3, -64

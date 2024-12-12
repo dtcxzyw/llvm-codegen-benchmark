@@ -1,5 +1,5 @@
 
-; 21 occurrences:
+; 23 occurrences:
 ; abc/optimized/giaTim.c.ll
 ; abc/optimized/sclLiberty.c.ll
 ; cpython/optimized/mpdecimal.ll
@@ -21,6 +21,8 @@
 ; z3/optimized/arith_rewriter.cpp.ll
 ; z3/optimized/bv_rewriter.cpp.ll
 ; z3/optimized/theory_arith.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0) #0 {
 entry:

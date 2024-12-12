@@ -1,9 +1,9 @@
-func0000000000000034:                   # @func0000000000000034
+func0000000000000064:                   # @func0000000000000064
 	leaq	1(%rsi), %rax
 	cmpq	%rdi, %rsi
 	cmovaeq	%rdi, %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	leaq	-1(%rsi), %rax
 	cmpq	%rdi, %rsi
 	cmovneq	%rdi, %rax
@@ -13,7 +13,7 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	%rdi, %rsi
 	cmovaeq	%rdi, %rax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	leaq	1(%rsi), %rax
 	cmpq	%rsi, %rdi
 	cmovleq	%rdi, %rax
@@ -23,27 +23,27 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	%rdi, %rsi
 	cmovbeq	%rdi, %rax
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	leaq	1(%rsi), %rax
 	cmpq	%rdi, %rsi
 	cmovaeq	%rdi, %rax
 	retq
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	leaq	1(%rsi), %rax
 	cmpq	%rsi, %rdi
 	cmovaeq	%rdi, %rax
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	leaq	-1(%rsi), %rax
 	cmpq	%rsi, %rdi
 	cmovgeq	%rdi, %rax
 	retq
-func0000000000000019:                   # @func0000000000000019
+func0000000000000029:                   # @func0000000000000029
 	leaq	-1(%rsi), %rax
 	cmpq	%rsi, %rdi
 	cmovbq	%rdi, %rax
 	retq
-func000000000000001b:                   # @func000000000000001b
+func000000000000002b:                   # @func000000000000002b
 	leaq	-1(%rsi), %rax
 	cmpq	%rsi, %rdi
 	cmovlq	%rdi, %rax
@@ -52,4 +52,14 @@ func000000000000000a:                   # @func000000000000000a
 	leaq	1(%rsi), %rax
 	cmpq	%rsi, %rdi
 	cmovleq	%rdi, %rax
+	retq
+func0000000000000054:                   # @func0000000000000054
+	leaq	1(%rsi), %rax
+	cmpq	%rdi, %rsi
+	cmovaeq	%rdi, %rax
+	retq
+func0000000000000074:                   # @func0000000000000074
+	leaq	1(%rsi), %rax
+	cmpq	%rdi, %rsi
+	cmovaeq	%rdi, %rax
 	retq

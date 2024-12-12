@@ -37,20 +37,6 @@ func000000000000001b:                   # @func000000000000001b
 	orl	%edi, %eax
 	orl	$-268435456, %eax               # imm = 0xF0000000
 	retq
-func0000000000000004:                   # @func0000000000000004
-	movl	%edi, %eax
-	andl	$64, %edx
-	shll	$14, %edx
-	orl	%esi, %eax
-	orl	%edx, %eax
-	orl	$120, %eax
-	retq
-func000000000000000f:                   # @func000000000000000f
-	andl	$20, %edx
-	shll	$5, %edx
-	orl	%esi, %edx
-	leal	64(%rdi,%rdx), %eax
-	retq
 func000000000000001c:                   # @func000000000000001c
 	shll	$8, %edx
 	movzwl	%dx, %eax
@@ -94,6 +80,12 @@ func000000000000000b:                   # @func000000000000000b
 	orl	%esi, %edx
 	leal	1(%rdx,%rdi), %eax
 	retq
+func0000000000000004:                   # @func0000000000000004
+	andl	$524288, %edx                   # imm = 0x80000
+	leal	(%rsi,%rdx,4), %eax
+	orl	%edi, %eax
+	orl	$96, %eax
+	retq
 func000000000000001d:                   # @func000000000000001d
 	movl	%edi, %eax
 	shll	$12, %edx
@@ -101,6 +93,12 @@ func000000000000001d:                   # @func000000000000001d
 	orl	%esi, %eax
 	orl	%edx, %eax
 	orl	$152, %eax
+	retq
+func000000000000000f:                   # @func000000000000000f
+	shll	$6, %edx
+	andl	$117440512, %edx                # imm = 0x7000000
+	orl	%esi, %edx
+	leal	-260013952(%rdi,%rdx), %eax
 	retq
 func000000000000000e:                   # @func000000000000000e
 	shll	$8, %edx

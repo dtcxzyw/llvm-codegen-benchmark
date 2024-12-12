@@ -1,6 +1,11 @@
 
-; 223 occurrences:
+; 229 occurrences:
 ; abseil-cpp/optimized/examine_stack.cc.ll
+; boost/optimized/round_robin.ll
+; boost/optimized/scheduler.ll
+; boost/optimized/shared_work.ll
+; boost/optimized/waker.ll
+; boost/optimized/work_stealing.ll
 ; clamav/optimized/pe.c.ll
 ; eastl/optimized/TestAllocator.cpp.ll
 ; eastl/optimized/TestFixedTupleVector.cpp.ll
@@ -38,6 +43,7 @@
 ; llvm/optimized/FileManager.cpp.ll
 ; llvm/optimized/MSFBuilder.cpp.ll
 ; llvm/optimized/TpiStreamBuilder.cpp.ll
+; lvgl/optimized/lv_tlsf.ll
 ; node/optimized/libnode.agent.ll
 ; node/optimized/libnode.application.ll
 ; node/optimized/libnode.async_wrap.ll

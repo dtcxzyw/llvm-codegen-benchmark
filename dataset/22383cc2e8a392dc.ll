@@ -1,49 +1,36 @@
 
-; 32 occurrences:
+; 20 occurrences:
 ; abc/optimized/bacReadVer.c.ll
 ; abc/optimized/cbaReadVer.c.ll
 ; abc/optimized/mioUtils.c.ll
 ; abc/optimized/sclLibUtil.c.ll
+; assimp/optimized/glTF2Importer.cpp.ll
 ; cmake/optimized/parsedate.c.ll
 ; curl/optimized/libcurl_la-parsedate.ll
-; icu/optimized/decNumber.ll
-; jq/optimized/decNumber.ll
-; linux/optimized/hwxface.ll
 ; llvm/optimized/AddressSanitizer.cpp.ll
 ; llvm/optimized/ConstantFolding.cpp.ll
 ; llvm/optimized/IRBuilder.cpp.ll
 ; llvm/optimized/InstCombineAndOrXor.cpp.ll
 ; llvm/optimized/InstructionSimplify.cpp.ll
 ; llvm/optimized/OpenMPOpt.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
-; llvm/optimized/SemaConcept.cpp.ll
-; llvm/optimized/SemaDeclCXX.cpp.ll
-; llvm/optimized/SemaExprCXX.cpp.ll
-; llvm/optimized/SemaOverload.cpp.ll
-; llvm/optimized/SemaTemplate.cpp.ll
-; llvm/optimized/SemaTemplateDeduction.cpp.ll
-; llvm/optimized/SemaTemplateDeductionGuide.cpp.ll
-; llvm/optimized/SemaTemplateInstantiate.cpp.ll
-; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
+; llvm/optimized/VectorCombine.cpp.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; php/optimized/zend_jit.ll
 ; protobuf/optimized/lexer.cc.ll
+; quickjs/optimized/libregexp.ll
 ; re2/optimized/prog.cc.ll
-; wireshark/optimized/packet-ieee80211-radiotap.c.ll
 ; wireshark/optimized/packet-memcache.c.ll
-; yoga/optimized/AbsoluteLayout.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 123
   %4 = and i1 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 66 occurrences:
+; 65 occurrences:
 ; abc/optimized/bacReadVer.c.ll
-; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/cbaReadVer.c.ll
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; clamav/optimized/matcher-byte-comp.c.ll
@@ -112,12 +99,12 @@ entry:
 define i1 @func000000000000000c(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
 
-; 91 occurrences:
+; 97 occurrences:
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/ColladaParser.cpp.ll
 ; assimp/optimized/D3MFImporter.cpp.ll
@@ -128,7 +115,6 @@ entry:
 ; assimp/optimized/OgreXmlSerializer.cpp.ll
 ; assimp/optimized/X3DImporter.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
-; assimp/optimized/glTF2Importer.cpp.ll
 ; cmake/optimized/test_int_C.c.ll
 ; cmake/optimized/test_int_CXX.cxx.ll
 ; coreutils-rs/optimized/h56aibhqef681ic.ll
@@ -143,6 +129,8 @@ entry:
 ; icu/optimized/utrace.ll
 ; jq/optimized/regenc.ll
 ; libquic/optimized/s3_srvr.c.ll
+; linux/optimized/i2c-i801.ll
+; linux/optimized/ip_options.ll
 ; linux/optimized/namei_msdos.ll
 ; linux/optimized/nf_conntrack_proto_tcp.ll
 ; linux/optimized/nf_nat_core.ll
@@ -160,8 +148,8 @@ entry:
 ; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; llvm/optimized/NullabilityChecker.cpp.ll
 ; llvm/optimized/ProfileSummary.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
+; lvgl/optimized/lv_flex.ll
 ; memcached/optimized/memcached-proto_bin.ll
 ; memcached/optimized/memcached_debug-proto_bin.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -180,10 +168,10 @@ entry:
 ; openssl/optimized/libssl-shlib-rec_layer_d1.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; pbrt-v4/optimized/stbimage.cpp.ll
-; php/optimized/pcre2_xclass.ll
 ; php/optimized/util.ll
 ; php/optimized/zend_compile.ll
 ; php/optimized/zend_jit.ll
+; postgres/optimized/dumputils.ll
 ; protobuf/optimized/lexer.cc.ll
 ; proxygen/optimized/HeaderDecodeInfo.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
@@ -206,9 +194,14 @@ entry:
 ; wireshark/optimized/packet-ocp1.c.ll
 ; wireshark/optimized/packet-sapdiag.c.ll
 ; wireshark/optimized/packet-telnet.c.ll
+; wireshark/optimized/packet-tls-utils.c.ll
 ; wireshark/optimized/packet-uds.c.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
 ; yosys/optimized/verilog_backend.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/9l8qkfw5pad02im34bzaql12u.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, i8 %2) #0 {
 entry:
@@ -219,44 +212,70 @@ entry:
 }
 
 ; 1 occurrences:
+; yoga/optimized/CalculateLayout.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i1 %1, i8 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i8 %2, 1
+  %4 = and i1 %1, %3
+  %5 = and i1 %0, %4
+  ret i1 %5
+}
+
+; 4 occurrences:
+; icu/optimized/decNumber.ll
+; jq/optimized/decNumber.ll
+; llvm/optimized/SLPVectorizer.cpp.ll
+; yoga/optimized/AbsoluteLayout.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i1 %1, i8 %2) #0 {
+entry:
+  %3 = icmp samesign ult i8 %2, 2
+  %4 = and i1 %1, %3
+  %5 = and i1 %0, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; qemu/optimized/target_riscv_translate.c.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp sgt i8 %2, -1
-  %4 = and i1 %3, %1
-  %5 = and i1 %4, %0
+  %4 = and i1 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
 ; 4 occurrences:
+; assimp/optimized/glTF2Importer.cpp.ll
 ; opencc/optimized/Dict.cpp.ll
 ; opencc/optimized/PhraseExtract.cpp.ll
-; wireshark/optimized/packet-evrc.c.ll
 ; wireshark/optimized/packet-quakeworld.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp slt i8 %2, 0
   %4 = and i1 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 8 occurrences:
+; 9 occurrences:
+; linux/optimized/ip_options.ll
 ; llvm/optimized/ComplexDeinterleavingPass.cpp.ll
 ; llvm/optimized/InstCombinePHI.cpp.ll
 ; llvm/optimized/InstCombineSelect.cpp.ll
 ; llvm/optimized/InstructionCombining.cpp.ll
 ; llvm/optimized/LoadStoreVectorizer.cpp.ll
 ; llvm/optimized/LoopFlatten.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
 ; sqlite/optimized/sqlite3.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ugt i8 %2, 28
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }

@@ -3,7 +3,7 @@
 ; darktable/optimized/timeline.c.ll
 ; postgres/optimized/fsmpage.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0) #0 {
+define i1 @func0000000000000084(i32 %0) #0 {
 entry:
   %1 = sdiv i32 %0, 4
   %2 = shl nsw i32 %1, 2
@@ -17,7 +17,7 @@ entry:
 ; abc/optimized/mpmDsd.c.ll
 ; abc/optimized/mpmPre.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0) #0 {
+define i1 @func00000000000000a4(i32 %0) #0 {
 entry:
   %1 = sdiv i32 %0, 12
   %2 = shl nsw i32 %1, 1

@@ -18,3 +18,12 @@ func0000000000000002:                   # @func0000000000000002
 	orq	%rdi, %rax
 	orq	$12, %rax
 	retq
+func0000000000000000:                   # @func0000000000000000
+	andq	$-256, %rdx
+	xorl	%ecx, %ecx
+	testb	$1, %sil
+	movl	$6, %eax
+	cmoveq	%rcx, %rax
+	orq	%rdx, %rax
+	orq	%rdi, %rax
+	retq

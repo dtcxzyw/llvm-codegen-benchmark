@@ -1,6 +1,8 @@
 
-; 53 occurrences:
+; 55 occurrences:
 ; abc/optimized/ioReadBlif.c.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; clamav/optimized/iso9660.c.ll
 ; clamav/optimized/yara_lexer.c.ll
 ; cmake/optimized/cmCTestResourceGroupsLexer.cxx.ll

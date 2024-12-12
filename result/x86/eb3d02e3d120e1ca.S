@@ -1,4 +1,4 @@
-func0000000000000182:                   # @func0000000000000182
+func0000000000000302:                   # @func0000000000000302
 	cmpb	$32, %dl
 	setne	%cl
 	testl	%esi, %esi
@@ -6,7 +6,7 @@ func0000000000000182:                   # @func0000000000000182
 	orb	%cl, %al
 	andb	%dil, %al
 	retq
-func0000000000000198:                   # @func0000000000000198
+func0000000000000318:                   # @func0000000000000318
 	cmpl	$50, %edx
 	setne	%cl
 	cmpb	$7, %sil
@@ -14,7 +14,7 @@ func0000000000000198:                   # @func0000000000000198
 	orb	%cl, %al
 	andb	%dil, %al
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	cmpb	$90, %dl
 	sete	%cl
 	testl	%esi, %esi
@@ -22,15 +22,15 @@ func0000000000000022:                   # @func0000000000000022
 	orb	%cl, %al
 	andb	%dil, %al
 	retq
-func0000000000000110:                   # @func0000000000000110
-	cmpb	$8, %dl
-	setae	%cl
-	cmpl	$100, %esi
-	setae	%al
+func0000000000000058:                   # @func0000000000000058
+	testb	%dl, %dl
+	sete	%cl
+	testl	%esi, %esi
+	setne	%al
 	orb	%cl, %al
 	andb	%dil, %al
 	retq
-func0000000000000190:                   # @func0000000000000190
+func0000000000000310:                   # @func0000000000000310
 	testl	%edx, %edx
 	setne	%cl
 	cmpb	$2, %sil
@@ -38,15 +38,7 @@ func0000000000000190:                   # @func0000000000000190
 	orb	%cl, %al
 	andb	%dil, %al
 	retq
-func0000000000000038:                   # @func0000000000000038
-	cmpl	$1, %edx
-	sete	%cl
-	cmpb	$2, %sil
-	setne	%al
-	orb	%cl, %al
-	andb	%dil, %al
-	retq
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	testl	%edx, %edx
 	sete	%cl
 	cmpb	$5, %sil
@@ -54,7 +46,7 @@ func0000000000000028:                   # @func0000000000000028
 	orb	%cl, %al
 	andb	%dil, %al
 	retq
-func0000000000000030:                   # @func0000000000000030
+func0000000000000050:                   # @func0000000000000050
 	testl	%edx, %edx
 	sete	%cl
 	cmpb	$5, %sil

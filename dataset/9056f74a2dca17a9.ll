@@ -1,9 +1,10 @@
 
-; 52 occurrences:
+; 56 occurrences:
 ; abc/optimized/ifDec16.c.ll
 ; abseil-cpp/optimized/charconv.cc.ll
 ; assimp/optimized/IRRLoader.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/work_stealing.ll
 ; clamav/optimized/bytecode.c.ll
 ; eastl/optimized/BenchmarkString.cpp.ll
 ; eastl/optimized/TestFixedString.cpp.ll
@@ -20,7 +21,6 @@
 ; folly/optimized/TDigest.cpp.ll
 ; hermes/optimized/OSCompatPosix.cpp.ll
 ; icu/optimized/reslist.ll
-; linux/optimized/build_utility.ll
 ; linux/optimized/pt.ll
 ; linux/optimized/task_mmu.ll
 ; llama.cpp/optimized/ggml.c.ll
@@ -52,6 +52,10 @@
 ; spike/optimized/processor.ll
 ; velox/optimized/Bridge.cpp.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
+; zed-rs/optimized/9k0j7f35vt58mons3nxvubmtw.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1) #0 {
 entry:
@@ -60,8 +64,9 @@ entry:
   ret i64 %3
 }
 
-; 39 occurrences:
+; 41 occurrences:
 ; actix-rs/optimized/2m9lq42maoywd5kd.ll
+; boost/optimized/monotonic_buffer_resource.ll
 ; coreutils-rs/optimized/4ooodgzovc6dgngk.ll
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; delta-rs/optimized/1x96nto90vd3u3mo.ll
@@ -81,7 +86,6 @@ entry:
 ; opencc/optimized/tail.cc.ll
 ; opencv/optimized/matrix.cpp.ll
 ; postgres/optimized/aclchk.ll
-; rayon-rs/optimized/2389eek2c9skvu2t.ll
 ; ripgrep-rs/optimized/3u4pg0yvyxjednfa.ll
 ; rocksdb/optimized/db_impl_compaction_flush.cc.ll
 ; rust-analyzer-rs/optimized/1cf75p1eybr0uy0c.ll
@@ -98,8 +102,10 @@ entry:
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; typst-rs/optimized/3ze8abiqj6g8qouh.ll
 ; typst-rs/optimized/5e0rue5wyvshgkgw.ll
+; wasmtime-rs/optimized/4u85yh8sn1llpfha.ll
 ; wasmtime-rs/optimized/5dheicv8h8x61a9w.ll
 ; wasmtime-rs/optimized/rpltamrj260p6v4.ll
+; zed-rs/optimized/8h2ladsi6pcbclrovmrkrncgn.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i1 %0, i64 %1) #0 {
 entry:
@@ -171,7 +177,6 @@ entry:
 ; mold/optimized/output-chunks.cc.SH4.cc.ll
 ; mold/optimized/output-chunks.cc.SPARC64.cc.ll
 ; mold/optimized/output-chunks.cc.X86_64.cc.ll
-; opencc/optimized/louds-trie.cc.ll
 ; opencv/optimized/canny.cpp.ll
 ; opencv/optimized/lkpyramid.cpp.ll
 ; opencv/optimized/matrix_operations.cpp.ll
@@ -184,12 +189,13 @@ entry:
 ; openvdb/optimized/LevelSetMeasure.cc.ll
 ; postgres/optimized/nodeAgg.ll
 ; protobuf/optimized/map_field.cc.ll
-; qemu/optimized/migration_block.c.ll
 ; redis/optimized/rax.ll
 ; spike/optimized/processor.ll
 ; spike/optimized/s_addMagsF32.ll
 ; spike/optimized/s_subMagsF32.ll
 ; spike/optimized/s_subMagsF64.ll
+; turborepo-rs/optimized/b9mxqsqxupsuldn67x7vgrl1g.ll
+; yalantinglibs/optimized/example.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i1 %0, i64 %1) #0 {
 entry:
@@ -198,8 +204,7 @@ entry:
   ret i64 %3
 }
 
-; 16 occurrences:
-; abseil-cpp/optimized/span_test.cc.ll
+; 15 occurrences:
 ; clamav/optimized/yara_grammar.c.ll
 ; llvm/optimized/MCCodeView.cpp.ll
 ; minetest/optimized/mapgen.cpp.ll
@@ -208,9 +213,9 @@ entry:
 ; opencv/optimized/onnx_graph_simplifier.cpp.ll
 ; opencv/optimized/resize.cpp.ll
 ; opencv/optimized/smooth.dispatch.cpp.ll
+; openmpi/optimized/topo_treematch_dist_graph_create.ll
 ; ozz-animation/optimized/skinning_job.cc.ll
 ; postgres/optimized/slru.ll
-; proj/optimized/filemanager.cpp.ll
 ; proj/optimized/wkt1_generated_parser.c.ll
 ; proj/optimized/wkt2_generated_parser.c.ll
 ; spike/optimized/processor.ll

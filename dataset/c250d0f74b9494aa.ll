@@ -1,5 +1,5 @@
 
-; 137 occurrences:
+; 143 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; arrow/optimized/csf_converter.cc.ll
@@ -67,6 +67,7 @@
 ; lief/optimized/DyldChainedFixups.cpp.ll
 ; lief/optimized/DyldInfo.cpp.ll
 ; lief/optimized/FatBinary.cpp.ll
+; lief/optimized/MapList.cpp.ll
 ; lief/optimized/ResourcesManager.cpp.ll
 ; lief/optimized/RichHeader.cpp.ll
 ; lief/optimized/SegmentCommand.cpp.ll
@@ -124,6 +125,11 @@
 ; openspiel/optimized/bridge.cc.ll
 ; openspiel/optimized/gin_rummy_utils.cc.ll
 ; openspiel/optimized/tiny_bridge.cc.ll
+; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
+; pybind11/optimized/test_eigen_tensor.cpp.ll
+; pybind11/optimized/test_numpy_array.cpp.ll
+; pybind11/optimized/test_numpy_dtypes.cpp.ll
+; pybind11/optimized/test_numpy_vectorize.cpp.ll
 ; ruby/optimized/vm.ll
 ; velox/optimized/CompactRow.cpp.ll
 ; velox/optimized/Filter.cpp.ll
@@ -138,7 +144,7 @@
 ; xgboost/optimized/ranking_utils.cc.ll
 ; xgboost/optimized/stats.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000e1(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -148,7 +154,7 @@ entry:
   ret i1 %7
 }
 
-; 1579 occurrences:
+; 1576 occurrences:
 ; abseil-cpp/optimized/convert_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_navigator_test.cc.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
@@ -212,8 +218,6 @@ entry:
 ; assimp/optimized/IFCGeometry.cpp.ll
 ; assimp/optimized/IFCMaterial.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
-; assimp/optimized/IFCReaderGen1_2x3.cpp.ll
-; assimp/optimized/IFCReaderGen2_2x3.cpp.ll
 ; assimp/optimized/IFCUtil.cpp.ll
 ; assimp/optimized/ImporterRegistry.cpp.ll
 ; assimp/optimized/MDLLoader.cpp.ll
@@ -236,6 +240,15 @@ entry:
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; assimp/optimized/sweep.cc.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
+; boost/optimized/instantiate_predef_macros.ll
+; boost/optimized/options_description.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/test_system.ll
+; boost/optimized/work_stealing.ll
 ; casadi/optimized/conic.cpp.ll
 ; casadi/optimized/dae_builder.cpp.ll
 ; casadi/optimized/dae_builder_internal.cpp.ll
@@ -708,7 +721,6 @@ entry:
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -732,7 +744,6 @@ entry:
 ; meshlab/optimized/io_collada.cpp.ll
 ; meshlab/optimized/io_pdb.cpp.ll
 ; meshlab/optimized/io_x3d.cpp.ll
-; meshlab/optimized/load_project.cpp.ll
 ; meshlab/optimized/mesh.cpp.ll
 ; meshlab/optimized/mesh_graph.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
@@ -1221,15 +1232,10 @@ entry:
 ; pbrt-v4/optimized/string.cpp.ll
 ; proj/optimized/concatenatedoperation.cpp.ll
 ; proj/optimized/conversion.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; proj/optimized/coordinatesystem.cpp.ll
-; proj/optimized/crs.cpp.ll
 ; proj/optimized/ctx.cpp.ll
 ; proj/optimized/datum.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; proj/optimized/projinfo.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/singleoperation.cpp.ll
 ; proj/optimized/transformation.cpp.ll
 ; protobuf/optimized/command_line_interface.cc.ll
@@ -1301,7 +1307,6 @@ entry:
 ; quantlib/optimized/fittedbonddiscountcurve.ll
 ; quantlib/optimized/fixedlocalvolsurface.ll
 ; quantlib/optimized/fixedratecoupon.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
 ; quantlib/optimized/gaussian1dmodel.ll
 ; quantlib/optimized/gaussian1dnonstandardswaptionengine.ll
@@ -1626,8 +1631,6 @@ entry:
 ; yosys/optimized/jny.ll
 ; yosys/optimized/liberty.ll
 ; yosys/optimized/libparse.ll
-; yosys/optimized/logcmd.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/ltp.ll
 ; yosys/optimized/maccmap.ll
 ; yosys/optimized/memory.ll
@@ -1729,13 +1732,39 @@ entry:
 ; zxing/optimized/PDFModulusPoly.cpp.ll
 ; zxing/optimized/ZXBigInteger.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000c4(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = ashr exact i64 %4, 3
   %6 = add nuw i64 %0, 1
   %7 = icmp ult i64 %6, %5
+  ret i1 %7
+}
+
+; 14 occurrences:
+; arrow/optimized/key_value_metadata.cc.ll
+; arrow/optimized/sparse_tensor.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/within_pointlike_geometry.ll
+; casadi/optimized/integrator.cpp.ll
+; casadi/optimized/mx_node.cpp.ll
+; gromacs/optimized/eneconv.cpp.ll
+; gromacs/optimized/pairlist.cpp.ll
+; gromacs/optimized/readir.cpp.ll
+; lightgbm/optimized/c_api.cpp.ll
+; mitsuba3/optimized/bitmap.cpp.ll
+; pbrt-v4/optimized/media.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000e6(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %1
+  %5 = ashr exact i64 %4, 5
+  %6 = add nuw nsw i64 %0, 2
+  %7 = icmp slt i64 %6, %5
   ret i1 %7
 }
 
@@ -1748,7 +1777,7 @@ entry:
 ; gromacs/optimized/pairlist.cpp.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -1758,7 +1787,7 @@ entry:
   ret i1 %7
 }
 
-; 283 occurrences:
+; 281 occurrences:
 ; abc/optimized/ac_wrapper.cpp.ll
 ; abseil-cpp/optimized/explicit_seed_seq_test.cc.ll
 ; abseil-cpp/optimized/pcg_engine_test.cc.ll
@@ -1768,6 +1797,7 @@ entry:
 ; arrow/optimized/record_batch.cc.ll
 ; arrow/optimized/table.cc.ll
 ; arrow/optimized/type.cc.ll
+; boost/optimized/work_stealing.ll
 ; casadi/optimized/dae_builder_internal.cpp.ll
 ; clamav/optimized/pathfn.cpp.ll
 ; cmake/optimized/CommandLineArguments.cxx.ll
@@ -1909,7 +1939,6 @@ entry:
 ; pbrt-v4/optimized/cameras.cpp.ll
 ; pbrt-v4/optimized/mesh.cpp.ll
 ; pbrt-v4/optimized/plytool.cpp.ll
-; proj/optimized/io.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
@@ -2014,13 +2043,11 @@ entry:
 ; yosys/optimized/hilomap.ll
 ; yosys/optimized/insbuf.ll
 ; yosys/optimized/iopadmap.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/memory_libmap.ll
 ; yosys/optimized/memory_map.ll
 ; yosys/optimized/miter.ll
 ; yosys/optimized/mutate.ll
 ; yosys/optimized/nlutmap.ll
-; yosys/optimized/opt_lut.ll
 ; yosys/optimized/proc_clean.ll
 ; yosys/optimized/proc_rmdead.ll
 ; yosys/optimized/qbfsat.ll
@@ -2043,7 +2070,7 @@ entry:
 ; yosys/optimized/viz.ll
 ; zxing/optimized/ZXBigInteger.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -2062,6 +2089,7 @@ entry:
 ; assimp/optimized/FBXConverter.cpp.ll
 ; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/calculate_point_order.ll
 ; casadi/optimized/dm_instantiator.cpp.ll
 ; casadi/optimized/im_instantiator.cpp.ll
 ; casadi/optimized/integration_tools.cpp.ll
@@ -2136,10 +2164,11 @@ entry:
 ; lightgbm/optimized/objective_function.cpp.ll
 ; lightgbm/optimized/parser.cpp.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
+; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/LegacyLegalizerInfo.cpp.ll
 ; llvm/optimized/ProfileSummaryBuilder.cpp.ll
-; llvm/optimized/SemaRISCV.cpp.ll
 ; luau/optimized/Compiler.cpp.ll
+; luau/optimized/ConstraintGenerator.cpp.ll
 ; luau/optimized/ConstraintSolver.cpp.ll
 ; luau/optimized/Reduce.cpp.ll
 ; luau/optimized/TypeInfer.cpp.ll
@@ -2193,8 +2222,10 @@ entry:
 ; ocio/optimized/ViewingRules.cpp.ll
 ; opencv/optimized/checker_detector.cpp.ll
 ; opencv/optimized/circlesgrid.cpp.ll
+; opencv/optimized/contrast_preserve.cpp.ll
 ; opencv/optimized/erfilter.cpp.ll
 ; opencv/optimized/hough.cpp.ll
+; opencv/optimized/lsc.cpp.ll
 ; opencv/optimized/ts_gtest.cpp.ll
 ; openexr/optimized/ImfCompositeDeepScanLine.cpp.ll
 ; openexr/optimized/ImfIDManifest.cpp.ll
@@ -2223,14 +2254,10 @@ entry:
 ; openvdb/optimized/VolumeAdvect.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; openvdb/optimized/points.cc.ll
+; ozz-animation/optimized/animation_builder.cc.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; proj/optimized/concatenatedoperation.cpp.ll
 ; proj/optimized/datum.cpp.ll
-; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
-; pybind11/optimized/test_eigen_tensor.cpp.ll
-; pybind11/optimized/test_numpy_array.cpp.ll
-; pybind11/optimized/test_numpy_dtypes.cpp.ll
-; pybind11/optimized/test_numpy_vectorize.cpp.ll
 ; quantlib/optimized/abcdatmvolcurve.ll
 ; quantlib/optimized/analyticcliquetengine.ll
 ; quantlib/optimized/analyticperformanceengine.ll
@@ -2345,7 +2372,7 @@ entry:
 ; zxing/optimized/PDFModulusPoly.cpp.ll
 ; zxing/optimized/ZXBigInteger.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000c1(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -2355,7 +2382,7 @@ entry:
   ret i1 %7
 }
 
-; 61 occurrences:
+; 59 occurrences:
 ; assimp/optimized/clipper.cpp.ll
 ; cvc5/optimized/didyoumean.cpp.ll
 ; cvc5/optimized/lfsc_printer.cpp.ll
@@ -2394,8 +2421,6 @@ entry:
 ; opencv/optimized/system.cpp.ll
 ; openusd/optimized/stencilTable.cpp.ll
 ; pbrt-v4/optimized/aggregates.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; quantlib/optimized/analytic_discr_geom_av_price_heston.ll
 ; quantlib/optimized/blackvariancecurve.ll
 ; quantlib/optimized/extendedblackvariancecurve.ll
@@ -2418,7 +2443,7 @@ entry:
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; zxing/optimized/ZXBigInteger.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -2428,7 +2453,7 @@ entry:
   ret i1 %7
 }
 
-; 272 occurrences:
+; 270 occurrences:
 ; abseil-cpp/optimized/explicit_seed_seq_test.cc.ll
 ; arrow/optimized/data.cc.ll
 ; assimp/optimized/X3DImporter_Geometry3D.cpp.ll
@@ -2460,7 +2485,6 @@ entry:
 ; entt/optimized/dense_map.cpp.ll
 ; entt/optimized/dense_set.cpp.ll
 ; entt/optimized/dispatcher.cpp.ll
-; entt/optimized/dot.cpp.ll
 ; entt/optimized/emitter.cpp.ll
 ; entt/optimized/entity_copy.cpp.ll
 ; entt/optimized/flow.cpp.ll
@@ -2497,6 +2521,7 @@ entry:
 ; entt/optimized/view.cpp.ll
 ; faiss/optimized/PolysemousTraining.cpp.ll
 ; glslang/optimized/ParseHelper.cpp.ll
+; glslang/optimized/SpvBuilder.cpp.ll
 ; gromacs/optimized/datastorage.cpp.ll
 ; gromacs/optimized/partition.cpp.ll
 ; gromacs/optimized/qmmminputgenerator.cpp.ll
@@ -2539,7 +2564,6 @@ entry:
 ; llvm/optimized/SemaCodeComplete.cpp.ll
 ; llvm/optimized/StdLibraryFunctionsChecker.cpp.ll
 ; luau/optimized/CodeGenContext.cpp.ll
-; luau/optimized/ConstraintGenerator.cpp.ll
 ; luau/optimized/NonStrictTypeChecker.cpp.ll
 ; minetest/optimized/emerge.cpp.ll
 ; minetest/optimized/l_mapgen.cpp.ll
@@ -2579,12 +2603,11 @@ entry:
 ; mold/optimized/thunks.cc.PPC64V2.cc.ll
 ; ninja/optimized/util.cc.ll
 ; nix/optimized/installable-flake.ll
-; nix/optimized/nix-store.ll
 ; opencc/optimized/Conversion.cpp.ll
-; opencc/optimized/Converter.cpp.ll
 ; opencv/optimized/gexecutor.cpp.ll
 ; opencv/optimized/gstreamingexecutor.cpp.ll
 ; opencv/optimized/gthreadedexecutor.cpp.ll
+; opencv/optimized/trackerMedianFlow.cpp.ll
 ; opencv/optimized/ts_gtest.cpp.ll
 ; openexr/optimized/IlmThreadPool.cpp.ll
 ; openjdk/optimized/JvmLauncher.ll
@@ -2702,7 +2725,7 @@ entry:
 ; yosys/optimized/rename.ll
 ; yosys/optimized/smt2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -2712,7 +2735,7 @@ entry:
   ret i1 %7
 }
 
-; 132 occurrences:
+; 135 occurrences:
 ; arrow/optimized/builder_union.cc.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
@@ -2845,8 +2868,11 @@ entry:
 ; quantlib/optimized/burley2020sobolrsg.ll
 ; quantlib/optimized/cmsmarketcalibration.ll
 ; velox/optimized/Re2Functions.cpp.ll
+; yosys/optimized/fsm_recode.ll
+; yosys/optimized/opt_lut.ll
+; yosys/optimized/sim.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000e4(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -2856,11 +2882,13 @@ entry:
   ret i1 %7
 }
 
-; 130 occurrences:
+; 132 occurrences:
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; casadi/optimized/bspline.cpp.ll
 ; casadi/optimized/csparse_interface.cpp.ll
 ; casadi/optimized/dae_builder_internal.cpp.ll
@@ -2889,6 +2917,7 @@ entry:
 ; cvc5/optimized/theory_inference_manager.cpp.ll
 ; cvc5/optimized/theory_strings_preprocess.cpp.ll
 ; faiss/optimized/sorting.cpp.ll
+; glslang/optimized/SpvBuilder.cpp.ll
 ; gromacs/optimized/mshift.cpp.ll
 ; libquic/optimized/sample_vector.cc.ll
 ; libquic/optimized/string_util.cc.ll
@@ -2979,7 +3008,6 @@ entry:
 ; tinyobjloader/optimized/tiny_obj_loader.cc.ll
 ; velox/optimized/DenseHll.cpp.ll
 ; velox/optimized/URLFunctions.cpp.ll
-; wasmedge/optimized/runtimeTool.cpp.ll
 ; xgboost/optimized/allgather.cc.ll
 ; xgboost/optimized/gradient_index.cc.ll
 ; xgboost/optimized/gradient_index_format.cc.ll
@@ -2988,7 +3016,7 @@ entry:
 ; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
 ; zxing/optimized/ZXBigInteger.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -3060,7 +3088,7 @@ entry:
 ; zxing/optimized/GlobalHistogramBinarizer.cpp.ll
 ; zxing/optimized/ZXBigInteger.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -3102,7 +3130,7 @@ entry:
 ; quantlib/optimized/multisteptarn.ll
 ; xgboost/optimized/data.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -3121,7 +3149,7 @@ entry:
 ; opencv/optimized/ppf_match_3d.cpp.ll
 ; opencv/optimized/prior_box_layer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000069(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000c9(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -3135,7 +3163,7 @@ entry:
 ; gromacs/optimized/pullutil.cpp.ll
 ; lief/optimized/hash.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007c(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000ec(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -3145,24 +3173,32 @@ entry:
   ret i1 %7
 }
 
-; 9 occurrences:
-; arrow/optimized/key_value_metadata.cc.ll
-; arrow/optimized/sparse_tensor.cc.ll
-; casadi/optimized/integrator.cpp.ll
-; casadi/optimized/mx_node.cpp.ll
-; gromacs/optimized/eneconv.cpp.ll
-; gromacs/optimized/pairlist.cpp.ll
-; gromacs/optimized/readir.cpp.ll
-; lightgbm/optimized/c_api.cpp.ll
-; pbrt-v4/optimized/media.cpp.ll
+; 4 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000076(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000aa(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
   %5 = ashr exact i64 %4, 3
-  %6 = add nuw nsw i64 %0, 1
-  %7 = icmp slt i64 %6, %5
+  %6 = add nsw i64 %0, -1
+  %7 = icmp sgt i64 %6, %5
+  ret i1 %7
+}
+
+; 1 occurrences:
+; boost/optimized/limit_fd.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000a5(i64 %0, i64 %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %1
+  %5 = ashr exact i64 %4, 2
+  %6 = add nsw i64 %0, 2
+  %7 = icmp ule i64 %6, %5
   ret i1 %7
 }
 
@@ -3170,7 +3206,7 @@ entry:
 ; cmake/optimized/cmakemain.cxx.ll
 ; yosys/optimized/simplify.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000049(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000089(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -3183,7 +3219,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/HeaderSearch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func000000000000008c(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -3199,7 +3235,7 @@ entry:
 ; openspiel/optimized/tarok_test.cc.ll
 ; proj/optimized/concatenatedoperation.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func00000000000000cc(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -3212,7 +3248,7 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -3229,7 +3265,7 @@ entry:
 ; eastl/optimized/TestHeap.cpp.ll
 ; eastl/optimized/TestSort.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -3246,7 +3282,7 @@ entry:
 ; eastl/optimized/TestHeap.cpp.ll
 ; eastl/optimized/TestSort.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1

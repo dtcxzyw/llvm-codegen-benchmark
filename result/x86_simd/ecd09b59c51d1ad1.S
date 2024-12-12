@@ -1,13 +1,13 @@
 .LCPI0_0:
 	.long	342                             # 0x156
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpeqd	.LCPI0_0(%rip){1to4}, %xmm1, %k1
 	vpsubq	%ymm2, %ymm3, %ymm0 {%k1}
 	retq
 .LCPI1_0:
 	.quad	-16                             # 0xfffffffffffffff0
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpbroadcastq	.LCPI1_0(%rip), %ymm3   # ymm3 = [18446744073709551600,18446744073709551600,18446744073709551600,18446744073709551600]
 	vptestnmd	%xmm1, %xmm1, %k1
 	vpsubq	%ymm2, %ymm3, %ymm0 {%k1}

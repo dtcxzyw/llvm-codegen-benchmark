@@ -1,16 +1,13 @@
 
-; 19 occurrences:
+; 16 occurrences:
 ; abc/optimized/cuddUtil.c.ll
 ; abc/optimized/fraigUtil.c.ll
-; linux/optimized/capability.ll
 ; linux/optimized/devio.ll
 ; linux/optimized/drm_ioc32.ll
 ; linux/optimized/evdev.ll
-; linux/optimized/hda_hwdep.ll
 ; linux/optimized/hdmi_chmap.ll
 ; linux/optimized/hiddev.ll
 ; linux/optimized/hwdep.ll
-; linux/optimized/i915_getparam.ll
 ; linux/optimized/pcm.ll
 ; linux/optimized/pcm_lib.ll
 ; linux/optimized/pcm_native.ll

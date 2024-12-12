@@ -2,8 +2,8 @@
 ; 75 occurrences:
 ; abc/optimized/mvcUtils.c.ll
 ; arrow/optimized/coo_converter.cc.ll
-; assimp/optimized/SMDLoader.cpp.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
+; faiss/optimized/IndexIVFPQ.cpp.ll
 ; graphviz/optimized/DotIO.c.ll
 ; graphviz/optimized/actions.c.ll
 ; graphviz/optimized/bcomps.c.ll
@@ -83,9 +83,8 @@ entry:
   ret i64 %2
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; git/optimized/receive-pack.ll
-; linux/optimized/md.ll
 ; meshoptimizer/optimized/overdrawoptimizer.cpp.ll
 ; mitsuba3/optimized/aov.cpp.ll
 ; mitsuba3/optimized/roughplastic.cpp.ll

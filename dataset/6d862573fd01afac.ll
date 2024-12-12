@@ -1,6 +1,7 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; bullet3/optimized/btSequentialImpulseConstraintSolver.ll
+; darktable/optimized/introspection_atrous.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; darktable/optimized/introspection_graduatednd.c.ll
 ; gromacs/optimized/bonded.cpp.ll
@@ -22,11 +23,11 @@ define float @func0000000000000004(float %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp ogt float %2, 0x40561814A0000000
   %4 = select i1 %3, float 0x7FF0000000000000, float %1
-  %5 = fmul float %4, %0
+  %5 = fmul float %0, %4
   ret float %5
 }
 
-; 79 occurrences:
+; 80 occurrences:
 ; bullet3/optimized/b3QuantizedBvh.ll
 ; bullet3/optimized/btCollisionWorld.ll
 ; bullet3/optimized/btDeformableMultiBodyDynamicsWorld.ll
@@ -37,6 +38,7 @@ entry:
 ; darktable/optimized/introspection_clipping.c.ll
 ; darktable/optimized/introspection_colorbalancergb.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
+; gromacs/optimized/coupling.cpp.ll
 ; gromacs/optimized/insert_molecules.cpp.ll
 ; gromacs/optimized/tpi.cpp.ll
 ; meshlab/optimized/dirt_utils.cpp.ll
@@ -146,7 +148,7 @@ define float @func0000000000000009(float %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp ueq float %2, 0x7FF0000000000000
   %4 = select i1 %3, float 0.000000e+00, float %1
-  %5 = fmul float %4, %0
+  %5 = fmul float %0, %4
   ret float %5
 }
 
@@ -164,7 +166,7 @@ define float @func0000000000000003(float %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp ult float %2, 0.000000e+00
   %4 = select i1 %3, float 0xFFFFFFFFE0000000, float %1
-  %5 = fmul float %4, %0
+  %5 = fmul float %0, %4
   ret float %5
 }
 
@@ -201,7 +203,7 @@ define float @func0000000000000002(float %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp olt float %2, 0.000000e+00
   %4 = select i1 %3, float 0.000000e+00, float %1
-  %5 = fmul float %4, %0
+  %5 = fmul float %0, %4
   ret float %5
 }
 
@@ -212,7 +214,18 @@ define float @func000000000000000b(float %0, float %1, float %2) #0 {
 entry:
   %3 = fcmp ule float %2, 0x3E45798EE0000000
   %4 = select i1 %3, float 0.000000e+00, float %1
-  %5 = fmul float %4, %0
+  %5 = fmul float %0, %4
+  ret float %5
+}
+
+; 1 occurrences:
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; Function Attrs: nounwind
+define float @func0000000000000001(float %0, float %1, float %2) #0 {
+entry:
+  %3 = fcmp uno float %2, 0.000000e+00
+  %4 = select i1 %3, float 0x7FF8000000000000, float %1
+  %5 = fmul float %0, %4
   ret float %5
 }
 

@@ -60,7 +60,7 @@ entry:
 
 ; 3 occurrences:
 ; darktable/optimized/print_settings.c.ll
-; openblas/optimized/dlaqp2rk.c.ll
+; lvgl/optimized/lv_obj_scroll.ll
 ; redis/optimized/db.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i32 %0, i32 %1, i64 %2) #0 {

@@ -1,36 +1,75 @@
-.LCPI0_0:                               # -- Begin function func0000000000000000
-	.ascii	"\000\001\034\002\035\016\030\003\036\026\024\017\031\021\004\b\037\033\r\027\025\023\020\007\032\f\022\006\013\005\n\t"
-func0000000000000000:                   # @func0000000000000000
-	andi	a0, a0, 255
-	beqz	a0, .LBB0_2
-	negw	a1, a0
-	and	a0, a0, a1
-	lui	a1, 30667
-	addi	a1, a1, 1329
-	mul	a0, a0, a1
-	srliw	a0, a0, 27
-	lui	a1, %hi(.LCPI0_0)
-	addi	a1, a1, %lo(.LCPI0_0)
-	add	a0, a0, a1
-	lbu	a0, 0(a0)
-	ret
-.LBB0_2:                                # %cond.end
-	li	a0, 32
-	ret
-.LCPI1_0:                               # -- Begin function func0000000000000001
-	.ascii	"\000\001\034\002\035\016\030\003\036\026\024\017\031\021\004\b\037\033\r\027\025\023\020\007\032\f\022\006\013\005\n\t"
 func0000000000000001:                   # @func0000000000000001
-	lui	a1, 1048561
-	addi	a1, a1, -57
+	lui	a1, 65534
+	lui	a2, 349525
 	and	a0, a0, a1
-	negw	a1, a0
-	and	a0, a0, a1
-	lui	a1, 30667
-	addi	a1, a1, 1329
-	mul	a0, a0, a1
-	srliw	a0, a0, 27
-	lui	a1, %hi(.LCPI1_0)
-	addi	a1, a1, %lo(.LCPI1_0)
+	addiw	a1, a2, 1365
+	srli	a2, a0, 1
+	or	a0, a0, a2
+	srli	a2, a0, 2
+	or	a0, a0, a2
+	srli	a2, a0, 4
+	or	a0, a0, a2
+	slli	a2, a0, 34
+	srli	a2, a2, 42
+	or	a0, a0, a2
+	slli	a2, a0, 33
+	srli	a2, a2, 49
+	or	a0, a0, a2
+	not	a0, a0
+	srli	a2, a0, 1
+	and	a1, a1, a2
+	lui	a2, 209715
+	addiw	a2, a2, 819
+	sub	a0, a0, a1
+	and	a1, a0, a2
+	srli	a0, a0, 2
+	and	a0, a0, a2
+	lui	a2, 61681
 	add	a0, a0, a1
-	lbu	a0, 0(a0)
+	srli	a1, a0, 4
+	add	a0, a0, a1
+	lui	a1, 4112
+	addi	a2, a2, -241
+	and	a0, a0, a2
+	addi	a1, a1, 257
+	mul	a0, a0, a1
+	srliw	a0, a0, 24
+	ret
+func0000000000000000:                   # @func0000000000000000
+	slli	a0, a0, 48
+	srli	a0, a0, 48
+	beqz	a0, .LBB1_2
+	srli	a1, a0, 1
+	lui	a2, 349525
+	or	a0, a0, a1
+	addiw	a1, a2, 1365
+	srli	a2, a0, 2
+	or	a0, a0, a2
+	srli	a2, a0, 4
+	or	a0, a0, a2
+	slli	a2, a0, 48
+	srli	a2, a2, 56
+	or	a0, a0, a2
+	not	a0, a0
+	srli	a2, a0, 1
+	and	a1, a1, a2
+	lui	a2, 209715
+	addiw	a2, a2, 819
+	sub	a0, a0, a1
+	and	a1, a0, a2
+	srli	a0, a0, 2
+	and	a0, a0, a2
+	lui	a2, 61681
+	add	a0, a0, a1
+	srli	a1, a0, 4
+	add	a0, a0, a1
+	lui	a1, 4112
+	addi	a2, a2, -241
+	and	a0, a0, a2
+	addi	a1, a1, 257
+	mul	a0, a0, a1
+	srliw	a0, a0, 24
+	ret
+.LBB1_2:                                # %cond.end
+	li	a0, 32
 	ret

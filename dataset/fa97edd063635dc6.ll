@@ -1,7 +1,11 @@
 
-; 23 occurrences:
+; 27 occurrences:
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
+; boost/optimized/instantiate_predef_macros.ll
 ; cmake/optimized/nghttp2_hd.c.ll
 ; folly/optimized/AsyncServerSocket.cpp.ll
 ; folly/optimized/EventBase.cpp.ll
@@ -28,7 +32,7 @@ define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 3
   %3 = lshr i64 %2, 2
-  %4 = icmp ult i64 %3, %0
+  %4 = icmp ugt i64 %0, %3
   ret i1 %4
 }
 
@@ -147,7 +151,7 @@ define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 3
   %3 = lshr i64 %2, 2
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp ult i64 %0, %3
   ret i1 %4
 }
 
@@ -160,11 +164,11 @@ entry:
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000005(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000015(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 12
   %3 = lshr i64 %2, 6
-  %4 = icmp uge i64 %3, %0
+  %4 = icmp samesign ule i64 %0, %3
   ret i1 %4
 }
 
@@ -175,7 +179,7 @@ define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = mul i64 %1, 3
   %3 = lshr i64 %2, 1
-  %4 = icmp eq i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 

@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 16 occurrences:
 ; darktable/optimized/PanasonicV7Decompressor.cpp.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
@@ -13,7 +13,6 @@
 ; llvm/optimized/ModuleSummaryAnalysis.cpp.ll
 ; llvm/optimized/PreISelIntrinsicLowering.cpp.ll
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
-; openexr/optimized/IexMathFpu.cpp.ll
 ; postgres/optimized/tsvector_op.ll
 ; ruby/optimized/ripper.ll
 ; ruby/optimized/time.ll

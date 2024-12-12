@@ -15,8 +15,13 @@ func0000000000000010:                   # @func0000000000000010
 	retq
 func0000000000000000:                   # @func0000000000000000
 	leal	(%rdi,%rsi), %eax
-	shrl	$9, %eax
-	orb	$-8, %al
+	shrl	$18, %eax
+	orb	$-16, %al
+	retq
+func0000000000000005:                   # @func0000000000000005
+	leal	(%rdi,%rsi), %eax
+	shrl	$12, %eax
+	orb	$-32, %al
 	retq
 func0000000000000007:                   # @func0000000000000007
 	leal	(%rdi,%rsi), %eax

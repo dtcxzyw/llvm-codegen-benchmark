@@ -5,7 +5,7 @@
 ; wireshark/optimized/ngsniffer.c.ll
 ; wolfssl/optimized/tls.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b8(i1 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000158(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw i16 %2, 8
   %4 = or disjoint i16 %3, %1
@@ -34,7 +34,7 @@ entry:
 ; stb/optimized/stb_truetype.c.ll
 ; wolfssl/optimized/tls.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a2(i1 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000142(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw i16 %2, 8
   %4 = or disjoint i16 %3, %1
@@ -50,12 +50,12 @@ entry:
 ; wireshark/optimized/packet-ppi.c.ll
 ; wolfssl/optimized/tls.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(i1 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000148(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw i16 %2, 8
   %4 = or disjoint i16 %3, %1
   %5 = icmp ult i16 %4, -5535
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
@@ -63,7 +63,7 @@ entry:
 ; wolfssl/optimized/internal.c.ll
 ; wolfssl/optimized/tls13.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b0(i1 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000150(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw i16 %2, 8
   %4 = or disjoint i16 %3, %1

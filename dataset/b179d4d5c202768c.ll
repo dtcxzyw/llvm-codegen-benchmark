@@ -114,7 +114,7 @@ entry:
 ; postgres/optimized/async.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(i64 %0) #0 {
+define i64 @func0000000000000048(i64 %0) #0 {
 entry:
   %1 = add nsw i64 %0, -8173
   %2 = icmp ult i64 %1, -8193
@@ -125,7 +125,7 @@ entry:
 ; 1 occurrences:
 ; cpython/optimized/longobject.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000022(i64 %0) #0 {
+define i64 @func0000000000000042(i64 %0) #0 {
 entry:
   %1 = icmp eq i64 %0, -1
   %2 = zext i1 %1 to i64

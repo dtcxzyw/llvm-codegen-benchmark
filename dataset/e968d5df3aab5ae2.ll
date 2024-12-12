@@ -1,5 +1,5 @@
 
-; 66 occurrences:
+; 67 occurrences:
 ; abc/optimized/casCore.c.ll
 ; abc/optimized/cuddExport.c.ll
 ; abc/optimized/cuddZddUtil.c.ll
@@ -50,6 +50,7 @@
 ; lua/optimized/ltable.ll
 ; luau/optimized/lgc.cpp.ll
 ; luau/optimized/ltable.cpp.ll
+; lvgl/optimized/lv_tlsf.ll
 ; oiio/optimized/ddsinput.cpp.ll
 ; oiio/optimized/strutil.cpp.ll
 ; oiio/optimized/tiffinput.cpp.ll

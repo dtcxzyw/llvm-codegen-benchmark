@@ -9,7 +9,7 @@
 ; rust-analyzer-rs/optimized/3j0nbdwupb3iwt86.ll
 ; wasmtime-rs/optimized/47hgs4eifsow3k34.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %1, 1
   %3 = icmp eq i32 %0, 0
@@ -31,7 +31,7 @@ entry:
 ; opencv/optimized/onnx_importer.cpp.ll
 ; openexr/optimized/ImfDeepScanLineOutputFile.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i32 %0, i64 %1) #0 {
+define i64 @func0000000000000026(i32 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i64 %1, 8
   %3 = icmp slt i32 %0, 0

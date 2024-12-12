@@ -23,7 +23,7 @@
 define i32 @func0000000000000000(i32 %0, float %1) #0 {
 entry:
   %2 = bitcast float %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   ret i32 %3
 }
 
@@ -35,7 +35,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, float %1) #0 {
 entry:
   %2 = bitcast float %1 to i32
-  %3 = add nuw i32 %2, %0
+  %3 = add nuw i32 %0, %2
   ret i32 %3
 }
 

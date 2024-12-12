@@ -5,7 +5,7 @@
 define i64 @func0000000000000015(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = add nsw i64 %3, 63
   ret i64 %4
 }
@@ -41,7 +41,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = add i64 %3, 3
   ret i64 %4
 }
@@ -52,7 +52,7 @@ entry:
 define i64 @func0000000000000011(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = add nsw i64 %3, -1
   ret i64 %4
 }
@@ -80,7 +80,7 @@ entry:
 define i64 @func000000000000000f(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = add nuw nsw i64 %3, 46
   ret i64 %4
 }
@@ -92,7 +92,7 @@ entry:
 define i64 @func000000000000000d(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = add nsw i64 %3, -4
   ret i64 %4
 }
@@ -103,18 +103,32 @@ entry:
 define i64 @func0000000000000003(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = add nuw nsw i64 %3, 1
   ret i64 %4
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; grpc/optimized/writing.cc.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i64 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
+  %4 = add nuw nsw i64 %3, 1
+  ret i64 %4
+}
+
+; 2 occurrences:
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000013(i64 %0, i16 %1) #0 {
+entry:
+  %2 = zext nneg i16 %1 to i64
+  %3 = add i64 %0, %2
   %4 = add nuw nsw i64 %3, 1
   ret i64 %4
 }

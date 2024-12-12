@@ -43,4 +43,20 @@ entry:
   ret i32 %4
 }
 
+; 6 occurrences:
+; boost/optimized/approximately_equals.ll
+; boost/optimized/area.ll
+; boost/optimized/src.ll
+; boost/optimized/zlib.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000006(i32 %0, i8 %1) #0 {
+entry:
+  %2 = sub nsw i32 0, %0
+  %3 = trunc nuw i8 %1 to i1
+  %4 = select i1 %3, i32 %2, i32 %0
+  ret i32 %4
+}
+
 attributes #0 = { nounwind }

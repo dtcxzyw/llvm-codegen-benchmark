@@ -1,10 +1,11 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; icu/optimized/udataswp.ll
 ; linux/optimized/extents.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; slurm/optimized/setup.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i32 %1, i16 %2) #0 {
+define i1 @func00000000000001e1(i64 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = sub nsw i32 %3, %1
@@ -18,7 +19,7 @@ entry:
 ; llvm/optimized/ScheduleDAGRRList.cpp.ll
 ; openusd/optimized/fvarRefinement.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i64 %0, i32 %1, i16 %2) #0 {
+define i1 @func0000000000000161(i64 %0, i32 %1, i16 %2) #0 {
 entry:
   %3 = zext i16 %2 to i32
   %4 = sub nsw i32 %3, %1

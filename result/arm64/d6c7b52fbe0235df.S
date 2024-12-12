@@ -1,35 +1,9 @@
-func0000000000000011:                   // @func0000000000000011
+func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
-	movi	v3.8h, #64
-	and	v2.16b, v2.16b, v3.16b
-	movi	v3.4s, #2
-	cmeq	v2.8h, v2.8h, #0
-	sshll2	v4.4s, v2.8h, #0
-	sshll	v5.4s, v2.4h, #0
-	bic	v5.16b, v3.16b, v5.16b
-	bic	v3.16b, v3.16b, v4.16b
-	ssubw	v4.4s, v5.4s, v2.4h
-	ssubw2	v2.4s, v3.4s, v2.8h
-	cmeq	v1.4s, v2.4s, v1.4s
-	cmeq	v0.4s, v4.4s, v0.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
-	ret
-                                        // -- End function
-func0000000000000014:                   // @func0000000000000014
-// %bb.0:                               // %entry
-	movi	v3.8h, #2
-	movi	v4.4s, #24
-	and	v2.16b, v2.16b, v3.16b
-	movi	v3.4s, #40
-	cmeq	v2.8h, v2.8h, #0
-	sshll2	v5.4s, v2.8h, #0
-	sshll	v2.4s, v2.4h, #0
-	bsl	v2.16b, v4.16b, v3.16b
-	bit	v3.16b, v4.16b, v5.16b
-	cmhi	v1.4s, v3.4s, v1.4s
-	cmhi	v0.4s, v2.4s, v0.4s
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+	mov	w8, #1                          // =0x1
+	tst	w1, #0x40
+	cinc	w8, w8, ne
+	cmp	w0, w8
+	cset	w0, eq
 	ret
                                         // -- End function

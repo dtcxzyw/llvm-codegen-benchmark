@@ -4,7 +4,13 @@ func000000000000000c:                   # @func000000000000000c
 	setne	%al
 	andb	%dil, %al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000054:                   # @func0000000000000054
+	andl	$2146435072, %esi               # imm = 0x7FF00000
+	cmpl	$111149057, %esi                # imm = 0x6A00001
+	setb	%al
+	andb	%dil, %al
+	retq
+func0000000000000041:                   # @func0000000000000041
 	shlq	$44, %rsi
 	sete	%al
 	andb	%dil, %al
@@ -15,20 +21,32 @@ func0000000000000001:                   # @func0000000000000001
 	sete	%al
 	andb	%dil, %al
 	retq
-func0000000000000024:                   # @func0000000000000024
-	andl	$2147483646, %esi               # imm = 0x7FFFFFFE
-	cmpl	$6, %esi
-	setb	%al
+func000000000000006c:                   # @func000000000000006c
+	movq	%rsi, %rax
 	andb	%dil, %al
 	retq
-func000000000000002c:                   # @func000000000000002c
-	testb	%sil, %sil
-	sets	%al
+func0000000000000074:                   # @func0000000000000074
+	testb	$4, %sil
+	sete	%al
 	andb	%dil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
-	andl	$1073741823, %esi               # imm = 0x3FFFFFFF
-	cmpl	$5, %esi
-	setae	%al
+func0000000000000018:                   # @func0000000000000018
+	testl	$251658240, %esi                # imm = 0xF000000
+	setne	%al
+	andb	%dil, %al
+	retq
+func0000000000000058:                   # @func0000000000000058
+	testl	$251658240, %esi                # imm = 0xF000000
+	setne	%al
+	andb	%dil, %al
+	retq
+func0000000000000078:                   # @func0000000000000078
+	testl	$2046, %esi                     # imm = 0x7FE
+	setne	%al
+	andb	%dil, %al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	testb	$60, %sil
+	sete	%al
 	andb	%dil, %al
 	retq

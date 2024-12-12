@@ -1,8 +1,7 @@
 
-; 21 occurrences:
+; 20 occurrences:
 ; darktable/optimized/filtering.c.ll
 ; linux/optimized/ehci-hcd.ll
-; linux/optimized/hdac_regmap.ll
 ; linux/optimized/uhci-hcd.ll
 ; llvm/optimized/LTO.cpp.ll
 ; llvm/optimized/SemaLookup.cpp.ll
@@ -32,7 +31,8 @@ entry:
   ret i32 %5
 }
 
-; 34 occurrences:
+; 35 occurrences:
+; boost/optimized/text_file_backend.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; llvm/optimized/AArch64LowerHomogeneousPrologEpilog.cpp.ll
 ; llvm/optimized/AArch64SLSHardening.cpp.ll
@@ -82,10 +82,10 @@ entry:
 ; clamav/optimized/upack.c.ll
 ; icu/optimized/collationfastlatin.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0) #0 {
+define i32 @func0000000000000031(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 255
-  %2 = icmp ugt i32 %1, 6
+  %2 = icmp samesign ugt i32 %1, 6
   %3 = select i1 %2, i32 11, i32 8
   %4 = and i32 %0, -256
   %5 = or disjoint i32 %3, %4

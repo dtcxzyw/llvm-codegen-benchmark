@@ -1,9 +1,10 @@
 
-; 16 occurrences:
+; 17 occurrences:
 ; clamav/optimized/scanners.c.ll
 ; cmake/optimized/core.c.ll
 ; cmake/optimized/stream_encoder_mt.c.ll
 ; darktable/optimized/FujiDecompressor.cpp.ll
+; graphviz/optimized/shortest.c.ll
 ; libuv/optimized/core.c.ll
 ; lief/optimized/net_sockets.c.ll
 ; linux/optimized/select.ll

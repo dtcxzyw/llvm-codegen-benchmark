@@ -7,10 +7,9 @@ func0000000000000001:                   # @func0000000000000001
 	cmoveq	%rcx, %rax
 	retq
 func0000000000000000:                   # @func0000000000000000
-	movl	$-10, %eax
-	subl	%esi, %eax
-	movslq	%eax, %rcx
 	testb	$1, %dil
-	movq	$-12, %rax
-	cmoveq	%rcx, %rax
+	movl	$8, %eax
+	cmovel	%esi, %eax
+	negl	%eax
+	cltq
 	retq

@@ -7,7 +7,7 @@
 ; openssl/optimized/libcrypto-shlib-a_utf8.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000f4(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 18
   %3 = and i32 %2, 1835008
@@ -17,7 +17,7 @@ entry:
   ret i1 %6
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; clamav/optimized/mszipd.c.ll
 ; linux/optimized/forcedeth.ll
 ; linux/optimized/insn-eval.ll
@@ -28,11 +28,10 @@ entry:
 ; llvm/optimized/ExprEngineCXX.cpp.ll
 ; llvm/optimized/ExprEngineCallAndReturn.cpp.ll
 ; llvm/optimized/PathDiagnostic.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ThreadSafety.cpp.ll
 ; qemu/optimized/hw_usb_dev-serial.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 2
   %3 = and i32 %2, 4
@@ -46,7 +45,7 @@ entry:
 ; linux/optimized/drm_edid.ll
 ; openjdk/optimized/utf8.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000007c(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000ec(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 12
   %3 = and i32 %2, 61440
@@ -64,20 +63,20 @@ entry:
 ; node/optimized/simdutf.ll
 ; simdjson/optimized/simdjson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000f8(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 6
   %3 = and i32 %2, 2097088
   %4 = and i32 %0, 63
   %5 = or disjoint i32 %4, %3
-  %6 = icmp ugt i32 %5, 65536
+  %6 = icmp samesign ugt i32 %5, 65536
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; abc/optimized/saigPhase.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 1
   %3 = and i32 %2, 2
@@ -90,7 +89,7 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/modp_b64.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000a8(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 8
   %3 = and i32 %2, 65280
@@ -103,7 +102,7 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/a_utf8.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000b4(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %1, 24
   %3 = and i32 %2, 50331648
@@ -113,54 +112,11 @@ entry:
   ret i1 %6
 }
 
-; 8 occurrences:
-; cmake/optimized/archive_string.c.ll
-; hermes/optimized/AST2JS.cpp.ll
-; hermes/optimized/BytecodeGenerator.cpp.ll
-; hermes/optimized/HBC.cpp.ll
-; hermes/optimized/JSLexer.cpp.ll
-; hermes/optimized/JSONEmitter.cpp.ll
-; hermes/optimized/SourceErrorManager.cpp.ll
-; llvm/optimized/YAMLParser.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl nsw i32 %1, 18
-  %3 = and i32 %2, 1835008
-  %4 = and i32 %0, 196608
-  %5 = or disjoint i32 %4, %3
-  %6 = icmp eq i32 %5, 0
-  ret i1 %6
-}
-
-; 11 occurrences:
-; hermes/optimized/AST2JS.cpp.ll
-; hermes/optimized/BytecodeGenerator.cpp.ll
-; hermes/optimized/ConsecutiveStringStorage.cpp.ll
-; hermes/optimized/HBC.cpp.ll
-; hermes/optimized/JSLexer.cpp.ll
-; hermes/optimized/JSONEmitter.cpp.ll
-; hermes/optimized/RegexSerialization.cpp.ll
-; hermes/optimized/Runtime.cpp.ll
-; hermes/optimized/SourceErrorManager.cpp.ll
-; hermes/optimized/UTF8.cpp.ll
-; llvm/optimized/YAMLParser.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl nsw i32 %1, 18
-  %3 = and i32 %2, 1835008
-  %4 = and i32 %0, 196608
-  %5 = or disjoint i32 %4, %3
-  %6 = icmp ugt i32 %5, 1114111
-  ret i1 %6
-}
-
 ; 2 occurrences:
 ; oiio/optimized/formatspec.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i32 %1) #0 {
+define i1 @func00000000000000e1(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 12
   %3 = and i32 %2, 61440
@@ -170,12 +126,39 @@ entry:
   ret i1 %6
 }
 
+; 1 occurrences:
+; llvm/optimized/YAMLParser.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000078(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl nsw i32 %1, 12
+  %3 = and i32 %2, 61440
+  %4 = and i32 %0, 2048
+  %5 = or disjoint i32 %4, %3
+  %6 = icmp ne i32 %5, 0
+  ret i1 %6
+}
+
+; 2 occurrences:
+; cmake/optimized/archive_string.c.ll
+; llvm/optimized/YAMLParser.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000074(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl nsw i32 %1, 12
+  %3 = and i32 %2, 61440
+  %4 = and i32 %0, 2048
+  %5 = or disjoint i32 %4, %3
+  %6 = icmp samesign ult i32 %5, 55296
+  ret i1 %6
+}
+
 ; 3 occurrences:
 ; openusd/optimized/pathExpression.cpp.ll
 ; openusd/optimized/pathParser.cpp.ll
 ; openusd/optimized/predicateExpression.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000038(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 6
   %3 = and i32 %2, 960

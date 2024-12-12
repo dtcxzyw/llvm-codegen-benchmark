@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; minetest/optimized/imagefilters.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000245(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000885(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %0, 1
   %4 = icmp ult i32 %3, %2
@@ -15,7 +15,7 @@ entry:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-shaper-indic.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000244(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000884(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %1, 1
   %4 = icmp ult i32 %3, %0
@@ -28,7 +28,7 @@ entry:
 ; abc/optimized/mtrGroup.c.ll
 ; clamav/optimized/unzip.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000049(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000089(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, -1
   %4 = icmp uge i32 %3, %0
@@ -40,7 +40,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SourceManager.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000218(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000828(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %0, 1
   %4 = icmp eq i32 %3, %2
@@ -52,7 +52,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/intel_dpll.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000166(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000004c6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, 1
   %4 = icmp slt i32 %3, %0
@@ -64,7 +64,7 @@ entry:
 ; 1 occurrences:
 ; zxing/optimized/AZDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000017a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000004ea(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %0, -1
   %4 = icmp sle i32 %3, %2

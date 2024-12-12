@@ -10,7 +10,7 @@ func0000000000000006:                   # @func0000000000000006
 	andl	$1, %esi
 	subq	%rsi, %rax
 	retq
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	subl	%edx, %esi
 	andl	$1, %esi
 	subq	%rsi, %rdi

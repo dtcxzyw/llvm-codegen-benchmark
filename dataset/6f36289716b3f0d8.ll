@@ -1,8 +1,6 @@
 
-; 58 occurrences:
-; g2o/optimized/solver_pcg.cpp.ll
+; 56 occurrences:
 ; hyperscan/optimized/mpv.c.ll
-; libwebp/optimized/vp8l_dec.c.ll
 ; linux/optimized/binfmt_elf.ll
 ; linux/optimized/blk-merge.ll
 ; linux/optimized/compaction.ll
@@ -67,7 +65,91 @@ entry:
   ret i64 %4
 }
 
-; 222 occurrences:
+; 74 occurrences:
+; abc/optimized/abcHieNew.c.ll
+; abc/optimized/cecCorr.c.ll
+; abc/optimized/cecSweep.c.ll
+; abc/optimized/darLib.c.ll
+; abc/optimized/giaEquiv.c.ll
+; abc/optimized/giaIso.c.ll
+; abc/optimized/giaSweeper.c.ll
+; ceres/optimized/covariance_impl.cc.ll
+; ceres/optimized/polynomial.cc.ll
+; ceres/optimized/schur_eliminator_2_2_2.cc.ll
+; ceres/optimized/schur_eliminator_2_2_3.cc.ll
+; ceres/optimized/schur_eliminator_2_2_4.cc.ll
+; ceres/optimized/schur_eliminator_2_2_d.cc.ll
+; ceres/optimized/schur_eliminator_2_3_3.cc.ll
+; ceres/optimized/schur_eliminator_2_3_4.cc.ll
+; ceres/optimized/schur_eliminator_2_3_6.cc.ll
+; ceres/optimized/schur_eliminator_2_3_9.cc.ll
+; ceres/optimized/schur_eliminator_2_3_d.cc.ll
+; ceres/optimized/schur_eliminator_2_4_3.cc.ll
+; ceres/optimized/schur_eliminator_2_4_4.cc.ll
+; ceres/optimized/schur_eliminator_2_4_6.cc.ll
+; ceres/optimized/schur_eliminator_2_4_8.cc.ll
+; ceres/optimized/schur_eliminator_2_4_9.cc.ll
+; ceres/optimized/schur_eliminator_2_4_d.cc.ll
+; ceres/optimized/schur_eliminator_2_d_d.cc.ll
+; ceres/optimized/schur_eliminator_3_3_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_2.cc.ll
+; ceres/optimized/schur_eliminator_4_4_3.cc.ll
+; ceres/optimized/schur_eliminator_4_4_4.cc.ll
+; ceres/optimized/schur_eliminator_4_4_d.cc.ll
+; ceres/optimized/schur_eliminator_d_d_d.cc.ll
+; cmake/optimized/zstd_compress.c.ll
+; folly/optimized/String.cpp.ll
+; g2o/optimized/types_seven_dof_expmap.cpp.ll
+; hermes/optimized/ArrayStorage.cpp.ll
+; hermes/optimized/Callable.cpp.ll
+; hermes/optimized/DictPropertyMap.cpp.ll
+; hermes/optimized/Domain.cpp.ll
+; hermes/optimized/HadesGC.cpp.ll
+; hermes/optimized/Interpreter.cpp.ll
+; hermes/optimized/JSError.cpp.ll
+; hermes/optimized/JSObject.cpp.ll
+; hermes/optimized/OrderedHashMap.cpp.ll
+; hermes/optimized/PrimitiveBox.cpp.ll
+; hermes/optimized/RegExp.cpp.ll
+; hermes/optimized/Runtime.cpp.ll
+; hermes/optimized/RuntimeJSONUtils.cpp.ll
+; hermes/optimized/SegmentedArray.cpp.ll
+; hermes/optimized/String.cpp.ll
+; hermes/optimized/require.cpp.ll
+; hyperscan/optimized/arg_checks.cpp.ll
+; hyperscan/optimized/castle.c.ll
+; hyperscan/optimized/database.c.ll
+; hyperscan/optimized/runtime.c.ll
+; libpng/optimized/pngrutil.c.ll
+; libwebp/optimized/vp8l_dec.c.ll
+; llvm/optimized/CGCall.cpp.ll
+; llvm/optimized/CGVTables.cpp.ll
+; llvm/optimized/CodeGenFunction.cpp.ll
+; llvm/optimized/ThreadSafetyCommon.cpp.ll
+; openexr/optimized/ImfDwaCompressor.cpp.ll
+; openexr/optimized/internal_dwa.c.ll
+; openjdk/optimized/jfrEventClassTransformer.ll
+; openjdk/optimized/mlib_c_ImageCopy.ll
+; openjdk/optimized/pngrutil.ll
+; openjdk/optimized/psParallelCompact.ll
+; openssl/optimized/libcrypto-lib-rsaz_exp.ll
+; openssl/optimized/libcrypto-shlib-rsaz_exp.ll
+; openusd/optimized/openexr-c.c.ll
+; ring-rs/optimized/4prppzcttbsz5zvc.ll
+; rocksdb/optimized/xxhash.cc.ll
+; wolfssl/optimized/rsa.c.ll
+; z3/optimized/region.cpp.ll
+; zstd/optimized/zstd_compress.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(ptr %0, i64 %1) #0 {
+entry:
+  %2 = getelementptr nusw nuw i8, ptr %0, i64 %1
+  %3 = ptrtoint ptr %2 to i64
+  %4 = and i64 %3, 63
+  ret i64 %4
+}
+
+; 183 occurrences:
 ; abc/optimized/abcDfs.c.ll
 ; abc/optimized/abcDress3.c.ll
 ; abc/optimized/abcHieNew.c.ll
@@ -77,9 +159,7 @@ entry:
 ; abc/optimized/bmcCexCut.c.ll
 ; abc/optimized/bmcCexDepth.c.ll
 ; abc/optimized/bmcMaxi.c.ll
-; abc/optimized/cecCorr.c.ll
 ; abc/optimized/cecSolve.c.ll
-; abc/optimized/cecSweep.c.ll
 ; abc/optimized/darLib.c.ll
 ; abc/optimized/extraUtilPath.c.ll
 ; abc/optimized/giaCSatOld.c.ll
@@ -87,7 +167,6 @@ entry:
 ; abc/optimized/giaEnable.c.ll
 ; abc/optimized/giaEquiv.c.ll
 ; abc/optimized/giaFrames.c.ll
-; abc/optimized/giaIso.c.ll
 ; abc/optimized/giaMan.c.ll
 ; abc/optimized/giaMuxes.c.ll
 ; abc/optimized/giaRex.c.ll
@@ -169,7 +248,6 @@ entry:
 ; ceres/optimized/trust_region_minimizer.cc.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
-; folly/optimized/String.cpp.ll
 ; folly/optimized/UniqueInstance.cpp.ll
 ; g2o/optimized/edge_se2_lotsofxy.cpp.ll
 ; g2o/optimized/edge_se2_pointxy_calib.cpp.ll
@@ -191,28 +269,10 @@ entry:
 ; g2o/optimized/vertex_se3.cpp.ll
 ; g2o/optimized/vertex_se3_euler.cpp.ll
 ; g2o/optimized/vertex_se3_expmap.cpp.ll
-; hermes/optimized/ArrayStorage.cpp.ll
-; hermes/optimized/Callable.cpp.ll
-; hermes/optimized/DictPropertyMap.cpp.ll
-; hermes/optimized/Domain.cpp.ll
-; hermes/optimized/HadesGC.cpp.ll
-; hermes/optimized/Interpreter.cpp.ll
-; hermes/optimized/JSError.cpp.ll
-; hermes/optimized/JSObject.cpp.ll
-; hermes/optimized/OrderedHashMap.cpp.ll
-; hermes/optimized/PrimitiveBox.cpp.ll
-; hermes/optimized/RegExp.cpp.ll
-; hermes/optimized/Runtime.cpp.ll
-; hermes/optimized/RuntimeJSONUtils.cpp.ll
-; hermes/optimized/SegmentedArray.cpp.ll
-; hermes/optimized/String.cpp.ll
 ; hermes/optimized/gtest-all.cc.ll
-; hermes/optimized/require.cpp.ll
-; hyperscan/optimized/arg_checks.cpp.ll
 ; hyperscan/optimized/block.c.ll
 ; hyperscan/optimized/castle.c.ll
 ; hyperscan/optimized/catchup.c.ll
-; hyperscan/optimized/database.c.ll
 ; hyperscan/optimized/gtest-all.cc.ll
 ; hyperscan/optimized/hwlm.c.ll
 ; hyperscan/optimized/lbr.c.ll
@@ -224,15 +284,10 @@ entry:
 ; jemalloc/optimized/extent.ll
 ; jemalloc/optimized/extent.pic.ll
 ; jemalloc/optimized/extent.sym.ll
-; libpng/optimized/pngrutil.c.ll
 ; libquic/optimized/string_util.cc.ll
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
-; llvm/optimized/CGCall.cpp.ll
-; llvm/optimized/CGVTables.cpp.ll
-; llvm/optimized/CodeGenFunction.cpp.ll
 ; llvm/optimized/ScheduleDAGSDNodes.cpp.ll
-; llvm/optimized/ThreadSafetyCommon.cpp.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/cube_style_single_iteration.cpp.ll
@@ -250,18 +305,12 @@ entry:
 ; nuklear/optimized/unity.c.ll
 ; opencv/optimized/datastructs.cpp.ll
 ; opencv/optimized/ts_gtest.cpp.ll
-; openexr/optimized/ImfDwaCompressor.cpp.ll
-; openexr/optimized/internal_dwa.c.ll
 ; openjdk/optimized/continuation.ll
 ; openjdk/optimized/continuationFreezeThaw.ll
 ; openjdk/optimized/javaThread.ll
-; openjdk/optimized/jfrEventClassTransformer.ll
 ; openjdk/optimized/jvmtiRedefineClasses.ll
 ; openjdk/optimized/mlib_ImageAffine_NN.ll
-; openjdk/optimized/mlib_c_ImageCopy.ll
 ; openjdk/optimized/nmethod.ll
-; openjdk/optimized/pngrutil.ll
-; openjdk/optimized/psParallelCompact.ll
 ; openjdk/optimized/relocator.ll
 ; openjdk/optimized/rewriter.ll
 ; openjdk/optimized/vmError.ll
@@ -271,20 +320,14 @@ entry:
 ; openmpi/optimized/mpl_trmem.ll
 ; openmpi/optimized/opal_datatype_pack.ll
 ; openmpi/optimized/opal_datatype_unpack.ll
-; openssl/optimized/libcrypto-lib-rsaz_exp.ll
-; openssl/optimized/libcrypto-shlib-rsaz_exp.ll
-; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; php/optimized/zend_jit.ll
 ; php/optimized/zend_shared_alloc.ll
-; ring-rs/optimized/4prppzcttbsz5zvc.ll
-; rocksdb/optimized/xxhash.cc.ll
 ; rust-analyzer-rs/optimized/4xr6qa4j33qfqd4q.ll
 ; wasmtime-rs/optimized/3r0osxvwe4cd326n.ll
 ; wasmtime-rs/optimized/45190zkycf5izngt.ll
 ; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
 ; wolfssl/optimized/chacha.c.ll
-; wolfssl/optimized/rsa.c.ll
 ; xgboost/optimized/column_matrix.cc.ll
 ; xgboost/optimized/gradient_index_format.cc.ll
 ; xgboost/optimized/sparse_page_raw_format.cc.ll
@@ -295,7 +338,7 @@ define i64 @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
   %2 = getelementptr nusw i8, ptr %0, i64 %1
   %3 = ptrtoint ptr %2 to i64
-  %4 = and i64 %3, 63
+  %4 = and i64 %3, 7
   ret i64 %4
 }
 

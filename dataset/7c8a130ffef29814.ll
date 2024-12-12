@@ -5,9 +5,9 @@
 ; openssl/optimized/libcrypto-lib-obj_dat.ll
 ; openssl/optimized/libcrypto-shlib-obj_dat.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(i64 %0) #0 {
+define i64 @func0000000000000061(i64 %0) #0 {
 entry:
-  %1 = icmp ugt i64 %0, 39
+  %1 = icmp samesign ugt i64 %0, 39
   %2 = select i1 %1, i64 -40, i64 0
   %3 = add nsw i64 %2, %0
   ret i64 %3
@@ -23,9 +23,9 @@ entry:
 ; meshlab/optimized/meshfilter.cpp.ll
 ; rust-analyzer-rs/optimized/4n4kpy0miblxvsjy.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0) #0 {
+define i64 @func0000000000000051(i64 %0) #0 {
 entry:
-  %1 = icmp ult i64 %0, 8190
+  %1 = icmp samesign ult i64 %0, 8190
   %2 = select i1 %1, i64 1, i64 -8190
   %3 = add nsw i64 %2, %0
   ret i64 %3
@@ -45,14 +45,15 @@ define i64 @func0000000000000010(i64 %0) #0 {
 entry:
   %1 = icmp ult i64 %0, 8190
   %2 = select i1 %1, i64 1, i64 -8190
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   ret i64 %3
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; cpython/optimized/basearith.ll
 ; cpython/optimized/mpdecimal.ll
 ; openjdk/optimized/edgeStore.ll
+; zed-rs/optimized/53iexoleo5ntv1dnjbqpooo1x.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000020(i64 %0) #0 {
 entry:
@@ -77,7 +78,7 @@ entry:
   ret i64 %3
 }
 
-; 14 occurrences:
+; 16 occurrences:
 ; abc/optimized/cuddUtil.c.ll
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; delta-rs/optimized/3qkwqfk85qralejq.ll
@@ -92,6 +93,8 @@ entry:
 ; php/optimized/unixtime2tm.ll
 ; quickjs/optimized/libbf.ll
 ; quickjs/optimized/quickjs.ll
+; zed-rs/optimized/8wa0knulc7q0w36j1a9to646h.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000019(i64 %0) #0 {
 entry:
@@ -165,9 +168,9 @@ entry:
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; mimalloc/optimized/segment.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000023(i64 %0) #0 {
+define i64 @func0000000000000063(i64 %0) #0 {
 entry:
-  %1 = icmp ugt i64 %0, 1
+  %1 = icmp samesign ugt i64 %0, 1
   %2 = select i1 %1, i64 4294967294, i64 1
   %3 = add nuw nsw i64 %2, %0
   ret i64 %3

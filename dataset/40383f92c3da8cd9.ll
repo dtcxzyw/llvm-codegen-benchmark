@@ -16,7 +16,7 @@
 ; postgres/optimized/mbutils.ll
 ; z3/optimized/euf_egraph.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000442(i32 %0, i32 %1) #0 {
+define i1 @func0000000000001082(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, %0
   %3 = icmp eq i32 %1, 0
@@ -34,7 +34,7 @@ entry:
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-set.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000002042(i32 %0, i32 %1) #0 {
+define i1 @func0000000000008082(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, %0
   %3 = icmp eq i32 %1, -1
@@ -48,7 +48,7 @@ entry:
 ; linux/optimized/device_cgroup.ll
 ; z3/optimized/bv_solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000444(i32 %0, i32 %1) #0 {
+define i1 @func0000000000001084(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, %0
   %3 = icmp eq i32 %1, -1

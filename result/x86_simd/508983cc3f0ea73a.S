@@ -50,13 +50,3 @@ func000000000000001a:                   # @func000000000000001a
 	vmovdqu8	.LCPI4_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
 	vzeroupper
 	retq
-.LCPI5_0:
-	.zero	16,1
-func000000000000001c:                   # @func000000000000001c
-	vpsllw	$7, %xmm0, %xmm0
-	vpmovb2m	%xmm0, %k1
-	vpxor	%xmm0, %xmm0, %xmm0
-	vcmpordps	%zmm0, %zmm1, %k1 {%k1}
-	vmovdqu8	.LCPI5_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]
-	vzeroupper
-	retq

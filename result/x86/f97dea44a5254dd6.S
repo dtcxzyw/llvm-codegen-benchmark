@@ -3,52 +3,47 @@ func0000000000000006:                   # @func0000000000000006
 	cmpl	%edi, %edx
 	setl	%al
 	retq
-func0000000000000076:                   # @func0000000000000076
+func00000000000000e6:                   # @func00000000000000e6
 	orl	%esi, %edx
 	cmpl	%edi, %edx
 	setl	%al
 	retq
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	orl	%esi, %edx
 	cmpl	%edi, %edx
 	sete	%al
 	retq
-func000000000000007a:                   # @func000000000000007a
+func00000000000000ea:                   # @func00000000000000ea
 	orl	%esi, %edx
 	cmpl	%edi, %edx
 	setg	%al
 	retq
-func0000000000000074:                   # @func0000000000000074
+func00000000000000e4:                   # @func00000000000000e4
 	orl	%esi, %edx
 	cmpl	%edi, %edx
 	setb	%al
 	retq
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	orl	%esi, %edx
 	cmpl	%edi, %edx
 	setl	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	orl	%esi, %edx
 	cmpl	%edi, %edx
 	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	orl	%esi, %edx
 	cmpl	%edi, %edx
 	sete	%al
 	retq
-func0000000000000014:                   # @func0000000000000014
-	orl	%esi, %edx
-	cmpl	%edi, %edx
-	setb	%al
-	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	orl	%esi, %edx
 	cmpl	%edi, %edx
 	seta	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	orl	%esi, %edx
 	cmpl	%edi, %edx
 	setl	%al

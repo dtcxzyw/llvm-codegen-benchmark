@@ -1,5 +1,5 @@
 func0000000000000000:                   # @func0000000000000000
-	slli	a2, a2, 20
+	slli	a2, a2, 3
 	slli	a1, a1, 63
 	srai	a1, a1, 63
 	and	a1, a1, a2
@@ -24,16 +24,12 @@ func0000000000000005:                   # @func0000000000000005
 	addw	a0, a0, a1
 	ret
 func000000000000000d:                   # @func000000000000000d
-	slli	a2, a2, 1
-	slli	a1, a1, 63
-	srai	a1, a1, 63
-	and	a1, a1, a2
-	addw	a0, a0, a1
+	andi	a1, a1, 1
+	bnez	a1, .LBB3_2
+	li	a2, 1
+	addw	a0, a0, a2
 	ret
-func000000000000000c:                   # @func000000000000000c
+.LBB3_2:
 	slli	a2, a2, 1
-	slli	a1, a1, 63
-	srai	a1, a1, 63
-	and	a1, a1, a2
-	addw	a0, a0, a1
+	addw	a0, a0, a2
 	ret

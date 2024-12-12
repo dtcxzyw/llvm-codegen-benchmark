@@ -1,7 +1,8 @@
 
-; 25 occurrences:
+; 26 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; abseil-cpp/optimized/generators_test.cc.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/crt.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; fmt/optimized/chrono-test.cc.ll

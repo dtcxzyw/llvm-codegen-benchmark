@@ -11,9 +11,58 @@ entry:
   ret float %4
 }
 
-; 3 occurrences:
+; 52 occurrences:
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; mitsuba3/optimized/hair.cpp.ll
+; ncnn/optimized/convolution.cpp.ll
+; ncnn/optimized/convolution1d.cpp.ll
+; ncnn/optimized/convolution1d_x86.cpp.ll
+; ncnn/optimized/convolution1d_x86_avx.cpp.ll
+; ncnn/optimized/convolution1d_x86_avx512.cpp.ll
+; ncnn/optimized/convolution1d_x86_fma.cpp.ll
+; ncnn/optimized/convolution3d.cpp.ll
+; ncnn/optimized/convolution_x86.cpp.ll
+; ncnn/optimized/convolution_x86_avx.cpp.ll
+; ncnn/optimized/convolution_x86_avx512.cpp.ll
+; ncnn/optimized/convolution_x86_fma.cpp.ll
+; ncnn/optimized/convolutiondepthwise.cpp.ll
+; ncnn/optimized/convolutiondepthwise1d.cpp.ll
+; ncnn/optimized/convolutiondepthwise3d.cpp.ll
+; ncnn/optimized/convolutiondepthwise_x86.cpp.ll
+; ncnn/optimized/convolutiondepthwise_x86_avx.cpp.ll
+; ncnn/optimized/convolutiondepthwise_x86_avx512.cpp.ll
+; ncnn/optimized/convolutiondepthwise_x86_fma.cpp.ll
+; ncnn/optimized/deconvolution.cpp.ll
+; ncnn/optimized/deconvolution1d.cpp.ll
+; ncnn/optimized/deconvolution3d.cpp.ll
+; ncnn/optimized/deconvolution_x86.cpp.ll
+; ncnn/optimized/deconvolution_x86_avx.cpp.ll
+; ncnn/optimized/deconvolution_x86_avx512.cpp.ll
+; ncnn/optimized/deconvolution_x86_fma.cpp.ll
+; ncnn/optimized/deconvolutiondepthwise.cpp.ll
+; ncnn/optimized/deconvolutiondepthwise1d.cpp.ll
+; ncnn/optimized/deconvolutiondepthwise3d.cpp.ll
+; ncnn/optimized/deconvolutiondepthwise_x86.cpp.ll
+; ncnn/optimized/deconvolutiondepthwise_x86_avx.cpp.ll
+; ncnn/optimized/deconvolutiondepthwise_x86_avx512.cpp.ll
+; ncnn/optimized/deconvolutiondepthwise_x86_fma.cpp.ll
+; ncnn/optimized/deformableconv2d.cpp.ll
+; ncnn/optimized/deformableconv2d_x86.cpp.ll
+; ncnn/optimized/deformableconv2d_x86_avx.cpp.ll
+; ncnn/optimized/deformableconv2d_x86_avx512.cpp.ll
+; ncnn/optimized/deformableconv2d_x86_fma.cpp.ll
+; ncnn/optimized/innerproduct.cpp.ll
+; ncnn/optimized/innerproduct_x86.cpp.ll
+; ncnn/optimized/innerproduct_x86_avx.cpp.ll
+; ncnn/optimized/innerproduct_x86_avx512.cpp.ll
+; ncnn/optimized/innerproduct_x86_f16c.cpp.ll
+; ncnn/optimized/innerproduct_x86_fma.cpp.ll
+; ncnn/optimized/requantize.cpp.ll
+; ncnn/optimized/requantize_x86.cpp.ll
+; ncnn/optimized/requantize_x86_avx.cpp.ll
+; ncnn/optimized/requantize_x86_avx512.cpp.ll
+; ncnn/optimized/requantize_x86_fma.cpp.ll
+; ncnn/optimized/sigmoid.cpp.ll
 ; pbrt-v4/optimized/shapes.cpp.ll
 ; Function Attrs: nounwind
 define float @func0000000000000002(float %0, float %1) #0 {

@@ -45,7 +45,7 @@ entry:
   ret i32 %2
 }
 
-; 10 occurrences:
+; 12 occurrences:
 ; assimp/optimized/StandardShapes.cpp.ll
 ; bullet3/optimized/b3GpuRigidBodyPipeline.ll
 ; darktable/optimized/introspection_channelmixer.c.ll
@@ -56,6 +56,8 @@ entry:
 ; minetest/optimized/server.cpp.ll
 ; opencv/optimized/count_non_zero.dispatch.cpp.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
+; zed-rs/optimized/0oq3e593i742h6k86do1vh2be.ll
+; zed-rs/optimized/7ukwrxq2hh2vqucbwedxkpvcs.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000e(float %0) #0 {
 entry:
@@ -76,10 +78,7 @@ entry:
   ret i32 %2
 }
 
-; 5 occurrences:
-; openblas/optimized/ieeeck.c.ll
-; openblas/optimized/lapacke_c_nancheck.c.ll
-; openblas/optimized/lapacke_s_nancheck.c.ll
+; 2 occurrences:
 ; yoga/optimized/AbsoluteLayout.cpp.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
 ; Function Attrs: nounwind
@@ -140,7 +139,8 @@ entry:
   ret i32 %2
 }
 
-; 23 occurrences:
+; 24 occurrences:
+; boost/optimized/get_distance_measure.ll
 ; bullet3/optimized/btSoftBody.ll
 ; darktable/optimized/introspection_colorchecker.c.ll
 ; gromacs/optimized/fitahx.cpp.ll

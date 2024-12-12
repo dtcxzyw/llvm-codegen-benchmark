@@ -28,7 +28,7 @@ func0000000000000011:                   # @func0000000000000011
 	vpbroadcastd	.LCPI3_0(%rip), %ymm3   # ymm3 = [3,3,3,3,3,3,3,3]
 	vpsubd	%ymm2, %ymm3, %ymm2
 	vpsllvd	%ymm2, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI4_0:
 	.long	2                               # 0x2

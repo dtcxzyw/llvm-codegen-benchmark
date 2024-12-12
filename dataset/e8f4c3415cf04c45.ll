@@ -1,10 +1,11 @@
 
-; 175 occurrences:
+; 215 occurrences:
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
 ; arrow/optimized/api_scalar.cc.ll
 ; arrow/optimized/reader.cc.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/LWOLoader.cpp.ll
+; boost/optimized/options_description.ll
 ; casadi/optimized/casadi_misc.cpp.ll
 ; casadi/optimized/function.cpp.ll
 ; casadi/optimized/mapsum.cpp.ll
@@ -98,13 +99,10 @@
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -164,29 +162,6 @@
 ; openspiel/optimized/leduc_poker.cc.ll
 ; openspiel/optimized/sheriff.cc.ll
 ; pybind11/optimized/pybind11_cross_module_tests.cpp.ll
-; velox/optimized/Filter.cpp.ll
-; velox/optimized/SimpleFunctionRegistry.cpp.ll
-; verilator/optimized/V3VariableOrder.cpp.ll
-; yosys/optimized/mem.ll
-; yosys/optimized/memory_bmux2rom.ll
-; yosys/optimized/memory_dff.ll
-; yosys/optimized/memory_libmap.ll
-; yosys/optimized/pmux2shiftx.ll
-; yosys/optimized/proc_rom.ll
-; yosys/optimized/sim.ll
-; zxing/optimized/PDFWriter.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000022(ptr %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = zext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
-  %5 = add i64 %4, 63
-  %6 = lshr i64 %5, 6
-  %7 = getelementptr nusw i64, ptr %0, i64 %6
-  ret ptr %7
-}
-
-; 43 occurrences:
 ; quantlib/optimized/assetswap.ll
 ; quantlib/optimized/basisswapratehelpers.ll
 ; quantlib/optimized/btp.ll
@@ -202,7 +177,6 @@ entry:
 ; quantlib/optimized/fdg2swaptionengine.ll
 ; quantlib/optimized/fdhullwhiteswaptionengine.ll
 ; quantlib/optimized/fixedvsfloatingswap.ll
-; quantlib/optimized/floatfloatswap.ll
 ; quantlib/optimized/gaussian1dfloatfloatswaptionengine.ll
 ; quantlib/optimized/gaussian1dmodel.ll
 ; quantlib/optimized/gaussian1dnonstandardswaptionengine.ll
@@ -230,11 +204,22 @@ entry:
 ; quantlib/optimized/tenorswaptionvts.ll
 ; quantlib/optimized/vanillaswap.ll
 ; quantlib/optimized/yearonyearinflationswap.ll
+; velox/optimized/Filter.cpp.ll
+; velox/optimized/SimpleFunctionRegistry.cpp.ll
+; verilator/optimized/V3VariableOrder.cpp.ll
+; yosys/optimized/mem.ll
+; yosys/optimized/memory_bmux2rom.ll
+; yosys/optimized/memory_dff.ll
+; yosys/optimized/memory_libmap.ll
+; yosys/optimized/pmux2shiftx.ll
+; yosys/optimized/proc_rom.ll
+; yosys/optimized/sim.ll
+; zxing/optimized/PDFWriter.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000023(ptr %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = add i64 %4, 63
   %6 = lshr i64 %5, 6
   %7 = getelementptr nusw nuw i64, ptr %0, i64 %6

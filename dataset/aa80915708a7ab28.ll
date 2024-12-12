@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 37 occurrences:
 ; abc/optimized/abcAuto.c.ll
 ; abc/optimized/abcBm.c.ll
 ; abc/optimized/abcPrint.c.ll
@@ -23,7 +23,6 @@
 ; assimp/optimized/XmlSerializer.cpp.ll
 ; meshlab/optimized/filter_ao.cpp.ll
 ; meshlab/optimized/filter_cubization.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/filter_mutualglobal.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll

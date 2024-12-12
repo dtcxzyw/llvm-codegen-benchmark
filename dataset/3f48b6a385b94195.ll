@@ -13,14 +13,13 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; oiio/optimized/icoinput.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
-; spike/optimized/i64_to_f32.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = or disjoint i32 %2, 1249902592
+  %3 = or disjoint i32 %2, 7
   %4 = sub nuw nsw i32 %3, %1
   %5 = add i32 %4, %0
   ret i32 %5

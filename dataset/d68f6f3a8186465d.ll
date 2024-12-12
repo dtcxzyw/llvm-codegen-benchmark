@@ -1,10 +1,9 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; gromacs/optimized/pull_rotation.cpp.ll
 ; gromacs/optimized/slaev2.cpp.ll
 ; mitsuba3/optimized/hg.cpp.ll
-; openblas/optimized/ieeeck.c.ll
 ; pbrt-v4/optimized/bssrdf.cpp.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll

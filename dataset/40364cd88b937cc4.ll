@@ -1,5 +1,39 @@
 
-; 455 occurrences:
+%"struct.tbb::detail::d1::ets_base<tbb::detail::d1::ets_no_key>::slot.2636054" = type { %"struct.std::atomic.742.2636055", ptr }
+%"struct.std::atomic.742.2636055" = type { %"class.std::thread::id.2636053" }
+%"class.std::thread::id.2636053" = type { i64 }
+
+; 21 occurrences:
+; fmt/optimized/chrono-test.cc.ll
+; fmt/optimized/compile-test.cc.ll
+; fmt/optimized/format-impl-test.cc.ll
+; folly/optimized/File.cpp.ll
+; folly/optimized/Singleton.cpp.ll
+; hyperscan/optimized/block.c.ll
+; hyperscan/optimized/castle.c.ll
+; hyperscan/optimized/catchup.c.ll
+; hyperscan/optimized/mpv.c.ll
+; hyperscan/optimized/program_runtime.c.ll
+; hyperscan/optimized/repeat.c.ll
+; hyperscan/optimized/som_runtime.c.ll
+; hyperscan/optimized/stream.c.ll
+; lodepng/optimized/lodepng_util.cpp.ll
+; openexr/optimized/ImfHuf.cpp.ll
+; openexr/optimized/internal_huf.c.ll
+; openssl/optimized/libcrypto-lib-mem_sec.ll
+; openssl/optimized/libcrypto-shlib-mem_sec.ll
+; openusd/optimized/openexr-c.c.ll
+; vcpkg/optimized/strings.cpp.ll
+; zstd/optimized/zstd_v01.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = lshr i64 %1, %2
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  ret ptr %4
+}
+
+; 433 occurrences:
 ; cmake/optimized/fastcover.c.ll
 ; cmake/optimized/huf_decompress.c.ll
 ; cmake/optimized/zstd_double_fast.c.ll
@@ -11,21 +45,6 @@
 ; delta-rs/optimized/2difj0jdxbswpyo1.ll
 ; delta-rs/optimized/2vihrqvthrjn5xma.ll
 ; delta-rs/optimized/3yt47vxpbp4b5dih.ll
-; fmt/optimized/chrono-test.cc.ll
-; fmt/optimized/compile-test.cc.ll
-; fmt/optimized/format-impl-test.cc.ll
-; folly/optimized/File.cpp.ll
-; folly/optimized/Singleton.cpp.ll
-; hyperscan/optimized/block.c.ll
-; hyperscan/optimized/castle.c.ll
-; hyperscan/optimized/catchup.c.ll
-; hyperscan/optimized/init.c.ll
-; hyperscan/optimized/mpv.c.ll
-; hyperscan/optimized/program_runtime.c.ll
-; hyperscan/optimized/repeat.c.ll
-; hyperscan/optimized/som_runtime.c.ll
-; hyperscan/optimized/stream.c.ll
-; lodepng/optimized/lodepng_util.cpp.ll
 ; luau/optimized/BytecodeBuilder.cpp.ll
 ; mold/optimized/gc-sections.cc.ALPHA.cc.ll
 ; mold/optimized/gc-sections.cc.ARM32.cc.ll
@@ -136,8 +155,6 @@
 ; mold/optimized/passes.cc.SPARC64.cc.ll
 ; mold/optimized/passes.cc.X86_64.cc.ll
 ; nuttx/optimized/mempool_multiple.c.ll
-; openexr/optimized/ImfHuf.cpp.ll
-; openexr/optimized/internal_huf.c.ll
 ; openjdk/optimized/abstractInterpreter_x86.ll
 ; openjdk/optimized/altHashing.ll
 ; openjdk/optimized/archiveBuilder.ll
@@ -395,8 +412,6 @@
 ; openjdk/optimized/zRelocationSet.ll
 ; openjdk/optimized/zRootsIterator.ll
 ; openjdk/optimized/zVerify.ll
-; openssl/optimized/libcrypto-lib-mem_sec.ll
-; openssl/optimized/libcrypto-shlib-mem_sec.ll
 ; openusd/optimized/bboxCache.cpp.ll
 ; openusd/optimized/changeManager.cpp.ll
 ; openusd/optimized/changes.cpp.ll
@@ -412,7 +427,6 @@
 ; openusd/optimized/layerRegistry.cpp.ll
 ; openusd/optimized/layerStack.cpp.ll
 ; openusd/optimized/noticeRegistry.cpp.ll
-; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/payloads.cpp.ll
 ; openusd/optimized/piPrototypeSceneIndex.cpp.ll
 ; openusd/optimized/prim.cpp.ll
@@ -441,14 +455,12 @@
 ; openvdb/optimized/LevelSetSphere.cc.ll
 ; openvdb/optimized/MultiResGrid.cc.ll
 ; qemu/optimized/cache.ll
-; vcpkg/optimized/strings.cpp.ll
 ; zstd/optimized/fastcover.c.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; zstd/optimized/zstd_double_fast.c.ll
 ; zstd/optimized/zstd_fast.c.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; zstd/optimized/zstd_opt.c.ll
-; zstd/optimized/zstd_v01.c.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; zstd/optimized/zstd_v03.c.ll
 ; zstd/optimized/zstd_v04.c.ll
@@ -459,7 +471,7 @@
 define ptr @func0000000000000002(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %1, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw %"struct.tbb::detail::d1::ets_base<tbb::detail::d1::ets_no_key>::slot.2636054", ptr %0, i64 %3
   ret ptr %4
 }
 

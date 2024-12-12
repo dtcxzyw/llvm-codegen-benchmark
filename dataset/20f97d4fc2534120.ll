@@ -1,11 +1,12 @@
 
-; 24 occurrences:
+; 25 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; libwebp/optimized/picture_csp_enc.c.ll
 ; libwebp/optimized/yuv.c.ll
 ; libwebp/optimized/yuv_sse2.c.ll
 ; libwebp/optimized/yuv_sse41.c.ll
+; lvgl/optimized/lv_color.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; ncnn/optimized/mat_pixel.cpp.ll
 ; nori/optimized/nanovg.c.ll
@@ -29,7 +30,7 @@ define i32 @func00000000000000ff(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = mul nuw nsw i32 %3, 3
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   %6 = mul nuw nsw i32 %1, 7
   %7 = add nuw nsw i32 %5, %6
   ret i32 %7
@@ -44,7 +45,7 @@ define i32 @func00000000000000f5(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = mul nuw nsw i32 %3, 1260
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   %6 = mul nuw nsw i32 %1, 10
   %7 = add nsw i32 %5, %6
   ret i32 %7
@@ -58,7 +59,7 @@ define i32 @func00000000000000f0(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = mul nuw nsw i32 %3, 10
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   %6 = mul nuw nsw i32 %1, 3
   %7 = add i32 %5, %6
   ret i32 %7
@@ -71,7 +72,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = mul i32 %3, 268433741
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   %6 = mul i32 %1, 268435123
   %7 = add i32 %5, %6
   ret i32 %7
@@ -84,7 +85,7 @@ define i32 @func00000000000000c0(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = mul nuw nsw i32 %3, 460324
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   %6 = mul i32 %1, 268280268
   %7 = add i32 %5, %6
   ret i32 %7
@@ -97,7 +98,7 @@ define i32 @func0000000000000030(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = mul i32 %3, 268361008
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   %6 = mul nuw nsw i32 %1, 460324
   %7 = add i32 %5, %6
   ret i32 %7

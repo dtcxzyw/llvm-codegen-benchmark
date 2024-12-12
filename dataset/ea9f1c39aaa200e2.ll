@@ -1,6 +1,5 @@
 
-; 4 occurrences:
-; darktable/optimized/DeflateDecompressor.cpp.ll
+; 3 occurrences:
 ; minetest/optimized/mapblock.cpp.ll
 ; minetest/optimized/reflowscan.cpp.ll
 ; openspiel/optimized/chess.cc.ll

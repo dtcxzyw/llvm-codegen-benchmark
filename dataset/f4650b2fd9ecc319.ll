@@ -19,7 +19,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 2
   %4 = and i32 %3, 1
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -31,7 +31,7 @@ entry:
   %2 = trunc i64 %1 to i32
   %3 = lshr i32 %2, 12
   %4 = and i32 %3, 511
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -45,7 +45,7 @@ entry:
   %2 = lshr i64 %1, 39
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = and i32 %3, 1
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 

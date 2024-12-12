@@ -1,5 +1,5 @@
 
-; 8 occurrences:
+; 10 occurrences:
 ; cjson/optimized/cJSON.c.ll
 ; duckdb/optimized/ub_duckdb_operator_join.cpp.ll
 ; folly/optimized/HugePages.cpp.ll
@@ -8,6 +8,8 @@
 ; folly/optimized/Uri.cpp.ll
 ; gromacs/optimized/dssp.cpp.ll
 ; proj/optimized/c_api.cpp.ll
+; zed-rs/optimized/a5ci0rxxvxgj9v9regp58axvz.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0) #0 {
 entry:
@@ -17,7 +19,8 @@ entry:
   ret i1 %3
 }
 
-; 21 occurrences:
+; 25 occurrences:
+; boost/optimized/default_formatter_factory.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; cjson/optimized/cJSON.c.ll
 ; folly/optimized/Random.cpp.ll
@@ -39,6 +42,9 @@ entry:
 ; velox/optimized/DateTimeFormatter.cpp.ll
 ; velox/optimized/Timestamp.cpp.ll
 ; yalantinglibs/optimized/benchmark.cpp.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0) #0 {
 entry:
@@ -60,13 +66,14 @@ entry:
   ret i1 %3
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; gromacs/optimized/dssp.cpp.ll
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
 ; libquic/optimized/file_path.cc.ll
 ; lief/optimized/bignum.c.ll
 ; linux/optimized/ip6_flowlabel.ll
 ; llvm/optimized/LoopVectorizationLegality.cpp.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0) #0 {
 entry:

@@ -22,16 +22,25 @@
 define i32 @func0000000000000003(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 61440
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = zext i8 %1 to i32
   %6 = or disjoint i32 %4, %5
   ret i32 %6
 }
 
-; 60 occurrences:
+; 69 occurrences:
 ; arrow/optimized/utf8.cc.ll
 ; clamav/optimized/chmd.c.ll
 ; cmake/optimized/json_writer.cpp.ll
+; hermes/optimized/AST2JS.cpp.ll
+; hermes/optimized/ConsecutiveStringStorage.cpp.ll
+; hermes/optimized/HBC.cpp.ll
+; hermes/optimized/JSLexer.cpp.ll
+; hermes/optimized/JSONEmitter.cpp.ll
+; hermes/optimized/RegexSerialization.cpp.ll
+; hermes/optimized/Runtime.cpp.ll
+; hermes/optimized/SourceErrorManager.cpp.ll
+; hermes/optimized/UTF8.cpp.ll
 ; icu/optimized/normalizer2impl.ll
 ; icu/optimized/utf8collationiterator.ll
 ; icu/optimized/utf_impl.ll
@@ -93,7 +102,7 @@ entry:
 define i32 @func0000000000000007(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 61440
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = zext nneg i8 %1 to i32
   %6 = or disjoint i32 %4, %5
   ret i32 %6
@@ -106,7 +115,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 61440
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = zext nneg i8 %1 to i32
   %6 = or i32 %4, %5
   ret i32 %6
@@ -119,7 +128,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65536
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = zext i8 %1 to i32
   %6 = or i32 %4, %5
   ret i32 %6

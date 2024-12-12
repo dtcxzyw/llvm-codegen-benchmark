@@ -1,9 +1,17 @@
 
-; 16 occurrences:
+; 22 occurrences:
 ; libpng/optimized/pngread.c.ll
 ; libpng/optimized/pngwrite.c.ll
 ; linux/optimized/intel_dram.ll
 ; linux/optimized/intel_rps.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_color_op.ll
+; lvgl/optimized/lv_draw_buf.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; lvgl/optimized/lv_draw_sw_gradient.ll
+; lvgl/optimized/lv_draw_sw_img.ll
+; lvgl/optimized/lv_image_decoder.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; ncnn/optimized/mat_pixel_affine.cpp.ll
@@ -12,8 +20,6 @@
 ; opencv/optimized/mapper.cpp.ll
 ; openjdk/optimized/pngread.ll
 ; openusd/optimized/reconintra.c.ll
-; typst-rs/optimized/3lt7g0yvt7qzv13u.ll
-; typst-rs/optimized/p1dgiootfedk7bo.ll
 ; wireshark/optimized/dot11decrypt_util.c.ll
 ; wireshark/optimized/packet-bgp.c.ll
 ; Function Attrs: nounwind

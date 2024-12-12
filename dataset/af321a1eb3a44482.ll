@@ -16,9 +16,8 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; linux/optimized/devinet.ll
-; linux/optimized/fib_notifier.ll
 ; linux/optimized/nexthop.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i32 %1) #0 {

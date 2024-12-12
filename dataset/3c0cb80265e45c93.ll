@@ -10,6 +10,7 @@
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; arrow/optimized/bignum.cc.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/area.ll
 ; bullet3/optimized/gim_contact.ll
 ; clamav/optimized/Bra.c.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
@@ -68,7 +69,6 @@
 ; linux/optimized/journal.ll
 ; linux/optimized/md.ll
 ; linux/optimized/netlabel_kapi.ll
-; linux/optimized/nfs3xdr.ll
 ; linux/optimized/ptp_chardev.ll
 ; linux/optimized/ptp_clock.ll
 ; linux/optimized/ptp_sysfs.ll
@@ -254,7 +254,7 @@ entry:
   ret i32 %3
 }
 
-; 339 occurrences:
+; 340 occurrences:
 ; abc/optimized/acecFadds.c.ll
 ; abc/optimized/bmcFault.c.ll
 ; abc/optimized/fraClaus.c.ll
@@ -262,6 +262,7 @@ entry:
 ; abc/optimized/giaSatMap.c.ll
 ; abc/optimized/nwkUtil.c.ll
 ; assimp/optimized/CSMLoader.cpp.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/archive_read_support_filter_xz.c.ll
 ; cmake/optimized/divsufsort.c.ll

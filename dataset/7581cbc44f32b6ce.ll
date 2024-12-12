@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; openjdk/optimized/os_linux.ll
 ; php/optimized/zend.ll
 ; php/optimized/zend_execute.ll
@@ -9,6 +9,7 @@
 ; qemu/optimized/tcg-op.c.ll
 ; qemu/optimized/tcg.c.ll
 ; re2/optimized/nfa.cc.ll
+; wasmtime-rs/optimized/3ks7b643ljwe3j81.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000000(i64 %0, ptr %1) #0 {
 entry:

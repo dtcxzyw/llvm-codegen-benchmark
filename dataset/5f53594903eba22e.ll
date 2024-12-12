@@ -1,5 +1,5 @@
 
-; 77 occurrences:
+; 76 occurrences:
 ; abc/optimized/bmcUnroll.c.ll
 ; cmake/optimized/url.c.ll
 ; cpython/optimized/unicodeobject.ll
@@ -14,7 +14,6 @@
 ; linux/optimized/i915_gem_object.ll
 ; linux/optimized/i9xx_wm.ll
 ; linux/optimized/intel_pstate.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/phy-c45.ll
 ; linux/optimized/phy_device.ll
@@ -130,7 +129,7 @@ entry:
   ret i16 %3
 }
 
-; 29 occurrences:
+; 31 occurrences:
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; llvm/optimized/ASTContext.cpp.ll
@@ -160,6 +159,8 @@ entry:
 ; llvm/optimized/SemaType.cpp.ll
 ; llvm/optimized/TextNodeDumper.cpp.ll
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000003(i64 %0) #0 {
 entry:

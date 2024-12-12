@@ -1,12 +1,9 @@
+func0000000000000001:                   # @func0000000000000001
+	lzcntl	%edi, %eax
+	retq
 func0000000000000003:                   # @func0000000000000003
-	tzcntl	%edi, %eax
+	lzcntl	%edi, %eax
 	retq
 func0000000000000007:                   # @func0000000000000007
-	tzcntl	%edi, %eax
-	retq
-func0000000000000001:                   # @func0000000000000001
-	tzcntl	%edi, %eax
-	retq
-func0000000000000005:                   # @func0000000000000005
-	tzcntl	%edi, %eax
+	lzcntl	%edi, %eax
 	retq

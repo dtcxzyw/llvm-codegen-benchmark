@@ -23,28 +23,25 @@ entry:
   ret i64 %5
 }
 
-; 4 occurrences:
-; openusd/optimized/quadRefinement.cpp.ll
+; 2 occurrences:
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
-; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000000d(i32 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000029(i32 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = icmp slt i64 %1, %2
+  %3 = icmp samesign ult i64 %1, %2
   %4 = zext nneg i32 %0 to i64
   %5 = select i1 %3, i64 %4, i64 0
   ret i64 %5
 }
 
-; 3 occurrences:
-; faiss/optimized/hamming.cpp.ll
-; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
+; 2 occurrences:
+; openusd/optimized/quadRefinement.cpp.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000009(i32 %0, i64 %1, i64 %2) #0 {
+define i64 @func000000000000000d(i32 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ult i64 %1, %2
+  %3 = icmp slt i64 %1, %2
   %4 = zext nneg i32 %0 to i64
   %5 = select i1 %3, i64 %4, i64 0
   ret i64 %5
@@ -61,15 +58,25 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
-; hyperscan/optimized/stream.c.ll
-; miniaudio/optimized/unity.c.ll
+; 1 occurrences:
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(i32 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000028(i32 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ult i64 %1, %2
+  %4 = zext i32 %0 to i64
+  %5 = select i1 %3, i64 %4, i64 0
+  ret i64 %5
+}
+
+; 2 occurrences:
+; faiss/optimized/hamming.cpp.ll
+; recastnavigation/optimized/RecastMeshDetail.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000009(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %1, %2
-  %4 = zext i32 %0 to i64
+  %4 = zext nneg i32 %0 to i64
   %5 = select i1 %3, i64 %4, i64 0
   ret i64 %5
 }
@@ -104,6 +111,18 @@ entry:
   %3 = icmp ugt i64 %1, %2
   %4 = zext nneg i32 %0 to i64
   %5 = select i1 %3, i64 %4, i64 4294967295
+  ret i64 %5
+}
+
+; 2 occurrences:
+; hyperscan/optimized/stream.c.ll
+; miniaudio/optimized/unity.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000008(i32 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ult i64 %1, %2
+  %4 = zext i32 %0 to i64
+  %5 = select i1 %3, i64 %4, i64 0
   ret i64 %5
 }
 

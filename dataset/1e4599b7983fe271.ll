@@ -1,5 +1,6 @@
 
-; 186 occurrences:
+; 188 occurrences:
+; boost/optimized/to_chars.ll
 ; duckdb/optimized/ub_duckdb_func_list.cpp.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
@@ -84,6 +85,7 @@
 ; llvm/optimized/MasmParser.cpp.ll
 ; llvm/optimized/XCOFFObjectWriter.cpp.ll
 ; luau/optimized/Compiler.cpp.ll
+; lvgl/optimized/lv_refr.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -195,12 +197,13 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; jsonnet/optimized/rapidyaml.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; openjdk/optimized/debugInit.ll
 ; rocksdb/optimized/clock_cache.cc.ll
 ; z3/optimized/small_object_allocator.cpp.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001b(i1 %0, i64 %1) #0 {
 entry:

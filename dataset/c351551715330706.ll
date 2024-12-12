@@ -12,7 +12,7 @@
 ; ruby/optimized/string.ll
 ; wireshark/optimized/packet-mq.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1024
   %4 = icmp eq i32 %3, 0
@@ -24,7 +24,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/zend_inference.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000019(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000029(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1073741824
   %4 = icmp eq i32 %3, 0
@@ -33,13 +33,12 @@ entry:
   ret i1 %6
 }
 
-; 4 occurrences:
-; icu/optimized/tzfmt.ll
+; 3 occurrences:
 ; linux/optimized/md.ll
 ; php/optimized/zend_inference.ll
 ; wireshark/optimized/packet-ntlmssp.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1024
   %4 = icmp eq i32 %3, 0
@@ -54,7 +53,7 @@ entry:
 ; abc/optimized/bmcCexMin1.c.ll
 ; linux/optimized/virtio_net.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = icmp ne i32 %3, 0
@@ -66,7 +65,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/FunctionImport.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c5(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000185(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 32
   %4 = icmp ne i32 %3, 0
@@ -81,7 +80,7 @@ entry:
 ; opencv/optimized/softfloat.cpp.ll
 ; wireshark/optimized/packet-dlm3.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 8
   %4 = icmp eq i32 %3, 0
@@ -90,12 +89,11 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; imgui/optimized/imgui.cpp.ll
-; linux/optimized/pty.ll
 ; openmpi/optimized/comm.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000018c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2048
   %4 = icmp ne i32 %3, 0
@@ -108,7 +106,7 @@ entry:
 ; postgres/optimized/dt_common.ll
 ; postgres/optimized/formatting.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 268435488
   %4 = icmp eq i32 %3, 268435456

@@ -35,6 +35,18 @@ entry:
 }
 
 ; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000a(i1 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc nsw i64 %2 to i32
+  %4 = add nsw i32 %3, -3
+  %5 = select i1 %0, i32 %1, i32 %4
+  %6 = zext i32 %5 to i64
+  ret i64 %6
+}
+
+; 1 occurrences:
 ; hermes/optimized/SegmentedArray.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001e(i1 %0, i32 %1, i64 %2) #0 {

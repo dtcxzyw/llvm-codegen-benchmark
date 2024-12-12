@@ -1,7 +1,6 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; freetype/optimized/ftbase.c.ll
-; llvm/optimized/X86AsmBackend.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
 ; rocksdb/optimized/filter_policy.cc.ll

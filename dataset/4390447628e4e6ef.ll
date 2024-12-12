@@ -27,7 +27,7 @@ entry:
   %4 = sub i64 %1, %3
   %5 = freeze i64 %4
   %6 = ashr i64 %5, 4
-  %7 = icmp eq i64 %6, %0
+  %7 = icmp eq i64 %0, %6
   ret i1 %7
 }
 
@@ -41,7 +41,7 @@ entry:
   %4 = sub i64 %1, %3
   %5 = freeze i64 %4
   %6 = ashr i64 %5, 3
-  %7 = icmp ugt i64 %6, %0
+  %7 = icmp ult i64 %0, %6
   ret i1 %7
 }
 
@@ -56,7 +56,7 @@ entry:
   %4 = sub i64 %1, %3
   %5 = freeze i64 %4
   %6 = ashr i64 %5, 5
-  %7 = icmp sgt i64 %6, %0
+  %7 = icmp slt i64 %0, %6
   ret i1 %7
 }
 

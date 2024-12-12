@@ -1,7 +1,6 @@
 
-; 11 occurrences:
+; 9 occurrences:
 ; gromacs/optimized/dlarrex.cpp.ll
-; gromacs/optimized/forcetable.cpp.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; icu/optimized/units_converter.ll
 ; openblas/optimized/dlarrj.c.ll
@@ -10,12 +9,11 @@
 ; proj/optimized/geodesic.c.ll
 ; proj/optimized/moll.cpp.ll
 ; proj/optimized/putp2.cpp.ll
-; proj/optimized/wink2.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
-  %4 = fcmp ogt double %3, %0
+  %4 = fcmp olt double %0, %3
   ret i1 %4
 }
 
@@ -35,9 +33,8 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; gromacs/optimized/dlasq4.cpp.ll
-; gromacs/optimized/forcetable.cpp.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; icu/optimized/units_converter.ll
 ; opencv/optimized/tracking_utils.cpp.ll
@@ -48,7 +45,7 @@ entry:
 define i1 @func0000000000000004(double %0, double %1, double %2) #0 {
 entry:
   %3 = fdiv double %1, %2
-  %4 = fcmp olt double %3, %0
+  %4 = fcmp ogt double %0, %3
   ret i1 %4
 }
 

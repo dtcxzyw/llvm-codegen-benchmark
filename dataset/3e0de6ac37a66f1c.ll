@@ -1,7 +1,17 @@
 
-; 73 occurrences:
+; 2 occurrences:
 ; meshoptimizer/optimized/quantization.cpp.ll
 ; ocio/optimized/MathUtils.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, float %1) #0 {
+entry:
+  %2 = bitcast float %1 to i32
+  %3 = icmp samesign ult i32 %2, 947912704
+  %4 = select i1 %3, i32 947912704, i32 %0
+  ret i32 %4
+}
+
+; 71 occurrences:
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -77,8 +87,8 @@
 define i32 @func0000000000000004(i32 %0, float %1) #0 {
 entry:
   %2 = bitcast float %1 to i32
-  %3 = icmp ult i32 %2, 947912704
-  %4 = select i1 %3, i32 947912704, i32 %0
+  %3 = icmp ult i32 %2, 8388608
+  %4 = select i1 %3, i32 -149, i32 %0
   ret i32 %4
 }
 

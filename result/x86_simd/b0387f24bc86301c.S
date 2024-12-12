@@ -38,7 +38,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000023:                   # @func0000000000000023
+func0000000000000043:                   # @func0000000000000043
 	vpcmpeqd	.LCPI0_0(%rip){1to8}, %ymm1, %k1
 	vpcmpeqd	.LCPI0_1(%rip){1to8}, %ymm0, %k2
 	vmovdqu8	.LCPI0_2(%rip), %xmm0 {%k2} {z} # xmm0 {%k2} {z} = [3,3,3,3,3,3,3,3,u,u,u,u,u,u,u,u]
@@ -120,7 +120,7 @@ func0000000000000023:                   # @func0000000000000023
 	.byte	4                               # 0x4
 .LCPI1_6:
 	.byte	208                             # 0xd0
-func0000000000000143:                   # @func0000000000000143
+func0000000000000283:                   # @func0000000000000283
 	vpcmpgtd	.LCPI1_0(%rip){1to8}, %ymm1, %k1
 	vpbroadcastb	.LCPI1_5(%rip), %xmm1   # xmm1 = [4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4]
 	vmovdqu8	.LCPI1_2(%rip), %xmm1 {%k1}     # xmm1 {%k1} = [12,12,12,12,12,12,12,12,u,u,u,u,u,u,u,u]

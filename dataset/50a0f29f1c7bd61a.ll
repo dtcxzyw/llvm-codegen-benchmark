@@ -1,6 +1,8 @@
 
-; 3 occurrences:
+; 5 occurrences:
 ; abc/optimized/saigMiter.c.ll
+; linux/optimized/hugetlb.ll
+; linux/optimized/mprotect.ll
 ; php/optimized/zend_jit.ll
 ; portaudio/optimized/pa_converters.c.ll
 ; Function Attrs: nounwind

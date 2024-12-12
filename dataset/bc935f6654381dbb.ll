@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 23 occurrences:
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -18,6 +18,7 @@
 ; linux/optimized/kstrtox.ll
 ; nghttp2/optimized/url_parser.c.ll
 ; php/optimized/php_http_parser.ll
+; proxygen/optimized/HeaderDecodeInfo.cpp.ll
 ; proxygen/optimized/http_parser_cpp.cpp.ll
 ; redis/optimized/fpconv.ll
 ; redis/optimized/lua_cjson.ll

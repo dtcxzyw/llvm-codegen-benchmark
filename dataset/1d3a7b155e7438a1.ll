@@ -41,9 +41,10 @@ entry:
   ret i32 %4
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; freetype/optimized/ftbitmap.c.ll
 ; freetype/optimized/sfnt.c.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; ncnn/optimized/mat_pixel_affine.cpp.ll
 ; openusd/optimized/reconintra.c.ll
 ; Function Attrs: nounwind

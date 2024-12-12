@@ -88,15 +88,14 @@ func0000000000000000:                   # @func0000000000000000
 	vpternlogd	$248, .LCPI5_1(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
 	retq
 .LCPI6_0:
-	.long	8323072                         # 0x7f0000
+	.long	12288                           # 0x3000
 .LCPI6_2:
 	.byte	0                               # 0x0
-	.byte	0                               # 0x0
 	.byte	255                             # 0xff
+	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 .LCPI6_1:
 	.byte	0                               # 0x0
-	.byte	0                               # 0x0
 	.byte	255                             # 0xff
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
@@ -126,9 +125,10 @@ func0000000000000000:                   # @func0000000000000000
 	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 	.byte	255                             # 0xff
+	.byte	0                               # 0x0
 	.byte	0                               # 0x0
 func000000000000000b:                   # @func000000000000000b
-	vpslld	$16, %ymm1, %ymm1
+	vpslld	$8, %ymm1, %ymm1
 	vpaddd	.LCPI6_0(%rip){1to8}, %ymm1, %ymm1
 	vpternlogd	$248, .LCPI6_2(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | (ymm1 & mem)
 	retq

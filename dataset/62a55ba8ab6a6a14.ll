@@ -1,7 +1,7 @@
 
-%"class.clang::OffsetOfNode.3011648" = type { %"class.clang::SourceRange.3011325", i64 }
-%"class.clang::SourceRange.3011325" = type { %"class.clang::SourceLocation.3011332", %"class.clang::SourceLocation.3011332" }
-%"class.clang::SourceLocation.3011332" = type { i32 }
+%"class.clang::OffsetOfNode.3205071" = type { %"class.clang::SourceRange.3204750", i64 }
+%"class.clang::SourceRange.3204750" = type { %"class.clang::SourceLocation.3204757", %"class.clang::SourceLocation.3204757" }
+%"class.clang::SourceLocation.3204757" = type { i32 }
 
 ; 36 occurrences:
 ; hermes/optimized/HiddenClass.cpp.ll
@@ -41,13 +41,13 @@
 ; llvm/optimized/WinEHPrepare.cpp.ll
 ; openvdb/optimized/PoissonSolver.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func000000000000002f(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr exact i64 %2, 2
   %4 = and i64 %3, 4294967295
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw i32, ptr %0, i64 %5
-  %7 = getelementptr nusw i32, ptr %6, i64 %4
+  %6 = getelementptr nusw nuw i32, ptr %0, i64 %5
+  %7 = getelementptr nusw nuw i32, ptr %6, i64 %4
   ret ptr %7
 }
 
@@ -74,13 +74,13 @@ entry:
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; llvm/optimized/StmtPrinter.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 2
   %4 = and i64 %3, 4294967295
   %5 = zext i32 %1 to i64
-  %6 = getelementptr nusw %"class.clang::OffsetOfNode.3011648", ptr %0, i64 %5
-  %7 = getelementptr nusw ptr, ptr %6, i64 %4
+  %6 = getelementptr nusw nuw %"class.clang::OffsetOfNode.3205071", ptr %0, i64 %5
+  %7 = getelementptr nusw nuw ptr, ptr %6, i64 %4
   ret ptr %7
 }
 

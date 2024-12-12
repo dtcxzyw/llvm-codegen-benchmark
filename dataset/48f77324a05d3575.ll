@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; gromacs/optimized/slasq4.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i32 %1, float %2) #0 {
+define i1 @func000000000000008c(i32 %0, i32 %1, float %2) #0 {
 entry:
   %3 = fcmp olt float %2, 0x3810000000000000
   %4 = icmp slt i32 %0, %1
@@ -28,17 +28,6 @@ define i1 @func000000000000012e(float %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp uge i32 %1, %2
   %4 = fcmp une float %0, 0.000000e+00
-  %5 = or i1 %4, %3
-  ret i1 %5
-}
-
-; 1 occurrences:
-; imgui/optimized/imgui_widgets.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000142(i32 %0, i32 %1, float %2) #0 {
-entry:
-  %3 = fcmp ole float %2, 0.000000e+00
-  %4 = icmp eq i32 %0, %1
   %5 = or i1 %4, %3
   ret i1 %5
 }

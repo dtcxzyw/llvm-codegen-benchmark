@@ -1,10 +1,17 @@
 
-; 24 occurrences:
+; 31 occurrences:
 ; abseil-cpp/optimized/time_zone_info.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/iconv_codecvt.ll
+; boost/optimized/src.ll
 ; cpython/optimized/bytesobject.ll
+; cpython/optimized/dtoa.ll
 ; cpython/optimized/unicodeobject.ll
+; hermes/optimized/dtoa.c.ll
 ; hyperscan/optimized/shortcut_literal.cpp.ll
+; jq/optimized/jv_dtoa.ll
 ; libquic/optimized/a_d2i_fp.c.ll
+; libquic/optimized/dtoa.cc.ll
 ; linux/optimized/aio.ll
 ; openssl/optimized/libcrypto-lib-a_d2i_fp.ll
 ; openssl/optimized/libcrypto-shlib-a_d2i_fp.ll
@@ -25,7 +32,7 @@
 ; redis/optimized/defrag.ll
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %0, i1 %3, i1 false
@@ -34,14 +41,13 @@ entry:
   ret i1 %6
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; linux/optimized/irq.ll
-; linux/optimized/tbinstal.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; redis/optimized/server.ll
 ; wireshark/optimized/packet-ecpri.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000018c(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, -1
   %4 = select i1 %0, i1 %3, i1 false
@@ -50,12 +56,11 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
-; openjdk/optimized/parse2.ll
+; 2 occurrences:
 ; openssl/optimized/libcrypto-lib-digest.ll
 ; openssl/optimized/libcrypto-shlib-digest.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000008a(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 2147483648
   %4 = select i1 %0, i1 %3, i1 false
@@ -64,11 +69,12 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; git/optimized/rebase.ll
 ; php/optimized/apprentice.ll
+; zed-rs/optimized/9r3tgj00e2sbbyanbvf1oqgns.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %0, i1 %3, i1 false
@@ -80,7 +86,7 @@ entry:
 ; 1 occurrences:
 ; slurm/optimized/gres.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000101(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, 1024
   %4 = select i1 %0, i1 %3, i1 false
@@ -93,7 +99,7 @@ entry:
 ; cmake/optimized/zstd_decompress_block.c.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func000000000000010a(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, 16777216
   %4 = select i1 %0, i1 %3, i1 false
@@ -105,7 +111,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/defrag.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %0, i1 %3, i1 false

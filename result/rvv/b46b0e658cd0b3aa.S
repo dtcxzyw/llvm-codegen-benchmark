@@ -14,15 +14,14 @@ func0000000000000005:                   # @func0000000000000005
 	vadd.vx	v8, v8, a0
 	ret
 func0000000000000006:                   # @func0000000000000006
-	li	a0, 18
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vx	v10, v10, a0
+	vadd.vi	v10, v10, 5
 	vmerge.vvm	v8, v10, v8, v0
 	vadd.vi	v8, v8, 1
 	ret
 func0000000000000002:                   # @func0000000000000002
 	vsetivli	zero, 4, e64, m2, ta, ma
-	vadd.vi	v10, v10, 4
+	vadd.vi	v10, v10, 1
 	vmerge.vvm	v8, v10, v8, v0
 	vadd.vi	v8, v8, 1
 	ret

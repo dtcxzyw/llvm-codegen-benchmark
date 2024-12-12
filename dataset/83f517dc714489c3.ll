@@ -1,6 +1,7 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; assimp/optimized/DefaultLogger.cpp.ll
+; boost/optimized/ipc_reliable_message_queue.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -52,7 +53,7 @@ define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 3
   %3 = select i1 %2, i32 2, i32 %1
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 

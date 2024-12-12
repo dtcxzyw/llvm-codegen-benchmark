@@ -1,5 +1,5 @@
 
-; 40 occurrences:
+; 43 occurrences:
 ; abc/optimized/fretInit.c.ll
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; clamav/optimized/unarj.c.ll
@@ -40,6 +40,9 @@
 ; wireshark/optimized/packet-ecmp.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; wireshark/optimized/packet-quic.c.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000000(i16 %0, i16 %1) #0 {
 entry:

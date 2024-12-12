@@ -3,7 +3,7 @@
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000028(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -34359737848001
   %3 = icmp ult i64 %2, -34359737856000
@@ -17,7 +17,7 @@ entry:
 ; quantlib/optimized/longstaffschwartzmultipathpricer.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000068(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -34359737848001
   %3 = icmp ult i64 %2, -34359737856000

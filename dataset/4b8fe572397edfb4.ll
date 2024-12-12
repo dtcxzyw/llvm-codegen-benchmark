@@ -72,10 +72,14 @@ entry:
   ret i8 %2
 }
 
-; 3 occurrences:
+; 7 occurrences:
+; boost/optimized/instantiate_cpp_exprgrammar.ll
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
 ; lief/optimized/ecp.c.ll
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i8 %0, i8 %1) #0 {
 entry:

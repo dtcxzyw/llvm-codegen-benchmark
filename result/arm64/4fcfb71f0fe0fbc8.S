@@ -1,16 +1,8 @@
-func0000000000000023:                   // @func0000000000000023
+func0000000000000043:                   // @func0000000000000043
 // %bb.0:                               // %entry
-	mov	w8, #65528                      // =0xfff8
-	ushr	v4.4s, v0.4s, #16
-	ushr	v5.4s, v1.4s, #16
-	dup	v2.4s, w8
-	and	v3.16b, v0.16b, v2.16b
-	and	v2.16b, v1.16b, v2.16b
-	cmeq	v3.4s, v3.4s, #0
-	cmeq	v2.4s, v2.4s, #0
-	bit	v1.16b, v5.16b, v2.16b
-	bit	v0.16b, v4.16b, v3.16b
-	ushr	v0.4s, v0.4s, #8
-	ushr	v1.4s, v1.4s, #8
+	lsr	w8, w0, #16
+	tst	w0, #0xfff8
+	csel	w8, w8, w0, eq
+	lsr	w0, w8, #8
 	ret
                                         // -- End function

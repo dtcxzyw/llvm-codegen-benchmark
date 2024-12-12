@@ -1,10 +1,9 @@
 
-; 127 occurrences:
+; 126 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
 ; abseil-cpp/optimized/globals.cc.ll
-; abseil-cpp/optimized/hash.cc.ll
 ; abseil-cpp/optimized/hash_function_defaults_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; abseil-cpp/optimized/node_hash_map_test.cc.ll
@@ -135,7 +134,7 @@ entry:
   ret i64 %3
 }
 
-; 148 occurrences:
+; 146 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -167,7 +166,6 @@ entry:
 ; lief/optimized/File.cpp.ll
 ; linux/optimized/apic.ll
 ; linux/optimized/clocksource.ll
-; linux/optimized/dw.ll
 ; linux/optimized/hw_breakpoint.ll
 ; linux/optimized/mballoc.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -192,8 +190,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -274,6 +270,7 @@ entry:
 ; wireshark/optimized/file-elf.c.ll
 ; wireshark/optimized/packet-rtcp.c.ll
 ; wireshark/optimized/tvbuff.c.ll
+; zed-rs/optimized/4sannzew3n6dftw73jbsboi0v.ll
 ; zfp/optimized/encode1d.c.ll
 ; zfp/optimized/encode1f.c.ll
 ; zfp/optimized/encode2d.c.ll
@@ -292,7 +289,7 @@ entry:
   ret i64 %3
 }
 
-; 517 occurrences:
+; 514 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/key_map.cc.ll
@@ -386,8 +383,6 @@ entry:
 ; lief/optimized/VectorStream.cpp.ll
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
-; linux/optimized/8250_lpss.ll
-; linux/optimized/8250_mid.ll
 ; linux/optimized/balloc.ll
 ; linux/optimized/clocksource.ll
 ; linux/optimized/exoparg1.ll
@@ -400,7 +395,6 @@ entry:
 ; linux/optimized/tcp_minisocks.ll
 ; linux/optimized/tcp_timer.ll
 ; linux/optimized/xarray.ll
-; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/BitstreamReader.cpp.ll
 ; llvm/optimized/CGObjCGNU.cpp.ll
 ; llvm/optimized/IRTranslator.cpp.ll
@@ -818,9 +812,10 @@ entry:
   ret i64 %3
 }
 
-; 55 occurrences:
+; 59 occurrences:
 ; assimp/optimized/FBXParser.cpp.ll
 ; assimp/optimized/zip.c.ll
+; boost/optimized/src.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; cpython/optimized/longobject.ll
 ; darktable/optimized/PanasonicV5Decompressor.cpp.ll
@@ -847,6 +842,7 @@ entry:
 ; meshlab/optimized/miniz.c.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/codeholder.cpp.ll
+; openusd/optimized/AVIFImage.cpp.ll
 ; openusd/optimized/avif.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; ozz-animation/optimized/animation.cc.ll
@@ -874,6 +870,8 @@ entry:
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
 ; wireshark/optimized/packet-per.c.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/9ov4zhuctgxchiaoar4zqfrza.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i32 %1) #0 {
 entry:
@@ -882,7 +880,7 @@ entry:
   ret i64 %3
 }
 
-; 46 occurrences:
+; 47 occurrences:
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; brotli/optimized/encode.c.ll
@@ -900,6 +898,7 @@ entry:
 ; openjdk/optimized/jvmciCodeInstaller.ll
 ; openjdk/optimized/jvmciCompilerToVM.ll
 ; openjdk/optimized/lambdaFormInvokers.ll
+; openjdk/optimized/metaspaceStatistics.ll
 ; openjdk/optimized/methodHandles.ll
 ; openjdk/optimized/reflection.ll
 ; openjdk/optimized/stringTable.ll
@@ -938,7 +937,6 @@ entry:
 }
 
 ; 13 occurrences:
-; abc/optimized/dauCount.c.ll
 ; abc/optimized/plaMan.c.ll
 ; clamav/optimized/7zIn.c.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
@@ -947,6 +945,7 @@ entry:
 ; postgres/optimized/network.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; quest/optimized/QuEST_common.c.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
 ; zfp/optimized/encode3f.c.ll
 ; zfp/optimized/encode3i.c.ll
 ; zfp/optimized/encode4f.c.ll

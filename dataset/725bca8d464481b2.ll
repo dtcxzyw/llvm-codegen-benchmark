@@ -1,5 +1,6 @@
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/alloc_lib.ll
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; icu/optimized/collationbuilder.ll
 ; llvm/optimized/RISCVLegalizerInfo.cpp.ll

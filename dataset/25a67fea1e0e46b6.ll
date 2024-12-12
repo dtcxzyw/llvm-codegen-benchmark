@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; assimp/optimized/OgreBinarySerializer.cpp.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; libjpeg-turbo/optimized/jcsample.c.ll
@@ -11,7 +11,6 @@
 ; llvm/optimized/InstrProfReader.cpp.ll
 ; llvm/optimized/MachObjectWriter.cpp.ll
 ; llvm/optimized/RISCVCallLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
 ; mitsuba3/optimized/codeholder.cpp.ll
 ; qemu/optimized/block_qcow2-cluster.c.ll

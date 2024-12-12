@@ -22,6 +22,14 @@ func0000000000000006:                   # @func0000000000000006
 	andl	$1, %eax
 	incl	%eax
 	retq
+func0000000000000004:                   # @func0000000000000004
+	xorl	%ecx, %ecx
+	cmpl	$3, %esi
+	movl	$7, %eax
+	cmovbl	%ecx, %eax
+	testb	$1, %dil
+	cmovnel	%ecx, %eax
+	retq
 func000000000000000a:                   # @func000000000000000a
 	testl	%esi, %esi
 	setg	%al
@@ -29,12 +37,4 @@ func000000000000000a:                   # @func000000000000000a
 	movzbl	%al, %eax
 	andl	$1, %eax
 	incl	%eax
-	retq
-func0000000000000004:                   # @func0000000000000004
-	cmpl	$32, %esi
-	movl	$32, %ecx
-	movl	$1, %eax
-	cmovbl	%ecx, %eax
-	testb	$1, %dil
-	cmovnel	%ecx, %eax
 	retq

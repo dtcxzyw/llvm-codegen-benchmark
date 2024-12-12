@@ -1,11 +1,13 @@
 
-; 4 occurrences:
+; 6 occurrences:
 ; coreutils-rs/optimized/4ws6541n7p4pbb05.ll
 ; rust-analyzer-rs/optimized/357j944nkpwuonjr.ll
 ; rust-analyzer-rs/optimized/55rapmz9wj276hro.ll
 ; syn/optimized/59s55fjcmu2d325w.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/477pfick4ndzj3k3y8f79a5fg.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1835008
   %4 = or disjoint i32 %0, %1

@@ -1,5 +1,5 @@
 
-; 38 occurrences:
+; 39 occurrences:
 ; assimp/optimized/3DSConverter.cpp.ll
 ; assimp/optimized/ASELoader.cpp.ll
 ; assimp/optimized/Assimp.cpp.ll
@@ -35,6 +35,7 @@
 ; gromacs/optimized/vsite.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; mitsuba3/optimized/sggx.cpp.ll
+; ncnn/optimized/layernorm.cpp.ll
 ; nori/optimized/warptest.cpp.ll
 ; opencv/optimized/rho.cpp.ll
 ; raylib/optimized/rcore.c.ll
@@ -42,7 +43,7 @@
 define float @func0000000000000000(float %0, float %1) #0 {
 entry:
   %2 = fdiv float -1.000000e+00, %1
-  %3 = fmul float %2, %0
+  %3 = fmul float %0, %2
   ret float %3
 }
 

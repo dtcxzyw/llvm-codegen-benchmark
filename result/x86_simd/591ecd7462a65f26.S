@@ -42,31 +42,48 @@ func0000000000000008:                   # @func0000000000000008
 	vzeroupper
 	retq
 .LCPI5_0:
-	.long	2                               # 0x2
-func000000000000000c:                   # @func000000000000000c
-	vpcmpeqq	%ymm1, %ymm0, %k1
-	vpbroadcastd	.LCPI5_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [2,2,2,2]
+	.long	1                               # 0x1
+func0000000000000014:                   # @func0000000000000014
+	vpcmpltuq	%ymm1, %ymm0, %k1
+	vpcmpeqd	%xmm1, %xmm1, %xmm1
+	vpbroadcastd	.LCPI5_0(%rip), %xmm0   # xmm0 = [1,1,1,1]
+	vmovdqa32	%xmm1, %xmm0 {%k1}
 	vzeroupper
 	retq
 .LCPI6_0:
-	.long	22                              # 0x16
-func0000000000000005:                   # @func0000000000000005
-	vpcmpnleuq	%ymm1, %ymm0, %k1
-	vpbroadcastd	.LCPI6_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [22,22,22,22]
+	.long	2                               # 0x2
+func000000000000000c:                   # @func000000000000000c
+	vpcmpeqq	%ymm1, %ymm0, %k1
+	vpbroadcastd	.LCPI6_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [2,2,2,2]
 	vzeroupper
 	retq
 .LCPI7_0:
+	.long	22                              # 0x16
+func0000000000000005:                   # @func0000000000000005
+	vpcmpnleuq	%ymm1, %ymm0, %k1
+	vpbroadcastd	.LCPI7_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [22,22,22,22]
+	vzeroupper
+	retq
+.LCPI8_0:
+	.long	1                               # 0x1
+func0000000000000018:                   # @func0000000000000018
+	vpcmpnleuq	%ymm1, %ymm0, %k1
+	vpcmpeqd	%xmm0, %xmm0, %xmm0
+	vpbroadcastd	.LCPI8_0(%rip), %xmm0 {%k1} # xmm0 {%k1} = [1,1,1,1]
+	vzeroupper
+	retq
+.LCPI9_0:
 	.long	1                               # 0x1
 func0000000000000007:                   # @func0000000000000007
 	vpcmpgtq	%ymm1, %ymm0, %k1
 	vpcmpeqd	%xmm0, %xmm0, %xmm0
-	vpbroadcastd	.LCPI7_0(%rip), %xmm0 {%k1} # xmm0 {%k1} = [1,1,1,1]
+	vpbroadcastd	.LCPI9_0(%rip), %xmm0 {%k1} # xmm0 {%k1} = [1,1,1,1]
 	vzeroupper
 	retq
-.LCPI8_0:
+.LCPI10_0:
 	.long	9                               # 0x9
 func0000000000000009:                   # @func0000000000000009
 	vpcmpnltuq	%ymm1, %ymm0, %k1
-	vpbroadcastd	.LCPI8_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [9,9,9,9]
+	vpbroadcastd	.LCPI10_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [9,9,9,9]
 	vzeroupper
 	retq

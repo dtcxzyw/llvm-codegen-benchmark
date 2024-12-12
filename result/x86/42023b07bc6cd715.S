@@ -12,3 +12,10 @@ func000000000000000a:                   # @func000000000000000a
 	cmpq	$2, %rdx
 	setge	%al
 	retq
+func0000000000000004:                   # @func0000000000000004
+	testb	$1, %sil
+	cmovneq	%rdi, %rdx
+	subq	%rdi, %rdx
+	cmpq	$256, %rdx                      # imm = 0x100
+	setb	%al
+	retq

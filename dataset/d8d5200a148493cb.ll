@@ -5,7 +5,7 @@
 define ptr @func0000000000000020(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr i8, ptr %1, i64 %2
-  %4 = icmp ugt ptr %3, %0
+  %4 = icmp ult ptr %0, %3
   %5 = zext i1 %4 to i64
   %6 = getelementptr i8, ptr %0, i64 %5
   ret ptr %6
@@ -15,12 +15,12 @@ entry:
 ; git/optimized/urlmatch.ll
 ; slurm/optimized/parse.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000122(ptr %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000223(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = getelementptr nusw i8, ptr %1, i64 %2
-  %4 = icmp ugt ptr %3, %0
+  %4 = icmp ult ptr %0, %3
   %5 = zext i1 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -34,12 +34,12 @@ entry:
 ; zstd/optimized/zstd_lazy.c.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000010a(ptr %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000030b(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %1, i64 %2
-  %4 = icmp eq ptr %3, %0
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %2
+  %4 = icmp eq ptr %0, %3
   %5 = zext i1 %4 to i64
-  %6 = getelementptr nusw i8, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 

@@ -11,11 +11,10 @@ entry:
   ret i64 %5
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
-; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; libwebp/optimized/backward_references_cost_enc.c.ll
 ; llvm/optimized/GlobalISelMatchTable.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll

@@ -12,7 +12,7 @@ func000000000000000c:                   # @func000000000000000c
 	sext.w	a0, a0
 	snez	a0, a0
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	lui	a2, 15
 	and	a1, a1, a2
 	lui	a2, 14
@@ -22,21 +22,21 @@ func0000000000000011:                   # @func0000000000000011
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	lui	a2, 15
 	and	a1, a1, a2
 	or	a0, a0, a1
 	srliw	a0, a0, 11
 	seqz	a0, a0
 	ret
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	lui	a2, 448
 	and	a1, a1, a2
 	or	a0, a0, a1
 	sext.w	a0, a0
 	snez	a0, a0
 	ret
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	andi	a1, a1, 448
 	or	a0, a0, a1
 	sext.w	a0, a0
@@ -56,7 +56,39 @@ func0000000000000008:                   # @func0000000000000008
 	sltiu	a0, a0, 65
 	xori	a0, a0, 1
 	ret
-func000000000000001a:                   # @func000000000000001a
+func0000000000000028:                   # @func0000000000000028
+	lui	a2, 1048560
+	addi	a2, a2, 255
+	and	a1, a1, a2
+	lui	a2, 8192
+	or	a0, a0, a1
+	sext.w	a0, a0
+	addiw	a2, a2, -2
+	sltu	a0, a2, a0
+	ret
+func0000000000000024:                   # @func0000000000000024
+	lui	a2, 245760
+	and	a1, a1, a2
+	or	a0, a0, a1
+	srliw	a0, a0, 26
+	seqz	a0, a0
+	ret
+func0000000000000014:                   # @func0000000000000014
+	lui	a2, 8
+	addi	a2, a2, -128
+	and	a1, a1, a2
+	or	a0, a0, a1
+	sext.w	a0, a0
+	sltiu	a0, a0, 257
+	ret
+func0000000000000018:                   # @func0000000000000018
+	slli	a1, a1, 48
+	srli	a1, a1, 48
+	or	a0, a0, a1
+	srliw	a0, a0, 15
+	snez	a0, a0
+	ret
+func000000000000002a:                   # @func000000000000002a
 	andi	a1, a1, 63
 	or	a0, a0, a1
 	lui	a1, 272
@@ -64,7 +96,7 @@ func000000000000001a:                   # @func000000000000001a
 	addiw	a1, a1, -1
 	slt	a0, a1, a0
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	andi	a1, a1, 7
 	or	a0, a0, a1
 	sext.w	a0, a0

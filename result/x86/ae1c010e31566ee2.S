@@ -4,7 +4,8 @@ func0000000000000001:                   # @func0000000000000001
 	leaq	1(%rdi), %rax
 	retq
 func0000000000000003:                   # @func0000000000000003
-	shrq	$48, %rdi
-	andl	$32768, %edi                    # imm = 0x8000
-	leaq	31744(%rdi), %rax
+	shrq	$5, %rdi
+	movl	%edi, %ecx
+	movabsq	$-9223372036854775808, %rax     # imm = 0x8000000000000000
+	orq	%rcx, %rax
 	retq

@@ -11,7 +11,10 @@ entry:
   ret i8 %3
 }
 
-; 15 occurrences:
+; 22 occurrences:
+; boost/optimized/date_time_format_parser.ll
+; boost/optimized/named_scope_format_parser.ll
+; boost/optimized/object_name.ll
 ; coreutils-rs/optimized/1y6p0h2ddhvjssn8.ll
 ; coreutils-rs/optimized/2oz1n2pr10bv8jmi.ll
 ; coreutils-rs/optimized/3fp1x41wzh4l1rh9.ll
@@ -27,6 +30,10 @@ entry:
 ; spdlog/optimized/spdlog.cpp.ll
 ; stockfish/optimized/evaluate_nnue.ll
 ; wireshark/optimized/catapult_dct2000.c.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/9b9mx9mbozerqg2m8ico6qpia.ll
+; zed-rs/optimized/ce2dlm5a9fgfoc4bdh0b3ps8c.ll
 ; Function Attrs: nounwind
 define i8 @func000000000000000b(i32 %0) #0 {
 entry:

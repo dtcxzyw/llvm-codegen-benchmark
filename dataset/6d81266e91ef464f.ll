@@ -26,6 +26,19 @@ entry:
   ret i64 %5
 }
 
+; 2 occurrences:
+; wireshark/optimized/tvbuff.c.ll
+; zed-rs/optimized/6i9q21vg747q3orsxnutiwubi.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000057(i64 %0, i32 %1) #0 {
+entry:
+  %2 = icmp sgt i32 %1, -1
+  %3 = select i1 %2, i64 0, i64 -72057594037927936
+  %4 = shl nuw nsw i64 %0, 24
+  %5 = or disjoint i64 %3, %4
+  ret i64 %5
+}
+
 ; 1 occurrences:
 ; linux/optimized/badblocks.ll
 ; Function Attrs: nounwind

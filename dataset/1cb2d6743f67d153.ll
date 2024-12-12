@@ -76,6 +76,7 @@ entry:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/sha1.cpp.ll
 ; clamav/optimized/sha256.cpp.ll
 ; crow/optimized/example_ws.cpp.ll
@@ -125,7 +126,6 @@ entry:
 ; protobuf/optimized/message.cc.ll
 ; protobuf/optimized/php_generator.cc.ll
 ; protobuf/optimized/pyi_generator.cc.ll
-; qemu/optimized/util_qht.c.ll
 ; raylib/optimized/raudio.c.ll
 ; redis/optimized/fpconv_dtoa.ll
 ; rocksdb/optimized/hash.cc.ll
@@ -150,8 +150,8 @@ entry:
 ; freetype/optimized/smooth.c.ll
 ; image-rs/optimized/34r8dryqmufipcqz.ll
 ; oiio/optimized/Writer.cpp.ll
-; proxygen/optimized/HTTPSession.cpp.ll
-; yoga/optimized/YGNode.cpp.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0) #0 {
 entry:

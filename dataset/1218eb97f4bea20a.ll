@@ -6,10 +6,10 @@
 ; yosys/optimized/rtlil.ll
 ; yosys/optimized/setundef.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func00000000000000e8(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = ashr exact i64 %0, 3
   %6 = icmp ugt i64 %5, %4
   ret i1 %6
@@ -22,10 +22,10 @@ entry:
 ; opencv/optimized/cascadedetect.cpp.ll
 ; yosys/optimized/ezsat.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = ashr exact i64 %0, 3
   %6 = icmp ult i64 %5, %4
   ret i1 %6
@@ -42,10 +42,10 @@ entry:
 ; yosys/optimized/wreduce.ll
 ; zxing/optimized/ReedSolomonDecoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = ashr exact i64 %0, 4
   %6 = icmp ugt i64 %5, %4
   ret i1 %6

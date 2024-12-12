@@ -2,16 +2,18 @@
 ; 1 occurrences:
 ; minetest/optimized/dungeongen.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i16 %1) #0 {
+define i1 @func0000000000000021(i1 %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %1, 1
   %3 = select i1 %0, i1 true, i1 %2
   ret i1 %3
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; wireshark/optimized/packet-smb.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i16 %1) #0 {
 entry:
@@ -20,16 +22,19 @@ entry:
   ret i1 %3
 }
 
-; 18 occurrences:
+; 21 occurrences:
 ; arrow/optimized/string-to-double.cc.ll
+; cvc5/optimized/lfsc_node_converter.cpp.ll
 ; double_conversion/optimized/string-to-double.cc.ll
 ; icu/optimized/double-conversion-string-to-double.ll
 ; icu/optimized/rbt_pars.ll
 ; icu/optimized/uts46.ll
-; linux/optimized/intel_display_debugfs.ll
 ; linux/optimized/xhci-hub.ll
+; llvm/optimized/ASTImporter.cpp.ll
+; llvm/optimized/CGExpr.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; llvm/optimized/FunctionImport.cpp.ll
+; llvm/optimized/RewriteModernObjC.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/SemaDeclObjC.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
@@ -40,7 +45,7 @@ entry:
 ; yalantinglibs/optimized/chat_room.cpp.ll
 ; yalantinglibs/optimized/example.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i16 %1) #0 {
+define i1 @func0000000000000024(i1 %0, i16 %1) #0 {
 entry:
   %2 = add nsw i16 %1, -60
   %3 = icmp ult i16 %2, 31
@@ -48,7 +53,21 @@ entry:
   ret i1 %4
 }
 
-; 23 occurrences:
+; 4 occurrences:
+; arrow/optimized/string-to-double.cc.ll
+; double_conversion/optimized/string-to-double.cc.ll
+; icu/optimized/double-conversion-string-to-double.ll
+; openusd/optimized/string-to-double.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i1 %0, i16 %1) #0 {
+entry:
+  %2 = add nsw i16 %1, -65
+  %3 = icmp samesign ult i16 %2, 6
+  %4 = select i1 %0, i1 true, i1 %3
+  ret i1 %4
+}
+
+; 22 occurrences:
 ; flac/optimized/encode.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; linux/optimized/libata-scsi.ll
@@ -57,7 +76,6 @@ entry:
 ; llvm/optimized/LegalizeDAG.cpp.ll
 ; llvm/optimized/LegalizeVectorOps.cpp.ll
 ; llvm/optimized/RISCVCallLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll

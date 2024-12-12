@@ -1,9 +1,10 @@
 
-; 44 occurrences:
+; 45 occurrences:
 ; abc/optimized/giaDfs.c.ll
 ; abc/optimized/giaFalse.c.ll
 ; abc/optimized/giaTruth.c.ll
 ; abseil-cpp/optimized/duration_test.cc.ll
+; boost/optimized/static_string.ll
 ; cmake/optimized/cmBinUtilsLinuxELFObjdumpGetRuntimeDependenciesTool.cxx.ll
 ; cmake/optimized/cmBinUtilsMacOSMachOOToolGetRuntimeDependenciesTool.cxx.ll
 ; cmake/optimized/cmBinUtilsWindowsPEDumpbinGetRuntimeDependenciesTool.cxx.ll
@@ -52,21 +53,16 @@ entry:
   ret i64 %3
 }
 
-; 33 occurrences:
+; 38 occurrences:
 ; actix-rs/optimized/4vksfexudgt1qids.ll
 ; actix-rs/optimized/comsm606o4zjj7a.ll
+; boost/optimized/alloc_lib.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; brotli/optimized/decode.c.ll
 ; cmake/optimized/archive_blake2sp_ref.c.ll
 ; eastl/optimized/TestBitVector.cpp.ll
 ; freetype/optimized/truetype.c.ll
 ; hyperscan/optimized/fdr_compile.cpp.ll
-; jemalloc/optimized/bin.ll
-; jemalloc/optimized/bin.pic.ll
-; jemalloc/optimized/bin.sym.ll
-; jemalloc/optimized/tcache.ll
-; jemalloc/optimized/tcache.pic.ll
-; jemalloc/optimized/tcache.sym.ll
 ; libjpeg-turbo/optimized/jmemmgr.c.ll
 ; lief/optimized/nist_kw.c.ll
 ; linux/optimized/addrlabel.ll
@@ -86,6 +82,16 @@ entry:
 ; ring-rs/optimized/52ihu0vizw1hcp4s.ll
 ; rocksdb/optimized/arena.cc.ll
 ; wireshark/optimized/pcapng.c.ll
+; zed-rs/optimized/0oeh7hwbxnw4zu37xj5psd1f6.ll
+; zed-rs/optimized/11rrvqb0alhs5mh4wxxke3etr.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2nwrl7qhv6ci6obqg1itckcv6.ll
+; zed-rs/optimized/2rng14wd6tcwuthhb5s7ekmqe.ll
+; zed-rs/optimized/4t9tdr5qgocuoz7ebpyy9bvqv.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9wd9ok5kgn8j922db1jwm4yni.ll
+; zed-rs/optimized/d3d8em3dqdchyj1r4knj7yk2s.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i1 %0, i64 %1) #0 {
 entry:
@@ -94,11 +100,10 @@ entry:
   ret i64 %3
 }
 
-; 20 occurrences:
+; 19 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/vector_selection_filter_internal.cc.ll
 ; arrow/optimized/vector_selection_take_internal.cc.ll
-; bdwgc/optimized/gc.c.ll
 ; cpython/optimized/_decimal.ll
 ; linux/optimized/binfmt_elf.ll
 ; linux/optimized/setup-bus.ll
@@ -119,7 +124,7 @@ entry:
 define i64 @func0000000000000000(i1 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 0, %1
-  %3 = select i1 %0, i64 -16384, i64 %2
+  %3 = select i1 %0, i64 -128, i64 %2
   ret i64 %3
 }
 

@@ -11,7 +11,7 @@ entry:
   ret i32 %6
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; abc/optimized/bmcFx.c.ll
 ; abc/optimized/dauNpn2.c.ll
 ; abc/optimized/dauTree.c.ll
@@ -23,6 +23,7 @@ entry:
 ; linux/optimized/drm_format_helper.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
+; lvgl/optimized/lv_color.ll
 ; openjdk/optimized/ByteGray.ll
 ; openjdk/optimized/Index12Gray.ll
 ; openjdk/optimized/Index8Gray.ll

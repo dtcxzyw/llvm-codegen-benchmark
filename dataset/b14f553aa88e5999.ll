@@ -1,5 +1,6 @@
 
-; 77 occurrences:
+; 78 occurrences:
+; boost/optimized/alloc_lib.ll
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -85,9 +86,8 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; image-rs/optimized/ptscn4jakoj4p9m.ll
-; linux/optimized/intel_audio.ll
 ; redis/optimized/t_string.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
@@ -97,12 +97,13 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; hdf5/optimized/H5Spoint.c.ll
 ; linux/optimized/drm_dsc_helper.ll
 ; linux/optimized/drm_fourcc.ll
-; linux/optimized/scsicam.ll
 ; linux/optimized/tcp_cubic.ll
+; zed-rs/optimized/0431hruu0kb4k1yxxvcap38im.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {
 entry:

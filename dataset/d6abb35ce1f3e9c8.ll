@@ -1,5 +1,5 @@
 
-%"struct.(anonymous namespace)::CaseRange.3140660" = type { ptr, ptr, ptr }
+%"struct.(anonymous namespace)::CaseRange.3333327" = type { ptr, ptr, ptr }
 
 ; 4 occurrences:
 ; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
@@ -7,24 +7,24 @@
 ; opencv/optimized/sparse_matching_gpc.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 12
   %3 = lshr i64 %2, 6
   %4 = and i64 %3, 67108863
-  %5 = getelementptr nusw i64, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i64, ptr %0, i64 %4
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; llvm/optimized/LowerSwitch.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 24
   %3 = lshr i64 %2, 1
   %4 = and i64 %3, 2147483647
-  %5 = getelementptr nusw %"struct.(anonymous namespace)::CaseRange.3140660", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"struct.(anonymous namespace)::CaseRange.3333327", ptr %0, i64 %4
   ret ptr %5
 }
 

@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	3435973837                      # 0xcccccccd
-func0000000000000106:                   # @func0000000000000106
+func0000000000000206:                   # @func0000000000000206
 	vpsrlq	$4, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
 	vpmulld	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1
@@ -10,7 +10,7 @@ func0000000000000106:                   # @func0000000000000106
 	retq
 .LCPI1_0:
 	.long	2863311531                      # 0xaaaaaaab
-func000000000000010a:                   # @func000000000000010a
+func000000000000020a:                   # @func000000000000020a
 	vpsrlq	$2, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
 	vpmulld	.LCPI1_0(%rip){1to4}, %xmm1, %xmm1
@@ -20,7 +20,7 @@ func000000000000010a:                   # @func000000000000010a
 	retq
 .LCPI2_0:
 	.long	2863311531                      # 0xaaaaaaab
-func0000000000000101:                   # @func0000000000000101
+func0000000000000201:                   # @func0000000000000201
 	vpsrlq	$2, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
 	vpmulld	.LCPI2_0(%rip){1to4}, %xmm1, %xmm1
@@ -30,7 +30,7 @@ func0000000000000101:                   # @func0000000000000101
 	retq
 .LCPI3_0:
 	.long	2863311531                      # 0xaaaaaaab
-func0000000000000104:                   # @func0000000000000104
+func0000000000000204:                   # @func0000000000000204
 	vpsrlq	$2, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
 	vpmulld	.LCPI3_0(%rip){1to4}, %xmm1, %xmm1
@@ -41,7 +41,7 @@ func0000000000000104:                   # @func0000000000000104
 	retq
 .LCPI4_0:
 	.long	3435973837                      # 0xcccccccd
-func000000000000010c:                   # @func000000000000010c
+func000000000000020c:                   # @func000000000000020c
 	vpsrlq	$4, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
 	vpmulld	.LCPI4_0(%rip){1to4}, %xmm1, %xmm1
@@ -52,7 +52,7 @@ func000000000000010c:                   # @func000000000000010c
 	retq
 .LCPI5_0:
 	.long	2863311531                      # 0xaaaaaaab
-func0000000000000107:                   # @func0000000000000107
+func0000000000000207:                   # @func0000000000000207
 	vpsrlq	$3, %ymm1, %ymm1
 	vpmovqd	%ymm1, %xmm1
 	vpmulld	.LCPI5_0(%rip){1to4}, %xmm1, %xmm1

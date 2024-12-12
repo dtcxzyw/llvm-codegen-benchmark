@@ -1,5 +1,10 @@
 
-; 13 occurrences:
+; 18 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; cmake/optimized/archive_getdate.c.ll
 ; cmake/optimized/cm_get_date.c.ll
 ; cpython/optimized/_zoneinfo.ll
@@ -22,11 +27,13 @@ entry:
   ret i64 %4
 }
 
-; 207 occurrences:
+; 212 occurrences:
 ; abseil-cpp/optimized/city.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; cpython/optimized/sliceobject.ll
 ; cvc5/optimized/theory_arrays.cpp.ll
 ; double_conversion/optimized/fast-dtoa.cc.ll
@@ -198,7 +205,6 @@ entry:
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/shape.cpp.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; mitsuba3/optimized/struct.cpp.ll
@@ -230,6 +236,10 @@ entry:
 ; tev/optimized/Image.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; tokenizers-rs/optimized/1w676x6x6lprwvn5.ll
+; zed-rs/optimized/1tk9izhbj0bgj3o3jawt76r73.ll
+; zed-rs/optimized/3tstdd5c0k7rtzic790pzdqr0.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/7u7kqrwsc13jj4kea6fu8y45f.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
@@ -251,6 +261,7 @@ entry:
 }
 
 ; 19 occurrences:
+; boost/optimized/text_file_backend.ll
 ; clamav/optimized/matcher-bm.c.ll
 ; cmake/optimized/archive_getdate.c.ll
 ; cmake/optimized/cm_get_date.c.ll
@@ -269,7 +280,6 @@ entry:
 ; raylib/optimized/rtextures.c.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; tev/optimized/QoiImageLoader.cpp.ll
-; wireshark/optimized/packet-mpeg-sect.c.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003f(i64 %0, i64 %1) #0 {
 entry:
@@ -379,9 +389,25 @@ entry:
   ret i64 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000017(i64 %0, i64 %1) #0 {
+entry:
+  %2 = mul nsw i64 %1, 3600
+  %3 = mul nsw i64 %0, 60
+  %4 = add nuw nsw i64 %3, %2
+  ret i64 %4
+}
+
+; 7 occurrences:
 ; arrow/optimized/scalar_cast_temporal.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/text_file_backend.ll
 ; libjpeg-turbo/optimized/jfdctint.c.ll
 ; libjpeg-turbo/optimized/jidctint.c.ll
 ; openusd/optimized/dataSourceLegacyPrim.cpp.ll
@@ -389,8 +415,8 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000001d(i64 %0, i64 %1) #0 {
 entry:
-  %2 = mul nsw i64 %1, -40
-  %3 = mul nuw nsw i64 %0, 40
+  %2 = mul nsw i64 %1, 1000000
+  %3 = mul nuw nsw i64 %0, 86400000000
   %4 = add nsw i64 %3, %2
   ret i64 %4
 }

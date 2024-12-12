@@ -21,15 +21,6 @@ func0000000000000000:                   # @func0000000000000000
 	sh2add	a0, a1, a0
 	addi	a0, a0, 552
 	ret
-func000000000000000a:                   # @func000000000000000a
-	srliw	a2, a1, 31
-	add	a2, a2, a1
-	andi	a2, a2, -2
-	subw	a1, a1, a2
-	sh1add	a1, a1, a1
-	sh3add	a0, a1, a0
-	addi	a0, a0, 8
-	ret
 func0000000000000008:                   # @func0000000000000008
 	sraiw	a2, a1, 31
 	srliw	a2, a2, 30

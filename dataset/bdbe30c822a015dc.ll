@@ -6,7 +6,7 @@
 ; yosys/optimized/memory_libmap.ll
 ; yosys/optimized/opt_muxtree.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000302(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = icmp ne i64 %3, 0
@@ -21,7 +21,7 @@ entry:
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; wolfssl/optimized/sp_int.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000042(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = icmp eq i64 %3, 0
@@ -34,7 +34,7 @@ entry:
 ; git/optimized/unpack-trees.ll
 ; llvm/optimized/PrologEpilogInserter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000058(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = icmp ne i64 %3, 0
@@ -48,7 +48,7 @@ entry:
 ; linux/optimized/sg.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000318(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = icmp ne i64 %3, 0
@@ -60,7 +60,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaDeclAttr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000190(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000310(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = icmp ne i64 %3, 0
@@ -72,7 +72,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/BasicValueFactory.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000118(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000218(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
   %4 = icmp ne i64 %3, 0

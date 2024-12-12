@@ -50,7 +50,7 @@
 	.byte	8                               # 0x8
 	.byte	4                               # 0x4
 	.byte	2                               # 0x2
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpmovdb	%ymm0, %xmm0
 	vpmovzxbw	%xmm0, %xmm0            # xmm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero,xmm0[4],zero,xmm0[5],zero,xmm0[6],zero,xmm0[7],zero
 	vpmullw	.LCPI0_0(%rip), %xmm0, %xmm0    # [205,205,205,205,205,205,205,205]
@@ -129,7 +129,7 @@ func0000000000000031:                   # @func0000000000000031
 	.byte	8                               # 0x8
 	.byte	4                               # 0x4
 	.byte	2                               # 0x2
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpmovdb	%ymm0, %xmm0
 	vpsubb	.LCPI1_0(%rip), %xmm0, %xmm0
 	vpmovzxbw	%xmm0, %xmm0            # xmm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero,xmm0[4],zero,xmm0[5],zero,xmm0[6],zero,xmm0[7],zero

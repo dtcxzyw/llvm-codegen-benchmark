@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; minetest/optimized/mg_biome.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000281(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 1
   %3 = add nsw i64 %2, -1
@@ -16,7 +16,7 @@ entry:
 ; gromacs/optimized/toppush.cpp.ll
 ; opencv/optimized/graph_cluster.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000171(i64 %0, i64 %1) #0 {
+define i1 @func00000000000002e1(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr exact i64 %1, 2
   %3 = add nuw nsw i64 %2, 2147483647

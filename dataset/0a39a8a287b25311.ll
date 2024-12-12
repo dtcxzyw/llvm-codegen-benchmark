@@ -45,7 +45,8 @@ entry:
   ret i32 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/to_chars.ll
 ; llvm/optimized/ASTReaderDecl.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000030(i32 %0, i64 %1) #0 {

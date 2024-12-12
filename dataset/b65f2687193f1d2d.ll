@@ -15,7 +15,7 @@ entry:
   ret i32 %6
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; hyperscan/optimized/rose_build_add_mask.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
@@ -23,6 +23,7 @@ entry:
 ; meshlab/optimized/mesh.cpp.ll
 ; opencv/optimized/filter.dispatch.cpp.ll
 ; velox/optimized/LeadLag.cpp.ll
+; yosys/optimized/shregmap.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000040(i32 %0, i32 %1, i64 %2) #0 {
 entry:

@@ -1,11 +1,11 @@
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	movslq	%esi, %rax
 	sarq	$32, %rdi
 	imulq	%rax, %rdi
 	shrq	$60, %rdi
 	setne	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	sarq	$32, %rdi
 	testl	%esi, %esi
 	sete	%cl
@@ -13,14 +13,14 @@ func0000000000000051:                   # @func0000000000000051
 	sete	%al
 	orb	%cl, %al
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	movslq	%esi, %rax
 	sarq	$3, %rdi
 	imulq	%rax, %rdi
 	shrq	$61, %rdi
 	setne	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	movslq	%esi, %rax
 	sarq	$3, %rdi
 	imulq	%rax, %rdi

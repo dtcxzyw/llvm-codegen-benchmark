@@ -24,15 +24,14 @@ entry:
   ret i32 %3
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; assimp/optimized/zip.c.ll
 ; graphviz/optimized/sfprint.c.ll
 ; hermes/optimized/zip.c.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
-; wireshark/optimized/str_util.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i1 %0, i32 %1) #0 {
+define i32 @func0000000000000014(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 4
   %3 = select i1 %0, i1 true, i1 %2
@@ -53,6 +52,17 @@ entry:
   %.not1 = select i1 %0, i1 true, i1 %2
   %3 = select i1 %.not1, i32 4, i32 -3
   ret i32 %3
+}
+
+; 1 occurrences:
+; wireshark/optimized/str_util.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i1 %0, i32 %1) #0 {
+entry:
+  %2 = icmp ult i32 %1, 67108864
+  %3 = select i1 %0, i1 true, i1 %2
+  %4 = select i1 %3, i32 5, i32 6
+  ret i32 %4
 }
 
 attributes #0 = { nounwind }

@@ -63,7 +63,6 @@
 ; llvm/optimized/GlobalModuleIndex.cpp.ll
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; llvm/optimized/PGOCtxProfWriter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVVIntrinsicUtils.cpp.ll
 ; llvm/optimized/SerializedDiagnosticPrinter.cpp.ll
@@ -94,6 +93,7 @@
 ; openvdb/optimized/VolumeAdvect.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; openvdb/optimized/points.cc.ll
+; postgres/optimized/hashpage.ll
 ; postgres/optimized/nodeAgg.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; raylib/optimized/rcore.c.ll
@@ -125,7 +125,7 @@ entry:
   ret i32 %1
 }
 
-; 62 occurrences:
+; 60 occurrences:
 ; abc/optimized/dauDivs.c.ll
 ; abc/optimized/deflate.c.ll
 ; abc/optimized/extraBddKmap.c.ll
@@ -183,10 +183,8 @@ entry:
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; yosys/optimized/celledges.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; zlib/optimized/deflate.c.ll
-; zstd/optimized/zstd_v01.c.ll
-; zstd/optimized/zstd_v02.c.ll
-; zstd/optimized/zstd_v03.c.ll
 ; zxing/optimized/AZDecoder.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0) #0 {
@@ -196,7 +194,7 @@ entry:
   ret i32 %2
 }
 
-; 26 occurrences:
+; 28 occurrences:
 ; abc/optimized/dauNpn.c.ll
 ; abc/optimized/kitBdd.c.ll
 ; abc/optimized/mapperUtils.c.ll
@@ -223,6 +221,8 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; wasmedge/optimized/filemgr.cpp.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0) #0 {
 entry:
@@ -231,13 +231,11 @@ entry:
   ret i32 %2
 }
 
-; 22 occurrences:
+; 20 occurrences:
 ; brotli/optimized/metablock.c.ll
 ; cmake/optimized/zstd_lazy.c.ll
 ; cpython/optimized/longobject.ll
-; gromacs/optimized/dlasd0.cpp.ll
 ; gromacs/optimized/dlasda.cpp.ll
-; gromacs/optimized/slasd0.cpp.ll
 ; gromacs/optimized/slasda.cpp.ll
 ; libwebp/optimized/webpinfo.c.ll
 ; linux/optimized/hugetlb.ll

@@ -67,15 +67,3 @@ func0000000000000007:                   # @func0000000000000007
 	vpandd	.LCPI5_1(%rip){1to8}, %ymm0, %ymm0
 	vpternlogd	$254, .LCPI5_2(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | mem
 	retq
-.LCPI6_0:
-	.long	960                             # 0x3c0
-.LCPI6_1:
-	.long	63                              # 0x3f
-.LCPI6_2:
-	.long	56320                           # 0xdc00
-func0000000000000006:                   # @func0000000000000006
-	vpslld	$6, %ymm1, %ymm1
-	vpandd	.LCPI6_0(%rip){1to8}, %ymm1, %ymm1
-	vpandd	.LCPI6_1(%rip){1to8}, %ymm0, %ymm0
-	vpternlogd	$254, .LCPI6_2(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | mem
-	retq

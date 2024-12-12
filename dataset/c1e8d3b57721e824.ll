@@ -1,5 +1,5 @@
 
-; 31 occurrences:
+; 30 occurrences:
 ; assimp/optimized/IFCCurve.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; graphviz/optimized/actions.c.ll
@@ -9,7 +9,6 @@
 ; jq/optimized/jv_dtoa.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; mitsuba3/optimized/rgb2spec_opt.cpp.ll
 ; mitsuba3/optimized/spectrum.cpp.ll
 ; msdfgen/optimized/MSDFErrorCorrection.cpp.ll

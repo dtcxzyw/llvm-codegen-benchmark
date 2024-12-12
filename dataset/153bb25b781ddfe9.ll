@@ -32,7 +32,7 @@ entry:
   %3 = and i64 %2, 8589930496
   %4 = add nuw nsw i64 %3, %1
   %5 = and i64 %4, 17179865088
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -47,9 +47,31 @@ entry:
 define i64 @func000000000000000b(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1537228672809129301
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = and i64 %4, 3689348814741910323
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
+  ret i64 %6
+}
+
+; 11 occurrences:
+; abseil-cpp/optimized/raw_hash_set_allocator_test.cc.ll
+; hyperscan/optimized/mcsheng_compile.cpp.ll
+; linux/optimized/binfmt_elf.ll
+; linux/optimized/kcore.ll
+; llvm/optimized/XCOFFObjectWriter.cpp.ll
+; lvgl/optimized/lv_tlsf.ll
+; openusd/optimized/stbImage.cpp.ll
+; raylib/optimized/rtextures.c.ll
+; stb/optimized/stb_image_resize2.c.ll
+; z3/optimized/pb2bv_rewriter.cpp.ll
+; z3/optimized/theory_pb.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -4
+  %4 = add i64 %1, %3
+  %5 = and i64 %4, -4
+  %6 = add i64 %5, %0
   ret i64 %6
 }
 
@@ -59,9 +81,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %2, %1
+  %3 = add i64 %1, %2
   %4 = and i64 %3, 2251799813685247
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -70,31 +92,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %2, %1
+  %3 = add i64 %1, %2
   %4 = and i64 %3, 2251799813685247
   %5 = add i64 %4, %0
   ret i64 %5
-}
-
-; 10 occurrences:
-; abseil-cpp/optimized/raw_hash_set_allocator_test.cc.ll
-; hyperscan/optimized/mcsheng_compile.cpp.ll
-; linux/optimized/binfmt_elf.ll
-; linux/optimized/kcore.ll
-; llvm/optimized/XCOFFObjectWriter.cpp.ll
-; openusd/optimized/stbImage.cpp.ll
-; raylib/optimized/rtextures.c.ll
-; stb/optimized/stb_image_resize2.c.ll
-; z3/optimized/pb2bv_rewriter.cpp.ll
-; z3/optimized/theory_pb.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = and i64 %2, -16
-  %4 = add i64 %3, %1
-  %5 = and i64 %4, -16
-  %6 = add i64 %5, %0
-  ret i64 %6
 }
 
 ; 1 occurrences:
@@ -102,9 +103,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %2, %1
+  %3 = add i64 %1, %2
   %4 = and i64 %3, 511
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 

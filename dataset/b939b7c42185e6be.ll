@@ -1,6 +1,7 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; git/optimized/http.ll
+; llvm/optimized/SanitizerSpecialCaseList.cpp.ll
 ; opencv/optimized/rlof_localflow.cpp.ll
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind

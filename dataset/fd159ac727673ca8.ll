@@ -49,9 +49,8 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; openjdk/optimized/mlib_ImageScanPoly.ll
-; postgres/optimized/float.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
 entry:

@@ -1,7 +1,7 @@
 func0000000000000024:                   # @func0000000000000024
 	vxorps	%xmm3, %xmm3, %xmm3
 	vmaxps	%zmm2, %zmm3, %zmm2
-	vmulps	%zmm1, %zmm2, %zmm1
+	vmulps	%zmm2, %zmm1, %zmm1
 	vcmpltps	%zmm1, %zmm0, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

@@ -30,6 +30,14 @@ func000000000000002f:                   # @func000000000000002f
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret
+func000000000000003d:                   # @func000000000000003d
+	slli	a2, a2, 48
+	slliw	a1, a1, 16
+	slliw	a0, a0, 24
+	srli	a2, a2, 48
+	or	a0, a0, a1
+	or	a0, a0, a2
+	ret
 func000000000000007e:                   # @func000000000000007e
 	slli	a2, a2, 48
 	slliw	a1, a1, 16

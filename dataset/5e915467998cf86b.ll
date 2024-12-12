@@ -18,10 +18,21 @@
 ; spike/optimized/s_subMagsF16.ll
 ; spike/optimized/s_subMagsF32.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000024(i32 %0) #0 {
+define i32 @func0000000000000044(i32 %0) #0 {
 entry:
   %1 = shl nuw i32 %0, 16
   %2 = icmp ult i32 %0, 65536
+  %3 = select i1 %2, i32 %1, i32 %0
+  ret i32 %3
+}
+
+; 1 occurrences:
+; opencv/optimized/softfloat.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000054(i32 %0) #0 {
+entry:
+  %1 = shl nuw i32 %0, 16
+  %2 = icmp samesign ult i32 %0, 65536
   %3 = select i1 %2, i32 %1, i32 %0
   ret i32 %3
 }

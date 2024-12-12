@@ -24,7 +24,7 @@ entry:
   ret i1 %3
 }
 
-; 50 occurrences:
+; 52 occurrences:
 ; abc/optimized/extraUtilEnum.c.ll
 ; abc/optimized/giaBalAig.c.ll
 ; abseil-cpp/optimized/cord_test.cc.ll
@@ -46,7 +46,6 @@ entry:
 ; llvm/optimized/InlineCost.cpp.ll
 ; llvm/optimized/InstCombineCalls.cpp.ll
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; mimalloc/optimized/init.c.ll
@@ -75,6 +74,9 @@ entry:
 ; ruby/optimized/class.ll
 ; ruby/optimized/marshal.ll
 ; wireshark/optimized/packet-ftp.c.ll
+; zed-rs/optimized/21d8bsf2bcvltxgcdrjl7oqzs.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
@@ -83,13 +85,12 @@ entry:
   ret i1 %3
 }
 
-; 22 occurrences:
+; 23 occurrences:
 ; hermes/optimized/RegAlloc.cpp.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/Attributes.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/EvalEmitter.cpp.ll
-; llvm/optimized/MachinePipeliner.cpp.ll
 ; llvm/optimized/MsgPackDocument.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
 ; opencv/optimized/erfilter.cpp.ll
@@ -106,6 +107,8 @@ entry:
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; yosys/optimized/stat.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
+; zed-rs/optimized/5kbsfw3jcmbcslmu1o5kx13w3.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
@@ -114,7 +117,7 @@ entry:
   ret i1 %3
 }
 
-; 79 occurrences:
+; 84 occurrences:
 ; abseil-cpp/optimized/bernoulli_distribution_test.cc.ll
 ; abseil-cpp/optimized/discrete_distribution_test.cc.ll
 ; actix-rs/optimized/4mbibhikoaniv1dm.ll
@@ -129,10 +132,8 @@ entry:
 ; flac/optimized/stream_decoder.c.ll
 ; folly/optimized/CacheLocality.cpp.ll
 ; gromacs/optimized/interaction_const.cpp.ll
-; harfbuzz/optimized/hb-subset.cc.ll
 ; hermes/optimized/ProfileAnalyzer.cpp.ll
 ; hyperscan/optimized/ng_find_matches.cpp.ll
-; hyperscan/optimized/ng_limex_accel.cpp.ll
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
 ; hyperscan/optimized/ue2string.cpp.ll
 ; image-rs/optimized/2mngkegtim1o10y3.ll
@@ -146,7 +147,6 @@ entry:
 ; llvm/optimized/AsmPrinter.cpp.ll
 ; llvm/optimized/CGVTables.cpp.ll
 ; llvm/optimized/CallGraph.cpp.ll
-; llvm/optimized/CodeGenInstruction.cpp.ll
 ; llvm/optimized/CodeGenIntrinsics.cpp.ll
 ; llvm/optimized/CodeLayout.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
@@ -158,14 +158,11 @@ entry:
 ; llvm/optimized/LegalizeDAG.cpp.ll
 ; llvm/optimized/MsgPackDocument.cpp.ll
 ; llvm/optimized/MveEmitter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/StackSafetyAnalysis.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/WorkList.cpp.ll
 ; llvm/optimized/X86ISelLoweringCall.cpp.ll
 ; ockam-rs/optimized/29qo5g7aujs2ujt.ll
-; opencv/optimized/stereo_binary_bm.cpp.ll
-; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; openusd/optimized/json.cpp.ll
 ; openusd/optimized/mapFunction.cpp.ll
 ; openusd/optimized/token.cpp.ll
@@ -194,6 +191,17 @@ entry:
 ; verilator/optimized/V3OrderParallel.cpp.ll
 ; wasmtime-rs/optimized/2wry4odhn7m84bj2.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/5xyjbgzjrjfd06sknyxfrytq2.ll
+; zed-rs/optimized/7fmm0tfd68kkbfwadepm13y36.ll
+; zed-rs/optimized/89f8nno15240ug8tk8i1phh9j.ll
+; zed-rs/optimized/8ncehfng1y5s06ypbycx8606d.ll
+; zed-rs/optimized/8pzylepo63jgxs9pcfvvb1oj4.ll
+; zed-rs/optimized/8tscdb01zcabwdnjfgov818gm.ll
+; zed-rs/optimized/96hln4y97mhftmlht5x1xhnh1.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/b9ty0axfl2ld0co5krahg7gfq.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
@@ -202,8 +210,7 @@ entry:
   ret i1 %3
 }
 
-; 6 occurrences:
-; cvc5/optimized/theory_arrays_rewriter.cpp.ll
+; 5 occurrences:
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; openssl/optimized/libssl-lib-quic_fc.ll
 ; openssl/optimized/libssl-shlib-quic_fc.ll
@@ -217,29 +224,11 @@ entry:
   ret i1 %3
 }
 
-; 8 occurrences:
-; cpython/optimized/mpdecimal.ll
-; darktable/optimized/introspection_highlights.c.ll
-; linux/optimized/addrconf.ll
-; linux/optimized/devinet.ll
-; llvm/optimized/MsgPackDocument.cpp.ll
-; llvm/optimized/StackColoring.cpp.ll
-; opencv/optimized/connectedcomponents.cpp.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000a(i64 %0, i64 %1) #0 {
-entry:
-  %2 = icmp sgt i64 %0, %1
-  %3 = freeze i1 %2
-  ret i1 %3
-}
-
-; 10 occurrences:
+; 9 occurrences:
 ; duckdb/optimized/ub_duckdb_func_date.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; openjdk/optimized/shenandoahFullGC.ll
 ; qemu/optimized/hw_display_vga.c.ll
 ; qemu/optimized/hw_net_e1000e_core.c.ll
@@ -306,6 +295,56 @@ entry:
 define i1 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp slt i64 %0, %1
+  %3 = freeze i1 %2
+  ret i1 %3
+}
+
+; 7 occurrences:
+; cpython/optimized/mpdecimal.ll
+; darktable/optimized/introspection_highlights.c.ll
+; linux/optimized/addrconf.ll
+; linux/optimized/devinet.ll
+; llvm/optimized/MsgPackDocument.cpp.ll
+; llvm/optimized/StackColoring.cpp.ll
+; opencv/optimized/connectedcomponents.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000a(i64 %0, i64 %1) #0 {
+entry:
+  %2 = icmp sgt i64 %0, %1
+  %3 = freeze i1 %2
+  ret i1 %3
+}
+
+; 1 occurrences:
+; llvm/optimized/MachinePipeliner.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i64 %0, %1
+  %3 = freeze i1 %2
+  ret i1 %3
+}
+
+; 5 occurrences:
+; harfbuzz/optimized/hb-subset.cc.ll
+; hyperscan/optimized/ng_limex_accel.cpp.ll
+; llvm/optimized/CodeGenInstruction.cpp.ll
+; opencv/optimized/stereo_binary_bm.cpp.ll
+; opencv/optimized/stereo_binary_sgbm.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign ult i64 %0, %1
+  %3 = freeze i1 %2
+  ret i1 %3
+}
+
+; 1 occurrences:
+; cvc5/optimized/theory_arrays_rewriter.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000019(i64 %0, i64 %1) #0 {
+entry:
+  %2 = icmp samesign uge i64 %0, %1
   %3 = freeze i1 %2
   ret i1 %3
 }

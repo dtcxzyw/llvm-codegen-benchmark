@@ -77,9 +77,10 @@ entry:
   ret i32 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; libquic/optimized/e_rc2.c.ll
 ; linux/optimized/tcp_minisocks.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
 ; z3/optimized/goal.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0, i32 %1, i32 %2) #0 {
@@ -87,6 +88,18 @@ entry:
   %3 = or disjoint i32 %1, %2
   %4 = and i32 %3, 65535
   %5 = shl nuw i32 %0, 16
+  %6 = or disjoint i32 %5, %4
+  ret i32 %6
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = or i32 %1, %2
+  %4 = and i32 %3, 16777215
+  %5 = shl nuw i32 %0, 24
   %6 = or disjoint i32 %5, %4
   ret i32 %6
 }

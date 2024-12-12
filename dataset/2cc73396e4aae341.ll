@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/class.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000001982(i64 %0, i64 %1) #0 {
+define i1 @func0000000000006302(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = icmp ne i64 %0, 27
@@ -16,7 +16,7 @@ entry:
 ; spike/optimized/mmu.ll
 ; spike/optimized/processor.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000382(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000b02(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %0, 1
   %3 = icmp ne i64 %1, 0
@@ -29,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/fast_gemm.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000154c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000528c(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp sgt i64 %1, 11
   %3 = icmp sgt i64 %0, 7
@@ -45,12 +45,12 @@ entry:
 ; cpython/optimized/bytesobject.ll
 ; cpython/optimized/unicodeobject.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000888(i64 %0, i64 %1) #0 {
+define i1 @func000000000000a528(i64 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ult i64 %0, 100
-  %3 = icmp ult i64 %1, 30000
+  %2 = icmp samesign ult i64 %0, 100
+  %3 = icmp samesign ult i64 %1, 30000
   %4 = and i1 %3, %2
-  %5 = icmp ult i64 %0, 6
+  %5 = icmp samesign ult i64 %0, 6
   %6 = or i1 %5, %4
   ret i1 %6
 }

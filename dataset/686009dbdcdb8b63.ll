@@ -5,15 +5,16 @@
 ; qemu/optimized/hw_pci_pcie.c.ll
 ; wireshark/optimized/packet-rtp-midi.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000018(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 1008
   %3 = zext nneg i16 %2 to i32
-  %4 = icmp ult i32 %3, %0
+  %4 = icmp samesign ugt i32 %0, %3
   ret i1 %4
 }
 
-; 18 occurrences:
+; 19 occurrences:
+; boost/optimized/operations.ll
 ; clamav/optimized/matcher-ac.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; icu/optimized/normalizer2impl.ll
@@ -37,29 +38,41 @@ define i1 @func0000000000000001(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, -256
   %3 = zext i16 %2 to i32
-  %4 = icmp eq i32 %3, %0
+  %4 = icmp eq i32 %0, %3
+  ret i1 %4
+}
+
+; 2 occurrences:
+; boost/optimized/to_chars.ll
+; icu/optimized/normalizer2impl.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000006(i32 %0, i16 %1) #0 {
+entry:
+  %2 = and i16 %1, -64
+  %3 = zext i16 %2 to i32
+  %4 = icmp slt i32 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; linux/optimized/libata-core.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000005(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000015(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 255
   %3 = zext nneg i16 %2 to i32
-  %4 = icmp uge i32 %3, %0
+  %4 = icmp samesign ule i32 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; icu/optimized/normalizer2impl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000014(i32 %0, i16 %1) #0 {
 entry:
   %2 = and i16 %1, 31
   %3 = zext nneg i16 %2 to i32
-  %4 = icmp ugt i32 %3, %0
+  %4 = icmp samesign ult i32 %0, %3
   ret i1 %4
 }
 

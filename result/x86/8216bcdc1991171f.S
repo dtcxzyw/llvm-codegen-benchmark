@@ -1,9 +1,3 @@
-func0000000000000019:                   # @func0000000000000019
-	shrq	$25, %rdx
-	leaq	(%rdx,%rsi), %rax
-	shrq	%rax
-	addl	%edi, %eax
-	retq
 func0000000000000000:                   # @func0000000000000000
 	shrq	$32, %rdx
 	leaq	(%rdx,%rsi), %rax
@@ -29,6 +23,12 @@ func0000000000000012:                   # @func0000000000000012
 	shrq	$32, %rdx
 	leaq	(%rdx,%rsi), %rax
 	shrq	$32, %rax
+	addl	%edi, %eax
+	retq
+func0000000000000019:                   # @func0000000000000019
+	shrq	$25, %rdx
+	leaq	(%rdx,%rsi), %rax
+	shrq	%rax
 	addl	%edi, %eax
 	retq
 func0000000000000010:                   # @func0000000000000010

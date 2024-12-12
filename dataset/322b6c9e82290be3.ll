@@ -1,6 +1,7 @@
 
 ; 89 occurrences:
 ; abseil-cpp/optimized/convert_test.cc.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
 ; ceres/optimized/manifold.cc.ll
@@ -18,8 +19,7 @@
 ; gromacs/optimized/dlist.cpp.ll
 ; gromacs/optimized/pbc.cpp.ll
 ; linux/optimized/buffer.ll
-; linux/optimized/gso.ll
-; linux/optimized/intel_display_debugfs.ll
+; linux/optimized/intel_dpll.ll
 ; linux/optimized/r8169_main.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/CommandLine.cpp.ll
@@ -42,6 +42,7 @@
 ; llvm/optimized/UnwrappedLineParser.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_span.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; minetest/optimized/imagefilters.cpp.ll
 ; mold/optimized/input-sections.cc.ALPHA.cc.ll
@@ -78,7 +79,6 @@
 ; ruby/optimized/io.ll
 ; ruby/optimized/vm.ll
 ; stb/optimized/stb_herringbone_wang_tile.c.ll
-; typst-rs/optimized/1aflftgqyuracvze.ll
 ; verilator/optimized/V3Const__gen.cpp.ll
 ; verilator/optimized/V3LinkLevel.cpp.ll
 ; wireshark/optimized/packet-ieee80211.c.ll

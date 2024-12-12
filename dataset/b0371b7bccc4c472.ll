@@ -1,32 +1,36 @@
 
-; 21 occurrences:
+%struct._zend_op.2791392 = type { ptr, %union._znode_op.2791401, %union._znode_op.2791401, %union._znode_op.2791401, i32, i32, i8, i8, i8, i8 }
+%union._znode_op.2791401 = type { i32 }
+
+; 22 occurrences:
 ; abc/optimized/giaMf.c.ll
 ; csmith/optimized/FactPointTo.cpp.ll
 ; draco/optimized/mesh.cc.ll
 ; draco/optimized/point_cloud.cc.ll
 ; gromacs/optimized/make_ndx.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-static.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; nori/optimized/widget.cpp.ll
 ; openjdk/optimized/hb-aat-layout.ll
+; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-color.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-math.ll
 ; openjdk/optimized/hb-ot-shape-fallback.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
-; openusd/optimized/lz4.cpp.ll
 ; php/optimized/cdf.ll
 ; ruby/optimized/date_strftime.ll
 ; yosys/optimized/bugpoint.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000068(i64 %0, ptr %1, i32 %2) #0 {
+define i64 @func000000000000007c(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 1
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 1
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %0, %6
   ret i64 %7
@@ -47,7 +51,7 @@ entry:
   ret i64 %7
 }
 
-; 60 occurrences:
+; 55 occurrences:
 ; abc/optimized/deflate.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; brotli/optimized/static_dict.c.ll
@@ -73,12 +77,10 @@ entry:
 ; llvm/optimized/InitHeaderSearch.cpp.ll
 ; llvm/optimized/InstructionCombining.cpp.ll
 ; llvm/optimized/Instructions.cpp.ll
-; llvm/optimized/Lexer.cpp.ll
 ; llvm/optimized/LiveDebugVariables.cpp.ll
 ; llvm/optimized/LiveVariables.cpp.ll
 ; llvm/optimized/MachineRegisterInfo.cpp.ll
 ; llvm/optimized/MachineScheduler.cpp.ll
-; llvm/optimized/OpenMPClause.cpp.ll
 ; llvm/optimized/RISCVTargetMachine.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
@@ -102,18 +104,43 @@ entry:
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openjdk/optimized/hb-ot-var.ll
 ; openjdk/optimized/hb-set.ll
-; php/optimized/block_pass.ll
-; php/optimized/dfa_pass.ll
-; php/optimized/is_simh.ll
 ; php/optimized/phar.ll
 ; zlib/optimized/deflate.c.ll
 ; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(i64 %0, ptr %1, i32 %2) #0 {
+define i64 @func000000000000003c(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 4
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 4
+  %6 = ptrtoint ptr %5 to i64
+  %7 = sub i64 %0, %6
+  ret i64 %7
+}
+
+; 3 occurrences:
+; llvm/optimized/Lexer.cpp.ll
+; php/optimized/block_pass.ll
+; php/optimized/dfa_pass.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000038(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = getelementptr nusw nuw %struct._zend_op.2791392, ptr %1, i64 %3
+  %5 = getelementptr nusw i8, ptr %4, i64 -32
+  %6 = ptrtoint ptr %5 to i64
+  %7 = sub i64 %0, %6
+  ret i64 %7
+}
+
+; 1 occurrences:
+; openusd/optimized/lz4.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000078(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw i8, ptr %4, i64 -65536
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %0, %6
   ret i64 %7
@@ -140,11 +167,11 @@ entry:
 ; cmake/optimized/zstd_double_fast.c.ll
 ; zstd/optimized/zstd_double_fast.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(i64 %0, ptr %1, i32 %2) #0 {
+define i64 @func000000000000000c(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 4
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 4
   %6 = ptrtoint ptr %5 to i64
   %7 = sub i64 %0, %6
   ret i64 %7

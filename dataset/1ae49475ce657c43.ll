@@ -1,13 +1,15 @@
 
-; 483 occurrences:
+; 485 occurrences:
 ; abc/optimized/giaMan.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; assimp/optimized/MMDPmxParser.cpp.ll
+; boost/optimized/rational.ll
 ; clamav/optimized/clamdscan.c.ll
 ; clamav/optimized/infblock.c.ll
 ; clamav/optimized/is_tar.c.ll
 ; clamav/optimized/list.cpp.ll
 ; clamav/optimized/message.c.ll
+; clamav/optimized/pe_icons.c.ll
 ; cpython/optimized/pyexpat.ll
 ; cvc5/optimized/abduction_solver.cpp.ll
 ; cvc5/optimized/ackermann.cpp.ll
@@ -164,7 +166,6 @@
 ; cvc5/optimized/node_converter.cpp.ll
 ; cvc5/optimized/node_manager.cpp.ll
 ; cvc5/optimized/node_traversal.cpp.ll
-; cvc5/optimized/node_utils.cpp.ll
 ; cvc5/optimized/node_value.cpp.ll
 ; cvc5/optimized/non_clausal_simp.cpp.ll
 ; cvc5/optimized/normal_form.cpp.ll
@@ -372,7 +373,6 @@
 ; grpc/optimized/retry_filter_legacy_call_data.cc.ll
 ; grpc/optimized/subchannel.cc.ll
 ; grpc/optimized/subchannel_stream_client.cc.ll
-; hdf5/optimized/H5dbg.c.ll
 ; hyperscan/optimized/engine_hyperscan.cpp.ll
 ; hyperscan/optimized/mcclellancompile.cpp.ll
 ; icu/optimized/dtptngen.ll
@@ -385,7 +385,6 @@
 ; linux/optimized/e1000_hw.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/hda_intel.ll
-; linux/optimized/i915_gem_busy.ll
 ; linux/optimized/intel_display_irq.ll
 ; linux/optimized/intel_overlay.ll
 ; linux/optimized/intel_rps.ll
@@ -429,6 +428,7 @@
 ; llvm/optimized/UnwrappedLineParser.cpp.ll
 ; llvm/optimized/WhitespaceManager.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
+; lvgl/optimized/lv_switch.ll
 ; memcached/optimized/memcached-proto_bin.ll
 ; memcached/optimized/memcached_debug-proto_bin.ll
 ; mold/optimized/arch-x86-64.cc.ll
@@ -483,6 +483,8 @@
 ; wireshark/optimized/packet_list.cpp.ll
 ; wireshark/optimized/proto.c.ll
 ; z3/optimized/smt_context.cpp.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i16 %1) #0 {
 entry:
@@ -503,13 +505,12 @@ entry:
   ret i32 %3
 }
 
-; 17 occurrences:
+; 15 occurrences:
 ; libjpeg-turbo/optimized/jcmarker.c.ll
 ; linux/optimized/compaction.ll
 ; linux/optimized/consolemap.ll
 ; linux/optimized/fatent.ll
 ; linux/optimized/i9xx_wm.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_dmc.ll
 ; linux/optimized/intel_dp.ll
 ; linux/optimized/ipmr.ll
@@ -518,7 +519,6 @@ entry:
 ; linux/optimized/xhci-mem.ll
 ; openjdk/optimized/jcmarker.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
-; wireshark/optimized/packet-e164.c.ll
 ; wireshark/optimized/packet-rtitcp.c.ll
 ; wireshark/optimized/packet-smb2.c.ll
 ; Function Attrs: nounwind
@@ -529,22 +529,17 @@ entry:
   ret i32 %3
 }
 
-; 25 occurrences:
+; 20 occurrences:
 ; abc/optimized/kitDsd.c.ll
 ; arrow/optimized/int_util.cc.ll
-; cpython/optimized/ceval.ll
 ; hyperscan/optimized/mcclellancompile.cpp.ll
 ; icu/optimized/ustrtrns.ll
 ; imgui/optimized/imgui.cpp.ll
-; linux/optimized/ebda.ll
 ; linux/optimized/xhci-ring.ll
 ; llvm/optimized/AArch64CallingConvention.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86FloatingPoint.cpp.ll
-; meshoptimizer/optimized/quantization.cpp.ll
 ; opencv/optimized/grfmt_tiff.cpp.ll
 ; openjdk/optimized/utf8.ll
-; postgres/optimized/brin_xlog.ll
 ; postgres/optimized/bufpage.ll
 ; postgres/optimized/ginentrypage.ll
 ; postgres/optimized/heapam.ll
@@ -560,6 +555,28 @@ define i32 @func0000000000000004(i32 %0, i16 %1) #0 {
 entry:
   %2 = icmp ult i16 %1, 127
   %3 = select i1 %2, i32 1, i32 %0
+  ret i32 %3
+}
+
+; 2 occurrences:
+; cpython/optimized/ceval.ll
+; meshoptimizer/optimized/quantization.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000014(i32 %0, i16 %1) #0 {
+entry:
+  %2 = icmp samesign ult i16 %1, 1024
+  %3 = select i1 %2, i32 0, i32 %0
+  ret i32 %3
+}
+
+; 2 occurrences:
+; lvgl/optimized/lv_image.ll
+; wireshark/optimized/packet-e164.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000018(i32 %0, i16 %1) #0 {
+entry:
+  %2 = icmp samesign ugt i16 %1, 2560
+  %3 = select i1 %2, i32 0, i32 %0
   ret i32 %3
 }
 

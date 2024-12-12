@@ -8,7 +8,7 @@
 ; z3/optimized/expr_substitution.cpp.ll
 ; z3/optimized/macro_substitution.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000023(i32 %0, i8 %1, i8 %2) #0 {
+define i8 @func0000000000000043(i32 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = or disjoint i8 %1, %2
   %4 = and i8 %3, -3

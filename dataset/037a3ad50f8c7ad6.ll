@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; llvm/optimized/DeadArgumentElimination.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000121(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000241(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 3
@@ -16,7 +16,7 @@ entry:
 ; llvm/optimized/AsmWriterEmitter.cpp.ll
 ; llvm/optimized/MachineFunction.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000201(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 3
@@ -37,7 +37,7 @@ entry:
 ; opencv/optimized/erfilter.cpp.ll
 ; openspiel/optimized/pathfinding.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000131(i32 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000261(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 3

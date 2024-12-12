@@ -24,9 +24,8 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; msdfgen/optimized/edge-segments.cpp.ll
-; proj/optimized/io.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, double %1, double %2) #0 {
 entry:

@@ -1,8 +1,3 @@
-func000000000000000c:                   # @func000000000000000c
-	movl	%edi, %eax
-	xorb	$1, %al
-	orb	%sil, %al
-	retq
 func0000000000000001:                   # @func0000000000000001
 	testb	$64, %sil
 	sete	%al

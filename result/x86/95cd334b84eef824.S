@@ -1,9 +1,9 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	cmpl	$-1, %esi
 	movl	$1, %eax
 	cmovneq	%rdi, %rax
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	cmpl	$-5, %esi
 	movl	$1, %eax
 	cmovneq	%rdi, %rax

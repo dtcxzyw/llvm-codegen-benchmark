@@ -1,18 +1,13 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	movi	v1.16b, #14
-	ushr	v0.16b, v0.16b, #2
-	movi	v2.16b, #2
-	and	v0.16b, v0.16b, v1.16b
-	add	v0.16b, v0.16b, v2.16b
+	lsr	w8, w0, #2
+	and	w8, w8, #0xe
+	add	w0, w8, #2
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	movi	v1.16b, #3
-	ushr	v0.16b, v0.16b, #3
-	movi	v2.2d, #0xffffffffffffffff
-	and	v0.16b, v0.16b, v1.16b
-	add	v0.16b, v0.16b, v2.16b
+	ubfx	w8, w0, #3, #2
+	sub	w0, w8, #1
 	ret
                                         // -- End function

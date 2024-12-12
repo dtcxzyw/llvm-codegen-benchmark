@@ -1,9 +1,10 @@
 
-; 33 occurrences:
+; 34 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; cmake/optimized/parsedate.c.ll
 ; coreutils-rs/optimized/czge978gjagq0cc.ll
 ; curl/optimized/libcurl_la-parsedate.ll
+; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; flac/optimized/decode.c.ll
 ; hwloc/optimized/hwloc-bind.ll

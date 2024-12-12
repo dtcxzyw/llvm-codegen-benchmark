@@ -63,6 +63,19 @@ entry:
 }
 
 ; 2 occurrences:
+; lvgl/optimized/lv_chart.ll
+; opencv/optimized/tracker_vit.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000021(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = sub nsw i32 %1, %2
+  %4 = sdiv i32 %3, 2
+  %5 = trunc i64 %0 to i32
+  %6 = add nsw i32 %4, %5
+  ret i32 %6
+}
+
+; 2 occurrences:
 ; linux/optimized/drm_modes.ll
 ; wireshark/optimized/packet-syslog.c.ll
 ; Function Attrs: nounwind
@@ -82,18 +95,6 @@ define i32 @func0000000000000001(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %1, %2
   %4 = sdiv i32 %3, 32
-  %5 = trunc i64 %0 to i32
-  %6 = add nsw i32 %4, %5
-  ret i32 %6
-}
-
-; 1 occurrences:
-; opencv/optimized/tracker_vit.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000021(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = sub nsw i32 %1, %2
-  %4 = sdiv i32 %3, 2
   %5 = trunc i64 %0 to i32
   %6 = add nsw i32 %4, %5
   ret i32 %6

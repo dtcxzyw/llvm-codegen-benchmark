@@ -10,13 +10,11 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
+; 6 occurrences:
 ; assimp/optimized/FBXBinaryTokenizer.cpp.ll
 ; git/optimized/dir.ll
-; harfbuzz/optimized/gsubgpos-context.cc.ll
 ; hdf5/optimized/H5Oalloc.c.ll
 ; just-rs/optimized/53slus9exfz9w045.ll
-; linux/optimized/head64.ll
 ; openjdk/optimized/jfrTraceIdKlassQueue.ll
 ; zstd/optimized/zstd_decompress.c.ll
 ; Function Attrs: nounwind
@@ -32,7 +30,7 @@ entry:
 ; assimp/optimized/FBXBinaryTokenizer.cpp.ll
 ; nuttx/optimized/lib_gmtimer.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, i1 %2) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 25, i64 13
   %4 = sub nuw i64 %0, %1
@@ -40,11 +38,24 @@ entry:
   ret i1 %5
 }
 
+; 3 occurrences:
+; boost/optimized/to_chars.ll
+; harfbuzz/optimized/hb-subset-cff1.cc.ll
+; harfbuzz/optimized/hb-subset-cff2.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000006(i64 %0, i64 %1, i1 %2) #0 {
+entry:
+  %3 = select i1 %2, i64 10, i64 9
+  %4 = sub i64 %0, %1
+  %5 = icmp slt i64 %4, %3
+  ret i1 %5
+}
+
 ; 2 occurrences:
 ; openblas/optimized/dsbgst.c.ll
 ; sentencepiece/optimized/time.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1, i1 %2) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 3155760000, i64 3155673600
   %4 = sub nsw i64 %0, %1
@@ -61,11 +72,11 @@ entry:
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; abseil-cpp/optimized/time_zone_libc.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, i1 %2) #0 {
+define i1 @func0000000000000078(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 36525, i64 36524
   %4 = sub nuw nsw i64 %0, %1
-  %5 = icmp ugt i64 %4, %3
+  %5 = icmp samesign ugt i64 %4, %3
   ret i1 %5
 }
 
@@ -85,7 +96,7 @@ entry:
 ; 1 occurrences:
 ; nuttx/optimized/lib_gmtimer.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i1 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %2, i64 366, i64 365
   %4 = sub nsw i64 %0, %1
@@ -93,15 +104,14 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
-; harfbuzz/optimized/hb-subset-cff1.cc.ll
-; harfbuzz/optimized/hb-subset-cff2.cc.ll
+; 1 occurrences:
+; harfbuzz/optimized/gsubgpos-context.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000006(i64 %0, i64 %1, i1 %2) #0 {
+define i1 @func0000000000000014(i64 %0, i64 %1, i1 %2) #0 {
 entry:
-  %3 = select i1 %2, i64 2, i64 1
+  %3 = select i1 %2, i64 14, i64 10
   %4 = sub i64 %0, %1
-  %5 = icmp slt i64 %4, %3
+  %5 = icmp samesign ult i64 %4, %3
   ret i1 %5
 }
 

@@ -18,7 +18,7 @@ define i64 @func0000000000000029(i64 %0) #0 {
 entry:
   %1 = icmp sgt i64 %0, 0
   %2 = sext i1 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   ret i64 %3
 }
 
@@ -30,7 +30,7 @@ define i64 @func0000000000000020(i64 %0) #0 {
 entry:
   %1 = icmp ugt i64 %0, 1
   %2 = sext i1 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   ret i64 %3
 }
 
@@ -44,11 +44,11 @@ define i64 @func0000000000000031(i64 %0) #0 {
 entry:
   %1 = icmp ne i64 %0, 0
   %2 = sext i1 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   ret i64 %3
 }
 
-; 29 occurrences:
+; 30 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; duckdb/optimized/ub_duckdb_operator_join.cpp.ll
 ; entt/optimized/dense_map.cpp.ll
@@ -78,12 +78,13 @@ entry:
 ; llvm/optimized/XCOFFObjectFile.cpp.ll
 ; llvm/optimized/XCOFFObjectWriter.cpp.ll
 ; tokio-rs/optimized/58zica37k9qw0rn.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000030(i64 %0) #0 {
 entry:
   %1 = icmp ne i64 %0, 0
   %2 = sext i1 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   ret i64 %3
 }
 
@@ -95,7 +96,7 @@ define i64 @func0000000000000028(i64 %0) #0 {
 entry:
   %1 = icmp sgt i64 %0, 0
   %2 = sext i1 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   ret i64 %3
 }
 

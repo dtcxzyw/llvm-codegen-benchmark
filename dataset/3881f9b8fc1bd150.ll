@@ -1,9 +1,10 @@
 
-; 455 occurrences:
+; 452 occurrences:
 ; abc/optimized/cuddEssent.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; assimp/optimized/DeboneProcess.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/topology.ll
 ; c3c/optimized/target.c.ll
 ; casadi/optimized/dae_builder_internal.cpp.ll
 ; casadi/optimized/fmu.cpp.ll
@@ -209,7 +210,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -279,7 +279,6 @@
 ; php/optimized/scdf.ll
 ; php/optimized/zend_alloc.ll
 ; php/optimized/zend_inference.ll
-; proj/optimized/factory.cpp.ll
 ; proj/optimized/singleoperation.cpp.ll
 ; pybind11/optimized/pybind11_cross_module_tests.cpp.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
@@ -289,7 +288,6 @@
 ; qemu/optimized/migration_block.c.ll
 ; qemu/optimized/migration_ram.c.ll
 ; qemu/optimized/plugins_core.c.ll
-; qemu/optimized/ui_kbd-state.c.ll
 ; qemu/optimized/ui_vnc.c.ll
 ; quantlib/optimized/abcdatmvolcurve.ll
 ; quantlib/optimized/cmsmarketcalibration.ll
@@ -438,7 +436,6 @@
 ; yosys/optimized/ezminisat.ll
 ; yosys/optimized/flatten.ll
 ; yosys/optimized/glift.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/mem.ll
 ; yosys/optimized/memory_dff.ll
 ; yosys/optimized/memory_libmap.ll
@@ -461,7 +458,7 @@ entry:
   %2 = and i64 %1, 63
   %3 = shl nuw i64 1, %2
   %4 = xor i64 %3, -1
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 
@@ -558,11 +555,11 @@ entry:
   %2 = and i64 %1, 255
   %3 = shl nsw i64 -1, %2
   %4 = xor i64 %3, -1
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; abc/optimized/cuddEssent.c.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; linux/optimized/mlme.ll
@@ -571,7 +568,6 @@ entry:
 ; opencv/optimized/block_mean_hash.cpp.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; qemu/optimized/accel_tcg_user-exec.c.ll
-; qemu/optimized/target_riscv_pmu.c.ll
 ; spike/optimized/bclr.ll
 ; spike/optimized/bclri.ll
 ; velox/optimized/BaseVector.cpp.ll
@@ -588,13 +584,12 @@ entry:
   %2 = and i64 %1, 24
   %3 = shl nuw nsw i64 4294967295, %2
   %4 = xor i64 %3, -1
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 
-; 186 occurrences:
+; 185 occurrences:
 ; llvm/optimized/AArch64InstPrinter.cpp.ll
-; qemu/optimized/target_riscv_pmu.c.ll
 ; spike/optimized/add16.ll
 ; spike/optimized/add32.ll
 ; spike/optimized/add8.ll
@@ -782,10 +777,10 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 4294967295
-  %3 = shl i64 2, %2
+  %2 = and i64 %1, 4294967264
+  %3 = shl i64 8589934590, %2
   %4 = xor i64 %3, -1
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 

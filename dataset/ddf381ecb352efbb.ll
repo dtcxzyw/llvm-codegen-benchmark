@@ -22,7 +22,8 @@ entry:
   ret i64 %4
 }
 
-; 62 occurrences:
+; 81 occurrences:
+; boost/optimized/alloc_lib.ll
 ; coreutils-rs/optimized/2fxrwnovw97v41kk.ll
 ; coreutils-rs/optimized/4o7j3eorsq1l9mcp.ll
 ; duckdb/optimized/ub_duckdb_operator_join.cpp.ll
@@ -83,6 +84,24 @@ entry:
 ; wasmtime-rs/optimized/whu18zn8ngpbxbr.ll
 ; xgboost/optimized/data.cc.ll
 ; xgboost/optimized/recordio.cc.ll
+; zed-rs/optimized/0drf4dow76rapncpvt6xcgeqh.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/3y76hj0efsluhdj732s0l4pjz.ll
+; zed-rs/optimized/4h176o45n3uxzch53hiway9mu.ll
+; zed-rs/optimized/594irsld4whz8iexnen5yt9ht.ll
+; zed-rs/optimized/5m9bjvwazi0alu2tzwf9y1ejc.ll
+; zed-rs/optimized/6hbnfszf6gkk4nniq4f5ts2z6.ll
+; zed-rs/optimized/78inm0jy3d63l7emd848od092.ll
+; zed-rs/optimized/9dr2kwkk18o137jk0clql0t7q.ll
+; zed-rs/optimized/9eafvdu9qxyugp5or14xw795l.ll
+; zed-rs/optimized/9rjcnh2bkwcxhw260lzzkw0kl.ll
+; zed-rs/optimized/9ub6itb7fqq3kx06gfwmm2iyz.ll
+; zed-rs/optimized/b0jacrvunbgse6y69p1vx4gkq.ll
+; zed-rs/optimized/b81e9khs3ji5jlq7q4emerez1.ll
+; zed-rs/optimized/e6a9h8zpsmm3y86u07vvgbryo.ll
+; zed-rs/optimized/eio6txv0nku2we5mnjcgiiw85.ll
+; zed-rs/optimized/f1xl8k103at60m3wnvb71vdir.ll
 ; zfp/optimized/zfp.c.ll
 ; zxing/optimized/ZXBigInteger.cpp.ll
 ; Function Attrs: nounwind
@@ -94,7 +113,7 @@ entry:
   ret i64 %4
 }
 
-; 9 occurrences:
+; 11 occurrences:
 ; cmake/optimized/archive_read_support_format_iso9660.c.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; lightgbm/optimized/metric.cpp.ll
@@ -104,6 +123,8 @@ entry:
 ; openusd/optimized/types.cpp.ll
 ; qemu/optimized/block_vhdx.c.ll
 ; slurm/optimized/job_mgr.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:

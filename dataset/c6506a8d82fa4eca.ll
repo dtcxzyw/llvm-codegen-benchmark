@@ -1,6 +1,7 @@
 
-; 13 occurrences:
+; 14 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
+; boost/optimized/to_chars.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
@@ -32,14 +33,15 @@ entry:
   ret i128 %2
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; abseil-cpp/optimized/charconv.cc.ll
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; abseil-cpp/optimized/wide_multiply_test.cc.ll
+; boost/optimized/to_chars.ll
 ; Function Attrs: nounwind
 define i128 @func0000000000000003(i32 %0) #0 {
 entry:
-  %1 = sub nsw i32 64, %0
+  %1 = sub nsw i32 256, %0
   %2 = zext nneg i32 %1 to i128
   ret i128 %2
 }

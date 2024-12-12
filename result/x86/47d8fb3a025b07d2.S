@@ -20,11 +20,6 @@ func0000000000000010:                   # @func0000000000000010
 	addl	%edi, %eax
 	addl	%esi, %eax
 	retq
-func0000000000000035:                   # @func0000000000000035
-	imull	$-94, %edx, %eax
-	addl	%edi, %eax
-	addl	%esi, %eax
-	retq
 func0000000000000015:                   # @func0000000000000015
 	imull	$60, %edx, %eax
 	addl	%edi, %eax
@@ -51,6 +46,11 @@ func000000000000002a:                   # @func000000000000002a
 	imull	$32896, %edx, %eax              # imm = 0x8080
 	addl	%edi, %eax
 	addl	%esi, %eax
+	retq
+func0000000000000035:                   # @func0000000000000035
+	leal	(%rdx,%rdx,4), %eax
+	leal	(%rsi,%rax,2), %eax
+	addl	%edi, %eax
 	retq
 func000000000000003d:                   # @func000000000000003d
 	leal	(%rdx,%rdx,4), %eax

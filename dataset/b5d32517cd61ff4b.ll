@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 18 occurrences:
 ; hermes/optimized/ES6Class.cpp.ll
 ; hermes/optimized/Mem2Reg.cpp.ll
 ; hermes/optimized/StackPromotion.cpp.ll
@@ -14,6 +14,7 @@
 ; llvm/optimized/WindowScheduler.cpp.ll
 ; llvm/optimized/X86CmovConversion.cpp.ll
 ; llvm/optimized/X86OptimizeLEAs.cpp.ll
+; lvgl/optimized/lv_table.ll
 ; minetest/optimized/CFileSystem.cpp.ll
 ; spike/optimized/fdt_sw.ll
 ; wireshark/optimized/packet-sigcomp.c.ll

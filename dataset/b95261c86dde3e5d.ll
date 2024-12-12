@@ -20,7 +20,11 @@ entry:
   ret i64 %3
 }
 
-; 1 occurrences:
+; 5 occurrences:
+; boost/optimized/instantiate_cpp_exprgrammar.ll
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
+; boost/optimized/instantiate_predef_macros.ll
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000b(i64 %0) #0 {
@@ -31,8 +35,9 @@ entry:
   ret i64 %3
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; openjdk/optimized/ptrQueue.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0) #0 {
 entry:
@@ -67,8 +72,9 @@ entry:
   ret i64 %2
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
+; boost/optimized/approximately_equals.ll
 ; cpython/optimized/mpdecimal.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0) #0 {

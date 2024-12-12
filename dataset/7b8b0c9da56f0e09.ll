@@ -1,5 +1,7 @@
 
-; 46 occurrences:
+; 48 occurrences:
+; boost/optimized/alloc_lib.ll
+; boost/optimized/area.ll
 ; gromacs/optimized/forcetable.cpp.ll
 ; hermes/optimized/TypeInference.cpp.ll
 ; imgui/optimized/imgui.cpp.ll

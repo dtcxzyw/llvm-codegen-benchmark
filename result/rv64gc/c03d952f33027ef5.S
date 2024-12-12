@@ -6,3 +6,11 @@ func000000000000004a:                   # @func000000000000004a
 	slli	a0, a0, 4
 	sllw	a0, a1, a0
 	ret
+func000000000000014a:                   # @func000000000000014a
+	srli	a3, a1, 32
+	beqz	a3, .LBB1_2
+	mv	a1, a2
+.LBB1_2:                                # %entry
+	slli	a0, a0, 4
+	sllw	a0, a1, a0
+	ret

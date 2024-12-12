@@ -11,7 +11,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = trunc i64 %3 to i32
   %5 = xor i32 %4, -1
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -25,7 +25,7 @@ entry:
   %3 = sub nsw i64 %1, %2
   %4 = trunc nsw i64 %3 to i32
   %5 = xor i32 %4, -1
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 

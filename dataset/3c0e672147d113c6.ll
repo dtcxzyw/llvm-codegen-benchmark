@@ -1,13 +1,10 @@
 
-; 16 occurrences:
-; clamav/optimized/cpio.c.ll
+; 13 occurrences:
 ; eastl/optimized/TestBitset.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hermes/optimized/JSObject.cpp.ll
 ; hermes/optimized/JSProxy.cpp.ll
 ; libevent/optimized/bufferevent.c.ll
-; linux/optimized/genetlink.ll
-; linux/optimized/ht.ll
 ; linux/optimized/intel_sdvo.ll
 ; openjdk/optimized/hb-ot-shape.ll
 ; openusd/optimized/faceVertex.cpp.ll

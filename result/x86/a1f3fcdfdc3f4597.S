@@ -23,6 +23,11 @@ func0000000000000004:                   # @func0000000000000004
 	setb	%al
 	orb	%dil, %al
 	retq
+func0000000000000019:                   # @func0000000000000019
+	cmpq	%rdx, %rsi
+	setae	%al
+	orb	%dil, %al
+	retq
 func000000000000000a:                   # @func000000000000000a
 	cmpq	%rdx, %rsi
 	setg	%al
@@ -43,8 +48,23 @@ func0000000000000006:                   # @func0000000000000006
 	setl	%al
 	orb	%dil, %al
 	retq
+func0000000000000018:                   # @func0000000000000018
+	cmpq	%rdx, %rsi
+	seta	%al
+	orb	%dil, %al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpq	%rdx, %rsi
+	setb	%al
+	orb	%dil, %al
+	retq
 func0000000000000007:                   # @func0000000000000007
 	cmpq	%rdx, %rsi
 	setle	%al
+	orb	%dil, %al
+	retq
+func0000000000000015:                   # @func0000000000000015
+	cmpq	%rdx, %rsi
+	setbe	%al
 	orb	%dil, %al
 	retq

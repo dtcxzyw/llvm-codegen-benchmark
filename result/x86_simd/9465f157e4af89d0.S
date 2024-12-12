@@ -6,7 +6,7 @@ func0000000000000007:                   # @func0000000000000007
 func0000000000000006:                   # @func0000000000000006
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpsubw	%ymm2, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI2_0:
 	.short	64960                           # 0xfdc0
@@ -69,7 +69,7 @@ func0000000000000000:                   # @func0000000000000000
 	.short	65520                           # 0xfff0
 func0000000000000002:                   # @func0000000000000002
 	vpaddw	.LCPI4_0(%rip), %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI5_0:
 	.short	45568                           # 0xb200

@@ -6,6 +6,11 @@ func000000000000001f:                   # @func000000000000001f
 	movzbl	%sil, %eax
 	leal	(%rdi,%rax,4), %eax
 	retq
+func000000000000001a:                   # @func000000000000001a
+	movzbl	%sil, %eax
+	shll	$21, %eax
+	addl	%edi, %eax
+	retq
 func000000000000001b:                   # @func000000000000001b
 	movzbl	%sil, %eax
 	leal	(%rdi,%rax,2), %eax

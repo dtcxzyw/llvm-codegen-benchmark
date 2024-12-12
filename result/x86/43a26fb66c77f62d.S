@@ -11,10 +11,3 @@ func0000000000000002:                   # @func0000000000000002
 	orb	%dil, %sil
 	orb	%sil, %al
 	retq
-func0000000000000010:                   # @func0000000000000010
-	andb	$14, %dl
-	cmpb	$10, %dl
-	setae	%al
-	orb	%dil, %sil
-	orb	%sil, %al
-	retq

@@ -1,4 +1,4 @@
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	vextracti128	$1, %ymm2, %xmm3
 	vpextrd	$1, %xmm3, %eax
 	vextracti128	$1, %ymm0, %xmm4
@@ -44,7 +44,7 @@ func0000000000000016:                   # @func0000000000000016
 	idivl	%ecx
 	vpinsrd	$3, %edx, %xmm4, %xmm2
 	vinserti128	$1, %xmm3, %ymm2, %ymm2
-	vpaddd	%ymm1, %ymm2, %ymm1
+	vpaddd	%ymm2, %ymm1, %ymm1
 	vpcmpgtd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
@@ -146,12 +146,12 @@ func000000000000000b:                   # @func000000000000000b
 	idivl	%ecx
 	vpinsrd	$3, %edx, %xmm4, %xmm2
 	vinserti128	$1, %xmm3, %ymm2, %ymm2
-	vpaddd	%ymm1, %ymm2, %ymm1
+	vpaddd	%ymm2, %ymm1, %ymm1
 	vpcmpnltd	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000001b:                   # @func000000000000001b
+func000000000000002b:                   # @func000000000000002b
 	vextracti128	$1, %ymm2, %xmm3
 	vpextrd	$1, %xmm3, %eax
 	vextracti128	$1, %ymm0, %xmm4
@@ -197,7 +197,7 @@ func000000000000001b:                   # @func000000000000001b
 	idivl	%ecx
 	vpinsrd	$3, %edx, %xmm4, %xmm2
 	vinserti128	$1, %xmm3, %ymm2, %ymm2
-	vpaddd	%ymm1, %ymm2, %ymm1
+	vpaddd	%ymm2, %ymm1, %ymm1
 	vpcmpnltd	%ymm0, %ymm1, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper

@@ -16,15 +16,15 @@ entry:
   ret i64 %6
 }
 
-; 112 occurrences:
+; 40 occurrences:
 ; abc/optimized/ioReadBlif.c.ll
 ; abseil-cpp/optimized/time_zone_posix.cc.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; clamav/optimized/pdf.c.ll
-; cmake/optimized/ftp.c.ll
 ; cmake/optimized/mprintf.c.ll
-; curl/optimized/libcurl_la-ftp.ll
 ; curl/optimized/libcurl_la-mprintf.ll
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; folly/optimized/HugePages.cpp.ll
@@ -44,6 +44,33 @@ entry:
 ; luajit/optimized/buildvm.ll
 ; ninja/optimized/depfile_parser.cc.ll
 ; ninja/optimized/lexer.cc.ll
+; opencc/optimized/Config.cpp.ll
+; openusd/optimized/stringUtils.cpp.ll
+; php/optimized/json_scanner.ll
+; php/optimized/parse_posix.ll
+; php/optimized/pcre2_valid_utf.ll
+; php/optimized/phar_path_check.ll
+; php/optimized/php_ini_builder.ll
+; php/optimized/zend_compile.ll
+; redis/optimized/jemalloc.ll
+; redis/optimized/jemalloc.sym.ll
+; spike/optimized/socketif.ll
+; velox/optimized/LzoDecompressor.cpp.ll
+; velox/optimized/URLFunctions.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000c(ptr %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 1
+  %3 = ptrtoint ptr %2 to i64
+  %4 = ptrtoint ptr %0 to i64
+  %5 = xor i64 %4, -1
+  %6 = add i64 %5, %3
+  ret i64 %6
+}
+
+; 74 occurrences:
+; cmake/optimized/ftp.c.ll
+; curl/optimized/libcurl_la-ftp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -115,24 +142,11 @@ entry:
 ; oiio/optimized/typedesc.cpp.ll
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
-; opencc/optimized/Config.cpp.ll
-; openusd/optimized/stringUtils.cpp.ll
-; php/optimized/json_scanner.ll
-; php/optimized/parse_posix.ll
-; php/optimized/pcre2_valid_utf.ll
-; php/optimized/phar_path_check.ll
-; php/optimized/php_ini_builder.ll
-; php/optimized/zend_compile.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
-; redis/optimized/jemalloc.ll
-; redis/optimized/jemalloc.sym.ll
-; spike/optimized/socketif.ll
-; velox/optimized/LzoDecompressor.cpp.ll
-; velox/optimized/URLFunctions.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(ptr %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 1
+  %2 = getelementptr nusw i8, ptr %1, i64 -1
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %0 to i64
   %5 = xor i64 %4, -1

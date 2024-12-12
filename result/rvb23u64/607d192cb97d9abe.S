@@ -1,17 +1,25 @@
-func000000000000002c:                   # @func000000000000002c
+func000000000000004c:                   # @func000000000000004c
 	bset	a2, zero, a2
 	and	a1, a1, a2
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	bset	a2, zero, a2
 	and	a1, a1, a2
 	seqz	a1, a1
 	and	a0, a0, a1
 	ret
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	bset	a2, zero, a2
+	and	a1, a1, a2
+	seqz	a1, a1
+	and	a0, a0, a1
+	ret
+func0000000000000001:                   # @func0000000000000001
+	li	a3, -1
+	srli	a3, a3, 32
+	sll	a2, a3, a2
 	and	a1, a1, a2
 	seqz	a1, a1
 	and	a0, a0, a1
@@ -24,7 +32,7 @@ func000000000000000c:                   # @func000000000000000c
 	snez	a1, a1
 	and	a0, a0, a1
 	ret
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	srl	a1, a1, a2
 	snez	a1, a1
 	and	a0, a0, a1

@@ -1,186 +1,16 @@
 
-; 172 occurrences:
-; abc/optimized/abc.c.ll
-; abc/optimized/bmcMaj.c.ll
-; abc/optimized/bmcMaj2.c.ll
-; abc/optimized/bmcMaj3.c.ll
-; abc/optimized/dauDsd.c.ll
-; abc/optimized/dauGia.c.ll
-; abc/optimized/giaGig.c.ll
-; abc/optimized/ifDsd.c.ll
-; cmake/optimized/archive_read_support_format_tar.c.ll
-; coreutils-rs/optimized/11hiuykak1azonq6.ll
-; coreutils-rs/optimized/49fwg0b0m19bdvio.ll
-; diesel-rs/optimized/1mcix0ravw4ybg9k.ll
-; git/optimized/fmt-merge-msg.ll
-; libquic/optimized/url_util.cc.ll
-; libzmq/optimized/xsub.cpp.ll
-; linux/optimized/string.ll
-; linux/optimized/strncpy_from_user.ll
-; luajit/optimized/lj_opt_fold.ll
-; luajit/optimized/lj_opt_fold_dyn.ll
-; nix/optimized/add-to-store.ll
-; nix/optimized/app.ll
-; nix/optimized/archive.ll
-; nix/optimized/attr-path.ll
-; nix/optimized/attr-set.ll
-; nix/optimized/attrs.ll
-; nix/optimized/binary-cache-store.ll
-; nix/optimized/build-remote.ll
-; nix/optimized/build.ll
-; nix/optimized/buildenv.ll
-; nix/optimized/built-path.ll
-; nix/optimized/bundle.ll
-; nix/optimized/cache.ll
-; nix/optimized/cat.ll
-; nix/optimized/cgroup.ll
-; nix/optimized/child.ll
-; nix/optimized/command.ll
-; nix/optimized/common-args.ll
-; nix/optimized/config-check.ll
-; nix/optimized/current-process.ll
-; nix/optimized/daemon.ll
-; nix/optimized/derivation-add.ll
-; nix/optimized/derivation-goal.ll
-; nix/optimized/derivations.ll
-; nix/optimized/develop.ll
-; nix/optimized/diff-closures.ll
-; nix/optimized/dotgraph.ll
-; nix/optimized/drv-output-substitution-goal.ll
-; nix/optimized/dummy-store.ll
-; nix/optimized/edit.ll
-; nix/optimized/editor-for.ll
-; nix/optimized/entry-points.ll
-; nix/optimized/error.ll
-; nix/optimized/error_traces.ll
-; nix/optimized/eval-cache.ll
-; nix/optimized/eval-error.ll
-; nix/optimized/experimental-features.ll
-; nix/optimized/export-import.ll
-; nix/optimized/fetch-to-store.ll
-; nix/optimized/fetchClosure.ll
-; nix/optimized/fetchMercurial.ll
-; nix/optimized/fetchTree.ll
-; nix/optimized/fetchers.ll
-; nix/optimized/fetchurl.ll
-; nix/optimized/file-descriptor.ll
-; nix/optimized/file-system.ll
-; nix/optimized/filetransfer.ll
-; nix/optimized/filtering-input-accessor.ll
-; nix/optimized/flake.ll
-; nix/optimized/fromTOML.ll
-; nix/optimized/fs-sink.ll
-; nix/optimized/function-trace.ll
-; nix/optimized/gc.ll
-; nix/optimized/get-drvs.ll
-; nix/optimized/git-utils.ll
-; nix/optimized/github.ll
-; nix/optimized/globals.ll
-; nix/optimized/goal.ll
-; nix/optimized/graphml.ll
-; nix/optimized/hook-instance.ll
-; nix/optimized/http-binary-cache-store.ll
-; nix/optimized/indirect.ll
-; nix/optimized/installable-attr-path.ll
-; nix/optimized/installable-derived-path.ll
-; nix/optimized/installable-flake.ll
-; nix/optimized/installable-value.ll
-; nix/optimized/installables.ll
-; nix/optimized/json-to-value.ll
-; nix/optimized/legacy-ssh-store.ll
-; nix/optimized/lexer-tab.ll
-; nix/optimized/local-binary-cache-store.ll
-; nix/optimized/local-derivation-goal.ll
-; nix/optimized/local-fs-store.ll
-; nix/optimized/local-keys.ll
-; nix/optimized/local-store.ll
-; nix/optimized/lock.ll
-; nix/optimized/lockfile.ll
-; nix/optimized/log.ll
-; nix/optimized/loggers.ll
-; nix/optimized/ls.ll
-; nix/optimized/make-content-addressed.ll
-; nix/optimized/memory-source-accessor.ll
-; nix/optimized/mercurial.ll
-; nix/optimized/misc.ll
-; nix/optimized/namespaces.ll
-; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-channel.ll
-; nix/optimized/nix-collect-garbage.ll
-; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
-; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
-; nix/optimized/nixexpr.ll
-; nix/optimized/parsed-derivations.ll
-; nix/optimized/parser-tab.ll
-; nix/optimized/path-from-hash-part.ll
-; nix/optimized/pathlocks.ll
-; nix/optimized/personality.ll
-; nix/optimized/posix-fs-canonicalise.ll
-; nix/optimized/posix-source-accessor.ll
-; nix/optimized/prefetch.ll
-; nix/optimized/primops.ll
-; nix/optimized/processes.ll
-; nix/optimized/profile.ll
-; nix/optimized/profiles.ll
-; nix/optimized/progress-bar.ll
-; nix/optimized/realisation.ll
-; nix/optimized/registry.ll
-; nix/optimized/remote-fs-accessor.ll
-; nix/optimized/remote-store.ll
-; nix/optimized/run.ll
-; nix/optimized/search.ll
-; nix/optimized/serialise.ll
-; nix/optimized/serve-protocol-impl.ll
-; nix/optimized/shared.ll
-; nix/optimized/signals.ll
-; nix/optimized/sigs.ll
-; nix/optimized/source-accessor.ll
-; nix/optimized/source-path.ll
-; nix/optimized/sqlite.ll
-; nix/optimized/ssh-store.ll
-; nix/optimized/ssh.ll
-; nix/optimized/stack.ll
-; nix/optimized/store-api.ll
-; nix/optimized/store-copy-log.ll
-; nix/optimized/store-delete.ll
-; nix/optimized/store-gc.ll
-; nix/optimized/store-info.ll
-; nix/optimized/substitution-goal.ll
-; nix/optimized/tarball.ll
-; nix/optimized/tarfile.ll
-; nix/optimized/thread-pool.ll
-; nix/optimized/trivial.ll
-; nix/optimized/uds-remote-store.ll
-; nix/optimized/unix-domain-socket.ll
-; nix/optimized/unpack-channel.ll
-; nix/optimized/upgrade-nix.ll
-; nix/optimized/user-env.ll
-; nix/optimized/users.ll
-; nix/optimized/util.ll
-; nix/optimized/value-to-json.ll
-; nix/optimized/value-to-xml.ll
-; nix/optimized/verify.ll
-; nix/optimized/why-depends.ll
-; nix/optimized/worker.ll
-; opencv/optimized/persistence_xml.cpp.ll
-; openjdk/optimized/IOUtil.ll
-; openssl/optimized/libcrypto-lib-o_str.ll
-; openssl/optimized/libcrypto-shlib-o_str.ll
-; php/optimized/logical_filters.ll
-; php/optimized/parse_date.ll
+; 2 occurrences:
+; eastl/optimized/EATextUtil.cpp.ll
 ; ruby/optimized/string.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000000c(i8 %0) #0 {
+define i64 @func000000000000000a(i8 %0) #0 {
 entry:
-  %1 = icmp ne i8 %0, -128
+  %1 = icmp sgt i8 %0, -65
   %2 = sext i1 %1 to i64
   ret i64 %2
 }
 
-; 268 occurrences:
+; 344 occurrences:
 ; abc/optimized/dauDsd.c.ll
 ; abseil-cpp/optimized/flat_hash_map_test.cc.ll
 ; abseil-cpp/optimized/flat_hash_set_test.cc.ll
@@ -200,6 +30,11 @@ entry:
 ; arrow/optimized/value_parsing.cc.ll
 ; assimp/optimized/Base64.cpp.ll
 ; assimp/optimized/FBXUtil.cpp.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/parse_path.ll
+; boost/optimized/src.ll
+; boost/optimized/static_string.ll
+; boost/optimized/url_impl.ll
 ; casadi/optimized/code_generator.cpp.ll
 ; cmake/optimized/SystemTools.cxx.ll
 ; cmake/optimized/archive_match.c.ll
@@ -209,6 +44,7 @@ entry:
 ; cmake/optimized/cmSystemTools.cxx.ll
 ; cmake/optimized/cmTargetLinkLibrariesCommand.cxx.ll
 ; cmake/optimized/cookie.c.ll
+; cmake/optimized/core.c.ll
 ; cmake/optimized/hostcheck.c.ll
 ; cmake/optimized/http_chunks.c.ll
 ; cmake/optimized/noproxy.c.ll
@@ -268,6 +104,7 @@ entry:
 ; just-rs/optimized/3fhxcueg488gjpka.ll
 ; libphonenumber/optimized/phonenumberutil.cc.ll
 ; libphonenumber/optimized/shortnumberinfo.cc.ll
+; libuv/optimized/core.c.ll
 ; linux/optimized/clocksource.ll
 ; linux/optimized/hid-core.ll
 ; linux/optimized/n_tty.ll
@@ -291,6 +128,7 @@ entry:
 ; mitsuba3/optimized/string.cpp.ll
 ; mold/optimized/rust-demangle.c.ll
 ; nix/optimized/fromTOML.ll
+; node/optimized/core.ll
 ; node/optimized/simdutf.ll
 ; ockam-rs/optimized/1145kugil9dl94a2.ll
 ; ockam-rs/optimized/23pvw3nj6m0p9wnd.ll
@@ -339,11 +177,11 @@ entry:
 ; openssl/optimized/libssl-lib-quic_ackm.ll
 ; openssl/optimized/libssl-shlib-quic_ackm.ll
 ; php/optimized/apprentice.ll
+; php/optimized/cgi_main.ll
 ; php/optimized/fopen_wrappers.ll
 ; php/optimized/formatted_print.ll
 ; php/optimized/json_scanner.ll
 ; php/optimized/logical_filters.ll
-; php/optimized/pcre2_dfa_match.ll
 ; php/optimized/phar_object.ll
 ; php/optimized/phpdbg_bp.ll
 ; php/optimized/phpdbg_utils.ll
@@ -444,11 +282,79 @@ entry:
 ; spike/optimized/syscall.ll
 ; sqlite/optimized/sqlite3.ll
 ; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
+; turborepo-rs/optimized/5x6vf5oc1gv1cmh03slcaf29a.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
 ; typst-rs/optimized/al9nyr8ju52xbc2.ll
 ; wireshark/optimized/addr_resolv.c.ll
+; wireshark/optimized/packet-ssh.c.ll
+; wireshark/optimized/packet-tls-utils.c.ll
+; wireshark/optimized/packet-wireguard.c.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/08rfmg7gqi4939tj99psx2cc1.ll
+; zed-rs/optimized/0npw9rg0wengltga49c0tfins.ll
+; zed-rs/optimized/0nwivtw0lug3nh002ufjq6dhh.ll
+; zed-rs/optimized/0o1pecj7sihe8j10tk83wbgu7.ll
+; zed-rs/optimized/0wlgaqlqpgcjsjsmk5ypsukh3.ll
+; zed-rs/optimized/0x2swxz4m93xo6c0jggy1zzvx.ll
+; zed-rs/optimized/13pr1pzdsvcd15h9bn5oaps4z.ll
+; zed-rs/optimized/18cjjdq897fwjf59btw7ls4h5.ll
+; zed-rs/optimized/1iclhw87evxdlo4w8mftuzy1q.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1oqbug516qe1j9jzuop2d87nk.ll
+; zed-rs/optimized/2ki47jl401le7d880vult9vcg.ll
+; zed-rs/optimized/2ouh3ql8sx6p5h4phjh0p73m4.ll
+; zed-rs/optimized/32kqcem53id37kgf9pak7q7x7.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/468dd38yzqjsa1zmcu5rd6jgo.ll
+; zed-rs/optimized/4eiq2lz3s1dwj7dlf30mi6fc6.ll
+; zed-rs/optimized/4i7kbhd18au0o53jm2t49fldp.ll
+; zed-rs/optimized/4wl6luh08kf5panbyu7di2k6e.ll
+; zed-rs/optimized/53iexoleo5ntv1dnjbqpooo1x.ll
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
+; zed-rs/optimized/5dm7ofzf1e4v8vd2k597txwqa.ll
+; zed-rs/optimized/5kbsfw3jcmbcslmu1o5kx13w3.ll
+; zed-rs/optimized/5u1fvsvawpjspuq123qb03vz8.ll
+; zed-rs/optimized/6ekeyfm197maw5n7s1cbq34ws.ll
+; zed-rs/optimized/6sgfnscy7p01akiz795s6wpkk.ll
+; zed-rs/optimized/71cpo5c8gfob1nb30s7nlggwn.ll
+; zed-rs/optimized/78nr3ruxuq6h5rfkaolnxa52k.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/8et4dphxwbm7ry4e21dik6h9d.ll
+; zed-rs/optimized/8lmzon2kdaz83ocz8p00fckkv.ll
+; zed-rs/optimized/8qol7q25vqqdxkncrkeuuvo2e.ll
+; zed-rs/optimized/8yy2zhy2bdzv8bn57pipvxcw7.ll
+; zed-rs/optimized/9ld5vmlj2ufuzyru6e6aorg0l.ll
+; zed-rs/optimized/9sysltstjhp0j3770z48leqk1.ll
+; zed-rs/optimized/9veql5nv8njiwoukz29yvwhob.ll
+; zed-rs/optimized/a0mwohwi8w2ksrje9uu757r3h.ll
+; zed-rs/optimized/a19dler2qrv3afh8hccxiqxn7.ll
+; zed-rs/optimized/aemqmt46uh053lsq1r4xaert7.ll
+; zed-rs/optimized/an9c1nbjiirpzpjk20en0tyzy.ll
+; zed-rs/optimized/avkcaupfon6sc5v4swrdwryed.ll
+; zed-rs/optimized/b0ehx4vbxawrtril1zkysl0b6.ll
+; zed-rs/optimized/b8qgowmgtglca3x1tojob83nm.ll
+; zed-rs/optimized/bflorbpxbjb42ccmeziz8dqw7.ll
+; zed-rs/optimized/bha0rxubsdhd11krbgdo6s87h.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; zed-rs/optimized/bxqgsrk0kqvq41wnnozsjp44k.ll
+; zed-rs/optimized/cbi8r35sx6a597065rtde79my.ll
+; zed-rs/optimized/cgceu28znx3lfd8ddk7c9uglp.ll
+; zed-rs/optimized/ckiwzakufh7d1bhz9acxsspq9.ll
+; zed-rs/optimized/cnvyqwq6kbzihugegghzc0tdw.ll
+; zed-rs/optimized/cu6jannw5ajqip9tl6sqjzagm.ll
+; zed-rs/optimized/d236qqx54dpqso3cyloa7ybaj.ll
+; zed-rs/optimized/d3p7qidwwfiy8pzimmi7epq9h.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/dqkbt3e3tzkgcyv67jgz1zdbd.ll
+; zed-rs/optimized/dqryhdkxpzkfeay9pjzpwnhia.ll
+; zed-rs/optimized/dtqpsl4w47n2m18dddhdjmklr.ll
+; zed-rs/optimized/dtvy13he5qwv8e5jkwyblypio.ll
+; zed-rs/optimized/eldybx25av55fm0jlf5yq64qn.ll
+; zed-rs/optimized/exy3mxytk4j1w94j908qbhdez.ll
+; zed-rs/optimized/f1suy9miqr5txm7nzzcuw0lf4.ll
+; zed-rs/optimized/f3ax6fwg663b1ze6yfrcfasp4.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i8 %0) #0 {
 entry:
@@ -457,38 +363,206 @@ entry:
   ret i64 %2
 }
 
-; 2 occurrences:
-; abc/optimized/abcNpnSave.c.ll
-; yyjson/optimized/yyjson.c.ll
+; 169 occurrences:
+; abc/optimized/abc.c.ll
+; abc/optimized/bmcMaj.c.ll
+; abc/optimized/bmcMaj2.c.ll
+; abc/optimized/bmcMaj3.c.ll
+; abc/optimized/dauDsd.c.ll
+; abc/optimized/dauGia.c.ll
+; abc/optimized/giaGig.c.ll
+; abc/optimized/ifDsd.c.ll
+; boost/optimized/topology.ll
+; cmake/optimized/archive_read_support_format_tar.c.ll
+; coreutils-rs/optimized/11hiuykak1azonq6.ll
+; coreutils-rs/optimized/49fwg0b0m19bdvio.ll
+; diesel-rs/optimized/1mcix0ravw4ybg9k.ll
+; git/optimized/fmt-merge-msg.ll
+; libquic/optimized/url_util.cc.ll
+; libzmq/optimized/xsub.cpp.ll
+; linux/optimized/string.ll
+; linux/optimized/strncpy_from_user.ll
+; luajit/optimized/lj_opt_fold.ll
+; luajit/optimized/lj_opt_fold_dyn.ll
+; nix/optimized/add-to-store.ll
+; nix/optimized/app.ll
+; nix/optimized/archive.ll
+; nix/optimized/attr-path.ll
+; nix/optimized/attr-set.ll
+; nix/optimized/attrs.ll
+; nix/optimized/binary-cache-store.ll
+; nix/optimized/build-remote.ll
+; nix/optimized/build.ll
+; nix/optimized/buildenv.ll
+; nix/optimized/built-path.ll
+; nix/optimized/bundle.ll
+; nix/optimized/cache.ll
+; nix/optimized/cat.ll
+; nix/optimized/cgroup.ll
+; nix/optimized/child.ll
+; nix/optimized/command.ll
+; nix/optimized/common-args.ll
+; nix/optimized/config-check.ll
+; nix/optimized/current-process.ll
+; nix/optimized/daemon.ll
+; nix/optimized/derivation-add.ll
+; nix/optimized/derivation-goal.ll
+; nix/optimized/derivations.ll
+; nix/optimized/develop.ll
+; nix/optimized/diff-closures.ll
+; nix/optimized/dotgraph.ll
+; nix/optimized/drv-output-substitution-goal.ll
+; nix/optimized/dummy-store.ll
+; nix/optimized/edit.ll
+; nix/optimized/editor-for.ll
+; nix/optimized/entry-points.ll
+; nix/optimized/error.ll
+; nix/optimized/error_traces.ll
+; nix/optimized/eval-cache.ll
+; nix/optimized/eval-error.ll
+; nix/optimized/experimental-features.ll
+; nix/optimized/export-import.ll
+; nix/optimized/fetch-to-store.ll
+; nix/optimized/fetchClosure.ll
+; nix/optimized/fetchMercurial.ll
+; nix/optimized/fetchTree.ll
+; nix/optimized/fetchers.ll
+; nix/optimized/fetchurl.ll
+; nix/optimized/file-descriptor.ll
+; nix/optimized/file-system.ll
+; nix/optimized/filetransfer.ll
+; nix/optimized/filtering-input-accessor.ll
+; nix/optimized/flake.ll
+; nix/optimized/fromTOML.ll
+; nix/optimized/fs-sink.ll
+; nix/optimized/function-trace.ll
+; nix/optimized/gc.ll
+; nix/optimized/get-drvs.ll
+; nix/optimized/git-utils.ll
+; nix/optimized/github.ll
+; nix/optimized/globals.ll
+; nix/optimized/goal.ll
+; nix/optimized/graphml.ll
+; nix/optimized/hook-instance.ll
+; nix/optimized/http-binary-cache-store.ll
+; nix/optimized/indirect.ll
+; nix/optimized/installable-attr-path.ll
+; nix/optimized/installable-derived-path.ll
+; nix/optimized/installable-flake.ll
+; nix/optimized/installable-value.ll
+; nix/optimized/installables.ll
+; nix/optimized/json-to-value.ll
+; nix/optimized/legacy-ssh-store.ll
+; nix/optimized/lexer-tab.ll
+; nix/optimized/local-binary-cache-store.ll
+; nix/optimized/local-derivation-goal.ll
+; nix/optimized/local-fs-store.ll
+; nix/optimized/local-keys.ll
+; nix/optimized/local-store.ll
+; nix/optimized/lock.ll
+; nix/optimized/lockfile.ll
+; nix/optimized/log.ll
+; nix/optimized/loggers.ll
+; nix/optimized/ls.ll
+; nix/optimized/make-content-addressed.ll
+; nix/optimized/memory-source-accessor.ll
+; nix/optimized/mercurial.ll
+; nix/optimized/misc.ll
+; nix/optimized/namespaces.ll
+; nix/optimized/nar-accessor.ll
+; nix/optimized/nix-channel.ll
+; nix/optimized/nix-collect-garbage.ll
+; nix/optimized/nix-copy-closure.ll
+; nix/optimized/nix-instantiate.ll
+; nix/optimized/nixexpr.ll
+; nix/optimized/parsed-derivations.ll
+; nix/optimized/parser-tab.ll
+; nix/optimized/path-from-hash-part.ll
+; nix/optimized/pathlocks.ll
+; nix/optimized/personality.ll
+; nix/optimized/posix-fs-canonicalise.ll
+; nix/optimized/posix-source-accessor.ll
+; nix/optimized/prefetch.ll
+; nix/optimized/primops.ll
+; nix/optimized/processes.ll
+; nix/optimized/profile.ll
+; nix/optimized/profiles.ll
+; nix/optimized/progress-bar.ll
+; nix/optimized/realisation.ll
+; nix/optimized/registry.ll
+; nix/optimized/remote-fs-accessor.ll
+; nix/optimized/remote-store.ll
+; nix/optimized/run.ll
+; nix/optimized/search.ll
+; nix/optimized/serialise.ll
+; nix/optimized/serve-protocol-impl.ll
+; nix/optimized/shared.ll
+; nix/optimized/signals.ll
+; nix/optimized/sigs.ll
+; nix/optimized/source-accessor.ll
+; nix/optimized/source-path.ll
+; nix/optimized/sqlite.ll
+; nix/optimized/ssh-store.ll
+; nix/optimized/ssh.ll
+; nix/optimized/stack.ll
+; nix/optimized/store-api.ll
+; nix/optimized/store-copy-log.ll
+; nix/optimized/store-delete.ll
+; nix/optimized/store-gc.ll
+; nix/optimized/store-info.ll
+; nix/optimized/substitution-goal.ll
+; nix/optimized/tarball.ll
+; nix/optimized/tarfile.ll
+; nix/optimized/thread-pool.ll
+; nix/optimized/trivial.ll
+; nix/optimized/uds-remote-store.ll
+; nix/optimized/unix-domain-socket.ll
+; nix/optimized/unpack-channel.ll
+; nix/optimized/upgrade-nix.ll
+; nix/optimized/user-env.ll
+; nix/optimized/users.ll
+; nix/optimized/util.ll
+; nix/optimized/value-to-json.ll
+; nix/optimized/value-to-xml.ll
+; nix/optimized/verify.ll
+; nix/optimized/why-depends.ll
+; nix/optimized/worker.ll
+; opencv/optimized/persistence_xml.cpp.ll
+; openjdk/optimized/IOUtil.ll
+; openssl/optimized/libcrypto-lib-o_str.ll
+; openssl/optimized/libcrypto-shlib-o_str.ll
+; php/optimized/logical_filters.ll
+; php/optimized/parse_date.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(i8 %0) #0 {
+define i64 @func000000000000000c(i8 %0) #0 {
 entry:
-  %1 = icmp ugt i8 %0, 32
+  %1 = icmp ne i8 %0, 0
   %2 = sext i1 %1 to i64
   ret i64 %2
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; abseil-cpp/optimized/time.cc.ll
 ; abseil-cpp/optimized/time_test.cc.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; abseil-cpp/optimized/time_zone_info.cc.ll
 ; abseil-cpp/optimized/time_zone_libc.cc.ll
+; php/optimized/pcre2_dfa_match.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i8 %0) #0 {
 entry:
-  %1 = icmp slt i8 %0, 3
+  %1 = icmp slt i8 %0, -64
   %2 = sext i1 %1 to i64
   ret i64 %2
 }
 
 ; 1 occurrences:
-; eastl/optimized/EATextUtil.cpp.ll
+; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000000a(i8 %0) #0 {
+define i64 @func0000000000000008(i8 %0) #0 {
 entry:
-  %1 = icmp sgt i8 %0, -65
+  %1 = icmp ugt i8 %0, 52
   %2 = sext i1 %1 to i64
   ret i64 %2
 }

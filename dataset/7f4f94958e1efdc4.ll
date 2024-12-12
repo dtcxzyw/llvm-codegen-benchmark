@@ -1,8 +1,9 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/to_chars.ll
 ; double_conversion/optimized/fast-dtoa.cc.ll
 ; icu/optimized/double-conversion-fast-dtoa.ll
 ; luau/optimized/lnumprint.cpp.ll
@@ -14,6 +15,19 @@ define i64 @func0000000000000007(i1 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 1
   %3 = or i64 %2, 9007199254740992
+  %4 = select i1 %0, i64 %2, i64 %3
+  ret i64 %4
+}
+
+; 3 occurrences:
+; boost/optimized/src.ll
+; linux/optimized/fork.ll
+; llvm/optimized/CompilerInvocation.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i1 %0, i64 %1) #0 {
+entry:
+  %2 = shl i64 %1, 2
+  %3 = or i64 %2, 18014398509481984
   %4 = select i1 %0, i64 %2, i64 %3
   ret i64 %4
 }
@@ -36,18 +50,6 @@ define i64 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 2
   %3 = or i64 %2, -2097152
-  %4 = select i1 %0, i64 %2, i64 %3
-  ret i64 %4
-}
-
-; 2 occurrences:
-; linux/optimized/fork.ll
-; llvm/optimized/CompilerInvocation.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(i1 %0, i64 %1) #0 {
-entry:
-  %2 = shl i64 %1, 6
-  %3 = or i64 %2, 1125899906842624
   %4 = select i1 %0, i64 %2, i64 %3
   ret i64 %4
 }

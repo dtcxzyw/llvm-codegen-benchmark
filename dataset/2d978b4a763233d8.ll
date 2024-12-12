@@ -11,8 +11,10 @@ entry:
   ret i32 %6
 }
 
-; 4 occurrences:
+; 6 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; freetype/optimized/sdf.c.ll
 ; mitsuba3/optimized/string.cpp.ll
@@ -56,7 +58,8 @@ entry:
   ret i32 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; lvgl/optimized/lv_draw_sw_line.ll
 ; minetest/optimized/CGUIImage.cpp.ll
 ; minetest/optimized/COpenGLDriver.cpp.ll
 ; minetest/optimized/touchscreengui.cpp.ll

@@ -4,7 +4,11 @@ func0000000000000003:                   # @func0000000000000003
 	andi	a0, a0, -16
 	li	a1, 0
 	ret
+.LCPI1_0:
+	.quad	-8446744073709551616            # 0x8ac7230489e80000
 func0000000000000002:                   # @func0000000000000002
-	neg	a0, a0
+	lui	a1, %hi(.LCPI1_0)
+	ld	a1, %lo(.LCPI1_0)(a1)
+	mul	a0, a0, a1
 	li	a1, 0
 	ret

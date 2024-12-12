@@ -13,7 +13,8 @@ entry:
   ret i8 %3
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; lvgl/optimized/lv_arc.ll
 ; mitsuba3/optimized/cylinder.cpp.ll
 ; mitsuba3/optimized/medium.cpp.ll
 ; mitsuba3/optimized/sdfgrid.cpp.ll
@@ -39,11 +40,19 @@ entry:
   ret i8 %3
 }
 
-; 4 occurrences:
+; 12 occurrences:
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; delta-rs/optimized/43y2svfstmvqcl15.ll
 ; openusd/optimized/faceVertex.cpp.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
+; zed-rs/optimized/130afw1833d1gu50165ly3xmm.ll
+; zed-rs/optimized/1cn7xv4w6dvhmserny8iqmdc3.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(float %0, float %1) #0 {
 entry:

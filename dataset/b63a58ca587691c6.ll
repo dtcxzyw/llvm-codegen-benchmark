@@ -1,8 +1,8 @@
 
-%struct.JSValue.3243652 = type { %union.JSValueUnion.3243653, i64 }
-%union.JSValueUnion.3243653 = type { double }
+%struct.JSValue.3435081 = type { %union.JSValueUnion.3435082, i64 }
+%union.JSValueUnion.3435082 = type { double }
 
-; 12 occurrences:
+; 11 occurrences:
 ; cpython/optimized/dictobject.ll
 ; hyperscan/optimized/fdr.c.ll
 ; hyperscan/optimized/teddy.c.ll
@@ -13,7 +13,6 @@
 ; linux/optimized/skbuff.ll
 ; linux/optimized/virtio_net.ll
 ; opencv/optimized/fast.cpp.ll
-; recastnavigation/optimized/fastlz.c.ll
 ; ruby/optimized/parse.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000004(ptr %0, i8 %1) #0 {
@@ -24,7 +23,7 @@ entry:
   ret ptr %4
 }
 
-; 63 occurrences:
+; 62 occurrences:
 ; clamav/optimized/Bra86.c.ll
 ; clamav/optimized/mpool.c.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
@@ -45,7 +44,6 @@ entry:
 ; folly/optimized/SymbolizePrinter.cpp.ll
 ; git/optimized/commit-graph.ll
 ; gromacs/optimized/parser.cpp.ll
-; hyperscan/optimized/accel.c.ll
 ; hyperscan/optimized/block.c.ll
 ; hyperscan/optimized/catchup.c.ll
 ; hyperscan/optimized/hwlm.c.ll
@@ -97,7 +95,7 @@ entry:
   ret ptr %4
 }
 
-; 45 occurrences:
+; 43 occurrences:
 ; clamav/optimized/pdf.c.ll
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
 ; eastl/optimized/BenchmarkHash.cpp.ll
@@ -108,7 +106,6 @@ entry:
 ; eastl/optimized/TestAlgorithm.cpp.ll
 ; eastl/optimized/TestAny.cpp.ll
 ; eastl/optimized/TestBitVector.cpp.ll
-; eastl/optimized/TestCharTraits.cpp.ll
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestExtra.cpp.ll
 ; eastl/optimized/TestFixedString.cpp.ll
@@ -120,7 +117,6 @@ entry:
 ; eastl/optimized/TestOptional.cpp.ll
 ; eastl/optimized/TestRingBuffer.cpp.ll
 ; eastl/optimized/TestString.cpp.ll
-; eastl/optimized/TestUtility.cpp.ll
 ; eastl/optimized/TestVariant.cpp.ll
 ; eastl/optimized/TestVector.cpp.ll
 ; eastl/optimized/TestVectorMap.cpp.ll
@@ -152,7 +148,7 @@ entry:
   ret ptr %4
 }
 
-; 10 occurrences:
+; 13 occurrences:
 ; actix-rs/optimized/19s5ghr2x6s6bmh4.ll
 ; coreutils-rs/optimized/4o7j3eorsq1l9mcp.ll
 ; just-rs/optimized/1uppz7l1e89fp8n7.ll
@@ -163,12 +159,15 @@ entry:
 ; ockam-rs/optimized/z0rkq6s90lca7cm.ll
 ; typst-rs/optimized/3rk2ctuzbghb17s4.ll
 ; wasmtime-rs/optimized/4mhzt4bue6j9nl9q.ll
+; zed-rs/optimized/0oeh7hwbxnw4zu37xj5psd1f6.ll
+; zed-rs/optimized/7almbq0vtpgp7q0c9d6k1td97.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i8 %1) #0 {
+define ptr @func000000000000001f(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = sub nuw nsw i64 64, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -177,11 +176,11 @@ entry:
 ; coreutils-rs/optimized/4o7j3eorsq1l9mcp.ll
 ; grpc/optimized/slice_buffer.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i8 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = sub nuw nsw i64 144, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 
@@ -192,18 +191,35 @@ define ptr @func000000000000000c(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = sub nuw nsw i64 -3, %2
-  %4 = getelementptr %struct.JSValue.3243652, ptr %0, i64 %3
+  %4 = getelementptr %struct.JSValue.3435081, ptr %0, i64 %3
   ret ptr %4
 }
 
-; 1 occurrences:
-; cpython/optimized/Hacl_Hash_SHA3.ll
+; 18 occurrences:
+; eastl/optimized/BenchmarkAlgorithm.cpp.ll
+; eastl/optimized/BenchmarkHash.cpp.ll
+; eastl/optimized/BenchmarkSort.cpp.ll
+; eastl/optimized/BenchmarkString.cpp.ll
+; eastl/optimized/EATest.cpp.ll
+; eastl/optimized/TestAlgorithm.cpp.ll
+; eastl/optimized/TestDeque.cpp.ll
+; eastl/optimized/TestExtra.cpp.ll
+; eastl/optimized/TestFixedString.cpp.ll
+; eastl/optimized/TestHash.cpp.ll
+; eastl/optimized/TestIterator.cpp.ll
+; eastl/optimized/TestListMap.cpp.ll
+; eastl/optimized/TestRingBuffer.cpp.ll
+; eastl/optimized/TestString.cpp.ll
+; eastl/optimized/TestVariant.cpp.ll
+; eastl/optimized/TestVector.cpp.ll
+; eastl/optimized/TestVectorMap.cpp.ll
+; eastl/optimized/TestVectorSet.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000014(ptr %0, i8 %1) #0 {
+define ptr @func0000000000000017(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = sub nsw i64 0, %2
-  %4 = getelementptr i8, ptr %0, i64 %3
+  %3 = sub nsw i64 23, %2
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   ret ptr %4
 }
 

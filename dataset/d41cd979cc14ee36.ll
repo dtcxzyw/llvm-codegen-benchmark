@@ -1,5 +1,7 @@
 
-; 21 occurrences:
+; 22 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; opencv/optimized/phasecorr.cpp.ll
 ; openjdk/optimized/sharedRuntimeTrans.ll
 ; proj/optimized/boggs.cpp.ll
@@ -8,7 +10,6 @@
 ; proj/optimized/moll.cpp.ll
 ; proj/optimized/nell.cpp.ll
 ; proj/optimized/poly.cpp.ll
-; proj/optimized/wink2.cpp.ll
 ; quantlib/optimized/analyticholderextensibleoptionengine.ll
 ; quantlib/optimized/baroneadesiwhaleyengine.ll
 ; quantlib/optimized/cashflows.ll

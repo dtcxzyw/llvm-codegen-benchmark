@@ -172,7 +172,7 @@
 define i64 @func0000000000000015(i32 %0, i32 %1) #0 {
 entry:
   %2 = ashr i32 %1, 21
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %.neg1 = sub i32 292, %3
   %4 = sext i32 %.neg1 to i64
   ret i64 %4

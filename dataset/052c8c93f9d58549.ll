@@ -1,10 +1,11 @@
 
-; 21 occurrences:
+; 22 occurrences:
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/intersection_pl_l.ll
 ; casadi/optimized/kinsol.c.ll
 ; gromacs/optimized/dlas2.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; minetest/optimized/imagefilters.cpp.ll
 ; mitsuba3/optimized/rgb2spec_opt.cpp.ll
@@ -30,9 +31,30 @@ entry:
   ret i1 %5
 }
 
-; 94 occurrences:
+; 115 occurrences:
 ; assimp/optimized/ColladaLoader.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/relative_order.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; casadi/optimized/cvodes.c.ll
 ; ceres/optimized/gradient_checker.cc.ll
@@ -151,8 +173,15 @@ entry:
   ret i1 %5
 }
 
-; 12 occurrences:
+; 19 occurrences:
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; ipopt/optimized/IpAdaptiveMuUpdate.ll
 ; ipopt/optimized/IpQualityFunctionMuOracle.ll
 ; meshlab/optimized/edit_align.cpp.ll
@@ -173,8 +202,17 @@ entry:
   ret i1 %5
 }
 
-; 41 occurrences:
+; 50 occurrences:
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; brotli/optimized/encode.c.ll
 ; casadi/optimized/cvodes.c.ll
 ; graphviz/optimized/constraint.c.ll
@@ -237,7 +275,9 @@ entry:
   ret i1 %5
 }
 
-; 23 occurrences:
+; 25 occurrences:
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/intersection_pl_l.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; graphviz/optimized/emit.c.ll
 ; graphviz/optimized/postproc.c.ll
@@ -294,6 +334,47 @@ entry:
   ret i1 %5
 }
 
+; 7 occurrences:
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; Function Attrs: nounwind
+define i1 @func000000000000004d(double %0, double %1, double %2) #0 {
+entry:
+  %3 = fcmp ogt double %1, %2
+  %4 = select i1 %3, double %1, double %2
+  %5 = fcmp uge double %4, %0
+  ret i1 %5
+}
+
+; 14 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/partition.ll
+; boost/optimized/rational.ll
+; graphviz/optimized/intersection.c.ll
+; Function Attrs: nounwind
+define i1 @func000000000000002a(double %0, double %1, double %2) #0 {
+entry:
+  %3 = fcmp olt double %2, %1
+  %4 = select i1 %3, double %1, double %2
+  %5 = fcmp ole double %4, %0
+  ret i1 %5
+}
+
 ; 6 occurrences:
 ; oiio/optimized/imageio.cpp.ll
 ; openblas/optimized/dlaln2.c.ll
@@ -310,23 +391,6 @@ entry:
   ret i1 %5
 }
 
-; 7 occurrences:
-; casadi/optimized/cvodes.c.ll
-; casadi/optimized/idas.c.ll
-; gromacs/optimized/dlagtf.cpp.ll
-; imgui/optimized/imgui_widgets.cpp.ll
-; sundials/optimized/cvodes.c.ll
-; sundials/optimized/ida.c.ll
-; sundials/optimized/idas.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000045(double %0, double %1, double %2) #0 {
-entry:
-  %3 = fcmp ogt double %1, %2
-  %4 = select i1 %3, double %1, double %2
-  %5 = fcmp ugt double %4, %0
-  ret i1 %5
-}
-
 ; 3 occurrences:
 ; meshlab/optimized/balltree.cpp.ll
 ; openusd/optimized/matrix3d.cpp.ll
@@ -338,6 +402,22 @@ entry:
   %3 = select i1 %.inv, double %2, double %1
   %4 = fcmp ogt double %3, %0
   ret i1 %4
+}
+
+; 6 occurrences:
+; casadi/optimized/cvodes.c.ll
+; casadi/optimized/idas.c.ll
+; imgui/optimized/imgui_widgets.cpp.ll
+; sundials/optimized/cvodes.c.ll
+; sundials/optimized/ida.c.ll
+; sundials/optimized/idas.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000045(double %0, double %1, double %2) #0 {
+entry:
+  %3 = fcmp ogt double %1, %2
+  %4 = select i1 %3, double %1, double %2
+  %5 = fcmp ugt double %4, %0
+  ret i1 %5
 }
 
 ; 2 occurrences:
@@ -467,17 +547,6 @@ entry:
   %3 = fcmp ogt double %1, %2
   %4 = select i1 %3, double %1, double %2
   %5 = fcmp oeq double %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; graphviz/optimized/intersection.c.ll
-; Function Attrs: nounwind
-define i1 @func000000000000002a(double %0, double %1, double %2) #0 {
-entry:
-  %3 = fcmp olt double %1, %2
-  %4 = select i1 %3, double %1, double %2
-  %5 = fcmp ole double %4, %0
   ret i1 %5
 }
 

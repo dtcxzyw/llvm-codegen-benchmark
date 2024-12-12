@@ -3,6 +3,7 @@
 ; abseil-cpp/optimized/string_view_test.cc.ll
 ; abseil-cpp/optimized/time_zone_posix.cc.ll
 ; arrow/optimized/type.cc.ll
+; boost/optimized/static_string.ll
 ; chibicc/optimized/tokenize.ll
 ; clamav/optimized/freshclam.c.ll
 ; clamav/optimized/str.c.ll
@@ -67,7 +68,6 @@
 ; php/optimized/parse_date.ll
 ; postgres/optimized/filter.ll
 ; postgres/optimized/formatting.ll
-; postgres/optimized/guc.ll
 ; quickjs/optimized/quickjs.ll
 ; redis/optimized/hiredis.ll
 ; redis/optimized/lstrlib.ll
@@ -76,7 +76,7 @@
 ; wireshark/optimized/packet-osc.c.ll
 ; wireshark/optimized/packet-websocket.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000218(i8 %0, i64 %1) #0 {
+define i1 @func0000000000000828(i8 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
   %3 = and i64 %2, 4294983169

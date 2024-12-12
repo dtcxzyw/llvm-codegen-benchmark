@@ -13,7 +13,7 @@
 define i128 @func0000000000000085(i128 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = trunc nuw i128 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = zext i64 %4 to i128
   %6 = shl nuw i128 %5, 64
   %7 = or disjoint i128 %6, %0
@@ -30,7 +30,7 @@ entry:
 define i128 @func00000000000000c5(i128 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = trunc nuw nsw i128 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = zext i64 %4 to i128
   %6 = shl nuw i128 %5, 64
   %7 = or disjoint i128 %6, %0
@@ -43,7 +43,7 @@ entry:
 define i128 @func0000000000000087(i128 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = trunc nuw i128 %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = zext i64 %4 to i128
   %6 = shl nuw nsw i128 %5, 32
   %7 = or disjoint i128 %6, %0
@@ -56,7 +56,7 @@ entry:
 define i128 @func00000000000000ff(i128 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = trunc nuw nsw i128 %2 to i64
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = zext nneg i64 %4 to i128
   %6 = shl nuw nsw i128 %5, 32
   %7 = or disjoint i128 %6, %0
@@ -70,7 +70,7 @@ entry:
 define i128 @func00000000000000a5(i128 %0, i64 %1, i128 %2) #0 {
 entry:
   %3 = trunc nuw i128 %2 to i64
-  %4 = add nuw i64 %3, %1
+  %4 = add nuw i64 %1, %3
   %5 = zext i64 %4 to i128
   %6 = shl nuw i128 %5, 64
   %7 = or disjoint i128 %6, %0

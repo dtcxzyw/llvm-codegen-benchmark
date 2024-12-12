@@ -1,8 +1,10 @@
 
-; 155 occurrences:
+; 154 occurrences:
 ; abc/optimized/dauMerge.c.ll
 ; abc/optimized/reoSwap.c.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
+; boost/optimized/instantiate_re2c_lexer.ll
+; boost/optimized/instantiate_re2c_lexer_str.ll
 ; clamav/optimized/bytecode_api.c.ll
 ; clamav/optimized/packlibs.c.ll
 ; clamav/optimized/spin.c.ll
@@ -17,15 +19,12 @@
 ; libquic/optimized/convert.c.ll
 ; linux/optimized/alternative.ll
 ; linux/optimized/bug.ll
-; linux/optimized/csum-wrappers_64.ll
 ; linux/optimized/ds.ll
 ; linux/optimized/extable.ll
 ; linux/optimized/jump_label.ll
 ; linux/optimized/main.ll
-; linux/optimized/md-autodetect.ll
 ; linux/optimized/percpu.ll
 ; linux/optimized/printk.ll
-; linux/optimized/readdir.ll
 ; linux/optimized/scm.ll
 ; linux/optimized/seq_memory.ll
 ; linux/optimized/static_call_inline.ll

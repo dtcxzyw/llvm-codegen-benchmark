@@ -3,10 +3,10 @@
 ; openjdk/optimized/vectorIntrinsics.ll
 ; openspiel/optimized/quoridor.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000156(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   %6 = icmp slt i32 %5, 128
   ret i1 %6
@@ -35,7 +35,7 @@ entry:
 ; opencv/optimized/estimated_covariance.cpp.ll
 ; opencv/optimized/morph.dispatch.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000015a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 16
   %4 = mul nsw i32 %3, %1
@@ -48,10 +48,10 @@ entry:
 ; opencv/optimized/resize.cpp.ll
 ; yosys/optimized/test_cell.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003d6(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000007a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = mul nuw nsw i32 %3, %1
+  %4 = mul nuw nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   %6 = icmp slt i32 %5, 97
   ret i1 %6
@@ -63,10 +63,10 @@ entry:
 ; zxing/optimized/DMDetector.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000356(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000006a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   %6 = icmp slt i32 %5, 0
   ret i1 %6
@@ -76,11 +76,11 @@ entry:
 ; openusd/optimized/decodemv.c.ll
 ; openusd/optimized/mvref_common.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000146(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000286(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -65536
   %4 = mul nsw i32 %3, %1
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   %6 = icmp slt i32 %5, 0
   ret i1 %6
 }
@@ -88,10 +88,10 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/quoridor.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000151(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002a1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = sub i32 0, %0
   %6 = icmp eq i32 %4, %5
   ret i1 %6
@@ -100,7 +100,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/help.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c6(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000386(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = mul nuw nsw i32 %3, %1
@@ -125,23 +125,22 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/seam_finders.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000281(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add nsw i32 %2, 20
-  %4 = mul nsw i32 %3, %1
-  %5 = sub i32 0, %0
-  %6 = icmp eq i32 %4, %5
-  ret i1 %6
+  %.neg = sub i32 -20, %2
+  %.neg1 = mul i32 %.neg, %1
+  %3 = icmp eq i32 %0, %.neg1
+  ret i1 %3
 }
 
 ; 1 occurrences:
 ; opencv/optimized/resize.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003d8(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000007a8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
-  %4 = mul nuw nsw i32 %3, %1
-  %5 = add nsw i32 %4, %0
+  %4 = mul nuw nsw i32 %1, %3
+  %5 = add nsw i32 %0, %4
   %6 = icmp ugt i32 %5, 264
   ret i1 %6
 }
@@ -149,11 +148,11 @@ entry:
 ; 1 occurrences:
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000106(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000206(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
-  %4 = mul i32 %3, %1
-  %5 = add i32 %4, %0
+  %4 = mul i32 %1, %3
+  %5 = add i32 %0, %4
   %6 = icmp slt i32 %5, 0
   ret i1 %6
 }

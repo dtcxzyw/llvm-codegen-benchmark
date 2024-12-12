@@ -1,5 +1,5 @@
 
-; 83 occurrences:
+; 82 occurrences:
 ; bullet3/optimized/b3OpenCLUtils.ll
 ; coreutils-rs/optimized/2qsl5bwp4bvo535d.ll
 ; git/optimized/unpack-trees.ll
@@ -71,7 +71,6 @@
 ; openusd/optimized/usdtree.cpp.ll
 ; php/optimized/zend_jit.ll
 ; postgres/optimized/tuplesortvariants.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; rocksdb/optimized/block_based_table_reader.cc.ll
 ; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
 ; tree-sitter-rs/optimized/50gi8jfmf82cuy8e.ll

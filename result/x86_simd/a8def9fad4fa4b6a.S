@@ -39,5 +39,5 @@ func0000000000000000:                   # @func0000000000000000
 	.byte	128                             # 0x80
 func0000000000000001:                   # @func0000000000000001
 	vpshufb	.LCPI1_0(%rip), %ymm1, %ymm1    # ymm1 = ymm1[2],zero,zero,zero,ymm1[6],zero,zero,zero,ymm1[10],zero,zero,zero,ymm1[14],zero,zero,zero,ymm1[18],zero,zero,zero,ymm1[22],zero,zero,zero,ymm1[26],zero,zero,zero,ymm1[30],zero,zero,zero
-	vpxor	%ymm0, %ymm1, %ymm0
+	vpxor	%ymm1, %ymm0, %ymm0
 	retq

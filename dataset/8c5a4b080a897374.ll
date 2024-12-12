@@ -11,6 +11,18 @@ entry:
   ret i64 %6
 }
 
+; 1 occurrences:
+; boost/optimized/text_file_backend.ll
+; Function Attrs: nounwind
+define i64 @func000000000000002f(i64 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %1, %2
+  %4 = zext i32 %3 to i64
+  %5 = mul nuw nsw i64 %4, 86400000000
+  %6 = add nuw nsw i64 %5, %0
+  ret i64 %6
+}
+
 ; 3 occurrences:
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/Expr.cpp.ll
@@ -49,7 +61,7 @@ entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
   %5 = mul nuw nsw i64 %4, 1000
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 

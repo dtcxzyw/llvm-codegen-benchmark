@@ -1,4 +1,4 @@
-func0000000000000098:                   # @func0000000000000098
+func0000000000000128:                   # @func0000000000000128
 	sarq	$3, %rsi
 	movabsq	$-3689348814741910323, %rax     # imm = 0xCCCCCCCCCCCCCCCD
 	imulq	%rsi, %rax
@@ -7,7 +7,7 @@ func0000000000000098:                   # @func0000000000000098
 	cmpq	%rcx, %rax
 	seta	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	leaq	15(%rsi), %rax
 	testq	%rsi, %rsi
 	cmovnsq	%rsi, %rax

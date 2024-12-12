@@ -1,6 +1,6 @@
 
-; 46 occurrences:
-; bdwgc/optimized/gc.c.ll
+; 45 occurrences:
+; boost/optimized/alloc_lib.ll
 ; cmake/optimized/crc32_fast.c.ll
 ; cmake/optimized/crc64_fast.c.ll
 ; cpython/optimized/codeobject.ll
@@ -30,7 +30,6 @@
 ; openjdk/optimized/os.ll
 ; openjdk/optimized/relocator.ll
 ; php/optimized/ir_gdb.ll
-; postgres/optimized/backend_progress.ll
 ; postgres/optimized/inv_api.ll
 ; postgres/optimized/jsonfuncs.ll
 ; postgres/optimized/lock.ll
@@ -47,16 +46,28 @@
 ; wolfssl/optimized/sha.c.ll
 ; wolfssl/optimized/sha256.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0) #0 {
+define i1 @func0000000000000061(ptr %0) #0 {
 entry:
-  %1 = getelementptr nusw i8, ptr %0, i64 64
+  %1 = getelementptr nusw nuw i8, ptr %0, i64 64
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, 63
   %4 = icmp eq i64 %3, 0
   ret i1 %4
 }
 
-; 19 occurrences:
+; 1 occurrences:
+; bdwgc/optimized/gc.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000041(ptr %0) #0 {
+entry:
+  %1 = getelementptr nusw i8, ptr %0, i64 -8
+  %2 = ptrtoint ptr %1 to i64
+  %3 = and i64 %2, 7
+  %4 = icmp eq i64 %3, 0
+  ret i1 %4
+}
+
+; 18 occurrences:
 ; ceres/optimized/covariance_impl.cc.ll
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/hugetlb_cgroup.ll
@@ -68,7 +79,6 @@ entry:
 ; openjdk/optimized/relocator.ll
 ; openjdk/optimized/rewriter.ll
 ; postgres/optimized/clog.ll
-; postgres/optimized/fe-connect.ll
 ; postgres/optimized/hashpage.ll
 ; postgres/optimized/planner.ll
 ; postgres/optimized/tsgistidx.ll
@@ -86,15 +96,16 @@ entry:
   ret i1 %4
 }
 
-; 20 occurrences:
+; 21 occurrences:
 ; abc/optimized/crc32.c.ll
-; clamav/optimized/crc.cpp.ll
 ; cmake/optimized/crc32.c.ll
 ; eastl/optimized/EAMemory.cpp.ll
 ; gromacs/optimized/crc32.c.ll
 ; libdeflate/optimized/adler32.c.ll
 ; libdeflate/optimized/crc32.c.ll
 ; libquic/optimized/crc32.c.ll
+; lvgl/optimized/lv_draw_sw.ll
+; lvgl/optimized/lv_tlsf.ll
 ; memcached/optimized/crc32c.ll
 ; memcached/optimized/memcached-crc32c.ll
 ; memcached/optimized/memcached_debug-crc32c.ll
@@ -108,18 +119,17 @@ entry:
 ; wolfssl/optimized/rsa.c.ll
 ; zlib/optimized/crc32.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(ptr %0) #0 {
+define i1 @func000000000000006c(ptr %0) #0 {
 entry:
-  %1 = getelementptr nusw i8, ptr %0, i64 1
+  %1 = getelementptr nusw nuw i8, ptr %0, i64 1
   %2 = ptrtoint ptr %1 to i64
   %3 = and i64 %2, 7
   %4 = icmp ne i64 %3, 0
   ret i1 %4
 }
 
-; 5 occurrences:
-; linux/optimized/memweight.ll
-; openjdk/optimized/mlib_c_ImageCopy.ll
+; 4 occurrences:
+; postgres/optimized/fe-connect.ll
 ; postgres/optimized/pg_crc32c_sb8.ll
 ; postgres/optimized/pg_crc32c_sb8_shlib.ll
 ; postgres/optimized/pg_crc32c_sb8_srv.ll
@@ -128,7 +138,7 @@ define i1 @func000000000000000c(ptr %0) #0 {
 entry:
   %1 = getelementptr i8, ptr %0, i64 1
   %2 = ptrtoint ptr %1 to i64
-  %3 = and i64 %2, 7
+  %3 = and i64 %2, 3
   %4 = icmp ne i64 %3, 0
   ret i1 %4
 }

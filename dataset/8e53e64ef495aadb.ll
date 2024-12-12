@@ -16,7 +16,7 @@
 ; rocksdb/optimized/compaction_picker_universal.cc.ll
 ; spike/optimized/plic.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1
@@ -38,7 +38,7 @@ entry:
 ; llvm/optimized/RISCVInsertWriteVXRM.cpp.ll
 ; opencv/optimized/nbayes.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, ptr %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %3, %1

@@ -11,7 +11,7 @@ func0000000000000008:                   # @func0000000000000008
 	orb	%dil, %al
 	retq
 func0000000000000001:                   # @func0000000000000001
-	testl	$2147483647, %esi               # imm = 0x7FFFFFFF
+	testw	%si, %si
 	sete	%al
 	orb	%dil, %al
 	retq

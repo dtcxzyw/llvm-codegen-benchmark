@@ -4,7 +4,7 @@
 ; lua/optimized/lstring.ll
 ; postgres/optimized/nodeAgg.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000051(i32 %0) #0 {
+define i64 @func00000000000000a1(i32 %0) #0 {
 entry:
   %1 = sext i32 %0 to i64
   %2 = shl nsw i64 %1, 4

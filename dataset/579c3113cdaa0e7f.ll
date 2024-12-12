@@ -1,7 +1,6 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; protobuf/optimized/time_util.cc.ll
-; qemu/optimized/hw_misc_sifive_e_aon.c.ll
 ; qemu/optimized/hw_timer_sifive_pwm.c.ll
 ; velox/optimized/DecimalUtil.cpp.ll
 ; Function Attrs: nounwind
@@ -12,8 +11,9 @@ entry:
   ret i128 %3
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
+; boost/optimized/approximately_equals.ll
 ; cpython/optimized/basearith.ll
 ; cpython/optimized/crt.ll
 ; cpython/optimized/transpose.ll

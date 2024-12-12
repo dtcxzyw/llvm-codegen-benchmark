@@ -1,87 +1,52 @@
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	fcmgt	v3.4s, v3.4s, #0.0
-	fcmgt	v2.4s, v2.4s, #0.0
-	fcmgt	v1.4s, v1.4s, #0.0
-	fcmgt	v0.4s, v0.4s, #0.0
-	uzp1	v2.8h, v2.8h, v3.8h
-	uzp1	v0.8h, v0.8h, v1.8h
-	uzp1	v0.16b, v0.16b, v2.16b
-	and	v0.16b, v0.16b, v4.16b
+	fcmp	s0, #0.0
+	cset	w8, gt
+	and	w0, w8, w0
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
 	mov	w8, #14269                      // =0x37bd
 	movk	w8, #13702, lsl #16
-	dup	v5.4s, w8
-	fcmgt	v3.4s, v5.4s, v3.4s
-	fcmgt	v2.4s, v5.4s, v2.4s
-	fcmgt	v1.4s, v5.4s, v1.4s
-	fcmgt	v0.4s, v5.4s, v0.4s
-	uzp1	v2.8h, v2.8h, v3.8h
-	uzp1	v0.8h, v0.8h, v1.8h
-	uzp1	v0.16b, v0.16b, v2.16b
-	and	v0.16b, v0.16b, v4.16b
+	fmov	s1, w8
+	fcmp	s0, s1
+	cset	w8, mi
+	and	w0, w8, w0
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	fcmeq	v3.4s, v3.4s, #0.0
-	fcmeq	v2.4s, v2.4s, #0.0
-	fcmeq	v1.4s, v1.4s, #0.0
-	fcmeq	v0.4s, v0.4s, #0.0
-	uzp1	v2.8h, v2.8h, v3.8h
-	uzp1	v0.8h, v0.8h, v1.8h
-	uzp1	v0.16b, v0.16b, v2.16b
-	bic	v0.16b, v4.16b, v0.16b
+	fcmp	s0, #0.0
+	cset	w8, ne
+	and	w0, w8, w0
 	ret
                                         // -- End function
 func0000000000000008:                   // @func0000000000000008
 // %bb.0:                               // %entry
-	fcmeq	v3.4s, v3.4s, #0.0
-	fcmeq	v2.4s, v2.4s, #0.0
-	fcmeq	v1.4s, v1.4s, #0.0
-	fcmeq	v0.4s, v0.4s, #0.0
-	uzp1	v2.8h, v2.8h, v3.8h
-	uzp1	v0.8h, v0.8h, v1.8h
-	uzp1	v0.16b, v0.16b, v2.16b
-	and	v0.16b, v0.16b, v4.16b
+	fcmp	s0, #0.0
+	cset	w8, eq
+	and	w0, w8, w0
 	ret
                                         // -- End function
 func000000000000000b:                   // @func000000000000000b
 // %bb.0:                               // %entry
-	fcmgt	v3.4s, v3.4s, #0.0
-	fcmgt	v2.4s, v2.4s, #0.0
-	fcmgt	v1.4s, v1.4s, #0.0
-	fcmgt	v0.4s, v0.4s, #0.0
-	uzp1	v2.8h, v2.8h, v3.8h
-	uzp1	v0.8h, v0.8h, v1.8h
-	uzp1	v0.16b, v0.16b, v2.16b
-	bic	v0.16b, v4.16b, v0.16b
+	fcmp	s0, #0.0
+	cset	w8, le
+	and	w0, w8, w0
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	fcmeq	v3.4s, v3.4s, v3.4s
-	fcmeq	v2.4s, v2.4s, v2.4s
-	fcmeq	v1.4s, v1.4s, v1.4s
-	fcmeq	v0.4s, v0.4s, v0.4s
-	uzp1	v2.8h, v2.8h, v3.8h
-	uzp1	v0.8h, v0.8h, v1.8h
-	uzp1	v0.16b, v0.16b, v2.16b
-	bic	v0.16b, v4.16b, v0.16b
+	fcmp	s0, s0
+	cset	w8, vs
+	and	w0, w8, w0
 	ret
                                         // -- End function
 func000000000000000c:                   // @func000000000000000c
 // %bb.0:                               // %entry
-	fcmge	v3.4s, v3.4s, #0.0
-	fcmge	v2.4s, v2.4s, #0.0
-	fcmge	v1.4s, v1.4s, #0.0
-	fcmge	v0.4s, v0.4s, #0.0
-	uzp1	v2.8h, v2.8h, v3.8h
-	uzp1	v0.8h, v0.8h, v1.8h
-	uzp1	v0.16b, v0.16b, v2.16b
-	and	v0.16b, v0.16b, v4.16b
+	fcmp	s0, #0.0
+	cset	w8, ge
+	and	w0, w8, w0
 	ret
                                         // -- End function

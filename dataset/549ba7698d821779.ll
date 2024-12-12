@@ -1,5 +1,5 @@
 
-; 46 occurrences:
+; 47 occurrences:
 ; abc/optimized/abcCascade.c.ll
 ; abc/optimized/cuddAnneal.c.ll
 ; abc/optimized/cuddExact.c.ll
@@ -17,6 +17,7 @@
 ; gromacs/optimized/sstein.cpp.ll
 ; icu/optimized/charstr.ll
 ; icu/optimized/collationdatabuilder.ll
+; libquic/optimized/padding.c.ll
 ; linux/optimized/virtio_scsi.ll
 ; luau/optimized/ltablib.cpp.ll
 ; mitsuba3/optimized/hdrfilm.cpp.ll
@@ -47,7 +48,7 @@
 ; stb/optimized/stb_truetype.c.ll
 ; sundials/optimized/sunnonlinsol_fixedpoint.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -4
   %4 = sub i32 %3, %1
@@ -62,7 +63,7 @@ entry:
 ; openssl/optimized/libcrypto-lib-bio_b64.ll
 ; openssl/optimized/libcrypto-shlib-bio_b64.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000471(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000008e1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1542
   %4 = sub i32 %3, %1
@@ -77,7 +78,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-rsa_oaep.ll
 ; openusd/optimized/tessellation.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002f1(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000005e1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i64 -2, %0
   %4 = sub i32 %1, %2
@@ -90,7 +91,7 @@ entry:
 ; openjdk/optimized/c1_GraphBuilder.ll
 ; openjdk/optimized/methodData.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000e1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = sub i32 %3, %1
@@ -105,7 +106,7 @@ entry:
 ; hdf5/optimized/H5Znbit.c.ll
 ; luau/optimized/lstrlib.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000006b1(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000d61(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = sub nsw i32 %3, %1
@@ -121,7 +122,7 @@ entry:
 ; sundials/optimized/cvode.c.ll
 ; sundials/optimized/cvodes.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000431(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000861(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
   %4 = sub i32 %3, %1
@@ -135,7 +136,7 @@ entry:
 ; ninja/optimized/ninja.cc.ll
 ; postgres/optimized/allpaths.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000002b1(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000561(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = sub nsw i32 %3, %1
@@ -149,7 +150,7 @@ entry:
 ; cmake/optimized/huf_compress.c.ll
 ; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000231(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000461(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = sub i32 %3, %1

@@ -36,6 +36,11 @@ func000000000000002c:                   # @func000000000000002c
 	vcmpless	%xmm1, %xmm0, %k1
 	vmovss	%xmm1, %xmm0, %xmm0 {%k1}
 	retq
+func000000000000004a:                   # @func000000000000004a
+	vmaxss	%xmm2, %xmm1, %xmm1
+	vcmpless	%xmm0, %xmm1, %k1
+	vmovss	%xmm1, %xmm0, %xmm0 {%k1}
+	retq
 func00000000000000ac:                   # @func00000000000000ac
 	vcmpless	%xmm2, %xmm1, %k1
 	vmovss	%xmm1, %xmm2, %xmm2 {%k1}

@@ -17,11 +17,11 @@
 	.zero	1
 .LCPI0_1:
 	.quad	36                              # 0x24
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpcmpneqb	.LCPI0_0(%rip), %xmm1, %k1
 	vpmullq	.LCPI0_1(%rip){1to4}, %ymm2, %ymm0 {%k1}
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vpaddq	%ymm2, %ymm2, %ymm3
 	vpcmpeqd	%xmm4, %xmm4, %xmm4
 	vpcmpneqb	%xmm4, %xmm1, %k1
@@ -92,7 +92,7 @@ func0000000000000001:                   # @func0000000000000001
 	.zero	1
 .LCPI4_1:
 	.quad	3600                            # 0xe10
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpcmpneqb	.LCPI4_0(%rip), %xmm1, %k1
 	vpmullq	.LCPI4_1(%rip){1to4}, %ymm2, %ymm0 {%k1}
 	retq

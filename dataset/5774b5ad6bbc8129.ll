@@ -1,5 +1,5 @@
 
-; 164 occurrences:
+; 162 occurrences:
 ; abc/optimized/cuddAnneal.c.ll
 ; abc/optimized/cuddExact.c.ll
 ; abc/optimized/wlnRead.c.ll
@@ -13,7 +13,6 @@
 ; clamav/optimized/matcher-byte-comp.c.ll
 ; clamav/optimized/matcher.c.ll
 ; clamav/optimized/pdfdecode.c.ll
-; clamav/optimized/pe.c.ll
 ; clamav/optimized/unsp.c.ll
 ; cmake/optimized/deflate.c.ll
 ; cmake/optimized/lzma_encoder.c.ll
@@ -60,7 +59,6 @@
 ; linux/optimized/rsa-pkcs1pad.ll
 ; linux/optimized/trace_events_filter.ll
 ; linux/optimized/tx.ll
-; linux/optimized/wep.ll
 ; linux/optimized/wpa.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/DataFlowSanitizer.cpp.ll
@@ -87,7 +85,6 @@
 ; nuklear/optimized/unity.c.ll
 ; oniguruma/optimized/regparse.ll
 ; openblas/optimized/dlagsy.c.ll
-; openblas/optimized/dstein.c.ll
 ; opencv/optimized/binary_descriptor.cpp.ll
 ; opencv/optimized/btv_l1.cpp.ll
 ; opencv/optimized/camera_calibration.cpp.ll
@@ -107,6 +104,7 @@
 ; openjdk/optimized/mlib_ImageConv_u16nw.ll
 ; openjdk/optimized/parse2.ll
 ; openjdk/optimized/reg_split.ll
+; openjdk/optimized/sharedRuntime_x86_64.ll
 ; openmpi/optimized/opal_object.ll
 ; openmpi/optimized/pmix_object.ll
 ; openmpi/optimized/topo_treematch_dist_graph_create.ll
@@ -173,7 +171,7 @@ entry:
   ret i64 %4
 }
 
-; 65 occurrences:
+; 66 occurrences:
 ; abc/optimized/acbMfs.c.ll
 ; abc/optimized/cuddWindow.c.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -211,6 +209,7 @@ entry:
 ; luajit/optimized/buildvm_asm.ll
 ; luajit/optimized/minilua.ll
 ; luau/optimized/lbuiltins.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
@@ -293,7 +292,7 @@ entry:
 define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -329,12 +328,13 @@ entry:
 define i64 @func000000000000000a(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
 
-; 17 occurrences:
+; 20 occurrences:
+; clamav/optimized/pe.c.ll
 ; coreutils-rs/optimized/11lwsmxswp4jsl8v.ll
 ; coreutils-rs/optimized/whotp6m83kkoazv.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -345,6 +345,7 @@ entry:
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/MachinePipeliner.cpp.ll
+; lvgl/optimized/lv_fs.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; z3/optimized/ast_translation.cpp.ll
 ; z3/optimized/bit_util.cpp.ll
@@ -352,6 +353,7 @@ entry:
 ; z3/optimized/mpz.cpp.ll
 ; z3/optimized/totalizer.cpp.ll
 ; z3/optimized/upolynomial.cpp.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000010(i32 %0, i32 %1) #0 {
 entry:
@@ -361,7 +363,8 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/to_chars.ll
 ; hermes/optimized/APInt.cpp.ll
 ; hyperscan/optimized/repeat.c.ll
 ; llvm/optimized/APInt.cpp.ll
@@ -376,11 +379,12 @@ entry:
   ret i64 %4
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; hermes/optimized/APInt.cpp.ll
 ; libwebp/optimized/huffman_encode_utils.c.ll
 ; linux/optimized/kobject.ll
 ; llvm/optimized/APInt.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; opencv/optimized/seam_finders.cpp.ll
 ; openjdk/optimized/c1_GraphBuilder.ll
@@ -426,7 +430,8 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; gromacs/optimized/gmx_current.cpp.ll
 ; openjdk/optimized/hb-aat-layout.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i32 %0, i32 %1) #0 {
@@ -479,7 +484,7 @@ entry:
 define i64 @func0000000000000009(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }
@@ -527,7 +532,7 @@ entry:
 define i64 @func000000000000001a(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
@@ -538,13 +543,14 @@ entry:
 define i64 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext i32 %3 to i64
   ret i64 %4
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; graphviz/optimized/partition.c.ll
+; opencv/optimized/run_length_morphology.cpp.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind

@@ -1,5 +1,5 @@
 
-; 37 occurrences:
+; 36 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absOldCex.c.ll
 ; abc/optimized/absOldSat.c.ll
@@ -27,7 +27,6 @@
 ; freetype/optimized/pcf.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; linux/optimized/libata-sff.ll
-; linux/optimized/uprobes.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/CompilerInvocation.cpp.ll
 ; llvm/optimized/SemaObjCProperty.cpp.ll

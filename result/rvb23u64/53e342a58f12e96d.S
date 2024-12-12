@@ -1,18 +1,25 @@
-func00000000000000f4:                   # @func00000000000000f4
+func00000000000001f4:                   # @func00000000000001f4
 	sext.w	a0, a0
 	zext.h	a2, a2
 	add	a1, a1, a2
 	addiw	a1, a1, 1
 	sltu	a0, a0, a1
 	ret
-func00000000000000f6:                   # @func00000000000000f6
+func00000000000001e6:                   # @func00000000000001e6
 	sext.w	a0, a0
 	zext.h	a2, a2
 	add	a1, a1, a2
 	addiw	a1, a1, 1
 	slt	a0, a0, a1
 	ret
-func0000000000000054:                   # @func0000000000000054
+func00000000000001e4:                   # @func00000000000001e4
+	sext.w	a0, a0
+	zext.h	a2, a2
+	add	a1, a1, a2
+	addiw	a1, a1, 24
+	sltu	a0, a0, a1
+	ret
+func00000000000000a4:                   # @func00000000000000a4
 	sext.w	a0, a0
 	zext.h	a2, a2
 	add	a1, a1, a2
@@ -48,32 +55,24 @@ func0000000000000004:                   # @func0000000000000004
 	addiw	a1, a1, 4
 	sltu	a0, a0, a1
 	ret
-func0000000000000106:                   # @func0000000000000106
+func0000000000000206:                   # @func0000000000000206
 	sext.w	a0, a0
 	zext.h	a2, a2
 	add	a1, a1, a2
 	addiw	a1, a1, 6
 	slt	a0, a0, a1
 	ret
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	sext.w	a0, a0
 	zext.h	a2, a2
 	add	a1, a1, a2
 	addiw	a1, a1, 4
 	slt	a0, a0, a1
 	ret
-func00000000000001f4:                   # @func00000000000001f4
+func00000000000003f4:                   # @func00000000000003f4
 	sext.w	a0, a0
 	zext.h	a2, a2
 	add	a1, a1, a2
 	addiw	a1, a1, 28
 	sltu	a0, a0, a1
-	ret
-func0000000000000009:                   # @func0000000000000009
-	sext.w	a0, a0
-	zext.h	a2, a2
-	add	a1, a1, a2
-	addiw	a1, a1, 40
-	sltu	a0, a0, a1
-	xori	a0, a0, 1
 	ret

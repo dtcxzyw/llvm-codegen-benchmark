@@ -1,5 +1,5 @@
 
-; 23 occurrences:
+; 22 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; cvc5/optimized/node_builder.cpp.ll
 ; cvc5/optimized/node_manager.cpp.ll
@@ -19,7 +19,6 @@
 ; llvm/optimized/OpenMPClause.cpp.ll
 ; llvm/optimized/Type.cpp.ll
 ; opencc/optimized/louds-trie.cc.ll
-; postgres/optimized/shm_toc.ll
 ; qemu/optimized/accel_tcg_translate-all.c.ll
 ; quickjs/optimized/libbf.ll
 ; redis/optimized/rax.ll
@@ -33,7 +32,7 @@ entry:
   ret i64 %6
 }
 
-; 95 occurrences:
+; 93 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/strtod.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
@@ -63,8 +62,6 @@ entry:
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -198,7 +195,7 @@ entry:
 define i64 @func000000000000000c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 8192
-  %4 = add nuw nsw i64 %3, %0
+  %4 = add nuw nsw i64 %0, %3
   %5 = and i64 %1, 8589934584
   %6 = add i64 %4, %5
   ret i64 %6

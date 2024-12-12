@@ -6,3 +6,12 @@ func0000000000000002:                   // @func0000000000000002
 	sub	x0, x8, #16
 	ret
                                         // -- End function
+func0000000000000000:                   // @func0000000000000000
+// %bb.0:                               // %entry
+	and	w9, w1, w2
+	mov	w8, #24                         // =0x18
+	and	x9, x9, #0x1
+	umaddl	x8, w9, w8, x0
+	sub	x0, x8, #24
+	ret
+                                        // -- End function

@@ -1,8 +1,10 @@
 
-; 5 occurrences:
+; 7 occurrences:
 ; git/optimized/object-name.ll
 ; libevent/optimized/event_tagging.c.ll
+; llvm/optimized/CallingConvLower.cpp.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
 ; minetest/optimized/voxelalgorithms.cpp.ll
 ; redis/optimized/sds.ll
 ; Function Attrs: nounwind
@@ -14,11 +16,12 @@ entry:
   ret i64 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; draco/optimized/rans_bit_encoder.cc.ll
 ; libpng/optimized/pngrtran.c.ll
 ; linux/optimized/n_tty.ll
 ; openjdk/optimized/pngrtran.ll
+; php/optimized/pcre2_jit_compile.ll
 ; wireshark/optimized/packet-dof.c.ll
 ; wireshark/optimized/packet-signal-pdu.c.ll
 ; Function Attrs: nounwind

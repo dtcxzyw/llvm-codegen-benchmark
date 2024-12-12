@@ -1,5 +1,5 @@
 
-; 433 occurrences:
+; 442 occurrences:
 ; abc/optimized/cuddApprox.c.ll
 ; abc/optimized/cuddBddCorr.c.ll
 ; abc/optimized/cuddDecomp.c.ll
@@ -10,7 +10,6 @@
 ; abc/optimized/giaSweeper.c.ll
 ; abc/optimized/giaTransduction.cpp.ll
 ; abc/optimized/mpmMan.c.ll
-; abc/optimized/reoProfile.c.ll
 ; abseil-cpp/optimized/duration_test.cc.ll
 ; abseil-cpp/optimized/gaussian_distribution_test.cc.ll
 ; arrow/optimized/decimal.cc.ll
@@ -20,6 +19,19 @@
 ; assimp/optimized/IFCProfile.cpp.ll
 ; assimp/optimized/IFCUtil.cpp.ll
 ; assimp/optimized/sweep_context.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/buffer_piece_border.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; casadi/optimized/kinsol.c.ll
 ; casadi/optimized/sundials_iterative.c.ll
 ; ceres/optimized/covariance_impl.cc.ll
@@ -232,8 +244,6 @@
 ; openblas/optimized/dlamch.c.ll
 ; openblas/optimized/dlanv2.c.ll
 ; openblas/optimized/dlasq2.c.ll
-; openblas/optimized/dstein.c.ll
-; openblas/optimized/dtgsna.c.ll
 ; opencv/optimized/brisque_eval_tid2008.cpp.ll
 ; opencv/optimized/core_detect.cpp.ll
 ; opencv/optimized/corner.cpp.ll
@@ -301,7 +311,6 @@
 ; proj/optimized/grids.cpp.ll
 ; proj/optimized/gridshift.cpp.ll
 ; proj/optimized/vandg4.cpp.ll
-; proj/optimized/wink2.cpp.ll
 ; pybind11/optimized/test_numpy_vectorize.cpp.ll
 ; quantlib/optimized/analytic_cont_geom_av_price_heston.ll
 ; quantlib/optimized/analytic_discr_geom_av_price.ll
@@ -437,7 +446,7 @@
 define double @func0000000000000000(double %0, double %1) #0 {
 entry:
   %2 = fmul double %1, 5.000000e-01
-  %3 = fadd double %2, %0
+  %3 = fadd double %0, %2
   ret double %3
 }
 

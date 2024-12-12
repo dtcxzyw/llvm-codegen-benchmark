@@ -1,4 +1,4 @@
-func000000000000029a:                   # @func000000000000029a
+func000000000000052a:                   # @func000000000000052a
 	sarq	$4, %rdx
 	addq	%rsi, %rdx
 	movq	%rdx, %rax
@@ -8,7 +8,7 @@ func000000000000029a:                   # @func000000000000029a
 	addq	%rdi, %rax
 	setns	%al
 	retq
-func0000000000000294:                   # @func0000000000000294
+func0000000000000534:                   # @func0000000000000534
 	sarq	$4, %rdx
 	addq	%rsi, %rdx
 	movq	%rdx, %rax
@@ -19,7 +19,7 @@ func0000000000000294:                   # @func0000000000000294
 	cmpq	$32, %rax
 	setb	%al
 	retq
-func000000000000021a:                   # @func000000000000021a
+func000000000000042a:                   # @func000000000000042a
 	sarq	$5, %rdx
 	addq	%rsi, %rdx
 	movq	%rdx, %rax
@@ -29,7 +29,7 @@ func000000000000021a:                   # @func000000000000021a
 	addq	%rdi, %rax
 	setns	%al
 	retq
-func0000000000000214:                   # @func0000000000000214
+func0000000000000434:                   # @func0000000000000434
 	sarq	$5, %rdx
 	addq	%rsi, %rdx
 	movq	%rdx, %rax

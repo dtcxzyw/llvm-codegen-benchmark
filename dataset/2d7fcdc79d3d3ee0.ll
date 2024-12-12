@@ -34,19 +34,6 @@ entry:
 }
 
 ; 1 occurrences:
-; opencv/optimized/cap_v4l.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000006a(i32 %0, i32 %1, i8 %2) #0 {
-entry:
-  %3 = zext i8 %2 to i32
-  %4 = add nsw i32 %0, %1
-  %5 = lshr i32 %4, 16
-  %6 = add nuw nsw i32 %5, %3
-  %7 = and i32 %6, 65535
-  ret i32 %7
-}
-
-; 1 occurrences:
 ; brotli/optimized/transform.c.ll
 ; Function Attrs: nounwind
 define i32 @func00000000000000fe(i32 %0, i32 %1, i8 %2) #0 {

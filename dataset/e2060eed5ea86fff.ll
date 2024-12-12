@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; llvm/optimized/IntervalPartition.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000548(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000a88(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 2
   %4 = add nsw i64 %3, %1

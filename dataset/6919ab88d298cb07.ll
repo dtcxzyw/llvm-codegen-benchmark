@@ -8,7 +8,9 @@
 ; arrow/optimized/value_parsing.cc.ll
 ; assimp/optimized/BlenderScene.cpp.ll
 ; bdwgc/optimized/gc.c.ll
-; cmake/optimized/vli_decoder.c.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; cmake/optimized/xmlparse.c.ll
 ; cpython/optimized/_struct.ll
 ; cpython/optimized/mathmodule.ll
@@ -90,7 +92,6 @@
 ; libquic/optimized/quic_framer.cc.ll
 ; libquic/optimized/shift.c.ll
 ; libquic/optimized/wnaf.c.ll
-; libsodium/optimized/libsodium_la-pwhash_scryptsalsa208sha256.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
 ; lief/optimized/BinaryParser.cpp.ll
@@ -169,7 +170,6 @@
 ; linux/optimized/exfldio.ll
 ; linux/optimized/fib_trie.ll
 ; linux/optimized/gup.ll
-; linux/optimized/head64.ll
 ; linux/optimized/intel_ppgtt.ll
 ; linux/optimized/intel_sseu.ll
 ; linux/optimized/io_pgtable.ll
@@ -679,47 +679,33 @@ entry:
   ret i1 %3
 }
 
-; 18 occurrences:
+; 9 occurrences:
 ; cpython/optimized/mathmodule.ll
-; fmt/optimized/format-impl-test.cc.ll
 ; folly/optimized/File.cpp.ll
 ; folly/optimized/Singleton.cpp.ll
 ; hyperscan/optimized/catchup.c.ll
 ; hyperscan/optimized/repeat.c.ll
-; libjpeg-turbo/optimized/jcphuff.c.ll
 ; linux/optimized/fib_trie.ll
-; llvm/optimized/AArch64FastISel.cpp.ll
-; llvm/optimized/ELFObjectWriter.cpp.ll
-; llvm/optimized/X86ISelDAGToDAG.cpp.ll
-; qemu/optimized/block_qcow2-cluster.c.ll
-; qemu/optimized/util_hbitmap.c.ll
-; redis/optimized/dict.ll
 ; rocksdb/optimized/crc32c.cc.ll
-; rocksdb/optimized/version_set.cc.ll
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %0, %1
-  %3 = icmp ult i64 %2, 16
+  %3 = icmp samesign ult i64 %2, 2
   ret i1 %3
 }
 
-; 21 occurrences:
-; arrow/optimized/fixed-dtoa.cc.ll
-; diesel-rs/optimized/re13hpgqfsvf2ck.ll
-; double_conversion/optimized/fixed-dtoa.cc.ll
+; 16 occurrences:
 ; duckdb/optimized/ub_duckdb_sort.cpp.ll
 ; git/optimized/fast-import.ll
 ; linux/optimized/sd.ll
 ; linux/optimized/timekeeping.ll
-; linux/optimized/vclock_gettime.ll
 ; linux/optimized/vmscan.ll
 ; linux/optimized/xarray.ll
 ; openjdk/optimized/codeHeapState.ll
 ; openjdk/optimized/shenandoahHeapRegion.ll
-; openusd/optimized/fixed-dtoa.cc.ll
 ; qemu/optimized/block_qcow.c.ll
 ; qemu/optimized/block_qcow2-bitmap.c.ll
 ; qemu/optimized/block_qcow2.c.ll
@@ -747,9 +733,30 @@ entry:
   ret i1 %3
 }
 
-; 22 occurrences:
+; 11 occurrences:
+; boost/optimized/to_chars.ll
+; fmt/optimized/format-impl-test.cc.ll
+; hyperscan/optimized/catchup.c.ll
+; hyperscan/optimized/repeat.c.ll
+; libjpeg-turbo/optimized/jcphuff.c.ll
+; llvm/optimized/AArch64FastISel.cpp.ll
+; llvm/optimized/ELFObjectWriter.cpp.ll
+; llvm/optimized/X86ISelDAGToDAG.cpp.ll
+; qemu/optimized/block_qcow2-cluster.c.ll
+; qemu/optimized/util_hbitmap.c.ll
+; redis/optimized/dict.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %0, %1
+  %3 = icmp ult i64 %2, 2199023255553
+  ret i1 %3
+}
+
+; 23 occurrences:
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; arrow/optimized/bignum.cc.ll
+; boost/optimized/approximately_equals.ll
 ; cpython/optimized/longobject.ll
 ; double_conversion/optimized/bignum.cc.ll
 ; gromacs/optimized/scattering-debye.cpp.ll
@@ -775,6 +782,23 @@ define i1 @func000000000000000c(i64 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %0, %1
   %3 = icmp ne i64 %2, 0
+  ret i1 %3
+}
+
+; 8 occurrences:
+; arrow/optimized/fixed-dtoa.cc.ll
+; boost/optimized/rational.ll
+; diesel-rs/optimized/re13hpgqfsvf2ck.ll
+; double_conversion/optimized/fixed-dtoa.cc.ll
+; duckdb/optimized/ub_duckdb_sort.cpp.ll
+; linux/optimized/sd.ll
+; openusd/optimized/fixed-dtoa.cc.ll
+; regex-rs/optimized/33whcn8n29l9c6ys.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %0, %1
+  %3 = icmp samesign ugt i64 %2, 4294967295
   ret i1 %3
 }
 

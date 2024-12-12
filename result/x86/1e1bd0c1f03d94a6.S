@@ -20,12 +20,12 @@ func0000000000000002:                   # @func0000000000000002
 	cltq
 	leaq	(%rdi,%rax,8), %rax
 	retq
-func0000000000000032:                   # @func0000000000000032
+func0000000000000012:                   # @func0000000000000012
 	shlxl	%esi, %edx, %eax
 	cltq
-	leaq	(%rdi,%rax,4), %rax
+	leaq	(%rdi,%rax,8), %rax
 	retq
-func0000000000000012:                   # @func0000000000000012
+func0000000000000032:                   # @func0000000000000032
 	shlxl	%esi, %edx, %eax
 	cltq
 	leaq	(%rdi,%rax,8), %rax

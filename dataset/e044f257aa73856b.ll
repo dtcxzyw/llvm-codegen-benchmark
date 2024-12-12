@@ -18,17 +18,17 @@ entry:
 
 ; 8 occurrences:
 ; cmake/optimized/archive_write_add_filter_compress.c.ll
-; eastl/optimized/EAFixedPoint.cpp.ll
 ; freetype/optimized/autofit.c.ll
 ; linux/optimized/hda_intel.ll
 ; linux/optimized/intel_pstate.ll
 ; linux/optimized/ntp.ll
 ; linux/optimized/pcm_lib.ll
+; lvgl/optimized/lv_math.ll
 ; openusd/optimized/scale_common.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i64 %1) #0 {
 entry:
-  %2 = shl nsw i64 %1, 16
+  %2 = shl nsw i64 %1, 10
   %3 = sdiv i64 %2, %0
   ret i64 %3
 }

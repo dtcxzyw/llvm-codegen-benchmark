@@ -1,12 +1,8 @@
 
-; 10 occurrences:
-; jq/optimized/gb18030.ll
+; 6 occurrences:
 ; linux/optimized/seccomp.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; lua/optimized/lvm.ll
-; luajit/optimized/lj_strfmt.ll
-; luajit/optimized/lj_strfmt_dyn.ll
-; oniguruma/optimized/gb18030.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; qemu/optimized/hw_pci_msix.c.ll

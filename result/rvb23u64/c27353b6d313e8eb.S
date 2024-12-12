@@ -2,15 +2,15 @@ func0000000000000060:                   # @func0000000000000060
 	add	a1, a1, a2
 	add.uw	a0, a1, a0
 	ret
-func0000000000000062:                   # @func0000000000000062
+func0000000000000063:                   # @func0000000000000063
 	add	a1, a1, a2
 	sh3add.uw	a0, a1, a0
 	ret
-func0000000000000042:                   # @func0000000000000042
+func0000000000000043:                   # @func0000000000000043
 	add	a1, a1, a2
 	sh2add.uw	a0, a1, a0
 	ret
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	add	a1, a1, a2
 	add.uw	a0, a1, a0
 	ret
@@ -32,39 +32,39 @@ func000000000000005c:                   # @func000000000000005c
 	slli	a1, a1, 4
 	add	a0, a0, a1
 	ret
-func0000000000000006:                   # @func0000000000000006
+func0000000000000007:                   # @func0000000000000007
 	addw	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func000000000000007e:                   # @func000000000000007e
+func000000000000007f:                   # @func000000000000007f
 	addw	a1, a1, a2
 	sh3add	a0, a1, a0
 	ret
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	addw	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func000000000000000a:                   # @func000000000000000a
+func000000000000000b:                   # @func000000000000000b
 	add	a1, a1, a2
 	add.uw	a0, a1, a0
 	ret
-func000000000000001e:                   # @func000000000000001e
+func000000000000001f:                   # @func000000000000001f
 	addw	a1, a1, a2
 	sh1add	a0, a1, a0
 	ret
-func000000000000006e:                   # @func000000000000006e
+func000000000000006f:                   # @func000000000000006f
 	addw	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func000000000000003e:                   # @func000000000000003e
+func000000000000003f:                   # @func000000000000003f
 	addw	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func0000000000000022:                   # @func0000000000000022
+func0000000000000023:                   # @func0000000000000023
 	add	a1, a1, a2
 	sh2add.uw	a0, a1, a0
 	ret
-func0000000000000046:                   # @func0000000000000046
+func0000000000000047:                   # @func0000000000000047
 	addw	a1, a1, a2
 	sh2add	a0, a1, a0
 	ret
@@ -80,13 +80,13 @@ func0000000000000024:                   # @func0000000000000024
 	addw	a1, a1, a2
 	sh3add	a0, a1, a0
 	ret
-func000000000000004a:                   # @func000000000000004a
+func000000000000004b:                   # @func000000000000004b
 	add	a1, a1, a2
 	slli.uw	a1, a1, 4
 	sh2add	a1, a1, a1
 	add	a0, a0, a1
 	ret
-func0000000000000012:                   # @func0000000000000012
+func0000000000000013:                   # @func0000000000000013
 	add	a1, a1, a2
 	add.uw	a0, a1, a0
 	ret
@@ -94,19 +94,19 @@ func0000000000000064:                   # @func0000000000000064
 	addw	a1, a1, a2
 	sh3add	a0, a1, a0
 	ret
-func000000000000002e:                   # @func000000000000002e
+func000000000000002f:                   # @func000000000000002f
 	addw	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func0000000000000066:                   # @func0000000000000066
+func0000000000000067:                   # @func0000000000000067
 	addw	a1, a1, a2
 	sh2add	a0, a1, a0
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000001b:                   # @func000000000000001b
 	add	a1, a1, a2
 	add.uw	a0, a1, a0
 	ret
-func0000000000000026:                   # @func0000000000000026
+func0000000000000027:                   # @func0000000000000027
 	addw	a1, a1, a2
 	sh3add	a1, a1, a1
 	sh3add	a0, a1, a0

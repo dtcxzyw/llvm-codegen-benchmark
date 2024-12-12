@@ -3,11 +3,11 @@
 ; clamav/optimized/hfsplus.c.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000015(i16 %0, i16 %1, i8 %2) #0 {
+define i1 @func0000000000000025(i16 %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i16
-  %4 = or disjoint i16 %3, %1
-  %5 = icmp uge i16 %4, %0
+  %4 = or disjoint i16 %1, %3
+  %5 = icmp ule i16 %0, %4
   ret i1 %5
 }
 
@@ -26,11 +26,11 @@ entry:
 ; openjdk/optimized/hb-ot-metrics.ll
 ; openjdk/optimized/hb-ot-var.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i16 %0, i16 %1, i8 %2) #0 {
+define i1 @func000000000000002a(i16 %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i16
-  %4 = or disjoint i16 %3, %1
-  %5 = icmp slt i16 %4, %0
+  %4 = or disjoint i16 %1, %3
+  %5 = icmp sgt i16 %0, %4
   ret i1 %5
 }
 
@@ -41,11 +41,11 @@ entry:
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i16 %0, i16 %1, i8 %2) #0 {
+define i1 @func0000000000000026(i16 %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i16
-  %4 = or disjoint i16 %3, %1
-  %5 = icmp sgt i16 %4, %0
+  %4 = or disjoint i16 %1, %3
+  %5 = icmp slt i16 %0, %4
   ret i1 %5
 }
 
@@ -73,11 +73,11 @@ entry:
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wolfssl/optimized/tls.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0, i16 %1, i8 %2) #0 {
+define i1 @func0000000000000021(i16 %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i16
-  %4 = or disjoint i16 %3, %1
-  %5 = icmp eq i16 %4, %0
+  %4 = or disjoint i16 %1, %3
+  %5 = icmp eq i16 %0, %4
   ret i1 %5
 }
 
@@ -86,33 +86,33 @@ entry:
 ; linux/optimized/xhci-hub.ll
 ; lodepng/optimized/pngdetail.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i16 %0, i16 %1, i8 %2) #0 {
+define i1 @func0000000000000024(i16 %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i16
-  %4 = or disjoint i16 %3, %1
-  %5 = icmp ugt i16 %4, %0
+  %4 = or disjoint i16 %1, %3
+  %5 = icmp ult i16 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; wireshark/optimized/mp2t.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i16 %0, i16 %1, i8 %2) #0 {
+define i1 @func000000000000002c(i16 %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i16
-  %4 = or disjoint i16 %3, %1
-  %5 = icmp ne i16 %4, %0
+  %4 = or disjoint i16 %1, %3
+  %5 = icmp ne i16 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i16 %0, i16 %1, i8 %2) #0 {
+define i1 @func0000000000000028(i16 %0, i16 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i16
-  %4 = or disjoint i16 %3, %1
-  %5 = icmp ult i16 %4, %0
+  %4 = or disjoint i16 %1, %3
+  %5 = icmp ugt i16 %0, %4
   ret i1 %5
 }
 

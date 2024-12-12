@@ -1,46 +1,4 @@
 
-; 32 occurrences:
-; llvm/optimized/ASTContext.cpp.ll
-; llvm/optimized/ASTMatchersInternal.cpp.ll
-; llvm/optimized/CGDecl.cpp.ll
-; llvm/optimized/CGExpr.cpp.ll
-; llvm/optimized/CGObjCGNU.cpp.ll
-; llvm/optimized/CombinerHelper.cpp.ll
-; llvm/optimized/Decl.cpp.ll
-; llvm/optimized/DeclBase.cpp.ll
-; llvm/optimized/Expr.cpp.ll
-; llvm/optimized/IndexBody.cpp.ll
-; llvm/optimized/LLLexer.cpp.ll
-; llvm/optimized/LinkModules.cpp.ll
-; llvm/optimized/ObjCMT.cpp.ll
-; llvm/optimized/RecordLayoutBuilder.cpp.ll
-; llvm/optimized/RefCntblBaseVirtualDtorChecker.cpp.ll
-; llvm/optimized/ScalarEvolution.cpp.ll
-; llvm/optimized/Sema.cpp.ll
-; llvm/optimized/SemaAPINotes.cpp.ll
-; llvm/optimized/SemaCXXScopeSpec.cpp.ll
-; llvm/optimized/SemaChecking.cpp.ll
-; llvm/optimized/SemaCodeComplete.cpp.ll
-; llvm/optimized/SemaDecl.cpp.ll
-; llvm/optimized/SemaDeclObjC.cpp.ll
-; llvm/optimized/SemaHLSL.cpp.ll
-; llvm/optimized/SemaLookup.cpp.ll
-; llvm/optimized/SemaObjCProperty.cpp.ll
-; llvm/optimized/SemaStmtAsm.cpp.ll
-; llvm/optimized/SemaTemplateInstantiate.cpp.ll
-; llvm/optimized/SimpleLoopUnswitch.cpp.ll
-; llvm/optimized/StandardInstrumentations.cpp.ll
-; llvm/optimized/UninitializedObjectChecker.cpp.ll
-; openjdk/optimized/linkResolver.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000014(ptr %0, i32 %1) #0 {
-entry:
-  %2 = add nsw i32 %1, -396
-  %3 = icmp ult i32 %2, 7
-  %4 = select i1 %3, ptr null, ptr %0
-  ret ptr %4
-}
-
 ; 7 occurrences:
 ; php/optimized/basic_functions.ll
 ; php/optimized/file.ll
@@ -79,11 +37,32 @@ entry:
 ; abc/optimized/acbFunc.c.ll
 ; hermes/optimized/HadesGC.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000011(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000021(ptr %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 16383
   %3 = select i1 %2, ptr null, ptr %0
   ret ptr %3
+}
+
+; 11 occurrences:
+; llvm/optimized/ASTContext.cpp.ll
+; llvm/optimized/CGObjCGNU.cpp.ll
+; llvm/optimized/Decl.cpp.ll
+; llvm/optimized/DeclBase.cpp.ll
+; llvm/optimized/Expr.cpp.ll
+; llvm/optimized/LinkModules.cpp.ll
+; llvm/optimized/ObjCMT.cpp.ll
+; llvm/optimized/RefCntblBaseVirtualDtorChecker.cpp.ll
+; llvm/optimized/SemaDecl.cpp.ll
+; llvm/optimized/SemaHLSL.cpp.ll
+; llvm/optimized/SemaTemplateInstantiate.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000024(ptr %0, i32 %1) #0 {
+entry:
+  %2 = add nsw i32 %1, -44
+  %3 = icmp ult i32 %2, -7
+  %4 = select i1 %3, ptr null, ptr %0
+  ret ptr %4
 }
 
 ; 2 occurrences:

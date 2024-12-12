@@ -34,11 +34,12 @@ entry:
   ret i32 %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; clamav/optimized/msexpand.c.ll
 ; linux/optimized/intel_overlay.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; opencv/optimized/lapack.cpp.ll
 ; openspiel/optimized/coop_box_pushing.cc.ll
 ; openspiel/optimized/havannah.cc.ll

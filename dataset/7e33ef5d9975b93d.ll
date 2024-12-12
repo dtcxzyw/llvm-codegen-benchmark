@@ -34,13 +34,12 @@ entry:
   ret i32 %5
 }
 
-; 19 occurrences:
+; 18 occurrences:
 ; abc/optimized/abcMerge.c.ll
 ; abc/optimized/giaMinLut.c.ll
 ; abc/optimized/lpkCore.c.ll
 ; abc/optimized/lpkCut.c.ll
 ; abc/optimized/nwkMerge.c.ll
-; libevent/optimized/event.c.ll
 ; opencv/optimized/channels.cpp.ll
 ; openjdk/optimized/bcEscapeAnalyzer.ll
 ; openjdk/optimized/c1_FrameMap.ll
@@ -60,7 +59,7 @@ entry:
   %2 = lshr i32 %1, 3
   %3 = and i32 %2, 1
   %4 = xor i32 %3, 1
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 

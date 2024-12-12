@@ -18,16 +18,11 @@ func0000000000000004:                   # @func0000000000000004
 	sext.w	a0, a0
 	ret
 func0000000000000005:                   # @func0000000000000005
-	andi	a0, a0, 1
 	andi	a1, a1, 1
-	lui	a3, 21
-	addi	a3, a3, 384
-	czero.eqz	a1, a3, a1
-	lui	a3, 1048555
-	addi	a3, a3, -384
-	add	a1, a1, a2
-	czero.eqz	a0, a3, a0
-	addw	a0, a0, a1
+	sh3add	a1, a1, a2
+	andi	a0, a0, 1
+	sh3add	a0, a0, a1
+	sext.w	a0, a0
 	ret
 func000000000000000f:                   # @func000000000000000f
 	andi	a0, a0, 1

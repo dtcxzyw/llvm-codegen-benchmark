@@ -24,6 +24,6 @@ func0000000000000003:                   // @func0000000000000003
                                         // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	orr	x1, x2, x1
+	orr	x1, x1, x2
 	ret
                                         // -- End function

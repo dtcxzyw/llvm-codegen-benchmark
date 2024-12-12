@@ -1,22 +1,19 @@
 
-%"class.hermes::vm::GCHermesValueBase.2881745" = type { %"class.hermes::vm::HermesValue32.2881746" }
-%"class.hermes::vm::HermesValue32.2881746" = type { i32 }
+%"class.hermes::vm::GCHermesValueBase.3076269" = type { %"class.hermes::vm::HermesValue32.3076270" }
+%"class.hermes::vm::HermesValue32.3076270" = type { i32 }
 
-; 8 occurrences:
+; 5 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; git/optimized/replace.ll
 ; grpc/optimized/channel_stack.cc.ll
 ; hyperscan/optimized/fdr.c.ll
-; hyperscan/optimized/fdr_compile.cpp.ll
-; hyperscan/optimized/teddy_compile.cpp.ll
-; openmpi/optimized/mpl_trmem.ll
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000002(ptr %0, i64 %1) #0 {
+define i64 @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 4095
   %3 = and i64 %2, -4096
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }
@@ -26,11 +23,11 @@ entry:
 ; luau/optimized/ltable.cpp.ll
 ; ncnn/optimized/modelbin.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000006(ptr %0, i64 %1) #0 {
+define i64 @func0000000000000007(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 3
   %3 = and i64 %2, -4
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }
@@ -45,11 +42,11 @@ entry:
 ; hyperscan/optimized/fdr_compile.cpp.ll
 ; hyperscan/optimized/teddy_compile.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000000e(ptr %0, i64 %1) #0 {
+define i64 @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 4294967291
   %3 = and i64 %2, 4294967295
-  %4 = getelementptr nusw %"class.hermes::vm::GCHermesValueBase.2881745", ptr %0, i64 %3
+  %4 = getelementptr nusw nuw %"class.hermes::vm::GCHermesValueBase.3076269", ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }
@@ -68,6 +65,20 @@ entry:
   %2 = add nsw i64 %1, -8
   %3 = and i64 %2, -32
   %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = ptrtoint ptr %4 to i64
+  ret i64 %5
+}
+
+; 3 occurrences:
+; hyperscan/optimized/fdr_compile.cpp.ll
+; hyperscan/optimized/teddy_compile.cpp.ll
+; openmpi/optimized/mpl_trmem.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000002(ptr %0, i64 %1) #0 {
+entry:
+  %2 = add i64 %1, 7
+  %3 = and i64 %2, -8
+  %4 = getelementptr nusw i8, ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }

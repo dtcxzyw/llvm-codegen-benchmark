@@ -1,41 +1,27 @@
-func000000000000008b:                   // @func000000000000008b
+func000000000000010b:                   // @func000000000000010b
 // %bb.0:                               // %entry
-	sub	v2.4s, v2.4s, v4.4s
-	sub	v3.4s, v3.4s, v5.4s
-	mvni	v4.4s, #1
-	cmeq	v3.4s, v3.4s, v4.4s
-	cmeq	v2.4s, v2.4s, v4.4s
-	sub	v0.4s, v0.4s, v2.4s
-	sub	v1.4s, v1.4s, v3.4s
+	sub	w8, w1, w2
+	cmn	w8, #2
+	cinc	w0, w0, eq
 	ret
                                         // -- End function
-func00000000000000d3:                   // @func00000000000000d3
+func0000000000000153:                   // @func0000000000000153
 // %bb.0:                               // %entry
-	sub	v2.4s, v2.4s, v4.4s
-	sub	v3.4s, v3.4s, v5.4s
-	mvni	v4.4s, #1
-	cmgt	v3.4s, v3.4s, v4.4s
-	cmgt	v2.4s, v2.4s, v4.4s
-	sub	v0.4s, v0.4s, v2.4s
-	sub	v1.4s, v1.4s, v3.4s
+	sub	w8, w1, w2
+	cmn	w8, #2
+	cinc	w0, w0, gt
 	ret
                                         // -- End function
-func00000000000000d1:                   // @func00000000000000d1
+func0000000000000151:                   // @func0000000000000151
 // %bb.0:                               // %entry
-	cmgt	v3.4s, v3.4s, v5.4s
-	cmgt	v2.4s, v2.4s, v4.4s
-	sub	v0.4s, v0.4s, v2.4s
-	sub	v1.4s, v1.4s, v3.4s
+	cmp	w1, w2
+	cinc	w0, w0, gt
 	ret
                                         // -- End function
-func0000000000000089:                   // @func0000000000000089
+func0000000000000109:                   // @func0000000000000109
 // %bb.0:                               // %entry
-	movi	v6.4s, #4
-	sub	v2.4s, v2.4s, v4.4s
-	sub	v3.4s, v3.4s, v5.4s
-	cmeq	v3.4s, v3.4s, v6.4s
-	cmeq	v2.4s, v2.4s, v6.4s
-	sub	v0.4s, v0.4s, v2.4s
-	sub	v1.4s, v1.4s, v3.4s
+	sub	w8, w1, w2
+	cmp	w8, #4
+	cinc	w0, w0, eq
 	ret
                                         // -- End function

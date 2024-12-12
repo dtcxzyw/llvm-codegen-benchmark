@@ -1,5 +1,5 @@
 
-; 71 occurrences:
+; 72 occurrences:
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/ColladaParser.cpp.ll
 ; assimp/optimized/D3MFImporter.cpp.ll
@@ -27,13 +27,14 @@
 ; linux/optimized/i8042.ll
 ; linux/optimized/info.ll
 ; linux/optimized/intel.ll
-; linux/optimized/nf_conntrack_proto.ll
 ; linux/optimized/string.ll
 ; linux/optimized/trace_events_filter.ll
 ; llvm/optimized/GlobPattern.cpp.ll
 ; llvm/optimized/NullabilityChecker.cpp.ll
 ; llvm/optimized/SemaDeclObjC.cpp.ll
 ; luau/optimized/main.cpp.ll
+; lvgl/optimized/lv_draw.ll
+; lvgl/optimized/lv_obj_style.ll
 ; minetest/optimized/guiFormSpecMenu.cpp.ll
 ; nanosvg/optimized/nanosvg.ll
 ; nlohmann_json/optimized/unit.cpp.ll
@@ -72,7 +73,7 @@
 ; wolfssl/optimized/wc_port.c.ll
 ; yosys/optimized/opt_dff.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000042(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %0, %1
   %3 = icmp eq i8 %0, 0
@@ -90,7 +91,7 @@ entry:
 ; openssl/optimized/quic_record_test-bin-quic_record_test.ll
 ; openssl/optimized/quic_txp_test-bin-quic_txp_test.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000190(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000310(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %0, %1
   %3 = icmp ugt i8 %0, 20
@@ -101,7 +102,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/migration_options.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000090(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000110(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %0, %1
   %3 = icmp ugt i8 %0, 99
@@ -109,7 +110,7 @@ entry:
   ret i1 %4
 }
 
-; 11 occurrences:
+; 12 occurrences:
 ; cmake/optimized/cmSystemTools.cxx.ll
 ; cmake/optimized/xmlparse.c.ll
 ; cpython/optimized/xmlparse.ll
@@ -121,8 +122,9 @@ entry:
 ; qemu/optimized/util_uri.c.ll
 ; slurm/optimized/env.ll
 ; sqlite/optimized/sqlite3.ll
+; zed-rs/optimized/3qgkmgxxtp9x705n0dz6b0fk6.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000302(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %0, %1
   %3 = icmp eq i8 %0, 0
@@ -133,7 +135,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000058(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %0, 104
   %3 = icmp eq i8 %1, 104
@@ -144,7 +146,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/InstCombineCalls.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000118(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000218(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ugt i8 %0, 1
   %3 = icmp ne i8 %0, %1
@@ -158,7 +160,7 @@ entry:
 ; linux/optimized/tx.ll
 ; llvm/optimized/MsgPackDocument.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000082(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000102(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %0, %1
   %3 = icmp eq i8 %0, 10

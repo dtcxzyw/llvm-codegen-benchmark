@@ -1,4 +1,6 @@
 
+%"class.llvm::Use.3230429" = type { ptr, ptr, ptr, ptr }
+
 ; 3 occurrences:
 ; clamav/optimized/mpool.c.ll
 ; flatbuffers/optimized/flatc.cpp.ll
@@ -13,7 +15,7 @@ entry:
   ret ptr %5
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; clamav/optimized/pdf.c.ll
 ; eastl/optimized/EASTLBenchmark.cpp.ll
 ; eastl/optimized/EATest.cpp.ll
@@ -22,14 +24,27 @@ entry:
 ; eastl/optimized/TestVariant.cpp.ll
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/main.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000005e(ptr %0, i8 %1) #0 {
+entry:
+  %2 = zext nneg i8 %1 to i64
+  %3 = sub nsw i64 0, %2
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 16
+  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 3 occurrences:
+; eastl/optimized/TestRingBuffer.cpp.ll
+; eastl/optimized/TestVectorMap.cpp.ll
 ; llvm/optimized/JumpThreading.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000005a(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 16
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  %4 = getelementptr nusw i8, ptr %0, i64 -32
+  %5 = getelementptr nusw %"class.llvm::Use.3230429", ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -52,11 +67,11 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/fast.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i8 %1) #0 {
+define ptr @func000000000000001c(ptr %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 255
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 255
   %5 = getelementptr i8, ptr %4, i64 %3
   ret ptr %5
 }

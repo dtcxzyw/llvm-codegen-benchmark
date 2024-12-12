@@ -1,13 +1,12 @@
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	uzp1	v0.4s, v0.4s, v1.4s
+	ucvtf	s0, w0
 	mov	w8, #1109393408                 // =0x42200000
-	dup	v1.4s, w8
+	fmov	s1, w8
 	mov	w8, #4059                       // =0xfdb
 	movk	w8, #16457, lsl #16
-	ucvtf	v0.4s, v0.4s
-	fdiv	v0.4s, v0.4s, v1.4s
-	dup	v1.4s, w8
-	fmul	v0.4s, v0.4s, v1.4s
+	fdiv	s0, s0, s1
+	fmov	s1, w8
+	fmul	s0, s0, s1
 	ret
                                         // -- End function

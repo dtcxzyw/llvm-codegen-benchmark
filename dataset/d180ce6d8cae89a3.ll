@@ -6,7 +6,7 @@ define i8 @func000000000000003e(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %1, %2
   %4 = trunc nuw nsw i32 %3 to i8
-  %5 = add nuw i8 %4, %0
+  %5 = add nuw i8 %0, %4
   ret i8 %5
 }
 
@@ -17,7 +17,7 @@ define i8 @func000000000000003c(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %1, %2
   %4 = trunc nuw nsw i32 %3 to i8
-  %5 = add i8 %4, %0
+  %5 = add i8 %0, %4
   ret i8 %5
 }
 
@@ -28,7 +28,7 @@ define i8 @func0000000000000020(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %1, %2
   %4 = trunc i32 %3 to i8
-  %5 = add i8 %4, %0
+  %5 = add i8 %0, %4
   ret i8 %5
 }
 
@@ -41,7 +41,7 @@ define i8 @func0000000000000000(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %1, %2
   %4 = trunc i32 %3 to i8
-  %5 = add i8 %4, %0
+  %5 = add i8 %0, %4
   ret i8 %5
 }
 
@@ -53,7 +53,7 @@ define i8 @func0000000000000030(i8 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %1, %2
   %4 = trunc i32 %3 to i8
-  %5 = add i8 %4, %0
+  %5 = add i8 %0, %4
   ret i8 %5
 }
 

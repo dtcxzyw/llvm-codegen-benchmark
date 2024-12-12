@@ -5,7 +5,7 @@
 ; cvc5/optimized/SimpSolver.cc.ll
 ; yosys/optimized/SimpSolver.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func000000000000018a(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 1
   %4 = icmp ne i8 %3, 0
@@ -21,7 +21,7 @@ entry:
 ; z3/optimized/seq_offset_eq.cpp.ll
 ; z3/optimized/tactic_cmds.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i8 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, 6
   %4 = icmp eq i8 %3, 0

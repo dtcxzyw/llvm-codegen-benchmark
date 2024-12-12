@@ -5,6 +5,6 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 func0000000000000008:                   # @func0000000000000008
 	xorl	%eax, %eax
-	cmpq	$65536, %rdi                    # imm = 0x10000
+	cmpq	$65, %rdi
 	cmovbq	%rsi, %rax
 	retq

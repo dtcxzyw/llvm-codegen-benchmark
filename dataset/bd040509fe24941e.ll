@@ -63,6 +63,19 @@ entry:
   ret i1 %5
 }
 
+; 2 occurrences:
+; imgui/optimized/imgui_widgets.cpp.ll
+; pbrt-v4/optimized/shapes.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000002a(float %0, float %1, float %2) #0 {
+entry:
+  %3 = fcmp olt float %2, %1
+  %4 = select i1 %3, float %1, float %2
+  %5 = fsub float %4, %0
+  %6 = fcmp ole float %5, 0.000000e+00
+  ret i1 %6
+}
+
 ; 3 occurrences:
 ; faiss/optimized/IndexRowwiseMinMax.cpp.ll
 ; pbrt-v4/optimized/lights.cpp.ll
@@ -74,18 +87,6 @@ entry:
   %4 = select i1 %3, float %1, float %2
   %5 = fsub float %4, %0
   %6 = fcmp oeq float %5, 0xFFF0000000000000
-  ret i1 %6
-}
-
-; 1 occurrences:
-; pbrt-v4/optimized/shapes.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000002a(float %0, float %1, float %2) #0 {
-entry:
-  %3 = fcmp olt float %1, %2
-  %4 = select i1 %3, float %1, float %2
-  %5 = fsub float %4, %0
-  %6 = fcmp ole float %5, 0.000000e+00
   ret i1 %6
 }
 

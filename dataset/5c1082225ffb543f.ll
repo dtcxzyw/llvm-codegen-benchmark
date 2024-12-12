@@ -16,12 +16,12 @@
 define i1 @func0000000000000018(i1 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = icmp ne i16 %2, 3
-  %4 = or i1 %3, %1
-  %5 = and i1 %4, %0
+  %4 = or i1 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 24 occurrences:
+; 23 occurrences:
 ; cvc5/optimized/sygus_repair_const.cpp.ll
 ; cvc5/optimized/theory_model.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
@@ -38,7 +38,6 @@ entry:
 ; llvm/optimized/TokenAnnotator.cpp.ll
 ; llvm/optimized/UnwrappedLineParser.cpp.ll
 ; llvm/optimized/X86InstrInfo.cpp.ll
-; meshlab/optimized/filter_sketchfab.cpp.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stockfish/optimized/search.ll
 ; wireshark/optimized/packet-arp.c.ll
@@ -61,7 +60,7 @@ entry:
 define i1 @func0000000000000010(i1 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = icmp ugt i16 %2, 4095
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
@@ -73,8 +72,8 @@ entry:
 define i1 @func0000000000000008(i1 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = icmp ult i16 %2, 4096
-  %4 = or i1 %3, %1
-  %5 = and i1 %4, %0
+  %4 = or i1 %1, %3
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

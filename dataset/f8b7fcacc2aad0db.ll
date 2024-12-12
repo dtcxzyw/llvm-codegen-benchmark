@@ -1,7 +1,7 @@
 
-; 18 occurrences:
-; flatbuffers/optimized/flatc.cpp.ll
+; 17 occurrences:
 ; llvm/optimized/X86InstrFMA3Info.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; meilisearch-rs/optimized/4rynht2gwvphprvy.ll
 ; openssl/optimized/libssl-lib-quic_impl.ll
 ; openssl/optimized/libssl-lib-quic_rx_depack.ll
@@ -17,7 +17,6 @@
 ; wasmedge/optimized/executor.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; wireshark/optimized/packet-erf.c.ll
-; wireshark/optimized/packet-sdh.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0) #0 {
 entry:
@@ -35,7 +34,7 @@ entry:
 ; openssl/optimized/libssl-shlib-quic_stream_map.ll
 ; rust-analyzer-rs/optimized/2qyzpr7jeax5a9tm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0) #0 {
+define i1 @func0000000000000024(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 16
   %2 = trunc i64 %1 to i8

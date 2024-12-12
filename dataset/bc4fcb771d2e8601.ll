@@ -42,7 +42,7 @@ entry:
   ret i1 %5
 }
 
-; 34 occurrences:
+; 27 occurrences:
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
 ; darktable/optimized/introspection_colorbalancergb.c.ll
 ; darktable/optimized/introspection_denoiseprofile.c.ll
@@ -52,23 +52,16 @@ entry:
 ; mitsuba3/optimized/mesh.cpp.ll
 ; ocio/optimized/FixedFunctionOpCPU.cpp.ll
 ; openusd/optimized/nanocolor.c.ll
-; pbrt-v4/optimized/aggregate.cpp.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll
 ; pbrt-v4/optimized/camera.cpp.ll
 ; pbrt-v4/optimized/cameras.cpp.ll
-; pbrt-v4/optimized/film.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
-; pbrt-v4/optimized/interaction.cpp.ll
 ; pbrt-v4/optimized/lights.cpp.ll
-; pbrt-v4/optimized/materials.cpp.ll
-; pbrt-v4/optimized/mesh.cpp.ll
 ; pbrt-v4/optimized/primitive.cpp.ll
-; pbrt-v4/optimized/render.cpp.ll
 ; pbrt-v4/optimized/scene.cpp.ll
 ; pbrt-v4/optimized/shapes.cpp.ll
 ; pbrt-v4/optimized/subsurface.cpp.ll
 ; pbrt-v4/optimized/surfscatter.cpp.ll
-; pbrt-v4/optimized/textures.cpp.ll
 ; pbrt-v4/optimized/transform.cpp.ll
 ; pbrt-v4/optimized/vecmath.cpp.ll
 ; typst-rs/optimized/18i60ist7isq7y2m.ll
@@ -81,7 +74,7 @@ entry:
 define i1 @func0000000000000008(float %0, float %1, float %2) #0 {
 entry:
   %3 = fadd float %1, %2
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   %5 = fcmp oeq float %4, 0.000000e+00
   ret i1 %5
 }
@@ -176,7 +169,7 @@ entry:
 define i1 @func0000000000000004(float %0, float %1, float %2) #0 {
 entry:
   %3 = fadd float %1, %2
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   %5 = fcmp ogt float %4, 0.000000e+00
   ret i1 %5
 }
@@ -199,7 +192,7 @@ entry:
 define i1 @func000000000000000b(float %0, float %1, float %2) #0 {
 entry:
   %3 = fadd float %1, %2
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   %5 = fcmp ule float %4, -1.000000e+00
   ret i1 %5
 }
@@ -210,7 +203,7 @@ entry:
 define i1 @func000000000000000d(float %0, float %1, float %2) #0 {
 entry:
   %3 = fadd float %1, %2
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   %5 = fcmp uge float %4, 2.560000e+02
   ret i1 %5
 }
@@ -237,25 +230,8 @@ entry:
 define i1 @func0000000000000007(float %0, float %1, float %2) #0 {
 entry:
   %3 = fadd float %1, %2
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   %5 = fcmp une float %4, 0.000000e+00
-  ret i1 %5
-}
-
-; 7 occurrences:
-; ncnn/optimized/roialign.cpp.ll
-; ncnn/optimized/roialign_x86.cpp.ll
-; ncnn/optimized/roialign_x86_avx.cpp.ll
-; ncnn/optimized/roialign_x86_avx512.cpp.ll
-; ncnn/optimized/roialign_x86_fma.cpp.ll
-; pbrt-v4/optimized/lights.cpp.ll
-; pbrt-v4/optimized/shapes.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000000a(float %0, float %1, float %2) #0 {
-entry:
-  %3 = fadd float %1, %2
-  %4 = fadd float %3, %0
-  %5 = fcmp ole float %4, 0.000000e+00
   ret i1 %5
 }
 
@@ -272,13 +248,25 @@ entry:
   ret i1 %5
 }
 
+; 2 occurrences:
+; pbrt-v4/optimized/lights.cpp.ll
+; pbrt-v4/optimized/shapes.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000a(float %0, float %1, float %2) #0 {
+entry:
+  %3 = fadd float %1, %2
+  %4 = fadd float %0, %3
+  %5 = fcmp ole float %4, 0.000000e+00
+  ret i1 %5
+}
+
 ; 1 occurrences:
 ; pbrt-v4/optimized/shapes.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(float %0, float %1, float %2) #0 {
 entry:
   %3 = fadd float %1, %2
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   %5 = fcmp oge float %4, 0.000000e+00
   ret i1 %5
 }
@@ -301,7 +289,7 @@ entry:
 define i1 @func0000000000000003(float %0, float %1, float %2) #0 {
 entry:
   %3 = fadd float %1, %2
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   %5 = fcmp ult float %4, 0.000000e+00
   ret i1 %5
 }

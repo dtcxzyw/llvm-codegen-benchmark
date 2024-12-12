@@ -5,7 +5,7 @@ func0000000000000008:                   # @func0000000000000008
 	vmseq.vx	v0, v12, a0
 	lui	a0, 64
 	vor.vx	v10, v10, a0, v0.t
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	li	a0, 512
 	vor.vx	v8, v8, a0
 	ret
@@ -37,7 +37,7 @@ func000000000000000b:                   # @func000000000000000b
 	lui	a0, 4
 	vor.vx	v12, v10, a0
 	vmerge.vvm	v10, v12, v10, v0
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	bseti	a0, zero, 11
 	vor.vx	v8, v8, a0
 	ret
@@ -49,7 +49,7 @@ func000000000000000e:                   # @func000000000000000e
 	li	a0, 225
 	vmerge.vxm	v12, v12, a0, v0
 	vor.vv	v10, v12, v10
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	lui	a0, 1048064
 	vor.vx	v8, v8, a0
 	ret

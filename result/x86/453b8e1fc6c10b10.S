@@ -1,18 +1,18 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	incl	%esi
 	xorl	%eax, %eax
 	cmpl	%edi, %esi
 	sete	%al
 	leaq	4(,%rax,4), %rax
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	incl	%esi
 	xorl	%eax, %eax
 	cmpl	%edi, %esi
 	sete	%al
 	leaq	4(,%rax,4), %rax
 	retq
-func0000000000000036:                   # @func0000000000000036
+func0000000000000066:                   # @func0000000000000066
 	incl	%esi
 	xorl	%eax, %eax
 	cmpl	%edi, %esi

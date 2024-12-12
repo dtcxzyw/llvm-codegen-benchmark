@@ -45,6 +45,11 @@ func000000000000003d:                   # @func000000000000003d
 	sh2add.uw	a1, a2, a1
 	add	a0, a0, a1
 	ret
+func000000000000003e:                   # @func000000000000003e
+	slli.uw	a2, a2, 28
+	add	a0, a0, a1
+	add	a0, a0, a2
+	ret
 func0000000000000038:                   # @func0000000000000038
 	sh1add.uw	a1, a2, a1
 	add	a0, a0, a1

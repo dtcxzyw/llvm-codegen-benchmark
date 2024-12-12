@@ -9,7 +9,7 @@ define i1 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
   %2 = srem i64 %1, 3600
   %3 = icmp eq i64 %2, 0
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
@@ -32,7 +32,7 @@ define i1 @func000000000000000a(i1 %0, i64 %1) #0 {
 entry:
   %2 = srem i64 %1, 1000000000
   %3 = icmp sgt i64 %2, 0
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
@@ -43,7 +43,7 @@ define i1 @func0000000000000006(i1 %0, i64 %1) #0 {
 entry:
   %2 = srem i64 %1, 1000000000
   %3 = icmp slt i64 %2, 0
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 
@@ -58,7 +58,7 @@ define i1 @func000000000000000c(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 7
   %3 = icmp ne i64 %2, 0
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   ret i1 %4
 }
 

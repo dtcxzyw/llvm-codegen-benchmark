@@ -10,6 +10,7 @@
 ; casadi/optimized/fmu2.cpp.ll
 ; ceres/optimized/gradient_checker.cc.ll
 ; darktable/optimized/darkroom.c.ll
+; flac/optimized/window.c.ll
 ; g2o/optimized/dquat2mat.cpp.ll
 ; g2o/optimized/isometry3d_gradients.cpp.ll
 ; g2o/optimized/robust_kernel_impl.cpp.ll
@@ -26,7 +27,6 @@
 ; openusd/optimized/catmarkPatchBuilder.cpp.ll
 ; openusd/optimized/dualQuatd.cpp.ll
 ; proj/optimized/tmerc.cpp.ll
-; proj/optimized/wag7.cpp.ll
 ; quantlib/optimized/bjerksundstenslandengine.ll
 ; quantlib/optimized/coshestonengine.ll
 ; quantlib/optimized/squarerootandersen.ll
@@ -34,9 +34,9 @@
 ; Function Attrs: nounwind
 define double @func0000000000000000(double %0, double %1) #0 {
 entry:
-  %2 = fdiv double 1.000000e+00, %1
-  %3 = fmul double %2, 2.000000e+00
-  %4 = fmul double %3, %0
+  %2 = fdiv double 8.000000e+00, %1
+  %3 = fmul double %2, -5.000000e-01
+  %4 = fmul double %0, %3
   ret double %4
 }
 

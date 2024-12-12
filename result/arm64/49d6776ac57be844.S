@@ -45,13 +45,6 @@ func000000000000001e:                   // @func000000000000001e
 	and	x0, x8, #0xfffffffffffffff8
 	ret
                                         // -- End function
-func0000000000000018:                   // @func0000000000000018
-// %bb.0:                               // %entry
-	add	x8, x1, x0, lsl #1
-	sub	x8, x2, x8
-	and	x0, x8, #0xfffffffffffffffe
-	ret
-                                        // -- End function
 func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
 	add	x8, x1, x0, lsl #3
@@ -71,5 +64,12 @@ func0000000000000010:                   // @func0000000000000010
 	add	x8, x1, x0, lsl #2
 	sub	x8, x2, x8
 	and	x0, x8, #0xfffffffffffffffc
+	ret
+                                        // -- End function
+func0000000000000018:                   // @func0000000000000018
+// %bb.0:                               // %entry
+	add	x8, x1, x0, lsl #4
+	sub	x8, x2, x8
+	and	x0, x8, #0xfffffffffffffff0
 	ret
                                         // -- End function

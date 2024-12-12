@@ -1,4 +1,4 @@
-func00000000000000f5:                   # @func00000000000000f5
+func00000000000001f5:                   # @func00000000000001f5
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
 	vpsllq	$16, %ymm2, %ymm2
 	vpaddq	%ymm1, %ymm0, %ymm0
@@ -6,7 +6,7 @@ func00000000000000f5:                   # @func00000000000000f5
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000001f8:                   # @func00000000000001f8
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
 	vpsllq	$16, %ymm2, %ymm2
 	vpaddq	%ymm1, %ymm0, %ymm0
@@ -14,7 +14,7 @@ func00000000000000f8:                   # @func00000000000000f8
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
 	vpsllq	$32, %ymm2, %ymm2
 	vpaddq	%ymm1, %ymm0, %ymm0
@@ -22,7 +22,7 @@ func0000000000000084:                   # @func0000000000000084
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000000c5:                   # @func00000000000000c5
+func0000000000000185:                   # @func0000000000000185
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
 	vpsllq	$20, %ymm2, %ymm2
 	vpaddq	%ymm1, %ymm0, %ymm0
@@ -30,7 +30,7 @@ func00000000000000c5:                   # @func00000000000000c5
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000000c8:                   # @func00000000000000c8
+func0000000000000188:                   # @func0000000000000188
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
 	vpsllq	$20, %ymm2, %ymm2
 	vpaddq	%ymm1, %ymm0, %ymm0
@@ -38,7 +38,7 @@ func00000000000000c8:                   # @func00000000000000c8
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000000c4:                   # @func00000000000000c4
+func0000000000000184:                   # @func0000000000000184
 	vpmovzxdq	%xmm2, %ymm2            # ymm2 = xmm2[0],zero,xmm2[1],zero,xmm2[2],zero,xmm2[3],zero
 	vpsllq	$5, %ymm2, %ymm2
 	vpaddq	%ymm1, %ymm0, %ymm0

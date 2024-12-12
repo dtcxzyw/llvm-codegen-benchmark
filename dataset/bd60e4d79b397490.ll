@@ -4,7 +4,7 @@
 ; openjdk/optimized/cmscgats.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000096(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000126(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, %0
   %4 = sdiv i32 %3, 2
@@ -19,7 +19,7 @@ entry:
 ; postgres/optimized/multirangetypes_selfuncs.ll
 ; postgres/optimized/rangetypes_selfuncs.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000016(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000026(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, %0
   %4 = sdiv i32 %3, 2

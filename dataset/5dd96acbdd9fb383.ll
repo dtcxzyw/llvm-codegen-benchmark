@@ -6,7 +6,7 @@ define i64 @func00000000000000c2(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = zext i1 %2 to i64
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = shl nuw i64 %4, 1
   ret i64 %5
 }
@@ -19,7 +19,7 @@ define i64 @func00000000000000c3(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = zext i1 %2 to i64
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   %5 = shl nuw nsw i64 %4, 1
   ret i64 %5
 }
@@ -34,7 +34,7 @@ define i64 @func00000000000000c7(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 0
   %3 = zext i1 %2 to i64
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = shl nuw nsw i64 %4, 2
   ret i64 %5
 }

@@ -9,5 +9,5 @@ func0000000000000005:                   # @func0000000000000005
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
 	vpternlogq	$15, %ymm2, %ymm2, %ymm2 # ymm2 = ~ymm2
-	vpaddq	%ymm0, %ymm2, %ymm0 {%k1} {z}
+	vpaddq	%ymm2, %ymm0, %ymm0 {%k1} {z}
 	retq

@@ -12,18 +12,18 @@
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; llvm/optimized/TailRecursionElimination.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000181(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %.not = icmp eq i8 %2, 64
   %3 = select i1 %.not, ptr %1, ptr null
-  %4 = icmp eq ptr %3, %0
+  %4 = icmp eq ptr %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; llvm/optimized/StackSafetyAnalysis.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000184(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %.not = icmp eq i8 %2, 60
   %3 = icmp ugt ptr %1, %0
@@ -34,11 +34,11 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/VectorCombine.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000081(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 29
   %4 = select i1 %3, ptr null, ptr %1
-  %5 = icmp eq ptr %4, %0
+  %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 
@@ -50,11 +50,11 @@ entry:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
 ; protobuf/optimized/descriptor.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, -1
   %4 = select i1 %3, ptr null, ptr %1
-  %5 = icmp eq ptr %4, %0
+  %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 

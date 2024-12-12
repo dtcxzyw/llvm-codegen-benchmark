@@ -30,6 +30,8 @@
 ; arrow/optimized/vector_selection_take_internal.cc.ll
 ; assimp/optimized/IRRLoader.cpp.ll
 ; assimp/optimized/UnrealLoader.cpp.ll
+; boost/optimized/basic_text_iprimitive.ll
+; boost/optimized/rational.ll
 ; brotli/optimized/encode.c.ll
 ; c3c/optimized/llvm_codegen.c.ll
 ; c3c/optimized/llvm_codegen_expr.c.ll
@@ -74,13 +76,9 @@
 ; graphviz/optimized/lab.c.ll
 ; graphviz/optimized/sfprint.c.ll
 ; gromacs/optimized/cstringutil.cpp.ll
-; gromacs/optimized/dlange.cpp.ll
-; gromacs/optimized/dlanst.cpp.ll
 ; gromacs/optimized/dlascl.cpp.ll
 ; gromacs/optimized/gen_ad.cpp.ll
 ; gromacs/optimized/matio.cpp.ll
-; gromacs/optimized/slange.cpp.ll
-; gromacs/optimized/slanst.cpp.ll
 ; gromacs/optimized/slascl.cpp.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hdf5/optimized/H5Zscaleoffset.c.ll
@@ -155,7 +153,6 @@
 ; linux/optimized/insn-eval.ll
 ; linux/optimized/intel_dpll.ll
 ; linux/optimized/intel_pstate.ll
-; linux/optimized/logips2pp.ll
 ; linux/optimized/nf_conntrack_sip.ll
 ; linux/optimized/percpu.ll
 ; linux/optimized/psmouse-base.ll
@@ -199,6 +196,13 @@
 ; luajit/optimized/lj_record_dyn.ll
 ; luau/optimized/Compiler.cpp.ll
 ; luau/optimized/IrLoweringX64.cpp.ll
+; lvgl/optimized/lv_calendar.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_draw_sw_line.ll
+; lvgl/optimized/lv_indev.ll
+; lvgl/optimized/lv_indev_scroll.ll
+; lvgl/optimized/lv_roller.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; memcached/optimized/memcached-storage.ll
 ; memcached/optimized/memcached_debug-storage.ll
 ; meshlab/optimized/meshrender.cpp.ll
@@ -235,7 +239,6 @@
 ; minetest/optimized/serverpackethandler.cpp.ll
 ; minetest/optimized/test_map.cpp.ll
 ; minetest/optimized/test_voxelalgorithms.cpp.ll
-; minetest/optimized/test_voxelmanipulator.cpp.ll
 ; minetest/optimized/tool.cpp.ll
 ; minetest/optimized/treegen.cpp.ll
 ; minetest/optimized/voxel.cpp.ll
@@ -309,7 +312,6 @@
 ; mitsuba3/optimized/perspective.cpp.ll
 ; mitsuba3/optimized/plastic.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/point.cpp.ll
 ; mitsuba3/optimized/polarizer.cpp.ll
 ; mitsuba3/optimized/pplastic.cpp.ll
@@ -362,7 +364,6 @@
 ; mitsuba3/optimized/zstream.cpp.ll
 ; nix/optimized/fromTOML.ll
 ; nix/optimized/nix-collect-garbage.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/profile.ll
 ; nix/optimized/shared.ll
 ; nix/optimized/store-gc.ll
@@ -501,14 +502,12 @@
 ; qemu/optimized/accel_tcg_cputlb.c.ll
 ; qemu/optimized/accel_tcg_tcg-runtime-gvec.c.ll
 ; qemu/optimized/accel_tcg_user-exec.c.ll
-; qemu/optimized/hw_9pfs_9p.c.ll
 ; qemu/optimized/hw_display_virtio-gpu.c.ll
 ; qemu/optimized/hw_scsi_lsi53c895a.c.ll
 ; qemu/optimized/hw_scsi_scsi-generic.c.ll
 ; qemu/optimized/linux-user_signal.c.ll
 ; qemu/optimized/linux-user_strace.c.ll
 ; qemu/optimized/monitor_hmp-cmds-target.c.ll
-; qemu/optimized/target_riscv_cpu_helper.c.ll
 ; qemu/optimized/target_riscv_translate.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; quantlib/optimized/asx.ll
@@ -675,6 +674,7 @@
 ; z3/optimized/smt_enode.cpp.ll
 ; z3/optimized/specrel_solver.cpp.ll
 ; z3/optimized/user_solver.cpp.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; zstd/optimized/zstd_v03.c.ll
@@ -733,7 +733,7 @@ entry:
   ret i32 %2
 }
 
-; 104 occurrences:
+; 106 occurrences:
 ; abc/optimized/abcRestruct.c.ll
 ; abc/optimized/abcRr.c.ll
 ; abc/optimized/absGla.c.ll
@@ -814,6 +814,8 @@ entry:
 ; luajit/optimized/lj_ctype_dyn.ll
 ; luajit/optimized/lj_ir.ll
 ; luajit/optimized/lj_ir_dyn.ll
+; lvgl/optimized/lv_freetype.ll
+; lvgl/optimized/lv_indev.ll
 ; meshoptimizer/optimized/indexcodec.cpp.ll
 ; oniguruma/optimized/regcomp.ll
 ; openjdk/optimized/IntArgbBm.ll
@@ -846,13 +848,12 @@ entry:
   ret i32 %2
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/giaEra2.c.ll
 ; libwebp/optimized/frame_dec.c.ll
 ; libwebp/optimized/picture_csp_enc.c.ll
 ; libwebp/optimized/token_enc.c.ll
 ; linux/optimized/alps.ll
-; linux/optimized/logips2pp.ll
 ; z3/optimized/tbv.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0) #0 {

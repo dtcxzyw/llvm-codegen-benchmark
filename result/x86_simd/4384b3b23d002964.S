@@ -19,7 +19,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpaddd	%ymm1, %ymm2, %ymm2
 	vpaddd	.LCPI0_0(%rip){1to8}, %ymm2, %ymm1
 	vpbroadcastd	.LCPI0_1(%rip), %ymm3   # ymm3 = [48,48,48,48,48,48,48,48]
@@ -48,7 +48,7 @@ func0000000000000011:                   # @func0000000000000011
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000111:                   # @func0000000000000111
+func0000000000000221:                   # @func0000000000000221
 	vpaddd	%ymm1, %ymm2, %ymm2
 	vpaddd	.LCPI1_0(%rip){1to8}, %ymm2, %ymm1
 	vpbroadcastd	.LCPI1_1(%rip), %ymm3   # ymm3 = [48,48,48,48,48,48,48,48]
@@ -77,7 +77,7 @@ func0000000000000111:                   # @func0000000000000111
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000101:                   # @func0000000000000101
+func0000000000000201:                   # @func0000000000000201
 	vpaddd	%ymm1, %ymm2, %ymm2
 	vpaddd	.LCPI2_0(%rip){1to8}, %ymm2, %ymm1
 	vpbroadcastd	.LCPI2_1(%rip), %ymm3   # ymm3 = [48,48,48,48,48,48,48,48]

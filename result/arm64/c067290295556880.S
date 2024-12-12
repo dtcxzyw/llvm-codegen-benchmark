@@ -1,91 +1,42 @@
+func00000000000000c1:                   // @func00000000000000c1
+// %bb.0:                               // %entry
+                                        // kill: def $w1 killed $w1 def $x1
+	lsr	w8, w0, w1
+	tst	w8, #0x1
+	cset	w0, eq
+	ret
+                                        // -- End function
+func0000000000000041:                   // @func0000000000000041
+// %bb.0:                               // %entry
+                                        // kill: def $w1 killed $w1 def $x1
+	lsr	w8, w0, w1
+	tst	w8, #0x1
+	cset	w0, eq
+	ret
+                                        // -- End function
 func0000000000000061:                   // @func0000000000000061
 // %bb.0:                               // %entry
-	movi	v3.8b, #31
-	and	v2.8b, v2.8b, v3.8b
-	movi	v3.4s, #1
-	ushll	v2.8h, v2.8b, #0
-	ushll	v4.4s, v2.4h, #0
-	ushll2	v2.4s, v2.8h, #0
-	ushl	v2.4s, v3.4s, v2.4s
-	ushl	v3.4s, v3.4s, v4.4s
-	and	v0.16b, v3.16b, v0.16b
-	and	v1.16b, v2.16b, v1.16b
-	cmeq	v1.4s, v1.4s, #0
-	cmeq	v0.4s, v0.4s, #0
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+                                        // kill: def $w1 killed $w1 def $x1
+	and	x8, x1, #0x7
+	lsr	w8, w0, w8
+	tst	w8, #0x1
+	cset	w0, eq
 	ret
                                         // -- End function
-func0000000000000021:                   // @func0000000000000021
+func000000000000006c:                   // @func000000000000006c
 // %bb.0:                               // %entry
-	movi	v3.8b, #31
-	and	v2.8b, v2.8b, v3.8b
-	movi	v3.4s, #1
-	ushll	v2.8h, v2.8b, #0
-	ushll	v4.4s, v2.4h, #0
-	ushll2	v2.4s, v2.8h, #0
-	ushl	v2.4s, v3.4s, v2.4s
-	ushl	v3.4s, v3.4s, v4.4s
-	and	v0.16b, v3.16b, v0.16b
-	and	v1.16b, v2.16b, v1.16b
-	cmeq	v1.4s, v1.4s, #0
-	cmeq	v0.4s, v0.4s, #0
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+                                        // kill: def $w1 killed $w1 def $x1
+	and	x8, x1, #0x7
+	lsr	w8, w0, w8
+	and	w0, w8, #0x1
 	ret
                                         // -- End function
-func0000000000000031:                   // @func0000000000000031
+func00000000000000e1:                   // @func00000000000000e1
 // %bb.0:                               // %entry
-	movi	v3.8b, #7
-	and	v2.8b, v2.8b, v3.8b
-	movi	v3.4s, #1
-	ushll	v2.8h, v2.8b, #0
-	ushll	v4.4s, v2.4h, #0
-	ushll2	v2.4s, v2.8h, #0
-	ushl	v2.4s, v3.4s, v2.4s
-	ushl	v3.4s, v3.4s, v4.4s
-	and	v0.16b, v3.16b, v0.16b
-	and	v1.16b, v2.16b, v1.16b
-	cmeq	v1.4s, v1.4s, #0
-	cmeq	v0.4s, v0.4s, #0
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
-	ret
-                                        // -- End function
-func000000000000003c:                   // @func000000000000003c
-// %bb.0:                               // %entry
-	movi	v3.8b, #7
-	and	v2.8b, v2.8b, v3.8b
-	movi	v3.4s, #1
-	ushll	v2.8h, v2.8b, #0
-	ushll	v4.4s, v2.4h, #0
-	ushll2	v2.4s, v2.8h, #0
-	ushl	v2.4s, v3.4s, v2.4s
-	ushl	v3.4s, v3.4s, v4.4s
-	and	v0.16b, v3.16b, v0.16b
-	and	v1.16b, v2.16b, v1.16b
-	cmeq	v1.4s, v1.4s, #0
-	cmeq	v0.4s, v0.4s, #0
-	uzp1	v0.8h, v0.8h, v1.8h
-	mvn	v0.16b, v0.16b
-	xtn	v0.8b, v0.8h
-	ret
-                                        // -- End function
-func0000000000000071:                   // @func0000000000000071
-// %bb.0:                               // %entry
-	movi	v3.8b, #7
-	and	v2.8b, v2.8b, v3.8b
-	movi	v3.4s, #1
-	ushll	v2.8h, v2.8b, #0
-	ushll	v4.4s, v2.4h, #0
-	ushll2	v2.4s, v2.8h, #0
-	ushl	v2.4s, v3.4s, v2.4s
-	ushl	v3.4s, v3.4s, v4.4s
-	and	v0.16b, v3.16b, v0.16b
-	and	v1.16b, v2.16b, v1.16b
-	cmeq	v1.4s, v1.4s, #0
-	cmeq	v0.4s, v0.4s, #0
-	uzp1	v0.8h, v0.8h, v1.8h
-	xtn	v0.8b, v0.8h
+                                        // kill: def $w1 killed $w1 def $x1
+	and	x8, x1, #0x7
+	lsr	w8, w0, w8
+	tst	w8, #0x1
+	cset	w0, eq
 	ret
                                         // -- End function

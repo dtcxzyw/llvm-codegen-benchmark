@@ -1,26 +1,4 @@
 
-%struct.ar_table_pair_struct.2486121 = type { i64, i64 }
-%"class.rocksdb::autovector.2499500" = type { i64, [16 x i8], ptr, %"class.std::vector.7.2499501" }
-%"class.std::vector.7.2499501" = type { %"struct.std::_Vector_base.8.2499502" }
-%"struct.std::_Vector_base.8.2499502" = type { %"struct.std::_Vector_base<std::pair<unsigned long, int>, std::allocator<std::pair<unsigned long, int>>>::_Vector_impl.2499503" }
-%"struct.std::_Vector_base<std::pair<unsigned long, int>, std::allocator<std::pair<unsigned long, int>>>::_Vector_impl.2499503" = type { %"struct.std::_Vector_base<std::pair<unsigned long, int>, std::allocator<std::pair<unsigned long, int>>>::_Vector_impl_data.2499504" }
-%"struct.std::_Vector_base<std::pair<unsigned long, int>, std::allocator<std::pair<unsigned long, int>>>::_Vector_impl_data.2499504" = type { ptr, ptr, ptr }
-%struct.Vmxnet3TxqDescr.2594414 = type { %struct.Vmxnet3Ring.2594415, %struct.Vmxnet3Ring.2594415, i8, i64, %struct.UPT1_TxStats.2594416 }
-%struct.Vmxnet3Ring.2594415 = type { i64, i32, i32, i32, i8 }
-%struct.UPT1_TxStats.2594416 = type { i64, i64, i64, i64, i64, i64, i64, i64, i64, i64 }
-%"class.(anonymous namespace)::DbgVariableValue.2990950" = type { %"class.std::unique_ptr.315.2990951", i8, ptr }
-%"class.std::unique_ptr.315.2990951" = type { %"struct.std::__uniq_ptr_data.316.2990952" }
-%"struct.std::__uniq_ptr_data.316.2990952" = type { %"class.std::__uniq_ptr_impl.317.2990953" }
-%"class.std::__uniq_ptr_impl.317.2990953" = type { %"class.std::tuple.318.2990954" }
-%"class.std::tuple.318.2990954" = type { %"struct.std::_Tuple_impl.319.2990955" }
-%"struct.std::_Tuple_impl.319.2990955" = type { %"struct.std::_Head_base.322.2990956" }
-%"struct.std::_Head_base.322.2990956" = type { ptr }
-%struct.free_area.3346652 = type { [4 x %struct.list_head.3346628], i64 }
-%struct.list_head.3346628 = type { ptr, ptr }
-%struct.cache_bin_s.3533845 = type { ptr, %struct.cache_bin_stats_s.3533846, i16, i16, i16, %struct.cache_bin_info_s.3533847 }
-%struct.cache_bin_stats_s.3533846 = type { i64 }
-%struct.cache_bin_info_s.3533847 = type { i16 }
-
 ; 22 occurrences:
 ; linux/optimized/cpu_rmap.ll
 ; linux/optimized/hrtimer.ll
@@ -45,16 +23,18 @@
 ; qemu/optimized/target_riscv_pmu.c.ll
 ; ruby/optimized/hash.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000022(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000033(ptr %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 4294967295
-  %3 = getelementptr nusw i8, ptr %0, i64 8
-  %4 = getelementptr [8 x %struct.ar_table_pair_struct.2486121], ptr %3, i64 0, i64 %2, i32 1
+  %2 = shl i64 %1, 4
+  %.idx = and i64 %2, 68719476720
+  %3 = getelementptr i8, ptr %0, i64 16
+  %4 = getelementptr i8, ptr %3, i64 %.idx
   ret ptr %4
 }
 
-; 284 occurrences:
+; 294 occurrences:
 ; abseil-cpp/optimized/symbolize.cc.ll
+; boost/optimized/alloc_lib.ll
 ; folly/optimized/AsyncLogWriter.cpp.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/MaxConcurrentRateLimiter.cpp.ll
@@ -104,6 +84,9 @@ entry:
 ; libwebp/optimized/vp8l_dec.c.ll
 ; lief/optimized/aria.c.ll
 ; llama.cpp/optimized/ggml-alloc.c.ll
+; llvm/optimized/LiveDebugVariables.cpp.ll
+; llvm/optimized/MallocChecker.cpp.ll
+; llvm/optimized/Reassociate.cpp.ll
 ; luajit/optimized/lib_string.ll
 ; luajit/optimized/lib_string_dyn.ll
 ; luajit/optimized/minilua.ll
@@ -112,6 +95,7 @@ entry:
 ; openjdk/optimized/compile.ll
 ; openjdk/optimized/xMark.ll
 ; openjdk/optimized/zMark.ll
+; openusd/optimized/namespaceEditor.cpp.ll
 ; php/optimized/zend_jit.ll
 ; redis/optimized/arena.ll
 ; redis/optimized/arena.sym.ll
@@ -338,12 +322,30 @@ entry:
 ; spike/optimized/vmflt_vf.ll
 ; spike/optimized/vmfne_vf.ll
 ; sqlite/optimized/sqlite3.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 127
-  %3 = getelementptr nusw i8, ptr %0, i64 200
-  %4 = getelementptr [128 x %"class.rocksdb::autovector.2499500"], ptr %3, i64 0, i64 %2, i32 3
+  %.idx = mul nuw nsw i64 %2, 56
+  %3 = getelementptr i8, ptr %0, i64 232
+  %4 = getelementptr i8, ptr %3, i64 %.idx
+  ret ptr %4
+}
+
+; 1 occurrences:
+; folly/optimized/AsyncLogWriter.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002f(ptr %0, i64 %1) #0 {
+entry:
+  %2 = getelementptr nusw i8, ptr %0, i64 -96
+  %3 = trunc i64 %1 to i1
+  %.offs = select i1 %3, i64 32, i64 8
+  %4 = getelementptr nuw i8, ptr %2, i64 %.offs
   ret ptr %4
 }
 
@@ -351,48 +353,24 @@ entry:
 ; postgres/optimized/localtime.ll
 ; qemu/optimized/hw_net_vmxnet3.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000020(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000030(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 7
-  %3 = getelementptr nusw i8, ptr %0, i64 12992
-  %4 = getelementptr [8 x %struct.Vmxnet3TxqDescr.2594414], ptr %3, i64 0, i64 %2, i32 0, i32 4
-  ret ptr %4
-}
-
-; 3 occurrences:
-; llvm/optimized/LiveDebugVariables.cpp.ll
-; llvm/optimized/Reassociate.cpp.ll
-; openusd/optimized/namespaceEditor.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000003b(ptr %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 63
-  %3 = getelementptr nusw nuw i8, ptr %0, i64 64
-  %4 = getelementptr [4 x %"class.(anonymous namespace)::DbgVariableValue.2990950"], ptr %3, i64 0, i64 %2, i32 1
-  ret ptr %4
-}
-
-; 3 occurrences:
-; llvm/optimized/LiveDebugVariables.cpp.ll
-; llvm/optimized/MallocChecker.cpp.ll
-; openusd/optimized/namespaceEditor.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 4294967295
-  %3 = getelementptr nusw nuw i8, ptr %0, i64 64
-  %4 = getelementptr [4 x %"class.(anonymous namespace)::DbgVariableValue.2990950"], ptr %3, i64 0, i64 %2, i32 1
+  %.idx = mul nuw nsw i64 %2, 140
+  %3 = getelementptr i8, ptr %0, i64 13012
+  %4 = getelementptr i8, ptr %3, i64 %.idx
   ret ptr %4
 }
 
 ; 1 occurrences:
 ; linux/optimized/page_alloc.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
-  %3 = getelementptr i8, ptr %0, i64 240
-  %4 = getelementptr [11 x %struct.free_area.3346652], ptr %3, i64 0, i64 %2, i32 0, i64 0, i32 1
+  %.idx = mul nuw nsw i64 %2, 72
+  %3 = getelementptr i8, ptr %0, i64 248
+  %4 = getelementptr i8, ptr %3, i64 %.idx
   ret ptr %4
 }
 
@@ -401,11 +379,12 @@ entry:
 ; jemalloc/optimized/jemalloc.pic.ll
 ; jemalloc/optimized/jemalloc.sym.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000028(ptr %0, i64 %1) #0 {
+define ptr @func000000000000003c(ptr %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
-  %3 = getelementptr nusw i8, ptr %0, i64 8
-  %4 = getelementptr [73 x %struct.cache_bin_s.3533845], ptr %3, i64 0, i64 %2, i32 5
+  %.idx = mul nuw nsw i64 %2, 24
+  %3 = getelementptr i8, ptr %0, i64 30
+  %4 = getelementptr i8, ptr %3, i64 %.idx
   ret ptr %4
 }
 

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/time.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.abs.i64(i64 %1, i1 true)
   %3 = icmp ne i64 %2, %0
@@ -35,40 +35,38 @@ entry:
 ; 1 occurrences:
 ; openvdb/optimized/Activate.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000006a(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call noundef i64 @llvm.abs.i64(i64 %1, i1 true)
   %3 = icmp sgt i64 %2, %0
   ret i1 %3
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; freetype/optimized/autofit.c.ll
 ; freetype/optimized/pshinter.c.ll
-; git/optimized/receive-pack.ll
 ; linux/optimized/intel_color.ll
 ; openjdk/optimized/divnode.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.abs.i64(i64 %1, i1 true)
-  %3 = icmp ugt i64 %2, %0
+  %3 = icmp samesign ugt i64 %2, %0
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; openjdk/optimized/divnode.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.abs.i64(i64 %1, i1 true)
   %3 = icmp eq i64 %2, %0
   ret i1 %3
 }
 
-; 242 occurrences:
+; 241 occurrences:
 ; cpython/optimized/mpdecimal.ll
-; cpython/optimized/obmalloc.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -317,14 +315,11 @@ entry:
   ret i1 %3
 }
 
-; 14 occurrences:
-; casadi/optimized/sparsity.cpp.ll
+; 11 occurrences:
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
-; freetype/optimized/autofit.c.ll
 ; hdf5/optimized/H5Tbit.c.ll
-; mimalloc/optimized/stats.c.ll
 ; velox/optimized/BaseVector.cpp.ll
 ; velox/optimized/Bridge.cpp.ll
 ; velox/optimized/CastExpr.cpp.ll
@@ -333,7 +328,7 @@ entry:
 ; velox/optimized/VectorFuzzer.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.abs.i64(i64 %1, i1 true)
   %3 = icmp ult i64 %2, %0
@@ -349,33 +344,48 @@ entry:
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; ocio/optimized/ImageDesc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000074(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call noundef i64 @llvm.abs.i64(i64 %1, i1 true)
-  %3 = icmp ult i64 %2, %0
+  %3 = icmp samesign ult i64 %2, %0
   ret i1 %3
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/to_chars.ll
 ; draco/optimized/sequential_integer_attribute_decoder.cc.ll
 ; draco/optimized/sequential_integer_attribute_encoder.cc.ll
 ; draco/optimized/sequential_normal_attribute_encoder.cc.ll
 ; ocio/optimized/ImageDesc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000078(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call noundef i64 @llvm.abs.i64(i64 %1, i1 true)
+  %3 = icmp samesign ugt i64 %2, %0
+  ret i1 %3
+}
+
+; 1 occurrences:
+; git/optimized/receive-pack.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i64 %0, i64 %1) #0 {
+entry:
+  %2 = call i64 @llvm.abs.i64(i64 %1, i1 true)
   %3 = icmp ugt i64 %2, %0
   ret i1 %3
 }
 
-; 5 occurrences:
+; 9 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; freetype/optimized/truetype.c.ll
 ; just-rs/optimized/uwydcyn8qeoqoev.ll
 ; linux/optimized/percpu_counter.ll
 ; postgres/optimized/dbsize.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/3syn8d61makvd8ra76uhpcrmo.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
@@ -384,7 +394,7 @@ entry:
   ret i1 %3
 }
 
-; 8 occurrences:
+; 12 occurrences:
 ; freetype/optimized/truetype.c.ll
 ; just-rs/optimized/uwydcyn8qeoqoev.ll
 ; linux/optimized/blk-iocost.ll
@@ -393,6 +403,10 @@ entry:
 ; linux/optimized/tsc.ll
 ; linux/optimized/vmstat.ll
 ; postgres/optimized/postgres.ll
+; zed-rs/optimized/0q2bn95s3a3il8tmqq5rauih6.ll
+; zed-rs/optimized/3syn8d61makvd8ra76uhpcrmo.ll
+; zed-rs/optimized/9ectarykacvre31n6szd6qq9m.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
@@ -409,7 +423,7 @@ entry:
 ; raylib/optimized/raudio.c.ll
 ; redis/optimized/hyperloglog.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.abs.i64(i64 %1, i1 true)
   %3 = icmp sgt i64 %2, %0
@@ -419,7 +433,7 @@ entry:
 ; 1 occurrences:
 ; libquic/optimized/quic_alarm.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000066(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call noundef i64 @llvm.abs.i64(i64 %1, i1 true)
   %3 = icmp slt i64 %2, %0
@@ -430,7 +444,7 @@ entry:
 ; freetype/optimized/autofit.c.ll
 ; llvm/optimized/AArch64MachineScheduler.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.abs.i64(i64 %1, i1 true)
   %3 = icmp slt i64 %2, %0
@@ -450,7 +464,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/vmstat.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000017(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000027(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.abs.i64(i64 %1, i1 true)
   %3 = icmp sle i64 %2, %0
@@ -465,6 +479,28 @@ define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = tail call i64 @llvm.abs.i64(i64 %1, i1 false)
   %3 = icmp ugt i64 %2, %0
+  ret i1 %3
+}
+
+; 3 occurrences:
+; casadi/optimized/sparsity.cpp.ll
+; freetype/optimized/autofit.c.ll
+; mimalloc/optimized/stats.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+entry:
+  %2 = call i64 @llvm.abs.i64(i64 %1, i1 true)
+  %3 = icmp samesign ult i64 %2, %0
+  ret i1 %3
+}
+
+; 1 occurrences:
+; cpython/optimized/obmalloc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+entry:
+  %2 = tail call i64 @llvm.abs.i64(i64 %1, i1 false)
+  %3 = icmp samesign ult i64 %2, %0
   ret i1 %3
 }
 

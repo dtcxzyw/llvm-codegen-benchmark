@@ -1,5 +1,6 @@
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/test_codecvt.ll
 ; llvm/optimized/ExprConcepts.cpp.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
@@ -26,11 +27,12 @@ entry:
   ret i16 %3
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; llvm/optimized/DbiStreamBuilder.cpp.ll
 ; llvm/optimized/SemaType.cpp.ll
 ; typst-rs/optimized/1fd2xpfefmgrcb9d.ll
 ; wasmtime-rs/optimized/47hgs4eifsow3k34.ll
+; zed-rs/optimized/2i8hya6f2t9bndlbd6b6686oi.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000006(i32 %0) #0 {
 entry:

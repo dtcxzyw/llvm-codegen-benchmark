@@ -4,10 +4,10 @@
 ; opencv/optimized/softfloat.cpp.ll
 ; openssl/optimized/libcrypto-lib-bn_prime.ll
 ; openssl/optimized/libcrypto-shlib-bn_prime.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; quickjs/optimized/libbf.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i16 %0) #0 {
 entry:

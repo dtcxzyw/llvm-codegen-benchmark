@@ -1,4 +1,18 @@
 
+; 3 occurrences:
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
+; quantlib/optimized/date.ll
+; Function Attrs: nounwind
+define i32 @func000000000000006f(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw nsw i32 %2, 60736
+  %4 = add nuw nsw i32 %3, %0
+  %5 = udiv i32 %1, 1530
+  %6 = add nuw nsw i32 %4, %5
+  ret i32 %6
+}
+
 ; 1 occurrences:
 ; postgres/optimized/dt_common.ll
 ; Function Attrs: nounwind

@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 35 occurrences:
 ; coreutils-rs/optimized/2qsl5bwp4bvo535d.ll
 ; delta-rs/optimized/3qkwqfk85qralejq.ll
 ; freetype/optimized/ftbase.c.ll
@@ -28,6 +28,13 @@
 ; spike/optimized/ursub64.ll
 ; tree-sitter-rs/optimized/22d6a9i5y5n3b962.ll
 ; wasmtime-rs/optimized/1jbxepb6u2xll6bg.ll
+; zed-rs/optimized/18cjjdq897fwjf59btw7ls4h5.ll
+; zed-rs/optimized/336xmb53s74x7fvnwv8sppb05.ll
+; zed-rs/optimized/57rmd3hy5i8690v0gwhrmqmwa.ll
+; zed-rs/optimized/5dm7ofzf1e4v8vd2k597txwqa.ll
+; zed-rs/optimized/7c20l13ddd9oeay1hwqkawwce.ll
+; zed-rs/optimized/8ittejm142jp6pw24sbau2b8f.ll
+; zed-rs/optimized/dqryhdkxpzkfeay9pjzpwnhia.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i1 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -36,7 +43,8 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/numeric.ll
 ; git/optimized/color.ll
 ; git/optimized/packfile.ll
 ; Function Attrs: nounwind

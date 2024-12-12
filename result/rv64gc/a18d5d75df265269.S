@@ -1,0 +1,31 @@
+func00000000000000f0:                   # @func00000000000000f0
+	andi	a1, a1, 255
+	li	a2, 88
+	mul	a1, a1, a2
+	add	a0, a0, a1
+	addi	a0, a0, 2047
+	addi	a0, a0, 897
+	ret
+func00000000000000ff:                   # @func00000000000000ff
+	andi	a1, a1, 255
+	slli	a2, a1, 3
+	slli	a1, a1, 5
+	sub	a1, a1, a2
+	add	a0, a0, a1
+	addi	a0, a0, 40
+	ret
+func00000000000001ff:                   # @func00000000000001ff
+	andi	a1, a1, 255
+	slli	a2, a1, 1
+	add	a0, a0, a1
+	add	a0, a0, a2
+	addi	a0, a0, 218
+	ret
+func00000000000000c0:                   # @func00000000000000c0
+	andi	a1, a1, 255
+	li	a2, 40
+	mul	a1, a1, a2
+	add	a0, a0, a1
+	addi	a0, a0, -2048
+	addi	a0, a0, -76
+	ret

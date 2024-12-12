@@ -49,6 +49,14 @@ func00000000000000a2:                   # @func00000000000000a2
 	vmflt.vf	v12, v8, fa5
 	vmand.mm	v0, v12, v14
 	ret
+func00000000000000cd:                   # @func00000000000000cd
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmsne.vi	v14, v12, 0
+	fli.d	fa5, 0.5
+	vsetvli	zero, zero, e64, m4, ta, ma
+	vmflt.vf	v12, v8, fa5
+	vmandn.mm	v0, v14, v12
+	ret
 func000000000000001c:                   # @func000000000000001c
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmseq.vi	v14, v12, 1
@@ -65,11 +73,11 @@ func0000000000000018:                   # @func0000000000000018
 	vmfeq.vf	v12, v8, fa5
 	vmand.mm	v0, v12, v14
 	ret
-.LCPI8_0:
+.LCPI9_0:
 	.quad	0x3ee4f8b588e368f1              # double 1.0000000000000001E-5
-func000000000000004d:                   # @func000000000000004d
-	lui	a0, %hi(.LCPI8_0)
-	fld	fa5, %lo(.LCPI8_0)(a0)
+func000000000000014d:                   # @func000000000000014d
+	lui	a0, %hi(.LCPI9_0)
+	fld	fa5, %lo(.LCPI9_0)(a0)
 	li	a0, 19
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsltu.vx	v14, v12, a0
@@ -77,11 +85,11 @@ func000000000000004d:                   # @func000000000000004d
 	vmflt.vf	v12, v8, fa5
 	vmandn.mm	v0, v14, v12
 	ret
-.LCPI9_0:
+.LCPI10_0:
 	.quad	0x3f50624dd2f1a9fc              # double 0.001
-func0000000000000044:                   # @func0000000000000044
-	lui	a0, %hi(.LCPI9_0)
-	fld	fa5, %lo(.LCPI9_0)(a0)
+func0000000000000144:                   # @func0000000000000144
+	lui	a0, %hi(.LCPI10_0)
+	fld	fa5, %lo(.LCPI10_0)(a0)
 	lui	a0, 2
 	addi	a0, a0, 1807
 	vsetivli	zero, 8, e32, m2, ta, ma
@@ -106,11 +114,11 @@ func00000000000000ac:                   # @func00000000000000ac
 	vmfge.vf	v12, v8, fa5
 	vmand.mm	v0, v12, v14
 	ret
-.LCPI12_0:
+.LCPI13_0:
 	.quad	0x3fefffeb074a771d              # double 0.99999000000000004
-func0000000000000042:                   # @func0000000000000042
-	lui	a0, %hi(.LCPI12_0)
-	fld	fa5, %lo(.LCPI12_0)(a0)
+func0000000000000142:                   # @func0000000000000142
+	lui	a0, %hi(.LCPI13_0)
+	fld	fa5, %lo(.LCPI13_0)(a0)
 	li	a0, 100
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vmsltu.vx	v14, v12, a0

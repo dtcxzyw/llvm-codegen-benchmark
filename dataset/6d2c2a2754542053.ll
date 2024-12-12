@@ -1,5 +1,5 @@
 
-%struct.Gia_Obj_t_.2765292 = type <{ i64, i32 }>
+%struct.Gia_Obj_t_.2877536 = type <{ i64, i32 }>
 
 ; 6 occurrences:
 ; abc/optimized/cecSolve.c.ll
@@ -12,8 +12,8 @@
 define i64 @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw %struct.Gia_Obj_t_.2765292, ptr %0, i64 %1
-  %5 = getelementptr nusw %struct.Gia_Obj_t_.2765292, ptr %4, i64 %3
+  %4 = getelementptr nusw %struct.Gia_Obj_t_.2877536, ptr %0, i64 %1
+  %5 = getelementptr nusw %struct.Gia_Obj_t_.2877536, ptr %4, i64 %3
   %6 = ptrtoint ptr %5 to i64
   %7 = and i64 %6, -2
   ret i64 %7

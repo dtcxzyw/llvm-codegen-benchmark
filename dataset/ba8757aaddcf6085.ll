@@ -1,14 +1,16 @@
 
-; 20 occurrences:
+; 22 occurrences:
 ; linux/optimized/gen8_ppgtt.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/CGDebugInfo.cpp.ll
 ; llvm/optimized/CXXInheritance.cpp.ll
+; llvm/optimized/DataFlowSanitizer.cpp.ll
 ; llvm/optimized/DeclCXX.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
 ; llvm/optimized/ExtractAPIConsumer.cpp.ll
 ; llvm/optimized/Instructions.cpp.ll
 ; llvm/optimized/JSONNodeDumper.cpp.ll
+; llvm/optimized/MemorySanitizer.cpp.ll
 ; llvm/optimized/RefCntblBaseVirtualDtorChecker.cpp.ll
 ; llvm/optimized/SemaAccess.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll

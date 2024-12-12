@@ -1,6 +1,8 @@
 
-; 3 occurrences:
+; 5 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; git/optimized/pack-redundant.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; Function Attrs: nounwind
@@ -61,8 +63,7 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
-; graphviz/optimized/exparse.c.ll
+; 3 occurrences:
 ; llvm/optimized/Interp.cpp.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; wolfssl/optimized/internal.c.ll
@@ -84,6 +85,17 @@ define i64 @func000000000000000a(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
   %3 = icmp sgt i32 %0, 47
+  %4 = select i1 %3, i64 %2, i64 0
+  ret i64 %4
+}
+
+; 1 occurrences:
+; graphviz/optimized/exparse.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i32 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 4294967295
+  %3 = icmp samesign ult i32 %0, 264
   %4 = select i1 %3, i64 %2, i64 0
   ret i64 %4
 }

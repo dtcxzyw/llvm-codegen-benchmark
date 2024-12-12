@@ -11,16 +11,3 @@ func0000000000000018:                   # @func0000000000000018
 	andl	%esi, %edi
 	orb	%dil, %al
 	retq
-func0000000000000010:                   # @func0000000000000010
-	testl	$65504, %edx                    # imm = 0xFFE0
-	setne	%al
-	andl	%esi, %edi
-	orb	%dil, %al
-	retq
-func0000000000000008:                   # @func0000000000000008
-	movzbl	%dl, %eax
-	cmpl	$5, %eax
-	setb	%al
-	andl	%esi, %edi
-	orb	%dil, %al
-	retq

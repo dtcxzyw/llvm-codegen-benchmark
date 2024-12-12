@@ -7,5 +7,5 @@ func0000000000000000:                   # @func0000000000000000
 	vfmul.vf	v12, v12, fa5
 	vfcvt.rtz.x.f.v	v12, v12
 	vadd.vv	v8, v10, v8
-	vadd.vv	v8, v12, v8
+	vadd.vv	v8, v8, v12
 	ret

@@ -1,11 +1,11 @@
 
-%"class.rapidjson::GenericMember.2713002" = type { %"class.rapidjson::GenericValue.2712777", %"class.rapidjson::GenericValue.2712777" }
-%"class.rapidjson::GenericValue.2712777" = type { %"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2712778" }
-%"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2712778" = type { %"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2712779" }
-%"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2712779" = type { i32, i32, ptr }
-%struct.scatterlist.3341451 = type { i64, i32, i32, i64, i32, i32 }
+%"class.rapidjson::GenericMember.2825536" = type { %"class.rapidjson::GenericValue.2825311", %"class.rapidjson::GenericValue.2825311" }
+%"class.rapidjson::GenericValue.2825311" = type { %"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2825312" }
+%"union.rapidjson::GenericValue<rapidjson::UTF8<>>::Data.2825312" = type { %"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2825313" }
+%"struct.rapidjson::GenericValue<rapidjson::UTF8<>>::String.2825313" = type { i32, i32, ptr }
+%struct.scatterlist.3530599 = type { i64, i32, i32, i64, i32, i32 }
 
-; 16 occurrences:
+; 14 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -13,8 +13,6 @@
 ; llvm/optimized/CalledOnceCheck.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
-; luajit/optimized/lj_debug.ll
-; luajit/optimized/lj_debug_dyn.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
 ; openjdk/optimized/check_code.ll
@@ -23,12 +21,12 @@
 ; redis/optimized/arena.sym.ll
 ; velox/optimized/HashStringAllocator.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(i64 %0, i32 %1) #0 {
+define ptr @func000000000000001f(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = inttoptr i64 %0 to ptr
-  %4 = getelementptr nusw i64, ptr %3, i64 %2
-  %5 = getelementptr nusw i8, ptr %4, i64 4
+  %4 = getelementptr nusw nuw i64, ptr %3, i64 %2
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 4
   ret ptr %5
 }
 
@@ -49,12 +47,25 @@ entry:
   ret ptr %5
 }
 
+; 3 occurrences:
+; luajit/optimized/lj_debug.ll
+; luajit/optimized/lj_debug_dyn.ll
+; velox/optimized/HashStringAllocator.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001e(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = inttoptr i64 %0 to ptr
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %2
+  %5 = getelementptr nusw i8, ptr %4, i64 -4
+  ret ptr %5
+}
+
 ; 21 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
-; hermes/optimized/HadesGC.cpp.ll
 ; llvm/optimized/ASTImporterLookupTable.cpp.ll
 ; llvm/optimized/CodeGenModule.cpp.ll
 ; llvm/optimized/PaddingChecker.cpp.ll
@@ -70,14 +81,27 @@ entry:
 ; luajit/optimized/lj_record_dyn.ll
 ; luajit/optimized/lj_tab.ll
 ; luajit/optimized/lj_tab_dyn.ll
+; openusd/optimized/json.cpp.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(i64 %0, i32 %1) #0 {
+define ptr @func000000000000000f(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
   %3 = inttoptr i64 %0 to ptr
-  %4 = getelementptr %"class.rapidjson::GenericMember.2713002", ptr %3, i64 %2, i32 0, i32 0, i32 0, i32 1
+  %4 = getelementptr nuw %"class.rapidjson::GenericMember.2825536", ptr %3, i64 %2, i32 0, i32 0, i32 0, i32 1
   ret ptr %4
+}
+
+; 1 occurrences:
+; hermes/optimized/HadesGC.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000e(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext i32 %1 to i64
+  %3 = inttoptr i64 %0 to ptr
+  %4 = getelementptr nusw nuw i8, ptr %3, i64 %2
+  %5 = getelementptr nusw i8, ptr %4, i64 -1
+  ret ptr %5
 }
 
 ; 5 occurrences:
@@ -87,11 +111,11 @@ entry:
 ; linux/optimized/io_apic.ll
 ; linux/optimized/workqueue.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(i64 %0, i32 %1) #0 {
+define ptr @func0000000000000013(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = inttoptr i64 %0 to ptr
-  %4 = getelementptr %struct.scatterlist.3341451, ptr %3, i64 %2, i32 1
+  %4 = getelementptr %struct.scatterlist.3530599, ptr %3, i64 %2, i32 1
   ret ptr %4
 }
 

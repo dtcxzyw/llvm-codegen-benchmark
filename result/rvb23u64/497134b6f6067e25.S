@@ -16,8 +16,9 @@ func0000000000000004:                   # @func0000000000000004
 	ret
 func000000000000000c:                   # @func000000000000000c
 	xor	a0, a0, a1
-	li	a1, 80
+	li	a1, -8
 	czero.eqz	a0, a1, a0
+	addi	a0, a0, 24
 	ret
 func0000000000000009:                   # @func0000000000000009
 	sltu	a0, a0, a1

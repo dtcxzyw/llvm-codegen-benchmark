@@ -10,7 +10,7 @@ entry:
   %3 = fpext float %2 to double
   %4 = fmul double %3, 1.000000e-02
   %5 = fptrunc double %4 to float
-  %6 = fadd float %5, %1
+  %6 = fadd float %1, %5
   %7 = fsub float %6, %0
   ret float %7
 }

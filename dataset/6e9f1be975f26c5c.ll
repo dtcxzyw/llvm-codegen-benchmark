@@ -36,7 +36,7 @@ entry:
 ; llvm/optimized/WindowsResource.cpp.ll
 ; mold/optimized/multi-glob.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -64
   %4 = add nsw i64 %3, %1
@@ -86,17 +86,14 @@ entry:
   ret i1 %6
 }
 
-; 4 occurrences:
-; eastl/optimized/TestAlgorithm.cpp.ll
-; eastl/optimized/TestDeque.cpp.ll
-; eastl/optimized/TestSort.cpp.ll
+; 1 occurrences:
 ; php/optimized/fastcgi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000106(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000007e6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add nsw i64 %2, 8
-  %4 = add i64 %3, %1
-  %5 = add i64 %4, %0
+  %3 = add nuw nsw i64 %2, 8
+  %4 = add nuw nsw i64 %3, %1
+  %5 = add nuw nsw i64 %4, %0
   %6 = icmp slt i64 %5, 65543
   ret i1 %6
 }
@@ -107,7 +104,7 @@ entry:
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003c8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000788(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 76
   %4 = add nuw nsw i64 %3, %1
@@ -120,7 +117,7 @@ entry:
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000304(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000604(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 16
   %4 = add i64 %3, %1
@@ -132,7 +129,7 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000308(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000608(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 20
   %4 = add i64 %3, %1
@@ -160,11 +157,11 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/udf.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003c4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000784(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 176
   %4 = add nuw nsw i64 %3, %1
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = icmp ult i64 %5, -2049
   ret i1 %6
 }
@@ -172,12 +169,12 @@ entry:
 ; 1 occurrences:
 ; simdjson/optimized/simdjson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000178(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002f8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 1086
   %4 = add nsw i64 %3, %1
   %5 = add nuw nsw i64 %4, %0
-  %6 = icmp ugt i64 %5, 2046
+  %6 = icmp samesign ugt i64 %5, 2046
   ret i1 %6
 }
 
@@ -186,7 +183,7 @@ entry:
 ; llvm/optimized/BugReporter.cpp.ll
 ; llvm/optimized/InlineFunction.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000221(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -64
   %4 = add i64 %3, %1
@@ -199,7 +196,7 @@ entry:
 ; casadi/optimized/bspline.cpp.ll
 ; llvm/optimized/SampleProfileInference.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000201(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -64
   %4 = add i64 %3, %1
@@ -217,7 +214,7 @@ entry:
 ; llvm/optimized/DFAEmitter.cpp.ll
 ; llvm/optimized/SampleProfileInference.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000281(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -32
   %4 = add nsw i64 %3, %1
@@ -229,7 +226,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/file-elf.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000003f4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000007e4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 8
   %4 = add nuw nsw i64 %3, %1
@@ -241,7 +238,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/fs_context.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000204(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -4095
   %4 = add i64 %3, %1
@@ -253,7 +250,7 @@ entry:
 ; 1 occurrences:
 ; brotli/optimized/compound_dictionary.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000038c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000070c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 32
   %4 = add nuw i64 %3, %1
@@ -265,7 +262,7 @@ entry:
 ; 1 occurrences:
 ; brotli/optimized/encode.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000301(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000601(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 1
   %4 = add i64 %3, %1
@@ -277,7 +274,7 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/cmQtAutoMocUic.cxx.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000158(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002a8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 16
   %4 = add nsw i64 %3, %1
@@ -291,7 +288,7 @@ entry:
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000151(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002a1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 16
   %4 = add nsw i64 %3, %1
@@ -311,7 +308,7 @@ entry:
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000028a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -32
   %4 = add nsw i64 %3, %1
@@ -323,7 +320,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -32
   %4 = add i64 %3, %1
@@ -338,7 +335,7 @@ entry:
 ; eastl/optimized/TestRingBuffer.cpp.ll
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000015a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002aa(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -4
   %4 = add nsw i64 %3, %1
@@ -357,7 +354,7 @@ entry:
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000020a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -32
   %4 = add i64 %3, %1
@@ -383,11 +380,25 @@ entry:
   ret i1 %6
 }
 
+; 3 occurrences:
+; eastl/optimized/TestAlgorithm.cpp.ll
+; eastl/optimized/TestDeque.cpp.ll
+; eastl/optimized/TestSort.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000206(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = add nsw i64 %2, -64
+  %4 = add i64 %3, %1
+  %5 = add i64 %4, %0
+  %6 = icmp slt i64 %5, 32
+  ret i1 %6
+}
+
 ; 2 occurrences:
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestSort.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000aa(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -64
   %4 = add nsw i64 %3, %1
@@ -399,7 +410,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestDeque.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000226(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -64
   %4 = add i64 %3, %1
@@ -412,7 +423,7 @@ entry:
 ; eastl/optimized/TestDeque.cpp.ll
 ; eastl/optimized/TestSort.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -8
   %4 = add nsw i64 %3, %1
@@ -424,11 +435,11 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestDeque.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000154(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000002a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -64
   %4 = add nsw i64 %3, %1
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   %6 = icmp ult i64 %5, 64
   ret i1 %6
 }
@@ -436,11 +447,11 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/BenchmarkDeque.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000114(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000224(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, -128
-  %4 = add i64 %3, %1
-  %5 = add nsw i64 %4, %0
+  %4 = add i64 %1, %3
+  %5 = add nsw i64 %0, %4
   %6 = icmp ult i64 %5, 128
   ret i1 %6
 }
@@ -448,7 +459,7 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestSort.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, -64
   %4 = add nsw i64 %3, %1
@@ -460,7 +471,7 @@ entry:
 ; 1 occurrences:
 ; casadi/optimized/bspline.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000208(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 2
   %4 = add i64 %3, %1

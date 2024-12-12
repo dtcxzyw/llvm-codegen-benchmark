@@ -3,22 +3,22 @@
 ; clamav/optimized/hfsplus.c.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000055(i16 %0, i16 %1, i16 %2) #0 {
+define i1 @func00000000000000a5(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw i16 %2, 8
   %4 = or disjoint i16 %3, %1
-  %5 = icmp uge i16 %4, %0
+  %5 = icmp ule i16 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i16 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000088(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw i16 %2, 11
-  %4 = or i16 %3, %1
-  %5 = icmp ult i16 %4, %0
+  %4 = or i16 %1, %3
+  %5 = icmp ugt i16 %0, %4
   ret i1 %5
 }
 
@@ -37,11 +37,11 @@ entry:
 ; openjdk/optimized/hb-ot-metrics.ll
 ; openjdk/optimized/hb-ot-var.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i16 %0, i16 %1, i16 %2) #0 {
+define i1 @func00000000000000aa(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw i16 %2, 8
   %4 = or disjoint i16 %3, %1
-  %5 = icmp slt i16 %4, %0
+  %5 = icmp sgt i16 %0, %4
   ret i1 %5
 }
 
@@ -52,15 +52,15 @@ entry:
 ; openjdk/optimized/hb-common.ll
 ; openjdk/optimized/hb-ot-font.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i16 %0, i16 %1, i16 %2) #0 {
+define i1 @func00000000000000a6(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw i16 %2, 8
   %4 = or disjoint i16 %3, %1
-  %5 = icmp sgt i16 %4, %0
+  %5 = icmp slt i16 %0, %4
   ret i1 %5
 }
 
-; 21 occurrences:
+; 26 occurrences:
 ; cmake/optimized/archive_read_support_format_cab.c.ll
 ; curl/optimized/libcurl_la-tftp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -82,12 +82,17 @@ entry:
 ; stb/optimized/stb_truetype.c.ll
 ; wireshark/optimized/packet-sigcomp.c.ll
 ; wolfssl/optimized/tls.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i16 %0, i16 %1, i16 %2) #0 {
+define i1 @func00000000000000a1(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw i16 %2, 8
   %4 = or disjoint i16 %3, %1
-  %5 = icmp eq i16 %4, %0
+  %5 = icmp eq i16 %0, %4
   ret i1 %5
 }
 
@@ -96,22 +101,22 @@ entry:
 ; linux/optimized/xhci-hub.ll
 ; lodepng/optimized/pngdetail.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i16 %0, i16 %1, i16 %2) #0 {
+define i1 @func00000000000000a4(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw i16 %2, 8
   %4 = or disjoint i16 %3, %1
-  %5 = icmp ugt i16 %4, %0
+  %5 = icmp ult i16 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i16 %0, i16 %1, i16 %2) #0 {
+define i1 @func00000000000000a8(i16 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = shl nuw i16 %2, 8
   %4 = or disjoint i16 %3, %1
-  %5 = icmp ult i16 %4, %0
+  %5 = icmp ugt i16 %0, %4
   ret i1 %5
 }
 

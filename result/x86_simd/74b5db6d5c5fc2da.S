@@ -16,13 +16,13 @@
 	.zero	1
 	.zero	1
 .LCPI0_1:
-	.long	39                              # 0x27
+	.long	8                               # 0x8
 .LCPI0_2:
-	.long	41                              # 0x29
+	.long	16                              # 0x10
 func0000000000000003:                   # @func0000000000000003
 	vptestnmb	.LCPI0_0(%rip), %xmm1, %k1
-	vpbroadcastd	.LCPI0_1(%rip), %ymm1   # ymm1 = [39,39,39,39,39,39,39,39]
-	vpbroadcastd	.LCPI0_2(%rip), %ymm1 {%k1} # ymm1 {%k1} = [41,41,41,41,41,41,41,41]
+	vpbroadcastd	.LCPI0_1(%rip), %ymm1   # ymm1 = [8,8,8,8,8,8,8,8]
+	vpbroadcastd	.LCPI0_2(%rip), %ymm1 {%k1} # ymm1 {%k1} = [16,16,16,16,16,16,16,16]
 	vpor	%ymm0, %ymm1, %ymm0
 	retq
 .LCPI1_0:

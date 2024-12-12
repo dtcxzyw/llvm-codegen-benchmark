@@ -1,5 +1,5 @@
 
-; 56 occurrences:
+; 57 occurrences:
 ; abc/optimized/abcSpeedup.c.ll
 ; abc/optimized/giaLf.c.ll
 ; abc/optimized/giaMf.c.ll
@@ -20,6 +20,7 @@
 ; gromacs/optimized/coordstate.cpp.ll
 ; gromacs/optimized/coupling.cpp.ll
 ; gromacs/optimized/editconf.cpp.ll
+; gromacs/optimized/genconf.cpp.ll
 ; gromacs/optimized/gmx_anaeig.cpp.ll
 ; gromacs/optimized/gmx_dipoles.cpp.ll
 ; gromacs/optimized/gmx_hbond.cpp.ll

@@ -11,9 +11,9 @@ func0000000000000002:                   # @func0000000000000002
 	vpandnq	.LCPI1_0(%rip){1to4}, %ymm0, %ymm0
 	retq
 .LCPI2_0:
-	.quad	3                               # 0x3
-func0000000000000010:                   # @func0000000000000010
-	vpcmpltuq	.LCPI2_0(%rip){1to4}, %ymm0, %k0
-	vpmovm2q	%k0, %ymm0
+	.quad	1                               # 0x1
+func0000000000000014:                   # @func0000000000000014
+	vpbroadcastq	.LCPI2_0(%rip), %ymm1   # ymm1 = [1,1,1,1]
+	vpcmpgtq	%ymm0, %ymm1, %ymm0
 	vpsrlq	$63, %ymm0, %ymm0
 	retq

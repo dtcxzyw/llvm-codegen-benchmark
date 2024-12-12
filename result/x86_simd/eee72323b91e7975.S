@@ -26,7 +26,7 @@ func0000000000000001:                   # @func0000000000000001
 	vpcmpeqd	%ymm0, %ymm0, %ymm0
 	vpaddd	%ymm0, %ymm2, %ymm2
 	vpbroadcastd	.LCPI2_0(%rip), %ymm0   # ymm0 = [16,16,16,16,16,16,16,16]
-	vpmulld	%ymm1, %ymm2, %ymm0 {%k1}
+	vpmulld	%ymm2, %ymm1, %ymm0 {%k1}
 	retq
 .LCPI3_0:
 	.long	128                             # 0x80

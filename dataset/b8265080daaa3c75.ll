@@ -1,5 +1,5 @@
 
-; 41 occurrences:
+; 42 occurrences:
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; meshlab/optimized/filter_unsharp.cpp.ll
@@ -40,6 +40,7 @@
 ; pbrt-v4/optimized/stats.cpp.ll
 ; pbrt-v4/optimized/textures.cpp.ll
 ; raylib/optimized/rtextures.c.ll
+; recastnavigation/optimized/DetourNavMesh.cpp.ll
 ; stb/optimized/stb_image_resize2.c.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, float %1) #0 {

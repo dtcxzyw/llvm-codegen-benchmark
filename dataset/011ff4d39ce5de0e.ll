@@ -43,6 +43,7 @@
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/IVDescriptors.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_indev_scroll.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; ocio/optimized/MathUtils.cpp.ll
@@ -59,7 +60,6 @@
 ; rocksdb/optimized/lock_request.cc.ll
 ; rocksdb/optimized/locktree.cc.ll
 ; rocksdb/optimized/manager.cc.ll
-; rocksdb/optimized/testutil.cc.ll
 ; rocksdb/optimized/txnid_set.cc.ll
 ; rocksdb/optimized/wfg.cc.ll
 ; rust-analyzer-rs/optimized/1cf75p1eybr0uy0c.ll

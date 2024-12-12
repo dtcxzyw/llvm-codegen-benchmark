@@ -9,6 +9,11 @@ func0000000000000006:                   # @func0000000000000006
 	shll	$2, %edi
 	leal	(%rdi,%rdi,2), %eax
 	retq
+func0000000000000007:                   # @func0000000000000007
+	testl	%edx, %edx
+	cmovnel	%esi, %edi
+	leal	(%rdi,%rdi,4), %eax
+	retq
 func0000000000000018:                   # @func0000000000000018
 	testl	%edx, %edx
 	cmovnsl	%esi, %edi
@@ -23,11 +28,6 @@ func000000000000001b:                   # @func000000000000001b
 	testl	%edx, %edx
 	cmovnsl	%esi, %edi
 	imull	$60, %edi, %eax
-	retq
-func0000000000000007:                   # @func0000000000000007
-	cmpl	$1, %edx
-	cmovnel	%esi, %edi
-	leal	(%rdi,%rdi,4), %eax
 	retq
 func0000000000000004:                   # @func0000000000000004
 	cmpl	$2, %edx

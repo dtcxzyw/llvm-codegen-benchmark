@@ -16,7 +16,8 @@ entry:
   ret i1 %6
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/area.ll
 ; linux/optimized/setup-bus.ll
 ; llvm/optimized/CGExprScalar.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
@@ -24,7 +25,7 @@ entry:
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 4
+  %3 = and i32 %2, 1024
   %4 = icmp ne i32 %3, 0
   %5 = select i1 %0, i1 %1, i1 false
   %6 = select i1 %4, i1 true, i1 %5

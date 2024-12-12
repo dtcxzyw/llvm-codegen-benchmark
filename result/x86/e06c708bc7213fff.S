@@ -1,4 +1,4 @@
-func0000000000000008:                   # @func0000000000000008
+func000000000000000c:                   # @func000000000000000c
 	shrl	$13, %esi
 	andl	$28, %esi
 	leaq	16(%rdi,%rsi), %rax
@@ -8,25 +8,25 @@ func0000000000000000:                   # @func0000000000000000
 	andl	$1016, %esi                     # imm = 0x3F8
 	leaq	8(%rdi,%rsi), %rax
 	retq
-func000000000000000a:                   # @func000000000000000a
+func000000000000000f:                   # @func000000000000000f
 	shrl	$8, %esi
 	leaq	30(%rdi,%rsi,2), %rax
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000001f:                   # @func000000000000001f
 	shrl	%esi
 	andl	$31, %esi
 	imulq	$56, %rsi, %rax
 	leaq	8(%rdi,%rax), %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	shrl	%esi
 	leaq	922880(%rdi,%rsi,4), %rax
 	retq
-func0000000000000012:                   # @func0000000000000012
+func0000000000000013:                   # @func0000000000000013
 	shrl	%esi
 	leaq	871552(%rdi,%rsi,4), %rax
 	retq
-func0000000000000018:                   # @func0000000000000018
+func000000000000001c:                   # @func000000000000001c
 	movabsq	$34359738360, %rax              # imm = 0x7FFFFFFF8
 	andq	%rsi, %rax
 	leaq	64(%rdi,%rax), %rax

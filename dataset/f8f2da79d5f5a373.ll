@@ -1,6 +1,5 @@
 
-; 7 occurrences:
-; flatbuffers/optimized/flatc.cpp.ll
+; 6 occurrences:
 ; minetest/optimized/content_mapblock.cpp.ll
 ; nuttx/optimized/uart_16550.c.ll
 ; ockam-rs/optimized/2kn3t03vxm4q238t.ll

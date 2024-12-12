@@ -16,21 +16,20 @@
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
-  %3 = xor i64 %2, %0
+  %3 = xor i64 %0, %2
   %4 = mul i64 %3, 7031196922566818317
   ret i64 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; crow/optimized/example_session.cpp.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
-; graphviz/optimized/randomkit.c.ll
 ; xgboost/optimized/io.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 4294967295
-  %3 = xor i64 %2, %0
+  %3 = xor i64 %0, %2
   %4 = mul nuw nsw i64 %3, 1812433253
   ret i64 %4
 }

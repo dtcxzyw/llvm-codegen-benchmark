@@ -1,16 +1,16 @@
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	movl	%esi, %eax
 	subq	%rax, %rdi
 	andq	$-4, %rdi
 	cmpq	$4, %rdi
 	sete	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	subl	%esi, %edi
 	testb	$1, %dil
 	sete	%al
 	retq
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	subl	%esi, %edi
 	testb	$3, %dil
 	sete	%al
@@ -20,7 +20,7 @@ func0000000000000001:                   # @func0000000000000001
 	testb	$3, %dil
 	sete	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	subl	%esi, %edi
 	testb	$1, %dil
 	sete	%al

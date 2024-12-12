@@ -6,7 +6,7 @@
 ; redis/optimized/llex.ll
 ; ruby/optimized/file.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000038(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 8070450532247928833
   %3 = icmp eq i64 %2, 0
@@ -16,9 +16,8 @@ entry:
   ret i1 %6
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; abc/optimized/dauTree.c.ll
-; linux/optimized/hid-belkin.ll
 ; linux/optimized/vfs_inode_dotl.ll
 ; llvm/optimized/CGVTables.cpp.ll
 ; llvm/optimized/ItaniumMangle.cpp.ll
@@ -26,7 +25,7 @@ entry:
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaTemplate.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1
   %3 = icmp eq i64 %2, 0
@@ -36,17 +35,16 @@ entry:
   ret i1 %6
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; cpython/optimized/symtable.ll
 ; glslang/optimized/ParseHelper.cpp.ll
 ; linux/optimized/compaction.ll
 ; linux/optimized/core.ll
 ; linux/optimized/link_watch.ll
-; linux/optimized/mii.ll
 ; redis/optimized/module.ll
 ; redis/optimized/script.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 234881024
   %3 = icmp eq i64 %2, 0
@@ -59,7 +57,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/ObjCRuntime.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000034(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 9223372034707292159
   %3 = icmp eq i64 %2, 0
@@ -70,10 +68,10 @@ entry:
 }
 
 ; 2 occurrences:
-; linux/optimized/madvise.ll
 ; llvm/optimized/CGObjC.cpp.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i64 %1) #0 {
+define i1 @func000000000000018c(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 2147483644
   %3 = icmp ne i64 %2, 0
@@ -87,7 +85,7 @@ entry:
 ; linux/optimized/gup.ll
 ; linux/optimized/i915_gem_ttm_move.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000181(i32 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 256
   %3 = icmp ne i64 %2, 0

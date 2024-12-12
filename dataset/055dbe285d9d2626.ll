@@ -1,7 +1,6 @@
 
-; 22 occurrences:
+; 21 occurrences:
 ; abc/optimized/fraClau.c.ll
-; cmake/optimized/archive_read_support_filter_zstd.c.ll
 ; git/optimized/convert.ll
 ; git/optimized/send-pack.ll
 ; hwloc/optimized/topology-linux.ll
@@ -23,10 +22,10 @@
 ; sqlite/optimized/sqlite3.ll
 ; tev/optimized/Image.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000042(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = icmp eq ptr %1, null
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -38,7 +37,7 @@ entry:
 ; openjdk/optimized/threadService.ll
 ; qemu/optimized/net_tap.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000318(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = or i1 %3, %0
@@ -51,10 +50,10 @@ entry:
 ; git/optimized/diffcore-rename.ll
 ; llvm/optimized/LiveRangeCalc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000058(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = icmp ne ptr %1, null
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -63,7 +62,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaInit.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000302(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = or i1 %3, %0

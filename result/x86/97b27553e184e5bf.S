@@ -1,14 +1,20 @@
 func0000000000000014:                   # @func0000000000000014
-	imulq	%rdx, %rsi
-	mulxq	%rdi, %rax, %rdx
-	addq	%rsi, %rdx
+	movq	%rdx, %r8
 	imulq	%rdi, %rcx
+	movq	%rdi, %rdx
+	mulxq	%r8, %rax, %rdx
 	addq	%rcx, %rdx
+	imulq	%rsi, %r8
+	addq	%rdx, %r8
+	movq	%r8, %rdx
 	retq
 func0000000000000015:                   # @func0000000000000015
-	imulq	%rdx, %rsi
-	mulxq	%rdi, %rax, %rdx
-	addq	%rsi, %rdx
+	movq	%rdx, %r8
 	imulq	%rdi, %rcx
+	movq	%rdi, %rdx
+	mulxq	%r8, %rax, %rdx
 	addq	%rcx, %rdx
+	imulq	%rsi, %r8
+	addq	%rdx, %r8
+	movq	%r8, %rdx
 	retq

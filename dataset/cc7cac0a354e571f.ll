@@ -40,11 +40,9 @@ entry:
   ret ptr %6
 }
 
-; 5 occurrences:
+; 3 occurrences:
 ; abc/optimized/ioReadBaf.c.ll
-; opencv/optimized/digits_svm.cpp.ll
 ; openusd/optimized/stbImage.cpp.ll
-; sentencepiece/optimized/unigram_model_trainer.cc.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000016(ptr %0, i64 %1, i32 %2) #0 {
@@ -53,6 +51,20 @@ entry:
   %4 = shl nsw i64 %3, 2
   %5 = sub nsw i64 %1, %4
   %6 = getelementptr nusw i8, ptr %0, i64 %5
+  ret ptr %6
+}
+
+; 3 occurrences:
+; cvc5/optimized/core_solver.cpp.ll
+; opencv/optimized/digits_svm.cpp.ll
+; sentencepiece/optimized/unigram_model_trainer.cc.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000017(ptr %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = sext i32 %2 to i64
+  %4 = shl nsw i64 %3, 2
+  %5 = sub nsw i64 %1, %4
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 %5
   ret ptr %6
 }
 

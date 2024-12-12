@@ -3,7 +3,7 @@
 ; openjdk/optimized/loopnode.ll
 ; wolfssl/optimized/tls.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, i1 %1, i8 %2) #0 {
+define i1 @func0000000000000041(ptr %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 11
   %4 = or i1 %3, %1
@@ -15,10 +15,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/MallocChecker.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(ptr %0, i1 %1, i8 %2) #0 {
+define i1 @func000000000000010c(ptr %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 5
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = icmp ne ptr %0, null
   %6 = and i1 %5, %4
   ret i1 %6
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/MallocChecker.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(ptr %0, i1 %1, i8 %2) #0 {
+define i1 @func000000000000004c(ptr %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 106
   %4 = or i1 %3, %1
@@ -89,7 +89,7 @@ entry:
 ; pybind11/optimized/test_vector_unique_ptr_member.cpp.ll
 ; pybind11/optimized/test_virtual_functions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i1 %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000318(i1 %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = icmp ne i8 %2, 0
   %4 = or i1 %3, %0

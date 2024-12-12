@@ -6,7 +6,7 @@
 ; openusd/optimized/rotation.cpp.ll
 ; postgres/optimized/indxpath.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, double %1, double %2) #0 {
+define i1 @func0000000000000041(i64 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %1, %2
   %4 = icmp eq i64 %0, 0

@@ -92,7 +92,7 @@ func0000000000000004:                   # @func0000000000000004
 	idivl	%ecx
 	vpinsrd	$3, %eax, %xmm3, %xmm1
 	vinserti128	$1, %xmm2, %ymm1, %ymm1
-	vpcmpnleud	%ymm0, %ymm1, %k0
+	vpcmpltud	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -141,7 +141,7 @@ func0000000000000009:                   # @func0000000000000009
 	idivl	%ecx
 	vpinsrd	$3, %eax, %xmm3, %xmm1
 	vinserti128	$1, %xmm2, %ymm1, %ymm1
-	vpcmpleud	%ymm0, %ymm1, %k0
+	vpcmpnltud	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -239,7 +239,7 @@ func0000000000000007:                   # @func0000000000000007
 	idivl	%ecx
 	vpinsrd	$3, %eax, %xmm3, %xmm1
 	vinserti128	$1, %xmm2, %ymm1, %ymm1
-	vpcmpnltd	%ymm0, %ymm1, %k0
+	vpcmpled	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
@@ -288,7 +288,7 @@ func0000000000000001:                   # @func0000000000000001
 	idivl	%ecx
 	vpinsrd	$3, %eax, %xmm3, %xmm1
 	vinserti128	$1, %xmm2, %ymm1, %ymm1
-	vpcmpeqd	%ymm0, %ymm1, %k0
+	vpcmpeqd	%ymm1, %ymm0, %k0
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq

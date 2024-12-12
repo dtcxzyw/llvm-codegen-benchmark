@@ -19,7 +19,7 @@
 	.quad	4                               # 0x4
 .LCPI0_2:
 	.zero	4,16
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpord	.LCPI0_2(%rip){1to4}, %xmm0, %xmm2
 	vpcmpeqq	.LCPI0_1(%rip){1to4}, %ymm1, %k1
 	vmovdqu8	%xmm0, %xmm2 {%k1}
@@ -73,7 +73,7 @@ func0000000000000001:                   # @func0000000000000001
 	.quad	16                              # 0x10
 .LCPI2_2:
 	.zero	4,16
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	vpord	.LCPI2_2(%rip){1to4}, %xmm0, %xmm2
 	vpcmpltuq	.LCPI2_1(%rip){1to4}, %ymm1, %k1
 	vmovdqu8	%xmm0, %xmm2 {%k1}

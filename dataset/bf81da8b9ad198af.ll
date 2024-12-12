@@ -1,7 +1,6 @@
 
-; 23 occurrences:
+; 22 occurrences:
 ; darktable/optimized/TiffEntry.cpp.ll
-; linux/optimized/libata-scsi.ll
 ; llvm/optimized/AArch64FastISel.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; mold/optimized/passes.cc.ALPHA.cc.ll
@@ -51,17 +50,6 @@ entry:
 define i1 @func0000000000000008(i1 %0, i1 %1, i16 %2) #0 {
 entry:
   %3 = icmp ult i16 %2, 2
-  %4 = or i1 %3, %1
-  %5 = select i1 %0, i1 true, i1 %4
-  ret i1 %5
-}
-
-; 1 occurrences:
-; linux/optimized/libata-scsi.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000010(i1 %0, i1 %1, i16 %2) #0 {
-entry:
-  %3 = icmp ugt i16 %2, 5
   %4 = or i1 %3, %1
   %5 = select i1 %0, i1 true, i1 %4
   ret i1 %5

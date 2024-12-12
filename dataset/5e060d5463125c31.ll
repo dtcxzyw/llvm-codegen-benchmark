@@ -1,11 +1,10 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; cmake/optimized/zstd_lazy.c.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; darktable/optimized/PanasonicV4Decompressor.cpp.ll
 ; flac/optimized/bitwriter.c.ll
 ; icu/optimized/bmpset.ll
-; linux/optimized/intel_dsi_dcs_backlight.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; ruby/optimized/bignum.ll
 ; zstd/optimized/zstd_lazy.c.ll

@@ -12,8 +12,8 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, 1
   %5 = uitofp nneg i32 %4 to float
-  %6 = fcmp olt float %5, %1
-  %7 = and i1 %6, %0
+  %6 = fcmp ogt float %1, %5
+  %7 = and i1 %0, %6
   ret i1 %7
 }
 
@@ -30,7 +30,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = add i32 %3, 1
   %5 = uitofp nneg i32 %4 to float
-  %6 = fcmp ogt float %5, %1
+  %6 = fcmp olt float %1, %5
   %7 = and i1 %6, %0
   ret i1 %7
 }

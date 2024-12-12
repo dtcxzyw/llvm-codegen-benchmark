@@ -14,7 +14,7 @@ func0000000000000018:                   # @func0000000000000018
 	vmv.v.i	v8, 0
 	vmerge.vim	v8, v8, 1, v0
 	ret
-func0000000000000010:                   # @func0000000000000010
+func0000000000000030:                   # @func0000000000000030
 	lui	a0, 496
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vand.vx	v8, v8, a0
@@ -23,7 +23,7 @@ func0000000000000010:                   # @func0000000000000010
 	vmv.v.i	v8, 0
 	vmerge.vim	v8, v8, 1, v0
 	ret
-func0000000000000008:                   # @func0000000000000008
+func0000000000000028:                   # @func0000000000000028
 	li	a0, 255
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vand.vx	v8, v8, a0

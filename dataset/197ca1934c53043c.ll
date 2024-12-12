@@ -1,6 +1,5 @@
 
-; 45 occurrences:
-; clamav/optimized/crc.cpp.ll
+; 44 occurrences:
 ; clamav/optimized/spin.c.ll
 ; cmake/optimized/crc32.c.ll
 ; hdf5/optimized/H5checksum.c.ll

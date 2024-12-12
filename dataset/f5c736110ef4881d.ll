@@ -1,5 +1,5 @@
 
-; 50 occurrences:
+; 51 occurrences:
 ; assimp/optimized/IFCCurve.cpp.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
 ; assimp/optimized/IFCProfile.cpp.ll
@@ -26,7 +26,6 @@
 ; mitsuba3/optimized/moment.cpp.ll
 ; mitsuba3/optimized/obj.cpp.ll
 ; mitsuba3/optimized/plugin.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/properties.cpp.ll
 ; mitsuba3/optimized/specfilm.cpp.ll
 ; mitsuba3/optimized/stokes.cpp.ll
@@ -34,6 +33,8 @@
 ; mitsuba3/optimized/struct.cpp.ll
 ; mitsuba3/optimized/xml.cpp.ll
 ; opencv/optimized/run_length_morphology.cpp.ll
+; openexr/optimized/ImfDwaCompressor.cpp.ll
+; openusd/optimized/simplify.cpp.ll
 ; openusd/optimized/testTs_HardToReach.cpp.ll
 ; quantlib/optimized/pascaltriangle.ll
 ; rocksdb/optimized/compaction_job.cc.ll
@@ -51,7 +52,7 @@
 ; wasmedge/optimized/serial_module.cpp.ll
 ; xgboost/optimized/quantile.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = sdiv exact i64 %2, 56
@@ -60,7 +61,7 @@ entry:
   ret i1 %5
 }
 
-; 38 occurrences:
+; 39 occurrences:
 ; abseil-cpp/optimized/str_replace_test.cc.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
 ; assimp/optimized/LWOLoader.cpp.ll
@@ -88,6 +89,7 @@ entry:
 ; opencv/optimized/contours_approx.cpp.ll
 ; opencv/optimized/oilpainting.cpp.ll
 ; opencv/optimized/run_length_morphology.cpp.ll
+; openusd/optimized/simplify.cpp.ll
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; quantlib/optimized/differentialevolution.ll
 ; quantlib/optimized/genericlsregression.ll
@@ -100,14 +102,15 @@ entry:
 ; wasmedge/optimized/serial_module.cpp.ll
 ; xgboost/optimized/quantile.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = icmp eq i64 %2, 24
   ret i1 %3
 }
 
-; 104 occurrences:
+; 103 occurrences:
+; boost/optimized/topology.ll
 ; cpp-httplib/optimized/httplib.cc.ll
 ; cvc5/optimized/smt2_state.cpp.ll
 ; cxxopts/optimized/example.cpp.ll
@@ -189,7 +192,6 @@ entry:
 ; nix/optimized/diff-closures.ll
 ; nix/optimized/filetransfer.ll
 ; nix/optimized/gc.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/store-api.ll
 ; ocio/optimized/BuiltinConfigRegistry.cpp.ll
@@ -205,7 +207,6 @@ entry:
 ; openusd/optimized/evalUtils.cpp.ll
 ; openusd/optimized/mallocTag.cpp.ll
 ; openusd/optimized/reporter.cpp.ll
-; openvdb/optimized/FastSweeping.cc.ll
 ; openvdb/optimized/Prune.cc.ll
 ; spike/optimized/spike-log-parser.ll
 ; vcpkg/optimized/tools.cpp.ll
@@ -213,7 +214,7 @@ entry:
 ; xgboost/optimized/input_split_base.cc.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = sdiv exact i64 %2, 24
@@ -222,11 +223,23 @@ entry:
   ret i1 %5
 }
 
+; 1 occurrences:
+; openvdb/optimized/FastSweeping.cc.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000b4(i64 %0, i64 %1) #0 {
+entry:
+  %2 = sub i64 %0, %1
+  %3 = sdiv exact i64 %2, 80
+  %4 = add nsw i64 %3, 1
+  %5 = icmp samesign ult i64 %4, 6
+  ret i1 %5
+}
+
 ; 2 occurrences:
 ; opencv/optimized/graphsegmentation.cpp.ll
 ; openusd/optimized/blendShapeQuery.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %.off = add i64 %2, -24
@@ -237,7 +250,7 @@ entry:
 ; 1 occurrences:
 ; protobuf/optimized/generated_message_tctable_lite.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d1(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub nsw i64 %0, %1
   %3 = icmp eq i64 %2, -12
@@ -247,7 +260,7 @@ entry:
 ; 1 occurrences:
 ; casadi/optimized/sx_function.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000ac(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = icmp ne i64 %2, -40

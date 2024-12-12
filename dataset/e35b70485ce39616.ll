@@ -78,12 +78,12 @@ entry:
 }
 
 ; 1 occurrences:
-; llvm/optimized/ValueTracking.cpp.ll
+; abc/optimized/giaSatLE.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
-  %4 = icmp ugt i32 %3, 63
+  %4 = icmp ult i32 %3, 16
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }

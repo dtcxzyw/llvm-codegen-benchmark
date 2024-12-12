@@ -7,7 +7,7 @@ define i32 @func00000000000000fa(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 8192, %1
   %3 = zext nneg i32 %2 to i64
-  %4 = mul nuw nsw i64 %3, %0
+  %4 = mul nuw nsw i64 %0, %3
   %5 = lshr i64 %4, 13
   %6 = trunc nuw i64 %5 to i32
   ret i32 %6
@@ -23,7 +23,7 @@ define i32 @func0000000000000012(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 0, %1
   %3 = zext i32 %2 to i64
-  %4 = mul nuw i64 %3, %0
+  %4 = mul nuw i64 %0, %3
   %5 = lshr i64 %4, 32
   %6 = trunc nuw i64 %5 to i32
   ret i32 %6

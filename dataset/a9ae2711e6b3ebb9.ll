@@ -1,5 +1,5 @@
 
-; 403 occurrences:
+; 412 occurrences:
 ; abseil-cpp/optimized/bind.cc.ll
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/builder_base.cc.ll
@@ -401,6 +401,15 @@
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; z3/optimized/pb_internalize.cpp.ll
 ; z3/optimized/pb_solver.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
+; zed-rs/optimized/4km3eupdnqqnodg5d7nrlf2sf.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
+; zed-rs/optimized/exru7xor9i4a4ixpzw7x9xk8s.ll
 ; zstd/optimized/zstd_ldm.c.ll
 ; zxing/optimized/QRFormatInformation.cpp.ll
 ; Function Attrs: nounwind
@@ -413,7 +422,10 @@ entry:
   ret i64 %5
 }
 
-; 16 occurrences:
+; 20 occurrences:
+; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; linux/optimized/pasid.ll
 ; llvm/optimized/CalcSpillWeights.cpp.ll
 ; llvm/optimized/InlineSpiller.cpp.ll
@@ -429,6 +441,7 @@ entry:
 ; llvm/optimized/RenameIndependentSubregs.cpp.ll
 ; llvm/optimized/SplitKit.cpp.ll
 ; llvm/optimized/TwoAddressInstructionPass.cpp.ll
+; mitsuba3/optimized/string.cpp.ll
 ; ruby/optimized/thread.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000e(i64 %0, i32 %1) #0 {
@@ -467,7 +480,7 @@ entry:
   ret i64 %5
 }
 
-; 443 occurrences:
+; 444 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abc.c.ll
@@ -759,6 +772,7 @@ entry:
 ; luajit/optimized/lj_opt_fold.ll
 ; luajit/optimized/lj_opt_fold_dyn.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_image.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -996,7 +1010,7 @@ entry:
   ret i64 %5
 }
 
-; 11 occurrences:
+; 9 occurrences:
 ; linux/optimized/generic.ll
 ; luajit/optimized/lj_api.ll
 ; luajit/optimized/lj_api_dyn.ll
@@ -1004,8 +1018,6 @@ entry:
 ; luajit/optimized/lj_cconv_dyn.ll
 ; luajit/optimized/lj_dispatch.ll
 ; luajit/optimized/lj_dispatch_dyn.ll
-; luajit/optimized/lj_obj.ll
-; luajit/optimized/lj_obj_dyn.ll
 ; luajit/optimized/lj_serialize.ll
 ; luajit/optimized/lj_serialize_dyn.ll
 ; Function Attrs: nounwind

@@ -4,7 +4,7 @@
 ; icu/optimized/genmbcs.ll
 ; llvm/optimized/ByteCodeEmitter.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000044(i8 %0, i8 %1) #0 {
+define i8 @func0000000000000084(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 8
   %3 = icmp eq i8 %0, 8
@@ -17,7 +17,7 @@ entry:
 ; linux/optimized/drm_dp_mst_topology.ll
 ; postgres/optimized/ruleutils.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000104(i8 %0, i8 %1) #0 {
+define i8 @func0000000000000204(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ult i8 %1, 2
   %3 = icmp eq i8 %0, 2

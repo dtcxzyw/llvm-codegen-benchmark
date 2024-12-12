@@ -53,19 +53,36 @@ func0000000000000019:                   # @func0000000000000019
 	and	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000031:                   # @func0000000000000031
 	sext.w	a1, a1
 	sltiu	a1, a1, 10
 	slli	a1, a1, 4
 	andi	a0, a0, -25
 	or	a0, a0, a1
 	ret
+func0000000000000011:                   # @func0000000000000011
+	sext.w	a1, a1
+	sltiu	a1, a1, 2
+	xori	a1, a1, 1
+	slli	a1, a1, 7
+	andi	a0, a0, 127
+	or	a0, a0, a1
+	ret
+func0000000000000029:                   # @func0000000000000029
+	sext.w	a1, a1
+	lui	a2, 12288
+	sltiu	a1, a1, 8
+	xori	a1, a1, 1
+	slli	a1, a1, 26
+	and	a0, a0, a2
+	or	a0, a0, a1
+	ret
 func0000000000000014:                   # @func0000000000000014
 	sext.w	a2, a1
 	lui	a1, 16384
-	bgez	a2, .LBB7_2
+	bgez	a2, .LBB9_2
 	addiw	a1, a1, 64
-.LBB7_2:                                # %entry
+.LBB9_2:                                # %entry
 	lui	a2, 999152
 	addiw	a2, a2, -1
 	and	a0, a0, a2

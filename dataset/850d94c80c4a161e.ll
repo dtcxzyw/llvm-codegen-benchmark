@@ -22,7 +22,7 @@ define i32 @func0000000000000007(i32 %0, i16 %1) #0 {
 entry:
   %2 = or i16 %1, 1
   %3 = zext i16 %2 to i32
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 

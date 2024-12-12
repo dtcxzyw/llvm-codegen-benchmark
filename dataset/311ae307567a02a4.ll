@@ -11,7 +11,8 @@ entry:
   ret i32 %3
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/gregorian.ll
 ; icu/optimized/decNumber.ll
 ; jq/optimized/decNumber.ll
 ; yosys/optimized/fstdata.ll

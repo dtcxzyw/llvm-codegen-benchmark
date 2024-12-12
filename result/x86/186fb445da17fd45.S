@@ -5,14 +5,6 @@ func0000000000000005:                   # @func0000000000000005
 	cltq
 	imulq	$88, %rax, %rax
 	retq
-func0000000000000019:                   # @func0000000000000019
-	cmpl	$6, %esi
-	movl	$1, %eax
-	cmovgel	%edi, %eax
-	cltq
-	shlq	$2, %rax
-	leaq	(%rax,%rax,2), %rax
-	retq
 func0000000000000029:                   # @func0000000000000029
 	cmpl	$131068, %esi                   # imm = 0x1FFFC
 	movl	$262144, %eax                   # imm = 0x40000

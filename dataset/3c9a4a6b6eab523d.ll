@@ -4,7 +4,7 @@
 ; clap-rs/optimized/gk6w3l154s6ch7z.ll
 ; linux/optimized/fork.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010c(i64 %0, i1 %1, i64 %2) #0 {
+define i1 @func000000000000020c(i64 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, 1
   %4 = or i1 %3, %1

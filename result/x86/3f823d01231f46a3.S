@@ -82,6 +82,13 @@ func000000000000000f:                   # @func000000000000000f
 	shll	$7, %edi
 	orl	%edi, %eax
 	retq
+func000000000000007b:                   # @func000000000000007b
+	movzbl	%dl, %eax
+	shll	$8, %esi
+	orl	%esi, %eax
+	shll	$16, %edi
+	orl	%edi, %eax
+	retq
 func000000000000003e:                   # @func000000000000003e
 	movzbl	%dl, %eax
 	shll	$8, %esi

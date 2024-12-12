@@ -25,6 +25,20 @@ entry:
   ret i8 %2
 }
 
+; 5 occurrences:
+; hyperscan/optimized/match.c.ll
+; hyperscan/optimized/program_runtime.c.ll
+; hyperscan/optimized/runtime.c.ll
+; redis/optimized/bitops.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000004(i16 %0) #0 {
+entry:
+  %1 = shl nsw i16 -1, %0
+  %2 = trunc i16 %1 to i8
+  ret i8 %2
+}
+
 ; 2 occurrences:
 ; linux/optimized/hwregs.ll
 ; postgres/optimized/ifaddr.ll
@@ -32,19 +46,6 @@ entry:
 define i8 @func000000000000000c(i16 %0) #0 {
 entry:
   %1 = shl nuw nsw i16 1, %0
-  %2 = trunc i16 %1 to i8
-  ret i8 %2
-}
-
-; 4 occurrences:
-; hyperscan/optimized/match.c.ll
-; hyperscan/optimized/program_runtime.c.ll
-; hyperscan/optimized/runtime.c.ll
-; redis/optimized/bitops.ll
-; Function Attrs: nounwind
-define i8 @func0000000000000004(i16 %0) #0 {
-entry:
-  %1 = shl nsw i16 -1, %0
   %2 = trunc i16 %1 to i8
   ret i8 %2
 }

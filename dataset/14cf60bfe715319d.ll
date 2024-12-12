@@ -28,11 +28,11 @@
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; openvdb/optimized/points.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(ptr %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000098(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 5
   %4 = icmp eq i32 %3, 0
-  %5 = or i1 %4, %1
+  %5 = or i1 %1, %4
   %6 = icmp ne ptr %0, null
   %7 = or i1 %6, %5
   ret i1 %7
@@ -45,11 +45,11 @@ entry:
 ; php/optimized/zend_API.ll
 ; php/optimized/zend_builtin_functions.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000302(ptr %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000602(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 196608
   %4 = icmp ne i32 %3, 131072
-  %5 = or i1 %4, %1
+  %5 = or i1 %1, %4
   %6 = icmp eq ptr %0, null
   %7 = or i1 %6, %5
   ret i1 %7
@@ -61,27 +61,28 @@ entry:
 ; imgui/optimized/imgui.cpp.ll
 ; llvm/optimized/RetainCountChecker.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000084(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 768
   %4 = icmp eq i32 %3, 0
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   %6 = icmp eq ptr %1, null
   %7 = or i1 %5, %6
   ret i1 %7
 }
 
-; 4 occurrences:
+; 5 occurrences:
+; clamav/optimized/readdb.c.ll
 ; imgui/optimized/imgui.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000042(ptr %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000082(ptr %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = and i32 %2, 88
+  %3 = and i32 %2, 768
   %4 = icmp eq i32 %3, 0
-  %5 = or i1 %4, %1
+  %5 = or i1 %1, %4
   %6 = icmp eq ptr %0, null
   %7 = or i1 %6, %5
   ret i1 %7
@@ -93,11 +94,11 @@ entry:
 ; llvm/optimized/Scope.cpp.ll
 ; z3/optimized/bv_rewriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000304(i1 %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000604(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
   %4 = icmp ne i32 %3, 14
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   %6 = icmp eq ptr %1, null
   %7 = or i1 %5, %6
   ret i1 %7

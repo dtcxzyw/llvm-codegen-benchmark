@@ -1,5 +1,5 @@
 
-; 73 occurrences:
+; 68 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; darktable/optimized/introspection_rawdenoise.c.ll
@@ -15,11 +15,8 @@
 ; linux/optimized/iommu-traces.ll
 ; linux/optimized/main.ll
 ; linux/optimized/mei-trace.ll
-; linux/optimized/mmap_lock.ll
-; linux/optimized/net-traces.ll
 ; linux/optimized/nfnetlink_log.ll
 ; linux/optimized/nfs4trace.ll
-; linux/optimized/nfstrace.ll
 ; linux/optimized/power-traces.ll
 ; linux/optimized/printk.ll
 ; linux/optimized/regmap.ll
@@ -31,10 +28,8 @@
 ; linux/optimized/tcp_input.ll
 ; linux/optimized/thermal_core.ll
 ; linux/optimized/vfs_dir.ll
-; linux/optimized/virtgpu_trace_points.ll
 ; linux/optimized/workqueue.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
-; openexr/optimized/ImfHuf.cpp.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; php/optimized/ir_emit.ll
 ; postgres/optimized/bootscanner.ll
@@ -93,7 +88,7 @@ entry:
   ret i64 %2
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; bullet3/optimized/b3GpuJacobiContactSolver.ll
 ; bullet3/optimized/b3GpuPgsConstraintSolver.ll
 ; bullet3/optimized/b3PrefixScanCL.ll
@@ -104,7 +99,6 @@ entry:
 ; libjpeg-turbo/optimized/jquant1.c.ll
 ; memcached/optimized/testapp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
-; opencv/optimized/brisk.cpp.ll
 ; opencv/optimized/hough.cpp.ll
 ; openexr/optimized/attributes.c.ll
 ; openjdk/optimized/check_code.ll
@@ -130,8 +124,9 @@ entry:
   ret i64 %1
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; linux/optimized/drbg.ll
+; linux/optimized/nfs4trace.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000009(i32 %0) #0 {

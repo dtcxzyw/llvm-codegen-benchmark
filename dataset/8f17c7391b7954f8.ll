@@ -12,7 +12,7 @@ entry:
   %2 = and i16 %1, 7
   %3 = shl nuw nsw i16 1, %2
   %4 = trunc nuw i16 %3 to i8
-  %5 = or i8 %4, %0
+  %5 = or i8 %0, %4
   ret i8 %5
 }
 

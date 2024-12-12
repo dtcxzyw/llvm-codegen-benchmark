@@ -3,7 +3,7 @@
 ; imgui/optimized/imgui_draw.cpp.ll
 ; nanosvg/optimized/nanosvg.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0, float %1) #0 {
+define i1 @func0000000000000088(i32 %0, float %1) #0 {
 entry:
   %2 = fcmp olt float %1, 1.000000e+00
   %3 = icmp ult i32 %0, 2
@@ -25,7 +25,7 @@ entry:
 ; 1 occurrences:
 ; yoga/optimized/CalculateLayout.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0, float %1) #0 {
+define i1 @func0000000000000058(i32 %0, float %1) #0 {
 entry:
   %2 = fcmp uno float %1, 0.000000e+00
   %3 = icmp ne i32 %0, 0
@@ -33,10 +33,12 @@ entry:
   ret i1 %4
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; openjdk/optimized/DirectAudioDevice.ll
+; zed-rs/optimized/2u07ozvgb5y602lk6oirxyayc.ll
+; zed-rs/optimized/f2m41hcwghjno5p8tkrposn1f.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i32 %0, float %1) #0 {
+define i1 @func00000000000001d4(i32 %0, float %1) #0 {
 entry:
   %2 = fcmp une float %1, 1.000000e+00
   %3 = icmp sgt i32 %0, 0
@@ -47,7 +49,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/OGLContext.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i32 %0, float %1) #0 {
+define i1 @func00000000000001d8(i32 %0, float %1) #0 {
 entry:
   %2 = fcmp une float %1, 1.000000e+00
   %3 = icmp ne i32 %0, 2
@@ -137,7 +139,7 @@ entry:
 ; 1 occurrences:
 ; imgui/optimized/imgui.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000102(i32 %0, float %1) #0 {
+define i1 @func0000000000000202(i32 %0, float %1) #0 {
 entry:
   %2 = fcmp oeq float %1, 0.000000e+00
   %3 = icmp eq i32 %0, 16
@@ -148,7 +150,7 @@ entry:
 ; 1 occurrences:
 ; imgui/optimized/imgui_tables.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000162(i32 %0, float %1) #0 {
+define i1 @func00000000000002c2(i32 %0, float %1) #0 {
 entry:
   %2 = fcmp ule float %1, 0.000000e+00
   %3 = icmp eq i32 %0, 0
@@ -159,7 +161,7 @@ entry:
 ; 1 occurrences:
 ; imgui/optimized/imgui_tables.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i32 %0, float %1) #0 {
+define i1 @func0000000000000098(i32 %0, float %1) #0 {
 entry:
   %2 = fcmp olt float %1, 0.000000e+00
   %3 = icmp ne i32 %0, 0
@@ -193,7 +195,7 @@ entry:
 ; 1 occurrences:
 ; nori/optimized/nanovg.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000042(i32 %0, float %1) #0 {
+define i1 @func0000000000000082(i32 %0, float %1) #0 {
 entry:
   %2 = fcmp olt float %1, 1.000000e+00
   %3 = icmp eq i32 %0, 1
@@ -237,7 +239,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/gistproc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e2(i32 %0, float %1) #0 {
+define i1 @func00000000000001c2(i32 %0, float %1) #0 {
 entry:
   %2 = fcmp une float %1, 0.000000e+00
   %3 = icmp eq i32 %0, 0

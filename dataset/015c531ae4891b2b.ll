@@ -1,6 +1,7 @@
 
-; 103 occurrences:
+; 104 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
+; boost/optimized/src.ll
 ; cmake/optimized/socket.cpp.ll
 ; graphviz/optimized/sfprint.c.ll
 ; gromacs/optimized/enxio.cpp.ll
@@ -124,7 +125,7 @@ entry:
   ret i32 %1
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
@@ -132,7 +133,6 @@ entry:
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; cpython/optimized/_datetimemodule.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
-; nuttx/optimized/lib_timegm.c.ll
 ; postgres/optimized/numutils.ll
 ; redis/optimized/fpconv_dtoa.ll
 ; Function Attrs: nounwind
@@ -141,17 +141,6 @@ entry:
   %.fr = freeze i32 %0
   %1 = urem i32 %.fr, 146097
   ret i32 %1
-}
-
-; 1 occurrences:
-; linux/optimized/bcd.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0) #0 {
-entry:
-  %1 = udiv i32 %0, 10
-  %2 = mul nuw i32 %1, 6
-  %3 = add i32 %2, %0
-  ret i32 %3
 }
 
 ; 1 occurrences:

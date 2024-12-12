@@ -31,24 +31,18 @@ entry:
 ; openvdb/optimized/points.cc.ll
 ; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 6
   %3 = and i32 %2, 7
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw [8 x i64], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [8 x i64], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 
-; 19 occurrences:
+; 11 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; darktable/optimized/introspection_cacorrect.c.ll
-; harfbuzz/optimized/harfbuzz.cc.ll
-; harfbuzz/optimized/hb-subset-cff-common.cc.ll
-; harfbuzz/optimized/hb-subset-cff1.cc.ll
-; harfbuzz/optimized/hb-subset-cff2.cc.ll
-; harfbuzz/optimized/hb-subset-plan.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
 ; llvm/optimized/CodeGenRegisters.cpp.ll
 ; llvm/optimized/InjectedSourceStream.cpp.ll
 ; llvm/optimized/LiveVariables.cpp.ll
@@ -58,15 +52,13 @@ entry:
 ; llvm/optimized/PHIElimination.cpp.ll
 ; llvm/optimized/RegisterInfoEmitter.cpp.ll
 ; llvm/optimized/TpiStream.cpp.ll
-; openjdk/optimized/hb-ot-layout.ll
-; openjdk/optimized/hb-set.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1) #0 {
 entry:
-  %2 = lshr i32 %1, 6
-  %3 = and i32 %2, 7
+  %2 = lshr i32 %1, 1
+  %3 = and i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw [8 x i64], ptr %0, i64 0, i64 %4
+  %5 = getelementptr nusw nuw [2 x float], ptr %0, i64 0, i64 %4
   ret ptr %5
 }
 

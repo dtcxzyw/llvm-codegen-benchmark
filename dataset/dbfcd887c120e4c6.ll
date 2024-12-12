@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 32 occurrences:
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; cmake/optimized/fse_decompress.c.ll
 ; cmake/optimized/zstd_decompress_block.c.ll
@@ -22,9 +22,14 @@
 ; opencv/optimized/softfloat.cpp.ll
 ; ruby/optimized/parser_st.ll
 ; ruby/optimized/st.ll
-; spike/optimized/i64_to_f32.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; zstd/optimized/fse_decompress.c.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
 ; Function Attrs: nounwind
@@ -33,12 +38,11 @@ entry:
   %2 = zext nneg i8 %1 to i64
   %3 = shl nsw i64 -1, %2
   %4 = xor i64 %3, -1
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 
-; 4 occurrences:
-; linux/optimized/msr.ll
+; 3 occurrences:
 ; qemu/optimized/block_qcow2.c.ll
 ; qemu/optimized/hw_core_qdev-properties.c.ll
 ; ripgrep-rs/optimized/3bctup5kmnkujhz5.ll
@@ -48,7 +52,7 @@ entry:
   %2 = zext nneg i8 %1 to i64
   %3 = shl nuw i64 1, %2
   %4 = xor i64 %3, -1
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 
@@ -65,7 +69,7 @@ entry:
   %2 = zext nneg i8 %1 to i64
   %3 = shl nsw i64 -1, %2
   %4 = xor i64 %3, -1
-  %5 = and i64 %4, %0
+  %5 = and i64 %0, %4
   ret i64 %5
 }
 

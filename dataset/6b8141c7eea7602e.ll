@@ -1,12 +1,11 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; opencv/optimized/dxt.cpp.ll
 ; openjdk/optimized/shenandoahCollectorPolicy.ll
-; qemu/optimized/ui_vnc-enc-zrle.c.ll
 ; redis/optimized/listpack.ll
 ; rocksdb/optimized/plain_table_bloom.cc.ll
 ; yosys/optimized/fstapi.ll
@@ -19,12 +18,11 @@ entry:
   ret i64 %5
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; cmake/optimized/huf_decompress.c.ll
 ; libquic/optimized/exponentiation.c.ll
 ; libquic/optimized/quic_framer.cc.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
-; openjdk/optimized/ciMethod.ll
 ; openssl/optimized/libcrypto-lib-bn_exp.ll
 ; openssl/optimized/libcrypto-shlib-bn_exp.ll
 ; zstd/optimized/huf_decompress.c.ll
@@ -35,29 +33,50 @@ entry:
 define i64 @func0000000000000001(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 3
-  %4 = and i1 %3, %1
+  %4 = and i1 %1, %3
   %5 = select i1 %4, i64 %0, i64 0
   ret i64 %5
 }
 
-; 6 occurrences:
-; brotli/optimized/brotli_bit_stream.c.ll
-; brotli/optimized/histogram.c.ll
-; clamav/optimized/rarvm.cpp.ll
-; linux/optimized/dma-iommu.ll
-; postgres/optimized/network.ll
-; qemu/optimized/ui_vnc-enc-zrle.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000004(i64 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ult i32 %2, 127
-  %4 = and i1 %3, %1
-  %5 = select i1 %4, i64 %0, i64 0
-  ret i64 %5
-}
-
-; 8 occurrences:
+; 1 occurrences:
 ; darktable/optimized/introspection_highlights.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000018(i64 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i32 %2, 1
+  %4 = and i1 %1, %3
+  %5 = select i1 %4, i64 %0, i64 0
+  ret i64 %5
+}
+
+; 5 occurrences:
+; boost/optimized/to_chars.ll
+; duckdb/optimized/ub_duckdb_common.cpp.ll
+; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
+; duckdb/optimized/ub_duckdb_func_string.cpp.ll
+; opencv/optimized/dxt.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000a(i64 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp sgt i32 %2, 0
+  %4 = and i1 %1, %3
+  %5 = select i1 %4, i64 %0, i64 0
+  ret i64 %5
+}
+
+; 2 occurrences:
+; clamav/optimized/rarvm.cpp.ll
+; postgres/optimized/network.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i64 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 131073
+  %4 = and i1 %1, %3
+  %5 = select i1 %4, i64 %0, i64 0
+  ret i64 %5
+}
+
+; 7 occurrences:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
@@ -68,21 +87,7 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, 1
-  %4 = and i1 %3, %1
-  %5 = select i1 %4, i64 %0, i64 0
-  ret i64 %5
-}
-
-; 4 occurrences:
-; duckdb/optimized/ub_duckdb_common.cpp.ll
-; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
-; duckdb/optimized/ub_duckdb_func_string.cpp.ll
-; opencv/optimized/dxt.cpp.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000a(i64 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = icmp sgt i32 %2, 0
+  %3 = icmp ugt i32 %2, 327679
   %4 = and i1 %3, %1
   %5 = select i1 %4, i64 %0, i64 0
   ret i64 %5
@@ -97,6 +102,17 @@ entry:
 define i64 @func0000000000000006(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 64
+  %4 = and i1 %3, %1
+  %5 = select i1 %4, i64 %0, i64 0
+  ret i64 %5
+}
+
+; 1 occurrences:
+; linux/optimized/dma-iommu.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(i64 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ult i32 %2, 2
   %4 = and i1 %3, %1
   %5 = select i1 %4, i64 %0, i64 0
   ret i64 %5

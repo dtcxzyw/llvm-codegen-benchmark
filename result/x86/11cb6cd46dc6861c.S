@@ -13,7 +13,7 @@ func0000000000000000:                   # @func0000000000000000
 	addl	%ecx, %edx
 	leaq	(%rdi,%rdx,8), %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	movq	%rsi, %rdx
 	shrq	$4, %rdx
 	movabsq	$945986875574848801, %rax       # imm = 0xD20D20D20D20D21

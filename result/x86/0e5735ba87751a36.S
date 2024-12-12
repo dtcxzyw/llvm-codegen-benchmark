@@ -24,10 +24,6 @@ func0000000000000007:                   # @func0000000000000007
 	addl	%edi, %esi
 	movslq	%esi, %rax
 	retq
-func0000000000000003:                   # @func0000000000000003
-	leal	(%rdi,%rsi,4), %eax
-	cltq
-	retq
 func0000000000000008:                   # @func0000000000000008
 	leal	(%rdi,%rsi,2), %eax
 	cltq

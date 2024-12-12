@@ -1,5 +1,5 @@
 
-; 254 occurrences:
+; 250 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/exponential_biased_test.cc.ll
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
@@ -13,6 +13,10 @@
 ; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/sweep_context.cc.ll
+; boost/optimized/ext.ll
+; boost/optimized/pid.ll
+; boost/optimized/process.ll
+; boost/optimized/shell.ll
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; casadi/optimized/mx_function.cpp.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
@@ -35,9 +39,6 @@
 ; cvc5/optimized/resolution_proofs_util.cpp.ll
 ; cvc5/optimized/sygus_grammar_norm.cpp.ll
 ; cvc5/optimized/theory_arith_private.cpp.ll
-; duckdb/optimized/ub_duckdb_execution_index_art.cpp.ll
-; duckdb/optimized/ub_duckdb_optimizer_join_order.cpp.ll
-; duckdb/optimized/ub_duckdb_storage_metadata.cpp.ll
 ; eastl/optimized/BenchmarkAlgorithm.cpp.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; faiss/optimized/IndexFastScan.cpp.ll
@@ -110,10 +111,6 @@
 ; meshlab/optimized/meshselect.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
 ; meshlab/optimized/transferfunction.cpp.ll
-; minetest/optimized/CIrrDeviceSDL.cpp.ll
-; minetest/optimized/clientmap.cpp.ll
-; minetest/optimized/mg_biome.cpp.ll
-; minetest/optimized/nodedef.cpp.ll
 ; ninja/optimized/build_test.cc.ll
 ; nlohmann_json/optimized/unit.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -240,7 +237,6 @@
 ; velox/optimized/UnsafeRowSerializer.cpp.ll
 ; velox/optimized/VectorSaver.cpp.ll
 ; verilator/optimized/V3TSP.cpp.ll
-; xgboost/optimized/indexed_recordio_split.cc.ll
 ; xgboost/optimized/quantile.cc.ll
 ; xgboost/optimized/random.cc.ll
 ; xgboost/optimized/rank_metric.cc.ll
@@ -262,6 +258,26 @@ entry:
   %4 = or i64 %3, 1
   %5 = getelementptr i32, ptr %0, i64 %4
   %6 = getelementptr i8, ptr %5, i64 -8
+  ret ptr %6
+}
+
+; 8 occurrences:
+; duckdb/optimized/ub_duckdb_execution_index_art.cpp.ll
+; duckdb/optimized/ub_duckdb_optimizer_join_order.cpp.ll
+; duckdb/optimized/ub_duckdb_storage_metadata.cpp.ll
+; minetest/optimized/CIrrDeviceSDL.cpp.ll
+; minetest/optimized/clientmap.cpp.ll
+; minetest/optimized/mg_biome.cpp.ll
+; minetest/optimized/nodedef.cpp.ll
+; xgboost/optimized/indexed_recordio_split.cc.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002f(ptr %0, i64 %1) #0 {
+entry:
+  %2 = freeze i64 %1
+  %3 = ashr exact i64 %2, 1
+  %4 = or i64 %3, 1
+  %5 = getelementptr i16, ptr %0, i64 %4
+  %6 = getelementptr i8, ptr %5, i64 -4
   ret ptr %6
 }
 

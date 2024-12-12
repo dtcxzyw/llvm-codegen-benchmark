@@ -17,10 +17,10 @@ func0000000000000004:                   # @func0000000000000004
 	orq	$1, %rax
 	retq
 func000000000000000c:                   # @func000000000000000c
-	xorl	%ecx, %ecx
+	xorl	%eax, %eax
 	cmpq	%rsi, %rdi
-	movl	$80, %eax
-	cmoveq	%rcx, %rax
+	sete	%al
+	leaq	16(,%rax,8), %rax
 	retq
 func0000000000000009:                   # @func0000000000000009
 	xorl	%eax, %eax

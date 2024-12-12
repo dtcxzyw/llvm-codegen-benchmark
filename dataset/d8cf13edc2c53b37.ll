@@ -2,16 +2,17 @@
 ; 1 occurrences:
 ; ruby/optimized/date_core.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0) #0 {
+define i32 @func0000000000000014(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 15
-  %2 = icmp ult i32 %1, 3
+  %2 = icmp samesign ult i32 %1, 3
   %3 = sext i1 %2 to i32
   ret i32 %3
 }
 
-; 30 occurrences:
+; 31 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
+; boost/optimized/area.ll
 ; glslang/optimized/Initialize.cpp.ll
 ; hdf5/optimized/H5Znbit.c.ll
 ; libquic/optimized/padding.c.ll
@@ -50,8 +51,15 @@ entry:
   ret i32 %3
 }
 
-; 26 occurrences:
+; 33 occurrences:
 ; abc/optimized/covMinEsop.c.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; darktable/optimized/SamsungV2Decompressor.cpp.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; git/optimized/apply.ll
@@ -89,10 +97,10 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/vba_extract.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i32 %0) #0 {
+define i32 @func0000000000000018(i32 %0) #0 {
 entry:
   %1 = and i32 %0, 4095
-  %2 = icmp ugt i32 %1, 32
+  %2 = icmp samesign ugt i32 %1, 32
   %3 = sext i1 %2 to i32
   ret i32 %3
 }

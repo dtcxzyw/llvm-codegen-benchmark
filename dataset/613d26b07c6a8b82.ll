@@ -1,11 +1,24 @@
 
-%"struct.rawspeed::Spline<>::Segment.2761194" = type { double, double, double, double }
+%"struct.rawspeed::Spline<>::Segment.2873472" = type { double, double, double, double }
 
-; 72 occurrences:
+; 81 occurrences:
 ; abc/optimized/amapLiberty.c.ll
 ; abseil-cpp/optimized/charconv_parse_test.cc.ll
 ; arrow/optimized/light_array.cc.ll
-; ceres/optimized/block_random_access_sparse_matrix.cc.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/env.ll
+; boost/optimized/group.ll
+; boost/optimized/pipe.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/wargs_cmd.ll
 ; ceres/optimized/gradient_checker.cc.ll
 ; cmake/optimized/frm_driver.c.ll
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
@@ -14,7 +27,6 @@
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; gromacs/optimized/bench_system.cpp.ll
 ; gromacs/optimized/biassharing.cpp.ll
-; gromacs/optimized/gmx_nmtraj.cpp.ll
 ; gromacs/optimized/grompp.cpp.ll
 ; gromacs/optimized/simd_energy_accumulator.cpp.ll
 ; lightgbm/optimized/bin.cpp.ll
@@ -36,15 +48,12 @@
 ; opencv/optimized/cascadedetect_convert.cpp.ll
 ; opencv/optimized/dpm_cascade.cpp.ll
 ; opencv/optimized/eltwise_layer.cpp.ll
-; opencv/optimized/exposure_compensate.cpp.ll
 ; opencv/optimized/facemarkAAM.cpp.ll
 ; opencv/optimized/guided_filter.cpp.ll
 ; opencv/optimized/hfs_core.cpp.ll
-; opencv/optimized/matrix_transform.cpp.ll
 ; opencv/optimized/matrix_wrap.cpp.ll
 ; opencv/optimized/nbayes.cpp.ll
 ; opencv/optimized/onlineBoosting.cpp.ll
-; opencv/optimized/onnx_importer.cpp.ll
 ; opencv/optimized/plane.cpp.ll
 ; opencv/optimized/prior_box_layer.cpp.ll
 ; opencv/optimized/reduce_layer.cpp.ll
@@ -75,16 +84,16 @@
 ; yalantinglibs/optimized/test_messages_proto2.struct_pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.struct_pb.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000000c1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 29
   %4 = ashr exact i64 %3, 28
   %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = icmp eq ptr %5, %0
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
-; 20 occurrences:
+; 19 occurrences:
 ; abc/optimized/acecPo.c.ll
 ; abc/optimized/ioJson.c.ll
 ; cmake/optimized/frm_driver.c.ll
@@ -94,7 +103,6 @@ entry:
 ; oniguruma/optimized/regexec.ll
 ; opencv/optimized/miniflann.cpp.ll
 ; opencv/optimized/ppf_helpers.cpp.ll
-; openjdk/optimized/UnixOperatingSystem.ll
 ; openjdk/optimized/classLoader.ll
 ; openjdk/optimized/classLoaderExt.ll
 ; openjdk/optimized/instanceKlass.ll
@@ -106,28 +114,39 @@ entry:
 ; redis/optimized/redis-cli.ll
 ; sentencepiece/optimized/structurally_valid.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000000c4(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
   %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = icmp ugt ptr %5, %0
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
-; 5 occurrences:
-; eastl/optimized/EASprintfCore.cpp.ll
+; 4 occurrences:
 ; git/optimized/diff.ll
 ; openjdk/optimized/codeBuffer.ll
 ; pbrt-v4/optimized/aggregates.cpp.ll
 ; php/optimized/phpdbg_prompt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000000c8(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
   %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = icmp ult ptr %5, %0
+  %6 = icmp ugt ptr %0, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; openjdk/optimized/UnixOperatingSystem.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000e4(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 32
+  %4 = ashr exact i64 %3, 32
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = icmp ult ptr %0, %5
   ret i1 %6
 }
 
@@ -138,12 +157,12 @@ define i1 @func0000000000000001(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 29
   %4 = ashr i64 %3, 32
-  %5 = getelementptr %"struct.rawspeed::Spline<>::Segment.2761194", ptr %1, i64 %4
-  %6 = icmp eq ptr %5, %0
+  %5 = getelementptr %"struct.rawspeed::Spline<>::Segment.2873472", ptr %1, i64 %4
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; arrow/optimized/data.cc.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/problem_impl.cc.ll
@@ -151,7 +170,6 @@ entry:
 ; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
 ; draco/optimized/point_cloud_encoder.cc.ll
 ; git/optimized/unpack-trees.ll
-; gromacs/optimized/specbond.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; meshlab/optimized/apss.cpp.ll
 ; meshlab/optimized/mlsplugin.cpp.ll
@@ -163,12 +181,12 @@ entry:
 ; pocketpy/optimized/vm.cpp.ll
 ; yosys/optimized/mem.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000041(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 29
   %4 = ashr i64 %3, 32
   %5 = getelementptr nusw ptr, ptr %1, i64 %4
-  %6 = icmp eq ptr %5, %0
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
@@ -177,12 +195,41 @@ entry:
 ; linux/optimized/string_helpers.ll
 ; wireshark/optimized/protobuf_lang_tree.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000084(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = icmp ugt ptr %5, %0
+  %6 = icmp ult ptr %0, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; gromacs/optimized/specbond.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000061(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 30
+  %4 = ashr i64 %3, 32
+  %5 = getelementptr nusw nuw float, ptr %1, i64 %4
+  %6 = icmp eq ptr %0, %5
+  ret i1 %6
+}
+
+; 6 occurrences:
+; ceres/optimized/block_random_access_sparse_matrix.cc.ll
+; ceres/optimized/gradient_checker.cc.ll
+; gromacs/optimized/gmx_nmtraj.cpp.ll
+; opencv/optimized/exposure_compensate.cpp.ll
+; opencv/optimized/matrix_transform.cpp.ll
+; opencv/optimized/onnx_importer.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000e1(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 30
+  %4 = ashr exact i64 %3, 30
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
@@ -212,60 +259,72 @@ entry:
 ; wireshark/optimized/uat_load.c.ll
 ; wireshark/optimized/wimaxasncp_dict.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000081(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = icmp eq ptr %5, %0
+  %6 = icmp eq ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; linux/optimized/namei.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000088(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = icmp ult ptr %5, %0
+  %6 = icmp ugt ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000065(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000000c5(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
   %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = icmp uge ptr %5, %0
+  %6 = icmp ule ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000000e8(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 32
+  %4 = ashr exact i64 %3, 32
+  %5 = getelementptr nusw nuw i8, ptr %1, i64 %4
+  %6 = icmp ugt ptr %0, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; eastl/optimized/EASprintfCore.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000004c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 31
   %4 = ashr i64 %3, 32
   %5 = getelementptr nusw i16, ptr %1, i64 %4
-  %6 = icmp ne ptr %5, %0
+  %6 = icmp ne ptr %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000000cc(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
   %5 = getelementptr nusw i8, ptr %1, i64 %4
-  %6 = icmp ne ptr %5, %0
+  %6 = icmp ne ptr %0, %5
   ret i1 %6
 }
 

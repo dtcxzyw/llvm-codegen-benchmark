@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.long	4                               # 0x4
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vptestmw	%xmm1, %xmm1, %k1
 	vorps	.LCPI0_0(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	retq
@@ -21,7 +21,7 @@ func0000000000000001:                   # @func0000000000000001
 	.short	11                              # 0xb
 .LCPI2_1:
 	.long	3                               # 0x3
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	vpcmpleuw	.LCPI2_0(%rip), %xmm1, %k1
 	vorps	.LCPI2_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	retq
@@ -36,7 +36,22 @@ func0000000000000018:                   # @func0000000000000018
 	.short	32769                           # 0x8001
 .LCPI3_1:
 	.long	6                               # 0x6
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpcmpnltuw	.LCPI3_0(%rip), %xmm1, %k1
 	vorps	.LCPI3_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
+	retq
+.LCPI4_0:
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+	.short	16                              # 0x10
+.LCPI4_1:
+	.long	4                               # 0x4
+func0000000000000034:                   # @func0000000000000034
+	vpcmpnltuw	.LCPI4_0(%rip), %xmm1, %k1
+	vorps	.LCPI4_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	retq

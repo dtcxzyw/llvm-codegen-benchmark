@@ -1,5 +1,5 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; image-rs/optimized/5ez7udly19o3uj1p.ll
@@ -7,11 +7,12 @@
 ; typst-rs/optimized/4p46tkw2iv8zjgza.ll
 ; typst-rs/optimized/53ug9lwflkq7ucu8.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000020(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nuw i64 %2, %0
+  %3 = add nuw i64 %0, %2
   %4 = shl i64 %3, 2
   %5 = add i64 %4, 4
   ret i64 %5
@@ -31,7 +32,7 @@ entry:
 define i64 @func0000000000000030(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = shl i64 %3, 32
   %5 = add i64 %4, -4294967296
   ret i64 %5
@@ -43,21 +44,9 @@ entry:
 define i64 @func0000000000000055(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = shl nsw i64 %3, 2
   %5 = add nsw i64 %4, -4
-  ret i64 %5
-}
-
-; 1 occurrences:
-; darktable/optimized/introspection_demosaic.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000050(i64 %0, i32 %1) #0 {
-entry:
-  %2 = zext nneg i32 %1 to i64
-  %3 = add nsw i64 %2, %0
-  %4 = shl i64 %3, 4
-  %5 = add i64 %4, -4
   ret i64 %5
 }
 
@@ -69,23 +58,9 @@ entry:
 define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = shl i64 %3, 4
   %5 = add i64 %4, -4
-  ret i64 %5
-}
-
-; 3 occurrences:
-; postgres/optimized/snapmgr.ll
-; raylib/optimized/raudio.c.ll
-; stb/optimized/stb_vorbis.c.ll
-; Function Attrs: nounwind
-define i64 @func000000000000007f(i64 %0, i32 %1) #0 {
-entry:
-  %2 = zext nneg i32 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
-  %4 = shl nuw nsw i64 %3, 1
-  %5 = add nuw nsw i64 %4, 4
   ret i64 %5
 }
 
@@ -97,15 +72,28 @@ entry:
 ; llvm/optimized/StmtOpenMP.cpp.ll
 ; postgres/optimized/reorderbuffer.ll
 ; postgres/optimized/snapmgr.ll
-; raylib/optimized/raudio.c.ll
-; stb/optimized/stb_vorbis.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000003f(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
-  %4 = shl nuw nsw i64 %3, 1
-  %5 = add nuw nsw i64 %4, 4
+  %3 = add nuw nsw i64 %0, %2
+  %4 = shl nuw nsw i64 %3, 3
+  %5 = add nuw nsw i64 %4, 24
+  ret i64 %5
+}
+
+; 2 occurrences:
+; typst-rs/optimized/53ug9lwflkq7ucu8.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000022(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext i32 %1 to i64
+  %3 = add nuw i64 %0, %2
+  %4 = shl i64 %3, 2
+  %5 = add nuw i64 %4, 4
   ret i64 %5
 }
 
@@ -116,9 +104,21 @@ entry:
 define i64 @func000000000000001d(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = shl nuw nsw i64 %3, 12
   %5 = add nsw i64 %4, -1
+  ret i64 %5
+}
+
+; 1 occurrences:
+; postgres/optimized/snapmgr.ll
+; Function Attrs: nounwind
+define i64 @func000000000000007f(i64 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = add nuw nsw i64 %0, %2
+  %4 = shl nuw nsw i64 %3, 2
+  %5 = add nuw nsw i64 %4, 120
   ret i64 %5
 }
 
@@ -128,21 +128,9 @@ entry:
 define i64 @func0000000000000015(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = shl nsw i64 %3, 2
   %5 = add nsw i64 %4, 200
-  ret i64 %5
-}
-
-; 1 occurrences:
-; typst-rs/optimized/53ug9lwflkq7ucu8.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000022(i64 %0, i32 %1) #0 {
-entry:
-  %2 = zext i32 %1 to i64
-  %3 = add nuw i64 %2, %0
-  %4 = shl i64 %3, 1
-  %5 = add nuw i64 %4, 2
   ret i64 %5
 }
 
@@ -152,7 +140,7 @@ entry:
 define i64 @func000000000000007d(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = shl nuw nsw i64 %3, 4
   %5 = add nsw i64 %4, -16
   ret i64 %5
@@ -164,7 +152,7 @@ entry:
 define i64 @func000000000000007a(i64 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = add nuw nsw i64 %2, %0
+  %3 = add nuw nsw i64 %0, %2
   %4 = shl nuw i64 %3, 2
   %5 = add nuw i64 %4, 24
   ret i64 %5

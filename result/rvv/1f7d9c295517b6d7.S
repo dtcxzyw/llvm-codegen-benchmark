@@ -19,6 +19,13 @@ func000000000000001c:                   # @func000000000000001c
 	vadd.vv	v10, v10, v8
 	vadd.vi	v8, v10, 1, v0.t
 	ret
+func0000000000000014:                   # @func0000000000000014
+	vsetivli	zero, 8, e32, m2, ta, mu
+	vmv.v.i	v12, -1
+	vsll.vv	v10, v12, v10
+	vadd.vv	v10, v10, v8
+	vadd.vi	v8, v10, 1, v0.t
+	ret
 func0000000000000028:                   # @func0000000000000028
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vmv.v.i	v12, 1

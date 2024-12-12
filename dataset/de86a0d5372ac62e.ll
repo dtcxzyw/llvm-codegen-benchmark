@@ -1,10 +1,9 @@
 
-; 99 occurrences:
+; 97 occurrences:
 ; actix-rs/optimized/4oxclimtnmaa5ft9.ll
 ; actix-rs/optimized/fpsycltpd003ini.ll
 ; brotli/optimized/block_splitter.c.ll
 ; clamav/optimized/others.c.ll
-; cmake/optimized/nghttp2_option.c.ll
 ; curl/optimized/libcurl_la-rtsp.ll
 ; eastl/optimized/TestBitset.cpp.ll
 ; faiss/optimized/IDSelector.cpp.ll
@@ -66,7 +65,6 @@
 ; openssl/optimized/libssl-shlib-statem_dtls.ll
 ; php/optimized/pcre2_compile.ll
 ; php/optimized/pcre2_jit_compile.ll
-; php/optimized/pcre2_maketables.ll
 ; php/optimized/pcre2_study.ll
 ; postgres/optimized/varlena.ll
 ; qemu/optimized/dump_dump.c.ll
@@ -104,7 +102,7 @@ define i8 @func0000000000000004(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 7
   %3 = shl nuw i8 1, %2
-  %4 = or i8 %3, %0
+  %4 = or i8 %0, %3
   ret i8 %4
 }
 
@@ -116,7 +114,18 @@ define i8 @func0000000000000002(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 7
   %3 = shl nsw i8 -1, %2
-  %4 = or i8 %3, %0
+  %4 = or i8 %0, %3
+  ret i8 %4
+}
+
+; 1 occurrences:
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000000(i8 %0, i8 %1) #0 {
+entry:
+  %2 = and i8 %1, 7
+  %3 = shl i8 3, %2
+  %4 = or i8 %0, %3
   ret i8 %4
 }
 
@@ -142,7 +151,7 @@ define i8 @func0000000000000006(i8 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 3
   %3 = shl nuw nsw i8 1, %2
-  %4 = or i8 %3, %0
+  %4 = or i8 %0, %3
   ret i8 %4
 }
 

@@ -1,8 +1,8 @@
 
-; 34 occurrences:
+; 35 occurrences:
+; boost/optimized/message.ll
 ; duckdb/optimized/ub_duckdb_operator_csv_sniffer.cpp.ll
 ; icu/optimized/genrb.ll
-; icu/optimized/ucnv2022.ll
 ; jsonnet/optimized/rapidyaml.cpp.ll
 ; linux/optimized/irq.ll
 ; linux/optimized/rcec.ll
@@ -17,6 +17,7 @@
 ; openjdk/optimized/mulnode.ll
 ; openjdk/optimized/node.ll
 ; rocksdb/optimized/range_del_aggregator.cc.ll
+; simdjson/optimized/simdjson.cpp.ll
 ; wireshark/optimized/packet-ber.c.ll
 ; yosys/optimized/eval.ll
 ; yosys/optimized/extract_fa.ll

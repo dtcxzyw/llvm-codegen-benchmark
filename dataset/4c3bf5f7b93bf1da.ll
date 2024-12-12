@@ -1,8 +1,9 @@
 
-; 90 occurrences:
+; 100 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_allocator_test.cc.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/key_hash.cc.ll
+; boost/optimized/url_impl.ll
 ; clamav/optimized/clamdtop.c.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; cmake/optimized/zstd_decompress.c.ll
@@ -73,7 +74,6 @@
 ; openjdk/optimized/loopnode.ll
 ; postgres/optimized/xlog.ll
 ; quickjs/optimized/libbf.ll
-; re2/optimized/re2.cc.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; ruby/optimized/vm.ll
 ; rust-analyzer-rs/optimized/4h2i4ex5hsghl46o.ll
@@ -88,6 +88,16 @@
 ; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
 ; wireshark/optimized/androiddump.c.ll
 ; yalantinglibs/optimized/data_gen.cpp.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/b1bc3rbs9s229gjbf718xcm8w.ll
+; zed-rs/optimized/boyei0qs0y80q8snoztbi8jt7.ll
+; zed-rs/optimized/d8k4gi60mp0onf0c8t6rhs7ks.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
+; zed-rs/optimized/f10ffiihtazjqkmwr0jihceey.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_decompress.c.ll
 ; Function Attrs: nounwind
@@ -99,10 +109,9 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; opencv/optimized/softfloat.cpp.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
-; spike/optimized/s_mul64To128M.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1, i1 %2) #0 {
 entry:
@@ -112,7 +121,7 @@ entry:
   ret i64 %5
 }
 
-; 240 occurrences:
+; 249 occurrences:
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
@@ -353,6 +362,15 @@ entry:
 ; wasmedge/optimized/validator.cpp.ll
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/b1bc3rbs9s229gjbf718xcm8w.ll
+; zed-rs/optimized/boyei0qs0y80q8snoztbi8jt7.ll
+; zed-rs/optimized/d8k4gi60mp0onf0c8t6rhs7ks.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
+; zed-rs/optimized/f10ffiihtazjqkmwr0jihceey.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1, i1 %2) #0 {
 entry:

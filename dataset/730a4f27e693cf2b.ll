@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; jq/optimized/regcomp.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/ASTReaderStmt.cpp.ll
@@ -14,6 +14,7 @@
 ; z3/optimized/nlqsat.cpp.ll
 ; z3/optimized/qsat.cpp.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
+; zed-rs/optimized/49ldufv0nkpmlikvem3q45q0g.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000015(i64 %0, i32 %1, i32 %2) #0 {
 entry:

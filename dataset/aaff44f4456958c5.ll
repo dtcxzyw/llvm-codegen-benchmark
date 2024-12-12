@@ -5,7 +5,7 @@
 define i64 @func000000000000000b(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = shl nuw nsw i64 %3, 4
   ret i64 %4
 }
@@ -61,12 +61,12 @@ entry:
 define i64 @func0000000000000007(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = shl nuw nsw i64 %3, 8
   ret i64 %4
 }
 
-; 8 occurrences:
+; 10 occurrences:
 ; clamav/optimized/lzwdec.c.ll
 ; cmake/optimized/archive_read_support_format_tar.c.ll
 ; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
@@ -75,11 +75,13 @@ entry:
 ; openssl/optimized/libcrypto-shlib-ccm128.ll
 ; redis/optimized/lua_struct.ll
 ; wireshark/optimized/packet-tds.c.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = shl i64 %3, 8
   ret i64 %4
 }
@@ -107,7 +109,7 @@ entry:
 define i64 @func0000000000000006(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = shl nuw i64 %3, 32
   ret i64 %4
 }
@@ -118,7 +120,7 @@ entry:
 define i64 @func000000000000000c(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = shl i64 %3, 7
   ret i64 %4
 }
@@ -129,7 +131,7 @@ entry:
 define i64 @func0000000000000003(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = shl nuw nsw i64 %3, 24
   ret i64 %4
 }
@@ -140,7 +142,7 @@ entry:
 define i64 @func0000000000000000(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i64
-  %3 = or i64 %2, %0
+  %3 = or i64 %0, %2
   %4 = shl i64 %3, 8
   ret i64 %4
 }
@@ -153,7 +155,7 @@ entry:
 define i64 @func000000000000000f(i64 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i64
-  %3 = or disjoint i64 %2, %0
+  %3 = or disjoint i64 %0, %2
   %4 = shl nuw nsw i64 %3, 32
   ret i64 %4
 }

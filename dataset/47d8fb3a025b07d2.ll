@@ -23,12 +23,12 @@
 define i32 @func0000000000000030(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 3600
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
 
-; 80 occurrences:
+; 81 occurrences:
 ; abc/optimized/abcCascade.c.ll
 ; abc/optimized/bmcFx.c.ll
 ; abc/optimized/dauNpn2.c.ll
@@ -62,6 +62,7 @@ entry:
 ; llvm/optimized/SemaDecl.cpp.ll
 ; llvm/optimized/SemaExprCXX.cpp.ll
 ; llvm/optimized/SemaLookup.cpp.ll
+; lvgl/optimized/lv_color.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
@@ -118,7 +119,7 @@ entry:
   ret i32 %5
 }
 
-; 111 occurrences:
+; 116 occurrences:
 ; abc/optimized/abcCascade.c.ll
 ; abc/optimized/acecRe.c.ll
 ; abc/optimized/bmcMesh.c.ll
@@ -137,6 +138,8 @@ entry:
 ; abseil-cpp/optimized/salted_seed_seq_test.cc.ll
 ; abseil-cpp/optimized/seed_sequences_test.cc.ll
 ; assimp/optimized/Importer.cpp.ll
+; boost/optimized/partition.ll
+; ceres/optimized/covariance_impl.cc.ll
 ; cmake/optimized/archive_ppmd8.c.ll
 ; cmake/optimized/cmCTestGIT.cxx.ll
 ; cmake/optimized/cm_get_date.c.ll
@@ -155,7 +158,6 @@ entry:
 ; hwloc/optimized/lstopo_no_graphics-lstopo-draw.ll
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; icu/optimized/calendar.ll
-; icu/optimized/gregoimp.ll
 ; image-rs/optimized/2ndzmzcdt55acj4k.ll
 ; libpng/optimized/pngread.c.ll
 ; libquic/optimized/error_correction.c.ll
@@ -177,8 +179,12 @@ entry:
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; luau/optimized/lgcdebug.cpp.ll
+; lvgl/optimized/lv_arc.ll
 ; memcached/optimized/memcached-itoa_ljust.ll
 ; memcached/optimized/memcached_debug-itoa_ljust.ll
+; meshlab/optimized/arap.cpp.ll
+; meshlab/optimized/cube_style_precomputation.cpp.ll
+; meshlab/optimized/filter_parametrization.cpp.ll
 ; minetest/optimized/mapgen.cpp.ll
 ; minetest/optimized/noise.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
@@ -234,12 +240,12 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 7
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
 
-; 53 occurrences:
+; 49 occurrences:
 ; abc/optimized/acbMfs.c.ll
 ; abc/optimized/bmcFx.c.ll
 ; abc/optimized/cnfWrite.c.ll
@@ -250,6 +256,7 @@ entry:
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/tz.cpp.ll
+; boost/optimized/gregorian.ll
 ; clamav/optimized/filtering.c.ll
 ; cpython/optimized/_datetimemodule.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
@@ -257,7 +264,6 @@ entry:
 ; git/optimized/xdiffi.ll
 ; hwloc/optimized/lstopo-lstopo-fig.ll
 ; hwloc/optimized/lstopo_no_graphics-lstopo-fig.ll
-; icu/optimized/gregoimp.ll
 ; libquic/optimized/prtime.cc.ll
 ; libquic/optimized/time_support.c.ll
 ; libquic/optimized/tls_cbc.c.ll
@@ -266,12 +272,10 @@ entry:
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; luau/optimized/loslib.cpp.ll
+; lvgl/optimized/lv_calendar_header_dropdown.ll
 ; minetest/optimized/mapgen.cpp.ll
 ; minetest/optimized/mapgen_v6.cpp.ll
 ; minetest/optimized/noise.cpp.ll
-; openblas/optimized/dgesdd.c.ll
-; openblas/optimized/dsyevr_2stage.c.ll
-; openblas/optimized/dsyevx_2stage.c.ll
 ; opencv/optimized/brisk.cpp.ll
 ; opencv/optimized/pyramids.cpp.ll
 ; openjdk/optimized/jfdctint.ll
@@ -281,8 +285,6 @@ entry:
 ; openmpi/optimized/ad_read_coll.ll
 ; openmpi/optimized/ad_write_coll.ll
 ; openspiel/optimized/bridge_scoring.cc.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; openusd/optimized/restoration.c.ll
 ; pybind11/optimized/test_pytypes.cpp.ll
 ; quantlib/optimized/thirty360.ll
@@ -297,40 +299,12 @@ entry:
 define i32 @func0000000000000010(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 7
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
 
-; 18 occurrences:
-; cmake/optimized/archive_read_support_format_iso9660.c.ll
-; cmake/optimized/cf-h1-proxy.c.ll
-; cpython/optimized/_datetimemodule.ll
-; curl/optimized/libcurl_la-cf-h1-proxy.ll
-; gromacs/optimized/editconf.cpp.ll
-; hdf5/optimized/H5Omtime.c.ll
-; icu/optimized/ucnvbocu.ll
-; libwebp/optimized/picture_csp_enc.c.ll
-; openspiel/optimized/blackjack.cc.ll
-; openusd/optimized/tessellation.cpp.ll
-; php/optimized/decode.ll
-; postgres/optimized/big5.ll
-; postgres/optimized/utf8_and_gb18030.ll
-; quantlib/optimized/dataparsers.ll
-; quantlib/optimized/date.ll
-; ruby/optimized/japanese.ll
-; wireshark/optimized/packet-smtp.c.ll
-; wolfssl/optimized/asn.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000035(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = mul nuw nsw i32 %2, -94
-  %4 = add nsw i32 %3, %1
-  %5 = add nsw i32 %4, %0
-  ret i32 %5
-}
-
-; 182 occurrences:
+; 183 occurrences:
 ; abc/optimized/abcCascade.c.ll
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/extraUtilMult.c.ll
@@ -344,6 +318,7 @@ entry:
 ; arrow/optimized/value_parsing.cc.ll
 ; assimp/optimized/COBLoader.cpp.ll
 ; assimp/optimized/XFileParser.cpp.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/archive_read_support_format_warc.c.ll
 ; cmake/optimized/ftp.c.ll
 ; cpython/optimized/_datetimemodule.ll
@@ -358,7 +333,6 @@ entry:
 ; fmt/optimized/unicode-test.cc.ll
 ; fmt/optimized/util.cc.ll
 ; hermes/optimized/DateUtil.cpp.ll
-; icu/optimized/gregoimp.ll
 ; icu/optimized/simpletz.ll
 ; icu/optimized/tzfmt.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
@@ -447,6 +421,7 @@ entry:
 ; llvm/optimized/SampleProfReader.cpp.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
+; lvgl/optimized/lv_calendar_header_dropdown.ll
 ; minetest/optimized/noise.cpp.ll
 ; minetest/optimized/reflowscan.cpp.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
@@ -517,7 +492,7 @@ entry:
 define i32 @func0000000000000015(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 60
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }
@@ -542,7 +517,7 @@ entry:
 define i32 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 1619
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
@@ -553,7 +528,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 1619
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
@@ -565,7 +540,7 @@ entry:
 define i32 @func0000000000000034(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 28
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
@@ -582,6 +557,39 @@ entry:
   ret i32 %5
 }
 
+; 23 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
+; cmake/optimized/archive_read_support_format_iso9660.c.ll
+; cmake/optimized/cf-h1-proxy.c.ll
+; cpython/optimized/_datetimemodule.ll
+; curl/optimized/libcurl_la-cf-h1-proxy.ll
+; gromacs/optimized/editconf.cpp.ll
+; hdf5/optimized/H5Omtime.c.ll
+; icu/optimized/ucnvbocu.ll
+; libwebp/optimized/picture_csp_enc.c.ll
+; openspiel/optimized/blackjack.cc.ll
+; openusd/optimized/tessellation.cpp.ll
+; php/optimized/decode.ll
+; postgres/optimized/big5.ll
+; postgres/optimized/utf8_and_gb18030.ll
+; quantlib/optimized/dataparsers.ll
+; quantlib/optimized/date.ll
+; wireshark/optimized/packet-smtp.c.ll
+; wolfssl/optimized/asn.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000035(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = mul nuw nsw i32 %2, 10
+  %4 = add nsw i32 %1, %3
+  %5 = add nsw i32 %4, %0
+  ret i32 %5
+}
+
 ; 6 occurrences:
 ; libwebp/optimized/picture_tools_enc.c.ll
 ; miniaudio/optimized/unity.c.ll
@@ -593,7 +601,7 @@ entry:
 define i32 @func000000000000003d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 10
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }
@@ -604,21 +612,22 @@ entry:
 define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 94
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/wlcNtk.c.ll
 ; icu/optimized/gregocal.ll
+; lvgl/optimized/lv_scale.ll
 ; zxing/optimized/DMDecoder.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 24
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add nsw i32 %4, %0
   ret i32 %5
 }
@@ -645,7 +654,7 @@ entry:
 define i32 @func000000000000003a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 2971
-  %4 = add nuw i32 %3, %1
+  %4 = add nuw i32 %1, %3
   %5 = add nuw i32 %4, %0
   ret i32 %5
 }
@@ -658,15 +667,14 @@ entry:
 define i32 @func0000000000000037(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 365
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nuw nsw i32 %4, %0
   ret i32 %5
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; cpython/optimized/_datetimemodule.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
-; icu/optimized/gregoimp.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
@@ -695,7 +703,7 @@ define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 3
   %4 = add nsw i32 %3, %1
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -705,8 +713,8 @@ entry:
 define i32 @func0000000000000038(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 3600
-  %4 = add nuw i32 %3, %1
-  %5 = add i32 %4, %0
+  %4 = add nuw i32 %1, %3
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -717,7 +725,7 @@ entry:
 define i32 @func000000000000003e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 4191289
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add nuw i32 %4, %0
   ret i32 %5
 }
@@ -728,7 +736,7 @@ entry:
 define i32 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 3
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
@@ -739,7 +747,7 @@ entry:
 define i32 @func0000000000000020(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw i32 %2, 9617
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, %0
   ret i32 %5
 }
@@ -750,7 +758,7 @@ entry:
 define i32 @func0000000000000017(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, -19081
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nuw nsw i32 %4, %0
   ret i32 %5
 }

@@ -51,7 +51,7 @@ func000000000000000e:                   # @func000000000000000e
 func000000000000003f:                   # @func000000000000003f
 	mul	a1, a1, a2
 	add	a0, a0, a1
-	slliw	a0, a0, 1
+	slliw	a0, a0, 3
 	ret
 func000000000000001c:                   # @func000000000000001c
 	mul	a1, a1, a2

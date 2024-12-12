@@ -28,3 +28,13 @@ func000000000000000a:                   # @func000000000000000a
 	setns	%al
 	andb	%dil, %al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpw	$10, %si
+	setb	%al
+	andb	%dil, %al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	cmpw	$2, %si
+	setae	%al
+	andb	%dil, %al
+	retq

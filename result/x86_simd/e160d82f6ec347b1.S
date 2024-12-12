@@ -34,7 +34,7 @@
 	.byte	12                              # 0xc
 	.byte	13                              # 0xd
 	.byte	14                              # 0xe
-func00000000000000fc:                   # @func00000000000000fc
+func00000000000001ec:                   # @func00000000000001ec
 	vpmovsxbw	.LCPI0_2(%rip), %ymm3   # ymm3 = [16,0,1,2,17,4,5,6,18,8,9,10,19,12,13,14]
 	vpermi2w	%ymm2, %ymm1, %ymm3
 	vpor	%ymm0, %ymm3, %ymm0
@@ -76,7 +76,7 @@ func00000000000000fc:                   # @func00000000000000fc
 	.byte	12                              # 0xc
 	.byte	13                              # 0xd
 	.byte	14                              # 0xe
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	vpmovsxbw	.LCPI1_1(%rip), %ymm3   # ymm3 = [16,0,1,2,17,4,5,6,18,8,9,10,19,12,13,14]
 	vpermi2w	%ymm2, %ymm1, %ymm3
 	vpor	%ymm0, %ymm3, %ymm0
@@ -120,7 +120,7 @@ func00000000000000f1:                   # @func00000000000000f1
 	.byte	12                              # 0xc
 	.byte	13                              # 0xd
 	.byte	14                              # 0xe
-func00000000000000f8:                   # @func00000000000000f8
+func00000000000001f8:                   # @func00000000000001f8
 	vpmovsxbw	.LCPI2_2(%rip), %ymm3   # ymm3 = [16,0,1,2,17,4,5,6,18,8,9,10,19,12,13,14]
 	vpermi2w	%ymm2, %ymm1, %ymm3
 	vpor	%ymm0, %ymm3, %ymm0
@@ -164,7 +164,7 @@ func00000000000000f8:                   # @func00000000000000f8
 	.byte	12                              # 0xc
 	.byte	13                              # 0xd
 	.byte	14                              # 0xe
-func00000000000000f4:                   # @func00000000000000f4
+func00000000000001f4:                   # @func00000000000001f4
 	vpmovsxbw	.LCPI3_2(%rip), %ymm3   # ymm3 = [16,0,1,2,17,4,5,6,18,8,9,10,19,12,13,14]
 	vpermi2w	%ymm2, %ymm1, %ymm3
 	vpor	%ymm0, %ymm3, %ymm0

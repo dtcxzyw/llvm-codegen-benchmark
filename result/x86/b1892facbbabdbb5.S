@@ -14,9 +14,9 @@ func0000000000000028:                   # @func0000000000000028
 	addq	%rcx, %rax
 	retq
 func0000000000000006:                   # @func0000000000000006
-	xorl	%eax, %eax
+	xorl	%ecx, %ecx
 	testl	%edx, %edx
-	cmoveq	%rdi, %rax
-	movslq	%esi, %rcx
-	leaq	(%rax,%rcx,8), %rax
+	cmoveq	%rdi, %rcx
+	movslq	%esi, %rax
+	addq	%rcx, %rax
 	retq

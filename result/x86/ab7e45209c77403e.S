@@ -10,9 +10,3 @@ func000000000000000c:                   # @func000000000000000c
 	orb	%dil, %al
 	andb	$1, %al
 	retq
-func0000000000000010:                   # @func0000000000000010
-	cmpq	%rdx, %rsi
-	seta	%al
-	orb	%dil, %al
-	andb	$1, %al
-	retq

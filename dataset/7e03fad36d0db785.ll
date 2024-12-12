@@ -1,10 +1,9 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; jemalloc/optimized/fxp.ll
 ; jemalloc/optimized/fxp.pic.ll
 ; jemalloc/optimized/fxp.sym.ll
 ; linux/optimized/md.ll
-; qemu/optimized/hw_timer_cadence_ttc.c.ll
 ; redis/optimized/fxp.ll
 ; redis/optimized/fxp.sym.ll
 ; wireshark/optimized/packet-erf.c.ll
@@ -12,8 +11,8 @@
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0) #0 {
 entry:
-  %1 = lshr i64 %0, 2
-  %2 = urem i64 %1, 3
+  %1 = lshr i64 %0, 16
+  %2 = urem i64 %1, 1000000000
   ret i64 %2
 }
 

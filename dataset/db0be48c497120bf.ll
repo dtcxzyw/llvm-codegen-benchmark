@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; coreutils-rs/optimized/56596qkor8w4ma8l.ll
 ; gromacs/optimized/dlascl.cpp.ll
 ; ipopt/optimized/IpCGPenaltyLSAcceptor.ll
@@ -9,7 +9,6 @@
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
 ; openblas/optimized/dlamch.c.ll
-; proj/optimized/projsync.cpp.ll
 ; quantlib/optimized/bjerksundstenslandengine.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000044(double %0, double %1) #0 {
@@ -103,6 +102,17 @@ entry:
 }
 
 ; 1 occurrences:
+; boost/optimized/within_sph_geo.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000d4(double %0, double %1) #0 {
+entry:
+  %2 = fcmp uge double %1, %0
+  %3 = fcmp ogt double %0, 0.000000e+00
+  %4 = and i1 %3, %2
+  ret i1 %4
+}
+
+; 1 occurrences:
 ; hermes/optimized/Operations.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000086(double %0, double %1) #0 {
@@ -153,17 +163,6 @@ define i1 @func0000000000000047(double %0, double %1) #0 {
 entry:
   %2 = fcmp ogt double %1, 0.000000e+00
   %3 = fcmp une double %0, %1
-  %4 = and i1 %3, %2
-  ret i1 %4
-}
-
-; 1 occurrences:
-; proj/optimized/projsync.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000042(double %0, double %1) #0 {
-entry:
-  %2 = fcmp ogt double %1, %0
-  %3 = fcmp olt double %0, -1.800000e+02
   %4 = and i1 %3, %2
   ret i1 %4
 }

@@ -1,7 +1,6 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; linux/optimized/event_inode.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/r8169_main.ll
 ; qemu/optimized/hw_net_rtl8139.c.ll
 ; Function Attrs: nounwind

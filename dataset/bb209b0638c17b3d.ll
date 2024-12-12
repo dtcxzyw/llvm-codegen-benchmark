@@ -1,8 +1,9 @@
 
-; 14 occurrences:
+; 15 occurrences:
 ; assimp/optimized/MDCLoader.cpp.ll
 ; assimp/optimized/TextureTransform.cpp.ll
 ; darktable/optimized/introspection_colorbalancergb.c.ll
+; lvgl/optimized/lv_arc.ll
 ; minetest/optimized/content_mapblock.cpp.ll
 ; minetest/optimized/game.cpp.ll
 ; minetest/optimized/player_sao.cpp.ll
@@ -19,7 +20,7 @@ define float @func0000000000000000(float %0, float %1) #0 {
 entry:
   %2 = fadd float %1, 0.000000e+00
   %3 = fmul float %2, 0.000000e+00
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   ret float %4
 }
 

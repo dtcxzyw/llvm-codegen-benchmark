@@ -5,14 +5,14 @@
 define i64 @func0000000000000008(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 562949953421310
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = zext i32 %1 to i64
   %6 = shl i64 %5, 54
   %7 = or i64 %6, %4
   ret i64 %7
 }
 
-; 76 occurrences:
+; 77 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -86,6 +86,7 @@ entry:
 ; llvm/optimized/CodeCompleteConsumer.cpp.ll
 ; llvm/optimized/InstrRefBasedImpl.cpp.ll
 ; llvm/optimized/VarLocBasedImpl.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; openspiel/optimized/chess.cc.ll
 ; openspiel/optimized/chess_common.cc.ll
 ; openusd/optimized/surfaceFactory.cpp.ll
@@ -95,7 +96,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 61
   %5 = and i64 %1, -4611686015206162432
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   %7 = or disjoint i64 %6, %4
   ret i64 %7
 }
@@ -124,7 +125,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = shl i64 %3, 56
   %5 = and i64 %1, 281470681743360
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   %7 = or i64 %6, %4
   ret i64 %7
 }
@@ -139,7 +140,20 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = shl nuw i64 %3, 32
   %5 = and i64 %1, 65280
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
+  %7 = or disjoint i64 %6, %4
+  ret i64 %7
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_image.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001d(i64 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 4294967295
+  %4 = or disjoint i64 %0, %3
+  %5 = zext nneg i32 %1 to i64
+  %6 = shl nuw i64 %5, 48
   %7 = or disjoint i64 %6, %4
   ret i64 %7
 }
@@ -178,7 +192,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = shl i64 %3, 40
   %5 = and i64 %1, 1099510579200
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   %7 = or disjoint i64 %6, %4
   ret i64 %7
 }
@@ -191,7 +205,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw i64 %3, 48
   %5 = and i64 %1, 4494803534348288
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   %7 = or i64 %6, %4
   ret i64 %7
 }

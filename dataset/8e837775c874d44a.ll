@@ -54,14 +54,13 @@ entry:
   ret i64 %4
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; folly/optimized/JemallocHugePageAllocator.cpp.ll
 ; hyperscan/optimized/mcclellancompile.cpp.ll
 ; hyperscan/optimized/mcsheng_compile.cpp.ll
 ; linux/optimized/gup.ll
 ; llvm/optimized/AArch64ExternalSymbolizer.cpp.ll
 ; llvm/optimized/AArch64MCTargetDesc.cpp.ll
-; llvm/optimized/SelectionDAG.cpp.ll
 ; openusd/optimized/animMapper.cpp.ll
 ; postgres/optimized/brin.ll
 ; postgres/optimized/execTuples.ll
@@ -142,13 +141,17 @@ entry:
   ret i64 %4
 }
 
-; 8 occurrences:
+; 12 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
+; arrow/optimized/string-to-double.cc.ll
+; double_conversion/optimized/string-to-double.cc.ll
 ; freetype/optimized/sdf.c.ll
 ; hyperscan/optimized/mcsheng_compile.cpp.ll
+; icu/optimized/double-conversion-string-to-double.ll
 ; jq/optimized/regexec.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; oniguruma/optimized/regexec.ll
+; openusd/optimized/string-to-double.cc.ll
 ; postgres/optimized/brin_tuple.ll
 ; postgres/optimized/slru.ll
 ; Function Attrs: nounwind
@@ -160,7 +163,7 @@ entry:
   ret i64 %4
 }
 
-; 47 occurrences:
+; 46 occurrences:
 ; abseil-cpp/optimized/layout_test.cc.ll
 ; abseil-cpp/optimized/numbers.cc.ll
 ; base64-rs/optimized/3i18zkzed1c7jyoe.ll
@@ -207,7 +210,6 @@ entry:
 ; opencv/optimized/run_length_morphology.cpp.ll
 ; openjdk/optimized/metaspace.ll
 ; redis/optimized/quicklist.ll
-; spike/optimized/f16_to_f32.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:

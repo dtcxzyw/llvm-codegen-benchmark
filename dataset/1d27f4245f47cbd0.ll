@@ -362,12 +362,13 @@ entry:
   ret i64 %2
 }
 
-; 28 occurrences:
+; 29 occurrences:
 ; abc/optimized/giaSatLut.c.ll
 ; clamav/optimized/regexec.c.ll
 ; duckdb/optimized/ub_duckdb_storage_metadata.cpp.ll
 ; eastl/optimized/TestBitVector.cpp.ll
 ; fmt/optimized/std-test.cc.ll
+; graphviz/optimized/grammar.c.ll
 ; hermes/optimized/regexec.c.ll
 ; hyperscan/optimized/rose_build_program.cpp.ll
 ; linux/optimized/array.ll

@@ -8,7 +8,7 @@
 define i32 @func0000000000000002(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 131071
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = shl i32 %1, 22
   %6 = or i32 %4, %5
   ret i32 %6
@@ -22,7 +22,6 @@ entry:
 ; git/optimized/transport.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hdf5/optimized/H5FDcore.c.ll
-; hdf5/optimized/H5Zfletcher32.c.ll
 ; icu/optimized/normalizer2impl.ll
 ; image-rs/optimized/ptscn4jakoj4p9m.ll
 ; libphonenumber/optimized/unicodetext.cc.ll
@@ -102,6 +101,7 @@ entry:
 ; z3/optimized/subpaving_mpff.cpp.ll
 ; z3/optimized/subpaving_mpfx.cpp.ll
 ; z3/optimized/subpaving_mpq.cpp.ll
+; zed-rs/optimized/3puy2qvhvlnhff2105q9h6j8i.ll
 ; zstd/optimized/zstd_v01.c.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; zstd/optimized/zstd_v03.c.ll
@@ -111,7 +111,7 @@ entry:
 define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -261633
-  %4 = or disjoint i32 %3, %1
+  %4 = or disjoint i32 %1, %3
   %5 = shl nuw nsw i32 %0, 13
   %6 = or disjoint i32 %5, %4
   ret i32 %6
@@ -126,15 +126,14 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 524288
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = shl i32 %1, 16
   %6 = or i32 %4, %5
   ret i32 %6
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; glslang/optimized/Constant.cpp.ll
-; gromacs/optimized/vals16.c.ll
 ; linux/optimized/intel_crt.ll
 ; linux/optimized/intel_vdsc.ll
 ; minetest/optimized/objdef.cpp.ll
@@ -146,19 +145,18 @@ entry:
 define i32 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 8585216
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = shl nuw i32 %1, 8
   %6 = or disjoint i32 %4, %5
   ret i32 %6
 }
 
-; 39 occurrences:
+; 38 occurrences:
 ; abc/optimized/giaGlitch.c.ll
 ; abc/optimized/giaNf.c.ll
 ; abc/optimized/giaPf.c.ll
 ; abc/optimized/msatClause.c.ll
 ; abc/optimized/rwrLib.c.ll
-; abc/optimized/rwtUtil.c.ll
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver3.c.ll
 ; clamav/optimized/bytecode_api.c.ll
@@ -196,7 +194,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 255
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = shl i32 %1, 24
   %6 = or disjoint i32 %4, %5
   ret i32 %6
@@ -225,7 +223,7 @@ entry:
 define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1835008
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = shl nuw nsw i32 %1, 6
   %6 = or i32 %4, %5
   ret i32 %6
@@ -242,7 +240,7 @@ entry:
 define i32 @func000000000000000b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65280
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = shl nuw i32 %1, 24
   %6 = or disjoint i32 %4, %5
   ret i32 %6
@@ -266,12 +264,24 @@ entry:
 }
 
 ; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 16711680
+  %4 = or i32 %0, %3
+  %5 = shl nuw i32 %1, 24
+  %6 = or i32 %4, %5
+  ret i32 %6
+}
+
+; 1 occurrences:
 ; linux/optimized/intel_pch_refclk.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, -32768
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   %5 = shl nuw nsw i32 %1, 8
   %6 = or disjoint i32 %4, %5
   ret i32 %6
@@ -283,7 +293,7 @@ entry:
 define i32 @func0000000000000006(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 3840
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = shl nsw i32 %1, 6
   %6 = or i32 %4, %5
   ret i32 %6

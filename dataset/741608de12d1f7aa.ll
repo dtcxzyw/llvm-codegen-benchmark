@@ -7,7 +7,7 @@
 ; wireshark/optimized/packet-cp2179.c.ll
 ; wireshark/optimized/packet-wow.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i8 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 0
   %3 = icmp eq i32 %0, 0
@@ -20,7 +20,7 @@ entry:
 ; llvm/optimized/SemaTemplateDeduction.cpp.ll
 ; pbrt-v4/optimized/bxdfs.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000cc(i32 %0, i8 %1) #0 {
+define i32 @func000000000000018c(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 0
   %3 = icmp ne i32 %0, 40

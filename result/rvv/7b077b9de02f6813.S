@@ -44,6 +44,27 @@ func0000000000000001:                   # @func0000000000000001
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vrsub.vi	v8, v10, 0
 	ret
+func000000000000000b:                   # @func000000000000000b
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vadd.vv	v8, v8, v9
+	lui	a0, 2575
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vzext.vf2	v10, v8
+	addiw	a0, a0, -325
+	slli	a0, a0, 13
+	vmul.vx	v8, v10, a0
+	ret
+.LCPI7_0:
+	.quad	163391164108059                 # 0x949a784bcd1b
+func0000000000000008:                   # @func0000000000000008
+	lui	a0, %hi(.LCPI7_0)
+	ld	a0, %lo(.LCPI7_0)(a0)
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vadd.vv	v8, v8, v9
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vzext.vf2	v10, v8
+	vmul.vx	v8, v10, a0
+	ret
 func0000000000000002:                   # @func0000000000000002
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vv	v8, v8, v9

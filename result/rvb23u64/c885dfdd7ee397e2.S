@@ -1,4 +1,4 @@
-func0000000000000055:                   # @func0000000000000055
+func00000000000000a5:                   # @func00000000000000a5
 	zext.h	a0, a0
 	andi	a2, a2, 255
 	slli	a1, a1, 8
@@ -7,7 +7,7 @@ func0000000000000055:                   # @func0000000000000055
 	sltu	a0, a1, a0
 	xori	a0, a0, 1
 	ret
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	sext.h	a0, a0
 	andi	a2, a2, 255
 	slli	a1, a1, 8
@@ -15,7 +15,7 @@ func000000000000005a:                   # @func000000000000005a
 	sext.h	a1, a1
 	slt	a0, a1, a0
 	ret
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	sext.h	a0, a0
 	andi	a2, a2, 255
 	slli	a1, a1, 8
@@ -23,7 +23,7 @@ func0000000000000056:                   # @func0000000000000056
 	sext.h	a1, a1
 	slt	a0, a0, a1
 	ret
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	zext.h	a0, a0
 	andi	a2, a2, 255
 	slli	a1, a1, 8
@@ -32,7 +32,7 @@ func0000000000000051:                   # @func0000000000000051
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	zext.h	a0, a0
 	andi	a2, a2, 255
 	slli	a1, a1, 8
@@ -40,7 +40,7 @@ func0000000000000054:                   # @func0000000000000054
 	zext.h	a1, a1
 	sltu	a0, a0, a1
 	ret
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	zext.h	a0, a0
 	andi	a2, a2, 255
 	slli	a1, a1, 8

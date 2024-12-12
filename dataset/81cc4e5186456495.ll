@@ -1,5 +1,5 @@
 
-; 44 occurrences:
+; 43 occurrences:
 ; clamav/optimized/ishield.c.ll
 ; harfbuzz/optimized/gsubgpos-context.cc.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -26,7 +26,6 @@
 ; z3/optimized/opt_cores.cpp.ll
 ; z3/optimized/opt_lns.cpp.ll
 ; z3/optimized/pb_sls.cpp.ll
-; z3/optimized/pb_solver.cpp.ll
 ; z3/optimized/q_model_fixer.cpp.ll
 ; z3/optimized/sat_aig_cuts.cpp.ll
 ; z3/optimized/sat_anf_simplifier.cpp.ll

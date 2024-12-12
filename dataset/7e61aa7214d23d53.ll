@@ -18,7 +18,7 @@ entry:
   ret i64 %5
 }
 
-; 120 occurrences:
+; 119 occurrences:
 ; cmake/optimized/zstdmt_compress.c.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hermes/optimized/APFloat.cpp.ll
@@ -137,7 +137,6 @@ entry:
 ; mold/optimized/thunks.cc.PPC32.cc.ll
 ; postgres/optimized/reorderbuffer.ll
 ; raylib/optimized/raudio.c.ll
-; wasmtime-rs/optimized/ssi9zaqvuyufsqk.ll
 ; xgboost/optimized/quantile.cc.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i32 %0, i32 %1) #0 {

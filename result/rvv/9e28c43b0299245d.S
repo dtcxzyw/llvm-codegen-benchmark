@@ -3,5 +3,5 @@ func0000000000000001:                   # @func0000000000000001
 	vfsub.vv	v12, v12, v16
 	vsetvli	zero, zero, e32, m2, ta, ma
 	vfncvt.rtz.x.f.w	v10, v12
-	vmseq.vv	v0, v10, v8
+	vmseq.vv	v0, v8, v10
 	ret

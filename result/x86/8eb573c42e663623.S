@@ -22,6 +22,10 @@ func0000000000000011:                   # @func0000000000000011
 	leal	1(%rdi), %eax
 	shrl	$6, %eax
 	retq
+func0000000000000035:                   # @func0000000000000035
+	leal	-7(%rdi), %eax
+	shrl	$3, %eax
+	retq
 func000000000000002d:                   # @func000000000000002d
 	leal	4095(%rdi), %eax
 	shrl	$12, %eax

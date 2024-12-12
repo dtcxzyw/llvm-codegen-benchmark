@@ -1,5 +1,7 @@
 
-; 5 occurrences:
+; 7 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; gromacs/optimized/coupling.cpp.ll
 ; gromacs/optimized/dlarrbx.cpp.ll
 ; openblas/optimized/dlahqr.c.ll

@@ -5,17 +5,18 @@ func0000000000000004:                   # @func0000000000000004
 	setb	%al
 	andb	%dil, %al
 	retq
-func0000000000000046:                   # @func0000000000000046
+func0000000000000001:                   # @func0000000000000001
+	movabsq	$-10000000000, %rax             # imm = 0xFFFFFFFDABF41C00
+	imulq	%rdx, %rax
+	addq	%rsi, %rax
+	movabsq	$5000000000, %rcx               # imm = 0x12A05F200
+	cmpq	%rcx, %rax
+	sete	%al
+	andb	%dil, %al
+	retq
+func0000000000000086:                   # @func0000000000000086
 	imulq	$1000000, %rdx, %rax            # imm = 0xF4240
 	addq	%rsi, %rax
 	sets	%al
-	andb	%dil, %al
-	retq
-func0000000000000001:                   # @func0000000000000001
-	leaq	(%rdx,%rdx,4), %rax
-	leaq	(%rsi,%rax,2), %rax
-	movabsq	$1844674407370955161, %rcx      # imm = 0x1999999999999999
-	cmpq	%rcx, %rax
-	sete	%al
 	andb	%dil, %al
 	retq

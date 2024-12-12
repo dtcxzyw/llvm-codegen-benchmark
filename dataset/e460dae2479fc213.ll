@@ -1,5 +1,7 @@
 
 ; 137 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/topology.ll
 ; cmake/optimized/cmComputeLinkDepends.cxx.ll
 ; cmake/optimized/cmFortranParserImpl.cxx.ll
 ; cmake/optimized/cmMakefile.cxx.ll
@@ -66,7 +68,6 @@
 ; nix/optimized/indirect.ll
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -134,30 +135,29 @@
 ; yaml-cpp/optimized/scanner.cpp.ll
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/preproc.ll
 ; yosys/optimized/qbfsat.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000006b(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %2, 7
   %.neg = xor i64 %3, -1
-  %4 = add i64 %.neg, %1
+  %4 = add i64 %1, %.neg
   %5 = lshr i64 %4, 1
-  %6 = getelementptr nusw ptr, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw ptr, ptr %0, i64 %5
   ret ptr %6
 }
 
 ; 1 occurrences:
 ; soc-simulator/optimized/sim_mycpu.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000062(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000063(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = udiv i64 %2, 21
   %.neg = xor i64 %3, -1
-  %4 = add i64 %.neg, %1
+  %4 = add i64 %1, %.neg
   %5 = lshr i64 %4, 1
-  %6 = getelementptr nusw ptr, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw ptr, ptr %0, i64 %5
   ret ptr %6
 }
 

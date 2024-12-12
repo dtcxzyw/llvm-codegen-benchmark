@@ -1,98 +1,56 @@
-func0000000000000016:                   // @func0000000000000016
+func0000000000000026:                   // @func0000000000000026
 // %bb.0:                               // %entry
-	movi	v5.4s, #1
-	sshr	v2.2d, v2.2d, #32
-	sshr	v3.2d, v3.2d, #32
-	add	v4.4s, v4.4s, v5.4s
-	saddw	v0.2d, v0.2d, v4.2s
-	saddw2	v1.2d, v1.2d, v4.4s
-	cmgt	v1.2d, v3.2d, v1.2d
-	cmgt	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	add	w8, w2, #1
+	add	x8, x0, w8, sxtw
+	cmp	x8, x1, asr #32
+	cset	w0, lt
 	ret
                                         // -- End function
-func00000000000000c4:                   // @func00000000000000c4
+func0000000000000184:                   // @func0000000000000184
 // %bb.0:                               // %entry
-	movi	v5.4s, #1
-	sshr	v2.2d, v2.2d, #2
-	sshr	v3.2d, v3.2d, #2
-	add	v4.4s, v4.4s, v5.4s
-	saddw	v0.2d, v0.2d, v4.2s
-	saddw2	v1.2d, v1.2d, v4.4s
-	cmhi	v1.2d, v3.2d, v1.2d
-	cmhi	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	add	w8, w2, #1
+	add	x8, x0, w8, sxtw
+	cmp	x8, x1, asr #2
+	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000056:                   // @func0000000000000056
+func00000000000000a6:                   // @func00000000000000a6
 // %bb.0:                               // %entry
-	movi	v5.4s, #1
-	sshr	v2.2d, v2.2d, #32
-	sshr	v3.2d, v3.2d, #32
-	add	v4.4s, v4.4s, v5.4s
-	saddw	v0.2d, v0.2d, v4.2s
-	saddw2	v1.2d, v1.2d, v4.4s
-	cmgt	v1.2d, v3.2d, v1.2d
-	cmgt	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	add	w8, w2, #1
+	add	x8, x0, w8, sxtw
+	cmp	x8, x1, asr #32
+	cset	w0, lt
 	ret
                                         // -- End function
-func00000000000000d4:                   // @func00000000000000d4
+func00000000000001a4:                   // @func00000000000001a4
 // %bb.0:                               // %entry
-	movi	v5.2d, #0xffffffffffffffff
-	sshr	v2.2d, v2.2d, #2
-	sshr	v3.2d, v3.2d, #2
-	add	v4.4s, v4.4s, v5.4s
-	saddw	v0.2d, v0.2d, v4.2s
-	saddw2	v1.2d, v1.2d, v4.4s
-	cmhi	v1.2d, v3.2d, v1.2d
-	cmhi	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	sub	w8, w2, #1
+	add	x8, x0, w8, sxtw
+	cmp	x8, x1, asr #2
+	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000044:                   // @func0000000000000044
+func0000000000000084:                   // @func0000000000000084
 // %bb.0:                               // %entry
-	movi	v5.2d, #0xffffffffffffffff
-	sshr	v2.2d, v2.2d, #2
-	sshr	v3.2d, v3.2d, #2
-	add	v4.4s, v4.4s, v5.4s
-	saddw	v0.2d, v0.2d, v4.2s
-	saddw2	v1.2d, v1.2d, v4.4s
-	cmhi	v1.2d, v3.2d, v1.2d
-	cmhi	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	sub	w8, w2, #1
+	add	x8, x0, w8, sxtw
+	cmp	x8, x1, asr #2
+	cset	w0, lo
 	ret
                                         // -- End function
-func00000000000000d6:                   // @func00000000000000d6
+func00000000000001a6:                   // @func00000000000001a6
 // %bb.0:                               // %entry
-	movi	v5.2d, #0xffffffffffffffff
-	sshr	v2.2d, v2.2d, #32
-	sshr	v3.2d, v3.2d, #32
-	add	v4.4s, v4.4s, v5.4s
-	saddw	v0.2d, v0.2d, v4.2s
-	saddw2	v1.2d, v1.2d, v4.4s
-	cmgt	v1.2d, v3.2d, v1.2d
-	cmgt	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	sub	w8, w2, #1
+	add	x8, x0, w8, sxtw
+	cmp	x8, x1, asr #32
+	cset	w0, lt
 	ret
                                         // -- End function
-func0000000000000096:                   // @func0000000000000096
+func0000000000000126:                   // @func0000000000000126
 // %bb.0:                               // %entry
-	movi	v5.2d, #0xffffffffffffffff
-	sshr	v2.2d, v2.2d, #32
-	sshr	v3.2d, v3.2d, #32
-	add	v4.4s, v4.4s, v5.4s
-	saddw	v0.2d, v0.2d, v4.2s
-	saddw2	v1.2d, v1.2d, v4.4s
-	cmgt	v1.2d, v3.2d, v1.2d
-	cmgt	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	sub	w8, w2, #1
+	add	x8, x0, w8, sxtw
+	cmp	x8, x1, asr #32
+	cset	w0, lt
 	ret
                                         // -- End function

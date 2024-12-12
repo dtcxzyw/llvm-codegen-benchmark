@@ -12,6 +12,13 @@ func000000000000000c:                   # @func000000000000000c
 	shrq	$4, %rax
 	leaq	1(%rax,%rdi), %rax
 	retq
+func000000000000000d:                   # @func000000000000000d
+	movq	%rsi, %rdx
+	movabsq	$-6148914691236517205, %rax     # imm = 0xAAAAAAAAAAAAAAAB
+	mulxq	%rax, %rax, %rax
+	shrq	$4, %rax
+	leaq	1(%rax,%rdi), %rax
+	retq
 func000000000000000f:                   # @func000000000000000f
 	movq	%rsi, %rdx
 	movabsq	$-1581149492032247281, %rax     # imm = 0xEA0EA0EA0EA0EA0F

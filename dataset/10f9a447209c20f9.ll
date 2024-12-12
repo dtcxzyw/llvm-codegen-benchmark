@@ -1,5 +1,5 @@
 
-; 20 occurrences:
+; 19 occurrences:
 ; darktable/optimized/avif.c.ll
 ; darktable/optimized/exr.cc.ll
 ; darktable/optimized/histogram.c.ll
@@ -19,25 +19,12 @@
 ; minetest/optimized/mesh_compare.cpp.ll
 ; minetest/optimized/mg_schematic.cpp.ll
 ; oiio/optimized/Writer.cpp.ll
-; opencv/optimized/qrcode_encoder.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -2
   %3 = sext i32 %2 to i64
-  %4 = icmp eq i64 %3, %0
-  ret i1 %4
-}
-
-; 2 occurrences:
-; ceres/optimized/gradient_checker.cc.ll
-; opencv/optimized/qrcode_encoder.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i64 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 2147483646
-  %3 = zext nneg i32 %2 to i64
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp eq i64 %0, %3
   ret i1 %4
 }
 

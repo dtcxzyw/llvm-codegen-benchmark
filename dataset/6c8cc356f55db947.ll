@@ -6,7 +6,7 @@
 ; openexr/optimized/ImfRgbaFile.cpp.ll
 ; php/optimized/ir_gcm.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000aa(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = sext i32 %2 to i64
@@ -38,7 +38,7 @@ entry:
 ; g2o/optimized/vertex_se3_expmap.cpp.ll
 ; icu/optimized/ucnv_ext.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 -2, %1
   %3 = sext i32 %2 to i64
@@ -51,7 +51,7 @@ entry:
 ; opencv/optimized/stereo_binary_bm.cpp.ll
 ; opencv/optimized/stereobm.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i32 %1) #0 {
+define i1 @func00000000000000a6(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 0, %1
   %3 = sext i32 %2 to i64
@@ -63,7 +63,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/stereobm.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 0, %1
   %3 = sext i32 %2 to i64

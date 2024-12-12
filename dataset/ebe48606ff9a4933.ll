@@ -11,7 +11,7 @@ entry:
   %3 = lshr i16 %2, 3
   %4 = and i16 %3, 512
   %5 = select i1 %1, i16 %4, i16 1024
-  %6 = or disjoint i16 %5, %0
+  %6 = or disjoint i16 %0, %5
   ret i16 %6
 }
 

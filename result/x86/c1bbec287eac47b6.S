@@ -1,16 +1,16 @@
-func0000000000000064:                   # @func0000000000000064
+func00000000000000c4:                   # @func00000000000000c4
 	addl	$-4, %edx
 	subq	%rdx, %rsi
 	cmpq	%rdi, %rsi
 	setb	%al
 	retq
-func0000000000000364:                   # @func0000000000000364
+func00000000000006c4:                   # @func00000000000006c4
 	addl	$-1048575, %edx                 # imm = 0xFFF00001
 	subq	%rdx, %rsi
 	cmpq	%rdi, %rsi
 	setb	%al
 	retq
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	decl	%edx
 	addq	%rdx, %rdx
 	subq	%rdx, %rsi

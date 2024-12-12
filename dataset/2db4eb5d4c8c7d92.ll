@@ -15,13 +15,13 @@
 ; ruby/optimized/parser_st.ll
 ; ruby/optimized/st.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000481(i8 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -65
   %3 = icmp ult i8 %2, 26
   %4 = or disjoint i8 %1, 32
   %5 = select i1 %3, i8 %4, i8 %1
-  %6 = icmp eq i8 %5, %0
+  %6 = icmp eq i8 %0, %5
   ret i1 %6
 }
 
@@ -29,13 +29,13 @@ entry:
 ; ruby/optimized/parser_st.ll
 ; ruby/optimized/st.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014a(i8 %0, i8 %1) #0 {
+define i1 @func000000000000048a(i8 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -65
   %3 = icmp ult i8 %2, 26
   %4 = or disjoint i8 %1, 32
   %5 = select i1 %3, i8 %4, i8 %1
-  %6 = icmp slt i8 %5, %0
+  %6 = icmp sgt i8 %0, %5
   ret i1 %6
 }
 
@@ -44,13 +44,13 @@ entry:
 ; openssl/optimized/libcrypto-lib-v3_ncons.ll
 ; openssl/optimized/libcrypto-shlib-v3_ncons.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000484(i8 %0, i8 %1) #0 {
 entry:
   %2 = add i8 %1, -65
   %3 = icmp ult i8 %2, 26
   %4 = or disjoint i8 %1, 32
   %5 = select i1 %3, i8 %4, i8 %1
-  %6 = icmp ugt i8 %5, %0
+  %6 = icmp ult i8 %0, %5
   ret i1 %6
 }
 

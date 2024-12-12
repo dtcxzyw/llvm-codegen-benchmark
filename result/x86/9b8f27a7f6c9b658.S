@@ -1,10 +1,10 @@
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	xorl	$2147483647, %esi               # imm = 0x7FFFFFFF
 	addl	$2, %edi
 	cmpl	%esi, %edi
 	seta	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	movl	$47, %eax
 	subl	%edi, %eax
 	cmpl	%esi, %eax
@@ -12,6 +12,6 @@ func0000000000000018:                   # @func0000000000000018
 	retq
 func0000000000000008:                   # @func0000000000000008
 	negl	%edi
-	cmpl	%esi, %edi
-	setb	%al
+	cmpl	%edi, %esi
+	seta	%al
 	retq

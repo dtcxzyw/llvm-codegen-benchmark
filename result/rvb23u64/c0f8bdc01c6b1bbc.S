@@ -11,13 +11,12 @@ func0000000000000001:                   # @func0000000000000001
 	and	a0, a0, a1
 	slli	a0, a0, 14
 	ret
-func0000000000000008:                   # @func0000000000000008
-	andi	a1, a1, 255
-	sltiu	a1, a1, 4
+func000000000000000a:                   # @func000000000000000a
+	sext.b	a1, a1
+	slti	a1, a1, 49
 	xori	a1, a1, 1
 	and	a0, a0, a1
-	li	a1, 9
-	slli	a1, a1, 8
+	li	a1, -2
 	czero.nez	a0, a1, a0
-	addi	a0, a0, 1280
+	addi	a0, a0, 3
 	ret

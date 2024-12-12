@@ -1,4 +1,4 @@
-func000000000000006a:                   # @func000000000000006a
+func000000000000007f:                   # @func000000000000007f
 	slli	a2, a2, 44
 	srli	a2, a2, 44
 	sh2add	a2, a2, a2
@@ -6,16 +6,14 @@ func000000000000006a:                   # @func000000000000006a
 	sh2add	a0, a0, a1
 	addi	a0, a0, 44
 	ret
-func000000000000006e:                   # @func000000000000006e
-	andi	a2, a2, 255
-	slli	a0, a0, 4
-	slli	a3, a2, 9
-	sh3add	a2, a2, a3
-	add	a0, a0, a1
-	add	a0, a0, a2
+func000000000000007e:                   # @func000000000000007e
+	slli	a2, a2, 52
+	srli	a2, a2, 52
+	sh2add	a0, a2, a0
+	sh2add	a0, a0, a1
 	addi	a0, a0, 8
 	ret
-func0000000000000048:                   # @func0000000000000048
+func000000000000004c:                   # @func000000000000004c
 	lui	a3, 1024
 	addiw	a3, a3, -2
 	and	a2, a2, a3

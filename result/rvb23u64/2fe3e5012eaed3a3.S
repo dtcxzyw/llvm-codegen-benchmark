@@ -3,7 +3,7 @@ func000000000000001a:                   # @func000000000000001a
 	czero.nez	a1, a1, a2
 	add	a0, a0, a1
 	ret
-func0000000000000023:                   # @func0000000000000023
+func0000000000000063:                   # @func0000000000000063
 	sltiu	a2, a0, 256
 	li	a3, 4
 	czero.eqz	a1, a1, a2

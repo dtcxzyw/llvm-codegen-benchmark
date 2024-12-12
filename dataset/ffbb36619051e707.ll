@@ -1,5 +1,5 @@
 
-; 42 occurrences:
+; 43 occurrences:
 ; arrow/optimized/bignum.cc.ll
 ; double_conversion/optimized/bignum.cc.ll
 ; duckdb/optimized/ub_duckdb_func_math.cpp.ll
@@ -18,6 +18,7 @@
 ; llvm/optimized/ModuleSummaryAnalysis.cpp.ll
 ; llvm/optimized/SelectOptimize.cpp.ll
 ; llvm/optimized/SyntheticCountsPropagation.cpp.ll
+; lvgl/optimized/lv_roller.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/clientiface.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
@@ -50,9 +51,11 @@ entry:
   ret i32 %3
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; typst-rs/optimized/5z4no3nnr5v1s13.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i16 %0, i16 %1) #0 {
 entry:

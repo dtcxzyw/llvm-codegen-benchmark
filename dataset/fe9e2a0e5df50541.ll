@@ -1,39 +1,5 @@
 
-; 24 occurrences:
-; abc/optimized/extraBddCas.c.ll
-; abc/optimized/luckyRead.c.ll
-; abc/optimized/trees.c.ll
-; brotli/optimized/encode.c.ll
-; cmake/optimized/trees.c.ll
-; coreutils-rs/optimized/22bojphyikqmi872.ll
-; gromacs/optimized/trees.c.ll
-; hermes/optimized/HadesGC.cpp.ll
-; libquic/optimized/trees.c.ll
-; libwebp/optimized/backward_references_enc.c.ll
-; linux/optimized/deftree.ll
-; linux/optimized/ds.ll
-; linux/optimized/ich8lan.ll
-; llvm/optimized/X86InstrInfo.cpp.ll
-; openjdk/optimized/shenandoahEvacOOMHandler.ll
-; openssl/optimized/libcrypto-lib-bn_prime.ll
-; openssl/optimized/libcrypto-shlib-bn_prime.ll
-; postgres/optimized/ginfast.ll
-; postgres/optimized/nodeHash.ll
-; redis/optimized/siphash.ll
-; ruby/optimized/parser_st.ll
-; ruby/optimized/st.ll
-; yosys/optimized/yosys.ll
-; zlib/optimized/trees.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ult i32 %2, 26
-  %4 = select i1 %3, i32 %0, i32 %1
-  %5 = zext nneg i32 %4 to i64
-  ret i64 %5
-}
-
-; 102 occurrences:
+; 86 occurrences:
 ; abc/optimized/giaLf.c.ll
 ; arrow/optimized/bignum-dtoa.cc.ll
 ; arrow/optimized/codegen_internal.cc.ll
@@ -63,10 +29,10 @@ entry:
 ; linux/optimized/irq.ll
 ; linux/optimized/rock.ll
 ; linux/optimized/vc_screen.ll
-; linux/optimized/vclock_gettime.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/LangOptions.cpp.ll
+; llvm/optimized/MCWin64EH.cpp.ll
 ; llvm/optimized/MachOUniversal.cpp.ll
 ; llvm/optimized/NeonEmitter.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
@@ -81,10 +47,6 @@ entry:
 ; ncnn/optimized/gemm.cpp.ll
 ; ncnn/optimized/shufflechannel.cpp.ll
 ; nori/optimized/nanovg.c.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtpttf.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; opencv/optimized/data.cpp.ll
 ; opencv/optimized/dxt.cpp.ll
 ; opencv/optimized/geometry.cpp.ll
@@ -92,18 +54,6 @@ entry:
 ; opencv/optimized/scansegment.cpp.ll
 ; opencv/optimized/thresh.cpp.ll
 ; opencv/optimized/ts_func.cpp.ll
-; openjdk/optimized/FourByteAbgr.ll
-; openjdk/optimized/FourByteAbgrPre.ll
-; openjdk/optimized/IntArgb.ll
-; openjdk/optimized/IntArgbBm.ll
-; openjdk/optimized/IntArgbPre.ll
-; openjdk/optimized/IntBgr.ll
-; openjdk/optimized/IntRgb.ll
-; openjdk/optimized/IntRgbx.ll
-; openjdk/optimized/ThreeByteBgr.ll
-; openjdk/optimized/Ushort555Rgb.ll
-; openjdk/optimized/Ushort555Rgbx.ll
-; openjdk/optimized/Ushort565Rgb.ll
 ; openjdk/optimized/javaClasses.ll
 ; openjdk/optimized/vectset.ll
 ; openmpi/optimized/netpatterns_nary_tree.ll
@@ -145,7 +95,7 @@ entry:
   ret i64 %5
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; abc/optimized/giaSif.c.ll
 ; c3c/optimized/bigint.c.ll
 ; icu/optimized/uvectr32.ll
@@ -160,6 +110,7 @@ entry:
 ; ncnn/optimized/convolutiondepthwise_x86_avx512.cpp.ll
 ; ncnn/optimized/convolutiondepthwise_x86_fma.cpp.ll
 ; openblas/optimized/dspgvd.c.ll
+; opencv/optimized/calibinit.cpp.ll
 ; openjdk/optimized/constantPool.ll
 ; openjdk/optimized/splashscreen_gif.ll
 ; ruby/optimized/process.ll
@@ -173,9 +124,8 @@ entry:
   ret i64 %5
 }
 
-; 126 occurrences:
+; 124 occurrences:
 ; abc/optimized/dauTree.c.ll
-; abc/optimized/giaLf.c.ll
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/superAnd.c.ll
 ; assimp/optimized/zip.c.ll
@@ -202,10 +152,6 @@ entry:
 ; draco/optimized/sequential_normal_attribute_decoder.cc.ll
 ; draco/optimized/sequential_normal_attribute_encoder.cc.ll
 ; flac/optimized/bitwriter.c.ll
-; freetype/optimized/cff.c.ll
-; freetype/optimized/ftbase.c.ll
-; freetype/optimized/type1.c.ll
-; freetype/optimized/type1cid.c.ll
 ; git/optimized/delta-islands.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hdf5/optimized/H5B.c.ll
@@ -227,7 +173,6 @@ entry:
 ; linux/optimized/tbdata.ll
 ; linux/optimized/tcp_input.ll
 ; linux/optimized/vc_screen.ll
-; linux/optimized/vclock_gettime.ll
 ; llvm/optimized/AArch64AsmPrinter.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64TargetMachine.cpp.ll
@@ -241,6 +186,7 @@ entry:
 ; llvm/optimized/LegalizeVectorTypes.cpp.ll
 ; llvm/optimized/LegalizerInfo.cpp.ll
 ; llvm/optimized/PDBFile.cpp.ll
+; llvm/optimized/PrologEpilogInserter.cpp.ll
 ; llvm/optimized/RecordSerialization.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
@@ -256,6 +202,7 @@ entry:
 ; llvm/optimized/ValueTracking.cpp.ll
 ; luajit/optimized/lj_cconv.ll
 ; luajit/optimized/lj_cconv_dyn.ll
+; lvgl/optimized/lv_buttonmatrix.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; meshoptimizer/optimized/simplifier.cpp.ll
@@ -298,6 +245,8 @@ entry:
 ; wireshark/optimized/reedsolomon.c.ll
 ; z3/optimized/intblast_solver.cpp.ll
 ; z3/optimized/nlqsat.cpp.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/8f7mact1a9un9bc0wu959qx4z.ll
 ; zxing/optimized/ConcentricFinder.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
@@ -339,7 +288,29 @@ entry:
   ret i64 %5
 }
 
-; 22 occurrences:
+; 12 occurrences:
+; abc/optimized/luckyRead.c.ll
+; cmake/optimized/trees.c.ll
+; hermes/optimized/HadesGC.cpp.ll
+; linux/optimized/ds.ll
+; linux/optimized/ich8lan.ll
+; openjdk/optimized/shenandoahEvacOOMHandler.ll
+; openssl/optimized/libcrypto-lib-bn_prime.ll
+; openssl/optimized/libcrypto-shlib-bn_prime.ll
+; postgres/optimized/ginfast.ll
+; postgres/optimized/nodeHash.ll
+; yosys/optimized/yosys.ll
+; zlib/optimized/trees.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000029(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 1025
+  %4 = select i1 %3, i32 %0, i32 %1
+  %5 = zext nneg i32 %4 to i64
+  ret i64 %5
+}
+
+; 23 occurrences:
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; hermes/optimized/raw_ostream.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
@@ -358,6 +329,7 @@ entry:
 ; spike/optimized/kcrsa32.ll
 ; spike/optimized/kstas32.ll
 ; spike/optimized/kstsa32.ll
+; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_truetype.c.ll
 ; wireshark/optimized/packet-giop.c.ll
 ; wireshark/optimized/tvbuff.c.ll
@@ -388,25 +360,44 @@ entry:
   ret i64 %4
 }
 
-; 12 occurrences:
+; 9 occurrences:
 ; abc/optimized/solver_api.c.ll
 ; brotli/optimized/backward_references_hq.c.ll
-; clamav/optimized/unpack.cpp.ll
 ; linux/optimized/cpu_entry_area.ll
 ; linux/optimized/mac.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/tg3.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; opencv/optimized/mask_tmpl.cpp.ll
-; postgres/optimized/ginfast.ll
 ; postgres/optimized/md.ll
-; redis/optimized/siphash.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 4
   %4 = select i1 %3, i32 %0, i32 %1
   %5 = zext i32 %4 to i64
+  ret i64 %5
+}
+
+; 12 occurrences:
+; abc/optimized/extraBddCas.c.ll
+; abc/optimized/trees.c.ll
+; brotli/optimized/encode.c.ll
+; cmake/optimized/trees.c.ll
+; coreutils-rs/optimized/22bojphyikqmi872.ll
+; gromacs/optimized/trees.c.ll
+; hermes/optimized/HadesGC.cpp.ll
+; libquic/optimized/trees.c.ll
+; libwebp/optimized/backward_references_enc.c.ll
+; linux/optimized/deftree.ll
+; llvm/optimized/X86InstrInfo.cpp.ll
+; zlib/optimized/trees.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000009(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ult i32 %2, -2
+  %4 = select i1 %3, i32 %0, i32 %1
+  %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }
 
@@ -426,17 +417,27 @@ entry:
   ret i64 %5
 }
 
-; 6 occurrences:
+; 2 occurrences:
+; clamav/optimized/unpack.cpp.ll
+; postgres/optimized/ginfast.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000028(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 257
+  %4 = select i1 %3, i32 %0, i32 %1
+  %5 = zext i32 %4 to i64
+  ret i64 %5
+}
+
+; 4 occurrences:
 ; gromacs/optimized/md5.c.ll
 ; gromacs/optimized/md5.cpp.ll
-; hyperscan/optimized/ng_fuzzy.cpp.ll
 ; miniaudio/optimized/unity.c.ll
-; postgres/optimized/spgdoinsert.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i64 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, 64
+  %3 = icmp samesign ugt i32 %2, 64
   %4 = select i1 %3, i32 %0, i32 %1
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
@@ -463,6 +464,18 @@ entry:
   %3 = icmp ugt i32 %2, 4096
   %4 = select i1 %3, i32 %0, i32 %1
   %5 = zext i32 %4 to i64
+  ret i64 %5
+}
+
+; 2 occurrences:
+; hyperscan/optimized/ng_fuzzy.cpp.ll
+; postgres/optimized/spgdoinsert.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ugt i32 %2, 8160
+  %4 = select i1 %3, i32 %0, i32 %1
+  %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }
 

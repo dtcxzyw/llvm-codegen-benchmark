@@ -13,7 +13,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = xor i32 %3, -1
   %5 = zext i8 %1 to i32
-  %6 = or disjoint i32 %5, %0
+  %6 = or disjoint i32 %0, %5
   %7 = add i32 %6, %4
   ret i32 %7
 }

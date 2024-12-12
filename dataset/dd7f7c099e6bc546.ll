@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openjdk/optimized/zDirector.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i64 %0, i64 %1, double %2) #0 {
+define i1 @func0000000000000044(i64 %0, i64 %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %2, 3.000000e+02
   %4 = icmp ult i64 %0, %1
@@ -13,10 +13,10 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/boost.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, double %2) #0 {
+define i1 @func00000000000000b4(i64 %0, i64 %1, double %2) #0 {
 entry:
   %3 = fcmp ugt double %2, 0.000000e+00
-  %4 = icmp ult i64 %0, %1
+  %4 = icmp samesign ult i64 %0, %1
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
 }
@@ -30,10 +30,10 @@ entry:
 ; meshlab/optimized/filter_measure.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000074(i64 %0, i64 %1, double %2) #0 {
+define i1 @func00000000000000f4(i64 %0, i64 %1, double %2) #0 {
 entry:
   %3 = fcmp une double %2, 0.000000e+00
-  %4 = icmp ult i64 %0, %1
+  %4 = icmp samesign ult i64 %0, %1
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
 }

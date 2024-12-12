@@ -9,6 +9,20 @@ func00000000000001fd:                   # @func00000000000001fd
 	mul	a1, a1, a2
 	add	a0, a0, a1
 	ret
+func0000000000000100:                   # @func0000000000000100
+	sext.w	a2, a2
+	sh2add	a1, a1, a1
+	sh1add	a1, a1, a2
+	sh2add	a1, a1, a1
+	sh1add	a0, a1, a0
+	ret
+func0000000000000188:                   # @func0000000000000188
+	sext.w	a2, a2
+	sh2add	a1, a1, a1
+	sh1add	a1, a1, a2
+	sh2add	a1, a1, a1
+	sh1add	a0, a1, a0
+	ret
 func0000000000000055:                   # @func0000000000000055
 	sh3add	a3, a1, a1
 	sh2add	a1, a3, a1
@@ -33,13 +47,6 @@ func0000000000000155:                   # @func0000000000000155
 	sh1add	a0, a1, a0
 	ret
 func0000000000000150:                   # @func0000000000000150
-	sext.w	a2, a2
-	sh2add	a1, a1, a1
-	sh1add	a1, a1, a2
-	sh2add	a1, a1, a1
-	sh1add	a0, a1, a0
-	ret
-func0000000000000100:                   # @func0000000000000100
 	sext.w	a2, a2
 	sh2add	a1, a1, a1
 	sh1add	a1, a1, a2

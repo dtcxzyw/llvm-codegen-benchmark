@@ -64,7 +64,7 @@ func0000000000000002:                   # @func0000000000000002
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vptestnmd	%ymm1, %ymm1, %k1
-	korb	%k0, %k1, %k1
+	korb	%k1, %k0, %k1
 	vmovdqu8	.LCPI1_0(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [128,128,128,128,128,128,128,128,u,u,u,u,u,u,u,u]
 	vzeroupper
 	retq
@@ -91,7 +91,7 @@ func0000000000000014:                   # @func0000000000000014
 	vpsllw	$15, %xmm0, %xmm0
 	vpmovw2m	%xmm0, %k0
 	vpcmpgtd	.LCPI2_0(%rip){1to8}, %ymm1, %k1
-	korb	%k0, %k1, %k1
+	korb	%k1, %k0, %k1
 	vmovdqu8	.LCPI2_1(%rip), %xmm0 {%k1} {z} # xmm0 {%k1} {z} = [4,4,4,4,4,4,4,4,u,u,u,u,u,u,u,u]
 	vzeroupper
 	retq

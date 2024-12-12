@@ -4,7 +4,7 @@
 ; llvm/optimized/MachinePipeliner.cpp.ll
 ; opencv/optimized/large_kinfu.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1) #0 {
+define i32 @func000000000000002a(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %0, %1
   %3 = sext i1 %2 to i32

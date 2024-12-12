@@ -1,4 +1,4 @@
-func0000000000000062:                   # @func0000000000000062
+func00000000000000c2:                   # @func00000000000000c2
 	vpor	%ymm2, %ymm1, %ymm0
 	vpsrld	$8, %ymm0, %ymm0
 	retq

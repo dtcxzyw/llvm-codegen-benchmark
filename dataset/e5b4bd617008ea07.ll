@@ -37,7 +37,7 @@ entry:
 ; php/optimized/fastcgi.ll
 ; php/optimized/ir_emit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0) #0 {
+define i1 @func0000000000000021(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, 7
   %2 = and i32 %1, -8
@@ -48,7 +48,7 @@ entry:
 ; 1 occurrences:
 ; yosys/optimized/BigUnsigned.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0) #0 {
+define i1 @func0000000000000041(i32 %0) #0 {
 entry:
   %1 = add nuw i32 %0, 63
   %2 = and i32 %1, -64
@@ -60,7 +60,7 @@ entry:
 ; postgres/optimized/dynahash.ll
 ; wireshark/optimized/erf.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0) #0 {
+define i1 @func0000000000000061(i32 %0) #0 {
 entry:
   %1 = add nuw nsw i32 %0, 3
   %2 = and i32 %1, 131068
@@ -71,11 +71,11 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-sna.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i32 %0) #0 {
+define i1 @func0000000000000078(i32 %0) #0 {
 entry:
   %1 = add nuw nsw i32 %0, 3
   %2 = and i32 %1, 508
-  %3 = icmp ugt i32 %2, %0
+  %3 = icmp samesign ugt i32 %2, %0
   ret i1 %3
 }
 
@@ -94,7 +94,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/cipso_ipv4.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i32 %0) #0 {
+define i1 @func0000000000000048(i32 %0) #0 {
 entry:
   %1 = add nuw i32 %0, 3
   %2 = and i32 %1, -4
@@ -116,7 +116,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/grfmt_bmp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i32 %0) #0 {
+define i1 @func000000000000002a(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, 3
   %2 = and i32 %1, -4

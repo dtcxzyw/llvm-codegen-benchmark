@@ -30,9 +30,11 @@ entry:
   ret i32 %4
 }
 
-; 14 occurrences:
+; 16 occurrences:
 ; abc/optimized/abcIf.c.ll
 ; abc/optimized/mapperTable.c.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/btConvexHull.ll
 ; bullet3/optimized/btPersistentManifold.ll
 ; meshoptimizer/optimized/vertexfilter.cpp.ll

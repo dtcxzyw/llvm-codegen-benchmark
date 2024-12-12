@@ -1,4 +1,4 @@
-func000000000000011c:                   # @func000000000000011c
+func000000000000042c:                   # @func000000000000042c
 	xori	a2, a2, 4
 	xori	a1, a1, 8
 	or	a1, a1, a2
@@ -7,7 +7,7 @@ func000000000000011c:                   # @func000000000000011c
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func0000000000000a1c:                   # @func0000000000000a1c
+func000000000000282c:                   # @func000000000000282c
 	sext.w	a1, a1
 	sext.w	a2, a2
 	slti	a2, a2, 0

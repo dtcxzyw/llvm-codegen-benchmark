@@ -38,12 +38,11 @@ entry:
   ret i32 %4
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; hermes/optimized/escape.cpp.ll
 ; icu/optimized/uspoof_impl.ll
 ; linux/optimized/blktrace.ll
 ; linux/optimized/tcp_minisocks.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertReadWriteCSR.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; llvm/optimized/RISCVInsertWriteVXRM.cpp.ll

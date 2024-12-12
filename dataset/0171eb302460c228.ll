@@ -1,5 +1,5 @@
 
-; 71 occurrences:
+; 72 occurrences:
 ; abc/optimized/dauTree.c.ll
 ; clamav/optimized/autoit.c.ll
 ; clamav/optimized/rijndael.c.ll
@@ -20,6 +20,7 @@
 ; linux/optimized/uhci-hcd.ll
 ; linux/optimized/xt_addrtype.ll
 ; llvm/optimized/blake3_portable.c.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/miniz.c.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; opencv/optimized/grfmt_pxm.cpp.ll

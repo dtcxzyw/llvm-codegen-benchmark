@@ -3,7 +3,6 @@
 ; arrow/optimized/bignum-dtoa.cc.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/float16.cc.ll
-; darktable/optimized/introspection_flip.c.ll
 ; double_conversion/optimized/bignum-dtoa.cc.ll
 ; double_conversion/optimized/fast-dtoa.cc.ll
 ; fmt/optimized/format-impl-test.cc.ll
@@ -50,6 +49,7 @@
 ; openusd/optimized/fast-dtoa.cc.ll
 ; php/optimized/dfa_pass.ll
 ; php/optimized/zend_inference.ll
+; qemu/optimized/accel_tcg_user-exec.c.ll
 ; quickjs/optimized/quickjs.ll
 ; velox/optimized/HashStringAllocator.cpp.ll
 ; wireshark/optimized/ftype-ieee-11073-float.c.ll
@@ -60,9 +60,9 @@
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 8
+  %2 = and i32 %1, 4
   %3 = icmp eq i32 %2, 0
-  %4 = and i32 %1, -8
+  %4 = and i32 %1, 7
   %5 = select i1 %3, i32 %4, i32 %0
   ret i32 %5
 }
@@ -73,7 +73,7 @@ entry:
 ; libquic/optimized/dtoa.cc.ll
 ; php/optimized/zend_strtod.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2146435072
   %3 = icmp eq i32 %2, 0

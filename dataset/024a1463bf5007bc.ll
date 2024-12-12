@@ -28,12 +28,12 @@ entry:
 ; luajit/optimized/lj_trace.ll
 ; luajit/optimized/lj_trace_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001f8(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 15
   %3 = shl nuw nsw i64 %0, 1
   %4 = add nuw nsw i64 %3, %2
-  %5 = icmp ugt i64 %4, 60000
+  %5 = icmp samesign ugt i64 %4, 60000
   ret i1 %5
 }
 

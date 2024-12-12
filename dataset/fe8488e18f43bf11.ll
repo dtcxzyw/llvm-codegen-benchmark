@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; fmt/optimized/format-impl-test.cc.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000022(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000042(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %0, 0
   %3 = lshr i32 %1, 20
@@ -18,9 +18,9 @@ entry:
 ; libquic/optimized/dtoa.cc.ll
 ; php/optimized/zend_strtod.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000029(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000069(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %0, 1048576
+  %2 = icmp samesign ult i32 %0, 1048576
   %3 = lshr i32 %1, 1
   %4 = and i32 %3, 524287
   %5 = or disjoint i32 %4, 524288

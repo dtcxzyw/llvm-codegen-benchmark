@@ -1,5 +1,5 @@
 
-; 193 occurrences:
+; 192 occurrences:
 ; abc/optimized/dchSim.c.ll
 ; abc/optimized/giaJf.c.ll
 ; abc/optimized/giaMf.c.ll
@@ -14,6 +14,7 @@
 ; gromacs/optimized/colvarbias_histogram.cpp.ll
 ; gromacs/optimized/colvarbias_histogram_reweight_amd.cpp.ll
 ; gromacs/optimized/colvarbias_meta.cpp.ll
+; gromacs/optimized/gmx_hbond.cpp.ll
 ; icu/optimized/ucbuf.ll
 ; jemalloc/optimized/arena.ll
 ; jemalloc/optimized/arena.pic.ll
@@ -55,7 +56,6 @@
 ; oiio/optimized/DPXColorConverter.cpp.ll
 ; oiio/optimized/imageio.cpp.ll
 ; oniguruma/optimized/regexec.ll
-; openblas/optimized/dsum_k.c.ll
 ; opencv/optimized/3calibration.cpp.ll
 ; opencv/optimized/Model.cpp.ll
 ; opencv/optimized/aruco_board.cpp.ll
@@ -144,7 +144,6 @@
 ; pocketpy/optimized/compiler.cpp.ll
 ; pocketpy/optimized/expr.cpp.ll
 ; pocketpy/optimized/lexer.cpp.ll
-; postgres/optimized/tsvector_op.ll
 ; qemu/optimized/disas_riscv.c.ll
 ; raylib/optimized/rmodels.c.ll
 ; redis/optimized/arena.ll

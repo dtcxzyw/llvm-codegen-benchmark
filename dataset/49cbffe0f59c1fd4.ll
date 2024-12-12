@@ -1,5 +1,7 @@
 
-; 14 occurrences:
+; 16 occurrences:
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
 ; duckdb/optimized/ub_duckdb_operator_join.cpp.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; image-rs/optimized/34r8dryqmufipcqz.ll

@@ -17,7 +17,7 @@
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; qemu/optimized/hw_net_pcnet.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = or disjoint i64 %0, %1
@@ -25,15 +25,13 @@ entry:
   ret i1 %5
 }
 
-; 6 occurrences:
-; freetype/optimized/sfnt.c.ll
+; 4 occurrences:
 ; hermes/optimized/APInt.cpp.ll
 ; linux/optimized/indirect.ll
 ; llvm/optimized/APInt.cpp.ll
 ; qemu/optimized/hw_display_vga.c.ll
-; z3/optimized/dd_bdd.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = or disjoint i64 %0, %1
@@ -60,34 +58,32 @@ entry:
 ; opencv/optimized/fast_gemm.cpp.ll
 ; openmpi/optimized/pmix_output.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000074(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = or disjoint i64 %0, %1
-  %5 = icmp ult i64 %4, %3
+  %5 = icmp samesign ult i64 %4, %3
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; darktable/optimized/RawImage.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000035(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000075(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = or disjoint i64 %0, %1
-  %5 = icmp ule i64 %4, %3
+  %5 = icmp samesign ule i64 %4, %3
   ret i1 %5
 }
 
-; 6 occurrences:
-; freetype/optimized/sfnt.c.ll
+; 4 occurrences:
 ; hdf5/optimized/H5Pocpl.c.ll
 ; linux/optimized/block_validity.ll
-; linux/optimized/extents.ll
 ; wireshark/optimized/packet-asterix.c.ll
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = or disjoint i64 %0, %1
@@ -106,6 +102,29 @@ entry:
   ret i1 %5
 }
 
+; 2 occurrences:
+; freetype/optimized/sfnt.c.ll
+; linux/optimized/extents.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000038(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = or disjoint i64 %0, %1
+  %5 = icmp samesign ugt i64 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; z3/optimized/dd_bdd.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = or i64 %0, %1
+  %5 = icmp samesign ult i64 %4, %3
+  ret i1 %5
+}
+
 ; 1 occurrences:
 ; redis/optimized/listpack.ll
 ; Function Attrs: nounwind
@@ -120,7 +139,7 @@ entry:
 ; 1 occurrences:
 ; libjpeg-turbo/optimized/jdmarker.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000003c(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func000000000000006c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = or disjoint i64 %0, %1
@@ -131,11 +150,22 @@ entry:
 ; 1 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000078(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = or disjoint i64 %0, %1
-  %5 = icmp ugt i64 %4, %3
+  %5 = icmp samesign ugt i64 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; freetype/optimized/sfnt.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = or disjoint i64 %0, %1
+  %5 = icmp samesign ult i64 %4, %3
   ret i1 %5
 }
 

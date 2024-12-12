@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 23 occurrences:
 ; abseil-cpp/optimized/kernel_timeout_test.cc.ll
 ; duckdb/optimized/null_operations.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
@@ -10,6 +10,11 @@
 ; llvm/optimized/CheckExprLifetime.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; php/optimized/php_date.ll
 ; postgres/optimized/rangetypes.ll
 ; pybind11/optimized/test_numpy_dtypes.cpp.ll
@@ -17,6 +22,7 @@
 ; redis/optimized/bitops.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; yosys/optimized/fstapi.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i64 %0) #0 {
 entry:

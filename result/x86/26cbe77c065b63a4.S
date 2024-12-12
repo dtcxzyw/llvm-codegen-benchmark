@@ -1,16 +1,16 @@
-func0000000000000007:                   # @func0000000000000007
-	testb	$1, %sil
-	movl	$201326592, %eax                # imm = 0xC000000
-	cmovel	%edx, %eax
-	shll	$16, %edi
-	orl	%edi, %eax
-	retq
 func0000000000000000:                   # @func0000000000000000
 	shll	$24, %edx
 	testb	$1, %dil
 	movl	$12, %eax
 	cmovel	%esi, %eax
 	orl	%edx, %eax
+	retq
+func0000000000000007:                   # @func0000000000000007
+	testb	$1, %sil
+	movl	$9, %eax
+	cmovel	%edx, %eax
+	shll	$8, %edi
+	orl	%edi, %eax
 	retq
 func0000000000000003:                   # @func0000000000000003
 	shll	$5, %edx

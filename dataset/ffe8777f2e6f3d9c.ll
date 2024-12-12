@@ -37,13 +37,15 @@ entry:
   ret i64 %4
 }
 
-; 6 occurrences:
+; 8 occurrences:
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; linux/optimized/swiotlb.ll
 ; openssl/optimized/openssl-bin-engine.ll
 ; qemu/optimized/hw_pci_msix.c.ll
 ; qemu/optimized/tcg.c.ll
 ; velox/optimized/UnsafeRowFast.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i32 %0) #0 {
 entry:

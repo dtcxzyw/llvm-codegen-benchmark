@@ -1,5 +1,5 @@
 
-; 17 occurrences:
+; 11 occurrences:
 ; coreutils-rs/optimized/53yhdh06nqcwsoo6.ll
 ; coreutils-rs/optimized/56596qkor8w4ma8l.ll
 ; freetype/optimized/sfnt.c.ll
@@ -7,25 +7,19 @@
 ; opencv/optimized/softfloat.cpp.ll
 ; qemu/optimized/hw_tpm_tpm_tis_common.c.ll
 ; qemu/optimized/source_s_addMagsF16.c.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; qemu/optimized/source_s_mulAddF16.c.ll
-; spike/optimized/f16_to_i32_r_minMag.ll
-; spike/optimized/f16_to_i64_r_minMag.ll
-; spike/optimized/f16_to_ui32_r_minMag.ll
-; spike/optimized/f16_to_ui64_r_minMag.ll
 ; spike/optimized/s_addMagsF16.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; spike/optimized/s_mulAddF16.ll
 ; spike/optimized/s_mulAddF32.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 %0, %1
-  %3 = and i64 %2, 4294967295
+  %3 = and i64 %2, 65535
   ret i64 %3
 }
 
-; 115 occurrences:
+; 117 occurrences:
 ; arrow/optimized/fast-dtoa.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -141,6 +135,8 @@ entry:
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
 ; velox/optimized/HashStringAllocator.cpp.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:

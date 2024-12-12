@@ -1,8 +1,8 @@
 
-; 66 occurrences:
+; 57 occurrences:
+; boost/optimized/within_pointlike_geometry.ll
 ; cpython/optimized/_datetimemodule.ll
 ; cpython/optimized/lock.ll
-; cvc5/optimized/floatingpoint_literal_symfpu.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string_main.cpp.ll
 ; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
 ; entt/optimized/entity_copy.cpp.ll
@@ -20,25 +20,17 @@
 ; fmt/optimized/core-test.cc.ll
 ; git/optimized/config.ll
 ; gromacs/optimized/vsite_parm.cpp.ll
-; grpc/optimized/socket_utils_common_posix.cc.ll
-; grpc/optimized/tcp_socket_utils.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hyperscan/optimized/rose_build_matchers.cpp.ll
-; icu/optimized/parse.ll
 ; icu/optimized/rbt_rule.ll
-; icu/optimized/smpdtfmt.ll
 ; linux/optimized/blk-cgroup.ll
 ; linux/optimized/libata-sff.ll
-; linux/optimized/thermal_trip.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
-; llvm/optimized/CommandFlags.cpp.ll
 ; llvm/optimized/DependenceAnalysis.cpp.ll
 ; llvm/optimized/DylibVerifier.cpp.ll
-; llvm/optimized/MachinePipeliner.cpp.ll
 ; llvm/optimized/PPMacroExpansion.cpp.ll
 ; meshlab/optimized/MarchingCubes.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
@@ -62,7 +54,6 @@
 ; typst-rs/optimized/2d3c2n5y91mtl0x0.ll
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
 ; typst-rs/optimized/4qskctz4kwc33g7b.ll
-; typst-rs/optimized/m09o5qr68f5khss.ll
 ; wasmedge/optimized/vinode.cpp.ll
 ; wireshark/optimized/vwr.c.ll
 ; z3/optimized/smt2parser.cpp.ll

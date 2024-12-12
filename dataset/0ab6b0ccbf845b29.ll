@@ -9,12 +9,12 @@
 ; stb/optimized/stb_connected_components.c.ll
 ; wireshark/optimized/packet-dnp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, i16 %1) #0 {
+define i1 @func0000000000000084(i1 %0, i16 %1) #0 {
 entry:
   %2 = icmp eq i16 %1, -28036
   %3 = icmp eq i16 %1, -14796
   %4 = or i1 %3, %2
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

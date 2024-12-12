@@ -43,7 +43,48 @@ entry:
   ret i32 %5
 }
 
-; 245 occurrences:
+; 5 occurrences:
+; abc/optimized/giaCof.c.ll
+; libquic/optimized/strike_register.cc.ll
+; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; minetest/optimized/sky.cpp.ll
+; z3/optimized/mpf.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 255
+  %3 = shl i32 %0, 8
+  %4 = or disjoint i32 %3, %2
+  %5 = or i32 %4, -65536
+  ret i32 %5
+}
+
+; 1 occurrences:
+; qemu/optimized/hw_net_e1000.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000a(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, -18
+  %3 = shl nuw i32 %0, 16
+  %4 = or i32 %3, %2
+  %5 = or disjoint i32 %4, 16
+  ret i32 %5
+}
+
+; 2 occurrences:
+; linux/optimized/netdev.ll
+; qemu/optimized/hw_audio_intel-hda.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, -244
+  %3 = shl i32 %0, 4
+  %4 = or i32 %3, %2
+  %5 = or disjoint i32 %4, 2
+  ret i32 %5
+}
+
+; 244 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; abseil-cpp/optimized/charconv.cc.ll
@@ -142,7 +183,6 @@ entry:
 ; luajit/optimized/lj_cparse.ll
 ; luajit/optimized/lj_cparse_dyn.ll
 ; meshlab/optimized/MarchingCubes.cpp.ll
-; mitsuba3/optimized/x86func.cpp.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -292,56 +332,14 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
-  %2 = and i32 %1, 255
-  %3 = shl nuw nsw i32 %0, 16
+  %2 = and i32 %1, -1048579
+  %3 = shl nuw nsw i32 %0, 20
   %4 = or disjoint i32 %3, %2
-  %5 = or disjoint i32 %4, 117440768
-  ret i32 %5
-}
-
-; 5 occurrences:
-; abc/optimized/giaCof.c.ll
-; libquic/optimized/strike_register.cc.ll
-; llvm/optimized/SelectionDAGBuilder.cpp.ll
-; minetest/optimized/sky.cpp.ll
-; z3/optimized/mpf.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, 255
-  %3 = shl i32 %0, 8
-  %4 = or disjoint i32 %3, %2
-  %5 = or i32 %4, -65536
-  ret i32 %5
-}
-
-; 1 occurrences:
-; qemu/optimized/hw_net_e1000.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000a(i32 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, -18
-  %3 = shl nuw i32 %0, 16
-  %4 = or i32 %3, %2
-  %5 = or disjoint i32 %4, 16
-  ret i32 %5
-}
-
-; 2 occurrences:
-; linux/optimized/netdev.ll
-; qemu/optimized/hw_audio_intel-hda.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
-entry:
-  %2 = and i32 %1, -244
-  %3 = shl i32 %0, 4
-  %4 = or i32 %3, %2
   %5 = or disjoint i32 %4, 2
   ret i32 %5
 }
 
-; 2 occurrences:
-; linux/optimized/intel_dpio_phy.ll
+; 1 occurrences:
 ; php/optimized/ir.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {

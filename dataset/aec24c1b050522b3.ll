@@ -11,12 +11,12 @@
 ; qemu/optimized/target_riscv_translate.c.ll
 ; qemu/optimized/tcg.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 3
   %4 = and i32 %3, 1
-  %5 = or disjoint i32 %4, %1
-  %6 = or disjoint i32 %5, %0
+  %5 = or disjoint i32 %1, %4
+  %6 = or disjoint i32 %0, %5
   %7 = icmp eq i32 %6, 0
   ret i1 %7
 }
@@ -28,7 +28,7 @@ define i1 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 9
   %4 = and i32 %3, 1
-  %5 = or i32 %4, %1
+  %5 = or i32 %1, %4
   %6 = or i32 %5, %0
   %7 = icmp eq i32 %6, 0
   ret i1 %7

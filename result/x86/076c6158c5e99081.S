@@ -1,5 +1,5 @@
-func0000000000000311:                   # @func0000000000000311
-	incl	%esi
+func0000000000000c21:                   # @func0000000000000c21
+	notl	%esi
 	testb	$31, %sil
 	sete	%cl
 	testq	%rdi, %rdi

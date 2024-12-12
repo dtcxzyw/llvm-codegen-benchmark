@@ -14,5 +14,5 @@ func0000000000000054:                   # @func0000000000000054
 	vpsrlq	$3, %ymm1, %ymm1
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpsllq	$6, %ymm1, %ymm1
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq

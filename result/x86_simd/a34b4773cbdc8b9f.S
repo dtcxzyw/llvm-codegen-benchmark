@@ -49,7 +49,7 @@ func0000000000000001:                   # @func0000000000000001
 	vpmovm2w	%k0, %xmm0
 	vzeroupper
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vpslld	$14, %ymm1, %ymm1
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrd	$1, %xmm2, %ecx

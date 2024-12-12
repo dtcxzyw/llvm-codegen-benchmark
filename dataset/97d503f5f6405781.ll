@@ -7,7 +7,7 @@
 ; redis/optimized/ckh.ll
 ; redis/optimized/ckh.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0) #0 {
+define i1 @func0000000000000084(i32 %0) #0 {
 entry:
   %1 = add i32 %0, 1
   %2 = zext nneg i32 %1 to i64
@@ -24,7 +24,7 @@ entry:
 ; redis/optimized/ckh.ll
 ; redis/optimized/ckh.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0) #0 {
+define i1 @func0000000000000088(i32 %0) #0 {
 entry:
   %1 = add i32 %0, 1
   %2 = zext nneg i32 %1 to i64
@@ -36,7 +36,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/fib_trie.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i32 %0) #0 {
+define i1 @func0000000000000184(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -1
   %2 = zext nneg i32 %1 to i64

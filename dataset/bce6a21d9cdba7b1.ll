@@ -14,7 +14,7 @@ entry:
   ret i16 %6
 }
 
-; 39 occurrences:
+; 36 occurrences:
 ; linux/optimized/act_api.ll
 ; linux/optimized/addrconf.ll
 ; linux/optimized/bitset.ll
@@ -23,7 +23,6 @@ entry:
 ; linux/optimized/cls_cgroup.ll
 ; linux/optimized/ematch.ll
 ; linux/optimized/exthdrs.ll
-; linux/optimized/fec.ll
 ; linux/optimized/fib_semantics.ll
 ; linux/optimized/genetlink.ll
 ; linux/optimized/gre_offload.ll
@@ -31,7 +30,6 @@ entry:
 ; linux/optimized/ip_sockglue.ll
 ; linux/optimized/ipmr.ll
 ; linux/optimized/ipmr_base.ll
-; linux/optimized/mm.ll
 ; linux/optimized/namei.ll
 ; linux/optimized/neighbour.ll
 ; linux/optimized/netlabel_cipso_v4.ll
@@ -41,7 +39,6 @@ entry:
 ; linux/optimized/nf_conntrack_proto_tcp.ll
 ; linux/optimized/nfnetlink_log.ll
 ; linux/optimized/nl80211.ll
-; linux/optimized/pause.ll
 ; linux/optimized/pmsr.ll
 ; linux/optimized/policy.ll
 ; linux/optimized/reassembly.ll

@@ -1,0 +1,21 @@
+func0000000000000002:                   # @func0000000000000002
+	sext.w	a0, a0
+	sraiw	a3, a2, 31
+	srliw	a3, a3, 30
+	add	a2, a2, a3
+	sraiw	a2, a2, 2
+	addw	a1, a1, a2
+	blt	a1, a0, .LBB0_2
+	mv	a0, a1
+.LBB0_2:                                # %entry
+	ret
+func0000000000000000:                   # @func0000000000000000
+	sext.w	a3, a0
+	srliw	a0, a2, 31
+	add	a0, a0, a2
+	sraiw	a0, a0, 1
+	addw	a0, a0, a1
+	blt	a3, a0, .LBB1_2
+	mv	a0, a3
+.LBB1_2:                                # %entry
+	ret

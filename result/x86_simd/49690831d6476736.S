@@ -33,20 +33,10 @@ func0000000000000009:                   # @func0000000000000009
 	vorps	.LCPI3_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	retq
 .LCPI4_0:
-	.long	8                               # 0x8
-.LCPI4_1:
-	.long	4096                            # 0x1000
-func0000000000000011:                   # @func0000000000000011
-	vpsllw	$15, %xmm1, %xmm1
-	vpmovw2m	%xmm1, %k1
-	vpcmpnleud	.LCPI4_0(%rip){1to8}, %ymm2, %k1 {%k1}
-	vorps	.LCPI4_1(%rip){1to8}, %ymm0, %ymm0 {%k1}
-	retq
-.LCPI5_0:
 	.long	4                               # 0x4
 func0000000000000018:                   # @func0000000000000018
 	vpsllw	$15, %xmm1, %xmm1
 	vpmovw2m	%xmm1, %k1
 	vptestmd	%ymm2, %ymm2, %k1 {%k1}
-	vorps	.LCPI5_0(%rip){1to8}, %ymm0, %ymm0 {%k1}
+	vorps	.LCPI4_0(%rip){1to8}, %ymm0, %ymm0 {%k1}
 	retq

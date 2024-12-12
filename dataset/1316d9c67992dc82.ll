@@ -3,7 +3,7 @@
 ; php/optimized/zend_jit.ll
 ; postgres/optimized/planner.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000042(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func0000000000000082(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = xor i1 %2, true
   %4 = icmp eq i32 %1, 0

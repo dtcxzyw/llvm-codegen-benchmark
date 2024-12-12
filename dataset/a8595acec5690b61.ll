@@ -32,11 +32,10 @@ entry:
   ret i64 %2
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/AArch64PostLegalizerCombiner.cpp.ll
 ; llvm/optimized/LegalizeDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; stockfish/optimized/bitboard.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0) #0 {

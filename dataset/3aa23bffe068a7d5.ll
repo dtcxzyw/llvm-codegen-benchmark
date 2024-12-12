@@ -1,5 +1,5 @@
 
-; 51 occurrences:
+; 48 occurrences:
 ; assimp/optimized/AMFImporter.cpp.ll
 ; assimp/optimized/ColladaParser.cpp.ll
 ; assimp/optimized/D3MFImporter.cpp.ll
@@ -25,9 +25,7 @@
 ; llvm/optimized/DIPrinter.cpp.ll
 ; llvm/optimized/Disassembler.cpp.ll
 ; llvm/optimized/DwarfDebug.cpp.ll
-; llvm/optimized/FormatVariadic.cpp.ll
 ; llvm/optimized/MatchFilePath.cpp.ll
-; llvm/optimized/RISCVISAInfo.cpp.ll
 ; llvm/optimized/RISCVVIntrinsicUtils.cpp.ll
 ; llvm/optimized/Regex.cpp.ll
 ; llvm/optimized/SPIR.cpp.ll
@@ -48,7 +46,6 @@
 ; ruby/optimized/file.ll
 ; ruby/optimized/re.ll
 ; sentencepiece/optimized/stringpiece.cc.ll
-; wasmedge/optimized/vinode.cpp.ll
 ; wireshark/optimized/atap_data_model.cpp.ll
 ; wireshark/optimized/uat_model.cpp.ll
 ; Function Attrs: nounwind
@@ -65,7 +62,7 @@ entry:
 ; coreutils-rs/optimized/jzu2v52gceikjdv.ll
 ; tokenizers-rs/optimized/4vpw5vpiz5qnu5om.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(ptr %0, i64 %1, ptr %2) #0 {
+define i64 @func0000000000000041(ptr %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub nuw i64 %1, %3

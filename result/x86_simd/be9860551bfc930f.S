@@ -30,14 +30,20 @@ func0000000000000019:                   # @func0000000000000019
 	retq
 .LCPI5_0:
 	.quad	7                               # 0x7
-func0000000000000011:                   # @func0000000000000011
+func0000000000000031:                   # @func0000000000000031
 	vpcmpnleuq	.LCPI5_0(%rip){1to4}, %ymm1, %k1
 	vpmovzxdq	%xmm0, %ymm0 {%k1} {z}  # ymm0 {%k1} {z} = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	retq
 .LCPI6_0:
+	.quad	8                               # 0x8
+func0000000000000011:                   # @func0000000000000011
+	vpcmpnleuq	.LCPI6_0(%rip){1to4}, %ymm1, %k1
+	vpmovzxdq	%xmm0, %ymm0 {%k1} {z}  # ymm0 {%k1} {z} = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	retq
+.LCPI7_0:
 	.quad	4294967295                      # 0xffffffff
 func0000000000000018:                   # @func0000000000000018
 	vptestnmq	%ymm1, %ymm1, %k1
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
-	vpbroadcastq	.LCPI6_0(%rip), %ymm0 {%k1} # ymm0 {%k1} = [4294967295,4294967295,4294967295,4294967295]
+	vpbroadcastq	.LCPI7_0(%rip), %ymm0 {%k1} # ymm0 {%k1} = [4294967295,4294967295,4294967295,4294967295]
 	retq

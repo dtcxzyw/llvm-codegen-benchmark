@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 12 occurrences:
 ; assimp/optimized/FBXParser.cpp.ll
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; libjpeg-turbo/optimized/jcprepct.c.ll
@@ -10,6 +10,8 @@
 ; mitsuba3/optimized/codeholder.cpp.ll
 ; qemu/optimized/hw_watchdog_wdt_i6300esb.c.ll
 ; raylib/optimized/raudio.c.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/9ov4zhuctgxchiaoar4zqfrza.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i32 %0, i1 %1) #0 {
 entry:

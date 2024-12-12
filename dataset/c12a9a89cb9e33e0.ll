@@ -1,9 +1,8 @@
 
-; 90 occurrences:
+; 82 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/acecCl.c.ll
-; darktable/optimized/introspection_demosaic.c.ll
 ; freetype/optimized/pfr.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; freetype/optimized/type1.c.ll
@@ -12,9 +11,6 @@
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; imgui/optimized/imgui_draw.cpp.ll
-; jemalloc/optimized/ckh.ll
-; jemalloc/optimized/ckh.pic.ll
-; jemalloc/optimized/ckh.sym.ll
 ; lief/optimized/CoreAuxv.cpp.ll
 ; lief/optimized/Note.cpp.ll
 ; lief/optimized/RelocationSizes.cpp.ll
@@ -53,7 +49,6 @@
 ; mold/optimized/passes.cc.RV32LE.cc.ll
 ; mold/optimized/passes.cc.SH4.cc.ll
 ; nuklear/optimized/unity.c.ll
-; opencv/optimized/checker_model.cpp.ll
 ; opencv/optimized/perf_qrcode_pipeline.cpp.ll
 ; opencv/optimized/select3dobj.cpp.ll
 ; openexr/optimized/ImfDwaCompressor.cpp.ll
@@ -86,16 +81,70 @@
 ; php/optimized/pcre2_jit_compile.ll
 ; php/optimized/pcre2_match.ll
 ; php/optimized/pcre2_study.ll
+; stb/optimized/stb_truetype.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001f(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = or disjoint i64 %1, %2
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 1
+  ret ptr %5
+}
+
+; 4 occurrences:
+; harfbuzz/optimized/harfbuzz.cc.ll
+; harfbuzz/optimized/hb-subset-plan.cc.ll
+; nuklear/optimized/unity.c.ll
+; openjdk/optimized/hb-ot-layout.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001c(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = or disjoint i64 %1, %2
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 6
+  ret ptr %5
+}
+
+; 3 occurrences:
+; php/optimized/pcre2_auto_possess.ll
+; php/optimized/pcre2_jit_compile.ll
+; redis/optimized/listpack.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001e(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = or disjoint i64 %1, %2
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw i8, ptr %4, i64 -1
+  ret ptr %5
+}
+
+; 9 occurrences:
+; darktable/optimized/introspection_demosaic.c.ll
+; jemalloc/optimized/ckh.ll
+; jemalloc/optimized/ckh.pic.ll
+; jemalloc/optimized/ckh.sym.ll
+; opencv/optimized/checker_model.cpp.ll
+; php/optimized/pcre2_compile.ll
+; quantlib/optimized/garch.ll
 ; redis/optimized/ckh.ll
 ; redis/optimized/ckh.sym.ll
-; redis/optimized/listpack.ll
-; stb/optimized/stb_truetype.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001b(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = or disjoint i64 %1, %2
+  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 1
+  ret ptr %5
+}
+
+; 1 occurrences:
+; darktable/optimized/introspection_demosaic.c.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000001a(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 1
+  %4 = getelementptr nusw float, ptr %0, i64 %3
+  %5 = getelementptr nusw i8, ptr %4, i64 -8
   ret ptr %5
 }
 
@@ -117,19 +166,6 @@ entry:
   ret ptr %5
 }
 
-; 3 occurrences:
-; gromacs/optimized/dispersioncorrection.cpp.ll
-; nuklear/optimized/unity.c.ll
-; opencv/optimized/calibinit.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000018(ptr %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = or disjoint i64 %1, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 1
-  ret ptr %5
-}
-
 ; 6 occurrences:
 ; hermes/optimized/BytecodeDataProvider.cpp.ll
 ; hermes/optimized/BytecodeDisassembler.cpp.ll
@@ -138,11 +174,23 @@ entry:
 ; hermes/optimized/RuntimeModule.cpp.ll
 ; hermes/optimized/hbc-diff.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 1
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 1
+  ret ptr %5
+}
+
+; 2 occurrences:
+; gromacs/optimized/dispersioncorrection.cpp.ll
+; opencv/optimized/calibinit.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000018(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = or disjoint i64 %1, %2
+  %4 = getelementptr nusw float, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 4
   ret ptr %5
 }
 

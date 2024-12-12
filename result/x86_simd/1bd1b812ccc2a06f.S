@@ -24,7 +24,7 @@ func0000000000000004:                   # @func0000000000000004
 func000000000000000c:                   # @func000000000000000c
 	vpaddd	.LCPI3_0(%rip){1to8}, %ymm1, %ymm1
 	vpsrld	$3, %ymm1, %ymm1
-	vpor	%ymm0, %ymm1, %ymm0
+	vpor	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI4_0:
 	.long	393216                          # 0x60000

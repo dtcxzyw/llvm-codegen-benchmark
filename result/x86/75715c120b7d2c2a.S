@@ -1,4 +1,4 @@
-func000000000000001b:                   # @func000000000000001b
+func000000000000002b:                   # @func000000000000002b
 	xorl	%eax, %eax
 	testb	$1, %dl
 	cmovnel	%edi, %eax
@@ -6,7 +6,7 @@ func000000000000001b:                   # @func000000000000001b
 	cmpl	%edi, %eax
 	setge	%al
 	retq
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	xorl	%eax, %eax
 	testb	$1, %dl
 	cmovnel	%edi, %eax
@@ -14,7 +14,7 @@ func000000000000001a:                   # @func000000000000001a
 	cmpl	%edi, %eax
 	setg	%al
 	retq
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	xorl	%eax, %eax
 	testb	$1, %dl
 	cmovnel	%edi, %eax
@@ -30,7 +30,7 @@ func000000000000000a:                   # @func000000000000000a
 	cmpl	%edi, %eax
 	setg	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	xorl	%eax, %eax
 	testb	$1, %dl
 	cmovnel	%edi, %eax

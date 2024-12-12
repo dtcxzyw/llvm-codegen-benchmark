@@ -1,11 +1,13 @@
 
-; 38 occurrences:
+; 40 occurrences:
+; boost/optimized/get_turns_areal_areal.ll
 ; clamav/optimized/pe_icons.c.ll
 ; graphviz/optimized/lab.c.ll
 ; gromacs/optimized/libxdrf.cpp.ll
 ; image-rs/optimized/1njpscpjlgoe3i07.ll
 ; image-rs/optimized/30755d6iao7ojcvl.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
+; lvgl/optimized/lv_indev.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
 ; minetest/optimized/touchscreengui.cpp.ll
@@ -48,7 +50,8 @@ entry:
   ret i32 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; lvgl/optimized/lv_area.ll
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/seam_finders.cpp.ll

@@ -1,10 +1,10 @@
 
 ; 3 occurrences:
-; llvm/optimized/SemaExprCXX.cpp.ll
+; llvm/optimized/SimplifyIndVar.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; proxygen/optimized/StructuredHeadersUtilities.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000444(i8 %0, i32 %1) #0 {
+define i1 @func0000000000001084(i8 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, -48
   %3 = icmp ult i32 %2, 10
@@ -18,7 +18,7 @@ entry:
 ; clamav/optimized/7zDec.c.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i8 %0, i32 %1) #0 {
+define i1 @func0000000000000084(i8 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 36
   %3 = icmp ult i32 %2, 2084

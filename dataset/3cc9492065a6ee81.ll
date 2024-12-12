@@ -5,12 +5,12 @@
 ; icu/optimized/double-conversion-strtod.ll
 ; openusd/optimized/strtod.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000184(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000304(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = lshr i64 %4, 32
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   %7 = icmp ult i64 %6, 18014398509481984
   ret i1 %7
 }
@@ -21,13 +21,13 @@ entry:
 ; icu/optimized/double-conversion-bignum.ll
 ; openusd/optimized/bignum.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000201(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 268435455
-  %4 = add nuw i64 %3, %1
+  %4 = add nuw i64 %1, %3
   %5 = lshr i64 %4, 28
-  %6 = sub i64 0, %0
-  %7 = icmp eq i64 %5, %6
+  %6 = sub nsw i64 0, %5
+  %7 = icmp eq i64 %0, %6
   ret i1 %7
 }
 
@@ -105,12 +105,12 @@ entry:
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000121(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000241(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = add nuw i64 %3, %1
+  %4 = add nuw i64 %1, %3
   %5 = lshr i64 %4, 32
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   %7 = icmp eq i64 %6, 0
   ret i1 %7
 }
@@ -118,13 +118,13 @@ entry:
 ; 1 occurrences:
 ; php/optimized/strtod.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000181(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000301(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4294967295
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = lshr i64 %4, 32
-  %6 = sub i64 0, %0
-  %7 = icmp eq i64 %5, %6
+  %6 = sub nsw i64 0, %5
+  %7 = icmp eq i64 %0, %6
   ret i1 %7
 }
 

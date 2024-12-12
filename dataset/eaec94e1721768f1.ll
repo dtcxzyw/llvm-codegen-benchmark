@@ -1,8 +1,9 @@
 
-; 67 occurrences:
+; 66 occurrences:
+; actix-rs/optimized/1heyflno2zbhb99l.ll
 ; actix-rs/optimized/comsm606o4zjj7a.ll
 ; arrow/optimized/exec.cc.ll
-; cmake/optimized/uncompr.c.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/urlapi.c.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; cmake/optimized/zstd_compress_sequences.c.ll
@@ -25,7 +26,6 @@
 ; linux/optimized/tree.ll
 ; linux/optimized/usblp.ll
 ; linux/optimized/xprtsock.ll
-; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
 ; llvm/optimized/BasicAliasAnalysis.cpp.ll
 ; llvm/optimized/MachineIRBuilder.cpp.ll
 ; llvm/optimized/RecordLayoutBuilder.cpp.ll
@@ -62,7 +62,6 @@
 ; verilator/optimized/V3ExecGraph.cpp.ll
 ; wasmtime-rs/optimized/enal6epyb0tyurl.ll
 ; wireshark/optimized/blf.c.ll
-; zlib/optimized/uncompr.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_compress_sequences.c.ll
 ; zstd/optimized/zstd_decompress.c.ll

@@ -12,12 +12,3 @@ func00000000000000ac:                   # @func00000000000000ac
 	and	a1, a1, a2
 	and	a0, a0, a1
 	ret
-func00000000000000bd:                   # @func00000000000000bd
-	fli.d	fa5, 1.0
-	flt.d	a1, fa5, fa0
-	fmv.d.x	fa5, zero
-	flt.d	a2, fa0, fa5
-	or	a1, a1, a2
-	xori	a1, a1, 1
-	and	a0, a0, a1
-	ret

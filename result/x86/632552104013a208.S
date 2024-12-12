@@ -4,13 +4,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	%rdi, %rsi
 	seta	%al
 	retq
-func0000000000000011:                   # @func0000000000000011
-	addq	%rsi, %rsi
-	andq	$-4, %rsi
-	cmpq	%rdi, %rsi
-	sete	%al
-	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	addq	%rsi, %rsi
 	andq	$-4, %rsi
 	cmpq	%rdi, %rsi

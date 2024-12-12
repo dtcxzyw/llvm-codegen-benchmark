@@ -7,7 +7,7 @@
 	.zero	2
 	.zero	2
 	.zero	2
-func000000000000021c:                   # @func000000000000021c
+func000000000000082c:                   # @func000000000000082c
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm2, %ymm2
 	vpcmpeqq	%ymm1, %ymm2, %k0
@@ -25,7 +25,7 @@ func000000000000021c:                   # @func000000000000021c
 	.zero	2
 	.zero	2
 	.zero	2
-func000000000000011c:                   # @func000000000000011c
+func000000000000042c:                   # @func000000000000042c
 	vpcmpeqd	%ymm3, %ymm3, %ymm3
 	vpsubq	%ymm3, %ymm2, %ymm2
 	vpcmpeqq	%ymm1, %ymm2, %k0

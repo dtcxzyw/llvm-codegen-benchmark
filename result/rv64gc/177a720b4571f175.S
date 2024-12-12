@@ -1,5 +1,5 @@
-func000000000000001e:                   # @func000000000000001e
-	addi	a1, a1, 2
+func000000000000001f:                   # @func000000000000001f
+	addi	a1, a1, 1
 	lui	a2, 699051
 	addi	a2, a2, -1365
 	slli	a3, a1, 32
@@ -10,10 +10,10 @@ func000000000000001e:                   # @func000000000000001e
 	subw	a1, a1, a2
 	subw	a1, a1, a3
 	slli	a1, a1, 32
-	srli	a1, a1, 28
+	srli	a1, a1, 30
 	add	a0, a0, a1
 	ret
-func000000000000000e:                   # @func000000000000000e
+func000000000000000f:                   # @func000000000000000f
 	addi	a1, a1, -109
 	lui	a2, 8257
 	addi	a2, a2, -2031
@@ -53,7 +53,7 @@ func0000000000000004:                   # @func0000000000000004
 	mulhu	a1, a1, a3
 	add	a0, a0, a1
 	ret
-func0000000000000006:                   # @func0000000000000006
+func0000000000000007:                   # @func0000000000000007
 	addi	a1, a1, 2
 	lui	a2, 699051
 	addi	a2, a2, -1365

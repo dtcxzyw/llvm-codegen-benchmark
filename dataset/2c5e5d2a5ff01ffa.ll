@@ -75,9 +75,8 @@ entry:
   ret i64 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/io_tri.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000007e(i64 %0, i32 %1) #0 {

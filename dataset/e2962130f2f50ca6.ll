@@ -43,7 +43,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = sub i64 %1, %3
   %5 = sdiv exact i64 %4, 88
-  %6 = mul i64 %5, %0
+  %6 = mul i64 %0, %5
   %7 = shl nuw i64 %6, 3
   ret i64 %7
 }

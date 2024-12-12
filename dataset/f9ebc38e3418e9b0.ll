@@ -15,11 +15,13 @@ entry:
 }
 
 ; 32 occurrences:
+; boost/optimized/gregorian.ll
 ; icu/optimized/uset.ll
 ; libjpeg-turbo/optimized/tjunittest.c.ll
 ; libquic/optimized/time_support.c.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/vlv_dsi.ll
+; lvgl/optimized/lv_chart.ll
 ; minetest/optimized/guiHyperText.cpp.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
@@ -33,8 +35,6 @@ entry:
 ; openjdk/optimized/cmsintrp.ll
 ; openspiel/optimized/goofspiel.cc.ll
 ; openspiel/optimized/hex.cc.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; openusd/optimized/resize.c.ll
 ; postgres/optimized/array_expanded.ll
 ; postgres/optimized/array_userfuncs.ll
@@ -87,18 +87,16 @@ entry:
   ret i32 %4
 }
 
-; 6 occurrences:
+; 4 occurrences:
 ; abc/optimized/cuddApa.c.ll
 ; libquic/optimized/time_support.c.ll
 ; minetest/optimized/CGUITabControl.cpp.ll
 ; opencv/optimized/trackerCSRTUtils.cpp.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
-  %2 = sdiv i32 %1, 12
-  %3 = add nsw i32 %0, 1900
+  %2 = sdiv i32 %1, 2
+  %3 = add nsw i32 %0, 2
   %4 = add i32 %3, %2
   ret i32 %4
 }

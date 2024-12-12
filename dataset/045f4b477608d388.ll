@@ -15,7 +15,7 @@
 define i16 @func0000000000000000(i1 %0, i16 %1) #0 {
 entry:
   %2 = zext i1 %0 to i16
-  %3 = add i16 %2, %1
+  %3 = add i16 %1, %2
   ret i16 %3
 }
 
@@ -33,7 +33,7 @@ entry:
   ret i16 %3
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; abseil-cpp/optimized/civil_time_test.cc.ll
 ; clamav/optimized/unarj.c.ll
 ; cpython/optimized/_zoneinfo.ll
@@ -43,6 +43,7 @@ entry:
 ; icu/optimized/ustring.ll
 ; libquic/optimized/string_util.cc.ll
 ; linux/optimized/e1000_hw.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-gsm_a_rr.c.ll

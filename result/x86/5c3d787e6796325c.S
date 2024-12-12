@@ -6,7 +6,7 @@ func0000000000000003:                   # @func0000000000000003
 	retq
 func0000000000000002:                   # @func0000000000000002
 	movl	%edi, %eax
-	andl	$96, %edx
+	andl	$-1025, %edx                    # imm = 0xFBFF
 	orl	%esi, %eax
 	orl	%edx, %eax
 	retq

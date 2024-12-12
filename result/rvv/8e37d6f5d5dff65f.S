@@ -44,6 +44,14 @@ func0000000000000011:                   # @func0000000000000011
 	vor.vv	v10, v8, v10
 	vmerge.vvm	v8, v10, v8, v0
 	ret
+func000000000000000c:                   # @func000000000000000c
+	vsetivli	zero, 8, e32, m2, ta, ma
+	vmsle.vi	v0, v12, -1
+	lui	a0, 16
+	vand.vx	v10, v10, a0
+	vor.vv	v8, v10, v8
+	vmerge.vvm	v8, v8, v10, v0
+	ret
 func0000000000000015:                   # @func0000000000000015
 	lui	a0, 8
 	addi	a0, a0, -641

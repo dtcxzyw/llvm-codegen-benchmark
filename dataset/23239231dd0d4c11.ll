@@ -18,7 +18,7 @@
 ; spike/optimized/s_subMagsF16.ll
 ; spike/optimized/s_subMagsF32.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000024(i1 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000044(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %0, i32 %1, i32 %2
   %4 = icmp ult i32 %3, 16777216

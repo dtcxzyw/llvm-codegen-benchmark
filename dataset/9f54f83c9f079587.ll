@@ -1,8 +1,7 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; lightgbm/optimized/dataset.cpp.ll
 ; lightgbm/optimized/dataset_loader.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; meshlab/optimized/filter_developability.cpp.ll
 ; yosys/optimized/select.ll

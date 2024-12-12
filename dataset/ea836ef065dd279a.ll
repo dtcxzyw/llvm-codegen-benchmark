@@ -1,11 +1,10 @@
 
-; 197 occurrences:
+; 195 occurrences:
 ; clamav/optimized/bytecode_vm.c.ll
 ; clamav/optimized/disasm.c.ll
 ; hermes/optimized/APInt.cpp.ll
 ; linux/optimized/ds.ll
 ; linux/optimized/lbr.ll
-; linux/optimized/maccess.ll
 ; linux/optimized/pt.ll
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; llvm/optimized/AArch64AsmPrinter.cpp.ll
@@ -127,7 +126,6 @@
 ; llvm/optimized/PPExpressions.cpp.ll
 ; llvm/optimized/PassBuilder.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVInstructionSelector.cpp.ll
 ; llvm/optimized/RISCVLegalizerInfo.cpp.ll

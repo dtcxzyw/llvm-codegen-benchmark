@@ -1,5 +1,5 @@
 
-; 8 occurrences:
+; 7 occurrences:
 ; gromacs/optimized/slagts.cpp.ll
 ; meshlab/optimized/filter_unsharp.cpp.ll
 ; nanosvg/optimized/nanosvg.ll
@@ -7,7 +7,6 @@
 ; pbrt-v4/optimized/lightsamplers.cpp.ll
 ; pbrt-v4/optimized/shapes.cpp.ll
 ; raylib/optimized/rmodels.c.ll
-; recastnavigation/optimized/DetourNavMesh.cpp.ll
 ; Function Attrs: nounwind
 define float @func0000000000000002(float %0, float %1) #0 {
 entry:

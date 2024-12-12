@@ -1,20 +1,12 @@
-func0000000000000056:                   // @func0000000000000056
+func00000000000000a6:                   // @func00000000000000a6
 // %bb.0:                               // %entry
-	cmgt	v3.4s, v5.4s, v3.4s
-	cmgt	v2.4s, v4.4s, v2.4s
-	neg	v4.4s, v1.4s
-	neg	v5.4s, v0.4s
-	bit	v1.16b, v4.16b, v3.16b
-	bit	v0.16b, v5.16b, v2.16b
+	cmp	w1, w2
+	cneg	w0, w0, lt
 	ret
                                         // -- End function
-func0000000000000046:                   // @func0000000000000046
+func0000000000000086:                   // @func0000000000000086
 // %bb.0:                               // %entry
-	cmgt	v3.4s, v5.4s, v3.4s
-	cmgt	v2.4s, v4.4s, v2.4s
-	neg	v4.4s, v1.4s
-	neg	v5.4s, v0.4s
-	bit	v1.16b, v4.16b, v3.16b
-	bit	v0.16b, v5.16b, v2.16b
+	cmp	w1, w2
+	cneg	w0, w0, lt
 	ret
                                         // -- End function

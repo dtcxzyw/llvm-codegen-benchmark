@@ -1,10 +1,12 @@
 
-; 79 occurrences:
+; 81 occurrences:
 ; abc/optimized/extraUtilFile.c.ll
 ; abc/optimized/ivyCutTrav.c.ll
 ; abc/optimized/wlcStdin.c.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/to_chars.ll
+; boost/optimized/url_base.ll
 ; clamav/optimized/qsort.c.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; freetype/optimized/autofit.c.ll

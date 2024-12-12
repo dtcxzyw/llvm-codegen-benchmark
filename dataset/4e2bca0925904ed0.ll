@@ -7,7 +7,7 @@
 ; mitsuba3/optimized/volpath.cpp.ll
 ; z3/optimized/pb_solver.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000182(i32 %0, i8 %1) #0 {
+define i8 @func0000000000000302(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 0
   %3 = icmp eq i32 %0, 0
@@ -19,7 +19,7 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/content_cao.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000190(i32 %0, i8 %1) #0 {
+define i8 @func0000000000000310(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 0
   %3 = icmp ugt i32 %0, 64
@@ -33,7 +33,7 @@ entry:
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; z3/optimized/int_gcd_test.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000188(i32 %0, i8 %1) #0 {
+define i8 @func0000000000000308(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 0
   %3 = icmp ult i32 %0, 95
@@ -50,7 +50,7 @@ entry:
 ; z3/optimized/dl_finite_product_relation.cpp.ll
 ; z3/optimized/dl_mk_slice.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000198(i32 %0, i8 %1) #0 {
+define i8 @func0000000000000318(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp ne i8 %1, 0
   %3 = icmp ne i32 %0, 40
@@ -62,7 +62,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-cisco-mcp.c.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000102(i32 %0, i8 %1) #0 {
+define i8 @func0000000000000202(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp ugt i8 %1, 5
   %3 = icmp eq i32 %0, 62

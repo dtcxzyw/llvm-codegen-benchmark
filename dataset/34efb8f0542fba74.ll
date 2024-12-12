@@ -18,18 +18,6 @@ entry:
   ret double %4
 }
 
-; 2 occurrences:
-; gromacs/optimized/gmx_potential.cpp.ll
-; libwebp/optimized/quant_levels_utils.c.ll
-; Function Attrs: nounwind
-define double @func0000000000000001(double %0, i64 %1) #0 {
-entry:
-  %2 = trunc nsw i64 %1 to i32
-  %3 = sitofp i32 %2 to double
-  %4 = fsub double %3, %0
-  ret double %4
-}
-
 ; 4 occurrences:
 ; opencv/optimized/Utils.cpp.ll
 ; opencv/optimized/facemarkLBF.cpp.ll

@@ -1,39 +1,21 @@
 func0000000000000010:                   // @func0000000000000010
 // %bb.0:                               // %entry
-	movi	v6.4s, #1
-	ushr	v4.4s, v4.4s, #13
-	ushr	v5.4s, v5.4s, #13
-	add	v0.4s, v2.4s, v0.4s
-	add	v1.4s, v3.4s, v1.4s
-	and	v4.16b, v4.16b, v6.16b
-	and	v5.16b, v5.16b, v6.16b
-	add	v0.4s, v4.4s, v0.4s
-	add	v1.4s, v5.4s, v1.4s
+	ubfx	w8, w2, #13, #1
+	add	w9, w1, w0
+	add	w0, w8, w9
 	ret
                                         // -- End function
 func000000000000001d:                   // @func000000000000001d
 // %bb.0:                               // %entry
-	movi	v6.4s, #1
-	ushr	v4.4s, v4.4s, #17
-	ushr	v5.4s, v5.4s, #17
-	add	v0.4s, v2.4s, v0.4s
-	add	v1.4s, v3.4s, v1.4s
-	and	v4.16b, v4.16b, v6.16b
-	and	v5.16b, v5.16b, v6.16b
-	add	v0.4s, v4.4s, v0.4s
-	add	v1.4s, v5.4s, v1.4s
+	ubfx	w8, w2, #17, #1
+	add	w9, w1, w0
+	add	w0, w9, w8
 	ret
                                         // -- End function
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
-	movi	v6.4s, #1
-	ushr	v4.4s, v4.4s, #1
-	ushr	v5.4s, v5.4s, #1
-	add	v0.4s, v2.4s, v0.4s
-	add	v1.4s, v3.4s, v1.4s
-	and	v4.16b, v4.16b, v6.16b
-	and	v5.16b, v5.16b, v6.16b
-	add	v0.4s, v4.4s, v0.4s
-	add	v1.4s, v5.4s, v1.4s
+	ubfx	w8, w2, #1, #1
+	add	w9, w1, w0
+	add	w0, w8, w9
 	ret
                                         // -- End function

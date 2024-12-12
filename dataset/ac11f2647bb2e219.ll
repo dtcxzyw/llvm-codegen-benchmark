@@ -1,6 +1,5 @@
 
-; 11 occurrences:
-; flac/optimized/window.c.ll
+; 10 occurrences:
 ; opencv/optimized/depth_cleaner.cpp.ll
 ; opencv/optimized/mathfuncs.cpp.ll
 ; openjdk/optimized/sharedRuntimeTrans.ll

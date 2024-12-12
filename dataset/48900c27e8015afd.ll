@@ -4,7 +4,7 @@
 ; draco/optimized/mesh_stripifier.cc.ll
 ; wireshark/optimized/packet-dcerpc-spoolss.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000086(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000106(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
   %4 = icmp eq i32 %1, 0
@@ -13,12 +13,11 @@ entry:
   ret i32 %6
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
 ; draco/optimized/mesh_stripifier.cc.ll
-; postgres/optimized/fsmpage.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000084(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000104(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
   %4 = icmp eq i32 %1, 0
@@ -30,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; stb/optimized/stb_tilemap_editor.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000045(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000085(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 2
   %4 = icmp eq i32 %1, 0
@@ -62,7 +61,7 @@ entry:
 ; wireshark/optimized/packet-l2tp.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c7(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000187(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 6
   %4 = icmp eq i32 %1, 0

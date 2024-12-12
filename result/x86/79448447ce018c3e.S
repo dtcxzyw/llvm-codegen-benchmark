@@ -1,4 +1,4 @@
-func0000000000000038:                   # @func0000000000000038
+func0000000000000058:                   # @func0000000000000058
 	andl	$2047, %edi                     # imm = 0x7FF
 	addl	$-1075, %edi                    # imm = 0xFBCD
 	andl	$-2, %edi
@@ -6,8 +6,8 @@ func0000000000000038:                   # @func0000000000000038
 	cmpl	$2, %edi
 	setne	%al
 	retq
-func0000000000000078:                   # @func0000000000000078
-	incl	%edi
+func00000000000000d8:                   # @func00000000000000d8
+	notl	%edi
 	xorl	%eax, %eax
 	testb	$7, %dil
 	setne	%al

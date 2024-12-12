@@ -1,9 +1,8 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; linux/optimized/pmsr.ll
 ; meshlab/optimized/filter_measure.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
-; mitsuba3/optimized/x86func.cpp.ll
 ; php/optimized/zend_jit_vm_helpers.ll
 ; velox/optimized/Sequence.cpp.ll
 ; zxing/optimized/ODCode93Writer.cpp.ll
@@ -12,7 +11,7 @@ define i8 @func0000000000000000(i32 %0) #0 {
 entry:
   %1 = freeze i32 %0
   %2 = trunc i32 %1 to i8
-  %3 = add i8 %2, -32
+  %3 = add i8 %2, 1
   ret i8 %3
 }
 

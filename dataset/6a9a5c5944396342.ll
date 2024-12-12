@@ -1,5 +1,5 @@
 
-; 35 occurrences:
+; 37 occurrences:
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
 ; actix-rs/optimized/4oxclimtnmaa5ft9.ll
 ; actix-rs/optimized/fpsycltpd003ini.ll
@@ -35,6 +35,8 @@
 ; ruby/optimized/regexec.ll
 ; wasmtime-rs/optimized/4bsmuvpz9r22ks1w.ll
 ; wolfssl/optimized/tls.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000002(i8 %0, i8 %1) #0 {
 entry:
@@ -51,7 +53,7 @@ entry:
 define i8 @func0000000000000003(i8 %0, i8 %1) #0 {
 entry:
   %2 = shl nuw nsw i8 1, %1
-  %3 = and i8 %2, %0
+  %3 = and i8 %0, %2
   ret i8 %3
 }
 
@@ -64,7 +66,7 @@ entry:
 define i8 @func0000000000000001(i8 %0, i8 %1) #0 {
 entry:
   %2 = shl nsw i8 -1, %1
-  %3 = and i8 %2, %0
+  %3 = and i8 %0, %2
   ret i8 %3
 }
 

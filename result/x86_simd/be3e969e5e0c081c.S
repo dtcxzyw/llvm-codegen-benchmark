@@ -1,4 +1,4 @@
-func0000000000000069:                   # @func0000000000000069
+func00000000000000a9:                   # @func00000000000000a9
 	vpxor	%xmm3, %xmm3, %xmm3
 	vpcmpgtd	%ymm3, %ymm1, %k1
 	vpsubd	%ymm2, %ymm0, %ymm0 {%k1}
@@ -7,10 +7,10 @@ func0000000000000069:                   # @func0000000000000069
 	.long	32                              # 0x20
 .LCPI1_1:
 	.long	1                               # 0x1
-func00000000000000e1:                   # @func00000000000000e1
+func00000000000001e1:                   # @func00000000000001e1
 	vpbroadcastd	.LCPI1_0(%rip), %ymm3   # ymm3 = [32,32,32,32,32,32,32,32]
 	vpbroadcastd	.LCPI1_1(%rip), %ymm4   # ymm4 = [1,1,1,1,1,1,1,1]
 	vpcmpnleud	%ymm4, %ymm1, %k1
 	vpsubd	%ymm2, %ymm3, %ymm4 {%k1}
-	vpaddd	%ymm0, %ymm4, %ymm0
+	vpaddd	%ymm4, %ymm0, %ymm0
 	retq

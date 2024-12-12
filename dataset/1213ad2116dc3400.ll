@@ -1,20 +1,27 @@
 
-; 55 occurrences:
+; 67 occurrences:
 ; abseil-cpp/optimized/str_split_test.cc.ll
 ; actix-rs/optimized/5dylu5g0crehei80.ll
 ; arrow/optimized/value_parsing.cc.ll
+; clamav/optimized/disasm.c.ll
 ; clamav/optimized/vba_extract.c.ll
+; darktable/optimized/introspection_colorzones.c.ll
+; darktable/optimized/introspection_filmic.c.ll
 ; folly/optimized/dynamic.cpp.ll
 ; icu/optimized/olsontz.ll
 ; libquic/optimized/quic_write_blocked_list.cc.ll
 ; lief/optimized/rsa.c.ll
 ; linux/optimized/cfg.ll
+; linux/optimized/hid-core.ll
 ; linux/optimized/irq.ll
 ; linux/optimized/nl80211.ll
+; linux/optimized/ohci-hcd.ll
 ; linux/optimized/psargs.ll
+; linux/optimized/tx.ll
 ; linux/optimized/xarray.ll
 ; llvm/optimized/Function.cpp.ll
 ; lua/optimized/lgc.ll
+; luajit/optimized/minilua.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
 ; luau/optimized/Compiler.cpp.ll
 ; luau/optimized/EmitBuiltinsX64.cpp.ll
@@ -26,17 +33,19 @@
 ; luau/optimized/IrLoweringX64.cpp.ll
 ; luau/optimized/IrRegAllocX64.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
+; mitsuba3/optimized/rapass.cpp.ll
 ; openjdk/optimized/mlib_c_ImageLookUp_f.ll
+; openjdk/optimized/zPageAllocator.ll
 ; openspiel/optimized/dynamic_routing.cc.ll
 ; openspiel/optimized/spiel.cc.ll
 ; php/optimized/ir_emit.ll
 ; pocketpy/optimized/cffi.cpp.ll
 ; pocketpy/optimized/pocketpy.cpp.ll
+; postgres/optimized/localtime.ll
 ; protobuf/optimized/command_line_interface.cc.ll
 ; qemu/optimized/net_eth.c.ll
 ; regex-rs/optimized/11vfjke4utuj478u.ll
 ; ruby/optimized/api_node.ll
-; ruby/optimized/closure.ll
 ; ruby/optimized/enum.ll
 ; ruby/optimized/io.ll
 ; ruby/optimized/io_buffer.ll
@@ -54,7 +63,10 @@
 ; wasmedge/optimized/type.cpp.ll
 ; wasmtime-rs/optimized/1bmc0pjvdnh09g73.ll
 ; wasmtime-rs/optimized/xl3b912aq97wiv3.ll
+; wireshark/optimized/mtp3_summary_dialog.cpp.ll
 ; wireshark/optimized/packet-quic.c.ll
+; zed-rs/optimized/6t4g10gl152q55lxtcl2heeia.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i8 %0) #0 {
 entry:
@@ -64,7 +76,7 @@ entry:
   ret i64 %3
 }
 
-; 35 occurrences:
+; 37 occurrences:
 ; actix-rs/optimized/2f4ardqpkkrvo3qj.ll
 ; coreutils-rs/optimized/1ip9n5ft8j8xkx64.ll
 ; coreutils-rs/optimized/2t0y7t7n5luzzzcl.ll
@@ -74,6 +86,7 @@ entry:
 ; libphonenumber/optimized/generate_geocoding_data.cc.ll
 ; lief/optimized/CorePrStatus.cpp.ll
 ; lief/optimized/ResourcesParser.cpp.ll
+; linux/optimized/virtio_pci_modern_dev.ll
 ; luau/optimized/EmitInstructionX64.cpp.ll
 ; msgpack/optimized/asio_send_recv.cpp.ll
 ; msgpack/optimized/asio_send_recv_zlib.cpp.ll
@@ -92,6 +105,7 @@ entry:
 ; msgpack/optimized/speed_test_nested_array.cpp.ll
 ; msgpack/optimized/stream.cpp.ll
 ; openspiel/optimized/spiel.cc.ll
+; php/optimized/avifinfo.ll
 ; php/optimized/ir_emit.ll
 ; rust-analyzer-rs/optimized/8q1esjraj83sh5t.ll
 ; tokio-rs/optimized/4brh9kql6tjayli1.ll

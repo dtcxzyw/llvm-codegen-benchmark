@@ -4,7 +4,7 @@
 ; duckdb/optimized/ub_duckdb_transformer_expression.cpp.ll
 ; hermes/optimized/ES6Class.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, ptr %1, i8 %2) #0 {
+define i1 @func0000000000000021(i1 %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %0, i1 %3, i1 false
@@ -17,7 +17,7 @@ entry:
 ; postgres/optimized/pg_dump.ll
 ; wireshark/optimized/packet-ldap.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, ptr %1, i8 %2) #0 {
+define i1 @func000000000000002c(i1 %0, ptr %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 2
   %4 = select i1 %0, i1 %3, i1 false

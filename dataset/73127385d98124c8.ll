@@ -1,12 +1,11 @@
 
-; 33 occurrences:
+; 32 occurrences:
 ; coreutils-rs/optimized/12t1ilskwpg6ujrn.ll
 ; coreutils-rs/optimized/1rbyfrcls7o9si8f.ll
 ; coreutils-rs/optimized/21mzc6y6po60ra2.ll
 ; coreutils-rs/optimized/2jm5bfr1qa6ga934.ll
 ; coreutils-rs/optimized/3dtpqeqvk0qwjdno.ll
 ; coreutils-rs/optimized/4dx3xgc2q0yp2q7n.ll
-; coreutils-rs/optimized/4owqs476p8ji9j9u.ll
 ; coreutils-rs/optimized/4v5uagu1uwzkiygu.ll
 ; coreutils-rs/optimized/54i42m66wtythwaw.ll
 ; coreutils-rs/optimized/h500puk7vtt6aeh.ll
@@ -42,11 +41,10 @@ entry:
   ret ptr %3
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; image-rs/optimized/fyek6fuqg0ocunt.ll
 ; linux/optimized/idr.ll
-; ockam-rs/optimized/40iecfzh8kpu4oof.ll
-; ockam-rs/optimized/lcclztcuaxx9mqt.ll
+; zed-rs/optimized/8y2n395sf7zaarcc3wfqoazez.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000005(i64 %0) #0 {
 entry:
@@ -56,7 +54,7 @@ entry:
   ret ptr %3
 }
 
-; 70 occurrences:
+; 68 occurrences:
 ; actix-rs/optimized/5dylu5g0crehei80.ll
 ; c3c/optimized/c_abi_x64.c.ll
 ; coreutils-rs/optimized/12t1ilskwpg6ujrn.ll
@@ -64,11 +62,9 @@ entry:
 ; coreutils-rs/optimized/1nj6h5colnkxfn01.ll
 ; coreutils-rs/optimized/1qykyi5gxjyfg44s.ll
 ; coreutils-rs/optimized/1rcidqes8gd7e6wh.ll
-; coreutils-rs/optimized/1yyhbt8ytx8jbeb6.ll
 ; coreutils-rs/optimized/2t0y7t7n5luzzzcl.ll
 ; coreutils-rs/optimized/31vrb73337u20kex.ll
 ; coreutils-rs/optimized/37bflzxgdl1s2bim.ll
-; coreutils-rs/optimized/3soei3ium361wr6q.ll
 ; coreutils-rs/optimized/3wh0yla9idangd55.ll
 ; coreutils-rs/optimized/3y6znrgmtbetzj6x.ll
 ; coreutils-rs/optimized/4i0caq1otrc216b8.ll

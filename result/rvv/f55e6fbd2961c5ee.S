@@ -1,4 +1,4 @@
-func00000000000001cc:                   # @func00000000000001cc
+func000000000000038c:                   # @func000000000000038c
 	li	a0, 32
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vor.vx	v10, v10, a0

@@ -3,6 +3,12 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	$2, %rsi
 	cmovbq	%rsi, %rax
 	retq
+func0000000000000018:                   # @func0000000000000018
+	movq	%rdi, %rax
+	movabsq	$576460752303423488, %rcx       # imm = 0x800000000000000
+	cmpq	%rcx, %rsi
+	cmovbeq	%rsi, %rax
+	retq
 func0000000000000001:                   # @func0000000000000001
 	movq	%rdi, %rax
 	testq	%rsi, %rsi

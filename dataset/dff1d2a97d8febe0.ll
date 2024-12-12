@@ -1,11 +1,12 @@
 
-%struct.rb_builtin_function.2485884 = type { ptr, i32, i32, ptr }
-%"struct.folly::Subprocess::Pipe.2570912" = type <{ %"class.folly::File.2570905", i32, i32, i8, [3 x i8] }>
-%"class.folly::File.2570905" = type <{ i32, i8, [3 x i8] }>
-%struct.lua_TValue.3498710 = type { %union.Value.3498711, i32 }
-%union.Value.3498711 = type { ptr }
+%struct.rb_builtin_function.2601343 = type { ptr, i32, i32, ptr }
+%"struct.folly::Subprocess::Pipe.2685269" = type <{ %"class.folly::File.2685261", i32, i32, i8, [3 x i8] }>
+%"class.folly::File.2685261" = type <{ i32, i8, [3 x i8] }>
+%struct.lua_TValue.3680875 = type { %union.Value.3680876, i32 }
+%union.Value.3680876 = type { ptr }
 
-; 6 occurrences:
+; 7 occurrences:
+; git/optimized/sequencer.ll
 ; linux/optimized/filter.ll
 ; linux/optimized/memory.ll
 ; postgres/optimized/arrayfuncs.ll
@@ -17,15 +18,35 @@ define i64 @func0000000000000004(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
-  %4 = getelementptr %struct.rb_builtin_function.2485884, ptr %0, i64 %3
+  %4 = getelementptr %struct.rb_builtin_function.2601343, ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }
 
-; 40 occurrences:
+; 56 occurrences:
 ; abc/optimized/abcHieGia.c.ll
 ; abc/optimized/giaShrink.c.ll
 ; abc/optimized/giaShrink6.c.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/env.ll
+; boost/optimized/group.ll
+; boost/optimized/pipe.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/process.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/topology.ll
+; boost/optimized/wargs_cmd.ll
 ; cmake/optimized/cmListFileLexer.c.ll
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; folly/optimized/Subprocess.cpp.ll
@@ -35,12 +56,8 @@ entry:
 ; icu/optimized/localeprioritylist.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
-; ncnn/optimized/c_api.cpp.ll
 ; nuklear/optimized/unity.c.ll
-; opencv/optimized/onnx_importer.cpp.ll
 ; opencv/optimized/opencv-caffe.pb.cc.ll
-; opencv/optimized/short_term_imageless_tracker.cpp.ll
-; opencv/optimized/zero_term_imageless_tracker.cpp.ll
 ; openjdk/optimized/archiveHeapWriter.ll
 ; openjdk/optimized/compactHashtable.ll
 ; openjdk/optimized/debugInit.ll
@@ -68,13 +85,27 @@ define i64 @func0000000000000006(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 32
   %3 = ashr exact i64 %2, 32
-  %4 = getelementptr nusw %"struct.folly::Subprocess::Pipe.2570912", ptr %0, i64 %3
+  %4 = getelementptr nusw %"struct.folly::Subprocess::Pipe.2685269", ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }
 
 ; 4 occurrences:
-; arrow/optimized/coo_converter.cc.ll
+; ncnn/optimized/c_api.cpp.ll
+; opencv/optimized/onnx_importer.cpp.ll
+; opencv/optimized/short_term_imageless_tracker.cpp.ll
+; opencv/optimized/zero_term_imageless_tracker.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000007(ptr %0, i64 %1) #0 {
+entry:
+  %2 = shl i64 %1, 32
+  %3 = ashr exact i64 %2, 29
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = ptrtoint ptr %4 to i64
+  ret i64 %5
+}
+
+; 3 occurrences:
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; luajit/optimized/minilua.ll
 ; tev/optimized/ImageViewer.cpp.ll
@@ -83,7 +114,19 @@ define i64 @func0000000000000002(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl i64 %1, 28
   %3 = ashr i64 %2, 32
-  %4 = getelementptr nusw %struct.lua_TValue.3498710, ptr %0, i64 %3
+  %4 = getelementptr nusw %struct.lua_TValue.3680875, ptr %0, i64 %3
+  %5 = ptrtoint ptr %4 to i64
+  ret i64 %5
+}
+
+; 1 occurrences:
+; arrow/optimized/coo_converter.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(ptr %0, i64 %1) #0 {
+entry:
+  %2 = shl i64 %1, 29
+  %3 = ashr i64 %2, 32
+  %4 = getelementptr nusw nuw i64, ptr %0, i64 %3
   %5 = ptrtoint ptr %4 to i64
   ret i64 %5
 }

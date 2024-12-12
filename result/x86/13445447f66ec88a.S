@@ -2,33 +2,35 @@ func0000000000000040:                   # @func0000000000000040
 	andl	$60, %esi
 	leaq	2(%rdi,%rsi), %rax
 	retq
-func0000000000000042:                   # @func0000000000000042
+func0000000000000043:                   # @func0000000000000043
 	andl	$60, %esi
 	leaq	26(%rdi,%rsi), %rax
 	retq
-func000000000000002a:                   # @func000000000000002a
+func000000000000003f:                   # @func000000000000003f
 	andl	$-4, %esi
 	leaq	44(%rdi,%rsi), %rax
 	retq
-func000000000000006a:                   # @func000000000000006a
+func000000000000007f:                   # @func000000000000007f
 	andl	$63, %esi
 	leaq	25(%rdi,%rsi), %rax
 	retq
-func0000000000000060:                   # @func0000000000000060
+func000000000000007e:                   # @func000000000000007e
+	andl	$536870911, %esi                # imm = 0x1FFFFFFF
+	leaq	-4(%rdi,%rsi), %rax
+	retq
+func0000000000000070:                   # @func0000000000000070
 	movzbl	%sil, %eax
 	shll	$4, %eax
 	addq	%rdi, %rax
 	retq
-func0000000000000068:                   # @func0000000000000068
+func000000000000007c:                   # @func000000000000007c
 	andl	$131070, %esi                   # imm = 0x1FFFE
 	leaq	3(%rdi,%rsi), %rax
 	retq
-func000000000000006b:                   # @func000000000000006b
-	movzwl	%si, %eax
-	leaq	160(%rdi,%rax,8), %rax
-	retq
-func0000000000000062:                   # @func0000000000000062
-	andl	$1, %esi
-	imulq	$4112, %rsi, %rax               # imm = 0x1010
-	leaq	4872(%rdi,%rax), %rax
+func0000000000000073:                   # @func0000000000000073
+	leaq	4120(%rdi), %rcx
+	leaq	8(%rdi), %rax
+	testb	$1, %sil
+	cmovneq	%rcx, %rax
+	addq	$4864, %rax                     # imm = 0x1300
 	retq

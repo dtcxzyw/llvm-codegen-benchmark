@@ -7,7 +7,7 @@
 ; openssl/optimized/libcrypto-shlib-a_strex.ll
 ; pbrt-v4/optimized/image.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func00000000000000e1(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub nsw i32 %1, %3
@@ -22,7 +22,7 @@ entry:
 ; quantlib/optimized/gaussian1dnonstandardswaptionengine.ll
 ; quantlib/optimized/gaussian1dswaptionengine.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub i32 %1, %3
@@ -31,11 +31,12 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; llvm/optimized/MachineInstr.cpp.ll
+; luau/optimized/AssemblyBuilderX64.cpp.ll
 ; z3/optimized/mpz_matrix.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub i32 %1, %3
@@ -47,7 +48,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/binary_descriptor_matcher.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, i32 %1, i64 %2) #0 {
+define i1 @func0000000000000066(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = sub i32 %1, %3

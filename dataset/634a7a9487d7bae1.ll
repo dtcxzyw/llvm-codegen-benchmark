@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; darktable/optimized/colorpicker.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000014a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub i32 %2, %1
   %4 = icmp sgt i32 %3, 0
@@ -18,7 +18,7 @@ entry:
 ; wireshark/optimized/packet-ldp.c.ll
 ; zxing/optimized/WhiteRectDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000005aa(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000154a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp sge i32 %2, %1
   %4 = icmp sge i32 %0, %1
@@ -29,7 +29,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-ldp.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000004a8(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000001148(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = sub nsw i32 %2, %1
   %4 = icmp sgt i32 %3, 1

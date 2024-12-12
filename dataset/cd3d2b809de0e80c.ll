@@ -1,9 +1,8 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; flac/optimized/cuesheet.c.ll
 ; linux/optimized/blk-iocost.ll
 ; linux/optimized/intel_rps.ll
-; wireshark/optimized/packet-ouch.c.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0) #0 {

@@ -1,5 +1,5 @@
 
-; 130 occurrences:
+; 129 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/cuddApa.c.ll
@@ -68,7 +68,6 @@
 ; gromacs/optimized/sm_insolidangle.cpp.ll
 ; grpc/optimized/timeout_encoding.cc.ll
 ; icu/optimized/decNumber.ll
-; icu/optimized/gregoimp.ll
 ; influxdb-rs/optimized/2g8nrbnslhx52xx1.ll
 ; jq/optimized/decNumber.ll
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
@@ -134,12 +133,12 @@
 define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = sdiv i32 %1, 8
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
 
-; 42 occurrences:
+; 39 occurrences:
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver2.c.ll
 ; abc/optimized/satSolver3.c.ll
@@ -151,7 +150,6 @@ entry:
 ; g2o/optimized/solver_eigen.cpp.ll
 ; g2o/optimized/solver_slam2d_linear.cpp.ll
 ; libquic/optimized/time_support.c.ll
-; linux/optimized/i915_cmd_parser.ll
 ; linux/optimized/i915_perf.ll
 ; llvm/optimized/AddressSanitizer.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
@@ -170,9 +168,7 @@ entry:
 ; openspiel/optimized/hex.cc.ll
 ; openspiel/optimized/tiny_bridge.cc.ll
 ; openssl/optimized/libcrypto-lib-bn_gf2m.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
 ; openssl/optimized/libcrypto-shlib-bn_gf2m.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; postgres/optimized/integerset.ll
 ; postgres/optimized/nbtsearch.ll
 ; postgres/optimized/regcomp.ll

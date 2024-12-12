@@ -1,3 +1,11 @@
+func0000000000000100:                   # @func0000000000000100
+	sext.w	a2, a2
+	add	a1, a1, a2
+	sh2add	a1, a1, a1
+	sh1add	a0, a1, a0
+	sh2add	a0, a0, a0
+	slli	a0, a0, 1
+	ret
 func0000000000000155:                   # @func0000000000000155
 	sext.w	a2, a2
 	add	a1, a1, a2

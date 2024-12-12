@@ -1,5 +1,5 @@
 
-; 92 occurrences:
+; 87 occurrences:
 ; abc/optimized/abcSpeedup.c.ll
 ; abc/optimized/giaSpeedup.c.ll
 ; abc/optimized/nwkTiming.c.ll
@@ -50,11 +50,6 @@
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/qualitymapperdialog.cpp.ll
 ; minetest/optimized/CColorConverter.cpp.ll
-; ncnn/optimized/deformableconv2d.cpp.ll
-; ncnn/optimized/deformableconv2d_x86.cpp.ll
-; ncnn/optimized/deformableconv2d_x86_avx.cpp.ll
-; ncnn/optimized/deformableconv2d_x86_avx512.cpp.ll
-; ncnn/optimized/deformableconv2d_x86_fma.cpp.ll
 ; ncnn/optimized/gridsample.cpp.ll
 ; nori/optimized/block.cpp.ll
 ; nori/optimized/nanovg.c.ll
@@ -98,6 +93,22 @@ entry:
   %2 = fptosi float %1 to i32
   %3 = sext i32 %2 to i64
   %4 = getelementptr nusw i16, ptr %0, i64 %3
+  ret ptr %4
+}
+
+; 6 occurrences:
+; meshlab/optimized/filter_ao.cpp.ll
+; ncnn/optimized/deformableconv2d.cpp.ll
+; ncnn/optimized/deformableconv2d_x86.cpp.ll
+; ncnn/optimized/deformableconv2d_x86_avx.cpp.ll
+; ncnn/optimized/deformableconv2d_x86_avx512.cpp.ll
+; ncnn/optimized/deformableconv2d_x86_fma.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, float %1) #0 {
+entry:
+  %2 = fptosi float %1 to i32
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr nusw nuw float, ptr %0, i64 %3
   ret ptr %4
 }
 

@@ -1,7 +1,6 @@
 
-%class.aiVector3t.2710569 = type { double, double, double }
-%struct.acpi_gpe_event_info.3366432 = type { %union.acpi_gpe_dispatch_info.3366433, ptr, i8, i8, i8, i8 }
-%union.acpi_gpe_dispatch_info.3366433 = type { ptr }
+%class.aiVector3t.2823159 = type { double, double, double }
+%struct.Point3D.31.3820741 = type { [3 x double] }
 
 ; 3 occurrences:
 ; assimp/optimized/IFCGeometry.cpp.ll
@@ -17,41 +16,33 @@ entry:
   ret ptr %6
 }
 
-; 12 occurrences:
+; 6 occurrences:
 ; abc/optimized/aigCanon.c.ll
-; arrow/optimized/array_dict.cc.ll
-; arrow/optimized/builder_dict.cc.ll
-; arrow/optimized/scalar.cc.ll
-; arrow/optimized/type.cc.ll
-; arrow/optimized/vector_hash.cc.ll
 ; darktable/optimized/introspection_demosaic.c.ll
-; gromacs/optimized/pme_gather.cpp.ll
-; gromacs/optimized/pme_spread.cpp.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; openjdk/optimized/hb-ot-var.ll
 ; redis/optimized/geo.ll
+; stb/optimized/stb_connected_components.c.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000ea(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func00000000000000ff(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 20
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 %0
-  %6 = getelementptr nusw i8, ptr %5, i64 1
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 %0
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 1
   ret ptr %6
 }
 
-; 4 occurrences:
+; 2 occurrences:
 ; darktable/optimized/introspection_highlights.c.ll
-; gromacs/optimized/orires.cpp.ll
-; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; openjdk/optimized/p11_keymgmt.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000002b(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, 24
   %4 = getelementptr nusw i8, ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 %0
-  %6 = getelementptr nusw i8, ptr %5, i64 8
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 8
   ret ptr %6
 }
 
@@ -60,18 +51,20 @@ entry:
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
 ; opencv/optimized/freak.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func0000000000000003(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = mul i64 %2, 96
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = getelementptr %class.aiVector3t.2710569, ptr %4, i64 %0, i32 1
+  %5 = getelementptr %class.aiVector3t.2823159, ptr %4, i64 %0, i32 1
   ret ptr %5
 }
 
-; 4 occurrences:
+; 6 occurrences:
 ; darktable/optimized/PanasonicV7Decompressor.cpp.ll
 ; darktable/optimized/common.c.ll
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
+; linux/optimized/rc80211_minstrel_ht.ll
+; lvgl/optimized/lv_draw_sw.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func00000000000000c0(i64 %0, ptr %1, i64 %2) #0 {
@@ -83,9 +76,10 @@ entry:
   ret ptr %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; darktable/optimized/introspection_cacorrectrgb.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
+; stb/optimized/stb_connected_components.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000040(i64 %0, ptr %1, i64 %2) #0 {
 entry:
@@ -109,12 +103,24 @@ entry:
 }
 
 ; 1 occurrences:
+; darktable/optimized/introspection_highlights.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002a(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = mul i64 %2, 20
+  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw float, ptr %4, i64 %0
+  %6 = getelementptr nusw i8, ptr %5, i64 -4
+  ret ptr %6
+}
+
+; 1 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000e0(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func00000000000000f0(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = mul nuw nsw i64 %2, 544
-  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
   %5 = getelementptr i8, ptr %4, i64 %0
   %6 = getelementptr i8, ptr %5, i64 32
   ret ptr %6
@@ -123,25 +129,83 @@ entry:
 ; 1 occurrences:
 ; darktable/optimized/introspection_demosaic.c.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000e8(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func00000000000000fa(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %.idx = mul i64 %2, 544
-  %3 = getelementptr nusw i8, ptr %1, i64 %.idx
+  %.idx = mul nuw i64 %2, 544
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %.idx
   %4 = getelementptr nusw float, ptr %3, i64 %0
+  %5 = getelementptr nusw i8, ptr %4, i64 -548
+  ret ptr %5
+}
+
+; 8 occurrences:
+; arrow/optimized/array_dict.cc.ll
+; arrow/optimized/builder_dict.cc.ll
+; arrow/optimized/scalar.cc.ll
+; arrow/optimized/type.cc.ll
+; arrow/optimized/vector_hash.cc.ll
+; darktable/optimized/introspection_demosaic.c.ll
+; gromacs/optimized/pme_gather.cpp.ll
+; gromacs/optimized/pme_spread.cpp.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000fb(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %.idx = mul nuw i64 %2, 544
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %.idx
+  %4 = getelementptr nusw float, ptr %3, i64 %0
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 540
+  ret ptr %5
+}
+
+; 1 occurrences:
+; darktable/optimized/introspection_demosaic.c.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000fc(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %.idx = mul nuw i64 %2, 544
+  %3 = getelementptr nusw nuw i8, ptr %1, i64 %.idx
+  %4 = getelementptr nusw nuw float, ptr %3, i64 %0
   %5 = getelementptr i8, ptr %4, i64 4
   ret ptr %5
 }
 
-; 2 occurrences:
-; brotli/optimized/histogram.c.ll
-; linux/optimized/evgpeutil.ll
+; 1 occurrences:
+; gromacs/optimized/orires.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func00000000000000c2(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func00000000000000bf(i64 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = mul nuw nsw i64 %2, 192
+  %3 = mul nuw i64 %2, 48
+  %4 = getelementptr nusw nuw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw float, ptr %4, i64 %0
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 16
+  ret ptr %6
+}
+
+; 4 occurrences:
+; brotli/optimized/histogram.c.ll
+; icu/optimized/reldatefmt.ll
+; linux/optimized/evgpeutil.ll
+; linux/optimized/rc80211_minstrel_ht.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000c3(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = mul nuw nsw i64 %2, 252
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = getelementptr %struct.acpi_gpe_event_info.3366432, ptr %4, i64 %0, i32 2
-  ret ptr %5
+  %5 = getelementptr i8, ptr %4, i64 %0
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 4
+  ret ptr %6
+}
+
+; 1 occurrences:
+; linux/optimized/rc80211_minstrel_ht.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000043(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = mul nsw i64 %2, 252
+  %4 = getelementptr i8, ptr %1, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 %0
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 4
+  ret ptr %6
 }
 
 ; 1 occurrences:
@@ -159,13 +223,36 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/imgwarp.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(i64 %0, ptr %1, i64 %2) #0 {
+define ptr @func000000000000006c(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = mul nsw i64 %2, 6
+  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i16, ptr %4, i64 %0
+  %6 = getelementptr i8, ptr %5, i64 6
+  ret ptr %6
+}
+
+; 1 occurrences:
+; opencv/optimized/imgwarp.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000006f(i64 %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = mul nsw i64 %2, 12
   %4 = getelementptr nusw i8, ptr %1, i64 %3
-  %5 = getelementptr nusw float, ptr %4, i64 %0
-  %6 = getelementptr nusw i8, ptr %5, i64 12
+  %5 = getelementptr nusw nuw float, ptr %4, i64 %0
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 12
   ret ptr %6
+}
+
+; 1 occurrences:
+; meshlab/optimized/filter_screened_poisson.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002f(i64 %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = mul i64 %2, 600
+  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %5 = getelementptr nuw %struct.Point3D.31.3820741, ptr %4, i64 %0, i32 0, i64 1
+  ret ptr %5
 }
 
 attributes #0 = { nounwind }

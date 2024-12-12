@@ -1,6 +1,6 @@
 .LCPI0_0:
 	.quad	86400                           # 0x15180
-func0000000000000059:                   # @func0000000000000059
+func0000000000000099:                   # @func0000000000000099
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rcx
 	movabsq	$1749024623285053783, %rsi      # imm = 0x1845C8A0CE512957
@@ -53,7 +53,7 @@ func0000000000000059:                   # @func0000000000000059
 	retq
 .LCPI1_0:
 	.quad	86400                           # 0x15180
-func000000000000005b:                   # @func000000000000005b
+func000000000000009b:                   # @func000000000000009b
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rcx
 	movabsq	$1749024623285053783, %rsi      # imm = 0x1845C8A0CE512957
@@ -106,7 +106,7 @@ func000000000000005b:                   # @func000000000000005b
 	retq
 .LCPI2_0:
 	.quad	4000000000                      # 0xee6b2800
-func0000000000000058:                   # @func0000000000000058
+func0000000000000098:                   # @func0000000000000098
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rcx
 	movabsq	$1237940039285380275, %rsi      # imm = 0x112E0BE826D694B3

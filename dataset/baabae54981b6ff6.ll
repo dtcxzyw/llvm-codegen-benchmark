@@ -61,9 +61,9 @@ entry:
 ; protobuf/optimized/message_builder.cc.ll
 ; protobuf/optimized/message_builder_lite.cc.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000010(i8 %0, i32 %1) #0 {
+define i8 @func0000000000000050(i8 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 61
+  %2 = icmp samesign ult i32 %1, 61
   %3 = zext i1 %2 to i8
   %4 = lshr i8 %0, %3
   ret i8 %4

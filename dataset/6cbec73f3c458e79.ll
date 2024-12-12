@@ -1,5 +1,5 @@
 
-; 32 occurrences:
+; 34 occurrences:
 ; assimp/optimized/ACLoader.cpp.ll
 ; assimp/optimized/ASEParser.cpp.ll
 ; assimp/optimized/BVHLoader.cpp.ll
@@ -25,6 +25,7 @@
 ; assimp/optimized/UnrealLoader.cpp.ll
 ; assimp/optimized/XFileParser.cpp.ll
 ; assimp/optimized/XGLLoader.cpp.ll
+; boost/optimized/from_chars.ll
 ; darktable/optimized/introspection_liquify.c.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
 ; minetest/optimized/COBJMeshFileLoader.cpp.ll
@@ -32,6 +33,7 @@
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; openspiel/optimized/cards.cc.ll
 ; sentencepiece/optimized/bpe_model_trainer.cc.ll
+; zed-rs/optimized/4q1bnadqr1o107uase7gmrd0k.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i64 %0) #0 {
 entry:

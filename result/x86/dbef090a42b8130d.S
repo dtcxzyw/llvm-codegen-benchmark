@@ -1,11 +1,11 @@
-func0000000000000c38:                   # @func0000000000000c38
+func0000000000001878:                   # @func0000000000001878
 	shrq	$2, %rdi
 	cmpq	$1, %rsi
 	sbbq	$-1, %rdi
 	cmpq	$3, %rdi
 	setae	%al
 	retq
-func0000000000000c31:                   # @func0000000000000c31
+func0000000000001861:                   # @func0000000000001861
 	xorl	%eax, %eax
 	testq	%rsi, %rsi
 	setne	%al
@@ -13,7 +13,7 @@ func0000000000000c31:                   # @func0000000000000c31
 	orq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000834:                   # @func0000000000000834
+func0000000000003074:                   # @func0000000000003074
 	shrq	$48, %rsi
 	shrq	$48, %rdi
 	cmpq	$1, %rsi
@@ -21,14 +21,14 @@ func0000000000000834:                   # @func0000000000000834
 	cmpl	$65536, %edi                    # imm = 0x10000
 	setb	%al
 	retq
-func0000000000000c34:                   # @func0000000000000c34
+func0000000000001874:                   # @func0000000000001874
 	shrq	$5, %rdi
 	cmpq	$1, %rsi
 	sbbq	$-1, %rdi
 	cmpq	$4, %rdi
 	setb	%al
 	retq
-func0000000000000c3c:                   # @func0000000000000c3c
+func000000000000186c:                   # @func000000000000186c
 	xorl	%eax, %eax
 	testq	%rsi, %rsi
 	setne	%al

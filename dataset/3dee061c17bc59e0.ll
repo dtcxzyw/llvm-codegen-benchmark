@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; flac/optimized/stream_encoder.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000204(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000404(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub i64 %0, %3
@@ -16,7 +16,7 @@ entry:
 ; quantlib/optimized/asx.ll
 ; quantlib/optimized/imm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000254(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000004a4(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = sub nsw i64 %0, %3
@@ -29,26 +29,26 @@ entry:
 ; 1 occurrences:
 ; wasmtime-rs/optimized/3wxh4cbua3k3i5hq.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000b8(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 %0, %3
   %5 = zext i32 %1 to i64
   %6 = add nsw i64 %4, %5
-  %7 = icmp ugt i64 %6, 1
+  %7 = icmp samesign ugt i64 %6, 1
   ret i1 %7
 }
 
 ; 1 occurrences:
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000b4(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = sub nsw i64 %0, %3
   %5 = zext i32 %1 to i64
   %6 = add nsw i64 %4, %5
-  %7 = icmp ult i64 %6, 2
+  %7 = icmp samesign ult i64 %6, 2
   ret i1 %7
 }
 

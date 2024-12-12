@@ -1,5 +1,5 @@
 
-; 22 occurrences:
+; 23 occurrences:
 ; icu/optimized/collationfastlatin.ll
 ; icu/optimized/uts46.ll
 ; linux/optimized/hub.ll
@@ -8,6 +8,7 @@
 ; linux/optimized/tx.ll
 ; linux/optimized/uhci-hcd.ll
 ; linux/optimized/yenta_socket.ll
+; llvm/optimized/CodeGenModule.cpp.ll
 ; llvm/optimized/CodeGenPrepare.cpp.ll
 ; llvm/optimized/InstCombineCasts.cpp.ll
 ; llvm/optimized/MCDwarf.cpp.ll
@@ -27,7 +28,7 @@ define i32 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:
   %2 = icmp eq i8 %1, 1
   %3 = select i1 %2, i32 102, i32 198
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   ret i32 %4
 }
 

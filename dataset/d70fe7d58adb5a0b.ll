@@ -1,8 +1,7 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; git/optimized/ewah_bitmap.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
-; linux/optimized/fadvise.ll
 ; linux/optimized/process_vm_access.ll
 ; qemu/optimized/util_hbitmap.c.ll
 ; Function Attrs: nounwind

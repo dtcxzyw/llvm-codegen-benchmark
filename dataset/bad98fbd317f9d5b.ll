@@ -71,7 +71,7 @@ entry:
   ret i16 %4
 }
 
-; 30 occurrences:
+; 31 occurrences:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hyperscan/optimized/ng_execute.cpp.ll
 ; hyperscan/optimized/ng_literal_analysis.cpp.ll
@@ -93,6 +93,7 @@ entry:
 ; linux/optimized/vc_screen.ll
 ; llvm/optimized/MachineOperand.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
 ; minetest/optimized/dynamicshadowsrender.cpp.ll
 ; openjdk/optimized/threadControl.ll
 ; qemu/optimized/hw_display_vga.c.ll

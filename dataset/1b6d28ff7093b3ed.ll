@@ -1,5 +1,7 @@
 
-; 100 occurrences:
+; 102 occurrences:
+; boost/optimized/instantiate_cpp_grammar.ll
+; boost/optimized/instantiate_defined_grammar.ll
 ; clamav/optimized/fmap.c.ll
 ; clamav/optimized/mpool.c.ll
 ; llvm/optimized/ABIInfoImpl.cpp.ll
@@ -105,7 +107,7 @@ define i64 @func0000000000000180(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = mul i64 %5, %0
   ret i64 %6
 }
@@ -117,7 +119,7 @@ define i64 @func0000000000000188(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = add nuw i64 %4, %1
+  %5 = add nuw i64 %1, %4
   %6 = mul i64 %5, %0
   ret i64 %6
 }
@@ -130,7 +132,7 @@ define i64 @func000000000000018d(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = add nuw nsw i64 %4, %1
+  %5 = add nuw nsw i64 %1, %4
   %6 = mul nsw i64 %5, %0
   ret i64 %6
 }
@@ -142,7 +144,7 @@ define i64 @func000000000000018c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 0
   %4 = zext i1 %3 to i64
-  %5 = add nuw nsw i64 %4, %1
+  %5 = add nuw nsw i64 %1, %4
   %6 = mul i64 %5, %0
   ret i64 %6
 }

@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 25 occurrences:
 ; clamav/optimized/explode.c.ll
 ; darktable/optimized/AbstractLJpegDecoder.cpp.ll
 ; darktable/optimized/CrwDecompressor.cpp.ll
@@ -15,6 +15,7 @@
 ; libpng/optimized/png.c.ll
 ; libwebp/optimized/vp8l_enc.c.ll
 ; llvm/optimized/AsmWriterEmitter.cpp.ll
+; lvgl/optimized/lv_tlsf.ll
 ; openjdk/optimized/png.ll
 ; openusd/optimized/ilmbase_half.cpp.ll
 ; postgres/optimized/f2s.ll
@@ -33,10 +34,13 @@ entry:
   ret i32 %3
 }
 
-; 11 occurrences:
+; 14 occurrences:
+; clamav/optimized/Bra86.c.ll
+; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; jq/optimized/utf8.ll
 ; libquic/optimized/icu_utf.cc.ll
 ; libwebp/optimized/lossless_enc.c.ll
+; linux/optimized/xz_dec_bcj.ll
 ; llama.cpp/optimized/grammar-parser.cpp.ll
 ; llama.cpp/optimized/llama.cpp.ll
 ; llvm/optimized/ExpandLargeFpConvert.cpp.ll

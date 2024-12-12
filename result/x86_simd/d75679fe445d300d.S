@@ -45,27 +45,6 @@ func000000000000000a:                   # @func000000000000000a
 	vmovdqu16	%ymm0, %ymm0 {%k1} {z}
 	retq
 .LCPI3_0:
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-	.short	2                               # 0x2
-func0000000000000004:                   # @func0000000000000004
-	vpcmpnltuw	.LCPI3_0(%rip), %ymm1, %k1
-	vmovdqu16	%ymm0, %ymm0 {%k1} {z}
-	retq
-.LCPI4_0:
 	.short	3                               # 0x3
 	.short	3                               # 0x3
 	.short	3                               # 0x3
@@ -82,10 +61,48 @@ func0000000000000004:                   # @func0000000000000004
 	.short	3                               # 0x3
 	.short	3                               # 0x3
 	.short	3                               # 0x3
-.LCPI4_1:
+.LCPI3_1:
 	.short	3                               # 0x3
 func0000000000000008:                   # @func0000000000000008
-	vpbroadcastw	.LCPI4_1(%rip), %ymm2   # ymm2 = [3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3]
+	vpbroadcastw	.LCPI3_1(%rip), %ymm2   # ymm2 = [3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3]
 	vpcmpnleuw	%ymm2, %ymm1, %k1
 	vmovdqu16	%ymm2, %ymm0 {%k1}
+	retq
+.LCPI4_0:
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+	.short	2                               # 0x2
+.LCPI4_1:
+	.short	7                               # 0x7
+	.short	7                               # 0x7
+	.short	7                               # 0x7
+	.short	7                               # 0x7
+	.short	7                               # 0x7
+	.short	7                               # 0x7
+	.short	7                               # 0x7
+	.short	7                               # 0x7
+	.short	7                               # 0x7
+	.short	7                               # 0x7
+	.short	7                               # 0x7
+	.short	7                               # 0x7
+	.short	7                               # 0x7
+	.short	7                               # 0x7
+	.short	7                               # 0x7
+	.short	7                               # 0x7
+func0000000000000004:                   # @func0000000000000004
+	vpcmpltuw	.LCPI4_0(%rip), %ymm1, %k1
+	vmovdqu16	.LCPI4_1(%rip), %ymm0 {%k1} # ymm0 {%k1} = [7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7]
 	retq

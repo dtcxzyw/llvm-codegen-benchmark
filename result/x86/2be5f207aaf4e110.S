@@ -7,10 +7,10 @@ func0000000000000000:                   # @func0000000000000000
 	retq
 func0000000000000003:                   # @func0000000000000003
 	testb	$1, %sil
-	movl	$1, %eax
+	movl	$18, %eax
 	cmovnel	%edx, %eax
 	addl	%edi, %eax
-	movzwl	%ax, %eax
+	andl	$63, %eax
 	retq
 func0000000000000001:                   # @func0000000000000001
 	xorl	%eax, %eax

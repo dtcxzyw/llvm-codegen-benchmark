@@ -1,4 +1,4 @@
-func0000000000000208:                   # @func0000000000000208
+func0000000000000408:                   # @func0000000000000408
 	li	a3, -1
 	sll	a2, a3, a2
 	andn	a1, a1, a2
@@ -6,11 +6,11 @@ func0000000000000208:                   # @func0000000000000208
 	sltiu	a0, a0, 2
 	xori	a0, a0, 1
 	ret
-func0000000000000201:                   # @func0000000000000201
+func0000000000000401:                   # @func0000000000000401
 	li	a3, -1
 	sll	a2, a3, a2
 	andn	a1, a1, a2
-	neg	a0, a0
+	neg	a1, a1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret

@@ -1,5 +1,5 @@
 
-; 25 occurrences:
+; 27 occurrences:
 ; abc/optimized/extraUtilMisc.c.ll
 ; abc/optimized/giaResub.c.ll
 ; abc/optimized/giaSupps.c.ll
@@ -9,6 +9,8 @@
 ; linux/optimized/intel_tv.ll
 ; llvm/optimized/VectorUtils.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_flex.ll
+; lvgl/optimized/lv_grid.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
 ; ncnn/optimized/convolution_x86_avx512.cpp.ll

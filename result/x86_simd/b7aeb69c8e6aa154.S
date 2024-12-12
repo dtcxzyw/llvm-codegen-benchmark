@@ -10,7 +10,7 @@
 	.zero	4,15
 .LCPI0_5:
 	.byte	48                              # 0x30
-func0000000000000023:                   # @func0000000000000023
+func0000000000000063:                   # @func0000000000000063
 	vpandd	.LCPI0_4(%rip){1to4}, %xmm0, %xmm0
 	vpcmpgtb	.LCPI0_1(%rip), %xmm0, %k1
 	vpbroadcastb	.LCPI0_5(%rip), %xmm1   # xmm1 = [48,48,48,48,48,48,48,48,48,48,48,48,48,48,48,48]
@@ -29,7 +29,7 @@ func0000000000000023:                   # @func0000000000000023
 	.zero	4,15
 .LCPI1_5:
 	.byte	55                              # 0x37
-func0000000000000013:                   # @func0000000000000013
+func0000000000000053:                   # @func0000000000000053
 	vpandd	.LCPI1_4(%rip){1to4}, %xmm0, %xmm0
 	vpcmpltb	.LCPI1_1(%rip), %xmm0, %k1
 	vpbroadcastb	.LCPI1_5(%rip), %xmm1   # xmm1 = [55,55,55,55,55,55,55,55,55,55,55,55,55,55,55,55]

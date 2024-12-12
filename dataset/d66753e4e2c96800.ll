@@ -4,10 +4,10 @@
 ; openblas/optimized/dorbdb.c.ll
 ; qemu/optimized/hw_display_ati.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000194(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %1, 1
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = icmp sgt i32 %1, %2
   %6 = select i1 %4, i1 true, i1 %5
   ret i1 %6
@@ -19,7 +19,7 @@ entry:
 ; slurm/optimized/sattach.ll
 ; slurm/optimized/step_launch.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000042(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, 0
   %4 = or i1 %3, %0
@@ -31,7 +31,7 @@ entry:
 ; 1 occurrences:
 ; stb/optimized/stb_tilemap_editor.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d6(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000196(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %1, 0
   %4 = or i1 %3, %0

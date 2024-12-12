@@ -19,7 +19,7 @@ func0000000000000012:                   # @func0000000000000012
 func0000000000000018:                   # @func0000000000000018
 	incl	%edi
 	vcvtsi2sd	%edi, %xmm1, %xmm1
-	vcmpeqsd	%xmm0, %xmm1, %k0
+	vcmpeqsd	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 func0000000000000015:                   # @func0000000000000015
@@ -31,7 +31,7 @@ func0000000000000015:                   # @func0000000000000015
 func0000000000000008:                   # @func0000000000000008
 	addl	$-1234, %edi                    # imm = 0xFB2E
 	vcvtsi2sd	%edi, %xmm1, %xmm1
-	vcmpeqsd	%xmm0, %xmm1, %k0
+	vcmpeqsd	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 func0000000000000005:                   # @func0000000000000005

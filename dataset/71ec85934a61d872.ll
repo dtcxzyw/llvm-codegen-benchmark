@@ -1,12 +1,12 @@
 
-; 78 occurrences:
+; 81 occurrences:
 ; abc/optimized/gzread.c.ll
 ; assimp/optimized/MMDPmxParser.cpp.ll
+; boost/optimized/console_buffer.ll
 ; clamav/optimized/disasm.c.ll
 ; clamav/optimized/message.c.ll
 ; cmake/optimized/gzread.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
-; hdf5/optimized/H5dbg.c.ll
 ; hyperscan/optimized/mcsheng.c.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; image-rs/optimized/249ukonr3l56u09i.ll
@@ -22,7 +22,6 @@
 ; linux/optimized/rtc-cmos.ll
 ; linux/optimized/sta_info.ll
 ; linux/optimized/virtio_net.ll
-; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/AddressSanitizer.cpp.ll
 ; llvm/optimized/FunctionAttrs.cpp.ll
 ; llvm/optimized/Mips.cpp.ll
@@ -55,6 +54,7 @@
 ; wireshark/optimized/file_wrappers.c.ll
 ; wireshark/optimized/packet-3g-a11.c.ll
 ; wireshark/optimized/packet-alljoyn.c.ll
+; wireshark/optimized/packet-btbredr_rf.c.ll
 ; wireshark/optimized/packet-c1222.c.ll
 ; wireshark/optimized/packet-capwap.c.ll
 ; wireshark/optimized/packet-eigrp.c.ll
@@ -63,7 +63,6 @@
 ; wireshark/optimized/packet-ieee1722.c.ll
 ; wireshark/optimized/packet-ipp.c.ll
 ; wireshark/optimized/packet-ipv6.c.ll
-; wireshark/optimized/packet-ouch.c.ll
 ; wireshark/optimized/packet-packetbb.c.ll
 ; wireshark/optimized/packet-pgsql.c.ll
 ; wireshark/optimized/packet-q933.c.ll
@@ -76,6 +75,10 @@
 ; wireshark/optimized/packet-vnc.c.ll
 ; wireshark/optimized/proto.c.ll
 ; wolfssl/optimized/internal.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; zlib/optimized/gzread.c.ll
 ; zxing/optimized/ReadBarcode.cpp.ll
 ; Function Attrs: nounwind
@@ -86,7 +89,9 @@ entry:
   ret i32 %3
 }
 
-; 43 occurrences:
+; 45 occurrences:
+; boost/optimized/sparring_partner.ll
+; boost/optimized/value_semantic.ll
 ; cmake/optimized/cmLinkLineComputer.cxx.ll
 ; cmake/optimized/cmOutputConverter.cxx.ll
 ; cvc5/optimized/inst_strategy_enumerative.cpp.ll

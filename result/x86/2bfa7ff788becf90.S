@@ -7,7 +7,7 @@ func000000000000000c:                   # @func000000000000000c
 	andl	$8, %eax
 	shrl	$3, %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	testb	%dil, %dil
 	setns	%al
 	retq

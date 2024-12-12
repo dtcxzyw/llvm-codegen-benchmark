@@ -1,5 +1,5 @@
 
-; 157 occurrences:
+; 160 occurrences:
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/aigCuts.c.ll
 ; abc/optimized/covMinSop.c.ll
@@ -17,6 +17,9 @@
 ; abc/optimized/lpkCut.c.ll
 ; abc/optimized/mvcUtils.c.ll
 ; arrow/optimized/expression.cc.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/operations.ll
+; boost/optimized/read_graphviz_new.ll
 ; c3c/optimized/sema_decls.c.ll
 ; clamav/optimized/crtmgr.c.ll
 ; cmake/optimized/cmGeneratorTarget.cxx.ll
@@ -37,7 +40,6 @@
 ; git/optimized/shallow.ll
 ; git/optimized/show-branch.ll
 ; gromacs/optimized/mtop_util.cpp.ll
-; hyperscan/optimized/limex_compile.cpp.ll
 ; icu/optimized/ucurr.ll
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
@@ -70,7 +72,6 @@
 ; linux/optimized/kapi.ll
 ; linux/optimized/lbr.ll
 ; linux/optimized/libata-core.ll
-; linux/optimized/netlabel_addrlist.ll
 ; linux/optimized/nfs3acl.ll
 ; linux/optimized/nfs4proc.ll
 ; linux/optimized/pci.ll
@@ -101,6 +102,9 @@
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; luajit/optimized/lj_cconv.ll
 ; luajit/optimized/lj_cconv_dyn.ll
+; lvgl/optimized/lv_buttonmatrix.ll
+; lvgl/optimized/lv_obj.ll
+; lvgl/optimized/lv_table.ll
 ; mitsuba3/optimized/integrator.cpp.ll
 ; nghttp2/optimized/nghttp2_hd.c.ll
 ; node/optimized/pipe.ll
@@ -111,7 +115,6 @@
 ; openjdk/optimized/jfrPostBox.ll
 ; openjdk/optimized/memnode.ll
 ; openjdk/optimized/mulnode.ll
-; openmpi/optimized/arch.ll
 ; openmpi/optimized/coll_base_allgather.ll
 ; openmpi/optimized/coll_base_allgatherv.ll
 ; openmpi/optimized/mca_base_component_find.ll

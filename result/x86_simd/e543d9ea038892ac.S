@@ -9,7 +9,7 @@ func0000000000000001:                   # @func0000000000000001
 	.long	17                              # 0x11
 .LCPI1_1:
 	.long	7                               # 0x7
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	vpsrld	$4, %ymm1, %ymm1
 	vpcmpltud	.LCPI1_0(%rip){1to8}, %ymm0, %k1
 	vpandd	.LCPI1_1(%rip){1to8}, %ymm1, %ymm0 {%k1} {z}
@@ -38,4 +38,16 @@ func000000000000000c:                   # @func000000000000000c
 	vpblendw	$170, %ymm2, %ymm1, %ymm1       # ymm1 = ymm1[0],ymm2[1],ymm1[2],ymm2[3],ymm1[4],ymm2[5],ymm1[6],ymm2[7],ymm1[8],ymm2[9],ymm1[10],ymm2[11],ymm1[12],ymm2[13],ymm1[14],ymm2[15]
 	vptestmd	%ymm0, %ymm0, %k1
 	vmovdqa32	%ymm1, %ymm0 {%k1} {z}
+	retq
+.LCPI5_0:
+	.long	2048                            # 0x800
+.LCPI5_1:
+	.long	64                              # 0x40
+.LCPI5_2:
+	.long	63                              # 0x3f
+func0000000000000004:                   # @func0000000000000004
+	vpsrld	$5, %ymm1, %ymm1
+	vpcmpltud	.LCPI5_0(%rip){1to8}, %ymm0, %k1
+	vpbroadcastd	.LCPI5_1(%rip), %ymm0   # ymm0 = [64,64,64,64,64,64,64,64]
+	vpandd	.LCPI5_2(%rip){1to8}, %ymm1, %ymm0 {%k1}
 	retq

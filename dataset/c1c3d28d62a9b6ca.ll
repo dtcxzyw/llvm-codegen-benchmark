@@ -33,7 +33,7 @@ entry:
   ret i32 %3
 }
 
-; 79 occurrences:
+; 76 occurrences:
 ; abc/optimized/lpkCut.c.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
@@ -43,7 +43,6 @@ entry:
 ; graphviz/optimized/graph_generator.c.ll
 ; graphviz/optimized/pack.c.ll
 ; gromacs/optimized/gmx_energy.cpp.ll
-; icu/optimized/gregoimp.ll
 ; libjpeg-turbo/optimized/jdmainct.c.ll
 ; libwebp/optimized/frame_enc.c.ll
 ; linux/optimized/hid-lg4ff.ll
@@ -56,7 +55,6 @@ entry:
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
@@ -77,7 +75,6 @@ entry:
 ; openblas/optimized/dormql.c.ll
 ; openblas/optimized/dormrq.c.ll
 ; openblas/optimized/dormrz.c.ll
-; openblas/optimized/iparmq.c.ll
 ; opencv/optimized/bgfg_KNN.cpp.ll
 ; opencv/optimized/cap_mjpeg_encoder.cpp.ll
 ; opencv/optimized/convolution.cpp.ll

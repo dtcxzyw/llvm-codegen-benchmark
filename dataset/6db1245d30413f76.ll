@@ -1,5 +1,5 @@
 
-; 50 occurrences:
+; 49 occurrences:
 ; ceres/optimized/canonical_views_clustering.cc.ll
 ; cvc5/optimized/cut_log.cpp.ll
 ; eastl/optimized/TestFixedHash.cpp.ll
@@ -10,7 +10,6 @@
 ; gromacs/optimized/hbond.cpp.ll
 ; gromacs/optimized/particlesequencer.cpp.ll
 ; meshlab/optimized/arap.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/camera.cpp.ll
 ; minetest/optimized/content_cao.cpp.ll
 ; minetest/optimized/craftdef.cpp.ll

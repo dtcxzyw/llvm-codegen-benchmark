@@ -38,3 +38,14 @@ func0000000000000008:                   # @func0000000000000008
 	vpcmpnleud	.LCPI3_0(%rip){1to8}, %ymm0, %k1
 	vpbroadcastd	.LCPI3_1(%rip), %ymm0 {%k1} # ymm0 {%k1} = [3,3,3,3,3,3,3,3]
 	retq
+.LCPI4_0:
+	.long	577                             # 0x241
+.LCPI4_1:
+	.long	480                             # 0x1e0
+func0000000000000014:                   # @func0000000000000014
+	vpsllw	$15, %xmm0, %xmm0
+	vpmovw2m	%xmm0, %k1
+	vpblendmd	%ymm1, %ymm2, %ymm0 {%k1}
+	vpcmpltud	.LCPI4_0(%rip){1to8}, %ymm0, %k1
+	vpbroadcastd	.LCPI4_1(%rip), %ymm0 {%k1} # ymm0 {%k1} = [480,480,480,480,480,480,480,480]
+	retq

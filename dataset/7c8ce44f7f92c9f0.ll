@@ -21,4 +21,16 @@ entry:
   ret i8 %5
 }
 
+; 1 occurrences:
+; lvgl/optimized/lv_display.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000011(i1 %0, i32 %1) #0 {
+entry:
+  %2 = icmp ult i32 %1, 5
+  %3 = zext i1 %2 to i8
+  %4 = select i1 %0, i8 2, i8 0
+  %5 = or disjoint i8 %4, %3
+  ret i8 %5
+}
+
 attributes #0 = { nounwind }

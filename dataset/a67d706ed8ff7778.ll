@@ -1,11 +1,12 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; llvm/optimized/CrossWindows.cpp.ll
 ; llvm/optimized/Fuchsia.cpp.ll
 ; llvm/optimized/MinGW.cpp.ll
 ; llvm/optimized/OHOS.cpp.ll
 ; llvm/optimized/PS4CPU.cpp.ll
 ; llvm/optimized/Solaris.cpp.ll
+; llvm/optimized/Triple.cpp.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; Function Attrs: nounwind
 define { i64, i16 } @func0000000000000000(i64 %0) #0 {

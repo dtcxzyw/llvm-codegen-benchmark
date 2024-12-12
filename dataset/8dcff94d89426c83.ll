@@ -1,31 +1,31 @@
 
-%"class.hermes::vm::GCHermesValueBase.2890852" = type { %"class.hermes::vm::HermesValue32.2890851" }
-%"class.hermes::vm::HermesValue32.2890851" = type { i32 }
-%"struct.clang::FunctionType::FunctionTypeArmAttributes.2944371" = type { i8, [7 x i8] }
-%struct.GISTENTRY.3470653 = type { i64, ptr, ptr, i16, i8 }
+%"class.hermes::vm::GCHermesValueBase.3085360" = type { %"class.hermes::vm::HermesValue32.3085359" }
+%"class.hermes::vm::HermesValue32.3085359" = type { i32 }
+%"struct.clang::FunctionType::FunctionTypeArmAttributes.3137948" = type { i8, [7 x i8] }
+%struct.GISTENTRY.3654732 = type { i64, ptr, ptr, i16, i8 }
 
 ; 2 occurrences:
 ; hermes/optimized/Interpreter.cpp.ll
 ; openjdk/optimized/jvmciCompilerToVM.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(i16 %0, i64 %1) #0 {
+define ptr @func000000000000000f(i16 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr nusw i8, ptr %2, i64 72
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 72
   %4 = zext i16 %0 to i64
-  %5 = getelementptr nusw i64, ptr %3, i64 %4
+  %5 = getelementptr nusw nuw i64, ptr %3, i64 %4
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; hermes/optimized/RegExp.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000018(i16 %0, i64 %1) #0 {
+define ptr @func000000000000001c(i16 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr nusw i8, ptr %2, i64 8
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 8
   %4 = zext nneg i16 %0 to i64
-  %5 = getelementptr %"class.hermes::vm::GCHermesValueBase.2890852", ptr %3, i64 %4
+  %5 = getelementptr %"class.hermes::vm::GCHermesValueBase.3085360", ptr %3, i64 %4
   ret ptr %5
 }
 
@@ -118,12 +118,12 @@ entry:
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(i16 %0, i64 %1) #0 {
+define ptr @func000000000000001f(i16 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr nusw i8, ptr %2, i64 8
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 8
   %4 = zext nneg i16 %0 to i64
-  %5 = getelementptr nusw %"struct.clang::FunctionType::FunctionTypeArmAttributes.2944371", ptr %3, i64 %4
+  %5 = getelementptr nusw nuw %"struct.clang::FunctionType::FunctionTypeArmAttributes.3137948", ptr %3, i64 %4
   ret ptr %5
 }
 
@@ -143,12 +143,12 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/network_gist.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000008(i16 %0, i64 %1) #0 {
+define ptr @func000000000000000c(i16 %0, i64 %1) #0 {
 entry:
   %2 = inttoptr i64 %1 to ptr
-  %3 = getelementptr nusw i8, ptr %2, i64 8
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 8
   %4 = zext i16 %0 to i64
-  %5 = getelementptr %struct.GISTENTRY.3470653, ptr %3, i64 %4
+  %5 = getelementptr %struct.GISTENTRY.3654732, ptr %3, i64 %4
   ret ptr %5
 }
 

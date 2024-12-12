@@ -1,9 +1,3 @@
-func0000000000000056:                   # @func0000000000000056
-	imulq	%rdi, %rdx
-	imulq	%rdi, %rsi
-	cmpq	%rdx, %rsi
-	setl	%al
-	retq
 func0000000000000006:                   # @func0000000000000006
 	imulq	%rsi, %rdx
 	imulq	%rsi, %rdi
@@ -28,7 +22,7 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	%rdx, %rdi
 	seta	%al
 	retq
-func00000000000000a4:                   # @func00000000000000a4
+func0000000000000144:                   # @func0000000000000144
 	imulq	%rdi, %rdx
 	imulq	%rdi, %rsi
 	cmpq	%rdx, %rsi
@@ -40,25 +34,25 @@ func0000000000000004:                   # @func0000000000000004
 	cmpq	%rdx, %rsi
 	setb	%al
 	retq
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000011:                   # @func0000000000000011
 	imulq	%rdi, %rdx
 	imulq	%rdi, %rsi
 	cmpq	%rdx, %rsi
 	sete	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
-	imulq	%rsi, %rdx
-	imulq	%rsi, %rdi
-	cmpq	%rdx, %rdi
-	sete	%al
+func00000000000001f8:                   # @func00000000000001f8
+	imulq	%rdi, %rdx
+	imulq	%rdi, %rsi
+	cmpq	%rdx, %rsi
+	seta	%al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	imulq	%rdi, %rdx
 	imulq	%rdi, %rsi
 	cmpq	%rdx, %rsi
 	setl	%al
 	retq
-func0000000000000078:                   # @func0000000000000078
+func00000000000000e8:                   # @func00000000000000e8
 	imulq	%rdi, %rdx
 	imulq	%rdi, %rsi
 	cmpq	%rdx, %rsi

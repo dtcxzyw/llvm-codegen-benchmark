@@ -1,60 +1,60 @@
-func000000000000016c:                   # @func000000000000016c
+func00000000000002cc:                   # @func00000000000002cc
 	cmpw	%di, %dx
 	setge	%cl
 	cmpw	%si, %di
 	setl	%al
 	orb	%cl, %al
 	retq
-func0000000000000112:                   # @func0000000000000112
+func0000000000000212:                   # @func0000000000000212
 	cmpw	%di, %dx
 	seta	%cl
 	cmpw	%si, %di
 	setae	%al
 	orb	%cl, %al
 	retq
-func0000000000000154:                   # @func0000000000000154
+func0000000000000294:                   # @func0000000000000294
 	cmpw	%dx, %si
 	setg	%cl
 	cmpw	%si, %di
 	setg	%al
 	orb	%cl, %al
 	retq
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	cmpw	%di, %dx
 	setb	%cl
 	cmpw	%si, %di
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000110:                   # @func0000000000000110
+func0000000000000210:                   # @func0000000000000210
 	cmpw	%dx, %si
 	seta	%cl
 	cmpw	%si, %di
 	seta	%al
 	orb	%cl, %al
 	retq
-func00000000000000ee:                   # @func00000000000000ee
+func00000000000001ce:                   # @func00000000000001ce
 	cmpw	%di, %dx
 	setle	%cl
 	cmpw	%si, %di
 	setle	%al
 	orb	%cl, %al
 	retq
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000014a:                   # @func000000000000014a
 	cmpw	%di, %dx
 	setbe	%cl
 	cmpw	%si, %di
 	setbe	%al
 	orb	%cl, %al
 	retq
-func000000000000008a:                   # @func000000000000008a
+func000000000000010a:                   # @func000000000000010a
 	cmpw	%dx, %si
 	setb	%cl
 	cmpw	%si, %di
 	setbe	%al
 	orb	%cl, %al
 	retq
-func0000000000000188:                   # @func0000000000000188
+func0000000000000308:                   # @func0000000000000308
 	cmpw	%dx, %si
 	setne	%cl
 	cmpw	%si, %di

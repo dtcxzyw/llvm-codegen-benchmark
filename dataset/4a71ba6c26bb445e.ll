@@ -7,34 +7,7 @@
 define i1 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 1
-  %3 = add i64 %2, %0
-  %4 = icmp slt i64 %3, 0
-  ret i1 %4
-}
-
-; 17 occurrences:
-; clamav/optimized/XzIn.c.ll
-; cpython/optimized/dtoa.ll
-; eastl/optimized/TestDeque.cpp.ll
-; eastl/optimized/TestRingBuffer.cpp.ll
-; eastl/optimized/TestSort.cpp.ll
-; hyperscan/optimized/ng_calc_components.cpp.ll
-; libquic/optimized/dtoa.cc.ll
-; ninja/optimized/build_test.cc.ll
-; rocksdb/optimized/seqno_to_time_mapping.cc.ll
-; ruby/optimized/qsort.ll
-; spike/optimized/kaddh.ll
-; spike/optimized/kaddw.ll
-; spike/optimized/kdmabb.ll
-; spike/optimized/kdmabt.ll
-; spike/optimized/kdmatt.ll
-; sqlite/optimized/sqlite3.ll
-; verilator/optimized/V3OrderProcessDomains.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1) #0 {
-entry:
-  %2 = ashr exact i64 %1, 32
-  %3 = add nsw i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = icmp slt i64 %3, 0
   ret i1 %4
 }
@@ -51,7 +24,7 @@ entry:
 ; pybind11/optimized/test_stl_binders.cpp.ll
 ; ruby/optimized/re.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000086(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 32
   %3 = add i64 %2, %0
@@ -59,21 +32,11 @@ entry:
   ret i1 %4
 }
 
-; 133 occurrences:
-; abseil-cpp/optimized/cord.cc.ll
-; abseil-cpp/optimized/cord_rep_crc_test.cc.ll
-; abseil-cpp/optimized/crc_cord_state.cc.ll
-; abseil-cpp/optimized/crc_cord_state_test.cc.ll
-; abseil-cpp/optimized/hash_instantiated_test.cc.ll
-; abseil-cpp/optimized/str_split_test.cc.ll
-; assimp/optimized/BlenderLoader.cpp.ll
-; assimp/optimized/COBLoader.cpp.ll
+; 19 occurrences:
 ; assimp/optimized/IFCOpenings.cpp.ll
-; cmake/optimized/cmCTestBuildHandler.cxx.ll
-; cmake/optimized/json_reader.cpp.ll
-; cvc5/optimized/cadical.cpp.ll
-; cvc5/optimized/dio_solver.cpp.ll
-; cvc5/optimized/theory_arith_private.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; duckdb/optimized/ub_duckdb_operator_persistent.cpp.ll
 ; eastl/optimized/BenchmarkDeque.cpp.ll
 ; eastl/optimized/TestAlgorithm.cpp.ll
@@ -84,117 +47,13 @@ entry:
 ; eastl/optimized/TestSort.cpp.ll
 ; eastl/optimized/TestVectorMap.cpp.ll
 ; eastl/optimized/TestVectorSet.cpp.ll
-; entt/optimized/meta_container.cpp.ll
-; folly/optimized/IOBufIovecBuilder.cpp.ll
-; gromacs/optimized/lifetime.cpp.ll
-; gromacs/optimized/muParserTokenReader.cpp.ll
-; hermes/optimized/BytecodeGenerator.cpp.ll
-; hermes/optimized/HadesGC.cpp.ll
-; hermes/optimized/SourceErrorManager.cpp.ll
-; hermes/optimized/UniquingStringLiteralTable.cpp.ll
-; hyperscan/optimized/ng.cpp.ll
-; hyperscan/optimized/ng_calc_components.cpp.ll
 ; hyperscan/optimized/ng_prefilter.cpp.ll
-; hyperscan/optimized/ng_som.cpp.ll
-; hyperscan/optimized/rose_build_add.cpp.ll
-; hyperscan/optimized/rose_build_bytecode.cpp.ll
-; hyperscan/optimized/rose_build_castle.cpp.ll
-; hyperscan/optimized/rose_build_compile.cpp.ll
-; hyperscan/optimized/rose_build_convert.cpp.ll
-; hyperscan/optimized/rose_build_dedupe.cpp.ll
-; hyperscan/optimized/rose_build_groups.cpp.ll
-; hyperscan/optimized/rose_build_lookaround.cpp.ll
-; hyperscan/optimized/rose_build_matchers.cpp.ll
-; hyperscan/optimized/rose_build_merge.cpp.ll
 ; hyperscan/optimized/rose_build_misc.cpp.ll
-; hyperscan/optimized/rose_build_program.cpp.ll
-; hyperscan/optimized/rose_build_role_aliasing.cpp.ll
-; libquic/optimized/quic_crypto_client_config.cc.ll
-; libquic/optimized/quic_header_list.cc.ll
-; libquic/optimized/quic_received_packet_manager.cc.ll
-; libquic/optimized/quic_spdy_session.cc.ll
-; libquic/optimized/quic_write_blocked_list.cc.ll
-; llvm/optimized/AnalysisConsumer.cpp.ll
-; llvm/optimized/BlockFrequencyInfoImpl.cpp.ll
-; llvm/optimized/DFAJumpThreading.cpp.ll
-; llvm/optimized/DFAPacketizer.cpp.ll
-; llvm/optimized/FunctionPropertiesAnalysis.cpp.ll
-; llvm/optimized/GlobalISelMatchTable.cpp.ll
-; llvm/optimized/HIPUtility.cpp.ll
-; llvm/optimized/LoopCacheAnalysis.cpp.ll
-; llvm/optimized/LoopNestAnalysis.cpp.ll
-; llvm/optimized/LoopPass.cpp.ll
-; llvm/optimized/MachinePipeliner.cpp.ll
-; llvm/optimized/MemProfContextDisambiguation.cpp.ll
-; llvm/optimized/Reassociate.cpp.ll
-; llvm/optimized/SelectOptimize.cpp.ll
-; llvm/optimized/Sema.cpp.ll
-; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
-; llvm/optimized/XCOFFObjectWriter.cpp.ll
 ; minetest/optimized/connection.cpp.ll
-; ninja/optimized/build_test.cc.ll
-; ninja/optimized/graph.cc.ll
-; nlohmann_json/optimized/unit-conversions.cpp.ll
 ; oiio/optimized/sysutil.cpp.ll
-; opencv/optimized/canny.cpp.ll
-; opencv/optimized/cap_mjpeg_decoder.cpp.ll
-; opencv/optimized/erfilter.cpp.ll
-; openusd/optimized/extComputationPrimvarPruningSceneIndex.cpp.ll
-; openusd/optimized/instanceAdapter.cpp.ll
-; openusd/optimized/pointInstancerAdapter.cpp.ll
-; openvdb/optimized/Archive.cc.ll
-; openvdb/optimized/AttributeArrayString.cc.ll
-; openvdb/optimized/Diagnostics.cc.ll
-; openvdb/optimized/FastSweeping.cc.ll
-; openvdb/optimized/Filter.cc.ll
-; openvdb/optimized/LevelSetFracture.cc.ll
-; openvdb/optimized/LevelSetMeasure.cc.ll
-; openvdb/optimized/LevelSetRebuild.cc.ll
-; openvdb/optimized/LevelSetSphere.cc.ll
-; openvdb/optimized/LevelSetTracker.cc.ll
-; openvdb/optimized/Mask.cc.ll
-; openvdb/optimized/Merge.cc.ll
-; openvdb/optimized/MultiResGrid.cc.ll
-; openvdb/optimized/PoissonSolver.cc.ll
-; openvdb/optimized/TopologyToLevelSet.cc.ll
-; openvdb/optimized/VolumeAdvect.cc.ll
-; openvdb/optimized/VolumeToMesh.cc.ll
-; openvdb/optimized/points.cc.ll
-; ozz-animation/optimized/jsoncpp.cpp.ll
-; pocketpy/optimized/collections.cpp.ll
-; pybind11/optimized/test_stl_binders.cpp.ll
-; rocksdb/optimized/c.cc.ll
-; rocksdb/optimized/db_impl.cc.ll
-; rocksdb/optimized/db_impl_compaction_flush.cc.ll
-; rocksdb/optimized/db_impl_files.cc.ll
-; rocksdb/optimized/merge_helper.cc.ll
-; rocksdb/optimized/merge_operator.cc.ll
-; rocksdb/optimized/rate_limiter.cc.ll
-; rocksdb/optimized/seqno_to_time_mapping.cc.ll
 ; ruby/optimized/util.ll
-; spike/optimized/tsi.ll
-; velox/optimized/AsyncDataCache.cpp.ll
-; verilator/optimized/V3AstNodes.cpp.ll
-; verilator/optimized/V3Config.cpp.ll
-; verilator/optimized/V3Delayed.cpp.ll
-; verilator/optimized/V3EmitCImp.cpp.ll
-; verilator/optimized/V3EmitCModel.cpp.ll
-; verilator/optimized/V3EmitXml.cpp.ll
-; verilator/optimized/V3File.cpp.ll
-; verilator/optimized/V3FileLine.cpp.ll
-; verilator/optimized/V3HierBlock.cpp.ll
-; verilator/optimized/V3LinkCells.cpp.ll
-; verilator/optimized/V3OrderProcessDomains.cpp.ll
-; verilator/optimized/V3ParseGrammar.cpp.ll
-; verilator/optimized/V3ParseImp.cpp.ll
-; verilator/optimized/V3PreProc.cpp.ll
-; verilator/optimized/V3PreShell.cpp.ll
-; verilator/optimized/V3Sched.cpp.ll
-; verilator/optimized/V3Task.cpp.ll
-; verilator/optimized/V3Timing.cpp.ll
-; yalantinglibs/optimized/client.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
   %3 = add nsw i64 %2, %0
@@ -202,7 +61,7 @@ entry:
   ret i1 %4
 }
 
-; 749 occurrences:
+; 752 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
 ; abseil-cpp/optimized/cord_rep_crc_test.cc.ll
@@ -235,6 +94,11 @@ entry:
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/attribute_name.ll
+; boost/optimized/filter_parser.ll
+; boost/optimized/shared_work.ll
+; boost/optimized/topology.ll
 ; casadi/optimized/casadi_c.cpp.ll
 ; casadi/optimized/function_internal.cpp.ll
 ; casadi/optimized/mx_function.cpp.ll
@@ -599,7 +463,6 @@ entry:
 ; nix/optimized/local-derivation-goal.ll
 ; nix/optimized/names.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/profile.ll
@@ -942,7 +805,6 @@ entry:
 ; yosys/optimized/driver.ll
 ; yosys/optimized/exec.ll
 ; yosys/optimized/extract_reduce.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/qbfsat.ll
 ; yosys/optimized/ql_dsp_simd.ll
 ; yosys/optimized/recover_names.ll
@@ -953,15 +815,15 @@ entry:
 ; z3/optimized/theory_str.cpp.ll
 ; zxing/optimized/PDFModulusPoly.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a1(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 5
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = icmp eq i64 %3, 288230376151711743
   ret i1 %4
 }
 
-; 128 occurrences:
+; 127 occurrences:
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; casadi/optimized/bspline_interpolant.cpp.ll
 ; cmake/optimized/cmComputeLinkDepends.cxx.ll
@@ -1002,7 +864,6 @@ entry:
 ; minetest/optimized/mapsector.cpp.ll
 ; mitsuba3/optimized/grid.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mitsuba3/optimized/rfilter.cpp.ll
 ; mitsuba3/optimized/volumegrid.cpp.ll
 ; mold/optimized/gdb-index.cc.ALPHA.cc.ll
@@ -1091,7 +952,7 @@ entry:
 ; tev/optimized/main.cpp.ll
 ; velox/optimized/SparseHll.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 2
   %3 = add i64 %2, %0
@@ -1208,7 +1069,7 @@ entry:
 ; rocksdb/optimized/write_unprepared_txn.cc.ll
 ; velox/optimized/SparseHll.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
   %3 = sub i64 0, %0
@@ -1216,7 +1077,7 @@ entry:
   ret i1 %4
 }
 
-; 219 occurrences:
+; 220 occurrences:
 ; arrow/optimized/caching.cc.ll
 ; arrow/optimized/type.cc.ll
 ; assimp/optimized/ASELoader.cpp.ll
@@ -1228,6 +1089,7 @@ entry:
 ; assimp/optimized/PretransformVertices.cpp.ll
 ; assimp/optimized/XFileImporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/attribute_name.ll
 ; casadi/optimized/mx_function.cpp.ll
 ; casadi/optimized/polynomial.cpp.ll
 ; casadi/optimized/sx_function.cpp.ll
@@ -1437,15 +1299,15 @@ entry:
 ; yosys/optimized/xilinx_dsp.ll
 ; zxing/optimized/PDFModulusPoly.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = icmp ugt i64 %3, 1152921504606846975
   ret i1 %4
 }
 
-; 137 occurrences:
+; 139 occurrences:
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_crc_test.cc.ll
 ; abseil-cpp/optimized/crc_cord_state.cc.ll
@@ -1456,6 +1318,8 @@ entry:
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; assimp/optimized/COBLoader.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/attribute_name.ll
 ; cmake/optimized/cmCTestBuildHandler.cxx.ll
 ; cmake/optimized/json_reader.cpp.ll
 ; cvc5/optimized/cadical.cpp.ll
@@ -1584,11 +1448,143 @@ entry:
 ; verilator/optimized/V3Timing.cpp.ll
 ; yalantinglibs/optimized/client.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000aa(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = icmp sgt i64 %3, -1
+  ret i1 %4
+}
+
+; 122 occurrences:
+; abseil-cpp/optimized/cord.cc.ll
+; abseil-cpp/optimized/cord_rep_crc_test.cc.ll
+; abseil-cpp/optimized/crc_cord_state.cc.ll
+; abseil-cpp/optimized/crc_cord_state_test.cc.ll
+; abseil-cpp/optimized/hash_instantiated_test.cc.ll
+; abseil-cpp/optimized/str_split_test.cc.ll
+; assimp/optimized/BlenderLoader.cpp.ll
+; assimp/optimized/COBLoader.cpp.ll
+; assimp/optimized/IFCOpenings.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/attribute_name.ll
+; cmake/optimized/cmCTestBuildHandler.cxx.ll
+; cmake/optimized/json_reader.cpp.ll
+; cvc5/optimized/cadical.cpp.ll
+; cvc5/optimized/dio_solver.cpp.ll
+; cvc5/optimized/theory_arith_private.cpp.ll
+; eastl/optimized/BenchmarkDeque.cpp.ll
+; entt/optimized/meta_container.cpp.ll
+; folly/optimized/IOBufIovecBuilder.cpp.ll
+; gromacs/optimized/lifetime.cpp.ll
+; gromacs/optimized/muParserTokenReader.cpp.ll
+; hermes/optimized/BytecodeGenerator.cpp.ll
+; hermes/optimized/HadesGC.cpp.ll
+; hermes/optimized/SourceErrorManager.cpp.ll
+; hermes/optimized/UniquingStringLiteralTable.cpp.ll
+; hyperscan/optimized/ng.cpp.ll
+; hyperscan/optimized/ng_calc_components.cpp.ll
+; hyperscan/optimized/ng_som.cpp.ll
+; hyperscan/optimized/rose_build_add.cpp.ll
+; hyperscan/optimized/rose_build_bytecode.cpp.ll
+; hyperscan/optimized/rose_build_castle.cpp.ll
+; hyperscan/optimized/rose_build_compile.cpp.ll
+; hyperscan/optimized/rose_build_convert.cpp.ll
+; hyperscan/optimized/rose_build_dedupe.cpp.ll
+; hyperscan/optimized/rose_build_groups.cpp.ll
+; hyperscan/optimized/rose_build_lookaround.cpp.ll
+; hyperscan/optimized/rose_build_matchers.cpp.ll
+; hyperscan/optimized/rose_build_merge.cpp.ll
+; hyperscan/optimized/rose_build_misc.cpp.ll
+; hyperscan/optimized/rose_build_program.cpp.ll
+; hyperscan/optimized/rose_build_role_aliasing.cpp.ll
+; libquic/optimized/quic_crypto_client_config.cc.ll
+; libquic/optimized/quic_header_list.cc.ll
+; libquic/optimized/quic_received_packet_manager.cc.ll
+; libquic/optimized/quic_spdy_session.cc.ll
+; libquic/optimized/quic_write_blocked_list.cc.ll
+; llvm/optimized/AnalysisConsumer.cpp.ll
+; llvm/optimized/BlockFrequencyInfoImpl.cpp.ll
+; llvm/optimized/DFAJumpThreading.cpp.ll
+; llvm/optimized/DFAPacketizer.cpp.ll
+; llvm/optimized/FunctionPropertiesAnalysis.cpp.ll
+; llvm/optimized/GlobalISelMatchTable.cpp.ll
+; llvm/optimized/HIPUtility.cpp.ll
+; llvm/optimized/LoopCacheAnalysis.cpp.ll
+; llvm/optimized/LoopNestAnalysis.cpp.ll
+; llvm/optimized/LoopPass.cpp.ll
+; llvm/optimized/MachinePipeliner.cpp.ll
+; llvm/optimized/MemProfContextDisambiguation.cpp.ll
+; llvm/optimized/Reassociate.cpp.ll
+; llvm/optimized/SelectOptimize.cpp.ll
+; llvm/optimized/Sema.cpp.ll
+; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
+; llvm/optimized/XCOFFObjectWriter.cpp.ll
+; ninja/optimized/build_test.cc.ll
+; ninja/optimized/graph.cc.ll
+; nlohmann_json/optimized/unit-conversions.cpp.ll
+; opencv/optimized/canny.cpp.ll
+; opencv/optimized/cap_mjpeg_decoder.cpp.ll
+; opencv/optimized/erfilter.cpp.ll
+; openusd/optimized/extComputationPrimvarPruningSceneIndex.cpp.ll
+; openusd/optimized/instanceAdapter.cpp.ll
+; openusd/optimized/pointInstancerAdapter.cpp.ll
+; openvdb/optimized/Archive.cc.ll
+; openvdb/optimized/AttributeArrayString.cc.ll
+; openvdb/optimized/Diagnostics.cc.ll
+; openvdb/optimized/FastSweeping.cc.ll
+; openvdb/optimized/Filter.cc.ll
+; openvdb/optimized/LevelSetFracture.cc.ll
+; openvdb/optimized/LevelSetMeasure.cc.ll
+; openvdb/optimized/LevelSetRebuild.cc.ll
+; openvdb/optimized/LevelSetSphere.cc.ll
+; openvdb/optimized/LevelSetTracker.cc.ll
+; openvdb/optimized/Mask.cc.ll
+; openvdb/optimized/Merge.cc.ll
+; openvdb/optimized/MultiResGrid.cc.ll
+; openvdb/optimized/PoissonSolver.cc.ll
+; openvdb/optimized/TopologyToLevelSet.cc.ll
+; openvdb/optimized/VolumeAdvect.cc.ll
+; openvdb/optimized/VolumeToMesh.cc.ll
+; openvdb/optimized/points.cc.ll
+; ozz-animation/optimized/jsoncpp.cpp.ll
+; pocketpy/optimized/collections.cpp.ll
+; pybind11/optimized/test_stl_binders.cpp.ll
+; rocksdb/optimized/c.cc.ll
+; rocksdb/optimized/db_impl.cc.ll
+; rocksdb/optimized/db_impl_compaction_flush.cc.ll
+; rocksdb/optimized/db_impl_files.cc.ll
+; rocksdb/optimized/merge_helper.cc.ll
+; rocksdb/optimized/merge_operator.cc.ll
+; rocksdb/optimized/rate_limiter.cc.ll
+; rocksdb/optimized/seqno_to_time_mapping.cc.ll
+; spike/optimized/tsi.ll
+; velox/optimized/AsyncDataCache.cpp.ll
+; verilator/optimized/V3AstNodes.cpp.ll
+; verilator/optimized/V3Config.cpp.ll
+; verilator/optimized/V3Delayed.cpp.ll
+; verilator/optimized/V3EmitCImp.cpp.ll
+; verilator/optimized/V3EmitCModel.cpp.ll
+; verilator/optimized/V3EmitXml.cpp.ll
+; verilator/optimized/V3File.cpp.ll
+; verilator/optimized/V3FileLine.cpp.ll
+; verilator/optimized/V3HierBlock.cpp.ll
+; verilator/optimized/V3LinkCells.cpp.ll
+; verilator/optimized/V3OrderProcessDomains.cpp.ll
+; verilator/optimized/V3ParseGrammar.cpp.ll
+; verilator/optimized/V3ParseImp.cpp.ll
+; verilator/optimized/V3PreProc.cpp.ll
+; verilator/optimized/V3PreShell.cpp.ll
+; verilator/optimized/V3Sched.cpp.ll
+; verilator/optimized/V3Task.cpp.ll
+; verilator/optimized/V3Timing.cpp.ll
+; yalantinglibs/optimized/client.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000b4(i64 %0, i64 %1) #0 {
+entry:
+  %2 = ashr exact i64 %1, 3
+  %3 = add nsw i64 %0, %2
+  %4 = icmp samesign ult i64 %3, 64
   ret i1 %4
 }
 
@@ -1602,10 +1598,10 @@ entry:
 ; rocksdb/optimized/version_set.cc.ll
 ; rocksdb/optimized/write_batch.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = icmp ult i64 %3, 8
   ret i1 %4
 }
@@ -1614,11 +1610,11 @@ entry:
 ; folly/optimized/QueuedImmediateExecutor.cpp.ll
 ; rocksdb/optimized/filter_policy.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005c(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000ac(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 3
-  %3 = sub i64 0, %0
-  %4 = icmp ne i64 %2, %3
+  %3 = sub nsw i64 0, %2
+  %4 = icmp ne i64 %0, %3
   ret i1 %4
 }
 
@@ -1637,11 +1633,38 @@ entry:
 ; rocksdb/optimized/write_prepared_txn.cc.ll
 ; rocksdb/optimized/write_unprepared_txn.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000008a(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 4
   %3 = add i64 %2, %0
   %4 = icmp sgt i64 %3, 16
+  ret i1 %4
+}
+
+; 17 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; clamav/optimized/XzIn.c.ll
+; cpython/optimized/dtoa.ll
+; eastl/optimized/TestDeque.cpp.ll
+; eastl/optimized/TestRingBuffer.cpp.ll
+; eastl/optimized/TestSort.cpp.ll
+; hyperscan/optimized/ng_calc_components.cpp.ll
+; libquic/optimized/dtoa.cc.ll
+; ninja/optimized/build_test.cc.ll
+; rocksdb/optimized/seqno_to_time_mapping.cc.ll
+; spike/optimized/kaddh.ll
+; spike/optimized/kaddw.ll
+; spike/optimized/kdmabb.ll
+; spike/optimized/kdmabt.ll
+; spike/optimized/kdmatt.ll
+; sqlite/optimized/sqlite3.ll
+; verilator/optimized/V3OrderProcessDomains.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000a6(i64 %0, i64 %1) #0 {
+entry:
+  %2 = ashr exact i64 %1, 4
+  %3 = add nsw i64 %0, %2
+  %4 = icmp slt i64 %3, 2
   ret i1 %4
 }
 
@@ -1654,25 +1677,24 @@ entry:
 ; php/optimized/unixtime2tm.ll
 ; velox/optimized/Timestamp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000026(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 32
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = icmp slt i64 %3, 0
   ret i1 %4
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; abseil-cpp/optimized/kernel_timeout_test.cc.ll
 ; arrow/optimized/bitmap_ops.cc.ll
 ; arrow/optimized/hashing.cc.ll
 ; eastl/optimized/EATest.cpp.ll
-; libquic/optimized/d1_lib.c.ll
 ; linux/optimized/vmstat.ll
 ; qemu/optimized/hw_virtio_vhost-vdpa.c.ll
 ; yosys/optimized/ql_dsp_simd.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 63
   %3 = sub i64 0, %0
@@ -1714,10 +1736,10 @@ entry:
 ; luajit/optimized/lj_record_dyn.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002a(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 31
-  %3 = add nsw i64 %2, %0
+  %3 = add nsw i64 %0, %2
   %4 = icmp sgt i64 %3, 2147483647
   ret i1 %4
 }
@@ -1726,11 +1748,34 @@ entry:
 ; velox/optimized/DenseHll.cpp.ll
 ; velox/optimized/SparseHll.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000f8(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr exact i64 %1, 2
-  %3 = add nuw nsw i64 %2, %0
-  %4 = icmp ugt i64 %3, 768
+  %3 = add nuw nsw i64 %0, %2
+  %4 = icmp samesign ugt i64 %3, 768
+  ret i1 %4
+}
+
+; 1 occurrences:
+; quantlib/optimized/bumpinstrumentjacobian.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000b1(i64 %0, i64 %1) #0 {
+entry:
+  %2 = ashr exact i64 %1, 4
+  %3 = sub nsw i64 0, %2
+  %4 = icmp eq i64 %0, %3
+  ret i1 %4
+}
+
+; 2 occurrences:
+; arrow/optimized/type.cc.ll
+; openusd/optimized/renderSettingsFlatteningSceneIndex.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000b8(i64 %0, i64 %1) #0 {
+entry:
+  %2 = ashr exact i64 %1, 3
+  %3 = add nsw i64 %0, %2
+  %4 = icmp samesign ugt i64 %3, 576460752303423487
   ret i1 %4
 }
 
@@ -1740,7 +1785,7 @@ entry:
 define i1 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 1
-  %3 = add i64 %2, %0
+  %3 = add i64 %0, %2
   %4 = icmp ugt i64 %3, 1152921504606846975
   ret i1 %4
 }
@@ -1751,11 +1796,22 @@ entry:
 ; eastl/optimized/TestSort.cpp.ll
 ; pocketpy/optimized/ceval.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1) #0 {
 entry:
   %2 = ashr i64 %1, 1
   %3 = add nsw i64 %2, %0
   %4 = icmp ult i64 %3, 4
+  ret i1 %4
+}
+
+; 1 occurrences:
+; eastl/optimized/BenchmarkDeque.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
+entry:
+  %2 = ashr i64 %1, 1
+  %3 = add nsw i64 %2, %0
+  %4 = icmp samesign ult i64 %3, 64
   ret i1 %4
 }
 

@@ -1,5 +1,5 @@
 
-; 43 occurrences:
+; 44 occurrences:
 ; cpython/optimized/typeobject.ll
 ; linux/optimized/dm-raid1.ll
 ; linux/optimized/e820.ll
@@ -7,7 +7,6 @@
 ; linux/optimized/hrtimer.ll
 ; linux/optimized/icmp.ll
 ; linux/optimized/input.ll
-; linux/optimized/intel_display_debugfs.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/intel_guc_submission.ll
 ; linux/optimized/intel_pch_refclk.ll
@@ -20,9 +19,11 @@
 ; linux/optimized/libata-sata.ll
 ; linux/optimized/libata-sff.ll
 ; linux/optimized/nfs4namespace.ll
+; linux/optimized/radix-tree.ll
 ; linux/optimized/reg.ll
 ; linux/optimized/setup-bus.ll
 ; linux/optimized/setup-res.ll
+; linux/optimized/sidtab.ll
 ; linux/optimized/sit.ll
 ; linux/optimized/tcp_ipv4.ll
 ; linux/optimized/tcp_ipv6.ll

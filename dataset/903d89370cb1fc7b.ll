@@ -1,21 +1,6 @@
 
-; 5 occurrences:
-; cmake/optimized/setopt.c.ll
-; curl/optimized/libcurl_la-setopt.ll
-; linux/optimized/yenta_socket.ll
-; softposit-rs/optimized/1e6z9tsqxvhrpdzq.ll
-; softposit-rs/optimized/1jooigl29qhneyer.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, -37
-  %3 = shl nuw nsw i64 1, %0
-  %4 = and i64 %3, %2
-  %5 = icmp eq i64 %4, 0
-  ret i1 %5
-}
-
-; 7 occurrences:
+; 8 occurrences:
+; git/optimized/unpack-trees.ll
 ; linux/optimized/intel_display.ll
 ; linux/optimized/intel_modeset_setup.ll
 ; postgres/optimized/acl.ll
@@ -24,9 +9,9 @@ entry:
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
 ; spike/optimized/disasm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
 entry:
-  %2 = and i64 %1, 255
+  %2 = and i64 %1, 4294967295
   %3 = shl nuw i64 1, %0
   %4 = and i64 %3, %2
   %5 = icmp eq i64 %4, 0
@@ -46,14 +31,29 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
+; 3 occurrences:
+; linux/optimized/yenta_socket.ll
+; softposit-rs/optimized/1e6z9tsqxvhrpdzq.ll
+; softposit-rs/optimized/1jooigl29qhneyer.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000061(i64 %0, i64 %1) #0 {
+entry:
+  %2 = and i64 %1, 1073741823
+  %3 = shl nuw nsw i64 1, %0
+  %4 = and i64 %3, %2
+  %5 = icmp eq i64 %4, 0
+  ret i1 %5
+}
+
+; 6 occurrences:
+; linux/optimized/intel_workarounds.ll
 ; linux/optimized/libahci.ll
 ; linux/optimized/link.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/tx.ll
 ; linux/optimized/xhci-trace.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %0, 4294967295
   %3 = lshr i64 %2, %1

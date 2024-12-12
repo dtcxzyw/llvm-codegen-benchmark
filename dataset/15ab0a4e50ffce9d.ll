@@ -1,7 +1,6 @@
 
-; 4 occurrences:
+; 3 occurrences:
 ; abseil-cpp/optimized/charconv_bigint.cc.ll
-; ceres/optimized/schur_eliminator_d_d_d.cc.ll
 ; clamav/optimized/pe_icons.c.ll
 ; ipopt/optimized/IpLimMemQuasiNewtonUpdater.ll
 ; Function Attrs: nounwind
@@ -12,11 +11,12 @@ entry:
   ret i32 %2
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; graphviz/optimized/constrained_majorization_ipsep.c.ll
 ; gromacs/optimized/gmx_cluster.cpp.ll
 ; gromacs/optimized/gmx_rmsdist.cpp.ll
 ; ipopt/optimized/IpLimMemQuasiNewtonUpdater.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/solver.cpp.ll
@@ -31,7 +31,7 @@ entry:
   ret i32 %2
 }
 
-; 105 occurrences:
+; 102 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcFx.c.ll
 ; abc/optimized/abcGen.c.ll
@@ -51,7 +51,6 @@ entry:
 ; bullet3/optimized/btSoftBody.ll
 ; casadi/optimized/cvodes_spils.c.ll
 ; casadi/optimized/idas_spils.c.ll
-; casadi/optimized/kinsol_spils.c.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; g2o/optimized/edge_line2d.cpp.ll
 ; g2o/optimized/edge_line2d_pointxy.cpp.ll
@@ -113,11 +112,9 @@ entry:
 ; openblas/optimized/dgesvj.c.ll
 ; openblas/optimized/dgsvj0.c.ll
 ; openblas/optimized/dsfrk.c.ll
-; openblas/optimized/dspevd.c.ll
 ; openblas/optimized/dsptrd.c.ll
 ; openblas/optimized/dsptrf.c.ll
 ; openblas/optimized/dsptri.c.ll
-; openblas/optimized/dtfsm.c.ll
 ; opencv/optimized/edge_drawing.cpp.ll
 ; opencv/optimized/fed.cpp.ll
 ; opencv/optimized/guided_filter.cpp.ll
@@ -164,62 +161,16 @@ entry:
   ret i32 %2
 }
 
-; 59 occurrences:
+; 13 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; bullet3/optimized/btSoftBody.ll
 ; darktable/optimized/introspection_colorchecker.c.ll
 ; gromacs/optimized/correlationtensor.cpp.ll
 ; openblas/optimized/dsfrk.c.ll
-; openblas/optimized/dspsvx.c.ll
 ; openblas/optimized/dsptrf.c.ll
 ; openblas/optimized/dsptrs.c.ll
-; openblas/optimized/dtfsm.c.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtptri.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; openblas/optimized/lapacke_ctp_trans.c.ll
-; openblas/optimized/lapacke_dopgtr_work.c.ll
-; openblas/optimized/lapacke_dopmtr_work.c.ll
-; openblas/optimized/lapacke_dpftrf_work.c.ll
-; openblas/optimized/lapacke_dpftri_work.c.ll
-; openblas/optimized/lapacke_dpftrs_work.c.ll
-; openblas/optimized/lapacke_dppcon_work.c.ll
-; openblas/optimized/lapacke_dppequ_work.c.ll
-; openblas/optimized/lapacke_dpprfs_work.c.ll
-; openblas/optimized/lapacke_dppsv_work.c.ll
-; openblas/optimized/lapacke_dppsvx_work.c.ll
-; openblas/optimized/lapacke_dpptrf_work.c.ll
-; openblas/optimized/lapacke_dpptri_work.c.ll
-; openblas/optimized/lapacke_dpptrs_work.c.ll
-; openblas/optimized/lapacke_dsfrk_work.c.ll
-; openblas/optimized/lapacke_dspcon_work.c.ll
-; openblas/optimized/lapacke_dspev_work.c.ll
-; openblas/optimized/lapacke_dspevd_work.c.ll
-; openblas/optimized/lapacke_dspevx_work.c.ll
-; openblas/optimized/lapacke_dspgst_work.c.ll
-; openblas/optimized/lapacke_dspgv_work.c.ll
-; openblas/optimized/lapacke_dspgvd_work.c.ll
-; openblas/optimized/lapacke_dspgvx_work.c.ll
-; openblas/optimized/lapacke_dsprfs_work.c.ll
-; openblas/optimized/lapacke_dspsv_work.c.ll
-; openblas/optimized/lapacke_dspsvx_work.c.ll
-; openblas/optimized/lapacke_dsptrd_work.c.ll
-; openblas/optimized/lapacke_dsptrf_work.c.ll
-; openblas/optimized/lapacke_dsptri_work.c.ll
-; openblas/optimized/lapacke_dsptrs_work.c.ll
-; openblas/optimized/lapacke_dtfsm_work.c.ll
-; openblas/optimized/lapacke_dtftri_work.c.ll
-; openblas/optimized/lapacke_dtfttp_work.c.ll
-; openblas/optimized/lapacke_dtfttr_work.c.ll
 ; openblas/optimized/lapacke_dtp_trans.c.ll
-; openblas/optimized/lapacke_dtpcon_work.c.ll
-; openblas/optimized/lapacke_dtprfs_work.c.ll
-; openblas/optimized/lapacke_dtptri_work.c.ll
-; openblas/optimized/lapacke_dtptrs_work.c.ll
-; openblas/optimized/lapacke_dtpttf_work.c.ll
-; openblas/optimized/lapacke_dtpttr_work.c.ll
-; openblas/optimized/lapacke_dtrttf_work.c.ll
-; openblas/optimized/lapacke_dtrttp_work.c.ll
 ; openblas/optimized/lapacke_stp_trans.c.ll
 ; openblas/optimized/lapacke_ztp_trans.c.ll
 ; opencv/optimized/guided_filter.cpp.ll
@@ -245,9 +196,8 @@ entry:
   ret i32 %2
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; openblas/optimized/dgedmd.c.ll
-; openblas/optimized/dspevd.c.ll
 ; z3/optimized/value_generator.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0) #0 {
@@ -257,8 +207,7 @@ entry:
   ret i32 %2
 }
 
-; 2 occurrences:
-; openblas/optimized/dspcon.c.ll
+; 1 occurrences:
 ; openblas/optimized/dsptri.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000b(i32 %0) #0 {

@@ -1,5 +1,5 @@
 
-; 167 occurrences:
+; 162 occurrences:
 ; abc/optimized/abcIf.c.ll
 ; abc/optimized/extraUtilFile.c.ll
 ; abc/optimized/ifDelay.c.ll
@@ -8,7 +8,6 @@
 ; brotli/optimized/decode.c.ll
 ; brotli/optimized/static_dict.c.ll
 ; bullet3/optimized/btAxisSweep3.ll
-; bullet3/optimized/btBatchedConstraints.ll
 ; clamav/optimized/pdf.c.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
@@ -51,9 +50,6 @@
 ; linux/optimized/ipv6_sockglue.ll
 ; linux/optimized/mcast.ll
 ; linux/optimized/ndisc.ll
-; linux/optimized/net-traces.ll
-; linux/optimized/nf_conntrack_proto.ll
-; linux/optimized/nf_defrag_ipv4.ll
 ; linux/optimized/nf_log_syslog.ll
 ; linux/optimized/nf_queue.ll
 ; linux/optimized/nfnetlink_log.ll
@@ -76,7 +72,6 @@
 ; linux/optimized/tcp_timer.ll
 ; linux/optimized/tx.ll
 ; linux/optimized/udp.ll
-; linux/optimized/xfrm6_output.ll
 ; linux/optimized/xfrm_output.ll
 ; linux/optimized/xprtsock.ll
 ; llvm/optimized/LowerTypeTests.cpp.ll
@@ -178,6 +173,7 @@ entry:
 ; 39 occurrences:
 ; abc/optimized/giaNf.c.ll
 ; bullet3/optimized/btAxisSweep3.ll
+; bullet3/optimized/btBatchedConstraints.ll
 ; bullet3/optimized/btConvexPolyhedron.ll
 ; clamav/optimized/mszipd.c.ll
 ; duckdb/optimized/ub_duckdb_catalog_entries.cpp.ll
@@ -190,7 +186,6 @@ entry:
 ; libzmq/optimized/tcp_address.cpp.ll
 ; lief/optimized/ecp.c.ll
 ; linux/optimized/e1000_ethtool.ll
-; linux/optimized/vclock_gettime.ll
 ; linux/optimized/vlv_dsi_pll.ll
 ; minetest/optimized/touchscreengui.cpp.ll
 ; oiio/optimized/ddsinput.cpp.ll
@@ -241,7 +236,7 @@ entry:
   ret i32 %2
 }
 
-; 13 occurrences:
+; 14 occurrences:
 ; abc/optimized/ifDelay.c.ll
 ; cmake/optimized/nghttp2_hd.c.ll
 ; draco/optimized/sequential_normal_attribute_encoder.cc.ll
@@ -250,6 +245,7 @@ entry:
 ; libquic/optimized/hpack_input_stream.cc.ll
 ; linux/optimized/g4x_dp.ll
 ; linux/optimized/intel_dpio_phy.ll
+; lvgl/optimized/lv_canvas.ll
 ; meshoptimizer/optimized/vertexcodec.cpp.ll
 ; nghttp2/optimized/nghttp2_hd.c.ll
 ; openjdk/optimized/macroArrayCopy.ll

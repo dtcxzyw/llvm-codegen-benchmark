@@ -1,10 +1,13 @@
 
-; 358 occurrences:
+; 361 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/cbaBlast.c.ll
 ; abc/optimized/cbaNtk.c.ll
 ; abc/optimized/cbaReadBlif.c.ll
 ; abc/optimized/cbaReadVer.c.ll
+; abc/optimized/ivyRwr.c.ll
+; abc/optimized/ivySeq.c.ll
+; abc/optimized/rwrEva.c.ll
 ; abc/optimized/satSolver2.c.ll
 ; assimp/optimized/zip.c.ll
 ; clamav/optimized/asn1.c.ll
@@ -73,7 +76,6 @@
 ; linux/optimized/filter.ll
 ; linux/optimized/focaltech.ll
 ; linux/optimized/fork.ll
-; linux/optimized/fs-writeback.ll
 ; linux/optimized/hda_auto_parser.ll
 ; linux/optimized/hdac_stream.ll
 ; linux/optimized/hdmi.ll
@@ -91,8 +93,6 @@
 ; linux/optimized/ldt.ll
 ; linux/optimized/libata-scsi.ll
 ; linux/optimized/lifebook.ll
-; linux/optimized/logips2pp.ll
-; linux/optimized/machine_kexec_64.ll
 ; linux/optimized/md.ll
 ; linux/optimized/ndisc.ll
 ; linux/optimized/net-sysfs.ll
@@ -139,7 +139,6 @@
 ; llvm/optimized/LTO.cpp.ll
 ; llvm/optimized/LazyValueInfo.cpp.ll
 ; llvm/optimized/ODRHash.cpp.ll
-; llvm/optimized/RawCommentList.cpp.ll
 ; llvm/optimized/SCCPSolver.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
 ; llvm/optimized/SemaARM.cpp.ll
@@ -160,6 +159,14 @@
 ; luajit/optimized/lj_debug.ll
 ; luajit/optimized/lj_debug_dyn.ll
 ; luau/optimized/AssemblyBuilderX64.cpp.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_bar.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_draw_image.ll
+; lvgl/optimized/lv_draw_rect.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_menu.ll
+; lvgl/optimized/lv_span.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; minetest/optimized/CSkinnedMesh.cpp.ll
 ; minetest/optimized/guiChatConsole.cpp.ll
@@ -169,10 +176,6 @@
 ; nghttp2/optimized/llhttp.c.ll
 ; nghttp2/optimized/nghttp2_session.c.ll
 ; nghttp2/optimized/nghttp2_stream.c.ll
-; nuttx/optimized/lib_ferror.c.ll
-; nuttx/optimized/pthread_mutexattr_gettype.c.ll
-; nuttx/optimized/pthread_mutexinit.c.ll
-; nuttx/optimized/task_setcanceltype.c.ll
 ; opencv/optimized/flann_search_dataset.cpp.ll
 ; opencv/optimized/miniflann.cpp.ll
 ; openexr/optimized/ImfDwaCompressor.cpp.ll
@@ -212,7 +215,6 @@
 ; openssl/optimized/quic_newcid_test-bin-quictestlib.ll
 ; openssl/optimized/quic_srt_gen_test-bin-quictestlib.ll
 ; openssl/optimized/quic_stream_test-bin-quic_stream_test.ll
-; openssl/optimized/quic_wire_test-bin-quic_wire_test.ll
 ; openssl/optimized/quicapitest-bin-quictestlib.ll
 ; openssl/optimized/quicfaultstest-bin-quictestlib.ll
 ; openusd/optimized/bakeSkinning.cpp.ll
@@ -232,6 +234,7 @@
 ; php/optimized/xp_socket.ll
 ; php/optimized/zend_dump.ll
 ; php/optimized/zend_inference.ll
+; postgres/optimized/rangetypes_gist.ll
 ; postgres/optimized/regcomp.ll
 ; protobuf/optimized/csharp_message.cc.ll
 ; protobuf/optimized/descriptor.cc.ll

@@ -1,5 +1,5 @@
 
-; 42 occurrences:
+; 44 occurrences:
 ; assimp/optimized/LWOLoader.cpp.ll
 ; assimp/optimized/SplitLargeMeshes.cpp.ll
 ; clamav/optimized/pe_icons.c.ll
@@ -42,6 +42,8 @@
 ; z3/optimized/mpz_matrix.cpp.ll
 ; z3/optimized/substitution.cpp.ll
 ; z3/optimized/upolynomial_factorization.cpp.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000040(i32 %0, i32 %1, i64 %2) #0 {
 entry:

@@ -1,8 +1,7 @@
 
-; 5 occurrences:
+; 4 occurrences:
 ; icu/optimized/rematch.ll
 ; icu/optimized/ustream.ll
-; linux/optimized/rsmisc.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; qemu/optimized/hw_acpi_aml-build.c.ll
 ; Function Attrs: nounwind
@@ -58,7 +57,7 @@ define i16 @func0000000000000034(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl nuw nsw i16 %1, 3
   %3 = add nsw i16 %2, -5
-  %4 = add i16 %3, %0
+  %4 = add i16 %0, %3
   ret i16 %4
 }
 
@@ -74,7 +73,7 @@ define i16 @func000000000000003c(i16 %0, i16 %1) #0 {
 entry:
   %2 = shl nuw nsw i16 %1, 2
   %3 = add nuw nsw i16 %2, 8
-  %4 = add i16 %3, %0
+  %4 = add i16 %0, %3
   ret i16 %4
 }
 

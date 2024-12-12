@@ -18,19 +18,18 @@ func0000000000000010:                   # @func0000000000000010
 	orb	%dil, %al
 	retq
 .LCPI2_0:
-	.long	0x48976760                      # float 310075
-func0000000000000008:                   # @func0000000000000008
-	orl	%esi, %edi
-	vucomiss	.LCPI2_0(%rip), %xmm0
-	seta	%al
-	orb	%dil, %al
-	retq
-.LCPI3_0:
 	.long	0x430c0000                      # float 140
 func0000000000000016:                   # @func0000000000000016
 	orl	%esi, %edi
-	vucomiss	.LCPI3_0(%rip), %xmm0
+	vucomiss	.LCPI2_0(%rip), %xmm0
 	setbe	%al
+	orb	%dil, %al
+	retq
+func0000000000000008:                   # @func0000000000000008
+	vxorps	%xmm1, %xmm1, %xmm1
+	vucomiss	%xmm0, %xmm1
+	seta	%al
+	orl	%esi, %edi
 	orb	%dil, %al
 	retq
 .LCPI4_0:
@@ -78,10 +77,12 @@ func0000000000000014:                   # @func0000000000000014
 	orl	%esi, %edi
 	orb	%dil, %al
 	retq
-func0000000000000002:                   # @func0000000000000002
+.LCPI9_0:
+	.long	0x7f800000                      # float +Inf
+func0000000000000024:                   # @func0000000000000024
+	vucomiss	.LCPI9_0(%rip), %xmm0
+	sete	%al
 	orl	%esi, %edi
-	vucomiss	%xmm0, %xmm0
-	setp	%al
 	orb	%dil, %al
 	retq
 .LCPI10_0:

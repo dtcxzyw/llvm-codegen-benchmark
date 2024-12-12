@@ -18,7 +18,7 @@ define float @func0000000000000003(float %0, float %1) #0 {
 entry:
   %2 = fcmp ult float %1, 0.000000e+00
   %3 = select i1 %2, float -5.000000e-01, float 5.000000e-01
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   ret float %4
 }
 
@@ -32,7 +32,7 @@ define float @func0000000000000004(float %0, float %1) #0 {
 entry:
   %2 = fcmp ogt float %1, 0.000000e+00
   %3 = select i1 %2, float 1.000000e+00, float -1.000000e+00
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   ret float %4
 }
 
@@ -43,7 +43,7 @@ define float @func0000000000000005(float %0, float %1) #0 {
 entry:
   %2 = fcmp ugt float %1, 7.000000e+03
   %3 = select i1 %2, float 0x3FCE5753A0000000, float 0x3FCF3D74E0000000
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   ret float %4
 }
 

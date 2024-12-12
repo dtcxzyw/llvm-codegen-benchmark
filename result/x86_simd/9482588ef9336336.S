@@ -19,3 +19,16 @@ func0000000000000007:                   # @func0000000000000007
 	vpsubd	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
+.LCPI2_0:
+	.quad	5                               # 0x5
+.LCPI2_1:
+	.long	13                              # 0xd
+.LCPI2_2:
+	.long	12                              # 0xc
+func0000000000000063:                   # @func0000000000000063
+	vpcmpnleuq	.LCPI2_0(%rip){1to4}, %ymm1, %k1
+	vpbroadcastd	.LCPI2_1(%rip), %xmm1   # xmm1 = [13,13,13,13]
+	vpbroadcastd	.LCPI2_2(%rip), %xmm1 {%k1} # xmm1 {%k1} = [12,12,12,12]
+	vpsubd	%xmm0, %xmm1, %xmm0
+	vzeroupper
+	retq

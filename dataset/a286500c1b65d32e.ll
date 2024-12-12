@@ -1,5 +1,7 @@
 
-; 15 occurrences:
+; 17 occurrences:
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; bullet3/optimized/btInternalEdgeUtility.ll
 ; cpython/optimized/ceval.ll
 ; icu/optimized/decNumber.ll

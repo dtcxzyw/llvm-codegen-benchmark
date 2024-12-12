@@ -6,6 +6,27 @@ func000000000000006e:                   # @func000000000000006e
 	srli	a1, a1, 32
 	addw	a0, a0, a1
 	ret
+func00000000000000ed:                   # @func00000000000000ed
+	sext.w	a1, a1
+	lui	a2, 732923
+	slli.uw	a2, a2, 1
+	addi	a2, a2, 1403
+	slli	a2, a2, 15
+	addi	a2, a2, 536
+	mul	a1, a1, a2
+	srli	a1, a1, 48
+	addw	a0, a0, a1
+	ret
+.LCPI2_0:
+	.quad	163391164108059                 # 0x949a784bcd1b
+func000000000000000d:                   # @func000000000000000d
+	lui	a2, %hi(.LCPI2_0)
+	ld	a2, %lo(.LCPI2_0)(a2)
+	zext.w	a1, a1
+	mul	a1, a1, a2
+	srli	a1, a1, 46
+	addw	a0, a0, a1
+	ret
 func000000000000006c:                   # @func000000000000006c
 	zext.w	a1, a1
 	li	a2, 103
@@ -13,12 +34,12 @@ func000000000000006c:                   # @func000000000000006c
 	srli	a1, a1, 10
 	addw	a0, a0, a1
 	ret
-func00000000000000ed:                   # @func00000000000000ed
+func00000000000000ef:                   # @func00000000000000ef
 	sext.w	a1, a1
-	lui	a2, 718
-	addiw	a2, a2, -1183
+	lui	a2, 244141
+	addiw	a2, a2, -1536
 	mul	a1, a1, a2
-	srli	a1, a1, 32
+	srli	a1, a1, 23
 	addw	a0, a0, a1
 	ret
 func000000000000008d:                   # @func000000000000008d

@@ -7,7 +7,7 @@
 define i1 @func0000000000000007(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %1, %2
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   %5 = fcmp une float %4, 0.000000e+00
   ret i1 %5
 }
@@ -36,7 +36,7 @@ entry:
 define i1 @func0000000000000008(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %1, %2
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   %5 = fcmp oeq float %4, 0x7FF0000000000000
   ret i1 %5
 }
@@ -50,7 +50,7 @@ entry:
 define i1 @func0000000000000003(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %1, %2
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   %5 = fcmp ult float %4, 0.000000e+00
   ret i1 %5
 }
@@ -102,19 +102,14 @@ entry:
 define i1 @func0000000000000002(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %1, %2
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   %5 = fcmp olt float %4, 0.000000e+00
   ret i1 %5
 }
 
-; 10 occurrences:
+; 5 occurrences:
 ; meshlab/optimized/dirt_utils.cpp.ll
 ; mitsuba3/optimized/mesh.cpp.ll
-; ncnn/optimized/roialign.cpp.ll
-; ncnn/optimized/roialign_x86.cpp.ll
-; ncnn/optimized/roialign_x86_avx.cpp.ll
-; ncnn/optimized/roialign_x86_avx512.cpp.ll
-; ncnn/optimized/roialign_x86_fma.cpp.ll
 ; openusd/optimized/testGfColor.cpp.ll
 ; pbrt-v4/optimized/lights.cpp.ll
 ; pbrt-v4/optimized/shapes.cpp.ll
@@ -122,7 +117,7 @@ entry:
 define i1 @func000000000000000a(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %1, %2
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   %5 = fcmp ole float %4, 1.000000e+00
   ret i1 %5
 }
@@ -221,7 +216,7 @@ entry:
 define i1 @func0000000000000005(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %1, %2
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   %5 = fcmp ugt float %4, 1.000000e+00
   ret i1 %5
 }
@@ -237,7 +232,7 @@ entry:
 define i1 @func000000000000000c(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %1, %2
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   %5 = fcmp oge float %4, -1.000000e+00
   ret i1 %5
 }
@@ -251,19 +246,18 @@ entry:
 define i1 @func0000000000000001(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %1, %2
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   %5 = fcmp uno float %4, 0.000000e+00
   ret i1 %5
 }
 
-; 2 occurrences:
-; openblas/optimized/ieeeck.c.ll
+; 1 occurrences:
 ; opencv/optimized/fast_icp.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000e(float %0, float %1, float %2) #0 {
 entry:
   %3 = fmul float %1, %2
-  %4 = fadd float %3, %0
+  %4 = fadd float %0, %3
   %5 = fcmp ord float %4, 0.000000e+00
   ret i1 %5
 }

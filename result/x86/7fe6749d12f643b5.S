@@ -22,11 +22,11 @@ func000000000000001b:                   # @func000000000000001b
 	movzbl	%dil, %eax
 	addl	%esi, %eax
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000005:                   # @func0000000000000005
 	movzbl	%dil, %eax
 	addl	%esi, %eax
 	retq
-func0000000000000005:                   # @func0000000000000005
+func0000000000000004:                   # @func0000000000000004
 	movzbl	%dil, %eax
 	addl	%esi, %eax
 	retq

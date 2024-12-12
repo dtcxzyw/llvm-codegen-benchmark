@@ -1,5 +1,5 @@
 
-; 60 occurrences:
+; 61 occurrences:
 ; abc/optimized/bdcCore.c.ll
 ; abc/optimized/fraImp.c.ll
 ; abc/optimized/giaResub.c.ll
@@ -42,6 +42,7 @@
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
 ; luau/optimized/CodeGenX64.cpp.ll
+; lvgl/optimized/lv_anim.ll
 ; nuklear/optimized/unity.c.ll
 ; openjdk/optimized/constMethod.ll
 ; openjdk/optimized/methodHandles.ll
@@ -68,7 +69,7 @@ entry:
   ret i32 %3
 }
 
-; 31 occurrences:
+; 30 occurrences:
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/cuddDecomp.c.ll
 ; abc/optimized/ifMap.c.ll
@@ -76,7 +77,6 @@ entry:
 ; hermes/optimized/APInt.cpp.ll
 ; jq/optimized/jv_print.ll
 ; libquic/optimized/a_strex.c.ll
-; libzmq/optimized/ip.cpp.ll
 ; linux/optimized/addrconf.ll
 ; linux/optimized/devinet.ll
 ; linux/optimized/intel_display_power_well.ll

@@ -7,19 +7,10 @@ func0000000000000005:                   # @func0000000000000005
 	leal	7(%rdi), %eax
 	retq
 func0000000000000015:                   # @func0000000000000015
-	addl	$-152, %edx
+	addl	$-1077, %edx                    # imm = 0xFBCB
 	testb	$1, %sil
-	movl	$-151, %eax
+	movl	$-1076, %eax                    # imm = 0xFBCC
 	cmovel	%edx, %eax
 	subl	%eax, %edi
-	leal	27(%rdi), %eax
-	retq
-func0000000000000010:                   # @func0000000000000010
-	andb	$1, %sil
-	notl	%edx
-	xorl	%eax, %eax
-	negb	%sil
-	sbbl	%eax, %eax
-	orl	%edx, %eax
-	leal	1(%rax,%rdi), %eax
+	leal	58(%rdi), %eax
 	retq

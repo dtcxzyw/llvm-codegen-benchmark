@@ -11,6 +11,8 @@ func0000000000000003:                   # @func0000000000000003
 	andn	a0, a1, a0
 	ret
 func0000000000000002:                   # @func0000000000000002
-	li	a1, 7
-	bclr	a0, a1, a0
+	li	a1, 3
+	sllw	a0, a1, a0
+	li	a1, -4
+	andn	a0, a1, a0
 	ret

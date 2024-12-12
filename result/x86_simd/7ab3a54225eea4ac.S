@@ -75,9 +75,9 @@ func0000000000000059:                   # @func0000000000000059
 	vpor	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
-func0000000000000010:                   # @func0000000000000010
+func0000000000000018:                   # @func0000000000000018
 	vpmovqd	%ymm1, %xmm1
-	vpslld	$20, %xmm1, %xmm1
+	vpslld	$8, %xmm1, %xmm1
 	vpmovqd	%ymm0, %xmm0
 	vpor	%xmm0, %xmm1, %xmm0
 	vzeroupper

@@ -1,59 +1,36 @@
-func00000000000000c4:                   // @func00000000000000c4
+func0000000000000184:                   // @func0000000000000184
 // %bb.0:                               // %entry
-	ushll	v4.4s, v4.4h, #0
-	mov	w8, #32                         // =0x20
-	uaddw2	v3.2d, v3.2d, v4.4s
-	uaddw	v2.2d, v2.2d, v4.2s
-	dup	v4.2d, x8
-	add	v2.2d, v2.2d, v4.2d
-	add	v3.2d, v3.2d, v4.2d
-	cmhi	v1.2d, v1.2d, v3.2d
-	cmhi	v0.2d, v0.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+                                        // kill: def $w2 killed $w2 def $x2
+	add	x8, x1, w2, uxth
+	add	x8, x8, #32
+	cmp	x8, x0
+	cset	w0, lo
 	ret
                                         // -- End function
-func00000000000000f8:                   // @func00000000000000f8
+func00000000000001e8:                   // @func00000000000001e8
 // %bb.0:                               // %entry
-	ushll	v4.4s, v4.4h, #0
-	mov	w8, #30                         // =0x1e
-	uaddw2	v3.2d, v3.2d, v4.4s
-	uaddw	v2.2d, v2.2d, v4.2s
-	dup	v4.2d, x8
-	add	v2.2d, v2.2d, v4.2d
-	add	v3.2d, v3.2d, v4.2d
-	cmhi	v1.2d, v3.2d, v1.2d
-	cmhi	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+                                        // kill: def $w2 killed $w2 def $x2
+	add	x8, x1, w2, uxth
+	add	x8, x8, #4
+	cmp	x8, x0
+	cset	w0, hi
 	ret
                                         // -- End function
-func0000000000000044:                   // @func0000000000000044
+func0000000000000084:                   // @func0000000000000084
 // %bb.0:                               // %entry
-	ushll	v4.4s, v4.4h, #0
-	movi	v5.2d, #0xffffffffffffffff
-	uaddw2	v3.2d, v3.2d, v4.4s
-	uaddw	v2.2d, v2.2d, v4.2s
-	add	v2.2d, v2.2d, v5.2d
-	add	v3.2d, v3.2d, v5.2d
-	cmhi	v1.2d, v1.2d, v3.2d
-	cmhi	v0.2d, v0.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+                                        // kill: def $w2 killed $w2 def $x2
+	add	x8, x1, w2, uxth
+	sub	x8, x8, #1
+	cmp	x8, x0
+	cset	w0, lo
 	ret
                                         // -- End function
-func00000000000000f4:                   // @func00000000000000f4
+func0000000000000088:                   // @func0000000000000088
 // %bb.0:                               // %entry
-	ushll	v4.4s, v4.4h, #0
-	mov	w8, #14                         // =0xe
-	uaddw2	v3.2d, v3.2d, v4.4s
-	uaddw	v2.2d, v2.2d, v4.2s
-	dup	v4.2d, x8
-	add	v2.2d, v2.2d, v4.2d
-	add	v3.2d, v3.2d, v4.2d
-	cmhi	v1.2d, v1.2d, v3.2d
-	cmhi	v0.2d, v0.2d, v2.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+                                        // kill: def $w2 killed $w2 def $x2
+	add	x8, x1, w2, uxth
+	sub	x8, x8, #16
+	cmp	x8, x0
+	cset	w0, hi
 	ret
                                         // -- End function

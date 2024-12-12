@@ -1,7 +1,13 @@
 
-; 15 occurrences:
+; 21 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; cpython/optimized/dtoa.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
+; hermes/optimized/dtoa.c.ll
+; jq/optimized/jv_dtoa.ll
+; libquic/optimized/dtoa.cc.ll
 ; libquic/optimized/ssl_test.cc.ll
 ; linux/optimized/ibs.ll
 ; llvm/optimized/BasicAliasAnalysis.cpp.ll
@@ -25,16 +31,17 @@ entry:
   ret i1 %6
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; llvm/optimized/AArch64PreLegalizerCombiner.cpp.ll
 ; llvm/optimized/CGClass.cpp.ll
 ; llvm/optimized/MachineRegisterInfo.cpp.ll
 ; llvm/optimized/MachineVerifier.cpp.ll
+; qemu/optimized/tcg.c.ll
 ; yosys/optimized/verilog_backend.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000c(i1 %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, 4294967295
+  %3 = and i64 %2, 102631199
   %4 = icmp ne i64 %3, 0
   %5 = select i1 %1, i1 %4, i1 false
   %6 = select i1 %5, i1 %0, i1 false

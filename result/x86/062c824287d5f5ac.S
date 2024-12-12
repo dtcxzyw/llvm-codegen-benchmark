@@ -1,11 +1,11 @@
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	leal	1(%rdx), %eax
 	cltd
 	idivl	%esi
 	cmpl	%edi, %eax
 	setl	%al
 	retq
-func0000000000000024:                   # @func0000000000000024
+func0000000000000044:                   # @func0000000000000044
 	leal	-1(%rdx), %eax
 	cltd
 	idivl	%esi

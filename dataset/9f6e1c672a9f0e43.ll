@@ -4,7 +4,7 @@
 ; openssl/optimized/libcrypto-lib-bn_mont.ll
 ; openssl/optimized/libcrypto-shlib-bn_mont.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000098(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i1
   %3 = icmp ne i64 %0, 0
@@ -54,6 +54,18 @@ define i1 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i1
   %3 = icmp ne i64 %0, 3
+  %4 = or i1 %3, %2
+  ret i1 %4
+}
+
+; 2 occurrences:
+; zed-rs/optimized/58eqxolkuiavjghtj45u3c5th.ll
+; zed-rs/optimized/exs06pxuzkdidwvzya8luo4wf.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000082(i64 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw i64 %1 to i1
+  %3 = icmp eq i64 %0, 0
   %4 = or i1 %3, %2
   ret i1 %4
 }

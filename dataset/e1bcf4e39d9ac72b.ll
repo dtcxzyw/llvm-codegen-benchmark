@@ -35,7 +35,7 @@ entry:
 ; wasmedge/optimized/refInstr.cpp.ll
 ; wasmedge/optimized/validator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000041(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = select i1 %1, i32 %3, i32 1
@@ -46,7 +46,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/dauNpn2.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i32 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000066(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = select i1 %1, i32 %3, i32 0
@@ -70,7 +70,7 @@ entry:
 ; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
 ; recastnavigation/optimized/RecastMesh.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
   %4 = select i1 %1, i32 %3, i32 0
@@ -81,7 +81,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/rtp_player_dialog.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
   %4 = select i1 %1, i32 %3, i32 0
@@ -92,7 +92,7 @@ entry:
 ; 1 occurrences:
 ; node/optimized/libnode.node_errors.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000026(i32 %0, i1 %1, i64 %2) #0 {
+define i1 @func0000000000000046(i32 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
   %4 = select i1 %1, i32 %3, i32 0

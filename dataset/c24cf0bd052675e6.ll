@@ -18,8 +18,9 @@ entry:
   ret i16 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; typst-rs/optimized/1ojadsqfk0rsifsx.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:

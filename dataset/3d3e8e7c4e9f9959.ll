@@ -5,12 +5,12 @@
 define i32 @func0000000000000000(i8 %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %1, 4
-  %3 = add i8 %2, %0
+  %3 = add i8 %0, %2
   %4 = zext i8 %3 to i32
   ret i32 %4
 }
 
-; 13 occurrences:
+; 12 occurrences:
 ; flac/optimized/metadata_iterators.c.ll
 ; linux/optimized/drm_edid.ll
 ; oiio/optimized/DPXHeader.cpp.ll
@@ -18,7 +18,6 @@ entry:
 ; wireshark/optimized/packet-diameter_3gpp.c.ll
 ; wireshark/optimized/packet-dvbci.c.ll
 ; wireshark/optimized/packet-etsi_card_app_toolkit.c.ll
-; wireshark/optimized/packet-gprscdr.c.ll
 ; wireshark/optimized/packet-gsm_a_dtap.c.ll
 ; wireshark/optimized/packet-gsm_sms.c.ll
 ; wireshark/optimized/packet-gtp.c.ll
@@ -28,7 +27,7 @@ entry:
 define i32 @func0000000000000007(i8 %0, i8 %1) #0 {
 entry:
   %2 = lshr i8 %1, 4
-  %3 = add nuw nsw i8 %2, %0
+  %3 = add nuw nsw i8 %0, %2
   %4 = zext nneg i8 %3 to i32
   ret i32 %4
 }

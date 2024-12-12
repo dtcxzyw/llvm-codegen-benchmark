@@ -11,10 +11,9 @@ entry:
   ret i32 %6
 }
 
-; 6 occurrences:
+; 5 occurrences:
+; boost/optimized/gregorian.ll
 ; libquic/optimized/time_support.c.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; protobuf/optimized/unparser.cc.ll
 ; ruby/optimized/time.ll
 ; sqlite/optimized/sqlite3.ll

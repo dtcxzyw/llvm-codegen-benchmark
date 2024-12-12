@@ -5,5 +5,5 @@ func00000000000000df:                   # @func00000000000000df
 	lui	a0, 1048574
 	vadd.vx	v10, v10, a0
 	vor.vv	v10, v12, v10
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret

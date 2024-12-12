@@ -1,5 +1,8 @@
 
-; 136 occurrences:
+; 138 occurrences:
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/src.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; c3c/optimized/llvm_codegen_expr.c.ll
 ; cmake/optimized/lzma_decoder.c.ll
@@ -25,7 +28,6 @@
 ; libpng/optimized/png.c.ll
 ; linux/optimized/blk-flush.ll
 ; linux/optimized/ccm.ll
-; linux/optimized/ctr.ll
 ; linux/optimized/devinet.ll
 ; linux/optimized/dm-stripe.ll
 ; linux/optimized/drm_dp_mst_topology.ll
@@ -144,8 +146,10 @@ entry:
   ret i64 %2
 }
 
-; 50 occurrences:
+; 52 occurrences:
 ; arrow/optimized/bitmap_ops.cc.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/init_from_settings.ll
 ; casadi/optimized/cvodea.c.ll
 ; casadi/optimized/idaa.c.ll
 ; cmake/optimized/md4.c.ll

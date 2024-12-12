@@ -50,6 +50,10 @@ func00000000000000e0:                   # @func00000000000000e0
 	leal	(%rdx,%rdi), %eax
 	addl	%esi, %eax
 	retq
+func0000000000000004:                   # @func0000000000000004
+	leal	(%rdx,%rdi), %eax
+	addl	%esi, %eax
+	retq
 func0000000000000070:                   # @func0000000000000070
 	leal	(%rdx,%rdi), %eax
 	addl	%esi, %eax

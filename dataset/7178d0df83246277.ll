@@ -1,5 +1,6 @@
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/area_sph_geo.ll
 ; brotli/optimized/block_splitter.c.ll
 ; minetest/optimized/game.cpp.ll
 ; openjdk/optimized/cmspcs.ll

@@ -1,5 +1,6 @@
 
-; 177 occurrences:
+; 178 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/chrono-test.cc.ll
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/enforce-checks-test.cc.ll
@@ -186,6 +187,19 @@ entry:
   ret i64 %4
 }
 
+; 3 occurrences:
+; boost/optimized/to_chars.ll
+; libsodium/optimized/libsodium_la-ed25519_ref10.ll
+; libsodium/optimized/libsse2_la-poly1305_sse2.ll
+; Function Attrs: nounwind
+define i64 @func000000000000003f(i64 %0, i128 %1) #0 {
+entry:
+  %2 = trunc nuw nsw i128 %1 to i64
+  %3 = mul nuw nsw i64 %2, 4194967296
+  %4 = add nuw nsw i64 %3, %0
+  ret i64 %4
+}
+
 ; 7 occurrences:
 ; cpython/optimized/crt.ll
 ; libquic/optimized/poly1305_vec.c.ll
@@ -200,18 +214,6 @@ entry:
   %2 = trunc i128 %1 to i64
   %3 = mul i64 %2, 5
   %4 = add i64 %3, %0
-  ret i64 %4
-}
-
-; 2 occurrences:
-; libsodium/optimized/libsodium_la-ed25519_ref10.ll
-; libsodium/optimized/libsse2_la-poly1305_sse2.ll
-; Function Attrs: nounwind
-define i64 @func000000000000003f(i64 %0, i128 %1) #0 {
-entry:
-  %2 = trunc nuw nsw i128 %1 to i64
-  %3 = mul nuw nsw i64 %2, 19
-  %4 = add nuw nsw i64 %3, %0
   ret i64 %4
 }
 

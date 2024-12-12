@@ -1,5 +1,5 @@
 
-; 174 occurrences:
+; 183 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/acecRe.c.ll
 ; abc/optimized/cbaReadVer.c.ll
@@ -16,6 +16,7 @@
 ; abc/optimized/wlnObj.c.ll
 ; abc/optimized/wlnWlc.c.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
+; boost/optimized/message.ll
 ; bullet3/optimized/btDeformableBodySolver.ll
 ; bullet3/optimized/btMiniSDF.ll
 ; bullet3/optimized/btSoftBody.ll
@@ -57,6 +58,9 @@
 ; llvm/optimized/MCAssembler.cpp.ll
 ; llvm/optimized/PDBStringTableBuilder.cpp.ll
 ; llvm/optimized/X86InterleavedAccess.cpp.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_circle_buf.ll
+; lvgl/optimized/lv_roller.ll
 ; meshlab/optimized/trackmode.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/multijitter.cpp.ll
@@ -174,6 +178,11 @@
 ; z3/optimized/smt_model_finder.cpp.ll
 ; z3/optimized/theory_special_relations.cpp.ll
 ; z3/optimized/value_generator.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
+; zed-rs/optimized/8mr81aw0ctvqdrbyiysor7awe.ll
+; zed-rs/optimized/ddwqyvi7204z7yxly1a7n0b57.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:

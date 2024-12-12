@@ -1,4 +1,4 @@
-func00000000000001fe:                   # @func00000000000001fe
+func00000000000001ff:                   # @func00000000000001ff
 	zext.h	a2, a2
 	sh1add	a1, a2, a2
 	sh3add	a0, a1, a0

@@ -6,10 +6,10 @@
 ; luau/optimized/lstrlib.cpp.ll
 ; redis/optimized/lstrlib.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(i32 %0, i32 %1, i1 %2) #0 {
+define i1 @func00000000000000e1(i32 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = icmp eq i32 %1, 0
-  %4 = and i1 %3, %2
+  %4 = and i1 %2, %3
   %5 = select i1 %4, i32 1, i32 %1
   %6 = add nuw nsw i32 %0, 1
   %7 = icmp eq i32 %6, %5

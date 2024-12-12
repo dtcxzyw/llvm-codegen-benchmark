@@ -1,6 +1,0 @@
-func0000000000000010:                   # @func0000000000000010
-	subq	%rdx, %rsi
-	leaq	-130(%rsi), %rax
-	cmpq	%rax, %rdi
-	cmovbq	%rdi, %rax
-	retq

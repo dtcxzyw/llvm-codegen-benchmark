@@ -1,4 +1,4 @@
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	bseti	a0, zero, 63
 	vsetivli	zero, 4, e64, m2, ta, ma
 	vrsub.vx	v12, v12, a0

@@ -14,19 +14,6 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/intel_audio.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000000(i32 %0, i16 %1) #0 {
-entry:
-  %2 = zext i16 %1 to i32
-  %3 = mul i32 %2, 192000
-  %4 = mul i32 %0, 1000
-  %5 = add i32 %4, -1
-  %6 = add i32 %5, %3
-  ret i32 %6
-}
-
-; 1 occurrences:
 ; opencv/optimized/color_rgb.dispatch.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func00000000000001ff(i32 %0, i16 %1) #0 {

@@ -18,7 +18,7 @@ entry:
 ; libquic/optimized/dtoa.cc.ll
 ; php/optimized/zend_strtod.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i1 %0, double %1) #0 {
+define i1 @func0000000000000028(i1 %0, double %1) #0 {
 entry:
   %2 = fptosi double %1 to i32
   %3 = sext i1 %0 to i32

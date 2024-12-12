@@ -19,6 +19,11 @@ func0000000000000008:                   # @func0000000000000008
 	cmpq	$4096, %rdi                     # imm = 0x1000
 	cmovaeq	%rdi, %rax
 	retq
+func0000000000000014:                   # @func0000000000000014
+	movq	%rsi, %rax
+	cmpq	$3, %rdi
+	cmovbq	%rdi, %rax
+	retq
 func0000000000000006:                   # @func0000000000000006
 	movq	%rsi, %rax
 	testq	%rdi, %rdi

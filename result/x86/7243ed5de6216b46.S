@@ -5,7 +5,7 @@ func0000000000000002:                   # @func0000000000000002
 	vmulsd	.LCPI0_0(%rip), %xmm0, %xmm0
 	retq
 .LCPI1_0:
-	.quad	0x3ddb7cdfd9d7bdbb              # double 1.0E-10
+	.quad	0x3cb0000000000000              # double 2.2204460492503131E-16
 func0000000000000004:                   # @func0000000000000004
 	vmaxsd	%xmm1, %xmm0, %xmm0
 	vmulsd	.LCPI1_0(%rip), %xmm0, %xmm0

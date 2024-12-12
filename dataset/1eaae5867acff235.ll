@@ -1,5 +1,7 @@
 
-; 21 occurrences:
+; 24 occurrences:
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; coreutils-rs/optimized/11lwsmxswp4jsl8v.ll
 ; coreutils-rs/optimized/whotp6m83kkoazv.ll
 ; cpython/optimized/basearith.ll
@@ -21,12 +23,13 @@
 ; quickjs/optimized/libbf.ll
 ; rocksdb/optimized/compaction_picker.cc.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i128 %1, i128 %2) #0 {
+define i1 @func0000000000000104(i64 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = mul nuw i128 %1, %2
   %4 = trunc i128 %3 to i64
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
@@ -64,33 +67,33 @@ entry:
 ; openspiel/optimized/mcts.cc.ll
 ; rocksdb/optimized/compaction_picker.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i128 %1, i128 %2) #0 {
+define i1 @func0000000000000108(i64 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = mul nuw i128 %1, %2
   %4 = trunc i128 %3 to i64
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i128 %1, i128 %2) #0 {
+define i1 @func0000000000000184(i64 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = mul nuw nsw i128 %1, %2
   %4 = trunc i128 %3 to i64
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; abseil-cpp/optimized/cord_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0, i128 %1, i128 %2) #0 {
+define i1 @func0000000000000188(i64 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = mul nuw nsw i128 %1, %2
   %4 = trunc i128 %3 to i64
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 

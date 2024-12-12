@@ -2,7 +2,6 @@
 ; 12 occurrences:
 ; linux/optimized/amd_bus.ll
 ; linux/optimized/amdtopology.ll
-; linux/optimized/mmconf-fam10h_64.ll
 ; llvm/optimized/Decl.cpp.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; mold/optimized/arch-i386.cc.ll
@@ -10,6 +9,7 @@
 ; openusd/optimized/faceVertex.cpp.ll
 ; snappy/optimized/snappy.cc.ll
 ; softposit-rs/optimized/m1vpptg00bzmp9y.ll
+; turborepo-rs/optimized/3wg34qzs64td8o5fq33fcg5rk.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; wireshark/optimized/packet-hartip.c.ll
 ; Function Attrs: nounwind

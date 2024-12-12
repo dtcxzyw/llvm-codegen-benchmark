@@ -11,8 +11,9 @@ entry:
   ret i32 %1
 }
 
-; 21 occurrences:
+; 24 occurrences:
 ; abc/optimized/mpmMap.c.ll
+; boost/optimized/area.ll
 ; icu/optimized/ucptrie.ll
 ; libjpeg-turbo/optimized/jdsample.c.ll
 ; libwebp/optimized/enc.c.ll
@@ -20,6 +21,7 @@ entry:
 ; linux/optimized/mpicoder.ll
 ; linux/optimized/vlv_dsi.ll
 ; meilisearch-rs/optimized/3f4k2xees4fvt0r.ll
+; openjdk/optimized/classFileParser.ll
 ; openjdk/optimized/jdsample.ll
 ; openjdk/optimized/oopMapCache.ll
 ; openssl/optimized/libcrypto-lib-bn_conv.ll
@@ -33,6 +35,7 @@ entry:
 ; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
 ; tree-sitter-rs/optimized/42mwgpotg9phq80h.ll
 ; wolfssl/optimized/keys.c.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001e(i32 %0) #0 {
 entry:

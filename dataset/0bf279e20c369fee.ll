@@ -13,11 +13,12 @@ entry:
   ret i16 %3
 }
 
-; 8 occurrences:
+; 9 occurrences:
 ; abc/optimized/trees.c.ll
 ; cmake/optimized/trees.c.ll
 ; gromacs/optimized/trees.c.ll
 ; libquic/optimized/trees.c.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
 ; qemu/optimized/target_riscv_vcrypto_helper.c.ll
 ; spike/optimized/vbrev8_v.ll
 ; spike/optimized/vbrev_v.ll
@@ -30,7 +31,8 @@ entry:
   ret i16 %3
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; boost/optimized/h16_rule.ll
 ; llvm/optimized/ASTWriter.cpp.ll
 ; qemu/optimized/virtio.c.ll
 ; Function Attrs: nounwind
@@ -42,6 +44,7 @@ entry:
 }
 
 ; 8 occurrences:
+; boost/optimized/h16_rule.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; imgui/optimized/imgui_draw.cpp.ll
 ; nori/optimized/nanovg.c.ll
@@ -49,12 +52,11 @@ entry:
 ; raylib/optimized/rtext.c.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; stb/optimized/stb_truetype.c.ll
-; wireshark/optimized/ftype-ieee-11073-float.c.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000006(i16 %0, i16 %1) #0 {
 entry:
   %2 = or disjoint i16 %0, %1
-  %3 = shl nuw i16 %2, 1
+  %3 = shl nuw i16 %2, 4
   ret i16 %3
 }
 

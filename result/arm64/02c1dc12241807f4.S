@@ -1,4 +1,4 @@
-func0000000000000aa4:                   // @func0000000000000aa4
+func0000000000001fe4:                   // @func0000000000001fe4
 // %bb.0:                               // %entry
 	add	x8, x0, x2
 	add	x9, x0, x1
@@ -18,7 +18,7 @@ func0000000000000004:                   // @func0000000000000004
 	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000884:                   // @func0000000000000884
+func0000000000001564:                   // @func0000000000001564
 // %bb.0:                               // %entry
 	add	x8, x0, x2
 	add	x9, x0, x1
@@ -28,12 +28,52 @@ func0000000000000884:                   // @func0000000000000884
 	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000aa1:                   // @func0000000000000aa1
+func0000000000001764:                   // @func0000000000001764
+// %bb.0:                               // %entry
+	add	x8, x0, x2
+	add	x9, x0, x1
+	sub	x8, x8, #8
+	add	x9, x9, #3
+	cmp	x9, x8
+	cset	w0, lo
+	ret
+                                        // -- End function
+func0000000000001561:                   // @func0000000000001561
 // %bb.0:                               // %entry
 	add	x8, x0, x2
 	add	x9, x0, x1
 	sub	x8, x8, #1
 	add	x9, x9, #1
+	cmp	x9, x8
+	cset	w0, eq
+	ret
+                                        // -- End function
+func0000000000001f64:                   // @func0000000000001f64
+// %bb.0:                               // %entry
+	add	x8, x0, x2
+	add	x9, x0, x1
+	sub	x8, x8, #1
+	add	x9, x9, #5
+	cmp	x9, x8
+	cset	w0, lo
+	ret
+                                        // -- End function
+func0000000000001d64:                   // @func0000000000001d64
+// %bb.0:                               // %entry
+	add	x8, x0, x2
+	add	x9, x0, x1
+	sub	x8, x8, #7
+	add	x9, x9, #8
+	cmp	x9, x8
+	cset	w0, lo
+	ret
+                                        // -- End function
+func00000000000015c1:                   // @func00000000000015c1
+// %bb.0:                               // %entry
+	add	x8, x0, x2, lsl #3
+	add	x9, x0, x1, lsl #3
+	add	x8, x8, #8
+	sub	x9, x9, #8
 	cmp	x9, x8
 	cset	w0, eq
 	ret

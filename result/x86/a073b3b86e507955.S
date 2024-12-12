@@ -1,8 +1,3 @@
-func0000000000000011:                   # @func0000000000000011
-	cmpl	%esi, %edi
-	movl	$1, %eax
-	cmovbel	%edi, %eax
-	retq
 func0000000000000002:                   # @func0000000000000002
 	xorl	%eax, %eax
 	cmpl	%esi, %edi
@@ -19,6 +14,11 @@ func0000000000000008:                   # @func0000000000000008
 	cmovael	%edi, %eax
 	retq
 func0000000000000010:                   # @func0000000000000010
+	xorl	%eax, %eax
+	cmpl	%esi, %edi
+	cmovbel	%edi, %eax
+	retq
+func0000000000000011:                   # @func0000000000000011
 	xorl	%eax, %eax
 	cmpl	%esi, %edi
 	cmovbel	%edi, %eax

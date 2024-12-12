@@ -1,5 +1,5 @@
 
-; 2679 occurrences:
+; 2680 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/FxchMan.c.ll
@@ -57,7 +57,6 @@
 ; abc/optimized/satSolver.c.ll
 ; abc/optimized/satSolver2.c.ll
 ; abc/optimized/satSolver3.c.ll
-; abc/optimized/satUtil.c.ll
 ; abc/optimized/sbdCore.c.ll
 ; abc/optimized/sfmDec.c.ll
 ; abc/optimized/solver.c.ll
@@ -185,6 +184,18 @@
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
 ; assimp/optimized/mesh_splitter.cpp.ll
+; boost/optimized/basic_iarchive.ll
+; boost/optimized/boundary.ll
+; boost/optimized/codepage.ll
+; boost/optimized/collator.ll
+; boost/optimized/conversion.ll
+; boost/optimized/core.ll
+; boost/optimized/default_filter_factory.ll
+; boost/optimized/format_parser.ll
+; boost/optimized/numeric.ll
+; boost/optimized/positional_options.ll
+; boost/optimized/range.ll
+; boost/optimized/work_stealing.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
 ; bullet3/optimized/b3OverlappingPairCache.ll
 ; bullet3/optimized/btOverlappingPairCache.ll
@@ -195,6 +206,7 @@
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
 ; ceres/optimized/block_jacobian_writer.cc.ll
 ; ceres/optimized/block_random_access_dense_matrix.cc.ll
+; ceres/optimized/block_random_access_diagonal_matrix.cc.ll
 ; ceres/optimized/block_random_access_sparse_matrix.cc.ll
 ; ceres/optimized/compressed_col_sparse_matrix_utils.cc.ll
 ; ceres/optimized/compressed_row_jacobian_writer.cc.ll
@@ -264,7 +276,6 @@
 ; ceres/optimized/thread_pool.cc.ll
 ; ceres/optimized/triplet_sparse_matrix.cc.ll
 ; ceres/optimized/visibility_based_preconditioner.cc.ll
-; clamav/optimized/filcreat.cpp.ll
 ; cmake/optimized/EncodingCXX.cxx.ll
 ; cmake/optimized/cmCTestCoverageHandler.cxx.ll
 ; cmake/optimized/cmDebuggerThread.cxx.ll
@@ -426,9 +437,11 @@
 ; duckdb/optimized/ub_duckdb_main.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; eastl/optimized/BenchmarkHash.cpp.ll
+; eastl/optimized/BenchmarkSort.cpp.ll
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; eastl/optimized/TestFixedHash.cpp.ll
 ; eastl/optimized/TestHash.cpp.ll
+; eastl/optimized/TestSort.cpp.ll
 ; entt/optimized/organizer.cpp.ll
 ; entt/optimized/snapshot.cpp.ll
 ; faiss/optimized/AuxIndexStructures.cpp.ll
@@ -453,7 +466,6 @@
 ; fmt/optimized/ostream-test.cc.ll
 ; folly/optimized/AsyncFdSocket.cpp.ll
 ; folly/optimized/RecordIO.cpp.ll
-; folly/optimized/SSLContext.cpp.ll
 ; freetype/optimized/cff.c.ll
 ; freetype/optimized/psaux.c.ll
 ; freetype/optimized/psnames.c.ll
@@ -574,7 +586,6 @@
 ; gromacs/optimized/distribute.cpp.ll
 ; gromacs/optimized/domdec.cpp.ll
 ; gromacs/optimized/domdec_constraints.cpp.ll
-; gromacs/optimized/domdec_network.cpp.ll
 ; gromacs/optimized/domdec_setup.cpp.ll
 ; gromacs/optimized/domdec_specatomcomm.cpp.ll
 ; gromacs/optimized/domdec_vsite.cpp.ll
@@ -586,7 +597,6 @@
 ; gromacs/optimized/findallgputasks.cpp.ll
 ; gromacs/optimized/forcefieldparameters.cpp.ll
 ; gromacs/optimized/forcerec.cpp.ll
-; gromacs/optimized/frameaverager.cpp.ll
 ; gromacs/optimized/freeenergydispatch.cpp.ll
 ; gromacs/optimized/gmx_awh.cpp.ll
 ; gromacs/optimized/gmx_cluster.cpp.ll
@@ -864,7 +874,6 @@
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
 ; linux/optimized/devinet.ll
 ; linux/optimized/filter.ll
-; linux/optimized/input-mt.ll
 ; linux/optimized/input.ll
 ; linux/optimized/intel_engine_cs.ll
 ; linux/optimized/intel_execlists_submission.ll
@@ -1178,7 +1187,6 @@
 ; llvm/optimized/RDFGraph.cpp.ll
 ; llvm/optimized/RDFRegisters.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVRegisterInfo.cpp.ll
 ; llvm/optimized/RealtimeSanitizer.cpp.ll
@@ -1367,6 +1375,7 @@
 ; luau/optimized/lvmexecute.cpp.ll
 ; luau/optimized/lvmutils.cpp.ll
 ; luau/optimized/main.cpp.ll
+; lvgl/optimized/lv_font_fmt_txt.ll
 ; meshlab/optimized/Scanner.cpp.ll
 ; meshlab/optimized/TexturePainter.cpp.ll
 ; meshlab/optimized/VisibilityCheck.cpp.ll
@@ -1393,7 +1402,6 @@
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; meshlab/optimized/filter_layer.cpp.ll
@@ -1463,7 +1471,6 @@
 ; minetest/optimized/CSceneManager.cpp.ll
 ; minetest/optimized/CSkinnedMesh.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/cavegen.cpp.ll
 ; minetest/optimized/chat.cpp.ll
 ; minetest/optimized/clientmap.cpp.ll
@@ -1674,7 +1681,6 @@
 ; ocio/optimized/FileFormatHDL.cpp.ll
 ; ocio/optimized/FileFormatIridasLook.cpp.ll
 ; ocio/optimized/FileRules.cpp.ll
-; ocio/optimized/FileTransform.cpp.ll
 ; ocio/optimized/FormatMetadata.cpp.ll
 ; ocio/optimized/GpuShaderDesc.cpp.ll
 ; ocio/optimized/GradingBSplineCurve.cpp.ll
@@ -2173,7 +2179,6 @@
 ; postgres/optimized/dict_thesaurus.ll
 ; postgres/optimized/formatting.ll
 ; postgres/optimized/heapam.ll
-; postgres/optimized/heapdesc.ll
 ; postgres/optimized/list.ll
 ; postgres/optimized/parse_coerce.ll
 ; postgres/optimized/parse_cte.ll
@@ -2192,10 +2197,7 @@
 ; proj/optimized/c_api.cpp.ll
 ; proj/optimized/coordinatesystem.cpp.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; proj/optimized/proj.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; protobuf/optimized/descriptor.cc.ll
 ; protobuf/optimized/generated_enum_util.cc.ll
@@ -2509,7 +2511,6 @@
 ; yosys/optimized/lattice_gsr.ll
 ; yosys/optimized/liberty.ll
 ; yosys/optimized/log.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/ltp.ll
 ; yosys/optimized/lut2mux.ll
 ; yosys/optimized/maccmap.ll
@@ -2689,7 +2690,7 @@ entry:
   ret i32 %5
 }
 
-; 455 occurrences:
+; 460 occurrences:
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/cecCorr.c.ll
 ; abc/optimized/cecSeq.c.ll
@@ -2705,6 +2706,9 @@ entry:
 ; assimp/optimized/FBXExportProperty.cpp.ll
 ; assimp/optimized/PlyLoader.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
 ; ceres/optimized/block_jacobian_writer.cc.ll
 ; ceres/optimized/block_random_access_sparse_matrix.cc.ll
 ; ceres/optimized/compressed_col_sparse_matrix_utils.cc.ll
@@ -2812,6 +2816,7 @@ entry:
 ; llvm/optimized/CStringChecker.cpp.ll
 ; llvm/optimized/CheckObjCDealloc.cpp.ll
 ; llvm/optimized/CodeGenAction.cpp.ll
+; llvm/optimized/CodeGenDAGPatterns.cpp.ll
 ; llvm/optimized/CodeGenModule.cpp.ll
 ; llvm/optimized/CodeViewDebug.cpp.ll
 ; llvm/optimized/CommandLine.cpp.ll
@@ -3068,6 +3073,7 @@ entry:
 ; opencv/optimized/filter.dispatch.cpp.ll
 ; opencv/optimized/find_ellipses.cpp.ll
 ; opencv/optimized/genericgfpoly.cpp.ll
+; opencv/optimized/graph_cluster.cpp.ll
 ; opencv/optimized/histogramphaseunwrapping.cpp.ll
 ; opencv/optimized/matrix_transform.cpp.ll
 ; opencv/optimized/morph.dispatch.cpp.ll
@@ -3169,8 +3175,9 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/alloc_lib.ll
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
 ; Function Attrs: nounwind

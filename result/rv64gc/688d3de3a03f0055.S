@@ -6,7 +6,7 @@ func00000000000000ab:                   # @func00000000000000ab
 	or	a0, a0, a1
 	addw	a0, a0, a2
 	ret
-func000000000000008b:                   # @func000000000000008b
+func000000000000018b:                   # @func000000000000018b
 	sext.w	a2, a2
 	andi	a0, a0, 1
 	sltiu	a2, a2, 2

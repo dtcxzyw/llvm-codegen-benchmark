@@ -22,20 +22,19 @@ entry:
   ret ptr %5
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; coreutils-rs/optimized/1vrxha14kpfjcqak.ll
 ; coreutils-rs/optimized/jdhpc8bthd0ylxt.ll
 ; delta-rs/optimized/264wku5om6u5pdmz.ll
 ; regex-rs/optimized/1x04d8372kemp7hd.ll
-; rust-analyzer-rs/optimized/kusn7g75uvgw38z.ll
 ; wasmtime-rs/optimized/18flldcd4wnig7ks.ll
 ; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wasmtime-rs/optimized/55kotg5r2nkrpa1d.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(i1 %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr { { { { i64, ptr, {} }, i64 } }, { i32, i32 } }, ptr %1, i64 %2
-  %4 = getelementptr i8, ptr %3, i64 -32
+  %3 = getelementptr i8, ptr %1, i64 %2
+  %4 = getelementptr i8, ptr %3, i64 -1
   %5 = select i1 %0, ptr %4, ptr null
   ret ptr %5
 }

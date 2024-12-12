@@ -1,16 +1,16 @@
-func0000000000000018:                   # @func0000000000000018
-	slli	a2, a2, 62
-	or	a0, a0, a1
-	lui	a1, 64
-	srli	a2, a2, 46
-	or	a0, a0, a1
-	or	a0, a0, a2
-	ret
 func000000000000001f:                   # @func000000000000001f
 	slli	a2, a2, 59
 	or	a0, a0, a1
 	lui	a1, 1044480
 	srli	a2, a2, 56
+	or	a0, a0, a1
+	or	a0, a0, a2
+	ret
+func0000000000000018:                   # @func0000000000000018
+	slli	a2, a2, 62
+	or	a0, a0, a1
+	lui	a1, 4096
+	srli	a2, a2, 41
 	or	a0, a0, a1
 	or	a0, a0, a2
 	ret

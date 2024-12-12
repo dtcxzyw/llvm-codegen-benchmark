@@ -20,7 +20,7 @@ func0000000000000003:                   # @func0000000000000003
 	xori	a0, a0, -3
 	ret
 func0000000000000005:                   # @func0000000000000005
-	slli	a0, a0, 3
-	li	a1, 8
+	slli	a0, a0, 1
+	li	a1, 16
 	subw	a0, a1, a0
 	ret

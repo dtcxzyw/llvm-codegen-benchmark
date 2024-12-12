@@ -1,5 +1,5 @@
 
-; 205 occurrences:
+; 206 occurrences:
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; jq/optimized/regexec.ll
@@ -26,7 +26,6 @@
 ; z3/optimized/bvarray2uf_rewriter.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/cached_var_subst.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/ctx_simplify_tactic.cpp.ll
 ; z3/optimized/ctx_solver_simplify_tactic.cpp.ll
 ; z3/optimized/datalog_parser.cpp.ll
@@ -205,6 +204,8 @@
 ; z3/optimized/used_vars.cpp.ll
 ; z3/optimized/var_subst.cpp.ll
 ; z3/optimized/wmax.cpp.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/2lw35stqiq7glihlnpq83gzrr.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -219,7 +220,7 @@ entry:
 ; openjdk/optimized/jdsample.ll
 ; openspiel/optimized/havannah.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
   %4 = icmp eq i32 %3, %1
@@ -231,7 +232,7 @@ entry:
 ; abc/optimized/plaMan.c.ll
 ; opencv/optimized/keypoint.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000066(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 1
   %4 = icmp slt i32 %3, %1
@@ -267,26 +268,11 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
-; gromacs/optimized/dlaswp.cpp.ll
-; gromacs/optimized/slaswp.cpp.ll
-; openusd/optimized/scale_common.c.ll
-; openusd/optimized/yuv_scale.c.ll
-; zxing/optimized/AZEncoder.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = shl nsw i32 %2, 5
-  %4 = icmp slt i32 %3, %1
-  %5 = select i1 %0, i1 %4, i1 false
-  ret i1 %5
-}
-
 ; 2 occurrences:
 ; gromacs/optimized/matio.cpp.ll
 ; gromacs/optimized/pairlist.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
   %4 = icmp sgt i32 %3, %1
@@ -294,10 +280,23 @@ entry:
   ret i1 %5
 }
 
+; 3 occurrences:
+; openusd/optimized/scale_common.c.ll
+; openusd/optimized/yuv_scale.c.ll
+; zxing/optimized/AZEncoder.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000026(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl nsw i32 %2, 1
+  %4 = icmp slt i32 %3, %1
+  %5 = select i1 %0, i1 %4, i1 false
+  ret i1 %5
+}
+
 ; 1 occurrences:
 ; openusd/optimized/decodeframe.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001b(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002b(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nsw i32 %2, 1
   %4 = icmp sge i32 %3, %1
@@ -308,7 +307,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/decodeframe.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000061(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 1
   %4 = icmp eq i32 %3, %1
@@ -316,11 +315,10 @@ entry:
   ret i1 %5
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; wireshark/optimized/packet-ieee1722.c.ll
-; wireshark/optimized/packet-ipv6.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000035(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000065(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 2
   %4 = icmp ule i32 %3, %1
@@ -328,16 +326,26 @@ entry:
   ret i1 %5
 }
 
-; 4 occurrences:
-; cmake/optimized/archive_read_support_format_rar.c.ll
+; 1 occurrences:
+; wireshark/optimized/packet-ipv6.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000075(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl nuw nsw i32 %2, 2
+  %4 = icmp samesign ule i32 %3, %1
+  %5 = select i1 %0, i1 %4, i1 false
+  ret i1 %5
+}
+
+; 3 occurrences:
 ; linux/optimized/intel_overlay.ll
 ; wireshark/optimized/packet-sna.c.ll
 ; zxing/optimized/ODDataBarReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000078(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %2, 2
-  %4 = icmp ugt i32 %3, %1
+  %4 = icmp samesign ugt i32 %3, %1
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }
@@ -368,7 +376,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/rbt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000044(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 %2, 4
   %4 = icmp ult i32 %3, %1
@@ -384,6 +392,17 @@ define i1 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %2, 3
   %4 = icmp eq i32 %3, %1
+  %5 = select i1 %0, i1 %4, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
+; cmake/optimized/archive_read_support_format_rar.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000068(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = shl nuw nsw i32 %2, 1
+  %4 = icmp ugt i32 %3, %1
   %5 = select i1 %0, i1 %4, i1 false
   ret i1 %5
 }

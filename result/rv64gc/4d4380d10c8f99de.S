@@ -3,9 +3,8 @@ func000000000000006c:                   # @func000000000000006c
 	andi	a0, a0, -64
 	ret
 func0000000000000000:                   # @func0000000000000000
-	addi	a0, a0, 7
-	srli	a0, a0, 2
-	andi	a0, a0, -2
+	addiw	a0, a0, 7
+	andi	a0, a0, -8
 	ret
 func0000000000000020:                   # @func0000000000000020
 	lui	a1, 1

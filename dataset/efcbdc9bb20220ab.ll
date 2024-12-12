@@ -15,10 +15,9 @@ entry:
   ret i1 %5
 }
 
-; 11 occurrences:
+; 10 occurrences:
 ; graphviz/optimized/dotsplines.c.ll
 ; graphviz/optimized/position.c.ll
-; libwebp/optimized/quant_levels_utils.c.ll
 ; opencv/optimized/termination.cpp.ll
 ; openjdk/optimized/MaskFill.ll
 ; openjdk/optimized/ScaledBlit.ll

@@ -1,5 +1,5 @@
 
-; 273 occurrences:
+; 294 occurrences:
 ; abc/optimized/acbPush.c.ll
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
@@ -12,6 +12,13 @@
 ; assimp/optimized/TriangulateProcess.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/numeric.ll
+; boost/optimized/src.ll
+; boost/optimized/syslog_backend.ll
+; boost/optimized/xml_grammar.ll
+; boost/optimized/xml_wgrammar.ll
 ; brotli/optimized/backward_references_hq.c.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; clamav/optimized/readdb.c.ll
@@ -41,6 +48,7 @@
 ; graphviz/optimized/fmtesc.c.ll
 ; graphviz/optimized/shapes.c.ll
 ; gromacs/optimized/expandedensembleelement.cpp.ll
+; gromacs/optimized/gen_vsite.cpp.ll
 ; gromacs/optimized/gmx_bar.cpp.ll
 ; gromacs/optimized/gmx_chi.cpp.ll
 ; gromacs/optimized/gmx_rms.cpp.ll
@@ -79,6 +87,7 @@
 ; llvm/optimized/BreakableToken.cpp.ll
 ; llvm/optimized/CodeGenPrepare.cpp.ll
 ; llvm/optimized/Driver.cpp.ll
+; llvm/optimized/EditedSource.cpp.ll
 ; llvm/optimized/Expr.cpp.ll
 ; llvm/optimized/ExprEngine.cpp.ll
 ; llvm/optimized/LegalizeIntegerTypes.cpp.ll
@@ -87,7 +96,6 @@
 ; llvm/optimized/LivePhysRegs.cpp.ll
 ; llvm/optimized/LoopInterchange.cpp.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/Reassociate.cpp.ll
 ; llvm/optimized/SanitizerBinaryMetadata.cpp.ll
 ; llvm/optimized/SelectionDAG.cpp.ll
@@ -151,6 +159,7 @@
 ; opencv/optimized/arithm.cpp.ll
 ; opencv/optimized/circlesgrid.cpp.ll
 ; opencv/optimized/copy.cpp.ll
+; opencv/optimized/erfilter.cpp.ll
 ; opencv/optimized/fisheye.cpp.ll
 ; opencv/optimized/gapi_core_perf_tests.cpp.ll
 ; opencv/optimized/gnnparsers.cpp.ll
@@ -210,6 +219,7 @@
 ; postgres/optimized/describe.ll
 ; postgres/optimized/heapam.ll
 ; postgres/optimized/launcher.ll
+; postgres/optimized/nbtutils.ll
 ; postgres/optimized/network_selfuncs.ll
 ; postgres/optimized/partbounds.ll
 ; postgres/optimized/pg_basebackup.ll
@@ -229,8 +239,8 @@
 ; redis/optimized/server.ll
 ; redis/optimized/setcpuaffinity.ll
 ; redis/optimized/t_zset.ll
-; rust-analyzer-rs/optimized/3aojx6tzw7bx942t.ll
 ; rust-analyzer-rs/optimized/hajha7nvyoiczny.ll
+; rust-analyzer-rs/optimized/lvm5mow7j40zynh.ll
 ; spike/optimized/csrs.ll
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_voxel_render.c.ll
@@ -272,6 +282,17 @@
 ; z3/optimized/qe_lite_tactic.cpp.ll
 ; z3/optimized/theory_arith.cpp.ll
 ; z3/optimized/theory_array_full.cpp.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1szjr41vjnxcxgyq70q0xb6lv.ll
+; zed-rs/optimized/3hyavwlupfwy674k0u5ll7gv6.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/5eoo2ucj5jjc2zgyn25xa6ig5.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
+; zed-rs/optimized/f4g1cwrteaiub5fsoifj5amxy.ll
 ; zxing/optimized/PDFBoundingBox.cpp.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000000(i1 %0, i1 %1, i1 %2) #0 {

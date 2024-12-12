@@ -1,38 +1,37 @@
 
-%"struct.rocksdb::StatisticsImpl::StatisticsData.2509692" = type { [216 x %"struct.std::atomic.51.2509693"], [61 x %"class.rocksdb::HistogramImpl.2509694"], [24 x i8] }
-%"struct.std::atomic.51.2509693" = type { %"struct.std::__atomic_base.2509695" }
-%"struct.std::__atomic_base.2509695" = type { i64 }
-%"class.rocksdb::HistogramImpl.2509694" = type { %"class.rocksdb::Histogram.2509696", %"struct.rocksdb::HistogramStat.2509697", %"class.std::mutex.2509698" }
-%"class.rocksdb::Histogram.2509696" = type { ptr }
-%"struct.rocksdb::HistogramStat.2509697" = type { %"struct.std::atomic.51.2509693", %"struct.std::atomic.51.2509693", %"struct.std::atomic.51.2509693", %"struct.std::atomic.51.2509693", %"struct.std::atomic.51.2509693", [109 x %"struct.std::atomic.51.2509693"], i64 }
-%"class.std::mutex.2509698" = type { %"class.std::__mutex_base.2509699" }
-%"class.std::__mutex_base.2509699" = type { %union.pthread_mutex_t.2509700 }
-%union.pthread_mutex_t.2509700 = type { %struct.__pthread_mutex_s.2509701 }
-%struct.__pthread_mutex_s.2509701 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.2509702 }
-%struct.__pthread_internal_list.2509702 = type { ptr, ptr }
-%"struct.rocksdb::clock_cache::AutoHyperClockTable::HandleImpl.2514972" = type { %"struct.rocksdb::clock_cache::ClockHandle.2514958", %"class.rocksdb::AcqRelAtomic.2514960", %"class.rocksdb::AcqRelAtomic.2514960" }
-%"struct.rocksdb::clock_cache::ClockHandle.2514958" = type { %"struct.rocksdb::clock_cache::ClockHandleBasicData.2514953", %"class.rocksdb::AcqRelAtomic.2514960" }
-%"struct.rocksdb::clock_cache::ClockHandleBasicData.2514953" = type { ptr, ptr, %"struct.std::array.2514941", i64 }
-%"struct.std::array.2514941" = type { [2 x i64] }
-%"class.rocksdb::AcqRelAtomic.2514960" = type { %"class.rocksdb::RelaxedAtomic.2514961" }
-%"class.rocksdb::RelaxedAtomic.2514961" = type { %"struct.std::atomic.2514962" }
-%"struct.std::atomic.2514962" = type { %"struct.std::__atomic_base.2514963" }
-%"struct.std::__atomic_base.2514963" = type { i64 }
-%"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const std::basic_string_view<char>, mold::elf::ComdatGroup>>, tbb::detail::d1::spin_rw_mutex>::bucket.2523220" = type { %"class.tbb::detail::d1::spin_rw_mutex.2523221", %"struct.std::atomic.109.2523222" }
-%"class.tbb::detail::d1::spin_rw_mutex.2523221" = type { %"struct.std::atomic.107.2523223" }
-%"struct.std::atomic.107.2523223" = type { %"struct.std::__atomic_base.108.2523224" }
-%"struct.std::__atomic_base.108.2523224" = type { i64 }
-%"struct.std::atomic.109.2523222" = type { %"struct.std::__atomic_base.110.2523225" }
-%"struct.std::__atomic_base.110.2523225" = type { ptr }
-%"class.std::complex.2726875" = type { { double, double } }
+%"struct.rocksdb::StatisticsImpl::StatisticsData.2624843" = type { [216 x %"struct.std::atomic.51.2624844"], [61 x %"class.rocksdb::HistogramImpl.2624845"], [24 x i8] }
+%"struct.std::atomic.51.2624844" = type { %"struct.std::__atomic_base.2624846" }
+%"struct.std::__atomic_base.2624846" = type { i64 }
+%"class.rocksdb::HistogramImpl.2624845" = type { %"class.rocksdb::Histogram.2624847", %"struct.rocksdb::HistogramStat.2624848", %"class.std::mutex.2624849" }
+%"class.rocksdb::Histogram.2624847" = type { ptr }
+%"struct.rocksdb::HistogramStat.2624848" = type { %"struct.std::atomic.51.2624844", %"struct.std::atomic.51.2624844", %"struct.std::atomic.51.2624844", %"struct.std::atomic.51.2624844", %"struct.std::atomic.51.2624844", [109 x %"struct.std::atomic.51.2624844"], i64 }
+%"class.std::mutex.2624849" = type { %"class.std::__mutex_base.2624850" }
+%"class.std::__mutex_base.2624850" = type { %union.pthread_mutex_t.2624851 }
+%union.pthread_mutex_t.2624851 = type { %struct.__pthread_mutex_s.2624852 }
+%struct.__pthread_mutex_s.2624852 = type { i32, i32, i32, i32, i32, i16, i16, %struct.__pthread_internal_list.2624853 }
+%struct.__pthread_internal_list.2624853 = type { ptr, ptr }
+%"struct.rocksdb::clock_cache::AutoHyperClockTable::HandleImpl.2630081" = type { %"struct.rocksdb::clock_cache::ClockHandle.2630067", %"class.rocksdb::AcqRelAtomic.2630069", %"class.rocksdb::AcqRelAtomic.2630069" }
+%"struct.rocksdb::clock_cache::ClockHandle.2630067" = type { %"struct.rocksdb::clock_cache::ClockHandleBasicData.2630062", %"class.rocksdb::AcqRelAtomic.2630069" }
+%"struct.rocksdb::clock_cache::ClockHandleBasicData.2630062" = type { ptr, ptr, %"struct.std::array.2630050", i64 }
+%"struct.std::array.2630050" = type { [2 x i64] }
+%"class.rocksdb::AcqRelAtomic.2630069" = type { %"class.rocksdb::RelaxedAtomic.2630070" }
+%"class.rocksdb::RelaxedAtomic.2630070" = type { %"struct.std::atomic.2630071" }
+%"struct.std::atomic.2630071" = type { %"struct.std::__atomic_base.2630072" }
+%"struct.std::__atomic_base.2630072" = type { i64 }
+%"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const std::basic_string_view<char>, mold::elf::ComdatGroup>>, tbb::detail::d1::spin_rw_mutex>::bucket.2637629" = type { %"class.tbb::detail::d1::spin_rw_mutex.2637630", %"struct.std::atomic.109.2637631" }
+%"class.tbb::detail::d1::spin_rw_mutex.2637630" = type { %"struct.std::atomic.107.2637632" }
+%"struct.std::atomic.107.2637632" = type { %"struct.std::__atomic_base.108.2637633" }
+%"struct.std::__atomic_base.108.2637633" = type { i64 }
+%"struct.std::atomic.109.2637631" = type { %"struct.std::__atomic_base.110.2637634" }
+%"struct.std::__atomic_base.110.2637634" = type { ptr }
+%"class.std::complex.2839348" = type { { double, double } }
 
-; 20 occurrences:
+; 19 occurrences:
 ; cmake/optimized/zstd_lazy.c.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; duckdb/optimized/ub_duckdb_execution.cpp.ll
 ; faiss/optimized/AdditiveQuantizer.cpp.ll
 ; faiss/optimized/IVFlib.cpp.ll
-; faiss/optimized/IndexPQ.cpp.ll
 ; llvm/optimized/blake3.c.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; opencv/optimized/calibinit.cpp.ll
@@ -51,7 +50,7 @@
 define ptr @func000000000000000a(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
-  %3 = getelementptr nusw %"struct.rocksdb::StatisticsImpl::StatisticsData.2509692", ptr %0, i64 %2
+  %3 = getelementptr nusw %"struct.rocksdb::StatisticsImpl::StatisticsData.2624843", ptr %0, i64 %2
   ret ptr %3
 }
 
@@ -66,7 +65,7 @@ entry:
 define ptr @func0000000000000008(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
-  %3 = getelementptr %"struct.rocksdb::clock_cache::AutoHyperClockTable::HandleImpl.2514972", ptr %0, i64 %2
+  %3 = getelementptr %"struct.rocksdb::clock_cache::AutoHyperClockTable::HandleImpl.2630081", ptr %0, i64 %2
   ret ptr %3
 }
 
@@ -683,10 +682,10 @@ entry:
 ; openvdb/optimized/VolumeAdvect.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw nsw i64 1, %1
-  %3 = getelementptr nusw %"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const std::basic_string_view<char>, mold::elf::ComdatGroup>>, tbb::detail::d1::spin_rw_mutex>::bucket.2523220", ptr %0, i64 %2
+  %3 = getelementptr nusw nuw %"struct.tbb::detail::d2::hash_map_base<tbb::detail::d1::tbb_allocator<std::pair<const std::basic_string_view<char>, mold::elf::ComdatGroup>>, tbb::detail::d1::spin_rw_mutex>::bucket.2637629", ptr %0, i64 %2
   ret ptr %3
 }
 
@@ -720,14 +719,26 @@ entry:
   ret ptr %3
 }
 
-; 2 occurrences:
+; 4 occurrences:
+; faiss/optimized/IndexPQ.cpp.ll
+; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; quantlib/optimized/fftengine.ll
 ; quantlib/optimized/garch.ll
 ; Function Attrs: nounwind
 define ptr @func000000000000000b(ptr %0, i64 %1) #0 {
 entry:
   %2 = shl nuw i64 1, %1
-  %3 = getelementptr nusw nuw %"class.std::complex.2726875", ptr %0, i64 %2
+  %3 = getelementptr nusw nuw %"class.std::complex.2839348", ptr %0, i64 %2
+  ret ptr %3
+}
+
+; 1 occurrences:
+; boost/optimized/pool_resource.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i64 %1) #0 {
+entry:
+  %2 = shl i64 16, %1
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
   ret ptr %3
 }
 

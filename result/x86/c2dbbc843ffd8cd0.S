@@ -1,13 +1,3 @@
-func0000000000000011:                   # @func0000000000000011
-	orb	%dl, %sil
-	sete	%al
-	andb	%dil, %al
-	retq
-func000000000000001c:                   # @func000000000000001c
-	orb	%dl, %sil
-	setne	%al
-	andb	%dil, %al
-	retq
 func0000000000000001:                   # @func0000000000000001
 	orb	%dl, %sil
 	sete	%al

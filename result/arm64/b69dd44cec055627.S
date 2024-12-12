@@ -1,32 +1,28 @@
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	movi	v3.16b, #4
-	orr	v0.16b, v1.16b, v0.16b
-	and	v2.16b, v2.16b, v3.16b
-	orr	v0.16b, v2.16b, v0.16b
+	and	w8, w2, #0x4
+	orr	w9, w1, w0
+	orr	w0, w9, w8
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	movi	v3.16b, #12
-	orr	v0.16b, v1.16b, v0.16b
-	and	v2.16b, v2.16b, v3.16b
-	orr	v0.16b, v2.16b, v0.16b
+	and	w8, w2, #0xc
+	orr	w9, w1, w0
+	orr	w0, w9, w8
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	movi	v3.16b, #64
-	orr	v0.16b, v1.16b, v0.16b
-	and	v2.16b, v2.16b, v3.16b
-	orr	v0.16b, v2.16b, v0.16b
+	and	w8, w2, #0x40
+	orr	w9, w0, w1
+	orr	w0, w9, w8
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	movi	v3.16b, #254
-	orr	v0.16b, v1.16b, v0.16b
-	and	v2.16b, v2.16b, v3.16b
-	orr	v0.16b, v2.16b, v0.16b
+	and	w8, w2, #0xfffffffe
+	orr	w9, w1, w0
+	orr	w0, w8, w9
 	ret
                                         // -- End function

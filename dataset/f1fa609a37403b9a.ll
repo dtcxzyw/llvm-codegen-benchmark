@@ -13,7 +13,7 @@ entry:
   ret i8 %6
 }
 
-; 38 occurrences:
+; 36 occurrences:
 ; jsonnet/optimized/vm.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nlohmann_json/optimized/unit-alt-string.cpp.ll
@@ -48,8 +48,6 @@ entry:
 ; nlohmann_json/optimized/unit-wstring.cpp.ll
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind
@@ -62,7 +60,7 @@ entry:
   ret i8 %6
 }
 
-; 38 occurrences:
+; 36 occurrences:
 ; jsonnet/optimized/vm.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nlohmann_json/optimized/unit-alt-string.cpp.ll
@@ -97,8 +95,6 @@ entry:
 ; nlohmann_json/optimized/unit-wstring.cpp.ll
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind

@@ -38,6 +38,16 @@ func0000000000000014:                   # @func0000000000000014
 	addq	%rdi, %rax
 	shlq	$2, %rax
 	retq
+func0000000000000001:                   # @func0000000000000001
+	movzwl	%si, %eax
+	addq	%rdi, %rax
+	shlq	$2, %rax
+	retq
+func0000000000000009:                   # @func0000000000000009
+	movzwl	%si, %eax
+	addq	%rdi, %rax
+	shlq	$2, %rax
+	retq
 func000000000000001f:                   # @func000000000000001f
 	movzwl	%si, %eax
 	addq	%rdi, %rax

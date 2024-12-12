@@ -1,9 +1,12 @@
 
-; 268 occurrences:
+; 269 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; arrow/optimized/value_parsing.cc.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
@@ -107,8 +110,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -361,7 +362,8 @@ entry:
   ret i64 %4
 }
 
-; 100 occurrences:
+; 101 occurrences:
+; boost/optimized/to_chars.ll
 ; fmt/optimized/format.cc.ll
 ; fmt/optimized/gtest-extra.cc.ll
 ; fmt/optimized/header-only-test.cc.ll
@@ -660,18 +662,6 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
-; llvm/optimized/RISCVISelLowering.cpp.ll
-; postgres/optimized/multixact.ll
-; Function Attrs: nounwind
-define i64 @func000000000000001f(i32 %0, i32 %1) #0 {
-entry:
-  %2 = add nuw nsw i32 %0, %1
-  %3 = sub nuw nsw i32 96, %2
-  %4 = zext nneg i32 %3 to i64
-  ret i64 %4
-}
-
 ; 1 occurrences:
 ; abseil-cpp/optimized/bits_test.cc.ll
 ; Function Attrs: nounwind
@@ -690,6 +680,17 @@ define i64 @func000000000000001b(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nuw nsw i32 %0, %1
   %3 = sub nsw i32 14, %2
+  %4 = zext nneg i32 %3 to i64
+  ret i64 %4
+}
+
+; 1 occurrences:
+; postgres/optimized/multixact.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001f(i32 %0, i32 %1) #0 {
+entry:
+  %2 = add nuw nsw i32 %0, %1
+  %3 = sub nuw nsw i32 8192, %2
   %4 = zext nneg i32 %3 to i64
   ret i64 %4
 }

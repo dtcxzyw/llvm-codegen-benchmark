@@ -29,7 +29,7 @@ entry:
 ; hermes/optimized/Set.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000002(i64 %0) #0 {
+define i64 @func0000000000000003(i64 %0) #0 {
 entry:
   %1 = add nuw i64 %0, 127
   %2 = and i64 %1, -8

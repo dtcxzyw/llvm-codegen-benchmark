@@ -1,10 +1,14 @@
 
-; 29 occurrences:
+; 33 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/gregorian.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/to_chars.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
 ; folly/optimized/DeterministicSchedule.cpp.ll
 ; git/optimized/date.ll
@@ -12,12 +16,12 @@
 ; icu/optimized/tzfmt.ll
 ; libdeflate/optimized/deflate_compress.c.ll
 ; linux/optimized/ehci-hcd.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_rps.ll
 ; linux/optimized/lib.ll
 ; linux/optimized/timeconv.ll
 ; luajit/optimized/lj_strfmt.ll
 ; luajit/optimized/lj_strfmt_dyn.ll
+; lvgl/optimized/lv_color.ll
 ; miniaudio/optimized/unity.c.ll
 ; opencv/optimized/persistence.cpp.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
@@ -37,7 +41,7 @@ entry:
   ret i32 %2
 }
 
-; 199 occurrences:
+; 200 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
@@ -45,11 +49,14 @@ entry:
 ; arrow/optimized/tz.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFImporter.cpp.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/Ppmd7.c.ll
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
+; cpython/optimized/Hacl_Hash_SHA3.ll
 ; curl/optimized/libcurl_la-version.ll
-; darktable/optimized/jpeg.c.ll
 ; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; fmt/optimized/format.cc.ll
@@ -130,11 +137,9 @@ entry:
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
-; linux/optimized/bcd.ll
 ; linux/optimized/e1000_main.ll
 ; linux/optimized/netdev.ll
 ; linux/optimized/nf_conntrack_core.ll
-; linux/optimized/spectmgmt.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; oiio/optimized/CineonHeader.cpp.ll
@@ -246,13 +251,16 @@ entry:
   ret i32 %2
 }
 
-; 119 occurrences:
+; 122 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/tz.cpp.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/src.ll
+; boost/optimized/text_file_backend.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/socket.cpp.ll
 ; darktable/optimized/timeline.c.ll
@@ -375,7 +383,7 @@ entry:
   ret i32 %2
 }
 
-; 21 occurrences:
+; 20 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
@@ -391,7 +399,6 @@ entry:
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; memcached/optimized/memcached-itoa_ljust.ll
 ; memcached/optimized/memcached_debug-itoa_ljust.ll
-; nuttx/optimized/lib_timegm.c.ll
 ; postgres/optimized/numutils.ll
 ; quantlib/optimized/date.ll
 ; redis/optimized/fpconv_dtoa.ll

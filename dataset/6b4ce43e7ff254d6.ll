@@ -13,13 +13,13 @@
 define i64 @func000000000000000b(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = zext i32 %3 to i64
   %5 = add nuw nsw i64 %4, 1
   ret i64 %5
 }
 
-; 34 occurrences:
+; 33 occurrences:
 ; arrow/optimized/double-to-string.cc.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -28,7 +28,6 @@ entry:
 ; double_conversion/optimized/double-to-string.cc.ll
 ; eastl/optimized/EASprintfCore.cpp.ll
 ; flac/optimized/metadata.cpp.ll
-; hermes/optimized/Conversions.cpp.ll
 ; icu/optimized/rulebasedcollator.ll
 ; icu/optimized/ubidi.ll
 ; icu/optimized/utext.ll
@@ -38,6 +37,7 @@ entry:
 ; luajit/optimized/lj_strfmt_dyn.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
 ; ncnn/optimized/lstm_x86_avx512vnni.cpp.ll
 ; ncnn/optimized/lstm_x86_avxvnni.cpp.ll
 ; ncnn/optimized/padding.cpp.ll
@@ -51,14 +51,13 @@ entry:
 ; openmpi/optimized/libmpi_fortran_base_la-strings.ll
 ; openusd/optimized/double-to-string.cc.ll
 ; pbrt-v4/optimized/progressreporter.cpp.ll
-; php/optimized/snprintf.ll
 ; raylib/optimized/rtext.c.ll
 ; wireshark/optimized/editcap.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext i32 %3 to i64
   %5 = add nuw nsw i64 %4, 1
   ret i64 %5
@@ -72,7 +71,7 @@ entry:
 define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext i32 %3 to i64
   %5 = add nsw i64 %4, -1
   ret i64 %5

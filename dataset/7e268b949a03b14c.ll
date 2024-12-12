@@ -68,7 +68,7 @@
 ; xgboost/optimized/adaptive.cc.ll
 ; z3/optimized/spacer_cluster_util.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0) #0 {
+define i1 @func00000000000000a1(i64 %0) #0 {
 entry:
   %1 = shl nsw i64 %0, 2
   %2 = shl nsw i64 %0, 1
@@ -91,7 +91,7 @@ entry:
 ; xgboost/optimized/adaptive.cc.ll
 ; z3/optimized/spacer_cluster_util.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0) #0 {
+define i1 @func0000000000000021(i64 %0) #0 {
 entry:
   %1 = shl i64 %0, 4
   %2 = shl nsw i64 %0, 5

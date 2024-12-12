@@ -1,64 +1,42 @@
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	movi	v4.4s, #63
-	movi	v5.4s, #63
-	mla	v5.4s, v1.4s, v3.4s
-	mla	v4.4s, v0.4s, v2.4s
-	cmlt	v0.4s, v4.4s, #0
-	cmlt	v1.4s, v5.4s, #0
-	usra	v4.4s, v0.4s, #26
-	usra	v5.4s, v1.4s, #26
-	sshr	v0.4s, v4.4s, #6
-	sshr	v1.4s, v5.4s, #6
+	mul	w8, w0, w1
+	adds	w9, w8, #63
+	add	w8, w8, #126
+	csel	w8, w8, w9, lt
+	asr	w0, w8, #6
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	movi	v4.4s, #7
-	movi	v5.4s, #7
-	mla	v5.4s, v1.4s, v3.4s
-	mla	v4.4s, v0.4s, v2.4s
-	cmlt	v0.4s, v4.4s, #0
-	cmlt	v1.4s, v5.4s, #0
-	usra	v4.4s, v0.4s, #29
-	usra	v5.4s, v1.4s, #29
-	sshr	v0.4s, v4.4s, #3
-	sshr	v1.4s, v5.4s, #3
+	mul	w8, w0, w1
+	add	w9, w8, #7
+	add	w8, w8, #14
+	cmp	w9, #0
+	csel	w8, w8, w9, lt
+	asr	w0, w8, #3
 	ret
                                         // -- End function
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	movi	v4.4s, #127, msl #8
-	movi	v5.4s, #1
-	movi	v6.4s, #127, msl #8
-	mla	v4.4s, v0.4s, v2.4s
-	fneg	v0.8h, v5.8h
-	mla	v6.4s, v1.4s, v3.4s
-	smull2	v1.2d, v4.4s, v0.4s
-	smull	v2.2d, v4.2s, v0.2s
-	smull2	v3.2d, v6.4s, v0.4s
-	smull	v0.2d, v6.2s, v0.2s
-	uzp2	v1.4s, v2.4s, v1.4s
-	uzp2	v0.4s, v0.4s, v3.4s
-	add	v2.4s, v1.4s, v4.4s
-	add	v3.4s, v0.4s, v6.4s
-	sshr	v0.4s, v2.4s, #15
-	sshr	v1.4s, v3.4s, #15
-	usra	v0.4s, v2.4s, #31
-	usra	v1.4s, v3.4s, #31
+	mov	w8, #32767                      // =0x7fff
+	mov	w9, #32769                      // =0x8001
+	madd	w8, w0, w1, w8
+	movk	w9, #32768, lsl #16
+	smull	x9, w8, w9
+	lsr	x9, x9, #32
+	add	w8, w9, w8
+	asr	w9, w8, #15
+	add	w0, w9, w8, lsr #31
 	ret
                                         // -- End function
 func0000000000000014:                   // @func0000000000000014
 // %bb.0:                               // %entry
-	movi	v4.4s, #127
-	movi	v5.4s, #127
-	mla	v5.4s, v1.4s, v3.4s
-	mla	v4.4s, v0.4s, v2.4s
-	cmlt	v0.4s, v4.4s, #0
-	cmlt	v1.4s, v5.4s, #0
-	usra	v4.4s, v0.4s, #25
-	usra	v5.4s, v1.4s, #25
-	sshr	v0.4s, v4.4s, #7
-	sshr	v1.4s, v5.4s, #7
+	mul	w8, w0, w1
+	add	w9, w8, #127
+	add	w8, w8, #254
+	cmp	w9, #0
+	csel	w8, w8, w9, lt
+	asr	w0, w8, #7
 	ret
                                         // -- End function

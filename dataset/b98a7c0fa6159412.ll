@@ -2,10 +2,10 @@
 ; 1 occurrences:
 ; qemu/optimized/fpu_softfloat.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = add nsw i64 %4, %0
   %6 = icmp slt i64 %5, 0
   ret i1 %6
@@ -22,9 +22,9 @@ entry:
 define i1 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 9
-  %4 = add i64 %3, %1
-  %5 = sub i64 0, %0
-  %6 = icmp eq i64 %4, %5
+  %4 = add i64 %1, %3
+  %5 = sub i64 0, %4
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
@@ -34,10 +34,10 @@ entry:
 ; icu/optimized/double-conversion-strtod.ll
 ; openusd/optimized/strtod.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000104(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
-  %4 = add nuw i64 %3, %1
+  %4 = add nuw i64 %1, %3
   %5 = add i64 %4, %0
   %6 = icmp ult i64 %5, 18014398509481984
   ret i1 %6
@@ -117,10 +117,10 @@ entry:
 ; oiio/optimized/xmp.cpp.ll
 ; oiio/optimized/zfile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000141(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
-  %4 = add nuw i64 %3, %1
+  %4 = add nuw i64 %1, %3
   %5 = or i64 %4, %0
   %6 = icmp eq i64 %5, 0
   ret i1 %6
@@ -129,10 +129,10 @@ entry:
 ; 1 occurrences:
 ; php/optimized/strtod.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000101(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
-  %4 = add nuw i64 %3, %1
+  %4 = add nuw i64 %1, %3
   %5 = sub i64 0, %0
   %6 = icmp eq i64 %4, %5
   ret i1 %6
@@ -141,10 +141,10 @@ entry:
 ; 1 occurrences:
 ; php/optimized/strtod.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000010a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
-  %4 = add nuw i64 %3, %1
+  %4 = add nuw i64 %1, %3
   %5 = add i64 %4, %0
   %6 = icmp sgt i64 %5, -1
   ret i1 %6
@@ -156,12 +156,12 @@ entry:
 ; abc/optimized/solver.c.ll
 ; opencv/optimized/resize.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001f8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 15
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = add nuw nsw i64 %4, %0
-  %6 = icmp ugt i64 %5, 281474976710655
+  %6 = icmp samesign ugt i64 %5, 281474976710655
   ret i1 %6
 }
 
@@ -170,19 +170,19 @@ entry:
 ; abc/optimized/satSolver3.c.ll
 ; abc/optimized/solver.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001f4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 48
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = add nuw nsw i64 %4, %0
-  %6 = icmp ult i64 %5, 65536
+  %6 = icmp samesign ult i64 %5, 65536
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; spike/optimized/f128_sqrt.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000181(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 5
   %4 = add nuw nsw i64 %3, %1
@@ -194,22 +194,22 @@ entry:
 ; 1 occurrences:
 ; simdjson/optimized/simdjson.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000f8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 63
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = add nuw nsw i64 %4, %0
-  %6 = icmp ugt i64 %5, 2046
+  %6 = icmp samesign ugt i64 %5, 2046
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; openusd/optimized/json.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001e1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
-  %4 = add nuw nsw i64 %3, %1
+  %4 = add nuw nsw i64 %1, %3
   %5 = or i64 %4, %0
   %6 = icmp eq i64 %5, 0
   ret i1 %6
@@ -218,7 +218,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/mincore.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ca(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000018a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 12
   %4 = add nuw nsw i64 %3, %1

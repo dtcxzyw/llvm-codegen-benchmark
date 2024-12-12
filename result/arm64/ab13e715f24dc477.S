@@ -1,4 +1,4 @@
-func00000000000000ba:                   // @func00000000000000ba
+func00000000000000bf:                   // @func00000000000000bf
 // %bb.0:                               // %entry
                                         // kill: def $w1 killed $w1 def $x1
 	add	x8, x0, w1, uxtb #4
@@ -13,7 +13,7 @@ func00000000000000a0:                   // @func00000000000000a0
 	add	x0, x8, #2
 	ret
                                         // -- End function
-func00000000000000b2:                   // @func00000000000000b2
+func00000000000000b3:                   // @func00000000000000b3
 // %bb.0:                               // %entry
                                         // kill: def $w1 killed $w1 def $x1
 	mov	w8, #12                         // =0xc
@@ -22,23 +22,23 @@ func00000000000000b2:                   // @func00000000000000b2
 	sub	x0, x8, #568
 	ret
                                         // -- End function
-func000000000000003a:                   // @func000000000000003a
+func000000000000003f:                   // @func000000000000003f
 // %bb.0:                               // %entry
                                         // kill: def $w1 killed $w1 def $x1
-	mov	w8, #40                         // =0x28
+	mov	w8, #24                         // =0x18
 	and	x9, x1, #0xff
 	umaddl	x8, w9, w8, x0
-	sub	x0, x8, #1272
+	sub	x0, x8, #3136
 	ret
                                         // -- End function
-func000000000000007a:                   // @func000000000000007a
+func000000000000007f:                   // @func000000000000007f
 // %bb.0:                               // %entry
                                         // kill: def $w1 killed $w1 def $x1
 	add	x8, x0, w1, uxtb
 	add	x0, x8, #2
 	ret
                                         // -- End function
-func0000000000000078:                   // @func0000000000000078
+func000000000000007c:                   // @func000000000000007c
 // %bb.0:                               // %entry
                                         // kill: def $w1 killed $w1 def $x1
 	add	x8, x0, w1, uxtb

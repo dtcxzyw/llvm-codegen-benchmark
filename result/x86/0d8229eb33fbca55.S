@@ -1,14 +1,20 @@
-func0000000000000031:                   # @func0000000000000031
-	shrl	$5, %edi
-	leal	1(%rdi), %ecx
+func0000000000000061:                   # @func0000000000000061
+	movl	%edi, %ecx
+	shrl	$5, %ecx
+	incl	%ecx
 	andl	$7, %ecx
+	notl	%edi
+	testb	$-32, %dil
 	movl	$8, %eax
 	cmovneq	%rcx, %rax
 	retq
-func0000000000000021:                   # @func0000000000000021
-	shrl	%edi
-	leal	1(%rdi), %ecx
+func0000000000000041:                   # @func0000000000000041
+	movl	%edi, %ecx
+	shrl	%ecx
+	incl	%ecx
 	andl	$3, %ecx
+	notl	%edi
+	testb	$6, %dil
 	movl	$4, %eax
 	cmovneq	%rcx, %rax
 	retq

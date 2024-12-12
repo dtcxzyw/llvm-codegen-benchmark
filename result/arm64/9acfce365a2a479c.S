@@ -1,4 +1,4 @@
-func000000000000021c:                   // @func000000000000021c
+func0000000000000c2c:                   // @func0000000000000c2c
 // %bb.0:                               // %entry
 	add	x8, x2, #8
 	ubfx	w9, w1, #7, #1
@@ -6,7 +6,7 @@ func000000000000021c:                   // @func000000000000021c
 	csinc	w0, w9, wzr, ne
 	ret
                                         // -- End function
-func0000000000000211:                   // @func0000000000000211
+func0000000000000c21:                   // @func0000000000000c21
 // %bb.0:                               // %entry
 	and	w8, w1, #0xe000
 	add	x9, x2, #8

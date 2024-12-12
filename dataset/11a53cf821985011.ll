@@ -1,5 +1,5 @@
 
-; 220 occurrences:
+; 222 occurrences:
 ; abc/optimized/giaTransduction.cpp.ll
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/builder_dict.cc.ll
@@ -53,7 +53,6 @@
 ; linux/optimized/i915_gpu_error.ll
 ; linux/optimized/i915_perf.ll
 ; linux/optimized/idr.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_color.ll
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_dmc.ll
@@ -75,7 +74,9 @@
 ; llvm/optimized/MSFBuilder.cpp.ll
 ; llvm/optimized/MemorySanitizer.cpp.ll
 ; llvm/optimized/WindowsResource.cpp.ll
+; llvm/optimized/X86ISelLoweringCall.cpp.ll
 ; luau/optimized/UnwindBuilderWin.cpp.ll
+; lvgl/optimized/lv_dropdown.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
 ; meshlab/optimized/arap.cpp.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
@@ -168,6 +169,7 @@
 ; openssl/optimized/liblegacy-lib-md5_dgst.ll
 ; openusd/optimized/blend_a64_mask.c.ll
 ; openusd/optimized/pinnedCurveExpandingSceneIndex.cpp.ll
+; openusd/optimized/tessellation.cpp.ll
 ; php/optimized/compact_literals.ll
 ; php/optimized/hash_haval.ll
 ; php/optimized/hash_md.ll
@@ -225,43 +227,7 @@ define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl i32 %2, 3
-  %4 = add i32 %3, %0
-  ret i32 %4
-}
-
-; 26 occurrences:
-; abc/optimized/covBuild.c.ll
-; abc/optimized/covMinEsop.c.ll
-; abc/optimized/covMinSop.c.ll
-; abc/optimized/decompress.c.ll
-; abc/optimized/exorBits.c.ll
-; abc/optimized/ioReadPla.c.ll
-; abc/optimized/simUtils.c.ll
-; clamav/optimized/bzlib.c.ll
-; cmake/optimized/decompress.c.ll
-; gromacs/optimized/pairlist.cpp.ll
-; imgui/optimized/imgui_draw.cpp.ll
-; libquic/optimized/ip_address.cc.ll
-; linux/optimized/intel_ring_submission.ll
-; linux/optimized/skl_watermark.ll
-; mitsuba3/optimized/x86func.cpp.ll
-; openjdk/optimized/codeBuffer.ll
-; openssl/optimized/libcrypto-lib-bn_gf2m.ll
-; openssl/optimized/libcrypto-shlib-bn_gf2m.ll
-; php/optimized/pcre2_jit_compile.ll
-; qemu/optimized/net_vhost-vdpa.c.ll
-; raylib/optimized/rtext.c.ll
-; wireshark/optimized/packet-ip.c.ll
-; wireshark/optimized/packet-opa-mad.c.ll
-; wireshark/optimized/toshiba.c.ll
-; z3/optimized/inc_sat_solver.cpp.ll
-; z3/optimized/sat_smt_solver.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000003(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = shl i32 %2, 16
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -282,7 +248,42 @@ define i32 @func000000000000003c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nuw nsw i32 %2, 3
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
+  ret i32 %4
+}
+
+; 25 occurrences:
+; abc/optimized/covBuild.c.ll
+; abc/optimized/covMinEsop.c.ll
+; abc/optimized/covMinSop.c.ll
+; abc/optimized/decompress.c.ll
+; abc/optimized/exorBits.c.ll
+; abc/optimized/ioReadPla.c.ll
+; abc/optimized/simUtils.c.ll
+; clamav/optimized/bzlib.c.ll
+; cmake/optimized/decompress.c.ll
+; gromacs/optimized/pairlist.cpp.ll
+; imgui/optimized/imgui_draw.cpp.ll
+; libquic/optimized/ip_address.cc.ll
+; linux/optimized/intel_ring_submission.ll
+; linux/optimized/skl_watermark.ll
+; openjdk/optimized/codeBuffer.ll
+; openssl/optimized/libcrypto-lib-bn_gf2m.ll
+; openssl/optimized/libcrypto-shlib-bn_gf2m.ll
+; php/optimized/pcre2_jit_compile.ll
+; qemu/optimized/net_vhost-vdpa.c.ll
+; raylib/optimized/rtext.c.ll
+; wireshark/optimized/packet-ip.c.ll
+; wireshark/optimized/packet-opa-mad.c.ll
+; wireshark/optimized/toshiba.c.ll
+; z3/optimized/inc_sat_solver.cpp.ll
+; z3/optimized/sat_smt_solver.cpp.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000003(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc i64 %1 to i32
+  %3 = shl i32 %2, 6
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -294,7 +295,7 @@ define i32 @func0000000000000015(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = shl nsw i32 %2, 6
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -316,12 +317,11 @@ entry:
   ret i32 %4
 }
 
-; 10 occurrences:
+; 9 occurrences:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; hyperscan/optimized/teddy_compile.cpp.ll
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; linux/optimized/i915_gem_shmem.ll
-; linux/optimized/intel_mocs.ll
 ; llvm/optimized/SemaLookup.cpp.ll
 ; llvm/optimized/X86InstCombineIntrinsic.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
@@ -332,7 +332,7 @@ define i32 @func0000000000000020(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = shl i32 %2, 2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -349,7 +349,7 @@ define i32 @func000000000000003f(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nuw nsw i32 %2, 6
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -362,7 +362,7 @@ define i32 @func0000000000000023(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = shl i32 %2, 8
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -418,7 +418,7 @@ define i32 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl i32 %2, 3
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -429,7 +429,7 @@ define i32 @func000000000000003b(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nuw i32 %2, 4
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -465,11 +465,11 @@ define i32 @func0000000000000034(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nsw i32 %2, 6
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
-; 18 occurrences:
+; 20 occurrences:
 ; abc/optimized/cecSatG2.c.ll
 ; abc/optimized/cecSatG3.c.ll
 ; abc/optimized/giaJf.c.ll
@@ -479,6 +479,8 @@ entry:
 ; abc/optimized/giaOf.c.ll
 ; casadi/optimized/integration_tools.cpp.ll
 ; linux/optimized/rate.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
+; lvgl/optimized/lv_slider.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; nuttx/optimized/fs_files.c.ll
 ; opencv/optimized/convolution_layer.cpp.ll
@@ -497,7 +499,7 @@ entry:
   ret i32 %4
 }
 
-; 29 occurrences:
+; 30 occurrences:
 ; abc/optimized/giaLf.c.ll
 ; abc/optimized/giaMf.c.ll
 ; abc/optimized/kitHop.c.ll
@@ -507,6 +509,7 @@ entry:
 ; g2o/optimized/slam2d_linear.cpp.ll
 ; g2o/optimized/solver_eigen.cpp.ll
 ; g2o/optimized/solver_slam2d_linear.cpp.ll
+; lvgl/optimized/lv_roller.ll
 ; meshlab/optimized/cube_style_precomputation.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_parametrization.cpp.ll
@@ -532,16 +535,15 @@ define i32 @func0000000000000004(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nsw i32 %2, 1
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/cecClass.c.ll
 ; abc/optimized/giaEra.c.ll
 ; abc/optimized/giaSim.c.ll
 ; abc/optimized/giaSim2.c.ll
-; abc/optimized/lpkMux.c.ll
 ; abc/optimized/rsbDec6.c.ll
 ; openspiel/optimized/oh_hell_test.cc.ll
 ; Function Attrs: nounwind
@@ -549,7 +551,7 @@ define i32 @func0000000000000035(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nsw i32 %2, 5
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -561,7 +563,7 @@ define i32 @func000000000000000f(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nuw nsw i32 %2, 4
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -589,7 +591,21 @@ define i32 @func000000000000000c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nuw nsw i32 %2, 7
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
+  ret i32 %4
+}
+
+; 4 occurrences:
+; luajit/optimized/lj_record.ll
+; luajit/optimized/lj_record_dyn.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
+; openspiel/optimized/quoridor.cc.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000025(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw i64 %1 to i32
+  %3 = shl nsw i32 %2, 8
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -600,19 +616,6 @@ define i32 @func0000000000000021(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = shl i32 %2, 3
-  %4 = add nsw i32 %3, %0
-  ret i32 %4
-}
-
-; 3 occurrences:
-; luajit/optimized/lj_record.ll
-; luajit/optimized/lj_record_dyn.ll
-; openspiel/optimized/quoridor.cc.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000025(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc nuw i64 %1 to i32
-  %3 = shl nsw i32 %2, 1
   %4 = add nsw i32 %3, %0
   ret i32 %4
 }
@@ -649,7 +652,7 @@ define i32 @func000000000000000d(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl nuw nsw i32 %2, 1
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -663,7 +666,7 @@ define i32 @func0000000000000002(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = shl i32 %2, 16
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   ret i32 %4
 }
 
@@ -675,7 +678,7 @@ define i32 @func000000000000003d(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = shl nuw nsw i32 %2, 4
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -687,7 +690,7 @@ define i32 @func000000000000002d(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = shl nuw nsw i32 %2, 1
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
@@ -698,7 +701,7 @@ define i32 @func0000000000000014(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
   %3 = shl nsw i32 %2, 1
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 

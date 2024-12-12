@@ -1,5 +1,5 @@
 
-; 222 occurrences:
+; 221 occurrences:
 ; clamav/optimized/pe.c.ll
 ; cpython/optimized/ast_unparse.ll
 ; darktable/optimized/NefDecoder.cpp.ll
@@ -22,7 +22,6 @@
 ; linux/optimized/intel_display.ll
 ; linux/optimized/linkstate.ll
 ; linux/optimized/nf_nat_core.ll
-; linux/optimized/pse-pd.ll
 ; linux/optimized/rtnetlink.ll
 ; linux/optimized/rx.ll
 ; linux/optimized/tcp_ipv4.ll
@@ -229,7 +228,7 @@ entry:
   ret i32 %1
 }
 
-; 52 occurrences:
+; 53 occurrences:
 ; abseil-cpp/optimized/convert_test.cc.ll
 ; abseil-cpp/optimized/numbers.cc.ll
 ; arrow/optimized/reader.cc.ll
@@ -261,6 +260,7 @@ entry:
 ; llvm/optimized/SemaRISCV.cpp.ll
 ; llvm/optimized/X86ATTInstPrinter.cpp.ll
 ; mitsuba3/optimized/x86instapi.cpp.ll
+; nuttx/optimized/lib_strtold.c.ll
 ; opencv/optimized/contours2.cpp.ll
 ; openjdk/optimized/OGLPaints.ll
 ; openjdk/optimized/c2_MacroAssembler_x86.ll

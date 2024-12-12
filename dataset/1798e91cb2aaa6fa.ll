@@ -13,10 +13,10 @@ entry:
 ; 1 occurrences:
 ; minetest/optimized/server.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000004(float %0, i1 %1, i1 %2) #0 {
+define i1 @func0000000000000008(float %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = select i1 %1, i1 true, i1 %2
-  %4 = fcmp olt float %0, -3.100750e+05
+  %4 = fcmp ogt float %0, 3.100750e+05
   %5 = or i1 %4, %3
   ret i1 %5
 }

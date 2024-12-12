@@ -1,5 +1,5 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; linux/optimized/page_alloc.ll
 ; opencv/optimized/permute_layer.cpp.ll
 ; postgres/optimized/basebackup.ll
@@ -8,7 +8,6 @@
 ; postgres/optimized/receivelog.ll
 ; postgres/optimized/xlog.ll
 ; postgres/optimized/xlogarchive.ll
-; postgres/optimized/xlogbackup.ll
 ; postgres/optimized/xlogfuncs.ll
 ; postgres/optimized/xlogreader.ll
 ; postgres/optimized/xlogrecovery.ll

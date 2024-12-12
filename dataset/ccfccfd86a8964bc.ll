@@ -1,5 +1,5 @@
 
-; 244 occurrences:
+; 243 occurrences:
 ; arrow/optimized/api_scalar.cc.ll
 ; arrow/optimized/exec.cc.ll
 ; arrow/optimized/grouper.cc.ll
@@ -67,7 +67,6 @@
 ; g2o/optimized/solver_eigen.cpp.ll
 ; g2o/optimized/solver_pcg.cpp.ll
 ; g2o/optimized/solver_slam2d_linear.cpp.ll
-; gromacs/optimized/awh.cpp.ll
 ; gromacs/optimized/biasstate.cpp.ll
 ; gromacs/optimized/colvar.cpp.ll
 ; gromacs/optimized/gmx_xpm2ps.cpp.ll
@@ -245,14 +244,14 @@
 ; zxing/optimized/MultiFormatReader.cpp.ll
 ; zxing/optimized/ODReader.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000068(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp ugt i64 %3, %0
   ret i1 %4
 }
 
-; 45 occurrences:
+; 43 occurrences:
 ; arrow/optimized/function.cc.ll
 ; arrow/optimized/grouper.cc.ll
 ; arrow/optimized/kernel.cc.ll
@@ -271,7 +270,6 @@ entry:
 ; gromacs/optimized/domdec.cpp.ll
 ; gromacs/optimized/pme.cpp.ll
 ; gromacs/optimized/updategroups.cpp.ll
-; hyperscan/optimized/rose_build_lookaround.cpp.ll
 ; llvm/optimized/AsmParser.cpp.ll
 ; llvm/optimized/MCWin64EH.cpp.ll
 ; meshlab/optimized/mesh_model_state.cpp.ll
@@ -293,20 +291,19 @@ entry:
 ; openusd/optimized/primIndex_Graph.cpp.ll
 ; openusd/optimized/testUsdResolveTarget.cpp.ll
 ; pbrt-v4/optimized/media.cpp.ll
-; proj/optimized/io.cpp.ll
 ; rocksdb/optimized/options_parser.cc.ll
 ; velox/optimized/SignatureBinder.cpp.ll
 ; wasmedge/optimized/module.cpp.ll
 ; yosys/optimized/rtlil.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp eq i64 %3, %0
   ret i1 %4
 }
 
-; 135 occurrences:
+; 133 occurrences:
 ; arrow/optimized/exec.cc.ll
 ; arrow/optimized/grouper.cc.ll
 ; arrow/optimized/light_array.cc.ll
@@ -343,7 +340,6 @@ entry:
 ; g2o/optimized/solver_eigen.cpp.ll
 ; g2o/optimized/solver_pcg.cpp.ll
 ; g2o/optimized/solver_slam2d_linear.cpp.ll
-; gromacs/optimized/awh.cpp.ll
 ; gromacs/optimized/biasstate.cpp.ll
 ; gromacs/optimized/colvarcomp_rotations.cpp.ll
 ; gromacs/optimized/grompp.cpp.ll
@@ -430,7 +426,6 @@ entry:
 ; openusd/optimized/primIndex_Graph.cpp.ll
 ; ozz-animation/optimized/additive_animation_builder.cc.ll
 ; pbrt-v4/optimized/stats.cpp.ll
-; proj/optimized/io.cpp.ll
 ; sentencepiece/optimized/bpe_model_trainer.cc.ll
 ; sentencepiece/optimized/unigram_model_trainer.cc.ll
 ; tomlplusplus/optimized/toml.cpp.ll
@@ -443,7 +438,7 @@ entry:
 ; yosys/optimized/rtlil.ll
 ; yosys/optimized/subcircuit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000034(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000064(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp ult i64 %3, %0
@@ -459,7 +454,7 @@ entry:
 ; wireshark/optimized/main_window_preferences_frame.cpp.ll
 ; wireshark/optimized/resolved_addresses_models.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000036(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000066(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp slt i64 %3, %0
@@ -467,19 +462,9 @@ entry:
 }
 
 ; 1 occurrences:
-; proj/optimized/io.cpp.ll
-; Function Attrs: nounwind
-define i1 @func000000000000003c(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = sub i64 %1, %2
-  %4 = icmp ne i64 %3, %0
-  ret i1 %4
-}
-
-; 1 occurrences:
 ; opencv/optimized/keypoint.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000039(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000069(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = icmp uge i64 %3, %0

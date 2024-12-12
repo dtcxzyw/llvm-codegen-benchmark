@@ -1,5 +1,5 @@
 
-; 208 occurrences:
+; 207 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
@@ -204,7 +204,6 @@
 ; openusd/optimized/json.cpp.ll
 ; php/optimized/mem.ll
 ; php/optimized/shared_alloc_mmap.ll
-; postgres/optimized/shm_toc.ll
 ; postgres/optimized/shmem.ll
 ; pugixml/optimized/pugixml.cpp.ll
 ; qemu/optimized/linux-user_mmap.c.ll
@@ -235,7 +234,7 @@ define i1 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 4095
   %4 = and i64 %3, -4096
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
@@ -243,12 +242,12 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/hw_intc_riscv_aplic.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001f4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 4294905856
   %4 = and i64 %3, 4294967264
-  %5 = add nuw nsw i64 %4, %1
-  %6 = icmp ult i64 %5, %0
+  %5 = add nuw nsw i64 %1, %4
+  %6 = icmp samesign ult i64 %5, %0
   ret i1 %6
 }
 
@@ -263,11 +262,11 @@ entry:
 ; llvm/optimized/ExprCXX.cpp.ll
 ; openusd/optimized/json.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000188(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 7
   %4 = and i64 %3, 8589934584
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
@@ -276,7 +275,7 @@ entry:
 ; memcached/optimized/memcached-slabs.ll
 ; memcached/optimized/memcached_debug-slabs.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 7
   %4 = and i64 %3, -8
@@ -298,7 +297,7 @@ define i1 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 7
   %4 = and i64 %3, -8
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
@@ -306,7 +305,7 @@ entry:
 ; 1 occurrences:
 ; hdf5/optimized/H5HG.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000181(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 15
   %4 = and i64 %3, 504
@@ -320,7 +319,7 @@ entry:
 ; luajit/optimized/lj_mcode.ll
 ; luajit/optimized/lj_mcode_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 3
   %4 = and i64 %3, -4
@@ -332,7 +331,7 @@ entry:
 ; 1 occurrences:
 ; hermes/optimized/hbc-attribute.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 3
   %4 = and i64 %3, -4
@@ -346,12 +345,12 @@ entry:
 ; linux/optimized/af_packet.ll
 ; llvm/optimized/CGCleanup.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001f8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 39
   %4 = and i64 %3, 68719476728
-  %5 = add nuw nsw i64 %4, %1
-  %6 = icmp ugt i64 %5, %0
+  %5 = add nuw nsw i64 %1, %4
+  %6 = icmp samesign ugt i64 %5, %0
   ret i1 %6
 }
 
@@ -359,11 +358,11 @@ entry:
 ; llvm/optimized/TargetLowering.cpp.ll
 ; postgres/optimized/nodeHash.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000184(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 4294967295
   %4 = and i64 %3, 4294967295
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = icmp ult i64 %5, %0
   ret i1 %6
 }
@@ -375,7 +374,7 @@ define i1 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add i64 %2, 7
   %4 = and i64 %3, -8
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = icmp sgt i64 %5, %0
   ret i1 %6
 }
@@ -384,7 +383,7 @@ entry:
 ; grpc/optimized/buffer_list.cc.ll
 ; grpc/optimized/traced_buffer_list.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f6(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001e6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 3
   %4 = and i64 %3, 131068
@@ -396,11 +395,11 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/rewriteheap.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001a8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw nsw i64 %2, 7
   %4 = and i64 %3, 8589934584
-  %5 = add nsw i64 %4, %1
+  %5 = add nsw i64 %1, %4
   %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
@@ -408,11 +407,11 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/tsvector.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 1
   %4 = and i64 %3, -2
-  %5 = add nsw i64 %4, %1
+  %5 = add nsw i64 %1, %4
   %6 = icmp ult i64 %5, %0
   ret i1 %6
 }

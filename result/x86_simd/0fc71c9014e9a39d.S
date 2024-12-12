@@ -21,3 +21,13 @@ func0000000000000003:                   # @func0000000000000003
 	vpbroadcastd	.LCPI1_1(%rip), %ymm0 {%k1} # ymm0 {%k1} = [24,24,24,24,24,24,24,24]
 	vpternlogd	$254, .LCPI1_2(%rip){1to8}, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | mem
 	retq
+.LCPI2_0:
+	.long	53477376                        # 0x3300000
+.LCPI2_1:
+	.long	52428800                        # 0x3200000
+func0000000000000001:                   # @func0000000000000001
+	vpsllw	$15, %xmm0, %xmm0
+	vpmovw2m	%xmm0, %k1
+	vorps	.LCPI2_0(%rip){1to8}, %ymm1, %ymm0
+	vorps	.LCPI2_1(%rip){1to8}, %ymm1, %ymm0 {%k1}
+	retq

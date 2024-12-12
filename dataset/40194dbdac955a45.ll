@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; flatbuffers/optimized/idl_gen_cpp.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000082(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000102(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ult i32 %1, 2
   %3 = icmp eq i32 %0, 14
@@ -17,7 +17,7 @@ entry:
 ; abc/optimized/saigPhase.c.ll
 ; libphonenumber/optimized/phonenumberutil.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000022(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000042(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = icmp eq i32 %0, 2
@@ -33,7 +33,7 @@ entry:
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000182(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000302(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = icmp eq i32 %0, 0
@@ -46,7 +46,7 @@ entry:
 ; linux/optimized/hcd.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000028(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000048(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 12
   %3 = icmp ult i32 %0, 4
@@ -60,7 +60,7 @@ entry:
 ; cmake/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000038(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000058(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 3
   %3 = icmp ne i32 %0, 0
@@ -72,7 +72,7 @@ entry:
 ; 1 occurrences:
 ; redis/optimized/rax.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000198(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000318(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = icmp ne i32 %0, 1

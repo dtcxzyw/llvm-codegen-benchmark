@@ -1,9 +1,8 @@
 
-; 12 occurrences:
+; 11 occurrences:
 ; hermes/optimized/BytecodeGenerator.cpp.ll
 ; hermes/optimized/HiddenClass.cpp.ll
 ; linux/optimized/intel_sdvo.ll
-; linux/optimized/keyboard.ll
 ; linux/optimized/pcm_native.ll
 ; llvm/optimized/APINotesWriter.cpp.ll
 ; llvm/optimized/APINotesYAMLCompiler.cpp.ll

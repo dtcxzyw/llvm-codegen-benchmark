@@ -1,5 +1,5 @@
 
-; 130 occurrences:
+; 127 occurrences:
 ; abc/optimized/deflate.c.ll
 ; arrow/optimized/light_array.cc.ll
 ; c3c/optimized/target.c.ll
@@ -39,7 +39,6 @@
 ; hdf5/optimized/H5Oattr.c.ll
 ; hdf5/optimized/H5Olink.c.ll
 ; hermes/optimized/APFloat.cpp.ll
-; hermes/optimized/BytecodeGenerator.cpp.ll
 ; hyperscan/optimized/block.c.ll
 ; hyperscan/optimized/program_runtime.c.ll
 ; imgui/optimized/imgui_tables.cpp.ll
@@ -53,13 +52,11 @@
 ; linux/optimized/drm_atomic_helper.ll
 ; linux/optimized/dvo_ch7xxx.ll
 ; linux/optimized/eeepc-laptop.ll
-; linux/optimized/evregion.ll
 ; linux/optimized/hdac_stream.ll
 ; linux/optimized/intel_sdvo.ll
 ; linux/optimized/keyboard.ll
 ; linux/optimized/libata-core.ll
 ; linux/optimized/libata-scsi.ll
-; linux/optimized/mii.ll
 ; linux/optimized/nfs4proc.ll
 ; linux/optimized/pci.ll
 ; linux/optimized/pcm_lib.ll
@@ -135,7 +132,7 @@ define i8 @func0000000000000003(i8 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i8 0, i8 -128
-  %4 = or disjoint i8 %3, %0
+  %4 = or disjoint i8 %0, %3
   ret i8 %4
 }
 
@@ -154,15 +151,16 @@ define i8 @func0000000000000015(i8 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 0
   %3 = select i1 %2, i8 -127, i8 -128
-  %4 = or disjoint i8 %3, %0
+  %4 = or disjoint i8 %0, %3
   ret i8 %4
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; arrow/optimized/light_array.cc.ll
 ; harfbuzz/optimized/hb-subset-cff1.cc.ll
 ; hyperscan/optimized/program_runtime.c.ll
 ; libevent/optimized/buffer.c.ll
+; linux/optimized/keyboard.ll
 ; linux/optimized/reboot.ll
 ; linux/optimized/seq_clientmgr.ll
 ; llvm/optimized/DylibReader.cpp.ll
@@ -176,18 +174,16 @@ define i8 @func0000000000000002(i8 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = select i1 %2, i8 4, i8 64
-  %4 = or i8 %3, %0
+  %4 = or i8 %0, %3
   ret i8 %4
 }
 
-; 14 occurrences:
+; 12 occurrences:
 ; c3c/optimized/llvm_codegen_expr.c.ll
-; cpython/optimized/obmalloc.ll
 ; duckdb/optimized/ub_duckdb_common_serializer.cpp.ll
 ; libevent/optimized/event_tagging.c.ll
-; llvm/optimized/CGExpr.cpp.ll
 ; llvm/optimized/WasmObjectWriter.cpp.ll
-; mimalloc/optimized/page.c.ll
+; lvgl/optimized/lv_label.ll
 ; quickjs/optimized/quickjs.ll
 ; wasmedge/optimized/codegen.cpp.ll
 ; wasmedge/optimized/serial_description.cpp.ll
@@ -216,18 +212,17 @@ define i8 @func0000000000000019(i8 %0, i32 %1) #0 {
 entry:
   %.not = icmp eq i32 %1, 1
   %2 = select i1 %.not, i8 4, i8 0
-  %3 = or disjoint i8 %2, %0
+  %3 = or disjoint i8 %0, %2
   ret i8 %3
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; clamav/optimized/inotif.c.ll
 ; yalantinglibs/optimized/benchmark.cpp.ll
-; yalantinglibs/optimized/serialize_config.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000008(i8 %0, i32 %1) #0 {
+define i8 @func0000000000000028(i8 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 32768
+  %2 = icmp samesign ult i32 %1, 32768
   %3 = select i1 %2, i8 0, i8 32
   %4 = or i8 %3, %0
   ret i8 %4
@@ -242,7 +237,7 @@ define i8 @func000000000000000d(i8 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 1
   %3 = select i1 %2, i8 0, i8 2
-  %4 = or disjoint i8 %3, %0
+  %4 = or disjoint i8 %0, %3
   ret i8 %4
 }
 
@@ -266,7 +261,19 @@ define i8 @func0000000000000014(i8 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 0
   %3 = select i1 %2, i8 36, i8 4
-  %4 = or i8 %3, %0
+  %4 = or i8 %0, %3
+  ret i8 %4
+}
+
+; 2 occurrences:
+; cpython/optimized/obmalloc.ll
+; mimalloc/optimized/page.c.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000029(i8 %0, i32 %1) #0 {
+entry:
+  %2 = icmp samesign ult i32 %1, 16385
+  %3 = select i1 %2, i8 34, i8 10
+  %4 = or disjoint i8 %0, %3
   ret i8 %4
 }
 

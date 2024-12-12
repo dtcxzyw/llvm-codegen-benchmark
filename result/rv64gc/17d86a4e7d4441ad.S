@@ -5,9 +5,8 @@ func0000000000000018:                   # @func0000000000000018
 	ret
 func0000000000000010:                   # @func0000000000000010
 	or	a1, a1, a2
-	li	a2, 1
-	slli	a2, a2, 33
-	sltu	a0, a2, a0
+	sltiu	a0, a0, 512
+	xori	a0, a0, 1
 	or	a0, a0, a1
 	ret
 func0000000000000014:                   # @func0000000000000014
@@ -29,7 +28,7 @@ func000000000000000c:                   # @func000000000000000c
 	or	a0, a0, a1
 	ret
 func0000000000000008:                   # @func0000000000000008
-	or	a1, a1, a2
-	sltiu	a0, a0, 959
+	sltiu	a2, a2, 256
 	or	a0, a0, a1
+	or	a0, a0, a2
 	ret

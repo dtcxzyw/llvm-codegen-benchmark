@@ -8,7 +8,7 @@ define i32 @func0000000000000000(i32 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = select i1 %1, i32 %3, i32 0
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -21,12 +21,14 @@ define i32 @func0000000000000003(i32 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
   %4 = select i1 %1, i32 %3, i32 0
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i1 %1, i8 %2) #0 {
 entry:
@@ -46,7 +48,7 @@ define i32 @func0000000000000007(i32 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
   %4 = select i1 %1, i32 %3, i32 0
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -71,7 +73,7 @@ define i32 @func0000000000000005(i32 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
   %4 = select i1 %1, i32 %3, i32 1
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 

@@ -10,7 +10,6 @@
 ; g2o/optimized/sampler.cpp.ll
 ; hermes/optimized/SamplingProfilerSampler.cpp.ll
 ; lightgbm/optimized/gradient_discretizer.cpp.ll
-; openmpi/optimized/tm_mt.ll
 ; openspiel/optimized/backgammon_test.cc.ll
 ; openspiel/optimized/mcts.cc.ll
 ; openspiel/optimized/policy.cc.ll
@@ -30,6 +29,7 @@
 ; quantlib/optimized/randomdefaultmodel.ll
 ; quantlib/optimized/sobolrsg.ll
 ; quantlib/optimized/zigguratrng.ll
+; sentencepiece/optimized/unigram_model.cc.ll
 ; velox/optimized/VectorFuzzer.cpp.ll
 ; xgboost/optimized/gbtree.cc.ll
 ; xgboost/optimized/updater_colmaker.cc.ll

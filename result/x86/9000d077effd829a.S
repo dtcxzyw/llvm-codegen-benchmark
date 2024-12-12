@@ -34,10 +34,12 @@ func000000000000000d:                   # @func000000000000000d
 	orb	%sil, %al
 	retq
 .LCPI4_0:
-	.quad	0x7ff0000000000000              # double +Inf
+	.quad	0x4000000000000000              # double 2
 func0000000000000008:                   # @func0000000000000008
 	vucomisd	.LCPI4_0(%rip), %xmm0
-	setae	%al
+	setnp	%cl
+	sete	%al
+	andb	%cl, %al
 	orb	%dil, %sil
 	orb	%sil, %al
 	retq

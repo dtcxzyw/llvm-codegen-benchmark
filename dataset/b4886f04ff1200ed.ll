@@ -1,21 +1,33 @@
 
-; 9 occurrences:
+; 6 occurrences:
 ; bdwgc/optimized/gc.c.ll
-; jemalloc/optimized/emap.ll
-; jemalloc/optimized/emap.pic.ll
-; jemalloc/optimized/emap.sym.ll
 ; linux/optimized/audit_tree.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
 ; luajit/optimized/lj_trace.ll
 ; luajit/optimized/lj_trace_dyn.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000004(ptr %0) #0 {
+define i64 @func0000000000000006(ptr %0) #0 {
 entry:
-  %1 = getelementptr nusw i8, ptr %0, i64 4096
+  %1 = getelementptr nusw nuw i8, ptr %0, i64 4096
   %2 = ptrtoint ptr %1 to i64
   %3 = lshr i64 %2, 22
   %4 = and i64 %3, 2047
+  ret i64 %4
+}
+
+; 4 occurrences:
+; bdwgc/optimized/gc.c.ll
+; jemalloc/optimized/emap.ll
+; jemalloc/optimized/emap.pic.ll
+; jemalloc/optimized/emap.sym.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000004(ptr %0) #0 {
+entry:
+  %1 = getelementptr nusw i8, ptr %0, i64 -8
+  %2 = ptrtoint ptr %1 to i64
+  %3 = lshr i64 %2, 18
+  %4 = and i64 %3, 4095
   ret i64 %4
 }
 
@@ -28,9 +40,9 @@ entry:
 ; ceres/optimized/schur_eliminator_3_3_3.cc.ll
 ; meshlab/optimized/quadric_simp.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000005(ptr %0) #0 {
+define i64 @func0000000000000007(ptr %0) #0 {
 entry:
-  %1 = getelementptr nusw i8, ptr %0, i64 96
+  %1 = getelementptr nusw nuw i8, ptr %0, i64 96
   %2 = ptrtoint ptr %1 to i64
   %3 = lshr exact i64 %2, 3
   %4 = and i64 %3, 1

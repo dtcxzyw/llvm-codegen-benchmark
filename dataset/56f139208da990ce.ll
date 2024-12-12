@@ -1,5 +1,5 @@
 
-; 224 occurrences:
+; 225 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcPrint.c.ll
@@ -11,6 +11,7 @@
 ; abc/optimized/sclDnsize.c.ll
 ; abc/optimized/sclSize.c.ll
 ; abc/optimized/sfmDec.c.ll
+; boost/optimized/approximately_equals.ll
 ; bullet3/optimized/btDeformableBackwardEulerObjective.ll
 ; bullet3/optimized/btDeformableBodySolver.ll
 ; bullet3/optimized/btGjkPairDetector.ll

@@ -1,5 +1,5 @@
 
-; 348 occurrences:
+; 347 occurrences:
 ; arrow/optimized/exec.cc.ll
 ; arrow/optimized/grouper.cc.ll
 ; arrow/optimized/row_encoder.cc.ll
@@ -222,7 +222,6 @@
 ; yosys/optimized/lattice_gsr.ll
 ; yosys/optimized/liberty.ll
 ; yosys/optimized/log.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/ltp.ll
 ; yosys/optimized/lut2mux.ll
 ; yosys/optimized/maccmap.ll
@@ -349,12 +348,12 @@
 ; zxing/optimized/PDFDetectionResult.cpp.ll
 ; zxing/optimized/PDFDetectionResultColumn.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000096(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000126(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 56
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
-  %5 = icmp sgt i64 %4, %0
+  %5 = icmp slt i64 %0, %4
   ret i1 %5
 }
 
@@ -364,24 +363,24 @@ entry:
 ; llama.cpp/optimized/llama.cpp.ll
 ; yosys/optimized/memory_bram.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000091(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000121(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 40
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; gromacs/optimized/surfacearea.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv i64 %1, 3
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
-  %5 = icmp eq i64 %4, %0
+  %5 = icmp eq i64 %0, %4
   ret i1 %5
 }
 
@@ -389,36 +388,36 @@ entry:
 ; gromacs/optimized/read_params.cpp.ll
 ; meshlab/optimized/filter_isoparametrization.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000009b(i64 %0, i64 %1) #0 {
+define i1 @func000000000000012b(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 96
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
-  %5 = icmp sle i64 %4, %0
+  %5 = icmp sge i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; opencv/optimized/onlineBoosting.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000124(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 96
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
-  %5 = icmp ugt i64 %4, %0
+  %5 = icmp ult i64 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; opencv/optimized/onlineBoosting.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000098(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000128(i64 %0, i64 %1) #0 {
 entry:
   %2 = sdiv exact i64 %1, 96
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
-  %5 = icmp ult i64 %4, %0
+  %5 = icmp ugt i64 %0, %4
   ret i1 %5
 }
 

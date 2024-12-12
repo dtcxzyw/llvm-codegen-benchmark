@@ -4,7 +4,7 @@
 ; openjdk/optimized/loopnode.ll
 ; postgres/optimized/pg_locale.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000022c(i64 %0, i32 %1) #0 {
+define i1 @func000000000000084c(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 3
   %3 = icmp eq i32 %1, 5
@@ -18,7 +18,7 @@ entry:
 ; glslang/optimized/GlslangToSpv.cpp.ll
 ; nuttx/optimized/lib_lgamma.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000221(i64 %0, i32 %1) #0 {
+define i1 @func0000000000000841(i64 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 747
   %3 = icmp eq i32 %1, 711

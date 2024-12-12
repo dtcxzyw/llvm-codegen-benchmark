@@ -36,10 +36,9 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; linux/optimized/xprt.ll
 ; llvm/optimized/Instructions.cpp.ll
-; openusd/optimized/pred_common.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i1 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -49,12 +48,11 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; hyperscan/optimized/ng_corpus_properties.cpp.ll
 ; linux/optimized/resize.ll
 ; linux/optimized/xprt.ll
 ; llvm/optimized/CombinerHelper.cpp.ll
-; openusd/optimized/pred_common.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i1 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -65,14 +63,25 @@ entry:
 }
 
 ; 1 occurrences:
-; linux/optimized/bitmap-str.ll
+; openusd/optimized/pred_common.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000009(i1 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000014(i1 %0, i32 %1, i32 %2) #0 {
 entry:
-  %.not = icmp ult i32 %1, %2
-  %3 = select i1 %.not, i32 0, i32 -34
-  %4 = select i1 %0, i32 -22, i32 %3
-  ret i32 %4
+  %3 = icmp samesign ult i32 %1, %2
+  %4 = select i1 %3, i32 0, i32 2
+  %5 = select i1 %0, i32 1, i32 %4
+  ret i32 %5
+}
+
+; 1 occurrences:
+; openusd/optimized/pred_common.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000018(i1 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i32 %1, %2
+  %4 = select i1 %3, i32 0, i32 2
+  %5 = select i1 %0, i32 1, i32 %4
+  ret i32 %5
 }
 
 ; 2 occurrences:

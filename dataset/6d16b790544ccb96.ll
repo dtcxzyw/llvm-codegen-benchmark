@@ -1,5 +1,5 @@
 
-; 69 occurrences:
+; 72 occurrences:
 ; brotli/optimized/decode.c.ll
 ; cmake/optimized/parsedate.c.ll
 ; cmake/optimized/zstd_double_fast.c.ll
@@ -67,6 +67,9 @@
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; wireshark/optimized/packet-iso14443.c.ll
 ; wireshark/optimized/search_frame.cpp.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/bktyyhuk5fekatq647qx0ox8v.ll
+; zed-rs/optimized/eldybx25av55fm0jlf5yq64qn.ll
 ; zstd/optimized/zstd_double_fast.c.ll
 ; zstd/optimized/zstd_fast.c.ll
 ; Function Attrs: nounwind
@@ -91,11 +94,12 @@ entry:
   ret i32 %3
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; coreutils-rs/optimized/1487bf2zeluccyme.ll
 ; coreutils-rs/optimized/2i3dvgzkmy2gn6v1.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-static.cc.ll
+; linux/optimized/nfs4proc.ll
 ; llvm/optimized/DataFlowSanitizer.cpp.ll
 ; llvm/optimized/TwoAddressInstructionPass.cpp.ll
 ; luau/optimized/isocline.c.ll
@@ -103,7 +107,7 @@ entry:
 ; sundials/optimized/arkode.c.ll
 ; sundials/optimized/cvode.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000014(i32 %0) #0 {
+define i32 @func0000000000000024(i32 %0) #0 {
 entry:
   %1 = add nsw i32 %0, -16
   %2 = icmp ult i32 %1, 16369

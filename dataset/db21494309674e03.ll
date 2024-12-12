@@ -1,19 +1,22 @@
 
-%"struct.rocksdb::(anonymous namespace)::Fsize.2500336" = type { i64, ptr }
-%struct.Entry.2549151 = type { %"class.mold::LittleEndian.2549086", %"class.mold::LittleEndian.2549086" }
-%"class.mold::LittleEndian.2549086" = type { [4 x i8] }
+%"struct.rocksdb::(anonymous namespace)::Fsize.2615561" = type { i64, ptr }
+%struct.Entry.2663543 = type { %"class.mold::LittleEndian.2663478", %"class.mold::LittleEndian.2663478" }
+%"class.mold::LittleEndian.2663478" = type { [4 x i8] }
+%"struct.rawspeed::IiqDecoder::IiqOffset.2873439" = type { i32, i32 }
 
-; 58 occurrences:
+; 60 occurrences:
 ; abseil-cpp/optimized/convert_test.cc.ll
 ; arrow/optimized/interfaces.cc.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/graphml.ll
+; boost/optimized/settings_parser.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; ceres/optimized/compressed_row_sparse_matrix.cc.ll
 ; cmake/optimized/cmList.cxx.ll
-; darktable/optimized/IiqDecoder.cpp.ll
 ; darktable/optimized/PhaseOneDecompressor.cpp.ll
 ; duckdb/optimized/ub_duckdb_aggr_holistic.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_persistent.cpp.ll
 ; duckdb/optimized/ub_duckdb_optimizer.cpp.ll
-; duckdb/optimized/ub_duckdb_storage_table.cpp.ll
 ; duckdb/optimized/ub_duckdb_table_func_system.cpp.ll
 ; eastl/optimized/BenchmarkSort.cpp.ll
 ; faiss/optimized/IndexPQ.cpp.ll
@@ -67,30 +70,44 @@ define ptr @func000000000000000e(ptr %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 4
   %3 = or i64 %2, 1
-  %4 = getelementptr %"struct.rocksdb::(anonymous namespace)::Fsize.2500336", ptr %0, i64 %3
+  %4 = getelementptr %"struct.rocksdb::(anonymous namespace)::Fsize.2615561", ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -32
   ret ptr %5
 }
 
-; 51 occurrences:
-; abseil-cpp/optimized/graphcycles.cc.ll
-; faiss/optimized/lattice_Zn.cpp.ll
+; 10 occurrences:
 ; faiss/optimized/sorting.cpp.ll
-; gromacs/optimized/gmx_disre.cpp.ll
 ; gromacs/optimized/pdb2gmx.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/ArgumentPromotion.cpp.ll
+; llvm/optimized/DAGCombiner.cpp.ll
+; llvm/optimized/GuardWidening.cpp.ll
+; llvm/optimized/InstrRefBasedImpl.cpp.ll
+; llvm/optimized/PromoteMemoryToRegister.cpp.ll
+; llvm/optimized/SemaLookup.cpp.ll
+; mold/optimized/arch-arm32.cc.ll
+; Function Attrs: nounwind
+define ptr @func000000000000002e(ptr %0, i64 %1) #0 {
+entry:
+  %2 = lshr exact i64 %1, 3
+  %3 = or i64 %2, 1
+  %4 = getelementptr %struct.Entry.2663543, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 -16
+  ret ptr %5
+}
+
+; 42 occurrences:
+; abseil-cpp/optimized/graphcycles.cc.ll
+; faiss/optimized/lattice_Zn.cpp.ll
+; gromacs/optimized/gmx_disre.cpp.ll
 ; llvm/optimized/AssumeBundleBuilder.cpp.ll
 ; llvm/optimized/BlockFrequencyInfoImpl.cpp.ll
 ; llvm/optimized/CodeViewDebug.cpp.ll
 ; llvm/optimized/ConstraintElimination.cpp.ll
 ; llvm/optimized/CoroFrame.cpp.ll
 ; llvm/optimized/CoverageMapping.cpp.ll
-; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/DwarfStringPool.cpp.ll
-; llvm/optimized/GuardWidening.cpp.ll
 ; llvm/optimized/IndVarSimplify.cpp.ll
-; llvm/optimized/InstrRefBasedImpl.cpp.ll
 ; llvm/optimized/InstructionCombining.cpp.ll
 ; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
 ; llvm/optimized/Metadata.cpp.ll
@@ -103,14 +120,12 @@ entry:
 ; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/SampleProfile.cpp.ll
 ; llvm/optimized/SemaCoroutine.cpp.ll
-; llvm/optimized/SemaLookup.cpp.ll
 ; llvm/optimized/SemaOverload.cpp.ll
 ; llvm/optimized/SimpleLoopUnswitch.cpp.ll
 ; llvm/optimized/StackSlotColoring.cpp.ll
 ; llvm/optimized/VPlanTransforms.cpp.ll
 ; llvm/optimized/VTableBuilder.cpp.ll
 ; llvm/optimized/VectorCombine.cpp.ll
-; mold/optimized/arch-arm32.cc.ll
 ; openusd/optimized/scopeDescription.cpp.ll
 ; openusd/optimized/stitchClips.cpp.ll
 ; velox/optimized/ArraySort.cpp.ll
@@ -125,11 +140,25 @@ entry:
 ; z3/optimized/solve_eqs.cpp.ll
 ; z3/optimized/spacer_quant_generalizer.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000002f(ptr %0, i64 %1) #0 {
 entry:
-  %2 = lshr exact i64 %1, 3
+  %2 = lshr exact i64 %1, 2
   %3 = or i64 %2, 1
-  %4 = getelementptr %struct.Entry.2549151, ptr %0, i64 %3
+  %4 = getelementptr i32, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 -8
+  ret ptr %5
+}
+
+; 3 occurrences:
+; darktable/optimized/IiqDecoder.cpp.ll
+; duckdb/optimized/ub_duckdb_storage_table.cpp.ll
+; eastl/optimized/BenchmarkSort.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000f(ptr %0, i64 %1) #0 {
+entry:
+  %2 = lshr i64 %1, 3
+  %3 = or i64 %2, 1
+  %4 = getelementptr %"struct.rawspeed::IiqDecoder::IiqOffset.2873439", ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 -16
   ret ptr %5
 }

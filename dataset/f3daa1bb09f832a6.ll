@@ -3,12 +3,12 @@
 ; abc/optimized/lpkAbcMux.c.ll
 ; abc/optimized/lpkAbcUtil.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000007f(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 1, %1
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 228
-  %5 = getelementptr nusw i32, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 228
+  %5 = getelementptr nusw nuw i32, ptr %4, i64 %3
   ret ptr %5
 }
 
@@ -18,12 +18,12 @@ entry:
 ; brotli/optimized/compound_dictionary.c.ll
 ; git/optimized/diff-delta.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000004a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000004f(ptr %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 1, %1
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 32
-  %5 = getelementptr nusw ptr, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 32
+  %5 = getelementptr nusw nuw ptr, ptr %4, i64 %3
   ret ptr %5
 }
 

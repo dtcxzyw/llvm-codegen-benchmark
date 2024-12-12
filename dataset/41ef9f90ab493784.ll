@@ -23,7 +23,7 @@
 ; wireshark/optimized/packet-vrt.c.ll
 ; wireshark/optimized/text_import_scanner.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0) #0 {
+define i1 @func0000000000000041(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 255
   %2 = shl nuw i64 1, %1
@@ -39,7 +39,7 @@ entry:
 ; php/optimized/crypt_blowfish.ll
 ; php/optimized/pcre2_compile.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i64 %0) #0 {
+define i1 @func0000000000000061(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 4294967295
   %2 = shl nuw nsw i64 1, %1
@@ -53,7 +53,7 @@ entry:
 ; postgres/optimized/syncrep_scanner.ll
 ; wireshark/optimized/candump_scanner.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i64 %0) #0 {
+define i1 @func000000000000004c(i64 %0) #0 {
 entry:
   %1 = and i64 %0, 9223372036854775807
   %2 = shl nuw i64 1, %1

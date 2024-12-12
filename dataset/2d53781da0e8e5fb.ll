@@ -15,8 +15,8 @@
 define i1 @func000000000000000c(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = sub i64 0, %1
-  %5 = icmp ne i64 %3, %4
+  %4 = sub i64 0, %3
+  %5 = icmp ne i64 %1, %4
   %6 = and i1 %5, %0
   ret i1 %6
 }
@@ -27,14 +27,13 @@ entry:
 define i1 @func0000000000000008(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = icmp ugt i64 %4, 1
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 
-; 23 occurrences:
-; linux/optimized/csum-wrappers_64.ll
+; 20 occurrences:
 ; linux/optimized/devio.ll
 ; linux/optimized/evdev.ll
 ; linux/optimized/eventpoll.ll
@@ -47,8 +46,6 @@ entry:
 ; linux/optimized/mempolicy.ll
 ; linux/optimized/printk.ll
 ; linux/optimized/read_write.ll
-; linux/optimized/readdir.ll
-; linux/optimized/rseq.ll
 ; linux/optimized/scm.ll
 ; linux/optimized/select.ll
 ; linux/optimized/seq_clientmgr.ll
@@ -61,7 +58,7 @@ entry:
 define i1 @func000000000000000a(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = icmp sgt i64 %4, -1
   %6 = and i1 %5, %0
   ret i1 %6
@@ -75,9 +72,9 @@ entry:
 define i1 @func0000000000000004(i1 %0, i64 %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
-  %4 = add i64 %3, %1
+  %4 = add i64 %1, %3
   %5 = icmp ult i64 %4, 8192
-  %6 = and i1 %5, %0
+  %6 = and i1 %0, %5
   ret i1 %6
 }
 

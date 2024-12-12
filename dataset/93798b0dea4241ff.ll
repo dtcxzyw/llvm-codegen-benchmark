@@ -1,7 +1,7 @@
 
-%class.aiVector3t.2710569 = type { double, double, double }
+%class.aiVector3t.2823159 = type { double, double, double }
 
-; 185 occurrences:
+; 220 occurrences:
 ; abc/optimized/ioReadBaf.c.ll
 ; abseil-cpp/optimized/cord.cc.ll
 ; abseil-cpp/optimized/cord_rep_crc_test.cc.ll
@@ -12,8 +12,46 @@
 ; assimp/optimized/BlenderLoader.cpp.ll
 ; assimp/optimized/COBLoader.cpp.ll
 ; assimp/optimized/IFCOpenings.cpp.ll
-; casadi/optimized/bspline.cpp.ll
-; casadi/optimized/bspline_interpolant.cpp.ll
+; boost/optimized/area.ll
+; boost/optimized/args_cmd.ll
+; boost/optimized/args_handling.ll
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/attribute_name.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdin_stdout.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/close_stderr.ll
+; boost/optimized/close_stdin.ll
+; boost/optimized/close_stdout.ll
+; boost/optimized/cmd_test.ll
+; boost/optimized/env.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/extensions.ll
+; boost/optimized/group.ll
+; boost/optimized/group_wait.ll
+; boost/optimized/limit_fd.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/pipe_fwd.ll
+; boost/optimized/posix_specific.ll
+; boost/optimized/run_exe.ll
+; boost/optimized/run_exe_path.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/spawn.ll
+; boost/optimized/start_dir.ll
+; boost/optimized/sub_launcher.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/terminate.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/wait.ll
+; boost/optimized/wait_for.ll
+; boost/optimized/wargs_cmd.ll
 ; cmake/optimized/cmCTestBuildHandler.cxx.ll
 ; cmake/optimized/json_reader.cpp.ll
 ; cvc5/optimized/cadical.cpp.ll
@@ -91,7 +129,6 @@
 ; openblas/optimized/dgemm_itcopy.c.ll
 ; opencv/optimized/canny.cpp.ll
 ; opencv/optimized/cap_mjpeg_decoder.cpp.ll
-; opencv/optimized/digits_svm.cpp.ll
 ; opencv/optimized/erfilter.cpp.ll
 ; openusd/optimized/extComputationPrimvarPruningSceneIndex.cpp.ll
 ; openusd/optimized/instanceAdapter.cpp.ll
@@ -130,8 +167,6 @@
 ; rocksdb/optimized/rate_limiter.cc.ll
 ; rocksdb/optimized/seqno_to_time_mapping.cc.ll
 ; rocksdb/optimized/stringappend2.cc.ll
-; sentencepiece/optimized/builder.cc.ll
-; sentencepiece/optimized/unigram_model_trainer.cc.ll
 ; spike/optimized/htif_pthread.ll
 ; spike/optimized/socketif.ll
 ; spike/optimized/tsi.ll
@@ -214,11 +249,11 @@ entry:
 ; abc/optimized/wlcBlast.c.ll
 ; openjdk/optimized/dither.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000003e(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func000000000000003f(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw nsw i64 %2, 3
   %4 = sub nuw nsw i64 %1, %3
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -246,7 +281,7 @@ define ptr @func0000000000000010(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nsw i64 %2, 3
   %4 = sub i64 %1, %3
-  %5 = getelementptr %class.aiVector3t.2710569, ptr %0, i64 %4
+  %5 = getelementptr %class.aiVector3t.2823159, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -275,7 +310,7 @@ entry:
   ret ptr %5
 }
 
-; 10 occurrences:
+; 12 occurrences:
 ; abc/optimized/cbaBlast.c.ll
 ; abc/optimized/ifDelay.c.ll
 ; abc/optimized/ifDsd.c.ll
@@ -283,6 +318,8 @@ entry:
 ; abc/optimized/wlcBlast.c.ll
 ; cmake/optimized/huf_decompress.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
+; hwloc/optimized/topology-linux.ll
+; lightgbm/optimized/linker_topo.cpp.ll
 ; llvm/optimized/RewriteStatepointsForGC.cpp.ll
 ; luajit/optimized/minilua.ll
 ; zstd/optimized/huf_decompress.c.ll
@@ -295,10 +332,12 @@ entry:
   ret ptr %5
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; eastl/optimized/TestAlgorithm.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/LoadStoreOpt.cpp.ll
+; opencv/optimized/onnx_importer.cpp.ll
+; opencv/optimized/tf_importer.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000036(ptr %0, i64 %1, i64 %2) #0 {
 entry:
@@ -380,14 +419,30 @@ entry:
   ret ptr %5
 }
 
+; 6 occurrences:
+; casadi/optimized/bspline.cpp.ll
+; casadi/optimized/bspline_interpolant.cpp.ll
+; cvc5/optimized/core_solver.cpp.ll
+; opencv/optimized/digits_svm.cpp.ll
+; sentencepiece/optimized/builder.cc.ll
+; sentencepiece/optimized/unigram_model_trainer.cc.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000017(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl nsw i64 %2, 2
+  %4 = sub nsw i64 %1, %3
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
+  ret ptr %5
+}
+
 ; 1 occurrences:
 ; proj/optimized/networkfilemanager.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000026(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000027(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl nuw i64 %2, 14
   %4 = sub nsw i64 %1, %3
-  %5 = getelementptr nusw i8, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i8, ptr %0, i64 %4
   ret ptr %5
 }
 

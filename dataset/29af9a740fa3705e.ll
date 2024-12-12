@@ -1,5 +1,5 @@
 
-; 333 occurrences:
+; 334 occurrences:
 ; assimp/optimized/X3DImporter_Postprocess.cpp.ll
 ; cmake/optimized/archive_string.c.ll
 ; cpython/optimized/unicodedata.ll
@@ -20,8 +20,8 @@
 ; fmt/optimized/unicode-test.cc.ll
 ; fmt/optimized/util.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
+; icu/optimized/erarules.ll
 ; icu/optimized/icuexportdata.ll
-; icu/optimized/simpletz.ll
 ; icu/optimized/ucnvscsu.ll
 ; icu/optimized/ucptrie.ll
 ; lief/optimized/ASN1Reader.cpp.ll
@@ -101,6 +101,7 @@
 ; llvm/optimized/X86EncodingOptimization.cpp.ll
 ; llvm/optimized/X86MCInstLower.cpp.ll
 ; llvm/optimized/YAMLParser.cpp.ll
+; lvgl/optimized/lv_span.ll
 ; meshlab/optimized/Scanner.cpp.ll
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
@@ -334,17 +335,17 @@
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000408(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000808(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, 3
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = add i32 %1, -2000
   %6 = icmp ult i32 %5, 31
   %7 = or i1 %6, %4
   ret i1 %7
 }
 
-; 115 occurrences:
+; 119 occurrences:
 ; cmake/optimized/archive_string.c.ll
 ; cmake/optimized/testProcess.c.ll
 ; fmt/optimized/format-impl-test.cc.ll
@@ -427,6 +428,9 @@ entry:
 ; lief/optimized/hash_stream.cpp.ll
 ; lief/optimized/x509.cpp.ll
 ; lightgbm/optimized/tree.cpp.ll
+; lvgl/optimized/lv_draw_label.ll
+; lvgl/optimized/lv_font.ll
+; lvgl/optimized/lv_span.ll
 ; meshlab/optimized/Scanner.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; nori/optimized/nanovg.c.ll
@@ -459,9 +463,10 @@ entry:
 ; tokenizers-rs/optimized/4hn9gefsll13qr1r.ll
 ; vcpkg/optimized/parse.cpp.ll
 ; yaml-cpp/optimized/emitterutils.cpp.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000208(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 1600
   %4 = or i1 %3, %0
@@ -649,10 +654,10 @@ entry:
 ; vcpkg/optimized/versiondeserializers.cpp.ll
 ; vcpkg/optimized/versions.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000448(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000888(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ult i32 %2, -3875
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = add nsw i32 %1, -1938
   %6 = icmp ult i32 %5, -3875
   %7 = or i1 %6, %4
@@ -663,10 +668,10 @@ entry:
 ; openblas/optimized/cblas_dimatcopy.c.ll
 ; openjdk/optimized/mlib_ImageCreate.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000608(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000c08(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 1
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = add i32 %1, -5
   %6 = icmp ult i32 %5, -4
   %7 = or i1 %6, %4
@@ -676,21 +681,20 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/imageioJPEG.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000210(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000410(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -5
   %4 = icmp ult i32 %3, -4
   %5 = icmp ugt i32 %1, 5
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   %7 = or i1 %6, %4
   ret i1 %7
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; hermes/optimized/Executor.cpp.ll
-; icu/optimized/erarules.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000110(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000210(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -48
   %4 = icmp ult i32 %3, 10
@@ -703,10 +707,10 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/MCWin64EH.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000148(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000288(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = add nsw i32 %1, -40
   %6 = icmp ult i32 %5, -11
   %7 = or i1 %6, %4
@@ -716,7 +720,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/MCWin64EH.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c48(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000001888(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = or i1 %3, %0
@@ -729,12 +733,12 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaDecl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000450(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000001090(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -44
   %4 = icmp ult i32 %3, -7
   %5 = icmp eq i32 %1, 0
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   %7 = or i1 %6, %4
   ret i1 %7
 }
@@ -742,7 +746,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/deflate.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000c08(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000001808(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 8
   %4 = or i1 %3, %0
@@ -755,21 +759,20 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/theory_array_full.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000050(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000090(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -11
   %4 = icmp ult i32 %3, 3
   %5 = icmp eq i32 %1, 4
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   %7 = or i1 %6, %4
   ret i1 %7
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; icu/optimized/olsontz.ll
-; icu/optimized/simpletz.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000808(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000001008(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %2, 86399999
   %4 = or i1 %3, %0
@@ -783,12 +786,12 @@ entry:
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
 ; libwebp/optimized/quant_levels_utils.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000190(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000310(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, -7
   %4 = icmp ult i32 %3, -8
   %5 = icmp slt i32 %1, 1
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   %7 = or i1 %6, %4
   ret i1 %7
 }
@@ -796,12 +799,12 @@ entry:
 ; 1 occurrences:
 ; libjpeg-turbo/optimized/turbojpeg.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000590(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000001310(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -7
   %4 = icmp ult i32 %3, -8
   %5 = icmp slt i32 %1, 1
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   %7 = or i1 %6, %4
   ret i1 %7
 }

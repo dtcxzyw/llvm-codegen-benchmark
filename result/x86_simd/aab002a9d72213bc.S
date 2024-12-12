@@ -1,4 +1,4 @@
-func000000000000004a:                   # @func000000000000004a
+func000000000000008a:                   # @func000000000000008a
 	vpcmpeqq	%ymm2, %ymm1, %k1
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vmovdqa64	%ymm0, %ymm1 {%k1}
@@ -6,7 +6,7 @@ func000000000000004a:                   # @func000000000000004a
 	vpsraq	$63, %ymm1, %ymm1
 	vpor	%ymm0, %ymm1, %ymm0
 	retq
-func000000000000006a:                   # @func000000000000006a
+func00000000000000ca:                   # @func00000000000000ca
 	vpcmpeqq	%ymm2, %ymm1, %k1
 	vpcmpeqd	%ymm1, %ymm1, %ymm1
 	vmovdqa64	%ymm0, %ymm1 {%k1}

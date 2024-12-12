@@ -1,6 +1,7 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; abc/optimized/covMinSop.c.ll
+; abc/optimized/dauDsd.c.ll
 ; libsodium/optimized/libsodium_la-codecs.ll
 ; lief/optimized/constant_time.c.ll
 ; linux/optimized/aspm.ll

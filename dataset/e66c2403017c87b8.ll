@@ -27,7 +27,16 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
+; 14 occurrences:
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; gromacs/optimized/gmx_traj.cpp.ll
 ; msdfgen/optimized/MSDFErrorCorrection.cpp.ll
 ; opencv/optimized/facemarkAAM.cpp.ll
@@ -38,6 +47,26 @@ define i1 @func000000000000006a(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ult double %2, %1
   %4 = fcmp ugt double %0, %1
+  %5 = or i1 %4, %3
+  ret i1 %5
+}
+
+; 10 occurrences:
+; boost/optimized/difference_pl_a.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/intersection_pl_a.ll
+; boost/optimized/intersection_pl_l.ll
+; boost/optimized/select_rings.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/within.ll
+; boost/optimized/within_multi.ll
+; boost/optimized/within_pointlike_geometry.ll
+; postgres/optimized/geo_ops.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000a6(double %0, double %1, double %2) #0 {
+entry:
+  %3 = fcmp ugt double %2, %1
+  %4 = fcmp ult double %0, %1
   %5 = or i1 %4, %3
   ret i1 %5
 }
@@ -60,17 +89,6 @@ define i1 @func0000000000000048(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp olt double %2, %1
   %4 = fcmp ogt double %0, %1
-  %5 = or i1 %4, %3
-  ret i1 %5
-}
-
-; 1 occurrences:
-; postgres/optimized/geo_ops.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000a6(double %0, double %1, double %2) #0 {
-entry:
-  %3 = fcmp ugt double %2, %1
-  %4 = fcmp ult double %0, %1
   %5 = or i1 %4, %3
   ret i1 %5
 }

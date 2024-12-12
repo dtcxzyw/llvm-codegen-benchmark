@@ -1,5 +1,5 @@
 
-; 10 occurrences:
+; 9 occurrences:
 ; annoy/optimized/annoymodule.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
@@ -8,7 +8,6 @@
 ; cpython/optimized/mpdecimal.ll
 ; eastl/optimized/Int128_t.cpp.ll
 ; lief/optimized/bignum.c.ll
-; linux/optimized/generic_mpih-add1.ll
 ; qemu/optimized/util_cutils.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1, i64 %2) #0 {
@@ -26,7 +25,7 @@ entry:
 ; cpython/optimized/crt.ll
 ; spike/optimized/f128_sqrt.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000108(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000208(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nuw i64 %1, %2
   %4 = xor i64 %0, -1

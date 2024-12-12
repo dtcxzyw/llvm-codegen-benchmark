@@ -1,4 +1,18 @@
 
+; 4 occurrences:
+; verilator/optimized/V3EmitCConstPool.cpp.ll
+; verilator/optimized/V3EmitCHeaders.cpp.ll
+; verilator/optimized/V3EmitCImp.cpp.ll
+; verilator/optimized/V3EmitCModel.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000082(double %0, double %1, double %2) #0 {
+entry:
+  %3 = fcmp oeq double %1, %2
+  %4 = fcmp olt double %0, 1.000000e+03
+  %5 = and i1 %4, %3
+  ret i1 %5
+}
+
 ; 1 occurrences:
 ; php/optimized/zend_operators.ll
 ; Function Attrs: nounwind
@@ -21,7 +35,22 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
+; 16 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/partition.ll
+; boost/optimized/rational.ll
 ; php/optimized/math.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000042(double %0, double %1, double %2) #0 {
@@ -73,7 +102,22 @@ entry:
   ret i1 %5
 }
 
-; 8 occurrences:
+; 23 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/area_box_sg.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/convex_hull_sph_geo.ll
+; boost/optimized/envelope_multi.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/intersection_box.ll
+; boost/optimized/math_divide.ll
+; boost/optimized/math_sqrt.ll
+; boost/optimized/partition.ll
+; boost/optimized/rational.ll
 ; graphviz/optimized/position.c.ll
 ; graphviz/optimized/rank.c.ll
 ; opencv/optimized/calibinit.cpp.ll
@@ -120,6 +164,17 @@ define i1 @func00000000000000a2(double %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ole double %2, 0x3D19000000000000
   %4 = fcmp olt double %0, %1
+  %5 = and i1 %4, %3
+  ret i1 %5
+}
+
+; 1 occurrences:
+; boost/optimized/convex_hull_sph_geo.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000a6(double %0, double %1, double %2) #0 {
+entry:
+  %3 = fcmp ole double %1, %2
+  %4 = fcmp one double %0, 0x7FF0000000000000
   %5 = and i1 %4, %3
   ret i1 %5
 }

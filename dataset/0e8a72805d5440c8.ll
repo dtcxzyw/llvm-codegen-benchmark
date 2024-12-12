@@ -1,5 +1,5 @@
 
-; 128 occurrences:
+; 127 occurrences:
 ; abc/optimized/sclLibUtil.c.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -60,7 +60,6 @@
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_developability.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_sampling.cpp.ll

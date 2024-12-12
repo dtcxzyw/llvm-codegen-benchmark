@@ -2,6 +2,10 @@ func0000000000000001:                   # @func0000000000000001
 	leal	71(%rsi,%rdi), %eax
 	movzbl	%al, %eax
 	retq
+func0000000000000015:                   # @func0000000000000015
+	leal	1(%rsi,%rdi), %eax
+	andl	$3, %eax
+	retq
 func000000000000000b:                   # @func000000000000000b
 	leal	25(%rsi,%rdi), %eax
 	andl	$31, %eax

@@ -11,12 +11,12 @@
 define ptr @func000000000000000c(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 1
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = select i1 %4, ptr null, ptr %0
   ret ptr %5
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; git/optimized/kwset.ll
 ; nuklear/optimized/unity.c.ll
 ; openjdk/optimized/classFileParser.ll
@@ -24,6 +24,7 @@ entry:
 ; php/optimized/pcre2_match.ll
 ; qemu/optimized/block_qcow2-refcount.c.ll
 ; tinympc/optimized/tiny_api.cpp.ll
+; zed-rs/optimized/9tt6eh72scdop5d6biwv5himz.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i1 %1, i32 %2) #0 {
 entry:
@@ -53,7 +54,7 @@ entry:
 define ptr @func0000000000000010(ptr %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %2, 199
-  %4 = or i1 %3, %1
+  %4 = or i1 %1, %3
   %5 = select i1 %4, ptr null, ptr %0
   ret ptr %5
 }

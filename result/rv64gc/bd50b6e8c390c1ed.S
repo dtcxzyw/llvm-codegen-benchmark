@@ -26,3 +26,9 @@ func000000000000000c:                   # @func000000000000000c
 	fmv.w.x	fa0, a0
 .LBB3_2:                                # %entry
 	ret
+func0000000000000006:                   # @func0000000000000006
+	sext.w	a0, a0
+	bltz	a0, .LBB4_2
+	fmv.w.x	fa0, zero
+.LBB4_2:                                # %entry
+	ret

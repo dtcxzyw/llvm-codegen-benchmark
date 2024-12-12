@@ -15,6 +15,17 @@ entry:
   ret i64 %3
 }
 
+; 1 occurrences:
+; boost/optimized/default_filter_factory.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(i32 %0) #0 {
+entry:
+  %1 = add i32 %0, -48
+  %2 = zext nneg i32 %1 to i64
+  %3 = or disjoint i64 %2, -9223372036854775808
+  ret i64 %3
+}
+
 ; 3 occurrences:
 ; clamav/optimized/regcomp.c.ll
 ; hermes/optimized/regcomp.c.ll

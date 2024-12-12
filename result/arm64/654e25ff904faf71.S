@@ -14,14 +14,14 @@ func0000000000000002:                   // @func0000000000000002
 	madd	x0, x1, x9, x8
 	ret
                                         // -- End function
-func000000000000003a:                   // @func000000000000003a
+func000000000000003b:                   // @func000000000000003b
 // %bb.0:                               // %entry
 	madd	x8, x2, x1, x0
 	mov	w9, #24                         // =0x18
 	madd	x0, x1, x9, x8
 	ret
                                         // -- End function
-func000000000000007a:                   // @func000000000000007a
+func000000000000007b:                   // @func000000000000007b
 // %bb.0:                               // %entry
 	mul	x8, x1, x2
 	mov	w9, #12                         // =0xc

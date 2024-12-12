@@ -96,7 +96,8 @@ entry:
   ret i64 %4
 }
 
-; 27 occurrences:
+; 28 occurrences:
+; boost/optimized/message.ll
 ; casadi/optimized/sparsity.cpp.ll
 ; casadi/optimized/sparsity_internal.cpp.ll
 ; gromacs/optimized/gmx_hbond.cpp.ll

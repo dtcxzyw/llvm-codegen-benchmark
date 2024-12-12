@@ -1,4 +1,4 @@
-func0000000000000121:                   // @func0000000000000121
+func0000000000000241:                   // @func0000000000000241
 // %bb.0:                               // %entry
 	umulh	x8, x0, x2
 	mov	x9, #274877906943               // =0x3fffffffff
@@ -8,7 +8,7 @@ func0000000000000121:                   // @func0000000000000121
 	cset	w0, eq
 	ret
                                         // -- End function
-func000000000000012c:                   // @func000000000000012c
+func000000000000024c:                   // @func000000000000024c
 // %bb.0:                               // %entry
 	umulh	x8, x0, x2
 	madd	w8, w0, w3, w8

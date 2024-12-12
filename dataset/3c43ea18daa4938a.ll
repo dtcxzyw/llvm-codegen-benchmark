@@ -4,7 +4,7 @@
 ; quantlib/optimized/energybasisswap.ll
 ; quantlib/optimized/energyvanillaswap.ll
 ; Function Attrs: nounwind
-define double @func0000000000000011(i32 %0, double %1) #0 {
+define double @func0000000000000021(i32 %0, double %1) #0 {
 entry:
   %2 = uitofp nneg i32 %0 to double
   %3 = fdiv double %1, %2

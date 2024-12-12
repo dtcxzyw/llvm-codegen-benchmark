@@ -20,7 +20,7 @@
 ; yosys/optimized/cxxrtl_backend.ll
 ; yosys/optimized/fmt.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000074(i8 %0) #0 {
+define i8 @func00000000000000e4(i8 %0) #0 {
 entry:
   %1 = lshr i8 %0, 4
   %2 = or disjoint i8 %1, 48

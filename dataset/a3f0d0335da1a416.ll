@@ -1,5 +1,6 @@
 
-; 13 occurrences:
+; 14 occurrences:
+; boost/optimized/xml_grammar.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; folly/optimized/RangeCommon.cpp.ll
 ; hermes/optimized/StringRef.cpp.ll

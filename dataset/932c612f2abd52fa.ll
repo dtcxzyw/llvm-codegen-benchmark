@@ -1,5 +1,6 @@
 
-; 170 occurrences:
+; 173 occurrences:
+; boost/optimized/to_chars.ll
 ; cmake/optimized/fs.c.ll
 ; cpython/optimized/Hacl_Hash_MD5.ll
 ; cpython/optimized/Hacl_Hash_SHA1.ll
@@ -18,6 +19,7 @@
 ; hdf5/optimized/H5Dchunk.c.ll
 ; hermes/optimized/dtoa.c.ll
 ; icu/optimized/smpdtfmt.ll
+; icu/optimized/ubidiwrt.ll
 ; icu/optimized/utext.ll
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
@@ -100,11 +102,12 @@
 ; linux/optimized/lbr.ll
 ; linux/optimized/power_supply_core.ll
 ; llvm/optimized/LiveDebugVariables.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
+; lvgl/optimized/lv_spinbox.ll
 ; ninja/optimized/build.cc.ll
 ; node/optimized/fs.ll
 ; openblas/optimized/cblas_dimatcopy.c.ll
 ; openblas/optimized/dimatcopy.c.ll
-; opencv/optimized/binary_descriptor.cpp.ll
 ; opencv/optimized/contours_new.cpp.ll
 ; opencv/optimized/detection_output_layer.cpp.ll
 ; opencv/optimized/geometry.cpp.ll
@@ -157,7 +160,6 @@
 ; wireshark/optimized/catapult_dct2000.c.ll
 ; wireshark/optimized/commview.c.ll
 ; wireshark/optimized/cosine.c.ll
-; wireshark/optimized/daintree-sna.c.ll
 ; wireshark/optimized/dbs-etherwatch.c.ll
 ; wireshark/optimized/dct3trace.c.ll
 ; wireshark/optimized/eri_enb_log.c.ll
@@ -169,6 +171,7 @@
 ; wireshark/optimized/vms.c.ll
 ; wolfssl/optimized/asn.c.ll
 ; yyjson/optimized/yyjson.c.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
 ; zxing/optimized/DMDataBlock.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i1 %0, i1 %1) #0 {

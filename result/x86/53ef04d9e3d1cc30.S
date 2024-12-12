@@ -1,31 +1,30 @@
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	movslq	%esi, %rax
-	cmpq	%rdi, %rax
+	cmpq	%rax, %rdi
 	sete	%al
 	retq
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	movslq	%esi, %rax
 	xorq	%rdi, %rax
-	shlq	$2, %rax
-	testq	%rax, %rax
+	shlq	$4, %rax
 	sete	%al
 	retq
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	movslq	%esi, %rax
 	shlq	$2, %rax
 	addq	%rdi, %rdi
 	cmpq	%rax, %rdi
 	setg	%al
 	retq
-func0000000000000078:                   # @func0000000000000078
+func00000000000000e8:                   # @func00000000000000e8
 	movslq	%esi, %rax
 	shlq	$10, %rax
 	shlq	$4, %rdi
 	cmpq	%rax, %rdi
 	seta	%al
 	retq
-func0000000000000058:                   # @func0000000000000058
+func00000000000000a8:                   # @func00000000000000a8
 	movslq	%esi, %rax
-	cmpq	%rdi, %rax
-	setb	%al
+	cmpq	%rax, %rdi
+	seta	%al
 	retq

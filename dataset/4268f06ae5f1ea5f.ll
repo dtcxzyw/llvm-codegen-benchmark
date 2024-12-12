@@ -1,6 +1,5 @@
 
-; 4 occurrences:
-; opencv/optimized/mathfuncs.cpp.ll
+; 3 occurrences:
 ; sentencepiece/optimized/structurally_valid.cc.ll
 ; yalantinglibs/optimized/channel.cpp.ll
 ; yalantinglibs/optimized/example.cpp.ll

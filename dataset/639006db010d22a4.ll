@@ -16,7 +16,7 @@ define i64 @func000000000000003c(i32 %0, i64 %1) #0 {
 entry:
   %.tr = trunc i64 %1 to i32
   %2 = shl i32 %.tr, 1
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
@@ -28,7 +28,7 @@ define i64 @func0000000000000030(i32 %0, i64 %1) #0 {
 entry:
   %.tr = trunc i64 %1 to i32
   %2 = shl i32 %.tr, 2
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
@@ -40,7 +40,7 @@ define i64 @func0000000000000034(i32 %0, i64 %1) #0 {
 entry:
   %.tr = trunc i64 %1 to i32
   %2 = shl i32 %.tr, 1
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }
@@ -52,7 +52,7 @@ define i64 @func0000000000000010(i32 %0, i64 %1) #0 {
 entry:
   %.tr = trunc i64 %1 to i32
   %2 = shl i32 %.tr, 1
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = sext i32 %3 to i64
   ret i64 %4
 }

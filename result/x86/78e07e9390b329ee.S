@@ -1,10 +1,10 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	leal	-1(%rdi), %ecx
 	xorl	%eax, %eax
 	testb	$1, %sil
 	cmovel	%ecx, %eax
 	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	leal	1(%rdi), %ecx
 	testb	$8, %sil
 	movl	$1, %eax

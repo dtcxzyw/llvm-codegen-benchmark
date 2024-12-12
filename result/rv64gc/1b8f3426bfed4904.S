@@ -12,6 +12,13 @@ func0000000000000175:                   # @func0000000000000175
 	add	a0, a0, a1
 	addiw	a0, a0, -528
 	ret
+func0000000000000177:                   # @func0000000000000177
+	add	a1, a1, a2
+	li	a2, 10
+	mul	a1, a1, a2
+	add	a0, a0, a1
+	addiw	a0, a0, -528
+	ret
 func00000000000001f5:                   # @func00000000000001f5
 	add	a1, a1, a2
 	addi	a1, a1, -480

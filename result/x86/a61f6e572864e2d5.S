@@ -14,7 +14,7 @@ func0000000000000005:                   # @func0000000000000005
 	movzbl	%dil, %eax
 	retq
 func0000000000000000:                   # @func0000000000000000
-	addb	%dil, %dil
+	shlb	$5, %dil
 	andb	$-128, %dil
 	movzbl	%dil, %eax
 	retq

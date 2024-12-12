@@ -3,7 +3,7 @@
 ; opencv/optimized/array.cpp.ll
 ; velox/optimized/CastExpr.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000026(i64 %0) #0 {
+define i32 @func0000000000000046(i64 %0) #0 {
 entry:
   %1 = lshr i64 %0, 32
   %2 = trunc nuw i64 %1 to i32

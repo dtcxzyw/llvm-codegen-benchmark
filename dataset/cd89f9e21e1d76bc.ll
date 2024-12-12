@@ -1,6 +1,7 @@
 
-%"struct.V3NumberData::ValueAndX.2636811" = type { i32, i32 }
-%struct.aiFace.2712966 = type { i32, ptr }
+%"struct.V3NumberData::ValueAndX.2750129" = type { i32, i32 }
+%struct.aiFace.2825500 = type { i32, ptr }
+%struct.Amap_Pin_t_.2877322 = type { ptr, i32, double, double, double, double, double, double, double }
 
 ; 44 occurrences:
 ; protobuf/optimized/arena.cc.ll
@@ -48,12 +49,12 @@
 ; verilator/optimized/V3WidthCommit.cpp.ll
 ; verilator/optimized/V3WidthSel.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000121(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000261(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 5
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr %"struct.V3NumberData::ValueAndX.2636811", ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %0, i64 8
+  %5 = getelementptr %"struct.V3NumberData::ValueAndX.2750129", ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 8
   %7 = icmp eq ptr %6, %5
   ret i1 %7
 }
@@ -80,28 +81,40 @@ entry:
 ; llvm/optimized/TypePrinter.cpp.ll
 ; llvm/optimized/USRGeneration.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a1(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000003e1(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 1
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw %struct.aiFace.2712966, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %0, i64 16
+  %5 = getelementptr nusw nuw %struct.aiFace.2825500, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 16
   %7 = icmp eq ptr %6, %5
   ret i1 %7
 }
 
-; 4 occurrences:
+; 1 occurrences:
 ; abc/optimized/aigRet.c.ll
+; Function Attrs: nounwind
+define i1 @func00000000000003c4(ptr %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = lshr i32 %2, 12
+  %4 = zext nneg i32 %3 to i64
+  %5 = getelementptr nusw nuw i32, ptr %1, i64 %4
+  %6 = getelementptr nusw i8, ptr %0, i64 -4
+  %7 = icmp ult ptr %6, %5
+  ret i1 %7
+}
+
+; 3 occurrences:
 ; abc/optimized/amapLib.c.ll
 ; abc/optimized/amapParse.c.ll
 ; abc/optimized/amapRead.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a4(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func00000000000003e4(ptr %0, ptr %1, i32 %2) #0 {
 entry:
-  %3 = lshr i32 %2, 12
+  %3 = lshr i32 %2, 24
   %4 = zext nneg i32 %3 to i64
-  %5 = getelementptr nusw i32, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %0, i64 -4
+  %5 = getelementptr nusw nuw %struct.Amap_Pin_t_.2877322, ptr %1, i64 %4
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 72
   %7 = icmp ult ptr %6, %5
   ret i1 %7
 }
@@ -110,7 +123,7 @@ entry:
 ; postgres/optimized/ascii.ll
 ; postgres/optimized/varbit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000201(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 2
   %4 = zext nneg i32 %3 to i64
@@ -123,7 +136,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/varbit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000104(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000204(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 2
   %4 = zext nneg i32 %3 to i64
@@ -136,12 +149,12 @@ entry:
 ; 1 occurrences:
 ; hyperscan/optimized/castle.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000124(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func0000000000000264(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = lshr i32 %2, 3
   %4 = zext nneg i32 %3 to i64
   %5 = getelementptr i8, ptr %1, i64 %4
-  %6 = getelementptr nusw i8, ptr %0, i64 8
+  %6 = getelementptr nusw nuw i8, ptr %0, i64 8
   %7 = icmp ult ptr %6, %5
   ret i1 %7
 }

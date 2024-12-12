@@ -34,7 +34,7 @@
 ; wireshark/optimized/packet-umts_fp.c.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 41
   %4 = select i1 %1, i1 %3, i1 false
@@ -52,7 +52,7 @@ entry:
 ; php/optimized/pcre2_compile.ll
 ; zlib/optimized/inftrees.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000108(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %2, 255
   %4 = select i1 %1, i1 %3, i1 false
@@ -65,7 +65,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000aa(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func000000000000014a(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp sgt i32 %2, 7
   %4 = select i1 %1, i1 %3, i1 false

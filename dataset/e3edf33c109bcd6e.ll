@@ -6,7 +6,7 @@
 define i64 @func0000000000000040(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %2, 1
-  %4 = add i64 %3, %0
+  %4 = add i64 %0, %3
   %5 = shl i64 %1, 1
   %6 = add i64 %4, %5
   ret i64 %6
@@ -26,20 +26,6 @@ entry:
   ret i64 %6
 }
 
-; 3 occurrences:
-; opencv/optimized/softfloat.cpp.ll
-; spike/optimized/f16_to_f128.ll
-; spike/optimized/f16_to_f64.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000050(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = or disjoint i64 %2, 4539628424389459968
-  %4 = add i64 %3, %0
-  %5 = shl nsw i64 %1, 52
-  %6 = add i64 %4, %5
-  ret i64 %6
-}
-
 ; 4 occurrences:
 ; softposit-rs/optimized/1jooigl29qhneyer.ll
 ; softposit-rs/optimized/4wrr62dd33canpwl.ll
@@ -51,6 +37,18 @@ entry:
   %3 = or disjoint i64 %2, 4607182418800017408
   %4 = add i64 %3, %0
   %5 = shl nuw nsw i64 %1, 52
+  %6 = add i64 %4, %5
+  ret i64 %6
+}
+
+; 1 occurrences:
+; opencv/optimized/softfloat.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000050(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = or disjoint i64 %2, 4035225266123964416
+  %4 = add i64 %3, %0
+  %5 = shl nsw i64 %1, 52
   %6 = add i64 %4, %5
   ret i64 %6
 }

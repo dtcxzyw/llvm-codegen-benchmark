@@ -86,7 +86,7 @@ entry:
   ret i32 %6
 }
 
-; 69 occurrences:
+; 70 occurrences:
 ; assimp/optimized/IRRLoader.cpp.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_2.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_3.cc.ll
@@ -156,6 +156,7 @@ entry:
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; wasmedge/optimized/controlInstr.cpp.ll
 ; yosys/optimized/equiv_simple.ll
+; yosys/optimized/shregmap.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i32 %0, i64 %1, i64 %2) #0 {
 entry:

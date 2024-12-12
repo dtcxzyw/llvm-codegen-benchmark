@@ -25,7 +25,9 @@ func0000000000000009:                   # @func0000000000000009
 	ret
 func000000000000000c:                   # @func000000000000000c
 	addi	a1, a1, 256
-	srliw	a1, a1, 16
-	slli	a1, a1, 8
+	lui	a2, 2048
+	srli	a1, a1, 8
+	addiw	a2, a2, -256
+	and	a1, a1, a2
 	or	a0, a0, a1
 	ret

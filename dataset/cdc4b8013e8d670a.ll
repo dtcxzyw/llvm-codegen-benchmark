@@ -1,15 +1,4 @@
 
-; 1 occurrences:
-; mitsuba3/optimized/x86func.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000003(i1 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = shl i32 %2, 16
-  %4 = select i1 %0, i32 201326592, i32 %1
-  %5 = add nuw nsw i32 %4, %3
-  ret i32 %5
-}
-
 ; 3 occurrences:
 ; abc/optimized/giaStr.c.ll
 ; freetype/optimized/sfnt.c.ll

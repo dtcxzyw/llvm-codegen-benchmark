@@ -15,6 +15,19 @@ entry:
   ret i64 %6
 }
 
+; 2 occurrences:
+; zed-rs/optimized/5y1wnv46c80h8ez08dncvhm61.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000021(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ult i64 %2, 9
+  %4 = select i1 %3, i32 %0, i32 %1
+  %5 = add i32 %4, -1
+  %6 = zext nneg i32 %5 to i64
+  ret i64 %6
+}
+
 ; 5 occurrences:
 ; jemalloc/optimized/fxp.ll
 ; jemalloc/optimized/fxp.pic.ll
@@ -22,12 +35,12 @@ entry:
 ; redis/optimized/fxp.ll
 ; redis/optimized/fxp.sym.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000023(i32 %0, i32 %1, i64 %2) #0 {
+define i64 @func0000000000000022(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 58982
   %4 = select i1 %3, i32 %0, i32 %1
   %5 = add nsw i32 %4, -1
-  %6 = zext nneg i32 %5 to i64
+  %6 = zext i32 %5 to i64
   ret i64 %6
 }
 

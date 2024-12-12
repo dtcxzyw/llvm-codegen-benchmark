@@ -1,5 +1,6 @@
 
-; 305 occurrences:
+; 306 occurrences:
+; eastl/optimized/TestMemory.cpp.ll
 ; hermes/optimized/Array.cpp.ll
 ; hermes/optimized/HermesBuiltin.cpp.ll
 ; hermes/optimized/JSProxy.cpp.ll
@@ -8,7 +9,6 @@
 ; linux/optimized/dst.ll
 ; linux/optimized/ip_options.ll
 ; linux/optimized/ip_tunnel.ll
-; linux/optimized/loopback.ll
 ; linux/optimized/neighbour.ll
 ; linux/optimized/nf_queue.ll
 ; linux/optimized/posix-timers.ll
@@ -123,6 +123,7 @@
 ; llvm/optimized/MallocSizeofChecker.cpp.ll
 ; llvm/optimized/Mangle.cpp.ll
 ; llvm/optimized/MemProfContextDisambiguation.cpp.ll
+; llvm/optimized/MemoryDependenceAnalysis.cpp.ll
 ; llvm/optimized/MicrosoftMangle.cpp.ll
 ; llvm/optimized/ModuleBuilder.cpp.ll
 ; llvm/optimized/NSAPI.cpp.ll

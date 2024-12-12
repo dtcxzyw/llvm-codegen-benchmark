@@ -13,7 +13,7 @@ func0000000000000008:                   # @func0000000000000008
 	vxorpd	.LCPI1_0(%rip){1to2}, %xmm1, %xmm2
 	kmovd	%edi, %k1
 	vmovsd	%xmm1, %xmm2, %xmm2 {%k1}
-	vcmpeqsd	%xmm0, %xmm2, %k0
+	vcmpeqsd	%xmm2, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq
 .LCPI2_0:
@@ -69,13 +69,4 @@ func000000000000000b:                   # @func000000000000000b
 	vmovsd	%xmm1, %xmm2, %xmm2 {%k1}
 	vucomisd	%xmm2, %xmm0
 	setbe	%al
-	retq
-.LCPI8_0:
-	.quad	0x8000000000000000              # double -0
-func0000000000000007:                   # @func0000000000000007
-	vxorpd	.LCPI8_0(%rip){1to2}, %xmm1, %xmm2
-	kmovd	%edi, %k1
-	vmovsd	%xmm1, %xmm2, %xmm2 {%k1}
-	vcmpneqsd	%xmm0, %xmm2, %k0
-	kmovd	%k0, %eax
 	retq

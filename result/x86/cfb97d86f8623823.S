@@ -16,3 +16,9 @@ func000000000000000d:                   # @func000000000000000d
 	movl	$49156, %eax                    # imm = 0xC004
 	cmovll	%edi, %eax
 	retq
+func0000000000000009:                   # @func0000000000000009
+	orl	$1024, %edi                     # imm = 0x400
+	cmpl	$3, %esi
+	movl	$1024, %eax                     # imm = 0x400
+	cmovbl	%edi, %eax
+	retq

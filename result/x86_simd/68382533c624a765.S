@@ -38,3 +38,11 @@ func000000000000002b:                   # @func000000000000002b
 	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
 	vpsllq	$2, %ymm0, %ymm0
 	retq
+.LCPI5_0:
+	.long	2                               # 0x2
+func000000000000007f:                   # @func000000000000007f
+	vpaddd	%xmm0, %xmm0, %xmm0
+	vpaddd	.LCPI5_0(%rip){1to4}, %xmm0, %xmm0
+	vpmovzxdq	%xmm0, %ymm0            # ymm0 = xmm0[0],zero,xmm0[1],zero,xmm0[2],zero,xmm0[3],zero
+	vpsllq	$3, %ymm0, %ymm0
+	retq

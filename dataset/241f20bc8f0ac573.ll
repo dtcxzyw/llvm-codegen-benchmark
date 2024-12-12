@@ -1,10 +1,8 @@
 
-; 6 occurrences:
+; 4 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; libquic/optimized/time_support.c.ll
 ; nori/optimized/warptest.cpp.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; protobuf/optimized/unparser.cc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000002(i32 %0) #0 {

@@ -1,6 +1,5 @@
 
-; 23 occurrences:
-; cpython/optimized/_hashopenssl.ll
+; 22 occurrences:
 ; darktable/optimized/Cr2Decompressor.cpp.ll
 ; darktable/optimized/Cr2sRawInterpolator.cpp.ll
 ; darktable/optimized/IiqDecoder.cpp.ll

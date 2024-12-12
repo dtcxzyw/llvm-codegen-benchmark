@@ -12,7 +12,7 @@ entry:
   ret i32 %5
 }
 
-; 25 occurrences:
+; 24 occurrences:
 ; assimp/optimized/zip.c.ll
 ; eastl/optimized/EADateTime.cpp.ll
 ; flac/optimized/decode.c.ll
@@ -20,7 +20,6 @@ entry:
 ; linux/optimized/filter.ll
 ; linux/optimized/rx.ll
 ; linux/optimized/slub.ll
-; llvm/optimized/CommentParser.cpp.ll
 ; llvm/optimized/MachineInstr.cpp.ll
 ; llvm/optimized/ModuloSchedule.cpp.ll
 ; meshoptimizer/optimized/indexcodec.cpp.ll
@@ -42,12 +41,13 @@ entry:
 define i32 @func0000000000000000(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 0, i32 %2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = add i32 %4, 7
   ret i32 %5
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/text_file_backend.ll
 ; git/optimized/xmerge.ll
 ; icu/optimized/collationsettings.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
@@ -58,33 +58,34 @@ entry:
 define i32 @func0000000000000005(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 7, i32 %2
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   %5 = add nsw i32 %4, 1
   ret i32 %5
 }
 
-; 4 occurrences:
+; 1 occurrences:
+; lvgl/optimized/lv_buttonmatrix.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i32 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = select i1 %1, i32 0, i32 %2
+  %4 = add nsw i32 %3, %0
+  %5 = add i32 %4, -1
+  ret i32 %5
+}
+
+; 5 occurrences:
 ; arrow/optimized/UriQuery.c.ll
 ; cmake/optimized/archive_write_add_filter_compress.c.ll
+; draco/optimized/symbol_encoding.cc.ll
 ; libjpeg-turbo/optimized/wrgif.c.ll
 ; opencv/optimized/phasecorr.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = select i1 %1, i32 -1, i32 %2
-  %4 = add i32 %3, %0
-  %5 = add nsw i32 %4, 5003
-  ret i32 %5
-}
-
-; 1 occurrences:
-; openblas/optimized/dorcsd2by1.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i1 %1, i32 %2) #0 {
-entry:
   %3 = select i1 %1, i32 1, i32 %2
-  %4 = add nsw i32 %3, %0
-  %5 = add i32 %4, -1
+  %4 = add i32 %3, %0
+  %5 = add nsw i32 %4, -4096
   ret i32 %5
 }
 
@@ -94,7 +95,7 @@ entry:
 define i32 @func0000000000000008(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = select i1 %1, i32 0, i32 %2
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   %5 = add i32 %4, 1
   ret i32 %5
 }

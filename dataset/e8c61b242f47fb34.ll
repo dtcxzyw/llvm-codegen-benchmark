@@ -32,8 +32,7 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
-; openblas/optimized/dtgsen.c.ll
+; 1 occurrences:
 ; openjdk/optimized/c1_LIRGenerator.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i32 %1) #0 {
@@ -55,7 +54,7 @@ entry:
   ret i32 %4
 }
 
-; 29 occurrences:
+; 28 occurrences:
 ; abc/optimized/giaBalAig.c.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; abseil-cpp/optimized/clock.cc.ll
@@ -67,7 +66,6 @@ entry:
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/intel_hdmi.ll
 ; linux/optimized/intel_lpe_audio.ll
-; linux/optimized/intel_snps_phy.ll
 ; linux/optimized/intel_tc.ll
 ; linux/optimized/virtio_console.ll
 ; linux/optimized/xfrm_user.ll

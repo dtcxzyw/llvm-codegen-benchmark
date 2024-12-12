@@ -1,5 +1,5 @@
 
-; 29 occurrences:
+; 33 occurrences:
 ; delta-rs/optimized/1iagj3aecrejld8d.ll
 ; duckdb/optimized/ub_duckdb_row_operations.cpp.ll
 ; freetype/optimized/sfnt.c.ll
@@ -20,6 +20,7 @@
 ; postgres/optimized/proto.ll
 ; postgres/optimized/tablecmds.ll
 ; postgres/optimized/xloginsert.ll
+; rust-analyzer-rs/optimized/hajha7nvyoiczny.ll
 ; rustfmt-rs/optimized/s8gyre8ye3tvwam.ll
 ; spike/optimized/s_add256M.ll
 ; spike/optimized/s_addCarryM.ll
@@ -29,6 +30,9 @@
 ; wasmtime-rs/optimized/59ibd2hl72nblwc1.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
 ; wireshark/optimized/tap-rlc-graph.c.ll
+; zed-rs/optimized/1jbe4zqf10fi4dnkcvibaggjj.ll
+; zed-rs/optimized/2bjv2ryetyqaw0uwjf53eylb3.ll
+; zed-rs/optimized/di6vqkr45z5qfxmwsnoq97jcv.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, i8 %1, i1 %2) #0 {
 entry:

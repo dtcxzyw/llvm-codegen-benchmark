@@ -5,3 +5,10 @@ func000000000000000c:                   # @func000000000000000c
 	testb	$1, %dil
 	cmovel	%ecx, %eax
 	retq
+func000000000000000e:                   # @func000000000000000e
+	movzbl	%sil, %ecx
+	movl	%ecx, %eax
+	orl	$2, %eax
+	testb	$1, %dil
+	cmovel	%ecx, %eax
+	retq

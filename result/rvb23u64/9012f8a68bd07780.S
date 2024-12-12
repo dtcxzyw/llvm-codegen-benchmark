@@ -27,9 +27,9 @@ func0000000000000001:                   # @func0000000000000001
 	ret
 func0000000000000004:                   # @func0000000000000004
 	li	a1, 8
-	fli.s	fa0, -1.0
-	bltu	a0, a1, .LBB3_2
 	fli.s	fa0, 1.0
+	bltu	a0, a1, .LBB3_2
+	fli.s	fa0, 0.5
 .LBB3_2:                                # %entry
 	ret
 func000000000000000a:                   # @func000000000000000a

@@ -1,5 +1,5 @@
 
-; 47 occurrences:
+; 48 occurrences:
 ; abc/optimized/abcCascade.c.ll
 ; abc/optimized/cuddAnneal.c.ll
 ; abc/optimized/cuddExact.c.ll
@@ -17,6 +17,7 @@
 ; gromacs/optimized/sstein.cpp.ll
 ; icu/optimized/charstr.ll
 ; icu/optimized/collationdatabuilder.ll
+; libquic/optimized/padding.c.ll
 ; linux/optimized/virtio_scsi.ll
 ; luau/optimized/ltablib.cpp.ll
 ; mitsuba3/optimized/hdrfilm.cpp.ll
@@ -53,7 +54,7 @@ entry:
   %3 = add i32 %2, -4
   %4 = sub i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
@@ -62,12 +63,12 @@ entry:
 ; openssl/optimized/libcrypto-lib-bio_b64.ll
 ; openssl/optimized/libcrypto-shlib-bio_b64.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000221(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1542
   %4 = sub i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
@@ -76,12 +77,12 @@ entry:
 ; openssl/optimized/libcrypto-shlib-rsa_oaep.ll
 ; openusd/optimized/tessellation.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000b1(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000161(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = xor i32 %1, -1
-  %4 = add i32 %3, %2
+  %4 = add i32 %2, %3
   %5 = zext nneg i32 %4 to i64
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
@@ -89,12 +90,12 @@ entry:
 ; openjdk/optimized/c1_GraphBuilder.ll
 ; openjdk/optimized/methodData.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, 1
   %4 = sub i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
@@ -103,12 +104,12 @@ entry:
 ; hdf5/optimized/H5Znbit.c.ll
 ; luau/optimized/lstrlib.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001a1(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000341(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %2, 1
   %4 = sub nsw i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
@@ -118,12 +119,12 @@ entry:
 ; sundials/optimized/cvode.c.ll
 ; sundials/optimized/cvodes.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000201(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw i32 %2, 1
   %4 = sub i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
@@ -131,12 +132,12 @@ entry:
 ; ninja/optimized/ninja.cc.ll
 ; postgres/optimized/allpaths.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000141(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = sub nsw i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 
@@ -145,12 +146,12 @@ entry:
 ; openmpi/optimized/netpatterns_multinomial_tree.ll
 ; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000101(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 1
   %4 = sub i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = icmp eq i64 %5, %0
+  %6 = icmp eq i64 %0, %5
   ret i1 %6
 }
 

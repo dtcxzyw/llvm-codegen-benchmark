@@ -1,5 +1,5 @@
 
-; 192 occurrences:
+; 197 occurrences:
 ; abc/optimized/cuddAPI.c.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/distribution_test_util.cc.ll
@@ -7,6 +7,11 @@
 ; abseil-cpp/optimized/exponential_biased_test.cc.ll
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
 ; annoy/optimized/annoymodule.ll
+; boost/optimized/area.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_multi.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; bullet3/optimized/btDeformableMultiBodyDynamicsWorld.ll
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; casadi/optimized/lsqr.cpp.ll
@@ -53,6 +58,7 @@
 ; lightgbm/optimized/serial_tree_learner.cpp.ll
 ; lightgbm/optimized/train_share_states.cpp.ll
 ; lightgbm/optimized/voting_parallel_tree_learner.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; meshlab/optimized/edit_align.cpp.ll
 ; meshlab/optimized/edit_referencing.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
@@ -124,7 +130,6 @@
 ; proj/optimized/mod_ster.cpp.ll
 ; proj/optimized/moll.cpp.ll
 ; proj/optimized/nell.cpp.ll
-; proj/optimized/nell_h.cpp.ll
 ; proj/optimized/nicol.cpp.ll
 ; proj/optimized/omerc.cpp.ll
 ; proj/optimized/poly.cpp.ll
@@ -136,7 +141,6 @@
 ; proj/optimized/tsfn.cpp.ll
 ; proj/optimized/vandg.cpp.ll
 ; proj/optimized/vandg2.cpp.ll
-; proj/optimized/wink2.cpp.ll
 ; quantlib/optimized/analyticholderextensibleoptionengine.ll
 ; quantlib/optimized/baroneadesiwhaleyengine.ll
 ; quantlib/optimized/batesengine.ll
@@ -191,6 +195,7 @@
 ; xgboost/optimized/quantile_obj.cc.ll
 ; xgboost/optimized/rank_metric.cc.ll
 ; z3/optimized/sat_lookahead.cpp.ll
+; zed-rs/optimized/9igvnisirgadr0nx586j3hgeh.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(double %0, double %1) #0 {

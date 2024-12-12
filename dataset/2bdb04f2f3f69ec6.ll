@@ -1,5 +1,5 @@
 
-; 185 occurrences:
+; 186 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcRec3.c.ll
 ; abc/optimized/abcSymm.c.ll
@@ -40,7 +40,6 @@
 ; abc/optimized/inflate.c.ll
 ; abc/optimized/kitDsd.c.ll
 ; abc/optimized/kitGraph.c.ll
-; abc/optimized/lpkMan.c.ll
 ; abc/optimized/lpkMulti.c.ll
 ; abc/optimized/luckyFast16.c.ll
 ; abc/optimized/luckyRead.c.ll
@@ -60,6 +59,7 @@
 ; assimp/optimized/glTFImporter.cpp.ll
 ; assimp/optimized/o3dgcDynamicVectorDecoder.cpp.ll
 ; assimp/optimized/o3dgcTriangleFans.cpp.ll
+; boost/optimized/gzip.ll
 ; clamav/optimized/disasm.c.ll
 ; clamav/optimized/ole2_extract.c.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
@@ -78,6 +78,7 @@
 ; libwebp/optimized/frame_dec.c.ll
 ; libwebp/optimized/predictor_enc.c.ll
 ; libwebp/optimized/sharpyuv_gamma.c.ll
+; lightgbm/optimized/data_parallel_tree_learner.cpp.ll
 ; lightgbm/optimized/network.cpp.ll
 ; linux/optimized/8250_early.ll
 ; linux/optimized/8250_port.ll
@@ -90,7 +91,7 @@
 ; llvm/optimized/AArch64MachineScheduler.cpp.ll
 ; llvm/optimized/ExpandLargeFpConvert.cpp.ll
 ; llvm/optimized/RISCVCallLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; mold/optimized/arch-loongarch.cc.LOONGARCH32.cc.ll
 ; mold/optimized/arch-loongarch.cc.LOONGARCH64.cc.ll
@@ -193,25 +194,6 @@ entry:
   ret i64 %3
 }
 
-; 10 occurrences:
-; gromacs/optimized/gridset.cpp.ll
-; libwebp/optimized/vp8l_enc.c.ll
-; linux/optimized/dmar.ll
-; llvm/optimized/COFFObjectFile.cpp.ll
-; ncnn/optimized/statisticspooling.cpp.ll
-; openmpi/optimized/topo_base_dist_graph_create.ll
-; qemu/optimized/hw_misc_sifive_e_aon.c.ll
-; quickjs/optimized/quickjs.ll
-; soc-simulator/optimized/verilated.ll
-; tev/optimized/ExrImageLoader.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
-entry:
-  %2 = shl nsw i32 %0, %1
-  %3 = sext i32 %2 to i64
-  ret i64 %3
-}
-
 ; 14 occurrences:
 ; abc/optimized/dauDsd.c.ll
 ; abc/optimized/luckyFast16.c.ll
@@ -231,6 +213,23 @@ entry:
 define i64 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw i32 %0, %1
+  %3 = sext i32 %2 to i64
+  ret i64 %3
+}
+
+; 8 occurrences:
+; gromacs/optimized/gridset.cpp.ll
+; libwebp/optimized/vp8l_enc.c.ll
+; linux/optimized/dmar.ll
+; llvm/optimized/COFFObjectFile.cpp.ll
+; ncnn/optimized/statisticspooling.cpp.ll
+; openmpi/optimized/topo_base_dist_graph_create.ll
+; quickjs/optimized/quickjs.ll
+; soc-simulator/optimized/verilated.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
+entry:
+  %2 = shl nsw i32 %0, %1
   %3 = sext i32 %2 to i64
   ret i64 %3
 }

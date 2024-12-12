@@ -13,12 +13,3 @@ func000000000000000c:                   # @func000000000000000c
 	vpcmpeqq	.LCPI1_1(%rip){1to4}, %ymm2, %k1
 	vmovdqa64	%ymm1, %ymm0 {%k1}
 	retq
-.LCPI2_0:
-	.quad	62                              # 0x3e
-.LCPI2_1:
-	.quad	54                              # 0x36
-func0000000000000004:                   # @func0000000000000004
-	vpandq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm2
-	vpcmpltq	.LCPI2_1(%rip){1to4}, %ymm2, %k1
-	vpblendmq	%ymm0, %ymm1, %ymm0 {%k1}
-	retq

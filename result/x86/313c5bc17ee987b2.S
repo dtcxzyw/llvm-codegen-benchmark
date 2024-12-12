@@ -21,5 +21,5 @@ func000000000000000b:                   # @func000000000000000b
 	retq
 func000000000000000c:                   # @func000000000000000c
 	movq	%rdi, %rax
-	shlq	$51, %rax
+	shlq	$32, %rax
 	retq

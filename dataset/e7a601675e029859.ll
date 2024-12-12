@@ -6,7 +6,7 @@
 ; openssl/optimized/libssl-shlib-quic_rx_depack.ll
 ; yosys/optimized/simplify.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 2
   %3 = icmp eq i8 %2, 0
@@ -15,12 +15,10 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
-; hdf5/optimized/H5I.c.ll
+; 1 occurrences:
 ; minetest/optimized/test_connection.cpp.ll
-; qemu/optimized/hw_net_tulip.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000024(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 1
   %3 = icmp eq i8 %2, 0
@@ -37,7 +35,7 @@ entry:
 ; linux/optimized/netdev.ll
 ; wasmedge/optimized/filemgr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i8 %1) #0 {
+define i1 @func0000000000000181(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 126
   %3 = icmp ne i8 %2, 0
@@ -51,7 +49,7 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; php/optimized/pcre2_jit_compile.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i64 %0, i8 %1) #0 {
+define i1 @func000000000000018c(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 3
   %3 = icmp ne i8 %2, 0
@@ -66,23 +64,11 @@ entry:
 ; llvm/optimized/AnalysisBasedWarnings.cpp.ll
 ; spike/optimized/csrs.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i8 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i8 %1) #0 {
 entry:
   %2 = and i8 %1, 24
   %3 = icmp eq i8 %2, 16
   %4 = icmp ne i64 %0, 2
-  %5 = select i1 %4, i1 %3, i1 false
-  ret i1 %5
-}
-
-; 1 occurrences:
-; wireshark/optimized/packet-mac-lte.c.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i8 %1) #0 {
-entry:
-  %2 = and i8 %1, 1
-  %3 = icmp ne i8 %2, 0
-  %4 = icmp ult i64 %0, 1023
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
 }

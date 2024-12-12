@@ -1,13 +1,12 @@
 
-%class.symbol.3428956 = type { ptr }
+%class.symbol.3613505 = type { ptr }
 
-; 18 occurrences:
+; 16 occurrences:
 ; brotli/optimized/compound_dictionary.c.ll
 ; darktable/optimized/introspection_dither.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
-; opencv/optimized/gfluidimgproc.cpp.ll
 ; opencv/optimized/mean.dispatch.cpp.ll
 ; opencv/optimized/shapedescr.cpp.ll
 ; openjdk/optimized/hb-face.ll
@@ -19,18 +18,29 @@
 ; openssl/optimized/libcrypto-shlib-rsaz_exp_x2.ll
 ; openssl/optimized/loader_attic-dso-pvkfmt.ll
 ; openusd/optimized/catmarkPatchBuilder.cpp.ll
-; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000006a(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000007f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i64, ptr %1, i64 %3
-  %5 = getelementptr nusw i64, ptr %4, i64 %3
-  %6 = getelementptr nusw i64, ptr %5, i64 %0
+  %4 = getelementptr nusw nuw i64, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i64, ptr %4, i64 %3
+  %6 = getelementptr nusw nuw i64, ptr %5, i64 %0
   ret ptr %6
 }
 
-; 146 occurrences:
+; 1 occurrences:
+; php/optimized/ir_emit.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003e(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = getelementptr nusw nuw i32, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i32, ptr %4, i64 %3
+  %6 = getelementptr nusw i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 144 occurrences:
 ; brotli/optimized/compound_dictionary.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; freetype/optimized/truetype.c.ll
@@ -38,7 +48,6 @@ entry:
 ; hyperscan/optimized/scratch.c.ll
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/CGOpenMPRuntime.cpp.ll
-; llvm/optimized/OpenMPClause.cpp.ll
 ; php/optimized/ir_emit.ll
 ; z3/optimized/add_bounds_tactic.cpp.ll
 ; z3/optimized/api_quant.cpp.ll
@@ -62,7 +71,6 @@ entry:
 ; z3/optimized/bvarray2uf_rewriter.cpp.ll
 ; z3/optimized/bvsls_opt_engine.cpp.ll
 ; z3/optimized/check_logic.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/cofactor_elim_term_ite.cpp.ll
 ; z3/optimized/collect_statistics_tactic.cpp.ll
 ; z3/optimized/decl_collector.cpp.ll
@@ -178,12 +186,26 @@ entry:
 ; z3/optimized/var_subst.cpp.ll
 ; z3/optimized/well_sorted.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000003f(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i32, ptr %1, i64 %3
-  %5 = getelementptr nusw i32, ptr %4, i64 %3
-  %6 = getelementptr nusw i8, ptr %5, i64 %0
+  %4 = getelementptr nusw nuw i32, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i32, ptr %4, i64 %3
+  %6 = getelementptr nusw nuw i8, ptr %5, i64 %0
+  ret ptr %6
+}
+
+; 3 occurrences:
+; darktable/optimized/introspection_dither.c.ll
+; opencv/optimized/gfluidimgproc.cpp.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define ptr @func000000000000007e(i64 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = zext nneg i32 %2 to i64
+  %4 = getelementptr nusw nuw float, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw float, ptr %4, i64 %3
+  %6 = getelementptr nusw float, ptr %5, i64 %0
   ret ptr %6
 }
 
@@ -258,11 +280,11 @@ entry:
 ; z3/optimized/spacer_util.cpp.ll
 ; z3/optimized/th_rewriter.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000028(i64 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000003c(i64 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw ptr, ptr %1, i64 %3
-  %5 = getelementptr nusw %class.symbol.3428956, ptr %4, i64 %3
+  %4 = getelementptr nusw nuw ptr, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw %class.symbol.3613505, ptr %4, i64 %3
   %6 = getelementptr ptr, ptr %5, i64 %0
   ret ptr %6
 }

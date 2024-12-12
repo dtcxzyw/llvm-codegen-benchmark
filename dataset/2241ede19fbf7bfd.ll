@@ -78,7 +78,7 @@ entry:
   ret i32 %4
 }
 
-; 113 occurrences:
+; 112 occurrences:
 ; abc/optimized/abcMerge.c.ll
 ; abc/optimized/bmcMesh.c.ll
 ; abc/optimized/bmcMesh2.c.ll
@@ -103,7 +103,6 @@ entry:
 ; fmt/optimized/unicode-test.cc.ll
 ; fmt/optimized/util.cc.ll
 ; fmt/optimized/xchar-test.cc.ll
-; libevent/optimized/event.c.ll
 ; lief/optimized/ASN1Reader.cpp.ll
 ; lief/optimized/AndroidIdent.cpp.ll
 ; lief/optimized/BinaryParser.cpp.ll
@@ -197,11 +196,11 @@ define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = xor i32 %2, 1
-  %4 = add nsw i32 %3, %0
+  %4 = add nsw i32 %0, %3
   ret i32 %4
 }
 
-; 22 occurrences:
+; 23 occurrences:
 ; abc/optimized/abcReconv.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/giaNf.c.ll
@@ -210,6 +209,7 @@ entry:
 ; abc/optimized/ioReadPla.c.ll
 ; abc/optimized/ivyCut.c.ll
 ; abc/optimized/rsbDec6.c.ll
+; boost/optimized/ipc_reliable_message_queue.ll
 ; clamav/optimized/arcread.cpp.ll
 ; git/optimized/range-diff.ll
 ; linux/optimized/cacheinfo.ll

@@ -8,7 +8,7 @@ define i1 @func0000000000000002(double %0, i64 %1) #0 {
 entry:
   %2 = uitofp i64 %1 to double
   %3 = fdiv double %2, 0x41D6A09E66400000
-  %4 = fcmp ogt double %3, %0
+  %4 = fcmp olt double %0, %3
   ret i1 %4
 }
 

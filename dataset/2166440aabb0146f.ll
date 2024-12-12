@@ -1,27 +1,26 @@
 
-; 5 occurrences:
-; minetest/optimized/test_serialization.cpp.ll
+; 4 occurrences:
 ; openssl/optimized/libssl-lib-extensions_srvr.ll
 ; openssl/optimized/libssl-shlib-extensions_srvr.ll
 ; ruby/optimized/gc.ll
 ; wireshark/optimized/packet-rtps.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = icmp eq i64 %3, 0
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000026(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = icmp slt i64 %3, 4611686018427387905
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -61,27 +60,16 @@ entry:
 ; openssl/optimized/libssl-shlib-extensions_srvr.ll
 ; openssl/optimized/libssl-shlib-quic_wire_pkt.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or disjoint i64 %1, %2
   %4 = icmp ne i64 %3, 0
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 2 occurrences:
-; openssl/optimized/libssl-lib-extensions_srvr.ll
-; openssl/optimized/libssl-shlib-extensions_srvr.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000014(i1 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = or disjoint i64 %1, %2
-  %4 = icmp ult i64 %3, 257
-  %5 = and i1 %4, %0
-  ret i1 %5
-}
-
-; 105 occurrences:
+; 106 occurrences:
+; boost/optimized/to_chars.ll
 ; cpython/optimized/marshal.ll
 ; duckdb/optimized/ub_duckdb_common_types_row.cpp.ll
 ; fmt/optimized/format.cc.ll
@@ -170,9 +158,9 @@ entry:
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/Triple.cpp.ll
-; opencv/optimized/softfloat.cpp.ll
 ; qemu/optimized/source_s_mulAddF16.c.ll
 ; rust-analyzer-rs/optimized/1bjrygtvfxna7kin.ll
+; rust-analyzer-rs/optimized/1ocnbqjisn6f62l.ll
 ; rust-analyzer-rs/optimized/233tpdwe8f7eoneo.ll
 ; rust-analyzer-rs/optimized/2jezmucvqvfiuhvx.ll
 ; rust-analyzer-rs/optimized/4fo6e09jeifrbt47.ll
@@ -196,12 +184,11 @@ entry:
   ret i1 %5
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; linux/optimized/sock.ll
 ; linux/optimized/tsc_sync.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; llvm/optimized/RegisterPressure.cpp.ll
-; nix/optimized/nix-store.ll
 ; openjdk/optimized/xPhysicalMemory.ll
 ; openjdk/optimized/zMark.ll
 ; qemu/optimized/util_iov.c.ll
@@ -235,16 +222,17 @@ define i1 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = or i64 %1, %2
   %4 = icmp ugt i64 %3, 4294967295
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; arrow/optimized/int_util.cc.ll
 ; assimp/optimized/zip.c.ll
 ; hermes/optimized/zip.c.ll
 ; linux/optimized/syscalls.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
+; zed-rs/optimized/80403hw32s3ougvze8j2ycldj.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i64 %1, i64 %2) #0 {
 entry:

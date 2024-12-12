@@ -29,14 +29,15 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; lvgl/optimized/lv_calendar.ll
 ; wireshark/optimized/packet-gsm_a_gm.c.ll
 ; wireshark/optimized/packet-gsm_map.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
-  %3 = urem i32 %2, 1000
+  %3 = urem i32 %2, 100
   %4 = icmp eq i32 %3, 0
   ret i1 %4
 }
@@ -45,11 +46,11 @@ entry:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000034(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %0, %1
   %3 = urem i32 %2, 7
-  %4 = icmp ult i32 %3, 4
+  %4 = icmp samesign ult i32 %3, 4
   ret i1 %4
 }
 

@@ -4,7 +4,7 @@
 ; wireshark/optimized/packet-mpls-echo.c.ll
 ; wireshark/optimized/packet-scsi.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i32 %0, i16 %1) #0 {
+define i1 @func00000000000000aa(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = add nsw i32 %0, -24
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; jq/optimized/decNumber.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000da(i32 %0, i16 %1) #0 {
+define i1 @func00000000000001aa(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = add nuw nsw i32 %0, 999
@@ -29,12 +29,12 @@ entry:
 ; wasmtime-rs/optimized/14o4a7b6y6onx84q.ll
 ; wasmtime-rs/optimized/3jqdez78s6gt3fnc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f4(i32 %0, i16 %1) #0 {
+define i1 @func00000000000003f4(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
   %3 = add nuw nsw i32 %0, 3
   %4 = sub nuw nsw i32 %3, %2
-  %5 = icmp ult i32 %4, 256
+  %5 = icmp samesign ult i32 %4, 256
   ret i1 %5
 }
 
@@ -43,7 +43,7 @@ entry:
 ; wireshark/optimized/packet-gsm_a_gm.c.ll
 ; wireshark/optimized/packet-nas_5gs.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i32 %0, i16 %1) #0 {
+define i1 @func00000000000000a6(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = add nsw i32 %0, -2
@@ -54,7 +54,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-nas_eps.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000016(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000026(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
   %3 = sub i32 %2, %0
@@ -65,7 +65,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-turbocell.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000010a(i32 %0, i16 %1) #0 {
+define i1 @func000000000000020a(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
   %3 = add i32 %0, -2
@@ -77,7 +77,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-csn1.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000106(i32 %0, i16 %1) #0 {
+define i1 @func0000000000000206(i32 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i32
   %3 = sub i32 %2, %0
@@ -88,7 +88,7 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/strftime.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000156(i32 %0, i16 %1) #0 {
+define i1 @func00000000000002a6(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
   %3 = add nsw i32 %0, -3

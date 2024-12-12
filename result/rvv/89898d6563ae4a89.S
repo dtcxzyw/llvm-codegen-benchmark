@@ -60,12 +60,6 @@ func0000000000000018:                   # @func0000000000000018
 	vmfge.vf	v17, v8, fa5
 	vmor.mm	v0, v17, v16
 	ret
-func0000000000000002:                   # @func0000000000000002
-	vsetivli	zero, 16, e64, m8, ta, ma
-	vmor.mm	v16, v0, v16
-	vmfne.vv	v17, v8, v8
-	vmor.mm	v0, v17, v16
-	ret
 func0000000000000024:                   # @func0000000000000024
 	fli.d	fa5, inf
 	vsetivli	zero, 16, e64, m8, ta, ma
@@ -75,19 +69,18 @@ func0000000000000024:                   # @func0000000000000024
 	vmor.mm	v8, v0, v8
 	vmorn.mm	v0, v8, v9
 	ret
+func0000000000000002:                   # @func0000000000000002
+	vsetivli	zero, 16, e64, m8, ta, ma
+	vmor.mm	v16, v0, v16
+	vmfne.vv	v17, v8, v8
+	vmor.mm	v0, v17, v16
+	ret
 func000000000000000c:                   # @func000000000000000c
 	fmv.d.x	fa5, zero
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmfge.vf	v9, v16, fa5
 	vmor.mm	v8, v0, v8
 	vmorn.mm	v0, v8, v9
-	ret
-func0000000000000006:                   # @func0000000000000006
-	vsetivli	zero, 16, e64, m8, ta, ma
-	vmor.mm	v16, v0, v16
-	fmv.d.x	fa5, zero
-	vmfge.vf	v17, v8, fa5
-	vmorn.mm	v0, v16, v17
 	ret
 func0000000000000020:                   # @func0000000000000020
 	fli.d	fa5, 1.0

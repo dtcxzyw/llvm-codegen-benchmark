@@ -27,7 +27,7 @@ entry:
   ret i32 %5
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; cpython/optimized/longobject.ll
 ; linux/optimized/amd64-agp.ll
 ; linux/optimized/init_64.ll
@@ -37,6 +37,7 @@ entry:
 ; mold/optimized/arch-loongarch.cc.LOONGARCH64.cc.ll
 ; mold/optimized/arch-ppc64v2.cc.ll
 ; mold/optimized/arch-sparc64.cc.ll
+; protobuf/optimized/field_mask_util.cc.ll
 ; zfp/optimized/zfp.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i64 %0, i64 %1) #0 {

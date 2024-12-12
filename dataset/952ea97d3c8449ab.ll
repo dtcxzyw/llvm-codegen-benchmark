@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/string.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000144(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %2, 0
   %4 = icmp ult ptr %0, %1
@@ -75,7 +75,7 @@ entry:
 ; xgboost/optimized/data.cc.ll
 ; yosys/optimized/smt2.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000021(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = icmp eq ptr %0, %1
@@ -91,7 +91,7 @@ entry:
 ; meshlab/optimized/ml_selection_buffers.cpp.ll
 ; mitsuba3/optimized/properties.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000181(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, 9223372036854775807
   %4 = icmp eq ptr %0, %1
@@ -101,6 +101,7 @@ entry:
 
 ; 76 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
+; boost/optimized/code_conversion.ll
 ; c3c/optimized/llvm_codegen_type.c.ll
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
@@ -146,7 +147,6 @@ entry:
 ; meshlab/optimized/filter_dirt.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_geodesic.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
@@ -177,7 +177,7 @@ entry:
 ; yalantinglibs/optimized/chat_room.cpp.ll
 ; yalantinglibs/optimized/example.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000018c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp ne i64 %2, -1
   %4 = icmp ne ptr %0, %1
@@ -185,24 +185,13 @@ entry:
   ret i1 %5
 }
 
-; 15 occurrences:
+; 4 occurrences:
 ; curl/optimized/libcurl_la-rtsp.ll
-; eastl/optimized/TestFixedList.cpp.ll
-; eastl/optimized/TestList.cpp.ll
 ; libquic/optimized/quic_sent_packet_manager.cc.ll
 ; minetest/optimized/clientiface.cpp.ll
-; nix/optimized/path.ll
-; opencv/optimized/slam_kitti.cpp.ll
-; quantlib/optimized/dataparsers.ll
-; quantlib/optimized/imm.ll
-; velox/optimized/FunctionSignature.cpp.ll
-; velox/optimized/JsonType.cpp.ll
-; velox/optimized/SignatureBinder.cpp.ll
-; velox/optimized/TimeZoneMap.cpp.ll
-; velox/optimized/Type.cpp.ll
 ; yalantinglibs/optimized/example.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000008c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 64
   %4 = icmp ne ptr %0, %1
@@ -210,16 +199,17 @@ entry:
   ret i1 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
+; lvgl/optimized/lv_svg_parser.ll
 ; openjdk/optimized/hb-buffer.ll
-; php/optimized/readcdf.ll
-; php/optimized/strtod.ll
+; php/optimized/softmagic.ll
+; php/optimized/url.ll
 ; raylib/optimized/rmodels.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000284(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = icmp ult i64 %2, 4
+  %3 = icmp samesign ult i64 %2, 4
   %4 = icmp ult ptr %0, %1
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
@@ -231,7 +221,7 @@ entry:
 ; openusd/optimized/openexr-c.c.ll
 ; snappy/optimized/snappy.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000000c4(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %2, 202688
   %4 = icmp ult ptr %0, %1
@@ -239,9 +229,95 @@ entry:
   ret i1 %5
 }
 
-; 20 occurrences:
-; c3c/optimized/sema_casts.c.ll
-; freetype/optimized/autofit.c.ll
+; 2 occurrences:
+; php/optimized/readcdf.ll
+; php/optimized/strtod.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000084(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = icmp ult i64 %2, 1024
+  %4 = icmp ult ptr %0, %1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
+; 15 occurrences:
+; boost/optimized/cmd_test.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/search_path.ll
+; boost/optimized/src.ll
+; eastl/optimized/TestFixedList.cpp.ll
+; eastl/optimized/TestList.cpp.ll
+; nix/optimized/path.ll
+; opencv/optimized/slam_kitti.cpp.ll
+; quantlib/optimized/dataparsers.ll
+; quantlib/optimized/imm.ll
+; velox/optimized/FunctionSignature.cpp.ll
+; velox/optimized/JsonType.cpp.ll
+; velox/optimized/SignatureBinder.cpp.ll
+; velox/optimized/TimeZoneMap.cpp.ll
+; velox/optimized/Type.cpp.ll
+; Function Attrs: nounwind
+define i1 @func000000000000028c(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ult i64 %2, 14
+  %4 = icmp ne ptr %0, %1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
+; 19 occurrences:
+; boost/optimized/env.ll
+; boost/optimized/path.ll
+; boost/optimized/src.ll
+; cmake/optimized/cmCTestRunTest.cxx.ll
+; cvc5/optimized/quant_conflict_find.cpp.ll
+; eastl/optimized/TestDeque.cpp.ll
+; linux/optimized/cpuset.ll
+; llvm/optimized/CodeGenModule.cpp.ll
+; openspiel/optimized/tarok.cc.ll
+; openspiel/optimized/tiny_bridge.cc.ll
+; rust-analyzer-rs/optimized/202uzsghjvp73kcw.ll
+; rust-analyzer-rs/optimized/233tpdwe8f7eoneo.ll
+; rust-analyzer-rs/optimized/2n800w7wl0k2x7go.ll
+; rust-analyzer-rs/optimized/34epm85550lugb2d.ll
+; yosys/optimized/alumacc.ll
+; yosys/optimized/opt_clean.ll
+; yosys/optimized/opt_reduce.ll
+; yosys/optimized/pmux2shiftx.ll
+; yosys/optimized/wreduce.ll
+; Function Attrs: nounwind
+define i1 @func000000000000002c(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = icmp eq i64 %2, 0
+  %4 = icmp ne ptr %0, %1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
+; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000285(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ult i64 %2, 760
+  %4 = icmp ule ptr %0, %1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
+; boost/optimized/alloc_lib.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000189(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = icmp ne i64 %2, 1
+  %4 = icmp uge ptr %0, %1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
+; 18 occurrences:
 ; libquic/optimized/quic_packet_creator.cc.ll
 ; llvm/optimized/SemaConcept.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
@@ -261,48 +337,21 @@ entry:
 ; openusd/optimized/valueTypeRegistry.cpp.ll
 ; z3/optimized/aig.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000081(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = icmp ult i64 %2, 10
+  %3 = icmp ult i64 %2, 17
   %4 = icmp eq ptr %0, %1
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
 }
 
-; 16 occurrences:
-; cmake/optimized/cmCTestRunTest.cxx.ll
-; cvc5/optimized/quant_conflict_find.cpp.ll
-; eastl/optimized/TestDeque.cpp.ll
-; linux/optimized/cpuset.ll
-; llvm/optimized/CodeGenModule.cpp.ll
-; openspiel/optimized/tarok.cc.ll
-; openspiel/optimized/tiny_bridge.cc.ll
-; rust-analyzer-rs/optimized/202uzsghjvp73kcw.ll
-; rust-analyzer-rs/optimized/233tpdwe8f7eoneo.ll
-; rust-analyzer-rs/optimized/2n800w7wl0k2x7go.ll
-; rust-analyzer-rs/optimized/34epm85550lugb2d.ll
-; yosys/optimized/alumacc.ll
-; yosys/optimized/opt_clean.ll
-; yosys/optimized/opt_reduce.ll
-; yosys/optimized/pmux2shiftx.ll
-; yosys/optimized/wreduce.ll
-; Function Attrs: nounwind
-define i1 @func000000000000001c(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = icmp eq i64 %2, 0
-  %4 = icmp ne ptr %0, %1
-  %5 = select i1 %4, i1 %3, i1 false
-  ret i1 %5
-}
-
-; 3 occurrences:
-; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
+; 2 occurrences:
 ; hermes/optimized/APFloat.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000045(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000085(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = icmp ult i64 %2, 760
+  %3 = icmp ult i64 %2, 1844674407370955161
   %4 = icmp ule ptr %0, %1
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
@@ -314,7 +363,7 @@ entry:
 ; hyperscan/optimized/rose_build_lookaround.cpp.ll
 ; llvm/optimized/LiveRangeCalc.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000010c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, 7
   %4 = icmp ne ptr %0, %1
@@ -325,7 +374,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/CommandLine.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000101(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, 1
   %4 = icmp eq ptr %0, %1
@@ -336,7 +385,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/AttributorAttributes.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000141(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %2, -1
   %4 = icmp eq ptr %0, %1
@@ -354,7 +403,7 @@ entry:
 ; xgboost/optimized/ranking_utils.cc.ll
 ; xgboost/optimized/stats.cc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000014c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp sgt i64 %2, 24
   %4 = icmp ne ptr %0, %1
@@ -366,7 +415,7 @@ entry:
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/ofbx.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000000cc(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %2, 1023
   %4 = icmp ne ptr %0, %1
@@ -377,10 +426,21 @@ entry:
 ; 1 occurrences:
 ; cmake/optimized/hex.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000089(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000109(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, 9
   %4 = icmp uge ptr %0, %1
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
+; freetype/optimized/autofit.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000281(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ult i64 %2, 8
+  %4 = icmp eq ptr %0, %1
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
 }

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; spike/optimized/disasm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000034(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
   %3 = select i1 %2, i64 1792, i64 768
@@ -51,7 +51,7 @@ entry:
 ; llvm/optimized/X86LegalizerInfo.cpp.ll
 ; llvm/optimized/X86RegisterBankInfo.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
   %3 = select i1 %2, i64 2251799813685248, i64 576460752303423488
@@ -60,7 +60,7 @@ entry:
   ret i1 %5
 }
 
-; 55 occurrences:
+; 56 occurrences:
 ; linux/optimized/fault.ll
 ; linux/optimized/gup.ll
 ; linux/optimized/maple_tree.ll
@@ -116,8 +116,9 @@ entry:
 ; llvm/optimized/X86InstrInfo.cpp.ll
 ; llvm/optimized/X86InstructionSelector.cpp.ll
 ; llvm/optimized/X86LegalizerInfo.cpp.ll
+; redis/optimized/networking.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
   %3 = select i1 %2, i64 2251799813685248, i64 576460752303423488
@@ -137,23 +138,23 @@ entry:
 ; protobuf/optimized/zero_copy_stream.cc.ll
 ; protobuf/optimized/zero_copy_stream_impl_lite.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000294(i64 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ult i64 %1, 513
+  %2 = icmp samesign ult i64 %1, 513
   %3 = select i1 %2, i64 -8, i64 -64
-  %4 = and i64 %3, %0
-  %5 = icmp ult i64 %4, 513
+  %4 = and i64 %0, %3
+  %5 = icmp samesign ult i64 %4, 513
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; linux/optimized/nf_nat_core.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000301(i64 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ugt i64 %1, 2
+  %2 = icmp samesign ugt i64 %1, 2
   %3 = select i1 %2, i64 16, i64 32
-  %4 = and i64 %3, %0
+  %4 = and i64 %0, %3
   %5 = icmp eq i64 %4, 0
   ret i1 %5
 }
@@ -162,23 +163,23 @@ entry:
 ; cpython/optimized/obmalloc.ll
 ; mimalloc/optimized/segment.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000314(i64 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ugt i64 %1, 524288
+  %2 = icmp samesign ugt i64 %1, 524288
   %3 = select i1 %2, i64 524287, i64 131071
-  %4 = icmp uge i64 %3, %0
+  %4 = icmp ule i64 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; mimalloc/optimized/segment.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000318(i64 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ugt i64 %1, 524288
+  %2 = icmp samesign ugt i64 %1, 524288
   %3 = select i1 %2, i64 -524288, i64 -65536
-  %4 = and i64 %3, %0
-  %5 = icmp ugt i64 %4, 2293760
+  %4 = and i64 %0, %3
+  %5 = icmp samesign ugt i64 %4, 2293760
   ret i1 %5
 }
 

@@ -5,5 +5,5 @@ func00000000000000f9:                   # @func00000000000000f9
 	vsetvli	zero, zero, e64, m2, ta, ma
 	vadd.vx	v10, v12, a0
 	vsrl.vi	v10, v10, 3
-	vadd.vv	v8, v10, v8
+	vadd.vv	v8, v8, v10
 	ret

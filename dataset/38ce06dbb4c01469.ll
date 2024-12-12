@@ -9,7 +9,7 @@ entry:
   %3 = and i8 %2, 2
   %4 = zext nneg i8 %3 to i64
   %5 = and i64 %1, 1
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   %7 = or disjoint i64 %6, %4
   ret i64 %7
 }
@@ -22,7 +22,7 @@ entry:
   %3 = and i8 %2, 64
   %4 = zext nneg i8 %3 to i64
   %5 = and i64 %1, 1920
-  %6 = or i64 %5, %0
+  %6 = or i64 %0, %5
   %7 = or i64 %6, %4
   ret i64 %7
 }
@@ -36,7 +36,7 @@ entry:
   %3 = and i8 %2, 64
   %4 = zext nneg i8 %3 to i64
   %5 = and i64 %1, -6912
-  %6 = or disjoint i64 %5, %0
+  %6 = or disjoint i64 %0, %5
   %7 = or i64 %6, %4
   ret i64 %7
 }

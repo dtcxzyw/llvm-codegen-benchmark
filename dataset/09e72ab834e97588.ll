@@ -1,5 +1,5 @@
 
-; 14 occurrences:
+; 13 occurrences:
 ; darktable/optimized/introspection_colorbalancergb.c.ll
 ; opencv/optimized/permute_layer.cpp.ll
 ; opencv/optimized/pooling_layer.cpp.ll
@@ -10,7 +10,6 @@
 ; postgres/optimized/receivelog.ll
 ; postgres/optimized/xlog.ll
 ; postgres/optimized/xlogarchive.ll
-; postgres/optimized/xlogbackup.ll
 ; postgres/optimized/xlogfuncs.ll
 ; postgres/optimized/xlogreader.ll
 ; postgres/optimized/xlogrecovery.ll

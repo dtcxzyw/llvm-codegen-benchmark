@@ -27,11 +27,3 @@ func0000000000000019:                   # @func0000000000000019
 	cmovgel	%eax, %ecx
 	movslq	%ecx, %rax
 	retq
-func0000000000000021:                   # @func0000000000000021
-	xorl	%eax, %eax
-	cmpl	$2, %edi
-	setb	%al
-	leal	(%rax,%rax,2), %eax
-	leal	-2(%rdi,%rax), %eax
-	cltq
-	retq

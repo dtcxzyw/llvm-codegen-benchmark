@@ -11,7 +11,7 @@ entry:
   %3 = add i32 %1, %2
   %4 = srem i32 %3, %2
   %5 = sub nsw i32 %3, %4
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 

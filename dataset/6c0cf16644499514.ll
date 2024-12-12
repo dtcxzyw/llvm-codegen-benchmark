@@ -30,7 +30,7 @@ define i1 @func0000000000000001(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
   %4 = icmp eq i64 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -54,48 +54,53 @@ entry:
   ret i1 %5
 }
 
-; 14 occurrences:
+; 2 occurrences:
 ; linux/optimized/mlock.ll
-; llvm/optimized/Commit.cpp.ll
-; llvm/optimized/CoverageMapping.cpp.ll
-; llvm/optimized/CoverageMappingWriter.cpp.ll
-; llvm/optimized/EditedSource.cpp.ll
-; llvm/optimized/ValueEnumerator.cpp.ll
-; opencv/optimized/ar_hmdb_benchmark.cpp.ll
-; opencv/optimized/calibinit.cpp.ll
-; opencv/optimized/flann_search_dataset.cpp.ll
-; opencv/optimized/floodfill.cpp.ll
-; opencv/optimized/miniflann.cpp.ll
-; opencv/optimized/ppf_helpers.cpp.ll
-; opencv/optimized/warpfield.cpp.ll
 ; openjdk/optimized/mutableNUMASpace.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 3
   %4 = icmp ult i64 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 11 occurrences:
+; 3 occurrences:
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/intersection_pl_l.ll
+; linux/optimized/set_memory.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000009(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = lshr i64 %2, 4
+  %4 = icmp uge i64 %3, %1
+  %5 = and i1 %0, %4
+  ret i1 %5
+}
+
+; 3 occurrences:
 ; cmake/optimized/huf_compress.c.ll
-; cmake/optimized/zdict.c.ll
-; llvm/optimized/Commit.cpp.ll
-; llvm/optimized/DependenceAnalysis.cpp.ll
-; llvm/optimized/EditedSource.cpp.ll
-; llvm/optimized/LoopStrengthReduce.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
-; llvm/optimized/WholeProgramDevirt.cpp.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
 ; zstd/optimized/huf_compress.c.ll
-; zstd/optimized/zdict.c.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 3
   %4 = icmp ugt i64 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
+  ret i1 %5
+}
+
+; 2 occurrences:
+; cmake/optimized/zdict.c.ll
+; zstd/optimized/zdict.c.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000018(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = lshr i64 %2, 2
+  %4 = icmp samesign ugt i64 %3, %1
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
@@ -109,21 +114,17 @@ define i1 @func0000000000000005(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 3
   %4 = icmp ule i64 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 
-; 5 occurrences:
+; 1 occurrences:
 ; linux/optimized/set_memory.ll
-; protobuf/optimized/generated_message_tctable_lite.cc.ll
-; protobuf/optimized/map_field.cc.ll
-; protobuf/optimized/struct.pb.cc.ll
-; redis/optimized/module.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000009(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000015(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 12
-  %4 = icmp uge i64 %3, %1
+  %4 = icmp samesign ule i64 %3, %1
   %5 = and i1 %4, %0
   ret i1 %5
 }
@@ -135,7 +136,21 @@ define i1 @func000000000000000a(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 8
   %4 = icmp sgt i64 %3, %1
-  %5 = and i1 %4, %0
+  %5 = and i1 %0, %4
+  ret i1 %5
+}
+
+; 4 occurrences:
+; protobuf/optimized/generated_message_tctable_lite.cc.ll
+; protobuf/optimized/map_field.cc.ll
+; protobuf/optimized/struct.pb.cc.ll
+; redis/optimized/module.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000019(i1 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = lshr i64 %2, 1
+  %4 = icmp samesign uge i64 %3, %1
+  %5 = and i1 %0, %4
   ret i1 %5
 }
 

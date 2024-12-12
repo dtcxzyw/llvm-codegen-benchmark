@@ -7,7 +7,7 @@ func0000000000000001:                   # @func0000000000000001
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func000000000000002a:                   # @func000000000000002a
+func000000000000004a:                   # @func000000000000004a
 	addiw	a1, a1, 1
 	sraiw	a2, a0, 31
 	srliw	a2, a2, 30
@@ -22,7 +22,7 @@ func000000000000000a:                   # @func000000000000000a
 	sraiw	a0, a0, 1
 	slt	a0, a1, a0
 	ret
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	addiw	a1, a1, 1
 	srliw	a2, a0, 31
 	add	a0, a0, a2

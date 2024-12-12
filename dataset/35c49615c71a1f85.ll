@@ -1,7 +1,6 @@
 
-; 3 occurrences:
+; 2 occurrences:
 ; llvm/optimized/RegisterBankEmitter.cpp.ll
-; llvm/optimized/TypeLoc.cpp.ll
 ; openssl/optimized/libdefault-lib-hkdf.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000190(i64 %0, i32 %1, i64 %2) #0 {
@@ -14,7 +13,7 @@ entry:
   ret i64 %7
 }
 
-; 88 occurrences:
+; 87 occurrences:
 ; flac/optimized/metadata_object.c.ll
 ; linux/optimized/dm-stats.ll
 ; llvm/optimized/AArch64TargetTransformInfo.cpp.ll
@@ -57,7 +56,6 @@ entry:
 ; llvm/optimized/OffloadBundler.cpp.ll
 ; llvm/optimized/PaddingChecker.cpp.ll
 ; llvm/optimized/ParentMapContext.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/ReachableCode.cpp.ll
 ; llvm/optimized/RecordLayoutBuilder.cpp.ll

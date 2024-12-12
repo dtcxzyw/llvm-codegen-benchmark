@@ -1,4 +1,4 @@
-func00000000000001b1:                   # @func00000000000001b1
+func0000000000000361:                   # @func0000000000000361
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
 	vzext.vf2	v10, v8
@@ -6,7 +6,7 @@ func00000000000001b1:                   # @func00000000000001b1
 	vand.vi	v8, v8, 1
 	vmseq.vi	v0, v8, 0
 	ret
-func00000000000001f1:                   # @func00000000000001f1
+func00000000000003e1:                   # @func00000000000003e1
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
 	vzext.vf2	v10, v8
@@ -14,7 +14,7 @@ func00000000000001f1:                   # @func00000000000001f1
 	vand.vi	v8, v8, 1
 	vmseq.vi	v0, v8, 0
 	ret
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
 	vzext.vf2	v10, v8
@@ -22,7 +22,7 @@ func0000000000000021:                   # @func0000000000000021
 	vand.vi	v8, v8, 1
 	vmseq.vi	v0, v8, 0
 	ret
-func00000000000001a1:                   # @func00000000000001a1
+func0000000000000341:                   # @func0000000000000341
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
 	vzext.vf2	v10, v8
@@ -30,7 +30,7 @@ func00000000000001a1:                   # @func00000000000001a1
 	vand.vi	v8, v8, 1
 	vmseq.vi	v0, v8, 0
 	ret
-func00000000000001e1:                   # @func00000000000001e1
+func00000000000003c1:                   # @func00000000000003c1
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
 	vzext.vf2	v10, v8
@@ -38,7 +38,7 @@ func00000000000001e1:                   # @func00000000000001e1
 	vand.vi	v8, v8, 1
 	vmseq.vi	v0, v8, 0
 	ret
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
 	vzext.vf2	v10, v8
@@ -46,7 +46,7 @@ func0000000000000031:                   # @func0000000000000031
 	vand.vi	v8, v8, 1
 	vmseq.vi	v0, v8, 0
 	ret
-func0000000000000181:                   # @func0000000000000181
+func0000000000000301:                   # @func0000000000000301
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vnsrl.wi	v9, v10, 0
 	vzext.vf2	v10, v8

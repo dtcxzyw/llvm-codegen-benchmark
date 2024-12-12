@@ -1,7 +1,16 @@
 
-; 254 occurrences:
+; 264 occurrences:
 ; abc/optimized/cuddGroup.c.ll
 ; abc/optimized/epd.c.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; casadi/optimized/cvodes.c.ll
 ; casadi/optimized/fmu2.cpp.ll
 ; casadi/optimized/ipqp.cpp.ll
@@ -251,6 +260,7 @@
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; wireshark/optimized/rtp_audio_stream.cpp.ll
 ; xgboost/optimized/auc.cc.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; zxing/optimized/ODCode93Reader.cpp.ll
 ; zxing/optimized/PDFReader.cpp.ll

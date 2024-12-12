@@ -9,7 +9,7 @@
 ; openssl/optimized/libcrypto-lib-f_int.ll
 ; openssl/optimized/libcrypto-shlib-f_int.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000001e1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = ashr exact i32 %3, 1
@@ -22,7 +22,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/ciMethodData.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000171(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002e1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = ashr i32 %3, 3
@@ -38,7 +38,7 @@ entry:
 ; ncnn/optimized/padding_x86_avx512.cpp.ll
 ; ncnn/optimized/padding_x86_fma.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001f1(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000003e1(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = ashr exact i32 %3, 3

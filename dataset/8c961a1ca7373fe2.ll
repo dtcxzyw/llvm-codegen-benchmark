@@ -9,7 +9,7 @@
 ; velox/optimized/MmapAllocator.cpp.ll
 ; velox/optimized/StreamArena.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000021(i32 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
   %4 = icmp eq i32 %0, 0
@@ -50,7 +50,7 @@ entry:
 ; nlohmann_json/optimized/unit-pointer_access.cpp.ll
 ; nlohmann_json/optimized/unit-reference_access.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000181(i32 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %1, %2
   %4 = icmp eq i32 %0, 48879
@@ -75,7 +75,7 @@ entry:
 ; luau/optimized/TypeInfer.test.cpp.ll
 ; nlohmann_json/optimized/unit-json_pointer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(ptr %0, ptr %1, i32 %2) #0 {
+define i1 @func000000000000018c(ptr %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp ne ptr %0, %1
@@ -86,7 +86,7 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/euf_model.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000002c(i32 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
   %4 = icmp ne i32 %0, 1
@@ -97,10 +97,10 @@ entry:
 ; 1 occurrences:
 ; eastl/optimized/TestHash.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000034(i32 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %1, %2
-  %4 = icmp ult i32 %0, 100
+  %4 = icmp samesign ult i32 %0, 100
   %5 = xor i1 %4, %3
   ret i1 %5
 }

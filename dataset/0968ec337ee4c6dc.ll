@@ -1,7 +1,7 @@
 
-%struct.p9_poll_wait.3346844 = type { ptr, %struct.wait_queue_entry.3346845, ptr }
-%struct.wait_queue_entry.3346845 = type { i32, ptr, ptr, %struct.list_head.3346829 }
-%struct.list_head.3346829 = type { ptr, ptr }
+%struct.p9_poll_wait.3535411 = type { ptr, %struct.wait_queue_entry.3535412, ptr }
+%struct.wait_queue_entry.3535412 = type { i32, ptr, ptr, %struct.list_head.3535396 }
+%struct.list_head.3535396 = type { ptr, ptr }
 
 ; 37 occurrences:
 ; cpython/optimized/typeobject.ll
@@ -9,7 +9,6 @@
 ; linux/optimized/esp6.ll
 ; linux/optimized/hrtimer.ll
 ; linux/optimized/icmp.ll
-; linux/optimized/intel_display_debugfs.ll
 ; linux/optimized/intel_dpll_mgr.ll
 ; linux/optimized/intel_pch_refclk.ll
 ; linux/optimized/ip6_input.ll
@@ -21,6 +20,7 @@
 ; linux/optimized/libata-sata.ll
 ; linux/optimized/libata-sff.ll
 ; linux/optimized/nfs4namespace.ll
+; linux/optimized/radix-tree.ll
 ; linux/optimized/reg.ll
 ; linux/optimized/setup-bus.ll
 ; linux/optimized/setup-res.ll
@@ -42,9 +42,9 @@
 ; qemu/optimized/hw_virtio_virtio-pci.c.ll
 ; ruby/optimized/gc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i64 %0, ptr %1) #0 {
+define i1 @func0000000000000181(i64 %0, ptr %1) #0 {
 entry:
-  %2 = getelementptr nusw i8, ptr %1, i64 16
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 16
   %3 = getelementptr [0 x ptr], ptr %2, i64 0, i64 %0
   %4 = icmp eq ptr %3, null
   ret i1 %4
@@ -60,7 +60,7 @@ entry:
 define i1 @func0000000000000001(i64 %0, ptr %1) #0 {
 entry:
   %2 = getelementptr i8, ptr %1, i64 -112
-  %3 = getelementptr [2 x %struct.p9_poll_wait.3346844], ptr %2, i64 0, i64 %0
+  %3 = getelementptr [2 x %struct.p9_poll_wait.3535411], ptr %2, i64 0, i64 %0
   %4 = icmp eq ptr %3, null
   ret i1 %4
 }

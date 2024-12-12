@@ -13,7 +13,8 @@ entry:
   ret i32 %4
 }
 
-; 12 occurrences:
+; 13 occurrences:
+; boost/optimized/src.ll
 ; hermes/optimized/Conversions.cpp.ll
 ; luajit/optimized/lj_opt_fold.ll
 ; luajit/optimized/lj_opt_fold_dyn.ll

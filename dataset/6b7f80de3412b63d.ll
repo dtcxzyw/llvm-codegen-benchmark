@@ -13,7 +13,7 @@ entry:
   ret i8 %2
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
 ; cpython/optimized/assemble.ll
 ; linux/optimized/8139too.ll
@@ -21,6 +21,7 @@ entry:
 ; linux/optimized/keyboard.ll
 ; linux/optimized/libata-core.ll
 ; linux/optimized/namei_msdos.ll
+; llvm/optimized/SemaCodeComplete.cpp.ll
 ; postgres/optimized/xact.ll
 ; qemu/optimized/hw_9pfs_9p.c.ll
 ; recastnavigation/optimized/DetourNavMeshBuilder.cpp.ll

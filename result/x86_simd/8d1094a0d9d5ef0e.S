@@ -14,7 +14,7 @@ func000000000000000d:                   # @func000000000000000d
 	vpmovw2m	%xmm1, %k0
 	vpslld	$31, %ymm0, %ymm0
 	vpmovd2m	%ymm0, %k1
-	kxnorb	%k0, %k1, %k0
+	kxnorb	%k1, %k0, %k0
 	vpmovm2d	%k0, %ymm0
 	vpsrld	$31, %ymm0, %ymm0
 	retq

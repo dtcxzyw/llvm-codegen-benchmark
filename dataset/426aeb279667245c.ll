@@ -1,7 +1,8 @@
 
-; 18 occurrences:
+; 19 occurrences:
 ; bullet3/optimized/btMinkowskiPenetrationDepthSolver.ll
 ; darktable/optimized/amaze.cc.ll
+; darktable/optimized/introspection_channelmixerrgb.c.ll
 ; gromacs/optimized/calculator.cpp.ll
 ; imgui/optimized/imgui.cpp.ll
 ; imgui/optimized/imgui_demo.cpp.ll

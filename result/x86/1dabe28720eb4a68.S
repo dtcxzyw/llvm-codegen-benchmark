@@ -22,6 +22,12 @@ func0000000000000006:                   # @func0000000000000006
 	setle	%al
 	orb	%sil, %al
 	retq
+func0000000000000014:                   # @func0000000000000014
+	orl	%edx, %esi
+	cmpl	$8, %edi
+	setb	%al
+	orb	%sil, %al
+	retq
 func000000000000000a:                   # @func000000000000000a
 	orl	%edx, %esi
 	testl	%edi, %edi

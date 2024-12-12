@@ -14,7 +14,7 @@ func0000000000000004:                   # @func0000000000000004
 	retq
 .LCPI1_0:
 	.quad	11                              # 0xb
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddq	%ymm2, %ymm1, %ymm1
 	vpcmpltuq	.LCPI1_0(%rip){1to4}, %ymm1, %k1
@@ -28,7 +28,7 @@ func0000000000000014:                   # @func0000000000000014
 	.quad	-20480                          # 0xffffffffffffb000
 .LCPI2_2:
 	.long	4294967276                      # 0xffffffec
-func0000000000000058:                   # @func0000000000000058
+func00000000000000b8:                   # @func00000000000000b8
 	vpaddq	.LCPI2_0(%rip){1to4}, %ymm1, %ymm1
 	vpcmpltuq	.LCPI2_1(%rip){1to4}, %ymm1, %k1
 	vpaddd	.LCPI2_2(%rip){1to4}, %xmm0, %xmm0 {%k1} {z}

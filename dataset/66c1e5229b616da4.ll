@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; qemu/optimized/fdt_sw.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 -5, %1
   %3 = icmp ult i64 %2, %0
@@ -21,7 +21,7 @@ entry:
   ret i1 %4
 }
 
-; 43 occurrences:
+; 46 occurrences:
 ; actix-rs/optimized/19s5ghr2x6s6bmh4.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; coreutils-rs/optimized/1y438ox107i37q6b.ll
@@ -65,30 +65,35 @@ entry:
 ; quickjs/optimized/libbf.ll
 ; spike/optimized/f128_roundToInt.ll
 ; tls-rs/optimized/4vg8hiu39ndz9uqe.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/8xt07qbd2rpea3wzwrnuigpes.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000004(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 0, %1
-  %3 = icmp ult i64 %2, %0
+  %3 = icmp ugt i64 %0, %2
   ret i1 %3
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; c3c/optimized/bigint.c.ll
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; qemu/optimized/hw_ufs_ufs.c.ll
+; zed-rs/optimized/695kya77ce1y5fjxr4ewl21f4.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 0, %1
-  %3 = icmp ult i64 %2, %0
+  %3 = icmp ugt i64 %0, %2
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; lodepng/optimized/lodepng.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000184(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 -13, %1
   %3 = icmp ult i64 %2, %0
@@ -98,10 +103,10 @@ entry:
 ; 1 occurrences:
 ; gromacs/optimized/convert_tpr.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001a4(i64 %0, i64 %1) #0 {
 entry:
   %2 = xor i64 %0, -1
-  %3 = icmp ule i64 %2, %1
+  %3 = icmp uge i64 %1, %2
   ret i1 %3
 }
 

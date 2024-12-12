@@ -6,6 +6,6 @@ func0000000000000010:                   # @func0000000000000010
 func0000000000000008:                   # @func0000000000000008
 	notq	%rsi
 	xorl	%eax, %eax
-	cmpq	%rdi, %rsi
-	seta	%al
+	cmpq	%rsi, %rdi
+	setb	%al
 	retq

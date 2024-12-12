@@ -1,6 +1,8 @@
 
-; 155 occurrences:
+; 158 occurrences:
 ; arrow/optimized/data.cc.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/to_chars.ll
 ; bullet3/optimized/btConvexHull.ll
 ; bullet3/optimized/btMiniSDF.ll
 ; cmake/optimized/SystemTools.cxx.ll
@@ -49,6 +51,7 @@
 ; llvm/optimized/CGBuiltin.cpp.ll
 ; llvm/optimized/CGPointerAuth.cpp.ll
 ; llvm/optimized/Commit.cpp.ll
+; llvm/optimized/ELFObjectFile.cpp.ll
 ; llvm/optimized/HeaderMap.cpp.ll
 ; llvm/optimized/LegalizerInfo.cpp.ll
 ; llvm/optimized/Lexer.cpp.ll
@@ -63,6 +66,7 @@
 ; llvm/optimized/WasmObjectFile.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; luau/optimized/Builtins.cpp.ll
+; lvgl/optimized/lv_matrix.ll
 ; meshoptimizer/optimized/overdrawanalyzer.cpp.ll
 ; meshoptimizer/optimized/vcacheanalyzer.cpp.ll
 ; minetest/optimized/CGUITabControl.cpp.ll
@@ -142,7 +146,6 @@
 ; spike/optimized/triggers.ll
 ; stockfish/optimized/tbprobe.ll
 ; tev/optimized/ImageCanvas.cpp.ll
-; velox/optimized/ValueSet.cpp.ll
 ; verilator/optimized/V3AstNodes.cpp.ll
 ; verilator/optimized/V3Inst.cpp.ll
 ; verilator/optimized/V3OrderParallel.cpp.ll
@@ -163,9 +166,10 @@ entry:
   ret { i64, float } %3
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; c3c/optimized/bigint.c.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
+; fmt/optimized/format-test.cc.ll
 ; llvm/optimized/LegalizerInfo.cpp.ll
 ; llvm/optimized/NetBSD.cpp.ll
 ; llvm/optimized/OpenBSD.cpp.ll

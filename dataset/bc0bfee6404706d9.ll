@@ -1,41 +1,16 @@
 
-; 11 occurrences:
-; linux/optimized/dm-table.ll
-; linux/optimized/fib_semantics.ll
-; memcached/optimized/memcached-slabs.ll
-; memcached/optimized/memcached_debug-slabs.ll
-; postgres/optimized/resowner.ll
-; quickjs/optimized/quickjs.ll
-; rocksdb/optimized/lock_request.cc.ll
-; rocksdb/optimized/locktree.cc.ll
-; rocksdb/optimized/manager.cc.ll
-; rocksdb/optimized/txnid_set.cc.ll
-; rocksdb/optimized/wfg.cc.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000003(i1 %0, i32 %1) #0 {
-entry:
-  %2 = shl i32 %1, 1
-  %3 = zext i32 %2 to i64
-  %4 = shl nuw nsw i64 %3, 3
-  %5 = select i1 %0, i64 32, i64 %4
-  ret i64 %5
-}
-
-; 7 occurrences:
-; c3c/optimized/decltable.c.ll
+; 4 occurrences:
 ; c3c/optimized/symtab.c.ll
 ; libevent/optimized/event.c.ll
 ; libevent/optimized/poll.c.ll
-; luajit/optimized/lj_udata.ll
-; luajit/optimized/lj_udata_dyn.ll
 ; opencv/optimized/zmaxheap.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000001f(i1 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 2
   %3 = zext nneg i32 %2 to i64
-  %4 = shl nuw nsw i64 %3, 2
-  %5 = select i1 %0, i64 64, i64 %4
+  %4 = shl nuw nsw i64 %3, 4
+  %5 = select i1 %0, i64 256, i64 %4
   ret i64 %5
 }
 
@@ -76,6 +51,23 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = shl nuw nsw i64 %3, 2
   %5 = select i1 %0, i64 64, i64 %4
+  ret i64 %5
+}
+
+; 6 occurrences:
+; linux/optimized/dm-table.ll
+; linux/optimized/fib_semantics.ll
+; memcached/optimized/memcached-slabs.ll
+; memcached/optimized/memcached_debug-slabs.ll
+; postgres/optimized/resowner.ll
+; quickjs/optimized/quickjs.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(i1 %0, i32 %1) #0 {
+entry:
+  %2 = shl i32 %1, 1
+  %3 = zext i32 %2 to i64
+  %4 = shl nuw nsw i64 %3, 3
+  %5 = select i1 %0, i64 128, i64 %4
   ret i64 %5
 }
 

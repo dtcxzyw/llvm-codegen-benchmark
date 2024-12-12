@@ -61,11 +61,11 @@ define i64 @func0000000000000000(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
-; 52 occurrences:
+; 50 occurrences:
 ; assimp/optimized/HMPLoader.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
 ; clamav/optimized/hfsplus.c.ll
@@ -79,7 +79,6 @@ entry:
 ; darktable/optimized/introspection_lens.cc.ll
 ; faiss/optimized/hamming.cpp.ll
 ; freetype/optimized/winfnt.c.ll
-; gromacs/optimized/grompp.cpp.ll
 ; hdf5/optimized/H5B.c.ll
 ; hdf5/optimized/H5Osdspace.c.ll
 ; hyperscan/optimized/repeat.c.ll
@@ -101,7 +100,6 @@ entry:
 ; ncnn/optimized/deconvolutiondepthwise1d.cpp.ll
 ; ncnn/optimized/deconvolutiondepthwise3d.cpp.ll
 ; ncnn/optimized/multiheadattention.cpp.ll
-; opencv/optimized/knearest.cpp.ll
 ; opencv/optimized/resize.cpp.ll
 ; openjdk/optimized/g1CardSetMemory.ll
 ; openusd/optimized/restoration.c.ll
@@ -123,7 +121,7 @@ define i64 @func0000000000000003(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -134,12 +132,11 @@ define i64 @func0000000000000018(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
-; 8 occurrences:
-; gromacs/optimized/kernel_common.cpp.ll
+; 7 occurrences:
 ; ncnn/optimized/deformableconv2d_x86.cpp.ll
 ; ncnn/optimized/deformableconv2d_x86_avx.cpp.ll
 ; ncnn/optimized/deformableconv2d_x86_avx512.cpp.ll
@@ -152,7 +149,7 @@ define i64 @func000000000000001b(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -163,7 +160,7 @@ define i64 @func0000000000000010(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -178,7 +175,7 @@ define i64 @func0000000000000008(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -195,12 +192,11 @@ define i64 @func0000000000000001(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
-; 9 occurrences:
-; abc/optimized/abcExact.c.ll
+; 8 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; bullet3/optimized/btBatchedConstraints.ll
 ; darktable/optimized/NefDecoder.cpp.ll
@@ -214,11 +210,11 @@ define i64 @func000000000000001f(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
-; 12 occurrences:
+; 13 occurrences:
 ; darktable/optimized/ArwDecoder.cpp.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
 ; darktable/optimized/JpegDecompressor.cpp.ll
@@ -230,13 +226,14 @@ entry:
 ; gromacs/optimized/gpp_atomtype.cpp.ll
 ; gromacs/optimized/state.cpp.ll
 ; libjpeg-turbo/optimized/tjunittest.c.ll
-; opencv/optimized/box_filter.dispatch.cpp.ll
+; opencv/optimized/lkpyramid.cpp.ll
+; opencv/optimized/rlof_localflow.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -248,7 +245,7 @@ define i64 @func000000000000001d(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -261,7 +258,7 @@ define i64 @func000000000000000b(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -273,7 +270,7 @@ define i64 @func0000000000000007(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -286,7 +283,7 @@ define i64 @func0000000000000002(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = add nuw i64 %4, %0
+  %5 = add nuw i64 %0, %4
   ret i64 %5
 }
 
@@ -297,7 +294,7 @@ define i64 @func0000000000000006(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = add nuw i64 %4, %0
+  %5 = add nuw i64 %0, %4
   ret i64 %5
 }
 
@@ -313,7 +310,7 @@ define i64 @func000000000000000c(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 
@@ -325,7 +322,7 @@ define i64 @func0000000000000013(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw i32 %1, %2
   %4 = zext i32 %3 to i64
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -337,18 +334,7 @@ define i64 @func000000000000001c(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %1, %2
   %4 = zext nneg i32 %3 to i64
-  %5 = add i64 %4, %0
-  ret i64 %5
-}
-
-; 1 occurrences:
-; pbrt-v4/optimized/image.cpp.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000005(i64 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = mul i32 %1, %2
-  %4 = zext nneg i32 %3 to i64
-  %5 = add nsw i64 %4, %0
+  %5 = add i64 %0, %4
   ret i64 %5
 }
 

@@ -1,6 +1,5 @@
 func0000000000000004:                   # @func0000000000000004
-	xorl	$128, %edi
-	movzwl	%di, %eax
-	cmpl	$128, %eax
-	setb	%al
+	movswl	%di, %eax
+	cmpl	$-32751, %eax                   # imm = 0x8011
+	setl	%al
 	retq

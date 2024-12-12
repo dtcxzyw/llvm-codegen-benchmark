@@ -54,8 +54,9 @@ entry:
   ret i1 %7
 }
 
-; 32 occurrences:
+; 33 occurrences:
 ; arrow/optimized/int_util.cc.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/xmltok.c.ll
 ; cpython/optimized/xmltok.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
@@ -88,7 +89,7 @@ entry:
 ; velox/optimized/CastExpr.cpp.ll
 ; wireshark/optimized/tvbuff_zlib.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i32 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000086(i32 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
@@ -98,10 +99,12 @@ entry:
   ret i1 %7
 }
 
-; 93 occurrences:
+; 94 occurrences:
 ; assimp/optimized/FBXBinaryTokenizer.cpp.ll
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; assimp/optimized/glTFExporter.cpp.ll
+; boost/optimized/date_time_format_parser.ll
+; boost/optimized/message.ll
 ; cmake/optimized/zstd_compress.c.ll
 ; cmake/optimized/zstd_decompress.c.ll
 ; cmake/optimized/zstd_ldm.c.ll
@@ -116,7 +119,6 @@ entry:
 ; freetype/optimized/sfnt.c.ll
 ; grpc/optimized/hpack_parser.cc.ll
 ; grpc/optimized/ssl_transport_security.cc.ll
-; harfbuzz/optimized/hb-subset.cc.ll
 ; hermes/optimized/BytecodeDataProvider.cpp.ll
 ; hermes/optimized/SourceErrorManager.cpp.ll
 ; hermes/optimized/raw_ostream.cpp.ll
@@ -267,6 +269,21 @@ entry:
   ret i1 %7
 }
 
+; 3 occurrences:
+; boost/optimized/src.ll
+; harfbuzz/optimized/hb-subset.cc.ll
+; rocksdb/optimized/memtable.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i32 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = ptrtoint ptr %1 to i64
+  %5 = sub i64 %4, %3
+  %6 = zext i32 %0 to i64
+  %7 = icmp samesign ult i64 %5, %6
+  ret i1 %7
+}
+
 ; 8 occurrences:
 ; assimp/optimized/zip.c.ll
 ; grpc/optimized/hpack_parser.cc.ll
@@ -287,7 +304,7 @@ entry:
   ret i1 %7
 }
 
-; 32 occurrences:
+; 31 occurrences:
 ; abseil-cpp/optimized/float_conversion.cc.ll
 ; folly/optimized/AsyncSSLSocket.cpp.ll
 ; folly/optimized/AsyncSocket.cpp.ll
@@ -315,13 +332,12 @@ entry:
 ; velox/optimized/md5.cpp.ll
 ; verilator/optimized/V3HierBlock.cpp.ll
 ; yosys/optimized/aigerparse.ll
-; yosys/optimized/ast.ll
 ; yosys/optimized/mem.ll
 ; zxing/optimized/ConcentricFinder.cpp.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i32 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000088(i32 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
@@ -331,7 +347,7 @@ entry:
   ret i1 %7
 }
 
-; 31 occurrences:
+; 30 occurrences:
 ; cmake/optimized/huf_compress.c.ll
 ; curl/optimized/libcurl_la-tftp.ll
 ; folly/optimized/AsyncSSLSocket.cpp.ll
@@ -359,12 +375,11 @@ entry:
 ; proxygen/optimized/Logging.cpp.ll
 ; velox/optimized/DenseHll.cpp.ll
 ; velox/optimized/md5.cpp.ll
-; yosys/optimized/ast.ll
 ; yosys/optimized/const2ast.ll
 ; zstd/optimized/huf_compress.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000084(i32 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
@@ -406,7 +421,7 @@ entry:
 ; hdf5/optimized/H5Ocache.c.ll
 ; libquic/optimized/ssl_test.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000081(i32 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
@@ -420,7 +435,7 @@ entry:
 ; minetest/optimized/CImageLoaderBMP.cpp.ll
 ; yosys/optimized/const2ast.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000045(i32 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000085(i32 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
@@ -488,7 +503,7 @@ entry:
 ; wireshark/optimized/packet-ieee80211-radiotap-iter.c.ll
 ; wireshark/optimized/tvbuff_zlib.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i32 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000008a(i32 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64
@@ -511,6 +526,33 @@ entry:
   ret i1 %7
 }
 
+; 2 occurrences:
+; linux/optimized/exit.ll
+; yosys/optimized/ast.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000094(i32 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = ptrtoint ptr %1 to i64
+  %5 = sub i64 %4, %3
+  %6 = zext nneg i32 %0 to i64
+  %7 = icmp samesign ult i64 %5, %6
+  ret i1 %7
+}
+
+; 1 occurrences:
+; yosys/optimized/ast.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000098(i32 %0, ptr %1, ptr %2) #0 {
+entry:
+  %3 = ptrtoint ptr %2 to i64
+  %4 = ptrtoint ptr %1 to i64
+  %5 = sub i64 %4, %3
+  %6 = zext nneg i32 %0 to i64
+  %7 = icmp samesign ugt i64 %5, %6
+  ret i1 %7
+}
+
 ; 1 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; Function Attrs: nounwind
@@ -527,7 +569,7 @@ entry:
 ; 1 occurrences:
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000008c(i32 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = ptrtoint ptr %2 to i64
   %4 = ptrtoint ptr %1 to i64

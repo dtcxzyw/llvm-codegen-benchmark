@@ -2,7 +2,7 @@
 	.long	56                              # 0x38
 .LCPI0_1:
 	.quad	8                               # 0x8
-func0000000000000023:                   # @func0000000000000023
+func0000000000000063:                   # @func0000000000000063
 	vpcmpnleud	.LCPI0_0(%rip){1to4}, %xmm2, %k1
 	vpbroadcastq	.LCPI0_1(%rip), %ymm2   # ymm2 = [8,8,8,8]
 	vmovdqa64	%ymm1, %ymm2 {%k1}
@@ -22,7 +22,7 @@ func000000000000002b:                   # @func000000000000002b
 	vpcmpgtd	.LCPI2_0(%rip){1to4}, %xmm2, %k1
 	vpbroadcastq	.LCPI2_1(%rip), %ymm2   # ymm2 = [2,2,2,2]
 	vmovdqa64	%ymm1, %ymm2 {%k1}
-	vpaddq	%ymm0, %ymm2, %ymm0
+	vpaddq	%ymm2, %ymm0, %ymm0
 	retq
 .LCPI3_0:
 	.long	65536                           # 0x10000
@@ -57,7 +57,7 @@ func000000000000001a:                   # @func000000000000001a
 func0000000000000030:                   # @func0000000000000030
 	vpcmpeqd	.LCPI7_0(%rip){1to4}, %xmm2, %k1
 	vpbroadcastq	.LCPI7_1(%rip), %ymm1 {%k1} # ymm1 {%k1} = [2,2,2,2]
-	vpaddq	%ymm0, %ymm1, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI8_0:
 	.long	4294967291                      # 0xfffffffb
@@ -92,14 +92,26 @@ func0000000000000018:                   # @func0000000000000018
 	vpaddq	%ymm1, %ymm0, %ymm0 {%k1}
 	retq
 .LCPI14_0:
-	.long	2                               # 0x2
-func0000000000000013:                   # @func0000000000000013
+	.long	11                              # 0xb
+func0000000000000050:                   # @func0000000000000050
 	vpcmpltud	.LCPI14_0(%rip){1to4}, %xmm2, %k1
 	vpaddq	%ymm1, %ymm0, %ymm0 {%k1}
 	retq
 .LCPI15_0:
+	.long	2                               # 0x2
+func0000000000000013:                   # @func0000000000000013
+	vpcmpltud	.LCPI15_0(%rip){1to4}, %xmm2, %k1
+	vpaddq	%ymm1, %ymm0, %ymm0 {%k1}
+	retq
+.LCPI16_0:
 	.long	3                               # 0x3
 func0000000000000011:                   # @func0000000000000011
-	vpcmpltud	.LCPI15_0(%rip){1to4}, %xmm2, %k1
+	vpcmpltud	.LCPI16_0(%rip){1to4}, %xmm2, %k1
+	vpaddq	%ymm1, %ymm0, %ymm0 {%k1}
+	retq
+.LCPI17_0:
+	.long	2                               # 0x2
+func0000000000000060:                   # @func0000000000000060
+	vpcmpnleud	.LCPI17_0(%rip){1to4}, %xmm2, %k1
 	vpaddq	%ymm1, %ymm0, %ymm0 {%k1}
 	retq

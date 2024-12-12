@@ -1,8 +1,10 @@
 
-; 57 occurrences:
+; 60 occurrences:
 ; abc/optimized/cuddPriority.c.ll
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/chi_square.cc.ll
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; cpython/optimized/cmathmodule.ll
 ; cpython/optimized/dtoa.ll
 ; darktable/optimized/introspection_ashift.c.ll
@@ -56,6 +58,7 @@
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; xgboost/optimized/rank_metric.cc.ll
 ; yoga/optimized/PixelGrid.cpp.ll
+; zed-rs/optimized/dhxbdv9bz516ezsc4bp1mh72v.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
 define double @func0000000000000000(i1 %0, double %1, double %2) #0 {

@@ -1,4 +1,4 @@
-func00000000000000d8:                   # @func00000000000000d8
+func00000000000001a8:                   # @func00000000000001a8
 	vpsraq	$5, %ymm2, %ymm2
 	vpsubq	%ymm0, %ymm2, %ymm0
 	vpsraq	$5, %ymm1, %ymm1
@@ -6,7 +6,7 @@ func00000000000000d8:                   # @func00000000000000d8
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000000d4:                   # @func00000000000000d4
+func00000000000001a4:                   # @func00000000000001a4
 	vpsraq	$5, %ymm2, %ymm2
 	vpsubq	%ymm0, %ymm2, %ymm0
 	vpsraq	$5, %ymm1, %ymm1
@@ -14,7 +14,7 @@ func00000000000000d4:                   # @func00000000000000d4
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000000f6:                   # @func00000000000000f6
+func00000000000001e6:                   # @func00000000000001e6
 	vpsraq	$2, %ymm2, %ymm2
 	vpsubq	%ymm0, %ymm2, %ymm0
 	vpsraq	$3, %ymm1, %ymm1
@@ -22,7 +22,7 @@ func00000000000000f6:                   # @func00000000000000f6
 	vpmovm2d	%k0, %xmm0
 	vzeroupper
 	retq
-func00000000000000fa:                   # @func00000000000000fa
+func00000000000001ea:                   # @func00000000000001ea
 	vpsraq	$2, %ymm2, %ymm2
 	vpsubq	%ymm0, %ymm2, %ymm0
 	vpsraq	$3, %ymm1, %ymm1

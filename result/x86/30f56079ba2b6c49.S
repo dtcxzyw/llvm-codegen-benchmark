@@ -1,4 +1,4 @@
-func0000000000000554:                   # @func0000000000000554
+func0000000000000aa4:                   # @func0000000000000aa4
 	sarq	$4, %rdx
 	addq	%rsi, %rdi
 	addq	%rdx, %rdi
@@ -6,7 +6,7 @@ func0000000000000554:                   # @func0000000000000554
 	cmpq	$2, %rdi
 	sete	%al
 	retq
-func0000000000000414:                   # @func0000000000000414
+func0000000000000834:                   # @func0000000000000834
 	sarq	$3, %rdx
 	addq	%rsi, %rdi
 	addq	%rdx, %rdi
@@ -14,7 +14,7 @@ func0000000000000414:                   # @func0000000000000414
 	cmpq	$2, %rdi
 	sete	%al
 	retq
-func0000000000000514:                   # @func0000000000000514
+func0000000000000a34:                   # @func0000000000000a34
 	sarq	$2, %rdx
 	addq	%rsi, %rdi
 	addq	%rdx, %rdi

@@ -1,6 +1,7 @@
 
 ; 53 occurrences:
 ; abc/optimized/saigIsoFast.c.ll
+; boost/optimized/text_file_backend.ll
 ; cpython/optimized/assemble.ll
 ; cpython/optimized/dtoa.ll
 ; cvc5/optimized/linear_equality.cpp.ll
@@ -14,7 +15,6 @@
 ; jq/optimized/jv_dtoa.ll
 ; libquic/optimized/dtoa.cc.ll
 ; libquic/optimized/strike_register.cc.ll
-; linux/optimized/mmconf-fam10h_64.ll
 ; llvm/optimized/ASTContext.cpp.ll
 ; llvm/optimized/ASTWriter.cpp.ll
 ; llvm/optimized/Archive.cpp.ll
@@ -62,9 +62,12 @@ entry:
   ret i32 %4
 }
 
-; 8 occurrences:
+; 11 occurrences:
 ; abc/optimized/bmcUnroll.c.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; hermes/optimized/APInt.cpp.ll
 ; linux/optimized/bitmap.ll
 ; llvm/optimized/APInt.cpp.ll
@@ -80,7 +83,7 @@ entry:
   ret i32 %4
 }
 
-; 124 occurrences:
+; 125 occurrences:
 ; abc/optimized/sclLiberty.c.ll
 ; cmake/optimized/zdict.c.ll
 ; cpython/optimized/assemble.ll
@@ -90,6 +93,7 @@ entry:
 ; gromacs/optimized/grid.cpp.ll
 ; gromacs/optimized/gridset.cpp.ll
 ; imgui/optimized/imgui_draw.cpp.ll
+; lvgl/optimized/lv_draw_sw_line.ll
 ; minetest/optimized/CGUIButton.cpp.ll
 ; minetest/optimized/CGUICheckBox.cpp.ll
 ; minetest/optimized/CGUIComboBox.cpp.ll
@@ -275,14 +279,12 @@ entry:
   ret i32 %4
 }
 
-; 11 occurrences:
+; 9 occurrences:
 ; ceres/optimized/block_structure.cc.ll
 ; freetype/optimized/psaux.c.ll
-; linux/optimized/bitmap-str.ll
 ; linux/optimized/dma-ring.ll
 ; linux/optimized/i915_gem_userptr.ll
 ; linux/optimized/intel_pstate.ll
-; linux/optimized/map.ll
 ; linux/optimized/tx.ll
 ; llama.cpp/optimized/sampling.cpp.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
@@ -340,7 +342,7 @@ entry:
   ret i32 %4
 }
 
-; 70 occurrences:
+; 71 occurrences:
 ; assimp/optimized/IRRLoader.cpp.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_2.cc.ll
 ; ceres/optimized/partitioned_matrix_view_2_2_3.cc.ll
@@ -411,6 +413,7 @@ entry:
 ; velox/optimized/PrestoSerializer.cpp.ll
 ; wasmedge/optimized/controlInstr.cpp.ll
 ; yosys/optimized/equiv_simple.ll
+; yosys/optimized/shregmap.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000010(i32 %0, i64 %1) #0 {
 entry:

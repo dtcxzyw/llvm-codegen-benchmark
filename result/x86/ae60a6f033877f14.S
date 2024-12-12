@@ -1,22 +1,22 @@
-func00000000000002cc:                   # @func00000000000002cc
+func0000000000000d8c:                   # @func0000000000000d8c
 	addq	$8, %rdx
-	cmpq	%rdi, %rdx
+	cmpq	%rdx, %rdi
 	setne	%cl
 	cmpl	$1, %esi
 	setne	%al
 	orb	%cl, %al
 	retq
-func00000000000002c1:                   # @func00000000000002c1
+func0000000000000d81:                   # @func0000000000000d81
 	addq	$8, %rdx
-	cmpq	%rdi, %rdx
+	cmpq	%rdx, %rdi
 	sete	%cl
 	testl	%esi, %esi
 	setne	%al
 	orb	%cl, %al
 	retq
-func000000000000028c:                   # @func000000000000028c
+func0000000000000d0c:                   # @func0000000000000d0c
 	addq	$6, %rdx
-	cmpq	%rdi, %rdx
+	cmpq	%rdx, %rdi
 	setne	%cl
 	cmpl	$2, %esi
 	setae	%al

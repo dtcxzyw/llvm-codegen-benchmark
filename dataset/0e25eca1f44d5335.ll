@@ -1,6 +1,7 @@
 
-; 6 occurrences:
+; 7 occurrences:
 ; libzmq/optimized/socket_poller.cpp.ll
+; libzmq/optimized/zmq.cpp.ll
 ; linux/optimized/r8169_main.ll
 ; llvm/optimized/ModuleSummaryAnalysis.cpp.ll
 ; llvm/optimized/SelectionDAGBuilder.cpp.ll
@@ -12,7 +13,7 @@ entry:
   %2 = lshr i16 %1, 1
   %3 = and i16 %2, 56
   %4 = and i16 %1, 7
-  %5 = or disjoint i16 %4, %0
+  %5 = or disjoint i16 %0, %4
   %6 = or disjoint i16 %5, %3
   ret i16 %6
 }

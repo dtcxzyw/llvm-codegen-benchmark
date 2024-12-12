@@ -1,8 +1,7 @@
 
-; 7 occurrences:
+; 6 occurrences:
 ; linux/optimized/vmcore.ll
 ; opencv/optimized/demosaicing.cpp.ll
-; opencv/optimized/optflowgf.cpp.ll
 ; postgres/optimized/array_typanalyze.ll
 ; postgres/optimized/ts_typanalyze.ll
 ; qemu/optimized/hw_core_sysbus-fdt.c.ll
@@ -17,15 +16,13 @@ entry:
   ret ptr %5
 }
 
-; 141 occurrences:
+; 125 occurrences:
 ; abc/optimized/acecFadds.c.ll
 ; abc/optimized/acecTree.c.ll
 ; bullet3/optimized/b3FixedConstraint.ll
 ; bullet3/optimized/btConeTwistConstraint.ll
-; bullet3/optimized/btDantzigLCP.ll
 ; bullet3/optimized/btHingeConstraint.ll
 ; darktable/optimized/introspection_lut3d.c.ll
-; graphviz/optimized/DotIO.c.ll
 ; gromacs/optimized/awh.cpp.ll
 ; gromacs/optimized/cellsizes.cpp.ll
 ; gromacs/optimized/constr.cpp.ll
@@ -142,22 +139,8 @@ entry:
 ; gromacs/optimized/update.cpp.ll
 ; gromacs/optimized/update_vv.cpp.ll
 ; gromacs/optimized/vsite.cpp.ll
-; ncnn/optimized/convolution_x86.cpp.ll
-; ncnn/optimized/convolution_x86_avx.cpp.ll
-; ncnn/optimized/convolution_x86_avx2.cpp.ll
-; ncnn/optimized/convolution_x86_avx512.cpp.ll
-; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
-; ncnn/optimized/convolution_x86_fma.cpp.ll
-; ncnn/optimized/convolution_x86_xop.cpp.ll
-; ncnn/optimized/gemm_x86.cpp.ll
-; ncnn/optimized/gemm_x86_avx.cpp.ll
-; ncnn/optimized/gemm_x86_avx512.cpp.ll
-; ncnn/optimized/gemm_x86_fma.cpp.ll
 ; openblas/optimized/dstemr.c.ll
-; opencv/optimized/demosaicing.cpp.ll
-; opencv/optimized/omnidir.cpp.ll
 ; openjdk/optimized/ThreeByteBgr.ll
-; openmpi/optimized/test_overhead.ll
 ; raylib/optimized/rmodels.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000016(ptr %0, i32 %1) #0 {
@@ -169,22 +152,23 @@ entry:
   ret ptr %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; ncnn/optimized/convolution_x86.cpp.ll
 ; ncnn/optimized/convolution_x86_avx.cpp.ll
 ; ncnn/optimized/convolution_x86_fma.cpp.ll
-; opencv/optimized/demosaicing.cpp.ll
+; opencv/optimized/omnidir.cpp.ll
+; openmpi/optimized/test_overhead.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000017(ptr %0, i32 %1) #0 {
 entry:
-  %2 = mul i32 %1, 72
+  %2 = mul nsw i32 %1, 36
   %3 = sext i32 %2 to i64
   %4 = getelementptr i16, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 72
   ret ptr %5
 }
 
-; 20 occurrences:
+; 19 occurrences:
 ; abc/optimized/cnfWrite.c.ll
 ; abc/optimized/giaCSat.c.ll
 ; abc/optimized/giaCTas.c.ll
@@ -194,7 +178,6 @@ entry:
 ; msdfgen/optimized/MSDFErrorCorrection.cpp.ll
 ; msdfgen/optimized/msdf-error-correction.cpp.ll
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll
-; opencv/optimized/fisheye.cpp.ll
 ; opencv/optimized/gfluidimgproc_func.dispatch.cpp.ll
 ; opencv/optimized/omnidir.cpp.ll
 ; opencv/optimized/optflowgf.cpp.ll
@@ -244,6 +227,31 @@ entry:
   %3 = sext i32 %2 to i64
   %4 = getelementptr float, ptr %0, i64 %3
   %5 = getelementptr i8, ptr %4, i64 4
+  ret ptr %5
+}
+
+; 2 occurrences:
+; opencv/optimized/fisheye.cpp.ll
+; opencv/optimized/omnidir.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000003(ptr %0, i32 %1) #0 {
+entry:
+  %2 = mul i32 %1, 6
+  %3 = add i32 %2, 26
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw nuw i32, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 1 occurrences:
+; opencv/optimized/demosaicing.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000006(ptr %0, i32 %1) #0 {
+entry:
+  %2 = mul i32 %1, 3
+  %3 = sext i32 %2 to i64
+  %4 = getelementptr i16, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 -2
   ret ptr %5
 }
 

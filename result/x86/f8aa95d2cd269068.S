@@ -11,7 +11,7 @@ func0000000000000004:                   # @func0000000000000004
 	setb	%al
 	andb	%dil, %al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	imulq	$86400, %rdx, %rax              # imm = 0x15180
 	cmpq	%rsi, %rax
 	setne	%al
@@ -23,19 +23,19 @@ func0000000000000009:                   # @func0000000000000009
 	setae	%al
 	andb	%dil, %al
 	retq
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	imulq	$1000000000, %rdx, %rax         # imm = 0x3B9ACA00
 	cmpq	%rsi, %rax
 	setl	%al
 	andb	%dil, %al
 	retq
-func0000000000000035:                   # @func0000000000000035
+func0000000000000065:                   # @func0000000000000065
 	imulq	$56, %rdx, %rax
 	cmpq	%rsi, %rax
 	setbe	%al
 	andb	%dil, %al
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	leaq	(%rdx,%rdx,2), %rax
 	cmpq	%rsi, %rax
 	sete	%al

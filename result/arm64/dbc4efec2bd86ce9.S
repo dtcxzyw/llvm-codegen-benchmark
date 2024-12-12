@@ -1,77 +1,80 @@
-func0000000000000011:                   // @func0000000000000011
+func0000000000000021:                   // @func0000000000000021
 // %bb.0:                               // %entry
-	movi	v3.16b, #8
-	cmeq	v2.16b, v2.16b, #0
-	and	v0.16b, v2.16b, v0.16b
-	cmeq	v1.16b, v1.16b, v3.16b
-	and	v0.16b, v1.16b, v0.16b
+	and	w8, w1, #0xff
+	tst	w2, #0xff
+	ccmp	w8, #8, #0, eq
+	cset	w8, eq
+	and	w0, w8, w0
 	ret
                                         // -- End function
-func00000000000000c4:                   // @func00000000000000c4
+func0000000000000184:                   // @func0000000000000184
 // %bb.0:                               // %entry
-	movi	v3.16b, #15
-	movi	v4.16b, #240
-	cmeq	v2.16b, v2.16b, v3.16b
-	cmhi	v1.16b, v4.16b, v1.16b
-	bic	v1.16b, v1.16b, v2.16b
-	and	v0.16b, v1.16b, v0.16b
+	and	w8, w1, #0xff
+	and	w9, w2, #0xff
+	cmp	w8, #240
+	ccmp	w9, #15, #4, lo
+	cset	w8, ne
+	and	w0, w8, w0
 	ret
                                         // -- End function
-func00000000000000c1:                   // @func00000000000000c1
+func0000000000000084:                   // @func0000000000000084
 // %bb.0:                               // %entry
-	movi	v3.16b, #2
-	movi	v4.16b, #3
-	cmeq	v2.16b, v2.16b, v3.16b
-	cmeq	v1.16b, v1.16b, v4.16b
-	bic	v1.16b, v1.16b, v2.16b
-	and	v0.16b, v1.16b, v0.16b
+	and	w8, w1, #0xff
+	and	w9, w2, #0xff
+	cmp	w8, #248
+	mov	w8, #68                         // =0x44
+	ccmp	w9, w8, #2, lo
+	cset	w8, lo
+	and	w0, w8, w0
 	ret
                                         // -- End function
-func00000000000000cc:                   // @func00000000000000cc
+func0000000000000181:                   // @func0000000000000181
 // %bb.0:                               // %entry
-	cmtst	v1.16b, v1.16b, v1.16b
-	cmeq	v2.16b, v2.16b, #0
-	bic	v1.16b, v1.16b, v2.16b
-	and	v0.16b, v1.16b, v0.16b
+	and	w8, w1, #0xff
+	and	w9, w2, #0xff
+	cmp	w8, #3
+	ccmp	w9, #2, #4, eq
+	cset	w8, ne
+	and	w0, w8, w0
 	ret
                                         // -- End function
-func000000000000001c:                   // @func000000000000001c
+func000000000000018c:                   // @func000000000000018c
 // %bb.0:                               // %entry
-	movi	v3.16b, #12
-	movi	v4.16b, #13
-	cmeq	v2.16b, v2.16b, v3.16b
-	cmeq	v1.16b, v1.16b, v4.16b
-	bic	v1.16b, v2.16b, v1.16b
-	and	v0.16b, v1.16b, v0.16b
+	tst	w1, #0xff
+	cset	w8, ne
+	tst	w2, #0xff
+	csel	w8, wzr, w8, eq
+	and	w0, w8, w0
 	ret
                                         // -- End function
-func00000000000000c8:                   // @func00000000000000c8
+func000000000000002c:                   // @func000000000000002c
 // %bb.0:                               // %entry
-	movi	v3.16b, #15
-	movi	v4.16b, #159
-	cmeq	v2.16b, v2.16b, v3.16b
-	cmhi	v1.16b, v1.16b, v4.16b
-	bic	v1.16b, v1.16b, v2.16b
-	and	v0.16b, v1.16b, v0.16b
+	and	w8, w1, #0xff
+	and	w9, w2, #0xff
+	cmp	w8, #13
+	ccmp	w9, #12, #0, ne
+	cset	w8, eq
+	and	w0, w8, w0
 	ret
                                         // -- End function
-func0000000000000018:                   // @func0000000000000018
+func0000000000000188:                   // @func0000000000000188
 // %bb.0:                               // %entry
-	movi	v3.16b, #47
-	movi	v4.16b, #3
-	cmeq	v2.16b, v2.16b, v3.16b
-	cmhi	v1.16b, v1.16b, v4.16b
-	and	v1.16b, v1.16b, v2.16b
-	and	v0.16b, v1.16b, v0.16b
+	and	w8, w1, #0xff
+	and	w9, w2, #0xff
+	cmp	w8, #159
+	ccmp	w9, #15, #4, hi
+	cset	w8, ne
+	and	w0, w8, w0
 	ret
                                         // -- End function
-func0000000000000044:                   // @func0000000000000044
+func0000000000000028:                   // @func0000000000000028
 // %bb.0:                               // %entry
-	movi	v3.16b, #230
-	movi	v4.16b, #94
-	cmhi	v2.16b, v3.16b, v2.16b
-	cmhi	v1.16b, v4.16b, v1.16b
-	and	v1.16b, v1.16b, v2.16b
-	and	v0.16b, v1.16b, v0.16b
+	and	w8, w1, #0xff
+	and	w9, w2, #0xff
+	cmp	w8, #3
+	mov	w8, #47                         // =0x2f
+	ccmp	w9, w8, #0, hi
+	cset	w8, eq
+	and	w0, w8, w0
 	ret
                                         // -- End function

@@ -12,7 +12,7 @@ entry:
   %3 = freeze i32 %2
   %4 = sext i32 %3 to i64
   %5 = select i1 %1, i64 -1, i64 %4
-  %6 = icmp sle i64 %5, %0
+  %6 = icmp sge i64 %0, %5
   ret i1 %6
 }
 

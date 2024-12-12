@@ -1,16 +1,15 @@
 
-; 9 occurrences:
+; 8 occurrences:
 ; folly/optimized/EventBase.cpp.ll
 ; folly/optimized/EventBaseLocal.cpp.ll
 ; folly/optimized/SharedMutex.cpp.ll
 ; freetype/optimized/pshinter.c.ll
-; linux/optimized/fonts.ll
 ; openusd/optimized/mvref_common.c.ll
 ; php/optimized/zend_jit.ll
 ; postgres/optimized/deadlock.ll
 ; qemu/optimized/hw_gpio_sifive_gpio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = icmp eq i32 %3, 0
@@ -22,7 +21,7 @@ entry:
 ; 1 occurrences:
 ; qemu/optimized/hw_pci_pcie_aer.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = icmp ne i32 %3, 0
@@ -35,7 +34,7 @@ entry:
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; openjdk/optimized/ProcessPath.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = icmp eq i32 %3, 0
@@ -52,7 +51,7 @@ entry:
 ; linux/optimized/inotify_user.ll
 ; linux/optimized/intel_rps.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000018c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = icmp ne i32 %3, 0
@@ -64,7 +63,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/metrics.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000008c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = icmp ne i32 %3, 12
@@ -76,7 +75,7 @@ entry:
 ; 1 occurrences:
 ; libwebp/optimized/io_dec.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000081(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
   %4 = icmp eq i32 %3, 15

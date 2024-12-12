@@ -1,52 +1,27 @@
 func000000000000001e:                   // @func000000000000001e
 // %bb.0:                               // %entry
-	mvni	v3.4s, #63, msl #16
-	ushll2	v4.4s, v2.8h, #13
-	ushll	v2.4s, v2.4h, #13
-	fneg	v3.4s, v3.4s
-	orr	v0.16b, v2.16b, v0.16b
-	orr	v1.16b, v4.16b, v1.16b
-	orr	v1.16b, v1.16b, v3.16b
-	orr	v0.16b, v0.16b, v3.16b
+	and	w8, w1, #0x1ff
+	orr	w8, w0, w8, lsl #13
+	orr	w0, w8, #0x7fc00000
 	ret
                                         // -- End function
 func000000000000000a:                   // @func000000000000000a
 // %bb.0:                               // %entry
-	movi	v3.8h, #128, lsl #8
-	mvni	v4.4s, #63, msl #16
-	fneg	v4.4s, v4.4s
-	and	v2.16b, v2.16b, v3.16b
-	shll2	v3.4s, v2.8h, #16
-	shll	v2.4s, v2.4h, #16
-	orr	v1.16b, v1.16b, v4.16b
-	orr	v0.16b, v0.16b, v4.16b
-	orr	v1.16b, v3.16b, v1.16b
-	orr	v0.16b, v2.16b, v0.16b
+	and	w8, w1, #0x8000
+	orr	w8, w0, w8, lsl #16
+	orr	w0, w8, #0x7fc00000
 	ret
                                         // -- End function
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
-	movi	v3.8h, #1
-	and	v2.16b, v2.16b, v3.16b
-	ushll	v3.4s, v2.4h, #0
-	ushll2	v2.4s, v2.8h, #0
-	shl	v2.4s, v2.4s, #17
-	shl	v3.4s, v3.4s, #17
-	orr	v0.16b, v3.16b, v0.16b
-	orr	v1.16b, v2.16b, v1.16b
-	orr	v1.4s, #1, lsl #16
-	orr	v0.4s, #1, lsl #16
+	and	w8, w1, #0x1
+	orr	w8, w0, w8, lsl #17
+	orr	w0, w8, #0x10000
 	ret
                                         // -- End function
 func000000000000001b:                   // @func000000000000001b
 // %bb.0:                               // %entry
-	ushll	v3.4s, v2.4h, #0
-	ushll2	v2.4s, v2.8h, #0
-	shl	v2.4s, v2.4s, #26
-	shl	v3.4s, v3.4s, #26
-	orr	v0.16b, v3.16b, v0.16b
-	orr	v1.16b, v2.16b, v1.16b
-	orr	v1.4s, #2, lsl #8
-	orr	v0.4s, #2, lsl #8
+	orr	w8, w0, w1, lsl #26
+	orr	w0, w8, #0x200
 	ret
                                         // -- End function

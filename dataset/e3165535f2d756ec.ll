@@ -25,20 +25,6 @@ entry:
   ret i64 %4
 }
 
-; 4 occurrences:
-; duckdb/optimized/ub_duckdb_parallel.cpp.ll
-; duckdb/optimized/ub_duckdb_storage_buffer.cpp.ll
-; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
-; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
-entry:
-  %2 = or i64 %0, %1
-  %3 = add i64 %2, 1
-  %4 = lshr i64 %3, 1
-  ret i64 %4
-}
-
 ; 2 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; libquic/optimized/convert.c.ll
@@ -61,6 +47,18 @@ entry:
   %2 = or disjoint i64 %0, %1
   %3 = add i64 %2, 8
   %4 = lshr i64 %3, 32
+  ret i64 %4
+}
+
+; 2 occurrences:
+; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
+; wasmtime-rs/optimized/49rlnnlt9cxf81l.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
+entry:
+  %2 = or i64 %0, %1
+  %3 = add i64 %2, -1
+  %4 = lshr i64 %3, 8
   ret i64 %4
 }
 

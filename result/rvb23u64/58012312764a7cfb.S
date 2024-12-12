@@ -7,7 +7,7 @@ func0000000000000008:                   # @func0000000000000008
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func0000000000000056:                   # @func0000000000000056
+func00000000000000a6:                   # @func00000000000000a6
 	add	a1, a1, a2
 	addiw	a1, a1, -48
 	slti	a2, a1, 50
@@ -15,10 +15,10 @@ func0000000000000056:                   # @func0000000000000056
 	czero.eqz	a0, a0, a2
 	or	a0, a0, a1
 	ret
-func000000000000005a:                   # @func000000000000005a
+func00000000000000aa:                   # @func00000000000000aa
 	add	a1, a1, a2
-	addiw	a1, a1, -280
-	slti	a2, a1, 800
+	addiw	a1, a1, -1
+	slti	a2, a1, 12
 	czero.eqz	a1, a1, a2
 	czero.nez	a0, a0, a2
 	or	a0, a0, a1

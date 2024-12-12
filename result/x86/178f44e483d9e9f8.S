@@ -1,16 +1,16 @@
-func000000000000030a:                   # @func000000000000030a
+func000000000000030f:                   # @func000000000000030f
 	andl	$1, %esi
 	leaq	(%rsi,%rdi), %rax
 	cmpb	$1, %dl
 	sbbq	$-1, %rax
 	retq
-func000000000000020a:                   # @func000000000000020a
+func000000000000020f:                   # @func000000000000020f
 	andl	$1, %esi
 	leaq	(%rsi,%rdi), %rax
 	cmpb	$2, %dl
 	sbbq	$-1, %rax
 	retq
-func000000000000004a:                   # @func000000000000004a
+func000000000000004f:                   # @func000000000000004f
 	xorl	%eax, %eax
 	cmpb	$10, %dl
 	sete	%al

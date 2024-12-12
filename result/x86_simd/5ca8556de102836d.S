@@ -74,7 +74,7 @@ func000000000000000d:                   # @func000000000000000d
 	vpaddd	.LCPI10_0(%rip){1to8}, %ymm0, %ymm0
 	retq
 .LCPI11_0:
-	.long	4294966816                      # 0xfffffe20
+	.long	4294967248                      # 0xffffffd0
 func0000000000000017:                   # @func0000000000000017
 	vpmovzxbd	%xmm1, %ymm1            # ymm1 = xmm1[0],zero,zero,zero,xmm1[1],zero,zero,zero,xmm1[2],zero,zero,zero,xmm1[3],zero,zero,zero,xmm1[4],zero,zero,zero,xmm1[5],zero,zero,zero,xmm1[6],zero,zero,zero,xmm1[7],zero,zero,zero
 	vpaddd	%ymm1, %ymm0, %ymm0

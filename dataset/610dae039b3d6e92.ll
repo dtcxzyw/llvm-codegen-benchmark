@@ -14,7 +14,7 @@ entry:
   ret i32 %5
 }
 
-; 57 occurrences:
+; 55 occurrences:
 ; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/giaSimBase.c.ll
 ; jsonnet/optimized/vm.cpp.ll
@@ -68,8 +68,6 @@ entry:
 ; openusd/optimized/reconintra.c.ll
 ; ozz-animation/optimized/gltf2ozz.cc.ll
 ; proj/optimized/defmodel.cpp.ll
-; proj/optimized/io.cpp.ll
-; proj/optimized/projsync.cpp.ll
 ; proj/optimized/tinshift.cpp.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; Function Attrs: nounwind

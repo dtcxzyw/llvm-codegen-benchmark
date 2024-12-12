@@ -1,5 +1,5 @@
 
-; 49 occurrences:
+; 50 occurrences:
 ; bullet3/optimized/btConeShape.ll
 ; bullet3/optimized/btMinkowskiSumShape.ll
 ; bullet3/optimized/btPolyhedralConvexShape.ll
@@ -49,11 +49,12 @@
 ; stb/optimized/stb_truetype.c.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
 ; typst-rs/optimized/40w6rezair915kkd.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1) #0 {
 entry:
   %2 = fmul float %1, 0.000000e+00
-  %3 = fadd float %2, %0
+  %3 = fadd float %0, %2
   %4 = fmul float %3, 0.000000e+00
   ret float %4
 }

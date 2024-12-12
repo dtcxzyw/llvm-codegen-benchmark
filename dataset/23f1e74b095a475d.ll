@@ -9,7 +9,7 @@ define i16 @func0000000000000002(i16 %0, i32 %1) #0 {
 entry:
   %2 = lshr i32 %1, 16
   %3 = trunc nuw i32 %2 to i16
-  %4 = xor i16 %3, %0
+  %4 = xor i16 %0, %3
   ret i16 %4
 }
 

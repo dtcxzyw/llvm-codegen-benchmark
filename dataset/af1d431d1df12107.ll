@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 27 occurrences:
 ; brotli/optimized/encode.c.ll
 ; clamav/optimized/readdb.c.ll
 ; cpython/optimized/obmalloc.ll
@@ -21,9 +21,12 @@
 ; php/optimized/zend_language_parser.ll
 ; ropey-rs/optimized/4i14j6kjvp3g1a3p.ll
 ; ruby/optimized/regcomp.ll
+; rust-analyzer-rs/optimized/24c6enrnc2qfqvzp.ll
+; rust-analyzer-rs/optimized/3g8gmheh3yshr0h0.ll
 ; tls-rs/optimized/1oa4q9ydtxtlathz.ll
 ; tls-rs/optimized/2xhpv4vf07do7r8g.ll
 ; tls-rs/optimized/526n7g8rwc65lc9b.ll
+; zed-rs/optimized/b2ktka7yg7i1nuhew6e88xzwi.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1, ptr %2) #0 {
 entry:
@@ -47,14 +50,11 @@ entry:
   ret i64 %4
 }
 
-; 7 occurrences:
+; 4 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; grpc/optimized/hpack_encoder.cc.ll
 ; grpc/optimized/service_config_impl.cc.ll
 ; mimalloc/optimized/alloc.c.ll
-; wireshark/optimized/packet-ssh.c.ll
-; wireshark/optimized/packet-tls-utils.c.ll
-; wireshark/optimized/packet-wireguard.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1, ptr %2) #0 {
 entry:

@@ -12,7 +12,7 @@ entry:
   %2 = trunc i64 %1 to i8
   %3 = add i8 %2, 90
   %4 = icmp ult i8 %3, 10
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

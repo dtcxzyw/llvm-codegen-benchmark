@@ -3,7 +3,7 @@
 ; openssl/optimized/libssl-lib-statem_clnt.ll
 ; openssl/optimized/libssl-shlib-statem_clnt.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000188(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = icmp slt i64 %2, 0
@@ -16,7 +16,7 @@ entry:
 ; folly/optimized/EDFThreadPoolExecutor.cpp.ll
 ; linux/optimized/intel_gt.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008a(i64 %0, i64 %1) #0 {
+define i1 @func000000000000010a(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %0, %1
   %3 = icmp ult i64 %2, 64
@@ -28,7 +28,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/blk-iolatency.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000092(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000112(i64 %0, i64 %1) #0 {
 entry:
   %2 = sub i64 %1, %0
   %3 = icmp ult i64 %2, 500000000

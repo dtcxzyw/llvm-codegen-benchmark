@@ -8,15 +8,17 @@
 ; php/optimized/zend_jit.ll
 ; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000421(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %0, 32
   %3 = icmp eq i32 %2, 0
   ret i1 %3
 }
 
-; 12 occurrences:
+; 14 occurrences:
 ; freetype/optimized/ftbase.c.ll
+; freetype/optimized/type1.c.ll
+; freetype/optimized/type1cid.c.ll
 ; hermes/optimized/APFloat.cpp.ll
 ; linux/optimized/dm-io.ll
 ; llvm/optimized/APFloat.cpp.ll
@@ -29,7 +31,7 @@ entry:
 ; php/optimized/zend_jit.ll
 ; php/optimized/zend_ssa.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %0, 8
   %3 = icmp eq i32 %2, 0
@@ -42,7 +44,7 @@ entry:
 ; libquic/optimized/dtoa.cc.ll
 ; php/optimized/zend_strtod.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000141(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000681(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %0, 7
   %3 = icmp eq i32 %2, 0
@@ -52,7 +54,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/net.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000141(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %0, 256
   %3 = icmp eq i32 %2, 0

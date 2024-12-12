@@ -1,5 +1,5 @@
 
-; 164 occurrences:
+; 163 occurrences:
 ; abseil-cpp/optimized/container_test.cc.ll
 ; abseil-cpp/optimized/graphcycles_test.cc.ll
 ; abseil-cpp/optimized/hash_instantiated_test.cc.ll
@@ -88,7 +88,6 @@
 ; meshlab/optimized/seam_remover.cpp.ll
 ; meshlab/optimized/seams.cpp.ll
 ; meshlab/optimized/texture_optimization.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/client.cpp.ll
 ; minetest/optimized/clientpackethandler.cpp.ll
 ; minetest/optimized/content_cao.cpp.ll

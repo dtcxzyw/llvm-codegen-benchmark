@@ -4,7 +4,6 @@
 ; cmake/optimized/archive_read_support_format_tar.c.ll
 ; cmake/optimized/json_reader.cpp.ll
 ; cmake/optimized/xmlparse.c.ll
-; cpython/optimized/_struct.ll
 ; cpython/optimized/xmlparse.ll
 ; lief/optimized/ecp.c.ll
 ; linux/optimized/exthdrs.ll
@@ -16,6 +15,7 @@
 ; lua/optimized/lstrlib.ll
 ; luau/optimized/CodeGenX64.cpp.ll
 ; luau/optimized/lstrlib.cpp.ll
+; lvgl/optimized/lv_calendar_header_arrow.ll
 ; openusd/optimized/decodemv.c.ll
 ; ozz-animation/optimized/jsoncpp.cpp.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
@@ -32,7 +32,7 @@ entry:
   ret i64 %3
 }
 
-; 78 occurrences:
+; 77 occurrences:
 ; brotli/optimized/transform.c.ll
 ; clamav/optimized/autoit.c.ll
 ; clamav/optimized/bytecode.c.ll
@@ -70,7 +70,6 @@ entry:
 ; linux/optimized/tcp_input.ll
 ; llvm/optimized/DWARFExpression.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
-; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SelectionDAGISel.cpp.ll
 ; luajit/optimized/lib_string.ll
 ; luajit/optimized/lib_string_dyn.ll
@@ -120,11 +119,9 @@ entry:
   ret i64 %3
 }
 
-; 73 occurrences:
+; 68 occurrences:
 ; clamav/optimized/Ppmd7.c.ll
 ; clamav/optimized/binhex.c.ll
-; clamav/optimized/crtmgr.c.ll
-; clamav/optimized/dns.c.ll
 ; clamav/optimized/filtering.c.ll
 ; clamav/optimized/pdfdecode.c.ll
 ; cmake/optimized/archive_ppmd7.c.ll
@@ -155,13 +152,10 @@ entry:
 ; luajit/optimized/lib_jit_dyn.ll
 ; luajit/optimized/lj_record.ll
 ; luajit/optimized/lj_record_dyn.ll
-; luajit/optimized/lj_udata.ll
-; luajit/optimized/lj_udata_dyn.ll
 ; minetest/optimized/guiButton.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; nuklear/optimized/unity.c.ll
-; opencv/optimized/cap_mjpeg_encoder.cpp.ll
 ; opencv/optimized/thresh.cpp.ll
 ; openexr/optimized/ImfFastHuf.cpp.ll
 ; openexr/optimized/parse_header.c.ll
@@ -203,13 +197,11 @@ entry:
   ret i64 %3
 }
 
-; 9 occurrences:
-; gromacs/optimized/pdb2gmx.cpp.ll
+; 7 occurrences:
 ; icu/optimized/bmpset.ll
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/mballoc.ll
 ; oiio/optimized/targainput.cpp.ll
-; opencv/optimized/color_yuv.dispatch.cpp.ll
 ; openssl/optimized/libcrypto-lib-asn1_lib.ll
 ; openssl/optimized/libcrypto-shlib-asn1_lib.ll
 ; wireshark/optimized/packet-vj-comp.c.ll

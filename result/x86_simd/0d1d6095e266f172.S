@@ -16,3 +16,7 @@ func0000000000000001:                   # @func0000000000000001
 	vpsubb	%xmm1, %xmm0, %xmm0
 	vpaddb	.LCPI2_0(%rip), %xmm0, %xmm0
 	retq
+func0000000000000008:                   # @func0000000000000008
+	vpternlogq	$15, %xmm1, %xmm1, %xmm1 # xmm1 = ~xmm1
+	vpaddb	%xmm1, %xmm0, %xmm0
+	retq

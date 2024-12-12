@@ -1,9 +1,9 @@
 func0000000000000000:                   # @func0000000000000000
 	notb	%sil
-	movzbl	%sil, %eax
-	andl	$1, %eax
-	leaq	(%rdi,%rax,8), %rax
-	leaq	(%rax,%rdx,8), %rax
+	leaq	(%rdi,%rdx,8), %rax
+	movzbl	%sil, %ecx
+	andl	$1, %ecx
+	leaq	(%rax,%rcx,8), %rax
 	retq
 func0000000000000002:                   # @func0000000000000002
 	leaq	-8(%rdx), %rax
@@ -11,12 +11,24 @@ func0000000000000002:                   # @func0000000000000002
 	cmovneq	%rdx, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000006:                   # @func0000000000000006
+func0000000000000007:                   # @func0000000000000007
 	andl	$1, %esi
 	shll	$6, %esi
-	addq	%rdi, %rsi
 	shlq	$6, %rdx
-	leaq	-64(%rdx,%rsi), %rax
+	addq	%rdi, %rdx
+	leaq	-64(%rsi,%rdx), %rax
+	retq
+func0000000000000006:                   # @func0000000000000006
+	andl	$1, %esi
+	leaq	(%rdi,%rdx,8), %rax
+	leaq	-8(%rax,%rsi,8), %rax
+	retq
+func000000000000000b:                   # @func000000000000000b
+	notb	%sil
+	leaq	(%rdi,%rdx,8), %rax
+	movzbl	%sil, %ecx
+	andl	$1, %ecx
+	leaq	(%rax,%rcx,8), %rax
 	retq
 func0000000000000004:                   # @func0000000000000004
 	leaq	-15(%rdx), %rax

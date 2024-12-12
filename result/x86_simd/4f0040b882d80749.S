@@ -20,9 +20,11 @@ func0000000000000041:                   # @func0000000000000041
 	vpmovm2d	%k0, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
+.LCPI3_0:
+	.long	49155                           # 0xc003
 func00000000000000a1:                   # @func00000000000000a1
-	vpxor	%xmm2, %xmm2, %xmm2
-	vpsrad	$1, %ymm0, %ymm0
+	vpbroadcastd	.LCPI3_0(%rip), %ymm2   # ymm2 = [49155,49155,49155,49155,49155,49155,49155,49155]
+	vpsrad	$27, %ymm0, %ymm0
 	vpcmpgtd	%ymm2, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq

@@ -5,13 +5,14 @@
 define i1 @func0000000000000014(i1 %0, double %1, double %2) #0 {
 entry:
   %3 = fcmp ole double %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   %5 = freeze i1 %4
   ret i1 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; abseil-cpp/optimized/convert_test.cc.ll
+; boost/optimized/convex_hull_sph_geo.ll
 ; opencv/optimized/svm.cpp.ll
 ; postgres/optimized/float.ll
 ; postgres/optimized/geo_ops.ll

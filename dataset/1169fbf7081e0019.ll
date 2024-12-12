@@ -1,17 +1,5 @@
 
-; 3 occurrences:
-; linux/optimized/hbm.ll
-; ruby/optimized/iseq.ll
-; wireshark/optimized/packet-opensafety.c.ll
-; Function Attrs: nounwind
-define i16 @func0000000000000008(i8 %0) #0 {
-entry:
-  %1 = icmp ugt i8 %0, 63
-  %2 = select i1 %1, i16 256, i16 0
-  ret i16 %2
-}
-
-; 87 occurrences:
+; 88 occurrences:
 ; actix-rs/optimized/1cyxz7f31jo1m8z1.ll
 ; actix-rs/optimized/1rmq6g519rw6hl6a.ll
 ; actix-rs/optimized/2pgtlhl4qd060m9c.ll
@@ -36,7 +24,6 @@ entry:
 ; linux/optimized/cfg.ll
 ; linux/optimized/cistpl.ll
 ; linux/optimized/hub.ll
-; linux/optimized/i915_irq.ll
 ; linux/optimized/ibss.ll
 ; linux/optimized/intel_cx0_phy.ll
 ; linux/optimized/keyboard.ll
@@ -63,6 +50,7 @@ entry:
 ; llvm/optimized/ValueTracking.cpp.ll
 ; luajit/optimized/lj_crecord.ll
 ; luajit/optimized/lj_crecord_dyn.ll
+; lvgl/optimized/lv_flex.ll
 ; meilisearch-rs/optimized/2vln1wcrdf8krbw1.ll
 ; meilisearch-rs/optimized/gdis3hvl48q1qu4.ll
 ; minetest/optimized/clouds.cpp.ll
@@ -87,6 +75,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; stb/optimized/stb_vorbis.c.ll
 ; tls-rs/optimized/526n7g8rwc65lc9b.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
 ; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; wasmtime-rs/optimized/x7ydxa15kh51k9x.ll
@@ -138,12 +127,13 @@ entry:
   ret i16 %2
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; openspiel/optimized/go_board.cc.ll
 ; openspiel/optimized/phantom_go_board.cc.ll
 ; softposit-rs/optimized/4wrr62dd33canpwl.ll
 ; softposit-rs/optimized/5az6c15ag5q4gib5.ll
 ; softposit-rs/optimized/oveg98n4r9tnk39.ll
+; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
 ; Function Attrs: nounwind
 define i16 @func0000000000000006(i8 %0) #0 {
 entry:
@@ -152,14 +142,25 @@ entry:
   ret i16 %2
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; linux/optimized/rx.ll
+; turborepo-rs/optimized/8pg3jwh1r7c75l6o8as6nsjle.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000000c(i8 %0) #0 {
 entry:
   %.not = icmp eq i8 %0, 0
-  %1 = select i1 %.not, i16 512, i16 0
+  %1 = select i1 %.not, i16 15899, i16 15643
   ret i16 %1
+}
+
+; 1 occurrences:
+; wireshark/optimized/packet-opensafety.c.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000008(i8 %0) #0 {
+entry:
+  %1 = icmp ugt i8 %0, 8
+  %2 = select i1 %1, i16 2, i16 0
+  ret i16 %2
 }
 
 attributes #0 = { nounwind }

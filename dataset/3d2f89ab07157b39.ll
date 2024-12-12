@@ -61,10 +61,10 @@
 ; taskflow/optimized/visualization.cpp.ll
 ; taskflow/optimized/while_loop.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000072(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000d2(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp uge i64 %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
@@ -88,39 +88,38 @@ define i1 @func0000000000000002(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %.unshifted = xor i64 %1, %2
   %3 = icmp ult i64 %.unshifted, 4611686018427387904
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_optimizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000078(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000d8(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 4
   %4 = ashr exact i64 %1, 3
   %5 = icmp ne i64 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; gromacs/optimized/angle.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000062(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c2(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %1, %2
   %4 = or i1 %3, %0
   ret i1 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; opencv/optimized/padding_layer.cpp.ll
 ; openexr/optimized/ImfIDManifest.cpp.ll
 ; openusd/optimized/resolverContext.cpp.ll
-; proj/optimized/factory.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000070(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000d0(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %1, %2
   %4 = or i1 %3, %0
@@ -130,10 +129,10 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/theory_str.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(i1 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c8(i1 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %1, %2
-  %4 = or i1 %3, %0
+  %4 = or i1 %0, %3
   ret i1 %4
 }
 

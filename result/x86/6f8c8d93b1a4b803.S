@@ -8,11 +8,11 @@ func0000000000000031:                   # @func0000000000000031
 	orl	%edi, %eax
 	retq
 func0000000000000004:                   # @func0000000000000004
-	testb	$1, %sil
+	testl	%edx, %edx
 	movl	$4, %ecx
 	movl	$512, %eax                      # imm = 0x200
-	cmovnel	%ecx, %eax
-	testl	%edx, %edx
 	cmovel	%ecx, %eax
+	testb	$1, %sil
+	cmovnel	%ecx, %eax
 	orl	%edi, %eax
 	retq

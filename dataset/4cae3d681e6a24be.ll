@@ -75,7 +75,7 @@ entry:
   ret double %3
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; cvc5/optimized/array_info.cpp.ll
 ; gromacs/optimized/colvarbias_abf.cpp.ll
 ; gromacs/optimized/shellfc.cpp.ll
@@ -83,7 +83,6 @@ entry:
 ; luajit/optimized/lj_trace_dyn.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_embree.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; opencv/optimized/facemarkLBF.cpp.ll
 ; opencv/optimized/ppf_match_3d.cpp.ll
 ; openspiel/optimized/cfr.cc.ll

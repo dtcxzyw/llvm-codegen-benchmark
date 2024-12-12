@@ -1,6 +1,7 @@
 
-; 24 occurrences:
+; 25 occurrences:
 ; arrow/optimized/key_hash.cc.ll
+; boost/optimized/src.ll
 ; jemalloc/optimized/ckh.ll
 ; jemalloc/optimized/ckh.pic.ll
 ; jemalloc/optimized/ckh.sym.ll
@@ -31,7 +32,7 @@ entry:
   %3 = lshr i64 %2, 30
   %4 = xor i64 %3, %2
   %5 = mul i64 %4, -4658895280553007687
-  %6 = xor i64 %5, %0
+  %6 = xor i64 %0, %5
   ret i64 %6
 }
 
@@ -45,7 +46,7 @@ entry:
   %3 = lshr i64 %2, 33
   %4 = xor i64 %3, %2
   %5 = mul i64 %4, 7109453100751455733
-  %6 = xor i64 %5, %0
+  %6 = xor i64 %0, %5
   ret i64 %6
 }
 
@@ -58,7 +59,7 @@ entry:
   %3 = lshr i64 %2, 47
   %4 = xor i64 %3, %2
   %5 = mul i64 %4, -7070675565921424023
-  %6 = xor i64 %5, %0
+  %6 = xor i64 %0, %5
   ret i64 %6
 }
 
@@ -71,7 +72,7 @@ entry:
   %3 = lshr i64 %2, 30
   %4 = xor i64 %3, %2
   %5 = mul i64 %4, -4658895280553007687
-  %6 = xor i64 %5, %0
+  %6 = xor i64 %0, %5
   ret i64 %6
 }
 

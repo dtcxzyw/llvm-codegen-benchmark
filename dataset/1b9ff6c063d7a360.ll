@@ -1,5 +1,5 @@
 
-; 43 occurrences:
+; 46 occurrences:
 ; clamav/optimized/filtering.c.ll
 ; clamav/optimized/readdb.c.ll
 ; clamav/optimized/unpack.cpp.ll
@@ -21,6 +21,8 @@
 ; linux/optimized/virtio_net.ll
 ; luajit/optimized/lj_strscan.ll
 ; luajit/optimized/lj_strscan_dyn.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; mitsuba3/optimized/ralocal.cpp.ll
 ; openjdk/optimized/hb-ot-cff1-table.ll
 ; openjdk/optimized/hb-ot-cff2-table.ll
@@ -36,6 +38,7 @@
 ; wireshark/optimized/packet-ansi_637.c.ll
 ; wireshark/optimized/packet-asterix.c.ll
 ; wireshark/optimized/packet-docsis-macmgmt.c.ll
+; wireshark/optimized/packet-gryphon.c.ll
 ; wireshark/optimized/packet-ipdc.c.ll
 ; wireshark/optimized/packet-ppp.c.ll
 ; wireshark/optimized/packet-sccp.c.ll
@@ -47,15 +50,18 @@
 define i32 @func0000000000000003(i32 %0, i8 %1) #0 {
 entry:
   %.tr = trunc i32 %0 to i8
-  %.narrow = add i8 %.tr, %1
+  %.narrow = add i8 %1, %.tr
   %2 = zext i8 %.narrow to i32
   ret i32 %2
 }
 
-; 56 occurrences:
+; 59 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
+; boost/optimized/collate.ll
+; boost/optimized/collator.ll
+; boost/optimized/message.ll
 ; clamav/optimized/arc4.c.ll
 ; clamav/optimized/unpack.cpp.ll
 ; cmake/optimized/fse_decompress.c.ll
@@ -113,7 +119,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = and i32 %3, -268435456
   ret i32 %4
 }
@@ -133,7 +139,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext i8 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = and i32 %3, 4095
   ret i32 %4
 }
@@ -147,7 +153,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = and i32 %3, 15
   ret i32 %4
 }
@@ -158,7 +164,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i8 %1) #0 {
 entry:
   %2 = zext nneg i8 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = and i32 %3, 31
   ret i32 %4
 }
@@ -169,7 +175,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i8 %1) #0 {
 entry:
   %.tr = trunc i32 %0 to i8
-  %.narrow = add i8 %.tr, %1
+  %.narrow = add i8 %1, %.tr
   %2 = zext i8 %.narrow to i32
   ret i32 %2
 }
@@ -185,7 +191,7 @@ entry:
 define i32 @func0000000000000007(i32 %0, i8 %1) #0 {
 entry:
   %.tr = trunc i32 %0 to i8
-  %.narrow = add i8 %.tr, %1
+  %.narrow = add i8 %1, %.tr
   %2 = zext i8 %.narrow to i32
   ret i32 %2
 }

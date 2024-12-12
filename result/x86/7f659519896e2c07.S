@@ -6,7 +6,7 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 func0000000000000003:                   # @func0000000000000003
 	andl	$1, %esi
-	leaq	8192(%rsi,%rdi), %rax
+	leaq	8192(%rdi,%rsi), %rax
 	retq
 func0000000000000002:                   # @func0000000000000002
 	movl	%esi, %eax

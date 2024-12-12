@@ -21,6 +21,16 @@ entry:
   ret i16 %3
 }
 
+; 1 occurrences:
+; lvgl/optimized/lv_math.ll
+; Function Attrs: nounwind
+define i16 @func000000000000000c(i16 %0, i16 %1) #0 {
+entry:
+  %2 = add nuw nsw i16 %0, %1
+  %3 = mul i16 %2, 360
+  ret i16 %3
+}
+
 ; 3 occurrences:
 ; opencv/optimized/lkpyramid.cpp.ll
 ; opencv/optimized/rlof_localflow.cpp.ll

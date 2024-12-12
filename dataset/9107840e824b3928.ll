@@ -1,5 +1,5 @@
 
-; 59 occurrences:
+; 68 occurrences:
 ; c3c/optimized/target.c.ll
 ; clamav/optimized/nulsft.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll
@@ -17,7 +17,6 @@
 ; icu/optimized/unames.ll
 ; jq/optimized/decNumber.ll
 ; libpng/optimized/pngread.c.ll
-; linux/optimized/eht.ll
 ; linux/optimized/libata-scsi.ll
 ; linux/optimized/mlme.ll
 ; linux/optimized/namei_msdos.ll
@@ -32,8 +31,6 @@
 ; luau/optimized/IrBuilder.cpp.ll
 ; mini-lsm-rs/optimized/1mavrvqu7b39yar1.ll
 ; mini-lsm-rs/optimized/45da4db1y19tqmo.ll
-; mitsuba3/optimized/archtraits.cpp.ll
-; mitsuba3/optimized/x86func.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; opencv/optimized/orb.cpp.ll
 ; opencv/optimized/tsdf_functions.cpp.ll
@@ -58,7 +55,19 @@
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
 ; wasmtime-rs/optimized/59ibd2hl72nblwc1.ll
 ; wireshark/optimized/packet-btle.c.ll
-; wireshark/optimized/packet-ouch.c.ll
+; zed-rs/optimized/130afw1833d1gu50165ly3xmm.ll
+; zed-rs/optimized/1cn7xv4w6dvhmserny8iqmdc3.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/1szjr41vjnxcxgyq70q0xb6lv.ll
+; zed-rs/optimized/3hyavwlupfwy674k0u5ll7gv6.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/9eq7uj5u4le9a0i68pyu9khnb.ll
+; zed-rs/optimized/f14rkn3hjaifgtm5q8vihlx5s.ll
+; zed-rs/optimized/f4g1cwrteaiub5fsoifj5amxy.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i1 %0, i8 %1, i1 %2) #0 {
 entry:

@@ -7,7 +7,7 @@
 define i1 @func0000000000000008(i1 %0, float %1, double %2) #0 {
 entry:
   %3 = fptrunc double %2 to float
-  %4 = fcmp oeq float %3, %1
+  %4 = fcmp oeq float %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }
@@ -19,7 +19,7 @@ entry:
 define i1 @func0000000000000002(i1 %0, float %1, double %2) #0 {
 entry:
   %3 = fptrunc double %2 to float
-  %4 = fcmp ogt float %3, %1
+  %4 = fcmp olt float %1, %3
   %5 = and i1 %4, %0
   ret i1 %5
 }

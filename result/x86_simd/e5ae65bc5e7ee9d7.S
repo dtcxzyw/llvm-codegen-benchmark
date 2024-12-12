@@ -1,8 +1,8 @@
 func000000000000002a:                   # @func000000000000002a
 	vpsllq	$3, %ymm2, %ymm3
 	vpsubq	%ymm2, %ymm3, %ymm2
-	vpaddq	%ymm0, %ymm1, %ymm0
-	vpaddq	%ymm0, %ymm2, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
+	vpaddq	%ymm2, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rdx
 	movabsq	$2635249153387078803, %rax      # imm = 0x2492492492492493
@@ -38,8 +38,8 @@ func000000000000002a:                   # @func000000000000002a
 	.quad	10                              # 0xa
 func0000000000000022:                   # @func0000000000000022
 	vpmullq	.LCPI1_0(%rip){1to4}, %ymm2, %ymm2
-	vpaddq	%ymm0, %ymm1, %ymm0
-	vpaddq	%ymm0, %ymm2, %ymm0
+	vpaddq	%ymm1, %ymm0, %ymm0
+	vpaddq	%ymm2, %ymm0, %ymm0
 	vextracti128	$1, %ymm0, %xmm1
 	vpextrq	$1, %xmm1, %rdx
 	movabsq	$-3689348814741910323, %rax     # imm = 0xCCCCCCCCCCCCCCCD

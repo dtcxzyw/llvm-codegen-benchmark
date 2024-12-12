@@ -31,7 +31,7 @@ func0000000000000003:                   # @func0000000000000003
 	xori	a0, a0, 1
 	ret
 .LCPI3_0:
-	.quad	0x3fe8000000000000              # double 0.75
+	.quad	0x3fee666666666666              # double 0.94999999999999996
 func0000000000000004:                   # @func0000000000000004
 	lui	a2, %hi(.LCPI3_0)
 	fld	fa5, %lo(.LCPI3_0)(a2)

@@ -11,7 +11,8 @@ entry:
   ret i1 %3
 }
 
-; 14 occurrences:
+; 12 occurrences:
+; boost/optimized/to_chars.ll
 ; bullet3/optimized/btConvexHull.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_cast.cpp.ll
@@ -22,10 +23,7 @@ entry:
 ; mitsuba3/optimized/box.cpp.ll
 ; mitsuba3/optimized/rectangle.cpp.ll
 ; opencv/optimized/bgfg_gsoc.cpp.ll
-; typst-rs/optimized/2i78fvbm4wocuesi.ll
 ; typst-rs/optimized/3kgmqnxcsl3z3n0n.ll
-; typst-rs/optimized/40w6rezair915kkd.ll
-; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000002c(float %0) #0 {
 entry:
@@ -328,6 +326,17 @@ define i1 @func0000000000000047(float %0) #0 {
 entry:
   %1 = fcmp ogt float %0, 7.000000e+01
   %2 = fcmp une float %0, 3.600000e+02
+  %3 = and i1 %2, %1
+  ret i1 %3
+}
+
+; 1 occurrences:
+; openusd/optimized/value.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000036(float %0) #0 {
+entry:
+  %1 = fcmp ult float %0, 0x43E0000000000000
+  %2 = fcmp one float %0, 0x7FF0000000000000
   %3 = and i1 %2, %1
   ret i1 %3
 }

@@ -27,7 +27,7 @@ func0000000000000006:                   # @func0000000000000006
 	vsetivli	zero, 8, e32, m2, ta, mu
 	vand.vx	v10, v10, a0
 	lui	a0, 16
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	vor.vx	v8, v8, a0, v0.t
 	li	a0, 102
 	vor.vx	v8, v8, a0

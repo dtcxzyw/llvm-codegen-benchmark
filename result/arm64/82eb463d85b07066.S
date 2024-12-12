@@ -1,43 +1,21 @@
-func0000000000000051:                   // @func0000000000000051
+func00000000000000a1:                   // @func00000000000000a1
 // %bb.0:                               // %entry
-	sub	v2.2d, v2.2d, v4.2d
-	sub	v3.2d, v3.2d, v5.2d
-	neg	v0.2d, v0.2d
-	neg	v1.2d, v1.2d
-	shl	v2.2d, v2.2d, #3
-	shl	v3.2d, v3.2d, #3
-	cmeq	v1.2d, v3.2d, v1.2d
-	cmeq	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	sub	x8, x1, x2
+	cmn	x0, x8, lsl #3
+	cset	w0, eq
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	sub	v2.2d, v2.2d, v4.2d
-	sub	v3.2d, v3.2d, v5.2d
-	neg	v0.2d, v0.2d
-	neg	v1.2d, v1.2d
-	shl	v2.2d, v2.2d, #6
-	shl	v3.2d, v3.2d, #6
-	cmeq	v1.2d, v3.2d, v1.2d
-	cmeq	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	sub	x8, x1, x2
+	cmn	x0, x8, lsl #6
+	cset	w0, eq
 	ret
                                         // -- End function
-func000000000000005c:                   // @func000000000000005c
+func00000000000000ac:                   // @func00000000000000ac
 // %bb.0:                               // %entry
-	sub	v2.2d, v2.2d, v4.2d
-	sub	v3.2d, v3.2d, v5.2d
-	neg	v0.2d, v0.2d
-	neg	v1.2d, v1.2d
-	shl	v2.2d, v2.2d, #3
-	shl	v3.2d, v3.2d, #3
-	cmeq	v1.2d, v3.2d, v1.2d
-	cmeq	v0.2d, v2.2d, v0.2d
-	uzp1	v0.4s, v0.4s, v1.4s
-	mvn	v0.16b, v0.16b
-	xtn	v0.4h, v0.4s
+	sub	x8, x1, x2
+	cmn	x0, x8, lsl #3
+	cset	w0, ne
 	ret
                                         // -- End function

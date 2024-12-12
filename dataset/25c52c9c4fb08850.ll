@@ -1,9 +1,7 @@
 
-; 6 occurrences:
+; 4 occurrences:
 ; hermes/optimized/Passes.cpp.ll
 ; hermes/optimized/Utils.cpp.ll
-; hermes/optimized/escape.cpp.ll
-; linux/optimized/seccomp.ll
 ; llvm/optimized/SemaCodeComplete.cpp.ll
 ; stb/optimized/stb_ds.c.ll
 ; Function Attrs: nounwind

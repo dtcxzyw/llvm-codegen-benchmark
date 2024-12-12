@@ -9,7 +9,7 @@
 ; wireshark/optimized/packet-lapdm.c.ll
 ; wireshark/optimized/packet-lorawan.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i16 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 32768
   %3 = icmp eq i32 %2, 0
@@ -22,7 +22,7 @@ entry:
 ; linux/optimized/neighbour.ll
 ; qemu/optimized/hw_net_tulip.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i16 %0, i32 %1) #0 {
+define i1 @func000000000000018c(i16 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 2047
   %3 = icmp ne i32 %2, 0
@@ -41,7 +41,7 @@ entry:
 ; slurm/optimized/node_mgr.ll
 ; slurm/optimized/opt.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i16 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i16 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1
   %3 = icmp eq i32 %2, 0
@@ -54,10 +54,10 @@ entry:
 ; slurm/optimized/job_mgr.ll
 ; wireshark/optimized/packet-cp2179.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i16 %0, i32 %1) #0 {
+define i1 @func000000000000030c(i16 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
-  %3 = icmp ugt i32 %2, 2
+  %3 = icmp samesign ugt i32 %2, 2
   %4 = icmp ne i16 %0, 0
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
@@ -69,11 +69,23 @@ entry:
 ; llvm/optimized/ASTImporter.cpp.ll
 ; llvm/optimized/CFIFixup.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000181(i16 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 67108864
   %3 = icmp ne i32 %2, 0
   %4 = icmp eq i16 %0, 0
+  %5 = select i1 %4, i1 %3, i1 false
+  ret i1 %5
+}
+
+; 1 occurrences:
+; abseil-cpp/optimized/generators_test.cc.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000284(i16 %0, i32 %1) #0 {
+entry:
+  %2 = and i32 %1, 65532
+  %3 = icmp samesign ult i32 %2, 36
+  %4 = icmp ult i16 %0, 100
   %5 = select i1 %4, i1 %3, i1 false
   ret i1 %5
 }
@@ -83,7 +95,7 @@ entry:
 ; postgres/optimized/heapam.ll
 ; postgres/optimized/nbtpage.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000028(i16 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 262140
   %3 = icmp eq i32 %2, 4
@@ -95,7 +107,7 @@ entry:
 ; 1 occurrences:
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000024(i16 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1048576
   %3 = icmp eq i32 %2, 0
@@ -109,7 +121,7 @@ entry:
 ; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/encode.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000281(i16 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 65528
   %3 = icmp eq i32 %2, 0

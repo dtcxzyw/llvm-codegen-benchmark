@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; wireshark/optimized/packet-smtp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000251(i32 %0, i8 %1, i32 %2) #0 {
+define i1 @func00000000000004a1(i32 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -5328
   %4 = add nsw i32 %3, %0

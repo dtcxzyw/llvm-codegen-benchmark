@@ -62,6 +62,16 @@ func0000000000000004:                   # @func0000000000000004
 	slli	a1, a1, 32
 	add	a0, a0, a1
 	ret
+func0000000000000038:                   # @func0000000000000038
+	add.uw	a1, a2, a1
+	slli	a0, a0, 56
+	add	a0, a0, a1
+	ret
+func000000000000003e:                   # @func000000000000003e
+	add.uw	a1, a2, a1
+	slli	a0, a0, 56
+	add	a0, a0, a1
+	ret
 func000000000000006c:                   # @func000000000000006c
 	sext.w	a2, a2
 	add	a0, a0, a2

@@ -1,33 +1,35 @@
 
-; 13 occurrences:
+; 11 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/extraUtilMult.c.ll
 ; assimp/optimized/ASEParser.cpp.ll
 ; freetype/optimized/sfnt.c.ll
 ; git/optimized/notes.ll
-; libpng/optimized/pngrtran.c.ll
 ; meshoptimizer/optimized/simplifier.cpp.ll
 ; minetest/optimized/CImage.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; mitsuba3/optimized/mesh.cpp.ll
-; openjdk/optimized/pngrtran.ll
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rmodels.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 3
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i32, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 4
+  %4 = getelementptr nusw nuw i32, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 4
   ret ptr %5
 }
 
-; 28 occurrences:
+; 499 occurrences:
 ; abc/optimized/acecCover.c.ll
 ; abc/optimized/acecFadds.c.ll
 ; abc/optimized/giaShow.c.ll
+; abseil-cpp/optimized/str_split_test.cc.ll
 ; cmake/optimized/archive_ppmd8.c.ll
+; darktable/optimized/slideshow.c.ll
+; freetype/optimized/pshinter.c.ll
+; graphviz/optimized/shortest.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; harfbuzz/optimized/hb-subset-plan.cc.ll
 ; harfbuzz/optimized/hb-subset.cc.ll
@@ -36,113 +38,24 @@ entry:
 ; imgui/optimized/imgui_draw.cpp.ll
 ; libquic/optimized/strike_register.cc.ll
 ; llvm/optimized/DereferenceChecker.cpp.ll
+; luajit/optimized/lj_cparse.ll
+; luajit/optimized/lj_cparse_dyn.ll
 ; luau/optimized/OverloadResolution.cpp.ll
 ; meilisearch-rs/optimized/1wnbkg3u8l6dyln4.ll
+; minetest/optimized/touchscreengui.cpp.ll
+; miniaudio/optimized/unity.c.ll
 ; ncnn/optimized/mat_pixel_drawing.cpp.ll
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
+; oiio/optimized/DPXColorConverter.cpp.ll
+; oiio/optimized/DPXHeader.cpp.ll
+; oiio/optimized/RunLengthEncoding.cpp.ll
+; oiio/optimized/Writer.cpp.ll
+; oiio/optimized/dpxinput.cpp.ll
 ; opencv/optimized/shapedescr.cpp.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
-; openusd/optimized/catmarkPatchBuilder.cpp.ll
-; raylib/optimized/rmodels.c.ll
-; raylib/optimized/rtext.c.ll
-; recastnavigation/optimized/DetourCommon.cpp.ll
-; recastnavigation/optimized/DetourDebugDraw.cpp.ll
-; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
-; recastnavigation/optimized/imguiRenderGL.cpp.ll
-; stb/optimized/stb_truetype.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000007a(ptr %0, i32 %1) #0 {
-entry:
-  %2 = mul nuw nsw i32 %1, 40
-  %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 1960
-  ret ptr %5
-}
-
-; 4 occurrences:
-; openjdk/optimized/parse2.ll
-; openusd/optimized/catmarkPatchBuilder.cpp.ll
-; postgres/optimized/gindatapage.ll
-; quickjs/optimized/libunicode.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000070(ptr %0, i32 %1) #0 {
-entry:
-  %2 = mul nuw nsw i32 %1, 3
-  %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr i32, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 -12
-  ret ptr %5
-}
-
-; 2 occurrences:
-; darktable/optimized/Cr2sRawInterpolator.cpp.ll
-; quickjs/optimized/libunicode.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000020(ptr %0, i32 %1) #0 {
-entry:
-  %2 = mul nsw i32 %1, 6
-  %3 = zext i32 %2 to i64
-  %4 = getelementptr i16, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 4
-  ret ptr %5
-}
-
-; 3 occurrences:
-; darktable/optimized/Cr2sRawInterpolator.cpp.ll
-; ocio/optimized/FileFormatSpi3D.cpp.ll
-; raylib/optimized/rtextures.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000030(ptr %0, i32 %1) #0 {
-entry:
-  %2 = mul nsw i32 %1, 6
-  %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr i16, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 8
-  ret ptr %5
-}
-
-; 1 occurrences:
-; darktable/optimized/FujiDecompressor.cpp.ll
-; Function Attrs: nounwind
-define ptr @func000000000000003a(ptr %0, i32 %1) #0 {
-entry:
-  %2 = mul nsw i32 %1, 14
-  %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i16, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 2
-  ret ptr %5
-}
-
-; 2 occurrences:
-; recastnavigation/optimized/DetourCommon.cpp.ll
-; sqlite/optimized/sqlite3.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1) #0 {
-entry:
-  %2 = mul i32 %1, 3
-  %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw float, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 8
-  ret ptr %5
-}
-
-; 2 occurrences:
-; opencv/optimized/epnp.cpp.ll
-; recastnavigation/optimized/RecastMeshDetail.cpp.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000078(ptr %0, i32 %1) #0 {
-entry:
-  %2 = mul nuw nsw i32 %1, 3
-  %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw float, ptr %0, i64 %3
-  %5 = getelementptr i8, ptr %4, i64 8
-  ret ptr %5
-}
-
-; 449 occurrences:
+; openspiel/optimized/hearts_test.cc.ll
 ; openusd/optimized/TestPcpDynamicFileFormatPlugin.cpp.ll
 ; openusd/optimized/TestSdfNoAssetFileFormat.cpp.ll
 ; openusd/optimized/TestUsdProceduralExternalAssetsFileFormatPlugin.cpp.ll
@@ -178,6 +91,7 @@ entry:
 ; openusd/optimized/capsule.cpp.ll
 ; openusd/optimized/capsuleAdapter.cpp.ll
 ; openusd/optimized/capsule_1.cpp.ll
+; openusd/optimized/catmarkPatchBuilder.cpp.ll
 ; openusd/optimized/changeList.cpp.ll
 ; openusd/optimized/changeManager.cpp.ll
 ; openusd/optimized/changeTracker.cpp.ll
@@ -592,13 +506,139 @@ entry:
 ; openusd/optimized/xformCommonAPI.cpp.ll
 ; openusd/optimized/xformOp.cpp.ll
 ; openusd/optimized/xformable.cpp.ll
+; protobuf/optimized/command_line_interface.cc.ll
+; protobuf/optimized/descriptor.cc.ll
+; protobuf/optimized/descriptor_database.cc.ll
+; protobuf/optimized/field_mask_util.cc.ll
+; protobuf/optimized/file.cc.ll
+; protobuf/optimized/map.cc.ll
+; raylib/optimized/raudio.c.ll
+; raylib/optimized/rmodels.c.ll
+; raylib/optimized/rtext.c.ll
+; recastnavigation/optimized/DetourCommon.cpp.ll
+; recastnavigation/optimized/DetourDebugDraw.cpp.ll
+; recastnavigation/optimized/DetourTileCacheBuilder.cpp.ll
+; recastnavigation/optimized/imguiRenderGL.cpp.ll
+; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
+; stb/optimized/stb_truetype.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000007b(ptr %0, i32 %1) #0 {
+define ptr @func000000000000007f(ptr %0, i32 %1) #0 {
+entry:
+  %2 = mul nuw nsw i32 %1, 80
+  %3 = zext nneg i32 %2 to i64
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 16
+  ret ptr %5
+}
+
+; 19 occurrences:
+; imgui/optimized/imgui.cpp.ll
+; linux/optimized/ds.ll
+; linux/optimized/intel_dmc.ll
+; linux/optimized/intel_gsc.ll
+; linux/optimized/libahci.ll
+; linux/optimized/mqueue.ll
+; linux/optimized/pcm.ll
+; linux/optimized/pcm_lib.ll
+; linux/optimized/skl_universal_plane.ll
+; linux/optimized/uncore_nhmex.ll
+; linux/optimized/usblp.ll
+; openjdk/optimized/parse2.ll
+; openusd/optimized/catmarkPatchBuilder.cpp.ll
+; postgres/optimized/gindatapage.ll
+; qemu/optimized/hw_audio_ac97.c.ll
+; qemu/optimized/hw_dma_sifive_pdma.c.ll
+; qemu/optimized/hw_usb_hcd-uhci.c.ll
+; quickjs/optimized/libunicode.ll
+; wireshark/optimized/packet-btle.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000070(ptr %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 24
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
+  %4 = getelementptr i8, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 8
+  ret ptr %5
+}
+
+; 2 occurrences:
+; libpng/optimized/pngrtran.c.ll
+; openjdk/optimized/pngrtran.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000e(ptr %0, i32 %1) #0 {
+entry:
+  %2 = mul i32 %1, 3
+  %3 = zext i32 %2 to i64
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw i8, ptr %4, i64 -1
+  ret ptr %5
+}
+
+; 4 occurrences:
+; darktable/optimized/FujiDecompressor.cpp.ll
+; ncnn/optimized/convolution_x86.cpp.ll
+; ncnn/optimized/convolution_x86_avx.cpp.ll
+; ncnn/optimized/convolution_x86_fma.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000003f(ptr %0, i32 %1) #0 {
+entry:
+  %2 = mul nsw i32 %1, 48
+  %3 = zext nneg i32 %2 to i64
+  %4 = getelementptr nusw nuw i16, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 32
+  ret ptr %5
+}
+
+; 2 occurrences:
+; darktable/optimized/Cr2sRawInterpolator.cpp.ll
+; quickjs/optimized/libunicode.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000020(ptr %0, i32 %1) #0 {
+entry:
+  %2 = mul nsw i32 %1, 6
+  %3 = zext i32 %2 to i64
+  %4 = getelementptr i16, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 4
+  ret ptr %5
+}
+
+; 3 occurrences:
+; darktable/optimized/Cr2sRawInterpolator.cpp.ll
+; ocio/optimized/FileFormatSpi3D.cpp.ll
+; raylib/optimized/rtextures.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000030(ptr %0, i32 %1) #0 {
+entry:
+  %2 = mul nsw i32 %1, 6
+  %3 = zext nneg i32 %2 to i64
+  %4 = getelementptr i16, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 8
+  ret ptr %5
+}
+
+; 2 occurrences:
+; recastnavigation/optimized/DetourCommon.cpp.ll
+; sqlite/optimized/sqlite3.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001f(ptr %0, i32 %1) #0 {
+entry:
+  %2 = mul i32 %1, 3
+  %3 = zext nneg i32 %2 to i64
+  %4 = getelementptr nusw nuw float, ptr %0, i64 %3
   %5 = getelementptr nusw nuw i8, ptr %4, i64 8
+  ret ptr %5
+}
+
+; 2 occurrences:
+; opencv/optimized/epnp.cpp.ll
+; recastnavigation/optimized/RecastMeshDetail.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000007c(ptr %0, i32 %1) #0 {
+entry:
+  %2 = mul nuw nsw i32 %1, 3
+  %3 = zext nneg i32 %2 to i64
+  %4 = getelementptr nusw nuw float, ptr %0, i64 %3
+  %5 = getelementptr i8, ptr %4, i64 8
   ret ptr %5
 }
 
@@ -618,24 +658,24 @@ entry:
 ; 1 occurrences:
 ; postgres/optimized/commit_ts.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000072(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000073(ptr %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 10
   %3 = zext nneg i32 %2 to i64
   %4 = getelementptr i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 8
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 8
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000002f(ptr %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %1, 12
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 2
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 2
   ret ptr %5
 }
 

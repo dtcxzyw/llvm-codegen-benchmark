@@ -185,28 +185,3 @@ func0000000000000009:                   # @func0000000000000009
 	vpsubb	%xmm0, %xmm1, %xmm0
 	vzeroupper
 	retq
-.LCPI9_0:
-	.byte	23                              # 0x17
-	.byte	23                              # 0x17
-	.byte	23                              # 0x17
-	.byte	23                              # 0x17
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-	.zero	1
-.LCPI9_1:
-	.byte	23                              # 0x17
-func0000000000000008:                   # @func0000000000000008
-	vpmovqb	%ymm0, %xmm0
-	vpbroadcastb	.LCPI9_1(%rip), %xmm1   # xmm1 = [23,23,23,23,23,23,23,23,23,23,23,23,23,23,23,23]
-	vpsubb	%xmm0, %xmm1, %xmm0
-	vzeroupper
-	retq

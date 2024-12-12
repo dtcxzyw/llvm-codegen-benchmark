@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; darktable/optimized/amaze.cc.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000030a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000060a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 160
   %4 = add i32 %1, -16
@@ -14,7 +14,7 @@ entry:
 ; 1 occurrences:
 ; git/optimized/block.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000108(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000208(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 3
   %4 = add i32 %1, 2
@@ -26,7 +26,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/json.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000014a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000028a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 10
   %4 = add nsw i32 %1, -48
@@ -39,7 +39,7 @@ entry:
 ; icu/optimized/messagepattern.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000015a(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002aa(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 50
   %4 = add nsw i32 %1, 30
@@ -63,7 +63,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/backgammon.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000106(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000206(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 6
   %4 = add i32 %1, -1
@@ -75,7 +75,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/backgammon.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000156(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002a6(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 6
   %4 = add nsw i32 %1, -1
@@ -87,7 +87,7 @@ entry:
 ; 1 occurrences:
 ; openspiel/optimized/backgammon.cc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000101(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000201(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 6
   %4 = add i32 %1, -1
@@ -99,7 +99,7 @@ entry:
 ; 1 occurrences:
 ; linux/optimized/drm_hdcp_helper.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000384(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000704(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 5
   %4 = add nuw i32 %1, 1
@@ -125,7 +125,7 @@ entry:
 ; luajit/optimized/lj_ccallback.ll
 ; luajit/optimized/lj_ccallback_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000381(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000701(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 17
   %4 = add nuw i32 %1, 8

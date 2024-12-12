@@ -36,22 +36,6 @@ func000000000000000c:                   # @func000000000000000c
 	addi	a0, a0, -423
 	vadd.vx	v8, v8, a0
 	ret
-func0000000000000054:                   # @func0000000000000054
-	li	a0, 365
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmacc.vx	v8, a0, v10
-	lui	a0, 420
-	addi	a0, a0, 737
-	vadd.vx	v8, v8, a0
-	ret
-func000000000000005c:                   # @func000000000000005c
-	li	a0, 365
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmacc.vx	v8, a0, v10
-	lui	a0, 420
-	addi	a0, a0, 738
-	vadd.vx	v8, v8, a0
-	ret
 func000000000000001f:                   # @func000000000000001f
 	li	a0, 21
 	vsetivli	zero, 8, e32, m2, ta, ma

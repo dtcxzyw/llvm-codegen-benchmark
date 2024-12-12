@@ -11,9 +11,8 @@ entry:
   ret i32 %5
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; linux/optimized/linkstate.ll
-; linux/optimized/pse-pd.ll
 ; linux/optimized/rx.ll
 ; openjdk/optimized/cmstypes.ll
 ; redis/optimized/redis-cli.ll

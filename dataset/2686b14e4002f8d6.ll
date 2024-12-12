@@ -15,7 +15,7 @@ entry:
 ; 1 occurrences:
 ; recastnavigation/optimized/DetourNavMeshQuery.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000023(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000043(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %0, 64
   %4 = icmp eq i32 %1, %2
@@ -27,7 +27,7 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/csrsbcs.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000035(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000055(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = or disjoint i32 %0, 16
   %4 = icmp sgt i32 %1, %2

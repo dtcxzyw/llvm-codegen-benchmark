@@ -1,5 +1,7 @@
 
-; 19 occurrences:
+; 21 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; graphviz/optimized/adjust.c.ll
 ; graphviz/optimized/arrows.c.ll
 ; graphviz/optimized/dotsplines.c.ll

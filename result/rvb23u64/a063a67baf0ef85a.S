@@ -1,9 +1,9 @@
 func000000000000000a:                   # @func000000000000000a
-	addw	a1, a1, a2
-	sgtz	a1, a1
-	czero.nez	a0, a0, a1
+	add	a1, a1, a2
+	sraiw	a1, a1, 31
+	and	a0, a0, a1
 	ret
-func0000000000000016:                   # @func0000000000000016
+func0000000000000026:                   # @func0000000000000026
 	addw	a1, a1, a2
 	slti	a1, a1, 0
 	czero.nez	a0, a0, a1
@@ -22,18 +22,18 @@ func0000000000000001:                   # @func0000000000000001
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	addw	a1, a1, a2
 	addi	a1, a1, -1
 	czero.eqz	a0, a0, a1
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000002a:                   # @func000000000000002a
 	addw	a1, a1, a2
 	sgtz	a1, a1
 	neg	a1, a1
 	or	a0, a0, a1
 	ret
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	addw	a1, a1, a2
 	li	a2, 3
 	sltiu	a1, a1, 3
@@ -57,7 +57,7 @@ func0000000000000008:                   # @func0000000000000008
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret
-func0000000000000038:                   # @func0000000000000038
+func0000000000000078:                   # @func0000000000000078
 	addw	a1, a1, a2
 	lui	a2, 4096
 	addiw	a2, a2, -2
@@ -65,7 +65,7 @@ func0000000000000038:                   # @func0000000000000038
 	neg	a1, a1
 	or	a0, a0, a1
 	ret
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	or	a1, a1, a2
 	li	a2, 20
 	sext.w	a1, a1
@@ -73,7 +73,7 @@ func0000000000000031:                   # @func0000000000000031
 	czero.nez	a1, a2, a1
 	or	a0, a0, a1
 	ret
-func0000000000000034:                   # @func0000000000000034
+func0000000000000074:                   # @func0000000000000074
 	addw	a1, a1, a2
 	lui	a2, 131072
 	sltiu	a1, a1, 33
@@ -81,7 +81,7 @@ func0000000000000034:                   # @func0000000000000034
 	czero.eqz	a1, a2, a1
 	or	a0, a0, a1
 	ret
-func0000000000000018:                   # @func0000000000000018
+func0000000000000038:                   # @func0000000000000038
 	addw	a1, a1, a2
 	lui	a2, 8
 	sltu	a1, a2, a1

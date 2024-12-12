@@ -16,7 +16,7 @@
 ; openjdk/optimized/hb-ot-font.ll
 ; openjdk/optimized/hb-ot-layout.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c5(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000185(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 32, %1
   %3 = icmp eq i32 %0, 0
@@ -37,7 +37,7 @@ entry:
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; openusd/optimized/decodeframe.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000c6(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000186(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 32, %1
   %3 = icmp eq i32 %0, 0

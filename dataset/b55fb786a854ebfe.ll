@@ -1,10 +1,11 @@
 
-; 90 occurrences:
+; 91 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; abc/optimized/bdcDec.c.ll
 ; abc/optimized/covMinSop.c.ll
 ; abc/optimized/dauDsd.c.ll
+; abc/optimized/dauNonDsd.c.ll
 ; abc/optimized/fraClaus.c.ll
 ; abc/optimized/giaEra2.c.ll
 ; abc/optimized/ivyMulti.c.ll
@@ -94,7 +95,7 @@
 define i1 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   %5 = icmp eq i32 %4, 0
   ret i1 %5
 }
@@ -111,7 +112,7 @@ entry:
 define i1 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %1, %2
-  %4 = and i32 %3, %0
+  %4 = and i32 %0, %3
   %5 = icmp ne i32 %4, 0
   ret i1 %5
 }
@@ -126,18 +127,6 @@ entry:
   %3 = and i32 %1, %2
   %4 = and i32 %3, %0
   %5 = icmp sgt i32 %4, -1
-  ret i1 %5
-}
-
-; 2 occurrences:
-; cpython/optimized/unicodeobject.ll
-; linux/optimized/vgaarb.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %1, %2
-  %4 = and i32 %3, %0
-  %5 = icmp ult i32 %4, 2
   ret i1 %5
 }
 

@@ -1,16 +1,14 @@
 
-; 4 occurrences:
+; 2 occurrences:
 ; libquic/optimized/time_support.c.ll
-; openssl/optimized/libcrypto-lib-o_time.ll
-; openssl/optimized/libcrypto-shlib-o_time.ll
 ; php/optimized/tm2unixtime.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000029(i64 %0) #0 {
 entry:
-  %1 = mul nsw i64 %0, 4000
-  %2 = add nsw i64 %1, 4000
-  %3 = sdiv i64 %2, 1461001
-  %4 = mul nsw i64 %3, 1461
+  %1 = mul nsw i64 %0, 10000
+  %2 = add nsw i64 %1, 14780
+  %3 = sdiv i64 %2, 3652425
+  %4 = mul nsw i64 %3, -365
   ret i64 %4
 }
 

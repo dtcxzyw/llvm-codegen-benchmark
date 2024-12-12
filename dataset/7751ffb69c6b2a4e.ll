@@ -1,7 +1,8 @@
 
-; 26 occurrences:
+; 27 occurrences:
 ; bullet3/optimized/btSoftBody.ll
 ; freetype/optimized/autofit.c.ll
+; gromacs/optimized/gmx_h2order.cpp.ll
 ; hermes/optimized/APInt.cpp.ll
 ; linux/optimized/intel_display_irq.ll
 ; linux/optimized/intel_migrate.ll

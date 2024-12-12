@@ -7,7 +7,7 @@ func0000000000000001:                   # @func0000000000000001
 	vsetvli	zero, zero, e8, mf2, ta, ma
 	vmerge.vxm	v8, v8, a0, v0
 	ret
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	li	a0, 2016
 	vsetivli	zero, 8, e32, m2, ta, ma
 	vand.vx	v10, v10, a0

@@ -23,14 +23,15 @@ entry:
   ret i32 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/calculate_point_order.ll
 ; postgres/optimized/pgbench.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000004(i1 %0, double %1) #0 {
 entry:
   %2 = fcmp ogt double %1, 0.000000e+00
-  %3 = select i1 %2, i32 2, i32 1
-  %4 = select i1 %0, i32 %3, i32 15
+  %3 = select i1 %2, i32 1, i32 2
+  %4 = select i1 %0, i32 %3, i32 0
   ret i32 %4
 }
 

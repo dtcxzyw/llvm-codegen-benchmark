@@ -1,4 +1,4 @@
-func00000000000000ca:                   # @func00000000000000ca
+func00000000000000cf:                   # @func00000000000000cf
 	or	a1, a1, a2
 	slli	a1, a1, 49
 	srli	a1, a1, 48

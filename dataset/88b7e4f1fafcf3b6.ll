@@ -1,12 +1,14 @@
 
-; 5 occurrences:
+; 7 occurrences:
+; boost/optimized/src.ll
+; boost/optimized/text_file_backend.ll
 ; hermes/optimized/DateUtil.cpp.ll
 ; php/optimized/decode.ll
 ; postgres/optimized/utf8_and_gb18030.ll
 ; re2/optimized/onepass.cc.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000154(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002a4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = add nsw i32 %3, %0
@@ -19,7 +21,7 @@ entry:
 ; draco/optimized/adaptive_rans_bit_encoder.cc.ll
 ; mitsuba3/optimized/x86assembler.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000304(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000604(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nuw nsw i32 %1, %2
   %4 = add i32 %3, %0
@@ -52,13 +54,24 @@ entry:
 ; 1 occurrences:
 ; php/optimized/decode.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000158(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000002a8(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = add nsw i32 %3, %0
   %5 = add i32 %4, -1237624
   %6 = icmp ult i32 %5, -1237576
   ret i1 %6
+}
+
+; 1 occurrences:
+; php/optimized/decode.ll
+; Function Attrs: nounwind
+define i1 @func00000000000002a1(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %1, %2
+  %4 = add nsw i32 %3, %0
+  %5 = icmp eq i32 %4, 7505
+  ret i1 %5
 }
 
 ; 16 occurrences:
@@ -79,7 +92,7 @@ entry:
 ; abc/optimized/liveness.c.ll
 ; abc/optimized/liveness_sim.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000144(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000284(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = add nsw i32 %3, %0
@@ -91,7 +104,7 @@ entry:
 ; 1 occurrences:
 ; abc/optimized/abcMap.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000a4(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = add nsw i32 %3, %0
@@ -104,7 +117,7 @@ entry:
 ; abc/optimized/giaLf.c.ll
 ; opencv/optimized/qrcode_encoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000084(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = add nsw i32 %3, %0
@@ -114,12 +127,59 @@ entry:
 }
 
 ; 1 occurrences:
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i1 @func00000000000007a4(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nuw nsw i32 %1, %2
+  %4 = add nuw nsw i32 %0, %3
+  %5 = add nsw i32 %4, -57344
+  %6 = icmp ult i32 %5, -2048
+  ret i1 %6
+}
+
+; 1 occurrences:
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i1 @func00000000000003a4(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %1, %2
+  %4 = add nuw nsw i32 %3, %0
+  %5 = add nsw i32 %4, -57344
+  %6 = icmp ult i32 %5, -2048
+  ret i1 %6
+}
+
+; 1 occurrences:
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000204(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %1, %2
+  %4 = add i32 %0, %3
+  %5 = add i32 %4, -57344
+  %6 = icmp ult i32 %5, -2048
+  ret i1 %6
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000221(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %1, %2
+  %4 = add i32 %0, %3
+  %5 = icmp eq i32 %4, -1
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; postgres/optimized/numeric.ll
 ; Function Attrs: nounwind
 define i1 @func000000000000000a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = add i32 %4, 2
   %6 = icmp sgt i32 %5, -1
   ret i1 %6
@@ -128,7 +188,7 @@ entry:
 ; 1 occurrences:
 ; wolfssl/optimized/asn.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000024(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %1, %2
   %4 = add i32 %3, %0
@@ -140,19 +200,19 @@ entry:
 ; 1 occurrences:
 ; icu/optimized/umutablecptrie.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000114(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000234(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = add i32 %3, %0
   %5 = add nsw i32 %4, -31
-  %6 = icmp ult i32 %5, 32767
+  %6 = icmp samesign ult i32 %5, 32767
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; opencv/optimized/imgwarp.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000106(i32 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000206(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = add i32 %3, %0

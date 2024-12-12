@@ -1,8 +1,9 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; git/optimized/refs.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; z3/optimized/expr_context_simplifier.cpp.ll
+; zed-rs/optimized/d7h2r6mystjn2jzwcl5ofeoiz.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
@@ -12,7 +13,7 @@ entry:
   ret i32 %4
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; darktable/optimized/timeline.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -23,7 +24,6 @@ entry:
 ; llvm/optimized/PPMacroExpansion.cpp.ll
 ; llvm/optimized/TokenAnnotator.cpp.ll
 ; openjdk/optimized/hb-ot-shaper-indic.ll
-; openmpi/optimized/libprrte_la-hwloc_base_maffinity.ll
 ; openssl/optimized/libcrypto-lib-x509_cmp.ll
 ; openssl/optimized/libcrypto-shlib-x509_cmp.ll
 ; php/optimized/phpdbg_utils.ll
@@ -63,17 +63,6 @@ entry:
 define i32 @func0000000000000006(i1 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, -4
-  %3 = select i1 %0, i1 %2, i1 false
-  %4 = sext i1 %3 to i32
-  ret i32 %4
-}
-
-; 1 occurrences:
-; icu/optimized/ubidiwrt.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i1 %0, i32 %1) #0 {
-entry:
-  %2 = icmp ult i32 %1, -4
   %3 = select i1 %0, i1 %2, i1 false
   %4 = sext i1 %3 to i32
   ret i32 %4

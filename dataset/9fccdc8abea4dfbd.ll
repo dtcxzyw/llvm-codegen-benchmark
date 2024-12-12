@@ -29,7 +29,7 @@ entry:
   ret i1 %.not
 }
 
-; 34 occurrences:
+; 31 occurrences:
 ; abc/optimized/giaDup.c.ll
 ; folly/optimized/CPUThreadPoolExecutor.cpp.ll
 ; folly/optimized/ExecutorWithPriority.cpp.ll
@@ -51,9 +51,6 @@ entry:
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
 ; openexr/optimized/ImfScanLineInputFile.cpp.ll
 ; qemu/optimized/hw_dma_sifive_pdma.c.ll
-; spike/optimized/f16_classify.ll
-; spike/optimized/f32_classify.ll
-; spike/optimized/f64_classify.ll
 ; velox/optimized/ArraySum.cpp.ll
 ; velox/optimized/BaseVector.cpp.ll
 ; velox/optimized/FromUnixTime.cpp.ll
@@ -69,18 +66,6 @@ define i1 @func0000000000000001(i64 %0) #0 {
 entry:
   %1 = icmp ugt i64 %0, 3
   ret i1 %1
-}
-
-; 3 occurrences:
-; linux/optimized/nf_conntrack_sip.ll
-; linux/optimized/nf_nat_proto.ll
-; linux/optimized/nf_nat_sip.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i64 %0) #0 {
-entry:
-  %1 = and i64 %0, 7
-  %2 = icmp ult i64 %1, 3
-  ret i1 %2
 }
 
 attributes #0 = { nounwind }

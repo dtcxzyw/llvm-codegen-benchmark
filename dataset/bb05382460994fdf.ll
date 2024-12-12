@@ -48,6 +48,30 @@ entry:
 }
 
 ; 1 occurrences:
+; boost/optimized/src.ll
+; Function Attrs: nounwind
+define i64 @func000000000000002f(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %1, %2
+  %4 = add nsw i32 %0, -56613888
+  %5 = add nuw nsw i32 %4, %3
+  %6 = zext nneg i32 %5 to i64
+  ret i64 %6
+}
+
+; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000029(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = add nsw i32 %1, %2
+  %4 = add nsw i32 %0, -3
+  %5 = add i32 %4, %3
+  %6 = zext nneg i32 %5 to i64
+  ret i64 %6
+}
+
+; 1 occurrences:
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {

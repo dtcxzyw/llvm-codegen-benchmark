@@ -7,7 +7,7 @@
 ; php/optimized/zend_strtod.ll
 ; ruby/optimized/util.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000844(i32 %0, i32 %1) #0 {
+define i1 @func0000000000002094(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -10
   %3 = icmp ult i32 %2, -4
@@ -19,7 +19,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/cmsalpha.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c8(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000598(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 1
   %3 = icmp ne i32 %0, 0
@@ -35,7 +35,7 @@ entry:
 ; meshlab/optimized/miniz.c.ll
 ; slurm/optimized/cpu_frequency.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001cc(i32 %0, i32 %1) #0 {
+define i1 @func000000000000058c(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 4
   %3 = icmp ne i32 %0, 0
@@ -43,11 +43,12 @@ entry:
   ret i1 %4
 }
 
-; 2 occurrences:
+; 3 occurrences:
+; lvgl/optimized/lv_draw_arc.ll
 ; quantlib/optimized/thirty360.ll
 ; slurm/optimized/cpu_frequency.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000421(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -2
   %3 = icmp eq i32 %2, 30
@@ -59,7 +60,7 @@ entry:
 ; 1 occurrences:
 ; quantlib/optimized/thirty360.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011a(i32 %0, i32 %1) #0 {
+define i1 @func000000000000042a(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp sgt i32 %1, 27
   %3 = icmp eq i32 %0, 2
@@ -70,7 +71,7 @@ entry:
 ; 1 occurrences:
 ; quantlib/optimized/thirty360.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000116(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000426(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 30
   %3 = icmp eq i32 %0, 31
@@ -88,7 +89,7 @@ entry:
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000011c(i32 %0, i32 %1) #0 {
+define i1 @func000000000000042c(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1
   %3 = icmp ne i32 %0, 0
@@ -99,7 +100,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/SemaDecl.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001c1(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000581(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 1
   %3 = icmp ne i32 %0, 0
@@ -110,7 +111,7 @@ entry:
 ; 1 occurrences:
 ; openusd/optimized/cdef.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000114(i32 %0, i32 %1) #0 {
+define i1 @func0000000000000424(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = icmp ult i32 %0, 7

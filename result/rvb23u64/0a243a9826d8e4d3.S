@@ -3,6 +3,10 @@ func0000000000000028:                   # @func0000000000000028
 	or	a0, a0, a1
 	srli	a0, a0, 1
 	ret
+func0000000000000037:                   # @func0000000000000037
+	srli	a0, a0, 52
+	or	a0, a0, a1
+	ret
 func0000000000000000:                   # @func0000000000000000
 	slli	a1, a1, 32
 	or	a0, a0, a1
@@ -32,10 +36,14 @@ func000000000000002a:                   # @func000000000000002a
 	srli	a0, a0, 32
 	or	a0, a0, a1
 	ret
-func0000000000000003:                   # @func0000000000000003
-	slli	a1, a1, 32
+func000000000000002e:                   # @func000000000000002e
+	slli	a1, a1, 48
 	or	a0, a0, a1
-	srli	a0, a0, 40
+	srli	a0, a0, 32
+	ret
+func000000000000003e:                   # @func000000000000003e
+	srli	a0, a0, 32
+	or	a0, a0, a1
 	ret
 func000000000000003b:                   # @func000000000000003b
 	slli	a1, a1, 12

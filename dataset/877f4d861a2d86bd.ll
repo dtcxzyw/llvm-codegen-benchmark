@@ -1,5 +1,11 @@
 
-; 5 occurrences:
+; 11 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; clamav/optimized/unpack.cpp.ll
 ; openjdk/optimized/jvmtiClassFileReconstituter.ll
 ; quantlib/optimized/dataparsers.ll

@@ -1,4 +1,4 @@
-func0000000000000028:                   # @func0000000000000028
+func0000000000000048:                   # @func0000000000000048
 	vpmovqd	%ymm2, %xmm2
 	vpternlogq	$15, %xmm2, %xmm2, %xmm2 # xmm2 = ~xmm2
 	vpextrd	$1, %xmm1, %ecx

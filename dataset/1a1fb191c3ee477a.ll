@@ -9,7 +9,7 @@
 ; wireshark/optimized/packet-dns.c.ll
 ; wireshark/optimized/packet-usbll.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, i16 %1, i16 %2) #0 {
+define i1 @func000000000000018c(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp ne i16 %2, 0
   %4 = select i1 %0, i1 true, i1 %3
@@ -29,7 +29,7 @@ entry:
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-spice.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000021(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp eq i16 %2, 32767
   %4 = select i1 %0, i1 true, i1 %3
@@ -47,7 +47,7 @@ entry:
 ; yalantinglibs/optimized/example.cpp.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000084(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp ult i16 %2, 2988
   %4 = select i1 %0, i1 true, i1 %3
@@ -60,7 +60,7 @@ entry:
 ; oiio/optimized/rlainput.cpp.ll
 ; wireshark/optimized/packet-dns.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i1 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000108(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp ugt i16 %2, 32
   %4 = select i1 %0, i1 true, i1 %3
@@ -72,7 +72,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-usbll.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i1 %0, i16 %1, i16 %2) #0 {
+define i1 @func000000000000010c(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp ugt i16 %2, 127
   %4 = select i1 %0, i1 true, i1 %3
@@ -85,7 +85,7 @@ entry:
 ; linux/optimized/vmcore.ll
 ; wireshark/optimized/packet-usbll.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000181(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp ne i16 %2, 0
   %4 = select i1 %0, i1 true, i1 %3
@@ -99,7 +99,7 @@ entry:
 ; wireshark/optimized/packet-tcpcl.c.ll
 ; wireshark/optimized/packet-usbll.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i1 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000184(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp ne i16 %2, 0
   %4 = select i1 %0, i1 true, i1 %3
@@ -112,7 +112,7 @@ entry:
 ; miniaudio/optimized/unity.c.ll
 ; raylib/optimized/raudio.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i1 %0, i16 %1, i16 %2) #0 {
+define i1 @func0000000000000081(i1 %0, i16 %1, i16 %2) #0 {
 entry:
   %3 = icmp ult i16 %2, -64
   %4 = select i1 %0, i1 true, i1 %3

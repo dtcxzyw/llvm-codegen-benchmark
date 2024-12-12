@@ -1,9 +1,9 @@
-func0000000000000084:                   # @func0000000000000084
+func0000000000000104:                   # @func0000000000000104
 	addq	%rdx, %rdx
 	leaq	(%rdx,%rdx,4), %rax
 	cmpq	%rdi, %rax
 	setb	%cl
-	cmpq	%rsi, %rax
-	setb	%al
+	cmpq	%rax, %rsi
+	seta	%al
 	andb	%cl, %al
 	retq

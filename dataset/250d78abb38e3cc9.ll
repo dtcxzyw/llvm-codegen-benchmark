@@ -57,7 +57,8 @@ entry:
   ret i1 %4
 }
 
-; 19 occurrences:
+; 21 occurrences:
+; boost/optimized/src.ll
 ; cmake/optimized/archive_string.c.ll
 ; cmake/optimized/inet.c.ll
 ; darktable/optimized/lighttable.c.ll
@@ -77,22 +78,12 @@ entry:
 ; qemu/optimized/accel_tcg_user-exec.c.ll
 ; quickjs/optimized/quickjs.ll
 ; wireshark/optimized/lemon.c.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp eq i32 %2, 0
-  %4 = select i1 %3, i1 %0, i1 false
-  ret i1 %4
-}
-
-; 1 occurrences:
-; luau/optimized/isocline.c.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000004(i1 %0, i32 %1) #0 {
-entry:
-  %2 = freeze i32 %1
-  %3 = icmp ult i32 %2, 5
   %4 = select i1 %3, i1 %0, i1 false
   ret i1 %4
 }

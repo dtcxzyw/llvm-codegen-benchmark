@@ -1,8 +1,9 @@
 
-; 8 occurrences:
+; 9 occurrences:
 ; abseil-cpp/optimized/beta_distribution_test.cc.ll
 ; abseil-cpp/optimized/distributions_test.cc.ll
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; delta-rs/optimized/5d242f2by7re2olg.ll
 ; graphviz/optimized/htmltable.c.ll
 ; icu/optimized/calendar.ll

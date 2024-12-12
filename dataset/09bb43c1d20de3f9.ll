@@ -8,12 +8,12 @@
 ; openssl/optimized/libcrypto-shlib-bf_buff.ll
 ; openssl/optimized/libcrypto-shlib-bf_readbuff.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000146(i64 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000686(i64 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = icmp ugt i64 %3, %0
+  %4 = icmp samesign ult i64 %0, %3
   %5 = sext i32 %1 to i64
-  %6 = icmp sgt i64 %5, %0
+  %6 = icmp slt i64 %0, %5
   %7 = select i1 %6, i1 %4, i1 false
   ret i1 %7
 }

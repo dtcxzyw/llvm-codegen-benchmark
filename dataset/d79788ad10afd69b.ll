@@ -1,8 +1,10 @@
 
-; 5 occurrences:
+; 7 occurrences:
+; boost/optimized/to_chars.ll
 ; clamav/optimized/Ppmd7.c.ll
 ; cmake/optimized/archive_ppmd7.c.ll
 ; cmake/optimized/archive_ppmd8.c.ll
+; cpython/optimized/Hacl_Hash_SHA3.ll
 ; curl/optimized/libcurl_la-version.ll
 ; wireshark/optimized/netscaler.c.ll
 ; Function Attrs: nounwind

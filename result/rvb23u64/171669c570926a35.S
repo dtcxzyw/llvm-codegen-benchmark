@@ -15,16 +15,6 @@ func0000000000000014:                   # @func0000000000000014
 	czero.eqz	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func0000000000000011:                   # @func0000000000000011
-	lui	a3, 79063
-	addiw	a3, a3, -2048
-	sltu	a2, a3, a2
-	lui	a3, 32768
-	czero.nez	a1, a1, a2
-	czero.eqz	a2, a3, a2
-	or	a1, a1, a2
-	or	a0, a0, a1
-	ret
 func0000000000000008:                   # @func0000000000000008
 	sltiu	a2, a2, -14
 	li	a3, 142

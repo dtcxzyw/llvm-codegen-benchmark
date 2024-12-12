@@ -22,16 +22,17 @@ entry:
   %3 = select i1 %1, float 0x3FEFFFFDE0000000, float %2
   %4 = fcmp olt float %3, 0x3EB0C6F7A0000000
   %5 = select i1 %4, float 0x3EB0C6F7A0000000, float %3
-  %6 = fmul float %5, %0
+  %6 = fmul float %0, %5
   ret float %6
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; mitsuba3/optimized/progress.cpp.ll
 ; recastnavigation/optimized/imgui.cpp.ll
 ; typst-rs/optimized/1c2qpu6zljc8gscz.ll
 ; typst-rs/optimized/4sdr2z2pqpqxs72u.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
 ; Function Attrs: nounwind
 define float @func0000000000000004(float %0, i1 %1, float %2) #0 {
 entry:

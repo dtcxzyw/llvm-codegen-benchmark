@@ -1,5 +1,5 @@
 
-; 7 occurrences:
+; 8 occurrences:
 ; meilisearch-rs/optimized/3f4k2xees4fvt0r.ll
 ; nlohmann_json/optimized/unit-deserialization.cpp.ll
 ; nlohmann_json/optimized/unit-wstring.cpp.ll
@@ -7,11 +7,12 @@
 ; qdrant-rs/optimized/49gep1elv33vxlrq.ll
 ; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
 ; tree-sitter-rs/optimized/42mwgpotg9phq80h.ll
+; zed-rs/optimized/7ytobmn0xkq5d7tylhffnrtk5.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext nneg i16 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = lshr i32 %3, 6
   ret i32 %4
 }
@@ -24,12 +25,12 @@ entry:
 define i32 @func0000000000000000(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = lshr i32 %3, 12
   ret i32 %4
 }
 
-; 10 occurrences:
+; 12 occurrences:
 ; abc/optimized/bzlib.c.ll
 ; abseil-cpp/optimized/escaping.cc.ll
 ; clamav/optimized/bzlib.c.ll
@@ -37,6 +38,8 @@ entry:
 ; cmake/optimized/zstd_decompress_block.c.ll
 ; libwebp/optimized/idec_dec.c.ll
 ; linux/optimized/zstd_decompress_block.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; node/optimized/simdutf.ll
 ; sentencepiece/optimized/strutil.cc.ll
 ; zstd/optimized/zstd_decompress_block.c.ll
@@ -44,7 +47,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i16 %1) #0 {
 entry:
   %2 = zext i16 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   %4 = lshr i32 %3, 1
   ret i32 %4
 }

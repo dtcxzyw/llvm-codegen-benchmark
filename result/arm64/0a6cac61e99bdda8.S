@@ -1,78 +1,37 @@
 func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
-	mov	w8, #64512                      // =0xfc00
-	shl	v2.2d, v2.2d, #10
-	shl	v3.2d, v3.2d, #10
-	dup	v4.2d, x8
-	mov	w8, #65536                      // =0x10000
-	dup	v5.2d, x8
-	and	v2.16b, v2.16b, v4.16b
-	and	v3.16b, v3.16b, v4.16b
-	add	v0.2d, v0.2d, v5.2d
-	add	v1.2d, v1.2d, v5.2d
-	add	v0.2d, v0.2d, v2.2d
-	add	v1.2d, v1.2d, v3.2d
+	ubfiz	x8, x1, #10, #6
+	add	x8, x0, x8
+	add	x0, x8, #16, lsl #12            // =65536
 	ret
                                         // -- End function
 func000000000000001e:                   // @func000000000000001e
 // %bb.0:                               // %entry
-	mov	x8, #137438953472               // =0x2000000000
-	shl	v3.2d, v3.2d, #37
-	shl	v2.2d, v2.2d, #37
-	dup	v4.2d, x8
-	mov	w8, #2048                       // =0x800
-	dup	v5.2d, x8
-	and	v3.16b, v3.16b, v4.16b
-	and	v2.16b, v2.16b, v4.16b
-	add	v1.2d, v1.2d, v5.2d
-	add	v0.2d, v0.2d, v5.2d
-	orr	v0.16b, v2.16b, v0.16b
-	orr	v1.16b, v3.16b, v1.16b
+	ubfiz	x8, x1, #37, #1
+	add	x9, x0, #2048
+	orr	x0, x8, x9
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	mov	w8, #67108864                   // =0x4000000
-	shl	v2.2d, v2.2d, #6
-	shl	v3.2d, v3.2d, #6
-	dup	v4.2d, x8
+	lsl	x9, x1, #6
 	mov	x8, #-268435456                 // =0xfffffffff0000000
-	dup	v5.2d, x8
-	and	v2.16b, v2.16b, v4.16b
-	and	v3.16b, v3.16b, v4.16b
-	add	v0.2d, v0.2d, v5.2d
-	add	v1.2d, v1.2d, v5.2d
-	add	v0.2d, v0.2d, v2.2d
-	add	v1.2d, v1.2d, v3.2d
+	add	x8, x0, x8
+	and	x9, x9, #0x4000000
+	add	x0, x8, x9
 	ret
                                         // -- End function
 func000000000000000f:                   // @func000000000000000f
 // %bb.0:                               // %entry
-	mov	w8, #28                         // =0x1c
-	shl	v2.2d, v2.2d, #2
-	shl	v3.2d, v3.2d, #2
-	dup	v4.2d, x8
-	mov	w8, #224                        // =0xe0
-	dup	v5.2d, x8
-	and	v2.16b, v2.16b, v4.16b
-	and	v3.16b, v3.16b, v4.16b
-	add	v0.2d, v0.2d, v5.2d
-	add	v1.2d, v1.2d, v5.2d
-	add	v0.2d, v0.2d, v2.2d
-	add	v1.2d, v1.2d, v3.2d
+	ubfiz	x8, x1, #2, #3
+	add	x8, x0, x8
+	add	x0, x8, #224
 	ret
                                         // -- End function
 func0000000000000007:                   // @func0000000000000007
 // %bb.0:                               // %entry
-	mov	x8, #-1024                      // =0xfffffffffffffc00
-	add	v3.2d, v3.2d, v3.2d
-	add	v2.2d, v2.2d, v2.2d
-	dup	v4.2d, x8
-	mvn	v0.16b, v0.16b
-	mvn	v1.16b, v1.16b
-	and	v3.16b, v3.16b, v4.16b
-	and	v2.16b, v2.16b, v4.16b
-	sub	v0.2d, v2.2d, v0.2d
-	sub	v1.2d, v3.2d, v1.2d
+	lsr	x8, x1, #9
+	add	x8, x0, x8, lsl #10
+	add	x0, x8, #1
 	ret
                                         // -- End function

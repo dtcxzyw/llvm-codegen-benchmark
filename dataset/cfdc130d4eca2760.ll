@@ -22,12 +22,12 @@ define i32 @func0000000000000001(i32 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 2048
   %4 = icmp eq i32 %3, 0
-  %5 = and i1 %4, %1
+  %5 = and i1 %1, %4
   %6 = select i1 %5, i32 1, i32 %0
   ret i32 %6
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; linux/optimized/dock.ll
 ; linux/optimized/e100.ll
 ; linux/optimized/ecb.ll
@@ -35,6 +35,7 @@ entry:
 ; llvm/optimized/FunctionComparator.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; openblas/optimized/cblas_dimatcopy.c.ll
 ; openjdk/optimized/method.ll
 ; openssl/optimized/libcrypto-lib-rsa_ossl.ll
@@ -50,18 +51,6 @@ entry:
   %4 = icmp ne i32 %3, 0
   %5 = and i1 %4, %1
   %6 = select i1 %5, i32 1, i32 %0
-  ret i32 %6
-}
-
-; 1 occurrences:
-; hermes/optimized/HBC.cpp.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i1 %1, i32 %2) #0 {
-entry:
-  %3 = and i32 %2, 57344
-  %4 = icmp ne i32 %3, 57344
-  %5 = and i1 %4, %1
-  %6 = select i1 %5, i32 65533, i32 %0
   ret i32 %6
 }
 

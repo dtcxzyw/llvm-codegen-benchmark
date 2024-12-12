@@ -1,5 +1,5 @@
 
-; 48 occurrences:
+; 47 occurrences:
 ; darktable/optimized/introspection_rawdenoise.c.ll
 ; libsodium/optimized/libsodium_la-codecs.ll
 ; llvm/optimized/AArch64A57FPLoadBalancing.cpp.ll
@@ -26,7 +26,6 @@
 ; llvm/optimized/PHIElimination.cpp.ll
 ; llvm/optimized/RISCVExpandAtomicPseudoInsts.cpp.ll
 ; llvm/optimized/RISCVExpandPseudoInsts.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVRegisterInfo.cpp.ll
 ; llvm/optimized/ReachingDefAnalysis.cpp.ll
@@ -54,7 +53,7 @@ entry:
   %2 = lshr i32 %1, 1
   %3 = and i32 %2, 1
   %4 = xor i32 %3, 1
-  %5 = and i32 %4, %0
+  %5 = and i32 %0, %4
   ret i32 %5
 }
 

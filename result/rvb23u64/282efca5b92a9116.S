@@ -24,21 +24,21 @@ func0000000000000018:                   # @func0000000000000018
 	or	a1, a1, a3
 	subw	a0, a1, a0
 	ret
-func0000000000000020:                   # @func0000000000000020
-	sext.w	a2, a2
-	li	a3, 1
-	sltiu	a2, a2, 2
-	czero.eqz	a3, a3, a2
-	czero.nez	a1, a1, a2
-	or	a1, a1, a3
-	subw	a0, a1, a0
-	ret
 func0000000000000004:                   # @func0000000000000004
 	subw	a0, a1, a0
 	ret
 func0000000000000005:                   # @func0000000000000005
 	sext.w	a2, a2
 	czero.nez	a1, a1, a2
+	subw	a0, a1, a0
+	ret
+func0000000000000020:                   # @func0000000000000020
+	sext.w	a2, a2
+	li	a3, 10
+	sltiu	a2, a2, 3
+	czero.eqz	a3, a3, a2
+	czero.nez	a1, a1, a2
+	or	a1, a1, a3
 	subw	a0, a1, a0
 	ret
 func0000000000000028:                   # @func0000000000000028

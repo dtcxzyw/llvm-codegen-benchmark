@@ -2,7 +2,7 @@
 	.long	1                               # 0x1
 .LCPI0_1:
 	.long	2                               # 0x2
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vandps	.LCPI0_0(%rip){1to8}, %ymm1, %ymm1
 	vptestmd	%ymm0, %ymm0, %k1
 	vorps	.LCPI0_1(%rip){1to8}, %ymm1, %ymm1 {%k1}
@@ -22,7 +22,7 @@ func0000000000000001:                   # @func0000000000000001
 	.long	1048575                         # 0xfffff
 .LCPI2_1:
 	.long	1048576                         # 0x100000
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	vpandd	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1
 	vpbroadcastd	.LCPI2_1(%rip), %ymm2   # ymm2 = [1048576,1048576,1048576,1048576,1048576,1048576,1048576,1048576]
 	vpcmpnltud	%ymm2, %ymm0, %k1

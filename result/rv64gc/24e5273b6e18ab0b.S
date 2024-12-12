@@ -1,14 +1,19 @@
-func0000000000000018:                   # @func0000000000000018
+func000000000000001c:                   # @func000000000000001c
 	srai	a1, a1, 29
 	add	a0, a0, a1
 	addi	a0, a0, 8
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000001e:                   # @func000000000000001e
 	srai	a1, a1, 29
 	add	a0, a0, a1
 	addi	a0, a0, 1160
 	ret
-func0000000000000008:                   # @func0000000000000008
+func000000000000001f:                   # @func000000000000001f
+	srai	a1, a1, 31
+	add	a0, a0, a1
+	addi	a0, a0, 256
+	ret
+func000000000000000c:                   # @func000000000000000c
 	srai	a1, a1, 32
 	lui	a2, 44
 	addiw	a2, a2, 64
@@ -25,31 +30,15 @@ func0000000000000010:                   # @func0000000000000010
 	add	a0, a0, a1
 	addi	a0, a0, 168
 	ret
-func0000000000000012:                   # @func0000000000000012
-	srai	a1, a1, 32
-	li	a2, 40
-	mul	a1, a1, a2
-	add	a0, a0, a1
-	addi	a0, a0, 8
-	ret
-func000000000000000a:                   # @func000000000000000a
-	srai	a1, a1, 32
-	li	a2, 40
-	mul	a1, a1, a2
-	add	a0, a0, a1
-	addi	a0, a0, 8
-	ret
-func000000000000001e:                   # @func000000000000001e
-	srai	a1, a1, 28
-	add	a0, a0, a1
-	lui	a1, 4
-	addiw	a1, a1, 1000
-	add	a0, a0, a1
-	ret
 func000000000000000e:                   # @func000000000000000e
 	srai	a1, a1, 32
-	li	a2, 216
+	li	a2, 40
 	mul	a1, a1, a2
 	add	a0, a0, a1
-	addi	a0, a0, 4
+	addi	a0, a0, 8
+	ret
+func000000000000001a:                   # @func000000000000001a
+	srai	a1, a1, 30
+	add	a0, a0, a1
+	addi	a0, a0, -12
 	ret

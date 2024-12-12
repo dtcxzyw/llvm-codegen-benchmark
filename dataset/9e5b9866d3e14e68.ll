@@ -1,5 +1,5 @@
 
-; 449 occurrences:
+; 448 occurrences:
 ; abc/optimized/wlcNtk.c.ll
 ; cmake/optimized/json_value.cpp.ll
 ; git/optimized/send-pack.ll
@@ -300,7 +300,6 @@
 ; llvm/optimized/RISCVAsmBackend.cpp.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVIndirectBranchTracking.cpp.ll
 ; llvm/optimized/RISCVInsertReadWriteCSR.cpp.ll
 ; llvm/optimized/RISCVInstPrinter.cpp.ll
@@ -445,8 +444,8 @@
 ; llvm/optimized/X86Subtarget.cpp.ll
 ; llvm/optimized/X86TargetMachine.cpp.ll
 ; llvm/optimized/X86VZeroUpper.cpp.ll
+; lvgl/optimized/lv_image.ll
 ; ozz-animation/optimized/jsoncpp.cpp.ll
-; qemu/optimized/hw_sd_ssi-sd.c.ll
 ; ruby/optimized/time.ll
 ; wasmedge/optimized/inode-linux.cpp.ll
 ; Function Attrs: nounwind
@@ -454,47 +453,21 @@ define i16 @func0000000000000003(i16 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = trunc i32 %2 to i16
   %4 = and i16 %3, 63
-  %5 = or disjoint i16 %4, %1
-  %6 = or disjoint i16 %5, %0
-  ret i16 %6
-}
-
-; 3 occurrences:
-; glslang/optimized/SpvBuilder.cpp.ll
-; linux/optimized/hda_codec.ll
-; qemu/optimized/hw_sd_ssi-sd.c.ll
-; Function Attrs: nounwind
-define i16 @func000000000000000b(i16 %0, i16 %1, i32 %2) #0 {
-entry:
-  %3 = trunc nuw i32 %2 to i16
-  %4 = and i16 %3, 4096
-  %5 = or disjoint i16 %4, %1
-  %6 = or disjoint i16 %5, %0
-  ret i16 %6
-}
-
-; 1 occurrences:
-; qemu/optimized/hw_sd_ssi-sd.c.ll
-; Function Attrs: nounwind
-define i16 @func000000000000000f(i16 %0, i16 %1, i32 %2) #0 {
-entry:
-  %3 = trunc nuw nsw i32 %2 to i16
-  %4 = and i16 %3, 8192
-  %5 = or disjoint i16 %4, %1
-  %6 = or disjoint i16 %5, %0
+  %5 = or disjoint i16 %1, %4
+  %6 = or disjoint i16 %0, %5
   ret i16 %6
 }
 
 ; 2 occurrences:
-; linux/optimized/netdev.ll
-; qemu/optimized/hw_sd_ssi-sd.c.ll
+; glslang/optimized/SpvBuilder.cpp.ll
+; linux/optimized/hda_codec.ll
 ; Function Attrs: nounwind
-define i16 @func000000000000000e(i16 %0, i16 %1, i32 %2) #0 {
+define i16 @func000000000000000b(i16 %0, i16 %1, i32 %2) #0 {
 entry:
-  %3 = trunc nuw nsw i32 %2 to i16
-  %4 = and i16 %3, 96
-  %5 = or disjoint i16 %4, %1
-  %6 = or i16 %5, %0
+  %3 = trunc nuw i32 %2 to i16
+  %4 = and i16 %3, -32768
+  %5 = or disjoint i16 %1, %4
+  %6 = or disjoint i16 %5, %0
   ret i16 %6
 }
 
@@ -506,7 +479,7 @@ define i16 @func0000000000000001(i16 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = trunc i32 %2 to i16
   %4 = and i16 %3, 1
-  %5 = or i16 %4, %1
+  %5 = or i16 %1, %4
   %6 = or disjoint i16 %5, %0
   ret i16 %6
 }
@@ -530,7 +503,7 @@ define i16 @func0000000000000000(i16 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = trunc i32 %2 to i16
   %4 = and i16 %3, -4093
-  %5 = or i16 %4, %1
+  %5 = or i16 %1, %4
   %6 = or i16 %5, %0
   ret i16 %6
 }
@@ -543,7 +516,19 @@ define i16 @func000000000000000c(i16 %0, i16 %1, i32 %2) #0 {
 entry:
   %3 = trunc nuw nsw i32 %2 to i16
   %4 = and i16 %3, 32
-  %5 = or i16 %4, %1
+  %5 = or i16 %1, %4
+  %6 = or i16 %5, %0
+  ret i16 %6
+}
+
+; 1 occurrences:
+; linux/optimized/netdev.ll
+; Function Attrs: nounwind
+define i16 @func000000000000000e(i16 %0, i16 %1, i32 %2) #0 {
+entry:
+  %3 = trunc nuw nsw i32 %2 to i16
+  %4 = and i16 %3, 64
+  %5 = or disjoint i16 %1, %4
   %6 = or i16 %5, %0
   ret i16 %6
 }

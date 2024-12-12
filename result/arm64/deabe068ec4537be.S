@@ -1,10 +1,12 @@
+func0000000000000014:                   // @func0000000000000014
+// %bb.0:                               // %entry
+	cmp	x1, x2, lsr #1
+	csel	x0, x0, x1, hi
+	ret
+                                        // -- End function
 func0000000000000004:                   // @func0000000000000004
 // %bb.0:                               // %entry
-	ushr	v4.2d, v4.2d, #1
-	ushr	v5.2d, v5.2d, #1
-	cmhi	v5.2d, v3.2d, v5.2d
-	cmhi	v4.2d, v2.2d, v4.2d
-	bif	v0.16b, v2.16b, v4.16b
-	bif	v1.16b, v3.16b, v5.16b
+	cmp	x1, x2, lsr #1
+	csel	x0, x0, x1, hi
 	ret
                                         // -- End function

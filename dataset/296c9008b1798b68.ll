@@ -15,13 +15,14 @@ entry:
   ret i32 %4
 }
 
-; 24 occurrences:
+; 27 occurrences:
 ; actix-rs/optimized/22x16e3cd4musvfe.ll
 ; actix-rs/optimized/559mdouync0xx14h.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
 ; darktable/optimized/introspection_clipping.c.ll
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
 ; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
+; hyperscan/optimized/rose_build_long_lit.cpp.ll
 ; icu/optimized/regexcmp.ll
 ; linux/optimized/control.ll
 ; linux/optimized/intel_display_power_well.ll
@@ -40,6 +41,8 @@ entry:
 ; openssl/optimized/libcrypto-shlib-set_key.ll
 ; qemu/optimized/block_qcow2.c.ll
 ; raylib/optimized/raudio.c.ll
+; wasmtime-rs/optimized/1f1skdqjemonth3f.ll
+; wasmtime-rs/optimized/21g2sj3ridcu2juk.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
@@ -72,15 +75,14 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; openusd/optimized/value.cpp.ll
-; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %1, 16777214
-  %3 = and i32 %0, -256
-  %4 = select i1 %2, i32 -256, i32 %3
+  %2 = icmp ugt i32 %1, 32767
+  %3 = and i32 %0, 65536
+  %4 = select i1 %2, i32 0, i32 %3
   ret i32 %4
 }
 

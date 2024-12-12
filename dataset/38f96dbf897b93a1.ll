@@ -1,16 +1,17 @@
 
-; 134 occurrences:
+; 131 occurrences:
 ; abc/optimized/abcRestruct.c.ll
 ; abc/optimized/abcSpeedup.c.ll
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absVta.c.ll
-; abc/optimized/cecMan.c.ll
 ; abc/optimized/cuddGroup.c.ll
 ; abc/optimized/fraMan.c.ll
 ; abc/optimized/giaEra2.c.ll
 ; actix-rs/optimized/2pgtlhl4qd060m9c.ll
 ; assimp/optimized/IRRLoader.cpp.ll
+; boost/optimized/get_distance_measure.ll
+; boost/optimized/partition.ll
 ; darktable/optimized/NefDecoder.cpp.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; graphviz/optimized/constraint.c.ll
@@ -38,7 +39,6 @@
 ; meshlab/optimized/edit_mutualcorrs.cpp.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/filter_createiso.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_plymc.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/filter_voronoi.cpp.ll
@@ -91,9 +91,7 @@
 ; postgres/optimized/selfuncs.ll
 ; postgres/optimized/vacuumlazy.ll
 ; proj/optimized/hgridshift.cpp.ll
-; proj/optimized/io.cpp.ll
 ; proj/optimized/vgridshift.cpp.ll
-; qemu/optimized/system_cpu-throttle.c.ll
 ; quantlib/optimized/actualactual.ll
 ; quantlib/optimized/period.ll
 ; quantlib/optimized/rounding.ll
@@ -125,7 +123,6 @@
 ; wireshark/optimized/packet-gmr1_bcch.c.ll
 ; wireshark/optimized/packet-gsm_a_common.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
-; wireshark/optimized/packet-lcsap.c.ll
 ; wireshark/optimized/packet-lpp.c.ll
 ; wireshark/optimized/packet-stanag4607.c.ll
 ; wireshark/optimized/qcustomplot.cpp.ll

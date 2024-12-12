@@ -1,8 +1,73 @@
 
-; 242 occurrences:
+; 8 occurrences:
 ; abc/optimized/kitTruth.c.ll
+; freetype/optimized/ftcache.c.ll
+; linux/optimized/page-writeback.ll
+; opencv/optimized/fast_gemm.cpp.ll
+; php/optimized/zend_inheritance.ll
+; redis/optimized/t_list.ll
+; redis/optimized/t_zset.ll
+; ruby/optimized/date_core.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ult i64 %0, %2
+  %4 = select i1 %3, i64 %0, i64 %1
+  ret i64 %4
+}
+
+; 20 occurrences:
+; casadi/optimized/mx_node.cpp.ll
+; cpython/optimized/exceptions.ll
+; darktable/optimized/TableLookUp.cpp.ll
+; flac/optimized/stream_decoder.c.ll
+; freetype/optimized/autofit.c.ll
+; git/optimized/xdiffi.ll
+; libquic/optimized/convert.c.ll
+; luau/optimized/isocline.c.ll
+; openblas/optimized/dgemm_thread_nn.c.ll
+; openblas/optimized/dgemm_thread_nt.c.ll
+; openblas/optimized/dgemm_thread_tn.c.ll
+; openblas/optimized/dgemm_thread_tt.c.ll
+; openblas/optimized/dsymm_thread_LL.c.ll
+; openblas/optimized/dsymm_thread_LU.c.ll
+; openblas/optimized/dsymm_thread_RL.c.ll
+; openblas/optimized/dsymm_thread_RU.c.ll
+; redis/optimized/sort.ll
+; ruby/optimized/array.ll
+; sqlite/optimized/sqlite3.ll
+; yosys/optimized/ezsat.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp slt i64 %0, %2
+  %4 = select i1 %3, i64 %0, i64 %1
+  ret i64 %4
+}
+
+; 9 occurrences:
+; cpython/optimized/pystrtod.ll
+; git/optimized/diff.ll
+; gromacs/optimized/tngio.cpp.ll
+; gromacs/optimized/tpi.cpp.ll
+; linux/optimized/flex_proportions.ll
+; qemu/optimized/hw_net_pcnet.c.ll
+; ruby/optimized/sprintf.ll
+; slurm/optimized/job_test.ll
+; slurm/optimized/select_linear.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp sgt i64 %0, %2
+  %4 = select i1 %3, i64 %0, i64 %1
+  ret i64 %4
+}
+
+; 239 occurrences:
 ; actix-rs/optimized/19s5ghr2x6s6bmh4.ll
 ; actix-rs/optimized/u8tt4f5khiooymn.ll
+; boost/optimized/static_string.ll
+; boost/optimized/topology.ll
 ; brotli/optimized/encode.c.ll
 ; cjson/optimized/cJSON.c.ll
 ; cmake/optimized/proctitle.c.ll
@@ -13,7 +78,6 @@
 ; coreutils-rs/optimized/4i0caq1otrc216b8.ll
 ; coreutils-rs/optimized/4sf64onf24scjhng.ll
 ; coreutils-rs/optimized/e91jxawjj55dy9t.ll
-; darktable/optimized/introspection_borders.c.ll
 ; darktable/optimized/introspection_cacorrectrgb.c.ll
 ; darktable/optimized/introspection_colorequal.c.ll
 ; darktable/optimized/introspection_highlights.c.ll
@@ -24,7 +88,6 @@
 ; delta-rs/optimized/2braxl0lj34anf5z.ll
 ; delta-rs/optimized/9v8xvedf69luuxb.ll
 ; eastl/optimized/TestFixedString.cpp.ll
-; freetype/optimized/ftcache.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; gromacs/optimized/colvarparse.cpp.ll
 ; hermes/optimized/MicrosoftDemangle.cpp.ll
@@ -42,7 +105,6 @@
 ; libuv/optimized/proctitle.c.ll
 ; linux/optimized/fatent.ll
 ; linux/optimized/nlattr.ll
-; linux/optimized/page-writeback.ll
 ; linux/optimized/parser.ll
 ; linux/optimized/string.ll
 ; linux/optimized/swap_state.ll
@@ -53,6 +115,7 @@
 ; llvm/optimized/MachOObjectFile.cpp.ll
 ; llvm/optimized/SourceMgr.cpp.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; miniaudio/optimized/unity.c.ll
 ; nix/optimized/add-to-store.ll
 ; nix/optimized/app.ll
@@ -140,13 +203,10 @@
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -223,25 +283,26 @@
 ; ockam-rs/optimized/lcclztcuaxx9mqt.ll
 ; ockam-rs/optimized/scbbgml6cvr1nwt.ll
 ; ockam-rs/optimized/y59h8jnu9k73im6.ll
-; opencv/optimized/fast_gemm.cpp.ll
 ; openjdk/optimized/os_posix.ll
 ; openssl/optimized/quic_stream_test-bin-quic_stream_test.ll
 ; openusd/optimized/stream.c.ll
 ; php/optimized/SAPI.ll
 ; php/optimized/funcs.ll
-; php/optimized/zend_inheritance.ll
 ; postgres/optimized/logtape.ll
 ; quantlib/optimized/cmsmarketcalibration.ll
 ; quantlib/optimized/gsrprocesscore.ll
 ; raylib/optimized/raudio.c.ll
 ; redis/optimized/listpack.ll
-; redis/optimized/t_list.ll
-; redis/optimized/t_zset.ll
-; ruby/optimized/date_core.ll
 ; tls-rs/optimized/4vg8hiu39ndz9uqe.ll
 ; tree-sitter-rs/optimized/3pra6a7meoswj3tu.ll
 ; verilator/optimized/V3EmitCSyms.cpp.ll
 ; wireshark/optimized/proto.c.ll
+; zed-rs/optimized/0o1pecj7sihe8j10tk83wbgu7.ll
+; zed-rs/optimized/4i7p0oho11rynomnfzzz9lkyr.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/8uq0kpgi8jqekwanrrlvbr0h1.ll
+; zed-rs/optimized/8xt07qbd2rpea3wzwrnuigpes.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -250,55 +311,7 @@ entry:
   ret i64 %4
 }
 
-; 21 occurrences:
-; casadi/optimized/mx_node.cpp.ll
-; cpython/optimized/enumobject.ll
-; cpython/optimized/exceptions.ll
-; darktable/optimized/TableLookUp.cpp.ll
-; flac/optimized/stream_decoder.c.ll
-; freetype/optimized/autofit.c.ll
-; git/optimized/xdiffi.ll
-; libquic/optimized/convert.c.ll
-; luau/optimized/isocline.c.ll
-; openblas/optimized/dgemm_thread_nn.c.ll
-; openblas/optimized/dgemm_thread_nt.c.ll
-; openblas/optimized/dgemm_thread_tn.c.ll
-; openblas/optimized/dgemm_thread_tt.c.ll
-; openblas/optimized/dsymm_thread_LL.c.ll
-; openblas/optimized/dsymm_thread_LU.c.ll
-; openblas/optimized/dsymm_thread_RL.c.ll
-; openblas/optimized/dsymm_thread_RU.c.ll
-; redis/optimized/sort.ll
-; ruby/optimized/array.ll
-; sqlite/optimized/sqlite3.ll
-; yosys/optimized/ezsat.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000006(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = icmp slt i64 %0, %2
-  %4 = select i1 %3, i64 %0, i64 %1
-  ret i64 %4
-}
-
-; 9 occurrences:
-; cpython/optimized/pystrtod.ll
-; git/optimized/diff.ll
-; gromacs/optimized/tngio.cpp.ll
-; gromacs/optimized/tpi.cpp.ll
-; linux/optimized/flex_proportions.ll
-; qemu/optimized/hw_net_pcnet.c.ll
-; ruby/optimized/sprintf.ll
-; slurm/optimized/job_test.ll
-; slurm/optimized/select_linear.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000a(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = icmp sgt i64 %0, %2
-  %4 = select i1 %3, i64 %0, i64 %1
-  ret i64 %4
-}
-
-; 25 occurrences:
+; 24 occurrences:
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; folly/optimized/AsyncServerSocket.cpp.ll
 ; folly/optimized/EventBase.cpp.ll
@@ -310,7 +323,6 @@ entry:
 ; folly/optimized/Singleton.cpp.ll
 ; folly/optimized/Subprocess.cpp.ll
 ; folly/optimized/SymbolizePrinter.cpp.ll
-; git/optimized/alias.ll
 ; hdf5/optimized/H5Tconv_compound.c.ll
 ; jemalloc/optimized/decay.ll
 ; jemalloc/optimized/decay.pic.ll
@@ -344,6 +356,16 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %0, %2
+  %4 = select i1 %3, i64 %0, i64 %1
+  ret i64 %4
+}
+
+; 1 occurrences:
+; git/optimized/alias.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ugt i64 %0, %2
   %4 = select i1 %3, i64 %0, i64 %1
   ret i64 %4
 }

@@ -13,7 +13,9 @@ entry:
   ret i32 %4
 }
 
-; 6 occurrences:
+; 8 occurrences:
+; boost/optimized/gregorian.ll
+; boost/optimized/test_iostream.ll
 ; cpython/optimized/_datetimemodule.ll
 ; icu/optimized/calendar.ll
 ; jq/optimized/builtin.ll

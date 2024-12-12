@@ -1,7 +1,8 @@
 
-; 2 occurrences:
+; 3 occurrences:
 ; libwebp/optimized/histogram_enc.c.ll
 ; mitsuba3/optimized/sdfgrid.cpp.ll
+; zed-rs/optimized/7aq90jycr3x842qyrhjbel971.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(i32 %0) #0 {
 entry:
@@ -10,7 +11,7 @@ entry:
   ret float %2
 }
 
-; 18 occurrences:
+; 21 occurrences:
 ; bullet3/optimized/btBox2dShape.ll
 ; bullet3/optimized/btBoxShape.ll
 ; gromacs/optimized/bonded.cpp.ll
@@ -21,9 +22,12 @@ entry:
 ; gromacs/optimized/pairlist.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; llama.cpp/optimized/ggml-quants.c.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_svg_render.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; minetest/optimized/mg_ore.cpp.ll
 ; nori/optimized/warptest.cpp.ll
+; opencv/optimized/quality.cpp.ll
 ; openusd/optimized/cpuEvaluator.cpp.ll
 ; openusd/optimized/ompEvaluator.cpp.ll
 ; openusd/optimized/tbbKernel.cpp.ll

@@ -1,17 +1,17 @@
-func0000000000000041:                   # @func0000000000000041
+func0000000000000081:                   # @func0000000000000081
 	andl	$2144, %edx                     # imm = 0x860
 	cmpl	$1, %edx
 	sbbl	$0, %esi
 	addl	$2, %esi
-	cmpl	%edi, %esi
+	cmpl	%esi, %edi
 	sete	%al
 	retq
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	andl	$15, %edx
 	xorl	%eax, %eax
 	cmpl	$6, %edx
 	sete	%al
 	leal	1(%rax,%rsi), %eax
-	cmpl	%edi, %eax
+	cmpl	%eax, %edi
 	sete	%al
 	retq

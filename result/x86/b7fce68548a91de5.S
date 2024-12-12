@@ -19,10 +19,3 @@ func0000000000000030:                   # @func0000000000000030
 	andl	$1, %edi
 	orl	%edi, %eax
 	retq
-func0000000000000011:                   # @func0000000000000011
-	xorl	%eax, %eax
-	cmpl	$2, %esi
-	setb	%al
-	andl	$2046, %edi                     # imm = 0x7FE
-	orl	%edi, %eax
-	retq

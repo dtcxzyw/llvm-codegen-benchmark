@@ -4,10 +4,10 @@
 ; openjdk/optimized/jquant2.ll
 ; openusd/optimized/refinement.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i64 %1, i8 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i64
-  %4 = getelementptr nusw [32 x i16], ptr %0, i64 %3, i64 %1
+  %4 = getelementptr nusw nuw [32 x i16], ptr %0, i64 %3, i64 %1
   ret ptr %4
 }
 
@@ -26,10 +26,10 @@ entry:
 ; stb/optimized/stb_vorbis.c.ll
 ; stb/optimized/stb_voxel_render.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i64 %1, i8 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
-  %4 = getelementptr nusw [8 x i16], ptr %0, i64 %3, i64 %1
+  %4 = getelementptr nusw nuw [8 x i16], ptr %0, i64 %3, i64 %1
   ret ptr %4
 }
 
@@ -40,6 +40,16 @@ define ptr @func0000000000000000(ptr %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i64
   %4 = getelementptr [5 x [9 x i16]], ptr %0, i64 %3, i64 %1
+  ret ptr %4
+}
+
+; 1 occurrences:
+; libwebp/optimized/quant_enc.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000002(ptr %0, i64 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i64
+  %4 = getelementptr nusw [3 x [11 x i8]], ptr %0, i64 %3, i64 %1
   ret ptr %4
 }
 

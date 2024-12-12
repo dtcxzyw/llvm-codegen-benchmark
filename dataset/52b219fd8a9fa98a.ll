@@ -1,7 +1,6 @@
 
-; 19 occurrences:
+; 18 occurrences:
 ; darktable/optimized/introspection_ashift.c.ll
-; gromacs/optimized/vsite_parm.cpp.ll
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
@@ -28,12 +27,11 @@ entry:
   ret i1 %5
 }
 
-; 18 occurrences:
+; 17 occurrences:
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; duckdb/optimized/ub_duckdb_func_array.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_list.cpp.ll
-; gromacs/optimized/vsite_parm.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll

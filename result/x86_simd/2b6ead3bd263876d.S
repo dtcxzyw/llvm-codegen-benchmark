@@ -21,7 +21,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000014:                   # @func0000000000000014
+func0000000000000034:                   # @func0000000000000034
 	vpandd	.LCPI0_0(%rip){1to8}, %ymm2, %ymm2
 	vpcmpltd	.LCPI0_1(%rip){1to8}, %ymm2, %k1
 	vpord	.LCPI0_3(%rip){1to4}, %xmm1, %xmm1

@@ -1,4 +1,4 @@
-func00000000000000a6:                   # @func00000000000000a6
+func0000000000000146:                   # @func0000000000000146
 	srai	a1, a1, 2
 	lui	a2, 699051
 	addiw	a2, a2, -1365
@@ -11,7 +11,7 @@ func00000000000000a6:                   # @func00000000000000a6
 	srai	a1, a1, 1
 	slt	a0, a0, a1
 	ret
-func00000000000000aa:                   # @func00000000000000aa
+func000000000000014a:                   # @func000000000000014a
 	srai	a1, a1, 2
 	lui	a2, 699051
 	addiw	a2, a2, -1365
@@ -26,7 +26,7 @@ func00000000000000aa:                   # @func00000000000000aa
 	ret
 .LCPI2_0:
 	.quad	3074457345618258603             # 0x2aaaaaaaaaaaaaab
-func0000000000000026:                   # @func0000000000000026
+func0000000000000046:                   # @func0000000000000046
 	lui	a2, %hi(.LCPI2_0)
 	ld	a2, %lo(.LCPI2_0)(a2)
 	mulh	a1, a1, a2

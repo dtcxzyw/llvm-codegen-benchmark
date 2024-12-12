@@ -38,7 +38,7 @@ entry:
 ; 1 occurrences:
 ; rust-analyzer-rs/optimized/hajha7nvyoiczny.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000041(i8 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp eq i8 %0, 28
@@ -49,7 +49,7 @@ entry:
 ; 1 occurrences:
 ; regex-rs/optimized/6f4i3c8223u3bmw.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i8 %0, i8 %1) #0 {
+define i1 @func000000000000004c(i8 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp ne i8 %0, 0
@@ -107,7 +107,7 @@ entry:
 ; llvm/optimized/CodeGenRegisters.cpp.ll
 ; llvm/optimized/RegisterInfoEmitter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(i8 %0, i8 %1) #0 {
+define i1 @func0000000000000044(i8 %0, i8 %1) #0 {
 entry:
   %2 = trunc nuw i8 %1 to i1
   %3 = icmp ult i8 %0, 10

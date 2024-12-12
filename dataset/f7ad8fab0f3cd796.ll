@@ -1,5 +1,5 @@
 
-; 72 occurrences:
+; 71 occurrences:
 ; abc/optimized/deflate.c.ll
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
 ; arrow/optimized/light_array.cc.ll
@@ -19,7 +19,6 @@
 ; linux/optimized/drm_dp_mst_topology.ll
 ; linux/optimized/intel_sdvo.ll
 ; linux/optimized/intel_sseu.ll
-; linux/optimized/keyboard.ll
 ; linux/optimized/nexthop.ll
 ; linux/optimized/pcm_native.ll
 ; llvm/optimized/APINotesWriter.cpp.ll
@@ -40,6 +39,7 @@
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; llvm/optimized/TokenLexer.cpp.ll
+; lvgl/optimized/lv_obj_draw.ll
 ; minetest/optimized/clientmap.cpp.ll
 ; minetest/optimized/content_mapblock.cpp.ll
 ; minetest/optimized/game.cpp.ll
@@ -61,7 +61,6 @@
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; ozz-animation/optimized/import2ozz_skel.cc.ll
 ; php/optimized/transports.ll
-; qemu/optimized/chardev_msmouse.c.ll
 ; redis/optimized/jemalloc.ll
 ; redis/optimized/jemalloc.sym.ll
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
@@ -81,7 +80,7 @@ entry:
   ret i8 %5
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; arrow/optimized/light_array.cc.ll
 ; jemalloc/optimized/jemalloc.ll
 ; jemalloc/optimized/jemalloc.pic.ll
@@ -100,6 +99,7 @@ entry:
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0.ll
 ; soc-simulator/optimized/Vmycpu_top___024root__DepSet_hcf0db31f__0__Slow.ll
 ; wasmtime-rs/optimized/16qf4j2oevjc61uc.ll
+; zed-rs/optimized/4nop1kkoax12uecsmw3r2rpt7.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000000(i8 %0, i8 %1, i1 %2) #0 {
 entry:

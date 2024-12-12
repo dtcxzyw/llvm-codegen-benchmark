@@ -1,5 +1,5 @@
 
-; 241 occurrences:
+; 240 occurrences:
 ; lief/optimized/GnuHash.cpp.ll
 ; llvm/optimized/NamedStreamMap.cpp.ll
 ; minetest/optimized/CGUISpriteBank.cpp.ll
@@ -118,7 +118,6 @@
 ; yosys/optimized/lattice_gsr.ll
 ; yosys/optimized/liberty.ll
 ; yosys/optimized/log.ll
-; yosys/optimized/logger.ll
 ; yosys/optimized/ltp.ll
 ; yosys/optimized/lut2mux.ll
 ; yosys/optimized/maccmap.ll
@@ -277,12 +276,13 @@ entry:
   ret i32 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; linux/optimized/orphan.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/PDBStringTable.cpp.ll
 ; llvm/optimized/X86SelectionDAGInfo.cpp.ll
 ; opencv/optimized/rtrees.cpp.ll
+; opencv/optimized/tf_importer.cpp.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:

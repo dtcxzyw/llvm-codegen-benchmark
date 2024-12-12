@@ -1,7 +1,7 @@
 
-%struct.pud_t.3372526 = type { i64 }
+%struct.pud_t.3557544 = type { i64 }
 
-; 34 occurrences:
+; 33 occurrences:
 ; bdwgc/optimized/gc.c.ll
 ; jemalloc/optimized/background_thread.ll
 ; jemalloc/optimized/background_thread.pic.ll
@@ -26,7 +26,6 @@
 ; redis/optimized/jemalloc.sym.ll
 ; redis/optimized/tcache.ll
 ; redis/optimized/tcache.sym.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/mam.cpp.ll
 ; z3/optimized/q_mam.cpp.ll
 ; z3/optimized/seq_decl_plugin.cpp.ll
@@ -37,12 +36,12 @@
 ; z3/optimized/subpaving_mpfx.cpp.ll
 ; z3/optimized/subpaving_mpq.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, ptr %1) #0 {
+define ptr @func0000000000000003(ptr %0, ptr %1) #0 {
 entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = lshr i64 %2, 18
   %4 = and i64 %3, 4095
-  %5 = getelementptr nusw i64, ptr %0, i64 %4
+  %5 = getelementptr nusw nuw i64, ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -54,7 +53,7 @@ entry:
   %2 = ptrtoint ptr %1 to i64
   %3 = lshr i64 %2, 30
   %4 = and i64 %3, 511
-  %5 = getelementptr %struct.pud_t.3372526, ptr %0, i64 %4
+  %5 = getelementptr %struct.pud_t.3557544, ptr %0, i64 %4
   ret ptr %5
 }
 

@@ -10,7 +10,7 @@
 ; rust-analyzer-rs/optimized/2pjlntmpzwg88apl.ll
 ; rustfmt-rs/optimized/x2cb3fifm47d4t5.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c1(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %2, 0
   %4 = select i1 %3, i64 %1, i64 0
@@ -23,7 +23,7 @@ entry:
 ; openssl/optimized/libcrypto-shlib-bn_mod.ll
 ; ropey-rs/optimized/1zgfltkx0c00yngh.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %2, 0
   %4 = select i1 %3, i64 %1, i64 0
@@ -35,7 +35,7 @@ entry:
 ; nuttx/optimized/mm_realloc.c.ll
 ; rustfmt-rs/optimized/2tgwtv970e5remme.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000018(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000028(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, -9223372036854775808
   %4 = select i1 %3, i64 %1, i64 2
@@ -46,7 +46,7 @@ entry:
 ; 1 occurrences:
 ; ropey-rs/optimized/1zgfltkx0c00yngh.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000068(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %2, 0
   %4 = icmp ugt i64 %1, %0
@@ -71,7 +71,7 @@ entry:
 ; rust-analyzer-rs/optimized/k5mtltw7nxmadpl.ll
 ; rust-analyzer-rs/optimized/leba1wmgxgrzxkl.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 %1, i64 -1
@@ -82,7 +82,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/X11Renderer.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000ca(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %2, 32767
   %4 = select i1 %3, i64 %1, i64 32767
@@ -93,7 +93,7 @@ entry:
 ; 1 occurrences:
 ; openjdk/optimized/X11Renderer.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000066(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000c6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp slt i64 %2, 32767
   %4 = select i1 %3, i64 %1, i64 32767
@@ -116,7 +116,7 @@ entry:
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000108(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ugt i64 %2, -9223372036854775808
   %4 = icmp ugt i64 %1, %0
@@ -127,18 +127,7 @@ entry:
 ; 1 occurrences:
 ; php/optimized/streams.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a8(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = icmp sgt i64 %2, 0
-  %4 = select i1 %3, i64 %1, i64 8192
-  %5 = icmp ugt i64 %4, %0
-  ret i1 %5
-}
-
-; 1 occurrences:
-; php/optimized/streams.ll
-; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000181(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %.not = icmp eq i64 %2, -1
   %3 = select i1 %.not, i64 536870912, i64 %1
@@ -169,7 +158,7 @@ entry:
 ; wasmtime-rs/optimized/377rrvl9zeztt32x.ll
 ; wasmtime-rs/optimized/3xduz4g7ko7uj0pm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp ult i64 %2, 2
   %4 = select i1 %3, i64 %1, i64 0
@@ -177,8 +166,19 @@ entry:
   ret i1 %5
 }
 
-; 102 occurrences:
-; abc/optimized/solver.c.ll
+; 2 occurrences:
+; just-rs/optimized/15cobjmzhaiu6jpj.ll
+; just-rs/optimized/3fhxcueg488gjpka.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000086(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = icmp ult i64 %2, 8
+  %4 = select i1 %3, i64 %1, i64 0
+  %5 = icmp slt i64 %4, %0
+  ret i1 %5
+}
+
+; 101 occurrences:
 ; actix-rs/optimized/2d9c72efneckaqzp.ll
 ; actix-rs/optimized/2o6s6qtmif526itx.ll
 ; actix-rs/optimized/3afp9uuicyvwgbsz.ll
@@ -281,30 +281,18 @@ entry:
 ; wasmtime-rs/optimized/3gnma2m1zwm5wpa3.ll
 ; wasmtime-rs/optimized/4aijogcjfl814gfb.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000098(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = icmp ult i64 %2, 65536
-  %4 = select i1 %3, i64 %1, i64 -1
-  %5 = icmp ugt i64 %4, %0
-  ret i1 %5
-}
-
-; 2 occurrences:
-; just-rs/optimized/15cobjmzhaiu6jpj.ll
-; just-rs/optimized/3fhxcueg488gjpka.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = icmp ult i64 %2, 8
-  %4 = select i1 %3, i64 %1, i64 0
-  %5 = icmp slt i64 %4, %0
+  %3 = icmp ult i64 %2, 4
+  %4 = select i1 %3, i64 %1, i64 5
+  %5 = icmp samesign ugt i64 %4, %0
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; llvm/optimized/SimplifyCFG.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000002c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
   %4 = select i1 %3, i64 %1, i64 -1
@@ -312,27 +300,33 @@ entry:
   ret i1 %5
 }
 
-; 1 occurrences:
-; linux/optimized/build_utility.ll
+; 6 occurrences:
+; zed-rs/optimized/3x9hk0kmwft7qehj3poulcr6l.ll
+; zed-rs/optimized/5gnz59sfffv4rrga3ynjcilqc.ll
+; zed-rs/optimized/6fmtxmq32k2tm6vxa1i5afd46.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/a1jdntn5hiutu9tuect63bb1g.ll
+; zed-rs/optimized/e8p2cuwt1sxb20ryu42v8urkr.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000148(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = icmp sgt i64 %2, 0
-  %4 = select i1 %3, i64 %1, i64 0
-  %5 = icmp ult i64 %4, %0
+  %3 = icmp sgt i64 %2, -1
+  %4 = select i1 %3, i64 %1, i64 -1
+  %5 = icmp ugt i64 %4, %0
   ret i1 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; linux/optimized/timekeeping.ll
 ; nuttx/optimized/mm_realloc.c.ll
+; zed-rs/optimized/5vh1wf9hqnwdftlb6xe6c9c43.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 0
-  %4 = select i1 %3, i64 %1, i64 0
-  %5 = icmp ult i64 %4, %0
+  %4 = icmp ult i64 %1, %0
+  %5 = select i1 %3, i1 %4, i1 false
   ret i1 %5
 }
 

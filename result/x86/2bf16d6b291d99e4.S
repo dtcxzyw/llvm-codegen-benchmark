@@ -23,3 +23,8 @@ func0000000000000007:                   # @func0000000000000007
 	movslq	%esi, %rax
 	imulq	%rdi, %rax
 	retq
+func0000000000000008:                   # @func0000000000000008
+	addl	%esi, %esi
+	movslq	%esi, %rax
+	imulq	%rdi, %rax
+	retq

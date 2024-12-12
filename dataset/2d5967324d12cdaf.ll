@@ -1,5 +1,5 @@
 
-; 1157 occurrences:
+; 1168 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/abcDfs.c.ll
 ; abc/optimized/abcIfif.c.ll
@@ -31,7 +31,6 @@
 ; abc/optimized/ifDsd.c.ll
 ; abc/optimized/ifLibLut.c.ll
 ; abc/optimized/ifMap.c.ll
-; abc/optimized/ifSeq.c.ll
 ; abc/optimized/lpkCore.c.ll
 ; abc/optimized/nwkDfs.c.ll
 ; abc/optimized/nwkStrash.c.ll
@@ -161,13 +160,11 @@
 ; darktable/optimized/introspection_toneequal.c.ll
 ; darktable/optimized/introspection_watermark.c.ll
 ; darktable/optimized/introspection_zonesystem.c.ll
-; darktable/optimized/jpeg.c.ll
 ; darktable/optimized/masks.c.ll
 ; darktable/optimized/png.c.ll
 ; darktable/optimized/print_settings.c.ll
 ; darktable/optimized/ratings.c.ll
 ; darktable/optimized/tiff.c.ll
-; darktable/optimized/webp.c.ll
 ; draco/optimized/attribute_quantization_transform.cc.ll
 ; draco/optimized/kd_tree_attributes_encoder.cc.ll
 ; draco/optimized/obj_encoder.cc.ll
@@ -275,7 +272,6 @@
 ; gromacs/optimized/select.cpp.ll
 ; gromacs/optimized/sfactor.cpp.ll
 ; gromacs/optimized/shake.cpp.ll
-; gromacs/optimized/slasdt.cpp.ll
 ; gromacs/optimized/sm_compare.cpp.ll
 ; gromacs/optimized/sm_insolidangle.cpp.ll
 ; gromacs/optimized/smalloc.cpp.ll
@@ -324,6 +320,22 @@
 ; lodepng/optimized/lodepng_util.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
 ; luau/optimized/lmathlib.cpp.ll
+; lvgl/optimized/lv_arc.ll
+; lvgl/optimized/lv_area.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_demo_widgets.ll
+; lvgl/optimized/lv_draw_arc.ll
+; lvgl/optimized/lv_draw_line.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
+; lvgl/optimized/lv_draw_sw_line.ll
+; lvgl/optimized/lv_draw_sw_triangle.ll
+; lvgl/optimized/lv_draw_triangle.ll
+; lvgl/optimized/lv_draw_vector.ll
+; lvgl/optimized/lv_line.ll
+; lvgl/optimized/lv_matrix.ll
+; lvgl/optimized/lv_sdl_window.ll
+; lvgl/optimized/lv_svg_parser.ll
+; lvgl/optimized/lv_svg_render.ll
 ; meshlab/optimized/AlignPairWidget.cpp.ll
 ; meshlab/optimized/TexturePainter.cpp.ll
 ; meshlab/optimized/VisibilityCheck.cpp.ll
@@ -348,7 +360,6 @@
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/filter_dirt.cpp.ll
 ; meshlab/optimized/filter_fractal.cpp.ll
-; meshlab/optimized/filter_func.cpp.ll
 ; meshlab/optimized/filter_icp.cpp.ll
 ; meshlab/optimized/filter_img_patch_param.cpp.ll
 ; meshlab/optimized/filter_io_nxs.cpp.ll

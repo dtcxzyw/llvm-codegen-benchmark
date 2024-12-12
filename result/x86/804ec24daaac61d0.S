@@ -23,18 +23,8 @@ func0000000000000008:                   # @func0000000000000008
 	retq
 .LCPI2_0:
 	.quad	0x3ff0000000000000              # double 1
-.LCPI2_1:
-	.quad	0x4000000000000000              # double 2
-func0000000000000004:                   # @func0000000000000004
-	vmovsd	.LCPI2_0(%rip), %xmm1           # xmm1 = [1.0E+0,0.0E+0]
-	vminsd	%xmm0, %xmm1, %xmm0
-	vmovsd	.LCPI2_1(%rip), %xmm1           # xmm1 = [2.0E+0,0.0E+0]
-	vdivsd	%xmm0, %xmm1, %xmm0
-	retq
-.LCPI3_0:
-	.quad	0x3ff0000000000000              # double 1
 func000000000000000a:                   # @func000000000000000a
-	vmovsd	.LCPI3_0(%rip), %xmm1           # xmm1 = [1.0E+0,0.0E+0]
+	vmovsd	.LCPI2_0(%rip), %xmm1           # xmm1 = [1.0E+0,0.0E+0]
 	vmaxsd	%xmm0, %xmm1, %xmm0
 	vdivsd	%xmm0, %xmm1, %xmm0
 	retq

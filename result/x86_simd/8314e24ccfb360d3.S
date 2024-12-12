@@ -118,6 +118,12 @@ func0000000000000043:                   # @func0000000000000043
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
+func000000000000004d:                   # @func000000000000004d
+	vmaxps	%zmm2, %zmm1, %zmm1
+	vcmpnltps	%zmm0, %zmm1, %k0
+	vpmovm2b	%k0, %xmm0
+	vzeroupper
+	retq
 func000000000000002a:                   # @func000000000000002a
 	vmaxps	%zmm2, %zmm1, %zmm1
 	vcmpleps	%zmm0, %zmm1, %k0
@@ -170,12 +176,6 @@ func0000000000000048:                   # @func0000000000000048
 	retq
 func000000000000002d:                   # @func000000000000002d
 	vminps	%zmm2, %zmm1, %zmm1
-	vcmpnltps	%zmm0, %zmm1, %k0
-	vpmovm2b	%k0, %xmm0
-	vzeroupper
-	retq
-func000000000000004d:                   # @func000000000000004d
-	vmaxps	%zmm2, %zmm1, %zmm1
 	vcmpnltps	%zmm0, %zmm1, %k0
 	vpmovm2b	%k0, %xmm0
 	vzeroupper

@@ -7,20 +7,20 @@ func0000000000000064:                   # @func0000000000000064
 	shlq	$4, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000062:                   # @func0000000000000062
+func0000000000000063:                   # @func0000000000000063
 	addl	%esi, %edx
 	leaq	(%rdi,%rdx,8), %rax
 	retq
-func0000000000000042:                   # @func0000000000000042
+func0000000000000043:                   # @func0000000000000043
 	leal	(%rdx,%rsi), %eax
 	shlq	$5, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
+func0000000000000003:                   # @func0000000000000003
 	leal	(%rdx,%rsi), %eax
 	addq	%rdi, %rax
 	retq
-func000000000000007e:                   # @func000000000000007e
+func000000000000007f:                   # @func000000000000007f
 	addl	%esi, %edx
 	leaq	(%rdi,%rdx,4), %rax
 	retq
@@ -43,7 +43,7 @@ func0000000000000000:                   # @func0000000000000000
 	shlq	$9, %rax
 	addq	%rdi, %rax
 	retq
-func0000000000000066:                   # @func0000000000000066
+func0000000000000067:                   # @func0000000000000067
 	addl	%esi, %edx
 	leaq	(%rdi,%rdx,4), %rax
 	retq

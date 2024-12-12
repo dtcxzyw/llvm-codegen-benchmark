@@ -30,7 +30,7 @@ entry:
   ret i1 %5
 }
 
-; 34 occurrences:
+; 32 occurrences:
 ; imgui/optimized/imgui.cpp.ll
 ; linux/optimized/xhci-ring.ll
 ; llvm/optimized/ArgumentPromotion.cpp.ll
@@ -49,7 +49,6 @@ entry:
 ; llvm/optimized/ScalarizeMaskedMemIntrin.cpp.ll
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; llvm/optimized/SemaExprObjC.cpp.ll
-; llvm/optimized/SimplifyCFGPass.cpp.ll
 ; llvm/optimized/SimplifyIndVar.cpp.ll
 ; mitsuba3/optimized/volpath.cpp.ll
 ; oiio/optimized/exroutput.cpp.ll
@@ -58,7 +57,6 @@ entry:
 ; openusd/optimized/diagnosticMgr.cpp.ll
 ; openusd/optimized/loopPatchBuilder.cpp.ll
 ; postgres/optimized/ginget.ll
-; postgres/optimized/ginlogic.ll
 ; postgres/optimized/nodeAgg.ll
 ; postgres/optimized/relcache.ll
 ; postgres/optimized/tablecmds.ll

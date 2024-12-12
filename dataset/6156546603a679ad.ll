@@ -13,7 +13,7 @@
 ; quantlib/optimized/onefactormodel.ll
 ; rocksdb/optimized/manager.cc.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000036(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000066(i64 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp slt i32 %2, 0
@@ -25,7 +25,7 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/sparse_match_interpolators.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i64 %0, i32 %1) #0 {
+define i64 @func0000000000000026(i64 %0, i32 %1) #0 {
 entry:
   %2 = freeze i32 %1
   %3 = icmp slt i32 %2, 0

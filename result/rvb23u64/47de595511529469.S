@@ -1,10 +1,3 @@
-func00000000000000af:                   # @func00000000000000af
-	sext.b	a1, a1
-	slti	a1, a1, 0
-	xori	a1, a1, 1
-	add	a0, a0, a1
-	addiw	a0, a0, 258
-	ret
 func000000000000001f:                   # @func000000000000001f
 	andi	a1, a1, 255
 	addi	a1, a1, -120

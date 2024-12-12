@@ -22,18 +22,6 @@ entry:
   ret i64 %3
 }
 
-; 2 occurrences:
-; flatbuffers/optimized/flatc.cpp.ll
-; node/optimized/libnode.node_http2.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000000(i64 %0) #0 {
-entry:
-  %1 = trunc i64 %0 to i8
-  %2 = add i8 %1, -1
-  %3 = zext i8 %2 to i64
-  ret i64 %3
-}
-
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_execution_index_art.cpp.ll
 ; Function Attrs: nounwind
@@ -45,20 +33,31 @@ entry:
   ret i64 %3
 }
 
+; 1 occurrences:
+; boost/optimized/static_string.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000017(i64 %0) #0 {
+entry:
+  %1 = trunc nuw i64 %0 to i8
+  %2 = add nuw nsw i8 %1, 5
+  %3 = zext nneg i8 %2 to i64
+  ret i64 %3
+}
+
 ; 8 occurrences:
 ; llvm/optimized/WasmObjectFile.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; openusd/optimized/sdfdump.cpp.ll
 ; openusd/optimized/sdffilter.cpp.ll
 ; openusd/optimized/testSdfPathThreading.cpp.ll
 ; openusd/optimized/testUsdStageThreading.cpp.ll
 ; openusd/optimized/usdcat.cpp.ll
 ; openusd/optimized/usdtree.cpp.ll
-; wireshark/optimized/packet-sdh.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0) #0 {
 entry:
   %1 = trunc i64 %0 to i8
-  %2 = add i8 %1, -14
+  %2 = add i8 %1, -7
   %3 = zext nneg i8 %2 to i64
   ret i64 %3
 }
@@ -71,6 +70,17 @@ entry:
   %1 = trunc nuw nsw i64 %0 to i8
   %2 = add nsw i8 %1, -1
   %3 = zext nneg i8 %2 to i64
+  ret i64 %3
+}
+
+; 1 occurrences:
+; node/optimized/libnode.node_http2.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0) #0 {
+entry:
+  %1 = trunc i64 %0 to i8
+  %2 = add i8 %1, -1
+  %3 = zext i8 %2 to i64
   ret i64 %3
 }
 

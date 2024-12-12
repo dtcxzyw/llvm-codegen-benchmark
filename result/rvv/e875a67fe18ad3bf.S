@@ -34,6 +34,16 @@ func000000000000000e:                   # @func000000000000000e
 	vand.vv	v8, v8, v10
 	vand.vv	v8, v8, v14
 	ret
+func0000000000000011:                   # @func0000000000000011
+	vsetivli	zero, 4, e32, m1, ta, ma
+	vadd.vi	v12, v12, 1
+	vsetvli	zero, zero, e64, m2, ta, ma
+	vmv.v.i	v14, -1
+	vzext.vf2	v16, v12
+	vsll.vv	v12, v14, v16
+	vand.vv	v8, v8, v10
+	vand.vv	v8, v12, v8
+	ret
 func0000000000000001:                   # @func0000000000000001
 	vsetivli	zero, 4, e32, m1, ta, ma
 	vadd.vi	v12, v12, 1
@@ -42,5 +52,5 @@ func0000000000000001:                   # @func0000000000000001
 	vzext.vf2	v16, v12
 	vsll.vv	v12, v14, v16
 	vand.vv	v8, v8, v10
-	vand.vv	v8, v8, v12
+	vand.vv	v8, v12, v8
 	ret

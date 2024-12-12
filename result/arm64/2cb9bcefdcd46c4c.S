@@ -1,19 +1,40 @@
-func0000000000000a54:                   // @func0000000000000a54
+func00000000000000b8:                   // @func00000000000000b8
 // %bb.0:                               // %entry
-	uzp1	v3.4s, v3.4s, v4.4s
-	uzp1	v1.4s, v1.4s, v2.4s
-	sabd	v1.4s, v1.4s, v3.4s
-	cmhi	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	subs	w8, w1, w2
+	cneg	w8, w8, mi
+	cmp	w8, w0
+	cset	w0, hi
+	ret
+                                        // -- End function
+func00000000000000a8:                   // @func00000000000000a8
+// %bb.0:                               // %entry
+	subs	w8, w1, w2
+	cneg	w8, w8, mi
+	cmp	w8, w0
+	cset	w0, hi
+	ret
+                                        // -- End function
+func00000000000000aa:                   // @func00000000000000aa
+// %bb.0:                               // %entry
+	subs	w8, w1, w2
+	cneg	w8, w8, mi
+	cmp	w8, w0
+	cset	w0, gt
+	ret
+                                        // -- End function
+func00000000000014b4:                   // @func00000000000014b4
+// %bb.0:                               // %entry
+	subs	w8, w1, w2
+	cneg	w8, w8, mi
+	cmp	w8, w0
+	cset	w0, lo
 	ret
                                         // -- End function
 func0000000000000006:                   // @func0000000000000006
 // %bb.0:                               // %entry
-	uzp1	v3.4s, v3.4s, v4.4s
-	uzp1	v1.4s, v1.4s, v2.4s
-	sub	v1.4s, v1.4s, v3.4s
-	abs	v1.4s, v1.4s
-	cmgt	v0.4s, v0.4s, v1.4s
-	xtn	v0.4h, v0.4s
+	subs	w8, w1, w2
+	cneg	w8, w8, mi
+	cmp	w8, w0
+	cset	w0, lt
 	ret
                                         // -- End function

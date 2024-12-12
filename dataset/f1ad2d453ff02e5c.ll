@@ -7,7 +7,7 @@ define i8 @func0000000000000004(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp eq i8 %2, 0
   %4 = select i1 %3, i8 0, i8 6
-  %5 = or i8 %4, %0
+  %5 = or i8 %0, %4
   %6 = select i1 %1, i8 0, i8 5
   %7 = or i8 %5, %6
   ret i8 %7
@@ -33,7 +33,7 @@ define i8 @func0000000000000012(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 8
   %4 = select i1 %3, i8 0, i8 32
-  %5 = or disjoint i8 %4, %0
+  %5 = or disjoint i8 %0, %4
   %6 = select i1 %1, i8 0, i8 64
   %7 = or i8 %5, %6
   ret i8 %7
@@ -46,7 +46,7 @@ define i8 @func0000000000000010(i8 %0, i1 %1, i8 %2) #0 {
 entry:
   %3 = icmp ult i8 %2, 8
   %4 = select i1 %3, i8 0, i8 64
-  %5 = or i8 %4, %0
+  %5 = or i8 %0, %4
   %6 = select i1 %1, i8 0, i8 -128
   %7 = or i8 %5, %6
   ret i8 %7

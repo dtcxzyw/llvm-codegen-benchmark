@@ -10,7 +10,7 @@ entry:
   ret i64 %5
 }
 
-; 16 occurrences:
+; 20 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; linux/optimized/compaction.ll
 ; linux/optimized/percpu.ll
@@ -24,14 +24,18 @@ entry:
 ; mold/optimized/arch-riscv.cc.RV64BE.cc.ll
 ; mold/optimized/arch-riscv.cc.RV64LE.cc.ll
 ; openjdk/optimized/metaspaceCommon.ll
+; openssl/optimized/libcrypto-lib-packet.ll
+; openssl/optimized/libcrypto-shlib-packet.ll
+; openssl/optimized/libssl-shlib-packet.ll
+; openssl/optimized/tls13secretstest-bin-packet.ll
 ; quickjs/optimized/quickjs-libc.ll
 ; quickjs/optimized/quickjs.ll
 ; regex-rs/optimized/1rguw48xrsv49k4z.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = add i64 %2, 131072
-  %4 = icmp ult i64 %3, 262144
+  %3 = add i64 %2, -8
+  %4 = icmp ult i64 %3, -7
   %5 = select i1 %4, i64 %0, i64 %1
   ret i64 %5
 }
@@ -49,10 +53,11 @@ entry:
   ret i64 %4
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; clamav/optimized/cabd.c.ll
+; hermes/optimized/APFloat.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = icmp eq i64 %2, 20
   %4 = select i1 %3, i64 %0, i64 %1
@@ -85,7 +90,7 @@ entry:
 ; freetype/optimized/autofit.c.ll
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000024(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = add nsw i64 %2, 2147483648
   %4 = icmp ult i64 %3, 4294967296

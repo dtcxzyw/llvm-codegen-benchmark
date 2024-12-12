@@ -1,5 +1,5 @@
 
-; 89 occurrences:
+; 90 occurrences:
 ; annoy/optimized/annoymodule.ll
 ; cmake/optimized/cmCTestTestHandler.cxx.ll
 ; cmake/optimized/cmGlobalGenerator.cxx.ll
@@ -87,6 +87,7 @@
 ; ozz-animation/optimized/import2ozz_track.cc.ll
 ; pbrt-v4/optimized/imgtool.cpp.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
+; tev/optimized/ImageCanvas.cpp.ll
 ; xgboost/optimized/gbtree.cc.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
 ; Function Attrs: nounwind
@@ -107,16 +108,6 @@ define float @func0000000000000003(i64 %0) #0 {
 entry:
   %1 = ashr exact i64 %0, 3
   %2 = uitofp nneg i64 %1 to float
-  ret float %2
-}
-
-; 1 occurrences:
-; tev/optimized/ImageCanvas.cpp.ll
-; Function Attrs: nounwind
-define float @func0000000000000000(i64 %0) #0 {
-entry:
-  %1 = ashr i64 %0, 4
-  %2 = uitofp i64 %1 to float
   ret float %2
 }
 

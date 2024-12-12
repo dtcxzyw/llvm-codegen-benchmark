@@ -39,18 +39,21 @@ func0000000000000007:                   # @func0000000000000007
 	xori	a1, a1, 1
 	and	a0, a0, a1
 	ret
-func000000000000000c:                   # @func000000000000000c
+.LCPI5_0:
+	.quad	0x7ff0000000000000              # double +Inf
+func0000000000000006:                   # @func0000000000000006
+	lui	a2, %hi(.LCPI5_0)
+	fld	fa5, %lo(.LCPI5_0)(a2)
 	or	a0, a0, a1
-	fmv.d.x	fa5, zero
-	fle.d	a1, fa5, fa0
+	flt.d	a1, fa0, fa5
 	and	a0, a0, a1
 	ret
 .LCPI6_0:
 	.quad	0x7ff0000000000000              # double +Inf
-func0000000000000006:                   # @func0000000000000006
+func000000000000000c:                   # @func000000000000000c
 	lui	a2, %hi(.LCPI6_0)
 	fld	fa5, %lo(.LCPI6_0)(a2)
+	flt.d	a2, fa0, fa5
 	or	a0, a0, a1
-	flt.d	a1, fa0, fa5
-	and	a0, a0, a1
+	and	a0, a0, a2
 	ret

@@ -1,16 +1,16 @@
-func0000000000000001:                   # @func0000000000000001
-	movq	%rdx, %rax
-	shlq	$4, %rax
-	cmpq	$1, %rsi
-	cmovneq	%rdi, %rax
-	retq
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	leaq	(%rdx,%rdx), %rax
 	cmpq	$1, %rsi
 	cmovneq	%rdi, %rax
 	retq
-func0000000000000011:                   # @func0000000000000011
-	leaq	(,%rdx,4), %rax
+func0000000000000001:                   # @func0000000000000001
+	leaq	(%rdx,%rdx), %rax
+	testq	%rsi, %rsi
+	cmovneq	%rdi, %rax
+	retq
+func0000000000000041:                   # @func0000000000000041
+	movq	%rdx, %rax
+	shlq	$16, %rax
 	testq	%rsi, %rsi
 	cmovneq	%rdi, %rax
 	retq

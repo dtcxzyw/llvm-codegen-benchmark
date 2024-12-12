@@ -1,5 +1,5 @@
 
-; 24 occurrences:
+; 25 occurrences:
 ; bullet3/optimized/btCompoundShape.ll
 ; darktable/optimized/introspection_ashift.c.ll
 ; darktable/optimized/introspection_channelmixerrgb.c.ll
@@ -9,6 +9,7 @@
 ; darktable/optimized/introspection_filmicrgb.c.ll
 ; darktable/optimized/introspection_overlay.c.ll
 ; darktable/optimized/introspection_shadhi.c.ll
+; darktable/optimized/introspection_vibrance.c.ll
 ; darktable/optimized/introspection_watermark.c.ll
 ; gromacs/optimized/cellsizes.cpp.ll
 ; gromacs/optimized/gen_vsite.cpp.ll

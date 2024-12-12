@@ -1,6 +1,5 @@
 
-; 6 occurrences:
-; abseil-cpp/optimized/cordz_info.cc.ll
+; 5 occurrences:
 ; clamav/optimized/unarj.c.ll
 ; oiio/optimized/tiffinput.cpp.ll
 ; openblas/optimized/dgemmt.c.ll
@@ -11,7 +10,7 @@ define i64 @func0000000000000001(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = select i1 %1, i64 %3, i64 0
-  %5 = mul nsw i64 %4, %0
+  %5 = mul nsw i64 %0, %4
   ret i64 %5
 }
 
@@ -61,7 +60,7 @@ define i64 @func0000000000000000(i64 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = sext i32 %2 to i64
   %4 = select i1 %1, i64 %3, i64 1
-  %5 = mul i64 %4, %0
+  %5 = mul i64 %0, %4
   ret i64 %5
 }
 

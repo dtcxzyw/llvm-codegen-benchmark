@@ -7,7 +7,7 @@
 ; ruby/optimized/parse.ll
 ; ruby/optimized/ripper.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000041(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 315
   %3 = zext i1 %2 to i32
@@ -27,7 +27,7 @@ entry:
 ; redis/optimized/server.ll
 ; ruby/optimized/dir.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000181(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000301(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ne i32 %1, 0
   %3 = zext i1 %2 to i32
@@ -40,7 +40,7 @@ entry:
 ; php/optimized/pcre2_compile.ll
 ; rocksdb/optimized/rate_limiter.cc.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000002c(i32 %0, i32 %1) #0 {
+define i32 @func000000000000004c(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp eq i32 %1, 0
   %3 = zext i1 %2 to i32
@@ -52,7 +52,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/AArch64AsmParser.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000101(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000201(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp ugt i32 %1, 3
   %3 = zext i1 %2 to i32

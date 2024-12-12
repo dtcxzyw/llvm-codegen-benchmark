@@ -37,11 +37,12 @@ entry:
   ret i32 %4
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; harfbuzz/optimized/hb-subset.cc.ll
 ; linux/optimized/pcm_lib.ll
 ; llvm/optimized/EarlyIfConversion.cpp.ll
 ; llvm/optimized/Lexer.cpp.ll
+; lvgl/optimized/lv_anim_timeline.ll
 ; qemu/optimized/hw_usb_dev-audio.c.ll
 ; tls-rs/optimized/4vg8hiu39ndz9uqe.ll
 ; tls-rs/optimized/59h61akxu6z29dlt.ll
@@ -53,7 +54,7 @@ entry:
   ret i32 %4
 }
 
-; 53 occurrences:
+; 49 occurrences:
 ; abc/optimized/cloud.c.ll
 ; abc/optimized/dauCanon.c.ll
 ; abc/optimized/ioReadBench.c.ll
@@ -62,6 +63,7 @@ entry:
 ; curl/optimized/libcurl_la-mprintf.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; fmt/optimized/format-impl-test.cc.ll
+; freetype/optimized/psaux.c.ll
 ; git/optimized/diff.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; hermes/optimized/dtoa.c.ll
@@ -76,27 +78,22 @@ entry:
 ; libwebp/optimized/anim_encode.c.ll
 ; libwebp/optimized/predictor_enc.c.ll
 ; linux/optimized/exec.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; luajit/optimized/lj_asm.ll
 ; luajit/optimized/lj_asm_dyn.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; opencv/optimized/beblid.cpp.ll
 ; opencv/optimized/colormap.cpp.ll
 ; opencv/optimized/edgeboxes.cpp.ll
 ; opencv/optimized/gfluidbuffer.cpp.ll
 ; opencv/optimized/staticSaliencyFineGrained.cpp.ll
-; openjdk/optimized/TransformHelper.ll
 ; openjdk/optimized/hb-ot-shape-fallback.ll
 ; openjdk/optimized/mlib_ImageClipping.ll
 ; openmpi/optimized/coll_adapt_ibcast.ll
 ; openmpi/optimized/coll_adapt_ireduce.ll
 ; openspiel/optimized/PlayAnalyser.cpp.ll
 ; openspiel/optimized/backgammon.cc.ll
-; openusd/optimized/decodeframe.c.ll
-; openusd/optimized/decodemv.c.ll
-; openusd/optimized/decodetxb.c.ll
-; openusd/optimized/detokenize.c.ll
 ; openusd/optimized/json.cpp.ll
 ; php/optimized/zend_strtod.ll
 ; postgres/optimized/generic_xlog.ll
@@ -115,10 +112,14 @@ entry:
   ret i32 %4
 }
 
-; 3 occurrences:
+; 7 occurrences:
 ; lief/optimized/ssl_msg.c.ll
 ; luau/optimized/CodeGenX64.cpp.ll
 ; opencv/optimized/bitmatrixparser.cpp.ll
+; openusd/optimized/decodeframe.c.ll
+; openusd/optimized/decodemv.c.ll
+; openusd/optimized/decodetxb.c.ll
+; openusd/optimized/detokenize.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i1 %1, i32 %2) #0 {
 entry:

@@ -4,6 +4,13 @@ func0000000000000007:                   # @func0000000000000007
 	vmv.v.i	v11, 1
 	vwsll.vv	v8, v11, v10
 	ret
+func000000000000000c:                   # @func000000000000000c
+	vsetivli	zero, 8, e16, m1, ta, ma
+	vsrl.vi	v10, v8, 8
+	li	a0, 16
+	vmv.v.x	v11, a0
+	vwsll.vv	v8, v11, v10
+	ret
 func0000000000000006:                   # @func0000000000000006
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vsrl.vi	v10, v8, 1

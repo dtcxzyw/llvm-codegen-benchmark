@@ -1,8 +1,13 @@
 func0000000000000014:                   # @func0000000000000014
-	add	a1, a1, a2
 	andi	a0, a0, 1
-	add	a0, a0, a1
-	addiw	a0, a0, 253
+	add	a1, a1, a2
+	bnez	a0, .LBB0_2
+	li	a0, 81
+	addw	a0, a0, a1
+	ret
+.LBB0_2:
+	li	a0, 42
+	addw	a0, a0, a1
 	ret
 func0000000000000000:                   # @func0000000000000000
 	andi	a2, a2, 1

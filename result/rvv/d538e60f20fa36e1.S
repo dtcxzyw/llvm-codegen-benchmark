@@ -16,28 +16,13 @@ func0000000000000007:                   # @func0000000000000007
 	addi	a0, a0, -1664
 	vmerge.vxm	v8, v8, a0, v0
 	ret
-func000000000000001b:                   # @func000000000000001b
-	li	a0, 33
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmslt.vx	v0, v10, a0
-	li	a0, 151
-	vmul.vx	v8, v8, a0
-	vmerge.vxm	v8, v8, a0, v0
-	ret
-func0000000000000019:                   # @func0000000000000019
-	bseti	a0, zero, 11
-	vsetivli	zero, 8, e32, m2, ta, ma
-	vmslt.vx	v0, v10, a0
-	li	a0, 5
-	vmul.vx	v8, v8, a0
-	lui	a0, 5
-	vmerge.vxm	v8, v8, a0, v0
-	ret
 func0000000000000004:                   # @func0000000000000004
 	vsetivli	zero, 8, e32, m2, ta, ma
-	vmseq.vi	v0, v10, 1
-	lui	a0, 1
-	addi	a0, a0, -1744
+	vmseq.vi	v0, v10, 0
+	lui	a0, 1048397
+	addi	a0, a0, 261
 	vmul.vx	v8, v8, a0
+	lui	a0, 192535
+	addi	a0, a0, 1788
 	vmerge.vxm	v8, v8, a0, v0
 	ret

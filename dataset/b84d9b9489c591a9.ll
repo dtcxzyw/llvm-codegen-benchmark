@@ -19,7 +19,7 @@ define i32 @func000000000000000c(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 9
   %3 = shl nuw i32 1, %2
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -50,7 +50,7 @@ define i32 @func0000000000000008(i32 %0, i32 %1) #0 {
 entry:
   %2 = add nsw i32 %1, 1
   %3 = shl i32 4, %2
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -65,8 +65,7 @@ entry:
   ret i32 %4
 }
 
-; 18 occurrences:
-; linux/optimized/intel_audio.ll
+; 17 occurrences:
 ; linux/optimized/intel_ddi.ll
 ; linux/optimized/intel_dpll.ll
 ; linux/optimized/radix-tree.ll
@@ -89,7 +88,7 @@ define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = shl nuw i32 1, %2
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 
@@ -111,7 +110,7 @@ define i32 @func0000000000000005(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, 4
   %3 = shl nuw i32 1, %2
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   ret i32 %4
 }
 
@@ -123,7 +122,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = add i32 %1, -1
   %3 = shl i32 65537, %2
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 

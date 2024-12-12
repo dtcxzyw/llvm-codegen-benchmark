@@ -1,5 +1,5 @@
 
-; 217 occurrences:
+; 216 occurrences:
 ; abc/optimized/acbMfs.c.ll
 ; abc/optimized/cbaReadVer.c.ll
 ; abc/optimized/giaDup.c.ll
@@ -9,6 +9,7 @@
 ; assimp/optimized/PlyExporter.cpp.ll
 ; assimp/optimized/zip.c.ll
 ; bdwgc/optimized/gc.c.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/huf_compress.c.ll
 ; cmake/optimized/testFStream.cxx.ll
 ; cmake/optimized/xxhash.c.ll
@@ -79,7 +80,6 @@
 ; linux/optimized/af_netlink.ll
 ; linux/optimized/fair.ll
 ; linux/optimized/fib_frontend.ll
-; linux/optimized/i915_driver.ll
 ; linux/optimized/i915_gem_region.ll
 ; linux/optimized/igmp.ll
 ; linux/optimized/intel_overlay.ll
@@ -109,6 +109,7 @@
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; llvm/optimized/TargetLoweringObjectFileImpl.cpp.ll
 ; llvm/optimized/XCOFFObjectFile.cpp.ll
+; lvgl/optimized/lv_svg_parser.ll
 ; lz4/optimized/lz4frame.c.ll
 ; lz4/optimized/xxhash.c.ll
 ; meshlab/optimized/filter_plugin.cpp.ll
@@ -170,7 +171,6 @@
 ; qemu/optimized/source_s_mulAddF16.c.ll
 ; qemu/optimized/source_s_roundPackToF16.c.ll
 ; qemu/optimized/source_s_roundPackToF32.c.ll
-; qemu/optimized/source_s_shiftRightJam32.c.ll
 ; qemu/optimized/target_riscv_vector_helper.c.ll
 ; qemu/optimized/util_aio-posix.c.ll
 ; qemu/optimized/util_event_notifier-posix.c.ll
@@ -197,7 +197,6 @@
 ; spike/optimized/s_roundPackToBF16.ll
 ; spike/optimized/s_roundPackToF16.ll
 ; spike/optimized/s_roundPackToF32.ll
-; spike/optimized/s_shiftRightJam32.ll
 ; spike/optimized/s_subMagsF32.ll
 ; spike/optimized/vsmul_vv.ll
 ; spike/optimized/vsmul_vx.ll
@@ -221,11 +220,11 @@
 define i32 @func0000000000000000(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   ret i32 %3
 }
 
-; 709 occurrences:
+; 710 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/Glucose.cpp.ll
@@ -262,7 +261,6 @@ entry:
 ; abc/optimized/fraClaus.c.ll
 ; abc/optimized/fraSat.c.ll
 ; abc/optimized/fraigSat.c.ll
-; abc/optimized/fxuPair.c.ll
 ; abc/optimized/giaAiger.c.ll
 ; abc/optimized/giaCSat2.c.ll
 ; abc/optimized/giaMf.c.ll
@@ -302,6 +300,10 @@ entry:
 ; abc/optimized/wlcAbc.c.ll
 ; abc/optimized/xsatCnfReader.c.ll
 ; abc/optimized/xsatSolver.c.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/decode_view.ll
+; boost/optimized/to_chars.ll
+; boost/optimized/topology.ll
 ; bullet3/optimized/btGhostObject.ll
 ; bullet3/optimized/btRigidBody.ll
 ; clamav/optimized/client.c.ll
@@ -621,13 +623,10 @@ entry:
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -815,7 +814,6 @@ entry:
 ; qemu/optimized/hw_net_can_ctucan_core.c.ll
 ; qemu/optimized/hw_net_vhost_net.c.ll
 ; qemu/optimized/hw_net_vmxnet3.c.ll
-; qemu/optimized/hw_ssi_sifive_spi.c.ll
 ; qemu/optimized/hw_virtio_virtio-crypto.c.ll
 ; qemu/optimized/hw_watchdog_wdt_i6300esb.c.ll
 ; qemu/optimized/io_channel-websock.c.ll
@@ -827,7 +825,6 @@ entry:
 ; redis/optimized/db.ll
 ; redis/optimized/t_string.ll
 ; ruby/optimized/io.ll
-; ruby/optimized/ractor.ll
 ; ruby/optimized/transcode.ll
 ; rustfmt-rs/optimized/4arc02n7xt9gqo2v.ll
 ; rustfmt-rs/optimized/s8gyre8ye3tvwam.ll
@@ -869,6 +866,7 @@ entry:
 ; wireshark/optimized/dftest.c.ll
 ; wireshark/optimized/packet-tibia.c.ll
 ; wireshark/optimized/packet-wassp.c.ll
+; wolfssl/optimized/internal.c.ll
 ; yosys/optimized/Solver.ll
 ; z3/optimized/algebraic_numbers.cpp.ll
 ; z3/optimized/arith_internalize.cpp.ll
@@ -919,6 +917,8 @@ entry:
 ; z3/optimized/theory_seq.cpp.ll
 ; z3/optimized/udoc_relation.cpp.ll
 ; z3/optimized/user_solver.cpp.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/a80esttvizzblelz7vl2fpyaz.ll
 ; zstd/optimized/zdict.c.ll
 ; zstd/optimized/zstd_compress.c.ll
 ; zstd/optimized/zstd_compress_literals.c.ll
@@ -939,7 +939,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i1 %1) #0 {
 entry:
   %2 = zext i1 %1 to i32
-  %3 = or disjoint i32 %2, %0
+  %3 = or disjoint i32 %0, %2
   ret i32 %3
 }
 

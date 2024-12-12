@@ -1,6 +1,6 @@
 func0000000000000018:                   # @func0000000000000018
 	fcvt.d.w	fa5, a0
-	feq.d	a0, fa5, fa0
+	feq.d	a0, fa0, fa5
 	ret
 func0000000000000002:                   # @func0000000000000002
 	fcvt.d.w	fa5, a0
@@ -16,11 +16,11 @@ func0000000000000024:                   # @func0000000000000024
 	ret
 func0000000000000008:                   # @func0000000000000008
 	fcvt.d.w	fa5, a0
-	feq.d	a0, fa5, fa0
+	feq.d	a0, fa0, fa5
 	ret
 func0000000000000028:                   # @func0000000000000028
 	fcvt.d.w	fa5, a0
-	feq.d	a0, fa5, fa0
+	feq.d	a0, fa0, fa5
 	ret
 func000000000000000c:                   # @func000000000000000c
 	fcvt.d.w	fa5, a0

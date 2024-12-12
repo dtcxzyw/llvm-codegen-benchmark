@@ -28,16 +28,16 @@ func000000000000002b:                   # @func000000000000002b
 	xorl	%eax, %eax
 	cmpl	$3, %edi
 	setge	%al
-	shll	$10, %eax
-	addl	$1024, %eax                     # imm = 0x400
+	shll	$4, %eax
+	orl	$2863, %eax                     # imm = 0xB2F
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000051:                   # @func0000000000000051
 	xorl	%eax, %eax
 	cmpl	$2, %edi
 	setae	%al
 	addl	%eax, %eax
 	retq
-func0000000000000023:                   # @func0000000000000023
+func0000000000000063:                   # @func0000000000000063
 	cmpl	$301, %edi                      # imm = 0x12D
 	movl	$482, %ecx                      # imm = 0x1E2
 	movl	$317, %eax                      # imm = 0x13D
@@ -53,4 +53,9 @@ func0000000000000013:                   # @func0000000000000013
 	cmpl	$192, %edi
 	movl	$3, %eax
 	sbbl	$0, %eax
+	retq
+func0000000000000053:                   # @func0000000000000053
+	xorl	%eax, %eax
+	cmpl	$23104, %edi                    # imm = 0x5A40
+	adcl	$5, %eax
 	retq

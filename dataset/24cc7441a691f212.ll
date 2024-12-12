@@ -1,5 +1,5 @@
 
-; 524 occurrences:
+; 520 occurrences:
 ; abc/optimized/abcIfif.c.ll
 ; abc/optimized/abcSpeedup.c.ll
 ; abc/optimized/abcTiming.c.ll
@@ -9,7 +9,6 @@
 ; abc/optimized/giaGen.c.ll
 ; abc/optimized/giaLf.c.ll
 ; abc/optimized/giaMan.c.ll
-; abc/optimized/mapperCore.c.ll
 ; abc/optimized/mfsMan.c.ll
 ; abc/optimized/sclBufSize.c.ll
 ; abc/optimized/sclBuffer.c.ll
@@ -246,7 +245,6 @@
 ; gromacs/optimized/sim_util.cpp.ll
 ; gromacs/optimized/slae2.cpp.ll
 ; gromacs/optimized/slaev2.cpp.ll
-; gromacs/optimized/slarnv.cpp.ll
 ; gromacs/optimized/slarrex.cpp.ll
 ; gromacs/optimized/slarrvx.cpp.ll
 ; gromacs/optimized/slasd4.cpp.ll
@@ -254,7 +252,6 @@
 ; gromacs/optimized/slasq2.cpp.ll
 ; gromacs/optimized/slasq3.cpp.ll
 ; gromacs/optimized/slasq4.cpp.ll
-; gromacs/optimized/slatrd.cpp.ll
 ; gromacs/optimized/sm_insolidangle.cpp.ll
 ; gromacs/optimized/solvate.cpp.ll
 ; gromacs/optimized/specbond.cpp.ll
@@ -262,7 +259,6 @@
 ; gromacs/optimized/sstein.cpp.ll
 ; gromacs/optimized/ssteqr.cpp.ll
 ; gromacs/optimized/ssterf.cpp.ll
-; gromacs/optimized/ssytd2.cpp.ll
 ; gromacs/optimized/stophandler.cpp.ll
 ; gromacs/optimized/surfacearea.cpp.ll
 ; gromacs/optimized/thermochemistry.cpp.ll

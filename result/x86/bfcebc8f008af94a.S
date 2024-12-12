@@ -13,10 +13,3 @@ func000000000000000a:                   # @func000000000000000a
 	addq	$31, %rax
 	andq	$-32, %rax
 	retq
-func0000000000000002:                   # @func0000000000000002
-	movq	%rdi, %rax
-	movl	%esi, %ecx
-	xorl	%edx, %edx
-	divq	%rcx
-	incl	%eax
-	retq

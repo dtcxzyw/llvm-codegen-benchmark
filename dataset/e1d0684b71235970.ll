@@ -1,11 +1,13 @@
 
-; 49 occurrences:
+; 51 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/bmcFx.c.ll
 ; abc/optimized/giaPat2.c.ll
 ; abseil-cpp/optimized/numbers.cc.ll
+; boost/optimized/collate.ll
+; boost/optimized/collator.ll
+; boost/optimized/message.ll
 ; clamav/optimized/upack.c.ll
-; cmake/optimized/archive_write_disk_set_standard_lookup.c.ll
 ; cmake/optimized/entropy_common.c.ll
 ; hermes/optimized/JSLexer.cpp.ll
 ; hermes/optimized/RegexParser.cpp.ll
@@ -58,7 +60,7 @@ entry:
   ret i32 %4
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; brotli/optimized/encode.c.ll
 ; clamav/optimized/readdb.c.ll
 ; hdf5/optimized/H5checksum.c.ll
@@ -67,22 +69,20 @@ entry:
 ; libwebp/optimized/lossless.c.ll
 ; libwebp/optimized/predictor_enc.c.ll
 ; linux/optimized/intel_color.ll
-; linux/optimized/isadma.ll
+; lvgl/optimized/lv_binfont_loader.ll
 ; minetest/optimized/CImage.cpp.ll
 ; openjdk/optimized/pngread.ll
-; wireshark/optimized/packet-asterix.c.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000f(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nuw nsw i32 %1, 8
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = and i32 %3, 65280
   ret i32 %4
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; linux/optimized/intel_color.ll
-; linux/optimized/rsmisc.ll
 ; llvm/optimized/Instructions.cpp.ll
 ; php/optimized/decode.ll
 ; qemu/optimized/hw_display_cirrus_vga.c.ll
@@ -136,7 +136,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 2
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = and i32 %3, 7
   ret i32 %4
 }
@@ -147,7 +147,7 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl i32 %1, 3
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = and i32 %3, 32
   ret i32 %4
 }

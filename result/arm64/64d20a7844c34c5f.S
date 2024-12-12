@@ -1,67 +1,32 @@
 func0000000000000002:                   // @func0000000000000002
 // %bb.0:                               // %entry
-	ushll	v0.4s, v0.4h, #0
 	mov	w8, #1                          // =0x1
-	dup	v4.2d, x8
-	ushll2	v3.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
-	ushl	v5.2d, v4.2d, v1.2d
-	ushl	v1.2d, v4.2d, v2.2d
-	shl	v3.2d, v3.2d, #63
-	shl	v0.2d, v0.2d, #63
-	cmlt	v2.2d, v3.2d, #0
-	cmlt	v0.2d, v0.2d, #0
-	and	v1.16b, v1.16b, v2.16b
-	and	v0.16b, v5.16b, v0.16b
+	tst	w0, #0x1
+	lsl	x8, x8, x1
+	csel	x0, x8, xzr, ne
 	ret
                                         // -- End function
 func0000000000000003:                   // @func0000000000000003
 // %bb.0:                               // %entry
-	ushll	v0.4s, v0.4h, #0
 	mov	w8, #1                          // =0x1
-	dup	v4.2d, x8
-	ushll2	v3.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
-	ushl	v5.2d, v4.2d, v1.2d
-	ushl	v1.2d, v4.2d, v2.2d
-	shl	v3.2d, v3.2d, #63
-	shl	v0.2d, v0.2d, #63
-	cmlt	v2.2d, v3.2d, #0
-	cmlt	v0.2d, v0.2d, #0
-	and	v1.16b, v1.16b, v2.16b
-	and	v0.16b, v5.16b, v0.16b
+	tst	w0, #0x1
+	lsl	x8, x8, x1
+	csel	x0, x8, xzr, ne
 	ret
                                         // -- End function
 func0000000000000000:                   // @func0000000000000000
 // %bb.0:                               // %entry
-	ushll	v0.4s, v0.4h, #0
 	mov	w8, #2                          // =0x2
-	dup	v4.2d, x8
-	ushll2	v3.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
-	ushl	v5.2d, v4.2d, v1.2d
-	ushl	v1.2d, v4.2d, v2.2d
-	shl	v3.2d, v3.2d, #63
-	shl	v0.2d, v0.2d, #63
-	cmlt	v2.2d, v3.2d, #0
-	cmlt	v0.2d, v0.2d, #0
-	and	v1.16b, v1.16b, v2.16b
-	and	v0.16b, v5.16b, v0.16b
+	tst	w0, #0x1
+	lsl	x8, x8, x1
+	csel	x0, x8, xzr, ne
 	ret
                                         // -- End function
 func0000000000000001:                   // @func0000000000000001
 // %bb.0:                               // %entry
-	ushll	v0.4s, v0.4h, #0
-	movi	v4.2d, #0xffffffffffffffff
-	ushll2	v3.2d, v0.4s, #0
-	ushll	v0.2d, v0.2s, #0
-	ushl	v5.2d, v4.2d, v1.2d
-	ushl	v1.2d, v4.2d, v2.2d
-	shl	v3.2d, v3.2d, #63
-	shl	v0.2d, v0.2d, #63
-	cmlt	v2.2d, v3.2d, #0
-	cmlt	v0.2d, v0.2d, #0
-	and	v1.16b, v1.16b, v2.16b
-	and	v0.16b, v5.16b, v0.16b
+	mov	x8, #-1                         // =0xffffffffffffffff
+	tst	w0, #0x1
+	lsl	x8, x8, x1
+	csel	x0, x8, xzr, ne
 	ret
                                         // -- End function

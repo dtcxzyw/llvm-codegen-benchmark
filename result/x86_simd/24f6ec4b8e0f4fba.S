@@ -25,7 +25,7 @@ func000000000000003d:                   # @func000000000000003d
 	retq
 func0000000000000015:                   # @func0000000000000015
 	vpaddd	%ymm2, %ymm1, %ymm1
-	vpslld	$2, %ymm1, %ymm1
+	vpslld	$3, %ymm1, %ymm1
 	vpsubd	%ymm1, %ymm0, %ymm0
 	retq
 func0000000000000011:                   # @func0000000000000011

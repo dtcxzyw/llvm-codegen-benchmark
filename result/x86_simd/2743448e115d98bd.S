@@ -16,3 +16,12 @@ func0000000000000000:                   # @func0000000000000000
 	vpmovdb	%ymm1, %xmm0
 	vzeroupper
 	retq
+.LCPI2_0:
+	.long	32                              # 0x20
+func0000000000000006:                   # @func0000000000000006
+	vpsllw	$15, %xmm0, %xmm0
+	vpmovw2m	%xmm0, %k1
+	vpord	.LCPI2_0(%rip){1to8}, %ymm1, %ymm1 {%k1}
+	vpmovdb	%ymm1, %xmm0
+	vzeroupper
+	retq

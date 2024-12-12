@@ -1,10 +1,11 @@
 
-; 41 occurrences:
+; 42 occurrences:
 ; abseil-cpp/optimized/globals.cc.ll
 ; abseil-cpp/optimized/hash_function_defaults_test.cc.ll
 ; abseil-cpp/optimized/hash_test.cc.ll
 ; abseil-cpp/optimized/mock_distributions_test.cc.ll
 ; abseil-cpp/optimized/mocking_bit_gen_test.cc.ll
+; boost/optimized/src.ll
 ; grpc/optimized/call_trace.cc.ll
 ; grpc/optimized/client_channel.cc.ll
 ; grpc/optimized/dns_resolver_ares.cc.ll
@@ -45,9 +46,9 @@
 define i64 @func0000000000000020(i64 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = mul nuw i128 %2, 11376068507788127593
-  %4 = xor i128 %3, %1
+  %4 = xor i128 %1, %3
   %5 = trunc i128 %4 to i64
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -64,9 +65,9 @@ entry:
 define i64 @func0000000000000030(i64 %0, i128 %1, i128 %2) #0 {
 entry:
   %3 = mul nuw nsw i128 %2, 6364136223846793005
-  %4 = xor i128 %3, %1
+  %4 = xor i128 %1, %3
   %5 = trunc i128 %4 to i64
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 

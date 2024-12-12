@@ -6,7 +6,7 @@ func0000000000000004:                   // @func0000000000000004
 	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000104:                   // @func0000000000000104
+func0000000000000204:                   // @func0000000000000204
 // %bb.0:                               // %entry
 	add	x8, x0, w2, uxtw #2
 	add	x9, x0, x1, lsl #2
@@ -14,7 +14,7 @@ func0000000000000104:                   // @func0000000000000104
 	cset	w0, lo
 	ret
                                         // -- End function
-func0000000000000108:                   // @func0000000000000108
+func0000000000000208:                   // @func0000000000000208
 // %bb.0:                               // %entry
 	mov	w8, w2
 	add	x9, x0, x1, lsl #7

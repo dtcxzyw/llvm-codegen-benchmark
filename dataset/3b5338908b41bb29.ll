@@ -1,5 +1,5 @@
 
-; 58 occurrences:
+; 59 occurrences:
 ; abc/optimized/ivyCut.c.ll
 ; abc/optimized/ivySeq.c.ll
 ; arrow/optimized/array_run_end.cc.ll
@@ -20,6 +20,7 @@
 ; arrow/optimized/vector_selection_internal.cc.ll
 ; arrow/optimized/vector_selection_take_internal.cc.ll
 ; assimp/optimized/COBLoader.cpp.ll
+; boost/optimized/default_filter_factory.ll
 ; clamav/optimized/yara_grammar.c.ll
 ; cpython/optimized/dictobject.ll
 ; cvc5/optimized/set_defaults.cpp.ll
@@ -62,7 +63,7 @@
 define i1 @func0000000000000001(i64 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
-  %3 = icmp eq i64 %2, %0
+  %3 = icmp eq i64 %0, %2
   ret i1 %3
 }
 
@@ -96,7 +97,7 @@ entry:
 define i1 @func0000000000000008(i64 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
-  %3 = icmp ult i64 %2, %0
+  %3 = icmp ugt i64 %0, %2
   ret i1 %3
 }
 
@@ -113,7 +114,6 @@ entry:
 ; abc/optimized/ivyRwr.c.ll
 ; abc/optimized/ivySeq.c.ll
 ; abc/optimized/ivyUtil.c.ll
-; abc/optimized/reoProfile.c.ll
 ; arrow/optimized/bignum.cc.ll
 ; arrow/optimized/builder_run_end.cc.ll
 ; arrow/optimized/compare.cc.ll
@@ -123,6 +123,7 @@ entry:
 ; arrow/optimized/validate.cc.ll
 ; arrow/optimized/vector_selection_internal.cc.ll
 ; arrow/optimized/vector_selection_take_internal.cc.ll
+; boost/optimized/default_filter_factory.ll
 ; cmake/optimized/frm_def.c.ll
 ; cmake/optimized/frm_driver.c.ll
 ; cpython/optimized/dictobject.ll
@@ -195,15 +196,16 @@ entry:
 define i1 @func0000000000000006(i64 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
-  %3 = icmp sgt i64 %2, %0
+  %3 = icmp slt i64 %0, %2
   ret i1 %3
 }
 
-; 15 occurrences:
+; 16 occurrences:
 ; arrow/optimized/bignum.cc.ll
 ; arrow/optimized/ree_util.cc.ll
 ; arrow/optimized/trie.cc.ll
 ; arrow/optimized/validate.cc.ll
+; boost/optimized/default_filter_factory.ll
 ; double_conversion/optimized/bignum.cc.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; freetype/optimized/autofit.c.ll
@@ -219,12 +221,13 @@ entry:
 define i1 @func000000000000000a(i64 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
-  %3 = icmp slt i64 %2, %0
+  %3 = icmp sgt i64 %0, %2
   ret i1 %3
 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; arrow/optimized/scalar.cc.ll
+; boost/optimized/default_filter_factory.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; minetest/optimized/inventorymanager.cpp.ll
 ; minetest/optimized/test_voxelalgorithms.cpp.ll
@@ -234,13 +237,14 @@ entry:
 define i1 @func000000000000000b(i64 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
-  %3 = icmp sle i64 %2, %0
+  %3 = icmp sge i64 %0, %2
   ret i1 %3
 }
 
-; 7 occurrences:
+; 8 occurrences:
 ; arrow/optimized/bignum.cc.ll
 ; arrow/optimized/scalar.cc.ll
+; boost/optimized/default_filter_factory.ll
 ; double_conversion/optimized/bignum.cc.ll
 ; freetype/optimized/autofit.c.ll
 ; icu/optimized/double-conversion-bignum.ll
@@ -250,7 +254,7 @@ entry:
 define i1 @func0000000000000007(i64 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
-  %3 = icmp sge i64 %2, %0
+  %3 = icmp sle i64 %0, %2
   ret i1 %3
 }
 
@@ -268,7 +272,17 @@ entry:
 define i1 @func0000000000000004(i64 %0, i16 %1) #0 {
 entry:
   %2 = sext i16 %1 to i64
-  %3 = icmp ugt i64 %2, %0
+  %3 = icmp ult i64 %0, %2
+  ret i1 %3
+}
+
+; 1 occurrences:
+; boost/optimized/default_filter_factory.ll
+; Function Attrs: nounwind
+define i1 @func000000000000000c(i64 %0, i16 %1) #0 {
+entry:
+  %2 = sext i16 %1 to i64
+  %3 = icmp ne i64 %0, %2
   ret i1 %3
 }
 

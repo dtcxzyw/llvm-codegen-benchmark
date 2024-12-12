@@ -1,12 +1,12 @@
 
-%"class.llvm::Register.3005212" = type { i32 }
-%struct.srcu_node.3356489 = type { %struct.spinlock.3356490, [4 x i64], [4 x i64], i64, ptr, i32, i32 }
-%struct.spinlock.3356490 = type { %union.anon.2.3356491 }
-%union.anon.2.3356491 = type { %struct.raw_spinlock.3356485 }
-%struct.raw_spinlock.3356485 = type { %struct.qspinlock.3356486 }
-%struct.qspinlock.3356486 = type { %union.anon.0.3356487 }
-%union.anon.0.3356487 = type { %struct.atomic_t.3356488 }
-%struct.atomic_t.3356488 = type { i32 }
+%"class.llvm::Register.3198651" = type { i32 }
+%struct.srcu_node.3543792 = type { %struct.spinlock.3543793, [4 x i64], [4 x i64], i64, ptr, i32, i32 }
+%struct.spinlock.3543793 = type { %union.anon.2.3543794 }
+%union.anon.2.3543794 = type { %struct.raw_spinlock.3543788 }
+%struct.raw_spinlock.3543788 = type { %struct.qspinlock.3543789 }
+%struct.qspinlock.3543789 = type { %union.anon.0.3543790 }
+%union.anon.0.3543790 = type { %struct.atomic_t.3543791 }
+%struct.atomic_t.3543791 = type { i32 }
 
 ; 8 occurrences:
 ; abc/optimized/sswSim.c.ll
@@ -42,10 +42,9 @@ entry:
   ret ptr %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; msdfgen/optimized/edge-coloring.cpp.ll
-; zxing/optimized/AZDecoder.cpp.ll
 ; zxing/optimized/AZEncoder.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(ptr %0, i32 %1, i64 %2) #0 {
@@ -53,7 +52,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = sdiv i32 %3, %1
   %5 = sext i32 %4 to i64
-  %6 = getelementptr nusw %"class.llvm::Register.3005212", ptr %0, i64 %5
+  %6 = getelementptr nusw %"class.llvm::Register.3198651", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -65,7 +64,7 @@ entry:
   %3 = trunc i64 %2 to i32
   %4 = sdiv i32 %3, %1
   %5 = sext i32 %4 to i64
-  %6 = getelementptr %struct.srcu_node.3356489, ptr %0, i64 %5
+  %6 = getelementptr %struct.srcu_node.3543792, ptr %0, i64 %5
   ret ptr %6
 }
 

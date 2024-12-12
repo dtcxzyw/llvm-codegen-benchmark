@@ -8,17 +8,17 @@ func0000000000000010:                   // @func0000000000000010
 	add	x0, x1, x8
 	ret
                                         // -- End function
-func000000000000004a:                   // @func000000000000004a
+func000000000000004f:                   // @func000000000000004f
 // %bb.0:                               // %entry
 	cmp	w2, #10
 	cset	w8, lo
-	tst	w8, w0
+	tst	w0, w8
 	mov	w8, #1                          // =0x1
 	cinc	x8, x8, ne
 	add	x0, x1, x8
 	ret
                                         // -- End function
-func000000000000006a:                   // @func000000000000006a
+func000000000000006f:                   // @func000000000000006f
 // %bb.0:                               // %entry
 	cmp	w2, #0
 	mov	w9, #208                        // =0xd0
@@ -29,7 +29,7 @@ func000000000000006a:                   // @func000000000000006a
 	add	x0, x1, x8
 	ret
                                         // -- End function
-func000000000000001a:                   // @func000000000000001a
+func000000000000001f:                   // @func000000000000001f
 // %bb.0:                               // %entry
 	cmp	w2, #0
 	mov	w9, #928                        // =0x3a0

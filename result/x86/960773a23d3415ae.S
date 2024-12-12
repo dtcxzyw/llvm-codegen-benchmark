@@ -3,3 +3,8 @@ func0000000000000010:                   # @func0000000000000010
 	movslq	%esi, %rax
 	leaq	-1(%rdi,%rax), %rax
 	retq
+func0000000000000004:                   # @func0000000000000004
+	incl	%esi
+	movslq	%esi, %rax
+	leaq	-1(%rdi,%rax), %rax
+	retq

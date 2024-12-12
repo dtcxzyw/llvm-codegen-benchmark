@@ -1,4 +1,4 @@
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	andi	a0, a0, 255
 	addw	a1, a1, a2
 	xori	a1, a1, 2
@@ -6,7 +6,7 @@ func0000000000000011:                   # @func0000000000000011
 	or	a0, a0, a1
 	seqz	a0, a0
 	ret
-func00000000000001a1:                   # @func00000000000001a1
+func0000000000000541:                   # @func0000000000000541
 	andi	a0, a0, 255
 	addw	a1, a1, a2
 	slti	a1, a1, 2
@@ -15,7 +15,7 @@ func00000000000001a1:                   # @func00000000000001a1
 	seqz	a0, a0
 	and	a0, a0, a1
 	ret
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	andi	a0, a0, 255
 	sext.w	a1, a1
 	negw	a2, a2
@@ -24,7 +24,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	snez	a0, a0
 	and	a0, a0, a1
 	ret
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000141:                   # @func0000000000000141
 	sext.b	a0, a0
 	addw	a1, a1, a2
 	lui	a2, 52429
@@ -35,21 +35,21 @@ func00000000000000a1:                   # @func00000000000000a1
 	xori	a0, a0, 1
 	and	a0, a0, a1
 	ret
-func0000000000000048:                   # @func0000000000000048
+func0000000000000088:                   # @func0000000000000088
 	andi	a0, a0, 255
 	addw	a1, a1, a2
 	sltiu	a1, a1, 3
 	sltiu	a0, a0, 127
 	andn	a0, a0, a1
 	ret
-func0000000000000111:                   # @func0000000000000111
+func0000000000000421:                   # @func0000000000000421
 	andi	a0, a0, 255
 	addw	a1, a1, a2
 	xori	a0, a0, 66
 	orn	a0, a0, a1
 	seqz	a0, a0
 	ret
-func000000000000008c:                   # @func000000000000008c
+func000000000000010c:                   # @func000000000000010c
 	andi	a0, a0, 255
 	addw	a1, a1, a2
 	lui	a2, 524288
@@ -58,13 +58,5 @@ func000000000000008c:                   # @func000000000000008c
 	xor	a1, a1, a2
 	snez	a1, a1
 	xori	a0, a0, 1
-	and	a0, a0, a1
-	ret
-func000000000000004c:                   # @func000000000000004c
-	andi	a0, a0, 255
-	addw	a1, a1, a2
-	addi	a1, a1, -1
-	snez	a1, a1
-	sltiu	a0, a0, 192
 	and	a0, a0, a1
 	ret

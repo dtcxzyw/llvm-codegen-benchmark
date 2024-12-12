@@ -14,20 +14,17 @@ func0000000000000001:                   # @func0000000000000001
 	vzeroupper
 	retq
 .LCPI1_0:
-	.long	1073741824                      # 0x40000000
+	.long	1                               # 0x1
 .LCPI1_1:
-	.long	2147483647                      # 0x7fffffff
-.LCPI1_3:
-	.long	1048576                         # 0x100000
+	.long	2                               # 0x2
 .LCPI1_2:
-	.quad	2251799812636672                # 0x7fffffff00000
+	.quad	65536                           # 0x10000
 func0000000000000008:                   # @func0000000000000008
 	vpslld	$31, %xmm1, %xmm1
 	vpmovd2m	%xmm1, %k1
-	vpbroadcastd	.LCPI1_0(%rip), %xmm1   # xmm1 = [1073741824,1073741824,1073741824,1073741824]
-	vpbroadcastd	.LCPI1_1(%rip), %xmm1 {%k1} # xmm1 {%k1} = [2147483647,2147483647,2147483647,2147483647]
+	vpbroadcastd	.LCPI1_0(%rip), %xmm1   # xmm1 = [1,1,1,1]
+	vpbroadcastd	.LCPI1_1(%rip), %xmm1 {%k1} # xmm1 {%k1} = [2,2,2,2]
 	vpcmpnleuq	.LCPI1_2(%rip){1to4}, %ymm0, %k1
-	vpbroadcastd	.LCPI1_3(%rip), %xmm0   # xmm0 = [1048576,1048576,1048576,1048576]
-	vmovdqa32	%xmm1, %xmm0 {%k1}
+	vmovdqa32	%xmm1, %xmm0 {%k1} {z}
 	vzeroupper
 	retq

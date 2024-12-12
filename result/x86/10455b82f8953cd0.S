@@ -10,3 +10,9 @@ func0000000000000002:                   # @func0000000000000002
 	cmoveq	%rdx, %rax
 	addq	%rsi, %rax
 	retq
+func0000000000000003:                   # @func0000000000000003
+	xorl	%eax, %eax
+	testb	$1, %dil
+	cmoveq	%rdx, %rax
+	leaq	(%rsi,%rax,4), %rax
+	retq

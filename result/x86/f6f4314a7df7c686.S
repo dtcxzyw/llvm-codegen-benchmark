@@ -9,16 +9,16 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	%rcx, %rax
 	sete	%al
 	retq
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	movq	%rsi, %rdx
 	shrq	$2, %rdx
-	movabsq	$3234497591006606311, %rax      # imm = 0x2CE33E6C02CE33E7
+	movabsq	$2951479051793528259, %rax      # imm = 0x28F5C28F5C28F5C3
 	mulxq	%rax, %rcx, %rcx
-	shrq	$6, %rcx
+	shrq	$2, %rcx
 	shrq	$2, %rdi
 	movq	%rdi, %rdx
 	mulxq	%rax, %rax, %rax
-	shrq	$6, %rax
+	shrq	$2, %rax
 	cmpq	%rcx, %rax
 	seta	%al
 	retq

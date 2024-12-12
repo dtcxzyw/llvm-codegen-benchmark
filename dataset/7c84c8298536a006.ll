@@ -19,7 +19,7 @@
 ; wasmedge/optimized/serial_instruction.cpp.ll
 ; yosys/optimized/fstapi.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000058(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %1, -128
   %3 = icmp eq i64 %0, 0
@@ -32,10 +32,9 @@ entry:
 ; spike/optimized/kdmtt.ll
 ; spike/optimized/khmtt.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000318(i64 %0, i64 %1) #0 {
 entry:
-  %.mask = and i64 %1, -281474976710656
-  %2 = icmp ne i64 %.mask, -9223372036854775808
+  %2 = icmp sgt i64 %1, -9223090561878065153
   %3 = icmp ne i64 %0, -32768
   %4 = or i1 %3, %2
   ret i1 %4
@@ -46,7 +45,7 @@ entry:
 ; taskflow/optimized/exclusive_scan.cpp.ll
 ; taskflow/optimized/inclusive_scan.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000288(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000908(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %1, 9
   %3 = icmp ult i64 %0, 2
@@ -57,7 +56,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/UnifyFunctionExitNodes.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000310(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000a10(i64 %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %1, 8
   %3 = icmp ugt i64 %0, 8

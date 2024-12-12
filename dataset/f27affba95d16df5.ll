@@ -119,9 +119,10 @@ entry:
   ret i64 %3
 }
 
-; 176 occurrences:
+; 173 occurrences:
 ; abc/optimized/abcLut.c.ll
 ; arrow/optimized/align_util.cc.ll
+; boost/optimized/topology.ll
 ; draco/optimized/mesh_attribute_corner_table.cc.ll
 ; draco/optimized/mesh_edgebreaker_decoder_impl.cc.ll
 ; draco/optimized/mesh_edgebreaker_encoder_impl.cc.ll
@@ -223,13 +224,10 @@ entry:
 ; nix/optimized/misc.ll
 ; nix/optimized/namespaces.ll
 ; nix/optimized/nar-accessor.ll
-; nix/optimized/nix-build.ll
 ; nix/optimized/nix-channel.ll
 ; nix/optimized/nix-collect-garbage.ll
 ; nix/optimized/nix-copy-closure.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/nix-instantiate.ll
-; nix/optimized/nix-store.ll
 ; nix/optimized/nixexpr.ll
 ; nix/optimized/parsed-derivations.ll
 ; nix/optimized/parser-tab.ll
@@ -288,7 +286,6 @@ entry:
 ; opencv/optimized/lsc.cpp.ll
 ; opencv/optimized/slic.cpp.ll
 ; openjdk/optimized/sharedRuntime_x86_64.ll
-; php/optimized/unixtime2tm.ll
 ; velox/optimized/Comparisons.cpp.ll
 ; yosys/optimized/mem.ll
 ; yosys/optimized/memory_dff.ll

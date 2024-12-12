@@ -1,4 +1,4 @@
-func0000000000000008:                   # @func0000000000000008
+func0000000000000018:                   # @func0000000000000018
 	andi	a3, a1, 1
 	lui	a1, 16
 	addiw	a1, a1, -16
@@ -12,11 +12,20 @@ func0000000000000008:                   # @func0000000000000008
 .LBB0_4:                                # %entry
 	mv	a0, a2
 	ret
+func0000000000000008:                   # @func0000000000000008
+	slli	a1, a1, 63
+	srai	a1, a1, 63
+	and	a1, a1, a2
+	li	a2, 7
+	bltu	a2, a1, .LBB1_2
+	mv	a0, a1
+.LBB1_2:                                # %entry
+	ret
 func0000000000000001:                   # @func0000000000000001
 	slli	a1, a1, 63
 	srai	a1, a1, 63
 	and	a1, a1, a2
-	beqz	a1, .LBB1_2
+	beqz	a1, .LBB2_2
 	mv	a0, a1
-.LBB1_2:                                # %entry
+.LBB2_2:                                # %entry
 	ret

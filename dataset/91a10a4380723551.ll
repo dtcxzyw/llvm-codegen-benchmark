@@ -11,7 +11,7 @@
 ; openssl/optimized/libcrypto-shlib-f_int.ll
 ; openssl/optimized/libcrypto-shlib-f_string.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000031c(i64 %0) #0 {
+define i1 @func0000000000000c2c(i64 %0) #0 {
 entry:
   %1 = trunc nuw nsw i64 %0 to i32
   %2 = urem i32 %1, 35
@@ -24,7 +24,7 @@ entry:
 ; 1 occurrences:
 ; assimp/optimized/AssxmlFileWriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000021c(i64 %0) #0 {
+define i1 @func000000000000082c(i64 %0) #0 {
 entry:
   %1 = trunc nuw i64 %0 to i32
   %2 = urem i32 %1, 50

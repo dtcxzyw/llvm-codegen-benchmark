@@ -1,12 +1,15 @@
 
-; 269 occurrences:
+; 268 occurrences:
 ; abc/optimized/deflate.c.ll
-; abc/optimized/giaSatLE.c.ll
 ; abc/optimized/verCore.c.ll
 ; arrow/optimized/api_aggregate.cc.ll
 ; arrow/optimized/api_vector.cc.ll
 ; arrow/optimized/compressed.cc.ll
-; assimp/optimized/B3DImporter.cpp.ll
+; boost/optimized/alloc_lib.ll
+; boost/optimized/matches_relation_factory.ll
+; boost/optimized/read_graphviz_new.ll
+; boost/optimized/within.ll
+; boost/optimized/within_sph_geo.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; bullet3/optimized/btGjkPairDetector.ll
 ; c3c/optimized/sema_stmts.c.ll
@@ -127,6 +130,8 @@
 ; luau/optimized/Normalize.cpp.ll
 ; luau/optimized/isocline.c.ll
 ; luau/optimized/lvmutils.cpp.ll
+; lvgl/optimized/lv_draw_label.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; meshlab/optimized/edit_sample.cpp.ll
 ; meshlab/optimized/edit_select.cpp.ll
@@ -152,7 +157,6 @@
 ; ockam-rs/optimized/39elqh75xhewanjo.ll
 ; ockam-rs/optimized/gotvfwvqrrp4xgl.ll
 ; openblas/optimized/dgelq.c.ll
-; openblas/optimized/dgeqp3.c.ll
 ; opencv/optimized/data.cpp.ll
 ; opencv/optimized/generalized_hough.cpp.ll
 ; opencv/optimized/intersection.cpp.ll
@@ -167,7 +171,6 @@
 ; openjdk/optimized/c1_MacroAssembler_x86.ll
 ; openjdk/optimized/machnode.ll
 ; openmpi/optimized/pml_ob1_recvfrag.ll
-; openspiel/optimized/chess_board.cc.ll
 ; openspiel/optimized/go_board.cc.ll
 ; openspiel/optimized/havannah.cc.ll
 ; openspiel/optimized/phantom_go_board.cc.ll
@@ -228,12 +231,6 @@
 ; slurm/optimized/jobacct_gather.ll
 ; slurm/optimized/launch.ll
 ; slurm/optimized/opt.ll
-; spike/optimized/fmax_s.ll
-; spike/optimized/fmaxm_h.ll
-; spike/optimized/fmaxm_s.ll
-; spike/optimized/fmin_s.ll
-; spike/optimized/fminm_h.ll
-; spike/optimized/fminm_s.ll
 ; spike/optimized/s_roundPackToF128.ll
 ; spike/optimized/socketif.ll
 ; sqlite/optimized/sqlite3.ll
@@ -241,8 +238,6 @@
 ; stockfish/optimized/search.ll
 ; tokenizers-rs/optimized/2d3ht47jz0iets91.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
-; typst-rs/optimized/5z4no3nnr5v1s13.ll
-; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; velox/optimized/URLFunctions.cpp.ll
 ; verilator/optimized/V3Number.cpp.ll
 ; verilator/optimized/V3Width.cpp.ll
@@ -265,6 +260,10 @@
 ; yosys/optimized/firrtl.ll
 ; z3/optimized/bool_rewriter.cpp.ll
 ; z3/optimized/smt_context.cpp.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/2ojzflncem0fdggrmkj3zmz27.ll
+; zed-rs/optimized/c7xkpt7ryrhwv9v8woklewxya.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; zxing/optimized/DMHighLevelEncoder.cpp.ll
 ; zxing/optimized/PDFReader.cpp.ll

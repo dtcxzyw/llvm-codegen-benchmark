@@ -1,8 +1,11 @@
 
-; 78 occurrences:
+; 79 occurrences:
 ; assimp/optimized/SGSpatialSort.cpp.ll
 ; assimp/optimized/SpatialSort.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; faiss/optimized/IndexIVFFastScan.cpp.ll
 ; faiss/optimized/NNDescent.cpp.ll
 ; faiss/optimized/NSG.cpp.ll
@@ -63,7 +66,6 @@
 ; opencv/optimized/mser.cpp.ll
 ; opencv/optimized/quasi_dense_stereo.cpp.ll
 ; opencv/optimized/selectivesearchsegmentation.cpp.ll
-; opencv/optimized/sparse_matching_gpc.cpp.ll
 ; opencv/optimized/text_detector_swt.cpp.ll
 ; openexr/optimized/ImfScanLineInputFile.cpp.ll
 ; openexr/optimized/ImfTileOffsets.cpp.ll
@@ -75,7 +77,6 @@
 ; spike/optimized/processor.ll
 ; velox/optimized/MemoryPool.cpp.ll
 ; yosys/optimized/cxxrtl_backend.ll
-; yosys/optimized/mutate.ll
 ; yosys/optimized/xaiger.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
@@ -91,6 +92,20 @@ entry:
 
 ; 3 occurrences:
 ; hyperscan/optimized/fdr_compile.cpp.ll
+; opencv/optimized/sparse_matching_gpc.cpp.ll
+; yosys/optimized/mutate.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000019(i64 %0, ptr %1) #0 {
+entry:
+  %2 = getelementptr nusw nuw i8, ptr %1, i64 72
+  %3 = ptrtoint ptr %2 to i64
+  %4 = sub i64 %3, %0
+  %5 = sdiv exact i64 %4, 72
+  %6 = and i64 %5, 2147483647
+  ret i64 %6
+}
+
+; 2 occurrences:
 ; wireshark/optimized/manuf_dialog.cpp.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind

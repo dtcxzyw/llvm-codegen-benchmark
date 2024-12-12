@@ -1,6 +1,5 @@
 
-; 19 occurrences:
-; clamav/optimized/smallfn.cpp.ll
+; 18 occurrences:
 ; cmake/optimized/progress.c.ll
 ; curl/optimized/libcurl_la-progress.ll
 ; folly/optimized/Codel.cpp.ll

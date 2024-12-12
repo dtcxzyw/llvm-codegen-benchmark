@@ -12,9 +12,9 @@ func0000000000000001:                   # @func0000000000000001
 	retq
 func0000000000000004:                   # @func0000000000000004
 	testb	$1, %dil
-	cmoveq	%rdx, %rsi
-	testl	$-64, %esi
-	sete	%al
+	cmovnel	%esi, %edx
+	cmpl	$19, %edx
+	setb	%al
 	retq
 func000000000000000c:                   # @func000000000000000c
 	testb	$1, %dil

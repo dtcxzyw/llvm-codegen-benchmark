@@ -1,4 +1,4 @@
-func00000000000000ca:                   // @func00000000000000ca
+func00000000000000ce:                   // @func00000000000000ce
 // %bb.0:                               // %entry
 	lsl	w8, w1, #2
 	add	x8, x0, w8, sxtw

@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/TemplateBase.cpp.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000021(i8 %0, i8 %1, i8 %2) #0 {
+define i8 @func0000000000000041(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = or disjoint i8 %1, %2
   %4 = or i8 %3, 4

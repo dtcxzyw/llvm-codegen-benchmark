@@ -1,11 +1,11 @@
 
-; 509 occurrences:
+; 507 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/SimpSolver.cpp.ll
 ; abc/optimized/SimpSolver2.cpp.ll
-; abseil-cpp/optimized/cordz_info.cc.ll
 ; assimp/optimized/Assimp.cpp.ll
+; boost/optimized/get_turns_areal_areal.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
 ; ceres/optimized/block_jacobi_preconditioner.cc.ll
@@ -106,7 +106,6 @@
 ; draco/optimized/sequential_normal_attribute_decoder.cc.ll
 ; draco/optimized/sequential_normal_attribute_encoder.cc.ll
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll
-; eastl/optimized/EAFixedPoint.cpp.ll
 ; faiss/optimized/IndexBinaryIVF.cpp.ll
 ; faiss/optimized/IndexRowwiseMinMax.cpp.ll
 ; faiss/optimized/VectorTransform.cpp.ll
@@ -478,7 +477,6 @@
 ; postgres/optimized/mvdistinct.ll
 ; postgres/optimized/print.ll
 ; postgres/optimized/zic.ll
-; proj/optimized/io.cpp.ll
 ; qemu/optimized/audio_ossaudio.c.ll
 ; qemu/optimized/block_qcow2-cache.c.ll
 ; qemu/optimized/hw_virtio_vhost-vdpa.c.ll

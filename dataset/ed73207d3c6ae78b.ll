@@ -1,5 +1,5 @@
 
-; 46 occurrences:
+; 47 occurrences:
 ; abc/optimized/aigObj.c.ll
 ; abc/optimized/darLib.c.ll
 ; bullet3/optimized/btGImpactBvh.ll
@@ -46,6 +46,7 @@
 ; openvdb/optimized/VolumeAdvect.cc.ll
 ; openvdb/optimized/VolumeToMesh.cc.ll
 ; pbrt-v4/optimized/integrators.cpp.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define float @func0000000000000001(float %0, float %1, i64 %2) #0 {
 entry:
@@ -66,15 +67,24 @@ entry:
   ret float %4
 }
 
-; 4 occurrences:
+; 2 occurrences:
 ; gromacs/optimized/kernel_ref.cpp.ll
 ; opencv/optimized/hdr_common.cpp.ll
+; Function Attrs: nounwind
+define float @func0000000000000014(float %0, float %1, i64 %2) #0 {
+entry:
+  %3 = icmp samesign ult i64 %2, 2
+  %4 = select i1 %3, float %0, float %1
+  ret float %4
+}
+
+; 2 occurrences:
 ; openusd/optimized/drawModeAdapter.cpp.ll
 ; openusd/optimized/tetMesh.cpp.ll
 ; Function Attrs: nounwind
 define float @func0000000000000004(float %0, float %1, i64 %2) #0 {
 entry:
-  %3 = icmp ult i64 %2, 2
+  %3 = icmp ult i64 %2, 8
   %4 = select i1 %3, float %0, float %1
   ret float %4
 }
@@ -82,9 +92,9 @@ entry:
 ; 1 occurrences:
 ; opencv/optimized/fast_line_detector.cpp.ll
 ; Function Attrs: nounwind
-define float @func0000000000000008(float %0, float %1, i64 %2) #0 {
+define float @func0000000000000018(float %0, float %1, i64 %2) #0 {
 entry:
-  %3 = icmp ugt i64 %2, 4
+  %3 = icmp samesign ugt i64 %2, 4
   %4 = select i1 %3, float %0, float %1
   ret float %4
 }

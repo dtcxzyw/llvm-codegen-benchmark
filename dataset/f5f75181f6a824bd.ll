@@ -6,7 +6,6 @@
 ; libevent/optimized/bufferevent_ssl.c.ll
 ; lief/optimized/psa_crypto.c.ll
 ; lief/optimized/ssl_msg.c.ll
-; linux/optimized/8250_exar.ll
 ; linux/optimized/8250_pci.ll
 ; linux/optimized/blk-flush.ll
 ; linux/optimized/drm_dsc_helper.ll
@@ -28,9 +27,10 @@
 ; llvm/optimized/BitstreamReader.cpp.ll
 ; llvm/optimized/Decl.cpp.ll
 ; llvm/optimized/SemaDecl.cpp.ll
+; lvgl/optimized/lv_anim.ll
+; lvgl/optimized/lv_obj_draw.ll
+; lvgl/optimized/lv_span.ll
 ; minetest/optimized/CSkinnedMesh.cpp.ll
-; nuttx/optimized/pthread_mutexattr_setprotocol.c.ll
-; nuttx/optimized/pthread_mutexattr_settype.c.ll
 ; openssl/optimized/libcommon-lib-ciphercommon.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_ocb.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_wrp.ll
@@ -74,7 +74,7 @@ entry:
   ret i8 %4
 }
 
-; 80 occurrences:
+; 79 occurrences:
 ; abc/optimized/dauTree.c.ll
 ; arrow/optimized/base64.cpp.ll
 ; assimp/optimized/AMFImporter.cpp.ll
@@ -105,7 +105,6 @@ entry:
 ; linux/optimized/keyboard.ll
 ; linux/optimized/printk.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
-; linux/optimized/rpl.ll
 ; linux/optimized/scsi_error.ll
 ; linux/optimized/scsi_lib.ll
 ; linux/optimized/vt.ll
@@ -164,7 +163,7 @@ entry:
   ret i8 %4
 }
 
-; 13 occurrences:
+; 22 occurrences:
 ; cpython/optimized/obmalloc.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; linux/optimized/drm_dp_mst_topology.ll
@@ -178,6 +177,15 @@ entry:
 ; openjdk/optimized/hb-ot-shaper-arabic.ll
 ; sqlite/optimized/sqlite3.ll
 ; wasmtime-rs/optimized/5hz2o78ldf0tu4d.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/3xn4w3qarvbzl2jkwavm0419t.ll
+; zed-rs/optimized/44aelprz24fj87u8zy4gulao4.ll
+; zed-rs/optimized/4hgzf672qwd8x8ke1407yey6m.ll
+; zed-rs/optimized/6fx8r7geh2nz63rj1viqt1jgm.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/b5obgm1jv2r6om1k2jqcab9va.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; zed-rs/optimized/e4eesxeu4svsn7iv3jwk672g8.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000005(i8 %0, i8 %1) #0 {
 entry:

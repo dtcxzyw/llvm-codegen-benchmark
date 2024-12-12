@@ -71,18 +71,18 @@ entry:
 }
 
 ; 7 occurrences:
-; abc/optimized/bmcMaj.c.ll
 ; abseil-cpp/optimized/int128.cc.ll
 ; eastl/optimized/EAMemory.cpp.ll
 ; graphviz/optimized/graph_generator.c.ll
 ; libquic/optimized/curve25519.c.ll
 ; libquic/optimized/tls_cbc.c.ll
 ; libsodium/optimized/libsodium_la-ed25519_ref10.ll
+; lvgl/optimized/lv_tlsf.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %0, %1
-  %3 = add nsw i32 %2, -2
+  %3 = add nsw i32 %2, -1
   ret i32 %3
 }
 

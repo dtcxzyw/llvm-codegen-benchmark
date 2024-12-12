@@ -1,5 +1,5 @@
 func0000000000000001:                   # @func0000000000000001
-	testb	$2, %dl
+	testb	$4, %dl
 	sete	%al
 	andb	%sil, %al
 	orb	%dil, %al

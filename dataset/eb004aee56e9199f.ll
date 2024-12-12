@@ -156,13 +156,14 @@ entry:
 define i64 @func0000000000000003(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1095216660480
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = zext i32 %1 to i64
   %6 = or disjoint i64 %4, %5
   ret i64 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; linux/optimized/maple_tree.ll
 ; wasmtime-rs/optimized/37pex3k1sj15o95m.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i32 %1, i64 %2) #0 {
@@ -180,7 +181,7 @@ entry:
 define i64 @func0000000000000006(i64 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -256
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   %5 = zext nneg i32 %1 to i64
   %6 = or i64 %4, %5
   ret i64 %6

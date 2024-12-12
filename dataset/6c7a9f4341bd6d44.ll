@@ -124,4 +124,17 @@ entry:
   ret i64 %4
 }
 
+; 2 occurrences:
+; hyperscan/optimized/lbr.c.ll
+; hyperscan/optimized/nfa_api_dispatch.c.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000043(i64 %0) #0 {
+entry:
+  %1 = trunc nuw i64 %0 to i32
+  %2 = add i32 %1, -1
+  %3 = zext i32 %2 to i64
+  %4 = mul nuw nsw i64 %3, 24
+  ret i64 %4
+}
+
 attributes #0 = { nounwind }

@@ -1,19 +1,13 @@
 
-; 16 occurrences:
+; 10 occurrences:
 ; clamav/optimized/dlp.c.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
-; llvm/optimized/AttributorAttributes.cpp.ll
 ; llvm/optimized/Darwin.cpp.ll
-; llvm/optimized/InstructionSimplify.cpp.ll
-; llvm/optimized/LazyValueInfo.cpp.ll
-; llvm/optimized/ValueTracking.cpp.ll
 ; mitsuba3/optimized/plastic.cpp.ll
 ; mitsuba3/optimized/pplastic.cpp.ll
 ; mitsuba3/optimized/roughdielectric.cpp.ll
 ; mitsuba3/optimized/roughplastic.cpp.ll
 ; mitsuba3/optimized/thindielectric.cpp.ll
-; openjdk/optimized/verifier.ll
-; stockfish/optimized/search.ll
 ; wireshark/optimized/filter_dialog.cpp.ll
 ; z3/optimized/monomial_bounds.cpp.ll
 ; Function Attrs: nounwind
@@ -25,7 +19,9 @@ entry:
   ret i1 %5
 }
 
-; 49 occurrences:
+; 51 occurrences:
+; boost/optimized/area.ll
+; boost/optimized/sort_by_side.ll
 ; cvc5/optimized/core_solver.cpp.ll
 ; glslang/optimized/SpvBuilder.cpp.ll
 ; hwloc/optimized/distances.ll
@@ -80,7 +76,7 @@ define i1 @func0000000000000002(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = select i1 %1, i1 %3, i1 false
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
@@ -118,13 +114,19 @@ define i1 @func000000000000000c(i1 %0, i1 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %2, 2
   %4 = select i1 %1, i1 %3, i1 false
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 
-; 12 occurrences:
+; 18 occurrences:
 ; assimp/optimized/OptimizeMeshes.cpp.ll
-; linux/optimized/feat_ctl.ll
+; boost/optimized/get_turn_info.ll
+; boost/optimized/get_turns.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/get_turns_const.ll
+; boost/optimized/self_intersection_points.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
 ; linux/optimized/tg3.ll
 ; llvm/optimized/AsmPrinter.cpp.ll
 ; llvm/optimized/ExprConstant.cpp.ll
@@ -145,13 +147,24 @@ entry:
 }
 
 ; 1 occurrences:
+; stockfish/optimized/search.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000028(i1 %0, i1 %1, i32 %2) #0 {
+entry:
+  %3 = icmp samesign ult i32 %2, 31754
+  %4 = select i1 %1, i1 %3, i1 false
+  %5 = or i1 %0, %4
+  ret i1 %5
+}
+
+; 1 occurrences:
 ; llvm/optimized/ValueTracking.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000010(i1 %0, i1 %1, i32 %2) #0 {
+define i1 @func0000000000000030(i1 %0, i1 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, 63
+  %3 = icmp samesign ugt i32 %2, 63
   %4 = select i1 %1, i1 %3, i1 false
-  %5 = or i1 %4, %0
+  %5 = or i1 %0, %4
   ret i1 %5
 }
 

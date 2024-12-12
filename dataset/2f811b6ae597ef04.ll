@@ -13,8 +13,7 @@ entry:
   ret i64 %2
 }
 
-; 5 occurrences:
-; abc/optimized/fxuPair.c.ll
+; 4 occurrences:
 ; darktable/optimized/import.c.ll
 ; gromacs/optimized/nbnxmsetuphelpers.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
@@ -27,28 +26,6 @@ entry:
   ret i64 %2
 }
 
-; 13 occurrences:
-; hwloc/optimized/distances.ll
-; openblas/optimized/lapacke_dlarfb_work.c.ll
-; openblas/optimized/lapacke_dlarft_work.c.ll
-; openblas/optimized/lapacke_dopgtr_work.c.ll
-; openblas/optimized/lapacke_dspev_work.c.ll
-; openblas/optimized/lapacke_dspevd_work.c.ll
-; openblas/optimized/lapacke_dspgv_work.c.ll
-; openblas/optimized/lapacke_dspgvd_work.c.ll
-; openblas/optimized/lapacke_dsyswapr_work.c.ll
-; openblas/optimized/lapacke_dtfttr_work.c.ll
-; openblas/optimized/lapacke_dtpttr_work.c.ll
-; openblas/optimized/lapacke_dtrttf_work.c.ll
-; openblas/optimized/lapacke_dtrttp_work.c.ll
-; Function Attrs: nounwind
-define i64 @func000000000000000c(i64 %0) #0 {
-entry:
-  %1 = shl nuw nsw i64 %0, 3
-  %2 = mul i64 %1, %0
-  ret i64 %2
-}
-
 ; 2 occurrences:
 ; casadi/optimized/kinsol.c.ll
 ; sundials/optimized/kinsol.c.ll
@@ -56,6 +33,16 @@ entry:
 define i64 @func0000000000000000(i64 %0) #0 {
 entry:
   %1 = shl i64 %0, 3
+  %2 = mul i64 %1, %0
+  ret i64 %2
+}
+
+; 1 occurrences:
+; hwloc/optimized/distances.ll
+; Function Attrs: nounwind
+define i64 @func000000000000000c(i64 %0) #0 {
+entry:
+  %1 = shl nuw nsw i64 %0, 3
   %2 = mul i64 %1, %0
   ret i64 %2
 }

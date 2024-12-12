@@ -1,3 +1,10 @@
+func0000000000000004:                   # @func0000000000000004
+	movq	%rdi, %rax
+	xorl	%ecx, %ecx
+	cmpl	$1, %esi
+	sete	%cl
+	subq	%rcx, %rax
+	retq
 func0000000000000031:                   # @func0000000000000031
 	movq	%rdi, %rax
 	cmpl	$1, %esi
@@ -26,11 +33,6 @@ func0000000000000028:                   # @func0000000000000028
 	cmpl	$-4, %esi
 	setge	%cl
 	subq	%rcx, %rax
-	retq
-func0000000000000004:                   # @func0000000000000004
-	movq	%rdi, %rax
-	cmpl	$1, %esi
-	sbbq	$0, %rax
 	retq
 func0000000000000011:                   # @func0000000000000011
 	movq	%rdi, %rax

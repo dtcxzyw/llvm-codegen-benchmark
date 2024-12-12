@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; gromacs/optimized/gmx_velacc.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; meshlab/optimized/trackmode.cpp.ll
@@ -9,6 +9,7 @@
 ; pbrt-v4/optimized/shapes.cpp.ll
 ; raylib/optimized/rtext.c.ll
 ; stb/optimized/stb_truetype.c.ll
+; zed-rs/optimized/1j4zsx5ep6sgayh5fdkarbyql.ll
 ; Function Attrs: nounwind
 define float @func0000000000000000(float %0, float %1) #0 {
 entry:

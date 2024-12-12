@@ -5,7 +5,7 @@ func000000000000002c:                   # @func000000000000002c
 	subl	%eax, %esi
 	leaq	(%rsi,%rdi), %rax
 	retq
-func000000000000002e:                   # @func000000000000002e
+func000000000000002f:                   # @func000000000000002f
 	xorl	%eax, %eax
 	cmpb	$93, %dl
 	sete	%al
@@ -19,7 +19,7 @@ func0000000000000020:                   # @func0000000000000020
 	subl	%eax, %esi
 	leaq	(%rsi,%rdi), %rax
 	retq
-func0000000000000022:                   # @func0000000000000022
+func0000000000000023:                   # @func0000000000000023
 	xorl	%eax, %eax
 	cmpb	$40, %dl
 	sete	%al

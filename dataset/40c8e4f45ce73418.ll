@@ -20,4 +20,15 @@ entry:
   ret i64 %3
 }
 
+; 1 occurrences:
+; lvgl/optimized/lv_draw_sw_transform.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i32 %0) #0 {
+entry:
+  %1 = icmp samesign ult i32 %0, 128
+  %2 = select i1 %1, i32 -1, i32 1
+  %3 = sext i32 %2 to i64
+  ret i64 %3
+}
+
 attributes #0 = { nounwind }

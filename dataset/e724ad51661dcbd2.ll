@@ -18,27 +18,39 @@ entry:
   ret i32 %4
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
+; abc/optimized/giaIf.c.ll
+; abc/optimized/ifMap.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000014(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ult i32 %1, 7
+  %2 = icmp samesign ult i32 %1, 7
   %3 = select i1 %2, i32 1, i32 %0
   %4 = freeze i32 %3
   ret i32 %4
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; abc/optimized/bmcMaj3.c.ll
 ; abc/optimized/dauCanon.c.ll
 ; linux/optimized/hwdep.ll
-; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = icmp slt i32 %1, 7
+  %3 = select i1 %2, i32 1, i32 %0
+  %4 = freeze i32 %3
+  ret i32 %4
+}
+
+; 1 occurrences:
+; abc/optimized/amapPerm.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000004(i32 %0, i32 %1) #0 {
+entry:
+  %2 = icmp ult i32 %1, 100663296
   %3 = select i1 %2, i32 1, i32 %0
   %4 = freeze i32 %3
   ret i32 %4

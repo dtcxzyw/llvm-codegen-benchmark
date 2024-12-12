@@ -23,10 +23,3 @@ func0000000000000061:                   # @func0000000000000061
 	vnsrl.wi	v8, v10, 4
 	vadd.vi	v8, v8, 1
 	ret
-func000000000000006a:                   # @func000000000000006a
-	li	a0, 8
-	csrwi	vxrm, 2
-	vsetivli	zero, 4, e32, m1, ta, ma
-	vaaddu.vx	v8, v8, a0
-	vadd.vi	v8, v8, 3
-	ret

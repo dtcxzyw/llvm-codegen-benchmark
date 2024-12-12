@@ -19,10 +19,9 @@ entry:
   ret i64 %4
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; hermes/optimized/zip.c.ll
 ; icu/optimized/patternprops.ll
-; linux/optimized/sd.ll
 ; meshlab/optimized/filter_sketchfab.cpp.ll
 ; meshlab/optimized/miniz.c.ll
 ; postgres/optimized/tidbitmap.ll

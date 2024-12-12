@@ -1,7 +1,6 @@
 
-; 49 occurrences:
+; 50 occurrences:
 ; abc/optimized/dauNonDsd.c.ll
-; abc/optimized/mfsSat.c.ll
 ; abc/optimized/wlcBlast.c.ll
 ; cpython/optimized/ceval.ll
 ; cvc5/optimized/cardinality_extension.cpp.ll
@@ -49,6 +48,8 @@
 ; wireshark/optimized/osi-utils.c.ll
 ; wireshark/optimized/packet-kismet.c.ll
 ; wireshark/optimized/proto.c.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
@@ -82,7 +83,8 @@ entry:
   ret i64 %4
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; boost/optimized/area.ll
 ; lua/optimized/lstrlib.ll
 ; luau/optimized/lstrlib.cpp.ll
 ; openblas/optimized/dsbgst.c.ll
@@ -97,7 +99,7 @@ entry:
   ret i64 %4
 }
 
-; 51 occurrences:
+; 50 occurrences:
 ; abc/optimized/ioReadBench.c.ll
 ; abc/optimized/sclLiberty.c.ll
 ; arrow/optimized/array_dict.cc.ll
@@ -112,7 +114,6 @@ entry:
 ; git/optimized/sequencer.ll
 ; git/optimized/tree-walk.ll
 ; git/optimized/unpack-trees.ll
-; git/optimized/worktree.ll
 ; gromacs/optimized/updategroups.cpp.ll
 ; icu/optimized/gencnval.ll
 ; icu/optimized/package.ll

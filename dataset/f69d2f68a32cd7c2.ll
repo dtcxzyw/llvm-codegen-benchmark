@@ -1,5 +1,5 @@
 
-; 272 occurrences:
+; 267 occurrences:
 ; abc/optimized/bzlib.c.ll
 ; abc/optimized/cuddUtil.c.ll
 ; abc/optimized/gzread.c.ll
@@ -61,7 +61,6 @@
 ; hermes/optimized/CFG.cpp.ll
 ; hwloc/optimized/topology-linux.ll
 ; hyperscan/optimized/runtime.c.ll
-; icu/optimized/cmemory.ll
 ; icu/optimized/locdspnm.ll
 ; icu/optimized/rbbidata.ll
 ; icu/optimized/rulebasedcollator.ll
@@ -98,12 +97,10 @@
 ; lief/optimized/cmac.c.ll
 ; lief/optimized/ssl_tls.c.ll
 ; lief/optimized/x509_csr.c.ll
-; linux/optimized/device.ll
 ; linux/optimized/drm_edid.ll
 ; linux/optimized/maple_tree.ll
 ; linux/optimized/tcp_ipv4.ll
 ; linux/optimized/tcp_ipv6.ll
-; linux/optimized/utxface.ll
 ; llvm/optimized/Clang.cpp.ll
 ; llvm/optimized/CodeMoverUtils.cpp.ll
 ; llvm/optimized/Dominators.cpp.ll
@@ -114,6 +111,8 @@
 ; llvm/optimized/SemaExprMember.cpp.ll
 ; lodepng/optimized/lodepng.cpp.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_obj_style.ll
+; lvgl/optimized/lv_obj_tree.ll
 ; meshlab/optimized/filter_unsharp.cpp.ll
 ; mimalloc/optimized/options.c.ll
 ; miniaudio/optimized/unity.c.ll
@@ -123,7 +122,6 @@
 ; node/optimized/libnode.js_native_api_v8.ll
 ; node/optimized/uv-common.ll
 ; nuklear/optimized/unity.c.ll
-; nuttx/optimized/pthread_attr_setstack.c.ll
 ; nuttx/optimized/wd_start.c.ll
 ; ocio/optimized/ImageDesc.cpp.ll
 ; opencv/optimized/freetype.cpp.ll
@@ -176,7 +174,6 @@
 ; openssl/optimized/afalg-dso-e_afalg.ll
 ; openssl/optimized/cmp_client_test-bin-cmp_mock_srv.ll
 ; openssl/optimized/libcrypto-lib-aria.ll
-; openssl/optimized/libcrypto-lib-crmf_pbm.ll
 ; openssl/optimized/libcrypto-lib-decoder_lib.ll
 ; openssl/optimized/libcrypto-lib-e_aes.ll
 ; openssl/optimized/libcrypto-lib-ec_key.ll
@@ -192,7 +189,6 @@
 ; openssl/optimized/libcrypto-lib-v3_addr.ll
 ; openssl/optimized/libcrypto-lib-v3_sxnet.ll
 ; openssl/optimized/libcrypto-shlib-aria.ll
-; openssl/optimized/libcrypto-shlib-crmf_pbm.ll
 ; openssl/optimized/libcrypto-shlib-decoder_lib.ll
 ; openssl/optimized/libcrypto-shlib-e_aes.ll
 ; openssl/optimized/libcrypto-shlib-ec_key.ll
@@ -217,6 +213,7 @@
 ; openssl/optimized/libssl-shlib-ssl_ciph.ll
 ; openssl/optimized/libssl-shlib-ssl_lib.ll
 ; openssl/optimized/libssl-shlib-ssl_rsa.ll
+; openssl/optimized/libtestutil-lib-format_output.ll
 ; openssl/optimized/openssl-bin-cmp_mock_srv.ll
 ; openssl/optimized/sslapitest-bin-tls-provider.ll
 ; openusd/optimized/OpenEXRImage.cpp.ll
@@ -228,7 +225,6 @@
 ; php/optimized/pcre2_serialize.ll
 ; postgres/optimized/prepunion.ll
 ; postgres/optimized/spi.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; qoi/optimized/qoi.ll
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rtextures.c.ll
@@ -248,7 +244,6 @@
 ; wireshark/optimized/packet-signal-pdu.c.ll
 ; wireshark/optimized/packet-someip.c.ll
 ; wireshark/optimized/packet-uds.c.ll
-; wireshark/optimized/plugin_if.c.ll
 ; wolfssl/optimized/aes.c.ll
 ; wolfssl/optimized/asn.c.ll
 ; wolfssl/optimized/chacha.c.ll
@@ -273,7 +268,7 @@
 ; zstd/optimized/divsufsort.c.ll
 ; zstd/optimized/zstdmt_compress.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000084(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp eq ptr %1, null
@@ -282,7 +277,7 @@ entry:
   ret i1 %6
 }
 
-; 46 occurrences:
+; 45 occurrences:
 ; abc/optimized/abcTiming.c.ll
 ; clamav/optimized/pdfng.c.ll
 ; cmake/optimized/cmSystemTools.cxx.ll
@@ -318,7 +313,6 @@ entry:
 ; osqp/optimized/qdldl_interface.c.ll
 ; php/optimized/zend_alloc.ll
 ; postgres/optimized/command.ll
-; proj/optimized/crs.cpp.ll
 ; proj/optimized/topocentric.cpp.ll
 ; proxygen/optimized/HTTPPriorityFunctions.cpp.ll
 ; qemu/optimized/util_aio-posix.c.ll
@@ -330,39 +324,41 @@ entry:
 ; slurm/optimized/data_parser_v0_0_41_la-parsers.ll
 ; slurm/optimized/gres.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000330(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000630(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp ne ptr %1, null
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
-; 4 occurrences:
+; 6 occurrences:
 ; cpython/optimized/pegen.ll
 ; llvm/optimized/Operator.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; qemu/optimized/net_socket.c.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000070(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func00000000000000b0(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp ne ptr %1, null
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_catalog_entries.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000304(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000604(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp eq ptr %1, null
   %5 = or i1 %4, %3
-  %6 = or i1 %5, %0
+  %6 = or i1 %0, %5
   ret i1 %6
 }
 

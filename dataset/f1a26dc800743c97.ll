@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; stockfish/optimized/tbprobe.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000401(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000801(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = trunc i64 %0 to i32
@@ -19,7 +19,7 @@ entry:
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000938(i64 %0, i64 %1) #0 {
+define i1 @func0000000000001268(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, 2
@@ -58,7 +58,7 @@ entry:
 ; 1 occurrences:
 ; openblas/optimized/dhgeqz.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000501(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000a01(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = trunc i64 %0 to i32
@@ -69,7 +69,7 @@ entry:
 ; 1 occurrences:
 ; openblas/optimized/dlasrt.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000506(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000a06(i64 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
   %3 = add i32 %2, -1

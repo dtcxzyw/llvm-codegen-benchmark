@@ -7,7 +7,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add nsw i64 %3, -1
   %5 = mul nuw nsw i64 %4, %1
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -22,7 +22,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add nsw i64 %3, -1
   %5 = mul nsw i64 %4, %1
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -33,7 +33,7 @@ define i64 @func0000000000000010(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = add nsw i64 %3, -1
-  %5 = mul i64 %4, %1
+  %5 = mul i64 %1, %4
   %6 = add i64 %5, %0
   ret i64 %6
 }
@@ -50,9 +50,8 @@ entry:
   ret i64 %6
 }
 
-; 4 occurrences:
+; 3 occurrences:
 ; darktable/optimized/ArwDecoder.cpp.ll
-; darktable/optimized/JpegDecompressor.cpp.ll
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
 ; darktable/optimized/VC5Decompressor.cpp.ll
 ; Function Attrs: nounwind
@@ -100,7 +99,7 @@ define i64 @func000000000000003c(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
   %4 = add nuw nsw i64 %3, 1
-  %5 = mul nuw nsw i64 %4, %1
+  %5 = mul nuw nsw i64 %1, %4
   %6 = add i64 %5, %0
   ret i64 %6
 }
@@ -113,8 +112,8 @@ define i64 @func0000000000000050(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add nsw i64 %3, -1
-  %5 = mul i64 %4, %1
-  %6 = add i64 %5, %0
+  %5 = mul i64 %1, %4
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -126,7 +125,7 @@ entry:
   %3 = zext nneg i32 %2 to i64
   %4 = add nsw i64 %3, -2
   %5 = mul nsw i64 %4, %1
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -138,7 +137,7 @@ entry:
   %3 = zext i32 %2 to i64
   %4 = add nsw i64 %3, -1
   %5 = mul nsw i64 %4, %1
-  %6 = add nsw i64 %5, %0
+  %6 = add nsw i64 %0, %5
   ret i64 %6
 }
 

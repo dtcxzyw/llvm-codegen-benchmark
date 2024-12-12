@@ -1,4 +1,4 @@
-func0000000000000018:                   # @func0000000000000018
+func0000000000000028:                   # @func0000000000000028
 	decq	%rdi
 	movabsq	$-9223372036854775808, %rax     # imm = 0x8000000000000000
 	leaq	63(%rax), %rcx
@@ -18,19 +18,17 @@ func0000000000000008:                   # @func0000000000000008
 	setbe	%dl
 	leaq	-8(,%rdx,8), %rax
 	retq
-func0000000000000001:                   # @func0000000000000001
-	movabsq	$4294967296, %rcx               # imm = 0x100000000
-	addq	%rdi, %rcx
-	movabsq	$30064771072, %rdx              # imm = 0x700000000
-	xorl	%eax, %eax
-	testq	%rdx, %rcx
-	setne	%al
-	shll	$3, %eax
-	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	addq	$-4, %rdi
 	andq	$-5, %rdi
 	xorl	%eax, %eax
 	cmpq	$1, %rdi
 	adcq	$3, %rax
+	retq
+func0000000000000001:                   # @func0000000000000001
+	negl	%edi
+	xorl	%eax, %eax
+	testb	$63, %dil
+	setne	%al
+	leaq	-8(,%rax,8), %rax
 	retq

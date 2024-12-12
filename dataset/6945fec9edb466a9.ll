@@ -1,7 +1,4 @@
 
-%class.G1MMUTrackerElem.2618957 = type { double, double }
-%struct.ata_ering_entry.3366039 = type { i32, i32, i64 }
-
 ; 9 occurrences:
 ; cmake/optimized/progress.c.ll
 ; curl/optimized/libcurl_la-progress.ll
@@ -13,24 +10,26 @@
 ; openjdk/optimized/g1MMUTracker.ll
 ; redis/optimized/latency.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i32 %1) #0 {
+define ptr @func000000000000003b(ptr %0, i32 %1) #0 {
 entry:
   %2 = srem i32 %1, 64
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 16
-  %5 = getelementptr [64 x %class.G1MMUTrackerElem.2618957], ptr %4, i64 0, i64 %3, i32 1
+  %.idx = shl nsw i64 %3, 4
+  %4 = getelementptr i8, ptr %0, i64 24
+  %5 = getelementptr i8, ptr %4, i64 %.idx
   ret ptr %5
 }
 
 ; 1 occurrences:
 ; linux/optimized/libata-eh.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000022(ptr %0, i32 %1) #0 {
+define ptr @func0000000000000033(ptr %0, i32 %1) #0 {
 entry:
   %2 = srem i32 %1, 32
   %3 = sext i32 %2 to i64
-  %4 = getelementptr nusw i8, ptr %0, i64 2056
-  %5 = getelementptr [32 x %struct.ata_ering_entry.3366039], ptr %4, i64 0, i64 %3, i32 1
+  %.idx = shl nsw i64 %3, 4
+  %4 = getelementptr i8, ptr %0, i64 2060
+  %5 = getelementptr i8, ptr %4, i64 %.idx
   ret ptr %5
 }
 

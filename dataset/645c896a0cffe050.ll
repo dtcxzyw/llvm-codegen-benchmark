@@ -1,5 +1,6 @@
 
 ; 20 occurrences:
+; boost/optimized/matches_relation_factory.ll
 ; libphonenumber/optimized/phonemetadata.pb.cc.ll
 ; linux/optimized/pcmcia_resource.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -19,7 +20,6 @@
 ; yalantinglibs/optimized/test_messages_proto2.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.pb.cc.ll
 ; yalantinglibs/optimized/test_messages_proto3.struct_pb.cc.ll
-; yosys/optimized/lz4.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i64 %0, i64 %1, i32 %2) #0 {
 entry:
@@ -29,8 +29,11 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
+; 8 occurrences:
+; lightgbm/optimized/bin.cpp.ll
+; lightgbm/optimized/metadata.cpp.ll
 ; node/optimized/libnode.node_buffer.ll
+; openjdk/optimized/superword.ll
 ; php/optimized/softmagic.ll
 ; postgres/optimized/pg_shmem.ll
 ; regex-rs/optimized/10eccrragw6uslmk.ll
@@ -38,9 +41,9 @@ entry:
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i64 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = icmp eq i32 %2, 0
+  %3 = icmp eq i32 %2, 5
   %4 = select i1 %3, i64 %0, i64 %1
-  %5 = add nsw i64 %4, -1
+  %5 = add nsw i64 %4, 1
   ret i64 %5
 }
 
@@ -49,9 +52,9 @@ entry:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; duckdb/optimized/ub_duckdb_func_string.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000020(i64 %0, i64 %1, i32 %2) #0 {
+define i64 @func0000000000000060(i64 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ugt i32 %2, 999
+  %3 = icmp samesign ugt i32 %2, 999
   %4 = select i1 %3, i64 %0, i64 %1
   %5 = add i64 %4, 1
   ret i64 %5
@@ -60,9 +63,9 @@ entry:
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000011(i64 %0, i64 %1, i32 %2) #0 {
+define i64 @func0000000000000051(i64 %0, i64 %1, i32 %2) #0 {
 entry:
-  %3 = icmp ult i32 %2, 60
+  %3 = icmp samesign ult i32 %2, 60
   %4 = select i1 %3, i64 %0, i64 %1
   %5 = add nsw i64 %4, 3
   ret i64 %5

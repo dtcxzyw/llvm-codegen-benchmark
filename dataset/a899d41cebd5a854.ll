@@ -31,7 +31,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 3
   %5 = trunc i64 %4 to i32
-  %6 = mul nsw i32 %5, %0
+  %6 = mul nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -48,11 +48,11 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr i64 %3, 3
   %5 = trunc i64 %4 to i32
-  %6 = mul nsw i32 %5, %0
+  %6 = mul nsw i32 %0, %5
   ret i32 %6
 }
 
-; 47 occurrences:
+; 46 occurrences:
 ; gromacs/optimized/pull.cpp.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
@@ -68,7 +68,6 @@ entry:
 ; llvm/optimized/MachineVerifier.cpp.ll
 ; llvm/optimized/PrologEpilogInserter.cpp.ll
 ; llvm/optimized/RISCVFrameLowering.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInstrInfo.cpp.ll
 ; llvm/optimized/RISCVRegisterInfo.cpp.ll
 ; llvm/optimized/RegAllocFast.cpp.ll
@@ -106,7 +105,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr exact i64 %3, 5
   %5 = trunc i64 %4 to i32
-  %6 = mul i32 %5, %0
+  %6 = mul i32 %0, %5
   ret i32 %6
 }
 
@@ -118,7 +117,7 @@ entry:
   %3 = sub i64 %1, %2
   %4 = lshr i64 %3, 2
   %5 = trunc i64 %4 to i32
-  %6 = mul nuw nsw i32 %5, %0
+  %6 = mul nuw nsw i32 %0, %5
   ret i32 %6
 }
 

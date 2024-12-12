@@ -1,4 +1,4 @@
-func0000000000000288:                   # @func0000000000000288
+func0000000000000908:                   # @func0000000000000908
 	andb	$1, %dil
 	xorl	%eax, %eax
 	cmpb	$1, %dil
@@ -11,7 +11,7 @@ func0000000000000288:                   # @func0000000000000288
 	setb	%al
 	orb	%cl, %al
 	retq
-func0000000000000088:                   # @func0000000000000088
+func0000000000000108:                   # @func0000000000000108
 	andb	$1, %dil
 	xorl	%eax, %eax
 	cmpb	$1, %dil

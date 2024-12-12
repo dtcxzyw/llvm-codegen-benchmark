@@ -196,17 +196,17 @@
 ; redis/optimized/ckh.sym.ll
 ; redis/optimized/hyperloglog.ll
 ; rocksdb/optimized/xxhash.cc.ll
-; ruby/optimized/bignum.ll
 ; stb/optimized/stb_ds.c.ll
 ; velox/optimized/AsyncDataCache.cpp.ll
 ; velox/optimized/Counters.cpp.ll
 ; velox/optimized/MemoryArbitrator.cpp.ll
 ; velox/optimized/SpillStats.cpp.ll
 ; wolfssl/optimized/sp_int.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0) #0 {
 entry:
-  %1 = mul i64 %0, 6
+  %1 = mul i64 %0, -4417276706812531889
   %2 = xor i64 %1, -1
   ret i64 %2
 }

@@ -78,7 +78,7 @@
 define i32 @func0000000000000000(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = shl i32 %3, 3
   ret i32 %4
 }
@@ -103,7 +103,7 @@ entry:
 define i32 @func0000000000000030(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = shl i32 %3, 4
   ret i32 %4
 }
@@ -121,8 +121,19 @@ entry:
 define i32 @func0000000000000020(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = shl i32 %3, 1
+  ret i32 %4
+}
+
+; 1 occurrences:
+; qemu/optimized/target_riscv_pmp.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000033(i32 %0, i64 %1) #0 {
+entry:
+  %2 = trunc nuw nsw i64 %1 to i32
+  %3 = add i32 %0, %2
+  %4 = shl nuw nsw i32 %3, 4
   ret i32 %4
 }
 
@@ -135,7 +146,7 @@ entry:
 define i32 @func0000000000000004(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = shl i32 %3, 15
   ret i32 %4
 }
@@ -146,7 +157,7 @@ entry:
 define i32 @func0000000000000024(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = shl i32 %3, 15
   ret i32 %4
 }
@@ -170,7 +181,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = shl nsw i32 %3, 2
   ret i32 %4
 }
@@ -181,7 +192,7 @@ entry:
 define i32 @func0000000000000010(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = shl i32 %3, 1
   ret i32 %4
 }
@@ -196,12 +207,12 @@ entry:
 define i32 @func0000000000000031(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = shl nsw i32 %3, 2
   ret i32 %4
 }
 
-; 12 occurrences:
+; 11 occurrences:
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
@@ -212,24 +223,24 @@ entry:
 ; hermes/optimized/APFloat.cpp.ll
 ; llvm/optimized/APFloat.cpp.ll
 ; opencv/optimized/omnidir.cpp.ll
-; openspiel/optimized/2048.cc.ll
 ; openspiel/optimized/coop_box_pushing.cc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = shl nsw i32 %3, 7
   ret i32 %4
 }
 
-; 18 occurrences:
+; 19 occurrences:
 ; abc/optimized/bmcICheck.c.ll
 ; abc/optimized/extraUtilPath.c.ll
 ; abc/optimized/giaFalse.c.ll
 ; abc/optimized/giaQbf.c.ll
 ; abc/optimized/giaResub.c.ll
 ; abseil-cpp/optimized/numbers.cc.ll
+; boost/optimized/to_chars.ll
 ; gromacs/optimized/atomdata.cpp.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -246,7 +257,7 @@ entry:
 define i32 @func0000000000000035(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = shl nsw i32 %3, 1
   ret i32 %4
 }
@@ -259,7 +270,7 @@ entry:
 define i32 @func0000000000000034(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = shl i32 %3, 1
   ret i32 %4
 }
@@ -276,7 +287,7 @@ entry:
 define i32 @func000000000000003f(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = shl nuw nsw i32 %3, 1
   ret i32 %4
 }
@@ -289,7 +300,7 @@ entry:
 define i32 @func0000000000000015(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = shl nsw i32 %3, 1
   ret i32 %4
 }
@@ -300,7 +311,7 @@ entry:
 define i32 @func0000000000000002(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = shl nuw i32 %3, 24
   ret i32 %4
 }
@@ -312,19 +323,8 @@ entry:
 define i32 @func0000000000000007(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = shl nuw nsw i32 %3, 1
-  ret i32 %4
-}
-
-; 1 occurrences:
-; wasmtime-rs/optimized/2niyyz8nbah1jl4k.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000a(i32 %0, i64 %1) #0 {
-entry:
-  %2 = trunc i64 %1 to i32
-  %3 = add nuw i32 %2, %0
-  %4 = shl nuw i32 %3, 2
   ret i32 %4
 }
 
@@ -335,7 +335,7 @@ entry:
 define i32 @func000000000000001c(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = shl i32 %3, 16
   ret i32 %4
 }
@@ -346,7 +346,7 @@ entry:
 define i32 @func000000000000002f(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = shl nuw nsw i32 %3, 1
   ret i32 %4
 }
@@ -357,7 +357,7 @@ entry:
 define i32 @func000000000000000f(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = shl nuw nsw i32 %3, 1
   ret i32 %4
 }
@@ -368,7 +368,7 @@ entry:
 define i32 @func000000000000003d(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = shl nsw i32 %3, 4
   ret i32 %4
 }
@@ -379,7 +379,7 @@ entry:
 define i32 @func000000000000000d(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc i64 %1 to i32
-  %3 = add nuw nsw i32 %2, %0
+  %3 = add nuw nsw i32 %0, %2
   %4 = shl nsw i32 %3, 4
   ret i32 %4
 }
@@ -390,7 +390,7 @@ entry:
 define i32 @func0000000000000014(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nsw i64 %1 to i32
-  %3 = add nsw i32 %2, %0
+  %3 = add nsw i32 %0, %2
   %4 = shl i32 %3, 2
   ret i32 %4
 }

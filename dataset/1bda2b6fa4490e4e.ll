@@ -31,7 +31,7 @@
 ; rustfmt-rs/optimized/4arc02n7xt9gqo2v.ll
 ; rustfmt-rs/optimized/4ext43viwbyeinhu.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, 0
   %4 = sub i64 %0, %1
@@ -40,26 +40,11 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
-; hermes/optimized/IdentifierTable.cpp.ll
-; llvm/optimized/InstrInfoEmitter.cpp.ll
-; llvm/optimized/MachineOperand.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000108(i64 %0, i64 %1, i32 %2) #0 {
-entry:
-  %3 = icmp ult i32 %2, 268435456
-  %4 = select i1 %3, i64 9, i64 13
-  %5 = sub i64 %0, %1
-  %6 = icmp ugt i64 %4, %5
-  ret i1 %6
-}
-
-; 3 occurrences:
+; 2 occurrences:
 ; llvm/optimized/ASTDiagnostic.cpp.ll
-; llvm/optimized/MallocChecker.cpp.ll
 ; llvm/optimized/Mangle.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000208(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000408(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %2, 1
   %4 = select i1 %3, i64 6, i64 5
@@ -68,10 +53,37 @@ entry:
   ret i1 %6
 }
 
+; 2 occurrences:
+; llvm/optimized/InstrInfoEmitter.cpp.ll
+; llvm/optimized/MachineOperand.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000208(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = icmp ult i32 %2, 10
+  %4 = select i1 %3, i64 3, i64 5
+  %5 = sub i64 %0, %1
+  %6 = icmp ugt i64 %4, %5
+  ret i1 %6
+}
+
+; 3 occurrences:
+; zed-rs/optimized/44bj4n5407vag46bun63mwelh.ll
+; zed-rs/optimized/8epszlr2612bvdrsn7g83nprl.ll
+; zed-rs/optimized/8wvy5aljfw2qmbxbtkkewwal7.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000c8(i64 %0, i64 %1, i32 %2) #0 {
+entry:
+  %3 = icmp eq i32 %2, 134695760
+  %4 = select i1 %3, i64 16, i64 12
+  %5 = sub nuw i64 %0, %1
+  %6 = icmp ugt i64 %4, %5
+  ret i1 %6
+}
+
 ; 1 occurrences:
 ; linux/optimized/tree.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000206(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000406(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp ugt i32 %2, 506
   %4 = select i1 %3, i64 1, i64 5000

@@ -3,7 +3,7 @@
 ; openexr/optimized/internal_dwa.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000081(i8 %0, i8 %1) #0 {
+define i32 @func0000000000000101(i8 %0, i8 %1) #0 {
 entry:
   %2 = icmp ugt i8 %1, 2
   %3 = icmp eq i8 %0, 12

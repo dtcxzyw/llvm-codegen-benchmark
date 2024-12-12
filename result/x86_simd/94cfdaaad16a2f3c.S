@@ -15,6 +15,6 @@ func0000000000000005:                   # @func0000000000000005
 	vpsubw	%ymm1, %ymm0, %ymm0
 	retq
 func000000000000000c:                   # @func000000000000000c
-	vpsllw	$8, %ymm1, %ymm1
+	vpaddw	%ymm1, %ymm1, %ymm1
 	vpsubw	%ymm1, %ymm0, %ymm0
 	retq

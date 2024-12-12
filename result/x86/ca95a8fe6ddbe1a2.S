@@ -3,5 +3,5 @@ func0000000000000000:                   # @func0000000000000000
 	imulq	%rdi, %rax
 	retq
 func0000000000000002:                   # @func0000000000000002
-	imulq	$104, %rdi, %rax
+	imulq	$208, %rdi, %rax
 	retq

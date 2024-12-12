@@ -1,5 +1,5 @@
 
-; 120 occurrences:
+; 114 occurrences:
 ; abc/optimized/wlcGraft.c.ll
 ; arrow/optimized/fast-dtoa.cc.ll
 ; arrow/optimized/strtod.cc.ll
@@ -36,8 +36,6 @@
 ; nix/optimized/ls.ll
 ; nix/optimized/make-content-addressed.ll
 ; nix/optimized/nar-info.ll
-; nix/optimized/nix-build.ll
-; nix/optimized/nix-env.ll
 ; nix/optimized/path-info.ll
 ; nix/optimized/prefetch.ll
 ; nix/optimized/profile.ll
@@ -102,8 +100,6 @@
 ; php/optimized/dtoa.ll
 ; php/optimized/strtod.ll
 ; qemu/optimized/fpu_softfloat.c.ll
-; qemu/optimized/source_s_approxRecip32_1.c.ll
-; qemu/optimized/source_s_approxRecipSqrt32_1.c.ll
 ; redis/optimized/fpconv_dtoa.ll
 ; rocksdb/optimized/blob_file_cache.cc.ll
 ; rocksdb/optimized/block_cache_tracer.cc.ll
@@ -116,8 +112,6 @@
 ; simdjson/optimized/simdjson.cpp.ll
 ; spike/optimized/f128_sqrt.ll
 ; spike/optimized/f64_div.ll
-; spike/optimized/s_approxRecip32_1.ll
-; spike/optimized/s_approxRecipSqrt32_1.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; xgboost/optimized/charconv.cc.ll
 ; Function Attrs: nounwind

@@ -21,7 +21,6 @@
 ; linux/optimized/resize.ll
 ; linux/optimized/sd.ll
 ; llvm/optimized/NeonEmitter.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVInsertVSETVLI.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/COpenGLDriver.cpp.ll
@@ -31,7 +30,6 @@
 ; nori/optimized/nanovg.c.ll
 ; ocio/optimized/FileFormatResolveCube.cpp.ll
 ; oiio/optimized/tiffinput.cpp.ll
-; openblas/optimized/dgesdd.c.ll
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
 ; opencv/optimized/ann_mlp.cpp.ll
@@ -73,6 +71,8 @@
 ; tree-sitter-rs/optimized/2fq1z2kxn3lpndsy.ll
 ; wireshark/optimized/packet-mswsp.c.ll
 ; wireshark/optimized/qcustomplot.cpp.ll
+; zed-rs/optimized/47dhsg4crd0e549rnj4wgynqw.ll
+; zed-rs/optimized/9zd8wd1s2fxo541ze2ot3j12x.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i1 %1, i32 %2) #0 {
 entry:
@@ -81,7 +81,8 @@ entry:
   ret i32 %4
 }
 
-; 30 occurrences:
+; 31 occurrences:
+; abc/optimized/wlcNtk.c.ll
 ; graphviz/optimized/graph_generator.c.ll
 ; gromacs/optimized/gmx_hbond.cpp.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
@@ -120,10 +121,12 @@ entry:
   ret i32 %4
 }
 
-; 66 occurrences:
+; 68 occurrences:
 ; abc/optimized/dsc.c.ll
 ; abc/optimized/ifTune.c.ll
 ; abc/optimized/utilNam.c.ll
+; boost/optimized/difference_pl_l.ll
+; boost/optimized/intersection_pl_l.ll
 ; darktable/optimized/SonyArw1Decompressor.cpp.ll
 ; graphviz/optimized/legal.c.ll
 ; graphviz/optimized/visibility.c.ll
@@ -133,6 +136,7 @@ entry:
 ; imgui/optimized/imgui_draw.cpp.ll
 ; libwebp/optimized/vp8l_enc.c.ll
 ; llvm/optimized/Inliner.cpp.ll
+; lvgl/optimized/lv_theme_default.ll
 ; meshlab/optimized/alignset.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -175,7 +179,6 @@ entry:
 ; quantlib/optimized/tcopulapolicy.ll
 ; recastnavigation/optimized/RecastMeshDetail.cpp.ll
 ; stb/optimized/stb_herringbone_wang_tile.c.ll
-; stb/optimized/stb_hexwave.c.ll
 ; stb/optimized/stb_image.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; yosys/optimized/mem.ll

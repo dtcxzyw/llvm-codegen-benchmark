@@ -9,7 +9,7 @@ func000000000000001e:                   # @func000000000000001e
 	vpandd	.LCPI0_0(%rip){1to4}, %xmm1, %xmm1
 	vpbroadcastd	.LCPI0_1(%rip), %xmm2   # xmm2 = [1,1,1,1]
 	vpsllvd	%xmm1, %xmm2, %xmm1
-	vpand	%xmm0, %xmm1, %xmm0
+	vpand	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI1_0:
@@ -24,7 +24,7 @@ func000000000000001a:                   # @func000000000000001a
 	vpandd	.LCPI1_1(%rip){1to4}, %xmm1, %xmm1
 	vpbroadcastd	.LCPI1_2(%rip), %xmm2   # xmm2 = [1,1,1,1]
 	vpsllvd	%xmm1, %xmm2, %xmm1
-	vpand	%xmm0, %xmm1, %xmm0
+	vpand	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI2_0:
@@ -38,7 +38,7 @@ func0000000000000012:                   # @func0000000000000012
 	vpandd	.LCPI2_0(%rip){1to4}, %xmm1, %xmm1
 	vpbroadcastd	.LCPI2_1(%rip), %xmm2   # xmm2 = [1,1,1,1]
 	vpsllvd	%xmm1, %xmm2, %xmm1
-	vpand	%xmm0, %xmm1, %xmm0
+	vpand	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI3_0:
@@ -63,6 +63,6 @@ func0000000000000009:                   # @func0000000000000009
 	vpsubd	%xmm2, %xmm1, %xmm1
 	vpandd	.LCPI4_0(%rip){1to4}, %xmm1, %xmm1
 	vpsllvd	%xmm1, %xmm2, %xmm1
-	vpand	%xmm0, %xmm1, %xmm0
+	vpand	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq

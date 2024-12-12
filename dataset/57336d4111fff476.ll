@@ -9,12 +9,12 @@
 ; raylib/optimized/raudio.c.ll
 ; sentencepiece/optimized/extension_set.cc.ll
 ; wasmtime-rs/optimized/18flldcd4wnig7ks.ll
-; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
 ; yoga/optimized/CalculateLayout.cpp.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000021(i32 %0, i32 %1, ptr %2) #0 {
+define ptr @func0000000000000061(i32 %0, i32 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 464
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 464
   %4 = icmp eq i32 %0, %1
   %5 = select i1 %4, ptr %3, ptr null
   ret ptr %5
@@ -25,10 +25,21 @@ entry:
 ; bullet3/optimized/btConvexHullComputer.ll
 ; linux/optimized/mlme.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000026(i32 %0, i32 %1, ptr %2) #0 {
+define ptr @func0000000000000066(i32 %0, i32 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 48
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 48
   %4 = icmp slt i32 %0, %1
+  %5 = select i1 %4, ptr %3, ptr null
+  ret ptr %5
+}
+
+; 1 occurrences:
+; wasmtime-rs/optimized/4ab4rlryc5h7bf6z.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000041(i32 %0, i32 %1, ptr %2) #0 {
+entry:
+  %3 = getelementptr nusw i8, ptr %2, i64 -16
+  %4 = icmp eq i32 %0, %1
   %5 = select i1 %4, ptr %3, ptr null
   ret ptr %5
 }
@@ -40,9 +51,9 @@ entry:
 ; ockam-rs/optimized/4df8gyzy0u3roc94.ll
 ; ockam-rs/optimized/4i4les6ijtr4jgtl.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000024(i32 %0, i32 %1, ptr %2) #0 {
+define ptr @func0000000000000064(i32 %0, i32 %1, ptr %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %2, i64 688
+  %3 = getelementptr nusw nuw i8, ptr %2, i64 688
   %4 = icmp ult i32 %0, %1
   %5 = select i1 %4, ptr %3, ptr null
   ret ptr %5

@@ -5,7 +5,7 @@
 define i32 @func0000000000000009(i32 %0, i32 %1) #0 {
 entry:
   %2 = shl nsw i32 %1, 6
-  %3 = or i32 %2, %0
+  %3 = or i32 %0, %2
   %4 = lshr i32 %3, 5
   %5 = and i32 %4, 126
   %6 = or disjoint i32 %5, 1

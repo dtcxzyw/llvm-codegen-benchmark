@@ -1,6 +1,5 @@
 
-; 19 occurrences:
-; coremark/optimized/core_util.c.ll
+; 20 occurrences:
 ; linux/optimized/boot.ll
 ; linux/optimized/e1000_hw.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
@@ -8,6 +7,8 @@
 ; openusd/optimized/level.cpp.ll
 ; openusd/optimized/stencilTableFactory.cpp.ll
 ; protobuf/optimized/generated_message_tctable_gen.cc.ll
+; turborepo-rs/optimized/43mxnq5l18zt2wz7kzlj45feg.ll
+; turborepo-rs/optimized/5igqf1t5fs8xc2cjkk89us33f.ll
 ; typst-rs/optimized/18i60ist7isq7y2m.ll
 ; typst-rs/optimized/1ojadsqfk0rsifsx.ll
 ; typst-rs/optimized/2lj01bfl72moc27l.ll
@@ -22,19 +23,8 @@
 ; Function Attrs: nounwind
 define i16 @func0000000000000001(i16 %0, i16 %1, i8 %2) #0 {
 entry:
-  %3 = and i8 %2, 8
+  %3 = and i8 %2, 64
   %4 = icmp eq i8 %3, 0
-  %5 = select i1 %4, i16 %0, i16 %1
-  ret i16 %5
-}
-
-; 1 occurrences:
-; icu/optimized/ufmt_cmn.ll
-; Function Attrs: nounwind
-define i16 @func0000000000000004(i16 %0, i16 %1, i8 %2) #0 {
-entry:
-  %3 = and i8 %2, 14
-  %4 = icmp ult i8 %3, 10
   %5 = select i1 %4, i16 %0, i16 %1
   ret i16 %5
 }

@@ -1,5 +1,6 @@
 
-; 4 occurrences:
+; 5 occurrences:
+; boost/optimized/approximately_equals.ll
 ; cpython/optimized/basearith.ll
 ; cpython/optimized/crt.ll
 ; qemu/optimized/hw_virtio_vhost-shadow-virtqueue.c.ll

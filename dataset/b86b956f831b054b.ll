@@ -14,7 +14,7 @@
 ; postgres/optimized/tsvector_op.ll
 ; spike/optimized/debug_module.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000e1(i32 %0, i32 %1) #0 {
+define i32 @func00000000000001c1(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 32, %1
   %3 = shl nuw i32 1, %2
@@ -45,7 +45,7 @@ entry:
 ; llvm/optimized/StructurizeCFG.cpp.ll
 ; llvm/optimized/TwoAddressInstructionPass.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000e4(i32 %0, i32 %1) #0 {
+define i32 @func00000000000001c4(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nuw nsw i32 33, %1
   %3 = shl nuw i32 1, %2
@@ -58,7 +58,7 @@ entry:
 ; cmake/optimized/zstd_opt.c.ll
 ; zstd/optimized/zstd_opt.c.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000074(i32 %0, i32 %1) #0 {
+define i32 @func00000000000000e4(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 10, %1
   %3 = shl nuw nsw i32 1, %2

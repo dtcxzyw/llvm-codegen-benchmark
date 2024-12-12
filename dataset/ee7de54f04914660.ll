@@ -2,10 +2,10 @@
 ; 1 occurrences:
 ; ruby/optimized/regcomp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c4(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000184(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = icmp ult i64 %3, 101
   ret i1 %4
 }
@@ -88,7 +88,7 @@ entry:
 ; velox/optimized/Type.cpp.ll
 ; velox/optimized/VectorEncoding.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000188(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
   %3 = mul i64 %2, %0
@@ -142,10 +142,10 @@ entry:
 ; velox/optimized/Type.cpp.ll
 ; velox/optimized/VectorEncoding.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000088(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000108(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw i64 %1, 1
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = icmp ugt i64 %3, 4294967295
   ret i1 %4
 }
@@ -157,11 +157,11 @@ entry:
 ; velox/optimized/JsonType.cpp.ll
 ; velox/optimized/SsdFile.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001f8(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
   %3 = mul nuw nsw i64 %2, %0
-  %4 = icmp ugt i64 %3, 4294967295
+  %4 = icmp samesign ugt i64 %3, 4294967295
   ret i1 %4
 }
 
@@ -173,10 +173,10 @@ entry:
 ; quantlib/optimized/cmsmarketcalibration.ll
 ; quantlib/optimized/cmsmmdriftcalculator.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 1
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = icmp ugt i64 %3, 384307168202282325
   ret i1 %4
 }
@@ -198,15 +198,16 @@ entry:
 ; quantlib/optimized/cmsmarketcalibration.ll
 ; quantlib/optimized/cmsmmdriftcalculator.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 1
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = icmp eq i64 %3, 0
   ret i1 %4
 }
 
-; 7 occurrences:
+; 8 occurrences:
+; boost/optimized/alloc_lib.ll
 ; duckdb/optimized/ub_duckdb_common.cpp.ll
 ; llvm/optimized/UnicodeNameToCodepoint.cpp.ll
 ; luau/optimized/StringUtils.cpp.ll
@@ -218,7 +219,7 @@ entry:
 define i1 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 2
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = icmp eq i64 %3, 0
   ret i1 %4
 }
@@ -226,7 +227,7 @@ entry:
 ; 1 occurrences:
 ; lightgbm/optimized/c_api.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 1
   %3 = mul nsw i64 %2, %0
@@ -237,10 +238,10 @@ entry:
 ; 1 occurrences:
 ; lightgbm/optimized/linear_tree_learner.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, 2
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = icmp ult i64 %3, 2
   ret i1 %4
 }
@@ -251,7 +252,7 @@ entry:
 define i1 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, 1
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = icmp slt i64 %3, 0
   ret i1 %4
 }
@@ -270,10 +271,10 @@ entry:
 ; 1 occurrences:
 ; faiss/optimized/ResidualQuantizer.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i64 %0, i64 %1) #0 {
+define i1 @func0000000000000181(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
-  %3 = mul i64 %2, %0
+  %3 = mul i64 %0, %2
   %4 = icmp eq i64 %3, 0
   ret i1 %4
 }
@@ -283,7 +284,7 @@ entry:
 ; openblas/optimized/dgemmt.c.ll
 ; opencv/optimized/upcean_decoder.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d6(i64 %0, i64 %1) #0 {
+define i1 @func00000000000001a6(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 1
   %3 = mul nsw i64 %2, %0
@@ -294,10 +295,10 @@ entry:
 ; 1 occurrences:
 ; casadi/optimized/feasiblesqpmethod.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i64 %1) #0 {
+define i1 @func00000000000000aa(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
-  %3 = mul nsw i64 %2, %0
+  %3 = mul nsw i64 %0, %2
   %4 = icmp sgt i64 %3, 0
   ret i1 %4
 }

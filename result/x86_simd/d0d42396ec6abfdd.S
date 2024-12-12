@@ -6,7 +6,7 @@
 	.quad	3                               # 0x3
 .LCPI0_3:
 	.quad	4                               # 0x4
-func000000000000016a:                   # @func000000000000016a
+func00000000000004ca:                   # @func00000000000004ca
 	vpbroadcastd	.LCPI0_0(%rip), %xmm2   # xmm2 = [1,1,1,1]
 	vpcmpgtd	%xmm1, %xmm2, %k1
 	vpsubd	%xmm1, %xmm2, %xmm0 {%k1}

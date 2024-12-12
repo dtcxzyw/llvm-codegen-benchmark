@@ -1,0 +1,433 @@
+
+; 344 occurrences:
+; arrow/optimized/array_dict.cc.ll
+; arrow/optimized/builder_dict.cc.ll
+; arrow/optimized/scalar.cc.ll
+; arrow/optimized/type.cc.ll
+; arrow/optimized/vector_hash.cc.ll
+; mold/optimized/output-chunks.cc.PPC64V1.cc.ll
+; mold/optimized/output-chunks.cc.RV64BE.cc.ll
+; mold/optimized/output-chunks.cc.S390X.cc.ll
+; mold/optimized/output-chunks.cc.SPARC64.cc.ll
+; openusd/optimized/OpenEXRImage.cpp.ll
+; openusd/optimized/TestArURIResolver_plugin.cpp.ll
+; openusd/optimized/TestPcpDynamicFileFormatPlugin.cpp.ll
+; openusd/optimized/TestSdrRegistry_discoveryPlugin.cpp.ll
+; openusd/optimized/TestSdrRegistry_oslParserPlugin.cpp.ll
+; openusd/optimized/abstractData.cpp.ll
+; openusd/optimized/adapterManager.cpp.ll
+; openusd/optimized/adapterRegistry.cpp.ll
+; openusd/optimized/aggregateNode.cpp.ll
+; openusd/optimized/aggregateTree.cpp.ll
+; openusd/optimized/aggregateTreeBuilder.cpp.ll
+; openusd/optimized/animMapper.cpp.ll
+; openusd/optimized/aov.cpp.ll
+; openusd/optimized/assetLocalizationDelegate.cpp.ll
+; openusd/optimized/assetPath.cpp.ll
+; openusd/optimized/assetPathResolver.cpp.ll
+; openusd/optimized/assetPreviewsAPI.cpp.ll
+; openusd/optimized/attribute.cpp.ll
+; openusd/optimized/attributeSpec.cpp.ll
+; openusd/optimized/authoring.cpp.ll
+; openusd/optimized/bakeSkinning.cpp.ll
+; openusd/optimized/basisCurvesAdapter.cpp.ll
+; openusd/optimized/bboxCache.cpp.ll
+; openusd/optimized/boundableComputeExtent.cpp.ll
+; openusd/optimized/bufferSource.cpp.ll
+; openusd/optimized/bufferSpec.cpp.ll
+; openusd/optimized/cacheImpl.cpp.ll
+; openusd/optimized/cameraAdapter.cpp.ll
+; openusd/optimized/cameraSchema.cpp.ll
+; openusd/optimized/capsuleAdapter.cpp.ll
+; openusd/optimized/capsuleSchema.cpp.ll
+; openusd/optimized/changeList.cpp.ll
+; openusd/optimized/changeTracker.cpp.ll
+; openusd/optimized/changes.cpp.ll
+; openusd/optimized/clipCache.cpp.ll
+; openusd/optimized/clipSetDefinition.cpp.ll
+; openusd/optimized/clipsAPI.cpp.ll
+; openusd/optimized/coalescingDiagnosticDelegate.cpp.ll
+; openusd/optimized/collectionAPI.cpp.ll
+; openusd/optimized/collectionAPIAdapter.cpp.ll
+; openusd/optimized/collectionCache.cpp.ll
+; openusd/optimized/collectionMembershipQuery.cpp.ll
+; openusd/optimized/collector.cpp.ll
+; openusd/optimized/composeSite.cpp.ll
+; openusd/optimized/coneAdapter.cpp.ll
+; openusd/optimized/coneSchema.cpp.ll
+; openusd/optimized/connectableAPIBehavior.cpp.ll
+; openusd/optimized/connectionListEditor.cpp.ll
+; openusd/optimized/constraintTarget.cpp.ll
+; openusd/optimized/containerDataSourceEditor.cpp.ll
+; openusd/optimized/coordSysAPIAdapter.cpp.ll
+; openusd/optimized/coordSysPrimSceneIndex.cpp.ll
+; openusd/optimized/copyUtils.cpp.ll
+; openusd/optimized/counterAccumulator.cpp.ll
+; openusd/optimized/crateData.cpp.ll
+; openusd/optimized/cubeAdapter.cpp.ll
+; openusd/optimized/curves.cpp.ll
+; openusd/optimized/cylinderAdapter.cpp.ll
+; openusd/optimized/cylinderSchema.cpp.ll
+; openusd/optimized/data.cpp.ll
+; openusd/optimized/dataSourceAttribute.cpp.ll
+; openusd/optimized/dataSourceAttributeColorSpace.cpp.ll
+; openusd/optimized/dataSourceBasisCurves.cpp.ll
+; openusd/optimized/dataSourceCamera.cpp.ll
+; openusd/optimized/dataSourceHash.cpp.ll
+; openusd/optimized/dataSourceLegacyPrim.cpp.ll
+; openusd/optimized/dataSourceMaterial.cpp.ll
+; openusd/optimized/dataSourceMaterialNetworkInterface.cpp.ll
+; openusd/optimized/dataSourceMesh.cpp.ll
+; openusd/optimized/dataSourcePointInstancer.cpp.ll
+; openusd/optimized/dataSourcePrim.cpp.ll
+; openusd/optimized/dataSourcePrimvars.cpp.ll
+; openusd/optimized/dataSourceRenderPrims.cpp.ll
+; openusd/optimized/dataSourceStage.cpp.ll
+; openusd/optimized/dataSourceTetMesh.cpp.ll
+; openusd/optimized/dataSourceUsdPrimInfo.cpp.ll
+; openusd/optimized/dataSourceVolume.cpp.ll
+; openusd/optimized/delegate.cpp.ll
+; openusd/optimized/dependencies.cpp.ll
+; openusd/optimized/dependencyForwardingSceneIndex.cpp.ll
+; openusd/optimized/dictionary.cpp.ll
+; openusd/optimized/dirtyBitsTranslator.cpp.ll
+; openusd/optimized/domeLight_1Adapter.cpp.ll
+; openusd/optimized/drawModeAdapter.cpp.ll
+; openusd/optimized/drawModeStandin.cpp.ll
+; openusd/optimized/dynamicFileFormatContext.cpp.ll
+; openusd/optimized/engine.cpp.ll
+; openusd/optimized/enum.cpp.ll
+; openusd/optimized/envSetting.cpp.ll
+; openusd/optimized/evalCache.cpp.ll
+; openusd/optimized/evalUtils.cpp.ll
+; openusd/optimized/eventTree.cpp.ll
+; openusd/optimized/eventTreeBuilder.cpp.ll
+; openusd/optimized/expressionVariables.cpp.ll
+; openusd/optimized/expressionVariablesSource.cpp.ll
+; openusd/optimized/extComputationPrimvarPruningSceneIndex.cpp.ll
+; openusd/optimized/extComputationUtils.cpp.ll
+; openusd/optimized/extentResolvingSceneIndex.cpp.ll
+; openusd/optimized/field3dAssetAdapter.cpp.ll
+; openusd/optimized/fieldAdapter.cpp.ll
+; openusd/optimized/fieldTextureData.cpp.ll
+; openusd/optimized/fileFormatRegistry.cpp.ll
+; openusd/optimized/fileIO.cpp.ll
+; openusd/optimized/fileUtils.cpp.ll
+; openusd/optimized/flattenUtils.cpp.ll
+; openusd/optimized/flattenedDataSourceProviders.cpp.ll
+; openusd/optimized/flattenedDirectMaterialBindingsDataSourceProvider.cpp.ll
+; openusd/optimized/flattenedPrimvarsDataSourceProvider.cpp.ll
+; openusd/optimized/flattenedPurposeDataSourceProvider.cpp.ll
+; openusd/optimized/flattenedXformDataSourceProvider.cpp.ll
+; openusd/optimized/flatteningSceneIndex.cpp.ll
+; openusd/optimized/generativeProceduralAdapter.cpp.ll
+; openusd/optimized/generativeProceduralResolvingSceneIndex.cpp.ll
+; openusd/optimized/geomModelSchema.cpp.ll
+; openusd/optimized/geomSubsetAdapter.cpp.ll
+; openusd/optimized/geomSubsetSchema.cpp.ll
+; openusd/optimized/glslfx.cpp.ll
+; openusd/optimized/glslfxConfig.cpp.ll
+; openusd/optimized/gprimAdapter.cpp.ll
+; openusd/optimized/identity.cpp.ll
+; openusd/optimized/imageRegistry.cpp.ll
+; openusd/optimized/implicitSurfaceSceneIndex.cpp.ll
+; openusd/optimized/inbetweenShape.cpp.ll
+; openusd/optimized/indexProxy.cpp.ll
+; openusd/optimized/inherits.cpp.ll
+; openusd/optimized/input.cpp.ll
+; openusd/optimized/instanceAdapter.cpp.ll
+; openusd/optimized/instanceCache.cpp.ll
+; openusd/optimized/instanceKey.cpp.ll
+; openusd/optimized/interpolators.cpp.ll
+; openusd/optimized/introspection.cpp.ll
+; openusd/optimized/jsonSerialization.cpp.ll
+; openusd/optimized/keyFrame.cpp.ll
+; openusd/optimized/layer.cpp.ll
+; openusd/optimized/layerOffset.cpp.ll
+; openusd/optimized/layerRegistry.cpp.ll
+; openusd/optimized/layerRelocatesEditBuilder.cpp.ll
+; openusd/optimized/layerStack.cpp.ll
+; openusd/optimized/layerStackIdentifier.cpp.ll
+; openusd/optimized/layerStackRegistry.cpp.ll
+; openusd/optimized/legacyDisplayStyleOverrideSceneIndex.cpp.ll
+; openusd/optimized/legacyGeomSubsetSceneIndex.cpp.ll
+; openusd/optimized/lensDistortionSchema.cpp.ll
+; openusd/optimized/lightAPIAdapter.cpp.ll
+; openusd/optimized/lightAdapter.cpp.ll
+; openusd/optimized/lightDefParser.cpp.ll
+; openusd/optimized/lightLinkingSceneIndex.cpp.ll
+; openusd/optimized/listOp.cpp.ll
+; openusd/optimized/mallocTag.cpp.ll
+; openusd/optimized/mapEditor.cpp.ll
+; openusd/optimized/mapExpression.cpp.ll
+; openusd/optimized/mapFunction.cpp.ll
+; openusd/optimized/materialBindingAPI.cpp.ll
+; openusd/optimized/materialBindingAPIAdapter.cpp.ll
+; openusd/optimized/materialBindingsResolvingSceneIndex.cpp.ll
+; openusd/optimized/materialNetwork2Interface.cpp.ll
+; openusd/optimized/materialParamUtils.cpp.ll
+; openusd/optimized/mergingSceneIndex.cpp.ll
+; openusd/optimized/meshAdapter.cpp.ll
+; openusd/optimized/meshTopologySchema.cpp.ll
+; openusd/optimized/meshUtil.cpp.ll
+; openusd/optimized/metrics.cpp.ll
+; openusd/optimized/multiInterval.cpp.ll
+; openusd/optimized/namespaceEditor.cpp.ll
+; openusd/optimized/niInstanceAggregationSceneIndex.cpp.ll
+; openusd/optimized/niPrototypeSceneIndex.cpp.ll
+; openusd/optimized/nodeDefAPI.cpp.ll
+; openusd/optimized/nodeGraph.cpp.ll
+; openusd/optimized/noticeRegistry.cpp.ll
+; openusd/optimized/nurbsApproximatingSceneIndex.cpp.ll
+; openusd/optimized/nurbsCurvesAdapter.cpp.ll
+; openusd/optimized/nurbsPatchAdapter.cpp.ll
+; openusd/optimized/nurbsPatchSchema.cpp.ll
+; openusd/optimized/object.cpp.ll
+; openusd/optimized/openvdbAssetAdapter.cpp.ll
+; openusd/optimized/output.cpp.ll
+; openusd/optimized/overlayContainerDataSource.cpp.ll
+; openusd/optimized/parserHelpers.cpp.ll
+; openusd/optimized/parserPlugin.cpp.ll
+; openusd/optimized/parserValueContext.cpp.ll
+; openusd/optimized/path.cpp.ll
+; openusd/optimized/pathExpression.cpp.ll
+; openusd/optimized/pathNode.cpp.ll
+; openusd/optimized/perfLog.cpp.ll
+; openusd/optimized/piPrototypePropagatingSceneIndex.cpp.ll
+; openusd/optimized/piPrototypeSceneIndex.cpp.ll
+; openusd/optimized/pinnedCurveExpandingSceneIndex.cpp.ll
+; openusd/optimized/pipeline.cpp.ll
+; openusd/optimized/planeAdapter.cpp.ll
+; openusd/optimized/plugin.cpp.ll
+; openusd/optimized/pointBased.cpp.ll
+; openusd/optimized/pointInstancer.cpp.ll
+; openusd/optimized/pointInstancerAdapter.cpp.ll
+; openusd/optimized/pointsAdapter.cpp.ll
+; openusd/optimized/predicateExpression.cpp.ll
+; openusd/optimized/prefixingSceneIndex.cpp.ll
+; openusd/optimized/prim.cpp.ll
+; openusd/optimized/primAdapter.cpp.ll
+; openusd/optimized/primDataSourceOverlayCache.cpp.ll
+; openusd/optimized/primDefinition.cpp.ll
+; openusd/optimized/primIndex.cpp.ll
+; openusd/optimized/primSpec.cpp.ll
+; openusd/optimized/primTypeIndex.cpp.ll
+; openusd/optimized/primTypeInfo.cpp.ll
+; openusd/optimized/primTypeInfoCache.cpp.ll
+; openusd/optimized/primTypePruningSceneIndex.cpp.ll
+; openusd/optimized/primvar.cpp.ll
+; openusd/optimized/primvarSchema.cpp.ll
+; openusd/optimized/propertySpec.cpp.ll
+; openusd/optimized/proxyTypes.cpp.ll
+; openusd/optimized/pxrCameraAPIAdapter.cpp.ll
+; openusd/optimized/pxrDisplayFilterAdapter.cpp.ll
+; openusd/optimized/pxrIntegratorAdapter.cpp.ll
+; openusd/optimized/pxrSampleFilterAdapter.cpp.ll
+; openusd/optimized/refPtrTracker.cpp.ll
+; openusd/optimized/regTest.cpp.ll
+; openusd/optimized/registry.cpp.ll
+; openusd/optimized/registryManager.cpp.ll
+; openusd/optimized/relationshipSpec.cpp.ll
+; openusd/optimized/renderDelegate.cpp.ll
+; openusd/optimized/renderIndex.cpp.ll
+; openusd/optimized/renderSettings.cpp.ll
+; openusd/optimized/renderSettingsAdapter.cpp.ll
+; openusd/optimized/renderSettingsFilteringSceneIndex.cpp.ll
+; openusd/optimized/renderSettingsFlatteningSceneIndex.cpp.ll
+; openusd/optimized/repr.cpp.ll
+; openusd/optimized/rerootingSceneIndex.cpp.ll
+; openusd/optimized/resolver.cpp.ll
+; openusd/optimized/retainedDataSource.cpp.ll
+; openusd/optimized/retainedSceneIndex.cpp.ll
+; openusd/optimized/rootOverridesSceneIndex.cpp.ll
+; openusd/optimized/rprimCollection.cpp.ll
+; openusd/optimized/samplingUtils.cpp.ll
+; openusd/optimized/sceneGlobalsSceneIndex.cpp.ll
+; openusd/optimized/sceneIndex.cpp.ll
+; openusd/optimized/sceneIndexAdapterSceneDelegate.cpp.ll
+; openusd/optimized/sceneIndexPluginRegistry.cpp.ll
+; openusd/optimized/sceneIndices.cpp.ll
+; openusd/optimized/schemaBase.cpp.ll
+; openusd/optimized/schemaRegistry.cpp.ll
+; openusd/optimized/sdffilter.cpp.ll
+; openusd/optimized/selection.cpp.ll
+; openusd/optimized/selectionSceneIndex.cpp.ll
+; openusd/optimized/shader.cpp.ll
+; openusd/optimized/shaderDefParser.cpp.ll
+; openusd/optimized/shaderDefUtils.cpp.ll
+; openusd/optimized/shaderMetadataHelpers.cpp.ll
+; openusd/optimized/shaderNode.cpp.ll
+; openusd/optimized/shaderProperty.cpp.ll
+; openusd/optimized/simplify.cpp.ll
+; openusd/optimized/site.cpp.ll
+; openusd/optimized/skeletonAdapter.cpp.ll
+; openusd/optimized/skeletonQuery.cpp.ll
+; openusd/optimized/sortedIds.cpp.ll
+; openusd/optimized/sparseValueWriter.cpp.ll
+; openusd/optimized/specType.cpp.ll
+; openusd/optimized/sphereAdapter.cpp.ll
+; openusd/optimized/spline.cpp.ll
+; openusd/optimized/spline_KeyFrames.cpp.ll
+; openusd/optimized/stageCache.cpp.ll
+; openusd/optimized/stageSceneIndex.cpp.ll
+; openusd/optimized/statistics.cpp.ll
+; openusd/optimized/stitch.cpp.ll
+; openusd/optimized/stitchClips.cpp.ll
+; openusd/optimized/subLayerListEditor.cpp.ll
+; openusd/optimized/task.cpp.ll
+; openusd/optimized/testArNotice.cpp.ll
+; openusd/optimized/testArResolverContext.cpp.ll
+; openusd/optimized/testArURIResolver.cpp.ll
+; openusd/optimized/testHdCollectionExpressionEvaluator.cpp.ll
+; openusd/optimized/testHdCommand.cpp.ll
+; openusd/optimized/testHdDataSource.cpp.ll
+; openusd/optimized/testHdExtComputationUtils.cpp.ll
+; openusd/optimized/testHdSceneIndex.cpp.ll
+; openusd/optimized/testHdTimeSampleArray.cpp.ll
+; openusd/optimized/testHdsiPinnedCurveExpandingSceneIndex.cpp.ll
+; openusd/optimized/testPcpHardToReach.cpp.ll
+; openusd/optimized/testSdfAttributeBlocking.cpp.ll
+; openusd/optimized/testSdfHardToReach.cpp.ll
+; openusd/optimized/testSdfPathTable.cpp.ll
+; openusd/optimized/testSdfPredicateExpression.cpp.ll
+; openusd/optimized/testTraceCounters.cpp.ll
+; openusd/optimized/testTraceEventContainer.cpp.ll
+; openusd/optimized/testTraceMacros.cpp.ll
+; openusd/optimized/testTraceMarkers.cpp.ll
+; openusd/optimized/testTraceSerialization.cpp.ll
+; openusd/optimized/testTsThreadedCOW.cpp.ll
+; openusd/optimized/testTs_HardToReach.cpp.ll
+; openusd/optimized/testUsdCreateAttributeCpp.cpp.ll
+; openusd/optimized/testUsdGeomCreateAttribute.cpp.ll
+; openusd/optimized/testUsdGeomIsA.cpp.ll
+; openusd/optimized/testUsdImagingDelegate.cpp.ll
+; openusd/optimized/testUsdImagingDelegateChanges.cpp.ll
+; openusd/optimized/testUsdImagingMaterialBinding.cpp.ll
+; openusd/optimized/testUsdImagingRerootingSceneIndex.cpp.ll
+; openusd/optimized/testUsdImagingStageSceneIndex.cpp.ll
+; openusd/optimized/testUsdMetadata.cpp.ll
+; openusd/optimized/testUsdResolveTarget.cpp.ll
+; openusd/optimized/testUsdResolverChanged.cpp.ll
+; openusd/optimized/testUsdSchemaRegistryCpp.cpp.ll
+; openusd/optimized/testUsdStageNotification.cpp.ll
+; openusd/optimized/testUsdTemplatedIO.cpp.ll
+; openusd/optimized/testUsdTimeValueAuthoring.cpp.ll
+; openusd/optimized/testUsdUtilsStitch.cpp.ll
+; openusd/optimized/testVtCpp.cpp.ll
+; openusd/optimized/tetMeshConversionSceneIndex.cpp.ll
+; openusd/optimized/tetMeshTopologySchema.cpp.ll
+; openusd/optimized/textFileFormat.cpp.ll
+; openusd/optimized/textFileFormat.tab.cpp.ll
+; openusd/optimized/textParserHelpers.cpp.ll
+; openusd/optimized/timeCode.cpp.ll
+; openusd/optimized/timeSampleArray.cpp.ll
+; openusd/optimized/tsTest_TsEvaluator.cpp.ll
+; openusd/optimized/type.cpp.ll
+; openusd/optimized/typeInfoMap.cpp.ll
+; openusd/optimized/typeRegistry.cpp.ll
+; openusd/optimized/unitTestDelegate.cpp.ll
+; openusd/optimized/unitTestHelper.cpp.ll
+; openusd/optimized/unitTestNullRenderDelegate.cpp.ll
+; openusd/optimized/unloadedDrawModeSceneIndex.cpp.ll
+; openusd/optimized/usdPrimInfoSchema.cpp.ll
+; openusd/optimized/usdzResolver.cpp.ll
+; openusd/optimized/validationRegistry.cpp.ll
+; openusd/optimized/validators.cpp.ll
+; openusd/optimized/value.cpp.ll
+; openusd/optimized/valueTypeName.cpp.ll
+; openusd/optimized/valueTypeRegistry.cpp.ll
+; openusd/optimized/variableExpressionImpl.cpp.ll
+; openusd/optimized/variantSpec.cpp.ll
+; openusd/optimized/velocityMotionResolvingSceneIndex.cpp.ll
+; openusd/optimized/vtBufferSource.cpp.ll
+; openusd/optimized/xformCache.cpp.ll
+; openusd/optimized/xformCommonAPI.cpp.ll
+; rocksdb/optimized/filter_policy.cc.ll
+; rocksdb/optimized/hash.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i64 %0) #0 {
+entry:
+  %1 = mul i64 %0, 839798700976720815
+  %2 = tail call noundef i64 @llvm.bswap.i64(i64 %1)
+  ret i64 %2
+}
+
+; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
+declare i64 @llvm.bswap.i64(i64) #1
+
+; 6 occurrences:
+; arrow/optimized/key_hash.cc.ll
+; mold/optimized/output-chunks.cc.PPC64V1.cc.ll
+; mold/optimized/output-chunks.cc.RV64BE.cc.ll
+; mold/optimized/output-chunks.cc.S390X.cc.ll
+; mold/optimized/output-chunks.cc.SPARC64.cc.ll
+; openusd/optimized/pointInstancerAdapter.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000000(i64 %0) #0 {
+entry:
+  %1 = mul i64 %0, 24
+  %2 = tail call i64 @llvm.bswap.i64(i64 %1)
+  ret i64 %2
+}
+
+; 4 occurrences:
+; mold/optimized/output-chunks.cc.PPC64V1.cc.ll
+; mold/optimized/output-chunks.cc.RV64BE.cc.ll
+; mold/optimized/output-chunks.cc.S390X.cc.ll
+; mold/optimized/output-chunks.cc.SPARC64.cc.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000003(i64 %0) #0 {
+entry:
+  %1 = mul nsw i64 %0, 24
+  %2 = call noundef i64 @llvm.bswap.i64(i64 %1)
+  ret i64 %2
+}
+
+; 37 occurrences:
+; openusd/optimized/OpenEXRImage.cpp.ll
+; openusd/optimized/attributeSpec.cpp.ll
+; openusd/optimized/clipsAPI.cpp.ll
+; openusd/optimized/collectionAPI.cpp.ll
+; openusd/optimized/collectionPredicateLibrary.cpp.ll
+; openusd/optimized/dataSourceAttribute.cpp.ll
+; openusd/optimized/dataSourceLegacyPrim.cpp.ll
+; openusd/optimized/dataSourceMesh.cpp.ll
+; openusd/optimized/dataSourcePrim.cpp.ll
+; openusd/optimized/dataSourceTetMesh.cpp.ll
+; openusd/optimized/dictionary.cpp.ll
+; openusd/optimized/layer.cpp.ll
+; openusd/optimized/object.cpp.ll
+; openusd/optimized/parserHelpers.cpp.ll
+; openusd/optimized/pathExpression.cpp.ll
+; openusd/optimized/pipeline.cpp.ll
+; openusd/optimized/predicateExpression.cpp.ll
+; openusd/optimized/primAdapter.cpp.ll
+; openusd/optimized/primSpec.cpp.ll
+; openusd/optimized/propertySpec.cpp.ll
+; openusd/optimized/relationshipSpec.cpp.ll
+; openusd/optimized/retainedDataSource.cpp.ll
+; openusd/optimized/rootOverridesSceneIndex.cpp.ll
+; openusd/optimized/sceneIndexAdapterSceneDelegate.cpp.ll
+; openusd/optimized/skeletonAdapter.cpp.ll
+; openusd/optimized/stitchClips.cpp.ll
+; openusd/optimized/testHdCollectionExpressionEvaluator.cpp.ll
+; openusd/optimized/testUsdImagingDelegateChanges.cpp.ll
+; openusd/optimized/testUsdMetadata.cpp.ll
+; openusd/optimized/testUsdTemplatedIO.cpp.ll
+; openusd/optimized/testUsdUtilsStitch.cpp.ll
+; openusd/optimized/testVtCpp.cpp.ll
+; openusd/optimized/textFileFormat.tab.cpp.ll
+; openusd/optimized/textParserHelpers.cpp.ll
+; openusd/optimized/typeRegistry.cpp.ll
+; openusd/optimized/value.cpp.ll
+; openusd/optimized/variableExpressionImpl.cpp.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000007(i64 %0) #0 {
+entry:
+  %1 = mul nuw nsw i64 %0, -7046029254386353067
+  %2 = tail call noundef i64 @llvm.bswap.i64(i64 %1)
+  ret i64 %2
+}
+
+attributes #0 = { nounwind }
+attributes #1 = { nocallback nofree nosync nounwind speculatable willreturn memory(none) }

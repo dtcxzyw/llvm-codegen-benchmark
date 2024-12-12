@@ -1,6 +1,8 @@
 
-; 2 occurrences:
+; 4 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; mitsuba3/optimized/string.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i64 %1, i16 %2) #0 {
@@ -11,7 +13,7 @@ entry:
   ret i64 %5
 }
 
-; 21 occurrences:
+; 22 occurrences:
 ; coreutils-rs/optimized/2f3glk4ls3rn2ei2.ll
 ; image-rs/optimized/244uszkx0e8t5ie1.ll
 ; influxdb-rs/optimized/4xdswox27ronf9w0.ll
@@ -33,6 +35,7 @@ entry:
 ; wasmtime-rs/optimized/3flv1664rwe55t82.ll
 ; wasmtime-rs/optimized/48myxw210mngc99c.ll
 ; wasmtime-rs/optimized/5079e95b7v1wxko.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000d(i64 %0, i64 %1, i16 %2) #0 {
 entry:
@@ -82,6 +85,30 @@ entry:
   ret i64 %5
 }
 
+; 1 occurrences:
+; php/optimized/dow.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000010(i64 %0, i64 %1, i16 %2) #0 {
+entry:
+  %3 = zext nneg i16 %2 to i64
+  %4 = add i64 %0, %1
+  %5 = sub i64 %4, %3
+  ret i64 %5
+}
+
+; 3 occurrences:
+; abseil-cpp/optimized/time.cc.ll
+; abseil-cpp/optimized/time_zone_format.cc.ll
+; php/optimized/dow.ll
+; Function Attrs: nounwind
+define i64 @func000000000000001f(i64 %0, i64 %1, i16 %2) #0 {
+entry:
+  %3 = zext nneg i16 %2 to i64
+  %4 = add nuw nsw i64 %0, %1
+  %5 = sub nuw nsw i64 %4, %3
+  ret i64 %5
+}
+
 ; 2 occurrences:
 ; lz4/optimized/lz4.c.ll
 ; openusd/optimized/lz4.cpp.ll
@@ -104,18 +131,6 @@ entry:
   %3 = zext nneg i16 %2 to i64
   %4 = add nsw i64 %0, %1
   %5 = sub nsw i64 %4, %3
-  ret i64 %5
-}
-
-; 2 occurrences:
-; abseil-cpp/optimized/time.cc.ll
-; abseil-cpp/optimized/time_zone_format.cc.ll
-; Function Attrs: nounwind
-define i64 @func000000000000001f(i64 %0, i64 %1, i16 %2) #0 {
-entry:
-  %3 = zext nneg i16 %2 to i64
-  %4 = add nuw nsw i64 %0, %1
-  %5 = sub nuw nsw i64 %4, %3
   ret i64 %5
 }
 

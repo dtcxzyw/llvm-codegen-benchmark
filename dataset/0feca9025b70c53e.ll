@@ -185,7 +185,7 @@ entry:
   ret i64 %4
 }
 
-; 32 occurrences:
+; 33 occurrences:
 ; abc/optimized/acbUtil.c.ll
 ; abc/optimized/acecCl.c.ll
 ; abc/optimized/bmcMaj.c.ll
@@ -200,6 +200,7 @@ entry:
 ; abc/optimized/giaOf.c.ll
 ; abc/optimized/giaStr.c.ll
 ; abc/optimized/ifTune.c.ll
+; boost/optimized/to_chars.ll
 ; clamav/optimized/kwajd.c.ll
 ; gromacs/optimized/pme_spread.cpp.ll
 ; hdf5/optimized/H5B2int.c.ll

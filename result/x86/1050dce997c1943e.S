@@ -19,22 +19,32 @@ func0000000000000002:                   # @func0000000000000002
 	seta	%al
 	retq
 .LCPI2_0:
-	.quad	0x414312d000000000              # double 2.5E+6
+	.quad	0x41dfffffff800000              # double 2147483646
 .LCPI2_1:
 	.quad	0x3ff0000000000000              # double 1
-func0000000000000004:                   # @func0000000000000004
+func0000000000000003:                   # @func0000000000000003
 	vcvtusi2sd	%rdi, %xmm0, %xmm0
 	vdivsd	.LCPI2_0(%rip), %xmm0, %xmm0
 	vucomisd	.LCPI2_1(%rip), %xmm0
-	seta	%al
+	setb	%al
 	retq
 .LCPI3_0:
 	.quad	0x414312d000000000              # double 2.5E+6
 .LCPI3_1:
-	.quad	0x3feccccccccccccd              # double 0.90000000000000002
-func000000000000000b:                   # @func000000000000000b
+	.quad	0x3ff0000000000000              # double 1
+func0000000000000004:                   # @func0000000000000004
 	vcvtusi2sd	%rdi, %xmm0, %xmm0
 	vdivsd	.LCPI3_0(%rip), %xmm0, %xmm0
 	vucomisd	.LCPI3_1(%rip), %xmm0
+	seta	%al
+	retq
+.LCPI4_0:
+	.quad	0x414312d000000000              # double 2.5E+6
+.LCPI4_1:
+	.quad	0x3feccccccccccccd              # double 0.90000000000000002
+func000000000000000b:                   # @func000000000000000b
+	vcvtusi2sd	%rdi, %xmm0, %xmm0
+	vdivsd	.LCPI4_0(%rip), %xmm0, %xmm0
+	vucomisd	.LCPI4_1(%rip), %xmm0
 	setbe	%al
 	retq

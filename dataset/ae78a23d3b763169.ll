@@ -1,5 +1,5 @@
 
-; 16 occurrences:
+; 15 occurrences:
 ; abc/optimized/mpmMap.c.ll
 ; cmake/optimized/archive_write_set_format_ar.c.ll
 ; cpython/optimized/optimizer.ll
@@ -7,7 +7,6 @@
 ; linux/optimized/ccm.ll
 ; linux/optimized/d_path.ll
 ; linux/optimized/inffast.ll
-; linux/optimized/map.ll
 ; linux/optimized/namei.ll
 ; llvm/optimized/CodeGenPrepare.cpp.ll
 ; llvm/optimized/LowerExpectIntrinsic.cpp.ll
@@ -35,16 +34,16 @@ entry:
 ; luajit/optimized/lj_ctype_dyn.ll
 ; ruby/optimized/compile.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000058(ptr %0, i32 %1) #0 {
+define ptr @func000000000000005c(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 9
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 9
   %5 = getelementptr i8, ptr %4, i64 %3
   ret ptr %5
 }
 
-; 123 occurrences:
+; 53 occurrences:
 ; abc/optimized/inffast.c.ll
 ; abseil-cpp/optimized/cord_rep_btree.cc.ll
 ; abseil-cpp/optimized/cord_rep_btree_test.cc.ll
@@ -52,11 +51,23 @@ entry:
 ; abseil-cpp/optimized/numbers_test.cc.ll
 ; abseil-cpp/optimized/str_cat_test.cc.ll
 ; arrow/optimized/decimal.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/benchmark_fstream.ll
+; boost/optimized/console_buffer.ll
+; boost/optimized/test_codecvt.ll
+; boost/optimized/test_convert.ll
+; boost/optimized/test_filebuf.ll
+; boost/optimized/test_fs.ll
+; boost/optimized/test_fstream.ll
+; boost/optimized/test_fstream_special.ll
+; boost/optimized/test_ifstream.ll
+; boost/optimized/test_iostream.ll
+; boost/optimized/test_ofstream.ll
+; boost/optimized/test_stackstring.ll
+; boost/optimized/test_system.ll
 ; clamav/optimized/petite.c.ll
 ; cmake/optimized/archive_read_support_format_lha.c.ll
-; cmake/optimized/divsufsort.c.ll
 ; cmake/optimized/inffast.c.ll
-; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
 ; flac/optimized/md5.c.ll
 ; gromacs/optimized/inffast.c.ll
 ; grpc/optimized/parsing.cc.ll
@@ -67,11 +78,141 @@ entry:
 ; hyperscan/optimized/catchup.c.ll
 ; hyperscan/optimized/lbr.c.ll
 ; hyperscan/optimized/runtime.c.ll
-; icu/optimized/normalizer2impl.ll
 ; libdeflate/optimized/deflate_decompress.c.ll
 ; lief/optimized/pk_wrap.c.ll
 ; lief/optimized/pkwrite.c.ll
 ; lief/optimized/x509write_crt.c.ll
+; luajit/optimized/minilua.ll
+; nuklear/optimized/unity.c.ll
+; opencv/optimized/imgwarp.cpp.ll
+; openspiel/optimized/spades.cc.ll
+; openssl/optimized/libssl-lib-statem_srvr.ll
+; openssl/optimized/libssl-shlib-statem_srvr.ll
+; openusd/optimized/openexr-c.c.ll
+; php/optimized/hash_xxhash.ll
+; protobuf/optimized/helpers.cc.ll
+; protobuf/optimized/message_differencer.cc.ll
+; protobuf/optimized/message_lite.cc.ll
+; protobuf/optimized/text_format.cc.ll
+; rocksdb/optimized/xxhash.cc.ll
+; sentencepiece/optimized/strutil.cc.ll
+; simdjson/optimized/simdjson.cpp.ll
+; Function Attrs: nounwind
+define ptr @func000000000000005e(ptr %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = sub nsw i64 0, %2
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 512
+  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 6 occurrences:
+; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha1.ll
+; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha256.ll
+; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha1.ll
+; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha256.ll
+; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha1_hw.ll
+; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha256_hw.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000052(ptr %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = sub nsw i64 0, %2
+  %4 = getelementptr i8, ptr %0, i64 19
+  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 9 occurrences:
+; cmake/optimized/lzma_encoder_optimum_fast.c.ll
+; cmake/optimized/lzma_encoder_optimum_normal.c.ll
+; cpython/optimized/obmalloc.ll
+; linux/optimized/ip6_output.ll
+; linux/optimized/main.ll
+; llvm/optimized/CallBrPrepare.cpp.ll
+; llvm/optimized/DemoteRegToStack.cpp.ll
+; llvm/optimized/Instruction.cpp.ll
+; php/optimized/pcre2_auto_possess.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000010(ptr %0, i32 %1) #0 {
+entry:
+  %2 = zext i32 %1 to i64
+  %3 = sub nsw i64 0, %2
+  %4 = getelementptr i8, ptr %0, i64 2
+  %5 = getelementptr i8, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 21 occurrences:
+; clamav/optimized/petite.c.ll
+; clamav/optimized/upack.c.ll
+; clamav/optimized/wwunpack.c.ll
+; cmake/optimized/zstd_double_fast.c.ll
+; cmake/optimized/zstd_fast.c.ll
+; cmake/optimized/zstd_lazy.c.ll
+; cmake/optimized/zstd_opt.c.ll
+; hyperscan/optimized/mcsheng.c.ll
+; luajit/optimized/lj_trace.ll
+; luajit/optimized/lj_trace_dyn.ll
+; luau/optimized/lvmutils.cpp.ll
+; lz4/optimized/lz4.c.ll
+; openusd/optimized/lz4.cpp.ll
+; redis/optimized/lvm.ll
+; velox/optimized/HashStringAllocator.cpp.ll
+; wolfssl/optimized/chacha.c.ll
+; wolfssl/optimized/tls.c.ll
+; zstd/optimized/zstd_double_fast.c.ll
+; zstd/optimized/zstd_fast.c.ll
+; zstd/optimized/zstd_lazy.c.ll
+; zstd/optimized/zstd_opt.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001e(ptr %0, i32 %1) #0 {
+entry:
+  %2 = zext i32 %1 to i64
+  %3 = sub nsw i64 0, %2
+  %4 = getelementptr nusw nuw i8, ptr %0, i64 4
+  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 22 occurrences:
+; abc/optimized/inffast.c.ll
+; cmake/optimized/lz_encoder_mf.c.ll
+; cmake/optimized/lzma_encoder_optimum_normal.c.ll
+; gromacs/optimized/inffast.c.ll
+; llvm/optimized/AsmWriter.cpp.ll
+; llvm/optimized/BasicBlockUtils.cpp.ll
+; llvm/optimized/BitcodeWriter.cpp.ll
+; llvm/optimized/CGStmt.cpp.ll
+; llvm/optimized/CallBrPrepare.cpp.ll
+; llvm/optimized/Core.cpp.ll
+; llvm/optimized/DemoteRegToStack.cpp.ll
+; llvm/optimized/InstCombineCalls.cpp.ll
+; llvm/optimized/Instruction.cpp.ll
+; llvm/optimized/Instructions.cpp.ll
+; llvm/optimized/LoopConstrainer.cpp.ll
+; llvm/optimized/Pragma.cpp.ll
+; llvm/optimized/SelectionDAGBuilder.cpp.ll
+; llvm/optimized/SimplifyCFG.cpp.ll
+; llvm/optimized/TargetLowering.cpp.ll
+; llvm/optimized/VPlanRecipes.cpp.ll
+; llvm/optimized/Verifier.cpp.ll
+; mimalloc/optimized/segment.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000001a(ptr %0, i32 %1) #0 {
+entry:
+  %2 = zext i32 %1 to i64
+  %3 = sub nsw i64 0, %2
+  %4 = getelementptr nusw i8, ptr %0, i64 -1
+  %5 = getelementptr nusw i8, ptr %4, i64 %3
+  ret ptr %5
+}
+
+; 78 occurrences:
+; cmake/optimized/divsufsort.c.ll
+; duckdb/optimized/ub_duckdb_storage_compression_chimp.cpp.ll
+; icu/optimized/normalizer2impl.ll
 ; llvm/optimized/AArch64StackTagging.cpp.ll
 ; llvm/optimized/ADCE.cpp.ll
 ; llvm/optimized/AddressSanitizer.cpp.ll
@@ -144,28 +285,7 @@ entry:
 ; luajit/optimized/lj_err_dyn.ll
 ; luajit/optimized/lj_ffrecord.ll
 ; luajit/optimized/lj_ffrecord_dyn.ll
-; luajit/optimized/minilua.ll
-; nuklear/optimized/unity.c.ll
-; opencv/optimized/imgwarp.cpp.ll
-; openspiel/optimized/spades.cc.ll
-; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha1.ll
-; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha256.ll
-; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha1.ll
-; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha256.ll
-; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha1_hw.ll
-; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha256_hw.ll
-; openssl/optimized/libssl-lib-statem_srvr.ll
-; openssl/optimized/libssl-shlib-statem_srvr.ll
-; openusd/optimized/openexr-c.c.ll
-; php/optimized/hash_xxhash.ll
-; protobuf/optimized/helpers.cc.ll
-; protobuf/optimized/message_differencer.cc.ll
-; protobuf/optimized/message_lite.cc.ll
-; protobuf/optimized/text_format.cc.ll
 ; redis/optimized/rax.ll
-; rocksdb/optimized/xxhash.cc.ll
-; sentencepiece/optimized/strutil.cc.ll
-; simdjson/optimized/simdjson.cpp.ll
 ; yosys/optimized/fstapi.ll
 ; zstd/optimized/divsufsort.c.ll
 ; Function Attrs: nounwind
@@ -173,79 +293,7 @@ define ptr @func000000000000005a(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 512
-  %5 = getelementptr nusw i8, ptr %4, i64 %3
-  ret ptr %5
-}
-
-; 9 occurrences:
-; cmake/optimized/lzma_encoder_optimum_fast.c.ll
-; cmake/optimized/lzma_encoder_optimum_normal.c.ll
-; cpython/optimized/obmalloc.ll
-; linux/optimized/ip6_output.ll
-; linux/optimized/main.ll
-; llvm/optimized/CallBrPrepare.cpp.ll
-; llvm/optimized/DemoteRegToStack.cpp.ll
-; llvm/optimized/Instruction.cpp.ll
-; php/optimized/pcre2_auto_possess.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000010(ptr %0, i32 %1) #0 {
-entry:
-  %2 = zext i32 %1 to i64
-  %3 = sub nsw i64 0, %2
-  %4 = getelementptr i8, ptr %0, i64 2
-  %5 = getelementptr i8, ptr %4, i64 %3
-  ret ptr %5
-}
-
-; 41 occurrences:
-; abc/optimized/inffast.c.ll
-; clamav/optimized/petite.c.ll
-; clamav/optimized/upack.c.ll
-; clamav/optimized/wwunpack.c.ll
-; cmake/optimized/lz_encoder_mf.c.ll
-; cmake/optimized/lzma_encoder_optimum_normal.c.ll
-; cmake/optimized/zstd_double_fast.c.ll
-; cmake/optimized/zstd_fast.c.ll
-; cmake/optimized/zstd_lazy.c.ll
-; cmake/optimized/zstd_opt.c.ll
-; gromacs/optimized/inffast.c.ll
-; hyperscan/optimized/mcsheng.c.ll
-; llvm/optimized/AsmWriter.cpp.ll
-; llvm/optimized/BasicBlockUtils.cpp.ll
-; llvm/optimized/BitcodeWriter.cpp.ll
-; llvm/optimized/CGStmt.cpp.ll
-; llvm/optimized/CallBrPrepare.cpp.ll
-; llvm/optimized/Core.cpp.ll
-; llvm/optimized/DemoteRegToStack.cpp.ll
-; llvm/optimized/InstCombineCalls.cpp.ll
-; llvm/optimized/Instruction.cpp.ll
-; llvm/optimized/Instructions.cpp.ll
-; llvm/optimized/LoopConstrainer.cpp.ll
-; llvm/optimized/Pragma.cpp.ll
-; llvm/optimized/SelectionDAGBuilder.cpp.ll
-; llvm/optimized/SimplifyCFG.cpp.ll
-; llvm/optimized/TargetLowering.cpp.ll
-; llvm/optimized/VPlanRecipes.cpp.ll
-; llvm/optimized/Verifier.cpp.ll
-; luajit/optimized/lj_trace.ll
-; luajit/optimized/lj_trace_dyn.ll
-; luau/optimized/lvmutils.cpp.ll
-; mimalloc/optimized/segment.c.ll
-; redis/optimized/lvm.ll
-; velox/optimized/HashStringAllocator.cpp.ll
-; wolfssl/optimized/chacha.c.ll
-; wolfssl/optimized/tls.c.ll
-; zstd/optimized/zstd_double_fast.c.ll
-; zstd/optimized/zstd_fast.c.ll
-; zstd/optimized/zstd_lazy.c.ll
-; zstd/optimized/zstd_opt.c.ll
-; Function Attrs: nounwind
-define ptr @func000000000000001a(ptr %0, i32 %1) #0 {
-entry:
-  %2 = zext i32 %1 to i64
-  %3 = sub nsw i64 0, %2
-  %4 = getelementptr nusw i8, ptr %0, i64 4
+  %4 = getelementptr nusw i8, ptr %0, i64 -5
   %5 = getelementptr nusw i8, ptr %4, i64 %3
   ret ptr %5
 }

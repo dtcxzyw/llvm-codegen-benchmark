@@ -1,7 +1,7 @@
 
-%"class.asmjit::_abi_1_10::RALiveSpan.2488203" = type { %"struct.asmjit::_abi_1_10::RALiveInterval.2488204", %"struct.asmjit::_abi_1_10::LiveRegData.2488205" }
-%"struct.asmjit::_abi_1_10::RALiveInterval.2488204" = type { i32, i32 }
-%"struct.asmjit::_abi_1_10::LiveRegData.2488205" = type { i32 }
+%"class.asmjit::_abi_1_10::RALiveSpan.2603635" = type { %"struct.asmjit::_abi_1_10::RALiveInterval.2603636", %"struct.asmjit::_abi_1_10::LiveRegData.2603637" }
+%"struct.asmjit::_abi_1_10::RALiveInterval.2603636" = type { i32, i32 }
+%"struct.asmjit::_abi_1_10::LiveRegData.2603637" = type { i32 }
 
 ; 20 occurrences:
 ; clamav/optimized/mew.c.ll
@@ -25,10 +25,10 @@
 ; ropey-rs/optimized/1zgfltkx0c00yngh.ll
 ; wasmtime-rs/optimized/24tijvi11z3k9odl.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000008(ptr %0, i32 %1) #0 {
+define i64 @func000000000000000c(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext i32 %1 to i64
-  %3 = getelementptr nusw %"class.asmjit::_abi_1_10::RALiveSpan.2488203", ptr %0, i64 %2
+  %3 = getelementptr nusw nuw %"class.asmjit::_abi_1_10::RALiveSpan.2603635", ptr %0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = add i64 %4, -12
   ret i64 %5
@@ -48,17 +48,16 @@ entry:
 ; z3/optimized/smt_context.cpp.ll
 ; z3/optimized/theory_pb.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000018(ptr %0, i32 %1) #0 {
+define i64 @func000000000000001c(ptr %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
-  %3 = getelementptr nusw i8, ptr %0, i64 %2
+  %3 = getelementptr nusw nuw i8, ptr %0, i64 %2
   %4 = ptrtoint ptr %3 to i64
   %5 = add i64 %4, -24
   ret i64 %5
 }
 
-; 10 occurrences:
-; clamav/optimized/upack.c.ll
+; 9 occurrences:
 ; clamav/optimized/upx.c.ll
 ; linux/optimized/ah6.ll
 ; linux/optimized/ccm.ll

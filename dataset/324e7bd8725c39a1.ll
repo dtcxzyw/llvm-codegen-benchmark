@@ -20,7 +20,7 @@ entry:
 ; opencv/optimized/phasecorr.cpp.ll
 ; opencv/optimized/stereo_binary_sgbm.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000046(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000086(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = icmp eq i32 %1, 1
@@ -33,7 +33,7 @@ entry:
 ; openblas/optimized/cblas_daxpy.c.ll
 ; raylib/optimized/rcore.c.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000005a(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func000000000000009a(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = sub nsw i64 0, %2
   %4 = icmp slt i32 %1, 0

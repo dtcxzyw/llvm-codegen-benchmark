@@ -1,28 +1,29 @@
 
-%"struct.rocksdb::clock_cache::AutoHyperClockTable::HandleImpl.2514972" = type { %"struct.rocksdb::clock_cache::ClockHandle.2514958", %"class.rocksdb::AcqRelAtomic.2514960", %"class.rocksdb::AcqRelAtomic.2514960" }
-%"struct.rocksdb::clock_cache::ClockHandle.2514958" = type { %"struct.rocksdb::clock_cache::ClockHandleBasicData.2514953", %"class.rocksdb::AcqRelAtomic.2514960" }
-%"struct.rocksdb::clock_cache::ClockHandleBasicData.2514953" = type { ptr, ptr, %"struct.std::array.2514941", i64 }
-%"struct.std::array.2514941" = type { [2 x i64] }
-%"class.rocksdb::AcqRelAtomic.2514960" = type { %"class.rocksdb::RelaxedAtomic.2514961" }
-%"class.rocksdb::RelaxedAtomic.2514961" = type { %"struct.std::atomic.2514962" }
-%"struct.std::atomic.2514962" = type { %"struct.std::__atomic_base.2514963" }
-%"struct.std::__atomic_base.2514963" = type { i64 }
-%union.xhci_trb.3361088 = type { %struct.xhci_link_trb.3361089 }
-%struct.xhci_link_trb.3361089 = type { i64, i32, i32 }
+%"struct.rocksdb::clock_cache::AutoHyperClockTable::HandleImpl.2630081" = type { %"struct.rocksdb::clock_cache::ClockHandle.2630067", %"class.rocksdb::AcqRelAtomic.2630069", %"class.rocksdb::AcqRelAtomic.2630069" }
+%"struct.rocksdb::clock_cache::ClockHandle.2630067" = type { %"struct.rocksdb::clock_cache::ClockHandleBasicData.2630062", %"class.rocksdb::AcqRelAtomic.2630069" }
+%"struct.rocksdb::clock_cache::ClockHandleBasicData.2630062" = type { ptr, ptr, %"struct.std::array.2630050", i64 }
+%"struct.std::array.2630050" = type { [2 x i64] }
+%"class.rocksdb::AcqRelAtomic.2630069" = type { %"class.rocksdb::RelaxedAtomic.2630070" }
+%"class.rocksdb::RelaxedAtomic.2630070" = type { %"struct.std::atomic.2630071" }
+%"struct.std::atomic.2630071" = type { %"struct.std::__atomic_base.2630072" }
+%"struct.std::__atomic_base.2630072" = type { i64 }
+%union.xhci_trb.3547807 = type { %struct.xhci_link_trb.3547808 }
+%struct.xhci_link_trb.3547808 = type { i64, i32, i32 }
 
-; 6 occurrences:
+; 7 occurrences:
 ; linux/optimized/bio.ll
 ; linux/optimized/ds.ll
 ; linux/optimized/scan.ll
 ; linux/optimized/xhci-ring.ll
 ; opencv/optimized/floodfill.cpp.ll
 ; ruby/optimized/memory_view.ll
+; zed-rs/optimized/e7lqw1ynol01cwrgb8ri1wedr.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = icmp eq ptr %4, %0
+  %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 
@@ -58,18 +59,17 @@ entry:
 ; zstd/optimized/huf_decompress.c.ll
 ; zstd/optimized/zstd_ldm.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000064(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 5
-  %4 = getelementptr nusw ptr, ptr %1, i64 %3
-  %5 = icmp ugt ptr %4, %0
+  %4 = getelementptr nusw nuw ptr, ptr %1, i64 %3
+  %5 = icmp ult ptr %0, %4
   ret i1 %5
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; cpython/optimized/longobject.ll
 ; linux/optimized/huf_decompress.ll
-; linux/optimized/i915_cmd_parser.ll
 ; linux/optimized/intel_ggtt.ll
 ; linux/optimized/resize.ll
 ; qemu/optimized/hw_virtio_vhost.c.ll
@@ -78,8 +78,8 @@ entry:
 define i1 @func0000000000000004(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 8
-  %4 = getelementptr %"struct.rocksdb::clock_cache::AutoHyperClockTable::HandleImpl.2514972", ptr %1, i64 %3
-  %5 = icmp ugt ptr %4, %0
+  %4 = getelementptr %"struct.rocksdb::clock_cache::AutoHyperClockTable::HandleImpl.2630081", ptr %1, i64 %3
+  %5 = icmp ult ptr %0, %4
   ret i1 %5
 }
 
@@ -156,15 +156,15 @@ entry:
 ; zstd/optimized/zstd_v06.c.ll
 ; zstd/optimized/zstd_v07.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000028(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000068(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 1
-  %4 = getelementptr nusw ptr, ptr %1, i64 %3
-  %5 = icmp ult ptr %4, %0
+  %4 = getelementptr nusw nuw ptr, ptr %1, i64 %3
+  %5 = icmp ugt ptr %0, %4
   ret i1 %5
 }
 
-; 173 occurrences:
+; 179 occurrences:
 ; abseil-cpp/optimized/inlined_vector_exception_safety_test.cc.ll
 ; abseil-cpp/optimized/inlined_vector_test.cc.ll
 ; abseil-cpp/optimized/status_internal.cc.ll
@@ -174,6 +174,7 @@ entry:
 ; assimp/optimized/IFCOpenings.cpp.ll
 ; assimp/optimized/Q3BSPFileParser.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
+; cmake/optimized/zstd_ldm.c.ll
 ; coreutils-rs/optimized/aci7fhqxjjsavmn.ll
 ; coreutils-rs/optimized/jiqj5u7teuhb0o0.ll
 ; delta-rs/optimized/47qjbhol909h8zu7.ll
@@ -338,23 +339,28 @@ entry:
 ; xgboost/optimized/updater_approx.cc.ll
 ; xgboost/optimized/updater_quantile_hist.cc.ll
 ; yosys/optimized/satgen.ll
+; zed-rs/optimized/0alphtuk5g34mh3kiiec4rpgf.ll
+; zed-rs/optimized/4360dz3iad2ygf5m8hd0cmm88.ll
+; zed-rs/optimized/dm2ksdv5qc85lqu404cluyab5.ll
+; zed-rs/optimized/e39hl8e3ablf1r15aeuqbekxt.ll
+; zstd/optimized/zstd_ldm.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000061(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 5
-  %4 = getelementptr nusw [32 x i8], ptr %1, i64 %3
-  %5 = icmp eq ptr %4, %0
+  %4 = getelementptr nusw nuw [32 x i8], ptr %1, i64 %3
+  %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 
 ; 1 occurrences:
 ; openjdk/optimized/mutableNUMASpace.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000029(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000069(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 3
-  %4 = getelementptr nusw ptr, ptr %1, i64 %3
-  %5 = icmp ule ptr %4, %0
+  %4 = getelementptr nusw nuw ptr, ptr %1, i64 %3
+  %5 = icmp uge ptr %0, %4
   ret i1 %5
 }
 
@@ -364,11 +370,11 @@ entry:
 ; gromacs/optimized/gmx_xpm2ps.cpp.ll
 ; hermes/optimized/String.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func000000000000006c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 32
-  %4 = getelementptr nusw i16, ptr %1, i64 %3
-  %5 = icmp ne ptr %4, %0
+  %4 = getelementptr nusw nuw i16, ptr %1, i64 %3
+  %5 = icmp ne ptr %0, %4
   ret i1 %5
 }
 
@@ -379,7 +385,7 @@ define i1 @func0000000000000008(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 2
   %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = icmp ult ptr %4, %0
+  %5 = icmp ugt ptr %0, %4
   ret i1 %5
 }
 
@@ -389,8 +395,8 @@ entry:
 define i1 @func000000000000000c(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = lshr i64 %2, 4
-  %4 = getelementptr %union.xhci_trb.3361088, ptr %1, i64 %3
-  %5 = icmp ne ptr %4, %0
+  %4 = getelementptr %union.xhci_trb.3547807, ptr %1, i64 %3
+  %5 = icmp ne ptr %0, %4
   ret i1 %5
 }
 

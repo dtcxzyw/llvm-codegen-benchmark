@@ -23,9 +23,10 @@ func000000000000000c:                   # @func000000000000000c
 	orb	%sil, %al
 	andb	%dil, %al
 	retq
-func0000000000000008:                   # @func0000000000000008
-	cmpq	$9, %rdx
-	setb	%al
+func0000000000000014:                   # @func0000000000000014
+	movabsq	$-9223372036854775805, %rax     # imm = 0x8000000000000003
+	cmpq	%rax, %rdx
+	setg	%al
 	orb	%sil, %al
 	andb	%dil, %al
 	retq

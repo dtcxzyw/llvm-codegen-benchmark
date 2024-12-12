@@ -1,9 +1,8 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; abc/optimized/absGlaOld.c.ll
 ; coreutils-rs/optimized/56596qkor8w4ma8l.ll
 ; folly/optimized/Zlib.cpp.ll
-; libquic/optimized/ssl_lib.c.ll
 ; linux/optimized/hw_breakpoint.ll
 ; linux/optimized/perf_regs.ll
 ; linux/optimized/svclock.ll
@@ -20,7 +19,7 @@ define i32 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 14
   %3 = icmp eq i64 %2, 0
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = select i1 %4, i32 307, i32 311
   ret i32 %5
 }
@@ -46,7 +45,7 @@ define i32 @func000000000000000c(i1 %0, i64 %1) #0 {
 entry:
   %2 = and i64 %1, 1
   %3 = icmp ne i64 %2, 0
-  %4 = and i1 %3, %0
+  %4 = and i1 %0, %3
   %5 = select i1 %4, i32 283, i32 281
   ret i32 %5
 }

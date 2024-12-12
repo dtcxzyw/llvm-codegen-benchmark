@@ -17,7 +17,7 @@ func0000000000000008:                   # @func0000000000000008
 	andb	%sil, %al
 	retq
 func0000000000000004:                   # @func0000000000000004
-	cmpl	$32768, %edx                    # imm = 0x8000
+	cmpl	$7, %edx
 	setb	%al
 	andb	%dil, %sil
 	andb	%sil, %al
@@ -31,6 +31,18 @@ func000000000000000a:                   # @func000000000000000a
 func0000000000000006:                   # @func0000000000000006
 	cmpl	$129, %edx
 	setl	%al
+	andb	%dil, %sil
+	andb	%sil, %al
+	retq
+func0000000000000018:                   # @func0000000000000018
+	cmpl	$3, %edx
+	setae	%al
+	andb	%dil, %sil
+	andb	%sil, %al
+	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpl	$999, %edx                      # imm = 0x3E7
+	setb	%al
 	andb	%dil, %sil
 	andb	%sil, %al
 	retq

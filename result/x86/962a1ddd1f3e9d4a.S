@@ -5,7 +5,7 @@ func0000000000000004:                   # @func0000000000000004
 	shll	$4, %eax
 	addq	%rdi, %rax
 	retq
-func0000000000000006:                   # @func0000000000000006
+func0000000000000007:                   # @func0000000000000007
 	notb	%sil
 	movzbl	%sil, %eax
 	andl	$1, %eax

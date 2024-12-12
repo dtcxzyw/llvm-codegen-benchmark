@@ -1,5 +1,5 @@
 
-; 31 occurrences:
+; 30 occurrences:
 ; curl/optimized/libcurl_la-curl_sasl.ll
 ; git/optimized/send-pack.ll
 ; git/optimized/transport.ll
@@ -7,7 +7,6 @@
 ; hermes/optimized/Object.cpp.ll
 ; libzmq/optimized/socket_poller.cpp.ll
 ; linux/optimized/e1000_hw.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/r8169_main.ll
 ; linux/optimized/tcp_input.ll
 ; linux/optimized/vgacon.ll
@@ -82,6 +81,19 @@ entry:
   ret i16 %6
 }
 
+; 2 occurrences:
+; libjpeg-turbo/optimized/jdcolor.c.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; Function Attrs: nounwind
+define i16 @func000000000000000b(i16 %0, i16 %1, i16 %2) #0 {
+entry:
+  %3 = shl nuw i16 %2, 8
+  %4 = and i16 %3, -2048
+  %5 = or disjoint i16 %0, %1
+  %6 = or disjoint i16 %5, %4
+  ret i16 %6
+}
+
 ; 3 occurrences:
 ; linux/optimized/alps.ll
 ; linux/optimized/hosts.ll
@@ -117,18 +129,6 @@ entry:
   %4 = and i16 %3, 240
   %5 = or i16 %0, %1
   %6 = or i16 %5, %4
-  ret i16 %6
-}
-
-; 1 occurrences:
-; libjpeg-turbo/optimized/jdcolor.c.ll
-; Function Attrs: nounwind
-define i16 @func000000000000000b(i16 %0, i16 %1, i16 %2) #0 {
-entry:
-  %3 = shl nuw i16 %2, 8
-  %4 = and i16 %3, -2048
-  %5 = or disjoint i16 %0, %1
-  %6 = or disjoint i16 %5, %4
   ret i16 %6
 }
 

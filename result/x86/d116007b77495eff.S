@@ -12,7 +12,7 @@ func0000000000000044:                   # @func0000000000000044
 	seta	%al
 	retq
 .LCPI2_0:
-	.quad	0x3cb0000000000000              # double 2.2204460492503131E-16
+	.quad	0x3eb0c6f7a0b5ed8d              # double 9.9999999999999995E-7
 func0000000000000045:                   # @func0000000000000045
 	vmaxsd	.LCPI2_0(%rip), %xmm1, %xmm1
 	vucomisd	%xmm0, %xmm1
@@ -73,6 +73,6 @@ func00000000000000a8:                   # @func00000000000000a8
 	vxorpd	%xmm2, %xmm2, %xmm2
 	vcmplesd	%xmm2, %xmm1, %k1
 	vmovsd	%xmm1, %xmm1, %xmm1 {%k1} {z}
-	vcmpeqsd	%xmm0, %xmm1, %k0
+	vcmpeqsd	%xmm1, %xmm0, %k0
 	kmovd	%k0, %eax
 	retq

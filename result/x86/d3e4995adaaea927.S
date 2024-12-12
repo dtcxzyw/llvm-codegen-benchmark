@@ -1,7 +1,19 @@
-func0000000000000008:                   # @func0000000000000008
+func000000000000000c:                   # @func000000000000000c
 	movq	%rsi, %rax
 	retq
 func0000000000000000:                   # @func0000000000000000
+	movq	%rsi, %rax
+	retq
+func000000000000000e:                   # @func000000000000000e
+	movq	%rsi, %rax
+	retq
+func000000000000000f:                   # @func000000000000000f
+	movq	%rsi, %rax
+	retq
+func0000000000000008:                   # @func0000000000000008
+	movq	%rsi, %rax
+	retq
+func000000000000000b:                   # @func000000000000000b
 	movq	%rsi, %rax
 	retq
 func000000000000000a:                   # @func000000000000000a

@@ -1,5 +1,7 @@
 
-; 566 occurrences:
+; 572 occurrences:
+; abc/optimized/abcOrchestration.c.ll
+; abc/optimized/abcResub.c.ll
 ; abc/optimized/acecFadds.c.ll
 ; abc/optimized/bmcFx.c.ll
 ; abc/optimized/cecSolve.c.ll
@@ -45,6 +47,7 @@
 ; linux/optimized/entropy_common.ll
 ; linux/optimized/ich8lan.ll
 ; linux/optimized/intel_dpio_phy.ll
+; linux/optimized/rc80211_minstrel_ht.ll
 ; llvm/optimized/AArch64Disassembler.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
 ; llvm/optimized/BypassSlowDivision.cpp.ll
@@ -59,6 +62,7 @@
 ; luajit/optimized/lj_strfmt_num_dyn.ll
 ; luajit/optimized/lj_strscan.ll
 ; luajit/optimized/lj_strscan_dyn.ll
+; luau/optimized/OptimizeConstProp.cpp.ll
 ; meshlab/optimized/filter_color_projection.cpp.ll
 ; meshlab/optimized/filter_texture.cpp.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
@@ -543,6 +547,7 @@
 ; postgres/optimized/utf8_and_gb18030.ll
 ; protobuf/optimized/parse_function_generator.cc.ll
 ; proxygen/optimized/HQFramer.cpp.ll
+; qemu/optimized/hw_audio_ac97.c.ll
 ; raylib/optimized/raudio.c.ll
 ; raylib/optimized/rtext.c.ll
 ; recastnavigation/optimized/DetourDebugDraw.cpp.ll
@@ -550,6 +555,7 @@
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll
 ; ruby/optimized/iseq.ll
 ; ruby/optimized/time.ll
+; stb/optimized/stb_connected_components.c.ll
 ; stb/optimized/stb_image.c.ll
 ; stb/optimized/stb_truetype.c.ll
 ; tinygltf/optimized/tiny_gltf.cc.ll
@@ -608,6 +614,7 @@ entry:
 ; abc/optimized/FxchSCHashTable.c.ll
 ; abc/optimized/solver.c.ll
 ; abc/optimized/solver_api.c.ll
+; boost/optimized/to_chars.ll
 ; cpython/optimized/_ctypes_test.ll
 ; freetype/optimized/sfnt.c.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
@@ -648,7 +655,6 @@ entry:
 ; z3/optimized/bv_bounds_tactic.cpp.ll
 ; z3/optimized/bv_size_reduction_tactic.cpp.ll
 ; z3/optimized/bvarray2uf_rewriter.cpp.ll
-; z3/optimized/cmd_context.cpp.ll
 ; z3/optimized/ctx_solver_simplify_tactic.cpp.ll
 ; z3/optimized/dd_pdd.cpp.ll
 ; z3/optimized/degree_shift_tactic.cpp.ll
@@ -907,13 +913,12 @@ entry:
   ret i32 %2
 }
 
-; 15 occurrences:
+; 14 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; icu/optimized/decNumber.ll
 ; jq/optimized/decNumber.ll
 ; libquic/optimized/error_correction.c.ll
 ; libquic/optimized/tls_cbc.c.ll
-; linux/optimized/bcd.ll
 ; linux/optimized/vsprintf.ll
 ; luajit/optimized/lj_strfmt.ll
 ; luajit/optimized/lj_strfmt_dyn.ll

@@ -1,14 +1,13 @@
-func0000000000000007:                   # @func0000000000000007
-	movl	%esi, %eax
-	andl	$768, %eax                      # imm = 0x300
-	orl	%edi, %eax
-	shll	$10, %eax
-	retq
 func0000000000000000:                   # @func0000000000000000
 	movl	%esi, %eax
 	andl	$15, %eax
 	orl	%edi, %eax
 	shll	$4, %eax
+	retq
+func0000000000000007:                   # @func0000000000000007
+	andl	$32, %esi
+	orl	%edi, %esi
+	leal	(%rsi,%rsi), %eax
 	retq
 func0000000000000006:                   # @func0000000000000006
 	andl	$1, %esi

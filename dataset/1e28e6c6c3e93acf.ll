@@ -1,8 +1,7 @@
 
-; 6 occurrences:
+; 5 occurrences:
 ; abc/optimized/giaMini.c.ll
 ; cmake/optimized/archive_read_support_format_rar.c.ll
-; git/optimized/diff.ll
 ; nanosvg/optimized/nanosvg.ll
 ; opencv/optimized/find_ellipses.cpp.ll
 ; opencv/optimized/tree.cpp.ll

@@ -51,10 +51,3 @@ func000000000000000f:                   # @func000000000000000f
 	vpsubb	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
-func0000000000000016:                   # @func0000000000000016
-	vpsrld	$3, %ymm0, %ymm0
-	vpmovdb	%ymm0, %xmm0
-	vpcmpeqd	%xmm1, %xmm1, %xmm1
-	vpaddb	%xmm1, %xmm0, %xmm0
-	vzeroupper
-	retq

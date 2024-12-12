@@ -1,8 +1,9 @@
 
-; 10 occurrences:
+; 11 occurrences:
 ; icu/optimized/calendar.ll
 ; linux/optimized/intel_panel.ll
 ; luau/optimized/loslib.cpp.ll
+; lvgl/optimized/lv_area.ll
 ; minetest/optimized/CGUIFileOpenDialog.cpp.ll
 ; qemu/optimized/ui_vnc.c.ll
 ; redis/optimized/t_hash.ll

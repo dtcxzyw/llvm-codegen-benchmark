@@ -1,18 +1,18 @@
-func000000000000008c:                   # @func000000000000008c
+func000000000000010c:                   # @func000000000000010c
 	cmpw	%di, %si
 	seta	%cl
 	testw	%di, %di
 	setne	%al
 	andb	%cl, %al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	cmpw	%di, %si
 	sete	%cl
 	testw	%di, %di
 	setne	%al
 	andb	%cl, %al
 	retq
-func00000000000000cc:                   # @func00000000000000cc
+func000000000000018c:                   # @func000000000000018c
 	cmpw	%di, %si
 	setne	%cl
 	movzwl	%di, %eax
@@ -20,7 +20,7 @@ func00000000000000cc:                   # @func00000000000000cc
 	setne	%al
 	andb	%cl, %al
 	retq
-func0000000000000054:                   # @func0000000000000054
+func00000000000000a4:                   # @func00000000000000a4
 	cmpw	%di, %si
 	setbe	%cl
 	movzwl	%di, %eax

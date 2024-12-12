@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; ruby/optimized/bignum.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000a1(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000141(i16 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 512
   %3 = icmp eq i32 %2, 0
@@ -11,12 +11,13 @@ entry:
   ret i1 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; llvm/optimized/InstCombineCompares.cpp.ll
 ; openjdk/optimized/classFileParser.ll
 ; proxygen/optimized/HTTP1xCodec.cpp.ll
 ; qemu/optimized/hw_usb_desc.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004c(i16 %0, i32 %1) #0 {
+define i1 @func000000000000008c(i16 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 4
   %3 = icmp ne i32 %2, 0
@@ -35,7 +36,7 @@ entry:
 ; qemu/optimized/ui_input-linux.c.ll
 ; wireshark/optimized/packet-tcp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000021(i16 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -2
   %3 = icmp eq i32 %2, 4
@@ -52,7 +53,7 @@ entry:
 ; slurm/optimized/job_mgr.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i16 %0, i32 %1) #0 {
+define i1 @func000000000000002c(i16 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 8192
   %3 = icmp ne i32 %2, 0
@@ -71,7 +72,7 @@ entry:
 ; meshlab/optimized/miniz.c.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000181(i16 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 1024
   %3 = icmp eq i32 %2, 0
@@ -104,7 +105,7 @@ entry:
 ; llvm/optimized/UninitializedValues.cpp.ll
 ; wireshark/optimized/packet-reload.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i16 %0, i32 %1) #0 {
+define i1 @func000000000000018c(i16 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 256
   %3 = icmp ne i32 %2, 0
@@ -134,7 +135,7 @@ entry:
 ; llvm/optimized/TextNodeDumper.cpp.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i16 %0, i32 %1) #0 {
+define i1 @func00000000000000cc(i16 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 127
   %3 = icmp ne i32 %2, 40
@@ -148,7 +149,7 @@ entry:
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; wireshark/optimized/packet-tibia.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000081(i16 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
   %3 = icmp eq i32 %2, 17
@@ -164,7 +165,7 @@ entry:
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; lz4/optimized/lz4.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000008c(i16 %0, i32 %1) #0 {
+define i1 @func000000000000010c(i16 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 255
   %3 = icmp ne i32 %2, 14
@@ -176,7 +177,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-sna.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000081(i16 %0, i32 %1) #0 {
+define i1 @func0000000000000101(i16 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 24
   %3 = icmp eq i32 %2, 8
@@ -189,7 +190,7 @@ entry:
 ; linux/optimized/nfs4proc.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ac(i16 %0, i32 %1) #0 {
+define i1 @func000000000000014c(i16 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 4194304
   %3 = icmp ne i32 %2, 0

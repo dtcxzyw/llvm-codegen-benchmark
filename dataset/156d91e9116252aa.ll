@@ -27,10 +27,9 @@ entry:
   ret i64 %3
 }
 
-; 3 occurrences:
+; 2 occurrences:
 ; hyperscan/optimized/mcclellancompile_util.cpp.ll
 ; stockfish/optimized/thread.ll
-; wireshark/optimized/packet-mpeg-sect.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i16 %0) #0 {
 entry:

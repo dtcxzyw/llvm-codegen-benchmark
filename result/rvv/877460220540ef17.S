@@ -3,5 +3,5 @@ func0000000000000000:                   # @func0000000000000000
 	vnot.v	v10, v10
 	li	a0, 16
 	vand.vx	v10, v10, a0
-	vor.vv	v8, v10, v8
+	vor.vv	v8, v8, v10
 	ret

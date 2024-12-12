@@ -1,9 +1,10 @@
 
-; 11 occurrences:
+; 12 occurrences:
 ; jemalloc/optimized/eset.ll
 ; jemalloc/optimized/eset.pic.ll
 ; jemalloc/optimized/eset.sym.ll
 ; llama.cpp/optimized/llama.cpp.ll
+; lvgl/optimized/lv_tlsf.ll
 ; node/optimized/simdutf.ll
 ; openjdk/optimized/xMark.ll
 ; qemu/optimized/linux-user_mmap.c.ll
@@ -17,31 +18,31 @@ entry:
   %3 = and i64 %2, -4096
   %4 = add i64 %1, -1
   %5 = add i64 %4, %3
-  %6 = icmp ult i64 %5, %0
+  %6 = icmp ugt i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; quickjs/optimized/quickjs.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001e8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 2147483647
   %4 = add nuw nsw i64 %1, 16
   %5 = add nuw nsw i64 %4, %3
-  %6 = icmp ult i64 %5, %0
+  %6 = icmp ugt i64 %0, %5
   ret i1 %6
 }
 
 ; 1 occurrences:
 ; linux/optimized/badblocks.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000001e4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 18014398509481983
   %4 = add nuw nsw i64 %1, 1
   %5 = add nuw nsw i64 %4, %3
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 
@@ -57,7 +58,7 @@ entry:
   %3 = and i64 %2, -4096
   %4 = add i64 %1, -4096
   %5 = add i64 %4, %3
-  %6 = icmp ugt i64 %5, %0
+  %6 = icmp ult i64 %0, %5
   ret i1 %6
 }
 

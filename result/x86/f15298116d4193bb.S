@@ -1,4 +1,4 @@
-func00000000000002c8:                   # @func00000000000002c8
+func0000000000000588:                   # @func0000000000000588
 	incq	%rsi
 	incq	%rdi
 	imulq	%rsi, %rdi
@@ -19,14 +19,14 @@ func0000000000000008:                   # @func0000000000000008
 	shrq	$61, %rdi
 	setne	%al
 	retq
-func0000000000000148:                   # @func0000000000000148
+func0000000000000288:                   # @func0000000000000288
 	incq	%rsi
 	incq	%rdi
 	imulq	%rsi, %rdi
 	shrq	$61, %rdi
 	setne	%al
 	retq
-func0000000000000141:                   # @func0000000000000141
+func0000000000000281:                   # @func0000000000000281
 	incq	%rsi
 	incq	%rdi
 	imulq	%rsi, %rdi

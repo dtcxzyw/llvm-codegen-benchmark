@@ -1,5 +1,5 @@
 
-; 11 occurrences:
+; 10 occurrences:
 ; clamav/optimized/disasm.c.ll
 ; folly/optimized/MemoryMapping.cpp.ll
 ; icu/optimized/umutablecptrie.ll
@@ -10,7 +10,6 @@
 ; wireshark/optimized/packet-cp2179.c.ll
 ; wireshark/optimized/packet-eigrp.c.ll
 ; wireshark/optimized/packet-mac-lte.c.ll
-; wireshark/optimized/packet-ouch.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i1 %1, i8 %2) #0 {
 entry:

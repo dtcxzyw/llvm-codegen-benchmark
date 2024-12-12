@@ -6,7 +6,7 @@
 define float @func0000000000000000(float %0, float %1, i32 %2) #0 {
 entry:
   %3 = uitofp i32 %2 to float
-  %4 = fadd float %3, %1
+  %4 = fadd float %1, %3
   %5 = fdiv float %4, %0
   ret float %5
 }
@@ -22,7 +22,7 @@ entry:
 define float @func0000000000000001(float %0, float %1, i32 %2) #0 {
 entry:
   %3 = uitofp nneg i32 %2 to float
-  %4 = fadd float %3, %1
+  %4 = fadd float %1, %3
   %5 = fdiv float %4, %0
   ret float %5
 }

@@ -23,6 +23,11 @@ func0000000000000021:                   # @func0000000000000021
 	add	a0, a0, a1
 	srliw	a0, a0, 2
 	ret
+func0000000000000035:                   # @func0000000000000035
+	srli	a1, a1, 49
+	add	a0, a0, a1
+	srliw	a0, a0, 5
+	ret
 func0000000000000045:                   # @func0000000000000045
 	srli	a1, a1, 3
 	add	a0, a0, a1

@@ -1,5 +1,5 @@
 
-; 207 occurrences:
+; 208 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; abc/optimized/cuddSplit.c.ll
@@ -48,7 +48,6 @@
 ; hyperscan/optimized/ng_is_equal.cpp.ll
 ; linux/optimized/clnt.ll
 ; linux/optimized/idr.ll
-; linux/optimized/madvise.ll
 ; linux/optimized/rdma.ll
 ; linux/optimized/sparse.ll
 ; llama.cpp/optimized/llama.cpp.ll
@@ -83,6 +82,7 @@
 ; llvm/optimized/WinCOFFObjectWriter.cpp.ll
 ; luau/optimized/BytecodeBuilder.cpp.ll
 ; luau/optimized/DataFlowGraph.cpp.ll
+; lvgl/optimized/lv_flex.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; mitsuba3/optimized/blender.cpp.ll
 ; mitsuba3/optimized/obj.cpp.ll
@@ -159,7 +159,6 @@
 ; mold/optimized/subprocess.cc.SPARC64.cc.ll
 ; mold/optimized/subprocess.cc.X86_64.cc.ll
 ; nix/optimized/file-system.ll
-; nix/optimized/nix-env.ll
 ; nuttx/optimized/lib_qsort.c.ll
 ; ocio/optimized/FileFormatCSP.cpp.ll
 ; oiio/optimized/filesystem.cpp.ll
@@ -179,6 +178,7 @@
 ; protobuf/optimized/descriptor.pb.cc.ll
 ; protobuf/optimized/enum.cc.ll
 ; protobuf/optimized/generated_message_reflection.cc.ll
+; protobuf/optimized/message_differencer.cc.ll
 ; protobuf/optimized/parse_function_generator.cc.ll
 ; protobuf/optimized/unparser.cc.ll
 ; proxygen/optimized/HTTP2Codec.cpp.ll
@@ -207,6 +207,7 @@
 ; yosys/optimized/fastlz.ll
 ; yosys/optimized/viz.ll
 ; z3/optimized/aig.cpp.ll
+; zed-rs/optimized/6rnwmhc4ug1ovqxxgp9ysf06c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(ptr %0) #0 {
 entry:

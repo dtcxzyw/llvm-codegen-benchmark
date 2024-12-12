@@ -1,10 +1,10 @@
-func0000000000000064:                   # @func0000000000000064
+func00000000000000e4:                   # @func00000000000000e4
 	addq	$-5, %rdx
 	leaq	24(%rsi), %rax
 	cmpq	$-2, %rdx
 	cmovaeq	%rdi, %rax
 	retq
-func0000000000000021:                   # @func0000000000000021
+func0000000000000061:                   # @func0000000000000061
 	leaq	16(%rsi), %rax
 	cmpq	$1, %rdx
 	cmovneq	%rdi, %rax

@@ -1,5 +1,5 @@
 
-; 57 occurrences:
+; 56 occurrences:
 ; abc/optimized/acecPool.c.ll
 ; abc/optimized/acecRe.c.ll
 ; abseil-cpp/optimized/civil_time_test.cc.ll
@@ -10,6 +10,7 @@
 ; arrow/optimized/scalar_cast_temporal.cc.ll
 ; arrow/optimized/tz.cpp.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/to_chars.ll
 ; bullet3/optimized/btBoxBoxDetector.ll
 ; bullet3/optimized/btSoftBodyHelpers.ll
 ; clamav/optimized/ole2_extract.c.ll
@@ -21,7 +22,6 @@
 ; eastl/optimized/EADateTime.cpp.ll
 ; git/optimized/apply.ll
 ; icu/optimized/collationiterator.ll
-; icu/optimized/gregoimp.ll
 ; icu/optimized/indiancal.ll
 ; icu/optimized/islamcal.ll
 ; icu/optimized/persncal.ll
@@ -36,7 +36,6 @@
 ; luajit/optimized/lj_ccallback_dyn.ll
 ; lz4/optimized/lz4hc.c.ll
 ; minetest/optimized/mapgen_v6.cpp.ll
-; nuttx/optimized/lib_timegm.c.ll
 ; openspiel/optimized/oh_hell_test.cc.ll
 ; postgres/optimized/formatting.ll
 ; postgres/optimized/localtime.ll
@@ -65,12 +64,14 @@ entry:
   ret i32 %2
 }
 
-; 99 occurrences:
+; 101 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/tz.cpp.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; cpython/optimized/_codecs_cn.ll
 ; darktable/optimized/ErfDecoder.cpp.ll
 ; darktable/optimized/OrfDecoder.cpp.ll
@@ -98,7 +99,6 @@ entry:
 ; linux/optimized/hdac_stream.ll
 ; linux/optimized/hid-lg-g15.ll
 ; linux/optimized/hub.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_bw.ll
 ; linux/optimized/intel_cdclk.ll
 ; linux/optimized/intel_display_power_well.ll
@@ -126,6 +126,7 @@ entry:
 ; llvm/optimized/Interp.cpp.ll
 ; llvm/optimized/SemaChecking.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
+; lvgl/optimized/lv_anim.ll
 ; lz4/optimized/lz4.c.ll
 ; lz4/optimized/lz4hc.c.ll
 ; openjdk/optimized/g1ConcurrentMark.ll
@@ -173,12 +174,14 @@ entry:
   ret i32 %2
 }
 
-; 15 occurrences:
+; 17 occurrences:
 ; arrow/optimized/diff.cc.ll
 ; arrow/optimized/pretty_print.cc.ll
 ; arrow/optimized/scalar.cc.ll
 ; arrow/optimized/scalar_cast_string.cc.ll
 ; arrow/optimized/tz.cpp.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; icu/optimized/decNumber.ll
 ; jq/optimized/decNumber.ll
 ; libpng/optimized/pngread.c.ll
@@ -197,7 +200,13 @@ entry:
   ret i32 %2
 }
 
-; 40 occurrences:
+; 47 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; darktable/optimized/Rw2Decoder.cpp.ll
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
 ; darktable/optimized/timeline.c.ll
@@ -227,6 +236,7 @@ entry:
 ; linux/optimized/sock.ll
 ; linux/optimized/vlv_dsi_pll.ll
 ; llvm/optimized/APFloat.cpp.ll
+; lvgl/optimized/lv_theme_default.ll
 ; minetest/optimized/texturesource.cpp.ll
 ; nuklear/optimized/unity.c.ll
 ; openssl/optimized/libcrypto-lib-buffer.ll

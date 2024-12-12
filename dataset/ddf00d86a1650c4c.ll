@@ -9,7 +9,7 @@
 define i8 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, -9223372036854775808
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = select i1 %3, i8 0, i8 3
   ret i8 %4
 }
@@ -45,7 +45,7 @@ entry:
 define i8 @func0000000000000004(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp ult i64 %1, 4294967296
-  %3 = and i1 %2, %0
+  %3 = and i1 %0, %2
   %4 = select i1 %3, i8 4, i8 8
   ret i8 %4
 }

@@ -47,7 +47,7 @@ func0000000000000001:                   # @func0000000000000001
 .LCPI1_2:
 	.short	8                               # 0x8
 	.short	8                               # 0x8
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	vpord	.LCPI1_2(%rip){1to8}, %ymm0, %ymm2
 	vpcmpeqb	.LCPI1_1(%rip), %xmm1, %k1
 	vmovdqu16	%ymm2, %ymm0 {%k1}

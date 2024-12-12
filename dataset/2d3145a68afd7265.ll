@@ -48,12 +48,11 @@ entry:
   ret i64 %5
 }
 
-; 5 occurrences:
+; 4 occurrences:
 ; libpng/optimized/pngrtran.c.ll
 ; openjdk/optimized/pngrtran.ll
 ; php/optimized/zend_alloc.ll
 ; raylib/optimized/rcore.c.ll
-; soc-simulator/optimized/verilated.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000d(i32 %0, i32 %1) #0 {
 entry:

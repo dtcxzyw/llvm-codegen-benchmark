@@ -1,5 +1,6 @@
 
-; 11 occurrences:
+; 12 occurrences:
+; boost/optimized/default_formatter_factory.ll
 ; cvc5/optimized/ceg_instantiator.cpp.ll
 ; glslang/optimized/hlslParseHelper.cpp.ll
 ; glslang/optimized/hlslParseables.cpp.ll

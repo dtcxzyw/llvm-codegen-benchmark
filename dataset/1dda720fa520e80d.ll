@@ -1,5 +1,5 @@
 
-; 78 occurrences:
+; 79 occurrences:
 ; assimp/optimized/CalcTangentsProcess.cpp.ll
 ; bullet3/optimized/b3GpuPgsContactSolver.ll
 ; bullet3/optimized/btGeneric6DofSpring2Constraint.ll
@@ -20,6 +20,7 @@
 ; imgui/optimized/imgui_widgets.cpp.ll
 ; llama.cpp/optimized/ggml.c.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
+; lvgl/optimized/lv_draw_vector.ll
 ; meshlab/optimized/edit_point.cpp.ll
 ; meshlab/optimized/filter_colorproc.cpp.ll
 ; meshlab/optimized/filter_create.cpp.ll

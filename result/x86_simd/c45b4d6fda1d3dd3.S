@@ -17,7 +17,7 @@
 	.zero	1
 	.zero	1
 	.zero	1
-func0000000000000045:                   # @func0000000000000045
+func0000000000000085:                   # @func0000000000000085
 	vpbroadcastd	.LCPI0_0(%rip), %ymm2   # ymm2 = [2,2,2,2,2,2,2,2]
 	vpcmpeqb	.LCPI0_1(%rip), %xmm1, %k1
 	vpaddd	%ymm2, %ymm0, %ymm0 {%k1}

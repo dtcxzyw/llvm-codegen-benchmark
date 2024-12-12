@@ -12,8 +12,29 @@
 define i32 @func000000000000001c(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = mul nuw nsw i32 %3, %1
+  %4 = mul nuw nsw i32 %1, %3
   %5 = mul i32 %4, %0
+  ret i32 %5
+}
+
+; 11 occurrences:
+; freetype/optimized/sfnt.c.ll
+; linux/optimized/i915_query.ll
+; linux/optimized/intel_dram.ll
+; linux/optimized/intel_sseu.ll
+; lvgl/optimized/lv_draw_sw_blend_to_al88.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb565.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; wireshark/optimized/packet-vnc.c.ll
+; Function Attrs: nounwind
+define i32 @func000000000000000f(i32 %0, i32 %1, i8 %2) #0 {
+entry:
+  %3 = zext i8 %2 to i32
+  %4 = mul nuw nsw i32 %1, %3
+  %5 = mul nuw nsw i32 %4, %0
   ret i32 %5
 }
 
@@ -25,8 +46,8 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = mul nsw i32 %3, %1
-  %5 = mul i32 %4, %0
+  %4 = mul nsw i32 %1, %3
+  %5 = mul i32 %0, %4
   ret i32 %5
 }
 
@@ -45,7 +66,7 @@ entry:
 define i32 @func0000000000000000(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = mul i32 %4, %0
   ret i32 %5
 }
@@ -60,7 +81,7 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = mul nsw i32 %3, %1
+  %4 = mul nsw i32 %1, %3
   %5 = mul nsw i32 %4, %0
   ret i32 %5
 }
@@ -74,7 +95,7 @@ entry:
 define i32 @func000000000000000c(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = mul nuw nsw i32 %3, %1
+  %4 = mul nuw nsw i32 %1, %3
   %5 = mul i32 %4, %0
   ret i32 %5
 }
@@ -85,23 +106,8 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext i8 %2 to i32
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = mul nsw i32 %4, %0
-  ret i32 %5
-}
-
-; 5 occurrences:
-; freetype/optimized/sfnt.c.ll
-; linux/optimized/i915_query.ll
-; linux/optimized/intel_dram.ll
-; linux/optimized/intel_sseu.ll
-; wireshark/optimized/packet-vnc.c.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000f(i32 %0, i32 %1, i8 %2) #0 {
-entry:
-  %3 = zext i8 %2 to i32
-  %4 = mul nuw nsw i32 %3, %1
-  %5 = mul nuw nsw i32 %4, %0
   ret i32 %5
 }
 
@@ -111,7 +117,7 @@ entry:
 define i32 @func000000000000001f(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = mul nuw nsw i32 %3, %1
+  %4 = mul nuw nsw i32 %1, %3
   %5 = mul nuw nsw i32 %4, %0
   ret i32 %5
 }
@@ -122,7 +128,7 @@ entry:
 define i32 @func0000000000000010(i32 %0, i32 %1, i8 %2) #0 {
 entry:
   %3 = zext nneg i8 %2 to i32
-  %4 = mul i32 %3, %1
+  %4 = mul i32 %1, %3
   %5 = mul i32 %4, %0
   ret i32 %5
 }

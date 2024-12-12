@@ -10,11 +10,10 @@ entry:
   ret i64 %3
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; gromacs/optimized/context.cpp.ll
 ; linux/optimized/compaction.ll
-; openblas/optimized/dsum_k.c.ll
 ; php/optimized/network.ll
 ; php/optimized/zend_ini_parser.ll
 ; quantlib/optimized/gmres.ll

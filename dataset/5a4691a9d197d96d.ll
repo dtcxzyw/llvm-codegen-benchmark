@@ -1,6 +1,8 @@
 
-; 10 occurrences:
+; 12 occurrences:
 ; clamav/optimized/disasm.c.ll
+; linux/optimized/ich8lan.ll
+; linux/optimized/netdev.ll
 ; luajit/optimized/buildvm_lib.ll
 ; openusd/optimized/sdfdump.cpp.ll
 ; openusd/optimized/sdffilter.cpp.ll

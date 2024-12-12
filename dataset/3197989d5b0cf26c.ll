@@ -1,8 +1,9 @@
 
-; 3 occurrences:
+; 4 occurrences:
 ; llvm/optimized/Path.cpp.ll
 ; vcpkg/optimized/strings.cpp.ll
-; wasmedge/optimized/canon.cpp.ll
+; zed-rs/optimized/4360dz3iad2ygf5m8hd0cmm88.ll
+; zed-rs/optimized/e7lqw1ynol01cwrgb8ri1wedr.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000002(i1 %0, ptr %1, i64 %2) #0 {
 entry:

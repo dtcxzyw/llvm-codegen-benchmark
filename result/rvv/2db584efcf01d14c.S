@@ -46,7 +46,7 @@ func000000000000001f:                   # @func000000000000001f
 	addi	a0, a0, -1
 	vadd.vx	v8, v8, a0
 	ret
-func0000000000000085:                   # @func0000000000000085
+func0000000000000185:                   # @func0000000000000185
 	li	a0, -96
 	vsetivli	zero, 8, e8, mf2, ta, ma
 	vmsgtu.vx	v0, v10, a0

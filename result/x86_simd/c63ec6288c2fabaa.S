@@ -13,6 +13,6 @@ func0000000000000000:                   # @func0000000000000000
 	vpmovqd	%ymm2, %xmm2
 	vpandd	.LCPI1_0(%rip){1to4}, %xmm2, %xmm2
 	vpsrlvd	%xmm2, %xmm1, %xmm1
-	vpor	%xmm0, %xmm1, %xmm0
+	vpor	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq

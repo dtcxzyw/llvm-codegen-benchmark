@@ -1,5 +1,5 @@
 
-; 32 occurrences:
+; 31 occurrences:
 ; darktable/optimized/Cr2Decompressor.cpp.ll
 ; darktable/optimized/DngDecoder.cpp.ll
 ; linux/optimized/slub.ll
@@ -15,7 +15,6 @@
 ; llvm/optimized/Legalizer.cpp.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
 ; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/SROA.cpp.ll
 ; llvm/optimized/Scalarizer.cpp.ll
@@ -41,9 +40,8 @@ entry:
   ret i1 %4
 }
 
-; 8 occurrences:
+; 7 occurrences:
 ; hyperscan/optimized/ng_corpus_generator.cpp.ll
-; linux/optimized/scsicam.ll
 ; llvm/optimized/DAGCombiner.cpp.ll
 ; llvm/optimized/ThreadSanitizer.cpp.ll
 ; qemu/optimized/block_blkdebug.c.ll
@@ -51,7 +49,7 @@ entry:
 ; wasmtime-rs/optimized/3ongwcslbj2wmgl9.ll
 ; wasmtime-rs/optimized/3vdx8w41hjyzioqv.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000041(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw i64 %1 to i32
   %3 = urem i32 %2, %0
@@ -59,15 +57,14 @@ entry:
   ret i1 %4
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; gromacs/optimized/cluster_methods.cpp.ll
 ; gromacs/optimized/gmx_xpm2ps.cpp.ll
 ; hermes/optimized/CharacterProperties.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; openusd/optimized/write.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000031(i32 %0, i64 %1) #0 {
+define i1 @func0000000000000061(i32 %0, i64 %1) #0 {
 entry:
   %2 = trunc nuw nsw i64 %1 to i32
   %3 = urem i32 %2, %0

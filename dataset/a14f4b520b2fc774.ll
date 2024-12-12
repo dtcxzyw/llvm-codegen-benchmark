@@ -1,5 +1,5 @@
 
-; 47 occurrences:
+; 46 occurrences:
 ; abc/optimized/abcOrchestration.c.ll
 ; abc/optimized/abcResub.c.ll
 ; icu/optimized/coleitr.ll
@@ -36,7 +36,6 @@
 ; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; llvm/optimized/SemaTemplateInstantiateDecl.cpp.ll
 ; llvm/optimized/X86MCCodeEmitter.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; mold/optimized/output-chunks.cc.M68K.cc.ll
 ; mold/optimized/output-chunks.cc.PPC32.cc.ll
 ; mold/optimized/output-chunks.cc.RV32BE.cc.ll
@@ -113,18 +112,6 @@ entry:
   %4 = and i32 %3, 15
   %5 = or i32 %0, %1
   %6 = or disjoint i32 %5, %4
-  ret i32 %6
-}
-
-; 1 occurrences:
-; linux/optimized/statfs.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000002(i32 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc i64 %2 to i32
-  %4 = and i32 %3, 81
-  %5 = or disjoint i32 %0, %1
-  %6 = or i32 %5, %4
   ret i32 %6
 }
 

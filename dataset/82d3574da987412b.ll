@@ -16,7 +16,7 @@ entry:
 ; openspiel/optimized/solitaire.cc.ll
 ; postgres/optimized/cash.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(i64 %0) #0 {
+define i1 @func0000000000000041(i64 %0) #0 {
 entry:
   %1 = trunc nuw i64 %0 to i8
   %2 = urem i8 %1, 3

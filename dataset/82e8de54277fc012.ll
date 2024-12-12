@@ -1,5 +1,6 @@
 
-; 19 occurrences:
+; 20 occurrences:
+; boost/optimized/src.ll
 ; linux/optimized/cfg.ll
 ; linux/optimized/cpuset.ll
 ; linux/optimized/intel_execlists_submission.ll
@@ -20,7 +21,7 @@
 ; z3/optimized/smt_quantifier.cpp.ll
 ; z3/optimized/solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000022(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000042(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 2
   %4 = icmp eq i64 %3, 0
@@ -36,7 +37,7 @@ entry:
 ; verilator/optimized/V3Task.cpp.ll
 ; z3/optimized/dl_mk_subsumption_checker.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000182(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000302(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1
   %4 = icmp eq i64 %3, 0
@@ -45,12 +46,13 @@ entry:
   ret i1 %6
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/attribute_name.ll
 ; cmake/optimized/cmExtraEclipseCDT4Generator.cxx.ll
 ; llvm/optimized/LoopAccessAnalysis.cpp.ll
 ; openjdk/optimized/shenandoahAsserts.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000038(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000058(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 3
   %4 = icmp ne i64 %3, 3
@@ -64,11 +66,35 @@ entry:
 ; llvm/optimized/SemaOverload.cpp.ll
 ; php/optimized/zend_alloc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000198(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000318(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 4095
   %4 = icmp ne i64 %3, 0
   %5 = icmp ne ptr %0, %1
+  %6 = or i1 %4, %5
+  ret i1 %6
+}
+
+; 1 occurrences:
+; postgres/optimized/fe-connect.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000308(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 7
+  %4 = icmp ne i64 %3, 0
+  %5 = icmp ult ptr %0, %1
+  %6 = or i1 %5, %4
+  ret i1 %6
+}
+
+; 1 occurrences:
+; postgres/optimized/fe-connect.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000118(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 7
+  %4 = icmp ne i64 %3, 0
+  %5 = icmp ult ptr %0, %1
   %6 = or i1 %4, %5
   ret i1 %6
 }

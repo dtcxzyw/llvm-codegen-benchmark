@@ -12,9 +12,8 @@ entry:
   ret i64 %6
 }
 
-; 6 occurrences:
+; 5 occurrences:
 ; abc/optimized/cuddTable.c.ll
-; assimp/optimized/IFCGeometry.cpp.ll
 ; mitsuba3/optimized/bitmap.cpp.ll
 ; ncnn/optimized/convolution1d_x86_avx512.cpp.ll
 ; ncnn/optimized/pooling3d.cpp.ll

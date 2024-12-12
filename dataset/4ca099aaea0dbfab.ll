@@ -1,5 +1,5 @@
 
-; 27 occurrences:
+; 26 occurrences:
 ; abc/optimized/acecCo.c.ll
 ; abc/optimized/acecPa.c.ll
 ; abc/optimized/acecPool.c.ll
@@ -22,7 +22,6 @@
 ; ncnn/optimized/gemm_x86_avx512.cpp.ll
 ; ncnn/optimized/gemm_x86_fma.cpp.ll
 ; openblas/optimized/dstemr.c.ll
-; opencv/optimized/demosaicing.cpp.ll
 ; opencv/optimized/omnidir.cpp.ll
 ; openusd/optimized/restoration.c.ll
 ; raylib/optimized/rmodels.c.ll
@@ -34,6 +33,19 @@ entry:
   %3 = or disjoint i32 %2, 1
   %4 = sext i32 %3 to i64
   %5 = getelementptr nusw float, ptr %0, i64 %4
+  ret ptr %5
+}
+
+; 2 occurrences:
+; opencv/optimized/demosaicing.cpp.ll
+; openusd/optimized/restoration.c.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000f(ptr %0, i32 %1) #0 {
+entry:
+  %2 = mul nsw i32 %1, 3
+  %3 = or disjoint i32 %2, 3
+  %4 = sext i32 %3 to i64
+  %5 = getelementptr nusw nuw i32, ptr %0, i64 %4
   ret ptr %5
 }
 

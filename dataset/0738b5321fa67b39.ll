@@ -1,6 +1,5 @@
 
-; 4 occurrences:
-; linux/optimized/uring_cmd.ll
+; 3 occurrences:
 ; linux/optimized/vlv_dsi_pll.ll
 ; openusd/optimized/changes.cpp.ll
 ; wasmedge/optimized/inode-linux.cpp.ll
@@ -10,7 +9,7 @@ entry:
   %2 = shl i16 %1, 9
   %3 = and i16 %2, 2048
   %4 = zext nneg i16 %3 to i32
-  %5 = or i32 %4, %0
+  %5 = or i32 %0, %4
   %6 = or i32 %5, 1052672
   ret i32 %6
 }

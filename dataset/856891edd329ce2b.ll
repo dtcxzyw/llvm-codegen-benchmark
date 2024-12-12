@@ -11,11 +11,10 @@ entry:
   ret i32 %4
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; abc/optimized/abcGen.c.ll
 ; abc/optimized/bmcBmc3.c.ll
 ; abc/optimized/cbaNtk.c.ll
-; abc/optimized/cswMan.c.ll
 ; abc/optimized/extraUtilSupp.c.ll
 ; bullet3/optimized/b3DynamicBvhBroadphase.ll
 ; bullet3/optimized/btDbvtBroadphase.ll

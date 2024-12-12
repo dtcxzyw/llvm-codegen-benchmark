@@ -8,3 +8,8 @@ func0000000000000004:                   # @func0000000000000004
 	cmovael	%esi, %edi
 	vcvtsi2ss	%edi, %xmm0, %xmm0
 	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpl	$4, %edx
+	cmovael	%esi, %edi
+	vcvtsi2ss	%edi, %xmm0, %xmm0
+	retq

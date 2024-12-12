@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openjdk/optimized/doCall.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000001822(i32 %0, ptr %1) #0 {
+define i1 @func0000000000006042(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne ptr %1, null
   %3 = icmp eq i32 %0, 2
@@ -16,7 +16,7 @@ entry:
 ; gromacs/optimized/decidegpuusage.cpp.ll
 ; postgres/optimized/pgbench.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000222(i32 %0, ptr %1) #0 {
+define i1 @func0000000000000842(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = icmp eq i32 %0, 0
@@ -34,7 +34,7 @@ entry:
 ; icu/optimized/ushape.ll
 ; icu/optimized/ustrtrns.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000182c(i32 %0, ptr %1) #0 {
+define i1 @func000000000000604c(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp ne i32 %0, 0
   %3 = icmp eq ptr %1, null
@@ -50,7 +50,7 @@ entry:
 ; icu/optimized/ubrk.ll
 ; icu/optimized/uregex.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000142c(i32 %0, ptr %1) #0 {
+define i1 @func000000000000504c(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp sgt i32 %0, 0
   %3 = icmp eq ptr %1, null
@@ -65,7 +65,7 @@ entry:
 ; hwloc/optimized/hwloc-bind.ll
 ; hwloc/optimized/hwloc-calc.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000234(i32 %0, ptr %1) #0 {
+define i1 @func0000000000000854(i32 %0, ptr %1) #0 {
 entry:
   %2 = icmp eq ptr %1, null
   %3 = icmp eq i32 %0, 0

@@ -1,9 +1,10 @@
 
-; 37 occurrences:
+; 35 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/giaUtil.c.ll
 ; arrow/optimized/value_parsing.cc.ll
-; brotli/optimized/decode.c.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; duckdb/optimized/ub_duckdb_common_operators.cpp.ll
 ; libquic/optimized/persistent_memory_allocator.cc.ll
 ; linux/optimized/gen8_ppgtt.ll
@@ -34,9 +35,6 @@
 ; ruby/optimized/vm.ll
 ; ruby/optimized/vm_trace.ll
 ; simdjson/optimized/simdjson.cpp.ll
-; spike/optimized/f16_classify.ll
-; spike/optimized/f32_classify.ll
-; spike/optimized/f64_classify.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000001(i1 %0, i1 %1, i64 %2) #0 {
 entry:
@@ -47,7 +45,8 @@ entry:
   ret i1 %6
 }
 
-; 5 occurrences:
+; 6 occurrences:
+; llvm/optimized/AArch64CallingConvention.cpp.ll
 ; llvm/optimized/MachineIRBuilder.cpp.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; raylib/optimized/rtextures.c.ll
@@ -58,6 +57,21 @@ define i1 @func000000000000000c(i1 %0, i1 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, 1
   %4 = icmp ne i64 %3, 0
+  %5 = and i1 %0, %1
+  %6 = select i1 %5, i1 %4, i1 false
+  ret i1 %6
+}
+
+; 4 occurrences:
+; brotli/optimized/encode.c.ll
+; opencv/optimized/softfloat.cpp.ll
+; spike/optimized/f128_to_i32_r_minMag.ll
+; spike/optimized/f64_to_i32_r_minMag.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000014(i1 %0, i1 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, 4503599625273344
+  %4 = icmp eq i64 %3, 0
   %5 = and i1 %0, %1
   %6 = select i1 %5, i1 %4, i1 false
   ret i1 %6

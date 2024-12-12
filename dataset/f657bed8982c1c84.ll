@@ -14,7 +14,7 @@ entry:
   ret i64 %3
 }
 
-; 313 occurrences:
+; 323 occurrences:
 ; assimp/optimized/IFCGeometry.cpp.ll
 ; assimp/optimized/o3dgcDynamicVectorDecoder.cpp.ll
 ; brotli/optimized/brotli_bit_stream.c.ll
@@ -328,6 +328,16 @@ entry:
 ; velox/optimized/ScanTracker.cpp.ll
 ; velox/optimized/SubscriptUtil.cpp.ll
 ; velox/optimized/TimeZoneMap.cpp.ll
+; zed-rs/optimized/3tqegt9m5oad3ocos87azd3mb.ll
+; zed-rs/optimized/4yr6g2ok92pf18o3rcyc7uswo.ll
+; zed-rs/optimized/5e9omh398ijohtd01awo2ssl8.ll
+; zed-rs/optimized/5q8zw1h1kdgz0fiksol53zkaa.ll
+; zed-rs/optimized/69ryzzuwe6uhdzky6991droy3.ll
+; zed-rs/optimized/7for60ncc55q4u0jy3fqr6omg.ll
+; zed-rs/optimized/914lh5mzek2kam75czht77x9a.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/c6zcqmm1tlbhiy5p6czlxqg9e.ll
+; zed-rs/optimized/dzsj8nirralfoazunyz7adgmb.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
@@ -449,7 +459,7 @@ entry:
   ret i64 %3
 }
 
-; 22 occurrences:
+; 24 occurrences:
 ; abseil-cpp/optimized/numbers.cc.ll
 ; eastl/optimized/Int128_t.cpp.ll
 ; hermes/optimized/APInt.cpp.ll
@@ -472,6 +482,8 @@ entry:
 ; spike/optimized/f128_sqrt.ll
 ; spike/optimized/mulr64.ll
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
@@ -480,8 +492,7 @@ entry:
   ret i64 %3
 }
 
-; 36 occurrences:
-; abc/optimized/giaPat2.c.ll
+; 35 occurrences:
 ; ceres/optimized/dense_cholesky.cc.ll
 ; ceres/optimized/dogleg_strategy.cc.ll
 ; ceres/optimized/normal_prior.cc.ll
@@ -576,7 +587,7 @@ entry:
   ret i64 %3
 }
 
-; 54 occurrences:
+; 53 occurrences:
 ; casadi/optimized/sundials_direct.c.ll
 ; darktable/optimized/introspection_basecurve.c.ll
 ; darktable/optimized/introspection_bloom.c.ll
@@ -620,7 +631,6 @@ entry:
 ; openexr/optimized/internal_dwa.c.ll
 ; openusd/optimized/openexr-c.c.ll
 ; openusd/optimized/restoration.c.ll
-; pbrt-v4/optimized/string.cpp.ll
 ; pybind11/optimized/test_buffers.cpp.ll
 ; qemu/optimized/optimize.c.ll
 ; quantlib/optimized/svd.ll
@@ -649,12 +659,16 @@ entry:
   ret i64 %3
 }
 
-; 5 occurrences:
+; 9 occurrences:
 ; duckdb/optimized/ub_duckdb_func_ops_main.cpp.ll
 ; image-rs/optimized/254ue5dpb10tdnze.ll
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; image-rs/optimized/8143hfqbwzfmz2f.ll
 ; softposit-rs/optimized/xadcarspawrhwb8.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
+; zed-rs/optimized/dw4qzuo904yf8wu71sutofhxl.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000a(i64 %0, i64 %1) #0 {
 entry:
@@ -770,7 +784,7 @@ entry:
   ret i64 %3
 }
 
-; 14 occurrences:
+; 13 occurrences:
 ; assimp/optimized/glTF2Exporter.cpp.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/btConvexHullComputer.ll
@@ -781,7 +795,6 @@ entry:
 ; luau/optimized/CostModel.cpp.ll
 ; oiio/optimized/exrinput.cpp.ll
 ; oiio/optimized/nullimageio.cpp.ll
-; openblas/optimized/dsum_k.c.ll
 ; opencv/optimized/tree.cpp.ll
 ; openusd/optimized/restoration.c.ll
 ; sundials/optimized/sundials_direct.c.ll
@@ -899,9 +912,8 @@ entry:
   ret i64 %3
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; darktable/optimized/introspection_retouch.c.ll
-; opencv/optimized/imgwarp.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000d(i64 %0, i64 %1) #0 {
 entry:
@@ -910,7 +922,8 @@ entry:
   ret i64 %3
 }
 
-; 8 occurrences:
+; 12 occurrences:
+; abc/optimized/giaPat2.c.ll
 ; casadi/optimized/sparsity.cpp.ll
 ; darktable/optimized/RafDecoder.cpp.ll
 ; gromacs/optimized/gmx_hbond.cpp.ll
@@ -918,7 +931,10 @@ entry:
 ; libwebp/optimized/ssim.c.ll
 ; linux/optimized/dm-stats.ll
 ; nuklear/optimized/unity.c.ll
+; opencv/optimized/imgwarp.cpp.ll
 ; spike/optimized/rfb.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7ud3epkhjcjfe38h6hlh4jrau.ll
 ; Function Attrs: nounwind
 define i64 @func000000000000000f(i64 %0, i64 %1) #0 {
 entry:

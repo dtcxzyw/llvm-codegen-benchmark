@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 16 occurrences:
 ; assimp/optimized/PlyParser.cpp.ll
 ; cvc5/optimized/ackermann.cpp.ll
 ; duckdb/optimized/vector_hash.cpp.ll
@@ -11,15 +11,16 @@
 ; hyperscan/optimized/limex_simd256.c.ll
 ; hyperscan/optimized/limex_simd384.c.ll
 ; hyperscan/optimized/limex_simd512.c.ll
+; llvm/optimized/DataFlowSanitizer.cpp.ll
 ; miniaudio/optimized/unity.c.ll
 ; opencv/optimized/tflite_importer.cpp.ll
 ; raylib/optimized/raudio.c.ll
 ; z3/optimized/smt_internalizer.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(i32 %0) #0 {
+define ptr @func0000000000000003(i32 %0) #0 {
 entry:
   %1 = zext i32 %0 to i64
-  %2 = getelementptr nusw i8, ptr null, i64 %1
+  %2 = getelementptr nusw nuw i8, ptr null, i64 %1
   ret ptr %2
 }
 
@@ -27,10 +28,10 @@ entry:
 ; darktable/optimized/TiffEntry.cpp.ll
 ; faiss/optimized/Heap.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(i32 %0) #0 {
+define ptr @func0000000000000007(i32 %0) #0 {
 entry:
   %1 = zext nneg i32 %0 to i64
-  %2 = getelementptr nusw i8, ptr null, i64 %1
+  %2 = getelementptr nusw nuw i8, ptr null, i64 %1
   ret ptr %2
 }
 

@@ -43,7 +43,7 @@ func0000000000000023:                   # @func0000000000000023
 	vpaddd	%ymm1, %ymm2, %ymm1
 	vpaddd	.LCPI5_0(%rip){1to8}, %ymm1, %ymm1
 	vpsrld	$8, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI6_0:
 	.long	7                               # 0x7
@@ -73,7 +73,7 @@ func000000000000002b:                   # @func000000000000002b
 	vpcmpeqd	%ymm2, %ymm2, %ymm2
 	vpaddd	%ymm2, %ymm1, %ymm1
 	vpsrld	$2, %ymm1, %ymm1
-	vpaddd	%ymm0, %ymm1, %ymm0
+	vpaddd	%ymm1, %ymm0, %ymm0
 	retq
 .LCPI10_0:
 	.long	12000                           # 0x2ee0

@@ -1,11 +1,9 @@
 
-; 21 occurrences:
+; 19 occurrences:
 ; cpython/optimized/_datetimemodule.ll
 ; cpython/optimized/_zoneinfo.ll
 ; icu/optimized/calendar.ll
 ; icu/optimized/simpletz.ll
-; linux/optimized/intel_dkl_phy.ll
-; nuttx/optimized/lib_strftime.c.ll
 ; opencv/optimized/mathfuncs.cpp.ll
 ; opencv/optimized/softfloat.cpp.ll
 ; openssl/optimized/rpktest-bin-rpktest.ll

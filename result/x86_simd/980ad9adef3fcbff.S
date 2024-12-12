@@ -32,11 +32,10 @@ func000000000000000d:                   # @func000000000000000d
 	vpaddd	.LCPI4_0(%rip){1to4}, %xmm0, %xmm0
 	vzeroupper
 	retq
-.LCPI5_0:
-	.long	4294967291                      # 0xfffffffb
 func0000000000000003:                   # @func0000000000000003
 	vpmovqd	%ymm0, %xmm0
-	vpaddd	.LCPI5_0(%rip){1to4}, %xmm0, %xmm0
+	vpcmpeqd	%xmm1, %xmm1, %xmm1
+	vpsubd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI6_0:

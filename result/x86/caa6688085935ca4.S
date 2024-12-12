@@ -1,4 +1,4 @@
-func0000000000000014:                   # @func0000000000000014
+func0000000000000024:                   # @func0000000000000024
 	addl	$-1012, %edx                    # imm = 0xFC0C
 	movzwl	%dx, %eax
 	cmpl	$2988, %eax                     # imm = 0xBAC

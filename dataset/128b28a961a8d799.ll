@@ -1,24 +1,19 @@
 
-%"class.std::__cxx11::basic_string.2690171" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2690172", i64, %union.anon.2690173 }
-%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2690172" = type { ptr }
-%union.anon.2690173 = type { i64, [8 x i8] }
-%"class.clang::DeclAccessPair.2944379" = type { %"struct.llvm::support::detail::packed_endian_specific_integral.2944380" }
-%"struct.llvm::support::detail::packed_endian_specific_integral.2944380" = type { %struct.anon.2944381 }
-%struct.anon.2944381 = type { [8 x i8] }
+%"class.std::__cxx11::basic_string.2802902" = type { %"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2802903", i64, %union.anon.2802904 }
+%"struct.std::__cxx11::basic_string<char>::_Alloc_hider.2802903" = type { ptr }
+%union.anon.2802904 = type { i64, [8 x i8] }
+%"class.clang::DeclAccessPair.3137956" = type { %"struct.llvm::support::detail::packed_endian_specific_integral.3137957" }
+%"struct.llvm::support::detail::packed_endian_specific_integral.3137957" = type { %struct.anon.3137958 }
+%struct.anon.3137958 = type { [8 x i8] }
 
-; 7 occurrences:
+; 2 occurrences:
 ; freetype/optimized/autofit.c.ll
-; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
-; llvm/optimized/ASTStructuralEquivalence.cpp.ll
-; llvm/optimized/MachineVerifier.cpp.ll
-; llvm/optimized/PrologEpilogInserter.cpp.ll
 ; velox/optimized/Filter.cpp.ll
-; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(i1 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000000e(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext i32 %2 to i64
-  %4 = getelementptr nusw %"class.std::__cxx11::basic_string.2690171", ptr %1, i64 %3
+  %4 = getelementptr nusw nuw %"class.std::__cxx11::basic_string.2802902", ptr %1, i64 %3
   %5 = getelementptr nusw i8, ptr %4, i64 -32
   %6 = select i1 %0, ptr null, ptr %5
   ret ptr %6
@@ -38,7 +33,7 @@ entry:
   ret ptr %6
 }
 
-; 60 occurrences:
+; 61 occurrences:
 ; llvm/optimized/ASTConsumers.cpp.ll
 ; llvm/optimized/ASTImporterLookupTable.cpp.ll
 ; llvm/optimized/ASTMatchFinder.cpp.ll
@@ -98,13 +93,30 @@ entry:
 ; llvm/optimized/UncountedLocalVarsChecker.cpp.ll
 ; llvm/optimized/UnsafeBufferUsage.cpp.ll
 ; llvm/optimized/Visitor.cpp.ll
+; protobuf/optimized/command_line_interface.cc.ll
 ; wasmtime-rs/optimized/joyny9bexuq72mb.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001a(i1 %0, ptr %1, i32 %2) #0 {
+define ptr @func000000000000001f(i1 %0, ptr %1, i32 %2) #0 {
 entry:
   %3 = zext nneg i32 %2 to i64
-  %4 = getelementptr nusw %"class.clang::DeclAccessPair.2944379", ptr %1, i64 %3
-  %5 = getelementptr nusw i8, ptr %4, i64 16
+  %4 = getelementptr nusw nuw %"class.clang::DeclAccessPair.3137956", ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 16
+  %6 = select i1 %0, ptr null, ptr %5
+  ret ptr %6
+}
+
+; 5 occurrences:
+; llvm/optimized/AArch64LoadStoreOptimizer.cpp.ll
+; llvm/optimized/ASTStructuralEquivalence.cpp.ll
+; llvm/optimized/MachineVerifier.cpp.ll
+; llvm/optimized/PrologEpilogInserter.cpp.ll
+; wasmtime-rs/optimized/t1qxt6oh6s98so1.ll
+; Function Attrs: nounwind
+define ptr @func000000000000000f(i1 %0, ptr %1, i32 %2) #0 {
+entry:
+  %3 = zext i32 %2 to i64
+  %4 = getelementptr nusw nuw i16, ptr %1, i64 %3
+  %5 = getelementptr nusw nuw i8, ptr %4, i64 2
   %6 = select i1 %0, ptr null, ptr %5
   ret ptr %6
 }

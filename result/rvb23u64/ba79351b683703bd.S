@@ -1,18 +1,4 @@
-func0000000000000024:                   # @func0000000000000024
-	lui	a1, 1
-	lui	a2, 32767
-	addiw	a1, a1, -1
-	addiw	a2, a2, 1
-	add	a1, a1, a0
-	sltu	a0, a0, a2
-	lui	a2, 32768
-	andi	a1, a1, -2048
-	bclri	a1, a1, 11
-	czero.nez	a1, a1, a0
-	czero.eqz	a0, a2, a0
-	or	a0, a0, a1
-	ret
-func0000000000000031:                   # @func0000000000000031
+func0000000000000061:                   # @func0000000000000061
 	addi	a1, a0, 1
 	zext.w	a1, a1
 	addi	a0, a0, -2
@@ -26,27 +12,40 @@ func0000000000000001:                   # @func0000000000000001
 	czero.eqz	a0, a1, a0
 	or	a0, a0, a2
 	ret
-func0000000000000021:                   # @func0000000000000021
+func0000000000000041:                   # @func0000000000000041
 	addi	a1, a0, 1
 	zext.w	a1, a1
 	addi	a0, a0, -2
 	czero.eqz	a0, a1, a0
 	ret
-func0000000000000034:                   # @func0000000000000034
-	lui	a1, 512
-	lui	a2, 1048320
-	addiw	a1, a1, -1
-	add	a1, a1, a0
-	srli	a0, a0, 34
-	and	a1, a1, a2
-	li	a2, 63
-	sltiu	a0, a0, 63
-	slli	a2, a2, 34
+func0000000000000074:                   # @func0000000000000074
+	addi	a1, a0, 23
+	sltiu	a0, a0, 23
+	li	a2, 32
+	andi	a1, a1, 496
 	czero.eqz	a2, a2, a0
 	czero.nez	a0, a1, a0
 	or	a0, a0, a2
 	ret
-func0000000000000036:                   # @func0000000000000036
+func0000000000000044:                   # @func0000000000000044
+	addi	a1, a0, 23
+	sltiu	a0, a0, 23
+	li	a2, 32
+	andi	a1, a1, -16
+	czero.eqz	a2, a2, a0
+	czero.nez	a0, a1, a0
+	or	a0, a0, a2
+	ret
+func0000000000000004:                   # @func0000000000000004
+	addi	a1, a0, 23
+	sltiu	a0, a0, 23
+	li	a2, 32
+	andi	a1, a1, -16
+	czero.eqz	a2, a2, a0
+	czero.nez	a0, a1, a0
+	or	a0, a0, a2
+	ret
+func0000000000000066:                   # @func0000000000000066
 	addi	a1, a0, 32
 	slti	a0, a0, 64
 	li	a2, 64

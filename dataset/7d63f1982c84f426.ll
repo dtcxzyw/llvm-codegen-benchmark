@@ -1,10 +1,9 @@
 
-; 32 occurrences:
+; 31 occurrences:
 ; clamav/optimized/7zIn.c.ll
 ; clamav/optimized/unicode.cpp.ll
 ; cmake/optimized/archive_read_support_format_7zip.c.ll
 ; libsodium/optimized/libsodium_la-codecs.ll
-; linux/optimized/i8259.ll
 ; luau/optimized/CodeGenUtils.cpp.ll
 ; luau/optimized/lvmexecute.cpp.ll
 ; openjdk/optimized/ByteBinary1Bit.ll

@@ -1,7 +1,7 @@
 
-%"struct.mold::elf::VersionPattern.2526054" = type <{ %"class.std::basic_string_view.2525931", %"class.std::basic_string_view.2525931", %"class.std::basic_string_view.2525931", i16, i8, [5 x i8] }>
-%"class.std::basic_string_view.2525931" = type { i64, ptr }
-%"class.std::valarray.2719165" = type { i64, ptr }
+%"struct.mold::elf::VersionPattern.2640461" = type <{ %"class.std::basic_string_view.2640338", %"class.std::basic_string_view.2640338", %"class.std::basic_string_view.2640338", i16, i8, [5 x i8] }>
+%"class.std::basic_string_view.2640338" = type { i64, ptr }
+%"class.std::valarray.2831683" = type { i64, ptr }
 
 ; 22 occurrences:
 ; arrow/optimized/diff.cc.ll
@@ -27,16 +27,28 @@
 ; mold/optimized/passes.cc.X86_64.cc.ll
 ; openusd/optimized/generativeProceduralResolvingSceneIndex.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000041(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sdiv i64 %2, 2
-  %4 = getelementptr nusw %"struct.mold::elf::VersionPattern.2526054", ptr %1, i64 %3
-  %5 = icmp eq ptr %4, %0
+  %4 = getelementptr nusw %"struct.mold::elf::VersionPattern.2640461", ptr %1, i64 %3
+  %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 
-; 274 occurrences:
-; abseil-cpp/optimized/hash_instantiated_test.cc.ll
+; 3 occurrences:
+; hyperscan/optimized/fdr_confirm_compile.cpp.ll
+; linux/optimized/tx.ll
+; minetest/optimized/mesh_compare.cpp.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000081(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = sdiv exact i64 %2, 9
+  %4 = getelementptr i8, ptr %1, i64 %3
+  %5 = icmp eq ptr %0, %4
+  ret i1 %5
+}
+
+; 255 occurrences:
 ; arrow/optimized/exec.cc.ll
 ; arrow/optimized/grouper.cc.ll
 ; arrow/optimized/light_array.cc.ll
@@ -65,7 +77,6 @@ entry:
 ; duckdb/optimized/ub_duckdb_func_string_main.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_projection.cpp.ll
 ; duckdb/optimized/ub_duckdb_storage_statistics.cpp.ll
-; eastl/optimized/TestAlgorithm.cpp.ll
 ; g2o/optimized/slam2d_linear.cpp.ll
 ; g2o/optimized/solver_cholmod.cpp.ll
 ; g2o/optimized/solver_csparse.cpp.ll
@@ -73,25 +84,13 @@ entry:
 ; g2o/optimized/solver_eigen.cpp.ll
 ; g2o/optimized/solver_pcg.cpp.ll
 ; g2o/optimized/solver_slam2d_linear.cpp.ll
-; gromacs/optimized/awh.cpp.ll
 ; gromacs/optimized/biasstate.cpp.ll
-; gromacs/optimized/colvarcomp_apath.cpp.ll
 ; gromacs/optimized/domdec_constraints.cpp.ll
-; gromacs/optimized/dssp.cpp.ll
 ; gromacs/optimized/grompp.cpp.ll
-; gromacs/optimized/hackblock.cpp.ll
 ; gromacs/optimized/pull_rotation.cpp.ll
-; hyperscan/optimized/dfa_min.cpp.ll
-; hyperscan/optimized/rose_build_lookaround.cpp.ll
 ; lightgbm/optimized/dataset.cpp.ll
-; llvm/optimized/CodeGenSchedule.cpp.ll
-; llvm/optimized/ControlHeightReduction.cpp.ll
 ; llvm/optimized/FunctionImport.cpp.ll
-; llvm/optimized/IndirectCallPromotion.cpp.ll
-; llvm/optimized/MemorySanitizer.cpp.ll
 ; llvm/optimized/PGOCtxProfWriter.cpp.ll
-; llvm/optimized/SampleProfileInference.cpp.ll
-; llvm/optimized/SemaTemplateInstantiate.cpp.ll
 ; meshlab/optimized/baseio.cpp.ll
 ; meshlab/optimized/cleanfilter.cpp.ll
 ; meshlab/optimized/cmesh.cpp.ll
@@ -140,16 +139,12 @@ entry:
 ; meshlab/optimized/ofbx.cpp.ll
 ; meshlab/optimized/seam_remover.cpp.ll
 ; meshlab/optimized/shell.cpp.ll
-; minetest/optimized/guiHyperText.cpp.ll
 ; msdfgen/optimized/contour-combiners.cpp.ll
-; nlohmann_json/optimized/unit-element_access2.cpp.ll
-; nlohmann_json/optimized/unit-regression2.cpp.ll
 ; opencc/optimized/PhraseExtract.cpp.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/aruco_board.cpp.ll
 ; opencv/optimized/bagofwords_classification.cpp.ll
 ; opencv/optimized/cascadedetect.cpp.ll
-; opencv/optimized/detection_output_layer.cpp.ll
 ; opencv/optimized/evaluation.cpp.ll
 ; opencv/optimized/feature2d.cpp.ll
 ; opencv/optimized/gstreamingexecutor.cpp.ll
@@ -167,7 +162,6 @@ entry:
 ; opencv/optimized/trackerFeatureSet.cpp.ll
 ; opencv/optimized/trackerStateEstimator.cpp.ll
 ; opencv/optimized/train_HOG.cpp.ll
-; openexr/optimized/ImfDwaCompressor.cpp.ll
 ; openusd/optimized/meshUtil.cpp.ll
 ; openusd/optimized/primIndex_Graph.cpp.ll
 ; openusd/optimized/testHdExtComputationUtils.cpp.ll
@@ -311,37 +305,31 @@ entry:
 ; yosys/optimized/xprop.ll
 ; yosys/optimized/zinit.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000000c1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
-  %3 = getelementptr nusw i8, ptr %1, i64 %2
-  %4 = icmp eq ptr %3, %0
-  ret i1 %4
-}
-
-; 3 occurrences:
-; hyperscan/optimized/fdr_confirm_compile.cpp.ll
-; linux/optimized/tx.ll
-; minetest/optimized/mesh_compare.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000041(ptr %0, ptr %1, i64 %2) #0 {
-entry:
-  %3 = sdiv exact i64 %2, 9
-  %4 = getelementptr i8, ptr %1, i64 %3
-  %5 = icmp eq ptr %4, %0
+  %3 = sdiv exact i64 %2, 12
+  %4 = getelementptr nusw i8, ptr %1, i64 %3
+  %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 
-; 4 occurrences:
+; 10 occurrences:
+; gromacs/optimized/colvarcomp_apath.cpp.ll
+; gromacs/optimized/dssp.cpp.ll
+; hyperscan/optimized/dfa_min.cpp.ll
+; llvm/optimized/SampleProfileInference.cpp.ll
+; opencv/optimized/train_HOG.cpp.ll
+; openexr/optimized/ImfDwaCompressor.cpp.ll
 ; quantlib/optimized/discountingswapengine.ll
 ; quantlib/optimized/swap.ll
 ; quantlib/optimized/utilities.ll
 ; quantlib/optimized/volatilityinterpolationspecifierabcd.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000071(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func00000000000000e1(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = sdiv exact i64 %2, 24
-  %4 = getelementptr nusw nuw %"class.std::valarray.2719165", ptr %1, i64 %3
-  %5 = icmp eq ptr %4, %0
+  %4 = getelementptr nusw nuw %"class.std::valarray.2831683", ptr %1, i64 %3
+  %5 = icmp eq ptr %0, %4
   ret i1 %5
 }
 

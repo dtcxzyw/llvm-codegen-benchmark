@@ -44,13 +44,6 @@ func000000000000000d:                   # @func000000000000000d
 	or	a1, a1, a2
 	or	a0, a0, a1
 	ret
-func000000000000000f:                   # @func000000000000000f
-	slli	a1, a1, 8
-	add	a0, a0, a2
-	add	a0, a0, a1
-	lui	a1, 8192
-	addw	a0, a0, a1
-	ret
 func000000000000003e:                   # @func000000000000003e
 	slli	a1, a1, 16
 	add	a1, a1, a2

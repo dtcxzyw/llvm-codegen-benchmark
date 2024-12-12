@@ -1,5 +1,5 @@
 
-; 43 occurrences:
+; 42 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/bmcMaj2.c.ll
@@ -29,8 +29,6 @@
 ; llvm/optimized/DarwinSDKInfo.cpp.ll
 ; llvm/optimized/ExprCXX.cpp.ll
 ; llvm/optimized/SemaAPINotes.cpp.ll
-; llvm/optimized/Triple.cpp.ll
-; llvm/optimized/TypePrinter.cpp.ll
 ; openmpi/optimized/opal_pointer_array.ll
 ; openmpi/optimized/pmix_pointer_array.ll
 ; pbrt-v4/optimized/image.cpp.ll
@@ -43,6 +41,7 @@
 ; spike/optimized/csrs.ll
 ; spike/optimized/mmu.ll
 ; spike/optimized/processor.ll
+; zed-rs/optimized/6hbnfszf6gkk4nniq4f5ts2z6.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1) #0 {
 entry:
@@ -61,18 +60,6 @@ entry:
   %.not = icmp eq i64 %2, 27
   %3 = select i1 %.not, i64 %1, i64 %0
   ret i64 %3
-}
-
-; 2 occurrences:
-; freetype/optimized/autofit.c.ll
-; freetype/optimized/pshinter.c.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000004(i64 %0, i64 %1) #0 {
-entry:
-  %2 = and i64 %1, 62
-  %3 = icmp ult i64 %2, 54
-  %4 = select i1 %3, i64 %0, i64 %1
-  ret i64 %4
 }
 
 attributes #0 = { nounwind }

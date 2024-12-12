@@ -1,9 +1,8 @@
 
-; 21 occurrences:
+; 20 occurrences:
 ; abc/optimized/lpkCore.c.ll
 ; clamav/optimized/pe_icons.c.ll
 ; clamav/optimized/rebuildpe.c.ll
-; darktable/optimized/RawImageDataU16.cpp.ll
 ; freetype/optimized/psnames.c.ll
 ; libjpeg-turbo/optimized/jidctfst.c.ll
 ; linux/optimized/ehci-hcd.ll
@@ -26,11 +25,11 @@ define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 15
   %4 = sub i32 %1, %3
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
-; 17 occurrences:
+; 18 occurrences:
 ; abc/optimized/absVta.c.ll
 ; abc/optimized/bmcCexCut.c.ll
 ; abc/optimized/bmcUnroll.c.ll
@@ -40,6 +39,7 @@ entry:
 ; icu/optimized/ubidiln.ll
 ; libpng/optimized/pngwutil.c.ll
 ; linux/optimized/intel_rps.ll
+; lvgl/optimized/lv_draw_sw_arc.ll
 ; minetest/optimized/CImage.cpp.ll
 ; openspiel/optimized/quoridor.cc.ll
 ; openvdb/optimized/FastSweeping.cc.ll
@@ -85,7 +85,7 @@ define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 65535
   %4 = sub nuw nsw i32 %1, %3
-  %5 = add nuw nsw i32 %4, %0
+  %5 = add nuw nsw i32 %0, %4
   ret i32 %5
 }
 
@@ -119,7 +119,7 @@ define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 1
   %4 = sub i32 %1, %3
-  %5 = add nsw i32 %4, %0
+  %5 = add nsw i32 %0, %4
   ret i32 %5
 }
 

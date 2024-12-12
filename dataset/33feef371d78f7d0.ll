@@ -29,8 +29,7 @@ entry:
   ret ptr %6
 }
 
-; 5 occurrences:
-; linux/optimized/gso.ll
+; 4 occurrences:
 ; linux/optimized/ndisc.ll
 ; linux/optimized/skbuff.ll
 ; linux/optimized/udp.ll

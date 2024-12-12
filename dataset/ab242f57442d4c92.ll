@@ -63,7 +63,7 @@
 ; velox/optimized/Filter.cpp.ll
 ; verilator/optimized/V3Config.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001b4(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000364(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = ashr exact i64 %1, 3
@@ -79,7 +79,7 @@ entry:
 ; casadi/optimized/im_instantiator.cpp.ll
 ; casadi/optimized/sx_instantiator.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000001b8(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000368(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = ashr exact i64 %2, 3
   %4 = ashr exact i64 %1, 3

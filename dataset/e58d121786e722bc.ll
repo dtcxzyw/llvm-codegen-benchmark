@@ -32,7 +32,7 @@
 ; z3/optimized/theory_pb.cpp.ll
 ; zxing/optimized/ODReader.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 256
   %3 = icmp eq i32 %2, 0
@@ -41,9 +41,10 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; icu/optimized/ucase.ll
 ; lightgbm/optimized/network.cpp.ll
+; lvgl/optimized/lv_math.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; softposit-rs/optimized/8mae6k72v4zmmji.ll
 ; Function Attrs: nounwind

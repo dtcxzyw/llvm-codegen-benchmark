@@ -30,7 +30,7 @@ define i64 @func0000000000000001(i1 %0, i64 %1) #0 {
 entry:
   %2 = lshr i64 %1, 1
   %3 = xor i64 %2, -1
-  %4 = add nsw i64 %3, %1
+  %4 = add nsw i64 %1, %3
   %5 = freeze i1 %0
   %6 = select i1 %5, i64 %4, i64 %2
   ret i64 %6

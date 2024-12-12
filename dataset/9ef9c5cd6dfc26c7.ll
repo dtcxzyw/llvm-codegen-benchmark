@@ -1,5 +1,5 @@
 
-; 68 occurrences:
+; 67 occurrences:
 ; actix-rs/optimized/1ghd7r3h0kcgux6d.ll
 ; clamav/optimized/pe.c.ll
 ; cmake/optimized/archive_read_support_format_cab.c.ll
@@ -51,7 +51,6 @@
 ; pocketpy/optimized/error.cpp.ll
 ; postgres/optimized/multirangetypes.ll
 ; qemu/optimized/ui_vnc-enc-tight.c.ll
-; qemu/optimized/ui_vnc-enc-zlib.c.ll
 ; redis/optimized/ziplist.ll
 ; redis/optimized/zipmap.ll
 ; ruby/optimized/marshal.ll
@@ -91,8 +90,9 @@ entry:
   ret i32 %5
 }
 
-; 33 occurrences:
+; 34 occurrences:
 ; assimp/optimized/zip.c.ll
+; boost/optimized/console_buffer.ll
 ; cmake/optimized/frm_driver.c.ll
 ; git/optimized/diff.ll
 ; git/optimized/ident.ll

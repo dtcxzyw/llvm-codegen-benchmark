@@ -22,6 +22,10 @@ func0000000000000002:                   # @func0000000000000002
 	leal	(%rdi,%rsi), %eax
 	incb	%al
 	retq
+func000000000000000c:                   # @func000000000000000c
+	leal	(%rdi,%rsi), %eax
+	addb	$-8, %al
+	retq
 func0000000000000001:                   # @func0000000000000001
 	leal	(%rdi,%rsi), %eax
 	addb	$-33, %al

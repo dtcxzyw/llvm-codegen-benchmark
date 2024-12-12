@@ -1,4 +1,4 @@
-func00000000000000f1:                   # @func00000000000000f1
+func00000000000001e1:                   # @func00000000000001e1
 	li	a0, 3
 	vsetivli	zero, 8, e16, m1, ta, ma
 	vwmulu.vx	v14, v12, a0

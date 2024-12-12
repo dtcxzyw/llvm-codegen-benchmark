@@ -1,12 +1,12 @@
-func0000000000000041:                   # @func0000000000000041
-	orb	%dil, %sil
+func0000000000000081:                   # @func0000000000000081
+	orb	%sil, %dil
 	sete	%al
 	retq
 func0000000000000001:                   # @func0000000000000001
-	orb	%dil, %sil
+	orb	%sil, %dil
 	sete	%al
 	retq
-func0000000000000061:                   # @func0000000000000061
-	orb	%dil, %sil
+func00000000000000c1:                   # @func00000000000000c1
+	orb	%sil, %dil
 	sete	%al
 	retq

@@ -1,10 +1,11 @@
 
-; 15 occurrences:
+; 16 occurrences:
 ; clamav/optimized/wwunpack.c.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
 ; lightgbm/optimized/bin.cpp.ll
 ; linux/optimized/arc4.ll
 ; luau/optimized/Compiler.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; openssl/optimized/libssl-lib-tls_multib.ll
 ; openssl/optimized/libssl-shlib-tls_multib.ll
 ; qemu/optimized/accel_tcg_cputlb.c.ll
@@ -19,7 +20,7 @@
 define i32 @func0000000000000000(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc i32 %1 to i8
-  %3 = add i8 %2, %0
+  %3 = add i8 %0, %2
   %4 = zext i8 %3 to i32
   ret i32 %4
 }
@@ -31,7 +32,7 @@ entry:
 define i32 @func0000000000000019(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw nsw i32 %1 to i8
-  %3 = add i8 %2, %0
+  %3 = add i8 %0, %2
   %4 = zext nneg i8 %3 to i32
   ret i32 %4
 }
@@ -42,7 +43,7 @@ entry:
 define i32 @func0000000000000010(i8 %0, i32 %1) #0 {
 entry:
   %2 = trunc nuw i32 %1 to i8
-  %3 = add i8 %2, %0
+  %3 = add i8 %0, %2
   %4 = zext i8 %3 to i32
   ret i32 %4
 }

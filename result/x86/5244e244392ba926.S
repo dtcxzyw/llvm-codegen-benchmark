@@ -30,3 +30,11 @@ func0000000000000008:                   # @func0000000000000008
 	testb	$1, %dil
 	cmoveq	%rcx, %rax
 	retq
+func0000000000000014:                   # @func0000000000000014
+	cmpq	$64, %rdx
+	movl	$1, %ecx
+	cmovaeq	%rsi, %rcx
+	testb	$1, %dil
+	movl	$4194304, %eax                  # imm = 0x400000
+	cmoveq	%rcx, %rax
+	retq

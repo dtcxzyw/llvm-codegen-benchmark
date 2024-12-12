@@ -12,14 +12,14 @@ func0000000000000004:                   # @func0000000000000004
 	cmpl	%eax, %esi
 	setb	%al
 	retq
-func0000000000000091:                   # @func0000000000000091
+func0000000000000121:                   # @func0000000000000121
 	subl	%edx, %esi
 	incl	%esi
 	movzbl	%dil, %eax
 	cmpl	%eax, %esi
 	sete	%al
 	retq
-func0000000000000094:                   # @func0000000000000094
+func0000000000000124:                   # @func0000000000000124
 	notl	%edx
 	addl	%esi, %edx
 	movzbl	%dil, %eax

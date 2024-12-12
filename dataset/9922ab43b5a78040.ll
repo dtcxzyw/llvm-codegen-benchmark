@@ -1,9 +1,10 @@
 
-; 4 occurrences:
+; 5 occurrences:
 ; linux/optimized/addrconf.ll
 ; luajit/optimized/lj_gc.ll
 ; luajit/optimized/lj_gc_dyn.ll
 ; qemu/optimized/audio_audio.c.ll
+; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i1 %0, i32 %1) #0 {
 entry:

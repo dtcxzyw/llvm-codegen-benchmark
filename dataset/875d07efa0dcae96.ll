@@ -1,5 +1,5 @@
 
-; 41 occurrences:
+; 43 occurrences:
 ; cvc5/optimized/theory_bv.cpp.ll
 ; freetype/optimized/autofit.c.ll
 ; hermes/optimized/Executor.cpp.ll
@@ -41,6 +41,8 @@
 ; typst-rs/optimized/d6l9ieo9tcw33dn.ll
 ; typst-rs/optimized/m09o5qr68f5khss.ll
 ; wasmedge/optimized/vinode.cpp.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000001(i64 %0, i64 %1, i16 %2) #0 {
 entry:

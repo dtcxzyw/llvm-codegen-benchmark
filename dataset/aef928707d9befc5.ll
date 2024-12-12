@@ -1,5 +1,5 @@
 
-; 110 occurrences:
+; 113 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcHieCec.c.ll
 ; abc/optimized/absDup.c.ll
@@ -39,6 +39,7 @@
 ; abc/optimized/utilIsop.c.ll
 ; abc/optimized/wlcAbc.c.ll
 ; arrow/optimized/decimal.cc.ll
+; boost/optimized/gregorian.ll
 ; bullet3/optimized/btCollisionWorld.ll
 ; bullet3/optimized/btCollisionWorldImporter.ll
 ; bullet3/optimized/btSoftBody.ll
@@ -67,12 +68,13 @@
 ; lodepng/optimized/lodepng.cpp.ll
 ; luajit/optimized/lj_strfmt_num.ll
 ; luajit/optimized/lj_strfmt_num_dyn.ll
+; lvgl/optimized/lv_draw_sw.ll
+; lvgl/optimized/lv_draw_sw_box_shadow.ll
+; lvgl/optimized/lv_table.ll
 ; meshlab/optimized/edit_paint.cpp.ll
 ; openblas/optimized/dlatms.c.ll
 ; openblas/optimized/dlatmt.c.ll
 ; openblas/optimized/dsbgst.c.ll
-; openblas/optimized/dtfttp.c.ll
-; openblas/optimized/dtpttf.c.ll
 ; opencv/optimized/denoising.cpp.ll
 ; opencv/optimized/dxt.cpp.ll
 ; opencv/optimized/filter.dispatch.cpp.ll
@@ -110,6 +112,7 @@
 ; z3/optimized/bit_util.cpp.ll
 ; z3/optimized/expr_abstract.cpp.ll
 ; z3/optimized/expr_pattern_match.cpp.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
@@ -149,7 +152,7 @@ entry:
   ret i32 %5
 }
 
-; 35 occurrences:
+; 36 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/bmcClp.c.ll
 ; abc/optimized/bmcFx.c.ll
@@ -169,6 +172,7 @@ entry:
 ; gromacs/optimized/sbdsqr.cpp.ll
 ; libquic/optimized/padding.c.ll
 ; libquic/optimized/url_parse.cc.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; ncnn/optimized/fold.cpp.ll
 ; openblas/optimized/dgbbrd.c.ll
 ; openblas/optimized/dggglm.c.ll

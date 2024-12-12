@@ -23,7 +23,7 @@
 ; spike/optimized/mmu.ll
 ; spike/optimized/processor.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000047(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000087(i32 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, 4
   %3 = icmp eq i64 %1, 0
@@ -37,7 +37,7 @@ entry:
 ; abc/optimized/rsbDec6.c.ll
 ; spike/optimized/spike.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000053(i32 %0, i64 %1) #0 {
+define i32 @func0000000000000093(i32 %0, i64 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, 4
   %3 = icmp ult i64 %1, 1152921504606846976

@@ -1,5 +1,5 @@
 
-; 157 occurrences:
+; 158 occurrences:
 ; abc/optimized/Glucose.cpp.ll
 ; abc/optimized/Glucose2.cpp.ll
 ; abc/optimized/abcSpeedup.c.ll
@@ -106,6 +106,7 @@
 ; luajit/optimized/lj_bcread_dyn.ll
 ; luajit/optimized/lj_dispatch.ll
 ; luajit/optimized/lj_dispatch_dyn.ll
+; lvgl/optimized/lv_bin_decoder.ll
 ; memcached/optimized/memcached-items.ll
 ; memcached/optimized/memcached-storage.ll
 ; memcached/optimized/memcached_debug-items.ll
@@ -166,7 +167,7 @@ entry:
   ret i32 %5
 }
 
-; 32 occurrences:
+; 34 occurrences:
 ; abc/optimized/absGla.c.ll
 ; abc/optimized/absGlaOld.c.ll
 ; abc/optimized/absOut.c.ll
@@ -174,6 +175,7 @@ entry:
 ; abc/optimized/giaIf.c.ll
 ; abc/optimized/ivySeq.c.ll
 ; abc/optimized/saigIso.c.ll
+; boost/optimized/to_chars.ll
 ; darktable/optimized/amaze.cc.ll
 ; hdf5/optimized/H5Iint.c.ll
 ; llvm/optimized/BugReporter.cpp.ll
@@ -185,6 +187,7 @@ entry:
 ; llvm/optimized/PathDiagnostic.cpp.ll
 ; llvm/optimized/RetainCountDiagnostics.cpp.ll
 ; llvm/optimized/UndefBranchChecker.cpp.ll
+; lvgl/optimized/lv_calendar.ll
 ; minetest/optimized/CImageLoaderBMP.cpp.ll
 ; openexr/optimized/ImfB44Compressor.cpp.ll
 ; openexr/optimized/internal_b44.c.ll
@@ -208,7 +211,7 @@ entry:
   ret i32 %5
 }
 
-; 88 occurrences:
+; 86 occurrences:
 ; abc/optimized/Fxch.c.ll
 ; abc/optimized/FxchMan.c.ll
 ; abc/optimized/FxchSCHashTable.c.ll
@@ -252,7 +255,6 @@ entry:
 ; libwebp/optimized/vp8l_dec.c.ll
 ; linux/optimized/intel_engine_cs.ll
 ; linux/optimized/ipmr.ll
-; linux/optimized/nfs3xdr.ll
 ; linux/optimized/xfrm_user.ll
 ; llvm/optimized/DeclCXX.cpp.ll
 ; luajit/optimized/lj_cparse.ll
@@ -281,7 +283,6 @@ entry:
 ; openspiel/optimized/TransTableL.cpp.ll
 ; openusd/optimized/ilmbase_half.cpp.ll
 ; openvdb/optimized/FastSweeping.cc.ll
-; postgres/optimized/trigger.ll
 ; protobuf/optimized/descriptor.pb.cc.ll
 ; qemu/optimized/hw_usb_dev-smartcard-reader.c.ll
 ; redis/optimized/bitops.ll
@@ -326,6 +327,28 @@ entry:
   %3 = and i32 %2, 64
   %4 = add nuw nsw i32 %0, %1
   %5 = add i32 %4, %3
+  ret i32 %5
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_scale.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 524287
+  %4 = add i32 %0, %1
+  %5 = add nsw i32 %4, %3
+  ret i32 %5
+}
+
+; 1 occurrences:
+; lvgl/optimized/lv_calendar.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000007(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = and i32 %2, 65535
+  %4 = add nsw i32 %0, %1
+  %5 = add nuw nsw i32 %4, %3
   ret i32 %5
 }
 

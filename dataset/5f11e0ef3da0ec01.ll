@@ -1,5 +1,5 @@
 
-; 108 occurrences:
+; 107 occurrences:
 ; darktable/optimized/AbstractLJpegDecoder.cpp.ll
 ; darktable/optimized/DngOpcodes.cpp.ll
 ; darktable/optimized/IiqDecoder.cpp.ll
@@ -87,7 +87,6 @@
 ; minetest/optimized/CIrrDeviceSDL.cpp.ll
 ; minetest/optimized/CXMeshFileLoader.cpp.ll
 ; minetest/optimized/anaglyph.cpp.ll
-; minetest/optimized/c_content.cpp.ll
 ; minetest/optimized/enriched_string.cpp.ll
 ; minetest/optimized/factory.cpp.ll
 ; minetest/optimized/guiTable.cpp.ll

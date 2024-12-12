@@ -61,7 +61,7 @@ entry:
   %3 = add i64 %2, -8
   %4 = sub i64 %3, %1
   %5 = lshr i64 %4, 3
-  %6 = add i64 %5, %0
+  %6 = add i64 %0, %5
   ret i64 %6
 }
 
@@ -77,7 +77,7 @@ entry:
   %3 = add nsw i64 %2, -65
   %4 = sub nsw i64 %3, %1
   %5 = lshr i64 %4, 6
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 
@@ -93,7 +93,7 @@ entry:
   %3 = add i64 %2, -65
   %4 = sub i64 %3, %1
   %5 = lshr i64 %4, 6
-  %6 = add nuw nsw i64 %5, %0
+  %6 = add nuw nsw i64 %0, %5
   ret i64 %6
 }
 

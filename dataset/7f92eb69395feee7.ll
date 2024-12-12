@@ -1,5 +1,7 @@
 
-; 31 occurrences:
+; 33 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; casadi/optimized/cvodea.c.ll
 ; casadi/optimized/idaa.c.ll
 ; casadi/optimized/sundials_sptfqmr.c.ll
@@ -35,7 +37,7 @@
 define double @func0000000000000000(double %0, double %1, double %2) #0 {
 entry:
   %3 = fmul double %2, %2
-  %4 = fmul double %3, %1
+  %4 = fmul double %1, %3
   %5 = fdiv double %4, %0
   ret double %5
 }

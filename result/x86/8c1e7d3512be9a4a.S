@@ -1,20 +1,20 @@
-func0000000000000061:                   # @func0000000000000061
+func00000000000000c1:                   # @func00000000000000c1
 	movzbl	%dl, %eax
 	shll	$8, %eax
 	orl	%esi, %eax
 	testl	%edi, %eax
 	sete	%al
 	retq
-func0000000000000051:                   # @func0000000000000051
+func00000000000000a1:                   # @func00000000000000a1
 	shll	$24, %edx
 	orl	%esi, %edx
-	testl	%edi, %edx
+	testl	%edx, %edi
 	sete	%al
 	retq
-func0000000000000071:                   # @func0000000000000071
+func00000000000000e1:                   # @func00000000000000e1
 	movzbl	%dl, %eax
 	shll	$8, %eax
 	orl	%esi, %eax
-	testl	%edi, %eax
+	testl	%eax, %edi
 	sete	%al
 	retq

@@ -3,7 +3,7 @@ func0000000000000002:                   # @func0000000000000002
 	shll	$5, %esi
 	addl	$944, %esi                      # imm = 0x3B0
 	xorl	%eax, %eax
-	cmpl	%edi, %esi
+	cmpl	%esi, %edi
 	sete	%al
 	retq
 func000000000000000c:                   # @func000000000000000c
@@ -12,8 +12,8 @@ func000000000000000c:                   # @func000000000000000c
 	andl	$1, %eax
 	leal	9(,%rax,8), %ecx
 	xorl	%eax, %eax
-	cmpl	%edi, %ecx
-	setg	%al
+	cmpl	%ecx, %edi
+	setl	%al
 	retq
 func0000000000000018:                   # @func0000000000000018
 	notb	%sil
@@ -21,7 +21,7 @@ func0000000000000018:                   # @func0000000000000018
 	andl	$1, %eax
 	leal	-2(%rax,%rax), %ecx
 	xorl	%eax, %eax
-	cmpl	%edi, %ecx
+	cmpl	%ecx, %edi
 	setne	%al
 	retq
 func0000000000000016:                   # @func0000000000000016
@@ -30,6 +30,6 @@ func0000000000000016:                   # @func0000000000000016
 	movl	$12, %ecx
 	cmovnel	%eax, %ecx
 	xorl	%eax, %eax
-	cmpl	%edi, %ecx
-	setle	%al
+	cmpl	%ecx, %edi
+	setge	%al
 	retq

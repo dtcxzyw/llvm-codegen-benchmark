@@ -20,7 +20,19 @@ entry:
   ret i64 %6
 }
 
-; 13 occurrences:
+; 1 occurrences:
+; ruby/optimized/io.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000014(i32 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %1 to i32
+  %4 = icmp samesign ult i64 %1, %2
+  %5 = select i1 %4, i32 %3, i32 %0
+  %6 = sext i32 %5 to i64
+  ret i64 %6
+}
+
+; 12 occurrences:
 ; clamav/optimized/oabd.c.ll
 ; git/optimized/remote-curl.ll
 ; linux/optimized/ip6_output.ll
@@ -33,7 +45,6 @@ entry:
 ; qemu/optimized/hw_usb_core.c.ll
 ; qemu/optimized/hw_usb_desc-msos.c.ll
 ; qemu/optimized/hw_usb_dev-network.c.ll
-; ruby/optimized/io.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i32 %0, i64 %1, i64 %2) #0 {
 entry:
@@ -72,7 +83,7 @@ entry:
 ; 1 occurrences:
 ; clamav/optimized/mszipd.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000036(i32 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000066(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %1 to i32
   %4 = icmp slt i64 %1, %2
@@ -81,11 +92,22 @@ entry:
   ret i64 %6
 }
 
-; 2 occurrences:
-; linux/optimized/memory.ll
+; 1 occurrences:
 ; openusd/optimized/resize.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000034(i32 %0, i64 %1, i64 %2) #0 {
+define i64 @func0000000000000074(i32 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = trunc nuw nsw i64 %1 to i32
+  %4 = icmp samesign ult i64 %1, %2
+  %5 = select i1 %4, i32 %3, i32 %0
+  %6 = sext i32 %5 to i64
+  ret i64 %6
+}
+
+; 1 occurrences:
+; linux/optimized/memory.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000064(i32 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %1 to i32
   %4 = icmp ult i64 %1, %2

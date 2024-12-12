@@ -1,5 +1,6 @@
 
-; 2 occurrences:
+; 3 occurrences:
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; openjdk/optimized/mlib_ImageConvClearEdge_Bit.ll
 ; yosys/optimized/aiger.ll
 ; Function Attrs: nounwind

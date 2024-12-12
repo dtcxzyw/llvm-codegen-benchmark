@@ -6,7 +6,7 @@
 ; rust-analyzer-rs/optimized/4ij72b67lj8l3d8u.ll
 ; rust-analyzer-rs/optimized/558lcqqd41cqw6uz.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func00000000000000c4(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = lshr i8 %2, 4
   %4 = zext nneg i8 %3 to i64
@@ -18,7 +18,7 @@ entry:
 ; 1 occurrences:
 ; image-rs/optimized/2s4mh02dvph60euq.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = lshr i8 %2, 3
   %4 = zext nneg i8 %3 to i64
@@ -30,7 +30,7 @@ entry:
 ; 1 occurrences:
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, i64 %1, i8 %2) #0 {
+define i1 @func0000000000000086(i64 %0, i64 %1, i8 %2) #0 {
 entry:
   %3 = lshr i8 %2, 1
   %4 = zext nneg i8 %3 to i64

@@ -1,9 +1,8 @@
 
-; 13 occurrences:
+; 12 occurrences:
 ; clamav/optimized/explode.c.ll
 ; clamav/optimized/sigtool.c.ll
 ; icu/optimized/usprep.ll
-; libevent/optimized/bufferevent_pair.c.ll
 ; linux/optimized/rc80211_minstrel_ht.ll
 ; meshlab/optimized/miniz.c.ll
 ; minetest/optimized/nodedef.cpp.ll

@@ -2,7 +2,7 @@
 ; 1 occurrences:
 ; openssl/optimized/dtlstest-bin-dtlstest.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001b(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000002b(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %.not = icmp slt i32 %3, %0
@@ -25,7 +25,7 @@ entry:
 ; libwebp/optimized/anim_decode.c.ll
 ; opencv/optimized/datastructs.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func000000000000001a(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000002a(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %1, %2
   %4 = icmp sgt i32 %3, %0

@@ -10,17 +10,7 @@ entry:
   ret i64 %4
 }
 
-; 11 occurrences:
-; openusd/optimized/bboxCache.cpp.ll
-; openusd/optimized/clipCache.cpp.ll
-; openusd/optimized/dependencies.cpp.ll
-; openusd/optimized/flatteningSceneIndex.cpp.ll
-; openusd/optimized/namespaceEditor.cpp.ll
-; openusd/optimized/primDataSourceOverlayCache.cpp.ll
-; openusd/optimized/primTypePruningSceneIndex.cpp.ll
-; openusd/optimized/retainedSceneIndex.cpp.ll
-; openusd/optimized/sceneIndexAdapterSceneDelegate.cpp.ll
-; openusd/optimized/testSdfPathTable.cpp.ll
+; 1 occurrences:
 ; php/optimized/zend_smart_str.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000020(i64 %0, i64 %1) #0 {
@@ -31,21 +21,33 @@ entry:
   ret i64 %3
 }
 
-; 7 occurrences:
+; 6 occurrences:
 ; abc/optimized/adler32.c.ll
 ; cmake/optimized/adler32.c.ll
 ; gromacs/optimized/adler32.c.ll
 ; libquic/optimized/adler32.c.ll
-; postgres/optimized/dynahash.ll
 ; postgres/optimized/nodeHash.ll
 ; zlib/optimized/adler32.c.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000061(i64 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ugt i64 %1, 65520
+  %2 = icmp samesign ugt i64 %1, 65520
   %3 = add nsw i64 %0, -65521
   %4 = select i1 %2, i64 %3, i64 -1
   ret i64 %4
+}
+
+; 3 occurrences:
+; boost/optimized/xml_grammar.ll
+; boost/optimized/xml_wgrammar.ll
+; pbrt-v4/optimized/color.cpp.ll
+; Function Attrs: nounwind
+define i64 @func000000000000002b(i64 %0, i64 %1) #0 {
+entry:
+  %2 = add nuw nsw i64 %0, 1
+  %.inv = icmp slt i64 %1, 0
+  %3 = select i1 %.inv, i64 0, i64 %2
+  ret i64 %3
 }
 
 ; 1 occurrences:
@@ -74,14 +76,14 @@ entry:
 }
 
 ; 1 occurrences:
-; pbrt-v4/optimized/color.cpp.ll
+; postgres/optimized/dynahash.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000002b(i64 %0, i64 %1) #0 {
+define i64 @func0000000000000021(i64 %0, i64 %1) #0 {
 entry:
-  %2 = add nuw nsw i64 %0, 1
-  %.inv = icmp slt i64 %1, 1
-  %3 = select i1 %.inv, i64 1, i64 %2
-  ret i64 %3
+  %2 = icmp ugt i64 %1, 1
+  %3 = add nsw i64 %0, -1
+  %4 = select i1 %2, i64 %3, i64 0
+  ret i64 %4
 }
 
 ; 1 occurrences:

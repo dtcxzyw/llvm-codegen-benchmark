@@ -6,13 +6,13 @@
 define i32 @func0000000000000000(i1 %0, i32 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = or i32 %3, %1
+  %4 = or i32 %1, %3
   %5 = select i1 %0, i32 1073741824, i32 0
   %6 = or i32 %5, %4
   ret i32 %6
 }
 
-; 28 occurrences:
+; 31 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; bullet3/optimized/btGhostObject.ll
 ; darktable/optimized/export_metadata.c.ll
@@ -41,11 +41,14 @@ entry:
 ; qemu/optimized/hw_watchdog_wdt_i6300esb.c.ll
 ; recastnavigation/optimized/DetourNavMeshBuilder.cpp.ll
 ; typst-rs/optimized/1ru1rhojhbz2vfey.ll
+; wolfssl/optimized/internal.c.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
+; zed-rs/optimized/a80esttvizzblelz7vl2fpyaz.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000003(i32 %0, i1 %1, i1 %2) #0 {
 entry:
   %3 = zext i1 %2 to i32
-  %4 = or disjoint i32 %3, %0
+  %4 = or disjoint i32 %0, %3
   %5 = select i1 %1, i32 16, i32 0
   %6 = or disjoint i32 %4, %5
   ret i32 %6

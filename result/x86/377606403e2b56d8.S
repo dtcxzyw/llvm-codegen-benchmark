@@ -1,9 +1,9 @@
 func0000000000000007:                   # @func0000000000000007
 	xorl	%eax, %eax
-	testl	%edx, %edx
+	cmpl	$1, %edx
 	sete	%al
-	shll	$8, %eax
-	andl	$3072, %esi                     # imm = 0xC00
+	shll	$3, %eax
+	andl	$-25, %esi
 	orl	%edi, %esi
 	orl	%esi, %eax
 	retq

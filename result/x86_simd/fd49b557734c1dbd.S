@@ -38,15 +38,20 @@ func0000000000000001:                   # @func0000000000000001
 	vpternlogd	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
 	vpaddd	.LCPI6_0(%rip){1to8}, %ymm0, %ymm0
 	retq
-.LCPI7_0:
+func0000000000000003:                   # @func0000000000000003
+	vpternlogd	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
+	vpcmpeqd	%ymm1, %ymm1, %ymm1
+	vpsubd	%ymm1, %ymm0, %ymm0
+	retq
+.LCPI8_0:
 	.long	12                              # 0xc
 func000000000000000e:                   # @func000000000000000e
 	vpternlogd	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
-	vpaddd	.LCPI7_0(%rip){1to8}, %ymm0, %ymm0
+	vpaddd	.LCPI8_0(%rip){1to8}, %ymm0, %ymm0
 	retq
-.LCPI8_0:
+.LCPI9_0:
 	.long	4294901760                      # 0xffff0000
 func0000000000000008:                   # @func0000000000000008
 	vpternlogd	$254, %ymm2, %ymm1, %ymm0 # ymm0 = ymm0 | ymm1 | ymm2
-	vpaddd	.LCPI8_0(%rip){1to8}, %ymm0, %ymm0
+	vpaddd	.LCPI9_0(%rip){1to8}, %ymm0, %ymm0
 	retq

@@ -1,5 +1,5 @@
 
-; 28 occurrences:
+; 27 occurrences:
 ; abc/optimized/dauTree.c.ll
 ; cjson/optimized/cJSON.c.ll
 ; clamav/optimized/explode.c.ll
@@ -8,7 +8,6 @@
 ; cpython/optimized/unicodeobject.ll
 ; flatbuffers/optimized/idl_parser.cpp.ll
 ; icu/optimized/genmbcs.ll
-; linux/optimized/intel_snps_phy.ll
 ; linux/optimized/ip_options.ll
 ; minetest/optimized/networkpacket.cpp.ll
 ; opencv/optimized/grfmt_tiff.cpp.ll
@@ -383,7 +382,7 @@ define i32 @func0000000000000006(i32 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 65535
   %3 = add nuw nsw i32 %2, 1
-  %4 = or i32 %3, %0
+  %4 = or i32 %0, %3
   ret i32 %4
 }
 

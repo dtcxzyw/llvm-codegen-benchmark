@@ -1,5 +1,5 @@
 
-; 857 occurrences:
+; 849 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; abc/optimized/abcIf.c.ll
 ; abc/optimized/abcLut.c.ll
@@ -155,16 +155,12 @@
 ; linux/optimized/bitmap.ll
 ; linux/optimized/commoncap.ll
 ; linux/optimized/core.ll
-; linux/optimized/cppc.ll
 ; linux/optimized/cpu_entry_area.ll
 ; linux/optimized/cpuset.ll
 ; linux/optimized/dir.ll
 ; linux/optimized/exfldio.ll
-; linux/optimized/features.ll
 ; linux/optimized/genalloc.ll
-; linux/optimized/gso.ll
 ; linux/optimized/hugetlb.ll
-; linux/optimized/i915_mm.ll
 ; linux/optimized/init_64.ll
 ; linux/optimized/io_pgtable.ll
 ; linux/optimized/io_pgtable_v2.ll
@@ -172,7 +168,6 @@
 ; linux/optimized/ip6_tables.ll
 ; linux/optimized/ip_tables.ll
 ; linux/optimized/memory.ll
-; linux/optimized/netlabel_addrlist.ll
 ; linux/optimized/page_alloc.ll
 ; linux/optimized/pcc.ll
 ; linux/optimized/pgtable.ll
@@ -214,7 +209,6 @@
 ; llvm/optimized/LoopStrengthReduce.cpp.ll
 ; llvm/optimized/MemCpyOptimizer.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RegAllocGreedy.cpp.ll
 ; llvm/optimized/RegisterPressure.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
@@ -476,8 +470,6 @@
 ; postgres/optimized/sha2.ll
 ; postgres/optimized/sha2_shlib.ll
 ; postgres/optimized/sha2_srv.ll
-; proj/optimized/factory.cpp.ll
-; proj/optimized/io.cpp.ll
 ; pybind11/optimized/cross_module_gil_utils.cpp.ll
 ; pybind11/optimized/cross_module_interleaved_error_already_set.cpp.ll
 ; pybind11/optimized/eigen_tensor_avoid_stl_array.cpp.ll
@@ -865,7 +857,7 @@ entry:
   ret i64 %4
 }
 
-; 88 occurrences:
+; 89 occurrences:
 ; abc/optimized/bmcCexDepth.c.ll
 ; abc/optimized/bmcCexTools.c.ll
 ; abc/optimized/darLib.c.ll
@@ -876,10 +868,11 @@ entry:
 ; linux/optimized/alternative.ll
 ; linux/optimized/dmar.ll
 ; linux/optimized/dump_pagetables.ll
+; linux/optimized/hugetlb.ll
 ; linux/optimized/hugetlb_vmemmap.ll
 ; linux/optimized/iface.ll
 ; linux/optimized/init_64.ll
-; linux/optimized/machine_kexec_64.ll
+; linux/optimized/mprotect.ll
 ; linux/optimized/pti.ll
 ; linux/optimized/siphash.ll
 ; linux/optimized/sparse-vmemmap.ll
@@ -958,7 +951,7 @@ entry:
 define i64 @func0000000000000001(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %1, %2
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 

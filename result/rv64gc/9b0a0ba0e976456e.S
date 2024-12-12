@@ -3,24 +3,24 @@ func0000000000000010:                   # @func0000000000000010
 	add	a0, a0, a1
 	addi	a0, a0, 21
 	ret
-func0000000000000018:                   # @func0000000000000018
+func000000000000001c:                   # @func000000000000001c
 	slliw	a1, a1, 1
 	add	a0, a0, a1
 	addi	a0, a0, 11
 	ret
-func000000000000003a:                   # @func000000000000003a
+func000000000000003e:                   # @func000000000000003e
 	sext.w	a1, a1
 	slli	a1, a1, 5
 	add	a0, a0, a1
 	addi	a0, a0, 16
 	ret
-func000000000000001a:                   # @func000000000000001a
+func000000000000001e:                   # @func000000000000001e
 	slliw	a1, a1, 1
 	slli	a1, a1, 3
 	add	a0, a0, a1
 	addi	a0, a0, 16
 	ret
-func0000000000000038:                   # @func0000000000000038
+func000000000000003c:                   # @func000000000000003c
 	sext.w	a1, a1
 	slli	a1, a1, 4
 	add	a0, a0, a1

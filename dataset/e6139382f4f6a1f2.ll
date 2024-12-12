@@ -6,7 +6,7 @@ define i32 @func000000000000001a(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 16807
   %3 = lshr i32 %2, 15
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   ret i32 %4
 }
 
@@ -26,7 +26,7 @@ define i32 @func0000000000000000(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 257
   %3 = lshr i32 %2, 16
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 
@@ -95,7 +95,8 @@ entry:
   ret i32 %4
 }
 
-; 71 occurrences:
+; 72 occurrences:
+; boost/optimized/src.ll
 ; oiio/optimized/CineonHeader.cpp.ll
 ; oiio/optimized/argparse.cpp.ll
 ; oiio/optimized/benchmark.cpp.ll
@@ -170,8 +171,8 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i32 %0, i32 %1) #0 {
 entry:
-  %2 = mul i32 %1, 52429
-  %3 = lshr i32 %2, 19
+  %2 = mul i32 %1, -732923
+  %3 = lshr i32 %2, 20
   %4 = add nsw i32 %3, %0
   ret i32 %4
 }
@@ -206,7 +207,7 @@ define i32 @func0000000000000002(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul i32 %1, 9
   %3 = lshr i32 %2, 1
-  %4 = add nuw i32 %3, %0
+  %4 = add nuw i32 %0, %3
   ret i32 %4
 }
 
@@ -234,7 +235,7 @@ define i32 @func0000000000000018(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nuw nsw i32 %1, 77
   %3 = lshr i32 %2, 8
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   ret i32 %4
 }
 

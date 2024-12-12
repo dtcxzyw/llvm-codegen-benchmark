@@ -1,6 +1,5 @@
 
-; 15 occurrences:
-; linux/optimized/net-traces.ll
+; 14 occurrences:
 ; linux/optimized/tcp_input.ll
 ; linux/optimized/tcp_output.ll
 ; luajit/optimized/lj_asm.ll
@@ -16,7 +15,7 @@
 ; luajit/optimized/lj_snap.ll
 ; luajit/optimized/lj_snap_dyn.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000061(i8 %0) #0 {
+define i1 @func00000000000000c1(i8 %0) #0 {
 entry:
   %1 = and i8 %0, 31
   %2 = zext nneg i8 %1 to i32

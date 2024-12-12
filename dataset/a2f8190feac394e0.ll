@@ -1,4 +1,20 @@
 
+; 4 occurrences:
+; openusd/optimized/convolve.c.ll
+; qemu/optimized/hw_char_riscv_htif.c.ll
+; ruby/optimized/rjit_c.ll
+; wireshark/optimized/catapult_dct2000.c.ll
+; Function Attrs: nounwind
+define ptr @func00000000000000c0(ptr %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc nuw nsw i64 %2 to i32
+  %4 = add i32 %1, 1
+  %5 = add i32 %4, %3
+  %6 = sext i32 %5 to i64
+  %7 = getelementptr i64, ptr %0, i64 %6
+  ret ptr %7
+}
+
 ; 7 occurrences:
 ; abseil-cpp/optimized/demangle.cc.ll
 ; llvm/optimized/SampleProfileMatcher.cpp.ll
@@ -18,30 +34,13 @@ entry:
   ret ptr %7
 }
 
-; 3 occurrences:
-; openusd/optimized/convolve.c.ll
-; qemu/optimized/hw_char_riscv_htif.c.ll
-; wireshark/optimized/catapult_dct2000.c.ll
-; Function Attrs: nounwind
-define ptr @func00000000000000c0(ptr %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add i32 %1, -1
-  %5 = add i32 %4, %3
-  %6 = sext i32 %5 to i64
-  %7 = getelementptr i8, ptr %0, i64 %6
-  ret ptr %7
-}
-
-; 8 occurrences:
+; 6 occurrences:
 ; arrow/optimized/UriRecompose.c.ll
 ; darktable/optimized/export.c.ll
-; git/optimized/xutils.ll
 ; imgui/optimized/imgui.cpp.ll
 ; openjdk/optimized/ciMethodData.ll
 ; openspiel/optimized/battleship.cc.ll
 ; openspiel/optimized/trade_comm.cc.ll
-; openusd/optimized/patchMap.cpp.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000016(ptr %0, i32 %1, i64 %2) #0 {
 entry:
@@ -53,15 +52,13 @@ entry:
   ret ptr %7
 }
 
-; 26 occurrences:
+; 22 occurrences:
 ; abc/optimized/cuddExact.c.ll
 ; gromacs/optimized/dgemv.cpp.ll
-; gromacs/optimized/dlasdt.cpp.ll
 ; gromacs/optimized/dsymv.cpp.ll
 ; gromacs/optimized/dsyr2.cpp.ll
 ; gromacs/optimized/dsyr2k.cpp.ll
 ; gromacs/optimized/sgemv.cpp.ll
-; gromacs/optimized/slasdt.cpp.ll
 ; gromacs/optimized/ssymv.cpp.ll
 ; gromacs/optimized/ssyr2.cpp.ll
 ; gromacs/optimized/ssyr2k.cpp.ll
@@ -72,11 +69,9 @@ entry:
 ; ncnn/optimized/lstm_x86_avxvnni.cpp.ll
 ; opencv/optimized/gfluidimgproc.cpp.ll
 ; opencv/optimized/nonrigid_icp.cpp.ll
-; opencv/optimized/samplers.cpp.ll
 ; openjdk/optimized/fieldInfo.ll
 ; openjdk/optimized/unsigned5.ll
 ; openspiel/optimized/laser_tag_test.cc.ll
-; openusd/optimized/cfl.c.ll
 ; openusd/optimized/meshUtil.cpp.ll
 ; velox/optimized/ArraySort.cpp.ll
 ; yosys/optimized/booth.ll
@@ -93,6 +88,7 @@ entry:
 
 ; 14 occurrences:
 ; abc/optimized/mvcDivide.c.ll
+; clamav/optimized/manager.c.ll
 ; darktable/optimized/amaze.cc.ll
 ; gromacs/optimized/dlarft.cpp.ll
 ; gromacs/optimized/gmx_arpack.cpp.ll
@@ -100,7 +96,6 @@ entry:
 ; ncnn/optimized/lstm_x86_avx512.cpp.ll
 ; ncnn/optimized/lstm_x86_avx512vnni.cpp.ll
 ; openblas/optimized/dgbbrd.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dlatrs3.c.ll
 ; openblas/optimized/dsbgst.c.ll
 ; openblas/optimized/dsbtrd.c.ll
@@ -132,6 +127,20 @@ entry:
   ret ptr %7
 }
 
+; 2 occurrences:
+; git/optimized/xutils.ll
+; openusd/optimized/patchMap.cpp.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000017(ptr %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %2 to i32
+  %4 = add nsw i32 %1, 2
+  %5 = add nsw i32 %4, %3
+  %6 = sext i32 %5 to i64
+  %7 = getelementptr nusw nuw i8, ptr %0, i64 %6
+  ret ptr %7
+}
+
 ; 1 occurrences:
 ; duckdb/optimized/ub_duckdb_storage_compression.cpp.ll
 ; Function Attrs: nounwind
@@ -142,25 +151,6 @@ entry:
   %5 = add i32 %4, %3
   %6 = sext i32 %5 to i64
   %7 = getelementptr nusw i8, ptr %0, i64 %6
-  ret ptr %7
-}
-
-; 7 occurrences:
-; clamav/optimized/manager.c.ll
-; openblas/optimized/dlatms.c.ll
-; openblas/optimized/dlatmt.c.ll
-; postgres/optimized/fe-protocol3.ll
-; wireshark/optimized/catapult_dct2000.c.ll
-; wireshark/optimized/log3gpp.c.ll
-; wireshark/optimized/text_import.c.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000000(ptr %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc i64 %2 to i32
-  %4 = add i32 %1, 1
-  %5 = add i32 %4, %3
-  %6 = sext i32 %5 to i64
-  %7 = getelementptr i8, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -177,17 +167,21 @@ entry:
   ret ptr %7
 }
 
-; 2 occurrences:
-; gromacs/optimized/dtrtri.cpp.ll
-; gromacs/optimized/strtri.cpp.ll
+; 6 occurrences:
+; openblas/optimized/dlatms.c.ll
+; openblas/optimized/dlatmt.c.ll
+; postgres/optimized/fe-protocol3.ll
+; wireshark/optimized/catapult_dct2000.c.ll
+; wireshark/optimized/log3gpp.c.ll
+; wireshark/optimized/text_import.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000014(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000000(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add nsw i32 %1, 1
-  %5 = add nsw i32 %4, %3
+  %4 = add i32 %1, 4
+  %5 = add i32 %4, %3
   %6 = sext i32 %5 to i64
-  %7 = getelementptr float, ptr %0, i64 %6
+  %7 = getelementptr i8, ptr %0, i64 %6
   ret ptr %7
 }
 
@@ -234,19 +228,6 @@ entry:
 }
 
 ; 1 occurrences:
-; postgres/optimized/refint.ll
-; Function Attrs: nounwind
-define ptr @func0000000000000030(ptr %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc i64 %2 to i32
-  %4 = add nuw nsw i32 %1, 1
-  %5 = add i32 %4, %3
-  %6 = sext i32 %5 to i64
-  %7 = getelementptr ptr, ptr %0, i64 %6
-  ret ptr %7
-}
-
-; 1 occurrences:
 ; raylib/optimized/rtext.c.ll
 ; Function Attrs: nounwind
 define ptr @func0000000000000006(ptr %0, i32 %1, i64 %2) #0 {
@@ -262,13 +243,13 @@ entry:
 ; 1 occurrences:
 ; raylib/optimized/rcore.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000032(ptr %0, i32 %1, i64 %2) #0 {
+define ptr @func0000000000000033(ptr %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
   %4 = add nuw nsw i32 %1, 1
   %5 = add i32 %4, %3
   %6 = sext i32 %5 to i64
-  %7 = getelementptr nusw i32, ptr %0, i64 %6
+  %7 = getelementptr nusw nuw i32, ptr %0, i64 %6
   ret ptr %7
 }
 

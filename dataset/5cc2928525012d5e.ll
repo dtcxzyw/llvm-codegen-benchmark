@@ -38,16 +38,18 @@ entry:
   ret i16 %3
 }
 
-; 3 occurrences:
+; 5 occurrences:
 ; delta-rs/optimized/11f8x98axanecwnw.ll
 ; linux/optimized/intel_color.ll
 ; tree-sitter-rs/optimized/625td5bh6h6b3cx.ll
+; zed-rs/optimized/0063uhmld9hazczp36wteke1g.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
 define i16 @func000000000000000f(i64 %0) #0 {
 entry:
   %1 = trunc nuw nsw i64 %0 to i16
-  %2 = add nuw nsw i16 %1, 4
-  %3 = and i16 %2, 4088
+  %2 = add nuw nsw i16 %1, 45
+  %3 = and i16 %2, 127
   ret i16 %3
 }
 

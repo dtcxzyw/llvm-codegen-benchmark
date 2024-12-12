@@ -1,5 +1,5 @@
 
-; 244 occurrences:
+; 246 occurrences:
 ; crow/optimized/example.cpp.ll
 ; crow/optimized/example_blueprint.cpp.ll
 ; crow/optimized/example_catchall.cpp.ll
@@ -244,6 +244,8 @@
 ; wasmedge/optimized/validator.cpp.ll
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000003f(i32 %0, i16 %1) #0 {
 entry:
@@ -255,8 +257,12 @@ entry:
   ret i32 %6
 }
 
-; 1 occurrences:
+; 5 occurrences:
 ; image-rs/optimized/34r8dryqmufipcqz.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/738kk4f8xx4axqteya4t2w4qw.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000003d(i32 %0, i16 %1) #0 {
 entry:
@@ -268,8 +274,10 @@ entry:
   ret i32 %6
 }
 
-; 1 occurrences:
+; 3 occurrences:
 ; image-rs/optimized/34r8dryqmufipcqz.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
+; zed-rs/optimized/cx71ub8yawjmqorj8q1l4vja8.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000001d(i32 %0, i16 %1) #0 {
 entry:

@@ -1,5 +1,5 @@
 
-; 272 occurrences:
+; 265 occurrences:
 ; abc/optimized/abcDar.c.ll
 ; abc/optimized/abcHieNew.c.ll
 ; abc/optimized/absGlaOld.c.ll
@@ -18,6 +18,7 @@
 ; arrow/optimized/UriRecompose.c.ll
 ; assimp/optimized/IFCGeometry.cpp.ll
 ; assimp/optimized/ProcessHelper.cpp.ll
+; boost/optimized/target.ll
 ; brotli/optimized/encode.c.ll
 ; bullet3/optimized/btSoftBody.ll
 ; c3c/optimized/llvm_codegen_builtins.c.ll
@@ -38,7 +39,6 @@
 ; fmt/optimized/compile-test.cc.ll
 ; fmt/optimized/format-impl-test.cc.ll
 ; folly/optimized/AsyncSocket.cpp.ll
-; folly/optimized/SSLErrors.cpp.ll
 ; folly/optimized/Zlib.cpp.ll
 ; g2o/optimized/optimization_algorithm_dogleg.cpp.ll
 ; git/optimized/cat-file.ll
@@ -61,7 +61,6 @@
 ; imgui/optimized/imgui_draw.cpp.ll
 ; imgui/optimized/imgui_tables.cpp.ll
 ; libpng/optimized/pngwtran.c.ll
-; libquic/optimized/ssl_lib.c.ll
 ; lief/optimized/cipher.c.ll
 ; lightgbm/optimized/bin.cpp.ll
 ; linux/optimized/access.ll
@@ -167,7 +166,6 @@
 ; mitsuba3/optimized/principled.cpp.ll
 ; mitsuba3/optimized/roughconductor.cpp.ll
 ; mitsuba3/optimized/roughdielectric.cpp.ll
-; mitsuba3/optimized/x86func.cpp.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; ncnn/optimized/concat_x86.cpp.ll
 ; ncnn/optimized/convolution1d_x86.cpp.ll
@@ -194,8 +192,6 @@
 ; ncnn/optimized/requantize_x86_avx512.cpp.ll
 ; ncnn/optimized/requantize_x86_fma.cpp.ll
 ; ncnn/optimized/slice_x86.cpp.ll
-; nuttx/optimized/lib_strftime.c.ll
-; nuttx/optimized/pthread_mutexattr_setrobust.c.ll
 ; ocio/optimized/GammaOpData.cpp.ll
 ; opencv/optimized/filter.dispatch.cpp.ll
 ; opencv/optimized/norm.cpp.ll
@@ -235,10 +231,8 @@
 ; proxygen/optimized/HTTP2Codec.cpp.ll
 ; proxygen/optimized/HTTPTransaction.cpp.ll
 ; pugixml/optimized/pugixml.cpp.ll
-; qemu/optimized/hw_block_hd-geometry.c.ll
 ; qemu/optimized/hw_vfio_migration.c.ll
 ; qemu/optimized/target_riscv_pmp.c.ll
-; qemu/optimized/tcg-op-ldst.c.ll
 ; qemu/optimized/tcg.c.ll
 ; quickjs/optimized/quickjs.ll
 ; raylib/optimized/raudio.c.ll
@@ -262,7 +256,6 @@
 ; wireshark/optimized/packet-juniper.c.ll
 ; wireshark/optimized/packet-rpc.c.ll
 ; wireshark/optimized/packet-rtp-midi.c.ll
-; wireshark/optimized/packet-stun.c.ll
 ; wolfssl/optimized/asn.c.ll
 ; wolfssl/optimized/suites.c.ll
 ; yyjson/optimized/yyjson.c.ll

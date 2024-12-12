@@ -12,13 +12,13 @@ func0000000000000300:                   # @func0000000000000300
 	xorl	%eax, %eax
 	cmpl	$2, %esi
 	setne	%al
-	leal	-1(%rax,%rdi), %eax
+	leal	-1(%rdi,%rax), %eax
 	retq
 func0000000000000040:                   # @func0000000000000040
 	xorl	%eax, %eax
 	cmpl	$1, %esi
 	sete	%al
-	leal	1(%rax,%rdi), %eax
+	leal	1(%rdi,%rax), %eax
 	retq
 func0000000000000200:                   # @func0000000000000200
 	cmpl	$3, %esi

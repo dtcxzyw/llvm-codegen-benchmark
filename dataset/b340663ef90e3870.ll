@@ -9,9 +9,9 @@
 ; linux/optimized/tx.ll
 ; llvm/optimized/ASTReader.cpp.ll
 ; llvm/optimized/GlobalModuleIndex.cpp.ll
+; lvgl/optimized/lv_dropdown.ll
+; lvgl/optimized/lv_obj_scroll.ll
 ; mitsuba3/optimized/mesh.cpp.ll
-; openblas/optimized/dgbtrf.c.ll
-; openblas/optimized/dlasyf_aa.c.ll
 ; postgres/optimized/fe-protocol3.ll
 ; qemu/optimized/hw_vfio_common.c.ll
 ; ruby/optimized/thread.ll
@@ -30,7 +30,7 @@
 define i32 @func0000000000000000(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, -1
   %6 = add i32 %5, %0
   ret i32 %6
@@ -42,7 +42,7 @@ entry:
 define i32 @func00000000000000b7(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add nsw i32 %4, -1
   %6 = add nuw nsw i32 %5, %0
   ret i32 %6
@@ -54,7 +54,7 @@ entry:
 define i32 @func00000000000000f7(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add nuw nsw i32 %3, %1
+  %4 = add nuw nsw i32 %1, %3
   %5 = add nsw i32 %4, -1
   %6 = add nuw nsw i32 %5, %0
   ret i32 %6
@@ -66,9 +66,9 @@ entry:
 define i32 @func0000000000000005(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add nsw i32 %4, -12
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -78,7 +78,7 @@ entry:
 define i32 @func0000000000000040(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nsw i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, 1
   %6 = add i32 %5, %0
   ret i32 %6
@@ -90,7 +90,7 @@ entry:
 define i32 @func0000000000000015(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nsw i32 %4, 1
   %6 = add nsw i32 %5, %0
   ret i32 %6
@@ -102,9 +102,9 @@ entry:
 define i32 @func0000000000000085(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add nsw i32 %4, 1
-  %6 = add nsw i32 %5, %0
+  %6 = add nsw i32 %0, %5
   ret i32 %6
 }
 
@@ -114,8 +114,22 @@ entry:
 define i32 @func0000000000000084(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add nsw i32 %4, 1
+  %6 = add i32 %5, %0
+  ret i32 %6
+}
+
+; 3 occurrences:
+; lvgl/optimized/lv_buttonmatrix.ll
+; lvgl/optimized/lv_table.ll
+; redis/optimized/redis-cli.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000010(i32 %0, i32 %1, i64 %2) #0 {
+entry:
+  %3 = trunc i64 %2 to i32
+  %4 = add nsw i32 %1, %3
+  %5 = add i32 %4, -1
   %6 = add i32 %5, %0
   ret i32 %6
 }
@@ -127,7 +141,7 @@ entry:
 define i32 @func0000000000000014(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nsw i32 %4, -1
   %6 = add i32 %5, %0
   ret i32 %6
@@ -139,22 +153,9 @@ entry:
 define i32 @func0000000000000018(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add nuw i32 %4, 1
   %6 = add i32 %5, %0
-  ret i32 %6
-}
-
-; 2 occurrences:
-; gromacs/optimized/dgetf2.cpp.ll
-; gromacs/optimized/sgetf2.cpp.ll
-; Function Attrs: nounwind
-define i32 @func00000000000000d5(i32 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add nsw i32 %3, %1
-  %5 = add nsw i32 %4, -1
-  %6 = add nsw i32 %5, %0
   ret i32 %6
 }
 
@@ -166,7 +167,7 @@ entry:
 define i32 @func0000000000000080(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, 1
   %6 = add i32 %5, %0
   ret i32 %6
@@ -178,7 +179,7 @@ entry:
 define i32 @func0000000000000007(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add nsw i32 %4, -9
   %6 = add nuw nsw i32 %5, %0
   ret i32 %6
@@ -190,21 +191,8 @@ entry:
 define i32 @func0000000000000004(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add nsw i32 %4, 1
-  %6 = add i32 %5, %0
-  ret i32 %6
-}
-
-; 2 occurrences:
-; openblas/optimized/dorgr2.c.ll
-; redis/optimized/redis-cli.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000010(i32 %0, i32 %1, i64 %2) #0 {
-entry:
-  %3 = trunc i64 %2 to i32
-  %4 = add nsw i32 %3, %1
-  %5 = add i32 %4, -1
   %6 = add i32 %5, %0
   ret i32 %6
 }
@@ -215,7 +203,7 @@ entry:
 define i32 @func00000000000000d0(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = add i32 %4, -1
   %6 = add i32 %5, %0
   ret i32 %6
@@ -227,7 +215,7 @@ entry:
 define i32 @func00000000000000c8(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add nuw i32 %4, 3
   %6 = add i32 %5, %0
   ret i32 %6
@@ -239,9 +227,9 @@ entry:
 define i32 @func00000000000000c0(i32 %0, i32 %1, i64 %2) #0 {
 entry:
   %3 = trunc nuw nsw i64 %2 to i32
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = add i32 %4, 3
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 

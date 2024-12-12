@@ -1,8 +1,9 @@
 
-; 101 occurrences:
+; 100 occurrences:
 ; abseil-cpp/optimized/duration.cc.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; assimp/optimized/IRRLoader.cpp.ll
+; boost/optimized/src.ll
 ; c3c/optimized/parse_global.c.ll
 ; cmake/optimized/deflate.c.ll
 ; cmake/optimized/gzwrite.c.ll
@@ -42,7 +43,6 @@
 ; llvm/optimized/MachineInstr.cpp.ll
 ; llvm/optimized/ModuloSchedule.cpp.ll
 ; llvm/optimized/RISCVISelDAGToDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/TargetLoweringObjectFileImpl.cpp.ll
@@ -52,8 +52,6 @@
 ; mitsuba3/optimized/jitallocator.cpp.ll
 ; nori/optimized/window.cpp.ll
 ; ockam-rs/optimized/8g2r22yshp3qi00.ll
-; openblas/optimized/dgbmv_thread_t.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dgemv_thread_n.c.ll
 ; openblas/optimized/dggsvp3.c.ll
 ; openblas/optimized/dlagsy.c.ll
@@ -97,6 +95,7 @@
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; wireshark/optimized/to_str.c.ll
 ; xgboost/optimized/recordio.cc.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; zlib/optimized/deflate.c.ll
 ; zlib/optimized/gzwrite.c.ll
 ; zstd/optimized/zstd_lazy.c.ll
@@ -448,7 +447,7 @@ entry:
   ret i64 %4
 }
 
-; 24 occurrences:
+; 23 occurrences:
 ; abc/optimized/ioReadBench.c.ll
 ; arrow/optimized/array_dict.cc.ll
 ; arrow/optimized/builder_dict.cc.ll
@@ -459,7 +458,6 @@ entry:
 ; git/optimized/sequencer.ll
 ; git/optimized/worktree.ll
 ; hermes/optimized/Conversions.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; lz4/optimized/lz4hc.c.ll
 ; meshlab/optimized/packing.cpp.ll
 ; opencv/optimized/genericgfpoly.cpp.ll
@@ -529,8 +527,7 @@ entry:
   ret i64 %4
 }
 
-; 3 occurrences:
-; darktable/optimized/KdcDecoder.cpp.ll
+; 2 occurrences:
 ; git/optimized/read-cache.ll
 ; rust-analyzer-rs/optimized/y83zt9lwqltsa78.ll
 ; Function Attrs: nounwind
@@ -595,13 +592,15 @@ entry:
   ret i64 %4
 }
 
-; 6 occurrences:
+; 8 occurrences:
 ; cmake/optimized/frm_driver.c.ll
 ; freetype/optimized/sfnt.c.ll
 ; linux/optimized/cppc_acpi.ll
 ; linux/optimized/i915_perf.ll
 ; llvm/optimized/InstCombineShifts.cpp.ll
 ; llvm/optimized/MSFBuilder.cpp.ll
+; zed-rs/optimized/1z1mutvtueodj7ida85oqfqbf.ll
+; zed-rs/optimized/5myosu1trto0j57qdqc7aher2.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000004(i32 %0, i64 %1) #0 {
 entry:
@@ -611,9 +610,11 @@ entry:
   ret i64 %4
 }
 
-; 2 occurrences:
+; 4 occurrences:
 ; llvm/optimized/InstCombineSimplifyDemanded.cpp.ll
 ; quickjs/optimized/quickjs.ll
+; zed-rs/optimized/1t5v9s1wekevc3d06tmavyyzj.ll
+; zed-rs/optimized/4u1wy5rl98hlbpe1w1qdctlx5.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000005(i32 %0, i64 %1) #0 {
 entry:

@@ -4,8 +4,8 @@ func0000000000000004:                   # @func0000000000000004
 	vcmpltpd	%zmm5, %zmm6, %k2
 	vmovapd	%zmm3, %zmm3 {%k2} {z}
 	vmovapd	%zmm2, %zmm2 {%k1} {z}
-	vmulpd	%zmm0, %zmm2, %zmm0
-	vmulpd	%zmm1, %zmm3, %zmm1
+	vmulpd	%zmm2, %zmm0, %zmm0
+	vmulpd	%zmm3, %zmm1, %zmm1
 	retq
 func0000000000000007:                   # @func0000000000000007
 	vxorpd	%xmm6, %xmm6, %xmm6
@@ -20,8 +20,8 @@ func000000000000000e:                   # @func000000000000000e
 	vcmpordpd	%zmm6, %zmm5, %k2
 	vmovapd	%zmm3, %zmm3 {%k2} {z}
 	vmovapd	%zmm2, %zmm2 {%k1} {z}
-	vmulpd	%zmm0, %zmm2, %zmm0
-	vmulpd	%zmm1, %zmm3, %zmm1
+	vmulpd	%zmm2, %zmm0, %zmm0
+	vmulpd	%zmm3, %zmm1, %zmm1
 	retq
 .LCPI3_0:
 	.quad	0x3ff0000000000000              # double 1

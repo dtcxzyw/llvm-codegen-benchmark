@@ -1,14 +1,15 @@
 
-; 286 occurrences:
+; 287 occurrences:
 ; abc/optimized/abcSop.c.ll
 ; abc/optimized/deflate.c.ll
-; abc/optimized/kitPla.c.ll
 ; abseil-cpp/optimized/discrete_distribution_test.cc.ll
 ; abseil-cpp/optimized/graphcycles_test.cc.ll
 ; arrow/optimized/UriQuery.c.ll
 ; arrow/optimized/align_util.cc.ll
 ; arrow/optimized/writer.cc.ll
+; assimp/optimized/SMDLoader.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/numeric.ll
 ; c3c/optimized/lexer.c.ll
 ; ceres/optimized/covariance_impl.cc.ll
 ; ceres/optimized/gradient_checking_cost_function.cc.ll
@@ -385,7 +386,8 @@ entry:
   ret i64 %6
 }
 
-; 39 occurrences:
+; 40 occurrences:
+; boost/optimized/code_conversion.ll
 ; hermes/optimized/StringPrimitive.cpp.ll
 ; taskflow/optimized/async.cpp.ll
 ; taskflow/optimized/attach_data.cpp.ll
@@ -432,7 +434,7 @@ entry:
   %3 = ptrtoint ptr %0 to i64
   %4 = sub i64 %3, %2
   %5 = shl nuw nsw i64 %4, 1
-  %6 = add nuw nsw i64 %5, 4
+  %6 = add nuw nsw i64 %5, 2
   ret i64 %6
 }
 

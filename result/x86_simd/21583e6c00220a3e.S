@@ -17,3 +17,10 @@ func0000000000000003:                   # @func0000000000000003
 	vpbroadcastd	.LCPI2_0(%rip), %ymm1   # ymm1 = [16,16,16,16,16,16,16,16]
 	vpsubd	%ymm0, %ymm1, %ymm0
 	retq
+.LCPI3_0:
+	.long	2147483695                      # 0x8000002f
+func0000000000000002:                   # @func0000000000000002
+	vpmovsxbd	%xmm0, %ymm0
+	vpbroadcastd	.LCPI3_0(%rip), %ymm1   # ymm1 = [2147483695,2147483695,2147483695,2147483695,2147483695,2147483695,2147483695,2147483695]
+	vpsubd	%ymm0, %ymm1, %ymm0
+	retq

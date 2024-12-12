@@ -22,7 +22,7 @@ entry:
   ret i64 %5
 }
 
-; 49 occurrences:
+; 48 occurrences:
 ; csmith/optimized/CVQualifiers.cpp.ll
 ; g2o/optimized/edge_se2_lotsofxy.cpp.ll
 ; g2o/optimized/edge_se3_lotsofxyz.cpp.ll
@@ -56,7 +56,6 @@ entry:
 ; llvm/optimized/LoadStoreVectorizer.cpp.ll
 ; llvm/optimized/MachineCheckDebugify.cpp.ll
 ; llvm/optimized/MallocChecker.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RangeConstraintManager.cpp.ll
 ; llvm/optimized/SValBuilder.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll
@@ -83,7 +82,7 @@ entry:
   ret i64 %5
 }
 
-; 49 occurrences:
+; 48 occurrences:
 ; abc/optimized/cuddEssent.c.ll
 ; hermes/optimized/APInt.cpp.ll
 ; llvm/optimized/AArch64ISelLowering.cpp.ll
@@ -117,7 +116,6 @@ entry:
 ; llvm/optimized/LoopUtils.cpp.ll
 ; llvm/optimized/LowerSwitch.cpp.ll
 ; llvm/optimized/MallocChecker.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RangeConstraintManager.cpp.ll
 ; llvm/optimized/SValBuilder.cpp.ll
 ; llvm/optimized/ScalarEvolution.cpp.ll

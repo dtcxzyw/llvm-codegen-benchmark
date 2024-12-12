@@ -8,7 +8,7 @@
 ; quantlib/optimized/hullwhite.ll
 ; quantlib/optimized/onefactormodel.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000016(i32 %0, i32 %1) #0 {
+define i64 @func0000000000000026(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub i32 %0, %1
   %3 = sext i32 %2 to i64
@@ -21,7 +21,7 @@ entry:
 ; 1 occurrences:
 ; oiio/optimized/color_ocio.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000056(i32 %0, i32 %1) #0 {
+define i64 @func00000000000000a6(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
   %3 = sext i32 %2 to i64
@@ -34,7 +34,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/X86LoadValueInjectionLoadHardening.cpp.ll
 ; Function Attrs: nounwind
-define i64 @func0000000000000076(i32 %0, i32 %1) #0 {
+define i64 @func00000000000000e6(i32 %0, i32 %1) #0 {
 entry:
   %2 = sub nsw i32 %0, %1
   %3 = sext i32 %2 to i64

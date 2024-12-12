@@ -1,10 +1,9 @@
 
-; 109 occurrences:
+; 107 occurrences:
 ; abc/optimized/sclLiberty.c.ll
 ; abseil-cpp/optimized/elf_mem_image.cc.ll
 ; cmake/optimized/cover.c.ll
 ; cmake/optimized/netrc.c.ll
-; cpython/optimized/datetime.ll
 ; cpython/optimized/pathconfig.ll
 ; cpython/optimized/tracemalloc.ll
 ; curl/optimized/libcurl_la-netrc.ll
@@ -60,7 +59,6 @@
 ; openssl/optimized/libcrypto-lib-property_string.ll
 ; openssl/optimized/libcrypto-lib-rsa_backend.ll
 ; openssl/optimized/libcrypto-lib-rsa_chk.ll
-; openssl/optimized/libcrypto-lib-rsa_depr.ll
 ; openssl/optimized/libcrypto-lib-rsa_sp800_56b_gen.ll
 ; openssl/optimized/libcrypto-lib-sm2_crypt.ll
 ; openssl/optimized/libcrypto-lib-x_pubkey.ll
@@ -74,7 +72,6 @@
 ; openssl/optimized/libcrypto-shlib-property_string.ll
 ; openssl/optimized/libcrypto-shlib-rsa_backend.ll
 ; openssl/optimized/libcrypto-shlib-rsa_chk.ll
-; openssl/optimized/libcrypto-shlib-rsa_depr.ll
 ; openssl/optimized/libcrypto-shlib-rsa_sp800_56b_gen.ll
 ; openssl/optimized/libcrypto-shlib-sm2_crypt.ll
 ; openssl/optimized/libcrypto-shlib-x_pubkey.ll
@@ -107,10 +104,11 @@
 ; typst-rs/optimized/5antv5sfgwt5l2ke.ll
 ; wireshark/optimized/packet-dbus.c.ll
 ; wireshark/optimized/packet-rtp.c.ll
+; zed-rs/optimized/2i8hya6f2t9bndlbd6b6686oi.ll
 ; zstd/optimized/cover.c.ll
 ; zxing/optimized/DMDetector.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000011(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000021(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %0, i1 true, i1 %3
@@ -119,7 +117,7 @@ entry:
   ret i1 %6
 }
 
-; 94 occurrences:
+; 92 occurrences:
 ; c3c/optimized/llvm_codegen_stmt.c.ll
 ; clamav/optimized/clamfi.c.ll
 ; cmake/optimized/cmGlobalGenerator.cxx.ll
@@ -200,10 +198,8 @@ entry:
 ; postgres/optimized/pg_dump.ll
 ; postgres/optimized/user.ll
 ; proj/optimized/concatenatedoperation.cpp.ll
-; proj/optimized/coordinateoperationfactory.cpp.ll
 ; qemu/optimized/block_nbd.c.ll
 ; qemu/optimized/hw_pci_pci.c.ll
-; qemu/optimized/system_balloon.c.ll
 ; qemu/optimized/virtio-9p-client.c.ll
 ; rocksdb/optimized/filter_block_reader_common.cc.ll
 ; rocksdb/optimized/index_reader_common.cc.ll
@@ -215,7 +211,7 @@ entry:
 ; wireshark/optimized/packet-pn-rsi.c.ll
 ; z3/optimized/sat_solver.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000cc(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000018c(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = select i1 %0, i1 true, i1 %3
@@ -228,7 +224,7 @@ entry:
 ; hyperscan/optimized/rose_build_bytecode.cpp.ll
 ; llvm/optimized/CStringChecker.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000181(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = select i1 %0, i1 true, i1 %3
@@ -241,7 +237,7 @@ entry:
 ; llvm/optimized/CStringChecker.cpp.ll
 ; postgres/optimized/pg_dump.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001c(i1 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000002c(i1 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = select i1 %0, i1 true, i1 %3

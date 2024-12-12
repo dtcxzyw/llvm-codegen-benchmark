@@ -1,10 +1,11 @@
 
-; 26 occurrences:
+; 27 occurrences:
 ; linux/optimized/drm_modes.ll
 ; linux/optimized/extents.ll
 ; linux/optimized/intel_cx0_phy.ll
 ; linux/optimized/ip6_flowlabel.ll
 ; linux/optimized/ipconfig.ll
+; lvgl/optimized/lv_ime_pinyin.ll
 ; mold/optimized/output-chunks.cc.ALPHA.cc.ll
 ; mold/optimized/output-chunks.cc.ARM64.cc.ll
 ; mold/optimized/output-chunks.cc.LOONGARCH64.cc.ll

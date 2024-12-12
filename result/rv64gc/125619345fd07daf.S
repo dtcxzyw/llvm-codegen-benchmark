@@ -4,15 +4,6 @@ func0000000000000040:                   # @func0000000000000040
 	sub	a0, a0, a2
 	addi	a0, a0, 8
 	ret
-func00000000000000f8:                   # @func00000000000000f8
-	slli	a1, a1, 1
-	add	a0, a0, a1
-	slli	a1, a2, 2
-	slli	a2, a2, 4
-	sub	a2, a2, a1
-	add	a0, a0, a2
-	addi	a0, a0, 12
-	ret
 func00000000000000c0:                   # @func00000000000000c0
 	li	a3, 72
 	slli	a1, a1, 3

@@ -1,15 +1,10 @@
 
-; 21 occurrences:
+; 16 occurrences:
 ; bullet3/optimized/btMultiBody.ll
 ; darktable/optimized/introspection_demosaic.c.ll
-; linux/optimized/memattr.ll
-; openblas/optimized/dgbtf2.c.ll
-; openblas/optimized/dgbtrf.c.ll
 ; openblas/optimized/dhgeqz.c.ll
 ; openblas/optimized/dlaein.c.ll
 ; openblas/optimized/dorg2r.c.ll
-; openblas/optimized/dorghr.c.ll
-; openblas/optimized/dstein.c.ll
 ; openblas/optimized/dtgex2.c.ll
 ; openusd/optimized/stbImage.cpp.ll
 ; pbrt-v4/optimized/image.cpp.ll
@@ -30,35 +25,7 @@ entry:
   ret i64 %4
 }
 
-; 18 occurrences:
-; arrow/optimized/align_util.cc.ll
-; gromacs/optimized/fft_fftw3.cpp.ll
-; meshlab/optimized/gltf_loader.cpp.ll
-; ncnn/optimized/convolution_x86.cpp.ll
-; ncnn/optimized/convolution_x86_avx.cpp.ll
-; ncnn/optimized/convolution_x86_avx2.cpp.ll
-; ncnn/optimized/convolution_x86_avxvnni.cpp.ll
-; ncnn/optimized/convolution_x86_fma.cpp.ll
-; ncnn/optimized/convolution_x86_xop.cpp.ll
-; opencv/optimized/emdL1.cpp.ll
-; opencv/optimized/hough.cpp.ll
-; opencv/optimized/samplers.cpp.ll
-; openspiel/optimized/chess_test.cc.ll
-; openusd/optimized/stbImage.cpp.ll
-; raylib/optimized/rtextures.c.ll
-; stb/optimized/stb_image_write.c.ll
-; tinygltf/optimized/tiny_gltf.cc.ll
-; yosys/optimized/booth.ll
-; Function Attrs: nounwind
-define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
-entry:
-  %2 = mul i32 %0, %1
-  %3 = add nsw i32 %2, 1
-  %4 = sext i32 %3 to i64
-  ret i64 %4
-}
-
-; 69 occurrences:
+; 66 occurrences:
 ; abc/optimized/abcBlifMv.c.ll
 ; abc/optimized/abcFanOrder.c.ll
 ; abc/optimized/abcFunc.c.ll
@@ -67,7 +34,6 @@ entry:
 ; abc/optimized/acecFadds.c.ll
 ; abc/optimized/bblif.c.ll
 ; abc/optimized/giaClp.c.ll
-; abc/optimized/giaStr.c.ll
 ; abc/optimized/ioUtil.c.ll
 ; abc/optimized/ivyMan.c.ll
 ; abc/optimized/timDump.c.ll
@@ -98,14 +64,12 @@ entry:
 ; meshlab/optimized/pickpointsDialog.cpp.ll
 ; nori/optimized/bitmap.cpp.ll
 ; nori/optimized/nanovg.c.ll
-; openblas/optimized/dgesdd.c.ll
 ; openblas/optimized/dgesvd.c.ll
 ; openblas/optimized/dggevx.c.ll
 ; openblas/optimized/dsytrf_aa_2stage.c.ll
 ; opencv/optimized/apriltag_quad_thresh.cpp.ll
 ; opencv/optimized/connectedcomponents.cpp.ll
 ; opencv/optimized/convolution.cpp.ll
-; opencv/optimized/demosaicing.cpp.ll
 ; opencv/optimized/emdL1.cpp.ll
 ; opencv/optimized/grfmt_tiff.cpp.ll
 ; opencv/optimized/median_blur.dispatch.cpp.ll
@@ -137,14 +101,13 @@ entry:
   ret i64 %4
 }
 
-; 9 occurrences:
+; 8 occurrences:
 ; darktable/optimized/introspection_cacorrect.c.ll
 ; openblas/optimized/dbdsvdx.c.ll
 ; openblas/optimized/dhsein.c.ll
 ; openblas/optimized/dlaqp3rk.c.ll
 ; openblas/optimized/dlaqps.c.ll
 ; openblas/optimized/dtgevc.c.ll
-; openblas/optimized/dtgsna.c.ll
 ; openblas/optimized/dtrevc.c.ll
 ; openblas/optimized/dtrevc3.c.ll
 ; Function Attrs: nounwind
@@ -152,6 +115,27 @@ define i64 @func0000000000000004(i32 %0, i32 %1) #0 {
 entry:
   %2 = mul nsw i32 %0, %1
   %3 = add i32 %2, 16
+  %4 = sext i32 %3 to i64
+  ret i64 %4
+}
+
+; 11 occurrences:
+; arrow/optimized/align_util.cc.ll
+; gromacs/optimized/fft_fftw3.cpp.ll
+; meshlab/optimized/gltf_loader.cpp.ll
+; opencv/optimized/emdL1.cpp.ll
+; opencv/optimized/hough.cpp.ll
+; opencv/optimized/samplers.cpp.ll
+; openusd/optimized/stbImage.cpp.ll
+; raylib/optimized/rtextures.c.ll
+; stb/optimized/stb_image_write.c.ll
+; tinygltf/optimized/tiny_gltf.cc.ll
+; yosys/optimized/booth.ll
+; Function Attrs: nounwind
+define i64 @func0000000000000001(i32 %0, i32 %1) #0 {
+entry:
+  %2 = mul i32 %0, %1
+  %3 = add nsw i32 %2, 1
   %4 = sext i32 %3 to i64
   ret i64 %4
 }

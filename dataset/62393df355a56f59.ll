@@ -1,7 +1,6 @@
 
-; 14 occurrences:
+; 12 occurrences:
 ; assimp/optimized/ASELoader.cpp.ll
-; cmake/optimized/zstd_lazy.c.ll
 ; eastl/optimized/EAString.cpp.ll
 ; openjdk/optimized/arguments.ll
 ; openjdk/optimized/compilerOracle.ll
@@ -13,7 +12,6 @@
 ; php/optimized/zend_jit.ll
 ; rust-analyzer-rs/optimized/3o0zta0tnq3ij8lb.ll
 ; wasmtime-rs/optimized/3r0osxvwe4cd326n.ll
-; zstd/optimized/zstd_lazy.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000001(i8 %0) #0 {
 entry:

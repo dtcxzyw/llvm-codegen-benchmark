@@ -32,11 +32,3 @@ func000000000000002c:                   # @func000000000000002c
 	vpmovm2b	%k0, %xmm0
 	vzeroupper
 	retq
-func000000000000002a:                   # @func000000000000002a
-	vsubps	%zmm2, %zmm1, %zmm1
-	vminps	%zmm1, %zmm0, %zmm0
-	vxorps	%xmm1, %xmm1, %xmm1
-	vcmpleps	%zmm1, %zmm0, %k0
-	vpmovm2b	%k0, %xmm0
-	vzeroupper
-	retq

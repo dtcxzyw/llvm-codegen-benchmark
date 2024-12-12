@@ -1,5 +1,5 @@
 
-; 15 occurrences:
+; 14 occurrences:
 ; clamav/optimized/matcher-ac.c.ll
 ; clamav/optimized/matcher-bm.c.ll
 ; cpython/optimized/_codecs_cn.ll
@@ -12,7 +12,6 @@
 ; qemu/optimized/hw_nvme_ctrl.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; wireshark/optimized/packet-bgp.c.ll
-; wireshark/optimized/packet-ethercat-datagram.c.ll
 ; wireshark/optimized/pcapng.c.ll
 ; wolfssl/optimized/internal.c.ll
 ; Function Attrs: nounwind
@@ -24,7 +23,7 @@ entry:
   ret i32 %5
 }
 
-; 10 occurrences:
+; 11 occurrences:
 ; darktable/optimized/IiqDecoder.cpp.ll
 ; icu/optimized/normalizer2impl.ll
 ; image-rs/optimized/4srzh4wujeew249y.ll
@@ -35,6 +34,7 @@ entry:
 ; wireshark/optimized/packet-5co-legacy.c.ll
 ; wireshark/optimized/packet-rlc-lte.c.ll
 ; wireshark/optimized/packet-umts_rlc.c.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000000d(i32 %0, i32 %1, i16 %2) #0 {
 entry:
@@ -44,7 +44,13 @@ entry:
   ret i32 %5
 }
 
-; 2 occurrences:
+; 8 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/text_file_backend.ll
+; boost/optimized/timer.ll
+; boost/optimized/wait.ll
 ; quantlib/optimized/dataparsers.ll
 ; quantlib/optimized/date.ll
 ; Function Attrs: nounwind
@@ -56,7 +62,9 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 5 occurrences:
+; boost/optimized/default_formatter_factory.ll
+; boost/optimized/text_file_backend.ll
 ; clamav/optimized/cpio.c.ll
 ; cpython/optimized/_datetimemodule.ll
 ; quantlib/optimized/date.ll
@@ -69,8 +77,10 @@ entry:
   ret i32 %5
 }
 
-; 4 occurrences:
+; 6 occurrences:
+; boost/optimized/to_chars.ll
 ; linux/optimized/drm_dsc_helper.ll
+; lvgl/optimized/lv_calendar_header_dropdown.ll
 ; opencv/optimized/stackblur.cpp.ll
 ; openusd/optimized/intrapred.c.ll
 ; slurm/optimized/gres_select_filter.ll
@@ -83,8 +93,9 @@ entry:
   ret i32 %5
 }
 
-; 5 occurrences:
+; 6 occurrences:
 ; icu/optimized/normalizer2impl.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; nori/optimized/nanovg.c.ll
 ; nuklear/optimized/unity.c.ll
 ; recastnavigation/optimized/imguiRenderGL.cpp.ll

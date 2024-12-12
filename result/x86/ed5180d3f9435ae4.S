@@ -5,6 +5,13 @@ func0000000000000000:                   # @func0000000000000000
 	cmoveq	%rcx, %rax
 	imulq	%rdi, %rax
 	retq
+func0000000000000004:                   # @func0000000000000004
+	leaq	1024(%rdx), %rcx
+	testb	$1, %sil
+	movl	$2048, %eax                     # imm = 0x800
+	cmoveq	%rcx, %rax
+	imulq	%rdi, %rax
+	retq
 func000000000000000d:                   # @func000000000000000d
 	leaq	1(%rdx), %rcx
 	xorl	%eax, %eax

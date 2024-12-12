@@ -1,9 +1,9 @@
-func0000000000000022:                   # @func0000000000000022
+func00000000000000a2:                   # @func00000000000000a2
+	xorl	%ecx, %ecx
+	cmpb	$64, %dl
 	movq	$-1, %rax
 	shlxq	%rsi, %rax, %rax
-	xorl	%ecx, %ecx
+	cmovbq	%rcx, %rax
 	testb	$1, %dil
 	cmovneq	%rcx, %rax
-	cmpb	$64, %dl
-	cmovbq	%rcx, %rax
 	retq

@@ -11,7 +11,7 @@ entry:
   ret i64 %6
 }
 
-; 47 occurrences:
+; 48 occurrences:
 ; assimp/optimized/Q3DLoader.cpp.ll
 ; assimp/optimized/SIBImporter.cpp.ll
 ; duckdb/optimized/ub_duckdb_operator_csv_sniffer.cpp.ll
@@ -54,6 +54,7 @@ entry:
 ; minetest/optimized/wieldmesh.cpp.ll
 ; msgpack/optimized/speed_test_nested_array.cpp.ll
 ; opencv/optimized/fast_hough_transform.cpp.ll
+; opencv/optimized/hough.cpp.ll
 ; opencv/optimized/learning_based_color_balance.cpp.ll
 ; opencv/optimized/scansegment.cpp.ll
 ; opencv/optimized/select3dobj.cpp.ll
@@ -64,7 +65,7 @@ define i64 @func000000000000001f(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 12
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   %6 = mul nuw nsw i64 %5, 12
   ret i64 %6
 }
@@ -100,20 +101,21 @@ define i64 @func0000000000000013(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 24
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = mul nuw nsw i64 %5, 24
   ret i64 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/src.ll
 ; hermes/optimized/HadesGC.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000014(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
-  %4 = sdiv exact i64 %3, 6408
+  %4 = sdiv exact i64 %3, -24
   %5 = add nsw i64 %4, %0
-  %6 = mul i64 %5, 6408
+  %6 = mul i64 %5, 24
   ret i64 %6
 }
 
@@ -124,7 +126,7 @@ define i64 @func000000000000001c(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, -24
-  %5 = add nuw nsw i64 %4, %0
+  %5 = add nuw nsw i64 %0, %4
   %6 = mul i64 %5, 24
   ret i64 %6
 }
@@ -136,7 +138,7 @@ define i64 @func0000000000000010(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = sub i64 %1, %2
   %4 = sdiv exact i64 %3, 24
-  %5 = add i64 %4, %0
+  %5 = add i64 %0, %4
   %6 = mul i64 %5, 24
   ret i64 %6
 }

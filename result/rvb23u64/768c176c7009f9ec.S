@@ -1,35 +1,35 @@
-func00000000000000b6:                   # @func00000000000000b6
+func0000000000000166:                   # @func0000000000000166
 	bset	a1, zero, a1
 	sext.w	a1, a1
 	addi	a0, a0, 1
 	slt	a0, a0, a1
 	ret
-func00000000000000ba:                   # @func00000000000000ba
+func000000000000016a:                   # @func000000000000016a
 	bset	a1, zero, a1
 	sext.w	a1, a1
 	addi	a0, a0, 2
 	slt	a0, a1, a0
 	ret
-func000000000000009a:                   # @func000000000000009a
+func000000000000012a:                   # @func000000000000012a
 	bset	a1, zero, a1
 	sext.w	a1, a1
 	addi	a0, a0, 2
 	slt	a0, a1, a0
 	ret
-func00000000000000a1:                   # @func00000000000000a1
+func0000000000000141:                   # @func0000000000000141
 	bset	a1, zero, a1
 	sext.w	a1, a1
 	addi	a0, a0, 1
 	xor	a0, a0, a1
 	seqz	a0, a0
 	ret
-func0000000000000096:                   # @func0000000000000096
+func0000000000000126:                   # @func0000000000000126
 	bset	a1, zero, a1
 	sext.w	a1, a1
 	addi	a0, a0, 1
 	slt	a0, a0, a1
 	ret
-func00000000000000bb:                   # @func00000000000000bb
+func000000000000016b:                   # @func000000000000016b
 	bset	a1, zero, a1
 	sext.w	a1, a1
 	addi	a0, a0, 1

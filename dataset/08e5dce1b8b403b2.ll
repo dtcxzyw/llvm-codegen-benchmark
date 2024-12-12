@@ -27,11 +27,10 @@ entry:
   ret i32 %3
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; linux/optimized/ehci-hcd.ll
 ; linux/optimized/xhci-ring.ll
 ; llvm/optimized/LegalizerHelper.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/ResourcePriorityQueue.cpp.ll
 ; llvm/optimized/TypePrinter.cpp.ll
 ; minetest/optimized/mapgen_v6.cpp.ll

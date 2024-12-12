@@ -11,9 +11,3 @@ func000000000000000c:                   # @func000000000000000c
 .LBB1_2:
 	li	a0, 40
 	ret
-func0000000000000004:                   # @func0000000000000004
-	andi	a0, a0, 124
-	addi	a0, a0, -124
-	seqz	a0, a0
-	addi	a0, a0, 3
-	ret

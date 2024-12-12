@@ -38,6 +38,21 @@ func0000000000000012:                   # @func0000000000000012
 	cmpq	%rsi, %rdi
 	setae	%al
 	retq
+func0000000000000028:                   # @func0000000000000028
+	xorl	%eax, %eax
+	cmpq	%rsi, %rdi
+	setb	%al
+	retq
+func0000000000000030:                   # @func0000000000000030
+	xorl	%eax, %eax
+	cmpq	%rsi, %rdi
+	seta	%al
+	retq
+func000000000000002a:                   # @func000000000000002a
+	xorl	%eax, %eax
+	cmpq	%rsi, %rdi
+	setbe	%al
+	retq
 func0000000000000016:                   # @func0000000000000016
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdi
@@ -47,4 +62,14 @@ func000000000000000e:                   # @func000000000000000e
 	xorl	%eax, %eax
 	cmpq	%rsi, %rdi
 	setle	%al
+	retq
+func0000000000000032:                   # @func0000000000000032
+	xorl	%eax, %eax
+	cmpq	%rsi, %rdi
+	setae	%al
+	retq
+func0000000000000038:                   # @func0000000000000038
+	xorl	%eax, %eax
+	cmpq	%rsi, %rdi
+	setne	%al
 	retq

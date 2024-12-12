@@ -13,3 +13,9 @@ func000000000000006f:                   # @func000000000000006f
 	shrq	$32, %rax
 	imulq	$720575941, %rax, %rax          # imm = 0x2AF31DC5
 	retq
+func00000000000000ef:                   # @func00000000000000ef
+	movabsq	$1844674407371, %rax            # imm = 0x1AD7F29ABCB
+	movq	%rdi, %rdx
+	mulxq	%rax, %rax, %rax
+	imulq	$687195, %rax, %rax             # imm = 0xA7C5B
+	retq

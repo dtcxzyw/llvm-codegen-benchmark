@@ -1,10 +1,11 @@
 
-; 8 occurrences:
+; 9 occurrences:
+; boost/optimized/ipc_reliable_message_queue.ll
 ; linux/optimized/ehci-hcd.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; openssl/optimized/libcrypto-lib-e_aes_cbc_hmac_sha256.ll
 ; openssl/optimized/libcrypto-shlib-e_aes_cbc_hmac_sha256.ll
 ; openssl/optimized/libdefault-lib-cipher_aes_cbc_hmac_sha256_hw.ll
-; openusd/optimized/cdef_block.c.ll
 ; openusd/optimized/level.cpp.ll
 ; php/optimized/zend_ssa.ll
 ; z3/optimized/mpz.cpp.ll

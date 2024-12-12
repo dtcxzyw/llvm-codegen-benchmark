@@ -1,5 +1,5 @@
 
-; 50 occurrences:
+; 51 occurrences:
 ; duckdb/optimized/ub_duckdb_func_compressed_materialization.cpp.ll
 ; freetype/optimized/sfnt.c.ll
 ; icu/optimized/collationbuilder.ll
@@ -50,16 +50,17 @@
 ; spike/optimized/triggers.ll
 ; z3/optimized/smt_clause.cpp.ll
 ; z3/optimized/smt_justification.cpp.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000002(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 196608
   %3 = zext nneg i32 %2 to i64
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 
-; 302 occurrences:
+; 304 occurrences:
 ; abc/optimized/AbcGlucose.cpp.ll
 ; abc/optimized/AbcGlucose2.cpp.ll
 ; abc/optimized/abcCollapse.c.ll
@@ -212,7 +213,6 @@ entry:
 ; abc/optimized/sswConstr.c.ll
 ; abc/optimized/sswFilter.c.ll
 ; abc/optimized/sswRarity.c.ll
-; abc/optimized/sswSimSat.c.ll
 ; abc/optimized/utilBridge.c.ll
 ; abc/optimized/wlcAbs.c.ll
 ; abc/optimized/wlcBlast.c.ll
@@ -220,6 +220,7 @@ entry:
 ; abc/optimized/wlnRead.c.ll
 ; abseil-cpp/optimized/log_uniform_int_distribution_test.cc.ll
 ; arrow/optimized/hashing.cc.ll
+; boost/optimized/to_chars.ll
 ; bullet3/optimized/b3ConvexHullContact.ll
 ; c3c/optimized/ast.c.ll
 ; c3c/optimized/lexer.c.ll
@@ -297,6 +298,9 @@ entry:
 ; luajit/optimized/lj_strscan.ll
 ; luajit/optimized/lj_strscan_dyn.ll
 ; luau/optimized/isocline.c.ll
+; lvgl/optimized/lv_display.ll
+; lvgl/optimized/lv_draw_buf.ll
+; lvgl/optimized/lv_scale.ll
 ; mitsuba3/optimized/cpuinfo.cpp.ll
 ; opencv/optimized/essential_mat_reconstr.cpp.ll
 ; opencv/optimized/lapack.cpp.ll
@@ -309,7 +313,6 @@ entry:
 ; openjdk/optimized/jquant2.ll
 ; openjdk/optimized/multiVis.ll
 ; openjdk/optimized/psCompactionManager.ll
-; openjdk/optimized/psParallelCompact.ll
 ; openjdk/optimized/psPromotionManager.ll
 ; openjdk/optimized/psScavenge.ll
 ; openjdk/optimized/shenandoahHeap.ll
@@ -341,7 +344,6 @@ entry:
 ; qemu/optimized/block_vhdx-log.c.ll
 ; qemu/optimized/fpu_softfloat.c.ll
 ; qemu/optimized/hw_ide_core.c.ll
-; qemu/optimized/hw_pci-host_gpex.c.ll
 ; qemu/optimized/hw_scsi_megasas.c.ll
 ; qemu/optimized/hw_usb_hcd-ehci.c.ll
 ; qemu/optimized/hw_usb_hcd-xhci.c.ll
@@ -361,13 +363,14 @@ entry:
 ; wasmtime-rs/optimized/53hna1nq3hau85x1.ll
 ; wireshark/optimized/packet-flexray.c.ll
 ; z3/optimized/smt_context.cpp.ll
+; zed-rs/optimized/cj1jynvjfep2fqbkboer45ptu.ll
 ; zstd/optimized/huf_decompress.c.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000003(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, 992
   %3 = zext nneg i32 %2 to i64
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
@@ -439,7 +442,7 @@ define i64 @func0000000000000001(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -67108864
   %3 = zext i32 %2 to i64
-  %4 = or disjoint i64 %3, %0
+  %4 = or disjoint i64 %0, %3
   ret i64 %4
 }
 
@@ -455,7 +458,7 @@ define i64 @func0000000000000000(i64 %0, i32 %1) #0 {
 entry:
   %2 = and i32 %1, -25
   %3 = zext i32 %2 to i64
-  %4 = or i64 %3, %0
+  %4 = or i64 %0, %3
   ret i64 %4
 }
 

@@ -17,18 +17,9 @@ func0000000000000006:                   # @func0000000000000006
 	vpandq	.LCPI1_1(%rip){1to4}, %ymm0, %ymm0
 	retq
 .LCPI2_0:
-	.quad	3248559593059516416             # 0x2d1533bd00000000
-.LCPI2_1:
-	.quad	4294967294                      # 0xfffffffe
-func0000000000000001:                   # @func0000000000000001
-	vpmullq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0
-	vpsrlq	$31, %ymm0, %ymm0
-	vpandq	.LCPI2_1(%rip){1to4}, %ymm0, %ymm0
-	retq
-.LCPI3_0:
 	.quad	80                              # 0x50
 func0000000000000002:                   # @func0000000000000002
-	vpmullq	.LCPI3_0(%rip){1to4}, %ymm0, %ymm0
+	vpmullq	.LCPI2_0(%rip){1to4}, %ymm0, %ymm0
 	vpsrlq	$20, %ymm0, %ymm0
 	vpxor	%xmm1, %xmm1, %xmm1
 	vpblendd	$170, %ymm1, %ymm0, %ymm0       # ymm0 = ymm0[0],ymm1[1],ymm0[2],ymm1[3],ymm0[4],ymm1[5],ymm0[6],ymm1[7]

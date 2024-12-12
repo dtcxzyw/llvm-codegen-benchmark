@@ -45,7 +45,7 @@ entry:
   %3 = icmp eq i32 %2, 1
   %4 = select i1 %3, i32 98, i32 88
   %5 = mul i32 %4, %1
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -62,6 +62,22 @@ entry:
   ret i32 %6
 }
 
+; 5 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; meshlab/optimized/texture_rendering.cpp.ll
+; Function Attrs: nounwind
+define i32 @func000000000000001f(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = icmp eq i32 %2, 0
+  %4 = select i1 %3, i32 0, i32 255
+  %5 = mul nuw nsw i32 %4, %1
+  %6 = add nuw nsw i32 %5, %0
+  ret i32 %6
+}
+
 ; 2 occurrences:
 ; arrow/optimized/UriQuery.c.ll
 ; wireshark/optimized/packet-tpncp.c.ll
@@ -71,7 +87,7 @@ entry:
   %3 = icmp eq i32 %2, -2147483648
   %4 = sub nsw i32 0, %1
   %5 = select i1 %3, i32 %4, i32 %1
-  %6 = add i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 
@@ -85,19 +101,7 @@ entry:
   %3 = icmp eq i32 %2, 2
   %4 = select i1 %3, i32 6, i32 3
   %5 = mul nuw nsw i32 %4, %1
-  %6 = add i32 %5, %0
-  ret i32 %6
-}
-
-; 1 occurrences:
-; meshlab/optimized/texture_rendering.cpp.ll
-; Function Attrs: nounwind
-define i32 @func000000000000001f(i32 %0, i32 %1, i32 %2) #0 {
-entry:
-  %3 = icmp eq i32 %2, -2147418368
-  %4 = select i1 %3, i32 0, i32 255
-  %5 = mul nuw nsw i32 %4, %1
-  %6 = add nuw nsw i32 %5, %0
+  %6 = add i32 %0, %5
   ret i32 %6
 }
 

@@ -21,7 +21,7 @@ func000000000000000d:                   # @func000000000000000d
 	movq	%rdi, %rax
 	negq	%rax
 	cmovsq	%rdi, %rax
-	addq	$-4, %rax
+	addq	$-8126464, %rax                 # imm = 0xFF840000
 	retq
 func0000000000000000:                   # @func0000000000000000
 	movq	%rdi, %rax

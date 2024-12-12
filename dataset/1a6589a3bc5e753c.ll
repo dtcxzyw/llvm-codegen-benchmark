@@ -3,7 +3,7 @@
 ; openusd/optimized/stbImage.cpp.ll
 ; raylib/optimized/rtextures.c.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000002c(i1 %0, i32 %1) #0 {
+define i1 @func000000000000004c(i1 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 1, %2
@@ -18,7 +18,7 @@ entry:
 ; postgres/optimized/encnames_shlib.ll
 ; postgres/optimized/encnames_srv.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000006c(i1 %0, i32 %1) #0 {
+define i1 @func00000000000000cc(i1 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 1, %2
@@ -35,12 +35,29 @@ entry:
 ; redis/optimized/jemalloc.ll
 ; redis/optimized/jemalloc.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000064(i1 %0, i32 %1) #0 {
+define i1 @func00000000000000c4(i1 %0, i32 %1) #0 {
 entry:
   %2 = zext nneg i32 %1 to i64
   %3 = shl nuw i64 1, %2
   %4 = and i64 %3, -2
   %5 = icmp ult i64 %4, 4097
+  %6 = select i1 %0, i1 %5, i1 false
+  ret i1 %6
+}
+
+; 5 occurrences:
+; jemalloc/optimized/jemalloc.ll
+; jemalloc/optimized/jemalloc.pic.ll
+; jemalloc/optimized/jemalloc.sym.ll
+; redis/optimized/jemalloc.ll
+; redis/optimized/jemalloc.sym.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000d4(i1 %0, i32 %1) #0 {
+entry:
+  %2 = zext nneg i32 %1 to i64
+  %3 = shl nuw i64 1, %2
+  %4 = and i64 %3, -2
+  %5 = icmp samesign ult i64 %4, 4097
   %6 = select i1 %0, i1 %5, i1 false
   ret i1 %6
 }

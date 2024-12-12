@@ -22,8 +22,14 @@ func000000000000000a:                   # @func000000000000000a
 	orb	%dil, %sil
 	orb	%sil, %al
 	retq
-func0000000000000004:                   # @func0000000000000004
+func0000000000000014:                   # @func0000000000000014
 	cmpq	$11, %rdx
+	setb	%al
+	orb	%dil, %sil
+	orb	%sil, %al
+	retq
+func0000000000000004:                   # @func0000000000000004
+	cmpq	$2, %rdx
 	setb	%al
 	orb	%dil, %sil
 	orb	%sil, %al

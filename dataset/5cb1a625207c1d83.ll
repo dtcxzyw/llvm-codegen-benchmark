@@ -1,5 +1,6 @@
 
-; 10 occurrences:
+; 40 occurrences:
+; boost/optimized/to_chars.ll
 ; darktable/optimized/NikonDecompressor.cpp.ll
 ; darktable/optimized/SamsungV0Decompressor.cpp.ll
 ; fmt/optimized/format-impl-test.cc.ll
@@ -9,6 +10,35 @@
 ; php/optimized/zend_strtod.ll
 ; proxygen/optimized/Window.cpp.ll
 ; ruby/optimized/date_core.ll
+; velox/optimized/ArrayContains.cpp.ll
+; velox/optimized/ArrayDistinct.cpp.ll
+; velox/optimized/ArrayDuplicates.cpp.ll
+; velox/optimized/ArrayPosition.cpp.ll
+; velox/optimized/ArraySort.cpp.ll
+; velox/optimized/BaseVector.cpp.ll
+; velox/optimized/Bridge.cpp.ll
+; velox/optimized/CastExpr.cpp.ll
+; velox/optimized/CoalesceExpr.cpp.ll
+; velox/optimized/ConstantExpr.cpp.ll
+; velox/optimized/EvalCtx.cpp.ll
+; velox/optimized/Expr.cpp.ll
+; velox/optimized/FlatVector.cpp.ll
+; velox/optimized/FromUtf8.cpp.ll
+; velox/optimized/GenericWriter.cpp.ll
+; velox/optimized/JsonFunctions.cpp.ll
+; velox/optimized/JsonType.cpp.ll
+; velox/optimized/LazyVector.cpp.ll
+; velox/optimized/MapEntries.cpp.ll
+; velox/optimized/MapFromEntries.cpp.ll
+; velox/optimized/MapKeysAndValues.cpp.ll
+; velox/optimized/Re2Functions.cpp.ll
+; velox/optimized/Reverse.cpp.ll
+; velox/optimized/Split.cpp.ll
+; velox/optimized/SubscriptUtil.cpp.ll
+; velox/optimized/ToUtf8.cpp.ll
+; velox/optimized/TryExpr.cpp.ll
+; velox/optimized/VectorFuzzer.cpp.ll
+; velox/optimized/VectorSaver.cpp.ll
 ; yyjson/optimized/yyjson.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000007(i32 %0, i32 %1) #0 {
@@ -18,8 +48,9 @@ entry:
   ret i32 %2
 }
 
-; 28 occurrences:
+; 30 occurrences:
 ; abc/optimized/giaSweep.c.ll
+; boost/optimized/default_filter_factory.ll
 ; draco/optimized/float_points_tree_decoder.cc.ll
 ; draco/optimized/kd_tree_attributes_decoder.cc.ll
 ; fmt/optimized/format.cc.ll
@@ -39,6 +70,7 @@ entry:
 ; llvm/optimized/SplitKit.cpp.ll
 ; llvm/optimized/VarLocBasedImpl.cpp.ll
 ; llvm/optimized/X86FrameLowering.cpp.ll
+; lvgl/optimized/lv_draw_sw_transform.ll
 ; node/optimized/libnode.node_buffer.ll
 ; oiio/optimized/rlainput.cpp.ll
 ; openjdk/optimized/mlib_ImageCopy_Bit.ll
@@ -54,7 +86,7 @@ entry:
   ret i32 %.neg
 }
 
-; 48 occurrences:
+; 49 occurrences:
 ; draco/optimized/attribute_octahedron_transform.cc.ll
 ; draco/optimized/sequential_normal_attribute_decoder.cc.ll
 ; draco/optimized/sequential_normal_attribute_encoder.cc.ll
@@ -100,6 +132,7 @@ entry:
 ; wireshark/optimized/stats_tree.c.ll
 ; wireshark/optimized/tvbuff_lz77huff.c.ll
 ; yosys/optimized/BigUnsigned.ll
+; zed-rs/optimized/ecdic6bd9l1pqf3dw7u7642wb.ll
 ; zstd/optimized/zstd_v02.c.ll
 ; zstd/optimized/zstd_v03.c.ll
 ; zstd/optimized/zstd_v04.c.ll
@@ -137,12 +170,17 @@ entry:
   ret i32 %.neg
 }
 
-; 343 occurrences:
+; 348 occurrences:
 ; abc/optimized/giaAiger.c.ll
 ; abc/optimized/giaTtopt.cpp.ll
 ; abc/optimized/ioWriteAiger.c.ll
 ; abc/optimized/ioaWriteAig.c.ll
 ; arrow/optimized/decimal.cc.ll
+; boost/optimized/approximately_equals.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/get_turns_areal_areal.ll
+; boost/optimized/src.ll
+; boost/optimized/to_chars.ll
 ; bullet3/optimized/b3ConvexHullComputer.ll
 ; bullet3/optimized/b3QuantizedBvh.ll
 ; bullet3/optimized/btQuantizedBvh.ll
@@ -270,7 +308,7 @@ entry:
 ; llvm/optimized/APFloat.cpp.ll
 ; llvm/optimized/CodeEmitterGen.cpp.ll
 ; llvm/optimized/LegalizeDAG.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; meshlab/optimized/filter_screened_poisson.cpp.ll
 ; minetest/optimized/game.cpp.ll
 ; nghttp2/optimized/nghttp2_helper.c.ll
@@ -533,17 +571,8 @@ entry:
   ret i32 %2
 }
 
-; 1 occurrences:
-; hdf5/optimized/H5Zscaleoffset.c.ll
-; Function Attrs: nounwind
-define i32 @func0000000000000009(i32 %0, i32 %1) #0 {
-entry:
-  %.neg = sub i32 %1, %0
-  %2 = add i32 %.neg, 8
-  ret i32 %2
-}
-
 ; 37 occurrences:
+; boost/optimized/default_filter_factory.ll
 ; linux/optimized/af_inet.ll
 ; linux/optimized/ah6.ll
 ; linux/optimized/exthdrs.ll
@@ -567,7 +596,6 @@ entry:
 ; linux/optimized/tcp_ipv6.ll
 ; linux/optimized/tcp_offload.ll
 ; linux/optimized/tcpv6_offload.ll
-; linux/optimized/tunnel4.ll
 ; linux/optimized/udp.ll
 ; linux/optimized/udp_offload.ll
 ; linux/optimized/xfrm_input.ll
@@ -585,7 +613,17 @@ entry:
 define i32 @func0000000000000003(i32 %0, i32 %1) #0 {
 entry:
   %.neg = sub i32 %1, %0
-  %2 = add i32 %.neg, 64
+  %2 = add i32 %.neg, -307
+  ret i32 %2
+}
+
+; 1 occurrences:
+; hdf5/optimized/H5Zscaleoffset.c.ll
+; Function Attrs: nounwind
+define i32 @func0000000000000009(i32 %0, i32 %1) #0 {
+entry:
+  %.neg = sub i32 %1, %0
+  %2 = add i32 %.neg, 8
   ret i32 %2
 }
 

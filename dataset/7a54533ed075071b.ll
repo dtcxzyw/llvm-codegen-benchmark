@@ -11,7 +11,7 @@
 ; nlohmann_json/optimized/unit-readme.cpp.ll
 ; nlohmann_json/optimized/unit-udt.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c1(i8 %0, i8 %1, i32 %2) #0 {
+define i1 @func0000000000000181(i8 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = icmp ne i32 %2, 0
   %4 = icmp eq i8 %0, %1

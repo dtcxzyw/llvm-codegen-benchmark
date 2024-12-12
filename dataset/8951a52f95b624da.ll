@@ -1,5 +1,24 @@
 
-; 63 occurrences:
+; 79 occurrences:
+; boost/optimized/async.ll
+; boost/optimized/async_fut.ll
+; boost/optimized/async_pipe.ll
+; boost/optimized/bind_stderr.ll
+; boost/optimized/bind_stdin.ll
+; boost/optimized/bind_stdout.ll
+; boost/optimized/bind_stdout_stderr.ll
+; boost/optimized/channel.ll
+; boost/optimized/exit_code.ll
+; boost/optimized/main.ll
+; boost/optimized/on_exit.ll
+; boost/optimized/on_exit2.ll
+; boost/optimized/on_exit3.ll
+; boost/optimized/process.ll
+; boost/optimized/spawn.ll
+; boost/optimized/system_test1.ll
+; boost/optimized/system_test2.ll
+; boost/optimized/target.ll
+; boost/optimized/wait.ll
 ; clamav/optimized/fmap.c.ll
 ; cmake/optimized/archive_read_disk_posix.c.ll
 ; coreutils-rs/optimized/1rq2clzuccjujjg1.ll
@@ -10,7 +29,6 @@
 ; hdf5/optimized/H5FSsection.c.ll
 ; hdf5/optimized/H5MF.c.ll
 ; hdf5/optimized/H5MFaggr.c.ll
-; hdf5/optimized/H5MFsection.c.ll
 ; lief/optimized/BinaryStream.cpp.ll
 ; lief/optimized/ssl_msg.c.ll
 ; lightgbm/optimized/bin.cpp.ll
@@ -30,11 +48,9 @@
 ; openssl/optimized/libcommon-lib-ciphercommon.ll
 ; openssl/optimized/libssl-lib-quic_rstream.ll
 ; openssl/optimized/libssl-lib-quic_sstream.ll
-; openssl/optimized/libssl-lib-ssl3_meth.ll
 ; openssl/optimized/libssl-lib-tls1_meth.ll
 ; openssl/optimized/libssl-shlib-quic_rstream.ll
 ; openssl/optimized/libssl-shlib-quic_sstream.ll
-; openssl/optimized/libssl-shlib-ssl3_meth.ll
 ; openssl/optimized/libssl-shlib-tls1_meth.ll
 ; portaudio/optimized/pa_linux_alsa.c.ll
 ; postgres/optimized/pg_shmem.ll
@@ -50,7 +66,6 @@
 ; tokio-rs/optimized/58zica37k9qw0rn.ll
 ; typst-rs/optimized/59tuvc5m3xlovl3o.ll
 ; wasmtime-rs/optimized/5dheicv8h8x61a9w.ll
-; wasmtime-rs/optimized/rodgfxfn0hg2efa.ll
 ; yalantinglibs/optimized/channel.cpp.ll
 ; yalantinglibs/optimized/chat_room.cpp.ll
 ; yalantinglibs/optimized/client.cpp.ll
@@ -63,6 +78,7 @@
 ; yalantinglibs/optimized/file_server.cpp.ll
 ; yalantinglibs/optimized/rpc_service.cpp.ll
 ; yalantinglibs/optimized/server.cpp.ll
+; zed-rs/optimized/8v1arbgzeu88ynf653tketgap.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:

@@ -10,13 +10,27 @@
 define ptr @func0000000000000001(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = and i64 %2, -8
-  %4 = icmp eq i64 %3, %1
+  %4 = icmp eq i64 %1, %3
   %5 = select i1 %4, ptr null, ptr %0
   ret ptr %5
 }
 
-; 197 occurrences:
+; 5 occurrences:
 ; cmake/optimized/huf_compress.c.ll
+; openusd/optimized/bboxCache.cpp.ll
+; openusd/optimized/dynamicFileFormatDependencyData.cpp.ll
+; openusd/optimized/listOp.cpp.ll
+; zstd/optimized/huf_compress.c.ll
+; Function Attrs: nounwind
+define ptr @func0000000000000004(ptr %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = and i64 %2, -8
+  %4 = icmp ult i64 %1, %3
+  %5 = select i1 %4, ptr null, ptr %0
+  ret ptr %5
+}
+
+; 192 occurrences:
 ; cvc5/optimized/alf_node_converter.cpp.ll
 ; cvc5/optimized/alf_post_processor.cpp.ll
 ; cvc5/optimized/alf_printer.cpp.ll
@@ -209,15 +223,11 @@ entry:
 ; cvc5/optimized/unsat_core_manager.cpp.ll
 ; cvc5/optimized/variadic_trie.cpp.ll
 ; cvc5/optimized/vts_term_cache.cpp.ll
-; openusd/optimized/bboxCache.cpp.ll
-; openusd/optimized/dynamicFileFormatDependencyData.cpp.ll
-; openusd/optimized/listOp.cpp.ll
-; zstd/optimized/huf_compress.c.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000004(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000014(ptr %0, i64 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, -8
-  %4 = icmp ugt i64 %3, %1
+  %3 = and i64 %2, 1099511627775
+  %4 = icmp samesign ult i64 %1, %3
   %5 = select i1 %4, ptr null, ptr %0
   ret ptr %5
 }

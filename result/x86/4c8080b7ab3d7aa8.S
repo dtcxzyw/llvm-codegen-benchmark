@@ -5,12 +5,11 @@ func0000000000000001:                   # @func0000000000000001
 	testq	%rdx, %rdx
 	sete	%al
 	retq
-func0000000000000021:                   # @func0000000000000021
-	addq	$28, %rdx
-	testb	$1, %dil
-	cmoveq	%rsi, %rdx
-	testq	%rdx, %rdx
+func0000000000000061:                   # @func0000000000000061
+	testq	%rsi, %rsi
 	sete	%al
+	notb	%dil
+	andb	%dil, %al
 	retq
 func000000000000000c:                   # @func000000000000000c
 	addq	$24, %rdx
@@ -19,10 +18,8 @@ func000000000000000c:                   # @func000000000000000c
 	testq	%rdx, %rdx
 	setne	%al
 	retq
-func000000000000002c:                   # @func000000000000002c
-	addq	$16, %rdx
-	testb	$1, %dil
-	cmoveq	%rsi, %rdx
-	testq	%rdx, %rdx
+func000000000000006c:                   # @func000000000000006c
+	testq	%rsi, %rsi
 	setne	%al
+	orb	%dil, %al
 	retq

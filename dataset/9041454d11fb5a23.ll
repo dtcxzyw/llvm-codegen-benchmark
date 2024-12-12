@@ -1,5 +1,8 @@
 
-; 35 occurrences:
+; 38 occurrences:
+; boost/optimized/alloc_lib.ll
+; boost/optimized/from_chars.ll
+; boost/optimized/src.ll
 ; c3c/optimized/lexer.c.ll
 ; hermes/optimized/Operations.cpp.ll
 ; lightgbm/optimized/parser.cpp.ll
@@ -44,13 +47,14 @@ entry:
   ret i64 %5
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; boost/optimized/alloc_lib.ll
 ; linux/optimized/xstate.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i1 %1, i64 %2) #0 {
 entry:
-  %3 = and i64 %2, 3072
-  %4 = select i1 %1, i64 0, i64 %3
+  %3 = and i64 %2, -16
+  %4 = select i1 %1, i64 32, i64 %3
   %5 = or i64 %4, %0
   ret i64 %5
 }

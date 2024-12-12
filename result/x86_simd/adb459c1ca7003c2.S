@@ -22,11 +22,11 @@ func000000000000000c:                   # @func000000000000000c
 	vpcmpneqd	%xmm1, %xmm0, %k0
 	vpmovm2q	%k0, %ymm0
 	retq
-func0000000000000008:                   # @func0000000000000008
-	vpcmpnleud	%xmm1, %xmm0, %k0
-	vpmovm2q	%k0, %ymm0
-	retq
 func0000000000000009:                   # @func0000000000000009
 	vpcmpnltud	%xmm1, %xmm0, %k0
+	vpmovm2q	%k0, %ymm0
+	retq
+func0000000000000008:                   # @func0000000000000008
+	vpcmpnleud	%xmm1, %xmm0, %k0
 	vpmovm2q	%k0, %ymm0
 	retq

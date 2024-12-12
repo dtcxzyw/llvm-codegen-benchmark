@@ -20,9 +20,10 @@ entry:
   ret i32 %4
 }
 
-; 9 occurrences:
+; 10 occurrences:
 ; abc/optimized/giaSimBase.c.ll
 ; abc/optimized/giaUtil.c.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/archive_write_set_format_7zip.c.ll
 ; llvm/optimized/AArch64InstrInfo.cpp.ll
 ; llvm/optimized/CGExpr.cpp.ll
@@ -34,20 +35,6 @@ entry:
 define i32 @func0000000000000002(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp eq i64 %1, 0
-  %3 = select i1 %0, i1 %2, i1 false
-  %4 = zext i1 %3 to i32
-  ret i32 %4
-}
-
-; 4 occurrences:
-; libquic/optimized/d1_lib.c.ll
-; llvm/optimized/X86TargetTransformInfo.cpp.ll
-; openssl/optimized/libcrypto-lib-x_int64.ll
-; openssl/optimized/libcrypto-shlib-x_int64.ll
-; Function Attrs: nounwind
-define i32 @func000000000000000c(i1 %0, i64 %1) #0 {
-entry:
-  %2 = icmp slt i64 %1, 0
   %3 = select i1 %0, i1 %2, i1 false
   %4 = zext i1 %3 to i32
   ret i32 %4
@@ -65,11 +52,11 @@ entry:
 }
 
 ; 1 occurrences:
-; postgres/optimized/regcomp.ll
+; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000008(i1 %0, i64 %1) #0 {
+define i32 @func000000000000000c(i1 %0, i64 %1) #0 {
 entry:
-  %2 = icmp ult i64 %1, 95
+  %2 = icmp slt i64 %1, 2
   %3 = select i1 %0, i1 %2, i1 false
   %4 = zext i1 %3 to i32
   ret i32 %4

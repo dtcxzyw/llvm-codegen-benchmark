@@ -1,6 +1,5 @@
 
-; 6 occurrences:
-; libevent/optimized/evmap.c.ll
+; 5 occurrences:
 ; linux/optimized/nlattr.ll
 ; llvm/optimized/COFFObjectFile.cpp.ll
 ; qemu/optimized/hw_pci_msi.c.ll

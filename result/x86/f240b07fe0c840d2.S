@@ -16,15 +16,15 @@ func000000000000000c:                   # @func000000000000000c
 	setne	%al
 	orb	%sil, %al
 	retq
-func0000000000000004:                   # @func0000000000000004
-	andl	%edx, %esi
-	cmpl	$8, %edi
-	setb	%al
-	orb	%sil, %al
-	retq
 func0000000000000006:                   # @func0000000000000006
 	andl	%edx, %esi
-	cmpl	$68, %edi
-	setl	%al
+	testl	%edi, %edi
+	setle	%al
+	orb	%sil, %al
+	retq
+func0000000000000004:                   # @func0000000000000004
+	andl	%edx, %esi
+	cmpl	$-3, %edi
+	setb	%al
 	orb	%sil, %al
 	retq

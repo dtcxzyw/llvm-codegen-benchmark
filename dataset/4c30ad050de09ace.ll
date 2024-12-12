@@ -28,7 +28,7 @@ entry:
   ret i64 %4
 }
 
-; 8 occurrences:
+; 10 occurrences:
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
 ; brotli/optimized/block_splitter.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
@@ -37,12 +37,14 @@ entry:
 ; php/optimized/zend_ssa.ll
 ; spike/optimized/srl32_u.ll
 ; spike/optimized/srli32_u.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/5x7hg1mlcao6i0r3jb3d14b77.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000018(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nuw nsw i64 %1, 7
   %3 = lshr i64 %2, 3
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   ret i64 %4
 }
 
@@ -54,12 +56,13 @@ define i64 @func0000000000000008(i64 %0, i64 %1) #0 {
 entry:
   %2 = add nsw i64 %1, -1
   %3 = lshr i64 %2, 1
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   ret i64 %4
 }
 
-; 19 occurrences:
+; 20 occurrences:
 ; actix-rs/optimized/4i8sqy4dbcgvpe7w.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; darktable/optimized/introspection_basecurve.c.ll
 ; faiss/optimized/pq4_fast_scan.cpp.ll
 ; hdf5/optimized/H5EAsblock.c.ll
@@ -83,7 +86,7 @@ define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
   %2 = add i64 %1, -1
   %3 = lshr i64 %2, 1
-  %4 = mul i64 %3, %0
+  %4 = mul i64 %0, %3
   ret i64 %4
 }
 

@@ -27,7 +27,7 @@ func0000000000000000:                   # @func0000000000000000
 	vinserti128	$1, %xmm2, %ymm0, %ymm0
 	retq
 func0000000000000002:                   # @func0000000000000002
-	vpsllq	$16, %ymm1, %ymm1
+	vpsllq	$10, %ymm1, %ymm1
 	vextracti128	$1, %ymm0, %xmm2
 	vpextrq	$1, %xmm2, %rcx
 	vextracti128	$1, %ymm1, %xmm3

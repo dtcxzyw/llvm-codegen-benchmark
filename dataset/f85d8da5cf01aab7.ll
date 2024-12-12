@@ -6,7 +6,6 @@
 ; linux/optimized/io_apic.ll
 ; linux/optimized/nfs4proc.ll
 ; linux/optimized/pcm_native.ll
-; linux/optimized/percpu-refcount.ll
 ; linux/optimized/tls.ll
 ; linux/optimized/vgacon.ll
 ; qemu/optimized/hw_usb_dev-serial.c.ll
@@ -15,6 +14,7 @@
 ; wasmtime-rs/optimized/v5prf101dn49s3v.ll
 ; wireshark/optimized/packet-ieee80211-prism.c.ll
 ; wolfssl/optimized/ssl.c.ll
+; zed-rs/optimized/eiu35781qwj0wy44b83i3e7bt.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000003(i8 %0, i8 %1, i32 %2) #0 {
 entry:

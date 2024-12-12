@@ -1,6 +1,6 @@
 func0000000000000001:                   # @func0000000000000001
 	subl	%edx, %esi
-	testl	%edi, %esi
+	testl	%esi, %edi
 	sete	%al
 	retq
 func000000000000000a:                   # @func000000000000000a
@@ -9,21 +9,15 @@ func000000000000000a:                   # @func000000000000000a
 	cmpl	$1514, %esi                     # imm = 0x5EA
 	setge	%al
 	retq
-func000000000000001c:                   # @func000000000000001c
+func000000000000002c:                   # @func000000000000002c
 	subl	%edx, %esi
 	testl	%edi, %esi
 	setne	%al
 	retq
 func000000000000000c:                   # @func000000000000000c
 	subl	%edx, %esi
-	testl	%edi, %esi
+	testl	%esi, %edi
 	setne	%al
-	retq
-func0000000000000014:                   # @func0000000000000014
-	subl	%edx, %esi
-	andl	%edi, %esi
-	cmpl	$50, %esi
-	setb	%al
 	retq
 func0000000000000006:                   # @func0000000000000006
 	movl	%esi, %eax

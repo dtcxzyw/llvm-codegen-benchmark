@@ -28,20 +28,20 @@ func0000000000000005:                   # @func0000000000000005
 func0000000000000008:                   # @func0000000000000008
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmerge.vim	v16, v16, 0, v0
-	vmfeq.vv	v0, v16, v8
+	vmfeq.vv	v0, v8, v16
 	ret
 func0000000000000007:                   # @func0000000000000007
 	fli.d	fa5, nan
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vfmerge.vfm	v16, v16, fa5, v0
-	vmfne.vv	v0, v16, v8
+	vmfne.vv	v0, v8, v16
 	ret
 func000000000000000e:                   # @func000000000000000e
 	vsetivli	zero, 16, e64, m8, ta, ma
 	vmerge.vim	v16, v16, 0, v0
 	vmfeq.vv	v24, v16, v16
 	vmfeq.vv	v16, v8, v8
-	vmand.mm	v0, v24, v16
+	vmand.mm	v0, v16, v24
 	ret
 func000000000000000c:                   # @func000000000000000c
 	vsetivli	zero, 16, e64, m8, ta, ma

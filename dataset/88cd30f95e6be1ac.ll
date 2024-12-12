@@ -311,7 +311,7 @@
 define i1 @func0000000000000001(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 10
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = icmp eq i32 %4, -1
   %6 = select i1 %0, i1 true, i1 %5
   ret i1 %6
@@ -321,10 +321,10 @@ entry:
 ; cmake/optimized/ftp.c.ll
 ; curl/optimized/libcurl_la-ftp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func00000000000000aa(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 10
-  %4 = add nsw i32 %3, %1
+  %4 = add nsw i32 %1, %3
   %5 = icmp sgt i32 %4, 31
   %6 = select i1 %0, i1 true, i1 %5
   ret i1 %6
@@ -335,10 +335,10 @@ entry:
 ; libuv/optimized/inet.c.ll
 ; node/optimized/inet.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000c8(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func0000000000000188(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 10
-  %4 = add i32 %3, %1
+  %4 = add i32 %1, %3
   %5 = icmp ugt i32 %4, 255
   %6 = select i1 %0, i1 true, i1 %5
   ret i1 %6
@@ -347,7 +347,7 @@ entry:
 ; 1 occurrences:
 ; ocio/optimized/GradingBSplineCurve.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000001a(i1 %0, i32 %1, i32 %2) #0 {
+define i1 @func000000000000002a(i1 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 3
   %4 = add nsw i32 %3, %1

@@ -16,7 +16,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %.neg = sub i64 %1, %3
   %.neg1 = trunc i64 %.neg to i32
-  %4 = add i32 %.neg1, %0
+  %4 = add i32 %0, %.neg1
   %5 = zext i32 %4 to i64
   ret i64 %5
 }
@@ -30,7 +30,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %.neg = sub i64 %1, %3
   %.neg1 = trunc i64 %.neg to i32
-  %4 = add i32 %.neg1, %0
+  %4 = add i32 %0, %.neg1
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }
@@ -43,7 +43,7 @@ entry:
   %3 = ptrtoint ptr %2 to i64
   %.neg = sub i64 %1, %3
   %.neg1 = trunc i64 %.neg to i32
-  %4 = add i32 %.neg1, %0
+  %4 = add i32 %0, %.neg1
   %5 = zext nneg i32 %4 to i64
   ret i64 %5
 }

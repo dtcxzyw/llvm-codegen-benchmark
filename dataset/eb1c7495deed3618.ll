@@ -38,12 +38,12 @@ entry:
 }
 
 ; 1 occurrences:
-; openusd/optimized/value.cpp.ll
+; lvgl/optimized/lv_draw_sw_mask.ll
 ; Function Attrs: nounwind
-define i16 @func0000000000000020(i32 %0, i32 %1) #0 {
+define i16 @func000000000000001b(i32 %0, i32 %1) #0 {
 entry:
-  %2 = icmp ugt i32 %1, 32767
-  %3 = trunc i32 %0 to i16
+  %2 = icmp slt i32 %1, 0
+  %3 = trunc nuw nsw i32 %0 to i16
   %4 = select i1 %2, i16 0, i16 %3
   ret i16 %4
 }

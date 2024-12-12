@@ -30,6 +30,11 @@ func000000000000001a:                   # @func000000000000001a
 	subq	%rsi, %rdx
 	leaq	(%rdi,%rdx,8), %rax
 	retq
+func0000000000000017:                   # @func0000000000000017
+	shrq	$3, %rdx
+	subq	%rsi, %rdx
+	leaq	(%rdi,%rdx,8), %rax
+	retq
 func000000000000001f:                   # @func000000000000001f
 	shrq	$3, %rdx
 	subq	%rsi, %rdx
@@ -44,6 +49,11 @@ func000000000000000e:                   # @func000000000000000e
 	sarq	$32, %rdx
 	subq	%rsi, %rdx
 	leaq	(%rdi,%rdx,4), %rax
+	retq
+func0000000000000013:                   # @func0000000000000013
+	shrq	$3, %rdx
+	subq	%rsi, %rdx
+	leaq	(%rdi,%rdx,8), %rax
 	retq
 func0000000000000018:                   # @func0000000000000018
 	sarq	$3, %rdx

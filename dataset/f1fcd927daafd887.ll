@@ -53,7 +53,7 @@ define i32 @func000000000000003b(i32 %0, i32 %1) #0 {
 entry:
   %2 = lshr exact i32 %1, 4
   %3 = and i32 %2, 458759
-  %4 = add nuw nsw i32 %3, %0
+  %4 = add nuw nsw i32 %0, %3
   %5 = lshr i32 %4, 16
   %6 = add nuw nsw i32 %5, %4
   ret i32 %6

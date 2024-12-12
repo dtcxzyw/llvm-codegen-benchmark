@@ -1,8 +1,9 @@
 
-; 276 occurrences:
+; 279 occurrences:
 ; abseil-cpp/optimized/str_cat_test.cc.ll
 ; abseil-cpp/optimized/time_zone_format.cc.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/to_chars.ll
 ; cmake/optimized/archive_write_set_format_pax.c.ll
 ; cpython/optimized/pystrhex.ll
 ; cpython/optimized/unicodeobject.ll
@@ -276,6 +277,8 @@
 ; wasmedge/optimized/vm.cpp.ll
 ; wasmedge/optimized/wasmedge.cpp.ll
 ; wasmtime-rs/optimized/1bz8ofzmdclmzhoz.ll
+; zed-rs/optimized/avfqkgc3wosoc0eacq6zrtrq5.ll
+; zed-rs/optimized/bpcj0xb6nmpne8ezqc5krm4m9.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i32 %0) #0 {
 entry:
@@ -287,7 +290,7 @@ entry:
 ; Function Attrs: nocallback nofree nosync nounwind speculatable willreturn memory(none)
 declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 
-; 84 occurrences:
+; 80 occurrences:
 ; abc/optimized/acecPo.c.ll
 ; abc/optimized/bmcMaj.c.ll
 ; abc/optimized/giaIf.c.ll
@@ -325,6 +328,7 @@ declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 ; llvm/optimized/SemaDeclObjC.cpp.ll
 ; llvm/optimized/TargetLowering.cpp.ll
 ; llvm/optimized/X86ISelLowering.cpp.ll
+; lvgl/optimized/lv_sprintf_builtin.ll
 ; minetest/optimized/chat.cpp.ll
 ; mitsuba3/optimized/grid.cpp.ll
 ; mitsuba3/optimized/sdfgrid.cpp.ll
@@ -334,11 +338,6 @@ declare i32 @llvm.abs.i32(i32, i1 immarg) #1
 ; openblas/optimized/dsptri.c.ll
 ; openblas/optimized/dsyequb.c.ll
 ; openblas/optimized/dtrsyl3.c.ll
-; openblas/optimized/lapacke_c_nancheck.c.ll
-; openblas/optimized/lapacke_d_nancheck.c.ll
-; openblas/optimized/lapacke_dlaswp_work.c.ll
-; openblas/optimized/lapacke_s_nancheck.c.ll
-; openblas/optimized/lapacke_z_nancheck.c.ll
 ; openblas/optimized/slamch.c.ll
 ; opencv/optimized/AKAZEFeatures.cpp.ll
 ; opencv/optimized/bilateral_filter.dispatch.cpp.ll

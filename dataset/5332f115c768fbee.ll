@@ -4,7 +4,7 @@
 ; openssl/optimized/libdefault-lib-rsa_sig.ll
 ; openssl/optimized/openssl-bin-asn1parse.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000111(i32 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000000421(i32 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp eq ptr %2, null
   %4 = icmp eq ptr %1, null
@@ -20,7 +20,7 @@ entry:
 ; recastnavigation/optimized/Sample_TileMesh.cpp.ll
 ; redis/optimized/db.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000cc1(i32 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000003181(i32 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp ne ptr %1, null
@@ -30,7 +30,7 @@ entry:
   ret i1 %7
 }
 
-; 17 occurrences:
+; 16 occurrences:
 ; assimp/optimized/DeboneProcess.cpp.ll
 ; assimp/optimized/MakeVerboseFormat.cpp.ll
 ; assimp/optimized/PretransformVertices.cpp.ll
@@ -42,14 +42,13 @@ entry:
 ; wireshark/optimized/packet-dmp.c.ll
 ; wireshark/optimized/packet-flexray.c.ll
 ; wireshark/optimized/packet-http.c.ll
-; wireshark/optimized/packet-lin.c.ll
 ; wireshark/optimized/packet-signal-pdu.c.ll
 ; wireshark/optimized/packet-smb2.c.ll
 ; wireshark/optimized/packet-socketcan.c.ll
 ; wireshark/optimized/packet-someip.c.ll
 ; wireshark/optimized/packet-tecmp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000ccc(i32 %0, ptr %1, ptr %2) #0 {
+define i1 @func000000000000318c(i32 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp ne ptr %1, null
@@ -62,7 +61,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/LiveRangeShrink.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000cc8(i32 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000003188(i32 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp ne ptr %1, null
@@ -75,7 +74,7 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/packet-dcom-cba-acco.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000cc4(i32 %0, ptr %1, ptr %2) #0 {
+define i1 @func0000000000003184(i32 %0, ptr %1, ptr %2) #0 {
 entry:
   %3 = icmp ne ptr %2, null
   %4 = icmp ne ptr %1, null

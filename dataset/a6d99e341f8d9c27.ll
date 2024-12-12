@@ -18,7 +18,7 @@ define i1 @func0000000000000044(double %0, double %1) #0 {
 entry:
   %2 = fcmp ogt double %1, 0.000000e+00
   %3 = select i1 %2, double %1, double 0.000000e+00
-  %4 = fadd double %3, %0
+  %4 = fadd double %0, %3
   %5 = fcmp ogt double %4, 0.000000e+00
   ret i1 %5
 }
@@ -55,7 +55,7 @@ define i1 @func00000000000000ee(double %0, double %1) #0 {
 entry:
   %2 = fcmp ord double %1, 0.000000e+00
   %3 = select i1 %2, double %1, double 0.000000e+00
-  %4 = fadd double %3, %0
+  %4 = fadd double %0, %3
   %5 = fcmp ord double %4, 0.000000e+00
   ret i1 %5
 }
@@ -67,7 +67,7 @@ define i1 @func00000000000000ce(double %0, double %1) #0 {
 entry:
   %2 = fcmp oge double %1, 0.000000e+00
   %3 = select i1 %2, double %1, double 0.000000e+00
-  %4 = fadd double %3, %0
+  %4 = fadd double %0, %3
   %5 = fcmp ord double %4, 0.000000e+00
   ret i1 %5
 }

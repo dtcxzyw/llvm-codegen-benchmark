@@ -1,10 +1,13 @@
 
-; 110 occurrences:
+; 111 occurrences:
 ; abc/optimized/abc.c.ll
 ; abc/optimized/giaResub.c.ll
 ; abseil-cpp/optimized/charset_test.cc.ll
 ; abseil-cpp/optimized/convert_test.cc.ll
 ; arrow/optimized/value_parsing.cc.ll
+; boost/optimized/area.ll
+; boost/optimized/src.ll
+; boost/optimized/xml_grammar.ll
 ; c3c/optimized/sema_stmts.c.ll
 ; clamav/optimized/hashtab.c.ll
 ; crow/optimized/example.cpp.ll
@@ -67,10 +70,9 @@
 ; llvm/optimized/TestModuleFileExtension.cpp.ll
 ; llvm/optimized/Type.cpp.ll
 ; llvm/optimized/TypedPointerType.cpp.ll
+; lvgl/optimized/lv_draw_buf.ll
 ; meshlab/optimized/filter_measure.cpp.ll
 ; meshlab/optimized/meshfilter.cpp.ll
-; mitsuba3/optimized/funcargscontext.cpp.ll
-; mitsuba3/optimized/x86func.cpp.ll
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; openjdk/optimized/dependencies.ll
 ; openjdk/optimized/hb-ot-tag.ll
@@ -97,7 +99,6 @@
 ; velox/optimized/DecimalVectorFunctions.cpp.ll
 ; velox/optimized/Sequence.cpp.ll
 ; wasmedge/optimized/wasifunc.cpp.ll
-; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wireshark/optimized/display_filter_expression_dialog.cpp.ll
 ; wireshark/optimized/mate_grammar.c.ll
 ; wireshark/optimized/packet-acdr.c.ll
@@ -119,8 +120,9 @@ entry:
   ret i1 %3
 }
 
-; 16 occurrences:
+; 17 occurrences:
 ; abseil-cpp/optimized/ascii_test.cc.ll
+; boost/optimized/src.ll
 ; diesel-rs/optimized/2gwia6lwj254vbd7.ll
 ; harfbuzz/optimized/harfbuzz.cc.ll
 ; llvm/optimized/RISCVAsmParser.cpp.ll
@@ -129,15 +131,15 @@ entry:
 ; openjdk/optimized/hb-ot-tag.ll
 ; php/optimized/apprentice.ll
 ; regex-rs/optimized/1pxsmct4oxs5dlep.ll
+; wasmtime-rs/optimized/1f5p54q9915bq6gz.ll
 ; wireshark/optimized/dot11decrypt.c.ll
-; wireshark/optimized/observer.c.ll
 ; wireshark/optimized/packet-amqp.c.ll
 ; wireshark/optimized/packet-fcoib.c.ll
 ; wireshark/optimized/packet-gsm_a_gm.c.ll
 ; wireshark/optimized/packet-m2m.c.ll
 ; wireshark/optimized/packet-scsi.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000084(i32 %0) #0 {
+define i1 @func0000000000000104(i32 %0) #0 {
 entry:
   %1 = trunc nuw i32 %0 to i8
   %2 = add i8 %1, -1
@@ -145,7 +147,8 @@ entry:
   ret i1 %3
 }
 
-; 6 occurrences:
+; 7 occurrences:
+; boost/optimized/area.ll
 ; fmt/optimized/xchar-test.cc.ll
 ; glslang/optimized/Initialize.cpp.ll
 ; hyperscan/optimized/rose_build_program.cpp.ll
@@ -153,7 +156,7 @@ entry:
 ; mitsuba3/optimized/x86rapass.cpp.ll
 ; wireshark/optimized/packet-ieee80211.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000014(i32 %0) #0 {
+define i1 @func0000000000000024(i32 %0) #0 {
 entry:
   %1 = trunc i32 %0 to i8
   %2 = add nsw i8 %1, -71
@@ -165,7 +168,7 @@ entry:
 ; llvm/optimized/SemaDeclCXX.cpp.ll
 ; openjdk/optimized/methodData.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d4(i32 %0) #0 {
+define i1 @func00000000000001a4(i32 %0) #0 {
 entry:
   %1 = trunc nuw nsw i32 %0 to i8
   %2 = add nsw i8 %1, -20
@@ -192,7 +195,7 @@ entry:
 ; just-rs/optimized/23nlf67cmm9na4ci.ll
 ; just-rs/optimized/2sblcsgax6v4zfcc.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000ea(i32 %0) #0 {
+define i1 @func00000000000001ca(i32 %0) #0 {
 entry:
   %1 = trunc nuw nsw i32 %0 to i8
   %2 = add nuw i8 %1, 1
@@ -223,7 +226,7 @@ entry:
 ; 1 occurrences:
 ; llvm/optimized/MachObjectWriter.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000d8(i32 %0) #0 {
+define i1 @func00000000000001a8(i32 %0) #0 {
 entry:
   %1 = trunc nuw nsw i32 %0 to i8
   %2 = add i8 %1, -17
@@ -259,7 +262,7 @@ entry:
 ; 1 occurrences:
 ; coreutils-rs/optimized/3yatagipaedyu36z.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000e6(i32 %0) #0 {
+define i1 @func00000000000001c6(i32 %0) #0 {
 entry:
   %1 = trunc nuw nsw i32 %0 to i8
   %2 = add nuw i8 %1, 1
@@ -267,11 +270,10 @@ entry:
   ret i1 %3
 }
 
-; 2 occurrences:
+; 1 occurrences:
 ; abseil-cpp/optimized/ascii_test.cc.ll
-; luajit/optimized/buildvm.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000094(i32 %0) #0 {
+define i1 @func0000000000000124(i32 %0) #0 {
 entry:
   %1 = trunc nuw i32 %0 to i8
   %2 = add nsw i8 %1, -48
@@ -279,22 +281,40 @@ entry:
   ret i1 %3
 }
 
-; 2 occurrences:
+; 1 occurrences:
+; openspiel/optimized/chess_board.cc.ll
+; Function Attrs: nounwind
+define i1 @func000000000000010a(i32 %0) #0 {
+entry:
+  %1 = trunc nuw i32 %0 to i8
+  %2 = add i8 %1, -1
+  %3 = icmp sgt i8 %2, -1
+  ret i1 %3
+}
+
+; 9 occurrences:
 ; arrow/optimized/value_parsing.cc.ll
 ; sqlite/optimized/sqlite3.ll
+; zed-rs/optimized/2a27y074xoqyx3p16rpwv019t.ll
+; zed-rs/optimized/4boerhlvhy0t7lexovmn31ni1.ll
+; zed-rs/optimized/6t4g10gl152q55lxtcl2heeia.ll
+; zed-rs/optimized/8n2fsvz9zbnw9ojg9jkj0503g.ll
+; zed-rs/optimized/97q4mieihk6fgi9ya31e3gth7.ll
+; zed-rs/optimized/9iau01omm5rr9yzc2t1pdns1t.ll
+; zed-rs/optimized/eiuikpvv7yixnsj9o23gd5xz0.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000008(i32 %0) #0 {
 entry:
   %1 = trunc i32 %0 to i8
-  %2 = add i8 %1, -1
-  %3 = icmp ult i8 %2, -2
+  %2 = add i8 %1, -32
+  %3 = icmp ult i8 %2, -33
   ret i1 %3
 }
 
 ; 1 occurrences:
 ; freetype/optimized/sfnt.c.ll
 ; Function Attrs: nounwind
-define i1 @func00000000000000f1(i32 %0) #0 {
+define i1 @func00000000000001e1(i32 %0) #0 {
 entry:
   %1 = trunc nuw nsw i32 %0 to i8
   %2 = icmp eq i8 %1, 1

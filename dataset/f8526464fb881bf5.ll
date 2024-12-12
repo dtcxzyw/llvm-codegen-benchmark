@@ -6,7 +6,7 @@
 ; openssl/optimized/libcrypto-shlib-tasn_dec.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000005a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000aa(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
@@ -20,7 +20,7 @@ entry:
 ; qemu/optimized/block_mirror.c.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000046(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000086(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
@@ -29,7 +29,7 @@ entry:
   ret i1 %6
 }
 
-; 9 occurrences:
+; 17 occurrences:
 ; clamav/optimized/scanners.c.ll
 ; gromacs/optimized/rstparser.cpp.ll
 ; linux/optimized/seq_file.ll
@@ -39,8 +39,16 @@ entry:
 ; php/optimized/libxml.ll
 ; qemu/optimized/hw_net_virtio-net.c.ll
 ; qemu/optimized/target_riscv_pmp.c.ll
+; zed-rs/optimized/0xf31132d9kxbcupfb0pq4zf9.ll
+; zed-rs/optimized/1iq0g2gon2yudclk0gxnuypla.ll
+; zed-rs/optimized/2g6g1uvat5pik6wc3r3hl3kr7.ll
+; zed-rs/optimized/38cn6p2m6864jrrxog4mr8xwk.ll
+; zed-rs/optimized/7n9x7ynl84hra28mm4kly6hja.ll
+; zed-rs/optimized/8eitysufhvsi37fsnmjuossia.ll
+; zed-rs/optimized/e9eqzmwc4ohazgd8llst5h8cu.ll
+; zed-rs/optimized/eh5snwo9crppxb9ha2bcr6dym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000044(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000084(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
@@ -49,15 +57,16 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
+; 3 occurrences:
 ; git/optimized/object-file.ll
+; llvm/optimized/SelectionDAG.cpp.ll
 ; qemu/optimized/target_riscv_pmp.c.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000048(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000088(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = icmp ugt i64 %5, %0
   ret i1 %6
 }
@@ -66,7 +75,7 @@ entry:
 ; darktable/optimized/UncompressedDecompressor.cpp.ll
 ; opencv/optimized/chessboard.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000058(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a8(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
@@ -75,27 +84,14 @@ entry:
   ret i1 %6
 }
 
-; 2 occurrences:
-; abc/optimized/verStream.c.ll
-; nanobind/optimized/nb_type.cpp.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000051(i64 %0, i64 %1, i64 %2) #0 {
-entry:
-  %3 = shl i64 %2, 32
-  %4 = ashr exact i64 %3, 32
-  %5 = add nsw i64 %4, %1
-  %6 = icmp eq i64 %5, %0
-  ret i1 %6
-}
-
 ; 1 occurrences:
 ; gromacs/optimized/eneconv.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000041(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func0000000000000081(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
@@ -103,11 +99,11 @@ entry:
 ; 1 occurrences:
 ; wireshark/optimized/qcustomplot.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func000000000000004a(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func000000000000008a(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
-  %5 = add i64 %4, %1
+  %5 = add i64 %1, %4
   %6 = icmp sgt i64 %5, %0
   ret i1 %6
 }
@@ -116,12 +112,24 @@ entry:
 ; linux/optimized/resize.ll
 ; opencv/optimized/chessboard.cpp.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000054(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a4(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
   %5 = add nsw i64 %4, %1
   %6 = icmp ult i64 %5, %0
+  ret i1 %6
+}
+
+; 1 occurrences:
+; nanobind/optimized/nb_type.cpp.ll
+; Function Attrs: nounwind
+define i1 @func00000000000000a1(i64 %0, i64 %1, i64 %2) #0 {
+entry:
+  %3 = shl i64 %2, 32
+  %4 = ashr exact i64 %3, 32
+  %5 = add nsw i64 %4, %1
+  %6 = icmp eq i64 %5, %0
   ret i1 %6
 }
 
@@ -134,11 +142,11 @@ entry:
 ; postgres/optimized/tsvector.ll
 ; sqlite/optimized/sqlite3.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000056(i64 %0, i64 %1, i64 %2) #0 {
+define i1 @func00000000000000a6(i64 %0, i64 %1, i64 %2) #0 {
 entry:
   %3 = shl i64 %2, 32
   %4 = ashr exact i64 %3, 32
-  %5 = add nsw i64 %4, %1
+  %5 = add nsw i64 %1, %4
   %6 = icmp slt i64 %5, %0
   ret i1 %6
 }

@@ -4,7 +4,7 @@
 ; opencv/optimized/grfmt_pxm.cpp.ll
 ; yosys/optimized/rtlil.ll
 ; Function Attrs: nounwind
-define i8 @func0000000000000102(i8 %0, i8 %1, i32 %2) #0 {
+define i8 @func0000000000000202(i8 %0, i8 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw i32 1, %2
   %4 = trunc i32 %3 to i8

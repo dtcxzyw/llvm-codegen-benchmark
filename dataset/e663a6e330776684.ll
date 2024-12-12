@@ -11,14 +11,15 @@ entry:
   ret i32 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
+; lvgl/optimized/lv_calendar.ll
 ; openvdb/optimized/Filter.cc.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 134217720
-  %4 = add nsw i32 %3, %1
-  %5 = add nsw i32 %4, %0
+  %4 = add nsw i32 %1, %3
+  %5 = add nsw i32 %0, %4
   %6 = and i32 %5, -8
   ret i32 %6
 }
@@ -52,8 +53,8 @@ entry:
 define i32 @func000000000000000f(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 53687091
-  %4 = add i32 %3, %1
-  %5 = add i32 %4, %0
+  %4 = add i32 %1, %3
+  %5 = add i32 %0, %4
   %6 = and i32 %5, 252645135
   ret i32 %6
 }
@@ -66,7 +67,7 @@ entry:
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = add i32 %2, %1
+  %3 = add i32 %1, %2
   %4 = add i32 %3, %0
   %5 = and i32 %4, 31
   ret i32 %5
@@ -78,7 +79,7 @@ entry:
 define i32 @func000000000000000e(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add i32 %2, %1
-  %4 = add i32 %3, %0
+  %4 = add i32 %0, %3
   %5 = and i32 %4, 65535
   ret i32 %5
 }
@@ -91,8 +92,8 @@ entry:
 define i32 @func000000000000000c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = and i32 %2, 30
-  %4 = add nuw nsw i32 %3, %1
-  %5 = add i32 %4, %0
+  %4 = add nuw nsw i32 %1, %3
+  %5 = add i32 %0, %4
   %6 = and i32 %5, 31
   ret i32 %6
 }

@@ -1,23 +1,25 @@
 
-%"class.std::__1::tuple.2488118" = type { %"struct.std::__1::__tuple_impl.2488119" }
-%"struct.std::__1::__tuple_impl.2488119" = type <{ %"class.std::__1::__tuple_leaf.2488120", %"class.std::__1::__tuple_leaf.170.2488121", %"class.std::__1::__tuple_leaf.171.2488122", [7 x i8] }>
-%"class.std::__1::__tuple_leaf.2488120" = type { %"class.std::__1::basic_string.2487973" }
-%"class.std::__1::basic_string.2487973" = type { %"class.std::__1::__compressed_pair.2487974" }
-%"class.std::__1::__compressed_pair.2487974" = type { %"struct.std::__1::__compressed_pair_elem.2487975" }
-%"struct.std::__1::__compressed_pair_elem.2487975" = type { %"struct.std::__1::basic_string<char>::__rep.2487976" }
-%"struct.std::__1::basic_string<char>::__rep.2487976" = type { %union.anon.2487977 }
-%union.anon.2487977 = type { %"struct.std::__1::basic_string<char>::__long.2487978" }
-%"struct.std::__1::basic_string<char>::__long.2487978" = type { %struct.anon.0.2487979, i64, ptr }
-%struct.anon.0.2487979 = type { i64 }
-%"class.std::__1::__tuple_leaf.170.2488121" = type { %"class.std::__1::basic_string.2487973" }
-%"class.std::__1::__tuple_leaf.171.2488122" = type { i8 }
-%"class.Ipopt::TripletToCSRConverter::TripletEntry.2496215" = type { i32, i32, i32 }
-%class.QModelIndex.3246935 = type { i32, i32, i64, ptr }
+%"class.std::__1::tuple.2603550" = type { %"struct.std::__1::__tuple_impl.2603551" }
+%"struct.std::__1::__tuple_impl.2603551" = type <{ %"class.std::__1::__tuple_leaf.2603552", %"class.std::__1::__tuple_leaf.170.2603553", %"class.std::__1::__tuple_leaf.171.2603554", [7 x i8] }>
+%"class.std::__1::__tuple_leaf.2603552" = type { %"class.std::__1::basic_string.2603405" }
+%"class.std::__1::basic_string.2603405" = type { %"class.std::__1::__compressed_pair.2603406" }
+%"class.std::__1::__compressed_pair.2603406" = type { %"struct.std::__1::__compressed_pair_elem.2603407" }
+%"struct.std::__1::__compressed_pair_elem.2603407" = type { %"struct.std::__1::basic_string<char>::__rep.2603408" }
+%"struct.std::__1::basic_string<char>::__rep.2603408" = type { %union.anon.2603409 }
+%union.anon.2603409 = type { %"struct.std::__1::basic_string<char>::__long.2603410" }
+%"struct.std::__1::basic_string<char>::__long.2603410" = type { %struct.anon.0.2603411, i64, ptr }
+%struct.anon.0.2603411 = type { i64 }
+%"class.std::__1::__tuple_leaf.170.2603553" = type { %"class.std::__1::basic_string.2603405" }
+%"class.std::__1::__tuple_leaf.171.2603554" = type { i8 }
+%"class.Ipopt::TripletToCSRConverter::TripletEntry.2611489" = type { i32, i32, i32 }
+%class.QModelIndex.3438265 = type { i32, i32, i64, ptr }
 
-; 71 occurrences:
+; 73 occurrences:
 ; assimp/optimized/SGSpatialSort.cpp.ll
 ; assimp/optimized/SpatialSort.cpp.ll
 ; assimp/optimized/clipper.cpp.ll
+; boost/optimized/get_clusters.ll
+; boost/optimized/sort_by_side.ll
 ; faiss/optimized/IndexIVFFastScan.cpp.ll
 ; faiss/optimized/NNDescent.cpp.ll
 ; faiss/optimized/NSG.cpp.ll
@@ -87,16 +89,20 @@
 ; yosys/optimized/xaiger.ll
 ; zxing/optimized/QRDetector.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002a(ptr %0, i64 %1) #0 {
+define ptr @func000000000000002b(ptr %0, i64 %1) #0 {
 entry:
   %2 = udiv exact i64 %1, 56
   %3 = add nsw i64 %2, -2
   %4 = lshr i64 %3, 1
-  %5 = getelementptr nusw %"class.std::__1::tuple.2488118", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.std::__1::tuple.2603550", ptr %0, i64 %4
   ret ptr %5
 }
 
-; 16 occurrences:
+; 20 occurrences:
+; boost/optimized/get_clusters.ll
+; boost/optimized/sort_by_side.ll
+; boost/optimized/sort_by_side_basic.ll
+; boost/optimized/within_pointlike_geometry.ll
 ; ipopt/optimized/IpTripletToCSRConverter.ll
 ; llvm/optimized/AArch64FrameLowering.cpp.ll
 ; llvm/optimized/CGProfile.cpp.ll
@@ -114,12 +120,12 @@ entry:
 ; openusd/optimized/meshUtil.cpp.ll
 ; openvdb/optimized/Prune.cc.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000002e(ptr %0, i64 %1) #0 {
+define ptr @func000000000000002f(ptr %0, i64 %1) #0 {
 entry:
   %2 = udiv exact i64 %1, 12
   %3 = add nsw i64 %2, -2
   %4 = lshr exact i64 %3, 1
-  %5 = getelementptr nusw %"class.Ipopt::TripletToCSRConverter::TripletEntry.2496215", ptr %0, i64 %4
+  %5 = getelementptr nusw nuw %"class.Ipopt::TripletToCSRConverter::TripletEntry.2611489", ptr %0, i64 %4
   ret ptr %5
 }
 
@@ -132,7 +138,7 @@ entry:
   %2 = udiv exact i64 %1, 24
   %3 = add nsw i64 %2, -2
   %4 = lshr i64 %3, 1
-  %5 = getelementptr %class.QModelIndex.3246935, ptr %0, i64 %4
+  %5 = getelementptr %class.QModelIndex.3438265, ptr %0, i64 %4
   ret ptr %5
 }
 

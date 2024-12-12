@@ -23,7 +23,7 @@ func0000000000000003:                   # @func0000000000000003
 	setb	%al
 	retq
 .LCPI3_0:
-	.quad	0x3fe8000000000000              # double 0.75
+	.quad	0x3fee666666666666              # double 0.94999999999999996
 func0000000000000004:                   # @func0000000000000004
 	vcvtsi2sd	%edi, %xmm1, %xmm1
 	vmulsd	.LCPI3_0(%rip), %xmm1, %xmm1

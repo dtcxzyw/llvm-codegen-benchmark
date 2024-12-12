@@ -2,7 +2,7 @@
 	.long	1073856640                      # 0x4001c080
 .LCPI0_1:
 	.long	1073774720                      # 0x40008080
-func0000000000000022:                   # @func0000000000000022
+func0000000000000042:                   # @func0000000000000042
 	vptestnmd	%ymm1, %ymm1, %k0
 	vptestnmd	%ymm0, %ymm0, %k1
 	korb	%k0, %k1, %k1
@@ -13,7 +13,7 @@ func0000000000000022:                   # @func0000000000000022
 	.long	4089970688                      # 0xf3c80000
 .LCPI1_1:
 	.long	4090494976                      # 0xf3d00000
-func0000000000000023:                   # @func0000000000000023
+func0000000000000043:                   # @func0000000000000043
 	vptestnmd	%ymm1, %ymm1, %k0
 	vptestnmd	%ymm0, %ymm0, %k1
 	korb	%k0, %k1, %k1

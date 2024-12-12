@@ -16,7 +16,7 @@ func0000000000000070:                   # @func0000000000000070
 	imulq	%rsi, %rax
 	addq	%rdi, %rax
 	retq
-func000000000000007e:                   # @func000000000000007e
+func000000000000007f:                   # @func000000000000007f
 	andl	$3, %edx
 	incl	%edx
 	imulq	%rsi, %rdx

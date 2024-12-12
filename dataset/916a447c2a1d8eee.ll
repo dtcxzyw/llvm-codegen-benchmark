@@ -28,8 +28,9 @@ entry:
   ret i16 %2
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; linux/optimized/eeepc-laptop.ll
+; lvgl/optimized/lv_color.ll
 ; qemu/optimized/hw_audio_ac97.c.ll
 ; recastnavigation/optimized/DetourDebugDraw.cpp.ll
 ; recastnavigation/optimized/RecastDebugDraw.cpp.ll

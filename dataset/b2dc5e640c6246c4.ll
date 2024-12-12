@@ -22,7 +22,9 @@ entry:
   ret i32 %6
 }
 
-; 1 occurrences:
+; 3 occurrences:
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
 ; spike/optimized/aes64esm.ll
 ; Function Attrs: nounwind
 define i32 @func000000000000003b(i32 %0, i32 %1) #0 {

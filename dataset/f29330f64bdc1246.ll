@@ -1,5 +1,5 @@
 
-; 45 occurrences:
+; 44 occurrences:
 ; cjson/optimized/cJSON.c.ll
 ; cmake/optimized/zstd_decompress.c.ll
 ; freetype/optimized/ftstroke.c.ll
@@ -11,7 +11,6 @@
 ; lief/optimized/ssl_tls.c.ll
 ; lief/optimized/ssl_tls12_client.c.ll
 ; lief/optimized/ssl_tls12_server.c.ll
-; linux/optimized/drm_managed.ll
 ; linux/optimized/rtnetlink.ll
 ; linux/optimized/zstd_decompress.ll
 ; llvm/optimized/AArch64TargetStreamer.cpp.ll
@@ -52,10 +51,9 @@ entry:
   ret i64 %1
 }
 
-; 16 occurrences:
+; 15 occurrences:
 ; abseil-cpp/optimized/convert_test.cc.ll
 ; assimp/optimized/OpenGEXImporter.cpp.ll
-; brotli/optimized/backward_references_hq.c.ll
 ; brotli/optimized/compress_fragment.c.ll
 ; brotli/optimized/compress_fragment_two_pass.c.ll
 ; cmake/optimized/archive_write_set_format_iso9660.c.ll

@@ -1,32 +1,32 @@
 
-%struct.LuaNode.2827082 = type { %struct.lua_TValue.2827080, %struct.TKey.2827083 }
-%struct.lua_TValue.2827080 = type { %union.Value.2827081, [1 x i32], i32 }
-%union.Value.2827081 = type { ptr }
-%struct.TKey.2827083 = type { %union.Value.2827081, [1 x i32], i32 }
-%"struct.llvh::detail::DenseMapPair.296.2881443" = type { %"struct.std::pair.297.2881444" }
-%"struct.std::pair.297.2881444" = type { i32, %"class.std::vector.164.2881445" }
-%"class.std::vector.164.2881445" = type { %"struct.std::_Vector_base.165.2881446" }
-%"struct.std::_Vector_base.165.2881446" = type { %"struct.std::_Vector_base<hermes::Function *, std::allocator<hermes::Function *>>::_Vector_impl.2881447" }
-%"struct.std::_Vector_base<hermes::Function *, std::allocator<hermes::Function *>>::_Vector_impl.2881447" = type { %"struct.std::_Vector_base<hermes::Function *, std::allocator<hermes::Function *>>::_Vector_impl_data.2881448" }
-%"struct.std::_Vector_base<hermes::Function *, std::allocator<hermes::Function *>>::_Vector_impl_data.2881448" = type { ptr, ptr, ptr }
-%"class.llvh::detail::DenseSetPair.2887802" = type { i32 }
-%"struct.llvm::detail::DenseMapPair.706.2967905" = type { %"struct.std::pair.707.2967906" }
-%"struct.std::pair.707.2967906" = type { i32, ptr }
+%struct.LuaNode.2938891 = type { %struct.lua_TValue.2938889, %struct.TKey.2938892 }
+%struct.lua_TValue.2938889 = type { %union.Value.2938890, [1 x i32], i32 }
+%union.Value.2938890 = type { ptr }
+%struct.TKey.2938892 = type { %union.Value.2938890, [1 x i32], i32 }
+%"struct.llvh::detail::DenseMapPair.296.3075967" = type { %"struct.std::pair.297.3075968" }
+%"struct.std::pair.297.3075968" = type { i32, %"class.std::vector.164.3075969" }
+%"class.std::vector.164.3075969" = type { %"struct.std::_Vector_base.165.3075970" }
+%"struct.std::_Vector_base.165.3075970" = type { %"struct.std::_Vector_base<hermes::Function *, std::allocator<hermes::Function *>>::_Vector_impl.3075971" }
+%"struct.std::_Vector_base<hermes::Function *, std::allocator<hermes::Function *>>::_Vector_impl.3075971" = type { %"struct.std::_Vector_base<hermes::Function *, std::allocator<hermes::Function *>>::_Vector_impl_data.3075972" }
+%"struct.std::_Vector_base<hermes::Function *, std::allocator<hermes::Function *>>::_Vector_impl_data.3075972" = type { ptr, ptr, ptr }
+%"class.llvh::detail::DenseSetPair.3082320" = type { i32 }
+%"struct.llvm::detail::DenseMapPair.706.3161405" = type { %"struct.std::pair.707.3161406" }
+%"struct.std::pair.707.3161406" = type { i32, ptr }
 
 ; 2 occurrences:
 ; llvm/optimized/X86MCTargetDesc.cpp.ll
 ; luau/optimized/ltable.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000006(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000007(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 1540483477
   %4 = and i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw %struct.LuaNode.2827082, ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %struct.LuaNode.2938891, ptr %0, i64 %5
   ret ptr %6
 }
 
-; 300 occurrences:
+; 303 occurrences:
 ; hermes/optimized/BytecodeGenerator.cpp.ll
 ; hermes/optimized/CompilerDriver.cpp.ll
 ; hermes/optimized/ConsecutiveStringStorage.cpp.ll
@@ -82,12 +82,14 @@ entry:
 ; llvm/optimized/BlockCounter.cpp.ll
 ; llvm/optimized/BlockFrequencyInfo.cpp.ll
 ; llvm/optimized/BlockFrequencyInfoImpl.cpp.ll
+; llvm/optimized/BranchProbabilityInfo.cpp.ll
 ; llvm/optimized/BuildLibCalls.cpp.ll
 ; llvm/optimized/ByteCodeEmitter.cpp.ll
 ; llvm/optimized/CFGReachabilityAnalysis.cpp.ll
 ; llvm/optimized/CFIInstrInserter.cpp.ll
 ; llvm/optimized/CGAtomic.cpp.ll
 ; llvm/optimized/CGBuiltin.cpp.ll
+; llvm/optimized/CGCXX.cpp.ll
 ; llvm/optimized/CStringChecker.cpp.ll
 ; llvm/optimized/CXXInheritance.cpp.ll
 ; llvm/optimized/CalcSpillWeights.cpp.ll
@@ -304,6 +306,7 @@ entry:
 ; llvm/optimized/VPlan.cpp.ll
 ; llvm/optimized/VPlanRecipes.cpp.ll
 ; llvm/optimized/VPlanTransforms.cpp.ll
+; llvm/optimized/VTableBuilder.cpp.ll
 ; llvm/optimized/ValistChecker.cpp.ll
 ; llvm/optimized/ValueEnumerator.cpp.ll
 ; llvm/optimized/VarLenCodeEmitterGen.cpp.ll
@@ -328,12 +331,12 @@ entry:
 ; llvm/optimized/X86TileConfig.cpp.ll
 ; llvm/optimized/Z3CrosscheckVisitor.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000002(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func0000000000000003(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 37
   %4 = and i32 %3, %1
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw %"struct.llvh::detail::DenseMapPair.296.2881443", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.llvh::detail::DenseMapPair.296.3075967", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -359,12 +362,12 @@ entry:
 ; llvm/optimized/X86ISelLowering.cpp.ll
 ; llvm/optimized/X86MCTargetDesc.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000001e(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000001f(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nuw nsw i32 %2, 37
   %4 = and i32 %3, %1
   %5 = zext nneg i32 %4 to i64
-  %6 = getelementptr nusw %"class.llvh::detail::DenseSetPair.2887802", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"class.llvh::detail::DenseSetPair.3082320", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -374,12 +377,12 @@ entry:
 ; llvm/optimized/ComparisonCategories.cpp.ll
 ; llvm/optimized/CoverageMapping.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func000000000000000a(ptr %0, i32 %1, i32 %2) #0 {
+define ptr @func000000000000000b(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul nsw i32 %2, 37
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = zext i32 %4 to i64
-  %6 = getelementptr nusw %"struct.llvm::detail::DenseMapPair.706.2967905", ptr %0, i64 %5
+  %6 = getelementptr nusw nuw %"struct.llvm::detail::DenseMapPair.706.3161405", ptr %0, i64 %5
   ret ptr %6
 }
 
@@ -389,7 +392,7 @@ entry:
 define ptr @func0000000000000000(ptr %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = mul i32 %2, 3163
-  %4 = and i32 %3, %1
+  %4 = and i32 %1, %3
   %5 = zext i32 %4 to i64
   %6 = getelementptr i32, ptr %0, i64 %5
   ret ptr %6

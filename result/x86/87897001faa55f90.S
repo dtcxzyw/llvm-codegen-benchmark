@@ -17,6 +17,11 @@ func000000000000001a:                   # @func000000000000001a
 	leal	(%rdi,%rdi,2), %eax
 	shrl	$8, %eax
 	retq
+func0000000000000013:                   # @func0000000000000013
+	movabsq	$5871781006564002453, %rax      # imm = 0x517CC1B727220A95
+	imulq	%rdi, %rax
+	shrq	$57, %rax
+	retq
 func0000000000000018:                   # @func0000000000000018
 	imull	$100, %edi, %eax
 	shrl	$8, %eax

@@ -82,21 +82,20 @@ func0000000000000020:                   # @func0000000000000020
 	vzeroupper
 	retq
 .LCPI4_0:
-	.long	2                               # 0x2
-.LCPI4_1:
-	.long	4294967290                      # 0xfffffffa
-func0000000000000007:                   # @func0000000000000007
+	.long	1                               # 0x1
+func0000000000000005:                   # @func0000000000000005
 	vpmovqd	%ymm1, %xmm1
 	vpandd	.LCPI4_0(%rip){1to4}, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0
-	vpaddd	.LCPI4_1(%rip){1to4}, %xmm0, %xmm0
+	vpcmpeqd	%xmm1, %xmm1, %xmm1
+	vpsubd	%xmm1, %xmm0, %xmm0
 	vzeroupper
 	retq
 .LCPI5_0:
-	.long	3                               # 0x3
+	.long	2                               # 0x2
 .LCPI5_1:
-	.long	4294967293                      # 0xfffffffd
-func0000000000000005:                   # @func0000000000000005
+	.long	4294967290                      # 0xfffffffa
+func0000000000000007:                   # @func0000000000000007
 	vpmovqd	%ymm1, %xmm1
 	vpandd	.LCPI5_0(%rip){1to4}, %xmm1, %xmm1
 	vpaddd	%xmm1, %xmm0, %xmm0

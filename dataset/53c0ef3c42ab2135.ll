@@ -6,7 +6,7 @@
 ; redis/optimized/ctl.ll
 ; redis/optimized/ctl.sym.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000122(i64 %0, i64 %1, i32 %2) #0 {
+define i1 @func0000000000000242(i64 %0, i64 %1, i32 %2) #0 {
 entry:
   %3 = icmp eq i32 %2, -3
   %4 = icmp uge i64 %0, %1

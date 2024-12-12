@@ -3,7 +3,7 @@
 ; abc/optimized/ifDec16.c.ll
 ; wireshark/optimized/packet-x11.c.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000a2(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000142(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, -1
   %4 = add nsw i32 %3, %1
@@ -17,7 +17,7 @@ entry:
 ; openblas/optimized/dlatmt.c.ll
 ; stockfish/optimized/search.ll
 ; Function Attrs: nounwind
-define i32 @func00000000000000ac(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func000000000000014c(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = add nsw i32 %2, 49
   %4 = add nsw i32 %3, %1

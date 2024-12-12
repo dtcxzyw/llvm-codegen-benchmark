@@ -1,16 +1,5 @@
 
-; 1 occurrences:
-; ruby/optimized/util.ll
-; Function Attrs: nounwind
-define i1 @func0000000000000008(i1 %0, i64 %1) #0 {
-entry:
-  %2 = icmp ult i64 %1, 9007199254740992
-  %3 = or i1 %2, %0
-  %4 = xor i1 %3, true
-  ret i1 %4
-}
-
-; 17 occurrences:
+; 14 occurrences:
 ; hyperscan/optimized/limex_compile.cpp.ll
 ; hyperscan/optimized/ng_execute.cpp.ll
 ; hyperscan/optimized/ue2string.cpp.ll
@@ -24,9 +13,6 @@ entry:
 ; qemu/optimized/block_io.c.ll
 ; ripgrep-rs/optimized/1zzjpab9m5homdm3.ll
 ; rust-analyzer-rs/optimized/2mbx5ptcpq6fo7sc.ll
-; spike/optimized/f128_classify.ll
-; spike/optimized/f32_classify.ll
-; spike/optimized/f64_classify.ll
 ; typst-rs/optimized/4m3ebbqd1xx21e5m.ll
 ; Function Attrs: nounwind
 define i1 @func0000000000000002(i1 %0, i64 %1) #0 {
@@ -52,7 +38,7 @@ entry:
 define i1 @func0000000000000018(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp ne i64 %1, 2
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   %4 = xor i1 %3, true
   ret i1 %4
 }
@@ -75,7 +61,7 @@ entry:
 define i1 @func0000000000000010(i1 %0, i64 %1) #0 {
 entry:
   %2 = icmp ugt i64 %1, 7
-  %3 = or i1 %2, %0
+  %3 = or i1 %0, %2
   %4 = xor i1 %3, true
   ret i1 %4
 }

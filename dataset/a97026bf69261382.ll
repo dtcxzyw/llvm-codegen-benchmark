@@ -17,11 +17,11 @@
 ; proxygen/optimized/QPACKCodec.cpp.ll
 ; velox/optimized/StackTrace.cpp.ll
 ; Function Attrs: nounwind
-define ptr @func0000000000000012(ptr %0, i64 %1, i64 %2) #0 {
+define ptr @func0000000000000013(ptr %0, i64 %1, i64 %2) #0 {
 entry:
   %reass.sub = sub i64 %1, %2
   %3 = add i64 %reass.sub, 23
-  %4 = getelementptr nusw [24 x i8], ptr %0, i64 0, i64 %3
+  %4 = getelementptr nusw nuw [24 x i8], ptr %0, i64 0, i64 %3
   ret ptr %4
 }
 

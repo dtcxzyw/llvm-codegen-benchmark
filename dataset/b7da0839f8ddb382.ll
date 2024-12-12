@@ -1,7 +1,8 @@
 
-; 19 occurrences:
+; 22 occurrences:
 ; abc/optimized/bdcSpfd.c.ll
 ; gromacs/optimized/atomdata.cpp.ll
+; libjpeg-turbo/optimized/transupp.c.ll
 ; linux/optimized/intel_guc_ads.ll
 ; llama.cpp/optimized/ggml-quants.c.ll
 ; lodepng/optimized/lodepng_util.cpp.ll
@@ -19,6 +20,8 @@
 ; tinygltf/optimized/tiny_gltf.cc.ll
 ; yosys/optimized/blif.ll
 ; yosys/optimized/satgen.ll
+; z3/optimized/mam.cpp.ll
+; z3/optimized/q_mam.cpp.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000007(i64 %0, i64 %1) #0 {
 entry:
@@ -27,7 +30,8 @@ entry:
   ret i64 %3
 }
 
-; 142 occurrences:
+; 152 occurrences:
+; boost/optimized/alloc_lib.ll
 ; cpython/optimized/mathmodule.ll
 ; cpython/optimized/mpdecimal.ll
 ; hermes/optimized/Array.cpp.ll
@@ -73,7 +77,6 @@ entry:
 ; linux/optimized/interface.ll
 ; linux/optimized/io_pgtable_v2.ll
 ; linux/optimized/kexec_core.ll
-; linux/optimized/machine_kexec_64.ll
 ; linux/optimized/memory.ll
 ; linux/optimized/mremap.ll
 ; linux/optimized/pasid.ll
@@ -90,7 +93,6 @@ entry:
 ; mitsuba3/optimized/aov.cpp.ll
 ; mitsuba3/optimized/filesystem.cpp.ll
 ; mitsuba3/optimized/logger.cpp.ll
-; mitsuba3/optimized/ply.cpp.ll
 ; mold/optimized/gc-sections.cc.ALPHA.cc.ll
 ; mold/optimized/gc-sections.cc.ARM32.cc.ll
 ; mold/optimized/gc-sections.cc.ARM64.cc.ll
@@ -170,6 +172,17 @@ entry:
 ; tev/optimized/Image.cpp.ll
 ; tev/optimized/main.cpp.ll
 ; velox/optimized/AllocationPool.cpp.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/4wlt97p2na7yq96c9gq3wlrfc.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/b1bc3rbs9s229gjbf718xcm8w.ll
+; zed-rs/optimized/boyei0qs0y80q8snoztbi8jt7.ll
+; zed-rs/optimized/d8k4gi60mp0onf0c8t6rhs7ks.ll
+; zed-rs/optimized/dkqgvh9b17p7dpiwpj3t9ll28.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
+; zed-rs/optimized/f10ffiihtazjqkmwr0jihceey.ll
+; zed-rs/optimized/f34ji21oay71m9pwftbcdstvm.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000000(i64 %0, i64 %1) #0 {
 entry:
@@ -247,7 +260,8 @@ entry:
   ret i64 %3
 }
 
-; 40 occurrences:
+; 44 occurrences:
+; bullet3/optimized/b3GpuSapBroadphase.ll
 ; darktable/optimized/introspection_colorzones.c.ll
 ; darktable/optimized/introspection_demosaic.c.ll
 ; ncnn/optimized/convolution1d_x86.cpp.ll
@@ -276,6 +290,9 @@ entry:
 ; openblas/optimized/sgemm_small_kernel_nn.c.ll
 ; openblas/optimized/sgemm_small_kernel_tt.c.ll
 ; opencv/optimized/box_filter.dispatch.cpp.ll
+; openusd/optimized/av1_dx_iface.c.ll
+; openusd/optimized/decodeframe.c.ll
+; openusd/optimized/decodemv.c.ll
 ; yosys/optimized/eval.ll
 ; yosys/optimized/extract_fa.ll
 ; yosys/optimized/flowmap.ll
@@ -307,12 +324,20 @@ entry:
   ret i64 %3
 }
 
-; 5 occurrences:
+; 13 occurrences:
+; boost/optimized/alloc_lib.ll
 ; libsodium/optimized/libsse2_la-poly1305_sse2.ll
 ; llvm/optimized/PGOInstrumentation.cpp.ll
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
 ; spike/optimized/s_addMagsF128.ll
+; zed-rs/optimized/0fnsxz2rx0jbkg91hb1jofwbr.ll
+; zed-rs/optimized/124a3pbiwggdoumm7bipw61wl.ll
+; zed-rs/optimized/6qyl3bdqgbuu53gpp1qfxbvmj.ll
+; zed-rs/optimized/b1bc3rbs9s229gjbf718xcm8w.ll
+; zed-rs/optimized/d8k4gi60mp0onf0c8t6rhs7ks.ll
+; zed-rs/optimized/eo9en7kez6kv0pe95yqlp4ltk.ll
+; zed-rs/optimized/f10ffiihtazjqkmwr0jihceey.ll
 ; Function Attrs: nounwind
 define i64 @func0000000000000006(i64 %0, i64 %1) #0 {
 entry:
@@ -321,8 +346,9 @@ entry:
   ret i64 %3
 }
 
-; 4 occurrences:
+; 5 occurrences:
 ; abseil-cpp/optimized/raw_hash_set_test.cc.ll
+; boost/optimized/alloc_lib.ll
 ; luajit/optimized/lj_alloc.ll
 ; luajit/optimized/lj_alloc_dyn.ll
 ; luau/optimized/lnumprint.cpp.ll

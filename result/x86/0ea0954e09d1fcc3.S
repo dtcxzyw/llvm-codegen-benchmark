@@ -1,17 +1,17 @@
-func00000000000001a6:                   # @func00000000000001a6
+func0000000000000546:                   # @func0000000000000546
 	orw	%dx, %si
 	setg	%cl
 	testw	%di, %di
 	sets	%al
 	andb	%cl, %al
 	retq
-func0000000000000111:                   # @func0000000000000111
+func0000000000000421:                   # @func0000000000000421
 	orl	%edx, %esi
 	notl	%esi
 	orw	%di, %si
 	sete	%al
 	retq
-func0000000000000118:                   # @func0000000000000118
+func0000000000000428:                   # @func0000000000000428
 	orl	%edx, %esi
 	cmpw	$3, %si
 	sete	%cl
@@ -19,7 +19,7 @@ func0000000000000118:                   # @func0000000000000118
 	setae	%al
 	andb	%cl, %al
 	retq
-func0000000000000011:                   # @func0000000000000011
+func0000000000000021:                   # @func0000000000000021
 	orl	%edx, %esi
 	xorl	$6, %edi
 	orw	%si, %di

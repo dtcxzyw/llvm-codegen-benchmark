@@ -1,4 +1,4 @@
-func0000000000000296:                   # @func0000000000000296
+func0000000000000526:                   # @func0000000000000526
 	xorl	%eax, %eax
 	cmpl	$1240, %edi                     # imm = 0x4D8
 	setge	%al

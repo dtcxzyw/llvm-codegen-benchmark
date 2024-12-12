@@ -4,7 +4,7 @@
 ; llvm/optimized/APFloat.cpp.ll
 ; postgres/optimized/spell.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000071(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func00000000000000e1(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl nuw nsw i32 %1, 1
   %4 = or disjoint i32 %3, %2
@@ -16,7 +16,7 @@ entry:
 ; 1 occurrences:
 ; z3/optimized/pb_solver.cpp.ll
 ; Function Attrs: nounwind
-define i32 @func0000000000000011(i32 %0, i32 %1, i32 %2) #0 {
+define i32 @func0000000000000021(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = shl i32 %1, 1
   %4 = or disjoint i32 %3, %2

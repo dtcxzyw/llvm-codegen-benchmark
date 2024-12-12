@@ -5,6 +5,13 @@ func0000000000000056:                   // @func0000000000000056
 	add	x0, x8, #4
 	ret
                                         // -- End function
+func0000000000000057:                   // @func0000000000000057
+// %bb.0:                               // %entry
+	add	x8, x0, x2
+	add	x8, x8, x1, lsl #3
+	sub	x0, x8, #8
+	ret
+                                        // -- End function
 func0000000000000052:                   // @func0000000000000052
 // %bb.0:                               // %entry
 	add	x8, x0, x2

@@ -8,7 +8,7 @@ entry:
   %4 = shl i32 %3, 5
   %5 = select i1 %1, i32 16, i32 0
   %6 = or disjoint i32 %4, %5
-  %7 = or i32 %6, %0
+  %7 = or i32 %0, %6
   ret i32 %7
 }
 
@@ -22,7 +22,7 @@ entry:
   %4 = shl i32 %3, 4
   %5 = select i1 %1, i32 4, i32 0
   %6 = or disjoint i32 %5, %4
-  %7 = or disjoint i32 %6, %0
+  %7 = or disjoint i32 %0, %6
   ret i32 %7
 }
 

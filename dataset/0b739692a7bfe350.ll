@@ -5,6 +5,7 @@
 ; darktable/optimized/metadata.c.ll
 ; darktable/optimized/tagging.c.ll
 ; icu/optimized/uhash.ll
+; lvgl/optimized/lv_scale.ll
 ; openjdk/optimized/ad_x86.ll
 ; openjdk/optimized/c1_LIRAssembler_x86.ll
 ; openjdk/optimized/c2_MacroAssembler_x86.ll
@@ -17,7 +18,6 @@
 ; wireshark/optimized/packet-nfs.c.ll
 ; wireshark/optimized/packet-nlm.c.ll
 ; wireshark/optimized/packet-pfcp.c.ll
-; wireshark/optimized/packet-smb-sidsnooping.c.ll
 ; wireshark/optimized/packet-smb.c.ll
 ; wireshark/optimized/packet-usbll.c.ll
 ; z3/optimized/arith_solver.cpp.ll

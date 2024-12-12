@@ -18,6 +18,18 @@ entry:
   ret i8 %3
 }
 
+; 3 occurrences:
+; linux/optimized/libata-core.ll
+; linux/optimized/libata-scsi.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; Function Attrs: nounwind
+define i8 @func0000000000000003(i32 %0, i32 %1) #0 {
+entry:
+  %2 = urem i32 %0, %1
+  %3 = trunc nuw nsw i32 %2 to i8
+  ret i8 %3
+}
+
 ; 5 occurrences:
 ; icu/optimized/decNumber.ll
 ; linux/optimized/libata-core.ll

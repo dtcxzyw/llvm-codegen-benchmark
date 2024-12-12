@@ -5,7 +5,6 @@
 ; cmake/optimized/cmSystemTools.cxx.ll
 ; cpython/optimized/obmalloc.ll
 ; duckdb/optimized/ub_duckdb_common_types.cpp.ll
-; folly/optimized/LogName.cpp.ll
 ; git/optimized/show-branch.ll
 ; gromacs/optimized/pdb2gmx.cpp.ll
 ; hdf5/optimized/h5diff_array.c.ll
@@ -19,6 +18,7 @@
 ; linux/optimized/hid-input.ll
 ; linux/optimized/intel_vdsc.ll
 ; linux/optimized/vmstat.ll
+; lvgl/optimized/lv_string_builtin.ll
 ; mimalloc/optimized/options.c.ll
 ; minetest/optimized/particles.cpp.ll
 ; ncnn/optimized/convolution_x86.cpp.ll

@@ -21,4 +21,20 @@ entry:
   ret i16 %3
 }
 
+; 6 occurrences:
+; lvgl/optimized/lv_canvas.ll
+; lvgl/optimized/lv_color.ll
+; lvgl/optimized/lv_draw_sw_blend_to_argb8888.ll
+; lvgl/optimized/lv_draw_sw_blend_to_i1.ll
+; lvgl/optimized/lv_draw_sw_blend_to_l8.ll
+; lvgl/optimized/lv_draw_sw_blend_to_rgb888.ll
+; Function Attrs: nounwind
+define i16 @func0000000000000002(i16 %0) #0 {
+entry:
+  %1 = lshr i16 %0, 5
+  %2 = and i16 %1, 63
+  %3 = mul nuw i16 %2, 1037
+  ret i16 %3
+}
+
 attributes #0 = { nounwind }

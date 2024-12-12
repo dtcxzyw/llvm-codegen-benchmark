@@ -1,15 +1,11 @@
 
-; 16 occurrences:
+; 12 occurrences:
 ; abc/optimized/abcExact.c.ll
 ; bullet3/optimized/btSoftBody.ll
 ; gromacs/optimized/correlationtensor.cpp.ll
 ; openblas/optimized/dsfrk.c.ll
-; openblas/optimized/dspsvx.c.ll
 ; openblas/optimized/dsptrf.c.ll
 ; openblas/optimized/dsptrs.c.ll
-; openblas/optimized/dtfttr.c.ll
-; openblas/optimized/dtptri.c.ll
-; openblas/optimized/dtrttf.c.ll
 ; openblas/optimized/lapacke_ctp_trans.c.ll
 ; openblas/optimized/lapacke_dtp_trans.c.ll
 ; openblas/optimized/lapacke_stp_trans.c.ll
@@ -75,8 +71,7 @@ entry:
   ret i32 %3
 }
 
-; 2 occurrences:
-; openblas/optimized/dspcon.c.ll
+; 1 occurrences:
 ; openblas/optimized/dsptri.c.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000016(i32 %0) #0 {

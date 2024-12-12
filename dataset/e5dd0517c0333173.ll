@@ -1,5 +1,5 @@
 
-; 9 occurrences:
+; 10 occurrences:
 ; graphviz/optimized/cluster.c.ll
 ; jq/optimized/regparse.ll
 ; luajit/optimized/lj_state.ll
@@ -7,6 +7,7 @@
 ; oniguruma/optimized/regparse.ll
 ; openblas/optimized/dlagsy.c.ll
 ; openjdk/optimized/check_code.ll
+; openjdk/optimized/sharedRuntime_x86_64.ll
 ; openmpi/optimized/opal_object.ll
 ; openmpi/optimized/pmix_object.ll
 ; Function Attrs: nounwind
@@ -44,7 +45,7 @@ entry:
 define i64 @func000000000000002f(i32 %0, i32 %1) #0 {
 entry:
   %2 = xor i32 %1, -1
-  %3 = add i32 %2, %0
+  %3 = add i32 %0, %2
   %4 = zext i32 %3 to i64
   %5 = shl nuw nsw i64 %4, 2
   %6 = add nuw nsw i64 %5, 4

@@ -49,7 +49,9 @@ entry:
   ret i64 %3
 }
 
-; 6 occurrences:
+; 8 occurrences:
+; boost/optimized/convex_hull_multi.ll
+; boost/optimized/get_distance_measure.ll
 ; lightgbm/optimized/metric.cpp.ll
 ; lightgbm/optimized/prediction_early_stop.cpp.ll
 ; meshlab/optimized/balltree.cpp.ll

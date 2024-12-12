@@ -1,5 +1,5 @@
 
-; 95 occurrences:
+; 96 occurrences:
 ; assimp/optimized/Assimp.cpp.ll
 ; assimp/optimized/SplitLargeMeshes.cpp.ll
 ; assimp/optimized/glTF2Importer.cpp.ll
@@ -16,9 +16,7 @@
 ; libjpeg-turbo/optimized/transupp.c.ll
 ; linux/optimized/af_packet.ll
 ; linux/optimized/drm_modes.ll
-; linux/optimized/fonts.ll
 ; linux/optimized/icl_dsi.ll
-; linux/optimized/intel_audio.ll
 ; linux/optimized/intel_fb.ll
 ; linux/optimized/memory-tiers.ll
 ; linux/optimized/regcache-rbtree.ll
@@ -37,7 +35,6 @@
 ; llvm/optimized/LegalizeDAG.cpp.ll
 ; llvm/optimized/Legalizer.cpp.ll
 ; llvm/optimized/LowerMatrixIntrinsics.cpp.ll
-; llvm/optimized/RISCVISelLowering.cpp.ll
 ; llvm/optimized/RISCVTargetTransformInfo.cpp.ll
 ; llvm/optimized/SLPVectorizer.cpp.ll
 ; llvm/optimized/Scalarizer.cpp.ll
@@ -54,6 +51,11 @@
 ; llvm/optimized/X86InstCombineIntrinsic.cpp.ll
 ; llvm/optimized/X86TargetTransformInfo.cpp.ll
 ; lodepng/optimized/pngdetail.cpp.ll
+; lvgl/optimized/lv_bin_decoder.ll
+; lvgl/optimized/lv_chart.ll
+; lvgl/optimized/lv_draw_sw_img.ll
+; lvgl/optimized/lv_refr.ll
+; lvgl/optimized/lv_roller.ll
 ; meshlab/optimized/gltf_loader.cpp.ll
 ; minetest/optimized/CGUIImageList.cpp.ll
 ; minetest/optimized/CGUITTFont.cpp.ll
@@ -69,7 +71,6 @@
 ; ncnn/optimized/deformableconv2d_x86_avx512.cpp.ll
 ; ncnn/optimized/deformableconv2d_x86_fma.cpp.ll
 ; nori/optimized/nanovg.c.ll
-; nuttx/optimized/fs_partition.c.ll
 ; opencv/optimized/convolution.cpp.ll
 ; opencv/optimized/pyramids.cpp.ll
 ; opencv/optimized/stereo_binary_bm.cpp.ll
@@ -99,7 +100,7 @@
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = udiv i32 %1, %2
-  %4 = mul i32 %3, %0
+  %4 = mul i32 %0, %3
   ret i32 %4
 }
 
@@ -158,7 +159,7 @@ entry:
 define i32 @func0000000000000001(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = udiv i32 %1, %2
-  %4 = mul nsw i32 %3, %0
+  %4 = mul nsw i32 %0, %3
   ret i32 %4
 }
 

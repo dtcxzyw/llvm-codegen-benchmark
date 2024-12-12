@@ -30,7 +30,7 @@ define i32 @func0000000000000018(i32 %0, i32 %1, i32 %2) #0 {
 entry:
   %3 = icmp slt i32 %0, 0
   %4 = select i1 %3, i32 %1, i32 %2
-  %5 = add i32 %4, %0
+  %5 = add i32 %0, %4
   ret i32 %5
 }
 
@@ -60,7 +60,8 @@ entry:
   ret i32 %5
 }
 
-; 3 occurrences:
+; 4 occurrences:
+; boost/optimized/gregorian.ll
 ; linux/optimized/intel_dpll.ll
 ; oiio/optimized/imagebufalgo_draw.cpp.ll
 ; raylib/optimized/rtextures.c.ll

@@ -1,16 +1,19 @@
 
-; 11 occurrences:
-; lief/optimized/nist_kw.c.ll
+; 14 occurrences:
 ; linux/optimized/drm_mm.ll
 ; linux/optimized/generic.ll
 ; linux/optimized/i915_vma_resource.ll
 ; linux/optimized/interval_tree.ll
 ; linux/optimized/memtype_interval.ll
-; llvm/optimized/SemaAPINotes.cpp.ll
 ; recastnavigation/optimized/catch_amalgamated.cpp.ll
 ; rocksdb/optimized/compaction_job.cc.ll
 ; rocksdb/optimized/compaction_service_job.cc.ll
 ; spike/optimized/vslidedown_vi.ll
+; zed-rs/optimized/1jfwd31zu9mxnid4fbavxtsbx.ll
+; zed-rs/optimized/468j8mrahlfb4zd02cozu1ma6.ll
+; zed-rs/optimized/4c7572rmwoo4v9xjxi69ebeph.ll
+; zed-rs/optimized/9wvbl62ry9kmh1ntb1bvaauiz.ll
+; zed-rs/optimized/a4a22mj316v75h7ufva5j1joa.ll
 ; Function Attrs: nounwind
 define i8 @func0000000000000004(i8 %0, i64 %1, i64 %2) #0 {
 entry:

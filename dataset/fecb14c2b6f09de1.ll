@@ -5,7 +5,7 @@
 ; icu/optimized/double-conversion-fast-dtoa.ll
 ; openusd/optimized/fast-dtoa.cc.ll
 ; Function Attrs: nounwind
-define i64 @func000000000000008f(i32 %0, i32 %1) #0 {
+define i64 @func000000000000010f(i32 %0, i32 %1) #0 {
 entry:
   %2 = or disjoint i32 %0, 8388608
   %3 = icmp eq i32 %1, 0

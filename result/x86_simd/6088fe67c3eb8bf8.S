@@ -22,8 +22,22 @@ func0000000000000002:                   # @func0000000000000002
 	vmovdqa64	%ymm0, %ymm1 {%k1}
 	vpsrlq	$32, %ymm1, %ymm0
 	retq
+.LCPI4_0:
+	.quad	65535                           # 0xffff
+func0000000000000030:                   # @func0000000000000030
+	vpcmpnleuq	.LCPI4_0(%rip){1to4}, %ymm1, %k1
+	vmovdqa64	%ymm0, %ymm1 {%k1}
+	vpsrlq	$8, %ymm1, %ymm0
+	retq
 func0000000000000003:                   # @func0000000000000003
 	vptestnmq	%ymm1, %ymm1, %k1
 	vmovdqa64	%ymm0, %ymm1 {%k1}
 	vpsrlq	$16, %ymm1, %ymm0
+	retq
+.LCPI6_0:
+	.quad	4294967296                      # 0x100000000
+func0000000000000028:                   # @func0000000000000028
+	vpcmpltuq	.LCPI6_0(%rip){1to4}, %ymm1, %k1
+	vmovdqa64	%ymm0, %ymm1 {%k1}
+	vpsrlq	$6, %ymm1, %ymm0
 	retq

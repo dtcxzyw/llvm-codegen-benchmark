@@ -26,6 +26,18 @@ entry:
 }
 
 ; 1 occurrences:
+; boost/optimized/to_chars.ll
+; Function Attrs: nounwind
+define i32 @func00000000000000d5(i32 %0, i32 %1, i32 %2) #0 {
+entry:
+  %3 = mul nuw nsw i32 %2, 22
+  %4 = add nsw i32 %3, -272
+  %5 = add nsw i32 %4, %1
+  %6 = sub nsw i32 %5, %0
+  ret i32 %6
+}
+
+; 1 occurrences:
 ; slurm/optimized/parse_time.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000005(i32 %0, i32 %1, i32 %2) #0 {
@@ -37,13 +49,14 @@ entry:
   ret i32 %6
 }
 
-; 1 occurrences:
+; 2 occurrences:
 ; gromacs/optimized/colvarbias_meta.cpp.ll
+; lvgl/optimized/lv_refr.ll
 ; Function Attrs: nounwind
 define i32 @func0000000000000000(i32 %0, i32 %1, i32 %2) #0 {
 entry:
-  %3 = mul i32 %2, 3
-  %4 = add i32 %3, 2
+  %3 = mul i32 %2, 3600
+  %4 = add i32 %3, 3600
   %5 = add i32 %4, %1
   %6 = sub i32 %5, %0
   ret i32 %6

@@ -1,5 +1,7 @@
 
-; 4 occurrences:
+; 6 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; openblas/optimized/dstemr.c.ll
 ; openspiel/optimized/dou_dizhu.cc.ll
 ; proj/optimized/geodesic.c.ll

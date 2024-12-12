@@ -5,10 +5,10 @@
 define i8 @func0000000000000001(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, -8
+  %4 = or disjoint i8 %3, 1
   %.masked = and i8 %1, -6
-  %4 = or i8 %3, %.masked
-  %5 = or i8 %4, %0
-  %6 = or i8 %5, 1
+  %5 = or i8 %.masked, %4
+  %6 = or disjoint i8 %5, %0
   ret i8 %6
 }
 
@@ -20,10 +20,10 @@ entry:
 define i8 @func0000000000000007(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, -102
+  %4 = or disjoint i8 %3, 4
   %.masked = and i8 %1, -101
-  %4 = or i8 %3, %.masked
-  %5 = or i8 %4, %0
-  %6 = or i8 %5, 4
+  %5 = or i8 %.masked, %4
+  %6 = or disjoint i8 %5, %0
   ret i8 %6
 }
 
@@ -34,10 +34,10 @@ entry:
 define i8 @func0000000000000003(i8 %0, i8 %1, i8 %2) #0 {
 entry:
   %3 = and i8 %2, -8
+  %4 = or disjoint i8 %3, 1
   %.masked = and i8 %1, -6
-  %4 = or i8 %3, %.masked
-  %5 = or i8 %4, %0
-  %6 = or i8 %5, 1
+  %5 = or i8 %.masked, %4
+  %6 = or disjoint i8 %5, %0
   ret i8 %6
 }
 

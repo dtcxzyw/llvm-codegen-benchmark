@@ -23,7 +23,7 @@ func000000000000000a:                   # @func000000000000000a
 	andb	%dil, %al
 	retq
 func0000000000000004:                   # @func0000000000000004
-	cmpl	$18, %esi
+	cmpl	$3, %esi
 	setb	%al
 	notb	%dil
 	andb	%dil, %al

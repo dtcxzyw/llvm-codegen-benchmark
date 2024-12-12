@@ -1,22 +1,33 @@
 
-; 5 occurrences:
+; 3 occurrences:
 ; assimp/optimized/STLLoader.cpp.ll
-; cmake/optimized/xmltok.c.ll
-; node/optimized/simdutf.ll
 ; openjdk/optimized/classFileParser.ll
 ; php/optimized/zend_language_scanner.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000024(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000064(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ptrtoint ptr %1 to i64
   %4 = sub i64 %2, %3
   %5 = and i64 %4, 4294967295
-  %6 = getelementptr nusw i8, ptr %1, i64 %5
-  %7 = icmp ugt ptr %6, %0
+  %6 = getelementptr nusw nuw i8, ptr %1, i64 %5
+  %7 = icmp ult ptr %0, %6
   ret i1 %7
 }
 
-; 127 occurrences:
+; 1 occurrences:
+; openjdk/optimized/classFileParser.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000061(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = ptrtoint ptr %1 to i64
+  %4 = sub i64 %2, %3
+  %5 = and i64 %4, 4294967295
+  %6 = getelementptr nusw nuw i8, ptr %1, i64 %5
+  %7 = icmp eq ptr %0, %6
+  ret i1 %7
+}
+
+; 126 occurrences:
 ; hermes/optimized/APFloat.cpp.ll
 ; hermes/optimized/APInt.cpp.ll
 ; hermes/optimized/BytecodeGenerator.cpp.ll
@@ -143,15 +154,14 @@ entry:
 ; llvm/optimized/ValistChecker.cpp.ll
 ; llvm/optimized/VirtualCallChecker.cpp.ll
 ; llvm/optimized/Z3CrosscheckVisitor.cpp.ll
-; openjdk/optimized/classFileParser.ll
 ; Function Attrs: nounwind
-define i1 @func0000000000000021(ptr %0, ptr %1, i64 %2) #0 {
+define i1 @func0000000000000041(ptr %0, ptr %1, i64 %2) #0 {
 entry:
   %3 = ptrtoint ptr %1 to i64
   %4 = sub i64 %2, %3
-  %5 = and i64 %4, 4294967295
+  %5 = and i64 %4, -64
   %6 = getelementptr nusw i8, ptr %1, i64 %5
-  %7 = icmp eq ptr %6, %0
+  %7 = icmp eq ptr %0, %6
   ret i1 %7
 }
 
@@ -164,7 +174,21 @@ entry:
   %4 = sub i64 %2, %3
   %5 = and i64 %4, 4294967295
   %6 = getelementptr i8, ptr %1, i64 %5
-  %7 = icmp eq ptr %6, %0
+  %7 = icmp eq ptr %0, %6
+  ret i1 %7
+}
+
+; 2 occurrences:
+; cmake/optimized/xmltok.c.ll
+; node/optimized/simdutf.ll
+; Function Attrs: nounwind
+define i1 @func0000000000000044(ptr %0, ptr %1, i64 %2) #0 {
+entry:
+  %3 = ptrtoint ptr %1 to i64
+  %4 = sub i64 %2, %3
+  %5 = and i64 %4, -2
+  %6 = getelementptr nusw i8, ptr %1, i64 %5
+  %7 = icmp ult ptr %0, %6
   ret i1 %7
 }
 
@@ -177,7 +201,7 @@ entry:
   %4 = sub i64 %2, %3
   %5 = and i64 %4, -2
   %6 = getelementptr i8, ptr %1, i64 %5
-  %7 = icmp ugt ptr %6, %0
+  %7 = icmp ult ptr %0, %6
   ret i1 %7
 }
 

@@ -9,18 +9,24 @@ func0000000000000001:                   # @func0000000000000001
 	cmpq	%rdi, %rax
 	sete	%al
 	retq
-func0000000000000081:                   # @func0000000000000081
+func0000000000000101:                   # @func0000000000000101
 	leaq	(%rsi,%rsi,2), %rax
 	cmpq	%rdi, %rax
 	sete	%al
 	retq
-func000000000000005a:                   # @func000000000000005a
+func0000000000000044:                   # @func0000000000000044
+	leaq	(%rsi,%rsi,2), %rax
+	subq	%rax, %rdi
+	cmpq	$3, %rdi
+	setb	%al
+	retq
+func00000000000000aa:                   # @func00000000000000aa
 	imulq	$-56, %rsi, %rax
 	addq	%rdi, %rax
 	testq	%rax, %rax
 	setg	%al
 	retq
-func00000000000000da:                   # @func00000000000000da
+func00000000000001aa:                   # @func00000000000001aa
 	imulq	$-104, %rsi, %rax
 	addq	%rdi, %rax
 	testq	%rax, %rax

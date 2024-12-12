@@ -15,6 +15,12 @@ func0000000000000004:                   # @func0000000000000004
 	sbbl	%eax, %eax
 	orl	$1, %eax
 	retq
+func0000000000000018:                   # @func0000000000000018
+	xorl	%eax, %eax
+	cmpw	%si, %di
+	seta	%al
+	leal	2(,%rax,4), %eax
+	retq
 func0000000000000006:                   # @func0000000000000006
 	xorl	%eax, %eax
 	cmpw	%si, %di

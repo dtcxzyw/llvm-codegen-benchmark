@@ -1,5 +1,7 @@
 
-; 8 occurrences:
+; 10 occurrences:
+; boost/optimized/area_geo.ll
+; boost/optimized/area_sph_geo.ll
 ; graphviz/optimized/emit.c.ll
 ; graphviz/optimized/taper.c.ll
 ; gromacs/optimized/colvarcomp_angles.cpp.ll
